@@ -3,26 +3,18 @@
 # ─────────────────────────────────────────────────────────────
 #
 # Ce workflow se déclenche chaque matin à 06h00 UTC (08h00 Paris).
-# Il appelle le webhook de déploiement configuré dans les secrets
-# du dépôt. Le site Astro reconstruit automatiquement, et les
-# articles dont la publishDate est passée apparaissent d'eux-mêmes.
+# Il se connecte au VPS via SSH et exécute `/usr/local/bin/deploy-site.sh`.
+# Le site Astro reconstruit automatiquement, et les articles dont la
+# publishDate est passée apparaissent d'eux-mêmes.
 #
 # ── CONFIGURATION (à faire une seule fois) ───────────────────
 #
-# 1. Hébergeur NETLIFY
-#    - Netlify → Site → Build & Deploy → Build hooks → Add build hook
-#    - Copie l'URL (ex: https://api.netlify.com/build_hooks/xxxx)
-#    - GitHub repo → Settings → Secrets → Actions → New secret
-#      Name  : DEPLOY_HOOK_URL
-#      Value : l'URL copiée
+# GitHub → Settings → Secrets and variables → Actions → New repository secret :
+# - DEPLOY_HOST     : IP ou hostname SSH du VPS (ex: 177.7.37.62)
+# - DEPLOY_USER     : utilisateur SSH (ex: root)
+# - DEPLOY_SSH_KEY   : clé privée PEM (multi-ligne) pour GitHub Actions
 #
-# 2. Hébergeur VERCEL
-#    - Vercel → Project → Settings → Git → Deploy Hooks → Add
-#    - Copie l'URL (ex: https://api.vercel.com/v1/integrations/deploy/xxxx)
-#    - Même procédure secrets GitHub que ci-dessus
-#
-# 3. Autre hébergeur
-#    Remplace l'étape "Trigger deploy" par la commande de ton hébergeur.
+# Sur le VPS, autorise la clé publique correspondante dans `~/.ssh/authorized_keys`.
 #
 # ─────────────────────────────────────────────────────────────
 
@@ -41,13 +33,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Appel du webhook de déploiement
-        run: |
-          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
-            -X POST "${{ secrets.DEPLOY_HOOK_URL }}")
-          echo "Statut HTTP du webhook : $HTTP_STATUS"
-          if [ "$HTTP_STATUS" -lt 200 ] || [ "$HTTP_STATUS" -ge 300 ]; then
-            echo "Erreur : le webhook a répondu $HTTP_STATUS"
-            exit 1
-          fi
-          echo "Déploiement déclenché avec succès."
+      - name: Déployer via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script_stop: true
+          script: |
+            /usr/local/bin/deploy-site.sh
