@@ -22,6 +22,9 @@ const {
   publishDate,
   modifiedDate,
   section,
+  lang = "fr",
+  frPath,
+  enPath,
 } = Astro.props as {
   title?: string;
   description?: string;
@@ -35,9 +38,24 @@ const {
   publishDate?: Date;
   modifiedDate?: Date;
   section?: string;
+  lang?: "fr" | "en";
+  frPath?: string;
+  enPath?: string;
 };
 
+function withTrailingSlash(p: string): string {
+  return p === "/" ? "/" : p.endsWith("/") ? p : `${p}/`;
+}
+const resolvedFrPath = frPath ?? (lang === "en"
+  ? withTrailingSlash(canonicalPath.replace(/^\/en/, "") || "/")
+  : withTrailingSlash(canonicalPath));
+const resolvedEnPath = enPath ?? (lang === "fr"
+  ? `/en${canonicalPath === "/" ? "/" : withTrailingSlash(canonicalPath)}`
+  : withTrailingSlash(canonicalPath));
 const canonicalUrl = new URL(canonicalPath, siteConfig.siteUrl).toString();
+const frCanonicalUrl = new URL(resolvedFrPath, siteConfig.siteUrl).toString();
+const enCanonicalUrl = new URL(resolvedEnPath, siteConfig.siteUrl).toString();
+
 const socialImage = new URL(image, siteConfig.siteUrl).toString();
 const structuredDataItems = structuredData
   ? Array.isArray(structuredData)
@@ -46,7 +64,7 @@ const structuredDataItems = structuredData
   : [];
 ---
 <!DOCTYPE html>
-<html lang="fr">
+<html lang={lang} data-server-lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -211,6 +229,8 @@ const structuredDataItems = structuredData
         window.__i18n = T;
 
         function applyLang(lang) {
+          // Update <html lang> attribute
+          document.documentElement.lang = lang === "en" ? "en" : "fr";
           var dict = T[lang] || T.fr;
           // Texte simple
           document.querySelectorAll("[data-t]").forEach(function(el) {
@@ -243,13 +263,13 @@ const structuredDataItems = structuredData
             var key = el.getAttribute("data-t-aria");
             if (dict[key] !== undefined) el.setAttribute("aria-label", dict[key]);
           });
-          // Mettre à jour l'attribut lang sur <html>
-          document.documentElement.lang = lang === "en" ? "en" : "fr";
         }
 
         window.__applyLang = applyLang;
 
-        var storedLang = localStorage.getItem("blogdungaucher.lang") || "fr";
+        // On EN server-rendered pages, always use "en" regardless of localStorage
+        var serverLang = document.documentElement.dataset.serverLang || "fr";
+        var storedLang = serverLang === "en" ? "en" : (localStorage.getItem("blogdungaucher.lang") || "fr");
         window.__lang = storedLang;
         if (storedLang === "en") applyLang("en");
       })();
@@ -264,8 +284,9 @@ const structuredDataItems = structuredData
 
     <title>{title}</title>
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="alternate" hrefLang="fr-FR" href={canonicalUrl} />
-    <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
+    <link rel="alternate" hrefLang="fr" href={frCanonicalUrl} />
+    <link rel="alternate" hrefLang="en" href={enCanonicalUrl} />
+    <link rel="alternate" hrefLang="x-default" href={frCanonicalUrl} />
     <link rel="alternate" type="application/rss+xml" title={`${siteConfig.name} RSS`} href={`${siteConfig.siteUrl}/rss.xml`} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
@@ -283,7 +304,7 @@ const structuredDataItems = structuredData
     <meta property="og:image" content={socialImage} />
     <meta property="og:image:secure_url" content={socialImage} />
     <meta property="og:image:alt" content={title} />
-    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale" content={lang === "en" ? "en_US" : "fr_FR"} />
     {type === "article" && publishDate && (
       <meta property="article:published_time" content={publishDate.toISOString()} />
     )}
@@ -377,11 +398,11 @@ const structuredDataItems = structuredData
   <!-- Service worker + réapplication des préférences après chaque View Transition -->
   <body style={accentColor ? `--page-accent:${accentColor}` : ""}>
     <a class="skip-link" href="#main-content">Aller au contenu</a>
-    <Navbar />
+    <Navbar frHref={resolvedFrPath} enHref={resolvedEnPath} lang={lang} />
     <main id="main-content">
       <slot />
     </main>
-    <Footer />
+    <Footer lang={lang} />
     <CookieConsent />
     <BackToTop />
 
@@ -398,7 +419,8 @@ const structuredDataItems = structuredData
           (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
         document.documentElement.dataset.theme = theme;
 
-        const lang = localStorage.getItem("blogdungaucher.lang") || "fr";
+        const serverLang2 = document.documentElement.dataset.serverLang || "fr";
+        const lang = serverLang2 === "en" ? "en" : (localStorage.getItem("blogdungaucher.lang") || "fr");
         window.__lang = lang;
         if (typeof window.__applyLang === "function") window.__applyLang(lang);
 
@@ -413,11 +435,11 @@ const structuredDataItems = structuredData
           );
         }
 
-        // Synchroniser le bouton langue
-        const langBtn = document.getElementById("lang-toggle");
-        if (langBtn) {
-          langBtn.textContent = window.__i18n?.[lang]?.["nav.langSwitch"] || "";
-        }
+        // Synchroniser le bouton langue (affiche FR / EN)
+        const desktopLangSpan = document.querySelector("#lang-toggle .lang-label");
+        const mobileLangSpan  = document.querySelector("#lang-toggle-mobile .lang-label-mobile");
+        if (desktopLangSpan) desktopLangSpan.textContent = lang.toUpperCase();
+        if (mobileLangSpan)  mobileLangSpan.textContent  = lang.toUpperCase();
       }
 
       document.addEventListener("astro:page-load", reapplyPreferences);
@@ -459,6 +481,15 @@ const structuredDataItems = structuredData
 
       // premier chargement + chaque transition Astro
       document.addEventListener("astro:page-load", initReveal);
+    </script>
+
+    <!-- ── Dispatch astro:page-load pour les sites statiques sans ViewTransitions ── -->
+    <script is:inline>
+      // Les scripts type="module" (deferred) s'exécutent AVANT DOMContentLoaded.
+      // En attendant ce déclencheur, tous les listeners astro:page-load sont enregistrés.
+      document.addEventListener("DOMContentLoaded", function () {
+        document.dispatchEvent(new Event("astro:page-load", { bubbles: false }));
+      });
     </script>
   </body>
 </html>

@@ -501,4 +501,16 @@ main { display: block; padding-top: var(--navbar-h); }
     animation: none !important;
     transition: none !important;
   }
+  /* Elements that use animation/transition to appear must be shown immediately */
+  .fade-up,
+  .fade-in,
+  .scale-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .reveal,
+  .reveal-group > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

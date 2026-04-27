@@ -6,21 +6,37 @@ import ArticleCard from "./ArticleCard.astro";
 import { categoryMap, type CategorySlug } from "../data/site";
 import { buildBreadcrumbJsonLd, getPostsByCategory } from "../utils/blog";
 
-const { category } = Astro.props as { category: CategorySlug };
+const { category, lang = "fr" } = Astro.props as { category: CategorySlug; lang?: "fr" | "en" };
 const meta  = categoryMap[category];
 const posts = await getPostsByCategory(category);
 const hero  = posts.find((p) => p.data.featured) ?? posts[0];
 const rest  = posts.filter((p) => p.id !== hero?.id);
 
+const enHref = `/en${meta.href}/`;
 const structuredData = buildBreadcrumbJsonLd([
-  { name: "Accueil", path: "/" },
-  { name: meta.label, path: meta.href },
+  { name: lang === "en" ? "Home" : "Accueil", path: lang === "en" ? "/en/" : "/" },
+  { name: meta.label, path: lang === "en" ? enHref : meta.href },
 ]);
+
+const pageTitle = lang === "en"
+  ? (meta.seoTitleEn ?? `${meta.label} | A Left-Hander's Blog`)
+  : (meta.seoTitle ?? `${meta.label} | Blog d'un Gaucher`);
+const pageDesc = lang === "en"
+  ? (meta.seoDescriptionEn ?? `${meta.description} ${meta.audiencePromise}`)
+  : (meta.seoDescription ?? `${meta.description} ${meta.audiencePromise}`);
+const frHref = `${meta.href}/`;
+const canonPath = lang === "en" ? enHref : frHref;
+const catDescription = lang === "en"
+  ? (meta.descriptionEn ?? meta.description)
+  : meta.description;
 ---
 <BaseLayout
-  title={`${meta.label} | Blog d'un Gaucher`}
-  description={`${meta.description} ${meta.audiencePromise}`}
-  canonicalPath={meta.href}
+  title={pageTitle}
+  description={pageDesc}
+  canonicalPath={canonPath}
+  lang={lang}
+  frPath={frHref}
+  enPath={enHref}
   structuredData={structuredData}
 >
   <section class="cat-hero">
@@ -28,7 +44,7 @@ const structuredData = buildBreadcrumbJsonLd([
       <span class="eyebrow reveal" data-t={`categories.${category}.shortLabel`}>{meta.shortLabel}</span>
       <h1 class="reveal" data-t={`categories.${category}.label`}>{meta.label}</h1>
       <p class="cat-tagline reveal" data-t={`categories.${category}.tagline`}>{meta.tagline}</p>
-      <p class="cat-desc reveal">{meta.description}</p>
+      <p class="cat-desc reveal">{catDescription}</p>
     </div>
   </section>
 
@@ -41,7 +57,7 @@ const structuredData = buildBreadcrumbJsonLd([
       <div class="container">
         <span class="eyebrow reveal" data-t="category.featured">À la une</span>
         <div class="cat-hero-card reveal">
-          <ArticleCard post={hero} featured={true} />
+          <ArticleCard post={hero} featured={true} lang={lang} />
         </div>
       </div>
     </section>
@@ -52,10 +68,10 @@ const structuredData = buildBreadcrumbJsonLd([
       <div class="container">
         <div class="cat-section__head reveal">
           <span class="eyebrow" data-t="category.allArticles">Tous les articles</span>
-          <a href="/blog" class="text-link" data-t="category.seeAll">Voir tout le blog</a>
+          <a href={lang === "en" ? "/en/blog/" : "/blog"} class="text-link" data-t="category.seeAll">Voir tout le blog</a>
         </div>
         <div class="post-grid reveal-group">
-          {rest.map((post) => <ArticleCard post={post} />)}
+          {rest.map((post) => <ArticleCard post={post} lang={lang} />)}
         </div>
       </div>
     </section>

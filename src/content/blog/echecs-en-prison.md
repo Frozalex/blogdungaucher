@@ -10,6 +10,10 @@ pillar: "Inclusion"
 tags: ["échecs prison", "réhabilitation", "Change Through Chess", "criminologie", "fonctions exécutives", "récidive", "inclusion sociale"]
 seoTitle: "Les échecs en prison : réhabilitation, fonctions exécutives et récidive"
 seoDescription: "Change Through Chess, San Quentin, Rikers Island : des programmes de chess therapy en prison montrent des effets mesurables sur l'impulsivité et la récidive. Ce que la criminologie dit réellement de l'échiquier comme outil de réhabilitation."
+titleEn: "Chess in Prison: When the Chessboard Becomes a Rehabilitation Tool"
+excerptEn: "Inmates learning to anticipate three moves ahead, manage the frustration of a lost piece, respect an opponent. What chess therapy programmes in prison really reveal about rehabilitation."
+seoTitleEn: "Chess in Prison: Rehabilitation, Executive Functions and Recidivism"
+seoDescriptionEn: "Change Through Chess, San Quentin, Rikers Island: prison chess programmes show measurable effects on impulsivity and recidivism. What criminology really says about the chessboard as a rehabilitation tool."
 ---
 
 Il est 14h dans un établissement pénitentiaire de la périphérie de Londres. La salle est petite, le mobilier cabossé. Deux détenus sont assis face à un échiquier posé sur une table en formica. Il n'y a pas de surveillance rapprochée : le gardien est dans le couloir.

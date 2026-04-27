@@ -1,0 +1,321 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+---
+<BaseLayout
+  title="About | Discover the World of A Left-Hander's Blog"
+  description="The editorial project behind A Left-Hander's Blog: a personal, honest and rigorous voice on chess and those who play it."
+  canonicalPath="/en/about/"
+  lang="en"
+  frPath="/about/"
+  enPath="/en/about/"
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/en/" },
+    { name: "About", path: "/en/about" },
+  ])}
+>
+  <section class="about">
+    <div class="container">
+      <div class="about-hero reveal">
+        <img
+          src="/images/avatar.gif"
+          alt="Pixel art avatar of Le Gaucher"
+          class="about-avatar"
+          width="96"
+          height="96"
+          loading="eager"
+        />
+        <span class="eyebrow">About</span>
+      </div>
+      <h1 class="reveal">One player, one blog,<br/><span class="green">one passion.</span></h1>
+      <p class="about-lead reveal">
+        A Left-Hander's Blog is entirely dedicated to chess. The idea isn't to
+        claim the absolute truth, but rather to share a sincere, personal and
+        humble reflection on the game we love.
+      </p>
+
+      <div class="principles reveal-group">
+        <details class="principle">
+          <summary>
+            <strong>Honesty</strong>
+            <span>Click to read our full vision</span>
+          </summary>
+          <div class="principle-body">
+            <p>
+              When we talk about honesty on this blog, we're not talking about a decorative formula placed there for effect.
+              We're talking about a way of working and writing that accepts the reality of chess as it is: demanding,
+              sometimes frustrating, rarely linear. Too much content gives the impression that improvement is simple,
+              that you just need to follow three principles, know two openings and watch a few videos to become a solid player.
+              In practice, every player knows that's not how things work. You plateau, you doubt, you sometimes regress,
+              you think you understand a strategic idea and then lose it again a few weeks later. Honesty, here, means
+              accepting that reality without softening it.
+            </p>
+            <p>
+              This also means showing our mistakes, not just our successes. A won game is pleasant to tell, but a lost
+              game with a bad decision at the wrong moment is often far more instructive. We want to preserve this space
+              of truth, even when it's unflattering. Saying that a plan was bad, that our reading of the position was
+              superficial, or that we were mentally dominated isn't an admission of weakness. It's precisely the attitude
+              that allows you to learn durably. Honesty, in this context, isn't moral in the abstract sense: it's
+              practical. It protects against the illusion of competence.
+            </p>
+            <p>
+              Being honest also means paying close attention to how we cite research, authors and sources. On sensitive
+              topics like the brain, addiction, autism or gender gaps, it would be too easy to oversimplify to produce
+              a discourse that sounds strong but rests on little rigour. We prefer to sometimes slow down the writing,
+              cross-reference multiple publications and state our limitations rather than assert too quickly. When a
+              study is contested, we say so. When a conclusion is partial, we say so. This transparency is part of the
+              trust we want to build with readers.
+            </p>
+            <p>
+              Finally, honesty also concerns tone. This blog has no vocation to play the role of absolute authority.
+              It is run by a passionate person who works, learns, makes mistakes and adjusts their perspective over time.
+              We can defend strong ideas without claiming to possess the final truth. We can be ambitious about quality
+              while remaining modest in posture. In short, the honesty we defend is simple: write what we truly think,
+              acknowledge what we don't yet know, and treat the reader as a partner in reflection, never as an audience to impress.
+            </p>
+          </div>
+        </details>
+
+        <details class="principle">
+          <summary>
+            <strong>Reflection</strong>
+            <span>Click to read our full vision</span>
+          </summary>
+          <div class="principle-body">
+            <p>
+              Reflection means first and foremost one thing: taking time. In today's digital ecosystem, speed is often
+              rewarded more than depth. Publish fast, react fast, summarise fast. Chess teaches us exactly the opposite.
+              The best decisions rarely come from rushing, and the most useful analyses are almost never those written in
+              urgency. On this blog, reflection is therefore a deliberate editorial choice: preferring a solid, nuanced,
+              inhabited article over a short text that gives the impression of having explained everything in two pages.
+            </p>
+            <p>
+              Reflecting also means accepting complexity without hiding behind it. Many topics related to chess are
+              tempting because they lend themselves to slogans: "chess makes you smarter", "the mental is everything",
+              "theory is enough", "computers kill creativity". These phrases are catchy, but they quickly become traps
+              if you don't dismantle them. Our approach here is to return to the detail: under what conditions does an
+              idea become true? For which player profile? At what level of practice? With what limitations? This precision
+              work is what gives value to a reflection.
+            </p>
+            <p>
+              Reflection is not only intellectual — it is also introspective. Chess forces everyone to confront themselves:
+              their fear of losing, their need for recognition, their stress management, their relationship with error.
+              We want to preserve this human dimension in our content. An article should not just be an accumulation of
+              concepts — it should also help the reader ask the right questions about their own practice. Why do I crack
+              under time pressure? Why do I immediately replay after a loss? Why do I play better without stakes than in
+              a tournament? Reflection becomes useful when it transforms into a concrete tool for self-observation.
+            </p>
+            <p>
+              Finally, reflecting means creating links between domains. Chess doesn't live in a closed bubble. It touches
+              psychology, education, cognitive science, sociology, and sometimes even moral philosophy. This richness
+              deserves better than a monotone approach. We therefore try to cross perspectives, to bring together authors,
+              studies, field experiences and players' lived experiences. This method demands more effort, but it avoids
+              flat analyses. This is exactly the ambition we put behind the word "reflection": to go to the bottom without
+              losing the meaning, and to think of chess as a living laboratory of the human mind.
+            </p>
+          </div>
+        </details>
+
+        <details class="principle">
+          <summary>
+            <strong>Clarity</strong>
+            <span>Click to read our full vision</span>
+          </summary>
+          <div class="principle-body">
+            <p>
+              Clarity is a form of respect. When a reader arrives on an article, they grant us their time, their attention
+              and a part of their trust. Our responsibility is to make the reading simple, fluid and intelligible, even
+              when the subject is dense. This doesn't mean simplifying to the point of distortion. It means structuring.
+              One idea at a time. A logical progression. Understandable transitions. Precise vocabulary without being opaque.
+              In a field where much content mixes technical jargon, appeals to authority and very long sentences, clarity
+              is a concrete commitment, almost a discipline.
+            </p>
+            <p>
+              On the editorial level, this clarity comes through organised, readable texts. We look for titles that truly
+              inform, sub-sections that serve the thought, examples that bring concepts to life. When we cite an author,
+              an institution or a study, we try to provide useful links so that everyone can verify and explore further.
+              Clarity, here, is not just a matter of style: it's a way of avoiding deliberate vagueness. If an idea can
+              be stated clearly, it must be stated clearly.
+            </p>
+            <p>
+              On the visual level, clarity also guides the design of the site. A good design isn't the one that shouts
+              the loudest, but the one that steps aside in favour of the content. We prefer airy interfaces, readable
+              contrasts, consistent landmarks and useful rather than decorative animations. A reader should never have
+              to fight against the page to find information. That's why we take care with typographic hierarchy, the
+              table of contents, navigation and mobile interactions: these details seem small, but they genuinely
+              transform the reading experience.
+            </p>
+            <p>
+              Clarity finally means accepting the limits of "saying everything". Some subjects deserve several articles
+              rather than one overloaded text. Sometimes, being clear means breaking down a theme, announcing what we
+              cover now and what we'll cover later. This boundary honesty avoids confusion and helps everyone progress
+              step by step. Ultimately, the clarity we defend is simple: allow the reader to understand quickly, remember
+              for a long time, and return to the text with the feeling of having truly learnt something solid.
+            </p>
+          </div>
+        </details>
+
+        <details class="principle">
+          <summary>
+            <strong>Sharing</strong>
+            <span>Click to read our full vision</span>
+          </summary>
+          <div class="principle-body">
+            <p>
+              Sharing, for us, doesn't mean publishing content and then disappearing. It means building a conversation
+              over time with readers who have very different backgrounds: beginners, club players, blitz enthusiasts,
+              parents of children learning the game, coaches, curious visitors drawn by culture or the psychology of
+              chess. This diversity is an immense richness, provided we don't write as if only one profile existed.
+              We therefore try to write in a way that is accessible without being simplistic, demanding without being
+              exclusive, and personal without being closed.
+            </p>
+            <p>
+              Sharing begins with transmission. A useful idea kept to oneself helps no one progress. When an analytical
+              method works, when a mental framework helps better manage defeats, when a reading illuminates a common
+              difficulty, we want to make it available. But transmitting does not mean imposing. We don't write to say
+              "here is the only right way to play." We write to offer landmarks, leads, angles of approach that each
+              person can test in their own practice.
+            </p>
+            <p>
+              Sharing also means listening. Comments, feedback, argued disagreements and readers' experiences are
+              precious. They force us to reconsider certain positions, to clarify ambiguous passages, to address topics
+              we hadn't seen. A living blog is not a monologue. It is an editorial space that improves through contact
+              with its community. That's why we maintain an open tone: readers are not passive spectators, they are
+              co-actors in the quality of the project.
+            </p>
+            <p>
+              Finally, sharing means remaining useful over time. Content should not serve only the moment or the current
+              algorithm. We want this blog to be readable in six months, in a year, with value still intact. This requires
+              writing texts that go beyond the immediate news cycle, that provide transferable tools of understanding and
+              that respect the reader's intelligence. That's our definition of sharing: pooling what we learn, maintaining
+              a rigour of substance, a genuine human warmth, and the simple pleasure of thinking together about a game
+              we all love.
+            </p>
+          </div>
+        </details>
+      </div>
+
+      <div class="contact-note reveal">
+        <span class="eyebrow">Contact</span>
+        <p>
+          For any question, request or discussion, you can reach us at:
+          <a href="mailto:contact@blogdungaucher.com" style="color: var(--green); font-weight: 500;">contact@blogdungaucher.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .about { padding: 4.5rem 0 5rem; }
+
+  .about-hero {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-lg);
+    image-rendering: pixelated;
+    flex-shrink: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .about-avatar { animation: none; }
+  }
+
+  .about h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 0.5rem 0 1rem; }
+  .green { color: var(--green); }
+
+  .about-lead {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 36rem;
+    line-height: 1.75;
+    margin-bottom: 2.5rem;
+  }
+
+  .principles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+    max-width: 54rem;
+  }
+
+  .principle {
+    padding: 0;
+    border-radius: var(--radius-lg);
+    border: 1.5px solid var(--border-soft);
+    background: var(--surface);
+    transition: border-color 180ms ease, transform 220ms var(--ease-spring), box-shadow 220ms ease;
+  }
+  .principle:hover {
+    border-color: var(--green-border);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .principle summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.1rem 1.2rem;
+    display: grid;
+    gap: 0.15rem;
+  }
+  .principle summary::-webkit-details-marker { display: none; }
+
+  .principle summary strong {
+    display: inline-block;
+    color: var(--green);
+    font-family: var(--font-display);
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+  }
+
+  .principle summary span {
+    color: var(--text-dim);
+    font-size: 0.84rem;
+    line-height: 1.4;
+  }
+
+  .principle[open] summary {
+    border-bottom: 1px solid var(--border-soft);
+    background: color-mix(in srgb, var(--green) 4%, var(--surface));
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+  }
+
+  .principle-body {
+    padding: 1rem 1.2rem 1.15rem;
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .principle-body p {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.78;
+  }
+
+  .contact-note {
+    max-width: 36rem;
+    padding: 1.2rem 1.3rem;
+    border-radius: var(--radius-lg);
+    border: 1.5px solid var(--border-soft);
+    background: var(--surface);
+    display: grid;
+    gap: 0.5rem;
+  }
+  .contact-note p { color: var(--text-muted); font-size: 0.92rem; }
+
+  @media (max-width: 640px) {
+    .principle summary { padding: 1rem 1rem; }
+    .principle-body { padding: 0.92rem 1rem 1.02rem; gap: 0.82rem; }
+    .principle-body p { font-size: 0.92rem; line-height: 1.72; }
+  }
+</style>

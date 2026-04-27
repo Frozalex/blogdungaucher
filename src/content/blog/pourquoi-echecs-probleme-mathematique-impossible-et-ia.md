@@ -12,8 +12,12 @@ featuredRank: 99
 readingTime: "16 min"
 pillar: "Informatique"
 tags: ["échecs", "mathématiques", "complexité", "nombre de Shannon", "arbre des coups", "minimax", "alpha-bêta", "moteur d'échecs", "IA", "Stockfish"]
-seoTitle: "Échecs : un problème mathématique impossible ? (et pourquoi l'IA gagne quand même)"
-seoDescription: "Pourquoi les échecs sont-ils si complexes ? Arbre des coups, explosion combinatoire, minimax, alpha-bêta et IA : une explication claire de ce que font réellement les moteurs pour jouer si fort."
+seoTitle: "Échecs et IA : résoudre le problème mathématique impossible"
+seoDescription: "Les échecs sont-ils solvables mathématiquement ? Découvrez comment l'IA a révolutionné le jeu et pourquoi les moteurs battent les humains à tous les coups."
+titleEn: "Why Chess is a (Nearly) Impossible Mathematical Problem — and How AI Solves it Anyway"
+excerptEn: "The game tree explodes, Shannon's number is staggering, yet an engine corrects you in seconds. Is chess really 'unsolvable'? Here's what maths, computer science and AI actually do under the hood."
+seoTitleEn: "Chess and AI: Solving the Mathematical Impossible"
+seoDescriptionEn: "Is chess mathematically solvable? Discover how AI has revolutionised the game and why engines now beat humans at every single turn."
 ---
 
 Tu as déjà vécu ce paradoxe : on te vend le [jeu d'échecs](https://fr.wikipedia.org/wiki/%C3%89checs) comme un objet d'une complexité cosmique, un jeu où chaque joueur trace une stratégie sur le long terme ; puis tu ouvres une appli, tu joues un coup raisonnable, et le moteur te corrige puis t'explique une ligne introuvable pour toi seul.

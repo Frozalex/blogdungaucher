@@ -1,0 +1,290 @@
+---
+import { render } from "astro:content";
+
+import AdBanner from "../../../components/AdBanner.astro";
+import ArticleCard from "../../../components/ArticleCard.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
+import TableOfContents from "../../../components/TableOfContents.astro";
+import ShareButtons from "../../../components/ShareButtons.astro";
+import Comments from "../../../components/Comments.astro";
+
+import { categoryMap } from "../../../data/site";
+import {
+  absoluteUrl,
+  buildArticleJsonLd,
+  buildBreadcrumbJsonLd,
+  calculateReadingTime,
+  formatDate,
+  getAllPosts,
+  getPostSlug,
+  getPostUrl,
+  getPostUrlEn,
+} from "../../../utils/blog";
+
+export async function getStaticPaths() {
+  const posts = await getAllPosts();
+  return posts.map((post) => ({ params: { slug: getPostSlug(post) }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+const category = categoryMap[post.data.category];
+
+const readingTime = post.data.readingTime ?? calculateReadingTime(post.body);
+
+const allPosts = await getAllPosts();
+const related = allPosts
+  .filter((e) => e.id !== post.id && e.data.category === post.data.category)
+  .slice(0, 3);
+
+const postUrlEn = getPostUrlEn(post);
+const postUrlFr = getPostUrl(post);
+const absolutePostUrl = absoluteUrl(postUrlEn);
+
+const enTitle   = post.data.seoTitleEn ?? post.data.titleEn ?? post.data.seoTitle ?? post.data.title;
+const enDesc    = post.data.seoDescriptionEn ?? post.data.excerptEn ?? post.data.seoDescription ?? post.data.excerpt;
+const displayTitle   = post.data.titleEn   ?? post.data.title;
+const displayExcerpt = post.data.excerptEn ?? post.data.excerpt;
+const hasEnTranslation = !!(post.data.titleEn);
+
+const enCategoryLabels: Record<string, string> = {
+  science: "Science",
+  esprit: "Mind",
+  societe: "Society",
+};
+const enCategoryLabel = enCategoryLabels[post.data.category] ?? category.label;
+const enCategoryHref = `/en${category.href}/`;
+
+const structuredData = [
+  buildArticleJsonLd(post),
+  buildBreadcrumbJsonLd([
+    { name: "Home", path: "/en/" },
+    { name: "Articles", path: "/en/blog/" },
+    { name: displayTitle, path: postUrlEn },
+  ]),
+];
+---
+<BaseLayout
+  title={`${enTitle} | A Left-Hander's Blog`}
+  description={enDesc}
+  canonicalPath={postUrlEn}
+  lang="en"
+  frPath={postUrlFr}
+  enPath={postUrlEn}
+  image={post.data.ogImage}
+  type="article"
+  publishDate={post.data.publishDate}
+  modifiedDate={post.data.updatedDate ?? post.data.publishDate}
+  section={enCategoryLabel}
+  structuredData={structuredData}
+  accentColor={category.accent}
+  tags={post.data.tags}
+>
+  <article class="article-page" style={`--c:${category.accent}`}>
+    <div class="reading-progress" aria-hidden="true">
+      <span id="reading-progress-fill"></span>
+    </div>
+    <div class="container article-layout">
+      <div class="article-main">
+
+        <Breadcrumb items={[
+          { label: "Home", href: "/en/" },
+          { label: "Articles", href: "/en/blog/" },
+          { label: enCategoryLabel, href: enCategoryHref },
+          { label: displayTitle },
+        ]} />
+
+        <header class="article-header fade-up" style="--motion-delay: 40ms;">
+          <div class="article-meta">
+            <a href={enCategoryHref} class="meta-cat" style={`--c:${category.accent}`}>
+              {enCategoryLabel}
+            </a>
+            <span>{readingTime}</span>
+            <time datetime={post.data.publishDate.toISOString()}>
+              {formatDate(post.data.publishDate)}
+            </time>
+          </div>
+          <h1>{displayTitle}</h1>
+          <p class="article-excerpt">{displayExcerpt}</p>
+        </header>
+
+        {!hasEnTranslation && (
+          <div class="translation-notice" role="note">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            <span>The full English translation of this article is in progress. The content below is currently in French.</span>
+          </div>
+        )}
+
+        <div class="toc-mobile-wrap">
+          <TableOfContents headings={headings} mode="mobile" />
+        </div>
+
+        <AdBanner format="inline" compact={true} />
+
+        <div class="article-body fade-up" style="--motion-delay: 100ms;">
+          <Content />
+        </div>
+
+        <ShareButtons title={displayTitle} url={absolutePostUrl} />
+        <Comments />
+
+      </div>
+
+      <aside class="article-aside">
+        <div class="toc-desktop-wrap">
+          <TableOfContents headings={headings} mode="desktop" />
+        </div>
+
+        <div class="aside-card fade-up" style="--motion-delay: 120ms;">
+          <span class="aside-dot" style={`background:${category.accent}`}></span>
+          <h2>{enCategoryLabel}</h2>
+          <p data-t={`categories.${post.data.category}.tagline`}>{category.tagline}</p>
+          <a href={enCategoryHref} class="aside-link">
+            Explore this section
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <AdBanner format="rectangle" />
+      </aside>
+    </div>
+
+    {related.length > 0 && (
+      <section class="related">
+        <div class="container">
+          <span class="eyebrow">Related articles</span>
+          <div class="related-grid">
+            {related.map((p) => <ArticleCard post={p} lang="en" />)}
+          </div>
+        </div>
+      </section>
+    )}
+  </article>
+</BaseLayout>
+
+<style>
+  .translation-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid color-mix(in srgb, var(--green) 30%, var(--border-soft));
+    background: color-mix(in srgb, var(--green) 6%, var(--surface));
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  .translation-notice svg { flex-shrink: 0; margin-top: 0.1rem; color: var(--green); }
+
+  .reading-progress {
+    position: fixed; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--border-soft); z-index: 200;
+  }
+  #reading-progress-fill {
+    display: block; height: 100%; width: 0%;
+    background: var(--green); transition: width 100ms linear;
+    border-radius: 0 2px 2px 0;
+  }
+
+  .article-page { padding-bottom: 4rem; }
+
+  .article-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 3rem;
+    padding-top: 2.5rem;
+    align-items: start;
+  }
+
+  .article-header { margin-bottom: 2rem; }
+
+  .article-meta {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem;
+    font-size: 0.82rem; color: var(--text-dim);
+    margin-bottom: 1rem;
+  }
+  .meta-cat {
+    padding: 0.18rem 0.55rem; border-radius: var(--radius-pill);
+    border: 1px solid var(--c, var(--green)); color: var(--c, var(--green));
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+
+  .article-header h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    font-weight: 500; font-style: italic;
+    line-height: 1.15; letter-spacing: -0.02em;
+    margin: 0 0 0.9rem;
+  }
+
+  .article-excerpt {
+    color: var(--text-muted); font-size: 1.05rem;
+    line-height: 1.7; max-width: 48rem;
+  }
+
+  .article-body { line-height: 1.8; font-size: 1.02rem; color: var(--text-muted); }
+  .article-body :global(h2) { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--text-main); margin: 2.2rem 0 0.7rem; }
+  .article-body :global(h3) { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin: 1.8rem 0 0.5rem; }
+  .article-body :global(p) { margin-bottom: 1.1rem; }
+  .article-body :global(a) { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
+  .article-body :global(ul), .article-body :global(ol) { padding-left: 1.4rem; margin-bottom: 1.1rem; }
+  .article-body :global(li) { margin-bottom: 0.3rem; }
+  .article-body :global(blockquote) { border-left: 3px solid var(--c, var(--green)); padding: 0.6rem 1rem; margin: 1.4rem 0; color: var(--text-muted); font-style: italic; background: color-mix(in srgb, var(--c, var(--green)) 6%, var(--surface)); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+  .article-body :global(pre) { border-radius: var(--radius-sm); padding: 1rem 1.2rem; overflow-x: auto; font-size: 0.9rem; margin: 1.2rem 0; background: var(--surface-warm); border: 1px solid var(--border-soft); }
+  .article-body :global(code:not(pre code)) { font-size: 0.88em; padding: 0.1em 0.35em; border-radius: 3px; background: var(--surface-warm); border: 1px solid var(--border-soft); }
+  .article-body :global(img) { max-width: 100%; border-radius: var(--radius-sm); margin: 1rem 0; }
+  .article-body :global(table) { width: 100%; border-collapse: collapse; margin: 1.4rem 0; font-size: 0.9rem; }
+  .article-body :global(th), .article-body :global(td) { padding: 0.55rem 0.8rem; border: 1px solid var(--border-soft); text-align: left; }
+  .article-body :global(th) { background: var(--surface-warm); font-weight: 700; }
+
+  .article-aside { position: sticky; top: 5rem; display: grid; gap: 1.5rem; }
+  .toc-mobile-wrap { display: none; }
+
+  .aside-card {
+    padding: 1.1rem 1.2rem; border-radius: var(--radius-lg);
+    border: 1.5px solid var(--border-soft); background: var(--surface);
+    display: grid; gap: 0.4rem;
+  }
+  .aside-dot { width: 8px; height: 8px; border-radius: 50%; display: block; }
+  .aside-card h2 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--text-main); }
+  .aside-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+  .aside-link { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.3rem; font-size: 0.82rem; font-weight: 600; color: var(--green); transition: gap 180ms var(--ease-spring); }
+  .aside-link:hover { gap: 0.5rem; }
+
+  .related { padding: 3rem 0 2rem; border-top: 1px solid var(--border-soft); margin-top: 3rem; }
+  .related .eyebrow { display: block; margin-bottom: 0.8rem; }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
+
+  @media (max-width: 1024px) {
+    .article-layout { grid-template-columns: 1fr; }
+    .article-aside { position: static; }
+    .toc-mobile-wrap { display: block; }
+    .toc-desktop-wrap { display: none; }
+    .related-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 620px) { .related-grid { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  function initReadingProgress() {
+    const fill = document.getElementById("reading-progress-fill");
+    const body = document.querySelector(".article-body") as HTMLElement | null;
+    if (!fill || !body) return;
+
+    function update() {
+      const rect  = body!.getBoundingClientRect();
+      const total = body!.offsetHeight;
+      const read  = Math.max(0, -rect.top);
+      const pct   = Math.min(100, (read / total) * 100);
+      fill.style.width = `${pct}%`;
+    }
+
+    window.addEventListener("scroll", update, { passive: true });
+    update();
+  }
+
+  document.addEventListener("astro:page-load", initReadingProgress);
+</script>

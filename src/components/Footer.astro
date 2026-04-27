@@ -1,5 +1,15 @@
 ---
 import { categoryMap, categorySlugs, siteConfig } from "../data/site";
+
+interface Props {
+  lang?: "fr" | "en";
+}
+const { lang = "fr" } = Astro.props;
+
+const isEn = lang === "en";
+const blogHref    = isEn ? "/en/blog/"  : "/blog";
+const aboutHref   = isEn ? "/en/about/" : "/about";
+const emailNote   = isEn ? siteConfig.futureInfoEmailLabelEn : siteConfig.futureInfoEmailLabel;
 ---
 <footer class="footer">
   <div class="container footer-top">
@@ -21,20 +31,23 @@ import { categoryMap, categorySlugs, siteConfig } from "../data/site";
         Un espace éditorial indépendant pour explorer les échecs en profondeur, avec des contenus utiles et actionnables.
       </p>
       <a class="footer-contact" href="mailto:contact@blogdungaucher.com" data-t="footer.suggestTopic">Proposer un sujet ou poser une question</a>
-      <p class="footer-note">{siteConfig.futureInfoEmailLabel}</p>
+      <p class="footer-note">{emailNote}</p>
     </div>
 
     <div class="footer-col fade-up" style="--motion-delay: 110ms;">
       <h2 data-t="footer.exploreTitle">Explorer</h2>
-      <a href="/blog" data-t="footer.allArticles">Tous les articles</a>
+      <a href={blogHref} data-t="footer.allArticles">Tous les articles</a>
       <a href="/rss.xml" data-t="footer.rss">Flux RSS</a>
-      <a href="/about" data-t="footer.editorial">Ligne éditoriale</a>
+      <a href={aboutHref} data-t="footer.editorial">Ligne éditoriale</a>
     </div>
 
     <div class="footer-col fade-up" style="--motion-delay: 170ms;">
       <h2 data-t="footer.sectionsTitle">Rubriques</h2>
       {categorySlugs.map((cat) => (
-        <a href={categoryMap[cat].href} data-t={`categories.${cat}.label`}>{categoryMap[cat].label}</a>
+        <a
+          href={isEn ? `/en/${cat}/` : categoryMap[cat].href}
+          data-t={`categories.${cat}.label`}
+        >{categoryMap[cat].label}</a>
       ))}
     </div>
 

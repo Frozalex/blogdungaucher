@@ -20,6 +20,10 @@ const blog = defineCollection({
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     ogImage: z.string().optional(),
+    titleEn: z.string().optional(),
+    excerptEn: z.string().optional(),
+    seoTitleEn: z.string().optional(),
+    seoDescriptionEn: z.string().optional(),
   }),
 });
 

@@ -1,23 +1,40 @@
 ---
-import { navigationLinks } from "../data/site";
+import { navigationLinks, enNavigationLinks } from "../data/site";
+
+const { frHref, enHref, lang = "fr" } = Astro.props as {
+  frHref?: string;
+  enHref?: string;
+  lang?: "fr" | "en";
+};
 
 const pathname = Astro.url.pathname;
-const isActive = (href: string) =>
-  href === "/" ? pathname === "/" : pathname.startsWith(href);
+const links = lang === "en" ? enNavigationLinks : navigationLinks;
+
+const isActive = (href: string) => {
+  if (lang === "en") {
+    return href === "/en/" ? pathname === "/en/" : pathname.startsWith(href);
+  }
+  return href === "/" ? pathname === "/" : pathname.startsWith(href);
+};
 
 // Correspondance href → clé de traduction navLinks
 const linkKey: Record<string, string> = {
-  "/science":  "navLinks.science",
-  "/esprit":   "navLinks.esprit",
-  "/societe":  "navLinks.societe",
-  "/blog":     "navLinks.blog",
-  "/about":    "navLinks.about",
+  "/science":    "navLinks.science",
+  "/esprit":     "navLinks.esprit",
+  "/societe":    "navLinks.societe",
+  "/blog":       "navLinks.blog",
+  "/about":      "navLinks.about",
+  "/en/science": "navLinks.science",
+  "/en/esprit":  "navLinks.esprit",
+  "/en/societe": "navLinks.societe",
+  "/en/blog":    "navLinks.blog",
+  "/en/about":   "navLinks.about",
 };
 ---
-<header class="navbar" id="navbar">
+<header class="navbar" id="navbar" data-lang-fr-href={frHref ?? "/"} data-lang-en-href={enHref ?? "/en/"}>
   <div class="container nav-inner">
 
-    <a href="/" class="nav-logo" aria-label="Accueil Blog d'un Gaucher">
+    <a href={lang === "en" ? "/en/" : "/"} class="nav-logo" aria-label={lang === "en" ? "Home – A Left-Hander's Blog" : "Accueil Blog d'un Gaucher"}>
       <img
         src="/images/logo.svg"
         alt=""
@@ -32,7 +49,7 @@ const linkKey: Record<string, string> = {
 
     <nav class="nav-desktop" aria-label="Navigation principale">
       <ul class="nav-links">
-        {navigationLinks.map((link) => (
+        {links.map((link) => (
           <li>
             <a
               href={link.href}
@@ -91,7 +108,7 @@ const linkKey: Record<string, string> = {
     <div class="mobile-menu__inner">
       <div class="container mobile-menu__content">
         <span class="mobile-eyebrow" data-t="nav.navigation">Navigation</span>
-        {navigationLinks.map((link) => (
+        {links.map((link) => (
           <a
             href={link.href}
             class={`mobile-link${isActive(link.href) ? " active" : ""}`}
@@ -439,13 +456,18 @@ const linkKey: Record<string, string> = {
 <script>
   let _onScroll = null;
   let _onMouse  = null;
+  let _ctrl: AbortController | null = null;
 
   function initNavbar() {
     const navbar = document.getElementById("navbar");
     if (!navbar) return;
 
+    // Nettoyer les anciens listeners pour éviter les doublons
     if (_onScroll) { window.removeEventListener("scroll",    _onScroll); }
     if (_onMouse)  { document.removeEventListener("mousemove", _onMouse); }
+    if (_ctrl)     { _ctrl.abort(); }
+    _ctrl = new AbortController();
+    const { signal } = _ctrl;
 
     const HIDE_AFTER  = 72;
     const JITTER      = 4;
@@ -453,9 +475,9 @@ const linkKey: Record<string, string> = {
     const LEAVE_DELAY = 1100;
 
     let prevY     = window.scrollY;
-    let peekTimer = null;
+    let peekTimer: ReturnType<typeof setTimeout> | null = null;
 
-    function applyState(state) {
+    function applyState(state: string) {
       navbar.classList.remove("scrolled", "nav-hidden", "nav-peek");
       if (state === "scrolled") navbar.classList.add("scrolled");
       if (state === "hidden")   navbar.classList.add("nav-hidden");
@@ -476,7 +498,7 @@ const linkKey: Record<string, string> = {
       else           { cancelPeek(); applyState("scrolled"); }
     }
 
-    function onMouse(e) {
+    function onMouse(e: MouseEvent) {
       if (e.clientY <= PEEK_ZONE) {
         cancelPeek();
         if (navbar.classList.contains("nav-hidden")) applyState("peek");
@@ -517,7 +539,7 @@ const linkKey: Record<string, string> = {
       const isOpen = menu?.classList.toggle("is-open") ?? false;
       setMenuState(isOpen);
       if (isOpen) menuLinks?.[0]?.focus();
-    });
+    }, { signal });
 
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && menu?.classList.contains("is-open")) {
@@ -525,22 +547,22 @@ const linkKey: Record<string, string> = {
         setMenuState(false);
         burger?.focus();
       }
-    });
+    }, { signal });
 
     menuLinks?.forEach((link) => {
       link.addEventListener("click", () => {
         if (!menu?.classList.contains("is-open")) return;
         menu.classList.remove("is-open");
         setMenuState(false);
-      });
+      }, { signal });
     });
 
     setMenuState(false);
 
     /* ── Dark mode toggle ── */
-    function syncDarkBtn(isDark) {
+    function syncDarkBtn(isDark: boolean) {
       const lang = window.__lang || "fr";
-      const dict = window.__i18n?.[lang] || {};
+      const dict = (window.__i18n as Record<string, Record<string, string>> | undefined)?.[lang] || {};
       const label = isDark
         ? (dict["nav.darkOff"] || "Disable dark mode")
         : (dict["nav.darkOn"]  || "Enable dark mode");
@@ -548,10 +570,9 @@ const linkKey: Record<string, string> = {
       [document.getElementById("dark-toggle"), document.getElementById("dark-toggle-mobile")]
         .filter(Boolean)
         .forEach((btn) => {
-          btn.setAttribute("aria-pressed", String(isDark));
-          btn.setAttribute("aria-label", label);
-          // Texte dans le mobile btn
-          const span = btn.querySelector("span[data-t]");
+          btn!.setAttribute("aria-pressed", String(isDark));
+          btn!.setAttribute("aria-label", label);
+          const span = btn!.querySelector("span[data-t]");
           if (span) span.textContent = label;
         });
     }
@@ -563,15 +584,13 @@ const linkKey: Record<string, string> = {
       syncDarkBtn(isDark);
     }
 
-    document.getElementById("dark-toggle")?.addEventListener("click", toggleDark);
-    document.getElementById("dark-toggle-mobile")?.addEventListener("click", toggleDark);
+    document.getElementById("dark-toggle")?.addEventListener("click", toggleDark, { signal });
+    document.getElementById("dark-toggle-mobile")?.addEventListener("click", toggleDark, { signal });
 
-    // État initial du bouton
     syncDarkBtn(document.documentElement.dataset.theme === "dark");
 
     /* ── Language toggle ── */
-    function syncLangBtns(lang) {
-      // Affiche la langue courante (FR/EN) sur les deux boutons
+    function syncLangBtns(lang: string) {
       const label = lang.toUpperCase();
       const desktopSpan = document.querySelector("#lang-toggle .lang-label");
       const mobileSpan  = document.querySelector("#lang-toggle-mobile .lang-label-mobile");
@@ -582,19 +601,25 @@ const linkKey: Record<string, string> = {
     function toggleLang() {
       const current = window.__lang || "fr";
       const next    = current === "fr" ? "en" : "fr";
+      const nav     = document.getElementById("navbar");
+      const enHref  = nav?.dataset.langEnHref;
+      const frHref  = nav?.dataset.langFrHref;
+
+      if (next === "en" && enHref) { window.location.href = enHref; return; }
+      if (next === "fr" && frHref) { window.location.href = frHref; return; }
+
+      // Fallback client-side
       window.__lang = next;
       localStorage.setItem("blogdungaucher.lang", next);
       if (typeof window.__applyLang === "function") window.__applyLang(next);
       syncLangBtns(next);
-      // Resynchroniser le bouton dark après changement de langue
       syncDarkBtn(document.documentElement.dataset.theme === "dark");
     }
 
-    // Initialiser l'affichage FR/EN au chargement
     syncLangBtns(window.__lang || "fr");
 
-    document.getElementById("lang-toggle")?.addEventListener("click", toggleLang);
-    document.getElementById("lang-toggle-mobile")?.addEventListener("click", toggleLang);
+    document.getElementById("lang-toggle")?.addEventListener("click", toggleLang, { signal });
+    document.getElementById("lang-toggle-mobile")?.addEventListener("click", toggleLang, { signal });
   }
 
   document.addEventListener("astro:page-load", initNavbar);

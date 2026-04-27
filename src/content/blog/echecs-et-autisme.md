@@ -8,8 +8,12 @@ featuredRank: 99
 readingTime: "22 min"
 pillar: "Inclusion"
 tags: ["échecs autisme", "échecs enfant autiste", "bienfaits échecs TSA", "inclusion", "neuroatypique", "neurodiversité"]
-seoTitle: "Échecs et autisme : les bienfaits insoupçonnés sur les TSA"
-seoDescription: "Règles stables, information complète, rituel prévisible : pourquoi l'échiquier est l'un des rares espaces conçus pour le cerveau autiste, ce que dit la recherche."
+seoTitle: "Échecs et autisme : les bienfaits pour les TSA"
+seoDescription: "Découvrez comment les échecs aident les personnes avec un TSA. Explorez les bienfaits cognitifs et sociaux de ce jeu stratégique pour les cerveaux autistes."
+titleEn: "Chess and Autism: Why the Chessboard Becomes a Refuge"
+excerptEn: "For a brain that struggles with social ambiguity, the chessboard is one of the few spaces where rules truly hold. What research actually says about autism and chess, without romanticism or oversimplification."
+seoTitleEn: "Chess and Autism: Benefits for the Autism Spectrum"
+seoDescriptionEn: "Discover how chess helps people with ASD. Explore the cognitive and social benefits of this strategic game for autistic minds, backed by research."
 ---
 
 Imagine une cour de récréation un jeudi matin. Le bruit est assourdissant : des chaises qui raclent, des éclats de voix imprévisibles, des lumières fluorescentes qui grésillent légèrement au-dessus des têtes. Pour la plupart d'entre nous, ce n'est qu'un léger fond sonore. Mais pour Théo, 9 ans, diagnostiqué [trouble du spectre de l'autisme](https://fr.wikipedia.org/wiki/Trouble_du_spectre_de_l%27autisme) (TSA) de niveau 2, ce flot d'informations sensorielles non filtrées se transforme chaque matin en une tempête intérieure paralysante. Les codes sociaux volent dans tous les sens, implicites, indéchiffrables. Il faut savoir lire entre les lignes d'une conversation, interpréter un rictus, comprendre le second degré d'une plaisanterie. C'est épuisant à un niveau que peu de personnes neurotypiques peuvent imaginer.

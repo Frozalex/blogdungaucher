@@ -10,6 +10,10 @@ pillar: "Culture"
 tags: ["échecs et argent", "prize pool", "Magnus Carlsen", "FIDE", "économie des échecs", "chess.com", "professionnalisme"]
 seoTitle: "Les échecs et l'argent : prize pools, modèle économique et revenus des pros"
 seoDescription: "Pourquoi les meilleurs joueurs d'échecs du monde ne sont pas riches ? Prize pools, FIDE, sponsoring, streaming : anatomie d'un modèle économique à la traîne."
+titleEn: "Chess and Money: Why the World's Best Players Aren't Rich"
+excerptEn: "Magnus Carlsen is the greatest player in history. He's earned around $2 million in prize money over his entire career. An average Top 100 tennis player earns that in a single year. What's really going on in chess economics?"
+seoTitleEn: "Chess and Money: Prize Pools, Economic Model and Pro Earnings"
+seoDescriptionEn: "Why aren't the world's best chess players rich? Prize pools, FIDE, sponsorship, streaming: anatomy of a struggling economic model."
 ---
 
 En 2023, le Championnat du Monde d'échecs opposait Ding Liren à Ian Nepomniachtchi. Le prize pool total : 2 millions de dollars. Le gagnant a empoché 1,1 million.

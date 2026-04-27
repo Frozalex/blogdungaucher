@@ -10,6 +10,10 @@ pillar: "Neurosciences"
 tags: ["échecs seniors", "vieillissement cognitif", "démence", "Alzheimer", "réserve cognitive", "neuroplasticité", "NEJM"]
 seoTitle: "Les échecs et les seniors : la science sur le vieillissement cognitif"
 seoDescription: "Jouer aux échecs protège-t-il du déclin cognitif ? Ce que l'étude du New England Journal of Medicine et les neurosciences disent vraiment sur les échecs, les seniors et la démence."
+titleEn: "Chess and Seniors: What Science Really Says About Cognitive Decline"
+excerptEn: "A New England Journal of Medicine study shows chess reduces the risk of dementia. But the mechanism is far more subtle than simply 'exercise your brain'."
+seoTitleEn: "Chess and Seniors: The Science on Cognitive Ageing"
+seoDescriptionEn: "Does playing chess protect against cognitive decline? What the New England Journal of Medicine study and neuroscience really say about chess, seniors and dementia."
 ---
 
 Raymond a 79 ans. Il joue aux échecs depuis l'âge de 12 ans dans un club de province, deux soirs par semaine. Son médecin lui a dit qu'il a le profil cognitif d'un homme de 65 ans. Ce n'est pas un miracle génétique : c'est, selon toute probabilité, le résultat de décennies d'une activité que les neurosciences considèrent aujourd'hui comme l'une des plus protectrices contre le déclin cognitif.

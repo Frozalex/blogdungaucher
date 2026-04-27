@@ -10,6 +10,10 @@ pillar: "Mental"
 tags: ["syndrome de l'imposteur", "Elo", "progression aux échecs", "psychologie", "confiance", "perfectionnisme", "mental compétitif"]
 seoTitle: "Syndrome de l'imposteur aux échecs : pourquoi tu ne te sens pas légitime malgré ta progression"
 seoDescription: "Tu montes en Elo mais tu ne te sens pas légitime. Le syndrome de l'imposteur touche beaucoup de joueurs d'échecs. Ce que la psychologie dit de ce phénomène et comment en sortir."
+titleEn: "Impostor Syndrome in Chess: Rising in Elo Without Feeling Legitimate"
+excerptEn: "Your Elo is climbing but you don't really understand how. Your wins feel like luck, your losses seem to confirm what you already knew: you're not that good. That feeling has a name, a cause and solutions."
+seoTitleEn: "Impostor Syndrome in Chess: Why You Don't Feel Legitimate Despite Your Progress"
+seoDescriptionEn: "Your Elo is rising but you don't feel legitimate. Impostor syndrome affects many chess players. What psychology says about this phenomenon and how to overcome it."
 ---
 
 Tu viens de gagner une partie bien jouée. Ton adversaire était 100 points au-dessus de toi. La victoire est nette, méritée. Et pourtant, la première pensée qui s'impose n'est pas la satisfaction. C'est quelque chose de plus inconfortable : *il a dû faire une erreur. Ça ne compte pas vraiment. Si on rejouait, il gagnerait.*

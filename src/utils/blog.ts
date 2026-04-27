@@ -74,6 +74,14 @@ export function getPostUrl(post: BlogEntry) {
   return `/blog/${getPostSlug(post)}/`;
 }
 
+export function getPostUrlEn(post: BlogEntry) {
+  return `/en/blog/${getPostSlug(post)}/`;
+}
+
+export function getPostUrlLang(post: BlogEntry, lang: "fr" | "en") {
+  return lang === "en" ? getPostUrlEn(post) : getPostUrl(post);
+}
+
 export function buildBreadcrumbJsonLd(
   items: Array<{ name: string; path: string }>,
 ) {

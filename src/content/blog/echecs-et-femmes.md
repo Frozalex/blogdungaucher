@@ -8,8 +8,12 @@ featuredRank: 99
 readingTime: "25 min"
 pillar: "Genre"
 tags: ["échecs femmes", "joueuses échecs", "Judit Polgar", "Le Jeu de la Dame", "stéréotypes", "sociologie", "Vera Menchik", "Hou Yifan"]
-seoTitle: "Échecs et femmes : la vérité sur l'écart de genre"
-seoDescription: "Pourquoi y a-t-il si peu de femmes aux échecs ? Décryptage des études scientifiques, des sœurs Polgár, de Hou Yifan, de Vera Menchik et de l'impact du Jeu de la Dame."
+seoTitle: "Échecs et femmes : comprendre l'écart de genre"
+seoDescription: "Pourquoi y a-t-il un écart de genre aux échecs ? Découvrez la vérité sur les femmes et les réalités derrière ce débat passionnant."
+titleEn: "Chess and Women: Why So Few, and Is That Changing?"
+excerptEn: "40 women among 1,700 Grandmasters. The gap isn't biological — it's mathematical, historical and psychological. What the data really says, and why the 'female brain' argument doesn't hold."
+seoTitleEn: "Chess and Women: Understanding the Gender Gap"
+seoDescriptionEn: "Why are there so few women in chess? A breakdown of scientific studies, the Polgár sisters, Hou Yifan and the real reasons behind this fascinating debate."
 ---
 
 En 2002, lors du tournoi de Moscou, [Judit Polgár](https://fr.wikipedia.org/wiki/Judit_Polg%C3%A1r) bat [Garry Kasparov](https://fr.wikipedia.org/wiki/Garry_Kasparov). L’homme qui avait déclaré publiquement que les femmes étaient structurellement inférieures aux hommes aux échecs perd contre une femme. Il n’y avait rien à rétorquer.

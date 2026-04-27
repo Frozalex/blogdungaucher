@@ -35,13 +35,13 @@ function buildPageLinks(current: number, total: number) {
 const paginationPages = buildPageLinks(page.currentPage, page.lastPage);
 
 const structuredData = isFirstPage
-  ? [buildWebsiteJsonLd(), buildBreadcrumbJsonLd([{ name: "Accueil", path: "/" }, { name: "Articles", path: "/blog" }])]
+  ? [buildWebsiteJsonLd(), buildBreadcrumbJsonLd([{ name: "Accueil", path: "/" }, { name: "Articles", path: "/blog/" }])]
   : undefined;
 ---
 <BaseLayout
   title={isFirstPage ? "Tous les articles | Blog d'un Gaucher" : `Articles — page ${page.currentPage} | Blog d'un Gaucher`}
   description="La bibliothèque complète : science, esprit, société et analyses."
-  canonicalPath={isFirstPage ? "/blog" : `/blog/${page.currentPage}`}
+  canonicalPath={isFirstPage ? "/blog/" : `/blog/${page.currentPage}/`}
   noindex={!isFirstPage}
   structuredData={structuredData}
 >
