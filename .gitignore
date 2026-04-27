@@ -1,3 +1,7 @@
 node_modules/
 dist/
 .astro/
+
+# Clés de déploiement (ne jamais commiter)
+gh_deploy_blog_rsa
+gh_deploy_blog_rsa.pub
