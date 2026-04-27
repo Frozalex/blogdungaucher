@@ -97,4 +97,10 @@ console.log("✓ favicon-16x16.png");
 await sharp(Buffer.from(sharpSvg(180))).resize(180, 180).png().toFile(join(imgDir, "apple-touch-icon.png"));
 console.log("✓ apple-touch-icon.png (180×180)");
 
+await sharp(Buffer.from(sharpSvg(192))).resize(192, 192).png().toFile(join(imgDir, "icon-192x192.png"));
+console.log("✓ icon-192x192.png");
+
+await sharp(Buffer.from(sharpSvg(512))).resize(512, 512).png().toFile(join(imgDir, "icon-512x512.png"));
+console.log("✓ icon-512x512.png");
+
 console.log("\nLogo et favicons retournés ✓");

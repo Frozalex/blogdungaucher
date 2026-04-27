@@ -2,7 +2,7 @@
  * Reconstruit favicon.svg à partir des 24 paths propres de logo.svg :
  * - ViewBox carré (868×868) avec le logo centré horizontalement
  * - Fond adaptatif light/dark via CSS media query
- * - Régénère aussi les PNG 16, 32, 180px
+ * - Régénère aussi les PNG 16, 32, 180, 192 et 512px
  */
 
 import { readFileSync, writeFileSync } from "fs";
@@ -78,6 +78,12 @@ console.log("✓ favicon-16x16.png");
 
 await sharp(Buffer.from(squareSvg(180))).resize(180, 180).png().toFile(join(imgDir, "apple-touch-icon.png"));
 console.log("✓ apple-touch-icon.png");
+
+await sharp(Buffer.from(squareSvg(192))).resize(192, 192).png().toFile(join(imgDir, "icon-192x192.png"));
+console.log("✓ icon-192x192.png");
+
+await sharp(Buffer.from(squareSvg(512))).resize(512, 512).png().toFile(join(imgDir, "icon-512x512.png"));
+console.log("✓ icon-512x512.png");
 
 // Mettre à jour aussi favicon-32x32.svg (version statique sans media query)
 const staticSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${VB}" width="32" height="32">

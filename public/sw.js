@@ -1,4 +1,4 @@
-const CACHE = "blogdungaucher-v1";
+const CACHE = "blogdungaucher-v2";
 
 const PRECACHE = [
   "/",
@@ -7,8 +7,11 @@ const PRECACHE = [
   "/esprit",
   "/societe",
   "/favicon.svg",
+  "/manifest.json",
   "/images/favicon-32x32.png",
   "/images/apple-touch-icon.png",
+  "/images/icon-192x192.png",
+  "/images/icon-512x512.png",
 ];
 
 self.addEventListener("install", (event) => {
