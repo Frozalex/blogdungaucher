@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="t3"><title id="t3">Arbre de recherche exponentiel — branchement et profondeur</title>
+<rect fill="#f8f9fa" width="400" height="260"/>
+<text x="200" y="22" text-anchor="middle" font-size="13" font-weight="600" fill="#212529" font-family="system-ui,sans-serif">Explosion combinatoire (schéma)</text>
+<line x1="200" y1="40" x2="100" y2="80" stroke="#495057" stroke-width="2"/><line x1="200" y1="40" x2="200" y2="80" stroke="#495057" stroke-width="2"/><line x1="200" y1="40" x2="300" y2="80" stroke="#495057" stroke-width="2"/>
+<line x1="100" y1="80" x2="60" y2="120" stroke="#868e96"/><line x1="100" y1="80" x2="100" y2="120" stroke="#868e96"/><line x1="100" y1="80" x2="140" y2="120" stroke="#868e96"/>
+<line x1="200" y1="80" x2="170" y2="120" stroke="#868e96"/><line x1="200" y1="80" x2="200" y2="120" stroke="#868e96"/><line x1="200" y1="80" x2="230" y2="120" stroke="#868e96"/>
+<line x1="300" y1="80" x2="260" y2="120" stroke="#868e96"/><line x1="300" y1="80" x2="300" y2="120" stroke="#868e96"/><line x1="300" y1="80" x2="340" y2="120" stroke="#868e96"/>
+<text x="200" y="150" text-anchor="middle" font-size="11" fill="#495057" font-family="system-ui,sans-serif">N ≈ b^d — chaque demi-coup multiplie les branches</text>
+<text x="200" y="175" text-anchor="middle" font-size="11" fill="#495057" font-family="system-ui,sans-serif">b = facteur de branchement, d = profondeur (plies)</text>
+<text x="200" y="245" text-anchor="middle" font-size="10" fill="#6c757d" font-family="system-ui,sans-serif">Aucune machine ne parcourt l’arbre entier en profondeur « humaine »</text>
+</svg>

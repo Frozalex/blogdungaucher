@@ -1,0 +1,36 @@
+{
+  "name": "Blog d'un Gaucher",
+  "short_name": "Gaucher",
+  "description": "Science du jeu, esprit compétitif et échecs dans la société. Un espace de partage et de réflexion.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fcfaf6",
+  "theme_color": "#3d8b37",
+  "lang": "fr",
+  "categories": ["education", "sports", "entertainment"],
+  "icons": [
+    {
+      "src": "/images/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

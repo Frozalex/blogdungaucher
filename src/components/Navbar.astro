@@ -1,0 +1,601 @@
+---
+import { navigationLinks } from "../data/site";
+
+const pathname = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === "/" ? pathname === "/" : pathname.startsWith(href);
+
+// Correspondance href → clé de traduction navLinks
+const linkKey: Record<string, string> = {
+  "/science":  "navLinks.science",
+  "/esprit":   "navLinks.esprit",
+  "/societe":  "navLinks.societe",
+  "/blog":     "navLinks.blog",
+  "/about":    "navLinks.about",
+};
+---
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+
+    <a href="/" class="nav-logo" aria-label="Accueil Blog d'un Gaucher">
+      <img
+        src="/images/logo.svg"
+        alt=""
+        aria-hidden="true"
+        class="logo-img"
+        width="26"
+        height="36"
+        loading="eager"
+      />
+      <span class="logo-text" data-t="nav.siteName">Blog d'un Gaucher</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navigation principale">
+      <ul class="nav-links">
+        {navigationLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class={`nav-link${isActive(link.href) ? " active" : ""}`}
+              data-t={linkKey[link.href] ?? ""}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <!-- Boutons icônes : dark mode + langue -->
+    <div class="nav-actions">
+      <button
+        id="dark-toggle"
+        class="icon-btn"
+        type="button"
+        aria-pressed="false"
+        aria-label="Activer le mode sombre"
+        data-t-aria="nav.darkOn"
+        title=""
+      >
+        <!-- Icône soleil (mode clair actif) -->
+        <svg class="icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <!-- Icône lune (mode sombre actif) -->
+        <svg class="icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+
+      <button
+        id="lang-toggle"
+        class="icon-btn lang-btn"
+        type="button"
+        aria-label="Changer la langue"
+      ><span class="lang-label">FR</span></button>
+    </div>
+
+    <button
+      class="burger"
+      aria-label="Ouvrir le menu"
+      aria-controls="mobileMenu"
+      aria-expanded="false"
+      id="burger"
+      type="button"
+    >
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <div class="container mobile-menu__content">
+        <span class="mobile-eyebrow" data-t="nav.navigation">Navigation</span>
+        {navigationLinks.map((link) => (
+          <a
+            href={link.href}
+            class={`mobile-link${isActive(link.href) ? " active" : ""}`}
+            aria-current={isActive(link.href) ? "page" : undefined}
+            data-t={linkKey[link.href] ?? ""}
+          >{link.label}</a>
+        ))}
+        <div class="mobile-utils">
+          <button
+            id="dark-toggle-mobile"
+            class="mobile-util-btn"
+            type="button"
+            aria-pressed="false"
+            aria-label="Activer le mode sombre"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+            <span data-t="nav.darkOn">Mode sombre</span>
+          </button>
+          <button
+            id="lang-toggle-mobile"
+            class="mobile-util-btn"
+            type="button"
+            aria-label="Changer la langue"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span class="lang-label-mobile">FR</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  /* ── base ── */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    will-change: transform;
+    transition:
+      transform    320ms var(--ease-out),
+      background   260ms ease,
+      border-color 260ms ease,
+      box-shadow   260ms ease;
+  }
+
+  /* ── scrolled : glassmorphism ── */
+  .navbar.scrolled {
+    background: var(--navbar-bg-scrolled);
+    backdrop-filter: blur(16px) saturate(1.6);
+    -webkit-backdrop-filter: blur(16px) saturate(1.6);
+    border-color: var(--border-soft);
+    box-shadow: 0 1px 0 var(--border-soft);
+  }
+
+  /* ── caché ── */
+  .navbar.nav-hidden {
+    transform: translateY(-110%);
+  }
+
+  /* ── peek ── */
+  .navbar.nav-peek {
+    transform: translateY(0);
+    background: color-mix(in srgb, var(--page-accent, var(--green)) 14%, var(--navbar-bg-glass));
+    backdrop-filter: blur(20px) saturate(1.8);
+    -webkit-backdrop-filter: blur(20px) saturate(1.8);
+    border-color: color-mix(in srgb, var(--page-accent, var(--green)) 28%, transparent);
+    box-shadow:
+      0 1px 0 color-mix(in srgb, var(--page-accent, var(--green)) 20%, transparent),
+      0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  /* ── inner ── */
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 3.75rem;
+    justify-content: center;
+  }
+
+  /* ── logo ── */
+  .nav-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    flex-shrink: 0;
+    transition: opacity 180ms ease;
+  }
+  .nav-logo:hover { opacity: 0.75; }
+
+  .logo-img {
+    width: 26px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+    transition: filter 260ms ease;
+  }
+
+  /* Mode sombre : le logo noir devient blanc */
+  [data-theme="dark"] .logo-img {
+    filter: brightness(0) invert(1);
+  }
+
+  .logo-text {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-main);
+  }
+
+  /* ── desktop nav ── */
+  .nav-desktop { margin-left: auto; }
+
+  .nav-links {
+    display: flex;
+    gap: 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    border-radius: var(--radius-sm);
+    transition: color 180ms ease, background 180ms ease;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0.7rem;
+    right: 0.7rem;
+    height: 2px;
+    background: var(--green);
+    border-radius: 1px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 200ms var(--ease-out);
+  }
+
+  .nav-link:hover {
+    color: var(--text-main);
+    background: rgba(0,0,0,0.04);
+  }
+  [data-theme="dark"] .nav-link:hover {
+    background: rgba(255,255,255,0.05);
+  }
+  .nav-link:hover::after { transform: scaleX(1); }
+  .nav-link.active {
+    color: var(--text-main);
+    background: color-mix(in srgb, var(--green-light) 72%, transparent);
+  }
+  .nav-link.active::after { transform: scaleX(1); }
+
+  /* ── Boutons icônes ── */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: 0.25rem;
+  }
+
+  .icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-soft);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+    position: relative;
+  }
+  .icon-btn:hover {
+    background: var(--surface-warm);
+    color: var(--text-main);
+    border-color: var(--border-strong);
+  }
+
+  /* Icônes dark toggle */
+  .icon-btn .icon-dark { display: none; }
+  [data-theme="dark"] .icon-btn .icon-light { display: none; }
+  [data-theme="dark"] .icon-btn .icon-dark  { display: block; }
+
+  /* Bouton langue : même taille que dark toggle, juste FR/EN */
+  .lang-btn {
+    width: 2rem;
+    padding: 0;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── burger ── */
+  .burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-left: auto;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    cursor: pointer;
+    transition: background 160ms ease;
+  }
+  .burger:hover { background: var(--surface-warm); }
+  .burger span {
+    width: 0.95rem;
+    height: 1.5px;
+    margin: 0 auto;
+    background: var(--text-main);
+    border-radius: 999px;
+    transition: transform 240ms var(--ease-out), opacity 240ms ease;
+    display: block;
+  }
+  .burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+  .burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+
+  /* ── mobile menu ── */
+  .mobile-menu {
+    display: grid;
+    grid-template-rows: 0fr;
+    border-top: 1px solid transparent;
+    background: var(--surface);
+    transition:
+      grid-template-rows 340ms var(--ease-out),
+      border-color       340ms ease;
+    overflow: hidden;
+  }
+
+  .mobile-menu.is-open {
+    grid-template-rows: 1fr;
+    border-color: var(--border-soft);
+  }
+
+  .mobile-menu__inner { overflow: hidden; }
+
+  .mobile-menu__content {
+    display: grid;
+    gap: 0.1rem;
+    padding: 0.75rem 0 1.25rem;
+  }
+
+  .mobile-eyebrow {
+    margin: 0.2rem 0 0.45rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    font-weight: 700;
+  }
+
+  .mobile-link {
+    opacity: 0;
+    transform: translateY(6px);
+    transition:
+      opacity   220ms ease,
+      transform 220ms var(--ease-out),
+      background 140ms ease,
+      color      140ms ease;
+  }
+  .mobile-menu.is-open .mobile-link { opacity: 1; transform: translateY(0); }
+
+  .mobile-menu.is-open .mobile-link:nth-of-type(1) { transition-delay: 60ms; }
+  .mobile-menu.is-open .mobile-link:nth-of-type(2) { transition-delay: 110ms; }
+  .mobile-menu.is-open .mobile-link:nth-of-type(3) { transition-delay: 160ms; }
+  .mobile-menu.is-open .mobile-link:nth-of-type(4) { transition-delay: 210ms; }
+  .mobile-menu.is-open .mobile-link:nth-of-type(5) { transition-delay: 260ms; }
+
+  .mobile-link {
+    padding: 0.65rem 0.5rem;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+  .mobile-link.active {
+    color: var(--text-main);
+    background: color-mix(in srgb, var(--green-light) 72%, transparent);
+    border: 1px solid var(--green-border);
+  }
+  .mobile-link:hover { background: var(--bg-warm); color: var(--text-main); }
+
+  /* Utilitaires mobile (dark + lang) */
+  .mobile-utils {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 220ms ease, transform 220ms var(--ease-out);
+    transition-delay: 290ms;
+  }
+  .mobile-menu.is-open .mobile-utils { opacity: 1; transform: translateY(0); }
+
+  .mobile-util-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.65rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-soft);
+    background: var(--surface-warm);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 140ms ease, color 140ms ease;
+  }
+  .mobile-util-btn:hover {
+    background: var(--bg-warm);
+    color: var(--text-main);
+  }
+
+  @media (max-width: 960px) {
+    .nav-desktop, .nav-actions { display: none; }
+    .burger { display: flex; }
+    .nav-inner { justify-content: space-between; }
+  }
+</style>
+
+<script>
+  let _onScroll = null;
+  let _onMouse  = null;
+
+  function initNavbar() {
+    const navbar = document.getElementById("navbar");
+    if (!navbar) return;
+
+    if (_onScroll) { window.removeEventListener("scroll",    _onScroll); }
+    if (_onMouse)  { document.removeEventListener("mousemove", _onMouse); }
+
+    const HIDE_AFTER  = 72;
+    const JITTER      = 4;
+    const PEEK_ZONE   = 72;
+    const LEAVE_DELAY = 1100;
+
+    let prevY     = window.scrollY;
+    let peekTimer = null;
+
+    function applyState(state) {
+      navbar.classList.remove("scrolled", "nav-hidden", "nav-peek");
+      if (state === "scrolled") navbar.classList.add("scrolled");
+      if (state === "hidden")   navbar.classList.add("nav-hidden");
+      if (state === "peek")     navbar.classList.add("nav-peek");
+    }
+
+    function cancelPeek() {
+      if (peekTimer) { clearTimeout(peekTimer); peekTimer = null; }
+    }
+
+    function onScroll() {
+      const y     = window.scrollY;
+      const delta = y - prevY;
+      prevY = y;
+      if (y < HIDE_AFTER) { cancelPeek(); applyState("top"); return; }
+      if (Math.abs(delta) <= JITTER) return;
+      if (delta > 0) { cancelPeek(); applyState("hidden"); }
+      else           { cancelPeek(); applyState("scrolled"); }
+    }
+
+    function onMouse(e) {
+      if (e.clientY <= PEEK_ZONE) {
+        cancelPeek();
+        if (navbar.classList.contains("nav-hidden")) applyState("peek");
+      } else if (navbar.classList.contains("nav-peek") && e.clientY > PEEK_ZONE + 16) {
+        if (!peekTimer) {
+          peekTimer = setTimeout(() => {
+            peekTimer = null;
+            if (window.scrollY >= HIDE_AFTER && navbar.classList.contains("nav-peek")) {
+              applyState("hidden");
+            }
+          }, LEAVE_DELAY);
+        }
+      }
+    }
+
+    _onScroll = onScroll;
+    _onMouse  = onMouse;
+    window.addEventListener("scroll",     onScroll, { passive: true });
+    document.addEventListener("mousemove", onMouse,  { passive: true });
+    onScroll();
+
+    /* ── Burger ── */
+    const burger = document.getElementById("burger");
+    const menu   = document.getElementById("mobileMenu");
+    const menuLinks = menu?.querySelectorAll("a");
+
+    function setMenuState(isOpen) {
+      const lang = window.__lang || "fr";
+      const dict = window.__i18n?.[lang] || {};
+      burger?.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      burger?.setAttribute("aria-label", isOpen
+        ? (dict["nav.closeMenu"] || "Fermer le menu")
+        : (dict["nav.openMenu"]  || "Ouvrir le menu"));
+      menu?.setAttribute("aria-hidden", isOpen ? "false" : "true");
+    }
+
+    burger?.addEventListener("click", () => {
+      const isOpen = menu?.classList.toggle("is-open") ?? false;
+      setMenuState(isOpen);
+      if (isOpen) menuLinks?.[0]?.focus();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && menu?.classList.contains("is-open")) {
+        menu.classList.remove("is-open");
+        setMenuState(false);
+        burger?.focus();
+      }
+    });
+
+    menuLinks?.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (!menu?.classList.contains("is-open")) return;
+        menu.classList.remove("is-open");
+        setMenuState(false);
+      });
+    });
+
+    setMenuState(false);
+
+    /* ── Dark mode toggle ── */
+    function syncDarkBtn(isDark) {
+      const lang = window.__lang || "fr";
+      const dict = window.__i18n?.[lang] || {};
+      const label = isDark
+        ? (dict["nav.darkOff"] || "Disable dark mode")
+        : (dict["nav.darkOn"]  || "Enable dark mode");
+
+      [document.getElementById("dark-toggle"), document.getElementById("dark-toggle-mobile")]
+        .filter(Boolean)
+        .forEach((btn) => {
+          btn.setAttribute("aria-pressed", String(isDark));
+          btn.setAttribute("aria-label", label);
+          // Texte dans le mobile btn
+          const span = btn.querySelector("span[data-t]");
+          if (span) span.textContent = label;
+        });
+    }
+
+    function toggleDark() {
+      const isDark = document.documentElement.dataset.theme !== "dark";
+      document.documentElement.dataset.theme = isDark ? "dark" : "light";
+      localStorage.setItem("blogdungaucher.theme", isDark ? "dark" : "light");
+      syncDarkBtn(isDark);
+    }
+
+    document.getElementById("dark-toggle")?.addEventListener("click", toggleDark);
+    document.getElementById("dark-toggle-mobile")?.addEventListener("click", toggleDark);
+
+    // État initial du bouton
+    syncDarkBtn(document.documentElement.dataset.theme === "dark");
+
+    /* ── Language toggle ── */
+    function syncLangBtns(lang) {
+      // Affiche la langue courante (FR/EN) sur les deux boutons
+      const label = lang.toUpperCase();
+      const desktopSpan = document.querySelector("#lang-toggle .lang-label");
+      const mobileSpan  = document.querySelector("#lang-toggle-mobile .lang-label-mobile");
+      if (desktopSpan) desktopSpan.textContent = label;
+      if (mobileSpan)  mobileSpan.textContent  = label;
+    }
+
+    function toggleLang() {
+      const current = window.__lang || "fr";
+      const next    = current === "fr" ? "en" : "fr";
+      window.__lang = next;
+      localStorage.setItem("blogdungaucher.lang", next);
+      if (typeof window.__applyLang === "function") window.__applyLang(next);
+      syncLangBtns(next);
+      // Resynchroniser le bouton dark après changement de langue
+      syncDarkBtn(document.documentElement.dataset.theme === "dark");
+    }
+
+    // Initialiser l'affichage FR/EN au chargement
+    syncLangBtns(window.__lang || "fr");
+
+    document.getElementById("lang-toggle")?.addEventListener("click", toggleLang);
+    document.getElementById("lang-toggle-mobile")?.addEventListener("click", toggleLang);
+  }
+
+  document.addEventListener("astro:page-load", initNavbar);
+</script>

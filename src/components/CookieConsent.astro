@@ -1,0 +1,206 @@
+<div class="cookie-banner" id="cookie-banner" hidden>
+  <p>
+    Ce site utilise des cookies pour la mesure d'audience et l'affichage publicitaire.
+    Tu peux accepter, refuser ou modifier ce choix à tout moment.
+  </p>
+  <fieldset class="cookie-options">
+    <legend>Préférences</legend>
+    <label>
+      <input id="cookie-analytics" type="checkbox" />
+      Mesure d'audience (analytics)
+    </label>
+    <label>
+      <input id="cookie-marketing" type="checkbox" />
+      Publicité personnalisée
+    </label>
+  </fieldset>
+  <div class="cookie-actions">
+    <button type="button" class="cookie-btn cookie-btn-primary" data-cookie-action="accept">
+      Accepter tout
+    </button>
+    <button type="button" class="cookie-btn" data-cookie-action="reject">
+      Tout refuser
+    </button>
+    <button type="button" class="cookie-btn" data-cookie-action="save">
+      Enregistrer mes choix
+    </button>
+  </div>
+</div>
+
+<button type="button" class="cookie-manage" id="cookie-manage" hidden>
+  Paramètres cookies
+</button>
+
+<script is:inline>
+  (function () {
+    const KEY = "blogdungaucher.cookieConsent.v1";
+
+    function readConsent() {
+      try {
+        const raw = localStorage.getItem(KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch {
+        return null;
+      }
+    }
+
+    function writeConsent(payload) {
+      const normalized = {
+        analytics: Boolean(payload.analytics),
+        marketing: Boolean(payload.marketing),
+        updatedAt: new Date().toISOString(),
+      };
+      localStorage.setItem(KEY, JSON.stringify(normalized));
+      document.dispatchEvent(new CustomEvent("cookie:updated", { detail: normalized }));
+      return normalized;
+    }
+
+    function toggleUi(state, banner, manage) {
+      const needsChoice = !state;
+      banner.hidden = !needsChoice;
+      manage.hidden = needsChoice;
+    }
+
+    function initCookieConsent() {
+      const banner = document.getElementById("cookie-banner");
+      const manage = document.getElementById("cookie-manage");
+      const analyticsInput = document.getElementById("cookie-analytics");
+      const marketingInput = document.getElementById("cookie-marketing");
+      if (!banner || !manage || !analyticsInput || !marketingInput) return;
+
+      function syncForm(consent) {
+        analyticsInput.checked = Boolean(consent?.analytics);
+        marketingInput.checked = Boolean(consent?.marketing);
+      }
+
+      const current = readConsent();
+      syncForm(current);
+      toggleUi(current, banner, manage);
+
+      banner.querySelectorAll("[data-cookie-action]").forEach((el) => {
+        el.onclick = () => {
+          const action = el.getAttribute("data-cookie-action");
+          if (action === "accept") {
+            const next = writeConsent({ analytics: true, marketing: true });
+            syncForm(next);
+            toggleUi(next, banner, manage);
+            return;
+          }
+          if (action === "reject") {
+            const next = writeConsent({ analytics: false, marketing: false });
+            syncForm(next);
+            toggleUi(next, banner, manage);
+            return;
+          }
+          if (action === "save") {
+            const next = writeConsent({
+              analytics: analyticsInput.checked,
+              marketing: marketingInput.checked,
+            });
+            syncForm(next);
+            toggleUi(next, banner, manage);
+            return;
+          }
+          banner.hidden = false;
+          manage.hidden = true;
+        };
+      });
+
+      manage.onclick = () => {
+        syncForm(readConsent());
+        banner.hidden = false;
+        manage.hidden = true;
+      };
+    }
+
+    document.addEventListener("astro:page-load", initCookieConsent);
+  })();
+</script>
+
+<style>
+  .cookie-banner {
+    position: fixed;
+    inset: auto 1rem 1rem;
+    z-index: 120;
+    max-width: 32rem;
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .cookie-banner p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .cookie-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.8rem;
+  }
+  .cookie-options {
+    margin-top: 0.8rem;
+    padding: 0.7rem;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+  }
+  .cookie-options legend {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    padding: 0 0.25rem;
+  }
+  .cookie-options label {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.86rem;
+    color: var(--text-main);
+  }
+  .cookie-options label + label {
+    margin-top: 0.45rem;
+  }
+
+  .cookie-btn {
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--text-main);
+    padding: 0.45rem 0.75rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .cookie-btn-primary {
+    background: var(--green);
+    color: #fff;
+    border-color: var(--green);
+  }
+
+  .cookie-manage {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 119;
+    border: 1px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--text-main);
+    padding: 0.45rem 0.8rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+  }
+  @media (max-width: 680px) {
+    .cookie-banner {
+      left: 0.75rem;
+      right: 0.75rem;
+      max-width: none;
+    }
+  }
+</style>

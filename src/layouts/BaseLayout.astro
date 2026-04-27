@@ -1,0 +1,466 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import BackToTop from "../components/BackToTop.astro";
+import CookieConsent from "../components/CookieConsent.astro";
+import { ViewTransitions } from "astro:transitions";
+
+import { siteConfig } from "../data/site";
+
+type StructuredData = Record<string, unknown> | Array<Record<string, unknown>>;
+
+const {
+  title = siteConfig.defaultTitle,
+  description = siteConfig.defaultDescription,
+  canonicalPath = Astro.url.pathname,
+  image = siteConfig.defaultOgImage,
+  type = "website",
+  noindex = false,
+  structuredData,
+  accentColor,
+  tags,
+  publishDate,
+  modifiedDate,
+  section,
+} = Astro.props as {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  image?: string;
+  type?: "website" | "article";
+  noindex?: boolean;
+  structuredData?: StructuredData;
+  accentColor?: string;
+  tags?: string[];
+  publishDate?: Date;
+  modifiedDate?: Date;
+  section?: string;
+};
+
+const canonicalUrl = new URL(canonicalPath, siteConfig.siteUrl).toString();
+const socialImage = new URL(image, siteConfig.siteUrl).toString();
+const structuredDataItems = structuredData
+  ? Array.isArray(structuredData)
+    ? structuredData
+    : [structuredData]
+  : [];
+---
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Le Gaucher" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#fcfaf6" media="(prefers-color-scheme: light)" id="meta-theme-light" />
+    <meta name="theme-color" content="#1c1a16" media="(prefers-color-scheme: dark)" id="meta-theme-dark" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Blog Gaucher" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ── Anti-flash : dark mode + i18n appliqués avant render ── -->
+    <script is:inline>
+      (function () {
+        // ── DARK MODE ──
+        var stored = localStorage.getItem("blogdungaucher.theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefersDark ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+
+        // ── I18N runtime ──
+        var T = {
+          fr: {
+            "nav.siteName": "Blog d\u2019un Gaucher",
+            "nav.context": "Carnet \u00e9ditorial sur les \u00e9checs",
+            "nav.cta": "Lire les articles",
+            "nav.openMenu": "Ouvrir le menu",
+            "nav.closeMenu": "Fermer le menu",
+            "nav.navigation": "Navigation",
+            "nav.seeAll": "Voir tous les articles",
+            "nav.darkOn": "Activer le mode sombre",
+            "nav.darkOff": "D\u00e9sactiver le mode sombre",
+            "nav.langSwitch": "Switch to English",
+            "footer.contactEyebrow": "Restons en contact",
+            "footer.tagline": "Un espace \u00e9ditorial ind\u00e9pendant pour explorer les \u00e9checs en profondeur, avec des contenus utiles et actionnables.",
+            "footer.suggestTopic": "Proposer un sujet ou poser une question",
+            "footer.exploreTitle": "Explorer",
+            "footer.allArticles": "Tous les articles",
+            "footer.rss": "Flux RSS",
+            "footer.editorial": "Ligne \u00e9ditoriale",
+            "footer.sectionsTitle": "Rubriques",
+            "footer.trustTitle": "Confiance",
+            "footer.legal": "Mentions l\u00e9gales",
+            "footer.privacy": "Confidentialit\u00e9",
+            "home.eyebrow": "\u00c9ditorial ind\u00e9pendant",
+            "home.titleHtml": "Comprendre les <span class=\"hero__accent display-serif\">\u00e9checs</span><br/>sans simplifier le jeu.",
+            "home.lead": "Chaque semaine, des analyses claires sur la science du jeu, le mental comp\u00e9titif et l\u2019impact des \u00e9checs dans la soci\u00e9t\u00e9, avec une approche humaine et exigeante.",
+            "home.startReading": "Commencer la lecture",
+            "home.seeSections": "Voir les rubriques",
+            "home.proof1": "Articles de fond",
+            "home.proof2": "Ton accessible",
+            "home.proof3": "Approche rigoureuse",
+            "home.editorialNote": "Ici, on ne promet pas des progr\u00e8s magiques en 7 jours. On propose des id\u00e9es solides, des exemples concrets et des analyses que tu peux appliquer \u00e0 ta pratique, que tu sois joueur de club, comp\u00e9titeur ou simple passionn\u00e9.",
+            "home.sectionsEyebrow": "3 rubriques",
+            "home.sectionsTitle": "Ce dont on parle ici",
+            "home.recentEyebrow": "R\u00e9cents",
+            "home.latestTitle": "Derniers articles",
+            "home.seeAll": "Tout voir \u2192",
+            "blog.eyebrow": "Biblioth\u00e8que",
+            "blog.title": "Tous les articles",
+            "blog.lead": "Science du jeu, esprit comp\u00e9titif, \u00e9checs et soci\u00e9t\u00e9, analyses personnelles.",
+            "blog.filterAll": "Tout",
+            "blog.searchLabel": "Rechercher un article",
+            "blog.searchPlaceholder": "Titre, extrait ou \u00e9tiquette\u2026",
+            "blog.noResults": "Aucun article ne correspond \u00e0 ta recherche sur cette page.",
+            "blog.prev": "Pr\u00e9c\u00e9dent",
+            "blog.next": "Suivant",
+            "category.featured": "\u00c0 la une",
+            "category.allArticles": "Tous les articles",
+            "category.seeAll": "Voir tout le blog",
+            "category.comingSoon": "Les premiers articles arrivent bient\u00f4t.",
+            "category.comingSoonDesc": "Cette rubrique sera publi\u00e9e prochainement. En attendant, retrouve tous les articles disponibles.",
+            "category.seeAllCta": "Voir tous les articles",
+            "card.read": "Lire",
+            "categories.science.label": "Science",
+            "categories.science.shortLabel": "Science du jeu",
+            "categories.esprit.label": "Esprit",
+            "categories.esprit.shortLabel": "Esprit comp\u00e9titif",
+            "categories.societe.label": "Soci\u00e9t\u00e9",
+            "categories.societe.shortLabel": "\u00c9checs et soci\u00e9t\u00e9",
+            "categories.analyses.label": "Analyses",
+            "categories.analyses.shortLabel": "Analyse Stockfish",
+            "navLinks.science": "Science",
+            "navLinks.esprit": "Esprit",
+            "navLinks.societe": "Soci\u00e9t\u00e9",
+            "navLinks.blog": "Articles",
+            "navLinks.about": "\u00c0 propos"
+          },
+          en: {
+            "nav.siteName": "A Left-Hander\u2019s Blog",
+            "nav.context": "Editorial journal on chess",
+            "nav.cta": "Read the articles",
+            "nav.openMenu": "Open menu",
+            "nav.closeMenu": "Close menu",
+            "nav.navigation": "Navigation",
+            "nav.seeAll": "See all articles",
+            "nav.darkOn": "Enable dark mode",
+            "nav.darkOff": "Disable dark mode",
+            "nav.langSwitch": "Passer en fran\u00e7ais",
+            "footer.contactEyebrow": "Let\u2019s stay in touch",
+            "footer.tagline": "An independent editorial space for exploring chess in depth, with useful and actionable content.",
+            "footer.suggestTopic": "Suggest a topic or ask a question",
+            "footer.exploreTitle": "Explore",
+            "footer.allArticles": "All articles",
+            "footer.rss": "RSS Feed",
+            "footer.editorial": "Editorial line",
+            "footer.sectionsTitle": "Sections",
+            "footer.trustTitle": "Trust",
+            "footer.legal": "Legal notices",
+            "footer.privacy": "Privacy",
+            "home.eyebrow": "Independent editorial",
+            "home.titleHtml": "Understanding <span class=\"hero__accent display-serif\">chess</span><br/>without oversimplifying.",
+            "home.lead": "Each week, clear analyses on the science of the game, the competitive mindset and the impact of chess on society, with a human and demanding approach.",
+            "home.startReading": "Start reading",
+            "home.seeSections": "See sections",
+            "home.proof1": "In-depth articles",
+            "home.proof2": "Accessible tone",
+            "home.proof3": "Rigorous approach",
+            "home.editorialNote": "Here, we don\u2019t promise magical progress in 7 days. We offer solid ideas, concrete examples and analyses that you can apply to your practice, whether you\u2019re a club player, a competitor, or simply passionate about the game.",
+            "home.sectionsEyebrow": "3 sections",
+            "home.sectionsTitle": "What we cover here",
+            "home.recentEyebrow": "Recent",
+            "home.latestTitle": "Latest articles",
+            "home.seeAll": "See all \u2192",
+            "blog.eyebrow": "Library",
+            "blog.title": "All articles",
+            "blog.lead": "Game science, competitive mindset, chess and society, personal analyses.",
+            "blog.filterAll": "All",
+            "blog.searchLabel": "Search an article",
+            "blog.searchPlaceholder": "Title, excerpt or tag\u2026",
+            "blog.noResults": "No articles match your search on this page.",
+            "blog.prev": "Previous",
+            "blog.next": "Next",
+            "category.featured": "Featured",
+            "category.allArticles": "All articles",
+            "category.seeAll": "See all posts",
+            "category.comingSoon": "First articles coming soon.",
+            "category.comingSoonDesc": "This section will be published soon. In the meantime, find all available articles.",
+            "category.seeAllCta": "See all articles",
+            "card.read": "Read",
+            "categories.science.label": "Science",
+            "categories.science.shortLabel": "Game science",
+            "categories.esprit.label": "Mind",
+            "categories.esprit.shortLabel": "Competitive mindset",
+            "categories.societe.label": "Society",
+            "categories.societe.shortLabel": "Chess and society",
+            "categories.analyses.label": "Analyses",
+            "categories.analyses.shortLabel": "Stockfish Analysis",
+            "navLinks.science": "Science",
+            "navLinks.esprit": "Mind",
+            "navLinks.societe": "Society",
+            "navLinks.blog": "Articles",
+            "navLinks.about": "About"
+          }
+        };
+
+        window.__i18n = T;
+
+        function applyLang(lang) {
+          var dict = T[lang] || T.fr;
+          // Texte simple
+          document.querySelectorAll("[data-t]").forEach(function(el) {
+            var key = el.getAttribute("data-t");
+            if (dict[key] !== undefined) el.textContent = dict[key];
+          });
+          // HTML (pour les titres avec balises)
+          document.querySelectorAll("[data-t-html]").forEach(function(el) {
+            var key = el.getAttribute("data-t-html");
+            if (dict[key] !== undefined) el.innerHTML = dict[key];
+          });
+          // Attribut placeholder
+          document.querySelectorAll("[data-t-placeholder]").forEach(function(el) {
+            var key = el.getAttribute("data-t-placeholder");
+            if (dict[key] !== undefined) el.setAttribute("placeholder", dict[key]);
+          });
+          // Dates bilingues
+          document.querySelectorAll("time[datetime]").forEach(function(el) {
+            var iso = el.getAttribute("datetime");
+            if (!iso) return;
+            try {
+              el.textContent = new Intl.DateTimeFormat(
+                lang === "en" ? "en-GB" : "fr-FR",
+                { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }
+              ).format(new Date(iso));
+            } catch(e) {}
+          });
+          // Attribut aria-label du burger / toggles
+          document.querySelectorAll("[data-t-aria]").forEach(function(el) {
+            var key = el.getAttribute("data-t-aria");
+            if (dict[key] !== undefined) el.setAttribute("aria-label", dict[key]);
+          });
+          // Mettre à jour l'attribut lang sur <html>
+          document.documentElement.lang = lang === "en" ? "en" : "fr";
+        }
+
+        window.__applyLang = applyLang;
+
+        var storedLang = localStorage.getItem("blogdungaucher.lang") || "fr";
+        window.__lang = storedLang;
+        if (storedLang === "en") applyLang("en");
+      })();
+    </script>
+    <meta name="google-adsense-account" content="ca-pub-1244325018333025" />
+    {tags && tags.length > 0 && <meta name="keywords" content={tags.join(", ")} />}
+    {noindex ? (
+      <meta name="robots" content="noindex, nofollow" />
+    ) : (
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    )}
+
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hrefLang="fr-FR" href={canonicalUrl} />
+    <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
+    <link rel="alternate" type="application/rss+xml" title={`${siteConfig.name} RSS`} href={`${siteConfig.siteUrl}/rss.xml`} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta property="og:site_name" content={siteConfig.name} />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:secure_url" content={socialImage} />
+    <meta property="og:image:alt" content={title} />
+    <meta property="og:locale" content="fr_FR" />
+    {type === "article" && publishDate && (
+      <meta property="article:published_time" content={publishDate.toISOString()} />
+    )}
+    {type === "article" && modifiedDate && (
+      <meta property="article:modified_time" content={modifiedDate.toISOString()} />
+    )}
+    {type === "article" && section && <meta property="article:section" content={section} />}
+    {type === "article" &&
+      tags?.map((tag) => <meta property="article:tag" content={tag} />)}
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:url" content={canonicalUrl} />
+
+    {structuredDataItems.map((item) => (
+      <script type="application/ld+json" set:html={JSON.stringify(item)} />
+    ))}
+
+    <ViewTransitions />
+    <script is:inline>
+      (() => {
+        const CONSENT_KEY = "blogdungaucher.cookieConsent.v1";
+        const GA_MEASUREMENT_ID = "G-D31YHTHQT5";
+        const ADS_CLIENT = "ca-pub-1244325018333025";
+
+        const state = {
+          analyticsLoaded: false,
+          adsLoaded: false,
+        };
+
+        function readConsent() {
+          try {
+            const raw = localStorage.getItem(CONSENT_KEY);
+            return raw ? JSON.parse(raw) : null;
+          } catch {
+            return null;
+          }
+        }
+
+        function loadScript(src, attrs = {}) {
+          if (document.querySelector(`script[src="${src}"]`)) return;
+          const script = document.createElement("script");
+          script.src = src;
+          script.async = true;
+          Object.entries(attrs).forEach(([key, value]) => {
+            script.setAttribute(key, value);
+          });
+          document.head.appendChild(script);
+        }
+
+        function enableAnalytics() {
+          if (state.analyticsLoaded) return;
+          state.analyticsLoaded = true;
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function gtag() {
+            window.dataLayer.push(arguments);
+          };
+          loadScript(`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`);
+          window.gtag("js", new Date());
+          window.gtag("config", GA_MEASUREMENT_ID);
+        }
+
+        function enableAds() {
+          if (state.adsLoaded) return;
+          state.adsLoaded = true;
+          loadScript(
+            `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADS_CLIENT}`,
+            { crossorigin: "anonymous" },
+          );
+        }
+
+        function applyConsent(consent) {
+          if (!consent) return;
+          if (consent.analytics) enableAnalytics();
+          if (consent.marketing) enableAds();
+        }
+
+        function bootConsentScripts() {
+          applyConsent(readConsent());
+        }
+
+        document.addEventListener("astro:page-load", bootConsentScripts);
+        document.addEventListener("cookie:updated", (event) => {
+          applyConsent(event.detail);
+        });
+      })();
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous" />
+  </head>
+  <!-- Service worker + réapplication des préférences après chaque View Transition -->
+  <body style={accentColor ? `--page-accent:${accentColor}` : ""}>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <Navbar />
+    <main id="main-content">
+      <slot />
+    </main>
+    <Footer />
+    <CookieConsent />
+    <BackToTop />
+
+    <!-- ── Service Worker + réapplication préférences après View Transitions ── -->
+    <script>
+      // Enregistrement du service worker (PWA)
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").catch(() => {});
+      }
+
+      // Réappliquer dark mode + langue après chaque transition de page Astro
+      function reapplyPreferences() {
+        const theme = localStorage.getItem("blogdungaucher.theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+
+        const lang = localStorage.getItem("blogdungaucher.lang") || "fr";
+        window.__lang = lang;
+        if (typeof window.__applyLang === "function") window.__applyLang(lang);
+
+        // Synchroniser le bouton dark mode
+        const btn = document.getElementById("dark-toggle");
+        if (btn) {
+          const isDark = theme === "dark";
+          btn.setAttribute("aria-pressed", String(isDark));
+          btn.setAttribute("aria-label", isDark
+            ? (window.__i18n?.[lang]?.["nav.darkOff"] || "Disable dark mode")
+            : (window.__i18n?.[lang]?.["nav.darkOn"] || "Enable dark mode")
+          );
+        }
+
+        // Synchroniser le bouton langue
+        const langBtn = document.getElementById("lang-toggle");
+        if (langBtn) {
+          langBtn.textContent = window.__i18n?.[lang]?.["nav.langSwitch"] || "";
+        }
+      }
+
+      document.addEventListener("astro:page-load", reapplyPreferences);
+    </script>
+
+    <!-- ── Scroll reveal — re-déclenché à chaque transition de page ── -->
+    <script>
+      function initReveal() {
+        const revealObs = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("is-visible");
+                revealObs.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.08 }
+        );
+        document.querySelectorAll(".reveal:not(.is-visible)").forEach((el) =>
+          revealObs.observe(el)
+        );
+
+        const groupObs = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("is-visible");
+                groupObs.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.06 }
+        );
+        document.querySelectorAll(".reveal-group:not(.is-visible)").forEach((el) =>
+          groupObs.observe(el)
+        );
+      }
+
+      // premier chargement + chaque transition Astro
+      document.addEventListener("astro:page-load", initReveal);
+    </script>
+  </body>
+</html>

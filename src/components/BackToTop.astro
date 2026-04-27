@@ -1,0 +1,124 @@
+---
+---
+<button id="back-to-top" class="btt" aria-label="Retour en haut de page" title="Retour en haut">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 19V5"/><path d="M5 12l7-7 7 7"/>
+  </svg>
+  <span class="btt-label">Haut</span>
+</button>
+
+<style>
+  .btt {
+    position: fixed;
+    bottom: calc(1.75rem + env(safe-area-inset-bottom));
+    right: 1.75rem;
+    z-index: 50;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    border: 1.5px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--text-main);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+
+    opacity: 0;
+    transform: translateY(10px) scale(0.9);
+    pointer-events: none;
+    transition:
+      opacity    240ms ease,
+      transform  240ms var(--ease-spring),
+      background 180ms ease,
+      border-color 180ms ease;
+  }
+  .btt.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+
+  .btt-label {
+    display: none;
+  }
+
+  .btt:hover {
+    background: var(--green);
+    border-color: var(--green);
+    color: #fff;
+    transform: translateY(-3px) scale(1.05);
+  }
+  .btt:active {
+    transform: scale(0.95);
+  }
+
+  @media (max-width: 900px) {
+    .btt {
+      bottom: calc(1.05rem + env(safe-area-inset-bottom));
+      right: 1rem;
+      width: auto;
+      min-width: 2.6rem;
+      height: 2.6rem;
+      padding: 0 0.95rem;
+      border-radius: var(--radius-pill);
+      border-color: color-mix(in srgb, var(--green) 18%, var(--border-soft));
+      background: color-mix(in srgb, var(--green) 12%, rgba(255,255,255,0.92));
+      box-shadow: var(--shadow-md);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      transform: translateY(12px);
+    }
+
+    .btt.visible {
+      transform: translateY(0);
+    }
+
+    .btt-label {
+      display: inline;
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .btt:hover {
+      background: color-mix(in srgb, var(--green) 18%, rgba(255,255,255,0.96));
+      border-color: color-mix(in srgb, var(--green) 26%, var(--border-soft));
+      color: var(--text-main);
+      transform: translateY(-2px);
+    }
+
+    .btt:active {
+      transform: scale(0.97);
+    }
+
+  }
+</style>
+
+<script>
+  const btn = document.getElementById("back-to-top");
+
+  function getThreshold() {
+    return Math.min(260, Math.max(120, Math.round(window.innerHeight * 0.22)));
+  }
+
+  function onScroll() {
+    btn?.classList.toggle("visible", window.scrollY > getThreshold());
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
+
+  btn?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // synchroniser l'état au chargement et après chaque transition Astro
+  onScroll();
+  document.addEventListener("astro:page-load", () => {
+    onScroll();
+  });
+</script>

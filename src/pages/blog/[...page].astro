@@ -1,0 +1,328 @@
+---
+import type { GetStaticPathsOptions, Page } from "astro";
+import type { BlogEntry } from "../../utils/blog";
+
+import AdBanner from "../../components/AdBanner.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+import { categoryMap, categorySlugs } from "../../data/site";
+import { buildBreadcrumbJsonLd, buildWebsiteJsonLd, getAllPosts } from "../../utils/blog";
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const posts = await getAllPosts();
+  return paginate(posts, { pageSize: 9 });
+}
+
+const { page } = Astro.props as { page: Page<BlogEntry> };
+const isFirstPage = page.currentPage === 1;
+
+const MAX_PAGINATION_LINKS = 7;
+function buildPageLinks(current: number, total: number) {
+  if (total <= MAX_PAGINATION_LINKS) {
+    return Array.from({ length: total }, (_, index) => index + 1);
+  }
+
+  const pages = new Set<number>([1, total, current, current - 1, current + 1]);
+  if (current <= 3) [2, 3, 4].forEach((n) => pages.add(n));
+  if (current >= total - 2) [total - 1, total - 2, total - 3].forEach((n) => pages.add(n));
+
+  return [...pages]
+    .filter((n) => n >= 1 && n <= total)
+    .sort((a, b) => a - b);
+}
+
+const paginationPages = buildPageLinks(page.currentPage, page.lastPage);
+
+const structuredData = isFirstPage
+  ? [buildWebsiteJsonLd(), buildBreadcrumbJsonLd([{ name: "Accueil", path: "/" }, { name: "Articles", path: "/blog" }])]
+  : undefined;
+---
+<BaseLayout
+  title={isFirstPage ? "Tous les articles | Blog d'un Gaucher" : `Articles — page ${page.currentPage} | Blog d'un Gaucher`}
+  description="La bibliothèque complète : science, esprit, société et analyses."
+  canonicalPath={isFirstPage ? "/blog" : `/blog/${page.currentPage}`}
+  noindex={!isFirstPage}
+  structuredData={structuredData}
+>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow reveal" data-t="blog.eyebrow">Bibliothèque</span>
+      <h1 class="reveal" data-t="blog.title">Tous les articles</h1>
+      <p class="page-lead reveal" data-t="blog.lead">
+        Science du jeu, esprit compétitif, échecs et société, analyses personnelles.
+      </p>
+      <div class="chips reveal" id="category-chips">
+        <button class="chip is-active" type="button" data-filter-category="all" data-t="blog.filterAll">
+          Tout
+        </button>
+        {categorySlugs.map((slug) => (
+          <button type="button" class="chip" data-filter-category={slug} style={`--c:${categoryMap[slug].accent}`} data-t={`categories.${slug}.label`}>
+            {categoryMap[slug].label}
+          </button>
+        ))}
+      </div>
+      <div class="search-wrap reveal">
+        <label for="blog-search" class="search-label" data-t="blog.searchLabel">Rechercher un article</label>
+        <input id="blog-search" class="search-input" type="search" placeholder="Titre, extrait ou étiquette…" data-t-placeholder="blog.searchPlaceholder" />
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <AdBanner format="leaderboard" />
+  </div>
+
+  <section class="listing">
+    <div class="container">
+      <div class="post-grid reveal-group">
+        {page.data.map((post) => (
+          <article
+            class="post-item"
+            data-category={post.data.category}
+            data-search={`${post.data.title} ${post.data.excerpt} ${post.data.tags?.join(" ") ?? ""}`.toLowerCase()}
+          >
+            <ArticleCard post={post} />
+          </article>
+        ))}
+      </div>
+      <p id="listing-empty" class="listing-empty" hidden data-t="blog.noResults">
+        Aucun article ne correspond à ta recherche sur cette page.
+      </p>
+
+      <!-- Pagination -->
+      {page.lastPage > 1 && (
+        <nav class="pagination" aria-label="Navigation entre les pages">
+          {page.url.prev ? (
+            <a href={page.url.prev} class="pag-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+              <span data-t="blog.prev">Précédent</span>
+            </a>
+          ) : (
+            <span class="pag-btn disabled" aria-disabled="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+              <span data-t="blog.prev">Précédent</span>
+            </span>
+          )}
+
+          <div class="pag-pages">
+            {paginationPages.map((n, index) => {
+              const prev = paginationPages[index - 1];
+              const needsGap = prev && n - prev > 1;
+              return (
+                <>
+                  {needsGap && <span class="pag-gap" aria-hidden="true">...</span>}
+                  <a
+                    href={n === 1 ? "/blog" : `/blog/${n}`}
+                    class={`pag-num${n === page.currentPage ? " current" : ""}`}
+                    aria-current={n === page.currentPage ? "page" : undefined}
+                  >
+                    {n}
+                  </a>
+                </>
+              );
+            })}
+          </div>
+
+          {page.url.next ? (
+            <a href={page.url.next} class="pag-btn">
+              <span data-t="blog.next">Suivant</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+            </a>
+          ) : (
+            <span class="pag-btn disabled" aria-disabled="true">
+              <span data-t="blog.next">Suivant</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+            </span>
+          )}
+        </nav>
+      )}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero { padding: 4.5rem 0 2rem; }
+  .page-hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 0.5rem 0 0.75rem; }
+  .page-lead { color: var(--text-muted); font-size: 1.05rem; max-width: 32rem; }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+  .search-wrap {
+    margin-top: 0.9rem;
+    max-width: 28rem;
+  }
+  .search-label {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+  .search-input {
+    width: 100%;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    color: var(--text-main);
+    min-height: 2.5rem;
+    padding: 0 0.75rem;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.8rem;
+    padding: 0 0.75rem;
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--c);
+    color: var(--c);
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background 160ms ease, color 160ms ease, transform 200ms var(--ease-spring);
+    cursor: pointer;
+    background: transparent;
+  }
+  .chip:hover {
+    background: var(--c);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  .chip.is-active {
+    background: var(--c, var(--text-main));
+    color: #fff;
+    border-color: var(--c, var(--text-main));
+  }
+
+  .listing { padding: 1.5rem 0 5rem; }
+
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 0.85rem;
+  }
+  .post-item[hidden] {
+    display: none;
+  }
+  .listing-empty {
+    margin-top: 1rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  /* ── Pagination ── */
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .pag-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 200ms var(--ease-spring);
+  }
+  .pag-btn:not(.disabled):hover {
+    border-color: var(--green);
+    color: var(--green);
+    transform: translateY(-1px);
+  }
+  .pag-btn.disabled {
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  .pag-pages {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .pag-gap {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    padding: 0 0.2rem;
+  }
+
+  .pag-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: var(--radius-sm);
+    border: 1.5px solid var(--border-soft);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+  }
+  .pag-num:hover {
+    border-color: var(--green);
+    color: var(--green);
+  }
+  .pag-num.current {
+    background: var(--green);
+    border-color: var(--green);
+    color: #fff;
+    font-weight: 700;
+  }
+</style>
+
+<script>
+  function initBlogFilters() {
+    const items = Array.from(document.querySelectorAll(".post-item"));
+    const searchInput = document.getElementById("blog-search");
+    const chips = Array.from(document.querySelectorAll("[data-filter-category]"));
+    const empty = document.getElementById("listing-empty");
+    if (!items.length || !searchInput || !chips.length || !empty) return;
+
+    let activeCategory = "all";
+
+    function applyFilters() {
+      const query = searchInput.value.trim().toLowerCase();
+      let visible = 0;
+
+      items.forEach((item) => {
+        const matchesCategory =
+          activeCategory === "all" || item.dataset.category === activeCategory;
+        const haystack = item.dataset.search ?? "";
+        const matchesQuery = !query || haystack.includes(query);
+        const show = matchesCategory && matchesQuery;
+        item.hidden = !show;
+        if (show) visible += 1;
+      });
+
+      empty.hidden = visible > 0;
+    }
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        activeCategory = chip.dataset.filterCategory ?? "all";
+        chips.forEach((el) => el.classList.toggle("is-active", el === chip));
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener("input", applyFilters);
+    applyFilters();
+  }
+
+  document.addEventListener("astro:page-load", initBlogFilters);
+</script>

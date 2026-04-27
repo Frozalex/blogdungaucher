@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="170" viewBox="0 0 400 170" role="img" aria-labelledby="t7"><title id="t7">Fonction dévaluation : estimer une position sans tout calculer</title>
+<rect fill="#fff5f5" width="400" height="170"/>
+<text x="200" y="22" text-anchor="middle" font-size="13" font-weight="600" fill="#c92a2a" font-family="system-ui,sans-serif">Évaluation heuristique</text>
+<rect x="40" y="45" width="320" height="50" rx="6" fill="#ffe3e3" stroke="#fa5252" stroke-width="2"/>
+<text x="200" y="68" text-anchor="middle" font-size="11" fill="#495057" font-family="system-ui,sans-serif">Matériel + structure de pions + roi + mobilité + &</text>
+<text x="200" y="88" text-anchor="middle" font-size="11" fill="#495057" font-family="system-ui,sans-serif">’ un score approché quand larbre sarrête trop tôt</text>
+<text x="200" y="130" text-anchor="middle" font-size="11" fill="#212529" font-family="system-ui,sans-serif">Le moteur remplace la vérité finale par une forme compressée du « bon sens »</text>
+<text x="200" y="155" text-anchor="middle" font-size="10" fill="#868e96" font-family="system-ui,sans-serif">Catégories de features : savoir les pondérer fait la différence de niveau</text>
+</svg>

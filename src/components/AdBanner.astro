@@ -1,0 +1,97 @@
+---
+import { adsenseConfig, getAdsenseSlot } from "../data/site";
+
+const {
+  format = "leaderboard",
+  compact = false,
+} = Astro.props as {
+  format?: "leaderboard" | "inline" | "rectangle";
+  compact?: boolean;
+};
+
+const slot = adsenseConfig.enabled ? getAdsenseSlot(format) : "";
+const showReal = Boolean(slot && adsenseConfig.client);
+---
+{showReal ? (
+  <aside class={`ad ad--live ${format} ${compact ? "compact" : ""}`} aria-label="Publicité">
+    <ins
+      class="adsbygoogle"
+      style="display:block"
+      data-ad-client={adsenseConfig.client}
+      data-ad-slot={slot}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    />
+    <script is:inline>
+      (function () {
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {}
+      })();
+    </script>
+  </aside>
+) : (
+  <aside class={`ad ad--placeholder ${format} ${compact ? "compact" : ""}`}>
+    <span class="ad-label">Espace publicitaire</span>
+    {!adsenseConfig.enabled ? (
+      <span class="ad-hint">Publicités désactivées (site.ts)</span>
+    ) : (
+      <span class="ad-hint">
+        Ajoutez <code>PUBLIC_ADSENSE_SLOT</code> au build ou renseignez les slots dans <code>site.ts</code>
+      </span>
+    )}
+  </aside>
+)}
+
+<style>
+  .ad {
+    margin: 1.25rem 0;
+    border-radius: var(--radius-md);
+  }
+  .ad--live {
+    min-height: 90px;
+    overflow: hidden;
+  }
+  .ad--placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.75rem;
+    background: var(--bg-warm);
+    border: 1px dashed var(--border-strong);
+  }
+  .ad-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .ad-hint {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    text-align: center;
+    max-width: 22rem;
+    line-height: 1.35;
+  }
+  .ad-hint code {
+    font-size: 0.68rem;
+    background: rgba(0, 0, 0, 0.06);
+    padding: 0.08rem 0.25rem;
+    border-radius: 4px;
+  }
+  .leaderboard {
+    min-height: 5rem;
+  }
+  .inline {
+    min-height: 4rem;
+  }
+  .rectangle {
+    min-height: 10rem;
+  }
+  .compact {
+    margin: 0.6rem 0;
+  }
+</style>

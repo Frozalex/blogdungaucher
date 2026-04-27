@@ -1,0 +1,280 @@
+---
+type Heading = { depth: number; slug: string; text: string };
+
+const { headings, mode = "desktop" } = Astro.props as {
+  headings: Heading[];
+  mode?: "desktop" | "mobile";
+};
+
+// Sommaire volontairement compact pour ne pas spoiler tout l'article.
+const PREVIEW_LIMIT = 6;
+const topLevel = headings.filter((h) => h.depth === 2);
+const filtered = topLevel.slice(0, PREVIEW_LIMIT);
+const isTruncated = topLevel.length > PREVIEW_LIMIT;
+---
+{filtered.length > 0 &&
+  (mode === "mobile" ? (
+    <>
+    <details class="toc toc-mobile" id="mobile-toc">
+      <summary class="toc-mobile__summary">
+        <span class="toc-mobile__text">
+          <span class="toc-mobile__eyebrow">Sommaire</span>
+          <span class="toc-mobile__label">Aperçu rapide de l'article</span>
+        </span>
+        <span class="toc-mobile__chevron" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </span>
+      </summary>
+      <nav aria-label="Table des matières mobile" class="toc-mobile__panel">
+        <ol>
+          {filtered.map((h) => (
+            <li>
+              <a href={`#${h.slug}`} class="toc-link" data-slug={h.slug}>
+                {h.text}
+              </a>
+            </li>
+          ))}
+          {isTruncated && <li class="toc-more">...</li>}
+        </ol>
+      </nav>
+    </details>
+    </>
+  ) : (
+    <nav class="toc toc-desktop" aria-label="Table des matières">
+      <div class="toc-head">
+        <p class="toc-title">Dans cet article</p>
+        <span class="toc-chip">Navigation</span>
+      </div>
+      <ol>
+        {filtered.map((h) => (
+          <li>
+            <a href={`#${h.slug}`} class="toc-link" data-slug={h.slug}>
+              {h.text}
+            </a>
+          </li>
+        ))}
+        {isTruncated && <li class="toc-more">...</li>}
+      </ol>
+    </nav>
+  ))}
+
+<style>
+  .toc {
+    position: relative;
+    overflow: hidden;
+    padding: 1.1rem 1.2rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-xs);
+  }
+
+  .toc::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--c, var(--green)), transparent 70%);
+    opacity: 0.95;
+  }
+
+  .toc-title {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin: 0;
+  }
+
+  .toc-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .toc-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.45rem;
+    padding: 0 0.55rem;
+    border-radius: var(--radius-pill);
+    background: color-mix(in srgb, var(--c, var(--green)) 10%, white);
+    color: var(--c, var(--green));
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  ol {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.1rem;
+  }
+
+  li { display: flex; }
+
+  .toc-more {
+    padding: 0.15rem 0.5rem;
+    color: var(--text-dim);
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .toc-link {
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    border-left: 2px solid transparent;
+    transition: color 140ms ease, background 140ms ease, border-color 140ms ease;
+  }
+  .toc-link:hover {
+    color: var(--text-main);
+    background: var(--bg-warm);
+  }
+  .toc-link.active {
+    color: var(--c, var(--green));
+    border-left-color: var(--c, var(--green));
+    background: color-mix(in srgb, var(--c, var(--green)) 11%, white);
+    font-weight: 500;
+  }
+
+  .toc-desktop {
+    transition:
+      transform 220ms var(--ease-spring),
+      box-shadow 220ms var(--ease-out),
+      border-color 220ms ease;
+  }
+
+  .toc-desktop:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--c, var(--green)) 24%, var(--border-soft));
+    box-shadow: var(--shadow-sm);
+  }
+
+  .toc-mobile {
+    margin: 1rem 0 1.25rem;
+    padding: 0;
+    border-color: color-mix(in srgb, var(--c, var(--green)) 15%, var(--border-soft));
+    box-shadow: var(--shadow-sm);
+  }
+
+  .toc-mobile__summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.95rem 1.1rem 1rem;
+    cursor: pointer;
+    transition: background 180ms ease;
+  }
+
+  .toc-mobile[open] .toc-mobile__summary {
+    background: color-mix(in srgb, var(--c, var(--green)) 5%, white);
+  }
+
+  .toc-mobile__summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .toc-mobile__text {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .toc-mobile__eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--c, var(--green));
+  }
+
+  .toc-mobile__label {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text-main);
+  }
+
+  .toc-mobile__chevron {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--c, var(--green)) 10%, white);
+    color: var(--c, var(--green));
+    flex-shrink: 0;
+    transition: transform 220ms var(--ease-spring), background 180ms ease;
+  }
+
+  .toc-mobile[open] .toc-mobile__chevron {
+    transform: rotate(180deg);
+    background: color-mix(in srgb, var(--c, var(--green)) 16%, white);
+  }
+
+  .toc-mobile__panel {
+    padding: 0 1.1rem 1rem;
+    border-top: 1px solid var(--border-soft);
+    animation: tocMobileOpen 220ms var(--ease-out);
+  }
+
+  @keyframes tocMobileOpen {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+</style>
+
+<script>
+  let tocObserver = null;
+  function initToc() {
+    tocObserver?.disconnect();
+    const links = document.querySelectorAll(".toc-link");
+    if (!links.length) return;
+
+    const slugs = Array.from(links).map((l) => l.dataset.slug).filter(Boolean);
+    const headingEls = slugs
+      .map((s) => document.getElementById(s))
+      .filter(Boolean);
+
+    const setActive = (slug) => {
+      links.forEach((l) => l.classList.toggle("active", l.dataset.slug === slug));
+    };
+
+    tocObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting && e.target && e.target.id) {
+            setActive(e.target.id);
+          }
+        });
+      },
+      { rootMargin: "-20% 0% -70% 0%", threshold: 0 },
+    );
+
+    headingEls.forEach((el) => tocObserver.observe(el));
+  }
+
+  document.addEventListener("astro:page-load", initToc);
+</script>

@@ -1,0 +1,208 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../utils/blog";
+---
+<BaseLayout
+  title="Mentions légales | Blog d'un Gaucher"
+  description="Mentions légales et informations éditoriales du site blogdungaucher.com."
+  canonicalPath="/mentions-legales"
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Accueil", path: "/" },
+    { name: "Mentions légales", path: "/mentions-legales" },
+  ])}
+>
+  <section class="legal">
+    <div class="container">
+      <header class="legal-header reveal">
+        <span class="eyebrow">Cadre réglementaire</span>
+        <h1>Mentions légales</h1>
+        <p class="legal-lead">
+          Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et visiteurs du site <em>Blog d'un Gaucher</em> les présentes mentions légales.
+        </p>
+      </header>
+
+      <div class="legal-body reveal-group">
+        
+        <div class="legal-card">
+          <h2>1. Éditeur du site</h2>
+          <p>
+            Le site <strong>blogdungaucher.com</strong> est édité à titre personnel.
+          </p>
+          <ul>
+            <li><strong>Responsable de la publication :</strong> Blog d'un Gaucher</li>
+            <li><strong>Email de contact :</strong> <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a></li>
+            <li><strong>Statut :</strong> Particulier. Le site étant édité à titre non professionnel par une personne physique, conformément à l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, les informations d'identification personnelle (nom, prénom et domicile) ont été communiquées à l'hébergeur et ne sont pas publiquement divulguées.</li>
+          </ul>
+        </div>
+
+        <div class="legal-card">
+          <h2>2. Hébergement</h2>
+          <p>
+            Le site est hébergé par la société <strong>Hostinger</strong>, qui assure le stockage direct et permanent.
+          </p>
+          <ul>
+            <li><strong>Raison sociale :</strong> Hostinger International Ltd.</li>
+            <li><strong>Adresse :</strong> 61 Lordou Vironos Street, 6023 Larnaca, Chypre</li>
+            <li><strong>Contact :</strong> <a href="https://www.hostinger.fr/contact" target="_blank" rel="noopener noreferrer">https://www.hostinger.fr/contact</a></li>
+          </ul>
+        </div>
+
+        <div class="legal-card">
+          <h2>3. Propriété intellectuelle</h2>
+          <p>
+            L'ensemble des éléments figurant sur le site <strong>blogdungaucher.com</strong> (textes, analyses, commentaires, structure, charte graphique, logos) sont la propriété intellectuelle exclusive de l'éditeur du site, sauf mention contraire explicite. L'échiquier et les pièces peuvent être soumis à des licences tierces libres (ex: Wikimedia Commons).
+          </p>
+          <p>
+            Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable.
+          </p>
+          <p>
+            Toute exploitation non autorisée du site ou de l'un des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.
+          </p>
+        </div>
+
+        <div class="legal-card">
+          <h2>4. Limitation de responsabilité</h2>
+          <p>
+            L'éditeur s'efforce de fournir sur le site des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.
+          </p>
+          <p>
+            Les analyses de parties d'échecs, les résultats des moteurs de calcul (Stockfish) et les opinions exprimées sur ce blog sont propres à leur auteur ou aux logiciels tiers, et n'ont qu'une valeur informative et indicative.
+          </p>
+        </div>
+
+        <div class="legal-card">
+          <h2>5. Liens hypertextes et publicité</h2>
+          <p>
+            Le site <strong>blogdungaucher.com</strong> contient un certain nombre de liens hypertextes vers d’autres sites (sources scientifiques, références échiquéennes, etc.). L'éditeur n'a pas la possibilité de vérifier le contenu des sites ainsi visités, et n'assumera en conséquence aucune responsabilité quant aux risques éventuels de contenus illicites.
+          </p>
+          <p>
+            Le site se réserve le droit d'afficher des espaces publicitaires discrets (par exemple via Google AdSense). Ces publicités sont gérées par des régies tierces, qui peuvent utiliser des traceurs. Pour en savoir plus, consultez notre Politique de confidentialité.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal { 
+    padding: 5rem 0 6rem; 
+  }
+  
+  .legal .container {
+    max-width: 48rem;
+  }
+
+  .legal-header {
+    margin-bottom: 3.5rem;
+    text-align: center;
+  }
+
+  .legal-header h1 { 
+    font-size: clamp(2.2rem, 5vw, 3.5rem); 
+    margin: 0.8rem 0 1.25rem; 
+  }
+
+  .legal-lead {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+
+  .legal-body {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .legal-card {
+    padding: 2rem 2.2rem;
+    border-radius: var(--radius-xl);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-sm);
+    transition: transform 240ms var(--ease-spring), box-shadow 240ms ease;
+  }
+
+  .legal-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .legal-card h2 {
+    font-size: 1.35rem;
+    color: var(--green);
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .legal-card h2::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+  }
+
+  .legal-card p { 
+    color: var(--text-muted); 
+    line-height: 1.7;
+  }
+  
+  .legal-card p + p { 
+    margin-top: 0.85rem; 
+  }
+  
+  .legal-card strong { 
+    color: var(--text-main); 
+  }
+
+  .legal-card a {
+    color: var(--green);
+    font-weight: 500;
+    transition: opacity 150ms ease;
+  }
+  .legal-card a:hover {
+    opacity: 0.7;
+  }
+
+  .legal-card ul {
+    margin-top: 1rem;
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .legal-card li {
+    position: relative;
+    padding-left: 1.2rem;
+    color: var(--text-muted);
+  }
+
+  .legal-card li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: bold;
+  }
+
+  @media (max-width: 640px) {
+    .legal-card {
+      padding: 1.5rem 1.25rem;
+      border-radius: var(--radius-lg);
+    }
+    .legal-header {
+      text-align: left;
+    }
+    .legal-lead {
+      margin: 0;
+    }
+  }
+</style>

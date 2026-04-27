@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout
+  title="Page introuvable | Blog d'un Gaucher"
+  description="La page demandée n'existe pas."
+  canonicalPath="/404"
+  noindex={true}
+>
+  <section class="nf">
+    <div class="container">
+      <span class="nf-code">404</span>
+      <h1>Cette page a quitté l'échiquier.</h1>
+      <p>Le contenu n'existe pas ou a été déplacé.</p>
+      <div class="nf-actions">
+        <a href="/"     class="button-primary">Retour à l'accueil</a>
+        <a href="/blog" class="button-secondary">Tous les articles</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .nf { padding: 6rem 0; }
+  .nf-code {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 14vw, 9rem);
+    font-weight: 800;
+    line-height: 1;
+    color: var(--bg-warm);
+    -webkit-text-stroke: 2px var(--border-strong);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .nf h1 { font-size: clamp(1.6rem, 4vw, 2.5rem); margin-bottom: 0.6rem; }
+  .nf p  { color: var(--text-muted); margin-bottom: 1.5rem; }
+  .nf-actions { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+</style>

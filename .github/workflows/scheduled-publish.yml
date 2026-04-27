@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────────────────────
+# Publication automatique différée — Blog d'un Gaucher
+# ─────────────────────────────────────────────────────────────
+#
+# Ce workflow se déclenche chaque matin à 06h00 UTC (08h00 Paris).
+# Il appelle le webhook de déploiement configuré dans les secrets
+# du dépôt. Le site Astro reconstruit automatiquement, et les
+# articles dont la publishDate est passée apparaissent d'eux-mêmes.
+#
+# ── CONFIGURATION (à faire une seule fois) ───────────────────
+#
+# 1. Hébergeur NETLIFY
+#    - Netlify → Site → Build & Deploy → Build hooks → Add build hook
+#    - Copie l'URL (ex: https://api.netlify.com/build_hooks/xxxx)
+#    - GitHub repo → Settings → Secrets → Actions → New secret
+#      Name  : DEPLOY_HOOK_URL
+#      Value : l'URL copiée
+#
+# 2. Hébergeur VERCEL
+#    - Vercel → Project → Settings → Git → Deploy Hooks → Add
+#    - Copie l'URL (ex: https://api.vercel.com/v1/integrations/deploy/xxxx)
+#    - Même procédure secrets GitHub que ci-dessus
+#
+# 3. Autre hébergeur
+#    Remplace l'étape "Trigger deploy" par la commande de ton hébergeur.
+#
+# ─────────────────────────────────────────────────────────────
+
+name: Publication automatique
+
+on:
+  # Déclenche chaque matin à 06:00 UTC
+  schedule:
+    - cron: "0 6 * * *"
+  # Permet aussi un déclenchement manuel depuis l'onglet Actions
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Déclencher le déploiement
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Appel du webhook de déploiement
+        run: |
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -X POST "${{ secrets.DEPLOY_HOOK_URL }}")
+          echo "Statut HTTP du webhook : $HTTP_STATUS"
+          if [ "$HTTP_STATUS" -lt 200 ] || [ "$HTTP_STATUS" -ge 300 ]; then
+            echo "Erreur : le webhook a répondu $HTTP_STATUS"
+            exit 1
+          fi
+          echo "Déploiement déclenché avec succès."

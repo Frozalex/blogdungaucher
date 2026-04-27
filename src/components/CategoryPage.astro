@@ -1,0 +1,157 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import AdBanner from "./AdBanner.astro";
+import ArticleCard from "./ArticleCard.astro";
+
+import { categoryMap, type CategorySlug } from "../data/site";
+import { buildBreadcrumbJsonLd, getPostsByCategory } from "../utils/blog";
+
+const { category } = Astro.props as { category: CategorySlug };
+const meta  = categoryMap[category];
+const posts = await getPostsByCategory(category);
+const hero  = posts.find((p) => p.data.featured) ?? posts[0];
+const rest  = posts.filter((p) => p.id !== hero?.id);
+
+const structuredData = buildBreadcrumbJsonLd([
+  { name: "Accueil", path: "/" },
+  { name: meta.label, path: meta.href },
+]);
+---
+<BaseLayout
+  title={`${meta.label} | Blog d'un Gaucher`}
+  description={`${meta.description} ${meta.audiencePromise}`}
+  canonicalPath={meta.href}
+  structuredData={structuredData}
+>
+  <section class="cat-hero">
+    <div class="container">
+      <span class="eyebrow reveal" data-t={`categories.${category}.shortLabel`}>{meta.shortLabel}</span>
+      <h1 class="reveal" data-t={`categories.${category}.label`}>{meta.label}</h1>
+      <p class="cat-tagline reveal" data-t={`categories.${category}.tagline`}>{meta.tagline}</p>
+      <p class="cat-desc reveal">{meta.description}</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <AdBanner format="leaderboard" />
+  </div>
+
+  {hero && (
+    <section class="cat-section">
+      <div class="container">
+        <span class="eyebrow reveal" data-t="category.featured">À la une</span>
+        <div class="cat-hero-card reveal">
+          <ArticleCard post={hero} featured={true} />
+        </div>
+      </div>
+    </section>
+  )}
+
+  {rest.length > 0 ? (
+    <section class="cat-section">
+      <div class="container">
+        <div class="cat-section__head reveal">
+          <span class="eyebrow" data-t="category.allArticles">Tous les articles</span>
+          <a href="/blog" class="text-link" data-t="category.seeAll">Voir tout le blog</a>
+        </div>
+        <div class="post-grid reveal-group">
+          {rest.map((post) => <ArticleCard post={post} />)}
+        </div>
+      </div>
+    </section>
+  ) : !hero && (
+    <section class="cat-section">
+      <div class="container">
+        <div class="empty-state reveal">
+          <div class="empty-icon" style={`color:${meta.accent}`}>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2C8 2 6 5 6 8c0 2 1 3 1 5H8l-1 4h10l-1-4h1c0-2 1-3 1-5 0-3-2-6-6-6z"/>
+              <path d="M9 21h6"/>
+            </svg>
+          </div>
+          <h2 data-t="category.comingSoon">Les premiers articles arrivent bientôt.</h2>
+          <p data-t="category.comingSoonDesc">Cette rubrique sera publiée prochainement. En attendant, retrouve tous les articles disponibles.</p>
+          <a href="/blog" class="button-primary" data-t="category.seeAllCta">Voir tous les articles</a>
+        </div>
+      </div>
+    </section>
+  )}
+</BaseLayout>
+
+<style>
+  .cat-hero {
+    padding: 4.5rem 0 2rem;
+  }
+  .cat-hero h1 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-style: italic;
+    font-size: clamp(2.6rem, 6.2vw, 4.2rem);
+    letter-spacing: -0.015em;
+    line-height: 1.05;
+    margin: 0.5rem 0 0.9rem;
+    font-optical-sizing: auto;
+  }
+  .cat-tagline {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+  }
+  .cat-desc {
+    color: var(--text-muted);
+    max-width: 38rem;
+  }
+
+  .cat-section { padding: 1.5rem 0 3.5rem; }
+
+  .cat-hero-card { margin-top: 1rem; max-width: 44rem; }
+
+  .cat-section__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .text-link {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: color 150ms ease;
+  }
+  .text-link:hover { color: var(--green); }
+
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.85rem;
+  }
+
+  .empty-state {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 4rem 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .empty-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: var(--bg-warm);
+    border: 1.5px solid var(--border-soft);
+    margin-bottom: 0.25rem;
+  }
+  .empty-state h2 { font-size: 1.3rem; }
+  .empty-state p { color: var(--text-muted); font-size: 0.92rem; }
+
+  @media (max-width: 680px) {
+    .cat-section__head { flex-direction: column; align-items: flex-start; }
+  }
+</style>

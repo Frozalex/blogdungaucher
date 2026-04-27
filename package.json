@@ -1,0 +1,19 @@
+{
+  "name": "blog-d-un-gaucher",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.0.0",
+    "chess.js": "^1.4.0",
+    "chessboard-element": "^1.2.0",
+    "katex": "^0.16.45",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "stockfish": "^18.0.7"
+  }
+}

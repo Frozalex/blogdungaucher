@@ -1,0 +1,190 @@
+---
+import { categoryMap, categorySlugs, siteConfig } from "../data/site";
+---
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand fade-up" style="--motion-delay: 50ms;">
+      <span class="eyebrow" data-t="footer.contactEyebrow">Restons en contact</span>
+      <div class="footer-brand-name">
+        <img
+          src="/images/logo.svg"
+          alt=""
+          aria-hidden="true"
+          class="footer-logo-img"
+          width="28"
+          height="40"
+          loading="lazy"
+        />
+        <span class="footer-logo" data-t="nav.siteName">Blog d'un Gaucher</span>
+      </div>
+      <p class="footer-tagline" data-t="footer.tagline">
+        Un espace éditorial indépendant pour explorer les échecs en profondeur, avec des contenus utiles et actionnables.
+      </p>
+      <a class="footer-contact" href="mailto:contact@blogdungaucher.com" data-t="footer.suggestTopic">Proposer un sujet ou poser une question</a>
+      <p class="footer-note">{siteConfig.futureInfoEmailLabel}</p>
+    </div>
+
+    <div class="footer-col fade-up" style="--motion-delay: 110ms;">
+      <h2 data-t="footer.exploreTitle">Explorer</h2>
+      <a href="/blog" data-t="footer.allArticles">Tous les articles</a>
+      <a href="/rss.xml" data-t="footer.rss">Flux RSS</a>
+      <a href="/about" data-t="footer.editorial">Ligne éditoriale</a>
+    </div>
+
+    <div class="footer-col fade-up" style="--motion-delay: 170ms;">
+      <h2 data-t="footer.sectionsTitle">Rubriques</h2>
+      {categorySlugs.map((cat) => (
+        <a href={categoryMap[cat].href} data-t={`categories.${cat}.label`}>{categoryMap[cat].label}</a>
+      ))}
+    </div>
+
+    <div class="footer-col fade-up" style="--motion-delay: 230ms;">
+      <h2 data-t="footer.trustTitle">Confiance</h2>
+      <a href="/mentions-legales" data-t="footer.legal">Mentions légales</a>
+      <a href="/politique-confidentialite" data-t="footer.privacy">Confidentialité</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom__inner">
+      <p>&copy; {new Date().getFullYear()} <span data-t="nav.siteName">Blog d'un Gaucher</span></p>
+      <p>blogdungaucher.com</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    margin-top: 4rem;
+    border-top: 1px solid var(--border-soft);
+    background: linear-gradient(180deg, var(--bg-warm), color-mix(in srgb, var(--bg-warm) 90%, #fff));
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 0.7fr);
+    gap: 2.5rem;
+    padding: 3rem 0 2.5rem;
+    align-items: start;
+  }
+
+  .footer-brand-name {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .footer-logo-img {
+    width: 28px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+    transition: filter 260ms ease;
+  }
+
+  [data-theme="dark"] .footer-logo-img {
+    filter: brightness(0) invert(1);
+  }
+
+  .footer-logo {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .footer-tagline {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.65;
+    max-width: 24rem;
+  }
+
+  .footer-note {
+    margin-top: 0.7rem;
+    font-size: 0.82rem;
+    color: var(--text-dim);
+  }
+
+  .footer-contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.7rem;
+    min-height: 2.1rem;
+    padding: 0 0.9rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--green-border);
+    background: color-mix(in srgb, var(--green-light) 72%, #fff);
+    color: var(--text-main);
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: transform 180ms var(--ease-spring), border-color 180ms ease;
+  }
+  .footer-contact:hover {
+    transform: translateY(-1px);
+    border-color: var(--green);
+    color: var(--green);
+  }
+
+  .footer-col {
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer-col h2 {
+    font-size: 0.72rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--green);
+    margin-bottom: 0.25rem;
+  }
+
+  .footer-col a {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: color 150ms ease, transform 180ms var(--ease-soft);
+  }
+  .footer-col a:hover {
+    color: var(--green);
+    transform: translateX(2px);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--border-soft);
+  }
+
+  .footer-bottom__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.9rem 0 1rem;
+    color: var(--text-dim);
+    font-size: 0.82rem;
+  }
+
+  @media (max-width: 860px) {
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .footer-brand {
+      grid-column: 1 / -1;
+      text-align: center;
+      justify-items: center;
+      display: grid;
+    }
+  }
+  @media (max-width: 520px) {
+    .footer-top { grid-template-columns: 1fr; }
+    .footer-bottom__inner {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+</style>

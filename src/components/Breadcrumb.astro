@@ -1,0 +1,56 @@
+---
+const { items } = Astro.props as {
+  items: Array<{ label: string; href?: string }>;
+};
+---
+<nav class="breadcrumb" aria-label="Fil d'Ariane">
+  <ol>
+    {items.map((item, i) => (
+      <li>
+        {i < items.length - 1 ? (
+          <>
+            <a href={item.href}>{item.label}</a>
+            <span class="sep" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </span>
+          </>
+        ) : (
+          <span aria-current="page">{item.label}</span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .breadcrumb {
+    margin-bottom: 1.25rem;
+  }
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.1rem;
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    font-size: 0.82rem;
+    color: var(--text-dim);
+  }
+  a {
+    color: var(--text-muted);
+    transition: color 150ms ease;
+  }
+  a:hover { color: var(--green); }
+  [aria-current="page"] { color: var(--text-main); font-weight: 500; }
+  .sep {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-dim);
+    margin: 0 0.1rem;
+  }
+</style>

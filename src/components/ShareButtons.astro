@@ -1,0 +1,167 @@
+---
+const { title, url } = Astro.props as { title: string; url: string };
+const twitterIntent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
+const linkedInIntent = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+---
+<div class="share">
+  <span class="share-label">Partager</span>
+
+  <a
+    href={twitterIntent}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="share-btn twitter"
+    aria-label="Partager sur Twitter/X"
+    title="Partager sur Twitter/X"
+  >
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.912-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+    </svg>
+    <span>Twitter</span>
+  </a>
+
+  <a
+    href={linkedInIntent}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="share-btn linkedin"
+    aria-label="Partager sur LinkedIn"
+    title="Partager sur LinkedIn"
+  >
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M6.94 8.5a2.2 2.2 0 110-4.4 2.2 2.2 0 010 4.4zM4.8 9.95h4.3V19.2H4.8V9.95zm7.1 0h4.1v1.26h.06c.57-1.02 1.96-2.1 4.03-2.1 4.3 0 5.1 2.83 5.1 6.5v3.6h-4.3v-3.2c0-1.76-.03-4.03-2.46-4.03-2.46 0-2.84 1.92-2.84 3.9v3.33h-4.3V9.95z" />
+    </svg>
+    <span>LinkedIn</span>
+  </a>
+
+  <button class="share-btn native" id="native-share" aria-label="Partager" title="Partager">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4"/><path d="M15.4 6.5l-6.8 4"/>
+    </svg>
+    <span>Partager</span>
+  </button>
+
+  <button class="share-btn copy" id="copy-link" aria-label="Copier le lien" title="Copier le lien">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-copy">
+      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+    </svg>
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-check" style="display:none">
+      <polyline points="20 6 9 17 4 12"/>
+    </svg>
+    <span id="copy-label">Copier le lien</span>
+  </button>
+</div>
+
+<style>
+  .share {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-soft);
+    margin-top: 1.5rem;
+  }
+
+  .share-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    margin-right: 0.25rem;
+  }
+
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.82rem;
+    font-weight: 500;
+    border: 1.5px solid var(--border-strong);
+    background: var(--surface);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition:
+      background 160ms ease,
+      color 160ms ease,
+      border-color 160ms ease,
+      transform 200ms var(--ease-spring);
+    text-decoration: none;
+  }
+  .share-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .twitter:hover {
+    background: #000;
+    border-color: #000;
+    color: #fff;
+  }
+  .linkedin:hover {
+    background: #0a66c2;
+    border-color: #0a66c2;
+    color: #fff;
+  }
+  .native:hover {
+    background: var(--bg-warm);
+    border-color: var(--text-muted);
+    color: var(--text-main);
+  }
+
+  .copy:hover {
+    background: var(--green-light);
+    border-color: var(--green-border);
+    color: var(--green);
+  }
+  .copy.copied {
+    background: var(--green-light);
+    border-color: var(--green-border);
+    color: var(--green);
+  }
+</style>
+
+<script>
+  const btn   = document.getElementById("copy-link");
+  const nativeBtn = document.getElementById("native-share");
+  const label = document.getElementById("copy-label");
+  const iconCopy  = btn?.querySelector(".icon-copy");
+  const iconCheck = btn?.querySelector(".icon-check");
+
+  if (!navigator.share && nativeBtn) {
+    nativeBtn.style.display = "none";
+  }
+
+  nativeBtn?.addEventListener("click", async () => {
+    if (!navigator.share) return;
+    try {
+      await navigator.share({
+        title: document.title,
+        text: "Article partage depuis Blog d'un Gaucher",
+        url: window.location.href,
+      });
+    } catch {
+      // Annulation utilisateur, rien à faire.
+    }
+  });
+
+  btn?.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      if (label)       label.textContent = "Copie !";
+      if (iconCopy)    iconCopy.style.display  = "none";
+      if (iconCheck)   iconCheck.style.display = "";
+      btn.classList.add("copied");
+      setTimeout(() => {
+        if (label)     label.textContent = "Copier le lien";
+        if (iconCopy)  iconCopy.style.display  = "";
+        if (iconCheck) iconCheck.style.display = "none";
+        btn.classList.remove("copied");
+      }, 2200);
+    } catch {
+      // fallback silencieux
+    }
+  });
+</script>
