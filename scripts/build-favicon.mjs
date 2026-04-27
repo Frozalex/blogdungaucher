@@ -37,6 +37,12 @@ const RX  = 69;
 const pathsHtml = paths
   .map((d) => `  <path class="fg" fill-rule="evenodd" d="${d}"/>`)
   .join("\n");
+const mirrorTransform = logoSvg.includes('transform="scale(-1,1) translate(-625,0)"')
+  ? ' transform="scale(-1,1) translate(-625,0)"'
+  : "";
+const mirroredPathsHtml = mirrorTransform
+  ? `  <g${mirrorTransform}>\n${pathsHtml}\n  </g>`
+  : pathsHtml;
 
 // ── 4. Écrire favicon.svg (adaptatif dark/light) ──────────────
 const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${VB}">
@@ -49,7 +55,7 @@ const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${VB}">
     }
   </style>
   <rect class="bg" x="${-PAD}" y="0" width="${SQ}" height="${SQ}" rx="${RX}"/>
-${pathsHtml}
+${mirroredPathsHtml}
 </svg>
 `;
 
@@ -60,12 +66,15 @@ console.log("✓ public/favicon.svg écrit");
 const sharpPaths = paths
   .map((d) => `  <path fill="#1e1e1e" fill-rule="evenodd" d="${d}"/>`)
   .join("\n");
+const mirroredSharpPaths = mirrorTransform
+  ? `  <g${mirrorTransform}>\n${sharpPaths}\n  </g>`
+  : sharpPaths;
 
 function squareSvg(px) {
   const scale = px / SQ;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${px}" height="${px}" viewBox="${VB}">
   <rect fill="#fcfaf6" x="${-PAD}" y="0" width="${SQ}" height="${SQ}" rx="${RX}"/>
-${sharpPaths}
+${mirroredSharpPaths}
 </svg>`;
 }
 
@@ -96,7 +105,7 @@ const staticSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${VB}" width
     }
   </style>
   <rect class="bg" x="${-PAD}" y="0" width="${SQ}" height="${SQ}" rx="${RX}"/>
-${pathsHtml}
+${mirroredPathsHtml}
 </svg>
 `;
 writeFileSync(join(imgDir, "favicon-32x32.svg"), staticSvg, "utf-8");
