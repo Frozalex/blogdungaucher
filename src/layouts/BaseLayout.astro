@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import BackToTop from "../components/BackToTop.astro";
 import CookieConsent from "../components/CookieConsent.astro";
-import { ViewTransitions } from "astro:transitions";
 
 import { siteConfig } from "../data/site";
 
@@ -305,7 +304,6 @@ const structuredDataItems = structuredData
       <script type="application/ld+json" set:html={JSON.stringify(item)} />
     ))}
 
-    <ViewTransitions />
     <script is:inline>
       (() => {
         const CONSENT_KEY = "blogdungaucher.cookieConsent.v1";

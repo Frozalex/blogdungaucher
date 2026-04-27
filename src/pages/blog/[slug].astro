@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content"; // kept for type inference only
+import { render } from "astro:content";
 
 import AdBanner from "../../components/AdBanner.astro";
 import ArticleCard from "../../components/ArticleCard.astro";
@@ -17,16 +17,17 @@ import {
   calculateReadingTime,
   formatDate,
   getAllPosts,
+  getPostSlug,
   getPostUrl,
 } from "../../utils/blog";
 
 export async function getStaticPaths() {
   const posts = await getAllPosts();
-  return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+  return posts.map((post) => ({ params: { slug: getPostSlug(post) }, props: { post } }));
 }
 
 const { post } = Astro.props;
-const { Content, headings } = await post.render();
+const { Content, headings } = await render(post);
 const category = categoryMap[post.data.category];
 
 const readingTime = post.data.readingTime ?? calculateReadingTime(post.body);

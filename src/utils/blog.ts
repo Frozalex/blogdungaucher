@@ -58,8 +58,20 @@ export async function getLatestPosts(limit: number) {
   return posts.slice(0, limit);
 }
 
+export function getPostSlug(post: BlogEntry) {
+  // Astro v6 loaders may not provide `slug`, but `id` is always available.
+  const slug = "slug" in post && typeof post.slug === "string" ? post.slug : "";
+  if (slug) return slug;
+
+  return post.id
+    .replace(/\.mdx?$/i, "")
+    .split("/")
+    .filter(Boolean)
+    .pop()!;
+}
+
 export function getPostUrl(post: BlogEntry) {
-  return `/blog/${post.slug}/`;
+  return `/blog/${getPostSlug(post)}/`;
 }
 
 export function buildBreadcrumbJsonLd(
