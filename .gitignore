@@ -5,3 +5,5 @@ dist/
 # Clés de déploiement (ne jamais commiter)
 gh_deploy_blog_rsa
 gh_deploy_blog_rsa.pub
+gh_deploy_blog_rsa.txt
+gh_deploy_blog_rsa*
