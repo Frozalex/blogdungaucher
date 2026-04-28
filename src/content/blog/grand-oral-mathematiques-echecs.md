@@ -2,12 +2,12 @@
 title: "Grand oral Maths + NSI : les échecs comme pont entre les deux spécialités"
 excerpt: "Le sujet transversal le plus puissant pour les élèves Maths+NSI : comment la combinatoire (Maths) explique pourquoi le minimax (NSI) est nécessaire, et comment les probabilités (Maths) fondent l'IA (NSI) qui a révolutionné les échecs."
 publishDate: "2026-04-28"
-category: "science"
+category: "grand-oral"
 featured: false
 featuredRank: 99
 readingTime: "24 min"
 pillar: "Cognition"
-tags: ["grand oral", "mathématiques", "NSI", "terminale", "combinatoire", "théorie des jeux", "IA", "Elo", "minimax", "baccalauréat", "transversal"]
+tags: ["grand-oral", "mathématiques", "NSI", "terminale", "combinatoire", "théorie des jeux", "IA", "Elo", "minimax", "baccalauréat", "transversal"]
 seoTitle: "Grand oral Maths + NSI : les échecs, pont entre les deux spécialités"
 seoDescription: "Le sujet transversal Maths+NSI le plus puissant : combinatoire ↔ minimax, probabilités Elo ↔ bases de données, graphes ↔ structures de données. Plan, formules et code."
 titleEn: "Grand Oral Maths + CS: Chess as a Bridge Between Both Specialities"
@@ -43,7 +43,7 @@ Ce n'est pas un sujet où Maths et NSI se côtoient par hasard. C'est un sujet o
 Cet article te donne le plan complet, le contenu des deux programmes, les points de connexion entre les disciplines, et les conseils pour tenir la distance face à un jury qui connaît les deux spécialités.
 
 > **L'essentiel en 5 points :**
-> - La combinatoire (Maths) produit 10^120 parties → rend le minimax (NSI) **nécessaire**
+> - La combinatoire (Maths) produit $\sim 10^{120}$ parties → rend le minimax (NSI) **nécessaire**
 > - Les probabilités Elo (Maths) sont stockées et interrogées en SQL (NSI)
 > - Les graphes hamiltoniens (Maths) sont implémentés comme arbres de décision (NSI)
 > - AlphaZero = algèbre linéaire des réseaux de neurones (Maths) + apprentissage par renforcement (NSI)
@@ -55,7 +55,7 @@ Avant d'entrer dans le contenu, la structure de pensée est essentielle. Un jury
 
 | Côté Maths | Pont | Côté NSI |
 |---|---|---|
-| Combinatoire : 10^120 parties | → nécessite → | Algorithme minimax (pas de force brute possible) |
+| Combinatoire : $\sim 10^{120}$ parties | → nécessite → | Algorithme minimax (pas de force brute possible) |
 | Probabilités : formule Elo | → est stockée et calculée via → | Bases de données SQL, requêtes statistiques |
 | Théorie des graphes : chemin hamiltonien | → est implémenté comme → | Arbre de décision, DFS récursif |
 | Algèbre linéaire : matrices, fonctions | → est la structure de → | Réseaux de neurones d'AlphaZero |
@@ -110,7 +110,7 @@ Ce théorème est souvent le moment-choc d'une introduction : « On ne sait touj
 
 La combinatoire est probablement la branche mathématique la plus directement visible aux échecs.
 
-[Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon), père de la théorie de l'information, a calculé en 1950 le nombre de parties d'échecs distinctes. Son estimation, appelée le **nombre de Shannon**, est de l'ordre de **10^120**. Pour donner une échelle : le nombre d'atomes dans l'univers observable est estimé à environ 10^80. Le nombre de parties d'échecs possibles dépasse donc de quarante ordres de grandeur le nombre de particules connues dans l'univers.
+[Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon), père de la théorie de l'information, a calculé en 1950 le nombre de parties d'échecs distinctes. Son estimation, appelée le **nombre de Shannon**, est de l'ordre de $10^{120}$. Pour donner une échelle : le nombre d'atomes dans l'univers observable est estimé à environ $10^{80}$. Le nombre de parties d'échecs possibles dépasse donc de **quarante ordres de grandeur** le nombre de particules connues dans l'univers.
 
 Comment arrive-t-on à ce chiffre ? Voici l'argument de dénombrement que tu peux dérouler devant le jury :
 
@@ -120,13 +120,13 @@ Comment arrive-t-on à ce chiffre ? Voici l'argument de dénombrement que tu peu
 4. Au deuxième coup, il y a environ **29 coups possibles en moyenne** pour chaque joueur.
 5. L'arbre des coups grandit exponentiellement : après 3 coups de chaque côté, on dépasse **9 millions de positions**.
 
-La formule générale est de la forme **b^d**, où **b** est le facteur de branchement moyen (≈ 35 aux échecs) et **d** la profondeur (nombre de coups moyen d'une partie, ≈ 80). On obtient 35^80 ≈ 10^124, dans le même ordre de grandeur que l'estimation de Shannon.
+La formule générale est $N \approx b^d$, où $b$ est le facteur de branchement moyen ($\approx 35$ aux échecs) et $d$ la profondeur ($\approx 80$ demi-coups). On obtient $35^{80} \approx 10^{124}$, dans le même ordre de grandeur que l'estimation de Shannon.
 
 Ce calcul est parfait pour un Grand Oral : il repose uniquement sur la multiplication et la notion de puissance, des outils de première. Le jury peut suivre chaque étape, et le résultat est spectaculaire.
 
 #### L'arbre des coups comme objet mathématique
 
-Formellement, cet arbre est un **arbre enraciné orienté** : la racine est la position initiale, chaque nœud est une position, chaque arc est un coup légal, et les feuilles sont les positions finales (mat, nulle, abandon). Le nombre de nœuds de cet arbre est le nombre total de positions légales, estimé à environ **10^44** (nombre de positions légales distinctes, différent du nombre de parties car une même position peut être atteinte par des séquences différentes).
+Formellement, cet arbre est un **arbre enraciné orienté** : la racine est la position initiale, chaque nœud est une position, chaque arc est un coup légal, et les feuilles sont les positions finales (mat, nulle, abandon). Le nombre de nœuds de cet arbre est le nombre total de positions légales, estimé à environ $10^{44}$ (positions légales distinctes ; différent du nombre de parties car une même position peut être atteinte par des séquences différentes).
 
 Cette distinction entre *nombre de parties* et *nombre de positions* est un bon point de précision que le jury peut creuser.
 
@@ -144,19 +144,21 @@ Les joueurs d'échecs de haut niveau décrivent souvent leur processus de calcul
 
 Le [classement Elo](https://fr.wikipedia.org/wiki/Classement_Elo), inventé par le physicien et mathématicien [Arpad Elo](https://fr.wikipedia.org/wiki/Arpad_Elo) dans les années 1960, est l'une des applications les plus élégantes des probabilités à un jeu. Il repose sur une idée simple : **la différence de cote entre deux joueurs doit prédire la probabilité de victoire de chacun**.
 
-La formule est la suivante. La probabilité que le joueur A batte le joueur B est :
+La probabilité que le joueur A batte le joueur B est :
 
-**P(A bat B) = 1 / (1 + 10^((Rb − Ra) / 400))**
+$$
+\mathbb{P}(\text{A bat B}) = \frac{1}{1 + 10^{(R_B - R_A)/400}}
+$$
 
-où Ra et Rb sont les cotes Elo respectifs. Si Ra = Rb (cotes égales), on obtient P = 1/2, soit 50 % de victoire pour A. Si Ra = 2000 et Rb = 1600 (400 points d'écart), on obtient P ≈ 91 %.
+où $R_A$ et $R_B$ sont les cotes Elo respectives. Si $R_A = R_B$, on obtient $\mathbb{P} = \tfrac{1}{2}$. Si $R_A = 2000$ et $R_B = 1600$, on obtient $\mathbb{P} \approx 91\,\%$.
 
 Cette formule est la **fonction logistique**, une fonction en forme de S que l'on rencontre aussi en modélisation démographique, en médecine (probabilité d'un événement clinique) et dans les réseaux de neurones (fonction d'activation sigmoïde). Le faire remarquer au jury montre que tu places l'exemple dans une famille mathématique plus large.
 
 La mise à jour des cotes après chaque partie obéit à une règle simple :
 
-**Nouvelle cote de A = Ra + K × (résultat réel − résultat attendu)**
+$$\text{Nouvelle cote de } A = R_A + K\,(\text{résultat réel} - \text{résultat attendu})$$
 
-où K est un coefficient d'ajustement (32 pour les débutants, 16 pour les joueurs établis), le résultat réel vaut 1 (victoire), 0,5 (nulle) ou 0 (défaite), et le résultat attendu est le P calculé ci-dessus.
+où $K$ est un coefficient (32 ou 16 selon le niveau), le résultat réel vaut $1$, $\tfrac{1}{2}$ ou $0$, et le résultat attendu est la probabilité $\mathbb{P}$ ci-dessus.
 
 C'est un **estimateur bayésien** : chaque partie apporte de l'information sur la vraie force d'un joueur, et la cote converge vers cette vraie valeur au fil du temps. Ce mécanisme est directement lié aux notions de statistiques inférentielles du programme de terminale.
 
@@ -168,7 +170,7 @@ Par exemple, après 1.e4 e5 2.Nf3 Nc6 (ouverture italienne), les bases contempor
 
 Cette approche statistique est à la base de la préparation des joueurs professionnels : ils choisissent leurs ouvertures en optimisant leur espérance de gain mathématique. Un joueur de 2700 Elo qui joue une ouverture avec un taux de victoire moyen de 42 % au lieu de 38 % gagne 4 points d'espérance sur chaque partie, un avantage décisif sur un tournoi de 10 parties.
 
-Pour un Grand Oral, c'est l'exemple parfait de l'**espérance mathématique appliquée** : E(gain) = P(victoire) × 1 + P(nulle) × 0,5 + P(défaite) × 0.
+Pour un Grand Oral, c'est l'exemple parfait de l'**espérance mathématique appliquée** : $\mathbb{E}(\text{gain}) = \mathbb{P}(\text{victoire}) + \tfrac{1}{2}\mathbb{P}(\text{nulle})$.
 
 ## L'intelligence artificielle et les échecs : une révolution mathématique
 
@@ -180,7 +182,7 @@ Le principe est simple : à chaque nœud de l'arbre, le joueur dont c'est le tou
 
 En pratique, on ne peut pas aller jusqu'aux feuilles de l'arbre (le mat). On s'arrête à une profondeur fixe et on applique une **fonction d'évaluation** qui donne une valeur numérique à chaque position intermédiaire (matériel restant, contrôle de l'espace, sécurité du roi...). Cette fonction est l'intelligence du programme : deux moteurs avec le même minimax mais des fonctions d'évaluation différentes auront des forces très différentes.
 
-L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)) et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer, dès qu'il est prouvé qu'elles ne peuvent pas améliorer le résultat. En pratique, il réduit la complexité effective de O(b^d) à environ O(b^(d/2)), ce qui, pour un facteur de branchement b = 35 et une profondeur d = 10, réduit le nombre de nœuds de 2,7 × 10^15 à environ 52 millions. Un gain de huit ordres de grandeur. C'est un résultat d'algorithmique parfaitement accessible en terminale NSI.
+L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)) et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer. En pratique, il réduit la complexité effective de $O(b^d)$ à environ $O(b^{d/2})$ ; pour $b = 35$ et $d = 10$, le nombre de nœuds passe d'environ $2{,}7 \times 10^{15}$ à $\sim 5{,}2 \times 10^7$. C'est un résultat d'algorithmique accessible en terminale NSI.
 
 ### L'apprentissage automatique et les supercalculateurs d'échecs
 

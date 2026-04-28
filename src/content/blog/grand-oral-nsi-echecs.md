@@ -2,12 +2,12 @@
 title: "Grand oral spé NSI : les échecs comme cas d'école de l'algorithmique et de l'IA"
 excerpt: "Minimax en Python, arbres de décision, format PGN, représentation bitboard, AlphaZero et réseaux de neurones : tout le programme NSI terminale incarné en 64 cases."
 publishDate: "2026-04-28"
-category: "science"
+category: "grand-oral"
 featured: false
 featuredRank: 99
 readingTime: "21 min"
 pillar: "Informatique"
-tags: ["grand oral", "NSI", "terminale", "algorithmique", "minimax", "Python", "AlphaZero", "intelligence artificielle", "structures de données", "baccalauréat"]
+tags: ["grand-oral", "NSI", "terminale", "algorithmique", "minimax", "Python", "AlphaZero", "intelligence artificielle", "structures de données", "baccalauréat"]
 seoTitle: "Grand oral NSI : les échecs, de l'algorithmique à l'IA, plan complet"
 seoDescription: "Grand oral spécialité NSI avec les échecs : minimax Python, arbres, PGN, bitboard, AlphaZero. Plan détaillé, code, exemples et questions jury pour le baccalauréat."
 titleEn: "Grand Oral NSI Specialism: Chess as a Textbook for Algorithmics and AI"
@@ -39,7 +39,7 @@ Ce que cet article te donne : du code Python commentable devant le jury, des str
 > - Le minimax est le cas concret de récursivité le plus pur qui soit, codable en 10 lignes Python
 > - Un échiquier peut être représenté comme un tableau 2D (simple) ou un entier 64 bits (bitboard, avancé)
 > - Le format PGN illustre directement la notion de données structurées parsables
-> - L'élagage alpha-bêta est une optimisation qui réduit O(b^d) à O(b^(d/2)), un argument de complexité parfait pour le jury
+> - L'élagage alpha-bêta est une optimisation qui réduit $O(b^d)$ à $O(b^{d/2})$ : argument de complexité idéal pour le jury
 > - AlphaZero vs Stockfish = apprentissage automatique vs programmation explicite : la distinction centrale de l'IA au programme NSI
 
 ## Algorithmes et structures de données
@@ -80,7 +80,7 @@ Ce code met en œuvre exactement les notions du programme NSI :
 - **Structure d'arbre** : l'exploration des fils d'un nœud avant de retourner la valeur au parent
 - **Fonctions d'ordre supérieur** : `max()` et `min()` appliqués à un générateur
 
-La **complexité temporelle** de cet algorithme est **O(b^d)**, où b est le facteur de branchement moyen (~35 aux échecs) et d la profondeur. Pour d = 4 : 35^4 ≈ 1,5 million d'appels récursifs. Pour d = 6 : 35^6 ≈ 1,8 milliard. La croissance exponentielle est le premier sujet de discussion que le jury peut ouvrir, et tu dois être capable de la justifier.
+La **complexité temporelle** est $O(b^d)$, où $b$ est le facteur de branchement moyen ($\approx 35$ aux échecs) et $d$ la profondeur. Pour $d = 4$ : $35^4 \approx 1{,}5 \times 10^6$ appels récursifs. Pour $d = 6$ : $35^6 \approx 1{,}8 \times 10^9$. La croissance exponentielle est le premier sujet que le jury peut ouvrir.
 
 ### L'élagage alpha-bêta : optimisation algorithmique
 
@@ -113,7 +113,7 @@ def alpha_beta(position, profondeur, alpha, beta, est_maximiseur):
         return beta
 ```
 
-La ligne `break`, la **coupure**, est le cœur de l'optimisation. Dans le meilleur cas (si les coups sont triés du meilleur au moins bon), l'alpha-bêta réduit la complexité à **O(b^(d/2))** : on explore la racine carrée du nombre de nœuds du minimax naïf. Pour d = 6, on passe de 1,8 milliard à ~42 000 nœuds, un gain de quatre ordres de grandeur.
+La ligne `break`, la **coupure**, est le cœur de l'optimisation. Dans le meilleur cas (coups ordonnés), l'alpha-bêta réduit la complexité à $O(b^{d/2})$ : on explore environ la racine carrée du nombre de nœuds du minimax naïf. Pour $d = 6$, on passe d'environ $1{,}8 \times 10^9$ à $\sim 4{,}2 \times 10^4$ nœuds.
 
 Pour la présentation devant le jury, tu peux dessiner un petit arbre à 3 niveaux et montrer en direct quelle branche est coupée et pourquoi.
 

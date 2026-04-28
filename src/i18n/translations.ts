@@ -38,7 +38,7 @@ export const translations = {
       proof3: "Approche rigoureuse",
       editorialNote:
         "Ici, on ne promet pas des progrès magiques en 7 jours. On propose des idées solides, des exemples concrets et des analyses que tu peux appliquer à ta pratique, que tu sois joueur de club, compétiteur ou simple passionné.",
-      sectionsEyebrow: "3 rubriques",
+      sectionsEyebrow: "4 rubriques",
       sectionsTitle: "Ce dont on parle ici",
       recentEyebrow: "Récents",
       latestTitle: "Derniers articles",
@@ -47,7 +47,7 @@ export const translations = {
     blog: {
       eyebrow: "Bibliothèque",
       title: "Tous les articles",
-      lead: "Science du jeu, esprit compétitif, échecs et société, analyses personnelles.",
+      lead: "Science du jeu, esprit compétitif, échecs et société, Grand oral, analyses personnelles.",
       filterAll: "Tout",
       searchLabel: "Rechercher un article",
       searchPlaceholder: "Titre, extrait ou étiquette…",
@@ -86,6 +86,12 @@ export const translations = {
         tagline:
           "Quand l'échiquier raconte aussi notre culture, nos institutions et notre époque.",
       },
+      "grand-oral": {
+        label: "Grand oral",
+        shortLabel: "Baccalauréat",
+        tagline:
+          "Préparer l'épreuve : plans, notions Maths et NSI autour des échecs.",
+      },
       analyses: {
         label: "Analyses",
         shortLabel: "Analyse Stockfish",
@@ -97,6 +103,7 @@ export const translations = {
       science: "Science",
       esprit: "Esprit",
       societe: "Société",
+      grandOral: "Grand oral",
       blog: "Articles",
       about: "À propos",
     },
@@ -150,7 +157,7 @@ export const translations = {
     blog: {
       eyebrow: "Library",
       title: "All articles",
-      lead: "Game science, competitive mindset, chess and society, personal analyses.",
+      lead: "Game science, competitive mindset, chess and society, Grand oral prep, personal analyses.",
       filterAll: "All",
       searchLabel: "Search an article",
       searchPlaceholder: "Title, excerpt or tag…",
@@ -199,6 +206,7 @@ export const translations = {
       science: "Science",
       esprit: "Mind",
       societe: "Society",
+      grandOral: "Grand oral",
       blog: "Articles",
       about: "About",
     },

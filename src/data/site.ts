@@ -1,7 +1,10 @@
+/** Doit rester identique à `scripts/site-origin.mjs` (origine publique HTTPS sans port). */
+const SITE_ORIGIN = "https://blogdungaucher.com";
+
 export const siteConfig = {
   name: "Blog d'un Gaucher",
   domainName: "blogdungaucher",
-  siteUrl: "https://blogdungaucher.com",
+  siteUrl: SITE_ORIGIN,
   defaultTitle: "Blog d'un Gaucher",
   defaultDescription:
     "Un blog d'échecs personnel sur la science du jeu, l'esprit de compétition et l'impact social des échecs.",
@@ -80,6 +83,7 @@ export const categorySlugs = [
   "science",
   "esprit",
   "societe",
+  "grand-oral",
 ] as const;
 
 export type CategorySlug = (typeof categorySlugs)[number];
@@ -163,6 +167,27 @@ export const categoryMap: Record<
     seoDescriptionEn:
       "Analyses on chess in education, media and collective life. A critical look at the game and society, from inclusion to culture and beyond.",
   },
+  "grand-oral": {
+    label: "Grand oral",
+    shortLabel: "Baccalauréat",
+    href: "/fr/grand-oral",
+    tagline:
+      "Préparer l'épreuve : plans, notions Maths et NSI autour des échecs.",
+    description:
+      "Fiches méthode et exemples pour structurer un oral convaincant sur les échecs au bac.",
+    descriptionEn:
+      "Method sheets and examples to structure a convincing oral on chess for the French baccalaureate.",
+    audiencePromise:
+      "Pour les lycéennes et lycéens qui préparent le Grand oral.",
+    accent: "#8b5cf6",
+    surface: "rgba(139,92,246,0.12)",
+    seoTitle: "Grand oral : échecs au bac | Blog d'un Gaucher",
+    seoDescription:
+      "Préparer le Grand oral sur les échecs : plans type, notions Maths et NSI, exemples concrets.",
+    seoTitleEn: "Grand oral: chess & baccalaureate | A Left-Hander's Blog",
+    seoDescriptionEn:
+      "Prepare your Grand oral on chess: outlines, Maths and CS concepts, concrete examples.",
+  },
   analyses: {
     label: "Analyses",
     shortLabel: "Analyse Stockfish",
@@ -181,6 +206,7 @@ export const navigationLinks = [
   { label: "Science", href: "/fr/science" },
   { label: "Esprit", href: "/fr/esprit" },
   { label: "Société", href: "/fr/societe" },
+  { label: "Grand oral", href: "/fr/grand-oral" },
   { label: "Articles", href: "/fr/blog" },
   { label: "À propos", href: "/fr/about" },
 ] as const;
@@ -189,6 +215,7 @@ export const enNavigationLinks = [
   { label: "Science", href: "/en/science" },
   { label: "Mind", href: "/en/esprit" },
   { label: "Society", href: "/en/societe" },
+  { label: "Grand oral", href: "/en/grand-oral" },
   { label: "Articles", href: "/en/blog" },
   { label: "About", href: "/en/about" },
 ] as const;
@@ -198,6 +225,7 @@ export const deNavigationLinks = [
   { label: "Wissenschaft", href: "/de/science" },
   { label: "Geist", href: "/de/esprit" },
   { label: "Gesellschaft", href: "/de/societe" },
+  { label: "Grand oral", href: "/de/grand-oral" },
   { label: "Artikel", href: "/de/blog" },
   { label: "Über uns", href: "/de/about" },
 ] as const;
@@ -208,6 +236,7 @@ export const staticRoutes = [
   "/fr/science",
   "/fr/esprit",
   "/fr/societe",
+  "/fr/grand-oral",
   "/fr/analyses",
   "/fr/about",
   "/fr/mentions-legales",
@@ -220,6 +249,7 @@ export const enStaticRoutes = [
   "/en/science",
   "/en/esprit",
   "/en/societe",
+  "/en/grand-oral",
   "/en/about",
 ] as const;
 
@@ -229,6 +259,7 @@ export const deStaticRoutes = [
   "/de/science",
   "/de/esprit",
   "/de/societe",
+  "/de/grand-oral",
   "/de/about",
   "/de/mentions-legales",
   "/de/politique-confidentialite",
