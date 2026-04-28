@@ -88,6 +88,14 @@ export function getPostUrlLang(post: BlogEntry, lang: "fr" | "en" | "de") {
   return getPostUrl(post);
 }
 
+/** Page liste blog : chemins relatifs (évite les URL absolues Astro.pagination avec mauvais hôte/port). */
+export function getBlogIndexPagePath(lang: "fr" | "en" | "de", pageNum: number) {
+  const base =
+    lang === "en" ? "/en/blog" : lang === "de" ? "/de/blog" : "/fr/blog";
+  if (pageNum <= 1) return `${base}/`;
+  return `${base}/${pageNum}/`;
+}
+
 export function buildBreadcrumbJsonLd(
   items: Array<{ name: string; path: string }>,
 ) {

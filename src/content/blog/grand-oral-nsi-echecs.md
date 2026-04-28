@@ -8,11 +8,11 @@ featuredRank: 99
 readingTime: "21 min"
 pillar: "Informatique"
 tags: ["grand oral", "NSI", "terminale", "algorithmique", "minimax", "Python", "AlphaZero", "intelligence artificielle", "structures de données", "baccalauréat"]
-seoTitle: "Grand oral NSI : les échecs, de l'algorithmique à l'IA — plan complet"
+seoTitle: "Grand oral NSI : les échecs, de l'algorithmique à l'IA, plan complet"
 seoDescription: "Grand oral spécialité NSI avec les échecs : minimax Python, arbres, PGN, bitboard, AlphaZero. Plan détaillé, code, exemples et questions jury pour le baccalauréat."
 titleEn: "Grand Oral NSI Specialism: Chess as a Textbook for Algorithmics and AI"
 excerptEn: "Minimax in Python, decision trees, PGN format, bitboard representation, AlphaZero and neural networks: the entire French Terminale NSI syllabus embodied in 64 squares."
-seoTitleEn: "Grand Oral NSI: Chess from Algorithmics to AI — Full Plan"
+seoTitleEn: "Grand Oral NSI: Chess from Algorithmics to AI, Full Plan"
 seoDescriptionEn: "Grand oral NSI speciality with chess: minimax in Python, trees, PGN format, bitboard, AlphaZero. Detailed outline, code snippets, examples and examiner questions."
 faq:
   - question: "Pourquoi les échecs sont-ils un sujet idéal pour un Grand Oral spécialité NSI ?"
@@ -31,7 +31,7 @@ faq:
 
 Tu as la spécialité NSI en terminale. Et tu cherches un sujet de Grand Oral qui te permette de montrer ce que tu sais vraiment faire : coder, analyser, comprendre comment les machines pensent.
 
-Les échecs sont ce sujet. Pas pour leur aspect culturel ou philosophique — pour leur structure informatique. Les échecs sont l'un des problèmes les plus étudiés de toute l'histoire de l'informatique. Les premiers programmes de jeu d'échecs datent de [Alan Turing](https://fr.wikipedia.org/wiki/Alan_Turing) (1950) et [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) (1950). Chaque concept fondamental du programme NSI — récursivité, arbres, structures de données, complexité, intelligence artificielle — y trouve son application la plus directe.
+Les échecs sont ce sujet. Pas pour leur aspect culturel ou philosophique : pour leur structure informatique. Les échecs sont l'un des problèmes les plus étudiés de toute l'histoire de l'informatique. Les premiers programmes de jeu d'échecs datent de [Alan Turing](https://fr.wikipedia.org/wiki/Alan_Turing) (1950) et [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) (1950). Chaque concept fondamental du programme NSI (récursivité, arbres, structures de données, complexité, intelligence artificielle) y trouve son application la plus directe.
 
 Ce que cet article te donne : du code Python commentable devant le jury, des structures de données concrètes, la progression de Stockfish à AlphaZero comme arc narratif, et un plan minuté pour vingt minutes d'exposé.
 
@@ -39,7 +39,7 @@ Ce que cet article te donne : du code Python commentable devant le jury, des str
 > - Le minimax est le cas concret de récursivité le plus pur qui soit, codable en 10 lignes Python
 > - Un échiquier peut être représenté comme un tableau 2D (simple) ou un entier 64 bits (bitboard, avancé)
 > - Le format PGN illustre directement la notion de données structurées parsables
-> - L'élagage alpha-bêta est une optimisation qui réduit O(b^d) à O(b^(d/2)) — un argument de complexité parfait pour le jury
+> - L'élagage alpha-bêta est une optimisation qui réduit O(b^d) à O(b^(d/2)), un argument de complexité parfait pour le jury
 > - AlphaZero vs Stockfish = apprentissage automatique vs programmation explicite : la distinction centrale de l'IA au programme NSI
 
 ## Algorithmes et structures de données
@@ -84,7 +84,7 @@ La **complexité temporelle** de cet algorithme est **O(b^d)**, où b est le fac
 
 ### L'élagage alpha-bêta : optimisation algorithmique
 
-L'élagage **alpha-bêta** est une optimisation du minimax qui évite d'explorer des branches dont on peut prouver qu'elles ne modifieront pas le résultat final. En NSI, c'est un exemple d'**algorithme d'élagage** (*pruning*) — une technique générale d'optimisation.
+L'élagage **alpha-bêta** est une optimisation du minimax qui évite d'explorer des branches dont on peut prouver qu'elles ne modifieront pas le résultat final. En NSI, c'est un exemple d'**algorithme d'élagage** (*pruning*), une technique générale d'optimisation.
 
 L'idée : on maintient deux bornes, **alpha** (le meilleur score que le joueur maximisant peut garantir) et **beta** (le meilleur score que le joueur minimisant peut garantir). Si à un nœud on découvre que la valeur sera forcément pire que ce que l'on peut déjà garantir, on abandonne l'exploration de ce sous-arbre.
 
@@ -113,7 +113,7 @@ def alpha_beta(position, profondeur, alpha, beta, est_maximiseur):
         return beta
 ```
 
-La ligne `break` — la **coupure** — est le cœur de l'optimisation. Dans le meilleur cas (si les coups sont triés du meilleur au moins bon), l'alpha-bêta réduit la complexité à **O(b^(d/2))** : on explore la racine carrée du nombre de nœuds du minimax naïf. Pour d = 6, on passe de 1,8 milliard à ~42 000 nœuds — un gain de quatre ordres de grandeur.
+La ligne `break`, la **coupure**, est le cœur de l'optimisation. Dans le meilleur cas (si les coups sont triés du meilleur au moins bon), l'alpha-bêta réduit la complexité à **O(b^(d/2))** : on explore la racine carrée du nombre de nœuds du minimax naïf. Pour d = 6, on passe de 1,8 milliard à ~42 000 nœuds, un gain de quatre ordres de grandeur.
 
 Pour la présentation devant le jury, tu peux dessiner un petit arbre à 3 niveaux et montrer en direct quelle branche est coupée et pourquoi.
 
@@ -157,7 +157,7 @@ def get_piece(echiquier, col, rang):
     return echiquier[7 - rang][col]
 ```
 
-Cette représentation est simple à comprendre et à présenter. Elle permet d'illustrer les notions de **tableau 2D**, d'**indexation** et de **slicing** Python. Son inconvénient : les opérations sur les cases (vérifier si une pièce est attaquée, générer les coups légaux) nécessitent des boucles imbriquées — ce qui est lent pour un vrai moteur.
+Cette représentation est simple à comprendre et à présenter. Elle permet d'illustrer les notions de **tableau 2D**, d'**indexation** et de **slicing** Python. Son inconvénient : les opérations sur les cases (vérifier si une pièce est attaquée, générer les coups légaux) nécessitent des boucles imbriquées, ce qui est lent pour un vrai moteur.
 
 ### Bitboard : la représentation efficace
 
@@ -192,7 +192,7 @@ Ce code mobilise les **opérateurs bit à bit** Python : `&` (ET), `|` (OU), `~`
 
 [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(logiciel)) est un moteur d'échecs open source, l'un des plus forts au monde. Il repose sur l'algorithme alpha-bêta avec des optimisations massives :
 
-- **Table de transposition** : une table de hachage qui stocke les positions déjà évaluées pour éviter de les recalculer (mémoïsation — technique vue en NSI)
+- **Table de transposition** : une table de hachage qui stocke les positions déjà évaluées pour éviter de les recalculer (mémoïsation, technique vue en NSI)
 - **Iterative deepening** : on explore d'abord jusqu'à profondeur 1, puis 2, puis 3... pour obtenir rapidement une bonne réponse même si le temps vient à manquer
 - **Move ordering** : les coups sont triés avant exploration (captures d'abord) pour maximiser les coupures alpha-bêta
 
@@ -228,7 +228,7 @@ En 2017, [DeepMind](https://fr.wikipedia.org/wiki/DeepMind) a publié [AlphaZero
 | Évaluation | Formule codée par des experts | Réseau de neurones appris |
 | Connaissance humaine | Oui (ouvertures, stratégie) | Non (règles uniquement) |
 | Entraînement | Aucun | 4 heures de self-play |
-| Résultat vs Stockfish | — | 28 victoires, 0 défaites (en 2017, 100 parties) |
+| Résultat vs Stockfish | / | 28 victoires, 0 défaites (en 2017, 100 parties) |
 
 AlphaZero utilise deux réseaux de neurones simultanément :
 1. **Le réseau de valeur** (*value network*) : donne une évaluation numérique de la position (similaire à la fonction d'évaluation de Stockfish, mais apprise)
@@ -236,7 +236,7 @@ AlphaZero utilise deux réseaux de neurones simultanément :
 
 Ces deux réseaux guident la **Monte Carlo Tree Search (MCTS)** : au lieu d'explorer l'arbre de manière uniforme, MCTS concentre les ressources sur les coups que le réseau de politique juge prometteurs, et corrige cette estimation grâce aux résultats des simulations.
 
-Pour NSI, l'argument clé est celui du **paradigme** : Stockfish dit *explicitement* à la machine ce qui est une bonne position. AlphaZero *apprend* ce qu'est une bonne position. Le premier paradigme est celui de la **programmation impérative**, le second celui de **l'apprentissage automatique** — tous deux au programme NSI.
+Pour NSI, l'argument clé est celui du **paradigme** : Stockfish dit *explicitement* à la machine ce qui est une bonne position. AlphaZero *apprend* ce qu'est une bonne position. Le premier paradigme est celui de la **programmation impérative**, le second celui de **l'apprentissage automatique**, tous deux au programme NSI.
 
 ### Machine learning vs algorithmes classiques : le débat central
 
@@ -347,13 +347,13 @@ Ce code illustre les notions NSI d'**opérateurs XOR**, de **tables de hachage**
 
 **Introduction (3 min)** : accroche sur l'histoire de l'IA et des échecs (Turing 1950 → Deep Blue 1997 → AlphaZero 2017), problématique, plan.
 
-**Partie I — Algorithmes (7 min)** : minimax (code ligne par ligne, 3 min), alpha-bêta (optimisation, coupure, complexité O(b^(d/2)), 2 min), table de transposition comme mémoïsation (2 min).
+**Partie I : Algorithmes (7 min)** : minimax (code ligne par ligne, 3 min), alpha-bêta (optimisation, coupure, complexité O(b^(d/2)), 2 min), table de transposition comme mémoïsation (2 min).
 
-**Partie II — Structures de données et représentation (5 min)** : tableau 2D vs bitboard (2 min), format PGN comme données structurées (2 min), hachage de Zobrist (1 min).
+**Partie II : Structures de données et représentation (5 min)** : tableau 2D vs bitboard (2 min), format PGN comme données structurées (2 min), hachage de Zobrist (1 min).
 
-**Partie III — IA et apprentissage (5 min)** : Stockfish vs AlphaZero (tableau comparatif, 2 min), apprentissage supervisé vs renforcement (2 min), portée : AlphaZero a ensuite résolu le Go et le shogi avec les mêmes principes (1 min).
+**Partie III : IA et apprentissage (5 min)** : Stockfish vs AlphaZero (tableau comparatif, 2 min), apprentissage supervisé vs renforcement (2 min), portée : AlphaZero a ensuite résolu le Go et le shogi avec les mêmes principes (1 min).
 
-**Conclusion (2 min)** : les échecs ont permis à l'informatique de passer de l'algorithme explicite à l'apprentissage implicite. Ce glissement définit l'IA moderne. Ouverture : quelle sera la prochaine frontière après le jeu — la médecine ? La physique fondamentale ?
+**Conclusion (2 min)** : les échecs ont permis à l'informatique de passer de l'algorithme explicite à l'apprentissage implicite. Ce glissement définit l'IA moderne. Ouverture : quelle sera la prochaine frontière après le jeu : la médecine ? La physique fondamentale ?
 
 ## Anticiper les questions du jury
 
@@ -380,5 +380,5 @@ Précision importante : AlphaZero est de l'**apprentissage par renforcement**, p
 - **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero : apprentissage par renforcement et MCTS.)
 - **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*, 6(4), 293–326. (Analyse formelle de la complexité de l'élagage alpha-bêta.)
 - **Zobrist, A. L. (1970).** *A New Hashing Method with Application for Game Playing.* ICCA Journal. (Invention du hachage de Zobrist pour les tables de transposition.)
-- **Documentation Stockfish.** [*Stockfish Chess Engine — Source code.*](https://github.com/official-stockfish/Stockfish) GitHub. (Code source du moteur open source, référence pour l'implémentation réelle.)
+- **Documentation Stockfish.** [*Stockfish Chess Engine : Source code.*](https://github.com/official-stockfish/Stockfish) GitHub. (Code source du moteur open source, référence pour l'implémentation réelle.)
 - **Lichess Open Database.** [*lichess.org/database*](https://database.lichess.org). (Base de données publique de parties d'échecs au format PGN, utilisable pour les exemples SQL.)

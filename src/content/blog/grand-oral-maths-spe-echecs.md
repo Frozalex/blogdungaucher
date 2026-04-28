@@ -8,11 +8,11 @@ featuredRank: 99
 readingTime: "22 min"
 pillar: "Cognition"
 tags: ["grand oral", "mathématiques", "terminale", "spécialité maths", "combinatoire", "loi binomiale", "suites", "Elo", "algorithme", "baccalauréat"]
-seoTitle: "Grand oral spé Maths : échecs et programme de terminale — plan complet"
+seoTitle: "Grand oral spé Maths : échecs et programme de terminale, plan complet"
 seoDescription: "Grand oral spécialité Maths avec les échecs : combinatoire, probabilités, suites récurrentes Elo, loi binomiale, algorithmique. Plan détaillé, formules et questions jury."
 titleEn: "Grand Oral Maths Specialism: Chess as a Textbook for the French Terminale Programme"
 excerptEn: "Recursive sequences, binomial law, combinatorics, expected value and algorithmics: how every chapter of the French Terminale Maths syllabus finds its perfect illustration on the chessboard."
-seoTitleEn: "Grand Oral Maths: Chess and the Terminale Syllabus — Full Plan"
+seoTitleEn: "Grand Oral Maths: Chess and the Terminale Syllabus, Full Plan"
 seoDescriptionEn: "Grand oral Maths speciality with chess: combinatorics, probability, Elo as a recurrent sequence, binomial law, algorithmics. Detailed outline, formulas and examiner questions."
 faq:
   - question: "Quelles notions du programme de terminale Maths peut-on illustrer avec les échecs ?"
@@ -31,7 +31,7 @@ Tu es en terminale spécialité Maths. Ton Grand Oral approche. Et tu te demande
 
 Voici ce sujet : **les échecs comme terrain d'application du programme de terminale Maths**.
 
-Pas en survol — en profondeur. Chaque chapitre du programme a son illustration exacte sur l'échiquier. La combinatoire dans l'explosion des positions. La loi binomiale dans la modélisation d'un tournoi. Les suites récurrentes dans le mécanisme de mise à jour Elo. L'algorithmique dans la récursivité du minimax. Et la théorie des probabilités dans la prédiction du résultat d'une partie entre deux joueurs de niveaux connus.
+Pas en survol : en profondeur. Chaque chapitre du programme a son illustration exacte sur l'échiquier. La combinatoire dans l'explosion des positions. La loi binomiale dans la modélisation d'un tournoi. Les suites récurrentes dans le mécanisme de mise à jour Elo. L'algorithmique dans la récursivité du minimax. Et la théorie des probabilités dans la prédiction du résultat d'une partie entre deux joueurs de niveaux connus.
 
 Ce que cet article te donne : le contenu mathématique précis avec les formules de terminale, les exemples numériques calculables devant le jury, trois problématiques prêtes à l'emploi, et un plan minuté pour les vingt minutes de l'épreuve.
 
@@ -116,7 +116,7 @@ L'**espérance mathématique du résultat Elo** d'une partie est directement don
 
 La **variance** des résultats est σ² = E(X²) − (E(X))² = (1² × 0,76 + 0 × 0,24) − 0,76² = 0,76 − 0,578 = **0,182**. L'écart-type σ ≈ 0,43 mesure la « volatilité » d'une rencontre entre ces deux joueurs.
 
-Ces notions — espérance, variance, écart-type — sont exactement au programme de terminale et peuvent être présentées avec des valeurs numériques précises en appui de la formule Elo. C'est ce niveau de détail qui distingue un Grand Oral solide d'une présentation superficielle.
+Ces notions (espérance, variance, écart-type) sont exactement au programme de terminale et peuvent être présentées avec des valeurs numériques précises en appui de la formule Elo. C'est ce niveau de détail qui distingue un Grand Oral solide d'une présentation superficielle.
 
 ## Suites récurrentes : l'Elo comme modèle dynamique
 
@@ -169,7 +169,7 @@ La **profondeur de récursion** est le paramètre clé : à profondeur d, l'algo
 
 Un jury de terminale Maths connaît la notion de complexité. Voici l'argument que tu peux développer en deux minutes :
 
-La **complexité en O(b^d)** est exponentielle. Pour « résoudre » les échecs (trouver le coup parfait depuis n'importe quelle position), il faudrait explorer tout l'arbre jusqu'aux feuilles, soit 10^120 nœuds. Même un ordinateur capable d'évaluer 10^18 positions par seconde (10 000 fois plus rapide que Stockfish) mettrait 10^102 secondes — soit **10^94 fois l'âge de l'univers**.
+La **complexité en O(b^d)** est exponentielle. Pour « résoudre » les échecs (trouver le coup parfait depuis n'importe quelle position), il faudrait explorer tout l'arbre jusqu'aux feuilles, soit 10^120 nœuds. Même un ordinateur capable d'évaluer 10^18 positions par seconde (10 000 fois plus rapide que Stockfish) mettrait 10^102 secondes, soit **10^94 fois l'âge de l'univers**.
 
 Les échecs sont donc, selon la terminologie de la théorie de la complexité, un problème **PSPACE-complet** (dans la famille des problèmes difficiles à résoudre de manière exhaustive). La notion n'est pas au programme de terminale, mais la **croissance exponentielle versus polynomiale** l'est, et c'est l'argument central.
 
@@ -195,7 +195,7 @@ L'élagage **alpha-bêta** réduit la complexité effective à O(b^(d/2)) dans l
 1. La loi binomiale B(n, p) appliquée à un match de 14 parties : calcul de P(X=k), E(X), σ
 2. La formule logistique Elo : probabilité de victoire en fonction de l'écart de cotes
 3. Espérance et écart-type : interprétation et valeurs numériques
-4. **Conclusion** : les probabilités réduisent l'incertitude sans l'éliminer — les échecs restent un jeu où la surprise est possible
+4. **Conclusion** : les probabilités réduisent l'incertitude sans l'éliminer : les échecs restent un jeu où la surprise est possible
 
 ### Problématique 3 : suites et analyse
 
@@ -211,11 +211,11 @@ L'élagage **alpha-bêta** réduit la complexité effective à O(b^(d/2)) dans l
 
 **Introduction (3 min)** : accroche sur le nombre 10^120, positionner ta problématique, annoncer le plan en trois parties.
 
-**Partie I — Combinatoire (6 min)** : calcul de l'arbre des coups au tableau (2 niveaux, puis généralisation), formule b^d, comparaison avec 10^80 atomes, arrangements vs combinaisons dans une ouverture concrète.
+**Partie I : Combinatoire (6 min)** : calcul de l'arbre des coups au tableau (2 niveaux, puis généralisation), formule b^d, comparaison avec 10^80 atomes, arrangements vs combinaisons dans une ouverture concrète.
 
-**Partie II — Probabilités (7 min)** : formule Elo (calcul numérique de deux exemples), loi binomiale B(14, 0,5) pour un match, calcul de P(X=7) et P(X≥8), espérance et écart-type interprétés.
+**Partie II : Probabilités (7 min)** : formule Elo (calcul numérique de deux exemples), loi binomiale B(14, 0,5) pour un match, calcul de P(X=7) et P(X≥8), espérance et écart-type interprétés.
 
-**Partie III — Suites (4 min)** : écriture de la suite récurrente Elo, argument de convergence, mention de la complexité minimax en O(b^d).
+**Partie III : Suites (4 min)** : écriture de la suite récurrente Elo, argument de convergence, mention de la complexité minimax en O(b^d).
 
 **Conclusion et ouverture (2 min)** : les mathématiques posent la limite de ce qui est calculable ; l'IA n'a pas « résolu » les échecs, elle a trouvé comment y jouer sans les résoudre. Ouverture sur l'apprentissage automatique (AlphaZero), pour ceux qui ont aussi la spécialité NSI.
 
@@ -225,7 +225,7 @@ L'élagage **alpha-bêta** réduit la complexité effective à O(b^(d/2)) dans l
 P = 1/(1 + 10^((2200−1800)/400)) = 1/(1+10) = 1/11 ≈ 9 %. Calcul direct, pas de difficulté.
 
 **2. « La loi binomiale suppose-t-elle l'indépendance des parties ? »**
-Oui — et c'est une limite du modèle : en pratique, le moral, la fatigue et la préparation créent des corrélations entre les parties. C'est une limite honnête à mentionner ; les jurys apprécient la lucidité sur les hypothèses des modèles.
+Oui, et c'est une limite du modèle : en pratique, le moral, la fatigue et la préparation créent des corrélations entre les parties. C'est une limite honnête à mentionner ; les jurys apprécient la lucidité sur les hypothèses des modèles.
 
 **3. « En quoi l'espérance du résultat Elo est-elle différente de la probabilité de victoire ? »**
 L'espérance E(résultat) = P(victoire) × 1 + P(nulle) × 0,5 + P(défaite) × 0 tient compte des nulles ; la probabilité P(victoire) ne les compte pas. La formule Elo standard utilise l'espérance, pas la probabilité brute.

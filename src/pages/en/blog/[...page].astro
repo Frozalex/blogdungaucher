@@ -7,7 +7,12 @@ import ArticleCard from "../../../components/ArticleCard.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 
 import { categoryMap, categorySlugs } from "../../../data/site";
-import { buildBreadcrumbJsonLd, buildWebsiteJsonLd, getAllPosts } from "../../../utils/blog";
+import {
+  buildBreadcrumbJsonLd,
+  buildWebsiteJsonLd,
+  getAllPosts,
+  getBlogIndexPagePath,
+} from "../../../utils/blog";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const posts = await getAllPosts();
@@ -29,6 +34,15 @@ function buildPageLinks(current: number, total: number) {
 }
 
 const paginationPages = buildPageLinks(page.currentPage, page.lastPage);
+
+const prevPageHref =
+  page.currentPage > 1
+    ? getBlogIndexPagePath("en", page.currentPage - 1)
+    : undefined;
+const nextPageHref =
+  page.currentPage < page.lastPage
+    ? getBlogIndexPagePath("en", page.currentPage + 1)
+    : undefined;
 
 const structuredData = isFirstPage
   ? [buildWebsiteJsonLd(), buildBreadcrumbJsonLd([{ name: "Home", path: "/en/" }, { name: "Articles", path: "/en/blog/" }])]
@@ -94,8 +108,8 @@ const frCanonicalPath = isFirstPage ? "/blog/" : `/blog/${page.currentPage}/`;
 
       {page.lastPage > 1 && (
         <nav class="pagination" aria-label="Page navigation">
-          {page.url.prev ? (
-            <a href={page.url.prev} class="pag-btn">
+          {prevPageHref ? (
+            <a href={prevPageHref} class="pag-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
               <span data-t="blog.prev">Previous</span>
             </a>
@@ -117,8 +131,8 @@ const frCanonicalPath = isFirstPage ? "/blog/" : `/blog/${page.currentPage}/`;
             })}
           </div>
 
-          {page.url.next ? (
-            <a href={page.url.next} class="pag-btn">
+          {nextPageHref ? (
+            <a href={nextPageHref} class="pag-btn">
               <span data-t="blog.next">Next</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
             </a>

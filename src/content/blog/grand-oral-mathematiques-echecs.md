@@ -29,7 +29,7 @@ faq:
     answer: "Les questions fréquentes du jury portent sur : le calcul explicite du nombre de parties possibles, la démonstration du problème du cavalier (graphe hamiltonien), la formule Elo et son interprétation probabiliste, la différence entre arbre minimax et apprentissage par renforcement, et les limites de la modélisation (la résolution complète des échecs reste hors de portée). Préparer ces cinq angles couvre la majorité des questions possibles."
 ---
 
-Tu as Maths **et** NSI en terminale. Et tu veux un sujet de Grand Oral qui exploite **les deux** — pas un sujet Maths avec un saupoudrage informatique, ni un sujet NSI avec une formule mathématique décorative.
+Tu as Maths **et** NSI en terminale. Et tu veux un sujet de Grand Oral qui exploite **les deux** : pas un sujet Maths avec un saupoudrage informatique, ni un sujet NSI avec une formule mathématique décorative.
 
 Les échecs sont ce sujet transversal. La combinatoire (Maths) explique *pourquoi* l'algorithme minimax (NSI) est indispensable. Les probabilités (Maths) fondent le classement Elo que les bases de données (NSI) stockent et interrogent. Les graphes (Maths) sont la structure de données (NSI) sur laquelle le problème du cavalier est défini. AlphaZero repose sur l'algèbre linéaire (Maths) implémentée sous forme de réseau de neurones (NSI).
 
@@ -166,7 +166,7 @@ Les bases de données de parties (Lichess dispose d'une base publique de plus de
 
 Par exemple, après 1.e4 e5 2.Nf3 Nc6 (ouverture italienne), les bases contemporaines donnent une victoire des Blancs dans environ 40 % des cas, une nulle dans 30 %, une victoire des Noirs dans 30 %. Ce sont des **fréquences relatives** qui convergent vers des probabilités théoriques à mesure que la taille de l'échantillon grandit.
 
-Cette approche statistique est à la base de la préparation des joueurs professionnels : ils choisissent leurs ouvertures en optimisant leur espérance de gain mathématique. Un joueur de 2700 Elo qui joue une ouverture avec un taux de victoire moyen de 42 % au lieu de 38 % gagne 4 points d'espérance sur chaque partie — un avantage décisif sur un tournoi de 10 parties.
+Cette approche statistique est à la base de la préparation des joueurs professionnels : ils choisissent leurs ouvertures en optimisant leur espérance de gain mathématique. Un joueur de 2700 Elo qui joue une ouverture avec un taux de victoire moyen de 42 % au lieu de 38 % gagne 4 points d'espérance sur chaque partie, un avantage décisif sur un tournoi de 10 parties.
 
 Pour un Grand Oral, c'est l'exemple parfait de l'**espérance mathématique appliquée** : E(gain) = P(victoire) × 1 + P(nulle) × 0,5 + P(défaite) × 0.
 
@@ -184,7 +184,7 @@ L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia
 
 ### L'apprentissage automatique et les supercalculateurs d'échecs
 
-En 2017, [DeepMind](https://fr.wikipedia.org/wiki/DeepMind) a publié [AlphaZero](https://fr.wikipedia.org/wiki/AlphaZero), un programme d'apprentissage par renforcement qui a bouleversé le monde des échecs. Contrairement à [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(logiciel)), qui utilise une fonction d'évaluation codée à la main par des experts, AlphaZero **n'a reçu que les règles du jeu**. Il a ensuite joué contre lui-même en boucle, pendant moins de 24 heures, et a atteint un niveau supérieur à Stockfish — le meilleur programme classique — en 100 parties de test.
+En 2017, [DeepMind](https://fr.wikipedia.org/wiki/DeepMind) a publié [AlphaZero](https://fr.wikipedia.org/wiki/AlphaZero), un programme d'apprentissage par renforcement qui a bouleversé le monde des échecs. Contrairement à [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(logiciel)), qui utilise une fonction d'évaluation codée à la main par des experts, AlphaZero **n'a reçu que les règles du jeu**. Il a ensuite joué contre lui-même en boucle, pendant moins de 24 heures, et a atteint un niveau supérieur à Stockfish (le meilleur programme classique) en 100 parties de test.
 
 AlphaZero utilise un **réseau de neurones convolutif** (une architecture mathématique inspirée du traitement visuel biologique) pour évaluer les positions, et une méthode de **Monte Carlo Tree Search (MCTS)** pour guider son exploration de l'arbre des coups. La MCTS ajoute une dimension probabiliste à la recherche : au lieu d'explorer l'arbre de manière uniforme, elle concentre les ressources de calcul sur les branches qui ont produit des résultats positifs lors des simulations précédentes.
 
@@ -248,22 +248,22 @@ Le plan en trois parties devient :
 
 **Objectif :** capter l'attention et poser la problématique.
 
-Commence par la mise en scène : *« Voici un échiquier. Il y a 64 cases, 32 pièces, et un nombre de parties possibles supérieur au nombre d'atomes de l'univers. »* Pose ce chiffre — 10^120 — sur le tableau. Le jury note le nombre. Tu as leur attention.
+Commence par la mise en scène : *« Voici un échiquier. Il y a 64 cases, 32 pièces, et un nombre de parties possibles supérieur au nombre d'atomes de l'univers. »* Pose ce chiffre (10^120) sur le tableau. Le jury note le nombre. Tu as leur attention.
 
 Puis formule ta **problématique** : *« En quoi les échecs sont-ils un objet mathématique, et comment cette nature mathématique a-t-elle transformé notre façon de penser l'intelligence artificielle ? »*
 
 Annonce ton plan en trois parties : les fondements mathématiques du jeu, l'application des probabilités et des statistiques, et la révolution de l'intelligence artificielle.
 
-### Partie I — Combinatoire (Maths) → Complexité (NSI) (7 minutes)
+### Partie I : Combinatoire (Maths) → Complexité (NSI) (7 minutes)
 
-**Transition** : *« Je vais commencer par montrer pourquoi les échecs ne peuvent pas être résolus par la force brute — et cela va relier directement les mathématiques et l'informatique. »*
+**Transition** : *« Je vais commencer par montrer pourquoi les échecs ne peuvent pas être résolus par la force brute, et cela va relier directement les mathématiques et l'informatique. »*
 
 1. **[Maths] Combinatoire** : calcul de 10^120 par l'arbre (principe multiplicatif b^d), dessiner 2 niveaux au tableau. (2 min)
 2. **Pont** : *« Cette explosion combinatoire est exactement pourquoi en NSI, on ne peut pas explorer tout l'arbre. Il faut un algorithme intelligent. »* (30 s)
 3. **[NSI] Minimax + élagage alpha-bêta** : récursivité, coupure, O(b^d) → O(b^(d/2)). (2 min)
 4. **Problème du cavalier** : chemin hamiltonien [Maths] / DFS récursif [NSI], règle de Warnsdorff en pseudo-code. (2 min 30)
 
-### Partie II — Probabilités (Maths) → Données (NSI) (5 minutes)
+### Partie II : Probabilités (Maths) → Données (NSI) (5 minutes)
 
 **Transition** : *« Comment mesurer statistiquement ce jeu si complexe ? Les probabilités mathématiques rencontrent ici les bases de données informatiques. »*
 
@@ -271,12 +271,12 @@ Annonce ton plan en trois parties : les fondements mathématiques du jeu, l'appl
 2. **Pont** : *« Ce modèle probabiliste est stocké et interrogé dans des bases de 3 milliards de parties. »*
 3. **[NSI] SQL sur base de parties** : requête taux de victoire par ouverture, format PGN comme données structurées. (3 min)
 
-### Partie III — Algèbre (Maths) → IA (NSI) (5 minutes)
+### Partie III : Algèbre (Maths) → IA (NSI) (5 minutes)
 
 **Transition** : *« La révolution d'AlphaZero illustre comment l'algèbre linéaire mathématique se traduit en apprentissage automatique. »*
 
 1. **[NSI] Stockfish vs AlphaZero** : tableau comparatif, apprentissage par renforcement. (1 min 30)
-2. **Pont** : *« AlphaZero repose sur des réseaux de neurones — dont la structure est purement algébrique. »*
+2. **Pont** : *« AlphaZero repose sur des réseaux de neurones, dont la structure est purement algébrique. »*
 3. **[Maths] Réseaux de neurones** : chaque couche = matrice de poids, activation sigmoïde = fonction logistique déjà vue avec Elo. (2 min)
 4. **Portée** : le même AlphaZero a résolu le Go (10^170 parties) et le shogi avec les mêmes principes. (1 min 30)
 
@@ -296,7 +296,7 @@ Un jury transversal peut interroger dans les deux directions. Voici les cinq que
 La croissance b^d (Maths, combinatoire) rend l'exploration complète impossible. Le minimax (NSI) est la réponse algorithmique : explorer jusqu'à une profondeur d limitée, évaluer les feuilles avec une heuristique, et propager les scores par récursivité. Sans la borne combinatoire, le minimax ne serait pas nécessaire.
 
 **2. « Quel est le lien entre la fonction logistique Elo et la sigmoïde des réseaux de neurones ? »**
-Ce sont la même fonction : f(x) = 1/(1+e^(−x)) (version continue) ou 1/(1+10^(−x/400)) (version Elo). Dans les deux cas, elle transforme un score réel en probabilité dans [0,1]. AlphaZero utilise la sigmoïde comme fonction d'activation dans ses couches internes — c'est le même outil mathématique que l'Elo.
+Ce sont la même fonction : f(x) = 1/(1+e^(−x)) (version continue) ou 1/(1+10^(−x/400)) (version Elo). Dans les deux cas, elle transforme un score réel en probabilité dans [0,1]. AlphaZero utilise la sigmoïde comme fonction d'activation dans ses couches internes : c'est le même outil mathématique que l'Elo.
 
 **3. « Pourquoi l'élagage alpha-bêta réduit-il la complexité de O(b^d) à O(b^(d/2)) ? »**
 Dans le meilleur cas (coups triés parfaitement), alpha-bêta n'explore que √(b^d) = b^(d/2) nœuds. Intuition : au lieu d'un arbre complet de b^d branches, on obtient un arbre « plié » dont la moitié des branches est élagée à chaque niveau.
