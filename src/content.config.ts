@@ -24,6 +24,14 @@ const blog = defineCollection({
     excerptEn: z.string().optional(),
     seoTitleEn: z.string().optional(),
     seoDescriptionEn: z.string().optional(),
+    faq: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string(),
+        }),
+      )
+      .optional(),
   }),
 });
 

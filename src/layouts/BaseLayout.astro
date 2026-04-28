@@ -25,6 +25,7 @@ const {
   lang = "fr",
   frPath,
   enPath,
+  dePath,
 } = Astro.props as {
   title?: string;
   description?: string;
@@ -41,6 +42,8 @@ const {
   lang?: "fr" | "en";
   frPath?: string;
   enPath?: string;
+  /** Chemin DE optionnel. Pointe sur la page FR si aucune traduction DE n'existe. */
+  dePath?: string;
 };
 
 function withTrailingSlash(p: string): string {
@@ -55,6 +58,8 @@ const resolvedEnPath = enPath ?? (lang === "fr"
 const canonicalUrl = new URL(canonicalPath, siteConfig.siteUrl).toString();
 const frCanonicalUrl = new URL(resolvedFrPath, siteConfig.siteUrl).toString();
 const enCanonicalUrl = new URL(resolvedEnPath, siteConfig.siteUrl).toString();
+// DE : utilise le chemin fourni, sinon replie sur la version FR
+const deCanonicalUrl = new URL(dePath ?? resolvedFrPath, siteConfig.siteUrl).toString();
 
 const socialImage = new URL(image, siteConfig.siteUrl).toString();
 const structuredDataItems = structuredData
@@ -286,6 +291,7 @@ const structuredDataItems = structuredData
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" hrefLang="fr" href={frCanonicalUrl} />
     <link rel="alternate" hrefLang="en" href={enCanonicalUrl} />
+    <link rel="alternate" hrefLang="de" href={deCanonicalUrl} />
     <link rel="alternate" hrefLang="x-default" href={frCanonicalUrl} />
     <link rel="alternate" type="application/rss+xml" title={`${siteConfig.name} RSS`} href={`${siteConfig.siteUrl}/rss.xml`} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

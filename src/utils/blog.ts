@@ -100,27 +100,66 @@ export function buildBreadcrumbJsonLd(
 export function buildArticleJsonLd(post: BlogEntry) {
   const imagePath = post.data.ogImage ?? siteConfig.defaultOgImage;
   const modifiedDate = post.data.updatedDate ?? post.data.publishDate;
+  const category = getCategoryMeta(post.data.category);
   return {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": ["Article", "BlogPosting"],
     headline: post.data.seoTitle ?? post.data.title,
+    name: post.data.seoTitle ?? post.data.title,
     description: post.data.seoDescription ?? post.data.excerpt,
     datePublished: post.data.publishDate.toISOString(),
     dateModified: modifiedDate.toISOString(),
     inLanguage: "fr-FR",
-    mainEntityOfPage: absoluteUrl(getPostUrl(post)),
-    image: [absoluteUrl(imagePath)],
-    articleSection: getCategoryMeta(post.data.category).label,
+    url: absoluteUrl(getPostUrl(post)),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": absoluteUrl(getPostUrl(post)),
+    },
+    image: {
+      "@type": "ImageObject",
+      url: absoluteUrl(imagePath),
+      width: 1200,
+      height: 630,
+    },
+    articleSection: category.label,
     keywords: post.data.tags?.join(", "),
+    isPartOf: {
+      "@type": "Blog",
+      "@id": `${siteConfig.siteUrl}/#blog`,
+      name: siteConfig.name,
+      url: siteConfig.siteUrl,
+    },
     publisher: {
       "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.siteUrl}/images/logo.svg`,
+      },
     },
     author: {
       "@type": "Person",
       name: post.data.author ?? "Le Gaucher",
+      url: siteConfig.siteUrl,
     },
+  };
+}
+
+export function buildFaqJsonLd(
+  faqs: Array<{ question: string; answer: string }>,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 }
 

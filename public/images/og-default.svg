@@ -9,6 +9,8 @@
   </defs>
   <rect width="1200" height="630" fill="url(#bg)" />
   <rect x="72" y="72" width="1056" height="486" rx="32" fill="#ffffff" stroke="#d9e5d6" />
+  <!-- Logo marque (même fichier que la nav) — lisible par les convertisseurs PNG -->
+  <image href="logo.svg" x="108" y="410" width="96" height="133" preserveAspectRatio="xMidYMid meet" />
   <circle cx="140" cy="140" r="16" fill="#3d8b37" />
   <text x="180" y="152" font-family="Space Grotesk, Arial, sans-serif" font-size="34" fill="#3d8b37" font-weight="700">blogdungaucher.com</text>
   <text x="120" y="290" font-family="Space Grotesk, Arial, sans-serif" font-size="72" fill="#18181b" font-weight="700">

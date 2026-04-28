@@ -1,0 +1,147 @@
+---
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  items: FaqItem[];
+  lang?: "fr" | "en";
+}
+
+const { items, lang = "fr" } = Astro.props;
+
+const title = lang === "en" ? "Frequently asked questions" : "Questions fréquentes";
+const labelOpen = lang === "en" ? "Open question" : "Ouvrir la question";
+---
+
+{items.length > 0 && (
+  <section class="faq-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading" class="faq-title">{title}</h2>
+    <dl class="faq-list">
+      {items.map((item, i) => (
+        <div class="faq-item" id={`faq-${i}`}>
+          <dt>
+            <button
+              class="faq-q"
+              type="button"
+              aria-expanded="false"
+              aria-controls={`faq-a-${i}`}
+              aria-label={`${labelOpen} : ${item.question}`}
+            >
+              <span>{item.question}</span>
+              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+          </dt>
+          <dd id={`faq-a-${i}`} class="faq-a" hidden>
+            <div class="faq-a-inner" set:html={item.answer} />
+          </dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+)}
+
+<style>
+  .faq-section {
+    margin-top: 2.5rem;
+    padding: 1.75rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-xs);
+  }
+
+  .faq-title {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--c, var(--green));
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .faq-item:last-child { border-bottom: none; }
+
+  .faq-q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1rem 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 0.97rem;
+    font-weight: 600;
+    color: var(--text-main);
+    transition: color 150ms ease;
+  }
+  .faq-q:hover { color: var(--c, var(--green)); }
+  .faq-q[aria-expanded="true"] { color: var(--c, var(--green)); }
+
+  .faq-chevron {
+    flex-shrink: 0;
+    color: var(--c, var(--green));
+    transition: transform 250ms var(--ease-spring, cubic-bezier(.34,1.56,.64,1));
+  }
+  .faq-q[aria-expanded="true"] .faq-chevron {
+    transform: rotate(180deg);
+  }
+
+  .faq-a {
+    overflow: hidden;
+  }
+  .faq-a[hidden] { display: none; }
+
+  .faq-a-inner {
+    padding: 0 0 1rem;
+    font-size: 0.93rem;
+    line-height: 1.75;
+    color: var(--text-muted);
+  }
+  .faq-a-inner :global(a) {
+    color: var(--c, var(--green));
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .faq-a-inner :global(strong) { color: var(--text-main); }
+</style>
+
+<script>
+  function initFaq() {
+    document.querySelectorAll<HTMLButtonElement>(".faq-q").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        const answerId = btn.getAttribute("aria-controls")!;
+        const answer = document.getElementById(answerId);
+        if (!answer) return;
+        btn.setAttribute("aria-expanded", expanded ? "false" : "true");
+        if (expanded) {
+          answer.hidden = true;
+        } else {
+          answer.hidden = false;
+        }
+      });
+    });
+  }
+  document.addEventListener("astro:page-load", initFaq);
+</script>
