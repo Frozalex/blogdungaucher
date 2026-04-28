@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/generate-og-png.mjs && astro build",
+    "build": "node scripts/generate-og-png.mjs && astro build && node scripts/verify-dist-urls.mjs",
     "preview": "astro preview"
   },
   "dependencies": {

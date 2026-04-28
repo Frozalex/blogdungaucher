@@ -36,7 +36,7 @@ Ces propriétés spatiales ne sont pas que décoratives : elles ancrent les éc
 
 Le deuxième pilier fondamental qui lie les échecs et les mathématiques est sans aucun doute la combinatoire. Dès les premiers échanges de la partie, le nombre de positions possibles explose de façon exponentielle.
 
-Après seulement trois coups de chaque côté, il y a déjà plus de neuf millions de positions différentes envisageables sur l'échiquier. C'est ce qu'on appelle le nombre de Shannon, du nom du célèbre mathématicien américain [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon), qui a calculé que le nombre total de parties d'échecs possibles dépassait allègrement le nombre d'atomes dans l'univers observable. 
+Après seulement trois coups de chaque côté, il y a déjà plus de neuf millions de positions différentes envisageables sur l'échiquier. [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) a estimé l'ordre de grandeur du nombre de parties possibles à $10^{120}$ (**nombre de Shannon**), largement au-delà du nombre d'atomes dans l'univers observable ($\sim 10^{80}$). 
 
 Quand tu t'assois devant le plateau pour calculer la ligne forcée d'un sacrifice, ton cerveau doit opérer exactement comme un algorithme mathématique de théorie des graphes. Tu dois visualiser ce qu'on appelle un arbre de probabilités. C'est la base de l'algorithme minimax : un pont documenté entre la théorie des jeux et l'intelligence artificielle appliquée aux échecs. (Le détail de ce mécanisme, minimax, élagage alpha-bêta et comment les moteurs modernes gèrent cette explosion, est développé dans l'article [Pourquoi les échecs sont un problème mathématique (presque) impossible](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
 

@@ -484,6 +484,18 @@ main { display: block; padding-top: var(--navbar-h); }
 ::-webkit-scrollbar-track { background: var(--bg-warm); }
 ::-webkit-scrollbar-thumb { background: rgba(61,139,55,0.3); border-radius: 999px; }
 
+/* ─── KATEX (markdown math) : débordements sur mobile ─────────── */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding: 0.35rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+.article-body .katex {
+  font-size: 1.05em;
+}
+
 /* ─── SELECTION ───────────────────────────────────────────────── */
 ::selection { background: rgba(61, 139, 55, 0.18); }
 

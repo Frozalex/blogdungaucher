@@ -3,31 +3,16 @@ import { defineConfig } from "astro/config";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
-/** Toujours HTTPS, sans port — évite :8080 ou http si SITE est mal défini au build (CI, Docker). */
-const PRODUCTION_ORIGIN = "https://blogdungaucher.com";
+import { SITE_ORIGIN } from "./scripts/site-origin.mjs";
 
-function resolveSite() {
-  const raw =
-    typeof process.env.PUBLIC_SITE_URL === "string"
-      ? process.env.PUBLIC_SITE_URL.trim()
-      : typeof process.env.SITE === "string"
-        ? process.env.SITE.trim()
-        : "";
-  if (!raw) return PRODUCTION_ORIGIN;
-  try {
-    const u = new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`);
-    const host = u.hostname.replace(/^www\./, "");
-    if (host === "blogdungaucher.com") return PRODUCTION_ORIGIN;
-    u.protocol = "https:";
-    if (u.port === "80" || u.port === "443") u.port = "";
-    return u.origin;
-  } catch {
-    return PRODUCTION_ORIGIN;
-  }
-}
-
+/**
+ * `site` fixe (sans lecture de SITE / PUBLIC_SITE_URL au build).
+ * Sinon un VPS qui exporte SITE=http://blogdungaucher.com:8080 pour Node peut faire
+ * dériver import.meta.env.SITE et certaines réécritures d’URL Astro — Google voit alors
+ * du HTML avec la mauvaise origine même si le navigateur redirige.
+ */
 export default defineConfig({
-  site: resolveSite(),
+  site: SITE_ORIGIN,
   output: "static",
   trailingSlash: "always",
   compressHTML: true,
