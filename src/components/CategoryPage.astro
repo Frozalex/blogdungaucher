@@ -5,38 +5,45 @@ import ArticleCard from "./ArticleCard.astro";
 
 import { categoryMap, type CategorySlug } from "../data/site";
 import { buildBreadcrumbJsonLd, getPostsByCategory } from "../utils/blog";
+import { swapLangPrefix, type SiteLang } from "../utils/lang-paths";
 
-const { category, lang = "fr" } = Astro.props as { category: CategorySlug; lang?: "fr" | "en" };
-const meta  = categoryMap[category];
+const { category, lang = "fr" } = Astro.props as { category: CategorySlug; lang?: SiteLang };
+const meta = categoryMap[category];
 const posts = await getPostsByCategory(category);
-const hero  = posts.find((p) => p.data.featured) ?? posts[0];
-const rest  = posts.filter((p) => p.id !== hero?.id);
+const hero = posts.find((p) => p.data.featured) ?? posts[0];
+const rest = posts.filter((p) => p.id !== hero?.id);
 
-const enHref = `/en${meta.href}/`;
+const frCanonical = `${meta.href}/`;
+
+const homeLabel =
+  lang === "en" ? "Home" : lang === "de" ? "Startseite" : "Accueil";
+
 const structuredData = buildBreadcrumbJsonLd([
-  { name: lang === "en" ? "Home" : "Accueil", path: lang === "en" ? "/en/" : "/" },
-  { name: meta.label, path: lang === "en" ? enHref : meta.href },
+  { name: homeLabel, path: swapLangPrefix("/", lang) },
+  { name: meta.label, path: swapLangPrefix(frCanonical, lang) },
 ]);
 
-const pageTitle = lang === "en"
-  ? (meta.seoTitleEn ?? `${meta.label} | A Left-Hander's Blog`)
-  : (meta.seoTitle ?? `${meta.label} | Blog d'un Gaucher`);
-const pageDesc = lang === "en"
-  ? (meta.seoDescriptionEn ?? `${meta.description} ${meta.audiencePromise}`)
-  : (meta.seoDescription ?? `${meta.description} ${meta.audiencePromise}`);
-const frHref = `${meta.href}/`;
-const canonPath = lang === "en" ? enHref : frHref;
-const catDescription = lang === "en"
-  ? (meta.descriptionEn ?? meta.description)
-  : meta.description;
+const pageTitle =
+  lang === "en"
+    ? (meta.seoTitleEn ?? `${meta.label} | A Left-Hander's Blog`)
+    : (meta.seoTitle ?? `${meta.label} | Blog d'un Gaucher`);
+const pageDesc =
+  lang === "en"
+    ? (meta.seoDescriptionEn ?? `${meta.description} ${meta.audiencePromise}`)
+    : (meta.seoDescription ?? `${meta.description} ${meta.audiencePromise}`);
+const canonPath = swapLangPrefix(frCanonical, lang);
+const catDescription =
+  lang === "en"
+    ? (meta.descriptionEn ?? meta.description)
+    : meta.description;
+
+const blogHref = swapLangPrefix("/fr/blog/", lang);
 ---
 <BaseLayout
   title={pageTitle}
   description={pageDesc}
   canonicalPath={canonPath}
   lang={lang}
-  frPath={frHref}
-  enPath={enHref}
   structuredData={structuredData}
 >
   <section class="cat-hero">
@@ -68,7 +75,7 @@ const catDescription = lang === "en"
       <div class="container">
         <div class="cat-section__head reveal">
           <span class="eyebrow" data-t="category.allArticles">Tous les articles</span>
-          <a href={lang === "en" ? "/en/blog/" : "/blog"} class="text-link" data-t="category.seeAll">Voir tout le blog</a>
+          <a href={blogHref} class="text-link" data-t="category.seeAll">Voir tout le blog</a>
         </div>
         <div class="post-grid reveal-group">
           {rest.map((post) => <ArticleCard post={post} lang={lang} />)}
@@ -87,7 +94,7 @@ const catDescription = lang === "en"
           </div>
           <h2 data-t="category.comingSoon">Les premiers articles arrivent bientôt.</h2>
           <p data-t="category.comingSoonDesc">Cette rubrique sera publiée prochainement. En attendant, retrouve tous les articles disponibles.</p>
-          <a href="/blog" class="button-primary" data-t="category.seeAllCta">Voir tous les articles</a>
+          <a href={blogHref} class="button-primary" data-t="category.seeAllCta">Voir tous les articles</a>
         </div>
       </div>
     </section>

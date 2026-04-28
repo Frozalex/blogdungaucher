@@ -71,15 +71,21 @@ export function getPostSlug(post: BlogEntry) {
 }
 
 export function getPostUrl(post: BlogEntry) {
-  return `/blog/${getPostSlug(post)}/`;
+  return `/fr/blog/${getPostSlug(post)}/`;
 }
 
 export function getPostUrlEn(post: BlogEntry) {
   return `/en/blog/${getPostSlug(post)}/`;
 }
 
-export function getPostUrlLang(post: BlogEntry, lang: "fr" | "en") {
-  return lang === "en" ? getPostUrlEn(post) : getPostUrl(post);
+export function getPostUrlDe(post: BlogEntry) {
+  return `/de/blog/${getPostSlug(post)}/`;
+}
+
+export function getPostUrlLang(post: BlogEntry, lang: "fr" | "en" | "de") {
+  if (lang === "en") return getPostUrlEn(post);
+  if (lang === "de") return getPostUrlDe(post);
+  return getPostUrl(post);
 }
 
 export function buildBreadcrumbJsonLd(
@@ -97,10 +103,22 @@ export function buildBreadcrumbJsonLd(
   };
 }
 
-export function buildArticleJsonLd(post: BlogEntry) {
+export function buildArticleJsonLd(
+  post: BlogEntry,
+  options?: { lang?: "fr" | "en" | "de" },
+) {
+  const lang = options?.lang ?? "fr";
   const imagePath = post.data.ogImage ?? siteConfig.defaultOgImage;
   const modifiedDate = post.data.updatedDate ?? post.data.publishDate;
   const category = getCategoryMeta(post.data.category);
+  const pageUrl =
+    lang === "en"
+      ? getPostUrlEn(post)
+      : lang === "de"
+        ? getPostUrlDe(post)
+        : getPostUrl(post);
+  const inLanguage =
+    lang === "en" ? "en-US" : lang === "de" ? "de-DE" : "fr-FR";
   return {
     "@context": "https://schema.org",
     "@type": ["Article", "BlogPosting"],
@@ -109,11 +127,11 @@ export function buildArticleJsonLd(post: BlogEntry) {
     description: post.data.seoDescription ?? post.data.excerpt,
     datePublished: post.data.publishDate.toISOString(),
     dateModified: modifiedDate.toISOString(),
-    inLanguage: "fr-FR",
-    url: absoluteUrl(getPostUrl(post)),
+    inLanguage,
+    url: absoluteUrl(pageUrl),
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": absoluteUrl(getPostUrl(post)),
+      "@id": absoluteUrl(pageUrl),
     },
     image: {
       "@type": "ImageObject",

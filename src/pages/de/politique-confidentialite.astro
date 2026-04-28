@@ -1,14 +1,15 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { buildBreadcrumbJsonLd } from "../utils/blog";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
 ---
 <BaseLayout
-  title="Politique de confidentialité | Blog d'un Gaucher"
-  description="Politique de confidentialité et gestion des données personnelles de blogdungaucher.com."
-  canonicalPath="/politique-confidentialite"
+  title="Datenschutz | Blog d'un Gaucher"
+  description="Datenschutzerklärung und Umgang mit personenbezogenen Daten auf blogdungaucher.com."
+  canonicalPath="/de/politique-confidentialite/"
+  lang="de"
   structuredData={buildBreadcrumbJsonLd([
-    { name: "Accueil", path: "/" },
-    { name: "Politique de confidentialité", path: "/politique-confidentialite" },
+    { name: "Startseite", path: "/de/" },
+    { name: "Datenschutz", path: "/de/politique-confidentialite/" },
   ])}
 >
   <section class="legal">

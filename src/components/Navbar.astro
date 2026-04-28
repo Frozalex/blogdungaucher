@@ -1,40 +1,60 @@
 ---
-import { navigationLinks, enNavigationLinks } from "../data/site";
+import { navigationLinks, enNavigationLinks, deNavigationLinks } from "../data/site";
 
-const { frHref, enHref, lang = "fr" } = Astro.props as {
+const { frHref, enHref, deHref, lang = "fr" } = Astro.props as {
   frHref?: string;
   enHref?: string;
-  lang?: "fr" | "en";
+  deHref?: string;
+  lang?: "fr" | "en" | "de";
 };
 
 const pathname = Astro.url.pathname;
-const links = lang === "en" ? enNavigationLinks : navigationLinks;
+const links =
+  lang === "en"
+    ? enNavigationLinks
+    : lang === "de"
+      ? deNavigationLinks
+      : navigationLinks;
+
+const homeHref = lang === "en" ? "/en/" : lang === "de" ? "/de/" : "/fr/";
 
 const isActive = (href: string) => {
+  const homePaths = ["/fr/", "/en/", "/de/"];
+  if (homePaths.includes(href)) {
+    return pathname === href;
+  }
   if (lang === "en") {
     return href === "/en/" ? pathname === "/en/" : pathname.startsWith(href);
   }
-  return href === "/" ? pathname === "/" : pathname.startsWith(href);
+  if (lang === "de") {
+    return href === "/de/" ? pathname === "/de/" : pathname.startsWith(href);
+  }
+  return href === "/fr/" ? pathname === "/fr/" : pathname.startsWith(href);
 };
 
-// Correspondance href → clé de traduction navLinks
+// Correspondance href → clé de traduction navLinks (FR / EN / DE partagent les clés côté runtime i18n pour FR & EN)
 const linkKey: Record<string, string> = {
-  "/science":    "navLinks.science",
-  "/esprit":     "navLinks.esprit",
-  "/societe":    "navLinks.societe",
-  "/blog":       "navLinks.blog",
-  "/about":      "navLinks.about",
+  "/fr/science": "navLinks.science",
+  "/fr/esprit": "navLinks.esprit",
+  "/fr/societe": "navLinks.societe",
+  "/fr/blog": "navLinks.blog",
+  "/fr/about": "navLinks.about",
   "/en/science": "navLinks.science",
-  "/en/esprit":  "navLinks.esprit",
+  "/en/esprit": "navLinks.esprit",
   "/en/societe": "navLinks.societe",
-  "/en/blog":    "navLinks.blog",
-  "/en/about":   "navLinks.about",
+  "/en/blog": "navLinks.blog",
+  "/en/about": "navLinks.about",
+  "/de/science": "navLinks.science",
+  "/de/esprit": "navLinks.esprit",
+  "/de/societe": "navLinks.societe",
+  "/de/blog": "navLinks.blog",
+  "/de/about": "navLinks.about",
 };
 ---
-<header class="navbar" id="navbar" data-lang-fr-href={frHref ?? "/"} data-lang-en-href={enHref ?? "/en/"}>
+<header class="navbar" id="navbar" data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-de-href={deHref ?? "/de/"}>
   <div class="container nav-inner">
 
-    <a href={lang === "en" ? "/en/" : "/"} class="nav-logo" aria-label={lang === "en" ? "Home – A Left-Hander's Blog" : "Accueil Blog d'un Gaucher"}>
+    <a href={homeHref} class="nav-logo" aria-label={lang === "en" ? "Home – A Left-Hander's Blog" : lang === "de" ? "Startseite – Blog d'un Gaucher" : "Accueil Blog d'un Gaucher"}>
       <img
         src="/images/logo.svg"
         alt=""
@@ -89,7 +109,7 @@ const linkKey: Record<string, string> = {
         class="icon-btn lang-btn"
         type="button"
         aria-label="Changer la langue"
-      ><span class="lang-label">FR</span></button>
+      ><span class="lang-label">{lang.toUpperCase()}</span></button>
     </div>
 
     <button
@@ -138,7 +158,7 @@ const linkKey: Record<string, string> = {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
             </svg>
-            <span class="lang-label-mobile">FR</span>
+            <span class="lang-label-mobile">{lang.toUpperCase()}</span>
           </button>
         </div>
       </div>
@@ -599,16 +619,21 @@ const linkKey: Record<string, string> = {
     }
 
     function toggleLang() {
+      const order = ["fr", "en", "de"];
       const current = window.__lang || "fr";
-      const next    = current === "fr" ? "en" : "fr";
-      const nav     = document.getElementById("navbar");
-      const enHref  = nav?.dataset.langEnHref;
-      const frHref  = nav?.dataset.langFrHref;
+      const idx = order.indexOf(current);
+      const next = order[(idx + 1) % 3];
+      const nav = document.getElementById("navbar");
+      const frHref = nav?.dataset.langFrHref;
+      const enHref = nav?.dataset.langEnHref;
+      const deHref = nav?.dataset.langDeHref;
+      const map = { fr: frHref, en: enHref, de: deHref };
+      const target = map[next as keyof typeof map];
+      if (target) {
+        window.location.href = target;
+        return;
+      }
 
-      if (next === "en" && enHref) { window.location.href = enHref; return; }
-      if (next === "fr" && frHref) { window.location.href = frHref; return; }
-
-      // Fallback client-side
       window.__lang = next;
       localStorage.setItem("blogdungaucher.lang", next);
       if (typeof window.__applyLang === "function") window.__applyLang(next);

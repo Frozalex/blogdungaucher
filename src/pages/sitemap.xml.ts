@@ -1,63 +1,52 @@
 import type { APIRoute } from "astro";
 
-import { siteConfig, staticRoutes, enStaticRoutes } from "../data/site";
-import { getAllPosts, getPostUrl, getPostUrlEn } from "../utils/blog";
+import { siteConfig, staticRoutes } from "../data/site";
+import { getAllPosts, getPostUrl } from "../utils/blog";
+import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
+
+const langs: SiteLang[] = ["fr", "en", "de"];
 
 export const GET: APIRoute = async () => {
   const posts = await getAllPosts();
 
-  const frUrls = [
-    ...staticRoutes.map((route) => ({
-      loc: new URL(route, siteConfig.siteUrl).toString(),
-      lastmod: new Date().toISOString(),
-      enLoc: new URL(`/en${route === "/" ? "/" : route}/`, siteConfig.siteUrl).toString(),
-    })),
-    ...posts.map((post) => ({
-      loc: new URL(getPostUrl(post), siteConfig.siteUrl).toString(),
-      lastmod: (post.data.updatedDate ?? post.data.publishDate).toISOString(),
-      enLoc: new URL(getPostUrlEn(post), siteConfig.siteUrl).toString(),
-    })),
+  const frPaths = [
+    ...staticRoutes.map((route) => withTrailingSlash(route)),
+    ...posts.map((post) => getPostUrl(post)),
   ];
 
-  const enUrls = [
-    ...enStaticRoutes.map((route) => ({
-      loc: new URL(route, siteConfig.siteUrl).toString(),
-      lastmod: new Date().toISOString(),
-      frLoc: new URL(route.replace(/^\/en/, "") || "/", siteConfig.siteUrl).toString(),
-    })),
-    ...posts.map((post) => ({
-      loc: new URL(getPostUrlEn(post), siteConfig.siteUrl).toString(),
-      lastmod: (post.data.updatedDate ?? post.data.publishDate).toISOString(),
-      frLoc: new URL(getPostUrl(post), siteConfig.siteUrl).toString(),
-    })),
-  ];
+  function absolute(path: string) {
+    return new URL(withTrailingSlash(path), siteConfig.siteUrl).toString();
+  }
+
+  function lastmodFor(frPath: string): string {
+    const post = posts.find((p) => getPostUrl(p) === frPath);
+    if (post) return (post.data.updatedDate ?? post.data.publishDate).toISOString();
+    return new Date().toISOString();
+  }
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
           xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    ${frUrls
-      .map(
-        (url) => `
+    ${frPaths
+      .map((frPath) => {
+        const loc = absolute(frPath);
+        const lastmod = lastmodFor(frPath);
+        const alternates = langs
+          .map((lang) => {
+            const href = absolute(swapLangPrefix(frPath, lang));
+            const hreflang = lang;
+            return `<xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}"/>`;
+          })
+          .join("\n          ");
+        const xDefault = `<xhtml:link rel="alternate" hreflang="x-default" href="${loc}"/>`;
+        return `
         <url>
-          <loc>${url.loc}</loc>
-          <lastmod>${url.lastmod}</lastmod>
-          <xhtml:link rel="alternate" hreflang="fr" href="${url.loc}"/>
-          <xhtml:link rel="alternate" hreflang="en" href="${url.enLoc}"/>
-          <xhtml:link rel="alternate" hreflang="x-default" href="${url.loc}"/>
-        </url>`,
-      )
-      .join("")}
-    ${enUrls
-      .map(
-        (url) => `
-        <url>
-          <loc>${url.loc}</loc>
-          <lastmod>${url.lastmod}</lastmod>
-          <xhtml:link rel="alternate" hreflang="fr" href="${url.frLoc}"/>
-          <xhtml:link rel="alternate" hreflang="en" href="${url.loc}"/>
-          <xhtml:link rel="alternate" hreflang="x-default" href="${url.frLoc}"/>
-        </url>`,
-      )
+          <loc>${loc}</loc>
+          <lastmod>${lastmod}</lastmod>
+          ${alternates}
+          ${xDefault}
+        </url>`;
+      })
       .join("")}
   </urlset>`;
 

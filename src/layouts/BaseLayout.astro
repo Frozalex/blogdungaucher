@@ -6,6 +6,7 @@ import BackToTop from "../components/BackToTop.astro";
 import CookieConsent from "../components/CookieConsent.astro";
 
 import { siteConfig } from "../data/site";
+import { swapLangPrefix } from "../utils/lang-paths";
 
 type StructuredData = Record<string, unknown> | Array<Record<string, unknown>>;
 
@@ -39,27 +40,20 @@ const {
   publishDate?: Date;
   modifiedDate?: Date;
   section?: string;
-  lang?: "fr" | "en";
+  lang?: "fr" | "en" | "de";
   frPath?: string;
   enPath?: string;
-  /** Chemin DE optionnel. Pointe sur la page FR si aucune traduction DE n'existe. */
+  /** Chemin DE optionnel (sinon dérivé du canonical via swapLangPrefix). */
   dePath?: string;
 };
 
-function withTrailingSlash(p: string): string {
-  return p === "/" ? "/" : p.endsWith("/") ? p : `${p}/`;
-}
-const resolvedFrPath = frPath ?? (lang === "en"
-  ? withTrailingSlash(canonicalPath.replace(/^\/en/, "") || "/")
-  : withTrailingSlash(canonicalPath));
-const resolvedEnPath = enPath ?? (lang === "fr"
-  ? `/en${canonicalPath === "/" ? "/" : withTrailingSlash(canonicalPath)}`
-  : withTrailingSlash(canonicalPath));
+const resolvedFrPath = frPath ?? swapLangPrefix(canonicalPath, "fr");
+const resolvedEnPath = enPath ?? swapLangPrefix(canonicalPath, "en");
+const resolvedDePath = dePath ?? swapLangPrefix(canonicalPath, "de");
 const canonicalUrl = new URL(canonicalPath, siteConfig.siteUrl).toString();
 const frCanonicalUrl = new URL(resolvedFrPath, siteConfig.siteUrl).toString();
 const enCanonicalUrl = new URL(resolvedEnPath, siteConfig.siteUrl).toString();
-// DE : utilise le chemin fourni, sinon replie sur la version FR
-const deCanonicalUrl = new URL(dePath ?? resolvedFrPath, siteConfig.siteUrl).toString();
+const deCanonicalUrl = new URL(resolvedDePath, siteConfig.siteUrl).toString();
 
 const socialImage = new URL(image, siteConfig.siteUrl).toString();
 const structuredDataItems = structuredData
@@ -310,7 +304,7 @@ const structuredDataItems = structuredData
     <meta property="og:image" content={socialImage} />
     <meta property="og:image:secure_url" content={socialImage} />
     <meta property="og:image:alt" content={title} />
-    <meta property="og:locale" content={lang === "en" ? "en_US" : "fr_FR"} />
+    <meta property="og:locale" content={lang === "en" ? "en_US" : lang === "de" ? "de_DE" : "fr_FR"} />
     {type === "article" && publishDate && (
       <meta property="article:published_time" content={publishDate.toISOString()} />
     )}
@@ -404,7 +398,7 @@ const structuredDataItems = structuredData
   <!-- Service worker + réapplication des préférences après chaque View Transition -->
   <body style={accentColor ? `--page-accent:${accentColor}` : ""}>
     <a class="skip-link" href="#main-content">Aller au contenu</a>
-    <Navbar frHref={resolvedFrPath} enHref={resolvedEnPath} lang={lang} />
+    <Navbar frHref={resolvedFrPath} enHref={resolvedEnPath} deHref={resolvedDePath} lang={lang} />
     <main id="main-content">
       <slot />
     </main>
@@ -426,7 +420,10 @@ const structuredDataItems = structuredData
         document.documentElement.dataset.theme = theme;
 
         const serverLang2 = document.documentElement.dataset.serverLang || "fr";
-        const lang = serverLang2 === "en" ? "en" : (localStorage.getItem("blogdungaucher.lang") || "fr");
+        const lang =
+          serverLang2 === "en" || serverLang2 === "de"
+            ? serverLang2
+            : (localStorage.getItem("blogdungaucher.lang") || "fr");
         window.__lang = lang;
         if (typeof window.__applyLang === "function") window.__applyLang(lang);
 

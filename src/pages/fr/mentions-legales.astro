@@ -1,14 +1,14 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { buildBreadcrumbJsonLd } from "../utils/blog";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
 ---
 <BaseLayout
   title="Mentions légales | Blog d'un Gaucher"
   description="Mentions légales et informations éditoriales du site blogdungaucher.com."
-  canonicalPath="/mentions-legales"
+  canonicalPath="/fr/mentions-legales/"
   structuredData={buildBreadcrumbJsonLd([
-    { name: "Accueil", path: "/" },
-    { name: "Mentions légales", path: "/mentions-legales" },
+    { name: "Accueil", path: "/fr/" },
+    { name: "Mentions légales", path: "/fr/mentions-legales/" },
   ])}
 >
   <section class="legal">

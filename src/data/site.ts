@@ -106,7 +106,7 @@ export const categoryMap: Record<
   science: {
     label: "Science",
     shortLabel: "Science du jeu",
-    href: "/science",
+    href: "/fr/science",
     tagline: "Comprendre comment le cerveau voit, calcule et décide sur l'échiquier.",
     description:
       "Des articles sur la cognition, la mémoire, les biais, la préparation et l'apprentissage appliqués aux échecs.",
@@ -126,7 +126,7 @@ export const categoryMap: Record<
   esprit: {
     label: "Esprit",
     shortLabel: "Esprit compétitif",
-    href: "/esprit",
+    href: "/fr/esprit",
     tagline: "Le mental, la discipline et la lucidité quand la pression monte.",
     description:
       "Une rubrique sur l'attention, la confiance, la gestion de la défaite et le travail intérieur du joueur.",
@@ -146,7 +146,7 @@ export const categoryMap: Record<
   societe: {
     label: "Société",
     shortLabel: "Échecs et société",
-    href: "/societe",
+    href: "/fr/societe",
     tagline: "Quand l'échiquier raconte aussi notre culture, nos institutions et notre époque.",
     description:
       "Des analyses sur la place des échecs dans l'éducation, les médias, la technologie et la vie collective.",
@@ -166,7 +166,7 @@ export const categoryMap: Record<
   analyses: {
     label: "Analyses",
     shortLabel: "Analyse Stockfish",
-    href: "/analyses",
+    href: "/fr/analyses",
     tagline: "Importe une position FEN ou une partie PGN et laisse Stockfish analyser en direct.",
     description:
       "Un espace d'analyse ouvert à tous : échiquier interactif, notation des coups, barre d'évaluation et meilleure suite.",
@@ -178,11 +178,11 @@ export const categoryMap: Record<
 };
 
 export const navigationLinks = [
-  { label: "Science", href: "/science" },
-  { label: "Esprit", href: "/esprit" },
-  { label: "Société", href: "/societe" },
-  { label: "Articles", href: "/blog" },
-  { label: "À propos", href: "/about" },
+  { label: "Science", href: "/fr/science" },
+  { label: "Esprit", href: "/fr/esprit" },
+  { label: "Société", href: "/fr/societe" },
+  { label: "Articles", href: "/fr/blog" },
+  { label: "À propos", href: "/fr/about" },
 ] as const;
 
 export const enNavigationLinks = [
@@ -193,16 +193,25 @@ export const enNavigationLinks = [
   { label: "About", href: "/en/about" },
 ] as const;
 
+/** Navigation allemande (contenu aligné sur la version française jusqu’à traduction). */
+export const deNavigationLinks = [
+  { label: "Wissenschaft", href: "/de/science" },
+  { label: "Geist", href: "/de/esprit" },
+  { label: "Gesellschaft", href: "/de/societe" },
+  { label: "Artikel", href: "/de/blog" },
+  { label: "Über uns", href: "/de/about" },
+] as const;
+
 export const staticRoutes = [
-  "/",
-  "/blog",
-  "/science",
-  "/esprit",
-  "/societe",
-  "/analyses",
-  "/about",
-  "/mentions-legales",
-  "/politique-confidentialite",
+  "/fr/",
+  "/fr/blog",
+  "/fr/science",
+  "/fr/esprit",
+  "/fr/societe",
+  "/fr/analyses",
+  "/fr/about",
+  "/fr/mentions-legales",
+  "/fr/politique-confidentialite",
 ] as const;
 
 export const enStaticRoutes = [
@@ -212,4 +221,15 @@ export const enStaticRoutes = [
   "/en/esprit",
   "/en/societe",
   "/en/about",
+] as const;
+
+export const deStaticRoutes = [
+  "/de/",
+  "/de/blog",
+  "/de/science",
+  "/de/esprit",
+  "/de/societe",
+  "/de/about",
+  "/de/mentions-legales",
+  "/de/politique-confidentialite",
 ] as const;

@@ -21,7 +21,9 @@ import {
   getPostSlug,
   getPostUrl,
   getPostUrlEn,
+  getPostUrlDe,
 } from "../../../utils/blog";
+import { swapLangPrefix } from "../../../utils/lang-paths";
 import FAQ from "../../../components/FAQ.astro";
 
 export async function getStaticPaths() {
@@ -56,12 +58,12 @@ const enCategoryLabels: Record<string, string> = {
   societe: "Society",
 };
 const enCategoryLabel = enCategoryLabels[post.data.category] ?? category.label;
-const enCategoryHref = `/en${category.href}/`;
+const enCategoryHref = swapLangPrefix(`${category.href}/`, "en");
 
 const faqs = post.data.faq ?? [];
 
 const structuredData = [
-  buildArticleJsonLd(post),
+  buildArticleJsonLd(post, { lang: "en" }),
   buildBreadcrumbJsonLd([
     { name: "Home", path: "/en/" },
     { name: "Articles", path: "/en/blog/" },
@@ -87,6 +89,7 @@ const otherPillars = categorySlugs
   lang="en"
   frPath={postUrlFr}
   enPath={postUrlEn}
+  dePath={getPostUrlDe(post)}
   image={post.data.ogImage ?? siteConfig.defaultOgImage}
   type="article"
   publishDate={post.data.publishDate}
@@ -148,7 +151,7 @@ const otherPillars = categorySlugs
             <span class="pillar-links__eyebrow">Continue exploring</span>
             <div class="pillar-links__grid">
               {otherPillars.map((p) => (
-                <a href={`/en${p.href}/`} class="pillar-link" style={`--pc:${p.accent}`}>
+                <a href={swapLangPrefix(`${p.href}/`, "en")} class="pillar-link" style={`--pc:${p.accent}`}>
                   <span class="pillar-link__dot"></span>
                   <div>
                     <strong>{p.enShort}</strong>

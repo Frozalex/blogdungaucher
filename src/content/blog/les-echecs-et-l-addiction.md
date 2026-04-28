@@ -13,7 +13,7 @@ seoDescription: "Découvrez le lien complexe entre les échecs et l'addiction. I
 titleEn: "Chess and Addiction: When the Game Becomes a Drug"
 excerptEn: "It's 3am. You promised yourself it was the last game, but you're launching another one. Can you really be addicted to chess? A breakdown of a silent addiction."
 seoTitleEn: "Chess and Addiction: Understanding and Overcoming Dependency"
-seoDescriptionEn: "Discover the complex link between chess and addiction. Learn to identify the signs of dependency and find concrete advice on how to regain control."
+seoDescriptionEn: "Discover the complex link between chess and addiction. Learn to identify the signs of dependency and find concrete advice on how to take back control."
 ---
 
 Il est 3 h du matin. L’écran bleuté te crame les paupières ; le compteur de la journée affiche **47 parties**. Ton rating vient de passer sous le palier que tu t’étais juré de ne plus lâcher. Tu te dis : *« Juste une dernière partie »*, celle qui va remettre les choses d’aplomb. Parce qu’il n’est pas question de finir sur une défaite.
@@ -30,7 +30,7 @@ La psychiatrie moderne dit autre chose : des comportements immatériels peuvent 
 
 L’[Organisation mondiale de la santé](https://fr.wikipedia.org/wiki/Organisation_mondiale_de_la_sant%C3%A9) (OMS) a officiellement inclus le trouble du jeu vidéo (*Gaming Disorder*) dans la [CIM-11](https://www.who.int/news/item/25-09-2018-who-releases-new-international-classification-of-diseases-(icd-11)) en **2019**, aux côtés des troubles liés aux substances. Concrètement : le cadre clinique reconnaît qu’on peut perdre le contrôle, prioriser le jeu au détriment du reste, et continuer malgré les dégâts même sans seringue ni verre.
 
-Le cerveau ne « moralise » pas ton plaisir sur le circuit de la récompense, une série de pics déclenchés par des parties rapides, des classements, des revanches peut entrer en résonance avec d’autres boucles de renforcement intenses. Ce n’est pas dire que le Blitz et la cocaïne sont « la même chose » socialement ou légalement ; c’est dire que la mécanique d’apprentissage peut rimer au sens du circuit de récompense, pas au sens moral.
+Le cerveau ne « moralise » pas ton plaisir sur le circuit de la récompense, une série de pics déclenchés par des parties en formats expéditifs, des classements, des revanches peut entrer en résonance avec d’autres boucles de renforcement intenses. Ce n’est pas dire que le Blitz et la cocaïne sont « la même chose » socialement ou légalement ; c’est dire que la mécanique d’apprentissage peut rimer au sens du circuit de récompense, pas au sens moral.
 
 Les échecs en ligne, eux, ajoutent une couche : cadences infernales (Bullet, Blitz court), **Elo en direct**, badges, communauté permanente. Bref : un fast-food neuronal, le plateau en bois du mercredi soir n’a rien à voir.
 
@@ -60,7 +60,7 @@ Le Dr [George Imataka](https://pubmed.ncbi.nlm.nih.gov/?term=Imataka+G) et al. (
 
 ### Le chiffre qui te définit : quand l'Elo devient une cage
 
-Le [classement Elo](https://fr.wikipedia.org/wiki/Classement_Elo) était un outil statistique. En ligne, il devient un miroir d'ego : « Je suis un 1600 ». (La psychologie derrière ce mécanisme est développée dans [La psychologie du joueur d'échecs](/blog/psychologie-du-joueur-d-echecs/).)
+Le [classement Elo](https://fr.wikipedia.org/wiki/Classement_Elo) était un outil statistique. En ligne, il devient un miroir d'ego : « Je suis un 1600 ». (La psychologie derrière ce mécanisme est développée dans [La psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/).)
 
 Dans le contexte de l'addiction, la bascule est précise : tu ne joues plus pour apprendre, tu joues pour protéger l'étiquette. L'addiction au graphique a remplacé le jeu.
 
@@ -86,7 +86,7 @@ Le stress monte, le cortisol grimpe ; le [Dr Elke van der Meer](https://www.rese
 
 **Paradoxe cruel :** plus tu veux rattraper, plus tu t’enfonces.
 
-Pour aller plus loin sur le mécanisme psychologique du tilt, ego, imposteur et flow : l'article [Psychologie du joueur d'échecs](/blog/psychologie-du-joueur-d-echecs/) y consacre une section entière.
+Pour aller plus loin sur le mécanisme psychologique du tilt, ego, imposteur et flow : l'article [Psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/) y consacre une section entière.
 
 ## Es-tu vraiment dans la zone rouge ? (auto-check bienveillant)
 
@@ -102,7 +102,7 @@ L’addiction, ce n’est pas « X heures » sur le compteur. C’est la relatio
 
 Les critères du [DSM-5](https://fr.wikipedia.org/wiki/Manuel_diagnostique_et_statistique_des_troubles_mentaux) ([APA](https://fr.wikipedia.org/wiki/Association_am%C3%A9ricaine_de_psychiatrie)) et de la CIM-11 convergent sur l’idée : perte de contrôle, priorité au jeu, **poursuite malgré les conséquences**. Mensonges sur le temps passé, sommeil sacrifié, irritabilité au sevrage : alertes.
 
-**Profils plus vulnérables** : [Daria Kuss](https://www.dariakuss.com) ([Nottingham Trent](https://fr.wikipedia.org/wiki/Nottingham_Trent_University)) montre comment anxiété, dépression ou [TDAH](https://fr.wikipedia.org/wiki/Trouble_du_d%C3%A9ficit_de_l%27attention_avec_hyperactivit%C3%A9) peuvent pousser vers l’hyperstimulation du rapide en ligne, ce n'est pas de la « faiblesse », c’est du contexte.
+**Profils plus vulnérables** : [Daria Kuss](https://www.dariakuss.com) ([Nottingham Trent](https://fr.wikipedia.org/wiki/Nottingham_Trent_University)) montre comment anxiété, dépression ou [TDAH](https://fr.wikipedia.org/wiki/Trouble_du_d%C3%A9ficit_de_l%27attention_avec_hyperactivit%C3%A9) peuvent pousser vers l’hyperstimulation des cadences les plus courtes en ligne, ce n'est pas de la « faiblesse », c’est du contexte.
 
 ## Contexte chiffré : tu n’inventes pas un problème « perso »
 

@@ -1,0 +1,552 @@
+---
+import { render } from "astro:content";
+
+import AdBanner from "../../../components/AdBanner.astro";
+import ArticleCard from "../../../components/ArticleCard.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
+import TableOfContents from "../../../components/TableOfContents.astro";
+import ShareButtons from "../../../components/ShareButtons.astro";
+import Comments from "../../../components/Comments.astro";
+import FAQ from "../../../components/FAQ.astro";
+
+import { categoryMap, categorySlugs, siteConfig } from "../../../data/site";
+import {
+  absoluteUrl,
+  buildArticleJsonLd,
+  buildBreadcrumbJsonLd,
+  buildFaqJsonLd,
+  calculateReadingTime,
+  formatDate,
+  getAllPosts,
+  getPostSlug,
+  getPostUrl,
+  getPostUrlEn,
+  getPostUrlDe,
+} from "../../../utils/blog";
+
+export async function getStaticPaths() {
+  const posts = await getAllPosts();
+  return posts.map((post) => ({ params: { slug: getPostSlug(post) }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+const category = categoryMap[post.data.category];
+
+const readingTime = post.data.readingTime ?? calculateReadingTime(post.body);
+
+const allPosts = await getAllPosts();
+const related = allPosts
+  .filter((e) => e.id !== post.id && e.data.category === post.data.category)
+  .slice(0, 3);
+
+const postUrl = getPostUrl(post);
+const postUrlEn = getPostUrlEn(post);
+const absolutePostUrl = absoluteUrl(postUrl);
+
+const faqs = post.data.faq ?? [];
+
+const structuredData = [
+  buildArticleJsonLd(post),
+  buildBreadcrumbJsonLd([
+    { name: "Accueil", path: "/fr/" },
+    { name: "Articles", path: "/fr/blog/" },
+    { name: post.data.title, path: postUrl },
+  ]),
+  ...(faqs.length > 0 ? [buildFaqJsonLd(faqs)] : []),
+];
+
+// Piliers pour le maillage interne (hors rubrique courante)
+const otherPillars = categorySlugs
+  .filter((s) => s !== post.data.category)
+  .map((s) => categoryMap[s]);
+---
+<BaseLayout
+  title={`${post.data.seoTitle ?? post.data.title} | Blog d'un Gaucher`}
+  description={post.data.seoDescription ?? post.data.excerpt}
+  canonicalPath={postUrl}
+  image={post.data.ogImage ?? siteConfig.defaultOgImage}
+  type="article"
+  publishDate={post.data.publishDate}
+  modifiedDate={post.data.updatedDate ?? post.data.publishDate}
+  section={category.label}
+  structuredData={structuredData}
+  accentColor={category.accent}
+  tags={post.data.tags}
+  enPath={postUrlEn}
+  dePath={getPostUrlDe(post)}
+>
+  <article class="article-page" style={`--c:${category.accent}`}>
+    <div class="reading-progress" aria-hidden="true">
+      <span id="reading-progress-fill"></span>
+    </div>
+    <div class="container article-layout">
+      <div class="article-main">
+
+        <Breadcrumb items={[
+          { label: "Accueil", href: "/fr/" },
+          { label: "Articles", href: "/fr/blog/" },
+          { label: category.label, href: category.href },
+          { label: post.data.title },
+        ]} />
+
+        <header class="article-header fade-up" style="--motion-delay: 40ms;">
+          <div class="article-meta">
+            <a href={category.href} class="meta-cat" style={`--c:${category.accent}`}>
+              {category.label}
+            </a>
+            <span>{readingTime}</span>
+            <time datetime={post.data.publishDate.toISOString()}>
+              {formatDate(post.data.publishDate)}
+            </time>
+          </div>
+          <h1>{post.data.title}</h1>
+          <p class="article-excerpt">{post.data.excerpt}</p>
+        </header>
+
+        <div class="toc-mobile-wrap">
+          <TableOfContents headings={headings} mode="mobile" />
+        </div>
+
+        <AdBanner format="inline" compact={true} />
+
+        <div class="article-body fade-up" style="--motion-delay: 100ms;">
+          <Content />
+        </div>
+
+        {faqs.length > 0 && <FAQ items={faqs} lang="fr" />}
+
+        {otherPillars.length > 0 && (
+          <nav class="pillar-links fade-up" style="--motion-delay: 130ms;" aria-label="Autres rubriques du blog">
+            <span class="pillar-links__eyebrow">Continuer à explorer</span>
+            <div class="pillar-links__grid">
+              {otherPillars.map((p) => (
+                <a href={p.href} class="pillar-link" style={`--pc:${p.accent}`}>
+                  <span class="pillar-link__dot"></span>
+                  <div>
+                    <strong>{p.shortLabel}</strong>
+                    <span>{p.tagline}</span>
+                  </div>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                </a>
+              ))}
+            </div>
+          </nav>
+        )}
+
+        <ShareButtons title={post.data.title} url={absolutePostUrl} />
+        <Comments />
+
+      </div>
+
+      <aside class="article-aside">
+        <div class="toc-desktop-wrap">
+          <TableOfContents headings={headings} mode="desktop" />
+        </div>
+
+        <div class="aside-card fade-up" style="--motion-delay: 120ms;">
+          <span class="aside-dot" style={`background:${category.accent}`}></span>
+          <h2>{category.shortLabel}</h2>
+          <p>{category.tagline}</p>
+          <a href={category.href} class="aside-link">
+            Explorer la rubrique
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <AdBanner format="rectangle" compact={true} />
+      </aside>
+    </div>
+  </article>
+
+  {related.length > 0 && (
+    <section class="related">
+      <div class="container">
+        <span class="eyebrow reveal">Continuer la lecture</span>
+        <h2 class="section-title reveal">Dans la même rubrique</h2>
+        <div class="related-grid reveal-group">
+          {related.map((e) => <ArticleCard post={e} />)}
+        </div>
+      </div>
+    </section>
+  )}
+</BaseLayout>
+
+<style>
+  .article-page  { padding: 3rem 0 2rem; }
+
+  .reading-progress {
+    position: fixed;
+    top: calc(var(--navbar-h) + 1.1rem);
+    left: 0.85rem;
+    z-index: 40;
+    width: 5px;
+    height: calc(100vh - var(--navbar-h) - 2rem);
+    border-radius: var(--radius-pill);
+    background: color-mix(in srgb, var(--border-soft) 70%, transparent);
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .reading-progress span {
+    position: absolute;
+    inset: 0 0 auto;
+    display: block;
+    height: 0%;
+    background: linear-gradient(180deg, var(--c), color-mix(in srgb, var(--c) 62%, #fff));
+    transition: height 120ms linear;
+  }
+
+  .article-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 17rem;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .article-main {
+    min-width: 0;
+  }
+
+  /* header */
+  .article-header {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-soft);
+    margin-bottom: 1.5rem;
+  }
+
+  .article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: center;
+    margin-bottom: 0.9rem;
+    font-size: 0.82rem;
+    color: var(--text-dim);
+  }
+
+  .meta-cat {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.5rem;
+    padding: 0 0.5rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--c);
+    color: var(--c);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background 150ms ease;
+  }
+  .meta-cat:hover { background: var(--c); color: #fff; }
+
+  .article-header h1 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-style: italic;
+    font-size: clamp(2rem, 4.8vw, 3.2rem);
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+    max-width: 24ch;
+    color: var(--c);
+    font-optical-sizing: auto;
+  }
+
+  .article-excerpt {
+    margin-top: 0.7rem;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 38rem;
+  }
+
+  /* corps */
+  .article-body {
+    padding: 1.75rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-xs);
+  }
+  .article-body :global(h2) {
+    margin: 1.9rem 0 0.7rem;
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.65rem;
+    letter-spacing: -0.01em;
+    color: var(--c);
+    font-optical-sizing: auto;
+  }
+  .article-body :global(h3) {
+    margin: 1.4rem 0 0.5rem;
+    font-size: 1.18rem;
+    color: var(--c);
+  }
+  .article-body :global(p),
+  .article-body :global(li) { color: var(--text-muted); line-height: 1.75; }
+  .article-body :global(p:first-of-type)::first-letter {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3.4em;
+    line-height: 0.9;
+    float: left;
+    padding: 0.22rem 0.6rem 0 0;
+    color: var(--c);
+  }
+  .article-body :global(li::marker) { color: var(--c); font-weight: bold; }
+  .article-body :global(p + p),
+  .article-body :global(p + ul),
+  .article-body :global(ul + p) { margin-top: 0.85rem; }
+  .article-body :global(ul),
+  .article-body :global(ol)   { padding-left: 1.2rem; }
+  .article-body :global(li + li) { margin-top: 0.3rem; }
+  .article-body :global(strong) { color: var(--c); }
+  .article-body :global(a) {
+    color: var(--c);
+    font-weight: 600;
+    text-decoration: none;
+    background-image: linear-gradient(
+      to top,
+      color-mix(in srgb, var(--c) 16%, transparent) 0%,
+      color-mix(in srgb, var(--c) 16%, transparent) 36%,
+      transparent 36%
+    );
+    border-radius: 0.2rem;
+    padding: 0 0.05rem;
+    transition:
+      color 160ms ease,
+      background-size 160ms ease,
+      background-color 160ms ease;
+  }
+  .article-body :global(a:hover) {
+    color: color-mix(in srgb, var(--c) 80%, black);
+    background-image: linear-gradient(
+      to top,
+      color-mix(in srgb, var(--c) 22%, transparent) 0%,
+      color-mix(in srgb, var(--c) 22%, transparent) 42%,
+      transparent 42%
+    );
+  }
+  .article-body :global(a[href^="http"])::after {
+    content: " ↗";
+    font-size: 0.8em;
+    font-weight: 700;
+    opacity: 0.75;
+  }
+  .article-body :global(blockquote) {
+    margin: 1.25rem 0;
+    padding: 0.9rem 1.2rem;
+    border-left: 3px solid var(--green);
+    background: var(--green-light);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    color: var(--text-main);
+    font-style: italic;
+  }
+  .article-body :global(hr) { border: none; border-top: 1px solid var(--border-soft); margin: 1.5rem 0; }
+  .article-body :global(code) {
+    font-size: 0.88em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: var(--bg-warm);
+    color: var(--text-main);
+  }
+  .article-body :global(hr + h3) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: 0 0.8rem;
+    border-radius: var(--radius-pill);
+    background: color-mix(in srgb, var(--c) 10%, white);
+    border: 1px solid color-mix(in srgb, var(--c) 16%, var(--border-soft));
+    margin-top: 1.8rem;
+  }
+  .article-body :global(hr + h3 + p) {
+    margin-top: 0.9rem;
+  }
+  .article-body :global(hr + h3 + p + ul) {
+    display: grid;
+    gap: 0.7rem;
+    padding-left: 0;
+    margin-top: 1rem;
+    list-style: none;
+  }
+  .article-body :global(hr + h3 + p + ul li) {
+    padding: 0.95rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-soft);
+    background: color-mix(in srgb, var(--c) 3%, white);
+    box-shadow: var(--shadow-xs);
+  }
+  .article-body :global(hr + h3 + p + ul li::marker) {
+    content: "";
+  }
+
+  /* aside */
+  .article-aside {
+    position: sticky;
+    top: 5rem;
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+  }
+
+  .toc-mobile-wrap {
+    display: none;
+  }
+
+  .toc-desktop-wrap {
+    width: 100%;
+    max-width: 15.5rem;
+    margin-inline: auto;
+  }
+
+  .aside-card {
+    padding: 1.3rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-xs);
+  }
+  .aside-dot {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-bottom: 0.7rem;
+  }
+  .aside-card h2 { font-size: 1rem; margin-bottom: 0.4rem; }
+  .aside-card p  { color: var(--text-muted); font-size: 0.86rem; line-height: 1.6; }
+  .aside-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.7rem;
+    font-size: 0.83rem;
+    font-weight: 600;
+    color: var(--green);
+    transition: gap 200ms var(--ease-spring);
+  }
+  .aside-link:hover { gap: 0.5rem; }
+
+  /* maillage piliers */
+  .pillar-links {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-xs);
+  }
+  .pillar-links__eyebrow {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 0.9rem;
+  }
+  .pillar-links__grid {
+    display: grid;
+    gap: 0.7rem;
+  }
+  .pillar-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-soft);
+    background: color-mix(in srgb, var(--pc) 4%, var(--bg-warm));
+    transition: border-color 180ms ease, background 180ms ease;
+    text-decoration: none;
+  }
+  .pillar-link:hover {
+    border-color: var(--pc);
+    background: color-mix(in srgb, var(--pc) 8%, var(--bg-warm));
+  }
+  .pillar-link__dot {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--pc);
+    margin-top: 0.35rem;
+  }
+  .pillar-link div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .pillar-link strong {
+    font-size: 0.9rem;
+    color: var(--text-main);
+  }
+  .pillar-link span {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+  .pillar-link svg { flex-shrink: 0; color: var(--pc); margin-top: 0.25rem; }
+
+  /* related */
+  .related { padding: 1rem 0 4.5rem; }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 0.85rem;
+    margin-top: 1.2rem;
+  }
+
+  @media (max-width: 900px) {
+    .reading-progress { display: none; }
+    .article-layout { grid-template-columns: 1fr; }
+    .article-aside  { position: static; }
+    .toc-mobile-wrap { display: block; }
+    .toc-desktop-wrap { display: none; }
+  }
+</style>
+
+<script>
+  let articleCleanup;
+
+  function initArticlePage() {
+    articleCleanup?.();
+
+    const articleBody = document.querySelector(".article-body");
+    const articleHeader = document.querySelector(".article-header");
+    const progressFill = document.getElementById("reading-progress-fill");
+    if (!articleBody) return;
+
+    articleBody
+      .querySelectorAll('a[href^="http"]')
+      .forEach((link) => {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      });
+
+    const onScroll = () => {
+      if (!articleHeader || !progressFill) return;
+      const start = articleHeader.offsetTop;
+      const end = articleBody.offsetTop + articleBody.offsetHeight - window.innerHeight * 0.4;
+      const range = Math.max(end - start, 1);
+      const value = (window.scrollY - start) / range;
+      const clamped = Math.min(1, Math.max(0, value));
+      progressFill.style.height = `${(clamped * 100).toFixed(2)}%`;
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    onScroll();
+
+    articleCleanup = () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }
+
+  document.addEventListener("astro:page-load", initArticlePage);
+</script>

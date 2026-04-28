@@ -5,12 +5,18 @@ import { formatDate, getCategoryMeta, getPostUrlLang } from "../utils/blog";
 const { post, featured = false, lang = "fr" } = Astro.props as {
   post: BlogEntry;
   featured?: boolean;
-  lang?: "fr" | "en";
+  lang?: "fr" | "en" | "de";
 };
 
 const category = getCategoryMeta(post.data.category);
-const postTitle   = lang === "en" ? (post.data.titleEn   ?? post.data.title)   : post.data.title;
-const postExcerpt = lang === "en" ? (post.data.excerptEn ?? post.data.excerpt) : post.data.excerpt;
+const postTitle =
+  lang === "en"
+    ? (post.data.titleEn ?? post.data.title)
+    : post.data.title;
+const postExcerpt =
+  lang === "en"
+    ? (post.data.excerptEn ?? post.data.excerpt)
+    : post.data.excerpt;
 ---
 <article
   class={`card scale-in ${featured ? "featured" : ""}`}

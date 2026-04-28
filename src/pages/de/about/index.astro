@@ -1,16 +1,15 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import { buildBreadcrumbJsonLd } from "../../utils/blog";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
 ---
 <BaseLayout
-  title="À propos | Découvrez l'univers du Blog d'un Gaucher"
-  description="Découvrez le projet éditorial du Blog d'un Gaucher : une voix personnelle, honnête et réfléchie sur les échecs et ceux qui les pratiquent."
-  canonicalPath="/about/"
-  frPath="/about/"
-  enPath="/en/about/"
+  title="Über uns | Blog d'un Gaucher"
+  description="Das Redaktionsprojekt Blog d'un Gaucher : eine persönliche, ehrliche Stimme über Schach und die Menschen, die es spielen."
+  canonicalPath="/de/about/"
+  lang="de"
   structuredData={buildBreadcrumbJsonLd([
-    { name: "Accueil", path: "/" },
-    { name: "À propos", path: "/about/" },
+    { name: "Startseite", path: "/de/" },
+    { name: "Über uns", path: "/de/about/" },
   ])}
 >
   <section class="about">

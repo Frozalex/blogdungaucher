@@ -1,28 +1,28 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import Breadcrumb from "../../components/Breadcrumb.astro";
-import { categoryMap, siteConfig } from "../../data/site";
-import { buildBreadcrumbJsonLd } from "../../utils/blog";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
+import { categoryMap, siteConfig } from "../../../data/site";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
 
 const category = categoryMap.analyses;
 const analysesAvailable = siteConfig.features.analysesAvailable;
 
 const structuredData = buildBreadcrumbJsonLd([
-  { name: "Accueil", path: "/" },
-  { name: "Analyses", path: "/analyses" },
+  { name: "Accueil", path: "/fr/" },
+  { name: "Analyses", path: "/fr/analyses/" },
 ]);
 ---
 <BaseLayout
   title="Analyses Stockfish | Blog d'un Gaucher"
   description="Importe un PGN ou un FEN, joue les coups sur un échiquier interactif et obtiens l'évaluation de Stockfish en direct."
-  canonicalPath="/analyses"
+  canonicalPath="/fr/analyses/"
   structuredData={structuredData}
   accentColor={category.accent}
 >
   <section class="analysis-page" style={`--c:${category.accent}`}>
     <div class="container">
       <Breadcrumb items={[
-        { label: "Accueil", href: "/" },
+        { label: "Accueil", href: "/fr/" },
         { label: "Analyses" },
       ]} />
 
@@ -616,6 +616,6 @@ const structuredData = buildBreadcrumbJsonLd([
 
 {analysesAvailable && (
   <script>
-    import "../../scripts/analysis";
+    import "../../../scripts/analysis";
   </script>
 )}

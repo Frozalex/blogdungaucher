@@ -2,14 +2,18 @@
 import { categoryMap, categorySlugs, siteConfig } from "../data/site";
 
 interface Props {
-  lang?: "fr" | "en";
+  lang?: "fr" | "en" | "de";
 }
 const { lang = "fr" } = Astro.props;
 
-const isEn = lang === "en";
-const blogHref    = isEn ? "/en/blog/"  : "/blog";
-const aboutHref   = isEn ? "/en/about/" : "/about";
-const emailNote   = isEn ? siteConfig.futureInfoEmailLabelEn : siteConfig.futureInfoEmailLabel;
+const blogHref =
+  lang === "en" ? "/en/blog/" : lang === "de" ? "/de/blog/" : "/fr/blog/";
+const aboutHref =
+  lang === "en" ? "/en/about/" : lang === "de" ? "/de/about/" : "/fr/about/";
+const emailNote =
+  lang === "en"
+    ? siteConfig.futureInfoEmailLabelEn
+    : siteConfig.futureInfoEmailLabel;
 ---
 <footer class="footer">
   <div class="container footer-top">
@@ -45,7 +49,13 @@ const emailNote   = isEn ? siteConfig.futureInfoEmailLabelEn : siteConfig.future
       <h2 data-t="footer.sectionsTitle">Rubriques</h2>
       {categorySlugs.map((cat) => (
         <a
-          href={isEn ? `/en/${cat}/` : categoryMap[cat].href}
+          href={
+            lang === "en"
+              ? `/en/${cat}/`
+              : lang === "de"
+                ? `/de/${cat}/`
+                : categoryMap[cat].href
+          }
           data-t={`categories.${cat}.label`}
         >{categoryMap[cat].label}</a>
       ))}
@@ -53,8 +63,8 @@ const emailNote   = isEn ? siteConfig.futureInfoEmailLabelEn : siteConfig.future
 
     <div class="footer-col fade-up" style="--motion-delay: 230ms;">
       <h2 data-t="footer.trustTitle">Confiance</h2>
-      <a href="/mentions-legales" data-t="footer.legal">Mentions légales</a>
-      <a href="/politique-confidentialite" data-t="footer.privacy">Confidentialité</a>
+      <a href={lang === "en" ? "/en/mentions-legales/" : lang === "de" ? "/de/mentions-legales/" : "/fr/mentions-legales/"} data-t="footer.legal">Mentions légales</a>
+      <a href={lang === "en" ? "/en/politique-confidentialite/" : lang === "de" ? "/de/politique-confidentialite/" : "/fr/politique-confidentialite/"} data-t="footer.privacy">Confidentialité</a>
     </div>
   </div>
 

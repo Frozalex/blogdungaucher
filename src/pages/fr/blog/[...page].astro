@@ -1,13 +1,13 @@
 ---
 import type { GetStaticPathsOptions, Page } from "astro";
-import type { BlogEntry } from "../../utils/blog";
+import type { BlogEntry } from "../../../utils/blog";
 
-import AdBanner from "../../components/AdBanner.astro";
-import ArticleCard from "../../components/ArticleCard.astro";
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import AdBanner from "../../../components/AdBanner.astro";
+import ArticleCard from "../../../components/ArticleCard.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
 
-import { categoryMap, categorySlugs } from "../../data/site";
-import { buildBreadcrumbJsonLd, buildWebsiteJsonLd, getAllPosts } from "../../utils/blog";
+import { categoryMap, categorySlugs } from "../../../data/site";
+import { buildBreadcrumbJsonLd, buildWebsiteJsonLd, getAllPosts } from "../../../utils/blog";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const posts = await getAllPosts();
@@ -35,13 +35,13 @@ function buildPageLinks(current: number, total: number) {
 const paginationPages = buildPageLinks(page.currentPage, page.lastPage);
 
 const structuredData = isFirstPage
-  ? [buildWebsiteJsonLd(), buildBreadcrumbJsonLd([{ name: "Accueil", path: "/" }, { name: "Articles", path: "/blog/" }])]
+  ? [buildWebsiteJsonLd(), buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: "Articles", path: "/fr/blog/" }])]
   : undefined;
 ---
 <BaseLayout
   title={isFirstPage ? "Tous les articles | Blog d'un Gaucher" : `Articles — page ${page.currentPage} | Blog d'un Gaucher`}
   description="La bibliothèque complète : science, esprit, société et analyses."
-  canonicalPath={isFirstPage ? "/blog/" : `/blog/${page.currentPage}/`}
+  canonicalPath={isFirstPage ? "/fr/blog/" : `/fr/blog/${page.currentPage}/`}
   noindex={!isFirstPage}
   structuredData={structuredData}
 >
@@ -113,7 +113,7 @@ const structuredData = isFirstPage
                 <>
                   {needsGap && <span class="pag-gap" aria-hidden="true">...</span>}
                   <a
-                    href={n === 1 ? "/blog" : `/blog/${n}`}
+                    href={n === 1 ? "/fr/blog/" : `/fr/blog/${n}/`}
                     class={`pag-num${n === page.currentPage ? " current" : ""}`}
                     aria-current={n === page.currentPage ? "page" : undefined}
                   >

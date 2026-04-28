@@ -1,0 +1,333 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+---
+<BaseLayout
+  title="À propos | Découvrez l'univers du Blog d'un Gaucher"
+  description="Découvrez le projet éditorial du Blog d'un Gaucher : une voix personnelle, honnête et réfléchie sur les échecs et ceux qui les pratiquent."
+  canonicalPath="/fr/about/"
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Accueil", path: "/fr/" },
+    { name: "À propos", path: "/fr/about/" },
+  ])}
+>
+  <section class="about">
+    <div class="container">
+      <div class="about-hero reveal">
+        <img
+          src="/images/avatar.gif"
+          alt="Avatar pixel art de Le Gaucher"
+          class="about-avatar"
+          width="96"
+          height="96"
+          loading="eager"
+        />
+        <span class="eyebrow">À propos</span>
+      </div>
+      <h1 class="reveal">Un joueur, un blog,<br/><span class="green">une passion.</span></h1>
+      <p class="about-lead reveal">
+        Blog d'un Gaucher est entièrement consacré aux échecs. L'idée n'est pas de
+        prétendre détenir la vérité absolue, mais plutôt de partager une réflexion 
+        sincère, personnelle et humble sur le jeu que nous aimons.
+      </p>
+
+      <div class="principles reveal-group">
+        <details class="principle">
+          <summary>
+            <strong>Honnêteté</strong>
+            <span>Cliquer pour lire notre vision complète</span>
+          </summary>
+          <div class="principle-body">
+            <p>
+              Quand nous parlons d'honnêteté sur ce blog, nous ne parlons pas d'une formule décorative placée pour faire bien.
+              Nous parlons d'une manière de travailler et d'écrire qui accepte la réalité du jeu d'échecs telle qu'elle est :
+              exigeante, parfois frustrante, rarement linéaire. Trop de contenus donnent l'impression que la progression est simple,
+              qu'il suffit de suivre trois principes, de connaître deux ouvertures et de regarder quelques vidéos pour devenir un
+              joueur solide. En pratique, tout joueur sait que ce n'est pas ainsi que les choses se passent. On stagne, on doute,
+              on régresse parfois, on croit comprendre une idée stratégique puis on la perd quelques semaines plus tard. L'honnêteté,
+              ici, consiste à assumer cette réalité sans l'édulcorer.
+            </p>
+            <p>
+              Cela signifie aussi montrer nos erreurs, pas uniquement nos réussites. Une partie gagnée est agréable à raconter,
+              mais une partie perdue avec une mauvaise décision au mauvais moment est souvent beaucoup plus instructive. Nous voulons
+              préserver cet espace de vérité, même quand il n'est pas flatteur. Dire qu'un plan était mauvais, que notre lecture de
+              position était superficielle ou qu'on a été dominé mentalement n'est pas un aveu de faiblesse. C'est précisément
+              l'attitude qui permet d'apprendre durablement. L'honnêteté, dans ce cadre, n'est pas morale au sens abstrait :
+              elle est pratique. Elle protège contre l'illusion de compétence.
+            </p>
+            <p>
+              Être honnête, c'est également faire attention à la façon dont nous citons les recherches, les auteurs et les sources.
+              Sur des sujets sensibles comme le cerveau, l'addiction, l'autisme ou les écarts de genre, il serait trop facile
+              de simplifier excessivement pour produire un discours qui paraît fort mais qui repose sur peu de rigueur. Nous
+              préférons parfois ralentir l'écriture, croiser plusieurs publications et préciser nos limites plutôt que d'affirmer
+              trop vite. Quand une étude est discutée, nous le disons. Quand une conclusion est partielle, nous le disons.
+              Cette transparence fait partie de la confiance que nous voulons construire avec les lecteurs.
+            </p>
+            <p>
+              Enfin, l'honnêteté concerne aussi le ton. Ce blog n'a pas vocation à jouer un rôle d'autorité absolue. Il est tenu
+              par une personne passionnée, qui travaille, apprend, se trompe et ajuste son regard avec le temps. Nous pouvons
+              défendre des idées fortes sans prétendre posséder la vérité finale. Nous pouvons être ambitieux sur la qualité,
+              tout en restant modestes dans la posture. En résumé, l'honnêteté que nous défendons est simple : écrire ce que nous
+              pensons vraiment, reconnaître ce que nous ignorons encore, et traiter le lecteur comme un partenaire de réflexion,
+              jamais comme un public à impressionner.
+            </p>
+          </div>
+        </details>
+
+        <details class="principle">
+          <summary>
+            <strong>Réflexion</strong>
+            <span>Cliquer pour lire notre vision complète</span>
+          </summary>
+          <div class="principle-body">
+            <p>
+              Réflexion signifie d'abord une chose : prendre le temps. Dans l'écosystème numérique actuel, la vitesse est souvent
+              récompensée plus que la profondeur. Il faut publier vite, réagir vite, résumer vite. Le jeu d'échecs nous apprend
+              exactement l'inverse. Les meilleures décisions naissent rarement de la précipitation, et les analyses les plus utiles
+              ne sont presque jamais celles écrites dans l'urgence. Sur ce blog, la réflexion est donc un choix éditorial assumé :
+              préférer un article solide, nuancé et habité à un texte court qui donne l'impression d'avoir tout expliqué en deux pages.
+            </p>
+            <p>
+              Réfléchir, c'est aussi accepter la complexité sans se cacher derrière elle. Beaucoup de sujets liés aux échecs sont
+              tentants parce qu'ils se prêtent à des slogans : \"les échecs rendent plus intelligent\", \"le mental est tout\",
+              \"la théorie suffit\", \"l'ordinateur tue la créativité\". Ces phrases sont accrocheuses, mais elles deviennent vite
+              des pièges si on ne les démonte pas. Notre ligne, ici, est de revenir au détail : dans quelles conditions une idée
+              devient vraie ? Pour quel profil de joueur ? À quel niveau de pratique ? Avec quelles limites ? C'est ce travail de
+              précision qui donne de la valeur à une réflexion.
+            </p>
+            <p>
+              La réflexion n'est pas seulement intellectuelle, elle est également introspective. Les échecs forcent chacun à se
+              confronter à lui-même : sa peur de perdre, son besoin de reconnaissance, sa gestion du stress, sa relation à l'erreur.
+              Nous voulons conserver cette dimension humaine dans les contenus. Un article ne doit pas être seulement une accumulation
+              de concepts, il doit aussi aider le lecteur à se poser les bonnes questions sur sa propre pratique. Pourquoi est-ce que
+              je craque en zeitnot ? Pourquoi je rejoue immédiatement après une défaite ? Pourquoi je joue mieux sans enjeu qu'en
+              tournoi ? La réflexion devient utile quand elle se transforme en outil concret d'observation de soi.
+            </p>
+            <p>
+              Enfin, réfléchir signifie créer du lien entre les domaines. Les échecs ne vivent pas dans une bulle fermée. Ils touchent
+              la psychologie, l'éducation, les sciences cognitives, la sociologie, parfois même la philosophie morale. Cette richesse
+              mérite mieux qu'une approche monocorde. Nous essayons donc de croiser les perspectives, de faire dialoguer des auteurs,
+              des études, des expériences de terrain et des vécus de joueurs. Cette méthode demande plus d'effort, mais elle évite les
+              analyses plates. C'est exactement cette ambition que nous mettons derrière le mot \"réflexion\" : aller au fond sans
+              perdre le sens, et penser les échecs comme un laboratoire vivant de l'esprit humain.
+            </p>
+          </div>
+        </details>
+
+        <details class="principle">
+          <summary>
+            <strong>Clarté</strong>
+            <span>Cliquer pour lire notre vision complète</span>
+          </summary>
+          <div class="principle-body">
+            <p>
+              La clarté est une forme de respect. Quand un lecteur arrive sur un article, il nous accorde son temps, son attention
+              et une part de sa confiance. Notre responsabilité est de lui rendre la lecture simple, fluide et intelligible, même
+              quand le sujet est dense. Cela ne veut pas dire simplifier au point de déformer. Cela veut dire structurer.
+              Une idée à la fois. Une progression logique. Des transitions compréhensibles. Un vocabulaire précis sans être opaque.
+              Dans un domaine où beaucoup de contenus mélangent jargon technique, argument d'autorité et phrases très longues, la
+              clarté est un engagement concret, presque une discipline.
+            </p>
+            <p>
+              Sur le plan éditorial, cette clarté passe par des textes organisés et lisibles. Nous cherchons des titres qui informent
+              vraiment, des sous-parties qui servent la pensée, des exemples qui rendent les concepts vivants. Quand nous citons un
+              auteur, une institution ou une étude, nous essayons de fournir les liens utiles pour que chacun puisse vérifier et
+              approfondir. La clarté, ici, n'est pas seulement une affaire de style : c'est une manière d'éviter le flou volontaire.
+              Si une idée peut être dite clairement, elle doit l'être clairement.
+            </p>
+            <p>
+              Sur le plan visuel, la clarté guide aussi le design du site. Un bon design n'est pas celui qui crie le plus fort, mais
+              celui qui s'efface au profit du contenu. Nous préférons des interfaces aérées, des contrastes lisibles, des repères
+              cohérents et des animations utiles plutôt que décoratives. Un lecteur ne devrait jamais se battre contre la page pour
+              trouver l'information. C'est pour cela que nous soignons la hiérarchie typographique, le sommaire, la navigation et les
+              interactions mobiles : ces détails paraissent petits, mais ils transforment réellement l'expérience de lecture.
+            </p>
+            <p>
+              La clarté implique enfin d'accepter les limites du \"tout dire\". Certains sujets méritent plusieurs articles plutôt
+              qu'un seul texte surchargé. Parfois, être clair consiste à découper un thème, à annoncer ce qu'on traite maintenant et
+              ce qu'on traitera plus tard. Cette honnêteté de périmètre évite la confusion et aide chacun à progresser étape par
+              étape. Au fond, la clarté que nous défendons est simple : permettre au lecteur de comprendre vite, de retenir longtemps,
+              et de revenir au texte avec le sentiment d'avoir réellement appris quelque chose de solide.
+            </p>
+          </div>
+        </details>
+
+        <details class="principle">
+          <summary>
+            <strong>Partage</strong>
+            <span>Cliquer pour lire notre vision complète</span>
+          </summary>
+          <div class="principle-body">
+            <p>
+              Partager, pour nous, ce n'est pas publier des contenus puis disparaître. C'est construire une conversation dans le
+              temps avec des lecteurs qui ont des parcours très différents : débutants, joueurs de club, passionnés de blitz, parents
+              d'enfants en apprentissage, entraîneurs, curieux venus par la culture ou la psychologie du jeu. Cette diversité est
+              une richesse immense, à condition de ne pas écrire comme si un seul profil existait. Nous essayons donc d'écrire de
+              façon accessible sans être simpliste, exigeante sans être excluante, et personnelle sans être fermée.
+            </p>
+            <p>
+              Le partage passe d'abord par la transmission. Une idée utile gardée pour soi ne fait progresser personne. Quand une
+              méthode d'analyse fonctionne, quand un cadre mental aide à mieux gérer les défaites, quand une lecture éclaire une
+              difficulté fréquente, nous voulons la rendre disponible. Mais transmettre ne signifie pas imposer. Nous n'écrivons pas
+              pour dire \"voici la seule bonne façon de jouer\". Nous écrivons pour proposer des repères, des pistes, des angles de
+              vue testables par chacun dans sa propre pratique.
+            </p>
+            <p>
+              Le partage, c'est aussi écouter. Les commentaires, les retours, les désaccords argumentés et les expériences de
+              lecteurs sont précieux. Ils nous obligent à reconsidérer certaines positions, à clarifier des passages ambigus, à
+              traiter des sujets que nous n'avions pas vus. Un blog vivant n'est pas un monologue. C'est un espace éditorial qui
+              s'améliore au contact de sa communauté. C'est pour cela que nous tenons à garder un ton ouvert : les lecteurs ne sont
+              pas des spectateurs passifs, ce sont des co-acteurs de la qualité du projet.
+            </p>
+            <p>
+              Enfin, partager signifie rester utile dans la durée. Les contenus ne doivent pas servir uniquement l'instant ou
+              l'algorithme du moment. Nous voulons que ce blog puisse être relu dans six mois, dans un an, avec encore de la valeur.
+              Cela suppose d'écrire des textes qui vont au-delà de l'actualité immédiate, qui donnent des outils de compréhension
+              transférables et qui respectent l'intelligence du lecteur. C'est notre définition du partage : mettre en commun ce que
+              nous apprenons, en gardant une exigence de fond, une chaleur humaine réelle et le plaisir simple de penser ensemble un
+              jeu qui nous passionne tous.
+            </p>
+          </div>
+        </details>
+      </div>
+
+      <div class="contact-note reveal">
+        <span class="eyebrow">Contact</span>
+        <p>
+          Pour toute question, demande ou discussion, tu peux me contacter à l'adresse suivante :
+          <a href="mailto:contact@blogdungaucher.com" style="color: var(--green); font-weight: 500;">contact@blogdungaucher.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .about { padding: 4.5rem 0 5rem; }
+
+  .about-hero {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-lg);
+    image-rendering: pixelated;
+    flex-shrink: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .about-avatar {
+      animation: none;
+    }
+  }
+
+  .about h1 {
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    margin: 0.5rem 0 1rem;
+  }
+  .green { color: var(--green); }
+
+  .about-lead {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 36rem;
+    line-height: 1.75;
+    margin-bottom: 2.5rem;
+  }
+
+  .principles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+    max-width: 54rem;
+  }
+
+  .principle {
+    padding: 0;
+    border-radius: var(--radius-lg);
+    border: 1.5px solid var(--border-soft);
+    background: var(--surface);
+    transition: border-color 180ms ease, transform 220ms var(--ease-spring), box-shadow 220ms ease;
+  }
+  .principle:hover {
+    border-color: var(--green-border);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .principle summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.1rem 1.2rem;
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .principle summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .principle summary strong {
+    display: inline-block;
+    color: var(--green);
+    font-family: var(--font-display);
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+  }
+
+  .principle summary span {
+    color: var(--text-dim);
+    font-size: 0.84rem;
+    line-height: 1.4;
+  }
+
+  .principle[open] summary {
+    border-bottom: 1px solid var(--border-soft);
+    background: color-mix(in srgb, var(--green) 4%, var(--surface));
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+  }
+
+  .principle-body {
+    padding: 1rem 1.2rem 1.15rem;
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .principle-body p {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.78;
+  }
+
+  .contact-note {
+    max-width: 36rem;
+    padding: 1.2rem 1.3rem;
+    border-radius: var(--radius-lg);
+    border: 1.5px solid var(--border-soft);
+    background: var(--surface);
+    display: grid;
+    gap: 0.5rem;
+  }
+  .contact-note p { color: var(--text-muted); font-size: 0.92rem; }
+
+  @media (max-width: 640px) {
+    .principle summary {
+      padding: 1rem 1rem;
+    }
+    .principle-body {
+      padding: 0.92rem 1rem 1.02rem;
+      gap: 0.82rem;
+    }
+    .principle-body p {
+      font-size: 0.92rem;
+      line-height: 1.72;
+    }
+  }
+</style>
