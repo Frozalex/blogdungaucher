@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 
 import { siteConfig, staticRoutes } from "../data/site";
-import { getAllPosts, getPostUrl } from "../utils/blog";
+import { getAllPosts, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
 
 const langs: SiteLang[] = ["fr", "en", "de"];
@@ -31,13 +31,17 @@ export const GET: APIRoute = async () => {
       .map((frPath) => {
         const loc = absolute(frPath);
         const lastmod = lastmodFor(frPath);
-        const alternates = langs
-          .map((lang) => {
-            const href = absolute(swapLangPrefix(frPath, lang));
-            const hreflang = lang;
-            return `<xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}"/>`;
-          })
-          .join("\n          ");
+        const post = posts.find((p) => getPostUrl(p) === frPath);
+        const frenchOnly = post ? isFrenchOnlyPost(post) : false;
+        const alternates = frenchOnly
+          ? `<xhtml:link rel="alternate" hreflang="fr" href="${loc}"/>`
+          : langs
+              .map((lang) => {
+                const href = absolute(swapLangPrefix(frPath, lang));
+                const hreflang = lang;
+                return `<xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}"/>`;
+              })
+              .join("\n          ");
         const xDefault = `<xhtml:link rel="alternate" hreflang="x-default" href="${loc}"/>`;
         return `
         <url>

@@ -10,12 +10,15 @@ import { categoryMap, categorySlugs } from "../../../data/site";
 import {
   buildBreadcrumbJsonLd,
   buildWebsiteJsonLd,
+  filterPostsForLang,
   getAllPosts,
   getBlogIndexPagePath,
 } from "../../../utils/blog";
 
+const listingCategorySlugs = categorySlugs.filter((s) => s !== "grand-oral");
+
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  const posts = await getAllPosts();
+  const posts = filterPostsForLang(await getAllPosts(), "en");
   return paginate(posts, { pageSize: 9 });
 }
 
@@ -49,7 +52,7 @@ const structuredData = isFirstPage
   : undefined;
 
 const canonicalPath = isFirstPage ? "/en/blog/" : `/en/blog/${page.currentPage}/`;
-const frCanonicalPath = isFirstPage ? "/blog/" : `/blog/${page.currentPage}/`;
+const frCanonicalPath = getBlogIndexPagePath("fr", page.currentPage);
 ---
 <BaseLayout
   title={isFirstPage ? "All articles | A Left-Hander's Blog" : `Articles — page ${page.currentPage} | A Left-Hander's Blog`}
@@ -72,7 +75,7 @@ const frCanonicalPath = isFirstPage ? "/blog/" : `/blog/${page.currentPage}/`;
         <button class="chip is-active" type="button" data-filter-category="all" data-t="blog.filterAll">
           All
         </button>
-        {categorySlugs.map((slug) => (
+        {listingCategorySlugs.map((slug) => (
           <button type="button" class="chip" data-filter-category={slug} style={`--c:${categoryMap[slug].accent}`} data-t={`categories.${slug}.label`}>
             {categoryMap[slug].label}
           </button>

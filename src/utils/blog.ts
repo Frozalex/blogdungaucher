@@ -53,9 +53,26 @@ export async function getPostsByCategory(category: CategorySlug) {
   return posts.filter((post) => post.data.category === category);
 }
 
-export async function getLatestPosts(limit: number) {
+/** Rubrique « Grand oral » : contenu uniquement en français (pas de pages EN/DE). */
+export function isFrenchOnlyPost(post: BlogEntry): boolean {
+  return post.data.category === "grand-oral";
+}
+
+export function filterPostsForLang(
+  posts: BlogEntry[],
+  lang: "fr" | "en" | "de",
+): BlogEntry[] {
+  if (lang === "fr") return posts;
+  return posts.filter((p) => !isFrenchOnlyPost(p));
+}
+
+export async function getLatestPosts(
+  limit: number,
+  lang: "fr" | "en" | "de" = "fr",
+) {
   const posts = await getAllPosts();
-  return posts.slice(0, limit);
+  const list = filterPostsForLang(posts, lang);
+  return list.slice(0, limit);
 }
 
 export function getPostSlug(post: BlogEntry) {

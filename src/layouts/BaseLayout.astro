@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import BackToTop from "../components/BackToTop.astro";
@@ -27,6 +28,7 @@ const {
   frPath,
   enPath,
   dePath,
+  omitEnDeAlternateLinks = false,
 } = Astro.props as {
   title?: string;
   description?: string;
@@ -45,6 +47,8 @@ const {
   enPath?: string;
   /** Chemin DE optionnel (sinon dérivé du canonical via swapLangPrefix). */
   dePath?: string;
+  /** Articles FR uniquement (ex. Grand oral) : pas d’hreflang en/de vers des URLs inexistantes. */
+  omitEnDeAlternateLinks?: boolean;
 };
 
 const resolvedFrPath = frPath ?? swapLangPrefix(canonicalPath, "fr");
@@ -292,11 +296,21 @@ const structuredDataItems = structuredData
     )}
 
     <title>{title}</title>
+    <ClientRouter />
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="alternate" hrefLang="fr" href={frCanonicalUrl} />
-    <link rel="alternate" hrefLang="en" href={enCanonicalUrl} />
-    <link rel="alternate" hrefLang="de" href={deCanonicalUrl} />
-    <link rel="alternate" hrefLang="x-default" href={frCanonicalUrl} />
+    {omitEnDeAlternateLinks ? (
+      <>
+        <link rel="alternate" hrefLang="fr" href={frCanonicalUrl} />
+        <link rel="alternate" hrefLang="x-default" href={frCanonicalUrl} />
+      </>
+    ) : (
+      <>
+        <link rel="alternate" hrefLang="fr" href={frCanonicalUrl} />
+        <link rel="alternate" hrefLang="en" href={enCanonicalUrl} />
+        <link rel="alternate" hrefLang="de" href={deCanonicalUrl} />
+        <link rel="alternate" hrefLang="x-default" href={frCanonicalUrl} />
+      </>
+    )}
     <link rel="alternate" type="application/rss+xml" title={`${siteConfig.name} RSS`} href={`${siteConfig.siteUrl}/rss.xml`} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
@@ -496,13 +510,5 @@ const structuredDataItems = structuredData
       document.addEventListener("astro:page-load", initReveal);
     </script>
 
-    <!-- ── Dispatch astro:page-load pour les sites statiques sans ViewTransitions ── -->
-    <script is:inline>
-      // Les scripts type="module" (deferred) s'exécutent AVANT DOMContentLoaded.
-      // En attendant ce déclencheur, tous les listeners astro:page-load sont enregistrés.
-      document.addEventListener("DOMContentLoaded", function () {
-        document.dispatchEvent(new Event("astro:page-load", { bubbles: false }));
-      });
-    </script>
   </body>
 </html>

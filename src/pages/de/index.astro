@@ -7,7 +7,7 @@ import { categoryMap, categorySlugs } from "../../data/site";
 import { buildWebsiteJsonLd, getLatestPosts } from "../../utils/blog";
 import { swapLangPrefix } from "../../utils/lang-paths";
 
-const latestPosts = await getLatestPosts(5);
+const latestPosts = await getLatestPosts(5, "de");
 ---
 <BaseLayout
   title="Blog d'un Gaucher"

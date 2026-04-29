@@ -6,7 +6,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { categoryMap, categorySlugs } from "../../data/site";
 import { buildWebsiteJsonLd, getLatestPosts } from "../../utils/blog";
 
-const latestPosts = await getLatestPosts(5);
+const latestPosts = await getLatestPosts(5, "fr");
 ---
 <BaseLayout
   title="Blog d'un Gaucher"

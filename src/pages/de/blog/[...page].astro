@@ -10,12 +10,15 @@ import { categoryMap, categorySlugs } from "../../../data/site";
 import {
   buildBreadcrumbJsonLd,
   buildWebsiteJsonLd,
+  filterPostsForLang,
   getAllPosts,
   getBlogIndexPagePath,
 } from "../../../utils/blog";
 
+const listingCategorySlugs = categorySlugs.filter((s) => s !== "grand-oral");
+
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  const posts = await getAllPosts();
+  const posts = filterPostsForLang(await getAllPosts(), "de");
   return paginate(posts, { pageSize: 9 });
 }
 
@@ -71,7 +74,7 @@ const structuredData = isFirstPage
         <button class="chip is-active" type="button" data-filter-category="all" data-t="blog.filterAll">
           Alle
         </button>
-        {categorySlugs.map((slug) => (
+        {listingCategorySlugs.map((slug) => (
           <button type="button" class="chip" data-filter-category={slug} style={`--c:${categoryMap[slug].accent}`} data-t={`categories.${slug}.label`}>
             {categoryMap[slug].label}
           </button>

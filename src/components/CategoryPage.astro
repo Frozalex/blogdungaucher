@@ -4,12 +4,19 @@ import AdBanner from "./AdBanner.astro";
 import ArticleCard from "./ArticleCard.astro";
 
 import { categoryMap, type CategorySlug } from "../data/site";
-import { buildBreadcrumbJsonLd, getPostsByCategory } from "../utils/blog";
+import {
+  buildBreadcrumbJsonLd,
+  filterPostsForLang,
+  getPostsByCategory,
+} from "../utils/blog";
 import { swapLangPrefix, type SiteLang } from "../utils/lang-paths";
 
 const { category, lang = "fr" } = Astro.props as { category: CategorySlug; lang?: SiteLang };
 const meta = categoryMap[category];
-const posts = await getPostsByCategory(category);
+const posts = filterPostsForLang(
+  await getPostsByCategory(category),
+  lang,
+);
 const hero = posts.find((p) => p.data.featured) ?? posts[0];
 const rest = posts.filter((p) => p.id !== hero?.id);
 

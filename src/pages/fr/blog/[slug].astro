@@ -43,6 +43,7 @@ const related = allPosts
 
 const postUrl = getPostUrl(post);
 const postUrlEn = getPostUrlEn(post);
+const grandOralOnly = post.data.category === "grand-oral";
 const absolutePostUrl = absoluteUrl(postUrl);
 
 const faqs = post.data.faq ?? [];
@@ -74,8 +75,9 @@ const otherPillars = categorySlugs
   structuredData={structuredData}
   accentColor={category.accent}
   tags={post.data.tags}
-  enPath={postUrlEn}
-  dePath={getPostUrlDe(post)}
+  enPath={grandOralOnly ? "/en/blog/" : postUrlEn}
+  dePath={grandOralOnly ? "/de/blog/" : getPostUrlDe(post)}
+  omitEnDeAlternateLinks={grandOralOnly}
 >
   <article class="article-page" style={`--c:${category.accent}`}>
     <div class="reading-progress" aria-hidden="true">

@@ -17,6 +17,7 @@ import {
   buildFaqJsonLd,
   calculateReadingTime,
   formatDate,
+  filterPostsForLang,
   getAllPosts,
   getPostSlug,
   getPostUrl,
@@ -27,7 +28,7 @@ import { swapLangPrefix } from "../../../utils/lang-paths";
 import FAQ from "../../../components/FAQ.astro";
 
 export async function getStaticPaths() {
-  const posts = await getAllPosts();
+  const posts = filterPostsForLang(await getAllPosts(), "en");
   return posts.map((post) => ({ params: { slug: getPostSlug(post) }, props: { post } }));
 }
 
