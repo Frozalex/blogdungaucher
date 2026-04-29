@@ -1,4 +1,4 @@
-import "chessboard-element";
+﻿import "chessboard-element";
 import { Chess } from "chess.js";
 
 declare global {
@@ -78,11 +78,11 @@ function initAnalysisPage() {
     if (dot) dot.style.background = isWhite ? "#fff" : "#222";
     if (text) text.textContent = isWhite ? "Trait aux Blancs" : "Trait aux Noirs";
     if (chess.isCheckmate()) {
-      if (text) text.textContent = isWhite ? "Mat — les Noirs gagnent" : "Mat — les Blancs gagnent";
+      if (text) text.textContent = isWhite ? "Mat - les Noirs gagnent" : "Mat - les Blancs gagnent";
     } else if (chess.isDraw()) {
       if (text) text.textContent = "Partie nulle";
     } else if (chess.isCheck()) {
-      if (text) text.textContent += " — Échec !";
+      if (text) text.textContent += " - Échec !";
     }
   };
 
@@ -296,7 +296,7 @@ function initAnalysisPage() {
       chess.load(test.fen());
     }
     syncBoard();
-    setStatus(`Position chargée — ${replayMoves.length ? replayMoves.length + " coups" : "FEN"}.`);
+    setStatus(`Position chargée - ${replayMoves.length ? replayMoves.length + " coups" : "FEN"}.`);
   };
 
   const onDrop = (event: any) => {

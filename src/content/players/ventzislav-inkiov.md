@@ -1,5 +1,5 @@
----
-title: "Ventzislav Inkiov — L’avantage du joueur ‘difficile à battre’"
+﻿---
+title: "Ventzislav Inkiov - L’avantage du joueur ‘difficile à battre’"
 excerpt: "Inkiov est une bonne fiche pour parler d’un concept simple: dans la vraie vie, une partie se gagne souvent parce que l’autre se fatigue."
 
 firstName: "Ventzislav"
@@ -11,7 +11,7 @@ nationality: "Bulgare"
 era: "moderne"
 style: ["defenseur", "pragmatique", "positionnel"]
 
-angleHook: "Angle: le ‘joueur dur’ (hypothèse) — pas spectaculaire, mais fiable. La fiche devient une leçon sur la rentabilité de la solidité."
+angleHook: "Angle: le ‘joueur dur’ (hypothèse) - pas spectaculaire, mais fiable. La fiche devient une leçon sur la rentabilité de la solidité."
 surprisingFact: "Il a remporté le championnat de Bulgarie en 1982."
 
 iconicGame:

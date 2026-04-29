@@ -1,5 +1,5 @@
----
-title: "Kayden Troff — Le prodige qui mise sur la structure"
+﻿---
+title: "Kayden Troff - Le prodige qui mise sur la structure"
 excerpt: "Troff rappelle que la ‘précocité’ n’est pas seulement tactique: elle peut être méthodique."
 
 firstName: "Kayden"

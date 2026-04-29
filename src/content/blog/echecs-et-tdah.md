@@ -1,4 +1,4 @@
----
+﻿---
 title: "Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue"
 excerpt: "Le TDAH n'est pas un déficit d'attention : c'est une attention inconsistante. L'échiquier crée les rares conditions où ce cerveau trouve naturellement son point d'ancrage."
 publishDate: "2026-05-28"
@@ -11,9 +11,9 @@ tags: ["échecs TDAH", "TDAH enfant", "attention", "hyperactivité", "neurodiver
 seoTitle: "Échecs et TDAH : pourquoi l'échiquier capte l'attention que l'école ne retient pas"
 seoDescription: "Le TDAH n'est pas un manque d'attention : c'est une attention irrégulière. Pourquoi l'échiquier crée exactement les conditions où le cerveau TDAH s'ancre naturellement. Ce que dit la recherche, et comment adapter la pratique."
 titleEn: "Chess and ADHD: Why the Chessboard Captures the Attention Everything Else Fails to Hold"
-excerptEn: "ADHD isn't an attention deficit — it's inconsistent attention. The chessboard creates the rare conditions where this brain naturally finds its anchor point."
+excerptEn: "ADHD isn't an attention deficit - it's inconsistent attention. The chessboard creates the rare conditions where this brain naturally finds its anchor point."
 seoTitleEn: "Chess and ADHD: The Chessboard Captures the Attention School Cannot Hold"
-seoDescriptionEn: "ADHD isn't a lack of attention — it's irregular attention. Why the chessboard creates exactly the right conditions for the ADHD brain to anchor itself. What research says and how to adapt the practice."
+seoDescriptionEn: "ADHD isn't a lack of attention - it's irregular attention. Why the chessboard creates exactly the right conditions for the ADHD brain to anchor itself. What research says and how to adapt the practice."
 ---
 
 Luca a 10 ans. Son enseignante dit qu'il est incapable de rester concentré plus de deux minutes. Il n'écoute pas, il dérange, il finit rarement un exercice. Ses parents ont essayé les cours de soutien, les activités sportives, la lecture à voix haute. Rien ne tient.

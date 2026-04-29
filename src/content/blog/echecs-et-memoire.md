@@ -1,4 +1,4 @@
----
+﻿---
 title: "Les échecs et la mémoire : comment le cerveau encode 100 000 positions"
 excerpt: "Un grand maître retient 100 000 configurations d'échiquier mais oublie où il a posé ses clés. Ce paradoxe a une explication précise, et elle change la façon dont on devrait s'entraîner."
 publishDate: "2026-05-14"
@@ -11,7 +11,7 @@ tags: ["échecs mémoire", "chunks", "Chase Simon", "Gobet", "mémoire de travai
 seoTitle: "Échecs et mémoire : comment le cerveau mémorise 100 000 positions (science)"
 seoDescription: "Comment un grand maître mémorise 100 000 positions d'échecs sans avoir une mémoire exceptionnelle ? La théorie des chunks de Chase et Simon explique ce paradoxe, et change radicalement l'entraînement."
 titleEn: "Chess and Memory: How the Brain Encodes 100,000 Positions"
-excerptEn: "A grandmaster remembers 100,000 chess configurations but forgets where they left their keys. This paradox has a precise explanation — and it changes the way you should train."
+excerptEn: "A grandmaster remembers 100,000 chess configurations but forgets where they left their keys. This paradox has a precise explanation - and it changes the way you should train."
 seoTitleEn: "Chess and Memory: How the Brain Memorises 100,000 Positions"
 seoDescriptionEn: "How does a grandmaster memorise 100,000 positions without exceptional memory? Chase and Simon's chunk theory explains this paradox and radically changes how you should train."
 ---

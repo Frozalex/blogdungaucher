@@ -1,5 +1,5 @@
----
-title: "Ni Hua — La force de l’équipe"
+﻿---
+title: "Ni Hua - La force de l’équipe"
 excerpt: "Ni Hua est une fiche ‘collective’: champion national, capitaine, et joueur de niveau élite. Un bon angle: comment une équipe se construit."
 
 firstName: "Ni"

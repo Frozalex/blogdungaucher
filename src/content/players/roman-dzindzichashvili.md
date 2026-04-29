@@ -1,5 +1,5 @@
----
-title: "Roman Dzindzichashvili — L’art de survivre aux époques"
+﻿---
+title: "Roman Dzindzichashvili - L’art de survivre aux époques"
 excerpt: "Un parcours rare: plusieurs fédérations, plusieurs scènes, et une carrière longue. La leçon n’est pas romantique: elle est adaptable."
 
 firstName: "Roman"
@@ -11,7 +11,7 @@ nationality: "Soviétique (puis Israël, puis États-Unis)"
 era: "sovietique"
 style: ["pragmatique", "positionnel", "defenseur"]
 
-angleHook: "Lecture (hypothèse): son style ‘pro’ ressemble à une compétence de survie — minimiser les risques inutiles, et gagner quand l’occasion est réelle."
+angleHook: "Lecture (hypothèse): son style ‘pro’ ressemble à une compétence de survie - minimiser les risques inutiles, et gagner quand l’occasion est réelle."
 surprisingFact: "Il a remporté le Hastings Chess Festival 1977/1978 (performance marquante)."
 
 iconicGame:

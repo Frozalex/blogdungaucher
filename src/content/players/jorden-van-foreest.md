@@ -1,5 +1,5 @@
----
-title: "Jorden van Foreest — Comment un “outsider” gagne le Wimbledon des échecs"
+﻿---
+title: "Jorden van Foreest - Comment un “outsider” gagne le Wimbledon des échecs"
 excerpt: "En 2021, il gagne Tata Steel contre des super-GM. Pas en jouant plus compliqué: en jouant plus libre, plus sain, et en gardant une énergie rare sur 13 rondes."
 
 firstName: "Jorden"
@@ -63,7 +63,7 @@ Dans un tournoi long, il y a un piège classique: vouloir “marquer” trop tô
 
 ### 2) Les moments de risque
 
-Quand il attaque, ce n’est pas parce que “c’est son style” — c’est parce que la position l’autorise. Le bon signe, c’est que ses risques produisent souvent une chose: **des problèmes pratiques** pour l’adversaire. Pas forcément une évaluation “+2”, mais des décisions difficiles sous contrainte de temps.
+Quand il attaque, ce n’est pas parce que “c’est son style” - c’est parce que la position l’autorise. Le bon signe, c’est que ses risques produisent souvent une chose: **des problèmes pratiques** pour l’adversaire. Pas forcément une évaluation “+2”, mais des décisions difficiles sous contrainte de temps.
 
 ### 3) Le départage (la vraie photo)
 
@@ -78,5 +78,5 @@ Van Foreest est une excellente étude si tu as tendance à alterner “trop prud
 - **Cherche des problèmes pratiques**: la meilleure position n’est pas toujours celle que Stockfish adore; c’est souvent celle où l’adversaire doit faire des choix précis.
 - **Joue simple sous stress**: simple ne veut pas dire faible. Simple veut dire: objectifs clairs, pièces coordonnées, pas de “coup pour le coup”.
 
-La leçon de Jorden van Foreest, au fond, c’est qu’un outsider ne gagne pas forcément en étant plus “génial” — il gagne en étant plus constant, plus libre, et plus intelligent dans ses risques.
+La leçon de Jorden van Foreest, au fond, c’est qu’un outsider ne gagne pas forcément en étant plus “génial” - il gagne en étant plus constant, plus libre, et plus intelligent dans ses risques.
 

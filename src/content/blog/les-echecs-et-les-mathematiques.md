@@ -1,4 +1,4 @@
----
+﻿---
 title: "Les échecs rendent-ils meilleur en maths ? La vérité scientifique"
 excerpt: "Jouer aux échecs te rend bon en maths ? La réponse n'est pas celle que tu attends, et elle change radicalement ce que tu devrais faire avec un échiquier."
 publishDate: "2026-04-02"
@@ -11,9 +11,9 @@ tags: ["échecs", "mathématiques", "science", "métacognition", "calcul", "rés
 seoTitle: "Échecs et mathématiques : quel est le vrai lien ?"
 seoDescription: "Les échecs rendent-ils meilleur en maths ? Ce que les méta-analyses disent vraiment sur ce lien et comment en tirer parti."
 titleEn: "Does Chess Make You Better at Maths? The Scientific Truth"
-excerptEn: "Playing chess makes you good at maths? The answer isn't what you'd expect — and it radically changes what you should do with a chessboard."
+excerptEn: "Playing chess makes you good at maths? The answer isn't what you'd expect - and it radically changes what you should do with a chessboard."
 seoTitleEn: "Chess and Mathematics: What Is the Real Connection?"
-seoDescriptionEn: "Does chess make you better at maths? What meta-analyses actually say — and why the answer changes how you should really use a chessboard."
+seoDescriptionEn: "Does chess make you better at maths? What meta-analyses actually say - and why the answer changes how you should really use a chessboard."
 ---
 
 Il n’y a pas un seul chiffre sur un échiquier. Aucune équation à résoudre. Un Grand Maître n’est pas nécessairement capable de calculer une intégrale plus vite que toi. Et pourtant, l’idée que « les échecs rendent bon en maths » est répétée dans les écoles, les clubs périscolaires et les arguments d’admission depuis des décennies - comme si les 64 cases implantaient des formules algébriques dans le cerveau par simple contact.

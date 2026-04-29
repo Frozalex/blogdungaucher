@@ -1,5 +1,5 @@
----
-title: "László Polgár — Le paradoxe du père qui fabrique des génies"
+﻿---
+title: "László Polgár - Le paradoxe du père qui fabrique des génies"
 excerpt: "Il n’était pas un champion du monde. Il a fait quelque chose de plus rare: transformer l’entraînement en système et prouver que la “précocité” peut être construite."
 
 firstName: "László"
@@ -12,7 +12,7 @@ era: "moderne"
 style: ["strategue", "pragmatique"]
 
 angleHook: "Polgár n’a pas cherché à convaincre par des discours: il a construit une expérience. Son approche révèle une personnalité: obsession de méthode, goût de la preuve, et une vision radicale de l’éducation."
-surprisingFact: "Son idée centrale est contre-intuitive: le talent n’est pas un préalable, c’est un résultat. Il a appliqué cette idée à la lettre — et le monde a dû regarder les résultats."
+surprisingFact: "Son idée centrale est contre-intuitive: le talent n’est pas un préalable, c’est un résultat. Il a appliqué cette idée à la lettre - et le monde a dû regarder les résultats."
 
 iconicGame:
   title: "Une “partie” emblématique… qui n’est pas sur l’échiquier"
@@ -33,7 +33,7 @@ László Polgár n’est pas célèbre parce qu’il a joué la plus belle attaq
 
 > **Le génie n’est pas (principalement) un don. C’est une construction.**
 
-Le fait surprenant, c’est qu’il n’a pas défendu cette thèse avec des articles abstraits. Il l’a défendue avec une expérience grandeur nature: élever ses enfants dans un cadre d’apprentissage intensif — et obtenir des résultats que personne ne pouvait balayer d’un revers de main.
+Le fait surprenant, c’est qu’il n’a pas défendu cette thèse avec des articles abstraits. Il l’a défendue avec une expérience grandeur nature: élever ses enfants dans un cadre d’apprentissage intensif - et obtenir des résultats que personne ne pouvait balayer d’un revers de main.
 
 ## Biographie essentielle (3 paragraphes)
 
@@ -66,7 +66,7 @@ En pratique, beaucoup de méthodes modernes (même chez des joueurs qui ne le ci
 La “partie” emblématique de Polgár, c’est une séquence de décisions éducatives.
 
 1. **Choisir un domaine** où l’excellence est mesurable (aux échecs, on a un Elo, des tournois, des parties).
-2. **Créer un environnement** où l’apprentissage est quotidien, normal, non négociable — mais aussi structuré.
+2. **Créer un environnement** où l’apprentissage est quotidien, normal, non négociable - mais aussi structuré.
 3. **Accumuler des briques**: tactique, finales, plans simples, puis complexité.
 4. **Répéter + corriger**: la compétition révèle les failles, l’étude les répare.
 
@@ -81,5 +81,5 @@ Même si tu n’adhères pas à tout, Polgár te donne des outils actionnables.
 - **Mesure**: joue des parties, note ce qui te fait perdre, puis reviens dessus.
 - **Rends la progression banale**: ce qui progresse vraiment, c’est ce qui est répété.
 
-La leçon la plus contre-intuitive de Polgár est peut-être la plus libératrice: **si le talent est en partie construit, alors l’espoir n’est pas une émotion — c’est une stratégie.**
+La leçon la plus contre-intuitive de Polgár est peut-être la plus libératrice: **si le talent est en partie construit, alors l’espoir n’est pas une émotion - c’est une stratégie.**
 

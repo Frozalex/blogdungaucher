@@ -1,5 +1,5 @@
----
-title: "Matthew Sadler — Le sérieux ‘sans rigidité’"
+﻿---
+title: "Matthew Sadler - Le sérieux ‘sans rigidité’"
 excerpt: "Sadler est un modèle d’efficacité: très fort, très clair, et capable d’expliquer. Une fiche parfaite pour relier jeu et compréhension."
 
 firstName: "Matthew"

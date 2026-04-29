@@ -1,4 +1,4 @@
----
+﻿---
 import type { GetStaticPathsOptions, Page } from "astro";
 import type { BlogEntry } from "../../../utils/blog";
 
@@ -53,7 +53,7 @@ const structuredData = isFirstPage
   : undefined;
 ---
 <BaseLayout
-  title={isFirstPage ? "Tous les articles | Blog d'un Gaucher" : `Articles — page ${page.currentPage} | Blog d'un Gaucher`}
+  title={isFirstPage ? "Tous les articles | Blog d'un Gaucher" : `Articles - page ${page.currentPage} | Blog d'un Gaucher`}
   description="La bibliothèque complète : science, esprit, société et analyses."
   canonicalPath={isFirstPage ? "/fr/blog/" : `/fr/blog/${page.currentPage}/`}
   noindex={!isFirstPage}

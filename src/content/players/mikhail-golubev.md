@@ -1,5 +1,5 @@
----
-title: "Mikhail Golubev — Le GM qui écrit comme il joue"
+﻿---
+title: "Mikhail Golubev - Le GM qui écrit comme il joue"
 excerpt: "Golubev est un bon profil pour ton site: un joueur + un auteur, donc une passerelle entre pratique et explication."
 
 firstName: "Mikhail"

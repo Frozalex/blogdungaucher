@@ -1,5 +1,5 @@
----
-title: "Eric Lobron — La précision sans théâtre"
+﻿---
+title: "Eric Lobron - La précision sans théâtre"
 excerpt: "Un style qui rappelle qu’on peut gagner sans ‘histoire’: en jouant simplement les coups qui réduisent les options adverses."
 
 firstName: "Eric"
@@ -11,7 +11,7 @@ nationality: "Allemand (né aux États-Unis)"
 era: "moderne"
 style: ["positionnel", "pragmatique", "defenseur"]
 
-angleHook: "Lecture (hypothèse): Lobron est un joueur de clarté — peu de concessions, des décisions propres, et une tendance à ‘faire jouer’ l’adversaire dans un couloir étroit."
+angleHook: "Lecture (hypothèse): Lobron est un joueur de clarté - peu de concessions, des décisions propres, et une tendance à ‘faire jouer’ l’adversaire dans un couloir étroit."
 surprisingFact: "Il a été champion d’Allemagne à deux reprises."
 
 iconicGame:

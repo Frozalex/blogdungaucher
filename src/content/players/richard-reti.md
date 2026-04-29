@@ -1,5 +1,5 @@
----
-title: "Richard Réti — Gagner en laissant l’autre ‘trop prendre’"
+﻿---
+title: "Richard Réti - Gagner en laissant l’autre ‘trop prendre’"
 excerpt: "Réti est parfait pour raconter l’hypermodernisme: laisser le centre, puis l’attaquer. Une psychologie de piège… mais logique."
 
 firstName: "Richard"
@@ -29,7 +29,7 @@ seoDescription: "Portrait de Richard Réti : faits essentiels, angle hypermodern
 
 ## Fiche (faits)
 
-- **Né**: 28 mai 1889 — **mort**: 6 juin 1929  
+- **Né**: 28 mai 1889 - **mort**: 6 juin 1929  
 - **École**: hypermoderne  
 - **Repère vérifiable**: figure majeure de l’hypermodernisme, ouverture Réti
 

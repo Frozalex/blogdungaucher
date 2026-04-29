@@ -1,5 +1,5 @@
----
-title: "Lázaro Bruzón — Le talent qui refuse la panique"
+﻿---
+title: "Lázaro Bruzón - Le talent qui refuse la panique"
 excerpt: "Bruzón incarne une idée simple et utile: jouer juste et solide quand la position n’offre pas de “moment viral”."
 
 firstName: "Lázaro"

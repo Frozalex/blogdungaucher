@@ -1,5 +1,5 @@
----
-title: "Gukesh Dommaraju — Pourquoi sa maturité fait plus peur que son âge"
+﻿---
+title: "Gukesh Dommaraju - Pourquoi sa maturité fait plus peur que son âge"
 excerpt: "On parle de précocité comme d’un feu d’artifice. Chez Gukesh, c’est autre chose: une manière adulte de choisir ses risques, de supporter la pression et de convertir sans bruit."
 
 firstName: "Gukesh"
@@ -29,7 +29,7 @@ seoDescription: "Portrait de Gukesh Dommaraju : ce que son style révèle, son i
 
 ## 1 fait surprenant (accroche)
 
-La précocité fascine, mais elle ment parfois. Elle fait croire que le talent est une vitesse. Or, chez Gukesh Dommaraju, ce qui impressionne le plus n’est pas la vitesse — c’est **la maturité de décision**. Il a l’air de jouer comme quelqu’un qui sait déjà ce qu’il veut éviter: le chaos inutile, l’ego, la sur-ambition.
+La précocité fascine, mais elle ment parfois. Elle fait croire que le talent est une vitesse. Or, chez Gukesh Dommaraju, ce qui impressionne le plus n’est pas la vitesse - c’est **la maturité de décision**. Il a l’air de jouer comme quelqu’un qui sait déjà ce qu’il veut éviter: le chaos inutile, l’ego, la sur-ambition.
 
 Le fait surprenant, c’est qu’on peut regarder certaines de ses parties sans voir de “moments TikTok”… et sentir quand même une domination. Comme si le match était gagné par une série de choix adultes: réduire les risques, maintenir la pression, puis convertir.
 
@@ -39,7 +39,7 @@ Né le 29 mai 2006 en Inde, Gukesh appartient à une génération qui grandit da
 
 Son ascension est évidemment précoce, mais ce qui la rend intéressante pour ton blog n’est pas le chiffre. C’est la forme: il ne gagne pas seulement parce qu’il calcule; il gagne parce qu’il **choisit**. Il choisit quand forcer, quand patienter, quand simplifier, quand garder la tension.
 
-Et cette capacité produit un effet étrange sur l’adversaire. Contre un jeune, on espère souvent “qu’il s’emporte”. Contre Gukesh, l’adversaire sent parfois que l’emportement ne viendra pas — et que la partie va durer longtemps, dans une zone où la moindre imprécision compte.
+Et cette capacité produit un effet étrange sur l’adversaire. Contre un jeune, on espère souvent “qu’il s’emporte”. Contre Gukesh, l’adversaire sent parfois que l’emportement ne viendra pas - et que la partie va durer longtemps, dans une zone où la moindre imprécision compte.
 
 ## Sa contribution unique aux échecs
 
@@ -75,5 +75,5 @@ Même si tu n’as pas son niveau, tu peux copier ses principes.
 - **Apprends à convertir**: beaucoup de joueurs savent obtenir un avantage; peu savent le rendre inévitable.
 - **Sois “adulte” sous stress**: l’objectif n’est pas de briller, c’est de gagner.
 
-Gukesh rappelle une vérité simple: aux échecs, la précocité la plus dangereuse n’est pas celle qui calcule vite — c’est celle qui **décide bien**.
+Gukesh rappelle une vérité simple: aux échecs, la précocité la plus dangereuse n’est pas celle qui calcule vite - c’est celle qui **décide bien**.
 

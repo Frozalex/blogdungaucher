@@ -1,5 +1,5 @@
----
-title: "Juan Manuel Bellón López — Le champion national ‘sans bruit’"
+﻿---
+title: "Juan Manuel Bellón López - Le champion national ‘sans bruit’"
 excerpt: "Un profil utile pour comprendre la valeur d’un jeu stable: titres nationaux, longévité, et une carrière construite sur la répétition."
 
 firstName: "Juan Manuel"
@@ -11,7 +11,7 @@ nationality: "Espagnol (puis Suède)"
 era: "moderne"
 style: ["pragmatique", "positionnel", "universel"]
 
-angleHook: "Lecture (hypothèse): Bellón représente une force ‘de championnat’ — gagner souvent contre plus faible, et rester solide contre plus fort."
+angleHook: "Lecture (hypothèse): Bellón représente une force ‘de championnat’ - gagner souvent contre plus faible, et rester solide contre plus fort."
 surprisingFact: "Il a été champion d’Espagne à cinq reprises."
 
 iconicGame:

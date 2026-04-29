@@ -1,4 +1,4 @@
----
+﻿---
 title: "Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même"
 excerpt: >-
   L'arbre des coups explose, le nombre de Shannon donne le vertige, et pourtant
@@ -14,7 +14,7 @@ pillar: "Informatique"
 tags: ["échecs", "mathématiques", "complexité", "nombre de Shannon", "arbre des coups", "minimax", "alpha-bêta", "moteur d'échecs", "IA", "Stockfish"]
 seoTitle: "Échecs et IA : résoudre le problème mathématique impossible"
 seoDescription: "Les échecs sont-ils solvables mathématiquement ? Découvrez comment l'IA a révolutionné le jeu et pourquoi les moteurs battent les humains à tous les coups."
-titleEn: "Why Chess is a (Nearly) Impossible Mathematical Problem — and How AI Solves it Anyway"
+titleEn: "Why Chess is a (Nearly) Impossible Mathematical Problem - and How AI Solves it Anyway"
 excerptEn: "The game tree explodes, Shannon's number is staggering, yet an engine corrects you in seconds. Is chess really 'unsolvable'? Here's what maths, computer science and AI actually do under the hood."
 seoTitleEn: "Chess and AI: Solving the Mathematical Impossible"
 seoDescriptionEn: "Is chess mathematically solvable? Discover how AI has revolutionised the game and why engines now beat humans at every single turn."

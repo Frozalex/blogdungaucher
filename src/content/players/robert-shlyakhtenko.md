@@ -1,5 +1,5 @@
----
-title: "Robert Shlyakhtenko — La progression ‘moderne’"
+﻿---
+title: "Robert Shlyakhtenko - La progression ‘moderne’"
 excerpt: "Un IM né en 2005: une bonne fiche pour parler de la nouvelle norme du haut niveau (travail, régularité, tournois)."
 
 firstName: "Robert"
@@ -11,7 +11,7 @@ nationality: "Américain"
 era: "contemporain"
 style: ["tacticien", "pragmatique", "universel"]
 
-angleHook: "Angle: une trajectoire contemporaine (IM très jeune) permet de parler de méthode: volume, tournois, régularité — sans inventer d’anecdotes."
+angleHook: "Angle: une trajectoire contemporaine (IM très jeune) permet de parler de méthode: volume, tournois, régularité - sans inventer d’anecdotes."
 surprisingFact: "Il a obtenu le titre de Maître International (IM) en 2022."
 
 iconicGame:

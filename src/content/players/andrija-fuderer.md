@@ -1,5 +1,5 @@
----
-title: "Andrija Fuderer — Le talent ‘trop tôt’"
+﻿---
+title: "Andrija Fuderer - Le talent ‘trop tôt’"
 excerpt: "Fuderer est une fiche rare: IM très jeune, style d’attaquant, puis une vie professionnelle hors des échecs. L’impact: une trajectoire, pas une mythologie."
 
 firstName: "Andrija"
@@ -12,7 +12,7 @@ nationality: "Yougoslave (puis Belgique / Croatie)"
 era: "moderne"
 style: ["attaquant", "tacticien", "pragmatique"]
 
-angleHook: "Angle: parler d’un joueur sans inventer sa psychologie — en racontant un fait: certains talents sont très forts très tôt, puis bifurquent. Ça dit quelque chose sur la relation entre échecs et vie."
+angleHook: "Angle: parler d’un joueur sans inventer sa psychologie - en racontant un fait: certains talents sont très forts très tôt, puis bifurquent. Ça dit quelque chose sur la relation entre échecs et vie."
 surprisingFact: "Il a reçu le titre de Maître International (1952) et le titre de Grand maître honorifique (1990)."
 
 iconicGame:
@@ -29,7 +29,7 @@ seoDescription: "Portrait d’Andrija Fuderer : faits essentiels (IM, GM honorif
 
 ## Fiche (faits)
 
-- **Né**: 13 mai 1931 — **mort**: 2 octobre 2011  
+- **Né**: 13 mai 1931 - **mort**: 2 octobre 2011  
 - **Titres**: IM (1952), GM honorifique (1990)
 
 ## Angle (ce que ça permet de raconter)

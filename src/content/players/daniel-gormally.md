@@ -1,5 +1,5 @@
----
-title: "Daniel Gormally — L’intensité comme carburant"
+﻿---
+title: "Daniel Gormally - L’intensité comme carburant"
 excerpt: "Gormally est autant un joueur qu’un auteur: un profil utile pour comprendre comment penser la partie, pas seulement la jouer."
 
 firstName: "Daniel"
@@ -11,7 +11,7 @@ nationality: "Anglais"
 era: "contemporain"
 style: ["tacticien", "pragmatique", "positionnel"]
 
-angleHook: "Lecture (hypothèse): son identité publique d’auteur pousse vers un jeu ‘explicable’ — des décisions franches, des plans lisibles, et une volonté d’attaquer quand les conditions sont réunies."
+angleHook: "Lecture (hypothèse): son identité publique d’auteur pousse vers un jeu ‘explicable’ - des décisions franches, des plans lisibles, et une volonté d’attaquer quand les conditions sont réunies."
 surprisingFact: "Il a publié plusieurs livres d’échecs (analyse, calcul, attaque du roi)."
 
 iconicGame:
@@ -34,7 +34,7 @@ seoDescription: "Portrait de Daniel Gormally : faits essentiels, lecture de styl
 
 ## Lecture de style (analyse)
 
-Chez certains joueurs, l’intérêt n’est pas “un titre unique”, mais une cohérence: tu peux lire Gormally comme un joueur qui veut des positions où la décision est nette — soit tu tiens, soit tu cèdes.
+Chez certains joueurs, l’intérêt n’est pas “un titre unique”, mais une cohérence: tu peux lire Gormally comme un joueur qui veut des positions où la décision est nette - soit tu tiens, soit tu cèdes.
 
 ## Leçon pratique
 

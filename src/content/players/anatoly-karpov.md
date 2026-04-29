@@ -1,5 +1,5 @@
----
-title: "Anatoli Karpov — La pression calme"
+﻿---
+title: "Anatoli Karpov - La pression calme"
 excerpt: "Karpov est la référence absolue pour comprendre une forme de domination invisible: améliorer, contraindre, et gagner sans ‘attaque’."
 
 firstName: "Anatoli"

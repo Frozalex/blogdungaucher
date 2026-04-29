@@ -1,5 +1,5 @@
----
-title: "Alexander Moiseenko — Gagner un championnat, c’est durer"
+﻿---
+title: "Alexander Moiseenko - Gagner un championnat, c’est durer"
 excerpt: "Moiseenko est un bon antidote au mythe du ‘tournoi miracle’: gagner, c’est répéter des décisions saines sur une longue distance."
 
 firstName: "Alexander"
@@ -11,7 +11,7 @@ nationality: "Ukrainien"
 era: "contemporain"
 style: ["universel", "pragmatique", "positionnel"]
 
-angleHook: "Angle: la ‘force de championnat’ (hypothèse de lecture) — accepter des positions légèrement meilleures, puis convertir sans se précipiter."
+angleHook: "Angle: la ‘force de championnat’ (hypothèse de lecture) - accepter des positions légèrement meilleures, puis convertir sans se précipiter."
 surprisingFact: "Il a remporté le championnat d’Europe individuel 2013."
 
 iconicGame:

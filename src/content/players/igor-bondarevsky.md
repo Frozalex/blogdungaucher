@@ -1,5 +1,5 @@
----
-title: "Igor Bondarevsky — Le GM qui a fait gagner un champion"
+﻿---
+title: "Igor Bondarevsky - Le GM qui a fait gagner un champion"
 excerpt: "Bondarevsky rappelle un fait simple: l’impact aux échecs n’est pas seulement sur l’échiquier, il est aussi dans la transmission."
 
 firstName: "Igor"
@@ -29,7 +29,7 @@ seoDescription: "Portrait d’Igor Bondarevsky : faits essentiels, impact comme 
 
 ## Fiche (faits)
 
-- **Né**: 12 mai 1913 — **mort**: 14 juin 1979  
+- **Né**: 12 mai 1913 - **mort**: 14 juin 1979  
 - **Nationalité**: URSS  
 - **Repères vérifiables**: co-vainqueur du championnat d’URSS (1940), entraîneur de Boris Spassky
 

@@ -1,5 +1,5 @@
----
-title: "Marc’Andria Maurizzi — La lucidité à 17 ans"
+﻿---
+title: "Marc’Andria Maurizzi - La lucidité à 17 ans"
 excerpt: "Maurizzi est une fiche idéale pour parler d’une force moderne: jouer des positions propres, prendre l’espace, et convertir sans se raconter d’histoires."
 
 firstName: "Marc’Andria"

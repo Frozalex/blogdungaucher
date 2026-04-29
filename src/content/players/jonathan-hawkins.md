@@ -1,5 +1,5 @@
----
-title: "Jonathan Hawkins — Le champion “tardif” qui a hacké sa progression"
+﻿---
+title: "Jonathan Hawkins - Le champion “tardif” qui a hacké sa progression"
 excerpt: "Pas un prodige enfant. Pas une machine à ouvertures. Hawkins a prouvé qu’on peut monter très haut en misant sur une compétence sous-cotée: la finale (et la discipline qui va avec)."
 
 firstName: "Jonathan"
@@ -12,7 +12,7 @@ era: "contemporain"
 style: ["positionnel", "defenseur", "pragmatique", "endgame"]
 
 angleHook: "Hawkins n’a pas gagné en “sachant plus de lignes”, mais en devenant le joueur qui ne panique jamais quand la tactique s’éteint. Son style révèle une personnalité de bâtisseur: patient, méthodique, obsédé par la preuve."
-surprisingFact: "Il est souvent cité comme un exemple de progression “tardive” (comparée aux prodiges) — et comme un joueur pour qui la technique de finale pèse lourd."
+surprisingFact: "Il est souvent cité comme un exemple de progression “tardive” (comparée aux prodiges) - et comme un joueur pour qui la technique de finale pèse lourd."
 
 iconicGame:
   title: "Une victoire typique “sans effets spéciaux”"
@@ -37,7 +37,7 @@ Le fait surprenant n’est pas qu’il ait travaillé. Tout le monde travaille. 
 
 Né le 1er mai 1983 en Angleterre, Hawkins n’est pas propulsé enfant dans le circuit international. Il arrive aux échecs sérieux par étapes, comme beaucoup de joueurs de club. Et c’est précisément ce qui rend son profil intéressant: il connaît l’intérieur du jeu amateur, ses illusions, ses raccourcis, ses frustrations.
 
-Son ascension est souvent décrite comme “tardive”: il se développe fortement à l’âge où d’autres stabilisent déjà leur niveau. Ce retard apparent devient un avantage: Hawkins n’a pas à protéger une réputation de prodige. Il peut expérimenter, échouer, recommencer — et surtout, il peut construire une identité de joueur fondée sur la robustesse plutôt que sur l’étincelle.
+Son ascension est souvent décrite comme “tardive”: il se développe fortement à l’âge où d’autres stabilisent déjà leur niveau. Ce retard apparent devient un avantage: Hawkins n’a pas à protéger une réputation de prodige. Il peut expérimenter, échouer, recommencer - et surtout, il peut construire une identité de joueur fondée sur la robustesse plutôt que sur l’étincelle.
 
 Lorsqu’il devient champion britannique et obtient le titre de grand maître, il incarne une idée puissante pour ton site: **la progression n’est pas un mystère**, c’est un système. Son parcours a aussi une dimension pédagogique: il a transmis une méthode, et pas seulement un palmarès.
 
@@ -67,7 +67,7 @@ Voici la narration typique:
 4. **Simplification choisie**: il échange quand l’échange augmente la clarté (et réduit le contre-jeu).
 5. **Finale**: son terrain. Il active le roi, crée un pion passé, force l’adversaire à l’imprécision.
 
-L’enseignement est simple: **la partie se décide souvent quand ton adversaire n’a plus de plan facile** — et que toi, tu as une procédure.
+L’enseignement est simple: **la partie se décide souvent quand ton adversaire n’a plus de plan facile** - et que toi, tu as une procédure.
 
 ## Ce qu’on peut apprendre de lui en tant que joueur
 
@@ -82,5 +82,5 @@ Leçons concrètes:
 - **Réduis le hasard**: plus tu joues “propre”, moins tu as besoin de “trouver le coup”.
 - **Apprends à gagner sans attaque**: c’est une compétence rare, et elle vaut cher.
 
-Son héritage, au fond, est motivant: Hawkins montre que les échecs récompensent encore une vertu ancienne — **la patience intelligente**.
+Son héritage, au fond, est motivant: Hawkins montre que les échecs récompensent encore une vertu ancienne - **la patience intelligente**.
 

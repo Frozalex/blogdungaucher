@@ -1,5 +1,5 @@
----
-title: "Yury Shulman — Le champion qui a grandi en expliquant"
+﻿---
+title: "Yury Shulman - Le champion qui a grandi en expliquant"
 excerpt: "Shulman est l’exemple d’une force difficile à “voir” dans une vidéo: une méthode, de la clarté, et une capacité à convertir sans panique."
 
 firstName: "Yury"
@@ -12,7 +12,7 @@ era: "contemporain"
 style: ["universel", "pragmatique", "positionnel"]
 
 angleHook: "Shulman joue comme il enseigne: il élimine vite les fausses idées, construit une position “expliquable”, puis te force à défendre longtemps. Son avantage n’est pas un coup, c’est une clarté."
-surprisingFact: "Il a remporté le championnat des États-Unis (U.S. Championship) en 2005 — un tournoi où la “solidité” compte autant que l’inspiration."
+surprisingFact: "Il a remporté le championnat des États-Unis (U.S. Championship) en 2005 - un tournoi où la “solidité” compte autant que l’inspiration."
 
 iconicGame:
   title: "Une victoire de conversion “sans panique” (format pédagogique)"
@@ -40,7 +40,7 @@ Né le 29 avril 1975 à Minsk, Shulman se forme dans un environnement où les é
 
 Il devient grand maître en 1995, puis s’installe aux États-Unis. Dans un circuit fait de tournois ouverts, d’horaires durs et d’adversaires très variés, il faut apprendre à gagner dans des conditions imparfaites: pas toujours la meilleure préparation, pas toujours les meilleurs repères… mais une capacité à ramener la partie vers un terrain jouable.
 
-Son palmarès raconte une carrière “solide” plutôt qu’une carrière “mythique” — et c’est justement ce qui le rend intéressant pour toi. Il a gagné, il a perdu, il a enseigné, il a recommencé. Autrement dit : il a vécu la vie normale d’un joueur fort, avec une question qui revient sans cesse : *comment rester bon quand on n’a pas chaque jour une équipe, un moteur, et dix heures de préparation ?*
+Son palmarès raconte une carrière “solide” plutôt qu’une carrière “mythique” - et c’est justement ce qui le rend intéressant pour toi. Il a gagné, il a perdu, il a enseigné, il a recommencé. Autrement dit : il a vécu la vie normale d’un joueur fort, avec une question qui revient sans cesse : *comment rester bon quand on n’a pas chaque jour une équipe, un moteur, et dix heures de préparation ?*
 
 ## Sa contribution unique aux échecs
 
@@ -50,7 +50,7 @@ Ce n’est pas une “théorie d’ouverture” à son nom. C’est une manière
 
 - **Élaguer vite les mauvaises idées**. Dans une position compliquée, la qualité vient souvent de ce que tu ne joues pas. Les grands joueurs ont ce filtre: ils testent une idée, voient qu’elle ne tient pas, et passent à la suivante sans s’accrocher.
 - **Construire des plans explicables**. Un plan qui tient en une phrase (“je vise cette case”, “je bloque ce pion”, “je change cette pièce”) résiste mieux au stress qu’un plan basé sur des calculs infinis.
-- **Améliorer la pire pièce**. C’est une règle simple, presque scolaire — et pourtant, c’est une des plus efficaces pour reprendre le contrôle quand tu ne sais pas quoi faire.
+- **Améliorer la pire pièce**. C’est une règle simple, presque scolaire - et pourtant, c’est une des plus efficaces pour reprendre le contrôle quand tu ne sais pas quoi faire.
 
 Son impact, c’est aussi l’idée qu’un joueur peut être très fort sans être “spectaculaire”: la force devient une **méthode**, pas un feu d’artifice.
 

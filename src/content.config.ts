@@ -1,4 +1,4 @@
-import { defineCollection, z } from "astro:content";
+﻿import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
 import { categorySlugs } from "./data/site";
@@ -38,7 +38,7 @@ const blog = defineCollection({
 const players = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/players" }),
   schema: z.object({
-    /** Titre final affiché : "Prénom Nom — Angle accrocheur" */
+    /** Titre final affiché : "Prénom Nom - Angle accrocheur" */
     title: z.string(),
     excerpt: z.string(),
 
@@ -97,7 +97,7 @@ const players = defineCollection({
     /** Pour la partie emblématique. */
     iconicGame: z
       .object({
-        /** Titre simple: "Carlsen — Anand, Chennai 2013 (Partie 9)" */
+        /** Titre simple: "Carlsen - Anand, Chennai 2013 (Partie 9)" */
         title: z.string(),
         /** PGN ou lien (si tu préfères stocker à part). */
         pgn: z.string().optional(),
@@ -107,7 +107,7 @@ const players = defineCollection({
       .optional(),
 
     /**
-     * Photo d’illustration (optionnelle) — privilégier Wikimedia Commons (domaine public / CC).
+     * Photo d’illustration (optionnelle) - privilégier Wikimedia Commons (domaine public / CC).
      * Pour éviter tout problème, on affiche toujours le crédit + lien vers la source + la licence.
      */
     photo: z

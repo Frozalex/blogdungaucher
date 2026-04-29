@@ -1,5 +1,5 @@
----
-title: "Elshan Moradiabadi — L’efficacité sans folklore"
+﻿---
+title: "Elshan Moradiabadi - L’efficacité sans folklore"
 excerpt: "Moradiabadi est une fiche utile pour parler d’un GM moderne: préparation, discipline, et compréhension des positions ‘pratiques’."
 
 firstName: "Elshan"

@@ -1,6 +1,6 @@
----
-title: "Eric Hansen — Ce que le streaming révèle (vraiment) du joueur"
-excerpt: "On croit que streamer, c’est distraire. Hansen a fait l’inverse: il a exposé le vrai jeu — la gestion des émotions, des ratés, du rythme — en direct."
+﻿---
+title: "Eric Hansen - Ce que le streaming révèle (vraiment) du joueur"
+excerpt: "On croit que streamer, c’est distraire. Hansen a fait l’inverse: il a exposé le vrai jeu - la gestion des émotions, des ratés, du rythme - en direct."
 
 firstName: "Eric"
 lastName: "Hansen"
@@ -33,7 +33,7 @@ On croit souvent que le streaming “dégrade” les échecs: trop rapide, trop 
 
 > **la partie ne se joue pas seulement sur l’échiquier, elle se joue dans la tête.**
 
-Le fait surprenant, c’est que ce format expose tout ce que les joueurs préfèrent masquer: hésitation, tilt, impatience, euphorie. Et malgré cette exposition, Hansen reste un joueur dangereux — parce qu’il a appris à jouer *avec* l’imperfection, pas contre elle.
+Le fait surprenant, c’est que ce format expose tout ce que les joueurs préfèrent masquer: hésitation, tilt, impatience, euphorie. Et malgré cette exposition, Hansen reste un joueur dangereux - parce qu’il a appris à jouer *avec* l’imperfection, pas contre elle.
 
 ## Biographie essentielle (3 paragraphes)
 
@@ -49,7 +49,7 @@ La contribution de Hansen est surtout culturelle et psychologique.
 
 ### 1) Il rend visibles les décisions
 
-Les joueurs de club voient souvent les GMs comme des machines. Le direct montre l’inverse: un GM doute aussi — mais il doute différemment. Il sait ce qu’il cherche, et il sait quand abandonner une idée.
+Les joueurs de club voient souvent les GMs comme des machines. Le direct montre l’inverse: un GM doute aussi - mais il doute différemment. Il sait ce qu’il cherche, et il sait quand abandonner une idée.
 
 ### 2) Il normalise l’erreur utile
 

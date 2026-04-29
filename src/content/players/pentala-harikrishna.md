@@ -1,5 +1,5 @@
----
-title: "Pentala Harikrishna — Pourquoi sa force est (presque) invisible"
+﻿---
+title: "Pentala Harikrishna - Pourquoi sa force est (presque) invisible"
 excerpt: "Pas l’image du génie flamboyant. Harikrishna est une autre espèce: une précision calme, une préparation solide, et la capacité à “ne pas perdre” jusqu’à ce que l’autre s’épuise."
 
 firstName: "Pentala"
@@ -11,7 +11,7 @@ nationality: "Indien"
 era: "contemporain"
 style: ["positionnel", "defenseur", "pragmatique", "universel"]
 
-angleHook: "Harikrishna est un joueur qui optimise la stabilité. Sa façon de jouer révèle un mental: patience, lucidité, et une obsession pour les positions où l’adversaire doit “faire quelque chose” — alors que lui n’a pas à se découvrir."
+angleHook: "Harikrishna est un joueur qui optimise la stabilité. Sa façon de jouer révèle un mental: patience, lucidité, et une obsession pour les positions où l’adversaire doit “faire quelque chose” - alors que lui n’a pas à se découvrir."
 surprisingFact: "Son style produit peu de moments viraux… mais il traverse les tournois élite en encaissant très peu de défaites. Sa force ressemble à une absence d’erreur plus qu’à une démonstration."
 
 iconicGame:
@@ -32,7 +32,7 @@ seoDescription: "Portrait de Pentala Harikrishna : psychologie du joueur, contri
 
 Beaucoup de joueurs pensent qu’être fort, c’est “faire des choses”. Harikrishna raconte l’inverse: **être fort, c’est souvent empêcher l’autre de faire des choses**. Sa réputation est paradoxale: il est moins connu du grand public que les stars médiatiques… mais, à son meilleur niveau, il a été un joueur de tout premier plan.
 
-Le fait surprenant, c’est que sa force se voit surtout dans ce qui n’arrive pas: pas d’effondrement, peu de défaites bêtes, peu de positions où il se met hors-jeu. C’est une compétence rare — et incroyablement rentable.
+Le fait surprenant, c’est que sa force se voit surtout dans ce qui n’arrive pas: pas d’effondrement, peu de défaites bêtes, peu de positions où il se met hors-jeu. C’est une compétence rare - et incroyablement rentable.
 
 ## Biographie essentielle (3 paragraphes)
 

@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap");
 
-/* ─── TOKENS — MODE CLAIR ───────────────────────────────────── */
+/* ─── TOKENS - MODE CLAIR ───────────────────────────────────── */
 :root {
   --navbar-h: 3.75rem;
   --bg:              #fcfaf6;
@@ -43,7 +43,7 @@
   --motion-distance-md: 22px;
 }
 
-/* ─── TOKENS — MODE SOMBRE ──────────────────────────────────── */
+/* ─── TOKENS - MODE SOMBRE ──────────────────────────────────── */
 [data-theme="dark"] {
   --bg:              #1c1a16;
   --bg-warm:         #221f19;
@@ -189,7 +189,7 @@ main { display: block; padding-top: var(--navbar-h); }
   color: var(--text-muted);
 }
 
-/* Serif éditorial — tension visuelle premium */
+/* Serif éditorial - tension visuelle premium */
 .display-serif {
   font-family: var(--font-serif);
   font-weight: 500;
@@ -239,7 +239,7 @@ main { display: block; padding-top: var(--navbar-h); }
   transform: scaleX(1);
 }
 
-/* Carte éditoriale — lift premium */
+/* Carte éditoriale - lift premium */
 .hover-lift {
   transition:
     transform 280ms var(--ease-spring),

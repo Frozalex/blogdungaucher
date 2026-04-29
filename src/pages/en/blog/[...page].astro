@@ -1,4 +1,4 @@
----
+﻿---
 import type { GetStaticPathsOptions, Page } from "astro";
 import type { BlogEntry } from "../../../utils/blog";
 
@@ -55,7 +55,7 @@ const canonicalPath = isFirstPage ? "/en/blog/" : `/en/blog/${page.currentPage}/
 const frCanonicalPath = getBlogIndexPagePath("fr", page.currentPage);
 ---
 <BaseLayout
-  title={isFirstPage ? "All articles | A Left-Hander's Blog" : `Articles — page ${page.currentPage} | A Left-Hander's Blog`}
+  title={isFirstPage ? "All articles | A Left-Hander's Blog" : `Articles - page ${page.currentPage} | A Left-Hander's Blog`}
   description="The complete library: chess science, competitive mindset, chess and society, personal analyses."
   canonicalPath={canonicalPath}
   lang="en"

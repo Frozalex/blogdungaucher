@@ -1,5 +1,5 @@
----
-title: "Vladimir Antoshin — Le théoricien au service du concret"
+﻿---
+title: "Vladimir Antoshin - Le théoricien au service du concret"
 excerpt: "Antoshin est une fiche ‘utile’ pour progresser: ouvrir, comprendre, puis convertir. Une logique de joueur-théoricien."
 
 firstName: "Vladimir"
@@ -29,7 +29,7 @@ seoDescription: "Portrait de Vladimir Antoshin : faits essentiels et lecture de 
 
 ## Fiche (faits)
 
-- **Né**: 14 mai 1929 — **mort**: 13 mai 1994  
+- **Né**: 14 mai 1929 - **mort**: 13 mai 1994  
 - **Nationalité**: URSS  
 - **Repères vérifiables**: GM (1964), théoricien
 

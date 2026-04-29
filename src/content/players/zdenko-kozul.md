@@ -1,6 +1,6 @@
----
-title: "Zdenko Kožul — Le champion d’Europe ‘sous-estimé’"
-excerpt: "Kožul est un bon rappel: un titre majeur peut venir d’une compétence simple — tenir, saisir la chance, et convertir proprement."
+﻿---
+title: "Zdenko Kožul - Le champion d’Europe ‘sous-estimé’"
+excerpt: "Kožul est un bon rappel: un titre majeur peut venir d’une compétence simple - tenir, saisir la chance, et convertir proprement."
 
 firstName: "Zdenko"
 lastName: "Kožul"

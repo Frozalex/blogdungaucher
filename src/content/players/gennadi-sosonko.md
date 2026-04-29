@@ -1,5 +1,5 @@
----
-title: "Gennadi Sosonko — Le GM écrivain qui raconte l’intérieur"
+﻿---
+title: "Gennadi Sosonko - Le GM écrivain qui raconte l’intérieur"
 excerpt: "Sosonko est une passerelle rare: un joueur d’élite qui sait aussi écrire sur le vécu des échecs."
 
 firstName: "Gennadi"

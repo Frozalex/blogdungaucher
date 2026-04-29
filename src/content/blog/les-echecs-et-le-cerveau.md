@@ -1,4 +1,4 @@
----
+﻿---
 title: "Les échecs et le cerveau : ce que la science révèle vraiment"
 excerpt: "Un grand maître ? Pas un génie né, un cerveau entraîné. Ce que les IRM et les neurosciences ont découvert sur les joueurs d'échecs va changer ta façon de voir la fatigue après une partie."
 publishDate: "2026-04-03"
@@ -11,7 +11,7 @@ tags: ["échecs et cerveau", "bienfaits des échecs sur le cerveau", "échecs in
 seoTitle: "Les échecs et le cerveau : les bienfaits selon la science"
 seoDescription: "Les échecs forment le cerveau : découvrez ce que les IRM et la neuroplasticité révèlent sur les joueurs et les bienfaits de la pratique."
 titleEn: "Chess and the Brain: What Science Really Reveals"
-excerptEn: "A grandmaster isn't a born genius — they have a trained brain. What MRI scans and neuroscience have discovered about chess players will change how you see post-game fatigue."
+excerptEn: "A grandmaster isn't a born genius - they have a trained brain. What MRI scans and neuroscience have discovered about chess players will change how you see post-game fatigue."
 seoTitleEn: "Chess and the Brain: Benefits According to Science"
 seoDescriptionEn: "Chess trains the brain: discover what MRI imaging and neuroplasticity research reveal about players and the lasting benefits of regular practice."
 ---

@@ -1,4 +1,4 @@
-/** Doit rester identique à `scripts/site-origin.mjs` (origine publique HTTPS sans port). */
+﻿/** Doit rester identique à `scripts/site-origin.mjs` (origine publique HTTPS sans port). */
 const SITE_ORIGIN = "https://blogdungaucher.com";
 
 export const siteConfig = {
@@ -30,7 +30,7 @@ export const siteConfig = {
 /** Collez l’ID d’unité affiché dans AdSense (Annonces > ton unité > Code) pour activer sans variable d’environnement. Laisser vide si tu utilises `PUBLIC_ADSENSE_SLOT` au build. */
 export const ADSENSE_SLOT_OVERRIDE = "7361631253";
 
-/** Google AdSense — script chargé dans BaseLayout ; ici les IDs d’unités d’annonce (créées dans AdSense > Annonces). */
+/** Google AdSense - script chargé dans BaseLayout ; ici les IDs d’unités d’annonce (créées dans AdSense > Annonces). */
 export const adsenseConfig = {
   /** Passe à false pour revenir aux blocs d’attente (sans ins AdSense). */
   enabled: true,
