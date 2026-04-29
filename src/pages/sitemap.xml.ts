@@ -2,16 +2,19 @@ import type { APIRoute } from "astro";
 
 import { siteConfig, staticRoutes } from "../data/site";
 import { getAllPosts, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
+import { getAllPlayers, getPlayerUrl } from "../utils/players";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
 
 const langs: SiteLang[] = ["fr", "en", "de"];
 
 export const GET: APIRoute = async () => {
   const posts = await getAllPosts();
+  const players = await getAllPlayers();
 
   const frPaths = [
     ...staticRoutes.map((route) => withTrailingSlash(route)),
     ...posts.map((post) => getPostUrl(post)),
+    ...players.map((player) => getPlayerUrl(player)),
   ];
 
   function absolute(path: string) {
@@ -21,6 +24,8 @@ export const GET: APIRoute = async () => {
   function lastmodFor(frPath: string): string {
     const post = posts.find((p) => getPostUrl(p) === frPath);
     if (post) return (post.data.updatedDate ?? post.data.publishDate).toISOString();
+    const player = players.find((p) => getPlayerUrl(p) === frPath);
+    if (player) return (player.data.updatedDate ?? player.data.publishDate).toISOString();
     return new Date().toISOString();
   }
 

@@ -207,6 +207,7 @@ export const navigationLinks = [
   { label: "Esprit", href: "/fr/esprit/" },
   { label: "Société", href: "/fr/societe/" },
   { label: "Grand oral", href: "/fr/grand-oral/" },
+  { label: "Joueurs", href: "/fr/joueurs/" },
   { label: "Articles", href: "/fr/blog/" },
   { label: "À propos", href: "/fr/about/" },
 ] as const;
@@ -237,6 +238,7 @@ export const staticRoutes = [
   "/fr/esprit/",
   "/fr/societe/",
   "/fr/grand-oral/",
+  "/fr/joueurs/",
   "/fr/analyses/",
   "/fr/about/",
   "/fr/mentions-legales/",

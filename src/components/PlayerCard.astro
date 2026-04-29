@@ -1,0 +1,162 @@
+---
+import type { PlayerEntry } from "../utils/players";
+import { formatYear, getPlayerUrl } from "../utils/players";
+
+const { player } = Astro.props as { player: PlayerEntry };
+
+const fullName = `${player.data.firstName} ${player.data.lastName}`;
+const years =
+  `${formatYear(player.data.birthDate)}${
+    player.data.deathDate ? `–${formatYear(player.data.deathDate)}` : ""
+  }`;
+const photo = player.data.photo;
+---
+<article class="card scale-in" style="--motion-delay: 60ms;">
+  <a href={getPlayerUrl(player)} class="card-link">
+    <div class="card-top">
+      <div class="card-top-left">
+        {photo?.src ? (
+          <img class="card-avatar" src={photo.src} alt={photo.alt ?? fullName} loading="lazy" decoding="async" />
+        ) : (
+          <span class="card-avatar card-avatar-fallback" aria-hidden="true"></span>
+        )}
+        <span class="card-badge">{player.data.nationality}</span>
+      </div>
+      <span class="card-time">{years}</span>
+    </div>
+
+    <h3 class="card-title">{player.data.title}</h3>
+    <p class="card-excerpt">{player.data.excerpt}</p>
+
+    <div class="card-bottom">
+      <span class="card-date">{fullName}</span>
+      <span class="card-cta">
+        <span>Lire</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </span>
+    </div>
+  </a>
+</article>
+
+<style>
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    border: 1.5px solid var(--border-soft);
+    background: var(--surface);
+    box-shadow: var(--shadow-xs);
+    transition:
+      transform    260ms var(--ease-spring),
+      border-color 220ms ease,
+      box-shadow   260ms var(--ease-out);
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--green);
+    box-shadow: var(--shadow-md), 0 0 0 1px var(--green);
+  }
+
+  .card-link {
+    display: grid;
+    gap: 0.75rem;
+    height: 100%;
+    padding: 1.3rem 1.35rem 1.2rem;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-top-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-width: 0;
+  }
+
+  .card-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-xs);
+    background: var(--surface);
+    flex: 0 0 auto;
+  }
+
+  .card-avatar-fallback {
+    display: inline-block;
+    background: color-mix(in srgb, var(--surface-warm) 65%, transparent);
+  }
+
+  .card-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.5rem;
+    padding: 0 0.55rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--green-border);
+    color: var(--green);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .card-time {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+
+  .card-title {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-style: italic;
+    font-size: clamp(1.15rem, 1.95vw, 1.45rem);
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+    color: var(--text-main);
+    font-optical-sizing: auto;
+    transition: color 180ms ease;
+  }
+  .card:hover .card-title { color: var(--green); }
+
+  .card-excerpt {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.7rem;
+    border-top: 1px solid var(--border-soft);
+    font-size: 0.8rem;
+  }
+
+  .card-date { color: var(--text-dim); }
+
+  .card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--green);
+    font-weight: 700;
+    font-size: 0.82rem;
+  }
+  .card-cta svg { transition: transform 220ms var(--ease-spring); }
+  .card:hover .card-cta svg { transform: translateX(4px); }
+</style>
+

@@ -1,0 +1,269 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import AdBanner from "../../../components/AdBanner.astro";
+import PlayerCard from "../../../components/PlayerCard.astro";
+
+import { getAllPlayers } from "../../../utils/players";
+import { buildBreadcrumbJsonLd, buildWebsiteJsonLd } from "../../../utils/blog";
+
+const players = await getAllPlayers();
+
+const structuredData = [
+  buildWebsiteJsonLd(),
+  buildBreadcrumbJsonLd([
+    { name: "Accueil", path: "/fr/" },
+    { name: "Joueurs", path: "/fr/joueurs/" },
+  ]),
+];
+
+const eras = [
+  { id: "all", label: "Toutes les époques" },
+  { id: "ancien", label: "Ancien" },
+  { id: "classique", label: "Classique" },
+  { id: "hypermoderne", label: "Hypermoderne" },
+  { id: "sovietique", label: "Soviétique" },
+  { id: "moderne", label: "Moderne" },
+  { id: "contemporain", label: "Contemporain" },
+];
+---
+<BaseLayout
+  title="Les grands joueurs d'échecs | Blog d'un Gaucher"
+  description="Portraits de joueurs d'échecs : psychologie, style, impact sur l'évolution du jeu et une partie emblématique expliquée simplement."
+  canonicalPath="/fr/joueurs/"
+  structuredData={structuredData}
+>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow reveal">Bibliothèque</span>
+      <h1 class="reveal">Les grands joueurs d'échecs</h1>
+      <p class="page-lead reveal">
+        Chaque portrait a un angle unique : psychologie du joueur, impact sur l'évolution du jeu,
+        une partie emblématique analysée simplement, et ce qu'on peut apprendre pour sa propre pratique.
+      </p>
+
+      <div class="chips reveal" id="era-chips" aria-label="Filtrer par époque">
+        {eras.map((era) => (
+          <button class={`chip${era.id === "all" ? " is-active" : ""}`} type="button" data-filter-era={era.id}>
+            {era.label}
+          </button>
+        ))}
+      </div>
+
+      <div class="filters reveal">
+        <div class="filter">
+          <label for="players-nationality" class="search-label">Nationalité</label>
+          <select id="players-nationality" class="select">
+            <option value="all">Toutes</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="players-style" class="search-label">Style</label>
+          <select id="players-style" class="select">
+            <option value="all">Tous</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="search-wrap reveal">
+        <label for="players-search" class="search-label">Rechercher un joueur</label>
+        <input
+          id="players-search"
+          class="search-input"
+          type="search"
+          placeholder="Nom, angle, nationalité, style…"
+        />
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <AdBanner format="leaderboard" />
+  </div>
+
+  <section class="listing">
+    <div class="container">
+      <div class="post-grid reveal-group" id="players-grid">
+        {players.map((player) => (
+          <article
+            class="player-item"
+            data-era={player.data.era}
+            data-nationality={player.data.nationality}
+            data-style={(player.data.style ?? []).join("|")}
+            data-search={`${player.data.title} ${player.data.excerpt} ${player.data.firstName} ${player.data.lastName} ${player.data.nationality} ${(player.data.tags ?? []).join(" ")} ${(player.data.style ?? []).join(" ")}`.toLowerCase()}
+          >
+            <PlayerCard player={player} />
+          </article>
+        ))}
+      </div>
+      <p id="listing-empty" class="listing-empty" hidden>
+        Aucun joueur ne correspond à ta recherche.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero { padding: 4.5rem 0 2rem; }
+  .page-hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 0.5rem 0 0.75rem; }
+  .page-lead { color: var(--text-muted); font-size: 1.05rem; max-width: 42rem; }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.9rem;
+    max-width: 34rem;
+  }
+
+  .search-wrap {
+    margin-top: 0.9rem;
+    max-width: 34rem;
+  }
+
+  .search-label {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+  }
+
+  .search-input, .select {
+    width: 100%;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    color: var(--text-main);
+    min-height: 2.5rem;
+    padding: 0 0.75rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.8rem;
+    padding: 0 0.75rem;
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--border-strong);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 650;
+    transition: background 160ms ease, color 160ms ease, transform 200ms var(--ease-spring);
+    cursor: pointer;
+    background: transparent;
+  }
+  .chip:hover {
+    border-color: var(--green);
+    color: var(--green);
+    transform: translateY(-2px);
+  }
+  .chip.is-active {
+    background: var(--green);
+    color: #fff;
+    border-color: var(--green);
+  }
+
+  .listing { padding: 1.5rem 0 5rem; }
+
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 0.85rem;
+  }
+
+  .player-item[hidden] { display: none; }
+  .listing-empty {
+    margin-top: 1rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 680px) {
+    .filters { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  function initPlayersFilters() {
+    const items = Array.from(document.querySelectorAll(".player-item"));
+    const empty = document.getElementById("listing-empty");
+    const searchInput = document.getElementById("players-search");
+    const eraChips = Array.from(document.querySelectorAll("[data-filter-era]"));
+    const nationalitySelect = document.getElementById("players-nationality");
+    const styleSelect = document.getElementById("players-style");
+    if (!items.length || !empty || !searchInput || !eraChips.length || !nationalitySelect || !styleSelect) return;
+
+    const uniq = (arr) => Array.from(new Set(arr)).filter(Boolean).sort((a, b) => a.localeCompare(b, "fr"));
+
+    const nationalities = uniq(items.map((i) => i.dataset.nationality));
+    const styles = uniq(
+      items
+        .flatMap((i) => (i.dataset.style || "").split("|"))
+        .map((s) => s.trim())
+        .filter(Boolean),
+    );
+
+    nationalities.forEach((nat) => {
+      const opt = document.createElement("option");
+      opt.value = nat;
+      opt.textContent = nat;
+      nationalitySelect.appendChild(opt);
+    });
+
+    styles.forEach((st) => {
+      const opt = document.createElement("option");
+      opt.value = st;
+      opt.textContent = st;
+      styleSelect.appendChild(opt);
+    });
+
+    let activeEra = "all";
+
+    function applyFilters() {
+      const query = searchInput.value.trim().toLowerCase();
+      const nat = nationalitySelect.value;
+      const st = styleSelect.value;
+      let visible = 0;
+
+      items.forEach((item) => {
+        const matchesEra = activeEra === "all" || item.dataset.era === activeEra;
+        const matchesNat = nat === "all" || item.dataset.nationality === nat;
+        const styles = (item.dataset.style || "").split("|");
+        const matchesStyle = st === "all" || styles.includes(st);
+        const haystack = item.dataset.search || "";
+        const matchesQuery = !query || haystack.includes(query);
+
+        const show = matchesEra && matchesNat && matchesStyle && matchesQuery;
+        item.hidden = !show;
+        if (show) visible += 1;
+      });
+
+      empty.hidden = visible > 0;
+    }
+
+    eraChips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        activeEra = chip.dataset.filterEra || "all";
+        eraChips.forEach((el) => el.classList.toggle("is-active", el === chip));
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener("input", applyFilters);
+    nationalitySelect.addEventListener("change", applyFilters);
+    styleSelect.addEventListener("change", applyFilters);
+    applyFilters();
+  }
+
+  document.addEventListener("astro:page-load", initPlayersFilters);
+</script>
+
