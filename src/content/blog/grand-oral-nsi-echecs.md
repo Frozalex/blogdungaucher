@@ -10,10 +10,6 @@ pillar: "Informatique"
 tags: ["grand-oral", "NSI", "terminale", "algorithmique", "minimax", "Python", "AlphaZero", "intelligence artificielle", "structures de données", "baccalauréat"]
 seoTitle: "Grand oral NSI : les échecs, de l'algorithmique à l'IA, plan complet"
 seoDescription: "Grand oral spécialité NSI avec les échecs : minimax Python, arbres, PGN, bitboard, AlphaZero. Plan détaillé, code, exemples et questions jury pour le baccalauréat."
-titleEn: "Grand Oral NSI Specialism: Chess as a Textbook for Algorithmics and AI"
-excerptEn: "Minimax in Python, decision trees, PGN format, bitboard representation, AlphaZero and neural networks: the entire French Terminale NSI syllabus embodied in 64 squares."
-seoTitleEn: "Grand Oral NSI: Chess from Algorithmics to AI, Full Plan"
-seoDescriptionEn: "Grand oral NSI speciality with chess: minimax in Python, trees, PGN format, bitboard, AlphaZero. Detailed outline, code snippets, examples and examiner questions."
 faq:
   - question: "Pourquoi les échecs sont-ils un sujet idéal pour un Grand Oral spécialité NSI ?"
     answer: "Les échecs incarnent les quatre piliers du programme NSI : les algorithmes (minimax, alpha-bêta, récursivité), les structures de données (arbres de jeu, graphes), la programmation (représentation de l'échiquier en Python, fonctions récursives), et l'intelligence artificielle (passage de Stockfish à AlphaZero). C'est l'un des rares sujets qui permet de montrer concrètement le lien entre la théorie algorithmique et une application réelle connue du jury."

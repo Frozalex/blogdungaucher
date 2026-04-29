@@ -10,10 +10,6 @@ pillar: "Cognition"
 tags: ["grand-oral", "mathématiques", "terminale", "spécialité maths", "combinatoire", "loi binomiale", "suites", "Elo", "algorithme", "baccalauréat"]
 seoTitle: "Grand oral spé Maths : échecs et programme de terminale, plan complet"
 seoDescription: "Grand oral spécialité Maths avec les échecs : combinatoire, probabilités, suites récurrentes Elo, loi binomiale, algorithmique. Plan détaillé, formules et questions jury."
-titleEn: "Grand Oral Maths Specialism: Chess as a Textbook for the French Terminale Programme"
-excerptEn: "Recursive sequences, binomial law, combinatorics, expected value and algorithmics: how every chapter of the French Terminale Maths syllabus finds its perfect illustration on the chessboard."
-seoTitleEn: "Grand Oral Maths: Chess and the Terminale Syllabus, Full Plan"
-seoDescriptionEn: "Grand oral Maths speciality with chess: combinatorics, probability, Elo as a recurrent sequence, binomial law, algorithmics. Detailed outline, formulas and examiner questions."
 faq:
   - question: "Quelles notions du programme de terminale Maths peut-on illustrer avec les échecs ?"
     answer: "Les échecs couvrent les quatre grandes parties du programme de terminale Maths : la combinatoire et le dénombrement (nombre de Shannon, $10^{120}$ parties possibles), les probabilités et la loi binomiale (modélisation d'un tournoi, espérance de résultat Elo), les suites récurrentes (la mise à jour Elo est une suite $u_{n+1} = u_n + K(r_n - p_n)$), et l'algorithmique (minimax comme exemple de récursivité et de complexité)."

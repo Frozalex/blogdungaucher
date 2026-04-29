@@ -19,6 +19,15 @@ export function formatDate(date: Date) {
   }).format(date);
 }
 
+export function formatDateEn(date: Date) {
+  return new Intl.DateTimeFormat("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+}
+
 export function absoluteUrl(pathname: string) {
   return new URL(pathname, siteConfig.siteUrl).toString();
 }
@@ -144,12 +153,30 @@ export function buildArticleJsonLd(
         : getPostUrl(post);
   const inLanguage =
     lang === "en" ? "en-US" : lang === "de" ? "de-DE" : "fr-FR";
+  const headline =
+    lang === "en"
+      ? (post.data.seoTitleEn ?? post.data.titleEn ?? post.data.seoTitle ?? post.data.title)
+      : lang === "de"
+        ? (post.data.seoTitle ?? post.data.title)
+        : (post.data.seoTitle ?? post.data.title);
+  const description =
+    lang === "en"
+      ? (post.data.seoDescriptionEn ?? post.data.excerptEn ?? post.data.seoDescription ?? post.data.excerpt)
+      : lang === "de"
+        ? (post.data.seoDescription ?? post.data.excerpt)
+        : (post.data.seoDescription ?? post.data.excerpt);
+  const articleSectionEn: Record<CategorySlug, string> = {
+    science: "Science",
+    esprit: "Mind",
+    societe: "Society",
+    "grand-oral": category.label,
+  };
   return {
     "@context": "https://schema.org",
     "@type": ["Article", "BlogPosting"],
-    headline: post.data.seoTitle ?? post.data.title,
-    name: post.data.seoTitle ?? post.data.title,
-    description: post.data.seoDescription ?? post.data.excerpt,
+    headline,
+    name: headline,
+    description,
     datePublished: post.data.publishDate.toISOString(),
     dateModified: modifiedDate.toISOString(),
     inLanguage,
@@ -164,7 +191,8 @@ export function buildArticleJsonLd(
       width: 1200,
       height: 630,
     },
-    articleSection: category.label,
+    articleSection:
+      lang === "en" ? articleSectionEn[post.data.category] : category.label,
     keywords: post.data.tags?.join(", "),
     isPartOf: {
       "@type": "Blog",

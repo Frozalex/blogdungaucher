@@ -10,10 +10,6 @@ pillar: "Cognition"
 tags: ["grand-oral", "mathématiques", "NSI", "terminale", "combinatoire", "théorie des jeux", "IA", "Elo", "minimax", "baccalauréat", "transversal"]
 seoTitle: "Grand oral Maths + NSI : les échecs, pont entre les deux spécialités"
 seoDescription: "Le sujet transversal Maths+NSI le plus puissant : combinatoire ↔ minimax, probabilités Elo ↔ bases de données, graphes ↔ structures de données. Plan, formules et code."
-titleEn: "Grand Oral Maths + CS: Chess as a Bridge Between Both Specialities"
-excerptEn: "The most powerful cross-disciplinary subject for Maths+CS students: how combinatorics (Maths) explains why minimax (CS) is necessary, and how probability (Maths) underpins the AI (CS) that revolutionised chess."
-seoTitleEn: "Grand Oral Maths + CS: Chess, the Bridge Between Both Specialities"
-seoDescriptionEn: "The most powerful cross-disciplinary Grand Oral subject: combinatorics ↔ minimax, Elo probability ↔ databases, graphs ↔ data structures. Outline, formulas and code."
 faq:
   - question: "Pourquoi le lien entre les mathématiques et les échecs est-il un bon sujet de Grand Oral ?"
     answer: "Ce sujet mêle des notions du programme de terminale (combinatoire, probabilités, théorie des graphes, algorithmique) à un objet culturel concret et connu du jury. Il permet une démonstration visuelle sur l'échiquier, une ouverture vers l'intelligence artificielle et une conclusion philosophique sur la pensée formelle, ce qui facilite la structuration en trois parties et anticipe naturellement les questions du jury."

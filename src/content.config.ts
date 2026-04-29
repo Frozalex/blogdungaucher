@@ -45,6 +45,14 @@ const blog = defineCollection({
         }),
       )
       .optional(),
+    faqEn: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string(),
+        }),
+      )
+      .optional(),
   }),
 });
 

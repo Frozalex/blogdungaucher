@@ -1,10 +1,30 @@
 ---
 type Heading = { depth: number; slug: string; text: string };
 
-const { headings, mode = "desktop" } = Astro.props as {
+const { headings, mode = "desktop", lang = "fr" } = Astro.props as {
   headings: Heading[];
   mode?: "desktop" | "mobile";
+  lang?: "fr" | "en";
 };
+
+const t =
+  lang === "en"
+    ? {
+        eyebrow: "Contents",
+        label: "Quick overview",
+        navMobile: "Mobile table of contents",
+        navDesktop: "Table of contents",
+        inArticle: "In this article",
+        chip: "Navigation",
+      }
+    : {
+        eyebrow: "Sommaire",
+        label: "Aperçu rapide de l'article",
+        navMobile: "Table des matières mobile",
+        navDesktop: "Table des matières",
+        inArticle: "Dans cet article",
+        chip: "Navigation",
+      };
 
 // Sommaire volontairement compact pour ne pas spoiler tout l'article.
 const PREVIEW_LIMIT = 6;
@@ -18,8 +38,8 @@ const isTruncated = topLevel.length > PREVIEW_LIMIT;
     <details class="toc toc-mobile" id="mobile-toc">
       <summary class="toc-mobile__summary">
         <span class="toc-mobile__text">
-          <span class="toc-mobile__eyebrow">Sommaire</span>
-          <span class="toc-mobile__label">Aperçu rapide de l'article</span>
+          <span class="toc-mobile__eyebrow">{t.eyebrow}</span>
+          <span class="toc-mobile__label">{t.label}</span>
         </span>
         <span class="toc-mobile__chevron" aria-hidden="true">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
@@ -27,7 +47,7 @@ const isTruncated = topLevel.length > PREVIEW_LIMIT;
           </svg>
         </span>
       </summary>
-      <nav aria-label="Table des matières mobile" class="toc-mobile__panel">
+      <nav aria-label={t.navMobile} class="toc-mobile__panel">
         <ol>
           {filtered.map((h) => (
             <li>
@@ -42,10 +62,10 @@ const isTruncated = topLevel.length > PREVIEW_LIMIT;
     </details>
     </>
   ) : (
-    <nav class="toc toc-desktop" aria-label="Table des matières">
+    <nav class="toc toc-desktop" aria-label={t.navDesktop}>
       <div class="toc-head">
-        <p class="toc-title">Dans cet article</p>
-        <span class="toc-chip">Navigation</span>
+        <p class="toc-title">{t.inArticle}</p>
+        <span class="toc-chip">{t.chip}</span>
       </div>
       <ol>
         {filtered.map((h) => (

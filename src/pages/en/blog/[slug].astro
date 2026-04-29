@@ -16,7 +16,7 @@ import {
   buildBreadcrumbJsonLd,
   buildFaqJsonLd,
   calculateReadingTime,
-  formatDate,
+  formatDateEn,
   filterPostsForLang,
   getAllPosts,
   getPostSlug,
@@ -24,6 +24,7 @@ import {
   getPostUrlEn,
   getPostUrlDe,
 } from "../../../utils/blog";
+import { getEnglishArticleMarkdown, renderEnglishMarkdown } from "../../../utils/english-article";
 import { swapLangPrefix } from "../../../utils/lang-paths";
 import FAQ from "../../../components/FAQ.astro";
 
@@ -33,15 +34,34 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content, headings } = await render(post);
+const slug = getPostSlug(post);
+const englishMarkdown = getEnglishArticleMarkdown(slug);
+
+let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
+let headings: Awaited<ReturnType<typeof render>>["headings"];
+let englishHtml: string | undefined;
+
+if (englishMarkdown) {
+  const rendered = renderEnglishMarkdown(englishMarkdown);
+  englishHtml = rendered.html;
+  headings = rendered.headings;
+} else {
+  const r = await render(post);
+  Content = r.Content;
+  headings = r.headings;
+}
+
 const category = categoryMap[post.data.category];
 
-const readingTime = post.data.readingTime ?? calculateReadingTime(post.body);
+const readingTime =
+  post.data.readingTime ??
+  (englishMarkdown ? calculateReadingTime(englishMarkdown) : calculateReadingTime(post.body));
 
 const allPosts = await getAllPosts();
-const related = allPosts
-  .filter((e) => e.id !== post.id && e.data.category === post.data.category)
-  .slice(0, 3);
+const related = filterPostsForLang(
+  allPosts.filter((e) => e.id !== post.id && e.data.category === post.data.category),
+  "en",
+).slice(0, 3);
 
 const postUrlEn = getPostUrlEn(post);
 const postUrlFr = getPostUrl(post);
@@ -51,7 +71,9 @@ const enTitle   = post.data.seoTitleEn ?? post.data.titleEn ?? post.data.seoTitl
 const enDesc    = post.data.seoDescriptionEn ?? post.data.excerptEn ?? post.data.seoDescription ?? post.data.excerpt;
 const displayTitle   = post.data.titleEn   ?? post.data.title;
 const displayExcerpt = post.data.excerptEn ?? post.data.excerpt;
-const hasEnTranslation = !!(post.data.titleEn);
+const hasEnTranslation = !!englishMarkdown && !!(post.data.titleEn);
+
+const faqsForDisplay = post.data.faqEn ?? post.data.faq ?? [];
 
 const enCategoryLabels: Record<string, string> = {
   science: "Science",
@@ -61,7 +83,6 @@ const enCategoryLabels: Record<string, string> = {
 const enCategoryLabel = enCategoryLabels[post.data.category] ?? category.label;
 const enCategoryHref = swapLangPrefix(category.href, "en");
 
-const faqs = post.data.faq ?? [];
 const heroImage = post.data.heroImage;
 
 const structuredData = [
@@ -71,7 +92,7 @@ const structuredData = [
     { name: "Articles", path: "/en/blog/" },
     { name: displayTitle, path: postUrlEn },
   ]),
-  ...(faqs.length > 0 ? [buildFaqJsonLd(faqs)] : []),
+  ...(faqsForDisplay.length > 0 ? [buildFaqJsonLd(faqsForDisplay)] : []),
 ];
 
 const enCategoryShortLabels: Record<string, string> = {
@@ -122,7 +143,7 @@ const otherPillars = categorySlugs
             </a>
             <span>{readingTime}</span>
             <time datetime={post.data.publishDate.toISOString()}>
-              {formatDate(post.data.publishDate)}
+              {formatDateEn(post.data.publishDate)}
             </time>
           </div>
           <h1>{displayTitle}</h1>
@@ -154,16 +175,20 @@ const otherPillars = categorySlugs
         )}
 
         <div class="toc-mobile-wrap">
-          <TableOfContents headings={headings} mode="mobile" />
+          <TableOfContents headings={headings} mode="mobile" lang="en" />
         </div>
 
         <AdBanner format="inline" compact={true} />
 
         <div class="article-body fade-up" style="--motion-delay: 100ms;">
-          <Content />
+          {englishHtml ? (
+            <div set:html={englishHtml} />
+          ) : (
+            Content && <Content />
+          )}
         </div>
 
-        {faqs.length > 0 && <FAQ items={faqs} lang="en" />}
+        {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="en" />}
 
         {otherPillars.length > 0 && (
           <nav class="pillar-links fade-up" style="--motion-delay: 130ms;" aria-label="Other blog sections">
@@ -190,7 +215,7 @@ const otherPillars = categorySlugs
 
       <aside class="article-aside">
         <div class="toc-desktop-wrap">
-          <TableOfContents headings={headings} mode="desktop" />
+          <TableOfContents headings={headings} mode="desktop" lang="en" />
         </div>
 
         <div class="aside-card fade-up" style="--motion-delay: 120ms;">
