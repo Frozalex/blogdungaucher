@@ -1,0 +1,14 @@
+# Hostinger / Apache — Astro avec trailingSlash: "always"
+# Les rubriques sont des dossiers (/fr/science/) avec index.html dedans.
+# Sans slash final, Apache peut répondre 404 ; on redirige vers la même URL avec /
+
+DirectoryIndex index.html index.htm
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*[^/])$ $1/ [R=301,L,QSA]
+</IfModule>
