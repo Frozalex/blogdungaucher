@@ -2,6 +2,9 @@ node_modules/
 dist/
 .astro/
 
+# Archive locale pour upload manuel Hostinger (ne pas versionner)
+blog-gaucher-public_html.zip
+
 # Clés de déploiement (ne jamais commiter)
 gh_deploy_blog_rsa
 gh_deploy_blog_rsa.pub
