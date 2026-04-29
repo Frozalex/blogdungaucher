@@ -4,6 +4,7 @@ import ArticleCard from "../../components/ArticleCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 import { categoryMap, categorySlugs } from "../../data/site";
+import { swapLangPrefix } from "../../utils/lang-paths";
 import { buildWebsiteJsonLd, getLatestPosts } from "../../utils/blog";
 
 const latestPosts = await getLatestPosts(5, "en");
@@ -91,7 +92,7 @@ const latestPosts = await getLatestPosts(5, "en");
         {categorySlugs.map((slug) => {
           const cat = categoryMap[slug];
           return (
-            <a href={`/en${cat.href}/`} class="pillar" style={`--p:${cat.accent};`}>
+            <a href={swapLangPrefix(cat.href, "en")} class="pillar" style={`--p:${cat.accent};`}>
               <span class="pillar__dot"></span>
               <div>
                 <span class="pillar__kicker" data-t={`categories.${slug}.shortLabel`}>{cat.shortLabel}</span>

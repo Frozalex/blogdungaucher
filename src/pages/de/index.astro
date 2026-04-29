@@ -90,7 +90,7 @@ const latestPosts = await getLatestPosts(5, "de");
         {categorySlugs.map((slug) => {
           const cat = categoryMap[slug];
           return (
-            <a href={swapLangPrefix(`${cat.href}/`, "de")} class="pillar" style={`--p:${cat.accent};`}>
+            <a href={swapLangPrefix(cat.href, "de")} class="pillar" style={`--p:${cat.accent};`}>
               <span class="pillar__dot"></span>
               <div>
                 <span class="pillar__kicker" data-t={`categories.${slug}.shortLabel`}>{cat.shortLabel}</span>

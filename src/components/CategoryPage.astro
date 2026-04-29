@@ -9,7 +9,7 @@ import {
   filterPostsForLang,
   getPostsByCategory,
 } from "../utils/blog";
-import { swapLangPrefix, type SiteLang } from "../utils/lang-paths";
+import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
 
 const { category, lang = "fr" } = Astro.props as { category: CategorySlug; lang?: SiteLang };
 const meta = categoryMap[category];
@@ -20,7 +20,7 @@ const posts = filterPostsForLang(
 const hero = posts.find((p) => p.data.featured) ?? posts[0];
 const rest = posts.filter((p) => p.id !== hero?.id);
 
-const frCanonical = `${meta.href}/`;
+const frCanonical = withTrailingSlash(meta.href);
 
 const homeLabel =
   lang === "en" ? "Home" : lang === "de" ? "Startseite" : "Accueil";

@@ -1,4 +1,4 @@
-const CACHE = "blogdungaucher-v2";
+const CACHE = "blogdungaucher-v3";
 
 const PRECACHE = [
   "/",
