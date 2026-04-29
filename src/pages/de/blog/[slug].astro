@@ -51,6 +51,7 @@ const absolutePostUrl = absoluteUrl(postUrlDe);
 const categoryHrefDe = swapLangPrefix(category.href, "de");
 
 const faqs = post.data.faq ?? [];
+const heroImage = post.data.heroImage;
 
 const structuredData = [
   buildArticleJsonLd(post, { lang: "de" }),
@@ -111,6 +112,23 @@ const otherPillars = categorySlugs
           <h1>{post.data.title}</h1>
           <p class="article-excerpt">{post.data.excerpt}</p>
         </header>
+
+        {heroImage?.src && (
+          <figure class="hero-media fade-up" style="--motion-delay: 70ms;">
+            <img class="hero-img" src={heroImage.src} alt={heroImage.alt} loading="lazy" decoding="async" />
+            {(heroImage.credit || heroImage.license || heroImage.sourceUrl) && (
+              <figcaption class="hero-credit">
+                {heroImage.credit && <span class="credit-piece">Credit: {heroImage.credit}</span>}
+                {heroImage.license && <span class="credit-piece">Lizenz: {heroImage.license}</span>}
+                {heroImage.sourceUrl && (
+                  <a class="credit-link" href={heroImage.sourceUrl} target="_blank" rel="noreferrer">
+                    Quelle
+                  </a>
+                )}
+              </figcaption>
+            )}
+          </figure>
+        )}
 
         <div class="toc-mobile-wrap">
           <TableOfContents headings={headings} mode="mobile" />
@@ -221,6 +239,39 @@ const otherPillars = categorySlugs
     border-bottom: 1px solid var(--border-soft);
     margin-bottom: 1.5rem;
   }
+
+  .hero-media {
+    margin: 0 0 1.25rem;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    box-shadow: var(--shadow-xs);
+  }
+
+  .hero-img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: color-mix(in srgb, var(--surface-warm) 65%, transparent);
+  }
+
+  .hero-credit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.6rem;
+    align-items: baseline;
+    padding: 0.6rem 0.8rem;
+    border-top: 1px solid var(--border-soft);
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    background: color-mix(in srgb, var(--surface-warm) 70%, transparent);
+  }
+
+  .credit-piece { white-space: nowrap; }
+  .credit-link { color: var(--green); font-weight: 700; text-decoration: none; }
+  .credit-link:hover { text-decoration: underline; }
 
   .article-meta {
     display: flex;

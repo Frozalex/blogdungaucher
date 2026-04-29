@@ -10,6 +10,12 @@ pillar: "Inclusion"
 tags: ["échecs TDAH", "TDAH enfant", "attention", "hyperactivité", "neurodiversité", "fonctions exécutives", "inclusion", "Barkley"]
 seoTitle: "Échecs et TDAH : pourquoi l'échiquier capte l'attention que l'école ne retient pas"
 seoDescription: "Le TDAH n'est pas un manque d'attention : c'est une attention irrégulière. Pourquoi l'échiquier crée exactement les conditions où le cerveau TDAH s'ancre naturellement. Ce que dit la recherche, et comment adapter la pratique."
+heroImage:
+  src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Empty_wooden_chessboard.jpg"
+  alt: "Échiquier en bois vide"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Empty_wooden_chessboard.jpg"
+  credit: "Paul Lloyd"
+  license: "CC0 1.0"
 titleEn: "Chess and ADHD: Why the Chessboard Captures the Attention Everything Else Fails to Hold"
 excerptEn: "ADHD isn't an attention deficit - it's inconsistent attention. The chessboard creates the rare conditions where this brain naturally finds its anchor point."
 seoTitleEn: "Chess and ADHD: The Chessboard Captures the Attention School Cannot Hold"

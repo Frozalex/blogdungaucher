@@ -10,6 +10,12 @@ pillar: "Neurosciences"
 tags: ["échecs et cerveau", "bienfaits des échecs sur le cerveau", "échecs intelligence", "neuroplasticité", "mémoire", "Fernand Gobet"]
 seoTitle: "Les échecs et le cerveau : les bienfaits selon la science"
 seoDescription: "Les échecs forment le cerveau : découvrez ce que les IRM et la neuroplasticité révèlent sur les joueurs et les bienfaits de la pratique."
+heroImage:
+  src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Empty_wooden_chessboard.jpg"
+  alt: "Échiquier en bois vide"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Empty_wooden_chessboard.jpg"
+  credit: "Paul Lloyd"
+  license: "CC0 1.0"
 titleEn: "Chess and the Brain: What Science Really Reveals"
 excerptEn: "A grandmaster isn't a born genius - they have a trained brain. What MRI scans and neuroscience have discovered about chess players will change how you see post-game fatigue."
 seoTitleEn: "Chess and the Brain: Benefits According to Science"

@@ -20,6 +20,19 @@ const blog = defineCollection({
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     ogImage: z.string().optional(),
+    /**
+     * Image d’illustration (optionnelle) - privilégier Wikimedia Commons (domaine public / CC).
+     * On affiche toujours le crédit + lien vers la source + la licence.
+     */
+    heroImage: z
+      .object({
+        src: z.string(),
+        alt: z.string(),
+        sourceUrl: z.string().optional(),
+        credit: z.string().optional(),
+        license: z.string().optional(),
+      })
+      .optional(),
     titleEn: z.string().optional(),
     excerptEn: z.string().optional(),
     seoTitleEn: z.string().optional(),

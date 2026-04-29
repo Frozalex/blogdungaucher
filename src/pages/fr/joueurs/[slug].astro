@@ -10,7 +10,7 @@ import Comments from "../../../components/Comments.astro";
 
 import { siteConfig } from "../../../data/site";
 import { absoluteUrl, buildBreadcrumbJsonLd } from "../../../utils/blog";
-import { formatYear, getAllPlayers, getPlayerSlug, getPlayerUrl } from "../../../utils/players";
+import { formatPlayerDate, formatYear, getAllPlayers, getPlayerSlug, getPlayerUrl } from "../../../utils/players";
 
 export async function getStaticPaths() {
   const players = await getAllPlayers();
@@ -30,6 +30,8 @@ const years =
     player.data.deathDate ? `–${formatYear(player.data.deathDate)}` : ""
   }`;
 const photo = player.data.photo;
+const publishedLabel = formatPlayerDate(player.data.publishDate);
+const updatedLabel = player.data.updatedDate ? formatPlayerDate(player.data.updatedDate) : null;
 
 const structuredData = [
   buildBreadcrumbJsonLd([
@@ -84,6 +86,13 @@ const structuredData = [
 
         <div class="player-body fade-up" style="--motion-delay: 100ms;">
           <Content />
+        </div>
+
+        <div class="player-meta-footer fade-up" style="--motion-delay: 120ms;">
+          <span>Publié le <time datetime={player.data.publishDate.toISOString()}>{publishedLabel}</time></span>
+          {updatedLabel && (
+            <span>Mis à jour le <time datetime={player.data.updatedDate!.toISOString()}>{updatedLabel}</time></span>
+          )}
         </div>
 
         <ShareButtons title={player.data.title} url={absoluteUrl(url)} />
@@ -235,6 +244,25 @@ const structuredData = [
     background: var(--surface);
     border: 1px solid var(--border-soft);
     box-shadow: var(--shadow-xs);
+  }
+
+  .player-meta-footer {
+    margin-top: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+    padding: 0.9rem 1.1rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+    background: color-mix(in srgb, var(--surface-warm) 72%, transparent);
+    color: var(--text-dim);
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+
+  .player-meta-footer time {
+    color: var(--text-muted);
+    font-weight: 700;
   }
 
   .player-body :global(h2) {

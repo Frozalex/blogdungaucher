@@ -9,6 +9,15 @@ export function formatYear(date: Date) {
   }).format(date);
 }
 
+export function formatPlayerDate(date: Date) {
+  return new Intl.DateTimeFormat("fr-FR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+}
+
 export async function getAllPlayers() {
   const players = await getCollection("players");
   const now = new Date();
