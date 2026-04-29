@@ -11,6 +11,13 @@ nationality: "Croate (né en ex-Yougoslavie)"
 era: "moderne"
 style: ["universel", "pragmatique", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Kozul_zdenko_20081120_olympiade_dresden.jpg"
+  alt: "Zdenko Kožul (Olympiade d'échecs, Dresde 2008)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Kozul_zdenko_20081120_olympiade_dresden.jpg"
+  credit: "Frank Hoppe"
+  license: "CC BY-SA 3.0 / GFDL"
+
 angleHook: "Angle: l’élite ‘hors projecteurs’. La fiche sert à montrer qu’un joueur peut gagner un gros tournoi sans devenir une icône médiatique."
 surprisingFact: "Il a remporté le championnat d’Europe individuel 2006."
 

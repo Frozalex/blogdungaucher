@@ -10,6 +10,12 @@ birthdayMonthDay: "05-30"
 nationality: "Ukrainien"
 era: "contemporain"
 style: ["pragmatique", "positionnel", "ouvertures"]
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Golubev_Mikhail.jpg"
+  alt: "Mikhail Golubev (tournoi de Leyde 2008)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Golubev_Mikhail.jpg"
+  credit: "Winicjusz Drozdowski"
+  license: "Public domain"
 
 angleHook: "Angle: l’utilité. Un auteur-GM permet de traiter une fiche comme un ‘outil’: quelles idées d’ouverture mènent à quels plans ?"
 surprisingFact: "Il a été champion d’Ukraine en 1996."

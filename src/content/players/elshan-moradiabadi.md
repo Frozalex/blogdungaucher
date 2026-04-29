@@ -11,6 +11,13 @@ nationality: "Iranien-Américain"
 era: "contemporain"
 style: ["pragmatique", "tacticien", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/GM_Elshan_Moradiabadi.jpg"
+  alt: "Elshan Moradiabadi (2010)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:GM_Elshan_Moradiabadi.jpg"
+  credit: "Andreas Kontokanis (Flickr: karpidis)"
+  license: "CC BY-SA 2.0"
+
 angleHook: "Angle: le joueur-pro. Pas besoin d’inventer un récit: la fiche peut être centrée sur l’idée ‘gagner avec des décisions pratiques’."
 surprisingFact: "Il a reçu le titre de grand maître en 2005."
 

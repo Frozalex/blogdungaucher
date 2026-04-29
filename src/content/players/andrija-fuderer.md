@@ -11,6 +11,12 @@ birthdayMonthDay: "05-13"
 nationality: "Yougoslave (puis Belgique / Croatie)"
 era: "moderne"
 style: ["attaquant", "tacticien", "pragmatique"]
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/HoogovensChess1952-6.jpg"
+  alt: "Probablement Andrija Fuderer (tournoi Hoogovens 1952)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:HoogovensChess1952-6.jpg"
+  credit: "Noord-Hollands Archief / Fotoburo de Boer"
+  license: "CC0 1.0"
 
 angleHook: "Angle: parler d’un joueur sans inventer sa psychologie - en racontant un fait: certains talents sont très forts très tôt, puis bifurquent. Ça dit quelque chose sur la relation entre échecs et vie."
 surprisingFact: "Il a reçu le titre de Maître International (1952) et le titre de Grand maître honorifique (1990)."

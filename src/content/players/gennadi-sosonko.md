@@ -11,6 +11,13 @@ nationality: "Néerlandais (né en URSS)"
 era: "sovietique"
 style: ["positionnel", "pragmatique", "universel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Gennadi_Sosonko_1979.jpg"
+  alt: "Gennadi Sosonko (Amsterdam, 1979)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Gennadi_Sosonko_1979.jpg"
+  credit: "Hans van Dijk / Anefo (Nationaal Archief)"
+  license: "CC0 1.0"
+
 angleHook: "Angle: au lieu de ‘psychologiser’ sa personnalité, on s’appuie sur un fait solide: c’est un GM et un auteur. La fiche sert à relier jeu + narration."
 surprisingFact: "Il a été champion des Pays-Bas à deux reprises."
 

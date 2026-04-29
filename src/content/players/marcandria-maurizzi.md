@@ -10,6 +10,12 @@ birthdayMonthDay: "05-16"
 nationality: "Français"
 era: "contemporain"
 style: ["universel", "pragmatique", "tacticien"]
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/MarcandriaMaurizzi23.jpg"
+  alt: "Marc'Andria Maurizzi (2023)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:MarcandriaMaurizzi23.jpg"
+  credit: "Stefan64"
+  license: "CC BY-SA 3.0 / GFDL"
 
 angleHook: "Angle: la ‘propreté’ moderne. Sans inventer sa personnalité, on peut présenter l’idée: au haut niveau, la maturité se voit dans les décisions répétables."
 surprisingFact: "Il a remporté le championnat du monde junior (World Junior Championship) en 2023."

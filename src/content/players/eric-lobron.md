@@ -11,6 +11,13 @@ nationality: "Allemand (né aux États-Unis)"
 era: "moderne"
 style: ["positionnel", "pragmatique", "defenseur"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Eric_Lobron_(Deutsche_Einzelmeisterschaft_1984_Bad_Neuenahr).jpg"
+  alt: "Eric Lobron (championnat d'Allemagne 1984, Bad Neuenahr)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Eric_Lobron_(Deutsche_Einzelmeisterschaft_1984_Bad_Neuenahr).jpg"
+  credit: "Krtschil"
+  license: "CC BY-SA 4.0"
+
 angleHook: "Lecture (hypothèse): Lobron est un joueur de clarté - peu de concessions, des décisions propres, et une tendance à ‘faire jouer’ l’adversaire dans un couloir étroit."
 surprisingFact: "Il a été champion d’Allemagne à deux reprises."
 

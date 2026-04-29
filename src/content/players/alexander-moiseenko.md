@@ -11,6 +11,13 @@ nationality: "Ukrainien"
 era: "contemporain"
 style: ["universel", "pragmatique", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Moiseenko,Alexander_-_-Demuth,Adrien_2016_Karlsruhe.jpeg"
+  alt: "Alexander Moiseenko (Grenke Chess Open 2016)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Moiseenko,Alexander_-_-Demuth,Adrien_2016_Karlsruhe.jpeg"
+  credit: "GFHund"
+  license: "CC BY-SA 3.0"
+
 angleHook: "Angle: la ‘force de championnat’ (hypothèse de lecture) - accepter des positions légèrement meilleures, puis convertir sans se précipiter."
 surprisingFact: "Il a remporté le championnat d’Europe individuel 2013."
 

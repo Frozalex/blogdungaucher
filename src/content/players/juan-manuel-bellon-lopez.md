@@ -11,6 +11,13 @@ nationality: "Espagnol (puis Suède)"
 era: "moderne"
 style: ["pragmatique", "positionnel", "universel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Juan_Manuel_Bellon_Lopez_Rilton_Cup_2009.jpg"
+  alt: "Juan Manuel Bellón López (Rilton Cup 2009)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Juan_Manuel_Bellon_Lopez_Rilton_Cup_2009.jpg"
+  credit: "Paweł Grochowalski"
+  license: "CC BY-SA 3.0"
+
 angleHook: "Lecture (hypothèse): Bellón représente une force ‘de championnat’ - gagner souvent contre plus faible, et rester solide contre plus fort."
 surprisingFact: "Il a été champion d’Espagne à cinq reprises."
 

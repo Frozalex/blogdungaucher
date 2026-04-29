@@ -11,6 +11,13 @@ nationality: "Indien"
 era: "contemporain"
 style: ["positionnel", "defenseur", "pragmatique", "universel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Pentala-Harikrishna.jpg"
+  alt: "Pentala Harikrishna (2007)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Pentala-Harikrishna.jpg"
+  credit: "Rorkhete"
+  license: "CC BY-SA 3.0 / GFDL"
+
 angleHook: "Harikrishna est un joueur qui optimise la stabilité. Sa façon de jouer révèle un mental: patience, lucidité, et une obsession pour les positions où l’adversaire doit “faire quelque chose” - alors que lui n’a pas à se découvrir."
 surprisingFact: "Son style produit peu de moments viraux… mais il traverse les tournois élite en encaissant très peu de défaites. Sa force ressemble à une absence d’erreur plus qu’à une démonstration."
 

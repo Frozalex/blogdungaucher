@@ -11,6 +11,13 @@ nationality: "Néerlandais"
 era: "contemporain"
 style: ["attaquant", "tacticien", "pragmatique"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Jorden_van_Foreest_in_2023.jpg"
+  alt: "Jorden van Foreest (Tata Steel 2023)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Jorden_van_Foreest_in_2023.jpg"
+  credit: "Frans Peeters (Flickr: suspeeters)"
+  license: "CC BY-SA 2.0"
+
 angleHook: "Son tournoi 2021 raconte une compétence sous-estimée: rester créatif sans se mettre en danger. Il n’a pas “sur-calculé”, il a gardé le jeu vivant jusqu’à ce que les autres se crispent."
 surprisingFact: "À Tata Steel 2021, il gagne le tournoi en restant invaincu et en battant le favori national au départage: une victoire d’outsider qui ressemble plus à une gestion d’énergie qu’à une série de miracles."
 

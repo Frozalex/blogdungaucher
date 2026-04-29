@@ -11,6 +11,12 @@ birthdayMonthDay: "05-14"
 nationality: "Soviétique"
 era: "sovietique"
 style: ["strategue", "positionnel", "pragmatique"]
+photo:
+  src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Empty_wooden_chessboard.jpg"
+  alt: "Illustration - échiquier en bois (portrait non disponible)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Empty_wooden_chessboard.jpg"
+  credit: "Paul Lloyd"
+  license: "CC0 1.0"
 
 angleHook: "Angle: plutôt que de ‘psychologiser’, on traite Antoshin comme un exemple de lien entre théorie et pratique: comprendre des idées d’ouverture, puis les rendre gagnantes."
 surprisingFact: "Il a été champion national d’échecs par correspondance en URSS (et GM en 1964)."

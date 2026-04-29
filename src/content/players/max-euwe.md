@@ -12,6 +12,13 @@ nationality: "Néerlandais"
 era: "classique"
 style: ["strategue", "positionnel", "pragmatique"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Schaakgrootmeester_Dr._Max_Euwe,_Bestanddeelnr_901-0739.jpg"
+  alt: "Max Euwe (1945)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Schaakgrootmeester_Dr._Max_Euwe,_Bestanddeelnr_901-0739.jpg"
+  credit: "Theo van Haren Noman / Anefo (Nationaal Archief)"
+  license: "CC0 1.0"
+
 angleHook: "Angle: Euwe permet de raconter un champion du monde via une notion: la structure (décision, méthode, clarté) plutôt que le romantisme."
 surprisingFact: "Il a été champion du monde (1935–1937)."
 

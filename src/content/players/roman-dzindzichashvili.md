@@ -11,6 +11,13 @@ nationality: "Soviétique (puis Israël, puis États-Unis)"
 era: "sovietique"
 style: ["pragmatique", "positionnel", "defenseur"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Dzindzichashvili_1984_Thessaloniki.jpg"
+  alt: "Roman Dzindzichashvili (Olympiade d'échecs 1984, Thessalonique)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Roman_Dzindzichashvili_1984_Thessaloniki.jpg"
+  credit: "GFHund"
+  license: "CC BY 3.0 / GFDL"
+
 angleHook: "Lecture (hypothèse): son style ‘pro’ ressemble à une compétence de survie - minimiser les risques inutiles, et gagner quand l’occasion est réelle."
 surprisingFact: "Il a remporté le Hastings Chess Festival 1977/1978 (performance marquante)."
 

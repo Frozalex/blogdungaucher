@@ -11,6 +11,13 @@ nationality: "Anglais"
 era: "contemporain"
 style: ["universel", "pragmatique", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/MatthewSadler17.jpg"
+  alt: "Matthew Sadler (2017)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:MatthewSadler17.jpg"
+  credit: "Stefan64"
+  license: "CC BY-SA 4.0 / GFDL"
+
 angleHook: "Angle: un GM-auteur. Sans inventer, on peut lire sa valeur dans une chose: rendre le complexe compréhensible (ce que ses écrits reflètent)."
 surprisingFact: "Il a été champion de Grande-Bretagne à deux reprises."
 

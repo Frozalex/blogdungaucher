@@ -12,6 +12,13 @@ nationality: "Soviétique"
 era: "sovietique"
 style: ["strategue", "pragmatique", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Prijsuitreiking_schaakolympiade_Amsterdam,_Bestanddeelnr_906-7460.jpg"
+  alt: "Cérémonie de remise des prix - Olympiade d'échecs d'Amsterdam (1954)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Prijsuitreiking_schaakolympiade_Amsterdam,_Bestanddeelnr_906-7460.jpg"
+  credit: "Joop van Bilsen / Anefo (Nationaal Archief)"
+  license: "CC0 1.0"
+
 angleHook: "Angle: plutôt que de ‘romancer’ sa personnalité, on part d’un fait fort: être joueur + entraîneur. La fiche devient une étude de ce que le coaching change dans la performance."
 surprisingFact: "Il a partagé le titre du championnat d’URSS 1940."
 

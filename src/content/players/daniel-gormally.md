@@ -11,6 +11,13 @@ nationality: "Anglais"
 era: "contemporain"
 style: ["tacticien", "pragmatique", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/DanielGormally17.jpg"
+  alt: "Daniel Gormally (2017)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:DanielGormally17.jpg"
+  credit: "Stefan64"
+  license: "CC BY-SA 4.0 / GFDL"
+
 angleHook: "Lecture (hypothèse): son identité publique d’auteur pousse vers un jeu ‘explicable’ - des décisions franches, des plans lisibles, et une volonté d’attaquer quand les conditions sont réunies."
 surprisingFact: "Il a publié plusieurs livres d’échecs (analyse, calcul, attaque du roi)."
 

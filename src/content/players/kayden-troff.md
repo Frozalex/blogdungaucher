@@ -10,6 +10,12 @@ birthdayMonthDay: "05-06"
 nationality: "Américain"
 era: "contemporain"
 style: ["tacticien", "pragmatique", "universel"]
+photo:
+  src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Empty_wooden_chessboard.jpg"
+  alt: "Illustration - échiquier en bois (portrait non disponible)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Empty_wooden_chessboard.jpg"
+  credit: "Paul Lloyd"
+  license: "CC0 1.0"
 
 angleHook: "Lecture (hypothèse): chez lui, la vitesse n’est pas une agitation. C’est une capacité à garder un plan simple malgré le tempo."
 surprisingFact: "Il est devenu grand maître à 16 ans (2014)."

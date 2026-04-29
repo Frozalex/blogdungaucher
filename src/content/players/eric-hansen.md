@@ -11,6 +11,13 @@ nationality: "Canadien"
 era: "contemporain"
 style: ["tacticien", "attaquant", "pragmatique"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Hansen_Eric_(29755059314).jpg"
+  alt: "Eric Hansen (Olympiade d'échecs 2016)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Hansen_Eric_(29755059314).jpg"
+  credit: "Andreas Kontokanis (Flickr: karpidis)"
+  license: "CC BY-SA 2.0"
+
 angleHook: "Hansen est associé à un jeu rapide et direct. Vue de près, la leçon est surtout mentale: rester dangereux même quand la partie n’est pas “propre”."
 surprisingFact: "Le streaming donne l’illusion d’un jeu “léger”. En pratique, jouer devant un public rend visibles des aspects réels du jeu: rythme, gestion du temps et des émotions."
 

@@ -12,6 +12,13 @@ nationality: "Austro-hongrois / Tchécoslovaque"
 era: "hypermoderne"
 style: ["strategue", "tacticien", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/RichardReti.jpg"
+  alt: "Richard Réti"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:RichardReti.jpg"
+  credit: "Auteur inconnu (source: chesstales.blogspot.com via Wikimedia Commons)"
+  license: "Public domain"
+
 angleHook: "Angle: Réti permet une fiche très ‘différenciante’: comment une idée contre-intuitive (ne pas occuper le centre tout de suite) devient une arme."
 surprisingFact: "Son nom est attaché à l’ouverture Réti (1.Nf3) et à la pensée hypermoderne."
 

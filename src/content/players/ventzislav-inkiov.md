@@ -11,6 +11,13 @@ nationality: "Bulgare"
 era: "moderne"
 style: ["defenseur", "pragmatique", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/MarholevhagInkiov.JPG"
+  alt: "Ventzislav Inkiov (à droite) et Dimitar Marholev (2008)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:MarholevhagInkiov.JPG"
+  credit: "Kadbzh (Klaod an Duigou)"
+  license: "CC BY-SA 4.0"
+
 angleHook: "Angle: le ‘joueur dur’ (hypothèse) - pas spectaculaire, mais fiable. La fiche devient une leçon sur la rentabilité de la solidité."
 surprisingFact: "Il a remporté le championnat de Bulgarie en 1982."
 

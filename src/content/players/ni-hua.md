@@ -11,6 +11,13 @@ nationality: "Chinois"
 era: "contemporain"
 style: ["universel", "pragmatique", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Ni_hua_20081119_olympiade_dresden.jpg"
+  alt: "Ni Hua (Olympiade d'échecs, Dresde 2008)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Ni_hua_20081119_olympiade_dresden.jpg"
+  credit: "Frank Hoppe"
+  license: "Public domain"
+
 angleHook: "Angle: l’impact par la structure d’équipe. Sans inventer, on peut raconter un fait: certains joueurs sont aussi des piliers d’équipe (capitaines, cadres)."
 surprisingFact: "Il a été champion de Chine trois fois (2006–2008)."
 

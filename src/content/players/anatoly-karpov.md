@@ -11,6 +11,13 @@ nationality: "Russe (URSS à l’origine)"
 era: "sovietique"
 style: ["positionnel", "pragmatique", "defenseur"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Anatoly_Karpov_(cropped).jpg"
+  alt: "Anatoly Karpov (1977)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Anatoly_Karpov_(cropped).jpg"
+  credit: "Koen Suyk / Anefo (Nationaal Archief)"
+  license: "CC0 1.0"
+
 angleHook: "Angle: chez Karpov, la psychologie n’est pas ‘agressive’ au sens hollywoodien. C’est une psychologie de contrainte: réduire les options jusqu’à provoquer l’erreur."
 surprisingFact: "Il a été champion du monde (1975–1985)."
 

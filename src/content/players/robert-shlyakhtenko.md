@@ -10,6 +10,12 @@ birthdayMonthDay: "05-09"
 nationality: "Américain"
 era: "contemporain"
 style: ["tacticien", "pragmatique", "universel"]
+photo:
+  src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Empty_wooden_chessboard.jpg"
+  alt: "Illustration - échiquier en bois (portrait non disponible)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Empty_wooden_chessboard.jpg"
+  credit: "Paul Lloyd"
+  license: "CC0 1.0"
 
 angleHook: "Angle: une trajectoire contemporaine (IM très jeune) permet de parler de méthode: volume, tournois, régularité - sans inventer d’anecdotes."
 surprisingFact: "Il a obtenu le titre de Maître International (IM) en 2022."

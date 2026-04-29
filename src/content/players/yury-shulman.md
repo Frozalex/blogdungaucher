@@ -11,6 +11,13 @@ nationality: "Américain (né en Biélorussie)"
 era: "contemporain"
 style: ["universel", "pragmatique", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/GM_Yury_Shulman.jpg"
+  alt: "Yury Shulman (2008)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:GM_Yury_Shulman.jpg"
+  credit: "Francis Raymund Haro (Fransckie)"
+  license: "CC BY-SA 3.0"
+
 angleHook: "Shulman joue comme il enseigne: il élimine vite les fausses idées, construit une position “expliquable”, puis te force à défendre longtemps. Son avantage n’est pas un coup, c’est une clarté."
 surprisingFact: "Il a remporté le championnat des États-Unis (U.S. Championship) en 2005 - un tournoi où la “solidité” compte autant que l’inspiration."
 

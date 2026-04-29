@@ -11,6 +11,13 @@ nationality: "Cubain (puis États-Unis)"
 era: "contemporain"
 style: ["pragmatique", "positionnel", "tacticien"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Bruzon_lazaro_20081119_olympiade_dresden.jpg"
+  alt: "Lázaro Bruzón (Olympiade d'échecs, Dresde 2008)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Bruzon_lazaro_20081119_olympiade_dresden.jpg"
+  credit: "Frank Hoppe"
+  license: "Public domain"
+
 angleHook: "Lecture de style (hypothèse): Bruzón cherche souvent la ligne praticable plutôt que la ligne “la plus brillante”. Ça donne un jeu stable, difficile à faire dérailler."
 surprisingFact: "Il a été champion du monde junior (World Junior Championship) en 2000."
 

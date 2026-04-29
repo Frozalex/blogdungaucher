@@ -11,6 +11,13 @@ nationality: "Anglais"
 era: "contemporain"
 style: ["positionnel", "defenseur", "pragmatique", "endgame"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Hawkins,Jonathan_2015_Wien.JPG"
+  alt: "Jonathan Hawkins (Vienna Chess Open 2015)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Hawkins,Jonathan_2015_Wien.JPG"
+  credit: "GFHund"
+  license: "CC BY 4.0"
+
 angleHook: "Hawkins n’a pas gagné en “sachant plus de lignes”, mais en devenant le joueur qui ne panique jamais quand la tactique s’éteint. Son style révèle une personnalité de bâtisseur: patient, méthodique, obsédé par la preuve."
 surprisingFact: "Il est souvent cité comme un exemple de progression “tardive” (comparée aux prodiges) - et comme un joueur pour qui la technique de finale pèse lourd."
 

@@ -11,6 +11,13 @@ nationality: "Indien"
 era: "contemporain"
 style: ["universel", "pragmatique", "tacticien", "positionnel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Gukesh_D_at_the_Candidates_2024_tournament_01.jpg"
+  alt: "Gukesh D aux Candidats 2024"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Gukesh_D_at_the_Candidates_2024_tournament_01.jpg"
+  credit: "Eldar Azimov (Eldarado)"
+  license: "CC BY-SA 4.0"
+
 angleHook: "Son jeu est souvent décrit comme “mûr” pour son âge. Ici, on le lit comme une hypothèse de style: choix de risques, patience, et conversion sans forcer le spectaculaire."
 surprisingFact: "Ce qui frappe souvent, c’est l’écart entre l’âge et l’impression que laisse le jeu: pas forcément des coups viraux, mais une forme de sobriété."
 

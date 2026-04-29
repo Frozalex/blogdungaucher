@@ -11,6 +11,13 @@ nationality: "Hongrois"
 era: "moderne"
 style: ["strategue", "pragmatique"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Laszlo_Polgar.jpg"
+  alt: "László Polgár"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Laszlo_Polgar.jpg"
+  credit: "Susan Polgar"
+  license: "CC BY-SA 4.0"
+
 angleHook: "Polgár n’a pas cherché à convaincre par des discours: il a construit une expérience. Son approche révèle une personnalité: obsession de méthode, goût de la preuve, et une vision radicale de l’éducation."
 surprisingFact: "Son idée centrale est contre-intuitive: le talent n’est pas un préalable, c’est un résultat. Il a appliqué cette idée à la lettre - et le monde a dû regarder les résultats."
 

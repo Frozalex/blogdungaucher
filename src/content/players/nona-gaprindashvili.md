@@ -11,6 +11,13 @@ nationality: "Géorgienne"
 era: "sovietique"
 style: ["attaquant", "tacticien", "defenseur", "universel"]
 
+photo:
+  src: "https://commons.wikimedia.org/wiki/Special:FilePath/Weltmeister_1995_Bad_Liebenzell.jpg"
+  alt: "Nona Gaprindashvili et Evgeni Vasiukov (1995)"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Weltmeister_1995_Bad_Liebenzell.jpg"
+  credit: "Gerhard Hund (GFHund)"
+  license: "CC BY 3.0 / GFDL"
+
 angleHook: "Gaprindashvili ne gagne pas en “jouant prudemment parce qu’on l’attend”. Elle gagne en imposant le rythme. Son jeu révèle une personnalité: refus de la place assignée, appétit de confrontation, et fierté technique."
 surprisingFact: "Elle n’a pas seulement dominé le championnat du monde féminin: elle a aussi cherché (et souvent obtenu) des résultats contre des grands maîtres hommes - ce qui, à l’époque, était une rupture culturelle autant que sportive."
 
