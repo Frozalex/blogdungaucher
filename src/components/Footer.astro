@@ -63,6 +63,14 @@ const emailNote =
 
     <div class="footer-col fade-up" style="--motion-delay: 230ms;">
       <h2 data-t="footer.trustTitle">Confiance</h2>
+      <button
+        type="button"
+        class="footer-text-link"
+        id="footer-open-notification-settings"
+        data-t="footer.notificationSettings"
+      >
+        Notifications et cookies
+      </button>
       <a href={lang === "en" ? "/en/mentions-legales/" : lang === "de" ? "/de/mentions-legales/" : "/fr/mentions-legales/"} data-t="footer.legal">Mentions légales</a>
       <a href={lang === "en" ? "/en/politique-confidentialite/" : lang === "de" ? "/de/politique-confidentialite/" : "/fr/politique-confidentialite/"} data-t="footer.privacy">Confidentialité</a>
     </div>
@@ -75,6 +83,18 @@ const emailNote =
     </div>
   </div>
 </footer>
+
+<script is:inline>
+  document.addEventListener("astro:page-load", function bindFooterNotifPrefs() {
+    var btn = document.getElementById("footer-open-notification-settings");
+    if (!btn || btn.dataset.notifBound === "1") return;
+    btn.dataset.notifBound = "1";
+    btn.addEventListener("click", function () {
+      var manage = document.getElementById("cookie-manage");
+      if (manage) manage.click();
+    });
+  });
+</script>
 
 <style>
   .footer {
@@ -170,12 +190,28 @@ const emailNote =
     margin-bottom: 0.25rem;
   }
 
-  .footer-col a {
+  .footer-col a,
+  .footer-col .footer-text-link {
     color: var(--text-muted);
     font-size: 0.9rem;
     transition: color 150ms ease, transform 180ms var(--ease-soft);
   }
-  .footer-col a:hover {
+
+  .footer-text-link {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .footer-col a:hover,
+  .footer-text-link:hover {
     color: var(--green);
     transform: translateX(2px);
   }

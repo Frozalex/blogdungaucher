@@ -13,7 +13,7 @@
 # - DEPLOY_HOST     : IP ou hostname SSH du VPS (ex: 177.7.37.62)
 # - DEPLOY_USER     : utilisateur SSH (ex: root)
 # - DEPLOY_SSH_KEY   : clé privée PEM (multi-ligne) pour GitHub Actions
-# - ONESIGNAL_APP_ID, ONESIGNAL_API_KEYS : notification push après déploiement (optionnel)
+# - ONESIGNAL_APP_ID, ONESIGNAL_API_KEYS : même logique OneSignal que deploy.yml (optionnel)
 #
 # Sur le VPS, autorise la clé publique correspondante dans `~/.ssh/authorized_keys`.
 #
@@ -37,7 +37,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 2
 
       - name: Déployer via SSH
         uses: appleboy/ssh-action@v1.0.3
@@ -56,23 +56,40 @@ jobs:
           ONESIGNAL_API_KEYS: ${{ secrets.ONESIGNAL_API_KEYS }}
         run: |
           set -euo pipefail
+          if ! git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+            echo "Pas de nouvel article"
+            exit 0
+          fi
+          CONTENT_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^src/content/' || true)
+          if [ -z "$CONTENT_FILES" ]; then
+            echo "Pas de nouvel article"
+            exit 0
+          fi
+          MD_FILES=$(echo "$CONTENT_FILES" | grep '\.md$' || true)
+          if [ -z "$MD_FILES" ]; then
+            echo "Pas de nouvel article"
+            exit 0
+          fi
+          TARGET=$(echo "$MD_FILES" | sort | head -1)
           if [ -z "${ONESIGNAL_APP_ID:-}" ] || [ -z "${ONESIGNAL_API_KEYS:-}" ]; then
             echo "ONESIGNAL_APP_ID ou ONESIGNAL_API_KEYS absent — notification ignorée."
             exit 0
           fi
-          TITLE="$(git log -1 --pretty=%s)"
+          TITLE=$(awk '/^---$/{d++;if(d>=2)exit;next}d==1&&/^title:/{line=$0;sub(/^title:[[:space:]]+/,"",line);if(line~/^".*"$/){line=substr(line,2,length(line)-2)}print line;exit}' "$TARGET")
           if [ -z "$TITLE" ]; then
-            TITLE="Déploiement blogdungaucher.com"
+            TITLE="Nouvel article"
           fi
+          BODY_FR="Nouvel article publié sur Blog d'un Gaucher"
           PAYLOAD="$(jq -n \
             --arg app_id "$ONESIGNAL_APP_ID" \
             --arg title "$TITLE" \
+            --arg body "$BODY_FR" \
             --arg url "https://blogdungaucher.com/fr/" \
             '{
               app_id: $app_id,
               included_segments: ["All"],
               headings: { fr: $title, en: $title },
-              contents: { fr: "Le blog a été mis à jour.", en: "The blog has been updated." },
+              contents: { fr: $body, en: $body },
               url: $url,
               web_url: $url
             }')"
