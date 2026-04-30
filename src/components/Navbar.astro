@@ -242,9 +242,9 @@ const linkKey: Record<string, string> = {
     transition: filter 260ms ease;
   }
 
-  /* Mode sombre : le logo noir devient blanc */
+  /* Mode sombre : inversion des couleurs du SVG (#1e1e1e → clair) */
   [data-theme="dark"] .logo-img {
-    filter: brightness(0) invert(1);
+    filter: invert(1);
   }
 
   .logo-text {

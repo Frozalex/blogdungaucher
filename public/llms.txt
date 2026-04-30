@@ -1,0 +1,22 @@
+# Blog d’un Gaucher — LLMs / IA
+#
+# Objectif: faciliter l’exploration du site par les assistants IA (contenu public).
+# Source de vérité: les pages HTML du site + le sitemap.
+#
+# Accès
+- Le contenu est public et peut être crawlé.
+- Les URLs ont un slash final (trailingSlash: "always").
+
+# Sitemaps
+- https://blogdungaucher.com/sitemap.xml
+
+# Pages clés
+- https://blogdungaucher.com/
+- https://blogdungaucher.com/fr/
+- https://blogdungaucher.com/en/
+- https://blogdungaucher.com/de/
+- https://blogdungaucher.com/fr/blog/
+
+# Notes
+- Si une page contient `<meta name="robots" content="noindex">`, elle ne doit pas être indexée.
+

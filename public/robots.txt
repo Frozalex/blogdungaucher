@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemap principal (généré par src/pages/sitemap.xml.ts)
+Sitemap: https://blogdungaucher.com/sitemap.xml
+
