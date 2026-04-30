@@ -30,7 +30,7 @@ iconicGame:
 
 tags: ["pays-bas", "urss", "auteur", "writings"]
 seoTitle: "Gennadi Sosonko : style, écriture, leçons | Blog d'un Gaucher"
-seoDescription: "Portrait de Gennadi Sosonko : faits essentiels, angle ‘joueur + écrivain’ et leçons concrètes (sans invention)."
+seoDescription: "Portrait de Gennadi Sosonko : faits essentiels, angle ‘joueur + écrivain’ et leçons concrètes."
 ---
 
 ## Fiche (faits)

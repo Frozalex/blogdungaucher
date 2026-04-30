@@ -18,7 +18,7 @@ photo:
   credit: "Krtschil"
   license: "CC BY-SA 4.0"
 
-angleHook: "Lecture (hypothèse): Lobron est un joueur de clarté - peu de concessions, des décisions propres, et une tendance à ‘faire jouer’ l’adversaire dans un couloir étroit."
+angleHook: "Lobron incarne un jeu de clarté : peu de concessions, des décisions propres, et une tendance à ‘faire jouer’ l’adversaire dans un couloir étroit."
 surprisingFact: "Il a été champion d’Allemagne à deux reprises."
 
 iconicGame:

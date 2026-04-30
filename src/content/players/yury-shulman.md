@@ -19,10 +19,10 @@ photo:
   license: "CC BY-SA 3.0"
 
 angleHook: "Shulman joue comme il enseigne: il élimine vite les fausses idées, construit une position “expliquable”, puis te force à défendre longtemps. Son avantage n’est pas un coup, c’est une clarté."
-surprisingFact: "Il a remporté le championnat des États-Unis (U.S. Championship) en 2005 - un tournoi où la “solidité” compte autant que l’inspiration."
+surprisingFact: "Il a remporté le championnat des États-Unis (U.S. Championship) en 2005, un tournoi où la solidité compte autant que l’inspiration."
 
 iconicGame:
-  title: "Une victoire de conversion “sans panique” (format pédagogique)"
+  title: "Une victoire de conversion “sans panique”"
   keyMoments:
     - "Ouverture solide: rien n’est “forcé”, mais tout vise des cases utiles."
     - "Shulman repère la pièce adverse la plus active et la neutralise."
@@ -39,11 +39,11 @@ seoDescription: "Portrait de Yury Shulman : ce que son style révèle, son impac
 
 Le fait le plus intéressant chez Yury Shulman, ce n’est pas une “phrase” ou une anecdote: c’est une réalité de palmarès. **Il a gagné le championnat des États-Unis en 2005**, dans un environnement où tu ne survis pas sur un seul bon jour.
 
-Ce que ça suggère sur son jeu (hypothèse raisonnable en regardant ses parties): Shulman ne cherche pas à gagner sur un coup unique. Il cherche à gagner sur une idée simple et durable: *priorité claire, contrainte claire, et une finale où l’adversaire doit défendre longtemps*.
+Ce que ça suggère sur son jeu : Shulman ne cherche pas à gagner sur un coup unique. Il cherche à gagner sur une idée simple et durable : *priorité claire, contrainte claire, et une finale où l’adversaire doit défendre longtemps*.
 
 ## Biographie essentielle (3 paragraphes)
 
-Né le 29 avril 1975 à Minsk, Shulman se forme dans un environnement où les échecs sont très présents. Ce qui ressort surtout de son profil (et que tu peux “copier” sans être GM), c’est une priorité: **rendre une position compréhensible**. Pas “intuitif” au sens mystique; plutôt une discipline: savoir ce qui compte, et ce qui ne compte pas.
+Né le 29 avril 1975 à Minsk, Shulman se forme dans un environnement où les échecs sont très présents. Ce qui ressort surtout de son profil, c’est une priorité : **rendre une position compréhensible**. Pas “intuitif” au sens mystique, plutôt une discipline : savoir ce qui compte, et ce qui ne compte pas.
 
 Il devient grand maître en 1995, puis s’installe aux États-Unis. Dans un circuit fait de tournois ouverts, d’horaires durs et d’adversaires très variés, il faut apprendre à gagner dans des conditions imparfaites: pas toujours la meilleure préparation, pas toujours les meilleurs repères… mais une capacité à ramener la partie vers un terrain jouable.
 

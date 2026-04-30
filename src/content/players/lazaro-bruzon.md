@@ -18,7 +18,7 @@ photo:
   credit: "Frank Hoppe"
   license: "Public domain"
 
-angleHook: "Lecture de style (hypothèse): Bruzón cherche souvent la ligne praticable plutôt que la ligne “la plus brillante”. Ça donne un jeu stable, difficile à faire dérailler."
+angleHook: "Bruzón cherche souvent la ligne praticable plutôt que la ligne “la plus brillante”. Ça donne un jeu stable, difficile à faire dérailler."
 surprisingFact: "Il a été champion du monde junior (World Junior Championship) en 2000."
 
 iconicGame:
@@ -30,7 +30,7 @@ iconicGame:
 
 tags: ["cuba", "etats-unis", "junior", "stabilite"]
 seoTitle: "Lázaro Bruzón : style, psychologie (prudente), leçons | Blog d'un Gaucher"
-seoDescription: "Portrait de Lázaro Bruzón : faits essentiels, lecture de style sans invention, une partie emblématique racontée simplement et des leçons concrètes."
+seoDescription: "Portrait de Lázaro Bruzón : faits essentiels, une partie emblématique racontée simplement et des leçons concrètes."
 ---
 
 ## Fiche (faits)

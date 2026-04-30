@@ -18,7 +18,7 @@ photo:
   credit: "Eldar Azimov (Eldarado)"
   license: "CC BY-SA 4.0"
 
-angleHook: "Son jeu est souvent décrit comme “mûr” pour son âge. Ici, on le lit comme une hypothèse de style: choix de risques, patience, et conversion sans forcer le spectaculaire."
+angleHook: "Son jeu est souvent décrit comme “mûr” pour son âge : choix de risques, patience, et conversion sans forcer le spectaculaire."
 surprisingFact: "Ce qui frappe souvent, c’est l’écart entre l’âge et l’impression que laisse le jeu: pas forcément des coups viraux, mais une forme de sobriété."
 
 iconicGame:
@@ -50,7 +50,7 @@ Et cette capacité produit un effet étrange sur l’adversaire. Contre un jeune
 
 ## Sa contribution unique aux échecs
 
-Il est encore tôt pour parler d’“héritage” au sens historique. Ce qu’on peut dire sans inventer, c’est plutôt ceci: certaines de ses parties donnent l’impression d’une **précocité sans hystérie** (moins d’excès, plus de décisions).
+Il est encore tôt pour parler d’“héritage” au sens historique. Ce qu’on peut dire, c’est plutôt ceci : certaines de ses parties donnent l’impression d’une **précocité sans hystérie**, avec moins d’excès et plus de décisions.
 
 Dans un écosystème où les jeunes talents sont poussés à être spectaculaires, Gukesh montre que la vraie différence se fait souvent ici:
 

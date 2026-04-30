@@ -18,7 +18,7 @@ photo:
   credit: "Paweł Grochowalski"
   license: "CC BY-SA 3.0"
 
-angleHook: "Lecture (hypothèse): Bellón représente une force ‘de championnat’ - gagner souvent contre plus faible, et rester solide contre plus fort."
+angleHook: "Bellón représente une force ‘de championnat’ : gagner souvent contre plus faible, et rester solide contre plus fort."
 surprisingFact: "Il a été champion d’Espagne à cinq reprises."
 
 iconicGame:

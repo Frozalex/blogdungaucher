@@ -18,7 +18,7 @@ photo:
   credit: "GFHund"
   license: "CC BY 3.0 / GFDL"
 
-angleHook: "Lecture (hypothèse): son style ‘pro’ ressemble à une compétence de survie - minimiser les risques inutiles, et gagner quand l’occasion est réelle."
+angleHook: "Son style ‘pro’ ressemble à une compétence de survie : minimiser les risques inutiles, et gagner quand l’occasion est réelle."
 surprisingFact: "Il a remporté le Hastings Chess Festival 1977/1978 (performance marquante)."
 
 iconicGame:
@@ -30,7 +30,7 @@ iconicGame:
 
 tags: ["urss", "israel", "etats-unis", "hastings"]
 seoTitle: "Roman Dzindzichashvili : style, longévité, leçons | Blog d'un Gaucher"
-seoDescription: "Portrait de Roman Dzindzichashvili : faits essentiels, lecture de style prudente et leçons concrètes (sans invention)."
+seoDescription: "Portrait de Roman Dzindzichashvili : faits essentiels, lecture de style prudente et leçons concrètes."
 ---
 
 ## 1 fait surprenant (accroche)
@@ -45,7 +45,7 @@ Roman Dzindzichashvili (né en 1944) a un parcours qui traverse plusieurs contex
 
 Le repère “Hastings” sert ici comme point d’appui : c’est le type de tournoi où la performance se gagne autant par technique que par endurance. Gagner ce genre d’événement, c’est souvent savoir marquer des points sans se mettre en danger inutilement.
 
-Pour ton blog, c’est une fiche “survie” : pas au sens dramatique, au sens stratégique. Comment tenir, puis retourner la partie quand l’autre s’impatiente ?
+Pour ton blog, c’est une fiche “survie” au sens stratégique. Comment tenir, puis retourner la partie quand l’autre s’impatiente ?
 
 ## Sa contribution unique aux échecs
 

@@ -34,7 +34,7 @@ seoDescription: "Portrait de Mikhail Golubev : faits essentiels et lecture de st
 
 ## 1 fait surprenant (accroche)
 
-Un joueur qui écrit (sérieusement) sur les échecs révèle souvent une chose : il ne joue pas seulement des coups, il joue des **explications**. Ça ne veut pas dire qu’il est “moins combatif” — ça veut dire qu’il a une façon d’organiser le chaos : structures, plans typiques, décisions.
+Un joueur qui écrit sur les échecs révèle souvent une chose : il ne joue pas seulement des coups, il joue des **explications**. Ça ne veut pas dire qu’il est “moins combatif”. Ça veut dire qu’il a une façon d’organiser le chaos : structures, plans typiques, décisions.
 
 La surprise, c’est que cette capacité d’auteur est aussi une arme pratique : mettre des mots sur une position, c’est souvent mettre de l’ordre… et jouer plus vite, plus proprement.
 

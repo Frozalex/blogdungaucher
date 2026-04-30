@@ -58,7 +58,7 @@ Ce n’est pas spectaculaire, mais c’est ce qui fait gagner des tournois.
 
 ## 1 partie emblématique commentée simplement
 
-Une partie “propre” (au sens utile) se déroule souvent ainsi :
+Une partie “propre” se déroule souvent ainsi :
 
 1. **Développement cohérent** : pas de temps perdu, roi en sécurité.
 2. **Pression** : petites menaces répétées, plutôt qu’un all-in.

@@ -150,6 +150,16 @@ où $R_A$ et $R_B$ sont les cotes Elo respectives. Si $R_A = R_B$, on obtient $\
 
 Cette formule est la **fonction logistique**, une fonction en forme de S que l'on rencontre aussi en modélisation démographique, en médecine (probabilité d'un événement clinique) et dans les réseaux de neurones (fonction d'activation sigmoïde). Le faire remarquer au jury montre que tu places l'exemple dans une famille mathématique plus large.
 
+#### Code (Maths → NSI) — calculer une probabilité Elo en Python
+
+```python
+def proba_elo(ra: int, rb: int) -> float:
+    return 1 / (1 + 10 ** ((rb - ra) / 400))
+
+print(round(proba_elo(1800, 2000), 3))  # ≈ 0.240
+print(round(proba_elo(2000, 2000), 3))  # 0.500
+```
+
 La mise à jour des cotes après chaque partie obéit à une règle simple :
 
 $$\text{Nouvelle cote de } A = R_A + K\,(\text{résultat réel} - \text{résultat attendu})$$
@@ -161,6 +171,19 @@ C'est un **estimateur bayésien** : chaque partie apporte de l'information sur l
 ### L'impact des probabilités sur les ouvertures et les stratégies
 
 Les bases de données de parties (Lichess dispose d'une base publique de plus de **3 milliards de parties**) permettent de calculer la fréquence de chaque ouverture et le taux de victoire associé pour les Blancs et les Noirs.
+
+#### Code (NSI) — requête SQL simple sur une base de parties
+
+```sql
+SELECT
+  ouverture,
+  COUNT(*) AS nb_parties,
+  ROUND(100.0 * SUM(CASE WHEN resultat = '1-0' THEN 1 ELSE 0 END) / COUNT(*), 1) AS pct_blanc
+FROM parties
+GROUP BY ouverture
+ORDER BY nb_parties DESC
+LIMIT 10;
+```
 
 Par exemple, après 1.e4 e5 2.Nf3 Nc6 (ouverture italienne), les bases contemporaines donnent une victoire des Blancs dans environ 40 % des cas, une nulle dans 30 %, une victoire des Noirs dans 30 %. Ce sont des **fréquences relatives** qui convergent vers des probabilités théoriques à mesure que la taille de l'échantillon grandit.
 
@@ -178,7 +201,51 @@ Le principe est simple : à chaque nœud de l'arbre, le joueur dont c'est le tou
 
 En pratique, on ne peut pas aller jusqu'aux feuilles de l'arbre (le mat). On s'arrête à une profondeur fixe et on applique une **fonction d'évaluation** qui donne une valeur numérique à chaque position intermédiaire (matériel restant, contrôle de l'espace, sécurité du roi...). Cette fonction est l'intelligence du programme : deux moteurs avec le même minimax mais des fonctions d'évaluation différentes auront des forces très différentes.
 
+#### Code (NSI) — minimax (récursivité en Python)
+
+```python
+def minimax(position, profondeur, est_max):
+    if profondeur == 0 or position.terminee():
+        return position.evaluer()
+
+    coups = position.coups_legaux()
+
+    if est_max:
+        meilleur = float("-inf")
+        for coup in coups:
+            meilleur = max(meilleur, minimax(position.jouer(coup), profondeur - 1, False))
+        return meilleur
+    else:
+        meilleur = float("+inf")
+        for coup in coups:
+            meilleur = min(meilleur, minimax(position.jouer(coup), profondeur - 1, True))
+        return meilleur
+```
+
 L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)) et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer. En pratique, il réduit la complexité effective de $O(b^d)$ à environ $O(b^{d/2})$ ; pour $b = 35$ et $d = 10$, le nombre de nœuds passe d'environ $2{,}7 \times 10^{15}$ à $\sim 5{,}2 \times 10^7$. C'est un résultat d'algorithmique accessible en terminale NSI.
+
+#### Code (NSI) — alpha-bêta (l’optimisation “visible”)
+
+```python
+def alpha_beta(position, profondeur, alpha, beta, est_max):
+    if profondeur == 0 or position.terminee():
+        return position.evaluer()
+
+    coups = position.coups_legaux()
+
+    if est_max:
+        for coup in coups:
+            alpha = max(alpha, alpha_beta(position.jouer(coup), profondeur - 1, alpha, beta, False))
+            if beta <= alpha:
+                break
+        return alpha
+    else:
+        for coup in coups:
+            beta = min(beta, alpha_beta(position.jouer(coup), profondeur - 1, alpha, beta, True))
+            if beta <= alpha:
+                break
+        return beta
+```
 
 ### L'apprentissage automatique et les supercalculateurs d'échecs
 

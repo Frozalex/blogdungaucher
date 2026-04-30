@@ -18,7 +18,7 @@ photo:
   credit: "Kadbzh (Klaod an Duigou)"
   license: "CC BY-SA 4.0"
 
-angleHook: "Angle: le ‘joueur dur’ (hypothèse) - pas spectaculaire, mais fiable. La fiche devient une leçon sur la rentabilité de la solidité."
+angleHook: "Le ‘joueur dur’ : pas spectaculaire, mais fiable. La fiche devient une leçon sur la rentabilité de la solidité."
 surprisingFact: "Il a remporté le championnat de Bulgarie en 1982."
 
 iconicGame:

@@ -18,7 +18,7 @@ photo:
   credit: "Koen Suyk / Anefo (Nationaal Archief)"
   license: "CC0 1.0"
 
-angleHook: "Angle: chez Karpov, la psychologie n’est pas ‘agressive’ au sens hollywoodien. C’est une psychologie de contrainte: réduire les options jusqu’à provoquer l’erreur."
+angleHook: "Chez Karpov, la psychologie n’est pas ‘agressive’ au sens hollywoodien. C’est une psychologie de contrainte : réduire les options jusqu’à provoquer l’erreur."
 surprisingFact: "Il a été champion du monde (1975–1985)."
 
 iconicGame:

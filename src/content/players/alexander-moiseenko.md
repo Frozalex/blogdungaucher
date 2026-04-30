@@ -18,7 +18,7 @@ photo:
   credit: "GFHund"
   license: "CC BY-SA 3.0"
 
-angleHook: "Angle: la ‘force de championnat’ (hypothèse de lecture) - accepter des positions légèrement meilleures, puis convertir sans se précipiter."
+angleHook: "La ‘force de championnat’ : accepter des positions légèrement meilleures, puis convertir sans se précipiter."
 surprisingFact: "Il a remporté le championnat d’Europe individuel 2013."
 
 iconicGame:

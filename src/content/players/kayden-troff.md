@@ -17,7 +17,7 @@ photo:
   credit: "Paul Lloyd"
   license: "CC0 1.0"
 
-angleHook: "Lecture (hypothèse): chez lui, la vitesse n’est pas une agitation. C’est une capacité à garder un plan simple malgré le tempo."
+angleHook: "Chez lui, la vitesse n’est pas une agitation. C’est une capacité à garder un plan simple malgré le tempo."
 surprisingFact: "Il est devenu grand maître à 16 ans (2014)."
 
 iconicGame:
