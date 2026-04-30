@@ -65,6 +65,53 @@ const structuredDataItems = structuredData
     ? structuredData
     : [structuredData]
   : [];
+
+const inLanguage = lang === "en" ? "en-US" : lang === "de" ? "de-DE" : "fr-FR";
+
+// Fallback: si une page "article" oublie de fournir structuredData,
+// on injecte un BlogPosting minimal pour ne jamais "perdre" le schema.org.
+const fallbackArticleJsonLd =
+  type === "article" && structuredDataItems.length === 0
+    ? ({
+        "@context": "https://schema.org",
+        "@type": ["Article", "BlogPosting"],
+        headline: title,
+        name: title,
+        description,
+        inLanguage,
+        url: canonicalUrl,
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": canonicalUrl,
+        },
+        image: {
+          "@type": "ImageObject",
+          url: socialImage,
+        },
+        ...(publishDate ? { datePublished: publishDate.toISOString() } : {}),
+        ...(modifiedDate ? { dateModified: modifiedDate.toISOString() } : {}),
+        ...(section ? { articleSection: section } : {}),
+        ...(tags?.length ? { keywords: tags.join(", ") } : {}),
+        publisher: {
+          "@type": "Organization",
+          name: siteConfig.name,
+          url: siteConfig.siteUrl,
+          logo: {
+            "@type": "ImageObject",
+            url: `${siteConfig.siteUrl}/images/logo.svg`,
+          },
+        },
+        author: {
+          "@type": "Person",
+          name: "Le Gaucher",
+          url: siteConfig.siteUrl,
+        },
+      } satisfies Record<string, unknown>)
+    : null;
+
+const allStructuredDataItems = fallbackArticleJsonLd
+  ? [fallbackArticleJsonLd]
+  : structuredDataItems;
 ---
 <!DOCTYPE html>
 <html lang={lang} data-server-lang={lang}>
@@ -345,7 +392,7 @@ const structuredDataItems = structuredData
     <meta name="twitter:image" content={socialImage} />
     <meta name="twitter:url" content={canonicalUrl} />
 
-    {structuredDataItems.map((item) => (
+    {allStructuredDataItems.map((item) => (
       <script type="application/ld+json" set:html={JSON.stringify(item)} />
     ))}
 
