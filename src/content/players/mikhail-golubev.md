@@ -32,16 +32,40 @@ seoTitle: "Mikhail Golubev : ouvertures, style, leçons | Blog d'un Gaucher"
 seoDescription: "Portrait de Mikhail Golubev : faits essentiels et lecture de style prudente, orientée progression."
 ---
 
-## Fiche (faits)
+## 1 fait surprenant (accroche)
 
-- **Né**: 30 mai 1970 (Odesa)  
-- **Nationalité**: Ukraine  
-- **Repère vérifiable**: GM (1996), champion d’Ukraine (1996)
+Un joueur qui écrit (sérieusement) sur les échecs révèle souvent une chose : il ne joue pas seulement des coups, il joue des **explications**. Ça ne veut pas dire qu’il est “moins combatif” — ça veut dire qu’il a une façon d’organiser le chaos : structures, plans typiques, décisions.
 
-## Lecture de style (analyse)
+La surprise, c’est que cette capacité d’auteur est aussi une arme pratique : mettre des mots sur une position, c’est souvent mettre de l’ordre… et jouer plus vite, plus proprement.
 
-Dans un site “maillage interne”, Golubev est précieux pour relier des pages “ouvertures/structures” à une fiche joueur: la théorie n’est pas un musée, c’est une manière d’obtenir un type de milieu de jeu.
+## Biographie essentielle (3 paragraphes)
 
-## Leçon pratique
+Mikhail Golubev (né en 1970) est un profil parfait pour ton angle “utile” : un joueur de haut niveau qui a aussi contribué comme auteur. On n’a pas besoin d’inventer une personnalité : le simple fait d’être à la fois joueur et pédagogue définit déjà une posture.
+
+Tes repères factuels (champion d’Ukraine, GM) permettent de dire l’essentiel : il connaît la compétition *et* la nécessité de formaliser. C’est rare, et très exploitable pour un blog : tu peux relier une idée d’ouverture à une décision concrète en milieu de jeu.
+
+Enfin, ce type de fiche est un pont : au lieu de dire “il jouait la Sicilienne”, tu peux dire “il aimait tel type de structure, donc tel plan revient souvent”.
+
+## Sa contribution unique aux échecs
+
+Golubev est une contribution “méthode” :
+
+- **Structurer** : identifier les plans avant de calculer.
+- **Relier** : ouverture → milieu de jeu → finale.
+- **Transmettre** : rendre une idée répétable (donc apprenable).
+
+## 1 partie emblématique commentée simplement
+
+Une partie “ouverture → plan” ressemble à ça :
+
+1. **Choix de structure** : l’ouverture sert à obtenir une position voulue.
+2. **Plan typique** : on sait quel camp a quel objectif (cases, ruptures de pions).
+3. **Conversion** : l’avantage devient concret (activité, faiblesse ciblée, finale).
+
+Le détail important : tu apprends plus en comprenant le plan qu’en mémorisant 20 coups.
+
+## Ce qu’on peut apprendre de lui en tant que joueur
 
 - Choisis des ouvertures qui te donnent **des plans répétés**, pas seulement “des coups”.
+- Quand tu analyses, note **3 idées** (cases fortes, ruptures, échanges) plutôt que 30 variantes.
+- Travaille les finales liées à tes structures : c’est là que la théorie devient “gagnante”.
