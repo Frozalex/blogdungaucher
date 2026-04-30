@@ -1,45 +1,24 @@
-# ─────────────────────────────────────────────────────────────
-# Publication automatique différée  -  Blog d'un Gaucher
-# ─────────────────────────────────────────────────────────────
-#
-# Ce workflow se déclenche chaque matin à 06h00 UTC (08h00 Paris).
-# Il se connecte au VPS via SSH et exécute `/usr/local/bin/deploy-site.sh`.
-# Le site Astro reconstruit automatiquement, et les articles dont la
-# publishDate est passée apparaissent d'eux-mêmes.
-#
-# ── CONFIGURATION (à faire une seule fois) ───────────────────
-#
-# GitHub → Settings → Secrets and variables → Actions → New repository secret :
-# - DEPLOY_HOST     : IP ou hostname SSH du VPS (ex: 177.7.37.62)
-# - DEPLOY_USER     : utilisateur SSH (ex: root)
-# - DEPLOY_SSH_KEY   : clé privée PEM (multi-ligne) pour GitHub Actions
-# - ONESIGNAL_APP_ID, ONESIGNAL_API_KEYS : notification push après déploiement (optionnel)
-#
-# Sur le VPS, autorise la clé publique correspondante dans `~/.ssh/authorized_keys`.
-#
-# ─────────────────────────────────────────────────────────────
-
-name: Publication automatique
+name: Deploy
 
 on:
-  # Déclenche chaque matin à 06:00 UTC
-  schedule:
-    - cron: "0 6 * * *"
-  # Permet aussi un déclenchement manuel depuis l'onglet Actions
+  push:
+    branches: [main]
   workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
 
 jobs:
   deploy:
-    name: Déclencher le déploiement
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
-      - name: Déployer via SSH
+      - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.DEPLOY_HOST }}

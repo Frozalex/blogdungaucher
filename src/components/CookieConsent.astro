@@ -1,6 +1,6 @@
 <div class="cookie-banner" id="cookie-banner" hidden>
   <p>
-    Ce site utilise des cookies pour la mesure d'audience et l'affichage publicitaire.
+    Ce site utilise des cookies pour la mesure d'audience, la publicité et, si tu l'acceptes, les notifications push.
     Tu peux accepter, refuser ou modifier ce choix à tout moment.
   </p>
   <fieldset class="cookie-options">
@@ -12,6 +12,10 @@
     <label>
       <input id="cookie-marketing" type="checkbox" />
       Publicité personnalisée
+    </label>
+    <label>
+      <input id="cookie-notifications" type="checkbox" />
+      Notifications push du blog (OneSignal)
     </label>
   </fieldset>
   <div class="cookie-actions">
@@ -38,7 +42,18 @@
     function readConsent() {
       try {
         const raw = localStorage.getItem(KEY);
-        return raw ? JSON.parse(raw) : null;
+        if (!raw) return null;
+        const p = JSON.parse(raw);
+        if (p && typeof p === "object" && !("notifications" in p)) {
+          const migrated = {
+            ...p,
+            notifications: Boolean(p.marketing),
+            updatedAt: p.updatedAt || new Date().toISOString(),
+          };
+          localStorage.setItem(KEY, JSON.stringify(migrated));
+          return migrated;
+        }
+        return p;
       } catch {
         return null;
       }
@@ -48,6 +63,7 @@
       const normalized = {
         analytics: Boolean(payload.analytics),
         marketing: Boolean(payload.marketing),
+        notifications: Boolean(payload.notifications),
         updatedAt: new Date().toISOString(),
       };
       localStorage.setItem(KEY, JSON.stringify(normalized));
@@ -66,11 +82,13 @@
       const manage = document.getElementById("cookie-manage");
       const analyticsInput = document.getElementById("cookie-analytics");
       const marketingInput = document.getElementById("cookie-marketing");
-      if (!banner || !manage || !analyticsInput || !marketingInput) return;
+      const notificationsInput = document.getElementById("cookie-notifications");
+      if (!banner || !manage || !analyticsInput || !marketingInput || !notificationsInput) return;
 
       function syncForm(consent) {
         analyticsInput.checked = Boolean(consent?.analytics);
         marketingInput.checked = Boolean(consent?.marketing);
+        notificationsInput.checked = Boolean(consent?.notifications);
       }
 
       const current = readConsent();
@@ -81,13 +99,21 @@
         el.onclick = () => {
           const action = el.getAttribute("data-cookie-action");
           if (action === "accept") {
-            const next = writeConsent({ analytics: true, marketing: true });
+            const next = writeConsent({
+              analytics: true,
+              marketing: true,
+              notifications: true,
+            });
             syncForm(next);
             toggleUi(next, banner, manage);
             return;
           }
           if (action === "reject") {
-            const next = writeConsent({ analytics: false, marketing: false });
+            const next = writeConsent({
+              analytics: false,
+              marketing: false,
+              notifications: false,
+            });
             syncForm(next);
             toggleUi(next, banner, manage);
             return;
@@ -96,6 +122,7 @@
             const next = writeConsent({
               analytics: analyticsInput.checked,
               marketing: marketingInput.checked,
+              notifications: notificationsInput.checked,
             });
             syncForm(next);
             toggleUi(next, banner, manage);

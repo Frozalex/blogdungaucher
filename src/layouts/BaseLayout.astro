@@ -112,6 +112,8 @@ const fallbackArticleJsonLd =
 const allStructuredDataItems = fallbackArticleJsonLd
   ? [fallbackArticleJsonLd]
   : structuredDataItems;
+
+const oneSignalAppId = import.meta.env.PUBLIC_ONESIGNAL_APP_ID ?? "";
 ---
 <!DOCTYPE html>
 <html lang={lang} data-server-lang={lang}>
@@ -396,6 +398,10 @@ const allStructuredDataItems = fallbackArticleJsonLd
       <script type="application/ld+json" set:html={JSON.stringify(item)} />
     ))}
 
+    <script is:inline define:vars={{ oneSignalAppId }}>
+      globalThis.__PUBLIC_ONESIGNAL_APP_ID__ = oneSignalAppId;
+    </script>
+
     <script is:inline>
       (() => {
         const CONSENT_KEY = "blogdungaucher.cookieConsent.v1";
@@ -405,12 +411,21 @@ const allStructuredDataItems = fallbackArticleJsonLd
         const state = {
           analyticsLoaded: false,
           adsLoaded: false,
+          onesignalLoaded: false,
         };
 
         function readConsent() {
           try {
             const raw = localStorage.getItem(CONSENT_KEY);
-            return raw ? JSON.parse(raw) : null;
+            if (!raw) return null;
+            const p = JSON.parse(raw);
+            if (p && typeof p === "object" && !("notifications" in p)) {
+              return {
+                ...p,
+                notifications: Boolean(p.marketing),
+              };
+            }
+            return p;
           } catch {
             return null;
           }
@@ -448,10 +463,36 @@ const allStructuredDataItems = fallbackArticleJsonLd
           );
         }
 
+        /** OneSignal : opt-in via la case « notifications » du bandeau cookies. App ID : PUBLIC_ONESIGNAL_APP_ID au build. */
+        function enableOneSignal() {
+          if (state.onesignalLoaded) return;
+          const appId =
+            typeof globalThis.__PUBLIC_ONESIGNAL_APP_ID__ === "string"
+              ? globalThis.__PUBLIC_ONESIGNAL_APP_ID__.trim()
+              : "";
+          if (!appId) return;
+          state.onesignalLoaded = true;
+          window.OneSignalDeferred = window.OneSignalDeferred || [];
+          window.OneSignalDeferred.push(async function (OneSignal) {
+            await OneSignal.init({
+              appId,
+              safari_web_id: "web.onesignal.auto.29ad6177-53c3-46b5-8017-0e7b95131b37",
+              notifyButton: { enable: true },
+              serviceWorkerPath: "onesignal/OneSignalSDKWorker.js",
+              serviceWorkerParam: { scope: "/onesignal/" },
+            });
+          });
+          const os = document.createElement("script");
+          os.src = "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js";
+          os.defer = true;
+          document.head.appendChild(os);
+        }
+
         function applyConsent(consent) {
           if (!consent) return;
           if (consent.analytics) enableAnalytics();
           if (consent.marketing) enableAds();
+          if (consent.notifications) enableOneSignal();
         }
 
         function bootConsentScripts() {
