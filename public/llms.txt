@@ -1,22 +1,61 @@
-# Blog d’un Gaucher — LLMs / IA
+# Blog d'un Gaucher — LLMs / IA
 #
-# Objectif: faciliter l’exploration du site par les assistants IA (contenu public).
+# Objectif: faciliter l'exploration du site par les assistants IA (contenu public).
 # Source de vérité: les pages HTML du site + le sitemap.
-#
+
+# Identité du site
+- Nom : Blog d'un Gaucher
+- Langue principale : Français (versions EN et DE disponibles)
+- Thématique : Échecs — science du jeu, psychologie, neurosciences, société
+- Ligne éditoriale : Vulgarisation scientifique rigoureuse autour des échecs
+- Public cible : Joueurs d'échecs, curieux, lycéens, enseignants
+
 # Accès
-- Le contenu est public et peut être crawlé.
-- Les URLs ont un slash final (trailingSlash: "always").
+- Le contenu est entièrement public et peut être crawlé librement
+- Les URLs ont un slash final (trailingSlash: "always")
+- Pas de contenu derrière authentification
 
 # Sitemaps
 - https://blogdungaucher.com/sitemap.xml
 
-# Pages clés
-- https://blogdungaucher.com/
-- https://blogdungaucher.com/fr/
-- https://blogdungaucher.com/en/
-- https://blogdungaucher.com/de/
-- https://blogdungaucher.com/fr/blog/
+# Structure du site
+- /fr/blog/          → Articles de fond (science, psychologie, société)
+- /fr/joueurs/       → Portraits de grands joueurs d'échecs
+- /fr/grand-oral/    → Ressources pour le Grand Oral terminale
+- /fr/science/       → Rubrique science du jeu
+- /fr/esprit/        → Rubrique psychologie et mental
+- /fr/societe/       → Rubrique échecs et société
+- /fr/analyses/      → Analyses de parties et stratégies
+- /fr/about/         → À propos de l'auteur
 
-# Notes
-- Si une page contient `<meta name="robots" content="noindex">`, elle ne doit pas être indexée.
+# Pages clés
+- https://blogdungaucher.com/fr/
+- https://blogdungaucher.com/fr/blog/
+- https://blogdungaucher.com/fr/joueurs/
+- https://blogdungaucher.com/fr/grand-oral/
+
+# Articles phares
+- https://blogdungaucher.com/fr/blog/les-echecs-et-les-mathematiques/
+- https://blogdungaucher.com/fr/blog/les-echecs-et-le-cerveau/
+- https://blogdungaucher.com/fr/blog/psychologie-du-joueur-d-echecs/
+- https://blogdungaucher.com/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/
+- https://blogdungaucher.com/fr/blog/echecs-et-autisme/
+- https://blogdungaucher.com/fr/blog/echecs-et-femmes/
+- https://blogdungaucher.com/fr/blog/les-echecs-et-l-addiction/
+- https://blogdungaucher.com/fr/blog/echecs-et-seniors/
+
+# Portraits joueurs
+- https://blogdungaucher.com/fr/joueurs/magnus-carlsen/
+- https://blogdungaucher.com/fr/joueurs/jorden-van-foreest/
+- https://blogdungaucher.com/fr/joueurs/yury-shulman/
+
+# Grand Oral
+- https://blogdungaucher.com/fr/blog/grand-oral-mathematiques-echecs/
+- https://blogdungaucher.com/fr/blog/grand-oral-maths-spe-echecs/
+- https://blogdungaucher.com/fr/blog/grand-oral-nsi-echecs/
+
+# Notes techniques
+- Si une page contient <meta name="robots" content="noindex">, elle ne doit pas être indexée
+- hreflang configuré pour FR, EN, DE sur chaque page
+- Schema.org Article + BreadcrumbList + FAQPage présents
 
