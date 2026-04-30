@@ -1,6 +1,17 @@
 User-agent: *
 Allow: /
 
-# Sitemap principal (généré par src/pages/sitemap.xml.ts)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://blogdungaucher.com/sitemap.xml
 
