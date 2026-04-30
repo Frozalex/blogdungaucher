@@ -122,7 +122,7 @@ const players = defineCollection({
         title: z.string(),
         /** PGN ou lien (si tu préfères stocker à part). */
         pgn: z.string().optional(),
-        /** Une version ultra-simple (3–7 moments clés) si tu ne mets pas le PGN. */
+        /** Une version ultra-simple (3-7 moments clés) si tu ne mets pas le PGN. */
         keyMoments: z.array(z.string()).optional(),
       })
       .optional(),

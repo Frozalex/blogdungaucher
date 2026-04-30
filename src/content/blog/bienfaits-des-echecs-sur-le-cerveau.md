@@ -12,7 +12,7 @@ seoTitle: "Bienfaits des échecs sur le cerveau : la science"
 seoDescription: "Mémoire de travail, plasticité cérébrale, protection contre le vieillissement cognitif : ce que la recherche mesure vraiment sur les effets des échecs sur le cerveau."
 ---
 
-Les échecs font-ils vraiment quelque chose au cerveau ? La question est sérieuse, et la réponse est plus nuancée que les deux extrêmes qu'on entend souvent : « les échecs rendent intelligent » d'un côté, « c'est du marketing » de l'autre. La recherche en neurosciences et en psychologie cognitive a accumulé suffisamment de données sur ce sujet pour dépasser les deux caricatures.
+Les échecs font-ils vraiment quelque chose au cerveau ? La question est sérieuse, et la réponse est plus nuancée que les deux extrêmes que tu entends souvent : « les échecs rendent intelligent » d'un côté, « c'est du marketing » de l'autre. La recherche en neurosciences et en psychologie cognitive a accumulé suffisamment de données sur ce sujet pour dépasser les deux caricatures.
 
 Ce que tu trouveras ici, ce ne sont pas des promesses : c'est un bilan honnête des preuves disponibles, avec les limites de chaque étude.
 
@@ -24,7 +24,7 @@ Ce que tu trouveras ici, ce ne sont pas des promesses : c'est un bilan honnête 
 
 ## Ce que le cerveau fait pendant une partie d'échecs
 
-Avant de parler des bienfaits, il faut comprendre ce que le cerveau fait réellement pendant qu'on joue.
+Avant de parler des bienfaits, il faut comprendre ce que ton cerveau fait réellement pendant que tu joues.
 
 Les études d'imagerie cérébrale, notamment celles d'[Ognjen Amidzic](https://www.nature.com/articles/nature01112) et ses collègues publiées dans *Nature* en 2001, ont comparé des joueurs experts et des joueurs novices en train d'analyser des positions d'échecs. Le résultat est frappant : les cerveaux des experts et des novices n'utilisent pas les mêmes zones.
 
@@ -66,7 +66,7 @@ Une étude longitudinale publiée dans le *New England Journal of Medicine* en 2
 
 D'autres études ont mesuré que la pratique des jeux de stratégie est associée à un ralentissement du déclin de la mémoire épisodique, de la vitesse de traitement, et des capacités de planification chez les personnes âgées. Ce ne sont pas des effets thérapeutiques sur une démence installée, mais des effets protecteurs sur le rythme du déclin.
 
-Il est important de noter que ces associations ne prouvent pas la causalité. Il est possible que les personnes cognitivement plus robustes pratiquent davantage les jeux de stratégie, et non l'inverse. Mais le faisceau d'indices pointe dans une direction cohérente.
+Ces associations ne prouvent pas la causalité : les personnes déjà plus robustes peuvent aussi choisir plus souvent les jeux de stratégie, et non l’inverse. Le faisceau d’indices reste néanmoins cohérent avec un effet protecteur partiel, pas avec une certitude absolue.
 
 ## La pensée planificatrice et le cortex préfrontal
 

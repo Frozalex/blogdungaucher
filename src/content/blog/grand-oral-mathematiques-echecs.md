@@ -150,7 +150,7 @@ où $R_A$ et $R_B$ sont les cotes Elo respectives. Si $R_A = R_B$, on obtient $\
 
 Cette formule est la **fonction logistique**, une fonction en forme de S que l'on rencontre aussi en modélisation démographique, en médecine (probabilité d'un événement clinique) et dans les réseaux de neurones (fonction d'activation sigmoïde). Le faire remarquer au jury montre que tu places l'exemple dans une famille mathématique plus large.
 
-#### Code (Maths → NSI) — calculer une probabilité Elo en Python
+#### Code (Maths → NSI)  -  calculer une probabilité Elo en Python
 
 ```python
 def proba_elo(ra: int, rb: int) -> float:
@@ -172,7 +172,7 @@ C'est un **estimateur bayésien** : chaque partie apporte de l'information sur l
 
 Les bases de données de parties (Lichess dispose d'une base publique de plus de **3 milliards de parties**) permettent de calculer la fréquence de chaque ouverture et le taux de victoire associé pour les Blancs et les Noirs.
 
-#### Code (NSI) — requête SQL simple sur une base de parties
+#### Code (NSI)  -  requête SQL simple sur une base de parties
 
 ```sql
 SELECT
@@ -201,7 +201,7 @@ Le principe est simple : à chaque nœud de l'arbre, le joueur dont c'est le tou
 
 En pratique, on ne peut pas aller jusqu'aux feuilles de l'arbre (le mat). On s'arrête à une profondeur fixe et on applique une **fonction d'évaluation** qui donne une valeur numérique à chaque position intermédiaire (matériel restant, contrôle de l'espace, sécurité du roi...). Cette fonction est l'intelligence du programme : deux moteurs avec le même minimax mais des fonctions d'évaluation différentes auront des forces très différentes.
 
-#### Code (NSI) — minimax (récursivité en Python)
+#### Code (NSI)  -  minimax (récursivité en Python)
 
 ```python
 def minimax(position, profondeur, est_max):
@@ -224,7 +224,7 @@ def minimax(position, profondeur, est_max):
 
 L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)) et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer. En pratique, il réduit la complexité effective de $O(b^d)$ à environ $O(b^{d/2})$ ; pour $b = 35$ et $d = 10$, le nombre de nœuds passe d'environ $2{,}7 \times 10^{15}$ à $\sim 5{,}2 \times 10^7$. C'est un résultat d'algorithmique accessible en terminale NSI.
 
-#### Code (NSI) — alpha-bêta (l’optimisation “visible”)
+#### Code (NSI)  -  alpha-bêta (l’optimisation “visible”)
 
 ```python
 def alpha_beta(position, profondeur, alpha, beta, est_max):
@@ -430,10 +430,10 @@ Et si l'on te demande pourquoi tu as choisi les échecs, la réponse honnête et
 
 ### Sources et références
 
-- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*, 41(314), 256–275. (Estimation du nombre de parties d'échecs possibles, fondement du « nombre de Shannon ».)
+- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*, 41(314), 256-275. (Estimation du nombre de parties d'échecs possibles, fondement du « nombre de Shannon ».)
 - **Zermelo, E. (1913).** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* Proceedings of the Fifth International Congress of Mathematicians. (Démonstration de l'existence d'une stratégie gagnante dans tout jeu fini à information parfaite.)
 - **von Neumann, J. & Morgenstern, O. (1944).** [*Theory of Games and Economic Behavior.*](https://press.princeton.edu/books/paperback/9780691130613/theory-of-games-and-economic-behavior) Princeton University Press. (Fondation formelle de la théorie des jeux et de l'algorithme minimax.)
 - **Elo, A. E. (1978).** *The Rating of Chessplayers, Past and Present.* Arco Publishing. (Présentation du système probabiliste de classement Elo et de son fondement statistique.)
-- **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419), 1140–1144. (Publication originale d'AlphaZero et de ses résultats contre Stockfish.)
+- **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419), 1140-1144. (Publication originale d'AlphaZero et de ses résultats contre Stockfish.)
 - **Euler, L. (1759).** *Solution d'une question curieuse qui ne paroit soumise à aucune analyse.* Mémoires de l'Académie Royale des Sciences. (Étude pionnière du problème du cavalier et de la règle de Warnsdorff.)
 - **Warnsdorff, H. C. (1823).** *Des Rösselsprunges einfachste und allgemeinste Lösung.* Schmalkalden. (Formulation originale de la règle heuristique pour le tour du cavalier.)

@@ -46,7 +46,7 @@ Ce volume élevé, maintenu sans récupération adéquate et sans variété suff
 
 ### La pression des résultats et du classement
 
-Comme discuté dans d'autres articles, le classement Elo est pour beaucoup de joueurs une source de pression chronique. Quand chaque partie devient une question de "défense de l'Elo", le stress cumulé sur des dizaines de parties par mois est significatif. Cette pression prolongée sans victoires ou sans progrès perçu érode la motivation et contribue à l'épuisement.
+Comme le développe l’article [Psychologie du joueur d’échecs](/blog/psychologie-du-joueur-d-echecs/) (section sur l’identité piégée dans l’Elo), le classement est pour beaucoup une source de pression chronique. Quand chaque partie devient une question de "défense de l'Elo", le stress cumulé sur des dizaines de parties par mois est significatif. Cette pression prolongée sans victoires ou sans progrès perçu érode la motivation et contribue à l'épuisement.
 
 ### La comparaison avec d'autres joueurs
 

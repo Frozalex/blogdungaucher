@@ -17,7 +17,7 @@ En 1913, lors du cinquième Congrès International des Mathématiciens à Cambri
 > **L'essentiel en 4 points :**
 > - Zermelo prouve que dans tout jeu fini à deux joueurs à information parfaite, le résultat sous jeu parfait est déterminé à l'avance
 > - Pour les échecs, cela signifie que soit Blanc gagne, soit Noir gagne, soit la partie est nulle sous jeu parfait des deux côtés
-> - Nous ne savons pas encore laquelle de ces trois options est vraie
+> - Personne ne sait encore laquelle de ces trois options est vraie
 > - Ce paradoxe révèle que la "perfection" aux échecs est un idéal mathématiquement défini mais physiquement inaccessible
 
 ## Ernst Zermelo et la théorie des ensembles
@@ -34,13 +34,13 @@ Le théorème de Zermelo s'applique à une classe de jeux qui incluent les éche
 
 La démonstration utilise une induction sur la longueur maximale possible de la partie. Elle est remarquablement élégante dans sa logique.
 
-Supposons que nous soyons en fin de partie. Chaque position terminale est soit une victoire pour Blanc, soit une victoire pour Noir, soit une nulle. Maintenant, remontons d'un coup. Si c'est le tour de Blanc, il peut choisir parmi les positions terminales qui lui sont accessibles celle qui lui est la plus favorable. De même pour Noir. En remontant récursivement ainsi depuis toutes les positions terminales jusqu'à la position initiale, chaque position dans l'arbre du jeu reçoit une valeur définie : victoire Blanc, victoire Noir, ou nulle.
+Imagine une fin de partie atteinte. Chaque position terminale est soit une victoire pour Blanc, soit une victoire pour Noir, soit une nulle. Maintenant, remontons d'un coup. Si c'est le tour de Blanc, il peut choisir parmi les positions terminales qui lui sont accessibles celle qui lui est la plus favorable. De même pour Noir. En remontant récursivement ainsi depuis toutes les positions terminales jusqu'à la position initiale, chaque position dans l'arbre du jeu reçoit une valeur définie : victoire Blanc, victoire Noir, ou nulle.
 
 La valeur de la position initiale est donc déterminée. Le premier joueur à jouer a soit une stratégie pour forcer la victoire, soit les deux joueurs peuvent forcer le nul, soit le second joueur a une stratégie pour forcer la victoire.
 
 ### Pourquoi c'est paradoxal
 
-Le paradoxe de Zermelo n'est pas logique. C'est un paradoxe pratique. Le théorème nous dit que la réponse existe et est unique. Mais il ne nous dit pas quelle est cette réponse. Et surtout, il ne nous dit pas comment la trouver.
+Le paradoxe de Zermelo n'est pas logique. C'est un paradoxe pratique. Le théorème te garantit que la réponse existe et est unique. Mais il ne te dit pas laquelle c'est. Et surtout, il ne te dit pas comment la trouver.
 
 Pour trouver la valeur réelle de la position initiale des échecs, il faudrait parcourir l'intégralité de l'arbre du jeu. Cet arbre contient environ $10^{120}$ feuilles selon l'estimation de Shannon. Pour référence, l'âge de l'univers est d'environ $4 \times 10^{17}$ secondes, et le nombre d'atomes dans l'univers observable est d'environ $10^{80}$.
 
@@ -52,7 +52,7 @@ La grande question que le théorème de Zermelo laisse en suspens est : quelle e
 
 La majorité des grands maîtres et des théoriciens pensent que la réponse est le nul. L'argument empirique est fort : au plus haut niveau de jeu, les nulles sont très fréquentes, et la position initiale est considérée comme légèrement favorable aux Blancs (qui ont le premier mouvement) mais pas suffisamment pour forcer la victoire contre une défense optimale.
 
-Mais ce n'est qu'une intuition basée sur l'observation du jeu humain. Ce n'est pas une preuve. Il est mathématiquement possible que Blanc ait une victoire forcée cachée dans des profondeurs que nous n'avons jamais explorées. C'est improbable selon les experts, mais non démontré comme impossible.
+Mais ce n'est qu'une intuition basée sur l'observation du jeu humain. Ce n'est pas une preuve. Il est mathématiquement possible que Blanc ait une victoire forcée cachée dans des profondeurs que nul humain n'a jamais explorées. C'est improbable selon les experts, mais non démontré comme impossible.
 
 Quelques travaux récents en informatique tentent d'aborder la question de façon asymptotique. [Komodo](https://fr.wikipedia.org/wiki/Komodo_(moteur_d%27%C3%A9checs)), [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(moteur_d%27%C3%A9checs)) et leurs successeurs évaluent la position initiale comme légèrement favorable aux Blancs (de l'ordre de +0,2 à +0,3 pion d'avantage), mais cette évaluation est elle-même basée sur des fonctions heuristiques, pas sur un calcul exhaustif.
 
@@ -64,7 +64,7 @@ Les [bases de données de fins de partie](https://fr.wikipedia.org/wiki/Base_de_
 
 La fin de partie Roi-Dame-Tour contre Roi-Dame, par exemple, avait été longtemps considérée comme nulle. Les tablebases ont révélé que dans certaines configurations, un camp peut forcer la victoire en... 517 coups. Aucun humain, même le meilleur Grand Maître du monde, ne pourrait trouver ce chemin par raisonnement propre. La profondeur de la vérité échiquéenne dans ces configurations dépasse largement les capacités humaines.
 
-Ce résultat est instructif. Il montre que notre intuition sur ce qui est "gagné" ou "nul" peut être profondément erronée quand on s'éloigne des positions familières. Il renforce le mystère de Zermelo : la vérité existe, mais elle peut se cacher à des profondeurs qui défient l'entendement humain.
+Ce résultat est instructif. Il montre que ton intuition sur ce qui est « gagné » ou « nul » peut être profondément erronée quand tu t'éloignes des positions familières. Il renforce le mystère de Zermelo : la vérité existe, mais elle peut se cacher à des profondeurs qui défient l'entendement humain.
 
 ## L'imperfection structurelle du joueur humain
 
@@ -74,17 +74,17 @@ Un joueur humain, même le meilleur du monde, joue une approximation de la strat
 
 [Magnus Carlsen](https://fr.wikipedia.org/wiki/Magnus_Carlsen), considéré par beaucoup comme le meilleur joueur de l'histoire, commet encore des erreurs. [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(moteur_d%27%C3%A9checs)), le meilleur moteur d'échecs actuel, commet aussi des erreurs par rapport au jeu parfait théorique, des erreurs bien plus rares et bien plus petites, mais des erreurs tout de même.
 
-La différence entre Carlsen et Stockfish n'est pas qualitative (l'un joue parfaitement et l'autre non), elle est quantitative (l'un est une approximation plus fine que l'autre). Ce point de vue change profondément la façon dont on pense au progrès aux échecs. On ne tend pas vers la perfection, on tente de s'en approcher.
+La différence entre Carlsen et Stockfish n'est pas qualitative (l'un joue parfaitement et l'autre non), elle est quantitative (l'un est une approximation plus fine que l'autre). Ce point de vue change profondément ta façon de penser le progrès aux échecs : tu ne tends pas vers la perfection, tu tentes de t'en approcher.
 
 ## Le jeu parfait n'est pas le jeu idéal
 
-Une autre dimension du paradoxe de Zermelo est philosophique. Même si nous connaissions la stratégie parfaite, voudrait-on la jouer ?
+Une autre dimension du paradoxe de Zermelo est philosophique. Même si la stratégie parfaite était écrite noir sur blanc, la jouerais-tu vraiment ?
 
-Imaginez que Blanc ait une victoire forcée en 80 coups depuis la position initiale. Jouer cette victoire forcée signifierait que toute partie serait, en réalité, déjà terminée au coup 1. L'adversaire pourrait jouer n'importe quoi, le résultat serait le même. Les échecs, en tant que jeu, cesseraient d'exister. La compétition disparaîtrait. L'art stratégique s'effondrerait.
+Imagine que Blanc ait une victoire forcée en 80 coups depuis la position initiale. Jouer cette victoire forcée signifierait que toute partie serait, en réalité, déjà terminée au coup 1. L'adversaire pourrait jouer n'importe quoi, le résultat serait le même. Les échecs, en tant que jeu, cesseraient d'exister. La compétition disparaîtrait. L'art stratégique s'effondrerait.
 
 Le fait que les échecs soient si complexes qu'aucune stratégie parfaite n'est connue est précisément ce qui les rend vivants. L'imperfection des joueurs humains est la condition nécessaire à l'existence du jeu en tant que discipline artistique et sportive.
 
-Ce paradoxe est profond : la beauté et la richesse des échecs reposent sur l'ignorance collective de leur vérité mathématique. Si nous savions tout, le jeu mourrait. Le mystère est son carburant.
+Ce paradoxe est profond : la beauté et la richesse des échecs reposent sur l'ignorance collective de leur vérité mathématique. Si tout le monde savait tout d'avance, le jeu mourrait. Le mystère est son carburant.
 
 ## Zermelo et la hiérarchie des jeux résolus
 

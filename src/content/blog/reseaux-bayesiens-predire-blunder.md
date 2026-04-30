@@ -96,7 +96,7 @@ Le modèle bayésien a des limites importantes dans ce contexte. La principale e
 
 Pour le joueur amateur, le raisonnement reste utile mais moins précis. Les probabilités sont des priors génériques basés sur des statistiques de joueurs de même niveau, non sur des données individuelles.
 
-Une autre limite est le biais de confirmation : en cherchant des signaux de risque de blunder chez l'adversaire, on risque de trouver ce qu'on cherche même si ce n'est pas réellement présent. La discipline bayésienne exige de considérer également les preuves contre l'hypothèse.
+Une autre limite est le biais de confirmation : en cherchant des signaux de risque de blunder chez l'adversaire, tu risques de trouver ce que tu cherches même si ce n'est pas réellement présent. La discipline bayésienne exige de considérer également les preuves contre l'hypothèse.
 
 ## Applications concrètes pour le joueur pratique
 

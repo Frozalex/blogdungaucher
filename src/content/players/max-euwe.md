@@ -20,7 +20,7 @@ photo:
   license: "CC0 1.0"
 
 angleHook: "Angle: Euwe permet de raconter un champion du monde via une notion: la structure (décision, méthode, clarté) plutôt que le romantisme."
-surprisingFact: "Il a été champion du monde (1935–1937)."
+surprisingFact: "Il a été champion du monde (1935-1937)."
 
 iconicGame:
   title: "Une partie ‘méthode’"
@@ -38,7 +38,7 @@ seoDescription: "Portrait de Max Euwe : faits essentiels, angle ‘logique et m�
 
 - **Né**: 20 mai 1901 - **mort**: 26 novembre 1981  
 - **Nationalité**: Pays-Bas  
-- **Repère vérifiable**: champion du monde (1935–1937)
+- **Repère vérifiable**: champion du monde (1935-1937)
 
 ## Lecture de style (analyse)
 

@@ -46,7 +46,7 @@ Le programme NSI de terminale inclut la récursivité comme concept fondamental.
 
 Voici la structure en pseudo-code Python que tu peux expliquer ligne par ligne devant le jury :
 
-#### Code (Python) — minimax (récursivité)
+#### Code (Python)  -  minimax (récursivité)
 
 ```python
 def minimax(position, profondeur, est_maximiseur):
@@ -86,7 +86,7 @@ L'élagage **alpha-bêta** est une optimisation du minimax qui évite d'explorer
 
 L'idée : on maintient deux bornes, **alpha** (le meilleur score que le joueur maximisant peut garantir) et **beta** (le meilleur score que le joueur minimisant peut garantir). Si à un nœud on découvre que la valeur sera forcément pire que ce que l'on peut déjà garantir, on abandonne l'exploration de ce sous-arbre.
 
-#### Code (Python) — alpha-bêta (élagage)
+#### Code (Python)  -  alpha-bêta (élagage)
 
 ```python
 def alpha_beta(position, profondeur, alpha, beta, est_maximiseur):
@@ -136,7 +136,7 @@ La différence avec un arbre binaire de recherche (vu en cours) : dans un arbre 
 
 La représentation la plus directe d'un échiquier en Python est un tableau bidimensionnel 8×8 :
 
-#### Code (Python) — échiquier en tableau 2D
+#### Code (Python)  -  échiquier en tableau 2D
 
 ```python
 # Représentation de l'échiquier en début de partie
@@ -167,7 +167,7 @@ La représentation **bitboard** est utilisée dans tous les moteurs professionne
 
 Principe : chaque type de pièce (pions blancs, tours noires, etc.) est représenté par un **entier de 64 bits**. Le bit *i* vaut 1 si la pièce occupe la case *i* (cases numérotées de 0 à 63, de a1 à h8).
 
-#### Code (Python) — bitboard (opérations bit à bit)
+#### Code (Python)  -  bitboard (opérations bit à bit)
 
 ```python
 # En Python, les entiers ont précision arbitraire
@@ -202,7 +202,7 @@ Ce code mobilise les **opérateurs bit à bit** Python : `&` (ET), `|` (OU), `~`
 
 La **table de transposition** est un exemple direct de structure de données clé-valeur (dictionnaire en Python) utilisée pour la mémoïsation, un concept du programme NSI :
 
-#### Code (Python) — table de transposition (mémoïsation)
+#### Code (Python)  -  table de transposition (mémoïsation)
 
 ```python
 # Table de transposition simplifiée
@@ -260,7 +260,7 @@ Cette distinction est l'une des questions les plus probables du jury sur un suje
 
 Le **PGN** (*Portable Game Notation*) est le format standard de stockage des parties d'échecs. Un fichier PGN contient des **métadonnées structurées** entre crochets, puis la liste des coups :
 
-#### Exemple (PGN) — fichier texte structuré
+#### Exemple (PGN)  -  fichier texte structuré
 
 ```text
 [Event "World Chess Championship 1997"]
@@ -282,7 +282,7 @@ Pour NSI, ce format illustre plusieurs notions :
 
 Un **parseur PGN simple** en Python utilise les regex :
 
-#### Code (Python) — parser PGN (regex)
+#### Code (Python)  -  parser PGN (regex)
 
 ```python
 import re
@@ -332,7 +332,7 @@ Cette requête SQL illustre les notions NSI de **bases de données relationnelle
 
 Pour stocker efficacement une position d'échecs, les moteurs utilisent le **hachage de Zobrist** : on associe à chaque (pièce, case) un entier aléatoire de 64 bits, et la valeur de hachage de la position entière est le XOR de tous ces entiers. Modifier un coup revient à faire deux opérations XOR (retirer la pièce de sa case, la placer sur la nouvelle case).
 
-#### Code (Python) — hachage de Zobrist (XOR)
+#### Code (Python)  -  hachage de Zobrist (XOR)
 
 ```python
 import random
@@ -390,7 +390,7 @@ Précision importante : AlphaZero est de l'**apprentissage par renforcement**, p
 
 - **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*, 41(314). (Fondation de l'algorithme minimax appliqué aux échecs.)
 - **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero : apprentissage par renforcement et MCTS.)
-- **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*, 6(4), 293–326. (Analyse formelle de la complexité de l'élagage alpha-bêta.)
+- **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*, 6(4), 293-326. (Analyse formelle de la complexité de l'élagage alpha-bêta.)
 - **Zobrist, A. L. (1970).** *A New Hashing Method with Application for Game Playing.* ICCA Journal. (Invention du hachage de Zobrist pour les tables de transposition.)
 - **Documentation Stockfish.** [*Stockfish Chess Engine : Source code.*](https://github.com/official-stockfish/Stockfish) GitHub. (Code source du moteur open source, référence pour l'implémentation réelle.)
 - **Lichess Open Database.** [*lichess.org/database*](https://database.lichess.org). (Base de données publique de parties d'échecs au format PGN, utilisable pour les exemples SQL.)

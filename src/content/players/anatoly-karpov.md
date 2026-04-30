@@ -19,7 +19,7 @@ photo:
   license: "CC0 1.0"
 
 angleHook: "Chez Karpov, la psychologie n’est pas ‘agressive’ au sens hollywoodien. C’est une psychologie de contrainte : réduire les options jusqu’à provoquer l’erreur."
-surprisingFact: "Il a été champion du monde (1975–1985)."
+surprisingFact: "Il a été champion du monde (1975-1985)."
 
 iconicGame:
   title: "Une partie ‘étouffer’"
@@ -37,7 +37,7 @@ seoDescription: "Portrait d’Anatoli Karpov : faits essentiels, lecture de styl
 
 - **Né**: 23 mai 1951  
 - **Nationalité**: URSS / Russie  
-- **Repère vérifiable**: champion du monde (1975–1985)
+- **Repère vérifiable**: champion du monde (1975-1985)
 
 ## Lecture de style (analyse)
 

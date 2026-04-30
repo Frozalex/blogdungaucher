@@ -12,7 +12,7 @@ seoTitle: "Théorie des jeux aux échecs : le guide complet"
 seoDescription: "Minimax, équilibre de Nash, jeux à somme nulle : comment la théorie des jeux explique la stratégie aux échecs et ce qu'elle révèle sur la prise de décision."
 ---
 
-Un joueur d'échecs ne joue pas seul. Chaque coup qu'il pose sur l'échiquier est une réponse implicite à un adversaire qui lui aussi calcule, anticipe et cherche à maximiser son avantage. Cette interdépendance des décisions est exactement ce qu'étudie la théorie des jeux. Et les échecs ne sont pas un exemple parmi d'autres dans ce domaine : ils en sont l'un des cas fondateurs.
+Tu ne joues pas seul. Chaque coup que tu poses sur l'échiquier est une réponse implicite à un adversaire qui, lui aussi, calcule, anticipe et cherche à maximiser son avantage. Cette interdépendance des décisions est exactement ce qu'étudie la théorie des jeux. Et les échecs ne sont pas un exemple parmi d'autres dans ce domaine : ils en sont l'un des cas fondateurs.
 
 > **L'essentiel en 4 points :**
 > - Les échecs sont un jeu à somme nulle, à deux joueurs, à information parfaite et déterministe
@@ -42,7 +42,7 @@ Pour la théorie des jeux, les échecs présentent plusieurs propriétés fondam
 
 En 1913, le mathématicien [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) a démontré un résultat fondamental pour les jeux à deux joueurs, à information parfaite, sans hasard et à nombre fini de coups. Dans tout jeu de ce type, l'une des trois situations suivantes est nécessairement vraie : soit le premier joueur a une stratégie gagnante, soit le second joueur a une stratégie gagnante, soit les deux joueurs peuvent forcer le nul.
 
-Appliqué aux échecs, cela signifie qu'il existe en théorie une "vérité" de la position initiale. Soit les Blancs peuvent forcer la victoire, soit les Noirs le peuvent, soit la partie est nulle sous jeu parfait des deux côtés. Nous ne savons pas encore laquelle de ces trois options est la bonne, et les mathématiques actuelles sont incapables de le déterminer en raison de la complexité combinatoire colossale du jeu. Mais la réponse existe.
+Appliqué aux échecs, cela signifie qu'il existe en théorie une "vérité" de la position initiale. Soit les Blancs peuvent forcer la victoire, soit les Noirs le peuvent, soit la partie est nulle sous jeu parfait des deux côtés. Personne ne sait encore laquelle de ces trois options est la bonne, et les mathématiques actuelles sont incapables de le déterminer en raison de la complexité combinatoire colossale du jeu. Mais la réponse existe.
 
 Ce résultat est à la fois rassurant sur le plan logique et vertigineux sur le plan pratique.
 
@@ -52,7 +52,7 @@ L'algorithme [minimax](https://fr.wikipedia.org/wiki/Algorithme_minimax) est dir
 
 Blanc cherche à maximiser son avantage. Noir cherche à minimiser l'avantage de Blanc. À chaque tour, chaque joueur suppose que l'adversaire jouera le coup optimal de son point de vue. Cette hypothèse réciproque crée un arbre de décision dans lequel chaque noeud représente une position et chaque branche un coup légal.
 
-Formellement, si l'on note $v(p)$ la valeur d'une position $p$ pour les Blancs :
+Formellement, si tu notes $v(p)$ la valeur d'une position $p$ pour les Blancs :
 
 $$v(p) = \max_{c \in C(p)} v(\text{résultat}(p, c)) \quad \text{si c'est le tour des Blancs}$$
 $$v(p) = \min_{c \in C(p)} v(\text{résultat}(p, c)) \quad \text{si c'est le tour des Noirs}$$
@@ -105,11 +105,11 @@ Malgré toute sa puissance, la théorie des jeux bute sur la complexité combina
 
 Les jeux plus simples ont été résolus. Le [morpion](https://fr.wikipedia.org/wiki/Morpion) a été résolu trivialement. Les [dames](https://fr.wikipedia.org/wiki/Dames_(jeu)) ont été résolues en 2007 par Jonathan Schaeffer et son équipe : c'est un nul sous jeu parfait. Le jeu de [Nim](https://fr.wikipedia.org/wiki/Jeu_de_Nim) est résolu analytiquement. Mais les échecs restent ouverts.
 
-Ce n'est pas une limite de la théorie des jeux en tant que discipline : la théorie nous dit que la réponse existe. C'est simplement que les ressources de calcul nécessaires pour la trouver dépassent ce qui est physiquement accessible, et le restera probablement pour longtemps.
+Ce n'est pas une limite de la théorie des jeux en tant que discipline : la théorie affirme au moins que la réponse existe. C'est simplement que les ressources de calcul nécessaires pour la trouver dépassent ce qui est physiquement accessible, et le restera probablement pour longtemps.
 
 ## Pourquoi jouer aux échecs reste humain
 
-La théorie des jeux nous dit que les échecs ont une structure mathématique parfaitement déterminée. Elle nous dit que sous jeu parfait, le résultat est fixé à l'avance. Elle nous dit que l'algorithme minimax est la réponse formelle à la question "quel est le meilleur coup".
+La théorie des jeux dit que les échecs ont une structure mathématique parfaitement déterminée ; que sous jeu parfait, le résultat est fixé à l'avance ; et que l'algorithme minimax est la réponse formelle à la question « quel est le meilleur coup ».
 
 Et pourtant, jouer aux échecs reste une expérience profondément humaine. Les contraintes cognitives, la fatigue, l'émotion, le temps limité sur la pendule, la pression psychologique de l'adversaire en face : tout cela transforme la théorie en quelque chose de vivant et d'imprévisible.
 

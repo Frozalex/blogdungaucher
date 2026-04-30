@@ -1,4 +1,4 @@
-# Blog d'un Gaucher — LLMs / IA
+# Blog d'un Gaucher  -  LLMs / IA
 #
 # Objectif: faciliter l'exploration du site par les assistants IA (contenu public).
 # Source de vérité: les pages HTML du site + le sitemap.
@@ -6,7 +6,7 @@
 # Identité du site
 - Nom : Blog d'un Gaucher
 - Langue principale : Français (versions EN et DE disponibles)
-- Thématique : Échecs — science du jeu, psychologie, neurosciences, société
+- Thématique : Échecs  -  science du jeu, psychologie, neurosciences, société
 - Ligne éditoriale : Vulgarisation scientifique rigoureuse autour des échecs
 - Public cible : Joueurs d'échecs, curieux, lycéens, enseignants
 

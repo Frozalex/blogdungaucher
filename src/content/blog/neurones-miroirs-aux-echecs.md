@@ -14,7 +14,7 @@ seoDescription: "Comment les neurones miroirs permettent d'anticiper les intenti
 
 Tu regardes une position complexe. Soudain, tu "vois" ce que l'adversaire veut faire. Pas de calcul long, pas de raisonnement explicite : une intuition directe de son intention. Tu joues un coup préventif. Il est surpris. Comment as-tu su ?
 
-Ce type d'intuition, cette capacité à simuler mentalement l'intention d'un autre agent, repose en partie sur un système neuronal découvert dans les années 1990 : les [neurones miroirs](https://fr.wikipedia.org/wiki/Neurone_miroir). Leur rôle aux échecs est plus profond qu'on ne le croit.
+Ce type d'intuition, cette capacité à simuler mentalement l'intention d'un autre agent, repose en partie sur un système neuronal découvert dans les années 1990 : les [neurones miroirs](https://fr.wikipedia.org/wiki/Neurone_miroir). Leur rôle aux échecs est plus profond que tu ne l'imagines.
 
 > **L'essentiel en 4 points :**
 > - Les neurones miroirs s'activent à la fois lors de l'exécution d'une action et lors de l'observation de la même action chez autrui
@@ -58,7 +58,7 @@ C'est ce qui explique les coups prophylactiques visionnaires que jouent parfois 
 
 ### L'exemple de la simulation inversée
 
-[Mikhail Botvinnik](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Botvinnik) recommandait à ses élèves une technique qu'on peut appeler l'analyse "en miroir" : analyser systématiquement chaque position depuis le point de vue de l'adversaire avant de jouer. "Qu'est-ce que je voudrais faire si j'étais à sa place ?" Cette question, répétée méthodiquement, force l'activation du système de simulation mentale.
+[Mikhail Botvinnik](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Botvinnik) recommandait à ses élèves une technique que tu peux appeler l'analyse "en miroir" : analyser systématiquement chaque position depuis le point de vue de l'adversaire avant de jouer. "Qu'est-ce que je voudrais faire si j'étais à sa place ?" Cette question, répétée méthodiquement, force l'activation du système de simulation mentale.
 
 Cette technique n'est pas simplement rhétorique. Elle engage activement les circuits miroirs, construisant progressivement une simulation plus riche et plus précise des intentions adverses.
 

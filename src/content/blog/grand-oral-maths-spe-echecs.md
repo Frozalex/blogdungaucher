@@ -23,13 +23,11 @@ faq:
     answer: "Les trois meilleures problématiques sont : (1) 'En quoi le jeu d'échecs constitue-t-il un modèle de la pensée combinatoire ?' (angle dénombrement + arbre des coups), (2) 'Dans quelle mesure les probabilités permettent-elles de modéliser et prédire la performance aux échecs ?' (angle loi binomiale + formule Elo), et (3) 'Comment les mathématiques expliquent-elles pourquoi les échecs ne seront jamais résolus par la force brute ?' (angle complexité algorithmique + nombre de Shannon)."
 ---
 
-Tu es en terminale spécialité Maths. Ton Grand Oral approche. Et tu te demandes comment trouver un sujet qui soit à la fois **ancré dans le programme**, personnel, et suffisamment original pour se démarquer de la vingtième présentation sur les fractales ou la suite de Fibonacci.
+**Contrat de lecture :** en dix minutes, tu sais **quel** chapitre du programme de Terminale Maths tu accroches **à quoi** sur l’échiquier, avec des calculs prêts pour le jury, trois problématiques toutes faites et un minutage pour vingt minutes d’oral.
 
-Voici ce sujet : **les échecs comme terrain d'application du programme de terminale Maths**.
+Tu es en spécialité Maths ; le Grand Oral approche. Tu cherches un sujet **ancré dans le programme**, personnel, et moins rabâché que la vingtième fractale ou la suite de Fibonacci.
 
-Pas en survol : en profondeur. Chaque chapitre du programme a son illustration exacte sur l'échiquier. La combinatoire dans l'explosion des positions. La loi binomiale dans la modélisation d'un tournoi. Les suites récurrentes dans le mécanisme de mise à jour Elo. L'algorithmique dans la récursivité du minimax. Et la théorie des probabilités dans la prédiction du résultat d'une partie entre deux joueurs de niveaux connus.
-
-Ce que cet article te donne : le contenu mathématique précis avec les formules de terminale, les exemples numériques calculables devant le jury, trois problématiques prêtes à l'emploi, et un plan minuté pour les vingt minutes de l'épreuve.
+**Proposition centrale :** les échecs comme terrain d’application **complet** du programme  -  combinatoire (explosion des positions), probabilités (tournoi, Elo), suites récurrentes (mise à jour de cote), algorithmique (minimax). Pas un survol : une table d’équivalences chapitre ↔ échiquier, puis les livrables ci-dessous (formules, exemples chiffrés, plans, questions jury).
 
 > **L'essentiel en 5 points :**
 > - La mise à jour Elo est une suite récurrente : $u_{n+1} = u_n + K(r_n - p_n)$

@@ -14,21 +14,21 @@ const horseSvg = (size, bg, fg, radius) => `<svg xmlns="http://www.w3.org/2000/s
 </svg>`;
 
 async function generate() {
-  // favicon-32x32.png — fallback pour navigateurs sans support SVG
+  // favicon-32x32.png  -  fallback pour navigateurs sans support SVG
   await sharp(Buffer.from(horseSvg(32, "#fcfaf6", "#18181b", 6)))
     .resize(32, 32)
     .png()
     .toFile(join(imagesDir, "favicon-32x32.png"));
   console.log("✓ favicon-32x32.png");
 
-  // favicon-16x16.png — très petit, contours nets
+  // favicon-16x16.png  -  très petit, contours nets
   await sharp(Buffer.from(horseSvg(16, "#fcfaf6", "#18181b", 4)))
     .resize(16, 16)
     .png()
     .toFile(join(imagesDir, "favicon-16x16.png"));
   console.log("✓ favicon-16x16.png");
 
-  // apple-touch-icon.png — 180x180 pour iOS (fond plein, pas transparent)
+  // apple-touch-icon.png  -  180x180 pour iOS (fond plein, pas transparent)
   await sharp(Buffer.from(horseSvg(180, "#fcfaf6", "#18181b", 34)))
     .resize(180, 180)
     .png()

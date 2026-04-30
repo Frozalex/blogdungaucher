@@ -48,4 +48,4 @@ ${pathsHtml}
 `;
 
 writeFileSync(OUTPUT, cleanSvg, "utf-8");
-console.log(`\n✓ ${OUTPUT} écrit — ${cleanSvg.length} octets (était ${src.length})`);
+console.log(`\n✓ ${OUTPUT} écrit  -  ${cleanSvg.length} octets (était ${src.length})`);

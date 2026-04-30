@@ -98,9 +98,7 @@ Cela signifie pratiquement que tu ne peux pas forcer le flow. Mais tu peux crée
 
 ## Équanimité au sommet : ce que Carlsen montre sur le mental (sans mythologie)
 
-Magnus Carlsen incarne mieux que quiconque l'aboutissement psychologique aux échecs. Magnus Carlsen est souvent décrit comme un génie technique. Ce qu'on oublie, c'est que sa vraie supériorité sur ses adversaires a souvent été psychologique.
-
-Carlsen a un don particulier : il ne semble pas avoir de position "préférée". Il joue aussi bien dans des positions équilibrées que dans des positions déséquilibrées, dans des fins de partie simples que dans des labyrinthes tactiques. Cette indifférence stratégique est une arme absolue. Ses adversaires essaient systématiquement d'orienter la partie vers un type de position qui pourrait le mettre mal à l'aise. Et ils échouent, parce qu'il ne semble rien craindre en particulier. Cette équanimité, la capacité à maintenir un état intérieur stable quelles que soient les turbulences extérieures, n'est pas naturelle. Elle se travaille, se cultive, et se construit dans des milliers de parties disputées avec la même intensité quelle que soit la position sur le plateau.
+[Magnus Carlsen](https://fr.wikipedia.org/wiki/Magnus_Carlsen) est souvent réduit au cliché du « génie technique » ; pourtant, une grande part de son avantage tient à l’équanimité : il ne semble pas avoir de position « préférée ». Il joue aussi bien dans des positions équilibrées que dans des positions déséquilibrées, dans des fins de partie simples que dans des labyrinthes tactiques. Cette indifférence stratégique est une arme absolue. Ses adversaires essaient systématiquement d'orienter la partie vers un type de position qui pourrait le mettre mal à l'aise. Et ils échouent, parce qu'il ne semble rien craindre en particulier. Cette équanimité, la capacité à maintenir un état intérieur stable quelles que soient les turbulences extérieures, n'est pas naturelle. Elle se travaille, se cultive, et se construit dans des milliers de parties disputées avec la même intensité quelle que soit la position sur le plateau.
 
 ## Ce que l’échiquier dit de toi (et que tu ne veux pas entendre)
 
@@ -112,9 +110,9 @@ Le vrai progrès n’est pas de ne plus avoir peur de perdre. C’est d’appren
 
 ## Le meilleur joueur, c’est souvent le plus lucide - pas le plus fort
 
-Le mental aux échecs, ce n’est pas une aura mystique : c’est une **capacité à rester joueur** quand la position te dit que tu t’es trompé. Pas à être indestructible, mais à être **moins naïve** avec tes propres patterns.
+Le mental aux échecs, ce n’est pas une aura mystique : c’est une **capacité à rester joueur** quand la position te dit que tu t’es trompé. Pas à être indestructible, mais à être **moins naïf** avec tes propres patterns.
 
-L’échiquier renvoie un miroir impitoyable. Il te montre comment tu réagis à la pression, comment tu gères la peur et l’orgueil, comment tu te relèves après une erreur. Ce n’est pas toujours confortable. Mais c’est toujours instructif.
+Le plateau continue d’afficher ce que tu refuses parfois de voir : ta réaction à la pression, à la peur et à l’orgueil, et la façon dont tu te relèves après une erreur. Ce n’est pas toujours confortable ; c’est toujours instructif.
 
 
 ---

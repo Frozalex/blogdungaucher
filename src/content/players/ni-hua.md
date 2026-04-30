@@ -19,7 +19,7 @@ photo:
   license: "Public domain"
 
 angleHook: "Angle: l’impact par la structure d’équipe. Sans inventer, on peut raconter un fait: certains joueurs sont aussi des piliers d’équipe (capitaines, cadres)."
-surprisingFact: "Il a été champion de Chine trois fois (2006–2008)."
+surprisingFact: "Il a été champion de Chine trois fois (2006-2008)."
 
 iconicGame:
   title: "Une partie ‘stabilité’"
@@ -37,7 +37,7 @@ seoDescription: "Portrait de Ni Hua : faits essentiels et lecture de style prude
 
 - **Né**: 31 mai 1983 (Shanghai)  
 - **Nationalité**: Chine  
-- **Repères vérifiables**: GM (2003), triple champion de Chine (2006–2008)
+- **Repères vérifiables**: GM (2003), triple champion de Chine (2006-2008)
 
 ## Lecture de style (analyse)
 

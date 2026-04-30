@@ -1,4 +1,4 @@
-# Hostinger / Apache — Astro avec trailingSlash: "always"
+# Hostinger / Apache  -  Astro avec trailingSlash: "always"
 # Les rubriques sont des dossiers (/fr/science/) avec index.html dedans.
 # Sans slash final, Apache peut répondre 404 ; on redirige vers la même URL avec /
 

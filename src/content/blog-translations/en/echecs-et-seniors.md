@@ -95,7 +95,7 @@ Do you notice a difference in how you handle complex positions compared with ten
 
 ### Sources and references
 
-- **Verghese, J., Lipton, R. B., Katz, M. J., et al. (2003).** - [*Leisure Activities and the Risk of Dementia in the Elderly.*](https://www.nejm.org/doi/full/10.1056/NEJMoa022252) *New England Journal of Medicine*, 348(25), 2508–2516. (469 seniors followed 21 years: board games reduced dementia risk by 74% compared with no leisure intellectual activity.)
-- **Stern, Y. (2009).** - [*Cognitive reserve.*](https://doi.org/10.1016/j.neuropsychologia.2009.03.004) *Neuropsychologia*, 47(10), 2015–2028. (Formalizing cognitive reserve: age-related brain lesions do not trigger symptoms if reserve is sufficient.)
-- **Charness, N. (1981).** - *Aging and skilled problem solving.* *Journal of Experimental Psychology: General*, 110(1), 21–38. (Older chess players compensate for slower processing with more efficient long-term memory use.)
+- **Verghese, J., Lipton, R. B., Katz, M. J., et al. (2003).** - [*Leisure Activities and the Risk of Dementia in the Elderly.*](https://www.nejm.org/doi/full/10.1056/NEJMoa022252) *New England Journal of Medicine*, 348(25), 2508-2516. (469 seniors followed 21 years: board games reduced dementia risk by 74% compared with no leisure intellectual activity.)
+- **Stern, Y. (2009).** - [*Cognitive reserve.*](https://doi.org/10.1016/j.neuropsychologia.2009.03.004) *Neuropsychologia*, 47(10), 2015-2028. (Formalizing cognitive reserve: age-related brain lesions do not trigger symptoms if reserve is sufficient.)
+- **Charness, N. (1981).** - *Aging and skilled problem solving.* *Journal of Experimental Psychology: General*, 110(1), 21-38. (Older chess players compensate for slower processing with more efficient long-term memory use.)
 - **Bherer, L., Erickson, K. I., & Liu-Ambrose, T. (2013).** - [*A review of the effects of physical activity and exercise on cognitive and brain functions in older adults.*](https://doi.org/10.1155/2013/657508) *Journal of Aging Research*, 2013, 657508. (Cognitive interventions in seniors yield measurable benefits, including late in life.)

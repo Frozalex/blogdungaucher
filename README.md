@@ -1,11 +1,11 @@
-# Blog d'un Gaucher — Astro
+# Blog d'un Gaucher  -  Astro
 
 Blog personnel trilingue (FR/EN/ES) sur les échecs, la stratégie et la vie.
 
 ## Stack
-- **Astro** — framework statique
-- **CSS pur** — pas de framework CSS, tout est custom
-- **Markdown** — pour écrire les articles facilement
+- **Astro**  -  framework statique
+- **CSS pur**  -  pas de framework CSS, tout est custom
+- **Markdown**  -  pour écrire les articles facilement
 
 ## Démarrage rapide
 

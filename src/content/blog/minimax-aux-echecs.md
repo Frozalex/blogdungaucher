@@ -34,7 +34,7 @@ Où $p$ est la position courante, $d$ est la profondeur de recherche restante, $
 
 ## La fonction d'évaluation : le coeur du moteur
 
-Minimax pur résoudrait les échecs parfaitement si on pouvait explorer l'arbre complet jusqu'aux positions terminales. En pratique, c'est impossible en raison de la complexité combinatoire ($10^{120}$ feuilles selon Shannon). Il faut arrêter la recherche à une profondeur finie et évaluer les positions non-terminales avec une **fonction d'évaluation heuristique**.
+Minimax pur résoudrait les échecs parfaitement si tu pouvais explorer l'arbre complet jusqu'aux positions terminales. En pratique, c'est impossible en raison de la complexité combinatoire ($10^{120}$ feuilles selon Shannon). Il faut arrêter la recherche à une profondeur finie et évaluer les positions non-terminales avec une **fonction d'évaluation heuristique**.
 
 Historiquement, les premières fonctions d'évaluation étaient simples : comptage du matériel (dame = 9 pions, tour = 5, fou/cavalier = 3). Les moteurs modernes comme [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(moteur_d%27%C3%A9checs)) utilisent des fonctions d'évaluation extrêmement sophistiquées qui intègrent :
 
@@ -58,7 +58,7 @@ L'[élagage alpha-bêta](https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%A
 
 Le principe est le suivant : si tu as déjà trouvé une option pour Blanc qui garantit un résultat de valeur $\alpha$, et que tu explores une branche où Noir peut forcer un résultat inférieur à $\alpha$ pour Blanc, cette branche peut être abandonnée. Blanc ne la choisira jamais, car il a déjà mieux.
 
-Formellement, on maintient deux bornes :
+Formellement, tu maintiens deux bornes (dans le pseudo-code ou sur le tableau) :
 - $\alpha$ : la meilleure valeur déjà garantie pour le joueur maximisant (Blanc)
 - $\beta$ : la meilleure valeur déjà garantie pour le joueur minimisant (Noir)
 
@@ -70,11 +70,11 @@ Dans le cas optimal (si les coups sont ordonnés par ordre de qualité décroiss
 
 Les moteurs d'échecs modernes comme Stockfish ajoutent de nombreuses techniques au-dessus d'alpha-bêta de base :
 
-**Tables de transposition** : un cache de positions déjà analysées. Si la même position est atteinte par des ordres de coups différents (transposition), on réutilise l'analyse précédente au lieu de la recalculer. Les tables de transposition peuvent économiser des ordres de grandeur en temps de calcul.
+**Tables de transposition** : un cache de positions déjà analysées. Si la même position est atteinte par des ordres de coups différents (transposition), le moteur réutilise l'analyse précédente au lieu de la recalculer. Les tables de transposition peuvent économiser des ordres de grandeur en temps de calcul.
 
-**Approfondissement itératif** : au lieu d'effectuer directement une recherche à profondeur $d$, on effectue des recherches successives à profondeur 1, 2, 3, ..., $d$. Chaque itération fournit un meilleur ordonnancement des coups pour l'itération suivante, améliorant l'efficacité de l'élagage.
+**Approfondissement itératif** : au lieu d'effectuer directement une recherche à profondeur $d$, le moteur enchaîne des recherches successives à profondeur 1, 2, 3, ..., $d$. Chaque itération fournit un meilleur ordonnancement des coups pour l'itération suivante, améliorant l'efficacité de l'élagage.
 
-**Recherche de quiescence** : à la profondeur maximale, au lieu d'évaluer statiquement, on continue la recherche jusqu'à une position "quiescente" (stable), en n'explorant que les captures et promotions. Cela évite d'évaluer des positions où un échange de pièces non résolu fausserait l'évaluation.
+**Recherche de quiescence** : à la profondeur maximale, au lieu d'évaluer statiquement, la recherche se prolonge jusqu'à une position "quiescente" (stable), en n'explorant que les captures et promotions. Cela évite d'évaluer des positions où un échange de pièces non résolu fausserait l'évaluation.
 
 **Extensions de recherche** : dans certaines positions (mat en vue, pion passé avancé, position critique), la profondeur de recherche est automatiquement étendue au-delà de la limite nominale pour éviter l'effet d'horizon.
 

@@ -82,7 +82,7 @@ Un résultat contre-intuitif de la théorie des jeux est qu'il peut exister des 
 
 Certaines variantes d'ouverture mènent à des positions "nulles mais ennuyeuses" que les deux joueurs préfèrent éviter pour des raisons sportives. Dans un match de championnat du monde où une nulle est insuffisante, les deux joueurs ont intérêt à choisir des variantes plus déséquilibrées, même si ces variantes sont théoriquement moins solides. Le contexte sportif modifie les fonctions d'utilité et donc les équilibres.
 
-C'est pourquoi on observe souvent dans les matches importants des variantes insolites par rapport à la pratique standard. Les joueurs sortent délibérément des équilibres "théoriquement corrects" pour chercher des positions où un jeu imprécis de l'adversaire peut être davantage exploité.
+C'est pourquoi tu observes souvent, dans les matches importants, des variantes insolites par rapport à la pratique standard. Les joueurs sortent délibérément des équilibres "théoriquement corrects" pour chercher des positions où un jeu imprécis de l'adversaire peut être davantage exploité.
 
 ## Les graphes de Nash et la théorie de la correction
 

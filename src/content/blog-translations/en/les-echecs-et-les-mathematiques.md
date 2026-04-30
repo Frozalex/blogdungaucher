@@ -92,7 +92,7 @@ Where exactly did your logic chain break? Did you underestimate defensive resour
 
 ## Emanuel Lasker: mathematician, world champion, and closing argument
 
-[Emanuel Lasker](https://en.wikipedia.org/wiki/Emanuel_Lasker) was world chess champion for 27 consecutive years (1894–1921), still the record for longevity at the top. Lasker also held a doctorate in mathematics. Friend of [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein), he contributed to commutative algebra with what we now call the "Lasker-Noether decomposition theorem," a foundational result in modern algebra.
+[Emanuel Lasker](https://en.wikipedia.org/wiki/Emanuel_Lasker) was world chess champion for 27 consecutive years (1894-1921), still the record for longevity at the top. Lasker also held a doctorate in mathematics. Friend of [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein), he contributed to commutative algebra with what we now call the "Lasker-Noether decomposition theorem," a foundational result in modern algebra.
 
 Lasker was not strong at chess *because* he was a mathematician, nor a mathematician *because* he played chess. He excelled in both because he had what we have tried to describe throughout this article: an extraordinary ability to build rigorous reasoning under constraint, test hypotheses, and maintain flawless mental discipline. The two fields were for him two expressions of the same analytical intelligence.
 

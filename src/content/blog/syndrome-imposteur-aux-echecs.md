@@ -12,7 +12,7 @@ seoTitle: "Syndrome de l'imposteur aux échecs : le reconnaître et le dépasser
 seoDescription: "Comment le syndrome de l'imposteur se manifeste aux échecs à tous les niveaux. Identification des patterns, mécanismes psychologiques et stratégies concrètes."
 ---
 
-Tu as gagné le tournoi de ton club. Felicitations et poignées de mains. Et dans ta tête, une voix : "Ils ont mal joué ce week-end. La semaine prochaine, ils verront mon vrai niveau." Tu représentes la France dans une compétition régionale. Dans ta tête : "Si seulement ils savaient combien j'ai galéré sur des positions basiques cette semaine." Tu analyses une position brillamment et un joueur fort acquiesce. Dans ta tête : "Il est juste poli."
+Tu as gagné le tournoi de ton club. Félicitations et poignées de mains. Et dans ta tête, une voix : "Ils ont mal joué ce week-end. La semaine prochaine, ils verront mon vrai niveau." Tu représentes la France dans une compétition régionale. Dans ta tête : "Si seulement ils savaient combien j'ai galéré sur des positions basiques cette semaine." Tu analyses une position brillamment et un joueur fort acquiesce. Dans ta tête : "Il est juste poli."
 
 Ce dialogue intérieur négatif a un nom. Et il touche les échecs de façon particulièrement intense.
 

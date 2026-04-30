@@ -3,6 +3,6 @@
 <text x="190" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a2e" font-family="system-ui,sans-serif">Nombre de Shannon (ordre de grandeur)</text>
 <text x="190" y="70" text-anchor="middle" font-size="28" font-weight="700" fill="#e94560" font-family="Consolas,monospace">≈ 10^120</text>
 <text x="190" y="100" text-anchor="middle" font-size="11" fill="#444" font-family="system-ui,sans-serif">Parties distinctes possibles (estimation, modèle dépendant)</text>
-<text x="190" y="130" text-anchor="middle" font-size="10" fill="#666" font-family="system-ui,sans-serif">Claude Shannon — théorie de l’information et jeux</text>
+<text x="190" y="130" text-anchor="middle" font-size="10" fill="#666" font-family="system-ui,sans-serif">Claude Shannon  -  théorie de l’information et jeux</text>
 <text x="190" y="150" text-anchor="middle" font-size="10" fill="#666" font-family="system-ui,sans-serif">Une mesure pour saisir l’échelle, pas une liste exhaustive</text>
 </svg>

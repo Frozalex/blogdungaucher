@@ -27,7 +27,7 @@ const url = getPlayerUrl(player);
 const fullName = `${player.data.firstName} ${player.data.lastName}`;
 const years =
   `${formatYear(player.data.birthDate)}${
-    player.data.deathDate ? `–${formatYear(player.data.deathDate)}` : ""
+    player.data.deathDate ? `-${formatYear(player.data.deathDate)}` : ""
   }`;
 const photo = player.data.photo;
 const publishedLabel = formatPlayerDate(player.data.publishDate);

@@ -70,7 +70,7 @@ Par analogie, le style de jeu d'un Grand Maître peut être pensé comme un attr
 
 Un résultat remarquable issu de l'analyse computationnelle des échecs est la distribution fractale du temps de calcul optimal. Dans la plupart des positions, un coup est clairement meilleur et le moteur le trouve rapidement. Mais dans certaines positions, plusieurs coups sont presque équivalents en valeur, et l'analyse doit descendre à des profondeurs considérables pour les départager.
 
-Cette distribution des "positions difficiles" n'est pas uniforme dans une partie : elle est concentrée dans des moments critiques, souvent en milieu de jeu lors des transitions stratégiques majeures. La structure de cette distribution a des propriétés fractales : à toutes les échelles de profondeur d'analyse, on trouve des positions "difficiles" et des positions "faciles".
+Cette distribution des "positions difficiles" n'est pas uniforme dans une partie : elle est concentrée dans des moments critiques, souvent en milieu de jeu lors des transitions stratégiques majeures. La structure de cette distribution a des propriétés fractales : à toutes les échelles de profondeur d'analyse, tu retrouves des positions « difficiles » et des positions « faciles ».
 
 ## Le chaos dans la préparation des ouvertures
 
@@ -88,7 +88,7 @@ C'est pourquoi les joueurs d'échecs en position de faiblesse (joueur moins fort
 
 La décision de compliquer est elle-même une question chaotique : à quel moment les complications sont-elles suffisamment denses pour réduire l'avantage de l'adversaire ? Trop tôt, et les complications peuvent simplement conduire à une position perdante plus rapidement. Trop tard, et la position est déjà perdue. Trouver ce moment est l'un des exercices les plus difficiles et les plus artistiques des échecs.
 
-## Ce que le chaos nous dit sur la beauté aux échecs
+## Ce que le chaos te dit sur la beauté aux échecs
 
 Les parties les plus belles de l'histoire des échecs sont souvent des parties chaotiques. Les sacrifices audacieux de [Tal](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Tal), les attaques foudroyantes de [Morphy](https://fr.wikipedia.org/wiki/Paul_Morphy), les complications irrésistibles de [Kasparov] : toutes ces beautés naissent de positions où le chaos règne et où un joueur a su naviguer avec une précision extraordinaire là où l'adversaire s'est perdu.
 

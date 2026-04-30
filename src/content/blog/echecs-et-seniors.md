@@ -18,6 +18,8 @@ seoDescriptionEn: "Does playing chess protect against cognitive decline? What th
 
 Raymond a 79 ans. Il joue aux échecs depuis l'âge de 12 ans dans un club de province, deux soirs par semaine. Son médecin lui a dit qu'il a le profil cognitif d'un homme de 65 ans. Ce n'est pas un miracle génétique : c'est, selon toute probabilité, le résultat de décennies d'une activité que les neurosciences considèrent aujourd'hui comme l'une des plus protectrices contre le déclin cognitif.
 
+**Contrat de lecture :** tu repars avec (1) ce que l’étude du *New England Journal of Medicine* (Verghese, 2003) autorise vraiment à conclure, (2) les limites d’une étude observationnelle, (3) pourquoi les échecs ne valent pas un simple « jeu de lettres », et (4) ce que tu peux faire concrètement à tout âge.
+
 > **L’essentiel en 4 points :**
 > - La réserve cognitive (Stern, 2009) explique pourquoi deux cerveaux avec les mêmes lésions ne déclenchent pas les mêmes symptômes : l’un compense, l’autre non
 > - L’étude Verghese (*NEJM*, 2003) : 469 seniors suivis 21 ans, réduction de **74 %** du risque de démence chez les pratiquants réguliers de jeux de société
@@ -44,7 +46,7 @@ Leur conclusion, citée depuis dans des centaines de travaux : les participants 
 
 Deux précisions importantes pour ne pas sur-interpréter ces résultats :
 
-1. L'étude est observationnelle, pas expérimentale. Elle montre une corrélation, pas une causalité directe. Il est possible que les personnes cognitivamente plus solides soient aussi celles qui pratiquent davantage de jeux, et non l'inverse.
+1. L'étude est observationnelle, pas expérimentale. Elle montre une corrélation, pas une causalité directe. Il est possible que les personnes cognitivement plus solides soient aussi celles qui pratiquent davantage de jeux, et non l'inverse.
 2. Le bénéfice s'applique aux activités combinant stimulation cognitive et engagement social, pas uniquement aux échecs pris en isolation.
 
 Ces nuances ne diminuent pas l'intérêt de l'étude ; elles la rendent plus utilisable.
@@ -113,7 +115,7 @@ Est-ce que tu remarques une différence dans ta façon de gérer les positions c
 
 ### Sources et références
 
-- **Verghese, J., Lipton, R. B., Katz, M. J., et al. (2003).** - [*Leisure Activities and the Risk of Dementia in the Elderly.*](https://www.nejm.org/doi/full/10.1056/NEJMoa022252) *New England Journal of Medicine*, 348(25), 2508–2516. (469 seniors suivis sur 21 ans : les jeux de société réduisent le risque de démence de 74 % comparé à l'absence d'activité intellectuelle de loisir.)
-- **Stern, Y. (2009).** - [*Cognitive reserve.*](https://doi.org/10.1016/j.neuropsychologia.2009.03.004) *Neuropsychologia*, 47(10), 2015–2028. (Formalisation du concept de réserve cognitive : les lésions cérébrales liées à l'âge ne déclenchent pas les symptômes si la réserve est suffisante.)
-- **Charness, N. (1981).** - *Aging and skilled problem solving.* *Journal of Experimental Psychology: General*, 110(1), 21–38. (Les joueurs d'échecs âgés compensent le déclin de vitesse de traitement par une utilisation plus efficace de la mémoire à long terme.)
+- **Verghese, J., Lipton, R. B., Katz, M. J., et al. (2003).** - [*Leisure Activities and the Risk of Dementia in the Elderly.*](https://www.nejm.org/doi/full/10.1056/NEJMoa022252) *New England Journal of Medicine*, 348(25), 2508-2516. (469 seniors suivis sur 21 ans : les jeux de société réduisent le risque de démence de 74 % comparé à l'absence d'activité intellectuelle de loisir.)
+- **Stern, Y. (2009).** - [*Cognitive reserve.*](https://doi.org/10.1016/j.neuropsychologia.2009.03.004) *Neuropsychologia*, 47(10), 2015-2028. (Formalisation du concept de réserve cognitive : les lésions cérébrales liées à l'âge ne déclenchent pas les symptômes si la réserve est suffisante.)
+- **Charness, N. (1981).** - *Aging and skilled problem solving.* *Journal of Experimental Psychology: General*, 110(1), 21-38. (Les joueurs d'échecs âgés compensent le déclin de vitesse de traitement par une utilisation plus efficace de la mémoire à long terme.)
 - **Bherer, L., Erickson, K. I., & Liu-Ambrose, T. (2013).** - [*A review of the effects of physical activity and exercise on cognitive and brain functions in older adults.*](https://doi.org/10.1155/2013/657508) *Journal of Aging Research*, 2013, 657508. (Les interventions cognitives chez les seniors produisent des bénéfices mesurables, y compris en fin de vie.)

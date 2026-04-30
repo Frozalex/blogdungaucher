@@ -35,7 +35,7 @@ La [sémantique des mondes possibles](https://fr.wikipedia.org/wiki/S%C3%A9manti
 
 ## L'arbre d'échecs comme structure de mondes possibles
 
-L'arbre des variantes d'une partie d'échecs est exactement une structure de mondes possibles au sens de Kripke. Chaque position est un monde. La relation d'accessibilité est "on peut atteindre cette position depuis cette autre position en jouant un coup légal".
+L'arbre des variantes d'une partie d'échecs est exactement une structure de mondes possibles au sens de Kripke. Chaque position est un monde. La relation d'accessibilité est : « tu peux atteindre cette position depuis l'autre en un coup légal ».
 
 Depuis la position initiale, un immense ensemble de mondes (positions) sont accessibles. À mesure que la partie avance, certains mondes deviennent inaccessibles (les parties non jouées), et de nouveaux mondes deviennent accessibles (les positions atteintes).
 
@@ -57,7 +57,7 @@ Cette traduction formelle n'est pas simplement académique. Elle précise ce que
 
 [Tigran Petrossian](https://fr.wikipedia.org/wiki/Tigran_Petrossian) est célèbre pour son jeu prophylactique : il jouait régulièrement des coups qui "prévenaient" des menaces adverses avant même qu'elles soient concrètement présentes. Ses adversaires trouvaient souvent ses coups mystérieux parce qu'ils ne comprenaient pas ce qu'il prévenait.
 
-La prophylaxie est directement une application de la logique modale. Un coup prophylactique répond à la formule : "si je ne joue pas ce coup, il est possible que [menace] se réalise dans un monde futur accessible". En jouant le coup prophylactique, on rend cette menace inaccessible, on ferme ce monde possible.
+La prophylaxie est directement une application de la logique modale. Un coup prophylactique répond à la formule : "si je ne joue pas ce coup, il est possible que [menace] se réalise dans un monde futur accessible". En jouant le coup prophylactique, tu rends cette menace inaccessible : tu fermes ce monde possible.
 
 Plus formellement : si $\Diamond_{futur} \text{menace}$ est vrai dans la position actuelle, le coup prophylactique transforme la position en une position où $\neg \Diamond_{futur} \text{menace}$ est vrai. Le coup a modifié la structure des mondes accessibles futurs.
 
@@ -95,7 +95,7 @@ En jeu pratique, la logique modale s'applique dans des conditions d'incertitude.
 
 Cette distinction entre possibilité logique et probabilité pratique est cruciale. Un coup peut être logiquement possible mais pratiquement improbable : l'adversaire peut techniquement le jouer, mais il serait mauvais pour lui. Un joueur expérimenté apprend à distinguer les menaces "logiquement possibles" des menaces "pratiquement pertinentes".
 
-[Mikhail Botvinnik](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Botvinnik) enseignait à ses élèves à chercher systématiquement les "coups candidats" : avant de calculer, identifier tous les coups dignes d'être examinés. C'est une procédure de filtrage des mondes possibles pertinents. Au lieu d'explorer exhaustivement l'arbre, on élimine d'abord les branches clairement mauvaises.
+[Mikhail Botvinnik](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Botvinnik) enseignait à ses élèves à chercher systématiquement les "coups candidats" : avant de calculer, identifier tous les coups dignes d'être examinés. C'est une procédure de filtrage des mondes possibles pertinents. Au lieu d'explorer exhaustivement l'arbre, tu élimines d'abord les branches clairement mauvaises.
 
 ## La logique épistémique et ce que tu ne sais pas
 

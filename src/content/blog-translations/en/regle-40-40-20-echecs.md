@@ -175,8 +175,8 @@ How much time do you really spend on openings versus endgames each week? Does 40
 
 To go deeper on the ideas in this article:
 
-- **Chase, W. G., & Simon, H. A. (1973).** - [*Perception in chess.*](https://doi.org/10.1016/0010-0285(73)90004-2) *Cognitive Psychology*, 4(1), 55–81. (Foundational study on pattern recognition: grandmasters do not calculate better, they recognise meaningful configurations faster.)
-- **Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993).** - [*The role of deliberate practice in the acquisition of expert performance.*](https://doi.org/10.1037/0033-295X.100.3.363) *Psychological Review*, 100(3), 363–406. (Deliberate practice framework: attention quality during training, not raw hours, drives expertise.)
+- **Chase, W. G., & Simon, H. A. (1973).** - [*Perception in chess.*](https://doi.org/10.1016/0010-0285(73)90004-2) *Cognitive Psychology*, 4(1), 55-81. (Foundational study on pattern recognition: grandmasters do not calculate better, they recognise meaningful configurations faster.)
+- **Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993).** - [*The role of deliberate practice in the acquisition of expert performance.*](https://doi.org/10.1037/0033-295X.100.3.363) *Psychological Review*, 100(3), 363-406. (Deliberate practice framework: attention quality during training, not raw hours, drives expertise.)
 - **de Groot, A. D. (1965).** - *Thought and Choice in Chess.* Mouton. (First systematic study of chess thinking; foundation for later cognitive work on the game.)
 - **Nunn, J. (1998).** - *Secrets of Practical Chess.* Gambit Publications. (Practical training and error management; undervaluing openings at lower levels.)
 - **Dvoretsky, M., & Yusupov, A. (1991).** - *Technique for the Tournament Player.* Batsford. (Intensive training centred on tactics and endgames; reference for structured improver coaching.)

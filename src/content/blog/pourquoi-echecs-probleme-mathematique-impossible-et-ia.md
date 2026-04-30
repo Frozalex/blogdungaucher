@@ -20,9 +20,9 @@ seoTitleEn: "Chess and AI: Solving the Mathematical Impossible"
 seoDescriptionEn: "Is chess mathematically solvable? Discover how AI has revolutionised the game and why engines now beat humans at every single turn."
 ---
 
-Tu as déjà vécu ce paradoxe : on te vend le [jeu d'échecs](https://fr.wikipedia.org/wiki/%C3%89checs) comme un objet d'une complexité cosmique, un jeu où chaque joueur trace une stratégie sur le long terme ; puis tu ouvres une appli, tu joues un coup raisonnable, et le moteur te corrige puis t'explique une ligne introuvable pour toi seul.
+Tu as déjà vécu ce paradoxe : les applis et les médias te vendent le [jeu d'échecs](https://fr.wikipedia.org/wiki/%C3%89checs) comme un objet d'une complexité cosmique, un jeu où chaque joueur trace une stratégie sur le long terme ; puis tu ouvres une appli, tu joues un coup raisonnable, et le moteur te corrige puis t'explique une ligne introuvable pour toi seul.
 
-Alors quoi ? Peut-on vraiment tout ramener à des formules ? Ce jeu est-il un problème mathématique auquel les mathématiques et l'informatique apportent des réponses partielles ou est-ce une légende qu'on se raconte pour se donner l'air profond ? La réponse tient en deux étapes : cette discipline est impossible à traiter par force brute sur tout l'espace des parties, mais elle devient jouable à un niveau surhumain dès qu'on accepte de mesurer le réel grâce à des programmes où se combinent exploration, évaluation, élagage et, aujourd'hui, apprentissage sur des machines très puissantes.
+Alors quoi ? Peut-on vraiment tout ramener à des formules ? Ce jeu est-il un problème mathématique auquel les mathématiques et l'informatique apportent des réponses partielles ou est-ce une légende qu'on se répète pour se donner l'air profond ? La réponse tient en deux étapes : cette discipline est impossible à traiter par force brute sur tout l'espace des parties, mais elle devient jouable à un niveau surhumain dès que tu acceptes de mesurer le réel grâce à des programmes où se combinent exploration, évaluation, élagage et, aujourd'hui, apprentissage sur des machines très puissantes.
 
 ![Schéma d'un plateau 8×8, jeu d'échecs et configurations discrètes](/images/echecs-ia-01-plateau.svg)
 
@@ -42,15 +42,15 @@ Si tu veux être un peu formel, tu peux voir ça comme un [graphe orienté](http
 
 ## L'arbre des coups : pourquoi "je calcule tout" est un mythe
 
-À ton niveau de club, tu as peut-être déjà entendu un joueur dire : "J'ai tout calculé." C'est une phrase qui sonne bien, mais elle est presque toujours fausse à la rigueur : même les grands maîtres et les champions ne parcourent aucune fraction complète de l'arbre ; du joueur de club au grand maître, on ne fait qu'effleurer des branches. Ils calculent une petite partie, et ils le font bien.
+À ton niveau de club, tu as peut-être déjà entendu un joueur dire : "J'ai tout calculé." C'est une phrase qui sonne bien, mais elle est presque toujours fausse à la rigueur : même les grands maîtres et les champions ne parcourent aucune fraction complète de l'arbre ; du joueur de club au grand maître, chacun n'effleure qu'une infime partie des branches. Ils calculent une petite partie, et ils le font bien.
 
-On note souvent \(b\) le nombre moyen de coups possibles (facteur de branchement), \(d\) la profondeur explorée en demi-coups (*plies*), et \(N(b,d)\) le nombre approximatif de nœuds à explorer ; une approximation naïve donne \(N(b,d) \approx b^d\). Dès que tu ajoutes de la profondeur, tu ne rajoutes pas "un peu" de travail : tu multiplies le travail, c'est une loi des mathématiques : l'exponentielle. Elle explique pourquoi même les machines les plus rapides restent contraintes par le temps disponible et la mémoire, même avec les meilleurs algorithmes connus.
+Les ouvrages notent souvent \(b\) le nombre moyen de coups possibles (facteur de branchement), \(d\) la profondeur explorée en demi-coups (*plies*), et \(N(b,d)\) le nombre approximatif de nœuds à explorer ; une approximation naïve donne \(N(b,d) \approx b^d\). Dès que tu ajoutes de la profondeur, tu ne rajoutes pas "un peu" de travail : tu multiplies le travail, c'est une loi des mathématiques : l'exponentielle. Elle explique pourquoi même les machines les plus rapides restent contraintes par le temps disponible et la mémoire, même avec les meilleurs algorithmes connus.
 
 $$
 N(b,d) \approx b^d
 $$
 
-En milieu de partie, \(b\) tourne souvent autour de 30–40. Si tu prends \(b=35\), alors à \(d=6\) c'est déjà énorme, à \(d=10\) c'est astronomique, à \(d=16\) c'est une autre planète. Le cerveau humain n'a pas été conçu pour parcourir des millions de branches : il a été conçu pour survivre, reconnaître des motifs, économiser de l'énergie, et c'est une excellente nouvelle, parce que c'est exactement ce que font aussi les moteurs modernes, en combinant algorithme et heuristique.
+En milieu de partie, \(b\) tourne souvent autour de 30-40. Si tu prends \(b=35\), alors à \(d=6\) c'est déjà énorme, à \(d=10\) c'est astronomique, à \(d=16\) c'est une autre planète. Le cerveau humain n'a pas été conçu pour parcourir des millions de branches : il a été conçu pour survivre, reconnaître des motifs, économiser de l'énergie, et c'est une excellente nouvelle, parce que c'est exactement ce que font aussi les moteurs modernes, en combinant algorithme et heuristique.
 
 Pour endiguer cette explosion, il n'y a pas de magie : il faut couper, estimer, ordonner les coups ; autant de méthodes que cet article détaille ensuite.
 
@@ -64,7 +64,7 @@ Pour endiguer cette explosion, il n'y a pas de magie : il faut couper, estimer, 
 
 ## Pourquoi ce jeu n'est pas "résolu" (et pourquoi ça n'empêche pas de gagner)
 
-Un jeu est "[résolu](https://fr.wikipedia.org/wiki/Jeu_r%C3%A9solu)" au sens des mathématiques quand on connaît, depuis la position initiale, l'issue du jeu parfait (victoire, défaite, nul) et/ou quand on possède une stratégie optimale. La [théorie des jeux](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux), héritée de [John von Neumann](https://fr.wikipedia.org/wiki/John_von_Neumann), fournit un outil pour parler de joueurs rationnels et d'[équilibre de Nash](https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash) ; ici, la structure est surtout celle d'un duel à information quasi parfaite.
+Un jeu est "[résolu](https://fr.wikipedia.org/wiki/Jeu_r%C3%A9solu)" au sens des mathématiques lorsque l'issue du jeu parfait (victoire, défaite, nul) est connue depuis la position initiale et/ou qu'une stratégie optimale est entièrement décrite. La [théorie des jeux](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux), héritée de [John von Neumann](https://fr.wikipedia.org/wiki/John_von_Neumann), fournit un outil pour parler de joueurs rationnels et d'[équilibre de Nash](https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash) ; ici, la structure est surtout celle d'un duel à information quasi parfaite.
 
 Le tableau suivant résume la différence entre quelques jeux célèbres et les échecs, le seul tableau de cet article.
 
@@ -81,7 +81,7 @@ Résoudre un jeu et jouer très fort à ce jeu, ce n'est pas la même chose. Tu 
 
 ## Ce que fait un moteur "classique" : minimax, mais pas naïf
 
-On peut résumer l'ossature des moteurs traditionnels (type [Stockfish](https://fr.wikipedia.org/wiki/Stockfish)) en trois briques :
+Tu peux résumer l'ossature des moteurs traditionnels (type [Stockfish](https://fr.wikipedia.org/wiki/Stockfish)) en trois briques :
 
 - exploration : parcours de l'arbre de coups ;
 - évaluation : estimer qui est mieux sur le diagramme ;
@@ -121,9 +121,9 @@ Ce n'est pas qu'une addition naïve de points : les bons moteurs combinent des h
 
 ![Fonction d'évaluation heuristique sur l'échiquier](/images/echecs-ia-07-evaluation.svg)
 
-## L'IA : quand on apprend à évaluer et à choisir, au lieu de tout écrire à la main
+## L'IA : quand la machine apprend à évaluer et à choisir, au lieu que tout soit écrit à la main
 
-Depuis quelques années, une idée a gagné une place énorme : au lieu de coder "à la main" une évaluation sophistiquée, on peut *apprendre* une évaluation à partir de données ou par auto-jeu. Les [réseaux de neurones](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) et l'[apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) sont au cœur de cette vague. On confond souvent "IA" et "elle calcule plus" : en réalité, l'IA moderne brille surtout sur deux tâches :
+Depuis quelques années, une idée a gagné une place énorme : au lieu de coder "à la main" une évaluation sophistiquée, il devient possible d'*apprendre* une évaluation à partir de données ou par auto-jeu. Les [réseaux de neurones](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) et l'[apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) sont au cœur de cette vague. Tu confonds peut-être souvent "IA" et "elle calcule plus" : en réalité, l'IA moderne brille surtout sur deux tâches :
 
 - évaluer un diagramme de façon très riche (représentation compressée) ;
 - proposer de bons coups candidats pour orienter l'exploration.
@@ -145,7 +145,7 @@ Ce qui est fascinant, c'est qu'en partant d'un jeu aux règles strictes, tu peux
 
 En 1997, [Deep Blue](https://fr.wikipedia.org/wiki/Deep_Blue) bat [Garry Kasparov](https://fr.wikipedia.org/wiki/Garry_Kasparov) alors [champion du monde](https://fr.wikipedia.org/wiki/Champion_du_monde_d%27%C3%A9checs) d'échecs, contre une machine [IBM](https://fr.wikipedia.org/wiki/IBM) conçue spécifiquement pour le jeu d'échecs. Ce succès marque le XXe siècle : le monde entier découvre la puissance du calcul spécialisé.
 
-Pourtant, ce succès ne résout pas les échecs au sens théorique : on peut gagner des parties contre le meilleur joueur humain sans posséder une stratégie parfaite depuis la position initiale. Les programmeurs modernes, en France comme partout dans le monde, tirent bien plus du jeu qu'en 1997, sans abolir pour autant le socle de mathématiques sous-jacent.
+Pourtant, ce succès ne résout pas les échecs au sens théorique : une machine peut gagner des parties contre le meilleur joueur humain sans posséder une stratégie parfaite depuis la position initiale. Les programmeurs modernes, en France comme partout dans le monde, tirent bien plus du jeu qu'en 1997, sans abolir pour autant le socle de mathématiques sous-jacent.
 
 ![1997 : la machine d'IBM face à Kasparov, champion du monde](/images/echecs-ia-09-deepblue.svg)
 
@@ -183,7 +183,7 @@ Le message le plus important n'est pas "l'IA est magique" : c'est que la puissan
 - [Psychologie du joueur d'échecs](/blog/psychologie-du-joueur-d-echecs/)
 - [Les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/)
 
-Les échecs sont "impossibles" si tu imagines une solution brute : tout explorer, tout prouver, tout résoudre d'un seul tenant. Ils deviennent "possibles" dès que tu acceptes la réalité : on gagne en sélectionnant, en évaluant et en élaguant. Ce n'est pas la quantité de coups calculés qui fait la force, c'est la qualité du tri. Un joueur lucide le sait déjà.
+Les échecs sont "impossibles" si tu imagines une solution brute : tout explorer, tout prouver, tout résoudre d'un seul tenant. Ils deviennent "possibles" dès que tu acceptes la réalité : tu gagnes en sélectionnant, en évaluant et en élaguant. Ce n'est pas la quantité de coups calculés qui fait la force, c'est la qualité du tri. Un joueur lucide le sait déjà.
 
 **Pour aller plus loin :** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/), [arXiv](https://arxiv.org/).
 
