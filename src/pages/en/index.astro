@@ -1,6 +1,5 @@
 ﻿---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HomeCinematicBackground from "../../components/HomeCinematicBackground.astro";
 import HomeLanding from "../../components/HomeLanding.astro";
 
 import { buildWebsiteJsonLd, getLatestPosts } from "../../utils/blog";
@@ -16,7 +15,5 @@ const latestPosts = await getLatestPosts(5, "en");
   enPath="/en/"
   structuredData={buildWebsiteJsonLd()}
 >
-  <HomeCinematicBackground>
-    <HomeLanding lang="en" latestPosts={latestPosts} />
-  </HomeCinematicBackground>
+  <HomeLanding lang="en" latestPosts={latestPosts} />
 </BaseLayout>
