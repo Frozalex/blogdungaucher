@@ -1,4 +1,9 @@
-﻿=== GIT REPO ROOT ===
+=== PARENT FOLDER (not git root) ===
+Path: c:\Users\lucda\OneDrive\Bureau\Projet\Website project
+git rev-parse --show-toplevel: fatal: not a git repository (or any of the parent directories): .git
+rev-parse exit: 128
+
+=== GIT REPO ROOT ===
 C:/Users/lucda/OneDrive/Bureau/Projet/Website project/blog-gaucher
 rev-parse exit: 0
 
@@ -38,3 +43,131 @@ no changes added to commit (use "git add" and/or "git commit -a")
 git status exit: 0
 
 === git add -A ===
+git : warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+Au caractère C:\Users\lucda\AppData\Local\Temp\ps-script-ae9d1c56-41e2-4b21-8cce-aef77db020c0.ps1:96 : 1
++ git add -A 2>&1 | Out-File -FilePath $f -Append -Encoding utf8
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: in the... Git touches it:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/content/blog/echecs-alzheimer-prevention-declin-cognitif.md', LF will be replaced 
+by CRLF the next time Git touches it
+warning: in the working copy of 'src/pages/de/blog/[slug].astro', LF will be replaced by CRLF the next time Git 
+touches it
+warning: in the working copy of 'src/pages/fr/blog/[slug].astro', LF will be replaced by CRLF the next time Git 
+touches it
+warning: in the working copy of '.github/workflows/remotion-render.yml', LF will be replaced by CRLF the next time Git 
+touches it
+warning: in the working copy of '_shell_probe.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'remotion/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'remotion/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'remotion/remotion.config.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'remotion/scripts/load-post-props.mjs', LF will be replaced by CRLF the next time Git 
+touches it
+warning: in the working copy of 'remotion/src/ArticleIntro.tsx', LF will be replaced by CRLF the next time Git touches 
+it
+warning: in the working copy of 'remotion/src/ArticleSummary.tsx', LF will be replaced by CRLF the next time Git 
+touches it
+warning: in the working copy of 'remotion/src/ArticleSummaryClassic.tsx', LF will be replaced by CRLF the next time 
+Git touches it
+warning: in the working copy of 'remotion/src/ArticleSummaryDataReveal.tsx', LF will be replaced by CRLF the next time 
+Git touches it
+warning: in the working copy of 'remotion/src/Root.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'remotion/src/components/Subtitles.tsx', LF will be replaced by CRLF the next time Git 
+touches it
+warning: in the working copy of 'remotion/src/index.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'remotion/src/post-props.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'remotion/src/theme.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'remotion/src/types.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'remotion/src/utils/text.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'remotion/tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/ArticleDataRevealVideo.astro', LF will be replaced by CRLF the next 
+time Git touches it
+warning: in the working copy of 'src/components/ArticleIntroVideo.astro', LF will be replaced by CRLF the next time 
+Git touches it
+warning: in the working copy of 'src/components/ArticleSummaryVideo.astro', LF will be replaced by CRLF the next time 
+Git touches it
+warning: in the working copy of 'src/utils/markdown-split-html.ts', LF will be replaced by CRLF the next time Git 
+touches it
+git add exit: 0
+
+=== git status (after add) ===
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .github/workflows/remotion-render.yml
+	new file:   _git_result.txt
+	new file:   _shell_probe.txt
+	modified:   package-lock.json
+	modified:   package.json
+	new file:   public/videos/.gitkeep
+	new file:   remotion/package-lock.json
+	new file:   remotion/package.json
+	new file:   remotion/remotion.config.ts
+	new file:   remotion/scripts/load-post-props.mjs
+	new file:   remotion/src/ArticleIntro.tsx
+	new file:   remotion/src/ArticleSummary.tsx
+	new file:   remotion/src/ArticleSummaryClassic.tsx
+	new file:   remotion/src/ArticleSummaryDataReveal.tsx
+	new file:   remotion/src/Root.tsx
+	new file:   remotion/src/components/Subtitles.tsx
+	new file:   remotion/src/index.ts
+	new file:   remotion/src/post-props.ts
+	new file:   remotion/src/theme.ts
+	new file:   remotion/src/types.ts
+	new file:   remotion/src/utils/text.ts
+	new file:   remotion/tsconfig.json
+	new file:   src/components/ArticleDataRevealVideo.astro
+	new file:   src/components/ArticleIntroVideo.astro
+	new file:   src/components/ArticleSummaryVideo.astro
+	modified:   src/content.config.ts
+	modified:   src/content/blog/echecs-alzheimer-prevention-declin-cognitif.md
+	modified:   src/pages/de/blog/[slug].astro
+	modified:   src/pages/en/blog/[slug].astro
+	modified:   src/pages/fr/blog/[slug].astro
+	new file:   src/utils/markdown-split-html.ts
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   _git_result.txt
+
+
+
+=== git commit (bat + message file) ===
+[main 0e4ad8f] Article Alzheimer : style, sources, vidéos frontmatter ; Remotion/Astro vidéos si présents ; ajustements du jour.
+ 31 files changed, 5107 insertions(+), 202 deletions(-)
+git commit exit: 0
+
+=== git push origin (current branch) ===
+To https://github.com/Frozalex/blogdungaucher.git
+   a507e94..0e4ad8f  main -> main
+git push exit: 0
+
+=== FINAL git status ===
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   _git_result.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	_commit_msg.txt
+	_do_commit.bat
+	_do_push.bat
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+=== EXIT CODE SUMMARY ===
+Website project git rev-parse: 128 (not a repository)
+blog-gaucher git status (initial): 0
+git add -A: 0
+git commit: 0
+git push: 0
+Push succeeded: yes
