@@ -26,4 +26,5 @@ build-output.txt
 _git_cmd.txt
 _commit.ps1
 _cleanup.ps1
+_push.bat
 
