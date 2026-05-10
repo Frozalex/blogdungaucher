@@ -10,3 +10,10 @@ gh_deploy_blog_rsa
 gh_deploy_blog_rsa.pub
 gh_deploy_blog_rsa.txt
 gh_deploy_blog_rsa*
+
+# Fichiers temporaires locaux (logs git / scripts jetables)
+_git_result.txt
+_shell_probe.txt
+_commit_msg.txt
+_do_commit.bat
+_do_push.bat
