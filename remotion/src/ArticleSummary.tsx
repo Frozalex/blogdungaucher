@@ -16,7 +16,8 @@ export function ArticleSummary(props: VideoPostProps) {
     props.summarySequence === "data-reveal" &&
     isCompleteDataReveal(props.dataReveal ?? null)
   ) {
-    return <ArticleSummaryDataReveal {...props} dataReveal={props.dataReveal} />;
+    const dataReveal = props.dataReveal as DataRevealPayload;
+    return <ArticleSummaryDataReveal {...props} dataReveal={dataReveal} />;
   }
 
   return <ArticleSummaryClassic {...props} />;

@@ -28,7 +28,7 @@ keyTakeaways:
   - "Essais récents : gains souvent plus nets sur humeur ou qualité de vie que sur la cognition globale."
   - "Méta-analyses sur les jeux : effets sur scores cognitifs souvent modestes ; pas de preuve robuste d’une protection individuelle contre la démence."
   - "Les échecs : stimulation cognitive comme d’autres loisirs ; pas un substitut à suivi médical ou prévention vasculaire."
-remotionPlayerIntro: true
+remotionPlayerIntro: false
 remotionPlayerMid: true
 remotionPlayerSummary: true
 introVideoAspect: "16:9"

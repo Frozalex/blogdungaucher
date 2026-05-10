@@ -6,7 +6,9 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
+import { useMemo } from "react";
 
+import { allocateBlockFrames } from "./utils/allocate-frames";
 import { padTakeaways } from "./utils/text";
 import { theme } from "./theme";
 import type { VideoPostProps } from "./types";
@@ -19,24 +21,51 @@ export function ArticleSummaryClassic(props: VideoPostProps) {
   const isPortrait = height > width;
 
   const points = padTakeaways(props.keyTakeaways, props.excerpt);
-  const numPoints = points.length;
-  const headerFrames = 95;
-  const tailFrames = 90;
-  const staggerStart = headerFrames + 25;
-  const usable = Math.max(durationInFrames - staggerStart - tailFrames, fps * 8);
-  const step = numPoints > 0 ? usable / numPoints : usable;
 
-  const blocks = points.map((body, index) => ({
-    title: `Point clé ${index + 1}`,
-    body,
-    start: Math.floor(staggerStart + index * step),
-  }));
+  const blocksMeta = useMemo(() => {
+    const headerFrames = Math.round(1.4 * fps);
+    const tailFrames = Math.round(0.9 * fps);
+    const usable = Math.max(
+      durationInFrames - headerFrames - tailFrames,
+      fps * 5,
+    );
+    const durations = allocateBlockFrames(points, usable, fps);
+    let cursor = headerFrames;
+    return points.map((body, index) => {
+      const duration = durations[index] ?? Math.round(3 * fps);
+      const start = cursor;
+      cursor += duration;
+      return { title: `Point clé ${index + 1}`, body, start, duration };
+    });
+  }, [points, durationInFrames, fps]);
+
+  let activeIndex = -1;
+  for (let i = 0; i < blocksMeta.length; i++) {
+    const b = blocksMeta[i];
+    if (frame >= b.start && frame < b.start + b.duration) {
+      activeIndex = i;
+      break;
+    }
+  }
+  const firstBlockStart = blocksMeta[0]?.start ?? Math.round(1.4 * fps);
+  if (activeIndex < 0 && frame >= firstBlockStart && blocksMeta.length > 0) {
+    activeIndex = blocksMeta.length - 1;
+  }
 
   const headerOp = spring({
     frame,
     fps,
-    config: { damping: 20, stiffness: 100 },
+    config: { damping: 20, stiffness: 120 },
   });
+
+  const cardLocal =
+    activeIndex >= 0 ? Math.max(0, frame - blocksMeta[activeIndex].start) : 0;
+  const cardOp = spring({
+    frame: cardLocal,
+    fps,
+    config: { damping: 22, stiffness: 115 },
+  });
+  const lift = interpolate(cardOp, [0, 1], [14, 0]);
 
   return (
     <AbsoluteFill
@@ -48,122 +77,126 @@ export function ArticleSummaryClassic(props: VideoPostProps) {
     >
       <AbsoluteFill
         style={{
-          padding: isPortrait ? 44 : 64,
+          padding: isPortrait ? 40 : 56,
           flexDirection: "column",
           display: "flex",
-          gap: 28,
+          gap: 20,
         }}
       >
         <div
           style={{
+            display: "flex",
+            flexDirection: isPortrait ? "column" : "row",
+            gap: isPortrait ? 16 : 28,
+            alignItems: isPortrait ? "stretch" : "flex-start",
             opacity: headerOp,
-            transform: `translateY(${interpolate(headerOp, [0, 1], [18, 0])}px)`,
+            transform: `translateY(${interpolate(headerOp, [0, 1], [14, 0])}px)`,
           }}
         >
-          <p
-            style={{
-              margin: "0 0 10px",
-              fontSize: 22,
-              fontWeight: 700,
-              letterSpacing: "0.12em",
-              textTransform: "uppercase",
-              color: props.accentColor,
-            }}
-          >
-            {LABEL}
-          </p>
-          <h2
-            style={{
-              margin: 0,
-              fontFamily: theme.fontSerif,
-              fontStyle: "italic",
-              fontWeight: 500,
-              fontSize: isPortrait ? 44 : 48,
-              lineHeight: 1.12,
-              color: theme.textMain,
-              maxWidth: "95%",
-            }}
-          >
-            {props.title}
-          </h2>
+          {props.heroImageSrc ? (
+            <div
+              style={{
+                flex: isPortrait ? "none" : "0 0 34%",
+                width: isPortrait ? "100%" : undefined,
+                maxHeight: isPortrait ? height * 0.22 : height * 0.38,
+                borderRadius: 18,
+                overflow: "hidden",
+                border: `1px solid ${props.accentColor}44`,
+                boxShadow: "0 10px 30px rgba(62, 33, 10, 0.1)",
+              }}
+            >
+              <Img
+                src={props.heroImageSrc}
+                alt={props.heroImageAlt}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block",
+                }}
+              />
+            </div>
+          ) : null}
+
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <p
+              style={{
+                margin: "0 0 8px",
+                fontSize: 20,
+                fontWeight: 700,
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                color: props.accentColor,
+              }}
+            >
+              {LABEL}
+            </p>
+            <h2
+              style={{
+                margin: 0,
+                fontFamily: theme.fontSerif,
+                fontStyle: "italic",
+                fontWeight: 500,
+                fontSize: isPortrait ? 40 : 46,
+                lineHeight: 1.12,
+                color: theme.textMain,
+                maxWidth: "98%",
+              }}
+            >
+              {props.title}
+            </h2>
+          </div>
         </div>
 
-        {props.heroImageSrc && (
-          <div
-            style={{
-              width: "100%",
-              maxHeight: isPortrait ? height * 0.22 : height * 0.26,
-              borderRadius: 18,
-              overflow: "hidden",
-              opacity: interpolate(frame, [40, 90], [0, 1], {
-                extrapolateRight: "clamp",
-              }),
-              border: `1px solid ${props.accentColor}55`,
-            }}
-          >
-            <Img
-              src={props.heroImageSrc}
-              alt={props.heroImageAlt}
+        <div
+          style={{
+            flex: 1,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            minHeight: isPortrait ? height * 0.38 : height * 0.34,
+          }}
+        >
+          {activeIndex >= 0 && blocksMeta[activeIndex] ? (
+            <div
               style={{
                 width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                display: "block",
+                maxWidth: isPortrait ? "100%" : "920px",
+                padding: "20px 24px",
+                borderRadius: 18,
+                background: theme.surface,
+                border: `1px solid rgba(51, 33, 17, 0.12)`,
+                boxShadow: "0 8px 28px rgba(62, 33, 10, 0.08)",
+                opacity: cardOp,
+                transform: `translateY(${lift}px)`,
               }}
-            />
-          </div>
-        )}
-
-        <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
-          {blocks.map((b, index) => {
-            const local = frame - b.start;
-            const op = spring({
-              frame: Math.max(0, local),
-              fps,
-              config: { damping: 22, stiffness: 110 },
-            });
-            const lift = interpolate(op, [0, 1], [14, 0]);
-
-            return (
+            >
               <div
-                key={`${index}-${b.start}`}
                 style={{
-                  padding: "22px 26px",
-                  borderRadius: 18,
-                  background: theme.surface,
-                  border: `1px solid rgba(51, 33, 17, 0.12)`,
-                  boxShadow: "0 8px 28px rgba(62, 33, 10, 0.08)",
-                  opacity: op,
-                  transform: `translateY(${lift}px)`,
+                  fontSize: 17,
+                  fontWeight: 800,
+                  color: props.accentColor,
+                  marginBottom: 12,
                 }}
               >
-                <div
-                  style={{
-                    fontSize: 18,
-                    fontWeight: 800,
-                    color: props.accentColor,
-                    marginBottom: 10,
-                  }}
-                >
-                  {index + 1}. {b.title}
-                </div>
-                <div
-                  style={{
-                    fontSize:
-                      b.body.length > 220
-                        ? 21
-                        : b.body.length > 150
-                          ? 23
-                          : 26,
-                    lineHeight: 1.42,
-                    color: theme.textMuted,
-                  }}
-                >
-                  {b.body}
-                </div>
+                {activeIndex + 1}. {blocksMeta[activeIndex].title}
               </div>
-            );
-          })}
+              <div
+                style={{
+                  fontSize:
+                    blocksMeta[activeIndex].body.length > 220
+                      ? 21
+                      : blocksMeta[activeIndex].body.length > 150
+                        ? 23
+                        : 26,
+                  lineHeight: 1.42,
+                  color: theme.textMuted,
+                }}
+              >
+                {blocksMeta[activeIndex].body}
+              </div>
+            </div>
+          ) : null}
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

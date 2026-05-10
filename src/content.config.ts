@@ -21,7 +21,7 @@ const blog = defineCollection({
     keyTakeaways: z.array(z.string()).max(5).optional(),
     /** URL ou chemin `/…` vers le MP4 hero (~36 s), affiché sous le titre. */
     introVideo: z.string().optional(),
-    /** URL ou chemin `/…` vers le MP4 récap (~55 s), affiché après le corps de l’article. */
+    /** URL ou chemin `/…` vers le MP4 récap (~28 s export Remotion courant), affiché après le corps de l’article. */
     summaryVideo: z.string().optional(),
     /** Ratio du lecteur intro : 16:9 (paysage) ou 9:16 (vertical). */
     introVideoAspect: z.enum(["16:9", "9:16"]).optional(),

@@ -8,7 +8,7 @@ on:
         required: true
         type: string
       variant:
-        description: "intro (~30 s hero sous le titre) ou summary (~45 s récap)"
+        description: "intro (~36 s hero sous le titre) ou summary (~28 s récap)"
         required: true
         type: choice
         options:
