@@ -28,7 +28,7 @@ const blog = defineCollection({
     /** Séquence Remotion pour la vidéo récap : classique (3–5 points) ou data-reveal (barres + synthèse). */
     summarySequence: z.enum(["classic", "data-reveal"]).optional(),
     /**
-     * Données pour la séquence « data reveal » (récap ~55 s) — idéal neuro / chiffres.
+     * Données pour la séquence « data reveal » (récap ~55 s), ex. neuro / chiffres.
      * Requiert `summarySequence: data-reveal` pour le rendu Remotion correspondant.
      */
     dataReveal: z
