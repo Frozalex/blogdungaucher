@@ -38,6 +38,7 @@ export const translations = {
       proof3: "Approche rigoureuse",
       editorialNote:
         "Ici, on ne promet pas des progrès magiques en 7 jours. On propose des idées solides, des exemples concrets et des analyses que tu peux appliquer à ta pratique, que tu sois joueur de club, compétiteur ou simple passionné.",
+      editorialHeading: "Notre ligne",
       sectionsEyebrow: "4 rubriques",
       sectionsTitle: "Ce dont on parle ici",
       recentEyebrow: "Récents",
@@ -152,6 +153,7 @@ export const translations = {
       proof3: "Rigorous approach",
       editorialNote:
         "Here, we don't promise magical progress in 7 days. We offer solid ideas, concrete examples and analyses that you can apply to your practice, whether you're a club player, a competitor, or simply passionate about the game.",
+      editorialHeading: "Our approach",
       sectionsEyebrow: "4 sections",
       sectionsTitle: "What we cover here",
       recentEyebrow: "Recent",

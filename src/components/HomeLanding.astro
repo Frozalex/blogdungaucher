@@ -37,6 +37,7 @@ type HomeCopy = {
   analysesLink: string;
   aboutLink: string;
   editorialNote: string;
+  editorialHeading: string;
   sectionsEyebrow: string;
   sectionsTitle: string;
   recentEyebrow: string;
@@ -67,6 +68,7 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     aboutLink: "À propos",
     editorialNote:
       "Ici, on ne promet pas des progrès magiques en 7 jours. On propose des idées solides, des exemples concrets et des analyses que tu peux appliquer à ta pratique, que tu sois joueur de club, compétiteur ou simple passionné.",
+    editorialHeading: "Notre ligne",
     sectionsEyebrow: "4 rubriques",
     sectionsTitle: "Ce dont on parle ici",
     recentEyebrow: "Récents",
@@ -95,6 +97,7 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     aboutLink: "About",
     editorialNote:
       "Here, we don't promise magical progress in 7 days. We offer solid ideas, concrete examples and analyses that you can apply to your practice, whether you're a club player, a competitor, or simply passionate about the game.",
+    editorialHeading: "Our approach",
     sectionsEyebrow: "4 sections",
     sectionsTitle: "What we cover here",
     recentEyebrow: "Recent",
@@ -123,6 +126,7 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     aboutLink: "Über die Seite",
     editorialNote:
       "Hier versprechen wir keinen magischen Fortschritt in 7 Tagen. Wir bieten solide Ideen, konkrete Beispiele und Analysen, die du in deine Praxis übernehmen kannst, egal ob Vereinsspieler, Turnierspieler oder begeisterter Amateur.",
+    editorialHeading: "Unser Ansatz",
     sectionsEyebrow: "4 Rubriken",
     sectionsTitle: "Darum geht es hier",
     recentEyebrow: "Neu",
@@ -139,12 +143,9 @@ const c = homeByLang[lang];
     <div class="container hero__layout">
       <div class="hero__panel reveal scale-in">
         <div class="hero__panel-inner">
-          <div class="hero__masthead">
-            <span class="hero__masthead-accent" aria-hidden="true"></span>
-            <p class="hero__masthead-name display-serif" data-t="nav.siteName">
-              {c.siteName}
-            </p>
-          </div>
+          <p class="hero__brand">
+            <span class="hero__brand-name" data-t="nav.siteName">{c.siteName}</span><span class="hero__brand-dot" aria-hidden="true"></span>
+          </p>
           <p class="hero__tagline" data-t="home.signatureTagline">
             {c.signatureTagline}
           </p>
@@ -166,10 +167,10 @@ const c = homeByLang[lang];
           </p>
 
           <div class="hero__actions fade-up" style="--motion-delay: 250ms;">
-            <a href={blogHref} class="button-primary" data-t="home.startReading">
+            <a href={blogHref} class="button-primary hero__cta-primary" data-t="home.startReading">
               {c.startReading}
             </a>
-            <a href={`#${sectionsId}`} class="button-secondary" data-t="home.seeSections">
+            <a href={`#${sectionsId}`} class="button-secondary hero__cta-secondary" data-t="home.seeSections">
               {c.seeSections}
             </a>
           </div>
@@ -217,7 +218,10 @@ const c = homeByLang[lang];
   </nav>
 
   <section class="editorial-intro">
-    <div class="container">
+    <div class="container editorial-intro__wrap">
+      <h2 class="drop-heading section-title reveal" data-t="home.editorialHeading">
+        {c.editorialHeading}
+      </h2>
       <div class="editorial-note editorial-note--home reveal scale-in" data-t="home.editorialNote">
         {c.editorialNote}
       </div>
@@ -229,10 +233,9 @@ const c = homeByLang[lang];
       <span class="eyebrow reveal" data-t="home.sectionsEyebrow">
         {c.sectionsEyebrow}
       </span>
-      <h2 class="section-title reveal" data-t="home.sectionsTitle">
+      <h2 class="drop-heading section-title reveal" data-t="home.sectionsTitle">
         {c.sectionsTitle}
       </h2>
-      <hr class="section-divider reveal" />
       <div class="pillar-grid reveal-group">
         {
           categorySlugs.map((slug) => {
@@ -282,7 +285,7 @@ const c = homeByLang[lang];
           <span class="eyebrow" data-t="home.recentEyebrow">
             {c.recentEyebrow}
           </span>
-          <h2 class="section-title" data-t="home.latestTitle">
+          <h2 class="drop-heading section-title" data-t="home.latestTitle">
             {c.latestTitle}
           </h2>
         </div>
@@ -298,17 +301,14 @@ const c = homeByLang[lang];
 </div>
 
 <style>
-  .home-landing {
-    --home-panel-bg: color-mix(in srgb, var(--surface) 82%, transparent);
-  }
-
-  [data-theme="dark"] .home-landing {
-    --home-panel-bg: color-mix(in srgb, var(--surface) 72%, transparent);
-  }
+  /* Inspiration maquette : contraste fort fond / panneau clair, lettrines accent, cartes nettes. */
 
   .hero {
     position: relative;
-    padding: 4.75rem 0 0.5rem;
+    min-height: min(88vh, 46rem);
+    display: flex;
+    align-items: center;
+    padding: clamp(4rem, 10vw, 5.5rem) 0 2.5rem;
   }
 
   .hero .container,
@@ -323,44 +323,60 @@ const c = homeByLang[lang];
   .hero__layout {
     display: flex;
     justify-content: center;
-    max-width: 52rem;
+    width: 100%;
+    max-width: min(1200px, 100%);
     margin-inline: auto;
   }
 
   .hero__panel {
     width: 100%;
-    border-radius: var(--radius-xl);
-    padding: 1px;
-    background: linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--green) 35%, var(--border-soft)),
-      color-mix(in srgb, var(--green) 12%, transparent),
-      color-mix(in srgb, var(--border-soft) 80%, transparent)
-    );
-    box-shadow: var(--shadow-lg), var(--shadow-glow);
+    max-width: 28rem;
+    border-radius: 3px;
+    box-shadow:
+      0 2px 0 color-mix(in srgb, var(--green) 22%, transparent),
+      0 28px 72px rgba(24, 18, 12, 0.14);
+  }
+
+  [data-theme="dark"] .hero__panel {
+    box-shadow:
+      0 2px 0 color-mix(in srgb, var(--green) 35%, transparent),
+      0 32px 80px rgba(0, 0, 0, 0.55);
   }
 
   .hero__panel-inner {
-    border-radius: calc(var(--radius-xl) - 1px);
-    padding: clamp(1.75rem, 4vw, 2.65rem) clamp(1.35rem, 3.5vw, 2.25rem);
-    background: var(--home-panel-bg);
-    backdrop-filter: blur(14px) saturate(140%);
-    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border-radius: 3px;
+    padding: clamp(1.85rem, 4.5vw, 2.75rem) clamp(1.4rem, 3.5vw, 2rem);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
     text-align: center;
     position: relative;
-    overflow: hidden;
   }
 
-  .hero__panel-inner::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    opacity: 0.5;
-    background: radial-gradient(ellipse 85% 55% at 50% -10%, color-mix(in srgb, var(--green) 22%, transparent), transparent 68%);
+  .hero__brand {
+    margin: 0 0 0.35rem;
+    font-family: var(--font-display);
+    font-size: clamp(1.15rem, 2.8vw, 1.45rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--text-main);
+    line-height: 1.2;
   }
 
-  .hero__masthead,
+  .hero__brand-name {
+    display: inline;
+  }
+
+  .hero__brand-dot {
+    display: inline-block;
+    width: 0.38em;
+    height: 0.38em;
+    margin-left: 0.06em;
+    border-radius: 50%;
+    background: var(--green);
+    vertical-align: 0.12em;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--green) 25%, transparent);
+  }
+
   .hero__tagline,
   .hero__eyebrow,
   .hero__title,
@@ -371,118 +387,127 @@ const c = homeByLang[lang];
     z-index: 1;
   }
 
-  .hero__masthead {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .hero__masthead-accent {
-    width: 4px;
-    height: 2.1rem;
-    border-radius: 2px;
-    background: linear-gradient(180deg, var(--green), color-mix(in srgb, var(--green) 45%, var(--text-dim)));
-    box-shadow: 0 0 20px color-mix(in srgb, var(--green) 40%, transparent);
-  }
-
-  .hero__masthead-name {
-    margin: 0;
-    font-size: clamp(1.05rem, 2.4vw, 1.35rem);
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    color: var(--text-main);
-  }
-
   .hero__tagline {
-    margin: 0 0 1.25rem;
-    font-size: 0.82rem;
-    font-weight: 500;
-    letter-spacing: 0.04em;
+    margin: 0 0 1.35rem;
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
     text-transform: uppercase;
     color: var(--text-dim);
   }
 
   .hero__eyebrow {
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.4rem;
   }
 
   .hero__title {
-    position: relative;
-    font-size: clamp(2.25rem, 5.8vw, 4rem);
-    margin: 0.65rem 0 1rem;
-    line-height: 1.08;
-    letter-spacing: -0.03em;
-  }
-
-  .hero__title::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    width: min(420px, 88%);
-    height: 140px;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(closest-side, color-mix(in srgb, var(--green) 16%, transparent) 0%, transparent 72%);
-    filter: blur(12px);
-    z-index: -1;
-    pointer-events: none;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2rem, 5.2vw, 3.35rem);
+    margin: 0.5rem 0 1rem;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
   }
 
   .hero__accent {
     color: var(--green);
-    font-size: 1.06em;
+    font-size: 1.05em;
+    font-weight: 800;
   }
 
   .hero__lead {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: var(--text-muted);
-    max-width: 40rem;
+    max-width: 26rem;
     margin-inline: auto;
-    line-height: 1.75;
+    line-height: 1.7;
   }
 
   .hero__actions {
     display: flex;
-    gap: 0.65rem;
+    gap: 0.6rem;
     flex-wrap: wrap;
-    margin-top: 1.5rem;
+    margin-top: 1.65rem;
     justify-content: center;
+  }
+
+  .hero__cta-primary {
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    min-height: 2.65rem;
+    padding-inline: 1.5rem;
+    box-shadow: 0 6px 20px rgba(61, 139, 55, 0.28);
+  }
+
+  .hero__cta-secondary {
+    border-radius: 2px;
+    font-size: 0.82rem;
   }
 
   .hero-proof {
     list-style: none;
     padding: 0;
-    margin: 1.35rem 0 0;
+    margin: 1.45rem 0 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.45rem;
+    gap: 0.4rem;
     justify-content: center;
   }
 
   .hero-proof li {
-    padding: 0.32rem 0.7rem;
-    border-radius: var(--radius-pill);
-    border: 1px solid var(--green-border);
-    background: color-mix(in srgb, var(--green-light) 65%, var(--surface));
+    padding: 0.28rem 0.65rem;
+    border-radius: 2px;
+    border: 1px solid var(--border-soft);
+    background: var(--surface-warm);
     color: var(--text-muted);
-    font-size: 0.76rem;
+    font-size: 0.72rem;
     font-weight: 600;
+  }
+
+  @media (min-width: 960px) {
+    .hero__layout {
+      justify-content: flex-start;
+      padding-inline: 0.25rem;
+    }
+
+    .hero__panel {
+      max-width: min(28rem, 92vw);
+    }
+
+    .hero__panel-inner {
+      text-align: left;
+    }
+
+    .hero__lead {
+      margin-inline: 0;
+    }
+
+    .hero__actions {
+      justify-content: flex-start;
+    }
+
+    .hero-proof {
+      justify-content: flex-start;
+    }
   }
 
   .home-quick {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.65rem 1.1rem;
-    padding: 1.15rem 0 0.75rem;
+    gap: 0.75rem 1.25rem;
+    padding: 1.35rem 0 1.5rem;
+    margin-bottom: 0.25rem;
     justify-content: center;
+    border-bottom: 1px solid var(--border-soft);
   }
 
   .home-quick__label {
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--text-dim);
   }
@@ -493,53 +518,79 @@ const c = homeByLang[lang];
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.45rem;
+    gap: 0.35rem 0.5rem;
     justify-content: center;
   }
 
   .home-quick__link {
     display: inline-flex;
     align-items: center;
-    padding: 0.4rem 0.85rem;
-    border-radius: var(--radius-pill);
-    font-size: 0.8rem;
+    padding: 0.38rem 0.9rem;
+    border-radius: 2px;
+    font-size: 0.78rem;
     font-weight: 600;
     color: var(--text-muted);
-    background: var(--surface-warm);
-    border: 1px solid var(--border-soft);
+    background: transparent;
+    border: 1px solid transparent;
     transition:
       color 0.18s ease,
       border-color 0.18s ease,
-      background 0.18s ease,
-      transform 0.22s var(--ease-spring);
+      background 0.18s ease;
   }
 
   .home-quick__link:hover {
     color: var(--green-hover);
     border-color: var(--green-border);
-    background: color-mix(in srgb, var(--green-light) 50%, var(--surface));
-    transform: translateY(-2px);
+    background: var(--green-light);
   }
 
   .editorial-intro {
-    padding: 1rem 0 1.75rem;
+    padding: clamp(2.5rem, 6vw, 4rem) 0;
   }
 
-  .editorial-intro .container {
+  .editorial-intro__wrap {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
   }
 
   .editorial-note--home {
-    max-width: 44rem;
-    border-left: 3px solid var(--green);
-    padding-left: 1.15rem;
-    border-radius: 0 var(--radius-md) var(--radius-md) 0;
-    background: linear-gradient(90deg, color-mix(in srgb, var(--green-light) 50%, var(--surface)), var(--surface));
+    width: 100%;
+    max-width: 40rem;
+    margin-inline: auto;
+    text-align: left;
+    border: 1px solid var(--border-soft);
+    border-radius: 3px;
+    padding: 1.35rem 1.35rem 1.35rem 1.25rem;
+    border-left: 4px solid var(--green);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Titres type maquette : première lettre massacrée en vert (reste en noir via tokens). */
+  .home-landing h2.drop-heading.section-title {
+    font-family: var(--font-display);
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1.85rem, 4.8vw, 2.85rem);
+    letter-spacing: -0.03em;
+    line-height: 1.12;
+    margin: 0 0 0.25rem;
+    color: var(--text-main);
+  }
+
+  .home-landing h2.drop-heading.section-title::first-letter {
+    color: var(--green);
+    font-weight: 800;
+    font-size: clamp(2.75rem, 9vw, 4.25rem);
+    line-height: 0.85;
+    margin-right: 0.02em;
   }
 
   .pillars {
-    padding: 0.6rem 0 3.25rem;
+    padding: clamp(2rem, 5vw, 3rem) 0 3.75rem;
   }
 
   .pillars .container {
@@ -549,8 +600,8 @@ const c = homeByLang[lang];
   .pillar-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
-    gap: 0.7rem;
-    margin-top: 1.35rem;
+    gap: 1.15rem;
+    margin-top: 1.75rem;
     align-items: stretch;
   }
 
@@ -558,10 +609,11 @@ const c = homeByLang[lang];
     display: flex;
     align-items: flex-start;
     gap: 0.85rem;
-    padding: 1.15rem 1.15rem;
-    border-radius: var(--radius-lg);
-    border: 1.5px solid var(--border-soft);
-    background: color-mix(in srgb, var(--surface) 92%, transparent);
+    padding: 1.35rem 1.25rem;
+    border-radius: 3px;
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
     transition:
       transform 240ms var(--ease-spring),
       border-color 180ms ease,
@@ -570,18 +622,18 @@ const c = homeByLang[lang];
   }
 
   .pillar:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     border-color: var(--p);
     box-shadow: var(--shadow-md);
   }
 
   .pillar__dot {
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: var(--p);
     flex-shrink: 0;
-    margin-top: 0.35rem;
+    margin-top: 0.4rem;
     transition: transform 240ms var(--ease-spring);
   }
 
@@ -597,8 +649,8 @@ const c = homeByLang[lang];
   .pillar__kicker {
     display: inline-flex;
     margin-bottom: 0.2rem;
-    font-size: 0.66rem;
-    letter-spacing: 0.1em;
+    font-size: 0.64rem;
+    letter-spacing: 0.11em;
     text-transform: uppercase;
     color: var(--text-dim);
     font-weight: 700;
@@ -608,15 +660,15 @@ const c = homeByLang[lang];
     display: block;
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.94rem;
     color: var(--text-main);
-    margin-bottom: 0.18rem;
+    margin-bottom: 0.2rem;
   }
 
   .pillar p {
     font-size: 0.84rem;
     color: var(--text-muted);
-    line-height: 1.5;
+    line-height: 1.55;
     margin: 0;
   }
 
@@ -635,7 +687,7 @@ const c = homeByLang[lang];
   }
 
   .latest {
-    padding: 1.35rem 0 5rem;
+    padding: clamp(2rem, 5vw, 3rem) 0 5.5rem;
   }
 
   .latest .container {
@@ -648,7 +700,7 @@ const c = homeByLang[lang];
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 1.35rem;
+    margin-bottom: 1.65rem;
     max-width: 72rem;
     margin-inline: auto;
   }
@@ -657,12 +709,12 @@ const c = homeByLang[lang];
     text-align: left;
   }
 
-  .section-head .section-title {
+  .section-head .drop-heading {
     margin-bottom: 0;
   }
 
   .see-all {
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-muted);
     transition: color 160ms ease;
@@ -675,10 +727,16 @@ const c = homeByLang[lang];
   .latest-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.85rem;
+    gap: 1.15rem;
     text-align: left;
     max-width: 72rem;
     margin-inline: auto;
+  }
+
+  .latest-grid > :global(.card) {
+    box-shadow: var(--shadow-md);
+    border-radius: 3px;
+    border-width: 1px;
   }
 
   .latest-grid > :first-child {
@@ -704,7 +762,8 @@ const c = homeByLang[lang];
 
   @media (max-width: 560px) {
     .hero {
-      padding: 3.25rem 0 0.25rem;
+      min-height: unset;
+      padding: 3.5rem 0 2rem;
     }
     .hero .container,
     .editorial-intro .container,
@@ -714,10 +773,14 @@ const c = homeByLang[lang];
       width: min(1280px, calc(100% - 1.25rem));
     }
     .hero-proof li {
-      font-size: 0.72rem;
+      font-size: 0.68rem;
     }
     .home-quick {
       flex-direction: column;
+      gap: 0.65rem;
+    }
+    .hero__panel {
+      max-width: 100%;
     }
   }
 </style>
