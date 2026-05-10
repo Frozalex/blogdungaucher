@@ -12,6 +12,9 @@ import FAQ from "../../../components/FAQ.astro";
 import ArticleIntroVideo from "../../../components/ArticleIntroVideo.astro";
 import ArticleDataRevealVideo from "../../../components/ArticleDataRevealVideo.astro";
 import ArticleSummaryVideo from "../../../components/ArticleSummaryVideo.astro";
+import ArticleRemotionIntro from "../../../components/ArticleRemotionIntro.astro";
+import ArticleRemotionSummary from "../../../components/ArticleRemotionSummary.astro";
+import ArticleRemotionDataReveal from "../../../components/ArticleRemotionDataReveal.astro";
 
 import { categoryMap, categorySlugs, siteConfig } from "../../../data/site";
 import {
@@ -30,6 +33,8 @@ import {
 } from "../../../utils/blog";
 import { swapLangPrefix } from "../../../utils/lang-paths";
 import { splitMarkdownAtH2Slug } from "../../../utils/markdown-split-html";
+import { isPublicAssetAvailable } from "../../../utils/public-asset";
+import { buildVideoPostProps } from "../../../utils/remotion-post-props";
 
 export async function getStaticPaths() {
   const posts = filterPostsForLang(await getAllPosts(), "de");
@@ -42,8 +47,12 @@ const category = categoryMap[post.data.category];
 
 const midArticleVideo = post.data.midArticleVideo?.trim();
 const midArticleHeadingSlug = post.data.midArticleVideoHeadingSlug?.trim();
+const useRemotionMid = post.data.remotionPlayerMid === true;
+const midVideoFileOk = !!(midArticleVideo && isPublicAssetAvailable(midArticleVideo));
+const midSlotActive =
+  !!midArticleHeadingSlug && (midVideoFileOk || useRemotionMid);
 let midArticleSplit: Awaited<ReturnType<typeof splitMarkdownAtH2Slug>> = null;
-if (midArticleVideo && midArticleHeadingSlug) {
+if (midSlotActive && midArticleHeadingSlug) {
   midArticleSplit = await splitMarkdownAtH2Slug(post.body, midArticleHeadingSlug);
   if (!midArticleSplit) {
     throw new Error(
@@ -68,8 +77,15 @@ const categoryHrefDe = swapLangPrefix(category.href, "de");
 
 const faqs = post.data.faq ?? [];
 const heroImage = post.data.heroImage;
-const introVideo = post.data.introVideo;
-const summaryVideo = post.data.summaryVideo;
+const introVideo = post.data.introVideo?.trim();
+const summaryVideo = post.data.summaryVideo?.trim();
+const useRemotionIntro = post.data.remotionPlayerIntro === true;
+const useRemotionSummary = post.data.remotionPlayerSummary === true;
+const remotionProps = buildVideoPostProps(post.data);
+const showIntroVideo =
+  !useRemotionIntro && !!(introVideo && isPublicAssetAvailable(introVideo));
+const showSummaryVideo =
+  !useRemotionSummary && !!(summaryVideo && isPublicAssetAvailable(summaryVideo));
 const introVideoAspect = post.data.introVideoAspect;
 const summaryVideoAspect = post.data.summaryVideoAspect ?? "16:9";
 
@@ -133,7 +149,13 @@ const otherPillars = categorySlugs
           <p class="article-excerpt">{post.data.excerpt}</p>
         </header>
 
-        {introVideo && (
+        {useRemotionIntro && (
+          <ArticleRemotionIntro
+            inputProps={remotionProps}
+            aspect={introVideoAspect ?? "16:9"}
+          />
+        )}
+        {showIntroVideo && introVideo && (
           <ArticleIntroVideo
             src={introVideo}
             poster={heroImage?.src}
@@ -169,14 +191,23 @@ const otherPillars = categorySlugs
           {midArticleSplit ? (
             <>
               <div class="md-chunk" set:html={midArticleSplit.beforeHtml} />
-              <ArticleDataRevealVideo
-                src={midArticleVideo!}
-                poster={heroImage?.src}
-                aspect={post.data.midArticleVideoAspect ?? "16:9"}
-                videoTitle={`Kernzahlen als Video: ${post.data.title}`}
-                eyebrow={post.data.midArticleVideoEyebrow}
-                lang="de"
-              />
+              {useRemotionMid ? (
+                <ArticleRemotionDataReveal
+                  inputProps={remotionProps}
+                  aspect={post.data.midArticleVideoAspect ?? "16:9"}
+                  eyebrow={post.data.midArticleVideoEyebrow}
+                  lang="de"
+                />
+              ) : (
+                <ArticleDataRevealVideo
+                  src={midArticleVideo!}
+                  poster={heroImage?.src}
+                  aspect={post.data.midArticleVideoAspect ?? "16:9"}
+                  videoTitle={`Kernzahlen als Video: ${post.data.title}`}
+                  eyebrow={post.data.midArticleVideoEyebrow}
+                  lang="de"
+                />
+              )}
               <div class="md-chunk" set:html={midArticleSplit.afterHtml} />
             </>
           ) : (
@@ -184,7 +215,14 @@ const otherPillars = categorySlugs
           )}
         </div>
 
-        {summaryVideo && (
+        {useRemotionSummary && (
+          <ArticleRemotionSummary
+            inputProps={remotionProps}
+            aspect={summaryVideoAspect}
+            heading="Kurz zusammengefasst (Video)"
+          />
+        )}
+        {showSummaryVideo && summaryVideo && (
           <ArticleSummaryVideo
             src={summaryVideo}
             poster={heroImage?.src}

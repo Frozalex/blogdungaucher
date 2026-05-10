@@ -1,9 +1,15 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+import react from "@astrojs/react";
 import { defineConfig } from "astro/config";
 
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 import { SITE_ORIGIN } from "./scripts/site-origin.mjs";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /**
  * `site` fixe (sans lecture de SITE / PUBLIC_SITE_URL au build).
@@ -13,9 +19,20 @@ import { SITE_ORIGIN } from "./scripts/site-origin.mjs";
  */
 export default defineConfig({
   site: SITE_ORIGIN,
+  integrations: [react()],
   output: "static",
   trailingSlash: "always",
   compressHTML: true,
+  vite: {
+    resolve: {
+      alias: {
+        "@remotion": path.resolve(__dirname, "remotion/src"),
+      },
+    },
+    ssr: {
+      noExternal: ["remotion", "@remotion/player"],
+    },
+  },
   prefetch: {
     prefetchAll: true,
     defaultStrategy: "viewport",

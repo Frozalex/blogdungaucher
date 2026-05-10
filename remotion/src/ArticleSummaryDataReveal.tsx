@@ -21,7 +21,7 @@ type Props = VideoPostProps & { dataReveal: DataRevealPayload };
 
 export function ArticleSummaryDataReveal(props: Props) {
   const frame = useCurrentFrame();
-  const { height } = useVideoConfig();
+  const { height, width } = useVideoConfig();
   const isPortrait = height > width;
   const { dataReveal, accentColor } = props;
   const { vizTitle, bars, highlight, highlightSub, source, takeaway, cta } =

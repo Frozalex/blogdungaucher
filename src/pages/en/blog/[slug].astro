@@ -27,10 +27,15 @@ import {
 import { getEnglishArticleMarkdown, renderEnglishMarkdown } from "../../../utils/english-article";
 import { swapLangPrefix } from "../../../utils/lang-paths";
 import { splitMarkdownAtH2Slug } from "../../../utils/markdown-split-html";
+import { isPublicAssetAvailable } from "../../../utils/public-asset";
+import { buildVideoPostProps } from "../../../utils/remotion-post-props";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleIntroVideo from "../../../components/ArticleIntroVideo.astro";
 import ArticleDataRevealVideo from "../../../components/ArticleDataRevealVideo.astro";
 import ArticleSummaryVideo from "../../../components/ArticleSummaryVideo.astro";
+import ArticleRemotionIntro from "../../../components/ArticleRemotionIntro.astro";
+import ArticleRemotionSummary from "../../../components/ArticleRemotionSummary.astro";
+import ArticleRemotionDataReveal from "../../../components/ArticleRemotionDataReveal.astro";
 
 export async function getStaticPaths() {
   const posts = filterPostsForLang(await getAllPosts(), "en");
@@ -43,8 +48,12 @@ const englishMarkdown = getEnglishArticleMarkdown(slug);
 
 const midArticleVideo = post.data.midArticleVideo?.trim();
 const midArticleHeadingSlug = post.data.midArticleVideoHeadingSlug?.trim();
+const useRemotionMid = post.data.remotionPlayerMid === true;
+const midVideoFileOk = !!(midArticleVideo && isPublicAssetAvailable(midArticleVideo));
+const midSlotActive =
+  !!midArticleHeadingSlug && (midVideoFileOk || useRemotionMid);
 let midArticleSplit: Awaited<ReturnType<typeof splitMarkdownAtH2Slug>> = null;
-if (midArticleVideo && midArticleHeadingSlug) {
+if (midSlotActive && midArticleHeadingSlug) {
   const mdSource = englishMarkdown ?? post.body;
   midArticleSplit = await splitMarkdownAtH2Slug(mdSource, midArticleHeadingSlug);
   if (!midArticleSplit) {
@@ -90,6 +99,22 @@ const displayTitle   = post.data.titleEn   ?? post.data.title;
 const displayExcerpt = post.data.excerptEn ?? post.data.excerpt;
 const hasEnTranslation = !!englishMarkdown && !!(post.data.titleEn);
 
+const heroImage = post.data.heroImage;
+const introVideo = post.data.introVideo?.trim();
+const summaryVideo = post.data.summaryVideo?.trim();
+const useRemotionIntro = post.data.remotionPlayerIntro === true;
+const useRemotionSummary = post.data.remotionPlayerSummary === true;
+const remotionProps = buildVideoPostProps(post.data, {
+  title: displayTitle,
+  excerpt: displayExcerpt,
+});
+const showIntroVideo =
+  !useRemotionIntro && !!(introVideo && isPublicAssetAvailable(introVideo));
+const showSummaryVideo =
+  !useRemotionSummary && !!(summaryVideo && isPublicAssetAvailable(summaryVideo));
+const introVideoAspect = post.data.introVideoAspect;
+const summaryVideoAspect = post.data.summaryVideoAspect ?? "16:9";
+
 const faqsForDisplay = post.data.faqEn ?? post.data.faq ?? [];
 
 const enCategoryLabels: Record<string, string> = {
@@ -99,12 +124,6 @@ const enCategoryLabels: Record<string, string> = {
 };
 const enCategoryLabel = enCategoryLabels[post.data.category] ?? category.label;
 const enCategoryHref = swapLangPrefix(category.href, "en");
-
-const heroImage = post.data.heroImage;
-const introVideo = post.data.introVideo;
-const summaryVideo = post.data.summaryVideo;
-const introVideoAspect = post.data.introVideoAspect;
-const summaryVideoAspect = post.data.summaryVideoAspect ?? "16:9";
 
 const structuredData = [
   buildArticleJsonLd(post, { lang: "en" }),
@@ -171,7 +190,13 @@ const otherPillars = categorySlugs
           <p class="article-excerpt">{displayExcerpt}</p>
         </header>
 
-        {introVideo && (
+        {useRemotionIntro && (
+          <ArticleRemotionIntro
+            inputProps={remotionProps}
+            aspect={introVideoAspect ?? "16:9"}
+          />
+        )}
+        {showIntroVideo && introVideo && (
           <ArticleIntroVideo
             src={introVideo}
             poster={heroImage?.src}
@@ -214,14 +239,23 @@ const otherPillars = categorySlugs
           {midArticleSplit ? (
             <>
               <div class="md-chunk" set:html={midArticleSplit.beforeHtml} />
-              <ArticleDataRevealVideo
-                src={midArticleVideo!}
-                poster={heroImage?.src}
-                aspect={post.data.midArticleVideoAspect ?? "16:9"}
-                videoTitle={`Key data video: ${displayTitle}`}
-                eyebrow={post.data.midArticleVideoEyebrow}
-                lang="en"
-              />
+              {useRemotionMid ? (
+                <ArticleRemotionDataReveal
+                  inputProps={remotionProps}
+                  aspect={post.data.midArticleVideoAspect ?? "16:9"}
+                  eyebrow={post.data.midArticleVideoEyebrow}
+                  lang="en"
+                />
+              ) : (
+                <ArticleDataRevealVideo
+                  src={midArticleVideo!}
+                  poster={heroImage?.src}
+                  aspect={post.data.midArticleVideoAspect ?? "16:9"}
+                  videoTitle={`Key data video: ${displayTitle}`}
+                  eyebrow={post.data.midArticleVideoEyebrow}
+                  lang="en"
+                />
+              )}
               <div class="md-chunk" set:html={midArticleSplit.afterHtml} />
             </>
           ) : englishHtml ? (
@@ -231,7 +265,14 @@ const otherPillars = categorySlugs
           )}
         </div>
 
-        {summaryVideo && (
+        {useRemotionSummary && (
+          <ArticleRemotionSummary
+            inputProps={remotionProps}
+            aspect={summaryVideoAspect}
+            heading="Video recap"
+          />
+        )}
+        {showSummaryVideo && summaryVideo && (
           <ArticleSummaryVideo
             src={summaryVideo}
             poster={heroImage?.src}

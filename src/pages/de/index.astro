@@ -19,36 +19,12 @@ const latestPosts = await getLatestPosts(5, "de");
 
   <!-- ─── HERO ─── -->
   <section class="hero">
-    <div class="hero-particles" aria-hidden="true">
-      <span class="hero-particle hero-particle--knight p1">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M18 19H7.5a1.5 1.5 0 0 1-1.5-1.5V17l1-2 1-5.2c.2-1.1.8-2.1 1.7-2.8L13 4h-2l-.5-2h4L16 4l1.2.7c1.8 1 2.8 2.9 2.5 4.9L19 13l1 2v2.5A1.5 1.5 0 0 1 18.5 19H18Z"/>
-          <circle cx="13.5" cy="8.2" r="0.8"/>
-        </svg>
-      </span>
-      <span class="hero-particle hero-particle--knight p2">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M18 19H7.5a1.5 1.5 0 0 1-1.5-1.5V17l1-2 1-5.2c.2-1.1.8-2.1 1.7-2.8L13 4h-2l-.5-2h4L16 4l1.2.7c1.8 1 2.8 2.9 2.5 4.9L19 13l1 2v2.5A1.5 1.5 0 0 1 18.5 19H18Z"/>
-          <circle cx="13.5" cy="8.2" r="0.8"/>
-        </svg>
-      </span>
-      <span class="hero-particle hero-particle--knight p3">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M18 19H7.5a1.5 1.5 0 0 1-1.5-1.5V17l1-2 1-5.2c.2-1.1.8-2.1 1.7-2.8L13 4h-2l-.5-2h4L16 4l1.2.7c1.8 1 2.8 2.9 2.5 4.9L19 13l1 2v2.5A1.5 1.5 0 0 1 18.5 19H18Z"/>
-          <circle cx="13.5" cy="8.2" r="0.8"/>
-        </svg>
-      </span>
-      <span class="hero-particle hero-particle--knight p4">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M18 19H7.5a1.5 1.5 0 0 1-1.5-1.5V17l1-2 1-5.2c.2-1.1.8-2.1 1.7-2.8L13 4h-2l-.5-2h4L16 4l1.2.7c1.8 1 2.8 2.9 2.5 4.9L19 13l1 2v2.5A1.5 1.5 0 0 1 18.5 19H18Z"/>
-          <circle cx="13.5" cy="8.2" r="0.8"/>
-        </svg>
-      </span>
-      <span class="hero-particle hero-particle--plus p5">+</span>
-      <span class="hero-particle hero-particle--plus p6">+</span>
-      <span class="hero-particle hero-particle--plus p7">+</span>
-      <span class="hero-particle hero-particle--plus p8">+</span>
+    <div class="hero-aurora" aria-hidden="true">
+      <span class="aurora-orb aurora-orb--a"></span>
+      <span class="aurora-orb aurora-orb--b"></span>
+      <span class="aurora-orb aurora-orb--c"></span>
     </div>
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
     <div class="container hero__inner">
       <span class="eyebrow fade-up" style="--motion-delay: 40ms;" data-t="home.eyebrow">Éditorial indépendant</span>
       <h1 class="hero__title fade-up" style="--motion-delay: 120ms;" data-t-html="home.titleHtml">
@@ -137,48 +113,56 @@ const latestPosts = await getLatestPosts(5, "de");
     padding: 5.5rem 0 3.2rem;
   }
 
-  .hero-particles {
+  /* ── AURORA BACKGROUND ──────────────────────────────────── */
+  .hero-aurora {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .aurora-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(72px);
+    will-change: transform;
+  }
+
+  .aurora-orb--a {
+    width: min(62vw, 680px);
+    height: min(52vw, 540px);
+    left: -15%;
+    top: -25%;
+    background: color-mix(in srgb, var(--green) 12%, transparent);
+    animation: auroraA 18s ease-in-out infinite alternate;
+  }
+
+  .aurora-orb--b {
+    width: min(48vw, 520px);
+    height: min(42vw, 450px);
+    right: -10%;
+    bottom: -20%;
+    background: color-mix(in srgb, var(--green) 8%, transparent);
+    animation: auroraB 22s ease-in-out infinite alternate;
+  }
+
+  .aurora-orb--c {
+    width: min(36vw, 380px);
+    height: min(32vw, 340px);
+    left: 30%;
+    top: 55%;
+    background: color-mix(in srgb, var(--green) 6%, transparent);
+    animation: auroraA 15s ease-in-out 4s infinite alternate-reverse;
+  }
+
+  /* ── CANVAS PARTICLES ────────────────────────────────── */
+  .hero-canvas {
     position: absolute;
     inset: 0;
     pointer-events: none;
     z-index: 0;
   }
-
-  .hero-particle {
-    position: absolute;
-    top: -1.5rem;
-    right: -2rem;
-    color: color-mix(in srgb, var(--green) 72%, #9fff92);
-    opacity: 0;
-    will-change: transform, opacity;
-    animation: knightTrail 18s linear infinite;
-  }
-
-  .hero-particle--knight {
-    width: clamp(0.95rem, 1.45vw, 1.4rem);
-    height: clamp(0.95rem, 1.45vw, 1.4rem);
-  }
-  .hero-particle--knight svg {
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
-    filter: drop-shadow(0 0 10px color-mix(in srgb, var(--green) 30%, transparent));
-  }
-
-  .hero-particle--plus {
-    font-size: clamp(0.65rem, 1.1vw, 1rem);
-    font-weight: 700;
-    color: color-mix(in srgb, var(--green) 92%, #fff);
-    filter: drop-shadow(0 0 8px color-mix(in srgb, var(--green) 24%, transparent));
-  }
-  .hero-particle.p1 { top: 8%;  animation-delay: 0s;   animation-duration: 16s; }
-  .hero-particle.p2 { top: 22%; animation-delay: 2.2s; animation-duration: 20s; }
-  .hero-particle.p3 { top: 36%; animation-delay: 4.6s; animation-duration: 17s; }
-  .hero-particle.p4 { top: 52%; animation-delay: 7s;   animation-duration: 19s; }
-  .hero-particle.p5 { top: 14%; animation-delay: 1.2s; animation-duration: 13s; }
-  .hero-particle.p6 { top: 29%; animation-delay: 3.5s; animation-duration: 14s; }
-  .hero-particle.p7 { top: 44%; animation-delay: 6.2s; animation-duration: 15s; }
-  .hero-particle.p8 { top: 61%; animation-delay: 8.6s; animation-duration: 14s; }
 
   .hero .container,
   .editorial-intro .container,
@@ -267,21 +251,16 @@ const latestPosts = await getLatestPosts(5, "de");
     justify-content: center;
   }
 
-  @keyframes knightTrail {
-    0% {
-      transform: translate3d(0, 0, 0) rotate(-8deg);
-      opacity: 0;
-    }
-    8% {
-      opacity: 0.24;
-    }
-    82% {
-      opacity: 0.24;
-    }
-    100% {
-      transform: translate3d(-112vw, 88vh, 0) rotate(-20deg);
-      opacity: 0;
-    }
+  @keyframes auroraA {
+    0%   { transform: translate(0, 0) scale(1); }
+    40%  { transform: translate(6%, 10%) scale(1.07); }
+    100% { transform: translate(-3%, 6%) scale(0.95); }
+  }
+
+  @keyframes auroraB {
+    0%   { transform: translate(0, 0) scale(1); }
+    40%  { transform: translate(-7%, -9%) scale(1.10); }
+    100% { transform: translate(4%, -4%) scale(0.93); }
   }
 
   /* ── PILLARS ──────────────────────────────────────────── */
@@ -435,10 +414,104 @@ const latestPosts = await getLatestPosts(5, "de");
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .hero-particle {
-      animation: none;
-      opacity: 0.1;
-      transform: none;
-    }
+    .aurora-orb { animation: none; }
   }
 </style>
+
+<script>
+(function () {
+  const canvas = document.getElementById('heroCanvas') as HTMLCanvasElement | null;
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  const PIECES = ['♟', '♞', '♝', '♜', '♛', '♚', '♙', '♘', '♗', '♖', '♕', '♔'];
+  const COUNT = 28;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W = 0, H = 0;
+  const pts: {x:number;y:number;size:number;char:string;vx:number;vy:number;phase:number;baseAlpha:number}[] = [];
+
+  function hexToRgb(hex: string): [number,number,number] {
+    hex = hex.replace(/^#/, '');
+    if (hex.length === 3) hex = hex.split('').map(c => c + c).join('');
+    const n = parseInt(hex, 16);
+    return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  }
+  function getGreenRgb(): [number,number,number] {
+    const v = getComputedStyle(document.documentElement).getPropertyValue('--green').trim();
+    return hexToRgb(v);
+  }
+  function rand(a: number, b: number) { return a + Math.random() * (b - a); }
+  function spawn(startY?: number) {
+    return {
+      x: rand(-20, W + 20),
+      y: startY !== undefined ? startY : rand(0, H + 20),
+      size: rand(11, 23),
+      char: PIECES[Math.floor(Math.random() * PIECES.length)],
+      vx: rand(-0.13, 0.13),
+      vy: rand(-0.38, -0.12),
+      phase: rand(0, Math.PI * 2),
+      baseAlpha: rand(0.04, 0.12),
+    };
+  }
+  function resize() {
+    const section = canvas!.closest('.hero') as HTMLElement;
+    W = canvas!.width = section.offsetWidth;
+    H = canvas!.height = section.offsetHeight;
+  }
+
+  resize();
+  for (let i = 0; i < COUNT; i++) pts.push(spawn());
+  window.addEventListener('resize', resize, { passive: true });
+
+  let rgb = getGreenRgb();
+  new MutationObserver(() => { rgb = getGreenRgb(); })
+    .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  if (reduced) {
+    for (const p of pts) {
+      ctx.globalAlpha = p.baseAlpha * 0.5;
+      ctx.fillStyle = `rgb(${rgb.join(',')})`;
+      ctx.font = `${p.size}px sans-serif`;
+      ctx.fillText(p.char, p.x, p.y);
+    }
+    ctx.globalAlpha = 1;
+    return;
+  }
+
+  function draw() {
+    ctx!.clearRect(0, 0, W, H);
+    for (let i = 0; i < pts.length; i++) {
+      const p = pts[i];
+      p.x += p.vx;
+      p.y += p.vy;
+      p.phase += 0.009;
+      if (p.y < -35) Object.assign(p, spawn(H + 20));
+      if (p.x < -35) p.x = W + 20;
+      if (p.x > W + 35) p.x = -20;
+      const alpha = p.baseAlpha * (0.6 + 0.4 * Math.sin(p.phase));
+      for (let j = i + 1; j < pts.length; j++) {
+        const q = pts[j];
+        const dx = q.x - p.x, dy = q.y - p.y;
+        const d = Math.hypot(dx, dy);
+        if (d < 155) {
+          const la = ((1 - d / 155) * 0.06 * alpha).toFixed(4);
+          ctx!.beginPath();
+          ctx!.strokeStyle = `rgba(${rgb.join(',')},${la})`;
+          ctx!.lineWidth = 0.55;
+          ctx!.moveTo(p.x, p.y);
+          ctx!.lineTo(q.x, q.y);
+          ctx!.stroke();
+        }
+      }
+      ctx!.globalAlpha = alpha;
+      ctx!.fillStyle = `rgb(${rgb.join(',')})`;
+      ctx!.font = `${p.size}px sans-serif`;
+      ctx!.fillText(p.char, p.x, p.y);
+    }
+    ctx!.globalAlpha = 1;
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+</script>

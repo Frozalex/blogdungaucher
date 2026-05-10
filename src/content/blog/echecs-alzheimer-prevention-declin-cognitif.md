@@ -26,13 +26,13 @@ keyTakeaways:
   - "Corrélations de cohorte et destin individuel : ne pas les confondre."
   - "Les hazard ratios ALSOP portent sur des catégories larges (échecs mélangés aux autres jeux)."
   - "Les essais récents mettent souvent en avant humeur et qualité de vie plus que la cognition globale."
-introVideo: "/videos/echecs-alzheimer-prevention-declin-cognitif-intro-landscape.mp4"
+remotionPlayerIntro: true
+remotionPlayerMid: true
+remotionPlayerSummary: true
 introVideoAspect: "16:9"
-midArticleVideo: "/videos/echecs-alzheimer-prevention-declin-cognitif-mid-landscape.mp4"
 midArticleVideoAspect: "16:9"
 midArticleVideoHeadingSlug: "synthèse-chiffrée--ce-que-disent-quelques-études-clés"
 midArticleVideoEyebrow: "Données clés"
-summaryVideo: "/videos/echecs-alzheimer-prevention-declin-cognitif-summary-landscape.mp4"
 summaryVideoAspect: "16:9"
 summarySequence: "data-reveal"
 dataReveal:

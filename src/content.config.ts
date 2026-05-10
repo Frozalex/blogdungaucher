@@ -63,6 +63,13 @@ const blog = defineCollection({
     midArticleVideoEyebrow: z.string().optional(),
     /** Ratio du lecteur pour la vidéo récap (après conclusion). */
     summaryVideoAspect: z.enum(["16:9", "9:16"]).optional(),
+    /**
+     * Lecteur **Remotion** dans le navigateur (compositions React) : pas de MP4 requis.
+     * Peut coexister avec `introVideo` (fichier) : Remotion est prioritaire si true.
+     */
+    remotionPlayerIntro: z.boolean().optional(),
+    remotionPlayerMid: z.boolean().optional(),
+    remotionPlayerSummary: z.boolean().optional(),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     ogImage: z.string().optional(),
@@ -100,11 +107,13 @@ const blog = defineCollection({
       )
       .optional(),
   }).superRefine((data, ctx) => {
-    if (data.midArticleVideo?.trim() && !data.midArticleVideoHeadingSlug?.trim()) {
+    const wantsMid =
+      !!(data.midArticleVideo?.trim()) || data.remotionPlayerMid === true;
+    if (wantsMid && !data.midArticleVideoHeadingSlug?.trim()) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
         message:
-          "midArticleVideoHeadingSlug est obligatoire lorsque midArticleVideo est défini (slug du H2 d’ancrage).",
+          "midArticleVideoHeadingSlug est obligatoire lorsque la vidéo milieu est activée (MP4 ou Remotion).",
         path: ["midArticleVideoHeadingSlug"],
       });
     }

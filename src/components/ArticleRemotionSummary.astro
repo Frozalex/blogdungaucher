@@ -1,0 +1,60 @@
+---
+import type { VideoPostProps } from "@remotion/types";
+
+import RemotionSummaryPlayer from "./remotion/RemotionSummaryPlayer";
+
+interface Props {
+  inputProps: VideoPostProps;
+  aspect?: "16:9" | "9:16";
+  heading: string;
+}
+
+const { inputProps, aspect = "16:9", heading } = Astro.props;
+const portrait = aspect === "9:16";
+---
+
+<div class="article-summary-video-wrap fade-up" style="--motion-delay: 90ms;">
+  <p class="summary-video-eyebrow">{heading}</p>
+  <figure
+    class:list={["article-inline-video", portrait ? "is-portrait" : "is-landscape"]}
+  >
+    <RemotionSummaryPlayer client:only="react" inputProps={inputProps} aspect={aspect} />
+  </figure>
+</div>
+
+<style>
+  .article-summary-video-wrap {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-soft);
+  }
+
+  .summary-video-eyebrow {
+    margin: 0 0 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  .article-inline-video {
+    margin: 0;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    box-shadow: var(--shadow-xs);
+  }
+
+  .article-inline-video.is-landscape {
+    aspect-ratio: 16 / 9;
+  }
+
+  .article-inline-video.is-portrait {
+    max-width: min(420px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 9 / 16;
+  }
+</style>
