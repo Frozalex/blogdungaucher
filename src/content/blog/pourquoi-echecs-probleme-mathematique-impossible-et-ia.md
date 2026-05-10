@@ -14,6 +14,12 @@ pillar: "Informatique"
 tags: ["échecs", "mathématiques", "complexité", "nombre de Shannon", "arbre des coups", "minimax", "alpha-bêta", "moteur d'échecs", "IA", "Stockfish"]
 seoTitle: "Échecs et IA : résoudre le problème mathématique impossible"
 seoDescription: "Les échecs sont-ils solvables mathématiquement ? Découvrez comment l'IA a révolutionné le jeu et pourquoi les moteurs battent les humains à tous les coups."
+ogImage: "/images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.png"
+heroImage:
+  src: "/images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.png"
+  alt: "Vignette pixel art : ordinateur rétro, écran avec arbre de décision lumineux, titre sur la complexité mathématique des échecs et l’IA"
+  credit: "Blog d'un Gaucher"
+  license: "Création originale"
 titleEn: "Why Chess is a (Nearly) Impossible Mathematical Problem - and How AI Solves it Anyway"
 excerptEn: "The game tree explodes, Shannon's number is staggering, yet an engine corrects you in seconds. Is chess really 'unsolvable'? Here's what maths, computer science and AI actually do under the hood."
 seoTitleEn: "Chess and AI: Solving the Mathematical Impossible"

@@ -18,26 +18,28 @@ const postExcerpt =
     ? (post.data.excerptEn ?? post.data.excerpt)
     : post.data.excerpt;
 
-const heroImage = post.data.heroImage;
+const thumbSrc = post.data.heroImage?.src ?? post.data.ogImage ?? null;
 ---
 <article
   class={`card scale-in ${featured ? "featured" : ""}`}
   style={`--motion-delay: 60ms; --accent:${category.accent};`}
 >
-  <a href={getPostUrlLang(post, lang)} class:list={["card-link", { "card-link--thumb": !!heroImage?.src }]}>
-    {heroImage?.src && (
-      <div class="card-thumb-wrap">
+  <a href={getPostUrlLang(post, lang)} class="card-link card-link--thumb">
+    <div class="card-thumb-wrap">
+      {thumbSrc ? (
         <img
           class="card-thumb"
-          src={heroImage.src}
+          src={thumbSrc}
           alt=""
           width="640"
           height="360"
           loading="lazy"
           decoding="async"
         />
-      </div>
-    )}
+      ) : (
+        <div class="card-thumb-fallback" aria-hidden="true" />
+      )}
+    </div>
 
     <div class="card-body">
     <div class="card-top">
@@ -125,6 +127,18 @@ const heroImage = post.data.heroImage;
     object-fit: cover;
     object-position: center;
     display: block;
+  }
+
+  /** Article sans hero ni og : bandeau type vignette pour garder une grille homogène */
+  .card-thumb-fallback {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--accent) 28%, var(--surface)) 0%,
+      color-mix(in srgb, var(--accent) 8%, var(--surface)) 55%,
+      var(--surface) 100%
+    );
   }
 
   .card-body {

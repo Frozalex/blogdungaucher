@@ -57,12 +57,12 @@ titleEn: "Chess and Alzheimer's: stimulating the brain to help prevent cognitive
 excerptEn: "Numbers from recent literature: meta-analyses, cohorts, and trials on board games, cognitive stimulation, and dementia risk, with statistical limits and what chess can realistically offer."
 seoTitleEn: "Chess and Alzheimer's: studies, figures, and cognitive prevention"
 seoDescriptionEn: "Quantitative evidence on cognitive games, dementia, and aging: MMSE meta-analyses, ALSOP cohort, trials in older adults, without miracle claims."
+ogImage: "/images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.png"
 heroImage:
-  src: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Human_brain_NIH.jpg"
-  alt: "Vue latérale du cerveau humain (repères anatomiques éducatifs)"
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Human_brain_NIH.jpg"
-  credit: "National Institutes of Health (NIH)"
-  license: "Domaine public (États-Unis)"
+  src: "/images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.png"
+  alt: "Vignette pixel art : cerveau en pixels dont une partie se dissipe, titre sur les échecs et la prévention du déclin cognitif"
+  credit: "Blog d'un Gaucher"
+  license: "Création originale"
 faq:
   - question: "Les échecs empêchent-ils la maladie d’Alzheimer ?"
     answer: "Non : aucune activité isolée ne peut garantir l’absence de maladie neurodégénérative. Les grandes cohortes montrent des associations entre activités mentales régulières et risque relatif plus faible à l’échelle d’une population ; pas une protection individuelle mesurable à coup sûr."
