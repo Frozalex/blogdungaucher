@@ -136,20 +136,17 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
 };
 
 const c = homeByLang[lang];
+
+/** Comme Dead cells.css (`.banner`) : placer une image plein écran dans `public/images/hero-banner.jpg` (ex. copie de `1738625483834.jpg`). */
+const heroBannerUrl = "/images/hero-banner.jpg";
 ---
 
 <div class="home-landing">
   <section class="hero hero--immersive" aria-labelledby="home-hero-heading">
-    <div class="hero__backdrop" aria-hidden="true"></div>
+    <div class="hero__backdrop" style={`--hero-banner: url('${heroBannerUrl}')`} aria-hidden="true"></div>
     <div class="hero__noise" aria-hidden="true"></div>
 
     <div class="hero__shell">
-      <header class="hero__top reveal scale-in">
-        <p class="hero__brand hero__brand--dark">
-          <span class="hero__brand-name" data-t="nav.siteName">{c.siteName}</span><span class="hero__brand-dot hero__brand-dot--glow" aria-hidden="true"></span>
-        </p>
-      </header>
-
       <div class="hero__center">
         <p class="hero__tagline hero__tagline--dark fade-up" style="--motion-delay: 30ms;" data-t="home.signatureTagline">
           {c.signatureTagline}
@@ -172,7 +169,7 @@ const c = homeByLang[lang];
         </p>
 
         <div class="hero__actions hero__actions--immersive fade-up" style="--motion-delay: 235ms;">
-          <a href={blogHref} class="button-primary hero__cta-primary hero__cta--immersive" data-t="home.startReading">
+          <a href={blogHref} class="hero__cta--immersive" data-t="home.startReading">
             {c.startReading}
           </a>
           <a href={`#${sectionsId}`} class="hero__cta-ghost" data-t="home.seeSections">
@@ -305,7 +302,8 @@ const c = homeByLang[lang];
 </div>
 
 <style>
-  /* Hero plein écran sombre (réf. maquette) ; reste de page inchangé. */
+  /* Réf. Dead cells/Dead cells.css : .banner (100vh, cover, contenu centré max 900px, btn ff0157 → vert blog). */
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
 
   .home-landing {
     overflow-x: clip;
@@ -328,7 +326,7 @@ const c = homeByLang[lang];
     margin-inline: auto;
   }
 
-  /* ── Hero immersif (toujours sombre, indépendant du thème global) ── */
+  /* ── Hero type Dead cells `.banner` : 100vh, flex centre, image cover ── */
   .hero--immersive {
     position: relative;
     isolation: isolate;
@@ -337,34 +335,39 @@ const c = homeByLang[lang];
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     max-width: none;
-    color: #f2f5f2;
+    color: #fff;
+    font-family: "Poppins", system-ui, sans-serif;
   }
 
   .hero__backdrop {
     position: absolute;
     inset: 0;
     z-index: 0;
-    background:
-      radial-gradient(ellipse 88% 62% at 50% 102%, rgba(61, 139, 55, 0.33), transparent 58%),
-      radial-gradient(ellipse 52% 44% at 82% 18%, rgba(90, 178, 84, 0.16), transparent 52%),
-      radial-gradient(ellipse 42% 38% at 10% 58%, rgba(56, 189, 248, 0.07), transparent 48%),
-      radial-gradient(ellipse 65% 48% at 48% -8%, rgba(130, 220, 140, 0.09), transparent 46%),
+    background-color: #050605;
+    background-image:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.62) 100%),
+      var(--hero-banner),
+      radial-gradient(ellipse 88% 62% at 50% 102%, rgba(61, 139, 55, 0.28), transparent 58%),
+      radial-gradient(ellipse 52% 44% at 82% 18%, rgba(90, 178, 84, 0.14), transparent 52%),
       linear-gradient(168deg, #040705 0%, #070d0a 42%, #020302 100%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
   .hero__backdrop::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 72% 58% at 50% 45%, transparent 28%, rgba(0, 0, 0, 0.78) 92%);
     pointer-events: none;
+    background: radial-gradient(ellipse 75% 65% at 50% 45%, transparent 22%, rgba(0, 0, 0, 0.55) 100%);
   }
 
   .hero__noise {
     position: absolute;
     inset: 0;
     z-index: 1;
-    opacity: 0.09;
+    opacity: 0.06;
     pointer-events: none;
     mix-blend-mode: overlay;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/></svg>");
@@ -373,107 +376,69 @@ const c = homeByLang[lang];
   .hero__shell {
     position: relative;
     z-index: 2;
+    box-sizing: border-box;
     width: min(1280px, calc(100% - 2rem));
     margin-inline: auto;
-    min-height: min(92vh, 52rem);
+    min-height: 100vh;
+    padding-top: var(--navbar-h);
     display: flex;
-    flex-direction: column;
-    padding: clamp(0.85rem, 2.5vw, 1.5rem) 0 clamp(2rem, 5vw, 3.25rem);
-  }
-
-  .hero__top {
-    flex-shrink: 0;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-  }
-
-  .hero__brand--dark {
-    margin: 0;
-    font-family: var(--font-display);
-    font-size: clamp(1.08rem, 2.6vw, 1.42rem);
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    color: #fff;
-    line-height: 1.2;
-  }
-
-  .hero__brand-name {
-    display: inline;
-  }
-
-  .hero__brand-dot {
-    display: inline-block;
-    width: 0.38em;
-    height: 0.38em;
-    margin-left: 0.06em;
-    border-radius: 50%;
-    background: var(--green);
-    vertical-align: 0.11em;
-  }
-
-  .hero__brand-dot--glow {
-    box-shadow:
-      0 0 14px color-mix(in srgb, var(--green) 75%, transparent),
-      0 0 28px color-mix(in srgb, var(--green) 40%, transparent);
+    padding-bottom: clamp(1.5rem, 4vw, 2.5rem);
   }
 
   .hero__center {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: clamp(1.25rem, 4vw, 2.75rem) 0.75rem 0;
-    max-width: 44rem;
-    margin-inline: auto;
     width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 0 0.75rem;
   }
 
   .hero__tagline--dark {
-    margin: 0 0 1rem;
-    font-size: 0.66rem;
+    margin: 0 0 0.85rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(242, 245, 242, 0.45);
+    color: rgba(255, 255, 255, 0.5);
   }
 
   .hero__kicker {
-    margin: 0 0 0.65rem;
-    font-size: 0.7rem;
-    font-weight: 600;
+    margin: 0 0 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(242, 245, 242, 0.38);
+    color: rgba(255, 255, 255, 0.42);
   }
 
+  /* .banner .content h2 { font-size: 5em } — équivalent fluide */
   .hero__title--immersive {
-    font-family: var(--font-display);
-    font-weight: 800;
-    font-size: clamp(2.4rem, 7.5vw, 4.15rem);
-    margin: 0 0 1.05rem;
-    line-height: 1.02;
-    letter-spacing: -0.042em;
+    font-family: "Poppins", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.75rem, 13vw, 5rem);
+    margin: 0 0 1rem;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
     color: #fff;
   }
 
   .hero__title--immersive .hero__accent {
-    color: #8ddf86;
-    font-weight: 800;
+    color: #9ae894;
+    font-weight: 700;
     font-style: normal;
-    font-family: var(--font-display);
+    font-family: "Poppins", system-ui, sans-serif;
   }
 
   .hero__title--immersive .hero__accent.display-serif {
-    font-family: var(--font-display);
+    font-family: "Poppins", system-ui, sans-serif;
     font-style: normal;
   }
 
   .hero__lead--dark {
-    font-size: clamp(0.94rem, 2.2vw, 1.06rem);
-    color: rgba(242, 245, 242, 0.74);
+    font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.88);
     max-width: 38rem;
     margin: 0 auto;
     line-height: 1.65;
@@ -485,50 +450,60 @@ const c = homeByLang[lang];
     gap: 0.75rem;
     align-items: center;
     justify-content: center;
-    margin-top: 1.9rem;
+    margin-top: 1.25rem;
   }
 
+  /* .btn : padding 10px 30px, uppercase, letter-spacing 2px, hover letter-spacing 6px */
   .hero__cta--immersive {
-    border-radius: 2px;
-    text-transform: uppercase;
-    letter-spacing: 0.11em;
-    font-size: 0.74rem;
-    min-height: 2.8rem;
-    padding-inline: 1.7rem;
+    font-family: "Poppins", system-ui, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
     color: #fff !important;
     background: var(--green);
     border: none;
-    box-shadow:
-      0 0 26px color-mix(in srgb, var(--green) 42%, transparent),
-      0 10px 32px rgba(0, 0, 0, 0.45);
+    border-radius: 0;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: letter-spacing 0.5s ease, background 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 24px rgba(61, 139, 55, 0.35);
+    min-height: unset;
   }
 
   .hero__cta--immersive:hover {
     background: var(--green-hover);
     color: #fff !important;
+    letter-spacing: 6px;
   }
 
   .hero__cta-ghost {
+    font-family: "Poppins", system-ui, sans-serif;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 2.8rem;
-    padding: 0 1.35rem;
-    border-radius: 2px;
-    border: 1px solid rgba(255, 255, 255, 0.34);
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 0.78rem;
-    color: rgba(255, 255, 255, 0.92);
-    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 26px;
+    margin-top: 8px;
+    border-radius: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.06);
+    text-decoration: none;
+    letter-spacing: 1px;
     transition:
-      border-color 0.18s ease,
-      background 0.18s ease,
-      color 0.18s ease;
+      letter-spacing 0.45s ease,
+      border-color 0.2s ease,
+      background 0.2s ease;
   }
 
   .hero__cta-ghost:hover {
-    border-color: rgba(255, 255, 255, 0.52);
+    letter-spacing: 3px;
+    border-color: rgba(255, 255, 255, 0.65);
     background: rgba(255, 255, 255, 0.12);
     color: #fff;
   }
@@ -548,16 +523,29 @@ const c = homeByLang[lang];
     border-radius: 2px;
     border: 1px solid rgba(255, 255, 255, 0.14);
     background: rgba(255, 255, 255, 0.06);
-    color: rgba(242, 245, 242, 0.68);
+    color: rgba(255, 255, 255, 0.72);
     font-size: 0.69rem;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: "Poppins", system-ui, sans-serif;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero__cta--immersive,
+    .hero__cta-ghost {
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .hero__cta--immersive:hover,
+    .hero__cta-ghost:hover {
+      letter-spacing: 2px;
+    }
   }
 
   @media (max-width: 560px) {
     .hero__actions--immersive {
       flex-direction: column;
       width: 100%;
-      max-width: 20rem;
+      max-width: 22rem;
+      margin-inline: auto;
     }
 
     .hero__cta--immersive,
