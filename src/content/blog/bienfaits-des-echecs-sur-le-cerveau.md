@@ -12,9 +12,9 @@ seoTitle: "Bienfaits des échecs sur le cerveau : la science"
 seoDescription: "Mémoire de travail, plasticité cérébrale, protection contre le vieillissement cognitif : ce que la recherche mesure vraiment sur les effets des échecs sur le cerveau."
 ---
 
-Les échecs font-ils vraiment quelque chose au cerveau ? La question est sérieuse, et la réponse est plus nuancée que les deux extrêmes que tu entends souvent : « les échecs rendent intelligent » d'un côté, « c'est du marketing » de l'autre. La recherche en neurosciences et en psychologie cognitive a accumulé suffisamment de données sur ce sujet pour dépasser les deux caricatures.
+Les échecs font-ils vraiment quelque chose au cerveau ? La réponse tient entre deux caricatures : « ça rend intelligent » et « c'est du marketing ». Les données publiées permettent déjà de trancher par niveaux de preuve.
 
-Ce que tu trouveras ici, ce ne sont pas des promesses : c'est un bilan honnête des preuves disponibles, avec les limites de chaque étude.
+**Plan :** d'abord ce qui se passe dans le cerveau pendant une partie, puis mémoire et plasticité, concentration, vieillissement, limites du transfert vers les autres domaines, et ce qu'une pratique réaliste peut viser.
 
 > **L'essentiel en 4 points :**
 > - Les échecs sollicitent et entraînent spécifiquement la mémoire de travail, la reconnaissance de patterns et la planification prévisionnelle

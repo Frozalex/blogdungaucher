@@ -85,7 +85,7 @@ Commencer à 65 ans ne donnera pas les mêmes résultats qu'une pratique début�
 
 ---
 
-**En résumé**
+### Synthèse en un tableau
 
 | Question | Réponse synthétique |
 | --- | --- |
@@ -109,7 +109,7 @@ La composante de résolution de problèmes est équivalente. La composante socia
 
 ---
 
-Est-ce que tu remarques une différence dans ta façon de gérer les positions complexes par rapport à il y a dix ans, plus lent peut-être, mais plus économe ? Partage en commentaire.
+**À privilégier après 60 ans :** une **partie longue analysée** vaut souvent mieux que trois parties rapides ; pour les chiffres récents sur jeux et cognition, voir [Échecs et prévention du déclin cognitif](/blog/echecs-alzheimer-prevention-declin-cognitif/).
 
 ---
 

@@ -148,7 +148,7 @@ Les échecs sont magnifiques. Ils méritent mieux qu’être une béquille ou un
 
 Le vrai « maître », parfois, c’est celui qui ferme l’appli et retrouve le sourire en dehors du classement.
 
-**Question finale :** tu t’es déjà dit *« juste une partie »* pour te retrouver deux heures plus tard, toujours devant l’écran ? Raconte en commentaire : on est probablement tous passés par là, à des degrés divers.
+Si la boucle *« juste une partie »* te parle : pose une **alarme avant** d’ouvrir la plateforme, ou impose une **partie longue avec pendule réelle** pour casser le mode automatique du rapide. Ce n’est pas de la morale : c’est une friction qui protège ton temps et ton sommeil.
 
 ### Sources et références
 

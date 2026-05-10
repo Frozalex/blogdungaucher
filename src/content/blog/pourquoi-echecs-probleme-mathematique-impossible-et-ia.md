@@ -193,4 +193,4 @@ Les échecs sont "impossibles" si tu imagines une solution brute : tout explorer
 
 **Pour aller plus loin :** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/), [arXiv](https://arxiv.org/).
 
-Maintenant que tu sais comment un moteur navigue dans l'arbre des coups, est-ce que ça change ta façon de l'utiliser pour analyser tes propres parties ? Partage en commentaire.
+**Après avoir ouvert l’[espace d’analyse](/analyses) :** repère le **premier coup** où ta variante et la ligne du moteur divergent de plus d’un demi-pion ; rejoue **cette position seule** trois fois dans la journée (sans nouvelle partie). C’est souvent le seul creux où ton classement progresse.

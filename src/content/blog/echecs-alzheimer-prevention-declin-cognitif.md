@@ -88,7 +88,11 @@ faqEn:
     answer: "Long-term practice correlates with functional imaging differences; see our chess-and-brain articles for cognitive reserve and transfer."
 ---
 
-Les titres racoleurs promettent parfois une « arme » contre **la maladie** souvent nommée ainsi dans les médias. Les données publiées sont **plus nuancées** : on trouve des **effets mesurables** sur humeur, dépression ou scores cognitifs dans certains essais ; mais aussi des **non-différences** sur la cognition globale dès qu’on durcit les contrôles (essais randomisés, méta-analyses). **Cet article assemble des chiffres tirés d’une sélection d’études** (voir tableau et références en bas de page) et les relie au **jeu d’échecs** comme loisir dense, social possible et durable : **apprendre**, **progresser** au classement ou tactiquement, **développer** une routine sans la confondre avec une ordonnance.
+Les titres racoleurs promettent parfois une « arme » contre **la maladie** souvent nommée ainsi dans les médias.
+
+Les données publiées sont **plus nuancées** : certains essais montrent des **effets mesurables** sur humeur, dépression ou scores cognitifs ; d’autres protocoles ne trouvent **aucune différence** sur la cognition globale dès qu’on durcit les contrôles (essais randomisés, méta-analyses).
+
+**Objectif de cette page :** rassembler des **chiffres tirés d’études sélectionnées** (tableau et références en bas) et les relier au **jeu d’échecs** comme loisir dense et durable : **apprendre**, **progresser**, **ancrer une routine** sans la confondre avec une ordonnance.
 
 > **L’essentiel (trois garde-fous)**
 > - Les **associations épidémiologiques** (probabilité relative sur une cohorte, souvent présentée comme un ratio) ne valent pas **causalité individuelle**.

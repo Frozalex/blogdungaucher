@@ -46,6 +46,8 @@ Ce n'est pas un cerveau exceptionnel qui permet de jouer brillamment aux échecs
 
 Ton cerveau n'est pas une machine figée à la naissance : c'est une pâte à modeler qui se rebranche, se répare et s'optimise en fonction des défis que tu lui lances. Après ça, tu ne regarderas plus ta fatigue post-partie de la même façon.
 
+**Tu liras ensuite :** chunking et mémoire des maîtres → imagerie (IRMf, structure, réseaux, chronnectome) → fonctions exécutives et limites du transfert → vieillissement → tableau et références avec DOI.
+
 > **L'essentiel en 5 points :**
 > - Les grands maîtres n'ont pas un QI supérieur : ils ont une bibliothèque de **50 000 à 300 000** "chunks" mémorisés (Gobet & Simon, 1998)
 > - La pratique des échecs déplace le travail cognitif vers la reconnaissance visuelle rapide, mesurable à l'IRMf dès 2003 (Atherton, *Cognitive Brain Research*, 123 citations)

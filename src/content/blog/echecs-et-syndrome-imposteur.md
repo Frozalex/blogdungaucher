@@ -138,7 +138,7 @@ Dans les clubs, les forums et les communautés en ligne, les témoignages de jou
 
 ---
 
-**En résumé**
+### Synthèse en un tableau
 
 | Manifestation | Ce qui l'aggrave | Ce qui aide |
 | --- | --- | --- |
@@ -168,7 +168,7 @@ Si le syndrome de l'imposteur déborde sur d'autres domaines de ta vie - travail
 
 ---
 
-La prochaine fois que tu gagneras une partie que tu "n'aurais pas dû" gagner, essaie de noter une chose concrète que tu as bien faite - pas de façon générale, mais précisément : un coup, une décision, un moment. Pas pour nier que l'adversaire a eu des erreurs. Juste pour que la victoire contienne aussi quelque chose qui t'appartient. Est-ce que tu t'es déjà reconnu dans ce sentiment d'imposteur sur l'échiquier ? Partage en commentaire.
+La prochaine fois que tu gagneras une partie que tu "n'aurais pas dû" gagner, note **une décision précise** dont tu es l’auteur : un coup, une gestion du temps, une défense tenue. Pas pour nier les erreurs adverses : pour que la victoire contienne un fait vérifiable qui t’appartient.
 
 ---
 

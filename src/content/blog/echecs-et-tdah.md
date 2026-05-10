@@ -130,7 +130,7 @@ Si tu es parent, enseignant ou joueur TDAH, quelques ajustements changent tout :
 
 ---
 
-**En résumé**
+### Synthèse en un tableau
 
 | Aspect | Ce que dit la recherche |
 | --- | --- |
@@ -158,7 +158,7 @@ Pas systématiquement, faute de preuves assez robustes pour intégrer les échec
 
 ---
 
-Tu es TDAH et tu joues aux échecs, ou tu connais un enfant dans cette situation ? Est-ce que l'échiquier a changé quelque chose dans ta façon de gérer ton attention, ou est-ce que ça n'a pas du tout fonctionné ? Les deux témoignages sont utiles. Partage en commentaire.
+**Pour un enfant ou un adulte TDAH :** séances **courtes** (20 minutes), **même créneau** chaque semaine, plateau **physique** en priorité ; éviter les grandes salles bruyantes au début. Les échecs complètent un suivi médical ou psychologique : ils ne le remplacent pas.
 
 ---
 

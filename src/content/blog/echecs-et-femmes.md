@@ -202,7 +202,7 @@ Si tu ne retenais qu’une idée de cet article, ce serait celle-ci : l’échiq
 
 Les échecs ne deviennent “plus justes” par discours bienveillant seul : ils le deviennent quand plus de monde peut entrer, rester, et être traité comme joueur·se, ni mascotte, ni intruse. Voir une joueuse championne du monde d’échecs dans les médias, voir des joueuses d’échecs représenter leur pays dans des championnats mixtes, et voir le classement Elo des femmes converger avec celui des hommes dans un monde des échecs véritablement égalitaire : tout cela est à portée de main. Il faut juste en créer les conditions, une année après l’autre.
 
-Et toi, que penses-tu du maintien des tournois féminins exclusifs ? Tremplin nécessaire ou signal d'infériorité institutionnalisée ? Laisse ton avis en commentaire, le débat est réel, et il mérite mieux que les deux camps habituels.
+Le débat sur les **sections féminines** partage souvent le terrain entre **visibilité et mentorat** d’un côté, et **crainte de séparer durablement** les circuits de l’autre. Les chiffres de participation et les études citées plus haut permettent d’argumenter sans slogan : le bon arbitrage dépend du **contexte local** (clubs, harcèlement signalé ou non, financement disponible), pas d’une réponse unique pour toute la planète.
 
 ---
 

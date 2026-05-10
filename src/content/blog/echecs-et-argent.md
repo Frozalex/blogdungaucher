@@ -142,7 +142,7 @@ La [PRO Chess League](https://www.chess.com/article/view/pro-chess-league) de Ch
 
 ---
 
-**En résumé**
+### Synthèse en un tableau
 
 | Aspect | État actuel | Tendance |
 | --- | --- | --- |
@@ -170,7 +170,7 @@ La question est régulièrement posée. Le Comité International Olympique a rec
 
 ---
 
-Les échecs ont produit certains des esprits les plus fascinants de l'histoire sportive et intellectuelle. Ils n'ont pas su, jusqu'ici, créer le système économique qui permettrait à ces esprits de vivre décemment de leur art. Est-ce que tu penses que le modèle va se transformer dans les dix prochaines années ? Ou est-ce que les échecs sont condamnés à rester un jeu de passion plutôt qu'une industrie ? Partage en commentaire.
+Les échecs ont produit certains des esprits les plus fascinants de l'histoire sportive et intellectuelle ; le **modèle économique** des joueurs hors tête de classe reste fragile. Les leviers réalistes côté joueur : **enseignement** structuré, **contenu** à valeur ajoutée (cours, livres, vidéo), **contrats plateforme** pour une minorité. Une « industrie » unique qui vivrait tout le monde du jeu reste un scénario long terme, pas une bascule imminente.
 
 ---
 

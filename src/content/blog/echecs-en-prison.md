@@ -122,7 +122,7 @@ Ces limites ne disqualifient pas l'approche. Elles fixent le cadre honnête dans
 
 ---
 
-**En résumé**
+### Synthèse en un tableau
 
 | Aspect | Ce que les données disent |
 | --- | --- |
@@ -150,7 +150,7 @@ C'est une des dimensions les plus intéressantes. Anticiper le coup de son adver
 
 ---
 
-L'échiquier enseigne quelque chose que peu d'activités enseignent aussi clairement : chaque décision a une conséquence visible et irréversible, et l'adversaire en face de toi a une perspective que tu as intérêt à comprendre. Est-ce que tu penses que cet apprentissage peut vraiment changer un mode de pensée ancré depuis des années ? Ou est-ce qu'il faut des conditions bien particulières pour que ça prenne ? Partage en commentaire.
+L'échiquier enseigne quelque chose que peu d'activités enseignent aussi clairement : chaque décision a une conséquence visible et irréversible, et l'adversaire en face de toi a une perspective que tu as intérêt à comprendre. Les programmes qui **durent** combinent jeu, **accompagnement humain stable** et **suite après la sortie** ; l’échiquier seul ne réécrit pas un parcours. Pour les effets cognitifs mesurés hors milieu carcéral, voir [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
 
 ---
 

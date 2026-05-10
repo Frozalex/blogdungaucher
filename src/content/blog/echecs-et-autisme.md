@@ -147,7 +147,7 @@ Dans ce monde de 64 cases, les règles implicites disparaissent. Il reste la bea
 
 Si une phrase doit rester : les échecs peuvent être un cadre formidable, jamais une **étiquette**, jamais un substitut à un accompagnement sérieux quand il est nécessaire.
 
-Tu as un proche, un élève, un enfant qui a trouvé son équilibre sur 64 cases ? Partage en commentaire, les témoignages concrets sont précieux pour les familles qui cherchent des pistes.
+Si tu accompagnes une personne autiste qui accroche aux échecs : **séances courtes**, **lieu stable**, **règles répétées** ; note ce qui fonctionne (durée, puzzles contre partie libre) pour le reproduire. Pour le lien avec la cognition mesurable au-delà du TSA, enchaîne avec [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
 
 ---
 

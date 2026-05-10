@@ -136,7 +136,7 @@ Si tu cherches une promesse honnête, la voilà : les échecs ne remplacent pas 
 
 Le bon pitch n’est donc pas “les échecs rendent bon en maths”, mais “les échecs peuvent aider à construire une posture face aux problèmes”. Et cette posture, elle peut servir en maths… comme dans la vraie vie.
 
-Tu pratiques les échecs depuis un moment : as-tu senti un changement dans ta façon d'aborder un problème qui résistait ? Pas forcément en maths, n'importe où dans ta vie. Partage en commentaire.
+**Pour tester la posture décrite ici :** un problème tactique par jour, hypothèse notée *avant* de regarder la solution. Pour le lien avec l’« impossible » combinatoire et les moteurs, enchaîne avec [pourquoi les échecs restent un problème mathématique brutal pour l’IA](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
 
 ---
 

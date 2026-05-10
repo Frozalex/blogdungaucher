@@ -144,13 +144,13 @@ Une version améliorée de la règle pourrait ressembler à : 30 % tactique, 30 
 
 ### La quantité ne remplace pas la qualité
 
-Passer 40 % du temps sur la tactique en parcourant des puzzles distraitement pendant trente minutes devant une série sur fond d'écran ne produce rien. La recherche sur l'expertise, notamment les travaux d'[Anders Ericsson](https://doi.org/10.1037/0033-295X.100.3.363) sur la pratique délibérée, est nette sur ce point : c'est la qualité de l'attention pendant l'entraînement qui produit la progression, pas la durée.
+Passer 40 % du temps sur la tactique en parcourant des puzzles distraitement pendant trente minutes devant une série sur fond d'écran ne produit rien. La recherche sur l'expertise, notamment les travaux d'[Anders Ericsson](https://doi.org/10.1037/0033-295X.100.3.363) sur la pratique délibérée, est nette sur ce point : c'est la qualité de l'attention pendant l'entraînement qui produit la progression, pas la durée.
 
 Un problème tactique résolu avec attention complète, en cherchant vraiment à comprendre pourquoi la combinaison fonctionne, vaut dix fois plus que dix problèmes résolus par essai-erreur sans analyse.
 
 ---
 
-**En résumé**
+### Synthèse en un tableau
 
 | Aspect | Ce que la règle dit | Ce qu'il faut retenir |
 | --- | --- | --- |
@@ -180,7 +180,7 @@ En blitz pur, les finales comptent beaucoup moins (les parties se terminent rare
 
 ---
 
-Combien de temps tu passes vraiment sur les ouvertures comparé aux finales chaque semaine ? Est-ce que la règle 40-40-20 correspond à ce que tu fais déjà, ou est-ce qu'elle décrit exactement ce que tu n'arrives pas à faire ? Partage en commentaire.
+**Contrôle rapide :** note pendant une semaine le temps réel passé en tactique, finales et ouvertures (chronomètre ou carnet). Sans mesure, la règle 40-40-20 reste un slogan ; avec quelques chiffres, tu vois où fuir les puzzles passifs et où ajouter deux fins élémentaires.
 
 ---
 
