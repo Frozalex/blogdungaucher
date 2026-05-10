@@ -25,4 +25,5 @@ _status_short.tmp
 build-output.txt
 _git_cmd.txt
 _commit.ps1
+_cleanup.ps1
 
