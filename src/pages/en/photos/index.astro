@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import PhotosComingSoon from "../../../components/PhotosComingSoon.astro";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+---
+
+<BaseLayout
+  title="Photos | travels & outings | A Left-Hander's Blog"
+  description="Photo gallery of travels and outings: opening very soon. A visual diary from A Left-Hander's Blog."
+  canonicalPath="/en/photos/"
+  lang="en"
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/en/" },
+    { name: "Photos", path: "/en/photos/" },
+  ])}
+>
+  <PhotosComingSoon lang="en" />
+</BaseLayout>

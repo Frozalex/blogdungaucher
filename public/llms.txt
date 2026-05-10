@@ -20,7 +20,7 @@
 
 # Structure du site
 - /fr/blog/          → Articles de fond (science, psychologie, société)
-- /fr/joueurs/       → Portraits de grands joueurs d'échecs
+- /fr/photos/        → Galerie voyages & escapades (en cours de préparation)
 - /fr/grand-oral/    → Ressources pour le Grand Oral terminale
 - /fr/science/       → Rubrique science du jeu
 - /fr/esprit/        → Rubrique psychologie et mental
@@ -31,7 +31,6 @@
 # Pages clés
 - https://blogdungaucher.com/fr/
 - https://blogdungaucher.com/fr/blog/
-- https://blogdungaucher.com/fr/joueurs/
 - https://blogdungaucher.com/fr/grand-oral/
 
 # Articles phares
@@ -43,11 +42,6 @@
 - https://blogdungaucher.com/fr/blog/echecs-et-femmes/
 - https://blogdungaucher.com/fr/blog/les-echecs-et-l-addiction/
 - https://blogdungaucher.com/fr/blog/echecs-et-seniors/
-
-# Portraits joueurs
-- https://blogdungaucher.com/fr/joueurs/magnus-carlsen/
-- https://blogdungaucher.com/fr/joueurs/jorden-van-foreest/
-- https://blogdungaucher.com/fr/joueurs/yury-shulman/
 
 # Grand Oral
 - https://blogdungaucher.com/fr/blog/grand-oral-mathematiques-echecs/

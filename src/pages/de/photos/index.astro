@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import PhotosComingSoon from "../../../components/PhotosComingSoon.astro";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+---
+
+<BaseLayout
+  title="Fotos | Reisen und Ausflüge | Blog d'un Gaucher"
+  description="Fotogalerie zu Reisen und Ausflügen: bald verfügbar. Visuelle Notizen vom Blog d'un Gaucher."
+  canonicalPath="/de/photos/"
+  lang="de"
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Startseite", path: "/de/" },
+    { name: "Fotos", path: "/de/photos/" },
+  ])}
+>
+  <PhotosComingSoon lang="de" />
+</BaseLayout>
