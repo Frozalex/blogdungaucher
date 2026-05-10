@@ -26,7 +26,11 @@ import {
 } from "../../../utils/blog";
 import { getEnglishArticleMarkdown, renderEnglishMarkdown } from "../../../utils/english-article";
 import { swapLangPrefix } from "../../../utils/lang-paths";
+import { splitMarkdownAtH2Slug } from "../../../utils/markdown-split-html";
 import FAQ from "../../../components/FAQ.astro";
+import ArticleIntroVideo from "../../../components/ArticleIntroVideo.astro";
+import ArticleDataRevealVideo from "../../../components/ArticleDataRevealVideo.astro";
+import ArticleSummaryVideo from "../../../components/ArticleSummaryVideo.astro";
 
 export async function getStaticPaths() {
   const posts = filterPostsForLang(await getAllPosts(), "en");
@@ -36,6 +40,19 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const slug = getPostSlug(post);
 const englishMarkdown = getEnglishArticleMarkdown(slug);
+
+const midArticleVideo = post.data.midArticleVideo?.trim();
+const midArticleHeadingSlug = post.data.midArticleVideoHeadingSlug?.trim();
+let midArticleSplit: Awaited<ReturnType<typeof splitMarkdownAtH2Slug>> = null;
+if (midArticleVideo && midArticleHeadingSlug) {
+  const mdSource = englishMarkdown ?? post.body;
+  midArticleSplit = await splitMarkdownAtH2Slug(mdSource, midArticleHeadingSlug);
+  if (!midArticleSplit) {
+    throw new Error(
+      `[EN blog/${slug}] Mid video: no H2 with slug "${midArticleHeadingSlug}" (check the table of contents).`,
+    );
+  }
+}
 
 let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
 let headings: Awaited<ReturnType<typeof render>>["headings"];
@@ -84,6 +101,10 @@ const enCategoryLabel = enCategoryLabels[post.data.category] ?? category.label;
 const enCategoryHref = swapLangPrefix(category.href, "en");
 
 const heroImage = post.data.heroImage;
+const introVideo = post.data.introVideo;
+const summaryVideo = post.data.summaryVideo;
+const introVideoAspect = post.data.introVideoAspect;
+const summaryVideoAspect = post.data.summaryVideoAspect ?? "16:9";
 
 const structuredData = [
   buildArticleJsonLd(post, { lang: "en" }),
@@ -150,6 +171,15 @@ const otherPillars = categorySlugs
           <p class="article-excerpt">{displayExcerpt}</p>
         </header>
 
+        {introVideo && (
+          <ArticleIntroVideo
+            src={introVideo}
+            poster={heroImage?.src}
+            aspect={introVideoAspect ?? "16:9"}
+            videoTitle={`Intro video: ${displayTitle}`}
+          />
+        )}
+
         {heroImage?.src && (
           <figure class="hero-media fade-up" style="--motion-delay: 70ms;">
             <img class="hero-img" src={heroImage.src} alt={heroImage.alt} loading="lazy" decoding="async" />
@@ -181,12 +211,35 @@ const otherPillars = categorySlugs
         <AdBanner format="inline" compact={true} />
 
         <div class="article-body fade-up" style="--motion-delay: 100ms;">
-          {englishHtml ? (
+          {midArticleSplit ? (
+            <>
+              <div class="md-chunk" set:html={midArticleSplit.beforeHtml} />
+              <ArticleDataRevealVideo
+                src={midArticleVideo!}
+                poster={heroImage?.src}
+                aspect={post.data.midArticleVideoAspect ?? "16:9"}
+                videoTitle={`Key data video: ${displayTitle}`}
+                eyebrow={post.data.midArticleVideoEyebrow}
+                lang="en"
+              />
+              <div class="md-chunk" set:html={midArticleSplit.afterHtml} />
+            </>
+          ) : englishHtml ? (
             <div set:html={englishHtml} />
           ) : (
             Content && <Content />
           )}
         </div>
+
+        {summaryVideo && (
+          <ArticleSummaryVideo
+            src={summaryVideo}
+            poster={heroImage?.src}
+            aspect={summaryVideoAspect}
+            videoTitle={`Video summary: ${displayTitle}`}
+            heading="Video recap"
+          />
+        )}
 
         {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="en" />}
 

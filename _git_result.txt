@@ -1,0 +1,40 @@
+﻿=== GIT REPO ROOT ===
+C:/Users/lucda/OneDrive/Bureau/Projet/Website project/blog-gaucher
+rev-parse exit: 0
+
+=== git remote -v ===
+origin	https://github.com/Frozalex/blogdungaucher.git (fetch)
+origin	https://github.com/Frozalex/blogdungaucher.git (push)
+remote -v exit: 0
+
+=== git status ===
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   package-lock.json
+	modified:   package.json
+	modified:   src/content.config.ts
+	modified:   src/content/blog/echecs-alzheimer-prevention-declin-cognitif.md
+	modified:   src/pages/de/blog/[slug].astro
+	modified:   src/pages/en/blog/[slug].astro
+	modified:   src/pages/fr/blog/[slug].astro
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/remotion-render.yml
+	_git_result.txt
+	_shell_probe.txt
+	public/videos/
+	remotion/
+	src/components/ArticleDataRevealVideo.astro
+	src/components/ArticleIntroVideo.astro
+	src/components/ArticleSummaryVideo.astro
+	src/utils/markdown-split-html.ts
+
+no changes added to commit (use "git add" and/or "git commit -a")
+git status exit: 0
+
+=== git add -A ===

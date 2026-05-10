@@ -1,0 +1,25 @@
+{
+  "name": "blog-gaucher-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion bundle",
+    "render": "remotion render",
+    "props": "node scripts/load-post-props.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.340",
+    "@remotion/cli": "^4.0.340",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.340"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "gray-matter": "^4.0.3",
+    "typescript": "^5.7.0"
+  }
+}

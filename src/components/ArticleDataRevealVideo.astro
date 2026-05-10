@@ -1,0 +1,82 @@
+---
+interface Props {
+  src: string;
+  poster?: string;
+  aspect?: "16:9" | "9:16";
+  videoTitle: string;
+  /** Surcharge du libellé au-dessus du lecteur (sinon libellé selon la langue). */
+  eyebrow?: string;
+  lang?: "fr" | "en" | "de";
+}
+
+const { src, poster, aspect = "16:9", videoTitle, eyebrow, lang = "fr" } = Astro.props;
+
+const defaultEyebrows: Record<"fr" | "en" | "de", string> = {
+  fr: "Données clés",
+  en: "Key figure",
+  de: "Kernzahl",
+};
+
+const label = eyebrow?.trim() ? eyebrow.trim() : defaultEyebrows[lang];
+const portrait = aspect === "9:16";
+---
+
+<div class="article-data-reveal-video-wrap fade-up" style="--motion-delay: 70ms;">
+  <p class="data-reveal-eyebrow">{label}</p>
+  <figure class:list={["article-inline-video", portrait ? "is-portrait" : "is-landscape"]}>
+    <video controls preload="metadata" playsinline poster={poster} aria-label={videoTitle}>
+      <source src={src} type="video/mp4" />
+    </video>
+  </figure>
+</div>
+
+<style>
+  .article-data-reveal-video-wrap {
+    margin: 1.75rem 0;
+    padding: 1.25rem 0;
+    border-top: 1px dashed color-mix(in srgb, var(--c, var(--green)) 35%, var(--border-soft));
+    border-bottom: 1px dashed color-mix(in srgb, var(--c, var(--green)) 35%, var(--border-soft));
+  }
+
+  .data-reveal-eyebrow {
+    margin: 0 0 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  .article-inline-video {
+    margin: 0;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    box-shadow: var(--shadow-xs);
+  }
+
+  .article-inline-video video {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .article-inline-video.is-landscape video {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: color-mix(in srgb, var(--surface-warm) 65%, transparent);
+  }
+
+  .article-inline-video.is-portrait {
+    max-width: min(380px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .article-inline-video.is-portrait video {
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    background: color-mix(in srgb, var(--surface-warm) 65%, transparent);
+  }
+</style>

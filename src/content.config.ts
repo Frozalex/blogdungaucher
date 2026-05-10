@@ -17,6 +17,52 @@ const blog = defineCollection({
     readingTime: z.string().optional(),
     pillar: z.string(),
     tags: z.array(z.string()).optional(),
+    /** Jusqu’à 3 points pour la vidéo récap Remotion et le sens « fin d’article ». */
+    keyTakeaways: z.array(z.string()).max(3).optional(),
+    /** URL ou chemin `/…` vers le MP4 hero (~30 s), affiché sous le titre. */
+    introVideo: z.string().optional(),
+    /** URL ou chemin `/…` vers le MP4 récap (~45 s), affiché après le corps de l’article. */
+    summaryVideo: z.string().optional(),
+    /** Ratio du lecteur intro : 16:9 (paysage) ou 9:16 (vertical). */
+    introVideoAspect: z.enum(["16:9", "9:16"]).optional(),
+    /** Séquence Remotion pour la vidéo récap : classique (3 points) ou data-reveal (barres + chiffre). */
+    summarySequence: z.enum(["classic", "data-reveal"]).optional(),
+    /**
+     * Données pour la séquence « data reveal » (récap ~45 s) — idéal neuro / chiffres.
+     * Requiert `summarySequence: data-reveal` pour le rendu Remotion correspondant.
+     */
+    dataReveal: z
+      .object({
+        vizTitle: z.string(),
+        bars: z
+          .array(
+            z.object({
+              label: z.string(),
+              value: z.number(),
+              max: z.number().positive(),
+            }),
+          )
+          .min(1)
+          .max(8),
+        highlight: z.string(),
+        highlightSub: z.string().optional(),
+        source: z.string(),
+        takeaway: z.string(),
+        cta: z.string().optional(),
+      })
+      .optional(),
+    /**
+     * Vidéo « data reveal » milieu d’article (~20 s) : insérée juste après le H2 cible.
+     * Utiliser avec `midArticleVideoHeadingSlug` (slug identique à l’ancre # du sommaire).
+     */
+    midArticleVideo: z.string().optional(),
+    midArticleVideoAspect: z.enum(["16:9", "9:16"]).optional(),
+    /** Slug GitHub du H2 après lequel placer la vidéo (voir lien # dans la table des matières). */
+    midArticleVideoHeadingSlug: z.string().optional(),
+    /** Libellé au-dessus du lecteur « données clés » (sinon texte par défaut selon la langue). */
+    midArticleVideoEyebrow: z.string().optional(),
+    /** Ratio du lecteur pour la vidéo récap (après conclusion). */
+    summaryVideoAspect: z.enum(["16:9", "9:16"]).optional(),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     ogImage: z.string().optional(),
@@ -53,6 +99,15 @@ const blog = defineCollection({
         }),
       )
       .optional(),
+  }).superRefine((data, ctx) => {
+    if (data.midArticleVideo?.trim() && !data.midArticleVideoHeadingSlug?.trim()) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message:
+          "midArticleVideoHeadingSlug est obligatoire lorsque midArticleVideo est défini (slug du H2 d’ancrage).",
+        path: ["midArticleVideoHeadingSlug"],
+      });
+    }
   }),
 });
 

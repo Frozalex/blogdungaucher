@@ -1,0 +1,78 @@
+name: Render Remotion videos
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Slug du fichier article (sans .md), ex. echecs-et-memoire"
+        required: true
+        type: string
+      variant:
+        description: "intro (~30 s hero sous le titre) ou summary (~45 s récap)"
+        required: true
+        type: choice
+        options:
+          - intro
+          - summary
+      aspect:
+        description: "landscape = 16:9, portrait = 9:16"
+        required: true
+        type: choice
+        options:
+          - landscape
+          - portrait
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: remotion
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: remotion/package-lock.json
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build props from blog frontmatter
+        run: node scripts/load-post-props.mjs --slug="${{ inputs.slug }}" > props.json
+
+      - name: Resolve composition id
+        id: comp
+        run: |
+          case "${{ inputs.variant }}-${{ inputs.aspect }}" in
+            intro-landscape)   echo "cid=ArticleIntro-169" >> "$GITHUB_OUTPUT" ;;
+            intro-portrait)    echo "cid=ArticleIntro-916" >> "$GITHUB_OUTPUT" ;;
+            summary-landscape) echo "cid=ArticleSummary-169" >> "$GITHUB_OUTPUT" ;;
+            summary-portrait)  echo "cid=ArticleSummary-916" >> "$GITHUB_OUTPUT" ;;
+            *)
+              echo "Combinaison inconnue"
+              exit 1
+              ;;
+          esac
+
+      - name: Render MP4
+        run: |
+          mkdir -p out
+          OUT="out/${{ inputs.slug }}-${{ inputs.variant }}-${{ inputs.aspect }}.mp4"
+          npx remotion render src/index.ts "${{ steps.comp.outputs.cid }}" "$OUT" --props=props.json --codec=h264
+
+      - name: Upload video artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ inputs.slug }}-${{ inputs.variant }}-${{ inputs.aspect }}
+          path: remotion/out/*.mp4
+          if-no-files-found: error
