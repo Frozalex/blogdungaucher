@@ -18,6 +18,8 @@ La [loi de Murphy](https://fr.wikipedia.org/wiki/Lois_de_Murphy), popularisée s
 
 En réalité, ce que tu appelles Murphy est souvent un mélange de probabilités réelles (certains moments sont objectivement plus risqués), de fatigue cognitive, et de biais de mémoire qui font briller les catastrophes dans le récit mental.
 
+**Plan :** origine de l’expression → pourquoi elle « colle » aux échecs → mémoire et disponibilité → antidotes procéduraux → ce que tu peux encore en tirer → sources.
+
 > **L'essentiel en 4 points :**
 > - Murphy n'est pas une « loi » au sens scientifique : c'est une intuition sociale sur les défaillances dans les systèmes complexes
 > - Aux échecs, le « pire moment » est souvent corrélé avec zeitnot, tension maximale ou fin de séquence de calcul, où le taux d'erreur augmente pour tout le monde
@@ -84,7 +86,7 @@ Si tu gardes Murphy comme métaphore, elle peut être utile : **les systèmes qu
 
 Ce n'est pas le destin. C'est la répétition.
 
-Tu te reconnais dans le récit murphyen aux échecs ? Si tu veux, note une défaite récente et remplace « Murphy » par une cause procédurale : tu verras vite si c'est toujours la même.
+**Après lecture :** prends une défaite où tu as invoqué « Murphy » et réécris-la en **une phrase procédurale** (temps, fatigue, préparation, format de jeu). Si la même cause revient trois fois, c’est ton levier d’entraînement — pas une malédiction.
 
 ---
 

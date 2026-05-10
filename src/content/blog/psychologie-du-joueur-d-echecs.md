@@ -20,7 +20,9 @@ Avant même de poser la main sur le premier pion, quelque chose s'est déjà jou
 
 Les échecs ont ceci de particulier qu'ils mettent ton intelligence à nu d'une façon que peu de disciplines rivalisent. Chaque erreur est irréfutable, inscrite dans le registre de la partie. Il n'y a pas de chance à invoquer, pas de coéquipier sur qui rejeter la faute, pas de mauvaise météo ce jour-là. L'échiquier renvoie un miroir impitoyable. Et c'est précisément pour cette raison que comprendre sa propre psychologie devient, à un certain niveau, aussi important que de connaître les variantes théoriques.
 
-Ce que tu vas trouver ici, c'est un miroir. Pas des conseils généraux : une carte de tes propres patterns. Ego, tilt, imposteur, zeitnot. Pour que la prochaine partie soit moins naïve que la précédente.
+**Plan :** ego et résultat → tilt → flow → équanimité et mental de haut niveau → ce que l'échiquier révèle de toi → FAQ.
+
+L'objectif : une **carte** de tes patterns (ego, tilt, imposteur, zeitnot), pas une liste de conseils génériques, pour que la prochaine partie soit un peu moins naïve que la précédente.
 
 > **L'essentiel en 4 points :**
 > - La frontière entre jouer pour gagner et jouer pour ne pas perdre est psychologiquement abyssale (Kasparov)
@@ -114,6 +116,7 @@ Le mental aux échecs, ce n’est pas une aura mystique : c’est une **capacit
 
 Le plateau continue d’afficher ce que tu refuses parfois de voir : ta réaction à la pression, à la peur et à l’orgueil, et la façon dont tu te relèves après une erreur. Ce n’est pas toujours confortable ; c’est toujours instructif.
 
+**Après lecture :** sur ta prochaine défaite, note en une phrase l’**émotion** au moment du premier gros coup faible, puis l’**erreur technique** : l’analyse à froid part de là, pas du classement.
 
 ---
 

@@ -14,6 +14,8 @@ seoDescription: "Minimax, équilibre de Nash, jeux à somme nulle : comment la t
 
 Tu ne joues pas seul. Chaque coup que tu poses sur l'échiquier est une réponse implicite à un adversaire qui, lui aussi, calcule, anticipe et cherche à maximiser son avantage. Cette interdépendance des décisions est exactement ce qu'étudie la théorie des jeux. Et les échecs ne sont pas un exemple parmi d'autres dans ce domaine : ils en sont l'un des cas fondateurs.
 
+**Plan :** définitions (somme nulle, Nash, minimax) → jeu fini et Zermelo → répétition et réputation → limites combinatoires → leçon pour le joueur pratique → sources.
+
 > **L'essentiel en 4 points :**
 > - Les échecs sont un jeu à somme nulle, à deux joueurs, à information parfaite et déterministe
 > - L'algorithme minimax est la traduction formelle de la réflexion stratégique aux échecs
@@ -116,6 +118,8 @@ Et pourtant, jouer aux échecs reste une expérience profondément humaine. Les 
 La vraie leçon de la théorie des jeux pour le joueur pratique n'est pas mathématique : c'est qu'en situation de décision complexe et interdépendante, il n'existe pas de bonne décision absolue. Il existe des décisions bonnes par rapport à un modèle de l'adversaire. Améliorer ce modèle, comprendre comment l'adversaire pense et anticipe, c'est ce qui distingue le bon joueur du joueur exceptionnel.
 
 Von Neumann n'a pas inventé la théorie des jeux pour résoudre les échecs. Il l'a inventée pour comprendre la guerre froide. Mais les deux problèmes partagent la même structure fondamentale : deux acteurs rationnels, des décisions interdépendantes, et un résultat qui dépend de ce que chacun croit que l'autre va faire.
+
+**Après lecture :** avant ta prochaine partie longue, écris une ligne sur **l’hypothèse d’intentions** que tu fais sur l’adversaire (agressif, évite les complications, etc.) ; confronte-la à la partie réelle après coup.
 
 ---
 

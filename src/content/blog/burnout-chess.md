@@ -14,6 +14,8 @@ seoDescription: "Le burnout aux échecs expliqué : symptômes, causes et strat�
 
 Il y a un moment dans la vie de beaucoup de joueurs d'échecs où quelque chose change. Le jeu qui était une passion devient une obligation. Les ouvertures à réviser sont une corvée. Les tournois à venir génèrent de l'anxiété plutôt que de l'excitation. Ouvrir Chess.com provoque un sentiment de lourdeur plutôt que d'impatience. On appelle ça le burnout aux échecs, et c'est un phénomène réel, documenté, et qui mérite d'être pris au sérieux.
 
+**Plan :** définition (Maslach) → signes aux échecs → causes → récupération → prévention → sources.
+
 > **L'essentiel en 4 points :**
 > - Le burnout aux échecs partage les mêmes mécanismes que le burnout professionnel : épuisement émotionnel, cynisme et diminution du sentiment d'efficacité
 > - Il est souvent le résultat d'un déséquilibre entre la demande (étude, tournois, pression de performance) et les ressources (récupération, soutien, plaisir intrinsèque)
@@ -120,6 +122,8 @@ La prévention est évidemment préférable à la récupération.
 **Réévaluer régulièrement la motivation.** Se demander, tous les quelques mois, pourquoi on joue aux échecs. Si la réponse est devenue majoritairement externe (pour le classement, pour plaire à quelqu'un d'autre, par habitude), c'est un signal de rééquilibrage nécessaire.
 
 Le jeu d'échecs devrait être une source d'enrichissement intellectuel, de défis stimulants et de satisfaction esthétique. Quand il cesse d'être ça, la question honnête n'est pas "comment continuer quand même" mais "comment retrouver ce pourquoi j'ai commencé".
+
+**Après lecture :** si tu te reconnais dans l’épuisement décrit, fixe **deux semaines** sans partie en ligne ; au retour, **une** partie lente par jour maximum la première semaine, sans objectif Elo.
 
 ---
 

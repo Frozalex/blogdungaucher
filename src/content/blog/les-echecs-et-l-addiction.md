@@ -28,6 +28,8 @@ Cette scène te semble familière ? Ce film-là, des milliers de joueurs le rejo
 
 Les échecs, ce « noble jeu de rois », réputé pour la discipline et la froideur du calcul… **Peut-on vraiment être accro aux échecs ?** Pas au sens où une partie entre amis le dimanche te détruirait la vie, mais au sens où l’online compétitif peut installer une boucle que ton cerveau ne distingue pas toujours d’autres renforcements extrêmes. On va poser les faits sans te faire la morale, avec ce que dit la science.
 
+**Plan :** cadre psychiatrique des dépendances comportementales → mécanismes (dopamine, boucles) → signaux personnels → pistes de récupération → sources.
+
 ## Le mythe brisé : non, l’addiction n’est pas « réservée » aux drogues
 
 Longtemps, on a cru que la dépendance, c’était surtout la bouteille ou la poudre. Un jeu sur écran ? Un passe-temps intellectuel ? Ça ne « compte » pas.
@@ -148,7 +150,7 @@ Les échecs sont magnifiques. Ils méritent mieux qu’être une béquille ou un
 
 Le vrai « maître », parfois, c’est celui qui ferme l’appli et retrouve le sourire en dehors du classement.
 
-Si la boucle *« juste une partie »* te parle : pose une **alarme avant** d’ouvrir la plateforme, ou impose une **partie longue avec pendule réelle** pour casser le mode automatique du rapide. Ce n’est pas de la morale : c’est une friction qui protège ton temps et ton sommeil.
+**Après lecture :** si la boucle *« juste une partie »* te parle, programme une **alarme avant** d’ouvrir la plateforme **et** une session hebdo **sans écran** (problème livre ou partie au club) pendant quatre semaines pour mesurer le gain de sommeil.
 
 ### Sources et références
 

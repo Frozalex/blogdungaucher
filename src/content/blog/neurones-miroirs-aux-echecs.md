@@ -16,6 +16,8 @@ Tu regardes une position complexe. Soudain, tu "vois" ce que l'adversaire veut f
 
 Ce type d'intuition, cette capacité à simuler mentalement l'intention d'un autre agent, repose en partie sur un système neuronal découvert dans les années 1990 : les [neurones miroirs](https://fr.wikipedia.org/wiki/Neurone_miroir). Leur rôle aux échecs est plus profond que tu ne l'imagines.
 
+**Plan :** découverte des neurones miroirs → rôle en simulation d’intentions → entraînement (deux camps, parties de maîtres) → limites (projection, sur-interprétation) → sources.
+
 > **L'essentiel en 4 points :**
 > - Les neurones miroirs s'activent à la fois lors de l'exécution d'une action et lors de l'observation de la même action chez autrui
 > - Aux échecs, ils sous-tendent la simulation mentale des intentions de l'adversaire
@@ -97,6 +99,8 @@ Le système miroir a aussi des limites qui peuvent conduire à des erreurs carac
 Un joueur offensif a tendance à surestimer les intentions offensives de l'adversaire, parce que son système miroir est fortement calibré sur ce type de jeu. Il peut manquer des plans défensifs subtils que l'adversaire prépare, parce que ces plans ne "résonnent" pas de la même façon dans son système de simulation.
 
 C'est pourquoi les joueurs qui ont un style très marqué ont souvent des "angles morts" : des types de plans adverses qu'ils reconnaissent moins bien parce qu'ils ne les jouent pas eux-mêmes. Diversifier son répertoire et son style est aussi une façon de calibrer son système miroir sur un spectre plus large d'intentions adverses.
+
+**Après lecture :** sur une partie récente, rejoue **cinq coups** du camp adverse à voix haute avec « il veut obtenir quoi ? » avant de vérifier au moteur.
 
 ---
 

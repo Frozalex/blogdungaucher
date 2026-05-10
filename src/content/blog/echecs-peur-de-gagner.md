@@ -16,6 +16,8 @@ La position est clairement gagnante. Le moteur le confirmerait en une seconde. T
 
 La peur de gagner est un des phénomènes psychologiques les moins discutés mais les plus réels dans le jeu compétitif. Elle existe. Elle touche des joueurs à tous les niveaux. Et elle a une logique interne que la psychologie moderne explique clairement.
 
+**Plan :** pourquoi ce n’est pas absurde → mécanismes (attentes, statut, responsabilité) → manifestations → outils (visualisation, conversions, acceptation) → sources.
+
 > **L'essentiel en 4 points :**
 > - La peur de gagner n'est pas un paradoxe irrationnel : elle est une réponse logique à des conséquences anxiogènes de la victoire
 > - Les mécanismes incluent la peur des attentes augmentées, la peur de la responsabilité et la peur de la perte du statut de "challenger"
@@ -87,6 +89,8 @@ La première étape est la reconnaissance honnête du pattern. Analyser ses part
 **Jouer des fins de partie gagnées.** S'entraîner délibérément à convertir des fins de partie gagnantes depuis des positions théoriquement décidées. L'exposition répétée à ces conversions, dans un contexte d'entraînement sans enjeux, crée une mémoire procédurale de la conversion.
 
 **Accepter que la victoire puisse faire peur.** Beaucoup de joueurs honteux de cette réaction la cachent et ne peuvent donc pas travailler dessus. La reconnaître, sans jugement, est la première condition du changement.
+
+**Après lecture :** entraîne-toi à **convertir** trois fins de partie gagnantes cette semaine depuis des positions « sans suspense » — pour désensibiliser le passage à la victoire.
 
 ---
 

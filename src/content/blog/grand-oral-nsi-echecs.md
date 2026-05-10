@@ -31,6 +31,8 @@ Les échecs sont ce sujet. Pas pour leur aspect culturel ou philosophique : pour
 
 Ce que cet article te donne : du code Python commentable devant le jury, des structures de données concrètes, la progression de Stockfish à AlphaZero comme arc narratif, et un plan minuté pour vingt minutes d'exposé.
 
+**Plan :** algorithmes et structures (minimax, PGN, bitboard) → données et SQL → IA (Stockfish vs AlphaZero) → déroulé 20 minutes → questions jury → sources.
+
 > **L'essentiel en 5 points :**
 > - Le minimax est le cas concret de récursivité le plus pur qui soit, codable en 10 lignes Python
 > - Un échiquier peut être représenté comme un tableau 2D (simple) ou un entier 64 bits (bitboard, avancé)
@@ -383,6 +385,8 @@ Parce que les opérations bit à bit (AND, OR, NOT, shift) sont des opérations 
 
 **5. « En quoi AlphaZero est-il un exemple d'apprentissage non supervisé ? »**
 Précision importante : AlphaZero est de l'**apprentissage par renforcement**, pas non supervisé. Il reçoit un signal de récompense (victoire/défaite). L'apprentissage non supervisé serait de regrouper des positions sans étiquettes. Cette nuance montre que tu maîtrises la taxonomie de l'IA.
+
+**Après lecture :** enregistre-toi en **une prise** sur le minimax (tableau blanc ou IDE, **trois minutes max**) ; si tu bloques sur une ligne de code, c’est là que le jury creusera.
 
 ---
 

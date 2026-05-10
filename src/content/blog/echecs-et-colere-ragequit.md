@@ -14,6 +14,8 @@ seoDescription: "Pourquoi la défaite aux échecs déclenche une colère intense
 
 Tu as perdu une pièce en un blunder stupide. Ou l'adversaire a refusé la remise. Ou il a joué un coup à fort pourcentage que "personne ne jouerait en vrai". Et là, quelque chose se brise. La main se ferme. Les dents se serrent. Tu fermes l'onglet violemment, ou pire, tu restes connecté pour dire quelque chose que tu regretteras. C'est le ragequit, et ce n'est pas une faiblesse de caractère : c'est de la biologie.
 
+**Plan :** définition et formes du ragequit → circuit amygdalien → frustration-agression → régulation (respiration, recadrage, délai) → le ragequit comme signal → sources.
+
 > **L'essentiel en 4 points :**
 > - Le ragequit est déclenché par un circuit neurologique précis dont le coeur est l'amygdale
 > - La colère aux échecs est amplifiée par le sentiment d'injustice et la frustration de l'effort gâché
@@ -109,6 +111,8 @@ La colère aux échecs n'est pas seulement un problème à contrôler. C'est aus
 Si tu ragequit systématiquement après des blunders en zeitnot, l'information est : tu as un problème de gestion du temps lié à l'anxiété, pas seulement de calcul. Si tu ragequit après des défaites contre des joueurs "moins forts" que toi, l'information est : ton ego est investit dans le classement relatif de façon malsaine. Si tu ragequit après des sacrifices adverses "non corrects" qui fonctionnent, l'information est : tu as du mal avec l'incertitude et l'imprévisibilité.
 
 [Mark Dvoretsky](https://fr.wikipedia.org/wiki/Mark_Dvoretsky) disait que l'analyse post-partie devait inclure l'état émotionnel au moment de chaque erreur. La colère est un état émotionnel qui produit des erreurs caractéristiques. Les identifier, c'est se donner un plan d'entraînement concret.
+
+**Après lecture :** après ta prochaine défaite frustrante, attends **cinq minutes** avant le moteur ; note **un** déclencheur (« zeitnot », « coup bizarre », « adversaire plus faible ») pour ton protocole perso.
 
 ---
 

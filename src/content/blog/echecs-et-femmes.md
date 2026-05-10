@@ -56,6 +56,8 @@ La question méritait d'être posée sérieusement, et non balayée d'un revers 
 
 La science, la statistique et la sociologie ont tranché. La réponse est contre-intuitive : l'angle décisif n'est pas biologique, il est mathématique. Une fois que tu l'as vu, l'écart de genre aux échecs ne ressemble plus à un mystère.
 
+**Plan :** démographie et pyramide → biais de participation → menace du stéréotype → histoire et modèles → politiques et clubs → conclusion → FAQ → sources.
+
 > **L'essentiel en 4 points :**
 > - Les femmes représentent 10 à 15 % des joueurs licenciés dans le monde (FIDE, 2024)
 > - L'immense majorité de l'écart de classement s'explique par le biais de participation, pas par la biologie (Bilalić, 2009)
@@ -203,6 +205,8 @@ Si tu ne retenais qu’une idée de cet article, ce serait celle-ci : l’échiq
 Les échecs ne deviennent “plus justes” par discours bienveillant seul : ils le deviennent quand plus de monde peut entrer, rester, et être traité comme joueur·se, ni mascotte, ni intruse. Voir une joueuse championne du monde d’échecs dans les médias, voir des joueuses d’échecs représenter leur pays dans des championnats mixtes, et voir le classement Elo des femmes converger avec celui des hommes dans un monde des échecs véritablement égalitaire : tout cela est à portée de main. Il faut juste en créer les conditions, une année après l’autre.
 
 Le débat sur les **sections féminines** partage souvent le terrain entre **visibilité et mentorat** d’un côté, et **crainte de séparer durablement** les circuits de l’autre. Les chiffres de participation et les études citées plus haut permettent d’argumenter sans slogan : le bon arbitrage dépend du **contexte local** (clubs, harcèlement signalé ou non, financement disponible), pas d’une réponse unique pour toute la planète.
+
+**Après lecture :** si tu encadres ou anime un club, teste **une** friction simple (accueil du premier cours, binômes mixtes systématiques, ou affichage des règles anti-harcèlement) pendant un trimestre et mesure les inscriptions féminines avant/après.
 
 ---
 

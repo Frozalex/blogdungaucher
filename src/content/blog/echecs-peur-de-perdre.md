@@ -14,6 +14,8 @@ seoDescription: "Comment la peur de perdre affecte le jeu aux échecs. Mécanism
 
 Il y a quelque chose dans la peur de perdre aux échecs qui la distingue de la simple déception d'une défaite sportive. Aux échecs, la perte est irréfutable. Il n'y a pas d'arbitre partial, pas de malchance à invoquer. Quand tu perds, tu as joué moins bien que l'adversaire, et c'est visible dans chaque ligne de la notation. Cette transparence absolue de l'échec rend la peur de perdre particulièrement puissante et particulièrement déformatrice.
 
+**Plan :** définition et prévalence → effets sur le style → mécanismes → stratégies pratiques → reframing → sources.
+
 > **L'essentiel en 4 points :**
 > - La peur de perdre modifie profondément le style de jeu, favorisant la passivité et les positions "sûres"
 > - Elle génère une prophétie auto-réalisatrice : les comportements d'évitement créent les conditions des défaites qu'on cherche à éviter
@@ -99,6 +101,8 @@ Son intensité te dit à quel point tu tiens à ce que tu fais. Un joueur qui n'
 Son pattern te dit quelles situations sont chargées symboliquement pour toi. Battre ce joueur particulier, maintenir ce classement précis, gagner ce tournoi spécifique. Ces situations te révèlent ta hiérarchie de valeurs dans le jeu, et potentiellement des biais à corriger.
 
 La peur de perdre bien gérée n'est pas éliminée : elle est transformée en attention accrue et en motivation supplémentaire. La différence entre un joueur paralysé par la peur et un joueur porté par elle est dans la façon dont il a appris à l'utiliser.
+
+**Après lecture :** avant ta prochaine partie « à enjeux », écris **un objectif de processus** (ex. tenir un plan dix coups) distinct du résultat — c’est la variable que tu contrôles.
 
 ---
 

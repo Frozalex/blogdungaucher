@@ -22,6 +22,8 @@ Tu as peut-être connu cette sensation. Cette incapacité à s'approprier une vi
 
 Ce n'est pas de la modestie. Ce n'est pas du réalisme. C'est le syndrome de l'imposteur. Et aux échecs, il prend des formes particulièrement insidieuses.
 
+**Plan :** définition et mécanismes → manifestations à l’échiquier → ce qui ne marche pas → outils (processus, journal, normalisation) → tableau et FAQ → sources.
+
 > **L'essentiel en 4 points :**
 > - Le syndrome de l'imposteur est un phénomène psychologique bien documenté, particulièrement fréquent dans les activités intellectuelles et compétitives
 > - Aux échecs, il se manifeste souvent par le sentiment que les victoires sont dues à la chance de l'adversaire et que les défaites confirment le vrai niveau
@@ -168,7 +170,7 @@ Si le syndrome de l'imposteur déborde sur d'autres domaines de ta vie - travail
 
 ---
 
-La prochaine fois que tu gagneras une partie que tu "n'aurais pas dû" gagner, note **une décision précise** dont tu es l’auteur : un coup, une gestion du temps, une défense tenue. Pas pour nier les erreurs adverses : pour que la victoire contienne un fait vérifiable qui t’appartient.
+**Après lecture :** la prochaine fois que tu gagnes une partie « imméritée », note **une** décision précise dont tu es l’auteur (coup, temps, plan) — pour ancrer la victoire dans un fait vérifiable.
 
 ---
 

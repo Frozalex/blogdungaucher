@@ -24,6 +24,8 @@ La règle 40-40-20 est une heuristique popularisée parmi les entraîneurs et le
 
 Ce n'est pas un dogme. C'est une hypothèse solide. Et pour comprendre pourquoi elle est solide, il faut comprendre ce que la recherche sur l'expertise aux échecs a mis des décennies à démonter.
 
+**Plan :** pourquoi les joueurs surindexent les ouvertures → tactique / finales / ouvertures selon la littérature → mise en pratique et adaptations → critiques → synthèse tableau → FAQ → sources.
+
 > **L'essentiel en 4 points :**
 > - La plupart des joueurs amateurs surindexent massivement sur les ouvertures, là où l'impact sur le résultat est le plus faible à leur niveau
 > - La tactique est le levier de progression le plus documenté et le plus immédiat : elle améliore le calcul, la reconnaissance de patterns et la précision dans toutes les phases du jeu
@@ -180,7 +182,7 @@ En blitz pur, les finales comptent beaucoup moins (les parties se terminent rare
 
 ---
 
-**Contrôle rapide :** note pendant une semaine le temps réel passé en tactique, finales et ouvertures (chronomètre ou carnet). Sans mesure, la règle 40-40-20 reste un slogan ; avec quelques chiffres, tu vois où fuir les puzzles passifs et où ajouter deux fins élémentaires.
+**Après lecture :** pendant **une semaine**, chronomètre le temps réel tactique / finales / ouvertures ; compare au tableau « session type » du milieu d’article et ajuste **un** levier seulement.
 
 ---
 

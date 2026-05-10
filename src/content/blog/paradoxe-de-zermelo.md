@@ -14,6 +14,8 @@ seoDescription: "Ernst Zermelo a prouvé en 1913 que les échecs ont un résulta
 
 En 1913, lors du cinquième Congrès International des Mathématiciens à Cambridge, le mathématicien allemand [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) a présenté un résultat qui allait changer la façon dont les mathématiciens, et plus tard les informaticiens, pensent aux jeux de stratégie. Son théorème est court. Sa démonstration est élégante. Et ses implications aux échecs sont à la fois rassurantes et vertigineuses.
 
+**Plan :** théorème et paradoxe → résolutions partielles (dames, morpion) → ce que ça change pour le joueur humain → sources.
+
 > **L'essentiel en 4 points :**
 > - Zermelo prouve que dans tout jeu fini à deux joueurs à information parfaite, le résultat sous jeu parfait est déterminé à l'avance
 > - Pour les échecs, cela signifie que soit Blanc gagne, soit Noir gagne, soit la partie est nulle sous jeu parfait des deux côtés
@@ -103,6 +105,8 @@ Chaque coup que tu joues est une approximation. Chaque évaluation de position q
 Cette humilité mathématique est saine. Elle signifie que même face à un adversaire bien plus fort que toi, la vérité de la position n'est pas connue de lui. Il joue, lui aussi, une approximation. Sa pendule tourne. Ses ressources cognitives sont limitées. Dans les complications qu'il ne connaît pas, sa vérité pratique peut s'éloigner significativement de la vérité théorique.
 
 Le génie de Zermelo n'est pas d'avoir résolu les échecs. C'est d'avoir prouvé que la solution existe, de façon définitive, sans pouvoir la trouver. Un exemple rare où la certitude de l'existence est séparée de la possibilité de l'accès.
+
+**Après lecture :** garde en tête une **phrase d’humilité mathématique** en partie longue : tu joues des approximations, pas la vérité de tablebase ; ça peut lever du perfectionnisme au mauvais moment.
 
 ---
 

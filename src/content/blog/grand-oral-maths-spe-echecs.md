@@ -23,7 +23,7 @@ faq:
     answer: "Les trois meilleures problématiques sont : (1) 'En quoi le jeu d'échecs constitue-t-il un modèle de la pensée combinatoire ?' (angle dénombrement + arbre des coups), (2) 'Dans quelle mesure les probabilités permettent-elles de modéliser et prédire la performance aux échecs ?' (angle loi binomiale + formule Elo), et (3) 'Comment les mathématiques expliquent-elles pourquoi les échecs ne seront jamais résolus par la force brute ?' (angle complexité algorithmique + nombre de Shannon)."
 ---
 
-**Contrat de lecture :** en dix minutes, tu sais **quel** chapitre du programme de Terminale Maths tu accroches **à quoi** sur l’échiquier, avec des calculs prêts pour le jury, trois problématiques toutes faites et un minutage pour vingt minutes d’oral.
+**Plan :** en dix minutes de lecture tu sais **quel** chapitre du programme de Terminale Maths tu accroches **à quoi** sur l’échiquier, avec des calculs prêts pour le jury, trois problématiques toutes faites et un minutage pour vingt minutes d’oral.
 
 Tu es en spécialité Maths ; le Grand Oral approche. Tu cherches un sujet **ancré dans le programme**, personnel, et moins rabâché que la vingtième fractale ou la suite de Fibonacci.
 
@@ -237,6 +237,8 @@ Le fait que la correction $K(r_n - p_n)$ est de signe opposé à l'erreur $(u_n 
 
 **5. « Pourquoi dit-on que minimax est en $O(b^d)$ ? »**
 À chaque niveau, le nombre de nœuds est multiplié par $b$. Après $d$ niveaux : $b^d$ nœuds ; croissance exponentielle au programme.
+
+**Après lecture :** filme-toi en résolvant **un** calcul Elo complet au tableau (données fictives) en moins de quatre minutes — glisse si tu bloques, pas si tu te trompes.
 
 ---
 

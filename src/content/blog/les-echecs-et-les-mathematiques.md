@@ -24,6 +24,8 @@ seoDescriptionEn: "Does chess make you better at maths? What meta-analyses actua
 
 Il n’y a pas un seul chiffre sur un échiquier. Aucune équation à résoudre. Un Grand Maître n’est pas nécessairement capable de calculer une intégrale plus vite que toi. Et pourtant, l’idée que « les échecs rendent bon en maths » est répétée dans les écoles, les clubs périscolaires et les arguments d’admission depuis des décennies - comme si les 64 cases implantaient des formules algébriques dans le cerveau par simple contact.
 
+**Plan :** pourquoi l’association est séduisante → ce que disent les méta-analyses → métacognition comme vrai pont → posture pratique → sources.
+
 > **L'essentiel en 4 points :**
 > - Les échecs ne transfèrent pas directement du "contenu" mathématique dans le cerveau (Sala & Gobet, méta-analyses)
 > - Le seul transfert solide est méthodologique : décomposer, tester, vérifier, douter au bon moment
@@ -136,7 +138,7 @@ Si tu cherches une promesse honnête, la voilà : les échecs ne remplacent pas 
 
 Le bon pitch n’est donc pas “les échecs rendent bon en maths”, mais “les échecs peuvent aider à construire une posture face aux problèmes”. Et cette posture, elle peut servir en maths… comme dans la vraie vie.
 
-**Pour tester la posture décrite ici :** un problème tactique par jour, hypothèse notée *avant* de regarder la solution. Pour le lien avec l’« impossible » combinatoire et les moteurs, enchaîne avec [pourquoi les échecs restent un problème mathématique brutal pour l’IA](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
+**Après lecture :** un problème tactique par jour pendant une semaine, **hypothèse écrite avant** la solution ; pour la combinatoire et les moteurs, enchaîne avec [pourquoi les échecs restent un problème mathématique brutal pour l’IA](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
 
 ---
 

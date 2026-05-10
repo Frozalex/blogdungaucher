@@ -22,6 +22,8 @@ Et pourtant, si tu lui avais demandé de mémoriser une liste de 30 mots sans ra
 
 Ce paradoxe résume le sujet : **les échecs ne « donnent » pas une mémoire magique**. Ils entraînent des circuits très spécifiques (reconnaissance de motifs sur l'échiquier, planification, inhibition d'impulsions) tout en s'appuyant sur les mêmes limites humaines que partout ailleurs. Cet article relie **mémoire de travail**, **mémoire à long terme**, **pratique** et **ce que la science autorise vraiment à conclure**.
 
+**Plan :** types de mémoire et lien avec les échecs → chunks et études (Chase & Simon, Gobet, de Groot) → pratique et transfert → enfants / seniors → tableau et FAQ → sources.
+
 > **L'essentiel en 4 points :**
 > - Les grands maîtres n'ont pas une mémoire « générale » supérieure : sur des listes de mots ou des positions aléatoires, leur avantage s'effondre (Chase & Simon, 1973).
 > - Sur l'échiquier, ils compressent l'information en **chunks** puis en **templates** (Gobet & Simon, 1996) : la mémoire de travail reste limitée, mais chaque « slot » contient plus de sens.
@@ -218,6 +220,8 @@ Les données populationnelles vont plutôt vers des **associations** entre activ
 ---
 
 Tu as déjà eu l'impression de « reconnaître » une position sans pouvoir l'expliquer ? C'est souvent un chunk qui s'est activé. Si cet article t'a aidé à cadrer ton entraînement, garde une seule résolution : **une analyse de plus par semaine**, avec la leçon écrite en une phrase.
+
+**Après lecture :** cette semaine, **une** partie analysée à froid avec la question « quel était mon **premier** coup envisagé ? » — c’est le levier le plus documenté pour caler la mémoire de domaine.
 
 ---
 

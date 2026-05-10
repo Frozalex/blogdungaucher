@@ -26,6 +26,8 @@ Ce qui se passe dans cette pièce n'est pas symbolique. Ce n'est pas de la récr
 
 Un détenu qui apprend à voir trois coups à l'avance sur un échiquier apprend aussi, peut-être, quelque chose sur les conséquences de ses décisions hors de la prison. Cette hypothèse n'est plus seulement intuitive. Elle a une base dans la criminologie moderne.
 
+**Plan :** récidive et déficits cognitifs → pourquoi l’échiquier cible ces axes → programmes documentés et limites → FAQ → conclusion → sources.
+
 > **L'essentiel en 4 points :**
 > - La criminologie contemporaine identifie trois déficits cognitifs liés à la récidive : pensée court-termiste, impulsivité, faible théorie de l'esprit (Ross & Fabiano, 1985)
 > - Ces trois déficits sont précisément les trois axes qu'une partie d'échecs exige de travailler
@@ -151,6 +153,8 @@ C'est une des dimensions les plus intéressantes. Anticiper le coup de son adver
 ---
 
 L'échiquier enseigne quelque chose que peu d'activités enseignent aussi clairement : chaque décision a une conséquence visible et irréversible, et l'adversaire en face de toi a une perspective que tu as intérêt à comprendre. Les programmes qui **durent** combinent jeu, **accompagnement humain stable** et **suite après la sortie** ; l’échiquier seul ne réécrit pas un parcours. Pour les effets cognitifs mesurés hors milieu carcéral, voir [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
+
+**Après lecture :** si tu pilotes ou soutiens un atelier, trace **un** objectif mesurable en établissement (respect du temps, formulation du coup joué) pendant six séances avant d’évaluer quoi que ce soit sur la récidive.
 
 ---
 

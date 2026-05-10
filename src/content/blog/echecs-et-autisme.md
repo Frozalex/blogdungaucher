@@ -24,6 +24,8 @@ Ce tableau, des milliers de parents, d'éducateurs et de thérapeutes le vivent.
 
 Que tu sois parent, enseignant ou joueur toi-même, voici ce que la recherche dit vraiment sur le pourquoi, et pourquoi ça change ce qu'on peut attendre de l'échiquier en pratique.
 
+**Plan :** TSA et définitions → affinité échiquéenne / systemizing → recherche et limites → bonnes pratiques → FAQ → sources.
+
 > **L'essentiel en 4 points :**
 > - 1 enfant sur 36 est autiste aux États-Unis (CDC, 2023) ; 1 sur 100 dans le monde (OMS)
 > - L'échiquier est un "jeu à information parfaite" : aucune règle implicite, aucun sous-entendu social
@@ -168,6 +170,8 @@ Non. Les données disponibles montrent que les échecs sont un complément séri
 ### Pourquoi les personnes autistes ont-elles souvent une affinité naturelle avec les échecs ?
 
 Selon la théorie de la *systemizing* de Simon Baron-Cohen (Cambridge), les cerveaux autistes ont une tendance forte à analyser et construire des systèmes de règles. L'échiquier, jeu à information parfaite, sans ambiguïté sociale, avec des règles stables et vérifiables, correspond presque parfaitement à ce profil cognitif.
+
+**Après lecture :** pour une première mise en place, vise **trois** séances courtes par semaine, plateau physique, **sans** objectif de classement pendant un mois ; note ce qui fatigue (bruit, durée, groupe).
 
 ---
 

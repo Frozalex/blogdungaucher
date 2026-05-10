@@ -24,6 +24,8 @@ Magnus Carlsen, meilleur joueur de l'histoire des échecs selon pratiquement tou
 
 Ce n'est pas un problème de popularité : les échecs comptent 600 à 800 millions de joueurs dans le monde selon les estimations. C'est un problème de structure économique. Et cette structure est plus intéressante à démontrer que les chiffres ne le laissent supposer.
 
+**Plan :** échelle des gains vs autres sports → revenus réels des pros → plateformes et capture de valeur → mutations (Golfe, Inde, esport) → tableau et FAQ → sources.
+
 > **L'essentiel en 4 points :**
 > - Les prize pools des échecs sont dérisoires comparés aux autres sports et jeux de stratégie, y compris certains esports
 > - La grande majorité des joueurs professionnels ne vivent pas des tournois mais de l'enseignement, du contenu en ligne et des contrats de streaming
@@ -171,6 +173,8 @@ La question est régulièrement posée. Le Comité International Olympique a rec
 ---
 
 Les échecs ont produit certains des esprits les plus fascinants de l'histoire sportive et intellectuelle ; le **modèle économique** des joueurs hors tête de classe reste fragile. Les leviers réalistes côté joueur : **enseignement** structuré, **contenu** à valeur ajoutée (cours, livres, vidéo), **contrats plateforme** pour une minorité. Une « industrie » unique qui vivrait tout le monde du jeu reste un scénario long terme, pas une bascule imminente.
+
+**Après lecture :** si tu vises une carrière semi-pro, **modélise trois flux** (cours, contenu, tournois) sur une feuille — pas seulement le prize money du maître que tu suis en stream.
 
 ---
 

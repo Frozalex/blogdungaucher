@@ -18,7 +18,7 @@ seoDescriptionEn: "Does playing chess protect against cognitive decline? What th
 
 Raymond a 79 ans. Il joue aux échecs depuis l'âge de 12 ans dans un club de province, deux soirs par semaine. Son médecin lui a dit qu'il a le profil cognitif d'un homme de 65 ans. Ce n'est pas un miracle génétique : c'est, selon toute probabilité, le résultat de décennies d'une activité que les neurosciences considèrent aujourd'hui comme l'une des plus protectrices contre le déclin cognitif.
 
-**Contrat de lecture :** tu repars avec (1) ce que l’étude du *New England Journal of Medicine* (Verghese, 2003) autorise vraiment à conclure, (2) les limites d’une étude observationnelle, (3) pourquoi les échecs ne valent pas un simple « jeu de lettres », et (4) ce que tu peux faire concrètement à tout âge.
+**Plan :** réserve cognitive → étude Verghese et limites → ce que les échecs ajoutent vs autres loisirs → pratique réaliste → tableau et FAQ → sources.
 
 > **L’essentiel en 4 points :**
 > - La réserve cognitive (Stern, 2009) explique pourquoi deux cerveaux avec les mêmes lésions ne déclenchent pas les mêmes symptômes : l’un compense, l’autre non
@@ -109,7 +109,7 @@ La composante de résolution de problèmes est équivalente. La composante socia
 
 ---
 
-**À privilégier après 60 ans :** une **partie longue analysée** vaut souvent mieux que trois parties rapides ; pour les chiffres récents sur jeux et cognition, voir [Échecs et prévention du déclin cognitif](/blog/echecs-alzheimer-prevention-declin-cognitif/).
+**Après lecture :** privilégie une **partie longue analysée** plutôt que trois rapides ; pour les données récentes sur jeux et cognition, enchaîne avec [Échecs et prévention du déclin cognitif](/blog/echecs-alzheimer-prevention-declin-cognitif/).
 
 ---
 

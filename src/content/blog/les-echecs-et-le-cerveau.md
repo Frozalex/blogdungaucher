@@ -46,7 +46,7 @@ Ce n'est pas un cerveau exceptionnel qui permet de jouer brillamment aux échecs
 
 Ton cerveau n'est pas une machine figée à la naissance : c'est une pâte à modeler qui se rebranche, se répare et s'optimise en fonction des défis que tu lui lances. Après ça, tu ne regarderas plus ta fatigue post-partie de la même façon.
 
-**Tu liras ensuite :** chunking et mémoire des maîtres → imagerie (IRMf, structure, réseaux, chronnectome) → fonctions exécutives et limites du transfert → vieillissement → tableau et références avec DOI.
+**Plan :** chunking et mémoire des maîtres → imagerie (IRMf, structure, réseaux, chronnectome) → fonctions exécutives et limites du transfert → vieillissement → tableau et références avec DOI.
 
 > **L'essentiel en 5 points :**
 > - Les grands maîtres n'ont pas un QI supérieur : ils ont une bibliothèque de **50 000 à 300 000** "chunks" mémorisés (Gobet & Simon, 1998)
@@ -224,6 +224,8 @@ La recherche ne fixe pas de seuil universel. Les changements comportementaux (fo
 ### Le jeu rapide (Blitz) est-il aussi bénéfique que le jeu lent ?
 
 Non. Les études sur l'activation cérébrale montrent que le jeu lent mobilise davantage les zones de planification et de métacognition. Le Blitz repose principalement sur la reconnaissance de motifs déjà stockés, utile pour l'entraînement tactique, mais moins formateur pour les bénéfices cognitifs profonds.
+
+**Après lecture :** choisis **une** section du tableau des études clés et retiens **un** chiffre (effet, n, durée) que tu pourras citer correctement la prochaine fois que tu parles d’échecs et cerveau.
 
 ---
 

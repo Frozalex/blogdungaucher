@@ -14,6 +14,8 @@ seoDescription: "Comment la théorie du chaos s'applique aux échecs. Sensibilit
 
 Les échecs sont souvent décrits comme le jeu de la logique pure, un domaine régi par la rigueur et la prévisibilité. Et pourtant, quiconque a joué une partie tactiquement tendue sait que quelque chose d'autre opère. Un coup de trop, une pièce mal placée, et toute la structure s'effondre. Ce que tu ressens dans ces moments, c'est le chaos au sens technique du terme.
 
+**Plan :** définition du chaos (sensibilité, bifurcations) → lecture échiquéenne → tactique et « chaos maîtrisé » → beauté du jeu → sources.
+
 > **L'essentiel en 4 points :**
 > - Les positions complexes aux échecs exhibent une sensibilité aux conditions initiales caractéristique des systèmes chaotiques
 > - Les points de bifurcation correspondent aux moments où la nature de la position change radicalement
@@ -93,6 +95,8 @@ La décision de compliquer est elle-même une question chaotique : à quel momen
 Les parties les plus belles de l'histoire des échecs sont souvent des parties chaotiques. Les sacrifices audacieux de [Tal](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Tal), les attaques foudroyantes de [Morphy](https://fr.wikipedia.org/wiki/Paul_Morphy), les complications irrésistibles de [Kasparov] : toutes ces beautés naissent de positions où le chaos règne et où un joueur a su naviguer avec une précision extraordinaire là où l'adversaire s'est perdu.
 
 La beauté aux échecs est peut-être la beauté du chaos maîtrisé : la capacité à voir l'ordre là où tout paraît désordre, à suivre le fil de la logique dans le labyrinthe des bifurcations, à trouver le coup unique qui transforme le chaos en victoire. C'est ce que [Tal] lui-même exprimait quand il disait que ses sacrifices n'étaient pas des paris : ils étaient des calculs que ses adversaires ne pouvaient pas vérifier.
+
+**Après lecture :** dans une partie récente « qui a explosé », identifie **le coup bifurcation** (où la nature de la position a basculé) ; c’est souvent là que l’analyse à froid doit commencer.
 
 ---
 

@@ -14,7 +14,7 @@ seoDescription: "Mémoire de travail, plasticité cérébrale, protection contre
 
 Les échecs font-ils vraiment quelque chose au cerveau ? La réponse tient entre deux caricatures : « ça rend intelligent » et « c'est du marketing ». Les données publiées permettent déjà de trancher par niveaux de preuve.
 
-**Plan :** d'abord ce qui se passe dans le cerveau pendant une partie, puis mémoire et plasticité, concentration, vieillissement, limites du transfert vers les autres domaines, et ce qu'une pratique réaliste peut viser.
+**Plan :** activité cérébrale en partie → mémoire et plasticité → concentration → vieillissement → limites du transfert → attentes réalistes → sources.
 
 > **L'essentiel en 4 points :**
 > - Les échecs sollicitent et entraînent spécifiquement la mémoire de travail, la reconnaissance de patterns et la planification prévisionnelle
@@ -97,6 +97,8 @@ Si tu joues régulièrement et sérieusement, les preuves suggèrent que tu peux
 Ce que tu ne peux pas espérer : devenir meilleur en calcul mental par contagion, améliorer ton intelligence générale de façon mesurable, ou « soigner » un déclin cognitif déjà installé.
 
 Les échecs ne sont pas un médicament. Ils sont une salle de sport pour des fonctions cognitives spécifiques. Et comme toute salle de sport, les résultats dépendent de la régularité, de l'intensité, et de l'engagement dans l'effort.
+
+**Après lecture :** pour les **trois prochaines semaines**, remplace une session de bullet par **30 minutes** de problèmes ou d’analyse active ; c’est le format le plus cohérent avec les études citées.
 
 ---
 

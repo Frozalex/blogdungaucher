@@ -14,6 +14,8 @@ seoDescription: "Pourquoi les pauses régulières améliorent la performance aux
 
 Le joueur qui progresse le plus vite n'est pas toujours celui qui joue le plus. C'est souvent celui qui sait quand s'arrêter. La pause n'est pas du temps gâché : c'est une partie intégrante du processus d'apprentissage, de consolidation et de récupération. La neuroscience et la psychologie du sport l'ont démontré de façon de plus en plus précise. Et les joueurs d'échecs, qui ont tendance à valoriser l'accumulation (plus d'heures, plus de puzzles, plus de parties), sous-estiment systématiquement cet outil.
 
+**Plan :** consolidation hors plateau → fatigue cognitive → micro-pauses → sommeil → calendrier type → sources.
+
 > **L'essentiel en 4 points :**
 > - La consolidation mémorielle, le processus par lequel les apprentissages deviennent durables, a lieu hors de la pratique, notamment pendant le sommeil
 > - La fatigue cognitive est réelle et mesurable : après un certain seuil, la qualité de la réflexion baisse même si la motivation reste présente
@@ -99,6 +101,8 @@ La gestion des pauses ne devrait pas être laissée au hasard ou à la fatigue. 
 **Après une mauvaise série :** une pause de quelques jours plutôt que l'accumulation de parties supplémentaires pour « se refaire ». La pause brise le cycle émotionnel et remet les ressources cognitives à niveau.
 
 Le paradoxe de l'entraînement intelligent aux échecs est que le joueur qui sait s'arrêter apprend souvent plus vite que celui qui accumule les heures à la chaîne. Ce n'est pas une invitation à la paresse : c'est une invitation à travailler avec sa neurobiologie plutôt que contre elle.
+
+**Après lecture :** cette semaine, bloque **un jour sans parties en ligne** et une **micro-pause de cinq minutes** toutes les deux sessions d’analyse.
 
 ---
 

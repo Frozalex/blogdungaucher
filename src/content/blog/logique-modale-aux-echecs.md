@@ -14,6 +14,8 @@ seoDescription: "Comment la logique modale formelle structure le raisonnement au
 
 Quand tu analyses une position, tu ne penses pas en termes de certitudes. Tu penses en termes de possibilités et de nécessités. "Il peut jouer là." "Je dois protéger cette pièce." "Si j'avance ce pion, il est forcé de répondre ainsi." Ce langage modal, celui du possible et du nécessaire, est au coeur de la réflexion échiquéenne. Et il correspond exactement à une branche formelle de la logique : la [logique modale](https://fr.wikipedia.org/wiki/Logique_modale).
 
+**Plan :** définition de la logique modale → échiquier comme « mondes possibles » → prophylaxie → profondeur du raisonnement modal selon le niveau → sources.
+
 > **L'essentiel en 4 points :**
 > - La logique modale formalise les raisonnements sur le possible et le nécessaire
 > - Aux échecs, chaque position est un "monde possible" dans l'arbre des variantes
@@ -114,6 +116,8 @@ Le joueur intermédiaire commence à raisonner sur des séquences de 2-3 coups. 
 Le Grand Maître raisonne sur des plans à long terme, des structures de pions qui se développent sur 10 à 15 coups, des transformations qualitatives de la position qui ne seront palpables que dans la fin de partie. Son univers modal inclut des mondes très distants dans l'arbre, accessibles par de longues chaînes de coups.
 
 Cette progression est une progression dans la profondeur et la richesse du raisonnement modal. C'est peut-être la description la plus précise de ce que signifie "comprendre les échecs" : avoir accès à un univers de mondes possibles plus large, et raisonner dessus avec plus de rigueur.
+
+**Après lecture :** sur une position d’entraînement, écris pour **deux coups candidats** la phrase « si je joue X, dans quels **mondes** j’atterris au coup suivant ? » avant de calculer en profondeur.
 
 ---
 

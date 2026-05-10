@@ -38,6 +38,8 @@ Ce n'est pas un sujet où Maths et NSI se côtoient par hasard. C'est un sujet o
 
 Cet article te donne le plan complet, le contenu des deux programmes, les points de connexion entre les disciplines, et les conseils pour tenir la distance face à un jury qui connaît les deux spécialités.
 
+**Plan :** combinatoire (Shannon) ↔ minimax → probabilités / Elo ↔ données → graphes / cavalier ↔ structures → IA (AlphaZero) → déroulé d’oral → questions jury croisées → sources.
+
 > **L'essentiel en 5 points :**
 > - La combinatoire (Maths) produit $\sim 10^{120}$ parties → rend le minimax (NSI) **nécessaire**
 > - Les probabilités Elo (Maths) sont stockées et interrogées en SQL (NSI)
@@ -425,6 +427,8 @@ Troisièmement, qu'il sait **structurer un raisonnement en public** : vingt minu
 Les meilleurs Grands Oraux ne sont pas ceux où le candidat en sait le plus. Ce sont ceux où le jury comprend **pourquoi ce candidat a choisi ce sujet, et ce que ce sujet lui a appris sur lui-même**.
 
 Et si l'on te demande pourquoi tu as choisi les échecs, la réponse honnête et la plus forte est aussi la plus simple : parce que c'est un jeu où l'on pense à voix haute. Et les mathématiques aussi.
+
+**Après lecture :** fais une **répétition hybride** : cinq minutes maths au tableau (Elo ou combinatoire), cinq minutes oral sur le lien avec une idée NSI (minimax ou données) — sans support, comme au jury.
 
 ---
 

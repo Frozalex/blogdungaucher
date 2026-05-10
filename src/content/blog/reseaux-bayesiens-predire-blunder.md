@@ -14,6 +14,8 @@ seoDescription: "Comment les réseaux bayésiens et la statistique bayésienne p
 
 Un blunder est rarement totalement imprévisible. Avant qu'il se produise, des signaux existent : la pendule qui s'affole, une position complexe que l'adversaire n'a pas l'habitude de gérer, une suite forcée longue que son niveau de jeu rend difficile à calculer intégralement. Ces signaux, pris ensemble, forment un portrait probabiliste du risque d'erreur. Les [réseaux bayésiens](https://fr.wikipedia.org/wiki/R%C3%A9seau_bay%C3%A9sien) formalisent précisément ce type de raisonnement.
 
+**Plan :** Bayes et mise à jour → structure d’un réseau bayésien → limites (données, biais de confirmation) → usages pratiques à l’échiquier → sources.
+
 > **L'essentiel en 4 points :**
 > - Le raisonnement bayésien permet de mettre à jour une estimation de probabilité à mesure que de nouvelles informations arrivent
 > - Un réseau bayésien modélise les dépendances causales entre plusieurs variables pour estimer une probabilité composite
@@ -109,6 +111,8 @@ Même sans construire formellement un réseau bayésien, les principes bayésien
 **Reconnaître les positions hors du confort adverse.** Si tu sais que l'adversaire joue habituellement en positions fermées, l'emmener dans une position ouverte et tactique augmente le risque d'erreur même si sa préparation est bonne.
 
 **Résister à la symétrie.** Le fait que tu sois en bonne forme ne signifie pas que l'adversaire l'est aussi. La mise à jour bayésienne sur son état est indépendante de la tienne.
+
+**Après lecture :** pendant une partie en ligne, note **trois indices** (pendule adverse, complexité, hors zone de confort) ; à la fin, vérifie si le blunder adverse coïncide avec ce tableau — sans « confirmer » n’importe quoi.
 
 ---
 

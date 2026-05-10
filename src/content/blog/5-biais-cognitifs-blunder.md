@@ -14,6 +14,8 @@ seoDescription: "Les 5 biais cognitifs les plus fréquents qui provoquent des bl
 
 Tu as tout calculé  -  enfin, tu le croyais. Puis le blunder : « comment j’ai pu rater ça ? » Rarement par manque de temps au calculateur ; presque toujours parce que **le cerveau a tranché avec un biais**, pas avec une erreur de variante. La science cognitive a cartographié ces dérives ; cinq d’entre elles collent particulièrement à l’échiquier.
 
+**Plan :** les cinq biais (Einstellung, confirmation, ancrage, surconfiance, disponibilité) → méta-biais « angle mort » → sources.
+
 > **L'essentiel en 4 points :**
 > - Les biais cognitifs sont des déviations systématiques du raisonnement rationnel, documentées par la recherche en psychologie
 > - Ils ne sont pas des signes de bêtise : ils affectent tout le monde, y compris les experts
@@ -91,6 +93,8 @@ Un dernier biais mérite d'être mentionné, même s'il n'est pas spécifique au
 Pour le joueur d'échecs, la conséquence est importante : connaître ces cinq biais ne suffit pas à s'en immuniser. La connaissance théorique et le comportement en partie sont deux choses différentes. Des protocoles comportementaux explicites (les questions systématiques mentionnées dans chaque section) sont nécessaires pour que la connaissance théorique se traduise en comportement différent à l'échiquier.
 
 L'entraînement de la pensée échiquéenne n'est pas seulement l'entraînement du calcul. C'est l'entraînement de la vigilance sur ses propres processus cognitifs. C'est ce que les psychologues appellent la métacognition : penser sur sa propre pensée. Et c'est peut-être la compétence la plus précieuse que les échecs peuvent développer.
+
+**Après lecture :** choisis **un** biais qui t’a coûté une partie récente ; pendant les trois prochaines sessions, pose la **même question de contrôle** avant chaque coup important (ex. « quelle autre idée j’écarte ? » pour l’Einstellung).
 
 ---
 

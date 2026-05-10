@@ -16,6 +16,8 @@ Tu as gagné le tournoi de ton club. Félicitations et poignées de mains. Et da
 
 Ce dialogue intérieur négatif a un nom. Et il touche les échecs de façon particulièrement intense.
 
+**Plan :** mécanisme d’attribution → pourquoi les échecs amplifient le syndrome → signaux comportementaux → stratégies (journal, attribution, exposition, feedback) → sources.
+
 > **L'essentiel en 4 points :**
 > - Le syndrome de l'imposteur aux échecs se traduit par une attribution systématique des succès à la chance et des échecs à la compétence
 > - Les caractéristiques du jeu (transparence des erreurs, absence de hasard) amplifient ce mécanisme
@@ -91,6 +93,8 @@ La transformation du syndrome de l'imposteur ne se fait pas en un jour, mais ell
 **Exposer ses peurs.** Jouer délibérément dans les situations qui génèrent l'anxiété du syndrome (tournois officiels, adversaires plus forts, parties avec enjeux). L'exposition progressive est le mécanisme central de nombreuses thérapies cognitivo-comportementales.
 
 **Chercher un feedback objectif.** Demander à un entraîneur ou un joueur plus fort une évaluation honnête de ton niveau. Non pas pour être rassuré (le syndrome de l'imposteur résiste aux reassurances), mais pour confronter tes croyances à une évaluation externe structurée.
+
+**Après lecture :** après **trois** parties, écris **une** décision interne et attribuable (temps, plan, tactique) pour chaque victoire — pas « j’ai eu de la chance ».
 
 ---
 

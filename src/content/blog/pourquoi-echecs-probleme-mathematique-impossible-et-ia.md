@@ -34,6 +34,8 @@ Alors quoi ? Peut-on vraiment tout ramener à des formules ? Ce jeu est-il un pr
 
 La vérité est plus intéressante que le mythe : aucune liste finie de coups ne "ferme" le jeu comme un énoncé formel clos et pourtant, des programmes battent régulièrement les meilleurs joueurs humains parce qu'ils ne cherchent pas la perfection absolue, seulement une décision assez bonne face à un adversaire réel.
 
+**Plan :** graphe d’états et explosion combinatoire → heuristiques et élagage → moteurs classiques → apprentissage / NNUE → leçon pour le joueur → pistes sur le blog.
+
 ## L'échiquier vu de l'intérieur : un graphe d'états, pas un chaos
 
 Pour un mathématicien ou un informaticien, le [jeu d'échecs](https://fr.wikipedia.org/wiki/Jeu_d%27%C3%A9checs) offre une qualité rare : les règles sont exactes, publiques, et le jeu est déterministe. Un [Cavalier](https://fr.wikipedia.org/wiki/Cavalier_(jeu_d%27%C3%A9checs)) saute toujours en L, un Fou reste sur sa couleur : chaque coup légal de ce jeu d'échecs est reproductible, sans hasard ni surprise de règle, même si, devant un humain imprévisible, tu peux avoir l'impression d'incertitude.
@@ -193,4 +195,4 @@ Les échecs sont "impossibles" si tu imagines une solution brute : tout explorer
 
 **Pour aller plus loin :** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/), [arXiv](https://arxiv.org/).
 
-**Après avoir ouvert l’[espace d’analyse](/analyses) :** repère le **premier coup** où ta variante et la ligne du moteur divergent de plus d’un demi-pion ; rejoue **cette position seule** trois fois dans la journée (sans nouvelle partie). C’est souvent le seul creux où ton classement progresse.
+**Après lecture :** ouvre l’[espace d’analyse](/analyses), repère le **premier coup** où ta variante et la ligne du moteur divergent de plus d’un demi-pion, puis rejoue **cette position seule** trois fois dans la journée (sans nouvelle partie).

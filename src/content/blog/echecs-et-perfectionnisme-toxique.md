@@ -16,6 +16,8 @@ Un joueur perfectionniste semble, de prime abord, être un joueur sérieux. Il a
 
 Le perfectionnisme toxique aux échecs est plus répandu qu'on ne le croit. Et il a un effet paradoxal direct : il dégrade la performance qu'il cherche à maximiser.
 
+**Plan :** adaptatif vs toxique → manifestations au jeu → mécanismes (processus ironiques) → satisficing et outils pratiques → sources.
+
 > **L'essentiel en 4 points :**
 > - Il existe deux formes de perfectionnisme : adaptatif (sain) et maladaptatif (toxique)
 > - Le perfectionnisme toxique génère de l'anxiété, de la paralysie par l'analyse et une peur de l'erreur qui augmente les erreurs
@@ -89,6 +91,8 @@ Transformer le perfectionnisme toxique ne signifie pas abaisser ses standards. C
 **Exposer ses imperfections délibérément.** Dans des contextes à faibles enjeux (parties amicales, analyses en groupe), partager ses erreurs et ses hésitations. La dédramatisation sociale de l'imperfection réduit sa charge émotionnelle.
 
 **Séparer l'analyse de la partie.** Ne pas analyser immédiatement après une partie émotionnellement intense. Laisser passer le temps nécessaire pour que l'état émotionnel revienne à la normale avant d'engager l'analyse critique.
+
+**Après lecture :** impose pour les parties sérieuses un **plafond de temps par coup** (même large) : le perfectionnisme toxique se nourrit du « meilleur coup » sans horizon.
 
 ---
 

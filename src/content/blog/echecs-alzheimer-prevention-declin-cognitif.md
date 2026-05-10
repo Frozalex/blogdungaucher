@@ -94,6 +94,8 @@ Les données publiées sont **plus nuancées** : certains essais montrent des **
 
 **Objectif de cette page :** rassembler des **chiffres tirés d’études sélectionnées** (tableau et références en bas) et les relier au **jeu d’échecs** comme loisir dense et durable : **apprendre**, **progresser**, **ancrer une routine** sans la confondre avec une ordonnance.
 
+**Plan :** garde-fous méthodologiques → tableau synthétique → lectures détaillées (cohortes, méta-analyses, essais) → stratégies concrètes sans médicaliser → références.
+
 > **L’essentiel (trois garde-fous)**
 > - Les **associations épidémiologiques** (probabilité relative sur une cohorte, souvent présentée comme un ratio) ne valent pas **causalité individuelle**.
 > - **Jeux de plateau ≠ médicament** : les effets dépendent de la dose (temps, semaines), du profil (MCI, diagnostic déjà posé, senior bien portant) et du résultat mesuré (MMSE, humeur, qualité de vie).
@@ -190,6 +192,8 @@ Pour les seniors : voir aussi [échecs et seniors](/blog/echecs-et-seniors/) ; e
 8. **Self-efficacy** : progression objective (puzzles résolus).
 9. **Complémentarité avec marche ou équilibre** : la sphère cognitive vieillit aussi via le corps.
 10. **Plaisir** : variable souvent négligée dans les essais mais cruciale pour **tenir dans le temps**.
+
+**Après lecture :** choisis **un** critère pour les trois prochains mois (social, humeur ou stimulation cognitive) et une « dose » réaliste du type **deux fois 45 minutes** par semaine avec une partie lente analysée — pas trois objectifs à la fois.
 
 ## Sources et références scientifiques
 

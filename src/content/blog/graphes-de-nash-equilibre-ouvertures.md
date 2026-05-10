@@ -14,6 +14,8 @@ seoDescription: "Comment l'équilibre de Nash explique la stabilité des ouvertu
 
 Pourquoi la Défense Sicilienne est-elle jouée à tous les niveaux depuis cent ans ? Pourquoi la Partie Espagnole n'a-t-elle pas été "réfutée" malgré des siècles d'analyse ? Pourquoi certaines variantes théoriques s'effondrent en quelques années tandis que d'autres semblent indestructibles ? La réponse à ces questions se trouve dans un concept mathématique élaboré par [John Nash](https://fr.wikipedia.org/wiki/John_Forbes_Nash) en 1950 : l'équilibre de Nash.
 
+**Plan :** définition de l’équilibre de Nash → ouvertures comme équilibres locaux → réfutations et nouveaux équilibres → progrès au-delà du simple Elo → sources.
+
 > **L'essentiel en 4 points :**
 > - Un équilibre de Nash est une situation où aucun joueur ne peut améliorer son résultat en changeant unilatéralement de stratégie
 > - Les ouvertures considérées "théoriquement égales" sont des équilibres de Nash locaux
@@ -101,6 +103,8 @@ Progresser aux échecs, c'est progresser dans la capacité à maintenir et explo
 Le coup "équilibrant" d'une position n'est pas toujours le coup le plus visible ou le plus spectaculaire. C'est souvent un coup calme, prophylactique, qui consolide la structure stratégique. C'est Nash plutôt que Tal : l'équilibre silencieux plutôt que le sacrifice fracassant.
 
 Les deux approches coexistent dans les échecs de haut niveau. Les positions déséquilibrées appelées par certains styles de jeu sont délibérément des tentatives de sortir l'adversaire de ses équilibres confortables pour le placer dans des territoires où son instinct pour l'équilibre est moins fiable.
+
+**Après lecture :** pour **une** ouverture que tu joues souvent, note si tu cherches surtout le piège ou l’équilibre stable ; ajuste selon le format (must-win vs nulle acceptable).
 
 ---
 
