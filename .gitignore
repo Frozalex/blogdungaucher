@@ -17,3 +17,8 @@ _shell_probe.txt
 _commit_msg.txt
 _do_commit.bat
 _do_push.bat
+
+.git-push-log.txt
+_do-push-log.cmd
+_status_short.tmp
+
