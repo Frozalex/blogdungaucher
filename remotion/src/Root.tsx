@@ -3,10 +3,15 @@ import { Composition } from "remotion";
 import { ArticleIntro } from "./ArticleIntro";
 import { ArticleSummary } from "./ArticleSummary";
 import { defaultVideoProps, sampleDataRevealProps } from "./post-props";
+import {
+  INTRO_DURATION_FRAMES,
+  SUMMARY_DURATION_FRAMES,
+  VIDEO_FPS,
+} from "./video-durations";
 
-const FPS = 30;
-const INTRO_FRAMES = 30 * FPS;
-const SUMMARY_FRAMES = 45 * FPS;
+const FPS = VIDEO_FPS;
+const INTRO_FRAMES = INTRO_DURATION_FRAMES;
+const SUMMARY_FRAMES = SUMMARY_DURATION_FRAMES;
 
 export function RemotionRoot() {
   return (

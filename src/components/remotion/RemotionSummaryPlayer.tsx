@@ -2,9 +2,13 @@ import { Player } from "@remotion/player";
 
 import { ArticleSummary } from "@remotion/ArticleSummary";
 import type { VideoPostProps } from "@remotion/types";
+import {
+  SUMMARY_DURATION_FRAMES,
+  VIDEO_FPS,
+} from "@remotion/video-durations";
 
-const FPS = 30;
-const SUMMARY_FRAMES = 45 * FPS;
+const FPS = VIDEO_FPS;
+const SUMMARY_FRAMES = SUMMARY_DURATION_FRAMES;
 
 type Aspect = "16:9" | "9:16";
 

@@ -12,12 +12,12 @@ function excerptToTakeaways(excerpt: string): string[] {
     .map((s) => s.trim())
     .filter(Boolean);
   if (parts.length === 0 && cleaned) parts = [cleaned];
-  if (parts.length >= 3) return parts.slice(0, 3);
+  if (parts.length >= 5) return parts.slice(0, 5);
   const out = [...parts];
   const filler =
-    cleaned.length > 140 ? `${cleaned.slice(0, 137).trim()}…` : cleaned;
+    cleaned.length > 180 ? `${cleaned.slice(0, 177).trim()}…` : cleaned;
   while (out.length < 3) out.push((out[out.length - 1] ?? filler) || "…");
-  return out.slice(0, 3);
+  return out.slice(0, 5);
 }
 
 function resolveImageSrc(src: string, siteOrigin: string): string | null {
@@ -54,7 +54,7 @@ export function buildVideoPostProps(
     hero && typeof hero.alt === "string" ? hero.alt : "";
 
   let keyTakeaways = Array.isArray(data.keyTakeaways)
-    ? data.keyTakeaways.map(String).filter(Boolean).slice(0, 3)
+    ? data.keyTakeaways.map(String).filter(Boolean).slice(0, 5)
     : [];
 
   if (keyTakeaways.length === 0) {

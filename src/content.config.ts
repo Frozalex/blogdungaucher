@@ -17,18 +17,18 @@ const blog = defineCollection({
     readingTime: z.string().optional(),
     pillar: z.string(),
     tags: z.array(z.string()).optional(),
-    /** Jusqu’à 3 points pour la vidéo récap Remotion et le sens « fin d’article ». */
-    keyTakeaways: z.array(z.string()).max(3).optional(),
-    /** URL ou chemin `/…` vers le MP4 hero (~30 s), affiché sous le titre. */
+    /** Jusqu’à 5 points pour la vidéo récap Remotion (séquence classique) et le sens « fin d’article ». */
+    keyTakeaways: z.array(z.string()).max(5).optional(),
+    /** URL ou chemin `/…` vers le MP4 hero (~36 s), affiché sous le titre. */
     introVideo: z.string().optional(),
-    /** URL ou chemin `/…` vers le MP4 récap (~45 s), affiché après le corps de l’article. */
+    /** URL ou chemin `/…` vers le MP4 récap (~55 s), affiché après le corps de l’article. */
     summaryVideo: z.string().optional(),
     /** Ratio du lecteur intro : 16:9 (paysage) ou 9:16 (vertical). */
     introVideoAspect: z.enum(["16:9", "9:16"]).optional(),
-    /** Séquence Remotion pour la vidéo récap : classique (3 points) ou data-reveal (barres + chiffre). */
+    /** Séquence Remotion pour la vidéo récap : classique (3–5 points) ou data-reveal (barres + synthèse). */
     summarySequence: z.enum(["classic", "data-reveal"]).optional(),
     /**
-     * Données pour la séquence « data reveal » (récap ~45 s) — idéal neuro / chiffres.
+     * Données pour la séquence « data reveal » (récap ~55 s) — idéal neuro / chiffres.
      * Requiert `summarySequence: data-reveal` pour le rendu Remotion correspondant.
      */
     dataReveal: z

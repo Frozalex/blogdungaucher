@@ -14,7 +14,7 @@ export function splitIntoPhrases(text: string, maxPhrases: number): string[] {
   for (const sentence of raw) {
     if (!buf) {
       buf = sentence;
-    } else if ((buf + " " + sentence).length < 140) {
+    } else if ((buf + " " + sentence).length < 200) {
       buf += " " + sentence;
     } else {
       merged.push(buf);
@@ -26,15 +26,13 @@ export function splitIntoPhrases(text: string, maxPhrases: number): string[] {
   return merged.slice(0, maxPhrases);
 }
 
-export function padTakeaways(
-  items: string[],
-  excerpt: string,
-): [string, string, string] {
-  const cleaned = items.map((s) => s.trim()).filter(Boolean).slice(0, 3);
-  const fallback = splitIntoPhrases(excerpt, 3);
-  while (cleaned.length < 3) {
-    const next = fallback[cleaned.length] ?? "…";
-    cleaned.push(next);
+/** 3 à 5 points : priorité au frontmatter, complété par des phrases d’extrait si besoin. */
+export function padTakeaways(items: string[], excerpt: string): string[] {
+  const cleaned = items.map((s) => s.trim()).filter(Boolean).slice(0, 5);
+  const fallback = splitIntoPhrases(excerpt, 5);
+  const out = [...cleaned];
+  while (out.length < 3) {
+    out.push(fallback[out.length] ?? "…");
   }
-  return [cleaned[0]!, cleaned[1]!, cleaned[2]!];
+  return out.slice(0, Math.min(out.length, 5));
 }

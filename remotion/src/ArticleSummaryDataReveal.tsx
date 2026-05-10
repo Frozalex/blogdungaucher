@@ -9,23 +9,44 @@ import {
 import { theme } from "./theme";
 import type { DataRevealPayload, VideoPostProps } from "./types";
 
-const FPS = 30;
-/** 0–5 s */
-const F_VIZ_TITLE_END = 5 * FPS;
-/** 5–20 s */
-const F_BARS_END = 20 * FPS;
-/** 20–28 s */
-const F_HIGHLIGHT_END = 28 * FPS;
-
 type Props = VideoPostProps & { dataReveal: DataRevealPayload };
 
 export function ArticleSummaryDataReveal(props: Props) {
   const frame = useCurrentFrame();
-  const { height, width } = useVideoConfig();
+  const { height, width, fps, durationInFrames } = useVideoConfig();
   const isPortrait = height > width;
   const { dataReveal, accentColor } = props;
   const { vizTitle, bars, highlight, highlightSub, source, takeaway, cta } =
     dataReveal;
+
+  /** 0–5 s titre viz · 5–20 s barres · 20–30 s highlight · 30 s → fin : synthèse enrichie */
+  const f = (sec: number) => Math.round(sec * fps);
+  const F_VIZ_TITLE_END = f(5);
+  const F_BARS_END = f(20);
+  const F_HIGHLIGHT_END = f(30);
+
+  const takeawayParagraphs = (() => {
+    const parts = takeaway
+      .split(/\n\s*\n/)
+      .map((p) => p.trim())
+      .filter(Boolean);
+    if (parts.length > 0) return parts;
+    const one = takeaway.trim();
+    return one ? [one] : [];
+  })();
+
+  const takeawayFontSize =
+    takeaway.length > 420
+      ? isPortrait
+        ? 22
+        : 24
+      : takeaway.length > 260
+        ? isPortrait
+          ? 24
+          : 27
+        : isPortrait
+          ? 26
+          : 30;
 
   const padX = isPortrait ? 40 : 72;
   const padY = isPortrait ? 36 : 52;
@@ -63,22 +84,22 @@ export function ArticleSummaryDataReveal(props: Props) {
 
   const takeawayOp = interpolate(
     frame,
-    [F_HIGHLIGHT_END, F_HIGHLIGHT_END + 36],
+    [F_HIGHLIGHT_END + 12, F_HIGHLIGHT_END + 48],
     [0, 1],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) },
   );
 
   const ctaOp = interpolate(
     frame,
-    [F_HIGHLIGHT_END + 100, F_HIGHLIGHT_END + 150],
+    [durationInFrames - f(2.2), durationInFrames - f(0.6)],
     [0, 1],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );
 
-  /** Masque le bandeau article + titre viz quand le takeaway plein écran domine */
+  /** Masque la couche du haut quand la synthèse occupe l’écran */
   const topLayerOpacity = interpolate(
     frame,
-    [F_HIGHLIGHT_END - 20, F_HIGHLIGHT_END + 30],
+    [F_HIGHLIGHT_END - 24, F_HIGHLIGHT_END + 36],
     [1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );
@@ -274,7 +295,7 @@ export function ArticleSummaryDataReveal(props: Props) {
         </AbsoluteFill>
       )}
 
-      {/* Couche D : 28–45 s */}
+      {/* Couche D : synthèse finale (plus longue sur timeline ~55 s) */}
       {inTakeawayPhase && (
         <AbsoluteFill
           style={{
@@ -286,17 +307,20 @@ export function ArticleSummaryDataReveal(props: Props) {
           }}
         >
           <div style={{ opacity: takeawayOp }}>
-            <p
-              style={{
-                margin: "0 0 22px",
-                fontSize: isPortrait ? 26 : 30,
-                lineHeight: 1.45,
-                fontWeight: 600,
-                color: theme.textMain,
-              }}
-            >
-              {takeaway}
-            </p>
+            {takeawayParagraphs.map((para, pi) => (
+              <p
+                key={pi}
+                style={{
+                  margin: pi === 0 ? "0 0 18px" : "0 0 16px",
+                  fontSize: takeawayFontSize,
+                  lineHeight: 1.48,
+                  fontWeight: pi === 0 ? 600 : 500,
+                  color: theme.textMain,
+                }}
+              >
+                {para}
+              </p>
+            ))}
             <div
               style={{
                 opacity: ctaOp,

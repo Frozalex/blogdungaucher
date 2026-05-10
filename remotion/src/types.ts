@@ -15,7 +15,7 @@ export type DataRevealPayload = {
   highlightSub?: string;
   /** Référence courte pour la source (20–28 s). */
   source: string;
-  /** Phrase de takeaway (28–45 s). */
+  /** Synthèse finale (plusieurs paragraphes possibles, séparer par une ligne vide dans le YAML). */
   takeaway: string;
   cta?: string;
 };
@@ -27,7 +27,7 @@ export type VideoPostProps = {
   heroImageSrc: string | null;
   heroImageAlt: string;
   accentColor: string;
-  /** Jusqu’à 3 points pour la composition récap classique. */
+  /** Jusqu’à 5 points pour la composition récap classique (3 minimum si remplissage auto). */
   keyTakeaways: string[];
   /** `data-reveal` active ArticleSummaryDataReveal si `dataReveal` est complet. */
   summarySequence?: "classic" | "data-reveal";

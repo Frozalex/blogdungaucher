@@ -12,14 +12,14 @@ import { splitIntoPhrases } from "./utils/text";
 import { theme } from "./theme";
 import type { VideoPostProps } from "./types";
 
-const TITLE_END = 90;
-const TAGS_START = 620;
-const TAGS_END = 860;
-
 export function ArticleIntro(props: VideoPostProps) {
   const frame = useCurrentFrame();
   const { width, height, fps, durationInFrames } = useVideoConfig();
   const isPortrait = height > width;
+
+  /** Bandeau tags : ~68–92 % de la durée pour laisser place au titre, sous-titres et CTA */
+  const TAGS_START = Math.floor(durationInFrames * 0.68);
+  const TAGS_END = Math.floor(durationInFrames * 0.92);
 
   const titleOp = spring({
     frame,
@@ -32,9 +32,11 @@ export function ArticleIntro(props: VideoPostProps) {
     extrapolateRight: "clamp",
   });
 
-  const phrases = splitIntoPhrases(props.excerpt, 4);
-  const phraseStart = 100;
-  const phraseWindow = Math.floor((TAGS_START - phraseStart - 20) / Math.max(phrases.length, 1));
+  const phrases = splitIntoPhrases(props.excerpt, 5);
+  const phraseStart = 95;
+  const phraseWindow = Math.floor(
+    (TAGS_START - phraseStart - 22) / Math.max(phrases.length, 1),
+  );
   const segments = phrases.map((text, i) => ({
     text,
     start: phraseStart + i * phraseWindow,
@@ -47,7 +49,12 @@ export function ArticleIntro(props: VideoPostProps) {
 
   const ctaOp = interpolate(
     frame,
-    [TAGS_END, TAGS_END + 20, durationInFrames - 15, durationInFrames],
+    [
+      TAGS_END,
+      TAGS_END + 24,
+      durationInFrames - 18,
+      durationInFrames - 2,
+    ],
     [0, 1, 1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );

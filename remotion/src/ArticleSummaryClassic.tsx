@@ -15,16 +15,22 @@ const LABEL = "En résumé";
 
 export function ArticleSummaryClassic(props: VideoPostProps) {
   const frame = useCurrentFrame();
-  const { width, height, fps } = useVideoConfig();
+  const { width, height, fps, durationInFrames } = useVideoConfig();
   const isPortrait = height > width;
 
-  const [p1, p2, p3] = padTakeaways(props.keyTakeaways, props.excerpt);
+  const points = padTakeaways(props.keyTakeaways, props.excerpt);
+  const numPoints = points.length;
+  const headerFrames = 95;
+  const tailFrames = 90;
+  const staggerStart = headerFrames + 25;
+  const usable = Math.max(durationInFrames - staggerStart - tailFrames, fps * 8);
+  const step = numPoints > 0 ? usable / numPoints : usable;
 
-  const blocks = [
-    { title: "Idée 1", body: p1, start: 120 },
-    { title: "Idée 2", body: p2, start: 480 },
-    { title: "Idée 3", body: p3, start: 840 },
-  ];
+  const blocks = points.map((body, index) => ({
+    title: `Point clé ${index + 1}`,
+    body,
+    start: Math.floor(staggerStart + index * step),
+  }));
 
   const headerOp = spring({
     frame,
@@ -120,7 +126,7 @@ export function ArticleSummaryClassic(props: VideoPostProps) {
 
             return (
               <div
-                key={b.title}
+                key={`${index}-${b.start}`}
                 style={{
                   padding: "22px 26px",
                   borderRadius: 18,
@@ -143,8 +149,13 @@ export function ArticleSummaryClassic(props: VideoPostProps) {
                 </div>
                 <div
                   style={{
-                    fontSize: 26,
-                    lineHeight: 1.4,
+                    fontSize:
+                      b.body.length > 220
+                        ? 21
+                        : b.body.length > 150
+                          ? 23
+                          : 26,
+                    lineHeight: 1.42,
                     color: theme.textMuted,
                   }}
                 >
