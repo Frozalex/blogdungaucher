@@ -38,7 +38,7 @@ midArticleVideoEyebrow: "Données clés"
 summaryVideoAspect: "16:9"
 summarySequence: "data-reveal"
 dataReveal:
-  vizTitle: "Alzheimer, jeux et cohortes"
+  vizTitle: "Jeux, cohortes et incidence (vue synthétique)"
   bars:
     - label: "HR démence (littératie)"
       value: 0.89
@@ -76,7 +76,7 @@ faq:
   - question: "Les études sur le jeu de Go s’appliquent-elles aux échecs ?"
     answer: "Partiellement : ce sont des jeux de plateau à charge cognitive élevée, mais les protocoles (durée, malades déjà diagnostiqués vs seniors bien portants) diffèrent. Il faut lire chaque titre comme une pièce du puzzle, pas comme une preuve transférable mot pour mot aux échecs occidentaux."
   - question: "Les échecs modifient-ils l’architecture cérébrale ?"
-    answer: "La pratique prolongée est associée à des différences fonctionnelles sur l’imagerie ; pour le lien jeu → réserves cognitives et transfert, voir nos articles sur le cerveau et les échecs."
+    answer: "La pratique prolongée est associée à des différences fonctionnelles sur l’imagerie ; pour le lien jeu → réserves cognitives et transfert, voir nos pages sur la cognition aux échecs et le jeu d’échecs."
 faqEn:
   - question: "Do chess prevent Alzheimer's disease?"
     answer: "No single activity can guarantee you won't develop a neurodegenerative disease. Large cohorts report associations between frequent mental activities and lower relative risk at population level ; not an individually assured shield."
@@ -88,12 +88,12 @@ faqEn:
     answer: "Long-term practice correlates with functional imaging differences; see our chess-and-brain articles for cognitive reserve and transfer."
 ---
 
-Les titres racoleurs promettent parfois une « arme » contre Alzheimer. Les données publiées sont **plus nuancées** : on trouve des **effets mesurables** sur humeur, dépression ou scores cognitifs dans certains essais ; mais aussi des **non-différences** sur la cognition globale dès qu’on durcit les contrôles (essais randomisés, méta-analyses). Ce texte **assemble des chiffres tirés d’une sélection d’études** (voir tableau et références en fin d’article) et les relie à une pratique raisonnable des **échecs** comme loisir dense, social possible et durable.
+Les titres racoleurs promettent parfois une « arme » contre **la maladie** souvent nommée ainsi dans les médias. Les données publiées sont **plus nuancées** : on trouve des **effets mesurables** sur humeur, dépression ou scores cognitifs dans certains essais ; mais aussi des **non-différences** sur la cognition globale dès qu’on durcit les contrôles (essais randomisés, méta-analyses). **Cet article assemble des chiffres tirés d’une sélection d’études** (voir tableau et références en bas de page) et les relie au **jeu d’échecs** comme loisir dense, social possible et durable : **apprendre**, **progresser** au classement ou tactiquement, **développer** une routine sans la confondre avec une ordonnance.
 
 > **L’essentiel (trois garde-fous)**
-> - Les **associations épidémiologiques** (risque relatif sur une cohorte) ne valent pas **causalité individuelle**.
-> - **Jeux de plateau ≠ médicament** : les effets dépendent de la dose (temps, semaines), du profil (MCI, Alzheimer diagnostiqué, senior bien portant) et du résultat mesuré (MMSE, humeur, qualité de vie).
-> - Les échecs restent un **levier réaliste** : engagement cognitif fort, feedback immédiat, cadre social ; trois facteurs souvent cités dans les politiques de **vieillissement actif**.
+> - Les **associations épidémiologiques** (probabilité relative sur une cohorte, souvent présentée comme un ratio) ne valent pas **causalité individuelle**.
+> - **Jeux de plateau ≠ médicament** : les effets dépendent de la dose (temps, semaines), du profil (MCI, diagnostic déjà posé, senior bien portant) et du résultat mesuré (MMSE, humeur, qualité de vie).
+> - Le **jeu d’échecs** reste un **levier réaliste** : engagement cognitif fort, feedback immédiat, cadre social ; trois facteurs souvent cités dans les politiques de **vieillissement actif** et de **santé** publique axée sur l’autonomie.
 
 Pour les mécanismes généraux (plasticité, imagerie), compléter avec [les bienfaits des échecs sur le cerveau](/blog/bienfaits-des-echecs-sur-le-cerveau/) et [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
 
@@ -103,20 +103,20 @@ Le tableau suivant résume **des ordres de grandeur publiés** ; à interpréter
 
 | Travail (référence courte) | Population / design | Chiffres qui comptent |
 | ----- | ----- | ----- |
-| **Wu et al., 2023** : cohorte ALSOP | 10 **318** adultes ≥ 70 ans (Australie), suivi démence sur **10 ans**, modèle de Cox ajusté | Activités de **littératie** adulte plus fréquentes : risque de démence **−11 %** (HR ajusté **0,89**, IC 95 % **0,85–0,93**). Activités mentales **actives** (jeux, cartes, **échecs**, mots croisés, puzzles) : **−9 %** (**HR 0,91**, **0,87–0,95**). Effets plus modestes pour loisirs artistiques ou activités mentales passives. |
-| **Li et al., 2023** : méta-analyse jeux et démence | **12** études, **877** personnes vivant avec une démence | Score MMSE : **SMD = 2,69** (IC 95 % **1,88–3,51**, *p* < 0,01) en faveur des interventions « jeu » vs contrôle. Dépression (échelle Cornell) : **SMD = −4,28** (**−6,96** à **−1,60**, *p* < 0,01). Qualité de vie : pas de différence significative globale (**SMD = 0,17**, *p* = 0,74). |
-| **Lin et al., 2015** : jeu de Go vs Alzheimer | **147** patients Alzheimer randomisés : contrôle, **1 h/j** ou **2 h/j** de Go, **6 mois** | Baisse des scores de dépression MADRS et HADS, hausse du fonctionnement (GAF, RAND-36) vs contrôle (*p* < 0,05 pour plusieurs contrastes). **BDNF sérique** : environ **17,3** ng/ml (contrôle) vs **24,0** et **28,9** ng/ml (groupes jeu ; *p* < 0,001 entre groupes). **Attention** : il s’agit du **weiqi** / Go, pas des échecs occidentaux. |
+| **Wu et al., 2023** : cohorte ALSOP | 10 **318** adultes ≥ 70 ans (Australie), suivi **10 ans** pour un diagnostic de type démence, modèle de Cox ajusté | Activités de **littératie** adulte plus fréquentes : **−11 %** sur l’incidence démentielle rapportée (HR ajusté **0,89**, IC 95 % **0,85–0,93**). Activités mentales **actives** (jeux, cartes, **jeu d’échecs**, mots croisés, puzzles) : **−9 %** (**HR 0,91**, **0,87–0,95**). Effets plus modestes pour loisirs artistiques ou activités mentales passives. |
+| **Li et al., 2023** : méta-analyse jeux et troubles neurocognitifs majeurs | **12** études, **877** personnes vivant avec un diagnostic démentiel | Score MMSE : **SMD = 2,69** (IC 95 % **1,88–3,51**, *p* < 0,01) en faveur des interventions « jeu » vs contrôle. Dépression (échelle Cornell) : **SMD = −4,28** (**−6,96** à **−1,60**, *p* < 0,01). Qualité de vie : pas de différence significative globale (**SMD = 0,17**, *p* = 0,74). |
+| **Lin et al., 2015** : jeu de Go vs maladie démentielle | **147** participants randomisés : contrôle, **1 h/j** ou **2 h/j** de Go, **6 mois** | Baisse des scores de dépression MADRS et HADS, hausse du fonctionnement (GAF, RAND-36) vs contrôle (*p* < 0,05 pour plusieurs contrastes). **BDNF sérique** : environ **17,3** ng/ml (contrôle) vs **24,0** et **28,9** ng/ml (groupes jeu ; *p* < 0,001 entre groupes). **Attention** : il s’agit du **weiqi** / Go, pas du **jeu d’échecs** occidental. |
 | **Pozzi et al., 2025** : COGniChESs (échecs & Go) | **69** participants (TCL ou plainte cognitive subjective), randomisation échecs / Go / liste d’attente, **12** séances hebdomadaires | Pas de gain net sur la cognition globale entre groupes ; **qualité de vie** améliorée chez les TCL au jeu (*p* = **0,002**) ; **dépression** diminuée chez les femmes du groupe jeu (*p* = **0,013**). Méta-analyse mise à jour : effet sur la dépression (**SMD −0,48**, *p* = **0,013**), pas sur la cognition globale. |
-| **Lillo-Crespo et al., 2019** : revue de type scoping | **21** articles sur échecs et démence | Synthèse qualitative : **peu de preuves directes chez les personnes déjà diagnostiquées** ; davantage d’arguments pour la **prévention** chez des non-diagnostiqués ; besoin d’études plus robustes. |
-| **Wu et al., 2024** : Mendelian randomization (jeux vidéo sur ordinateur) | Données GWAS, causalité génétique instrumentée | Association **causale suggérée** entre temps de jeu vidéo sur PC et **fonction cognitive** (β ≈ **0,80**, IC incluant des valeurs positives, *p* = **0,001**) ; **pas** d’association significative avec le **risque d’Alzheimer** ou le **BDNF** dans ce cadre méthodologique. |
+| **Lillo-Crespo et al., 2019** : revue de type scoping | **21** publications sur échecs et troubles démentiels | Synthèse qualitative : **peu de preuves directes chez les personnes déjà diagnostiquées** ; davantage d’arguments pour la **prévention** chez des non-diagnostiqués ; besoin d’études plus robustes. |
+| **Wu et al., 2024** : Mendelian randomization (jeux vidéo sur ordinateur) | Données GWAS, causalité génétique instrumentée | Association **causale suggérée** entre temps de jeu vidéo sur PC et **fonction cognitive** (β ≈ **0,80**, IC incluant des valeurs positives, *p* = **0,001**) ; **pas** d’association significative avec la **cible « maladie d’Alzheimer »** génétique ou le **BDNF** dans ce cadre méthodologique. |
 
 **Lecture honnête** : ces travaux **ne remplacent pas** la prévention cardiometabolique (pression, glycémie, sommeil, activité physique). Ils montrent surtout que **« jouer sérieusement »** peut **cohabiter** avec des gains psychologiques ou des scores mieux préservés ; selon le critère mesuré.
 
-## Risque de démence et « jeux » dans une très grande cohorte
+## Incidence démentielle et « jeux » dans une très grande cohorte
 
-La cohorte **ALSOP** suit des personnes âgées initialement peu ou pas cognitives compromises. Les hazard ratios **0,89** et **0,91** traduisent une **réduction relative modérée** du risque sur dix ans pour des habitudes régulières ; pas une division du risque par deux. Les modèles **ajustent** déjà éducation, statut socio-économique et santé : il reste une part d’**inobservables** (fragilité avant inclusion, biais de survie).
+La cohorte **ALSOP** suit des personnes âgées initialement peu ou pas cognitives compromises. Les hazard ratios **0,89** et **0,91** traduisent une **réduction relative modérée** de la probabilité de développer un syndrome démentiel sur dix ans pour des habitudes régulières ; pas une division par deux de cette probabilité. Les modèles **ajustent** déjà éducation, statut socio-économique et santé : il reste une part d’**inobservables** (fragilité avant inclusion, biais de survie).
 
-Point utile pour le lecteur d’échecs : la catégorie « **jeux, cartes, échecs, mots croisés** » est **regroupée** dans l’article ; **impossible** d’isoler le seul effet des échecs à partir de cette ligne de tableau.
+Point utile pour qui **joue** ou **joue aux échecs** en club : la catégorie « **jeux, cartes, échecs, mots croisés** » est **regroupée** dans la publication source ; **impossible** d’isoler le seul effet du **jeu d’échecs** à partir de cette ligne de tableau.
 
 ## Méta-analyse « game therapy » et scores MMSE
 
@@ -126,51 +126,51 @@ Message positif pour la vie quotidienne : les interventions ludiques structurée
 
 ## Essais ciblés : Go en Chine, échecs et Go en Italie
 
-### Go et maladie d’Alzheimer (Lin et al., 2015)
+### Go et diagnostic démentiel (Lin et al., 2015)
 
-Sur **147** patients, **six mois** de pratique quotidienne du Go versus absence de jeu : variations sur échelles de **dépression** et de **fonctionnement**, et écart marqué sur le **BDNF** ; une molécule souvent présentée comme liée à la neuroplasticité (à ne pas confondre avec un « traitement anti-Alzheimer »).
+Sur **147** patients, **six mois** de pratique quotidienne du Go versus absence de jeu : variations sur échelles de **dépression** et de **fonctionnement**, et écart marqué sur le **BDNF** ; une molécule souvent présentée comme liée à la neuroplasticité (à ne pas confondre avec un « traitement anti-neurodégénératif » générique).
 
-### Échecs, Go et plainte cognitive (COGniChESs, Pozzi et al.)
+### Jeu d’échecs, Go et plainte cognitive (COGniChESs, Pozzi et al.)
 
-Ici, le résultat **frappe par ce qu’il ne montre pas** : pas d’effet net robuste sur **la cognition globale** au bout du protocole, mais des effets sur **qualité de vie** et **humeur** chez certaines sous-populations.
+Ici, le résultat **frappe par ce qu’il ne montre pas** : pas d’effet net robuste sur **la cognition globale** au bout du protocole, mais des effets sur **qualité de vie** et **humeur** chez certaines sous-populations. Pour une **partie** sérieuse ou une analyse après coup, l’intérêt peut être davantage **humeur / ancrage social** que score cognitif brut.
 
-## Échecs comme facteur « protecteur » : revue exploratoire
+## Jeu d’échecs comme facteur « protecteur » : revue exploratoire
 
 **Lillo-Crespo et al.** passent en revue **21** publications : la littérature suggère surtout des **bénéfices cognitifs attendus** chez des personnes **non diagnostiquées**, et peu de données solides pour modifier l’évolution chez des patients déjà étiquetés « démence ». Conclusion limpide : **encore des essais randomisés**.
 
-## Jeux vidéo sur ordinateur, cognition et risque génétique d’Alzheimer
+## Jeux vidéo sur ordinateur, cognition et marqueurs génétiques liés à la maladie
 
-L’étude en **randomisation mendélienne** (**Wu et al., 2024**) sépare ce qui relève de la **fonction cognitive mesurée** de ce qui relève du **diagnostic de maladie**. Résultat utile pour calmer les slogans marketing : **passer du temps sur des jeux PC** n’implique pas mécaniquement une baisse du risque AD dans ce cadre statistique.
+L’étude en **randomisation mendélienne** (**Wu et al., 2024**) sépare ce qui relève de la **fonction cognitive mesurée** de ce qui relève du **diagnostic de maladie**. Résultat utile pour calmer les slogans marketing : **passer du temps sur des jeux PC** n’implique pas mécaniquement une baisse de la probabilité personnelle **AD** dans ce cadre statistique (l’abréviation AD désigne ici la maladie d’Alzheimer dans les bases génétiques).
 
 ## Chess-training pilote chez les personnes âgées
 
-**Cibeira et al., 2021** (pilote, *Geriatric Nursing*) explorent un programme d’**entraînement aux échecs** sur **12 semaines**, **deux séances de 60 minutes par semaine** ; dimensions utiles si tu veux calibrer une **vidéo intro ~30 s** ou un **module Remotion** sur la « dose » hebdomadaire.
+**Cibeira et al., 2021** (pilote, *Geriatric Nursing*) explorent un programme d’**entraînement au jeu d’échecs** sur **12 semaines**, **deux séances de 60 minutes par semaine** ; dimensions utiles si tu veux calibrer une **vidéo intro ~30 s** ou un **module Remotion** sur la « dose » hebdomadaire.
 
-## Cadre diagnostic : Alzheimer « clinico-biologique »
+## Cadre diagnostic : la maladie « clinico-biologique »
 
-La publication **Dubois et al., 2024** dans **JAMA Neurology** ne mesure pas l’effet des échecs : elle rappelle que poser le diagnostic d’Alzheimer **uniquement sur biomarqueurs** chez des personnes encore asymptomatiques pose des **problèmes éthiques et pronostiques**. Pour le lecteur grand public : **jouer aux échecs ne « désamyloïde » pas le cerveau** ; ce n’est pas l’enjeu.
+La publication **Dubois et al., 2024** dans **JAMA Neurology** ne mesure pas l’effet du **jeu d’échecs** : elle rappelle que poser le diagnostic **uniquement sur biomarqueurs** chez des personnes encore asymptomatiques pose des **problèmes éthiques et pronostiques**. Pour le lecteur grand public : **jouer aux échecs ne « désamyloïde » pas l’organe** qu’est le **cerveau** ; ce n’est pas l’enjeu du loisir.
 
 ## Sexes et déclin cognitif dans la maladie d’Alzheimer
 
 La revue **Laws et al., 2018** documente des **écarts femmes / hommes** sur plusieurs domaines cognitifs ; utile pour comprendre pourquoi certains essais (COGniChESs) trouvent des effets **différenciés par genre**. Ce n’est pas une fatalité au jeu : ce sont des **interactions biologiques et sociales**.
 
-## Épilepsie et Alzheimer (lien génétique)
+## Épilepsie et trouble neurodégénératif (lien génétique)
 
-**Fang et al., 2023** utilisent la **randomisation mendélienne** sur de très grands **N** génétiques : associations entre prédisposition à l’AD et certains **profils d’épilepsie**. Ce travail concerne surtout la **comorbidité** et le dépistage ; pas la partie échecs à proprement parler.
+**Fang et al., 2023** utilisent la **randomisation mendélienne** sur de très grands **N** génétiques : associations entre prédisposition à l’AD et certains **profils d’épilepsie**. Ce travail concerne surtout la **comorbidité** et le dépistage ; pas le loisir échiquéen à proprement parler.
 
 ### Comparaison rapide avec d’autres loisirs
 
 | Activité | Ce que les grandes cohortes ou méta-analyses suggèrent souvent |
 | -------- | --------------------------------------------------------------- |
-| **Lecture / écriture / cours** | Signal **plus régulier** sur le risque relatif dans ALSOP |
-| **Jeux de plateau + puzzles** | Signal **modéré** sur le risque relatif ; souvent regroupé statistiquement |
-| **Échecs seuls** | Rarement isolés dans les bases populationnelles ; on cite « échecs » à l’intérieur de catégories |
+| **Lecture / écriture / cours** | Signal **plus régulier** sur la probabilité relative dans ALSOP |
+| **Jeux de plateau + puzzles** | Signal **modéré** sur la même grandeur ; souvent regroupé statistiquement |
+| **Jeu d’échecs isolé** | Rarement isolé dans les bases populationnelles ; on cite « échecs » à l’intérieur de catégories |
 
 ## Stratégies concrètes (sans medicaliser le loisir)
 
-1. **Fixer une « dose » réaliste** : l’ordre de grandeur **deux fois 45–60 minutes par semaine** apparaît dans des pilotes échecs ; les essais Go utilisent **1–2 h par jour** ; niveau rarement tenable hors cadre thérapeutique encadré.
-2. **Mesurer le bon critère** : si ton objectif est **lien social**, privilégie club ou cours ; si c’est **humeur**, accepte que les gains cognitifs globaux puissent être **absents** sur des tests courts.
-3. **Alterner** puzzles tactiques et parties lentes pour limiter la fatigue et l’écran.
+1. **Fixer une « dose » réaliste** : l’ordre de grandeur **deux fois 45–60 minutes par semaine** apparaît dans des pilotes sur le **jeu d’échecs** ; les essais Go utilisent **1–2 h par jour** ; niveau rarement tenable hors cadre thérapeutique encadré.
+2. **Mesurer le bon critère** : si ton objectif est **lien social**, privilégie club ou cours ; si c’est **humeur**, accepte que les gains sur la **mémoire** de travail ou les scores globaux puissent être **absents** sur des tests courts.
+3. **Alterner** puzzles tactiques et **parties** lentes pour limiter la fatigue et l’écran ; **voir** aussi les **mots** et motifs comme des **réseaux** à entretenir.
 
 Pour les seniors : voir aussi [échecs et seniors](/blog/echecs-et-seniors/) ; ergonomie, fatigue visuelle, cadence.
 
@@ -184,7 +184,7 @@ Pour les seniors : voir aussi [échecs et seniors](/blog/echecs-et-seniors/) ; e
 6. **Routine santé** : le jeu comme **ancrage temporel** après la retraite.
 7. **Réduction possible de la rumination** lorsque le jeu est choisi et *flow*.
 8. **Self-efficacy** : progression objective (puzzles résolus).
-9. **Complémentarité avec marche ou équilibre** : le cerveau vieillit aussi via le corps.
+9. **Complémentarité avec marche ou équilibre** : la sphère cognitive vieillit aussi via le corps.
 10. **Plaisir** : variable souvent négligée dans les essais mais cruciale pour **tenir dans le temps**.
 
 ## Sources et références scientifiques
@@ -207,6 +207,6 @@ Pour les seniors : voir aussi [échecs et seniors](/blog/echecs-et-seniors/) ; e
 
 ## Aller plus loin sur le blog
 
-- Pilier **[Science](/fr/science/)**, articles [mémoire](/blog/echecs-et-memoire/) et [cerveau](/blog/bienfaits-des-echecs-sur-le-cerveau/).
+- Pilier **[rubrique Science](/fr/science/)**, pages [mémoire](/blog/echecs-et-memoire/) et [effets sur le cerveau](/blog/bienfaits-des-echecs-sur-le-cerveau/).
 
-Les échecs ne sont pas une équation fermée contre la maladie d’Alzheimer ; ce sont une **pratique longue**, parfois mesurable sur humeur ou engagement, rarement réductible à un seul **chiffre magique**. Dans un rapport honnête aux données, **c’est déjà une bonne défense**.
+Le **jeu d’échecs** n’est pas une équation fermée contre la **maladie d’Alzheimer** ; c’est une **pratique longue**, parfois mesurable sur humeur ou engagement, rarement réductible à un seul **chiffre magique**. Dans un rapport honnête aux données, **c’est déjà une bonne défense**.

@@ -484,6 +484,79 @@ main { display: block; padding-top: var(--navbar-h); }
 ::-webkit-scrollbar-track { background: var(--bg-warm); }
 ::-webkit-scrollbar-thumb { background: rgba(61,139,55,0.3); border-radius: 999px; }
 
+/* ─── TABLEAUX (articles markdown, toutes langues) ────────────── */
+.article-body table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.65rem 0;
+  font-size: 0.93rem;
+  line-height: 1.55;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background: var(--surface);
+}
+
+.article-body thead {
+  background: linear-gradient(
+    175deg,
+    color-mix(in srgb, var(--green) 14%, var(--surface-warm)) 0%,
+    var(--surface-warm) 100%
+  );
+}
+
+.article-body th {
+  padding: 0.72rem 0.95rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.86rem;
+  letter-spacing: 0.03em;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-strong);
+  vertical-align: bottom;
+}
+
+.article-body td {
+  padding: 0.68rem 0.95rem;
+  border-bottom: 1px solid var(--border-soft);
+  vertical-align: top;
+  color: var(--text-muted);
+}
+
+.article-body tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.article-body tbody tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--bg-warm) 65%, var(--surface));
+}
+
+[data-theme="dark"] .article-body thead {
+  background: linear-gradient(
+    175deg,
+    color-mix(in srgb, var(--green) 18%, var(--surface-warm)) 0%,
+    var(--surface-warm) 100%
+  );
+}
+
+[data-theme="dark"] .article-body tbody tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--bg-warm) 40%, var(--surface));
+}
+
+@media (max-width: 720px) {
+  .article-body table {
+    font-size: 0.82rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .article-body th,
+  .article-body td {
+    padding: 0.52rem 0.62rem;
+  }
+}
+
 /* ─── KATEX (markdown math) : débordements sur mobile ─────────── */
 .katex-display {
   overflow-x: auto;
