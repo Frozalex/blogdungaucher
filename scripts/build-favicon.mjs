@@ -1,8 +1,8 @@
 /**
- * Reconstruit favicon.svg à partir des 24 paths propres de logo.svg :
+ * Reconstruit favicon.svg à partir des paths de logo.svg :
  * - ViewBox carré (868×868) avec le logo centré horizontalement
- * - Fond adaptatif light/dark via CSS media query
- * - Régénère aussi les PNG 16, 32, 180, 192 et 512px
+ * - Fond transparent ; couleur du glyphe adaptative light/dark (SVG uniquement)
+ * - PNG : glyphe sombre sur fond transparent
  */
 
 import { readFileSync, writeFileSync } from "fs";
@@ -30,8 +30,6 @@ console.log(`Paths récupérés depuis logo.svg : ${paths.length}`);
 const PAD = 121.5;
 const SQ  = 868;
 const VB  = `${-PAD} 0 ${SQ} ${SQ}`;
-// Coins arrondis du fond : ~8% du côté = 69px sur 868
-const RX  = 69;
 
 // ── 3. Construire les éléments path avec classes CSS ──────────
 const pathsHtml = paths
@@ -47,14 +45,11 @@ const mirroredPathsHtml = mirrorTransform
 // ── 4. Écrire favicon.svg (adaptatif dark/light) ──────────────
 const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${VB}">
   <style>
-    .bg { fill: #fcfaf6; }
     .fg { fill: #1e1e1e; }
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #1e1e1b; }
       .fg { fill: #f0ebe0; }
     }
   </style>
-  <rect class="bg" x="${-PAD}" y="0" width="${SQ}" height="${SQ}" rx="${RX}"/>
 ${mirroredPathsHtml}
 </svg>
 `;
@@ -71,9 +66,7 @@ const mirroredSharpPaths = mirrorTransform
   : sharpPaths;
 
 function squareSvg(px) {
-  const scale = px / SQ;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${px}" height="${px}" viewBox="${VB}">
-  <rect fill="#fcfaf6" x="${-PAD}" y="0" width="${SQ}" height="${SQ}" rx="${RX}"/>
 ${mirroredSharpPaths}
 </svg>`;
 }
@@ -97,14 +90,11 @@ console.log("✓ icon-512x512.png");
 // Mettre à jour aussi favicon-32x32.svg (version statique sans media query)
 const staticSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${VB}" width="32" height="32">
   <style>
-    .bg { fill: #fcfaf6; }
     .fg { fill: #1e1e1e; }
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #1e1e1b; }
       .fg { fill: #f0ebe0; }
     }
   </style>
-  <rect class="bg" x="${-PAD}" y="0" width="${SQ}" height="${SQ}" rx="${RX}"/>
 ${mirroredPathsHtml}
 </svg>
 `;
