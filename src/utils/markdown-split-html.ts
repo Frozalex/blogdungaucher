@@ -1,8 +1,8 @@
 import GithubSlugger from "github-slugger";
+import { toHtml } from "hast-util-to-html";
 import { toString } from "mdast-util-to-string";
 import type { Root as MdastRoot, RootContent } from "mdast";
 import rehypeKatex from "rehype-katex";
-import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
@@ -46,18 +46,16 @@ export async function splitMarkdownAtH2Slug(
     children: tree.children.slice(hitIndex + 1) as RootContent[],
   };
 
-  const processor = unified()
-    .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeKatex)
-    .use(rehypeStringify);
-
-  const [beforeFile, afterFile] = await Promise.all([
-    processor.process(before),
-    processor.process(after),
-  ]);
-
-  return {
-    beforeHtml: String(beforeFile),
-    afterHtml: String(afterFile),
+  /** `unified().process()` attend du texte (parseur requis) ; ici on part d’un mdast → `run()` puis HTML. */
+  const mdastToHtml = async (root: MdastRoot) => {
+    const hast = await unified()
+      .use(remarkRehype, { allowDangerousHtml: true })
+      .use(rehypeKatex)
+      .run(root);
+    return toHtml(hast);
   };
+
+  const [beforeHtml, afterHtml] = await Promise.all([mdastToHtml(before), mdastToHtml(after)]);
+
+  return { beforeHtml, afterHtml };
 }
