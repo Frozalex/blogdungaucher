@@ -221,7 +221,7 @@ Les données populationnelles vont plutôt vers des **associations** entre activ
 
 Tu as déjà eu l'impression de « reconnaître » une position sans pouvoir l'expliquer ? C'est souvent un chunk qui s'est activé. Si cet article t'a aidé à cadrer ton entraînement, garde une seule résolution : **une analyse de plus par semaine**, avec la leçon écrite en une phrase.
 
-**Après lecture :** cette semaine, **une** partie analysée à froid avec la question « quel était mon **premier** coup envisagé ? » — c’est le levier le plus documenté pour caler la mémoire de domaine.
+**Après lecture :** cette semaine, **une** partie analysée à froid avec la question « quel était mon **premier** coup envisagé ? », c’est le levier le plus documenté pour caler la mémoire de domaine.
 
 ---
 

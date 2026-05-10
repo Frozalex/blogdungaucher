@@ -170,7 +170,7 @@ Si le syndrome de l'imposteur déborde sur d'autres domaines de ta vie - travail
 
 ---
 
-**Après lecture :** la prochaine fois que tu gagnes une partie « imméritée », note **une** décision précise dont tu es l’auteur (coup, temps, plan) — pour ancrer la victoire dans un fait vérifiable.
+**Après lecture :** la prochaine fois que tu gagnes une partie « imméritée », note **une** décision précise dont tu es l’auteur (coup, temps, plan), pour ancrer la victoire dans un fait vérifiable.
 
 ---
 

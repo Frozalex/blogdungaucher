@@ -238,7 +238,7 @@ Le fait que la correction $K(r_n - p_n)$ est de signe opposé à l'erreur $(u_n 
 **5. « Pourquoi dit-on que minimax est en $O(b^d)$ ? »**
 À chaque niveau, le nombre de nœuds est multiplié par $b$. Après $d$ niveaux : $b^d$ nœuds ; croissance exponentielle au programme.
 
-**Après lecture :** filme-toi en résolvant **un** calcul Elo complet au tableau (données fictives) en moins de quatre minutes — glisse si tu bloques, pas si tu te trompes.
+**Après lecture :** filme-toi en résolvant **un** calcul Elo complet au tableau (données fictives) en moins de quatre minutes ; glisse si tu bloques, pas si tu te trompes.
 
 ---
 

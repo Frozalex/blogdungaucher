@@ -94,7 +94,7 @@ La transformation du syndrome de l'imposteur ne se fait pas en un jour, mais ell
 
 **Chercher un feedback objectif.** Demander à un entraîneur ou un joueur plus fort une évaluation honnête de ton niveau. Non pas pour être rassuré (le syndrome de l'imposteur résiste aux reassurances), mais pour confronter tes croyances à une évaluation externe structurée.
 
-**Après lecture :** après **trois** parties, écris **une** décision interne et attribuable (temps, plan, tactique) pour chaque victoire — pas « j’ai eu de la chance ».
+**Après lecture :** après **trois** parties, écris **une** décision interne et attribuable (temps, plan, tactique) pour chaque victoire, pas « j’ai eu de la chance ».
 
 ---
 

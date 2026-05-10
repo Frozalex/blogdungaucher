@@ -43,6 +43,9 @@ export const translations = {
       recentEyebrow: "Récents",
       latestTitle: "Derniers articles",
       seeAll: "Tout voir →",
+      signatureTagline:
+        "Science du jeu, esprit compétitif, échecs dans le monde réel.",
+      quickEyebrow: "Raccourcis",
     },
     blog: {
       eyebrow: "Bibliothèque",
@@ -149,11 +152,14 @@ export const translations = {
       proof3: "Rigorous approach",
       editorialNote:
         "Here, we don't promise magical progress in 7 days. We offer solid ideas, concrete examples and analyses that you can apply to your practice, whether you're a club player, a competitor, or simply passionate about the game.",
-      sectionsEyebrow: "3 sections",
+      sectionsEyebrow: "4 sections",
       sectionsTitle: "What we cover here",
       recentEyebrow: "Recent",
       latestTitle: "Latest articles",
       seeAll: "See all →",
+      signatureTagline:
+        "Game science, competitive mindset, chess in the real world.",
+      quickEyebrow: "Shortcuts",
     },
     blog: {
       eyebrow: "Library",

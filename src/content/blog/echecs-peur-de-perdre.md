@@ -102,7 +102,7 @@ Son pattern te dit quelles situations sont chargées symboliquement pour toi. Ba
 
 La peur de perdre bien gérée n'est pas éliminée : elle est transformée en attention accrue et en motivation supplémentaire. La différence entre un joueur paralysé par la peur et un joueur porté par elle est dans la façon dont il a appris à l'utiliser.
 
-**Après lecture :** avant ta prochaine partie « à enjeux », écris **un objectif de processus** (ex. tenir un plan dix coups) distinct du résultat — c’est la variable que tu contrôles.
+**Après lecture :** avant ta prochaine partie « à enjeux », écris **un objectif de processus** (ex. tenir un plan dix coups) distinct du résultat : c’est la variable que tu contrôles.
 
 ---
 

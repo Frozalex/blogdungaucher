@@ -193,7 +193,7 @@ Pour les seniors : voir aussi [échecs et seniors](/blog/echecs-et-seniors/) ; e
 9. **Complémentarité avec marche ou équilibre** : la sphère cognitive vieillit aussi via le corps.
 10. **Plaisir** : variable souvent négligée dans les essais mais cruciale pour **tenir dans le temps**.
 
-**Après lecture :** choisis **un** critère pour les trois prochains mois (social, humeur ou stimulation cognitive) et une « dose » réaliste du type **deux fois 45 minutes** par semaine avec une partie lente analysée — pas trois objectifs à la fois.
+**Après lecture :** choisis **un** critère pour les trois prochains mois (social, humeur ou stimulation cognitive) et une « dose » réaliste du type **deux fois 45 minutes** par semaine avec une partie lente analysée. Pas trois objectifs à la fois.
 
 ## Sources et références scientifiques
 

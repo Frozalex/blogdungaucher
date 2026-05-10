@@ -1,0 +1,723 @@
+---
+import AdBanner from "./AdBanner.astro";
+import ArticleCard from "./ArticleCard.astro";
+import { categoryMap, categorySlugs, siteConfig } from "../data/site";
+import { swapLangPrefix } from "../utils/lang-paths";
+import type { BlogEntry } from "../utils/blog";
+
+interface Props {
+  lang: "fr" | "en" | "de";
+  latestPosts: BlogEntry[];
+}
+
+const { lang, latestPosts } = Astro.props;
+const sectionsId = lang === "en" ? "sections" : "rubriques";
+const blogHref = `/${lang}/blog/`;
+const grandOralHref = `/${lang}/grand-oral/`;
+const aboutHref = `/${lang}/about/`;
+const analysesHref = `/${lang}/analyses/`;
+const showAnalyses = siteConfig.features.analysesAvailable;
+
+type HomeCopy = {
+  siteName: string;
+  signatureTagline: string;
+  eyebrow: string;
+  titleHtml: string;
+  lead: string;
+  startReading: string;
+  seeSections: string;
+  proofListLabel: string;
+  proof1: string;
+  proof2: string;
+  proof3: string;
+  quickNavLabel: string;
+  quickEyebrow: string;
+  blogLink: string;
+  grandOralLink: string;
+  analysesLink: string;
+  aboutLink: string;
+  editorialNote: string;
+  sectionsEyebrow: string;
+  sectionsTitle: string;
+  recentEyebrow: string;
+  latestTitle: string;
+  seeAll: string;
+};
+
+const homeByLang: Record<typeof lang, HomeCopy> = {
+  fr: {
+    siteName: "Blog d'un Gaucher",
+    signatureTagline: "Science du jeu, esprit compétitif, échecs dans le monde réel.",
+    eyebrow: "Éditorial indépendant",
+    titleHtml:
+      'Comprendre les <span class="hero__accent display-serif">échecs</span><br/>sans simplifier le jeu.',
+    lead:
+      "Chaque semaine, des analyses claires sur la science du jeu, le mental compétitif et l'impact des échecs dans la société, avec une approche humaine et exigeante.",
+    startReading: "Commencer la lecture",
+    seeSections: "Voir les rubriques",
+    proofListLabel: "Repères éditoriaux",
+    proof1: "Articles de fond",
+    proof2: "Ton accessible",
+    proof3: "Approche rigoureuse",
+    quickNavLabel: "Raccourcis",
+    quickEyebrow: "Raccourcis",
+    blogLink: "Tous les articles",
+    grandOralLink: "Grand oral",
+    analysesLink: "Analyse Stockfish",
+    aboutLink: "À propos",
+    editorialNote:
+      "Ici, on ne promet pas des progrès magiques en 7 jours. On propose des idées solides, des exemples concrets et des analyses que tu peux appliquer à ta pratique, que tu sois joueur de club, compétiteur ou simple passionné.",
+    sectionsEyebrow: "4 rubriques",
+    sectionsTitle: "Ce dont on parle ici",
+    recentEyebrow: "Récents",
+    latestTitle: "Derniers articles",
+    seeAll: "Tout voir →",
+  },
+  en: {
+    siteName: "A Left-Hander's Blog",
+    signatureTagline: "Game science, competitive mindset, chess in the real world.",
+    eyebrow: "Independent editorial",
+    titleHtml:
+      'Understanding <span class="hero__accent display-serif">chess</span><br/>without oversimplifying.',
+    lead:
+      "Each week, clear analyses on the science of the game, the competitive mindset and the impact of chess on society, with a human and demanding approach.",
+    startReading: "Start reading",
+    seeSections: "See sections",
+    proofListLabel: "Editorial markers",
+    proof1: "In-depth articles",
+    proof2: "Accessible tone",
+    proof3: "Rigorous approach",
+    quickNavLabel: "Shortcuts",
+    quickEyebrow: "Shortcuts",
+    blogLink: "All articles",
+    grandOralLink: "Grand oral",
+    analysesLink: "Stockfish Analysis",
+    aboutLink: "About",
+    editorialNote:
+      "Here, we don't promise magical progress in 7 days. We offer solid ideas, concrete examples and analyses that you can apply to your practice, whether you're a club player, a competitor, or simply passionate about the game.",
+    sectionsEyebrow: "4 sections",
+    sectionsTitle: "What we cover here",
+    recentEyebrow: "Recent",
+    latestTitle: "Latest articles",
+    seeAll: "See all →",
+  },
+  de: {
+    siteName: "Blog d'un Gaucher",
+    signatureTagline: "Spielwissenschaft, Wettkampfgeist, Schach in der realen Welt.",
+    eyebrow: "Unabhängiges Editorial",
+    titleHtml:
+      '<span class="hero__accent display-serif">Schach</span> verstehen<br/>ohne das Spiel zu vereinfachen.',
+    lead:
+      "Jede Woche klare Analysen zur Spielwissenschaft, zum Wettkampfgeist und zur Rolle des Schachs in der Gesellschaft, mit einem menschlichen und anspruchsvollen Ansatz.",
+    startReading: "Zur Lektüre",
+    seeSections: "Rubriken ansehen",
+    proofListLabel: "Redaktionelle Merkmale",
+    proof1: "Hintergrundartikel",
+    proof2: "Zugänglicher Ton",
+    proof3: "Rigoroser Ansatz",
+    quickNavLabel: "Schnellzugriff",
+    quickEyebrow: "Schnellzugriff",
+    blogLink: "Alle Artikel",
+    grandOralLink: "Grand oral",
+    analysesLink: "Stockfish-Analyse",
+    aboutLink: "Über die Seite",
+    editorialNote:
+      "Hier versprechen wir keinen magischen Fortschritt in 7 Tagen. Wir bieten solide Ideen, konkrete Beispiele und Analysen, die du in deine Praxis übernehmen kannst, egal ob Vereinsspieler, Turnierspieler oder begeisterter Amateur.",
+    sectionsEyebrow: "4 Rubriken",
+    sectionsTitle: "Darum geht es hier",
+    recentEyebrow: "Neu",
+    latestTitle: "Neueste Artikel",
+    seeAll: "Alle anzeigen →",
+  },
+};
+
+const c = homeByLang[lang];
+---
+
+<div class="home-landing">
+  <section class="hero" aria-labelledby="home-hero-heading">
+    <div class="container hero__layout">
+      <div class="hero__panel reveal scale-in">
+        <div class="hero__panel-inner">
+          <div class="hero__masthead">
+            <span class="hero__masthead-accent" aria-hidden="true"></span>
+            <p class="hero__masthead-name display-serif" data-t="nav.siteName">
+              {c.siteName}
+            </p>
+          </div>
+          <p class="hero__tagline" data-t="home.signatureTagline">
+            {c.signatureTagline}
+          </p>
+
+          <span class="eyebrow hero__eyebrow fade-up" style="--motion-delay: 40ms;" data-t="home.eyebrow">
+            {c.eyebrow}
+          </span>
+
+          <h1
+            id="home-hero-heading"
+            class="hero__title fade-up"
+            style="--motion-delay: 120ms;"
+            data-t-html="home.titleHtml"
+            set:html={c.titleHtml}
+          ></h1>
+
+          <p class="hero__lead fade-up" style="--motion-delay: 190ms;" data-t="home.lead">
+            {c.lead}
+          </p>
+
+          <div class="hero__actions fade-up" style="--motion-delay: 250ms;">
+            <a href={blogHref} class="button-primary" data-t="home.startReading">
+              {c.startReading}
+            </a>
+            <a href={`#${sectionsId}`} class="button-secondary" data-t="home.seeSections">
+              {c.seeSections}
+            </a>
+          </div>
+
+          <ul
+            class="hero-proof fade-up"
+            style="--motion-delay: 320ms;"
+            aria-label={c.proofListLabel}
+          >
+            <li data-t="home.proof1">{c.proof1}</li>
+            <li data-t="home.proof2">{c.proof2}</li>
+            <li data-t="home.proof3">{c.proof3}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="home-quick container reveal" aria-label={c.quickNavLabel}>
+    <span class="home-quick__label" data-t="home.quickEyebrow">{c.quickEyebrow}</span>
+    <ul class="home-quick__list">
+      <li>
+        <a href={blogHref} class="home-quick__link" data-t="blog.title">
+          {c.blogLink}
+        </a>
+      </li>
+      <li>
+        <a href={grandOralHref} class="home-quick__link" data-t="navLinks.grandOral">
+          {c.grandOralLink}
+        </a>
+      </li>
+      {showAnalyses && (
+        <li>
+          <a href={analysesHref} class="home-quick__link" data-t="categories.analyses.shortLabel">
+            {c.analysesLink}
+          </a>
+        </li>
+      )}
+      <li>
+        <a href={aboutHref} class="home-quick__link" data-t="navLinks.about">
+          {c.aboutLink}
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="editorial-intro">
+    <div class="container">
+      <div class="editorial-note editorial-note--home reveal scale-in" data-t="home.editorialNote">
+        {c.editorialNote}
+      </div>
+    </div>
+  </section>
+
+  <section class="pillars" id={sectionsId}>
+    <div class="container">
+      <span class="eyebrow reveal" data-t="home.sectionsEyebrow">
+        {c.sectionsEyebrow}
+      </span>
+      <h2 class="section-title reveal" data-t="home.sectionsTitle">
+        {c.sectionsTitle}
+      </h2>
+      <hr class="section-divider reveal" />
+      <div class="pillar-grid reveal-group">
+        {
+          categorySlugs.map((slug) => {
+            const cat = categoryMap[slug];
+            const href = lang === "fr" ? cat.href : swapLangPrefix(cat.href, lang);
+            return (
+              <a href={href} class="pillar" style={`--p:${cat.accent};`}>
+                <span class="pillar__dot"></span>
+                <div>
+                  <span class="pillar__kicker" data-t={`categories.${slug}.shortLabel`}>
+                    {cat.shortLabel}
+                  </span>
+                  <strong data-t={`categories.${slug}.label`}>{cat.label}</strong>
+                  <p data-t={`categories.${slug}.tagline`}>{cat.tagline}</p>
+                </div>
+                <svg
+                  class="pillar__arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <AdBanner format="leaderboard" />
+  </div>
+
+  <section class="latest">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-head__titles">
+          <span class="eyebrow" data-t="home.recentEyebrow">
+            {c.recentEyebrow}
+          </span>
+          <h2 class="section-title" data-t="home.latestTitle">
+            {c.latestTitle}
+          </h2>
+        </div>
+        <a href={blogHref} class="see-all link-underline" data-t="home.seeAll">
+          {c.seeAll}
+        </a>
+      </div>
+      <div class="latest-grid reveal-group">
+        {latestPosts.map((post, i) => <ArticleCard post={post} featured={i === 0} lang={lang} />)}
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+  .home-landing {
+    --home-panel-bg: color-mix(in srgb, var(--surface) 82%, transparent);
+  }
+
+  [data-theme="dark"] .home-landing {
+    --home-panel-bg: color-mix(in srgb, var(--surface) 72%, transparent);
+  }
+
+  .hero {
+    position: relative;
+    padding: 4.75rem 0 0.5rem;
+  }
+
+  .hero .container,
+  .editorial-intro .container,
+  .pillars .container,
+  .latest .container,
+  .home-quick.container {
+    width: min(1280px, calc(100% - 2rem));
+    margin-inline: auto;
+  }
+
+  .hero__layout {
+    display: flex;
+    justify-content: center;
+    max-width: 52rem;
+    margin-inline: auto;
+  }
+
+  .hero__panel {
+    width: 100%;
+    border-radius: var(--radius-xl);
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--green) 35%, var(--border-soft)),
+      color-mix(in srgb, var(--green) 12%, transparent),
+      color-mix(in srgb, var(--border-soft) 80%, transparent)
+    );
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+  }
+
+  .hero__panel-inner {
+    border-radius: calc(var(--radius-xl) - 1px);
+    padding: clamp(1.75rem, 4vw, 2.65rem) clamp(1.35rem, 3.5vw, 2.25rem);
+    background: var(--home-panel-bg);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero__panel-inner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    background: radial-gradient(ellipse 85% 55% at 50% -10%, color-mix(in srgb, var(--green) 22%, transparent), transparent 68%);
+  }
+
+  .hero__masthead,
+  .hero__tagline,
+  .hero__eyebrow,
+  .hero__title,
+  .hero__lead,
+  .hero__actions,
+  .hero-proof {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero__masthead {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero__masthead-accent {
+    width: 4px;
+    height: 2.1rem;
+    border-radius: 2px;
+    background: linear-gradient(180deg, var(--green), color-mix(in srgb, var(--green) 45%, var(--text-dim)));
+    box-shadow: 0 0 20px color-mix(in srgb, var(--green) 40%, transparent);
+  }
+
+  .hero__masthead-name {
+    margin: 0;
+    font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+  }
+
+  .hero__tagline {
+    margin: 0 0 1.25rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  .hero__eyebrow {
+    margin-bottom: 0.35rem;
+  }
+
+  .hero__title {
+    position: relative;
+    font-size: clamp(2.25rem, 5.8vw, 4rem);
+    margin: 0.65rem 0 1rem;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .hero__title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: min(420px, 88%);
+    height: 140px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(closest-side, color-mix(in srgb, var(--green) 16%, transparent) 0%, transparent 72%);
+    filter: blur(12px);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .hero__accent {
+    color: var(--green);
+    font-size: 1.06em;
+  }
+
+  .hero__lead {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 40rem;
+    margin-inline: auto;
+    line-height: 1.75;
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+
+  .hero-proof {
+    list-style: none;
+    padding: 0;
+    margin: 1.35rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    justify-content: center;
+  }
+
+  .hero-proof li {
+    padding: 0.32rem 0.7rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--green-border);
+    background: color-mix(in srgb, var(--green-light) 65%, var(--surface));
+    color: var(--text-muted);
+    font-size: 0.76rem;
+    font-weight: 600;
+  }
+
+  .home-quick {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem 1.1rem;
+    padding: 1.15rem 0 0.75rem;
+    justify-content: center;
+  }
+
+  .home-quick__label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  .home-quick__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    justify-content: center;
+  }
+
+  .home-quick__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--surface-warm);
+    border: 1px solid var(--border-soft);
+    transition:
+      color 0.18s ease,
+      border-color 0.18s ease,
+      background 0.18s ease,
+      transform 0.22s var(--ease-spring);
+  }
+
+  .home-quick__link:hover {
+    color: var(--green-hover);
+    border-color: var(--green-border);
+    background: color-mix(in srgb, var(--green-light) 50%, var(--surface));
+    transform: translateY(-2px);
+  }
+
+  .editorial-intro {
+    padding: 1rem 0 1.75rem;
+  }
+
+  .editorial-intro .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .editorial-note--home {
+    max-width: 44rem;
+    border-left: 3px solid var(--green);
+    padding-left: 1.15rem;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--green-light) 50%, var(--surface)), var(--surface));
+  }
+
+  .pillars {
+    padding: 0.6rem 0 3.25rem;
+  }
+
+  .pillars .container {
+    text-align: center;
+  }
+
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+    gap: 0.7rem;
+    margin-top: 1.35rem;
+    align-items: stretch;
+  }
+
+  .pillar {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1.15rem 1.15rem;
+    border-radius: var(--radius-lg);
+    border: 1.5px solid var(--border-soft);
+    background: color-mix(in srgb, var(--surface) 92%, transparent);
+    transition:
+      transform 240ms var(--ease-spring),
+      border-color 180ms ease,
+      box-shadow 240ms var(--ease-out);
+    text-align: left;
+  }
+
+  .pillar:hover {
+    transform: translateY(-3px);
+    border-color: var(--p);
+    box-shadow: var(--shadow-md);
+  }
+
+  .pillar__dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--p);
+    flex-shrink: 0;
+    margin-top: 0.35rem;
+    transition: transform 240ms var(--ease-spring);
+  }
+
+  .pillar:hover .pillar__dot {
+    transform: scale(1.45);
+  }
+
+  .pillar > div {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .pillar__kicker {
+    display: inline-flex;
+    margin-bottom: 0.2rem;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    font-weight: 700;
+  }
+
+  .pillar strong {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 0.18rem;
+  }
+
+  .pillar p {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .pillar__arrow {
+    color: var(--text-dim);
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    transition:
+      color 180ms ease,
+      transform 240ms var(--ease-spring);
+  }
+
+  .pillar:hover .pillar__arrow {
+    color: var(--p);
+    transform: translateX(3px);
+  }
+
+  .latest {
+    padding: 1.35rem 0 5rem;
+  }
+
+  .latest .container {
+    text-align: center;
+  }
+
+  .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.35rem;
+    max-width: 72rem;
+    margin-inline: auto;
+  }
+
+  .section-head__titles {
+    text-align: left;
+  }
+
+  .section-head .section-title {
+    margin-bottom: 0;
+  }
+
+  .see-all {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: color 160ms ease;
+  }
+
+  .see-all:hover {
+    color: var(--green);
+  }
+
+  .latest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.85rem;
+    text-align: left;
+    max-width: 72rem;
+    margin-inline: auto;
+  }
+
+  .latest-grid > :first-child {
+    grid-column: 1 / -1;
+  }
+
+  @media (max-width: 900px) {
+    .latest-grid {
+      grid-template-columns: 1fr;
+    }
+    .latest-grid > :first-child {
+      grid-column: auto;
+    }
+    .section-head {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .section-head__titles {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .hero {
+      padding: 3.25rem 0 0.25rem;
+    }
+    .hero .container,
+    .editorial-intro .container,
+    .pillars .container,
+    .latest .container,
+    .home-quick.container {
+      width: min(1280px, calc(100% - 1.25rem));
+    }
+    .hero-proof li {
+      font-size: 0.72rem;
+    }
+    .home-quick {
+      flex-direction: column;
+    }
+  }
+</style>

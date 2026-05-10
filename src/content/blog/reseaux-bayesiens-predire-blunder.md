@@ -112,7 +112,7 @@ Même sans construire formellement un réseau bayésien, les principes bayésien
 
 **Résister à la symétrie.** Le fait que tu sois en bonne forme ne signifie pas que l'adversaire l'est aussi. La mise à jour bayésienne sur son état est indépendante de la tienne.
 
-**Après lecture :** pendant une partie en ligne, note **trois indices** (pendule adverse, complexité, hors zone de confort) ; à la fin, vérifie si le blunder adverse coïncide avec ce tableau — sans « confirmer » n’importe quoi.
+**Après lecture :** pendant une partie en ligne, note **trois indices** (pendule adverse, complexité, hors zone de confort) ; à la fin, vérifie si le blunder adverse coïncide avec ce tableau, sans « confirmer » n’importe quoi.
 
 ---
 

@@ -90,7 +90,7 @@ La première étape est la reconnaissance honnête du pattern. Analyser ses part
 
 **Accepter que la victoire puisse faire peur.** Beaucoup de joueurs honteux de cette réaction la cachent et ne peuvent donc pas travailler dessus. La reconnaître, sans jugement, est la première condition du changement.
 
-**Après lecture :** entraîne-toi à **convertir** trois fins de partie gagnantes cette semaine depuis des positions « sans suspense » — pour désensibiliser le passage à la victoire.
+**Après lecture :** entraîne-toi à **convertir** trois fins de partie gagnantes cette semaine depuis des positions « sans suspense », pour désensibiliser le passage à la victoire.
 
 ---
 

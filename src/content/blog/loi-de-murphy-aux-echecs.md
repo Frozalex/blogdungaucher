@@ -86,7 +86,7 @@ Si tu gardes Murphy comme métaphore, elle peut être utile : **les systèmes qu
 
 Ce n'est pas le destin. C'est la répétition.
 
-**Après lecture :** prends une défaite où tu as invoqué « Murphy » et réécris-la en **une phrase procédurale** (temps, fatigue, préparation, format de jeu). Si la même cause revient trois fois, c’est ton levier d’entraînement — pas une malédiction.
+**Après lecture :** prends une défaite où tu as invoqué « Murphy » et réécris-la en **une phrase procédurale** (temps, fatigue, préparation, format de jeu). Si la même cause revient trois fois, c’est ton levier d’entraînement, pas une malédiction.
 
 ---
 

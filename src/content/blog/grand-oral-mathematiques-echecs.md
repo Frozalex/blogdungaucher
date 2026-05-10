@@ -428,7 +428,7 @@ Les meilleurs Grands Oraux ne sont pas ceux où le candidat en sait le plus. Ce 
 
 Et si l'on te demande pourquoi tu as choisi les échecs, la réponse honnête et la plus forte est aussi la plus simple : parce que c'est un jeu où l'on pense à voix haute. Et les mathématiques aussi.
 
-**Après lecture :** fais une **répétition hybride** : cinq minutes maths au tableau (Elo ou combinatoire), cinq minutes oral sur le lien avec une idée NSI (minimax ou données) — sans support, comme au jury.
+**Après lecture :** fais une **répétition hybride** : cinq minutes maths au tableau (Elo ou combinatoire), cinq minutes oral sur le lien avec une idée NSI (minimax ou données), sans support, comme au jury.
 
 ---
 

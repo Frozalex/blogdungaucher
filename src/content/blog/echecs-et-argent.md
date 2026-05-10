@@ -174,7 +174,7 @@ La question est régulièrement posée. Le Comité International Olympique a rec
 
 Les échecs ont produit certains des esprits les plus fascinants de l'histoire sportive et intellectuelle ; le **modèle économique** des joueurs hors tête de classe reste fragile. Les leviers réalistes côté joueur : **enseignement** structuré, **contenu** à valeur ajoutée (cours, livres, vidéo), **contrats plateforme** pour une minorité. Une « industrie » unique qui vivrait tout le monde du jeu reste un scénario long terme, pas une bascule imminente.
 
-**Après lecture :** si tu vises une carrière semi-pro, **modélise trois flux** (cours, contenu, tournois) sur une feuille — pas seulement le prize money du maître que tu suis en stream.
+**Après lecture :** si tu vises une carrière semi-pro, **modélise trois flux** (cours, contenu, tournois) sur une feuille, pas seulement le prize money du maître que tu suis en stream.
 
 ---
 

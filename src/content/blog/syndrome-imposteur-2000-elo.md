@@ -96,7 +96,7 @@ Plus fondamentalement, une certaine dose de doute sur ses propres compétences e
 
 Le joueur idéal à 2000 Elo est celui qui sait qu'il a encore beaucoup à apprendre (ce qui est vrai), qui reconnaît que son niveau actuel est une réalisation réelle (ce qui est aussi vrai), et qui joue chaque partie pour progresser plutôt que pour confirmer ou défendre un chiffre.
 
-**Après lecture :** joue **deux** tournois ou pools où l’objectif affiché est « tester des idées », pas « défendre le 2000 » — l’exposition sans enjeu de confirmation est le traitement.
+**Après lecture :** joue **deux** tournois ou pools où l’objectif affiché est « tester des idées », pas « défendre le 2000 » : l’exposition sans enjeu de confirmation est le traitement.
 
 ---
 
