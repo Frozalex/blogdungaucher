@@ -22,3 +22,7 @@ _do_push.bat
 _do-push-log.cmd
 _status_short.tmp
 
+build-output.txt
+_git_cmd.txt
+_commit.ps1
+
