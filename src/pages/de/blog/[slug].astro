@@ -32,6 +32,11 @@ import {
   getPostUrlDe,
 } from "../../../utils/blog";
 import { swapLangPrefix } from "../../../utils/lang-paths";
+import {
+  extractArticleHeadings,
+  renderMarkdownToArticleHtml,
+  stripFaqH2Section,
+} from "../../../utils/markdown-strip-faq";
 import { splitMarkdownAtH2Slug } from "../../../utils/markdown-split-html";
 import { isPublicAssetAvailable } from "../../../utils/public-asset";
 import { buildVideoPostProps } from "../../../utils/remotion-post-props";
@@ -42,8 +47,11 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content, headings } = await render(post);
 const category = categoryMap[post.data.category];
+
+const faqs = post.data.faq ?? [];
+const stripInlineFaq = faqs.length > 0;
+const mdForArticle = stripInlineFaq ? stripFaqH2Section(post.body) : post.body;
 
 const midArticleVideo = post.data.midArticleVideo?.trim();
 const midArticleHeadingSlug = post.data.midArticleVideoHeadingSlug?.trim();
@@ -53,12 +61,28 @@ const midSlotActive =
   !!midArticleHeadingSlug && (midVideoFileOk || useRemotionMid);
 let midArticleSplit: Awaited<ReturnType<typeof splitMarkdownAtH2Slug>> = null;
 if (midSlotActive && midArticleHeadingSlug) {
-  midArticleSplit = await splitMarkdownAtH2Slug(post.body, midArticleHeadingSlug);
+  midArticleSplit = await splitMarkdownAtH2Slug(mdForArticle, midArticleHeadingSlug);
   if (!midArticleSplit) {
     throw new Error(
       `[DE blog/${getPostSlug(post)}] Mittenvideo: kein H2 mit Slug « ${midArticleHeadingSlug} ».`,
     );
   }
+}
+
+let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
+let headings: Awaited<ReturnType<typeof render>>["headings"];
+let strippedArticleHtml: string | undefined;
+
+if (midArticleSplit) {
+  headings = extractArticleHeadings(mdForArticle);
+} else if (stripInlineFaq) {
+  const r = await renderMarkdownToArticleHtml(mdForArticle);
+  strippedArticleHtml = r.html;
+  headings = r.headings;
+} else {
+  const r = await render(post);
+  Content = r.Content;
+  headings = r.headings;
 }
 
 const readingTime = post.data.readingTime ?? calculateReadingTime(post.body);
@@ -75,7 +99,6 @@ const absolutePostUrl = absoluteUrl(postUrlDe);
 
 const categoryHrefDe = swapLangPrefix(category.href, "de");
 
-const faqs = post.data.faq ?? [];
 const heroImage = post.data.heroImage;
 const introVideo = post.data.introVideo?.trim();
 const summaryVideo = post.data.summaryVideo?.trim();
@@ -210,8 +233,10 @@ const otherPillars = categorySlugs
               )}
               <div class="md-chunk" set:html={midArticleSplit.afterHtml} />
             </>
+          ) : strippedArticleHtml ? (
+            <div class="md-chunk" set:html={strippedArticleHtml} />
           ) : (
-            <Content />
+            Content && <Content />
           )}
         </div>
 

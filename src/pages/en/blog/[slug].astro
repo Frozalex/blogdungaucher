@@ -26,6 +26,11 @@ import {
 } from "../../../utils/blog";
 import { getEnglishArticleMarkdown, renderEnglishMarkdown } from "../../../utils/english-article";
 import { swapLangPrefix } from "../../../utils/lang-paths";
+import {
+  extractArticleHeadings,
+  renderMarkdownToArticleHtml,
+  stripFaqH2Section,
+} from "../../../utils/markdown-strip-faq";
 import { splitMarkdownAtH2Slug } from "../../../utils/markdown-split-html";
 import { isPublicAssetAvailable } from "../../../utils/public-asset";
 import { buildVideoPostProps } from "../../../utils/remotion-post-props";
@@ -46,6 +51,11 @@ const { post } = Astro.props;
 const slug = getPostSlug(post);
 const englishMarkdown = getEnglishArticleMarkdown(slug);
 
+const faqsForDisplay = post.data.faqEn ?? post.data.faq ?? [];
+const stripInlineFaq = faqsForDisplay.length > 0;
+const mdSource = englishMarkdown ?? post.body;
+const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
+
 const midArticleVideo = post.data.midArticleVideo?.trim();
 const midArticleHeadingSlug = post.data.midArticleVideoHeadingSlug?.trim();
 const useRemotionMid = post.data.remotionPlayerMid === true;
@@ -54,8 +64,7 @@ const midSlotActive =
   !!midArticleHeadingSlug && (midVideoFileOk || useRemotionMid);
 let midArticleSplit: Awaited<ReturnType<typeof splitMarkdownAtH2Slug>> = null;
 if (midSlotActive && midArticleHeadingSlug) {
-  const mdSource = englishMarkdown ?? post.body;
-  midArticleSplit = await splitMarkdownAtH2Slug(mdSource, midArticleHeadingSlug);
+  midArticleSplit = await splitMarkdownAtH2Slug(mdForArticle, midArticleHeadingSlug);
   if (!midArticleSplit) {
     throw new Error(
       `[EN blog/${slug}] Mid video: no H2 with slug "${midArticleHeadingSlug}" (check the table of contents).`,
@@ -67,10 +76,18 @@ let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
 let headings: Awaited<ReturnType<typeof render>>["headings"];
 let englishHtml: string | undefined;
 
-if (englishMarkdown) {
-  const rendered = renderEnglishMarkdown(englishMarkdown);
+if (midArticleSplit) {
+  headings = extractArticleHeadings(mdForArticle);
+} else if (englishMarkdown) {
+  const rendered = stripInlineFaq
+    ? renderEnglishMarkdown(mdForArticle)
+    : renderEnglishMarkdown(englishMarkdown);
   englishHtml = rendered.html;
   headings = rendered.headings;
+} else if (stripInlineFaq) {
+  const r = await renderMarkdownToArticleHtml(mdForArticle);
+  englishHtml = r.html;
+  headings = r.headings;
 } else {
   const r = await render(post);
   Content = r.Content;
@@ -114,8 +131,6 @@ const showSummaryVideo =
   !useRemotionSummary && !!(summaryVideo && isPublicAssetAvailable(summaryVideo));
 const introVideoAspect = post.data.introVideoAspect;
 const summaryVideoAspect = post.data.summaryVideoAspect ?? "16:9";
-
-const faqsForDisplay = post.data.faqEn ?? post.data.faq ?? [];
 
 const enCategoryLabels: Record<string, string> = {
   science: "Science",
@@ -259,7 +274,7 @@ const otherPillars = categorySlugs
               <div class="md-chunk" set:html={midArticleSplit.afterHtml} />
             </>
           ) : englishHtml ? (
-            <div set:html={englishHtml} />
+            <div class="md-chunk" set:html={englishHtml} />
           ) : (
             Content && <Content />
           )}

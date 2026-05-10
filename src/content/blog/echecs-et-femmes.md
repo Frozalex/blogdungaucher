@@ -14,6 +14,12 @@ titleEn: "Chess and Women: Why So Few, and Is That Changing?"
 excerptEn: "40 women among 1,700 Grandmasters. The gap isn't biological: it's mathematical, historical and psychological. What the data really says, and why the 'female brain' argument doesn't hold."
 seoTitleEn: "Chess and Women: Understanding the Gender Gap"
 seoDescriptionEn: "Why are there so few women in chess? A breakdown of scientific studies, the Polgár sisters, Hou Yifan and the real reasons behind this fascinating debate."
+ogImage: "/images/blog/echecs-et-femmes-hero.png"
+heroImage:
+  src: "/images/blog/echecs-et-femmes-hero.png"
+  alt: "Illustration pixel art : silhouette en combinaison blanche au centre d’une foule dans une salle sombre, titre « Échecs et Femmes » en surimpression."
+  credit: "Blog d'un Gaucher"
+  license: "Création originale"
 faq:
   - question: "Pourquoi y a-t-il si peu de joueuses d'échecs dans les compétitions ?"
     answer: "La principale raison est statistique : les joueuses d'échecs ne représentent que 10 à 15 % des joueurs d'échecs licenciés dans le monde, ce qui réduit mécaniquement leur part au sommet. Les conditions d'accueil dans les clubs, la pression sociale et la menace du stéréotype aggravent cet écart. Des recherches (Bilalić, 2009) ont démontré que le biais de participation explique la majorité des différences de classement Elo entre hommes et femmes."
