@@ -1,5 +1,5 @@
 ---
-description: Articles scientifiques du blog — ancrer les propos sur des chiffres pour la crédibilité
+description: Articles scientifiques du blog : ancrer les propos sur des chiffres pour la crédibilité
 globs: src/content/blog/**/*.md
 alwaysApply: false
 ---

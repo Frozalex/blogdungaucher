@@ -72,7 +72,7 @@ jobs:
           fi
           TARGET=$(echo "$MD_FILES" | sort | head -1)
           if [ -z "${ONESIGNAL_APP_ID:-}" ] || [ -z "${ONESIGNAL_API_KEYS:-}" ]; then
-            echo "ONESIGNAL_APP_ID ou ONESIGNAL_API_KEYS absent — notification ignorée."
+            echo "ONESIGNAL_APP_ID ou ONESIGNAL_API_KEYS absent ; notification ignorée."
             exit 0
           fi
           TITLE=$(awk '/^---$/{d++;if(d>=2)exit;next}d==1&&/^title:/{line=$0;sub(/^title:[[:space:]]+/,"",line);if(line~/^".*"$/){line=substr(line,2,length(line)-2)}print line;exit}' "$TARGET")

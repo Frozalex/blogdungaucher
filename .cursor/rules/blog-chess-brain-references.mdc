@@ -1,0 +1,21 @@
+---
+description: Articles échecs & cerveau : base bibliographique Consensus (CSV)
+globs: src/content/blog/**/*.md,data/references/**/*.csv
+alwaysApply: false
+---
+
+# Références « chess & brain » (Consensus)
+
+Pour tout article de blog qui traite du **cerveau**, de la **neuroimagerie** (IRMf, structurelle), de la **plasticité**, des **réseaux fonctionnels** / chronnectome, de la **connectivité**, de la **mémoire** ou **fonctions exécutives** en lien avec les échecs :
+
+1. **S’appuyer en priorité** sur le fichier versionné  
+   `data/references/chess-and-brain-consensus-2026-05.csv`  
+   (aligné sur l’export utilisateur du 10 mai 2026). Colonnes clés : `Title`, `Authors`, `Year`, `Takeaway`, `Study Type`, `Journal`, `Journal SJR Quartile`, `DOI`, `Abstract`, `Consensus Link`.
+
+2. **Pour la crédibilité** : repérer dans `Abstract` ou `Takeaway` les **effectifs** (ex. *n* experts vs novices), **valeurs statistiques** (*p*, corrélations, précision de classification, etc.), **année**, **design** (`Study Type`). Les intégrer dans le texte ou les tableaux, comme pour les autres articles science du blog.
+
+3. **Citation** : premier auteur ou revue + année ; lien DOI `https://doi.org/{DOI}` ; éviter de résumer une étude sans au moins un **nombre** ou un **effectif** lorsque l’abstract en fournit.
+
+4. Le CSV est une **sélection** Consensus, pas une revue systématique du champ entier : le dire si nécessaire et compléter avec d’autres sources récentes quand il manque un angle.
+
+5. **Mise à jour** : si tu remplaces le CSV par une nouvelle exportation, garde le même dossier ou renomme `chess-and-brain-consensus-YYYY-MM.csv` et actualise le chemin dans cette règle.
