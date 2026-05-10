@@ -23,11 +23,11 @@ tags:
     "cognition",
   ]
 keyTakeaways:
-  - "Cohortes : hazard ratios = population ; pas une promesse pour ta vie."
-  - "ALSOP : « jeux actifs » = catégorie large — pas « les échecs seuls »."
-  - "Essais récents : souvent plus de gain humeur / QoL que sur la cognition globale."
-  - "Méta-analyses jeux : petits effets sur tests ; pas d’armure prouvée contre la démence au niveau individuel."
-  - "Les échecs : stimulation utile et plaisir ; pas un substitut à bilan médical ou prévention vasculaire."
+  - "Cohortes : hazard ratios au niveau population ; pas une garantie pour un individu."
+  - "ALSOP : « jeux actifs » est une catégorie large ; les échecs y sont regroupés avec d’autres jeux."
+  - "Essais récents : gains souvent plus nets sur humeur ou qualité de vie que sur la cognition globale."
+  - "Méta-analyses sur les jeux : effets sur scores cognitifs souvent modestes ; pas de preuve robuste d’une protection individuelle contre la démence."
+  - "Les échecs : stimulation cognitive comme d’autres loisirs ; pas un substitut à suivi médical ou prévention vasculaire."
 remotionPlayerIntro: true
 remotionPlayerMid: true
 remotionPlayerSummary: true
@@ -53,9 +53,9 @@ dataReveal:
   highlightSub: "réduction relative du risque sur 10 ans (ALSOP)"
   source: "Wu et al., JAMA Netw Open 2023 ; Li et al., Worldviews Evid Based Nurs 2023"
   takeaway: |
-    Effets modestes à l’échelle population : méta-analyses et cohortes suggèrent des associations entre stimulation cognitive et risque relatif de démence, sans effet garanti pour une personne donnée.
+    À l’échelle des populations, les synthèses et cohortes rapportent des associations entre activités cognitives et risque relatif de démence. Pour une personne donnée, aucune activité isolée ne permet d’inférer un résultat individuel à partir de ces chiffres.
 
-    Les échecs restent une piste agréable parmi d’autres jeux et activités : ce qui compte, c’est la régularité, la diversité des stimulations et un réalisme honnête sur ce que mesurent les études — corrélation à grande échelle, pas promesse individuelle.
+    Les échecs peuvent contribuer au plaisir et à la stimulation mentale comme d’autres activités régulières. Les études citées mesurent surtout des tendances agrégées, pas des promesses au cas par cas.
 seoTitle: "Échecs et Alzheimer : études, chiffres et prévention cognitive"
 seoDescription: "Données chiffrées sur les jeux cognitifs, la démence et le vieillissement : méta-analyses MMSE, cohortes ALSOP, essais chez les personnes âgées, sans promesse miracle."
 titleEn: "Chess and Alzheimer's: stimulating the brain to help prevent cognitive decline"

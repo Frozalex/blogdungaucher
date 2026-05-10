@@ -289,7 +289,7 @@ export function ArticleSummaryDataReveal(props: Props) {
                 opacity: sourceOp,
               }}
             >
-              Source — {source}
+              Source : {source}
             </div>
           </div>
         </AbsoluteFill>

@@ -5,7 +5,7 @@ export type DataRevealBar = {
   max: number;
 };
 
-/** Séquence « data reveal » — pensée pour ArticleSummary neuro / chiffres (~45 s). */
+/** Séquence « data reveal », ArticleSummary neuro / chiffres (~55 s en prod). */
 export type DataRevealPayload = {
   /** Titre affiché en 0–5 s (fade-in). */
   vizTitle: string;
