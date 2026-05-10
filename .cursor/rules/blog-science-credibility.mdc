@@ -1,0 +1,19 @@
+---
+description: Articles scientifiques du blog — ancrer les propos sur des chiffres pour la crédibilité
+globs: src/content/blog/**/*.md
+alwaysApply: false
+---
+
+# Rédaction « science » (blog)
+
+Quand tu rédiges ou révises un fichier sous `src/content/blog/` dont le frontmatter indique **`category: science`** (ou un volet explicitement **scientifique / études / données**) :
+
+1. **Quantifier** les affirmations qui s’appuient sur la littérature ou l’épidémiologie : **tailles d’échantillon (N)**, **durées de suivi**, **effets** (HR, OR, SMD, différences de points sur une échelle, pourcentages), **intervalles de confiance** ou mention qu’ils existent dans la source, **année** des travaux cités quand c’est pertinent.
+
+2. **Éviter** les formulations du type « la science montre que… » ou « les études prouvent… » **sans aucun nombre ni ordre de grandeur** lorsque le texte prétend s’appuyer sur des données : préférer une phrase courte avec au moins une **métrique lisible** ou renvoyer au tableau / liste de références.
+
+3. **Nuancer** avec les chiffres : distinguer association vs causalité, population vs individu ; si aucun chiffre public n’est disponible, le dire en une phrase plutôt que d’inférer.
+
+4. **Cohérence** avec le ton déjà utilisé sur le site : pas de promesse médicale ; les chiffres servent la **transparence**, pas le sensationnalisme.
+
+Si la catégorie n’est pas `science`, cette règle ne force pas la surcharge quantitative : rester proportionné au sujet.
