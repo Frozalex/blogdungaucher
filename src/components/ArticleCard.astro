@@ -17,13 +17,29 @@ const postExcerpt =
   lang === "en"
     ? (post.data.excerptEn ?? post.data.excerpt)
     : post.data.excerpt;
+
+const heroImage = post.data.heroImage;
 ---
 <article
   class={`card scale-in ${featured ? "featured" : ""}`}
   style={`--motion-delay: 60ms; --accent:${category.accent};`}
 >
-  <a href={getPostUrlLang(post, lang)} class="card-link">
+  <a href={getPostUrlLang(post, lang)} class:list={["card-link", { "card-link--thumb": !!heroImage?.src }]}>
+    {heroImage?.src && (
+      <div class="card-thumb-wrap">
+        <img
+          class="card-thumb"
+          src={heroImage.src}
+          alt=""
+          width="640"
+          height="360"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    )}
 
+    <div class="card-body">
     <div class="card-top">
       <span class="card-badge" data-t={`categories.${post.data.category}.label`}>{category.label}</span>
       <span class="card-time">{post.data.readingTime}</span>
@@ -40,6 +56,7 @@ const postExcerpt =
         <span data-t="card.read">Lire</span>
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
       </span>
+    </div>
     </div>
 
   </a>
@@ -86,7 +103,35 @@ const postExcerpt =
     display: grid;
     gap: 0.75rem;
     height: 100%;
+    padding: 0;
+  }
+
+  .card-link--thumb {
+    gap: 0;
+  }
+
+  .card-thumb-wrap {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    background: color-mix(in srgb, var(--text-main) 6%, var(--surface));
+  }
+
+  .card-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .card-body {
+    display: grid;
+    gap: 0.75rem;
     padding: 1.3rem 1.35rem 1.2rem;
+    min-height: 0;
   }
 
   /* badge + temps */

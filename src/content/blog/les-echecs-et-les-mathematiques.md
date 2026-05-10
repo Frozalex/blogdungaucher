@@ -10,6 +10,12 @@ pillar: "Cognition"
 tags: ["échecs", "mathématiques", "science", "métacognition", "calcul", "résolution de problèmes", "cerveau"]
 seoTitle: "Échecs et mathématiques : quel est le vrai lien ?"
 seoDescription: "Les échecs rendent-ils meilleur en maths ? Ce que les méta-analyses disent vraiment sur ce lien et comment en tirer parti."
+ogImage: "/images/blog/les-echecs-et-les-mathematiques-hero.png"
+heroImage:
+  src: "/images/blog/les-echecs-et-les-mathematiques-hero.png"
+  alt: "Vignette pixel art : motif neural lumineux sur fond violet, titre échecs et mathématiques"
+  credit: "Blog d'un Gaucher"
+  license: "Création originale"
 titleEn: "Does Chess Make You Better at Maths? The Scientific Truth"
 excerptEn: "Playing chess makes you good at maths? The answer isn't what you'd expect - and it radically changes what you should do with a chessboard."
 seoTitleEn: "Chess and Mathematics: What Is the Real Connection?"

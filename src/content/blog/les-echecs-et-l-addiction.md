@@ -10,6 +10,12 @@ pillar: "Psychologie"
 tags: ["échecs", "addiction", "cerveau", "dopamine", "jeu en ligne", "santé mentale", "psychologie"]
 seoTitle: "Addiction aux échecs : comprendre et surmonter la dépendance"
 seoDescription: "Découvrez le lien complexe entre les échecs et l'addiction. Identifiez les signes de dépendance et trouvez des conseils pour reprendre le contrôle."
+ogImage: "/images/blog/les-echecs-et-l-addiction-hero.png"
+heroImage:
+  src: "/images/blog/les-echecs-et-l-addiction-hero.png"
+  alt: "Vignette pixel art : bureau la nuit, écran montrant un échiquier, titre sur l’addiction aux échecs"
+  credit: "Blog d'un Gaucher"
+  license: "Création originale"
 titleEn: "Chess and Addiction: When the Game Becomes a Drug"
 excerptEn: "It's 3am. You promised yourself it was the last game, but you're launching another one. Can you really be addicted to chess? A breakdown of a silent addiction."
 seoTitleEn: "Chess and Addiction: Understanding and Overcoming Dependency"
