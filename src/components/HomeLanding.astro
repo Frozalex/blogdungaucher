@@ -1,7 +1,7 @@
 ---
 import AdBanner from "./AdBanner.astro";
 import ArticleCard from "./ArticleCard.astro";
-import { categoryMap, categorySlugs, siteConfig } from "../data/site";
+import { categoryMap, categorySlugs } from "../data/site";
 import { swapLangPrefix } from "../utils/lang-paths";
 import type { BlogEntry } from "../utils/blog";
 
@@ -13,10 +13,6 @@ interface Props {
 const { lang, latestPosts } = Astro.props;
 const sectionsId = lang === "en" ? "sections" : "rubriques";
 const blogHref = `/${lang}/blog/`;
-const grandOralHref = `/${lang}/grand-oral/`;
-const aboutHref = `/${lang}/about/`;
-const analysesHref = `/${lang}/analyses/`;
-const showAnalyses = siteConfig.features.analysesAvailable;
 
 type HomeCopy = {
   siteName: string;
@@ -30,14 +26,7 @@ type HomeCopy = {
   proof1: string;
   proof2: string;
   proof3: string;
-  quickNavLabel: string;
-  quickEyebrow: string;
-  blogLink: string;
-  grandOralLink: string;
-  analysesLink: string;
-  aboutLink: string;
   editorialNote: string;
-  editorialHeading: string;
   sectionsEyebrow: string;
   sectionsTitle: string;
   recentEyebrow: string;
@@ -60,15 +49,8 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     proof1: "Articles de fond",
     proof2: "Ton accessible",
     proof3: "Approche rigoureuse",
-    quickNavLabel: "Raccourcis",
-    quickEyebrow: "Raccourcis",
-    blogLink: "Tous les articles",
-    grandOralLink: "Grand oral",
-    analysesLink: "Analyse Stockfish",
-    aboutLink: "À propos",
     editorialNote:
       "Ici, on ne promet pas des progrès magiques en 7 jours. On propose des idées solides, des exemples concrets et des analyses que tu peux appliquer à ta pratique, que tu sois joueur de club, compétiteur ou simple passionné.",
-    editorialHeading: "Notre ligne",
     sectionsEyebrow: "4 rubriques",
     sectionsTitle: "Ce dont on parle ici",
     recentEyebrow: "Récents",
@@ -89,15 +71,8 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     proof1: "In-depth articles",
     proof2: "Accessible tone",
     proof3: "Rigorous approach",
-    quickNavLabel: "Shortcuts",
-    quickEyebrow: "Shortcuts",
-    blogLink: "All articles",
-    grandOralLink: "Grand oral",
-    analysesLink: "Stockfish Analysis",
-    aboutLink: "About",
     editorialNote:
       "Here, we don't promise magical progress in 7 days. We offer solid ideas, concrete examples and analyses that you can apply to your practice, whether you're a club player, a competitor, or simply passionate about the game.",
-    editorialHeading: "Our approach",
     sectionsEyebrow: "4 sections",
     sectionsTitle: "What we cover here",
     recentEyebrow: "Recent",
@@ -118,15 +93,8 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     proof1: "Hintergrundartikel",
     proof2: "Zugänglicher Ton",
     proof3: "Rigoroser Ansatz",
-    quickNavLabel: "Schnellzugriff",
-    quickEyebrow: "Schnellzugriff",
-    blogLink: "Alle Artikel",
-    grandOralLink: "Grand oral",
-    analysesLink: "Stockfish-Analyse",
-    aboutLink: "Über die Seite",
     editorialNote:
       "Hier versprechen wir keinen magischen Fortschritt in 7 Tagen. Wir bieten solide Ideen, konkrete Beispiele und Analysen, die du in deine Praxis übernehmen kannst, egal ob Vereinsspieler, Turnierspieler oder begeisterter Amateur.",
-    editorialHeading: "Unser Ansatz",
     sectionsEyebrow: "4 Rubriken",
     sectionsTitle: "Darum geht es hier",
     recentEyebrow: "Neu",
@@ -190,39 +158,8 @@ const heroBannerUrl = "/images/hero-banner.jpg";
     </div>
   </section>
 
-  <nav class="home-quick container reveal" aria-label={c.quickNavLabel}>
-    <span class="home-quick__label" data-t="home.quickEyebrow">{c.quickEyebrow}</span>
-    <ul class="home-quick__list">
-      <li>
-        <a href={blogHref} class="home-quick__link" data-t="blog.title">
-          {c.blogLink}
-        </a>
-      </li>
-      <li>
-        <a href={grandOralHref} class="home-quick__link" data-t="navLinks.grandOral">
-          {c.grandOralLink}
-        </a>
-      </li>
-      {showAnalyses && (
-        <li>
-          <a href={analysesHref} class="home-quick__link" data-t="categories.analyses.shortLabel">
-            {c.analysesLink}
-          </a>
-        </li>
-      )}
-      <li>
-        <a href={aboutHref} class="home-quick__link" data-t="navLinks.about">
-          {c.aboutLink}
-        </a>
-      </li>
-    </ul>
-  </nav>
-
   <section class="editorial-intro">
     <div class="container editorial-intro__wrap">
-      <h2 class="drop-heading section-title reveal" data-t="home.editorialHeading">
-        {c.editorialHeading}
-      </h2>
       <div class="editorial-note editorial-note--home reveal scale-in" data-t="home.editorialNote">
         {c.editorialNote}
       </div>
@@ -320,8 +257,7 @@ const heroBannerUrl = "/images/hero-banner.jpg";
 
   .editorial-intro .container,
   .pillars .container,
-  .latest .container,
-  .home-quick.container {
+  .latest .container {
     width: min(1280px, calc(100% - 2rem));
     margin-inline: auto;
   }
@@ -554,67 +490,13 @@ const heroBannerUrl = "/images/hero-banner.jpg";
     }
   }
 
-  .home-quick {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.75rem 1.25rem;
-    padding: 1.35rem 0 1.5rem;
-    margin-bottom: 0.25rem;
-    justify-content: center;
-    border-bottom: 1px solid var(--border-soft);
-  }
-
-  .home-quick__label {
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-  }
-
-  .home-quick__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem 0.5rem;
-    justify-content: center;
-  }
-
-  .home-quick__link {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.38rem 0.9rem;
-    border-radius: 2px;
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    background: transparent;
-    border: 1px solid transparent;
-    transition:
-      color 0.18s ease,
-      border-color 0.18s ease,
-      background 0.18s ease;
-  }
-
-  .home-quick__link:hover {
-    color: var(--green-hover);
-    border-color: var(--green-border);
-    background: var(--green-light);
-  }
-
   .editorial-intro {
     padding: clamp(2.5rem, 6vw, 4rem) 0;
   }
 
   .editorial-intro__wrap {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.25rem;
+    justify-content: center;
   }
 
   .editorial-note--home {
@@ -822,26 +704,13 @@ const heroBannerUrl = "/images/hero-banner.jpg";
   }
 
   @media (max-width: 560px) {
-    .hero {
-      min-height: unset;
-      padding: 3.5rem 0 2rem;
-    }
-    .hero .container,
     .editorial-intro .container,
     .pillars .container,
-    .latest .container,
-    .home-quick.container {
+    .latest .container {
       width: min(1280px, calc(100% - 1.25rem));
     }
-    .hero-proof li {
-      font-size: 0.68rem;
-    }
-    .home-quick {
-      flex-direction: column;
-      gap: 0.65rem;
-    }
-    .hero__panel {
-      max-width: 100%;
+    .hero-proof--dark li {
+      font-size: 0.65rem;
     }
   }
 </style>
