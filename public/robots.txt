@@ -1,17 +1,62 @@
+# Robots — Blog d'un Gaucher (https://blogdungaucher.com)
+# Politique détaillée pour assistants / crawlers IA : /llms.txt
+
 User-agent: *
 Allow: /
 
+# ── Crawlers et assistants IA (liste indicative, alignée sur llms.txt) ──
 User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://blogdungaucher.com/sitemap.xml
+User-agent: Amazonbot
+Allow: /
 
+User-agent: MistralBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+Sitemap: https://blogdungaucher.com/sitemap.xml

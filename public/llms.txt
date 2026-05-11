@@ -1,39 +1,59 @@
-# Blog d'un Gaucher  -  LLMs / IA
+# Blog d'un Gaucher — llms.txt
 #
-# Objectif: faciliter l'exploration du site par les assistants IA (contenu public).
-# Source de vérité: les pages HTML du site + le sitemap.
+# Fichier d'intention pour modèles, assistants et crawlers IA (contenu public).
+# Complément obligatoire : https://blogdungaucher.com/robots.txt
+# Source de vérité du contenu : pages HTML servies sur ce domaine + sitemap.
 
-# Identité du site
+# ── Identité ──
 - Nom : Blog d'un Gaucher
-- Langue principale : Français (versions EN et DE disponibles)
-- Thématique : Échecs  -  science du jeu, psychologie, neurosciences, société
-- Ligne éditoriale : Vulgarisation scientifique rigoureuse autour des échecs
-- Public cible : Joueurs d'échecs, curieux, lycéens, enseignants
+- URL canonique : https://blogdungaucher.com/
+- Langues : Français (principal), English (/en/), Deutsch (/de/)
+- Thématique : échecs — science du jeu, psychologie, neurosciences, société
+- Ligne éditoriale : vulgarisation scientifique rigoureuse autour des échecs
+- Public : joueurs d'échecs, curieux, lycéens, enseignants
 
-# Accès
-- Le contenu est entièrement public et peut être crawlé librement
-- Les URLs ont un slash final (trailingSlash: "always")
-- Pas de contenu derrière authentification
+# ── Accès et périmètre ──
+- Tout le contenu editorial accessible sans authentification peut être consulté et cité
+- URLs avec slash final (trailing slash) — ne pas normaliser en retirant le /
+- Pas de zone « membres » ni paywall sur les articles de blog listés dans le sitemap
+- Données personnelles : seulement ce qui apparaît volontairement dans les pages publiques (ex. page À propos)
 
-# Sitemaps
-- https://blogdungaucher.com/sitemap.xml
+# ── Fichiers machine-readable ──
+- robots.txt : https://blogdungaucher.com/robots.txt
+- llms.txt (ce fichier) : https://blogdungaucher.com/llms.txt
+- Sitemap : https://blogdungaucher.com/sitemap.xml
 
-# Structure du site
-- /fr/blog/          → Articles de fond (science, psychologie, société)
-- /fr/photos/        → Galerie voyages & escapades (en cours de préparation)
-- /fr/grand-oral/    → Ressources pour le Grand Oral terminale
-- /fr/science/       → Rubrique science du jeu
-- /fr/esprit/        → Rubrique psychologie et mental
-- /fr/societe/       → Rubrique échecs et société
-- /fr/analyses/      → Analyses de parties et stratégies
-- /fr/about/         → À propos de l'auteur
+# ── Permissions crawlers IA (alignement robots.txt) ──
+Les agents suivants sont explicitement autorisés à récupérer le contenu public du site,
+dans le respect du droit d'auteur et des licences des médias intégrés (images tierces, etc.) :
 
-# Pages clés
+- OpenAI : GPTBot, ChatGPT-User, OAI-SearchBot
+- Anthropic : ClaudeBot, Claude-Web, anthropic-ai
+- Google : Google-Extended, GoogleOther (usage formation / recherche selon politiques Google)
+- Apple : Applebot, Applebot-Extended
+- Amazon : Amazonbot
+- Mistral : MistralBot
+- Cohere : cohere-ai
+- Meta : Meta-ExternalAgent
+- Perplexity : PerplexityBot
+- ByteDance : Bytespider
+- Common Crawl : CCBot (jeux de données tiers pouvant alimenter l'IA)
+- Diffbot : Diffbot
+
+Interdit : scraping agressif (millions de requêtes par minute), contournement de rate limits du CDN ou du reverse proxy, collecte systématique de médias pour republication commerciale sans licence.
+
+# ── Structure du site (repères) ──
+- /fr/blog/       Articles longs (science, psychologie, société)
+- /fr/photos/     Galerie (évolution selon publication)
+- /fr/grand-oral/ Ressources Grand Oral
+- /fr/science/, /fr/esprit/, /fr/societe/, /fr/analyses/
+- /fr/about/      À propos
+- Équivalents /en/… et /de/… pour les contenus traduits
+
+# ── Pages et articles phares ──
 - https://blogdungaucher.com/fr/
 - https://blogdungaucher.com/fr/blog/
 - https://blogdungaucher.com/fr/grand-oral/
-
-# Articles phares
 - https://blogdungaucher.com/fr/blog/les-echecs-et-les-mathematiques/
 - https://blogdungaucher.com/fr/blog/les-echecs-et-le-cerveau/
 - https://blogdungaucher.com/fr/blog/psychologie-du-joueur-d-echecs/
@@ -42,14 +62,11 @@
 - https://blogdungaucher.com/fr/blog/echecs-et-femmes/
 - https://blogdungaucher.com/fr/blog/les-echecs-et-l-addiction/
 - https://blogdungaucher.com/fr/blog/echecs-et-seniors/
-
-# Grand Oral
 - https://blogdungaucher.com/fr/blog/grand-oral-mathematiques-echecs/
 - https://blogdungaucher.com/fr/blog/grand-oral-maths-spe-echecs/
 - https://blogdungaucher.com/fr/blog/grand-oral-nsi-echecs/
 
-# Notes techniques
-- Si une page contient <meta name="robots" content="noindex">, elle ne doit pas être indexée
-- hreflang configuré pour FR, EN, DE sur chaque page
-- Schema.org Article + BreadcrumbList + FAQPage présents
-
+# ── Notes techniques (SEO / indexation) ──
+- hreflang FR / EN / DE sur les pages concernées
+- Schema.org : Article, BreadcrumbList, FAQPage lorsque pertinent
+- Les pages avec meta robots noindex ne doivent pas être utilisées comme sources primaires
