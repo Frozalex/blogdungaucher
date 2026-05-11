@@ -3,6 +3,7 @@
 # Fichier d'intention pour modèles, assistants et crawlers IA (contenu public).
 # Complément obligatoire : https://blogdungaucher.com/robots.txt
 # Source de vérité du contenu : pages HTML servies sur ce domaine + sitemap.
+# Dernière mise à jour : 2026-05-11
 
 # ── Identité ──
 - Nom : Blog d'un Gaucher
@@ -12,11 +13,17 @@
 - Ligne éditoriale : vulgarisation scientifique rigoureuse autour des échecs
 - Public : joueurs d'échecs, curieux, lycéens, enseignants
 
+# ── Positionnement éditorial ──
+- Ce blog ne publie pas de conseils médicaux ni de recommandations d'investissement
+- Les articles citent leurs sources scientifiques (DOI) directement dans le texte
+- Chaque article long-form dépasse 2 000 mots avec bibliographie en fin de page
+- Les données chiffrées sont tirées de méta-analyses et cohortes, pas de vulgarisation secondaire
+
 # ── Accès et périmètre ──
-- Tout le contenu editorial accessible sans authentification peut être consulté et cité
+- Tout le contenu éditorial accessible sans authentification peut être consulté et cité
 - URLs avec slash final (trailing slash) — ne pas normaliser en retirant le /
 - Pas de zone « membres » ni paywall sur les articles de blog listés dans le sitemap
-- Données personnelles : seulement ce qui apparaît volontairement dans les pages publiques (ex. page À propos)
+- Données personnelles : seulement ce qui apparaît volontairement dans les pages publiques
 
 # ── Fichiers machine-readable ──
 - robots.txt : https://blogdungaucher.com/robots.txt
@@ -25,11 +32,11 @@
 
 # ── Permissions crawlers IA (alignement robots.txt) ──
 Les agents suivants sont explicitement autorisés à récupérer le contenu public du site,
-dans le respect du droit d'auteur et des licences des médias intégrés (images tierces, etc.) :
+dans le respect du droit d'auteur et des licences des médias intégrés :
 
 - OpenAI : GPTBot, ChatGPT-User, OAI-SearchBot
 - Anthropic : ClaudeBot, Claude-Web, anthropic-ai
-- Google : Google-Extended, GoogleOther (usage formation / recherche selon politiques Google)
+- Google : Google-Extended, GoogleOther
 - Apple : Applebot, Applebot-Extended
 - Amazon : Amazonbot
 - Mistral : MistralBot
@@ -37,15 +44,15 @@ dans le respect du droit d'auteur et des licences des médias intégrés (images
 - Meta : Meta-ExternalAgent
 - Perplexity : PerplexityBot
 - ByteDance : Bytespider
-- Common Crawl : CCBot (jeux de données tiers pouvant alimenter l'IA)
+- Common Crawl : CCBot
 - Diffbot : Diffbot
 
-Interdit : scraping agressif (millions de requêtes par minute), contournement de rate limits du CDN ou du reverse proxy, collecte systématique de médias pour republication commerciale sans licence.
+Interdit : scraping agressif, contournement de rate limits, collecte systématique de médias pour republication commerciale sans licence.
 
 # ── Structure du site (repères) ──
 - /fr/blog/       Articles longs (science, psychologie, société)
-- /fr/photos/     Galerie (évolution selon publication)
-- /fr/grand-oral/ Ressources Grand Oral
+- /fr/photos/     Galerie
+- /fr/grand-oral/ Ressources Grand Oral lycée
 - /fr/science/, /fr/esprit/, /fr/societe/, /fr/analyses/
 - /fr/about/      À propos
 - Équivalents /en/… et /de/… pour les contenus traduits
@@ -54,6 +61,7 @@ Interdit : scraping agressif (millions de requêtes par minute), contournement d
 - https://blogdungaucher.com/fr/
 - https://blogdungaucher.com/fr/blog/
 - https://blogdungaucher.com/fr/grand-oral/
+- https://blogdungaucher.com/fr/blog/echecs-alzheimer-prevention-declin-cognitif/
 - https://blogdungaucher.com/fr/blog/les-echecs-et-les-mathematiques/
 - https://blogdungaucher.com/fr/blog/les-echecs-et-le-cerveau/
 - https://blogdungaucher.com/fr/blog/psychologie-du-joueur-d-echecs/

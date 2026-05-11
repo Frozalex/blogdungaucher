@@ -4,11 +4,33 @@
 User-agent: *
 Allow: /
 
-# ── Crawlers et assistants IA (liste indicative, alignée sur llms.txt) ──
+# ── Google ──
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# ── Crawlers et assistants IA ──
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -21,12 +43,6 @@ User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: GoogleOther
 Allow: /
 
 User-agent: Applebot
@@ -44,19 +60,16 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-User-agent: CCBot
-Allow: /
-
-User-agent: Diffbot
+User-agent: Meta-ExternalAgent
 Allow: /
 
 User-agent: Bytespider
 Allow: /
 
-User-agent: OAI-SearchBot
+User-agent: CCBot
 Allow: /
 
-User-agent: Meta-ExternalAgent
+User-agent: Diffbot
 Allow: /
 
 Sitemap: https://blogdungaucher.com/sitemap.xml
