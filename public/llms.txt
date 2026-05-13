@@ -1,4 +1,4 @@
-# Blog d'un Gaucher — llms.txt
+# Blog d'un Gaucher : llms.txt
 #
 # Fichier d'intention pour modèles, assistants et crawlers IA (contenu public).
 # Complément obligatoire : https://blogdungaucher.com/robots.txt
@@ -9,7 +9,7 @@
 - Nom : Blog d'un Gaucher
 - URL canonique : https://blogdungaucher.com/
 - Langues : Français (principal), English (/en/), Deutsch (/de/)
-- Thématique : échecs — science du jeu, psychologie, neurosciences, société
+- Thématique : échecs, science du jeu, psychologie, neurosciences, société
 - Ligne éditoriale : vulgarisation scientifique rigoureuse autour des échecs
 - Public : joueurs d'échecs, curieux, lycéens, enseignants
 
@@ -23,7 +23,7 @@
 
 # ── Accès et périmètre ──
 - Tout le contenu éditorial accessible sans authentification peut être consulté et cité
-- URLs avec slash final (trailing slash) — ne pas normaliser en retirant le /
+- URLs avec slash final (trailing slash) : ne pas normaliser en retirant le /
 - Pas de zone « membres » ni paywall sur les articles de blog listés dans le sitemap
 - Données personnelles : seulement ce qui apparaît volontairement dans les pages publiques
 

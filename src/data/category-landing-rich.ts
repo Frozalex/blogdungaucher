@@ -1,10 +1,10 @@
 import type { CategorySlug } from "./site";
 
-/** Contenus pilier pour Science / Esprit / Société : développement éditorial ~600 mots (FR) par rubrique. */
+/** Contenus pilier pour Science / Esprit / Société : développement éditorial ~600 mots en FR par rubrique. */
 export type CategoryLandingRich = {
   /** Blocs de texte avec titre intermédiaire pour la lisibilité à l’écran. */
   sections: Array<{ title: string; paragraphs: string[] }>;
-  /** Trois angles courts en complément (cartes sous le texte). */
+  /** Trois angles courts en complément, cartes sous le texte. */
   cards: Array<{ title: string; body: string }>;
 };
 
@@ -24,8 +24,8 @@ export const categoryLandingRich: Partial<
         {
           title: "Mémoire, expertise et illusions de transfert",
           paragraphs: [
-            "Les joueurs forts ne « retiennent » pas davantage de pièces au hasard : ils structurent la position en motifs familiers (les chunks), ce qui transforme une carte chaotique en objets mentaux manipulables. C’est pourquoi les démonstrations classiques (position réelle versus pièces mélangées) font exploser l’écart entre experts et novices : ce n’est pas une mémoire brute supérieure, c’est une organisation du savoir.",
-            "Du même coup, le transfert automatique vers des compétences hors échiquier reste souvent faible ou étroit : savoir calculer des variantes ne te rend pas automatiquement champion en maths ou en planification de vie. Les méta-analyses du champ insistent sur cet écueil : au lieu de promesses magiques, nous regardons ce qui transite réellement (habitudes attentionnelles, gestion de l’erreur, discipline d’analyse) et ce qui reste spécifique au jeu.",
+            "Les joueurs forts ne « retiennent » pas davantage de pièces au hasard : ils structurent la position en motifs familiers dits chunks, ce qui transforme une carte chaotique en objets mentaux manipulables. C’est pourquoi les démonstrations classiques, position réelle contre pièces mélangées, font exploser l’écart entre experts et novices : ce n’est pas une mémoire brute supérieure, c’est une organisation du savoir.",
+            "Du même coup, le transfert automatique vers des compétences hors échiquier reste souvent faible ou étroit : savoir calculer des variantes ne te rend pas automatiquement champion en maths ou en planification de vie. Les méta-analyses du champ insistent sur cet écueil : au lieu de promesses magiques, nous regardons ce qui transite réellement : habitudes attentionnelles, gestion de l’erreur, discipline d’analyse, et ce qui reste spécifique au jeu.",
           ],
         },
         {
@@ -73,7 +73,7 @@ export const categoryLandingRich: Partial<
         {
           title: "Expertise, memory, and the limits of transfer",
           paragraphs: [
-            "Strong players don’t remember random piece soups better than weaker players; they recognize meaningful chunks that collapse dozens of details into a few mental objects. Classic demonstrations (real games versus shuffled positions) aren’t magic tricks; they reveal structured long-term memory at work.",
+            "Strong players don’t remember random piece soups better than weaker players; they recognize meaningful chunks that collapse dozens of details into a few mental objects. Classic demonstrations, real games versus shuffled positions, aren’t magic tricks; they reveal structured long-term memory at work.",
             "Automatic spill-over to non-chess life is often narrow or weak: calculating variants doesn’t silently turn you into a planning superhero outside the board. Meta-analytic work in the field warns precisely against that fantasy. We focus on what plausibly transfers: attentional habits, error management, discipline of analysis, and what remains domain-specific.",
           ],
         },
@@ -122,7 +122,7 @@ export const categoryLandingRich: Partial<
         {
           title: "Expertise, Gedächtnis und Transferillusionen",
           paragraphs: [
-            "Starke Spieler merken sich keine zufälligen Figurenhaufen besser; sie erkennen Bedeutungsmuster und verdichten Information zu wenigen mentalen Objekten. Klassische Demonstrationen (echte Stellung versus durchgemischte Figuren) sind keine Tricks; sie zeigen strukturiertes Langzeitwissen.",
+            "Starke Spieler merken sich keine zufälligen Figurenhaufen besser; sie erkennen Bedeutungsmuster und verdichten Information zu wenigen mentalen Objekten. Klassische Demonstrationen, echte Stellung gegen durchgemischte Figuren, sind keine Tricks; sie zeigen strukturiertes Langzeitwissen.",
             "Automatischer Transfer ins Leben außerhalb des Bretts bleibt oft eng oder schwach: Variantenrechnen macht dich nicht automatisch zum Planungsgenie. Metaanalysen warnen genau vor dieser Fantasie. Wir fragen, was plausibel übergeht: Aufmerksamkeitsgewohnheiten, Umgang mit Fehlern, Analysehygiene, und was feldspezifisch bleibt.",
           ],
         },
@@ -174,7 +174,7 @@ export const categoryLandingRich: Partial<
         {
           title: "Pression, erreur et récit que tu te racontes",
           paragraphs: [
-            "Une erreur n’est pas qu’un coup faible : souvent, c’est le début d’un récit (« je suis nul », « ça recommence ») qui pirate tes décisions suivantes. Inversement, une bonne série peut déclencher une surexcitation qui te fait perdre la sobriété tactique. Savoir découpler le fait (blunder matériel) de l’interprétation (identité globale) est une compétence : elle se travaille avec des protocoles simples : pause respiration, mini-checklist avant les coups critiques, journal de séances.",
+            "Une erreur n’est pas qu’un coup faible : souvent, c’est le début d’un récit (« je suis nul », « ça recommence ») qui pirate tes décisions suivantes. Inversement, une bonne série peut déclencher une surexcitation qui te fait perdre la sobriété tactique. Savoir découpler le fait matériel, le blunder, de l’interprétation identitaire est une compétence : elle se travaille avec des protocoles simples : pause respiration, mini-checklist avant les coups critiques, journal de séances.",
             "La pression du classement transforme parfois un indicateur statistique en badge moral. Rappel utile : l’Elo est une estimation, pas une sentence. Quand tu lui donnes trop de place, tu joues pour protéger un nombre au lieu de jouer la position : une distorsion coûteuse que nous explorons sans complaisance.",
           ],
         },
@@ -223,7 +223,7 @@ export const categoryLandingRich: Partial<
         {
           title: "Pressure, mistakes, and the story you spin",
           paragraphs: [
-            "A mistake isn’t only a weak move; it often triggers a narrative (‘I’m hopeless’, ‘here we go again’) that hijacks later decisions. Conversely, a streak can intoxicate you into tactical sloppiness. Separating fact (material blunder) from meaning (global identity) is a skill, trained with simple protocols: breathing pauses, mini-checklists before critical moves, session journals.",
+            "A mistake isn’t only a weak move; it often triggers a narrative (‘I’m hopeless’, ‘here we go again’) that hijacks later decisions. Conversely, a streak can intoxicate you into tactical sloppiness. Separating the material blunder from the identity story you tell about it is a skill, trained with simple protocols: breathing pauses, mini-checklists before critical moves, session journals.",
             "Rating pressure can turn a statistical estimate into a moral badge. Useful reminder: Elo approximates strength; it doesn’t sentence your worth. Over-identifying makes you protect a number instead of playing the position, a costly distortion we unpack bluntly.",
           ],
         },
@@ -272,7 +272,7 @@ export const categoryLandingRich: Partial<
         {
           title: "Druck, Fehler und die Geschichte danach",
           paragraphs: [
-            "Ein Fehler ist nicht nur ein schwacher Zug : oft startet er eine Erzählung („ich tauge nicht“, „schon wieder“), die spätere Entscheidungen kapert. Umgekehrt kann eine Serie dich trunken machen und taktisch nachlässig werden. Fakt (Material) von Bedeutung (Identität) zu trennen ist trainierbar: Atempausen, Mini-Checklisten vor kritischen Zügen, Session-Tagebuch.",
+            "Ein Fehler ist nicht nur ein schwacher Zug : oft startet er eine Erzählung („ich tauge nicht“, „schon wieder“), die spätere Entscheidungen kapert. Umgekehrt kann eine Serie dich trunken machen und taktisch nachlässig werden. Materialfehler und Identitätsnarrativ zu trennen ist trainierbar: Atempausen, Mini-Checklisten vor kritischen Zügen, Session-Tagebuch.",
             "Ratingdruck verwandelt eine Schätzung manchmal in ein moralisches Etikett. Erinnerung: Elo ist ein Modell, kein Urteil über deinen Wert. Überidentifikation lässt dich eine Zahl schützen statt die Stellung zu spielen : ein teurer Effekt, den wir klar benennen.",
           ],
         },
@@ -324,7 +324,7 @@ export const categoryLandingRich: Partial<
         {
           title: "Éducation, médiation et promesses tenues ou non",
           paragraphs: [
-            "Les programmes scolaires et les associations ont démontré que les échecs peuvent être une porte d’entrée vers la concentration et la coopération : lorsque l’encadrement est sérieux, lorsque les objectifs pédagogiques sont clairs, lorsque l’exclusion informelle (genre, classe sociale, handicap) est traitée comme un risque opérationnel, pas comme une anecdote.",
+            "Les programmes scolaires et les associations ont démontré que les échecs peuvent être une porte d’entrée vers la concentration et la coopération : lorsque l’encadrement est sérieux, lorsque les objectifs pédagogiques sont clairs, lorsque l’exclusion informelle, genre, classe sociale ou handicap, est traitée comme un risque opérationnel, pas comme une anecdote.",
             "Nous scrutons aussi les discours marketing (« les échecs rendent intelligent »), pour les replacer dans ce que la littérature peut ou ne peut pas soutenir. Le transfert scolaire existe parfois, souvent modeste, toujours dépendant du design : pas de miracle uniforme, mais des conditions identifiables pour que l’outil fonctionne.",
           ],
         },
@@ -373,7 +373,7 @@ export const categoryLandingRich: Partial<
         {
           title: "Education, outreach, promises kept or broken",
           paragraphs: [
-            "School programs and clubs show chess can open doors to focus and cooperation : when staffing is serious, pedagogical goals clear, and informal exclusion (gender, class, disability) treated as operational risk, not anecdote.",
+            "School programs and clubs show chess can open doors to focus and cooperation : when staffing is serious, pedagogical goals clear, and informal exclusion on grounds of gender, class, or disability is treated as operational risk, not anecdote.",
             "We also audit marketing claims : ‘chess makes you smarter’ : against what literature can sustain. Classroom transfer sometimes appears, often modest, always design-dependent: no uniform miracle, but identifiable conditions for tools to work.",
           ],
         },
@@ -422,7 +422,7 @@ export const categoryLandingRich: Partial<
         {
           title: "Bildung, Outreach, Versprechen",
           paragraphs: [
-            "Schulprojekte und Vereine zeigen: Schach kann Konzentration und Kooperation öffnen : wenn Betreuung ernst genommen wird, pädagogische Ziele klar sind und informelle Ausschlüsse (Geschlecht, Klasse, Behinderung) als Risiko behandelt werden, nicht als Randnotiz.",
+            "Schulprojekte und Vereine zeigen: Schach kann Konzentration und Kooperation öffnen : wenn Betreuung ernst genommen wird, pädagogische Ziele klar sind und informelle Ausschlüsse wegen Geschlecht, sozialer Klasse oder Behinderung als Risiko behandelt werden, nicht als Randnotiz.",
             "Wir prüfen Marketing („Schach macht schlau“) gegentragfähige Literatur. Transfer in Schule existiert manchmal, oft bescheiden, immer abhängig vom Design : keine Universalmagie, aber erkennbare Bedingungen für wirksame Programme.",
           ],
         },

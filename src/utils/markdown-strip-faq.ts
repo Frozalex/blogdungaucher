@@ -117,7 +117,7 @@ export async function renderMarkdownToArticleHtml(markdown: string): Promise<{
   return { html, headings };
 }
 
-/** Sommaire (h2–h3) sans rendre tout le HTML — utile si le corps utilise `<Content />`. */
+/** Sommaire (h2–h3) sans rendre tout le HTML ; utile si le corps utilise `<Content />`. */
 export function extractArticleHeadings(markdown: string): ArticleHeading[] {
   return extractHeadingsFromMdast(parseMarkdown(markdown));
 }

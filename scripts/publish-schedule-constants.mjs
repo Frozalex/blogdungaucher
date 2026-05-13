@@ -1,8 +1,8 @@
 /**
  * Règle éditoriale : 2 billets / semaine (lundi + jeudi), dates ISO (UTC).
- * — `RESCHEDULE_FROM` : dernier jour « figé » exclusif pour le calcul du premier
+ * `RESCHEDULE_FROM` : dernier jour « figé » exclusif pour le calcul du premier
  *   lundi de grille (max publishDate < RESCHEDULE_FROM → lundi suivant).
- * — `SCHEDULE_GRID_ANCHOR_MONDAY` : tout billet avec publishDate >= ce lundi
+ * `SCHEDULE_GRID_ANCHOR_MONDAY` : tout billet avec publishDate >= ce lundi
  *   doit être sur la grille (lun/jeu, 2 par semaine ISO, nombre pair total).
  *   Les dates entre RESCHEDULE_FROM et ce lundi restent manuelles (coussin).
  *

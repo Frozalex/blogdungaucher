@@ -79,8 +79,8 @@ pillar: "Science du jeu"
 
 Le déploiement en production est assuré par **GitHub Actions** (SSH vers le serveur, script `deploy-site.sh` côté VPS) :
 
-- **`deploy.yml`** — à chaque push sur la branche `main` (et déclenchement manuel *workflow_dispatch*).
-- **`scheduled-publish.yml`** — une fois par jour (cron 06:00 UTC) pour reconstruire le site : les articles avec une **`publishDate`** future dans le front matter ne s’affichent qu’à partir de cette date, sans intervention manuelle sur le serveur.
+- **`deploy.yml`** : à chaque push sur la branche `main` (et déclenchement manuel *workflow_dispatch*).
+- **`scheduled-publish.yml`** : une fois par jour (cron 06:00 UTC) pour reconstruire le site : les articles avec une **`publishDate`** future dans le front matter ne s’affichent qu’à partir de cette date, sans intervention manuelle sur le serveur.
 
 Secrets et détails : commentaires en tête de chaque fichier sous `.github/workflows/`.
 

@@ -34,7 +34,7 @@ const showReal = Boolean(slot && adsenseConfig.client);
   <aside class={`ad ad--placeholder ${format} ${compact ? "compact" : ""}`}>
     <span class="ad-label">Espace publicitaire</span>
     {!adsenseConfig.enabled ? (
-      <span class="ad-hint">Publicités désactivées (site.ts)</span>
+      <span class="ad-hint">Publicités désactivées · configuration dans site.ts</span>
     ) : (
       <span class="ad-hint">
         Ajoutez <code>PUBLIC_ADSENSE_SLOT</code> au build ou renseignez les slots dans <code>site.ts</code>

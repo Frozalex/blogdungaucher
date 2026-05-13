@@ -1,4 +1,4 @@
-# Robots — Blog d'un Gaucher (https://blogdungaucher.com)
+# Robots : Blog d'un Gaucher (https://blogdungaucher.com)
 # Politique détaillée pour assistants / crawlers IA : /llms.txt
 
 User-agent: *

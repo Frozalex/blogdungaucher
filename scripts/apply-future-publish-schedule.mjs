@@ -75,7 +75,7 @@ if (startMonday !== SCHEDULE_GRID_ANCHOR_MONDAY) {
     startMonday,
     "≠ constante SCHEDULE_GRID_ANCHOR_MONDAY",
     SCHEDULE_GRID_ANCHOR_MONDAY,
-    "— mets à jour scripts/publish-schedule-constants.mjs pour la CI.",
+    ": mets à jour scripts/publish-schedule-constants.mjs pour la CI.",
   );
 }
 

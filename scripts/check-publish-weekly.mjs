@@ -1,9 +1,9 @@
 /**
  * Valide la grille pour tout billet avec publishDate >= SCHEDULE_GRID_ANCHOR_MONDAY :
- * — nombre total de ces billets : **pair** (sinon impossible d’avoir 2 par semaine partout) ;
- * — chaque date : lundi ou jeudi (UTC) ;
- * — chaque semaine ISO contenant au moins un de ces billets : **exactement 2** billets ;
- * — pas deux billets le même jour.
+ * nombre total de ces billets : **pair** (sinon impossible d’avoir 2 par semaine partout) ;
+ * chaque date : lundi ou jeudi (UTC) ;
+ * chaque semaine ISO contenant au moins un de ces billets : **exactement 2** billets ;
+ * pas deux billets le même jour.
  *
  * Les billets avec publishDate < SCHEDULE_GRID_ANCHOR_MONDAY ne sont pas soumis à cette grille.
  *
@@ -57,7 +57,7 @@ const scheduled = rows.filter((r) => r.date >= anchor);
 scheduled.sort((a, b) => a.date.localeCompare(b.date) || a.slug.localeCompare(b.slug));
 
 if (scheduled.length === 0) {
-  console.log("Aucun billet avec publishDate >=", anchor, "— rien à valider.");
+  console.log("Aucun billet avec publishDate >=", anchor, ": rien à valider.");
   process.exit(0);
 }
 
@@ -66,7 +66,7 @@ let errors = 0;
 if (scheduled.length % 2 !== 0) {
   errors++;
   console.error(
-    `Nombre impair (${scheduled.length}) de billets avec publishDate >= ${anchor} — impossible d’avoir exactement 2 billets par semaine sans semaine à 1. Ajoute un billet ou repasse-en un sous l’ancrage (< ${anchor}).`,
+    `Nombre impair (${scheduled.length}) de billets avec publishDate >= ${anchor} : impossible d’avoir exactement 2 billets par semaine sans semaine à 1. Ajoute un billet ou repasse-en un sous l’ancrage (< ${anchor}).`,
   );
 }
 
@@ -97,7 +97,7 @@ for (const w of weeks) {
   const n = list.length;
   if (n !== 2) {
     errors++;
-    console.error(`${w} : ${n} billet(s) — attendu exactement 2.`);
+    console.error(`${w} : ${n} billet(s), attendu exactement 2.`);
     for (const r of list) console.error(`  ${r.date}  ${r.slug}`);
   }
 }
@@ -122,7 +122,7 @@ if (errors) {
 }
 
 console.log(
-  `OK — ${scheduled.length} billet(s) sur la grille (≥ ${anchor}) : semaines ${weeks[0]} … ${weeks[weeks.length - 1]}, lun/jeu UTC, 2 par semaine.`,
+  `OK : ${scheduled.length} billet(s) sur la grille (≥ ${anchor}) : semaines ${weeks[0]} … ${weeks[weeks.length - 1]}, lun/jeu UTC, 2 par semaine.`,
 );
 console.log(
   `Rappel : replanification auto des dates ≥ ${anchor} via apply-future-publish-schedule.mjs ; billets entre RESCHEDULE_FROM et l’ancrage : manuels.`,
