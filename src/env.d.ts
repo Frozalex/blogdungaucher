@@ -3,6 +3,7 @@
 
 interface ImportMetaEnv {
   readonly PUBLIC_ONESIGNAL_APP_ID?: string;
+  readonly PUBLIC_ONESIGNAL_SAFARI_WEB_ID?: string;
 }
 
 interface ImportMeta {

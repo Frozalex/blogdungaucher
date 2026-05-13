@@ -41,17 +41,14 @@ jobs:
             echo "Pas de nouvel article"
             exit 0
           fi
-          CONTENT_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^src/content/' || true)
+          CONTENT_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^src/content/blog/' | grep '\.md$' || true)
           if [ -z "$CONTENT_FILES" ]; then
-            echo "Pas de nouvel article"
+            echo "Pas de nouvel article (blog)"
             exit 0
           fi
-          MD_FILES=$(echo "$CONTENT_FILES" | grep '\.md$' || true)
-          if [ -z "$MD_FILES" ]; then
-            echo "Pas de nouvel article"
-            exit 0
-          fi
-          TARGET=$(echo "$MD_FILES" | sort | head -1)
+          TARGET=$(echo "$CONTENT_FILES" | sort | head -1)
+          SLUG=$(basename "$TARGET" .md)
+          ARTICLE_URL="https://blogdungaucher.com/fr/blog/${SLUG}/"
           if [ -z "${ONESIGNAL_APP_ID:-}" ] || [ -z "${ONESIGNAL_API_KEYS:-}" ]; then
             echo "ONESIGNAL_APP_ID ou ONESIGNAL_API_KEYS absent ; notification ignorée."
             exit 0
@@ -65,7 +62,7 @@ jobs:
             --arg app_id "$ONESIGNAL_APP_ID" \
             --arg title "$TITLE" \
             --arg body "$BODY_FR" \
-            --arg url "https://blogdungaucher.com/fr/" \
+            --arg url "$ARTICLE_URL" \
             '{
               app_id: $app_id,
               included_segments: ["All"],

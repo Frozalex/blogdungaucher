@@ -114,6 +114,7 @@ const allStructuredDataItems = fallbackArticleJsonLd
   : structuredDataItems;
 
 const oneSignalAppId = import.meta.env.PUBLIC_ONESIGNAL_APP_ID ?? "";
+const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "";
 ---
 <!DOCTYPE html>
 <html lang={lang} data-server-lang={lang}>
@@ -160,7 +161,6 @@ const oneSignalAppId = import.meta.env.PUBLIC_ONESIGNAL_APP_ID ?? "";
             "footer.suggestTopic": "Proposer un sujet ou poser une question",
             "footer.exploreTitle": "Explorer",
             "footer.allArticles": "Tous les articles",
-            "footer.rss": "Flux RSS",
             "footer.editorial": "Ligne \u00e9ditoriale",
             "footer.sectionsTitle": "Rubriques",
             "footer.trustTitle": "Confiance",
@@ -235,7 +235,6 @@ const oneSignalAppId = import.meta.env.PUBLIC_ONESIGNAL_APP_ID ?? "";
             "footer.suggestTopic": "Suggest a topic or ask a question",
             "footer.exploreTitle": "Explore",
             "footer.allArticles": "All articles",
-            "footer.rss": "RSS Feed",
             "footer.editorial": "Editorial line",
             "footer.sectionsTitle": "Sections",
             "footer.trustTitle": "Trust",
@@ -406,8 +405,12 @@ const oneSignalAppId = import.meta.env.PUBLIC_ONESIGNAL_APP_ID ?? "";
       <script type="application/ld+json" set:html={JSON.stringify(item)} />
     ))}
 
-    <script is:inline define:vars={{ oneSignalAppId }}>
+    <script is:inline define:vars={{ oneSignalAppId, oneSignalSafariWebId, pushLang: lang }}>
       globalThis.__PUBLIC_ONESIGNAL_APP_ID__ = oneSignalAppId;
+      globalThis.__ONESIGNAL_SAFARI_WEB_ID__ =
+        typeof oneSignalSafariWebId === "string" ? oneSignalSafariWebId : "";
+      globalThis.__PUSH_LANG__ =
+        typeof pushLang === "string" && pushLang ? pushLang : "fr";
     </script>
 
     <script is:inline>
@@ -430,7 +433,7 @@ const oneSignalAppId = import.meta.env.PUBLIC_ONESIGNAL_APP_ID ?? "";
             if (p && typeof p === "object" && !("notifications" in p)) {
               return {
                 ...p,
-                notifications: Boolean(p.marketing),
+                notifications: false,
               };
             }
             return p;
@@ -482,13 +485,30 @@ const oneSignalAppId = import.meta.env.PUBLIC_ONESIGNAL_APP_ID ?? "";
           if (!state.oneSignalSdkStarted) {
             state.oneSignalSdkStarted = true;
             window.OneSignalDeferred.push(async function (OneSignal) {
-              await OneSignal.init({
+              const safariId =
+                typeof globalThis.__ONESIGNAL_SAFARI_WEB_ID__ === "string"
+                  ? globalThis.__ONESIGNAL_SAFARI_WEB_ID__.trim()
+                  : "";
+              const initCfg = {
                 appId,
-                safari_web_id: "web.onesignal.auto.29ad6177-53c3-46b5-8017-0e7b95131b37",
                 notifyButton: { enable: true },
                 serviceWorkerPath: "onesignal/OneSignalSDKWorker.js",
                 serviceWorkerParam: { scope: "/onesignal/" },
-              });
+              };
+              if (safariId) initCfg.safari_web_id = safariId;
+              await OneSignal.init(initCfg);
+              try {
+                const L =
+                  typeof globalThis.__PUSH_LANG__ === "string" &&
+                  globalThis.__PUSH_LANG__
+                    ? globalThis.__PUSH_LANG__
+                    : "fr";
+                if (OneSignal.User?.addTags) {
+                  await OneSignal.User.addTags({ site_lang: L });
+                } else if (OneSignal.User?.addTag) {
+                  await OneSignal.User.addTag("site_lang", L);
+                }
+              } catch (_) {}
             });
             const os = document.createElement("script");
             os.src = "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js";

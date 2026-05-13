@@ -1,9 +1,11 @@
 <div class="cookie-banner" id="cookie-banner" hidden>
   <p>
-    Ce site utilise des cookies pour la mesure d'audience et la publicité. Les <strong>notifications push</strong> sont
-    indépendantes : tu peux les refuser tout en acceptant le reste, ou les activer plus tard.
+    Ce site utilise des cookies pour la mesure d'audience et la publicité. Les <strong>notifications push</strong> servent
+    uniquement à te prévenir des <strong>nouveaux articles</strong> (rythme visé : deux par semaine). Elles sont
+    <strong>séparées</strong> de la pub : tu peux les refuser tout en acceptant le reste, ou les activer plus tard.
     Tu modifies tout ça quand tu veux via « Paramètres cookies » en bas de page.
   </p>
+  <p id="cookie-push-hint" class="cookie-push-hint" hidden aria-live="polite"></p>
   <fieldset class="cookie-options">
     <legend>Préférences (tu coches ce que tu veux)</legend>
     <label>
@@ -16,7 +18,7 @@
     </label>
     <label>
       <input id="cookie-notifications" type="checkbox" />
-      Notifications push du blog (optionnel, désactivable à tout moment)
+      Notifications push pour les nouveaux articles (optionnel ; le navigateur demandera une confirmation)
     </label>
   </fieldset>
   <div class="cookie-actions">
@@ -48,7 +50,7 @@
         if (p && typeof p === "object" && !("notifications" in p)) {
           const migrated = {
             ...p,
-            notifications: Boolean(p.marketing),
+            notifications: false,
             updatedAt: p.updatedAt || new Date().toISOString(),
           };
           localStorage.setItem(KEY, JSON.stringify(migrated));
@@ -107,6 +109,16 @@
             });
             syncForm(next);
             toggleUi(next, banner, manage);
+            const hint = document.getElementById("cookie-push-hint");
+            if (hint) {
+              hint.textContent =
+                "Si le navigateur affiche une demande d'autorisation pour les notifications, accepte-la pour recevoir les alertes. Tu peux révoquer à tout moment dans les paramètres du navigateur ou via « Paramètres cookies ».";
+              hint.hidden = false;
+              window.clearTimeout(hint._hideT);
+              hint._hideT = window.setTimeout(function () {
+                hint.hidden = true;
+              }, 14000);
+            }
             return;
           }
           if (action === "reject") {
@@ -117,6 +129,12 @@
             });
             syncForm(next);
             toggleUi(next, banner, manage);
+            const hint = document.getElementById("cookie-push-hint");
+            if (hint) {
+              hint.hidden = true;
+              hint.textContent = "";
+              window.clearTimeout(hint._hideT);
+            }
             return;
           }
           if (action === "save") {
@@ -127,6 +145,21 @@
             });
             syncForm(next);
             toggleUi(next, banner, manage);
+            const hint = document.getElementById("cookie-push-hint");
+            if (hint) {
+              if (notificationsInput.checked) {
+                hint.textContent =
+                  "Si le navigateur affiche une demande d'autorisation pour les notifications, accepte-la pour recevoir les alertes. Tu peux révoquer à tout moment dans les paramètres du navigateur ou via « Paramètres cookies ».";
+                hint.hidden = false;
+                window.clearTimeout(hint._hideT);
+                hint._hideT = window.setTimeout(function () {
+                  hint.hidden = true;
+                }, 14000);
+              } else {
+                hint.hidden = true;
+                hint.textContent = "";
+              }
+            }
             return;
           }
           banner.hidden = false;
@@ -162,6 +195,17 @@
     color: var(--text-muted);
     font-size: 0.9rem;
     line-height: 1.5;
+  }
+
+  .cookie-push-hint {
+    margin-top: 0.65rem;
+    padding: 0.55rem 0.65rem;
+    border-radius: var(--radius-md);
+    border: 1px solid color-mix(in srgb, var(--green) 35%, var(--border-soft));
+    background: color-mix(in srgb, var(--green-light) 40%, var(--surface));
+    color: var(--text-main);
+    font-size: 0.82rem;
+    line-height: 1.45;
   }
 
   .cookie-actions {
