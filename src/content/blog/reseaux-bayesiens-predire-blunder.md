@@ -1,7 +1,7 @@
 ---
 title: "Réseaux bayésiens aux échecs : prédire le blunder adverse"
 excerpt: "Peut-on prédire mathématiquement quand un adversaire va blunder ? Les réseaux bayésiens offrent un cadre formel pour estimer cette probabilité à partir des indices disponibles dans la position."
-publishDate: "2026-05-22"
+publishDate: "2026-06-04"
 category: "science"
 featured: false
 featuredRank: 99

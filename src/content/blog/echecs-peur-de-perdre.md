@@ -1,7 +1,7 @@
 ---
 title: "Échecs et peur de perdre : quand la défaite paralyse avant d'arriver"
 excerpt: "La peur de perdre change tout aux échecs. Elle transforme le style de jeu, paralyse la créativité, et crée souvent les défaites qu'elle cherche à éviter. Voici la psychologie complète de ce phénomène universel."
-publishDate: "2026-06-06"
+publishDate: "2026-06-29"
 category: "esprit"
 featured: false
 featuredRank: 99

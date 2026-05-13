@@ -4,11 +4,11 @@ import HomeLanding from "../../components/HomeLanding.astro";
 
 import { buildWebsiteJsonLd, getLatestPosts } from "../../utils/blog";
 
-const latestPosts = await getLatestPosts(5, "en");
+const latestPosts = await getLatestPosts(6, "en");
 ---
 <BaseLayout
   title="A Left-Hander's Blog - Chess Without Oversimplifying"
-  description="Weekly analyses on chess science, the competitive mindset, and chess in society. A rigorous and human editorial space."
+  description="Chess science, the competitive mindset, and chess in society: two new articles every week. A rigorous and human editorial space."
   canonicalPath="/en/"
   lang="en"
   frPath="/"

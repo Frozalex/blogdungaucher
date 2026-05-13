@@ -1,0 +1,28 @@
+name: Calendrier de publication (2 / semaine)
+
+on:
+  pull_request:
+    paths:
+      - "src/content/blog/**"
+      - "scripts/check-publish-weekly.mjs"
+      - "scripts/publish-schedule-constants.mjs"
+  push:
+    branches: [main]
+    paths:
+      - "src/content/blog/**"
+      - "scripts/check-publish-weekly.mjs"
+      - "scripts/publish-schedule-constants.mjs"
+
+jobs:
+  publish-schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Vérifier la grille lun/jeu (≥ ancrage)
+        run: node scripts/check-publish-weekly.mjs

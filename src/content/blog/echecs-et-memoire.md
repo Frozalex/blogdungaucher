@@ -1,7 +1,7 @@
 ﻿---
 title: "Découvrez le pouvoir des échecs sur votre mémoire"
 excerpt: "Mémoire de travail, chunks, ouvertures, parties oubliées ou gravées : ce que la psychologie cognitive et les neurosciences disent vraiment du lien entre échecs et mémoire, et comment t'entraîner pour que ça compte."
-publishDate: "2026-05-14"
+publishDate: "2026-05-18"
 category: "science"
 featured: false
 featuredRank: 99

@@ -1,7 +1,7 @@
 ﻿---
 title: "Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue"
 excerpt: "Le TDAH n'est pas un déficit d'attention : c'est une attention inconsistante. L'échiquier crée les rares conditions où ce cerveau trouve naturellement son point d'ancrage."
-publishDate: "2026-05-28"
+publishDate: "2026-06-15"
 category: "societe"
 featured: false
 featuredRank: 99

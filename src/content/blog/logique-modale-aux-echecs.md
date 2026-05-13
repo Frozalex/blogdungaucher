@@ -1,7 +1,7 @@
 ---
 title: "Logique modale aux échecs : raisonner en 'gagnant si...'"
 excerpt: "Chaque joueur raisonne en termes de possibilités et de nécessités : 'il peut forcer mat', 'je dois défendre cette case'. Ce type de raisonnement a un nom en logique formelle : la logique modale. Et il change tout à la façon de penser une position."
-publishDate: "2026-05-18"
+publishDate: "2026-05-25"
 category: "science"
 featured: false
 featuredRank: 99

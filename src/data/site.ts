@@ -7,7 +7,7 @@ export const siteConfig = {
   siteUrl: SITE_ORIGIN,
   defaultTitle: "Blog d'un Gaucher",
   defaultDescription:
-    "Un blog d'échecs personnel sur la science du jeu, l'esprit de compétition et l'impact social des échecs.",
+    "Un blog d'échecs personnel sur la science du jeu, l'esprit de compétition et l'impact social des échecs : deux articles par semaine.",
   /** PNG : meilleure compatibilité og:image que le SVG (réseaux, messageries). */
   defaultOgImage: "/images/og-default.png",
   features: {

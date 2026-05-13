@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/generate-og-png.mjs && astro build && node scripts/verify-dist-urls.mjs",
+    "build": "node scripts/generate-og-png.mjs && node scripts/check-publish-weekly.mjs && astro build && node scripts/verify-dist-urls.mjs",
+    "check:publish-weekly": "node scripts/check-publish-weekly.mjs",
+    "apply:publish-schedule": "node scripts/apply-future-publish-schedule.mjs",
     "preview": "astro preview"
   },
   "dependencies": {

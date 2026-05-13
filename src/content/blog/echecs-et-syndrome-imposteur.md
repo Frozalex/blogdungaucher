@@ -1,7 +1,7 @@
 ---
 title: "Le syndrome de l'imposteur aux échecs : monter en Elo sans se sentir légitime"
 excerpt: "Tu montes en Elo mais tu ne comprends pas vraiment comment. Tes victoires semblent dues à la chance, tes défaites semblent confirmer ce que tu sais déjà : tu n'es pas si bon. Ce sentiment a un nom, une cause et des solutions."
-publishDate: "2026-05-19"
+publishDate: "2026-05-28"
 category: "esprit"
 featured: false
 featuredRank: 99

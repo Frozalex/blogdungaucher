@@ -1,7 +1,7 @@
 ---
 title: "Les bienfaits des échecs sur le cerveau : ce que la science mesure vraiment"
 excerpt: "Mémoire, concentration, plasticité, vieillissement : les échecs ont des effets réels et documentés sur le cerveau. Mais attention aux mythes. Voici ce que la recherche dit et ce qu'elle ne dit pas."
-publishDate: "2026-06-18"
+publishDate: "2026-07-16"
 category: "science"
 featured: false
 featuredRank: 99

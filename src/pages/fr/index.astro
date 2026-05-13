@@ -4,11 +4,11 @@ import HomeLanding from "../../components/HomeLanding.astro";
 
 import { buildWebsiteJsonLd, getLatestPosts } from "../../utils/blog";
 
-const latestPosts = await getLatestPosts(5, "fr");
+const latestPosts = await getLatestPosts(6, "fr");
 ---
 <BaseLayout
   title="Blog d'un Gaucher"
-  description="Science du jeu, esprit compétitif et échecs dans la société. Un espace de partage et de réflexion."
+  description="Science du jeu, esprit compétitif et échecs dans la société. Deux articles par semaine. Un espace de partage et de réflexion."
   canonicalPath="/fr/"
   structuredData={buildWebsiteJsonLd()}
 >

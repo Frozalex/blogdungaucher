@@ -14,6 +14,8 @@
 - Public : joueurs d'échecs, curieux, lycéens, enseignants
 
 # ── Positionnement éditorial ──
+- Rythme visé : deux articles de blog par semaine (créneaux **lundi** et **jeudi**, dates UTC ; contrôle `npm run check:publish-weekly`)
+- Chaîne de publication : dépôt Git sur GitHub → GitHub Actions déclenche un déploiement SSH vers le serveur (`deploy.yml` sur push vers la branche par défaut ; `scheduled-publish.yml` en cron quotidien pour reconstruire le site afin que les articles dont la `publishDate` du front matter est atteinte deviennent visibles)
 - Ce blog ne publie pas de conseils médicaux ni de recommandations d'investissement
 - Les articles citent leurs sources scientifiques (DOI) directement dans le texte
 - Chaque article long-form dépasse 2 000 mots avec bibliographie en fin de page

@@ -1,7 +1,7 @@
 ---
 title: "Échecs et perfectionnisme toxique : quand le meilleur devient l'ennemi du bien"
 excerpt: "Le perfectionnisme semble une qualité aux échecs : chercher le meilleur coup, analyser profondément, ne rien laisser au hasard. Mais quand il dépasse un seuil, il devient toxique et dégrade la performance. Voici pourquoi."
-publishDate: "2026-06-02"
+publishDate: "2026-06-22"
 category: "esprit"
 featured: false
 featuredRank: 99

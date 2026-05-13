@@ -1,7 +1,7 @@
 ---
 title: "5 biais cognitifs qui te font blunder aux échecs"
 excerpt: "Tes blunders ne sont pas tous des erreurs de calcul. Beaucoup sont des erreurs de perception, de raisonnement, de jugement. Ces 5 biais cognitifs documentés par la psychologie sont responsables d'une large partie des erreurs que tu commets à l'échiquier."
-publishDate: "2026-06-09"
+publishDate: "2026-07-02"
 category: "esprit"
 featured: false
 featuredRank: 99

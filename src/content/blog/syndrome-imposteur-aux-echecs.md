@@ -1,7 +1,7 @@
 ---
 title: "Le syndrome de l'imposteur aux échecs : jouer sous le poids du doute"
 excerpt: "Tu joues bien, tu gagnes, et pourtant tu es persuadé que c'est de la chance. Que les autres vont 'te percer à jour'. Le syndrome de l'imposteur aux échecs touche des milliers de joueurs à tous les niveaux. Voici comment le reconnaître et le dépasser."
-publishDate: "2026-05-27"
+publishDate: "2026-06-11"
 category: "esprit"
 featured: false
 featuredRank: 99

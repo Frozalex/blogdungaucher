@@ -1,7 +1,7 @@
 ---
 title: "Échecs et colère : le circuit neurologique du ragequit"
 excerpt: "Renverser le plateau, couper la connexion, insulter l'adversaire. La colère aux échecs a un nom : le ragequit. Et elle a une explication neurologique précise que tout joueur devrait connaître."
-publishDate: "2026-05-25"
+publishDate: "2026-06-08"
 category: "esprit"
 featured: false
 featuredRank: 99

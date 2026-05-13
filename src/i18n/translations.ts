@@ -30,7 +30,7 @@ export const translations = {
       eyebrow: "Éditorial indépendant",
       titleHtml:
         'Comprendre les <span class="hero__accent display-serif">échecs</span><br/>sans simplifier le jeu.',
-      lead: "Chaque semaine, des analyses claires sur la science du jeu, le mental compétitif et l'impact des échecs dans la société, avec une approche humaine et exigeante.",
+      lead: "Deux articles par semaine : des analyses claires sur la science du jeu, le mental compétitif et l'impact des échecs dans la société, avec une approche humaine et exigeante.",
       startReading: "Commencer la lecture",
       seeSections: "Voir les rubriques",
       proof1: "Articles de fond",
@@ -143,7 +143,7 @@ export const translations = {
       eyebrow: "Independent editorial",
       titleHtml:
         'Understanding <span class="hero__accent display-serif">chess</span><br/>without oversimplifying.',
-      lead: "Each week, clear analyses on the science of the game, the competitive mindset and the impact of chess on society, with a human and demanding approach.",
+      lead: "Two articles every week: clear analyses on the science of the game, the competitive mindset and the impact of chess on society, with a human and demanding approach.",
       startReading: "Start reading",
       seeSections: "See sections",
       proof1: "In-depth articles",

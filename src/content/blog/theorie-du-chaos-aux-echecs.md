@@ -1,7 +1,7 @@
 ---
 title: "Théorie du chaos aux échecs : l'ordre dans la tempête"
 excerpt: "Les échecs semblent être un jeu d'ordre et de logique pure. Pourtant, la théorie du chaos révèle que les positions complexes ont des propriétés chaotiques réelles. Une petite erreur peut avoir des conséquences catastrophiques."
-publishDate: "2026-05-15"
+publishDate: "2026-05-21"
 category: "science"
 featured: false
 featuredRank: 99

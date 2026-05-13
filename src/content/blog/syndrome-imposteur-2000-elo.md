@@ -1,7 +1,7 @@
 ---
 title: "Le syndrome de l'imposteur à 2000 Elo : pourquoi tu ne te sens pas à ta place"
 excerpt: "Tu as atteint 2000 Elo. Une victoire incroyable. Et pourtant, quelque chose ne va pas. Tu te sens comme un imposteur. Comme si ce chiffre ne t'appartenait pas vraiment. Ce phénomène est plus répandu qu'on ne le croit, et il a une explication psychologique précise."
-publishDate: "2026-05-29"
+publishDate: "2026-06-18"
 category: "esprit"
 featured: false
 featuredRank: 99

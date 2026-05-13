@@ -1,7 +1,7 @@
 ---
 title: "Burnout aux échecs : quand le jeu que tu aimes te vide"
 excerpt: "Le burnout aux échecs est réel. Ce n'est pas de la paresse ni un manque de passion. C'est un épuisement profond qui touche aussi bien le junior prodige que le joueur de club assidu. Comment le reconnaître, le comprendre et en sortir."
-publishDate: "2026-06-11"
+publishDate: "2026-07-06"
 category: "esprit"
 featured: false
 featuredRank: 99

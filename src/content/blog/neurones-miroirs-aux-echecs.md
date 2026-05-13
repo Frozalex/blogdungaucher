@@ -1,7 +1,7 @@
 ---
 title: "Neurones miroirs aux échecs : lire l'adversaire dans ta propre tête"
 excerpt: "Les neurones miroirs sont au coeur de l'empathie et de l'anticipation. Aux échecs, ils jouent un rôle fascinant : simuler les intentions de l'adversaire. Voici ce que la neuroscience révèle sur ce mécanisme invisible."
-publishDate: "2026-05-20"
+publishDate: "2026-06-01"
 category: "science"
 featured: false
 featuredRank: 99

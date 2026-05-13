@@ -42,7 +42,7 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     titleHtml:
       'Comprendre les <span class="hero__accent display-serif">échecs</span><br/>sans simplifier le jeu.',
     lead:
-      "Chaque semaine, des analyses claires sur la science du jeu, le mental compétitif et l'impact des échecs dans la société, avec une approche humaine et exigeante.",
+      "Deux articles par semaine : des analyses claires sur la science du jeu, le mental compétitif et l'impact des échecs dans la société, avec une approche humaine et exigeante.",
     startReading: "Commencer la lecture",
     seeSections: "Voir les rubriques",
     proofListLabel: "Repères éditoriaux",
@@ -64,7 +64,7 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     titleHtml:
       'Understanding <span class="hero__accent display-serif">chess</span><br/>without oversimplifying.',
     lead:
-      "Each week, clear analyses on the science of the game, the competitive mindset and the impact of chess on society, with a human and demanding approach.",
+      "Two articles every week: clear analyses on the science of the game, the competitive mindset and the impact of chess on society, with a human and demanding approach.",
     startReading: "Start reading",
     seeSections: "See sections",
     proofListLabel: "Editorial markers",
@@ -86,7 +86,7 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     titleHtml:
       '<span class="hero__accent display-serif">Schach</span> verstehen<br/>ohne das Spiel zu vereinfachen.',
     lead:
-      "Jede Woche klare Analysen zur Spielwissenschaft, zum Wettkampfgeist und zur Rolle des Schachs in der Gesellschaft, mit einem menschlichen und anspruchsvollen Ansatz.",
+      "Zwei Artikel pro Woche: klare Analysen zur Spielwissenschaft, zum Wettkampfgeist und zur Rolle des Schachs in der Gesellschaft, mit einem menschlichen und anspruchsvollen Ansatz.",
     startReading: "Zur Lektüre",
     seeSections: "Rubriken ansehen",
     proofListLabel: "Redaktionelle Merkmale",
@@ -104,6 +104,14 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
 };
 
 const c = homeByLang[lang];
+
+/** Icônes stroke (24) alignées sur la couleur d’accent de chaque rubrique. */
+const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
+  science: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2.25"/><path d="M12 3v2.5M12 18.5V21M4.5 12H7m10 0h2.5"/><path d="M6.4 6.4l1.75 1.75m7.7 7.7l1.75 1.75M6.4 17.6l1.75-1.75m7.7-7.7l1.75-1.75"/></svg>`,
+  esprit: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-4.5-3.2-7.5-6.4-7.5-10.2A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 7.5 4.3C19.5 14.6 16.5 17.8 12 21z"/></svg>`,
+  societe: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="3.25"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  "grand-oral": `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h6"/></svg>`,
+};
 ---
 
 <div class="home-landing">
@@ -172,8 +180,8 @@ const c = homeByLang[lang];
             const cat = categoryMap[slug];
             const href = lang === "fr" ? cat.href : swapLangPrefix(cat.href, lang);
             return (
-              <a href={href} class="pillar" style={`--p:${cat.accent};`}>
-                <span class="pillar__dot"></span>
+              <a href={href} class="pillar" style={`--p:${cat.accent};--pillar-surface:${cat.surface};`}>
+                <span class="pillar__icon" set:html={pillarIcons[slug]} />
                 <div>
                   <span class="pillar__kicker" data-t={`categories.${slug}.shortLabel`}>
                     {cat.shortLabel}
@@ -224,7 +232,9 @@ const c = homeByLang[lang];
         </a>
       </div>
       <div class="latest-grid reveal-group">
-        {latestPosts.map((post, i) => <ArticleCard post={post} featured={i === 0} lang={lang} />)}
+        {latestPosts.map((post) => (
+          <ArticleCard post={post} featured={false} lang={lang} />
+        ))}
       </div>
     </div>
   </section>
@@ -377,7 +387,7 @@ const c = homeByLang[lang];
     box-shadow: var(--shadow-sm);
   }
 
-  /* Titres type maquette : première lettre massacrée en vert (reste en noir via tokens). */
+  /* Titres type maquette : première lettre en vert (reste en noir via tokens). */
   .home-landing h2.drop-heading.section-title {
     font-family: var(--font-display);
     font-style: normal;
@@ -407,20 +417,27 @@ const c = homeByLang[lang];
 
   .pillar-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
-    gap: 1.15rem;
-    margin-top: 1.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 1.35rem;
+    margin-top: 2rem;
     align-items: stretch;
   }
 
   .pillar {
     display: flex;
     align-items: flex-start;
-    gap: 0.85rem;
-    padding: 1.35rem 1.25rem;
-    border-radius: 3px;
-    border: 1px solid var(--border-soft);
-    background: var(--surface);
+    gap: 1rem;
+    padding: 1.55rem 1.45rem 1.5rem;
+    min-height: 10.5rem;
+    border-radius: 6px;
+    border: 1px solid color-mix(in srgb, var(--p) 28%, var(--border-soft));
+    background:
+      linear-gradient(
+        145deg,
+        color-mix(in srgb, var(--p) 16%, var(--surface)) 0%,
+        color-mix(in srgb, var(--pillar-surface, transparent) 55%, var(--surface)) 48%,
+        var(--surface) 100%
+      );
     box-shadow: var(--shadow-sm);
     transition:
       transform 240ms var(--ease-spring),
@@ -431,22 +448,31 @@ const c = homeByLang[lang];
 
   .pillar:hover {
     transform: translateY(-4px);
-    border-color: var(--p);
-    box-shadow: var(--shadow-md);
+    border-color: color-mix(in srgb, var(--p) 55%, var(--border-soft));
+    box-shadow: var(--shadow-md), 0 0 0 1px color-mix(in srgb, var(--p) 18%, transparent);
   }
 
-  .pillar__dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--p);
+  .pillar__icon {
     flex-shrink: 0;
-    margin-top: 0.4rem;
-    transition: transform 240ms var(--ease-spring);
+    width: 2.85rem;
+    height: 2.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: var(--p);
+    background: color-mix(in srgb, var(--p) 14%, var(--surface));
+    border: 1px solid color-mix(in srgb, var(--p) 22%, transparent);
+    transition: transform 240ms var(--ease-spring), background 180ms ease;
   }
 
-  .pillar:hover .pillar__dot {
-    transform: scale(1.45);
+  .pillar__icon :global(svg) {
+    display: block;
+  }
+
+  .pillar:hover .pillar__icon {
+    transform: scale(1.06);
+    background: color-mix(in srgb, var(--p) 22%, var(--surface));
   }
 
   .pillar > div {
@@ -456,11 +482,11 @@ const c = homeByLang[lang];
 
   .pillar__kicker {
     display: inline-flex;
-    margin-bottom: 0.2rem;
-    font-size: 0.64rem;
-    letter-spacing: 0.11em;
+    margin-bottom: 0.28rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--text-dim);
+    color: color-mix(in srgb, var(--p) 55%, var(--text-dim));
     font-weight: 700;
   }
 
@@ -468,15 +494,16 @@ const c = homeByLang[lang];
     display: block;
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: 0.94rem;
+    font-size: 1.08rem;
     color: var(--text-main);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.35rem;
+    letter-spacing: -0.02em;
   }
 
   .pillar p {
-    font-size: 0.84rem;
-    color: var(--text-muted);
-    line-height: 1.55;
+    font-size: 0.92rem;
+    color: color-mix(in srgb, var(--text-main) 38%, var(--text-muted));
+    line-height: 1.58;
     margin: 0;
   }
 
@@ -547,16 +574,9 @@ const c = homeByLang[lang];
     border-width: 1px;
   }
 
-  .latest-grid > :first-child {
-    grid-column: 1 / -1;
-  }
-
   @media (max-width: 900px) {
     .latest-grid {
       grid-template-columns: 1fr;
-    }
-    .latest-grid > :first-child {
-      grid-column: auto;
     }
     .section-head {
       flex-direction: column;

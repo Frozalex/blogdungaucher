@@ -1,7 +1,7 @@
 ---
 title: "Les bienfaits des pauses aux échecs : pourquoi arrêter de jouer te rend meilleur"
 excerpt: "Jouer moins pour progresser plus : ça semble absurde, et pourtant la science de la récupération cognitive explique pourquoi les pauses régulières sont une des pratiques les plus sous-estimées du joueur d'échecs sérieux."
-publishDate: "2026-06-20"
+publishDate: "2026-05-14"
 category: "esprit"
 featured: false
 featuredRank: 99

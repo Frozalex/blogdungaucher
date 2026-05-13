@@ -1,7 +1,7 @@
 ---
 title: "Loi de Murphy aux échecs : pourquoi le blunder paraît toujours arriver au pire moment"
 excerpt: "« Tout ce qui peut mal tourner tournera mal » : aux échecs, cette phrase résonne bizarrement bien. Ce n'est pas une loi physique. C'est une collision entre probabilité, fatigue mentale et façon dont tu racontes la partie après coup."
-publishDate: "2026-06-16"
+publishDate: "2026-07-13"
 category: "esprit"
 featured: false
 featuredRank: 99

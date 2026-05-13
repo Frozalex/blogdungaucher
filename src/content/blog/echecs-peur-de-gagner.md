@@ -1,7 +1,7 @@
 ---
 title: "Échecs et peur de gagner : le sabotage inconscient au bord de la victoire"
 excerpt: "Tu as une position gagnante depuis 10 coups. La victoire est à portée. Et soudain, sans vraiment comprendre pourquoi, tu joues un coup bizarre qui gâche tout. Ce n'est pas un accident. C'est la peur de gagner."
-publishDate: "2026-06-04"
+publishDate: "2026-06-25"
 category: "esprit"
 featured: false
 featuredRank: 99
