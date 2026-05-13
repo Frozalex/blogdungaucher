@@ -10,7 +10,7 @@
 # ── CONFIGURATION (à faire une seule fois) ───────────────────
 #
 # GitHub → Settings → Secrets and variables → Actions → New repository secret :
-# - DEPLOY_HOST     : IP ou hostname SSH du VPS (ex: 177.7.37.62)
+# - DEPLOY_HOST     : IP ou hostname SSH du VPS (exemple fictif, ne pas copier une vraie IP ici)
 # - DEPLOY_USER     : utilisateur SSH (ex: root)
 # - DEPLOY_SSH_KEY   : clé privée PEM (multi-ligne) pour GitHub Actions
 # - ONESIGNAL_APP_ID, ONESIGNAL_API_KEYS : même logique OneSignal que deploy.yml (optionnel)
