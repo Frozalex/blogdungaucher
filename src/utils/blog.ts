@@ -75,13 +75,69 @@ export function filterPostsForLang(
   return posts.filter((p) => !isFrenchOnlyPost(p));
 }
 
+/** Ordre d’affichage accueil : alterner science / esprit / société pour éviter un bloc d’une seule rubrique. */
+const PILLAR_DISPLAY_ORDER = ["science", "esprit", "societe"] as const;
+
+function interleaveLatestByPillar(posts: BlogEntry[], limit: number): BlogEntry[] {
+  const queues: Record<
+    (typeof PILLAR_DISPLAY_ORDER)[number],
+    BlogEntry[]
+  > = {
+    science: [],
+    esprit: [],
+    societe: [],
+  };
+  const other: BlogEntry[] = [];
+  for (const post of posts) {
+    const c = post.data.category;
+    if (c === "science" || c === "esprit" || c === "societe") {
+      queues[c].push(post);
+    } else {
+      other.push(post);
+    }
+  }
+
+  let turn = 0;
+  const out: BlogEntry[] = [];
+  while (out.length < limit) {
+    let added = false;
+    for (let j = 0; j < 3; j++) {
+      const cat = PILLAR_DISPLAY_ORDER[(turn + j) % 3];
+      const q = queues[cat];
+      if (q.length > 0) {
+        out.push(q.shift()!);
+        turn = (PILLAR_DISPLAY_ORDER.indexOf(cat) + 1) % 3;
+        added = true;
+        break;
+      }
+    }
+    if (!added) {
+      if (other.length > 0) {
+        out.push(other.shift()!);
+      } else {
+        const rest = [...queues.science, ...queues.esprit, ...queues.societe];
+        rest.sort(
+          (a, b) =>
+            b.data.publishDate.getTime() - a.data.publishDate.getTime(),
+        );
+        for (const p of rest) {
+          if (out.length >= limit) break;
+          out.push(p);
+        }
+        break;
+      }
+    }
+  }
+  return out;
+}
+
 export async function getLatestPosts(
   limit: number,
   lang: "fr" | "en" | "de" = "fr",
 ) {
   const posts = await getAllPosts();
   const list = filterPostsForLang(posts, lang);
-  return list.slice(0, limit);
+  return interleaveLatestByPillar(list, limit);
 }
 
 export function getPostSlug(post: BlogEntry) {
