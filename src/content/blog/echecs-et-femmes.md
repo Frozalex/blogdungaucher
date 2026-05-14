@@ -17,7 +17,7 @@ seoDescriptionEn: "Why are there so few women in chess? A breakdown of scientifi
 ogImage: "/images/blog/echecs-et-femmes-hero.png"
 heroImage:
   src: "/images/blog/echecs-et-femmes-hero.png"
-  alt: "Illustration pixel art : silhouette en combinaison blanche au centre d’une foule dans une salle sombre, titre « Échecs et Femmes » en surimpression."
+  alt: "Illustration pixel art : cinq femmes assises à une longue table sous un projecteur, fond sombre ; titre « Échecs et Femmes : pourquoi si peu de joueuses aujourd'hui ? » en surimpression."
   credit: "Blog d'un Gaucher"
   license: "Création originale"
 faq:
