@@ -376,6 +376,30 @@ const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    {/*
+      Fonts Google : chargement non-bloquant (media="print" → onload swap).
+      Gain typique : -200 ms LCP vs @import dans la CSS.
+      TODO RGPD : migrer vers self-host (woff2 dans /public/fonts/) pour
+                  supprimer la dépendance à fonts.googleapis.com (CNIL).
+    */}
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap"
+      />
+    </noscript>
+
     <meta property="og:site_name" content={siteConfig.name} />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title} />

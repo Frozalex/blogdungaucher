@@ -31,13 +31,15 @@ const thumbSrc = post.data.heroImage?.src ?? post.data.ogImage ?? null;
           class="card-thumb"
           src={thumbSrc}
           alt=""
-          width="640"
-          height="360"
+          width="600"
+          height="400"
           loading="lazy"
           decoding="async"
         />
       ) : (
-        <div class="card-thumb-fallback" aria-hidden="true" />
+        <div class="card-thumb-fallback" aria-hidden="true">
+          <span class="card-thumb-fallback__mark">♞</span>
+        </div>
       )}
     </div>
 
@@ -114,7 +116,8 @@ const thumbSrc = post.data.heroImage?.src ?? post.data.ogImage ?? null;
 
   .card-thumb-wrap {
     position: relative;
-    aspect-ratio: 16 / 9;
+    /* 3/2 plus généreux pour les illustrations pixel art quasi-carrées. */
+    aspect-ratio: 3 / 2;
     width: 100%;
     overflow: hidden;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
@@ -129,16 +132,40 @@ const thumbSrc = post.data.heroImage?.src ?? post.data.ogImage ?? null;
     display: block;
   }
 
-  /** Article sans hero ni og : bandeau type vignette pour garder une grille homogène */
+  /**
+   * Article sans hero ni og : motif d'échiquier discret + glyphe Cavalier
+   * en serif, pour garder l'identité éditoriale même sans illustration.
+   */
   .card-thumb-fallback {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      145deg,
-      color-mix(in srgb, var(--accent) 28%, var(--surface)) 0%,
-      color-mix(in srgb, var(--accent) 8%, var(--surface)) 55%,
-      var(--surface) 100%
-    );
+    display: grid;
+    place-items: center;
+    background:
+      conic-gradient(
+        from 45deg at 50% 50%,
+        color-mix(in srgb, var(--accent) 10%, transparent) 0 25%,
+        transparent 0 50%,
+        color-mix(in srgb, var(--accent) 10%, transparent) 0 75%,
+        transparent 0
+      ) 0 0 / 28px 28px,
+      linear-gradient(
+        145deg,
+        color-mix(in srgb, var(--accent) 22%, var(--surface)) 0%,
+        color-mix(in srgb, var(--accent) 6%, var(--surface)) 60%,
+        var(--surface) 100%
+      );
+  }
+  .card-thumb-fallback__mark {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(3rem, 8vw, 5rem);
+    line-height: 1;
+    color: color-mix(in srgb, var(--accent) 55%, var(--text-main));
+    opacity: 0.55;
+    text-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 22%, transparent);
+    user-select: none;
   }
 
   .card-body {
