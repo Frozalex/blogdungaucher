@@ -14,6 +14,12 @@ titleEn: "Chess and Memory: How the Game Stimulates Your Cognitive Skills"
 excerptEn: "Working memory, chunks, openings, games forgotten or etched in mind: what cognitive psychology and neuroscience really say about chess and memory, and how to train so it counts."
 seoTitleEn: "Chess and Memory: Cognitive Stimulation, Science and Training"
 seoDescriptionEn: "Working memory, consolidation, openings, seniors: the chess-memory link explained by research (Chase & Simon, Gobet, de Groot) and concrete training tips."
+ogImage: "/images/blog/echecs-et-memoire-hero.png"
+heroImage:
+  src: "/images/blog/echecs-et-memoire-hero.png"
+  alt: "Illustration pixel art : profil de tête rempli de pièces d’échecs et d’étoiles sur fond bleu nuit ; texte « Découvrez le pouvoir des échecs sur votre mémoire » à gauche."
+  credit: "Blog d'un Gaucher"
+  license: "Création originale"
 ---
 
 Anatoli Karpov rejouait de mémoire, sans échiquier, des parties disputées vingt ans plus tôt. Coup par coup. Variante par variante. Des journalistes l'ont testé plusieurs fois : il ne se trompait pas.
