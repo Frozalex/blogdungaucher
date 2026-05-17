@@ -58,6 +58,8 @@ const structuredData = isFirstPage
   canonicalPath={isFirstPage ? "/fr/blog/" : `/fr/blog/${page.currentPage}/`}
   noindex={!isFirstPage}
   structuredData={structuredData}
+  prevHref={prevPageHref}
+  nextHref={nextPageHref}
 >
   <section class="page-hero">
     <div class="container">

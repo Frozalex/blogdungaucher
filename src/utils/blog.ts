@@ -207,46 +207,74 @@ export function buildArticleJsonLd(
       : lang === "de"
         ? getPostUrlDe(post)
         : getPostUrl(post);
+  const articleUrl = absoluteUrl(pageUrl);
   const inLanguage =
     lang === "en" ? "en-US" : lang === "de" ? "de-DE" : "fr-FR";
   const headline =
     lang === "en"
       ? (post.data.seoTitleEn ?? post.data.titleEn ?? post.data.seoTitle ?? post.data.title)
-      : lang === "de"
-        ? (post.data.seoTitle ?? post.data.title)
-        : (post.data.seoTitle ?? post.data.title);
+      : (post.data.seoTitle ?? post.data.title);
   const description =
     lang === "en"
       ? (post.data.seoDescriptionEn ?? post.data.excerptEn ?? post.data.seoDescription ?? post.data.excerpt)
-      : lang === "de"
-        ? (post.data.seoDescription ?? post.data.excerpt)
-        : (post.data.seoDescription ?? post.data.excerpt);
+      : (post.data.seoDescription ?? post.data.excerpt);
   const articleSectionEn: Record<CategorySlug, string> = {
     science: "Science",
     esprit: "Mind",
     societe: "Society",
     "grand-oral": category.label,
   };
-  return {
-    "@context": "https://schema.org",
-    "@type": ["Article", "BlogPosting"],
-    headline,
-    name: headline,
-    description,
-    datePublished: post.data.publishDate.toISOString(),
-    dateModified: modifiedDate.toISOString(),
-    inLanguage,
-    url: absoluteUrl(pageUrl),
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": absoluteUrl(pageUrl),
-    },
-    image: {
+
+  // Métriques de lecture
+  const words = post.body.trim().split(/\s+/).filter(Boolean).length;
+  const readingMinutes = Math.max(1, Math.ceil(words / 200));
+
+  // Images : OG (dimensions fixes 1200×630) + hero Wikimedia si distinct
+  const images: Record<string, unknown>[] = [
+    {
       "@type": "ImageObject",
+      "@id": `${articleUrl}#primaryimage`,
       url: absoluteUrl(imagePath),
       width: 1200,
       height: 630,
     },
+  ];
+  if (post.data.heroImage?.src) {
+    const heroAbsolute = absoluteUrl(post.data.heroImage.src);
+    if (heroAbsolute !== absoluteUrl(imagePath)) {
+      images.push({
+        "@type": "ImageObject",
+        url: heroAbsolute,
+        ...(post.data.heroImage.alt ? { caption: post.data.heroImage.alt } : {}),
+      });
+    }
+  }
+
+  // URL de l'auteur : page About dans la bonne langue
+  const authorPageUrl =
+    lang === "en"
+      ? `${siteConfig.siteUrl}/en/about/`
+      : `${siteConfig.siteUrl}/fr/about/`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": ["Article", "BlogPosting"],
+    "@id": `${articleUrl}#article`,
+    headline,
+    name: headline,
+    description,
+    wordCount: words,
+    timeRequired: `PT${readingMinutes}M`,
+    isAccessibleForFree: true,
+    datePublished: post.data.publishDate.toISOString(),
+    dateModified: modifiedDate.toISOString(),
+    inLanguage,
+    url: articleUrl,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleUrl,
+    },
+    image: images.length === 1 ? images[0] : images,
     articleSection:
       lang === "en" ? articleSectionEn[post.data.category] : category.label,
     keywords: post.data.tags?.join(", "),
@@ -258,17 +286,21 @@ export function buildArticleJsonLd(
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${siteConfig.siteUrl}/#publisher`,
       name: siteConfig.name,
       url: siteConfig.siteUrl,
       logo: {
         "@type": "ImageObject",
         url: `${siteConfig.siteUrl}/images/logo.svg`,
+        width: 56,
+        height: 80,
       },
     },
     author: {
       "@type": "Person",
+      "@id": `${siteConfig.siteUrl}/fr/about/#person`,
       name: post.data.author ?? "Le Gaucher",
-      url: siteConfig.siteUrl,
+      url: authorPageUrl,
     },
   };
 }

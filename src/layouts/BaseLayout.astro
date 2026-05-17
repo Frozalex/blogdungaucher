@@ -29,6 +29,8 @@ const {
   enPath,
   dePath,
   omitEnDeAlternateLinks = false,
+  prevHref,
+  nextHref,
 } = Astro.props as {
   title?: string;
   description?: string;
@@ -49,6 +51,9 @@ const {
   dePath?: string;
   /** Articles FR uniquement (ex. Grand oral) : pas d’hreflang en/de vers des URLs inexistantes. */
   omitEnDeAlternateLinks?: boolean;
+  /** Pagination : liens rel="prev" et rel="next" pour les moteurs. */
+  prevHref?: string;
+  nextHref?: string;
 };
 
 const resolvedFrPath = frPath ?? swapLangPrefix(canonicalPath, "fr");
@@ -75,9 +80,11 @@ const fallbackArticleJsonLd =
     ? ({
         "@context": "https://schema.org",
         "@type": ["Article", "BlogPosting"],
+        "@id": `${canonicalUrl}#article`,
         headline: title,
         name: title,
         description,
+        isAccessibleForFree: true,
         inLanguage,
         url: canonicalUrl,
         mainEntityOfPage: {
@@ -86,7 +93,10 @@ const fallbackArticleJsonLd =
         },
         image: {
           "@type": "ImageObject",
+          "@id": `${canonicalUrl}#primaryimage`,
           url: socialImage,
+          width: 1200,
+          height: 630,
         },
         ...(publishDate ? { datePublished: publishDate.toISOString() } : {}),
         ...(modifiedDate ? { dateModified: modifiedDate.toISOString() } : {}),
@@ -94,17 +104,23 @@ const fallbackArticleJsonLd =
         ...(tags?.length ? { keywords: tags.join(", ") } : {}),
         publisher: {
           "@type": "Organization",
+          "@id": `${siteConfig.siteUrl}/#publisher`,
           name: siteConfig.name,
           url: siteConfig.siteUrl,
           logo: {
             "@type": "ImageObject",
             url: `${siteConfig.siteUrl}/images/logo.svg`,
+            width: 56,
+            height: 80,
           },
         },
         author: {
           "@type": "Person",
+          "@id": `${siteConfig.siteUrl}/fr/about/#person`,
           name: "Le Gaucher",
-          url: siteConfig.siteUrl,
+          url: lang === "en"
+            ? `${siteConfig.siteUrl}/en/about/`
+            : `${siteConfig.siteUrl}/fr/about/`,
         },
       } satisfies Record<string, unknown>)
     : null;
@@ -368,6 +384,8 @@ const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "
       </>
     )}
     <link rel="alternate" type="application/rss+xml" title={`${siteConfig.name} RSS`} href={`${siteConfig.siteUrl}/rss.xml`} />
+    {prevHref && <link rel="prev" href={new URL(prevHref, siteConfig.siteUrl).toString()} />}
+    {nextHref && <link rel="next" href={new URL(nextHref, siteConfig.siteUrl).toString()} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
