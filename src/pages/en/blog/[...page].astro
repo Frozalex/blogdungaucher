@@ -112,34 +112,29 @@ const frCanonicalPath = getBlogIndexPagePath("fr", page.currentPage);
       {page.lastPage > 1 && (
         <nav class="pagination" aria-label="Page navigation">
           {prevPageHref ? (
-            <a href={prevPageHref} class="pag-btn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+            <a href={prevPageHref} class="pag-arrow" rel="prev" aria-label="Previous page">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
               <span data-t="blog.prev">Previous</span>
             </a>
-          ) : <span class="pag-btn is-disabled" aria-disabled="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg><span data-t="blog.prev">Previous</span></span>}
+          ) : (
+            <span class="pag-arrow is-disabled" aria-hidden="true"></span>
+          )}
 
-          <div class="pag-pages">
-            {paginationPages.map((n, i) => {
-              const prev = paginationPages[i - 1];
-              const showEllipsis = prev !== undefined && n - prev > 1;
-              return (
-                <>
-                  {showEllipsis && <span class="pag-ellipsis">…</span>}
-                  {n === page.currentPage
-                    ? <span class="pag-page is-current" aria-current="page">{n}</span>
-                    : <a href={n === 1 ? "/en/blog/" : `/en/blog/${n}/`} class="pag-page">{n}</a>
-                  }
-                </>
-              );
-            })}
+          <div class="pag-center">
+            <span class="pag-label">Page</span>
+            <span class="pag-current">{String(page.currentPage).padStart(2, "0")}</span>
+            <span class="pag-sep" aria-hidden="true">—</span>
+            <span class="pag-total">{String(page.lastPage).padStart(2, "0")}</span>
           </div>
 
           {nextPageHref ? (
-            <a href={nextPageHref} class="pag-btn">
+            <a href={nextPageHref} class="pag-arrow" rel="next" aria-label="Next page">
               <span data-t="blog.next">Next</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
             </a>
-          ) : <span class="pag-btn is-disabled" aria-disabled="true"><span data-t="blog.next">Next</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></span>}
+          ) : (
+            <span class="pag-arrow is-disabled" aria-hidden="true"></span>
+          )}
         </nav>
       )}
     </div>
@@ -177,31 +172,58 @@ const frCanonicalPath = getBlogIndexPagePath("fr", page.currentPage);
   .post-item { display: contents; }
   .listing-empty { color: var(--text-muted); text-align: center; padding: 2rem 0; font-size: 0.95rem; }
 
+  /* ── Pagination éditoriale ── */
   .pagination {
-    display: flex; align-items: center; justify-content: center;
-    gap: 0.5rem; margin-top: 2.5rem; flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-soft);
   }
-  .pag-btn {
-    display: inline-flex; align-items: center; gap: 0.35rem;
-    padding: 0.4rem 0.85rem; border-radius: var(--radius-sm);
-    border: 1.5px solid var(--border-soft); background: var(--surface);
-    color: var(--text-muted); font-size: 0.83rem; font-weight: 600;
-    transition: border-color 140ms ease, color 140ms ease;
+  .pag-arrow {
+    display: inline-flex; align-items: center; gap: 0.45rem;
+    padding: 0.55rem 0.95rem; border-radius: var(--radius-pill);
+    color: var(--text-muted);
+    font-family: var(--font-display);
+    font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em;
+    transition: color 160ms ease, background 160ms ease, transform 240ms var(--ease-spring);
+    width: max-content;
   }
-  .pag-btn:hover { border-color: var(--green); color: var(--green); }
-  .pag-btn.is-disabled { opacity: 0.35; cursor: default; pointer-events: none; }
+  .pag-arrow:first-child { justify-self: start; }
+  .pag-arrow:last-child  { justify-self: end; }
+  .pag-arrow:not(.is-disabled):hover { color: var(--green); background: var(--green-light); }
+  .pag-arrow svg { transition: transform 240ms var(--ease-spring); }
+  .pag-arrow:first-child:not(.is-disabled):hover svg { transform: translateX(-3px); }
+  .pag-arrow:last-child:not(.is-disabled):hover svg  { transform: translateX(3px); }
+  .pag-arrow.is-disabled { visibility: hidden; }
 
-  .pag-pages { display: flex; align-items: center; gap: 0.3rem; }
-  .pag-page {
-    display: inline-flex; align-items: center; justify-content: center;
-    width: 2rem; height: 2rem; border-radius: var(--radius-sm);
-    border: 1.5px solid var(--border-soft); background: var(--surface);
-    color: var(--text-muted); font-size: 0.83rem; font-weight: 600;
-    transition: border-color 140ms ease, color 140ms ease;
+  .pag-center {
+    display: inline-flex; align-items: baseline; gap: 0.55rem;
+    color: var(--text-muted); white-space: nowrap;
   }
-  .pag-page:hover { border-color: var(--green); color: var(--green); }
-  .pag-page.is-current { border-color: var(--green); background: color-mix(in srgb, var(--green) 10%, var(--surface)); color: var(--green); }
-  .pag-ellipsis { color: var(--text-dim); font-size: 0.83rem; padding: 0 0.2rem; }
+  .pag-label {
+    font-family: var(--font-display); font-size: 0.7rem;
+    font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .pag-current {
+    font-family: var(--font-serif); font-style: italic; font-weight: 500;
+    font-size: clamp(1.7rem, 3.4vw, 2.1rem); line-height: 1;
+    color: var(--green); letter-spacing: -0.01em; font-optical-sizing: auto;
+  }
+  .pag-sep { color: var(--border-strong); font-size: 1rem; }
+  .pag-total {
+    font-family: var(--font-serif); font-weight: 500;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    color: var(--text-dim); letter-spacing: -0.005em;
+  }
+  @media (max-width: 540px) {
+    .pagination { grid-template-columns: auto 1fr auto; gap: 0.5rem; }
+    .pag-arrow span { display: none; }
+    .pag-arrow { padding: 0.5rem 0.7rem; }
+  }
 
   @media (max-width: 860px) { .post-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .post-grid { grid-template-columns: 1fr; } }
