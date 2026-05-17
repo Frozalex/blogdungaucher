@@ -293,6 +293,12 @@
 </script>
 
 <style>
+  /* ── hidden override : empêche display:flex/block de masquer l'attribut hidden ── */
+  .consent-backdrop[hidden],
+  .consent-panel[hidden] {
+    display: none;
+  }
+
   /* ── Backdrop ──────────────────────────────────────────── */
   .consent-backdrop {
     position: fixed;
