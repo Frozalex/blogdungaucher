@@ -8,9 +8,10 @@ import type { BlogEntry } from "../utils/blog";
 interface Props {
   lang: "fr" | "en" | "de";
   latestPosts: BlogEntry[];
+  totalPosts: number;
 }
 
-const { lang, latestPosts } = Astro.props;
+const { lang, latestPosts, totalPosts } = Astro.props;
 const sectionsId = lang === "en" ? "sections" : "rubriques";
 const blogHref = `/${lang}/blog/`;
 
@@ -46,11 +47,10 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     startReading: "Commencer la lecture",
     seeSections: "Voir les rubriques",
     proofListLabel: "Repères éditoriaux",
-    proof1: "Articles de fond",
-    proof2: "Ton accessible",
-    proof3: "Approche rigoureuse",
-    editorialNote:
-      "Ici, on ne promet pas des progrès magiques en 7 jours. On propose des idées solides, des exemples concrets et des analyses que tu peux appliquer à ta pratique, que tu sois joueur de club, compétiteur ou simple passionné.",
+    proof1: `${totalPosts}+ analyses publiées`,
+    proof2: "2 articles / semaine",
+    proof3: "Sources citées, 0 clickbait",
+    editorialNote: "",
     sectionsEyebrow: "4 rubriques",
     sectionsTitle: "Ce dont on parle ici",
     recentEyebrow: "Récents",
@@ -68,11 +68,10 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     startReading: "Start reading",
     seeSections: "See sections",
     proofListLabel: "Editorial markers",
-    proof1: "In-depth articles",
-    proof2: "Accessible tone",
-    proof3: "Rigorous approach",
-    editorialNote:
-      "Here, we don't promise magical progress in 7 days. We offer solid ideas, concrete examples and analyses that you can apply to your practice, whether you're a club player, a competitor, or simply passionate about the game.",
+    proof1: `${totalPosts}+ analyses published`,
+    proof2: "2 articles / week",
+    proof3: "Cited sources, 0 clickbait",
+    editorialNote: "",
     sectionsEyebrow: "4 sections",
     sectionsTitle: "What we cover here",
     recentEyebrow: "Recent",
@@ -90,11 +89,10 @@ const homeByLang: Record<typeof lang, HomeCopy> = {
     startReading: "Zur Lektüre",
     seeSections: "Rubriken ansehen",
     proofListLabel: "Redaktionelle Merkmale",
-    proof1: "Hintergrundartikel",
-    proof2: "Zugänglicher Ton",
-    proof3: "Rigoroser Ansatz",
-    editorialNote:
-      "Hier versprechen wir keinen magischen Fortschritt in 7 Tagen. Wir bieten solide Ideen, konkrete Beispiele und Analysen, die du in deine Praxis übernehmen kannst, egal ob Vereinsspieler, Turnierspieler oder begeisterter Amateur.",
+    proof1: `${totalPosts}+ Analysen veröffentlicht`,
+    proof2: "2 Artikel / Woche",
+    proof3: "Quellen zitiert, 0 Clickbait",
+    editorialNote: "",
     sectionsEyebrow: "4 Rubriken",
     sectionsTitle: "Darum geht es hier",
     recentEyebrow: "Neu",
@@ -155,14 +153,6 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
         <li data-t="home.proof2">{c.proof2}</li>
         <li data-t="home.proof3">{c.proof3}</li>
       </ul>
-    </div>
-  </section>
-
-  <section class="editorial-intro">
-    <div class="container editorial-intro__wrap">
-      <div class="editorial-note editorial-note--home reveal scale-in" data-t="home.editorialNote">
-        {c.editorialNote}
-      </div>
     </div>
   </section>
 

@@ -1,0 +1,6 @@
+---
+// DE search redirects to the FR search page (all content is in French)
+const q = Astro.url.searchParams.get("q") ?? "";
+const target = q ? `/fr/recherche/?q=${encodeURIComponent(q)}` : "/fr/recherche/";
+return Astro.redirect(target, 302);
+---

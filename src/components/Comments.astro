@@ -9,22 +9,38 @@ const isGiscusConfigured =
   comments.repoId &&
   comments.category &&
   comments.categoryId;
+
+const contactEmail = "contact@blogdungaucher.com";
 ---
+
 <section class="comments" id="commentaires">
-  <h2>Commentaires</h2>
+  <h2>Une réaction ?</h2>
   <p class="comments-lead">
-    Tu as un avis, une nuance, ou une expérience perso à partager ? La discussion est ouverte.
+    Tu as un avis, une nuance ou une expérience à partager ? Un email, c'est simple et direct.
   </p>
 
-  {isGiscusConfigured ? (
-    <div id="comments-thread" class="comments-thread"></div>
-  ) : (
-    <div class="comments-disabled" role="status">
-      <p>
-        Les commentaires ne sont pas encore actifs. Active Giscus dans
-        <code>src/data/site.ts</code> pour afficher la discussion sous chaque article.
-      </p>
-    </div>
+  <a
+    href={`mailto:${contactEmail}?subject=R%C3%A9action%20%C3%A0%20l%27article`}
+    class="comments-email-cta"
+    aria-label={`Envoyer un email à ${contactEmail}`}
+  >
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+    </svg>
+    {contactEmail}
+  </a>
+
+  {isGiscusConfigured && (
+    <details class="comments-github-wrap">
+      <summary class="comments-github-toggle">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        Commenter via GitHub <span class="comments-github-note">(compte requis)</span>
+      </summary>
+      <div id="comments-thread" class="comments-thread"></div>
+    </details>
   )}
 </section>
 
@@ -41,30 +57,43 @@ const isGiscusConfigured =
     cleanupComments?.();
 
     function initComments() {
+      // Giscus s'initialise seulement quand le <details> est ouvert (lazy)
+      const details = document.querySelector(".comments-github-wrap");
       const host = document.getElementById("comments-thread");
-      if (!host) return;
+      if (!host || !details) return;
 
-      host.innerHTML = "";
-      const script = document.createElement("script");
-      script.src = "https://giscus.app/client.js";
-      script.async = true;
-      script.crossOrigin = "anonymous";
-      script.setAttribute("data-repo", repo);
-      script.setAttribute("data-repo-id", repoId);
-      script.setAttribute("data-category", category);
-      script.setAttribute("data-category-id", categoryId);
-      script.setAttribute("data-mapping", "pathname");
-      script.setAttribute("data-strict", "0");
-      script.setAttribute("data-reactions-enabled", "1");
-      script.setAttribute("data-emit-metadata", "0");
-      script.setAttribute("data-input-position", "top");
-      script.setAttribute("data-theme", "preferred_color_scheme");
-      script.setAttribute("data-lang", "fr");
-      script.setAttribute("data-loading", "lazy");
-      host.appendChild(script);
+      let loaded = false;
+
+      function load() {
+        if (loaded) return;
+        loaded = true;
+        host.innerHTML = "";
+        const script = document.createElement("script");
+        script.src = "https://giscus.app/client.js";
+        script.async = true;
+        script.crossOrigin = "anonymous";
+        script.setAttribute("data-repo", repo);
+        script.setAttribute("data-repo-id", repoId);
+        script.setAttribute("data-category", category);
+        script.setAttribute("data-category-id", categoryId);
+        script.setAttribute("data-mapping", "pathname");
+        script.setAttribute("data-strict", "0");
+        script.setAttribute("data-reactions-enabled", "1");
+        script.setAttribute("data-emit-metadata", "0");
+        script.setAttribute("data-input-position", "top");
+        script.setAttribute("data-theme", "preferred_color_scheme");
+        script.setAttribute("data-lang", "fr");
+        script.setAttribute("data-loading", "lazy");
+        host.appendChild(script);
+      }
+
+      details.addEventListener("toggle", () => {
+        if ((details as HTMLDetailsElement).open) load();
+      });
 
       window.__commentsCleanup = () => {
         host.innerHTML = "";
+        loaded = false;
       };
     }
 
@@ -85,35 +114,70 @@ const isGiscusConfigured =
 
   .comments h2 {
     font-size: 1.12rem;
-    margin: 0;
+    margin: 0 0 0.35rem;
   }
 
   .comments-lead {
-    margin-top: 0.45rem;
+    margin: 0 0 1rem;
     color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.6;
   }
 
+  /* ── CTA email ── */
+  .comments-email-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.1rem;
+    border-radius: var(--radius-md);
+    border: 1.5px solid var(--green);
+    background: color-mix(in srgb, var(--green) 8%, var(--surface));
+    color: var(--green);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition:
+      background 160ms ease,
+      box-shadow  160ms ease;
+    text-decoration: none;
+  }
+
+  .comments-email-cta:hover {
+    background: color-mix(in srgb, var(--green) 14%, var(--surface));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--green) 20%, transparent);
+  }
+
+  /* ── GitHub (secondaire, collapsible) ── */
+  .comments-github-wrap {
+    margin-top: 1.2rem;
+    border-top: 1px dashed var(--border-soft);
+    padding-top: 1rem;
+  }
+
+  .comments-github-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    list-style: none;
+    user-select: none;
+    transition: color 140ms ease;
+  }
+
+  .comments-github-toggle::-webkit-details-marker { display: none; }
+  .comments-github-toggle::marker { display: none; }
+
+  .comments-github-toggle:hover { color: var(--text-muted); }
+
+  .comments-github-note {
+    font-weight: 400;
+    opacity: 0.75;
+  }
+
   .comments-thread {
     margin-top: 0.85rem;
-  }
-
-  .comments-disabled {
-    margin-top: 0.85rem;
-    padding: 0.9rem 1rem;
-    border-radius: var(--radius-md);
-    border: 1px dashed var(--border-strong);
-    background: var(--bg-warm);
-    color: var(--text-muted);
-    font-size: 0.9rem;
-  }
-
-  .comments-disabled code {
-    font-size: 0.88em;
-    padding: 0.1em 0.35em;
-    border-radius: 4px;
-    background: color-mix(in srgb, var(--text-main) 8%, white);
-    color: var(--text-main);
   }
 </style>
