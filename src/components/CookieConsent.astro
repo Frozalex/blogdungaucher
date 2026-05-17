@@ -189,6 +189,12 @@
     }
 
     /* ── Init (appelé à chaque transition Astro) ─────────── */
+    function bindClick(el, handler) {
+      if (!el || el.dataset.consentBound === "1") return;
+      el.dataset.consentBound = "1";
+      el.addEventListener("click", handler);
+    }
+
     function initCookieConsent() {
       var panel    = document.getElementById("consent-panel");
       var backdrop = document.getElementById("consent-backdrop");
@@ -215,42 +221,33 @@
         if (!panel.hidden) hideModal();
       }
 
-      if (acceptBtn) {
-        acceptBtn.onclick = function () {
-          writeConsent({ analytics: true, marketing: true, notifications: true });
-          hideModal();
-        };
-      }
+      bindClick(acceptBtn, function () {
+        writeConsent({ analytics: true, marketing: true, notifications: true });
+        hideModal();
+      });
 
-      if (rejectBtn) {
-        rejectBtn.onclick = function () {
-          writeConsent({ analytics: false, marketing: false, notifications: false });
-          hideModal();
-        };
-      }
+      bindClick(rejectBtn, function () {
+        writeConsent({ analytics: false, marketing: false, notifications: false });
+        hideModal();
+      });
 
-      if (saveBtn) {
-        saveBtn.onclick = function () {
-          writeConsent({
-            analytics:     analyticsI ? analyticsI.checked : false,
-            marketing:     marketingI ? marketingI.checked : false,
-            notifications: notifI     ? notifI.checked     : false,
-          });
-          hideModal();
-        };
-      }
+      bindClick(saveBtn, function () {
+        writeConsent({
+          analytics:     analyticsI ? analyticsI.checked : false,
+          marketing:     marketingI ? marketingI.checked : false,
+          notifications: notifI     ? notifI.checked     : false,
+        });
+        hideModal();
+      });
 
-      // Ouverture depuis le footer ("Notifications et cookies")
-      if (manageBtn) {
-        manageBtn.onclick = function () {
-          _isManageMode = true;
-          syncForm(readConsent());
-          // Fermer le "Personnaliser" si déjà ouvert pour repartir proprement
-          var details = document.getElementById("consent-customize-details");
-          if (details) details.open = false;
-          showModal();
-        };
-      }
+      // Ouverture depuis le footer (« Notifications et cookies »)
+      bindClick(manageBtn, function () {
+        _isManageMode = true;
+        syncForm(readConsent());
+        var details = document.getElementById("consent-customize-details");
+        if (details) details.open = false;
+        showModal();
+      });
     }
 
     /* ── Keyboard : focus trap + ESC ─────────────────────── */
@@ -403,35 +400,66 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 2.6rem;
-    padding: 0 1.1rem;
+    min-height: 2.75rem;
+    padding: 0.55rem 1.15rem;
     border-radius: var(--radius-pill);
     font-family: var(--font-display);
     font-size: 0.88rem;
     font-weight: 700;
     cursor: pointer;
     border: 1.5px solid transparent;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
     transition:
-      background 160ms ease,
-      border-color 160ms ease,
-      color 160ms ease,
-      transform 200ms var(--ease-spring),
-      box-shadow 180ms ease;
+      background 120ms ease,
+      border-color 120ms ease,
+      color 120ms ease,
+      box-shadow 120ms ease,
+      transform 120ms var(--ease-out),
+      opacity 120ms ease;
     white-space: nowrap;
   }
 
-  .consent-btn:hover  { transform: translateY(-1px); }
-  .consent-btn:active { transform: translateY(0); }
+  .consent-btn:focus {
+    outline: none;
+  }
+
+  .consent-btn:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 2px;
+  }
+
+  .consent-btn:active {
+    transform: scale(0.98);
+    transition-duration: 60ms;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .consent-btn:hover {
+      transform: translateY(-1px);
+    }
+    .consent-btn:active {
+      transform: translateY(0) scale(0.99);
+    }
+  }
 
   .consent-btn--primary {
     background: var(--green);
     color: #fff;
     border-color: var(--green);
   }
-  .consent-btn--primary:hover {
+  .consent-btn--primary:active {
     background: var(--green-hover);
     border-color: var(--green-hover);
-    box-shadow: 0 4px 16px color-mix(in srgb, var(--green) 40%, transparent);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .consent-btn--primary:hover {
+      background: var(--green-hover);
+      border-color: var(--green-hover);
+      box-shadow: 0 4px 16px color-mix(in srgb, var(--green) 40%, transparent);
+    }
   }
 
   .consent-btn--ghost {
@@ -439,10 +467,17 @@
     color: var(--text-muted);
     border-color: var(--border-strong);
   }
-  .consent-btn--ghost:hover {
+  .consent-btn--ghost:active {
     color: var(--text-main);
-    border-color: var(--text-muted);
     background: var(--bg-warm);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .consent-btn--ghost:hover {
+      color: var(--text-main);
+      border-color: var(--text-muted);
+      background: var(--bg-warm);
+    }
   }
 
   .consent-btn--save {
@@ -451,10 +486,18 @@
     color: var(--text-main);
     border-color: var(--border-strong);
   }
-  .consent-btn--save:hover {
-    background: color-mix(in srgb, var(--green) 8%, var(--bg-warm));
+  .consent-btn--save:active {
+    background: color-mix(in srgb, var(--green) 12%, var(--bg-warm));
     border-color: var(--green-border);
     color: var(--green);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .consent-btn--save:hover {
+      background: color-mix(in srgb, var(--green) 8%, var(--bg-warm));
+      border-color: var(--green-border);
+      color: var(--green);
+    }
   }
 
   /* ── Personnaliser (details) ───────────────────────────── */
@@ -468,6 +511,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 2.75rem;
     padding: 0.7rem 0.9rem;
     background: var(--bg-warm);
     cursor: pointer;
@@ -477,14 +521,32 @@
     list-style: none;
     -webkit-user-select: none;
     user-select: none;
-    transition: color 140ms ease, background 140ms ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    transition: color 120ms ease, background 120ms ease;
   }
 
   .consent-summary::-webkit-details-marker { display: none; }
 
-  .consent-summary:hover {
+  .consent-summary:focus {
+    outline: none;
+  }
+
+  .consent-summary:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: -2px;
+  }
+
+  .consent-summary:active {
+    background: color-mix(in srgb, var(--green) 10%, var(--bg-warm));
     color: var(--text-main);
-    background: color-mix(in srgb, var(--green) 6%, var(--bg-warm));
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .consent-summary:hover {
+      color: var(--text-main);
+      background: color-mix(in srgb, var(--green) 6%, var(--bg-warm));
+    }
   }
 
   .consent-details[open] > .consent-summary {
@@ -522,9 +584,18 @@
     display: flex;
     align-items: flex-start;
     gap: 0.7rem;
-    padding: 0.75rem 0;
+    padding: 0.85rem 0;
     border-bottom: 1px solid var(--border-soft);
     cursor: pointer;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .consent-option:active {
+    background: color-mix(in srgb, var(--green) 5%, transparent);
+    margin-inline: -0.35rem;
+    padding-inline: 0.35rem;
+    border-radius: var(--radius-sm);
   }
 
   .consent-option:last-of-type {
@@ -533,9 +604,9 @@
 
   .consent-checkbox {
     flex-shrink: 0;
-    width: 1rem;
-    height: 1rem;
-    margin-top: 0.18rem;
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-top: 0.12rem;
     accent-color: var(--green);
     cursor: pointer;
   }
@@ -589,12 +660,21 @@
   @media (max-width: 560px) {
     .consent-panel {
       width: calc(100vw - 1.25rem);
-      max-height: calc(100dvh - 1.25rem);
-      padding: 1.25rem 1.25rem 1rem;
+      max-height: calc(100dvh - 1.25rem - env(safe-area-inset-bottom, 0px));
+      padding: 1.25rem 1.25rem calc(1rem + env(safe-area-inset-bottom, 0px));
       border-radius: var(--radius-lg);
       top: auto;
-      bottom: 0.625rem;
+      bottom: max(0.625rem, env(safe-area-inset-bottom, 0px));
       transform: translateX(-50%);
+    }
+
+    .consent-btn {
+      min-height: 3rem;
+      font-size: 0.92rem;
+    }
+
+    .consent-summary {
+      min-height: 3rem;
     }
 
     .consent-panel:not([hidden]) {
