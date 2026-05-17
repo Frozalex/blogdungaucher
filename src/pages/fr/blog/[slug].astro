@@ -8,6 +8,7 @@ import Breadcrumb from "../../../components/Breadcrumb.astro";
 import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
 import Comments from "../../../components/Comments.astro";
+import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import ArticleIntroVideo from "../../../components/ArticleIntroVideo.astro";
 import ArticleDataRevealVideo from "../../../components/ArticleDataRevealVideo.astro";
 import ArticleSummaryVideo from "../../../components/ArticleSummaryVideo.astro";
@@ -210,6 +211,10 @@ const otherPillars = categorySlugs
         </div>
 
         <AdBanner format="inline" compact={true} />
+
+        {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
+          <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
+        )}
 
         <div class="article-body fade-up" style="--motion-delay: 100ms;">
           {midArticleSplit ? (

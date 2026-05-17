@@ -114,6 +114,22 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
 
 <div class="home-landing">
   <section class="hero hero--classic" aria-labelledby="home-hero-heading">
+    <!-- Décoration : mini échiquier pixel art, aria-hidden -->
+    <div class="hero-deco" aria-hidden="true">
+      <svg width="120" height="120" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+        {[...Array(8)].map((_, r) =>
+          [...Array(8)].map((_, c) => (
+            <rect
+              x={c}
+              y={r}
+              width="1"
+              height="1"
+              fill={(r + c) % 2 === 0 ? "currentColor" : "transparent"}
+            />
+          ))
+        )}
+      </svg>
+    </div>
     <div class="container hero--classic__inner">
       <p class="hero__sig fade-up" style="--motion-delay: 30ms;" data-t="home.signatureTagline">
         {c.signatureTagline}
@@ -251,8 +267,25 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
     margin-inline: auto;
   }
 
+  /* ── Décoration échiquier ── */
+  .hero-deco {
+    position: absolute;
+    top: calc(var(--navbar-h) + 1.5rem);
+    right: clamp(0.5rem, 4vw, 5rem);
+    color: var(--green);
+    opacity: 0.07;
+    transform: rotate(12deg);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  [data-theme="dark"] .hero-deco {
+    opacity: 0.1;
+  }
+
   /* ── Hero d’accueil : typo du site (Space Grotesk / Fraunces), fond = même grain que le body ── */
   .hero--classic {
+    position: relative;
     padding: calc(var(--navbar-h) + 2.25rem) 0 3.25rem;
     text-align: center;
   }
@@ -566,7 +599,7 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
 
   @media (max-width: 900px) {
     .latest-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
     }
     .section-head {
       flex-direction: column;
@@ -575,6 +608,12 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
     }
     .section-head__titles {
       text-align: center;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .latest-grid {
+      grid-template-columns: 1fr;
     }
   }
 
