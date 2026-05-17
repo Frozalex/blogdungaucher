@@ -8,31 +8,124 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   noindex={true}
 >
   <section class="nf">
-    <div class="container">
-      <span class="nf-code">404</span>
-      <h1>Cette page a quitté l'échiquier.</h1>
-      <p>Le contenu n'existe pas ou a été déplacé.</p>
+    <div class="container nf-container">
+      <span class="eyebrow">Échec et mat</span>
+      <span class="nf-code" aria-hidden="true">404</span>
+      <h1 class="nf-title">Cette page a quitté l'échiquier.</h1>
+      <p class="nf-lead">
+        La position recherchée n'existe pas — ou a été déplacée vers une autre case.
+      </p>
+
+      <figure class="nf-quote">
+        <blockquote>
+          On ne peut pas gagner sans risquer de perdre.
+        </blockquote>
+        <figcaption>Emanuel Lasker</figcaption>
+      </figure>
+
+      <div class="section-divider section-divider--editorial" role="separator" aria-hidden="true"><span></span></div>
+
       <div class="nf-actions">
-        <a href="/"     class="button-primary">Retour à l'accueil</a>
-        <a href="/blog" class="button-secondary">Tous les articles</a>
+        <a href="/fr/" class="button-primary">Retour à l'accueil</a>
+        <a href="/fr/blog/" class="button-secondary">Tous les articles</a>
+        <a href="/fr/recherche/" class="button-secondary">Rechercher</a>
       </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .nf { padding: 6rem 0; }
-  .nf-code {
-    font-family: var(--font-display);
-    font-size: clamp(4rem, 14vw, 9rem);
-    font-weight: 800;
-    line-height: 1;
-    color: var(--bg-warm);
-    -webkit-text-stroke: 2px var(--border-strong);
-    display: block;
-    margin-bottom: 0.5rem;
+  .nf {
+    padding: 4.5rem 0 6rem;
+    position: relative;
   }
-  .nf h1 { font-size: clamp(1.6rem, 4vw, 2.5rem); margin-bottom: 0.6rem; }
-  .nf p  { color: var(--text-muted); margin-bottom: 1.5rem; }
-  .nf-actions { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+  .nf-container {
+    max-width: 38rem;
+    text-align: center;
+  }
+
+  .eyebrow {
+    margin-bottom: 1.25rem;
+  }
+
+  .nf-code {
+    display: block;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(6rem, 18vw, 11rem);
+    line-height: 0.95;
+    color: transparent;
+    -webkit-text-stroke: 1.5px color-mix(in srgb, var(--green) 32%, var(--border-strong));
+    margin: 0.5rem 0 0.25rem;
+    letter-spacing: -0.03em;
+    font-optical-sizing: auto;
+    user-select: none;
+  }
+
+  .nf-title {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    color: var(--text-main);
+    margin: 0.5rem 0 0.75rem;
+    font-optical-sizing: auto;
+  }
+
+  .nf-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0 auto;
+    max-width: 28rem;
+  }
+
+  .nf-quote {
+    margin: 2.5rem auto 0;
+    max-width: 26rem;
+  }
+  .nf-quote blockquote {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+    line-height: 1.5;
+    color: var(--text-main);
+    font-optical-sizing: auto;
+  }
+  .nf-quote blockquote::before {
+    content: "« ";
+    color: var(--green);
+  }
+  .nf-quote blockquote::after {
+    content: " »";
+    color: var(--green);
+  }
+  .nf-quote figcaption {
+    margin-top: 0.7rem;
+    font-family: var(--font-display);
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .nf-quote figcaption::before {
+    content: "— ";
+    color: var(--green);
+  }
+
+  .nf-actions {
+    display: flex;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
 </style>
