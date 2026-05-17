@@ -23,6 +23,7 @@ import {
   getPostUrl,
   getPostUrlEn,
   getPostUrlDe,
+  getPostHeroSrc,
 } from "../../../utils/blog";
 import { getEnglishArticleMarkdown, renderEnglishMarkdown } from "../../../utils/english-article";
 import { swapLangPrefix } from "../../../utils/lang-paths";
@@ -116,7 +117,8 @@ const displayTitle   = post.data.titleEn   ?? post.data.title;
 const displayExcerpt = post.data.excerptEn ?? post.data.excerpt;
 const hasEnTranslation = !!englishMarkdown && !!(post.data.titleEn);
 
-const heroImage = post.data.heroImage;
+const heroSrc = getPostHeroSrc(post);
+const heroImage = heroSrc ? post.data.heroImage : undefined;
 const introVideo = post.data.introVideo?.trim();
 const summaryVideo = post.data.summaryVideo?.trim();
 const useRemotionIntro = post.data.remotionPlayerIntro === true;
@@ -214,15 +216,15 @@ const otherPillars = categorySlugs
         {showIntroVideo && introVideo && (
           <ArticleIntroVideo
             src={introVideo}
-            poster={heroImage?.src}
+            poster={heroSrc}
             aspect={introVideoAspect ?? "16:9"}
             videoTitle={`Intro video: ${displayTitle}`}
           />
         )}
 
-        {heroImage?.src && (
+        {heroSrc && heroImage && (
           <figure class="hero-media fade-up" style="--motion-delay: 70ms;">
-            <img class="hero-img" src={heroImage.src} alt={heroImage.alt} loading="lazy" decoding="async" />
+            <img class="hero-img" src={heroSrc} alt={heroImage.alt} loading="lazy" decoding="async" />
             {(heroImage.credit || heroImage.license || heroImage.sourceUrl) && (
               <figcaption class="hero-credit">
                 {heroImage.credit && <span class="credit-piece">Credit: {heroImage.credit}</span>}
@@ -264,7 +266,7 @@ const otherPillars = categorySlugs
               ) : (
                 <ArticleDataRevealVideo
                   src={midArticleVideo!}
-                  poster={heroImage?.src}
+                  poster={heroSrc}
                   aspect={post.data.midArticleVideoAspect ?? "16:9"}
                   videoTitle={`Key data video: ${displayTitle}`}
                   eyebrow={post.data.midArticleVideoEyebrow}
@@ -290,7 +292,7 @@ const otherPillars = categorySlugs
         {showSummaryVideo && summaryVideo && (
           <ArticleSummaryVideo
             src={summaryVideo}
-            poster={heroImage?.src}
+            poster={heroSrc}
             aspect={summaryVideoAspect}
             videoTitle={`Video summary: ${displayTitle}`}
             heading="Video recap"

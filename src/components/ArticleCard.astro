@@ -1,6 +1,6 @@
 ﻿---
 import type { BlogEntry } from "../utils/blog";
-import { formatDate, getCategoryMeta, getPostUrlLang } from "../utils/blog";
+import { formatDate, getCategoryMeta, getPostHeroSrc, getPostUrlLang } from "../utils/blog";
 
 const { post, featured = false, lang = "fr" } = Astro.props as {
   post: BlogEntry;
@@ -18,7 +18,7 @@ const postExcerpt =
     ? (post.data.excerptEn ?? post.data.excerpt)
     : post.data.excerpt;
 
-const thumbSrc = post.data.heroImage?.src ?? post.data.ogImage ?? null;
+const thumbSrc = getPostHeroSrc(post);
 ---
 <article
   class={`card scale-in ${featured ? "featured" : ""}`}
@@ -149,20 +149,26 @@ const thumbSrc = post.data.heroImage?.src ?? post.data.ogImage ?? null;
     inset: 0;
     display: grid;
     place-items: center;
-    background:
-      conic-gradient(
-        from 45deg at 50% 50%,
-        color-mix(in srgb, var(--accent) 10%, transparent) 0 25%,
-        transparent 0 50%,
-        color-mix(in srgb, var(--accent) 10%, transparent) 0 75%,
-        transparent 0
-      ) 0 0 / 28px 28px,
+    background-color: color-mix(in srgb, var(--accent) 6%, var(--surface));
+    background-image:
       linear-gradient(
-        145deg,
-        color-mix(in srgb, var(--accent) 22%, var(--surface)) 0%,
-        color-mix(in srgb, var(--accent) 6%, var(--surface)) 60%,
-        var(--surface) 100%
+        45deg,
+        color-mix(in srgb, var(--accent) 14%, transparent) 25%,
+        transparent 25%,
+        transparent 75%,
+        color-mix(in srgb, var(--accent) 14%, transparent) 75%
+      ),
+      linear-gradient(
+        45deg,
+        color-mix(in srgb, var(--accent) 14%, transparent) 25%,
+        transparent 25%,
+        transparent 75%,
+        color-mix(in srgb, var(--accent) 14%, transparent) 75%
       );
+    background-size: 24px 24px;
+    background-position:
+      0 0,
+      12px 12px;
   }
   .card-thumb-fallback__logo {
     width: clamp(2.75rem, 14vw, 4.25rem);

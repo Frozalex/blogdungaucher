@@ -1,6 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 
 import { categoryMap, siteConfig } from "../data/site";
+import { isPublicAssetAvailable } from "./public-asset";
 import type { VideoPostProps } from "@remotion/types";
 
 type BlogData = CollectionEntry<"blog">["data"];
@@ -47,7 +48,7 @@ export function buildVideoPostProps(
 
   const hero = data.heroImage;
   const heroSrc =
-    hero && typeof hero.src === "string"
+    hero && typeof hero.src === "string" && isPublicAssetAvailable(hero.src)
       ? resolveImageSrc(hero.src, siteOrigin)
       : null;
   const heroAlt =

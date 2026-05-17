@@ -30,6 +30,7 @@ import {
   getPostUrl,
   getPostUrlEn,
   getPostUrlDe,
+  getPostHeroSrc,
 } from "../../../utils/blog";
 import {
   extractArticleHeadings,
@@ -96,7 +97,8 @@ const postUrlEn = getPostUrlEn(post);
 const grandOralOnly = post.data.category === "grand-oral";
 const absolutePostUrl = absoluteUrl(postUrl);
 
-const heroImage = post.data.heroImage;
+const heroSrc = getPostHeroSrc(post);
+const heroImage = heroSrc ? post.data.heroImage : undefined;
 const introVideo = post.data.introVideo?.trim();
 const summaryVideo = post.data.summaryVideo?.trim();
 const useRemotionIntro = post.data.remotionPlayerIntro === true;
@@ -177,17 +179,17 @@ const otherPillars = categorySlugs
         {showIntroVideo && introVideo && (
           <ArticleIntroVideo
             src={introVideo}
-            poster={heroImage?.src}
+            poster={heroSrc}
             aspect={introVideoAspect ?? "16:9"}
             videoTitle={`Vidéo d’introduction : ${post.data.title}`}
           />
         )}
 
-        {heroImage?.src && (
+        {heroSrc && heroImage && (
           <figure class="hero-media fade-up" style="--motion-delay: 70ms;">
             <img
               class="hero-img"
-              src={heroImage.src}
+              src={heroSrc}
               alt={heroImage.alt}
               loading="lazy"
               decoding="async"
@@ -230,7 +232,7 @@ const otherPillars = categorySlugs
               ) : (
                 <ArticleDataRevealVideo
                   src={midArticleVideo!}
-                  poster={heroImage?.src}
+                  poster={heroSrc}
                   aspect={post.data.midArticleVideoAspect ?? "16:9"}
                   videoTitle={`Données clés en vidéo : ${post.data.title}`}
                   eyebrow={post.data.midArticleVideoEyebrow}
@@ -256,7 +258,7 @@ const otherPillars = categorySlugs
         {showSummaryVideo && summaryVideo && (
           <ArticleSummaryVideo
             src={summaryVideo}
-            poster={heroImage?.src}
+            poster={heroSrc}
             aspect={summaryVideoAspect}
             videoTitle={`Résumé en vidéo : ${post.data.title}`}
             heading="En résumé en vidéo"

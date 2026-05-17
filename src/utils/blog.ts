@@ -1,8 +1,16 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 
 import { categoryMap, siteConfig, type CategorySlug } from "../data/site";
+import { isPublicAssetAvailable } from "./public-asset";
 
 export type BlogEntry = CollectionEntry<"blog">;
+
+/** Hero affichable : `src` non vide et fichier présent dans `public/`. */
+export function getPostHeroSrc(post: BlogEntry): string | null {
+  const src = post.data.heroImage?.src?.trim();
+  if (!src) return null;
+  return isPublicAssetAvailable(src) ? src : null;
+}
 
 export function calculateReadingTime(body: string): string {
   const words = body.trim().split(/\s+/).filter(Boolean).length;
@@ -239,13 +247,14 @@ export function buildArticleJsonLd(
       height: 630,
     },
   ];
-  if (post.data.heroImage?.src) {
-    const heroAbsolute = absoluteUrl(post.data.heroImage.src);
+  const heroSrc = getPostHeroSrc(post);
+  if (heroSrc) {
+    const heroAbsolute = absoluteUrl(heroSrc);
     if (heroAbsolute !== absoluteUrl(imagePath)) {
       images.push({
         "@type": "ImageObject",
         url: heroAbsolute,
-        ...(post.data.heroImage.alt ? { caption: post.data.heroImage.alt } : {}),
+        ...(post.data.heroImage?.alt ? { caption: post.data.heroImage.alt } : {}),
       });
     }
   }
