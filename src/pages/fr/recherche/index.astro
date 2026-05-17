@@ -18,7 +18,7 @@ const searchIndex = allPosts.map((p) => ({
 ---
 
 <BaseLayout
-  title="Rechercher — Blog d'un Gaucher"
+  title="Rechercher, Blog d'un Gaucher"
   description="Cherchez parmi les analyses publiées : Alzheimer, TDAH, Elo, AlphaZero, Grand Oral..."
   canonicalPath="/fr/recherche/"
 >
@@ -26,7 +26,7 @@ const searchIndex = allPosts.map((p) => ({
     <header class="search-header">
       <h1 class="search-title">Rechercher</h1>
       <p class="search-subtitle">
-        {allPosts.length} analyses disponibles — science, esprit, société, Grand Oral.
+        {allPosts.length} analyses disponibles : science, esprit, société, Grand Oral.
       </p>
     </header>
 
@@ -75,21 +75,21 @@ const searchIndex = allPosts.map((p) => ({
   };
 
   const raw = document.getElementById("search-index")?.textContent ?? "[]";
-  const INDEX: SearchEntry[] = JSON.parse(raw);
+  const INDEX : SearchEntry[] = JSON.parse(raw);
 
   const inputEl  = document.getElementById("search-input")  as HTMLInputElement;
   const clearBtn = document.getElementById("search-clear")   as HTMLButtonElement;
   const stateEl  = document.getElementById("search-state")  as HTMLElement;
   const listEl   = document.getElementById("search-results") as HTMLUListElement;
 
-  function normalize(s: string) {
+  function normalize(s : string) {
     return s
       .toLowerCase()
       .normalize("NFD")
       .replace(/[̀-ͯ]/g, ""); // strip accents
   }
 
-  function score(entry: SearchEntry, q: string): number {
+  function score(entry : SearchEntry, q : string): number {
     const nq = normalize(q);
     const title = normalize(entry.title);
     const excerpt = normalize(entry.excerpt);
@@ -101,7 +101,7 @@ const searchIndex = allPosts.map((p) => ({
     return 0;
   }
 
-  function render(results: SearchEntry[], q: string) {
+  function render(results : SearchEntry[], q : string) {
     listEl.innerHTML = "";
 
     if (results.length === 0) {
@@ -126,7 +126,7 @@ const searchIndex = allPosts.map((p) => ({
     });
   }
 
-  function search(q: string) {
+  function search(q : string) {
     q = q.trim();
     clearBtn.hidden = q.length === 0;
 
@@ -137,7 +137,7 @@ const searchIndex = allPosts.map((p) => ({
     }
 
     const results = INDEX
-      .map((e) => ({ entry: e, s: score(e, q) }))
+      .map((e) => ({ entry : e, s : score(e, q) }))
       .filter(({ s }) => s > 0)
       .sort((a, b) => b.s - a.s)
       .map(({ entry }) => entry);
@@ -243,7 +243,7 @@ const searchIndex = allPosts.map((p) => ({
     cursor: pointer;
     transition: background 140ms ease;
   }
-  .search-clear:hover { background: var(--border-strong); }
+  .search-clear:hover { background : var(--border-strong); }
 
   /* ── State ── */
   .search-state {
@@ -306,7 +306,7 @@ const searchIndex = allPosts.map((p) => ({
     margin: 0 0 0.5rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient : vertical;
     overflow: hidden;
   }
 

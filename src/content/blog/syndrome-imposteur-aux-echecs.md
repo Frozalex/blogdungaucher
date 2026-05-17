@@ -9,7 +9,7 @@ readingTime: "14 min"
 pillar: "Psychologie"
 tags: ["syndrome de l'imposteur", "psychologie", "échecs", "confiance en soi", "performance", "mental"]
 seoTitle: "Syndrome de l'imposteur aux échecs : 4 patterns et comment en sortir"
-seoDescription: "Guide complet : les 4 patterns du syndrome de l'imposteur chez le joueur d'échecs (tous niveaux), mécanismes validés et stratégies concrètes — journal, attribution, exposition."
+seoDescription: "Guide complet : les 4 patterns du syndrome de l'imposteur chez le joueur d'échecs (tous niveaux), mécanismes validés et stratégies concrètes: journal, attribution, exposition."
 ---
 
 Tu as gagné le tournoi de ton club. Félicitations et poignées de mains. Et dans ta tête, une voix : "Ils ont mal joué ce week-end. La semaine prochaine, ils verront mon vrai niveau." Tu représentes la France dans une compétition régionale. Dans ta tête : "Si seulement ils savaient combien j'ai galéré sur des positions basiques cette semaine." Tu analyses une position brillamment et un joueur fort acquiesce. Dans ta tête : "Il est juste poli."
@@ -100,8 +100,8 @@ La transformation du syndrome de l'imposteur ne se fait pas en un jour, mais ell
 
 ### Sources et références
 
-- **Clance, P. R.** *The Impostor Phenomenon: Overcoming the Fear That Haunts Your Success.* Peachtree Publishers, 1985. (Le livre de référence sur le syndrome de l'imposteur par sa co-découvreuse.)
+- **Clance, P. R.** *The Impostor Phenomenon : Overcoming the Fear That Haunts Your Success.* Peachtree Publishers, 1985. (Le livre de référence sur le syndrome de l'imposteur par sa co-découvreuse.)
 - **Beck, A. T.** *Cognitive Therapy of Depression.* Guilford Press, 1979. (Les distorsions cognitives et leur correction dans la thérapie cognitive.)
 - **Weiner, B.** *An Attributional Theory of Motivation and Emotion.* Springer, 1986. (La théorie des attributions causales et ses applications à la performance.)
 - **Dweck, C. S., & Leggett, E. L.** *A Social-Cognitive Approach to Motivation and Personality.* Psychological Review, 95(2), 256-273, 1988. (Les orientations de but et leur impact sur la performance et la motivation.)
-- **Young, V.** *The Secret Thoughts of Successful Women: Why Capable People Suffer from the Impostor Syndrome.* Crown Business, 2011. (Les différents "types" d'imposteurs et leurs stratégies caractéristiques.)
+- **Young, V.** *The Secret Thoughts of Successful Women : Why Capable People Suffer from the Impostor Syndrome.* Crown Business, 2011. (Les différents "types" d'imposteurs et leurs stratégies caractéristiques.)

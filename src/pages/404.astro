@@ -13,7 +13,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <span class="nf-code" aria-hidden="true">404</span>
       <h1 class="nf-title">Cette page a quitté l'échiquier.</h1>
       <p class="nf-lead">
-        La position recherchée n'existe pas — ou a été déplacée vers une autre case.
+        La position recherchée n'existe pas, ou a été déplacée vers une autre case.
       </p>
 
       <figure class="nf-quote">
@@ -117,8 +117,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     color: var(--text-dim);
   }
   .nf-quote figcaption::before {
-    content: "— ";
-    color: var(--green);
+    content: none;
   }
 
   .nf-actions {

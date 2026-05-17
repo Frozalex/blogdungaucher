@@ -21,7 +21,7 @@ function isImageFile(url) {
   return /\.(png|jpe?g|webp|avif|gif|svg|ico)$/.test(url.pathname);
 }
 function isStaticAsset(url) {
-  // Fichiers Astro hachés : CSS, JS — jamais modifiés à URL identique
+  // Fichiers Astro hachés : CSS, JS, jamais modifiés à URL identique
   return url.pathname.startsWith("/_astro/") && /\.(css|js)$/.test(url.pathname);
 }
 function isVideoFile(url) {

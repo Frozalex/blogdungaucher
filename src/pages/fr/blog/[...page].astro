@@ -106,7 +106,7 @@ const structuredData = isFirstPage
         Aucun article ne correspond à ta recherche sur cette page.
       </p>
 
-      <!-- Pagination — façon presse écrite -->
+      <!-- Pagination façon presse écrite -->
       {page.lastPage > 1 && (
         <nav class="pagination" aria-label="Navigation entre les pages">
           {prevPageHref ? (
@@ -121,7 +121,7 @@ const structuredData = isFirstPage
           <div class="pag-center">
             <span class="pag-label">Page</span>
             <span class="pag-current">{String(page.currentPage).padStart(2, "0")}</span>
-            <span class="pag-sep" aria-hidden="true">—</span>
+            <span class="pag-sep" aria-hidden="true">·</span>
             <span class="pag-total">{String(page.lastPage).padStart(2, "0")}</span>
           </div>
 

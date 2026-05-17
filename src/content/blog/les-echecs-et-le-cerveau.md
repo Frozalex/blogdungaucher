@@ -16,7 +16,7 @@ keyTakeaways:
   - "Transfert cognitif : Sala & Gobet 2017 (méta-analyse, 259 citations) montrent des effets faibles à modérés qui décroissent avec la qualité du design expérimental."
   - "Réserve cognitive (Verghese, NEJM 2003, n=469, 5 ans) : jeux de plateau associés à −74 % de risque de démence ; corrélation, pas causalité prouvée."
 seoTitle: "Échecs et cerveau : ce que l'IRMf révèle sur les joueurs experts"
-seoDescription: "IRM structurelle (Hänggi 2014), chronnectome (Premi 2020), fonctions exécutives : comment le cerveau d'un joueur d'échecs expert est différent neurologiquement — avec les chiffres."
+seoDescription: "IRM structurelle (Hänggi 2014), chronnectome (Premi 2020), fonctions exécutives : comment le cerveau d'un joueur d'échecs expert est différent neurologiquement, avec les chiffres."
 ogImage: "/images/blog/les-echecs-et-le-cerveau-hero.png"
 heroImage:
   src: "/images/blog/les-echecs-et-le-cerveau-hero.png"
@@ -234,15 +234,15 @@ Non. Les études sur l'activation cérébrale montrent que le jeu lent mobilise 
 **DOI de référence**, bibliographie exportée en mai 2026.
 
 1. Atherton M., Zhuang J., Bart W. *et al.* (2003). *A functional MRI study of high-level cognition. I. The game of chess.* **Cognitive Brain Research**. DOI [10.1016/s0926-6410(02)00207-0](https://doi.org/10.1016/s0926-6410(02)00207-0).
-2. Gobet F. & Simon H. A. (1998). *Expert chess memory: Revisiting the chunking hypothesis.* **Memory**, 6(3), 225-255.
+2. Gobet F. & Simon H. A. (1998). *Expert chess memory : Revisiting the chunking hypothesis.* **Memory**, 6(3), 225-255.
 3. Hänggi J., Brütsch K., Siegel A., Jäncke L. (2014). *The architecture of the chess player's brain.* **Neuropsychologia**. DOI [10.1016/j.neuropsychologia.2014.07.019](https://doi.org/10.1016/j.neuropsychologia.2014.07.019).
 4. Trevisan N., Jaillard A., Cattarinussi G. *et al.* (2022). *Surface-Based Cortical Measures in Multimodal Association Brain Regions Predict Chess Expertise.* **Brain Sciences**. DOI [10.3390/brainsci12111592](https://doi.org/10.3390/brainsci12111592).
 5. Li K., Jiang J., Qiu L. *et al.* (2015). *A multimodal MRI dataset of professional chess players.* **Scientific Data**. DOI [10.1038/sdata.2015.44](https://doi.org/10.1038/sdata.2015.44).
 6. Song L., Peng Q., Liu S., Wang J. (2019). *Changed hub and functional connectivity patterns of the posterior fusiform gyrus in chess experts.* **Brain Imaging and Behavior**. DOI [10.1007/s11682-018-0020-0](https://doi.org/10.1007/s11682-018-0020-0).
 7. Song L., Yang H., Yang M. *et al.* (2021). *Professional chess expertise modulates whole brain functional connectivity pattern homogeneity and couplings.* **Brain Imaging and Behavior**. DOI [10.1007/s11682-021-00537-1](https://doi.org/10.1007/s11682-021-00537-1).
 8. Premi E., Gazzina S., Diano M. *et al.* (2020). *Enhanced dynamic functional connectivity (whole-brain chronnectome) in chess experts.* **Scientific Reports**. DOI [10.1038/s41598-020-63984-8](https://doi.org/10.1038/s41598-020-63984-8).
-9. Gonzalez-Burgos L., Lozano-Rodriguez C., Molina Y. *et al.* (2024). *The effect of chess on cognition: a graph theory study on cognitive data.* **Frontiers in Psychology**. DOI [10.3389/fpsyg.2024.1407583](https://doi.org/10.3389/fpsyg.2024.1407583).
-10. Williams M. J., Palace M., Welsh J., Brooks S. J. (2025). *Neural correlates of chess expertise: a systematic review of brain imaging studies comparing expert versus novice players.* **Brain Mechanisms**. DOI [10.1016/j.bramec.2025.202516](https://doi.org/10.1016/j.bramec.2025.202516).
+9. Gonzalez-Burgos L., Lozano-Rodriguez C., Molina Y. *et al.* (2024). *The effect of chess on cognition : a graph theory study on cognitive data.* **Frontiers in Psychology**. DOI [10.3389/fpsyg.2024.1407583](https://doi.org/10.3389/fpsyg.2024.1407583).
+10. Williams M. J., Palace M., Welsh J., Brooks S. J. (2025). *Neural correlates of chess expertise : a systematic review of brain imaging studies comparing expert versus novice players.* **Brain Mechanisms**. DOI [10.1016/j.bramec.2025.202516](https://doi.org/10.1016/j.bramec.2025.202516).
 11. Ramos L., Ar V., Krumm G. (2017). *Funciones ejecutivas y práctica de ajedrez.* **Psicogente**. DOI [10.17081/psico.21.39.2794](https://doi.org/10.17081/psico.21.39.2794).
 12. Dania A., Kaltsonoudi K., Ktistakis I. E. *et al.* (2021). *Chess training for improving executive functions and invasion game tactical behavior.* **Physical Education and Sport Pedagogy**. DOI [10.1080/17408989.2021.1990245](https://doi.org/10.1080/17408989.2021.1990245).
 13. Darwish J., Saad G., Maayah A. *et al.* (2025). *The Effects of Chess on Cognitive Abilities and Critical Thinking of High School Students in Riyadh.* **IJARPED**. DOI [10.6007/ijarped/v14-i2/25536](https://doi.org/10.6007/ijarped/v14-i2/25536).

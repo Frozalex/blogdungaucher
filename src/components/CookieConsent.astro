@@ -64,7 +64,7 @@
         <input type="checkbox" id="cookie-analytics" class="consent-checkbox" />
         <span class="consent-option__body">
           <strong class="consent-option__name">Mesure d'audience</strong>
-          <span class="consent-option__desc">Google Analytics — comprendre combien de personnes lisent le blog et quels articles intéressent le plus</span>
+          <span class="consent-option__desc">Google Analytics : comprendre combien de personnes lisent le blog et quels articles intéressent le plus</span>
         </span>
       </label>
 
@@ -72,7 +72,7 @@
         <input type="checkbox" id="cookie-marketing" class="consent-checkbox" />
         <span class="consent-option__body">
           <strong class="consent-option__name">Publicité</strong>
-          <span class="consent-option__desc">Google AdSense — permet de financer la création de contenus gratuits</span>
+          <span class="consent-option__desc">Google AdSense : permet de financer la création de contenus gratuits</span>
         </span>
       </label>
 
@@ -147,7 +147,7 @@
         updatedAt: new Date().toISOString(),
       };
       localStorage.setItem(KEY, JSON.stringify(normalized));
-      document.dispatchEvent(new CustomEvent("cookie:updated", { detail: normalized }));
+      document.dispatchEvent(new CustomEvent("cookie:updated", { detail : normalized }));
       return normalized;
     }
 
@@ -222,12 +222,12 @@
       }
 
       bindClick(acceptBtn, function () {
-        writeConsent({ analytics: true, marketing: true, notifications: true });
+        writeConsent({ analytics : true, marketing : true, notifications : true });
         hideModal();
       });
 
       bindClick(rejectBtn, function () {
-        writeConsent({ analytics: false, marketing: false, notifications: false });
+        writeConsent({ analytics : false, marketing : false, notifications : false });
         hideModal();
       });
 
@@ -302,7 +302,7 @@
     inset: 0;
     z-index: 200;
     background: rgba(0, 0, 0, 0.52);
-    -webkit-backdrop-filter: blur(3px);
+    -webkit-backdrop-filter : blur(3px);
     backdrop-filter: blur(3px);
   }
 
@@ -341,8 +341,8 @@
   }
 
   @keyframes consent-panel-in {
-    from { opacity: 0; transform: translate(-50%, calc(-50% + 20px)); }
-    to   { opacity: 1; transform: translate(-50%, -50%); }
+    from { opacity: 0; transform : translate(-50%, calc(-50% + 20px)); }
+    to   { opacity: 1; transform : translate(-50%, -50%); }
   }
 
   /* ── Header ────────────────────────────────────────────── */
@@ -415,7 +415,7 @@
     cursor: pointer;
     border: 1.5px solid transparent;
     touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color : transparent;
     user-select: none;
     transition:
       background 120ms ease,
@@ -441,7 +441,7 @@
     transition-duration: 60ms;
   }
 
-  @media (hover: hover) and (pointer: fine) {
+  @media (hover : hover) and (pointer : fine) {
     .consent-btn:hover {
       transform: translateY(-1px);
     }
@@ -460,7 +460,7 @@
     border-color: var(--green-hover);
   }
 
-  @media (hover: hover) and (pointer: fine) {
+  @media (hover : hover) and (pointer : fine) {
     .consent-btn--primary:hover {
       background: var(--green-hover);
       border-color: var(--green-hover);
@@ -478,7 +478,7 @@
     background: var(--bg-warm);
   }
 
-  @media (hover: hover) and (pointer: fine) {
+  @media (hover : hover) and (pointer : fine) {
     .consent-btn--ghost:hover {
       color: var(--text-main);
       border-color: var(--text-muted);
@@ -498,7 +498,7 @@
     color: var(--green);
   }
 
-  @media (hover: hover) and (pointer: fine) {
+  @media (hover : hover) and (pointer : fine) {
     .consent-btn--save:hover {
       background: color-mix(in srgb, var(--green) 8%, var(--bg-warm));
       border-color: var(--green-border);
@@ -525,14 +525,14 @@
     font-weight: 600;
     color: var(--text-muted);
     list-style: none;
-    -webkit-user-select: none;
+    -webkit-user-select : none;
     user-select: none;
     touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color : transparent;
     transition: color 120ms ease, background 120ms ease;
   }
 
-  .consent-summary::-webkit-details-marker { display: none; }
+  .consent-summary::-webkit-details-marker { display : none; }
 
   .consent-summary:focus {
     outline: none;
@@ -548,7 +548,7 @@
     color: var(--text-main);
   }
 
-  @media (hover: hover) and (pointer: fine) {
+  @media (hover : hover) and (pointer : fine) {
     .consent-summary:hover {
       color: var(--text-main);
       background: color-mix(in srgb, var(--green) 6%, var(--bg-warm));
@@ -594,7 +594,7 @@
     border-bottom: 1px solid var(--border-soft);
     cursor: pointer;
     touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color : transparent;
   }
 
   .consent-option:active {
@@ -688,8 +688,8 @@
     }
 
     @keyframes consent-panel-mobile-in {
-      from { opacity: 0; transform: translateX(-50%) translateY(20px); }
-      to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+      from { opacity: 0; transform : translateX(-50%) translateY(20px); }
+      to   { opacity: 1; transform : translateX(-50%) translateY(0); }
     }
 
     .consent-quick {
@@ -698,7 +698,7 @@
   }
 
   /* ── Accessibilité : réduction de mouvement ────────────── */
-  @media (prefers-reduced-motion: reduce) {
+  @media (prefers-reduced-motion : reduce) {
     .consent-backdrop:not([hidden]),
     .consent-panel:not([hidden]) {
       animation: none;

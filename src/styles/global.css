@@ -1,4 +1,4 @@
-﻿/* Fonts auto-hébergées via @fontsource-variable — aucune requête externe (conformité RGPD). */
+﻿/* Fonts auto-hébergées via @fontsource-variable, aucune requête externe (conformité RGPD). */
 @import '@fontsource-variable/space-grotesk';
 @import '@fontsource-variable/outfit';
 @import '@fontsource-variable/fraunces/opsz.css';
@@ -240,7 +240,7 @@ main { display: block; padding-top: var(--navbar-h); }
 
 /*
  * Lettrine éditoriale (premier paragraphe d'article).
- * Privilégie `initial-letter` (Safari, iOS) — rendu typographique plus propre,
+ * Privilégie `initial-letter` (Safari, iOS), rendu typographique plus propre,
  * meilleur alignement de la baseline. Fallback `float` pour les autres
  * navigateurs (Chrome, Firefox) qui ne supportent pas encore initial-letter.
  */
@@ -336,7 +336,7 @@ main { display: block; padding-top: var(--navbar-h); }
   );
 }
 
-/* Variante éditoriale : losange vert centré sur ligne fine — séparation chapitres. */
+/* Variante éditoriale : losange vert centré sur ligne fine, séparation chapitres. */
 .section-divider--editorial {
   position: relative;
   display: flex;
@@ -402,8 +402,7 @@ main { display: block; padding-top: var(--navbar-h); }
 }
 .article-body blockquote cite::before,
 .article-body blockquote footer::before {
-  content: "— ";
-  color: var(--green);
+  content: none;
 }
 
 /* Légendes d'images (figure > figcaption) : petit serif italique. */

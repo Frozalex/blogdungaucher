@@ -9,7 +9,7 @@ readingTime: "18 min"
 pillar: "Mental"
 tags: ["syndrome de l'imposteur", "Elo", "progression aux échecs", "psychologie", "confiance", "perfectionnisme", "mental compétitif"]
 seoTitle: "Monter en Elo sans se sentir légitime : le syndrome de l'imposteur en progression"
-seoDescription: "Ton Elo monte mais chaque victoire te semble de la chance. Ce décalage entre progression réelle et sentiment de légitimité a un nom — et des solutions issues de la psychologie du sport."
+seoDescription: "Ton Elo monte mais chaque victoire te semble de la chance. Ce décalage entre progression réelle et sentiment de légitimité a un nom, et des solutions issues de la psychologie du sport."
 titleEn: "Impostor Syndrome in Chess: Rising in Elo Without Feeling Legitimate"
 excerptEn: "Your Elo is climbing but you don't really understand how. Your wins feel like luck, your losses seem to confirm what you already knew: you're not that good. That feeling has a name, a cause and solutions."
 seoTitleEn: "Impostor Syndrome in Chess: Why You Don't Feel Legitimate Despite Your Progress"
@@ -176,9 +176,9 @@ Si le syndrome de l'imposteur déborde sur d'autres domaines de ta vie - travail
 
 ### Sources et références
 
-- **Clance, P. R., & Imes, S. A. (1978).** - [*The impostor phenomenon in high achieving women: Dynamics and therapeutic intervention.*](https://doi.org/10.1037/h0086006) *Psychotherapy: Theory, Research & Practice*, 15(3), 241-247. (Article fondateur définissant le phénomène d'imposteur et ses mécanismes dans des populations à haute performance.)
-- **Bravata, D. M., et al. (2020).** - [*Prevalence, Predictors, and Treatment of Impostor Syndrome: a Systematic Review.*](https://doi.org/10.1016/j.jpsychires.2019.01.016) *Journal of General Internal Medicine*, 35(4), 1252-1275. (Méta-analyse sur 62 études : prévalence de 70 % dans la population générale, profils les plus exposés.)
-- **Dweck, C. S. (2006).** - *Mindset: The New Psychology of Success.* Random House. (Cadre théorique des mindsets fixe vs croissance et leur impact sur la gestion de l'échec et l'apprentissage.)
+- **Clance, P. R., & Imes, S. A. (1978).** - [*The impostor phenomenon in high achieving women : Dynamics and therapeutic intervention.*](https://doi.org/10.1037/h0086006) *Psychotherapy : Theory, Research & Practice*, 15(3), 241-247. (Article fondateur définissant le phénomène d'imposteur et ses mécanismes dans des populations à haute performance.)
+- **Bravata, D. M., et al. (2020).** - [*Prevalence, Predictors, and Treatment of Impostor Syndrome : a Systematic Review.*](https://doi.org/10.1016/j.jpsychires.2019.01.016) *Journal of General Internal Medicine*, 35(4), 1252-1275. (Méta-analyse sur 62 études : prévalence de 70 % dans la population générale, profils les plus exposés.)
+- **Dweck, C. S. (2006).** - *Mindset : The New Psychology of Success.* Random House. (Cadre théorique des mindsets fixe vs croissance et leur impact sur la gestion de l'échec et l'apprentissage.)
 - **Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993).** - [*The role of deliberate practice in the acquisition of expert performance.*](https://doi.org/10.1037/0033-295X.100.3.363) *Psychological Review*, 100(3), 363-406. (Base de la distinction entre performance et expertise ; utile pour comprendre pourquoi la progression perçue diverge souvent de la progression réelle.)
 - **Kasparov, G. (2007).** - *How Life Imitates Chess.* Bloomsbury Publishing. (Témoignage de Kasparov sur l'incertitude dans le processus décisionnel même au plus haut niveau ; normalisation de l'intuition inexpliquée comme composante du jeu.)
 - **Weiner, B. (1985).** - [*An attributional theory of achievement motivation and emotion.*](https://doi.org/10.1037/0033-295X.92.4.548) *Psychological Review*, 92(4), 548-573. (Théorie des attributions causales : comment l'attribution des succès et échecs à des causes internes/externes affecte la motivation et l'estime de soi.)

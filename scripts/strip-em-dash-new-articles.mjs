@@ -1,5 +1,5 @@
 /**
- * Retire les tirets cadratin (—) des billets récemment fusionnés.
+ * Retire les tirets cadratin (—) du contenu éditorial du site.
  * Usage: node scripts/strip-em-dash-new-articles.mjs
  */
 import fs from "node:fs";
@@ -7,39 +7,35 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const blogDir = path.join(__dirname, "../src/content/blog");
+const root = path.join(__dirname, "..");
+const blogDir = path.join(root, "src/content/blog");
 
-const NEW_ARTICLES = [
-  "analyser-ses-parties.md",
-  "echecs-alphazero-stockfish.md",
-  "echecs-estime-de-soi-elo.md",
-  "echecs-et-biofeedback.md",
-  "echecs-et-complexite-algorithmique.md",
-  "echecs-et-concentration.md",
-  "echecs-et-confiance-en-soi.md",
-  "echecs-et-culture-populaire.md",
-  "echecs-et-diplomatie.md",
-  "echecs-et-dopamine.md",
-  "echecs-et-ecole.md",
-  "echecs-et-enfants.md",
-  "echecs-et-flow.md",
-  "echecs-et-genetique.md",
-  "echecs-et-handicap.md",
-  "echecs-et-hpi.md",
-  "echecs-et-immigration.md",
-  "echecs-et-meditation.md",
-  "echecs-et-precarite.md",
-  "echecs-et-procrastination.md",
-  "echecs-et-resilience.md",
-  "echecs-et-sommeil.md",
-  "echecs-et-streaming.md",
-  "echecs-et-therapie.md",
-  "echecs-et-vision-spatiale.md",
-  "echecs-et-visualisation.md",
-  "echecs-gestion-du-temps.md",
-  "echecs-memoire-de-travail.md",
-  "echecs-stress-tournoi.md",
-  "echecs-vieillissement-cognitif.md",
+/** Ne pas traiter les lignes CSS `content:` (citations typographiques). */
+/** @param {string} text */
+function stripEmDashPreservingCssContent(text) {
+  const parts = [];
+  const re = /^(\s*content:\s*["'])([^"']*)(["'];?\s*)$/gm;
+  let last = 0;
+  let m;
+  while ((m = re.exec(text)) !== null) {
+    parts.push({ start: last, end: m.index, replace: stripEmDash(text.slice(last, m.index)) });
+    parts.push({ start: m.index, end: m.index + m[0].length, raw: m[0] });
+    last = m.index + m[0].length;
+  }
+  parts.push({ start: last, end: text.length, replace: stripEmDash(text.slice(last)) });
+  let out = "";
+  for (const p of parts) {
+    out += p.raw ?? p.replace;
+  }
+  return out;
+}
+
+/** Fichiers hors blog contenant du texte utilisateur (pas les séparateurs CSS). */
+const SITE_TEXT_FILES = [
+  "src/pages/fr/recherche/index.astro",
+  "src/pages/fr/glossaire/index.astro",
+  "src/pages/404.astro",
+  "src/components/CookieConsent.astro",
 ];
 
 /** @param {string} text */
@@ -73,7 +69,6 @@ function fixFrenchColonsInProse(text) {
   return text
     .split("\n")
     .map((line) => {
-      // Clés YAML (title:, answer:, etc.)
       if (/^\s*[a-zA-Z][\w-]*:\s/.test(line)) return line;
       if (/^\s*- question:\s/.test(line)) return line;
       if (/^\s*answer:\s/.test(line)) return line;
@@ -85,16 +80,29 @@ function fixFrenchColonsInProse(text) {
     .join("\n");
 }
 
-let total = 0;
-for (const name of NEW_ARTICLES) {
-  const filePath = path.join(blogDir, name);
+/** @param {string} filePath */
+function processFile(filePath) {
   const before = fs.readFileSync(filePath, "utf8");
   const count = (before.match(/—/g) ?? []).length;
-  if (count === 0) continue;
-  const after = stripEmDash(before);
+  if (count === 0) return 0;
+  const after = /\.astro$/i.test(filePath)
+    ? stripEmDashPreservingCssContent(before)
+    : stripEmDash(before);
   fs.writeFileSync(filePath, after, "utf8");
-  total += count;
-  console.log(`${name}: ${count} → ${(after.match(/—/g) ?? []).length}`);
+  const left = (after.match(/—/g) ?? []).length;
+  const rel = path.relative(root, filePath);
+  console.log(`${rel}: ${count} → ${left}`);
+  return count;
+}
+
+let total = 0;
+
+for (const name of fs.readdirSync(blogDir).filter((f) => f.endsWith(".md"))) {
+  total += processFile(path.join(blogDir, name));
+}
+
+for (const rel of SITE_TEXT_FILES) {
+  total += processFile(path.join(root, rel));
 }
 
 console.log(`Total tirets cadratin traités: ${total}`);
