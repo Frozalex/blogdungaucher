@@ -243,6 +243,7 @@ export const staticRoutes = [
   "/fr/photos/",
   "/fr/analyses/",
   "/fr/about/",
+  "/fr/glossaire/",
   "/fr/mentions-legales/",
   "/fr/politique-confidentialite/",
 ] as const;
