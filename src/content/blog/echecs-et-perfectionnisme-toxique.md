@@ -20,7 +20,7 @@ Le perfectionnisme toxique aux échecs est plus répandu qu'on ne le croit. Et i
 
 > **L'essentiel en 4 points :**
 > - Il existe deux formes de perfectionnisme : adaptatif (sain) et maladaptatif (toxique)
-> - Le perfectionnisme toxique génère de l'anxiété, de la paralysie par l'analyse et une peur de l'erreur qui augmente les erreurs
+> - Le perfectionnisme toxique génère de l'anxiété, de la paralysie par l'analyse et une peur de l'erreur qui [augmente les erreurs](/fr/blog/5-biais-cognitifs-blunder/)
 > - Les échecs sont un terrain particulièrement propice au perfectionnisme toxique en raison de la transparence totale des erreurs
 > - La recherche du "suffisamment bon" (satisficing) est une stratégie cognitives supérieure au "meilleur possible" dans des conditions réelles
 

@@ -8,7 +8,7 @@ featuredRank: 99
 readingTime: "15 min"
 pillar: "Neurosciences"
 tags: ["cerveau", "neurosciences", "bienfaits", "mémoire", "plasticité", "vieillissement", "concentration", "échecs"]
-seoTitle: "Bienfaits des échecs sur le cerveau : la science"
+seoTitle: "Bienfaits cognitifs des échecs : mémoire, attention et plasticité cérébrale"
 seoDescription: "Mémoire de travail, plasticité cérébrale, protection contre le vieillissement cognitif : ce que la recherche mesure vraiment sur les effets des échecs sur le cerveau."
 ---
 
@@ -40,7 +40,7 @@ Des études ont montré que les joueurs d'échecs ont en moyenne une mémoire de
 
 La mémoire de travail est entraînable. Des études d'intervention, où des groupes d'enfants ou d'adultes apprennent les échecs sur plusieurs mois, montrent des améliorations mesurables de la mémoire de travail dans les groupes de pratique par rapport aux groupes de contrôle. L'effet est modéré mais consistant.
 
-[Adriaan de Groot](https://fr.wikipedia.org/wiki/Adriaan_de_Groot), psychologue néerlandais dont les travaux des années 1940 sont fondateurs dans ce domaine, a montré que les experts peuvent mémoriser en quelques secondes des positions entières sur l'échiquier. Quand les mêmes pièces sont placées aléatoirement (pas selon une partie réelle), cet avantage disparaît presque complètement. La mémoire des experts n'est pas « meilleure » en général : elle est organisée différemment autour de patterns.
+[Adriaan de Groot](https://fr.wikipedia.org/wiki/Adriaan_de_Groot), psychologue néerlandais dont les travaux des années 1940 sont fondateurs dans ce domaine, a montré que les experts peuvent mémoriser en quelques secondes des positions entières sur l'échiquier. Quand les mêmes pièces sont placées aléatoirement (pas selon une partie réelle), cet avantage disparaît presque complètement. La mémoire des experts n'est pas « meilleure » en général : elle est organisée différemment autour de patterns. (Pour l'analyse neurologique complète de ces différences sous IRMf : [Échecs et cerveau](/fr/blog/les-echecs-et-le-cerveau/).)
 
 ## La plasticité cérébrale et la reconnaissance de patterns
 

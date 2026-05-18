@@ -70,7 +70,7 @@ Pour un joueur d'échecs, les implications sont concrètes : **les 6 premières 
 
 - **Flexibilité cognitive** (capacité à passer d'un plan à un autre) : dégradée significativement après une nuit sans sommeil
 - **Inhibition** (capacité à rejeter une mauvaise réponse évidente au profit d'une meilleure) : parmi les premières fonctions touchées
-- **Mémoire de travail** (maintenir une variante en tête pendant le calcul) : réduite après 24h de veille
+- **[Mémoire de travail](/fr/blog/echecs-memoire-de-travail/)** (maintenir une variante en tête pendant le calcul) : réduite après 24h de veille
 
 Ce dernier point est particulièrement important. La mémoire de travail est le goulot d'étranglement du calcul aux échecs : c'est elle qui permet de garder en tête la position d'arrivée d'une variante pendant qu'on en explore les branches. Une mémoire de travail dégradée signifie des variantes raccourcies, des positions mal évaluées, des blunders sur des menaces qu'on a calculées mais pas maintenues.
 

@@ -93,7 +93,7 @@ Après 10 à 15 analyses, un pattern commence à émerger. Les erreurs aux éche
 
 **Erreurs de finale** : perdre des positions techniquement gagnables, ou faire des nulles des positions perdues par manque de technique. "J'avais un pion passé gagnant mais je ne savais pas comment le mener."
 
-Identifier sa famille dominante permet de cibler son travail. Inutile d'étudier des finales de tours si 80% de vos parties se décident tactiquement en milieu de jeu.
+Identifier sa famille dominante permet de cibler son travail. Inutile d'étudier des finales de tours si 80% de vos parties se décident tactiquement en milieu de jeu. ([La règle 40-40-20](/fr/blog/regle-40-40-20-echecs/) propose une répartition de référence à partir de laquelle ajuster.)
 
 ## Le moment critique : le coup le plus instructif
 

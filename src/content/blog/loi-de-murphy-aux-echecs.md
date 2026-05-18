@@ -8,7 +8,7 @@ featuredRank: 99
 readingTime: "13 min"
 pillar: "Psychologie"
 tags: ["loi de Murphy", "psychologie", "échecs", "blunder", "biais cognitifs", "erreurs", "cognition"]
-seoTitle: "Loi de Murphy aux échecs : blunders et psychologie"
+seoTitle: "Loi de Murphy aux échecs : pourquoi les blunders tombent toujours au pire moment"
 seoDescription: "La loi de Murphy appliquée aux échecs : mémoire sélective, stress, zeitnot et biais cognitifs. Pourquoi les erreurs semblent toujours cruellement bien placées."
 ---
 

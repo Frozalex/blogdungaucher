@@ -58,7 +58,7 @@ La cognition spatiale désigne l'ensemble des capacités mentales qui permettent
 
 Les chercheurs distinguent généralement plusieurs composantes :
 
-**La visualisation spatiale :** La capacité à manipuler mentalement des objets bidimensionnels ou tridimensionnels : les faire pivoter, les assembler, imaginer leur aspect sous différents angles.
+**La visualisation spatiale :** La capacité à [manipuler mentalement des objets](/fr/blog/echecs-et-visualisation/) bidimensionnels ou tridimensionnels : les faire pivoter, les assembler, imaginer leur aspect sous différents angles.
 
 **La mémoire spatiale :** La capacité à mémoriser et rappeler des positions et des configurations : où se trouvaient les pièces à la fin du milieu de jeu, quelle était la structure de pions il y a 10 coups.
 

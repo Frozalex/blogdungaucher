@@ -118,7 +118,7 @@ Ces chiffres sont pour le travail intellectuel général. Pour une activité aus
 
 L'implication pratique est importante : **une seule notification peut coûter un quart d'heure de réflexion profonde**. Dans une partie de 3 heures, deux interruptions représentent potentiellement 30 minutes de flow perdues : soit la durée d'un phase critique de milieu de jeu.
 
-Les joueurs sérieux traitent l'hygiène de concentration comme un élément tactique à part entière : téléphone en mode avion ou rangé, casque antibruit si l'environnement est bruyant, rituel de mise en concentration avant de s'asseoir.
+Les joueurs sérieux traitent [l'hygiène de concentration](/fr/blog/echecs-et-concentration/) comme un élément tactique à part entière : téléphone en mode avion ou rangé, casque antibruit si l'environnement est bruyant, rituel de mise en concentration avant de s'asseoir.
 
 ## Créer les conditions du flow
 

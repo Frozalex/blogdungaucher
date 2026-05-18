@@ -9,7 +9,7 @@ readingTime: "25 min"
 pillar: "Genre"
 tags: ["échecs femmes", "joueuses échecs", "Judit Polgar", "Le Jeu de la Dame", "stéréotypes", "sociologie", "Vera Menchik", "Hou Yifan"]
 seoTitle: "Échecs et Femmes : pourquoi si peu de joueuses aujourd'hui ?"
-seoDescription: "Pourquoi y a-t-il un écart de genre aux échecs ? Découvrez la vérité sur les femmes et les réalités derrière ce débat passionnant."
+seoDescription: "40 femmes parmi 1700 Grands Maîtres : est-ce biologique, culturel ou structurel ? Les données démontent les idées reçues sur l'écart de genre aux échecs."
 titleEn: "Chess and Women: Why So Few, and Is That Changing?"
 excerptEn: "40 women among 1,700 Grandmasters. The gap isn't biological: it's mathematical, historical and psychological. What the data really says, and why the 'female brain' argument doesn't hold."
 seoTitleEn: "Chess and Women: Understanding the Gender Gap"

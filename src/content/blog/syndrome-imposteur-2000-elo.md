@@ -8,7 +8,7 @@ featuredRank: 99
 readingTime: "13 min"
 pillar: "Psychologie"
 tags: ["syndrome de l'imposteur", "2000 elo", "psychologie", "classement", "confiance", "perfectionnisme", "échecs"]
-seoTitle: "Syndrome de l'imposteur à 2000 Elo : l'analyse"
+seoTitle: "Pourquoi franchir 2000 Elo déclenche le syndrome de l'imposteur"
 seoDescription: "Pourquoi atteindre 2000 Elo peut déclencher le syndrome de l'imposteur. Psychologie du classement, légitimité et confiance aux échecs."
 ---
 
@@ -26,7 +26,7 @@ Bienvenue dans le syndrome de l'imposteur à 2000 Elo. C'est une expérience ét
 
 ## Qu'est-ce que le syndrome de l'imposteur ?
 
-Le [syndrome de l'imposteur](https://fr.wikipedia.org/wiki/Syndrome_de_l%27imposteur) a été décrit pour la première fois en 1978 par les psychologues [Pauline Clance](https://fr.wikipedia.org/wiki/Pauline_Clance) et Suzanne Imes. Ils l'ont défini comme un phénomène psychologique où des individus compétents et accomplis ne parviennent pas à internaliser leurs réussites et craignent d'être "démasqués" comme des fraudes, malgré des preuves objectives de leur compétence.
+Le [syndrome de l'imposteur](/fr/blog/echecs-et-syndrome-imposteur/) a été décrit pour la première fois en 1978 par les psychologues [Pauline Clance](https://fr.wikipedia.org/wiki/Pauline_Clance) et Suzanne Imes. Ils l'ont défini comme un phénomène psychologique où des individus compétents et accomplis ne parviennent pas à internaliser leurs réussites et craignent d'être "démasqués" comme des fraudes, malgré des preuves objectives de leur compétence.
 
 À l'origine étudié chez les femmes dans des milieux académiques, le syndrome est maintenant reconnu comme universel : il touche des personnes de tout genre, domaine et niveau de compétence. Des études estiment qu'entre 60 et 70% des personnes en ont fait l'expérience à un moment ou un autre dans leur carrière.
 

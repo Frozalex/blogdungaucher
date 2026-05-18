@@ -8,7 +8,7 @@ featuredRank: 99
 readingTime: "13 min"
 pillar: "Logique"
 tags: ["logique modale", "échecs", "raisonnement", "possibilité", "nécessité", "stratégie", "philosophie"]
-seoTitle: "Logique modale aux échecs : raisonnement en possibilités"
+seoTitle: "Logique modale aux échecs : penser par possibilités et nécessités sur l'échiquier"
 seoDescription: "Comment la logique modale formelle structure le raisonnement aux échecs. Nécessité, possibilité, mondes possibles : les outils de la logique appliqués à l'échiquier."
 ---
 

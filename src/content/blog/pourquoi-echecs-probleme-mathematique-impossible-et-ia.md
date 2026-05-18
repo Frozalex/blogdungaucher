@@ -13,7 +13,7 @@ readingTime: "16 min"
 pillar: "Informatique"
 tags: ["échecs", "mathématiques", "complexité", "nombre de Shannon", "arbre des coups", "minimax", "alpha-bêta", "moteur d'échecs", "IA", "Stockfish"]
 seoTitle: "Échecs et IA : résoudre le problème mathématique impossible"
-seoDescription: "Les échecs sont-ils solvables mathématiquement ? Découvrez comment l'IA a révolutionné le jeu et pourquoi les moteurs battent les humains à tous les coups."
+seoDescription: "10^43 positions légales, nombre de Shannon, AlphaZero à 3500+ Elo : pourquoi les échecs restent mathématiquement insolubles malgré la supériorité des moteurs sur l'humain."
 ogImage: "/images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.png"
 heroImage:
   src: "/images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.png"

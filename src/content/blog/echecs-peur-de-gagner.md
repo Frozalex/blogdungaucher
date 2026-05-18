@@ -70,7 +70,7 @@ Une dimension particulière de la peur de gagner est la réaction à la perte d'
 
 La [théorie des perspectives](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_perspectives) de [Daniel Kahneman](https://fr.wikipedia.org/wiki/Daniel_Kahneman) et [Amos Tversky](https://fr.wikipedia.org/wiki/Amos_Tversky) explique en partie pourquoi. Selon cette théorie, les pertes sont psychologiquement ressenties comme environ deux fois plus douloureuses que les gains équivalents sont plaisants. Quand tu as une position gagnante, tu "possèdes" psychologiquement la victoire. La perdre est perçue comme une perte, pas comme un retour à la case départ, ce qui la rend doublement douloureuse.
 
-Cette logique crée un paradoxe : obtenir une position gagnante peut augmenter le risque d'erreur parce que la peur de perdre cette victoire "possédée" génère une anxiété supplémentaire.
+Cette logique crée un paradoxe : obtenir une position gagnante peut augmenter le risque d'erreur parce que [la peur de perdre](/fr/blog/echecs-peur-de-perdre/) cette victoire "possédée" génère une anxiété supplémentaire.
 
 ## Différencier la peur de gagner des lacunes techniques
 

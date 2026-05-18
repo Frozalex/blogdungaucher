@@ -62,7 +62,7 @@ La résolution de tactiques, si elle est un outil précieux, peut devenir répé
 
 Le burnout aux échecs ne touche pas tous les joueurs de la même façon. Certains profils sont plus vulnérables.
 
-**Les perfectionnistes.** Comme développé dans l'article sur le perfectionnisme toxique, les joueurs qui maintiennent des standards impossibles et ne peuvent jamais être satisfaits de leurs performances sont en état de tension chronique qui épuise les ressources.
+**Les perfectionnistes.** Comme développé dans [l'article sur le perfectionnisme toxique](/fr/blog/echecs-et-perfectionnisme-toxique/), les joueurs qui maintiennent des standards impossibles et ne peuvent jamais être satisfaits de leurs performances sont en état de tension chronique qui épuise les ressources.
 
 **Les juniors avec pression parentale ou institutionnelle.** Les jeunes joueurs dont l'implication dans les échecs est davantage motivée par des attentes extérieures que par leur propre désir intrinsèque sont particulièrement vulnérables au burnout. La [motivation extrinsèque](https://fr.wikipedia.org/wiki/Motivation_extrins%C3%A8que), quand elle remplace la motivation intrinsèque, est une recette pour le désengagement à long terme.
 

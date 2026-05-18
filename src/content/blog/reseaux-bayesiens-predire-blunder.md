@@ -8,7 +8,7 @@ featuredRank: 99
 readingTime: "13 min"
 pillar: "Intelligence artificielle"
 tags: ["réseaux bayésiens", "blunder", "probabilités", "échecs", "intelligence artificielle", "statistiques", "prédiction"]
-seoTitle: "Réseaux bayésiens aux échecs : prédire les blunders"
+seoTitle: "Prédire les blunders avec les réseaux bayésiens : estimer l'erreur adverse"
 seoDescription: "Comment les réseaux bayésiens et la statistique bayésienne permettent d'estimer la probabilité d'un blunder adverse aux échecs. Méthodes et applications pratiques."
 ---
 

@@ -108,7 +108,7 @@ La régulation de la colère aux échecs n'est pas un talent inné. C'est une co
 
 La colère aux échecs n'est pas seulement un problème à contrôler. C'est aussi une information. Elle révèle avec précision les points de friction entre tes attentes et la réalité du jeu.
 
-Si tu ragequit systématiquement après des blunders en zeitnot, l'information est : tu as un problème de gestion du temps lié à l'anxiété, pas seulement de calcul. Si tu ragequit après des défaites contre des joueurs "moins forts" que toi, l'information est : ton ego est investit dans le classement relatif de façon malsaine. Si tu ragequit après des sacrifices adverses "non corrects" qui fonctionnent, l'information est : tu as du mal avec l'incertitude et l'imprévisibilité.
+Si tu ragequit systématiquement après des blunders en zeitnot, l'information est : tu as un problème de [gestion du temps](/fr/blog/echecs-gestion-du-temps/) lié à l'anxiété, pas seulement de calcul. Si tu ragequit après des défaites contre des joueurs "moins forts" que toi, l'information est : ton ego est investit dans le classement relatif de façon malsaine. Si tu ragequit après des sacrifices adverses "non corrects" qui fonctionnent, l'information est : tu as du mal avec l'incertitude et l'imprévisibilité.
 
 [Mark Dvoretsky](https://fr.wikipedia.org/wiki/Mark_Dvoretsky) disait que l'analyse post-partie devait inclure l'état émotionnel au moment de chaque erreur. La colère est un état émotionnel qui produit des erreurs caractéristiques. Les identifier, c'est se donner un plan d'entraînement concret.
 

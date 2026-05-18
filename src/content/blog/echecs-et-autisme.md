@@ -9,7 +9,7 @@ readingTime: "22 min"
 pillar: "Inclusion"
 tags: ["échecs autisme", "échecs enfant autiste", "bienfaits échecs TSA", "inclusion", "neuroatypique", "neurodiversité"]
 seoTitle: "Échecs et autisme : les bienfaits pour les TSA"
-seoDescription: "Découvrez comment les échecs aident les personnes avec un TSA. Explorez les bienfaits cognitifs et sociaux de ce jeu stratégique pour les cerveaux autistes."
+seoDescription: "Règles invariantes, structure visuelle, pas de communication verbale : pourquoi l'échiquier convient naturellement aux cerveaux autistes. Ce que les études sur les TSA montrent réellement."
 titleEn: "Chess and Autism: Why the Chessboard Becomes a Refuge"
 excerptEn: "For a brain that struggles with social ambiguity, the chessboard is one of the few spaces where rules truly hold. What research actually says about autism and chess, without romanticism or oversimplification."
 seoTitleEn: "Chess and Autism: Benefits for the Autism Spectrum"

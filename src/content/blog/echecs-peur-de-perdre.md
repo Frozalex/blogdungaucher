@@ -64,7 +64,7 @@ Ce cercle vicieux a été documenté dans de nombreuses études longitudinales e
 
 ## L'Elo comme déclencheur de peur : la protection du "nombre"
 
-Un facteur spécifique aux échecs est le rôle du classement Elo dans l'amplification de la peur de perdre. Comme évoqué dans d'autres articles de ce blog, quand l'Elo devient une identité plutôt qu'un outil statistique, chaque partie devient une menace existentielle.
+Un facteur spécifique aux échecs est le rôle du classement Elo dans l'amplification de la peur de perdre. Comme évoqué dans d'autres articles de ce blog, quand [l'Elo devient une identité](/fr/blog/echecs-estime-de-soi-elo/) plutôt qu'un outil statistique, chaque partie devient une menace existentielle.
 
 Perdre des points d'Elo est ressenti comme une "destruction de soi". Cette menace existentielle active plus intensément l'amygdale que la simple perspective d'une défaite sportive. Le résultat est une anxiété amplifiée et un jeu encore plus craintif.
 

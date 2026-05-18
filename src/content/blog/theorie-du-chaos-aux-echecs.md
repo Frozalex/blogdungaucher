@@ -8,7 +8,7 @@ featuredRank: 99
 readingTime: "14 min"
 pillar: "Mathématiques"
 tags: ["chaos", "échecs", "mathématiques", "complexité", "sensibilité", "bifurcation", "science"]
-seoTitle: "Théorie du chaos aux échecs : ordre et complexité"
+seoTitle: "Théorie du chaos aux échecs : pourquoi une erreur peut tout faire basculer"
 seoDescription: "Comment la théorie du chaos s'applique aux échecs. Sensibilité aux conditions initiales, bifurcations, positions critiques : la science du désordre appliquée à l'échiquier."
 ---
 

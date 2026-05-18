@@ -8,8 +8,8 @@ featuredRank: 99
 readingTime: "24 min"
 pillar: "Cognition"
 tags: ["échecs mémoire", "chunks", "Chase Simon", "Gobet", "mémoire de travail", "mémoire à long terme", "concentration", "cognition", "neurosciences", "enfants"]
-seoTitle: "Découvrez le pouvoir des échecs sur votre mémoire"
-seoDescription: "Échecs et mémoire : la combinaison parfaite pour un esprit affûté. Découvrez comment ce jeu développe vos facultés cognitives."
+seoTitle: "Échecs et mémoire : mémoire de travail, chunks et apprentissage"
+seoDescription: "Mémoire de travail, chunks de Chase & Simon, mémoire procédurale : comment les échecs transforment la mémoire et dans quelles conditions ces gains se transfèrent réellement."
 titleEn: "Chess and Memory: How the Game Stimulates Your Cognitive Skills"
 excerptEn: "Working memory, chunks, openings, games forgotten or etched in mind: what cognitive psychology and neuroscience really say about chess and memory, and how to train so it counts."
 seoTitleEn: "Chess and Memory: Cognitive Stimulation, Science and Training"

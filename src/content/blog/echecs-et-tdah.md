@@ -50,7 +50,7 @@ Luca peut passer une heure à construire une ville entière en Lego. Il peut reg
 
 Les fonctions exécutives comprennent l'inhibition des réponses impulsives (résister à une impulsion immédiate), la mémoire de travail (garder en tête plusieurs informations en même temps), la flexibilité mentale (changer de plan quand le contexte change), et la planification à terme (voir les conséquences à plusieurs coups de distance).
 
-Ces quatre fonctions sont précisément celles que les échecs sollicitent à chaque coup, dans chaque partie, pendant toute la séance. Le parallèle est direct.
+Ces quatre fonctions sont précisément celles que les échecs sollicitent à chaque coup, dans chaque partie, pendant toute la séance. (La dimension [concentration](/fr/blog/echecs-et-concentration/) fait l'objet d'une analyse dédiée.) Le parallèle est direct.
 
 ## La biologie derrière l'inconsistance
 
@@ -58,7 +58,7 @@ Pourquoi le cerveau TDAH fonctionne-t-il si différemment selon l'activité ? [X
 
 > **Castellanos FX & Tannock R.** (2002). *Neuroscience of attention-deficit/hyperactivity disorder: The search for endophenotypes.* Nature Reviews Neuroscience, 3, 617-628.
 
-Les déficits de dopamine et de noradrénaline dans le cerveau TDAH touchent spécifiquement les circuits de récompense et d'inhibition. Ces circuits répondent différemment selon le type de stimulation. Une tâche abstraite avec une récompense lointaine (apprendre une leçon pour un examen dans trois semaines) active ces circuits faiblement. Une activité à récompense immédiate (chaque coup change la position de façon visible et irréversible), avec des règles parfaitement stables et un enjeu tangible (gagner ou perdre cette partie, maintenant), les active beaucoup plus fortement.
+Les déficits de [dopamine](/fr/blog/echecs-et-dopamine/) et de noradrénaline dans le cerveau TDAH touchent spécifiquement les circuits de récompense et d'inhibition. Ces circuits répondent différemment selon le type de stimulation. Une tâche abstraite avec une récompense lointaine (apprendre une leçon pour un examen dans trois semaines) active ces circuits faiblement. Une activité à récompense immédiate (chaque coup change la position de façon visible et irréversible), avec des règles parfaitement stables et un enjeu tangible (gagner ou perdre cette partie, maintenant), les active beaucoup plus fortement.
 
 Ce n'est pas que Luca est paresseux. C'est que son cerveau a besoin d'un carburant que l'école, dans sa forme actuelle, ne lui fournit souvent pas.
 

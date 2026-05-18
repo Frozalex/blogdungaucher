@@ -82,7 +82,7 @@ Le [biais de disponibilité](https://fr.wikipedia.org/wiki/Heuristique_de_dispon
 
 Le biais de disponibilité peut aussi fonctionner en sens inverse : si tu n'as jamais subi un certain type de combinaison, tu tends à la sous-estimer parce qu'elle n'est pas disponible dans ta mémoire émotionnelle, même si elle est théoriquement connue.
 
-**Comment le contrer :** Pratiquer régulièrement des types de problèmes variés, non pas en se concentrant uniquement sur ses points faibles récents, mais en couvrant systématiquement un spectre large. L'entraînement tactique varié calibre la "disponibilité" des patterns sur la base d'une représentation plus équilibrée plutôt que sur des souvenirs récents.
+**Comment le contrer :** Pratiquer régulièrement des types de problèmes variés, non pas en se concentrant uniquement sur ses points faibles récents, mais en couvrant systématiquement un spectre large. L'entraînement tactique varié calibre la "disponibilité" des patterns sur la base d'une représentation plus équilibrée plutôt que sur des souvenirs récents. (Ces biais expliquent aussi pourquoi les blunders semblent toujours tomber au pire moment : [la loi de Murphy aux échecs](/fr/blog/loi-de-murphy-aux-echecs/) analyse ce phénomène.)
 
 ## Le méta-biais : croire être immunisé
 

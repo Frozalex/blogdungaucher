@@ -74,7 +74,7 @@ Pour le joueur d'échecs qui s'entraîne sérieusement, cela veut dire que compr
 
 Au-delà des micro-pauses et du sommeil quotidien, les pauses longues (quelques jours à quelques semaines sans jouer) ont leur propre rôle.
 
-Comme développé dans l'article sur le burnout aux échecs, la pratique intensive sans récupération suffisante mène à un épuisement émotionnel qui dégrade la motivation intrinsèque. Ce n'est pas une faiblesse : c'est une réalité biologique. Le [système dopaminergique](https://fr.wikipedia.org/wiki/Syst%C3%A8me_dopaminergique), impliqué dans la motivation et la récompense, se désensibilise avec la répétition sans variation.
+Comme développé dans [l'article sur le burnout aux échecs](/fr/blog/burnout-chess/), la pratique intensive sans récupération suffisante mène à un épuisement émotionnel qui dégrade la motivation intrinsèque. Ce n'est pas une faiblesse : c'est une réalité biologique. Le [système dopaminergique](/fr/blog/echecs-et-dopamine/), impliqué dans la motivation et la récompense, se désensibilise avec la répétition sans variation.
 
 Une pause de plusieurs jours sans échecs restaure la sensibilité à la récompense. Le cerveau « oublie » légèrement la routine et retrouve une forme de fraîcheur motivationnelle. De nombreux joueurs de haut niveau décrivent ce phénomène : après une pause forcée (tournois, voyages, obligations professionnelles), ils reviennent aux échecs avec une envie et une clarté de jeu améliorées.
 

@@ -8,7 +8,7 @@ featuredRank: 99
 readingTime: "13 min"
 pillar: "Mathématiques"
 tags: ["Nash", "équilibre", "ouvertures", "théorie des jeux", "échecs", "mathématiques", "stratégie"]
-seoTitle: "Équilibre de Nash aux échecs : ouvertures et stratégie"
+seoTitle: "Pourquoi certaines ouvertures résistent des décennies : Nash aux échecs"
 seoDescription: "Comment l'équilibre de Nash explique la stabilité des ouvertures d'échecs et pourquoi certaines variantes théoriques résistent à toute réfutation pendant des décennies."
 ---
 

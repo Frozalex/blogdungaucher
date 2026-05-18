@@ -55,7 +55,7 @@ Ces nuances ne diminuent pas l'intérêt de l'étude ; elles la rendent plus uti
 
 La question mérite d'être posée : pourquoi les échecs et pas les mots croisés, le bridge ou le sudoku ?
 
-[Neil Charness](https://fr.wikipedia.org/wiki/Neil_Charness), chercheur en psychologie cognitive à Florida State University, a consacré une grande partie de sa carrière à l'étude du vieillissement et de la performance aux échecs. Dans ses travaux des années 1980, il montre que les joueurs d'échecs âgés maintiennent leur niveau de jeu plus longtemps que prévu par les modèles de déclin cognitif général, notamment grâce à la compensation stratégique : les joueurs expérimentés compensent la baisse de vitesse de traitement par une utilisation plus efficace de leur mémoire à long terme, le même mécanisme de *chunks* documenté dans l’article sur [les échecs et la mémoire](/blog/echecs-et-memoire/).
+[Neil Charness](https://fr.wikipedia.org/wiki/Neil_Charness), chercheur en psychologie cognitive à Florida State University, a consacré une grande partie de sa carrière à l'étude du vieillissement et de la performance aux échecs. Dans ses travaux des années 1980, il montre que les joueurs d'échecs âgés maintiennent leur niveau de jeu plus longtemps que prévu par les modèles de déclin cognitif général, notamment grâce à la compensation stratégique : les joueurs expérimentés compensent la baisse de vitesse de traitement par une utilisation plus efficace de leur mémoire à long terme, le même mécanisme de *chunks* documenté dans l’article sur [les échecs et la mémoire](/fr/blog/echecs-et-memoire/).
 
 > **Charness N.** (1981). *Aging and skilled problem solving.* Journal of Experimental Psychology: General, 110(1), 21-38.
 
@@ -99,7 +99,7 @@ Commencer à 65 ans ne donnera pas les mêmes résultats qu'une pratique début�
 ## Questions fréquentes
 
 **Les échecs guérissent-ils Alzheimer ?**
-Non. Les échecs ne guérissent ni ne préviennent les causes biologiques d'Alzheimer (dépôts amyloïdes, enchevêtrements tau). Ils retardent l'apparition des symptômes en construisant une réserve cognitive qui tolère les lésions plus longtemps avant qu'elles ne franchissent le seuil clinique.
+Non. Les échecs ne guérissent ni ne préviennent les causes biologiques d'Alzheimer (dépôts amyloïdes, enchevêtrements tau). Ils retardent l'apparition des symptômes en construisant une réserve cognitive qui tolère les lésions plus longtemps avant qu'elles ne franchissent le seuil clinique. ([L'analyse complète sur les études Alzheimer et réserve cognitive est ici.](/fr/blog/echecs-alzheimer-prevention-declin-cognitif/))
 
 **Combien de parties par semaine pour un effet mesurable ?**
 Les études ne fixent pas de seuil précis. Verghese (2003) mesurait la pratique en "jours par semaine". La constance semble plus importante que la fréquence : deux sessions régulières valent mieux que des pics irréguliers.

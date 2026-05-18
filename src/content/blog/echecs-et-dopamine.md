@@ -90,7 +90,7 @@ Ce phénomène explique un biais comportemental fréquent aux échecs : les joue
 
 Le classement Elo est une source de récompense dopaminergique différée mais puissante. Chaque point gagné est une micro-récompense. Chaque passage d'un seuil symbolique (1500, 1700, 2000) est une récompense plus forte.
 
-Ce système de progression visible et chiffrée est l'un des mécanismes les plus efficaces pour maintenir l'engagement à long terme, et aussi l'un des plus risqués pour les profils susceptibles à la dépendance comportementale.
+Ce système de progression visible et chiffrée est l'un des mécanismes les plus efficaces pour maintenir l'engagement à long terme, et aussi l'un des plus risqués pour les profils susceptibles à [la dépendance comportementale](/fr/blog/les-echecs-et-l-addiction/).
 
 ## Comparaison avec d'autres jeux : le profil spécifique des échecs
 

@@ -9,7 +9,7 @@ readingTime: "22 min"
 pillar: "Psychologie"
 tags: ["échecs", "addiction", "cerveau", "dopamine", "jeu en ligne", "santé mentale", "psychologie"]
 seoTitle: "Addiction aux échecs : comprendre et surmonter la dépendance"
-seoDescription: "Découvrez le lien complexe entre les échecs et l'addiction. Identifiez les signes de dépendance et trouvez des conseils pour reprendre le contrôle."
+seoDescription: "47 parties dans la nuit, rating obsessionnel, boucle dopaminergique : les échecs créent-ils une vraie addiction ? Signes, mécanismes neurologiques et pistes concrètes pour reprendre le contrôle."
 ogImage: "/images/blog/les-echecs-et-l-addiction-hero.png"
 heroImage:
   src: "/images/blog/les-echecs-et-l-addiction-hero.png"
@@ -46,7 +46,7 @@ Les échecs en ligne, eux, ajoutent une couche : cadences infernales (Bullet, Bl
 
 ### A : La boucle dopaminergique
 
-Victoire → dopamine → sensation de progression → envie de recommencer → nouvelle partie → nouveau pic (ou nouvelle frustration à « effacer »). Ton [striatum](https://fr.wikipedia.org/wiki/Striatum), hub du circuit de la récompense, est sollicité quand le mat tombe, quand tu gagnes du temps à la pendule, quand tu « cliques juste ».
+Victoire → [dopamine](/fr/blog/echecs-et-dopamine/) → sensation de progression → envie de recommencer → nouvelle partie → nouveau pic (ou nouvelle frustration à « effacer »). Ton [striatum](https://fr.wikipedia.org/wiki/Striatum), hub du circuit de la récompense, est sollicité quand le mat tombe, quand tu gagnes du temps à la pendule, quand tu « cliques juste ».
 
 Ce n’est pas que tu es « faible ». C’est que ton cerveau fait exactement ce que l’évolution lui a appris : poursuivre les signaux qui ressemblent à de la réussite.
 

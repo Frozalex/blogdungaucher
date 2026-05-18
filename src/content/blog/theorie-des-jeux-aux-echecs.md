@@ -8,7 +8,7 @@ featuredRank: 99
 readingTime: "14 min"
 pillar: "Mathématiques"
 tags: ["théorie des jeux", "échecs", "mathématiques", "Nash", "minimax", "stratégie", "science"]
-seoTitle: "Théorie des jeux aux échecs : le guide complet"
+seoTitle: "Théorie des jeux aux échecs : Nash, minimax et stratégie optimale"
 seoDescription: "Minimax, équilibre de Nash, jeux à somme nulle : comment la théorie des jeux explique la stratégie aux échecs et ce qu'elle révèle sur la prise de décision."
 ---
 
@@ -50,7 +50,7 @@ Ce résultat est à la fois rassurant sur le plan logique et vertigineux sur le 
 
 ## Minimax : la formalisation de la réflexion échiquéenne
 
-L'algorithme [minimax](https://fr.wikipedia.org/wiki/Algorithme_minimax) est directement issu de la théorie des jeux et constitue la colonne vertébrale de toute réflexion stratégique aux échecs. Son principe est remarquablement simple à énoncer.
+L'algorithme [minimax](/fr/blog/minimax-aux-echecs/) est directement issu de la théorie des jeux et constitue la colonne vertébrale de toute réflexion stratégique aux échecs. Son principe est remarquablement simple à énoncer.
 
 Blanc cherche à maximiser son avantage. Noir cherche à minimiser l'avantage de Blanc. À chaque tour, chaque joueur suppose que l'adversaire jouera le coup optimal de son point de vue. Cette hypothèse réciproque crée un arbre de décision dans lequel chaque noeud représente une position et chaque branche un coup légal.
 
