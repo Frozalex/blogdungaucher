@@ -94,13 +94,6 @@ Les données publiées sont **plus nuancées** : certains essais montrent des **
 
 **Objectif de cette page :** rassembler des **chiffres tirés d’études sélectionnées** (tableau et références en bas) et les relier au **jeu d’échecs** comme loisir dense et durable : **apprendre**, **progresser**, **ancrer une routine** sans la confondre avec une ordonnance.
 
-**Plan :** garde-fous méthodologiques → tableau synthétique → lectures détaillées (cohortes, méta-analyses, essais) → stratégies concrètes sans médicaliser → références.
-
-> **L’essentiel (trois garde-fous)**
-> - Les **associations épidémiologiques** (probabilité relative sur une cohorte, souvent présentée comme un ratio) ne valent pas **causalité individuelle**.
-> - **Jeux de plateau ≠ médicament** : les effets dépendent de la dose (temps, semaines), du profil (MCI, diagnostic déjà posé, senior bien portant) et du résultat mesuré (MMSE, humeur, qualité de vie).
-> - Le **jeu d’échecs** reste un **levier réaliste** : engagement cognitif fort, feedback immédiat, cadre social ; trois facteurs souvent cités dans les politiques de **vieillissement actif** et de **santé** publique axée sur l’autonomie.
-
 Pour les mécanismes généraux (plasticité, imagerie), compléter avec [les bienfaits des échecs sur le cerveau](/blog/bienfaits-des-echecs-sur-le-cerveau/) et [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
 
 ## Synthèse chiffrée : ce que disent quelques études clés
@@ -218,3 +211,9 @@ Pour les seniors : voir aussi [échecs et seniors](/blog/echecs-et-seniors/) ; e
 - Pilier **[rubrique Science](/fr/science/)**, pages [mémoire](/blog/echecs-et-memoire/) et [effets sur le cerveau](/blog/bienfaits-des-echecs-sur-le-cerveau/).
 
 Le **jeu d’échecs** n’est pas une équation fermée contre la **maladie d’Alzheimer** ; c’est une **pratique longue**, parfois mesurable sur humeur ou engagement, rarement réductible à un seul **chiffre magique**. Dans un rapport honnête aux données, **c’est déjà une bonne défense**.
+
+## À retenir
+
+- Les **associations épidémiologiques** (probabilité relative sur une cohorte, souvent présentée comme un ratio) ne valent pas **causalité individuelle**.
+- **Jeux de plateau ≠ médicament** : les effets dépendent de la dose (temps, semaines), du profil (MCI, diagnostic déjà posé, senior bien portant) et du résultat mesuré (MMSE, humeur, qualité de vie).
+- Le **jeu d’échecs** reste un **levier réaliste** : engagement cognitif fort, feedback immédiat, cadre social ; trois facteurs souvent cités dans les politiques de **vieillissement actif** et de **santé** publique axée sur l’autonomie.

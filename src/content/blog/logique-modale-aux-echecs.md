@@ -14,14 +14,6 @@ seoDescription: "Comment la logique modale formelle structure le raisonnement au
 
 Quand tu analyses une position, tu ne penses pas en termes de certitudes. Tu penses en termes de possibilités et de nécessités. "Il peut jouer là." "Je dois protéger cette pièce." "Si j'avance ce pion, il est forcé de répondre ainsi." Ce langage modal, celui du possible et du nécessaire, est au coeur de la réflexion échiquéenne. Et il correspond exactement à une branche formelle de la logique : la [logique modale](https://fr.wikipedia.org/wiki/Logique_modale).
 
-**Plan :** définition de la logique modale → échiquier comme « mondes possibles » → prophylaxie → profondeur du raisonnement modal selon le niveau → sources.
-
-> **L'essentiel en 4 points :**
-> - La logique modale formalise les raisonnements sur le possible et le nécessaire
-> - Aux échecs, chaque position est un "monde possible" dans l'arbre des variantes
-> - "Gagnant si..." est une formule modale : la victoire est possible (accessible) dans certains mondes, nécessaire dans d'autres
-> - Le raisonnement prophylactique est une application directe de la logique modale au jeu pratique
-
 ## Qu'est-ce que la logique modale ?
 
 La [logique modale](https://fr.wikipedia.org/wiki/Logique_modale) est une extension de la logique classique qui introduit des opérateurs pour exprimer les modalités : ce qui est possible, ce qui est nécessaire, ce qui est contingent. Ses origines remontent à [Aristote](https://fr.wikipedia.org/wiki/Aristote), mais sa formalisation moderne est due à des logiciens du XXe siècle dont [C.I. Lewis](https://fr.wikipedia.org/wiki/C.I._Lewis) et [Saul Kripke](https://fr.wikipedia.org/wiki/Saul_Kripke).
@@ -120,6 +112,13 @@ Cette progression est une progression dans la profondeur et la richesse du raiso
 **Après lecture :** sur une position d’entraînement, écris pour **deux coups candidats** la phrase « si je joue X, dans quels **mondes** j’atterris au coup suivant ? » avant de calculer en profondeur.
 
 ---
+
+## À retenir
+
+- La logique modale formalise les raisonnements sur le possible et le nécessaire
+- Aux échecs, chaque position est un "monde possible" dans l'arbre des variantes
+- "Gagnant si..." est une formule modale : la victoire est possible (accessible) dans certains mondes, nécessaire dans d'autres
+- Le raisonnement prophylactique est une application directe de la logique modale au jeu pratique
 
 ### Sources et références
 

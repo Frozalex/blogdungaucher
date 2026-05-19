@@ -62,14 +62,6 @@ La question méritait d'être posée sérieusement, et non balayée d'un revers 
 
 La science, la statistique et la sociologie ont tranché. La réponse est contre-intuitive : l'angle décisif n'est pas biologique, il est mathématique. Une fois que tu l'as vu, l'écart de genre aux échecs ne ressemble plus à un mystère.
 
-**Plan :** démographie et pyramide → biais de participation → menace du stéréotype → histoire et modèles → politiques et clubs → conclusion → FAQ → sources.
-
-> **L'essentiel en 4 points :**
-> - Les femmes représentent 10 à 15 % des joueurs licenciés dans le monde (FIDE, 2024)
-> - L'immense majorité de l'écart de classement s'explique par le biais de participation, pas par la biologie (Bilalić, 2009)
-> - La menace du stéréotype réduit la performance des joueuses face aux adversaires masculins (Backus, Cubel et al., 2023)
-> - L'expérience Polgár démontre que le plafond est culturel et environnemental, pas biologique
-
 ## Le choc des chiffres : une pyramide qui part trop étroite
 
 Les statistiques de la [Fédération Internationale des Échecs](https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_internationale_des_%C3%A9checs) (FIDE) pour l'année 2024 sont sans appel. Les femmes représentent en moyenne entre 10 % et 15 % seulement des joueurs licenciés participant à des tournois officiels dans le monde entier.
@@ -215,6 +207,13 @@ Le débat sur les **sections féminines** partage souvent le terrain entre **vis
 **Après lecture :** si tu encadres ou anime un club, teste **une** friction simple (accueil du premier cours, binômes mixtes systématiques, ou affichage des règles anti-harcèlement) pendant un trimestre et mesure les inscriptions féminines avant/après.
 
 ---
+
+## À retenir
+
+- Les femmes représentent 10 à 15 % des joueurs licenciés dans le monde (FIDE, 2024)
+- L'immense majorité de l'écart de classement s'explique par le biais de participation, pas par la biologie (Bilalić, 2009)
+- La menace du stéréotype réduit la performance des joueuses face aux adversaires masculins (Backus, Cubel et al., 2023)
+- L'expérience Polgár démontre que le plafond est culturel et environnemental, pas biologique
 
 ### Sources et références
 

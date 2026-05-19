@@ -43,15 +43,6 @@ Un enfant de 5 ans peut-il apprendre les échecs ? La réponse courte est : cert
 
 Les réponses viennent de la psychologie du développement, de la pédagogie échiquéenne, et d'un corpus de recherche de plus en plus solide sur l'apprentissage précoce. Et elles sont plus nuancées que les discours enthousiastes des fédérations, mais aussi plus encourageantes pour les parents.
 
-**Plan :** le développement cognitif et les prérequis aux échecs → l'âge idéal selon les données → les méthodes pédagogiques adaptées → les bénéfices documentés → les pièges à éviter → un protocole pratique pour démarrer.
-
-> **L'essentiel en 5 points :**
-> - L'âge optimal d'initiation structurée est **5-7 ans**: après la théorie de l'esprit, dans la fenêtre de plasticité visuo-spatiale
-> - Les méthodes **adaptées à l'âge** (pièces simplifiées, mini-jeux, récits) font une différence énorme sur l'engagement
-> - Les bénéfices sur les **fonctions exécutives** (planification, inhibition) apparaissent dès 10-12 semaines d'instruction régulière
-> - La **motivation intrinsèque** est le prédicteur le plus fort de la progression, jamais forcer
-> - La première **compétition** doit attendre que l'enfant la réclame lui-même
-
 ## Les prérequis cognitifs aux échecs
 
 Avant de parler d'âge, il faut comprendre ce que les échecs requièrent cognitivement, et à quel âge ces capacités se développent typiquement.
@@ -178,3 +169,11 @@ Pour un parent qui se demande "pourquoi les échecs plutôt qu'un autre jeu ou u
 - Dania, A., Kossyva, I., Psychountaki, M., & Donti, O. (2021). Effects of a chess training program on athletes' executive functions and sport performance. *Brain Sciences*, 11(10), 1330.
 - Pandolfini, B. (1992). *Pandolfini's Chess Complete*. Simon & Schuster.
 - FIDE for Schools. (2020). *Chess in Education : A Guide for Teachers*. FIDE Commission for Chess in Schools.
+
+## À retenir
+
+- L'âge optimal d'initiation structurée est **5-7 ans**: après la théorie de l'esprit, dans la fenêtre de plasticité visuo-spatiale
+- Les méthodes **adaptées à l'âge** (pièces simplifiées, mini-jeux, récits) font une différence énorme sur l'engagement
+- Les bénéfices sur les **fonctions exécutives** (planification, inhibition) apparaissent dès 10-12 semaines d'instruction régulière
+- La **motivation intrinsèque** est le prédicteur le plus fort de la progression, jamais forcer
+- La première **compétition** doit attendre que l'enfant la réclame lui-même

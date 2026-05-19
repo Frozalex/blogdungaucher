@@ -24,14 +24,6 @@ La règle 40-40-20 est une heuristique popularisée parmi les entraîneurs et le
 
 Ce n'est pas un dogme. C'est une hypothèse solide. Et pour comprendre pourquoi elle est solide, il faut comprendre ce que la recherche sur l'expertise aux échecs a mis des décennies à démonter.
 
-**Plan :** pourquoi les joueurs surindexent les ouvertures → tactique / finales / ouvertures selon la littérature → mise en pratique et adaptations → critiques → synthèse tableau → FAQ → sources.
-
-> **L'essentiel en 4 points :**
-> - La plupart des joueurs amateurs surindexent massivement sur les ouvertures, là où l'impact sur le résultat est le plus faible à leur niveau
-> - La tactique est le levier de progression le plus documenté et le plus immédiat : elle améliore le calcul, la reconnaissance de patterns et la précision dans toutes les phases du jeu
-> - Les finales sont chroniquement négligées alors qu'elles sont la phase où les erreurs techniques coûtent le plus - une partie nulle ou gagnée se convertit ou s'échappe en finale
-> - La règle 40-40-20 n'est pas universelle : elle doit être ajustée selon le niveau, le style et les faiblesses identifiées du joueur
-
 ## Pourquoi la répartition spontanée est contre-productive
 
 ### Le biais de l'ouverture
@@ -185,6 +177,13 @@ En blitz pur, les finales comptent beaucoup moins (les parties se terminent rare
 **Après lecture :** pendant **une semaine**, chronomètre le temps réel tactique / finales / ouvertures ; compare au tableau « session type » du milieu d’article et ajuste **un** levier seulement.
 
 ---
+
+## À retenir
+
+- La plupart des joueurs amateurs surindexent massivement sur les ouvertures, là où l'impact sur le résultat est le plus faible à leur niveau
+- La tactique est le levier de progression le plus documenté et le plus immédiat : elle améliore le calcul, la reconnaissance de patterns et la précision dans toutes les phases du jeu
+- Les finales sont chroniquement négligées alors qu'elles sont la phase où les erreurs techniques coûtent le plus - une partie nulle ou gagnée se convertit ou s'échappe en finale
+- La règle 40-40-20 n'est pas universelle : elle doit être ajustée selon le niveau, le style et les faiblesses identifiées du joueur
 
 ### Sources et références
 Pour approfondir les idées développées dans cet article :

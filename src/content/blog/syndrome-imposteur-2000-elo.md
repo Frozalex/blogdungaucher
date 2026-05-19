@@ -14,16 +14,6 @@ seoDescription: "Pourquoi atteindre 2000 Elo peut déclencher le syndrome de l'i
 
 Tu as travaillé pendant des mois. Tu as étudié les ouvertures, résolu des milliers de tactiques, analysé tes parties à froid. Et puis, un jour, le chiffre apparaît : 2000. Une frontière symbolique que la plupart des joueurs ne franchissent jamais. Tu devrais être fier. À la place, une petite voix intérieure murmure : "Ce n'est pas réel. Tu vas redescendre. Les autres vont s'en rendre compte."
 
-Bienvenue dans le syndrome de l'imposteur à 2000 Elo. C'est une expérience étonnamment commune, et elle dit quelque chose d'important sur la psychologie de la performance aux échecs.
-
-**Plan :** définition du syndrome → pourquoi le seuil des 2000 → pièges comportementaux → consolidation du niveau → lecture positive du doute → sources.
-
-> **L'essentiel en 4 points :**
-> - Le syndrome de l'imposteur au seuil des 2000 Elo est une réponse psychologique normale à une transition identitaire
-> - Il est amplifié par le fait que 2000 est une frontière symbolique forte dans la culture des échecs
-> - La stratégie naturelle d'évitement (jouer moins pour ne pas "prouver" qu'on n'est pas à ce niveau) est contre-productive
-> - La consolidation psychologique d'un nouveau niveau nécessite du temps et de l'exposition répétée, pas de la perfection
-
 ## Qu'est-ce que le syndrome de l'imposteur ?
 
 Le [syndrome de l'imposteur](/fr/blog/echecs-et-syndrome-imposteur/) a été décrit pour la première fois en 1978 par les psychologues [Pauline Clance](https://fr.wikipedia.org/wiki/Pauline_Clance) et Suzanne Imes. Ils l'ont défini comme un phénomène psychologique où des individus compétents et accomplis ne parviennent pas à internaliser leurs réussites et craignent d'être "démasqués" comme des fraudes, malgré des preuves objectives de leur compétence.
@@ -99,6 +89,13 @@ Le joueur idéal à 2000 Elo est celui qui sait qu'il a encore beaucoup à appre
 **Après lecture :** joue **deux** tournois ou pools où l’objectif affiché est « tester des idées », pas « défendre le 2000 » : l’exposition sans enjeu de confirmation est le traitement.
 
 ---
+
+## À retenir
+
+- Le syndrome de l'imposteur au seuil des 2000 Elo est une réponse psychologique normale à une transition identitaire
+- Il est amplifié par le fait que 2000 est une frontière symbolique forte dans la culture des échecs
+- La stratégie naturelle d'évitement (jouer moins pour ne pas "prouver" qu'on n'est pas à ce niveau) est contre-productive
+- La consolidation psychologique d'un nouveau niveau nécessite du temps et de l'exposition répétée, pas de la perfection
 
 ### Sources et références
 

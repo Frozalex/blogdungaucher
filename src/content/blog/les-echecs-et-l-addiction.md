@@ -28,8 +28,6 @@ Cette scène te semble familière ? Ce film-là, des milliers de joueurs le rejo
 
 Les échecs, ce « noble jeu de rois », réputé pour la discipline et la froideur du calcul… **Peut-on vraiment être accro aux échecs ?** Pas au sens où une partie entre amis le dimanche te détruirait la vie, mais au sens où l’online compétitif peut installer une boucle que ton cerveau ne distingue pas toujours d’autres renforcements extrêmes. On va poser les faits sans te faire la morale, avec ce que dit la science.
 
-**Plan :** cadre psychiatrique des dépendances comportementales → mécanismes (dopamine, boucles) → signaux personnels → pistes de récupération → sources.
-
 ## Le mythe brisé : non, l’addiction n’est pas « réservée » aux drogues
 
 Longtemps, on a cru que la dépendance, c’était surtout la bouteille ou la poudre. Un jeu sur écran ? Un passe-temps intellectuel ? Ça ne « compte » pas.
@@ -87,8 +85,6 @@ Quand Chess.com devient une bêquille, ce n'est plus le hobby qui te détend, c'
 ## Le tilt : humour noir et spirale bien documentée
 
 Tu perds une partie bête. Tu relances tout de suite. Tu perds moins bien. Tu relances. Tu perds encore plus mal.
-
-Bienvenue dans la spirale : le [tilt](https://fr.wikipedia.org/wiki/Tilt_(jeu)), importé du poker, exporté dans ton canapé.
 
 Le stress monte, le cortisol grimpe ; le [Dr Elke van der Meer](https://www.researchgate.net/profile/Elke-Van-der-Meer) ([Humboldt Berlin](https://fr.wikipedia.org/wiki/Universit%C3%A9_Humboldt_de_Berlin)) a mesuré des niveaux de stress en Blitz comparables à… un parachutiste avant le premier saut. Sous pression, le [cortex préfrontal](https://fr.wikipedia.org/wiki/Cortex_pr%C3%A9frontal) lâche prise ; l’[amygdale](https://fr.wikipedia.org/wiki/Amygdale_(cerveau)) pilote. Tu joues vite et mal. [Matthias Brand](https://fr.wikipedia.org/wiki/Matthias_Brand) relie ça aux fonctions exécutives dans les usages problématiques.
 

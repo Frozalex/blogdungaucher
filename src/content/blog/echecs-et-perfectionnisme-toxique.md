@@ -16,14 +16,6 @@ Un joueur perfectionniste semble, de prime abord, être un joueur sérieux. Il a
 
 Le perfectionnisme toxique aux échecs est plus répandu qu'on ne le croit. Et il a un effet paradoxal direct : il dégrade la performance qu'il cherche à maximiser.
 
-**Plan :** adaptatif vs toxique → manifestations au jeu → mécanismes (processus ironiques) → satisficing et outils pratiques → sources.
-
-> **L'essentiel en 4 points :**
-> - Il existe deux formes de perfectionnisme : adaptatif (sain) et maladaptatif (toxique)
-> - Le perfectionnisme toxique génère de l'anxiété, de la paralysie par l'analyse et une peur de l'erreur qui [augmente les erreurs](/fr/blog/5-biais-cognitifs-blunder/)
-> - Les échecs sont un terrain particulièrement propice au perfectionnisme toxique en raison de la transparence totale des erreurs
-> - La recherche du "suffisamment bon" (satisficing) est une stratégie cognitives supérieure au "meilleur possible" dans des conditions réelles
-
 ## Perfectionnisme adaptatif vs. perfectionnisme toxique
 
 La psychologie distingue deux formes de perfectionnisme qui ont des effets radicalement différents sur la performance.
@@ -95,6 +87,13 @@ Transformer le perfectionnisme toxique ne signifie pas abaisser ses standards. C
 **Après lecture :** impose pour les parties sérieuses un **plafond de temps par coup** (même large) : le perfectionnisme toxique se nourrit du « meilleur coup » sans horizon.
 
 ---
+
+## À retenir
+
+- Il existe deux formes de perfectionnisme : adaptatif (sain) et maladaptatif (toxique)
+- Le perfectionnisme toxique génère de l'anxiété, de la paralysie par l'analyse et une peur de l'erreur qui [augmente les erreurs](/fr/blog/5-biais-cognitifs-blunder/)
+- Les échecs sont un terrain particulièrement propice au perfectionnisme toxique en raison de la transparence totale des erreurs
+- La recherche du "suffisamment bon" (satisficing) est une stratégie cognitives supérieure au "meilleur possible" dans des conditions réelles
 
 ### Sources et références
 

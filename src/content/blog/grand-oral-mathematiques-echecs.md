@@ -38,15 +38,6 @@ Ce n'est pas un sujet où Maths et NSI se côtoient par hasard. C'est un sujet o
 
 Cet article te donne le plan complet, le contenu des deux programmes, les points de connexion entre les disciplines, et les conseils pour tenir la distance face à un jury qui connaît les deux spécialités.
 
-**Plan :** combinatoire (Shannon) ↔ minimax → probabilités / Elo ↔ données → graphes / cavalier ↔ structures → IA (AlphaZero) → déroulé d’oral → questions jury croisées → sources.
-
-> **L'essentiel en 5 points :**
-> - La combinatoire (Maths) produit $\sim 10^{120}$ parties → rend le minimax (NSI) **nécessaire**
-> - Les probabilités Elo (Maths) sont stockées et interrogées en SQL (NSI)
-> - Les graphes hamiltoniens (Maths) sont implémentés comme arbres de décision (NSI)
-> - AlphaZero = algèbre linéaire des réseaux de neurones (Maths) + apprentissage par renforcement (NSI)
-> - Un sujet transversal oblige le jury à poser des questions *entre* les deux disciplines : c'est l'avantage compétitif
-
 ## Les trois ponts Maths ↔ NSI : l'angle unique du sujet transversal
 
 Avant d'entrer dans le contenu, la structure de pensée est essentielle. Un jury de Grand Oral transversal Maths+NSI n'attend pas deux exposés collés l'un à l'autre. Il attend un candidat qui **montre comment les deux disciplines se nécessitent**.
@@ -431,6 +422,14 @@ Et si l'on te demande pourquoi tu as choisi les échecs, la réponse honnête et
 **Après lecture :** fais une **répétition hybride** : cinq minutes maths au tableau (Elo ou combinatoire), cinq minutes oral sur le lien avec une idée NSI (minimax ou données), sans support, comme au jury.
 
 ---
+
+## À retenir
+
+- La combinatoire (Maths) produit $\sim 10^{120}$ parties → rend le minimax (NSI) **nécessaire**
+- Les probabilités Elo (Maths) sont stockées et interrogées en SQL (NSI)
+- Les graphes hamiltoniens (Maths) sont implémentés comme arbres de décision (NSI)
+- AlphaZero = algèbre linéaire des réseaux de neurones (Maths) + apprentissage par renforcement (NSI)
+- Un sujet transversal oblige le jury à poser des questions *entre* les deux disciplines : c'est l'avantage compétitif
 
 ### Sources et références
 

@@ -43,15 +43,6 @@ faq:
 
 Ce n'est pas de la magie. C'est de la visualisation spatiale poussée à ses limites : une capacité que les échecs développent de manière documentée, et que la neuroscience commence à comprendre en profondeur.
 
-**Plan :** qu'est-ce que la cognition spatiale → la méta-analyse Tejada-Gallardo → ce que les grands maîtres voient réellement → parties à l'aveugle et visualisation → le cortex pariétal en jeu → applications pratiques.
-
-> **L'essentiel en 5 points :**
-> - La pratique des échecs améliore le **raisonnement spatial** avec un effet significatif (ES = 0.54, Tejada-Gallardo 2021, 17 études)
-> - Le calcul de variantes activé les mêmes régions que les tâches de **rotation mentale** (cortex pariétal supérieur)
-> - La visualisation des GM n'est pas **photographique** mais **schématique**: une représentation des pièces critiques, pas un snapshot complet
-> - Les **parties à l'aveugle** sont l'exercice le plus direct de visualisation spatiale, accessibles par paliers depuis le niveau intermédiaire
-> - Les enfants de **5-10 ans** montrent les améliorations les plus marquées : fenêtre de développement optimal du traitement visuo-spatial
-
 ## Cognition spatiale : de quoi parle-t-on ?
 
 La cognition spatiale désigne l'ensemble des capacités mentales qui permettent de représenter, transformer et naviguer dans l'espace : qu'il soit physique (se repérer dans un bâtiment) ou abstrait (visualiser une structure moléculaire en chimie, lire un plan d'architecte).
@@ -150,3 +141,11 @@ Ce résultat fait sens : la géométrie et la physique requièrent exactement le
 - Atherton, M., Zhuang, J., Bart, W. M., Hu, X., & He, S. (2003). A functional MRI study of high-level cognition. *Cognitive Brain Research*, 16(1), 26–31.
 - Gobet, F., & Simon, H. A. (1996). Templates in chess memory : A mechanism for recalling several boards. *Cognitive Psychology*, 31(1), 1–40.
 - Ferguson, R. (1995). Chess in education research summary. *Chess in Education Research Summary*. Paper presented at the Chess in Education, A Wise Move Conference, New York.
+
+## À retenir
+
+- La pratique des échecs améliore le **raisonnement spatial** avec un effet significatif (ES = 0.54, Tejada-Gallardo 2021, 17 études)
+- Le calcul de variantes activé les mêmes régions que les tâches de **rotation mentale** (cortex pariétal supérieur)
+- La visualisation des GM n'est pas **photographique** mais **schématique**: une représentation des pièces critiques, pas un snapshot complet
+- Les **parties à l'aveugle** sont l'exercice le plus direct de visualisation spatiale, accessibles par paliers depuis le niveau intermédiaire
+- Les enfants de **5-10 ans** montrent les améliorations les plus marquées : fenêtre de développement optimal du traitement visuo-spatial

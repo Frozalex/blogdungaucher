@@ -3,10 +3,15 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HomeLanding from "../../components/HomeLanding.astro";
 
 import { buildWebsiteJsonLd, getAllPosts, getLatestPosts } from "../../utils/blog";
+import { categorySlugs } from "../../data/site";
 
 const allPosts = await getAllPosts();
 const totalPosts = allPosts.length;
 const latestPosts = await getLatestPosts(6, "fr");
+
+const postsByCategory = Object.fromEntries(
+  categorySlugs.map((slug) => [slug, allPosts.filter((p) => p.data.category === slug).length]),
+) as Partial<Record<(typeof categorySlugs)[number], number>>;
 ---
 <BaseLayout
   title="Blog d'un Gaucher"
@@ -14,5 +19,5 @@ const latestPosts = await getLatestPosts(6, "fr");
   canonicalPath="/fr/"
   structuredData={buildWebsiteJsonLd()}
 >
-  <HomeLanding lang="fr" latestPosts={latestPosts} totalPosts={totalPosts} />
+  <HomeLanding lang="fr" latestPosts={latestPosts} totalPosts={totalPosts} postsByCategory={postsByCategory} />
 </BaseLayout>

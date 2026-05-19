@@ -16,14 +16,6 @@ Tu as gagné le tournoi de ton club. Félicitations et poignées de mains. Et da
 
 Ce dialogue intérieur négatif a un nom. Et il touche les échecs de façon particulièrement intense.
 
-**Plan :** mécanisme d’attribution → pourquoi les échecs amplifient le syndrome → signaux comportementaux → stratégies (journal, attribution, exposition, feedback) → sources.
-
-> **L'essentiel en 4 points :**
-> - Le syndrome de l'imposteur aux échecs se traduit par une attribution systématique des succès à la chance et des échecs à la compétence
-> - Les caractéristiques du jeu (transparence des erreurs, absence de hasard) amplifient ce mécanisme
-> - Il existe des patterns comportementaux identifiables qui permettent de le diagnostiquer chez soi
-> - La psychothérapie cognitivo-comportementale et des techniques spécifiques permettent une vraie transformation
-
 ## La mécanique du syndrome de l'imposteur
 
 La psychologie du syndrome de l'imposteur repose sur un mécanisme d'attribution asymétrique. Quand les succès arrivent, ils sont attribués à des facteurs externes et instables : la chance, la faiblesse des adversaires, une bonne journée exceptionnelle. Quand les échecs arrivent, ils sont attribués à des facteurs internes et stables : le manque de talent, la "vraie" incompétence qui était là depuis le début.
@@ -97,6 +89,13 @@ La transformation du syndrome de l'imposteur ne se fait pas en un jour, mais ell
 **Après lecture :** après **trois** parties, écris **une** décision interne et attribuable (temps, plan, tactique) pour chaque victoire, pas « j’ai eu de la chance ».
 
 ---
+
+## À retenir
+
+- Le syndrome de l'imposteur aux échecs se traduit par une attribution systématique des succès à la chance et des échecs à la compétence
+- Les caractéristiques du jeu (transparence des erreurs, absence de hasard) amplifient ce mécanisme
+- Il existe des patterns comportementaux identifiables qui permettent de le diagnostiquer chez soi
+- La psychothérapie cognitivo-comportementale et des techniques spécifiques permettent une vraie transformation
 
 ### Sources et références
 

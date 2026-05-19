@@ -14,14 +14,6 @@ seoDescription: "Comment les réseaux bayésiens et la statistique bayésienne p
 
 Un blunder est rarement totalement imprévisible. Avant qu'il se produise, des signaux existent : la pendule qui s'affole, une position complexe que l'adversaire n'a pas l'habitude de gérer, une suite forcée longue que son niveau de jeu rend difficile à calculer intégralement. Ces signaux, pris ensemble, forment un portrait probabiliste du risque d'erreur. Les [réseaux bayésiens](https://fr.wikipedia.org/wiki/R%C3%A9seau_bay%C3%A9sien) formalisent précisément ce type de raisonnement.
 
-**Plan :** Bayes et mise à jour → structure d’un réseau bayésien → limites (données, biais de confirmation) → usages pratiques à l’échiquier → sources.
-
-> **L'essentiel en 4 points :**
-> - Le raisonnement bayésien permet de mettre à jour une estimation de probabilité à mesure que de nouvelles informations arrivent
-> - Un réseau bayésien modélise les dépendances causales entre plusieurs variables pour estimer une probabilité composite
-> - La probabilité d'un blunder adverse dépend de plusieurs facteurs corrélés : temps restant, complexité, style, pression psychologique
-> - Cette approche fournit un cadre pour des décisions stratégiques basées sur le risque d'erreur adverse
-
 ## Le théorème de Bayes et la mise à jour des croyances
 
 La [statistique bayésienne](https://fr.wikipedia.org/wiki/Statistique_bay%C3%A9sienne) repose sur le [théorème de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes), formulé par le révérend [Thomas Bayes](https://fr.wikipedia.org/wiki/Thomas_Bayes) au XVIIIe siècle. Ce théorème décrit comment mettre à jour une probabilité à la lumière de nouvelles informations :
@@ -115,6 +107,13 @@ Même sans construire formellement un réseau bayésien, les principes bayésien
 **Après lecture :** pendant une partie en ligne, note **trois indices** (pendule adverse, complexité, hors zone de confort) ; à la fin, vérifie si le blunder adverse coïncide avec ce tableau, sans « confirmer » n’importe quoi.
 
 ---
+
+## À retenir
+
+- Le raisonnement bayésien permet de mettre à jour une estimation de probabilité à mesure que de nouvelles informations arrivent
+- Un réseau bayésien modélise les dépendances causales entre plusieurs variables pour estimer une probabilité composite
+- La probabilité d'un blunder adverse dépend de plusieurs facteurs corrélés : temps restant, complexité, style, pression psychologique
+- Cette approche fournit un cadre pour des décisions stratégiques basées sur le risque d'erreur adverse
 
 ### Sources et références
 

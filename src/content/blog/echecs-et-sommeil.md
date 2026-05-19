@@ -43,15 +43,6 @@ Imagine que tu aies un entraîneur invisible qui consolide ton répertoire d'ouv
 
 La neuroscience du sommeil a fait des progrès spectaculaires depuis les années 2000, et ses conclusions sont particulièrement pertinentes pour les joueurs d'échecs : peu d'activités cognitives sollicitent autant de systèmes de mémoire simultanément : la mémoire déclarative pour les variantes, la mémoire procédurale pour les patterns de reconnaissance, la mémoire spatiale pour la géométrie de l'échiquier.
 
-**Plan :** architecture du sommeil et mémoire → effets de la privation sur le calcul combinatoire → sommeil REM et reconnaissance de patterns → protocoles pratiques pour les tournois → la sieste comme outil de performance.
-
-> **L'essentiel en 5 points :**
-> - Le **sommeil REM** transforme les positions étudiées en schémas durables en connectant de nouvelles informations aux réseaux existants
-> - Une nuit de privation dégrade le **calcul combinatoire de 20-25%** dès le lendemain (Harrison & Horne, 2000)
-> - Le **sommeil lent profond** consolide les faits (variantes, théorie) ; le **REM** intègre les patterns et l'intuition
-> - La **sieste de 20-90 minutes** post-étude améliore la rétention de 34% vs groupe sans sieste (Mednick et al., 2003)
-> - La **dette de sommeil est cumulative** : 5 jours de tournoi avec parties du soir sans récupération suffisante dégradent significativement la qualité des dernières rondes
-
 ## L'architecture du sommeil : ce que ton cerveau fait vraiment la nuit
 
 Une nuit de sommeil n'est pas un bloc uniforme. Elle s'organise en **cycles de 90 minutes** environ, chacun comportant plusieurs stades :
@@ -140,3 +131,11 @@ Ces témoignages convergent avec les données scientifiques : au niveau où la p
 - Walker, M. (2017). *Why We Sleep : Unlocking the Power of Sleep and Dreams*. Scribner.
 - Dinges, D. F., Pack, F., Williams, K., Gillen, K. A., Powell, J. W., Ott, G. E., … Pack, A. I. (1997). Cumulative sleepiness, mood disturbance, and psychomotor vigilance performance decrements during a week of sleep restricted to 4–5 hours per night. *Sleep*, 20(4), 267–277.
 - Anand, V., & Gautham, S. (2019). *Mind Master : Winning Lessons from a Champion's Life*. Hachette India.
+
+## À retenir
+
+- Le **sommeil REM** transforme les positions étudiées en schémas durables en connectant de nouvelles informations aux réseaux existants
+- Une nuit de privation dégrade le **calcul combinatoire de 20-25%** dès le lendemain (Harrison & Horne, 2000)
+- Le **sommeil lent profond** consolide les faits (variantes, théorie) ; le **REM** intègre les patterns et l'intuition
+- La **sieste de 20-90 minutes** post-étude améliore la rétention de 34% vs groupe sans sieste (Mednick et al., 2003)
+- La **dette de sommeil est cumulative** : 5 jours de tournoi avec parties du soir sans récupération suffisante dégradent significativement la qualité des dernières rondes

@@ -22,14 +22,6 @@ Tu as peut-être connu cette sensation. Cette incapacité à s'approprier une vi
 
 Ce n'est pas de la modestie. Ce n'est pas du réalisme. C'est le syndrome de l'imposteur. Et aux échecs, il prend des formes particulièrement insidieuses.
 
-**Plan :** définition et mécanismes → manifestations à l’échiquier → ce qui ne marche pas → outils (processus, journal, normalisation) → tableau et FAQ → sources.
-
-> **L'essentiel en 4 points :**
-> - Le syndrome de l'imposteur est un phénomène psychologique bien documenté, particulièrement fréquent dans les activités intellectuelles et compétitives
-> - Aux échecs, il se manifeste souvent par le sentiment que les victoires sont dues à la chance de l'adversaire et que les défaites confirment le vrai niveau
-> - La nature du système Elo aggrave le problème : un chiffre qui monte et descend crée une identité de joueur instable et dépendante du résultat
-> - La solution n'est pas de "croire en soi" davantage - c'est de changer le cadre d'évaluation de sa propre progression
-
 ## Ce qu'est vraiment le syndrome de l'imposteur
 
 ### La définition originale
@@ -173,6 +165,13 @@ Si le syndrome de l'imposteur déborde sur d'autres domaines de ta vie - travail
 **Après lecture :** la prochaine fois que tu gagnes une partie « imméritée », note **une** décision précise dont tu es l’auteur (coup, temps, plan), pour ancrer la victoire dans un fait vérifiable.
 
 ---
+
+## À retenir
+
+- Le syndrome de l'imposteur est un phénomène psychologique bien documenté, particulièrement fréquent dans les activités intellectuelles et compétitives
+- Aux échecs, il se manifeste souvent par le sentiment que les victoires sont dues à la chance de l'adversaire et que les défaites confirment le vrai niveau
+- La nature du système Elo aggrave le problème : un chiffre qui monte et descend crée une identité de joueur instable et dépendante du résultat
+- La solution n'est pas de "croire en soi" davantage - c'est de changer le cadre d'évaluation de sa propre progression
 
 ### Sources et références
 

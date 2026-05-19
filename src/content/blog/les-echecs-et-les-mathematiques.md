@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Les échecs rendent-ils meilleur en maths ? La vérité scientifique"
 excerpt: "Jouer aux échecs te rend bon en maths ? La réponse n'est pas celle que tu attends, et elle change radicalement ce que tu devrais faire avec un échiquier."
 publishDate: "2026-04-02"
@@ -23,14 +23,6 @@ seoDescriptionEn: "Does chess make you better at maths? What meta-analyses actua
 ---
 
 Il n’y a pas un seul chiffre sur un échiquier. Aucune équation à résoudre. Un Grand Maître n’est pas nécessairement capable de calculer une intégrale plus vite que toi. Et pourtant, l’idée que « les échecs rendent bon en maths » est répétée dans les écoles, les clubs périscolaires et les arguments d’admission depuis des décennies - comme si les 64 cases implantaient des formules algébriques dans le cerveau par simple contact.
-
-**Plan :** pourquoi l’association est séduisante → ce que disent les méta-analyses → métacognition comme vrai pont → posture pratique → sources.
-
-> **L'essentiel en 4 points :**
-> - Les échecs ne transfèrent pas directement du "contenu" mathématique dans le cerveau (Sala & Gobet, méta-analyses)
-> - Le seul transfert solide est méthodologique : décomposer, tester, vérifier, douter au bon moment
-> - La métacognition, penser sur sa propre pensée, est le vrai pont mesurable entre les deux disciplines
-> - Jouer lentement (30 min+) active les zones cérébrales liées à la résolution de problèmes ; le Blitz ne le fait pas
 
 ## Pourquoi associe-t-on instinctivement les échecs et les mathématiques ? (le “wow” est réel)
 
@@ -141,6 +133,13 @@ Le bon pitch n’est donc pas “les échecs rendent bon en maths”, mais “le
 **Après lecture :** un problème tactique par jour pendant une semaine, **hypothèse écrite avant** la solution ; pour la combinatoire et les moteurs, enchaîne avec [pourquoi les échecs restent un problème mathématique brutal pour l’IA](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
 
 ---
+
+## À retenir
+
+- Les échecs ne transfèrent pas directement du "contenu" mathématique dans le cerveau (Sala & Gobet, méta-analyses)
+- Le seul transfert solide est méthodologique : décomposer, tester, vérifier, douter au bon moment
+- La métacognition, penser sur sa propre pensée, est le vrai pont mesurable entre les deux disciplines
+- Jouer lentement (30 min+) active les zones cérébrales liées à la résolution de problèmes ; le Blitz ne le fait pas
 
 ### Sources et références
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue"
 excerpt: "Le TDAH n'est pas un déficit d'attention : c'est une attention inconsistante. L'échiquier crée les rares conditions où ce cerveau trouve naturellement son point d'ancrage."
 publishDate: "2026-06-15"
@@ -29,14 +29,6 @@ Depuis qu'il joue aux échecs le mercredi soir au club du quartier, quelque chos
 L'enseignante, quand ils lui en ont parlé, a haussé les épaules : *"C'est parce que c'est un jeu. Il faudrait que les cours soient aussi stimulants."* Elle n'a pas complètement tort. Mais cette réponse passe à côté de quelque chose de plus précis.
 
 Ce n'est pas de la magie. C'est de la neurobiologie.
-
-**Plan :** TDAH comme fonctions exécutives → pourquoi l’échiquier « colle » → transfert et limites → conseils pratiques → FAQ → sources.
-
-> **L'essentiel en 4 points :**
-> - Le TDAH n'est pas un déficit d'attention au sens littéral : c'est un déficit des fonctions exécutives, particulièrement l'inhibition et la planification (Barkley, 1997)
-> - Le cerveau TDAH répond mieux aux activités à retour immédiat, règles stables et enjeu tangible, exactement ce que propose l'échiquier
-> - Les études directes échecs-TDAH sont encore limitées mais les mécanismes neurobiologiques sont bien documentés (Castellanos & Tannock, 2002)
-> - Les échecs sont un complément précieux à un suivi spécialisé, pas un substitut
 
 ## Ce que le TDAH fait vraiment à l'attention (et pourquoi c'est systématiquement mal compris)
 
@@ -163,6 +155,13 @@ Pas systématiquement, faute de preuves assez robustes pour intégrer les échec
 **Après lecture :** séances **courtes** (20 minutes), **même créneau** hebdo, plateau **physique** en priorité ; éviter les grandes salles bruyantes au début. Complément au suivi médical ou psychologique, pas substitut.
 
 ---
+
+## À retenir
+
+- Le TDAH n'est pas un déficit d'attention au sens littéral : c'est un déficit des fonctions exécutives, particulièrement l'inhibition et la planification (Barkley, 1997)
+- Le cerveau TDAH répond mieux aux activités à retour immédiat, règles stables et enjeu tangible, exactement ce que propose l'échiquier
+- Les études directes échecs-TDAH sont encore limitées mais les mécanismes neurobiologiques sont bien documentés (Castellanos & Tannock, 2002)
+- Les échecs sont un complément précieux à un suivi spécialisé, pas un substitut
 
 ### Sources et références
 

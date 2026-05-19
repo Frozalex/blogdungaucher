@@ -45,15 +45,6 @@ C'est radical. C'est ambitieux. Et c'est aussi l'occasion de poser la vraie ques
 
 La réponse est plus nuancée (et plus honnête) que ce que les affiches de tournois et les communiqués de presse des fédérations laissent entendre.
 
-**Plan :** panorama des programmes scolaires dans le monde → ce que la recherche mesure → la méta-analyse Sala & Gobet en détail → pourquoi le transfert cognitif est plus complexe qu'on le pense → recommandations pratiques pour implanter un programme efficace.
-
-> **L'essentiel en 5 points :**
-> - Les échecs ont un effet positif sur les **fonctions exécutives** (planification, inhibition, mémoire de travail): le consensus scientifique est solide sur ce point
-> - L'effet sur les **résultats scolaires** directs (notes en maths, lecture) est **réel mais modéré**, et dépend fortement de la qualité pédagogique du programme
-> - **Sala & Gobet (2016, 2017)** : méta-analyse de référence : les effets sont positifs mais diminuent quand les contrôles expérimentaux sont rigoureux
-> - Le **modèle arménien** (obligatoire, CP-CM2) est le plus ambitieux au monde et montre des résultats encourageants mais encore mal documentés à long terme
-> - Le bénéfice des échecs n'est pas magique : il nécessite une **instruction de qualité**, des **enseignants formés** et un **minimum de 30 heures annuelles**
-
 ## Les grands programmes mondiaux : une cartographie
 
 ### L'Arménie : le modèle le plus radical
@@ -164,3 +155,11 @@ C'est peut-être l'argument le plus solide pour les programmes scolaires obligat
 - Margulies, S. (1992). The effect of chess on reading scores : District nine chess program. *Chess in Education Research Summary*.
 - Ferreira, D., & Palhares, P. (2008). Chess and problem-solving involving patterns. *The Montana Mathematics Enthusiast*, 5(2–3), 249–256.
 - Trinchero, R. (2013). Can chess training improve Pisa scores in mathematics? *Kasparov Chess Foundation Europe*.
+
+## À retenir
+
+- Les échecs ont un effet positif sur les **fonctions exécutives** (planification, inhibition, mémoire de travail): le consensus scientifique est solide sur ce point
+- L'effet sur les **résultats scolaires** directs (notes en maths, lecture) est **réel mais modéré**, et dépend fortement de la qualité pédagogique du programme
+- **Sala & Gobet (2016, 2017)** : méta-analyse de référence : les effets sont positifs mais diminuent quand les contrôles expérimentaux sont rigoureux
+- Le **modèle arménien** (obligatoire, CP-CM2) est le plus ambitieux au monde et montre des résultats encourageants mais encore mal documentés à long terme
+- Le bénéfice des échecs n'est pas magique : il nécessite une **instruction de qualité**, des **enseignants formés** et un **minimum de 30 heures annuelles**

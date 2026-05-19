@@ -18,14 +18,6 @@ seoDescriptionEn: "Does playing chess protect against cognitive decline? What th
 
 Raymond a 79 ans. Il joue aux échecs depuis l'âge de 12 ans dans un club de province, deux soirs par semaine. Son médecin lui a dit qu'il a le profil cognitif d'un homme de 65 ans. Ce n'est pas un miracle génétique : c'est, selon toute probabilité, le résultat de décennies d'une activité que les neurosciences considèrent aujourd'hui comme l'une des plus protectrices contre le déclin cognitif.
 
-**Plan :** réserve cognitive → étude Verghese et limites → ce que les échecs ajoutent vs autres loisirs → pratique réaliste → tableau et FAQ → sources.
-
-> **L’essentiel en 4 points :**
-> - La réserve cognitive (Stern, 2009) explique pourquoi deux cerveaux avec les mêmes lésions ne déclenchent pas les mêmes symptômes : l’un compense, l’autre non
-> - L’étude Verghese (*NEJM*, 2003) : 469 seniors suivis 21 ans, réduction de **74 %** du risque de démence chez les pratiquants réguliers de jeux de société
-> - Les échecs font mieux que les mots croisés sur un point clé : ils nécessitent de **modéliser un adversaire imprévisible**, la capacité la plus vulnérable au vieillissement
-> - Il n’existe pas d’âge limite pour commencer et en tirer un bénéfice cognitif
-
 Mais attention : "protectrice" ne veut pas dire "magique". Ce que la science dit sur les échecs et le vieillissement est à la fois plus précis et plus intéressant que le slogan "faites travailler votre cerveau".
 
 ## La "réserve cognitive" : le concept que personne n'explique vraiment
@@ -112,6 +104,13 @@ La composante de résolution de problèmes est équivalente. La composante socia
 **Après lecture :** privilégie une **partie longue analysée** plutôt que trois rapides ; pour les données récentes sur jeux et cognition, enchaîne avec [Échecs et prévention du déclin cognitif](/blog/echecs-alzheimer-prevention-declin-cognitif/).
 
 ---
+
+## À retenir
+
+- La réserve cognitive (Stern, 2009) explique pourquoi deux cerveaux avec les mêmes lésions ne déclenchent pas les mêmes symptômes : l’un compense, l’autre non
+- L’étude Verghese (*NEJM*, 2003) : 469 seniors suivis 21 ans, réduction de **74 %** du risque de démence chez les pratiquants réguliers de jeux de société
+- Les échecs font mieux que les mots croisés sur un point clé : ils nécessitent de **modéliser un adversaire imprévisible**, la capacité la plus vulnérable au vieillissement
+- Il n’existe pas d’âge limite pour commencer et en tirer un bénéfice cognitif
 
 ### Sources et références
 

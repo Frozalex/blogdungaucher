@@ -45,15 +45,6 @@ faq:
 
 La résilience aux échecs n'est pas une propriété mystérieuse que certains ont et d'autres non. C'est une compétence, avec des mécanismes identifiables et des pratiques qui l'amplifient.
 
-**Plan :** ce qu'est vraiment la résilience → le style explicatif de Seligman → la neurochimie de la défaite → le délai optimal d'analyse → techniques concrètes de rebond → les pièges à éviter.
-
-> **L'essentiel en 5 points :**
-> - La résilience c'est **traverser la souffrance et en extraire une information**: pas l'absence de souffrance
-> - Le **style explicatif** (Seligman) détermine si une défaite renforce ou affaiblit : causes spécifiques/temporaires/contrôlables vs globales/permanentes/incontrôlables
-> - Le **délai optimal d'analyse** post-défaite est 24-48 heures : émotion atténuée, détails encore présents
-> - La **distanciation de soi** (se parler à la troisième personne) réduit l'activation émotionnelle et améliore l'analyse
-> - La résilience s'**entraîne** : journalisation, reformulation cognitive, protocole post-défaite sont des pratiques documentées
-
 ## Ce que la résilience n'est pas
 
 Il existe une confusion fréquente sur ce qu'est la résilience. Deux mythes à démolir :
@@ -149,3 +140,11 @@ Ces profils sont différents, mais convergent : la résilience n'est pas l'absen
 - Masten, A. S. (2014). *Ordinary Magic : Resilience in Development*. Guilford Press.
 - Kasparov, G. (2003). *My Great Predecessors*, Vol. 1. Everyman Chess.
 - Dweck, C. S. (2006). *Mindset : The New Psychology of Success*. Random House.
+
+## À retenir
+
+- La résilience c'est **traverser la souffrance et en extraire une information**: pas l'absence de souffrance
+- Le **style explicatif** (Seligman) détermine si une défaite renforce ou affaiblit : causes spécifiques/temporaires/contrôlables vs globales/permanentes/incontrôlables
+- Le **délai optimal d'analyse** post-défaite est 24-48 heures : émotion atténuée, détails encore présents
+- La **distanciation de soi** (se parler à la troisième personne) réduit l'activation émotionnelle et améliore l'analyse
+- La résilience s'**entraîne** : journalisation, reformulation cognitive, protocole post-défaite sont des pratiques documentées

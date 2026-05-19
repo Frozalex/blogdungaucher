@@ -22,19 +22,9 @@ faq:
   - question: "Quelles problématiques choisir pour un Grand Oral Maths sur les échecs ?"
     answer: "Les trois meilleures problématiques sont : (1) 'En quoi le jeu d'échecs constitue-t-il un modèle de la pensée combinatoire ?' (angle dénombrement + arbre des coups), (2) 'Dans quelle mesure les probabilités permettent-elles de modéliser et prédire la performance aux échecs ?' (angle loi binomiale + formule Elo), et (3) 'Comment les mathématiques expliquent-elles pourquoi les échecs ne seront jamais résolus par la force brute ?' (angle complexité algorithmique + nombre de Shannon)."
 ---
-
-**Plan :** en dix minutes de lecture tu sais **quel** chapitre du programme de Terminale Maths tu accroches **à quoi** sur l’échiquier, avec des calculs prêts pour le jury, trois problématiques toutes faites et un minutage pour vingt minutes d’oral.
-
 Tu es en spécialité Maths ; le Grand Oral approche. Tu cherches un sujet **ancré dans le programme**, personnel, et moins rabâché que la vingtième fractale ou la suite de Fibonacci.
 
 **Proposition centrale :** les échecs comme terrain d’application **complet** du programme  -  combinatoire (explosion des positions), probabilités (tournoi, Elo), suites récurrentes (mise à jour de cote), algorithmique (minimax). Pas un survol : une table d’équivalences chapitre ↔ échiquier, puis les livrables ci-dessous (formules, exemples chiffrés, plans, questions jury).
-
-> **L'essentiel en 5 points :**
-> - La mise à jour Elo est une suite récurrente : $u_{n+1} = u_n + K(r_n - p_n)$
-> - La loi binomiale $B(n,p)$ modélise directement un match d'échecs à $n$ parties
-> - Le nombre de Shannon ($10^{120}$) est un argument de combinatoire calculable pas à pas
-> - L'algorithme minimax est le cas concret de récursivité le plus puissant du programme NSI-Maths
-> - Les trois problématiques de fin d'article correspondent aux trois chapitres-clés du jury
 
 ## Combinatoire et dénombrement : l'explosion des possibles
 
@@ -241,6 +231,14 @@ Le fait que la correction $K(r_n - p_n)$ est de signe opposé à l'erreur $(u_n 
 **Après lecture :** filme-toi en résolvant **un** calcul Elo complet au tableau (données fictives) en moins de quatre minutes ; glisse si tu bloques, pas si tu te trompes.
 
 ---
+
+## À retenir
+
+- La mise à jour Elo est une suite récurrente : $u_{n+1} = u_n + K(r_n - p_n)$
+- La loi binomiale $B(n,p)$ modélise directement un match d'échecs à $n$ parties
+- Le nombre de Shannon ($10^{120}$) est un argument de combinatoire calculable pas à pas
+- L'algorithme minimax est le cas concret de récursivité le plus puissant du programme NSI-Maths
+- Les trois problématiques de fin d'article correspondent aux trois chapitres-clés du jury
 
 ### Sources et références
 

@@ -31,15 +31,6 @@ Les échecs sont ce sujet. Pas pour leur aspect culturel ou philosophique : pour
 
 Ce que cet article te donne : du code Python commentable devant le jury, des structures de données concrètes, la progression de Stockfish à AlphaZero comme arc narratif, et un plan minuté pour vingt minutes d'exposé.
 
-**Plan :** algorithmes et structures (minimax, PGN, bitboard) → données et SQL → IA (Stockfish vs AlphaZero) → déroulé 20 minutes → questions jury → sources.
-
-> **L'essentiel en 5 points :**
-> - Le minimax est le cas concret de récursivité le plus pur qui soit, codable en 10 lignes Python
-> - Un échiquier peut être représenté comme un tableau 2D (simple) ou un entier 64 bits (bitboard, avancé)
-> - Le format PGN illustre directement la notion de données structurées parsables
-> - L'élagage alpha-bêta est une optimisation qui réduit $O(b^d)$ à $O(b^{d/2})$ : argument de complexité idéal pour le jury
-> - AlphaZero vs Stockfish = apprentissage automatique vs programmation explicite : la distinction centrale de l'IA au programme NSI
-
 ## Algorithmes et structures de données
 
 ### L'algorithme minimax : récursivité pure
@@ -389,6 +380,14 @@ Précision importante : AlphaZero est de l'**apprentissage par renforcement**, p
 **Après lecture :** enregistre-toi en **une prise** sur le minimax (tableau blanc ou IDE, **trois minutes max**) ; si tu bloques sur une ligne de code, c’est là que le jury creusera.
 
 ---
+
+## À retenir
+
+- Le minimax est le cas concret de récursivité le plus pur qui soit, codable en 10 lignes Python
+- Un échiquier peut être représenté comme un tableau 2D (simple) ou un entier 64 bits (bitboard, avancé)
+- Le format PGN illustre directement la notion de données structurées parsables
+- L'élagage alpha-bêta est une optimisation qui réduit $O(b^d)$ à $O(b^{d/2})$ : argument de complexité idéal pour le jury
+- AlphaZero vs Stockfish = apprentissage automatique vs programmation explicite : la distinction centrale de l'IA au programme NSI
 
 ### Sources et références
 

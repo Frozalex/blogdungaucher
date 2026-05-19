@@ -16,14 +16,6 @@ La position est clairement gagnante. Le moteur le confirmerait en une seconde. T
 
 La peur de gagner est un des phénomènes psychologiques les moins discutés mais les plus réels dans le jeu compétitif. Elle existe. Elle touche des joueurs à tous les niveaux. Et elle a une logique interne que la psychologie moderne explique clairement.
 
-**Plan :** pourquoi ce n’est pas absurde → mécanismes (attentes, statut, responsabilité) → manifestations → outils (visualisation, conversions, acceptation) → sources.
-
-> **L'essentiel en 4 points :**
-> - La peur de gagner n'est pas un paradoxe irrationnel : elle est une réponse logique à des conséquences anxiogènes de la victoire
-> - Les mécanismes incluent la peur des attentes augmentées, la peur de la responsabilité et la peur de la perte du statut de "challenger"
-> - Elle se manifeste par des comportements de sabotage inconscient en position gagnante
-> - La prise de conscience et des techniques comportementales spécifiques permettent de la surmonter
-
 ## La peur de gagner : un paradoxe apparent
 
 Au premier abord, la peur de gagner semble absurde. Tout le monde veut gagner. C'est le but du jeu. Comment quelqu'un pourrait-il avoir peur d'atteindre son objectif ?
@@ -93,6 +85,13 @@ La première étape est la reconnaissance honnête du pattern. Analyser ses part
 **Après lecture :** entraîne-toi à **convertir** trois fins de partie gagnantes cette semaine depuis des positions « sans suspense », pour désensibiliser le passage à la victoire.
 
 ---
+
+## À retenir
+
+- La peur de gagner n'est pas un paradoxe irrationnel : elle est une réponse logique à des conséquences anxiogènes de la victoire
+- Les mécanismes incluent la peur des attentes augmentées, la peur de la responsabilité et la peur de la perte du statut de "challenger"
+- Elle se manifeste par des comportements de sabotage inconscient en position gagnante
+- La prise de conscience et des techniques comportementales spécifiques permettent de la surmonter
 
 ### Sources et références
 

@@ -18,14 +18,6 @@ La [loi de Murphy](https://fr.wikipedia.org/wiki/Lois_de_Murphy), popularisée s
 
 En réalité, ce que tu appelles Murphy est souvent un mélange de probabilités réelles (certains moments sont objectivement plus risqués), de fatigue cognitive, et de biais de mémoire qui font briller les catastrophes dans le récit mental.
 
-**Plan :** origine de l’expression → pourquoi elle « colle » aux échecs → mémoire et disponibilité → antidotes procéduraux → ce que tu peux encore en tirer → sources.
-
-> **L'essentiel en 4 points :**
-> - Murphy n'est pas une « loi » au sens scientifique : c'est une intuition sociale sur les défaillances dans les systèmes complexes
-> - Aux échecs, le « pire moment » est souvent corrélé avec zeitnot, tension maximale ou fin de séquence de calcul, où le taux d'erreur augmente pour tout le monde
-> - La mémoire retient surtout les parties où la douleur est forte (effet de disponibilité), ce qui donne l'illusion que « ça arrive toujours comme ça »
-> - Tu ne contrôles pas le hasard sur l'échiquier (il n'y en a pas), mais tu peux contrôler le processus : temps, habitudes anti-blunder, récupération attentionnelle
-
 ## D'où vient la « loi » de Murphy ?
 
 L'histoire la plus citée relie l'expression à [Edward A. Murphy Jr.](https://en.wikipedia.org/wiki/Murphy%27s_law), ingénieur américain, et à des essais sur accélération en vol dans les années 1940. La version courte : lorsqu'une expérience peut être branchée de plusieurs façons, **la mauvaise configuration finit par se produire** si les garde-fous manquent. Ce n'est pas une malédiction : c'est une leçon sur la fiabilité humaine, les procédures, et la redondance des contrôles.
@@ -89,6 +81,13 @@ Ce n'est pas le destin. C'est la répétition.
 **Après lecture :** prends une défaite où tu as invoqué « Murphy » et réécris-la en **une phrase procédurale** (temps, fatigue, préparation, format de jeu). Si la même cause revient trois fois, c’est ton levier d’entraînement, pas une malédiction.
 
 ---
+
+## À retenir
+
+- Murphy n'est pas une « loi » au sens scientifique : c'est une intuition sociale sur les défaillances dans les systèmes complexes
+- Aux échecs, le « pire moment » est souvent corrélé avec zeitnot, tension maximale ou fin de séquence de calcul, où le taux d'erreur augmente pour tout le monde
+- La mémoire retient surtout les parties où la douleur est forte (effet de disponibilité), ce qui donne l'illusion que « ça arrive toujours comme ça »
+- Tu ne contrôles pas le hasard sur l'échiquier (il n'y en a pas), mais tu peux contrôler le processus : temps, habitudes anti-blunder, récupération attentionnelle
 
 ### Sources et références
 

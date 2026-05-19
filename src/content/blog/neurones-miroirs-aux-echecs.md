@@ -16,14 +16,6 @@ Tu regardes une position complexe. Soudain, tu "vois" ce que l'adversaire veut f
 
 Ce type d'intuition, cette capacité à simuler mentalement l'intention d'un autre agent, repose en partie sur un système neuronal découvert dans les années 1990 : les [neurones miroirs](https://fr.wikipedia.org/wiki/Neurone_miroir). Leur rôle aux échecs est plus profond que tu ne l'imagines.
 
-**Plan :** découverte des neurones miroirs → rôle en simulation d’intentions → entraînement (deux camps, parties de maîtres) → limites (projection, sur-interprétation) → sources.
-
-> **L'essentiel en 4 points :**
-> - Les neurones miroirs s'activent à la fois lors de l'exécution d'une action et lors de l'observation de la même action chez autrui
-> - Aux échecs, ils sous-tendent la simulation mentale des intentions de l'adversaire
-> - Le joueur expérimenté simule les plans adverses depuis l'intérieur, comme s'il jouait lui-même les deux côtés
-> - Cette simulation peut être entraînée et affinée par la pratique de l'analyse à deux points de vue
-
 ## La découverte accidentelle des neurones miroirs
 
 L'histoire de la découverte des neurones miroirs commence dans un laboratoire de Parme dans les années 1990. [Giacomo Rizzolatti](https://fr.wikipedia.org/wiki/Giacomo_Rizzolatti) et ses collègues étudiaient les neurones de l'aire prémotrice (F5) de macaques rhésus avec des électrodes. Ils enregistraient l'activité neuronale pendant que le singe saisissait des objets.
@@ -103,6 +95,13 @@ C'est pourquoi les joueurs qui ont un style très marqué ont souvent des "angle
 **Après lecture :** sur une partie récente, rejoue **cinq coups** du camp adverse à voix haute avec « il veut obtenir quoi ? » avant de vérifier au moteur.
 
 ---
+
+## À retenir
+
+- Les neurones miroirs s'activent à la fois lors de l'exécution d'une action et lors de l'observation de la même action chez autrui
+- Aux échecs, ils sous-tendent la simulation mentale des intentions de l'adversaire
+- Le joueur expérimenté simule les plans adverses depuis l'intérieur, comme s'il jouait lui-même les deux côtés
+- Cette simulation peut être entraînée et affinée par la pratique de l'analyse à deux points de vue
 
 ### Sources et références
 

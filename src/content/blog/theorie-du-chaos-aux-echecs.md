@@ -14,14 +14,6 @@ seoDescription: "Comment la théorie du chaos s'applique aux échecs. Sensibilit
 
 Les échecs sont souvent décrits comme le jeu de la logique pure, un domaine régi par la rigueur et la prévisibilité. Et pourtant, quiconque a joué une partie tactiquement tendue sait que quelque chose d'autre opère. Un coup de trop, une pièce mal placée, et toute la structure s'effondre. Ce que tu ressens dans ces moments, c'est le chaos au sens technique du terme.
 
-**Plan :** définition du chaos (sensibilité, bifurcations) → lecture échiquéenne → tactique et « chaos maîtrisé » → beauté du jeu → sources.
-
-> **L'essentiel en 4 points :**
-> - Les positions complexes aux échecs exhibent une sensibilité aux conditions initiales caractéristique des systèmes chaotiques
-> - Les points de bifurcation correspondent aux moments où la nature de la position change radicalement
-> - Le chaos n'est pas du désordre : c'est de la complexité déterministe imprévisible à long terme
-> - Comprendre où sont les points critiques d'une position est la clé de l'évaluation positionnelle avancée
-
 ## Qu'est-ce que la théorie du chaos ?
 
 La [théorie du chaos](https://fr.wikipedia.org/wiki/Th%C3%A9orie_du_chaos) est une branche des mathématiques et de la physique qui étudie les systèmes dynamiques dont le comportement est extrêmement sensible aux conditions initiales. Elle a été popularisée par [Edward Lorenz](https://fr.wikipedia.org/wiki/Edward_Lorenz) dans les années 1960 lorsqu'il a découvert, en modélisant des systèmes météorologiques, qu'une infime variation dans les conditions initiales produisait des trajectoires radicalement différentes à long terme.
@@ -99,6 +91,13 @@ La beauté aux échecs est peut-être la beauté du chaos maîtrisé : la capaci
 **Après lecture :** dans une partie récente « qui a explosé », identifie **le coup bifurcation** (où la nature de la position a basculé) ; c’est souvent là que l’analyse à froid doit commencer.
 
 ---
+
+## À retenir
+
+- Les positions complexes aux échecs exhibent une sensibilité aux conditions initiales caractéristique des systèmes chaotiques
+- Les points de bifurcation correspondent aux moments où la nature de la position change radicalement
+- Le chaos n'est pas du désordre : c'est de la complexité déterministe imprévisible à long terme
+- Comprendre où sont les points critiques d'une position est la clé de l'évaluation positionnelle avancée
 
 ### Sources et références
 

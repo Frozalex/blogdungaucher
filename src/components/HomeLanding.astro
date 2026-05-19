@@ -9,9 +9,10 @@ interface Props {
   lang: "fr" | "en" | "de";
   latestPosts: BlogEntry[];
   totalPosts: number;
+  postsByCategory?: Partial<Record<(typeof categorySlugs)[number], number>>;
 }
 
-const { lang, latestPosts, totalPosts } = Astro.props;
+const { lang, latestPosts, totalPosts, postsByCategory = {} } = Astro.props;
 const sectionsId = lang === "en" ? "sections" : "rubriques";
 const blogHref = `/${lang}/blog/`;
 
@@ -110,6 +111,21 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
   societe: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="3.25"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
   "grand-oral": `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h6"/></svg>`,
 };
+
+/** Glyphes pièces d'échecs en filigrane derrière les pillars — donne une signature visuelle au site. */
+const pillarGlyphs: Record<(typeof categorySlugs)[number], string> = {
+  science: "♞",
+  esprit: "♛",
+  societe: "♜",
+  "grand-oral": "♚",
+};
+
+/** Libellé i18n pour le compteur d'articles par rubrique. */
+const articleCountLabel = (n: number): string => {
+  if (lang === "en") return `${n} ${n > 1 ? "articles" : "article"}`;
+  if (lang === "de") return `${n} ${n > 1 ? "Artikel" : "Artikel"}`;
+  return `${n} ${n > 1 ? "articles" : "article"}`;
+};
 ---
 
 <div class="home-landing">
@@ -185,8 +201,10 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
           categorySlugs.map((slug) => {
             const cat = categoryMap[slug];
             const href = lang === "fr" ? cat.href : swapLangPrefix(cat.href, lang);
+            const count = postsByCategory[slug] ?? 0;
             return (
               <a href={href} class="pillar" style={`--p:${cat.accent};--pillar-surface:${cat.surface};`}>
+                <span class="pillar__glyph" aria-hidden="true">{pillarGlyphs[slug]}</span>
                 <span class="pillar__icon" set:html={pillarIcons[slug]} />
                 <div>
                   <span class="pillar__kicker" data-t={`categories.${slug}.shortLabel`}>
@@ -194,6 +212,12 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
                   </span>
                   <strong data-t={`categories.${slug}.label`}>{cat.label}</strong>
                   <p data-t={`categories.${slug}.tagline`}>{cat.tagline}</p>
+                  {count > 0 && (
+                    <span class="pillar__count">
+                      <span class="pillar__count-num">{count}</span>
+                      <span class="pillar__count-label">{articleCountLabel(count).replace(`${count} `, "")}</span>
+                    </span>
+                  )}
                 </div>
                 <svg
                   class="pillar__arrow"
@@ -249,15 +273,78 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
 <style>
   .home-landing {
     overflow-x: clip;
+    position: relative;
     background:
       radial-gradient(ellipse 100% 70% at 50% -15%, color-mix(in srgb, var(--green) 9%, transparent), transparent 52%),
       var(--bg);
+  }
+
+  /* Grain texture éditorial : SVG noise inline, ultra-discret, sans requête HTTP.
+     Inspiré des fonds de magazines imprimés (Apartamento, Kinfolk). */
+  .home-landing::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.13  0 0 0 0 0.10  0 0 0 0 0.04  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    mix-blend-mode: multiply;
+  }
+
+  [data-theme="dark"] .home-landing::before {
+    opacity: 0.22;
+    mix-blend-mode: screen;
+  }
+
+  .home-landing > * {
+    position: relative;
+    z-index: 1;
   }
 
   [data-theme="dark"] .home-landing {
     background:
       radial-gradient(ellipse 100% 65% at 50% -12%, color-mix(in srgb, var(--green) 12%, transparent), transparent 50%),
       var(--bg);
+  }
+
+  /* Animation : trait d'accent qui se déploie au scroll-reveal sous le section-title. */
+  .home-landing h2.drop-heading.section-title {
+    position: relative;
+    padding-bottom: 0.45rem;
+  }
+
+  .home-landing h2.drop-heading.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(90deg, var(--green), color-mix(in srgb, var(--green) 30%, transparent));
+    border-radius: 2px;
+    transition: width 720ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .home-landing h2.drop-heading.section-title.is-visible::after,
+  .home-landing .is-visible h2.drop-heading.section-title::after {
+    width: clamp(2.5rem, 8vw, 5.5rem);
+  }
+
+  /* Fallback : si l'utilisateur préfère réduire les animations, on affiche le trait directement. */
+  @media (prefers-reduced-motion: reduce) {
+    .home-landing h2.drop-heading.section-title::after {
+      width: clamp(2.5rem, 8vw, 5.5rem);
+      transition: none;
+    }
+  }
+
+  /* Sur mobile, garder le titre centré (le trait reste à gauche du bloc). */
+  @media (max-width: 900px) {
+    .pillars .container h2.drop-heading.section-title,
+    .latest .container h2.drop-heading.section-title {
+      display: inline-block;
+    }
   }
 
   .editorial-intro .container,
@@ -447,6 +534,7 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
   }
 
   .pillar {
+    position: relative;
     display: flex;
     align-items: flex-start;
     gap: 1rem;
@@ -467,12 +555,69 @@ const pillarIcons: Record<(typeof categorySlugs)[number], string> = {
       border-color 180ms ease,
       box-shadow 240ms var(--ease-out);
     text-align: left;
+    overflow: hidden;
+  }
+
+  /* Glyphe pièce d'échecs en filigrane derrière le contenu — signature visuelle. */
+  .pillar__glyph {
+    position: absolute;
+    top: -0.6rem;
+    right: 0.4rem;
+    font-family: var(--font-serif);
+    font-size: 6.5rem;
+    line-height: 1;
+    color: color-mix(in srgb, var(--p) 22%, transparent);
+    pointer-events: none;
+    user-select: none;
+    transform: rotate(-6deg);
+    transition: transform 380ms var(--ease-spring), color 240ms ease;
+    z-index: 0;
+  }
+
+  .pillar > *:not(.pillar__glyph) {
+    position: relative;
+    z-index: 1;
+  }
+
+  .pillar:hover .pillar__glyph {
+    transform: rotate(0deg) scale(1.08) translateY(-3px);
+    color: color-mix(in srgb, var(--p) 36%, transparent);
   }
 
   .pillar:hover {
     transform: translateY(-4px);
     border-color: color-mix(in srgb, var(--p) 55%, var(--border-soft));
     box-shadow: var(--shadow-md), 0 0 0 1px color-mix(in srgb, var(--p) 18%, transparent);
+  }
+
+  /* Compteur d'articles : repère discret de la richesse de la rubrique. */
+  .pillar__count {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.32rem;
+    margin-top: 0.7rem;
+    padding: 0.25rem 0.6rem 0.28rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid color-mix(in srgb, var(--p) 30%, var(--border-soft));
+    background: color-mix(in srgb, var(--p) 8%, var(--surface));
+  }
+
+  .pillar__count-num {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--p);
+    line-height: 1;
+  }
+
+  .pillar__count-label {
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-dim);
   }
 
   .pillar__icon {

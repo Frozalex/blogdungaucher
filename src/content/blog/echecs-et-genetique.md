@@ -45,15 +45,6 @@ Le résultat est entré dans l'histoire : les trois sœurs Polgar sont devenues 
 
 Est-ce la preuve que le talent s'acquiert et non se naît ? Ou est-ce une famille avec des dispositions génétiques exceptionnelles qui a bénéficié d'un environnement d'entraînement optimal ? La question n'est pas résolue, et elle est plus complexe que les deux camps du débat nature/nurture ne le laissent croire.
 
-**Plan :** les limites du concept de talent → ce que les études sur la pratique délibérée montrent → ce que les études génétiques mesurent réellement → le cas des prodiges → une vision intégrée → implications pratiques.
-
-> **L'essentiel en 5 points :**
-> - Il n'existe pas de "gène des échecs" unique : la performance est un **phénotype complexe** influencé par des centaines de variants
-> - La pratique délibérée explique **~30% de la variance** des performances aux échecs (Hambrick 2014): le reste est inexpliqué
-> - L'**héritabilité des capacités cognitives** pertinentes (QI, mémoire de travail) est estimée à 50-80% chez l'adulte
-> - L'héritabilité est une **statistique de population**, pas un déterminisme individuel
-> - La génétique la plus pertinente pour les échecs concerne un **ensemble de traits** : mémoire, patience, motivation, tolérance à la frustration
-
 ## Le problème du "talent"
 
 Le mot "talent" est un piège conceptuel. Il suggère une chose unique, mesurable, présente chez certains et absente chez d'autres. La réalité est plus diffuse.
@@ -148,3 +139,11 @@ Pour un joueur d'échecs ou un parent d'un enfant qui apprend, la question "inn�
 - Plomin, R., & von Stumm, S. (2018). The new genetics of intelligence. *Nature Reviews Genetics*, 19, 148–159.
 - Ericsson, K. A., & Pool, R. (2016). *Peak : Secrets from the New Science of Expertise*. Houghton Mifflin Harcourt.
 - Howard, R. W. (2014). On the cognitive, motivational and neural bases of chess playing : A reply to Campbell and Gobet. *Intelligence*, 45, 131–132.
+
+## À retenir
+
+- Il n'existe pas de "gène des échecs" unique : la performance est un **phénotype complexe** influencé par des centaines de variants
+- La pratique délibérée explique **~30% de la variance** des performances aux échecs (Hambrick 2014): le reste est inexpliqué
+- L'**héritabilité des capacités cognitives** pertinentes (QI, mémoire de travail) est estimée à 50-80% chez l'adulte
+- L'héritabilité est une **statistique de population**, pas un déterminisme individuel
+- La génétique la plus pertinente pour les échecs concerne un **ensemble de traits** : mémoire, patience, motivation, tolérance à la frustration

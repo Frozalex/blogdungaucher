@@ -14,14 +14,6 @@ seoDescription: "Comment la peur de perdre affecte le jeu aux échecs. Mécanism
 
 Il y a quelque chose dans la peur de perdre aux échecs qui la distingue de la simple déception d'une défaite sportive. Aux échecs, la perte est irréfutable. Il n'y a pas d'arbitre partial, pas de malchance à invoquer. Quand tu perds, tu as joué moins bien que l'adversaire, et c'est visible dans chaque ligne de la notation. Cette transparence absolue de l'échec rend la peur de perdre particulièrement puissante et particulièrement déformatrice.
 
-**Plan :** définition et prévalence → effets sur le style → mécanismes → stratégies pratiques → reframing → sources.
-
-> **L'essentiel en 4 points :**
-> - La peur de perdre modifie profondément le style de jeu, favorisant la passivité et les positions "sûres"
-> - Elle génère une prophétie auto-réalisatrice : les comportements d'évitement créent les conditions des défaites qu'on cherche à éviter
-> - La distinction entre "jouer pour gagner" et "jouer pour ne pas perdre" est l'une des plus importantes en psychologie des échecs
-> - Des techniques issues de la psychologie du sport et de la thérapie cognitivo-comportementale permettent de transformer cette peur
-
 ## La peur de perdre : définition et prévalence
 
 La peur de perdre dans les jeux compétitifs est étudiée par la psychologie du sport sous le terme d'"[anxiety de performance](https://fr.wikipedia.org/wiki/Anxiet%C3%A9_de_performance)". Elle désigne l'ensemble des réponses cognitives, émotionnelles et physiologiques anticipatoires face à une situation d'évaluation où la défaite est possible.
@@ -105,6 +97,13 @@ La peur de perdre bien gérée n'est pas éliminée : elle est transformée en a
 **Après lecture :** avant ta prochaine partie « à enjeux », écris **un objectif de processus** (ex. tenir un plan dix coups) distinct du résultat : c’est la variable que tu contrôles.
 
 ---
+
+## À retenir
+
+- La peur de perdre modifie profondément le style de jeu, favorisant la passivité et les positions "sûres"
+- Elle génère une prophétie auto-réalisatrice : les comportements d'évitement créent les conditions des défaites qu'on cherche à éviter
+- La distinction entre "jouer pour gagner" et "jouer pour ne pas perdre" est l'une des plus importantes en psychologie des échecs
+- Des techniques issues de la psychologie du sport et de la thérapie cognitivo-comportementale permettent de transformer cette peur
 
 ### Sources et références
 

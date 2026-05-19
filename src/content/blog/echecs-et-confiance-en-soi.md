@@ -43,15 +43,6 @@ Il y a une idée reçue tenace dans les clubs d'échecs : la confiance vient des
 
 Les joueurs qui construisent une confiance durable font exactement l'inverse : ils cultivent une relation saine avec la défaite, et c'est ça qui les rend solides. La confiance fragile, celle qui s'appuie sur les résultats, s'effondre au premier tournoi difficile. La confiance robuste, celle qui s'appuie sur le processus, résiste.
 
-**Plan :** auto-efficacité et fondements scientifiques → mindset fixe vs mindset de croissance → les pièges de l'Elo → l'analyse post-partie comme outil de construction → routines concrètes pour développer la confiance durable.
-
-> **L'essentiel en 5 points :**
-> - La confiance qui dure repose sur l'**auto-efficacité** (croire en sa capacité à exécuter *ce* processus précis) et non sur l'estime générale
-> - Le **mindset de croissance** (Dweck, 2006) transforme chaque défaite en information : c'est mesurable et entraînable
-> - L'**Elo est un thermomètre**, pas un juge : le confondre avec ta valeur personnelle est le mécanisme central du syndrome de l'imposteur échiquéen
-> - Les expériences de **maîtrise progressive** (pas les victoires faciles) sont le moteur principal de la confiance durable (Bandura, 1997)
-> - L'**analyse post-partie** rigoureuse est la pratique la mieux documentée pour construire une confiance qui résiste à la pression
-
 ## L'auto-efficacité : la bonne définition de la confiance
 
 Le psychologue [Albert Bandura](https://fr.wikipedia.org/wiki/Albert_Bandura) (Stanford) a passé sa carrière à démêler ce qu'on appelle vaguement "confiance". Son concept central, l'**auto-efficacité**, est plus précis : c'est la croyance en sa capacité à *exécuter un comportement spécifique dans un contexte donné* pour obtenir un résultat.
@@ -189,3 +180,11 @@ C'est le paradoxe de la confiance aux échecs : elle se construit dans l'inconfo
 - Kross, E., & Ayduk, O. (2017). Self-distancing : Theory, research, and current directions. *Advances in Experimental Social Psychology*, 55, 81–136.
 - Kasparov, G. (2007). *How Life Imitates Chess*. Bloomsbury.
 - Kaufman, K. A., Glass, C. R., & Arnkoff, D. B. (2009). Evaluation of Mindful Sport Performance Enhancement (MSPE). *Journal of Clinical Sport Psychology*, 3(4), 334–356.
+
+## À retenir
+
+- La confiance qui dure repose sur l'**auto-efficacité** (croire en sa capacité à exécuter *ce* processus précis) et non sur l'estime générale
+- Le **mindset de croissance** (Dweck, 2006) transforme chaque défaite en information : c'est mesurable et entraînable
+- L'**Elo est un thermomètre**, pas un juge : le confondre avec ta valeur personnelle est le mécanisme central du syndrome de l'imposteur échiquéen
+- Les expériences de **maîtrise progressive** (pas les victoires faciles) sont le moteur principal de la confiance durable (Bandura, 1997)
+- L'**analyse post-partie** rigoureuse est la pratique la mieux documentée pour construire une confiance qui résiste à la pression

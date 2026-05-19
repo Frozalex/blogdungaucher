@@ -14,14 +14,6 @@ seoDescription: "Pourquoi la défaite aux échecs déclenche une colère intense
 
 Tu as perdu une pièce en un blunder stupide. Ou l'adversaire a refusé la remise. Ou il a joué un coup à fort pourcentage que "personne ne jouerait en vrai". Et là, quelque chose se brise. La main se ferme. Les dents se serrent. Tu fermes l'onglet violemment, ou pire, tu restes connecté pour dire quelque chose que tu regretteras. C'est le ragequit, et ce n'est pas une faiblesse de caractère : c'est de la biologie.
 
-**Plan :** définition et formes du ragequit → circuit amygdalien → frustration-agression → régulation (respiration, recadrage, délai) → le ragequit comme signal → sources.
-
-> **L'essentiel en 4 points :**
-> - Le ragequit est déclenché par un circuit neurologique précis dont le coeur est l'amygdale
-> - La colère aux échecs est amplifiée par le sentiment d'injustice et la frustration de l'effort gâché
-> - La fenêtre entre déclenchement émotionnel et comportement destructeur est mesurable : environ 90 secondes selon les neurosciences
-> - La régulation de la colère aux échecs est une compétence qui s'entraîne, pas un trait de caractère fixe
-
 ## Le ragequit : définition et prévalence
 
 Le terme [ragequit](https://fr.wikipedia.org/wiki/Rage_quitting) vient de la culture des jeux vidéo mais s'applique parfaitement aux échecs en ligne. C'est l'acte d'abandonner une partie, de couper la connexion ou d'adopter un comportement agressif (insultes, déplacements de pièces violents) en réaction à la colère plutôt qu'à la logique.
@@ -115,6 +107,13 @@ Si tu ragequit systématiquement après des blunders en zeitnot, l'information e
 **Après lecture :** après ta prochaine défaite frustrante, attends **cinq minutes** avant le moteur ; note **un** déclencheur (« zeitnot », « coup bizarre », « adversaire plus faible ») pour ton protocole perso.
 
 ---
+
+## À retenir
+
+- Le ragequit est déclenché par un circuit neurologique précis dont le coeur est l'amygdale
+- La colère aux échecs est amplifiée par le sentiment d'injustice et la frustration de l'effort gâché
+- La fenêtre entre déclenchement émotionnel et comportement destructeur est mesurable : environ 90 secondes selon les neurosciences
+- La régulation de la colère aux échecs est une compétence qui s'entraîne, pas un trait de caractère fixe
 
 ### Sources et références
 

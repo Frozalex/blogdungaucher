@@ -30,14 +30,6 @@ Ce tableau, des milliers de parents, d'éducateurs et de thérapeutes le vivent.
 
 Que tu sois parent, enseignant ou joueur toi-même, voici ce que la recherche dit vraiment sur le pourquoi, et pourquoi ça change ce qu'on peut attendre de l'échiquier en pratique.
 
-**Plan :** TSA et définitions → affinité échiquéenne / systemizing → recherche et limites → bonnes pratiques → FAQ → sources.
-
-> **L'essentiel en 4 points :**
-> - 1 enfant sur 36 est autiste aux États-Unis (CDC, 2023) ; 1 sur 100 dans le monde (OMS)
-> - L'échiquier est un "jeu à information parfaite" : aucune règle implicite, aucun sous-entendu social
-> - La théorie de la *systemizing* (Baron-Cohen, Cambridge) explique pourquoi les cerveaux autistes y excellent naturellement
-> - Les échecs peuvent améliorer les fonctions exécutives et réduire l'anxiété sociale, jamais remplacer une prise en charge
-
 ## Le spectre autistique : ce que tu crois savoir est probablement incomplet
 
 Le [trouble du spectre de l'autisme](https://fr.wikipedia.org/wiki/Trouble_du_spectre_de_l%27autisme) (TSA) est un trouble neurodéveloppemental caractérisé par des différences persistantes dans la communication sociale et des comportements répétitifs ou restreints. La définition actuelle est issue du [Manuel diagnostique et statistique des troubles mentaux](https://fr.wikipedia.org/wiki/Manuel_diagnostique_et_statistique_des_troubles_mentaux) (DSM-5), publié par l'[Association américaine de psychiatrie](https://fr.wikipedia.org/wiki/Association_am%C3%A9ricaine_de_psychiatrie) en 2013.
@@ -180,6 +172,13 @@ Selon la théorie de la *systemizing* de Simon Baron-Cohen (Cambridge), les cerv
 **Après lecture :** pour une première mise en place, vise **trois** séances courtes par semaine, plateau physique, **sans** objectif de classement pendant un mois ; note ce qui fatigue (bruit, durée, groupe).
 
 ---
+
+## À retenir
+
+- 1 enfant sur 36 est autiste aux États-Unis (CDC, 2023) ; 1 sur 100 dans le monde (OMS)
+- L'échiquier est un "jeu à information parfaite" : aucune règle implicite, aucun sous-entendu social
+- La théorie de la *systemizing* (Baron-Cohen, Cambridge) explique pourquoi les cerveaux autistes y excellent naturellement
+- Les échecs peuvent améliorer les fonctions exécutives et réduire l'anxiété sociale, jamais remplacer une prise en charge
 
 ### Sources et références
 
