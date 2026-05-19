@@ -347,19 +347,20 @@ const catBreakdown = [
 
 <!-- ════════════ STYLES ════════════ -->
 <style>
-  /* ── Forced editorial dark shell ── */
+  /* ── Editorial shell — aliased onto site design tokens ── */
   .igp {
-    --bg:   #0c0c0c;
-    --bg2:  #111111;
-    --bg3:  #161616;
-    --fg:   #f0ede6;
-    --fg2:  #8a8680;
-    --fg3:  #3a3832;
-    --line: #1e1e1c;
-    --c-sci:#5b9fd4;
-    --c-esp:#f0a050;
-    --c-soc:#5cc4b0;
-    --fw-display: 600;
+    /* Aliases → design system. Les couleurs de rubrique sont fixes
+       (mêmes en clair/sombre) — le reste suit le thème. */
+    --bg:   var(--surface);
+    --bg2:  color-mix(in srgb, var(--text-main) 4%, var(--surface));
+    --bg3:  color-mix(in srgb, var(--text-main) 8%, var(--surface));
+    --fg:   var(--text-main);
+    --fg2:  var(--text-muted);
+    --fg3:  var(--border-soft);
+    --line: var(--border-soft);
+    --c-sci: #5b9fd4;
+    --c-esp: #f0a050;
+    --c-soc: #5cc4b0;
     background: var(--bg);
     color: var(--fg);
     font-family: var(--font-sans, "Space Grotesk", sans-serif);
@@ -704,7 +705,7 @@ const catBreakdown = [
   }
 
   .arow:hover .arow-inner {
-    background: rgba(255,255,255,0.02);
+    background: color-mix(in srgb, var(--text-main) 3%, var(--surface));
   }
 
   @media (max-width: 740px) {
@@ -938,7 +939,7 @@ const catBreakdown = [
     transition: background 200ms ease, border-color 200ms ease, gap 200ms ease;
   }
   .closing-btn:hover {
-    background: rgba(255,255,255,0.06);
+    background: color-mix(in srgb, var(--text-main) 6%, var(--surface));
     border-color: var(--fg2);
     gap: 0.75rem;
   }
