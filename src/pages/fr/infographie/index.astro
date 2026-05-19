@@ -3,21 +3,21 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 
 const articles = [
   {
-    num: 1,
+    num: "01",
     slug: "les-echecs-et-les-mathematiques",
     title: "Les échecs rendent-ils meilleur en maths ?",
     subtitle: "La vérité scientifique",
-    excerpt: "Jouer aux échecs te rend bon en maths ? La réponse n'est pas celle que tu attends, et elle change ce que tu devrais faire avec un échiquier.",
+    excerpt: "Jouer aux échecs te rend bon en maths ? La réponse n'est pas celle que tu attends — et elle change ce que tu devrais faire avec un échiquier.",
     category: "science",
     categoryLabel: "Science",
     pillar: "Cognition",
     date: "2 avr. 2026",
     isoDate: "2026-04-02",
-    readingTime: "15 min",
-    tags: ["mathématiques", "métacognition", "calcul", "cerveau"],
+    readingTime: "15",
+    tags: ["mathématiques", "métacognition", "cerveau"],
   },
   {
-    num: 2,
+    num: "02",
     slug: "echecs-et-autisme",
     title: "Échecs et autisme : l'échiquier comme refuge",
     subtitle: "Ce que la recherche dit vraiment",
@@ -27,25 +27,25 @@ const articles = [
     pillar: "Inclusion",
     date: "2 avr. 2026",
     isoDate: "2026-04-02",
-    readingTime: "22 min",
-    tags: ["autisme", "TSA", "inclusion", "neurodiversité"],
+    readingTime: "22",
+    tags: ["autisme", "TSA", "neurodiversité"],
   },
   {
-    num: 3,
+    num: "03",
     slug: "echecs-et-femmes",
     title: "Échecs et femmes : pourquoi si peu de joueuses ?",
-    subtitle: "40 femmes parmi 1 700 GMs",
-    excerpt: "40 femmes parmi 1 700 Grands Maîtres. L'écart n'est pas biologique : il est mathématique, historique et psychologique.",
+    subtitle: "40 femmes parmi 1 700 Grands Maîtres",
+    excerpt: "L'écart n'est pas biologique : il est mathématique, historique et psychologique. Ce que les données disent vraiment.",
     category: "societe",
     categoryLabel: "Société",
     pillar: "Genre",
     date: "3 avr. 2026",
     isoDate: "2026-04-03",
-    readingTime: "25 min",
-    tags: ["genre", "Polgar", "Hou Yifan", "sociologie"],
+    readingTime: "25",
+    tags: ["genre", "Polgar", "sociologie"],
   },
   {
-    num: 4,
+    num: "04",
     slug: "les-echecs-et-l-addiction",
     title: "Les échecs et l'addiction : quand le jeu devient une drogue",
     subtitle: "Décryptage d'une dépendance silencieuse",
@@ -55,25 +55,25 @@ const articles = [
     pillar: "Psychologie",
     date: "3 avr. 2026",
     isoDate: "2026-04-03",
-    readingTime: "22 min",
-    tags: ["addiction", "dopamine", "jeu en ligne", "santé mentale"],
+    readingTime: "22",
+    tags: ["addiction", "dopamine", "santé mentale"],
   },
   {
-    num: 5,
+    num: "05",
     slug: "les-echecs-et-le-cerveau",
     title: "Les échecs et le cerveau : ce que la science révèle",
-    subtitle: "IRM, chronnectome, fonctions exécutives",
+    subtitle: "IRM structurelle, chronnectome, fonctions exécutives",
     excerpt: "Un grand maître ? Pas un génie né, un cerveau entraîné. Voici ce que la recherche en neurosciences mesure vraiment.",
     category: "science",
     categoryLabel: "Science",
     pillar: "Neurosciences",
     date: "3 avr. 2026",
     isoDate: "2026-04-03",
-    readingTime: "22 min",
-    tags: ["cerveau", "IRMf", "neuroplasticité", "Gobet"],
+    readingTime: "22",
+    tags: ["cerveau", "IRMf", "neuroplasticité"],
   },
   {
-    num: 6,
+    num: "06",
     slug: "psychologie-du-joueur-d-echecs",
     title: "La psychologie du joueur d'échecs",
     subtitle: "Ce qui se passe vraiment dans ta tête",
@@ -83,11 +83,11 @@ const articles = [
     pillar: "Psychologie",
     date: "5 avr. 2026",
     isoDate: "2026-04-05",
-    readingTime: "16 min",
-    tags: ["ego", "tilt", "flow", "peur de perdre"],
+    readingTime: "16",
+    tags: ["ego", "tilt", "flow"],
   },
   {
-    num: 7,
+    num: "07",
     slug: "pourquoi-echecs-probleme-mathematique-impossible-et-ia",
     title: "Les échecs : un problème mathématique (presque) impossible",
     subtitle: "Et comment l'IA s'en sort quand même",
@@ -97,25 +97,25 @@ const articles = [
     pillar: "Informatique",
     date: "9 avr. 2026",
     isoDate: "2026-04-09",
-    readingTime: "16 min",
-    tags: ["IA", "Stockfish", "nombre de Shannon", "minimax"],
+    readingTime: "16",
+    tags: ["IA", "Stockfish", "minimax"],
   },
   {
-    num: 8,
+    num: "08",
     slug: "echecs-et-seniors",
     title: "Échecs et seniors : déclin cognitif et réserve cérébrale",
     subtitle: "L'étude du New England Journal of Medicine",
-    excerpt: "Une étude du NEJM le montre : jouer aux échecs réduit le risque de démence. Mais le mécanisme est bien plus subtil.",
+    excerpt: "Jouer aux échecs réduit le risque de démence. Mais le mécanisme est bien plus subtil que « faites travailler votre cerveau ».",
     category: "science",
     categoryLabel: "Science",
     pillar: "Neurosciences",
     date: "30 avr. 2026",
     isoDate: "2026-04-30",
-    readingTime: "18 min",
-    tags: ["démence", "Alzheimer", "réserve cognitive", "NEJM"],
+    readingTime: "18",
+    tags: ["démence", "réserve cognitive", "NEJM"],
   },
   {
-    num: 9,
+    num: "09",
     slug: "regle-40-40-20-echecs",
     title: "La règle 40-40-20 : structurer son entraînement",
     subtitle: "Tactique, finales, ouvertures",
@@ -125,11 +125,11 @@ const articles = [
     pillar: "Progression",
     date: "5 mai 2026",
     isoDate: "2026-05-05",
-    readingTime: "20 min",
-    tags: ["entraînement", "tactique", "finales", "méthode"],
+    readingTime: "20",
+    tags: ["entraînement", "tactique", "finales"],
   },
   {
-    num: 10,
+    num: "10",
     slug: "theorie-des-jeux-aux-echecs",
     title: "Théorie des jeux aux échecs : chaque coup est une décision",
     subtitle: "Nash, minimax et stratégie optimale",
@@ -139,753 +139,807 @@ const articles = [
     pillar: "Mathématiques",
     date: "5 mai 2026",
     isoDate: "2026-05-05",
-    readingTime: "14 min",
-    tags: ["Nash", "minimax", "stratégie", "mathématiques"],
+    readingTime: "14",
+    tags: ["Nash", "minimax", "stratégie"],
   },
 ];
 
-const totalMinutes = articles.reduce((acc, a) => acc + parseInt(a.readingTime), 0);
-const hours = Math.floor(totalMinutes / 60);
-const mins = totalMinutes % 60;
-const totalReadingLabel = `${hours}h${mins < 10 ? "0" : ""}${mins}`;
-
-const catCounts = articles.reduce((acc, a) => {
-  acc[a.category] = (acc[a.category] || 0) + 1;
-  return acc;
-}, {} as Record<string, number>);
+const totalMin = articles.reduce((s, a) => s + parseInt(a.readingTime), 0);
+const catBreakdown = [
+  { label: "Science",  key: "science",  count: 5, color: "#5b9fd4" },
+  { label: "Société",  key: "societe",  count: 3, color: "#5cc4b0" },
+  { label: "Esprit",   key: "esprit",   count: 2, color: "#f0a050" },
+];
 ---
 
 <BaseLayout
   title="Les 10 premiers articles — Infographie | Blog d'un Gaucher"
-  description="Visualisation interactive des 10 premiers articles du Blog d'un Gaucher : timeline, catégories, thèmes et temps de lecture. De l'autisme aux mathématiques, du cerveau à l'addiction."
+  description="Visualisation interactive des 10 premières publications du Blog d'un Gaucher : timeline éditoriale, répartition par rubrique, 190 minutes de lecture."
   canonicalPath="/fr/infographie/"
   omitEnDeAlternateLinks={true}
 >
-  <main class="infographic-page">
 
-    <!-- ─────────────────── HERO ─────────────────── -->
-    <section class="hero">
-      <div class="hero-inner">
-        <p class="hero-eyebrow">Blog d'un Gaucher</p>
-        <h1 class="hero-title">Naissance d'un blog</h1>
-        <p class="hero-subtitle">Les 10 premiers articles publiés — une plongée dans les thèmes fondateurs</p>
+<div class="igp">
 
-        <div class="stats-row">
-          <div class="stat">
-            <span class="stat-value">10</span>
-            <span class="stat-label">articles</span>
-          </div>
-          <div class="stat-sep" aria-hidden="true">·</div>
-          <div class="stat">
-            <span class="stat-value">{totalReadingLabel}</span>
-            <span class="stat-label">de lecture</span>
-          </div>
-          <div class="stat-sep" aria-hidden="true">·</div>
-          <div class="stat">
-            <span class="stat-value">33</span>
-            <span class="stat-label">jours</span>
-          </div>
-          <div class="stat-sep" aria-hidden="true">·</div>
-          <div class="stat">
-            <span class="stat-value">3</span>
-            <span class="stat-label">rubriques</span>
-          </div>
-        </div>
-
-        <p class="hero-date-range">2 avril → 5 mai 2026</p>
-      </div>
-    </section>
-
-    <!-- ─────────────────── CATEGORY BAR CHART ─────────────────── -->
-    <section class="cat-section">
-      <div class="cat-inner">
-        <h2 class="cat-title">Répartition par rubrique</h2>
-        <div class="cat-bars">
-          <div class="cat-bar-item">
-            <div class="cat-bar-label">
-              <span class="cat-dot cat-dot--science" aria-hidden="true"></span>
-              <span>Science</span>
-            </div>
-            <div class="cat-bar-track">
-              <div class="cat-bar-fill cat-bar-fill--science" style={`width:${(catCounts.science / 10) * 100}%`}></div>
-            </div>
-            <span class="cat-bar-count">{catCounts.science} articles</span>
-          </div>
-          <div class="cat-bar-item">
-            <div class="cat-bar-label">
-              <span class="cat-dot cat-dot--societe" aria-hidden="true"></span>
-              <span>Société</span>
-            </div>
-            <div class="cat-bar-track">
-              <div class="cat-bar-fill cat-bar-fill--societe" style={`width:${(catCounts.societe / 10) * 100}%`}></div>
-            </div>
-            <span class="cat-bar-count">{catCounts.societe} articles</span>
-          </div>
-          <div class="cat-bar-item">
-            <div class="cat-bar-label">
-              <span class="cat-dot cat-dot--esprit" aria-hidden="true"></span>
-              <span>Esprit</span>
-            </div>
-            <div class="cat-bar-track">
-              <div class="cat-bar-fill cat-bar-fill--esprit" style={`width:${(catCounts.esprit / 10) * 100}%`}></div>
-            </div>
-            <span class="cat-bar-count">{catCounts.esprit} articles</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ─────────────────── FILTERS ─────────────────── -->
-    <section class="filters-section">
-      <div class="filters-inner">
-        <button class="filter-btn filter-btn--active" data-filter="all">Tous</button>
-        <button class="filter-btn" data-filter="science">Science</button>
-        <button class="filter-btn" data-filter="esprit">Esprit</button>
-        <button class="filter-btn" data-filter="societe">Société</button>
-      </div>
-    </section>
-
-    <!-- ─────────────────── TIMELINE ─────────────────── -->
-    <section class="timeline-section">
-      <div class="timeline-inner">
-        <div class="timeline-line" aria-hidden="true"></div>
-
-        {articles.map((article, i) => (
-          <article
-            class={`tl-card tl-card--${article.category} ${i % 2 === 0 ? "tl-card--left" : "tl-card--right"}`}
-            data-category={article.category}
-          >
-            <!-- Timeline dot -->
-            <div class="tl-dot" aria-hidden="true">
-              <span class="tl-dot-num">{article.num}</span>
-            </div>
-
-            <!-- Card content -->
-            <div class="tl-card-body">
-              <div class="tl-card-header">
-                <span class={`tl-badge tl-badge--${article.category}`}>{article.categoryLabel}</span>
-                <span class="tl-pillar">{article.pillar}</span>
-              </div>
-
-              <time class="tl-date" datetime={article.isoDate}>{article.date}</time>
-
-              <h2 class="tl-title">
-                <a href={`/fr/blog/${article.slug}/`} class="tl-title-link">
-                  {article.title}
-                </a>
-              </h2>
-              <p class="tl-subtitle">{article.subtitle}</p>
-
-              <p class="tl-excerpt">{article.excerpt}</p>
-
-              <div class="tl-footer">
-                <span class="tl-time">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                  {article.readingTime}
-                </span>
-                <div class="tl-tags">
-                  {article.tags.slice(0, 3).map(tag => (
-                    <span class="tl-tag">{tag}</span>
-                  ))}
-                </div>
-              </div>
-
-              <a href={`/fr/blog/${article.slug}/`} class="tl-cta" aria-label={`Lire : ${article.title}`}>
-                Lire l'article
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
+  <!-- ════════════ HERO ════════════ -->
+  <header class="hero">
+    <div class="hero-grid">
+      <!-- Background texture: faint chess squares -->
+      <div class="chess-bg" aria-hidden="true">
+        {Array.from({length:64}).map((_,i) => (
+          <div class={`sq ${(Math.floor(i/8)+i)%2===0 ? "sq--dark" : ""}`}></div>
         ))}
-
       </div>
-    </section>
 
-    <!-- ─────────────────── CLOSING ─────────────────── -->
-    <section class="closing-section">
-      <div class="closing-inner">
-        <p class="closing-text">33 jours. 190 minutes de lecture. Le début d'un projet.</p>
-        <a href="/fr/blog/" class="closing-btn">Voir tous les articles</a>
+      <div class="hero-content">
+        <p class="hero-label">Blog d'un Gaucher · 2026</p>
+        <h1 class="hero-title">
+          <span class="hero-title-line1">Naissance</span>
+          <span class="hero-title-line2">d'un blog</span>
+        </h1>
+        <p class="hero-sub">Les 10 premières publications — une plongée dans les thèmes fondateurs</p>
+
+        <div class="hero-stats">
+          <div class="hstat">
+            <span class="hstat-n">10</span>
+            <span class="hstat-l">articles</span>
+          </div>
+          <div class="hstat-div" aria-hidden="true"></div>
+          <div class="hstat">
+            <span class="hstat-n">3<span class="hstat-unit">h</span>10</span>
+            <span class="hstat-l">de lecture</span>
+          </div>
+          <div class="hstat-div" aria-hidden="true"></div>
+          <div class="hstat">
+            <span class="hstat-n">33</span>
+            <span class="hstat-l">jours</span>
+          </div>
+          <div class="hstat-div" aria-hidden="true"></div>
+          <div class="hstat">
+            <span class="hstat-n">3</span>
+            <span class="hstat-l">rubriques</span>
+          </div>
+        </div>
+
+        <p class="hero-range">2 avril <span class="hero-arrow">→</span> 5 mai 2026</p>
       </div>
-    </section>
+    </div>
+  </header>
 
-  </main>
+  <!-- ════════════ DISTRIBUTION ════════════ -->
+  <section class="distrib">
+    <div class="distrib-inner">
+      <p class="section-label">Répartition par rubrique</p>
+      <div class="distrib-grid">
+        {catBreakdown.map(cat => (
+          <div class="dcat" style={`--acc:${cat.color}`}>
+            <span class="dcat-n">{cat.count}<span class="dcat-of">/10</span></span>
+            <span class="dcat-name">{cat.label}</span>
+            <div class="dcat-bar">
+              <div class="dcat-fill" style={`width:${cat.count*10}%`}></div>
+            </div>
+            <span class="dcat-pct">{cat.count * 10} %</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ FILTERS ════════════ -->
+  <div class="filters-wrap">
+    <div class="filters">
+      <button class="fbtn fbtn--on" data-f="all">Tous</button>
+      <button class="fbtn" data-f="science">Science</button>
+      <button class="fbtn" data-f="esprit">Esprit</button>
+      <button class="fbtn" data-f="societe">Société</button>
+    </div>
+  </div>
+
+  <!-- ════════════ ARTICLE LIST ════════════ -->
+  <section class="alist">
+    {articles.map((a, i) => (
+      <article
+        class={`arow arow--${a.category}`}
+        data-cat={a.category}
+        style={`--delay:${i * 60}ms`}
+      >
+        <!-- Ghost number -->
+        <span class="arow-ghost" aria-hidden="true">{a.num}</span>
+
+        <div class="arow-inner">
+          <!-- Left: number + meta -->
+          <div class="arow-left">
+            <span class="arow-num">{a.num}</span>
+            <div class="arow-meta">
+              <span class="arow-badge">{a.categoryLabel}</span>
+              <span class="arow-pillar">{a.pillar}</span>
+            </div>
+          </div>
+
+          <!-- Center: title + content -->
+          <div class="arow-center">
+            <time class="arow-date" datetime={a.isoDate}>{a.date}</time>
+            <h2 class="arow-title">
+              <a class="arow-link" href={`/fr/blog/${a.slug}/`}>{a.title}</a>
+            </h2>
+            <p class="arow-subtitle">{a.subtitle}</p>
+            <p class="arow-excerpt">{a.excerpt}</p>
+            <div class="arow-tags">
+              {a.tags.map(t => <span class="arow-tag">{t}</span>)}
+            </div>
+          </div>
+
+          <!-- Right: time + CTA -->
+          <div class="arow-right">
+            <div class="arow-time">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>{a.readingTime} min</span>
+            </div>
+            <a class="arow-cta" href={`/fr/blog/${a.slug}/`} aria-label={`Lire : ${a.title}`}>
+              Lire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    ))}
+  </section>
+
+  <!-- ════════════ CLOSING ════════════ -->
+  <footer class="closing">
+    <div class="closing-inner">
+      <p class="closing-q">33 jours.</p>
+      <p class="closing-q">{totalMin} minutes de lecture.</p>
+      <p class="closing-q closing-q--dim">Le début d'un projet.</p>
+      <a class="closing-btn" href="/fr/blog/">
+        Voir tous les articles
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </footer>
+
+</div>
 </BaseLayout>
 
+<!-- ════════════ SCRIPT ════════════ -->
 <script>
-  const filterBtns = document.querySelectorAll<HTMLButtonElement>(".filter-btn");
-  const cards = document.querySelectorAll<HTMLElement>(".tl-card");
+  // Category filter
+  const btns = document.querySelectorAll<HTMLButtonElement>(".fbtn");
+  const rows = document.querySelectorAll<HTMLElement>(".arow");
 
-  filterBtns.forEach(btn => {
+  btns.forEach(btn => {
     btn.addEventListener("click", () => {
-      const filter = btn.dataset.filter!;
-
-      filterBtns.forEach(b => b.classList.remove("filter-btn--active"));
-      btn.classList.add("filter-btn--active");
-
-      cards.forEach(card => {
-        const cat = card.dataset.category!;
-        if (filter === "all" || cat === filter) {
-          card.classList.remove("tl-card--dimmed");
-          card.classList.add("tl-card--visible");
+      btns.forEach(b => b.classList.remove("fbtn--on"));
+      btn.classList.add("fbtn--on");
+      const f = btn.dataset.f!;
+      rows.forEach(r => {
+        if (f === "all" || r.dataset.cat === f) {
+          r.classList.remove("arow--fade");
         } else {
-          card.classList.remove("tl-card--visible");
-          card.classList.add("tl-card--dimmed");
+          r.classList.add("arow--fade");
         }
       });
     });
   });
 
-  // Scroll-triggered reveal
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          (entry.target as HTMLElement).classList.add("tl-card--revealed");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
+  // Scroll reveal
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        (e.target as HTMLElement).classList.add("arow--in");
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
 
-  cards.forEach(card => observer.observe(card));
+  rows.forEach(r => io.observe(r));
+
+  // Bar animation on load
+  document.querySelectorAll<HTMLElement>(".dcat-fill").forEach(el => {
+    const w = el.style.width;
+    el.style.width = "0";
+    requestAnimationFrame(() => {
+      el.style.transition = "width 1.2s cubic-bezier(0.16,1,0.3,1)";
+      el.style.width = w;
+    });
+  });
 </script>
 
+<!-- ════════════ STYLES ════════════ -->
 <style>
-  /* ── Page wrapper + CSS custom properties ── */
-  .infographic-page {
-    max-width: 100%;
-    overflow-x: hidden;
-    --c-science: #5b9fd4;
-    --c-esprit: #f0a050;
-    --c-societe: #5cc4b0;
-    --c-science-s: rgba(91,159,212,0.12);
-    --c-esprit-s: rgba(240,160,80,0.12);
-    --c-societe-s: rgba(92,196,176,0.12);
+  /* ── Forced editorial dark shell ── */
+  .igp {
+    --bg:   #0c0c0c;
+    --bg2:  #111111;
+    --bg3:  #161616;
+    --fg:   #f0ede6;
+    --fg2:  #8a8680;
+    --fg3:  #3a3832;
+    --line: #1e1e1c;
+    --c-sci:#5b9fd4;
+    --c-esp:#f0a050;
+    --c-soc:#5cc4b0;
+    --fw-display: 600;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans, "Space Grotesk", sans-serif);
   }
 
   /* ── Hero ── */
   .hero {
-    padding: clamp(4rem, 10vw, 8rem) 1.5rem clamp(3rem, 6vw, 5rem);
-    text-align: center;
-    background: linear-gradient(160deg,
-      color-mix(in srgb, var(--c-science) 6%, var(--surface)) 0%,
-      var(--surface) 60%,
-      color-mix(in srgb, var(--c-societe) 5%, var(--surface)) 100%
-    );
-    border-bottom: 1px solid var(--border-soft);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
   }
 
-  .hero-inner { max-width: 760px; margin: 0 auto; }
+  .hero-grid {
+    position: relative;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    padding: clamp(5rem, 12vw, 9rem) clamp(1.5rem, 6vw, 5rem);
+  }
 
-  .hero-eyebrow {
-    font-size: 0.78rem;
+  /* Chess background */
+  .chess-bg {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    opacity: 0.028;
+    pointer-events: none;
+    user-select: none;
+  }
+  .sq { background: transparent; }
+  .sq--dark { background: var(--fg); }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+  }
+
+  .hero-label {
+    font-size: 0.72rem;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--text-dim);
-    margin-bottom: 0.75rem;
+    color: var(--fg2);
+    margin-bottom: 2.5rem;
   }
 
   .hero-title {
-    font-family: var(--font-serif);
-    font-size: clamp(2.4rem, 6vw, 4.5rem);
-    font-weight: 500;
-    font-style: italic;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: var(--text-main);
-    margin-bottom: 0.75rem;
-  }
-
-  .hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    color: var(--text-muted);
-    line-height: 1.5;
-    max-width: 540px;
-    margin: 0 auto 2rem;
-  }
-
-  .stats-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .stat {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.1rem;
+    gap: 0;
+    margin-bottom: 1.75rem;
+    line-height: 0.88;
   }
 
-  .stat-value {
-    font-family: var(--font-serif);
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 500;
-    font-style: italic;
-    color: var(--text-main);
-    line-height: 1;
-  }
-
-  .stat-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-  }
-
-  .stat-sep {
-    font-size: 1.5rem;
-    color: var(--border-soft);
+  .hero-title-line1 {
+    font-family: var(--font-serif, "Fraunces", Georgia, serif);
+    font-size: clamp(4rem, 12vw, 9.5rem);
     font-weight: 300;
-    align-self: center;
-    margin-top: -0.5rem;
-  }
-
-  .hero-date-range {
-    font-size: 0.88rem;
-    color: var(--text-dim);
     font-style: italic;
-    margin-top: 0.5rem;
+    letter-spacing: -0.03em;
+    color: var(--fg);
+    display: block;
   }
 
-  /* ── Category bar chart ── */
-  .cat-section {
-    padding: 3rem 1.5rem;
-    background: var(--surface-elevated, var(--surface));
-    border-bottom: 1px solid var(--border-soft);
-  }
-
-  .cat-inner {
-    max-width: 620px;
-    margin: 0 auto;
-  }
-
-  .cat-title {
-    font-family: var(--font-serif);
-    font-size: 1.1rem;
+  .hero-title-line2 {
+    font-family: var(--font-serif, "Fraunces", Georgia, serif);
+    font-size: clamp(4rem, 12vw, 9.5rem);
+    font-weight: 300;
     font-style: italic;
-    font-weight: 400;
-    color: var(--text-main);
-    margin-bottom: 1.5rem;
-    text-align: center;
+    letter-spacing: -0.03em;
+    /* Outlined / ghost text for second line */
+    -webkit-text-stroke: 1px color-mix(in srgb, var(--fg) 35%, transparent);
+    color: transparent;
+    display: block;
   }
 
-  .cat-bars { display: flex; flex-direction: column; gap: 1rem; }
-
-  .cat-bar-item {
-    display: grid;
-    grid-template-columns: 120px 1fr 80px;
-    align-items: center;
-    gap: 0.75rem;
+  .hero-sub {
+    font-size: clamp(0.9rem, 1.6vw, 1.05rem);
+    color: var(--fg2);
+    line-height: 1.6;
+    max-width: 440px;
+    margin-bottom: 3rem;
   }
 
-  @media (max-width: 480px) {
-    .cat-bar-item { grid-template-columns: 90px 1fr 60px; gap: 0.5rem; }
-  }
-
-  .cat-bar-label {
+  /* Stats */
+  .hero-stats {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--text-muted);
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 2rem;
   }
 
-  .cat-dot {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
+  .hstat {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 0;
+  }
+  .hstat:first-child { padding-left: 0; }
+
+  .hstat-n {
+    font-family: var(--font-serif, serif);
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--fg);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .hstat-unit {
+    font-size: 0.6em;
+    font-style: italic;
+  }
+
+  .hstat-l {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--fg2);
+    margin-top: 0.2rem;
+  }
+
+  .hstat-div {
+    width: 1px;
+    height: 2.5rem;
+    background: var(--fg3);
+    margin-right: 2rem;
     flex-shrink: 0;
+    align-self: center;
   }
-  .cat-dot--science { background: var(--c-science); }
-  .cat-dot--esprit  { background: var(--c-esprit); }
-  .cat-dot--societe { background: var(--c-societe); }
 
-  .cat-bar-track {
-    height: 10px;
-    background: var(--border-soft);
+  .hero-range {
+    font-size: 0.82rem;
+    color: var(--fg2);
+    letter-spacing: 0.06em;
+  }
+
+  .hero-arrow {
+    display: inline-block;
+    margin: 0 0.4em;
+    opacity: 0.5;
+  }
+
+  /* ── Distribution ── */
+  .distrib {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--line);
+    padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 6vw, 5rem);
+  }
+
+  .distrib-inner { max-width: 860px; }
+
+  .section-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--fg2);
+    margin-bottom: 2.5rem;
+  }
+
+  .distrib-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  @media (max-width: 600px) {
+    .distrib-grid { grid-template-columns: 1fr; gap: 2rem; }
+  }
+
+  .dcat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dcat-n {
+    font-family: var(--font-serif, serif);
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--acc);
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .dcat-of {
+    font-size: 0.4em;
+    color: var(--fg2);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .dcat-name {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--acc);
+  }
+
+  .dcat-bar {
+    height: 2px;
+    background: var(--line);
     border-radius: 99px;
     overflow: hidden;
+    margin-top: 0.75rem;
   }
 
-  .cat-bar-fill {
+  .dcat-fill {
     height: 100%;
+    background: var(--acc);
     border-radius: 99px;
-    transform-origin: left;
-    animation: bar-grow 1s var(--ease-out) both;
-    animation-delay: 0.2s;
-  }
-  .cat-bar-fill--science { background: var(--c-science); }
-  .cat-bar-fill--esprit  { background: var(--c-esprit); }
-  .cat-bar-fill--societe { background: var(--c-societe); }
-
-  @keyframes bar-grow {
-    from { transform: scaleX(0); }
-    to   { transform: scaleX(1); }
   }
 
-  .cat-bar-count {
-    font-size: 0.78rem;
-    color: var(--text-dim);
-    text-align: right;
+  .dcat-pct {
+    font-size: 0.72rem;
+    color: var(--fg2);
+    margin-top: 0.25rem;
   }
 
   /* ── Filters ── */
-  .filters-section {
-    padding: 1.5rem 1.5rem 0;
+  .filters-wrap {
     position: sticky;
     top: 0;
-    z-index: 10;
-    background: var(--surface);
-    border-bottom: 1px solid var(--border-soft);
+    z-index: 50;
+    background: var(--bg2);
+    border-bottom: 1px solid var(--line);
+    padding: 0 clamp(1.5rem, 6vw, 5rem);
   }
 
-  .filters-inner {
-    max-width: 900px;
-    margin: 0 auto;
+  .filters {
     display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    padding-bottom: 1rem;
-  }
-
-  .filter-btn {
-    padding: 0.4rem 1rem;
-    border-radius: var(--radius-pill);
-    border: 1.5px solid var(--border-soft);
-    background: transparent;
-    color: var(--text-muted);
-    font-size: 0.82rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 200ms ease;
-  }
-
-  .filter-btn:hover {
-    border-color: var(--text-dim);
-    color: var(--text-main);
-  }
-
-  .filter-btn--active {
-    background: var(--text-main);
-    border-color: var(--text-main);
-    color: var(--surface);
-  }
-
-  /* ── Timeline ── */
-  .timeline-section {
-    padding: 4rem 1.5rem 5rem;
-  }
-
-  .timeline-inner {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .timeline-line {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    transform: translateX(-50%);
-    background: linear-gradient(to bottom,
-      transparent,
-      var(--border-soft) 5%,
-      var(--border-soft) 95%,
-      transparent
-    );
-  }
-
-  @media (max-width: 680px) {
-    .timeline-line { left: 24px; }
-  }
-
-  /* ── Timeline Card ── */
-  .tl-card {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 48px 1fr;
     gap: 0;
-    margin-bottom: 3rem;
-    opacity: 0;
-    transition: opacity 500ms ease, transform 500ms ease;
+    max-width: 860px;
+    overflow-x: auto;
+    scrollbar-width: none;
   }
+  .filters::-webkit-scrollbar { display: none; }
 
-  .tl-card--revealed {
-    opacity: 1;
-    transform: none !important;
-  }
-
-  .tl-card--dimmed {
-    opacity: 0.18;
-    pointer-events: none;
-  }
-
-  /* Left cards: content in col 1, dot in col 2 */
-  .tl-card--left { transform: translateX(-20px); }
-  .tl-card--left .tl-dot { grid-column: 2; grid-row: 1; }
-  .tl-card--left .tl-card-body {
-    grid-column: 1;
-    grid-row: 1;
-    text-align: right;
-    align-items: flex-end;
-    padding-right: 2rem;
-  }
-  .tl-card--left .tl-footer { justify-content: flex-end; flex-direction: row-reverse; }
-  .tl-card--left .tl-tags { justify-content: flex-end; }
-
-  /* Right cards: dot in col 2, content in col 3 */
-  .tl-card--right { transform: translateX(20px); }
-  .tl-card--right .tl-dot { grid-column: 2; grid-row: 1; }
-  .tl-card--right .tl-card-body {
-    grid-column: 3;
-    grid-row: 1;
-    text-align: left;
-    align-items: flex-start;
-    padding-left: 2rem;
-  }
-
-  /* Mobile: all cards go right of the line */
-  @media (max-width: 680px) {
-    .tl-card {
-      grid-template-columns: 48px 1fr;
-      gap: 0;
-    }
-    .tl-card--left .tl-dot,
-    .tl-card--right .tl-dot {
-      grid-column: 1;
-      grid-row: 1;
-    }
-    .tl-card--left .tl-card-body,
-    .tl-card--right .tl-card-body {
-      grid-column: 2;
-      grid-row: 1;
-      text-align: left;
-      align-items: flex-start;
-      padding-left: 1.25rem;
-      padding-right: 0;
-    }
-    .tl-card--left .tl-footer { flex-direction: row; justify-content: flex-start; }
-    .tl-card--left .tl-tags { justify-content: flex-start; }
-    .tl-card--left { transform: translateX(-10px); }
-  }
-
-  /* Dot */
-  .tl-dot {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 0.25rem;
-    z-index: 1;
-  }
-
-  .tl-dot-num {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: var(--surface);
-    border: 2px solid var(--border-soft);
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--text-dim);
-    transition: border-color 300ms ease, color 300ms ease, background 300ms ease;
-    flex-shrink: 0;
-  }
-
-  .tl-card--science .tl-dot-num {
-    border-color: var(--c-science);
-    color: var(--c-science);
-    background: var(--c-science-s);
-  }
-  .tl-card--esprit .tl-dot-num {
-    border-color: var(--c-esprit);
-    color: var(--c-esprit);
-    background: var(--c-esprit-s);
-  }
-  .tl-card--societe .tl-dot-num {
-    border-color: var(--c-societe);
-    color: var(--c-societe);
-    background: var(--c-societe-s);
-  }
-
-  /* Card body */
-  .tl-card-body {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .tl-card-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-  .tl-card--left .tl-card-header { flex-direction: row-reverse; }
-  @media (max-width: 680px) {
-    .tl-card--left .tl-card-header { flex-direction: row; }
-  }
-
-  /* Badge */
-  .tl-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.15rem 0.55rem;
-    border-radius: var(--radius-pill);
-    font-size: 0.65rem;
+  .fbtn {
+    padding: 1rem 1.25rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--fg2);
+    font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    border: 1px solid;
+    cursor: pointer;
+    transition: color 200ms ease, border-color 200ms ease;
+    white-space: nowrap;
+    margin-bottom: -1px;
   }
-  .tl-badge--science { color: var(--c-science); border-color: var(--c-science); background: var(--c-science-s); }
-  .tl-badge--esprit  { color: var(--c-esprit);  border-color: var(--c-esprit);  background: var(--c-esprit-s); }
-  .tl-badge--societe { color: var(--c-societe); border-color: var(--c-societe); background: var(--c-societe-s); }
 
-  .tl-pillar {
-    font-size: 0.72rem;
-    color: var(--text-dim);
+  .fbtn:hover { color: var(--fg); }
+  .fbtn--on {
+    color: var(--fg);
+    border-bottom-color: var(--fg);
+  }
+
+  /* ── Article list ── */
+  .alist {
+    max-width: 100%;
+  }
+
+  .arow {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+    background: var(--bg);
+    transition: background 250ms ease, opacity 350ms ease, transform 500ms cubic-bezier(0.16,1,0.3,1);
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  .arow--in {
+    opacity: 1;
+    transform: none;
+  }
+
+  .arow--fade {
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
+  /* Left accent line per category */
+  .arow::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--acc-c);
+    opacity: 0;
+    transition: opacity 250ms ease;
+  }
+  .arow:hover::before { opacity: 1; }
+
+  .arow--science { --acc-c: var(--c-sci); }
+  .arow--esprit  { --acc-c: var(--c-esp); }
+  .arow--societe { --acc-c: var(--c-soc); }
+
+  /* Ghost big number */
+  .arow-ghost {
+    position: absolute;
+    right: -0.1em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--font-serif, serif);
+    font-size: clamp(6rem, 16vw, 14rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--fg);
+    opacity: 0.025;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.06em;
+  }
+
+  .arow:hover .arow-ghost { opacity: 0.045; }
+
+  /* Row inner layout */
+  .arow-inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    gap: 0 2rem;
+    padding: clamp(1.75rem, 3vw, 2.5rem) clamp(1.5rem, 6vw, 5rem);
+    align-items: start;
+    transition: background 250ms ease;
+  }
+
+  .arow:hover .arow-inner {
+    background: rgba(255,255,255,0.02);
+  }
+
+  @media (max-width: 740px) {
+    .arow-inner {
+      grid-template-columns: 64px 1fr;
+      grid-template-rows: auto auto;
+    }
+    .arow-right {
+      grid-column: 2;
+      grid-row: 2;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .arow-inner { grid-template-columns: 48px 1fr; gap: 0 1rem; }
+    .arow-ghost { font-size: 6rem; }
+  }
+
+  /* Left column */
+  .arow-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding-top: 0.15rem;
+  }
+
+  .arow-num {
+    font-family: var(--font-serif, serif);
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--fg2);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    transition: color 200ms ease;
+  }
+  .arow:hover .arow-num { color: var(--acc-c); }
+
+  .arow-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .arow-badge {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--acc-c);
+    padding: 0.15rem 0.45rem;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    width: fit-content;
+    opacity: 0.85;
+  }
+
+  .arow-pillar {
+    font-size: 0.68rem;
+    color: var(--fg2);
     font-style: italic;
   }
 
-  /* Date */
-  .tl-date {
-    font-size: 0.75rem;
-    color: var(--text-dim);
-    font-weight: 600;
-    letter-spacing: 0.04em;
+  /* Center column */
+  .arow-center {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
   }
 
-  /* Title */
-  .tl-title {
-    font-family: var(--font-serif);
-    font-size: clamp(1.05rem, 2vw, 1.3rem);
-    font-weight: 500;
+  .arow-date {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fg2);
+    display: block;
+  }
+
+  .arow-title {
+    font-family: var(--font-serif, serif);
+    font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+    font-weight: 400;
     font-style: italic;
     line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: var(--text-main);
+    letter-spacing: -0.02em;
+    color: var(--fg);
     margin: 0;
   }
 
-  .tl-title-link {
+  .arow-link {
     color: inherit;
     text-decoration: none;
-    transition: color 180ms ease;
+    background-image: linear-gradient(var(--acc-c), var(--acc-c));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 300ms ease, color 200ms ease;
   }
-  .tl-title-link:hover { color: var(--green); }
+  .arow:hover .arow-link {
+    background-size: 100% 1px;
+    color: var(--fg);
+  }
 
-  /* Subtitle */
-  .tl-subtitle {
-    font-size: 0.8rem;
-    color: var(--text-dim);
+  .arow-subtitle {
+    font-size: 0.78rem;
     font-weight: 600;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
+    color: var(--fg2);
     margin: 0;
   }
 
-  /* Excerpt */
-  .tl-excerpt {
-    font-size: 0.88rem;
-    color: var(--text-muted);
-    line-height: 1.6;
+  .arow-excerpt {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--fg2);
     margin: 0.25rem 0 0;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
-  /* Footer */
-  .tl-footer {
+  .arow-tags {
     display: flex;
-    align-items: center;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    margin-top: 0.4rem;
+  }
+
+  .arow-tag {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
+    background: var(--bg3);
+    border: 1px solid var(--fg3);
+    border-radius: 2px;
+    color: var(--fg2);
+    letter-spacing: 0.04em;
+  }
+
+  /* Right column */
+  .arow-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     gap: 0.75rem;
-    flex-wrap: wrap;
-    margin-top: 0.25rem;
+    padding-top: 0.15rem;
   }
 
-  .tl-time {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    font-size: 0.78rem;
-    color: var(--text-dim);
-    font-weight: 600;
-    flex-shrink: 0;
-  }
-
-  .tl-tags {
+  .arow-time {
     display: flex;
-    gap: 0.3rem;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--fg2);
+    letter-spacing: 0.04em;
+    opacity: 0.7;
   }
 
-  .tl-tag {
-    padding: 0.1rem 0.45rem;
-    border-radius: var(--radius-pill);
-    background: var(--border-soft);
-    font-size: 0.7rem;
-    color: var(--text-dim);
-  }
-
-  /* CTA */
-  .tl-cta {
+  .arow-cta {
     display: inline-flex;
     align-items: center;
-    gap: 0.3rem;
-    font-size: 0.8rem;
+    gap: 0.4rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    color: var(--green);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--acc-c);
     text-decoration: none;
-    margin-top: 0.5rem;
-    transition: gap 200ms ease;
+    padding: 0.5rem 0.85rem;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    opacity: 0;
+    transform: translateX(4px);
+    transition: opacity 200ms ease, transform 200ms ease, background 200ms ease, color 200ms ease;
   }
-  .tl-cta:hover { gap: 0.5rem; }
+  .arow:hover .arow-cta {
+    opacity: 1;
+    transform: none;
+  }
+  .arow-cta:hover {
+    background: var(--acc-c);
+    color: var(--bg);
+  }
 
   /* ── Closing ── */
-  .closing-section {
-    padding: 4rem 1.5rem 6rem;
+  .closing {
+    background: var(--bg2);
+    border-top: 1px solid var(--line);
+    padding: clamp(5rem, 10vw, 8rem) clamp(1.5rem, 6vw, 5rem);
     text-align: center;
-    border-top: 1px solid var(--border-soft);
   }
 
   .closing-inner { max-width: 480px; margin: 0 auto; }
 
-  .closing-text {
-    font-family: var(--font-serif);
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  .closing-q {
+    font-family: var(--font-serif, serif);
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    font-weight: 300;
     font-style: italic;
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--fg);
+    margin: 0 0 0.1em;
+  }
+
+  .closing-q--dim {
+    color: var(--fg2);
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    margin-bottom: 2.5rem;
   }
 
   .closing-btn {
     display: inline-flex;
     align-items: center;
-    padding: 0.7rem 1.75rem;
-    border-radius: var(--radius-pill);
-    background: var(--text-main);
-    color: var(--surface);
-    font-size: 0.88rem;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    border: 1px solid var(--fg3);
+    border-radius: 2px;
+    font-size: 0.78rem;
     font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--fg);
     text-decoration: none;
-    transition: opacity 200ms ease, transform 200ms ease;
+    transition: background 200ms ease, border-color 200ms ease, gap 200ms ease;
   }
-  .closing-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+  .closing-btn:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: var(--fg2);
+    gap: 0.75rem;
+  }
 </style>
