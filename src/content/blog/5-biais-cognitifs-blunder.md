@@ -14,14 +14,6 @@ seoDescription: "Les 5 biais cognitifs les plus fréquents qui provoquent des bl
 
 Tu as tout calculé  -  enfin, tu le croyais. Puis le blunder : « comment j’ai pu rater ça ? » Rarement par manque de temps au calculateur ; presque toujours parce que **le cerveau a tranché avec un biais**, pas avec une erreur de variante. La science cognitive a cartographié ces dérives ; cinq d’entre elles collent particulièrement à l’échiquier.
 
-**Plan :** les cinq biais (Einstellung, confirmation, ancrage, surconfiance, disponibilité) → méta-biais « angle mort » → sources.
-
-> **L'essentiel en 4 points :**
-> - Les biais cognitifs sont des déviations systématiques du raisonnement rationnel, documentées par la recherche en psychologie
-> - Ils ne sont pas des signes de bêtise : ils affectent tout le monde, y compris les experts
-> - Aux échecs, ils se manifestent de façon identifiable et prévisible
-> - La première étape pour les contrer est de les reconnaître en temps réel
-
 ## Biais n°1 : l'effet Einstellung (le problème de la première idée)
 
 L'[effet Einstellung](https://fr.wikipedia.org/wiki/Effet_Einstellung) est probablement le biais cognitif le plus étudié aux échecs. Il désigne la tendance à s'accrocher à la première solution qui vient à l'esprit, même quand une meilleure solution existe.
@@ -97,6 +89,13 @@ L'entraînement de la pensée échiquéenne n'est pas seulement l'entraînement 
 **Après lecture :** choisis **un** biais qui t’a coûté une partie récente ; pendant les trois prochaines sessions, pose la **même question de contrôle** avant chaque coup important (ex. « quelle autre idée j’écarte ? » pour l’Einstellung).
 
 ---
+
+## À retenir
+
+- Les biais cognitifs sont des déviations systématiques du raisonnement rationnel, documentées par la recherche en psychologie
+- Ils ne sont pas des signes de bêtise : ils affectent tout le monde, y compris les experts
+- Aux échecs, ils se manifestent de façon identifiable et prévisible
+- La première étape pour les contrer est de les reconnaître en temps réel
 
 ### Sources et références
 

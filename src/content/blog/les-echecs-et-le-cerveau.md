@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Les échecs et le cerveau : ce que la science révèle vraiment"
 excerpt: "Un grand maître ? Pas un génie né, un cerveau entraîné. IRM structurelle, connectivité fonctionnelle, chronnectome, fonctions exécutives : voici ce que la recherche en neurosciences mesure vraiment sur le cerveau des joueurs d'échecs."
 publishDate: "2026-04-03"
@@ -45,15 +45,6 @@ faq:
 Ce n'est pas un cerveau exceptionnel qui permet de jouer brillamment aux échecs. C'est la pratique acharnée des échecs qui fabrique un cerveau d'exception. L'image du grand maître né avec un don divin est exactement à l'envers.
 
 Ton cerveau n'est pas une machine figée à la naissance : c'est une pâte à modeler qui se rebranche, se répare et s'optimise en fonction des défis que tu lui lances. Après ça, tu ne regarderas plus ta fatigue post-partie de la même façon.
-
-**Plan :** chunking et mémoire des maîtres → imagerie (IRMf, structure, réseaux, chronnectome) → fonctions exécutives et limites du transfert → vieillissement → tableau et références avec DOI.
-
-> **L'essentiel en 5 points :**
-> - Les grands maîtres n'ont pas un QI supérieur : ils ont une bibliothèque de **50 000 à 300 000** "chunks" mémorisés (Gobet & Simon, 1998)
-> - La pratique des échecs déplace le travail cognitif vers la reconnaissance visuelle rapide, mesurable à l'IRMf dès 2003 (Atherton, *Cognitive Brain Research*, 123 citations)
-> - Des modifications structurelles du cortex (densité, gyrification, épaisseur) sont documentées en IRM chez **29 experts vs 29 novices** (Trevisan 2022, *Brain Sciences*)
-> - Le cerveau des joueurs professionnels est **fonctionnellement plus fluide** : ils occupent davantage de méta-états distincts que les débutants (*p* = 0,043, Premi 2020, *Scientific Reports*)
-> - Jouer aux échecs entraîne des **fonctions exécutives spécifiques** ; le transfert vers des compétences non échiquéennes est faible selon la méta-analyse de Sala & Gobet (2017, 259 citations)
 
 ## L'illusion de l'intelligence innée : ce n'est pas ce que tu crois
 
@@ -250,3 +241,11 @@ Non. Les études sur l'activation cérébrale montrent que le jeu lent mobilise 
 15. Verghese J., Lipton R. B., Katz M. J. *et al.* (2003). *Leisure Activities and the Risk of Dementia in the Elderly.* **New England Journal of Medicine**, 348(25), 2508-2516. DOI [10.1056/NEJMoa022252](https://doi.org/10.1056/NEJMoa022252).
 
 **Avertissement** : cet article vulgarise des travaux de recherche ; il ne remplace pas une consultation médicale ou neurologique.
+
+## À retenir
+
+- Les grands maîtres n'ont pas un QI supérieur : ils ont une bibliothèque de **50 000 à 300 000** "chunks" mémorisés (Gobet & Simon, 1998)
+- La pratique des échecs déplace le travail cognitif vers la reconnaissance visuelle rapide, mesurable à l'IRMf dès 2003 (Atherton, *Cognitive Brain Research*, 123 citations)
+- Des modifications structurelles du cortex (densité, gyrification, épaisseur) sont documentées en IRM chez **29 experts vs 29 novices** (Trevisan 2022, *Brain Sciences*)
+- Le cerveau des joueurs professionnels est **fonctionnellement plus fluide** : ils occupent davantage de méta-états distincts que les débutants (*p* = 0,043, Premi 2020, *Scientific Reports*)
+- Jouer aux échecs entraîne des **fonctions exécutives spécifiques** ; le transfert vers des compétences non échiquéennes est faible selon la méta-analyse de Sala & Gobet (2017, 259 citations)

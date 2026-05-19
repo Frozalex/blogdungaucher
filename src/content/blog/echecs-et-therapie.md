@@ -43,15 +43,6 @@ En 1795, le médecin [Philippe Pinel](https://fr.wikipedia.org/wiki/Philippe_Pin
 
 L'intuition est ancienne. Mais qu'est-ce que la recherche contemporaine dit réellement sur les mécanismes et les effets mesurables ?
 
-**Plan :** panorama des usages thérapeutiques → les mécanismes psychologiques plausibles → les données sur l'anxiété et la dépression → les programmes de prison → les limites et précautions → le futur de la thérapie par les échecs.
-
-> **L'essentiel en 5 points :**
-> - Les échecs réduisent les symptômes d'**anxiété** chez les enfants de manière significative dans des études contrôlées (Marín et al., 2017)
-> - Le mécanisme principal : **l'absorption cognitive** interrompt les ruminations et pensées intrusives
-> - Les programmes en **milieu carcéral** montrent des réductions d'incidents disciplinaires de 20-30% (programme UK)
-> - L'échiquier offre un **espace relationnel structuré**: précieux pour les profils avec difficultés relationnelles (dépression, PTSD, TSA)
-> - Les données sur la **dépression et le PTSD** sont prometteuses mais encore insuffisamment documentées par des essais rigoureux
-
 ## Une histoire longue comme la psychiatrie
 
 L'utilisation des échecs dans les soins psychiatriques est aussi vieille que la psychiatrie elle-même. Les asiles du 18e siècle les utilisaient pour "occuper utilement" les patients et prévenir l'oisiveté : considérée comme aggravante pour la santé mentale.
@@ -155,3 +146,11 @@ En attendant, la pratique en avance sur la recherche, comme c'est souvent le cas
 - Pinel, P. (1801). *Traité médico-philosophique sur l'aliénation mentale*. Brosson.
 - Ruiz, J. D. (2011). Chess as an educational tool for violent youth offenders in Spanish prisons. *Physical Culture and Sport. Studies and Research*, 52, 71–79.
 - Gobet, F., & Campitelli, G. (2002). Intelligence and chess. In J. Retschitzki & R. Haddad-Zubel (Eds.), *Step by Step : Proceedings of the 4th Colloquium on Board Games in Education* (pp. 103–112).
+
+## À retenir
+
+- Les échecs réduisent les symptômes d'**anxiété** chez les enfants de manière significative dans des études contrôlées (Marín et al., 2017)
+- Le mécanisme principal : **l'absorption cognitive** interrompt les ruminations et pensées intrusives
+- Les programmes en **milieu carcéral** montrent des réductions d'incidents disciplinaires de 20-30% (programme UK)
+- L'échiquier offre un **espace relationnel structuré**: précieux pour les profils avec difficultés relationnelles (dépression, PTSD, TSA)
+- Les données sur la **dépression et le PTSD** sont prometteuses mais encore insuffisamment documentées par des essais rigoureux

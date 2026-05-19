@@ -45,15 +45,6 @@ Mais la pendule révèle aussi quelque chose de plus profond que la rapidité de
 
 Comprendre la gestion du temps aux échecs, c'est comprendre la psychologie de la décision, et vice versa.
 
-**Plan :** les données sur les erreurs liées au temps → psychologie de la décision sous contrainte → les biais qui sabotent l'allocation de temps → heuristiques pratiques → la pendule adverse comme source d'information.
-
-> **L'essentiel en 5 points :**
-> - Le **zeitnot** cause environ 30% des erreurs décisives en tournoi (Guid & Bratko, 2006)
-> - La **paralysie par l'analyse** est réelle aux échecs : au-delà d'un seuil de calcul, la qualité ne s'améliore plus
-> - Le **biais d'ancrage** pousse à sur-évaluer le premier coup candidat trouvé : chercher une réfutation active est plus efficace que chercher une confirmation
-> - La **cadence régulière** (éviter les marathons de 40 minutes suivis de coups rapides) réduit significativement les erreurs de fin de partie
-> - La **pendule de l'adversaire** est une source d'information stratégique souvent ignorée
-
 ## Ce que les données disent sur le temps et les erreurs
 
 [Matej Guid](https://www.fri.uni-lj.si/en/about-faculty/employees/matej-guid) et [Ivan Bratko](https://www.fri.uni-lj.si/en/about-faculty/employees/ivan-bratko) (Université de Ljubljana) ont réalisé en 2006 une analyse de grande envergure des parties des champions du monde depuis Steinitz jusqu'à Kramnik, en utilisant Crafty (un moteur de l'époque) pour évaluer la qualité des coups.
@@ -162,3 +153,11 @@ Progresser en gestion du temps, c'est donc aussi progresser en connaissance de s
 - Charness, N., Reingold, E. M., Pomplun, M., & Stampe, D. M. (2001). The perceptual aspect of skilled performance in chess. *Memory & Cognition*, 29(8), 1146–1152.
 - Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty : Heuristics and biases. *Science*, 185(4157), 1124–1131.
 - Kotov, A. (1971). *Think Like a Grandmaster*. Batsford.
+
+## À retenir
+
+- Le **zeitnot** cause environ 30% des erreurs décisives en tournoi (Guid & Bratko, 2006)
+- La **paralysie par l'analyse** est réelle aux échecs : au-delà d'un seuil de calcul, la qualité ne s'améliore plus
+- Le **biais d'ancrage** pousse à sur-évaluer le premier coup candidat trouvé : chercher une réfutation active est plus efficace que chercher une confirmation
+- La **cadence régulière** (éviter les marathons de 40 minutes suivis de coups rapides) réduit significativement les erreurs de fin de partie
+- La **pendule de l'adversaire** est une source d'information stratégique souvent ignorée

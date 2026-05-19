@@ -45,15 +45,6 @@ Cette question revient régulièrement dans les clubs et les forums de parents. 
 
 L'intuition n'est pas fausse. Mais elle simplifie une réalité plus riche, et plus nuancée.
 
-**Plan :** définition du HPI et dyssynchronie → pourquoi les échecs correspondent aux besoins HPI → le perfectionnisme, risque principal → progresser malgré le potentiel → comment accompagner un enfant HPI aux échecs.
-
-> **L'essentiel en 5 points :**
-> - Les HPI sont **surreprésentés dans les clubs d'échecs**, sans que la causalité soit claire (sélection naturelle vers les activités stimulantes)
-> - L'échiquier répond à des besoins HPI réels : **stimulation cognitive intense, règles formelles, progression sans plafond**
-> - Le **perfectionnisme** des HPI peut transformer les défaites aux échecs en souffrance disproportionnée : un accompagnement actif est nécessaire
-> - Le **QI ne garantit pas la performance** : la pratique délibérée explique davantage de variance que le potentiel brut (Hambrick et al., 2014)
-> - Les échecs ne sont **pas exclusivement réservés aux HPI**: ils sont simplement bien adaptés à leurs besoins spécifiques, parmi d'autres activités possibles
-
 ## Qu'est-ce qu'un enfant HPI ?
 
 Le terme **HPI (Haut Potentiel Intellectuel)**, parfois appelé "surdoué" ou "précoce", désigne des personnes dont le QI dépasse un seuil conventionnel : le plus souvent **QI > 130**, soit les 2,3% les plus hauts de la distribution (2 déviations standard au-dessus de la moyenne de 100).
@@ -158,3 +149,11 @@ Quelques recommandations pratiques pour les parents et entraîneurs :
 - Gross, M. U. M. (2004). *Exceptionally Gifted Children* (2nd ed.). RoutledgeFalmer.
 - Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. *Psychological Review*, 100(3), 363–406.
 - Piechowski, M. M. (2006). Mellow out, they say. If only I could : Intensities and sensitivities of the young and bright. Yunasa Books.
+
+## À retenir
+
+- Les HPI sont **surreprésentés dans les clubs d'échecs**, sans que la causalité soit claire (sélection naturelle vers les activités stimulantes)
+- L'échiquier répond à des besoins HPI réels : **stimulation cognitive intense, règles formelles, progression sans plafond**
+- Le **perfectionnisme** des HPI peut transformer les défaites aux échecs en souffrance disproportionnée : un accompagnement actif est nécessaire
+- Le **QI ne garantit pas la performance** : la pratique délibérée explique davantage de variance que le potentiel brut (Hambrick et al., 2014)
+- Les échecs ne sont **pas exclusivement réservés aux HPI**: ils sont simplement bien adaptés à leurs besoins spécifiques, parmi d'autres activités possibles

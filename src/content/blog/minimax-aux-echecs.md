@@ -14,14 +14,6 @@ seoDescription: "Comment fonctionne l'algorithme minimax aux échecs. Des premi�
 
 Il y a quelque chose d'étrange dans le fait que la stratégie aux échecs, ce jeu millénaire d'intuition et d'art, puisse être réduite à un algorithme de quelques lignes. L'algorithme minimax fait exactement cela : il formalise le coeur du raisonnement stratégique dans un jeu à somme nulle en une récurrence mathématique élégante. Et ce n'est pas seulement l'âme des moteurs d'échecs modernes : c'est aussi la description formelle de ce que tu fais dans ta tête quand tu calcules.
 
-**Plan :** intuition minimax → alpha-bêta → moteurs classiques (Deep Blue, Stockfish) → AlphaZero / MCTS → minimax « dans ta tête » → sources.
-
-> **L'essentiel en 4 points :**
-> - Minimax est l'algorithme qui explore l'arbre des parties en alternant maximisation (Blanc) et minimisation (Noir)
-> - L'élagage alpha-bêta réduit dramatiquement le nombre de noeuds à explorer sans changer le résultat
-> - Les moteurs modernes ajoutent des fonctions d'évaluation heuristiques, des tables de transposition et des techniques de recherche avancées
-> - AlphaZero a montré qu'une approche basée sur l'apprentissage profond peut surpasser minimax pur pour les jeux complexes
-
 ## L'intuition derrière minimax
 
 Imagine que tu joues les Blancs et que tu veux choisir le meilleur coup possible. Comment le définir ? Le meilleur coup est celui qui, en supposant que ton adversaire joue aussi parfaitement, te donne le meilleur résultat final.
@@ -119,6 +111,13 @@ Entraîner ces deux aspects est au coeur du développement d'un joueur : enrichi
 **Après lecture :** sur un problème tactique, impose une **profondeur fixe** (ex. trois demi-coups) avant de regarder la solution : tu calibres ton minimax interne.
 
 ---
+
+## À retenir
+
+- Minimax est l'algorithme qui explore l'arbre des parties en alternant maximisation (Blanc) et minimisation (Noir)
+- L'élagage alpha-bêta réduit dramatiquement le nombre de noeuds à explorer sans changer le résultat
+- Les moteurs modernes ajoutent des fonctions d'évaluation heuristiques, des tables de transposition et des techniques de recherche avancées
+- AlphaZero a montré qu'une approche basée sur l'apprentissage profond peut surpasser minimax pur pour les jeux complexes
 
 ### Sources et références
 

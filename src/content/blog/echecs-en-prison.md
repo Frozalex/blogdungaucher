@@ -32,14 +32,6 @@ Ce qui se passe dans cette pièce n'est pas symbolique. Ce n'est pas de la récr
 
 Un détenu qui apprend à voir trois coups à l'avance sur un échiquier apprend aussi, peut-être, quelque chose sur les conséquences de ses décisions hors de la prison. Cette hypothèse n'est plus seulement intuitive. Elle a une base dans la criminologie moderne.
 
-**Plan :** récidive et déficits cognitifs → pourquoi l’échiquier cible ces axes → programmes documentés et limites → FAQ → conclusion → sources.
-
-> **L'essentiel en 4 points :**
-> - La criminologie contemporaine identifie trois déficits cognitifs liés à la récidive : pensée court-termiste, impulsivité, faible théorie de l'esprit (Ross & Fabiano, 1985)
-> - Ces trois déficits sont précisément les trois axes qu'une partie d'échecs exige de travailler
-> - Les programmes documentés (Change Through Chess, San Quentin) montrent des effets observés sur les comportements en établissement, mais les études randomisées restent rares
-> - La limite principale de tous ces programmes : le biais de sélection, les participants sont déjà motivés à changer
-
 ## Pourquoi la récidive commence dans la tête
 
 La criminologie contemporaine a progressivement déplacé son regard. Derrière les facteurs sociaux bien documentés, pauvreté, exclusion, trajectoires familiales fracturées, un profil cognitif spécifique apparaît dans les études sur la récidive.
@@ -163,6 +155,13 @@ L'échiquier enseigne quelque chose que peu d'activités enseignent aussi claire
 **Après lecture :** si tu pilotes ou soutiens un atelier, trace **un** objectif mesurable en établissement (respect du temps, formulation du coup joué) pendant six séances avant d’évaluer quoi que ce soit sur la récidive.
 
 ---
+
+## À retenir
+
+- La criminologie contemporaine identifie trois déficits cognitifs liés à la récidive : pensée court-termiste, impulsivité, faible théorie de l'esprit (Ross & Fabiano, 1985)
+- Ces trois déficits sont précisément les trois axes qu'une partie d'échecs exige de travailler
+- Les programmes documentés (Change Through Chess, San Quentin) montrent des effets observés sur les comportements en établissement, mais les études randomisées restent rares
+- La limite principale de tous ces programmes : le biais de sélection, les participants sont déjà motivés à changer
 
 ### Sources et références
 

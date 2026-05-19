@@ -45,15 +45,6 @@ Après, tu regardes la pendule et tu réalises que 45 minutes ont passé. Tu ne 
 
 C'est le flow.
 
-**Plan :** définition scientifique du flow → les 8 conditions de Csikszentmihalyi → pourquoi les échecs sont un terrain idéal → le flow et le niveau de jeu → comment créer les conditions → quand le flow devient une addiction.
-
-> **L'essentiel en 5 points :**
-> - Le **flow** est un état de conscience optimal décrit par Csikszentmihalyi (1990) comme l'absorption totale dans une activité : les échecs étaient dans ses études originales
-> - La condition centrale est l'**équilibre défi/compétence** : ni trop facile, ni trop difficile : la zone de croissance maximale
-> - Le flow produit une **déformation du temps**, une absence de conscience de soi et un sentiment d'efficacité élevé : mesurables par questionnaire (ESM, Flow Short Scale)
-> - Chaque interruption coûte **10-15 minutes** de reconcentration : la protection de l'environnement de jeu est une décision stratégique
-> - Le flow est **cultivable** : les conditions peuvent être créées délibérément, même si l'état lui-même ne se commande pas
-
 ## Csikszentmihalyi et les origines de la théorie
 
 [Mihaly Csikszentmihalyi](https://fr.wikipedia.org/wiki/Mihaly_Csikszentmihalyi) (prononcé "tchik-sent-mi-hai") était un psychologue hongrois-américain qui, dans les années 1970, a commencé à étudier une question apparemment simple : qu'est-ce qui rend une activité intrinsèquement satisfaisante ? Pourquoi certaines personnes peignent pendant des heures en oubliant de manger ? Pourquoi les chirurgiens disent que les opérations difficiles sont souvent les plus satisfaisantes ? Pourquoi les joueurs d'échecs en tournoi perdent toute notion du temps ?
@@ -161,3 +152,11 @@ La régulation passe par la conscience : noter le temps consacré aux échecs, i
 - Mark, G., Gudith, D., & Klocke, U. (2008). The cost of interrupted work : More speed and stress. *Proceedings of CHI 2008*, ACM.
 - Nakamura, J., & Csikszentmihalyi, M. (2002). The concept of flow. In *Handbook of Positive Psychology* (pp. 89–105). Oxford University Press.
 - Swann, C., Keegan, R. J., Piggott, D., & Crust, L. (2012). A systematic review of the experience, occurrence, and controllability of flow states in elite sport. *Psychology of Sport and Exercise*, 13(6), 807–819.
+
+## À retenir
+
+- Le **flow** est un état de conscience optimal décrit par Csikszentmihalyi (1990) comme l'absorption totale dans une activité : les échecs étaient dans ses études originales
+- La condition centrale est l'**équilibre défi/compétence** : ni trop facile, ni trop difficile : la zone de croissance maximale
+- Le flow produit une **déformation du temps**, une absence de conscience de soi et un sentiment d'efficacité élevé : mesurables par questionnaire (ESM, Flow Short Scale)
+- Chaque interruption coûte **10-15 minutes** de reconcentration : la protection de l'environnement de jeu est une décision stratégique
+- Le flow est **cultivable** : les conditions peuvent être créées délibérément, même si l'état lui-même ne se commande pas

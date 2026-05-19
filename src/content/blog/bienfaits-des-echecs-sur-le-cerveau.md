@@ -14,14 +14,6 @@ seoDescription: "Mémoire de travail, plasticité cérébrale, protection contre
 
 Les échecs font-ils vraiment quelque chose au cerveau ? La réponse tient entre deux caricatures : « ça rend intelligent » et « c'est du marketing ». Les données publiées permettent déjà de trancher par niveaux de preuve.
 
-**Plan :** activité cérébrale en partie → mémoire et plasticité → concentration → vieillissement → limites du transfert → attentes réalistes → sources.
-
-> **L'essentiel en 4 points :**
-> - Les échecs sollicitent et entraînent spécifiquement la mémoire de travail, la reconnaissance de patterns et la planification prévisionnelle
-> - La pratique régulière est associée à un ralentissement mesuré du déclin cognitif lié à l'âge
-> - Les bénéfices sont réels mais spécifiques : les échecs t'entraînent surtout à résoudre des problèmes qui ressemblent aux échecs
-> - Le transfert vers d'autres domaines cognitifs existe mais est modéré, principalement par la métacognition et les habitudes mentales
-
 ## Ce que le cerveau fait pendant une partie d'échecs
 
 Avant de parler des bienfaits, il faut comprendre ce que ton cerveau fait réellement pendant que tu joues.
@@ -101,6 +93,13 @@ Les échecs ne sont pas un médicament. Ils sont une salle de sport pour des fon
 **Après lecture :** pour les **trois prochaines semaines**, remplace une session de bullet par **30 minutes** de problèmes ou d’analyse active ; c’est le format le plus cohérent avec les études citées.
 
 ---
+
+## À retenir
+
+- Les échecs sollicitent et entraînent spécifiquement la mémoire de travail, la reconnaissance de patterns et la planification prévisionnelle
+- La pratique régulière est associée à un ralentissement mesuré du déclin cognitif lié à l'âge
+- Les bénéfices sont réels mais spécifiques : les échecs t'entraînent surtout à résoudre des problèmes qui ressemblent aux échecs
+- Le transfert vers d'autres domaines cognitifs existe mais est modéré, principalement par la métacognition et les habitudes mentales
 
 ### Sources et références
 

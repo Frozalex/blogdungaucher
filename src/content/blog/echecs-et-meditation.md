@@ -43,15 +43,6 @@ L'idée que méditer améliore les performances cognitives est l'une de celles q
 
 Pour un joueur d'échecs, c'est une distinction qui peut valoir des dizaines de points Elo.
 
-**Plan :** ce que la méditation entraîne vraiment → l'évidence neuroscientifique (Lazar, Davidson, Brewer) → la mind wandering et son coût aux échecs → comment intégrer une pratique → ce qu'elle ne fera pas.
-
-> **L'essentiel en 5 points :**
-> - La méditation modifie le **Default Mode Network** (-22% d'activation) → moins de rumination, plus de présence
-> - 8 semaines à 20 min/jour produisent des **changements cérébraux mesurables** en IRM structurelle (Hölzel 2011)
-> - La pleine conscience améliore la **régulation émotionnelle** post-erreur : précieux après un blunder
-> - **Une seule séance** de 10 min avant une tâche améliore l'attention (effet d'état): pertinent pour la préparation pré-partie
-> - La méditation **ne remplace pas** l'entraînement échiquéen : elle amplifie son rendement en supprimant les freins mentaux
-
 ## Ce que la méditation entraîne vraiment
 
 Avant d'examiner les effets sur les échecs, il faut comprendre ce que la méditation entraîne. Le mot couvre plusieurs pratiques distinctes, qui mobilisent des circuits cérébraux différents :
@@ -163,3 +154,11 @@ C'est l'une des rares interventions où le rapport coût-bénéfice est extrême
 - Goyal, M., et al. (2014). Meditation programs for psychological stress and well-being : A systematic review and meta-analysis. *JAMA Internal Medicine*, 174(3), 357–368.
 - Sedlmeier, P., et al. (2012). The psychological effects of meditation : A meta-analysis. *Psychological Bulletin*, 138(6), 1139–1171.
 - Norris, C. J., Creem, D., Hendler, R., & Kober, H. (2018). Brief mindfulness meditation improves attention in novices. *Frontiers in Human Neuroscience*, 12, 315.
+
+## À retenir
+
+- La méditation modifie le **Default Mode Network** (-22% d'activation) → moins de rumination, plus de présence
+- 8 semaines à 20 min/jour produisent des **changements cérébraux mesurables** en IRM structurelle (Hölzel 2011)
+- La pleine conscience améliore la **régulation émotionnelle** post-erreur : précieux après un blunder
+- **Une seule séance** de 10 min avant une tâche améliore l'attention (effet d'état): pertinent pour la préparation pré-partie
+- La méditation **ne remplace pas** l'entraînement échiquéen : elle amplifie son rendement en supprimant les freins mentaux

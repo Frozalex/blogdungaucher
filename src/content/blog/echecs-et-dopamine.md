@@ -43,15 +43,6 @@ Ton cerveau ne fait pas la distinction entre une bonne combinaison aux échecs e
 
 Comprendre la neurochimie des échecs n'est pas qu'une curiosité intellectuelle. C'est comprendre pourquoi certaines pratiques motivent sur le long terme et d'autres épuisent, pourquoi le blitz en ligne peut devenir compulsif quand les parties longues restent saines, et comment structurer son entraînement en accord avec la biologie du cerveau.
 
-**Plan :** le circuit de récompense mésolimbique → dopamine et anticipation vs récompense → les moments clés de libération dopaminergique aux échecs → comparaison avec d'autres jeux → blitz et risque compulsif → utiliser la neurochimie pour progresser.
-
-> **L'essentiel en 5 points :**
-> - La dopamine code l'**anticipation et l'erreur de prédiction**, pas le plaisir lui-même : c'est l'incertitude qui déclenche la libération
-> - L'échiquier active le **circuit mésolimbique** (ATV → noyau accumbens) de façon similaire aux autres jeux engageants, avec un profil plus complexe et durable
-> - Le **"moment eureka"** de la combinaison trouvée produit un pic dopaminergique mesurable en IRMf
-> - Les **blunders inattendus** de l'adversaire génèrent plus de dopamine que les coups prévisibles : l'inattendu prime
-> - Le **blitz en ligne** cumule les facteurs d'engagement maximal : feedback rapide, Elo visible, variabilité, disponibilité 24h/24
-
 ## Le circuit de récompense : une introduction
 
 Le **circuit de récompense mésolimbique** est l'un des circuits neuronaux les plus conservés dans l'évolution. Il relie l'**aire tegmentale ventrale** (ATV), dans le mésencéphale, au **noyau accumbens**, dans le striatum ventral, avec des projections vers le cortex préfrontal.
@@ -146,3 +137,11 @@ Comprendre ces mécanismes permet de structurer l'entraînement de façon plus i
 - Yerkes, R. M., & Dodson, J. D. (1908). The relation of strength of stimulus to rapidity of habit-formation. *Journal of Comparative Neurology and Psychology*, 18(5), 459–482.
 - Sapolsky, R. M. (2017). *Behave : The Biology of Humans at Our Best and Worst*. Penguin Press.
 - Kuss, D. J., & Griffiths, M. D. (2012). Internet gaming addiction : A systematic review of empirical research. *International Journal of Mental Health and Addiction*, 10(2), 278–296.
+
+## À retenir
+
+- La dopamine code l'**anticipation et l'erreur de prédiction**, pas le plaisir lui-même : c'est l'incertitude qui déclenche la libération
+- L'échiquier active le **circuit mésolimbique** (ATV → noyau accumbens) de façon similaire aux autres jeux engageants, avec un profil plus complexe et durable
+- Le **"moment eureka"** de la combinaison trouvée produit un pic dopaminergique mesurable en IRMf
+- Les **blunders inattendus** de l'adversaire génèrent plus de dopamine que les coups prévisibles : l'inattendu prime
+- Le **blitz en ligne** cumule les facteurs d'engagement maximal : feedback rapide, Elo visible, variabilité, disponibilité 24h/24

@@ -14,14 +14,6 @@ seoDescription: "Ernst Zermelo a prouvé en 1913 que les échecs ont un résulta
 
 En 1913, lors du cinquième Congrès International des Mathématiciens à Cambridge, le mathématicien allemand [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) a présenté un résultat qui allait changer la façon dont les mathématiciens, et plus tard les informaticiens, pensent aux jeux de stratégie. Son théorème est court. Sa démonstration est élégante. Et ses implications aux échecs sont à la fois rassurantes et vertigineuses.
 
-**Plan :** théorème et paradoxe → résolutions partielles (dames, morpion) → ce que ça change pour le joueur humain → sources.
-
-> **L'essentiel en 4 points :**
-> - Zermelo prouve que dans tout jeu fini à deux joueurs à information parfaite, le résultat sous jeu parfait est déterminé à l'avance
-> - Pour les échecs, cela signifie que soit Blanc gagne, soit Noir gagne, soit la partie est nulle sous jeu parfait des deux côtés
-> - Personne ne sait encore laquelle de ces trois options est vraie
-> - Ce paradoxe révèle que la "perfection" aux échecs est un idéal mathématiquement défini mais physiquement inaccessible
-
 ## Ernst Zermelo et la théorie des ensembles
 
 Avant de parler des échecs, il faut comprendre qui était Zermelo. Il est principalement connu pour ses contributions fondamentales à la théorie des ensembles, en particulier l'[axiome du choix](https://fr.wikipedia.org/wiki/Axiome_du_choix) et les [axiomes de Zermelo-Fraenkel](https://fr.wikipedia.org/wiki/Axiomes_de_Zermelo-Fraenkel) qui constituent encore aujourd'hui les fondements standard des mathématiques.
@@ -109,6 +101,13 @@ Le génie de Zermelo n'est pas d'avoir résolu les échecs. C'est d'avoir prouv�
 **Après lecture :** garde en tête une **phrase d’humilité mathématique** en partie longue : tu joues des approximations, pas la vérité de tablebase ; ça peut lever du perfectionnisme au mauvais moment.
 
 ---
+
+## À retenir
+
+- Zermelo prouve que dans tout jeu fini à deux joueurs à information parfaite, le résultat sous jeu parfait est déterminé à l'avance
+- Pour les échecs, cela signifie que soit Blanc gagne, soit Noir gagne, soit la partie est nulle sous jeu parfait des deux côtés
+- Personne ne sait encore laquelle de ces trois options est vraie
+- Ce paradoxe révèle que la "perfection" aux échecs est un idéal mathématiquement défini mais physiquement inaccessible
 
 ### Sources et références
 

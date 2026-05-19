@@ -47,15 +47,6 @@ La concentration est une compétence cognitive, avec des mécanismes neuraux ide
 
 Les échecs sont l'un des meilleurs terrains d'entraînement de l'attention soutenue qui existent. Mais seulement si tu comprends ce que tu entraînes, et comment.
 
-**Plan :** les différents types d'attention → la neuroscience de la concentration → l'attention soutenue et ses limites naturelles → la "mind wandering" et comment la réduire → entraînement de la concentration → les pièges qui sabotent l'attention.
-
-> **L'essentiel en 5 points :**
-> - L'attention soutenue se **dégrade naturellement** après 90-120 minutes d'effort intense : les parties longues nécessitent une gestion active
-> - Les joueurs experts activent plus efficacement le **réseau de contrôle de l'attention** (cortex préfrontal + pariétal) même hors de l'échiquier
-> - L'esprit vagabonde **46,9% du temps de veille** en moyenne (Killingsworth & Gilbert, 2010): aux échecs, réduire ce pourcentage est une compétence entraînable
-> - Les **micro-pauses** (30-60 secondes, regard au loin) pendant les parties longues ralentissent la dégradation sans perturber la continuité
-> - L'entraînement en **blocs de 25-50 minutes** (technique Pomodoro adaptée) développe l'attention soutenue plus efficacement que les sessions longues ininterrompues
-
 ## Les types d'attention : une carte pour naviguer
 
 La neuroscience distingue plusieurs formes d'attention, chacune pertinente à différents moments d'une partie d'échecs :
@@ -157,3 +148,11 @@ L'objectif n'est pas d'éliminer les pauses : c'est d'augmenter progressivement 
 - Mackworth, N. H. (1948). The breakdown of vigilance during prolonged visual search. *Quarterly Journal of Experimental Psychology*, 1(1), 6–21.
 - Atherton, M., Zhuang, J., Bart, W. M., Hu, X., & He, S. (2003). A functional MRI study of high-level cognition. *Cognitive Brain Research*, 16(1), 26–31.
 - Baumeister, R. F., Bratslavsky, E., Muraven, M., & Tice, D. M. (1998). Ego depletion : Is the active self a limited resource? *Journal of Personality and Social Psychology*, 74(5), 1252–1265.
+
+## À retenir
+
+- L'attention soutenue se **dégrade naturellement** après 90-120 minutes d'effort intense : les parties longues nécessitent une gestion active
+- Les joueurs experts activent plus efficacement le **réseau de contrôle de l'attention** (cortex préfrontal + pariétal) même hors de l'échiquier
+- L'esprit vagabonde **46,9% du temps de veille** en moyenne (Killingsworth & Gilbert, 2010): aux échecs, réduire ce pourcentage est une compétence entraînable
+- Les **micro-pauses** (30-60 secondes, regard au loin) pendant les parties longues ralentissent la dégradation sans perturber la continuité
+- L'entraînement en **blocs de 25-50 minutes** (technique Pomodoro adaptée) développe l'attention soutenue plus efficacement que les sessions longues ininterrompues

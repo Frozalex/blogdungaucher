@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même"
 excerpt: >-
   L'arbre des coups explose, le nombre de Shannon donne le vertige, et pourtant
@@ -33,8 +33,6 @@ Alors quoi ? Peut-on vraiment tout ramener à des formules ? Ce jeu est-il un pr
 ![Schéma d'un plateau 8×8, jeu d'échecs et configurations discrètes](/images/echecs-ia-01-plateau.svg)
 
 La vérité est plus intéressante que le mythe : aucune liste finie de coups ne "ferme" le jeu comme un énoncé formel clos et pourtant, des programmes battent régulièrement les meilleurs joueurs humains parce qu'ils ne cherchent pas la perfection absolue, seulement une décision assez bonne face à un adversaire réel.
-
-**Plan :** graphe d’états et explosion combinatoire → heuristiques et élagage → moteurs classiques → apprentissage / NNUE → leçon pour le joueur → pistes sur le blog.
 
 ## L'échiquier vu de l'intérieur : un graphe d'états, pas un chaos
 

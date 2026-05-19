@@ -20,15 +20,7 @@ Avant même de poser la main sur le premier pion, quelque chose s'est déjà jou
 
 Les échecs ont ceci de particulier qu'ils mettent ton intelligence à nu d'une façon que peu de disciplines rivalisent. Chaque erreur est irréfutable, inscrite dans le registre de la partie. Il n'y a pas de chance à invoquer, pas de coéquipier sur qui rejeter la faute, pas de mauvaise météo ce jour-là. L'échiquier renvoie un miroir impitoyable. Et c'est précisément pour cette raison que comprendre sa propre psychologie devient, à un certain niveau, aussi important que de connaître les variantes théoriques.
 
-**Plan :** ego et résultat → tilt → flow → équanimité et mental de haut niveau → ce que l'échiquier révèle de toi → FAQ.
-
 L'objectif : une **carte** de tes patterns (ego, tilt, imposteur, zeitnot), pas une liste de conseils génériques, pour que la prochaine partie soit un peu moins naïve que la précédente.
-
-> **L'essentiel en 4 points :**
-> - La frontière entre jouer pour gagner et jouer pour ne pas perdre est psychologiquement abyssale (Kasparov)
-> - Le tilt n'est pas une faiblesse : c'est un signal lisible sur tes patterns émotionnels (Damasio, Dvoretsky)
-> - Le flow (Csikszentmihalyi) émerge quand le défi est à la limite de tes compétences, ni trop facile, ni écrasant
-> - La qualité de ta pensée est la vraie variable de progression, pas le score de la partie
 
 ## Ego et résultat : jouer pour gagner vs jouer pour ne pas perdre
 
@@ -131,6 +123,13 @@ La règle la plus efficace selon les entraîneurs, dont Mark Dvoretsky : arrête
 Le zeitnot active un mécanisme documenté par les psychologues : la paralysie par l'analyse. Le cerveau cherche la réponse parfaite au lieu d'une bonne réponse rapide, consomme du temps, et la panique s'installe en spirale (Kahneman, Système 2 en surchauffe). La solution n'est pas de calculer plus vite : c'est de faire confiance plus tôt à son jugement positionnel accumulé (Système 1).
 
 ---
+
+## À retenir
+
+- La frontière entre jouer pour gagner et jouer pour ne pas perdre est psychologiquement abyssale (Kasparov)
+- Le tilt n'est pas une faiblesse : c'est un signal lisible sur tes patterns émotionnels (Damasio, Dvoretsky)
+- Le flow (Csikszentmihalyi) émerge quand le défi est à la limite de tes compétences, ni trop facile, ni écrasant
+- La qualité de ta pensée est la vraie variable de progression, pas le score de la partie
 
 ### Sources et références
 

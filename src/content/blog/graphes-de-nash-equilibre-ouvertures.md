@@ -14,14 +14,6 @@ seoDescription: "Comment l'équilibre de Nash explique la stabilité des ouvertu
 
 Pourquoi la Défense Sicilienne est-elle jouée à tous les niveaux depuis cent ans ? Pourquoi la Partie Espagnole n'a-t-elle pas été "réfutée" malgré des siècles d'analyse ? Pourquoi certaines variantes théoriques s'effondrent en quelques années tandis que d'autres semblent indestructibles ? La réponse à ces questions se trouve dans un concept mathématique élaboré par [John Nash](https://fr.wikipedia.org/wiki/John_Forbes_Nash) en 1950 : l'équilibre de Nash.
 
-**Plan :** définition de l’équilibre de Nash → ouvertures comme équilibres locaux → réfutations et nouveaux équilibres → progrès au-delà du simple Elo → sources.
-
-> **L'essentiel en 4 points :**
-> - Un équilibre de Nash est une situation où aucun joueur ne peut améliorer son résultat en changeant unilatéralement de stratégie
-> - Les ouvertures considérées "théoriquement égales" sont des équilibres de Nash locaux
-> - Une variante qui donne un avantage réel rompt l'équilibre et force une correction théorique
-> - Les graphes de positions permettent de visualiser ces équilibres comme des attracteurs dans l'espace des parties possibles
-
 ## John Nash et l'équilibre qui porte son nom
 
 [John Forbes Nash Jr.](https://fr.wikipedia.org/wiki/John_Forbes_Nash) a reçu le prix Nobel d'économie en 1994 pour ses contributions à la théorie des jeux non coopératifs. Sa notion d'équilibre, publiée dans un article de deux pages en 1951, est l'une des idées les plus influentes du XXe siècle.
@@ -107,6 +99,13 @@ Les deux approches coexistent dans les échecs de haut niveau. Les positions dé
 **Après lecture :** pour **une** ouverture que tu joues souvent, note si tu cherches surtout le piège ou l’équilibre stable ; ajuste selon le format (must-win vs nulle acceptable).
 
 ---
+
+## À retenir
+
+- Un équilibre de Nash est une situation où aucun joueur ne peut améliorer son résultat en changeant unilatéralement de stratégie
+- Les ouvertures considérées "théoriquement égales" sont des équilibres de Nash locaux
+- Une variante qui donne un avantage réel rompt l'équilibre et force une correction théorique
+- Les graphes de positions permettent de visualiser ces équilibres comme des attracteurs dans l'espace des parties possibles
 
 ### Sources et références
 

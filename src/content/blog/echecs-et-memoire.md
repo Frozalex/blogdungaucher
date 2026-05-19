@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Découvrez le pouvoir des échecs sur votre mémoire"
 excerpt: "Mémoire de travail, chunks, ouvertures, parties oubliées ou gravées : ce que la psychologie cognitive et les neurosciences disent vraiment du lien entre échecs et mémoire, et comment t'entraîner pour que ça compte."
 publishDate: "2026-05-18"
@@ -27,14 +27,6 @@ Anatoli Karpov rejouait de mémoire, sans échiquier, des parties disputées vin
 Et pourtant, si tu lui avais demandé de mémoriser une liste de 30 mots sans rapport entre eux, il aurait fait comme toi : oublié la moitié en moins d'une heure.
 
 Ce paradoxe résume le sujet : **les échecs ne « donnent » pas une mémoire magique**. Ils entraînent des circuits très spécifiques (reconnaissance de motifs sur l'échiquier, planification, inhibition d'impulsions) tout en s'appuyant sur les mêmes limites humaines que partout ailleurs. Cet article relie **mémoire de travail**, **mémoire à long terme**, **pratique** et **ce que la science autorise vraiment à conclure**.
-
-**Plan :** types de mémoire et lien avec les échecs → chunks et études (Chase & Simon, Gobet, de Groot) → pratique et transfert → enfants / seniors → tableau et FAQ → sources.
-
-> **L'essentiel en 4 points :**
-> - Les grands maîtres n'ont pas une mémoire « générale » supérieure : sur des listes de mots ou des positions aléatoires, leur avantage s'effondre (Chase & Simon, 1973).
-> - Sur l'échiquier, ils compressent l'information en **chunks** puis en **templates** (Gobet & Simon, 1996) : la mémoire de travail reste limitée, mais chaque « slot » contient plus de sens.
-> - La qualité du **premier coup envisagé** distingue surtout les experts (de Groot, 1965) : la mémoire à long terme oriente l'attention avant le calcul profond.
-> - Pour progresser, il faut une pratique **réflexive** (analyse, fins de partie, leçons tirées), pas seulement du volume de parties rapides.
 
 ## Introduction : le lien entre les échecs et la mémoire
 
@@ -230,6 +222,13 @@ Tu as déjà eu l'impression de « reconnaître » une position sans pouvoir l'e
 **Après lecture :** cette semaine, **une** partie analysée à froid avec la question « quel était mon **premier** coup envisagé ? », c’est le levier le plus documenté pour caler la mémoire de domaine.
 
 ---
+
+## À retenir
+
+- Les grands maîtres n'ont pas une mémoire « générale » supérieure : sur des listes de mots ou des positions aléatoires, leur avantage s'effondre (Chase & Simon, 1973).
+- Sur l'échiquier, ils compressent l'information en **chunks** puis en **templates** (Gobet & Simon, 1996) : la mémoire de travail reste limitée, mais chaque « slot » contient plus de sens.
+- La qualité du **premier coup envisagé** distingue surtout les experts (de Groot, 1965) : la mémoire à long terme oriente l'attention avant le calcul profond.
+- Pour progresser, il faut une pratique **réflexive** (analyse, fins de partie, leçons tirées), pas seulement du volume de parties rapides.
 
 ### Sources et références
 
