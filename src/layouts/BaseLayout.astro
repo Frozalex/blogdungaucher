@@ -2,7 +2,7 @@
 import "../styles/global.css";
 // KaTeX self-hosté via le bundle Astro : remplace l'ancien <link href="cdn.jsdelivr.net/...katex.min.css"/>.
 // Élimine la dépendance CDN, supprime le risque SRI manquant, et synchronise sur la version
-// installée localement (^0.16.45 dans package.json — la version CDN traînait sur 0.16.11).
+// installée localement (^0.16.45 dans package.json, la version CDN traînait sur 0.16.11).
 import "katex/dist/katex.min.css";
 import { ClientRouter } from "astro:transitions";
 import Navbar from "../components/Navbar.astro";

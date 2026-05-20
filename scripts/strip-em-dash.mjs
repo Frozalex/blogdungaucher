@@ -3,10 +3,9 @@
  *
  * Étend strip-em-dash-new-articles.mjs en couvrant l'ensemble des surfaces où
  * du texte rédactionnel peut apparaître :
- *   - tous les articles src/content/blog/*.md
- *   - les pages textuelles src/pages/**\/*.astro identifiées
- *   - les composants éditoriaux src/components/*.astro
- *   - les fichiers de données contenant du texte affiché src/data/*.ts
+ *   - tout src/content (fichiers .md)
+ *   - tout src/pages, src/components, src/layouts (.astro)
+ *   - tout src/data et src/i18n (.ts)
  *
  * Les blocs CSS `content: "—"` sont préservés (utilisés pour les guillemets
  * décoratifs des pull-quotes). Les clés YAML, les blocs de code et les chaînes
@@ -23,28 +22,41 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 
-/** Liste explicite des fichiers/dossiers à scanner.
- *  On évite les wildcards profonds pour ne pas modifier de fichier de config
- *  par erreur (TS techniques, scripts internes, etc.). */
-const FILES = [
-  // Toutes les pages texte FR/EN/DE
-  "src/pages/fr/about/index.astro",
-  "src/pages/en/about/index.astro",
-  "src/pages/de/about/index.astro",
-  "src/pages/fr/recherche/index.astro",
-  "src/pages/fr/glossaire/index.astro",
-  "src/pages/fr/infographie/index.astro",
-  "src/pages/404.astro",
-  // Composants éditoriaux qui contiennent du texte
-  "src/components/HomeLanding.astro",
-  "src/components/CategoryPage.astro",
-  "src/components/CookieConsent.astro",
-  // Données éditoriales (rubriques)
-  "src/data/category-landing-rich.ts",
+/** Dossiers scannés récursivement (hors scripts/, dist/, node_modules). */
+const SCAN_DIRS = [
+  { dir: "src/content", ext: /\.md$/i },
+  { dir: "src/pages", ext: /\.astro$/i },
+  { dir: "src/components", ext: /\.astro$/i },
+  { dir: "src/layouts", ext: /\.astro$/i },
+  { dir: "src/data", ext: /\.ts$/i },
+  { dir: "src/i18n", ext: /\.ts$/i },
 ];
 
-/** Dossiers scannés intégralement (tous les .md). */
-const DIRS_MD = ["src/content/blog", "src/content/blog-translations"];
+/** Collecte les chemins relatifs à traiter (dédupliqués). */
+function collectScanFiles() {
+  const seen = new Set();
+  const out = [];
+  for (const { dir, ext } of SCAN_DIRS) {
+    const dirAbs = path.join(root, dir);
+    if (!fs.existsSync(dirAbs)) continue;
+    const stack = [dirAbs];
+    while (stack.length) {
+      const cur = stack.pop();
+      for (const entry of fs.readdirSync(cur, { withFileTypes: true })) {
+        const p = path.join(cur, entry.name);
+        if (entry.isDirectory()) stack.push(p);
+        else if (entry.isFile() && ext.test(entry.name)) {
+          const rel = path.relative(root, p).replace(/\\/g, "/");
+          if (!seen.has(rel)) {
+            seen.add(rel);
+            out.push(rel);
+          }
+        }
+      }
+    }
+  }
+  return out.sort();
+}
 
 /** Logique de remplacement — issue du script "new-articles", éprouvée.
  *  Le but : un texte propre, pas un texte cassé. Ordre des règles compte. */
@@ -128,30 +140,7 @@ export function runStripEmDash({ dry = false, silent = false } = {}) {
   let totalChanged = 0;
   const reports = [];
 
-  // 1. Tous les .md des dossiers de contenu
-  for (const dirRel of DIRS_MD) {
-    const dirAbs = path.join(root, dirRel);
-    if (!fs.existsSync(dirAbs)) continue;
-    const stack = [dirAbs];
-    while (stack.length) {
-      const cur = stack.pop();
-      for (const entry of fs.readdirSync(cur, { withFileTypes: true })) {
-        const p = path.join(cur, entry.name);
-        if (entry.isDirectory()) stack.push(p);
-        else if (entry.isFile() && /\.md$/i.test(entry.name)) {
-          const r = processFileSafe(p, dry);
-          if (r.changed > 0) {
-            totalBefore += r.count;
-            totalChanged += r.changed;
-            reports.push(`${path.relative(root, p)}: ${r.count} → ${r.left}`);
-          }
-        }
-      }
-    }
-  }
-
-  // 2. Fichiers individuels listés
-  for (const rel of FILES) {
+  for (const rel of collectScanFiles()) {
     const abs = path.join(root, rel);
     const r = processFileSafe(abs, dry);
     if (r.skipped) continue;
