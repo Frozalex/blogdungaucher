@@ -2,10 +2,21 @@ import type { CategorySlug } from "./site";
 
 /** Contenus pilier pour Science / Esprit / Société : développement éditorial ~600 mots en FR par rubrique. */
 export type CategoryLandingRich = {
-  /** Blocs de texte avec titre intermédiaire pour la lisibilité à l’écran. */
+  /** Blocs de texte avec titre intermédiaire pour la lisibilité à l’écran (legacy, fallback). */
   sections: Array<{ title: string; paragraphs: string[] }>;
   /** Trois angles courts en complément, cartes sous le texte. */
   cards: Array<{ title: string; body: string }>;
+  /**
+   * Format slide / magazine illustré : remplace `sections` au rendu quand présent.
+   * Chaque slide = un titre punch, un lead court, 3-4 puces, optionnellement une citation accent.
+   */
+  slides?: Array<{
+    kicker?: string;
+    title: string;
+    lead?: string;
+    points: string[];
+    pullquote?: string;
+  }>;
 };
 
 export const categoryLandingRich: Partial<
@@ -13,6 +24,50 @@ export const categoryLandingRich: Partial<
 > = {
   science: {
     fr: {
+      slides: [
+        {
+          kicker: "Le terrain",
+          title: "Pas une intelligence générale. Un laboratoire de décision.",
+          lead: "Mémoire, perception, calcul, choix sous contrainte. Les échecs sont depuis 70 ans un terrain de test, pas un don.",
+          points: [
+            "De Groot (1946), Chase & Simon (1973), neuroimagerie depuis 2010 : chaque génération a ajouté sa mesure.",
+            "L'enjeu n'est pas de réciter des noms d'aires cérébrales — c'est de savoir ce qui s'entraîne vraiment.",
+            "Le récit populaire surestime systématiquement. Ici on sépare le solide du buzz.",
+          ],
+          pullquote: "Une étude modeste bien menée bat dix anecdotes spectaculaires.",
+        },
+        {
+          kicker: "L'expertise vue de près",
+          title: "Tu ne mémorises pas mieux. Tu organises mieux.",
+          lead: "Les joueurs forts ne retiennent pas plus de pièces — ils voient des chunks, des motifs préfabriqués.",
+          points: [
+            "Test classique : positions réelles vs positions aléatoires → l'écart expert/novice s'effondre.",
+            "Ce n'est pas une mémoire brute supérieure, c'est une bibliothèque mentale organisée.",
+            "Hors-échiquier ? Le transfert reste souvent étroit. Calculer ne fait pas de toi un planificateur de vie.",
+          ],
+          pullquote: "Ce qui se transfère vraiment : l'habitude d'attention. Pas le talent.",
+        },
+        {
+          kicker: "Le cerveau, à sa juste place",
+          title: "Cerveau visible, résultats nuancés.",
+          lead: "L'imagerie révèle des différences. Elle ne fabrique pas des destins.",
+          points: [
+            "Les corrélats neuronaux tracent des années de pratique intense, pas un don inné.",
+            "On traduit ces données en questions utiles : que travailles-tu vraiment dans une séance tactique ?",
+            "Anxiété et fatigue se déguisent souvent en baisse cognitive. Ne pas confondre.",
+          ],
+          pullquote: "Vérité nuancée plutôt que promesse confortable.",
+        },
+        {
+          kicker: "Mode d'emploi",
+          title: "Comment lire cette rubrique cette semaine.",
+          points: [
+            "Tu veux optimiser ton training ? Commence par attention et mémoire de travail.",
+            "Tu stagnes ou tu surcharges ? Lis la charge cognitive et la régulation d'effort.",
+            "Reviens aux sources citées. La recherche bouge, nos synthèses aussi.",
+          ],
+        },
+      ],
       sections: [
         {
           title: "Pourquoi la science du jeu intéresse au-delà du club",
@@ -163,6 +218,50 @@ export const categoryLandingRich: Partial<
 
   esprit: {
     fr: {
+      slides: [
+        {
+          kicker: "Le terrain",
+          title: "Une partie est aussi un événement psychologique.",
+          lead: "Tu peux maîtriser les ouvertures. Reste la zone que les moteurs ne réparent pas : ton rapport au résultat, au temps, à toi-même.",
+          points: [
+            "Stress de performance, régulation émotionnelle, attention prolongée — sujet sérieux, pas slogan.",
+            "Le mental compétitif n'est pas une « motivation » décorative. C'est ta façon d'encadrer l'incertitude.",
+            "Cadres pour observer ce qui t'arrive, le nommer, puis ajuster — pas de formules creuses.",
+          ],
+          pullquote: "Ce qui se mesure en mat ou en abandon.",
+        },
+        {
+          kicker: "Erreur et identité",
+          title: "Le blunder, puis l'histoire que tu te racontes.",
+          lead: "Une erreur n'est pas qu'un coup faible. C'est le début d'un récit qui pirate la suite.",
+          points: [
+            "« Je suis nul », « ça recommence » : ces narratifs coûtent plus que le coup raté lui-même.",
+            "Inversement, une bonne série excite et fait perdre la sobriété tactique. Même mécanique.",
+            "Découpler fait matériel et identité = compétence trainable : pause respiration, mini-checklist, journal.",
+          ],
+          pullquote: "L'Elo est une estimation, pas une sentence.",
+        },
+        {
+          kicker: "Confiance & environnement",
+          title: "Pas de confiance par décret — par preuves accumulées.",
+          lead: "Analyses honnêtes, retours réels, objectifs mesurables. Pas d'incantation.",
+          points: [
+            "Ambiance du club, commentaires anonymes, comparaison sociale : ça pèse silencieusement.",
+            "Routines réalistes : sommeil, charge avant tournoi, clôture propre d'une défaite.",
+            "Comportements observables battent slogans de coach. Mesure ce qui change vraiment.",
+          ],
+          pullquote: "La menace du stéréotype n'est pas un mythe.",
+        },
+        {
+          kicker: "Mode d'emploi",
+          title: "Lis comme un carnet de terrain.",
+          points: [
+            "Une idée par semaine. Testée sur un petit échantillon de parties. Notée.",
+            "La psychologie du joueur progresse par itérations modestes, pas par illumination.",
+            "But : lucidité utile — défaite supportable, victoire moins intoxicante.",
+          ],
+        },
+      ],
       sections: [
         {
           title: "La partie est aussi un événement psychologique",
@@ -313,6 +412,50 @@ export const categoryLandingRich: Partial<
 
   societe: {
     fr: {
+      slides: [
+        {
+          kicker: "Hors mythologie",
+          title: "Les échecs traversent des institutions, pas seulement des plateaux.",
+          lead: "Écoles, fédérations, médias, plateformes en ligne. Le jeu a des effets concrets sur qui apprend, qui reste, qui aspire au haut niveau.",
+          points: [
+            "On décrit les mécanismes sociaux avec des indices vérifiables — démographie FIDE, études genre, sociologie du loisir compétitif.",
+            "Sans réduire les individus à des catégories, ni transformer les joueurs en arguments politiques.",
+            "Une même mesure peut être progressiste ici, problématique là. On accepte la complexité locale.",
+          ],
+          pullquote: "Symbole de génie solitaire ? Outil pédagogique miracle ? Plus compliqué.",
+        },
+        {
+          kicker: "École & promesses",
+          title: "« Les échecs rendent intelligent » — vraiment ?",
+          lead: "Le transfert scolaire existe parfois, souvent modeste, toujours dépendant du design pédagogique.",
+          points: [
+            "Conditions pour que ça marche : encadrement sérieux, objectifs clairs, gestion active de l'exclusion.",
+            "Pas de miracle uniforme. Des conditions identifiables pour que l'outil fonctionne.",
+            "On audite le marketing contre ce que la littérature peut réellement soutenir.",
+          ],
+          pullquote: "Genre, classe, handicap : risque opérationnel, pas anecdote.",
+        },
+        {
+          kicker: "Médias & représentations",
+          title: "Qui est visible comme modèle ?",
+          lead: "Les images orientent les budgets, les sponsors, l'accès aux clubs. Pas qu'une affaire d'esthétique.",
+          points: [
+            "Femmes, jeunes des quartiers populaires, pays périphériques du circuit : quelles histoires sont racontées ?",
+            "On croise avec les données quand elles existent : audiences, licences, politiques fédérales.",
+            "Vu du terrain : ce que vivent les clubs du dimanche quand un média « découvre » les échecs une saison puis les oublie.",
+          ],
+          pullquote: "La représentation n'est pas un détail. C'est un budget.",
+        },
+        {
+          kicker: "Mode d'emploi",
+          title: "Lire avec un œil critique et civique.",
+          points: [
+            "Discussions honnêtes en famille, à l'école, dans une association. Pas de baguette magique.",
+            "Chaque article aide à distinguer faits, interprétations, injonctions morales.",
+            "Les regards croisés renforcent la décence collective du milieu et la qualité du débat.",
+          ],
+        },
+      ],
       sections: [
         {
           title: "Les échecs dans le monde réel, pas seulement sur un écran",
