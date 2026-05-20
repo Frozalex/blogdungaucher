@@ -30,10 +30,28 @@ export const siteConfig = {
 /** Collez l’ID d’unité affiché dans AdSense (Annonces > ton unité > Code) pour activer sans variable d’environnement. Laisser vide si tu utilises `PUBLIC_ADSENSE_SLOT` au build. */
 export const ADSENSE_SLOT_OVERRIDE = "7361631253";
 
-/** Google AdSense - script chargé dans BaseLayout ; ici les IDs d’unités d’annonce (créées dans AdSense > Annonces). */
+/** Google AdSense - script chargé dans BaseLayout ; ici les IDs d’unités d’annonce (créées dans AdSense > Annonces).
+ *
+ * Deux flags séparés :
+ *   - `enabled` : autorise le chargement du SDK AdSense (sur consentement). Laisser true
+ *     pendant la phase de demande/validation pour que Google puisse crawler le site
+ *     avec le tag adsbygoogle présent.
+ *   - `live`    : affiche réellement les emplacements `<ins class="adsbygoogle">` dans la
+ *     page. Tant qu'il est à false, AdBanner ne rend RIEN (pas même un placeholder).
+ *     Passer à true après réception de l'approbation AdSense + création des unités.
+ *
+ * Workflow demande AdSense :
+ *   1. live: false (état actuel) → soumettre la demande sur adsense.google.com
+ *   2. attendre l'approbation (revue manuelle Google, 1-14 jours typiquement)
+ *   3. créer les unités d'annonce dans AdSense (leaderboard / inline / rectangle)
+ *   4. coller les slot IDs dans ADSENSE_SLOT_OVERRIDE / PUBLIC_ADSENSE_SLOT_* (.env)
+ *   5. passer live: true → les emplacements deviennent visibles
+ */
 export const adsenseConfig = {
-  /** Passe à false pour revenir aux blocs d’attente (sans ins AdSense). */
+  /** Charge le SDK adsbygoogle.js sur consentement (nécessaire pour la review Google). */
   enabled: true,
+  /** Affiche les emplacements publicitaires. Mettre à true APRÈS approbation AdSense. */
+  live: false,
   client: "ca-pub-1244325018333025",
   /**
    * ID numérique de l’unité (ex. 1234567890).
