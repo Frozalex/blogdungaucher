@@ -10,9 +10,15 @@ const {
 };
 
 const slot = adsenseConfig.enabled ? getAdsenseSlot(format) : "";
-const showReal = Boolean(slot && adsenseConfig.client);
+
+/** Trois états :
+ *  - `live: true` + slot configuré → emplacement <ins> réel (production)
+ *  - `live: false` (phase demande AdSense) → composant invisible (rien ne sort)
+ *  - dev local sans slot → placeholder dashed (utile en dev, jamais en prod) */
+const showReal = adsenseConfig.live && Boolean(slot && adsenseConfig.client);
+const showPlaceholder = !adsenseConfig.live ? false : !showReal;
 ---
-{showReal ? (
+{showReal && (
   <aside class={`ad ad--live ${format} ${compact ? "compact" : ""}`} aria-label="Publicité">
     <ins
       class="adsbygoogle"
@@ -30,7 +36,8 @@ const showReal = Boolean(slot && adsenseConfig.client);
       })();
     </script>
   </aside>
-) : (
+)}
+{showPlaceholder && (
   <aside class={`ad ad--placeholder ${format} ${compact ? "compact" : ""}`}>
     <span class="ad-label">Espace publicitaire</span>
     {!adsenseConfig.enabled ? (

@@ -58,8 +58,17 @@ const searchIndex = allPosts.map((p) => ({
   </div>
 </BaseLayout>
 
-<!-- Index des articles (JSON statique généré au build) -->
-<script type="application/json" id="search-index" set:html={JSON.stringify(searchIndex)}></script>
+<!-- Index des articles (JSON statique généré au build).
+     Échappement des séquences qui briseraient le parseur HTML : `</script>`, `<!--`, etc.
+     Conserve un JSON valide après échappement Unicode. -->
+<script
+  type="application/json"
+  id="search-index"
+  set:html={JSON.stringify(searchIndex)
+    .replace(/<\/(script)/gi, "<\\/$1")
+    .replace(/<!--/g, "<\\!--")
+    .replace(/-->/g, "--\\>")}
+></script>
 
 <script>
   type SearchEntry = {
