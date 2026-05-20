@@ -36,7 +36,20 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
             >
               <span aria-hidden="true" class="about-hero__avatar-piece">♞</span>
               Le_Gaucher
-              <span aria-hidden="true" class="about-hero__avatar-arrow">↗</span>
+              <svg
+                class="about-hero__avatar-arrow"
+                aria-hidden="true"
+                width="10"
+                height="10"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 9L9 3M9 3H4M9 3V8" />
+              </svg>
             </a>
           </div>
           <div class="about-hero__text">
@@ -63,12 +76,12 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
             <dd>1&thinsp;600</dd>
           </div>
           <div class="about-stats__item">
-            <dt>depuis</dt>
-            <dd>2023</dd>
+            <dt>aux échecs</dt>
+            <dd>3 ans</dd>
           </div>
           <div class="about-stats__item">
-            <dt>équipe</dt>
-            <dd>1</dd>
+            <dt>rédaction</dt>
+            <dd class="about-stats__place">solo</dd>
           </div>
           <div class="about-stats__item about-stats__item--wide">
             <dt>basé à</dt>
@@ -234,7 +247,20 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
               class="about-signoff__mail"
             >
               chess.com/member/le_gaucher
-              <span aria-hidden="true" class="about-signoff__ext">↗</span>
+              <svg
+                class="about-signoff__ext"
+                aria-hidden="true"
+                width="11"
+                height="11"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 9L9 3M9 3H4M9 3V8" />
+              </svg>
             </a>
           </p>
         </div>
@@ -360,11 +386,10 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
   }
 
   .about-hero__avatar-arrow {
-    font-family: var(--font-display);
-    font-size: 0.7rem;
-    letter-spacing: 0;
     color: var(--text-dim);
     transition: transform 200ms var(--ease-spring), color 160ms ease;
+    flex-shrink: 0;
+    display: block;
   }
 
   .about-hero__avatar-tag--link:hover .about-hero__avatar-arrow,
@@ -412,12 +437,25 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
   .about-stats {
     margin: 0;
     padding: 1.35rem 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(1.25rem, 3.5vw, 2.5rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap: clamp(1rem, 2.5vw, 1.75rem) clamp(1.25rem, 3.5vw, 2.5rem);
     align-items: flex-end;
     border-top: 1px solid color-mix(in srgb, var(--green) 22%, var(--border-soft));
     max-width: 54rem;
+  }
+
+  .about-stats__item--wide {
+    grid-column: span 2;
+  }
+
+  @media (max-width: 480px) {
+    .about-stats {
+      grid-template-columns: 1fr 1fr;
+    }
+    .about-stats__item--wide {
+      grid-column: span 2;
+    }
   }
 
   .about-stats__item {
@@ -725,43 +763,48 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
   }
 
   .about-signoff__ext {
-    font-size: 0.78em;
     transition: transform 200ms var(--ease-spring);
+    flex-shrink: 0;
+    transform: translateY(1px);
   }
 
   .about-signoff__mail:hover .about-signoff__ext {
-    transform: translate(1px, -1px);
+    transform: translate(1px, 0);
   }
 
-  /* ─── Animations reveal (réutilise le système existant) ────── */
-  .about-hero__grid,
-  .about-stats,
-  .about-section__head,
-  .about-section__body,
-  .about-quote,
-  .about-not,
-  .about-signoff__inner {
+  /* ─── Animations reveal ─────────────────────────────────────
+     Stratégie progressive : visible par défaut (no-JS safe), JS
+     ajoute la classe `js-anim` qui réactive l'état initial puis
+     déclenche la transition une frame plus tard. Garantit que la
+     page reste lisible si JS échoue. */
+  .about-page.js-anim .about-hero__grid,
+  .about-page.js-anim .about-stats,
+  .about-page.js-anim .about-section__head,
+  .about-page.js-anim .about-section__body,
+  .about-page.js-anim .about-quote,
+  .about-page.js-anim .about-not,
+  .about-page.js-anim .about-signoff__inner {
     opacity: 0;
     transform: translateY(14px);
     transition: opacity 720ms var(--ease-out), transform 720ms var(--ease-out);
   }
 
-  .about-page.is-loaded .about-hero__grid { transition-delay: 0ms; opacity: 1; transform: none; }
-  .about-page.is-loaded .about-stats { transition-delay: 120ms; opacity: 1; transform: none; }
-  .about-page.is-loaded .about-section__head { opacity: 1; transform: none; }
-  .about-page.is-loaded .about-section__body { opacity: 1; transform: none; }
-  .about-page.is-loaded .about-quote { opacity: 1; transform: none; }
-  .about-page.is-loaded .about-not { opacity: 1; transform: none; }
-  .about-page.is-loaded .about-signoff__inner { opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-hero__grid { transition-delay: 0ms; opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-stats { transition-delay: 120ms; opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-section__head { opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-section__body { opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-quote { opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-not { opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-signoff__inner { opacity: 1; transform: none; }
 
   @media (prefers-reduced-motion: reduce) {
-    .about-hero__grid,
-    .about-stats,
-    .about-section__head,
-    .about-section__body,
-    .about-quote,
-    .about-not,
-    .about-signoff__inner {
+    .about-page.js-anim .about-hero__grid,
+    .about-page.js-anim .about-stats,
+    .about-page.js-anim .about-section__head,
+    .about-page.js-anim .about-section__body,
+    .about-page.js-anim .about-quote,
+    .about-page.js-anim .about-not,
+    .about-page.js-anim .about-signoff__inner {
       opacity: 1;
       transform: none;
       transition: none;
@@ -770,14 +813,16 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
 </style>
 
 <script>
-  // Active la classe is-loaded une fois le DOM prêt : déclenche les apparitions douces.
-  // (Astro hydrate ce script seulement après que la page est servie.)
+  // Stratégie no-JS safe :
+  //   1. Le CSS rend tout visible par défaut.
+  //   2. On ajoute "js-anim" → bascule en état initial invisible.
+  //   3. Une frame plus tard, on ajoute "is-loaded" → la transition se joue.
+  // Si JS échoue à n'importe quelle étape, la page reste lisible.
   function activateAbout() {
     const el = document.querySelector(".about-page");
-    if (el) {
-      // requestAnimationFrame pour garantir l'application du state initial avant la transition.
-      requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("is-loaded")));
-    }
+    if (!el) return;
+    el.classList.add("js-anim");
+    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("is-loaded")));
   }
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", activateAbout, { once: true });

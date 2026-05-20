@@ -244,19 +244,29 @@ const categoryGlyph: Record<CategorySlug, string> = {
     overflow: hidden;
   }
 
-  /* Glyphe pièce d'échecs surdimensionné en filigrane — signature visuelle. */
+  /* Glyphe pièce d'échecs surdimensionné en filigrane — signature visuelle.
+     Plage clamp resserrée pour éviter le débordement sur écran <500px. */
   .cat-hero__glyph {
     position: absolute;
     top: 50%;
     right: clamp(-2rem, -2vw, 1rem);
     font-family: var(--font-serif);
-    font-size: clamp(12rem, 26vw, 22rem);
+    font-size: clamp(7rem, 22vw, 22rem);
     line-height: 0.85;
     color: color-mix(in srgb, var(--cat-accent) 11%, transparent);
     pointer-events: none;
     user-select: none;
     transform: translateY(-50%) rotate(-8deg);
     z-index: 0;
+  }
+
+  /* Sur très petit écran, on l'efface presque totalement pour ne pas voler de l'air au contenu. */
+  @media (max-width: 540px) {
+    .cat-hero__glyph {
+      font-size: 8rem;
+      right: -1.5rem;
+      opacity: 0.6;
+    }
   }
 
   [data-theme="dark"] .cat-hero__glyph {
@@ -304,14 +314,19 @@ const categoryGlyph: Record<CategorySlug, string> = {
   /* Strip de stats : trois chiffres typographiés à l'italique Fraunces, signature éditoriale. */
   .cat-stats {
     margin: 1.5rem 0 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(1.25rem, 4vw, 2.5rem);
+    padding: 1.1rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    gap: clamp(1rem, 3vw, 1.75rem) clamp(1.25rem, 4vw, 2.5rem);
     align-items: flex-end;
     border-top: 1px solid color-mix(in srgb, var(--cat-accent) 22%, var(--border-soft));
-    padding-top: 1.1rem;
     max-width: 38rem;
+  }
+
+  @media (max-width: 480px) {
+    .cat-stats {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .cat-stats__item {
@@ -435,21 +450,18 @@ const categoryGlyph: Record<CategorySlug, string> = {
     border-color: color-mix(in srgb, var(--cat-accent) 35%, var(--border-soft));
   }
 
-  /* Alternance gauche / droite pour le rythme visuel. */
-  .cat-slide--right {
-    border-left: 1px solid var(--border-soft);
-    border-right: 4px solid var(--cat-accent);
-    padding-left: clamp(1.5rem, 3vw, 2.25rem);
-  }
-
-  .cat-slide--right::before {
-    background:
-      radial-gradient(circle at 5% 0%, color-mix(in srgb, var(--cat-accent) 9%, transparent), transparent 45%);
-  }
-
+  /* Alternance gauche/droite : effet visible UNIQUEMENT en desktop.
+     Sur mobile, toutes les bordures restent à gauche pour préserver l'alignement. */
   @media (min-width: 760px) {
     .cat-slide--right {
+      border-left: 1px solid var(--border-soft);
+      border-right: 4px solid var(--cat-accent);
+      padding-left: clamp(1.5rem, 3vw, 2.25rem);
       margin-left: clamp(2rem, 8vw, 5rem);
+    }
+    .cat-slide--right::before {
+      background:
+        radial-gradient(circle at 5% 0%, color-mix(in srgb, var(--cat-accent) 9%, transparent), transparent 45%);
     }
     .cat-slide--left {
       margin-right: clamp(2rem, 8vw, 5rem);
@@ -563,6 +575,16 @@ const categoryGlyph: Record<CategorySlug, string> = {
     }
     .cat-slide__quote {
       padding: 0.85rem 0.95rem 0.85rem 1.25rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cat-slide,
+    .cat-slide__quote-mark {
+      transition: none !important;
+    }
+    .cat-slide:hover {
+      transform: none;
     }
   }
 

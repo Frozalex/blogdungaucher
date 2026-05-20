@@ -371,6 +371,54 @@ main { display: block; padding-top: var(--navbar-h); }
   border-radius: 1px;
 }
 
+/* Bloc « À retenir » en fin d'article : démarcation visuelle nette pour aider
+   le lecteur à repérer le résumé. Cible le h2 généré + sa liste de bullets. */
+.article-body h2#à-retenir,
+.article-body h2#a-retenir {
+  margin-top: 3rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--green-border);
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  scroll-margin-top: 5rem;
+}
+
+.article-body h2#à-retenir + ul,
+.article-body h2#a-retenir + ul {
+  margin: 1rem 0 2.5rem;
+  padding: 1.1rem 1.25rem 1.15rem 2.5rem;
+  background: color-mix(in srgb, var(--green) 5%, var(--bg-warm));
+  border-left: 3px solid var(--green);
+  border-radius: 0 6px 6px 0;
+  list-style: none;
+  position: relative;
+}
+
+.article-body h2#à-retenir + ul li,
+.article-body h2#a-retenir + ul li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin: 0.55rem 0;
+  font-size: 0.97rem;
+  line-height: 1.65;
+  color: var(--text-main);
+}
+
+.article-body h2#à-retenir + ul li::before,
+.article-body h2#a-retenir + ul li::before {
+  content: "→";
+  position: absolute;
+  left: -0.15rem;
+  top: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--green);
+}
+
 /* Pull-quote éditorial : à utiliser dans les longs articles. */
 .article-body blockquote {
   position: relative;
