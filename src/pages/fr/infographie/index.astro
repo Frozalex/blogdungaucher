@@ -7,7 +7,7 @@ const articles = [
     slug: "les-echecs-et-les-mathematiques",
     title: "Les échecs rendent-ils meilleur en maths ?",
     subtitle: "La vérité scientifique",
-    excerpt: "Jouer aux échecs te rend bon en maths ? La réponse n'est pas celle que tu attends — et elle change ce que tu devrais faire avec un échiquier.",
+    excerpt: "Jouer aux échecs te rend bon en maths ? La réponse n'est pas celle que tu attends, et elle change ce que tu devrais faire avec un échiquier.",
     category: "science",
     categoryLabel: "Science",
     pillar: "Cognition",
@@ -119,7 +119,7 @@ const articles = [
     slug: "regle-40-40-20-echecs",
     title: "La règle 40-40-20 : structurer son entraînement",
     subtitle: "Tactique, finales, ouvertures",
-    excerpt: "La plupart des joueurs passent 80 % de leur temps sur les ouvertures. La règle 40-40-20 dit l'inverse — et elle a des arguments.",
+    excerpt: "La plupart des joueurs passent 80 % de leur temps sur les ouvertures. La règle 40-40-20 dit l'inverse, et elle a des arguments.",
     category: "esprit",
     categoryLabel: "Esprit",
     pillar: "Progression",
@@ -146,14 +146,14 @@ const articles = [
 
 const totalMin = articles.reduce((s, a) => s + parseInt(a.readingTime), 0);
 const catBreakdown = [
-  { label: "Science",  key: "science",  count: 5, color: "#5b9fd4" },
-  { label: "Société",  key: "societe",  count: 3, color: "#5cc4b0" },
-  { label: "Esprit",   key: "esprit",   count: 2, color: "#f0a050" },
+  { label : "Science",  key : "science",  count: 5, color : "#5b9fd4" },
+  { label : "Société",  key : "societe",  count: 3, color : "#5cc4b0" },
+  { label : "Esprit",   key : "esprit",   count: 2, color : "#f0a050" },
 ];
 ---
 
 <BaseLayout
-  title="Les 10 premiers articles — Infographie | Blog d'un Gaucher"
+  title="Les 10 premiers articles, Infographie | Blog d'un Gaucher"
   description="Visualisation interactive des 10 premières publications du Blog d'un Gaucher : timeline éditoriale, répartition par rubrique, 190 minutes de lecture."
   canonicalPath="/fr/infographie/"
   omitEnDeAlternateLinks={true}
@@ -164,7 +164,7 @@ const catBreakdown = [
   <!-- ════════════ HERO ════════════ -->
   <header class="hero">
     <div class="hero-grid">
-      <!-- Background texture: faint chess squares -->
+      <!-- Background texture : faint chess squares -->
       <div class="chess-bg" aria-hidden="true">
         {Array.from({length:64}).map((_,i) => (
           <div class={`sq ${(Math.floor(i/8)+i)%2===0 ? "sq--dark" : ""}`}></div>
@@ -177,7 +177,7 @@ const catBreakdown = [
           <span class="hero-title-line1">Naissance</span>
           <span class="hero-title-line2">d'un blog</span>
         </h1>
-        <p class="hero-sub">Les 10 premières publications — une plongée dans les thèmes fondateurs</p>
+        <p class="hero-sub">Les 10 premières publications : une plongée dans les thèmes fondateurs</p>
 
         <div class="hero-stats">
           <div class="hstat">
@@ -247,7 +247,7 @@ const catBreakdown = [
         <span class="arow-ghost" aria-hidden="true">{a.num}</span>
 
         <div class="arow-inner">
-          <!-- Left: number + meta -->
+          <!-- Left : number + meta -->
           <div class="arow-left">
             <span class="arow-num">{a.num}</span>
             <div class="arow-meta">
@@ -256,7 +256,7 @@ const catBreakdown = [
             </div>
           </div>
 
-          <!-- Center: title + content -->
+          <!-- Center : title + content -->
           <div class="arow-center">
             <time class="arow-date" datetime={a.isoDate}>{a.date}</time>
             <h2 class="arow-title">
@@ -269,7 +269,7 @@ const catBreakdown = [
             </div>
           </div>
 
-          <!-- Right: time + CTA -->
+          <!-- Right : time + CTA -->
           <div class="arow-right">
             <div class="arow-time">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -347,17 +347,17 @@ const catBreakdown = [
 
 <!-- ════════════ STYLES ════════════ -->
 <style>
-  /* ── Editorial shell — aliased onto site design tokens ── */
+  /* ── Editorial shell : aliased onto site design tokens ── */
   .igp {
     /* Aliases → design system. Les couleurs de rubrique sont fixes
-       (mêmes en clair/sombre) — le reste suit le thème. */
+       (mêmes en clair/sombre): le reste suit le thème. */
     --bg:   var(--surface);
     --bg2:  color-mix(in srgb, var(--text-main) 4%, var(--surface));
     --bg3:  color-mix(in srgb, var(--text-main) 8%, var(--surface));
     --fg:   var(--text-main);
     --fg2:  var(--text-muted);
     --fg3:  var(--border-soft);
-    --line: var(--border-soft);
+    --line : var(--border-soft);
     --c-sci: #5b9fd4;
     --c-esp: #f0a050;
     --c-soc: #5cc4b0;
@@ -392,8 +392,8 @@ const catBreakdown = [
     pointer-events: none;
     user-select: none;
   }
-  .sq { background: transparent; }
-  .sq--dark { background: var(--fg); }
+  .sq { background : transparent; }
+  .sq--dark { background : var(--fg); }
 
   .hero-content {
     position: relative;
@@ -605,7 +605,7 @@ const catBreakdown = [
     overflow-x: auto;
     scrollbar-width: none;
   }
-  .filters::-webkit-scrollbar { display: none; }
+  .filters::-webkit-scrollbar { display : none; }
 
   .fbtn {
     padding: 1rem 1.25rem;
@@ -623,7 +623,7 @@ const catBreakdown = [
     margin-bottom: -1px;
   }
 
-  .fbtn:hover { color: var(--fg); }
+  .fbtn:hover { color : var(--fg); }
   .fbtn--on {
     color: var(--fg);
     border-bottom-color: var(--fg);
@@ -668,9 +668,9 @@ const catBreakdown = [
   }
   .arow:hover::before { opacity: 1; }
 
-  .arow--science { --acc-c: var(--c-sci); }
-  .arow--esprit  { --acc-c: var(--c-esp); }
-  .arow--societe { --acc-c: var(--c-soc); }
+  .arow--science { --acc-c : var(--c-sci); }
+  .arow--esprit  { --acc-c : var(--c-esp); }
+  .arow--societe { --acc-c : var(--c-soc); }
 
   /* Ghost big number */
   .arow-ghost {
@@ -746,7 +746,7 @@ const catBreakdown = [
     letter-spacing: -0.02em;
     transition: color 200ms ease;
   }
-  .arow:hover .arow-num { color: var(--acc-c); }
+  .arow:hover .arow-num { color : var(--acc-c); }
 
   .arow-meta {
     display: flex;
@@ -829,7 +829,7 @@ const catBreakdown = [
     margin: 0.25rem 0 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient : vertical;
     overflow: hidden;
   }
 

@@ -45,7 +45,7 @@ Après, tu regardes la pendule et tu réalises que 45 minutes ont passé. Tu ne 
 
 C'est le flow.
 
-## Csikszentmihalyi et les origines de la théorie
+##, Csikszentmihalyi et les origines de la théorie
 
 [Mihaly Csikszentmihalyi](https://fr.wikipedia.org/wiki/Mihaly_Csikszentmihalyi) (prononcé "tchik-sent-mi-hai") était un psychologue hongrois-américain qui, dans les années 1970, a commencé à étudier une question apparemment simple : qu'est-ce qui rend une activité intrinsèquement satisfaisante ? Pourquoi certaines personnes peignent pendant des heures en oubliant de manger ? Pourquoi les chirurgiens disent que les opérations difficiles sont souvent les plus satisfaisantes ? Pourquoi les joueurs d'échecs en tournoi perdent toute notion du temps ?
 
@@ -55,7 +55,7 @@ Csikszentmihalyi a appelé cet état **"flow"** (le flux) et en a fait l'objet d
 
 Les exemples qu'il utilise dans ce livre incluent explicitement les **joueurs d'échecs** comme modèles d'activité propice au flow : règles claires et formelles, feedback immédiat (chaque coup révèle quelque chose), possibilités infinies, et une progression de complexité naturelle qui maintient l'équilibre entre défi et compétence.
 
-## Les 8 caractéristiques de l'état de flow
+##, Les 8 caractéristiques de l'état de flow
 
 Csikszentmihalyi identifie 8 composantes que les sujets décrivent systématiquement lors d'un état de flow :
 

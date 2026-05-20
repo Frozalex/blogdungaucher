@@ -3,12 +3,12 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { buildBreadcrumbJsonLd } from "../../../utils/blog";
 ---
 <BaseLayout
-  title="À propos | Le_Gaucher — Blog d'un Gaucher"
+  title="À propos | Le_Gaucher, Blog d'un Gaucher"
   description="19 ans, 1 600 Elo, une licence informatique et un blog qui croise les échecs avec la science. Voici qui écrit ici, pourquoi, et comment."
   canonicalPath="/fr/about/"
   structuredData={buildBreadcrumbJsonLd([
-    { name: "Accueil", path: "/fr/" },
-    { name: "À propos", path: "/fr/about/" },
+    { name : "Accueil", path : "/fr/" },
+    { name : "À propos", path : "/fr/about/" },
   ])}
 >
   <article class="about-page">
@@ -59,7 +59,7 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
               <br />et une obsession méthodique pour&nbsp;les&nbsp;échecs.
             </h1>
             <p class="about-hero__lead">
-              J'ai <strong>19 ans</strong>. Je suis gaucher — pas métaphoriquement,
+              J'ai <strong>19 ans</strong>. Je suis gaucher : pas métaphoriquement,
               vraiment. C'est de là que vient le nom du site.
             </p>
           </div>
@@ -100,14 +100,14 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
         <div class="about-section__body">
           <p>
             À 16 ans, on m'a demandé de diriger un club d'échecs. Problème : je
-            n'avais pas le niveau pour le faire. Alors j'ai appris vite — très
-            vite — en absorbant tout ce que je pouvais sur le jeu, les
+            n'avais pas le niveau pour le faire. Alors j'ai appris vite : très
+            vite: en absorbant tout ce que je pouvais sur le jeu, les
             stratégies, la psychologie derrière.
           </p>
           <p>
             Ce mode d'apprentissage par patterns, je l'ai retrouvé partout dans
             ma vie depuis. Je résous des équations de tête. Je lis des situations
-            rapidement. Les échecs ne m'ont pas rendu plus intelligent —
+            rapidement. Les échecs ne m'ont pas rendu plus intelligent , 
             <em>ils m'ont donné une méthode</em>.
           </p>
           <p>
@@ -129,7 +129,7 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
           <p>
             Qui suis-je pour parler technique à des gens qui jouent depuis trente
             ans ? En revanche, croiser les échecs avec ce que la recherche dit
-            vraiment — sur la mémoire, le cerveau, la psychologie du joueur —
+            vraiment: sur la mémoire, le cerveau, la psychologie du joueur , 
             ça, je peux le faire rigoureusement.
           </p>
         </blockquote>
@@ -150,7 +150,7 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
           </p>
           <p>
             Les articles ici sont longs. Les sommaires sont détaillés. Les
-            sources sont citées. Ce n'est pas un accident — c'est une ligne
+            sources sont citées. Ce n'est pas un accident : c'est une ligne
             éditoriale. <strong>Tu viens ici pour une réponse, tu repars avec
             une réponse.</strong>
           </p>
@@ -213,7 +213,7 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
           </li>
           <li>
             <span class="about-not__mark">×</span>
-            Un endroit où je te dirai ce que tu veux entendre — si une étude est
+            Un endroit où je te dirai ce que tu veux entendre, si une étude est
             nuancée, je le dis.
           </li>
           <li>
@@ -789,15 +789,15 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
     transition: opacity 720ms var(--ease-out), transform 720ms var(--ease-out);
   }
 
-  .about-page.js-anim.is-loaded .about-hero__grid { transition-delay: 0ms; opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-stats { transition-delay: 120ms; opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-section__head { opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-section__body { opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-quote { opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-not { opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-signoff__inner { opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-hero__grid { transition-delay: 0ms; opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-stats { transition-delay: 120ms; opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-section__head { opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-section__body { opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-quote { opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-not { opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-signoff__inner { opacity: 1; transform : none; }
 
-  @media (prefers-reduced-motion: reduce) {
+  @media (prefers-reduced-motion : reduce) {
     .about-page.js-anim .about-hero__grid,
     .about-page.js-anim .about-stats,
     .about-page.js-anim .about-section__head,
@@ -825,7 +825,7 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
     requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("is-loaded")));
   }
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", activateAbout, { once: true });
+    document.addEventListener("DOMContentLoaded", activateAbout, { once : true });
   } else {
     activateAbout();
   }

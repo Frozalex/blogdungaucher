@@ -12,7 +12,7 @@ import {
 } from "../utils/blog";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
 
-const { category, lang = "fr" } = Astro.props as { category: CategorySlug; lang?: SiteLang };
+const { category, lang = "fr" } = Astro.props as { category : CategorySlug; lang?: SiteLang };
 const meta = categoryMap[category];
 const landingRich = categoryLandingRich[category]?.[lang];
 const posts = filterPostsForLang(
@@ -28,8 +28,8 @@ const homeLabel =
   lang === "en" ? "Home" : lang === "de" ? "Startseite" : "Accueil";
 
 const structuredData = buildBreadcrumbJsonLd([
-  { name: homeLabel, path: swapLangPrefix("/", lang) },
-  { name: meta.label, path: swapLangPrefix(frCanonical, lang) },
+  { name : homeLabel, path : swapLangPrefix("/", lang) },
+  { name : meta.label, path : swapLangPrefix(frCanonical, lang) },
 ]);
 
 const pageTitle =
@@ -75,7 +75,7 @@ const latestDate = posts
 
 const dateLocale = lang === "en" ? "en-US" : lang === "de" ? "de-DE" : "fr-FR";
 const latestDateLabel = latestDate
-  ? latestDate.toLocaleDateString(dateLocale, { month: "short", year: "numeric" })
+  ? latestDate.toLocaleDateString(dateLocale, { month : "short", year : "numeric" })
   : null;
 
 const statsLabels = {
@@ -85,11 +85,11 @@ const statsLabels = {
 }[lang === "fr" || lang === "en" || lang === "de" ? lang : "fr"];
 
 /** Glyphes pièces par rubrique : signature visuelle reproduite de la home. */
-const categoryGlyph: Record<CategorySlug, string> = {
+const categoryGlyph : Record<CategorySlug, string> = {
   science: "♞",
   esprit: "♛",
   societe: "♜",
-  "grand-oral": "♚",
+  "grand-oral" : "♚",
 };
 ---
 <BaseLayout
@@ -244,7 +244,7 @@ const categoryGlyph: Record<CategorySlug, string> = {
     overflow: hidden;
   }
 
-  /* Glyphe pièce d'échecs surdimensionné en filigrane — signature visuelle.
+  /* Glyphe pièce d'échecs surdimensionné en filigrane : signature visuelle.
      Plage clamp resserrée pour éviter le débordement sur écran <500px. */
   .cat-hero__glyph {
     position: absolute;
@@ -578,7 +578,7 @@ const categoryGlyph: Record<CategorySlug, string> = {
     }
   }
 
-  @media (prefers-reduced-motion: reduce) {
+  @media (prefers-reduced-motion : reduce) {
     .cat-slide,
     .cat-slide__quote-mark {
       transition: none !important;
@@ -667,7 +667,7 @@ const categoryGlyph: Record<CategorySlug, string> = {
     color: var(--text-muted);
     transition: color 150ms ease;
   }
-  .text-link:hover { color: var(--green); }
+  .text-link:hover { color : var(--green); }
 
   .post-grid {
     display: grid;
@@ -696,9 +696,9 @@ const categoryGlyph: Record<CategorySlug, string> = {
     margin-bottom: 0.25rem;
   }
   .empty-state h2 { font-size: 1.3rem; }
-  .empty-state p { color: var(--text-muted); font-size: 0.92rem; }
+  .empty-state p { color : var(--text-muted); font-size: 0.92rem; }
 
   @media (max-width: 680px) {
-    .cat-section__head { flex-direction: column; align-items: flex-start; }
+    .cat-section__head { flex-direction : column; align-items : flex-start; }
   }
 </style>

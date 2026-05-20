@@ -53,7 +53,7 @@ Il existe une confusion fréquente sur ce qu'est la résilience. Deux mythes à 
 
 **Mythe 2 : la résilience, c'est rebondir rapidement.** [George Bonanno](https://www.tc.columbia.edu/faculty/gab38/) (Columbia University), l'un des chercheurs les plus influents sur la résilience, montre que les trajectoires de résilience sont variées : certaines personnes rebondissent vite, d'autres plus lentement, mais les deux trajectoires peuvent mener à une récupération complète. Ce qui compte n'est pas la vitesse, mais le mouvement.
 
-La résilience aux échecs, c'est la **capacité à maintenir ou retrouver un engagement productif** avec le jeu après une défaite — là où [la peur de perdre](/fr/blog/echecs-peur-de-perdre/) la rend paralysante — en utilisant l'expérience de la défaite comme carburant plutôt que comme frein.
+La résilience aux échecs, c'est la **capacité à maintenir ou retrouver un engagement productif** avec le jeu après une défaite : là où [la peur de perdre](/fr/blog/echecs-peur-de-perdre/) la rend paralysante : en utilisant l'expérience de la défaite comme carburant plutôt que comme frein.
 
 ## Le style explicatif : comment tu interprètes la défaite
 

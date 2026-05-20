@@ -28,7 +28,7 @@ Les trois symptômes ne sont pas négociables : il faut les **trois** pour parle
 
 **1. L'épuisement émotionnel.** Une fatigue qui ne passe pas avec le repos. Tu dors huit heures, tu te réveilles vidé. Aux échecs : tu n'as plus l'énergie d'ouvrir un livre, de regarder une partie commentée, ou même de cliquer sur "Jouer".
 
-**2. La dépersonnalisation (ou cynisme).** Une distance émotionnelle envers ce que tu aimais. Aux échecs : *"c'est juste un jeu stupide"*, *"de toute façon ça sert à rien"*, *"je perds mon temps"*. Le cynisme protège — il rend l'investissement moins douloureux à abandonner.
+**2. La dépersonnalisation (ou cynisme).** Une distance émotionnelle envers ce que tu aimais. Aux échecs : *"c'est juste un jeu stupide"*, *"de toute façon ça sert à rien"*, *"je perds mon temps"*. Le cynisme protège : il rend l'investissement moins douloureux à abandonner.
 
 **3. La diminution du sentiment d'efficacité.** L'impression que tes efforts ne paient plus. Aux échecs : ton Elo stagne, tu fais les mêmes erreurs depuis six mois, tu ne progresses plus malgré 15 heures d'étude par semaine. Tu commences à te demander si tu es simplement *limité*.
 
@@ -38,7 +38,7 @@ Un seul de ces symptômes = passage à vide. Les trois ensemble, sur plusieurs m
 
 Le sport et le travail intellectuel ont leurs voies royales vers le burnout. Les échecs en ont des spécifiques.
 
-### 15 heures d'étude par semaine — au-dessus du seuil de soutenabilité
+### 15 heures d'étude par semaine : au-dessus du seuil de soutenabilité
 
 À partir d'un certain niveau (disons 1600-1800 Elo en ligne), la progression devient cher. Théorie d'ouverture, tactique quotidienne, finales techniques, analyse de tes propres parties au moteur, étude des classiques. Un joueur ambitieux dépasse facilement **10 à 20 heures hebdomadaires** d'étude, hors temps de jeu.
 
@@ -50,7 +50,7 @@ Ce volume, maintenu sans variété ni récupération, est exactement la recette 
 
 Aux échecs, ton niveau est un chiffre. Ce chiffre est public. Il bouge à chaque partie. Tout le monde peut le voir. Et toi, tu ne penses qu'à le défendre.
 
-Chaque partie devient une menace pour ton Elo plutôt qu'une opportunité d'apprendre. Le stress accumulé sur 30, 50, 100 parties par mois est massif — et silencieux. Tu ne le sens pas sur une partie. Tu le sens sur 6 mois.
+Chaque partie devient une menace pour ton Elo plutôt qu'une opportunité d'apprendre. Le stress accumulé sur 30, 50, 100 parties par mois est massif, et silencieux. Tu ne le sens pas sur une partie. Tu le sens sur 6 mois.
 
 ### La comparaison sociale permanente
 
@@ -70,11 +70,11 @@ Le burnout ne frappe pas au hasard. Quatre profils sont sur-exposés.
 
 **Le perfectionniste à 1700 Elo.** Il vise les 2000. Chaque partie perdue est un échec personnel. Chaque erreur est une preuve de son incompétence. Standards impossibles, tension chronique, ressources brûlées en continu. Probabilité de burnout sur 2 ans : très élevée.
 
-**Le junior poussé.** Parents investis, club ambitieux, fédération qui surveille. Sa motivation est de plus en plus externe. La théorie de l'autodétermination (Edward Deci & Richard Ryan, 1985) prédit exactement ce qui va se passer : effondrement à l'adolescence, abandon souvent définitif. Le cas est massivement documenté chez les juniors de tennis et de natation — les échecs n'y échappent pas.
+**Le junior poussé.** Parents investis, club ambitieux, fédération qui surveille. Sa motivation est de plus en plus externe. La théorie de l'autodétermination (Edward Deci & Richard Ryan, 1985) prédit exactement ce qui va se passer : effondrement à l'adolescence, abandon souvent définitif. Le cas est massivement documenté chez les juniors de tennis et de natation : les échecs n'y échappent pas.
 
 **L'adulte qui mène deux vies.** Il a un vrai métier, une vraie famille, et il essaie de monter à 2000 Elo avec les heures qu'il vole sur le sommeil. La fatigue ne se cumule pas linéairement : elle se cumule en spirale. Il tiendra 18 mois. Puis 3 semaines où plus rien ne marche.
 
-**Le joueur sur plateau depuis 8 mois.** Même volume d'étude qu'avant. Même intensité. Et le Elo qui ne bouge plus. Le sentiment d'efficacité s'effrite. C'est l'un des déclencheurs les plus fréquents de burnout aux échecs — précisément parce que c'est le moment où l'effort cesse de sembler payant.
+**Le joueur sur plateau depuis 8 mois.** Même volume d'étude qu'avant. Même intensité. Et le Elo qui ne bouge plus. Le sentiment d'efficacité s'effrite. C'est l'un des déclencheurs les plus fréquents de burnout aux échecs : précisément parce que c'est le moment où l'effort cesse de sembler payant.
 
 ## Comment distinguer un passage à vide d'un vrai burnout
 
@@ -92,7 +92,7 @@ Les signaux concrets qui doivent te faire bouger :
 - Ouvrir Chess.com ou un livre déclenche une résistance physique (lourdeur, dégoût léger).
 - Tu joues "en pilote automatique" sans engagement, juste pour finir les parties prévues.
 - Les tournois sont vécus comme des obligations anxiogènes, pas comme des occasions.
-- Une victoire ne te procure plus rien — même contre quelqu'un de plus fort.
+- Une victoire ne te procure plus rien, même contre quelqu'un de plus fort.
 - L'idée d'arrêter complètement te traverse plus d'une fois par semaine.
 
 Trois ou quatre signaux présents en continu sur plusieurs mois = burnout réel. Bouge.
@@ -112,7 +112,7 @@ Ce n'est pas une intuition. C'est le principe du repos actif en physiologie du s
 
 ### Pendant le désengagement
 
-Évite activement les échecs : pas même les highlights YouTube, pas même un coup d'œil aux classements. Tu n'es pas en vacances — tu es en récupération.
+Évite activement les échecs : pas même les highlights YouTube, pas même un coup d'œil aux classements. Tu n'es pas en vacances : tu es en récupération.
 
 Investis le temps libéré dans autre chose. Activité physique régulière. Une création (musique, écriture, dessin). Du social non-échecs. Le but n'est pas de te distraire : c'est de **restaurer des sources de satisfaction qui ne dépendent pas d'un Elo**.
 
@@ -140,7 +140,7 @@ La prévention est moins coûteuse que la récupération. Quatre règles non né
 
 **4. Réévalue ta motivation tous les 3 mois.** Demande-toi sincèrement : *pourquoi je joue ?* Si la réponse devient majoritairement externe (Elo, image, attentes de quelqu'un), c'est un signal de rééquilibrage avant qu'il ne soit trop tard.
 
-Bobby Fischer a gagné le championnat du monde en 1972 à Reykjavik. Il n'a pas joué une seule partie classée pendant les vingt années suivantes. Personne ne sait à quelle part exacte ce silence appartenait à la maladie et quelle part au burnout pur — mais l'épuisement post-1972 est documenté dans tous les témoignages directs. Le sommet de la carrière a coïncidé avec l'effondrement de l'envie. Ce n'est pas un cas isolé. C'est un schéma.
+Bobby Fischer a gagné le championnat du monde en 1972 à Reykjavik. Il n'a pas joué une seule partie classée pendant les vingt années suivantes. Personne ne sait à quelle part exacte ce silence appartenait à la maladie et quelle part au burnout pur, mais l'épuisement post-1972 est documenté dans tous les témoignages directs. Le sommet de la carrière a coïncidé avec l'effondrement de l'envie. Ce n'est pas un cas isolé. C'est un schéma.
 
 **Après lecture :** si tu te reconnais dans l'épuisement décrit, fixe **deux semaines** sans partie en ligne ; au retour, **une** partie lente par jour maximum la première semaine, sans objectif Elo.
 
@@ -156,7 +156,7 @@ Bobby Fischer a gagné le championnat du monde en 1972 à Reykjavik. Il n'a pas 
 
 ### Sources et références
 
-- **Maslach, C., & Leiter, M. P.** *The Truth About Burnout: How Organizations Cause Personal Stress and What to Do About It.* Jossey-Bass, 1997. (La théorie du burnout et ses trois dimensions par sa conceptrice principale.)
+- **Maslach, C., & Leiter, M. P.** *The Truth About Burnout : How Organizations Cause Personal Stress and What to Do About It.* Jossey-Bass, 1997. (La théorie du burnout et ses trois dimensions par sa conceptrice principale.)
 - **Deci, E. L., & Ryan, R. M.** *Intrinsic Motivation and Self-Determination in Human Behavior.* Plenum Press, 1985. (La théorie de l'autodétermination et le rôle de la motivation intrinsèque dans l'engagement durable.)
 - **Freudenberger, H. J.** *Staff Burn-Out.* Journal of Social Issues, 30(1), 159-165, 1974. (La première description formelle du burnout dans la littérature psychologique.)
 - **Gustafsson, H., et al.** [*A Conceptual Model of Burnout in Youth Athletes.*](https://www.researchgate.net/publication/6677049) International Journal of Sports Science & Coaching, 2(4), 467-480, 2007. (Le burnout chez les athlètes juniors, directement applicable aux joueurs d'échecs compétitifs jeunes.)
