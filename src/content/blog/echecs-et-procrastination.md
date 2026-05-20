@@ -45,33 +45,33 @@ C'est exactement ce manège, pas le coup que tu finiras par jouer, qui décide d
 
 Tu n'es pas en train de calculer. Tu es en train de **fuir**. Et c'est aussi ce que tu fais quand tu ouvres un dixième onglet au lieu d'attaquer le dossier qui t'attend depuis trois jours.
 
-## Tu ne procrastines pas par paresse — tu fuis une émotion
+## Tu ne procrastines pas par paresse : tu fuis une émotion
 
 La psychologie contemporaine a inversé son modèle dans les vingt dernières années. La procrastination n'est plus comprise comme un défaut de discipline ou de gestion du temps. C'est un **mécanisme de régulation émotionnelle**.
 
 Quand une tâche génère de l'anxiété, du doute, de la peur de l'échec ou simplement de l'ennui, ton cerveau cherche à neutraliser l'inconfort immédiat. La façon la plus rapide : ne plus s'y exposer. Tu ouvres un autre onglet. Tu vérifies tes mails. Tu fais du café que tu n'as pas demandé. Soulagement.
 
-Sauf que la tâche revient. Plus tard. Avec une anxiété **augmentée** parce que la deadline s'est rapprochée. Ce qui rend l'évitement suivant encore plus probable. C'est ce que le psychologue B.F. Skinner appelait un *conditionnement opérant* — version courte : un comportement qui produit du soulagement immédiat se renforce, même quand il aggrave le problème à long terme.
+Sauf que la tâche revient. Plus tard. Avec une anxiété **augmentée** parce que la deadline s'est rapprochée. Ce qui rend l'évitement suivant encore plus probable. C'est ce que le psychologue B.F. Skinner appelait un *conditionnement opérant*: version courte : un comportement qui produit du soulagement immédiat se renforce, même quand il aggrave le problème à long terme.
 
-> **Définition rapide — conditionnement opérant.** Quand une action est suivie d'un soulagement, le cerveau apprend à la répéter. Procrastiner = appuyer sur un bouton qui éteint l'anxiété 30 secondes. Le bouton fonctionne. C'est ça le piège.
+> **Définition rapide : conditionnement opérant.** Quand une action est suivie d'un soulagement, le cerveau apprend à la répéter. Procrastiner = appuyer sur un bouton qui éteint l'anxiété 30 secondes. Le bouton fonctionne. C'est ça le piège.
 
-Ce n'est pas de la faiblesse de caractère. C'est une mécanique cérébrale prévisible — étudiée notamment par **Fuschia Sirois** (Sheffield) et **Timothy Pychyl** (Carleton), qui ont passé vingt ans à la démonter expérimentalement.
+Ce n'est pas de la faiblesse de caractère. C'est une mécanique cérébrale prévisible : étudiée notamment par **Fuschia Sirois** (Sheffield) et **Timothy Pychyl** (Carleton), qui ont passé vingt ans à la démonter expérimentalement.
 
 ## Pourquoi la pendule réussit ce que tes deadlines échouent
 
 L'échiquier a quelque chose que ta vie n'a presque jamais : une pendule qui ne négocie pas.
 
-Elle ne s'arrête pas si la position est compliquée. Elle ne tient pas compte du fait que tu n'as pas dormi. Elle ne te laisse pas "y revenir demain". Elle égrène. Et quand le drapeau tombe, tu perds — même si ton coup suivant aurait été génial.
+Elle ne s'arrête pas si la position est compliquée. Elle ne tient pas compte du fait que tu n'as pas dormi. Elle ne te laisse pas "y revenir demain". Elle égrène. Et quand le drapeau tombe, tu perds, même si ton coup suivant aurait été génial.
 
 Dans la vie réelle, ta deadline est dans une semaine. Dans un mois. L'évitement ne coûte rien **maintenant**. Les psychologues comportementaux appellent ça la *dévaluation hyperbolique* :
 
-> **Définition rapide — dévaluation hyperbolique.** Ton cerveau préfère 10 € maintenant à 15 € dans un mois. Même quand c'est mathématiquement idiot. Les coûts futurs ont moins de poids psychologique que les bénéfices immédiats. C'est pour ça que "je m'y mets demain" est si convaincant sur le moment.
+> **Définition rapide : dévaluation hyperbolique.** Ton cerveau préfère 10 € maintenant à 15 € dans un mois. Même quand c'est mathématiquement idiot. Les coûts futurs ont moins de poids psychologique que les bénéfices immédiats. C'est pour ça que "je m'y mets demain" est si convaincant sur le moment.
 
 La pendule détruit cet écart temporel. L'inaction a un prix **maintenant**, en secondes qui partent. Jouer un coup imparfait dans les délais bat presque toujours ne pas jouer du tout.
 
 Tu n'as pas une pendule sur ton bureau. Mais tu peux en fabriquer une : un timer Pomodoro de 25 minutes, un blocage de calendrier non-négociable, un rendez-vous avec quelqu'un qui t'attend. Tout dispositif qui rend l'inaction **visiblement coûteuse à la minute** réplique ce que la pendule fait au joueur d'échecs.
 
-## Calculer 10 minutes de plus ne donne pas un meilleur coup — juste une meilleure excuse
+## Calculer 10 minutes de plus ne donne pas un meilleur coup : juste une meilleure excuse
 
 Les instructeurs d'échecs ont un mot pour ça : *overthinking*. Tu calcules une ligne. Tu la valides. Tu la recalcules pour être sûr. Tu reprends depuis le début. Tu hésites encore.
 
@@ -79,7 +79,7 @@ C'est exactement la procrastination, juste habillée en diligence.
 
 Botvinnik, six fois champion du monde, disait à ses élèves quelque chose comme : *"Si tu n'as pas trouvé un coup clairement meilleur après vingt minutes, tu ne le trouveras pas en trente."* Au-delà d'un seuil, le temps supplémentaire ne produit pas un meilleur calcul. Il produit de la fatigue, de l'anxiété, et **moins de temps pour les coups suivants**.
 
-La distinction-clé que les joueurs apprennent (souvent au prix d'une pendule tombée) : *assez bon pour agir* ≠ *parfait pour n'avoir aucun regret*. Le premier existe. Le second n'existe nulle part — ni sur 64 cases, ni sur un dossier de travail, ni sur un message à envoyer.
+La distinction-clé que les joueurs apprennent (souvent au prix d'une pendule tombée) : *assez bon pour agir* ≠ *parfait pour n'avoir aucun regret*. Le premier existe. Le second n'existe nulle part, ni sur 64 cases, ni sur un dossier de travail, ni sur un message à envoyer.
 
 Cherche la certitude absolue, tu trouveras toujours une raison d'attendre.
 
@@ -90,11 +90,11 @@ Les psychologues mesurent une variable qu'ils appellent *tolérance à l'ambigu�
 Faible tolérance → tu repousses les choix non-évidents, tu vises la sécurité absolue, tu vires perfectionniste paralysant.
 Haute tolérance → tu décides "suffisamment bien" vite, puis tu ajustes en chemin.
 
-Plusieurs études (méta-analyse Sala & Gobet, 2017, sur le transfert cognitif des échecs) montrent que les joueurs réguliers présentent en moyenne une tolérance à l'ambiguïté plus élevée que les non-joueurs de même niveau d'éducation, y compris sur des tâches sans rapport avec l'échiquier. L'effet est **modéré** — pas spectaculaire, pas universel, mais réplicable.
+Plusieurs études (méta-analyse Sala & Gobet, 2017, sur le transfert cognitif des échecs) montrent que les joueurs réguliers présentent en moyenne une tolérance à l'ambiguïté plus élevée que les non-joueurs de même niveau d'éducation, y compris sur des tâches sans rapport avec l'échiquier. L'effet est **modéré**: pas spectaculaire, pas universel, mais réplicable.
 
 Le mécanisme proposé est simple : 50 parties = 1500 décisions sous information incomplète, chacune suivie d'une conséquence immédiate (la réponse adverse révèle si c'était bon). Cette boucle *décision → conséquence → ajustement*, répétée des milliers de fois, recâble la tolérance.
 
-Une condition, en revanche : le transfert n'est pas automatique. Il demande un pont conscient. "Sur l'échiquier, j'ai joué malgré le doute et ça a marché — où dans ma vie est-ce que je peux refaire ça aujourd'hui ?" Sans cette traduction explicite, l'effet reste local au jeu.
+Une condition, en revanche : le transfert n'est pas automatique. Il demande un pont conscient. "Sur l'échiquier, j'ai joué malgré le doute et ça a marché : où dans ma vie est-ce que je peux refaire ça aujourd'hui ?" Sans cette traduction explicite, l'effet reste local au jeu.
 
 ## La règle "touché-joué" désactive le piège du regret
 
@@ -102,7 +102,7 @@ Aux échecs, si tu touches une pièce intentionnellement, tu dois la jouer. Et u
 
 Cette règle banale a un effet psychologique massif : elle interdit le regret comme stratégie.
 
-Dans la vraie vie, beaucoup de procrastinateurs sont coincés parce qu'ils imaginent leurs choix comme infiniment réversibles — donc infiniment optimisables — donc infiniment reportables. Si je peux toujours revenir en arrière, autant attendre d'être sûr.
+Dans la vraie vie, beaucoup de procrastinateurs sont coincés parce qu'ils imaginent leurs choix comme infiniment réversibles (donc infiniment optimisables) donc infiniment reportables. Si je peux toujours revenir en arrière, autant attendre d'être sûr.
 
 Les joueurs d'échecs vivent l'inverse. Ils savent que chaque coup est définitif. Et pourtant, regarde-les : ils ne passent pas leur temps à regretter. Ils s'adaptent à la position nouvelle. Le coup d'avant est mort. La seule question vivante est : *que fais-je maintenant ?*
 
@@ -130,7 +130,7 @@ Et reconnais la vraie nature de ton "je n'ai pas le temps de l'analyse aujourd'h
 - Procrastiner = neutraliser une émotion inconfortable. Pas un défaut de volonté.
 - La pendule d'échecs réussit parce qu'elle rend l'inaction immédiatement coûteuse. Réplique-la avec un timer ou un rendez-vous non-négociable.
 - *Overthinking* et procrastination ont la même structure : retarder l'action en cherchant une certitude qui n'existera pas.
-- 50 parties = 1500 décisions sous incertitude. Effet mesurable mais modéré sur la tolérance à l'ambiguïté hors-échiquier — à condition de faire le pont consciemment.
+- 50 parties = 1500 décisions sous incertitude. Effet mesurable mais modéré sur la tolérance à l'ambiguïté hors-échiquier : à condition de faire le pont consciemment.
 - "Touché-joué" entraîne à découpler la décision du regret. C'est ce qu'il faut voler de l'échiquier vers ta vie.
 
 **Maintenant, ferme cet onglet.** Ouvre le dossier que tu reportes depuis trois jours. Donne-toi 25 minutes au timer. Ce que tu produiras dans ces 25 minutes battra tout ce que tu n'as pas produit depuis lundi.

@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "node scripts/generate-og-png.mjs && node scripts/check-publish-weekly.mjs && astro build && node scripts/verify-dist-urls.mjs",
+    "build:clean": "node scripts/build-clean.mjs",
+    "strip:em-dash": "node scripts/strip-em-dash.mjs",
+    "strip:em-dash:dry": "node scripts/strip-em-dash.mjs --dry",
     "check:publish-weekly": "node scripts/check-publish-weekly.mjs",
     "apply:publish-schedule": "node scripts/apply-future-publish-schedule.mjs",
     "preview": "astro preview"

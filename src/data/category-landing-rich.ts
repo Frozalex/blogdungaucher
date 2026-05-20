@@ -31,7 +31,7 @@ export const categoryLandingRich: Partial<
           lead: "Mémoire, perception, calcul, choix sous contrainte. Les échecs sont depuis 70 ans un terrain de test, pas un don.",
           points: [
             "De Groot (1946), Chase & Simon (1973), neuroimagerie depuis 2010 : chaque génération a ajouté sa mesure.",
-            "L'enjeu n'est pas de réciter des noms d'aires cérébrales — c'est de savoir ce qui s'entraîne vraiment.",
+            "L'enjeu n'est pas de réciter des noms d'aires cérébrales : c'est de savoir ce qui s'entraîne vraiment.",
             "Le récit populaire surestime systématiquement. Ici on sépare le solide du buzz.",
           ],
           pullquote: "Une étude modeste bien menée bat dix anecdotes spectaculaires.",
@@ -39,7 +39,7 @@ export const categoryLandingRich: Partial<
         {
           kicker: "L'expertise vue de près",
           title: "Tu ne mémorises pas mieux. Tu organises mieux.",
-          lead: "Les joueurs forts ne retiennent pas plus de pièces — ils voient des chunks, des motifs préfabriqués.",
+          lead: "Les joueurs forts ne retiennent pas plus de pièces : ils voient des chunks, des motifs préfabriqués.",
           points: [
             "Test classique : positions réelles vs positions aléatoires → l'écart expert/novice s'effondre.",
             "Ce n'est pas une mémoire brute supérieure, c'est une bibliothèque mentale organisée.",
@@ -224,9 +224,9 @@ export const categoryLandingRich: Partial<
           title: "Une partie est aussi un événement psychologique.",
           lead: "Tu peux maîtriser les ouvertures. Reste la zone que les moteurs ne réparent pas : ton rapport au résultat, au temps, à toi-même.",
           points: [
-            "Stress de performance, régulation émotionnelle, attention prolongée — sujet sérieux, pas slogan.",
+            "Stress de performance, régulation émotionnelle, attention prolongée : sujet sérieux, pas slogan.",
             "Le mental compétitif n'est pas une « motivation » décorative. C'est ta façon d'encadrer l'incertitude.",
-            "Cadres pour observer ce qui t'arrive, le nommer, puis ajuster — pas de formules creuses.",
+            "Cadres pour observer ce qui t'arrive, le nommer, puis ajuster : pas de formules creuses.",
           ],
           pullquote: "Ce qui se mesure en mat ou en abandon.",
         },
@@ -243,7 +243,7 @@ export const categoryLandingRich: Partial<
         },
         {
           kicker: "Confiance & environnement",
-          title: "Pas de confiance par décret — par preuves accumulées.",
+          title: "Pas de confiance par décret : par preuves accumulées.",
           lead: "Analyses honnêtes, retours réels, objectifs mesurables. Pas d'incantation.",
           points: [
             "Ambiance du club, commentaires anonymes, comparaison sociale : ça pèse silencieusement.",
@@ -258,7 +258,7 @@ export const categoryLandingRich: Partial<
           points: [
             "Une idée par semaine. Testée sur un petit échantillon de parties. Notée.",
             "La psychologie du joueur progresse par itérations modestes, pas par illumination.",
-            "But : lucidité utile — défaite supportable, victoire moins intoxicante.",
+            "But : lucidité utile : défaite supportable, victoire moins intoxicante.",
           ],
         },
       ],
@@ -418,7 +418,7 @@ export const categoryLandingRich: Partial<
           title: "Les échecs traversent des institutions, pas seulement des plateaux.",
           lead: "Écoles, fédérations, médias, plateformes en ligne. Le jeu a des effets concrets sur qui apprend, qui reste, qui aspire au haut niveau.",
           points: [
-            "On décrit les mécanismes sociaux avec des indices vérifiables — démographie FIDE, études genre, sociologie du loisir compétitif.",
+            "On décrit les mécanismes sociaux avec des indices vérifiables : démographie FIDE, études genre, sociologie du loisir compétitif.",
             "Sans réduire les individus à des catégories, ni transformer les joueurs en arguments politiques.",
             "Une même mesure peut être progressiste ici, problématique là. On accepte la complexité locale.",
           ],
@@ -426,7 +426,7 @@ export const categoryLandingRich: Partial<
         },
         {
           kicker: "École & promesses",
-          title: "« Les échecs rendent intelligent » — vraiment ?",
+          title: "« Les échecs rendent intelligent » : vraiment ?",
           lead: "Le transfert scolaire existe parfois, souvent modeste, toujours dépendant du design pédagogique.",
           points: [
             "Conditions pour que ça marche : encadrement sérieux, objectifs clairs, gestion active de l'exclusion.",

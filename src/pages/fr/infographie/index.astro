@@ -119,7 +119,7 @@ const articles = [
     slug: "regle-40-40-20-echecs",
     title: "La règle 40-40-20 : structurer son entraînement",
     subtitle: "Tactique, finales, ouvertures",
-    excerpt: "La plupart des joueurs passent 80 % de leur temps sur les ouvertures. La règle 40-40-20 dit l'inverse — et elle a des arguments.",
+    excerpt: "La plupart des joueurs passent 80 % de leur temps sur les ouvertures. La règle 40-40-20 dit l'inverse, et elle a des arguments.",
     category: "esprit",
     categoryLabel: "Esprit",
     pillar: "Progression",
@@ -156,7 +156,7 @@ const catCounts = articles.reduce((acc, a) => {
 ---
 
 <BaseLayout
-  title="Les 10 premiers articles — Infographie | Blog d'un Gaucher"
+  title="Les 10 premiers articles, Infographie | Blog d'un Gaucher"
   description="Visualisation interactive des 10 premiers articles du Blog d'un Gaucher : timeline, catégories, thèmes et temps de lecture. De l'autisme aux mathématiques, du cerveau à l'addiction."
   canonicalPath="/fr/infographie/"
   omitEnDeAlternateLinks={true}
@@ -168,7 +168,7 @@ const catCounts = articles.reduce((acc, a) => {
       <div class="hero-inner">
         <p class="hero-eyebrow">Blog d'un Gaucher</p>
         <h1 class="hero-title">Naissance d'un blog</h1>
-        <p class="hero-subtitle">Les 10 premiers articles publiés — une plongée dans les thèmes fondateurs</p>
+        <p class="hero-subtitle">Les 10 premiers articles publiés : une plongée dans les thèmes fondateurs</p>
 
         <div class="stats-row">
           <div class="stat">
@@ -360,9 +360,9 @@ const catCounts = articles.reduce((acc, a) => {
     --c-science: #5b9fd4;
     --c-esprit: #f0a050;
     --c-societe: #5cc4b0;
-    --c-science-s: rgba(91,159,212,0.12);
-    --c-esprit-s: rgba(240,160,80,0.12);
-    --c-societe-s: rgba(92,196,176,0.12);
+    --c-science-s : rgba(91,159,212,0.12);
+    --c-esprit-s : rgba(240,160,80,0.12);
+    --c-societe-s : rgba(92,196,176,0.12);
   }
 
   /* ── Hero ── */
@@ -477,7 +477,7 @@ const catCounts = articles.reduce((acc, a) => {
     text-align: center;
   }
 
-  .cat-bars { display: flex; flex-direction: column; gap: 1rem; }
+  .cat-bars { display : flex; flex-direction : column; gap: 1rem; }
 
   .cat-bar-item {
     display: grid;
@@ -506,9 +506,9 @@ const catCounts = articles.reduce((acc, a) => {
     border-radius: 50%;
     flex-shrink: 0;
   }
-  .cat-dot--science { background: var(--c-science); }
-  .cat-dot--esprit  { background: var(--c-esprit); }
-  .cat-dot--societe { background: var(--c-societe); }
+  .cat-dot--science { background : var(--c-science); }
+  .cat-dot--esprit  { background : var(--c-esprit); }
+  .cat-dot--societe { background : var(--c-societe); }
 
   .cat-bar-track {
     height: 10px;
@@ -524,13 +524,13 @@ const catCounts = articles.reduce((acc, a) => {
     animation: bar-grow 1s var(--ease-out) both;
     animation-delay: 0.2s;
   }
-  .cat-bar-fill--science { background: var(--c-science); }
-  .cat-bar-fill--esprit  { background: var(--c-esprit); }
-  .cat-bar-fill--societe { background: var(--c-societe); }
+  .cat-bar-fill--science { background : var(--c-science); }
+  .cat-bar-fill--esprit  { background : var(--c-esprit); }
+  .cat-bar-fill--societe { background : var(--c-societe); }
 
   @keyframes bar-grow {
-    from { transform: scaleX(0); }
-    to   { transform: scaleX(1); }
+    from { transform : scaleX(0); }
+    to   { transform : scaleX(1); }
   }
 
   .cat-bar-count {
@@ -632,8 +632,8 @@ const catCounts = articles.reduce((acc, a) => {
     pointer-events: none;
   }
 
-  /* Left cards: content in col 1, dot in col 2 */
-  .tl-card--left { transform: translateX(-20px); }
+  /* Left cards : content in col 1, dot in col 2 */
+  .tl-card--left { transform : translateX(-20px); }
   .tl-card--left .tl-dot { grid-column: 2; grid-row: 1; }
   .tl-card--left .tl-card-body {
     grid-column: 1;
@@ -642,11 +642,11 @@ const catCounts = articles.reduce((acc, a) => {
     align-items: flex-end;
     padding-right: 2rem;
   }
-  .tl-card--left .tl-footer { justify-content: flex-end; flex-direction: row-reverse; }
-  .tl-card--left .tl-tags { justify-content: flex-end; }
+  .tl-card--left .tl-footer { justify-content : flex-end; flex-direction : row-reverse; }
+  .tl-card--left .tl-tags { justify-content : flex-end; }
 
-  /* Right cards: dot in col 2, content in col 3 */
-  .tl-card--right { transform: translateX(20px); }
+  /* Right cards : dot in col 2, content in col 3 */
+  .tl-card--right { transform : translateX(20px); }
   .tl-card--right .tl-dot { grid-column: 2; grid-row: 1; }
   .tl-card--right .tl-card-body {
     grid-column: 3;
@@ -656,7 +656,7 @@ const catCounts = articles.reduce((acc, a) => {
     padding-left: 2rem;
   }
 
-  /* Mobile: all cards go right of the line */
+  /* Mobile : all cards go right of the line */
   @media (max-width: 680px) {
     .tl-card {
       grid-template-columns: 48px 1fr;
@@ -676,9 +676,9 @@ const catCounts = articles.reduce((acc, a) => {
       padding-left: 1.25rem;
       padding-right: 0;
     }
-    .tl-card--left .tl-footer { flex-direction: row; justify-content: flex-start; }
-    .tl-card--left .tl-tags { justify-content: flex-start; }
-    .tl-card--left { transform: translateX(-10px); }
+    .tl-card--left .tl-footer { flex-direction : row; justify-content : flex-start; }
+    .tl-card--left .tl-tags { justify-content : flex-start; }
+    .tl-card--left { transform : translateX(-10px); }
   }
 
   /* Dot */
@@ -735,9 +735,9 @@ const catCounts = articles.reduce((acc, a) => {
     gap: 0.5rem;
     flex-wrap: wrap;
   }
-  .tl-card--left .tl-card-header { flex-direction: row-reverse; }
+  .tl-card--left .tl-card-header { flex-direction : row-reverse; }
   @media (max-width: 680px) {
-    .tl-card--left .tl-card-header { flex-direction: row; }
+    .tl-card--left .tl-card-header { flex-direction : row; }
   }
 
   /* Badge */
@@ -752,9 +752,9 @@ const catCounts = articles.reduce((acc, a) => {
     text-transform: uppercase;
     border: 1px solid;
   }
-  .tl-badge--science { color: var(--c-science); border-color: var(--c-science); background: var(--c-science-s); }
-  .tl-badge--esprit  { color: var(--c-esprit);  border-color: var(--c-esprit);  background: var(--c-esprit-s); }
-  .tl-badge--societe { color: var(--c-societe); border-color: var(--c-societe); background: var(--c-societe-s); }
+  .tl-badge--science { color : var(--c-science); border-color : var(--c-science); background : var(--c-science-s); }
+  .tl-badge--esprit  { color : var(--c-esprit);  border-color : var(--c-esprit);  background : var(--c-esprit-s); }
+  .tl-badge--societe { color : var(--c-societe); border-color : var(--c-societe); background : var(--c-societe-s); }
 
   .tl-pillar {
     font-size: 0.72rem;
@@ -787,7 +787,7 @@ const catCounts = articles.reduce((acc, a) => {
     text-decoration: none;
     transition: color 180ms ease;
   }
-  .tl-title-link:hover { color: var(--green); }
+  .tl-title-link:hover { color : var(--green); }
 
   /* Subtitle */
   .tl-subtitle {
@@ -806,7 +806,7 @@ const catCounts = articles.reduce((acc, a) => {
     margin: 0.25rem 0 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient : vertical;
     overflow: hidden;
   }
 
@@ -887,5 +887,5 @@ const catCounts = articles.reduce((acc, a) => {
     text-decoration: none;
     transition: opacity 200ms ease, transform 200ms ease;
   }
-  .closing-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+  .closing-btn:hover { opacity: 0.85; transform : translateY(-1px); }
 </style>
