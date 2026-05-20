@@ -134,19 +134,50 @@ const categoryGlyph: Record<CategorySlug, string> = {
   </section>
 
   {landingRich && (
-    <section class="cat-rich">
+    <section class="cat-rich" style={`--cat-accent: ${meta.accent};`}>
       <div class="container">
         <span class="eyebrow reveal">{richEyebrow}</span>
-        <div class="cat-rich__essay reveal-group">
-          {landingRich.sections.map((sec) => (
-            <div class="cat-rich__block reveal">
-              <h3 class="cat-rich__h3">{sec.title}</h3>
-              {sec.paragraphs.map((p) => (
-                <p class="cat-rich__p">{p}</p>
-              ))}
-            </div>
-          ))}
-        </div>
+
+        {landingRich.slides && landingRich.slides.length > 0 ? (
+          <div class="cat-slides reveal-group">
+            {landingRich.slides.map((slide, idx) => (
+              <article class={`cat-slide cat-slide--${idx % 2 === 0 ? "left" : "right"} reveal`}>
+                <header class="cat-slide__head">
+                  <span class="cat-slide__num">{String(idx + 1).padStart(2, "0")}</span>
+                  {slide.kicker && <span class="cat-slide__kicker">{slide.kicker}</span>}
+                </header>
+                <h3 class="cat-slide__title">{slide.title}</h3>
+                {slide.lead && <p class="cat-slide__lead">{slide.lead}</p>}
+                <ul class="cat-slide__points">
+                  {slide.points.map((pt) => (
+                    <li>
+                      <span class="cat-slide__bullet" aria-hidden="true">→</span>
+                      <span>{pt}</span>
+                    </li>
+                  ))}
+                </ul>
+                {slide.pullquote && (
+                  <p class="cat-slide__quote">
+                    <span class="cat-slide__quote-mark" aria-hidden="true">“</span>
+                    {slide.pullquote}
+                  </p>
+                )}
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div class="cat-rich__essay reveal-group">
+            {landingRich.sections.map((sec) => (
+              <div class="cat-rich__block reveal">
+                <h3 class="cat-rich__h3">{sec.title}</h3>
+                {sec.paragraphs.map((p) => (
+                  <p class="cat-rich__p">{p}</p>
+                ))}
+              </div>
+            ))}
+          </div>
+        )}
+
         <p class="cat-rich__cards-intro reveal">{cardsIntro}</p>
         <ul class="cat-rich__cards">
           {landingRich.cards.map((card) => (
@@ -360,6 +391,179 @@ const categoryGlyph: Record<CategorySlug, string> = {
     font-size: clamp(0.98rem, 0.65vw + 0.91rem, 1.08rem);
     line-height: 1.72;
     color: var(--text-muted);
+  }
+
+  /* ─── Slides magazine illustré (remplace cat-rich__essay quand slides existent) ─── */
+  .cat-slides {
+    display: grid;
+    gap: clamp(1.25rem, 3vw, 1.85rem);
+    margin: 1.5rem 0 0;
+    max-width: 64rem;
+  }
+
+  .cat-slide {
+    position: relative;
+    padding: clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 3vw, 2rem);
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-left: 4px solid var(--cat-accent);
+    box-shadow: var(--shadow-sm);
+    transition: transform 280ms var(--ease-spring), box-shadow 280ms var(--ease-out), border-color 180ms ease;
+    overflow: hidden;
+  }
+
+  /* Filigrane numéroté géant en arrière-plan : signature magazine. */
+  .cat-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at 95% 0%, color-mix(in srgb, var(--cat-accent) 9%, transparent), transparent 45%);
+    z-index: 0;
+  }
+
+  .cat-slide > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cat-slide:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: color-mix(in srgb, var(--cat-accent) 35%, var(--border-soft));
+  }
+
+  /* Alternance gauche / droite pour le rythme visuel. */
+  .cat-slide--right {
+    border-left: 1px solid var(--border-soft);
+    border-right: 4px solid var(--cat-accent);
+    padding-left: clamp(1.5rem, 3vw, 2.25rem);
+  }
+
+  .cat-slide--right::before {
+    background:
+      radial-gradient(circle at 5% 0%, color-mix(in srgb, var(--cat-accent) 9%, transparent), transparent 45%);
+  }
+
+  @media (min-width: 760px) {
+    .cat-slide--right {
+      margin-left: clamp(2rem, 8vw, 5rem);
+    }
+    .cat-slide--left {
+      margin-right: clamp(2rem, 8vw, 5rem);
+    }
+  }
+
+  .cat-slide__head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.85rem;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--cat-accent) 18%, var(--border-soft));
+  }
+
+  .cat-slide__num {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(2.1rem, 4.5vw, 3rem);
+    line-height: 0.9;
+    color: var(--cat-accent);
+    letter-spacing: -0.04em;
+  }
+
+  .cat-slide__kicker {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    padding-bottom: 0.3rem;
+  }
+
+  .cat-slide__title {
+    margin: 0 0 0.85rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+    line-height: 1.18;
+    letter-spacing: -0.025em;
+    color: var(--text-main);
+  }
+
+  .cat-slide__lead {
+    margin: 0 0 1.1rem;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.8vw, 1.12rem);
+    line-height: 1.55;
+    color: var(--text-muted);
+    max-width: 38rem;
+  }
+
+  .cat-slide__points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  .cat-slide__points li {
+    display: grid;
+    grid-template-columns: 1.1rem 1fr;
+    gap: 0.55rem;
+    align-items: baseline;
+    font-size: 0.96rem;
+    line-height: 1.6;
+    color: var(--text-main);
+  }
+
+  .cat-slide__bullet {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--cat-accent);
+    line-height: 1;
+  }
+
+  .cat-slide__quote {
+    margin: 1.25rem 0 0;
+    padding: 0.95rem 1.1rem 0.95rem 1.5rem;
+    background: color-mix(in srgb, var(--cat-accent) 7%, var(--bg-warm));
+    border-radius: 6px;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1rem, 1.7vw, 1.1rem);
+    line-height: 1.5;
+    color: var(--text-main);
+    position: relative;
+  }
+
+  .cat-slide__quote-mark {
+    position: absolute;
+    top: -0.5rem;
+    left: 0.5rem;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 2.3rem;
+    line-height: 1;
+    color: color-mix(in srgb, var(--cat-accent) 55%, transparent);
+    pointer-events: none;
+  }
+
+  @media (max-width: 600px) {
+    .cat-slide {
+      padding: 1.25rem 1.15rem 1.35rem;
+    }
+    .cat-slide__quote {
+      padding: 0.85rem 0.95rem 0.85rem 1.25rem;
+    }
   }
 
   .cat-rich__cards-intro {
