@@ -165,4 +165,4 @@ Chess is "impossible" if you imagine a brute solution: explore everything, prove
 
 **To go further:** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/), [arXiv](https://arxiv.org/).
 
-Now that you know how an engine navigates the move tree, does it change how you use one to analyse your games? Share in the comments.
+**After reading:** open the [analysis space](/en/analyses/), spot the **first move** where your line and the engine's diverge by more than half a pawn, then replay **that position alone** three times in the day (without starting a new game).

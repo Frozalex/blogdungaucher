@@ -8,12 +8,6 @@ The question deserved to be asked seriously, not brushed aside with kind condesc
 
 Science, statistics, and sociology have weighed in. The answer is counter-intuitive: the decisive angle is not biological; it is mathematical. Once you see it, the gender gap in chess stops looking like a mystery.
 
-> **The essentials in 4 points:**
-> - Women represent 10 to 15 percent of rated players worldwide (FIDE, 2024)
-> - The vast majority of rating gap is explained by participation bias, not biology (Bilalić, 2009)
-> - Stereotype threat lowers women's performance against male opponents (Backus, Cubel et al., 2023)
-> - The Polgár experiment shows the ceiling is cultural and environmental, not biological
-
 ## The shock of numbers: a pyramid that starts too narrow
 
 [FIDE](https://en.wikipedia.org/wiki/FIDE) statistics for 2024 are stark. Women represent on average only between 10% and 15% of rated players in official tournaments worldwide.
@@ -154,7 +148,18 @@ If you took one idea from this article, let it be this: the board does not need 
 
 Chess does not become "fairer" through kind words alone: it becomes fairer when more people can enter, stay, and be treated as players, neither mascot nor intruder. Seeing a women's world champion in the media, seeing women players represent their country in mixed championships, seeing women's Elo converge with men's in a genuinely egalitarian chess world: all of that is within reach. You only have to build the conditions, year after year.
 
-What do you think of maintaining women-only tournaments? Necessary springboard or signal of institutionalised inferiority? Leave your view in the comments; the debate is real and deserves better than the usual two camps.
+The debate on **women's sections** often splits the ground between **visibility and mentoring** on one side, and **fear of permanently separating** circuits on the other. The participation numbers and studies cited above let you argue without sloganeering: the right call depends on **local context** (clubs, reported harassment or not, available funding), not on a single global answer.
+
+**After reading:** if you coach or run a club, test **one** simple friction (welcoming the first session, systematic mixed pairings, or visible anti-harassment rules) for a quarter and measure women's sign-ups before and after.
+
+---
+
+## Key takeaways
+
+- Women represent 10 to 15 percent of rated players worldwide (FIDE, 2024)
+- The vast majority of rating gap is explained by participation bias, not biology (Bilalić, 2009)
+- Stereotype threat lowers women's performance against male opponents (Backus, Cubel et al., 2023)
+- The Polgár experiment shows the ceiling is cultural and environmental, not biological
 
 ---
 

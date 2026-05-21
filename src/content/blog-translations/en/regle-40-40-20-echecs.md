@@ -6,12 +6,6 @@ The 40-40-20 rule is a heuristic popular among coaches and improving players: **
 
 It is not dogma. It is a strong hypothesis. To see why it holds, you need what expertise research took decades to unpack.
 
-> **The essentials in 4 points:**
-> - Most club players massively overweight openings, where impact on results is weakest at their level
-> - Tactics are the best-documented, most immediate lever for improvement: they sharpen calculation, pattern recognition, and accuracy across all phases
-> - Endgames are chronically neglected yet they are the phase where technical errors cost the most: won or drawn games slip away in the endgame
-> - The 40-40-20 rule is not universal: adjust it for level, style, and your identified weaknesses
-
 ## Why the default split backfires
 
 ### Opening bias
@@ -132,7 +126,7 @@ One puzzle solved with full attention, genuinely asking why the combination work
 
 ---
 
-**In summary**
+### Summary in one table
 
 | Aspect | What the rule says | Takeaway |
 | --- | --- | --- |
@@ -167,7 +161,16 @@ In pure blitz endgames matter far less (games rarely reach technical endings) an
 
 ---
 
-How much time do you really spend on openings versus endgames each week? Does 40-40-20 match what you already do, or describe exactly what you struggle to do? Share in the comments.
+**After reading:** for **one week**, time your real tactics / endgames / openings split; compare to the "typical session" table mid-article and adjust **one** lever only.
+
+---
+
+## Key takeaways
+
+- Most club players massively overweight openings, where impact on results is weakest at their level
+- Tactics are the best-documented, most immediate lever for improvement: they sharpen calculation, pattern recognition, and accuracy across all phases
+- Endgames are chronically neglected yet they are the phase where technical errors cost the most: won or drawn games slip away in the endgame
+- The 40-40-20 rule is not universal: adjust it for level, style, and your identified weaknesses
 
 ---
 

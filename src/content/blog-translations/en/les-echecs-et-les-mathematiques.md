@@ -1,11 +1,5 @@
 There is not a single number on a chessboard. No equation to solve. A grandmaster is not necessarily faster than you at integrating. And yet, the idea that "chess makes you good at math" has been repeated in schools, after-school clubs, and admissions pitches for decades, as if 64 squares implanted algebraic formulas in the brain by simple contact.
 
-> **The essentials in 4 points:**
-> - Chess does not directly transfer mathematical "content" into the brain (Sala & Gobet, meta-analyses)
-> - The only solid transfer is methodological: break down, test, verify, doubt at the right time
-> - Metacognition, thinking about your own thinking, is the real measurable bridge between the two fields
-> - Slow play (30 min+) activates brain areas tied to problem-solving; Blitz does not
-
 ## Why we instinctively link chess and mathematics (the "wow" is real)
 
 The first thing any observer notices is the obvious structural kinship between these two worlds. Chess is, by nature, a closed, perfectly deterministic system. There is no room for chance. You do not roll dice, draw face-down cards, or have wind bend your Queen's trajectory.
@@ -112,7 +106,16 @@ If you want an honest promise, here it is: chess does not replace math and does 
 
 So the good pitch is not "chess makes you good at math," but "chess can help build a stance toward problems." And that stance can serve in math... and in real life.
 
-Have you played chess for a while: have you felt a change in how you tackle a stubborn problem? Not necessarily in math, anywhere in life. Share in the comments.
+**After reading:** one tactical puzzle a day for a week, **hypothesis written before** the solution; for combinatorics and engines, continue with [why chess remains a brutal mathematical problem for AI](/en/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
+
+---
+
+## Key takeaways
+
+- Chess does not directly transfer mathematical "content" into the brain (Sala & Gobet, meta-analyses)
+- The only solid transfer is methodological: break down, test, verify, doubt at the right time
+- Metacognition, thinking about your own thinking, is the real measurable bridge between the two fields
+- Slow play (30 min+) activates brain areas tied to problem-solving; Blitz does not
 
 ---
 

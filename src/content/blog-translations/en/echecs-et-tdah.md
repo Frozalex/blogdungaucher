@@ -6,12 +6,6 @@ When they mentioned it, the teacher shrugged: *"It is because it is a game. Less
 
 It is not magic. It is neurobiology.
 
-> **The essentials in 4 points:**
-> - ADHD is not literally an attention deficit: it is an executive-function deficit, especially inhibition and planning (Barkley, 1997)
-> - The ADHD brain responds better to immediate feedback, stable rules, and tangible stakes, exactly what the chessboard offers
-> - Direct chess-ADHD studies are still limited but neurobiological mechanisms are well documented (Castellanos & Tannock, 2002)
-> - Chess is a valuable complement to specialized care, not a substitute
-
 ## What ADHD really does to attention (and why it is systematically misunderstood)
 
 The first misunderstanding is in the name. [Attention deficit hyperactivity disorder](https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder) (ADHD) is called an "attention deficit," but that is not what people with ADHD experience.
@@ -106,7 +100,7 @@ If you are a parent, teacher, or ADHD player, a few adjustments change everythin
 
 ---
 
-**In summary**
+### Summary in one table
 
 | Aspect | What research says |
 | --- | --- |
@@ -134,7 +128,16 @@ Not systematically, for lack of robust enough evidence to put chess in official 
 
 ---
 
-Are you ADHD and play chess, or know a child in that situation? Has the board changed anything in how you manage attention, or did it not work at all? Both testimonies help. Share in the comments.
+**After reading:** **short sessions** (20 minutes), **same weekly slot**, **physical board** as a priority; avoid large noisy rooms at the start. A complement to medical or psychological care, not a substitute.
+
+---
+
+## Key takeaways
+
+- ADHD is not literally an attention deficit: it is an executive-function deficit, especially inhibition and planning (Barkley, 1997)
+- The ADHD brain responds better to immediate feedback, stable rules, and tangible stakes, exactly what the chessboard offers
+- Direct chess-ADHD studies are still limited but neurobiological mechanisms are well documented (Castellanos & Tannock, 2002)
+- Chess is a valuable complement to specialized care, not a substitute
 
 ---
 

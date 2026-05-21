@@ -4,12 +4,6 @@ Yet if you had asked Karpov to memorise a list of thirty unrelated words he woul
 
 This paradox is not a mystery reserved for Soviet champions. It is one of the twentieth century's most important findings in cognitive psychology, and it has a direct consequence for how you train. If you have played chess for years and plateaued, there is a good chance this explanation clarifies why.
 
-> **The essentials in 4 points:**
-> - Grandmasters do not have globally superior memory: their scores on standard tests (word lists, digits) are ordinary
-> - Their edge is domain-specific: they memorise "chunks", functional groups of pieces, not individual pieces (Chase & Simon, 1973)
-> - Gobet and Simon (1996) refined the model with "templates": flexible cognitive structures that handle very complex positions
-> - Practical consequence: playing fifty blitz games without analysis barely builds those structures. Effective training is reflective, not volumetric
-
 ## The uncomfortable paradox
 
 Here is the world's simplest experiment to test chess memory. You show a middlegame position for five seconds. You hide the board. You ask the player to reconstruct it from memory.
@@ -128,7 +122,16 @@ Partly. Blitz exposes you to many patterns quickly, which can build visual famil
 
 ---
 
-Have you ever "recognised" a position without being able to explain why you knew what to play? That is exactly a chunk activating. The library works for you even when you are not consciously consulting it. Share your experience in the comments.
+**After reading:** for **one week**, replay one analysed game **in your head only** (no board) before sleeping; that single act builds chunks faster than ten unanalysed blitz games.
+
+---
+
+## Key takeaways
+
+- Grandmasters do not have globally superior memory: their scores on standard tests (word lists, digits) are ordinary
+- Their edge is domain-specific: they memorise "chunks", functional groups of pieces, not individual pieces (Chase & Simon, 1973)
+- Gobet and Simon (1996) refined the model with "templates": flexible cognitive structures that handle very complex positions
+- Practical consequence: playing fifty blitz games without analysis barely builds those structures. Effective training is reflective, not volumetric
 
 ---
 

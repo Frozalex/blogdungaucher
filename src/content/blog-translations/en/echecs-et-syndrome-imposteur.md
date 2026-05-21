@@ -4,12 +4,6 @@ You may know this feeling: the inability to own a victory, to feel it as legitim
 
 This is not modesty. It is not realism. It is impostor syndrome. And in chess it takes particularly insidious forms.
 
-> **The essentials in 4 points:**
-> - Impostor syndrome is a well-documented psychological phenomenon, especially common in intellectual and competitive activities
-> - In chess it often shows up as wins attributed to the opponent's luck and losses taken as proof of your "true" level
-> - The nature of the Elo system makes things worse: a number that goes up and down creates an unstable player identity tied to results
-> - The solution is not to "believe in yourself" more, but to change the frame you use to judge your own progress
-
 ## What impostor syndrome really is
 
 ### The original definition
@@ -120,7 +114,7 @@ In clubs, forums, and online communities, stories of players who feel "fake" des
 
 ---
 
-**In summary**
+### Summary in one table
 
 | Manifestation | What makes it worse | What helps |
 | --- | --- | --- |
@@ -155,7 +149,16 @@ If impostor syndrome spills into other areas of life (work, relationships, other
 
 ---
 
-Next time you win a game you "should not" have won, try noting one concrete thing you did well (not vaguely but precisely: one move, one decision, one moment). Not to deny that your opponent made mistakes. Just so the victory also contains something that belongs to you. Have you recognised this impostor feeling at the board? Share in the comments.
+**After reading:** the next time you win an "undeserved" game, note **one** specific decision you authored (move, time use, plan), to anchor the win in a verifiable fact.
+
+---
+
+## Key takeaways
+
+- Impostor syndrome is a well-documented psychological phenomenon, especially common in intellectual and competitive activities
+- In chess it often shows up as wins attributed to the opponent's luck and losses taken as proof of your "true" level
+- The nature of the Elo system makes things worse: a number that goes up and down creates an unstable player identity tied to results
+- The solution is not to "believe in yourself" more, but to change the frame you use to judge your own progress
 
 ---
 

@@ -62,8 +62,6 @@ When Chess.com becomes a crutch, it is no longer the hobby that relaxes you, it 
 
 You lose a silly game. You instantly requeue. You lose less well. You requeue. You lose even worse.
 
-Welcome to the spiral: [tilt](https://en.wikipedia.org/wiki/Tilt_(poker)), imported from poker, exported to your couch.
-
 Stress rises, cortisol climbs; [Dr Elke van der Meer](https://www.researchgate.net/profile/Elke-Van-der-Meer) ([Humboldt Berlin](https://en.wikipedia.org/wiki/Humboldt_University_of_Berlin)) measured Blitz stress levels comparable to... a skydiver before the first jump. Under pressure, the [prefrontal cortex](https://en.wikipedia.org/wiki/Prefrontal_cortex) lets go; the [amygdala](https://en.wikipedia.org/wiki/Amygdala) takes the wheel. You play fast and bad. [Matthias Brand](https://en.wikipedia.org/wiki/Matthias_Brand) links this to executive function in problematic use.
 
 **Cruel paradox:** the more you try to fix it, the deeper you sink.
@@ -124,7 +122,7 @@ Chess is beautiful. It deserves better than being a crutch or a punishment.
 
 The real "master," sometimes, is the one who closes the app and smiles again off the rating.
 
-**Final question:** have you ever said *"just one game"* and found yourself two hours later still in front of the screen? Tell us in the comments: we have probably all been there, to different degrees.
+**After reading:** if the *"just one more game"* loop rings true, set an **alarm before** opening the platform **and** schedule one weekly **screen-free** session (book puzzle or club game) for four weeks to measure the sleep gain.
 
 ### Sources and references
 

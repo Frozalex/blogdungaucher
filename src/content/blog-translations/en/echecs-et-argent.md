@@ -6,12 +6,6 @@ Magnus Carlsen, arguably the strongest player in chess history by almost every m
 
 This is not a popularity problem: chess has an estimated 600 to 800 million players worldwide. It is a structural economic problem. And that structure is more interesting to unpack than the headline numbers suggest.
 
-> **The essentials in 4 points:**
-> - Chess prize pools are tiny compared with other sports and strategy games, including some esports
-> - Most professional players do not live from tournaments but from teaching, online content, and streaming contracts
-> - Chess.com and Lichess reshaped the game's economy, creating new income streams while also capturing much of the value
-> - Chess economics are shifting: the question is not whether incomes will rise, but who will capture them
-
 ## The shocking numbers
 
 ### What a professional player actually earns
@@ -124,7 +118,7 @@ Chess.com's [PRO Chess League](https://www.chess.com/article/view/pro-chess-leag
 
 ---
 
-**In summary**
+### Summary in one table
 
 | Aspect | Current state | Trend |
 | --- | --- | --- |
@@ -156,7 +150,18 @@ The question comes up regularly. The IOC recognised FIDE in 1999. Chess has appe
 
 ---
 
-Chess has produced some of the most fascinating minds in sport and intellectual history. So far it has failed to build the economic system that would let those minds live decently from their art. Do you think the model will change in the next ten years? Or is chess doomed to stay a passion game rather than an industry? Share in the comments.
+Chess has produced some of the most fascinating minds in sport and intellectual history; the **economic model** outside the very top remains fragile. Realistic levers on the player side: structured **teaching**, value-added **content** (courses, books, video), **platform deals** for a small minority. A single "industry" that supports everyone in the game is a long-term scenario, not an imminent shift.
+
+**After reading:** if you aim for a semi-pro path, **model three income streams** (lessons, content, tournaments) on a single sheet, not just the prize money of the master you watch on stream.
+
+---
+
+## Key takeaways
+
+- Chess prize pools are tiny compared with other sports and strategy games, including some esports
+- Most professional players do not live from tournaments but from teaching, online content, and streaming contracts
+- Chess.com and Lichess reshaped the game's economy, creating new income streams while also capturing much of the value
+- Chess economics are shifting: the question is not whether incomes will rise, but who will capture them
 
 ---
 

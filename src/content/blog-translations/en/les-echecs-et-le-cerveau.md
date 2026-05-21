@@ -2,13 +2,6 @@ It is not an exceptional brain that lets you play chess brilliantly. Relentless 
 
 Our brain is not a machine fixed at birth: it is modeling clay that rewires, repairs, and optimizes itself based on the challenges we throw at it. After this, you will not look at your post-game fatigue the same way.
 
-
-> **The essentials in 4 points:**
-> - Grandmasters do not have higher IQs: they carry a library of 50,000 to 300,000 memorized "chunks" (Gobet)
-> - Chess practice shifts cognitive work toward fast visual recognition, measurable on MRI (Atherton, 2003)
-> - Studies suggest that dedicated players develop protective cognitive reserve against aging (Verghese, NEJM 2003)
-> - The chessboard trains the prefrontal cortex: inhibitory control, decision-making under pressure
-
 ## The illusion of innate intelligence: it is not what you think
 
 For a long time, popular belief (and even part of the scientific community) held that chess champions possessed globally above-average intelligence, a sort of natural "chess IQ." The idea was simple: if you shine at chess, you must be a little genius at mathematics, logic, and spatial reasoning.
@@ -65,7 +58,7 @@ Long-term chess practice literally reorganizes the brain: geography of effort, c
 
 [Magnus Carlsen](https://en.wikipedia.org/wiki/Magnus_Carlsen) had a scan in 2015 for a Norwegian documentary project. Result: a normal brain, no special architecture. Nothing that distinguishes a World Champion from an accountant in Bergen. What the scanner misses is functional geography: which areas light up, how fast, with what degree of automation. Carlsen started playing seriously at age eight. Thirty years of intensive practice shifted positional work toward fast-recognition zones, exactly the medial temporal to frontal transfer described above. His brain no longer "calculates" elementary positions. It reads them. The apparent speed of his decisions is not genius: it is accumulated neuroplasticity, move after move, since childhood.
 
-Next time you leave the board exhausted, what exactly just worked hard? Tell us in the comments.
+**After reading:** the next time you leave a long game drained, ask which areas just worked hard, then favour one **slow analysed game** weekly over five blitz games to consolidate the gains.
 
 ---
 
@@ -83,6 +76,15 @@ Research does not set a universal threshold. What matters in neuroplasticity stu
 ### Is rapid chess (Blitz) as beneficial as slow chess?
 
 No. Studies on brain activation show that slow chess (games of 30 minutes or more) engages planning and metacognition areas. Blitz relies mainly on stored pattern recognition, useful for tactical training, but less formative for long-term cognitive benefits.
+
+---
+
+## Key takeaways
+
+- Grandmasters do not have higher IQs: they carry a library of 50,000 to 300,000 memorized "chunks" (Gobet)
+- Chess practice shifts cognitive work toward fast visual recognition, measurable on MRI (Atherton, 2003)
+- Studies suggest that dedicated players develop protective cognitive reserve against aging (Verghese, NEJM 2003)
+- The chessboard trains the prefrontal cortex: inhibitory control, decision-making under pressure
 
 ---
 

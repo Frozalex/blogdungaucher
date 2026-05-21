@@ -172,6 +172,19 @@ const otherPillars = categorySlugs
           </div>
           <h1>{post.data.title}</h1>
           <p class="article-excerpt">{post.data.excerpt}</p>
+          {post.data.updatedDate &&
+            post.data.updatedDate.getTime() !== post.data.publishDate.getTime() && (
+            <p class="meta-updated">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 12a9 9 0 1 0 3-6.7" />
+                <path d="M3 4v5h5" />
+              </svg>
+              Aktualisiert am
+              <time datetime={post.data.updatedDate.toISOString()}>
+                {formatDate(post.data.updatedDate)}
+              </time>
+            </p>
+          )}
         </header>
 
         {useRemotionIntro && (
@@ -436,6 +449,25 @@ const otherPillars = categorySlugs
     color: var(--text-muted);
     max-width: 38rem;
   }
+
+  /* "Aktualisiert am …" : gleiche editoriale Pille wie auf der FR-Seite. */
+  .meta-updated {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.85rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: var(--radius-pill);
+    background: color-mix(in srgb, var(--c) 8%, var(--surface));
+    border: 1px solid color-mix(in srgb, var(--c) 18%, var(--border-soft));
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    line-height: 1;
+  }
+  .meta-updated svg { flex-shrink: 0; color: var(--c); opacity: 0.85; }
+  .meta-updated time { font-weight: 600; color: var(--text-main); }
 
   /* corps */
   .article-body {

@@ -6,12 +6,6 @@ Thousands of parents, educators, and therapists live this scene. The striking af
 
 Whether you are a parent, teacher, or player yourself, here is what research really says about why, and why it changes what we can expect from the board in practice.
 
-> **The essentials in 4 points:**
-> - 1 in 36 children is autistic in the United States (CDC, 2023); 1 in 100 worldwide (WHO)
-> - The chessboard is a "perfect-information game": no implicit rules, no social subtext
-> - *Systemizing* theory (Baron-Cohen, Cambridge) explains why autistic brains excel there naturally
-> - Chess can improve executive functions and reduce social anxiety, never replace comprehensive care
-
 ## The autism spectrum: what you think you know is probably incomplete
 
 [Autism spectrum disorder](https://en.wikipedia.org/wiki/Autism_spectrum) (ASD) is a neurodevelopmental condition marked by persistent differences in social communication and restricted or repetitive behaviors. The current definition comes from the [Diagnostic and Statistical Manual of Mental Disorders](https://en.wikipedia.org/wiki/Diagnostic_and_Statistical_Manual_of_Mental_Disorders) (DSM-5), published by the [American Psychiatric Association](https://en.wikipedia.org/wiki/American_Psychiatric_Association) in 2013.
@@ -129,7 +123,7 @@ In this world of 64 squares, implicit rules vanish. What remains is the cold bea
 
 If one sentence should stick: chess can be a powerful framework, never a **label**, never a substitute for serious support when it is needed.
 
-Do you have a relative, student, or child who found balance on 64 squares? Share in the comments; concrete stories help families looking for leads.
+If you support an autistic person who connects with chess: **short sessions**, **stable place**, **rules repeated**; note what works (duration, puzzles versus free games) so you can replicate it. For the link with cognition measurable beyond ASD, continue with [chess and the brain](/en/blog/les-echecs-et-le-cerveau/).
 
 ---
 
@@ -150,6 +144,17 @@ No. Available data show chess is a serious complement to multidisciplinary care 
 ### Why do autistic people often have a natural affinity with chess?
 
 According to Simon Baron-Cohen's *systemizing* theory (Cambridge), autistic brains have a strong tendency to analyze and build rule systems. The chessboard, a perfect-information game without social ambiguity, with stable, verifiable rules, maps almost perfectly onto that cognitive profile.
+
+**After reading:** for a first setup, aim for **three** short sessions per week, physical board, **no** rating goal for a month; note what tires (noise, duration, group size).
+
+---
+
+## Key takeaways
+
+- 1 in 36 children is autistic in the United States (CDC, 2023); 1 in 100 worldwide (WHO)
+- The chessboard is a "perfect-information game": no implicit rules, no social subtext
+- *Systemizing* theory (Baron-Cohen, Cambridge) explains why autistic brains excel there naturally
+- Chess can improve executive functions and reduce social anxiety, never replace comprehensive care
 
 ---
 

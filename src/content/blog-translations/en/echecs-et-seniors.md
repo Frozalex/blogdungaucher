@@ -1,11 +1,5 @@
 Raymond is 79. He has played chess since age 12 in a provincial club, two evenings a week. His doctor says he has the cognitive profile of a 65-year-old. That is not genetic miracle: it is, in all likelihood, the result of decades of an activity that neuroscience today considers one of the most protective against cognitive decline.
 
-> **The essentials in 4 points:**
-> - Cognitive reserve (Stern, 2009) explains why two brains with the same lesions do not show the same symptoms: one compensates, the other does not
-> - The Verghese study (*NEJM*, 2003): 469 seniors followed 21 years, **74%** reduction in dementia risk among regular board-game players
-> - Chess beats crosswords on one key point: it requires **modeling an unpredictable opponent**, the capacity most vulnerable to aging
-> - There is no age limit for starting and gaining cognitive benefit
-
 But careful: "protective" does not mean "magical." What science says about chess and aging is both more precise and more interesting than the slogan "exercise your brain."
 
 ## "Cognitive reserve": the concept nobody really explains
@@ -65,7 +59,7 @@ Starting at 65 will not match results from practice begun at 15. But what truly 
 
 ---
 
-**In summary**
+### Summary in one table
 
 | Question | Short answer |
 | --- | --- |
@@ -89,7 +83,16 @@ The problem-solving component is equivalent. The social component (an independen
 
 ---
 
-Do you notice a difference in how you handle complex positions compared with ten years ago, slower perhaps but more economical? Share in the comments.
+**After reading:** favour **one long analysed game** over three quick ones; for recent data on games and cognition, continue with [Chess and prevention of cognitive decline](/en/blog/echecs-alzheimer-prevention-declin-cognitif/).
+
+---
+
+## Key takeaways
+
+- Cognitive reserve (Stern, 2009) explains why two brains with the same lesions do not show the same symptoms: one compensates, the other does not
+- The Verghese study (*NEJM*, 2003): 469 seniors followed 21 years, **74%** reduction in dementia risk among regular board-game players
+- Chess beats crosswords on one key point: it requires **modeling an unpredictable opponent**, the capacity most vulnerable to aging
+- There is no age limit for starting and gaining cognitive benefit
 
 ---
 

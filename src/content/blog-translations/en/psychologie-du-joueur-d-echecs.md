@@ -2,13 +2,7 @@ Before your hand even touches the first pawn, something has already happened. A 
 
 Chess is unusual in how starkly it lays intelligence bare, as few disciplines do. Every mistake is irrefutable, recorded in the game's log. There is no luck to invoke, no teammate to blame, no bad weather that day. The chessboard holds up a merciless mirror. That is precisely why understanding your own psychology becomes, at a certain level, as important as knowing theoretical lines.
 
-What you will find here is a mirror. Not generic advice: a map of your own patterns. Ego, tilt, impostor, zeitnot. So the next game is less naive than the last.
-
-> **The essentials in 4 points:**
-> - The gap between playing to win and playing not to lose is psychologically vast (Kasparov)
-> - Tilt is not weakness: it is a readable signal about your emotional patterns (Damasio, Dvoretsky)
-> - Flow (Csikszentmihalyi) emerges when the challenge sits at the edge of your skills, neither too easy nor crushing
-> - The quality of your thinking is the real variable of progress, not the game score
+The goal: a **map** of your patterns (ego, tilt, impostor, zeitnot), not a list of generic tips, so the next game is a little less naive than the last.
 
 ## Ego and outcome: playing to win vs. playing not to lose
 
@@ -109,6 +103,17 @@ The most effective rule according to trainers, including Mark Dvoretsky: stop pl
 ### Why do we play worse under time pressure?
 
 Zeitnot activates a documented mechanism: analysis paralysis. The brain seeks the perfect answer instead of a good fast answer, consumes time, and panic spirals (Kahneman, System 2 overheating). The solution is not to calculate faster: it is to trust positional judgment earlier (System 1).
+
+**After reading:** on your next loss, note in one sentence the **emotion** at the moment of the first big weak move, then the **technical error**: cold analysis starts there, not from the rating.
+
+---
+
+## Key takeaways
+
+- The gap between playing to win and playing not to lose is psychologically vast (Kasparov)
+- Tilt is not weakness: it is a readable signal about your emotional patterns (Damasio, Dvoretsky)
+- Flow (Csikszentmihalyi) emerges when the challenge sits at the edge of your skills, neither too easy nor crushing
+- The quality of your thinking is the real variable of progress, not the game score
 
 ---
 

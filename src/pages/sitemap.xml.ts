@@ -4,7 +4,11 @@ import { siteConfig, staticRoutes } from "../data/site";
 import { getAllPosts, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
 
-const langs: SiteLang[] = ["fr", "en", "de"];
+/** Langues indexées dans le sitemap.
+   `de` est volontairement exclu : les pages allemandes existent en build mais ne
+   doivent pas être proposées à l'indexation tant que la rédaction native n'est
+   pas finalisée. À réintégrer en ajoutant "de" à cette liste. */
+const langs: SiteLang[] = ["fr", "en"];
 
 export const GET: APIRoute = async () => {
   const posts = await getAllPosts();

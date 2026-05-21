@@ -8,12 +8,6 @@ What happens in that room is not symbolic. It is not recreation. It is deliberat
 
 An inmate who learns to see three moves ahead on a board may also learn something about the consequences of decisions off the board. That hypothesis is no longer purely intuitive. It has grounding in modern criminology.
 
-> **The essentials in 4 points:**
-> - Contemporary criminology links three cognitive deficits to recidivism: short-term thinking, impulsivity, weak theory of mind (Ross & Fabiano, 1985)
-> - Those three deficits map onto three demands every chess game trains move after move
-> - Documented programmes (Change Through Chess, San Quentin) report observed effects on behaviour in custody, but randomised trials remain rare
-> - The main limitation of all such programmes: selection bias; participants are often already motivated to change
-
 ## Why recidivism starts in the head
 
 Contemporary criminology has gradually shifted focus. Behind well-documented social factors (poverty, exclusion, fractured families), specific cognitive profiles appear in recidivism research.
@@ -104,7 +98,7 @@ These limits do not disqualify the approach. They frame honest interpretation.
 
 ---
 
-**In summary**
+### Summary in one table
 
 | Aspect | What the data suggest |
 | --- | --- |
@@ -136,7 +130,18 @@ That is one of the most interesting dimensions. Anticipating your opponent's mov
 
 ---
 
-The board teaches something few activities teach as clearly: every decision has a visible, irreversible consequence, and the person across from you has a perspective worth understanding. Do you think that lesson can really shift a mindset entrenched for years? Or does it need very specific conditions to stick? Share in the comments.
+The board teaches something few activities teach as clearly: every decision has a visible, irreversible consequence, and the person across from you has a perspective worth understanding. Programmes that **last** combine play, **stable human support**, and **continuity after release**; the board alone does not rewrite a life. For cognitive effects measured outside prison settings, see [chess and the brain](/en/blog/les-echecs-et-le-cerveau/).
+
+**After reading:** if you run or support a workshop, define **one** measurable in-custody goal (respecting the clock, articulating the move played) over six sessions before evaluating anything about recidivism.
+
+---
+
+## Key takeaways
+
+- Contemporary criminology links three cognitive deficits to recidivism: short-term thinking, impulsivity, weak theory of mind (Ross & Fabiano, 1985)
+- Those three deficits map onto three demands every chess game trains move after move
+- Documented programmes (Change Through Chess, San Quentin) report observed effects on behaviour in custody, but randomised trials remain rare
+- The main limitation of all such programmes: selection bias; participants are often already motivated to change
 
 ---
 
