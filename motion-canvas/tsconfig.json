@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
+    "jsxImportSource": "@motion-canvas/2d/lib",
+    "experimentalDecorators": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "useDefineForClassFields": false,
+    "resolveJsonModule": true,
+    "types": ["@motion-canvas/core/lib/types"]
+  },
+  "include": ["src/**/*", "src/**/*.json"]
+}

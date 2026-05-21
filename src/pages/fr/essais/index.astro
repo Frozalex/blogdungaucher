@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import EssaisComingSoon from "../../../components/EssaisComingSoon.astro";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+---
+
+<BaseLayout
+  title="Essais | textes longs et personnels | Blog d'un Gaucher"
+  description="Carnet éditorial : essais longs et personnels du Blog d'un Gaucher. Premier texte à paraître prochainement."
+  canonicalPath="/fr/essais/"
+  lang="fr"
+  enPath="/en/essais/"
+  dePath="/de/essais/"
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Accueil", path: "/fr/" },
+    { name: "Essais", path: "/fr/essais/" },
+  ])}
+>
+  <EssaisComingSoon lang="fr" />
+</BaseLayout>

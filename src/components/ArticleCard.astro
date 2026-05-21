@@ -19,16 +19,6 @@ const postExcerpt =
     : post.data.excerpt;
 
 const thumbSrc = getPostHeroSrc(post);
-
-/** Glyphe pièce d'échecs typé par rubrique : différencie les cartes sans hero. */
-const categoryGlyph: Record<string, string> = {
-  science: "♞",
-  esprit: "♛",
-  societe: "♜",
-  "grand-oral": "♚",
-  analyses: "♝",
-};
-const fallbackGlyph = categoryGlyph[post.data.category] ?? "♞";
 ---
 <article
   class={`card scale-in ${featured ? "featured" : ""}`}
@@ -48,7 +38,7 @@ const fallbackGlyph = categoryGlyph[post.data.category] ?? "♞";
         />
       ) : (
         <div class="card-thumb-fallback" aria-hidden="true">
-          <span class="card-thumb-fallback__glyph">{fallbackGlyph}</span>
+          <span class="card-thumb-fallback__logo" role="presentation"></span>
           <span class="card-thumb-fallback__kicker" data-t={`categories.${post.data.category}.shortLabel`}>
             {category.shortLabel}
           </span>
@@ -205,16 +195,27 @@ const fallbackGlyph = categoryGlyph[post.data.category] ?? "♞";
       12px 12px;
     overflow: hidden;
   }
-  .card-thumb-fallback__glyph {
-    font-family: var(--font-serif);
-    font-size: clamp(4.5rem, 16vw, 6.5rem);
-    line-height: 0.85;
-    color: color-mix(in srgb, var(--accent) 72%, var(--text-main));
-    text-shadow: 0 2px 14px color-mix(in srgb, var(--accent) 25%, transparent);
+  /* Logo du site appliqué en mask-image : la silhouette du SVG public/images/logo.svg
+     est colorisée avec la couleur d'accent de la rubrique via background-color.
+     C'est la technique la plus simple pour avoir un SVG externe recolorable. */
+  .card-thumb-fallback__logo {
+    display: block;
+    width: clamp(3.5rem, 18vw, 5.75rem);
+    aspect-ratio: 625 / 868;
+    background-color: color-mix(in srgb, var(--accent) 78%, var(--text-main));
+    -webkit-mask-image: url("/images/logo.svg");
+    mask-image: url("/images/logo.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    filter: drop-shadow(0 2px 14px color-mix(in srgb, var(--accent) 22%, transparent));
     user-select: none;
     pointer-events: none;
     transform: rotate(-6deg);
-    transition: transform 320ms var(--ease-spring), color 220ms ease;
+    transition: transform 320ms var(--ease-spring), background-color 220ms ease;
   }
   .card-thumb-fallback__kicker {
     position: absolute;
@@ -237,14 +238,18 @@ const fallbackGlyph = categoryGlyph[post.data.category] ?? "♞";
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .card:hover .card-thumb-fallback__glyph {
-    transform: rotate(0deg) scale(1.04);
+  .card:hover .card-thumb-fallback__logo {
+    transform: rotate(0deg) scale(1.06);
+    background-color: var(--accent);
+  }
+  [data-theme="dark"] .card-thumb-fallback__logo {
+    background-color: color-mix(in srgb, var(--accent) 88%, white);
   }
   @media (prefers-reduced-motion: reduce) {
-    .card-thumb-fallback__glyph {
+    .card-thumb-fallback__logo {
       transition: none;
     }
-    .card:hover .card-thumb-fallback__glyph {
+    .card:hover .card-thumb-fallback__logo {
       transform: rotate(-6deg);
     }
   }

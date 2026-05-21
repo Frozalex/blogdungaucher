@@ -1,0 +1,178 @@
+---
+type Lang = "fr" | "en" | "de";
+const { lang = "fr" } = Astro.props as { lang?: Lang };
+
+const copy: Record<
+  Lang,
+  { eyebrow: string; h1: string; lead: string; curtainTitle: string; curtainText: string }
+> = {
+  fr: {
+    eyebrow: "Carnet éditorial",
+    h1: "Essais",
+    lead: "Textes longs et personnels, pas des analyses. Ce que les rubriques ne disent pas, et pourquoi je continue à jouer.",
+    curtainTitle: "Le premier essai arrive",
+    curtainText:
+      "Les essais sont en cours d'écriture. Ils ne suivront pas un rythme régulier : ils paraîtront quand un texte tient debout.",
+  },
+  en: {
+    eyebrow: "Editorial notebook",
+    h1: "Essays",
+    lead: "Long-form personal writing, not analyses. What the sections do not say, and why I keep playing.",
+    curtainTitle: "First essay coming",
+    curtainText:
+      "Essays are being written. They will not follow a regular schedule: each piece will appear when it can stand on its own.",
+  },
+  de: {
+    eyebrow: "Redaktionelles Notizbuch",
+    h1: "Essays",
+    lead: "Lange persönliche Texte, keine Analysen. Was die Rubriken nicht sagen, und warum ich weiterspiele.",
+    curtainTitle: "Der erste Essay kommt",
+    curtainText:
+      "Die Essays werden geschrieben. Sie erscheinen ohne festen Rhythmus, sondern wenn ein Text auf eigenen Beinen steht.",
+  },
+};
+
+const t = copy[lang];
+---
+
+<section class="page-hero essais-hero">
+  <div class="container">
+    <span class="eyebrow reveal">{t.eyebrow}</span>
+    <h1 class="reveal">{t.h1}</h1>
+    <p class="page-lead reveal">{t.lead}</p>
+  </div>
+</section>
+
+<div class="essais-stage">
+  <div class="container essais-stage__wrap">
+    <div class="essais-backdrop" aria-hidden="true"></div>
+    <article class="essais-card reveal">
+      <p class="essais-card__title">{t.curtainTitle}</p>
+      <p class="essais-card__text">{t.curtainText}</p>
+      <div class="essais-card__rule" aria-hidden="true"></div>
+    </article>
+  </div>
+</div>
+
+<style>
+  .essais-hero.page-hero {
+    padding: 4.5rem 0 2rem;
+  }
+
+  .essais-hero h1 {
+    font-family: var(--font-serif, Georgia, serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    margin: 0.5rem 0 0.75rem;
+    letter-spacing: -0.015em;
+  }
+
+  .page-lead {
+    max-width: 42rem;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--text-muted, inherit);
+    opacity: 0.92;
+  }
+
+  .essais-stage {
+    padding: 0 0 4rem;
+  }
+
+  .essais-stage__wrap {
+    position: relative;
+    min-height: min(58vh, 480px);
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  /* Fond éditorial : grain + ligne de pliure légère pour suggérer le papier. */
+  .essais-backdrop {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background:
+      radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--green) 8%, transparent) 0%, transparent 45%),
+      radial-gradient(circle at 70% 75%, color-mix(in srgb, var(--text-dim) 6%, transparent) 0%, transparent 40%),
+      linear-gradient(145deg, var(--surface-warm, rgba(0, 0, 0, 0.03)) 0%, transparent 100%);
+    border: 1px solid var(--border-soft, rgba(0, 0, 0, 0.06));
+    pointer-events: none;
+  }
+
+  /* "Carte feuille" centrée — métaphore d'un manuscrit en attente. */
+  .essais-card {
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    width: 100%;
+    max-width: 44rem;
+    min-height: min(46vh, 380px);
+    margin: 2rem 0;
+    padding: clamp(2.5rem, 6vw, 4rem) clamp(1.75rem, 5vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+    color: #1a1a1a;
+    border-radius: 3px;
+    border-left: 4px solid var(--green);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.85) inset,
+      0 28px 56px rgba(0, 0, 0, 0.08),
+      0 8px 16px rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  :global([data-theme="dark"]) .essais-card {
+    background: color-mix(in srgb, var(--surface) 92%, white 8%);
+    color: var(--text-main);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.06) inset,
+      0 28px 56px rgba(0, 0, 0, 0.4),
+      0 8px 24px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+    border-left-color: var(--green);
+  }
+
+  .essais-card__title {
+    margin: 0 0 1rem;
+    font-family: var(--font-serif, Georgia, serif);
+    font-style: italic;
+    font-size: clamp(1.6rem, 3.8vw, 2.1rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    color: var(--green);
+  }
+
+  .essais-card__text {
+    margin: 0;
+    max-width: 30rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444;
+  }
+
+  :global([data-theme="dark"]) .essais-card__text {
+    color: var(--text-muted);
+  }
+
+  .essais-card__rule {
+    margin-top: 2.25rem;
+    width: min(100%, 200px);
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in srgb, var(--green) 60%, transparent) 50%,
+      transparent
+    );
+  }
+</style>

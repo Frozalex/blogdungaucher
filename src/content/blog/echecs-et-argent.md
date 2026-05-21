@@ -22,7 +22,7 @@ La même année, le Championnat du Monde de Formule 1 distribuait environ 1,2 mi
 
 Magnus Carlsen, meilleur joueur de l'histoire des échecs selon pratiquement tous les indicateurs, a cumulé environ 2,4 millions de dollars en prize money sur l'ensemble de sa carrière de tournoi. Pas par saison. Sur toute sa carrière.
 
-Ce n'est pas un problème de popularité : les échecs comptent 600 à 800 millions de joueurs dans le monde selon les estimations. C'est un problème de structure économique. Et cette structure est plus intéressante à démontrer que les chiffres ne le laissent supposer.
+Ce n'est pas un problème de popularité : les échecs comptent 600 à 800 millions de joueurs dans le monde selon les estimations. C'est un problème de structure économique. Et cette structure est plus intéressante à démontrer que les chiffres ne le laissent supposer. (Pour le contexte sociologique sur lequel se greffe ce problème — notamment la sous-représentation des femmes dans les circuits payants — voir [échecs et femmes](/blog/echecs-et-femmes/).)
 
 ## Les chiffres qui choquent
 
@@ -96,7 +96,7 @@ Mais voici la question économique qui se pose : **qui capte la valeur créée p
 
 Ce modèle a une limite : il fonctionne pour les personnalités charismatiques et les joueurs déjà au sommet qui bénéficient d'une notoriété préexistante. Il ne résout pas le problème économique des 1 750 Grand Maîtres qui ne sont pas Hikaru Nakamura.
 
-Il crée aussi une nouvelle hiérarchie dans le monde des échecs : celle de l'audience, pas celle du niveau de jeu. Un joueur de 2600 Elo peu charismatique gagnera moins qu'un joueur de 2450 Elo qui sait animer une communauté. C'est une transformation profonde des incitations dans le milieu.
+Il crée aussi une nouvelle hiérarchie dans le monde des échecs : celle de l'audience, pas celle du niveau de jeu. Un joueur de 2600 Elo peu charismatique gagnera moins qu'un joueur de 2450 Elo qui sait animer une communauté. C'est une transformation profonde des incitations dans le milieu, qui rejoint d'ailleurs le débat plus large sur [la psychologie compétitive du joueur](/blog/psychologie-du-joueur-d-echecs/) : quand le revenu dépend de l'audience plus que du résultat, la pression et les motivations changent de nature.
 
 ### Les tournois en ligne : plus d'argent mais moins de prestige
 

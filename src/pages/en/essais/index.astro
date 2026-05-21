@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import EssaisComingSoon from "../../../components/EssaisComingSoon.astro";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+---
+
+<BaseLayout
+  title="Essays | long-form personal writing | A Left-Hander's Blog"
+  description="Editorial notebook: long-form personal essays from A Left-Hander's Blog. First piece coming soon."
+  canonicalPath="/en/essais/"
+  lang="en"
+  frPath="/fr/essais/"
+  enPath="/en/essais/"
+  dePath="/de/essais/"
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/en/" },
+    { name: "Essays", path: "/en/essais/" },
+  ])}
+>
+  <EssaisComingSoon lang="en" />
+</BaseLayout>
