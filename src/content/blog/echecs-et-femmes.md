@@ -2,6 +2,7 @@
 title: "Échecs et Femmes : pourquoi si peu de joueuses aujourd'hui ?"
 excerpt: "40 femmes parmi 1700 Grands Maîtres. L'écart n'est pas biologique : il est mathématique, historique et psychologique. Ce que les données disent vraiment, et pourquoi l'argument du cerveau féminin ne tient pas."
 publishDate: "2026-04-03"
+updatedDate: "2026-05-21"
 category: "societe"
 featured: false
 featuredRank: 99
@@ -100,7 +101,7 @@ Une étude publiée par la prestigieuse *Econometric Society* (Backus, Cubel et 
 
 Comment expliquer cette chute de performance ciblée chez les femmes ? Par un phénomène psychologique bien documenté : [la menace du stéréotype](https://fr.wikipedia.org/wiki/Menace_du_st%C3%A9r%C3%A9otype) (*stereotype threat*), théorisé par les psychologues [Claude Steele](https://fr.wikipedia.org/wiki/Claude_Steele) et Joshua Aronson de l'[Université Stanford](https://fr.wikipedia.org/wiki/Universit%C3%A9_Stanford).
 
-Quand une femme joue aux échecs contre un homme, elle ne combat pas seulement la position sur le plateau. Elle se bat, inconsciemment, contre le poids du préjugé social qui dit que "les femmes sont moins bonnes aux échecs". Cette angoisse de confirmer le stéréotype consomme de la bande passante cognitive précieuse, de l'énergie mentale qui n'est plus disponible pour calculer des variantes.
+Quand une femme joue aux échecs contre un homme, elle ne combat pas seulement la position sur le plateau. Elle se bat, inconsciemment, contre le poids du préjugé social qui dit que "les femmes sont moins bonnes aux échecs". Cette angoisse de confirmer le stéréotype consomme de la bande passante cognitive précieuse, de l'énergie mentale qui n'est plus disponible pour calculer des variantes. Le mécanisme général — comment une pression psychologique externe dégrade la qualité de la prise de décision pendant une partie — est analysé dans [la psychologie du joueur d'échecs](/blog/psychologie-du-joueur-d-echecs/).
 
 Ce phénomène a été documenté dans de nombreux autres domaines. Des étudiantes en mathématiques jouent moins bien dans des tests lorsqu'elles savent être évaluées en tant que femmes plutôt qu'en tant que simples individus. Des joueurs noirs de golf font moins bien lorsqu'on active mentalement le stéréotype racial avant la partie. La menace du stéréotype n'a pas besoin d'être dite à voix haute pour opérer. L'appartenance à un groupe stigmatisé dans un contexte donné suffit à créer la pression. C'est un fardeau invisible, un handicap psychologique que les joueurs masculins n'ont tout simplement pas à porter.
 
@@ -170,7 +171,7 @@ Dans ce contexte, le classement Elo joue un rôle central. Le classement Elo des
 
 ## Internet : un écran peut-il effacer le genre (et une partie du poids) ?
 
-Une évolution récente mérite d'être signalée : le développement des échecs en ligne a peut-être fourni un espace structurellement différent des tournois physiques. Sur [Chess.com](https://www.chess.com) ou [Lichess](https://lichess.org), le genre de ton adversaire est invisible par défaut. Tu ne vois pas si tu joues contre un homme ou une femme. La menace du stéréotype perd une partie de son carburant. Il n'y a pas de salle de tournoi à 90 % masculine qui te regarde. Il n'y a qu'une position sur 64 cases.
+Une évolution récente mérite d'être signalée : le développement des échecs en ligne a peut-être fourni un espace structurellement différent des tournois physiques. Sur [Chess.com](https://www.chess.com) ou [Lichess](https://lichess.org), le genre de ton adversaire est invisible par défaut. Tu ne vois pas si tu joues contre un homme ou une femme. La menace du stéréotype perd une partie de son carburant. Il n'y a pas de salle de tournoi à 90 % masculine qui te regarde. Il n'y a qu'une position sur 64 cases. (Le revers : le temps passé en ligne sans pause structurée peut renforcer d'autres réflexes négatifs, voir [les bienfaits des pauses aux échecs](/blog/bienfaits-des-pauses-aux-echecs/).)
 
 Des données anecdotiques et plusieurs enquêtes de communauté suggèrent que la proportion de femmes jouant aux échecs en ligne est significativement plus haute que dans les tournois officiels FIDE, avec des estimations allant jusqu'à 20 à 25 % sur certaines plateformes. Cette différence est peut-être le signal le plus clair de toute l'histoire : une grande partie de l'écart de genre aux échecs ne vient pas d'un manque de désir des femmes de jouer. Il vient de l'environnement physique, social et symbolique dans lequel ce jeu s'est historiquement déployé.
 
@@ -195,6 +196,8 @@ L'écart de genre aux échecs est un miroir. Il reflète l'état d'une société
 Les causes sont identifiées, les leviers sont connus : des clubs accueillants dès le plus jeune âge, des institutions qui financent la formation de joueuses d'échecs avec la même rigueur que les programmes masculins, des médias qui couvrent les joueuses sans en faire un angle éditorial exotique. Les biais se déconstruisent. Lentement, mais ils se déconstruisent.
 
 En France comme dans le reste de l'Europe, les fédérations d'échecs ont progressivement créé des programmes d'inclusion pour attirer davantage de joueuses d'échecs. Les championnats scolaires, qui encouragent les filles à apprendre les échecs dès l'école primaire, ont obtenu des résultats encourageants ces dernières années. L'égalité dans le monde des échecs n'est pas un idéal lointain : c'est un objectif atteignable, à condition de voir les conditions de pratique changer durablement. La France a notamment vu sa fédération engager des rencontres et des championnats féminins pour encourager les joueuses françaises à progresser et à se classer parmi les meilleures d'Europe. Des compétitions régionales et nationales ont été créées pour offrir aux joueuses d'échecs françaises plus d'opportunités de jeu dans des conditions favorables.
+
+Le lien plus large entre l'économie de la compétition aux échecs et les inégalités de prize money (femmes / hommes) est traité dans [les échecs et l'argent](/blog/echecs-et-argent/) : il rejoint cette logique de cercle vicieux (audience faible → prize pool faible → carrières plus risquées → moins d'incitation à l'entrée).
 
 ## L'échiquier n'a pas besoin d'excuses : il a besoin de volume
 
