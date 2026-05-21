@@ -1,5 +1,5 @@
 ---
-import { categoryMap, categorySlugs, siteConfig } from "../data/site";
+import { categoryMap, categorySlugs } from "../data/site";
 
 interface Props {
   lang?: "fr" | "en" | "de";
@@ -10,10 +10,7 @@ const blogHref =
   lang === "en" ? "/en/blog/" : lang === "de" ? "/de/blog/" : "/fr/blog/";
 const aboutHref =
   lang === "en" ? "/en/about/" : lang === "de" ? "/de/about/" : "/fr/about/";
-const emailNote =
-  lang === "en"
-    ? siteConfig.futureInfoEmailLabelEn
-    : siteConfig.futureInfoEmailLabel;
+
 ---
 <footer class="footer">
   <div class="container footer-top">
@@ -35,7 +32,6 @@ const emailNote =
         Un espace éditorial indépendant pour explorer les échecs en profondeur, avec des contenus utiles et actionnables.
       </p>
       <a class="footer-contact" href="mailto:contact@blogdungaucher.com" data-t="footer.suggestTopic">Proposer un sujet ou poser une question</a>
-      <p class="footer-note">{emailNote}</p>
     </div>
 
     <div class="footer-col fade-up" style="--motion-delay: 110ms;">
@@ -143,12 +139,6 @@ const emailNote =
     font-size: 0.9rem;
     line-height: 1.65;
     max-width: 24rem;
-  }
-
-  .footer-note {
-    margin-top: 0.7rem;
-    font-size: 0.82rem;
-    color: var(--text-dim);
   }
 
   .footer-contact {
