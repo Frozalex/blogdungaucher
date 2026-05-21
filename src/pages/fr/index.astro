@@ -2,8 +2,10 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HomeLanding from "../../components/HomeLanding.astro";
 
-import { buildWebsiteJsonLd, getLatestPosts } from "../../utils/blog";
+import { buildWebsiteJsonLd, getAllPosts, getLatestPosts } from "../../utils/blog";
 
+const allPosts = await getAllPosts();
+const totalPosts = allPosts.length;
 const latestPosts = await getLatestPosts(6, "fr");
 ---
 <BaseLayout
@@ -12,5 +14,5 @@ const latestPosts = await getLatestPosts(6, "fr");
   canonicalPath="/fr/"
   structuredData={buildWebsiteJsonLd()}
 >
-  <HomeLanding lang="fr" latestPosts={latestPosts} />
+  <HomeLanding lang="fr" latestPosts={latestPosts} totalPosts={totalPosts} />
 </BaseLayout>

@@ -14,8 +14,8 @@ keyTakeaways:
   - "Le vieillissement cognitif normal affecte d'abord la vitesse de traitement et la mémoire de travail — précisément les capacités utiles au blitz. Mais l'intelligence cristallisée (connaissance accumulée, reconnaissance de patterns) résiste beaucoup mieux et reste utile dans les parties lentes."
   - "Les joueurs d'échecs montrent un 'pic de carrière' plus tardif que la plupart des sports cognitifs — autour de 35-45 ans — et certains maintiennent leur niveau de club jusqu'à 70 ans et au-delà, à condition de jouer régulièrement."
   - "La neuroplasticité reste active chez les seniors : des études montrent des améliorations mesurables de la mémoire de travail et de la vitesse de traitement chez des adultes de 65-80 ans après 3-6 mois de pratique régulière des échecs."
-seoTitle: "Échecs et vieillissement cognitif : le jeu ralentit-il le déclin ?"
-seoDescription: "Réserve cognitive, démence, neuroplasticité : ce que la science dit sur les bénéfices des échecs pour le vieillissement cognitif et la prévention de la démence."
+seoTitle: "Réserve cognitive et échecs après 60 ans : ce que dit la neuroplasticité"
+seoDescription: "Comment la réserve cognitive construite par les échecs retarde le déclin après 60 ans. Pic de carrière, neuroplasticité des seniors, comparaison blitz vs parties lentes."
 ogImage: "/images/blog/echecs-vieillissement-cognitif-hero.png"
 heroImage:
   src: "/images/blog/echecs-vieillissement-cognitif-hero.png"

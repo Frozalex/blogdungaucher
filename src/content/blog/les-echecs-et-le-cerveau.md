@@ -15,8 +15,8 @@ keyTakeaways:
   - "Fonctions exécutives (Dania 2021, RCT n=26 athlètes, 10 semaines) : mémoire de travail et attention sélective améliorées dans le groupe échecs vs contrôle."
   - "Transfert cognitif : Sala & Gobet 2017 (méta-analyse, 259 citations) montrent des effets faibles à modérés qui décroissent avec la qualité du design expérimental."
   - "Réserve cognitive (Verghese, NEJM 2003, n=469, 5 ans) : jeux de plateau associés à −74 % de risque de démence ; corrélation, pas causalité prouvée."
-seoTitle: "Les échecs et le cerveau : les bienfaits selon la science"
-seoDescription: "IRM fonctionnelle, neuroplasticité, chronnectome, fonctions exécutives : ce que la recherche mesure vraiment sur les effets des échecs sur le cerveau, avec les chiffres."
+seoTitle: "Échecs et cerveau : ce que l'IRMf révèle sur les joueurs experts"
+seoDescription: "IRM structurelle (Hänggi 2014), chronnectome (Premi 2020), fonctions exécutives : comment le cerveau d'un joueur d'échecs expert est différent neurologiquement — avec les chiffres."
 ogImage: "/images/blog/les-echecs-et-le-cerveau-hero.png"
 heroImage:
   src: "/images/blog/les-echecs-et-le-cerveau-hero.png"

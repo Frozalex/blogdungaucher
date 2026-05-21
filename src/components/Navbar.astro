@@ -89,8 +89,19 @@ const linkKey: Record<string, string> = {
       </ul>
     </nav>
 
-    <!-- Boutons icônes : dark mode + langue -->
+    <!-- Boutons icônes : recherche + dark mode + langue -->
     <div class="nav-actions">
+      <a
+        href={lang === "en" ? "/en/recherche/" : lang === "de" ? "/de/recherche/" : "/fr/recherche/"}
+        class="icon-btn search-btn"
+        aria-label="Rechercher un article"
+        title="Rechercher"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+      </a>
       <button
         id="dark-toggle"
         class="icon-btn"
@@ -142,6 +153,16 @@ const linkKey: Record<string, string> = {
             data-t={linkKey[link.href] ?? ""}
           >{link.label}</a>
         ))}
+        <a
+          href={lang === "en" ? "/en/recherche/" : lang === "de" ? "/de/recherche/" : "/fr/recherche/"}
+          class="mobile-link mobile-search-link"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+          Rechercher
+        </a>
         <div class="mobile-utils">
           <button
             id="dark-toggle-mobile"
@@ -339,6 +360,11 @@ const linkKey: Record<string, string> = {
   [data-theme="dark"] .icon-btn .icon-light { display: none; }
   [data-theme="dark"] .icon-btn .icon-dark  { display: block; }
 
+  /* Bouton recherche : identique aux autres icon-btn */
+  .search-btn {
+    text-decoration: none;
+  }
+
   /* Bouton langue : même taille que dark toggle, juste FR/EN */
   .lang-btn {
     width: 2rem;
@@ -434,6 +460,12 @@ const linkKey: Record<string, string> = {
     color: var(--text-muted);
     font-weight: 600;
   }
+  .mobile-search-link {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
   .mobile-link.active {
     color: var(--text-main);
     background: color-mix(in srgb, var(--green-light) 72%, transparent);
