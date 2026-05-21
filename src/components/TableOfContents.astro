@@ -11,30 +11,46 @@ const t =
   lang === "en"
     ? {
         eyebrow: "Contents",
-        label: "Quick overview",
+        label: "Jump to a section",
         navMobile: "Mobile table of contents",
         navDesktop: "Table of contents",
         inArticle: "In this article",
-        chip: "Navigation",
       }
     : {
         eyebrow: "Sommaire",
-        label: "Aperçu rapide de l'article",
+        label: "Sauter à une section",
         navMobile: "Table des matières mobile",
         navDesktop: "Table des matières",
         inArticle: "Dans cet article",
-        chip: "Navigation",
       };
 
-// Sommaire volontairement compact pour ne pas spoiler tout l'article.
-const PREVIEW_LIMIT = 6;
-const topLevel = headings.filter((h) => h.depth === 2);
-const filtered = topLevel.slice(0, PREVIEW_LIMIT);
-const isTruncated = topLevel.length > PREVIEW_LIMIT;
+/**
+ * Sommaire repensé en "rail" minimal :
+ *   - Toutes les H2 affichées (plus de limite à 6, plus de "...")
+ *   - H3 nestées sous leur H2 parent (indentation visuelle)
+ *   - Barre verticale gauche qui suit l'item actif (Vox/Medium style)
+ *   - Scrollable si > viewport (overflow-y: auto)
+ *
+ * Le composant émet 2 structures différentes selon `mode` :
+ *   - desktop : <nav> sticky en aside droit
+ *   - mobile  : <details> en bandeau collapsible avant le corps
+ *
+ * Groupement H2 → enfants H3 : on parcourt la liste plate dans l'ordre du document,
+ * et on rattache chaque H3 au dernier H2 vu.
+ */
+type Group = { h2: Heading; children: Heading[] };
+
+const groups: Group[] = [];
+for (const h of headings) {
+  if (h.depth === 2) {
+    groups.push({ h2: h, children: [] });
+  } else if (h.depth === 3 && groups.length > 0) {
+    groups[groups.length - 1].children.push(h);
+  }
+}
 ---
-{filtered.length > 0 &&
+{groups.length > 0 &&
   (mode === "mobile" ? (
-    <>
     <details class="toc toc-mobile" id="mobile-toc">
       <summary class="toc-mobile__summary">
         <span class="toc-mobile__text">
@@ -48,147 +64,155 @@ const isTruncated = topLevel.length > PREVIEW_LIMIT;
         </span>
       </summary>
       <nav aria-label={t.navMobile} class="toc-mobile__panel">
-        <ol>
-          {filtered.map((h) => (
-            <li>
-              <a href={`#${h.slug}`} class="toc-link" data-slug={h.slug}>
-                {h.text}
+        <ol class="toc-list">
+          {groups.map((g) => (
+            <li class="toc-row toc-row--h2">
+              <a href={`#${g.h2.slug}`} class="toc-link" data-slug={g.h2.slug}>
+                {g.h2.text}
               </a>
+              {g.children.length > 0 && (
+                <ol class="toc-sublist">
+                  {g.children.map((c) => (
+                    <li class="toc-row toc-row--h3">
+                      <a href={`#${c.slug}`} class="toc-link toc-link--sub" data-slug={c.slug}>
+                        {c.text}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              )}
             </li>
           ))}
-          {isTruncated && <li class="toc-more">...</li>}
         </ol>
       </nav>
     </details>
-    </>
   ) : (
     <nav class="toc toc-desktop" aria-label={t.navDesktop}>
-      <div class="toc-head">
-        <p class="toc-title">{t.inArticle}</p>
-        <span class="toc-chip">{t.chip}</span>
-      </div>
-      <ol>
-        {filtered.map((h) => (
-          <li>
-            <a href={`#${h.slug}`} class="toc-link" data-slug={h.slug}>
-              {h.text}
+      <p class="toc-eyebrow">{t.inArticle}</p>
+      <ol class="toc-list">
+        {groups.map((g) => (
+          <li class="toc-row toc-row--h2">
+            <a href={`#${g.h2.slug}`} class="toc-link" data-slug={g.h2.slug}>
+              {g.h2.text}
             </a>
+            {g.children.length > 0 && (
+              <ol class="toc-sublist">
+                {g.children.map((c) => (
+                  <li class="toc-row toc-row--h3">
+                    <a href={`#${c.slug}`} class="toc-link toc-link--sub" data-slug={c.slug}>
+                      {c.text}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            )}
           </li>
         ))}
-        {isTruncated && <li class="toc-more">...</li>}
       </ol>
     </nav>
   ))}
 
 <style>
-  .toc {
+  /* ──── Rail desktop ────────────────────────────────────────────────
+     Style éditorial minimal : pas de carte, juste une liste avec un
+     filet vertical à gauche qui se colore sur l'item actif (Vox style).
+     Scrollable si dépasse la hauteur disponible. */
+  .toc-desktop {
     position: relative;
-    overflow: hidden;
-    padding: 1.1rem 1.2rem;
-    border-radius: var(--radius-lg);
-    background: var(--surface);
-    border: 1px solid var(--border-soft);
-    box-shadow: var(--shadow-xs);
+    padding: 0.5rem 0 0.5rem 1.1rem;
+    border-left: 1px solid var(--border-soft);
+    max-height: calc(100vh - var(--navbar-h) - 4rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
   }
 
-  .toc::before {
+  .toc-desktop::before {
+    /* Filet "actif" superposé au filet de bordure : suit la position du lien actif via --toc-active-y / --toc-active-h. */
     content: "";
     position: absolute;
-    inset: 0 0 auto 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--c, var(--green)), transparent 70%);
+    left: -1px;
+    top: var(--toc-active-y, 0);
+    width: 2px;
+    height: var(--toc-active-h, 0);
+    background: var(--c, var(--green));
+    border-radius: 2px;
+    transition: top 220ms var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+                height 220ms var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
     opacity: 0.95;
   }
 
-  .toc-title {
+  .toc-eyebrow {
+    margin: 0 0 0.85rem;
     font-family: var(--font-display);
-    font-size: 0.75rem;
+    font-size: 0.68rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--text-dim);
+  }
+
+  /* ──── Listes ──────────────────────────────────────────────────── */
+  .toc-list,
+  .toc-sublist {
+    list-style: none;
+    padding: 0;
     margin: 0;
   }
 
-  .toc-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    margin-bottom: 0.8rem;
+  .toc-row {
+    display: block;
   }
 
-  .toc-chip {
-    display: inline-flex;
-    align-items: center;
-    min-height: 1.45rem;
-    padding: 0 0.55rem;
-    border-radius: var(--radius-pill);
-    background: color-mix(in srgb, var(--c, var(--green)) 10%, white);
-    color: var(--c, var(--green));
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+  .toc-row--h2 + .toc-row--h2 {
+    margin-top: 0.05rem;
   }
 
-  ol {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    gap: 0.1rem;
+  .toc-sublist {
+    margin: 0.1rem 0 0.4rem;
+    padding-left: 0.85rem;
+    border-left: 1px dashed color-mix(in srgb, var(--border-soft) 90%, transparent);
   }
 
-  li { display: flex; }
-
-  .toc-more {
-    padding: 0.15rem 0.5rem;
-    color: var(--text-dim);
-    font-size: 0.82rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-
+  /* ──── Liens ───────────────────────────────────────────────────── */
   .toc-link {
     display: block;
-    width: 100%;
-    padding: 0.3rem 0.5rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.84rem;
-    color: var(--text-muted);
+    padding: 0.32rem 0.55rem 0.32rem 0.5rem;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 0.86rem;
     line-height: 1.4;
-    border-left: 2px solid transparent;
-    transition: color 140ms ease, background 140ms ease, border-color 140ms ease;
+    color: var(--text-muted);
+    transition: color 140ms ease, background 140ms ease;
   }
+
+  .toc-link--sub {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    padding-left: 0.4rem;
+  }
+
   .toc-link:hover {
     color: var(--text-main);
     background: var(--bg-warm);
   }
+
   .toc-link.active {
     color: var(--c, var(--green));
-    border-left-color: var(--c, var(--green));
-    background: color-mix(in srgb, var(--c, var(--green)) 11%, white);
+    font-weight: 500;
+    background: color-mix(in srgb, var(--c, var(--green)) 6%, transparent);
+  }
+  .toc-link--sub.active {
     font-weight: 500;
   }
 
-  .toc-desktop {
-    transition:
-      transform 220ms var(--ease-spring),
-      box-shadow 220ms var(--ease-out),
-      border-color 220ms ease;
-  }
-
-  .toc-desktop:hover {
-    transform: translateY(-2px);
-    border-color: color-mix(in srgb, var(--c, var(--green)) 24%, var(--border-soft));
-    box-shadow: var(--shadow-sm);
-  }
-
+  /* ──── Mobile : <details> bandeau ──────────────────────────────── */
   .toc-mobile {
     margin: 1rem 0 1.25rem;
     padding: 0;
-    border-color: color-mix(in srgb, var(--c, var(--green)) 15%, var(--border-soft));
-    box-shadow: var(--shadow-sm);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid color-mix(in srgb, var(--c, var(--green)) 18%, var(--border-soft));
+    box-shadow: var(--shadow-xs);
+    overflow: hidden;
   }
 
   .toc-mobile__summary {
@@ -201,13 +225,11 @@ const isTruncated = topLevel.length > PREVIEW_LIMIT;
     cursor: pointer;
     transition: background 180ms ease;
   }
-
-  .toc-mobile[open] .toc-mobile__summary {
-    background: color-mix(in srgb, var(--c, var(--green)) 5%, white);
-  }
-
   .toc-mobile__summary::-webkit-details-marker {
     display: none;
+  }
+  .toc-mobile[open] .toc-mobile__summary {
+    background: color-mix(in srgb, var(--c, var(--green)) 5%, var(--surface));
   }
 
   .toc-mobile__text {
@@ -216,15 +238,14 @@ const isTruncated = topLevel.length > PREVIEW_LIMIT;
   }
 
   .toc-mobile__eyebrow {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--c, var(--green));
   }
-
   .toc-mobile__label {
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-main);
   }
@@ -236,64 +257,98 @@ const isTruncated = topLevel.length > PREVIEW_LIMIT;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background: color-mix(in srgb, var(--c, var(--green)) 10%, white);
+    background: color-mix(in srgb, var(--c, var(--green)) 10%, var(--surface));
     color: var(--c, var(--green));
     flex-shrink: 0;
-    transition: transform 220ms var(--ease-spring), background 180ms ease;
+    transition: transform 220ms var(--ease-spring, cubic-bezier(.34,1.56,.64,1));
   }
-
   .toc-mobile[open] .toc-mobile__chevron {
     transform: rotate(180deg);
-    background: color-mix(in srgb, var(--c, var(--green)) 16%, white);
   }
 
   .toc-mobile__panel {
-    padding: 0 1.1rem 1rem;
+    padding: 0.5rem 1.1rem 1rem;
     border-top: 1px solid var(--border-soft);
-    animation: tocMobileOpen 220ms var(--ease-out);
+    max-height: 60vh;
+    overflow-y: auto;
   }
 
-  @keyframes tocMobileOpen {
-    from {
-      opacity: 0;
-      transform: translateY(-4px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+  @media (prefers-reduced-motion: reduce) {
+    .toc-desktop::before,
+    .toc-link,
+    .toc-mobile__chevron {
+      transition: none;
     }
   }
-
 </style>
 
 <script>
-  let tocObserver = null;
+  let tocObserver: IntersectionObserver | null = null;
+
+  /** Met à jour la position de la barre verticale active dans le rail desktop. */
+  function syncActiveBar(navEl: HTMLElement | null, activeLink: HTMLElement | null) {
+    if (!navEl) return;
+    if (!activeLink) {
+      navEl.style.setProperty("--toc-active-h", "0px");
+      return;
+    }
+    // Position relative au rail (navEl), pas au viewport.
+    const navRect = navEl.getBoundingClientRect();
+    const linkRect = activeLink.getBoundingClientRect();
+    const y = linkRect.top - navRect.top + navEl.scrollTop;
+    navEl.style.setProperty("--toc-active-y", `${y}px`);
+    navEl.style.setProperty("--toc-active-h", `${linkRect.height}px`);
+  }
+
   function initToc() {
     tocObserver?.disconnect();
-    const links = document.querySelectorAll(".toc-link");
-    if (!links.length) return;
+    const allLinks = document.querySelectorAll<HTMLAnchorElement>(".toc-link");
+    if (!allLinks.length) return;
 
-    const slugs = Array.from(links).map((l) => l.dataset.slug).filter(Boolean);
+    const desktopNav = document.querySelector<HTMLElement>(".toc-desktop");
+
+    const slugs = Array.from(allLinks)
+      .map((l) => l.dataset.slug)
+      .filter(Boolean) as string[];
     const headingEls = slugs
       .map((s) => document.getElementById(s))
-      .filter(Boolean);
+      .filter(Boolean) as HTMLElement[];
 
-    const setActive = (slug) => {
-      links.forEach((l) => l.classList.toggle("active", l.dataset.slug === slug));
+    const setActive = (slug: string) => {
+      let activeLink: HTMLAnchorElement | null = null;
+      allLinks.forEach((l) => {
+        const isActive = l.dataset.slug === slug;
+        l.classList.toggle("active", isActive);
+        if (isActive && l.closest(".toc-desktop")) activeLink = l;
+      });
+      syncActiveBar(desktopNav, activeLink);
     };
 
     tocObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
-          if (e.isIntersecting && e.target && e.target.id) {
-            setActive(e.target.id);
+          if (e.isIntersecting && e.target && (e.target as HTMLElement).id) {
+            setActive((e.target as HTMLElement).id);
           }
         });
       },
-      { rootMargin: "-20% 0% -70% 0%", threshold: 0 },
+      { rootMargin: "-15% 0% -70% 0%", threshold: 0 },
     );
 
-    headingEls.forEach((el) => tocObserver.observe(el));
+    headingEls.forEach((el) => tocObserver!.observe(el));
+
+    // Sync initial : si l'utilisateur revient sur la page via back, on positionne la barre.
+    requestAnimationFrame(() => {
+      const initialActive = document.querySelector<HTMLAnchorElement>(".toc-desktop .toc-link.active");
+      syncActiveBar(desktopNav, initialActive);
+    });
+
+    // Resync à chaque resize (les positions verticales changent).
+    const onResize = () => {
+      const currentActive = document.querySelector<HTMLAnchorElement>(".toc-desktop .toc-link.active");
+      syncActiveBar(desktopNav, currentActive);
+    };
+    window.addEventListener("resize", onResize, { passive: true });
   }
 
   document.addEventListener("astro:page-load", initToc);

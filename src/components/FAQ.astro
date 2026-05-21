@@ -39,16 +39,17 @@ const labelOpen =
               aria-controls={`faq-a-${i}`}
               aria-label={`${labelOpen} : ${item.question}`}
             >
-              <span>{item.question}</span>
-              <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" aria-hidden="true">
-                <path d="M6 9l6 6 6-6"/>
-              </svg>
+              <span class="faq-q-text">{item.question}</span>
+              <span class="faq-toggle" aria-hidden="true">
+                <span class="faq-toggle__bar faq-toggle__bar--h"></span>
+                <span class="faq-toggle__bar faq-toggle__bar--v"></span>
+              </span>
             </button>
           </dt>
-          <dd id={`faq-a-${i}`} class="faq-a" hidden>
-            <div class="faq-a-inner" set:html={item.answer} />
+          <dd id={`faq-a-${i}`} class="faq-a" data-open="false">
+            <div class="faq-a-content">
+              <div class="faq-a-inner" set:html={item.answer} />
+            </div>
           </dd>
         </div>
       ))}
@@ -92,38 +93,76 @@ const labelOpen =
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.75rem;
+    gap: 1rem;
     width: 100%;
-    padding: 1rem 0;
+    padding: 1.05rem 0;
     background: none;
     border: none;
     cursor: pointer;
     text-align: left;
+    font-family: inherit;
     font-size: 0.97rem;
     font-weight: 600;
     color: var(--text-main);
-    transition: color 150ms ease;
+    transition: color 180ms ease;
   }
   .faq-q:hover { color: var(--c, var(--green)); }
   .faq-q[aria-expanded="true"] { color: var(--c, var(--green)); }
 
-  .faq-chevron {
-    flex-shrink: 0;
-    color: var(--c, var(--green));
-    transition: transform 250ms var(--ease-spring, cubic-bezier(.34,1.56,.64,1));
-  }
-  .faq-q[aria-expanded="true"] .faq-chevron {
-    transform: rotate(180deg);
+  .faq-q-text {
+    flex: 1;
+    min-width: 0;
   }
 
-  .faq-a {
-    overflow: hidden;
+  /* Toggle "+" → "−" : 2 barres, l'une tourne pour donner un signe moins. */
+  .faq-toggle {
+    position: relative;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c, var(--green));
   }
-  .faq-a[hidden] { display: none; }
+  .faq-toggle__bar {
+    position: absolute;
+    background: currentColor;
+    border-radius: 1px;
+    transition: transform 280ms var(--ease-spring, cubic-bezier(.34,1.56,.64,1));
+  }
+  .faq-toggle__bar--h {
+    width: 14px;
+    height: 2px;
+  }
+  .faq-toggle__bar--v {
+    width: 2px;
+    height: 14px;
+  }
+  .faq-q[aria-expanded="true"] .faq-toggle__bar--v {
+    transform: rotate(90deg);
+  }
+
+  /* Dépliage smooth via grid-template-rows : passe de 0fr (fermé) à 1fr (ouvert).
+     C'est la technique standard pour animer une hauteur "auto" en CSS pur. */
+  .faq-a {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 320ms var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+    margin: 0;
+  }
+  .faq-a[data-open="true"] {
+    grid-template-rows: 1fr;
+  }
+
+  .faq-a-content {
+    overflow: hidden;
+    min-height: 0;
+  }
 
   .faq-a-inner {
-    padding: 0 0 1rem;
-    font-size: 0.93rem;
+    padding: 0.1rem 0 1.1rem;
+    font-size: 0.94rem;
     line-height: 1.75;
     color: var(--text-muted);
   }
@@ -134,22 +173,31 @@ const labelOpen =
     text-underline-offset: 2px;
   }
   .faq-a-inner :global(strong) { color: var(--text-main); }
+
+  /* Respect des préférences utilisateur : pas d'anim si reduce-motion. */
+  @media (prefers-reduced-motion: reduce) {
+    .faq-a,
+    .faq-toggle__bar {
+      transition: none;
+    }
+  }
 </style>
 
 <script>
   function initFaq() {
     document.querySelectorAll<HTMLButtonElement>(".faq-q").forEach((btn) => {
+      // Évite de doubler le listener entre transitions Astro view-router.
+      if (btn.dataset.faqBound === "1") return;
+      btn.dataset.faqBound = "1";
+
       btn.addEventListener("click", () => {
         const expanded = btn.getAttribute("aria-expanded") === "true";
         const answerId = btn.getAttribute("aria-controls")!;
         const answer = document.getElementById(answerId);
         if (!answer) return;
         btn.setAttribute("aria-expanded", expanded ? "false" : "true");
-        if (expanded) {
-          answer.hidden = true;
-        } else {
-          answer.hidden = false;
-        }
+        // data-open pilote la transition CSS grid-template-rows.
+        answer.dataset.open = expanded ? "false" : "true";
       });
     });
   }
