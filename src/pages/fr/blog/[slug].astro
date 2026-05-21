@@ -9,13 +9,8 @@ import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
 import Comments from "../../../components/Comments.astro";
 import KeyTakeaways from "../../../components/KeyTakeaways.astro";
-import ArticleIntroVideo from "../../../components/ArticleIntroVideo.astro";
-import ArticleDataRevealVideo from "../../../components/ArticleDataRevealVideo.astro";
-import ArticleSummaryVideo from "../../../components/ArticleSummaryVideo.astro";
-import ArticleRemotionIntro from "../../../components/ArticleRemotionIntro.astro";
-import ArticleRemotionSummary from "../../../components/ArticleRemotionSummary.astro";
-import ArticleRemotionDataReveal from "../../../components/ArticleRemotionDataReveal.astro";
 import FAQ from "../../../components/FAQ.astro";
+import ArticleVideo from "../../../components/ArticleVideo.astro";
 
 import { categoryMap, categorySlugs, siteConfig } from "../../../data/site";
 import {
@@ -33,13 +28,10 @@ import {
   getPostHeroSrc,
 } from "../../../utils/blog";
 import {
-  extractArticleHeadings,
   renderMarkdownToArticleHtml,
   stripFaqH2Section,
 } from "../../../utils/markdown-strip-faq";
-import { splitMarkdownAtH2Slug } from "../../../utils/markdown-split-html";
 import { isPublicAssetAvailable } from "../../../utils/public-asset";
-import { buildVideoPostProps } from "../../../utils/remotion-post-props";
 
 export async function getStaticPaths() {
   const posts = await getAllPosts();
@@ -53,29 +45,11 @@ const faqs = post.data.faq ?? [];
 const stripInlineFaq = faqs.length > 0;
 const mdForArticle = stripInlineFaq ? stripFaqH2Section(post.body) : post.body;
 
-const midArticleVideo = post.data.midArticleVideo?.trim();
-const midArticleHeadingSlug = post.data.midArticleVideoHeadingSlug?.trim();
-const useRemotionMid = post.data.remotionPlayerMid === true;
-const midVideoFileOk = !!(midArticleVideo && isPublicAssetAvailable(midArticleVideo));
-const midSlotActive =
-  !!midArticleHeadingSlug && (midVideoFileOk || useRemotionMid);
-let midArticleSplit: Awaited<ReturnType<typeof splitMarkdownAtH2Slug>> = null;
-if (midSlotActive && midArticleHeadingSlug) {
-  midArticleSplit = await splitMarkdownAtH2Slug(mdForArticle, midArticleHeadingSlug);
-  if (!midArticleSplit) {
-    throw new Error(
-      `[FR blog/${getPostSlug(post)}] Vidéo milieu : aucun H2 avec le slug « ${midArticleHeadingSlug} » (vérifie le sommaire).`,
-    );
-  }
-}
-
 let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
 let headings: Awaited<ReturnType<typeof render>>["headings"];
 let strippedArticleHtml: string | undefined;
 
-if (midArticleSplit) {
-  headings = extractArticleHeadings(mdForArticle);
-} else if (stripInlineFaq) {
+if (stripInlineFaq) {
   const r = await renderMarkdownToArticleHtml(mdForArticle);
   strippedArticleHtml = r.html;
   headings = r.headings;
@@ -99,17 +73,11 @@ const absolutePostUrl = absoluteUrl(postUrl);
 
 const heroSrc = getPostHeroSrc(post);
 const heroImage = heroSrc ? post.data.heroImage : undefined;
-const introVideo = post.data.introVideo?.trim();
-const summaryVideo = post.data.summaryVideo?.trim();
-const useRemotionIntro = post.data.remotionPlayerIntro === true;
-const useRemotionSummary = post.data.remotionPlayerSummary === true;
-const remotionProps = buildVideoPostProps(post.data);
-const showIntroVideo =
-  !useRemotionIntro && !!(introVideo && isPublicAssetAvailable(introVideo));
+
+// Résumé vidéo Motion Canvas — affiché si le MP4 existe dans public/.
+const summaryVideoSrc = post.data.summaryVideo?.trim();
 const showSummaryVideo =
-  !useRemotionSummary && !!(summaryVideo && isPublicAssetAvailable(summaryVideo));
-const introVideoAspect = post.data.introVideoAspect;
-const summaryVideoAspect = post.data.summaryVideoAspect ?? "16:9";
+  !!summaryVideoSrc && isPublicAssetAvailable(summaryVideoSrc);
 
 const structuredData = [
   buildArticleJsonLd(post),
@@ -195,18 +163,14 @@ const otherPillars = categorySlugs
           )}
         </header>
 
-        {useRemotionIntro && (
-          <ArticleRemotionIntro
-            inputProps={remotionProps}
-            aspect={introVideoAspect ?? "16:9"}
-          />
-        )}
-        {showIntroVideo && introVideo && (
-          <ArticleIntroVideo
-            src={introVideo}
+        {showSummaryVideo && summaryVideoSrc && (
+          <ArticleVideo
+            src={summaryVideoSrc}
             poster={heroSrc}
-            aspect={introVideoAspect ?? "16:9"}
-            videoTitle={`Vidéo d’introduction : ${post.data.title}`}
+            title={`Résumé vidéo : ${post.data.title}`}
+            eyebrow="Résumé vidéo de l'article"
+            accentColor={category.accent}
+            note={post.data.summaryVideoNote}
           />
         )}
 
@@ -244,51 +208,12 @@ const otherPillars = categorySlugs
         )}
 
         <div class="article-body fade-up" style="--motion-delay: 100ms;">
-          {midArticleSplit ? (
-            <>
-              <div class="md-chunk" set:html={midArticleSplit.beforeHtml} />
-              {useRemotionMid ? (
-                <ArticleRemotionDataReveal
-                  inputProps={remotionProps}
-                  aspect={post.data.midArticleVideoAspect ?? "16:9"}
-                  eyebrow={post.data.midArticleVideoEyebrow}
-                  lang="fr"
-                />
-              ) : (
-                <ArticleDataRevealVideo
-                  src={midArticleVideo!}
-                  poster={heroSrc}
-                  aspect={post.data.midArticleVideoAspect ?? "16:9"}
-                  videoTitle={`Données clés en vidéo : ${post.data.title}`}
-                  eyebrow={post.data.midArticleVideoEyebrow}
-                  lang="fr"
-                />
-              )}
-              <div class="md-chunk" set:html={midArticleSplit.afterHtml} />
-            </>
-          ) : strippedArticleHtml ? (
+          {strippedArticleHtml ? (
             <div class="md-chunk" set:html={strippedArticleHtml} />
           ) : (
             Content && <Content />
           )}
         </div>
-
-        {useRemotionSummary && (
-          <ArticleRemotionSummary
-            inputProps={remotionProps}
-            aspect={summaryVideoAspect}
-            heading="En résumé en vidéo"
-          />
-        )}
-        {showSummaryVideo && summaryVideo && (
-          <ArticleSummaryVideo
-            src={summaryVideo}
-            poster={heroSrc}
-            aspect={summaryVideoAspect}
-            videoTitle={`Résumé en vidéo : ${post.data.title}`}
-            heading="En résumé en vidéo"
-          />
-        )}
 
         {faqs.length > 0 && <FAQ items={faqs} lang="fr" />}
 

@@ -67,8 +67,6 @@ Pour l'instant les scènes tournent sans audio. Trois options envisagées :
 - Les couleurs rubriques (`scienceAccent`, `espritAccent`, etc.) correspondent à `categoryMap` dans `src/data/site.ts`
 - Le composant `ChessBoard` rend des pièces Unicode pour rester indépendant de toute police custom
 
-## Relation avec Remotion
+## Vidéos intégrées aux articles
 
-Le dossier `remotion/` (à la racine du repo) gère les **courtes vidéos intégrées aux articles** (intros 30 s, summaries 28 s, data-reveals). Motion Canvas prend le relais pour les **vidéos longues YouTube** (3-15 min, format Vox). Les deux pipelines partagent le même thème visuel.
-
-À terme, si Motion Canvas tient la promesse, on peut envisager d'y migrer aussi les courtes intégrées — ce sera une décision ultérieure, pas un objectif immédiat.
+Les **résumés vidéo** sous les titres d’articles sont produits ici (scènes `summary-*`), exportés en MP4 dans `public/videos/`, puis lus via `ArticleVideo.astro` et le champ frontmatter `summaryVideo`. Les **vidéos longues YouTube** (3–15 min, format Vox) utilisent le même pipeline Motion Canvas.

@@ -28,20 +28,12 @@ import {
 import { getEnglishArticleMarkdown, renderEnglishMarkdown } from "../../../utils/english-article";
 import { swapLangPrefix } from "../../../utils/lang-paths";
 import {
-  extractArticleHeadings,
   renderMarkdownToArticleHtml,
   stripFaqH2Section,
 } from "../../../utils/markdown-strip-faq";
-import { splitMarkdownAtH2Slug } from "../../../utils/markdown-split-html";
-import { isPublicAssetAvailable } from "../../../utils/public-asset";
-import { buildVideoPostProps } from "../../../utils/remotion-post-props";
 import FAQ from "../../../components/FAQ.astro";
-import ArticleIntroVideo from "../../../components/ArticleIntroVideo.astro";
-import ArticleDataRevealVideo from "../../../components/ArticleDataRevealVideo.astro";
-import ArticleSummaryVideo from "../../../components/ArticleSummaryVideo.astro";
-import ArticleRemotionIntro from "../../../components/ArticleRemotionIntro.astro";
-import ArticleRemotionSummary from "../../../components/ArticleRemotionSummary.astro";
-import ArticleRemotionDataReveal from "../../../components/ArticleRemotionDataReveal.astro";
+import ArticleVideo from "../../../components/ArticleVideo.astro";
+import { isPublicAssetAvailable } from "../../../utils/public-asset";
 
 export async function getStaticPaths() {
   const posts = filterPostsForLang(await getAllPosts(), "en");
@@ -57,29 +49,11 @@ const stripInlineFaq = faqsForDisplay.length > 0;
 const mdSource = englishMarkdown ?? post.body;
 const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
 
-const midArticleVideo = post.data.midArticleVideo?.trim();
-const midArticleHeadingSlug = post.data.midArticleVideoHeadingSlug?.trim();
-const useRemotionMid = post.data.remotionPlayerMid === true;
-const midVideoFileOk = !!(midArticleVideo && isPublicAssetAvailable(midArticleVideo));
-const midSlotActive =
-  !!midArticleHeadingSlug && (midVideoFileOk || useRemotionMid);
-let midArticleSplit: Awaited<ReturnType<typeof splitMarkdownAtH2Slug>> = null;
-if (midSlotActive && midArticleHeadingSlug) {
-  midArticleSplit = await splitMarkdownAtH2Slug(mdForArticle, midArticleHeadingSlug);
-  if (!midArticleSplit) {
-    throw new Error(
-      `[EN blog/${slug}] Mid video: no H2 with slug "${midArticleHeadingSlug}" (check the table of contents).`,
-    );
-  }
-}
-
 let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
 let headings: Awaited<ReturnType<typeof render>>["headings"];
 let englishHtml: string | undefined;
 
-if (midArticleSplit) {
-  headings = extractArticleHeadings(mdForArticle);
-} else if (englishMarkdown) {
+if (englishMarkdown) {
   const rendered = stripInlineFaq
     ? renderEnglishMarkdown(mdForArticle)
     : renderEnglishMarkdown(englishMarkdown);
@@ -119,20 +93,10 @@ const hasEnTranslation = !!englishMarkdown && !!(post.data.titleEn);
 
 const heroSrc = getPostHeroSrc(post);
 const heroImage = heroSrc ? post.data.heroImage : undefined;
-const introVideo = post.data.introVideo?.trim();
-const summaryVideo = post.data.summaryVideo?.trim();
-const useRemotionIntro = post.data.remotionPlayerIntro === true;
-const useRemotionSummary = post.data.remotionPlayerSummary === true;
-const remotionProps = buildVideoPostProps(post.data, {
-  title: displayTitle,
-  excerpt: displayExcerpt,
-});
-const showIntroVideo =
-  !useRemotionIntro && !!(introVideo && isPublicAssetAvailable(introVideo));
+
+const summaryVideoSrc = post.data.summaryVideo?.trim();
 const showSummaryVideo =
-  !useRemotionSummary && !!(summaryVideo && isPublicAssetAvailable(summaryVideo));
-const introVideoAspect = post.data.introVideoAspect;
-const summaryVideoAspect = post.data.summaryVideoAspect ?? "16:9";
+  !!summaryVideoSrc && isPublicAssetAvailable(summaryVideoSrc);
 
 const enCategoryLabels: Record<string, string> = {
   science: "Science",
@@ -220,18 +184,14 @@ const otherPillars = categorySlugs
           )}
         </header>
 
-        {useRemotionIntro && (
-          <ArticleRemotionIntro
-            inputProps={remotionProps}
-            aspect={introVideoAspect ?? "16:9"}
-          />
-        )}
-        {showIntroVideo && introVideo && (
-          <ArticleIntroVideo
-            src={introVideo}
+        {showSummaryVideo && summaryVideoSrc && (
+          <ArticleVideo
+            src={summaryVideoSrc}
             poster={heroSrc}
-            aspect={introVideoAspect ?? "16:9"}
-            videoTitle={`Intro video: ${displayTitle}`}
+            title={`Video summary: ${displayTitle}`}
+            eyebrow="Video summary of the article"
+            accentColor={category.accent}
+            note={post.data.summaryVideoNote}
           />
         )}
 
@@ -266,51 +226,12 @@ const otherPillars = categorySlugs
         <AdBanner format="inline" compact={true} />
 
         <div class="article-body fade-up" style="--motion-delay: 100ms;">
-          {midArticleSplit ? (
-            <>
-              <div class="md-chunk" set:html={midArticleSplit.beforeHtml} />
-              {useRemotionMid ? (
-                <ArticleRemotionDataReveal
-                  inputProps={remotionProps}
-                  aspect={post.data.midArticleVideoAspect ?? "16:9"}
-                  eyebrow={post.data.midArticleVideoEyebrow}
-                  lang="en"
-                />
-              ) : (
-                <ArticleDataRevealVideo
-                  src={midArticleVideo!}
-                  poster={heroSrc}
-                  aspect={post.data.midArticleVideoAspect ?? "16:9"}
-                  videoTitle={`Key data video: ${displayTitle}`}
-                  eyebrow={post.data.midArticleVideoEyebrow}
-                  lang="en"
-                />
-              )}
-              <div class="md-chunk" set:html={midArticleSplit.afterHtml} />
-            </>
-          ) : englishHtml ? (
+          {englishHtml ? (
             <div class="md-chunk" set:html={englishHtml} />
           ) : (
             Content && <Content />
           )}
         </div>
-
-        {useRemotionSummary && (
-          <ArticleRemotionSummary
-            inputProps={remotionProps}
-            aspect={summaryVideoAspect}
-            heading="Video recap"
-          />
-        )}
-        {showSummaryVideo && summaryVideo && (
-          <ArticleSummaryVideo
-            src={summaryVideo}
-            poster={heroSrc}
-            aspect={summaryVideoAspect}
-            videoTitle={`Video summary: ${displayTitle}`}
-            heading="Video recap"
-          />
-        )}
 
         {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="en" />}
 

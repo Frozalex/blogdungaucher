@@ -1,14 +1,15 @@
 import { makeProject } from "@motion-canvas/core";
 
-import chaseSimon from "./scenes/chase-simon?scene";
+import summaryEchecsEtMemoire from "./scenes/summary-echecs-et-memoire?scene";
 
 /**
- * Projet Motion Canvas du blog. Une scène = une "vidéo" complète, ou un
- * segment réutilisable d'une vidéo plus longue (montés ensuite côté éditeur
- * vidéo si besoin). On commence par une seule scène témoin.
+ * Projet Motion Canvas du blog. Convention : une scène = un résumé vidéo d'article,
+ * nommée `summary-<slug-article>.tsx`. Format YouTube 1920×1080 par défaut.
+ *
+ * Pour ajouter un nouveau résumé : créer src/scenes/summary-<slug>.tsx,
+ * l'importer ici, et l'ajouter au tableau `scenes`.
  */
 export default makeProject({
-  scenes: [chaseSimon],
-  // 1920x1080 par défaut pour livrer du 16:9 YouTube ; ajuster ici pour Shorts (1080x1920).
+  scenes: [summaryEchecsEtMemoire],
   experimentalFeatures: false,
 });

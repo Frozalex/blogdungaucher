@@ -15,6 +15,8 @@ excerptEn: "Working memory, chunks, openings, games forgotten or etched in mind:
 seoTitleEn: "Chess and Memory: Cognitive Stimulation, Science and Training"
 seoDescriptionEn: "Working memory, consolidation, openings, seniors: the chess-memory link explained by research (Chase & Simon, Gobet, de Groot) and concrete training tips."
 ogImage: "/images/blog/echecs-et-memoire-hero.png"
+summaryVideo: "/videos/summary-echecs-et-memoire.mp4"
+summaryVideoNote: "Version 1 — résumé visuel de l'article (~2 min, sans son pour l'instant). Produite avec Motion Canvas, en itération."
 heroImage:
   src: "/images/blog/echecs-et-memoire-hero.png"
   alt: "Illustration pixel art : profil de tête rempli de pièces d’échecs et d’étoiles sur fond bleu nuit ; texte « Découvrez le pouvoir des échecs sur votre mémoire » à gauche."
