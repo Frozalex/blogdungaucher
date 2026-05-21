@@ -121,11 +121,15 @@ const linkKey: Record<string, string> = {
         </svg>
       </button>
 
+      {/* Bouton langue masqué tant que EN/DE ne sont pas validés éditorialement
+         (cf. sitemap exclu + meta noindex sur ces préfixes). Réactiver en
+         supprimant le `hidden` quand les versions seront prêtes. */}
       <button
         id="lang-toggle"
         class="icon-btn lang-btn"
         type="button"
         aria-label="Changer la langue"
+        hidden
       ><span class="lang-label">{lang.toUpperCase()}</span></button>
     </div>
 
@@ -176,11 +180,13 @@ const linkKey: Record<string, string> = {
             </svg>
             <span data-t="nav.darkOn">Mode sombre</span>
           </button>
+          {/* Bouton langue masqué (cf. desktop, même raison). */}
           <button
             id="lang-toggle-mobile"
             class="mobile-util-btn"
             type="button"
             aria-label="Changer la langue"
+            hidden
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
@@ -335,12 +341,14 @@ const linkKey: Record<string, string> = {
     margin-left: 0.25rem;
   }
 
+  /* Touch target ≥ 44 px (Apple HIG / Material). Visuellement on garde
+     l'icône à ~16-18 px mais on agrandit la zone cliquable via padding. */
   .icon-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2rem;
-    height: 2rem;
+    width: 2.75rem;
+    height: 2.75rem;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-soft);
     background: transparent;
@@ -367,9 +375,9 @@ const linkKey: Record<string, string> = {
 
   /* Bouton langue : même taille que dark toggle, juste FR/EN */
   .lang-btn {
-    width: 2rem;
+    width: 2.75rem;
     padding: 0;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.04em;
   }
@@ -380,8 +388,8 @@ const linkKey: Record<string, string> = {
     flex-direction: column;
     justify-content: center;
     gap: 4px;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2.75rem;
+    height: 2.75rem;
     margin-left: auto;
     border: 1px solid var(--border-soft);
     border-radius: var(--radius-sm);
@@ -437,22 +445,26 @@ const linkKey: Record<string, string> = {
     font-weight: 700;
   }
 
+  /* Stagger raccourci : tous les liens apparaissent en ≤ 140 ms total.
+     5 × 50 ms = 260 ms d'attente avant le dernier item ressentait clairement
+     comme un retard sur le tap. Maintenant 5 × 20 ms = 80 ms cumulé + 100 ms
+     d'opacité = ouverture quasi instantanée tout en gardant un effet de cascade. */
   .mobile-link {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(4px);
     transition:
-      opacity   220ms ease,
-      transform 220ms var(--ease-out),
+      opacity   140ms ease,
+      transform 140ms var(--ease-out),
       background 140ms ease,
       color      140ms ease;
   }
   .mobile-menu.is-open .mobile-link { opacity: 1; transform: translateY(0); }
 
-  .mobile-menu.is-open .mobile-link:nth-of-type(1) { transition-delay: 60ms; }
-  .mobile-menu.is-open .mobile-link:nth-of-type(2) { transition-delay: 110ms; }
-  .mobile-menu.is-open .mobile-link:nth-of-type(3) { transition-delay: 160ms; }
-  .mobile-menu.is-open .mobile-link:nth-of-type(4) { transition-delay: 210ms; }
-  .mobile-menu.is-open .mobile-link:nth-of-type(5) { transition-delay: 260ms; }
+  .mobile-menu.is-open .mobile-link:nth-of-type(1) { transition-delay: 20ms; }
+  .mobile-menu.is-open .mobile-link:nth-of-type(2) { transition-delay: 40ms; }
+  .mobile-menu.is-open .mobile-link:nth-of-type(3) { transition-delay: 60ms; }
+  .mobile-menu.is-open .mobile-link:nth-of-type(4) { transition-delay: 80ms; }
+  .mobile-menu.is-open .mobile-link:nth-of-type(5) { transition-delay: 100ms; }
 
   .mobile-link {
     padding: 0.65rem 0.5rem;
@@ -473,28 +485,30 @@ const linkKey: Record<string, string> = {
   }
   .mobile-link:hover { background: var(--bg-warm); color: var(--text-main); }
 
-  /* Utilitaires mobile (dark + lang) */
+  /* Utilitaires mobile (dark + lang) — apparition juste après le dernier lien. */
   .mobile-utils {
     display: flex;
     gap: 0.5rem;
     margin: 0.5rem 0;
     opacity: 0;
-    transform: translateY(6px);
-    transition: opacity 220ms ease, transform 220ms var(--ease-out);
-    transition-delay: 290ms;
+    transform: translateY(4px);
+    transition: opacity 140ms ease, transform 140ms var(--ease-out);
+    transition-delay: 120ms;
   }
   .mobile-menu.is-open .mobile-utils { opacity: 1; transform: translateY(0); }
 
   .mobile-util-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.4rem 0.65rem;
+    gap: 0.5rem;
+    /* Touch target ≥ 44 px : padding vertical augmenté + min-height. */
+    min-height: 2.75rem;
+    padding: 0.65rem 0.95rem;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-soft);
     background: var(--surface-warm);
     color: var(--text-muted);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 600;
     cursor: pointer;
     transition: background 140ms ease, color 140ms ease;
@@ -527,13 +541,23 @@ const linkKey: Record<string, string> = {
     _ctrl = new AbortController();
     const { signal } = _ctrl;
 
-    const HIDE_AFTER  = 72;
-    const JITTER      = 4;
-    const PEEK_ZONE   = 72;
-    const LEAVE_DELAY = 1100;
+    const HIDE_AFTER       = 72;
+    const JITTER           = 4;
+    const PEEK_ZONE        = 60;
+    const LEAVE_DELAY      = 800;
+    /** Délai minimum après le dernier scroll avant qu'un mouvement souris
+       puisse re-déclencher le peek. Empêche le peek "involontaire" quand
+       l'utilisateur scrolle et que sa souris est haute par accident. */
+    const SCROLL_QUIET_MS  = 220;
+    /** Vélocité verticale minimale (px/100ms) pour considérer un mouvement
+       comme une intention claire de remonter vers la navbar. */
+    const PEEK_VELOCITY    = 18;
 
     let prevY     = window.scrollY;
     let peekTimer: ReturnType<typeof setTimeout> | null = null;
+    let lastScrollAt = 0;
+    let lastMouseY   = -1;
+    let lastMouseAt  = 0;
 
     function applyState(state: string) {
       navbar.classList.remove("scrolled", "nav-hidden", "nav-peek");
@@ -550,6 +574,7 @@ const linkKey: Record<string, string> = {
       const y     = window.scrollY;
       const delta = y - prevY;
       prevY = y;
+      lastScrollAt = performance.now();
       if (y < HIDE_AFTER) { cancelPeek(); applyState("top"); return; }
       if (Math.abs(delta) <= JITTER) return;
       if (delta > 0) { cancelPeek(); applyState("hidden"); }
@@ -557,10 +582,32 @@ const linkKey: Record<string, string> = {
     }
 
     function onMouse(e: MouseEvent) {
-      if (e.clientY <= PEEK_ZONE) {
+      const now = performance.now();
+      const dt  = lastMouseAt > 0 ? Math.max(1, now - lastMouseAt) : 16;
+      const dy  = lastMouseY >= 0 ? e.clientY - lastMouseY : 0;
+      // Vélocité normalisée à 100ms.
+      const velocity = (dy / dt) * 100;
+      lastMouseY  = e.clientY;
+      lastMouseAt = now;
+
+      // Conditions pour déclencher le peek (toutes requises) :
+      //   1. La souris est dans la zone "haut" du viewport
+      //   2. La navbar est actuellement cachée
+      //   3. L'utilisateur ne vient pas de scroller (≥ SCROLL_QUIET_MS)
+      //   4. Mouvement de la souris VERS LE HAUT, suffisamment rapide
+      //      (velocity négative = vers le haut, < -PEEK_VELOCITY)
+      if (
+        e.clientY <= PEEK_ZONE &&
+        navbar.classList.contains("nav-hidden") &&
+        now - lastScrollAt > SCROLL_QUIET_MS &&
+        velocity < -PEEK_VELOCITY
+      ) {
         cancelPeek();
-        if (navbar.classList.contains("nav-hidden")) applyState("peek");
-      } else if (navbar.classList.contains("nav-peek") && e.clientY > PEEK_ZONE + 16) {
+        applyState("peek");
+      } else if (
+        navbar.classList.contains("nav-peek") &&
+        e.clientY > PEEK_ZONE + 16
+      ) {
         if (!peekTimer) {
           peekTimer = setTimeout(() => {
             peekTimer = null;
@@ -605,6 +652,22 @@ const linkKey: Record<string, string> = {
         setMenuState(false);
         burger?.focus();
       }
+    }, { signal });
+
+    /* Raccourci global "/" : depuis n'importe quelle page, naviguer vers la recherche.
+       Sur /recherche/, c'est le script de la page qui focus l'input directement. */
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "/") return;
+      const target = e.target as HTMLElement | null;
+      if (!target) return;
+      const tag = target.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || target.isContentEditable) return;
+      // Si déjà sur la page recherche, on laisse le script local prendre la main.
+      if (/\/recherche\/?$/.test(window.location.pathname)) return;
+      e.preventDefault();
+      const lang = window.__lang || "fr";
+      const path = lang === "en" ? "/en/recherche/" : lang === "de" ? "/de/recherche/" : "/fr/recherche/";
+      window.location.href = path;
     }, { signal });
 
     menuLinks?.forEach((link) => {

@@ -174,7 +174,9 @@ const otherPillars = categorySlugs
           />
         )}
 
-        {heroSrc && heroImage && (
+        {/* Hero image affichée uniquement si pas de vidéo (le poster de la
+           vidéo joue déjà ce rôle visuel, éviter le doublon en haut d'article). */}
+        {!showSummaryVideo && heroSrc && heroImage && (
           <figure class="hero-media fade-up" style="--motion-delay: 70ms;">
             <img
               class="hero-img"
@@ -201,8 +203,6 @@ const otherPillars = categorySlugs
           <TableOfContents headings={headings} mode="mobile" />
         </div>
 
-        <AdBanner format="inline" compact={true} />
-
         {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
           <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
         )}
@@ -214,6 +214,8 @@ const otherPillars = categorySlugs
             Content && <Content />
           )}
         </div>
+
+        <AdBanner format="inline" compact={true} />
 
         {faqs.length > 0 && <FAQ items={faqs} lang="fr" />}
 
@@ -236,7 +238,7 @@ const otherPillars = categorySlugs
         )}
 
         <ShareButtons title={post.data.title} url={absolutePostUrl} />
-        <Comments />
+        <Comments lang="fr" />
 
       </div>
 
@@ -276,13 +278,15 @@ const otherPillars = categorySlugs
 <style>
   .article-page  { padding: 3rem 0 2rem; }
 
-  /* Rail vertical à droite de l'écran (et non plus barre horizontale sous la navbar
-     qui gênait la lecture). Discret par défaut, opacité poussée au survol/scroll.
+  /* Rail vertical aligné avec le bord droit du container article (max-width 1280px).
+     Sur écrans larges (> 1280px), le rail suit le container plutôt que le bord
+     du viewport — il reste donc visuellement lié à la zone de lecture.
+     Sur écrans étroits, fallback à 0.65rem du bord viewport.
      Caché en mobile (cf. media query plus bas). */
   .reading-progress {
     position: fixed;
     top: calc(var(--navbar-h) + 2rem);
-    right: 0.65rem;
+    right: max(0.65rem, calc(50vw - 640px - 1rem));
     bottom: 2rem;
     z-index: 30;
     width: 3px;
@@ -454,13 +458,9 @@ const otherPillars = categorySlugs
     background: color-mix(in srgb, var(--c) 6%, var(--surface));
   }
 
-  /* corps */
+  /* corps — pas de card : le texte respire directement sur le fond page */
   .article-body {
-    padding: 1.75rem;
-    border-radius: var(--radius-lg);
-    background: var(--surface);
-    border: 1px solid var(--border-soft);
-    box-shadow: var(--shadow-xs);
+    padding: 2rem 0;
   }
   .article-body :global(h2) {
     margin: 1.9rem 0 0.7rem;
@@ -469,13 +469,13 @@ const otherPillars = categorySlugs
     font-style: italic;
     font-size: 1.65rem;
     letter-spacing: -0.01em;
-    color: var(--c);
+    color: color-mix(in srgb, var(--c) 72%, var(--text-main));
     font-optical-sizing: auto;
   }
   .article-body :global(h3) {
     margin: 1.4rem 0 0.5rem;
     font-size: 1.18rem;
-    color: var(--c);
+    color: var(--text-main);
   }
   .article-body :global(p),
   .article-body :global(li) { color: var(--text-muted); line-height: 1.75; }
@@ -489,14 +489,14 @@ const otherPillars = categorySlugs
     padding: 0.22rem 0.6rem 0 0;
     color: var(--c);
   }
-  .article-body :global(li::marker) { color: var(--c); font-weight: bold; }
+  .article-body :global(li::marker) { color: color-mix(in srgb, var(--c) 55%, var(--text-dim)); }
   .article-body :global(p + p),
   .article-body :global(p + ul),
   .article-body :global(ul + p) { margin-top: 0.85rem; }
   .article-body :global(ul),
   .article-body :global(ol)   { padding-left: 1.2rem; }
   .article-body :global(li + li) { margin-top: 0.3rem; }
-  .article-body :global(strong) { color: var(--c); }
+  .article-body :global(strong) { color: var(--text-main); }
   .article-body :global(a) {
     color: var(--c);
     font-weight: 600;
@@ -532,8 +532,8 @@ const otherPillars = categorySlugs
   .article-body :global(blockquote) {
     margin: 1.25rem 0;
     padding: 0.9rem 1.2rem;
-    border-left: 3px solid var(--green);
-    background: var(--green-light);
+    border-left: 3px solid var(--c);
+    background: color-mix(in srgb, var(--c) 7%, var(--surface));
     border-radius: 0 var(--radius-md) var(--radius-md) 0;
     color: var(--text-main);
     font-style: italic;

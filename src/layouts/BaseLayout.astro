@@ -606,7 +606,10 @@ const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "
   <body style={accentColor ? `--page-accent:${accentColor}` : ""}>
     <a class="skip-link" href="#main-content">Aller au contenu</a>
     <Navbar frHref={resolvedFrPath} enHref={resolvedEnPath} deHref={resolvedDePath} lang={lang} />
-    <main id="main-content">
+    {/* tabindex="-1" : permet au skip-link de poser le focus programmatiquement
+       sur <main>, garantissant que les lecteurs d'écran annoncent bien le landmark
+       et que les navigateurs ne se contentent pas de scroller sans focuser. */}
+    <main id="main-content" tabindex="-1">
       <slot />
     </main>
     <Footer lang={lang} />

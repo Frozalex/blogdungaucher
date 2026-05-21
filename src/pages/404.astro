@@ -1,34 +1,90 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+/* Détecte la langue depuis l'URL : Astro sert 404 en SSR-statique, donc
+   `Astro.url.pathname` reflète le chemin demandé par l'utilisateur (ex.
+   `/en/blog/foo-non-existant`). On adapte les CTAs en conséquence. */
+const pathname = Astro.url.pathname || "/";
+const lang: "fr" | "en" | "de" = pathname.startsWith("/en/")
+  ? "en"
+  : pathname.startsWith("/de/")
+    ? "de"
+    : "fr";
+
+const copy = {
+  fr: {
+    title: "Page introuvable | Blog d'un Gaucher",
+    description: "La page demandée n'existe pas.",
+    eyebrow: "Échec et mat",
+    h1: "Cette page a quitté l'échiquier.",
+    lead: "La position recherchée n'existe pas, ou a été déplacée vers une autre case.",
+    quote: "On ne peut pas gagner sans risquer de perdre.",
+    quoteAuthor: "Emanuel Lasker",
+    home: "Retour à l'accueil",
+    blog: "Tous les articles",
+    search: "Rechercher",
+    homeHref: "/fr/",
+    blogHref: "/fr/blog/",
+    searchHref: "/fr/recherche/",
+  },
+  en: {
+    title: "Page not found | A Left-Hander's Blog",
+    description: "The page you are looking for does not exist.",
+    eyebrow: "Checkmate",
+    h1: "This page has left the board.",
+    lead: "The position you requested does not exist or has been moved to another square.",
+    quote: "You cannot win without risking losing.",
+    quoteAuthor: "Emanuel Lasker",
+    home: "Back to home",
+    blog: "All articles",
+    search: "Search",
+    homeHref: "/en/",
+    blogHref: "/en/blog/",
+    searchHref: "/en/recherche/",
+  },
+  de: {
+    title: "Seite nicht gefunden | Blog d'un Gaucher",
+    description: "Die gesuchte Seite existiert nicht.",
+    eyebrow: "Schachmatt",
+    h1: "Diese Seite hat das Brett verlassen.",
+    lead: "Die gesuchte Stellung existiert nicht oder wurde auf ein anderes Feld verschoben.",
+    quote: "Man kann nicht gewinnen, ohne zu riskieren zu verlieren.",
+    quoteAuthor: "Emanuel Lasker",
+    home: "Zur Startseite",
+    blog: "Alle Artikel",
+    search: "Suchen",
+    homeHref: "/de/",
+    blogHref: "/de/blog/",
+    searchHref: "/de/recherche/",
+  },
+};
+const t = copy[lang];
 ---
 <BaseLayout
-  title="Page introuvable | Blog d'un Gaucher"
-  description="La page demandée n'existe pas."
+  title={t.title}
+  description={t.description}
   canonicalPath="/404"
+  lang={lang}
   noindex={true}
 >
   <section class="nf">
     <div class="container nf-container">
-      <span class="eyebrow">Échec et mat</span>
+      <span class="eyebrow">{t.eyebrow}</span>
       <span class="nf-code" aria-hidden="true">404</span>
-      <h1 class="nf-title">Cette page a quitté l'échiquier.</h1>
-      <p class="nf-lead">
-        La position recherchée n'existe pas, ou a été déplacée vers une autre case.
-      </p>
+      <h1 class="nf-title">{t.h1}</h1>
+      <p class="nf-lead">{t.lead}</p>
 
       <figure class="nf-quote">
-        <blockquote>
-          On ne peut pas gagner sans risquer de perdre.
-        </blockquote>
-        <figcaption>Emanuel Lasker</figcaption>
+        <blockquote>{t.quote}</blockquote>
+        <figcaption>{t.quoteAuthor}</figcaption>
       </figure>
 
-      <div class="section-divider section-divider--editorial" role="separator" aria-hidden="true"><span></span></div>
+      <div class="section-divider section-divider--editorial" aria-hidden="true"><span></span></div>
 
       <div class="nf-actions">
-        <a href="/fr/" class="button-primary">Retour à l'accueil</a>
-        <a href="/fr/blog/" class="button-secondary">Tous les articles</a>
-        <a href="/fr/recherche/" class="button-secondary">Rechercher</a>
+        <a href={t.homeHref} class="button-primary">{t.home}</a>
+        <a href={t.blogHref} class="button-secondary">{t.blog}</a>
+        <a href={t.searchHref} class="button-secondary">{t.search}</a>
       </div>
     </div>
   </section>

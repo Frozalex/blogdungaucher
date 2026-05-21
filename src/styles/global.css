@@ -665,6 +665,14 @@ main { display: block; padding-top: var(--navbar-h); }
 }
 .skip-link:focus { top: 1rem; }
 
+/* <main tabindex="-1"> est rendu focusable pour le skip-link, mais on n'affiche
+   pas d'outline visuelle (le focus visible cible un élément structurel non
+   interactif — l'outline polluerait l'UI). Les éléments réellement interactifs
+   à l'intérieur gardent leur :focus-visible. */
+main[tabindex="-1"]:focus {
+  outline: none;
+}
+
 /* ─── SCROLL REVEAL ───────────────────────────────────────────── */
 .reveal {
   opacity: 0;

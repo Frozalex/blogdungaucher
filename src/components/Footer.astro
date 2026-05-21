@@ -99,12 +99,36 @@ const aboutHref =
     background: linear-gradient(180deg, var(--bg-warm), color-mix(in srgb, var(--bg-warm) 90%, #fff));
   }
 
+  /* Grid responsive sans casser au passage tablette.
+     - Desktop ≥ 960px : brand large + 3 cols utilitaires (minmax pour éviter l'écrasement)
+     - Tablet 640-960px : brand + 2 cols (les utilitaires se réorganisent en 2x2 via auto-flow)
+     - Mobile < 640px : 1 colonne, tout empilé */
   .footer-top {
     display: grid;
-    grid-template-columns: 1.5fr repeat(3, 0.7fr);
-    gap: 2.5rem;
+    grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr));
+    gap: 2.5rem 2rem;
     padding: 3rem 0 2.5rem;
     align-items: start;
+  }
+
+  @media (max-width: 960px) {
+    .footer-top {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 2rem 1.5rem;
+    }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+
+  @media (max-width: 560px) {
+    .footer-top {
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+      padding: 2.5rem 0 2rem;
+    }
+    .footer-col {
+      justify-items: start;
+      text-align: left;
+    }
   }
 
   .footer-brand-name {

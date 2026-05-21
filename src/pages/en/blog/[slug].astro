@@ -195,7 +195,8 @@ const otherPillars = categorySlugs
           />
         )}
 
-        {heroSrc && heroImage && (
+        {/* Hero image skipped when video is present (the poster already plays that role). */}
+        {!showSummaryVideo && heroSrc && heroImage && (
           <figure class="hero-media fade-up" style="--motion-delay: 70ms;">
             <img class="hero-img" src={heroSrc} alt={heroImage.alt} loading="lazy" decoding="async" />
             {(heroImage.credit || heroImage.license || heroImage.sourceUrl) && (
@@ -223,8 +224,6 @@ const otherPillars = categorySlugs
           <TableOfContents headings={headings} mode="mobile" lang="en" />
         </div>
 
-        <AdBanner format="inline" compact={true} />
-
         <div class="article-body fade-up" style="--motion-delay: 100ms;">
           {englishHtml ? (
             <div class="md-chunk" set:html={englishHtml} />
@@ -232,6 +231,8 @@ const otherPillars = categorySlugs
             Content && <Content />
           )}
         </div>
+
+        <AdBanner format="inline" compact={true} />
 
         {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="en" />}
 
@@ -254,7 +255,7 @@ const otherPillars = categorySlugs
         )}
 
         <ShareButtons title={displayTitle} url={absolutePostUrl} />
-        <Comments />
+        <Comments lang="en" />
 
       </div>
 
@@ -306,11 +307,12 @@ const otherPillars = categorySlugs
   }
   .translation-notice svg { flex-shrink: 0; margin-top: 0.1rem; color: var(--green); }
 
-  /* Rail vertical à droite, discret. Cf. version FR pour le raisonnement détaillé. */
+  /* Rail vertical aligné avec le bord droit du container article (max-width 1280px).
+     Cf. version FR pour le raisonnement détaillé. */
   .reading-progress {
     position: fixed;
     top: calc(var(--navbar-h) + 2rem);
-    right: 0.65rem;
+    right: max(0.65rem, calc(50vw - 640px - 1rem));
     bottom: 2rem;
     width: 3px;
     z-index: 30;
