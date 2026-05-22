@@ -1,25 +1,33 @@
 ---
 title: "Échecs et autisme : pourquoi l'échiquier devient un refuge"
-excerpt: "Pour un cerveau qui supporte mal l'ambiguïté sociale, l'échiquier est l'un des rares espaces où les règles tiennent vraiment. Ce que la recherche dit réellement sur l'autisme et les échecs, sans romantisme, sans simplification."
+excerpt: >-
+  Pour un cerveau qui supporte mal l'ambiguïté sociale, l'échiquier est l'un des rares espaces où les règles tiennent
+  vraiment. Ce que la recherche dit réellement sur l'autisme et les échecs, sans romantisme, sans simplification.
 publishDate: "2026-04-02"
-category: "societe"
+category: societe
 featured: false
 featuredRank: 99
-readingTime: "22 min"
-pillar: "Inclusion"
-tags: ["échecs autisme", "échecs enfant autiste", "bienfaits échecs TSA", "inclusion", "neuroatypique", "neurodiversité"]
+readingTime: 22 min
+pillar: Inclusion
+tags:
+  - échecs autisme
+  - échecs enfant autiste
+  - bienfaits échecs TSA
+  - inclusion
+  - neuroatypique
+  - neurodiversité
 seoTitle: "Échecs et autisme : les bienfaits pour les TSA"
-seoDescription: "Règles invariantes, structure visuelle, pas de communication verbale : pourquoi l'échiquier convient naturellement aux cerveaux autistes. Ce que les études sur les TSA montrent réellement."
-titleEn: "Chess and Autism: Why the Chessboard Becomes a Refuge"
-excerptEn: "For a brain that struggles with social ambiguity, the chessboard is one of the few spaces where rules truly hold. What research actually says about autism and chess, without romanticism or oversimplification."
-seoTitleEn: "Chess and Autism: Benefits for the Autism Spectrum"
-seoDescriptionEn: "Discover how chess helps people with ASD. Explore the cognitive and social benefits of this strategic game for autistic minds, backed by research."
-ogImage: "/images/blog/echecs-et-autisme-hero.png"
+seoDescription: >-
+  Règles invariantes, structure visuelle, pas de communication verbale : pourquoi l'échiquier convient naturellement aux
+  cerveaux autistes. Ce que les études sur les TSA montrent réellement.
+ogImage: /images/blog/echecs-et-autisme-hero.png
 heroImage:
-  src: "/images/blog/echecs-et-autisme-hero.png"
-  alt: "Illustration pixel art : silhouette au bord d’un chemin, ciel aux nuages pastel et sphère colorée ; titre « Échecs et autisme : pourquoi l'échiquier devient un refuge » en surimpression."
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
+  src: /images/blog/echecs-et-autisme-hero.png
+  alt: >-
+    Illustration pixel art : silhouette au bord d’un chemin, ciel aux nuages pastel et sphère colorée ; titre « Échecs
+    et autisme : pourquoi l'échiquier devient un refuge » en surimpression.
+  credit: Blog d'un Gaucher
+  license: Création originale
 ---
 
 Imagine une cour de récréation un jeudi matin. Le bruit est assourdissant : des chaises qui raclent, des éclats de voix imprévisibles, des lumières fluorescentes qui grésillent légèrement au-dessus des têtes. Pour la plupart d'entre nous, ce n'est qu'un léger fond sonore. Mais pour Théo, 9 ans, diagnostiqué [trouble du spectre de l'autisme](https://fr.wikipedia.org/wiki/Trouble_du_spectre_de_l%27autisme) (TSA) de niveau 2, ce flot d'informations sensorielles non filtrées se transforme chaque matin en une tempête intérieure paralysante. Les codes sociaux volent dans tous les sens, implicites, indéchiffrables. Il faut savoir lire entre les lignes d'une conversation, interpréter un rictus, comprendre le second degré d'une plaisanterie. C'est épuisant à un niveau que peu de personnes neurotypiques peuvent imaginer.

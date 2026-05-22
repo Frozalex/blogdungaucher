@@ -203,7 +203,7 @@ export function buildBreadcrumbJsonLd(
 
 export function buildArticleJsonLd(
   post: BlogEntry,
-  options?: { lang?: "fr" | "en" | "de" },
+  options?: { lang?: "fr" | "en" | "de"; headline?: string; description?: string },
 ) {
   const lang = options?.lang ?? "fr";
   const imagePath = post.data.ogImage ?? siteConfig.defaultOgImage;
@@ -219,13 +219,9 @@ export function buildArticleJsonLd(
   const inLanguage =
     lang === "en" ? "en-US" : lang === "de" ? "de-DE" : "fr-FR";
   const headline =
-    lang === "en"
-      ? (post.data.seoTitleEn ?? post.data.titleEn ?? post.data.seoTitle ?? post.data.title)
-      : (post.data.seoTitle ?? post.data.title);
+    options?.headline ?? (post.data.seoTitle ?? post.data.title);
   const description =
-    lang === "en"
-      ? (post.data.seoDescriptionEn ?? post.data.excerptEn ?? post.data.seoDescription ?? post.data.excerpt)
-      : (post.data.seoDescription ?? post.data.excerpt);
+    options?.description ?? (post.data.seoDescription ?? post.data.excerpt);
   const articleSectionEn: Record<CategorySlug, string> = {
     science: "Science",
     esprit: "Mind",

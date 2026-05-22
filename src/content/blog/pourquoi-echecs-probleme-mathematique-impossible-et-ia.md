@@ -1,30 +1,40 @@
 ---
-title: "Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même"
+title: Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même
 excerpt: >-
-  L'arbre des coups explose, le nombre de Shannon donne le vertige, et pourtant
-  un moteur te corrige en quelques secondes. Les échecs sont-ils "impossibles"
-  à résoudre ? Voici ce que les maths, l'informatique et l'IA font vraiment
+  L'arbre des coups explose, le nombre de Shannon donne le vertige, et pourtant un moteur te corrige en quelques
+  secondes. Les échecs sont-ils "impossibles" à résoudre ? Voici ce que les maths, l'informatique et l'IA font vraiment
   sous le capot.
 publishDate: "2026-04-09"
 updatedDate: "2026-05-21"
-category: "science"
+category: science
 featured: false
 featuredRank: 99
-readingTime: "20 min"
-pillar: "Informatique"
-tags: ["échecs", "mathématiques", "complexité", "EXPTIME", "nombre de Shannon", "arbre des coups", "minimax", "alpha-bêta", "moteur d'échecs", "IA", "Stockfish"]
+readingTime: 20 min
+pillar: Informatique
+tags:
+  - échecs
+  - mathématiques
+  - complexité
+  - EXPTIME
+  - nombre de Shannon
+  - arbre des coups
+  - minimax
+  - alpha-bêta
+  - moteur d'échecs
+  - IA
+  - Stockfish
 seoTitle: "Échecs problème mathématique impossible : complexité, Shannon, IA"
-seoDescription: "$10^{120}$ parties, complexité EXPTIME, Stockfish à 3500+ Elo : pourquoi les échecs restent insolubles formellement et comment l'IA contourne le mur."
-ogImage: "/images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.png"
+seoDescription: >-
+  $10^{120}$ parties, complexité EXPTIME, Stockfish à 3500+ Elo : pourquoi les échecs restent insolubles formellement et
+  comment l'IA contourne le mur.
+ogImage: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.png
 heroImage:
-  src: "/images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.png"
-  alt: "Vignette pixel art : ordinateur rétro, écran avec arbre de décision lumineux, titre sur la complexité mathématique des échecs et l’IA"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "Why Chess is a (Nearly) Impossible Mathematical Problem - and How AI Solves it Anyway"
-excerptEn: "The game tree explodes, Shannon's number is staggering, yet an engine corrects you in seconds. Is chess really 'unsolvable'? Here's what maths, computer science and AI actually do under the hood."
-seoTitleEn: "Chess and AI: Solving the Mathematical Impossible"
-seoDescriptionEn: "Is chess mathematically solvable? Discover how AI has revolutionised the game and why engines now beat humans at every single turn."
+  src: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.png
+  alt: >-
+    Vignette pixel art : ordinateur rétro, écran avec arbre de décision lumineux, titre sur la complexité mathématique
+    des échecs et l’IA
+  credit: Blog d'un Gaucher
+  license: Création originale
 ---
 
 Tu as déjà vécu ce paradoxe : les applis et les médias te vendent le [jeu d'échecs](https://fr.wikipedia.org/wiki/%C3%89checs) comme un objet d'une complexité cosmique, un jeu où chaque joueur trace une stratégie sur le long terme ; puis tu ouvres une appli, tu joues un coup raisonnable, et le moteur te corrige puis t'explique une ligne introuvable pour toi seul.

@@ -1,42 +1,84 @@
 ---
 title: "Résilience aux échecs : apprendre à rebondir après la défaite"
-excerpt: "Chaque grand maître a une relation particulière avec la défaite. Pas l'indifférence : les champions souffrent autant que nous après une partie perdue. Mais ils rebondissent différemment. Ce que la psychologie de la résilience dit sur comment transformer les défaites en moteur de progression."
+excerpt: >-
+  Chaque grand maître a une relation particulière avec la défaite. Pas l'indifférence : les champions souffrent autant
+  que nous après une partie perdue. Mais ils rebondissent différemment. Ce que la psychologie de la résilience dit sur
+  comment transformer les défaites en moteur de progression.
 publishDate: "2026-08-20"
-category: "esprit"
+category: esprit
 featured: false
 featuredRank: 99
-readingTime: "17 min"
-pillar: "Performance mentale"
-tags: ["résilience", "défaite", "rebondir", "psychologie du sport", "gestion de l'échec", "mindset", "performance mentale", "progression"]
+readingTime: 17 min
+pillar: Performance mentale
+tags:
+  - résilience
+  - défaite
+  - rebondir
+  - psychologie du sport
+  - gestion de l'échec
+  - mindset
+  - performance mentale
+  - progression
 keyTakeaways:
-  - "La résilience n'est pas l'absence de souffrance après une défaite : c'est la capacité à traverser cette souffrance et à en extraire une information utile."
-  - "Seligman (1990) distingue les styles explicatifs : les joueurs résilients attribuent leurs défaites à des causes spécifiques, temporaires et contrôlables : pas à leur valeur globale."
-  - "Le délai optimal d'analyse post-défaite est de 24-48 heures après la partie : assez de temps pour que l'émotion aiguë s'atténue, pas assez pour que les détails s'effacent."
-  - "La 'distanciation de soi' (Kross & Ayduk, 2017) (se parler à la troisième personne après une défaite) réduit l'activation émotionnelle et améliore la qualité de l'analyse."
-  - "Les grands maîtres qui durent le plus longtemps (Karpov, Anand, Korchnoi) montrent une constante : la capacité à recadrer une défaite comme données d'apprentissage sans minimiser la déception."
+  - >-
+    La résilience n'est pas l'absence de souffrance après une défaite : c'est la capacité à traverser cette souffrance
+    et à en extraire une information utile.
+  - >-
+    Seligman (1990) distingue les styles explicatifs : les joueurs résilients attribuent leurs défaites à des causes
+    spécifiques, temporaires et contrôlables : pas à leur valeur globale.
+  - >-
+    Le délai optimal d'analyse post-défaite est de 24-48 heures après la partie : assez de temps pour que l'émotion
+    aiguë s'atténue, pas assez pour que les détails s'effacent.
+  - >-
+    La 'distanciation de soi' (Kross & Ayduk, 2017) (se parler à la troisième personne après une défaite) réduit
+    l'activation émotionnelle et améliore la qualité de l'analyse.
+  - >-
+    Les grands maîtres qui durent le plus longtemps (Karpov, Anand, Korchnoi) montrent une constante : la capacité à
+    recadrer une défaite comme données d'apprentissage sans minimiser la déception.
 seoTitle: "Résilience aux échecs : comment rebondir après une défaite et progresser"
-seoDescription: "Style explicatif, distanciation de soi, analyse post-défaite : ce que la psychologie de la résilience dit sur la gestion des défaites aux échecs et la progression."
-ogImage: "/images/blog/echecs-et-resilience-hero.png"
+seoDescription: >-
+  Style explicatif, distanciation de soi, analyse post-défaite : ce que la psychologie de la résilience dit sur la
+  gestion des défaites aux échecs et la progression.
+ogImage: /images/blog/echecs-et-resilience-hero.png
 heroImage:
-  src: "/images/blog/echecs-et-resilience-hero.png"
-  alt: "Illustration pixel art : roi d'échecs tombé qui se relève, lumière de l'aube en arrière-plan, « Résilience aux échecs »"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "Chess Resilience : Learning to Bounce Back After a Loss"
-excerptEn: "Every grandmaster has a particular relationship with defeat. Not indifference : champions suffer as much as we do after a lost game. But they bounce back differently. What resilience psychology says about transforming losses into a progression engine."
-seoTitleEn: "Chess Resilience : How to Bounce Back After a Loss and Improve"
-seoDescriptionEn: "Explanatory style, self-distancing, post-game analysis : what resilience psychology says about handling losses in chess and progressing."
+  src: /images/blog/echecs-et-resilience-hero.png
+  alt: >-
+    Illustration pixel art : roi d'échecs tombé qui se relève, lumière de l'aube en arrière-plan, « Résilience aux
+    échecs »
+  credit: Blog d'un Gaucher
+  license: Création originale
 faq:
-  - question: "Comment accepter une défaite aux échecs sans se décourager ?"
-    answer: "La clé est de séparer l'évaluation de la partie et l'évaluation de soi. Une défaite dit quelque chose sur ta préparation ou ta forme du jour : pas sur ta valeur en tant que personne. Concrètement : accorde-toi un temps limité pour ressentir la déception (15-30 minutes), puis déplace l'attention vers l'analyse factuelle. 'Qu'est-ce qui s'est passé ?' est une question utile ; 'Pourquoi suis-je aussi nul ?' ne l'est pas."
-  - question: "Les grands maîtres sont-ils vraiment résilients après une défaite ?"
-    answer: "Oui, mais pas au sens de 'indifférents'. Garry Kasparov a décrit des défaites qui l'ont hanté pendant des années. Magnus Carlsen a quitté des tournois en colère après des défaites inattendues. La différence n'est pas l'absence d'émotion : c'est la capacité à revenir à l'analyse productive malgré l'émotion. Ils traitent la déception, ils ne la nient pas."
-  - question: "Faut-il analyser la partie immédiatement après ou attendre ?"
-    answer: "La recherche sur la mémoire émotionnelle suggère un délai de 24-48 heures pour l'analyse en profondeur. Dans les premières heures, l'activation émotionnelle (cortisol, adrénaline résiduelle) perturbe le jugement : tu te souviens mieux de tes mauvais coups que de tes bons, et tu évalues trop durement tes erreurs. Après 48h, certains détails s'effacent. Le lendemain matin est souvent le meilleur moment."
-  - question: "La résilience s'entraîne-t-elle ou est-elle une disposition innée ?"
-    answer: "Les deux. Il existe une composante tempéramentale à la résilience : certaines personnes rebondissent naturellement plus vite. Mais les études (Bonanno, 2004 ; Masten, 2014) montrent que la résilience est aussi une compétence qui s'entraîne. Les pratiques concrètes (journalisation, reformulation cognitive, soutien social) augmentent la résilience de manière mesurable."
-  - question: "Comment éviter de refaire les mêmes erreurs après une défaite ?"
-    answer: "Le protocole en trois étapes : (1) Identifier la cause précise de la défaite : pas 'j'ai mal joué le milieu de jeu' mais 'j'ai sous-évalué la force de son Cavalier en c5 parce que je ne calculais que les menaces directes' ; (2) Travailler spécifiquement cette faiblesse (exercices tactiques sur les Cavaliers centraux, par exemple) ; (3) Rejouer mentalement la position clé avec la correction. Ce cycle transforme chaque défaite en programme d'entraînement ciblé."
+  - question: Comment accepter une défaite aux échecs sans se décourager ?
+    answer: >-
+      La clé est de séparer l'évaluation de la partie et l'évaluation de soi. Une défaite dit quelque chose sur ta
+      préparation ou ta forme du jour : pas sur ta valeur en tant que personne. Concrètement : accorde-toi un temps
+      limité pour ressentir la déception (15-30 minutes), puis déplace l'attention vers l'analyse factuelle. 'Qu'est-ce
+      qui s'est passé ?' est une question utile ; 'Pourquoi suis-je aussi nul ?' ne l'est pas.
+  - question: Les grands maîtres sont-ils vraiment résilients après une défaite ?
+    answer: >-
+      Oui, mais pas au sens de 'indifférents'. Garry Kasparov a décrit des défaites qui l'ont hanté pendant des années.
+      Magnus Carlsen a quitté des tournois en colère après des défaites inattendues. La différence n'est pas l'absence
+      d'émotion : c'est la capacité à revenir à l'analyse productive malgré l'émotion. Ils traitent la déception, ils ne
+      la nient pas.
+  - question: Faut-il analyser la partie immédiatement après ou attendre ?
+    answer: >-
+      La recherche sur la mémoire émotionnelle suggère un délai de 24-48 heures pour l'analyse en profondeur. Dans les
+      premières heures, l'activation émotionnelle (cortisol, adrénaline résiduelle) perturbe le jugement : tu te
+      souviens mieux de tes mauvais coups que de tes bons, et tu évalues trop durement tes erreurs. Après 48h, certains
+      détails s'effacent. Le lendemain matin est souvent le meilleur moment.
+  - question: La résilience s'entraîne-t-elle ou est-elle une disposition innée ?
+    answer: >-
+      Les deux. Il existe une composante tempéramentale à la résilience : certaines personnes rebondissent naturellement
+      plus vite. Mais les études (Bonanno, 2004 ; Masten, 2014) montrent que la résilience est aussi une compétence qui
+      s'entraîne. Les pratiques concrètes (journalisation, reformulation cognitive, soutien social) augmentent la
+      résilience de manière mesurable.
+  - question: Comment éviter de refaire les mêmes erreurs après une défaite ?
+    answer: >-
+      Le protocole en trois étapes : (1) Identifier la cause précise de la défaite : pas 'j'ai mal joué le milieu de
+      jeu' mais 'j'ai sous-évalué la force de son Cavalier en c5 parce que je ne calculais que les menaces directes' ;
+      (2) Travailler spécifiquement cette faiblesse (exercices tactiques sur les Cavaliers centraux, par exemple) ; (3)
+      Rejouer mentalement la position clé avec la correction. Ce cycle transforme chaque défaite en programme
+      d'entraînement ciblé.
 ---
 
 [Viktor Korchnoi](https://fr.wikipedia.org/wiki/Viktor_Kortchnoi) a joué aux échecs à haut niveau jusqu'à l'âge de 81 ans. Il a perdu des milliers de parties au cours de sa carrière : y compris deux finales de championnat du monde, contre Karpov, dans des conditions psychologiques épuisantes. Et il est revenu. Toujours.

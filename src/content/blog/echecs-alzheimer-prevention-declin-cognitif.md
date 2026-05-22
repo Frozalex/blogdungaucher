@@ -1,91 +1,101 @@
 ---
 title: "Échecs et Alzheimer : comment stimuler son cerveau pour prévenir le déclin cognitif"
-excerpt: "Chiffres extraits de la littérature récente : méta-analyses, cohortes et essais sur jeux de plateau, stimulation cognitive et risque de démence, avec les limites statistiques et ce que les échecs peuvent (vraiment) apporter."
+excerpt: >-
+  Chiffres extraits de la littérature récente : méta-analyses, cohortes et essais sur jeux de plateau, stimulation
+  cognitive et risque de démence, avec les limites statistiques et ce que les échecs peuvent (vraiment) apporter.
 publishDate: "2026-05-10"
 updatedDate: "2026-05-10"
-category: "science"
+category: science
 featured: true
 featuredRank: 3
-readingTime: "28 min"
-pillar: "Neurosciences"
+readingTime: 28 min
+pillar: Neurosciences
 tags:
-  [
-    "Alzheimer",
-    "démence",
-    "méta-analyse",
-    "études quantitatives",
-    "réserve cognitive",
-    "vieillissement",
-    "seniors",
-    "prévention",
-    "échecs",
-    "BDNF",
-    "cognition",
-  ]
+  - Alzheimer
+  - démence
+  - méta-analyse
+  - études quantitatives
+  - réserve cognitive
+  - vieillissement
+  - seniors
+  - prévention
+  - échecs
+  - BDNF
+  - cognition
 keyTakeaways:
   - "Cohortes : hazard ratios au niveau population ; pas une garantie pour un individu."
   - "ALSOP : « jeux actifs » est une catégorie large ; les échecs y sont regroupés avec d’autres jeux."
   - "Essais récents : gains souvent plus nets sur humeur ou qualité de vie que sur la cognition globale."
-  - "Méta-analyses sur les jeux : effets sur scores cognitifs souvent modestes ; pas de preuve robuste d’une protection individuelle contre la démence."
-  - "Les échecs : stimulation cognitive comme d’autres loisirs ; pas un substitut à suivi médical ou prévention vasculaire."
+  - >-
+    Méta-analyses sur les jeux : effets sur scores cognitifs souvent modestes ; pas de preuve robuste d’une protection
+    individuelle contre la démence.
+  - >-
+    Les échecs : stimulation cognitive comme d’autres loisirs ; pas un substitut à suivi médical ou prévention
+    vasculaire.
 remotionPlayerIntro: false
 remotionPlayerMid: true
 remotionPlayerSummary: true
 introVideoAspect: "16:9"
 midArticleVideoAspect: "16:9"
-midArticleVideoHeadingSlug: "synthèse-chiffrée--ce-que-disent-quelques-études-clés"
-midArticleVideoEyebrow: "Données clés"
+midArticleVideoHeadingSlug: synthèse-chiffrée--ce-que-disent-quelques-études-clés
+midArticleVideoEyebrow: Données clés
 summaryVideoAspect: "16:9"
-summarySequence: "data-reveal"
+summarySequence: data-reveal
 dataReveal:
-  vizTitle: "Jeux, cohortes et incidence (vue synthétique)"
+  vizTitle: Jeux, cohortes et incidence (vue synthétique)
   bars:
-    - label: "HR démence (littératie)"
+    - label: HR démence (littératie)
       value: 0.89
       max: 1
-    - label: "HR démence (jeux actifs)"
+    - label: HR démence (jeux actifs)
       value: 0.91
       max: 1
-    - label: "SMD MMSE (Li 2023)"
+    - label: SMD MMSE (Li 2023)
       value: 2.69
       max: 4
-  highlight: "−11 % / −9 %"
-  highlightSub: "réduction relative du risque sur 10 ans (ALSOP)"
-  source: "Wu et al., JAMA Netw Open 2023 ; Li et al., Worldviews Evid Based Nurs 2023"
-  takeaway: |
-    À l’échelle des populations, les synthèses et cohortes rapportent des associations entre activités cognitives et risque relatif de démence. Pour une personne donnée, aucune activité isolée ne permet d’inférer un résultat individuel à partir de ces chiffres.
+  highlight: −11 % / −9 %
+  highlightSub: réduction relative du risque sur 10 ans (ALSOP)
+  source: Wu et al., JAMA Netw Open 2023 ; Li et al., Worldviews Evid Based Nurs 2023
+  takeaway: >
+    À l’échelle des populations, les synthèses et cohortes rapportent des associations entre activités cognitives et
+    risque relatif de démence. Pour une personne donnée, aucune activité isolée ne permet d’inférer un résultat
+    individuel à partir de ces chiffres.
 
-    Les échecs peuvent contribuer au plaisir et à la stimulation mentale comme d’autres activités régulières. Les études citées mesurent surtout des tendances agrégées, pas des promesses au cas par cas.
+
+    Les échecs peuvent contribuer au plaisir et à la stimulation mentale comme d’autres activités régulières. Les études
+    citées mesurent surtout des tendances agrégées, pas des promesses au cas par cas.
 seoTitle: "Échecs et Alzheimer : études, chiffres et prévention cognitive"
-seoDescription: "Données chiffrées sur les jeux cognitifs, la démence et le vieillissement : méta-analyses MMSE, cohortes ALSOP, essais chez les personnes âgées, sans promesse miracle."
-titleEn: "Chess and Alzheimer's: stimulating the brain to help prevent cognitive decline"
-excerptEn: "Numbers from recent literature: meta-analyses, cohorts, and trials on board games, cognitive stimulation, and dementia risk, with statistical limits and what chess can realistically offer."
-seoTitleEn: "Chess and Alzheimer's: studies, figures, and cognitive prevention"
-seoDescriptionEn: "Quantitative evidence on cognitive games, dementia, and aging: MMSE meta-analyses, ALSOP cohort, trials in older adults, without miracle claims."
-ogImage: "/images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.png"
+seoDescription: >-
+  Données chiffrées sur les jeux cognitifs, la démence et le vieillissement : méta-analyses MMSE, cohortes ALSOP, essais
+  chez les personnes âgées, sans promesse miracle.
+ogImage: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.png
 heroImage:
-  src: "/images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.png"
-  alt: "Vignette pixel art : cerveau en pixels dont une partie se dissipe, titre sur les échecs et la prévention du déclin cognitif"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
+  src: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.png
+  alt: >-
+    Vignette pixel art : cerveau en pixels dont une partie se dissipe, titre sur les échecs et la prévention du déclin
+    cognitif
+  credit: Blog d'un Gaucher
+  license: Création originale
 faq:
-  - question: "Les échecs empêchent-ils la maladie d’Alzheimer ?"
-    answer: "Non : aucune activité isolée ne peut garantir l’absence de maladie neurodégénérative. Les grandes cohortes montrent des associations entre activités mentales régulières et risque relatif plus faible à l’échelle d’une population ; pas une protection individuelle mesurable à coup sûr."
-  - question: "Que valent les « pourcentages » de réduction de risque cités dans les études ?"
-    answer: "Ce sont souvent des hazard ratios ajustés : par exemple une baisse relative de 11 % ou 9 % du risque de démence sur dix ans pour des habitudes fréquentes (littératie ou jeux/puzzles) dans une cohorte précise. Ce n’est pas une garantie personnelle : âge, génétique, santé vasculaire et hasard jouent toujours."
-  - question: "Les études sur le jeu de Go s’appliquent-elles aux échecs ?"
-    answer: "Partiellement : ce sont des jeux de plateau à charge cognitive élevée, mais les protocoles (durée, malades déjà diagnostiqués vs seniors bien portants) diffèrent. Il faut lire chaque titre comme une pièce du puzzle, pas comme une preuve transférable mot pour mot aux échecs occidentaux."
-  - question: "Les échecs modifient-ils l’architecture cérébrale ?"
-    answer: "La pratique prolongée est associée à des différences fonctionnelles sur l’imagerie ; pour le lien jeu → réserves cognitives et transfert, voir nos pages sur la cognition aux échecs et le jeu d’échecs."
-faqEn:
-  - question: "Do chess prevent Alzheimer's disease?"
-    answer: "No single activity can guarantee you won't develop a neurodegenerative disease. Large cohorts report associations between frequent mental activities and lower relative risk at population level ; not an individually assured shield."
-  - question: "What do published “percent risk reductions” mean?"
-    answer: "They are often adjusted hazard ratios ; e.g. ~11% or ~9% lower dementia incidence over ten years for specific habits in one cohort. That's not a personal guarantee: age, genetics, vascular health, and chance still dominate."
-  - question: "Do Go studies apply to chess?"
-    answer: "Partly: both are cognitively demanding board games, but protocols differ (duration, diagnosed patients vs healthy seniors). Treat each paper as one puzzle piece, not automatic proof for Western chess."
-  - question: "Do chess change brain architecture?"
-    answer: "Long-term practice correlates with functional imaging differences; see our chess-and-brain articles for cognitive reserve and transfer."
+  - question: Les échecs empêchent-ils la maladie d’Alzheimer ?
+    answer: >-
+      Non : aucune activité isolée ne peut garantir l’absence de maladie neurodégénérative. Les grandes cohortes
+      montrent des associations entre activités mentales régulières et risque relatif plus faible à l’échelle d’une
+      population ; pas une protection individuelle mesurable à coup sûr.
+  - question: Que valent les « pourcentages » de réduction de risque cités dans les études ?
+    answer: >-
+      Ce sont souvent des hazard ratios ajustés : par exemple une baisse relative de 11 % ou 9 % du risque de démence
+      sur dix ans pour des habitudes fréquentes (littératie ou jeux/puzzles) dans une cohorte précise. Ce n’est pas une
+      garantie personnelle : âge, génétique, santé vasculaire et hasard jouent toujours.
+  - question: Les études sur le jeu de Go s’appliquent-elles aux échecs ?
+    answer: >-
+      Partiellement : ce sont des jeux de plateau à charge cognitive élevée, mais les protocoles (durée, malades déjà
+      diagnostiqués vs seniors bien portants) diffèrent. Il faut lire chaque titre comme une pièce du puzzle, pas comme
+      une preuve transférable mot pour mot aux échecs occidentaux.
+  - question: Les échecs modifient-ils l’architecture cérébrale ?
+    answer: >-
+      La pratique prolongée est associée à des différences fonctionnelles sur l’imagerie ; pour le lien jeu → réserves
+      cognitives et transfert, voir nos pages sur la cognition aux échecs et le jeu d’échecs.
 ---
 
 Les titres racoleurs promettent parfois une « arme » contre **la maladie** souvent nommée ainsi dans les médias.

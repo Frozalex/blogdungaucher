@@ -1,27 +1,39 @@
 ---
-title: "Découvrez le pouvoir des échecs sur votre mémoire"
-excerpt: "Mémoire de travail, chunks, ouvertures, parties oubliées ou gravées : ce que la psychologie cognitive et les neurosciences disent vraiment du lien entre échecs et mémoire, et comment t'entraîner pour que ça compte."
+title: Découvrez le pouvoir des échecs sur votre mémoire
+excerpt: >-
+  Mémoire de travail, chunks, ouvertures, parties oubliées ou gravées : ce que la psychologie cognitive et les
+  neurosciences disent vraiment du lien entre échecs et mémoire, et comment t'entraîner pour que ça compte.
 publishDate: "2026-05-18"
-category: "science"
+category: science
 featured: false
 featuredRank: 99
-readingTime: "24 min"
-pillar: "Cognition"
-tags: ["échecs mémoire", "chunks", "Chase Simon", "Gobet", "mémoire de travail", "mémoire à long terme", "concentration", "cognition", "neurosciences", "enfants"]
+readingTime: 24 min
+pillar: Cognition
+tags:
+  - échecs mémoire
+  - chunks
+  - Chase Simon
+  - Gobet
+  - mémoire de travail
+  - mémoire à long terme
+  - concentration
+  - cognition
+  - neurosciences
+  - enfants
 seoTitle: "Échecs et mémoire : mémoire de travail, chunks et apprentissage"
-seoDescription: "Mémoire de travail, chunks de Chase & Simon, mémoire procédurale : comment les échecs transforment la mémoire et dans quelles conditions ces gains se transfèrent réellement."
-titleEn: "Chess and Memory: How the Game Stimulates Your Cognitive Skills"
-excerptEn: "Working memory, chunks, openings, games forgotten or etched in mind: what cognitive psychology and neuroscience really say about chess and memory, and how to train so it counts."
-seoTitleEn: "Chess and Memory: Cognitive Stimulation, Science and Training"
-seoDescriptionEn: "Working memory, consolidation, openings, seniors: the chess-memory link explained by research (Chase & Simon, Gobet, de Groot) and concrete training tips."
-ogImage: "/images/blog/echecs-et-memoire-hero.png"
-summaryVideo: "/videos/summary-echecs-et-memoire.mp4"
-summaryVideoNote: "Version 1 — résumé visuel de l'article (~2 min, sans son pour l'instant). Produite avec Motion Canvas, en itération."
+seoDescription: >-
+  Mémoire de travail, chunks de Chase & Simon, mémoire procédurale : comment les échecs transforment la mémoire et dans
+  quelles conditions ces gains se transfèrent réellement.
+ogImage: /images/blog/echecs-et-memoire-hero.png
+summaryVideo: /videos/summary-echecs-et-memoire.mp4
+summaryVideoNote: Version 1 — résumé visuel de l'article (~2 min, sans son pour l'instant). Produite avec Motion Canvas, en itération.
 heroImage:
-  src: "/images/blog/echecs-et-memoire-hero.png"
-  alt: "Illustration pixel art : profil de tête rempli de pièces d’échecs et d’étoiles sur fond bleu nuit ; texte « Découvrez le pouvoir des échecs sur votre mémoire » à gauche."
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
+  src: /images/blog/echecs-et-memoire-hero.png
+  alt: >-
+    Illustration pixel art : profil de tête rempli de pièces d’échecs et d’étoiles sur fond bleu nuit ; texte «
+    Découvrez le pouvoir des échecs sur votre mémoire » à gauche.
+  credit: Blog d'un Gaucher
+  license: Création originale
 ---
 
 Anatoli Karpov rejouait de mémoire, sans échiquier, des parties disputées vingt ans plus tôt. Coup par coup. Variante par variante. Des journalistes l'ont testé plusieurs fois : il ne se trompait pas.

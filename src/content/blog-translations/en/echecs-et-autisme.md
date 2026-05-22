@@ -1,3 +1,14 @@
+---
+title: "Chess and Autism: Why the Chessboard Becomes a Refuge"
+excerpt: >-
+  For a brain that struggles with social ambiguity, the chessboard is one of the few spaces where rules truly hold. What
+  research actually says about autism and chess, without romanticism or oversimplification.
+seoTitle: "Chess and Autism: Benefits for the Autism Spectrum"
+seoDescription: >-
+  Discover how chess helps people with ASD. Explore the cognitive and social benefits of this strategic game for
+  autistic minds, backed by research.
+---
+
 Picture a school playground one Thursday morning. The noise is overwhelming: chairs scraping, unpredictable voices, fluorescent lights humming slightly overhead. For most of us it is mild background sound. But for Theo, 9, diagnosed with [autism spectrum disorder](https://en.wikipedia.org/wiki/Autism_spectrum) (ASD) level 2, that flood of unfiltered sensory input becomes a paralyzing inner storm every morning. Social codes fly everywhere, implicit, unreadable. You must read between the lines of a conversation, interpret a smirk, grasp the irony of a joke. It is exhausting at a level few neurotypical people can imagine.
 
 Then one afternoon an educator sets a black-and-white checkered board in front of Theo. Their hands line up the 32 wooden pieces. Suddenly the storm calms. Background noise fades. On those 64 squares the world becomes perfectly understandable. There are no subtexts, no gray zones, no social lies. Knights jump in L-shapes, Bishops glide on diagonals. Always. Without exception. It is a rule, and rules do not lie.

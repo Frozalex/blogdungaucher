@@ -1,42 +1,77 @@
 ---
 title: "Guide Grand Oral toutes spécialités – Échecs : le kit universel pour lycéens"
-excerpt: "Tu n'as pas Maths, NSI ou SES ? Ce guide te permet quand même de faire un Grand Oral brillant avec les échecs, quelle que soit ta spécialité : Philosophie, SVT, PC, HGG, Littérature, STMG. Script 10 min, 20 questions jury, argumentaire universel. Adapte, défends, convaincs."
+excerpt: >-
+  Tu n'as pas Maths, NSI ou SES ? Ce guide te permet quand même de faire un Grand Oral brillant avec les échecs, quelle
+  que soit ta spécialité : Philosophie, SVT, PC, HGG, Littérature, STMG. Script 10 min, 20 questions jury, argumentaire
+  universel. Adapte, défends, convaincs.
 publishDate: "2026-05-15"
-category: "grand-oral"
+category: grand-oral
 featured: false
 featuredRank: 99
-readingTime: "20 min"
-pillar: "Grand Oral"
-tags: ["grand-oral", "toutes spécialités", "philosophie", "SVT", "terminale", "baccalauréat", "guide", "universel", "script", "questions jury"]
+readingTime: 20 min
+pillar: Grand Oral
+tags:
+  - grand-oral
+  - toutes spécialités
+  - philosophie
+  - SVT
+  - terminale
+  - baccalauréat
+  - guide
+  - universel
+  - script
+  - questions jury
 keyTakeaways:
-  - "Les échecs peuvent être traités dans n'importe quelle spécialité avec le bon angle disciplinaire."
+  - Les échecs peuvent être traités dans n'importe quelle spécialité avec le bon angle disciplinaire.
   - "Script universel 10 minutes adaptable selon ta spécialité : Philosophie, SVT, PC, HGG, Littérature."
   - "20 questions de jury transversales avec réponses : plus les angles spécifiques à chaque spécialité."
-  - "Tableau de correspondance problématique × spécialité pour choisir en 5 minutes."
+  - Tableau de correspondance problématique × spécialité pour choisir en 5 minutes.
   - "Erreurs à éviter au Grand Oral avec les échecs : les pièges classiques que le jury repère."
 seoTitle: "Guide Grand Oral Échecs toutes spécialités 2026 : kit universel + script 10 min"
-seoDescription: "Kit complet pour faire un Grand Oral brillant avec les échecs dans n'importe quelle spécialité (Philo, SVT, PC, HGG). Script 10 min, 20 questions jury rédigées, erreurs à éviter."
-ogImage: "/images/blog/guide-grand-oral-echecs-toutes-specialites-hero.png"
+seoDescription: >-
+  Kit complet pour faire un Grand Oral brillant avec les échecs dans n'importe quelle spécialité (Philo, SVT, PC, HGG).
+  Script 10 min, 20 questions jury rédigées, erreurs à éviter.
+ogImage: /images/blog/guide-grand-oral-echecs-toutes-specialites-hero.png
 heroImage:
-  src: "/images/blog/guide-grand-oral-echecs-toutes-specialites-hero.png"
-  alt: "Illustration pixel art : lycéen face à un jury avec différentes disciplines autour d'un échiquier, « Guide Grand Oral Échecs toutes spécialités »"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "All-Specialties Grand Oral Chess Guide 2026: Universal Kit + 10-min Script"
-excerptEn: "No Maths, NSI or SES? This guide lets you do a brilliant Grand Oral with chess in any specialty: Philosophy, Life Sciences, Physics, History-Geography, Literature. 10-min script, 20 jury questions, universal arguments."
-seoTitleEn: "All-Specialties Grand Oral Chess Guide 2026: Universal Kit + 10-min Script"
-seoDescriptionEn: "Complete kit for a brilliant Grand Oral with chess in any specialty (Philosophy, Life Sciences, Physics, History). 10-min script, 20 jury questions, mistakes to avoid."
+  src: /images/blog/guide-grand-oral-echecs-toutes-specialites-hero.png
+  alt: >-
+    Illustration pixel art : lycéen face à un jury avec différentes disciplines autour d'un échiquier, « Guide Grand
+    Oral Échecs toutes spécialités »
+  credit: Blog d'un Gaucher
+  license: Création originale
 faq:
-  - question: "Peut-on vraiment faire son Grand Oral sur les échecs sans avoir Maths ou NSI ?"
-    answer: "Oui, et c'est même une force. La plupart des sujets Grand Oral sur les échecs sont présentés par des élèves de Maths/NSI, si tu as Philosophie, SVT ou autre chose, tu te démarques immédiatement. Le jury a vu 50 exposés sur la formule Elo ou le minimax ; il n'a peut-être jamais entendu parler des échecs à travers la conscience et la délibération (Philosophie), ou de la cognition et de la mémoire (SVT). Le sujet inattendu + maîtrisé = combinaison gagnante."
-  - question: "Comment relier les échecs à ma spécialité si ce n'est pas une spécialité scientifique ?"
-    answer: "C'est la question centrale. La règle : ancre ton exposé dans les notions de ton programme, pas dans les échecs eux-mêmes. Si tu as Philosophie, parle de liberté, de déterminisme, de rationalité: les échecs illustrent. Si tu as HGG, parle de puissance, de territoire, de mémoire collective: les échecs illustrent. Les échecs sont le terrain d'observation, pas le sujet final. Cette distinction est ce que le jury vérifie."
-  - question: "Combien de temps faut-il pour préparer un Grand Oral avec les échecs ?"
-    answer: "Minimum 3 semaines sérieuses. Semaine 1 : comprendre les notions de base (Elo, Shannon, quelques exemples historiques). Semaine 2 : choisir la problématique, construire le script, mémoriser les données clés. Semaine 3 : entraînements chronométrés (au moins 5 passes de 10 minutes) et simulation des questions jury avec un proche. Ne démarre pas à J-3: le jury repère immédiatement le manque de profondeur."
-  - question: "Peut-on apporter un échiquier physique au Grand Oral ?"
-    answer: "Oui, c'est autorisé et recommandé pour n'importe quelle spécialité. Un échiquier posé sur la table matérialise le sujet, donne une présence concrète à l'exposé, et te donne un objet à montrer pendant les démonstrations. Préfère un échiquier compact (20×20 cm) pour ne pas encombrer. Pose-le dès l'installation: c'est un signal immédiat au jury que tu es préparé."
-  - question: "Quelles sont les erreurs les plus fréquentes au Grand Oral sur les échecs ?"
-    answer: "Cinq erreurs classiques : (1) Parler des règles du jeu au lieu des concepts: le jury n'a pas besoin de savoir comment se déplace le cavalier. (2) Être trop technique pour sa spécialité, si tu n'as pas NSI, évite de présenter du code Python. (3) Ne pas répondre à une vraie problématique, 'Les échecs, c'est intéressant' n'est pas une problématique. (4) Réciter sans conviction: le jury valorise l'authenticité, pas la récitation parfaite. (5) Ignorer les limites du sujet: un bon exposé pose aussi les limites de sa propre argumentation."
+  - question: Peut-on vraiment faire son Grand Oral sur les échecs sans avoir Maths ou NSI ?
+    answer: >-
+      Oui, et c'est même une force. La plupart des sujets Grand Oral sur les échecs sont présentés par des élèves de
+      Maths/NSI, si tu as Philosophie, SVT ou autre chose, tu te démarques immédiatement. Le jury a vu 50 exposés sur la
+      formule Elo ou le minimax ; il n'a peut-être jamais entendu parler des échecs à travers la conscience et la
+      délibération (Philosophie), ou de la cognition et de la mémoire (SVT). Le sujet inattendu + maîtrisé = combinaison
+      gagnante.
+  - question: Comment relier les échecs à ma spécialité si ce n'est pas une spécialité scientifique ?
+    answer: >-
+      C'est la question centrale. La règle : ancre ton exposé dans les notions de ton programme, pas dans les échecs
+      eux-mêmes. Si tu as Philosophie, parle de liberté, de déterminisme, de rationalité: les échecs illustrent. Si tu
+      as HGG, parle de puissance, de territoire, de mémoire collective: les échecs illustrent. Les échecs sont le
+      terrain d'observation, pas le sujet final. Cette distinction est ce que le jury vérifie.
+  - question: Combien de temps faut-il pour préparer un Grand Oral avec les échecs ?
+    answer: >-
+      Minimum 3 semaines sérieuses. Semaine 1 : comprendre les notions de base (Elo, Shannon, quelques exemples
+      historiques). Semaine 2 : choisir la problématique, construire le script, mémoriser les données clés. Semaine 3 :
+      entraînements chronométrés (au moins 5 passes de 10 minutes) et simulation des questions jury avec un proche. Ne
+      démarre pas à J-3: le jury repère immédiatement le manque de profondeur.
+  - question: Peut-on apporter un échiquier physique au Grand Oral ?
+    answer: >-
+      Oui, c'est autorisé et recommandé pour n'importe quelle spécialité. Un échiquier posé sur la table matérialise le
+      sujet, donne une présence concrète à l'exposé, et te donne un objet à montrer pendant les démonstrations. Préfère
+      un échiquier compact (20×20 cm) pour ne pas encombrer. Pose-le dès l'installation: c'est un signal immédiat au
+      jury que tu es préparé.
+  - question: Quelles sont les erreurs les plus fréquentes au Grand Oral sur les échecs ?
+    answer: >-
+      Cinq erreurs classiques : (1) Parler des règles du jeu au lieu des concepts: le jury n'a pas besoin de savoir
+      comment se déplace le cavalier. (2) Être trop technique pour sa spécialité, si tu n'as pas NSI, évite de présenter
+      du code Python. (3) Ne pas répondre à une vraie problématique, 'Les échecs, c'est intéressant' n'est pas une
+      problématique. (4) Réciter sans conviction: le jury valorise l'authenticité, pas la récitation parfaite. (5)
+      Ignorer les limites du sujet: un bon exposé pose aussi les limites de sa propre argumentation.
 ---
 
 > **📥 Comment utiliser ce guide ?** Imprime ce guide (Ctrl+P, A4, sans marges). Lis d'abord le tableau de correspondance pour trouver ta problématique en 5 minutes. Puis suis le script de ta section spécialité. Entraîne-toi à voix haute avec chronomètre.

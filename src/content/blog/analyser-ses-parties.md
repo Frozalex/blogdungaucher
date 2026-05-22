@@ -1,42 +1,90 @@
 ---
 title: "Analyser ses parties d'échecs : le guide pratique pour progresser vraiment"
-excerpt: "Jouer beaucoup de parties sans les analyser, c'est s'entraîner à répéter ses erreurs. L'analyse post-partie est la tâche la plus rentable pour progresser aux échecs, et la plus mal faite. Méthode, outils, pièges à éviter."
+excerpt: >-
+  Jouer beaucoup de parties sans les analyser, c'est s'entraîner à répéter ses erreurs. L'analyse post-partie est la
+  tâche la plus rentable pour progresser aux échecs, et la plus mal faite. Méthode, outils, pièges à éviter.
 publishDate: "2026-10-12"
-category: "esprit"
+category: esprit
 featured: false
 featuredRank: 99
-readingTime: "18 min"
-pillar: "Performance mentale"
-tags: ["analyse", "progression", "amélioration", "Stockfish", "erreurs", "entraînement", "méthode", "autoévaluation"]
+readingTime: 18 min
+pillar: Performance mentale
+tags:
+  - analyse
+  - progression
+  - amélioration
+  - Stockfish
+  - erreurs
+  - entraînement
+  - méthode
+  - autoévaluation
 keyTakeaways:
-  - "L'analyse post-partie sans moteur d'abord est indispensable : si vous laissez Stockfish regarder votre partie en premier, vous n'apprenez pas à identifier vos propres schémas d'erreurs : vous apprenez seulement à lire des évaluations."
-  - "Les erreurs aux échecs se regroupent en familles (erreurs tactiques ponctuelles, erreurs de plan stratégique, erreurs de gestion du temps, erreurs de positionnement typiques): identifier sa famille d'erreurs dominante est la base d'un travail ciblé."
-  - "Le 'moment critique' de la partie (le coup où l'avantage a changé de camp) est souvent identifiable à l'analyse humaine sans moteur. C'est le coup le plus instructif : comprendre *pourquoi* la position a changé là est plus important que de trouver le coup optimal."
-  - "L'analyse de parties perdues est plus instructive que l'analyse de parties gagnées : dans une partie gagnée, les erreurs des deux camps se compensent. Dans une partie perdue, l'erreur décisive est généralement identifiable."
-  - "Une analyse sérieuse de 20 à 30 minutes par partie (sans moteur) produit plus de progrès qu'une heure de jeu supplémentaire sans analyse."
+  - >-
+    L'analyse post-partie sans moteur d'abord est indispensable : si vous laissez Stockfish regarder votre partie en
+    premier, vous n'apprenez pas à identifier vos propres schémas d'erreurs : vous apprenez seulement à lire des
+    évaluations.
+  - >-
+    Les erreurs aux échecs se regroupent en familles (erreurs tactiques ponctuelles, erreurs de plan stratégique,
+    erreurs de gestion du temps, erreurs de positionnement typiques): identifier sa famille d'erreurs dominante est la
+    base d'un travail ciblé.
+  - >-
+    Le 'moment critique' de la partie (le coup où l'avantage a changé de camp) est souvent identifiable à l'analyse
+    humaine sans moteur. C'est le coup le plus instructif : comprendre *pourquoi* la position a changé là est plus
+    important que de trouver le coup optimal.
+  - >-
+    L'analyse de parties perdues est plus instructive que l'analyse de parties gagnées : dans une partie gagnée, les
+    erreurs des deux camps se compensent. Dans une partie perdue, l'erreur décisive est généralement identifiable.
+  - >-
+    Une analyse sérieuse de 20 à 30 minutes par partie (sans moteur) produit plus de progrès qu'une heure de jeu
+    supplémentaire sans analyse.
 seoTitle: "Analyser ses parties d'échecs : méthode pratique pour progresser"
-seoDescription: "Méthode d'analyse post-partie sans moteur, identification des erreurs récurrentes, utilisation intelligente de Stockfish : comment analyser ses parties pour vraiment progresser aux échecs."
-ogImage: "/images/blog/analyser-ses-parties-hero.png"
+seoDescription: >-
+  Méthode d'analyse post-partie sans moteur, identification des erreurs récurrentes, utilisation intelligente de
+  Stockfish : comment analyser ses parties pour vraiment progresser aux échecs.
+ogImage: /images/blog/analyser-ses-parties-hero.png
 heroImage:
-  src: "/images/blog/analyser-ses-parties-hero.png"
-  alt: "Illustration pixel art : joueur d'échecs analysant une position sur un carnet, échiquier devant lui, annotations manuscrites, « Analyser ses parties »"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "Analyzing Your Chess Games : The Practical Guide to Real Progress"
-excerptEn: "Playing many games without analyzing them means training yourself to repeat your mistakes. Post-game analysis is the most productive task for chess improvement, and the most poorly done. Method, tools, pitfalls to avoid."
-seoTitleEn: "Analyzing Your Chess Games : Practical Guide to Real Progress"
-seoDescriptionEn: "Post-game analysis without engine first, identifying recurring error patterns, smart use of Stockfish : how to analyze your games for real chess progress."
+  src: /images/blog/analyser-ses-parties-hero.png
+  alt: >-
+    Illustration pixel art : joueur d'échecs analysant une position sur un carnet, échiquier devant lui, annotations
+    manuscrites, « Analyser ses parties »
+  credit: Blog d'un Gaucher
+  license: Création originale
 faq:
-  - question: "Combien de temps faut-il consacrer à l'analyse post-partie ?"
-    answer: "Pour un joueur de club qui veut progresser, 15 à 30 minutes par partie est un objectif réaliste et productif. L'analyse peut être faite en deux temps : une session courte juste après la partie (pendant que les impressions sont fraîches, 10-15 minutes), et une session plus longue plus tard avec les outils. Il n'est pas nécessaire d'analyser toutes les parties : mieux vaut analyser sérieusement une partie sur trois que d'analyser toutes les parties superficiellement."
+  - question: Combien de temps faut-il consacrer à l'analyse post-partie ?
+    answer: >-
+      Pour un joueur de club qui veut progresser, 15 à 30 minutes par partie est un objectif réaliste et productif.
+      L'analyse peut être faite en deux temps : une session courte juste après la partie (pendant que les impressions
+      sont fraîches, 10-15 minutes), et une session plus longue plus tard avec les outils. Il n'est pas nécessaire
+      d'analyser toutes les parties : mieux vaut analyser sérieusement une partie sur trois que d'analyser toutes les
+      parties superficiellement.
   - question: "Quel moteur utiliser pour analyser : Stockfish, Leela Chess Zero, ou autre ?"
-    answer: "Stockfish (disponible gratuitement sur Lichess et en téléchargement) est le standard pour l'analyse tactique : il est extrêmement précis sur les coups concrets. Leela Chess Zero (Lc0) a un style d'évaluation positionnelle plus proche du jeu humain, ce qui peut être plus instructif pour les évaluations de position à long terme. Chess.com et Lichess intègrent des moteurs directement dans leur interface d'analyse : c'est souvent suffisant. Le moteur n'est pas le facteur limitant : votre façon de l'utiliser l'est."
-  - question: "Comment identifier ses erreurs récurrentes ?"
-    answer: "En tenant un journal d'erreurs sur la durée. Après chaque analyse, notez la ou les erreurs principales de la partie avec une courte description. Après 10-15 parties, relisez : des patterns apparaissent. 'J'ai négligé les contre-attaques au centre 3 fois ce mois-ci.' 'J'ai mal géré la finale de tours dans 2 parties.' 'Je développe toujours le cavalier avant de vérifier les contre-jeux en gambit'. Ces patterns sont votre programme de travail prioritaire."
-  - question: "Faut-il analyser les parties gagnées aussi ?"
-    answer: "Oui, mais avec une attention particulière. Dans une partie gagnée, cherchez les moments où *votre adversaire* vous aurait compliqué la vie si il avait joué différemment : ces moments révèlent vos vulnérabilités même dans les victoires. Cherchez aussi les moments où vous avez joué 'le meilleur coup par hasard' sans avoir calculé la variante correctement : ce sont des rappels que la victoire ne valide pas le processus."
-  - question: "Comment analyser quand on est débutant et qu'on comprend mal ce que le moteur montre ?"
-    answer: "Commencez par l'analyse sans moteur uniquement. Rejouez la partie coup par coup et identifiez : où vous avez senti que ça se gâtait, les coups dont vous n'étiez pas sûr pendant la partie, et le coup où vous pensez que vous avez perdu l'avantage. Discutez avec un joueur légèrement plus fort que vous : l'analyse humaine est plus pédagogique que l'analyse moteur quand les deux joueurs ont un niveau comparable. Le moteur devient utile quand vous avez une hypothèse à vérifier ('était-ce vraiment gagnant ?'), pas comme oracle à qui vous demandez 'quel était le bon coup ?'"
+    answer: >-
+      Stockfish (disponible gratuitement sur Lichess et en téléchargement) est le standard pour l'analyse tactique : il
+      est extrêmement précis sur les coups concrets. Leela Chess Zero (Lc0) a un style d'évaluation positionnelle plus
+      proche du jeu humain, ce qui peut être plus instructif pour les évaluations de position à long terme. Chess.com et
+      Lichess intègrent des moteurs directement dans leur interface d'analyse : c'est souvent suffisant. Le moteur n'est
+      pas le facteur limitant : votre façon de l'utiliser l'est.
+  - question: Comment identifier ses erreurs récurrentes ?
+    answer: >-
+      En tenant un journal d'erreurs sur la durée. Après chaque analyse, notez la ou les erreurs principales de la
+      partie avec une courte description. Après 10-15 parties, relisez : des patterns apparaissent. 'J'ai négligé les
+      contre-attaques au centre 3 fois ce mois-ci.' 'J'ai mal géré la finale de tours dans 2 parties.' 'Je développe
+      toujours le cavalier avant de vérifier les contre-jeux en gambit'. Ces patterns sont votre programme de travail
+      prioritaire.
+  - question: Faut-il analyser les parties gagnées aussi ?
+    answer: >-
+      Oui, mais avec une attention particulière. Dans une partie gagnée, cherchez les moments où *votre adversaire* vous
+      aurait compliqué la vie si il avait joué différemment : ces moments révèlent vos vulnérabilités même dans les
+      victoires. Cherchez aussi les moments où vous avez joué 'le meilleur coup par hasard' sans avoir calculé la
+      variante correctement : ce sont des rappels que la victoire ne valide pas le processus.
+  - question: Comment analyser quand on est débutant et qu'on comprend mal ce que le moteur montre ?
+    answer: >-
+      Commencez par l'analyse sans moteur uniquement. Rejouez la partie coup par coup et identifiez : où vous avez senti
+      que ça se gâtait, les coups dont vous n'étiez pas sûr pendant la partie, et le coup où vous pensez que vous avez
+      perdu l'avantage. Discutez avec un joueur légèrement plus fort que vous : l'analyse humaine est plus pédagogique
+      que l'analyse moteur quand les deux joueurs ont un niveau comparable. Le moteur devient utile quand vous avez une
+      hypothèse à vérifier ('était-ce vraiment gagnant ?'), pas comme oracle à qui vous demandez 'quel était le bon coup
+      ?'
 ---
 
 Vous venez de perdre une partie. Votre adversaire a joué quelque chose d'inattendu au coup 15, vous avez paniqué, et la position s'est détériorée rapidement. Vous rouvrez une nouvelle partie.

@@ -1,19 +1,26 @@
 ---
 title: "La règle 40-40-20 : comment vraiment structurer son entraînement aux échecs"
-excerpt: "La plupart des joueurs passent 80 % de leur temps sur les ouvertures. La règle 40-40-20 dit l'inverse : 40 % de tactique, 40 % de finales, 20 % d'ouvertures. Pourquoi ? Et est-ce que ça fonctionne vraiment ?"
+excerpt: >-
+  La plupart des joueurs passent 80 % de leur temps sur les ouvertures. La règle 40-40-20 dit l'inverse : 40 % de
+  tactique, 40 % de finales, 20 % d'ouvertures. Pourquoi ? Et est-ce que ça fonctionne vraiment ?
 publishDate: "2026-05-05"
-category: "esprit"
+category: esprit
 featured: false
 featuredRank: 99
-readingTime: "20 min"
-pillar: "Progression"
-tags: ["entraînement aux échecs", "règle 40-40-20", "tactique", "finales", "ouvertures", "progression", "méthode"]
+readingTime: 20 min
+pillar: Progression
+tags:
+  - entraînement aux échecs
+  - règle 40-40-20
+  - tactique
+  - finales
+  - ouvertures
+  - progression
+  - méthode
 seoTitle: "Règle 40-40-20 aux échecs : tactique, finales, ouvertures - comment structurer son entraînement"
-seoDescription: "La règle 40-40-20 recommande 40 % de tactique, 40 % de finales et 20 % d'ouvertures. Pourquoi la majorité des joueurs font l'inverse, et ce que la recherche sur l'expertise dit de cette répartition."
-titleEn: "The 40-40-20 Rule: How to Really Structure Your Chess Training"
-excerptEn: "Most players spend 80% of their time on openings. The 40-40-20 rule says the opposite: 40% tactics, 40% endgames, 20% openings. Why? And does it actually work?"
-seoTitleEn: "The 40-40-20 Rule in Chess: Tactics, Endgames, Openings"
-seoDescriptionEn: "The 40-40-20 rule recommends 40% tactics, 40% endgames and 20% openings. Why most players do the opposite, and what expertise research says about this training breakdown."
+seoDescription: >-
+  La règle 40-40-20 recommande 40 % de tactique, 40 % de finales et 20 % d'ouvertures. Pourquoi la majorité des joueurs
+  font l'inverse, et ce que la recherche sur l'expertise dit de cette répartition.
 ---
 
 Tu viens de perdre une partie. Tu ouvres ta bibliothèque, tu relances la variante qui t'a posé problème, tu passes quarante minutes à mémoriser des coups que tu ne rejoueras peut-être jamais. Ça te semble utile. Ça donne l'impression de travailler.

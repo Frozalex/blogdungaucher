@@ -1,3 +1,14 @@
+---
+title: "Impostor Syndrome in Chess: Rising in Elo Without Feeling Legitimate"
+excerpt: >-
+  Your Elo is climbing but you don't really understand how. Your wins feel like luck, your losses seem to confirm what
+  you already knew: you're not that good. That feeling has a name, a cause and solutions.
+seoTitle: "Impostor Syndrome in Chess: Why You Don't Feel Legitimate Despite Your Progress"
+seoDescription: >-
+  Your Elo is rising but you don't feel legitimate. Impostor syndrome affects many chess players. What psychology says
+  about this phenomenon and how to overcome it.
+---
+
 You have just won a well-played game. Your opponent was 100 points above you. The win is clear and deserved. Yet the first thought that surfaces is not satisfaction. It is something more uncomfortable: *they must have blundered. It doesn't really count. If we replayed, they would win.*
 
 You may know this feeling: the inability to own a victory, to feel it as legitimate. That persistent doubt about your own level even when the numbers say otherwise. That sense that your Elo rises by accident, that others do not yet know you are not really good.

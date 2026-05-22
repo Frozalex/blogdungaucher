@@ -1,3 +1,14 @@
+---
+title: "The Psychology of the Chess Player: What's Really Happening Inside Your Head"
+excerpt: >-
+  Chess isn't just played on the board. It's played first in your head, before your hand ever touches a piece. A
+  psychological portrait of a player facing themselves.
+seoTitle: "Chess Player Psychology: Master Your Mental Game"
+seoDescription: >-
+  Ego, tilt, flow, fear of losing: a complete breakdown of chess player psychology and how emotions influence every
+  single move you make.
+---
+
 Before your hand even touches the first pawn, something has already happened. A faint tension settles in your shoulders. The opponent across from you looks at you a certain way, or perhaps does not look at you at all, which can be worse. You start calculating, but not variations: you calculate their level, their reputation, the rating gap between you. You wonder whether you are prepared enough. Part of the cognitive resources you planned for the board is already evaporating into that psychological noise.
 
 Chess is unusual in how starkly it lays intelligence bare, as few disciplines do. Every mistake is irrefutable, recorded in the game's log. There is no luck to invoke, no teammate to blame, no bad weather that day. The chessboard holds up a merciless mirror. That is precisely why understanding your own psychology becomes, at a certain level, as important as knowing theoretical lines.

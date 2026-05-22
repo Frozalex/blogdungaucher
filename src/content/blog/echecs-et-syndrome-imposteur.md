@@ -1,19 +1,26 @@
 ---
 title: "Le syndrome de l'imposteur aux échecs : monter en Elo sans se sentir légitime"
-excerpt: "Tu montes en Elo mais tu ne comprends pas vraiment comment. Tes victoires semblent dues à la chance, tes défaites semblent confirmer ce que tu sais déjà : tu n'es pas si bon. Ce sentiment a un nom, une cause et des solutions."
+excerpt: >-
+  Tu montes en Elo mais tu ne comprends pas vraiment comment. Tes victoires semblent dues à la chance, tes défaites
+  semblent confirmer ce que tu sais déjà : tu n'es pas si bon. Ce sentiment a un nom, une cause et des solutions.
 publishDate: "2026-05-28"
-category: "esprit"
+category: esprit
 featured: false
 featuredRank: 99
-readingTime: "18 min"
-pillar: "Mental"
-tags: ["syndrome de l'imposteur", "Elo", "progression aux échecs", "psychologie", "confiance", "perfectionnisme", "mental compétitif"]
+readingTime: 18 min
+pillar: Mental
+tags:
+  - syndrome de l'imposteur
+  - Elo
+  - progression aux échecs
+  - psychologie
+  - confiance
+  - perfectionnisme
+  - mental compétitif
 seoTitle: "Monter en Elo sans se sentir légitime : le syndrome de l'imposteur en progression"
-seoDescription: "Ton Elo monte mais chaque victoire te semble de la chance. Ce décalage entre progression réelle et sentiment de légitimité a un nom, et des solutions issues de la psychologie du sport."
-titleEn: "Impostor Syndrome in Chess: Rising in Elo Without Feeling Legitimate"
-excerptEn: "Your Elo is climbing but you don't really understand how. Your wins feel like luck, your losses seem to confirm what you already knew: you're not that good. That feeling has a name, a cause and solutions."
-seoTitleEn: "Impostor Syndrome in Chess: Why You Don't Feel Legitimate Despite Your Progress"
-seoDescriptionEn: "Your Elo is rising but you don't feel legitimate. Impostor syndrome affects many chess players. What psychology says about this phenomenon and how to overcome it."
+seoDescription: >-
+  Ton Elo monte mais chaque victoire te semble de la chance. Ce décalage entre progression réelle et sentiment de
+  légitimité a un nom, et des solutions issues de la psychologie du sport.
 ---
 
 Tu viens de gagner une partie bien jouée. Ton adversaire était 100 points au-dessus de toi. La victoire est nette, méritée. Et pourtant, la première pensée qui s'impose n'est pas la satisfaction. C'est quelque chose de plus inconfortable : *il a dû faire une erreur. Ça ne compte pas vraiment. Si on rejouait, il gagnerait.*

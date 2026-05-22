@@ -1,25 +1,36 @@
 ---
 title: "Les échecs en prison : quand l'échiquier devient un outil de réhabilitation"
-excerpt: "Des détenus qui apprennent à anticiper les conséquences à trois coups de distance, à gérer la frustration d'une pièce perdue, à respecter un adversaire. Ce que les programmes de chess therapy en prison révèlent vraiment."
+excerpt: >-
+  Des détenus qui apprennent à anticiper les conséquences à trois coups de distance, à gérer la frustration d'une pièce
+  perdue, à respecter un adversaire. Ce que les programmes de chess therapy en prison révèlent vraiment.
 publishDate: "2026-07-09"
-category: "societe"
+category: societe
 featured: false
 featuredRank: 99
-readingTime: "24 min"
-pillar: "Inclusion"
-tags: ["échecs prison", "réhabilitation", "Change Through Chess", "criminologie", "fonctions exécutives", "récidive", "inclusion sociale"]
+readingTime: 24 min
+pillar: Inclusion
+tags:
+  - échecs prison
+  - réhabilitation
+  - Change Through Chess
+  - criminologie
+  - fonctions exécutives
+  - récidive
+  - inclusion sociale
 seoTitle: "Les échecs en prison : réhabilitation, fonctions exécutives et récidive"
-seoDescription: "Change Through Chess, San Quentin, Rikers Island : des programmes de chess therapy en prison montrent des effets mesurables sur l'impulsivité et la récidive. Ce que la criminologie dit réellement de l'échiquier comme outil de réhabilitation."
-titleEn: "Chess in Prison: When the Chessboard Becomes a Rehabilitation Tool"
-excerptEn: "Inmates learning to anticipate three moves ahead, manage the frustration of a lost piece, respect an opponent. What chess therapy programmes in prison really reveal about rehabilitation."
-seoTitleEn: "Chess in Prison: Rehabilitation, Executive Functions and Recidivism"
-seoDescriptionEn: "Change Through Chess, San Quentin, Rikers Island: prison chess programmes show measurable effects on impulsivity and recidivism. What criminology really says about the chessboard as a rehabilitation tool."
-ogImage: "/images/blog/echecs-en-prison-hero.png"
+seoDescription: >-
+  Change Through Chess, San Quentin, Rikers Island : des programmes de chess therapy en prison montrent des effets
+  mesurables sur l'impulsivité et la récidive. Ce que la criminologie dit réellement de l'échiquier comme outil de
+  réhabilitation.
+ogImage: /images/blog/echecs-en-prison-hero.png
 heroImage:
-  src: "/images/blog/echecs-en-prison-hero.png"
-  alt: "Illustration pixel art : cellule aux murs de pierre sombres, lumière à barreaux dessinant un damier au sol, roi noir au centre, porte ouverte sur un couloir éclairé ; titre « Les échecs en prison : quand l'échiquier devient un outil de réhabilitation » en surimpression."
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
+  src: /images/blog/echecs-en-prison-hero.png
+  alt: >-
+    Illustration pixel art : cellule aux murs de pierre sombres, lumière à barreaux dessinant un damier au sol, roi noir
+    au centre, porte ouverte sur un couloir éclairé ; titre « Les échecs en prison : quand l'échiquier devient un outil
+    de réhabilitation » en surimpression.
+  credit: Blog d'un Gaucher
+  license: Création originale
 ---
 
 Il est 14h dans un établissement pénitentiaire de la périphérie de Londres. La salle est petite, le mobilier cabossé. Deux détenus sont assis face à un échiquier posé sur une table en formica. Il n'y a pas de surveillance rapprochée : le gardien est dans le couloir.

@@ -1,3 +1,14 @@
+---
+title: Why Chess is a (Nearly) Impossible Mathematical Problem - and How AI Solves it Anyway
+excerpt: >-
+  The game tree explodes, Shannon's number is staggering, yet an engine corrects you in seconds. Is chess really
+  'unsolvable'? Here's what maths, computer science and AI actually do under the hood.
+seoTitle: "Chess and AI: Solving the Mathematical Impossible"
+seoDescription: >-
+  Is chess mathematically solvable? Discover how AI has revolutionised the game and why engines now beat humans at every
+  single turn.
+---
+
 You have already lived this paradox: people sell you [chess](https://en.wikipedia.org/wiki/Chess) as cosmically complex, a game where each player traces long-term strategy; then you open an app, play a reasonable move, and the engine corrects you and explains a line you could never find alone.
 
 So what? Can everything really be reduced to formulas? Is this game a mathematical problem that maths and computing only partly answer, or a story we tell ourselves to sound deep? The answer has two parts: this discipline cannot be handled by brute force over the entire space of games, yet it becomes playable at a superhuman level once you accept measuring reality with programs that combine search, evaluation, pruning, and today learning on very powerful machines.

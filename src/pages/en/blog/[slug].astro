@@ -1,5 +1,5 @@
 ---
-import { render } from "astro:content";
+import { render, getEntry } from "astro:content";
 
 import AdBanner from "../../../components/AdBanner.astro";
 import ArticleCard from "../../../components/ArticleCard.astro";
@@ -25,7 +25,7 @@ import {
   getPostUrlDe,
   getPostHeroSrc,
 } from "../../../utils/blog";
-import { getEnglishArticleMarkdown, renderEnglishMarkdown } from "../../../utils/english-article";
+import { renderEnglishMarkdown } from "../../../utils/english-article";
 import { swapLangPrefix } from "../../../utils/lang-paths";
 import {
   renderMarkdownToArticleHtml,
@@ -42,9 +42,12 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const slug = getPostSlug(post);
-const englishMarkdown = getEnglishArticleMarkdown(slug);
 
-const faqsForDisplay = post.data.faqEn ?? post.data.faq ?? [];
+// Récupère la traduction EN depuis la collection enTranslations (si elle existe)
+const enEntry = await getEntry("enTranslations", slug);
+const englishMarkdown = enEntry?.body;
+
+const faqsForDisplay = enEntry?.data?.faq ?? post.data.faq ?? [];
 const stripInlineFaq = faqsForDisplay.length > 0;
 const mdSource = englishMarkdown ?? post.body;
 const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
@@ -85,11 +88,12 @@ const postUrlEn = getPostUrlEn(post);
 const postUrlFr = getPostUrl(post);
 const absolutePostUrl = absoluteUrl(postUrlEn);
 
-const enTitle   = post.data.seoTitleEn ?? post.data.titleEn ?? post.data.seoTitle ?? post.data.title;
-const enDesc    = post.data.seoDescriptionEn ?? post.data.excerptEn ?? post.data.seoDescription ?? post.data.excerpt;
-const displayTitle   = post.data.titleEn   ?? post.data.title;
-const displayExcerpt = post.data.excerptEn ?? post.data.excerpt;
-const hasEnTranslation = !!englishMarkdown && !!(post.data.titleEn);
+// Métadonnées EN : issues de enTranslations, fallback sur FR
+const enTitle        = enEntry?.data?.seoTitle ?? enEntry?.data?.title ?? post.data.seoTitle ?? post.data.title;
+const enDesc         = enEntry?.data?.seoDescription ?? enEntry?.data?.excerpt ?? post.data.seoDescription ?? post.data.excerpt;
+const displayTitle   = enEntry?.data?.title   ?? post.data.title;
+const displayExcerpt = enEntry?.data?.excerpt ?? post.data.excerpt;
+const hasEnTranslation = !!enEntry;
 
 const heroSrc = getPostHeroSrc(post);
 const heroImage = heroSrc ? post.data.heroImage : undefined;
@@ -107,7 +111,7 @@ const enCategoryLabel = enCategoryLabels[post.data.category] ?? category.label;
 const enCategoryHref = swapLangPrefix(category.href, "en");
 
 const structuredData = [
-  buildArticleJsonLd(post, { lang: "en" }),
+  buildArticleJsonLd(post, { lang: "en", headline: enTitle, description: enDesc }),
   buildBreadcrumbJsonLd([
     { name: "Home", path: "/en/" },
     { name: "Articles", path: "/en/blog/" },

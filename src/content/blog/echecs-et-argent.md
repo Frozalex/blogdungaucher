@@ -1,19 +1,27 @@
 ---
 title: "Les échecs et l'argent : pourquoi les meilleurs joueurs du monde ne sont pas riches"
-excerpt: "Magnus Carlsen est le meilleur joueur de l'histoire. Il a gagné environ 2 millions de dollars en prize money sur toute sa carrière. Un joueur de tennis moyen du Top 100 gagne ça en un an. Que se passe-t-il vraiment dans l'économie des échecs ?"
+excerpt: >-
+  Magnus Carlsen est le meilleur joueur de l'histoire. Il a gagné environ 2 millions de dollars en prize money sur toute
+  sa carrière. Un joueur de tennis moyen du Top 100 gagne ça en un an. Que se passe-t-il vraiment dans l'économie des
+  échecs ?
 publishDate: "2026-05-12"
-category: "societe"
+category: societe
 featured: false
 featuredRank: 99
-readingTime: "22 min"
-pillar: "Culture"
-tags: ["échecs et argent", "prize pool", "Magnus Carlsen", "FIDE", "économie des échecs", "chess.com", "professionnalisme"]
+readingTime: 22 min
+pillar: Culture
+tags:
+  - échecs et argent
+  - prize pool
+  - Magnus Carlsen
+  - FIDE
+  - économie des échecs
+  - chess.com
+  - professionnalisme
 seoTitle: "Les échecs et l'argent : prize pools, modèle économique et revenus des pros"
-seoDescription: "Pourquoi les meilleurs joueurs d'échecs du monde ne sont pas riches ? Prize pools, FIDE, sponsoring, streaming : anatomie d'un modèle économique à la traîne."
-titleEn: "Chess and Money: Why the World's Best Players Aren't Rich"
-excerptEn: "Magnus Carlsen is the greatest player in history. He's earned around $2 million in prize money over his entire career. An average Top 100 tennis player earns that in a single year. What's really going on in chess economics?"
-seoTitleEn: "Chess and Money: Prize Pools, Economic Model and Pro Earnings"
-seoDescriptionEn: "Why aren't the world's best chess players rich? Prize pools, FIDE, sponsorship, streaming: anatomy of a struggling economic model."
+seoDescription: >-
+  Pourquoi les meilleurs joueurs d'échecs du monde ne sont pas riches ? Prize pools, FIDE, sponsoring, streaming :
+  anatomie d'un modèle économique à la traîne.
 ---
 
 En 2023, le Championnat du Monde d'échecs opposait Ding Liren à Ian Nepomniachtchi. Le prize pool total : 2 millions de dollars. Le gagnant a empoché 1,1 million.

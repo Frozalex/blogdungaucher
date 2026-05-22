@@ -1,42 +1,92 @@
 ---
 title: "AlphaZero contre Stockfish : la révolution de l'intelligence artificielle aux échecs"
-excerpt: "En décembre 2017, DeepMind publiait les résultats d'un match qui a changé la façon dont on pense à la fois à l'intelligence artificielle et aux échecs. AlphaZero, entraîné sans données humaines, battait Stockfish avec un style de jeu que personne n'avait anticipé."
+excerpt: >-
+  En décembre 2017, DeepMind publiait les résultats d'un match qui a changé la façon dont on pense à la fois à
+  l'intelligence artificielle et aux échecs. AlphaZero, entraîné sans données humaines, battait Stockfish avec un style
+  de jeu que personne n'avait anticipé.
 publishDate: "2026-10-26"
-category: "science"
+category: science
 featured: false
 featuredRank: 99
-readingTime: "19 min"
-pillar: "Science des échecs"
-tags: ["AlphaZero", "Stockfish", "intelligence artificielle", "deep learning", "apprentissage par renforcement", "neurones", "style de jeu", "avenir des échecs"]
+readingTime: 19 min
+pillar: Science des échecs
+tags:
+  - AlphaZero
+  - Stockfish
+  - intelligence artificielle
+  - deep learning
+  - apprentissage par renforcement
+  - neurones
+  - style de jeu
+  - avenir des échecs
 keyTakeaways:
-  - "AlphaZero a été entraîné uniquement avec les règles du jeu et un apprentissage par auto-jeu (44 millions de parties en 9 heures sur TPUs Google), sans données de parties humaines, sans heuristiques explicites, sans base de finales."
-  - "Dans le match de décembre 2017 (100 parties à cadence classique), AlphaZero a remporté 28 victoires, fait 72 nulles, et perdu 0 parties contre Stockfish 8. Ce résultat est contesté par des critiques légitimes sur les conditions du match."
-  - "Le style de jeu d'AlphaZero est radicalement différent de Stockfish : dynamique, sacrificiel, avec une disposition à maintenir des positions 'intuitivement gagnantes' que les moteurs classiques évalueraient comme neutres ou légèrement inférieures."
-  - "AlphaZero évalue ~80 000 positions par seconde contre ~60 millions pour Stockfish, mais chaque évaluation par réseau de neurones est beaucoup plus 'riche' en information positionnelle que l'évaluation heuristique de Stockfish."
-  - "L'impact sur la théorie des ouvertures a été significatif : AlphaZero a redécouvert et validé des idées positionnelles que les théoriciens humains connaissaient vaguement mais que les moteurs classiques n'avaient jamais recommandées."
+  - >-
+    AlphaZero a été entraîné uniquement avec les règles du jeu et un apprentissage par auto-jeu (44 millions de parties
+    en 9 heures sur TPUs Google), sans données de parties humaines, sans heuristiques explicites, sans base de finales.
+  - >-
+    Dans le match de décembre 2017 (100 parties à cadence classique), AlphaZero a remporté 28 victoires, fait 72 nulles,
+    et perdu 0 parties contre Stockfish 8. Ce résultat est contesté par des critiques légitimes sur les conditions du
+    match.
+  - >-
+    Le style de jeu d'AlphaZero est radicalement différent de Stockfish : dynamique, sacrificiel, avec une disposition à
+    maintenir des positions 'intuitivement gagnantes' que les moteurs classiques évalueraient comme neutres ou
+    légèrement inférieures.
+  - >-
+    AlphaZero évalue ~80 000 positions par seconde contre ~60 millions pour Stockfish, mais chaque évaluation par réseau
+    de neurones est beaucoup plus 'riche' en information positionnelle que l'évaluation heuristique de Stockfish.
+  - >-
+    L'impact sur la théorie des ouvertures a été significatif : AlphaZero a redécouvert et validé des idées
+    positionnelles que les théoriciens humains connaissaient vaguement mais que les moteurs classiques n'avaient jamais
+    recommandées.
 seoTitle: "AlphaZero contre Stockfish : la révolution de l'IA aux échecs"
-seoDescription: "Match AlphaZero vs Stockfish 2017, apprentissage par renforcement, style de jeu révolutionnaire : comment AlphaZero a changé les échecs et l'IA."
-ogImage: "/images/blog/echecs-alphazero-stockfish-hero.png"
+seoDescription: >-
+  Match AlphaZero vs Stockfish 2017, apprentissage par renforcement, style de jeu révolutionnaire : comment AlphaZero a
+  changé les échecs et l'IA.
+ogImage: /images/blog/echecs-alphazero-stockfish-hero.png
 heroImage:
-  src: "/images/blog/echecs-alphazero-stockfish-hero.png"
-  alt: "Illustration pixel art : réseau de neurones d'un côté, arbre de recherche algorithmique de l'autre, échiquier au centre, « AlphaZero vs Stockfish »"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "AlphaZero vs Stockfish : The Artificial Intelligence Revolution in Chess"
-excerptEn: "In December 2017, DeepMind published results of a match that changed how we think about both artificial intelligence and chess. AlphaZero, trained without human data, beat Stockfish with a playing style nobody had anticipated."
-seoTitleEn: "AlphaZero vs Stockfish : The AI Revolution in Chess"
-seoDescriptionEn: "AlphaZero vs Stockfish 2017 match, reinforcement learning, revolutionary playing style : how AlphaZero changed chess and AI."
+  src: /images/blog/echecs-alphazero-stockfish-hero.png
+  alt: >-
+    Illustration pixel art : réseau de neurones d'un côté, arbre de recherche algorithmique de l'autre, échiquier au
+    centre, « AlphaZero vs Stockfish »
+  credit: Blog d'un Gaucher
+  license: Création originale
 faq:
-  - question: "AlphaZero est-il toujours le meilleur programme d'échecs ?"
-    answer: "La question est complexe. DeepMind n'a pas publié de version publique d'AlphaZero. Stockfish a été massivement amélioré depuis 2017, intégrant des réseaux de neurones dans son évaluation (NNUE, Efficiently Updatable Neural Network). La version actuelle de Stockfish (Stockfish 16/17) est probablement meilleure qu'AlphaZero tel qu'il était en 2017. Leela Chess Zero (Lc0), l'équivalent open-source d'AlphaZero, continue à être développé et représente l'approche deep learning. La frontière entre les deux approches s'est estompée."
-  - question: "Pourquoi les conditions du match AlphaZero-Stockfish sont-elles contestées ?"
-    answer: "Principalement parce que Stockfish tournait sans base de finales de Syzygy (une bibliothèque de finales parfaitement calculées que Stockfish utilise normalement), et parce que la configuration matérielle d'AlphaZero (TPUs Google, matériel spécialisé) n'était pas directement comparable à celle de Stockfish (CPU standard). Des résultats publiés plus tard dans Science (décembre 2018), avec des conditions plus équilibrées, confirmaient néanmoins la supériorité d'AlphaZero, mais avec un avantage moins écrasant."
-  - question: "Qu'est-ce que le système NNUE qui a révolutionné Stockfish ?"
-    answer: "NNUE (Efficiently Updatable Neural Network) est une architecture de réseau de neurones conçue pour fonctionner très rapidement sur des CPUs standards. Intégrée dans Stockfish depuis 2020, elle remplace l'ancienne fonction d'évaluation heuristique par un réseau de neurones entraîné sur des millions de positions évaluées par Stockfish lui-même. Résultat : Stockfish NNUE combine la vitesse de recherche de l'alpha-bêta avec la richesse d'évaluation des réseaux de neurones : un hybride qui a augmenté son niveau d'environ 80-100 points Elo."
-  - question: "AlphaZero a-t-il vraiment 'redécouvert' des concepts d'échecs perdus ?"
-    answer: "Plus précisément : il a joué des idées qui étaient connues théoriquement mais considérées comme 'trop risquées' ou 'insuffisamment solides' par les standards des moteurs classiques. Des pions gambits maintenus pendant de nombreux coups pour la compensation dynamique, des structures de pions asymétriques que Stockfish évaluerait négativement mais qui contiennent des 'poisons' tactiques. Des Grands Maîtres comme Kasparov et Seirawan ont commenté que le style d'AlphaZero ressemblait parfois à celui de joueurs romantiques du XIXe siècle : maximiser les pièces actives plutôt que le compte matériel."
-  - question: "Leela Chess Zero (Lc0) est-il accessible au public ?"
-    answer: "Oui, complètement. Lc0 est un projet open-source qui implémente l'architecture d'AlphaZero en utilisant des poids de réseau de neurones entraînés par la communauté. Il est téléchargeable gratuitement et s'intègre dans des interfaces d'analyse comme Arena ou Chessbase. Sur un bon GPU, il joue à un niveau comparable aux meilleurs Stockfish. C'est le moyen pour les joueurs ordinaires d'accéder à un style d'analyse 'AlphaZero-like' : qui peut être plus instructif que Stockfish pour comprendre les positions à compensation intuitive."
+  - question: AlphaZero est-il toujours le meilleur programme d'échecs ?
+    answer: >-
+      La question est complexe. DeepMind n'a pas publié de version publique d'AlphaZero. Stockfish a été massivement
+      amélioré depuis 2017, intégrant des réseaux de neurones dans son évaluation (NNUE, Efficiently Updatable Neural
+      Network). La version actuelle de Stockfish (Stockfish 16/17) est probablement meilleure qu'AlphaZero tel qu'il
+      était en 2017. Leela Chess Zero (Lc0), l'équivalent open-source d'AlphaZero, continue à être développé et
+      représente l'approche deep learning. La frontière entre les deux approches s'est estompée.
+  - question: Pourquoi les conditions du match AlphaZero-Stockfish sont-elles contestées ?
+    answer: >-
+      Principalement parce que Stockfish tournait sans base de finales de Syzygy (une bibliothèque de finales
+      parfaitement calculées que Stockfish utilise normalement), et parce que la configuration matérielle d'AlphaZero
+      (TPUs Google, matériel spécialisé) n'était pas directement comparable à celle de Stockfish (CPU standard). Des
+      résultats publiés plus tard dans Science (décembre 2018), avec des conditions plus équilibrées, confirmaient
+      néanmoins la supériorité d'AlphaZero, mais avec un avantage moins écrasant.
+  - question: Qu'est-ce que le système NNUE qui a révolutionné Stockfish ?
+    answer: >-
+      NNUE (Efficiently Updatable Neural Network) est une architecture de réseau de neurones conçue pour fonctionner
+      très rapidement sur des CPUs standards. Intégrée dans Stockfish depuis 2020, elle remplace l'ancienne fonction
+      d'évaluation heuristique par un réseau de neurones entraîné sur des millions de positions évaluées par Stockfish
+      lui-même. Résultat : Stockfish NNUE combine la vitesse de recherche de l'alpha-bêta avec la richesse d'évaluation
+      des réseaux de neurones : un hybride qui a augmenté son niveau d'environ 80-100 points Elo.
+  - question: AlphaZero a-t-il vraiment 'redécouvert' des concepts d'échecs perdus ?
+    answer: >-
+      Plus précisément : il a joué des idées qui étaient connues théoriquement mais considérées comme 'trop risquées' ou
+      'insuffisamment solides' par les standards des moteurs classiques. Des pions gambits maintenus pendant de nombreux
+      coups pour la compensation dynamique, des structures de pions asymétriques que Stockfish évaluerait négativement
+      mais qui contiennent des 'poisons' tactiques. Des Grands Maîtres comme Kasparov et Seirawan ont commenté que le
+      style d'AlphaZero ressemblait parfois à celui de joueurs romantiques du XIXe siècle : maximiser les pièces actives
+      plutôt que le compte matériel.
+  - question: Leela Chess Zero (Lc0) est-il accessible au public ?
+    answer: >-
+      Oui, complètement. Lc0 est un projet open-source qui implémente l'architecture d'AlphaZero en utilisant des poids
+      de réseau de neurones entraînés par la communauté. Il est téléchargeable gratuitement et s'intègre dans des
+      interfaces d'analyse comme Arena ou Chessbase. Sur un bon GPU, il joue à un niveau comparable aux meilleurs
+      Stockfish. C'est le moyen pour les joueurs ordinaires d'accéder à un style d'analyse 'AlphaZero-like' : qui peut
+      être plus instructif que Stockfish pour comprendre les positions à compensation intuitive.
 ---
 
 Décembre 2017. L'équipe de DeepMind publie un papier de recherche et, en annexe, 10 parties commentées. Ces 10 parties ont électrisé la communauté des échecs d'une façon que rien n'avait faite depuis le match Fischer-Spassky de 1972.

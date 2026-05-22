@@ -1,3 +1,56 @@
+---
+title: "Chess and Women: Why So Few, and Is That Changing?"
+excerpt: >-
+  40 women among 1,700 Grandmasters. The gap isn't biological: it's mathematical, historical and psychological. What the
+  data really says, and why the 'female brain' argument doesn't hold.
+seoTitle: "Chess and Women: Understanding the Gender Gap"
+seoDescription: >-
+  Why are there so few women in chess? A breakdown of scientific studies, the Polgár sisters, Hou Yifan and the real
+  reasons behind this fascinating debate.
+faq:
+  - question: Why are there so few women chess players in competitions?
+    answer: >-
+      The main reason is statistical: women chess players represent only 10 to 15 percent of rated chess players
+      worldwide, which mechanically reduces their share at the top. Club culture, social pressure, and stereotype threat
+      widen the gap. Research (Bilalić, 2009) has shown that participation bias explains most of the Elo rating
+      difference between men and women.
+  - question: Who is the current women's world chess champion?
+    answer: >-
+      In 2024, the women's world chess champion is Ju Wenjun (China), a four-time world champion. She has defended her
+      title several times since 2018. Before her, Hou Yifan dominated women's chess for many years. China has produced
+      more women's world chess champions than any other nation, notably Xie Jun in the 1990s and 2000s.
+  - question: Are French and European women chess players competitive at world level?
+    answer: >-
+      France has several strong women players, including Almira Skripchenko, a leading figure in women's chess in
+      Europe. European and world championships bring together talented French and European players each year. The Elo
+      ratings of France's best women place them in the European elite, though the gap with top Chinese and Indian
+      players remains significant internationally.
+  - question: What are mixed chess tournaments and why do they matter?
+    answer: >-
+      Mixed chess tournaments are open events for all players, with no gender separation. Judit Polgár built her entire
+      career in mixed opens, refusing women-only championships. Mixed events matter for equality because they let the
+      strongest women measure themselves against the world's best players and produce results that inspire future
+      generations.
+  - question: Can men and women be equal in chess?
+    answer: >-
+      Yes. The Polgár experiment and China's success show equality is achievable when the conditions are right: fair
+      access from childhood, welcoming clubs, funding for elite women players, and media representation. Equality will
+      not come from a single mixed world championship alone, but from sustained work on learning conditions and
+      inclusion in chess.
+  - question: How can girls or women learn chess today?
+    answer: >-
+      Online platforms such as Lichess and Chess.com offer a more neutral environment than many traditional clubs. FIDE
+      has programmes to encourage beginner women players. In France, local initiatives and mixed school championships
+      help people learn chess in more inclusive settings. Women's chess is growing fast; careers like Hou Yifan, Ju
+      Wenjun, or Koneru Humpy (India) can be powerful motivation.
+  - question: Which women players have beaten male world champions at chess?
+    answer: >-
+      Vera Menchik beat several male grandmasters in the 1930s and 1940s. Judit Polgár beat Garry Kasparov in 2002.
+      Those wins show that the strongest women can defeat world champions and rank among the best players of their era.
+      Hou Yifan also achieved excellent results in top mixed tournaments, placing several times among the world's top
+      100 players.
+---
+
 In 2002, at the Moscow tournament, [Judit Polgár](https://en.wikipedia.org/wiki/Judit_Polg%C3%A1r) defeated [Garry Kasparov](https://en.wikipedia.org/wiki/Garry_Kasparov). The man who had publicly declared women structurally inferior at chess lost to a woman. There was nothing left to say.
 
 Today barely forty women sit among more than 1,700 holders of the supreme title of Grandmaster (GM). No woman has ever contested the absolute World Championship in a classical match. The world top hundred hosts, depending on the year, only one or two women. The summit of the global chess pyramid has looked like a closed gentlemen's club for a century.

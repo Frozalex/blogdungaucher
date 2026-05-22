@@ -1,5 +1,5 @@
 ---
-import { render } from "astro:content";
+import { render, getEntry } from "astro:content";
 
 import AdBanner from "../../../components/AdBanner.astro";
 import ArticleCard from "../../../components/ArticleCard.astro";
@@ -27,6 +27,7 @@ import {
   getPostUrlDe,
   getPostHeroSrc,
 } from "../../../utils/blog";
+import { renderEnglishMarkdown } from "../../../utils/english-article";
 import { swapLangPrefix } from "../../../utils/lang-paths";
 import {
   renderMarkdownToArticleHtml,
@@ -40,19 +41,31 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const slug = getPostSlug(post);
 const category = categoryMap[post.data.category];
 
-const faqs = post.data.faq ?? [];
-const stripInlineFaq = faqs.length > 0;
-const mdForArticle = stripInlineFaq ? stripFaqH2Section(post.body) : post.body;
+// Récupère la traduction DE depuis la collection deTranslations (si elle existe)
+const deEntry = await getEntry("deTranslations", slug);
+const germanMarkdown = deEntry?.body;
+
+const faqsForDisplay = deEntry?.data?.faq ?? post.data.faq ?? [];
+const stripInlineFaq = faqsForDisplay.length > 0;
+const mdSource = germanMarkdown ?? post.body;
+const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
 
 let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
 let headings: Awaited<ReturnType<typeof render>>["headings"];
-let strippedArticleHtml: string | undefined;
+let germanHtml: string | undefined;
 
-if (stripInlineFaq) {
+if (germanMarkdown) {
+  const rendered = stripInlineFaq
+    ? renderEnglishMarkdown(mdForArticle)
+    : renderEnglishMarkdown(germanMarkdown);
+  germanHtml = rendered.html;
+  headings = rendered.headings;
+} else if (stripInlineFaq) {
   const r = await renderMarkdownToArticleHtml(mdForArticle);
-  strippedArticleHtml = r.html;
+  germanHtml = r.html;
   headings = r.headings;
 } else {
   const r = await render(post);
@@ -60,7 +73,9 @@ if (stripInlineFaq) {
   headings = r.headings;
 }
 
-const readingTime = post.data.readingTime ?? calculateReadingTime(post.body);
+const readingTime =
+  post.data.readingTime ??
+  (germanMarkdown ? calculateReadingTime(germanMarkdown) : calculateReadingTime(post.body));
 
 const allPosts = await getAllPosts();
 const related = allPosts
@@ -81,14 +96,21 @@ const summaryVideoSrc = post.data.summaryVideo?.trim();
 const showSummaryVideo =
   !!summaryVideoSrc && isPublicAssetAvailable(summaryVideoSrc);
 
+// Métadonnées DE : issues de deTranslations si disponible, fallback sur FR
+const deTitle        = deEntry?.data?.seoTitle ?? deEntry?.data?.title ?? post.data.seoTitle ?? post.data.title;
+const deDesc         = deEntry?.data?.seoDescription ?? deEntry?.data?.excerpt ?? post.data.seoDescription ?? post.data.excerpt;
+const displayTitle   = deEntry?.data?.title   ?? post.data.title;
+const displayExcerpt = deEntry?.data?.excerpt ?? post.data.excerpt;
+const hasDeTranslation = !!deEntry;
+
 const structuredData = [
-  buildArticleJsonLd(post, { lang: "de" }),
+  buildArticleJsonLd(post, { lang: "de", headline: deTitle, description: deDesc }),
   buildBreadcrumbJsonLd([
     { name: "Startseite", path: "/de/" },
     { name: "Artikel", path: "/de/blog/" },
-    { name: post.data.title, path: postUrlDe },
+    { name: displayTitle, path: postUrlDe },
   ]),
-  ...(faqs.length > 0 ? [buildFaqJsonLd(faqs)] : []),
+  ...(faqsForDisplay.length > 0 ? [buildFaqJsonLd(faqsForDisplay)] : []),
 ];
 
 // Piliers pour le maillage interne (hors rubrique courante)
@@ -97,8 +119,8 @@ const otherPillars = categorySlugs
   .map((s) => categoryMap[s]);
 ---
 <BaseLayout
-  title={`${post.data.seoTitle ?? post.data.title} | Blog d'un Gaucher`}
-  description={post.data.seoDescription ?? post.data.excerpt}
+  title={`${deTitle} | Blog d'un Gaucher`}
+  description={deDesc}
   canonicalPath={postUrlDe}
   lang="de"
   frPath={postUrlFr}
@@ -124,7 +146,7 @@ const otherPillars = categorySlugs
           { label: "Startseite", href: "/de/" },
           { label: "Artikel", href: "/de/blog/" },
           { label: category.label, href: categoryHrefDe },
-          { label: post.data.title },
+          { label: displayTitle },
         ]} />
 
         <header class="article-header fade-up" style="--motion-delay: 40ms;">
@@ -137,8 +159,8 @@ const otherPillars = categorySlugs
               {formatDate(post.data.publishDate)}
             </time>
           </div>
-          <h1>{post.data.title}</h1>
-          <p class="article-excerpt">{post.data.excerpt}</p>
+          <h1>{displayTitle}</h1>
+          <p class="article-excerpt">{displayExcerpt}</p>
           {post.data.updatedDate &&
             post.data.updatedDate.getTime() !== post.data.publishDate.getTime() && (
             <p class="meta-updated">
@@ -158,7 +180,7 @@ const otherPillars = categorySlugs
           <ArticleVideo
             src={summaryVideoSrc}
             poster={heroSrc}
-            title={`Video-Zusammenfassung: ${post.data.title}`}
+            title={`Video-Zusammenfassung: ${displayTitle}`}
             eyebrow="Video-Zusammenfassung des Artikels"
             accentColor={category.accent}
             note={post.data.summaryVideoNote}
@@ -183,13 +205,20 @@ const otherPillars = categorySlugs
           </figure>
         )}
 
+        {!hasDeTranslation && (
+          <div class="translation-notice" role="note">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            <span>Die vollständige deutsche Übersetzung dieses Artikels ist in Arbeit. Der folgende Inhalt ist derzeit auf Französisch.</span>
+          </div>
+        )}
+
         <div class="toc-mobile-wrap">
           <TableOfContents headings={headings} mode="mobile" />
         </div>
 
         <div class="article-body fade-up" style="--motion-delay: 100ms;">
-          {strippedArticleHtml ? (
-            <div class="md-chunk" set:html={strippedArticleHtml} />
+          {germanHtml ? (
+            <div class="md-chunk" set:html={germanHtml} />
           ) : (
             Content && <Content />
           )}
@@ -197,7 +226,7 @@ const otherPillars = categorySlugs
 
         <AdBanner format="inline" compact={true} />
 
-        {faqs.length > 0 && <FAQ items={faqs} lang="de" />}
+        {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="de" />}
 
         {otherPillars.length > 0 && (
           <nav class="pillar-links fade-up" style="--motion-delay: 130ms;" aria-label="Autres rubriques du blog">
@@ -217,7 +246,7 @@ const otherPillars = categorySlugs
           </nav>
         )}
 
-        <ShareButtons title={post.data.title} url={absolutePostUrl} />
+        <ShareButtons title={displayTitle} url={absolutePostUrl} />
         <Comments lang="de" />
 
       </div>
@@ -256,6 +285,21 @@ const otherPillars = categorySlugs
 </BaseLayout>
 
 <style>
+  .translation-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid color-mix(in srgb, var(--green) 30%, var(--border-soft));
+    background: color-mix(in srgb, var(--green) 6%, var(--surface));
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  .translation-notice svg { flex-shrink: 0; margin-top: 0.1rem; color: var(--green); }
+
   .article-page  { padding: 3rem 0 2rem; }
 
   /* Rail vertical aligné avec le bord droit du container article (max-width 1280px).

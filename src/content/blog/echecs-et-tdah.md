@@ -1,25 +1,33 @@
 ---
 title: "Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue"
-excerpt: "Le TDAH n'est pas un déficit d'attention : c'est une attention inconsistante. L'échiquier crée les rares conditions où ce cerveau trouve naturellement son point d'ancrage."
+excerpt: >-
+  Le TDAH n'est pas un déficit d'attention : c'est une attention inconsistante. L'échiquier crée les rares conditions où
+  ce cerveau trouve naturellement son point d'ancrage.
 publishDate: "2026-06-15"
-category: "societe"
+category: societe
 featured: false
 featuredRank: 99
-readingTime: "22 min"
-pillar: "Inclusion"
-tags: ["échecs TDAH", "TDAH enfant", "attention", "hyperactivité", "neurodiversité", "fonctions exécutives", "inclusion", "Barkley"]
+readingTime: 22 min
+pillar: Inclusion
+tags:
+  - échecs TDAH
+  - TDAH enfant
+  - attention
+  - hyperactivité
+  - neurodiversité
+  - fonctions exécutives
+  - inclusion
+  - Barkley
 seoTitle: "Échecs et TDAH : pourquoi l'échiquier capte l'attention que l'école ne retient pas"
-seoDescription: "Le TDAH n'est pas un manque d'attention : c'est une attention irrégulière. Pourquoi l'échiquier crée exactement les conditions où le cerveau TDAH s'ancre naturellement. Ce que dit la recherche, et comment adapter la pratique."
+seoDescription: >-
+  Le TDAH n'est pas un manque d'attention : c'est une attention irrégulière. Pourquoi l'échiquier crée exactement les
+  conditions où le cerveau TDAH s'ancre naturellement. Ce que dit la recherche, et comment adapter la pratique.
 heroImage:
-  src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Empty_wooden_chessboard.jpg"
-  alt: "Échiquier en bois vide"
-  sourceUrl: "https://commons.wikimedia.org/wiki/File:Empty_wooden_chessboard.jpg"
-  credit: "Paul Lloyd"
-  license: "CC0 1.0"
-titleEn: "Chess and ADHD: Why the Chessboard Captures the Attention Everything Else Fails to Hold"
-excerptEn: "ADHD isn't an attention deficit - it's inconsistent attention. The chessboard creates the rare conditions where this brain naturally finds its anchor point."
-seoTitleEn: "Chess and ADHD: The Chessboard Captures the Attention School Cannot Hold"
-seoDescriptionEn: "ADHD isn't a lack of attention - it's irregular attention. Why the chessboard creates exactly the right conditions for the ADHD brain to anchor itself. What research says and how to adapt the practice."
+  src: https://upload.wikimedia.org/wikipedia/commons/c/cc/Empty_wooden_chessboard.jpg
+  alt: Échiquier en bois vide
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Empty_wooden_chessboard.jpg
+  credit: Paul Lloyd
+  license: CC0 1.0
 ---
 
 Luca a 10 ans. Son enseignante dit qu'il est incapable de rester concentré plus de deux minutes. Il n'écoute pas, il dérange, il finit rarement un exercice. Ses parents ont essayé les cours de soutien, les activités sportives, la lecture à voix haute. Rien ne tient.

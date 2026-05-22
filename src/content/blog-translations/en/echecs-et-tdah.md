@@ -1,3 +1,14 @@
+---
+title: "Chess and ADHD: Why the Chessboard Captures the Attention Everything Else Fails to Hold"
+excerpt: >-
+  ADHD isn't an attention deficit - it's inconsistent attention. The chessboard creates the rare conditions where this
+  brain naturally finds its anchor point.
+seoTitle: "Chess and ADHD: The Chessboard Captures the Attention School Cannot Hold"
+seoDescription: >-
+  ADHD isn't a lack of attention - it's irregular attention. Why the chessboard creates exactly the right conditions for
+  the ADHD brain to anchor itself. What research says and how to adapt the practice.
+---
+
 Luca is 10. His teacher says he cannot stay focused for more than two minutes. He does not listen, disrupts class, rarely finishes an exercise. His parents tried tutoring, sports, reading aloud. Nothing sticks.
 
 Since he started playing chess Wednesday evenings at the neighborhood club, something changed. He can sit 45 minutes facing a board without anyone reminding him why he is there. His parents, skeptical at first, began observing those sessions: no phone, no noise, silence he himself produces, focused on the 64 squares ahead.

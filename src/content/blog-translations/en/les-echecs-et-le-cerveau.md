@@ -1,3 +1,14 @@
+---
+title: "Chess and the Brain: What Science Really Reveals"
+excerpt: >-
+  A grandmaster isn't a born genius: they have a trained brain. Structural MRI, functional connectivity, chronnectome,
+  executive functions: here is what neuroscience research actually measures about chess players' brains.
+seoTitle: "Chess and the Brain: Benefits According to Science"
+seoDescription: >-
+  fMRI, neuroplasticity, chronnectome, executive functions: what research actually measures about the effects of chess
+  on the brain, with the numbers.
+---
+
 It is not an exceptional brain that lets you play chess brilliantly. Relentless chess practice builds an exceptional brain. The image of the grandmaster born with a divine gift is exactly backwards.
 
 Our brain is not a machine fixed at birth: it is modeling clay that rewires, repairs, and optimizes itself based on the challenges we throw at it. After this, you will not look at your post-game fatigue the same way.

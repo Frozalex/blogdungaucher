@@ -1,42 +1,76 @@
 ---
 title: "Guide Grand Oral NSI – Échecs : script, code Python commenté et questions jury"
-excerpt: "Le guide complet pour ton Grand Oral spécialité NSI avec les échecs : script minuté 10 min, code Python expliqué ligne par ligne, 20 questions de jury avec réponses. Minimax, alpha-bêta, AlphaZero: tout y est."
+excerpt: >-
+  Le guide complet pour ton Grand Oral spécialité NSI avec les échecs : script minuté 10 min, code Python expliqué ligne
+  par ligne, 20 questions de jury avec réponses. Minimax, alpha-bêta, AlphaZero: tout y est.
 publishDate: "2026-05-08"
-category: "grand-oral"
+category: grand-oral
 featured: false
 featuredRank: 99
-readingTime: "25 min"
-pillar: "Grand Oral"
-tags: ["grand-oral", "NSI", "numérique", "Python", "algorithme", "minimax", "alpha-bêta", "AlphaZero", "terminale", "baccalauréat", "guide"]
+readingTime: 25 min
+pillar: Grand Oral
+tags:
+  - grand-oral
+  - NSI
+  - numérique
+  - Python
+  - algorithme
+  - minimax
+  - alpha-bêta
+  - AlphaZero
+  - terminale
+  - baccalauréat
+  - guide
 keyTakeaways:
-  - "Script minuté 10 minutes avec transitions rédigées et blocs de code Python commentés pour présentation orale."
-  - "Minimax, alpha-bêta et AlphaZero expliqués avec complexité algorithmique et pseudo-code."
-  - "20 questions de jury classées du plus simple au plus technique, avec réponses complètes en langage oral."
+  - Script minuté 10 minutes avec transitions rédigées et blocs de code Python commentés pour présentation orale.
+  - Minimax, alpha-bêta et AlphaZero expliqués avec complexité algorithmique et pseudo-code.
+  - 20 questions de jury classées du plus simple au plus technique, avec réponses complètes en langage oral.
   - "3 problématiques au choix selon ton niveau : arbre de décision, optimisation alpha-bêta, IA par apprentissage."
-  - "Fiche mémo complexités (O notation) et vocabulaire NSI à imprimer."
+  - Fiche mémo complexités (O notation) et vocabulaire NSI à imprimer.
 seoTitle: "Guide Grand Oral NSI Échecs 2026 : script 10 min + Python minimax + jury"
-seoDescription: "Script 10 min, code Python minimax et alpha-bêta commenté ligne par ligne, 20 questions de jury rédigées. Le guide imprimable pour ton Grand Oral NSI avec les échecs."
-ogImage: "/images/blog/guide-grand-oral-echecs-nsi-hero.png"
+seoDescription: >-
+  Script 10 min, code Python minimax et alpha-bêta commenté ligne par ligne, 20 questions de jury rédigées. Le guide
+  imprimable pour ton Grand Oral NSI avec les échecs.
+ogImage: /images/blog/guide-grand-oral-echecs-nsi-hero.png
 heroImage:
-  src: "/images/blog/guide-grand-oral-echecs-nsi-hero.png"
-  alt: "Illustration pixel art : lycéen face à un jury, échiquier et code Python en arrière-plan, « Guide Grand Oral NSI Échecs »"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "NSI Grand Oral Chess Guide 2026: 10-min Script + Python Minimax + Jury Q&A"
-excerptEn: "Everything you need for your Grand Oral NSI specialty with chess: 10-min script, Python minimax/alpha-beta code commented line by line, 20 jury questions with written answers."
-seoTitleEn: "NSI Grand Oral Chess Guide 2026: 10-min Script + Python Minimax + Jury Q&A"
-seoDescriptionEn: "10-min script, Python minimax and alpha-beta code commented line by line, 20 jury questions written. The printable guide for your NSI Grand Oral with chess."
+  src: /images/blog/guide-grand-oral-echecs-nsi-hero.png
+  alt: >-
+    Illustration pixel art : lycéen face à un jury, échiquier et code Python en arrière-plan, « Guide Grand Oral NSI
+    Échecs »
+  credit: Blog d'un Gaucher
+  license: Création originale
 faq:
-  - question: "Quelle problématique choisir pour un Grand Oral NSI avec les échecs ?"
-    answer: "Trois angles solides : (1) 'Comment un algorithme peut-il jouer aux échecs ?': idéal pour explorer l'arbre minimax, la récursivité et la fonction d'évaluation. (2) 'En quoi l'élagage alpha-bêta illustre-t-il l'optimisation algorithmique ?': plus technique, montre une réduction de O(b^d) à O(b^(d/2)). (3) 'Pourquoi AlphaZero représente-t-il une rupture dans l'histoire de l'intelligence artificielle appliquée aux jeux ?': angle épistémologique, idéal avec une spécialité complémentaire Maths ou Philosophie."
-  - question: "Peut-on montrer du code Python au jury du Grand Oral ?"
-    answer: "Oui: c'est même recommandé en NSI. Tu peux avoir des feuilles imprimées avec ton code. Le jury peut te demander d'expliquer une ligne précise, de tracer l'exécution, ou d'identifier un bug hypothétique. Le code doit être commenté (une ligne de commentaire pour chaque bloc logique) et tu dois être capable d'en expliquer chaque partie sans le lire mot à mot."
-  - question: "Comment expliquer la complexité algorithmique au jury sans perdre le fil ?"
-    answer: "Utilise toujours un exemple numérique avant la notation O. 'Le minimax explore 35 coups possibles à chaque niveau. Sur 4 niveaux de profondeur, ça fait 35^4 = 1,5 million de positions. C'est une croissance exponentielle, O(b^d) avec b=35 et d=4.' Ensuite seulement tu montres comment alpha-bêta réduit ça. Le jury apprécie le raisonnement, pas la récitation."
-  - question: "AlphaZero est-il au programme de Terminale NSI ?"
-    answer: "Pas directement, mais l'apprentissage par renforcement et les réseaux de neurones sont des thèmes cohérents avec le programme. AlphaZero est un exemple spectaculaire d'apprentissage automatique: il illustre concrètement la différence entre une IA par règles explicites (minimax) et une IA par apprentissage (deep reinforcement learning). Le jury de Grand Oral valorise les exemples concrets et bien maîtrisés, même s'ils dépassent légèrement le programme."
-  - question: "Quelle est la durée idéale de chaque partie de l'exposé NSI ?"
-    answer: "Pour 10 minutes : introduction 1 minute (problématique + plan), partie 1 de 3 minutes (algo minimax + code), partie 2 de 3 minutes (alpha-bêta + optimisation), partie 3 de 2 minutes (AlphaZero + limites), conclusion 1 minute. Le jury interroge ensuite pendant 10 minutes. Chronomètre-toi impérativement: le jury coupe à 10 minutes."
+  - question: Quelle problématique choisir pour un Grand Oral NSI avec les échecs ?
+    answer: >-
+      Trois angles solides : (1) 'Comment un algorithme peut-il jouer aux échecs ?': idéal pour explorer l'arbre
+      minimax, la récursivité et la fonction d'évaluation. (2) 'En quoi l'élagage alpha-bêta illustre-t-il
+      l'optimisation algorithmique ?': plus technique, montre une réduction de O(b^d) à O(b^(d/2)). (3) 'Pourquoi
+      AlphaZero représente-t-il une rupture dans l'histoire de l'intelligence artificielle appliquée aux jeux ?': angle
+      épistémologique, idéal avec une spécialité complémentaire Maths ou Philosophie.
+  - question: Peut-on montrer du code Python au jury du Grand Oral ?
+    answer: >-
+      Oui: c'est même recommandé en NSI. Tu peux avoir des feuilles imprimées avec ton code. Le jury peut te demander
+      d'expliquer une ligne précise, de tracer l'exécution, ou d'identifier un bug hypothétique. Le code doit être
+      commenté (une ligne de commentaire pour chaque bloc logique) et tu dois être capable d'en expliquer chaque partie
+      sans le lire mot à mot.
+  - question: Comment expliquer la complexité algorithmique au jury sans perdre le fil ?
+    answer: >-
+      Utilise toujours un exemple numérique avant la notation O. 'Le minimax explore 35 coups possibles à chaque niveau.
+      Sur 4 niveaux de profondeur, ça fait 35^4 = 1,5 million de positions. C'est une croissance exponentielle, O(b^d)
+      avec b=35 et d=4.' Ensuite seulement tu montres comment alpha-bêta réduit ça. Le jury apprécie le raisonnement,
+      pas la récitation.
+  - question: AlphaZero est-il au programme de Terminale NSI ?
+    answer: >-
+      Pas directement, mais l'apprentissage par renforcement et les réseaux de neurones sont des thèmes cohérents avec
+      le programme. AlphaZero est un exemple spectaculaire d'apprentissage automatique: il illustre concrètement la
+      différence entre une IA par règles explicites (minimax) et une IA par apprentissage (deep reinforcement learning).
+      Le jury de Grand Oral valorise les exemples concrets et bien maîtrisés, même s'ils dépassent légèrement le
+      programme.
+  - question: Quelle est la durée idéale de chaque partie de l'exposé NSI ?
+    answer: >-
+      Pour 10 minutes : introduction 1 minute (problématique + plan), partie 1 de 3 minutes (algo minimax + code),
+      partie 2 de 3 minutes (alpha-bêta + optimisation), partie 3 de 2 minutes (AlphaZero + limites), conclusion 1
+      minute. Le jury interroge ensuite pendant 10 minutes. Chronomètre-toi impérativement: le jury coupe à 10 minutes.
 ---
 
 > **📥 Comment utiliser ce guide ?** Imprime ce guide (Ctrl+P, A4, sans marges). Surligne en jaune le code Python et en vert les transitions. Entraîne-toi à expliquer le code à voix haute ligne par ligne : c'est l'exercice clé pour NSI.

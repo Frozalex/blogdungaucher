@@ -1,3 +1,14 @@
+---
+title: "Chess and Money: Why the World's Best Players Aren't Rich"
+excerpt: >-
+  Magnus Carlsen is the greatest player in history. He's earned around $2 million in prize money over his entire career.
+  An average Top 100 tennis player earns that in a single year. What's really going on in chess economics?
+seoTitle: "Chess and Money: Prize Pools, Economic Model and Pro Earnings"
+seoDescription: >-
+  Why aren't the world's best chess players rich? Prize pools, FIDE, sponsorship, streaming: anatomy of a struggling
+  economic model.
+---
+
 In 2023 the World Chess Championship matched Ding Liren against Ian Nepomniachtchi. Total prize pool: two million dollars. The winner took 1.1 million.
 
 That same year Formula 1 distributed about 1.2 billion dollars across teams. The ATP Finals offered fifteen million dollars total. The Super Bowl winner received a 150,000 dollar bonus personally, but the star quarterback earned fifty million a year.

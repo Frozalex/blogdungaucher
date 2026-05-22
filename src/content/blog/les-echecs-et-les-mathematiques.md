@@ -1,26 +1,35 @@
 ---
-title: "Les échecs rendent-ils meilleur en maths ? La vérité scientifique"
-excerpt: "Jouer aux échecs te rend bon en maths ? La réponse n'est pas celle que tu attends, et elle change radicalement ce que tu devrais faire avec un échiquier."
+title: Les échecs rendent-ils meilleur en maths ? La vérité scientifique
+excerpt: >-
+  Jouer aux échecs te rend bon en maths ? La réponse n'est pas celle que tu attends, et elle change radicalement ce que
+  tu devrais faire avec un échiquier.
 publishDate: "2026-04-02"
 updatedDate: "2026-05-21"
-category: "science"
+category: science
 featured: false
 featuredRank: 99
-readingTime: "19 min"
-pillar: "Cognition"
-tags: ["échecs", "mathématiques", "science", "métacognition", "calcul", "tour du cavalier", "huit dames", "résolution de problèmes", "Sala Gobet"]
+readingTime: 19 min
+pillar: Cognition
+tags:
+  - échecs
+  - mathématiques
+  - science
+  - métacognition
+  - calcul
+  - tour du cavalier
+  - huit dames
+  - résolution de problèmes
+  - Sala Gobet
 seoTitle: "Échecs et mathématiques : vrai transfert ou mythe ? Méta-analyses"
-seoDescription: "Sala & Gobet, métacognition, tour du cavalier, huit dames : ce que la science dit vraiment du lien entre échecs et maths, et comment l'utiliser pour vraiment progresser."
-ogImage: "/images/blog/les-echecs-et-les-mathematiques-hero.png"
+seoDescription: >-
+  Sala & Gobet, métacognition, tour du cavalier, huit dames : ce que la science dit vraiment du lien entre échecs et
+  maths, et comment l'utiliser pour vraiment progresser.
+ogImage: /images/blog/les-echecs-et-les-mathematiques-hero.png
 heroImage:
-  src: "/images/blog/les-echecs-et-les-mathematiques-hero.png"
+  src: /images/blog/les-echecs-et-les-mathematiques-hero.png
   alt: "Vignette pixel art : motif neural lumineux sur fond violet, titre échecs et mathématiques"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "Does Chess Make You Better at Maths? The Scientific Truth"
-excerptEn: "Playing chess makes you good at maths? The answer isn't what you'd expect - and it radically changes what you should do with a chessboard."
-seoTitleEn: "Chess and Mathematics: What Is the Real Connection?"
-seoDescriptionEn: "Does chess make you better at maths? What meta-analyses actually say - and why the answer changes how you should really use a chessboard."
+  credit: Blog d'un Gaucher
+  license: Création originale
 ---
 
 Il n’y a pas un seul chiffre sur un échiquier. Aucune équation à résoudre. Un Grand Maître n’est pas nécessairement capable de calculer une intégrale plus vite que toi. Et pourtant, l’idée que « les échecs rendent bon en maths » est répétée dans les écoles, les clubs périscolaires et les arguments d’admission depuis des décennies - comme si les 64 cases implantaient des formules algébriques dans le cerveau par simple contact.

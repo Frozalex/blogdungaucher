@@ -1,42 +1,81 @@
 ---
 title: "Échecs et sommeil : pourquoi la nuit joue aussi ta partie"
-excerpt: "Un grand maître qui dort mal joue environ 10% moins bien dès la deuxième heure de jeu. Ce que la recherche en neurosciences du sommeil dit sur la consolidation mémorielle, la récupération cognitive et la performance échiquéenne."
+excerpt: >-
+  Un grand maître qui dort mal joue environ 10% moins bien dès la deuxième heure de jeu. Ce que la recherche en
+  neurosciences du sommeil dit sur la consolidation mémorielle, la récupération cognitive et la performance échiquéenne.
 publishDate: "2026-07-23"
-category: "science"
+category: science
 featured: false
 featuredRank: 99
-readingTime: "19 min"
-pillar: "Neurosciences"
-tags: ["sommeil", "récupération cognitive", "mémoire", "performance aux échecs", "neurosciences", "préparation tournoi", "fatigue cognitive"]
+readingTime: 19 min
+pillar: Neurosciences
+tags:
+  - sommeil
+  - récupération cognitive
+  - mémoire
+  - performance aux échecs
+  - neurosciences
+  - préparation tournoi
+  - fatigue cognitive
 keyTakeaways:
-  - "La consolidation mémorielle pendant le sommeil REM transforme les positions apprises en schémas durables : les répertoires d'ouvertures se « fixent » la nuit (Stickgold & Walker, 2013)."
-  - "Une nuit de privation totale de sommeil dégrade le calcul combinatoire d'environ 20-25% (Harrison & Horne, 2000, *Neuropsychologia*)."
-  - "Le sommeil lent profond (ondes delta) consolide les faits et procédures ; le sommeil REM intègre les connexions entre patterns : exactement ce dont un joueur d'échecs a besoin."
-  - "Les tournois de 5 jours avec parties du soir sont les plus meurtriers pour la cognition : la dette de sommeil s'accumule et les erreurs augmentent en fin de ronde."
-  - "20 minutes de sieste après une séance d'étude de positions améliorent la rétention de 34% vs groupe sans sieste (Mednick et al., 2003, *Nature Neuroscience*)."
+  - >-
+    La consolidation mémorielle pendant le sommeil REM transforme les positions apprises en schémas durables : les
+    répertoires d'ouvertures se « fixent » la nuit (Stickgold & Walker, 2013).
+  - >-
+    Une nuit de privation totale de sommeil dégrade le calcul combinatoire d'environ 20-25% (Harrison & Horne, 2000,
+    *Neuropsychologia*).
+  - >-
+    Le sommeil lent profond (ondes delta) consolide les faits et procédures ; le sommeil REM intègre les connexions
+    entre patterns : exactement ce dont un joueur d'échecs a besoin.
+  - >-
+    Les tournois de 5 jours avec parties du soir sont les plus meurtriers pour la cognition : la dette de sommeil
+    s'accumule et les erreurs augmentent en fin de ronde.
+  - >-
+    20 minutes de sieste après une séance d'étude de positions améliorent la rétention de 34% vs groupe sans sieste
+    (Mednick et al., 2003, *Nature Neuroscience*).
 seoTitle: "Échecs et sommeil : comment la récupération cognitive booste ta progression"
-seoDescription: "Sommeil REM, consolidation mémorielle, privation de sommeil et performance aux échecs : ce que la neuroscience dit sur la nuit comme entraînement invisible."
-ogImage: "/images/blog/echecs-et-sommeil-hero.png"
+seoDescription: >-
+  Sommeil REM, consolidation mémorielle, privation de sommeil et performance aux échecs : ce que la neuroscience dit sur
+  la nuit comme entraînement invisible.
+ogImage: /images/blog/echecs-et-sommeil-hero.png
 heroImage:
-  src: "/images/blog/echecs-et-sommeil-hero.png"
-  alt: "Illustration pixel art : échiquier flottant dans un ciel nocturne étoilé, pièces endormies sous une lune, « Échecs et sommeil »"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "Chess and Sleep : Why the Night Also Plays Your Game"
-excerptEn: "A grandmaster who sleeps poorly plays about 10% worse from the second hour onward. What sleep neuroscience research says about memory consolidation, cognitive recovery, and chess performance."
-seoTitleEn: "Chess and Sleep : How Cognitive Recovery Boosts Your Progress"
-seoDescriptionEn: "REM sleep, memory consolidation, sleep deprivation and chess performance : what neuroscience says about the night as an invisible training session."
+  src: /images/blog/echecs-et-sommeil-hero.png
+  alt: >-
+    Illustration pixel art : échiquier flottant dans un ciel nocturne étoilé, pièces endormies sous une lune, « Échecs
+    et sommeil »
+  credit: Blog d'un Gaucher
+  license: Création originale
 faq:
-  - question: "Combien d'heures de sommeil faut-il pour performer aux échecs ?"
-    answer: "Les données sur la performance cognitive convergent vers 7 à 9 heures pour un adulte (Walker, 2017 ; NSF Sleep Foundation). En dessous de 6 heures, les fonctions exécutives (calcul, inhibition des mauvaises réponses, planification) se dégradent de manière mesurable. Pour un tournoi sérieux, la régularité du sommeil (même heure de coucher et de lever) prime sur la durée brute."
-  - question: "La sieste améliore-t-elle vraiment la performance aux échecs ?"
-    answer: "Oui, pour la mémoire de reconnaissance des positions et la vigilance soutenue. La sieste de 20-30 minutes (dite 'power nap') améliore l'attention et réduit la somnolence sans créer d'inertie de sommeil. La sieste de 90 minutes permet un cycle REM complet, davantage utile pour la consolidation des procédures complexes (variantes). Éviter la sieste après 15h pour ne pas perturber le sommeil nocturne."
-  - question: "La préparation aux échecs avant de dormir est-elle efficace ?"
-    answer: "Oui : c'est l'une des utilisations les plus documentées de la consolidation mémorielle. Étudier des finales ou des thèmes tactiques dans les 30-60 minutes avant le coucher expose le cerveau au matériau qui sera consolidé pendant le sommeil lent suivant. Éviter cependant les blitz de fin de soirée : l'anxiété liée aux résultats et l'écran lumineux perturbent l'endormissement."
-  - question: "Que se passe-t-il cognitivement après une longue partie de soir ?"
-    answer: "Une partie de 5 heures en soirée induit un niveau de fatigue cognitive équivalent à 20 heures de veille pour les fonctions de calcul (estimation basée sur les données de Harrison & Horne). Le cerveau consomme en tournoi environ 20% de calories supplémentaires (études IRMf). La récupération nécessite une bonne nuit complète : un entracte de 2h ne suffit pas."
-  - question: "Les grands maîtres ont-ils des routines de sommeil particulières ?"
-    answer: "Plusieurs témoignages convergent : la plupart des joueurs de haut niveau protègent leur sommeil en tournoi aussi scrupuleusement que leur préparation d'ouverture. Magnus Carlsen évite les parties en soirée autant que possible. Anand utilise des bouchons d'oreilles et un masque de nuit en déplacement. Certains joueurs signalent l'utilisation de la mélatonine pour gérer les décalages horaires lors des tournois internationaux."
+  - question: Combien d'heures de sommeil faut-il pour performer aux échecs ?
+    answer: >-
+      Les données sur la performance cognitive convergent vers 7 à 9 heures pour un adulte (Walker, 2017 ; NSF Sleep
+      Foundation). En dessous de 6 heures, les fonctions exécutives (calcul, inhibition des mauvaises réponses,
+      planification) se dégradent de manière mesurable. Pour un tournoi sérieux, la régularité du sommeil (même heure de
+      coucher et de lever) prime sur la durée brute.
+  - question: La sieste améliore-t-elle vraiment la performance aux échecs ?
+    answer: >-
+      Oui, pour la mémoire de reconnaissance des positions et la vigilance soutenue. La sieste de 20-30 minutes (dite
+      'power nap') améliore l'attention et réduit la somnolence sans créer d'inertie de sommeil. La sieste de 90 minutes
+      permet un cycle REM complet, davantage utile pour la consolidation des procédures complexes (variantes). Éviter la
+      sieste après 15h pour ne pas perturber le sommeil nocturne.
+  - question: La préparation aux échecs avant de dormir est-elle efficace ?
+    answer: >-
+      Oui : c'est l'une des utilisations les plus documentées de la consolidation mémorielle. Étudier des finales ou des
+      thèmes tactiques dans les 30-60 minutes avant le coucher expose le cerveau au matériau qui sera consolidé pendant
+      le sommeil lent suivant. Éviter cependant les blitz de fin de soirée : l'anxiété liée aux résultats et l'écran
+      lumineux perturbent l'endormissement.
+  - question: Que se passe-t-il cognitivement après une longue partie de soir ?
+    answer: >-
+      Une partie de 5 heures en soirée induit un niveau de fatigue cognitive équivalent à 20 heures de veille pour les
+      fonctions de calcul (estimation basée sur les données de Harrison & Horne). Le cerveau consomme en tournoi environ
+      20% de calories supplémentaires (études IRMf). La récupération nécessite une bonne nuit complète : un entracte de
+      2h ne suffit pas.
+  - question: Les grands maîtres ont-ils des routines de sommeil particulières ?
+    answer: >-
+      Plusieurs témoignages convergent : la plupart des joueurs de haut niveau protègent leur sommeil en tournoi aussi
+      scrupuleusement que leur préparation d'ouverture. Magnus Carlsen évite les parties en soirée autant que possible.
+      Anand utilise des bouchons d'oreilles et un masque de nuit en déplacement. Certains joueurs signalent
+      l'utilisation de la mélatonine pour gérer les décalages horaires lors des tournois internationaux.
 ---
 
 Imagine que tu aies un entraîneur invisible qui consolide ton répertoire d'ouvertures pendant que tu dors, qui connecte les patterns tactiques que tu as étudiés aujourd'hui à ceux que tu connais depuis des années, et qui efface les interférences entre les variantes que tu viens d'apprendre et les anciennes. Cet entraîneur existe. C'est ton sommeil.

@@ -1,25 +1,32 @@
 ---
 title: "Les échecs et l'addiction : quand le jeu devient une drogue"
-excerpt: "Il est 3h du matin. Tu as promis que c'était la dernière partie, mais tu en lances une autre. Peut-on vraiment être accro aux échecs ? Décryptage d'une addiction silencieuse."
+excerpt: >-
+  Il est 3h du matin. Tu as promis que c'était la dernière partie, mais tu en lances une autre. Peut-on vraiment être
+  accro aux échecs ? Décryptage d'une addiction silencieuse.
 publishDate: "2026-04-03"
-category: "societe"
+category: societe
 featured: false
 featuredRank: 99
-readingTime: "22 min"
-pillar: "Psychologie"
-tags: ["échecs", "addiction", "cerveau", "dopamine", "jeu en ligne", "santé mentale", "psychologie"]
+readingTime: 22 min
+pillar: Psychologie
+tags:
+  - échecs
+  - addiction
+  - cerveau
+  - dopamine
+  - jeu en ligne
+  - santé mentale
+  - psychologie
 seoTitle: "Addiction aux échecs : comprendre et surmonter la dépendance"
-seoDescription: "47 parties dans la nuit, rating obsessionnel, boucle dopaminergique : les échecs créent-ils une vraie addiction ? Signes, mécanismes neurologiques et pistes concrètes pour reprendre le contrôle."
-ogImage: "/images/blog/les-echecs-et-l-addiction-hero.png"
+seoDescription: >-
+  47 parties dans la nuit, rating obsessionnel, boucle dopaminergique : les échecs créent-ils une vraie addiction ?
+  Signes, mécanismes neurologiques et pistes concrètes pour reprendre le contrôle.
+ogImage: /images/blog/les-echecs-et-l-addiction-hero.png
 heroImage:
-  src: "/images/blog/les-echecs-et-l-addiction-hero.png"
+  src: /images/blog/les-echecs-et-l-addiction-hero.png
   alt: "Vignette pixel art : bureau la nuit, écran montrant un échiquier, titre sur l’addiction aux échecs"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "Chess and Addiction: When the Game Becomes a Drug"
-excerptEn: "It's 3am. You promised yourself it was the last game, but you're launching another one. Can you really be addicted to chess? A breakdown of a silent addiction."
-seoTitleEn: "Chess and Addiction: Understanding and Overcoming Dependency"
-seoDescriptionEn: "Discover the complex link between chess and addiction. Learn to identify the signs of dependency and find concrete advice on how to take back control."
+  credit: Blog d'un Gaucher
+  license: Création originale
 ---
 
 Il est 3 h du matin. L’écran bleuté te crame les paupières ; le compteur de la journée affiche **47 parties**. Ton rating vient de passer sous le palier que tu t’étais juré de ne plus lâcher. Tu te dis : *« Juste une dernière partie »*, celle qui va remettre les choses d’aplomb. Parce qu’il n’est pas question de finir sur une défaite.

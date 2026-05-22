@@ -1,3 +1,14 @@
+---
+title: "The 40-40-20 Rule: How to Really Structure Your Chess Training"
+excerpt: >-
+  Most players spend 80% of their time on openings. The 40-40-20 rule says the opposite: 40% tactics, 40% endgames, 20%
+  openings. Why? And does it actually work?
+seoTitle: "The 40-40-20 Rule in Chess: Tactics, Endgames, Openings"
+seoDescription: >-
+  The 40-40-20 rule recommends 40% tactics, 40% endgames and 20% openings. Why most players do the opposite, and what
+  expertise research says about this training breakdown.
+---
+
 You have just lost a game. You open your repertoire, you rerun the line that troubled you, you spend forty minutes memorising moves you may never play again. It feels useful. It feels like work.
 
 It is probably the worst way to spend your chess study time.

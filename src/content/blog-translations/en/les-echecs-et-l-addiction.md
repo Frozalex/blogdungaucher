@@ -1,3 +1,14 @@
+---
+title: "Chess and Addiction: When the Game Becomes a Drug"
+excerpt: >-
+  It's 3am. You promised yourself it was the last game, but you're launching another one. Can you really be addicted to
+  chess? A breakdown of a silent addiction.
+seoTitle: "Chess and Addiction: Understanding and Overcoming Dependency"
+seoDescription: >-
+  Discover the complex link between chess and addiction. Learn to identify the signs of dependency and find concrete
+  advice on how to take back control.
+---
+
 It is 3 a.m. The blue screen burns your eyelids; the daily counter shows **47 games**. Your rating just dropped below the line you swore you would not cross again. You tell yourself: *"Just one more game,"* the one that will set things right. Because you are not about to end on a loss.
 
 Does that scene feel familiar? Thousands of players replay that film every night on [Chess.com](https://www.chess.com), [Lichess](https://lichess.org), and other servers.

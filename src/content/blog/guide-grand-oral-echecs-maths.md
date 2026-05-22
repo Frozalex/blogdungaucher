@@ -1,42 +1,77 @@
 ---
 title: "Guide Grand Oral Maths – Échecs : le script complet prêt à utiliser"
-excerpt: "Tout ce dont tu as besoin pour ton Grand Oral spécialité Maths avec les échecs : script minuté 10 min, formules prêtes, calculs détaillés, 20 questions de jury avec réponses rédigées. Imprime, surligne, performe."
+excerpt: >-
+  Tout ce dont tu as besoin pour ton Grand Oral spécialité Maths avec les échecs : script minuté 10 min, formules
+  prêtes, calculs détaillés, 20 questions de jury avec réponses rédigées. Imprime, surligne, performe.
 publishDate: "2026-05-05"
-category: "grand-oral"
+category: grand-oral
 featured: false
 featuredRank: 99
-readingTime: "28 min"
-pillar: "Grand Oral"
-tags: ["grand-oral", "mathématiques", "terminale", "baccalauréat", "guide", "script", "questions jury", "Elo", "combinatoire", "loi binomiale", "minimax"]
+readingTime: 28 min
+pillar: Grand Oral
+tags:
+  - grand-oral
+  - mathématiques
+  - terminale
+  - baccalauréat
+  - guide
+  - script
+  - questions jury
+  - Elo
+  - combinatoire
+  - loi binomiale
+  - minimax
 keyTakeaways:
   - "Script minuté 10 minutes avec transitions rédigées : tu sais exactement quoi dire à chaque moment."
-  - "Formules Elo, loi binomiale et nombre de Shannon avec calculs numériques pas à pas pour le jury."
-  - "20 questions de jury classées par difficulté, avec réponses complètes rédigées en langage oral."
-  - "3 problématiques au choix selon ton niveau et ta spécialité complémentaire."
-  - "Check-list de préparation J-30, J-7 et veille du Grand Oral."
+  - Formules Elo, loi binomiale et nombre de Shannon avec calculs numériques pas à pas pour le jury.
+  - 20 questions de jury classées par difficulté, avec réponses complètes rédigées en langage oral.
+  - 3 problématiques au choix selon ton niveau et ta spécialité complémentaire.
+  - Check-list de préparation J-30, J-7 et veille du Grand Oral.
 seoTitle: "Guide Grand Oral Maths Échecs 2026 : script 10 min + questions jury rédigées"
-seoDescription: "Script complet minute par minute, formules Elo et loi binomiale prêtes, 20 questions de jury avec réponses rédigées. Le guide imprimable pour ton Grand Oral Maths avec les échecs."
-ogImage: "/images/blog/guide-grand-oral-echecs-maths-hero.png"
+seoDescription: >-
+  Script complet minute par minute, formules Elo et loi binomiale prêtes, 20 questions de jury avec réponses rédigées.
+  Le guide imprimable pour ton Grand Oral Maths avec les échecs.
+ogImage: /images/blog/guide-grand-oral-echecs-maths-hero.png
 heroImage:
-  src: "/images/blog/guide-grand-oral-echecs-maths-hero.png"
-  alt: "Illustration pixel art : lycéen face à un jury, échiquier et formules mathématiques en arrière-plan, « Guide Grand Oral Maths Échecs »"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "Maths Grand Oral Chess Guide 2026: Complete Script + Jury Questions"
-excerptEn: "Everything you need for your Grand Oral mathematics specialty with chess: minute-by-minute script, ready formulas, detailed calculations, 20 jury questions with written answers."
-seoTitleEn: "Maths Grand Oral Chess Guide 2026: 20-min Script + Jury Q&A"
-seoDescriptionEn: "Complete minute-by-minute script, ready Elo and binomial formulas, 20 jury questions with written answers. The printable guide for your Maths Grand Oral with chess."
+  src: /images/blog/guide-grand-oral-echecs-maths-hero.png
+  alt: >-
+    Illustration pixel art : lycéen face à un jury, échiquier et formules mathématiques en arrière-plan, « Guide Grand
+    Oral Maths Échecs »
+  credit: Blog d'un Gaucher
+  license: Création originale
 faq:
-  - question: "Quelle problématique choisir pour un Grand Oral Maths avec les échecs ?"
-    answer: "Trois angles sont solides et différents : (1) 'En quoi le jeu d'échecs constitue-t-il un modèle de la pensée combinatoire ?': idéal si tu es à l'aise avec le dénombrement et les arbres. (2) 'Dans quelle mesure les probabilités permettent-elles de modéliser la performance aux échecs ?': idéal si tu maîtrises la loi binomiale et la formule Elo. (3) 'Pourquoi les mathématiques prouvent-elles que les échecs ne seront jamais résolus par un algorithme ?': idéal si tu aimes la complexité algorithmique et le paradoxe de Zermelo."
-  - question: "Comment réussir les 5 minutes de questions du jury sur les Maths et les échecs ?"
-    answer: "Prépare les 5 angles d'attaque : le calcul du nombre de Shannon (exponentielle et principe multiplicatif), la formule Elo (loi logistique et probabilité), la suite récurrente de mise à jour Elo (convergence), la loi binomiale appliquée à un match, et la différence minimax vs AlphaZero. Si le jury sort de ces 5 angles, réponds honnêtement 'Je n'ai pas exploré cette piste dans ma préparation, mais je peux raisonner à partir de ce que je sais...'. C'est une réponse valide et appréciée."
-  - question: "Peut-on apporter un échiquier physique au Grand Oral ?"
-    answer: "Oui, c'est autorisé et très efficace. Un échiquier physique posé sur la table donne une présence concrète au sujet, permet des démonstrations tactiles pendant l'exposé, et offre un objet de référence pendant les questions. Préfère un échiquier de format réduit (20×20 cm maximum) pour ne pas encombrer la table. Place-le visible du jury dès le début: c'est un signal fort de préparation."
-  - question: "Quelle est la durée idéale de chaque partie d'un exposé de Grand Oral Maths ?"
-    answer: "Pour un exposé de 10 minutes : introduction 1 minute (problématique + plan annoncé), développement en 2 ou 3 parties de 2 à 3 minutes chacune, conclusion 1 minute (réponse à la problématique + ouverture). La rigueur sur le minutage est critique: le jury interrompra au bout de 10 minutes. Prévois une alarme discrète à 9 minutes pour te signaler de conclure. Le jury pose ensuite ses questions pendant 10 minutes."
-  - question: "Quelle formule Elo faut-il absolument connaître pour le Grand Oral ?"
-    answer: "Deux formules fondamentales. (1) La probabilité de victoire : P(A bat B) = 1 / (1 + 10^((R_B - R_A)/400)). Exemple : si R_A = 1600 et R_B = 1800, P(A bat B) = 1/(1+10^(200/400)) = 1/(1+10^0.5) ≈ 1/(1+3.16) ≈ 0.24, soit 24% de chances. (2) La mise à jour de cote : R'_A = R_A + K × (résultat - probabilité_prévue), avec K=16 pour les joueurs établis. Ces deux formules constituent l'essentiel de ce que le jury peut demander."
+  - question: Quelle problématique choisir pour un Grand Oral Maths avec les échecs ?
+    answer: >-
+      Trois angles sont solides et différents : (1) 'En quoi le jeu d'échecs constitue-t-il un modèle de la pensée
+      combinatoire ?': idéal si tu es à l'aise avec le dénombrement et les arbres. (2) 'Dans quelle mesure les
+      probabilités permettent-elles de modéliser la performance aux échecs ?': idéal si tu maîtrises la loi binomiale et
+      la formule Elo. (3) 'Pourquoi les mathématiques prouvent-elles que les échecs ne seront jamais résolus par un
+      algorithme ?': idéal si tu aimes la complexité algorithmique et le paradoxe de Zermelo.
+  - question: Comment réussir les 5 minutes de questions du jury sur les Maths et les échecs ?
+    answer: >-
+      Prépare les 5 angles d'attaque : le calcul du nombre de Shannon (exponentielle et principe multiplicatif), la
+      formule Elo (loi logistique et probabilité), la suite récurrente de mise à jour Elo (convergence), la loi
+      binomiale appliquée à un match, et la différence minimax vs AlphaZero. Si le jury sort de ces 5 angles, réponds
+      honnêtement 'Je n'ai pas exploré cette piste dans ma préparation, mais je peux raisonner à partir de ce que je
+      sais...'. C'est une réponse valide et appréciée.
+  - question: Peut-on apporter un échiquier physique au Grand Oral ?
+    answer: >-
+      Oui, c'est autorisé et très efficace. Un échiquier physique posé sur la table donne une présence concrète au
+      sujet, permet des démonstrations tactiles pendant l'exposé, et offre un objet de référence pendant les questions.
+      Préfère un échiquier de format réduit (20×20 cm maximum) pour ne pas encombrer la table. Place-le visible du jury
+      dès le début: c'est un signal fort de préparation.
+  - question: Quelle est la durée idéale de chaque partie d'un exposé de Grand Oral Maths ?
+    answer: >-
+      Pour un exposé de 10 minutes : introduction 1 minute (problématique + plan annoncé), développement en 2 ou 3
+      parties de 2 à 3 minutes chacune, conclusion 1 minute (réponse à la problématique + ouverture). La rigueur sur le
+      minutage est critique: le jury interrompra au bout de 10 minutes. Prévois une alarme discrète à 9 minutes pour te
+      signaler de conclure. Le jury pose ensuite ses questions pendant 10 minutes.
+  - question: Quelle formule Elo faut-il absolument connaître pour le Grand Oral ?
+    answer: >-
+      Deux formules fondamentales. (1) La probabilité de victoire : P(A bat B) = 1 / (1 + 10^((R_B - R_A)/400)). Exemple
+      : si R_A = 1600 et R_B = 1800, P(A bat B) = 1/(1+10^(200/400)) = 1/(1+10^0.5) ≈ 1/(1+3.16) ≈ 0.24, soit 24% de
+      chances. (2) La mise à jour de cote : R'_A = R_A + K × (résultat - probabilité_prévue), avec K=16 pour les joueurs
+      établis. Ces deux formules constituent l'essentiel de ce que le jury peut demander.
 ---
 
 > **📥 Comment utiliser ce guide ?** Imprime ce guide (Ctrl+P, mise en page A4, sans marges). Surligne en jaune les formules et en vert les phrases de transition. Entraîne-toi à voix haute avec le script avant le Grand Oral.

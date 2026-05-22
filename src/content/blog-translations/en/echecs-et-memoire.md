@@ -1,3 +1,14 @@
+---
+title: "Chess and Memory: How the Game Stimulates Your Cognitive Skills"
+excerpt: >-
+  Working memory, chunks, openings, games forgotten or etched in mind: what cognitive psychology and neuroscience really
+  say about chess and memory, and how to train so it counts.
+seoTitle: "Chess and Memory: Cognitive Stimulation, Science and Training"
+seoDescription: >-
+  Working memory, consolidation, openings, seniors: the chess-memory link explained by research (Chase & Simon, Gobet,
+  de Groot) and concrete training tips.
+---
+
 Anatoly Karpov replayed from memory, without a board, games played twenty years earlier. Move by move. Variation by variation. Journalists tested him several times: he did not slip.
 
 Yet if you had asked Karpov to memorise a list of thirty unrelated words he would have done exactly like you: forgotten half within an hour.

@@ -1,19 +1,28 @@
 ---
 title: "La psychologie du joueur d'échecs : ce qui se passe vraiment dans ta tête"
-excerpt: "Les échecs ne se jouent pas que sur l'échiquier. Ils se jouent d'abord dans ta tête, avant même que ta main ne touche une pièce. Portrait psychologique d'un joueur face à lui-même."
+excerpt: >-
+  Les échecs ne se jouent pas que sur l'échiquier. Ils se jouent d'abord dans ta tête, avant même que ta main ne touche
+  une pièce. Portrait psychologique d'un joueur face à lui-même.
 publishDate: "2026-04-05"
-category: "esprit"
+category: esprit
 featured: true
 featuredRank: 1
-readingTime: "16 min"
-pillar: "Psychologie"
-tags: ["psychologie", "mental", "échecs", "tilt", "flow", "Kasparov", "Carlsen", "état d'esprit", "confiance"]
+readingTime: 16 min
+pillar: Psychologie
+tags:
+  - psychologie
+  - mental
+  - échecs
+  - tilt
+  - flow
+  - Kasparov
+  - Carlsen
+  - état d'esprit
+  - confiance
 seoTitle: "Psychologie du joueur d'échecs : ego, tilt, flow et peur de perdre"
-seoDescription: "Ego, tilt, flow, peur de perdre : décryptage complet de la psychologie du joueur d'échecs. Comment les émotions influencent chaque coup joué."
-titleEn: "The Psychology of the Chess Player: What's Really Happening Inside Your Head"
-excerptEn: "Chess isn't just played on the board. It's played first in your head, before your hand ever touches a piece. A psychological portrait of a player facing themselves."
-seoTitleEn: "Chess Player Psychology: Master Your Mental Game"
-seoDescriptionEn: "Ego, tilt, flow, fear of losing: a complete breakdown of chess player psychology and how emotions influence every single move you make."
+seoDescription: >-
+  Ego, tilt, flow, peur de perdre : décryptage complet de la psychologie du joueur d'échecs. Comment les émotions
+  influencent chaque coup joué.
 ---
 
 Avant même de poser la main sur le premier pion, quelque chose s'est déjà joué. Une tension imperceptible s'est installée dans les épaules. L'adversaire d'en face te regarde d'une certaine façon ou peut-être ne te regarde-t-il pas du tout, ce qui est encore pire. Tu commences à calculer, mais pas des variantes : tu calcules son niveau, sa réputation, l'écart de classement qui vous sépare. Tu te demandes si tu es suffisamment préparé. Une partie des ressources cognitives que tu avais prévu de consacrer à l'échiquier est déjà en train de s'évaporer dans ce bruit de fond psychologique.

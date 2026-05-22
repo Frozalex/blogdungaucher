@@ -1,42 +1,80 @@
 ---
 title: "Guide Grand Oral SES/HGGSP – Échecs : script, arguments et questions jury"
-excerpt: "Grand Oral spécialité SES ou HGGSP avec les échecs : script minuté 10 min, données économiques et géopolitiques, 20 questions de jury rédigées. Fischer-Spassky comme guerre froide, Bourdieu et capital culturel, Chess for Refugees: tout y est."
+excerpt: >-
+  Grand Oral spécialité SES ou HGGSP avec les échecs : script minuté 10 min, données économiques et géopolitiques, 20
+  questions de jury rédigées. Fischer-Spassky comme guerre froide, Bourdieu et capital culturel, Chess for Refugees:
+  tout y est.
 publishDate: "2026-05-12"
-category: "grand-oral"
+category: grand-oral
 featured: false
 featuredRank: 99
-readingTime: "22 min"
-pillar: "Grand Oral"
-tags: ["grand-oral", "SES", "HGGSP", "sciences économiques", "géopolitique", "terminale", "baccalauréat", "guide", "Fischer-Spassky", "Bourdieu", "capital culturel", "Chess for Refugees"]
+readingTime: 22 min
+pillar: Grand Oral
+tags:
+  - grand-oral
+  - SES
+  - HGGSP
+  - sciences économiques
+  - géopolitique
+  - terminale
+  - baccalauréat
+  - guide
+  - Fischer-Spassky
+  - Bourdieu
+  - capital culturel
+  - Chess for Refugees
 keyTakeaways:
-  - "Script minuté 10 minutes avec transitions rédigées et données chiffrées pour le jury SES/HGGSP."
+  - Script minuté 10 minutes avec transitions rédigées et données chiffrées pour le jury SES/HGGSP.
   - "3 angles différents : économie du marché des joueurs, géopolitique guerre froide, capital culturel et inégalités."
-  - "20 questions de jury avec réponses complètes citant des auteurs (Bourdieu, Sen, Nye) et des faits documentés."
-  - "Tableaux de données économiques et géopolitiques à citer de mémoire face au jury."
-  - "Fiche mémo auteurs-concepts à imprimer pour le jour J."
+  - 20 questions de jury avec réponses complètes citant des auteurs (Bourdieu, Sen, Nye) et des faits documentés.
+  - Tableaux de données économiques et géopolitiques à citer de mémoire face au jury.
+  - Fiche mémo auteurs-concepts à imprimer pour le jour J.
 seoTitle: "Guide Grand Oral SES HGGSP Échecs 2026 : script 10 min + Bourdieu + jury"
-seoDescription: "Script 10 min, données économiques et géopolitiques, Bourdieu et capital culturel, 20 questions jury rédigées. Le guide complet pour ton Grand Oral SES ou HGGSP avec les échecs."
-ogImage: "/images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png"
+seoDescription: >-
+  Script 10 min, données économiques et géopolitiques, Bourdieu et capital culturel, 20 questions jury rédigées. Le
+  guide complet pour ton Grand Oral SES ou HGGSP avec les échecs.
+ogImage: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
 heroImage:
-  src: "/images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png"
-  alt: "Illustration pixel art : lycéen face à un jury, échiquier et carte du monde en arrière-plan, « Guide Grand Oral SES HGGSP Échecs »"
-  credit: "Blog d'un Gaucher"
-  license: "Création originale"
-titleEn: "SES/HGGSP Grand Oral Chess Guide 2026: 10-min Script + Bourdieu + Jury Q&A"
-excerptEn: "Everything for your Grand Oral SES or HGGSP specialty with chess: 10-min script, economic and geopolitical data, 20 jury questions with written answers."
-seoTitleEn: "SES/HGGSP Grand Oral Chess Guide 2026: 10-min Script + Jury Q&A"
-seoDescriptionEn: "10-min script, economic and geopolitical data, Bourdieu cultural capital, 20 jury questions written. The complete guide for your SES or HGGSP Grand Oral with chess."
+  src: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
+  alt: >-
+    Illustration pixel art : lycéen face à un jury, échiquier et carte du monde en arrière-plan, « Guide Grand Oral SES
+    HGGSP Échecs »
+  credit: Blog d'un Gaucher
+  license: Création originale
 faq:
-  - question: "Peut-on faire un Grand Oral SES avec les échecs sans être joueur ?"
-    answer: "Oui. Le Grand Oral évalue ta maîtrise des concepts de la spécialité: pas tes performances aux échecs. Les échecs comme objet d'étude SES permettent d'illustrer des notions du programme : marché (offre/demande de joueurs professionnels), capital culturel (Bourdieu), soft power (Fischer-Spassky et la guerre froide), inégalités d'accès à la culture. Tu n'as pas besoin de savoir jouer aux échecs pour réussir un excellent exposé."
-  - question: "Quelle est la meilleure problématique SES avec les échecs ?"
-    answer: "La problématique la plus différenciante en SES : 'En quoi les échecs constituent-ils à la fois un capital culturel et un facteur de reproduction sociale ?' Elle mobilise Bourdieu (capital culturel, champ, reproduction), les mécanismes de distinction sociale, et des données empiriques sur la sociologie des joueurs. C'est solide, ancré dans le programme, et peu commun. Alternative : 'Les échecs peuvent-ils être analysés comme un marché ?': plus accessible mais moins original."
-  - question: "Y a-t-il des données chiffrées à connaître pour convaincre le jury ?"
-    answer: "Oui. Quelques chiffres-clés : la FIDE recense 200 000 joueurs classés dans 200 pays (2024). Le marché des prix en tournois d'élite représente plusieurs millions de dollars annuels. Le Candidates 2024 offrait 500 000 € de dotation totale. Chess.com compte 150 millions d'inscrits (post-Queen's Gambit). En géopolitique : le match Fischer-Spassky 1972 a été suivi par 80 millions de téléspectateurs américains à son apogée, selon les archives NBC."
-  - question: "Comment mobiliser HGGSP avec les échecs ?"
-    answer: "HGGSP permet plusieurs angles : (1) Thème 'Puissance et faiblesse des États', Fischer-Spassky 1972 comme instrument de soft power américain pendant la guerre froide ; (2) Thème 'Histoire et mémoire': comment le match de 1972 est mémorisé différemment en URSS et aux USA ; (3) Thème 'Mondialisation': les échecs comme lingua franca internationale, homogénéisation et résistances culturelles. Le thème des 'frontières' peut aussi être travaillé via les exilés politiques devenus champions."
-  - question: "Quelle est la durée idéale de chaque partie de l'exposé SES/HGGSP ?"
-    answer: "Pour 10 minutes : introduction 1 minute (accroche + problématique + plan), partie 1 de 3 minutes (données économiques ou analyse de marché), partie 2 de 3 minutes (dimension géopolitique ou culturelle), partie 3 de 2 minutes (limites ou nuance), conclusion 1 minute. Le jury interroge ensuite 10 minutes. En SES, les données chiffrées et les auteurs sont attendus: prépare au moins 3 chiffres et 2 auteurs à citer de mémoire."
+  - question: Peut-on faire un Grand Oral SES avec les échecs sans être joueur ?
+    answer: >-
+      Oui. Le Grand Oral évalue ta maîtrise des concepts de la spécialité: pas tes performances aux échecs. Les échecs
+      comme objet d'étude SES permettent d'illustrer des notions du programme : marché (offre/demande de joueurs
+      professionnels), capital culturel (Bourdieu), soft power (Fischer-Spassky et la guerre froide), inégalités d'accès
+      à la culture. Tu n'as pas besoin de savoir jouer aux échecs pour réussir un excellent exposé.
+  - question: Quelle est la meilleure problématique SES avec les échecs ?
+    answer: >-
+      La problématique la plus différenciante en SES : 'En quoi les échecs constituent-ils à la fois un capital culturel
+      et un facteur de reproduction sociale ?' Elle mobilise Bourdieu (capital culturel, champ, reproduction), les
+      mécanismes de distinction sociale, et des données empiriques sur la sociologie des joueurs. C'est solide, ancré
+      dans le programme, et peu commun. Alternative : 'Les échecs peuvent-ils être analysés comme un marché ?': plus
+      accessible mais moins original.
+  - question: Y a-t-il des données chiffrées à connaître pour convaincre le jury ?
+    answer: >-
+      Oui. Quelques chiffres-clés : la FIDE recense 200 000 joueurs classés dans 200 pays (2024). Le marché des prix en
+      tournois d'élite représente plusieurs millions de dollars annuels. Le Candidates 2024 offrait 500 000 € de
+      dotation totale. Chess.com compte 150 millions d'inscrits (post-Queen's Gambit). En géopolitique : le match
+      Fischer-Spassky 1972 a été suivi par 80 millions de téléspectateurs américains à son apogée, selon les archives
+      NBC.
+  - question: Comment mobiliser HGGSP avec les échecs ?
+    answer: >-
+      HGGSP permet plusieurs angles : (1) Thème 'Puissance et faiblesse des États', Fischer-Spassky 1972 comme
+      instrument de soft power américain pendant la guerre froide ; (2) Thème 'Histoire et mémoire': comment le match de
+      1972 est mémorisé différemment en URSS et aux USA ; (3) Thème 'Mondialisation': les échecs comme lingua franca
+      internationale, homogénéisation et résistances culturelles. Le thème des 'frontières' peut aussi être travaillé
+      via les exilés politiques devenus champions.
+  - question: Quelle est la durée idéale de chaque partie de l'exposé SES/HGGSP ?
+    answer: >-
+      Pour 10 minutes : introduction 1 minute (accroche + problématique + plan), partie 1 de 3 minutes (données
+      économiques ou analyse de marché), partie 2 de 3 minutes (dimension géopolitique ou culturelle), partie 3 de 2
+      minutes (limites ou nuance), conclusion 1 minute. Le jury interroge ensuite 10 minutes. En SES, les données
+      chiffrées et les auteurs sont attendus: prépare au moins 3 chiffres et 2 auteurs à citer de mémoire.
 ---
 
 > **📥 Comment utiliser ce guide ?** Imprime ce guide (Ctrl+P, A4, sans marges). Surligne en jaune les données chiffrées et en vert les noms d'auteurs. Entraîne-toi à citer les chiffres sans lire tes notes : le jury le remarque.

@@ -1,3 +1,14 @@
+---
+title: Does Chess Make You Better at Maths? The Scientific Truth
+excerpt: >-
+  Playing chess makes you good at maths? The answer isn't what you'd expect - and it radically changes what you should
+  do with a chessboard.
+seoTitle: "Chess and Mathematics: What Is the Real Connection?"
+seoDescription: >-
+  Does chess make you better at maths? What meta-analyses actually say - and why the answer changes how you should
+  really use a chessboard.
+---
+
 There is not a single number on a chessboard. No equation to solve. A grandmaster is not necessarily faster than you at integrating. And yet, the idea that "chess makes you good at math" has been repeated in schools, after-school clubs, and admissions pitches for decades, as if 64 squares implanted algebraic formulas in the brain by simple contact.
 
 ## Why we instinctively link chess and mathematics (the "wow" is real)

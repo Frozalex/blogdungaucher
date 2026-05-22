@@ -3,25 +3,9 @@ import { Marked, type Tokens } from "marked";
 
 export type EnHeading = { depth: number; slug: string; text: string };
 
-const enModules = import.meta.glob<string>("../content/blog-translations/en/*.md", {
-  eager: true,
-  query: "?raw",
-  import: "default",
-});
-
-/**
- * Contenu markdown anglais (corps seul) pour /en/blog/[slug], si le fichier existe.
- */
-export function getEnglishArticleMarkdown(slug: string): string | undefined {
-  for (const [path, raw] of Object.entries(enModules)) {
-    const base = path.split("/").pop()?.replace(/\.md$/, "");
-    if (base === slug) return raw;
-  }
-  return undefined;
-}
-
 /**
  * Rendu HTML + sommaire (h2-h3) pour le corps anglais, avec slugs stables (github-slugger).
+ * Utilisé par /en/blog/[slug].astro après avoir récupéré le body via getEntry('enTranslations', slug).
  */
 export function renderEnglishMarkdown(markdown: string): {
   html: string;

@@ -1,3 +1,14 @@
+---
+title: "Chess in Prison: When the Chessboard Becomes a Rehabilitation Tool"
+excerpt: >-
+  Inmates learning to anticipate three moves ahead, manage the frustration of a lost piece, respect an opponent. What
+  chess therapy programmes in prison really reveal about rehabilitation.
+seoTitle: "Chess in Prison: Rehabilitation, Executive Functions and Recidivism"
+seoDescription: >-
+  Change Through Chess, San Quentin, Rikers Island: prison chess programmes show measurable effects on impulsivity and
+  recidivism. What criminology really says about the chessboard as a rehabilitation tool.
+---
+
 It is 2 p.m. in a prison on the outskirts of London. The room is small, the furniture battered. Two inmates sit facing a chessboard on a formica table. There is no close watch: the officer is in the corridor.
 
 No phone. No television. Silence has settled naturally, rare enough here that other inmates pause at the door, curious.
