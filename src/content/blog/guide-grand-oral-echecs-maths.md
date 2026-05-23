@@ -79,7 +79,7 @@ Ce **guide** rassemble **tout** ce qu'un élève de **terminale** spécialité *
 
 L'objectif : que tu n'aies plus à compiler des **fiches** dispersées, plus à chercher des **exemples**, plus à inventer ton plan dans l'urgence. **Tout** est là, exploitable directement.
 
-> **📥 Comment utiliser ce guide ?** Clique sur le bouton « Télécharger en PDF » en haut de la page pour récupérer le **guide** au format imprimable. Surligne en jaune les formules, en vert les phrases de transition, en rouge les **données** chiffrées. Entraîne-toi à dérouler chaque formule à voix haute sans regarder tes notes : le **jury** le remarque immédiatement.
+> **📥 Comment utiliser ce guide ?** Télécharge le PDF via le bouton en haut de la page pour l'avoir hors-ligne. Lis sur écran ou support de ton choix. Entraîne-toi à dérouler chaque formule à voix haute sans regarder tes notes : le **jury** le remarque immédiatement.
 
 ## Comprendre l'épreuve : Grand Oral en spécialité Maths
 

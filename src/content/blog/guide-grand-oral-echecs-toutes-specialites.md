@@ -74,9 +74,27 @@ faq:
       Ignorer les limites du sujet: un bon exposé pose aussi les limites de sa propre argumentation.
 ---
 
-> **📥 Comment utiliser ce guide ?** Imprime ce guide (Ctrl+P, A4, sans marges). Lis d'abord le tableau de correspondance pour trouver ta problématique en 5 minutes. Puis suis le script de ta section spécialité. Entraîne-toi à voix haute avec chronomètre.
+> **📥 Comment utiliser ce guide ?** Télécharge la version PDF via le bouton en haut de la page pour l'avoir hors-ligne sur tablette ou téléphone. Lis d'abord le tableau de correspondance pour trouver ta problématique en 5 minutes, puis suis le script de ta section spécialité. Entraîne-toi à voix haute avec chronomètre.
 
 ---
+
+## Comprendre l'épreuve : Grand Oral, mode d'emploi
+
+Le **Grand Oral du bac** est l'**épreuve** la mieux notée du **bac** général, à **coefficient 10**. Sa durée totale est de **40 minutes** :
+- **20 minutes** de **préparation** où tu choisis entre **deux questions** issues de ton **programme**
+- **5 minutes** d'exposé debout, sans notes ou très peu
+- **10 minutes** d'échange avec le **jury** sur ton **sujet**, ton plan, tes sources
+- **5 minutes** sur ton projet d'**orientation** post-bac
+
+Le **jury** est composé de **deux** professeurs : l'un de ta spécialité, l'autre d'une discipline différente. Le second n'est **pas** spécialiste de ton **sujet**. Ton **oral** doit donc être compréhensible par un non-spécialiste, quelle que soit ta spécialité.
+
+Quatre dimensions sont évaluées selon le Bulletin officiel :
+1. **Qualité orale** : élocution claire, **parole** posée, ton convaincu, gestes ouverts
+2. **Maîtrise du sujet** : capacité à expliquer, justifier, nuancer, citer des sources
+3. **Construction de l'argumentation** : problématique nette, plan annoncé, transitions, conclusion
+4. **Cohérence avec ton orientation** : pourquoi ce **sujet** te prépare à tes études supérieures
+
+C'est l'**épreuve** la plus rentable du **bac** au ratio temps de **préparation** / impact note. Trois **minutes** solides peuvent te faire gagner une mention.
 
 ## Quelle problématique selon ta spécialité ?
 
@@ -295,23 +313,108 @@ L'exposé compte pour 50% de la note ; les questions jury comptent pour 50%. Ent
 
 ---
 
+## Sujets entièrement développés par spécialité
+
+Pour chaque spécialité, plusieurs **sujets entièrement rédigés** à 10 minutes d'exposé, prêts à réciter ou à adapter (chaque page a son propre bouton PDF) :
+
+### Spécialité NSI
+- [Sujet Grand Oral NSI : minimax et arbre de décision](/fr/blog/sujet-grand-oral-nsi-minimax/)
+- [Sujet Grand Oral NSI : élagage alpha-bêta et optimisation](/fr/blog/sujet-grand-oral-nsi-alpha-beta/)
+- [Sujet Grand Oral NSI : AlphaZero et apprentissage par renforcement](/fr/blog/sujet-grand-oral-nsi-alphazero/)
+
+### Spécialité Mathématiques
+- [Sujet Grand Oral Maths : combinatoire et principe multiplicatif](/fr/blog/sujet-grand-oral-maths-combinatoire/)
+- [Sujet Grand Oral Maths : Elo et probabilités](/fr/blog/sujet-grand-oral-maths-elo-probabilites/)
+- [Sujet Grand Oral Maths : Zermelo et complexité](/fr/blog/sujet-grand-oral-maths-zermelo-complexite/)
+- [Sujet Grand Oral Maths : modèles et limites](/fr/blog/sujet-grand-oral-maths-modeles-limites/)
+
+### Spécialités SES et HGGSP
+- [Sujet Grand Oral SES : marché des superstars](/fr/blog/sujet-grand-oral-ses-marche-superstars/)
+- [Sujet Grand Oral SES : Bourdieu et reproduction sociale](/fr/blog/sujet-grand-oral-ses-bourdieu-reproduction/)
+- [Sujet Grand Oral HGGSP : Fischer-Spassky et influence](/fr/blog/sujet-grand-oral-hggsp-fischer-spassky/)
+- [Sujet Grand Oral HGGSP : mémoire et patrimoine](/fr/blog/sujet-grand-oral-hggsp-memoire-patrimoine/)
+- [Sujet Grand Oral HGGSP : mondialisation et plateformes](/fr/blog/sujet-grand-oral-hggsp-mondialisation-plateformes/)
+
+## Conseils pour réussir le jour J
+
+### Posture et présence
+
+Tu es debout pendant les **cinq minutes** d'exposé. Les détails comptent :
+
+- **Pieds ancrés** à largeur d'épaules, jamais croisés
+- **Mains visibles** : sur la table ou en mouvement, jamais dans les poches
+- **Regard distribué** entre les **deux** membres du **jury**
+- **Voix** posée et projetée, marquant les pauses après les données clés
+- **Sourire** au moins une fois pendant l'introduction et en conclusion
+
+### Gestion du stress avant l'épreuve
+
+Trois techniques rapides :
+1. **Respiration carrée** : 4 s inspire, 4 s pause, 4 s expire, 4 s pause. Trois cycles avant d'entrer.
+2. **Ancrage corporel** : pieds bien à plat, poings serrés 5 s puis relâche.
+3. **Premier mot automatique** : ta première phrase doit être par cœur, elle te lance.
+
+### Pendant l'échange de 10 minutes
+
+- **Reformule la question** dans tes mots avant de répondre
+- **Si tu ne sais pas**, dis « je ne suis pas certain mais je dirais que… » plutôt que « je ne sais pas » sec
+- **Quand tu ne comprends pas**, demande poliment « pourriez-vous reformuler ? »
+- **Si on te pousse dans tes retranchements**, c'est normal : le **jury** teste ta capacité à raisonner sous pression, pas à tout savoir
+
 ## Check-list de préparation
 
-**J-30**
-- [ ] Choisir la problématique dans le tableau ci-dessus
+### J-30 (un mois avant)
+
+- [ ] Choisir la problématique dans le tableau correspondance spécialité
+- [ ] Choisir et lire le **sujet** développé correspondant (chaque sujet est téléchargeable en PDF)
+- [ ] Identifier 3 **données** ou **exemples** à citer de mémoire
 - [ ] Lire 2 articles de fond sur ce blog correspondant à ton angle
-- [ ] Identifier 3 données ou exemples à citer de mémoire
 
-**J-7**
-- [ ] Entraînement chrono : 10 minutes exposé complet, seul (chronomètre visible)
-- [ ] Simulation de questions avec un proche (20 minutes de questions hostiles)
-- [ ] Vérifier que tu cites au moins 1 auteur et 2 exemples concrets dans l'exposé
+### J-15 (deux semaines avant)
 
-**Veille**
-- [ ] Relire la fiche problématiques × spécialités une fois
-- [ ] Préparer l'échiquier si tu en apportes un
-- [ ] Dormir 8 heures : le Grand Oral est une performance cognitive
+- [ ] Premier entraînement chrono : 10 minutes exposé complet, seul, devant miroir
+- [ ] Construire ses **fiches** personnelles à partir du **sujet** téléchargé
+- [ ] Identifier 2 ou 3 **exemples** à connaître par cœur
+
+### J-7 (une semaine avant)
+
+- [ ] Entraînement chrono avec un proche jouant le **jury**
+- [ ] Simulation de **questions** hostiles : « Mais c'est juste un jeu, non ? », « Comment tu sais que c'est vrai ? », « Et si ton **exemple** était faux ? »
+- [ ] Vérifier que tu cites au moins 1 auteur et 2 **exemples** concrets dans l'exposé
+- [ ] Relire la fiche problématiques × **spécialités** une fois par jour
+
+### J-2 (l'avant-veille)
+
+- [ ] Dernier entraînement complet, chrono pris, exposé filmé pour révision
+- [ ] Vérifier la tenue (chemise/chemisier propre, chaussures fermées)
+- [ ] Préparer le sac : pièce d'identité, convocation, stylos, eau
+
+### J-1 (la veille)
+
+- [ ] Relire l'anti-sèche (cinq minutes max, **pas** plus)
+- [ ] Vérifier l'heure et l'adresse de la convocation
+- [ ] Préparer l'échiquier de démonstration si tu en apportes un
+- [ ] Se coucher tôt : le **Grand Oral** est une performance cognitive
+
+### Jour J
+
+- [ ] Manger normalement (**pas** plus, **pas** moins ; le ventre vide accentue le **stress**)
+- [ ] Arriver 30 **minutes** en avance
+- [ ] Eau dans la salle d'attente, **pas** de café à jeun
+- [ ] Phase de **préparation** : 20 **minutes** pour choisir et organiser. Ne perds pas plus de 2 **minutes** à choisir.
+
+## Sources et références
+
+- **Bulletin officiel — Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
+- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*. (Nombre de parties d'échecs possibles.)
+- **Bourdieu, P. (1979).** *La Distinction : critique sociale du jugement.* Éditions de Minuit. (Capital culturel, distinction, reproduction sociale.)
+- **Nye, J. (1990).** *Bound to Lead : The Changing Nature of American Power.* Basic Books. (Théorie du *soft power*.)
+- **Nora, P. (1984-1992).** *Les Lieux de mémoire.* Gallimard. (Distinction histoire / mémoire, **patrimoine** culturel.)
+- **Silver, D., et al. (2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero, apprentissage par renforcement.)
+- **Zermelo, E. (1913).** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* (Théorème fondamental sur les jeux à somme nulle.)
+- **FIDE — Handbook (2024).** [fide.com/regulations](https://www.fide.com/regulations). (Règles officielles, classement Elo, dotations.)
+- **Lichess Open Database.** [lichess.org/database](https://database.lichess.org). (Base de 4 milliards de parties pour applications statistiques.)
 
 ---
 
-*Ce guide est librement utilisable et imprimable. Si d'autres lycéens préparent le même sujet, [partage-leur le lien](/fr/grand-oral/). Et bonne chance : tu as fait le travail.*
+*Ce guide est librement utilisable. Si d'autres lycéens préparent le même **sujet**, [partage-leur le lien](/fr/grand-oral/). Et bonne chance : tu as fait le travail.*

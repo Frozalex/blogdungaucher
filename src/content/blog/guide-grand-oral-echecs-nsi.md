@@ -77,7 +77,7 @@ Ce **guide** rassemble **tout** ce qu'un élève de **terminale** spécialité *
 
 L'objectif : que tu n'aies plus à chercher d'**exemples**, plus à compiler des sources d'**internet** dispersées, plus à inventer ton plan dans l'urgence. **Tout** est là, exploitable directement.
 
-> **📥 Comment utiliser ce guide ?** Clique sur le bouton « Télécharger en PDF » en haut de la page pour récupérer le **guide** au format imprimable. Surligne en jaune le code Python et en vert les transitions. Entraîne-toi à expliquer le code à voix haute ligne par ligne : c'est l'exercice clé pour l'**oral** **NSI**.
+> **📥 Comment utiliser ce guide ?** Télécharge le PDF via le bouton en haut de la page pour l'avoir hors-ligne. Lis-le sur écran ou impression selon ce qui te convient. Entraîne-toi à expliquer le code à voix haute ligne par ligne : c'est l'exercice clé pour l'**oral** **NSI**.
 
 ## Comprendre l'épreuve : Grand Oral en spécialité NSI
 

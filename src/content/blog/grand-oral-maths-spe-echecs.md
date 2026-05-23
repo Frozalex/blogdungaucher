@@ -22,9 +22,32 @@ faq:
   - question: "Quelles problématiques choisir pour un Grand Oral Maths sur les échecs ?"
     answer: "Les trois meilleures problématiques sont : (1) 'En quoi le jeu d'échecs constitue-t-il un modèle de la pensée combinatoire ?' (angle dénombrement + arbre des coups), (2) 'Dans quelle mesure les probabilités permettent-elles de modéliser et prédire la performance aux échecs ?' (angle loi binomiale + formule Elo), et (3) 'Comment les mathématiques expliquent-elles pourquoi les échecs ne seront jamais résolus par la force brute ?' (angle complexité algorithmique + nombre de Shannon)."
 ---
-Tu es en spécialité Maths ; le Grand Oral approche. Tu cherches un sujet **ancré dans le programme**, personnel, et moins rabâché que la vingtième fractale ou la suite de Fibonacci.
+Tu es en spécialité **mathématiques** en **terminale** ; le **Grand Oral du bac** approche. Tu cherches un **sujet** **ancré dans le programme**, personnel, et moins rabâché que la vingtième fractale ou la suite de Fibonacci.
 
-**Proposition centrale :** les échecs comme terrain d’application **complet** du programme  -  combinatoire (explosion des positions), probabilités (tournoi, Elo), suites récurrentes (mise à jour de cote), algorithmique (minimax). Pas un survol : une table d’équivalences chapitre ↔ échiquier, puis les livrables ci-dessous (formules, exemples chiffrés, plans, questions jury).
+**Proposition centrale :** les échecs comme terrain d'application **complet** du **programme** — combinatoire (explosion des positions), probabilités (tournoi, Elo), suites récurrentes (mise à jour de cote), algorithmique (minimax). Pas un survol : une table d'équivalences chapitre ↔ échiquier, puis les livrables ci-dessous (formules, **exemples** chiffrés, plans, **questions** **jury**, **fiches** anti-sèche et **conseils** de **préparation**).
+
+> **📥 Télécharger ce sujet en PDF** via le bouton en haut de la page pour l'avoir hors-ligne sur tablette, téléphone ou ordinateur.
+
+## Comprendre l'épreuve : Grand Oral en spécialité Maths
+
+### Coefficient, durée, structure
+
+Le **Grand Oral** est l'**épreuve** la mieux notée du **bac** général, à **coefficient 10**. Sa durée totale est de **40 minutes**, dont **20 minutes** de **préparation** où tu choisis entre **deux questions** issues de ton **programme**, **5 minutes** d'exposé debout, **10 minutes** d'échange avec le **jury**, et **5 minutes** sur ton projet d'**orientation** post-bac.
+
+Le **jury** est composé de **deux** professeurs : l'un de ta spécialité (typiquement **mathématiques** ou **NSI**), l'autre d'une discipline différente (lettres, histoire, langues, SVT, philosophie). Le second n'est **pas** matheux. Ton **oral** doit donc être compréhensible par un non-spécialiste : une formule lancée brut perd des points. Il faut la dérouler, traduire les notations en français clair, donner un **exemple** numérique avant la formule abstraite.
+
+### Particularités d'un Grand Oral Maths
+
+Le **jury Maths** attend trois éléments spécifiques :
+- **Au moins deux calculs numériques précis** à faire de tête ou au tableau pendant l'exposé
+- **Une formule maîtrisée jusque dans ses hypothèses** : tu dois savoir quand elle s'applique et quand elle échoue
+- **Une nuance mathématique** : reconnaître les **limites** de validité d'un modèle est aussi important que de le présenter
+
+Les quatre dimensions évaluées selon le Bulletin officiel :
+1. **Qualité orale** : élocution claire, **parole** posée, ton convaincu
+2. **Maîtrise du sujet** : capacité à expliquer chaque étape de calcul, justifier, nuancer
+3. **Construction de l'argumentation** : problématique nette, plan annoncé, conclusion liée
+4. **Cohérence avec ton orientation** : pourquoi ce **sujet** te prépare à tes études
 
 ## Combinatoire et dénombrement : l'explosion des possibles
 
@@ -167,6 +190,26 @@ Les échecs sont donc, selon la terminologie de la théorie de la complexité, u
 
 L'élagage **alpha-bêta** réduit la complexité effective à $O(b^{d/2})$ dans le cas optimal : pour $d = 8$, on explore environ $35^4 \approx 1{,}5 \times 10^6$ nœuds au lieu de $35^8$. Cette optimisation illustre l'**analyse algorithmique** au programme de terminale.
 
+## Construire ta problématique : méthode pas à pas
+
+La problématique est la colonne vertébrale de l'exposé. Elle doit être claire, ancrée dans le **programme** de **terminale** **mathématiques**, et suffisamment ouverte pour permettre une réponse nuancée.
+
+### Étape 1 — Identifier le chapitre central
+
+Choisis un chapitre du **cours** que tu maîtrises bien : combinatoire, probabilités, suites, fonctions, algèbre. Tu construis la problématique autour de ce chapitre, pas l'inverse.
+
+### Étape 2 — Trouver la tension
+
+Une bonne problématique présente une **tension** : « dans quelle mesure », « en quoi », « pourquoi peut-on (ou non) ». Évite le « qu'est-ce que » descriptif. Le **jury** valorise la **question** qui suggère un débat ou un mécanisme, pas la simple définition.
+
+### Étape 3 — Vérifier la faisabilité en 10 minutes
+
+Prends une feuille, écris ta problématique en haut. Liste 3 arguments principaux en dessous, chacun appuyé par une formule ou un **exemple** numérique. Si tu n'y arrives pas en 10 minutes, la problématique est trop large.
+
+### Étape 4 — Vérifier le lien avec l'orientation
+
+Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au passage « voilà pourquoi je veux faire des **mathématiques** en prépa ». Si tu vises une école de commerce, vers « voilà pourquoi je veux faire un cursus quantitatif ».
+
 ## Trois problématiques prêtes à l'emploi
 
 ### Problématique 1 : combinatoire
@@ -230,6 +273,139 @@ Le fait que la correction $K(r_n - p_n)$ est de signe opposé à l'erreur $(u_n 
 
 **Après lecture :** filme-toi en résolvant **un** calcul Elo complet au tableau (données fictives) en moins de quatre minutes ; glisse si tu bloques, pas si tu te trompes.
 
+## Autres idées de sujets Grand Oral en spécialité Maths
+
+Pour situer le **choix** des échecs par rapport aux autres **sujets Grand Oral** possibles en **mathématiques**, voici un panorama des **idées de sujets** :
+
+| **Sujet** | Forces | **Limites** | Difficulté |
+|---|---|---|---|
+| **Échecs et maths** *(notre choix)* | Combine combinatoire, probabilités, suites, complexité | Risque du récit sans formule | Faible |
+| **Cryptographie RSA** | Arithmétique modulaire, actualité | Niveau math élevé, technique pure | Élevée |
+| **Suites de Fibonacci et nombre d'or** | Très visuel, applications nombreuses | Souvent traité | Moyenne |
+| **Loi normale et sondages** | Pertinent en société + politique | Risque du flou si pas de cas concret | Moyenne |
+| **Géométrie non euclidienne** | Sujet de pointe, impressionnant | Très exigeant techniquement | Élevée |
+| **Modélisation épidémique (SIR)** | Actualité Covid, modèles solides | Risque de redondance avec l'actu | Moyenne |
+| **Fractales et théorie du chaos** | Visuellement frappant, lien philo | Risque du superficiel | Moyenne |
+| **Probabilités et loto** | Très accessible | Manque de profondeur | Faible |
+| **Optimisation linéaire** | Lien économie | Sujet plus rare, à creuser | Élevée |
+| **Théorie des graphes** | Très concret, **exemples** nombreux | Demande des **exemples** précis | Moyenne |
+
+Les échecs gagnent sur trois critères : ils contiennent au moins **deux formules** que tu peux dérouler et appliquer numériquement, ils s'appuient sur un objet concret que le **jury** peut visualiser, et ils ont une dimension critique (où le modèle échoue ?).
+
+## Anti-sèche imprimable : les formules à connaître par cœur
+
+### Les cinq formules essentielles
+
+```
+P(A bat B) = 1 / (1 + 10^((R_B - R_A)/400))
+R'_A = R_A + K × (résultat − P)
+P(X=k) = C(n,k) × p^k × (1−p)^(n−k)
+N_Shannon ≈ 35^80 ≈ 10^124
+Complexité minimax = O(b^d) ; alpha-bêta = O(b^(d/2))
+```
+
+### Les cinq chiffres à connaître
+
+- **35** : facteur de branchement moyen aux échecs (b)
+- **80** : demi-coups moyens par partie (longueur)
+- **10^120** : nombre de Shannon (parties possibles)
+- **400** : constante de la formule Elo (échelle des cotes)
+- **16 / 32** : valeurs typiques de K (établi / débutant)
+
+### Les cinq dates pivots
+
+- **1913** : théorème de Zermelo (résultat déterminé sous jeu parfait)
+- **1950** : Claude Shannon publie le calcul du nombre de parties
+- **1960** : Arpad Elo développe son **système** de notation
+- **2007** : résolution des dames par Schaeffer (nulle sous jeu parfait)
+- **2017** : AlphaZero (apprentissage par renforcement)
+
+## Conseils pour réussir le jour J
+
+### Posture et présence
+
+Tu es debout pendant les **cinq minutes** d'exposé. Les détails comptent :
+
+- **Pieds ancrés** à largeur d'épaules, jamais croisés
+- **Mains visibles** : sur la table ou en mouvement, jamais dans les poches
+- **Regard distribué** entre les **deux** membres du **jury** : 60 % pour le matheux, 40 % pour l'autre
+- **Voix** posée et projetée, marquant les pauses après chaque calcul
+- **Sourire** au moins une fois pendant l'introduction et en conclusion
+
+### Gestion du stress avant l'épreuve
+
+Trois techniques rapides :
+1. **Respiration carrée** : 4 s inspire, 4 s pause, 4 s expire, 4 s pause. Trois cycles avant d'entrer dans la salle.
+2. **Ancrage corporel** : pieds bien à plat dans le sol, poings serrés 5 s puis relâche.
+3. **Premier mot automatique** : ta première phrase doit être par cœur, elle te lance le reste.
+
+### Particularités d'un oral Maths
+
+- **Dérouler chaque calcul** : ne lance pas une formule brute. Énonce les variables d'abord (« avec R_A égal à 1600 et R_B égal à 1800… »), puis applique la formule.
+- **Toujours faire un exemple numérique** avant la formule abstraite : « si je joue dix parties à 50 % de chances, j'ai 20 % de probabilité de gagner exactement 6 fois… ensuite je formalise. »
+- **Anticipe les pièges** : si le **jury** te pose un calcul, prends une seconde pour respirer avant de répondre. Une erreur d'inattention vaut moins qu'un silence court.
+- **Si tu ne sais pas** : « Je n'ai pas exploré cette piste dans ma **préparation**, mais je peux raisonner à partir de ce que je sais… » Le **jury** apprécie l'honnêteté méthodologique.
+
+### Pendant l'échange de 10 minutes
+
+Le **jury** te questionne. Quelques règles :
+- **Reformule la question** dans tes mots avant de répondre
+- **Si tu ne sais pas**, dis « je ne suis pas certain mais je dirais que… » plutôt que « je ne sais pas » sec
+- **Distingue les niveaux** : si on te demande « définissez la récursivité », commence simple puis nuance
+- **Quand tu ne comprends pas**, demande poliment « pourriez-vous reformuler ? »
+
+### Le projet d'orientation : les 5 dernières minutes
+
+Prépare une réponse courte et cohérente :
+
+- **CPGE MP / MP2I / MPI** : « Le côté calculatoire et algorithmique de mon **sujet** correspond à ce que je veux approfondir en prépa. »
+- **CPGE BCPST** : « La modélisation **mathématique** appliquée à un objet concret m'intéresse pour la biologie. »
+- **Licence Maths / Maths-Info** : « La rigueur des démonstrations (Zermelo) et la diversité des modèles m'a donné envie de creuser. »
+- **École d'ingénieur post-bac** : « Le mélange théorie / pratique du **sujet** correspond à ce que je veux faire. »
+- **École de commerce** : « La modélisation quantitative (Elo, économie des superstars) est l'aspect que je veux poursuivre en stratégie. »
+
+**Important** : ne mens pas. Un projet « en construction » est mieux accepté qu'un projet inventé.
+
+## Check-list de préparation
+
+### J-30 (un mois avant)
+
+- [ ] Choisir la problématique parmi les trois proposées
+- [ ] Faire les calculs Elo à la main (sans calculatrice) trois fois minimum
+- [ ] Mémoriser les cinq formules essentielles
+- [ ] Mémoriser les cinq chiffres clés (35, 80, 10^120, 400, 16/32)
+- [ ] Lire au moins deux **questions** du **jury** par jour à voix haute
+
+### J-15 (deux semaines avant)
+
+- [ ] Premier entraînement chrono : 10 minutes exposé complet, seul, devant miroir
+- [ ] Construire ses **fiches** : une fiche par formule, une fiche par concept
+- [ ] Identifier deux ou trois **exemples** numériques à connaître par cœur
+
+### J-7 (une semaine avant)
+
+- [ ] Deuxième entraînement chrono avec un proche jouant le **jury**
+- [ ] Répondre à au moins 10 **questions** du **jury** à voix haute
+- [ ] Vérifier que tu peux dérouler chaque formule sans la regarder
+
+### J-2 (l'avant-veille)
+
+- [ ] Dernier entraînement complet, chrono pris, exposé filmé pour révision
+- [ ] Vérifier la tenue (chemise/chemisier propre, chaussures fermées)
+- [ ] Préparer le sac : pièce d'identité, convocation, stylos, eau, échiquier de démonstration si pertinent
+
+### J-1 (la veille)
+
+- [ ] Relire l'anti-sèche (cinq minutes max, **pas** plus)
+- [ ] Vérifier l'heure et l'adresse de la convocation
+- [ ] Se coucher tôt : le **stress** dérègle déjà le sommeil
+
+### Jour J
+
+- [ ] Manger normalement le matin
+- [ ] Arriver 30 minutes en avance
+- [ ] Phase de **préparation** : 20 minutes pour choisir et organiser. Ne perds pas plus de 2 minutes à choisir.
+
 ---
 
 ## À retenir
@@ -240,10 +416,27 @@ Le fait que la correction $K(r_n - p_n)$ est de signe opposé à l'erreur $(u_n 
 - L'algorithme minimax est le cas concret de récursivité le plus puissant du programme NSI-Maths
 - Les trois problématiques de fin d'article correspondent aux trois chapitres-clés du jury
 
+## Pour aller plus loin : sujets développés
+
+Pour chaque problématique, j'ai rédigé un **sujet entièrement développé** à 10 minutes d'exposé, prêt à réciter ou à adapter :
+
+- [Sujet Grand Oral Maths sur la combinatoire](/fr/blog/sujet-grand-oral-maths-combinatoire/) — angle dénombrement et **principe multiplicatif**
+- [Sujet Grand Oral Maths sur Elo et probabilités](/fr/blog/sujet-grand-oral-maths-elo-probabilites/) — angle **loi binomiale** et suites récurrentes
+- [Sujet Grand Oral Maths sur Zermelo et complexité](/fr/blog/sujet-grand-oral-maths-zermelo-complexite/) — angle théorie des jeux et **limites** physiques
+- [Sujet Grand Oral Maths sur modèles et limites](/fr/blog/sujet-grand-oral-maths-modeles-limites/) — angle méta-modélisation
+
+Chaque sujet a son propre bouton PDF en haut de page.
+
 ### Sources et références
 
-- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*, 41(314). (Calcul du nombre de parties possibles, fondement du dénombrement combinatoire.)
+- **Bulletin officiel — Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
+- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*, 41(314). (Calcul du nombre de parties possibles, fondement du dénombrement.)
+- **Zermelo, E. (1913).** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* Congrès international des mathématiciens. (Théorème fondamental.)
 - **Elo, A. E. (1978).** *The Rating of Chessplayers, Past and Present.* Arco Publishing. (Présentation de la suite récurrente et du modèle probabiliste Elo.)
-- **Sala, G. & Gobet, F. (2016).** [*Do the benefits of chess instruction transfer to academic and cognitive skills?*](https://www.sciencedirect.com/science/article/pii/S1747938X16300112) *Educational Research Review.* (Méta-analyse sur les transferts cognitifs, dont les compétences mathématiques.)
-- **von Neumann, J. & Morgenstern, O. (1944).** *Theory of Games and Economic Behavior.* Princeton University Press. (Fondation du minimax et de la théorie des jeux.)
-- **Silver, D., et al. (2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero et apprentissage par renforcement, ouverture vers NSI.)
+- **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*, 6(4). (Analyse formelle de la complexité de l'élagage.)
+- **Sala, G. & Gobet, F. (2016).** [*Do the benefits of chess instruction transfer to academic and cognitive skills?*](https://www.sciencedirect.com/science/article/pii/S1747938X16300112) *Educational Research Review.* (Méta-analyse sur les transferts cognitifs.)
+- **von Neumann, J. & Morgenstern, O. (1944).** *Theory of Games and Economic Behavior.* Princeton University Press. (Fondation du minimax.)
+- **Schaeffer, J., et al. (2007).** *Checkers Is Solved.* *Science*, 317(5844). (Résolution complète des dames, **exemple** de jeu résolvable.)
+- **Silver, D., et al. (2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero, ouverture NSI.)
+- **Lichess Open Database.** [lichess.org/database](https://database.lichess.org). (Base de plus de 4 milliards de parties pour applications statistiques.)
+- **FIDE — Handbook (2024).** [fide.com/regulations](https://www.fide.com/regulations). (Règlement officiel du calcul de la cote Elo.)
