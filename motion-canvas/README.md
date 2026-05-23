@@ -1,4 +1,4 @@
-# Motion Canvas — Blog d'un Gaucher
+# Motion Canvas : Blog d'un Gaucher
 
 Vidéos longues format Vox / 3blue1brown qui étayent les articles du blog. Pure code TypeScript.
 
@@ -55,9 +55,9 @@ npx motion-canvas render
 
 Pour l'instant les scènes tournent sans audio. Trois options envisagées :
 
-1. **Enregistrement perso** — micro USB + Audacity / Reaper, montage final sous Resolve ou Premiere
-2. **TTS ElevenLabs** — voix clonée ou premium, plug direct en piste audio Motion Canvas via `useScene().slides.audio` ou en post-prod
-3. **Sans voix** — typographie kinétique + musique seule pour les Shorts
+1. **Enregistrement perso** : micro USB + Audacity / Reaper, montage final sous Resolve ou Premiere
+2. **TTS ElevenLabs** : voix clonée ou premium, plug direct en piste audio Motion Canvas via `useScene().slides.audio` ou en post-prod
+3. **Sans voix** : typographie kinétique + musique seule pour les Shorts
 
 À décider scène par scène selon le format final.
 

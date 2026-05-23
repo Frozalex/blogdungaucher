@@ -4,7 +4,7 @@ Ce dossier contient les MP4 produits par Motion Canvas et référencés depuis l
 
 ## Convention de nommage
 
-`summary-<slug-article>.mp4` — un MP4 par scène de résumé.
+`summary-<slug-article>.mp4` : un MP4 par scène de résumé.
 
 Exemple : `summary-echecs-et-memoire.mp4` pour l'article du même slug.
 

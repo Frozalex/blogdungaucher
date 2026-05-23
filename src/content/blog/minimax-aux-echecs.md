@@ -67,7 +67,7 @@ En pratique, presque aucun moteur n'implémente minimax dans sa forme à deux br
 
 ### Null-move pruning : faire passer son tour pour gagner du temps
 
-Une heuristique puissante : et si tu **passes ton tour** ? Si la position reste bonne pour toi malgré ce coup gratuit donné à l'adversaire, alors elle est probablement *très* bonne pour toi, et tu peux élaguer profondément le reste de l'analyse. C'est le **null-move pruning**, technique standard depuis les années 1990. Aux échecs, l'astuce a une limite connue (le *zugzwang* — situation où tout coup empire la position, typique des finales de pions), donc les moteurs désactivent l'heuristique en finale ou dans les positions identifiées comme zugzwang potentiel. Gain typique : encore un facteur 2 à 4 sur la vitesse effective.
+Une heuristique puissante : et si tu **passes ton tour** ? Si la position reste bonne pour toi malgré ce coup gratuit donné à l'adversaire, alors elle est probablement *très* bonne pour toi, et tu peux élaguer profondément le reste de l'analyse. C'est le **null-move pruning**, technique standard depuis les années 1990. Aux échecs, l'astuce a une limite connue (le *zugzwang*: situation où tout coup empire la position, typique des finales de pions), donc les moteurs désactivent l'heuristique en finale ou dans les positions identifiées comme zugzwang potentiel. Gain typique : encore un facteur 2 à 4 sur la vitesse effective.
 
 ## Les techniques avancées des moteurs modernes
 
@@ -160,4 +160,4 @@ Approximativement, oui. Tu fais une recherche arborescente avec un facteur de br
 - **Silver, D., et al.** [*Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm.*](https://arxiv.org/abs/1712.01815) arXiv, 2017. (La publication originale d'AlphaZero.)
 - **Knuth, D. E., & Moore, R. W.** *An Analysis of Alpha-Beta Pruning.* Artificial Intelligence, 6(4), 293-326, 1975. (L'analyse formelle de l'algorithme alpha-bêta.)
 - **Campbell, M., Hoane, A. J., & Hsu, F.** [*Deep Blue.*](https://www.sciencedirect.com/science/article/pii/S0004370201001291) Artificial Intelligence, 134(1-2), 57-83, 2002. (La description du système Deep Blue qui battit Kasparov.)
-- **Iyengar, S.** *Chess Programming: From Minimax to Neural Networks.* ACM Computing Surveys, 2019. (La revue des approches algorithmiques en informatique des échecs.)
+- **Iyengar, S.** *Chess Programming : From Minimax to Neural Networks.* ACM Computing Surveys, 2019. (La revue des approches algorithmiques en informatique des échecs.)

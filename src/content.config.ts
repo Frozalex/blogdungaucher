@@ -24,7 +24,7 @@ const blog = defineCollection({
        Chemin commençant par /, ex. "/videos/summary-echecs-et-memoire.mp4".
        Affiché sous le titre via ArticleVideo si le fichier existe. */
     summaryVideo: z.string().optional(),
-    /** Note libre sous le lecteur (durée, statut "version 1 — perfectible", etc.). */
+    /** Note libre sous le lecteur (durée, statut "version 1 : perfectible", etc.). */
     summaryVideoNote: z.string().optional(),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
@@ -83,7 +83,7 @@ const enTranslations = defineCollection({
 
 /**
  * Traductions allemandes des articles FR.
- * Même structure qu’enTranslations — le dossier est vide par défaut,
+ * Même structure qu’enTranslations : le dossier est vide par défaut,
  * à peupler au fur et à mesure des traductions.
  */
 const deTranslations = defineCollection({

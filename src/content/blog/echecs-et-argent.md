@@ -30,7 +30,7 @@ La même année, le Championnat du Monde de Formule 1 distribuait environ 1,2 mi
 
 Magnus Carlsen, meilleur joueur de l'histoire des échecs selon pratiquement tous les indicateurs, a cumulé environ 2,4 millions de dollars en prize money sur l'ensemble de sa carrière de tournoi. Pas par saison. Sur toute sa carrière.
 
-Ce n'est pas un problème de popularité : les échecs comptent 600 à 800 millions de joueurs dans le monde selon les estimations. C'est un problème de structure économique. Et cette structure est plus intéressante à démontrer que les chiffres ne le laissent supposer. (Pour le contexte sociologique sur lequel se greffe ce problème — notamment la sous-représentation des femmes dans les circuits payants — voir [échecs et femmes](/blog/echecs-et-femmes/).)
+Ce n'est pas un problème de popularité : les échecs comptent 600 à 800 millions de joueurs dans le monde selon les estimations. C'est un problème de structure économique. Et cette structure est plus intéressante à démontrer que les chiffres ne le laissent supposer. (Pour le contexte sociologique sur lequel se greffe ce problème (notamment la sous-représentation des femmes dans les circuits payants) voir [échecs et femmes](/blog/echecs-et-femmes/).)
 
 ## Les chiffres qui choquent
 
@@ -192,5 +192,5 @@ Les échecs ont produit certains des esprits les plus fascinants de l'histoire s
 - **Chess.com Press (2022).** - [*Chess.com Acquires Play Magnus Group.*](https://www.chess.com/article/view/chess-com-acquires-play-magnus-group) (Acquisition pour 83 millions de dollars ; valorisation de Chess.com et modèle économique des plateformes.)
 - **Statista (2023).** - *Esports prize pool comparison by game, 2023.* (Comparaison des prize pools entre esports, poker et échecs.)
 - **Elo, A. E. (1978).** - *The Rating of Chessplayers, Past and Present.* Arco Publishing. (Système de classement FIDE et base de la hiérarchie professionnelle aux échecs.)
-- **Shenk, D. (2006).** - *The Immortal Game: A History of Chess.* Doubleday. (Histoire économique et culturelle des échecs, y compris l'impact de la Guerre froide sur le financement du jeu professionnel.)
+- **Shenk, D. (2006).** - *The Immortal Game : A History of Chess.* Doubleday. (Histoire économique et culturelle des échecs, y compris l'impact de la Guerre froide sur le financement du jeu professionnel.)
 - **Byrne, R. (1972).** - *Fischer-Spassky Match Reports.* New York Times. (Contexte géopolitique et économique du match du siècle ; première grande médiatisation internationale des échecs.)

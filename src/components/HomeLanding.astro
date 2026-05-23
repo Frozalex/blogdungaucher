@@ -393,7 +393,7 @@ const articleCountLabel = (n : number): string => {
 
   /* Cacher les déco sur petits écrans : préserve la lisibilité du hero centré. */
   @media (max-width: 720px) {
-    .hero-deco--left { display: none; }
+    .hero-deco--left { display : none; }
   }
 
   /* ── Hero d’accueil : typo du site (Space Grotesk / Fraunces), fond = même grain que le body ── */
@@ -787,7 +787,7 @@ const articleCountLabel = (n : number): string => {
   /* Grid 3 colonnes 3 rangées :
      - la 1ère carte est "featured" et occupe 2 col × 2 rg (top-left)
      - les 5 autres remplissent naturellement la col 3 (row 1, 2) puis la row 3
-     Layout : [F F A] / [F F B] / [C D E] — pas de carte orpheline. */
+     Layout : [F F A] / [F F B] / [C D E]: pas de carte orpheline. */
   .latest-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

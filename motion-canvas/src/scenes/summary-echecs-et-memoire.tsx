@@ -21,11 +21,11 @@ import { theme } from "../theme";
  * Résumé vidéo (~2 min) de l'article echecs-et-memoire.
  *
  * Structure 5 beats Vox-style :
- *   01. Le paradoxe        — Karpov : tout retenir vs tout oublier
- *   02. L'expérience       — Chase & Simon 1973 : 28 vs 4 pièces
- *   03. Le hasard          — mêmes pièces, position aléatoire : 4 vs 4
- *   04. La révélation      — chunks, une bibliothèque de patterns
- *   05. Pour ton jeu       — entraînement réflexif vs volume blitz
+ *   01. Le paradoxe       , Karpov : tout retenir vs tout oublier
+ *   02. L'expérience      , Chase & Simon 1973 : 28 vs 4 pièces
+ *   03. Le hasard         : mêmes pièces, position aléatoire : 4 vs 4
+ *   04. La révélation     : chunks, une bibliothèque de patterns
+ *   05. Pour ton jeu      : entraînement réflexif vs volume blitz
  *
  * Images :
  *   - /images/karpov.jpg (à télécharger, cf. public/images/README.md)
@@ -35,7 +35,7 @@ import { theme } from "../theme";
 const ARTICLE_URL = "blogdungaucher.com/fr/blog/echecs-et-memoire";
 
 // Position de référence : milieu de partie type Ruy López, 26 pièces.
-const REAL_POSITION: Partial<Record<string, PieceCode>> = {
+const REAL_POSITION : Partial<Record<string, PieceCode>> = {
   a1: "R", c1: "B", d1: "Q", e1: "K", h1: "R",
   c3: "N", d2: "B", f3: "N",
   a2: "P", b2: "P", c2: "P", d4: "P", e4: "P", f2: "P", g2: "P", h2: "P",
@@ -56,10 +56,10 @@ export default makeScene2D(function* (view) {
 });
 
 // ════════════════════════════════════════════════════════════════════
-// BEAT 01 — LE PARADOXE (Karpov)
+// BEAT 01, LE PARADOXE (Karpov)
 // ════════════════════════════════════════════════════════════════════
 
-function* beat01Paradox(view: ReturnType<typeof makeScene2D>) {
+function* beat01Paradox(view : ReturnType<typeof makeScene2D>) {
   // Fond noir Vox-style avec portrait Karpov ou fallback couleur
   const dark = createRef<Rect>();
   view.add(<Rect ref={dark} width={1920} height={1080} fill="#0d0d0d" />);
@@ -123,7 +123,7 @@ function* beat01Paradox(view: ReturnType<typeof makeScene2D>) {
       />
       <Txt
         ref={line3Ref}
-        text="Et pourtant — il oubliait sa liste de courses."
+        text="Et pourtant : il oubliait sa liste de courses."
         fontFamily={theme.fontDisplay}
         fontSize={40}
         fontWeight={400}
@@ -155,10 +155,10 @@ function* beat01Paradox(view: ReturnType<typeof makeScene2D>) {
 }
 
 // ════════════════════════════════════════════════════════════════════
-// BEAT 02 — L'EXPÉRIENCE (Chase & Simon, position réelle)
+// BEAT 02, L'EXPÉRIENCE (Chase & Simon, position réelle)
 // ════════════════════════════════════════════════════════════════════
 
-function* beat02Experiment(view: ReturnType<typeof makeScene2D>) {
+function* beat02Experiment(view : ReturnType<typeof makeScene2D>) {
   // Hook : "1973" géant transition
   const yearRef = createRef<Txt>();
   view.add(
@@ -310,10 +310,10 @@ function* beat02Experiment(view: ReturnType<typeof makeScene2D>) {
 }
 
 // ════════════════════════════════════════════════════════════════════
-// BEAT 03 — LE HASARD (position aléatoire)
+// BEAT 03, LE HASARD (position aléatoire)
 // ════════════════════════════════════════════════════════════════════
 
-function* beat03Random(view: ReturnType<typeof makeScene2D>) {
+function* beat03Random(view : ReturnType<typeof makeScene2D>) {
   const reshuffled = shuffleBoard(positionToArray(REAL_POSITION), 1337);
 
   const chapterRef = createRef<ChapterMark>();
@@ -354,7 +354,7 @@ function* beat03Random(view: ReturnType<typeof makeScene2D>) {
   view.add(
     <Txt
       ref={instructionRef}
-      text="MÊMES 26 PIÈCES — POSITION ALÉATOIRE"
+      text="MÊMES 26 PIÈCES, POSITION ALÉATOIRE"
       fontFamily={theme.fontDisplay}
       fontSize={24}
       fontWeight={700}
@@ -446,10 +446,10 @@ function* beat03Random(view: ReturnType<typeof makeScene2D>) {
 }
 
 // ════════════════════════════════════════════════════════════════════
-// BEAT 04 — LA RÉVÉLATION (chunks)
+// BEAT 04, LA RÉVÉLATION (chunks)
 // ════════════════════════════════════════════════════════════════════
 
-function* beat04Chunks(view: ReturnType<typeof makeScene2D>) {
+function* beat04Chunks(view : ReturnType<typeof makeScene2D>) {
   const dark = createRef<Rect>();
   view.add(<Rect ref={dark} width={1920} height={1080} fill="#0d0d0d" opacity={0} />);
   yield* dark().opacity(1, 0.2);
@@ -565,10 +565,10 @@ function* beat04Chunks(view: ReturnType<typeof makeScene2D>) {
 }
 
 // ════════════════════════════════════════════════════════════════════
-// BEAT 05 — POUR TON JEU (takeaway + CTA)
+// BEAT 05, POUR TON JEU (takeaway + CTA)
 // ════════════════════════════════════════════════════════════════════
 
-function* beat05Takeaway(view: ReturnType<typeof makeScene2D>) {
+function* beat05Takeaway(view : ReturnType<typeof makeScene2D>) {
   const chapterRef = createRef<ChapterMark>();
   view.add(
     <ChapterMark
@@ -716,7 +716,7 @@ interface BigNumberConfig {
   emphasize?: boolean;
 }
 
-function* bigNumberReveal(view: ReturnType<typeof makeScene2D>, cfg: BigNumberConfig) {
+function* bigNumberReveal(view : ReturnType<typeof makeScene2D>, cfg : BigNumberConfig) {
   const labelRef = createRef<Txt>();
   const numberRef = createRef<Txt>();
   const unitRef = createRef<Txt>();
@@ -783,8 +783,8 @@ function* bigNumberReveal(view: ReturnType<typeof makeScene2D>, cfg: BigNumberCo
   unitRef().remove();
 }
 
-function positionToArray(squares: Partial<Record<string, PieceCode>>): PieceCode[] {
-  const board: PieceCode[] = Array(64).fill("");
+function positionToArray(squares : Partial<Record<string, PieceCode>>): PieceCode[] {
+  const board : PieceCode[] = Array(64).fill("");
   for (const [sq, piece] of Object.entries(squares)) {
     if (!piece) continue;
     const file = sq.charCodeAt(0) - "a".charCodeAt(0);

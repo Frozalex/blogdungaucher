@@ -2,9 +2,9 @@
 type Lang = "fr" | "en" | "de";
 const { lang = "fr" } = Astro.props as { lang?: Lang };
 
-const copy: Record<
+const copy : Record<
   Lang,
-  { eyebrow: string; h1: string; lead: string; curtainTitle: string; curtainText: string }
+  { eyebrow : string; h1 : string; lead : string; curtainTitle : string; curtainText : string }
 > = {
   fr: {
     eyebrow: "Carnet éditorial",
@@ -20,7 +20,7 @@ const copy: Record<
     lead: "Long-form personal writing, not analyses. What the sections do not say, and why I keep playing.",
     curtainTitle: "First essay coming",
     curtainText:
-      "Essays are being written. They will not follow a regular schedule: each piece will appear when it can stand on its own.",
+      "Essays are being written. They will not follow a regular schedule : each piece will appear when it can stand on its own.",
   },
   de: {
     eyebrow: "Redaktionelles Notizbuch",
@@ -102,7 +102,7 @@ const t = copy[lang];
     pointer-events: none;
   }
 
-  /* "Carte feuille" centrée — métaphore d'un manuscrit en attente. */
+  /* "Carte feuille" centrée : métaphore d'un manuscrit en attente. */
   .essais-card {
     position: relative;
     z-index: 1;

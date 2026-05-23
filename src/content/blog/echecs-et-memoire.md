@@ -1,4 +1,4 @@
----
+﻿---
 title: Découvrez le pouvoir des échecs sur votre mémoire
 excerpt: >-
   Mémoire de travail, chunks, ouvertures, parties oubliées ou gravées : ce que la psychologie cognitive et les
@@ -26,7 +26,8 @@ seoDescription: >-
   quelles conditions ces gains se transfèrent réellement.
 ogImage: /images/blog/echecs-et-memoire-hero.png
 summaryVideo: /videos/summary-echecs-et-memoire.mp4
-summaryVideoNote: Version 1 — résumé visuel de l'article (~2 min, sans son pour l'instant). Produite avec Motion Canvas, en itération.
+summaryVideoNote: >-
+  Version 1, résumé visuel de l'article (~2 min, sans son pour l'instant). Produite avec Motion Canvas, en itération.
 heroImage:
   src: /images/blog/echecs-et-memoire-hero.png
   alt: >-
@@ -64,7 +65,7 @@ Calculer une variante, c'est parcourir un **arbre** de positions possibles sous 
 
 Les travaux d'[Adriaan de Groot](https://fr.wikipedia.org/wiki/Adriaan_de_groot) (*Thought and Choice in Chess*, 1965) ont montré une différence frappante : ce qui sépare surtout les maîtres n'est pas « calculer plus loin à tout prix », c'est la **qualité du premier coup sérieusement envisagé**. Un maître oriente vite l'attention vers les coups plausibles ; un novice peut brûler du temps sur des idées faibles. La mémoire à long terme **suggère des hypothèses** avant que le calcul conscient ne prenne le relais.
 
-> **de Groot AD.** (1965). *Thought and Choice in Chess.* The Hague: Mouton.
+> **de Groot AD.** (1965). *Thought and Choice in Chess.* The Hague : Mouton.
 
 Pour la planification au sens large (anticiper, hiérarchiser), les échecs sont un **simulateur exigeant** : tu t'entraînes à maintenir des buts intermédiaires (« sécuriser le roi », « activer la tour ») tout en mettant à jour la position mentale coup après coup.
 
@@ -90,7 +91,7 @@ La mémoire à long terme, ce n'est pas un disque dur passif : ce qui entre dura
 
 [Fernand Gobet](https://fr.wikipedia.org/wiki/Fernand_Gobet) et Simon (1996) ont affiné le modèle des chunks avec les **templates** : de grandes structures avec un **noyau** stable (un plan typique, une structure de pions) et des **emplacements variables** pour l'adapter à la position réelle. Un grand maître n'encode pas 100 000 positions indépendantes : il réutilise des familles de motifs.
 
-> **Gobet F & Simon HA.** (1996). *Templates in chess memory: A mechanism for recalling several boards.* Cognitive Psychology, 31(1), 1-40.
+> **Gobet F & Simon HA.** (1996). *Templates in chess memory : A mechanism for recalling several boards.* Cognitive Psychology, 31(1), 1-40.
 
 Des travaux en [neuroimagerie](https://fr.wikipedia.org/wiki/Neuroimagerie) montrent que les joueurs expérimentés s'appuient davantage sur des aires liées à la **mémoire à long terme** lors de la reconnaissance de positions, et moins sur une mémoire de travail « brute ». Le cerveau **classe** plutôt qu'il ne surcharge. Le détail est développé dans l'article sur [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
 
@@ -247,8 +248,8 @@ Tu as déjà eu l'impression de « reconnaître » une position sans pouvoir l'e
 ### Sources et références
 
 - **Chase, W. G., & Simon, H. A. (1973).** - *Perception in chess.* *Cognitive Psychology*, 4(1), 55-81. (L'expérience fondatrice : les maîtres mémorisent des groupes fonctionnels de pièces, pas des pièces individuelles. Sur des positions aléatoires, leur avantage disparaît complètement.)
-- **de Groot, A. D. (1965).** - *Thought and Choice in Chess.* The Hague: Mouton. (Pionnière de la psychologie de l'expertise aux échecs : les grands maîtres regardent d'emblée les bons coups parce que la mémoire à long terme leur présente déjà les hypothèses pertinentes.)
-- **Gobet, F., & Simon, H. A. (1996).** - [*Templates in chess memory: A mechanism for recalling several boards.*](https://doi.org/10.1006/cogp.1996.0011) *Cognitive Psychology*, 31(1), 1-40. (Extension du modèle de chunks : les templates permettent de gérer des positions complexes grâce à des structures cognitives flexibles avec noyau fixe et slots variables.)
-- **Miller, G. A. (1956).** - [*The magical number seven, plus or minus two: Some limits on our capacity for processing information.*](https://doi.org/10.1037/h0043158) *Psychological Review*, 63(2), 81-97. (La capacité de la mémoire de travail est universellement limitée à ~7 éléments. Le chunking est la façon dont l'expertise contourne cette limite.)
+- **de Groot, A. D. (1965).** - *Thought and Choice in Chess.* The Hague : Mouton. (Pionnière de la psychologie de l'expertise aux échecs : les grands maîtres regardent d'emblée les bons coups parce que la mémoire à long terme leur présente déjà les hypothèses pertinentes.)
+- **Gobet, F., & Simon, H. A. (1996).** - [*Templates in chess memory : A mechanism for recalling several boards.*](https://doi.org/10.1006/cogp.1996.0011) *Cognitive Psychology*, 31(1), 1-40. (Extension du modèle de chunks : les templates permettent de gérer des positions complexes grâce à des structures cognitives flexibles avec noyau fixe et slots variables.)
+- **Miller, G. A. (1956).** - [*The magical number seven, plus or minus two : Some limits on our capacity for processing information.*](https://doi.org/10.1037/h0043158) *Psychological Review*, 63(2), 81-97. (La capacité de la mémoire de travail est universellement limitée à ~7 éléments. Le chunking est la façon dont l'expertise contourne cette limite.)
 - **Ericsson, K. A., & Chase, W. G. (1982).** - *Exceptional memory.* *American Scientist*, 70(6), 607-615. (La mémoire domaine-spécifique est une compétence construite par la pratique délibérée, pas un talent inné.)
-- **Charness, N. (1976).** - *Memory for chess positions: Resistance to interference.* *Journal of Experimental Psychology: Human Learning and Memory*, 2(6), 641-653. (Les adultes construisent des chunks aussi efficacement que les enfants, à rythme d'apprentissage comparable.)
+- **Charness, N. (1976).** - *Memory for chess positions : Resistance to interference.* *Journal of Experimental Psychology : Human Learning and Memory*, 2(6), 641-653. (Les adultes construisent des chunks aussi efficacement que les enfants, à rythme d'apprentissage comparable.)

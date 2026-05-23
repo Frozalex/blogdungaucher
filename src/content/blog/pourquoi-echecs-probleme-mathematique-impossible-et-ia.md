@@ -118,7 +118,7 @@ $$
 
 Si tu veux une traduction club : minimax, c'est "je ne joue pas un coup qui marche seulement si l'autre dort." C'est une logique claire de prudence rationnelle, pas une garantie contre le tilt, mais un modèle du "pire cas".
 
-Minimax brut, seul, te fait explorer un arbre beaucoup trop gros : sans optimisation, tu meurs avant d'avoir réfléchi ; la bonne nouvelle, c'est qu'une immense partie de l'arbre est inutile si tu sais la couper sans regret. (L'algorithme, ses raffinements modernes — negamax, null-move pruning, table de transposition — et leur version en réseau de neurones sont déroulés dans [minimax aux échecs](/blog/minimax-aux-echecs/).)
+Minimax brut, seul, te fait explorer un arbre beaucoup trop gros : sans optimisation, tu meurs avant d'avoir réfléchi ; la bonne nouvelle, c'est qu'une immense partie de l'arbre est inutile si tu sais la couper sans regret. (L'algorithme, ses raffinements modernes (negamax, null-move pruning, table de transposition) et leur version en réseau de neurones sont déroulés dans [minimax aux échecs](/blog/minimax-aux-echecs/).)
 
 ![Minimax : maximiser son gain face au pire adversaire](/images/echecs-ia-05-minimax.svg)
 

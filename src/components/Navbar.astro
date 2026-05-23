@@ -18,7 +18,7 @@ const links =
 
 const homeHref = lang === "en" ? "/en/" : lang === "de" ? "/de/" : "/fr/";
 
-const isActive = (href: string) => {
+const isActive = (href : string) => {
   const homePaths = ["/fr/", "/en/", "/de/"];
   if (homePaths.includes(href)) {
     return pathname === href;
@@ -33,28 +33,28 @@ const isActive = (href: string) => {
 };
 
 // Correspondance href → clé de traduction navLinks (FR / EN / DE partagent les clés côté runtime i18n pour FR & EN)
-const linkKey: Record<string, string> = {
-  "/fr/science/": "navLinks.science",
-  "/fr/esprit/": "navLinks.esprit",
-  "/fr/societe/": "navLinks.societe",
-  "/fr/grand-oral/": "navLinks.grandOral",
-  "/fr/essais/": "navLinks.essais",
-  "/fr/blog/": "navLinks.blog",
-  "/fr/about/": "navLinks.about",
-  "/en/science/": "navLinks.science",
-  "/en/esprit/": "navLinks.esprit",
-  "/en/societe/": "navLinks.societe",
-  "/en/grand-oral/": "navLinks.grandOral",
-  "/en/essais/": "navLinks.essais",
-  "/en/blog/": "navLinks.blog",
-  "/en/about/": "navLinks.about",
-  "/de/science/": "navLinks.science",
-  "/de/esprit/": "navLinks.esprit",
-  "/de/societe/": "navLinks.societe",
-  "/de/grand-oral/": "navLinks.grandOral",
-  "/de/essais/": "navLinks.essais",
-  "/de/blog/": "navLinks.blog",
-  "/de/about/": "navLinks.about",
+const linkKey : Record<string, string> = {
+  "/fr/science/" : "navLinks.science",
+  "/fr/esprit/" : "navLinks.esprit",
+  "/fr/societe/" : "navLinks.societe",
+  "/fr/grand-oral/" : "navLinks.grandOral",
+  "/fr/essais/" : "navLinks.essais",
+  "/fr/blog/" : "navLinks.blog",
+  "/fr/about/" : "navLinks.about",
+  "/en/science/" : "navLinks.science",
+  "/en/esprit/" : "navLinks.esprit",
+  "/en/societe/" : "navLinks.societe",
+  "/en/grand-oral/" : "navLinks.grandOral",
+  "/en/essais/" : "navLinks.essais",
+  "/en/blog/" : "navLinks.blog",
+  "/en/about/" : "navLinks.about",
+  "/de/science/" : "navLinks.science",
+  "/de/esprit/" : "navLinks.esprit",
+  "/de/societe/" : "navLinks.societe",
+  "/de/grand-oral/" : "navLinks.grandOral",
+  "/de/essais/" : "navLinks.essais",
+  "/de/blog/" : "navLinks.blog",
+  "/de/about/" : "navLinks.about",
 };
 ---
 <header class="navbar" id="navbar" data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-de-href={deHref ?? "/de/"}>
@@ -221,7 +221,7 @@ const linkKey: Record<string, string> = {
   .navbar.scrolled {
     background: var(--navbar-bg-scrolled);
     backdrop-filter: blur(16px) saturate(1.6);
-    -webkit-backdrop-filter: blur(16px) saturate(1.6);
+    -webkit-backdrop-filter : blur(16px) saturate(1.6);
     border-color: var(--border-soft);
     box-shadow: 0 1px 0 var(--border-soft);
   }
@@ -236,7 +236,7 @@ const linkKey: Record<string, string> = {
     transform: translateY(0);
     background: color-mix(in srgb, var(--page-accent, var(--green)) 14%, var(--navbar-bg-glass));
     backdrop-filter: blur(20px) saturate(1.8);
-    -webkit-backdrop-filter: blur(20px) saturate(1.8);
+    -webkit-backdrop-filter : blur(20px) saturate(1.8);
     border-color: color-mix(in srgb, var(--page-accent, var(--green)) 28%, transparent);
     box-shadow:
       0 1px 0 color-mix(in srgb, var(--page-accent, var(--green)) 20%, transparent),
@@ -284,7 +284,7 @@ const linkKey: Record<string, string> = {
   }
 
   /* ── desktop nav ── */
-  .nav-desktop { margin-left: auto; }
+  .nav-desktop { margin-left : auto; }
 
   .nav-links {
     display: flex;
@@ -326,12 +326,12 @@ const linkKey: Record<string, string> = {
   [data-theme="dark"] .nav-link:hover {
     background: rgba(255,255,255,0.05);
   }
-  .nav-link:hover::after { transform: scaleX(1); }
+  .nav-link:hover::after { transform : scaleX(1); }
   .nav-link.active {
     color: var(--text-main);
     background: color-mix(in srgb, var(--green-light) 72%, transparent);
   }
-  .nav-link.active::after { transform: scaleX(1); }
+  .nav-link.active::after { transform : scaleX(1); }
 
   /* ── Boutons icônes ── */
   .nav-actions {
@@ -364,9 +364,9 @@ const linkKey: Record<string, string> = {
   }
 
   /* Icônes dark toggle */
-  .icon-btn .icon-dark { display: none; }
-  [data-theme="dark"] .icon-btn .icon-light { display: none; }
-  [data-theme="dark"] .icon-btn .icon-dark  { display: block; }
+  .icon-btn .icon-dark { display : none; }
+  [data-theme="dark"] .icon-btn .icon-light { display : none; }
+  [data-theme="dark"] .icon-btn .icon-dark  { display : block; }
 
   /* Bouton recherche : identique aux autres icon-btn */
   .search-btn {
@@ -397,7 +397,7 @@ const linkKey: Record<string, string> = {
     cursor: pointer;
     transition: background 160ms ease;
   }
-  .burger:hover { background: var(--surface-warm); }
+  .burger:hover { background : var(--surface-warm); }
   .burger span {
     width: 0.95rem;
     height: 1.5px;
@@ -407,9 +407,9 @@ const linkKey: Record<string, string> = {
     transition: transform 240ms var(--ease-out), opacity 240ms ease;
     display: block;
   }
-  .burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+  .burger[aria-expanded="true"] span:nth-child(1) { transform : translateY(5.5px) rotate(45deg); }
   .burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-  .burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+  .burger[aria-expanded="true"] span:nth-child(3) { transform : translateY(-5.5px) rotate(-45deg); }
 
   /* ── mobile menu ── */
   .mobile-menu {
@@ -428,7 +428,7 @@ const linkKey: Record<string, string> = {
     border-color: var(--border-soft);
   }
 
-  .mobile-menu__inner { overflow: hidden; }
+  .mobile-menu__inner { overflow : hidden; }
 
   .mobile-menu__content {
     display: grid;
@@ -458,7 +458,7 @@ const linkKey: Record<string, string> = {
       background 140ms ease,
       color      140ms ease;
   }
-  .mobile-menu.is-open .mobile-link { opacity: 1; transform: translateY(0); }
+  .mobile-menu.is-open .mobile-link { opacity: 1; transform : translateY(0); }
 
   .mobile-menu.is-open .mobile-link:nth-of-type(1) { transition-delay: 20ms; }
   .mobile-menu.is-open .mobile-link:nth-of-type(2) { transition-delay: 40ms; }
@@ -483,9 +483,9 @@ const linkKey: Record<string, string> = {
     background: color-mix(in srgb, var(--green-light) 72%, transparent);
     border: 1px solid var(--green-border);
   }
-  .mobile-link:hover { background: var(--bg-warm); color: var(--text-main); }
+  .mobile-link:hover { background : var(--bg-warm); color : var(--text-main); }
 
-  /* Utilitaires mobile (dark + lang) — apparition juste après le dernier lien. */
+  /* Utilitaires mobile (dark + lang): apparition juste après le dernier lien. */
   .mobile-utils {
     display: flex;
     gap: 0.5rem;
@@ -495,7 +495,7 @@ const linkKey: Record<string, string> = {
     transition: opacity 140ms ease, transform 140ms var(--ease-out);
     transition-delay: 120ms;
   }
-  .mobile-menu.is-open .mobile-utils { opacity: 1; transform: translateY(0); }
+  .mobile-menu.is-open .mobile-utils { opacity: 1; transform : translateY(0); }
 
   .mobile-util-btn {
     display: inline-flex;
@@ -519,16 +519,16 @@ const linkKey: Record<string, string> = {
   }
 
   @media (max-width: 960px) {
-    .nav-desktop, .nav-actions { display: none; }
-    .burger { display: flex; }
-    .nav-inner { justify-content: space-between; }
+    .nav-desktop, .nav-actions { display : none; }
+    .burger { display : flex; }
+    .nav-inner { justify-content : space-between; }
   }
 </style>
 
 <script>
   let _onScroll = null;
   let _onMouse  = null;
-  let _ctrl: AbortController | null = null;
+  let _ctrl : AbortController | null = null;
 
   function initNavbar() {
     const navbar = document.getElementById("navbar");
@@ -554,12 +554,12 @@ const linkKey: Record<string, string> = {
     const PEEK_VELOCITY    = 18;
 
     let prevY     = window.scrollY;
-    let peekTimer: ReturnType<typeof setTimeout> | null = null;
+    let peekTimer : ReturnType<typeof setTimeout> | null = null;
     let lastScrollAt = 0;
     let lastMouseY   = -1;
     let lastMouseAt  = 0;
 
-    function applyState(state: string) {
+    function applyState(state : string) {
       navbar.classList.remove("scrolled", "nav-hidden", "nav-peek");
       if (state === "scrolled") navbar.classList.add("scrolled");
       if (state === "hidden")   navbar.classList.add("nav-hidden");
@@ -581,7 +581,7 @@ const linkKey: Record<string, string> = {
       else           { cancelPeek(); applyState("scrolled"); }
     }
 
-    function onMouse(e: MouseEvent) {
+    function onMouse(e : MouseEvent) {
       const now = performance.now();
       const dt  = lastMouseAt > 0 ? Math.max(1, now - lastMouseAt) : 16;
       const dy  = lastMouseY >= 0 ? e.clientY - lastMouseY : 0;
@@ -621,8 +621,8 @@ const linkKey: Record<string, string> = {
 
     _onScroll = onScroll;
     _onMouse  = onMouse;
-    window.addEventListener("scroll",     onScroll, { passive: true });
-    document.addEventListener("mousemove", onMouse,  { passive: true });
+    window.addEventListener("scroll",     onScroll, { passive : true });
+    document.addEventListener("mousemove", onMouse,  { passive : true });
     onScroll();
 
     /* ── Burger ── */
@@ -681,7 +681,7 @@ const linkKey: Record<string, string> = {
     setMenuState(false);
 
     /* ── Dark mode toggle ── */
-    function syncDarkBtn(isDark: boolean) {
+    function syncDarkBtn(isDark : boolean) {
       const lang = window.__lang || "fr";
       const dict = (window.__i18n as Record<string, Record<string, string>> | undefined)?.[lang] || {};
       const label = isDark
@@ -711,7 +711,7 @@ const linkKey: Record<string, string> = {
     syncDarkBtn(document.documentElement.dataset.theme === "dark");
 
     /* ── Language toggle ── */
-    function syncLangBtns(lang: string) {
+    function syncLangBtns(lang : string) {
       const label = lang.toUpperCase();
       const desktopSpan = document.querySelector("#lang-toggle .lang-label");
       const mobileSpan  = document.querySelector("#lang-toggle-mobile .lang-label-mobile");
@@ -728,7 +728,7 @@ const linkKey: Record<string, string> = {
       const frHref = nav?.dataset.langFrHref;
       const enHref = nav?.dataset.langEnHref;
       const deHref = nav?.dataset.langDeHref;
-      const map = { fr: frHref, en: enHref, de: deHref };
+      const map = { fr : frHref, en : enHref, de : deHref };
       const target = map[next as keyof typeof map];
       if (target) {
         window.location.href = target;

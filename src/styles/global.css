@@ -25,7 +25,7 @@
   --shadow-md:       0 8px 24px rgba(62, 33, 10, 0.11);
   --shadow-lg:       0 16px 44px rgba(62, 33, 10, 0.14);
   --shadow-glow:     0 0 0 1px rgba(61, 139, 55, 0.12), 0 12px 34px rgba(61, 139, 55, 0.18);
-  --navbar-bg-scrolled: rgba(252, 250, 246, 0.88);
+  --navbar-bg-scrolled : rgba(252, 250, 246, 0.88);
   --navbar-bg-glass:    rgba(253, 252, 249, 0.92);
   --radius-sm:       0.5rem;
   --radius-md:       0.875rem;
@@ -72,12 +72,12 @@
   --shadow-md:       0 8px 24px rgba(0, 0, 0, 0.45);
   --shadow-lg:       0 16px 44px rgba(0, 0, 0, 0.55);
   --shadow-glow:     0 0 0 1px rgba(90, 178, 84, 0.15), 0 12px 34px rgba(90, 178, 84, 0.22);
-  --navbar-bg-scrolled: rgba(28, 26, 22, 0.90);
+  --navbar-bg-scrolled : rgba(28, 26, 22, 0.90);
   --navbar-bg-glass:    rgba(34, 31, 25, 0.92);
 }
 
 /* ─── RESET ─────────────────────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after { box-sizing : border-box; }
 html {
   scroll-behavior: smooth;
   color-scheme: light;
@@ -102,7 +102,7 @@ body {
     radial-gradient(circle at 12% -12%, rgba(61, 139, 55, 0.08), transparent 30%),
     radial-gradient(circle at 100% 0%, rgba(240, 160, 80, 0.10), transparent 34%),
     var(--bg);
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing : antialiased;
   position: relative;
   transition: background-color 260ms ease, color 260ms ease;
 }
@@ -146,7 +146,7 @@ summary:focus-visible {
   outline: 2px solid var(--green);
   outline-offset: 2px;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; display : block; }
 h1, h2, h3, h4 {
   margin: 0;
   font-family: var(--font-display);
@@ -156,7 +156,7 @@ h1, h2, h3, h4 {
   color: var(--text-main);
 }
 p, ul, ol { margin: 0; }
-main { display: block; padding-top: var(--navbar-h); }
+main { display : block; padding-top : var(--navbar-h); }
 
 /*
  * Offset des ancres : quand on clique sur un lien du sommaire (#mon-titre),
@@ -179,7 +179,7 @@ main { display: block; padding-top: var(--navbar-h); }
   margin: 0 auto;
 }
 @media (max-width: 680px) {
-  .container { width: min(var(--container), calc(100% - 1.25rem)); }
+  .container { width : min(var(--container), calc(100% - 1.25rem)); }
 }
 
 /* ─── EYEBROW ─────────────────────────────────────────────────── */
@@ -360,7 +360,7 @@ main { display: block; padding-top: var(--navbar-h); }
     transparent
   );
 }
-.section-divider--editorial::after { direction: rtl; }
+.section-divider--editorial::after { direction : rtl; }
 .section-divider--editorial > span {
   display: inline-block;
   width: 7px;
@@ -519,7 +519,7 @@ main { display: block; padding-top: var(--navbar-h); }
   line-height: 1.4;
 }
 @media (max-width: 540px) {
-  .stat + .stat::before { display: none; }
+  .stat + .stat::before { display : none; }
   .stats-row { gap: 0.75rem; }
 }
 
@@ -629,7 +629,7 @@ main { display: block; padding-top: var(--navbar-h); }
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(61, 139, 55, 0.28);
 }
-.button-primary:active { transform: scale(0.97); }
+.button-primary:active { transform : scale(0.97); }
 
 .button-secondary {
   border: 1.5px solid var(--border-strong);
@@ -641,7 +641,7 @@ main { display: block; padding-top: var(--navbar-h); }
   background: var(--green-light);
   transform: translateY(-2px);
 }
-.button-secondary:active { transform: scale(0.97); }
+.button-secondary:active { transform : scale(0.97); }
 
 /* ─── SURFACE PANEL ──────────────────────────────────────────── */
 .surface-panel {
@@ -667,7 +667,7 @@ main { display: block; padding-top: var(--navbar-h); }
 
 /* <main tabindex="-1"> est rendu focusable pour le skip-link, mais on n'affiche
    pas d'outline visuelle (le focus visible cible un élément structurel non
-   interactif — l'outline polluerait l'UI). Les éléments réellement interactifs
+   interactif: l'outline polluerait l'UI). Les éléments réellement interactifs
    à l'intérieur gardent leur :focus-visible. */
 main[tabindex="-1"]:focus {
   outline: none;
@@ -710,22 +710,22 @@ main[tabindex="-1"]:focus {
 }
 
 /* Parallaxe scroll-driven (CSS natif, fallback silencieux) */
-@supports (animation-timeline: scroll()) {
+@supports (animation-timeline : scroll()) {
   .parallax-slow {
     animation: parallaxRise linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
   }
   @keyframes parallaxRise {
-    from { transform: translateY(32px); opacity: 0.65; }
-    to   { transform: translateY(0);    opacity: 1; }
+    from { transform : translateY(32px); opacity: 0.65; }
+    to   { transform : translateY(0);    opacity: 1; }
   }
 }
 
 /* ─── SCROLLBAR ───────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 7px; }
-::-webkit-scrollbar-track { background: var(--bg-warm); }
-::-webkit-scrollbar-thumb { background: rgba(61,139,55,0.3); border-radius: 999px; }
+::-webkit-scrollbar-track { background : var(--bg-warm); }
+::-webkit-scrollbar-thumb { background : rgba(61,139,55,0.3); border-radius: 999px; }
 
 /* ─── TABLEAUX (articles markdown, toutes langues) ────────────── */
 .article-body table {
@@ -806,16 +806,16 @@ main[tabindex="-1"]:focus {
   overflow-y: hidden;
   max-width: 100%;
   padding: 0.35rem 0;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling : touch;
 }
 .article-body .katex {
   font-size: 1.05em;
 }
 
 /* ─── SELECTION ───────────────────────────────────────────────── */
-::selection { background: rgba(61, 139, 55, 0.18); }
+::selection { background : rgba(61, 139, 55, 0.18); }
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion : reduce) {
   html {
     scroll-behavior: auto;
   }

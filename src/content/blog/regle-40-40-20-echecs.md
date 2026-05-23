@@ -29,7 +29,7 @@ C'est probablement la pire façon d'utiliser ton temps de travail aux échecs.
 
 La règle 40-40-20 est une heuristique popularisée parmi les entraîneurs et les joueurs en progression : **40 % du temps d'entraînement consacré à la tactique, 40 % aux finales, 20 % aux ouvertures**. Elle renverse complètement la répartition spontanée de la majorité des joueurs amateurs, qui passent l'essentiel de leur temps sur les ouvertures, ensuite sur la tactique, et à peine sur les finales.
 
-Ce n'est pas un dogme. C'est une hypothèse solide. Et pour comprendre pourquoi elle est solide, il faut comprendre ce que la recherche sur l'expertise aux échecs a mis des décennies à démonter. (La mécanique cognitive qui rend cette répartition rationnelle — chunks, métacognition, transfert — est détaillée dans [les échecs et les mathématiques](/blog/les-echecs-et-les-mathematiques/) ; la posture mentale qui détermine si tu en profites vraiment, dans [la psychologie du joueur](/blog/psychologie-du-joueur-d-echecs/).)
+Ce n'est pas un dogme. C'est une hypothèse solide. Et pour comprendre pourquoi elle est solide, il faut comprendre ce que la recherche sur l'expertise aux échecs a mis des décennies à démonter. (La mécanique cognitive qui rend cette répartition rationnelle (chunks, métacognition, transfert) est détaillée dans [les échecs et les mathématiques](/blog/les-echecs-et-les-mathematiques/) ; la posture mentale qui détermine si tu en profites vraiment, dans [la psychologie du joueur](/blog/psychologie-du-joueur-d-echecs/).)
 
 ## Pourquoi la répartition spontanée est contre-productive
 
@@ -200,5 +200,5 @@ Pour approfondir les idées développées dans cet article :
 - **de Groot, A. D. (1965).** - *Thought and Choice in Chess.* Mouton. (Première étude systématique sur la pensée des joueurs d'échecs, base de toutes les recherches cognitives ultérieures sur le jeu.)
 - **Nunn, J. (1998).** - *Secrets of Practical Chess.* Gambit Publications. (Approche pragmatique de l'entraînement et de la gestion des erreurs ; discussion sur la surévaluation des ouvertures à bas niveau.)
 - **Dvoretsky, M., & Yusupov, A. (1991).** - *Technique for the Tournament Player.* Batsford. (Méthode d'entraînement intensif centrée sur la tactique et les finales ; référence pour l'entraînement structuré des joueurs en progression.)
-- **Rowson, J. (2005).** - *Chess for Zebras: Thinking Differently about Black and White.* Gambit Publications. (Réflexion sur les biais cognitifs dans l'apprentissage des échecs et les limites des conseils d'entraînement génériques.)
+- **Rowson, J. (2005).** - *Chess for Zebras : Thinking Differently about Black and White.* Gambit Publications. (Réflexion sur les biais cognitifs dans l'apprentissage des échecs et les limites des conseils d'entraînement génériques.)
 - **Fine, R. (1941).** - *Basic Chess Endings.* McKay. (Référence classique sur les finales ; première phrase de l'introduction : l'étude des finales est le fondement de la progression aux échecs.)

@@ -30,7 +30,12 @@ const SCAN_DIRS = [
   { dir: "src/layouts", ext: /\.astro$/i },
   { dir: "src/data", ext: /\.ts$/i },
   { dir: "src/i18n", ext: /\.ts$/i },
+  { dir: "src/styles", ext: /\.css$/i },
+  { dir: "motion-canvas/src", ext: /\.tsx?$/i },
 ];
+
+/** Fichiers à la racine de src/ (hors sous-dossiers scannés ci-dessus). */
+const SCAN_SRC_ROOT_FILES = ["src/content.config.ts"];
 
 /** Collecte les chemins relatifs à traiter (dédupliqués). */
 function collectScanFiles() {
@@ -55,6 +60,13 @@ function collectScanFiles() {
       }
     }
   }
+  for (const rel of SCAN_SRC_ROOT_FILES) {
+    const abs = path.join(root, rel);
+    if (fs.existsSync(abs) && !seen.has(rel)) {
+      seen.add(rel);
+      out.push(rel);
+    }
+  }
   return out.sort();
 }
 
@@ -77,6 +89,8 @@ export function stripEmDash(text) {
     ", $1",
   );
 
+  // « chiffre — mot » (ex. « Version 1 — résumé ») → virgule (évite « 1: » en YAML)
+  s = s.replace(/(\d) — ([a-zàâäéèêëïîôùûüç])/g, "$1, $2");
   // « — » suivi d'une minuscule : annonce une explication → « : »
   s = s.replace(/ — ([a-zàâäéèêëïîôùûüç])/g, ": $1");
   // « — » suivi d'une majuscule : reprise/apposition → « , »
@@ -175,6 +189,8 @@ function processFileSafe(absPath, dry) {
   let after;
   if (/\.astro$/i.test(absPath)) {
     after = stripEmDashPreservingCssContent(before);
+  } else if (/\.tsx$/i.test(absPath)) {
+    after = stripEmDash(before);
   } else if (/\.ts$/i.test(absPath)) {
     after = stripEmDashInTsStrings(before);
   } else {

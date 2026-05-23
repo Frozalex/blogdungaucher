@@ -25,7 +25,7 @@ export const theme = {
   societeAccent: "#a76b9e",
   grandOralAccent: "#d4a85b",
 
-  // Échiquier — palette éditoriale, plus douce que les bois classiques
+  // Échiquier : palette éditoriale, plus douce que les bois classiques
   boardLight: "#e8d9b8",
   boardDark: "#a98763",
   boardBorder: "#1e1e1e",

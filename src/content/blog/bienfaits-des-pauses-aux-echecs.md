@@ -125,7 +125,7 @@ Non. C'est l'erreur la plus courante. Une partie rapide sollicite **exactement l
 
 ### Faut-il prendre des pauses longues même quand on progresse bien ?
 
-Surtout quand tu progresses bien. Le système dopaminergique se désensibilise plus vite quand la récompense est régulière (progression visible) — c'est le paradoxe du "burnout des bons élèves". Les joueurs qui progressent vite jusqu'à 1800-2000 Elo et abandonnent souvent ensuite sont ceux qui n'ont jamais pris de pause structurée. Une pause de 5-7 jours tous les 2-3 mois maintient la motivation intrinsèque sur plusieurs années.
+Surtout quand tu progresses bien. Le système dopaminergique se désensibilise plus vite quand la récompense est régulière (progression visible): c'est le paradoxe du "burnout des bons élèves". Les joueurs qui progressent vite jusqu'à 1800-2000 Elo et abandonnent souvent ensuite sont ceux qui n'ont jamais pris de pause structurée. Une pause de 5-7 jours tous les 2-3 mois maintient la motivation intrinsèque sur plusieurs années.
 
 ### Le café aide-t-il vraiment à compenser la fatigue ?
 
@@ -144,8 +144,8 @@ Surtout quand tu progresses bien. Le système dopaminergique se désensibilise p
 
 ### Sources et références
 
-- **Walker, M.** *Why We Sleep: Unlocking the Power of Sleep and Dreams.* Scribner, 2017. (Rôle du sommeil dans la consolidation mémorielle et la performance cognitive.)
+- **Walker, M.** *Why We Sleep : Unlocking the Power of Sleep and Dreams.* Scribner, 2017. (Rôle du sommeil dans la consolidation mémorielle et la performance cognitive.)
 - **Stickgold, R., & Walker, M. P.** [*Sleep-Dependent Memory Consolidation and Reconsolidation.*](https://www.nature.com/articles/nn1469) Nature Neuroscience, 8(4), 381-388, 2005. (La consolidation mémorielle pendant le sommeil et ses mécanismes.)
 - **Marcora, S. M., Staiano, W., & Manning, V.** [*Mental Fatigue Impairs Physical Performance in Humans.*](https://pubmed.ncbi.nlm.nih.gov/19196901/) Journal of Applied Physiology, 106(3), 857-864, 2009. (La fatigue cognitive et ses effets mesurés sur la performance.)
 - **Sonnentag, S.** [*Psychological Detachment from Work during Leisure Time.*](https://pubmed.ncbi.nlm.nih.gov/23587718/) Current Directions in Psychological Science, 21(2), 114-118, 2012. (Bénéfices des pauses et du détachement psychologique sur la récupération.)
-- **Cepeda, N. J., et al.** [*Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis.*](https://pubmed.ncbi.nlm.nih.gov/16719566/) Psychological Bulletin, 132(3), 354-380, 2006. (L'effet d'espacement et la supériorité de la pratique distribuée sur la pratique massée.)
+- **Cepeda, N. J., et al.** [*Distributed Practice in Verbal Recall Tasks : A Review and Quantitative Synthesis.*](https://pubmed.ncbi.nlm.nih.gov/16719566/) Psychological Bulletin, 132(3), 354-380, 2006. (L'effet d'espacement et la supériorité de la pratique distribuée sur la pratique massée.)

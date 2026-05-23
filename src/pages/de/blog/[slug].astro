@@ -37,7 +37,7 @@ import { isPublicAssetAvailable } from "../../../utils/public-asset";
 
 export async function getStaticPaths() {
   const posts = filterPostsForLang(await getAllPosts(), "de");
-  return posts.map((post) => ({ params: { slug: getPostSlug(post) }, props: { post } }));
+  return posts.map((post) => ({ params: { slug : getPostSlug(post) }, props: { post } }));
 }
 
 const { post } = Astro.props;
@@ -53,9 +53,9 @@ const stripInlineFaq = faqsForDisplay.length > 0;
 const mdSource = germanMarkdown ?? post.body;
 const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
 
-let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
-let headings: Awaited<ReturnType<typeof render>>["headings"];
-let germanHtml: string | undefined;
+let Content : Awaited<ReturnType<typeof render>>["Content"] | undefined;
+let headings : Awaited<ReturnType<typeof render>>["headings"];
+let germanHtml : string | undefined;
 
 if (germanMarkdown) {
   const rendered = stripInlineFaq
@@ -104,11 +104,11 @@ const displayExcerpt = deEntry?.data?.excerpt ?? post.data.excerpt;
 const hasDeTranslation = !!deEntry;
 
 const structuredData = [
-  buildArticleJsonLd(post, { lang: "de", headline: deTitle, description: deDesc }),
+  buildArticleJsonLd(post, { lang : "de", headline : deTitle, description : deDesc }),
   buildBreadcrumbJsonLd([
-    { name: "Startseite", path: "/de/" },
-    { name: "Artikel", path: "/de/blog/" },
-    { name: displayTitle, path: postUrlDe },
+    { name : "Startseite", path : "/de/" },
+    { name : "Artikel", path : "/de/blog/" },
+    { name : displayTitle, path : postUrlDe },
   ]),
   ...(faqsForDisplay.length > 0 ? [buildFaqJsonLd(faqsForDisplay)] : []),
 ];
@@ -143,10 +143,10 @@ const otherPillars = categorySlugs
       <div class="article-main">
 
         <Breadcrumb items={[
-          { label: "Startseite", href: "/de/" },
-          { label: "Artikel", href: "/de/blog/" },
-          { label: category.label, href: categoryHrefDe },
-          { label: displayTitle },
+          { label : "Startseite", href : "/de/" },
+          { label : "Artikel", href : "/de/blog/" },
+          { label : category.label, href : categoryHrefDe },
+          { label : displayTitle },
         ]} />
 
         <header class="article-header fade-up" style="--motion-delay: 40ms;">
@@ -298,7 +298,7 @@ const otherPillars = categorySlugs
     line-height: 1.5;
     margin-bottom: 1.5rem;
   }
-  .translation-notice svg { flex-shrink: 0; margin-top: 0.1rem; color: var(--green); }
+  .translation-notice svg { flex-shrink: 0; margin-top: 0.1rem; color : var(--green); }
 
   .article-page  { padding: 3rem 0 2rem; }
 
@@ -376,9 +376,9 @@ const otherPillars = categorySlugs
     background: color-mix(in srgb, var(--surface-warm) 70%, transparent);
   }
 
-  .credit-piece { white-space: nowrap; }
-  .credit-link { color: var(--green); font-weight: 700; text-decoration: none; }
-  .credit-link:hover { text-decoration: underline; }
+  .credit-piece { white-space : nowrap; }
+  .credit-link { color : var(--green); font-weight: 700; text-decoration : none; }
+  .credit-link:hover { text-decoration : underline; }
 
   .article-meta {
     display: flex;
@@ -404,7 +404,7 @@ const otherPillars = categorySlugs
     text-transform: uppercase;
     transition: background 150ms ease;
   }
-  .meta-cat:hover { background: var(--c); color: #fff; }
+  .meta-cat:hover { background : var(--c); color: #fff; }
 
   .article-header h1 {
     font-family: var(--font-serif);
@@ -441,10 +441,10 @@ const otherPillars = categorySlugs
     color: var(--text-muted);
     line-height: 1;
   }
-  .meta-updated svg { flex-shrink: 0; color: var(--c); opacity: 0.85; }
-  .meta-updated time { font-weight: 600; color: var(--text-main); }
+  .meta-updated svg { flex-shrink: 0; color : var(--c); opacity: 0.85; }
+  .meta-updated time { font-weight: 600; color : var(--text-main); }
 
-  /* corps — pas de card : le texte respire directement sur le fond page */
+  /* corps : pas de card : le texte respire directement sur le fond page */
   .article-body {
     padding: 2rem 0;
   }
@@ -464,7 +464,7 @@ const otherPillars = categorySlugs
     color: var(--text-main);
   }
   .article-body :global(p),
-  .article-body :global(li) { color: var(--text-muted); line-height: 1.75; }
+  .article-body :global(li) { color : var(--text-muted); line-height: 1.75; }
   .article-body :global(p:first-of-type)::first-letter {
     font-family: var(--font-serif);
     font-style: italic;
@@ -475,14 +475,14 @@ const otherPillars = categorySlugs
     padding: 0.22rem 0.6rem 0 0;
     color: var(--c);
   }
-  .article-body :global(li::marker) { color: color-mix(in srgb, var(--c) 55%, var(--text-dim)); }
+  .article-body :global(li::marker) { color : color-mix(in srgb, var(--c) 55%, var(--text-dim)); }
   .article-body :global(p + p),
   .article-body :global(p + ul),
   .article-body :global(ul + p) { margin-top: 0.85rem; }
   .article-body :global(ul),
   .article-body :global(ol)   { padding-left: 1.2rem; }
   .article-body :global(li + li) { margin-top: 0.3rem; }
-  .article-body :global(strong) { color: var(--text-main); }
+  .article-body :global(strong) { color : var(--text-main); }
   .article-body :global(a) {
     color: var(--c);
     font-weight: 600;
@@ -524,7 +524,7 @@ const otherPillars = categorySlugs
     color: var(--text-main);
     font-style: italic;
   }
-  .article-body :global(hr) { border: none; border-top: 1px solid var(--border-soft); margin: 1.5rem 0; }
+  .article-body :global(hr) { border : none; border-top: 1px solid var(--border-soft); margin: 1.5rem 0; }
   .article-body :global(code) {
     font-size: 0.88em;
     padding: 0.15em 0.4em;
@@ -597,7 +597,7 @@ const otherPillars = categorySlugs
     margin-bottom: 0.7rem;
   }
   .aside-card h2 { font-size: 1rem; margin-bottom: 0.4rem; }
-  .aside-card p  { color: var(--text-muted); font-size: 0.86rem; line-height: 1.6; }
+  .aside-card p  { color : var(--text-muted); font-size: 0.86rem; line-height: 1.6; }
   .aside-link {
     display: inline-flex;
     align-items: center;
@@ -670,7 +670,7 @@ const otherPillars = categorySlugs
     color: var(--text-dim);
     line-height: 1.5;
   }
-  .pillar-link svg { flex-shrink: 0; color: var(--pc); margin-top: 0.25rem; }
+  .pillar-link svg { flex-shrink: 0; color : var(--pc); margin-top: 0.25rem; }
 
   /* related */
   .related { padding: 1rem 0 4.5rem; }
@@ -682,11 +682,11 @@ const otherPillars = categorySlugs
   }
 
   @media (max-width: 900px) {
-    .reading-progress { display: none; }
+    .reading-progress { display : none; }
     .article-layout { grid-template-columns: 1fr; }
-    .article-aside  { position: static; }
-    .toc-mobile-wrap { display: block; }
-    .toc-desktop-wrap { display: none; }
+    .article-aside  { position : static; }
+    .toc-mobile-wrap { display : block; }
+    .toc-desktop-wrap { display : none; }
   }
 </style>
 
@@ -718,7 +718,7 @@ const otherPillars = categorySlugs
       progressFill.style.height = `${(clamped * 100).toFixed(2)}%`;
     };
 
-    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive : true });
     window.addEventListener("resize", onScroll);
     onScroll();
 
