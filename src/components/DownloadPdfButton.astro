@@ -115,19 +115,49 @@ const { title, slug, label = "Télécharger en PDF" } = Astro.props as {
         // Lazy load (≈250 KB) seulement au premier clic.
         const { default: html2pdf } = await import('html2pdf.js');
 
-        // Construction du clone à imprimer (article + titre, sans nav/footer/aside).
+        // On cible uniquement le CONTENU rédigé de l'article, pas la page.
+        // Stratégie : prendre l'article complet, puis retirer tout ce qui n'est
+        // pas le corps du texte (en-tête article, hero, méta, vidéos, etc.).
         const article = document.querySelector('article.article-page');
         if (!article) throw new Error('Article introuvable sur la page.');
 
         const clone = article.cloneNode(true) as HTMLElement;
 
-        // Retirer les éléments parasites du clone.
-        clone.querySelectorAll(
-          '[data-no-print], .share, .comments, .related-posts, .ad-banner, ' +
-          '.article-aside, .toc-desktop-wrap, .toc-mobile, aside, .breadcrumb, ' +
-          '.summary-video-wrap, .article-video, .remotion-player, .video-player, ' +
-          '.reading-progress'
-        ).forEach((el) => el.remove());
+        // Retirer tout ce qui n'est pas le corps du texte rédigé.
+        clone.querySelectorAll([
+          '[data-no-print]',
+          '.share', '.comments', '.related-posts', '.ad-banner',
+          '.article-aside', '.toc-desktop-wrap', '.toc-mobile',
+          'aside', '.breadcrumb',
+          '.summary-video-wrap', '.article-video', '.remotion-player', '.video-player',
+          '.reading-progress',
+          // Spécifique : retirer l'en-tête article (titre, méta, tags, breadcrumb)
+          '.article-header',
+          // Retirer les images hero et figures décoratives
+          '.hero-media', 'figure.hero-media',
+          // Retirer la navigation finale "rubriques" et les blocs FAQ rendus
+          '.article-nav', '.faq-section',
+        ].join(', ')).forEach((el) => el.remove());
+
+        // Retirer le premier blockquote (instructions de téléchargement PDF, redondant).
+        const firstBlockquote = clone.querySelector('blockquote');
+        if (firstBlockquote && firstBlockquote.textContent?.includes('Télécharger')) {
+          firstBlockquote.remove();
+        }
+
+        // Retirer le dernier blockquote (liens "Pour aller plus loin", décoratif).
+        const blockquotes = clone.querySelectorAll('blockquote');
+        const lastBq = blockquotes[blockquotes.length - 1];
+        if (lastBq && lastBq.textContent?.includes('Pour aller plus loin')) {
+          lastBq.remove();
+        }
+
+        // Retirer les <hr> isolés (séparateurs visuels) entourant les blocs supprimés.
+        clone.querySelectorAll('hr').forEach((hr, idx, arr) => {
+          // Garder uniquement les hr qui séparent des sections de texte
+          // (heuristique : retirer le premier et le dernier hr).
+          if (idx === 0 || idx === arr.length - 1) hr.remove();
+        });
 
         // Convertir les URLs relatives en absolues (pour les liens dans le PDF).
         const baseUrl = window.location.origin;
@@ -142,26 +172,26 @@ const { title, slug, label = "Télécharger en PDF" } = Astro.props as {
         wrapper.style.cssText = [
           'background: #fff',
           'color: #111',
-          'padding: 0 8mm',
+          'padding: 0',
           'font-family: Georgia, "Times New Roman", serif',
           'font-size: 11pt',
-          'line-height: 1.5',
+          'line-height: 1.55',
           'width: 100%',
           'max-width: 190mm',
         ].join(';');
 
-        // En-tête PDF (titre + URL + branding).
-        const header = document.createElement('div');
-        header.style.cssText = 'margin: 0 0 8mm; padding: 0 0 4mm; border-bottom: 1px solid #ccc; font-size: 9pt; color: #555;';
-        header.innerHTML = `<div><strong>Blog d'un Gaucher</strong> · blogdungaucher.com</div><div style="margin-top: 2mm;">${window.location.href}</div>`;
-        wrapper.appendChild(header);
+        // Titre épuré en tête du PDF.
+        const titleEl = document.createElement('h1');
+        titleEl.style.cssText = 'font-size: 18pt; color: #111; margin: 0 0 8mm; line-height: 1.25; font-weight: 700;';
+        titleEl.textContent = title;
+        wrapper.appendChild(titleEl);
 
         wrapper.appendChild(clone);
 
-        // Pied de page (mention licence).
+        // Pied de page minimal (juste l'URL source).
         const footer = document.createElement('div');
-        footer.style.cssText = 'margin: 10mm 0 0; padding: 4mm 0 0; border-top: 1px solid #ccc; font-size: 8pt; color: #777; text-align: center;';
-        footer.innerHTML = 'Document généré depuis blogdungaucher.com — librement utilisable à des fins pédagogiques.';
+        footer.style.cssText = 'margin: 12mm 0 0; padding: 3mm 0 0; border-top: 1px solid #ddd; font-size: 8pt; color: #888; text-align: center;';
+        footer.innerHTML = `Source : <a href="${window.location.href}" style="color:#888;text-decoration:none;">${window.location.href}</a>`;
         wrapper.appendChild(footer);
 
         // Styles d'impression injectés.
