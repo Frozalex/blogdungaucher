@@ -60,6 +60,23 @@ export async function listGuides() {
   return call('GET', '/guides');
 }
 
+export async function getGuide(guideId) {
+  return call('GET', '/guide', { query: { id: guideId } });
+}
+
+export async function waitForGuideReady(guideId, maxSec = 240) {
+  const t0 = Date.now();
+  let lastErr;
+  while ((Date.now() - t0) / 1000 < maxSec) {
+    try {
+      const r = await getGuide(guideId);
+      if (r.success && r.guide?.guide?.add && Array.isArray(r.guide.guide.add)) return r;
+    } catch (e) { lastErr = e; }
+    await new Promise((r) => setTimeout(r, 5000));
+  }
+  throw new Error(`Guide ${guideId} pas prêt après ${maxSec}s${lastErr ? ': ' + lastErr.message : ''}`);
+}
+
 export async function scoreContent(guideId, content) {
   return call('POST', '/score', { body: { guideId, content, saveToGuide: false } });
 }

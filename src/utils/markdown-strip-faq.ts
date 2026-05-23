@@ -69,8 +69,12 @@ export function stripFaqH2Section(markdown: string): string {
     children: nextChildren as MdastRoot["children"],
   };
 
-  /* remark-gfm : nécessaire pour sérialiser tableaux, strikethrough, etc. */
-  const out = unified().use(remarkStringify).use(remarkGfm).stringify(newRoot);
+  /* remark-gfm + remark-math : nécessaire pour sérialiser tableaux, maths, etc. */
+  const out = unified()
+    .use(remarkStringify)
+    .use(remarkGfm)
+    .use(remarkMath)
+    .stringify(newRoot);
   return typeof out === "string" ? out : String(out);
 }
 

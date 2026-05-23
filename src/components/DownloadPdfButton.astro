@@ -1,0 +1,81 @@
+---
+const { title, label = "Télécharger en PDF" } = Astro.props as {
+  title: string;
+  label?: string;
+};
+---
+<div class="pdf-download" data-no-print>
+  <button class="pdf-btn" id="pdf-download-btn" type="button" aria-label={`${label} : ${title}`}>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+      <polyline points="14 2 14 8 20 8"/>
+      <line x1="12" y1="18" x2="12" y2="12"/>
+      <polyline points="9 15 12 18 15 15"/>
+    </svg>
+    <span>{label}</span>
+  </button>
+  <p class="pdf-hint">Astuce : dans la boîte d'impression, choisis « Enregistrer au format PDF ».</p>
+</div>
+
+<style>
+  .pdf-download {
+    margin: 1.75rem 0;
+    padding: 1rem 1.25rem;
+    border: 1px solid color-mix(in srgb, var(--accent, #5b9fd4) 25%, transparent);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--accent, #5b9fd4) 4%, transparent);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+  }
+  .pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1rem;
+    border-radius: 8px;
+    border: 1px solid color-mix(in srgb, var(--accent, #5b9fd4) 45%, transparent);
+    background: var(--accent, #5b9fd4);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: filter 120ms ease, transform 120ms ease;
+  }
+  .pdf-btn:hover {
+    filter: brightness(1.07);
+    transform: translateY(-1px);
+  }
+  .pdf-btn:active {
+    transform: translateY(0);
+  }
+  .pdf-btn svg {
+    flex-shrink: 0;
+  }
+  .pdf-hint {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--muted, #666);
+    flex: 1 1 220px;
+  }
+
+  @media print {
+    .pdf-download { display: none !important; }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('pdf-download-btn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      document.body.classList.add('printing-pdf');
+      window.print();
+      // Nettoyage après ouverture du dialogue (ne bloque pas).
+      window.setTimeout(() => {
+        document.body.classList.remove('printing-pdf');
+      }, 500);
+    });
+  });
+</script>

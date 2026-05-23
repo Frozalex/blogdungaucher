@@ -842,3 +842,138 @@ main[tabindex="-1"]:focus {
     transform: none !important;
   }
 }
+
+/* ============================================================
+   PRINT STYLES — pour export PDF des articles (Grand Oral notamment).
+   Masque tout sauf l'article principal, et formate pour A4.
+   ============================================================ */
+@media print {
+  /* Cacher chrome global */
+  header.site-header,
+  nav.site-nav,
+  footer.site-footer,
+  .navbar,
+  .navbar-mobile,
+  .nav-rail,
+  .reading-rail,
+  .article-aside,
+  .toc-desktop-wrap,
+  .toc-mobile,
+  .share,
+  .comments,
+  .related-posts,
+  .ad-banner,
+  .home-fab,
+  .fab,
+  .skip-link,
+  .breadcrumb,
+  [data-no-print],
+  .summary-video-wrap,
+  .article-video,
+  .remotion-player,
+  .video-player {
+    display: none !important;
+  }
+
+  /* Layout simple en flux unique */
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  main, .article-page, .post-body, .article-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    grid-template-columns: 1fr !important;
+    display: block !important;
+  }
+
+  .article-page {
+    page-break-after: avoid;
+  }
+
+  h1, h2, h3, h4 {
+    color: #000 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  h1 { font-size: 22pt; }
+  h2 { font-size: 16pt; margin-top: 1.2em; }
+  h3 { font-size: 13pt; }
+
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Liens : afficher l'URL pour le PDF */
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+  .article-content a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555;
+    word-break: break-all;
+  }
+
+  /* Tableaux et code lisibles */
+  table {
+    page-break-inside: avoid;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #999;
+    padding: 4px 6px;
+  }
+  pre, code {
+    background: #f4f4f4 !important;
+    color: #000 !important;
+    page-break-inside: avoid;
+    font-size: 9pt;
+  }
+  pre {
+    border: 1px solid #ddd;
+    padding: 8px;
+    overflow: visible !important;
+    white-space: pre-wrap !important;
+  }
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Hero image gardée */
+  .hero-image, .article-hero img {
+    max-height: 12cm;
+    object-fit: contain;
+  }
+
+  /* En-tête imprimé en haut */
+  .print-header {
+    display: block !important;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.85em;
+    color: #555;
+  }
+
+  /* Page settings */
+  @page {
+    size: A4;
+    margin: 1.6cm 1.5cm;
+  }
+}
+
+/* Print header — caché à l'écran, visible à l'impression */
+.print-header {
+  display: none;
+}
+

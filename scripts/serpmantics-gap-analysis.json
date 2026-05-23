@@ -1,0 +1,7345 @@
+[
+  {
+    "slug": "echecs-alzheimer-prevention-declin-cognitif",
+    "query": "Échecs et Alzheimer",
+    "score": 23,
+    "exprGaps": [
+      {
+        "expression": "jeu",
+        "current": 29,
+        "from": 9,
+        "to": 10,
+        "status": "over",
+        "deficit": 19
+      },
+      {
+        "expression": "jeu d'echecs",
+        "current": 15,
+        "from": 8,
+        "to": 9,
+        "status": "over",
+        "deficit": 6
+      },
+      {
+        "expression": "maladie",
+        "current": 14,
+        "from": 7,
+        "to": 8,
+        "status": "over",
+        "deficit": 6
+      },
+      {
+        "expression": "etudes",
+        "current": 8,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 6
+      },
+      {
+        "expression": "article",
+        "current": 1,
+        "from": 7,
+        "to": 8,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "joueur",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "revue",
+        "current": 5,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 3
+      },
+      {
+        "expression": "etude",
+        "current": 1,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "ans",
+        "current": 4,
+        "from": 6,
+        "to": 8,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "personnes",
+        "current": 7,
+        "from": 4,
+        "to": 5,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "france",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "pratique du jeu d'echecs",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "jouer",
+        "current": 2,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "pratique du jeu",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "concentration",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "communaute",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "vie",
+        "current": 5,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "demence",
+        "current": 5,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "ete",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "developper",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "developper la maladie d'alzheimer",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "activite",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "lecture",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "apprendre",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "content",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "developper la maladie",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "jouer aux echecs",
+        "current": 1,
+        "from": 2,
+        "to": 5,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "sujet",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "reduire",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "www",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "https www",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "grace",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "competences",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "bienfaits",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "progresser",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "risques de developper la maladie",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "forme",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "renforcer",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "seniors",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "risques de developper",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "bienfaits du jeu d'echecs",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "fois moins de risques",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "demence ou la maladie",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "type",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "mots",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "atteints",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "nombre",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "prouve",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "cerveau en bonne",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "aide a prevenir",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "developper une demence",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "mentale",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "maintenir",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "fois",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "conseils",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "champion",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "exercer",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "accessible",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "apprendre au plus grand nombre",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "aidez-nous en partageant cet article",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "populariser le jeu d'echecs",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "bienfaits du jeu",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "pleine",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "champion de france",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "pleine forme",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "montre que les personnes agees",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "risques",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "coeur",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "article sur vos reseaux",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "contribuez a notre mission",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "apprendre au plus grand",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "echecs et l'apprendre",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "decouvrir",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "jours",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "mission",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "montre que les personnes",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "brain",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "healthy",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "blogs",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "mettant",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "montrant",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "remercions du fond",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "reseaux vous contribuez",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "partageant cet article",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "fond du coeur",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "populariser le jeu",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "aidez-nous en partageant",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "blog",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "mars",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "aide",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "membres",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "ameliorent",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "science",
+        "current": 3,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "echecs",
+        "current": 37,
+        "from": 36,
+        "to": 37,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "alzheimer",
+        "current": 12,
+        "from": 8,
+        "to": 15,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "cerveau",
+        "current": 6,
+        "from": 6,
+        "to": 12,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "maladie d'alzheimer",
+        "current": 6,
+        "from": 3,
+        "to": 6,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "memoire",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "activites",
+        "current": 4,
+        "from": 4,
+        "to": 5,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "personnes agees",
+        "current": 3,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "agees",
+        "current": 3,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "reseaux",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "sante",
+        "current": 4,
+        "from": 4,
+        "to": 5,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "articles",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "montre",
+        "current": 2,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "bonne",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "lire",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "pratique",
+        "current": 3,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "voir",
+        "current": 3,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "patients",
+        "current": 2,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "grand",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "org",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "https",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "partager",
+        "current": 2,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "continuer",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "types",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "adultes",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "prevenir",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "accueil",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "entretenir",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      }
+    ],
+    "structGaps": [
+      {
+        "key": "length",
+        "current": 2620,
+        "from": 1666,
+        "to": 2195,
+        "status": "over",
+        "deficit": 425
+      },
+      {
+        "key": "headings",
+        "current": 21,
+        "from": 14,
+        "to": 17,
+        "status": "over",
+        "deficit": 4
+      },
+      {
+        "key": "paragraphs",
+        "current": 25,
+        "from": 28,
+        "to": 57,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "key": "links",
+        "current": 51,
+        "from": 70,
+        "to": 71,
+        "status": "under",
+        "deficit": 19
+      },
+      {
+        "key": "linksInternal",
+        "current": 0,
+        "from": 48,
+        "to": 54,
+        "status": "under",
+        "deficit": 48
+      },
+      {
+        "key": "linksExternal",
+        "current": 0,
+        "from": 22,
+        "to": 29,
+        "status": "under",
+        "deficit": 22
+      },
+      {
+        "key": "images",
+        "current": 1,
+        "from": 13,
+        "to": 17,
+        "status": "under",
+        "deficit": 12
+      },
+      {
+        "key": "lists",
+        "current": 9,
+        "from": 6,
+        "to": 10,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "tables",
+        "current": 2,
+        "from": 0,
+        "to": 1,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "key": "videos",
+        "current": 0,
+        "from": 1,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      }
+    ]
+  },
+  {
+    "slug": "grand-oral-nsi-echecs",
+    "query": "Grand oral NSI",
+    "score": 25,
+    "exprGaps": [
+      {
+        "expression": "sujet",
+        "current": 5,
+        "from": 26,
+        "to": 32,
+        "status": "under",
+        "deficit": 21
+      },
+      {
+        "expression": "grand oral",
+        "current": 10,
+        "from": 29,
+        "to": 41,
+        "status": "under",
+        "deficit": 19
+      },
+      {
+        "expression": "grand",
+        "current": 10,
+        "from": 29,
+        "to": 42,
+        "status": "under",
+        "deficit": 19
+      },
+      {
+        "expression": "oral",
+        "current": 10,
+        "from": 29,
+        "to": 44,
+        "status": "under",
+        "deficit": 19
+      },
+      {
+        "expression": "informatique",
+        "current": 3,
+        "from": 18,
+        "to": 31,
+        "status": "under",
+        "deficit": 15
+      },
+      {
+        "expression": "programme",
+        "current": 15,
+        "from": 4,
+        "to": 5,
+        "status": "over",
+        "deficit": 10
+      },
+      {
+        "expression": "sujets",
+        "current": 1,
+        "from": 10,
+        "to": 45,
+        "status": "under",
+        "deficit": 9
+      },
+      {
+        "expression": "systemes",
+        "current": 0,
+        "from": 7,
+        "to": 10,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "expression": "reseaux sociaux",
+        "current": 0,
+        "from": 6,
+        "to": 9,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "sociaux",
+        "current": 0,
+        "from": 6,
+        "to": 9,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "idees",
+        "current": 0,
+        "from": 6,
+        "to": 15,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "complexite",
+        "current": 9,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 6
+      },
+      {
+        "expression": "securite",
+        "current": 0,
+        "from": 5,
+        "to": 6,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "temps",
+        "current": 1,
+        "from": 6,
+        "to": 18,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "terminale",
+        "current": 7,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 5
+      },
+      {
+        "expression": "idees de sujets",
+        "current": 0,
+        "from": 5,
+        "to": 14,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "informatiques",
+        "current": 0,
+        "from": 4,
+        "to": 14,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "enjeux",
+        "current": 0,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "limites",
+        "current": 0,
+        "from": 4,
+        "to": 7,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "langages",
+        "current": 0,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "question",
+        "current": 0,
+        "from": 4,
+        "to": 11,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "revolutionner",
+        "current": 0,
+        "from": 4,
+        "to": 10,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "nouvelle",
+        "current": 6,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 4
+      },
+      {
+        "expression": "reseaux",
+        "current": 5,
+        "from": 8,
+        "to": 9,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "vie",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "numeriques",
+        "current": 0,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "impact",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "est-il",
+        "current": 1,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "fonctionnement",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "internet",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "exemples",
+        "current": 1,
+        "from": 4,
+        "to": 7,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "non",
+        "current": 6,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 3
+      },
+      {
+        "expression": "epreuve",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "concrets",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "choix",
+        "current": 0,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "preparation",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "peut-on",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "expliquer",
+        "current": 1,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "traitement",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "prendre",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "personnelles",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "reconnaissance",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "surveillance",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "difference",
+        "current": 4,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "utiliser",
+        "current": 1,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "domaine",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "sont-ils",
+        "current": 1,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "mathematiques",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "entreprises",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "utilisation",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "specialite",
+        "current": 3,
+        "from": 5,
+        "to": 12,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "donnees personnelles",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "bac",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "algorithmique",
+        "current": 6,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "ethiques",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "choisir",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "capacite",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "developpement",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "gestion",
+        "current": 1,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "orientation",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "proteger",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "reflexion",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "choisi",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "echange",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "cryptographie",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "communication",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "outils",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "fin",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "langage",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "efficacite",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "permettent-ils",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "biais algorithmiques",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "reconnaissance faciale",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "biais",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "algorithmiques",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "faciale",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "numerique",
+        "current": 3,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "intelligence artificielle",
+        "current": 5,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "artificielle",
+        "current": 5,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "presentation",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "implications",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "technologiques",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "transforment-ils",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "maniere",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "histoire",
+        "current": 2,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "connaissances",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "conseils",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "probleme",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "specialites",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "problematique",
+        "current": 1,
+        "from": 2,
+        "to": 5,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "argumentation",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "trouver",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "outil",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "vraiment",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "sociales",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "desinformation",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "projet",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "complexes",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "permettent",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "consommation",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "prise",
+        "current": 1,
+        "from": 2,
+        "to": 5,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "bases de donnees",
+        "current": 3,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "bases",
+        "current": 3,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "donnees",
+        "current": 24,
+        "from": 19,
+        "to": 41,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "nsi",
+        "current": 35,
+        "from": 19,
+        "to": 61,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "questions",
+        "current": 6,
+        "from": 6,
+        "to": 7,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "intelligence",
+        "current": 6,
+        "from": 3,
+        "to": 6,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "analyser",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "decision",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "machine",
+        "current": 3,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "grand oral nsi",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "lien",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "articles",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "oral nsi",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "jury",
+        "current": 12,
+        "from": 6,
+        "to": 20,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "passe",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "sujet de grand oral",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "algorithmes",
+        "current": 6,
+        "from": 6,
+        "to": 15,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "medecine",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "structures de donnees",
+        "current": 6,
+        "from": 3,
+        "to": 6,
+        "status": "ok",
+        "deficit": 0
+      }
+    ],
+    "structGaps": [
+      {
+        "key": "length",
+        "current": 4172,
+        "from": 2925,
+        "to": 3214,
+        "status": "over",
+        "deficit": 958
+      },
+      {
+        "key": "headings",
+        "current": 30,
+        "from": 21,
+        "to": 60,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "paragraphs",
+        "current": 50,
+        "from": 95,
+        "to": 101,
+        "status": "under",
+        "deficit": 45
+      },
+      {
+        "key": "links",
+        "current": 46,
+        "from": 32,
+        "to": 92,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "linksInternal",
+        "current": 0,
+        "from": 16,
+        "to": 80,
+        "status": "under",
+        "deficit": 16
+      },
+      {
+        "key": "linksExternal",
+        "current": 0,
+        "from": 12,
+        "to": 12,
+        "status": "under",
+        "deficit": 12
+      },
+      {
+        "key": "images",
+        "current": 0,
+        "from": 7,
+        "to": 29,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "key": "lists",
+        "current": 14,
+        "from": 15,
+        "to": 20,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "key": "tables",
+        "current": 1,
+        "from": 0,
+        "to": 1,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "videos",
+        "current": 0,
+        "from": 0,
+        "to": 1,
+        "status": "ok",
+        "deficit": 0
+      }
+    ]
+  },
+  {
+    "slug": "guide-grand-oral-echecs-ses-hggsp",
+    "query": "Guide Grand Oral SES HGGSP Échecs 2026",
+    "score": 33,
+    "exprGaps": [
+      {
+        "expression": "power",
+        "current": 51,
+        "from": 2,
+        "to": 6,
+        "status": "over",
+        "deficit": 45
+      },
+      {
+        "expression": "soft power",
+        "current": 41,
+        "from": 2,
+        "to": 6,
+        "status": "over",
+        "deficit": 35
+      },
+      {
+        "expression": "sujet",
+        "current": 1,
+        "from": 29,
+        "to": 47,
+        "status": "under",
+        "deficit": 28
+      },
+      {
+        "expression": "sujets",
+        "current": 0,
+        "from": 24,
+        "to": 34,
+        "status": "under",
+        "deficit": 24
+      },
+      {
+        "expression": "bac",
+        "current": 0,
+        "from": 20,
+        "to": 42,
+        "status": "under",
+        "deficit": 20
+      },
+      {
+        "expression": "oral",
+        "current": 10,
+        "from": 25,
+        "to": 28,
+        "status": "under",
+        "deficit": 15
+      },
+      {
+        "expression": "grand oral",
+        "current": 10,
+        "from": 23,
+        "to": 24,
+        "status": "under",
+        "deficit": 13
+      },
+      {
+        "expression": "grand",
+        "current": 11,
+        "from": 23,
+        "to": 24,
+        "status": "under",
+        "deficit": 12
+      },
+      {
+        "expression": "conflits",
+        "current": 0,
+        "from": 12,
+        "to": 24,
+        "status": "under",
+        "deficit": 12
+      },
+      {
+        "expression": "epreuve",
+        "current": 0,
+        "from": 11,
+        "to": 22,
+        "status": "under",
+        "deficit": 11
+      },
+      {
+        "expression": "cours",
+        "current": 0,
+        "from": 11,
+        "to": 13,
+        "status": "under",
+        "deficit": 11
+      },
+      {
+        "expression": "hggsp",
+        "current": 16,
+        "from": 26,
+        "to": 32,
+        "status": "under",
+        "deficit": 10
+      },
+      {
+        "expression": "idees",
+        "current": 0,
+        "from": 9,
+        "to": 16,
+        "status": "under",
+        "deficit": 9
+      },
+      {
+        "expression": "economique",
+        "current": 11,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 8
+      },
+      {
+        "expression": "theme",
+        "current": 4,
+        "from": 11,
+        "to": 19,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "expression": "histoire",
+        "current": 1,
+        "from": 8,
+        "to": 14,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "expression": "memoire",
+        "current": 2,
+        "from": 9,
+        "to": 15,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "expression": "fiches",
+        "current": 0,
+        "from": 7,
+        "to": 11,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "expression": "conseils",
+        "current": 0,
+        "from": 6,
+        "to": 11,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "guerre",
+        "current": 5,
+        "from": 11,
+        "to": 21,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "jour",
+        "current": 0,
+        "from": 6,
+        "to": 9,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "specialites",
+        "current": 0,
+        "from": 6,
+        "to": 9,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "patrimoine",
+        "current": 0,
+        "from": 6,
+        "to": 8,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "etat",
+        "current": 8,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 6
+      },
+      {
+        "expression": "specialite",
+        "current": 2,
+        "from": 7,
+        "to": 10,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "exemples",
+        "current": 0,
+        "from": 5,
+        "to": 7,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "maths",
+        "current": 0,
+        "from": 5,
+        "to": 7,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "preparation",
+        "current": 2,
+        "from": 7,
+        "to": 8,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "enjeux",
+        "current": 1,
+        "from": 6,
+        "to": 18,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "idees de sujets",
+        "current": 0,
+        "from": 5,
+        "to": 14,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "preparer",
+        "current": 0,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "orientation",
+        "current": 0,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "specialite hggsp",
+        "current": 0,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "juin",
+        "current": 0,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "monde",
+        "current": 7,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 4
+      },
+      {
+        "expression": "problematique",
+        "current": 15,
+        "from": 7,
+        "to": 11,
+        "status": "over",
+        "deficit": 4
+      },
+      {
+        "expression": "onu",
+        "current": 0,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "revision",
+        "current": 0,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "lycee",
+        "current": 0,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "annee",
+        "current": 1,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "generale",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "france",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "geopolitique",
+        "current": 7,
+        "from": 10,
+        "to": 15,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "sciences",
+        "current": 1,
+        "from": 4,
+        "to": 8,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "article",
+        "current": 0,
+        "from": 3,
+        "to": 11,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "construction",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "peut-elle",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "maniere",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "mondiale",
+        "current": 2,
+        "from": 5,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "physique-chimie",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "presentation",
+        "current": 0,
+        "from": 3,
+        "to": 7,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "pays",
+        "current": 7,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 3
+      },
+      {
+        "expression": "methode",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "min",
+        "current": 3,
+        "from": 6,
+        "to": 9,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "collective",
+        "current": 0,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "defis",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "matieres",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "guerres",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "relations internationales",
+        "current": 1,
+        "from": 4,
+        "to": 8,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "points",
+        "current": 1,
+        "from": 4,
+        "to": 10,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "proteger",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "puissance",
+        "current": 6,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "temps",
+        "current": 1,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "informations",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "premiere",
+        "current": 0,
+        "from": 2,
+        "to": 7,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "role",
+        "current": 4,
+        "from": 6,
+        "to": 10,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "choix",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "exemple",
+        "current": 5,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "guide",
+        "current": 5,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "enseignements de specialite",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "histoire-geographie",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "conflit",
+        "current": 0,
+        "from": 2,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "evenements",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "dates",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "seconde",
+        "current": 0,
+        "from": 2,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "questions",
+        "current": 7,
+        "from": 9,
+        "to": 13,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "sciences economiques et sociales",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "page",
+        "current": 0,
+        "from": 2,
+        "to": 7,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "diplomatie",
+        "current": 1,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "commerce",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "enseignements",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "recherche",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "economiques et sociales",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "technologique",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "securite",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "criteres",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "passe",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "sciences po",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "savoir",
+        "current": 2,
+        "from": 4,
+        "to": 7,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "ressources",
+        "current": 6,
+        "from": 4,
+        "to": 5,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "programme",
+        "current": 6,
+        "from": 7,
+        "to": 8,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "propos",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "politiques",
+        "current": 3,
+        "from": 4,
+        "to": 8,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "philosophie",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "general",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "svt",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "nationale",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "grace",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "trouver",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "mathematiques",
+        "current": 1,
+        "from": 2,
+        "to": 6,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "controle",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "strategies",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "autour",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "fiches de revision",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "ressources naturelles",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "sciences economiques",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "articles",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "politique",
+        "current": 4,
+        "from": 3,
+        "to": 5,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "fois",
+        "current": 3,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "lien",
+        "current": 4,
+        "from": 4,
+        "to": 5,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "jury",
+        "current": 12,
+        "from": 8,
+        "to": 24,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "economiques",
+        "current": 4,
+        "from": 4,
+        "to": 8,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "choisir",
+        "current": 3,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "ecole",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "etats",
+        "current": 4,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "lire",
+        "current": 3,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "sociales",
+        "current": 3,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "compte",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "cadre",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "analyser",
+        "current": 3,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      }
+    ],
+    "structGaps": [
+      {
+        "key": "length",
+        "current": 3918,
+        "from": 3970,
+        "to": 5701,
+        "status": "under",
+        "deficit": 52
+      },
+      {
+        "key": "headings",
+        "current": 14,
+        "from": 59,
+        "to": 73,
+        "status": "under",
+        "deficit": 45
+      },
+      {
+        "key": "paragraphs",
+        "current": 76,
+        "from": 64,
+        "to": 91,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "links",
+        "current": 28,
+        "from": 97,
+        "to": 182,
+        "status": "under",
+        "deficit": 69
+      },
+      {
+        "key": "linksInternal",
+        "current": 0,
+        "from": 87,
+        "to": 157,
+        "status": "under",
+        "deficit": 87
+      },
+      {
+        "key": "linksExternal",
+        "current": 0,
+        "from": 12,
+        "to": 43,
+        "status": "under",
+        "deficit": 12
+      },
+      {
+        "key": "images",
+        "current": 0,
+        "from": 23,
+        "to": 30,
+        "status": "under",
+        "deficit": 23
+      },
+      {
+        "key": "lists",
+        "current": 7,
+        "from": 20,
+        "to": 29,
+        "status": "under",
+        "deficit": 13
+      },
+      {
+        "key": "tables",
+        "current": 0,
+        "from": 2,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "key": "videos",
+        "current": 0,
+        "from": 0,
+        "to": 1,
+        "status": "ok",
+        "deficit": 0
+      }
+    ]
+  },
+  {
+    "slug": "guide-grand-oral-echecs-nsi",
+    "query": "Guide Grand Oral NSI Échecs 2026",
+    "score": 34,
+    "exprGaps": [
+      {
+        "expression": "oral",
+        "current": 11,
+        "from": 37,
+        "to": 56,
+        "status": "under",
+        "deficit": 26
+      },
+      {
+        "expression": "grand oral",
+        "current": 11,
+        "from": 36,
+        "to": 56,
+        "status": "under",
+        "deficit": 25
+      },
+      {
+        "expression": "grand",
+        "current": 12,
+        "from": 36,
+        "to": 75,
+        "status": "under",
+        "deficit": 24
+      },
+      {
+        "expression": "donnees",
+        "current": 2,
+        "from": 17,
+        "to": 41,
+        "status": "under",
+        "deficit": 15
+      },
+      {
+        "expression": "sujet",
+        "current": 1,
+        "from": 16,
+        "to": 32,
+        "status": "under",
+        "deficit": 15
+      },
+      {
+        "expression": "sujets",
+        "current": 0,
+        "from": 14,
+        "to": 25,
+        "status": "under",
+        "deficit": 14
+      },
+      {
+        "expression": "algorithme",
+        "current": 16,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 13
+      },
+      {
+        "expression": "problematique",
+        "current": 14,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 10
+      },
+      {
+        "expression": "informatique",
+        "current": 1,
+        "from": 9,
+        "to": 16,
+        "status": "under",
+        "deficit": 8
+      },
+      {
+        "expression": "epreuve",
+        "current": 0,
+        "from": 8,
+        "to": 18,
+        "status": "under",
+        "deficit": 8
+      },
+      {
+        "expression": "complexite",
+        "current": 12,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 8
+      },
+      {
+        "expression": "mathematiques",
+        "current": 0,
+        "from": 7,
+        "to": 18,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "expression": "temps",
+        "current": 1,
+        "from": 8,
+        "to": 18,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "expression": "algorithmes",
+        "current": 0,
+        "from": 6,
+        "to": 8,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "systemes",
+        "current": 0,
+        "from": 6,
+        "to": 10,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "exemples",
+        "current": 1,
+        "from": 7,
+        "to": 33,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "apprentissage",
+        "current": 8,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 5
+      },
+      {
+        "expression": "question",
+        "current": 0,
+        "from": 5,
+        "to": 8,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "nsi",
+        "current": 15,
+        "from": 19,
+        "to": 61,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "programme",
+        "current": 10,
+        "from": 4,
+        "to": 6,
+        "status": "over",
+        "deficit": 4
+      },
+      {
+        "expression": "choix",
+        "current": 0,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "sujets grand oral",
+        "current": 0,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "sujets grand",
+        "current": 0,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "reseaux",
+        "current": 4,
+        "from": 7,
+        "to": 8,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "internet",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "securite",
+        "current": 2,
+        "from": 5,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "numeriques",
+        "current": 0,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "bac",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "algorithmique",
+        "current": 7,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 3
+      },
+      {
+        "expression": "fonctionnement",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "cryptographie",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "capacite",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "ia",
+        "current": 2,
+        "from": 5,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "idees",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "notions",
+        "current": 1,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "argumentation",
+        "current": 0,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "presenter",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "gestion",
+        "current": 0,
+        "from": 3,
+        "to": 9,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "enjeux",
+        "current": 0,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "vie",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "specialite",
+        "current": 3,
+        "from": 5,
+        "to": 12,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "applications",
+        "current": 0,
+        "from": 2,
+        "to": 5,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "bases",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "maniere",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "outils",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "traitement",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "machine",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "relier",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "expliquer",
+        "current": 8,
+        "from": 3,
+        "to": 6,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "echange",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "informatiques",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "communication",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "prendre",
+        "current": 1,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "contenu",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "construire",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "presentation",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "utiliser",
+        "current": 1,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "professeurs",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "impact",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "demontrer",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "article",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "specialites",
+        "current": 0,
+        "from": 2,
+        "to": 5,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "aider",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "reseaux sociaux",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "compte",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "cours",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "reponse",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "sociaux",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "bases de donnees",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "reellement",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "prise",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "repondre",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "utilisation",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "evaluer",
+        "current": 4,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "notion",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "domaine",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "intelligence",
+        "current": 7,
+        "from": 4,
+        "to": 6,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "jury",
+        "current": 14,
+        "from": 8,
+        "to": 13,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "preparation",
+        "current": 2,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "conseils",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "terminale",
+        "current": 3,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "cybersecurite",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "vs",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "articles",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "langage",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "trouver",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "efficacite",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "non",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "preparer",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "techniques",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "concrets",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "point",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "conditions",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "source",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "reel",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "propos",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "reflexion",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "histoire",
+        "current": 2,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "illustrer",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "humain",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "proteger",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "analyse",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "environnement",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "limites",
+        "current": 6,
+        "from": 5,
+        "to": 7,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "questions",
+        "current": 8,
+        "from": 8,
+        "to": 13,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "probleme",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "minutes",
+        "current": 7,
+        "from": 6,
+        "to": 9,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "choisir",
+        "current": 4,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "intelligence artificielle",
+        "current": 6,
+        "from": 4,
+        "to": 6,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "lien",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "numerique",
+        "current": 4,
+        "from": 4,
+        "to": 5,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "artificielle",
+        "current": 6,
+        "from": 4,
+        "to": 6,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "peut-il",
+        "current": 2,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "information",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "choisi",
+        "current": 2,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "decision",
+        "current": 2,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "exemples concrets",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "cles",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "complexes",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "fin",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      }
+    ],
+    "structGaps": [
+      {
+        "key": "length",
+        "current": 3498,
+        "from": 2925,
+        "to": 3214,
+        "status": "over",
+        "deficit": 284
+      },
+      {
+        "key": "headings",
+        "current": 14,
+        "from": 21,
+        "to": 44,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "key": "paragraphs",
+        "current": 76,
+        "from": 73,
+        "to": 101,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "links",
+        "current": 28,
+        "from": 50,
+        "to": 51,
+        "status": "under",
+        "deficit": 22
+      },
+      {
+        "key": "linksInternal",
+        "current": 0,
+        "from": 38,
+        "to": 40,
+        "status": "under",
+        "deficit": 38
+      },
+      {
+        "key": "linksExternal",
+        "current": 0,
+        "from": 12,
+        "to": 12,
+        "status": "under",
+        "deficit": 12
+      },
+      {
+        "key": "images",
+        "current": 0,
+        "from": 5,
+        "to": 7,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "key": "lists",
+        "current": 7,
+        "from": 30,
+        "to": 69,
+        "status": "under",
+        "deficit": 23
+      },
+      {
+        "key": "tables",
+        "current": 0,
+        "from": 1,
+        "to": 1,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "key": "videos",
+        "current": 0,
+        "from": 0,
+        "to": 1,
+        "status": "ok",
+        "deficit": 0
+      }
+    ]
+  },
+  {
+    "slug": "les-echecs-et-l-addiction",
+    "query": "Addiction aux échecs",
+    "score": 36,
+    "exprGaps": [
+      {
+        "expression": "addiction",
+        "current": 16,
+        "from": 4,
+        "to": 5,
+        "status": "over",
+        "deficit": 11
+      },
+      {
+        "expression": "jeu",
+        "current": 17,
+        "from": 10,
+        "to": 11,
+        "status": "over",
+        "deficit": 6
+      },
+      {
+        "expression": "parties",
+        "current": 6,
+        "from": 10,
+        "to": 15,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "temps",
+        "current": 3,
+        "from": 7,
+        "to": 11,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "partie",
+        "current": 12,
+        "from": 4,
+        "to": 8,
+        "status": "over",
+        "deficit": 4
+      },
+      {
+        "expression": "blitz",
+        "current": 6,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 4
+      },
+      {
+        "expression": "monde",
+        "current": 1,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "joueurs",
+        "current": 2,
+        "from": 5,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "jouer",
+        "current": 6,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "jeu d'echecs",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "ligne",
+        "current": 9,
+        "from": 4,
+        "to": 7,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "moment",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "jour",
+        "current": 1,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "rien",
+        "current": 1,
+        "from": 3,
+        "to": 7,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "heure",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "trop",
+        "current": 0,
+        "from": 2,
+        "to": 5,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "peut-etre",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "exemple",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "envie",
+        "current": 4,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "parties jouees",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "jouees",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "point",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "prendre",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "nouvelle",
+        "current": 2,
+        "from": 3,
+        "to": 7,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "face",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "dernier",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "conseils",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "joue",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "internet",
+        "current": 1,
+        "from": 2,
+        "to": 5,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "cours",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "haut",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "defaites",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "annee",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "trouver",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "present",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "entrainer",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "fin",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "debut de l'addiction",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "memoire",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "meilleur",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "tournoi",
+        "current": 0,
+        "from": 1,
+        "to": 5,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "grand",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "beaucoup de joueurs",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "parties d'echecs",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "risque",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "consommation",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "pris",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "habitude",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "donner",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "facilement",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "jouez",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "debut",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "pratiques",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "demande",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "veille",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "raison",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "ouverture",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "enerve",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "main",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "appelle",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "suite",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "consommation du jeu",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "erreurs",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "finalement",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "sentiment",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "fil",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "etat",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "fuyez",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "resultat",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "duree",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "imprimer",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "precis",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "exceptions",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "forcement",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "entier",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "nouvelles",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "jouee",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "effectue",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "inciter",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "espere",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "europe",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "analyser",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "eleve",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "reproduire",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "allez",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "raisons",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "gros",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "mauvaise",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "victime",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "approche",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "citees",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "entrainement",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "afficher",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "prenez",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "voyons",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "finit",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "pousse",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "probablement",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "repeter",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "remarque",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "partenaire",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "echecs",
+        "current": 22,
+        "from": 12,
+        "to": 30,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "club",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "compte",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "victoire",
+        "current": 3,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "maximum",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "decide",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "mal",
+        "current": 2,
+        "from": 2,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "defaite",
+        "current": 2,
+        "from": 2,
+        "to": 5,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "reduire",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "semaine",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "progresser",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "jeu en ligne",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "presque",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "simple",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "nombre",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "minimum",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "nouvelle partie",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "creation",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "mode",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      }
+    ],
+    "structGaps": [
+      {
+        "key": "length",
+        "current": 2248,
+        "from": 1139,
+        "to": 2259,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "headings",
+        "current": 21,
+        "from": 10,
+        "to": 28,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "paragraphs",
+        "current": 44,
+        "from": 24,
+        "to": 49,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "links",
+        "current": 77,
+        "from": 54,
+        "to": 125,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "linksInternal",
+        "current": 0,
+        "from": 49,
+        "to": 91,
+        "status": "under",
+        "deficit": 49
+      },
+      {
+        "key": "linksExternal",
+        "current": 0,
+        "from": 6,
+        "to": 14,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "key": "images",
+        "current": 1,
+        "from": 10,
+        "to": 12,
+        "status": "under",
+        "deficit": 9
+      },
+      {
+        "key": "lists",
+        "current": 8,
+        "from": 7,
+        "to": 18,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "tables",
+        "current": 0,
+        "from": 0,
+        "to": 1,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "videos",
+        "current": 0,
+        "from": 0,
+        "to": 1,
+        "status": "ok",
+        "deficit": 0
+      }
+    ]
+  },
+  {
+    "slug": "grand-oral-maths-spe-echecs",
+    "query": "Grand oral spé Maths",
+    "score": 37,
+    "exprGaps": [
+      {
+        "expression": "sujet",
+        "current": 1,
+        "from": 27,
+        "to": 42,
+        "status": "under",
+        "deficit": 26
+      },
+      {
+        "expression": "terminale",
+        "current": 30,
+        "from": 5,
+        "to": 8,
+        "status": "over",
+        "deficit": 22
+      },
+      {
+        "expression": "oral",
+        "current": 10,
+        "from": 31,
+        "to": 57,
+        "status": "under",
+        "deficit": 21
+      },
+      {
+        "expression": "sujets",
+        "current": 0,
+        "from": 21,
+        "to": 31,
+        "status": "under",
+        "deficit": 21
+      },
+      {
+        "expression": "grand",
+        "current": 10,
+        "from": 30,
+        "to": 49,
+        "status": "under",
+        "deficit": 20
+      },
+      {
+        "expression": "grand oral",
+        "current": 10,
+        "from": 30,
+        "to": 71,
+        "status": "under",
+        "deficit": 20
+      },
+      {
+        "expression": "maths",
+        "current": 12,
+        "from": 31,
+        "to": 48,
+        "status": "under",
+        "deficit": 19
+      },
+      {
+        "expression": "mathematiques",
+        "current": 5,
+        "from": 22,
+        "to": 37,
+        "status": "under",
+        "deficit": 17
+      },
+      {
+        "expression": "partie",
+        "current": 15,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 13
+      },
+      {
+        "expression": "idees",
+        "current": 0,
+        "from": 10,
+        "to": 18,
+        "status": "under",
+        "deficit": 10
+      },
+      {
+        "expression": "epreuve",
+        "current": 0,
+        "from": 8,
+        "to": 18,
+        "status": "under",
+        "deficit": 8
+      },
+      {
+        "expression": "idees de sujets",
+        "current": 0,
+        "from": 8,
+        "to": 14,
+        "status": "under",
+        "deficit": 8
+      },
+      {
+        "expression": "loi",
+        "current": 16,
+        "from": 4,
+        "to": 8,
+        "status": "over",
+        "deficit": 8
+      },
+      {
+        "expression": "nombre",
+        "current": 18,
+        "from": 3,
+        "to": 10,
+        "status": "over",
+        "deficit": 8
+      },
+      {
+        "expression": "bac",
+        "current": 0,
+        "from": 6,
+        "to": 17,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "voir",
+        "current": 0,
+        "from": 6,
+        "to": 11,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "programme",
+        "current": 18,
+        "from": 7,
+        "to": 13,
+        "status": "over",
+        "deficit": 5
+      },
+      {
+        "expression": "nombres",
+        "current": 0,
+        "from": 5,
+        "to": 8,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "specialites",
+        "current": 0,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "specialite",
+        "current": 3,
+        "from": 7,
+        "to": 10,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "conseils",
+        "current": 0,
+        "from": 3,
+        "to": 8,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "fonction",
+        "current": 7,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 3
+      },
+      {
+        "expression": "utiliser",
+        "current": 0,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "svt",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "calcul",
+        "current": 9,
+        "from": 3,
+        "to": 6,
+        "status": "over",
+        "deficit": 3
+      },
+      {
+        "expression": "equations",
+        "current": 0,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "lycee",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "fiches",
+        "current": 0,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "professeurs",
+        "current": 0,
+        "from": 3,
+        "to": 8,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "theoreme",
+        "current": 0,
+        "from": 3,
+        "to": 7,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "expose",
+        "current": 0,
+        "from": 3,
+        "to": 9,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "temps",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "premiere",
+        "current": 0,
+        "from": 2,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "annee",
+        "current": 0,
+        "from": 2,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "jury",
+        "current": 9,
+        "from": 11,
+        "to": 28,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "question",
+        "current": 2,
+        "from": 4,
+        "to": 11,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "sciences",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "lien",
+        "current": 2,
+        "from": 4,
+        "to": 5,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "probabilites conditionnelles",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "conditionnelles",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "eleves",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "preparation",
+        "current": 1,
+        "from": 3,
+        "to": 7,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "applications",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "evolution",
+        "current": 0,
+        "from": 2,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "aider",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "connaissances",
+        "current": 0,
+        "from": 2,
+        "to": 5,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "choix",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "informatique",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "algorithmes",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "physique-chimie",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "choisi",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "preparer",
+        "current": 0,
+        "from": 2,
+        "to": 7,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "cours",
+        "current": 3,
+        "from": 5,
+        "to": 28,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "limites",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "histoire",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "reussir",
+        "current": 0,
+        "from": 2,
+        "to": 5,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "courbe",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "population",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "equations differentielles",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "grand oral maths",
+        "current": 1,
+        "from": 3,
+        "to": 9,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "support",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "capacite",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "notion",
+        "current": 3,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "sujet de grand oral",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "questions",
+        "current": 4,
+        "from": 5,
+        "to": 13,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "expliquer",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "trouver",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "statistiques",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "modelisation",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "propos",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "choisir",
+        "current": 1,
+        "from": 2,
+        "to": 6,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "matieres",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "jeux",
+        "current": 1,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "mathematique",
+        "current": 4,
+        "from": 5,
+        "to": 9,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "etudes",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "construire",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "point",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "numeriques",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "besoin",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "maniere",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "exemple",
+        "current": 2,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "permettent",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "taux",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "presentation",
+        "current": 2,
+        "from": 3,
+        "to": 12,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "hlp",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "complexes",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "conditions",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "grace",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "philosophie",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "finale",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "vie",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "series",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "naturels",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "fil",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "maitrise",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "grand oral est une epreuve",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "resultats",
+        "current": 5,
+        "from": 2,
+        "to": 4,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "ia",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "mesure",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "optimiser",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "medecine",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "oral est une epreuve",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "reseaux sociaux",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "theorie",
+        "current": 3,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "probabilites",
+        "current": 10,
+        "from": 9,
+        "to": 16,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "suites",
+        "current": 11,
+        "from": 6,
+        "to": 11,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "modeliser",
+        "current": 4,
+        "from": 3,
+        "to": 8,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "nsi",
+        "current": 2,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "problematique",
+        "current": 7,
+        "from": 4,
+        "to": 13,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "analyse",
+        "current": 4,
+        "from": 4,
+        "to": 7,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "coefficient",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "generale",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "comprendre",
+        "current": 3,
+        "from": 3,
+        "to": 6,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "reseaux",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "est-ce",
+        "current": 2,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "jour",
+        "current": 6,
+        "from": 3,
+        "to": 10,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "exemples",
+        "current": 3,
+        "from": 3,
+        "to": 5,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "approche",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "notions",
+        "current": 4,
+        "from": 4,
+        "to": 13,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "calculer",
+        "current": 2,
+        "from": 2,
+        "to": 5,
+        "status": "ok",
+        "deficit": 0
+      }
+    ],
+    "structGaps": [
+      {
+        "key": "length",
+        "current": 4423,
+        "from": 2753,
+        "to": 4736,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "headings",
+        "current": 25,
+        "from": 30,
+        "to": 62,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "key": "paragraphs",
+        "current": 62,
+        "from": 58,
+        "to": 117,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "links",
+        "current": 44,
+        "from": 87,
+        "to": 178,
+        "status": "under",
+        "deficit": 43
+      },
+      {
+        "key": "linksInternal",
+        "current": 0,
+        "from": 61,
+        "to": 153,
+        "status": "under",
+        "deficit": 61
+      },
+      {
+        "key": "linksExternal",
+        "current": 0,
+        "from": 11,
+        "to": 43,
+        "status": "under",
+        "deficit": 11
+      },
+      {
+        "key": "images",
+        "current": 0,
+        "from": 7,
+        "to": 30,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "key": "lists",
+        "current": 17,
+        "from": 25,
+        "to": 42,
+        "status": "under",
+        "deficit": 8
+      },
+      {
+        "key": "tables",
+        "current": 0,
+        "from": 0,
+        "to": 6,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "videos",
+        "current": 0,
+        "from": 0,
+        "to": 1,
+        "status": "ok",
+        "deficit": 0
+      }
+    ]
+  },
+  {
+    "slug": "guide-grand-oral-echecs-toutes-specialites",
+    "query": "Guide Grand Oral Échecs toutes spécialités 2026",
+    "score": 45,
+    "exprGaps": [
+      {
+        "expression": "oral",
+        "current": 14,
+        "from": 32,
+        "to": 40,
+        "status": "under",
+        "deficit": 18
+      },
+      {
+        "expression": "grand oral",
+        "current": 13,
+        "from": 27,
+        "to": 28,
+        "status": "under",
+        "deficit": 14
+      },
+      {
+        "expression": "bac",
+        "current": 0,
+        "from": 13,
+        "to": 20,
+        "status": "under",
+        "deficit": 13
+      },
+      {
+        "expression": "grand",
+        "current": 14,
+        "from": 27,
+        "to": 28,
+        "status": "under",
+        "deficit": 13
+      },
+      {
+        "expression": "epreuve",
+        "current": 0,
+        "from": 10,
+        "to": 12,
+        "status": "under",
+        "deficit": 10
+      },
+      {
+        "expression": "philosophie",
+        "current": 11,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 8
+      },
+      {
+        "expression": "jury",
+        "current": 17,
+        "from": 24,
+        "to": 38,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "expression": "svt",
+        "current": 9,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 7
+      },
+      {
+        "expression": "jour",
+        "current": 0,
+        "from": 6,
+        "to": 10,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "sujets",
+        "current": 1,
+        "from": 7,
+        "to": 15,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "orientation",
+        "current": 0,
+        "from": 6,
+        "to": 13,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "expression": "minutes",
+        "current": 9,
+        "from": 14,
+        "to": 45,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "capacite",
+        "current": 2,
+        "from": 7,
+        "to": 10,
+        "status": "under",
+        "deficit": 5
+      },
+      {
+        "expression": "lien",
+        "current": 8,
+        "from": 3,
+        "to": 4,
+        "status": "over",
+        "deficit": 4
+      },
+      {
+        "expression": "reussir",
+        "current": 0,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "conseils",
+        "current": 0,
+        "from": 4,
+        "to": 13,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "idees",
+        "current": 0,
+        "from": 4,
+        "to": 11,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "etudes",
+        "current": 6,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 4
+      },
+      {
+        "expression": "parole",
+        "current": 0,
+        "from": 4,
+        "to": 8,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "non",
+        "current": 6,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 4
+      },
+      {
+        "expression": "coefficient",
+        "current": 0,
+        "from": 4,
+        "to": 9,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "qualite",
+        "current": 0,
+        "from": 4,
+        "to": 6,
+        "status": "under",
+        "deficit": 4
+      },
+      {
+        "expression": "grand oral du bac",
+        "current": 0,
+        "from": 3,
+        "to": 12,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "oral du bac",
+        "current": 0,
+        "from": 3,
+        "to": 12,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "stress",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "posture",
+        "current": 0,
+        "from": 3,
+        "to": 5,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "generale",
+        "current": 0,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "methode",
+        "current": 0,
+        "from": 3,
+        "to": 7,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "terminale",
+        "current": 1,
+        "from": 4,
+        "to": 11,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "mathematiques",
+        "current": 0,
+        "from": 3,
+        "to": 8,
+        "status": "under",
+        "deficit": 3
+      },
+      {
+        "expression": "choix",
+        "current": 5,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "connaissances",
+        "current": 1,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "notes",
+        "current": 1,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "cles",
+        "current": 1,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "juin",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "prise de parole",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "evalue",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "prise",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "nsi",
+        "current": 4,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "lycee",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "specialite",
+        "current": 15,
+        "from": 7,
+        "to": 13,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "passe",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "maniere",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "analyse",
+        "current": 0,
+        "from": 2,
+        "to": 5,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "fiches",
+        "current": 0,
+        "from": 2,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "vie",
+        "current": 0,
+        "from": 2,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "gerer",
+        "current": 1,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "note",
+        "current": 1,
+        "from": 3,
+        "to": 6,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "hlp",
+        "current": 4,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "savoir",
+        "current": 5,
+        "from": 2,
+        "to": 3,
+        "status": "over",
+        "deficit": 2
+      },
+      {
+        "expression": "schema",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "parcoursup",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "decouvrir",
+        "current": 0,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 2
+      },
+      {
+        "expression": "sujet",
+        "current": 16,
+        "from": 13,
+        "to": 15,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "preparation",
+        "current": 5,
+        "from": 6,
+        "to": 13,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "hggsp",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "voir",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "technologique",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "physique-chimie",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "argumentation",
+        "current": 2,
+        "from": 3,
+        "to": 4,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "lieu",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "voix",
+        "current": 1,
+        "from": 2,
+        "to": 7,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "engagement",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "fonction",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "juillet",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "minutes de preparation",
+        "current": 0,
+        "from": 1,
+        "to": 5,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "regard",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "mieux",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "general",
+        "current": 3,
+        "from": 1,
+        "to": 2,
+        "status": "over",
+        "deficit": 1
+      },
+      {
+        "expression": "theme",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "francais",
+        "current": 0,
+        "from": 1,
+        "to": 4,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "page",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "dates",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "1er juillet",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "liste",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "clarte",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "compte",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "langues",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "premiere",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "1er",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "moyenne",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "coefficients",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "juin au mercredi 1er juillet",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "lundi 22 juin au mercredi",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "resultats",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "mercredi 1er juillet",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "lundi 22 juin",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "service",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "cadre",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "bac general",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "lire",
+        "current": 1,
+        "from": 2,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "spe",
+        "current": 0,
+        "from": 1,
+        "to": 3,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "arts",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "echange avec le jury",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "juin au mercredi 1er",
+        "current": 0,
+        "from": 1,
+        "to": 2,
+        "status": "under",
+        "deficit": 1
+      },
+      {
+        "expression": "questions",
+        "current": 11,
+        "from": 10,
+        "to": 21,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "specialites",
+        "current": 7,
+        "from": 5,
+        "to": 9,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "preparer",
+        "current": 3,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "temps",
+        "current": 5,
+        "from": 5,
+        "to": 6,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "choisir",
+        "current": 2,
+        "from": 2,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "guide",
+        "current": 6,
+        "from": 5,
+        "to": 11,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "fois",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "introduction",
+        "current": 3,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "construire",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "maths",
+        "current": 3,
+        "from": 3,
+        "to": 10,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "contenu",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "raisonnement",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "min",
+        "current": 5,
+        "from": 4,
+        "to": 15,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "question",
+        "current": 10,
+        "from": 7,
+        "to": 13,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "programme",
+        "current": 9,
+        "from": 3,
+        "to": 12,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "plan",
+        "current": 4,
+        "from": 4,
+        "to": 11,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "vraiment",
+        "current": 5,
+        "from": 3,
+        "to": 5,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "articles",
+        "current": 3,
+        "from": 2,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "duree",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "entrainement",
+        "current": 2,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "eviter",
+        "current": 2,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "exemples",
+        "current": 4,
+        "from": 3,
+        "to": 4,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "inegalites",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "notions",
+        "current": 3,
+        "from": 2,
+        "to": 3,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "expression": "jours",
+        "current": 1,
+        "from": 1,
+        "to": 2,
+        "status": "ok",
+        "deficit": 0
+      }
+    ],
+    "structGaps": [
+      {
+        "key": "length",
+        "current": 4294,
+        "from": 2849,
+        "to": 4736,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "headings",
+        "current": 17,
+        "from": 34,
+        "to": 58,
+        "status": "under",
+        "deficit": 17
+      },
+      {
+        "key": "paragraphs",
+        "current": 92,
+        "from": 46,
+        "to": 70,
+        "status": "over",
+        "deficit": 22
+      },
+      {
+        "key": "links",
+        "current": 31,
+        "from": 41,
+        "to": 275,
+        "status": "under",
+        "deficit": 10
+      },
+      {
+        "key": "linksInternal",
+        "current": 0,
+        "from": 27,
+        "to": 241,
+        "status": "under",
+        "deficit": 27
+      },
+      {
+        "key": "linksExternal",
+        "current": 0,
+        "from": 7,
+        "to": 43,
+        "status": "under",
+        "deficit": 7
+      },
+      {
+        "key": "images",
+        "current": 0,
+        "from": 8,
+        "to": 42,
+        "status": "under",
+        "deficit": 8
+      },
+      {
+        "key": "lists",
+        "current": 7,
+        "from": 13,
+        "to": 53,
+        "status": "under",
+        "deficit": 6
+      },
+      {
+        "key": "tables",
+        "current": 1,
+        "from": 0,
+        "to": 5,
+        "status": "ok",
+        "deficit": 0
+      },
+      {
+        "key": "videos",
+        "current": 0,
+        "from": 0,
+        "to": 1,
+        "status": "ok",
+        "deficit": 0
+      }
+    ]
+  }
+]

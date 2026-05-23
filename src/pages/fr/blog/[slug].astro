@@ -7,6 +7,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
+import DownloadPdfButton from "../../../components/DownloadPdfButton.astro";
 import Comments from "../../../components/Comments.astro";
 import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import FAQ from "../../../components/FAQ.astro";
@@ -162,6 +163,10 @@ const otherPillars = categorySlugs
             </nav>
           )}
         </header>
+
+        {grandOralOnly && (
+          <DownloadPdfButton title={post.data.title} />
+        )}
 
         {showSummaryVideo && summaryVideoSrc && (
           <ArticleVideo
