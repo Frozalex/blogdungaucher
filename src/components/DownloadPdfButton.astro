@@ -115,58 +115,43 @@ const { title, slug, label = "Télécharger en PDF" } = Astro.props as {
         // Lazy load (≈250 KB) seulement au premier clic.
         const { default: html2pdf } = await import('html2pdf.js');
 
-        // On cible uniquement le CONTENU rédigé de l'article, pas la page.
-        // Stratégie : prendre l'article complet, puis retirer tout ce qui n'est
-        // pas le corps du texte (en-tête article, hero, méta, vidéos, etc.).
-        const article = document.querySelector('article.article-page');
-        if (!article) throw new Error('Article introuvable sur la page.');
+        // Stratégie : extraire les noeuds de contenu rédigé (entre l'en-tête article
+        // et les blocs sociaux) et les insérer dans un wrapper propre. Cela évite les
+        // problèmes de CSS grid/flex qui rendent le clone vide hors contexte.
+        const articleMain = document.querySelector('.article-main') as HTMLElement | null;
+        if (!articleMain) throw new Error('Article introuvable sur la page.');
 
-        const clone = article.cloneNode(true) as HTMLElement;
+        // Tous les enfants directs de .article-main.
+        const allChildren = Array.from(articleMain.children) as HTMLElement[];
 
-        // Retirer tout ce qui n'est pas le corps du texte rédigé.
-        clone.querySelectorAll([
+        // Sélecteurs des éléments à ignorer (en-tête, méta, social, etc.).
+        const skipSelectors = [
+          '.breadcrumb',
+          '.article-header',
           '[data-no-print]',
-          '.share', '.comments', '.related-posts', '.ad-banner',
-          '.article-aside', '.toc-desktop-wrap', '.toc-mobile',
-          'aside', '.breadcrumb',
+          '.share', '.comments',
+          '.related-posts', '.ad-banner',
           '.summary-video-wrap', '.article-video', '.remotion-player', '.video-player',
           '.reading-progress',
-          // Spécifique : retirer l'en-tête article (titre, méta, tags, breadcrumb)
-          '.article-header',
-          // Retirer les images hero et figures décoratives
-          '.hero-media', 'figure.hero-media',
-          // Retirer la navigation finale "rubriques" et les blocs FAQ rendus
-          '.article-nav', '.faq-section',
-        ].join(', ')).forEach((el) => el.remove());
+          '.hero-media',
+          '.article-nav',
+        ];
 
-        // Retirer le premier blockquote (instructions de téléchargement PDF, redondant).
-        const firstBlockquote = clone.querySelector('blockquote');
-        if (firstBlockquote && firstBlockquote.textContent?.includes('Télécharger')) {
-          firstBlockquote.remove();
+        const isSkippable = (el: HTMLElement) =>
+          skipSelectors.some((sel) => el.matches(sel) || el.querySelector(sel) === el.firstElementChild);
+
+        // Filtrer les enfants à conserver et les cloner.
+        const contentClones: HTMLElement[] = [];
+        for (const child of allChildren) {
+          if (skipSelectors.some((sel) => child.matches(sel))) continue;
+          // Cloner le noeud (deep) pour garder le rendu KaTeX, code, tables, etc.
+          const cloned = child.cloneNode(true) as HTMLElement;
+          // Nettoyer récursivement les éléments parasites à l'intérieur.
+          cloned.querySelectorAll(skipSelectors.join(', ')).forEach((el) => el.remove());
+          contentClones.push(cloned);
         }
 
-        // Retirer le dernier blockquote (liens "Pour aller plus loin", décoratif).
-        const blockquotes = clone.querySelectorAll('blockquote');
-        const lastBq = blockquotes[blockquotes.length - 1];
-        if (lastBq && lastBq.textContent?.includes('Pour aller plus loin')) {
-          lastBq.remove();
-        }
-
-        // Retirer les <hr> isolés (séparateurs visuels) entourant les blocs supprimés.
-        clone.querySelectorAll('hr').forEach((hr, idx, arr) => {
-          // Garder uniquement les hr qui séparent des sections de texte
-          // (heuristique : retirer le premier et le dernier hr).
-          if (idx === 0 || idx === arr.length - 1) hr.remove();
-        });
-
-        // Convertir les URLs relatives en absolues (pour les liens dans le PDF).
-        const baseUrl = window.location.origin;
-        clone.querySelectorAll('a[href^="/"]').forEach((a) => {
-          const href = a.getAttribute('href');
-          if (href) a.setAttribute('href', baseUrl + href);
-        });
-
-        // Conteneur wrapper avec styles imprimables propres.
+        // Conteneur wrapper avec styles imprimables propres et layout simple.
         const wrapper = document.createElement('div');
         wrapper.id = 'pdf-wrapper';
         wrapper.style.cssText = [
@@ -176,17 +161,49 @@ const { title, slug, label = "Télécharger en PDF" } = Astro.props as {
           'font-family: Georgia, "Times New Roman", serif',
           'font-size: 11pt',
           'line-height: 1.55',
-          'width: 100%',
-          'max-width: 190mm',
+          'width: 720px', // ~190mm à 96dpi, taille fixe pour html2canvas
+          'box-sizing: border-box',
+          'display: block',
         ].join(';');
 
         // Titre épuré en tête du PDF.
         const titleEl = document.createElement('h1');
-        titleEl.style.cssText = 'font-size: 18pt; color: #111; margin: 0 0 8mm; line-height: 1.25; font-weight: 700;';
+        titleEl.style.cssText = 'font-size: 20pt; color: #111; margin: 0 0 10mm; line-height: 1.25; font-weight: 700; border: 0;';
         titleEl.textContent = title;
         wrapper.appendChild(titleEl);
 
-        wrapper.appendChild(clone);
+        // Ajouter les clones de contenu dans le wrapper.
+        for (const node of contentClones) {
+          // Force un layout simple (anti grid/flex hérité).
+          node.style.display = node.tagName === 'TABLE' ? 'table' : 'block';
+          node.style.width = '100%';
+          node.style.maxWidth = '100%';
+          node.style.margin = '0 0 4mm';
+          wrapper.appendChild(node);
+        }
+
+        // Nettoyer les blockquotes "instructions PDF" et "Pour aller plus loin".
+        const blockquotes = wrapper.querySelectorAll('blockquote');
+        blockquotes.forEach((bq) => {
+          const text = bq.textContent ?? '';
+          if (text.includes('Télécharger ce sujet en PDF') || text.includes('Télécharger en PDF') || text.includes('Pour aller plus loin')) {
+            bq.remove();
+          }
+        });
+
+        // Retirer les hr résiduels en début/fin de wrapper.
+        const hrs = wrapper.querySelectorAll('hr');
+        if (hrs.length > 0) {
+          (hrs[0] as HTMLElement).remove();
+          if (hrs.length > 1) (hrs[hrs.length - 1] as HTMLElement).remove();
+        }
+
+        // Convertir les URLs relatives en absolues (pour les liens dans le PDF).
+        const baseUrl = window.location.origin;
+        wrapper.querySelectorAll('a[href^="/"]').forEach((a) => {
+          const href = a.getAttribute('href');
+          if (href) a.setAttribute('href', baseUrl + href);
+        });
 
         // Pied de page minimal (juste l'URL source).
         const footer = document.createElement('div');
@@ -221,10 +238,19 @@ const { title, slug, label = "Télécharger en PDF" } = Astro.props as {
         wrapper.prepend(printStyles);
 
         // Le wrapper doit être attaché au DOM pour que html2canvas puisse le rendre.
-        wrapper.style.position = 'absolute';
-        wrapper.style.left = '-10000px';
+        // On le place visible mais hors écran horizontalement, avec position fixe
+        // pour qu'il ne perturbe pas le scroll de la page.
+        wrapper.style.position = 'fixed';
+        wrapper.style.left = '-9999px';
         wrapper.style.top = '0';
+        wrapper.style.zIndex = '-1';
         document.body.appendChild(wrapper);
+
+        // Diagnostic : vérifier que le wrapper a bien du contenu mesurable.
+        const rect = wrapper.getBoundingClientRect();
+        if (rect.height < 50) {
+          console.warn('[PDF] Wrapper hauteur insuffisante :', rect.height, 'px. Contenu :', wrapper.children.length, 'éléments');
+        }
 
         const filename = `${slug}.pdf`;
         const options = {
@@ -234,9 +260,15 @@ const { title, slug, label = "Télécharger en PDF" } = Astro.props as {
           html2canvas: {
             scale: 2,
             useCORS: true,
+            allowTaint: true,
             logging: false,
             letterRendering: true,
             backgroundColor: '#ffffff',
+            windowWidth: 720,
+            width: 720,
+            height: wrapper.scrollHeight,
+            scrollX: 0,
+            scrollY: 0,
           },
           jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait', compress: true },
           pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
