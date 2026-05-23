@@ -165,7 +165,7 @@ const otherPillars = categorySlugs
         </header>
 
         {grandOralOnly && (
-          <DownloadPdfButton title={post.data.title} />
+          <DownloadPdfButton title={post.data.title} slug={getPostSlug(post)} />
         )}
 
         {showSummaryVideo && summaryVideoSrc && (

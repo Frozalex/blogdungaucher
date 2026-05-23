@@ -1,20 +1,33 @@
 ---
-const { title, label = "Télécharger en PDF" } = Astro.props as {
+const { title, slug, label = "Télécharger en PDF" } = Astro.props as {
   title: string;
+  slug: string;
   label?: string;
 };
 ---
 <div class="pdf-download" data-no-print>
-  <button class="pdf-btn" id="pdf-download-btn" type="button" aria-label={`${label} : ${title}`}>
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-      <polyline points="14 2 14 8 20 8"/>
-      <line x1="12" y1="18" x2="12" y2="12"/>
-      <polyline points="9 15 12 18 15 15"/>
-    </svg>
-    <span>{label}</span>
+  <button
+    class="pdf-btn"
+    id="pdf-download-btn"
+    type="button"
+    aria-label={`${label} : ${title}`}
+    data-pdf-title={title}
+    data-pdf-slug={slug}
+  >
+    <span class="pdf-btn-icon">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <line x1="12" y1="18" x2="12" y2="12"/>
+        <polyline points="9 15 12 18 15 15"/>
+      </svg>
+    </span>
+    <span class="pdf-btn-label">{label}</span>
+    <span class="pdf-btn-spinner" hidden aria-hidden="true"></span>
   </button>
-  <p class="pdf-hint">Astuce : dans la boîte d'impression, choisis « Enregistrer au format PDF ».</p>
+  <p class="pdf-hint">
+    Le PDF sera téléchargé directement sur ton appareil (environ <strong>10 secondes</strong> de génération).
+  </p>
 </div>
 
 <style>
@@ -43,15 +56,31 @@ const { title, label = "Télécharger en PDF" } = Astro.props as {
     cursor: pointer;
     transition: filter 120ms ease, transform 120ms ease;
   }
-  .pdf-btn:hover {
+  .pdf-btn:hover:not(:disabled) {
     filter: brightness(1.07);
     transform: translateY(-1px);
   }
-  .pdf-btn:active {
+  .pdf-btn:active:not(:disabled) {
     transform: translateY(0);
+  }
+  .pdf-btn:disabled {
+    cursor: wait;
+    opacity: 0.7;
   }
   .pdf-btn svg {
     flex-shrink: 0;
+  }
+  .pdf-btn-spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: pdf-spin 0.7s linear infinite;
+    flex-shrink: 0;
+  }
+  @keyframes pdf-spin {
+    to { transform: rotate(360deg); }
   }
   .pdf-hint {
     margin: 0;
@@ -66,16 +95,135 @@ const { title, label = "Télécharger en PDF" } = Astro.props as {
 </style>
 
 <script>
+  // Génération PDF côté client avec html2pdf.js (lazy-loaded au clic).
   document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('pdf-download-btn');
+    const btn = document.getElementById('pdf-download-btn') as HTMLButtonElement | null;
     if (!btn) return;
-    btn.addEventListener('click', () => {
-      document.body.classList.add('printing-pdf');
-      window.print();
-      // Nettoyage après ouverture du dialogue (ne bloque pas).
-      window.setTimeout(() => {
-        document.body.classList.remove('printing-pdf');
-      }, 500);
+
+    btn.addEventListener('click', async () => {
+      const title = btn.dataset.pdfTitle ?? document.title;
+      const slug = btn.dataset.pdfSlug ?? 'document';
+      const labelEl = btn.querySelector('.pdf-btn-label') as HTMLElement | null;
+      const spinnerEl = btn.querySelector('.pdf-btn-spinner') as HTMLElement | null;
+      const originalLabel = labelEl?.textContent ?? 'Télécharger en PDF';
+
+      btn.disabled = true;
+      if (labelEl) labelEl.textContent = 'Génération…';
+      if (spinnerEl) spinnerEl.hidden = false;
+
+      try {
+        // Lazy load (≈250 KB) seulement au premier clic.
+        const { default: html2pdf } = await import('html2pdf.js');
+
+        // Construction du clone à imprimer (article + titre, sans nav/footer/aside).
+        const article = document.querySelector('article.article-page');
+        if (!article) throw new Error('Article introuvable sur la page.');
+
+        const clone = article.cloneNode(true) as HTMLElement;
+
+        // Retirer les éléments parasites du clone.
+        clone.querySelectorAll(
+          '[data-no-print], .share, .comments, .related-posts, .ad-banner, ' +
+          '.article-aside, .toc-desktop-wrap, .toc-mobile, aside, .breadcrumb, ' +
+          '.summary-video-wrap, .article-video, .remotion-player, .video-player, ' +
+          '.reading-progress'
+        ).forEach((el) => el.remove());
+
+        // Convertir les URLs relatives en absolues (pour les liens dans le PDF).
+        const baseUrl = window.location.origin;
+        clone.querySelectorAll('a[href^="/"]').forEach((a) => {
+          const href = a.getAttribute('href');
+          if (href) a.setAttribute('href', baseUrl + href);
+        });
+
+        // Conteneur wrapper avec styles imprimables propres.
+        const wrapper = document.createElement('div');
+        wrapper.id = 'pdf-wrapper';
+        wrapper.style.cssText = [
+          'background: #fff',
+          'color: #111',
+          'padding: 0 8mm',
+          'font-family: Georgia, "Times New Roman", serif',
+          'font-size: 11pt',
+          'line-height: 1.5',
+          'width: 100%',
+          'max-width: 190mm',
+        ].join(';');
+
+        // En-tête PDF (titre + URL + branding).
+        const header = document.createElement('div');
+        header.style.cssText = 'margin: 0 0 8mm; padding: 0 0 4mm; border-bottom: 1px solid #ccc; font-size: 9pt; color: #555;';
+        header.innerHTML = `<div><strong>Blog d'un Gaucher</strong> · blogdungaucher.com</div><div style="margin-top: 2mm;">${window.location.href}</div>`;
+        wrapper.appendChild(header);
+
+        wrapper.appendChild(clone);
+
+        // Pied de page (mention licence).
+        const footer = document.createElement('div');
+        footer.style.cssText = 'margin: 10mm 0 0; padding: 4mm 0 0; border-top: 1px solid #ccc; font-size: 8pt; color: #777; text-align: center;';
+        footer.innerHTML = 'Document généré depuis blogdungaucher.com — librement utilisable à des fins pédagogiques.';
+        wrapper.appendChild(footer);
+
+        // Styles d'impression injectés.
+        const printStyles = document.createElement('style');
+        printStyles.textContent = `
+          #pdf-wrapper h1 { font-size: 20pt; color: #111; margin: 0 0 4mm; line-height: 1.25; }
+          #pdf-wrapper h2 { font-size: 14pt; color: #111; margin: 6mm 0 3mm; page-break-after: avoid; border-bottom: 1px solid #ddd; padding-bottom: 1mm; }
+          #pdf-wrapper h3 { font-size: 12pt; color: #222; margin: 5mm 0 2mm; page-break-after: avoid; }
+          #pdf-wrapper h4 { font-size: 11pt; color: #333; margin: 4mm 0 2mm; page-break-after: avoid; }
+          #pdf-wrapper p { margin: 0 0 3mm; orphans: 3; widows: 3; }
+          #pdf-wrapper ul, #pdf-wrapper ol { margin: 0 0 3mm 5mm; }
+          #pdf-wrapper li { margin-bottom: 1mm; }
+          #pdf-wrapper a { color: #1a4d8f; text-decoration: underline; }
+          #pdf-wrapper pre, #pdf-wrapper code { background: #f4f4f4; color: #111; font-family: "Courier New", monospace; font-size: 9pt; }
+          #pdf-wrapper pre { padding: 3mm; border: 1px solid #ddd; border-radius: 2mm; overflow: visible !important; white-space: pre-wrap !important; word-break: break-word; page-break-inside: avoid; margin: 0 0 4mm; }
+          #pdf-wrapper code { padding: 0.5mm 1.5mm; border-radius: 1mm; }
+          #pdf-wrapper pre code { padding: 0; background: transparent; border: 0; }
+          #pdf-wrapper table { border-collapse: collapse; width: 100%; margin: 0 0 4mm; page-break-inside: avoid; font-size: 9.5pt; }
+          #pdf-wrapper th, #pdf-wrapper td { border: 1px solid #aaa; padding: 1.5mm 2mm; text-align: left; vertical-align: top; }
+          #pdf-wrapper th { background: #eee; font-weight: 600; }
+          #pdf-wrapper blockquote { margin: 0 0 4mm; padding: 2mm 4mm; border-left: 3pt solid #888; background: #f8f8f8; font-style: italic; }
+          #pdf-wrapper img { max-width: 100%; height: auto; page-break-inside: avoid; }
+          #pdf-wrapper .hero-media, #pdf-wrapper .hero-img { max-height: 80mm; object-fit: contain; }
+          #pdf-wrapper hr { border: 0; border-top: 1px solid #ccc; margin: 5mm 0; }
+          #pdf-wrapper .katex-display { margin: 3mm 0; overflow-x: visible !important; }
+        `;
+        wrapper.prepend(printStyles);
+
+        // Le wrapper doit être attaché au DOM pour que html2canvas puisse le rendre.
+        wrapper.style.position = 'absolute';
+        wrapper.style.left = '-10000px';
+        wrapper.style.top = '0';
+        document.body.appendChild(wrapper);
+
+        const filename = `${slug}.pdf`;
+        const options = {
+          margin: [12, 12, 14, 12], // top, left, bottom, right (mm)
+          filename,
+          image: { type: 'jpeg', quality: 0.95 },
+          html2canvas: {
+            scale: 2,
+            useCORS: true,
+            logging: false,
+            letterRendering: true,
+            backgroundColor: '#ffffff',
+          },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait', compress: true },
+          pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+        };
+
+        await html2pdf().set(options).from(wrapper).save();
+
+        // Nettoyage.
+        document.body.removeChild(wrapper);
+      } catch (err) {
+        console.error('[PDF] Échec de la génération :', err);
+        alert("Désolé, la génération du PDF a échoué. Tu peux utiliser Ctrl+P pour imprimer ou réessayer.");
+      } finally {
+        btn.disabled = false;
+        if (labelEl) labelEl.textContent = originalLabel;
+        if (spinnerEl) spinnerEl.hidden = true;
+      }
     });
   });
 </script>
