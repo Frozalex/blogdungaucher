@@ -844,7 +844,7 @@ main[tabindex="-1"]:focus {
 }
 
 /* ============================================================
-   PRINT STYLES — pour export PDF des articles (Grand Oral notamment).
+   PRINT STYLES, pour export PDF des articles (Grand Oral notamment).
    Masque tout sauf l'article principal, et formate pour A4.
    ============================================================ */
 @media print {
@@ -972,7 +972,7 @@ main[tabindex="-1"]:focus {
   }
 }
 
-/* Print header — caché à l'écran, visible à l'impression */
+/* Print header : caché à l'écran, visible à l'impression */
 .print-header {
   display: none;
 }

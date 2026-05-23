@@ -91,7 +91,7 @@ Le **Grand Oral** est l'**épreuve** la mieux notée du **bac** général, à **
 
 | Temps | Phase | Ce que tu fais | Ce que le **jury** évalue |
 |---|---|---|---|
-| 20 min | Préparation | Choix entre deux **questions** issues de ton **programme**. Brouillon autorisé. | — |
+| 20 min | Préparation | Choix entre deux **questions** issues de ton **programme**. Brouillon autorisé. |, |
 | 5 min | Exposé debout | Présentation de ta **question** debout, sans notes ou très peu. | **Posture**, voix, structure de l'argumentation |
 | 10 min | Échange | Le **jury** te questionne sur le **sujet**, ton plan, tes sources. | Maîtrise, réactivité, ouverture critique |
 | 5 min | Projet d'**orientation** | Tu expliques comment ce **sujet** s'inscrit dans ton parcours post-bac. | Cohérence parcours et ambition |
@@ -119,27 +119,27 @@ Le **jury** SES/HGGSP attend davantage que les **jurys** scientifiques :
 
 ## Choisir ta problématique : trois angles solides
 
-En SES ou HGGSP, la problématique doit articuler les échecs avec des concepts du **programme**. L'objectif : montrer que tu maîtrises les outils de la discipline — pas juste l'**histoire** des échecs.
+En SES ou HGGSP, la problématique doit articuler les échecs avec des concepts du **programme**. L'objectif : montrer que tu maîtrises les outils de la discipline : pas juste l'**histoire** des échecs.
 
-### Angle A — Économie du marché des talents *(SES, accessible)*
+### Angle A, Économie du marché des talents *(SES, accessible)*
 
 > *« Dans quelle mesure le marché des joueurs d'échecs professionnels illustre-t-il les mécanismes du marché du travail des talents ? »*
 
 Cet angle te fait raconter l'économie des superstars de Rosen, la rente différentielle de Ricardo, les **données** chiffrées des prix en tournois, l'asymétrie de revenus. C'est le **choix** privilégié si tu es à l'aise avec le chapitre « Marché et imperfections de marché ».
 
-### Angle B — Capital culturel et reproduction sociale *(SES, intermédiaire)*
+### Angle B, Capital culturel et reproduction sociale *(SES, intermédiaire)*
 
 > *« En quoi les échecs constituent-ils un capital culturel au sens de Bourdieu, et comment cela reproduit-il des inégalités sociales ? »*
 
 Cet angle mobilise Bourdieu (capital culturel, champ, reproduction), les mécanismes de distinction sociale, et des **exemples** empiriques sur la sociologie des joueurs. C'est solide, ancré dans le **programme**, et différenciant.
 
-### Angle C — Échecs et guerre froide *(HGGSP, intermédiaire)*
+### Angle C, Échecs et guerre froide *(HGGSP, intermédiaire)*
 
 > *« Comment les échecs ont-ils été utilisés comme instrument d'influence pendant la guerre froide, et ce rôle persiste-t-il aujourd'hui ? »*
 
 Cet angle s'inscrit dans le **thème** « Puissance et faiblesse des États ». Tu racontes Fischer-Spassky 1972, l'**histoire** des **conflits** culturels entre URSS et USA, la transformation contemporaine de l'influence par les plateformes.
 
-### Angle D — Mémoire et patrimoine *(HGGSP, avancé)*
+### Angle D, Mémoire et patrimoine *(HGGSP, avancé)*
 
 > *« Comment le match Fischer-Spassky 1972 est-il mémorialisé différemment en Russie, aux États-Unis et dans le reste du monde ? »*
 
@@ -180,27 +180,27 @@ Les échecs cochent les trois. La crise de 2008 coche le 1 et 2 mais est sur-tra
 
 ## Construire ta problématique : méthode pas à pas
 
-### Étape 1 — Identifier le concept central
+### Étape 1, Identifier le concept central
 
 Choisis un concept du **cours** que tu maîtrises bien : capital culturel, marché du travail, influence, **mémoire**, **patrimoine**, mondialisation. Tu construis autour, pas l'inverse.
 
-### Étape 2 — Trouver la tension
+### Étape 2, Trouver la tension
 
 Une bonne problématique présente une **tension** : « dans quelle mesure », « en quoi », « peut-on considérer que ». Évite le « qu'est-ce que » (descriptif, plat).
 
-### Étape 3 — Tester avec une feuille
+### Étape 3, Tester avec une feuille
 
 Prends une feuille, écris ta problématique en haut, et essaie de lister 3 arguments principaux en dessous. Si tu n'y arrives pas en 5 minutes, la problématique est mal posée.
 
-### Étape 4 — Vérifier le lien avec ton orientation
+### Étape 4, Vérifier le lien avec ton orientation
 
 Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « voilà pourquoi je veux étudier les sciences sociales ». Si tu vises une école de commerce, vers « voilà pourquoi je veux étudier la stratégie ».
 
-## Script minuté pour 10 minutes — Angle C (guerre froide et influence)
+## Script minuté pour 10 minutes, Angle C (guerre froide et influence)
 
 *Les transitions rédigées sont en italique. Les **données** chiffrées sont à citer de mémoire : c'est ce qui impressionne le **jury**.*
 
-### ⏱ 0:00–1:00 — Introduction et problématique
+### ⏱ 0:00–1:00, Introduction et problématique
 
 > *« Bonjour. Reykjavik, 1972. Bobby Fischer, Américain, affronte Boris Spassky, Soviétique, dans ce qui sera appelé « le match du siècle ». 80 millions de téléspectateurs américains suivent la finale à son apogée. Henry Kissinger appelle Fischer pour l'encourager à participer.*
 > 
@@ -208,7 +208,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > 
 > *Je développerai en trois étapes : Fischer-Spassky 1972 comme **conflit** culturel emblématique, les **limites** de cette lecture, et la transformation contemporaine. »*
 
-### ⏱ 1:00–4:00 — Partie 1 : Fischer-Spassky, un conflit culturel emblématique
+### ⏱ 1:00–4:00, Partie 1 : Fischer-Spassky, un conflit culturel emblématique
 
 > *« Le concept de **soft power**, théorisé par Joseph Nye en 1990, désigne la capacité d'un État à attirer et persuader plutôt qu'à contraindre. Les ressources d'influence sont la culture, les valeurs politiques, la politique étrangère perçue comme légitime.*
 > 
@@ -218,7 +218,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > 
 > ***Données clés :*** *le match génère 3 millions de dollars d'enjeux télévisuels (1972), une couverture dans 100 pays, et une augmentation de 300 % des adhésions aux clubs d'échecs américains l'année suivante. C'est l'un des grands **exemples** de **conflit** culturel pendant la guerre froide. »*
 
-### ⏱ 4:00–7:00 — Partie 2 : limites et nuances
+### ⏱ 4:00–7:00, Partie 2 : limites et nuances
 
 > *« Ce récit est puissant, mais plusieurs **limites** méritent d'être posées.*
 > 
@@ -230,7 +230,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > 
 > *En termes d'analyse SES/HGGSP : l'influence culturelle est efficace quand elle est cohérente avec les autres formes de puissance. Un coup isolé ne transforme pas les rapports de force. »*
 
-### ⏱ 7:00–9:00 — Partie 3 : la transformation contemporaine
+### ⏱ 7:00–9:00, Partie 3 : la transformation contemporaine
 
 > *« Aujourd'hui, l'influence échiquéenne a changé de nature.*
 > 
@@ -240,7 +240,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > 
 > ***La platformisation :*** *Chess.com compte 150 millions d'inscrits en 2024 (post-Queen's Gambit, 2020). L'influence échiquéenne est devenue culturellement diffuse : portée par des plateformes et des streamers (Nakamura, 1,5 million d'abonnés Twitch). »*
 
-### ⏱ 9:00–10:00 — Conclusion
+### ⏱ 9:00–10:00, Conclusion
 
 > *« L'influence échiquéenne a traversé trois phases : l'instrumentalisation étatique soviéto-américaine (1950-1991), la globalisation par le marché (1991-2020), et la platformisation par la culture numérique (2020-aujourd'hui).*
 > 
@@ -259,23 +259,23 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 
 ### Variante Angle B (capital culturel et reproduction)
 
-- **Partie 1 :** Bourdieu et le capital culturel — trois états (incorporé, objectivé, institutionnalisé)
-- **Partie 2 :** application aux échecs — clubs et profil socio-éducatif des parents, coût des entraîneurs
+- **Partie 1 :** Bourdieu et le capital culturel : trois états (incorporé, objectivé, institutionnalisé)
+- **Partie 2 :** application aux échecs : clubs et profil socio-éducatif des parents, coût des entraîneurs
 - **Partie 3 :** contre-exemples (Russie, Inde, Cuba où l'État finance la démocratisation)
 - **Données clés :** 60 % des licenciés FIDE en France ont au moins un parent diplômé du supérieur (INSEE, enquête 2022 reconstituée)
 
 ### Variante Angle D (mémoire et patrimoine)
 
-- **Partie 1 :** Fischer-Spassky comme **mémoire** divisée — récit américain vs récit russe vs récit international
-- **Partie 2 :** les **patrimoines** échiquéens — Reykjavik aujourd'hui, musée de l'échec à Saint-Pétersbourg, exposition Cooper-Hewitt
-- **Partie 3 :** la **mémoire** numérique — base Lichess de 4 milliards de parties, **histoire** sous forme de **données** massives
+- **Partie 1 :** Fischer-Spassky comme **mémoire** divisée : récit américain vs récit russe vs récit international
+- **Partie 2 :** les **patrimoines** échiquéens, Reykjavik aujourd'hui, musée de l'échec à Saint-Pétersbourg, exposition Cooper-Hewitt
+- **Partie 3 :** la **mémoire** numérique : base Lichess de 4 milliards de parties, **histoire** sous forme de **données** massives
 - **Sources clés :** Pierre Nora (« Les Lieux de **mémoire** ») applicable, **histoire** du Champ-de-Mars, etc.
 
 ## Anticiper l'épreuve : 25 questions de jury rédigées
 
 *En SES/HGGSP, le **jury** attend des auteurs nommés, des **données** chiffrées, et des nuances. Évite les généralités : sois précis.*
 
-### Niveau 1 — Comprendre le sujet (questions de base)
+### Niveau 1, Comprendre le sujet (questions de base)
 
 **Q1. Pourquoi avez-vous choisi les échecs pour un Grand Oral SES/HGGSP ?**
 > *« Les échecs permettent d'articuler plusieurs notions du **programme** de façon cohérente : l'influence culturelle de Nye (HGGSP), le capital culturel de Bourdieu (SES), et les mécanismes de marché du travail des talents. C'est un objet d'étude rare car il est à la fois un jeu, un sport, un outil de politique étrangère et un marché : peu de **sujets** illustrent autant de concepts différents dans le même exposé. »*
@@ -292,7 +292,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 **Q5. Comment Bourdieu définit-il le capital culturel ?**
 > *« Dans *La Distinction* (1979), Bourdieu distingue trois états : incorporé (dispositions acquises par socialisation), objectivé (biens culturels comme livres, instruments) et institutionnalisé (diplômes, titres). Aux échecs, le classement Elo est une forme institutionnalisée. La maîtrise du jeu est du capital incorporé : elle suppose une socialisation précoce et durable, inégalement distribuée. »*
 
-### Niveau 2 — Mobiliser les concepts (questions intermédiaires)
+### Niveau 2, Mobiliser les concepts (questions intermédiaires)
 
 **Q6. Les échecs reproduisent-ils des inégalités sociales ?**
 > *« Oui, selon plusieurs mécanismes bourdieusiens. La pratique est corrélée au niveau d'éducation des parents : les clubs recrutent dans les classes supérieures et dans les familles valorisant l'effort intellectuel. L'accès aux entraîneurs et tournois est coûteux. La disposition au jeu de patience correspond aux **habitus** des classes valorisant la gratification différée. Exception : dans certains pays (Russie, Inde, Cuba), les échecs ont fonctionné comme ascenseur social. »*
@@ -313,12 +313,12 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > *« La rente différentielle (Ricardo, initialement sur la terre) décrit les revenus supérieurs captés par les facteurs de production les plus rares. Aux échecs, les tournois super-élite (Tata Steel, Sinquefield Cup) n'invitent que 14 à 16 joueurs : ceux dont la présence garantit un public. Ces joueurs touchent des cachets de présence en plus des prix. Leur talent rare leur confère un accès à des revenus que d'autres joueurs très forts ne peuvent pas toucher. »*
 
 **Q12. Les échecs : mondialisation culturelle ou résistance à l'uniformisation ?**
-> *« Les deux. Mondialisation : règles FIDE universelles dans 200 pays, tournois retransmis mondialement, Chess.com unifie sur une plateforme unique. Résistance : chaque pays a sa culture échiquéenne — l'Inde valorise les finales, la Russie les positions complexes, les États-Unis le jeu rapide. Les styles nationaux persistent dans un cadre universel. C'est le paradoxe de la glocalisation (Robertson) : mondialisation et spécificités locales coexistent. »*
+> *« Les deux. Mondialisation : règles FIDE universelles dans 200 pays, tournois retransmis mondialement, Chess.com unifie sur une plateforme unique. Résistance : chaque pays a sa culture échiquéenne : l'Inde valorise les finales, la Russie les positions complexes, les États-Unis le jeu rapide. Les styles nationaux persistent dans un cadre universel. C'est le paradoxe de la glocalisation (Robertson) : mondialisation et spécificités locales coexistent. »*
 
-### Niveau 3 — Mémoire, histoire et HGGSP
+### Niveau 3, Mémoire, histoire et HGGSP
 
 **Q13. Comment Fischer-Spassky est-il mémorisé différemment en URSS et aux USA ?**
-> *« Côté américain, l'**histoire** est racontée comme triomphe du génie individuel contre le système collectiviste — récit qui colle au « rêve américain ». Côté soviétique puis russe, on insiste sur l'instabilité psychologique de Fischer (refus de jouer, exigences absurdes) pour minimiser la portée symbolique. La **mémoire** est divisée : un même événement, deux récits nationaux. C'est un cas d'école de l'**histoire**-**mémoire** au sens de Pierre Nora. »*
+> *« Côté américain, l'**histoire** est racontée comme triomphe du génie individuel contre le système collectiviste : récit qui colle au « rêve américain ». Côté soviétique puis russe, on insiste sur l'instabilité psychologique de Fischer (refus de jouer, exigences absurdes) pour minimiser la portée symbolique. La **mémoire** est divisée : un même événement, deux récits nationaux. C'est un cas d'école de l'**histoire**-**mémoire** au sens de Pierre Nora. »*
 
 **Q14. Peut-on parler de patrimoine immatériel échiquéen ?**
 > *« Oui. Les échecs ne sont pas inscrits stricto sensu au **patrimoine** UNESCO, mais le jeu de Shôgi (Japon) et le Go (Chine) sont reconnus comme **patrimoine** culturel immatériel par leurs États. Les écoles soviétiques d'entraînement (Botvinnik School) constituent un **patrimoine** intellectuel transmis dans l'**histoire** de la pédagogie échiquéenne. Reykjavik conserve la salle du match 1972 comme lieu de **mémoire**. »*
@@ -329,7 +329,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 **Q16. Quelle est la différence entre hard power et smart power dans l'exemple des échecs ?**
 > *« Le *hard power* est la coercition (sanctions, force militaire). Le *soft power* est l'attraction culturelle. Le smart power (Nye, 2004) est la combinaison intelligente. L'URSS utilisait un smart power aux échecs : influence culturelle (champions comme symboles) + ressources économiques (financement étatique). Fischer n'avait que l'influence individualiste. La victoire de 1972 tient autant au génie de Fischer qu'à l'incapacité du gouvernement américain à construire un smart power durable. »*
 
-### Niveau 4 — Critique et ouverture
+### Niveau 4, Critique et ouverture
 
 **Q17. Les inégalités d'accès aux échecs sont-elles une défaillance de marché ?**
 > *« Selon la théorie néoclassique, non : le marché alloue selon les préférences et les capacités à payer. Selon une approche institutionnaliste ou keynésienne, oui : effets de réseau (les clubs existent là où la demande est déjà forte), coûts de transaction (inscription, déplacement), et externalités positives non internalisées (bénéfices cognitifs pour l'éducation) justifient une intervention publique. L'**exemple** de Cuba (échecs financés par l'État, accessibles à tous) montre qu'une autre allocation est possible. »*
@@ -370,18 +370,18 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 
 ### Les cinq auteurs à citer
 
-- **Bourdieu** (1979) — *La Distinction*, capital culturel et reproduction sociale
-- **Nye** (1990) — *Bound to Lead*, *soft power* et influence culturelle
-- **Sen** (1999) — *Development as Freedom*, capabilités et développement humain
-- **Rosen** (1981) — *The Economics of Superstars*, économie des superstars
-- **Putnam** (2000) — *Bowling Alone*, capital social et engagement civique
+- **Bourdieu** (1979), *La Distinction*, capital culturel et reproduction sociale
+- **Nye** (1990), *Bound to Lead*, *soft power* et influence culturelle
+- **Sen** (1999), *Development as Freedom*, capabilités et développement humain
+- **Rosen** (1981), *The Economics of Superstars*, économie des superstars
+- **Putnam** (2000), *Bowling Alone*, capital social et engagement civique
 
 ### Les cinq dates pivots
 
 - **1948-1972** : domination soviétique ininterrompue (champion du monde toujours soviétique)
 - **1972** : Fischer-Spassky, Reykjavik, « match du siècle »
 - **1991** : éclatement de l'URSS, fin de l'âge d'or soviétique aux échecs
-- **2017** : AlphaZero — l'IA dépasse l'humain dans l'élite
+- **2017** : AlphaZero : l'IA dépasse l'humain dans l'élite
 - **2020** : *Queen's Gambit* sur Netflix, explosion mondiale du jeu (+300 % d'inscriptions)
 
 ### Fiche mémo SES/HGGSP
@@ -499,14 +499,14 @@ Les **cinq dernières minutes** portent sur ton projet post-bac. Prépare une r�
 
 ## Sources et références
 
-- **Bulletin officiel — Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
+- **Bulletin officiel, Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
 - **Bourdieu, P. (1979).** *La Distinction : critique sociale du jugement.* Éditions de Minuit. (Capital culturel, distinction, reproduction sociale.)
 - **Nye, J. (1990).** *Bound to Lead : The Changing Nature of American Power.* Basic Books. (Théorie du *soft power*.)
 - **Sen, A. (1999).** *Development as Freedom.* Knopf. (Approche par les capabilités.)
 - **Rosen, S. (1981).** [*The Economics of Superstars.*](https://www.jstor.org/stable/1803469) *American Economic Review*, 71(5). (Économie des superstars.)
 - **Putnam, R. (2000).** *Bowling Alone : The Collapse and Revival of American Community.* Simon & Schuster. (Capital social.)
 - **Nora, P. (1984-1992).** *Les Lieux de mémoire* (3 vol.). Gallimard. (Concept d'**histoire**-**mémoire**.)
-- **FIDE — Rapports annuels et statistiques 2024.** [fide.com](https://www.fide.com). (Données institutionnelles.)
+- **FIDE, Rapports annuels et statistiques 2024.** [fide.com](https://www.fide.com). (Données institutionnelles.)
 - **Lichess Open Database.** [lichess.org/database](https://database.lichess.org). (Base de **données** de 4 milliards de parties.)
 - **Edmonds, D. & Eidinow, J. (2004).** *Bobby Fischer Goes to War.* HarperCollins. (Récit historique de Fischer-Spassky 1972.)
 

@@ -42,11 +42,11 @@ heroImage:
 faq:
   - question: Quelle problématique choisir pour un Grand Oral NSI avec les échecs ?
     answer: >-
-      Trois angles solides : (1) 'Comment un programme informatique peut-il jouer aux échecs ?': idéal pour explorer
+      Trois angles solides : (1) 'Comment un programme informatique peut-il jouer aux échecs ?' : idéal pour explorer
       l'arbre minimax, la récursivité et la fonction d'évaluation. (2) 'En quoi l'élagage alpha-bêta illustre-t-il
-      l'optimisation d'une recherche arborescente ?': plus technique, montre une réduction de O(b^d) à O(b^(d/2)).
+      l'optimisation d'une recherche arborescente ?' : plus technique, montre une réduction de O(b^d) à O(b^(d/2)).
       (3) 'Pourquoi AlphaZero représente-t-il une rupture dans l'histoire de l'intelligence artificielle appliquée aux
-      jeux ?': angle épistémologique, idéal avec une spécialité complémentaire Maths ou Philosophie.
+      jeux ?' : angle épistémologique, idéal avec une spécialité complémentaire Maths ou Philosophie.
   - question: Peut-on montrer du code Python au jury du Grand Oral ?
     answer: >-
       Oui : c'est même recommandé en NSI. Tu peux avoir des feuilles imprimées avec ton code. Le jury peut te demander
@@ -87,7 +87,7 @@ Le **Grand Oral** est l'épreuve la mieux notée du **bac** général, à **coef
 
 | Temps | Phase | Ce que tu fais | Ce que le **jury** observe |
 |---|---|---|---|
-| 20 min | Préparation | On te donne deux **questions** issues de ton **programme** de spécialité. Tu choisis l'une des deux. Brouillon autorisé. | — |
+| 20 min | Préparation | On te donne deux **questions** issues de ton **programme** de spécialité. Tu choisis l'une des deux. Brouillon autorisé. |, |
 | 5 min | Exposé debout | Tu présentes ta **question** debout, sans notes (ou très peu). | **Posture**, voix, structure |
 | 10 min | Échange avec le **jury** | Le **jury** te questionne sur le **sujet**, ton plan, ton code. | Maîtrise, réactivité, ouverture |
 | 5 min | Projet d'**orientation** | Tu expliques comment ce **sujet** s'inscrit dans ton parcours post-bac. | Cohérence parcours |
@@ -120,19 +120,19 @@ La problématique est ta colonne vertébrale. En **NSI**, elle doit montrer que 
 
 ### Les trois angles recommandés
 
-**Angle A — Arbre de décision** *(niveau accessible)*
+**Angle A, Arbre de décision** *(niveau accessible)*
 
 > *« Comment un programme informatique peut-il prendre des décisions pour jouer aux échecs ? »*
 
 Cet angle te fait raconter l'arbre des coups, la fonction d'évaluation, le **fonctionnement** de la récursivité. Bon **choix** si tu veux rester sur du solide et bien maîtrisé.
 
-**Angle B — Optimisation algorithmique** *(niveau intermédiaire)*
+**Angle B, Optimisation algorithmique** *(niveau intermédiaire)*
 
 > *« En quoi l'élagage alpha-bêta illustre-t-il l'optimisation d'une recherche arborescente ? »*
 
 Plus technique, cet angle montre que tu sais analyser un coût en O(b^d) puis en O(b^(d/2)). C'est le **choix** privilégié quand tu maîtrises bien les **mathématiques** et que tu veux marquer des points sur le raisonnement.
 
-**Angle C — Intelligence artificielle et rupture épistémologique** *(niveau avancé)*
+**Angle C, Intelligence artificielle et rupture épistémologique** *(niveau avancé)*
 
 > *« Pourquoi AlphaZero représente-t-il une rupture dans l'histoire de l'intelligence artificielle appliquée aux jeux de stratégie ? »*
 
@@ -173,35 +173,35 @@ Les échecs cochent les trois. La **cryptographie** coche les deux premiers mais
 
 ## Construire ta problématique : méthode pas à pas
 
-### Étape 1 — Choisir un angle parmi les trois
+### Étape 1, Choisir un angle parmi les trois
 
 Tu choisis A, B ou C selon ton niveau. Marque ce **choix** sur ton brouillon en gros caractères, n'en change plus.
 
-### Étape 2 — Tester la problématique avec le « test du tiers »
+### Étape 2, Tester la problématique avec le « test du tiers »
 
-Énonce ta problématique à un tiers (parent, ami, professeur d'une autre discipline). S'il dit « je vois ce que tu vas raconter », c'est bon. S'il dit « explique-moi mieux », c'est trop technique ou trop flou — reformule.
+Énonce ta problématique à un tiers (parent, ami, professeur d'une autre discipline). S'il dit « je vois ce que tu vas raconter », c'est bon. S'il dit « explique-moi mieux », c'est trop technique ou trop flou : reformule.
 
-### Étape 3 — Vérifier qu'elle est *problématisable*
+### Étape 3, Vérifier qu'elle est *problématisable*
 
 Une bonne problématique présente une **tension** : « comment » plutôt que « qu'est-ce que ». Elle suggère qu'il y a un débat ou un mécanisme à comprendre. « Qu'est-ce que minimax ? » est une mauvaise problématique (descriptive). « Comment minimax permet-il de jouer en **temps** raisonnable ? » est meilleure (causale).
 
-### Étape 4 — Vérifier qu'elle s'aligne avec ton orientation
+### Étape 4, Vérifier qu'elle s'aligne avec ton orientation
 
 Si tu vises une école d'ingénieur, ta problématique doit pouvoir conduire au passage « voilà pourquoi je veux étudier l'**informatique** ». Si elle ne le permet pas, c'est qu'elle est mal posée.
 
-## Script minuté — problématique B (optimisation alpha-bêta)
+## Script minuté : problématique B (optimisation alpha-bêta)
 
 *Les transitions rédigées sont en italique. Le code Python est dans des blocs à expliquer oralement : tu n'as pas à le lire mot à mot, mais à l'expliquer en français clair.*
 
-### ⏱ 0:00–1:00 — Introduction et problématique
+### ⏱ 0:00–1:00, Introduction et problématique
 
 > *« Bonjour. Je vais vous parler de la façon dont un ordinateur joue aux échecs, et plus précisément, comment il choisit son coup en un **temps** raisonnable.*
 > 
-> *Les échecs ont environ 10^120 parties possibles — plus que d'atomes dans l'univers observable. Un programme qui explore tout est impossible. Ma problématique : en quoi l'élagage alpha-bêta illustre-t-il l'optimisation d'une recherche arborescente ?*
+> *Les échecs ont environ 10^120 parties possibles : plus que d'atomes dans l'univers observable. Un programme qui explore tout est impossible. Ma problématique : en quoi l'élagage alpha-bêta illustre-t-il l'optimisation d'une recherche arborescente ?*
 > 
 > *Je développerai en trois étapes : l'algorithme minimax de base, l'élagage alpha-bêta qui le rend efficace, puis les **limites** de cette approche et ce qu'AlphaZero a changé. »*
 
-### ⏱ 1:00–4:00 — Partie 1 : l'algorithme minimax
+### ⏱ 1:00–4:00, Partie 1 : l'algorithme minimax
 
 > *« L'idée de base : modéliser le jeu comme un arbre. Chaque nœud est une position, chaque branche un coup possible. Le joueur blanc cherche à maximiser son avantage, le noir à le minimiser : d'où le nom minimax.*
 > 
@@ -236,7 +236,7 @@ def minimax(position, profondeur, maximise):
 > 
 > *Quel coût ? Avec b ≈ 35 coups possibles par position et d = 4 niveaux de profondeur, le minimax explore 35^4 ≈ 1,5 million de positions. Sur 6 niveaux : 35^6 ≈ 1,8 milliard. La croissance est exponentielle, O(b^d). »*
 
-### ⏱ 4:00–7:00 — Partie 2 : l'élagage alpha-bêta
+### ⏱ 4:00–7:00, Partie 2 : l'élagage alpha-bêta
 
 > *« Le problème du minimax : il explore des branches inutiles. L'élagage alpha-bêta coupe ces branches sans changer le résultat.*
 > 
@@ -276,7 +276,7 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
 > 
 > *Gain pratique : dans le meilleur cas (coups triés par ordre de qualité), alpha-bêta réduit le coût à O(b^(d/2)). Soit 35^2 = 1 225 positions pour d = 4 au lieu de 1,5 million. On passe de l'impossible au réalisable en quelques millisecondes. »*
 
-### ⏱ 7:00–9:00 — Partie 3 : limites et rupture AlphaZero
+### ⏱ 7:00–9:00, Partie 3 : limites et rupture AlphaZero
 
 > *« L'élagage alpha-bêta est élégant, mais avec des **limites** structurelles.*
 > 
@@ -288,7 +288,7 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
 > 
 > *Ce n'est plus une optimisation : c'est un paradigme différent. Au lieu de chercher dans un arbre, il apprend à reconnaître des positions. »*
 
-### ⏱ 9:00–10:00 — Conclusion
+### ⏱ 9:00–10:00, Conclusion
 
 > *« L'élagage alpha-bêta illustre un principe fondamental de l'**informatique** : optimiser ne consiste pas à chercher toutes les solutions, mais à éliminer intelligemment les mauvaises.*
 > 
@@ -316,7 +316,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 
 *Le **jury** **NSI** pose souvent des **questions** sur le code, le coût, et les distinctions algorithmiques. Prépare-toi à tracer une exécution à la main sur brouillon.*
 
-### Niveau 1 — Comprendre le vocabulaire (questions de base)
+### Niveau 1, Comprendre le vocabulaire (questions de base)
 
 **Q1. Pourquoi avoir choisi les échecs pour votre Grand Oral NSI ?**
 > *« Les échecs concentrent plusieurs notions clés du **programme** de spé : la récursivité avec minimax, les arbres de décision, le coût algorithmique, et plus récemment l'apprentissage automatique avec AlphaZero. C'est un cas d'étude historiquement documenté (de Deep Blue en 1997 à AlphaZero en 2017) qui permet de voir l'évolution des paradigmes en intelligence artificielle. »*
@@ -333,7 +333,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 **Q5. Calculez le coût de minimax pour b=30 coups et d=3 niveaux.**
 > *« O(b^d) = 30^3 = 27 000 positions à explorer. Avec alpha-bêta dans le meilleur cas : O(b^(d/2)) = 30^1,5 = 30 × √30 ≈ 30 × 5,5 ≈ 165 positions. Le gain est d'un facteur 163 : on passe de 27 000 à 165 évaluations. »*
 
-### Niveau 2 — Comprendre les mécanismes (questions intermédiaires)
+### Niveau 2, Comprendre les mécanismes (questions intermédiaires)
 
 **Q6. Expliquez la condition `if beta <= alpha : break` dans le code alpha-bêta.**
 > *« Cette condition est la coupure alpha-bêta. `alpha` est le meilleur score que les Blancs peuvent garantir sur la branche actuelle. `beta` est le meilleur score que les Noirs peuvent garantir. Si `beta ≤ alpha`, les Noirs n'accepteront jamais ce résultat : ils ont déjà une meilleure option ailleurs. Il est donc inutile d'explorer les coups restants sur cette branche : elle sera ignorée par le joueur noir quoi qu'il arrive. »*
@@ -356,7 +356,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 **Q12. Quelle est la structure du réseau de neurones dans AlphaZero ?**
 > *« AlphaZero utilise un réseau résiduel profond (ResNet) avec deux têtes de sortie. La tête de valeur retourne un nombre entre -1 et 1 : l'estimation de qui va gagner depuis cette position. La tête de politique retourne une distribution de probabilité sur les coups possibles : lesquels méritent d'être explorés. Ces deux sorties guident une recherche Monte Carlo Tree Search (MCTS) qui remplace le minimax classique. »*
 
-### Niveau 3 — Nuances et limites (questions avancées)
+### Niveau 3, Nuances et limites (questions avancées)
 
 **Q13. Pourquoi AlphaZero est-il plus difficile à analyser qu'un programme minimax ?**
 > *« Un programme minimax est explicable : pour chaque coup choisi, on peut retracer l'arbre et voir les variations considérées. AlphaZero est une boîte noire : le réseau de neurones a des centaines de millions de paramètres, et on ne peut pas dire « pourquoi » il joue un coup en termes de règles. C'est le problème général de l'explicabilité des réseaux de neurones profonds : leur performance est remarquable mais leur raisonnement est opaque. »*
@@ -382,7 +382,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 **Q20. Un algorithme parfait aux échecs est-il possible en principe ?**
 > *« En principe oui : le théorème de Zermelo (1913) garantit que les échecs ont un résultat optimal sous jeu parfait. Cet algorithme parfait serait un minimax à profondeur infinie : explorer tout l'arbre. En pratique, avec 10^120 feuilles, c'est physiquement impossible même pour toute la puissance de calcul de l'univers pendant toute son histoire. Les échecs ne seront jamais « résolus » comme les dames (2007) ou le morpion : leur taille les place hors de portée de la force brute. »*
 
-### Niveau 4 — Ouvertures et liens transversaux
+### Niveau 4, Ouvertures et liens transversaux
 
 **Q21. Les techniques d'IA des échecs s'appliquent-elles à d'autres domaines ?**
 > *« Oui, c'est l'un des intérêts majeurs. DeepMind a appliqué les principes d'AlphaZero à AlphaFold (repliement de protéines, prix Nobel de chimie 2024) et à MuZero (jeux dont on ne connaît même pas les règles). Les **mathématiques** de l'apprentissage par renforcement viennent aussi des recherches sur les jeux. C'est un domaine de recherche où les échecs sont le banc d'essai historique. »*
@@ -431,7 +431,7 @@ Voici une fiche mémo concentrée que tu peux imprimer ou recopier sur une feuil
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║          COÛTS ALGORITHMIQUES — GRAND ORAL NSI               ║
+║          COÛTS ALGORITHMIQUES, GRAND ORAL NSI               ║
 ╠══════════════════════════════════════════════════════════════╣
 ║ MINIMAX (sans optimisation)                                  ║
 ║   Coût temporel : O(b^d)                                     ║
@@ -554,11 +554,11 @@ C'est la partie où beaucoup décrochent par fatigue. Tiens bon. Prépare une r�
 
 ## Sources et références
 
-- **Bulletin officiel — Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
+- **Bulletin officiel, Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
 - **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*. (Fondation de l'algorithme minimax.)
 - **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero : apprentissage par renforcement et MCTS.)
 - **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*. (Analyse formelle de la coupure alpha-bêta.)
-- **Documentation Stockfish.** [*Stockfish Chess Engine — Source code.*](https://github.com/official-stockfish/Stockfish) GitHub. (Référence pour l'implémentation réelle.)
+- **Documentation Stockfish.** [*Stockfish Chess Engine, Source code.*](https://github.com/official-stockfish/Stockfish) GitHub. (Référence pour l'implémentation réelle.)
 - **Lichess Open Database.** [*lichess.org/database*](https://database.lichess.org). (Base de **données** publique de parties d'échecs au format PGN.)
 - **Sadler, M. & Regan, N. (2019).** *Game Changer : AlphaZero's Groundbreaking Chess Strategies.* New In Chess. (Analyse du style d'AlphaZero, accessible aux lycéens.)
 - **Russell, S. & Norvig, P.** *Artificial Intelligence : A Modern Approach* (4e éd., 2020). Pearson. (Manuel de référence IA pour CPGE, chapitres 5-6 sur minimax.)

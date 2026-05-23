@@ -41,7 +41,7 @@ Le **Grand Oral du bac** est une **épreuve** terminale d'une durée totale de *
 
 | Temps | Phase | Ce que tu fais | Ce que le **jury** évalue |
 |---|---|---|---|
-| 20 min | Préparation | On te donne deux **questions** issues de ton programme. Tu en choisis une. Brouillon autorisé. | — |
+| 20 min | Préparation | On te donne deux **questions** issues de ton programme. Tu en choisis une. Brouillon autorisé. |, |
 | 5 min | Exposé debout | Tu présentes ta **question** debout, sans notes (ou très peu). | **Posture**, voix, structure |
 | 10 min | Échange avec le jury | Le **jury** te questionne sur le **sujet**, le **programme**, ta **méthode**. | Maîtrise, réactivité, ouverture |
 | 5 min | Projet d'orientation | Tu expliques comment ce **sujet** entre dans ton projet post-bac. | Cohérence parcours |
@@ -76,9 +76,9 @@ Les échecs sont l'un des **enjeux** les plus étudiés de toute l'histoire de l
 
 ### Trois faits historiques que le jury appréciera
 
-1. **1950** — [Alan Turing](https://fr.wikipedia.org/wiki/Alan_Turing) écrit le premier programme d'échecs sur papier (faute de machine assez puissante pour l'exécuter). Il invente au passage une grande **partie** du vocabulaire de l'IA moderne.
-2. **1950** — [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) publie *Programming a Computer for Playing Chess*. Il distingue deux stratégies pour jouer aux échecs sur machine : **type A** (force brute, exploration exhaustive) et **type B** (sélection guidée par l'expertise). Cette distinction structure toute l'IA contemporaine.
-3. **2017** — [DeepMind](https://fr.wikipedia.org/wiki/DeepMind) publie [AlphaZero](https://fr.wikipedia.org/wiki/AlphaZero), qui bat Stockfish (alors le moteur le plus fort du monde) après **quatre heures** d'auto-apprentissage. C'est l'incarnation d'un changement de paradigme : du symbolique vers le connexionniste.
+1. **1950**, [Alan Turing](https://fr.wikipedia.org/wiki/Alan_Turing) écrit le premier programme d'échecs sur papier (faute de machine assez puissante pour l'exécuter). Il invente au passage une grande **partie** du vocabulaire de l'IA moderne.
+2. **1950**, [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) publie *Programming a Computer for Playing Chess*. Il distingue deux stratégies pour jouer aux échecs sur machine : **type A** (force brute, exploration exhaustive) et **type B** (sélection guidée par l'expertise). Cette distinction structure toute l'IA contemporaine.
+3. **2017**, [DeepMind](https://fr.wikipedia.org/wiki/DeepMind) publie [AlphaZero](https://fr.wikipedia.org/wiki/AlphaZero), qui bat Stockfish (alors le moteur le plus fort du monde) après **quatre heures** d'auto-apprentissage. C'est l'incarnation d'un changement de paradigme : du symbolique vers le connexionniste.
 
 Tu vas donc pouvoir construire ton **oral** sur 67 ans d'histoire **informatique** condensée en un seul **exemple**, avec du code Python à montrer pour chaque étape.
 
@@ -125,19 +125,19 @@ Quelle que soit ton **orientation**, garde en tête que le **jury** cherche un *
 
 Le **jury** n'attend **pas** une dissertation : il attend une **question** précise qui orientera ton exposé. Trois angles fonctionnent particulièrement bien :
 
-### Angle 1 — Le combat entre deux paradigmes
+### Angle 1, Le combat entre deux paradigmes
 
 > **« Comment les échecs ont-ils permis le passage de l'IA symbolique à l'IA par apprentissage ? »**
 
 Cet angle te fait raconter Deep Blue (1997, symbolique) puis AlphaZero (2017, connexionniste) en t'appuyant sur le code des deux approches. C'est le **sujet** qui **révolutionne** le mieux la perception du **jury** sur ton niveau de réflexion.
 
-### Angle 2 — La complexité comme contrainte
+### Angle 2, La complexité comme contrainte
 
 > **« Pourquoi 10^120 positions possibles obligent-elles l'informatique à inventer de nouveaux algorithmes ? »**
 
 Cet angle est plus mathématique. Tu démarres sur le nombre de Shannon (10^120 parties possibles aux échecs), tu montres que la force brute est impossible, et tu déroules les solutions : alpha-bêta, **systèmes** de pondération, MCTS. C'est l'angle préféré des candidats matheux.
 
-### Angle 3 — Du jeu à la science fondamentale
+### Angle 3, Du jeu à la science fondamentale
 
 > **« Les échecs sont-ils un terrain d'expérimentation pour l'intelligence artificielle moderne ? »**
 
@@ -149,34 +149,34 @@ Angle large, orienté **enjeux** et **orientation**. Tu présentes les échecs c
 
 Voici le plan détaillé que tu peux adapter. Les temps sont indicatifs mais tiennent au chrono.
 
-### Phase 1 — Introduction (3 minutes)
+### Phase 1, Introduction (3 minutes)
 
 - **Accroche** (30 s) : « En 1997, Garry Kasparov perd contre Deep Blue, et déclare : "j'ai vu un changement de paradigme". Vingt ans plus tard, AlphaZero apprend à jouer aux échecs en **quatre heures**, sans connaissance humaine. **Question** : que s'est-il passé entre les deux ? »
 - **Contexte** (1 min) : rappel rapide de la place des échecs en **informatique** (Turing 1950, Shannon 1950, **systèmes** Deep Blue 1997, AlphaZero 2017).
 - **Problématique** (30 s) : annonce claire de ta **question**.
 - **Plan annoncé** (1 min) : « Je vais d'abord présenter l'algorithme minimax, puis les structures de données qui le supportent, puis le basculement vers l'apprentissage automatique. »
 
-### Phase 2 — Algorithmes et complexité (6 minutes)
+### Phase 2, Algorithmes et complexité (6 minutes)
 
 - **Minimax** (2 min) : présentation du code Python ligne par ligne sur tableau ou diapo.
 - **Alpha-bêta** (2 min) : optimisation, coupure expliquée sur un arbre dessiné.
 - **Complexité** (1 min) : O(b^d) → O(b^(d/2)), traduction en nombre de positions explorées.
 - **Mémoïsation** (1 min) : table de transposition, dictionnaire Python.
 
-### Phase 3 — Structures et représentation (4 minutes)
+### Phase 3, Structures et représentation (4 minutes)
 
 - **Tableau 2D vs bitboard** (2 min) : comparaison en termes de **temps** d'accès et d'opérations bit à bit.
 - **Format PGN** (1 min) : données structurées, parsage avec regex Python.
 - **Hachage Zobrist** (1 min) : XOR pour stocker une position en 64 bits.
 
-### Phase 4 — IA et apprentissage (5 minutes)
+### Phase 4, IA et apprentissage (5 minutes)
 
 - **Stockfish** (1 min) : approche symbolique, fonction d'évaluation explicite.
 - **AlphaZero** (2 min) : réseau de valeur + réseau de politique + MCTS.
 - **Apprentissage par renforcement** (1 min) : signal de récompense, auto-jeu.
 - **Comparaison** (1 min) : tableau Stockfish vs AlphaZero, 28-0-72 sur 100 parties.
 
-### Phase 5 — Conclusion (2 minutes)
+### Phase 5, Conclusion (2 minutes)
 
 - **Synthèse** (45 s) : les échecs ont permis à l'**informatique** de passer de l'algorithme explicite à l'apprentissage implicite.
 - **Ouverture** (45 s) : transposition à AlphaFold (repliement de protéines), au Go, à d'autres jeux à information complète.
@@ -385,7 +385,7 @@ AlphaZero utilise deux réseaux de neurones simultanément :
 
 Ces deux réseaux guident la **Monte Carlo Tree Search (MCTS)** : au lieu d'explorer l'arbre de manière uniforme, MCTS concentre les ressources sur les coups que le réseau de politique juge prometteurs, et corrige cette estimation grâce aux résultats des simulations.
 
-Pour NSI, l'argument clé est celui du **paradigme** : Stockfish dit *explicitement* à la machine ce qui est une bonne position. AlphaZero *apprend* ce qu'est une bonne position. Le premier paradigme est celui de la **programmation impérative**, le second celui de **l'apprentissage automatique** — tous deux au **programme**.
+Pour NSI, l'argument clé est celui du **paradigme** : Stockfish dit *explicitement* à la machine ce qui est une bonne position. AlphaZero *apprend* ce qu'est une bonne position. Le premier paradigme est celui de la **programmation impérative**, le second celui de **l'apprentissage automatique**: tous deux au **programme**.
 
 ### Machine learning vs algorithmes classiques
 
@@ -437,7 +437,7 @@ def extraire_metadata(pgn_text):
 
 pgn = '[Event "Test"][Date "2026.04.28"][White "Alice"][Black "Bob"]'
 metadata = extraire_metadata(pgn)
-# {'Event': 'Test', 'Date': '2026.04.28', 'White': 'Alice', 'Black': 'Bob'}
+# {'Event' : 'Test', 'Date' : '2026.04.28', 'White' : 'Alice', 'Black' : 'Bob'}
 ```
 
 ### SQL sur une base de parties
@@ -499,7 +499,7 @@ Ce code illustre les notions d'**opérateurs XOR**, de **tables de hachage**, et
 
 ## FAQ jury : 15 questions classées par difficulté
 
-Voici les **questions** que le **jury** est le plus susceptible de poser. Apprends les réponses par cœur — pas pour les réciter, mais pour avoir les **questions** dans les jambes le **jour** J.
+Voici les **questions** que le **jury** est le plus susceptible de poser. Apprends les réponses par cœur : pas pour les réciter, mais pour avoir les **questions** dans les jambes le **jour** J.
 
 ### Niveau facile (le jury teste si tu maîtrises le vocabulaire)
 
@@ -538,7 +538,7 @@ C'est un dictionnaire (clé = hash de la position, valeur = score et profondeur 
 Leur **fonctionnement** repose sur une fonction d'évaluation programmée par des humains. Ils ne peuvent **pas** dépasser la qualité de cette fonction. AlphaZero a montré qu'un réseau appris peut surpasser cette fonction.
 
 **11. Pourquoi le nombre 10^120 (nombre de Shannon) est-il une limite fondamentale ?**
-C'est le nombre estimé de **parties** possibles aux échecs. Ce nombre dépasse le nombre d'atomes dans l'univers observable (≈ 10^80). Aucun ordinateur ne pourra jamais explorer toutes les parties par force brute — d'où la nécessité d'algorithmes intelligents.
+C'est le nombre estimé de **parties** possibles aux échecs. Ce nombre dépasse le nombre d'atomes dans l'univers observable (≈ 10^80). Aucun ordinateur ne pourra jamais explorer toutes les parties par force brute : d'où la nécessité d'algorithmes intelligents.
 
 **12. Quelle est la différence entre MCTS et alpha-bêta ?**
 Alpha-bêta explore l'arbre de manière déterministe et exhaustive jusqu'à une profondeur fixe, en coupant ce qui est prouvé inutile. MCTS échantillonne aléatoirement les coups prometteurs et joue des simulations aléatoires jusqu'à la fin de la partie. AlphaZero combine MCTS avec un réseau de neurones qui guide l'échantillonnage.
@@ -581,7 +581,7 @@ La principale **question** est la triche : les moteurs étant plus forts que tou
 
 Tu es debout pendant les cinq premières **minutes** de ton exposé. La **posture** compte plus que tu ne crois : pieds ancrés à largeur d'épaules, mains visibles (**pas** dans les poches), regard distribué entre les **deux** membres du **jury**.
 
-Évite la **parole** trop rapide — l'angoisse fait toujours accélérer. Repère un fait technique précis (« le facteur de branchement est de 35 ») et utilise-le comme balise pour ralentir. Si tu sens que tu vas trop vite, marque une pause d'**une heure** humaine (une seconde réelle) après chaque chiffre clé.
+Évite la **parole** trop rapide : l'angoisse fait toujours accélérer. Repère un fait technique précis (« le facteur de branchement est de 35 ») et utilise-le comme balise pour ralentir. Si tu sens que tu vas trop vite, marque une pause d'**une heure** humaine (une seconde réelle) après chaque chiffre clé.
 
 ### Gestion du stress avant l'épreuve
 
@@ -636,7 +636,7 @@ Les cinq dernières **minutes** portent sur ton projet post-bac. Prépare une **
 - **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero : apprentissage par renforcement et MCTS.)
 - **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*, 6(4), 293-326. (Analyse formelle de la complexité de l'élagage alpha-bêta.)
 - **Zobrist, A. L. (1970).** *A New Hashing Method with Application for Game Playing.* ICCA Journal. (Invention du hachage de Zobrist pour les tables de transposition.)
-- **Bulletin officiel — Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'épreuve.)
+- **Bulletin officiel, Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'épreuve.)
 - **Documentation Stockfish.** [*Stockfish Chess Engine : Source code.*](https://github.com/official-stockfish/Stockfish) GitHub. (Code source du moteur open source, référence pour l'implémentation réelle.)
 - **Lichess Open Database.** [*lichess.org/database*](https://database.lichess.org). (Base de données publique de parties d'échecs au format PGN.)
 - **Sadler, M. & Regan, N. (2019).** *Game Changer : AlphaZero's Groundbreaking Chess Strategies.* New In Chess. (Analyse approfondie du style d'AlphaZero, accessible aux lycéens.)

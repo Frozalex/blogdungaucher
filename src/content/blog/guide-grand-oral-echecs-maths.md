@@ -89,7 +89,7 @@ Le **Grand Oral** est l'**épreuve** la mieux notée du **bac** général, à **
 
 | Temps | Phase | Ce que tu fais | Ce que le **jury** observe |
 |---|---|---|---|
-| 20 min | Préparation | Choix entre deux **questions** issues de ton **programme**. Brouillon autorisé. | — |
+| 20 min | Préparation | Choix entre deux **questions** issues de ton **programme**. Brouillon autorisé. |, |
 | 5 min | Exposé debout | Présentation de ta **question** debout, sans notes ou très peu. | **Posture**, voix, structure |
 | 10 min | Échange | Le **jury** te questionne sur le **sujet**, ton plan, tes calculs. | Maîtrise, réactivité, ouverture |
 | 5 min | Projet d'**orientation** | Tu expliques comment ce **sujet** s'inscrit dans ton parcours post-bac. | Cohérence parcours |
@@ -128,25 +128,25 @@ Le **jury Maths** attend trois éléments spécifiques :
 
 La problématique est la colonne vertébrale de l'exposé. Elle doit être claire, ancrée dans le **programme** de **terminale** **mathématiques**, et suffisamment ouverte pour permettre une réponse nuancée.
 
-### Angle A — Combinatoire et dénombrement *(niveau accessible)*
+### Angle A, Combinatoire et dénombrement *(niveau accessible)*
 
 > *« En quoi le jeu d'échecs constitue-t-il un modèle de la pensée combinatoire ? »*
 
 Cet angle te fait raconter le principe multiplicatif, le nombre de Shannon (10^120), la croissance exponentielle des arbres. **Choix** privilégié si tu maîtrises bien le chapitre dénombrement-combinatoire.
 
-### Angle B — Probabilités et classement Elo *(niveau intermédiaire)*
+### Angle B, Probabilités et classement Elo *(niveau intermédiaire)*
 
 > *« Dans quelle mesure les probabilités permettent-elles de modéliser et prédire la performance aux échecs ? »*
 
 Cet angle mobilise la loi binomiale, la formule Elo (fonction logistique), les suites récurrentes pour la mise à jour de cote. C'est le **choix** le plus polyvalent : tu touches à plusieurs chapitres du **programme**.
 
-### Angle C — Complexité algorithmique *(niveau avancé)*
+### Angle C, Complexité algorithmique *(niveau avancé)*
 
 > *« Pourquoi les mathématiques prouvent-elles que les échecs ne seront jamais résolus par la force brute ? »*
 
 Cet angle s'appuie sur le théorème de Zermelo (1913) et l'analyse de complexité O(b^d). À choisir si tu as **NSI** en spécialité complémentaire ou si tu es à l'aise avec l'analyse asymptotique.
 
-### Angle D — Modélisation et limites *(niveau avancé)*
+### Angle D, Modélisation et limites *(niveau avancé)*
 
 > *« Quels modèles **mathématiques** permettent de comprendre les échecs, et où sont leurs limites ? »*
 
@@ -187,27 +187,27 @@ Les échecs cochent les trois. La cryptographie RSA coche les deux premiers mais
 
 ## Construire ta problématique : méthode pas à pas
 
-### Étape 1 — Identifier le chapitre central
+### Étape 1, Identifier le chapitre central
 
 Choisis un chapitre du **cours** que tu maîtrises bien : combinatoire, probabilités, suites, fonctions, algèbre linéaire. Tu construis la problématique autour de ce chapitre.
 
-### Étape 2 — Trouver la tension
+### Étape 2, Trouver la tension
 
 Une bonne problématique présente une **tension** : « dans quelle mesure », « en quoi », « pourquoi peut-on (ou non) ». Évite le « qu'est-ce que » (descriptif, plat).
 
-### Étape 3 — Vérifier la faisabilité en 10 minutes
+### Étape 3, Vérifier la faisabilité en 10 minutes
 
 Prends une feuille et écris ta problématique en haut. Liste 3 arguments principaux en dessous, chacun appuyé par une formule ou un **exemple** numérique. Si tu n'y arrives pas en 10 minutes, la problématique est trop large.
 
-### Étape 4 — Vérifier le lien avec l'orientation
+### Étape 4, Vérifier le lien avec l'orientation
 
 Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au passage « voilà pourquoi je veux faire des **mathématiques** en prépa ». Si tu vises une école de commerce, vers « voilà pourquoi je veux faire un cursus quantitatif ».
 
-## Script minuté pour 10 minutes — Angle B (modèle probabiliste)
+## Script minuté pour 10 minutes, Angle B (modèle probabiliste)
 
 *Les transitions rédigées sont en italique. Adapte à ta voix mais garde les formules telles quelles. Durée totale : 10 minutes. Le **jury** posera ses **questions** ensuite pendant 10 minutes.*
 
-### ⏱ 0:00–1:00 — Introduction et problématique
+### ⏱ 0:00–1:00, Introduction et problématique
 
 > *« Bonjour. Je vais vous parler des échecs : pas comme jeu, mais comme objet mathématique.*
 > 
@@ -217,7 +217,7 @@ Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au pa
 > 
 > *Je répondrai en trois étapes : la loi binomiale appliquée à un match, le classement Elo comme suite récurrente, puis les **limites** de ces modèles. »*
 
-### ⏱ 1:00–4:00 — Partie 1 : la loi binomiale appliquée à un match
+### ⏱ 1:00–4:00, Partie 1 : la loi binomiale appliquée à un match
 
 > *« Commençons par la modélisation la plus directe. Deux joueurs de même niveau, 10 parties : le nombre de points du joueur A suit une loi binomiale B(10 ; 0,5).*
 > 
@@ -235,7 +235,7 @@ Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au pa
 > 
 > ***La limite :*** *p = 0,5 suppose des niveaux identiques. En réalité, deux joueurs ne sont jamais exactement au même niveau. C'est là qu'intervient Elo. »*
 
-### ⏱ 4:00–8:00 — Partie 2 : le classement Elo comme suite récurrente
+### ⏱ 4:00–8:00, Partie 2 : le classement Elo comme suite récurrente
 
 > *« Le classement Elo estime la vraie probabilité p entre deux joueurs quelconques.*
 > 
@@ -263,7 +263,7 @@ Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au pa
 > 
 > *La suite $u_{n+1} = u_n + K(r_n - p_n)$ converge vers la vraie force du joueur quand n devient grand : c'est la loi des grands nombres en action. »*
 
-### ⏱ 8:00–9:30 — Partie 3 : les limites du modèle
+### ⏱ 8:00–9:30, Partie 3 : les limites du modèle
 
 > *« Ces modèles sont élégants, mais avec des **limites** précises.*
 > 
@@ -273,7 +273,7 @@ Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au pa
 > 
 > ***Limite 3, la plus profonde :*** *le théorème de Zermelo (1913) prouve que les échecs ont un résultat déterminé sous jeu parfait. Mais on ne sait pas lequel. Le modèle probabiliste est *nécessaire* parce que le modèle déterministe est *inaccessible*. Les probabilités ne remplacent pas la certitude, elles la modélisent en son absence. »*
 
-### ⏱ 9:30–10:00 — Conclusion
+### ⏱ 9:30–10:00, Conclusion
 
 > *« Les probabilités modélisent la performance aux échecs avec une précision remarquable : la formule Elo prédit les résultats à moins de 5 % d'erreur sur de grandes séries. Mais avec des hypothèses qui ne sont qu'approximativement vraies.*
 > 
@@ -306,7 +306,7 @@ Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au pa
 
 *Classées du plus facile au plus difficile. Le **jury** pose en général 4 à 6 **questions** dans ces 10 minutes d'échange.*
 
-### Niveau 1 — Comprendre les formules (questions de base)
+### Niveau 1, Comprendre les formules (questions de base)
 
 **Q1. Pourquoi avez-vous choisi les échecs comme sujet ?**
 > *« Les échecs m'ont permis d'ancrer des notions abstraites du **programme** (loi binomiale, suites récurrentes) dans un objet concret et historiquement documenté. Le classement Elo est une application directe du **cours** sur les probabilités et les suites, et le nombre de Shannon illustre de façon spectaculaire la croissance exponentielle. »*
@@ -323,7 +323,7 @@ Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au pa
 **Q5. Qu'est-ce qu'une suite récurrente, et comment le classement Elo en est-il une ?**
 > *« Une suite récurrente définit chaque terme à partir du précédent. Ici : R_{n+1} = R_n + K×(r_n - p_n). Le terme R_{n+1} (classement après la n+1-ième partie) dépend de R_n et du résultat de la partie. C'est bien une suite récurrente, et elle converge quand le niveau du joueur est constant, parce que les corrections se font autour de la vraie valeur. »*
 
-### Niveau 2 — Mobiliser les concepts (questions intermédiaires)
+### Niveau 2, Mobiliser les concepts (questions intermédiaires)
 
 **Q6. La loi binomiale s'applique-t-elle vraiment aux parties d'échecs ?**
 > *« Elle s'applique avec des hypothèses simplificatrices : les parties sont traitées comme des expériences identiques et indépendantes de probabilité p fixée. En pratique, ces hypothèses sont approximatives : les joueurs évoluent, les parties s'influencent psychologiquement. La loi binomiale est un modèle utile pour raisonner sur des grandes séries, pas un descripteur parfait de la réalité d'un match. »*
@@ -355,7 +355,7 @@ Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au pa
 **Q15. Pourquoi le coefficient K est-il un paramètre de compromis statistique ?**
 > *« K contrôle la vitesse d'adaptation de la cote. Un K grand → adaptation rapide → variance élevée (la cote fluctue beaucoup). Un K petit → adaptation lente → biais si le niveau du joueur a vraiment changé. C'est le classique biais-variance trade-off de la statistique : on ne peut pas avoir simultanément une cote qui réagit vite aux changements de niveau ET qui reste stable face au bruit. »*
 
-### Niveau 3 — Nuances et limites (questions avancées)
+### Niveau 3, Nuances et limites (questions avancées)
 
 **Q16. Pouvez-vous donner un exemple d'application de la loi des grands nombres aux échecs ?**
 > *« La loi des grands nombres dit que la moyenne d'un grand nombre de variables aléatoires indépendantes et identiquement distribuées converge vers leur espérance. En échecs : si un joueur A joue des milliers de parties contre des adversaires calibrés à son niveau (p=0,5), son taux de victoire converge vers 50 %. En pratique, c'est la justification théorique du classement Elo : après suffisamment de parties, la cote converge vers la vraie force. »*
@@ -372,7 +372,7 @@ Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au pa
 **Q20. Si les échecs sont théoriquement déterminés, les stratégies probabilistes sont-elles pertinentes ?**
 > *« Oui, et c'est le point philosophique le plus profond du **sujet**. Les stratégies probabilistes sont pertinentes précisément parce que le jeu parfait déterministe est inaccessible à un joueur réel. La rationalité limitée (Simon, 1955) prédit que les agents qui ne peuvent pas résoudre exactement un problème utilisent des heuristiques probabilistes. Les probabilités sont l'outil de la raison limitée. »*
 
-### Niveau 4 — Ouvertures et liens transversaux
+### Niveau 4, Ouvertures et liens transversaux
 
 **Q21. Le modèle d'Elo s'applique-t-il à d'autres domaines que les échecs ?**
 > *« Oui, très largement. Le tennis utilise un système ATP analogue. Le football utilise les ratings ELO d'équipes (websites de classement non officiels). Le ranking de Google PageRank repose sur des principes similaires (matrices stochastiques). En finance, les modèles de notation de crédit utilisent des sigmoïdes pour estimer la probabilité de défaut. La fonction logistique est l'un des outils universels de la modélisation des choix binaires. »*
@@ -536,7 +536,7 @@ Les **cinq dernières minutes** portent sur ton projet post-bac. Prépare une r�
 
 ## Sources et références
 
-- **Bulletin officiel — Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
+- **Bulletin officiel, Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
 - **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*. (Calcul du nombre de parties d'échecs.)
 - **Zermelo, E. (1913).** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* Actes du Congrès international des mathématiciens. (Théorème fondamental sur les jeux à somme nulle.)
 - **Elo, A. (1978).** *The Rating of Chessplayers, Past and Present.* Arco. (Système de classement Elo originel.)
@@ -544,7 +544,7 @@ Les **cinq dernières minutes** portent sur ton projet post-bac. Prépare une r�
 - **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*, 6(4). (Analyse formelle de la complexité.)
 - **Schaeffer, J., et al. (2007).** *Checkers Is Solved.* Science, 317(5844). (Résolution des dames.)
 - **Lichess Open Database.** [lichess.org/database](https://database.lichess.org). (4 milliards de parties disponibles pour analyse statistique.)
-- **FIDE — Handbook (2024).** [fide.com/regulations](https://www.fide.com/regulations). (Règlement officiel du calcul de la cote Elo.)
+- **FIDE, Handbook (2024).** [fide.com/regulations](https://www.fide.com/regulations). (Règlement officiel du calcul de la cote Elo.)
 
 ---
 
