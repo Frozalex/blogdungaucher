@@ -24,7 +24,7 @@ faq:
 ---
 Tu es en spécialité **mathématiques** en **terminale** ; le **Grand Oral du bac** approche. Tu cherches un **sujet** **ancré dans le programme**, personnel, et moins rabâché que la vingtième fractale ou la suite de Fibonacci.
 
-**Proposition centrale :** les échecs comme terrain d'application **complet** du **programme** — combinatoire (explosion des positions), probabilités (tournoi, Elo), suites récurrentes (mise à jour de cote), algorithmique (minimax). Pas un survol : une table d'équivalences chapitre ↔ échiquier, puis les livrables ci-dessous (formules, **exemples** chiffrés, plans, **questions** **jury**, **fiches** anti-sèche et **conseils** de **préparation**).
+**Proposition centrale :** les échecs comme terrain d'application **complet** du **programme** - combinatoire (explosion des positions), probabilités (tournoi, Elo), suites récurrentes (mise à jour de cote), algorithmique (minimax). Pas un survol : une table d'équivalences chapitre ↔ échiquier, puis les livrables ci-dessous (formules, **exemples** chiffrés, plans, **questions** **jury**, **fiches** anti-sèche et **conseils** de **préparation**).
 
 > **📥 Télécharger ce sujet en PDF** via le bouton en haut de la page pour l'avoir hors-ligne sur tablette, téléphone ou ordinateur.
 
@@ -194,19 +194,19 @@ L'élagage **alpha-bêta** réduit la complexité effective à $O(b^{d/2})$ dans
 
 La problématique est la colonne vertébrale de l'exposé. Elle doit être claire, ancrée dans le **programme** de **terminale** **mathématiques**, et suffisamment ouverte pour permettre une réponse nuancée.
 
-### Étape 1 — Identifier le chapitre central
+### Étape 1 - Identifier le chapitre central
 
 Choisis un chapitre du **cours** que tu maîtrises bien : combinatoire, probabilités, suites, fonctions, algèbre. Tu construis la problématique autour de ce chapitre, pas l'inverse.
 
-### Étape 2 — Trouver la tension
+### Étape 2 - Trouver la tension
 
 Une bonne problématique présente une **tension** : « dans quelle mesure », « en quoi », « pourquoi peut-on (ou non) ». Évite le « qu'est-ce que » descriptif. Le **jury** valorise la **question** qui suggère un débat ou un mécanisme, pas la simple définition.
 
-### Étape 3 — Vérifier la faisabilité en 10 minutes
+### Étape 3 - Vérifier la faisabilité en 10 minutes
 
 Prends une feuille, écris ta problématique en haut. Liste 3 arguments principaux en dessous, chacun appuyé par une formule ou un **exemple** numérique. Si tu n'y arrives pas en 10 minutes, la problématique est trop large.
 
-### Étape 4 — Vérifier le lien avec l'orientation
+### Étape 4 - Vérifier le lien avec l'orientation
 
 Si tu vises une CPGE scientifique, ta problématique doit pouvoir conduire au passage « voilà pourquoi je veux faire des **mathématiques** en prépa ». Si tu vises une école de commerce, vers « voilà pourquoi je veux faire un cursus quantitatif ».
 
@@ -420,16 +420,16 @@ Prépare une réponse courte et cohérente :
 
 Pour chaque problématique, j'ai rédigé un **sujet entièrement développé** à 10 minutes d'exposé, prêt à réciter ou à adapter :
 
-- [Sujet Grand Oral Maths sur la combinatoire](/fr/blog/sujet-grand-oral-maths-combinatoire/) — angle dénombrement et **principe multiplicatif**
-- [Sujet Grand Oral Maths sur Elo et probabilités](/fr/blog/sujet-grand-oral-maths-elo-probabilites/) — angle **loi binomiale** et suites récurrentes
-- [Sujet Grand Oral Maths sur Zermelo et complexité](/fr/blog/sujet-grand-oral-maths-zermelo-complexite/) — angle théorie des jeux et **limites** physiques
-- [Sujet Grand Oral Maths sur modèles et limites](/fr/blog/sujet-grand-oral-maths-modeles-limites/) — angle méta-modélisation
+- [Sujet Grand Oral Maths sur la combinatoire](/fr/blog/sujet-grand-oral-maths-combinatoire/) - angle dénombrement et **principe multiplicatif**
+- [Sujet Grand Oral Maths sur Elo et probabilités](/fr/blog/sujet-grand-oral-maths-elo-probabilites/) - angle **loi binomiale** et suites récurrentes
+- [Sujet Grand Oral Maths sur Zermelo et complexité](/fr/blog/sujet-grand-oral-maths-zermelo-complexite/) - angle théorie des jeux et **limites** physiques
+- [Sujet Grand Oral Maths sur modèles et limites](/fr/blog/sujet-grand-oral-maths-modeles-limites/) - angle méta-modélisation
 
 Chaque sujet a son propre bouton PDF en haut de page.
 
 ### Sources et références
 
-- **Bulletin officiel — Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
+- **Bulletin officiel - Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
 - **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*, 41(314). (Calcul du nombre de parties possibles, fondement du dénombrement.)
 - **Zermelo, E. (1913).** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* Congrès international des mathématiciens. (Théorème fondamental.)
 - **Elo, A. E. (1978).** *The Rating of Chessplayers, Past and Present.* Arco Publishing. (Présentation de la suite récurrente et du modèle probabiliste Elo.)
@@ -439,4 +439,4 @@ Chaque sujet a son propre bouton PDF en haut de page.
 - **Schaeffer, J., et al. (2007).** *Checkers Is Solved.* *Science*, 317(5844). (Résolution complète des dames, **exemple** de jeu résolvable.)
 - **Silver, D., et al. (2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero, ouverture NSI.)
 - **Lichess Open Database.** [lichess.org/database](https://database.lichess.org). (Base de plus de 4 milliards de parties pour applications statistiques.)
-- **FIDE — Handbook (2024).** [fide.com/regulations](https://www.fide.com/regulations). (Règlement officiel du calcul de la cote Elo.)
+- **FIDE - Handbook (2024).** [fide.com/regulations](https://www.fide.com/regulations). (Règlement officiel du calcul de la cote Elo.)

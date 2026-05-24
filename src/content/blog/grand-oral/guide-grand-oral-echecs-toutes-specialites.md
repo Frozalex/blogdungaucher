@@ -405,14 +405,14 @@ Trois techniques rapides :
 
 ## Sources et références
 
-- **Bulletin officiel — Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
+- **Bulletin officiel - Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
 - **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*. (Nombre de parties d'échecs possibles.)
 - **Bourdieu, P. (1979).** *La Distinction : critique sociale du jugement.* Éditions de Minuit. (Capital culturel, distinction, reproduction sociale.)
 - **Nye, J. (1990).** *Bound to Lead : The Changing Nature of American Power.* Basic Books. (Théorie du *soft power*.)
 - **Nora, P. (1984-1992).** *Les Lieux de mémoire.* Gallimard. (Distinction histoire / mémoire, **patrimoine** culturel.)
 - **Silver, D., et al. (2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero, apprentissage par renforcement.)
 - **Zermelo, E. (1913).** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* (Théorème fondamental sur les jeux à somme nulle.)
-- **FIDE — Handbook (2024).** [fide.com/regulations](https://www.fide.com/regulations). (Règles officielles, classement Elo, dotations.)
+- **FIDE - Handbook (2024).** [fide.com/regulations](https://www.fide.com/regulations). (Règles officielles, classement Elo, dotations.)
 - **Lichess Open Database.** [lichess.org/database](https://database.lichess.org). (Base de 4 milliards de parties pour applications statistiques.)
 
 ---
