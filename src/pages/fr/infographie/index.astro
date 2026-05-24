@@ -1,160 +1,97 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 
-const articles = [
-  {
-    num: "01",
-    slug: "les-echecs-et-les-mathematiques",
-    title: "Les échecs rendent-ils meilleur en maths ?",
-    subtitle: "La vérité scientifique",
-    excerpt: "Jouer aux échecs te rend bon en maths ? La réponse n'est pas celle que tu attends, et elle change ce que tu devrais faire avec un échiquier.",
-    category: "science",
-    categoryLabel: "Science",
-    pillar: "Cognition",
-    date: "2 avr. 2026",
-    isoDate: "2026-04-02",
-    readingTime: "15",
-    tags: ["mathématiques", "métacognition", "cerveau"],
-  },
-  {
-    num: "02",
-    slug: "echecs-et-autisme",
-    title: "Échecs et autisme : l'échiquier comme refuge",
-    subtitle: "Ce que la recherche dit vraiment",
-    excerpt: "Pour un cerveau qui supporte mal l'ambiguïté sociale, l'échiquier est l'un des rares espaces où les règles tiennent vraiment.",
-    category: "societe",
-    categoryLabel: "Société",
-    pillar: "Inclusion",
-    date: "2 avr. 2026",
-    isoDate: "2026-04-02",
-    readingTime: "22",
-    tags: ["autisme", "TSA", "neurodiversité"],
-  },
-  {
-    num: "03",
-    slug: "echecs-et-femmes",
-    title: "Échecs et femmes : pourquoi si peu de joueuses ?",
-    subtitle: "40 femmes parmi 1 700 Grands Maîtres",
-    excerpt: "L'écart n'est pas biologique : il est mathématique, historique et psychologique. Ce que les données disent vraiment.",
-    category: "societe",
-    categoryLabel: "Société",
-    pillar: "Genre",
-    date: "3 avr. 2026",
-    isoDate: "2026-04-03",
-    readingTime: "25",
-    tags: ["genre", "Polgar", "sociologie"],
-  },
-  {
-    num: "04",
-    slug: "les-echecs-et-l-addiction",
-    title: "Les échecs et l'addiction : quand le jeu devient une drogue",
-    subtitle: "Décryptage d'une dépendance silencieuse",
-    excerpt: "Il est 3h du matin. Tu as promis que c'était la dernière partie, mais tu en lances une autre. Peut-on vraiment être accro aux échecs ?",
-    category: "societe",
-    categoryLabel: "Société",
-    pillar: "Psychologie",
-    date: "3 avr. 2026",
-    isoDate: "2026-04-03",
-    readingTime: "22",
-    tags: ["addiction", "dopamine", "santé mentale"],
-  },
-  {
-    num: "05",
-    slug: "les-echecs-et-le-cerveau",
-    title: "Les échecs et le cerveau : ce que la science révèle",
-    subtitle: "IRM structurelle, chronnectome, fonctions exécutives",
-    excerpt: "Un grand maître ? Pas un génie né, un cerveau entraîné. Voici ce que la recherche en neurosciences mesure vraiment.",
-    category: "science",
-    categoryLabel: "Science",
-    pillar: "Neurosciences",
-    date: "3 avr. 2026",
-    isoDate: "2026-04-03",
-    readingTime: "22",
-    tags: ["cerveau", "IRMf", "neuroplasticité"],
-  },
-  {
-    num: "06",
-    slug: "psychologie-du-joueur-d-echecs",
-    title: "La psychologie du joueur d'échecs",
-    subtitle: "Ce qui se passe vraiment dans ta tête",
-    excerpt: "Les échecs ne se jouent pas que sur l'échiquier. Ils se jouent d'abord dans ta tête, avant même que ta main ne touche une pièce.",
-    category: "esprit",
-    categoryLabel: "Esprit",
-    pillar: "Psychologie",
-    date: "5 avr. 2026",
-    isoDate: "2026-04-05",
-    readingTime: "16",
-    tags: ["ego", "tilt", "flow"],
-  },
-  {
-    num: "07",
-    slug: "pourquoi-echecs-probleme-mathematique-impossible-et-ia",
-    title: "Les échecs : un problème mathématique (presque) impossible",
-    subtitle: "Et comment l'IA s'en sort quand même",
-    excerpt: "L'arbre des coups explose, le nombre de Shannon donne le vertige, et pourtant un moteur te corrige en quelques secondes.",
-    category: "science",
-    categoryLabel: "Science",
-    pillar: "Informatique",
-    date: "9 avr. 2026",
-    isoDate: "2026-04-09",
-    readingTime: "16",
-    tags: ["IA", "Stockfish", "minimax"],
-  },
-  {
-    num: "08",
-    slug: "echecs-et-seniors",
-    title: "Échecs et seniors : déclin cognitif et réserve cérébrale",
-    subtitle: "L'étude du New England Journal of Medicine",
-    excerpt: "Jouer aux échecs réduit le risque de démence. Mais le mécanisme est bien plus subtil que « faites travailler votre cerveau ».",
-    category: "science",
-    categoryLabel: "Science",
-    pillar: "Neurosciences",
-    date: "30 avr. 2026",
-    isoDate: "2026-04-30",
-    readingTime: "18",
-    tags: ["démence", "réserve cognitive", "NEJM"],
-  },
-  {
-    num: "09",
-    slug: "regle-40-40-20-echecs",
-    title: "La règle 40-40-20 : structurer son entraînement",
-    subtitle: "Tactique, finales, ouvertures",
-    excerpt: "La plupart des joueurs passent 80 % de leur temps sur les ouvertures. La règle 40-40-20 dit l'inverse, et elle a des arguments.",
-    category: "esprit",
-    categoryLabel: "Esprit",
-    pillar: "Progression",
-    date: "5 mai 2026",
-    isoDate: "2026-05-05",
-    readingTime: "20",
-    tags: ["entraînement", "tactique", "finales"],
-  },
-  {
-    num: "10",
-    slug: "theorie-des-jeux-aux-echecs",
-    title: "Théorie des jeux aux échecs : chaque coup est une décision",
-    subtitle: "Nash, minimax et stratégie optimale",
-    excerpt: "Les échecs sont le terrain d'origine de la théorie des jeux. Minimax, équilibre de Nash, information parfaite : décryptage mathématique.",
-    category: "science",
-    categoryLabel: "Science",
-    pillar: "Mathématiques",
-    date: "5 mai 2026",
-    isoDate: "2026-05-05",
-    readingTime: "14",
-    tags: ["Nash", "minimax", "stratégie"],
-  },
-];
+import { categoryMap } from "../../../data/site";
+import { getAllPosts, getPostSlug } from "../../../utils/blog";
 
-const totalMin = articles.reduce((s, a) => s + parseInt(a.readingTime), 0);
-const catBreakdown = [
-  { label : "Science",  key : "science",  count: 5, color : "#5b9fd4" },
-  { label : "Société",  key : "societe",  count: 3, color : "#5cc4b0" },
-  { label : "Esprit",   key : "esprit",   count: 2, color : "#f0a050" },
-];
+/** Page hommage : « les premiers articles » du blog.
+ *  Récupère dynamiquement les 10 plus anciennes publications (hors grand-oral,
+ *  pour rester sur les piliers science/esprit/société) afin que la page reste
+ *  toujours fidèle au calendrier réel sans intervention manuelle. */
+const allPosts = await getAllPosts();
+const firstPosts = allPosts
+  .filter((p) => p.data.category !== "grand-oral")
+  .sort((a, b) => a.data.publishDate.getTime() - b.data.publishDate.getTime())
+  .slice(0, 10);
+
+/** Formatte le readingTime ("18 min") → nombre entier de minutes, fallback 15. */
+function parseReadingMinutes(rt?: string): number {
+  if (!rt) return 15;
+  const m = rt.match(/(\d+)/);
+  return m ? Number(m[1]) : 15;
+}
+
+const articles = firstPosts.map((post, idx) => {
+  const cat = post.data.category;
+  const meta = categoryMap[cat];
+  const minutes = parseReadingMinutes(post.data.readingTime);
+  return {
+    num: String(idx + 1).padStart(2, "0"),
+    slug: getPostSlug(post),
+    title: post.data.title,
+    subtitle: post.data.pillar,
+    excerpt: post.data.excerpt,
+    category: cat,
+    categoryLabel: meta.label,
+    pillar: post.data.pillar,
+    date: post.data.publishDate.toLocaleDateString("fr-FR", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+      timeZone: "UTC",
+    }),
+    isoDate: post.data.publishDate.toISOString().slice(0, 10),
+    readingTime: minutes,
+    tags: (post.data.tags ?? []).slice(0, 3),
+  };
+});
+
+/** Statistiques hero / closing calculées sur les 10 premiers articles. */
+const totalMin = articles.reduce((s, a) => s + a.readingTime, 0);
+const totalHours = Math.floor(totalMin / 60);
+const totalMinRest = totalMin % 60;
+const totalReadingLabel =
+  totalHours > 0
+    ? `${totalHours}${"h"}${String(totalMinRest).padStart(2, "0")}`
+    : `${totalMinRest} min`;
+
+const firstDate = firstPosts[0]?.data.publishDate;
+const lastDate = firstPosts[firstPosts.length - 1]?.data.publishDate;
+const spanDays =
+  firstDate && lastDate
+    ? Math.max(
+        1,
+        Math.round((lastDate.getTime() - firstDate.getTime()) / 86_400_000),
+      )
+    : 0;
+
+const fmtRange = (d?: Date) =>
+  d
+    ? d.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })
+    : "";
+
+/** Distribution par rubrique, ne montre que les rubriques effectivement présentes. */
+const countsByCat = articles.reduce<Record<string, number>>((acc, a) => {
+  acc[a.category] = (acc[a.category] ?? 0) + 1;
+  return acc;
+}, {});
+
+const catBreakdown = (["science", "societe", "esprit"] as const)
+  .map((key) => ({
+    key,
+    label: categoryMap[key].label,
+    count: countsByCat[key] ?? 0,
+    color: categoryMap[key].accent,
+  }))
+  .filter((c) => c.count > 0);
+
+const totalArticles = articles.length;
+const totalCats = catBreakdown.length;
 ---
 
 <BaseLayout
   title="Les 10 premiers articles, Infographie | Blog d'un Gaucher"
-  description="Visualisation interactive des 10 premières publications du Blog d'un Gaucher : timeline éditoriale, répartition par rubrique, 190 minutes de lecture."
+  description={`Visualisation interactive des ${totalArticles} premières publications du Blog d'un Gaucher : timeline éditoriale, répartition par rubrique, ${totalMin} minutes de lecture.`}
   canonicalPath="/fr/infographie/"
   omitEnDeAlternateLinks={true}
 >
@@ -172,36 +109,36 @@ const catBreakdown = [
       </div>
 
       <div class="hero-content">
-        <p class="hero-label">Blog d'un Gaucher · 2026</p>
+        <p class="hero-label">Blog d'un Gaucher · {firstDate?.getUTCFullYear() ?? new Date().getFullYear()}</p>
         <h1 class="hero-title">
           <span class="hero-title-line1">Naissance</span>
           <span class="hero-title-line2">d'un blog</span>
         </h1>
-        <p class="hero-sub">Les 10 premières publications : une plongée dans les thèmes fondateurs</p>
+        <p class="hero-sub">Les {totalArticles} premières publications : une plongée dans les thèmes fondateurs</p>
 
         <div class="hero-stats">
           <div class="hstat">
-            <span class="hstat-n">10</span>
+            <span class="hstat-n">{totalArticles}</span>
             <span class="hstat-l">articles</span>
           </div>
           <div class="hstat-div" aria-hidden="true"></div>
           <div class="hstat">
-            <span class="hstat-n">3<span class="hstat-unit">h</span>10</span>
+            <span class="hstat-n">{totalReadingLabel}</span>
             <span class="hstat-l">de lecture</span>
           </div>
           <div class="hstat-div" aria-hidden="true"></div>
           <div class="hstat">
-            <span class="hstat-n">33</span>
+            <span class="hstat-n">{spanDays}</span>
             <span class="hstat-l">jours</span>
           </div>
           <div class="hstat-div" aria-hidden="true"></div>
           <div class="hstat">
-            <span class="hstat-n">3</span>
+            <span class="hstat-n">{totalCats}</span>
             <span class="hstat-l">rubriques</span>
           </div>
         </div>
 
-        <p class="hero-range">2 avril <span class="hero-arrow">→</span> 5 mai 2026</p>
+        <p class="hero-range">{fmtRange(firstDate)} <span class="hero-arrow">→</span> {fmtRange(lastDate)}</p>
       </div>
     </div>
   </header>
@@ -213,12 +150,12 @@ const catBreakdown = [
       <div class="distrib-grid">
         {catBreakdown.map(cat => (
           <div class="dcat" style={`--acc:${cat.color}`}>
-            <span class="dcat-n">{cat.count}<span class="dcat-of">/10</span></span>
+            <span class="dcat-n">{cat.count}<span class="dcat-of">/{totalArticles}</span></span>
             <span class="dcat-name">{cat.label}</span>
             <div class="dcat-bar">
-              <div class="dcat-fill" style={`width:${cat.count*10}%`}></div>
+              <div class="dcat-fill" style={`width:${(cat.count / totalArticles) * 100}%`}></div>
             </div>
-            <span class="dcat-pct">{cat.count * 10} %</span>
+            <span class="dcat-pct">{Math.round((cat.count / totalArticles) * 100)} %</span>
           </div>
         ))}
       </div>
@@ -229,9 +166,9 @@ const catBreakdown = [
   <div class="filters-wrap">
     <div class="filters">
       <button class="fbtn fbtn--on" data-f="all">Tous</button>
-      <button class="fbtn" data-f="science">Science</button>
-      <button class="fbtn" data-f="esprit">Esprit</button>
-      <button class="fbtn" data-f="societe">Société</button>
+      {catBreakdown.map((cat) => (
+        <button class="fbtn" data-f={cat.key}>{cat.label}</button>
+      ))}
     </div>
   </div>
 
@@ -288,7 +225,7 @@ const catBreakdown = [
   <!-- ════════════ CLOSING ════════════ -->
   <footer class="closing">
     <div class="closing-inner">
-      <p class="closing-q">33 jours.</p>
+      <p class="closing-q">{spanDays} jours.</p>
       <p class="closing-q">{totalMin} minutes de lecture.</p>
       <p class="closing-q closing-q--dim">Le début d'un projet.</p>
       <a class="closing-btn" href="/fr/blog/">
