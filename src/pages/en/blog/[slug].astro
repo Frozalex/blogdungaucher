@@ -43,8 +43,11 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const slug = getPostSlug(post);
 
-// Récupère la traduction EN depuis la collection enTranslations (si elle existe)
-const enEntry = await getEntry("enTranslations", slug);
+// Récupère la traduction EN depuis la collection enTranslations (si elle existe
+// ET qu'elle n'est pas marquée draft). Une traduction en draft est ignorée comme
+// si elle n'existait pas : la page affiche le contenu FR + bandeau d'avertissement.
+const enEntryRaw = await getEntry("enTranslations", slug);
+const enEntry = enEntryRaw && !enEntryRaw.data.draft ? enEntryRaw : undefined;
 const englishMarkdown = enEntry?.body;
 
 const faqsForDisplay = enEntry?.data?.faq ?? post.data.faq ?? [];

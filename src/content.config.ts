@@ -53,12 +53,16 @@ const blog = defineCollection({
   }),
 });
 
-/** Schéma partagé pour les collections de traductions (EN, DE…). */
+/** Schéma partagé pour les collections de traductions (EN, DE…).
+ *  `draft: true` masque la traduction (fallback vers le contenu FR + bandeau),
+ *  ce qui permet de préparer plusieurs traductions à l'avance et de les
+ *  publier en bascule en passant `draft: false` ou en retirant la clé. */
 const translationSchema = z.object({
   title: z.string(),
   excerpt: z.string(),
   seoTitle: z.string().optional(),
   seoDescription: z.string().optional(),
+  draft: z.boolean().default(false),
   faq: z
     .array(
       z.object({
