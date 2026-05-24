@@ -1,0 +1,123 @@
+---
+/**
+ * Améliore l'apparence des blocs de code Shiki :
+ * - Wrappe chaque <pre.astro-code> dans un conteneur stylé
+ * - Ajoute un en-tête affichant le langage (récupéré depuis <code class="language-X">)
+ * - Ajoute un bouton "Copier" avec retour visuel
+ *
+ * À placer une seule fois par page contenant des blocs de code (typiquement
+ * dans le layout d'article).
+ */
+---
+<script is:inline>
+  (function () {
+    const LANG_LABELS = {
+      js: "JavaScript", javascript: "JavaScript",
+      ts: "TypeScript", typescript: "TypeScript",
+      py: "Python", python: "Python",
+      sh: "Shell", bash: "Bash", shell: "Shell", zsh: "Shell",
+      html: "HTML",
+      css: "CSS",
+      sql: "SQL",
+      json: "JSON",
+      yaml: "YAML", yml: "YAML",
+      md: "Markdown", markdown: "Markdown",
+      c: "C", cpp: "C++", "c++": "C++",
+      cs: "C#", csharp: "C#",
+      java: "Java",
+      rs: "Rust", rust: "Rust",
+      go: "Go", golang: "Go",
+      php: "PHP",
+      rb: "Ruby", ruby: "Ruby",
+      swift: "Swift",
+      kt: "Kotlin", kotlin: "Kotlin",
+      txt: "Texte", text: "Texte", plaintext: "Texte",
+      pgn: "PGN",
+      latex: "LaTeX", tex: "LaTeX",
+    };
+
+    function detectLanguage(pre) {
+      // Astro/Shiki ajoute parfois data-language sur <pre>
+      const dataLang = pre.getAttribute("data-language");
+      if (dataLang) return dataLang;
+
+      // Sinon, regarder le <code class="language-X"> à l'intérieur
+      const code = pre.querySelector("code");
+      if (code) {
+        const cls = (code.className || "").match(/language-(\S+)/);
+        if (cls) return cls[1];
+      }
+      return "";
+    }
+
+    function makeCopyButton(pre) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "code-block-copy";
+      btn.setAttribute("aria-label", "Copier le code");
+      btn.innerHTML =
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+        '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>' +
+        '<path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>' +
+        '</svg><span>Copier</span>';
+
+      btn.addEventListener("click", async () => {
+        const code = pre.querySelector("code");
+        const text = (code ? code.innerText : pre.innerText).replace(/\n+$/, "");
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch (e) {
+          // Fallback : sélectionner le texte
+          const range = document.createRange();
+          range.selectNodeContents(code || pre);
+          const sel = window.getSelection();
+          if (sel) {
+            sel.removeAllRanges();
+            sel.addRange(range);
+          }
+          try { document.execCommand("copy"); } catch {}
+        }
+        btn.classList.add("copied");
+        btn.querySelector("span").textContent = "Copié !";
+        setTimeout(() => {
+          btn.classList.remove("copied");
+          btn.querySelector("span").textContent = "Copier";
+        }, 1800);
+      });
+      return btn;
+    }
+
+    function enhance(pre) {
+      if (pre.parentElement && pre.parentElement.classList.contains("code-block")) return;
+
+      const lang = detectLanguage(pre);
+      const label = LANG_LABELS[lang.toLowerCase()] || (lang ? lang.toUpperCase() : "Code");
+
+      const wrapper = document.createElement("div");
+      wrapper.className = "code-block";
+
+      const header = document.createElement("div");
+      header.className = "code-block-header";
+      header.innerHTML = '<span class="code-block-lang">' + label + "</span>";
+      header.appendChild(makeCopyButton(pre));
+
+      pre.parentNode.insertBefore(wrapper, pre);
+      wrapper.appendChild(header);
+      wrapper.appendChild(pre);
+    }
+
+    function run() {
+      // Cibler les blocs de code à l'intérieur d'un article uniquement.
+      const blocks = document.querySelectorAll(
+        ".article-content pre.astro-code, article pre.astro-code, .post-body pre.astro-code"
+      );
+      blocks.forEach(enhance);
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", run, { once: true });
+    } else {
+      run();
+    }
+  })();
+</script>

@@ -4,30 +4,25 @@ const { title, slug, label = "Télécharger en PDF" } = Astro.props as {
   slug: string;
   label?: string;
 };
+const href = `/pdfs/${slug}.pdf`;
 ---
 <div class="pdf-download" data-no-print>
-  <button
+  <a
     class="pdf-btn"
-    id="pdf-download-btn"
-    type="button"
+    href={href}
+    download={`${slug}.pdf`}
     aria-label={`${label} : ${title}`}
-    data-pdf-title={title}
-    data-pdf-slug={slug}
+    rel="noopener"
   >
-    <span class="pdf-btn-icon">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-        <polyline points="14 2 14 8 20 8"/>
-        <line x1="12" y1="18" x2="12" y2="12"/>
-        <polyline points="9 15 12 18 15 15"/>
-      </svg>
-    </span>
-    <span class="pdf-btn-label">{label}</span>
-    <span class="pdf-btn-spinner" hidden aria-hidden="true"></span>
-  </button>
-  <p class="pdf-hint">
-    Le PDF sera téléchargé directement sur ton appareil (environ <strong>10 secondes</strong> de génération).
-  </p>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+      <polyline points="14 2 14 8 20 8"/>
+      <line x1="12" y1="18" x2="12" y2="12"/>
+      <polyline points="9 15 12 18 15 15"/>
+    </svg>
+    <span>{label}</span>
+  </a>
+  <p class="pdf-hint">Format A4, prêt à imprimer ou à glisser dans ton classeur.</p>
 </div>
 
 <style>
@@ -53,34 +48,19 @@ const { title, slug, label = "Télécharger en PDF" } = Astro.props as {
     color: #fff;
     font-weight: 600;
     font-size: 0.95rem;
+    text-decoration: none;
     cursor: pointer;
     transition: filter 120ms ease, transform 120ms ease;
   }
-  .pdf-btn:hover:not(:disabled) {
+  .pdf-btn:hover {
     filter: brightness(1.07);
     transform: translateY(-1px);
   }
-  .pdf-btn:active:not(:disabled) {
+  .pdf-btn:active {
     transform: translateY(0);
-  }
-  .pdf-btn:disabled {
-    cursor: wait;
-    opacity: 0.7;
   }
   .pdf-btn svg {
     flex-shrink: 0;
-  }
-  .pdf-btn-spinner {
-    width: 14px;
-    height: 14px;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    border-top-color: #fff;
-    border-radius: 50%;
-    animation: pdf-spin 0.7s linear infinite;
-    flex-shrink: 0;
-  }
-  @keyframes pdf-spin {
-    to { transform: rotate(360deg); }
   }
   .pdf-hint {
     margin: 0;
@@ -88,204 +68,7 @@ const { title, slug, label = "Télécharger en PDF" } = Astro.props as {
     color: var(--muted, #666);
     flex: 1 1 220px;
   }
-
   @media print {
     .pdf-download { display: none !important; }
   }
 </style>
-
-<script>
-  // Génération PDF côté client avec html2pdf.js (lazy-loaded au clic).
-  document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('pdf-download-btn') as HTMLButtonElement | null;
-    if (!btn) return;
-
-    btn.addEventListener('click', async () => {
-      const title = btn.dataset.pdfTitle ?? document.title;
-      const slug = btn.dataset.pdfSlug ?? 'document';
-      const labelEl = btn.querySelector('.pdf-btn-label') as HTMLElement | null;
-      const spinnerEl = btn.querySelector('.pdf-btn-spinner') as HTMLElement | null;
-      const originalLabel = labelEl?.textContent ?? 'Télécharger en PDF';
-
-      btn.disabled = true;
-      if (labelEl) labelEl.textContent = 'Génération…';
-      if (spinnerEl) spinnerEl.hidden = false;
-
-      try {
-        // Lazy load (≈250 KB) seulement au premier clic.
-        const { default: html2pdf } = await import('html2pdf.js');
-
-        // Stratégie : extraire les noeuds de contenu rédigé (entre l'en-tête article
-        // et les blocs sociaux) et les insérer dans un wrapper propre. Cela évite les
-        // problèmes de CSS grid/flex qui rendent le clone vide hors contexte.
-        const articleMain = document.querySelector('.article-main') as HTMLElement | null;
-        if (!articleMain) throw new Error('Article introuvable sur la page.');
-
-        // Tous les enfants directs de .article-main.
-        const allChildren = Array.from(articleMain.children) as HTMLElement[];
-
-        // Sélecteurs des éléments à ignorer (en-tête, méta, social, etc.).
-        const skipSelectors = [
-          '.breadcrumb',
-          '.article-header',
-          '[data-no-print]',
-          '.share', '.comments',
-          '.related-posts', '.ad-banner',
-          '.summary-video-wrap', '.article-video', '.remotion-player', '.video-player',
-          '.reading-progress',
-          '.hero-media',
-          '.article-nav',
-        ];
-
-        const isSkippable = (el: HTMLElement) =>
-          skipSelectors.some((sel) => el.matches(sel) || el.querySelector(sel) === el.firstElementChild);
-
-        // Filtrer les enfants à conserver et les cloner.
-        const contentClones: HTMLElement[] = [];
-        for (const child of allChildren) {
-          if (skipSelectors.some((sel) => child.matches(sel))) continue;
-          // Cloner le noeud (deep) pour garder le rendu KaTeX, code, tables, etc.
-          const cloned = child.cloneNode(true) as HTMLElement;
-          // Nettoyer récursivement les éléments parasites à l'intérieur.
-          cloned.querySelectorAll(skipSelectors.join(', ')).forEach((el) => el.remove());
-          contentClones.push(cloned);
-        }
-
-        // Conteneur wrapper avec styles imprimables propres et layout simple.
-        const wrapper = document.createElement('div');
-        wrapper.id = 'pdf-wrapper';
-        wrapper.style.cssText = [
-          'background: #fff',
-          'color: #111',
-          'padding: 0',
-          'font-family: Georgia, "Times New Roman", serif',
-          'font-size: 11pt',
-          'line-height: 1.55',
-          'width: 720px', // ~190mm à 96dpi, taille fixe pour html2canvas
-          'box-sizing: border-box',
-          'display: block',
-        ].join(';');
-
-        // Titre épuré en tête du PDF.
-        const titleEl = document.createElement('h1');
-        titleEl.style.cssText = 'font-size: 20pt; color: #111; margin: 0 0 10mm; line-height: 1.25; font-weight: 700; border: 0;';
-        titleEl.textContent = title;
-        wrapper.appendChild(titleEl);
-
-        // Ajouter les clones de contenu dans le wrapper.
-        for (const node of contentClones) {
-          // Force un layout simple (anti grid/flex hérité).
-          node.style.display = node.tagName === 'TABLE' ? 'table' : 'block';
-          node.style.width = '100%';
-          node.style.maxWidth = '100%';
-          node.style.margin = '0 0 4mm';
-          wrapper.appendChild(node);
-        }
-
-        // Nettoyer les blockquotes "instructions PDF" et "Pour aller plus loin".
-        const blockquotes = wrapper.querySelectorAll('blockquote');
-        blockquotes.forEach((bq) => {
-          const text = bq.textContent ?? '';
-          if (text.includes('Télécharger ce sujet en PDF') || text.includes('Télécharger en PDF') || text.includes('Pour aller plus loin')) {
-            bq.remove();
-          }
-        });
-
-        // Retirer les hr résiduels en début/fin de wrapper.
-        const hrs = wrapper.querySelectorAll('hr');
-        if (hrs.length > 0) {
-          (hrs[0] as HTMLElement).remove();
-          if (hrs.length > 1) (hrs[hrs.length - 1] as HTMLElement).remove();
-        }
-
-        // Convertir les URLs relatives en absolues (pour les liens dans le PDF).
-        const baseUrl = window.location.origin;
-        wrapper.querySelectorAll('a[href^="/"]').forEach((a) => {
-          const href = a.getAttribute('href');
-          if (href) a.setAttribute('href', baseUrl + href);
-        });
-
-        // Pied de page minimal (juste l'URL source).
-        const footer = document.createElement('div');
-        footer.style.cssText = 'margin: 12mm 0 0; padding: 3mm 0 0; border-top: 1px solid #ddd; font-size: 8pt; color: #888; text-align: center;';
-        footer.innerHTML = `Source : <a href="${window.location.href}" style="color:#888;text-decoration:none;">${window.location.href}</a>`;
-        wrapper.appendChild(footer);
-
-        // Styles d'impression injectés.
-        const printStyles = document.createElement('style');
-        printStyles.textContent = `
-          #pdf-wrapper h1 { font-size: 20pt; color: #111; margin: 0 0 4mm; line-height: 1.25; }
-          #pdf-wrapper h2 { font-size: 14pt; color: #111; margin: 6mm 0 3mm; page-break-after: avoid; border-bottom: 1px solid #ddd; padding-bottom: 1mm; }
-          #pdf-wrapper h3 { font-size: 12pt; color: #222; margin: 5mm 0 2mm; page-break-after: avoid; }
-          #pdf-wrapper h4 { font-size: 11pt; color: #333; margin: 4mm 0 2mm; page-break-after: avoid; }
-          #pdf-wrapper p { margin: 0 0 3mm; orphans: 3; widows: 3; }
-          #pdf-wrapper ul, #pdf-wrapper ol { margin: 0 0 3mm 5mm; }
-          #pdf-wrapper li { margin-bottom: 1mm; }
-          #pdf-wrapper a { color: #1a4d8f; text-decoration: underline; }
-          #pdf-wrapper pre, #pdf-wrapper code { background: #f4f4f4; color: #111; font-family: "Courier New", monospace; font-size: 9pt; }
-          #pdf-wrapper pre { padding: 3mm; border: 1px solid #ddd; border-radius: 2mm; overflow: visible !important; white-space: pre-wrap !important; word-break: break-word; page-break-inside: avoid; margin: 0 0 4mm; }
-          #pdf-wrapper code { padding: 0.5mm 1.5mm; border-radius: 1mm; }
-          #pdf-wrapper pre code { padding: 0; background: transparent; border: 0; }
-          #pdf-wrapper table { border-collapse: collapse; width: 100%; margin: 0 0 4mm; page-break-inside: avoid; font-size: 9.5pt; }
-          #pdf-wrapper th, #pdf-wrapper td { border: 1px solid #aaa; padding: 1.5mm 2mm; text-align: left; vertical-align: top; }
-          #pdf-wrapper th { background: #eee; font-weight: 600; }
-          #pdf-wrapper blockquote { margin: 0 0 4mm; padding: 2mm 4mm; border-left: 3pt solid #888; background: #f8f8f8; font-style: italic; }
-          #pdf-wrapper img { max-width: 100%; height: auto; page-break-inside: avoid; }
-          #pdf-wrapper .hero-media, #pdf-wrapper .hero-img { max-height: 80mm; object-fit: contain; }
-          #pdf-wrapper hr { border: 0; border-top: 1px solid #ccc; margin: 5mm 0; }
-          #pdf-wrapper .katex-display { margin: 3mm 0; overflow-x: visible !important; }
-        `;
-        wrapper.prepend(printStyles);
-
-        // Le wrapper doit être attaché au DOM pour que html2canvas puisse le rendre.
-        // On le place visible mais hors écran horizontalement, avec position fixe
-        // pour qu'il ne perturbe pas le scroll de la page.
-        wrapper.style.position = 'fixed';
-        wrapper.style.left = '-9999px';
-        wrapper.style.top = '0';
-        wrapper.style.zIndex = '-1';
-        document.body.appendChild(wrapper);
-
-        // Diagnostic : vérifier que le wrapper a bien du contenu mesurable.
-        const rect = wrapper.getBoundingClientRect();
-        if (rect.height < 50) {
-          console.warn('[PDF] Wrapper hauteur insuffisante :', rect.height, 'px. Contenu :', wrapper.children.length, 'éléments');
-        }
-
-        const filename = `${slug}.pdf`;
-        const options = {
-          margin: [12, 12, 14, 12], // top, left, bottom, right (mm)
-          filename,
-          image: { type: 'jpeg', quality: 0.95 },
-          html2canvas: {
-            scale: 2,
-            useCORS: true,
-            allowTaint: true,
-            logging: false,
-            letterRendering: true,
-            backgroundColor: '#ffffff',
-            windowWidth: 720,
-            width: 720,
-            height: wrapper.scrollHeight,
-            scrollX: 0,
-            scrollY: 0,
-          },
-          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait', compress: true },
-          pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
-        };
-
-        await html2pdf().set(options).from(wrapper).save();
-
-        // Nettoyage.
-        document.body.removeChild(wrapper);
-      } catch (err) {
-        console.error('[PDF] Échec de la génération :', err);
-        alert("Désolé, la génération du PDF a échoué. Tu peux utiliser Ctrl+P pour imprimer ou réessayer.");
-      } finally {
-        btn.disabled = false;
-        if (labelEl) labelEl.textContent = originalLabel;
-        if (spinnerEl) spinnerEl.hidden = true;
-      }
-    });
-  });
-</script>

@@ -40,5 +40,10 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex],
+    shikiConfig: {
+      // Thème clair lisible, contraste élevé sur fond blanc.
+      theme: "github-light",
+      wrap: true,
+    },
   },
 });

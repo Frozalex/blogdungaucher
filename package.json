@@ -11,7 +11,9 @@
     "serpmantics": "node scripts/serpmantics.mjs",
     "check:publish-weekly": "node scripts/check-publish-weekly.mjs",
     "apply:publish-schedule": "node scripts/apply-future-publish-schedule.mjs",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "pdfs": "node scripts/generate-pdfs.mjs",
+    "build:pdfs": "npm run build && npm run pdfs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.2.9",
@@ -45,6 +47,7 @@
     "@astrojs/react": "^4.2.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "puppeteer": "^25.0.4",
     "sharp": "^0.34.5"
   }
 }
