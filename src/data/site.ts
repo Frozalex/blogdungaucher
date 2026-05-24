@@ -226,7 +226,7 @@ export const navigationLinks = [
   { label: "Société", href: "/fr/societe/" },
   { label: "Grand oral", href: "/fr/grand-oral/" },
   { label: "Essais", href: "/fr/essais/" },
-  { label: "Articles", href: "/fr/blog/" },
+  { label: "Tous les articles", href: "/fr/blog/" },
   { label: "À propos", href: "/fr/about/" },
 ] as const;
 
@@ -236,7 +236,7 @@ export const enNavigationLinks = [
   { label: "Society", href: "/en/societe/" },
   { label: "Grand oral", href: "/en/grand-oral/" },
   { label: "Essays", href: "/en/essais/" },
-  { label: "Articles", href: "/en/blog/" },
+  { label: "All articles", href: "/en/blog/" },
   { label: "About", href: "/en/about/" },
 ] as const;
 
@@ -247,7 +247,7 @@ export const deNavigationLinks = [
   { label: "Gesellschaft", href: "/de/societe/" },
   { label: "Grand oral", href: "/de/grand-oral/" },
   { label: "Essays", href: "/de/essais/" },
-  { label: "Artikel", href: "/de/blog/" },
+  { label: "Alle Artikel", href: "/de/blog/" },
   { label: "Über uns", href: "/de/about/" },
 ] as const;
 
