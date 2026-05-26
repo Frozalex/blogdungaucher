@@ -36,8 +36,7 @@ keyTakeaways:
     mentale : période de développement optimal du traitement visuo-spatial.
 seoTitle: "Échecs et vision spatiale : comment l'échiquier entraîne le cerveau visuo-spatial"
 seoDescription: >-
-  Visualisation mentale, rotation mentale, parties à l'aveugle : ce que la neuroscience dit sur les effets des échecs
-  sur les capacités spatiales et visuo-spatiales.
+  Échecs et vision spatiale : rotation mentale, visualisation, parties à l'aveugle. Comment le jeu développe les capacités visuo-spatiales selon les neurosciences.
 ogImage: /images/blog/echecs-et-vision-spatiale-hero.png
 heroImage:
   src: /images/blog/echecs-et-vision-spatiale-hero.png

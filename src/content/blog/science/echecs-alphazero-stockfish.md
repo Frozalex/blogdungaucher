@@ -40,8 +40,7 @@ keyTakeaways:
     recommandées.
 seoTitle: "AlphaZero contre Stockfish : la révolution de l'IA aux échecs"
 seoDescription: >-
-  Match AlphaZero vs Stockfish 2017, apprentissage par renforcement, style de jeu révolutionnaire : comment AlphaZero a
-  changé les échecs et l'IA.
+  AlphaZero vs Stockfish 2017 : apprentissage par renforcement, réseau de neurones, style de jeu révolutionnaire. Comment l'IA a changé la compréhension des échecs.
 ogImage: /images/blog/echecs-alphazero-stockfish-hero.png
 heroImage:
   src: /images/blog/echecs-alphazero-stockfish-hero.png

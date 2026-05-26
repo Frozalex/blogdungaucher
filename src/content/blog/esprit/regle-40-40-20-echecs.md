@@ -19,8 +19,7 @@ tags:
   - méthode
 seoTitle: "Règle 40-40-20 aux échecs : tactique, finales, ouvertures - comment structurer son entraînement"
 seoDescription: >-
-  La règle 40-40-20 recommande 40 % de tactique, 40 % de finales et 20 % d'ouvertures. Pourquoi la majorité des joueurs
-  font l'inverse, et ce que la recherche sur l'expertise dit de cette répartition.
+  La règle 40-40-20 aux échecs : 40% tactique, 40% finales, 20% ouvertures. Pourquoi la majorité des joueurs font l'inverse et ce que la recherche recommande.
 ---
 
 Tu viens de perdre une partie. Tu ouvres ta bibliothèque, tu relances la variante qui t'a posé problème, tu passes quarante minutes à mémoriser des coups que tu ne rejoueras peut-être jamais. Ça te semble utile. Ça donne l'impression de travailler.

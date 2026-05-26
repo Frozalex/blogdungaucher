@@ -19,8 +19,7 @@ tags:
   - mental compétitif
 seoTitle: "Monter en Elo sans se sentir légitime : le syndrome de l'imposteur en progression"
 seoDescription: >-
-  Ton Elo monte mais chaque victoire te semble de la chance. Ce décalage entre progression réelle et sentiment de
-  légitimité a un nom, et des solutions issues de la psychologie du sport.
+  Syndrome de l'imposteur aux échecs : ton Elo monte mais tu doutes de ta légitimité. Décalage progression-confiance, solutions de la psychologie du sport.
 ---
 
 Tu viens de gagner une partie bien jouée. Ton adversaire était 100 points au-dessus de toi. La victoire est nette, méritée. Et pourtant, la première pensée qui s'impose n'est pas la satisfaction. C'est quelque chose de plus inconfortable : *il a dû faire une erreur. Ça ne compte pas vraiment. Si on rejouait, il gagnerait.*

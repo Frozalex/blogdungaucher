@@ -42,8 +42,7 @@ keyTakeaways:
     troubles du comportement ou déficiences intellectuelles légères.
 seoTitle: "Échecs et handicap : l'échiquier comme espace d'inclusion"
 seoDescription: >-
-  Joueurs aveugles, autisme, tétraplégie : comment les échecs s'adaptent au handicap et créent des espaces d'inclusion
-  et d'égalité cognitive.
+  Échecs et handicap : joueurs aveugles, autisme, tétraplégie, handicap moteur. Comment le jeu s'adapte et crée des espaces d'inclusion et d'égalité cognitive.
 ogImage: /images/blog/echecs-et-handicap-hero.png
 heroImage:
   src: /images/blog/echecs-et-handicap-hero.png

@@ -37,8 +37,7 @@ keyTakeaways:
     corrélation, pas causalité prouvée.
 seoTitle: "Échecs et cerveau : ce que l'IRMf révèle sur les joueurs experts"
 seoDescription: >-
-  IRM structurelle (Hänggi 2014), chronnectome (Premi 2020), fonctions exécutives : comment le cerveau d'un joueur
-  d'échecs expert est différent neurologiquement, avec les chiffres.
+  Échecs et cerveau : IRM structurelle, fonctions exécutives, neuroplasticité. Comment le cerveau d'un joueur expert diffère neurologiquement, avec les études clés.
 ogImage: /images/blog/les-echecs-et-le-cerveau-hero.png
 heroImage:
   src: /images/blog/les-echecs-et-le-cerveau-hero.png

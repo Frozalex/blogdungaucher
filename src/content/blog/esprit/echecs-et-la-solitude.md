@@ -36,8 +36,7 @@ keyTakeaways:
     interactions sociales non structurées : un effet peu documenté mais régulièrement témoigné.
 seoTitle: "La solitude aux échecs : quand le règlement vous isole"
 seoDescription: >-
-  Les échecs imposent une solitude réglementaire unique dans le sport. Effets psychologiques, paradoxe des clubs, impact
-  des échecs en ligne : ce que personne ne documente vraiment sur l'isolement à l'échiquier.
+  Les échecs imposent une solitude réglementaire unique dans le sport. Effets psychologiques, paradoxe des clubs, impact du jeu en ligne sur l'isolement du joueur.
 ogImage: /images/blog/echecs-et-la-solitude-hero.png
 heroImage:
   src: /images/blog/echecs-et-la-solitude-hero.png

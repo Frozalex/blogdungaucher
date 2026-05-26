@@ -66,8 +66,7 @@ dataReveal:
     cités mesurent surtout des tendances agrégées, pas des promesses au cas par cas.
 seoTitle: "Échecs et Alzheimer : études, chiffres et prévention cognitive"
 seoDescription: >-
-  Données chiffrées sur les jeux cognitifs, la démence et le vieillissement : méta-analyses MMSE, cohortes ALSOP, essais
-  chez les personnes âgées, sans promesse miracle.
+  Échecs et Alzheimer : données chiffrées sur les jeux cognitifs et la démence. Méta-analyses MMSE, cohortes ALSOP, essais cliniques chez les personnes âgées.
 ogImage: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.png
 heroImage:
   src: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.png

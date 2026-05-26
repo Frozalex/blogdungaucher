@@ -22,8 +22,7 @@ tags:
   - Sala Gobet
 seoTitle: "Échecs et mathématiques : vrai transfert ou mythe ? Méta-analyses"
 seoDescription: >-
-  Sala & Gobet, métacognition, tour du cavalier, huit dames : ce que la science dit vraiment du lien entre échecs et
-  maths, et comment l'utiliser pour vraiment progresser.
+  Échecs et mathématiques : méta-analyse Sala et Gobet, tour du cavalier, problème des huit dames. Ce que la science dit du lien maths-échecs et comment en profiter.
 ogImage: /images/blog/les-echecs-et-les-mathematiques-hero.png
 heroImage:
   src: /images/blog/les-echecs-et-les-mathematiques-hero.png

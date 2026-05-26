@@ -19,9 +19,7 @@ tags:
   - inclusion sociale
 seoTitle: "Les échecs en prison : réhabilitation, fonctions exécutives et récidive"
 seoDescription: >-
-  Change Through Chess, San Quentin, Rikers Island : des programmes de chess therapy en prison montrent des effets
-  mesurables sur l'impulsivité et la récidive. Ce que la criminologie dit réellement de l'échiquier comme outil de
-  réhabilitation.
+  Échecs en prison : Change Through Chess, San Quentin, Rikers Island. Effets mesurables sur l'impulsivité et la récidive. La chess therapy comme outil de réhabilitation.
 ogImage: /images/blog/echecs-en-prison-hero.png
 heroImage:
   src: /images/blog/echecs-en-prison-hero.png

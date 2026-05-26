@@ -9,7 +9,7 @@ readingTime: "42 min"
 pillar: "Informatique"
 tags: ["grand-oral", "NSI", "terminale", "algorithmique", "minimax", "Python", "AlphaZero", "intelligence artificielle", "structures de données", "baccalauréat"]
 seoTitle: "Grand oral NSI : les échecs, de l'algorithmique à l'IA, plan complet"
-seoDescription: "Grand oral spécialité NSI avec les échecs : minimax Python, arbres, PGN, bitboard, AlphaZero. Plan détaillé, code, exemples et questions jury pour le baccalauréat."
+seoDescription: "Grand Oral spé NSI bac 2025 : minimax Python, arbres de décision, PGN, bitboard, AlphaZero. Plan détaillé, code commenté et questions jury pour réussir."
 faq:
   - question: "Pourquoi les échecs sont-ils un sujet idéal pour un Grand Oral spécialité NSI ?"
     answer: "Les échecs incarnent les quatre piliers du programme de spé NSI : les algorithmes (minimax, alpha-bêta, récursivité), les structures de données (arbres de jeu, graphes), la programmation (représentation de l'échiquier en Python, fonctions récursives), et l'intelligence artificielle (passage de Stockfish à AlphaZero). C'est l'un des rares sujets qui permet de montrer concrètement le lien entre la théorie algorithmique et une application réelle connue du jury."

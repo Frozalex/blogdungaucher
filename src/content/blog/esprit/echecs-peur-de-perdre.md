@@ -9,7 +9,7 @@ readingTime: "14 min"
 pillar: "Psychologie"
 tags: ["peur de perdre", "psychologie", "échecs", "défaite", "anxiété", "performance", "Elo"]
 seoTitle: "Peur de perdre aux échecs : psychologie et solutions"
-seoDescription: "Comment la peur de perdre affecte le jeu aux échecs. Mécanismes psychologiques, effets sur la performance et stratégies concrètes pour jouer libéré."
+seoDescription: "Peur de perdre aux échecs : mécanismes psychologiques, loss aversion, anxiété de performance et stratégies concrètes pour jouer libéré et retrouver du plaisir."
 ---
 
 Il y a quelque chose dans la peur de perdre aux échecs qui la distingue de la simple déception d'une défaite sportive. Aux échecs, la perte est irréfutable. Il n'y a pas d'arbitre partial, pas de malchance à invoquer. Quand tu perds, tu as joué moins bien que l'adversaire, et c'est visible dans chaque ligne de la notation. Cette transparence absolue de l'échec rend la peur de perdre particulièrement puissante et particulièrement déformatrice.

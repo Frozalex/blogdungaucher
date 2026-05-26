@@ -38,8 +38,7 @@ keyTakeaways:
     développer l'attention soutenue que les sessions longues ininterrompues.
 seoTitle: "Concentration aux échecs : entraîner l'attention pour mieux jouer"
 seoDescription: >-
-  Attention soutenue, réseau de contrôle, pleine conscience et micro-pauses : comment la neuroscience de l'attention
-  explique la concentration aux échecs et comment la développer.
+  Entraîner sa concentration aux échecs : attention soutenue, réseau de contrôle, pleine conscience et micro-pauses. Ce que la neuroscience dit de l'attention au jeu.
 ogImage: /images/blog/echecs-et-concentration-hero.png
 heroImage:
   src: /images/blog/echecs-et-concentration-hero.png

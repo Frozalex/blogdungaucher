@@ -21,8 +21,7 @@ tags:
   - confiance
 seoTitle: "Psychologie du joueur d'échecs : ego, tilt, flow et peur de perdre"
 seoDescription: >-
-  Ego, tilt, flow, peur de perdre : décryptage complet de la psychologie du joueur d'échecs. Comment les émotions
-  influencent chaque coup joué.
+  Ego, tilt, flow, peur de perdre, colère : décryptage complet de la psychologie du joueur d'échecs. Comment vos émotions influencent chaque décision sur l'échiquier.
 ---
 
 Avant même de poser la main sur le premier pion, quelque chose s'est déjà joué. Une tension imperceptible s'est installée dans les épaules. L'adversaire d'en face te regarde d'une certaine façon ou peut-être ne te regarde-t-il pas du tout, ce qui est encore pire. Tu commences à calculer, mais pas des variantes : tu calcules son niveau, sa réputation, l'écart de classement qui vous sépare. Tu te demandes si tu es suffisamment préparé. Une partie des ressources cognitives que tu avais prévu de consacrer à l'échiquier est déjà en train de s'évaporer dans ce bruit de fond psychologique.

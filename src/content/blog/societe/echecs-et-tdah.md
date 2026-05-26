@@ -20,8 +20,7 @@ tags:
   - Barkley
 seoTitle: "Échecs et TDAH : pourquoi l'échiquier capte l'attention que l'école ne retient pas"
 seoDescription: >-
-  Le TDAH n'est pas un manque d'attention : c'est une attention irrégulière. Pourquoi l'échiquier crée exactement les
-  conditions où le cerveau TDAH s'ancre naturellement. Ce que dit la recherche, et comment adapter la pratique.
+  TDAH et échecs : pourquoi l'échiquier crée les conditions où le cerveau TDAH s'ancre naturellement. Recherche, adaptations pratiques et bénéfices mesurés.
 heroImage:
   src: https://upload.wikimedia.org/wikipedia/commons/c/cc/Empty_wooden_chessboard.jpg
   alt: Échiquier en bois vide

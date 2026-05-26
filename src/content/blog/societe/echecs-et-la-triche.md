@@ -37,8 +37,7 @@ keyTakeaways:
     réputation, le classement Elo, la pression de performance dans un milieu extrêmement petit.
 seoTitle: "La triche aux échecs : l'affaire Niemann décryptée"
 seoDescription: >-
-  L'affaire Hans Niemann et Magnus Carlsen décryptée : comment détecte-t-on la triche aux échecs, peut-on la prouver, et
-  ce que le scandale révèle sur le monde des échecs professionnels.
+  Triche aux échecs : affaire Hans Niemann vs Magnus Carlsen décryptée. Comment détecte-t-on la triche, peut-on la prouver, et que révèle le scandale sur le jeu pro ?
 ogImage: /images/blog/echecs-et-la-triche-hero.png
 heroImage:
   src: /images/blog/echecs-et-la-triche-hero.png

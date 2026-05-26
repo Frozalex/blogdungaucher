@@ -39,8 +39,7 @@ keyTakeaways:
     supplémentaire sans analyse.
 seoTitle: "Analyser ses parties d'échecs : méthode pratique pour progresser"
 seoDescription: >-
-  Méthode d'analyse post-partie sans moteur, identification des erreurs récurrentes, utilisation intelligente de
-  Stockfish : comment analyser ses parties pour vraiment progresser aux échecs.
+  Comment analyser ses parties d'échecs pour progresser ? Méthode sans moteur d'abord, erreurs récurrentes, utilisation intelligente de Stockfish. Guide pratique.
 ogImage: /images/blog/analyser-ses-parties-hero.png
 heroImage:
   src: /images/blog/analyser-ses-parties-hero.png

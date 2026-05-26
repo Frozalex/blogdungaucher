@@ -19,8 +19,7 @@ tags:
   - NEJM
 seoTitle: "Les échecs et les seniors : la science sur le vieillissement cognitif"
 seoDescription: >-
-  Jouer aux échecs protège-t-il du déclin cognitif ? Ce que l'étude du New England Journal of Medicine et les
-  neurosciences disent vraiment sur les échecs, les seniors et la démence.
+  Échecs et seniors : l'étude du New England Journal of Medicine sur le déclin cognitif, la démence et les jeux de réflexion. Les bienfaits réels pour les personnes âgées.
 ---
 
 Raymond a 79 ans. Il joue aux échecs depuis l'âge de 12 ans dans un club de province, deux soirs par semaine. Son médecin lui a dit qu'il a le profil cognitif d'un homme de 65 ans. Ce n'est pas un miracle génétique : c'est, selon toute probabilité, le résultat de décennies d'une activité que les neurosciences considèrent aujourd'hui comme l'une des plus protectrices contre le déclin cognitif.

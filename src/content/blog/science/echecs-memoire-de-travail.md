@@ -40,8 +40,7 @@ keyTakeaways:
     laboratoire : ce qui explique pourquoi l'environnement de jeu a un impact réel sur la qualité des décisions.
 seoTitle: "Mémoire de travail et échecs : le goulot d'étranglement cognitif"
 seoDescription: >-
-  Modèle de Baddeley, chunks, capacité de 4-7 éléments : comment la mémoire de travail limite et façonne le calcul de
-  variantes aux échecs.
+  Mémoire de travail aux échecs : modèle de Baddeley, chunks, capacité de 4 à 7 éléments. Comment ce goulot d'étranglement cognitif limite le calcul de variantes.
 ogImage: /images/blog/echecs-memoire-de-travail-hero.png
 heroImage:
   src: /images/blog/echecs-memoire-de-travail-hero.png

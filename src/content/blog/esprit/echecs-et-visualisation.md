@@ -41,8 +41,7 @@ keyTakeaways:
     mois d'entraînement régulier.
 seoTitle: "Visualisation mentale aux échecs : voir sans regarder"
 seoDescription: >-
-  Jeu à l'aveugle, chunks cognitifs, Chase et Simon : comment fonctionne la visualisation mentale aux échecs et comment
-  l'améliorer.
+  Comment visualiser l'échiquier sans le voir ? Jeu à l'aveugle, chunks cognitifs, Chase et Simon, entraînement : la science de la représentation mentale aux échecs.
 ogImage: /images/blog/echecs-et-visualisation-hero.png
 heroImage:
   src: /images/blog/echecs-et-visualisation-hero.png

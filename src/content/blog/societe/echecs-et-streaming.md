@@ -42,8 +42,7 @@ keyTakeaways:
     grand public.
 seoTitle: "Échecs et streaming : Twitch et YouTube révolutionnent le jeu"
 seoDescription: >-
-  Nakamura, GothamChess, Chess.com : comment le streaming a transformé les échecs en contenu viral et révolutionné
-  l'accès au jeu.
+  Streaming et échecs : Hikaru Nakamura, GothamChess, Botez, Chess.com et Twitch. Comment le streaming a transformé les échecs en phénomène viral et démocratisé le jeu.
 ogImage: /images/blog/echecs-et-streaming-hero.png
 heroImage:
   src: /images/blog/echecs-et-streaming-hero.png

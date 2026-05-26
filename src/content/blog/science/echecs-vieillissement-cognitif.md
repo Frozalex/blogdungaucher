@@ -41,8 +41,7 @@ keyTakeaways:
     échecs.
 seoTitle: "Réserve cognitive et échecs après 60 ans : ce que dit la neuroplasticité"
 seoDescription: >-
-  Comment la réserve cognitive construite par les échecs retarde le déclin après 60 ans. Pic de carrière,
-  neuroplasticité des seniors, comparaison blitz vs parties lentes.
+  Comment les échecs retardent le déclin cognitif après 60 ans : réserve cognitive, neuroplasticité des seniors, comparaison entre blitz et parties lentes.
 ogImage: /images/blog/echecs-vieillissement-cognitif-hero.png
 heroImage:
   src: /images/blog/echecs-vieillissement-cognitif-hero.png

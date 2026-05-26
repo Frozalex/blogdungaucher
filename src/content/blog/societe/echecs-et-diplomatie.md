@@ -38,8 +38,7 @@ keyTakeaways:
     préjugés interethniques chez les enfants participants sur 18 mois.
 seoTitle: "Échecs et diplomatie : l'échiquier comme outil géopolitique"
 seoDescription: >-
-  De Fischer-Spassky à Chess for Peace, comment les échecs servent la diplomatie internationale et la réconciliation
-  entre peuples en conflit.
+  Échecs et diplomatie : de Fischer-Spassky 1972 à Chess for Peace, comment le jeu a servi la géopolitique, le soft power et la réconciliation entre peuples en conflit.
 ogImage: /images/blog/echecs-et-diplomatie-hero.png
 heroImage:
   src: /images/blog/echecs-et-diplomatie-hero.png

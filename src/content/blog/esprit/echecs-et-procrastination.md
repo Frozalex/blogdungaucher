@@ -39,8 +39,7 @@ keyTakeaways:
     jeu, acceptation que le coup joué est définitif, et focus sur la prochaine décision plutôt que le regret du passé.
 seoTitle: "Procrastination et échecs : ce que l'échiquier apprend sur l'évitement"
 seoDescription: >-
-  La procrastination comme évitement émotionnel, et comment les échecs entraînent la tolérance à l'incertitude
-  décisionnelle. Psychologie et pratique.
+  Procrastination aux échecs : évitement émotionnel, peur de l'erreur et tolérance à l'incertitude. Ce que l'échiquier apprend sur la prise de décision et la motivation.
 ogImage: /images/blog/echecs-et-procrastination-hero.png
 heroImage:
   src: /images/blog/echecs-et-procrastination-hero.png

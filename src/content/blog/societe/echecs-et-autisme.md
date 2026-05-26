@@ -18,8 +18,7 @@ tags:
   - neurodiversité
 seoTitle: "Échecs et autisme : les bienfaits pour les TSA"
 seoDescription: >-
-  Règles invariantes, structure visuelle, pas de communication verbale : pourquoi l'échiquier convient naturellement aux
-  cerveaux autistes. Ce que les études sur les TSA montrent réellement.
+  Autisme et échecs : règles invariantes, structure visuelle, pas de verbal. Pourquoi l'échiquier convient aux cerveaux autistes, et ce que les études TSA montrent.
 ogImage: /images/blog/echecs-et-autisme-hero.png
 heroImage:
   src: /images/blog/echecs-et-autisme-hero.png

@@ -40,8 +40,7 @@ keyTakeaways:
     du stéréotype hollywoodien.
 seoTitle: "Échecs et culture populaire : de Bergman à The Queen's Gambit"
 seoDescription: >-
-  The Queen's Gambit, cinéma, littérature, Twitch : comment les échecs ont envahi la culture populaire et changé leur
-  image publique.
+  Le Jeu de la Dame (Netflix), cinéma, littérature, Twitch et mèmes : comment les échecs ont envahi la culture populaire et changé leur image dans le grand public.
 ogImage: /images/blog/echecs-et-culture-populaire-hero.png
 heroImage:
   src: /images/blog/echecs-et-culture-populaire-hero.png

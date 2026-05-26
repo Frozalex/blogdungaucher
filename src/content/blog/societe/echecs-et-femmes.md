@@ -21,8 +21,7 @@ tags:
   - Hou Yifan
 seoTitle: "Échecs et Femmes : pourquoi si peu de joueuses aujourd'hui ?"
 seoDescription: >-
-  40 femmes parmi 1700 Grands Maîtres : est-ce biologique, culturel ou structurel ? Les données démontent les idées
-  reçues sur l'écart de genre aux échecs.
+  Femmes et échecs : 40 femmes parmi 1700 Grands Maîtres. Est-ce biologique, culturel ou structurel ? Les données qui démontent les idées reçues sur l'écart de genre.
 ogImage: /images/blog/echecs-et-femmes-hero.png
 heroImage:
   src: /images/blog/echecs-et-femmes-hero.png

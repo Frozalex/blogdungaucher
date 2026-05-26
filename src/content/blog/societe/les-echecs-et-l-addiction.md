@@ -19,8 +19,7 @@ tags:
   - psychologie
 seoTitle: "Addiction aux échecs : comprendre et surmonter la dépendance"
 seoDescription: >-
-  47 parties dans la nuit, rating obsessionnel, boucle dopaminergique : les échecs créent-ils une vraie dépendance ?
-  Signes, mécanismes neurologiques et conseils concrets pour reprendre le contrôle.
+  Addiction aux échecs : 47 parties dans la nuit, rating obsessionnel, boucle dopaminergique. Les échecs créent-ils une vraie dépendance ? Signes et solutions.
 ogImage: /images/blog/les-echecs-et-l-addiction-hero.png
 heroImage:
   src: /images/blog/les-echecs-et-l-addiction-hero.png

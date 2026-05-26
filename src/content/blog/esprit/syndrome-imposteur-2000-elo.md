@@ -9,7 +9,7 @@ readingTime: "13 min"
 pillar: "Psychologie"
 tags: ["syndrome de l'imposteur", "2000 elo", "psychologie", "classement", "confiance", "perfectionnisme", "échecs"]
 seoTitle: "Pourquoi franchir 2000 Elo déclenche le syndrome de l'imposteur"
-seoDescription: "Pourquoi atteindre 2000 Elo peut déclencher le syndrome de l'imposteur. Psychologie du classement, légitimité et confiance aux échecs."
+seoDescription: "Atteindre 2000 Elo et se sentir illégitime : pourquoi le syndrome de l'imposteur frappe aux paliers. Psychologie du classement, perfectionnisme et confiance en soi."
 ---
 
 Tu as travaillé pendant des mois. Tu as étudié les ouvertures, résolu des milliers de tactiques, analysé tes parties à froid. Et puis, un jour, le chiffre apparaît : 2000. Une frontière symbolique que la plupart des joueurs ne franchissent jamais. Tu devrais être fier. À la place, une petite voix intérieure murmure : "Ce n'est pas réel. Tu vas redescendre. Les autres vont s'en rendre compte."

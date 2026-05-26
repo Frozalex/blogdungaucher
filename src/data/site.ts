@@ -140,7 +140,7 @@ export const categoryMap: Record<
     surface: "rgba(91,159,212,0.1)",
     seoTitle: "Science : Cognition et Neurosciences | Blog d'un Gaucher",
     seoDescription:
-      "La science du jeu d'échecs expliquée : cognition, mémoire, neuroplasticité et apprentissage. Pour comprendre les mécanismes profonds du jeu.",
+      "Échecs et cerveau : mémoire de travail, dopamine, AlphaZero, Alzheimer, génétique, sommeil et neuroplasticité. Ce que la recherche scientifique dit du jeu.",
     seoTitleEn: "Science: Cognition & Neuroscience | A Left-Hander's Blog",
     seoDescriptionEn:
       "Chess science explained: cognition, memory, neuroplasticity and learning. For players who want to improve by understanding the deep mechanisms of the game.",
@@ -160,7 +160,7 @@ export const categoryMap: Record<
     surface: "rgba(240,160,80,0.1)",
     seoTitle: "Esprit : Philosophie et Réflexions | Blog d'un Gaucher",
     seoDescription:
-      "Réflexions sur le mental compétitif aux échecs : attention, confiance, gestion de la défaite et discipline intérieure du joueur.",
+      "Mental aux échecs : burnout, syndrome de l'imposteur, peur de perdre, flow, concentration, tilt et gestion du stress en tournoi. Psychologie du joueur.",
     seoTitleEn: "Mind: Philosophy & Competitive Mindset | A Left-Hander's Blog",
     seoDescriptionEn:
       "Reflections on the competitive mindset in chess: focus, confidence, managing defeat and the inner discipline of the player.",
@@ -180,7 +180,7 @@ export const categoryMap: Record<
     surface: "rgba(92,196,176,0.1)",
     seoTitle: "Société : Analyses et Décryptages | Blog d'un Gaucher",
     seoDescription:
-      "Analyses et décryptages sur la place des échecs dans l'éducation, les médias et la vie collective. Un regard critique sur le jeu et la société.",
+      "Échecs et société : femmes, école, prison, TDAH, autisme, HPI, streaming, triche, handicap et argent. Ce que l'échiquier révèle du monde réel.",
     seoTitleEn: "Society: Analyses & Insights | A Left-Hander's Blog",
     seoDescriptionEn:
       "Analyses on chess in education, media and collective life. A critical look at the game and society, from inclusion to culture and beyond.",
@@ -201,7 +201,7 @@ export const categoryMap: Record<
     surface: "rgba(139,92,246,0.12)",
     seoTitle: "Grand oral : échecs au bac | Blog d'un Gaucher",
     seoDescription:
-      "Préparer le Grand oral sur les échecs : plans type, notions Maths et NSI, exemples concrets.",
+      "Grand Oral bac 2025 avec les échecs : sujets rédigés Maths, NSI, SES, HGGSP. Plans, scripts 10 min, code Python, questions jury et guides imprimables.",
     seoTitleEn: "Grand oral: chess & baccalaureate | A Left-Hander's Blog",
     seoDescriptionEn:
       "Prepare your Grand oral on chess: outlines, Maths and CS concepts, concrete examples.",

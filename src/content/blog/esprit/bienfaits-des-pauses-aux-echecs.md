@@ -10,7 +10,7 @@ readingTime: "17 min"
 pillar: "Psychologie"
 tags: ["pauses", "récupération", "psychologie", "performance", "fatigue cognitive", "consolidation", "sommeil", "rage-queue", "entraînement"]
 seoTitle: "Pauses aux échecs : pourquoi t'arrêter te rend meilleur"
-seoDescription: "Consolidation mémorielle, fatigue cognitive, sommeil, rage-queue : la science des pauses appliquée aux échecs, avec des protocoles concrets pour entraînement et tournoi."
+seoDescription: "Pourquoi les pauses rendent meilleur aux échecs : consolidation mémorielle, fatigue cognitive, sommeil et rage-queue. Protocoles concrets pour tournoi et entraînement."
 ---
 
 Le joueur qui progresse le plus vite n'est pas toujours celui qui joue le plus. C'est souvent celui qui sait quand s'arrêter. La pause n'est pas du temps gâché : c'est une partie intégrante du processus d'apprentissage, de consolidation et de récupération. La neuroscience et la psychologie du sport l'ont démontré de façon de plus en plus précise. Et les joueurs d'échecs, qui ont tendance à valoriser l'accumulation (plus d'heures, plus de puzzles, plus de parties), sous-estiment systématiquement cet outil.

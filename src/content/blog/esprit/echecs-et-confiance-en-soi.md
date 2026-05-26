@@ -35,8 +35,7 @@ keyTakeaways:
     syndrome de l'imposteur échiquéen.
 seoTitle: "Échecs et confiance en soi : construire une estime solide sur l'échiquier"
 seoDescription: >-
-  Comment les échecs forgent une vraie confiance en soi ? Auto-efficacité, mindset de croissance, analyse post-partie :
-  la psychologie de la performance appliquée à l'échiquier.
+  Comment les échecs forgent la confiance en soi ? Auto-efficacité, mindset de croissance, analyse post-partie : psychologie de la performance appliquée au joueur.
 ogImage: /images/blog/echecs-et-confiance-en-soi-hero.png
 heroImage:
   src: /images/blog/echecs-et-confiance-en-soi-hero.png
