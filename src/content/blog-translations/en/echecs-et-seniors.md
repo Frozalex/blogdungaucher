@@ -7,6 +7,7 @@ seoTitle: "Chess and Seniors: The Science on Cognitive Ageing"
 seoDescription: >-
   Does playing chess protect against cognitive decline? What the New England Journal of Medicine study and neuroscience
   really say about chess, seniors and dementia.
+enSlug: "chess-and-seniors"
 ---
 
 Raymond is 79. He has played chess since age 12 in a provincial club, two evenings a week. His doctor says he has the cognitive profile of a 65-year-old. That is not genetic miracle: it is, in all likelihood, the result of decades of an activity that neuroscience today considers one of the most protective against cognitive decline.

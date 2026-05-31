@@ -7,6 +7,7 @@ seoTitle: "Chess and Money: Prize Pools, Economic Model and Pro Earnings"
 seoDescription: >-
   Why aren't the world's best chess players rich? Prize pools, FIDE, sponsorship, streaming: anatomy of a struggling
   economic model.
+enSlug: "chess-and-money"
 ---
 
 In 2023 the World Chess Championship matched Ding Liren against Ian Nepomniachtchi. Total prize pool: two million dollars. The winner took 1.1 million.

@@ -7,6 +7,7 @@ seoTitle: "Chess and Addiction: Understanding and Overcoming Dependency"
 seoDescription: >-
   Discover the complex link between chess and addiction. Learn to identify the signs of dependency and find concrete
   advice on how to take back control.
+enSlug: "chess-and-addiction"
 ---
 
 It is 3 a.m. The blue screen burns your eyelids; the daily counter shows **47 games**. Your rating just dropped below the line you swore you would not cross again. You tell yourself: *"Just one more game,"* the one that will set things right. Because you are not about to end on a loss.

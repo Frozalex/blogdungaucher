@@ -3,6 +3,7 @@ title: "Chess Burnout: When the Game You Love Drains You"
 excerpt: "Chess burnout is real. It is not laziness or a lack of passion. It is a deep exhaustion that hits the prodigy junior as well as the dedicated club player. How to recognize it, understand it, and get out."
 seoTitle: "Chess Burnout: Recognize and Overcome Exhaustion"
 seoDescription: "Chess burnout explained: symptoms, causes and recovery strategies. How to get the pleasure of playing back after competitive exhaustion."
+enSlug: "chess-burnout"
 draft: true
 ---
 

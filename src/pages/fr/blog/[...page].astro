@@ -78,10 +78,10 @@ const structuredData = isFirstPage
           </button>
         ))}
       </div>
-      <div class="search-wrap reveal">
+      <form class="search-wrap reveal" action="/fr/recherche/" method="get" role="search">
         <label for="blog-search" class="search-label" data-t="blog.searchLabel">Rechercher un article</label>
-        <input id="blog-search" class="search-input" type="search" placeholder="Titre, extrait ou étiquette…" data-t-placeholder="blog.searchPlaceholder" />
-      </div>
+        <input id="blog-search" class="search-input" type="search" name="q" placeholder="Titre, extrait ou étiquette…" data-t-placeholder="blog.searchPlaceholder" autocomplete="off" />
+      </form>
     </div>
   </section>
 
@@ -96,7 +96,6 @@ const structuredData = isFirstPage
           <article
             class="post-item"
             data-category={post.data.category}
-            data-search={`${post.data.title} ${post.data.excerpt} ${post.data.tags?.join(" ") ?? ""}`.toLowerCase()}
           >
             <ArticleCard post={post} />
           </article>
@@ -314,27 +313,19 @@ const structuredData = isFirstPage
 <script>
   function initBlogFilters() {
     const items = Array.from(document.querySelectorAll(".post-item"));
-    const searchInput = document.getElementById("blog-search");
     const chips = Array.from(document.querySelectorAll("[data-filter-category]"));
     const empty = document.getElementById("listing-empty");
-    if (!items.length || !searchInput || !chips.length || !empty) return;
+    if (!items.length || !chips.length || !empty) return;
 
     let activeCategory = "all";
 
     function applyFilters() {
-      const query = searchInput.value.trim().toLowerCase();
       let visible = 0;
-
       items.forEach((item) => {
-        const matchesCategory =
-          activeCategory === "all" || item.dataset.category === activeCategory;
-        const haystack = item.dataset.search ?? "";
-        const matchesQuery = !query || haystack.includes(query);
-        const show = matchesCategory && matchesQuery;
+        const show = activeCategory === "all" || item.dataset.category === activeCategory;
         item.hidden = !show;
         if (show) visible += 1;
       });
-
       empty.hidden = visible > 0;
     }
 
@@ -346,7 +337,6 @@ const structuredData = isFirstPage
       });
     });
 
-    searchInput.addEventListener("input", applyFilters);
     applyFilters();
   }
 

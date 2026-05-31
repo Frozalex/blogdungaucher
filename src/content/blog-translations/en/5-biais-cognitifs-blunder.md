@@ -3,6 +3,7 @@ title: "5 Cognitive Biases That Make You Blunder in Chess"
 excerpt: "Your blunders aren't all calculation errors. Many are errors of perception, reasoning, judgment. These 5 cognitive biases, well documented in psychology, are responsible for a large share of the mistakes you make at the board."
 seoTitle: "5 Cognitive Biases That Cause Chess Blunders"
 seoDescription: "The 5 most frequent cognitive biases that cause blunders in chess. Psychology of error, Kahneman, and how to train your brain to avoid them."
+enSlug: "5-cognitive-biases-blunder"
 draft: true
 ---
 

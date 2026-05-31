@@ -77,11 +77,10 @@ const structuredDataItems = structuredData
 
 const inLanguage = lang === "en" ? "en-US" : lang === "de" ? "de-DE" : "fr-FR";
 
-/** Politique d'indexation : seules les pages FR sont indexables tant que les
-   versions EN et DE ne sont pas finalisées éditorialement. Toute page
-   non-FR reçoit automatiquement un meta robots noindex, en plus du prop
-   explicite. Voir aussi sitemap.xml.ts (langs limités à fr) et robots.txt. */
-const effectiveNoindex = noindex || lang !== "fr";
+/** Politique d'indexation : FR + EN sont désormais indexables (le contenu EN
+   est rédigé nativement ou en traduction validée). DE reste en noindex tant
+   que les traductions ne sont pas finalisées. Voir aussi sitemap.xml.ts. */
+const effectiveNoindex = noindex || lang === "de";
 
 // Fallback: si une page "article" oublie de fournir structuredData,
 // on injecte un BlogPosting minimal pour ne jamais "perdre" le schema.org.
@@ -155,8 +154,9 @@ function safeJsonLd(item: unknown): string {
     );
 }
 
-const oneSignalAppId = import.meta.env.PUBLIC_ONESIGNAL_APP_ID ?? "";
-const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "";
+const ntfyUrl      = import.meta.env.PUBLIC_NTFY_URL       ?? "";
+const ntfyTopic    = import.meta.env.PUBLIC_NTFY_TOPIC     ?? "blog-gaucher";
+const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
 ---
 <!DOCTYPE html>
 <html lang={lang} data-server-lang={lang}>
@@ -257,7 +257,7 @@ const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "
             "navLinks.esprit": "Esprit",
             "navLinks.societe": "Soci\u00e9t\u00e9",
             "navLinks.grandOral": "Grand oral",
-            "navLinks.essais": "Essais",
+            "navLinks.dissertations": "Dissertations",
             "navLinks.blog": "Articles",
             "navLinks.about": "\u00c0 propos"
           },
@@ -331,7 +331,7 @@ const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "
             "navLinks.esprit": "Mind",
             "navLinks.societe": "Society",
             "navLinks.grandOral": "Grand oral",
-            "navLinks.essais": "Essays",
+            "navLinks.dissertations": "Dissertations",
             "navLinks.blog": "Articles",
             "navLinks.about": "About"
           }
@@ -446,12 +446,10 @@ const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "
       <script type="application/ld+json" set:html={safeJsonLd(item)} />
     ))}
 
-    <script is:inline define:vars={{ oneSignalAppId, oneSignalSafariWebId, pushLang: lang }}>
-      globalThis.__PUBLIC_ONESIGNAL_APP_ID__ = oneSignalAppId;
-      globalThis.__ONESIGNAL_SAFARI_WEB_ID__ =
-        typeof oneSignalSafariWebId === "string" ? oneSignalSafariWebId : "";
-      globalThis.__PUSH_LANG__ =
-        typeof pushLang === "string" && pushLang ? pushLang : "fr";
+    <script is:inline define:vars={{ ntfyUrl, ntfyTopic, ntfyVapidKey }}>
+      globalThis.__NTFY_URL__       = ntfyUrl;
+      globalThis.__NTFY_TOPIC__     = ntfyTopic;
+      globalThis.__NTFY_VAPID_KEY__ = ntfyVapidKey;
     </script>
 
     <script is:inline>
@@ -463,7 +461,6 @@ const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "
         const state = {
           analyticsLoaded: false,
           adsLoaded: false,
-          oneSignalSdkStarted: false,
         };
 
         function readConsent() {
@@ -515,67 +512,41 @@ const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "
           );
         }
 
-        /** OneSignal : chargé seulement si la case notifications est cochée ; optOut / optIn si tu changes d’avis. */
-        function enableOneSignal() {
-          const appId =
-            typeof globalThis.__PUBLIC_ONESIGNAL_APP_ID__ === "string"
-              ? globalThis.__PUBLIC_ONESIGNAL_APP_ID__.trim()
-              : "";
-          if (!appId) return;
-          window.OneSignalDeferred = window.OneSignalDeferred || [];
-          if (!state.oneSignalSdkStarted) {
-            state.oneSignalSdkStarted = true;
-            window.OneSignalDeferred.push(async function (OneSignal) {
-              const safariId =
-                typeof globalThis.__ONESIGNAL_SAFARI_WEB_ID__ === "string"
-                  ? globalThis.__ONESIGNAL_SAFARI_WEB_ID__.trim()
-                  : "";
-              const initCfg = {
-                appId,
-                notifyButton: { enable: true },
-                serviceWorkerPath: "onesignal/OneSignalSDKWorker.js",
-                serviceWorkerParam: { scope: "/onesignal/" },
-              };
-              if (safariId) initCfg.safari_web_id = safariId;
-              await OneSignal.init(initCfg);
-              try {
-                const L =
-                  typeof globalThis.__PUSH_LANG__ === "string" &&
-                  globalThis.__PUSH_LANG__
-                    ? globalThis.__PUSH_LANG__
-                    : "fr";
-                if (OneSignal.User?.addTags) {
-                  await OneSignal.User.addTags({ site_lang: L });
-                } else if (OneSignal.User?.addTag) {
-                  await OneSignal.User.addTag("site_lang", L);
-                }
-              } catch (_) {}
+        /** ntfy Web Push : abonne le navigateur au topic ntfy via PushManager (VAPID). */
+        async function enableNtfyPush() {
+          if (!("PushManager" in window) || !("serviceWorker" in navigator)) return;
+          const vapidKey = (globalThis.__NTFY_VAPID_KEY__ || "").trim();
+          if (!vapidKey) return;
+          try {
+            const reg = await navigator.serviceWorker.ready;
+            if (await reg.pushManager.getSubscription()) return; // déjà abonné
+            const sub = await reg.pushManager.subscribe({
+              userVisibleOnly: true,
+              applicationServerKey: vapidKey,
             });
-            const os = document.createElement("script");
-            os.src = "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js";
-            os.defer = true;
-            document.head.appendChild(os);
-            return;
-          }
-          window.OneSignalDeferred.push(async function (OneSignal) {
-            try {
-              if (OneSignal.User?.PushSubscription?.optIn) {
-                await OneSignal.User.PushSubscription.optIn();
-              }
-            } catch (_) {}
-          });
+            const url   = (globalThis.__NTFY_URL__   || "").replace(/\/$/, "");
+            const topic = (globalThis.__NTFY_TOPIC__ || "blog-gaucher").trim();
+            if (!url) return;
+            const j = sub.toJSON();
+            await fetch(`${url}/v1/account/subscription`, {
+              method: "PATCH",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                web_push_subscription: { endpoint: j.endpoint, keys: j.keys },
+                url,
+                topics: [topic],
+              }),
+            }).catch(() => {});
+          } catch (_) {}
         }
 
-        function disableOneSignalPush() {
-          if (!state.oneSignalSdkStarted) return;
-          window.OneSignalDeferred = window.OneSignalDeferred || [];
-          window.OneSignalDeferred.push(async function (OneSignal) {
-            try {
-              if (OneSignal.User?.PushSubscription?.optOut) {
-                await OneSignal.User.PushSubscription.optOut();
-              }
-            } catch (_) {}
-          });
+        async function disableNtfyPush() {
+          if (!("serviceWorker" in navigator)) return;
+          try {
+            const reg = await navigator.serviceWorker.ready;
+            const sub = await reg.pushManager.getSubscription();
+            if (sub) await sub.unsubscribe();
+          } catch (_) {}
         }
 
         function applyConsent(consent) {
@@ -583,9 +554,9 @@ const oneSignalSafariWebId = import.meta.env.PUBLIC_ONESIGNAL_SAFARI_WEB_ID ?? "
           if (consent.analytics) enableAnalytics();
           if (consent.marketing) enableAds();
           if (consent.notifications) {
-            enableOneSignal();
+            enableNtfyPush();
           } else {
-            disableOneSignalPush();
+            disableNtfyPush();
           }
         }
 

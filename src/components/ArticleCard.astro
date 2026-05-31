@@ -19,12 +19,13 @@ const postExcerpt =
     : post.data.excerpt;
 
 const thumbSrc = getPostHeroSrc(post);
+const postHref = await getPostUrlLang(post, lang);
 ---
 <article
   class={`card scale-in ${featured ? "featured" : ""}`}
   style={`--motion-delay: 60ms; --accent:${category.accent};`}
 >
-  <a href={getPostUrlLang(post, lang)} class="card-link card-link--thumb">
+  <a href={postHref} class="card-link card-link--thumb">
     <div class="card-thumb-wrap">
       {thumbSrc ? (
         <img

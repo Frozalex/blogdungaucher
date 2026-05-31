@@ -1,18 +1,17 @@
 import type { APIRoute } from "astro";
 
 import { siteConfig, staticRoutes } from "../data/site";
-import { getAllPosts, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
+import { getAllPosts, getEnSlugMap, getPostSlug, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
 
 /** Langues indexées dans le sitemap.
-   Seul `fr` est exposé : les pages EN et DE existent en build mais portent
-   un meta noindex (cf. BaseLayout) et ne doivent pas être proposées à
-   l'indexation tant que la rédaction native n'est pas finalisée.
-   À réintégrer en ajoutant "en" / "de" à cette liste. */
-const langs: SiteLang[] = ["fr"];
+   `fr` et `en` sont exposés. `de` reste exclu tant que les traductions
+   allemandes ne sont pas finalisées (cf. noindex dans BaseLayout). */
+const langs: SiteLang[] = ["fr", "en"];
 
 export const GET: APIRoute = async () => {
   const posts = await getAllPosts();
+  const enSlugMap = await getEnSlugMap();
 
   const frPaths = [
     ...staticRoutes.map((route) => withTrailingSlash(route)),
@@ -29,6 +28,18 @@ export const GET: APIRoute = async () => {
     return new Date().toISOString();
   }
 
+  /** URL localisée d'une page : pour les articles EN, on substitue le slug
+   *  par le slug localisé déclaré dans la traduction (frontmatter `enSlug`),
+   *  sinon on retombe sur le slug FR via `swapLangPrefix`. */
+  function localizedPath(frPath: string, lang: SiteLang): string {
+    if (lang !== "en") return swapLangPrefix(frPath, lang);
+    const post = posts.find((p) => getPostUrl(p) === frPath);
+    if (!post) return swapLangPrefix(frPath, "en");
+    const frSlug = getPostSlug(post);
+    const enSlug = enSlugMap.get(frSlug) ?? frSlug;
+    return `/en/blog/${enSlug}/`;
+  }
+
   const body = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
           xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -42,7 +53,7 @@ export const GET: APIRoute = async () => {
           ? `<xhtml:link rel="alternate" hreflang="fr" href="${loc}"/>`
           : langs
               .map((lang) => {
-                const href = absolute(swapLangPrefix(frPath, lang));
+                const href = absolute(localizedPath(frPath, lang));
                 const hreflang = lang;
                 return `<xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}"/>`;
               })

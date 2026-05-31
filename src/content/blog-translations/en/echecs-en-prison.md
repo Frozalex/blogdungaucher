@@ -7,6 +7,7 @@ seoTitle: "Chess in Prison: Rehabilitation, Executive Functions and Recidivism"
 seoDescription: >-
   Change Through Chess, San Quentin, Rikers Island: prison chess programmes show measurable effects on impulsivity and
   recidivism. What criminology really says about the chessboard as a rehabilitation tool.
+enSlug: "chess-in-prison"
 ---
 
 It is 2 p.m. in a prison on the outskirts of London. The room is small, the furniture battered. Two inmates sit facing a chessboard on a formica table. There is no close watch: the officer is in the corridor.

@@ -7,6 +7,7 @@ seoTitle: "Chess and Autism: Benefits for the Autism Spectrum"
 seoDescription: >-
   Discover how chess helps people with ASD. Explore the cognitive and social benefits of this strategic game for
   autistic minds, backed by research.
+enSlug: "chess-and-autism"
 ---
 
 Picture a school playground one Thursday morning. The noise is overwhelming: chairs scraping, unpredictable voices, fluorescent lights humming slightly overhead. For most of us it is mild background sound. But for Theo, 9, diagnosed with [autism spectrum disorder](https://en.wikipedia.org/wiki/Autism_spectrum) (ASD) level 2, that flood of unfiltered sensory input becomes a paralyzing inner storm every morning. Social codes fly everywhere, implicit, unreadable. You must read between the lines of a conversation, interpret a smirk, grasp the irony of a joke. It is exhausting at a level few neurotypical people can imagine.

@@ -7,6 +7,7 @@ seoTitle: "Chess and the Brain: Benefits According to Science"
 seoDescription: >-
   fMRI, neuroplasticity, chronnectome, executive functions: what research actually measures about the effects of chess
   on the brain, with the numbers.
+enSlug: "chess-and-the-brain"
 ---
 
 It is not an exceptional brain that lets you play chess brilliantly. Relentless chess practice builds an exceptional brain. The image of the grandmaster born with a divine gift is exactly backwards.

@@ -7,6 +7,7 @@ seoTitle: "Chess and ADHD: The Chessboard Captures the Attention School Cannot H
 seoDescription: >-
   ADHD isn't a lack of attention - it's irregular attention. Why the chessboard creates exactly the right conditions for
   the ADHD brain to anchor itself. What research says and how to adapt the practice.
+enSlug: "chess-and-adhd"
 ---
 
 Luca is 10. His teacher says he cannot stay focused for more than two minutes. He does not listen, disrupts class, rarely finishes an exercise. His parents tried tutoring, sports, reading aloud. Nothing sticks.

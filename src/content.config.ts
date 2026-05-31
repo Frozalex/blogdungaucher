@@ -63,6 +63,11 @@ const translationSchema = z.object({
   seoTitle: z.string().optional(),
   seoDescription: z.string().optional(),
   draft: z.boolean().default(false),
+  /** Slug localisé utilisé dans l'URL (ex. "learning-to-lose-at-chess").
+   *  Si absent, l'URL reprend le slug FR du fichier source.
+   *  Le nom du fichier MD doit toujours correspondre au slug FR pour la résolution
+   *  de la traduction depuis la page (`getEntry("enTranslations", frSlug)`). */
+  enSlug: z.string().optional(),
   faq: z
     .array(
       z.object({
@@ -95,5 +100,21 @@ const deTranslations = defineCollection({
   schema: translationSchema,
 });
 
-export const collections = { blog, enTranslations, deTranslations };
+const dissertations = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/dissertations" }),
+  schema: z.object({
+    title: z.string(),
+    excerpt: z.string(),
+    publishDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    author: z.string().default("Le Gaucher"),
+    readingTime: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
+    ogImage: z.string().optional(),
+  }),
+});
+
+export const collections = { blog, enTranslations, deTranslations, dissertations };
 

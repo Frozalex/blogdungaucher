@@ -3,7 +3,8 @@ title: "Game Theory in Chess: Why Every Move is a Strategic Decision"
 excerpt: "Chess is the founding ground of game theory. Minimax, Nash equilibrium, perfect information: a mathematical breakdown of what is really happening when you play."
 seoTitle: "Game Theory in Chess: Nash, Minimax, Zermelo Explained"
 seoDescription: "Minimax, Nash equilibrium, mixed strategies, Zermelo's theorem: game theory applied to chess, from openings to preparing for a specific opponent."
-draft: true
+enSlug: "game-theory-in-chess"
+draft: false
 faq:
   - question: Are chess strictly a zero-sum game?
     answer: >-

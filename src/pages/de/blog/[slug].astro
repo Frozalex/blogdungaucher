@@ -84,7 +84,7 @@ const related = allPosts
 
 const postUrlDe = getPostUrlDe(post);
 const postUrlFr = getPostUrl(post);
-const postUrlEn = getPostUrlEn(post);
+const postUrlEn = await getPostUrlEn(post);
 const absolutePostUrl = absoluteUrl(postUrlDe);
 
 const categoryHrefDe = swapLangPrefix(category.href, "de");
@@ -104,7 +104,7 @@ const displayExcerpt = deEntry?.data?.excerpt ?? post.data.excerpt;
 const hasDeTranslation = !!deEntry;
 
 const structuredData = [
-  buildArticleJsonLd(post, { lang : "de", headline : deTitle, description : deDesc }),
+  await buildArticleJsonLd(post, { lang : "de", headline : deTitle, description : deDesc }),
   buildBreadcrumbJsonLd([
     { name : "Startseite", path : "/de/" },
     { name : "Artikel", path : "/de/blog/" },

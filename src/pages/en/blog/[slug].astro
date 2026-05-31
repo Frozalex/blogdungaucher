@@ -19,9 +19,10 @@ import {
   formatDateEn,
   filterPostsForLang,
   getAllPosts,
+  getEnSlugMap,
   getPostSlug,
   getPostUrl,
-  getPostUrlEn,
+  getPostUrlEnSync,
   getPostUrlDe,
   getPostHeroSrc,
 } from "../../../utils/blog";
@@ -37,11 +38,20 @@ import { isPublicAssetAvailable } from "../../../utils/public-asset";
 
 export async function getStaticPaths() {
   const posts = filterPostsForLang(await getAllPosts(), "en");
-  return posts.map((post) => ({ params: { slug: getPostSlug(post) }, props: { post } }));
+  const enSlugMap = await getEnSlugMap();
+  return posts.map((post) => {
+    const frSlug = getPostSlug(post);
+    const enSlug = enSlugMap.get(frSlug) ?? frSlug;
+    return { params: { slug: enSlug }, props: { post, frSlug, enSlug } };
+  });
 }
 
-const { post } = Astro.props;
-const slug = getPostSlug(post);
+const { post, frSlug, enSlug } = Astro.props as {
+  post: Awaited<ReturnType<typeof getAllPosts>>[number];
+  frSlug: string;
+  enSlug: string;
+};
+const slug = frSlug;
 
 // Récupère la traduction EN depuis la collection enTranslations (si elle existe
 // ET qu'elle n'est pas marquée draft). Une traduction en draft est ignorée comme
@@ -87,7 +97,7 @@ const related = filterPostsForLang(
   "en",
 ).slice(0, 3);
 
-const postUrlEn = getPostUrlEn(post);
+const postUrlEn = getPostUrlEnSync(post, enSlug);
 const postUrlFr = getPostUrl(post);
 const absolutePostUrl = absoluteUrl(postUrlEn);
 
@@ -114,7 +124,7 @@ const enCategoryLabel = enCategoryLabels[post.data.category] ?? category.label;
 const enCategoryHref = swapLangPrefix(category.href, "en");
 
 const structuredData = [
-  buildArticleJsonLd(post, { lang: "en", headline: enTitle, description: enDesc }),
+  await buildArticleJsonLd(post, { lang: "en", headline: enTitle, description: enDesc, pageUrl: postUrlEn }),
   buildBreadcrumbJsonLd([
     { name: "Home", path: "/en/" },
     { name: "Articles", path: "/en/blog/" },

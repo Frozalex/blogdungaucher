@@ -7,6 +7,7 @@ seoTitle: "The 40-40-20 Rule in Chess: Tactics, Endgames, Openings"
 seoDescription: >-
   The 40-40-20 rule recommends 40% tactics, 40% endgames and 20% openings. Why most players do the opposite, and what
   expertise research says about this training breakdown.
+enSlug: "chess-40-40-20-rule"
 ---
 
 You have just lost a game. You open your repertoire, you rerun the line that troubled you, you spend forty minutes memorising moves you may never play again. It feels useful. It feels like work.

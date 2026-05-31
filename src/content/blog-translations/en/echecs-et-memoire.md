@@ -7,6 +7,7 @@ seoTitle: "Chess and Memory: Cognitive Stimulation, Science and Training"
 seoDescription: >-
   Working memory, consolidation, openings, seniors: the chess-memory link explained by research (Chase & Simon, Gobet,
   de Groot) and concrete training tips.
+enSlug: "chess-and-memory"
 ---
 
 Anatoly Karpov replayed from memory, without a board, games played twenty years earlier. Move by move. Variation by variation. Journalists tested him several times: he did not slip.

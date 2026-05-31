@@ -49,6 +49,7 @@ faq:
       Those wins show that the strongest women can defeat world champions and rank among the best players of their era.
       Hou Yifan also achieved excellent results in top mixed tournaments, placing several times among the world's top
       100 players.
+enSlug: "chess-and-women"
 ---
 
 In 2002, at the Moscow tournament, [Judit Polgár](https://en.wikipedia.org/wiki/Judit_Polg%C3%A1r) defeated [Garry Kasparov](https://en.wikipedia.org/wiki/Garry_Kasparov). The man who had publicly declared women structurally inferior at chess lost to a woman. There was nothing left to say.

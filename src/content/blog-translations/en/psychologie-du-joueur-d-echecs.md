@@ -7,6 +7,7 @@ seoTitle: "Chess Player Psychology: Master Your Mental Game"
 seoDescription: >-
   Ego, tilt, flow, fear of losing: a complete breakdown of chess player psychology and how emotions influence every
   single move you make.
+enSlug: "chess-player-psychology"
 ---
 
 Before your hand even touches the first pawn, something has already happened. A faint tension settles in your shoulders. The opponent across from you looks at you a certain way, or perhaps does not look at you at all, which can be worse. You start calculating, but not variations: you calculate their level, their reputation, the rating gap between you. You wonder whether you are prepared enough. Part of the cognitive resources you planned for the board is already evaporating into that psychological noise.

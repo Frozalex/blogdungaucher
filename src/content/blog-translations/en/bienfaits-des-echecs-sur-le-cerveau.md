@@ -3,6 +3,7 @@ title: "The Benefits of Chess for the Brain: What Science Actually Measures"
 excerpt: "Memory, focus, plasticity, aging: chess has real, documented effects on the brain. But beware of the myths. Here is what research says, and what it does not."
 seoTitle: "Cognitive Benefits of Chess: Memory, Attention and Brain Plasticity"
 seoDescription: "Working memory, brain plasticity, protection against cognitive aging: what research actually measures about the effects of chess on the brain."
+enSlug: "chess-benefits-for-the-brain"
 draft: true
 ---
 

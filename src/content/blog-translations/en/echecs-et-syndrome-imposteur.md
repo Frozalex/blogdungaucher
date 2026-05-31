@@ -7,6 +7,7 @@ seoTitle: "Impostor Syndrome in Chess: Why You Don't Feel Legitimate Despite You
 seoDescription: >-
   Your Elo is rising but you don't feel legitimate. Impostor syndrome affects many chess players. What psychology says
   about this phenomenon and how to overcome it.
+enSlug: "chess-impostor-syndrome"
 ---
 
 You have just won a well-played game. Your opponent was 100 points above you. The win is clear and deserved. Yet the first thought that surfaces is not satisfaction. It is something more uncomfortable: *they must have blundered. It doesn't really count. If we replayed, they would win.*

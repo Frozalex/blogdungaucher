@@ -69,7 +69,7 @@ const related = allPosts
   .slice(0, 3);
 
 const postUrl = getPostUrl(post);
-const postUrlEn = getPostUrlEn(post);
+const postUrlEn = await getPostUrlEn(post);
 const grandOralOnly = post.data.category === "grand-oral";
 const absolutePostUrl = absoluteUrl(postUrl);
 
@@ -82,7 +82,7 @@ const showSummaryVideo =
   !!summaryVideoSrc && isPublicAssetAvailable(summaryVideoSrc);
 
 const structuredData = [
-  buildArticleJsonLd(post),
+  await buildArticleJsonLd(post),
   buildBreadcrumbJsonLd([
     { name : "Accueil", path : "/fr/" },
     { name : "Articles", path : "/fr/blog/" },
@@ -112,7 +112,7 @@ const otherPillars = categorySlugs
   dePath={grandOralOnly ? "/de/blog/" : getPostUrlDe(post)}
   omitEnDeAlternateLinks={grandOralOnly}
 >
-  <article class="article-page" style={`--c:${category.accent}`}>
+  <article class="article-page" style={`--c:${category.accent}`} data-pagefind-meta={`accent:${category.accent}`}>
     <div class="reading-progress" aria-hidden="true">
       <span id="reading-progress-fill"></span>
     </div>
@@ -128,7 +128,7 @@ const otherPillars = categorySlugs
 
         <header class="article-header fade-up" style="--motion-delay: 40ms;">
           <div class="article-meta">
-            <a href={category.href} class="meta-cat" style={`--c:${category.accent}`}>
+            <a href={category.href} class="meta-cat" style={`--c:${category.accent}`} data-pagefind-meta="category">
               {category.label}
             </a>
             <span>{readingTime}</span>
@@ -136,7 +136,7 @@ const otherPillars = categorySlugs
               {formatDate(post.data.publishDate)}
             </time>
           </div>
-          <h1>{post.data.title}</h1>
+          <h1 data-pagefind-meta="title">{post.data.title}</h1>
           <p class="article-excerpt">{post.data.excerpt}</p>
           {post.data.updatedDate &&
             post.data.updatedDate.getTime() !== post.data.publishDate.getTime() && (
@@ -213,7 +213,7 @@ const otherPillars = categorySlugs
           <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
         )}
 
-        <div class="article-body fade-up" style="--motion-delay: 100ms;">
+        <div class="article-body fade-up" style="--motion-delay: 100ms;" data-pagefind-body>
           {strippedArticleHtml ? (
             <div class="md-chunk" set:html={strippedArticleHtml} />
           ) : (
@@ -250,7 +250,7 @@ const otherPillars = categorySlugs
 
       <CodeBlockEnhancer />
 
-      <aside class="article-aside">
+      <aside class="article-aside" data-pagefind-ignore>
         <div class="toc-desktop-wrap">
           <TableOfContents headings={headings} mode="desktop" />
         </div>
@@ -271,7 +271,7 @@ const otherPillars = categorySlugs
   </article>
 
   {related.length > 0 && (
-    <section class="related">
+    <section class="related" data-pagefind-ignore>
       <div class="container">
         <span class="eyebrow reveal">Continuer la lecture</span>
         <h2 class="section-title reveal">Dans la même rubrique</h2>

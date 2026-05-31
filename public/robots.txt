@@ -1,125 +1,101 @@
 # Robots : Blog d'un Gaucher (https://blogdungaucher.com)
 # Politique détaillée pour assistants / crawlers IA : /llms.txt
 #
-# Indexation : seules les pages FR sont exposées. Les versions EN et DE
-# existent en build mais portent un meta noindex et sont exclues du
-# sitemap ; le Disallow ci-dessous renforce cette politique côté robots.
+# Indexation : pages FR et EN exposées. La version DE reste exclue
+# (meta noindex + sitemap) tant que les traductions ne sont pas finalisées.
 
 User-agent: *
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 # ── Google ──
 User-agent: Googlebot
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: Googlebot-Image
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: AdsBot-Google
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: Mediapartners-Google
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: Google-Extended
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: GoogleOther
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 # ── Crawlers et assistants IA ──
 User-agent: GPTBot
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: ChatGPT-User
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: OAI-SearchBot
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: ClaudeBot
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: Claude-Web
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: anthropic-ai
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: PerplexityBot
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: Applebot
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: Applebot-Extended
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: Amazonbot
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: MistralBot
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: cohere-ai
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: Meta-ExternalAgent
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: Bytespider
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: CCBot
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 User-agent: Diffbot
 Allow: /
-Disallow: /en/
 Disallow: /de/
 
 Sitemap: https://blogdungaucher.com/sitemap.xml

@@ -7,6 +7,7 @@ seoTitle: "Chess and AI: Solving the Mathematical Impossible"
 seoDescription: >-
   Is chess mathematically solvable? Discover how AI has revolutionised the game and why engines now beat humans at every
   single turn.
+enSlug: "chess-mathematical-problem-and-ai"
 ---
 
 You have already lived this paradox: people sell you [chess](https://en.wikipedia.org/wiki/Chess) as cosmically complex, a game where each player traces long-term strategy; then you open an app, play a reasonable move, and the engine corrects you and explains a line you could never find alone.

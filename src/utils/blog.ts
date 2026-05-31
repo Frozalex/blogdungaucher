@@ -164,15 +164,44 @@ export function getPostUrl(post: BlogEntry) {
   return `/fr/blog/${getPostSlug(post)}/`;
 }
 
-export function getPostUrlEn(post: BlogEntry) {
-  return `/en/blog/${getPostSlug(post)}/`;
+/** Cache des slugs EN localisés (frSlug → enSlug).
+ *  Construit une seule fois à partir de la collection `enTranslations`. */
+let _enSlugMapPromise: Promise<Map<string, string>> | null = null;
+
+export async function getEnSlugMap(): Promise<Map<string, string>> {
+  if (!_enSlugMapPromise) {
+    _enSlugMapPromise = (async () => {
+      const entries = await getCollection("enTranslations");
+      const map = new Map<string, string>();
+      for (const e of entries) {
+        const frSlug = e.id.replace(/\.mdx?$/i, "").split("/").filter(Boolean).pop()!;
+        const enSlug = (e.data as { enSlug?: string }).enSlug;
+        if (enSlug) map.set(frSlug, enSlug);
+      }
+      return map;
+    })();
+  }
+  return _enSlugMapPromise;
+}
+
+/** Construit l'URL EN d'un article. Si la traduction définit `enSlug`,
+ *  l'URL utilise ce slug localisé, sinon elle reprend le slug FR. */
+export async function getPostUrlEn(post: BlogEntry): Promise<string> {
+  const map = await getEnSlugMap();
+  const slug = map.get(getPostSlug(post)) ?? getPostSlug(post);
+  return `/en/blog/${slug}/`;
+}
+
+/** Variante synchrone : utilise un slug explicite (déjà résolu) ou retombe sur le slug FR. */
+export function getPostUrlEnSync(post: BlogEntry, enSlug?: string) {
+  return `/en/blog/${enSlug ?? getPostSlug(post)}/`;
 }
 
 export function getPostUrlDe(post: BlogEntry) {
   return `/de/blog/${getPostSlug(post)}/`;
 }
 
-export function getPostUrlLang(post: BlogEntry, lang: "fr" | "en" | "de") {
+export async function getPostUrlLang(post: BlogEntry, lang: "fr" | "en" | "de"): Promise<string> {
   if (lang === "en") return getPostUrlEn(post);
   if (lang === "de") return getPostUrlDe(post);
   return getPostUrl(post);
@@ -201,20 +230,21 @@ export function buildBreadcrumbJsonLd(
   };
 }
 
-export function buildArticleJsonLd(
+export async function buildArticleJsonLd(
   post: BlogEntry,
-  options?: { lang?: "fr" | "en" | "de"; headline?: string; description?: string },
+  options?: { lang?: "fr" | "en" | "de"; headline?: string; description?: string; pageUrl?: string },
 ) {
   const lang = options?.lang ?? "fr";
   const imagePath = post.data.ogImage ?? siteConfig.defaultOgImage;
   const modifiedDate = post.data.updatedDate ?? post.data.publishDate;
   const category = getCategoryMeta(post.data.category);
   const pageUrl =
-    lang === "en"
-      ? getPostUrlEn(post)
+    options?.pageUrl ??
+    (lang === "en"
+      ? await getPostUrlEn(post)
       : lang === "de"
         ? getPostUrlDe(post)
-        : getPostUrl(post);
+        : getPostUrl(post));
   const articleUrl = absoluteUrl(pageUrl);
   const inLanguage =
     lang === "en" ? "en-US" : lang === "de" ? "de-DE" : "fr-FR";
