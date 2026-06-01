@@ -5,6 +5,41 @@ seoTitle: "Genetics and Chess Talent: What Science Says About Nature vs. Nurture
 seoDescription: "Heritability, twin studies, deliberate practice and IQ: what research really says about the role of genes in chess talent and performance."
 enSlug: "chess-and-genetics"
 draft: false
+faq:
+  - question: "Is there a 'chess gene'?"
+    answer: >-
+      No: at least not a single one. Chess performance is a complex phenotype influenced by hundreds of
+      genetic variants with very small individual effects. GWAS studies (genome-wide association studies) on
+      cognitive abilities identify multiple loci, none of which explains more than a few percent of variance
+      individually. Performance results from the interaction of these genetic factors with environment,
+      training, and motivation.
+  - question: "Can chess talent heritability be estimated?"
+    answer: >-
+      Not directly: there's no chess-specific twin study. By analogy with measured cognitive abilities (IQ,
+      working memory, processing speed), heritability is between 50-80% in adults. But heritability doesn't
+      mean determinism: it's a population statistic that depends on environmental conditions. In an enriched
+      environment, even with similar genes, expression varies enormously.
+  - question: "Does the Polgar sisters case prove the supremacy of training?"
+    answer: >-
+      It strongly suggests it but doesn't prove it. László Polgar applied his intensive training program to
+      all three daughters, and all three became very high-level players, with Judit reaching the world top
+      10. But: (1) the sample is too small (3 children, related), (2) there could be a Polgar genetic family
+      component, (3) the environment included exceptional parental involvement, complex to replicate. The
+      experiment is suggestive but not conclusive.
+  - question: "Can a 'untalented' player reach master level?"
+    answer: >-
+      Data suggest yes, for most people, master level (FIDE ~2200-2300) is achievable with sufficient
+      deliberate practice — Ericsson estimated this at 10,000-20,000 hours. Above (IM, GM), the role of
+      natural predispositions becomes more important: faster initial progression, better pattern memory,
+      often present from early childhood. But individual variability is enormous, and several GMs have
+      described unfavorable starts compensated for by intensive work.
+  - question: "Epigenetics and chess: can potential be influenced by environment?"
+    answer: >-
+      Epigenetics studies how environment modifies gene expression without modifying the DNA sequence. For
+      cognitive abilities, factors like early stress, nutrition, prenatal and childhood enrichment leave
+      epigenetic traces that influence brain development. For chess specifically, the early stimulation
+      period (5-12 years) is critical: chess practice in this window may produce more durable neurobiological
+      adaptations than the same training started in adulthood.
 ---
 
 In 1965, Hungarian psychologist Laszlo Polgar published an essay titled "Genius Can Be Learned." His thesis: any person can become an expert in any domain with adapted training started early enough. To prove it, he decided to raise his three daughters (Susan, Sofia, and Judit) as professional chess players from their earliest childhood.

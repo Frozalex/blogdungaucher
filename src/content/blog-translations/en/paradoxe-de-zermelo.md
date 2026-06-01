@@ -5,6 +5,38 @@ seoTitle: "Zermelo's Paradox in Chess: Determined But Inaccessible Truth"
 seoDescription: "Ernst Zermelo (1913) proved chess has a result under perfect play: White wins, Black wins, or draws. Why this certainty remains out of reach."
 enSlug: "zermelo-paradox"
 draft: false
+faq:
+  - question: "Does Zermelo's theorem prove that White wins?"
+    answer: >-
+      No. It proves that <strong>one</strong> answer exists among three possibilities: White win, Black win,
+      or draw. It doesn't say which. The majority hypothesis is a draw (consistent with elite play and engine
+      evaluation around +0.2/+0.3), but that's a belief based on observation, not a demonstration.
+  - question: "Why is it called a 'paradox'?"
+    answer: >-
+      In the mathematical sense it isn't one: it's a perfectly coherent result. The 'paradox' is
+      <strong>epistemic</strong>: we know a unique answer exists, but we can't know it in practice or in any
+      reasonable extrapolation of computational capacities. Rare are propositions where <em>certainty of
+      existence</em> is so cleanly separated from <em>possibility of access</em>.
+  - question: "Don't tablebases contradict Zermelo?"
+    answer: >-
+      On the contrary, they <strong>confirm</strong> it on a subset of the problem. For any position with ≤ 7
+      pieces, the Zermelo value is known exactly (win, loss, or draw, and exact depth). Tablebases are the
+      constructive proof that Zermelo's demonstration isn't empty: applied to a finite accessible number of
+      positions, it does produce a unique computable truth.
+  - question: "Why can AlphaZero beat Stockfish if it doesn't play 'perfectly'?"
+    answer: >-
+      Because neither plays perfectly in the Zermelo sense. Both are <strong>approximations</strong> of the
+      optimal strategy, simply with different architectures (search + heuristics for Stockfish, neural
+      network + Monte Carlo Tree Search for AlphaZero). When AlphaZero beats Stockfish, it's that at this
+      approximation level, its choices are on average closer to the Zermelo truth. But neither reaches that
+      truth.
+  - question: "Could this mathematical truth ever be discovered?"
+    answer: >-
+      Probably not by pure brute force: the $10^{120}$ tree is definitely physically out of reach. An
+      <strong>indirect proof</strong> remains theoretically possible (demonstration by symmetry, by
+      invariant, by partial mirror strategy), but no serious path exists. Quantum computing changes the bound
+      (Grover halves the exponent), but $10^{60}$ remains astronomical. Solving chess in the strict sense is
+      more likely a horizon than ever reached.
 ---
 
 In 1913, at the fifth International Congress of Mathematicians in Cambridge, German mathematician [Ernst Zermelo](https://en.wikipedia.org/wiki/Ernst_Zermelo) presented a result that would change how mathematicians, and later computer scientists, think about strategy games. His theorem is short. Its demonstration is elegant. And its implications for chess are both reassuring and dizzying.

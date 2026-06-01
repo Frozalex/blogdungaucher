@@ -8,6 +8,38 @@ seoDescription: >-
   Working memory, consolidation, openings, seniors: the chess-memory link explained by research (Chase & Simon, Gobet,
   de Groot) and concrete training tips.
 enSlug: "chess-and-memory"
+faq:
+  - question: "Do chess improve everyone's memory?"
+    answer: >-
+      Not 'everyone' to the same degree or on all memory types. The most <strong>robust</strong> effect is
+      <strong>domain-specific</strong>: position recognition, tactical patterns, well-understood opening
+      routines. Transfer to general memory is more variable: it depends on training quality, age, and
+      individual neuroplasticity.
+  - question: "What is the impact of chess on adult memory?"
+    answer: >-
+      Motivated adults build chunks effectively; Neil Charness showed that progression can be slightly slower
+      than for children but very real. After 6 months of regular practice, working memory and selective
+      attention tests show measurable improvements on tasks close to chess. For very different tasks,
+      transfer is weaker.
+  - question: "Are there scientific studies proving the benefits of chess on memory?"
+    answer: >-
+      Yes for <strong>tasks close to chess</strong> (perception, recall of legal positions). For
+      <strong>general benefits</strong> ('better memory everywhere'), the word <strong>proof</strong> is too
+      strong: the literature shows positive correlations and moderate effects, but methodologies vary widely.
+      Sala and Gobet (2017) meta-analyses are cautious: real but moderate effects, very dependent on training
+      quality.
+  - question: "What chess training duration is recommended to improve memory?"
+    answer: >-
+      There's no universal dose: cognition intervention studies often suggest <strong>months</strong> of
+      regular practice with active engagement rather than mere passive volume. A reasonable framework: 30-45
+      minutes 4-5 times per week, mixing tactics, game analysis, and slow play, over at least 12 weeks before
+      expecting measurable cognitive effects.
+  - question: "Can chess help prevent age-related memory loss?"
+    answer: >-
+      Population data trend toward <strong>associations</strong> between varied intellectual activities and
+      dementia risk in some cohorts; not an individual guarantee. Cognitive reserve (Stern, 2012) is built
+      throughout life: chess contributes when included in a diversified set of mentally stimulating
+      activities. Its effect alone, without other activities, is modest.
 ---
 
 Anatoly Karpov replayed from memory, without a board, games played twenty years earlier. Move by move. Variation by variation. Journalists tested him several times: he did not slip.

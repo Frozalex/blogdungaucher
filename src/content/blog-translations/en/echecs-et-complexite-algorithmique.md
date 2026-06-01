@@ -5,6 +5,42 @@ seoTitle: "Chess Algorithmic Complexity: Why AI Took 50 Years"
 seoDescription: "Shannon number, alpha-beta pruning, Deep Blue, AlphaZero: chess algorithmic complexity explained, and why beating humans was so difficult."
 enSlug: "chess-algorithmic-complexity"
 draft: false
+faq:
+  - question: "What is the 'Shannon number'?"
+    answer: >-
+      It's an estimate of the number of legal chess positions, proposed by Claude Shannon in 1950. He
+      estimated it at about 10^43. Later work refined this between 10^44 and 10^47. For scale: the observable
+      universe contains about 10^80 atoms, and one second contains 10^43 femtoseconds. The Shannon number
+      illustrates why exhaustive search of all positions is physically impossible, even with infinitely fast
+      computers.
+  - question: "How did Deep Blue beat Kasparov if it couldn't calculate everything?"
+    answer: >-
+      Through two combined techniques. Alpha-beta pruning intelligently prunes the search tree: if a branch
+      can't lead to a better result than what's already found, it's abandoned. This exponentially reduces the
+      search space. Combined with a very elaborate position evaluation function (developed with
+      Grandmasters), Deep Blue evaluated about 200 million positions per second and typically searched 12-15
+      moves deep. It's impressive, but not a complete solution: it's a very powerful heuristic.
+  - question: "Did AlphaZero really learn chess in 9 hours?"
+    answer: >-
+      Yes, in a precise sense: from zero human knowledge (only the rules), playing against itself with
+      reinforcement learning and deep neural networks, AlphaZero reached a level surpassing Stockfish (the
+      best 'classical' engine) after 9 hours of training on specialized hardware (Google TPUs). What's
+      remarkable isn't just the speed but the playing style developed: dynamic, sacrificial, with positional
+      intuitions theorists hadn't codified.
+  - question: "Are chess 'solved' mathematically?"
+    answer: >-
+      No. A game is 'solved' when you can calculate the optimal decision from any position. Checkers were
+      solved in 2007 by Jonathan Schaeffer: it's a perfect draw. Chess isn't solved and probably won't be
+      with foreseeable technology: the game space is too large. You can play chess better than any human, but
+      not in a provably perfect way.
+  - question: "Why can human players still play chess despite this complexity?"
+    answer: >-
+      Because humans don't search in the space of all positions. They recognize patterns, intuitively prune
+      bad moves, and reason primarily from concepts (pressure, pawn structure, piece activity) rather than
+      brute calculation. A Grandmaster rarely calculates more than 3-5 moves deep in a normal position: they
+      eliminate 95% by intuition before even starting to calculate. It's a radically different type of
+      processing from tree search, with its own strengths (creativity, positional intuition) and weaknesses
+      (less precise calculation under pressure).
 ---
 
 In 1950, Claude Shannon (founder of information theory) published an article titled "Programming a Computer for Playing Chess." He hadn't yet written the programs. He was calculating whether it was even *possible*.

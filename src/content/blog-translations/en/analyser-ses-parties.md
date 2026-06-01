@@ -5,6 +5,40 @@ seoTitle: "Analyzing Your Chess Games: Practical Method to Progress"
 seoDescription: "How to analyze your chess games to progress? Method without engine first, recurring errors, intelligent use of Stockfish. A practical guide."
 enSlug: "how-to-analyze-chess-games"
 draft: false
+faq:
+  - question: "How much time should I spend on post-game analysis?"
+    answer: >-
+      For a club player who wants to progress, 15 to 30 minutes per game is a realistic and productive
+      target. Analysis can be done in two phases: a short session right after the game (while impressions are
+      fresh, 10-15 minutes), and a longer session later with the tools. You don't need to analyze every game:
+      better to seriously analyze one game in three than to skim through all of them.
+  - question: "Which engine should I use: Stockfish, Leela Chess Zero, or something else?"
+    answer: >-
+      Stockfish (free on Lichess and via download) is the standard for tactical analysis: it's extremely
+      precise on concrete moves. Leela Chess Zero (Lc0) has a positional evaluation style closer to human
+      play, which can be more instructive for long-term positional judgments. Chess.com and Lichess integrate
+      engines directly into their analysis interfaces, which is often enough. The engine isn't the limiting
+      factor: your way of using it is.
+  - question: "How do I identify my recurring mistakes?"
+    answer: >-
+      By keeping an error journal over time. After each analysis, note the main mistake(s) of the game with a
+      short description. After 10-15 games, re-read: patterns appear. 'I missed center counter-attacks 3
+      times this month.' 'I mishandled rook endgames in 2 games.' 'I always develop the knight before
+      checking gambit counterplay.' Those patterns are your priority training program.
+  - question: "Should I also analyze games I won?"
+    answer: >-
+      Yes, but with special attention. In a won game, look for moments where <em>your opponent</em> would
+      have made your life harder if they had played differently: those reveal your vulnerabilities even in
+      victories. Also look for moments where you played 'the best move by accident' without calculating the
+      variation correctly: a reminder that winning doesn't validate the process.
+  - question: "How do I analyze when I'm a beginner and don't understand what the engine shows?"
+    answer: >-
+      Start with engine-free analysis only. Replay the game move by move and identify: where you sensed
+      things were going wrong, the moves you weren't sure about during the game, and the move where you think
+      you lost the advantage. Discuss with a player slightly stronger than you: human analysis is more
+      pedagogical than engine analysis when the two players are at comparable levels. The engine becomes
+      useful when you have a hypothesis to verify ('was that really winning?'), not as an oracle to ask 'what
+      was the right move?'
 ---
 
 You just lost a game. Your opponent played something unexpected at move 15, you panicked, and the position deteriorated quickly. You open a new game.

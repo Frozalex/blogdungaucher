@@ -8,6 +8,21 @@ seoDescription: >-
   Ego, tilt, flow, fear of losing: a complete breakdown of chess player psychology and how emotions influence every
   single move you make.
 enSlug: "chess-player-psychology"
+faq:
+  - question: "How to manage tilt in chess?"
+    answer: >-
+      The most effective rule according to coaches, including Mark Dvoretsky: stop playing as soon as tilt
+      starts, not after. Post-game analysis done cold, looking for the emotional state at the moment of error
+      and not only the technical error, is the best long-term defusing tool. Identifying which type of
+      situation triggers your tilt (missed sacrifice, opening surprise, time trouble) gives you a concrete
+      training program.
+  - question: "Why do we play worse under time pressure?"
+    answer: >-
+      Time pressure activates the same threat systems as physical danger: cortisol, accelerated heart rate,
+      reduced peripheral vision. The prefrontal cortex, which manages variation calculation, becomes less
+      efficient. The brain falls back on intuitive heuristics rather than deep analysis. This isn't a bug:
+      it's a biological adaptation to immediate threat, useful when fleeing a predator, harmful when
+      calculating a complex endgame.
 ---
 
 Before your hand even touches the first pawn, something has already happened. A faint tension settles in your shoulders. The opponent across from you looks at you a certain way, or perhaps does not look at you at all, which can be worse. You start calculating, but not variations: you calculate their level, their reputation, the rating gap between you. You wonder whether you are prepared enough. Part of the cognitive resources you planned for the board is already evaporating into that psychological noise.

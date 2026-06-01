@@ -8,6 +8,37 @@ seoDescription: >-
   The 40-40-20 rule recommends 40% tactics, 40% endgames and 20% openings. Why most players do the opposite, and what
   expertise research says about this training breakdown.
 enSlug: "chess-40-40-20-rule"
+faq:
+  - question: "Where does the 40-40-20 rule come from?"
+    answer: >-
+      It's a commonly cited heuristic in coaching literature without an identifiable foundational source. It
+      synthesizes a recurring observation: club players spend too much time on openings (the most studied
+      phase) and not enough on tactics and endgames (which decide most games). The exact percentages are
+      indicative — what matters is the rebalancing principle.
+  - question: "Does the rule work for all levels?"
+    answer: >-
+      No. Below 1200 Elo, basic tactical patterns (forks, pins, mate in 1-2) absorb most of the budget:
+      openings are secondary. Between 1200 and 1800, the 40-40-20 distribution becomes relevant. Above 1900,
+      openings reclaim importance because the depth of theoretical preparation actually decides games at this
+      level.
+  - question: "Why does the rule devote only 20% to openings?"
+    answer: >-
+      Because most amateur games are decided in the middlegame or endgame, not by an opening advantage.
+      Memorizing 20 moves of theory doesn't help if you don't know how to handle the resulting middlegame.
+      Studies show that excessive opening preparation in low and intermediate levels produces marginal
+      results in real games.
+  - question: "How to apply it concretely each week?"
+    answer: >-
+      On a 5-hour weekly budget: 2 hours of tactics (puzzles + game review for missed patterns), 2 hours of
+      endgames (technical endgames + practical endgame analysis), 1 hour of openings (limited repertoire,
+      deep understanding rather than broad memorization). The proportions matter more than the absolute
+      durations.
+  - question: "Is endgame study really useful for amateurs?"
+    answer: >-
+      Yes, possibly more than other phases. Endgames teach principles of piece coordination, king activity,
+      and concrete calculation that are reused throughout the game. A solid endgame technique also gives
+      confidence in the middlegame: knowing you can convert a slight advantage in the endgame, you don't seek
+      decisive tactical advantages too early.
 ---
 
 You have just lost a game. You open your repertoire, you rerun the line that troubled you, you spend forty minutes memorising moves you may never play again. It feels useful. It feels like work.

@@ -5,6 +5,38 @@ seoTitle: "Chess Time Management: Mastering the Clock and Decision-Making Under 
 seoDescription: "Zeitnot, analysis paralysis, anchoring bias, optimal time allocation: what decision psychology says about managing the chess clock in tournaments."
 enSlug: "chess-time-management"
 draft: false
+faq:
+  - question: "How much time should I spend on each move in a classical game?"
+    answer: >-
+      There's no universal duration: it all depends on the move's criticality. Studies on grandmaster games
+      show that critical moves (plan changes, sacrifices, entering an endgame) receive on average 10-15 times
+      more time than 'routine' moves. The right question isn't 'how much time did I spend?' but 'did I
+      identify the critical moments and allocate time accordingly?'
+  - question: "How to avoid time trouble?"
+    answer: >-
+      Three main causes of zeitnot: (1) looking for the perfect move rather than the good move: perfectionism
+      that consumes time without improving the decision; (2) thinking about the wrong positions (after a
+      trivial move, no need for 10 minutes); (3) analyzing variations you won't play. The remedy: set a
+      decision threshold ('if I find nothing better in 5 minutes, I play the best candidate move') and stick
+      to it.
+  - question: "Does blitz improve time management in classical play?"
+    answer: >-
+      Partially. Blitz trains rapid decision-making and positional intuition, but can also create bad habits
+      if you systematically play without calculating deeply. Studies (Charness et al., 1996) show that
+      players who only play blitz stagnate in classical. The right balance: blitz for intuition and speed,
+      classical for deepening calculation and strategy.
+  - question: "What to do in severe time trouble (under 2 minutes)?"
+    answer: >-
+      Completely shift mode: stop calculating long variations, play only moves you see immediately, look for
+      simplification (exchanges). In a winning position: seek the safest simplification, not the most
+      brilliant continuation. In a losing position: create practical problems, make the position as
+      complicated as possible for the opponent.
+  - question: "Does the clock give information about the opponent?"
+    answer: >-
+      Yes: an often-neglected reading. If your opponent thinks long on moves that seemed obvious to you, they
+      may have seen something you haven't. If they play very fast, they're either in known theoretical
+      territory or in time trouble playing intuitively. Monitoring opponent time use is part of tournament
+      psychology: grandmasters read the opponent as much on the clock as on the board.
 ---
 
 The clock is the great revealer of the game. You can pretend you calculated everything deeply when you had 30 minutes. With 3 minutes left, there's no more pretense: just your raw cognitive habits, under pressure.

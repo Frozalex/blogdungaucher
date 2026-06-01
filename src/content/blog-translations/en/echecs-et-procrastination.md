@@ -5,6 +5,39 @@ seoTitle: "Procrastination and Chess: What the Board Teaches About Decision-Maki
 seoDescription: "Procrastination in chess: emotional avoidance, fear of error, and ambiguity tolerance. What the chessboard teaches about decision-making and overcoming avoidance."
 enSlug: "chess-and-procrastination"
 draft: false
+faq:
+  - question: "Why do we procrastinate, scientifically speaking?"
+    answer: >-
+      Fuschia Sirois and Timothy Pychyl's research is clear: we procrastinate to manage negative emotions
+      linked to a task, not because we lack discipline or time. The task generates anxiety (fear of failure,
+      perfectionism), boredom, doubt. Avoidance brings immediate relief, but reinforces procrastination long
+      term. It's a short-term emotional regulation mechanism that self-perpetuates.
+  - question: "How does the chess clock help against procrastination?"
+    answer: >-
+      It creates an impartial external constraint that short-circuits avoidance. Off the board,
+      procrastination works because there's often no immediate consequence to putting things off. The clock
+      creates an immediate consequence for not deciding: losing time on your time capital. It's not a
+      solution to real-life procrastination, but it's training to act despite the discomfort of uncertainty.
+  - question: "Is perfectionism in chess a form of procrastination?"
+    answer: >-
+      Often, yes. Looking for the perfect move rather than the best available move is a form of overthinking
+      that delays the decision. Most moves played after 20 minutes of thought aren't better than those played
+      after 5 minutes: past a threshold, additional time is anxiety dressed as reflection. The best players
+      learn to distinguish 'calculated enough to play' from 'perfectly calculated': a distinction directly
+      useful off the board.
+  - question: "Can you learn decision-making by playing chess?"
+    answer: >-
+      Partially. Studies on cognitive transfer show moderate effects: chess practice improves tolerance for
+      decisional ambiguity, but transfer isn't automatic. It requires explicit reflection on what you're
+      learning ('in this difficult position, I played despite the uncertainty and it worked: what can I apply
+      to decision X in my life?'). Without that conscious bridge, improvement stays local to the board.
+  - question: "What to do when you procrastinate on game analysis?"
+    answer: >-
+      A classic problem: players often procrastinate on the tasks most useful to their progression (game
+      analysis, endgame study) in favor of more enjoyable ones (playing games). The most effective strategy
+      is to make analysis less aversive: limit to 15-20 minutes of analysis per game rather than aiming for
+      exhaustiveness, use an engine for complex moves rather than exhausting yourself calculating alone, and
+      celebrate good ideas found rather than focusing on errors.
 ---
 
 Move 23. You reach for the bishop. Put it back. Touch the knight. Put it back. Replay the position in your head from move 14, as if retracing the path would reveal the move you can't find. The clock eats 4 minutes during this routine.

@@ -8,6 +8,41 @@ seoDescription: >-
   Does chess make you better at maths? What meta-analyses actually say - and why the answer changes how you should
   really use a chessboard.
 enSlug: "chess-and-mathematics"
+faq:
+  - question: "Does playing chess improve a child's math grades?"
+    answer: >-
+      Not directly and not automatically. The Sala and Gobet (2016) meta-analysis is clear: evidence of
+      significant transfer from chess to general academic skills is small to moderate. What the child gains
+      is a <strong>posture toward problems</strong> (analyze before calculating, verify intuitions, don't
+      panic in the face of complexity). This posture can serve in math, but it's not equivalent to an extra
+      math lesson.
+  - question: "What's the only scientifically robust link between chess and math?"
+    answer: >-
+      <strong>Metacognition</strong>: the capacity to observe and regulate one's own thinking. It's one of
+      the rare robust transfer effects documented in the literature. A player trained to re-check ("wait,
+      what didn't I see?") carries that reflex to other analytical tasks. It's the measurable bridge, not the
+      mathematical content itself.
+  - question: "Why must you play slowly for it to count?"
+    answer: >-
+      Because fast play (Blitz, Bullet) rests almost exclusively on <strong>pre-learned pattern
+      recognition</strong> and motor reflexes. Brain regions linked to analytical reasoning (prefrontal
+      cortex, planning) only fully activate beyond 15-30 seconds per move. To train the mental architecture
+      closest to mathematical problem solving, you need classical time controls (15+ minutes per player).
+  - question: "Does the 8 queens problem have use outside algorithm contests?"
+    answer: >-
+      Yes. It's the most-used pedagogical example for teaching <strong>backtracking</strong> (search with
+      rollback), a central algorithmic pattern in combinatorial optimization. It appears in schedule
+      planning, antenna placement in telecoms, certain constraint satisfaction problems in artificial
+      intelligence. Its visual simplicity makes it a textbook case every computer science student encounters
+      at least once.
+  - question: "Do you need to be good at math to become strong at chess?"
+    answer: >-
+      No. Correlations between Elo and academic math performance are <strong>weak</strong> beyond the basic
+      threshold of understanding the rules. Many Grandmasters have a literary or intuitive profile without
+      advanced mathematical training (Magnus Carlsen himself has no advanced scientific background).
+      Conversely, renowned mathematicians play at amateur level while having excellent
+      <em>methodological</em> transfer. The two disciplines share a <strong>posture</strong>, not a common
+      knowledge base.
 ---
 
 There is not a single number on a chessboard. No equation to solve. A grandmaster is not necessarily faster than you at integrating. And yet, the idea that "chess makes you good at math" has been repeated in schools, after-school clubs, and admissions pitches for decades, as if 64 squares implanted algebraic formulas in the brain by simple contact.

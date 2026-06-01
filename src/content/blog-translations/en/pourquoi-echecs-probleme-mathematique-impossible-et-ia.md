@@ -8,6 +8,39 @@ seoDescription: >-
   Is chess mathematically solvable? Discover how AI has revolutionised the game and why engines now beat humans at every
   single turn.
 enSlug: "chess-mathematical-problem-and-ai"
+faq:
+  - question: "Will chess ever be 'solved'?"
+    answer: >-
+      In the strong sense (outcome proven from the starting position, like checkers since 2007),
+      <strong>probably never</strong>. The $10^{120}$ bound plus the EXPTIME-complete result make brute-force
+      resolution physically unreachable. An <strong>indirect proof</strong> (symmetry, invariant, partial
+      mirror strategy) remains theoretically possible but no serious path exists. Quantum computing changes
+      the bound by halving the exponent, but $10^{60}$ is still astronomical.
+  - question: "What's the difference between 'solving' and 'beating humans'?"
+    answer: >-
+      'Solving' = proving the exact mathematical outcome under perfect play. 'Beating humans' = being on
+      average closer to the optimal strategy than a human brain. Stockfish beats any human at ~3500 Elo
+      without ever solving. Conversely, a program that solved chess would beat any opponent by definition —
+      that's why no such program exists.
+  - question: "Why did AlphaZero 'beat' Stockfish if both are approximations?"
+    answer: >-
+      Because at that moment, AlphaZero's neural-network + MCTS approximation was closer to Zermelo truth
+      than Stockfish's alpha-beta + manual evaluation (version 8 at the time). Since 2020, Stockfish has
+      integrated NNUE (Efficiently Updatable Neural Network) and dominates again. Hardware advances and
+      neural network refinements continuously shift the leader.
+  - question: "Is the Shannon number an exact measure?"
+    answer: >-
+      No. It's an <strong>order-of-magnitude estimate</strong> of possible games ($\sim 10^{120}$), not of
+      distinct legal positions ($\sim 10^{43}$ by more recent estimates, still debated). The confusion
+      between the two is very common but important: the legal-positions number measures the state space, the
+      games number measures the trajectory space.
+  - question: "If a human can't calculate everything, why progress?"
+    answer: >-
+      For two reasons: (1) improve your <strong>internal evaluation function</strong> (positional sense), (2)
+      improve your <strong>intuitive pruning</strong> (quickly reject bad candidates). It's exactly the
+      engine strategy. The difference between a 1200 and a 2000 player isn't raw calculation speed but
+      evaluation function quality and pruning efficiency. That's the human path: not searching more, but
+      searching better.
 ---
 
 You have already lived this paradox: people sell you [chess](https://en.wikipedia.org/wiki/Chess) as cosmically complex, a game where each player traces long-term strategy; then you open an app, play a reasonable move, and the engine corrects you and explains a line you could never find alone.

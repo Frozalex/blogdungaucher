@@ -5,6 +5,43 @@ seoTitle: "Chess Tournament Stress: Psychology and Physiology of Performance Und
 seoDescription: "Cortisol, performance anxiety, cardiac coherence: how stress science explains mistakes under pressure in chess and how to manage them better."
 enSlug: "chess-tournament-stress"
 draft: false
+faq:
+  - question: "Why do we make stupid mistakes under tournament pressure?"
+    answer: >-
+      It's not stupidity: it's physiology. Under high stress, cortisol and adrenaline saturate certain
+      prefrontal cortex circuits, precisely those that handle deep variation calculation and working memory.
+      The brain switches into 'rapid response' mode rather than 'planned reflection' mode. Result: we
+      oversimplify, make premature exchanges, play shallow 'reflex' moves. It's the same mechanism that makes
+      a stressed surgeon's movements less precise: pressure degrades fine cognitive functions before gross
+      ones.
+  - question: "Does breathing really help calm stress during a game?"
+    answer: >-
+      Yes, with realistic timing. Slow breathing (4 seconds in, 7 seconds hold, 8 seconds out) activates the
+      parasympathetic nervous system via the vagus nerve in 60-180 seconds. Three full cycles during the
+      opponent's move (about 3-5 minutes in a classical game) are enough to measurably reduce heart rate and
+      cortisol. It's not a miracle solution but a real physiological intervention.
+  - question: "Should you go to the toilet to escape the table during a tense game?"
+    answer: >-
+      It's an underused strategy. Stepping away from the board for 2-3 minutes between two moves creates a
+      'reset window': the visual stress from the position lifts, the physiological state regulates, you
+      return with greater mental clarity. Grandmasters use this systematically in critical moments. The rule:
+      not too often (you lose context), but at well-chosen times (after a difficult move, before an important
+      decision).
+  - question: "How to manage stress between tournament rounds?"
+    answer: >-
+      The decisive variable is recovery, not preparation. Studies on multi-day cognitive performance show
+      that recovery quality between sessions (sleep, light meal, decompression) impacts final performance
+      more than additional training. Practical rules: don't analyze the just-finished game in the first 2-3
+      hours (let the emotional charge fall), avoid screens before sleep, and accept that 'doing nothing' is
+      an active component of next-round performance.
+  - question: "Does pre-tournament anxiety predict bad performance?"
+    answer: >-
+      Not necessarily. Sport psychology research (Hanin's 'IZOF' theory) shows that each athlete has an
+      optimal anxiety zone: too low you lack mobilization, too high you lose precision. Some players actually
+      perform better with marked pre-game anxiety because it sharpens their attention. The issue isn't
+      anxiety in itself but its interpretation: 'I'm tense, I'm going to play badly' (paralyzing) vs 'I'm
+      tense, my body is ready to perform' (mobilizing). This same interpretive frame, demonstrated in sport
+      psychology research, can be deliberately worked on.
 ---
 
 Your heart rate has increased. Your hands are slightly damp. The clock ticks away the seconds and the position on the board is difficult: not lost, but difficult. You need to calculate, and your brain seems to have decided to slow down precisely now.

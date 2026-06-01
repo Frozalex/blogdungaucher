@@ -5,6 +5,39 @@ seoTitle: "Chess in Schools: Real Benefits for Learning According to Science"
 seoDescription: "Sala & Gobet meta-analysis, Armenian program, Venezuela: what research really says about the impact of school chess on academic results and cognitive development."
 enSlug: "chess-in-schools"
 draft: false
+faq:
+  - question: "Do chess improve math results?"
+    answer: >-
+      Data suggest a positive but moderate effect. The Sala & Gobet meta-analysis (2016, 24 studies) finds a
+      significant overall effect (d = 0.38). However, the same duo's 2017 meta-analysis, keeping only studies
+      with matched control groups and rigorous experimental design, finds a much weaker effect. The honest
+      interpretation: chess helps a little, but isn't a miracle solution to math difficulties.
+  - question: "At what age to start chess for academic benefits?"
+    answer: >-
+      Studies focus primarily on children 6 to 12 years old. The most effective programs start around 6-7
+      (CP/CE1 in France): an age when executive functions are actively developing and particularly responsive
+      to interventions. Benefits seem to attenuate when starting after 10-11, perhaps because cognitive
+      structures are already largely formed.
+  - question: "Can chess replace other extracurricular activities?"
+    answer: >-
+      No: studies haven't shown that chess has a global advantage over other structured play activities
+      (instrumental music, Go, strategy games). The chess-specific benefit comes from the combination of
+      formal rules, multi-step planning, and explicit defeat — a set of conditions that promote certain
+      executive functions. But other activities offer comparable benefits.
+  - question: "What's the most effective school chess program model?"
+    answer: >-
+      Studies converge on several factors: (1) explicit instruction of strategic principles, not just rules;
+      (2) at least 30 hours of teaching over the school year (1h/week minimum); (3) specifically trained
+      teachers — a passionate but pedagogically unprepared coach often produces fewer measurable effects than
+      a competent regular teacher; (4) integration with the regular curriculum (math, logic), not as a
+      separate isolated activity.
+  - question: "Why did Armenia make chess mandatory?"
+    answer: >-
+      The 2011 Armenian decision combines several motivations: cultural heritage (Tigran Petrosian, world
+      champion, is Armenian), youth cognitive development, and soft power: Armenia is one of the world's
+      top-performing countries per capita in chess, and this status feeds a national identity. The program is
+      mandatory from grade 2 to 4 (ages 7-10), with 2 hours per week of structured instruction. Long-term
+      results are being evaluated but already show measurable effects on math results and classroom behavior.
 ---
 
 In 2011, Armenia did something few countries have dared: make chess compulsory in all primary schools. Not as an optional extracurricular activity, not as a pilot project in a few volunteer classes. As a curriculum subject, on the same footing as math or reading. Three hours per week, for all students aged 6 to 9.

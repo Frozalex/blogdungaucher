@@ -8,6 +8,33 @@ seoDescription: >-
   Why aren't the world's best chess players rich? Prize pools, FIDE, sponsorship, streaming: anatomy of a struggling
   economic model.
 enSlug: "chess-and-money"
+faq:
+  - question: "How does an 'ordinary' Grandmaster make a living?"
+    answer: >-
+      The most common combination: private lessons (€50-200/h), coaching at a club or national federation, a
+      few annual tournaments, and increasingly, content creation or selling courses on Chessable. Few go
+      through streaming: the market is concentrated on a handful of star streamers. The hard reality is that
+      below the world top 100, chess alone doesn't sustain a comfortable life in Europe.
+  - question: "Are women players paid differently?"
+    answer: >-
+      Yes, and the gap is documented. Women's tournaments have significantly smaller prize pools than 'open'
+      (mixed) tournaments. The invoked economic logic is audience: women's tournaments draw fewer spectators.
+      It's a circular argument that maintains the inequality. Some federations work to align prize money, but
+      the global trend remains a marked gap.
+  - question: "Is Chess.com really profitable?"
+    answer: >-
+      Chess.com is a private company and doesn't publish its accounts. But its purchase of Play Magnus for
+      $83 million and acquisitions of Chessable and other platforms suggest a valuation in the hundreds of
+      millions of dollars. Premium subscription, partnerships with content creators, and live event
+      organization are its main revenue streams. The chess economic ecosystem is consolidating around this
+      dominant actor.
+  - question: "Could chess join the Olympic Games?"
+    answer: >-
+      The question is regularly raised. The International Olympic Committee recognized FIDE as an
+      international federation in 1999. Olympic chess existed as demonstrations. The main objection remains
+      the format: classical Olympic chess competition would require several days per game, incompatible with
+      the Olympic schedule. Rapid or blitz formats are debated. A 2024 official position from the IOC kept
+      the door open without firm commitment.
 ---
 
 In 2023 the World Chess Championship matched Ding Liren against Ian Nepomniachtchi. Total prize pool: two million dollars. The winner took 1.1 million.

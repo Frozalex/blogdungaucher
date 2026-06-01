@@ -5,6 +5,41 @@ seoTitle: "Elo Rating and Self-Esteem: When Chess Rating Becomes Identity"
 seoDescription: "Elo anxiety, ego vs mastery orientation, identity and performance: the psychology of Elo rating and how to decouple your self-esteem from your chess rating."
 enSlug: "elo-and-self-esteem"
 draft: false
+faq:
+  - question: "How does the Elo calculation work?"
+    answer: >-
+      The Elo system computes the theoretical probability of one player beating another based on the rating
+      gap. If you beat an opponent at the same Elo, you gain about 16 points (and they lose 16). If you beat
+      an opponent 200 points above you, you gain more (about 24) and they lose more. If you lose to an
+      opponent 200 points below you, the points lost are significant (about 24). The formula is statistically
+      calibrated so that, over a large sample of games, ratings converge to true playing levels.
+  - question: "Why are players so attached to their Elo?"
+    answer: >-
+      Because Elo is a precise, publicly visible, comparative, regularly updated number. These properties
+      make it a different psychological object from most life-performance measures: impossible to ignore,
+      easy to compare, immediately available. In societies that value measurement and comparison, Elo
+      fulfills an identity function that few other competence indicators provide.
+  - question: "How do I avoid identifying too strongly with my Elo?"
+    answer: >-
+      Three concrete practices: (1) Set process goals (play X games per week, analyze X games per month)
+      rather than result goals (reach X Elo). (2) Celebrate progress independent of rating ('I found a
+      beautiful combination', 'I managed that endgame well'). (3) Maintain chess identity activities beyond
+      Elo: progress in opening study, community exchanges, learning historical games. When chess identity has
+      several dimensions, fluctuation of a single one (Elo) is less destabilizing.
+  - question: "Are online Elo and FIDE Elo comparable?"
+    answer: >-
+      Not directly. Online Elos (Chess.com, Lichess) are calculated differently, draw from different
+      populations, and correspond to different time controls (blitz, bullet, classical). An Elo of 1500 in
+      Chess.com bullet isn't equivalent to a 1500 FIDE Elo in classical games: they measure different skills
+      on different populations. Generally, online Elos in fast time controls are lower than FIDE Elos
+      (broader population, shorter games) but direct comparison is meaningless.
+  - question: "Should I keep playing when my Elo drops sharply?"
+    answer: >-
+      Depends on the cause. If the drop is due to overtraining or cognitive fatigue, a few days off is
+      appropriate. If it's due to changes in your play (learning a new opening that temporarily destabilizes
+      your bearings), continuing to play while accepting the temporary drop is often best: the progression
+      curve runs through a valley before the rise. If it's due to underestimating opponents or recurring
+      un-analyzed mistakes, stopping to analyze before playing again is more productive.
 ---
 
 A few years ago, I met a club player who had refused to play in tournaments for two years. His explanation: "I climbed to 1680 and I don't want to drop below that. In a tournament, I risk losing points."

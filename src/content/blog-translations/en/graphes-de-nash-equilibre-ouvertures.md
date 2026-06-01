@@ -5,6 +5,43 @@ seoTitle: "Nash Equilibrium and Openings: Why the Ruy Lopez Lasts 200 Years"
 seoDescription: "Sicilian, Berlin Defense, Selten refinements: how Nash equilibrium explains the stability of chess openings and their most famous breakthroughs."
 enSlug: "nash-equilibrium-openings"
 draft: false
+faq:
+  - question: "Does a 'refuted' opening cease to exist?"
+    answer: >-
+      Not really. A local refutation proves that <strong>one</strong> path in the variation leads to a clear
+      advantage for one side. The rest of the graph (move orders, transpositions, sidelines) can preserve
+      playable local equilibria. That's why historical 'refutations' are often partial: the variation
+      survives with a different move order or an in-between move. The Sicilian Sveshnikov, 'refuted' in the
+      late 1990s, came back strong in the 2010s on new equilibria.
+  - question: "Why don't engines 'solve' all openings?"
+    answer: >-
+      Because solving = reaching the <strong>Zermelo value</strong> (win, loss, draw under perfect play to
+      mate). Engines produce a <strong>heuristic evaluation</strong> at finite depth (typically 40-60
+      half-moves); this lets them <strong>rank</strong> openings, <strong>find local equilibria</strong>, and
+      <strong>break</strong> weak equilibria, but not prove absolute truth. The distinction is fundamental:
+      Stockfish says 'this variation seems +0.2'; it never says 'this variation is drawn in the Zermelo
+      sense'.
+  - question: "Does a Nash equilibrium guarantee the best collective outcome?"
+    answer: >-
+      No, and that's central. The prisoner's dilemma example shows it: the equilibrium can be
+      Pareto-dominated (both could do better by coordinating, but neither has incentive to deviate alone). In
+      chess, 'collective Nash' would be the mutual draw agreement; 'competitive Nash' pushes toward
+      unbalanced positions where each seeks to exploit an error. Tournament format (must-win, ranking, prize
+      money) distorts the utility function and therefore the chosen equilibrium.
+  - question: "What is a 'mixed equilibrium' in practice for an amateur?"
+    answer: >-
+      For an amateur, it means playing <strong>two or three different openings</strong> with stable
+      probabilities (e.g., 50% Italian, 30% Spanish, 20% Scotch). The defensive advantage: prevents a
+      frequent opponent from preparing specifically for you. The offensive disadvantage: you know each line
+      less deeply. The right repertoire size depends on your weekly study time; under 5h/week, a pure
+      repertoire is often more effective than a poorly maintained mixed one.
+  - question: "Why talk of 'graphs' and not 'trees' of openings?"
+    answer: >-
+      Because openings <strong>transpose</strong>: different move sequences lead to the same position. A pawn
+      to c4 at move 1 or move 3 can give the same Réti position in certain lines. A tree supposes a unique
+      path to each leaf; a directed acyclic graph allows multiple paths. Professional opening databases
+      (ChessBase, Lichess Masters) are actually compressed graphs, with millions of pre-calculated
+      transpositions.
 ---
 
 Why is the Sicilian Defense played at every level for a hundred years? Why hasn't the Ruy Lopez been "refuted" despite centuries of analysis? Why do some theoretical variations collapse in a few years while others seem indestructible? The answer lies in a mathematical concept developed by [John Nash](https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.) in 1950: the Nash equilibrium.

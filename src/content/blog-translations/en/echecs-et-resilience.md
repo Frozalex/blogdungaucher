@@ -5,6 +5,37 @@ seoTitle: "Chess Resilience: How to Bounce Back After a Loss and Improve"
 seoDescription: "Explanatory style, self-distancing, post-defeat analysis: what resilience psychology says about managing chess losses and progressing through them."
 enSlug: "chess-resilience"
 draft: false
+faq:
+  - question: "How do you accept a chess defeat without getting discouraged?"
+    answer: >-
+      The key is separating evaluation of the game from evaluation of yourself. A defeat says something about
+      your preparation or current form: not about your worth as a person. Concretely: give yourself a limited
+      time to feel the disappointment (15-30 minutes), then shift attention to factual analysis. 'What
+      happened?' is a useful question; 'Why am I so bad?' isn't.
+  - question: "Are grandmasters really resilient after a defeat?"
+    answer: >-
+      Yes, but not in the sense of 'indifferent'. Garry Kasparov has described defeats that haunted him for
+      years. Magnus Carlsen has left tournaments angry after unexpected defeats. The difference isn't absence
+      of emotion: it's the ability to return to productive analysis despite the emotion. They process the
+      disappointment, they don't deny it.
+  - question: "Should you analyze the game right after or wait?"
+    answer: >-
+      Research on emotional memory suggests a 24-48 hour delay for in-depth analysis. In the first hours,
+      emotional activation (cortisol, residual adrenaline) disturbs judgment: you remember your bad moves
+      better than your good ones, and you evaluate your errors too harshly. After 48 hours, some details
+      fade. The next morning is often the best moment.
+  - question: "Is resilience trainable or an innate disposition?"
+    answer: >-
+      Both. There's a temperamental component to resilience: some people naturally bounce back faster. But
+      studies (Bonanno, 2004; Masten, 2014) show resilience is also a trainable skill. Concrete practices
+      (journaling, cognitive reframing, social support) measurably increase resilience.
+  - question: "How to avoid repeating the same mistakes after a defeat?"
+    answer: >-
+      A three-step protocol: (1) Identify the precise cause of the defeat: not 'I played the middlegame
+      poorly' but 'I underestimated the strength of his Knight on c5 because I was only calculating direct
+      threats'; (2) Specifically work on that weakness (tactical exercises on central knights, for example);
+      (3) Mentally replay the key position with the correction. This cycle transforms each defeat into a
+      targeted training program.
 ---
 
 [Viktor Korchnoi](https://en.wikipedia.org/wiki/Viktor_Korchnoi) played chess at the highest level until age 81. He lost thousands of games during his career: including two World Championship finals, against Karpov, under psychologically exhausting conditions. And he came back. Always.

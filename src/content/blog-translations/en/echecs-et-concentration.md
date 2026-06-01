@@ -5,6 +5,39 @@ seoTitle: "Chess and Concentration: Train Your Attention to Play Better"
 seoDescription: "Train concentration for chess: sustained attention, control network, mindfulness and micro-breaks. What neuroscience says about attention at the board."
 enSlug: "chess-and-concentration"
 draft: false
+faq:
+  - question: "Why is it so hard to maintain concentration during a long game?"
+    answer: >-
+      Sustained attention is a limited resource: the prefrontal cortex, which manages it, consumes a lot of
+      glucose and neurotransmitters. After 90-120 minutes of intense cognitive effort, attention quality
+      begins to degrade measurably. Studies show an increase in detection errors and a decrease in processing
+      speed beyond that threshold. Classical games of 4-5 hours push well past this natural threshold: hence
+      the importance of attention management strategies.
+  - question: "Does chess practice improve concentration off the board?"
+    answer: >-
+      Studies show moderate transfer effects. Chess practice improves selective attention (capacity to filter
+      distractions) and sustained attention specifically in structured cognitive tasks similar to chess.
+      Transfer to very different tasks (attention in meetings, passive reading) is weaker. Mindfulness
+      meditation shows broader transfer effects on general attention.
+  - question: "Can people with ADHD develop concentration in chess?"
+    answer: >-
+      Yes, with the right adaptations. People with ADHD often have a hyperfocus capacity: in highly engaging
+      contexts (video games, stimulating activities), their attention can be exceptionally sustained. Chess,
+      with its mix of challenge and cognitive stimulation, can trigger that state. The difficulty is
+      generalization: concentration developed in chess doesn't automatically transfer to less engaging tasks.
+  - question: "What to do when the mind wanders during a game?"
+    answer: >-
+      A 3-step technique: (1) Notice the drift without judgment ('I just thought about something else'). (2)
+      Sensory anchoring: lay both hands flat on the table, feel the texture, take a full breath. (3) Return
+      to the position with a simple question: 'What's the main feature of this position?' This active return
+      to the base question is more effective than 'forcing' concentration.
+  - question: "Do blitz players have better concentration than classical players?"
+    answer: >-
+      No: they have a different form of attention. Blitz develops rapid attention and intuitive
+      decision-making. Classical games develop sustained attention and planned reflection. Both are attention
+      skills, but distinct. Studies on players who practice blitz exclusively show degradation in their
+      capacity to maintain deep reflection on complex positions: precisely because that sustained-attention
+      muscle isn't exercised.
 ---
 
 There is an illusion about concentration: we think we either have it or we don't, that it happens when conditions are good and disappears when they aren't. This view is comfortable because it absolves us of all responsibility.

@@ -5,6 +5,39 @@ seoTitle: "Minimax in Chess: Alpha-Beta, Negamax, and Engine Calculation"
 seoDescription: "Minimax, alpha-beta pruning, negamax, null-move pruning, MCTS: how engines calculate the optimal move in chess and what your brain does without knowing it."
 enSlug: "minimax-in-chess"
 draft: false
+faq:
+  - question: "Does minimax always produce the best move?"
+    answer: >-
+      Yes, <strong>if the search reaches terminal positions</strong> (mate or stalemate). At finite depth
+      with a heuristic evaluation function, minimax produces the optimal move <em>according to the evaluation
+      and depth</em> used. That's why an engine rated 3500 Elo beats a human: its evaluation function + depth
+      are closer to the truth than a human's, not because it calculates 'perfectly'.
+  - question: "Why is it called 'negamax' rather than 'minimax' in code?"
+    answer: >-
+      Because in a zero-sum game, $\min(a,b) = -\max(-a,-b)$. Negamax exploits this symmetry to use <strong>a
+      single recursive function</strong> instead of two. It's purely a code simplification, with no
+      algorithmic change. Nearly all modern engines (Stockfish, Komodo, Leela Chess Zero) use negamax +
+      alpha-beta.
+  - question: "Does alpha-beta pruning change minimax's result?"
+    answer: >-
+      No, <strong>never</strong>. That's its fundamental property: alpha-beta produces exactly the same move
+      as pure minimax, but exploring far fewer nodes. Pruning strength depends on <strong>move
+      ordering</strong>: if you test the best move first, you prune massively; if you test the worst first,
+      you barely prune anything. That's why engines invest so much in move ordering (killer moves, history of
+      good moves).
+  - question: "Why does AlphaZero abandon minimax?"
+    answer: >-
+      Not really: it keeps a tree search (MCTS), but replaces alpha-beta's exhaustive exploration with a
+      <strong>probabilistic exploration guided</strong> by a neural network. The advantage: in positions
+      where the classical evaluation function struggles (long-term sacrifices, subtle positional play), the
+      neural network gives a more accurate estimate. The disadvantage: that network must be trained on
+      millions of games, requiring considerable hardware resources.
+  - question: "Does my brain really execute minimax when calculating?"
+    answer: >-
+      Approximately, yes. You perform a tree search with a very low branching factor (3-5 candidate moves
+      instead of 35), very limited depth (3-8 half-moves), and an intuitive evaluation function (positional
+      sense). You also use very powerful pruning heuristics: you <strong>reject</strong> most moves at a
+      glance without calculating them. The difference with an engine isn't qualitative, it's quantitative.
 ---
 
 There's something strange about chess strategy, this millennial game of intuition and art, being reducible to an algorithm of a few lines. The minimax algorithm does exactly that: it formalizes the heart of strategic reasoning in a zero-sum game into an elegant mathematical recursion.

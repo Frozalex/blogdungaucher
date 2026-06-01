@@ -5,6 +5,39 @@ seoTitle: "Chess and Giftedness (HPI): Benefits and Precautions"
 seoDescription: "Is the chessboard ideal for gifted children? Stimulation, perfectionism, managing failure: what research on intellectual precocity says about chess."
 enSlug: "chess-and-giftedness"
 draft: false
+faq:
+  - question: "Are gifted children naturally better at chess?"
+    answer: >-
+      No, or at least not systematically. Anders Ericsson's research on expertise shows chess performance
+      results from deliberate practice, not IQ alone. Hambrick et al. (2014, Psychological Science) studies
+      show that IQ explains about 8% of variance in chess performance in their sample: deliberate practice
+      explains more. A gifted child who doesn't work will progress less quickly than an average-IQ child who
+      trains seriously.
+  - question: "Do chess help gifted children who are bored in class?"
+    answer: >-
+      Often yes, but not for the usually invoked reasons. The chessboard doesn't increase IQ, but it offers
+      cognitive stimulation matching the gifted child's potential, reduces boredom, and provides a space
+      where effort is valued. For gifted children suffering from a lack of intellectual challenge at school,
+      chess clubs can be a precious compensatory environment.
+  - question: "How to handle gifted children's perfectionism in chess?"
+    answer: >-
+      Perfectionism in gifted children is often intrinsic: they impose impossible standards on themselves. In
+      chess, this manifests as inability to accept their own errors, disproportionate suffering after
+      defeats, and sometimes tournament avoidance. Recommended approach: coaching by a trainer who values
+      error analysis as learning (not as an admission of weakness), and explicit work on tolerance to
+      imperfection.
+  - question: "At what age should a gifted child start chess?"
+    answer: >-
+      As soon as the child shows interest, often around 4-6 for precocious gifted children. A gifted child's
+      cognitive development is often asymmetric (intellectually advanced, emotionally at real age), what
+      Terrassier calls 'dyssynchrony'. Chess suits this dyssynchrony well: formal rules don't change with
+      emotional age, and competition can be by playing level rather than age.
+  - question: "Can chess help gifted children integrate socially?"
+    answer: >-
+      Sometimes, but not guaranteed. Chess clubs gather people of varied playing levels rather than similar
+      ages: which can be very positive for a gifted child who feels out of sync with classmates. But chess
+      clubs aren't automatically inclusive spaces: gifted children with additional social difficulties (mild
+      ASD, social anxiety) may need specific support.
 ---
 
 "My son is gifted and bored at school. Would chess suit him?"

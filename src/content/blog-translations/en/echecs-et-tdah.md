@@ -8,6 +8,32 @@ seoDescription: >-
   ADHD isn't a lack of attention - it's irregular attention. Why the chessboard creates exactly the right conditions for
   the ADHD brain to anchor itself. What research says and how to adapt the practice.
 enSlug: "chess-and-adhd"
+faq:
+  - question: "At what age can an ADHD child start chess?"
+    answer: >-
+      Most clubs welcome children from 6-7 years old. For ADHD profiles, starting with simplified piece games
+      at 5-6 is often more suitable than the full game right away. The essential thing is that each session
+      ends on a success, not on overflow. Short sessions (15-20 minutes) repeated often are better than long
+      sessions that exhaust attention.
+  - question: "Is online chess suited to ADHD?"
+    answer: >-
+      Physical play, with a present opponent and tangible pieces, engages more senses and often anchors
+      attention better than the screen. The screen adds interface distraction, notifications, real-time
+      statistics — all elements that compete for attention. Online chess can be useful but as a complement to
+      physical play, not a replacement, especially for younger ADHD profiles.
+  - question: "Can ADHD adults also benefit?"
+    answer: >-
+      Yes. ADHD doesn't disappear in adulthood: studies show 60-80% of diagnosed children continue to present
+      significant symptoms in adulthood. The neurobiological mechanisms described here apply at any age. ADHD
+      adults practicing chess regularly report improvements in sustained attention and frustration management
+      at work.
+  - question: "Do doctors recommend chess for ADHD?"
+    answer: >-
+      Not systematically, for lack of robust enough evidence to integrate chess into official clinical
+      recommendations. But many specialized psychiatrists and psychologists mention it as a relevant
+      complement, notably for children whose treatment includes a behavioral component. The trend is to
+      recommend cognitively demanding structured activities (chess, music, programming) rather than passive
+      screens.
 ---
 
 Luca is 10. His teacher says he cannot stay focused for more than two minutes. He does not listen, disrupts class, rarely finishes an exercise. His parents tried tutoring, sports, reading aloud. Nothing sticks.

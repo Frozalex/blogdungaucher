@@ -8,6 +8,33 @@ seoDescription: >-
   Discover how chess helps people with ASD. Explore the cognitive and social benefits of this strategic game for
   autistic minds, backed by research.
 enSlug: "chess-and-autism"
+faq:
+  - question: "Do chess benefit all autistic children?"
+    answer: >-
+      Not universally. Documented benefits — reduced social anxiety, improved executive functions,
+      self-esteem — primarily concern children whose cognitive profile includes an interest in rule-based
+      systems, what Baron-Cohen calls 'high systemizing'. For autistic children with primary motor
+      coordination difficulties or attention disorders limiting sustained focus, chess may be less suited.
+      Each profile is unique and requires individual evaluation.
+  - question: "At what age to start chess with an autistic child?"
+    answer: >-
+      Most educational programs introduce chess between 5 and 7 years old. The important thing isn't the
+      exact age but adaptation: large pieces, short games, calm environment, no result pressure. The Chess in
+      Schools and Communities organization in the UK has developed specific protocols for neurodivergent
+      profiles, available to interested educators.
+  - question: "Can chess replace therapy for autism?"
+    answer: >-
+      No. Available data show chess is a serious complement to multidisciplinary care (speech therapy,
+      occupational therapy, psychological support), never a substitute. Presenting them as a treatment would
+      be dishonest and potentially harmful: it could delay engagement with validated therapies. The right
+      framing is enriching leisure with cognitive benefits, not medical intervention.
+  - question: "Why do autistic people often have a natural affinity for chess?"
+    answer: >-
+      According to Simon Baron-Cohen's (Cambridge) <em>systemizing</em> theory, autistic brains have a strong
+      tendency to analyze and build rule-based systems. The chessboard — a perfect-information game, without
+      social ambiguity, with stable rules — is the prototype of a closed and analyzable system. This affinity
+      isn't a stereotype: it's coherent with documented cognitive characteristics of part of the autism
+      spectrum.
 ---
 
 Picture a school playground one Thursday morning. The noise is overwhelming: chairs scraping, unpredictable voices, fluorescent lights humming slightly overhead. For most of us it is mild background sound. But for Theo, 9, diagnosed with [autism spectrum disorder](https://en.wikipedia.org/wiki/Autism_spectrum) (ASD) level 2, that flood of unfiltered sensory input becomes a paralyzing inner storm every morning. Social codes fly everywhere, implicit, unreadable. You must read between the lines of a conversation, interpret a smirk, grasp the irony of a joke. It is exhausting at a level few neurotypical people can imagine.

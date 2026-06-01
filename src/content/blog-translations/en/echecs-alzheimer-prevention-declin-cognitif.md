@@ -5,6 +5,26 @@ seoTitle: "Chess and Alzheimer's: Studies, Figures, and Cognitive Prevention"
 seoDescription: "Chess and Alzheimer's: quantitative data on cognitive games and dementia. MMSE meta-analyses, ALSOP cohorts, clinical trials in elderly."
 enSlug: "chess-and-alzheimer-prevention"
 draft: false
+faq:
+  - question: "Do chess prevent Alzheimer's disease?"
+    answer: >-
+      No: no single activity can guarantee the absence of neurodegenerative pathology. Large cohorts show
+      associations between regular mental activities and lower relative risk at the population scale; not
+      measurable individual protection.
+  - question: "What are the 'risk reduction percentages' cited in publications worth?"
+    answer: >-
+      They're often adjusted hazard ratios: for example a relative 11% or 9% drop in dementia risk over ten
+      years for frequent habits (literacy or games/puzzles) in a specific cohort. It's not a personal
+      guarantee: age, genetics, vascular health, and chance always play a role.
+  - question: "Do the Go research findings apply to chess?"
+    answer: >-
+      Partially: both are high cognitive load board games, but the protocols (duration, already-diagnosed
+      patients vs healthy seniors) differ. Each title should be read as a piece of the puzzle, not as
+      transferable proof for Western chess.
+  - question: "Do chess modify brain architecture?"
+    answer: >-
+      Prolonged practice is associated with functional differences on imaging; for the link play → cognitive
+      reserves and transfer, see our pages on chess cognition and on chess play.
 ---
 
 Sensationalist headlines sometimes promise a "weapon" against the pathology often called Alzheimer's in the media.

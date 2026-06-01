@@ -5,6 +5,39 @@ seoTitle: "Breaks in Chess: Why Stopping Makes You Better"
 seoDescription: "Why breaks make you better at chess: memory consolidation, cognitive fatigue, sleep, and rage-queue. Concrete protocols for tournaments and training."
 enSlug: "benefits-of-breaks-in-chess"
 draft: false
+faq:
+  - question: "How much break time do I really need between two long games?"
+    answer: >-
+      The literature on cognitive fatigue in sports (FIDE included) suggests a minimum of <strong>30 to 60
+      minutes of active recovery</strong> (walking, light meal, hydration, no chess screen) between two
+      classical games (≥ 90 minutes per player). Online it's harder to respect, but the principle stands: if
+      you string 5 blitz games in 30 minutes after a defeat, you're almost guaranteed to tilt and reinforce
+      weak reflexes.
+  - question: "Does sleep matter more than study for progression?"
+    answer: >-
+      Not more, but <strong>just as much</strong>. Trading 1 hour of sleep for 1 hour of study is almost
+      always a bad deal: you lose more in consolidation of previous learning than you gain in new learning.
+      For a late-evening session, better to <strong>review 3 known puzzles</strong> than <strong>discover 10
+      new ones</strong>: the upcoming consolidation will be more effective on partially mastered material.
+  - question: "Does a quick game count as a break?"
+    answer: >-
+      No. It's the most common mistake. A quick game engages <strong>exactly the same cognitive
+      circuits</strong> as your previous study session: decision under pressure, calculation, evaluation.
+      From a cognitive fatigue standpoint, it's a continuation of the session, not a break. A real cognitive
+      break switches channels: walking, non-chess conversation, light reading, light physical exercise.
+  - question: "Should I take long breaks even when I'm progressing well?"
+    answer: >-
+      Especially when you're progressing well. The dopaminergic system desensitizes faster when reward is
+      regular (visible progression): it's the 'good student burnout' paradox. Players who progress quickly to
+      1800-2000 Elo and often quit afterward are those who never took a structured break. A 5-7 day break
+      every 2-3 months sustains intrinsic motivation over several years.
+  - question: "Does coffee really help offset fatigue?"
+    answer: >-
+      Short term yes, but on a 4-5 hour classical game, caffeine <strong>shifts</strong> fatigue rather than
+      solving it: you feel alert at move 20, you crash harder between moves 35 and 50. FIDE coaches typically
+      recommend <strong>one coffee right before the game</strong> + <strong>water during</strong>, never a
+      stimulant chain. Caffeine consumed after 2 PM also degrades next-night sleep, hence consolidation of
+      that game.
 ---
 
 The player who progresses fastest isn't always the one who plays the most. It's often the one who knows when to stop. The break isn't wasted time: it's an integral part of the learning, consolidation, and recovery process.

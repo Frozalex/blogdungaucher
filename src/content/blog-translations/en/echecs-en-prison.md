@@ -8,6 +8,30 @@ seoDescription: >-
   Change Through Chess, San Quentin, Rikers Island: prison chess programmes show measurable effects on impulsivity and
   recidivism. What criminology really says about the chessboard as a rehabilitation tool.
 enSlug: "chess-in-prison"
+faq:
+  - question: "Do chess-in-prison programs exist in France?"
+    answer: >-
+      Occasional initiatives exist, driven by local clubs and volunteers, sometimes with support from the
+      French Chess Federation. There is no structured national program to date. If you're a prison educator
+      or volunteer wanting to launch something, the FFE can be a useful contact point.
+  - question: "Can inmates participate in tournaments?"
+    answer: >-
+      Some facilities organize internal tournaments. In a few documented cases in the UK and US, inmates have
+      participated in competitions against outside players, sometimes remotely via secure systems. Change
+      Through Chess has organized several such matches, and participants often describe them as a notable
+      experience: being treated as a player, not as a number.
+  - question: "Does this also work with at-risk youth outside the prison context?"
+    answer: >-
+      Yes. Similar programs exist in disadvantaged neighborhoods, priority-education schools, and juvenile
+      placement centers. The targeted cognitive mechanisms are identical. Observed results are comparable,
+      with often an easier reception, the prison environment adding a layer of distrust toward any
+      educational initiative.
+  - question: "Can chess be used to work on empathy?"
+    answer: >-
+      It's one of the most interesting dimensions. Anticipating the opponent's move implies putting yourself
+      in their place, modeling their board vision, their fears, their intentions. It's a concrete,
+      measurable, and repeated form of theory-of-mind practice, which behavioral sciences consider one of the
+      foundations of empathy.
 ---
 
 It is 2 p.m. in a prison on the outskirts of London. The room is small, the furniture battered. Two inmates sit facing a chessboard on a formica table. There is no close watch: the officer is in the corridor.

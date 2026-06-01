@@ -5,6 +5,39 @@ seoTitle: "Chaos Theory in Chess: Lyapunov, Bifurcations, and Critical Moves"
 seoDescription: "Lyapunov exponent, bifurcation points, Kasparov-Topalov 1999: why a single error tips a chaotic position, and what it changes for your play."
 enSlug: "chaos-theory-in-chess"
 draft: false
+faq:
+  - question: "Are chess really 'chaotic' in the mathematical sense?"
+    answer: >-
+      Strictly no: the formal definition of chaos (Lyapunov exponent, strange attractors) applies to
+      continuous dynamical systems, while chess is discrete and finite. But the <strong>structural
+      properties</strong> of chaos (sensitivity to initial conditions, bifurcation points, computation
+      horizon) manifest measurably in tactically tense positions. The analogy isn't literary: it's
+      empirically confirmed by engine analysis.
+  - question: "How to recognize a chaotic position during a game?"
+    answer: >-
+      Three converging signs: (1) several sacrifices or unbalanced exchanges are on the table at the same
+      time; (2) each King's position is exposed or potentially exposed soon; (3) your intuition gives you two
+      or three very different moves that seem playable without being able to choose quickly. If all three are
+      present, you're in a high-λ zone: the chosen move weighs much more than in a calm position.
+  - question: "Why do engines handle chaos better than humans?"
+    answer: >-
+      Not for the reason you'd think. They're not immune to the horizon effect. But their <strong>search
+      extension</strong> in tactical variations (forced continuation until stabilization) and their
+      evaluation function trained on millions of chaotic positions give them a <strong>reference
+      baseline</strong> humans lack. When AlphaZero 'knows' a sacrifice works without needing 20-move
+      calculation, it's its value function's attractor speaking, not brute force.
+  - question: "Does chaos really favor the weaker player?"
+    answer: >-
+      Statistically yes, within a certain window. Analysis of millions of amateur games shows the expected
+      performance gap narrows in sharp openings (King's Gambit, Najdorf Sicilian, Benoni) compared to
+      positional openings (Slow Italian, Caro-Kann). But the opposite effect appears beyond a certain Elo gap
+      (>300 points): the stronger then plays chaos as a mastered domain, and their advantage strengthens.
+  - question: "What's the difference between a 'complicated' position and a 'chaotic' one?"
+    answer: >-
+      A complicated position has many candidate moves but small evaluation gaps: you can be wrong without
+      losing the game. A chaotic position has few viable moves but huge gaps: one weak move and the position
+      tips. It's the evaluation gap per move, not the number of candidates, that measures chaos. An engine
+      quantifies it for you in two seconds; up to you to recognize the form by eye.
 ---
 
 Chess is often described as the game of pure logic, a domain governed by rigor and predictability. And yet, anyone who has played a tactically tense game knows something else operates. One too many moves, a misplaced piece, and the entire structure collapses. What you feel in these moments is chaos in the technical sense.

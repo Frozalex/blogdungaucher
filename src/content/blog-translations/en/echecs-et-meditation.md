@@ -5,6 +5,39 @@ seoTitle: "Meditation and Chess: Mindfulness for Better Play"
 seoDescription: "MBSR, Default Mode Network, emotional regulation: what mindfulness research says about its contribution to chess performance and mental toughness."
 enSlug: "chess-and-meditation"
 draft: false
+faq:
+  - question: "Does meditation really make you better at chess?"
+    answer: >-
+      Not directly: it doesn't make you calculate faster or memorize more variations. But it acts on factors
+      that limit performance: mind wandering during the game, post-error rumination, anxiety in critical
+      positions. Goleman and Davidson (2017) show that 8 weeks of regular practice (20 min/day) produce
+      measurable changes in attention and emotional regulation, two pillars of chess performance.
+  - question: "How much meditation per day to see an effect?"
+    answer: >-
+      Effective intervention studies generally use 20 minutes per day for 8 weeks (standard MBSR protocol).
+      Below 10 minutes daily, lasting (trait) effects are weakly documented. State effects (in-session
+      calming) work from 5 minutes, but they're transient. For a chess player, a realistic compromise is
+      15-20 minutes 5-6 days per week.
+  - question: "What type of meditation is most useful for chess?"
+    answer: >-
+      Two complementary approaches: (1) Focused attention meditation (focus on breath, return at each drift):
+      directly trains the sustained concentration muscle. (2) Open monitoring meditation (observe thoughts
+      without engaging): develops metacognitive awareness useful for spotting one's own emotional drifts
+      during a game (anxiety, frustration). The combination of both, alternated, is generally more effective
+      than a single approach.
+  - question: "When to meditate relative to a game?"
+    answer: >-
+      A short session of 5-10 minutes 30-60 minutes before the game seems most useful. It reduces excessive
+      sympathetic activation (anticipatory stress), improves attentional readiness, and creates a 'reset'
+      state before competitive engagement. Meditating immediately before is less effective: too short to
+      install the parasympathetic state, and risks creating a relaxation that doesn't match the needed
+      mobilization.
+  - question: "Do grandmasters meditate?"
+    answer: >-
+      More and more. Magnus Carlsen has mentioned mindfulness practice in several interviews. Fabiano Caruana
+      works with a mental coach who integrates mindfulness elements. The chess movement is following the
+      broader trend in elite sports, where meditation has become a standard component of mental preparation
+      since the 2010s.
 ---
 
 The idea that meditating improves cognitive performance is one of those that meet the most skepticism, and the most misplaced enthusiasm. The reality is more precise than either camp: meditation won't make you a faster calculator, but it profoundly changes what you do with the cognitive resources you already have.

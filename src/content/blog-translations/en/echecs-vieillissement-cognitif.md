@@ -5,6 +5,41 @@ seoTitle: "Cognitive Reserve and Chess After 60: What Neuroplasticity Says"
 seoDescription: "How chess delays cognitive decline after 60: cognitive reserve, senior neuroplasticity, comparison between blitz and slow games."
 enSlug: "chess-and-cognitive-aging"
 draft: false
+faq:
+  - question: "Do chess prevent Alzheimer's disease?"
+    answer: >-
+      Not in the sense of direct prevention: playing chess doesn't mean you won't get Alzheimer's. What
+      studies show is more precise: intellectually stimulating activities increase 'cognitive reserve', which
+      delays symptom onset in people who develop the disease. In practice, this can mean several additional
+      years of autonomous and lucid life. Prevention of the disease itself depends on different biological
+      factors (genetics, inflammation, amyloid pathology).
+  - question: "At what age do chess players reach peak performance?"
+    answer: >-
+      According to a 2017 study on 3,374 players, the average peak is between 35 and 45 years for
+      professional players, with significant variability. Some continue improving until 50. This is later
+      than most physical sports, but also later than other cognitive games like Go (peak around 25-30) or
+      video games (peak around 20-25). The reason: in chess, crystallized intelligence (accumulated
+      knowledge) partially compensates for the decline in processing speed.
+  - question: "Can seniors still progress at chess?"
+    answer: >-
+      Yes. Neuroplasticity remains active after 60: it's slower than at 20, but real. Studies on adults 65-80
+      practicing chess regularly (3-4 hours per week) for 6 months show measurable improvements on
+      standardized cognitive tests. Elo progression is slower, but working memory, attention, and processing
+      speed improve. The realistic objective isn't becoming a Grandmaster at 70, but using the game to
+      maintain and improve cognitive abilities.
+  - question: "Is it better to play blitz or slow games for cognitive benefits?"
+    answer: >-
+      For cognitive benefits specific to aging, slow games seem more relevant. They engage long-term
+      planning, deep working memory, and cognitive flexibility more: functions that decline with age and most
+      need training. Blitz primarily engages processing speed (which declines even faster), so it's less
+      suited as a cognitive maintenance tool. For the social aspect and pleasure, however, blitz can be
+      preferable.
+  - question: "Is there an age at which it's 'too late' to start chess?"
+    answer: >-
+      No, according to available research. Studies have included beginners aged 70 and 80 with no prior
+      practice, and observed significant cognitive improvements after 3-6 months. The benefit of starting
+      young remains real (more time to build cognitive reserve), but starting at 70 is clearly preferable to
+      never starting. Neuroplasticity, though slowed, remains present until the end of life.
 ---
 
 Viktor Korchnoi played his last official tournament at 81. At 77, he was still competing against active Grandmasters at super-tournament level. He lost more often than he won, but he played, at a level 99.9% of the population will never reach at any age.

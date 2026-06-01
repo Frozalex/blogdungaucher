@@ -8,6 +8,38 @@ seoDescription: >-
   fMRI, neuroplasticity, chronnectome, executive functions: what research actually measures about the effects of chess
   on the brain, with the numbers.
 enSlug: "chess-and-the-brain"
+faq:
+  - question: "Do chess physically modify the brain?"
+    answer: >-
+      Yes: several structural MRI studies show differences in gray and white matter density between experts
+      and novices in fronto-parieto-temporal regions (Hänggi 2014; Trevisan 2022, 29 vs 29). These changes
+      correlate with age of practice start (ρ = −0.54, p < 0.01), suggesting a cumulative long-term effect
+      rather than an innate predisposition.
+  - question: "Do chess improve executive functions?"
+    answer: >-
+      Data suggest yes, with moderate effects. An RCT on 26 athletes (Dania 2021, 10 weeks) showed
+      improvement in working memory and selective attention. A study on 65 schoolchildren (Ramos 2017, 30
+      practitioners vs 35 controls) showed significant differences across all measured executive functions
+      (MANOVA). The Sala & Gobet (2017) meta-analysis tempers this: effects are small to moderate and depend
+      on design quality.
+  - question: "How long to see effects on the brain?"
+    answer: >-
+      Intervention studies use 10-12 weeks of regular practice to measure behavioral effects. Structural
+      changes (MRI) require years of intensive practice. Trevisan 2022 shows that fractal dimension of the
+      left frontal operculum correlates with start age (ρ = −0.54), suggesting that starting young amplifies
+      structural effects.
+  - question: "Do chess protect against Alzheimer's?"
+    answer: >-
+      No proven causality. Verghese et al. (NEJM 2003, n=469, 5-year follow-up) find an association between
+      board games and −74% dementia risk. It's an adjusted correlation in a cohort, not a controlled trial.
+      The Williams et al. (2025) systematic review confirms structural and functional associations but
+      emphasizes the limits of observational designs.
+  - question: "Do benefits transfer to other skills?"
+    answer: >-
+      Little. Sala & Gobet (2017, meta-analysis, 259 citations, Q1 Current Directions in Psychological
+      Science) show that effects on non-chess academic or cognitive skills are small to moderate, and
+      decrease when experimental controls are more rigorous. Transfer is due more to metacognitive habits
+      (planning, analysis) than direct skill transfer.
 ---
 
 It is not an exceptional brain that lets you play chess brilliantly. Relentless chess practice builds an exceptional brain. The image of the grandmaster born with a divine gift is exactly backwards.

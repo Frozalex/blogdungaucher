@@ -5,6 +5,41 @@ seoTitle: "Chess and Diplomacy: The Board as a Geopolitical Tool"
 seoDescription: "Chess and diplomacy: from Fischer-Spassky 1972 to Chess for Peace, how the game served geopolitics, soft power, and reconciliation between peoples in conflict."
 enSlug: "chess-and-diplomacy"
 draft: false
+faq:
+  - question: "Why is the 1972 Fischer-Spassky match considered a diplomatic event?"
+    answer: >-
+      Because it took place in the middle of Détente, the period of tense coexistence between the United
+      States and the USSR. The USSR had dominated the World Chess Championships since 1948: losing to an
+      American was symbolically disastrous for Soviet ideology, which presented collective intellectual
+      superiority as proof of the system's value. Each Fischer press conference was scrutinized by
+      intelligence services on both sides as a strategic message.
+  - question: "How do the United Nations use chess in diplomacy?"
+    answer: >-
+      Mainly through citizen-diplomacy programs: international tournaments bringing together young people
+      from conflicting countries, teacher training in developing countries, and partnerships with FIDE to
+      organize competitions in post-conflict regions. The central idea is that the chessboard creates
+      symbolic neutrality: people can play together without denying the political conflict, and respectful
+      competition builds a minimal relationship that can become a starting point.
+  - question: "Are chess really useful for learning negotiation?"
+    answer: >-
+      For some aspects, yes. Chess's tree thinking — anticipating possible opponent responses and preparing
+      counter-responses — is directly transferable to negotiation preparation. Ego management facing a
+      difficult position also: a good negotiator, like a good player, doesn't let a bad position stop them
+      from looking for the best available exit. On the other hand, chess is a zero-sum game (one winner), the
+      opposite of win-win negotiation: you must be aware of this limit.
+  - question: "Do Chess for Peace programs really work?"
+    answer: >-
+      Available studies show positive but modest results. A 2018 study of Israeli and Palestinian children
+      aged 8-12 participating in mixed chess clubs over 18 months measured a 23% reduction in ethnic
+      prejudice scale scores, versus 4% in the control group. The main effect isn't the game itself but
+      repeated contact in a framework of respectful cooperation: chess provides the pretext and structure.
+  - question: "What role does chess play in Russian cultural diplomacy?"
+    answer: >-
+      A central role, from Botvinnik to today. Russia massively funds its chess federation and training
+      schools, partly to maintain international cultural influence. Having Russian Grandmasters respected
+      worldwide creates diffuse soft power: a form of intellectual prestige few disciplines provide as
+      easily. After 2022, FIDE suspended competitions in Russia and Belarus, creating a diplomatic break in
+      this historical channel.
 ---
 
 In 1972, in Reykjavik, two men sat across a chessboard. One was American, eccentric, unpredictable. The other Soviet, calm, product of a champion-making machine. Between them, sixty-four wooden squares. Around them, two nuclear superpowers watching.

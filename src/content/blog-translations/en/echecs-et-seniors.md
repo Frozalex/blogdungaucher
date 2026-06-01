@@ -8,6 +8,25 @@ seoDescription: >-
   Does playing chess protect against cognitive decline? What the New England Journal of Medicine study and neuroscience
   really say about chess, seniors and dementia.
 enSlug: "chess-and-seniors"
+faq:
+  - question: "Do chess cure Alzheimer's?"
+    answer: >-
+      No. Chess neither cures nor prevents the biological causes of Alzheimer's (amyloid plaques, tau
+      tangles). They delay symptom onset by building cognitive reserve: the brain compensates longer despite
+      underlying damage. This means several additional years of autonomous, lucid life on average, not
+      avoiding the disease itself.
+  - question: "How many games per week for a measurable effect?"
+    answer: >-
+      Studies don't set a precise threshold. Verghese (2003) measured practice in 'days per week'.
+      Consistency seems more important than frequency: two regular sessions are worth more than five
+      concentrated sessions on one day. For a senior, 2-3 sessions of 45-60 minutes per week is a realistic
+      objective and aligned with available data.
+  - question: "Do online chess apps have the same effect as in-person play?"
+    answer: >-
+      The problem-solving component is equivalent. The social component (considered an independent protective
+      factor in several studies) is reduced online. Ideally, a mix: in-person play for the social link,
+      online play for ease and frequency. For isolated seniors with mobility difficulties, online remains a
+      valuable solution despite the reduced social dimension.
 ---
 
 Raymond is 79. He has played chess since age 12 in a provincial club, two evenings a week. His doctor says he has the cognitive profile of a 65-year-old. That is not genetic miracle: it is, in all likelihood, the result of decades of an activity that neuroscience today considers one of the most protective against cognitive decline.

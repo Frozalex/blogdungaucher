@@ -5,6 +5,39 @@ seoTitle: "Teaching Chess to Children: Ideal Age, Methods, and Benefits"
 seoDescription: "When to start teaching chess to children? Age-adapted methods, cognitive development, real benefits on executive functions: a complete guide for parents."
 enSlug: "teaching-chess-to-children"
 draft: false
+faq:
+  - question: "At what age is my child ready for chess?"
+    answer: >-
+      Most experts and studies suggest 5-6 as the minimum age for structured introduction. Before that, the
+      full rules are too abstract for most children. Between 5 and 7, a progressive approach (preliminary
+      games, simplified variants) is recommended. After 7-8, learning the full game is accessible for most
+      children. Exceptions exist: particularly precocious children grasp the full rules from 4.
+  - question: "Should I force my child to play chess if they resist?"
+    answer: >-
+      No. Resistance is an important signal to respect. Intrinsic motivation is the strongest predictor of
+      long-term progression. Forcing a child creates anxiety and a lasting negative association with the
+      game. Recommended approach: expose the child to chess via pleasant contexts (simplified chess games,
+      stories, visual puzzles), without competitive pressure. If interest doesn't come naturally, wait a few
+      months and try again.
+  - question: "How to make chess fun for a child?"
+    answer: >-
+      Several effective approaches: (1) Use colored or themed pieces (animals, characters) for the youngest.
+      (2) Start with 'mini-games' on part of the board: lone King vs King+Rook, for example. (3) Tell stories
+      with the pieces ('the Knight jumps over the river'). (4) Play with handicap rules (you play without
+      Rooks, I play without Knights) to balance games with your child. (5) Celebrate good moves, not just
+      wins.
+  - question: "How many hours per week for a beginner child?"
+    answer: >-
+      Effective intervention studies use 1-2 hours per week of structured instruction for children 6-10.
+      Beyond 2 hours per week for a beginner, marginal returns drop fast. Regularity (every week) matters
+      more than intensity (several hours at once). A 45-minute session each week with a good teacher is more
+      effective than 3 monthly hours.
+  - question: "When is the best time to start tournaments?"
+    answer: >-
+      When the child knows all the rules, plays complete games without help, and themselves expresses the
+      desire to measure their level. For most children starting at 6-7, first tournaments come naturally
+      around 8-10. The first tournament should be local, small, and presented as a celebration rather than a
+      competition: the result matters little, the experience of playing strangers is what counts.
 ---
 
 Can a 5-year-old learn chess? The short answer: some yes, most no—not the full rules. The more useful question is: how to adapt learning to each age so that chess is a joyful and beneficial experience?

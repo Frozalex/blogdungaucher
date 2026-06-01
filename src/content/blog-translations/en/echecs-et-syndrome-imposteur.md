@@ -8,6 +8,35 @@ seoDescription: >-
   Your Elo is rising but you don't feel legitimate. Impostor syndrome affects many chess players. What psychology says
   about this phenomenon and how to overcome it.
 enSlug: "chess-impostor-syndrome"
+faq:
+  - question: "Can impostor syndrome lower your playing level?"
+    answer: >-
+      Yes, through several mechanisms. Hypervigilance over your own errors creates a tension that
+      deteriorates calculation. Fear of 'confirming' a bad level can lead to playing too cautiously or,
+      conversely, taking excessive risks to 'prove' something. The mental load tied to negative
+      self-evaluation consumes cognitive resources available for the game.
+  - question: "Does it go away with progression?"
+    answer: >-
+      Not automatically. Some players report the syndrome eases with experience and regularity. Others find
+      it shifts: at 1200 Elo you feel like an impostor facing 1400s, at 1800 you feel like an impostor facing
+      2000s. Progression isn't enough — you also need to change the evaluation framework.
+  - question: "How do you distinguish impostor syndrome from a realistic assessment of your level?"
+    answer: >-
+      A legitimate question. A player who overestimates their level isn't in impostor syndrome. The key
+      distinction is in the attribution pattern: if you systematically attribute your successes to external
+      factors and your failures to internal ones, that's a characteristic signal. If your evaluation varies
+      game to game without a systematic pattern, it's more likely normal calibration.
+  - question: "Do professional players feel this too?"
+    answer: >-
+      Yes, and they're talking about it more and more. Fabiano Caruana has discussed in interviews the
+      pressure of maintaining a high rating and the feeling of 'not deserving' certain positions in elite
+      tournaments. The normalization of this discourse among professionals is recent but significant.
+  - question: "Should you see a professional?"
+    answer: >-
+      If impostor syndrome spills into other areas of your life — work, relationships, other activities — and
+      creates significant distress, support from a cognitive-behavioral therapist can be useful. CBT is
+      particularly effective on negative attribution patterns. In a purely chess context, the practices
+      described here are generally enough.
 ---
 
 You have just won a well-played game. Your opponent was 100 points above you. The win is clear and deserved. Yet the first thought that surfaces is not satisfaction. It is something more uncomfortable: *they must have blundered. It doesn't really count. If we replayed, they would win.*

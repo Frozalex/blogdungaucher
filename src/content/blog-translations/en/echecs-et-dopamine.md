@@ -5,6 +5,39 @@ seoTitle: "Dopamine and Chess: How Neurochemistry Explains the Fascination"
 seoDescription: "Reward circuit, anticipation, dopamine signal: what neuroscience reveals about why chess is so captivating and sometimes compulsive."
 enSlug: "chess-and-dopamine"
 draft: false
+faq:
+  - question: "Do chess really release dopamine?"
+    answer: >-
+      Yes. Any intellectually engaging activity with clear goals and feedback activates the mesolimbic
+      dopaminergic circuit. fMRI studies on complex problem solving (Kounios & Beeman, 2014) show a
+      dopaminergic peak at the 'eureka moment'. In chess, this peak occurs when finding a tactical
+      combination, executing a precise plan, or winning a difficult position.
+  - question: "Why can chess become addictive?"
+    answer: >-
+      For the same reasons as video games: rapid feedback, visible progression (Elo), result variability (you
+      never know if you'll win), and constant social comparison. Online blitz is particularly addictive: each
+      game lasts 3-5 minutes, dopaminergic feedback is immediate, and platforms gamify the experience
+      (badges, leagues, ranking notifications). Some players report chronic 'chess flow' that displaces other
+      activities.
+  - question: "Cortisol and dopamine: what's the neurochemistry of a tense game?"
+    answer: >-
+      An important game simultaneously activates two systems: dopaminergic (anticipation, motivation) and
+      adrenergic/cortisol (stress, vigilance). In a difficult position, cortisol rises: which can either
+      improve performance (sharpened attention) or degrade it (frozen calculation), depending on the
+      individual response. The balance between these two systems is what sports psychology calls 'optimal
+      activation'.
+  - question: "Does solving tactics generate more dopamine than playing a game?"
+    answer: >-
+      Probably yes for problems with a clear solution. The 'eureka moment' when discovering a forced
+      combination generates a particularly sharp dopaminergic peak (Kounios & Beeman, 2014). That's why daily
+      tactical training is highly addictive: each solved puzzle delivers a quick, clean reward. Playing a
+      real game involves more sustained dopaminergic activation but less marked peaks.
+  - question: "How to use neurochemistry to progress better?"
+    answer: >-
+      Three practical principles: (1) End training sessions on a success (even small) to positively condition
+      the reward circuit. (2) Vary training types (tactics, endgames, game analysis) to maintain dopaminergic
+      novelty. (3) Avoid the 'rage queue' (replaying immediately after a loss): the brain is in a degraded
+      state, dopaminergic learning is impaired, and you risk reinforcing bad reflexes.
 ---
 
 Your brain does not distinguish between a good chess combination and a pizza. In both cases, the same circuits activate, the same neurotransmitters flow, and the same "do it again" signal is sent. The difference lies in the nature and duration of the cognitive engagement that precedes the reward.

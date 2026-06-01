@@ -5,6 +5,42 @@ seoTitle: "Chess and Popular Culture: From Bergman to The Queen's Gambit"
 seoDescription: "The Queen's Gambit, cinema, literature, Twitch, and memes: how chess invaded popular culture and changed its image in the mainstream."
 enSlug: "chess-and-popular-culture"
 draft: false
+faq:
+  - question: "Why did The Queen's Gambit have such an impact on chess practice?"
+    answer: >-
+      Several factors combined. First, timing: released October 2020, in the middle of global lockdown, when
+      people were seeking home activities. Then the narrative and visual quality of the series: gameplay
+      scenes are spectacularly well filmed. And above all the choice of a female protagonist, which drew a
+      new audience that wouldn't have identified with a typical male genius. The 87% increase in chess set
+      sales and the explosion of Chess.com signups were measured directly in the weeks after release.
+  - question: "How does cinema generally portray chess players?"
+    answer: >-
+      Historically, very poorly. The cinematic chess player is intelligent but asocial, often obsessive to
+      the point of pathology, emotionally cold. It's the 'dark genius' — a legacy of the Bobby Fischer
+      character in popular imagination. This portrayal has evolved: The Queen's Gambit shows a complex player
+      with real human relationships. Searching for Bobby Fischer (1993) showed a child prodigy in a warm
+      family setting. Nuance is progressing, even if the stereotype persists.
+  - question: "Do chess play a role in classical literature?"
+    answer: >-
+      Yes, considerably. Stefan Zweig's The Royal Game (1942) remains perhaps the most beautiful novella on
+      chess: it uses the game as a metaphor for intellectual resistance against Nazi dehumanization. Vladimir
+      Nabokov was a passionate player and integrated chess structures into several of his novels, notably The
+      Defense (1930). Lewis Carroll, author of Alice in Wonderland, was also a player: the sequel, Through
+      the Looking-Glass, takes place on a giant chessboard.
+  - question: "How have streamers changed the image of chess?"
+    answer: >-
+      Radically. Streamers like Hikaru Nakamura (Grandmaster and streamer with millions of subscribers) or
+      YouTube creators like GothamChess (Levy Rozman) showed chess as a social, funny game, commented live
+      with authentic emotional reactions. This image (far from the silent solitary genius) drew a much
+      younger and more diverse audience. Online chess is now often presented as an accessible esport, with
+      its memes, personalities, controversies (like the Niemann affair in 2022).
+  - question: "Are there musical works about chess?"
+    answer: >-
+      The best known is the musical Chess (1984), with music by ABBA (Benny Andersson and Björn Ulvaeus),
+      about a fictional match between an American and a Soviet player during the Cold War. It played on
+      Broadway and the West End, and several songs remained popular ('One Night in Bangkok', 'I Know Him So
+      Well'). Chess also appears in hip-hop as a symbol of strategy and intelligence — RZA of Wu-Tang Clan is
+      a passionate player and regularly integrates chess metaphors into his lyrics.
 ---
 
 On October 23, 2020, Netflix released the first episode of *The Queen's Gambit*. The next day, Chess.com recorded its biggest daily registration peak in history. Sales of physical chess sets increased by 87% in the United States within a month. Mothers watching the series signed up online after the final episode.

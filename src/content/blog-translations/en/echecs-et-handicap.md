@@ -5,6 +5,43 @@ seoTitle: "Chess and Disability: The Board as an Inclusion Space"
 seoDescription: "Chess and disability: blind players, autism, quadriplegia, motor impairment. How the game adapts and creates spaces of inclusion and cognitive equality."
 enSlug: "chess-and-disability"
 draft: false
+faq:
+  - question: "How do blind people play chess?"
+    answer: >-
+      On special boards: black squares are slightly raised compared to white squares, and black pieces have a
+      notch or stud on top to distinguish them from whites. Players can touch the pieces to verify position:
+      the 'touch-move' rule is adapted — they must announce their intention before touching ('I want to
+      verify the knight's position'). Moves are often announced verbally (algebraic notation). Some visually
+      impaired players reach National or even International Master levels.
+  - question: "Do chess really help autistic people?"
+    answer: >-
+      Testimonies and case studies converge on yes, for a significant fraction of autistic people — not all.
+      Helpful aspects: explicit rule structure (no ambiguity), result objectivity (you can't 'misinterpret' a
+      position), absence of non-verbal language to decode (you don't have to guess what the opponent 'really
+      means'), and valuing logic and calculation, which are often natural strengths. The competitive aspect
+      can be stressful for some.
+  - question: "Are online platforms accessible to disabled people?"
+    answer: >-
+      Chess.com and Lichess have made significant accessibility efforts. Both platforms are compatible with
+      screen readers for visually impaired people. Lichess (open-source) has a text-accessible interface and
+      lets you play by announcing moves via keyboard. Voice-to-play interfaces exist for motor disabilities.
+      Commercial eye-tracking interfaces (Tobii, etc.) work with standard web interfaces. Online play has
+      opened chess to players who couldn't participate in physical tournaments.
+  - question: "Are there chess champions with significant disabilities?"
+    answer: >-
+      Several. International Master Dariusz Świercz (Poland) played at high level despite partial paralysis.
+      In France, visually impaired players have reached National Master level. At a less competitive but
+      equally significant level, many players with severe motor paralyses participate in online tournaments
+      via assistive technology. This isn't anecdotal: organizations for visually impaired chess have
+      organized World Championships for over 60 years.
+  - question: "How do chess in special education programs work?"
+    answer: >-
+      Typically by integrating chess as a transversal pedagogical tool: not to make competitive players, but
+      to develop general skills — sustained attention, frustration management (losing a piece), sequential
+      planning (anticipating the next move), respect for rules. Programs adapt constraints: shorter games,
+      simplified rules initially, focus on specific aspects rather than the full game. Studies in American
+      and German special education schools show measurable improvements in self-regulation behaviors in 3-6
+      months.
 ---
 
 Timur Gareyev is a Grandmaster. In 2016, he played 48 simultaneous blindfold games—a world record. He wore a blindfold, sat astride a stationary bicycle, and calculated 48 positions simultaneously for 19 hours.

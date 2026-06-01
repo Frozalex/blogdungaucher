@@ -5,6 +5,38 @@ seoTitle: "Chess as Therapy: PTSD, Depression, Anxiety — What Research Says"
 seoDescription: "Chess and mental health: studies on anxiety, depression, PTSD, prison rehabilitation. What research says about the chessboard as a therapeutic tool."
 enSlug: "chess-as-therapy"
 draft: false
+faq:
+  - question: "Can chess treat depression?"
+    answer: >-
+      Data are promising but preliminary. Theoretical mechanisms are solid: chess offers clear goals, a
+      feeling of competence and mastery, and cognitive absorption that can interrupt depressive ruminations.
+      Case studies and some pilot studies show benefits. But large-scale randomized controlled trials are
+      still lacking. Chess can be a useful complement to depression treatment, not a replacement for
+      validated therapies.
+  - question: "Are chess used in PTSD therapy?"
+    answer: >-
+      In some programs, yes, notably in the US for military veterans. The main mechanism is cognitive
+      absorption: a demanding game occupies attention enough to reduce ruminations and intrusions of
+      traumatic thoughts. US Army VA centers have integrated chess into their therapeutic activity programs.
+      Rigorous research on this specific application is still limited.
+  - question: "How is chess used in psychiatry?"
+    answer: >-
+      Historically, chess has been integrated into psychiatric hospitals since the 18th century: alienists
+      prescribed it to occupy and structure patient time. In modern psychiatry, it's used primarily as a
+      socialization tool and cognitive evaluation (planning, flexibility) in admission services, not as
+      primary treatment.
+  - question: "Do chess help children in emotional difficulty?"
+    answer: >-
+      Yes, according to several studies. The Marín et al. (2017, Mexico) study shows reduced anxiety symptoms
+      in children 8-12 after 20 sessions. The mechanisms: clear board rules are reassuring for children in
+      insecurity, sense of competence progresses quickly, and the relationship with the teaching adult is
+      structured and predictable.
+  - question: "Can you use chess in your own therapy without a formal program?"
+    answer: >-
+      Yes, as a complement. The most documented benefits (cognitive absorption, sense of competence, social
+      connection) are accessible in any play context. The ideal is to play with other people (against a
+      coach, in a club, online with a regular partner) rather than alone against the computer. The relational
+      dimension amplifies therapeutic benefits.
 ---
 
 In 1795, physician [Philippe Pinel](https://en.wikipedia.org/wiki/Philippe_Pinel), reformer of psychiatry in Paris, recommended chess to patients at the Salpêtrière as a structuring and stimulating activity. Two centuries later, psychiatrists and educators on four continents use the chessboard in very different therapeutic contexts: prisons, hospitals, refugee centers, programs for military veterans.

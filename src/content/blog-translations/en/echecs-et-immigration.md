@@ -5,6 +5,43 @@ seoTitle: "Chess and Immigration: The Board as Common Language and Integration T
 seoDescription: "Chess for Refugees, history of immigrant GMs, board as lingua franca: how chess facilitates integration and reflects migration movements."
 enSlug: "chess-and-immigration"
 draft: false
+faq:
+  - question: "How do chess facilitate refugee integration?"
+    answer: >-
+      Through several simultaneous mechanisms. First, equal participation without language barrier: you can
+      play a full game without speaking the local language. Then, creation of respectful interactions in a
+      neutral framework: the chess club is a structured space with clear codes, easier to navigate than
+      unstructured social interactions for someone under stress. Finally, valuing cognitive merit
+      independently of origin: a person can be clearly better than a local, which shifts the usual power
+      dynamic of refugee/local relations.
+  - question: "Which countries have the most developed Chess for Refugees programs?"
+    answer: >-
+      Germany (notably via the 'Schach und Integration' program), the Netherlands (the Amsterdam club has had
+      a structured program since 2015), Sweden and Norway (where national federations integrated refugee
+      welcome as an official mission). In France, several local associations exist but there's no coordinated
+      national program. UNHCR (UN Refugee Agency) has documented play programs in camps in Lebanon, Jordan,
+      and Greece.
+  - question: "Why have so many Grandmasters changed sporting nationality?"
+    answer: >-
+      Several reasons. Economic: some countries (notably Gulf monarchies, or countries seeking to develop
+      their federation) offer attractive contracts to GMs to represent them. Political: Soviet GMs defected
+      during the Cold War (Korchnoi, several others). Personal: marriages, studies abroad, lifestyle
+      preferences. FIDE allows federation changes under conditions (3-year waiting period generally). These
+      mobilities reflect a global economy of chess talent.
+  - question: "Are immigrants really overrepresented in chess elites?"
+    answer: >-
+      In some countries, yes. In the US, a significant proportion of top-rated players have immigrant origins
+      or are themselves born abroad. In France, several of the top-rated players have origins outside
+      metropolitan France. It's not universal and data are rarely systematically collected. The proposed
+      hypothesis: geographic mobility correlates with ambition and risk acceptance — traits that also favor
+      competitive progression.
+  - question: "Are chess really 'universal' culturally?"
+    answer: >-
+      Almost, but not quite. FIDE rules are universal. But national variants exist: Japanese shogi, Chinese
+      xiangqi, Korean janggi are distinct games though related. In cultures where these variants are
+      dominant, Western chess may be less known. Also, chess culture (clubs, tournaments, notation) is more
+      developed in some regions than others: areas with little chess tradition (parts of sub-Saharan Africa,
+      parts of Southeast Asia) may find the game less accessible as an integration tool.
 ---
 
 Berlin, winter 2015. Hundreds of thousands of refugees arrive in Germany. Associations seek activities that don't require mastering German: language learning takes months, and the community needs contact points now.

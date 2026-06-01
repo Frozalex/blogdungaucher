@@ -5,6 +5,39 @@ seoTitle: "Chess and Spatial Vision: How the Board Trains the Visuospatial Brain
 seoDescription: "Chess and spatial vision: mental rotation, visualization, blindfold chess. How the game develops visuospatial abilities according to neuroscience."
 enSlug: "chess-and-spatial-vision"
 draft: false
+faq:
+  - question: "Do chess really improve spatial vision?"
+    answer: >-
+      Studies suggest yes. The Tejada-Gallardo et al. (2021) meta-analysis on 17 studies finds a significant
+      positive effect (ES = 0.54) of chess practice on spatial reasoning. Effects are more marked in children
+      (6-12 years) than in adults, suggesting an optimal developmental window. However, like other cognitive
+      benefits of chess, transfer depends on instruction quality.
+  - question: "How do grandmasters visualize variations?"
+    answer: >-
+      Not photographically: that's a popular myth. Eye-tracking and verbal protocol studies (de Groot, 1946;
+      Charness, 1992) show that grandmasters maintain a schematic representation of pieces *important* to the
+      current variation, not a complete board image. They use 'spatial anchors' (key pieces whose position is
+      precisely maintained) while the rest is processed more schematically.
+  - question: "What is mental rotation and why does it matter in chess?"
+    answer: >-
+      Mental rotation is the capacity to mentally rotate a three-dimensional object to examine it from a
+      different angle. In chess, it applies differently: calculating what the opponent sees from their side
+      of the board (mentally inverting perspective), or visualizing how a position evolves after several
+      moves (temporal transformation of the position). Both operations activate similar regions to classical
+      mental rotation.
+  - question: "Is blindfold play beneficial for visualization?"
+    answer: >-
+      Yes, it's the most direct exercise to develop visualization. Starting with simple blindfold games
+      against yourself (playing a known opening from memory, then reopening the board to check) is accessible
+      from intermediate level. Full blindfold games against an opponent are reserved for strong players (from
+      around 1600-1700 Elo), but partial exercises (the first 5-10 moves blindfold) can be practiced well
+      below.
+  - question: "Do chess help children in spatial mathematics?"
+    answer: >-
+      Probably, through spatial reasoning. Spatial mathematics (geometry, trigonometry, certain aspects of
+      algebra) requires mental representation of shapes and their transformations. Studies show that children
+      who practice chess improve their geometry scores more than pure arithmetic. The link is spatial
+      reasoning, which is a shared component.
 ---
 
 [Viswanathan Anand](https://en.wikipedia.org/wiki/Viswanathan_Anand) played 8 chess games simultaneously, blindfolded, without seeing a single board, beating all his opponents. In his head: 8 different positions, each with dozens of pieces, distinct game histories, plans and counter-plans—all maintained simultaneously for hours.

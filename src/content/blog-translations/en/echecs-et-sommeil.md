@@ -5,6 +5,39 @@ seoTitle: "Chess and Sleep: How Cognitive Recovery Boosts Your Progress"
 seoDescription: "REM sleep, memory consolidation, sleep deprivation and chess performance: what neuroscience says about the night as invisible training."
 enSlug: "chess-and-sleep"
 draft: false
+faq:
+  - question: "How many hours of sleep do you need to perform at chess?"
+    answer: >-
+      Cognitive performance data converge on 7 to 9 hours for an adult (Walker, 2017; NSF Sleep Foundation).
+      Below 6 hours, executive functions (calculation, error inhibition, sustained attention) degrade
+      measurably. Above 9 hours, marginal returns become weak. The 8-hour window is the standard target, with
+      individual variations of ±1 hour.
+  - question: "Does napping really improve chess performance?"
+    answer: >-
+      Yes, for position recognition memory and sustained vigilance. A 20-30 minute nap ('power nap') improves
+      attention and reduces sleepiness without creating sleep inertia. A longer nap (60-90 min) including REM
+      sleep specifically improves tactical pattern consolidation, useful between two training sessions but
+      risks disrupting nighttime sleep if taken too late.
+  - question: "Is chess preparation before sleep effective?"
+    answer: >-
+      Yes: it's one of the most documented uses of memory consolidation. Studying endgames or tactical themes
+      in the 30-60 minutes before bedtime exposes the brain to the material right before consolidation phases
+      (slow-wave sleep, then REM). Improvements observed the next day on similar tasks are robust. Caveat:
+      avoid the screen light from chess platforms, which delays falling asleep.
+  - question: "What happens cognitively after a long evening game?"
+    answer: >-
+      A 5-hour evening game induces a cognitive fatigue level equivalent to 20 hours of wakefulness for
+      calculation functions (estimate based on Harrison & Horne data). The brain enters a degraded state
+      where analysis quality drops, error rate increases, and decisions become more impulsive. Hence the
+      importance of separating game and post-game analysis: trying to analyze in this state produces biased
+      and unproductive analysis.
+  - question: "Do grandmasters have particular sleep routines?"
+    answer: >-
+      Several testimonies converge: most high-level players protect their sleep during tournaments as
+      scrupulously as their opening preparation. Magnus Carlsen avoids late evening games before important
+      rounds. Fabiano Caruana has described post-round routines including light reading and screen-free time
+      to facilitate falling asleep. These practices reflect an implicit recognition that sleep is part of
+      preparation, not a luxury.
 ---
 
 Imagine you have an invisible coach who consolidates your opening repertoire while you sleep, who connects the tactical patterns you studied today to those you've known for years, and who erases the interference between the variations you just learned and the old ones. This coach exists. It is your sleep.

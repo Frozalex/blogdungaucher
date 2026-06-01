@@ -5,6 +5,41 @@ seoTitle: "Working Memory and Chess: The Cognitive Bottleneck"
 seoDescription: "Working memory in chess: Baddeley's model, chunks, 4-7 element capacity. How this cognitive bottleneck limits variation calculation and what to do about it."
 enSlug: "chess-and-working-memory"
 draft: false
+faq:
+  - question: "What is working memory and how does it differ from short-term memory?"
+    answer: >-
+      Short-term memory simply stores information temporarily (holding a phone number for 30 seconds).
+      Working memory does more: it maintains AND manipulates information simultaneously. Calculating 47 × 3
+      mentally engages working memory: you need to maintain intermediate digits while performing operations.
+      In chess, calculating a 5-move variation requires maintaining the position at each step while
+      evaluating the result.
+  - question: "How many elements can be held simultaneously in working memory?"
+    answer: >-
+      George Miller's classic estimate (1956) was 7 ± 2 elements. More recent work, notably by Nelson Cowan
+      (2001), revises this downward: about 4 elements simultaneously under strict experimental conditions. In
+      chess, an 'element' can be a chunk (group of linked pieces), not an individual piece: which explains
+      why an expert seems to 'see more' than a novice — they compress information into chunks more
+      efficiently.
+  - question: "How to improve working memory for chess?"
+    answer: >-
+      Two complementary approaches. The first is specific: train calculating variations without moving
+      pieces, timing yourself and progressively increasing depth. Solve tactical problems blindfold (close
+      eyes after reading the position). Replay famous games from memory. The second is general: N-back
+      exercises (a working memory updating task) show transferable improvements after 20 sessions. Aerobic
+      activity also improves working memory via increased prefrontal blood flow.
+  - question: "Does stress affect working memory during a game?"
+    answer: >-
+      Yes, directly. Elevated cortisol (the stress hormone) disrupts dorsolateral prefrontal cortex
+      functions, which manage working memory. Studies show a 15-25% reduction in working memory capacity
+      under moderate psychological stress: which translates into reduced calculation depth and increased
+      surveillance errors (forgetting opponent threats). This is one of the mechanisms explaining
+      tournament-pressure blunders.
+  - question: "Why are distractions during a game so harmful?"
+    answer: >-
+      Because they create a 'dual task' that splits working memory resources. Even a brief distraction (a
+      conversation, an unexpected noise) forces the executive system to reorient attention and rebuild the
+      cognitive context of the game. Dual-task studies show 20-40% performance degradation on working memory
+      tasks during even mild distractions. This is why serious tournament halls enforce silence.
 ---
 
 Imagine you're calculating a 6-move variation. You mentally advance the pawn, your opponent responds with the knight, you develop the bishop, the knight jumps again, your rook enters the game, and—

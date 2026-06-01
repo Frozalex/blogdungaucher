@@ -5,6 +5,43 @@ seoTitle: "Chess and Poverty: Can the Board Transcend Inequalities?"
 seoDescription: "Chess in the Slums, cultural capital, access to resources: chess facing social inequalities — the promise of emancipation and structural realities."
 enSlug: "chess-and-poverty"
 draft: false
+faq:
+  - question: "Are chess really accessible to precarious families?"
+    answer: >-
+      Basic material, yes: a chess set costs €10-20, Lichess is free, basic rules are learned quickly. But
+      serious progression requires unequally distributed resources: a coach (€100-150/hour for a good
+      teacher), books or platform subscriptions, tournament participation (registration, transport, hotel for
+      distant tournaments), and especially time: precarious families often have less available parents for
+      supervision and children more subject to extracurricular constraints.
+  - question: "What exactly is Chess in the Slums of Africa?"
+    answer: >-
+      It's a Nigerian organization founded by Tunde Onakoya in 2018 in Lagos slums. It teaches chess to
+      children from very poor families, using the game as a gateway to scholarships and global educational
+      support. Onakoya drew international attention in 2024 with a 58-hour chess marathon in New York to
+      raise funds. The organization has reached thousands of children and sent several to higher education.
+  - question: "Have there been champions truly from poverty?"
+    answer: >-
+      Yes, several. Wilhelm Steinitz, first world champion, came from a very modest family in Prague and died
+      in poverty in New York in 1900. Samuel Reshevsky, American child prodigy of Polish origin, traveled in
+      childhood with his parents giving paid exhibitions to survive — a form of intellectual begging. More
+      recently, Magnus Carlsen wasn't from poverty but his rise came from a small Norwegian town without
+      chess tradition. These trajectories exist but remain exceptions in a domain where family resources play
+      an important role.
+  - question: "Does school chess really reduce educational inequalities?"
+    answer: >-
+      Effects exist but must be nuanced. Studies on chess programs in disadvantaged schools (in Ecuador, US,
+      Spain) show improvements in math scores and classroom behavior, particularly in children with
+      pre-existing academic difficulties. But these effects depend strongly on implementation quality: a
+      poorly led program by an untrained teacher produces few results. And the effect on long-term
+      inequalities (access to higher education, future income) isn't demonstrated.
+  - question: "Why do Grandmasters so rarely come from precarious backgrounds in Western Europe?"
+    answer: >-
+      Progression to Grandmaster title requires years of intensive training (generally 10,000+ hours
+      according to Ericsson), access to top-level coaches, participation in many international tournaments,
+      and often a heavily invested parent (the Polgar sisters model, where the father organized everything,
+      is representative). These requirements match what a wealthy family's resources allow well and poorly
+      match what a precarious family allows. The exception is the former USSR, where the state funded
+      talented player training independent of social origin.
 ---
 
 Lagos, 2018. Tunde Onakoya sets up a chessboard in an Oshodi slum. The children playing in the street come closer, curious. He has no room, no chairs, no computers. He has pieces, a board, and an idea.

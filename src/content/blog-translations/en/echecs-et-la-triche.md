@@ -5,6 +5,39 @@ seoTitle: "Cheating in Chess: The Niemann Affair Decoded"
 seoDescription: "Chess cheating: the Hans Niemann vs Magnus Carlsen affair decoded. How cheating is detected, whether it can be proven, and what the scandal reveals about professional chess."
 enSlug: "cheating-in-chess"
 draft: false
+faq:
+  - question: "Did Hans Niemann really cheat against Magnus Carlsen?"
+    answer: >-
+      We don't know. That's precisely the heart of the problem. Chess.com published a 72-page report
+      suggesting Niemann probably cheated in more than 100 online games, including some for money. But for
+      the game against Carlsen at the Saint Louis tournament in September 2022 (the incriminated game), no
+      proof of cheating in over-the-board conditions has been established. The lawsuit filed by Niemann was
+      settled out of court in 2023. No admission, no conviction.
+  - question: "How is cheating detected in chess?"
+    answer: >-
+      Mainly by statistical analysis: moves played are compared with recommendations of the best engines
+      (Stockfish, Leela Chess Zero) and a correlation index is calculated. Abnormally high correlation over a
+      long period is suspicious. The problem is that it's probabilistic inference, not direct proof. Players
+      have been accused and then cleared. The method produces false positives. FIDE has worked on more
+      rigorous protocols since 2022.
+  - question: "Why didn't Magnus Carlsen explain his withdrawal?"
+    answer: >-
+      He stated he didn't want to speak on his legal team's advice: coherent if a legal procedure was being
+      considered. His behavior (tournament withdrawal, cryptic tweet quoting Mourinho) was widely read as an
+      implicit accusation. But publicly accusing someone of cheating without solid proof exposes you to
+      defamation suits. Carlsen chose calculated ambiguity.
+  - question: "Is chess cheating frequent in classical tournaments?"
+    answer: >-
+      In supervised classical tournaments (physical presence, phone bans, sometimes electronic jamming),
+      direct engine cheating is very difficult. Documented cases generally involve hidden devices. Online, on
+      the other hand, cheating is endemic according to Chess.com and Lichess, which ban tens of thousands of
+      accounts each year.
+  - question: "What has the affair concretely changed?"
+    answer: >-
+      FIDE strengthened its anti-cheating protocols for elite tournaments: electronic jamming, 15-30 minute
+      broadcast delays. Chess.com published its report, setting a precedent of transparency. And the debate
+      on burden of proof — is it for the accused to prove their innocence or for the accuser to prove the
+      fault? — remains open and structurally unresolved.
 ---
 
 On September 4, 2022, Magnus Carlsen lost to Hans Niemann at the Sinquefield Cup in Saint Louis. The next day, he withdrew from the tournament. He posted a tweet quoting José Mourinho: *"If I speak I am in big trouble."*
