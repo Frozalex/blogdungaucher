@@ -20,8 +20,8 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
         <div class="about-hero__grid">
           <div class="about-hero__avatar-block">
             <img
-              src="/images/avatar.gif"
-              alt="Avatar pixel art de Le_Gaucher"
+              src="/images/logo.svg"
+              alt="Logo du Blog d'un Gaucher"
               class="about-hero__avatar"
               width="160"
               height="160"
@@ -337,11 +337,17 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
     width: clamp(112px, 14vw, 160px);
     height: clamp(112px, 14vw, 160px);
     border-radius: 12px;
-    image-rendering: pixelated;
+    object-fit: contain;
+    padding: 14px;
     flex-shrink: 0;
     border: 1.5px solid var(--border-soft);
     background: var(--surface);
     box-shadow: var(--shadow-sm);
+    transition: filter 260ms ease;
+  }
+
+  [data-theme="dark"] .about-hero__avatar {
+    filter: invert(1);
   }
 
   .about-hero__avatar-tag {
