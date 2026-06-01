@@ -8,6 +8,7 @@ import Breadcrumb from "../../../components/Breadcrumb.astro";
 import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
 import Comments from "../../../components/Comments.astro";
+import NewsletterCta from "../../../components/NewsletterCta.astro";
 
 import { categoryMap, categorySlugs, siteConfig } from "../../../data/site";
 import {
@@ -275,6 +276,7 @@ const otherPillars = categorySlugs
         )}
 
         <ShareButtons title={displayTitle} url={absolutePostUrl} />
+        <NewsletterCta />
         <Comments lang="en" />
 
       </div>

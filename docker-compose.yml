@@ -1,0 +1,90 @@
+services:
+
+  # ── ntfy — notifications push auto-hébergées ──────────────────────────
+  # Docs : https://docs.ntfy.sh/
+  # Accès web : http://localhost:2586 (Nginx/Caddy proxie en HTTPS en prod)
+  # Premier démarrage :
+  #   docker compose exec ntfy ntfy user add --role=admin <username>
+  #   docker compose exec ntfy ntfy user token add <username>   # → NTFY_TOKEN
+  ntfy:
+    image: binwiederhier/ntfy:latest
+    container_name: ntfy
+    command: serve
+    environment:
+      NTFY_BASE_URL: "${NTFY_BASE_URL:-https://ntfy.blogdungaucher.com}"
+      NTFY_BEHIND_PROXY: "true"
+    ports:
+      - "127.0.0.1:2586:80"
+    volumes:
+      - ntfy_data:/var/lib/ntfy
+      - ntfy_cache:/var/cache/ntfy
+      - ./ntfy/server.yml:/etc/ntfy/server.yml:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --tries=1 http://localhost:80/v1/health -O - | grep -Iq 'healthy'"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+
+  # ── remark42 — commentaires auto-hébergés ────────────────────────────────
+  # Docs : https://remark42.com/docs/
+  # Accès web : http://localhost:8080 (Nginx/Caddy proxie en HTTPS en prod)
+  # Premier démarrage :
+  #   1. Renseigner les variables REMARK_SECRET, AUTH_GITHUB_CID/CSEC et ADMIN_SHARED_ID
+  #   2. docker compose up -d remark42
+  #   3. Visiter https://remark42.blogdungaucher.com/api/v1/admin/user pour trouver son USER_ID GitHub
+  remark42:
+    image: umputun/remark42:latest
+    container_name: remark42
+    environment:
+      REMARK_URL: "${REMARK42_URL:-https://remark42.blogdungaucher.com}"
+      SECRET: "${REMARK42_SECRET}"
+      SITE: "${REMARK42_SITE:-blog-gaucher}"
+      AUTH_ANON: "true"
+      AUTH_GITHUB_CID: "${REMARK42_GITHUB_CID:-}"
+      AUTH_GITHUB_CSEC: "${REMARK42_GITHUB_CSEC:-}"
+      ADMIN_SHARED_ID: "${REMARK42_ADMIN_ID:-}"
+      TIME_ZONE: "Europe/Paris"
+      NOTIFY_TYPE: "none"
+      LOW_INTERACTIVE: "false"
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - remark42_data:/srv/var
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --tries=1 http://localhost:8080/ping -O - | grep -q 'pong'"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+
+  # ── newsletter-proxy ─────────────────────────────────────────────────────
+  # Proxy minimaliste protégeant le token Hostinger Reach côté serveur.
+  # Nginx doit reverse-proxier https://newsletter.blogdungaucher.com → 127.0.0.1:3030
+  newsletter-proxy:
+    image: node:20-alpine
+    container_name: newsletter-proxy
+    working_dir: /app
+    command: node newsletter.mjs
+    environment:
+      HOSTINGER_REACH_API_TOKEN: "${HOSTINGER_REACH_API_TOKEN}"
+      ALLOWED_ORIGIN: "${NEWSLETTER_ALLOWED_ORIGIN:-https://blogdungaucher.com}"
+      PORT: "3030"
+    volumes:
+      - ./proxy/newsletter.mjs:/app/newsletter.mjs:ro
+    ports:
+      - "127.0.0.1:3030:3030"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --tries=1 http://localhost:3030/health -O- | grep -q '\"ok\"'"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # ── À venir ────────────────────────────────────────────────────────────
+  # umami: analytics auto-hébergé (port 3000)
+
+volumes:
+  ntfy_data:
+  ntfy_cache:
+  remark42_data:

@@ -1,0 +1,82 @@
+---
+import NewsletterForm from "./NewsletterForm.astro";
+---
+
+<aside class="nl-cta fade-up" style="--motion-delay: 140ms;" aria-label="Newsletter">
+  <div class="nl-cta__inner">
+    <div class="nl-cta__text">
+      <span class="nl-cta__eyebrow" data-t="newsletter.eyebrow">Newsletter</span>
+      <p class="nl-cta__title" data-t="newsletter.ctaTitle">Recevoir les prochains articles</p>
+      <p class="nl-cta__desc" data-t="newsletter.ctaDesc">Deux articles par semaine dans ta boîte mail. Pas de spam.</p>
+    </div>
+    <div class="nl-cta__form">
+      <NewsletterForm variant="article" />
+    </div>
+  </div>
+</aside>
+
+<style>
+  .nl-cta {
+    margin: 2.5rem 0;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md, 12px);
+    background: color-mix(in srgb, var(--green-light, #e8f5e9) 40%, var(--bg-warm));
+    overflow: hidden;
+  }
+
+  .nl-cta__inner {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.75rem 2rem;
+  }
+
+  .nl-cta__text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .nl-cta__eyebrow {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--green);
+    margin-bottom: 0.3rem;
+  }
+
+  .nl-cta__title {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0 0 0.3rem;
+    line-height: 1.3;
+  }
+
+  .nl-cta__desc {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .nl-cta__form {
+    flex: 0 0 300px;
+    min-width: 0;
+  }
+
+  @media (max-width: 680px) {
+    .nl-cta__inner {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1.25rem;
+      padding: 1.4rem 1.25rem;
+    }
+
+    .nl-cta__form {
+      flex: none;
+    }
+  }
+</style>

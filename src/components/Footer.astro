@@ -1,5 +1,6 @@
 ---
 import { categoryMap, categorySlugs } from "../data/site";
+import NewsletterForm from "./NewsletterForm.astro";
 
 interface Props {
   lang?: "fr" | "en" | "de";
@@ -12,7 +13,7 @@ const aboutHref =
   lang === "en" ? "/en/about/" : lang === "de" ? "/de/about/" : "/fr/about/";
 
 ---
-<footer class="footer">
+<footer class="footer" data-pagefind-ignore>
   <div class="container footer-top">
     <div class="footer-brand fade-up" style="--motion-delay: 50ms;">
       <span class="eyebrow" data-t="footer.contactEyebrow">Restons en contact</span>
@@ -31,6 +32,13 @@ const aboutHref =
       <p class="footer-tagline" data-t="footer.tagline">
         Un espace éditorial indépendant pour explorer les échecs en profondeur, avec des contenus utiles et actionnables.
       </p>
+
+      <div class="footer-newsletter">
+        <p class="footer-newsletter__title" data-t="newsletter.footerTitle">Recevoir les articles</p>
+        <p class="footer-newsletter__desc" data-t="newsletter.footerDesc">Deux fois par semaine dans ta boîte mail.</p>
+        <NewsletterForm variant="footer" />
+      </div>
+
       <a class="footer-contact" href="mailto:contact@blogdungaucher.com" data-t="footer.suggestTopic">Proposer un sujet ou poser une question</a>
     </div>
 
@@ -164,6 +172,24 @@ const aboutHref =
     font-size: 0.9rem;
     line-height: 1.65;
     max-width: 24rem;
+  }
+
+  .footer-newsletter {
+    margin: 0.85rem 0 0.6rem;
+  }
+
+  .footer-newsletter__title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0 0 0.15rem;
+  }
+
+  .footer-newsletter__desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 0 0 0.55rem;
+    line-height: 1.4;
   }
 
   .footer-contact {

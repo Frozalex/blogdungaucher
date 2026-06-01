@@ -10,6 +10,7 @@ import ShareButtons from "../../../components/ShareButtons.astro";
 import DownloadPdfButton from "../../../components/DownloadPdfButton.astro";
 import CodeBlockEnhancer from "../../../components/CodeBlockEnhancer.astro";
 import Comments from "../../../components/Comments.astro";
+import NewsletterCta from "../../../components/NewsletterCta.astro";
 import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleVideo from "../../../components/ArticleVideo.astro";
@@ -242,6 +243,7 @@ const otherPillars = categorySlugs
         )}
 
         <ShareButtons title={post.data.title} url={absolutePostUrl} />
+        <NewsletterCta />
         <Comments lang="fr" />
 
       </div>
