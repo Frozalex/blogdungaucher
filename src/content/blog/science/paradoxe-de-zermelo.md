@@ -11,6 +11,40 @@ pillar: "Mathématiques"
 tags: ["Zermelo", "échecs", "mathématiques", "théorie des jeux", "tablebases", "induction rétrograde", "König", "complexité", "logique"]
 seoTitle: "Paradoxe de Zermelo aux échecs : vérité déterminée mais inaccessible"
 seoDescription: "Ernst Zermelo (1913) a prouvé que les échecs ont un résultat sous jeu parfait : Blanc gagne, Noir gagne ou nulle. Pourquoi cette certitude reste hors d'atteinte, et ce que ça change pour ton jeu."
+faq:
+  - question: "Le théorème de Zermelo prouve-t-il que les Blancs gagnent ?"
+    answer: >-
+      Non. Il prouve qu'<strong>une</strong> réponse existe parmi trois possibles : victoire Blancs, victoire
+      Noirs, ou nulle. Il ne dit pas laquelle. L'hypothèse majoritaire est que c'est la nulle (consistance
+      avec le jeu d'élite et l'évaluation des moteurs autour de +0,2/+0,3), mais c'est une croyance basée sur
+      l'observation, pas une démonstration.
+  - question: "Pourquoi appelle-t-on cela un \"paradoxe\" ?"
+    answer: >-
+      Au sens mathématique, ce n'en est pas un : c'est un résultat parfaitement cohérent. Le "paradoxe" est
+      <strong>épistémique</strong> : on sait qu'il existe une réponse unique, mais on ne peut pas la
+      connaître ni en pratique ni dans aucune extrapolation raisonnable des capacités de calcul. Rares sont
+      les propositions où la <em>certitude de l'existence</em> est aussi proprement séparée de la
+      <em>possibilité de l'accès</em>.
+  - question: "Les tablebases ne contredisent-elles pas Zermelo ?"
+    answer: >-
+      Au contraire, elles le <strong>confirment</strong> sur un sous-ensemble du problème. Pour toute
+      position avec ≤ 7 pièces, la valeur Zermelo est connue exactement (gain, perte ou nul, et profondeur
+      exacte). Les tablebases sont la preuve constructive que la démonstration de Zermelo n'est pas vide :
+      appliquée à un nombre fini accessible de positions, elle produit bien une vérité unique calculable.
+  - question: "Pourquoi AlphaZero peut-il battre Stockfish s'il ne joue pas \"parfaitement\" ?"
+    answer: >-
+      Parce que ni l'un ni l'autre ne joue parfaitement au sens Zermelo. Tous deux sont des
+      <strong>approximations</strong> de la stratégie optimale, simplement avec des architectures différentes
+      (recherche + heuristiques pour Stockfish, réseau de neurones + Monte Carlo Tree Search pour AlphaZero).
+      Quand AlphaZero bat Stockfish, c'est qu'à ce niveau d'approximation, ses choix sont en moyenne plus
+      proches de la vérité Zermelo. Mais aucun des deux n'atteint cette vérité.
+  - question: "Cette vérité mathématique pourrait-elle être un jour découverte ?"
+    answer: >-
+      Probablement pas par force brute pure : l'arbre $10^{120}$ est définitivement hors d'atteinte physique.
+      Une <strong>preuve indirecte</strong> reste théoriquement possible (démonstration par symétrie, par
+      invariant, par stratégie miroir partielle), mais aucune piste sérieuse n'existe. Le calcul quantique
+      change la borne (Grover divise l'exposant par deux), mais $10^{60}$ reste astronomique. La résolution
+      des échecs au sens strict est plus probablement un horizon que jamais atteint.
 ---
 
 En 1913, lors du cinquième Congrès International des Mathématiciens à Cambridge, le mathématicien allemand [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) a présenté un résultat qui allait changer la façon dont les mathématiciens, et plus tard les informaticiens, pensent aux jeux de stratégie. Son théorème est court. Sa démonstration est élégante. Et ses implications aux échecs sont à la fois rassurantes et vertigineuses.

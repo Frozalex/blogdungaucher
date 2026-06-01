@@ -22,6 +22,20 @@ tags:
 seoTitle: "Psychologie du joueur d'échecs : ego, tilt, flow et peur de perdre"
 seoDescription: >-
   Ego, tilt, flow, peur de perdre, colère : décryptage complet de la psychologie du joueur d'échecs. Comment vos émotions influencent chaque décision sur l'échiquier.
+faq:
+  - question: "Comment gérer le tilt aux échecs ?"
+    answer: >-
+      La règle la plus efficace selon les entraîneurs, dont Mark Dvoretsky : arrêter de jouer dès que le tilt
+      commence, pas après. L'analyse post-partie à froid, chercher l'état émotionnel au moment de l'erreur,
+      pas seulement l'erreur technique, est le meilleur outil de désamorçage à long terme. Identifier quel
+      type de situation déclenche ton tilt (sacrifice raté, surprise dans l'ouverture, zeitnot) te donne un
+      plan d'entraînement concret.
+  - question: "Pourquoi joue-t-on moins bien sous pression de temps ?"
+    answer: >-
+      Le zeitnot active un mécanisme documenté par les psychologues : la paralysie par l'analyse. Le cerveau
+      cherche la réponse parfaite au lieu d'une bonne réponse rapide, consomme du temps, et la panique
+      s'installe en spirale (Kahneman, Système 2 en surchauffe). La solution n'est pas de calculer plus vite
+      : c'est de faire confiance plus tôt à son jugement positionnel accumulé (Système 1).
 ---
 
 Avant même de poser la main sur le premier pion, quelque chose s'est déjà joué. Une tension imperceptible s'est installée dans les épaules. L'adversaire d'en face te regarde d'une certaine façon ou peut-être ne te regarde-t-il pas du tout, ce qui est encore pire. Tu commences à calculer, mais pas des variantes : tu calcules son niveau, sa réputation, l'écart de classement qui vous sépare. Tu te demandes si tu es suffisamment préparé. Une partie des ressources cognitives que tu avais prévu de consacrer à l'échiquier est déjà en train de s'évaporer dans ce bruit de fond psychologique.

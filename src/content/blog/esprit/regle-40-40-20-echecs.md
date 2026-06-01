@@ -20,6 +20,38 @@ tags:
 seoTitle: "Règle 40-40-20 aux échecs : tactique, finales, ouvertures - comment structurer son entraînement"
 seoDescription: >-
   La règle 40-40-20 aux échecs : 40% tactique, 40% finales, 20% ouvertures. Pourquoi la majorité des joueurs font l'inverse et ce que la recherche recommande.
+faq:
+  - question: "À quel niveau doit-on commencer à prendre les ouvertures au sérieux ?"
+    answer: >-
+      La réponse dépend du contexte, mais la plupart des entraîneurs situent ce seuil autour de 1600-1800 Elo
+      en classement standard. En dessous, les parties se jouent et se perdent ailleurs. L'exception : si tu
+      joues régulièrement contre les mêmes adversaires qui connaissent tes habitudes, une préparation
+      minimale peut avoir un effet surprise même à bas niveau.
+  - question: "Combien de temps avant de voir des résultats avec ce type de travail ?"
+    answer: >-
+      La tactique produit des effets visibles relativement vite : plusieurs joueurs rapportent moins de
+      blunders grossiers après quatre à six semaines de travail quotidien régulier. Les finales mettent plus
+      longtemps à se matérialiser parce que les situations finales sont moins fréquentes. Trois mois de
+      travail structuré suffisent généralement pour voir une différence mesurable sur les résultats.
+  - question: "Lichess Puzzles ou Chess Tempo pour la tactique ?"
+    answer: >-
+      Les deux sont valables. Chess Tempo est souvent préféré pour le travail sérieux car il permet de
+      paramétrer des catégories de tactiques (mat forcé, gain de matériel, défense) et de filtrer par niveau.
+      Lichess Puzzles est plus accessible et son interface est plus fluide. L'important est la régularité,
+      pas la plateforme.
+  - question: "Faut-il vraiment étudier les finales avant de savoir jouer correctement en milieu de jeu ?"
+    answer: >-
+      C'est la position de Reuben Fine et d'autres entraîneurs classiques, et elle est défendable. Les
+      finales enseignent la valeur réelle des pièces, l'importance des cases clés et la précision du calcul
+      dans des positions épurées. Ces connaissances s'appliquent ensuite naturellement au milieu de jeu. En
+      pratique, il vaut mieux avancer en parallèle sur les deux, sans attendre d'avoir "fini" les finales
+      pour travailler le reste.
+  - question: "La règle s'applique-t-elle au blitz ?"
+    answer: >-
+      En blitz pur, les finales comptent beaucoup moins (les parties se terminent rarement en finale
+      technique) et la tactique prend encore plus de poids. Mais si ton objectif est de progresser sur le
+      long terme, le travail en blitz seul n'est pas suffisant. Le blitz entraîne les réflexes ;
+      l'entraînement structuré construit la compréhension.
 ---
 
 Tu viens de perdre une partie. Tu ouvres ta bibliothèque, tu relances la variante qui t'a posé problème, tu passes quarante minutes à mémoriser des coups que tu ne rejoueras peut-être jamais. Ça te semble utile. Ça donne l'impression de travailler.

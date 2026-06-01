@@ -1,4 +1,4 @@
-﻿---
+---
 title: Découvrez le pouvoir des échecs sur votre mémoire
 excerpt: >-
   Mémoire de travail, chunks, ouvertures, parties oubliées ou gravées : ce que la psychologie cognitive et les
@@ -35,6 +35,40 @@ heroImage:
     Découvrez le pouvoir des échecs sur votre mémoire » à gauche.
   credit: Blog d'un Gaucher
   license: Création originale
+faq:
+  - question: "Les échecs améliorent-ils la mémoire de tous ?"
+    answer: >-
+      Non pas « tous » au même degré ni sur tous les types de mémoire. L'effet le plus
+      <strong>solide</strong> est <strong>spécifique au domaine</strong> : reconnaissance de positions,
+      schémas tactiques, routines d'ouverture comprises. Un transfert vers d'autres tâches peut exister mais
+      reste <strong>variable</strong> selon les personnes et la façon de s'entraîner.
+  - question: "Quel est l'impact des échecs sur la mémoire des adultes ?"
+    answer: >-
+      Les adultes motivés construisent des chunks efficacement ; <a
+      href="https://www.researchgate.net/profile/Neil-Charness">Neil Charness</a> a montré que la progression
+      peut être un peu plus lente qu'enfance mais <strong>réelle</strong>. L'âge n'« interdit » pas la
+      bibliothèque : il modifie surtout le <strong>rythme</strong> et les priorités d'entraînement.
+  - question: "Existe-t-il des études scientifiques prouvant les bienfaits des échecs sur la mémoire ?"
+    answer: >-
+      Oui pour des <strong>tâches proches</strong> des échecs (perception, rappel de positions légales). Pour
+      des bénéfices <strong>généraux</strong> (« meilleure mémoire partout »), le mot <strong>preuve</strong>
+      est trop fort : on parle plutôt d'indices, de méta-analyses parfois mitigées sur le transfert lointain.
+      Voir aussi les sources en fin d'article et <a
+      href="/blog/bienfaits-des-echecs-sur-le-cerveau/">bienfaits des échecs sur le cerveau</a>.
+  - question: "Quelle est la durée d'entraînement aux échecs recommandée pour améliorer sa mémoire « échiquéenne » ?"
+    answer: >-
+      Il n'y a pas de dose universelle : les études d'intervention en cognition suggèrent souvent des
+      <strong>mois</strong> de pratique régulière avec engagement actif plutôt que du simple volume passif.
+      Une grille réaliste : <strong>3 à 5 séances</strong> par semaine, dont au moins une
+      <strong>lente</strong> ou une session d'analyse, sur plusieurs mois, pour sentir une différence nette
+      sur la reconnaissance de motifs.
+  - question: "Les échecs peuvent-ils aider à prévenir la perte de mémoire liée à l'âge ?"
+    answer: >-
+      Les données populationnelles vont plutôt vers des <strong>associations</strong> entre activités
+      intellectuelles variées et risque de démence dans certaines cohortes ; ce n'est pas une garantie
+      individuelle. Les échecs peuvent faire partie d'un <strong>style de vie</strong> stimulant (social +
+      planification). Lis la synthèse prudente dans <a href="/blog/echecs-et-seniors/">les échecs et les
+      seniors</a>.
 ---
 
 Anatoli Karpov rejouait de mémoire, sans échiquier, des parties disputées vingt ans plus tôt. Coup par coup. Variante par variante. Des journalistes l'ont testé plusieurs fois : il ne se trompait pas.

@@ -1,22 +1,35 @@
 ﻿---
+import { getEntry } from "astro:content";
+
 import type { BlogEntry } from "../utils/blog";
-import { formatDate, getCategoryMeta, getPostHeroSrc, getPostUrlLang } from "../utils/blog";
+import { formatDate, formatDateEn, getCategoryMeta, getPostHeroSrc, getPostSlug, getPostUrlLang } from "../utils/blog";
+import { t, type Lang } from "../i18n/translations";
 
 const { post, featured = false, lang = "fr" } = Astro.props as {
   post: BlogEntry;
   featured?: boolean;
-  lang?: "fr" | "en" | "de";
+  lang?: Lang;
 };
 
 const category = getCategoryMeta(post.data.category);
-const postTitle =
-  lang === "en"
-    ? (post.data.titleEn ?? post.data.title)
-    : post.data.title;
-const postExcerpt =
-  lang === "en"
-    ? (post.data.excerptEn ?? post.data.excerpt)
-    : post.data.excerpt;
+
+// En contexte EN, on récupère le titre / excerpt depuis la traduction si elle
+// existe et n'est pas en draft. Sinon on retombe sur le contenu FR.
+let postTitle = post.data.title;
+let postExcerpt = post.data.excerpt;
+if (lang === "en") {
+  const enEntry = await getEntry("enTranslations", getPostSlug(post));
+  if (enEntry && !enEntry.data.draft) {
+    postTitle = enEntry.data.title;
+    postExcerpt = enEntry.data.excerpt;
+  }
+}
+
+// Étiquettes localisées (server-side, indexable par les moteurs).
+const categoryLabel = t(lang, `categories.${post.data.category}.label`);
+const categoryShortLabel = t(lang, `categories.${post.data.category}.shortLabel`);
+const readLabel = t(lang, "card.read");
+const formattedDate = lang === "en" ? formatDateEn(post.data.publishDate) : formatDate(post.data.publishDate);
 
 const thumbSrc = getPostHeroSrc(post);
 const postHref = await getPostUrlLang(post, lang);
@@ -41,7 +54,7 @@ const postHref = await getPostUrlLang(post, lang);
         <div class="card-thumb-fallback" aria-hidden="true">
           <span class="card-thumb-fallback__logo" role="presentation"></span>
           <span class="card-thumb-fallback__kicker" data-t={`categories.${post.data.category}.shortLabel`}>
-            {category.shortLabel}
+            {categoryShortLabel}
           </span>
         </div>
       )}
@@ -49,7 +62,7 @@ const postHref = await getPostUrlLang(post, lang);
 
     <div class="card-body">
     <div class="card-top">
-      <span class="card-badge" data-t={`categories.${post.data.category}.label`}>{category.label}</span>
+      <span class="card-badge" data-t={`categories.${post.data.category}.label`}>{categoryLabel}</span>
       <span class="card-time">{post.data.readingTime}</span>
     </div>
 
@@ -58,10 +71,10 @@ const postHref = await getPostUrlLang(post, lang);
 
     <div class="card-bottom">
       <time datetime={post.data.publishDate.toISOString()} class="card-date">
-        {formatDate(post.data.publishDate)}
+        {formattedDate}
       </time>
       <span class="card-cta">
-        <span data-t="card.read">Lire</span>
+        <span data-t="card.read">{readLabel}</span>
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
       </span>
     </div>

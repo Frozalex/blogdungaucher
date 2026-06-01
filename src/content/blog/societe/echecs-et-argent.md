@@ -22,6 +22,34 @@ seoTitle: "Les échecs et l'argent : prize pools, modèle économique et revenus
 seoDescription: >-
   Pourquoi les meilleurs joueurs d'échecs du monde ne sont pas riches ? Prize pools, FIDE, sponsoring, streaming :
   anatomie d'un modèle économique à la traîne.
+faq:
+  - question: "Comment gagne sa vie un Grand Maître \"ordinaire\" ?"
+    answer: >-
+      La combinaison la plus courante : cours particuliers (50-200€/h), entraîneur dans un club ou une
+      fédération nationale, quelques tournois annuels, et de plus en plus, création de contenu ou vente de
+      cours sur Chessable. Peu passent par le streaming : le marché est saturé et dominé par quelques grandes
+      personnalités.
+  - question: "Les femmes joueurs sont-elles rémunérées différemment ?"
+    answer: >-
+      Oui, et l'écart est documenté. Les tournois féminins ont des prize pools significativement inférieurs
+      aux tournois "open" (mixtes). La logique économique invoquée est celle de l'audience : les tournois
+      féminins attirent moins de spectateurs. C'est un argument circulaire - l'audience ne se développe pas
+      parce que les investissements ne se font pas, et les investissements ne se font pas parce que
+      l'audience est faible.
+  - question: "Chess.com est-il vraiment rentable ?"
+    answer: >-
+      Chess.com est une société privée et ne publie pas ses comptes. Mais son rachat de Play Magnus pour 83
+      millions de dollars et ses acquisitions de Chessable et d'autres plateformes suggèrent une valorisation
+      de plusieurs centaines de millions de dollars. L'abonnement Premium (environ 15€/mois) sur 100 millions
+      de membres, même avec un taux de conversion de 5 %, représente des revenus considérables.
+  - question: "Les échecs pourraient-ils rejoindre les Jeux Olympiques ?"
+    answer: >-
+      La question est régulièrement posée. Le Comité International Olympique a reconnu la FIDE comme
+      fédération internationale en 1999. Des échecs aux JO ont existé en démonstration. La principale
+      objection reste le format : une compétition olympique aux échecs classique est difficile à intégrer
+      dans le calendrier, et les formats courts (rapide ou blitz) sont perçus comme moins légitimes.
+      L'intégration aux JO augmenterait la visibilité et probablement les prize pools, mais le chemin reste
+      long.
 ---
 
 En 2023, le Championnat du Monde d'échecs opposait Ding Liren à Ian Nepomniachtchi. Le prize pool total : 2 millions de dollars. Le gagnant a empoché 1,1 million.

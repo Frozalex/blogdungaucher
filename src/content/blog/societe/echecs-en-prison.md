@@ -29,6 +29,32 @@ heroImage:
     de réhabilitation » en surimpression.
   credit: Blog d'un Gaucher
   license: Création originale
+faq:
+  - question: "Les programmes d'échecs en prison existent-ils en France ?"
+    answer: >-
+      Des initiatives ponctuelles existent, portées par des clubs locaux et des bénévoles, parfois avec le
+      soutien de la Fédération Française des Échecs. Il n'existe pas à ce jour de programme national
+      structuré. Si tu es éducateur pénitentiaire ou bénévole et que tu veux lancer quelque chose, la FFE
+      peut être un point de contact utile.
+  - question: "Les détenus peuvent-ils participer à des tournois ?"
+    answer: >-
+      Certains établissements organisent des tournois internes. Dans quelques cas documentés au Royaume-Uni
+      et aux États-Unis, des détenus ont participé à des compétitions contre des joueurs extérieurs, parfois
+      à distance via des systèmes sécurisés. Change Through Chess a organisé plusieurs de ces rencontres, et
+      les participants les décrivent souvent comme une expérience marquante : être traité comme un joueur,
+      pas comme un numéro.
+  - question: "Est-ce que ça marche aussi avec des jeunes en difficulté hors milieu carcéral ?"
+    answer: >-
+      Oui. Des programmes similaires existent dans des quartiers défavorisés, des établissements scolaires en
+      éducation prioritaire et des centres de placement pour mineurs. Les mécanismes cognitifs ciblés sont
+      identiques. Les résultats observés sont comparables, avec souvent une réception plus facile,
+      l'environnement carcéral ajoutant une couche de méfiance envers toute initiative éducative.
+  - question: "Peut-on utiliser les échecs pour travailler sur l'empathie ?"
+    answer: >-
+      C'est une des dimensions les plus intéressantes. Anticiper le coup de son adversaire implique de se
+      mettre à sa place, de modéliser sa vision de l'échiquier, ses craintes, ses intentions. C'est une forme
+      concrète, mesurable, et répétée d'exercice de la théorie de l'esprit, que les sciences comportementales
+      considèrent comme l'un des fondements de l'empathie.
 ---
 
 Il est 14h dans un établissement pénitentiaire de la périphérie de Londres. La salle est petite, le mobilier cabossé. Deux détenus sont assis face à un échiquier posé sur une table en formica. Il n'y a pas de surveillance rapprochée : le gardien est dans le couloir.

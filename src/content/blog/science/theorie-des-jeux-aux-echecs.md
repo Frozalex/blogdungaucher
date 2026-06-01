@@ -11,6 +11,43 @@ pillar: "Mathématiques"
 tags: ["théorie des jeux", "échecs", "mathématiques", "Nash", "minimax", "Zermelo", "stratégie dominante", "stratégie mixte", "science"]
 seoTitle: "Théorie des jeux aux échecs : Nash, minimax, Zermelo expliqués"
 seoDescription: "Minimax, équilibre de Nash, stratégies mixtes, théorème de Zermelo : la théorie des jeux appliquée aux échecs, des ouvertures à la préparation contre un adversaire précis."
+faq:
+  - question: "Les échecs sont-ils un jeu à somme nulle au sens strict ?"
+    answer: >-
+      Oui, mathématiquement. La somme des gains (1 pour la victoire, 0 pour la défaite) est constante quel
+      que soit le résultat : la victoire de l'un est exactement la défaite de l'autre, la nulle se partage
+      0,5-0,5. C'est cette propriété qui permet d'appliquer minimax sans complication. Les "matchs" (suite de
+      parties avec bonus tactique) ne sont plus strictement à somme nulle, et c'est précisément là que la
+      théorie des jeux <em>répétés</em> devient intéressante.
+  - question: "Quelle est la différence entre minimax et équilibre de Nash aux échecs ?"
+    answer: >-
+      Minimax est une <strong>technique de calcul</strong> : il dit comment trouver le meilleur coup en
+      supposant l'adversaire optimal. L'équilibre de Nash est un <strong>état du système</strong> : une
+      configuration où aucun joueur n'a intérêt à dévier seul. Dans un jeu à somme nulle à deux joueurs comme
+      les échecs, la solution minimax <em>coïncide</em> avec l'équilibre de Nash (théorème de von Neumann,
+      1928). Dans des jeux plus complexes (somme non nulle, plus de deux joueurs), les deux concepts
+      divergent.
+  - question: "Existe-t-il une stratégie dominante au premier coup ?"
+    answer: >-
+      Empiriquement, <strong>non</strong>. Les statistiques sur des dizaines de millions de parties d'élite
+      donnent 1.e4, 1.d4, 1.c4 et 1.Cf3 comme jouables avec un avantage similaire pour les Blancs (~54-56 %
+      de score). Aucun ne <em>domine</em> les autres au sens strict. Cela suggère soit que la "vérité" des
+      échecs autorise plusieurs équilibres au coup 1, soit que l'horizon de calcul humain et machine ne
+      permet pas encore de les départager.
+  - question: "Pourquoi parle-t-on de \"stratégies mixtes\" si on joue toujours le meilleur coup ?"
+    answer: >-
+      Parce que "le meilleur coup" dépend de ton modèle de l'adversaire. Si tu joues 1.e4 systématiquement,
+      tu donnes à l'adversaire l'information parfaite sur ta préparation : il peut investir tout son temps
+      d'étude sur tes lignes. Diversifier (40 % 1.e4, 40 % 1.d4, 20 % 1.Cf3) dilue son effort de préparation.
+      Au-delà d'un certain niveau, la stratégie mixte devient un investissement défensif sur l'information.
+  - question: "La théorie des jeux peut-elle prédire qui va gagner une partie ?"
+    answer: >-
+      Non, et c'est important. Elle dit que <strong>sous jeu parfait</strong>, le résultat est déterminé.
+      Mais le jeu parfait n'existe ni chez l'humain (limites cognitives) ni chez la machine (limites
+      computationnelles au-delà des finales à 7 pièces). La théorie prédit les <em>équilibres
+      asymptotiques</em> (Espagnole stable depuis 200 ans), pas les <em>issues individuelles</em>. Pour ça,
+      il faut modéliser l'écart de force, la préparation, la fatigue, l'horaire de la partie : et là, la
+      théorie des jeux cède la place à la statistique et à la psychologie.
 ---
 
 Round 9. Coup 14. Tu as joué les treize précédents sans réfléchir : tu les connais par cœur. Ton adversaire aussi. Vous regardez tous les deux la pendule, pas l'échiquier. À cet instant, vous êtes deux acteurs parfaitement rationnels enfermés dans le même équilibre.

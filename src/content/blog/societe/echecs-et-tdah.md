@@ -27,6 +27,31 @@ heroImage:
   sourceUrl: https://commons.wikimedia.org/wiki/File:Empty_wooden_chessboard.jpg
   credit: Paul Lloyd
   license: CC0 1.0
+faq:
+  - question: "À quel âge un enfant TDAH peut-il commencer les échecs ?"
+    answer: >-
+      La plupart des clubs accueillent les enfants dès 6-7 ans. Pour les profils TDAH, un début par des jeux
+      de pièces simplifiés à 5-6 ans est souvent plus adapté que le jeu complet d'emblée. L'essentiel est que
+      chaque séance se termine sur une réussite, pas sur une frustration.
+  - question: "Les échecs en ligne sont-ils adaptés au TDAH ?"
+    answer: >-
+      Le jeu physique, avec un adversaire présent et des pièces tangibles, mobilise davantage de sens et
+      ancre souvent mieux l'attention que l'écran. L'écran ajoute la distraction de l'interface, des
+      notifications, des statistiques en temps réel, autant d'éléments qui peuvent contrecarrer les bénéfices
+      attendus. Si l'enfant commence, le plateau physique est préférable.
+  - question: "Les adultes TDAH peuvent-ils aussi en bénéficier ?"
+    answer: >-
+      Oui. Le TDAH ne disparaît pas à l'âge adulte : les études montrent que 60 à 80 % des enfants
+      diagnostiqués continuent à présenter des symptômes significatifs à l'âge adulte. Les mécanismes
+      neurobiologiques décrits ici s'appliquent à tout âge. Les adultes TDAH qui jouent aux échecs rapportent
+      souvent les mêmes effets d'ancrage attentionnel, avec en plus la dimension de défi intellectuel et de
+      socialisation dans un cadre structuré.
+  - question: "Les médecins recommandent-ils les échecs pour le TDAH ?"
+    answer: >-
+      Pas systématiquement, faute de preuves assez robustes pour intégrer les échecs dans les recommandations
+      cliniques officielles. Mais de nombreux psychiatres et psychologues spécialisés les mentionnent comme
+      complément pertinent, notamment pour les enfants chez qui la médication seule ne suffit pas ou est
+      refusée par les parents.
 ---
 
 Luca a 10 ans. Son enseignante dit qu'il est incapable de rester concentré plus de deux minutes. Il n'écoute pas, il dérange, il finit rarement un exercice. Ses parents ont essayé les cours de soutien, les activités sportives, la lecture à voix haute. Rien ne tient.

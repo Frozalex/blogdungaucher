@@ -27,6 +27,33 @@ heroImage:
     et autisme : pourquoi l'échiquier devient un refuge » en surimpression.
   credit: Blog d'un Gaucher
   license: Création originale
+faq:
+  - question: "Les échecs sont-ils bénéfiques pour tous les enfants autistes ?"
+    answer: >-
+      Pas universellement. Les bénéfices documentés, réduction de l'anxiété sociale, amélioration des
+      fonctions exécutives, estime de soi, concernent principalement les enfants dont le profil cognitif
+      inclut un intérêt pour les systèmes de règles, ce que Baron-Cohen appelle la <em>systemizing</em>.
+      Certains enfants TSA n'accrochent pas avec les échecs, et c'est tout à fait normal.
+  - question: "À quel âge commencer les échecs avec un enfant autiste ?"
+    answer: >-
+      La majorité des programmes éducatifs introduisent les échecs entre 5 et 7 ans. L'important n'est pas
+      l'âge exact mais l'adaptation : pièces larges, parties courtes, environnement calme, sans pression de
+      résultat. L'organisation Chess in Schools and Communities (CSC) dispose de ressources spécifiquement
+      adaptées aux profils TSA.
+  - question: "Les échecs peuvent-ils remplacer une thérapie pour l'autisme ?"
+    answer: >-
+      Non. Les données disponibles montrent que les échecs sont un complément sérieux à une prise en charge
+      multidisciplinaire (orthophonie, ergothérapie, accompagnement psychologique), jamais un substitut. Les
+      présenter comme un traitement serait malhonnête et potentiellement nuisible pour les familles qui ont
+      besoin d'un accompagnement spécialisé.
+  - question: "Pourquoi les personnes autistes ont-elles souvent une affinité naturelle avec les échecs ?"
+    answer: >-
+      Selon la théorie de la <em>systemizing</em> de Simon Baron-Cohen (Cambridge), les cerveaux autistes ont
+      une tendance forte à analyser et construire des systèmes de règles. L'échiquier, jeu à information
+      parfaite, sans ambiguïté sociale, avec des règles stables et vérifiables, correspond presque
+      parfaitement à ce profil cognitif. <strong>Après lecture :</strong> pour une première mise en place,
+      vise <strong>trois</strong> séances courtes par semaine, plateau physique, <strong>sans</strong>
+      objectif de classement pendant un mois ; note ce qui fatigue (bruit, durée, groupe).
 ---
 
 Imagine une cour de récréation un jeudi matin. Le bruit est assourdissant : des chaises qui raclent, des éclats de voix imprévisibles, des lumières fluorescentes qui grésillent légèrement au-dessus des têtes. Pour la plupart d'entre nous, ce n'est qu'un léger fond sonore. Mais pour Théo, 9 ans, diagnostiqué [trouble du spectre de l'autisme](https://fr.wikipedia.org/wiki/Trouble_du_spectre_de_l%27autisme) (TSA) de niveau 2, ce flot d'informations sensorielles non filtrées se transforme chaque matin en une tempête intérieure paralysante. Les codes sociaux volent dans tous les sens, implicites, indéchiffrables. Il faut savoir lire entre les lignes d'une conversation, interpréter un rictus, comprendre le second degré d'une plaisanterie. C'est épuisant à un niveau que peu de personnes neurotypiques peuvent imaginer.

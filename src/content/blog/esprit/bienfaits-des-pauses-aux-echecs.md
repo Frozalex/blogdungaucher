@@ -11,6 +11,42 @@ pillar: "Psychologie"
 tags: ["pauses", "récupération", "psychologie", "performance", "fatigue cognitive", "consolidation", "sommeil", "rage-queue", "entraînement"]
 seoTitle: "Pauses aux échecs : pourquoi t'arrêter te rend meilleur"
 seoDescription: "Pourquoi les pauses rendent meilleur aux échecs : consolidation mémorielle, fatigue cognitive, sommeil et rage-queue. Protocoles concrets pour tournoi et entraînement."
+faq:
+  - question: "Combien de temps de pause faut-il vraiment entre deux parties longues ?"
+    answer: >-
+      La littérature sur la fatigue cognitive en sport (FIDE inclus) suggère un minimum de <strong>30 à 60
+      minutes de récupération active</strong> (marche, repas léger, hydratation, pas d'écran d'échecs) entre
+      deux parties classiques (≥ 90 minutes par joueur). En ligne, c'est plus difficile à respecter mais le
+      principe reste : si tu enchaînes 5 parties blitz en 30 minutes après une défaite, tu es presque garanti
+      de tilter et de renforcer des réflexes faibles.
+  - question: "Le sommeil compte-t-il plus que l'étude pour progresser ?"
+    answer: >-
+      Pas plus, mais <strong>autant</strong>. Compromettre 1 heure de sommeil pour 1 heure d'étude est
+      presque toujours un mauvais deal : tu perds en consolidation des apprentissages précédents plus que tu
+      ne gagnes en apprentissages nouveaux. Pour une session de fin de soirée, mieux vaut <strong>revoir 3
+      puzzles connus</strong> que <strong>découvrir 10 nouveaux</strong> : la consolidation à venir sera plus
+      efficace sur du matériel partiellement maîtrisé.
+  - question: "Une partie rapide compte-t-elle comme une pause ?"
+    answer: >-
+      Non. C'est l'erreur la plus courante. Une partie rapide sollicite <strong>exactement les mêmes circuits
+      cognitifs</strong> que ta session d'étude précédente : prise de décision sous pression, calcul,
+      évaluation. Du point de vue de la fatigue cognitive, c'est une continuation de la session, pas une
+      pause. Une vraie pause cognitive change de canal : marche, conversation non liée aux échecs, lecture
+      distractive, exercice physique léger.
+  - question: "Faut-il prendre des pauses longues même quand on progresse bien ?"
+    answer: >-
+      Surtout quand tu progresses bien. Le système dopaminergique se désensibilise plus vite quand la
+      récompense est régulière (progression visible): c'est le paradoxe du "burnout des bons élèves". Les
+      joueurs qui progressent vite jusqu'à 1800-2000 Elo et abandonnent souvent ensuite sont ceux qui n'ont
+      jamais pris de pause structurée. Une pause de 5-7 jours tous les 2-3 mois maintient la motivation
+      intrinsèque sur plusieurs années.
+  - question: "Le café aide-t-il vraiment à compenser la fatigue ?"
+    answer: >-
+      À court terme oui, mais sur une partie classique de 4-5 heures, la caféine <strong>déplace</strong> la
+      fatigue plutôt qu'elle ne la résout : tu te sens alerte au coup 20, tu craches plus fort entre les
+      coups 35 et 50. Les coachs FIDE recommandent typiquement <strong>un café juste avant la partie</strong>
+      + <strong>eau pendant</strong>, jamais d'enchaînement de stimulants. La caféine consommée après 14h
+      dégrade aussi le sommeil de la nuit suivante, donc la consolidation de cette partie-là.
 ---
 
 Le joueur qui progresse le plus vite n'est pas toujours celui qui joue le plus. C'est souvent celui qui sait quand s'arrêter. La pause n'est pas du temps gâché : c'est une partie intégrante du processus d'apprentissage, de consolidation et de récupération. La neuroscience et la psychologie du sport l'ont démontré de façon de plus en plus précise. Et les joueurs d'échecs, qui ont tendance à valoriser l'accumulation (plus d'heures, plus de puzzles, plus de parties), sous-estiment systématiquement cet outil.

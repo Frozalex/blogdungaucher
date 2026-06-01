@@ -11,6 +11,45 @@ pillar: "Mathématiques"
 tags: ["Nash", "équilibre", "ouvertures", "théorie des jeux", "échecs", "défense berlinoise", "Kramnik 2000", "trembling-hand", "mathématiques"]
 seoTitle: "Équilibre de Nash et ouvertures : pourquoi l'Espagnole dure 200 ans"
 seoDescription: "Sicilienne, défense berlinoise, refinements de Selten : comment l'équilibre de Nash explique la stabilité des ouvertures d'échecs et leurs ruptures les plus célèbres."
+faq:
+  - question: "Une ouverture \"réfutée\" cesse-t-elle d'exister ?"
+    answer: >-
+      Pas vraiment. Une réfutation locale prouve qu'<strong>un</strong> chemin dans la variante mène à un
+      avantage clair pour un camp. Le reste du graphe (ordres de coups, transpositions, lignes annexes) peut
+      conserver des équilibres locaux jouables. C'est pourquoi les "réfutations" historiques sont souvent
+      partielles : la variante survit avec un ordre de coups différent ou un coup intermédiaire. La
+      Sicilienne Sveshnikov, "réfutée" à la fin des années 1990, est revenue en force dans les années 2010
+      sur de nouveaux équilibres.
+  - question: "Pourquoi les moteurs ne \"résolvent\" pas toutes les ouvertures ?"
+    answer: >-
+      Parce que résoudre = atteindre la <strong>valeur Zermelo</strong> (gain, perte, nul sous jeu parfait
+      jusqu'au mat). Les moteurs produisent une <strong>évaluation heuristique</strong> à profondeur finie
+      (40-60 demi-coups typiquement) ; cela leur permet de <strong>classer</strong> les ouvertures, de
+      <strong>trouver des équilibres locaux</strong>, et de <strong>briser</strong> des équilibres faibles,
+      mais pas de prouver une vérité absolue. La distinction est fondamentale : Stockfish dit "cette variante
+      semble +0,2" ; il ne dit jamais "cette variante est nulle au sens Zermelo".
+  - question: "Un équilibre de Nash garantit-il le meilleur résultat collectif ?"
+    answer: >-
+      Non, et c'est central. L'exemple du dilemme du prisonnier le montre : l'équilibre peut être
+      Pareto-dominé (les deux pourraient faire mieux en coordonnant, mais aucun n'a intérêt à dévier seul).
+      Aux échecs, le "Nash collectif" serait l'accord nul mutuel ; le "Nash compétitif" pousse vers des
+      positions déséquilibrées où chacun cherche à exploiter une erreur. Le format de tournoi (must-win,
+      classement, prize money) déforme la fonction d'utilité et donc l'équilibre choisi.
+  - question: "Qu'est-ce qu'un \"équilibre mixte\" en pratique pour un joueur amateur ?"
+    answer: >-
+      Pour un amateur, c'est jouer <strong>deux ou trois ouvertures</strong> différentes avec des
+      probabilités stables (par exemple 50 % Italienne, 30 % Espagnole, 20 % Scotch). L'avantage est défensif
+      : empêche l'adversaire fréquent de te préparer spécifiquement. L'inconvénient est offensif : tu connais
+      moins profondément chaque ligne. La bonne taille du répertoire dépend de ton temps d'étude hebdomadaire
+      ; en dessous de 5 h/semaine, un répertoire pur est souvent plus efficace qu'un répertoire mixte mal
+      entretenu.
+  - question: "Pourquoi parler de \"graphes\" et pas d'\"arbres\" des ouvertures ?"
+    answer: >-
+      Parce que les ouvertures <strong>transposent</strong> : des séquences de coups différentes mènent à la
+      même position. Le pion en c4 au coup 1 ou au coup 3 peut donner la même position de Réti dans certaines
+      lignes. Un arbre suppose un chemin unique vers chaque feuille ; un graphe acyclique dirigé autorise
+      plusieurs chemins. Les bases d'ouvertures professionnelles (ChessBase, Lichess Masters) sont en réalité
+      des graphes compressés, avec des millions de transpositions précalculées.
 ---
 
 Pourquoi la Défense Sicilienne est-elle jouée à tous les niveaux depuis cent ans ? Pourquoi la Partie Espagnole n'a-t-elle pas été "réfutée" malgré des siècles d'analyse ? Pourquoi certaines variantes théoriques s'effondrent en quelques années tandis que d'autres semblent indestructibles ? La réponse à ces questions se trouve dans un concept mathématique élaboré par [John Nash](https://fr.wikipedia.org/wiki/John_Forbes_Nash) en 1950 : l'équilibre de Nash. (Pour le cadre général de la théorie des jeux appliquée aux échecs, voir [théorie des jeux aux échecs](/blog/theorie-des-jeux-aux-echecs/) ; pour le théorème qui sous-tend l'existence même de ces équilibres, voir [le paradoxe de Zermelo](/blog/paradoxe-de-zermelo/).)

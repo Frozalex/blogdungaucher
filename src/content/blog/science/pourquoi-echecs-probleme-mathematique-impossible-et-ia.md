@@ -34,6 +34,41 @@ heroImage:
     des échecs et l’IA
   credit: Blog d'un Gaucher
   license: Création originale
+faq:
+  - question: "Les échecs seront-ils \"résolus\" un jour ?"
+    answer: >-
+      Au sens fort (issue prouvée depuis la position initiale, comme les dames depuis 2007),
+      <strong>probablement jamais</strong>. La borne $10^{120}$ + le résultat EXPTIME-complet rendent la
+      résolution physiquement inatteignable par force brute. Une preuve <strong>indirecte</strong> (par
+      symétrie, invariant, argumentation théorique) reste théoriquement possible mais sans piste sérieuse. Le
+      calcul quantique réduit la borne de moitié (Grover) : $10^{60}$ reste astronomique.
+  - question: "Quelle différence entre \"résoudre\" et \"battre l'humain\" ?"
+    answer: >-
+      "Résoudre" = prouver l'issue mathématique exacte sous jeu parfait. "Battre l'humain" = être en moyenne
+      plus proche de la stratégie optimale qu'un cerveau humain. Stockfish bat n'importe quel humain à ~3500
+      Elo sans jamais résoudre. Inversement, un programme qui résoudrait les échecs ne serait pas forcément
+      plus fort que Stockfish <em>par coup</em> : la résolution est une vérité globale, pas une supériorité
+      locale.
+  - question: "Pourquoi AlphaZero a-t-il \"battu\" Stockfish si tous deux sont des approximations ?"
+    answer: >-
+      Parce qu'à un instant donné, l'approximation par réseau de neurones + MCTS d'AlphaZero était plus
+      proche de la vérité Zermelo que l'approximation par alpha-bêta + évaluation manuelle de Stockfish
+      (version 8 de l'époque). Depuis 2020, Stockfish a intégré NNUE (réseau de neurones efficace dans
+      l'évaluation) et a repris l'avantage dans les tournois TCEC. La course continue.
+  - question: "Le nombre de Shannon est-il une mesure exacte ?"
+    answer: >-
+      Non. C'est une <strong>estimation d'ordre de grandeur</strong> du nombre de parties possibles ($\sim
+      10^{120}$), pas du nombre de positions légales distinctes ($\sim 10^{43}$ selon estimations plus
+      récentes, encore débattu). La confusion entre les deux est très fréquente. La distinction matters :
+      pour résoudre les échecs, c'est le nombre de positions qui compte (pour stocker), mais c'est l'arbre
+      des parties qui borne le temps d'exploration.
+  - question: "Si un humain ne peut pas tout calculer, à quoi sert de progresser ?"
+    answer: >-
+      À deux choses : (1) améliorer ta <strong>fonction d'évaluation interne</strong> (sens positionnel), (2)
+      améliorer ton <strong>élagage intuitif</strong> (rejeter rapidement les mauvais candidats). C'est
+      exactement la stratégie des moteurs. La différence entre 1200 et 2400 Elo n'est pas une explosion de
+      calcul brut : c'est une approximation beaucoup plus fine de la vérité avec à peu près le même nombre de
+      positions effectivement examinées.
 ---
 
 Tu as déjà vécu ce paradoxe : les applis et les médias te vendent le [jeu d'échecs](https://fr.wikipedia.org/wiki/%C3%89checs) comme un objet d'une complexité cosmique, un jeu où chaque joueur trace une stratégie sur le long terme ; puis tu ouvres une appli, tu joues un coup raisonnable, et le moteur te corrige puis t'explique une ligne introuvable pour toi seul.

@@ -20,6 +20,38 @@ tags:
 seoTitle: "Monter en Elo sans se sentir légitime : le syndrome de l'imposteur en progression"
 seoDescription: >-
   Syndrome de l'imposteur aux échecs : ton Elo monte mais tu doutes de ta légitimité. Décalage progression-confiance, solutions de la psychologie du sport.
+faq:
+  - question: "Est-ce que le syndrome de l'imposteur peut faire baisser le niveau de jeu ?"
+    answer: >-
+      Oui, par plusieurs mécanismes. L'hypervigilance sur ses propres erreurs crée une crispation qui
+      détériore le calcul. La peur de "confirmer" un mauvais niveau peut conduire à jouer trop prudemment ou
+      au contraire à prendre des risques excessifs pour "prouver" quelque chose. La charge mentale liée à
+      l'auto-évaluation négative consomme des ressources cognitives disponibles pour la partie.
+  - question: "Est-ce que ça disparaît avec la progression ?"
+    answer: >-
+      Pas automatiquement. Certains joueurs rapportent que le syndrome s'atténue avec l'expérience et la
+      régularité. D'autres constatent qu'il se déplace : à 1200 Elo on se sent imposteur face aux 1400, à
+      1800 on se sent imposteur face aux 2000. La progression ne suffit pas - il faut aussi changer le cadre
+      d'évaluation.
+  - question: "Comment distinguer le syndrome de l'imposteur d'une évaluation réaliste de son niveau ?"
+    answer: >-
+      La question est légitime. Un joueur qui surestime son niveau n'est pas en syndrome de l'imposteur. La
+      distinction clé est dans le pattern d'attribution : si tu attribues systématiquement tes succès à des
+      facteurs externes et tes échecs à des facteurs internes, c'est un signal caractéristique. Si ton
+      évaluation varie selon les parties sans pattern systématique, c'est plus probablement une calibration
+      normale.
+  - question: "Les joueurs professionnels ressentent-ils ça aussi ?"
+    answer: >-
+      Oui, et ils en parlent de plus en plus. Fabiano Caruana a évoqué dans des interviews la pression de
+      maintenir un classement élevé et le sentiment de "ne pas mériter" certaines positions dans des tournois
+      élites. La normalisation de ce discours chez les professionnels est récente mais significative.
+  - question: "Faut-il voir un professionnel ?"
+    answer: >-
+      Si le syndrome de l'imposteur déborde sur d'autres domaines de ta vie - travail, relations, autres
+      activités - et crée une détresse significative, l'accompagnement par un thérapeute
+      cognitivo-comportemental peut être utile. Les TCC sont particulièrement efficaces sur les patterns
+      d'attribution négatifs. Dans un contexte purement échiquéen, les pratiques décrites ici suffisent
+      généralement.
 ---
 
 Tu viens de gagner une partie bien jouée. Ton adversaire était 100 points au-dessus de toi. La victoire est nette, méritée. Et pourtant, la première pensée qui s'impose n'est pas la satisfaction. C'est quelque chose de plus inconfortable : *il a dû faire une erreur. Ça ne compte pas vraiment. Si on rejouait, il gagnerait.*

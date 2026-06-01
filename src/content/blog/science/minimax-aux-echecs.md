@@ -11,6 +11,42 @@ pillar: "Intelligence artificielle"
 tags: ["minimax", "alpha-bêta", "negamax", "null-move", "intelligence artificielle", "échecs", "informatique", "Stockfish", "calcul"]
 seoTitle: "Minimax aux échecs : alpha-bêta, negamax et calcul des moteurs"
 seoDescription: "Minimax, élagage alpha-bêta, negamax, null-move pruning, MCTS : comment les moteurs calculent le coup optimal aux échecs et ce que ton cerveau fait sans le savoir."
+faq:
+  - question: "Minimax produit-il toujours le meilleur coup ?"
+    answer: >-
+      Oui, <strong>si la recherche descend jusqu'aux positions terminales</strong> (mat ou pat). À profondeur
+      finie avec fonction d'évaluation heuristique, minimax produit le coup optimal <em>selon l'évaluation et
+      la profondeur</em> utilisées. C'est pourquoi un moteur évalué à 3500 Elo bat un humain : sa fonction
+      d'évaluation + sa profondeur sont plus proches de la vérité que celles d'un humain, pas parce qu'il
+      calcule "parfaitement".
+  - question: "Pourquoi parle-t-on de \"negamax\" plutôt que de \"minimax\" dans les codes ?"
+    answer: >-
+      Parce que dans un jeu à somme nulle, $\min(a,b) = -\max(-a,-b)$. Negamax exploite cette symétrie pour
+      utiliser <strong>une seule fonction récursive</strong> au lieu de deux. C'est purement une
+      simplification du code, sans changement algorithmique. La quasi-totalité des moteurs modernes
+      (Stockfish, Komodo, Leela Chess Zero) utilisent negamax + alpha-bêta.
+  - question: "L'élagage alpha-bêta change-t-il le résultat de minimax ?"
+    answer: >-
+      Non, <strong>jamais</strong>. C'est sa propriété fondamentale : alpha-bêta produit exactement le même
+      coup que minimax pur, mais en explorant beaucoup moins de noeuds. La force de l'élagage dépend de
+      l'<strong>ordre des coups</strong> : si tu testes le meilleur coup en premier, tu élagues massivement ;
+      si tu testes le pire en premier, tu n'élagues presque rien. C'est pourquoi les moteurs investissent
+      autant dans l'ordonnancement des coups (killer moves, historique des bons coups).
+  - question: "Pourquoi AlphaZero abandonne-t-il minimax ?"
+    answer: >-
+      Pas vraiment : il garde une recherche arborescente (MCTS), mais remplace l'exploration exhaustive
+      d'alpha-bêta par une <strong>exploration probabiliste guidée</strong> par un réseau de neurones.
+      L'avantage : sur des positions où la fonction d'évaluation classique perd pied (sacrifices à long
+      terme, jeu positionnel subtil), le réseau de neurones donne une estimation plus juste. L'inconvénient :
+      il faut entraîner ce réseau sur des millions de parties, ce qui demande des ressources matérielles
+      considérables.
+  - question: "Mon cerveau exécute-t-il vraiment minimax quand je calcule ?"
+    answer: >-
+      Approximativement, oui. Tu fais une recherche arborescente avec un facteur de branchement très faible
+      (3-5 coups candidats au lieu de 35), une profondeur très limitée (3-8 demi-coups), et une fonction
+      d'évaluation intuitive (sens positionnel). Tu utilises aussi des heuristiques d'élagage très puissantes
+      : tu <strong>rejettes</strong> la plupart des coups en un coup d'œil sans les calculer. La différence
+      avec un moteur n'est pas qualitative, elle est quantitative.
 ---
 
 Il y a quelque chose d'étrange dans le fait que la stratégie aux échecs, ce jeu millénaire d'intuition et d'art, puisse être réduite à un algorithme de quelques lignes. L'algorithme minimax fait exactement cela : il formalise le coeur du raisonnement stratégique dans un jeu à somme nulle en une récurrence mathématique élégante. Et ce n'est pas seulement l'âme des moteurs d'échecs modernes : c'est aussi la description formelle de ce que tu fais dans ta tête quand tu calcules. (Pour le cadre théorique général dont minimax est l'algorithme central, voir [théorie des jeux aux échecs](/blog/theorie-des-jeux-aux-echecs/) ; pour le théorème qui garantit l'existence d'une valeur à toute position, [le paradoxe de Zermelo](/blog/paradoxe-de-zermelo/).)

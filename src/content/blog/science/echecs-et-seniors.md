@@ -20,6 +20,24 @@ tags:
 seoTitle: "Les échecs et les seniors : la science sur le vieillissement cognitif"
 seoDescription: >-
   Échecs et seniors : l'étude du New England Journal of Medicine sur le déclin cognitif, la démence et les jeux de réflexion. Les bienfaits réels pour les personnes âgées.
+faq:
+  - question: "Les échecs guérissent-ils Alzheimer ?"
+    answer: >-
+      Non. Les échecs ne guérissent ni ne préviennent les causes biologiques d'Alzheimer (dépôts amyloïdes,
+      enchevêtrements tau). Ils retardent l'apparition des symptômes en construisant une réserve cognitive
+      qui tolère les lésions plus longtemps avant qu'elles ne franchissent le seuil clinique. (<a
+      href="/fr/blog/echecs-alzheimer-prevention-declin-cognitif/">L'analyse complète sur les études
+      Alzheimer et réserve cognitive est ici.</a>)
+  - question: "Combien de parties par semaine pour un effet mesurable ?"
+    answer: >-
+      Les études ne fixent pas de seuil précis. Verghese (2003) mesurait la pratique en "jours par semaine".
+      La constance semble plus importante que la fréquence : deux sessions régulières valent mieux que des
+      pics irréguliers.
+  - question: "Les applications d'échecs en ligne ont-elles le même effet que le jeu en présentiel ?"
+    answer: >-
+      La composante de résolution de problèmes est équivalente. La composante sociale (considérée comme un
+      facteur protecteur indépendant dans plusieurs études) est réduite en ligne. L'idéal reste un mélange
+      des deux.
 ---
 
 Raymond a 79 ans. Il joue aux échecs depuis l'âge de 12 ans dans un club de province, deux soirs par semaine. Son médecin lui a dit qu'il a le profil cognitif d'un homme de 65 ans. Ce n'est pas un miracle génétique : c'est, selon toute probabilité, le résultat de décennies d'une activité que les neurosciences considèrent aujourd'hui comme l'une des plus protectrices contre le déclin cognitif.

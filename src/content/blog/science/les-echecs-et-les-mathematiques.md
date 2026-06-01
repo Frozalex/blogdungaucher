@@ -29,6 +29,43 @@ heroImage:
   alt: "Vignette pixel art : motif neural lumineux sur fond violet, titre échecs et mathématiques"
   credit: Blog d'un Gaucher
   license: Création originale
+faq:
+  - question: "Faire jouer un enfant aux échecs améliore-t-il sa moyenne en maths ?"
+    answer: >-
+      Pas directement et pas automatiquement. La méta-analyse de Sala et Gobet (2016) est claire : les
+      preuves d'un transfert significatif des échecs vers les compétences académiques générales sont faibles
+      à modérées. Ce que l'enfant gagne, c'est une <strong>posture face aux problèmes</strong> (analyser
+      avant de calculer, vérifier ses intuitions, ne pas paniquer face à la complexité). Cette posture peut
+      servir en maths, mais elle n'est pas équivalente à une heure de cours de maths supplémentaire.
+  - question: "Quel est le seul lien scientifiquement solide entre échecs et maths ?"
+    answer: >-
+      La <strong>métacognition</strong> : la capacité à observer et réguler sa propre pensée. C'est l'un des
+      rares effets de transfert robustes documentés dans la littérature. Un joueur entraîné à se relire
+      ("attends, qu'est-ce que je n'ai pas vu ?") porte ce réflexe vers d'autres tâches analytiques. C'est le
+      pont mesurable, pas le contenu mathématique en lui-même.
+  - question: "Pourquoi faut-il jouer lentement pour que ça compte ?"
+    answer: >-
+      Parce que le jeu rapide (Blitz, Bullet) repose presque exclusivement sur la <strong>reconnaissance de
+      motifs pré-appris</strong> et les réflexes moteurs. Les zones cérébrales liées au raisonnement
+      analytique (cortex préfrontal, planification) ne s'activent pleinement qu'au-delà de 15-30 secondes par
+      coup. Pour entraîner l'architecture mentale qui se rapproche de la résolution de problèmes
+      mathématiques, il faut des cadences classiques (15+ minutes par joueur).
+  - question: "Le problème des 8 dames a-t-il un usage hors des concours d'algo ?"
+    answer: >-
+      Oui. C'est l'exemple pédagogique le plus utilisé pour enseigner le <strong>backtracking</strong>
+      (recherche avec retour arrière), pattern algorithmique central en optimisation combinatoire. On le
+      retrouve dans la planification d'horaires, le placement d'antennes en télécommunications, certains
+      problèmes de satisfaction de contraintes en intelligence artificielle. Sa simplicité visuelle en fait
+      un cas d'école que tout étudiant en informatique rencontre au moins une fois.
+  - question: "Faut-il être bon en maths pour devenir fort aux échecs ?"
+    answer: >-
+      Non. Les corrélations entre niveau Elo et performance académique en mathématiques sont
+      <strong>faibles</strong> au-delà du seuil basique de compréhension des règles. Beaucoup de Grand
+      Maîtres ont un profil littéraire ou intuitif sans formation mathématique avancée (<a
+      href="https://fr.wikipedia.org/wiki/Magnus_Carlsen">Magnus Carlsen</a> lui-même n'a pas de cursus
+      scientifique poussé). À l'inverse, des mathématiciens reconnus jouent à un niveau amateur tout en ayant
+      un excellent transfert <em>méthodologique</em>. Les deux disciplines partagent une
+      <strong>posture</strong>, pas un même socle de connaissances.
 ---
 
 Il n’y a pas un seul chiffre sur un échiquier. Aucune équation à résoudre. Un Grand Maître n’est pas nécessairement capable de calculer une intégrale plus vite que toi. Et pourtant, l’idée que « les échecs rendent bon en maths » est répétée dans les écoles, les clubs périscolaires et les arguments d’admission depuis des décennies - comme si les 64 cases implantaient des formules algébriques dans le cerveau par simple contact.
