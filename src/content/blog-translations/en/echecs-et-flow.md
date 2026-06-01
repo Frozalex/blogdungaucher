@@ -34,8 +34,8 @@ faq:
       position?' This reset often allows re-entering a state of deep concentration.
   - question: "Are some player profiles more likely to reach flow?"
     answer: >-
-      Yes. Csikszentmihalyi's research shows that people with an 'autotelic' personality—those who naturally
-      find intrinsic reward in activities themselves, independent of results—reach flow more easily. In
+      Yes. Csikszentmihalyi's research shows that people with an 'autotelic' personality, those who naturally
+      find intrinsic reward in activities themselves, independent of results, reach flow more easily. In
       chess, those are the players who play for the pleasure of playing, not for the rating. Paradoxically,
       they're also the ones who progress the fastest long-term.
 ---

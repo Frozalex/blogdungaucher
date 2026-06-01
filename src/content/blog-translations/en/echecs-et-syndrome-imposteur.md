@@ -19,7 +19,7 @@ faq:
     answer: >-
       Not automatically. Some players report the syndrome eases with experience and regularity. Others find
       it shifts: at 1200 Elo you feel like an impostor facing 1400s, at 1800 you feel like an impostor facing
-      2000s. Progression isn't enough — you also need to change the evaluation framework.
+      2000s. Progression isn't enough, you also need to change the evaluation framework.
   - question: "How do you distinguish impostor syndrome from a realistic assessment of your level?"
     answer: >-
       A legitimate question. A player who overestimates their level isn't in impostor syndrome. The key
@@ -33,7 +33,7 @@ faq:
       tournaments. The normalization of this discourse among professionals is recent but significant.
   - question: "Should you see a professional?"
     answer: >-
-      If impostor syndrome spills into other areas of your life — work, relationships, other activities — and
+      If impostor syndrome spills into other areas of your life, work, relationships, other activities, and
       creates significant distress, support from a cognitive-behavioral therapist can be useful. CBT is
       particularly effective on negative attribution patterns. In a purely chess context, the practices
       described here are generally enough.

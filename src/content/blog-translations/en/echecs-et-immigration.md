@@ -33,7 +33,7 @@ faq:
       In some countries, yes. In the US, a significant proportion of top-rated players have immigrant origins
       or are themselves born abroad. In France, several of the top-rated players have origins outside
       metropolitan France. It's not universal and data are rarely systematically collected. The proposed
-      hypothesis: geographic mobility correlates with ambition and risk acceptance — traits that also favor
+      hypothesis: geographic mobility correlates with ambition and risk acceptance, traits that also favor
       competitive progression.
   - question: "Are chess really 'universal' culturally?"
     answer: >-
@@ -52,7 +52,7 @@ A local chess club offers its premises. German players sit across from new arriv
 
 The algebraic notation of chess is universal: squares are named the same way in Russian, Arabic, Mandarin, or Swahili. FIDE rules are identical in 160+ member countries. The clock measures time the same way everywhere.
 
-This universality creates something rare: a space of interaction where the language barrier is neutralized. Two people who don't share a single word in common can play a complete chess game—the opponent announces "e2-e4," the other responds "e7-e5," the game unfolds. No translator necessary.
+This universality creates something rare: a space of interaction where the language barrier is neutralized. Two people who don't share a single word in common can play a complete chess game, the opponent announces "e2-e4," the other responds "e7-e5," the game unfolds. No translator necessary.
 
 For refugee integration programs, this property is valuable in the early months: those where the language is not yet mastered but social isolation is most dangerous.
 
@@ -76,7 +76,7 @@ It would be difficult to write a history of modern competitive chess without tal
 
 **Viktor Korchnoi** defected from the USSR in 1976 during a tournament in Holland. He played two World Championship matches under Swiss flag against Karpov (1978, 1981), surrounded by diplomatic battles and Cold War incidents.
 
-**Judit Polgár**, the strongest female player in history, is Hungarian, but her path, and that of her sisters, was made possible by her parents' decision to educate them at home and take them to international competition from childhood—which involved intense mobility.
+**Judit Polgár**, the strongest female player in history, is Hungarian, but her path, and that of her sisters, was made possible by her parents' decision to educate them at home and take them to international competition from childhood, which involved intense mobility.
 
 These stories aren't anecdotal. They reflect that chess has always been a space where cognitive competence could (partially) transcend national and political borders.
 
@@ -115,7 +115,7 @@ In wintry Berlin 2015, the game beginning between the Syrian refugee and the Ger
 ## Key Takeaways
 
 - Chess functions as a **non-verbal lingua franca**: algebraic notation is universal, rules are identical worldwide, a game can be played without exchanging a word
-- **Chess for Refugees** programs active in 30+ countries use chess clubs as first social contact points—even before language classes
+- **Chess for Refugees** programs active in 30+ countries use chess clubs as first social contact points, even before language classes
 - The history of the World Chess Championship **is a history of migration**: Steinitz, Lasker, Korchnoi, Polgár, and dozens of GMs representing adopted countries
-- Players of immigrant origin are **disproportionately represented** in world elites in several countries—linking mobility, ambition, and competitive performance
+- Players of immigrant origin are **disproportionately represented** in world elites in several countries, linking mobility, ambition, and competitive performance
 - Researchers have used GM mobility data as an **indicator of freedom of movement** and living conditions in different countries over the past 50 years

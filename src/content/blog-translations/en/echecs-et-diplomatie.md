@@ -22,8 +22,8 @@ faq:
       competition builds a minimal relationship that can become a starting point.
   - question: "Are chess really useful for learning negotiation?"
     answer: >-
-      For some aspects, yes. Chess's tree thinking — anticipating possible opponent responses and preparing
-      counter-responses — is directly transferable to negotiation preparation. Ego management facing a
+      For some aspects, yes. Chess's tree thinking, anticipating possible opponent responses and preparing
+      counter-responses, is directly transferable to negotiation preparation. Ego management facing a
       difficult position also: a good negotiator, like a good player, doesn't let a bad position stop them
       from looking for the best available exit. On the other hand, chess is a zero-sum game (one winner), the
       opposite of win-win negotiation: you must be aware of this limit.
@@ -50,7 +50,7 @@ Bobby Fischer vs. Boris Spassky wasn't just a World Chess Championship. It was a
 
 Why have political leaders always loved chess metaphors? Because the game intuitively structures strategic thinking: actors with different capacities, limited resources, a central objective to protect and attack simultaneously, a long time horizon where each decision carries cascading consequences.
 
-Clausewitz, in *On War*, already used the board to illustrate the difference between tactics and strategy. Sun Tzu has inspired generations of strategists. The structure of chess—clear hierarchy, codified movements, complete information for both players—corresponds well to the rational ideal of classical political strategy.
+Clausewitz, in *On War*, already used the board to illustrate the difference between tactics and strategy. Sun Tzu has inspired generations of strategists. The structure of chess, clear hierarchy, codified movements, complete information for both players, corresponds well to the rational ideal of classical political strategy.
 
 But beyond metaphor, the board has played a concrete role in 20th-century diplomatic history.
 
@@ -60,7 +60,7 @@ The USSR had dominated the World Chess Championships continuously since 1948. Mi
 
 When Bobby Fischer, American, individualistic, unstable, refusing institutional constraints, began climbing the world rankings, tension rose. Fischer wasn't just strong. He was *dangerously* strong, and he knew it, and used it.
 
-The Reykjavik match was preceded by weeks of quasi-diplomatic negotiations on conditions: prize money, cameras, noise, lighting, piece size. Fischer won every protocol arm-wrestling match while playing anthology games on the board. The USSR seriously considered Spassky's withdrawal to avoid a symbolically disastrous defeat. Henry Kissinger personally called Fischer to encourage him to participate—the U.S. Secretary of State understood the stakes.
+The Reykjavik match was preceded by weeks of quasi-diplomatic negotiations on conditions: prize money, cameras, noise, lighting, piece size. Fischer won every protocol arm-wrestling match while playing anthology games on the board. The USSR seriously considered Spassky's withdrawal to avoid a symbolically disastrous defeat. Henry Kissinger personally called Fischer to encourage him to participate, the U.S. Secretary of State understood the stakes.
 
 Fischer won. The Western world exulted. The USSR immediately refocused efforts on training the next champion (Anatoly Karpov), who would recover the title in 1975 when Fischer refused to defend his crown.
 
@@ -68,9 +68,9 @@ Fischer won. The Western world exulted. The USSR immediately refocused efforts o
 
 Garry Kasparov became, after his retirement from professional tournaments in 2005, one of the most visible political activists in Russia. But during his career, he had already understood that chess opened doors few other activities allowed.
 
-As world champion, Kasparov was received by dozens of heads of state—not as a political consultant, but as a chess champion. The neutrality of the game created protocol hospitality: one could invite Kasparov without it being interpreted as political support, and the meeting still allowed an exchange.
+As world champion, Kasparov was received by dozens of heads of state, not as a political consultant, but as a chess champion. The neutrality of the game created protocol hospitality: one could invite Kasparov without it being interpreted as political support, and the meeting still allowed an exchange.
 
-This diplomacy through play wasn't naive—Kasparov was perfectly aware of his instrumentalization. But it illustrates a fundamental property of chess: the game creates a space of symbolic neutrality in which people who couldn't meet in other contexts can interact.
+This diplomacy through play wasn't naive, Kasparov was perfectly aware of his instrumentalization. But it illustrates a fundamental property of chess: the game creates a space of symbolic neutrality in which people who couldn't meet in other contexts can interact.
 
 ## Chess for Peace: Citizen Diplomacy Through the Board
 

@@ -1,6 +1,6 @@
 ---
 title: "Analyzing Your Chess Games: The Practical Guide to Real Progress"
-excerpt: "Playing many games without analyzing them is training to repeat your errors. Post-game analysis is the most profitable task for chess progress—and the most poorly done. Method, tools, traps to avoid."
+excerpt: "Playing many games without analyzing them is training to repeat your errors. Post-game analysis is the most profitable task for chess progress, and the most poorly done. Method, tools, traps to avoid."
 seoTitle: "Analyzing Your Chess Games: Practical Method to Progress"
 seoDescription: "How to analyze your chess games to progress? Method without engine first, recurring errors, intelligent use of Stockfish. A practical guide."
 enSlug: "how-to-analyze-chess-games"
@@ -49,7 +49,7 @@ Replaying a game without analyzing is training to replay the same errors in slig
 
 ## Why Post-Game Analysis Is Irreplaceable
 
-Chess progression relies on a simple loop: play, identify errors, understand why they occurred, work on identified gaps. Post-game analysis is the central step—without it, the loop is broken.
+Chess progression relies on a simple loop: play, identify errors, understand why they occurred, work on identified gaps. Post-game analysis is the central step, without it, the loop is broken.
 
 Playing many games without analysis develops fluidity and cognitive endurance, but not playing quality. You play fast and often, and you repeat the same error patterns in fast-forward.
 
@@ -61,7 +61,7 @@ Deliberate practice is defined precisely: it's not comfortable, it targets speci
 
 The most common error in post-game analysis: opening Stockfish first.
 
-If the engine analyzes before you, you lose the bulk of the exercise's value. You don't develop your capacity to evaluate positions yourself—you read evaluations. You don't reinforce your intuition—you become dependent on external confirmation.
+If the engine analyzes before you, you lose the bulk of the exercise's value. You don't develop your capacity to evaluate positions yourself, you read evaluations. You don't reinforce your intuition, you become dependent on external confirmation.
 
 **Phase 1: Human analysis without engine (15-20 minutes)**
 
@@ -101,7 +101,7 @@ In almost all games, there's a precise moment where the advantage changes sides,
 
 This moment is often identifiable without engine: it's the move after which you sensed "something is wrong," or your opponent's move that surprised you.
 
-Understanding *why* the position changed there—what idea you missed, what defensive resource you didn't see, what offensive plan you didn't anticipate—is the center of gravity of the analysis.
+Understanding *why* the position changed there, what idea you missed, what defensive resource you didn't see, what offensive plan you didn't anticipate, is the center of gravity of the analysis.
 
 A player who deeply understands 3 critical moments in 3 different games progresses more than a player who superficially skims 30 games with the engine.
 

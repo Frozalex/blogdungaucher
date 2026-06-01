@@ -16,7 +16,7 @@ faq:
   - question: "How does cinema generally portray chess players?"
     answer: >-
       Historically, very poorly. The cinematic chess player is intelligent but asocial, often obsessive to
-      the point of pathology, emotionally cold. It's the 'dark genius' — a legacy of the Bobby Fischer
+      the point of pathology, emotionally cold. It's the 'dark genius', a legacy of the Bobby Fischer
       character in popular imagination. This portrayal has evolved: The Queen's Gambit shows a complex player
       with real human relationships. Searching for Bobby Fischer (1993) showed a child prodigy in a warm
       family setting. Nuance is progressing, even if the stereotype persists.
@@ -39,7 +39,7 @@ faq:
       The best known is the musical Chess (1984), with music by ABBA (Benny Andersson and Björn Ulvaeus),
       about a fictional match between an American and a Soviet player during the Cold War. It played on
       Broadway and the West End, and several songs remained popular ('One Night in Bangkok', 'I Know Him So
-      Well'). Chess also appears in hip-hop as a symbol of strategy and intelligence — RZA of Wu-Tang Clan is
+      Well'). Chess also appears in hip-hop as a symbol of strategy and intelligence, RZA of Wu-Tang Clan is
       a passionate player and regularly integrates chess metaphors into his lyrics.
 ---
 
@@ -63,7 +63,7 @@ Ingmar Bergman, in *The Seventh Seal* (1957), pushes the metaphor to its extreme
 
 Literature has explored chess with more nuance than popular cinema.
 
-*The Royal Game* (1942) by Stefan Zweig is perhaps the greatest novella ever written on the subject. Published posthumously (Zweig committed suicide the month before its publication), it tells the story of an Austrian doctor imprisoned by the Gestapo, isolated in a hotel room without book or paper. To preserve his sanity, he appropriates a chess manual and begins replaying games mentally—to the point of dissociating his mind into two distinct players competing.
+*The Royal Game* (1942) by Stefan Zweig is perhaps the greatest novella ever written on the subject. Published posthumously (Zweig committed suicide the month before its publication), it tells the story of an Austrian doctor imprisoned by the Gestapo, isolated in a hotel room without book or paper. To preserve his sanity, he appropriates a chess manual and begins replaying games mentally, to the point of dissociating his mind into two distinct players competing.
 
 The board as mental refuge. The board as a space of freedom in total imprisonment.
 
@@ -85,7 +85,7 @@ In parallel with *The Queen's Gambit*, another cultural transformation was under
 
 Hikaru Nakamura began streaming on Twitch in 2017. His channel exploded during the pandemic, with up to 50,000 simultaneous viewers.
 
-Levy Rozman (GothamChess) developed a YouTube format of game analysis with an accessible, humorous, emotional tone—celebrating beautiful combinations, suffering blunders. His channel exceeds 4 million subscribers.
+Levy Rozman (GothamChess) developed a YouTube format of game analysis with an accessible, humorous, emotional tone, celebrating beautiful combinations, suffering blunders. His channel exceeds 4 million subscribers.
 
 These creators did something Hollywood cinema hadn't managed: they showed that playing chess could be *fun*. Loud. Social. Accompanied by shouts, laughs, chat comments. The opposite of the silent genius in a dark room.
 
@@ -99,9 +99,9 @@ It's perhaps the sign of deep cultural integration: when a game generates viral 
 
 ## What Popular Culture Says About Chess
 
-The cultural trajectory of chess—from the cinematic shortcut for "cold genius" to the Netflix series provoking mass conversions, through streamers shouting in front of their webcams—says something interesting about the relationship between representation and practice.
+The cultural trajectory of chess, from the cinematic shortcut for "cold genius" to the Netflix series provoking mass conversions, through streamers shouting in front of their webcams, says something interesting about the relationship between representation and practice.
 
-Games that popular culture presents as accessible, social, and emotional attract players. Games presented as cold and elitist repel. *The Queen's Gambit* didn't invent something: it made visible what chess clubs always knew—the game is human, passionate, connecting.
+Games that popular culture presents as accessible, social, and emotional attract players. Games presented as cold and elitist repel. *The Queen's Gambit* didn't invent something: it made visible what chess clubs always knew, the game is human, passionate, connecting.
 
 The real revolutionary perhaps wasn't Beth Harmon. It was the camera filming her in close-up, with dramatic music, as if the board were a boxing ring.
 
@@ -115,7 +115,7 @@ The real revolutionary perhaps wasn't Beth Harmon. It was the camera filming her
 ## Key Takeaways
 
 - **The Queen's Gambit** (Netflix, 2020) caused a global increase in chess set sales of +87% and the largest cultural impact since the 1972 Fischer-Spassky match
-- Cinema long used chess as **visual shortcut** for superior intelligence or cold manipulation—a bias that evolved toward more nuance since the 2000s
+- Cinema long used chess as **visual shortcut** for superior intelligence or cold manipulation, a bias that evolved toward more nuance since the 2000s
 - Chess literature ranges from Stefan Zweig's novellas to thrillers, with narrative preference for the isolated genius and morbid obsession
-- Chess in media plays a **cultural signaling role**: a character who plays chess is instantly coded as intelligent and strategic—a productive stereotype for narrative but reductive for reality
-- The rise of online chess and social media has **radically changed public perception**: the game is now presented as social, fun, accessible—the opposite of the Hollywood stereotype
+- Chess in media plays a **cultural signaling role**: a character who plays chess is instantly coded as intelligent and strategic, a productive stereotype for narrative but reductive for reality
+- The rise of online chess and social media has **radically changed public perception**: the game is now presented as social, fun, accessible, the opposite of the Hollywood stereotype

@@ -1,6 +1,6 @@
 ---
 title: "Chess and Alzheimer's: How to Stimulate Your Brain to Prevent Cognitive Decline"
-excerpt: "Figures from recent literature: meta-analyses, cohorts, and trials on board games, cognitive stimulation, and dementia risk—with statistical limits and what chess can (really) bring."
+excerpt: "Figures from recent literature: meta-analyses, cohorts, and trials on board games, cognitive stimulation, and dementia risk, with statistical limits and what chess can (really) bring."
 seoTitle: "Chess and Alzheimer's: Studies, Figures, and Cognitive Prevention"
 seoDescription: "Chess and Alzheimer's: quantitative data on cognitive games and dementia. MMSE meta-analyses, ALSOP cohorts, clinical trials in elderly."
 enSlug: "chess-and-alzheimer-prevention"
@@ -31,7 +31,7 @@ Sensationalist headlines sometimes promise a "weapon" against the pathology ofte
 
 Published data are **more nuanced**: some trials measure effects on mood, depression, or cognitive scores; other protocols find **no difference** on global cognition once controls are tightened.
 
-**Goal of this article:** gather **figures from selected publications** and link them to chess practice as a dense, lasting hobby—**learning**, **progressing**, **anchoring a routine** without confusing it with a prescription.
+**Goal of this article:** gather **figures from selected publications** and link them to chess practice as a dense, lasting hobby, **learning**, **progressing**, **anchoring a routine** without confusing it with a prescription.
 
 ## Quantitative Summary: What Key Publications Say
 
@@ -47,9 +47,9 @@ Published data are **more nuanced**: some trials measure effects on mood, depres
 
 ## Hazard Ratios in the ALSOP Cohort
 
-The **ALSOP** cohort follows initially cognitively healthy seniors in Australia. The hazard ratios **0.89** and **0.91** translate a **moderate relative reduction** in dementia probability over ten years for regular habits—not a halving. Models **already adjust** for education, socioeconomic status, and health.
+The **ALSOP** cohort follows initially cognitively healthy seniors in Australia. The hazard ratios **0.89** and **0.91** translate a **moderate relative reduction** in dementia probability over ten years for regular habits, not a halving. Models **already adjust** for education, socioeconomic status, and health.
 
-Useful point for chess club players: the "games, cards, chess, crosswords" category is **grouped** in the source publication—**impossible** to isolate the chess-specific effect from this line.
+Useful point for chess club players: the "games, cards, chess, crosswords" category is **grouped** in the source publication, **impossible** to isolate the chess-specific effect from this line.
 
 ## "Game Therapy" Meta-Analysis and MMSE
 

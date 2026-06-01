@@ -22,13 +22,13 @@ faq:
     answer: >-
       No: studies haven't shown that chess has a global advantage over other structured play activities
       (instrumental music, Go, strategy games). The chess-specific benefit comes from the combination of
-      formal rules, multi-step planning, and explicit defeat — a set of conditions that promote certain
+      formal rules, multi-step planning, and explicit defeat, a set of conditions that promote certain
       executive functions. But other activities offer comparable benefits.
   - question: "What's the most effective school chess program model?"
     answer: >-
       Studies converge on several factors: (1) explicit instruction of strategic principles, not just rules;
       (2) at least 30 hours of teaching over the school year (1h/week minimum); (3) specifically trained
-      teachers — a passionate but pedagogically unprepared coach often produces fewer measurable effects than
+      teachers, a passionate but pedagogically unprepared coach often produces fewer measurable effects than
       a competent regular teacher; (4) integration with the regular curriculum (math, logic), not as a
       separate isolated activity.
   - question: "Why did Armenia make chess mandatory?"

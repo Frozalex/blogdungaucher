@@ -68,9 +68,9 @@ Losing 15 Elo points and gaining 15 Elo points are symmetric events ranking-wise
 
 - Players interrupt their sessions more often after a loss than after a win
 - Players with relatively stable Elo statistically avoid slightly stronger opponents
-- The premature resignation rate is significantly higher in clearly losing positions—a form of conscious defeat avoidance
+- The premature resignation rate is significantly higher in clearly losing positions, a form of conscious defeat avoidance
 
-Loss aversion is not a character flaw. It's a cognitive mechanism inscribed in the functioning of the human brain. Recognizing it means giving yourself the means to consciously circumvent it—which players who progress quickly do, often without naming it as such.
+Loss aversion is not a character flaw. It's a cognitive mechanism inscribed in the functioning of the human brain. Recognizing it means giving yourself the means to consciously circumvent it, which players who progress quickly do, often without naming it as such.
 
 ## Why Adults Quit at the Wrong Moment
 

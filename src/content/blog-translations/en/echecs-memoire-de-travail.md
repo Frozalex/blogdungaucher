@@ -18,7 +18,7 @@ faq:
       George Miller's classic estimate (1956) was 7 ± 2 elements. More recent work, notably by Nelson Cowan
       (2001), revises this downward: about 4 elements simultaneously under strict experimental conditions. In
       chess, an 'element' can be a chunk (group of linked pieces), not an individual piece: which explains
-      why an expert seems to 'see more' than a novice — they compress information into chunks more
+      why an expert seems to 'see more' than a novice, they compress information into chunks more
       efficiently.
   - question: "How to improve working memory for chess?"
     answer: >-
@@ -42,7 +42,7 @@ faq:
       tasks during even mild distractions. This is why serious tournament halls enforce silence.
 ---
 
-Imagine you're calculating a 6-move variation. You mentally advance the pawn, your opponent responds with the knight, you develop the bishop, the knight jumps again, your rook enters the game, and—
+Imagine you're calculating a 6-move variation. You mentally advance the pawn, your opponent responds with the knight, you develop the bishop, the knight jumps again, your rook enters the game, and, 
 
 You've lost the thread. You no longer know exactly where the black knight was after the fourth move.
 
@@ -50,7 +50,7 @@ This frustrating moment of forgetting is not due to a lack of intelligence or ef
 
 ## Baddeley's Model: What Working Memory Really Is
 
-Alan Baddeley, a British cognitive psychologist, published his working memory model in 1974—a model that remains, with some updates, the reference in cognitive neuroscience fifty years later.
+Alan Baddeley, a British cognitive psychologist, published his working memory model in 1974, a model that remains, with some updates, the reference in cognitive neuroscience fifty years later.
 
 Working memory is not simple temporary storage. It's an active system for maintaining and manipulating information during processing. It has several components:
 
@@ -58,11 +58,11 @@ The **central executive**: an executive system that coordinates everything, allo
 
 The **phonological loop**: maintains verbal and auditory information (the "words in your head," mental arithmetic calculations you verbalize internally).
 
-The **visuospatial sketchpad**: maintains visual and spatial information—this is the component most engaged in chess, for maintaining the board and piece representation during variation calculation.
+The **visuospatial sketchpad**: maintains visual and spatial information, this is the component most engaged in chess, for maintaining the board and piece representation during variation calculation.
 
-The **episodic buffer**: integrates information from different subsystems with long-term memory—the "glue" linking working memory to stored knowledge.
+The **episodic buffer**: integrates information from different subsystems with long-term memory, the "glue" linking working memory to stored knowledge.
 
-The total capacity of this system is limited: approximately 4 to 7 elements simultaneously, depending on the nature of the information and the level of expertise. Beyond that, old information begins to "leak"—it exits working memory before being processed or transferred to long-term memory.
+The total capacity of this system is limited: approximately 4 to 7 elements simultaneously, depending on the nature of the information and the level of expertise. Beyond that, old information begins to "leak", it exits working memory before being processed or transferred to long-term memory.
 
 ## Why Chess Saturates Working Memory
 
@@ -86,7 +86,7 @@ Why do grandmasters seem to have far superior working memory compared to novices
 
 They don't, fundamentally. Their "raw" working memory (measured on neutral tasks unrelated to chess) is comparable to non-players of the same age and education group.
 
-What they have is a library of **chunks**: piece configurations stored in long-term memory as units. When an expert sees a position, they don't decompose it into 20 individual pieces. They recognize it as "classic short castle + knight on f6 + typical Sicilian pawn structure"—3 chunks instead of 20 elements.
+What they have is a library of **chunks**: piece configurations stored in long-term memory as units. When an expert sees a position, they don't decompose it into 20 individual pieces. They recognize it as "classic short castle + knight on f6 + typical Sicilian pawn structure", 3 chunks instead of 20 elements.
 
 This compression frees working memory capacity for calculating new variations. The expert doesn't need to mentally maintain all the pieces of the position: they stored the "base position" as a chunk and can retrieve details from long-term memory when needed.
 
@@ -94,7 +94,7 @@ This is why the Chase and Simon (1973) study showed that experts had no better m
 
 ## Training Working Memory for Chess
 
-The good news: working memory is trainable. The less good news: training is specific—improving at chess calculation improves working memory for chess, with partial transfer to other domains.
+The good news: working memory is trainable. The less good news: training is specific, improving at chess calculation improves working memory for chess, with partial transfer to other domains.
 
 **Chess-specific exercises:**
 

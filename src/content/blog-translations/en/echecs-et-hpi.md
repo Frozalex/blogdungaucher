@@ -48,11 +48,11 @@ The intuition isn't false. But it simplifies a richer, more nuanced reality.
 
 ## What Is a Gifted Child?
 
-The term **gifted** (or "high intellectual potential," HPI in French) designates people whose IQ exceeds a conventional threshold—most often **IQ > 130**, the top 2.3% of the distribution.
+The term **gifted** (or "high intellectual potential," HPI in French) designates people whose IQ exceeds a conventional threshold, most often **IQ > 130**, the top 2.3% of the distribution.
 
 This statistical definition hides a complex psychological reality. Gifted children aren't simply "more intelligent" on all levels. French psychologist [Jean-Charles Terrassier](https://www.jean-charles-terrassier.com) described the concept of **dyssynchrony**: a gifted child's intellectual development often exceeds their affective and motor development.
 
-Concretely: an 8-year-old gifted child can reason like a 12-year-old, but emotionally experience life as an 8-year-old—or even 7-year-old, if the environment hasn't helped develop emotional maturity. This dyssynchrony creates particular tensions: the child intellectually understands complex situations but doesn't yet have the emotional resources to respond.
+Concretely: an 8-year-old gifted child can reason like a 12-year-old, but emotionally experience life as an 8-year-old, or even 7-year-old, if the environment hasn't helped develop emotional maturity. This dyssynchrony creates particular tensions: the child intellectually understands complex situations but doesn't yet have the emotional resources to respond.
 
 Terrassier distinguishes two HPI profiles:
 - **"Harmonious"**: advanced intellectual development, good social skills, relative flourishing
@@ -76,7 +76,7 @@ The chessboard, conversely, is a space of **absolutely formal and equitable rule
 
 In chess tournaments, you play opponents at the same **playing level**, not the same age. A 9-year-old can face a 40-year-old adult, and it makes sense because they have the same Elo rating.
 
-For a gifted child often "out of sync" with classmates, this level-based logic is a breath of fresh air. They're not "too advanced for their age" or "weird"—they're simply at such-and-such level.
+For a gifted child often "out of sync" with classmates, this level-based logic is a breath of fresh air. They're not "too advanced for their age" or "weird", they're simply at such-and-such level.
 
 ## Perfectionism: The Main Risk to Watch
 
@@ -116,7 +116,7 @@ These figures strongly nuance the idea that gifted children are naturally superi
 
 For gifted children suffering from social integration difficulties at school, the chess club can offer a valuable alternative environment.
 
-The culture of chess clubs is generally **open to profile diversity**: one finds children of all ages, adults, people with varied cognitive profiles. The norm isn't social conformity—it's being focused on the game.
+The culture of chess clubs is generally **open to profile diversity**: one finds children of all ages, adults, people with varied cognitive profiles. The norm isn't social conformity, it's being focused on the game.
 
 ## Mentoring a Gifted Child in Chess
 
@@ -139,5 +139,5 @@ The culture of chess clubs is generally **open to profile diversity**: one finds
 - Gifted children are **overrepresented in competitive chess clubs**, though causality isn't clearly established
 - The chessboard meets specific gifted needs: **intense cognitive stimulation, clear rules, non-linear progression, no skill ceiling**
 - **Perfectionism** in gifted children can transform chess into a source of suffering: tolerance to failure must be actively developed
-- **Hypersensitive gifted children** can experience chess defeats disproportionately—parental supervision and adapted coaching are necessary
-- Chess is **not "made for the gifted"**: it's accessible to all cognitive profiles, and gifted children don't automatically excel—progression depends on deliberate work like for everyone
+- **Hypersensitive gifted children** can experience chess defeats disproportionately, parental supervision and adapted coaching are necessary
+- Chess is **not "made for the gifted"**: it's accessible to all cognitive profiles, and gifted children don't automatically excel, progression depends on deliberate work like for everyone

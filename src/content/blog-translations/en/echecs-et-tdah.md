@@ -19,7 +19,7 @@ faq:
     answer: >-
       Physical play, with a present opponent and tangible pieces, engages more senses and often anchors
       attention better than the screen. The screen adds interface distraction, notifications, real-time
-      statistics — all elements that compete for attention. Online chess can be useful but as a complement to
+      statistics, all elements that compete for attention. Online chess can be useful but as a complement to
       physical play, not a replacement, especially for younger ADHD profiles.
   - question: "Can ADHD adults also benefit?"
     answer: >-

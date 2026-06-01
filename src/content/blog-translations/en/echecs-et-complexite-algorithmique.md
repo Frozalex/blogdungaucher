@@ -45,13 +45,13 @@ faq:
 
 In 1950, Claude Shannon (founder of information theory) published an article titled "Programming a Computer for Playing Chess." He hadn't yet written the programs. He was calculating whether it was even *possible*.
 
-His conclusion: the number of legal chess positions is about 10^43. The number of distinct possible games is even larger. An exhaustive search of the complete game tree would exceed the capabilities of any physically realizable computer—not from lack of speed, but because the necessary time would exceed the age of the universe.
+His conclusion: the number of legal chess positions is about 10^43. The number of distinct possible games is even larger. An exhaustive search of the complete game tree would exceed the capabilities of any physically realizable computer, not from lack of speed, but because the necessary time would exceed the age of the universe.
 
 So something else had to be found.
 
 ## What Is Algorithmic Complexity?
 
-Algorithmic complexity is a branch of theoretical computer science that studies the resources (time, memory) needed to solve problems. It classifies problems by their "fundamental difficulty"—not in practice on a given computer, but in theory, asymptotically, as problem size grows.
+Algorithmic complexity is a branch of theoretical computer science that studies the resources (time, memory) needed to solve problems. It classifies problems by their "fundamental difficulty", not in practice on a given computer, but in theory, asymptotically, as problem size grows.
 
 The most well-known classes:
 - **P**: problems solvable in polynomial time
@@ -75,17 +75,17 @@ The **alpha-beta pruning** algorithm, developed in the 1950s-1960s, is the funda
 
 The idea: if you search the game tree and find a branch that cannot be better than what you've already found, you stop exploring it. More precisely: you maintain two values, alpha (the best score White can guarantee) and beta (the best score Black can guarantee). As soon as a branch produces a score outside this [alpha, beta] window, it is abandoned.
 
-In the best case, alpha-beta pruning reduces the number of nodes to explore to the square root of the complete tree. From a 10^123 space, you can hope to search 10^61—still astronomical, but much more manageable with good move-ordering heuristics.
+In the best case, alpha-beta pruning reduces the number of nodes to explore to the square root of the complete tree. From a 10^123 space, you can hope to search 10^61, still astronomical, but much more manageable with good move-ordering heuristics.
 
 ## Deep Blue: The Victory of Engineering
 
 Deep Blue wasn't a subtle program. It was an engineering masterpiece of brute force applied to chess heuristics.
 
-IBM had built **specialized chips** (ASICs) designed solely to evaluate chess positions—hundreds in parallel. Deep Blue evaluated between 100 and 300 million positions per second. With well-optimized alpha-beta pruning and sophisticated ordering heuristics, it typically searched 12-16 moves deep, sometimes more in critical positions.
+IBM had built **specialized chips** (ASICs) designed solely to evaluate chess positions, hundreds in parallel. Deep Blue evaluated between 100 and 300 million positions per second. With well-optimized alpha-beta pruning and sophisticated ordering heuristics, it typically searched 12-16 moves deep, sometimes more in critical positions.
 
 The evaluation function had been developed with Grandmasters: it explicitly codified concepts like pawn structure, king safety, piece activity, weak squares. Each concept was translated into numerical terms.
 
-Kasparov had beaten Deep Blue in 1996 (4-2). He lost in 1997 (3.5-2.5). His defeat wasn't due to Deep Blue's "understanding" of the game—there was none in the cognitive sense. It was computing power + codified human heuristics + hardware engineering, pushed to a threshold where brute computational force compensated for the limitations of the approach.
+Kasparov had beaten Deep Blue in 1996 (4-2). He lost in 1997 (3.5-2.5). His defeat wasn't due to Deep Blue's "understanding" of the game, there was none in the cognitive sense. It was computing power + codified human heuristics + hardware engineering, pushed to a threshold where brute computational force compensated for the limitations of the approach.
 
 ## AlphaZero: A Revolution of Different Nature
 

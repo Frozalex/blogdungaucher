@@ -20,7 +20,7 @@ faq:
     answer: >-
       'Solving' = proving the exact mathematical outcome under perfect play. 'Beating humans' = being on
       average closer to the optimal strategy than a human brain. Stockfish beats any human at ~3500 Elo
-      without ever solving. Conversely, a program that solved chess would beat any opponent by definition —
+      without ever solving. Conversely, a program that solved chess would beat any opponent by definition, 
       that's why no such program exists.
   - question: "Why did AlphaZero 'beat' Stockfish if both are approximations?"
     answer: >-

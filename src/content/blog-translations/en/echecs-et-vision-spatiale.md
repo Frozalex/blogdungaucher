@@ -40,21 +40,21 @@ faq:
       reasoning, which is a shared component.
 ---
 
-[Viswanathan Anand](https://en.wikipedia.org/wiki/Viswanathan_Anand) played 8 chess games simultaneously, blindfolded, without seeing a single board, beating all his opponents. In his head: 8 different positions, each with dozens of pieces, distinct game histories, plans and counter-plans—all maintained simultaneously for hours.
+[Viswanathan Anand](https://en.wikipedia.org/wiki/Viswanathan_Anand) played 8 chess games simultaneously, blindfolded, without seeing a single board, beating all his opponents. In his head: 8 different positions, each with dozens of pieces, distinct game histories, plans and counter-plans, all maintained simultaneously for hours.
 
-This isn't magic. It's spatial visualization pushed to its limits—a capacity that chess develops in documented ways, and that neuroscience is beginning to understand in depth.
+This isn't magic. It's spatial visualization pushed to its limits, a capacity that chess develops in documented ways, and that neuroscience is beginning to understand in depth.
 
 ## Spatial Cognition: What Are We Talking About?
 
-Spatial cognition refers to the set of mental capacities that allow representing, transforming, and navigating in space—whether physical (finding your way in a building) or abstract (visualizing a molecular structure in chemistry, reading an architectural blueprint).
+Spatial cognition refers to the set of mental capacities that allow representing, transforming, and navigating in space, whether physical (finding your way in a building) or abstract (visualizing a molecular structure in chemistry, reading an architectural blueprint).
 
 Researchers generally distinguish several components:
 
-**Spatial visualization:** The capacity to mentally manipulate two-dimensional or three-dimensional objects—rotate them, assemble them, imagine their appearance from different angles.
+**Spatial visualization:** The capacity to mentally manipulate two-dimensional or three-dimensional objects, rotate them, assemble them, imagine their appearance from different angles.
 
-**Spatial memory:** The capacity to memorize and recall positions and configurations—where the pieces were at the end of the middlegame, what the pawn structure looked like 10 moves ago.
+**Spatial memory:** The capacity to memorize and recall positions and configurations, where the pieces were at the end of the middlegame, what the pawn structure looked like 10 moves ago.
 
-**Spatial reasoning:** The capacity to use space to solve problems—inferring that a piece on c5 controls certain squares, predicting piece trajectories, understanding geometric relationships between squares.
+**Spatial reasoning:** The capacity to use space to solve problems, inferring that a piece on c5 controls certain squares, predicting piece trajectories, understanding geometric relationships between squares.
 
 All three components are engaged in chess, to different degrees depending on the game phase.
 
@@ -72,13 +72,13 @@ Key points from this meta-analysis:
 
 ## What Grandmasters Actually See
 
-The popular idea that grandmasters have photographic memory of the board is a myth—documented as such since [Adriaan de Groot](https://en.wikipedia.org/wiki/Adriaan_de_Groot)'s work in the 1940s and refined since.
+The popular idea that grandmasters have photographic memory of the board is a myth, documented as such since [Adriaan de Groot](https://en.wikipedia.org/wiki/Adriaan_de_Groot)'s work in the 1940s and refined since.
 
 The reality is more interesting.
 
 ### Schematic, Not Photographic Representation
 
-Studies of verbal protocols and eye-tracking show that experts don't uniformly scan all squares—they **saccade** toward zones relevant to their current variation.
+Studies of verbal protocols and eye-tracking show that experts don't uniformly scan all squares, they **saccade** toward zones relevant to their current variation.
 
 [Neil Charness](https://psy.fsu.edu/faculty/charness/charness.dp.html) (Florida State University) showed that grandmasters build a "stripped-down" representation: pieces important for the current variation are maintained with precision, the rest is processed more schematically and can even be recalled inaccurately if questioned about peripheral pieces mid-calculation.
 
@@ -86,7 +86,7 @@ This isn't a limitation: it's an efficient adaptation. Maintaining a complete, p
 
 ### Spatial Chunks
 
-[Gobet and Simon](https://en.wikipedia.org/wiki/Fernand_Gobet)'s chunking theory also applies to the spatial dimension. Experts don't see 16 black pieces separately: they see "structures"—"queenside castle with intact pawns," "Carlsbad structure with double open file," "R+P vs R endgame." These spatial chunks are recognized as blocks, not reconstructed piece by piece.
+[Gobet and Simon](https://en.wikipedia.org/wiki/Fernand_Gobet)'s chunking theory also applies to the spatial dimension. Experts don't see 16 black pieces separately: they see "structures", "queenside castle with intact pawns," "Carlsbad structure with double open file," "R+P vs R endgame." These spatial chunks are recognized as blocks, not reconstructed piece by piece.
 
 This explains why grandmasters can analyze a position blindfolded: they don't need to memorize each piece separately. They memorize meaningful configurations, each having internal logic they can reconstruct.
 
@@ -94,13 +94,13 @@ This explains why grandmasters can analyze a position blindfolded: they don't ne
 
 fMRI studies on spatial cognition consistently show involvement of the **superior parietal cortex**, the **pre-motor cortex**, and the **visuospatial working memory** space.
 
-[Giorgio Cattaneo](https://scholar.google.com/citations?user=HhD6e9QAAAAJ) and colleagues (2009) studied the brain correlates of chess variation calculation. Their results show bilateral activation of the superior parietal cortex—the same region activated during classic mental rotation tasks.
+[Giorgio Cattaneo](https://scholar.google.com/citations?user=HhD6e9QAAAAJ) and colleagues (2009) studied the brain correlates of chess variation calculation. Their results show bilateral activation of the superior parietal cortex, the same region activated during classic mental rotation tasks.
 
 This result is important: it suggests that chess variation calculation (visualizing pieces moving) uses the same circuits as general spatial tasks. Chess practice therefore trains these circuits in a targeted way.
 
 ## Blindfold Chess: The Ultimate Exercise
 
-Blindfold chess—playing without seeing the board, dictating moves orally or by notation—represents the most direct exercise of spatial visualization in chess.
+Blindfold chess, playing without seeing the board, dictating moves orally or by notation, represents the most direct exercise of spatial visualization in chess.
 
 Historically, blindfold feats have fascinated audiences: [Paul Morphy](https://en.wikipedia.org/wiki/Paul_Morphy) played 8 simultaneous blindfold games in 1858. The current record, set by [Timur Gareyev](https://en.wikipedia.org/wiki/Timur_Gareyev) in 2016, is 48 simultaneous blindfold games.
 

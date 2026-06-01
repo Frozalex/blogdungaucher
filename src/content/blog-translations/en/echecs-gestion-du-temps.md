@@ -99,7 +99,7 @@ The key is having an explicit threshold *beforehand*, not deciding mid-game.
 
 ### Avoiding "Emotional" Time Expenditure
 
-A common cause of time trouble among amateurs: thinking long not because the position is complex, but because you're **emotionally charged**—after an opponent's blunder, after missing a combination, after receiving an unexpected move.
+A common cause of time trouble among amateurs: thinking long not because the position is complex, but because you're **emotionally charged**, after an opponent's blunder, after missing a combination, after receiving an unexpected move.
 
 These emotional states can drive long thinking without useful thinking: the brain is occupied managing emotions rather than the position. The technique: recognize the emotional state ("I just missed something, I'm frustrated"), take 2-3 deep breaths, then return to the position as if it were a puzzle seen for the first time.
 

@@ -29,7 +29,7 @@ faq:
   - question: "Can a 'untalented' player reach master level?"
     answer: >-
       Data suggest yes, for most people, master level (FIDE ~2200-2300) is achievable with sufficient
-      deliberate practice — Ericsson estimated this at 10,000-20,000 hours. Above (IM, GM), the role of
+      deliberate practice, Ericsson estimated this at 10,000-20,000 hours. Above (IM, GM), the role of
       natural predispositions becomes more important: faster initial progression, better pattern memory,
       often present from early childhood. But individual variability is enormous, and several GMs have
       described unfavorable starts compensated for by intensive work.

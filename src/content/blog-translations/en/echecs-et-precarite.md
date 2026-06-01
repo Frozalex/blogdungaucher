@@ -2,7 +2,7 @@
 title: "Chess and Poverty: When the Board Transcends Social Inequality"
 excerpt: "Chess has produced champions born in extreme poverty, Grandmasters from disadvantaged neighborhoods, street programs using the game as a lever for emancipation. And yet, access inequalities are real. Portrait of a game that promises equality and struggles to deliver."
 seoTitle: "Chess and Poverty: Can the Board Transcend Inequalities?"
-seoDescription: "Chess in the Slums, cultural capital, access to resources: chess facing social inequalities — the promise of emancipation and structural realities."
+seoDescription: "Chess in the Slums, cultural capital, access to resources: chess facing social inequalities, the promise of emancipation and structural realities."
 enSlug: "chess-and-poverty"
 draft: false
 faq:
@@ -23,7 +23,7 @@ faq:
     answer: >-
       Yes, several. Wilhelm Steinitz, first world champion, came from a very modest family in Prague and died
       in poverty in New York in 1900. Samuel Reshevsky, American child prodigy of Polish origin, traveled in
-      childhood with his parents giving paid exhibitions to survive — a form of intellectual begging. More
+      childhood with his parents giving paid exhibitions to survive, a form of intellectual begging. More
       recently, Magnus Carlsen wasn't from poverty but his rise came from a small Norwegian town without
       chess tradition. These trajectories exist but remain exceptions in a domain where family resources play
       an important role.
@@ -70,7 +70,7 @@ The most honest statement: well-conducted chess programs in disadvantaged school
 
 Pierre Bourdieu, French sociologist, theorized **cultural capital**: the set of knowledge, skills, and cultural practices that confer social advantage. This capital is unequally distributed across social classes and largely transmitted through the family.
 
-Chess is part of the cultural capital of privileged classes in many European societies. In a family of executives, teachers, or intellectuals, chess can be a normal family game—the child is exposed to it early, sees competent adults play, naturally receives explanations. They arrive at the club with a foundation.
+Chess is part of the cultural capital of privileged classes in many European societies. In a family of executives, teachers, or intellectuals, chess can be a normal family game, the child is exposed to it early, sees competent adults play, naturally receives explanations. They arrive at the club with a foundation.
 
 In a precarious family without chess tradition, the child arrives at the club from zero, without the prior capital their wealthier classmate received for free.
 
@@ -78,7 +78,7 @@ This starting-point inequality isn't insurmountable: the game is structured enou
 
 ## Chess in the Slums: The Nigerian Exception
 
-**Chess in the Slums of Africa** became in a few years one of the most publicized chess organizations in the world—not for the sporting results of its students, but for how it uses chess as a gateway to global accompaniment.
+**Chess in the Slums of Africa** became in a few years one of the most publicized chess organizations in the world, not for the sporting results of its students, but for how it uses chess as a gateway to global accompaniment.
 
 Tunde Onakoya doesn't teach chess to produce competitive players. He teaches chess to create a relationship of trust and discipline with children who don't have access to quality education. The best students receive scholarships for private schools: the board is the filter, not the end.
 
@@ -112,7 +112,7 @@ Chess can create a space of pure cognitive merit: a place where position on the 
 
 But access to this space, time to seriously prepare for it, resources to progress beyond beginner level: all this remains unequally distributed by social origin.
 
-Honesty about this tension—between the promise of equality of the game and the real inequalities of access to training—is the condition for effective action. Programs like Chess in the Slums that integrate global accompaniment (scholarships, coaching, community) beyond the game itself are more effective than programs that simply bring pieces.
+Honesty about this tension, between the promise of equality of the game and the real inequalities of access to training, is the condition for effective action. Programs like Chess in the Slums that integrate global accompaniment (scholarships, coaching, community) beyond the game itself are more effective than programs that simply bring pieces.
 
 The board can be a lever. But a lever without a fulcrum lifts nothing.
 

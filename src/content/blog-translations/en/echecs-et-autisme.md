@@ -11,8 +11,8 @@ enSlug: "chess-and-autism"
 faq:
   - question: "Do chess benefit all autistic children?"
     answer: >-
-      Not universally. Documented benefits — reduced social anxiety, improved executive functions,
-      self-esteem — primarily concern children whose cognitive profile includes an interest in rule-based
+      Not universally. Documented benefits, reduced social anxiety, improved executive functions,
+      self-esteem, primarily concern children whose cognitive profile includes an interest in rule-based
       systems, what Baron-Cohen calls 'high systemizing'. For autistic children with primary motor
       coordination difficulties or attention disorders limiting sustained focus, chess may be less suited.
       Each profile is unique and requires individual evaluation.
@@ -31,8 +31,8 @@ faq:
   - question: "Why do autistic people often have a natural affinity for chess?"
     answer: >-
       According to Simon Baron-Cohen's (Cambridge) <em>systemizing</em> theory, autistic brains have a strong
-      tendency to analyze and build rule-based systems. The chessboard — a perfect-information game, without
-      social ambiguity, with stable rules — is the prototype of a closed and analyzable system. This affinity
+      tendency to analyze and build rule-based systems. The chessboard, a perfect-information game, without
+      social ambiguity, with stable rules, is the prototype of a closed and analyzable system. This affinity
       isn't a stereotype: it's coherent with documented cognitive characteristics of part of the autism
       spectrum.
 ---

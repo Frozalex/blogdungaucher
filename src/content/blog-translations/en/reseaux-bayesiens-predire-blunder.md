@@ -20,7 +20,7 @@ Where:
 - $P(E | H)$ is the likelihood: the probability of observing E if H is true
 - $P(H | E)$ is the posterior probability of H after observing E
 
-The central intuition is that our beliefs must be updated rationally as new evidence arrives. This isn't a revolution—it's a formalization of what good chess players do naturally: "Initially, I thought this position was equal. After seeing him take 8 minutes on a simple move, I revised my estimate: he may already be in mental zeitnot."
+The central intuition is that our beliefs must be updated rationally as new evidence arrives. This isn't a revolution, it's a formalization of what good chess players do naturally: "Initially, I thought this position was equal. After seeing him take 8 minutes on a simple move, I revised my estimate: he may already be in mental zeitnot."
 
 ## What Is a Bayesian Network?
 

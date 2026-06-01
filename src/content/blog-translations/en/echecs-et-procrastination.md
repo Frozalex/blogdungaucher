@@ -42,7 +42,7 @@ faq:
 
 Move 23. You reach for the bishop. Put it back. Touch the knight. Put it back. Replay the position in your head from move 14, as if retracing the path would reveal the move you can't find. The clock eats 4 minutes during this routine.
 
-It's exactly this routine—not the move you'll eventually play—that decides the game.
+It's exactly this routine, not the move you'll eventually play, that decides the game.
 
 You're not calculating. You're **fleeing**. And it's the same thing you do when you open a tenth browser tab instead of tackling the project that's been waiting for three days.
 
@@ -54,7 +54,7 @@ When a task generates anxiety, doubt, fear of failure, or simply boredom, your b
 
 Except the task comes back. Later. With **increased** anxiety because the deadline has moved closer. Which makes the next avoidance even more probable. This is what psychologist B.F. Skinner called *operant conditioning*: a behavior that produces immediate relief reinforces itself, even when it worsens the long-term problem.
 
-This is not character weakness. It's a predictable brain mechanism—studied notably by **Fuschia Sirois** (Sheffield) and **Timothy Pychyl** (Carleton), who spent twenty years dismantling it experimentally.
+This is not character weakness. It's a predictable brain mechanism, studied notably by **Fuschia Sirois** (Sheffield) and **Timothy Pychyl** (Carleton), who spent twenty years dismantling it experimentally.
 
 ## Why the Clock Succeeds Where Your Deadlines Fail
 
@@ -74,7 +74,7 @@ This is exactly procrastination, just dressed up as diligence.
 
 Botvinnik, six-time world champion, told his students something like: *"If you haven't found a clearly better move after twenty minutes, you won't find one in thirty."* Beyond a threshold, additional time doesn't produce better calculation. It produces fatigue, anxiety, and **less time for subsequent moves**.
 
-The key distinction players learn (often at the cost of a fallen flag): *good enough to act* ≠ *perfect enough to have no regrets*. The first exists. The second exists nowhere—not on 64 squares, not on a work project, not in a message to send.
+The key distinction players learn (often at the cost of a fallen flag): *good enough to act* ≠ *perfect enough to have no regrets*. The first exists. The second exists nowhere, not on 64 squares, not on a work project, not in a message to send.
 
 ## The Measured Effect on Regular Players
 
@@ -84,7 +84,7 @@ Several studies (Sala & Gobet 2017 meta-analysis on cognitive transfer from ches
 
 The proposed mechanism is simple: 50 games = 1,500 decisions under incomplete information, each followed by an immediate consequence (the opponent's response reveals whether it was good). This *decision → consequence → adjustment* loop, repeated thousands of times, rewires tolerance.
 
-One condition, however: the transfer isn't automatic. It requires a conscious bridge. "On the board, I played despite doubt and it worked—where in my life can I do that today?" Without this explicit translation, the effect stays local to the game.
+One condition, however: the transfer isn't automatic. It requires a conscious bridge. "On the board, I played despite doubt and it worked, where in my life can I do that today?" Without this explicit translation, the effect stays local to the game.
 
 ## The "Touch-Move" Rule Disables the Regret Trap
 
@@ -109,5 +109,5 @@ That's the mindset to steal. Not the illusion of having chosen well. The ability
 - Procrastinating = neutralizing an uncomfortable emotion. Not a willpower defect.
 - The chess clock succeeds because it makes **inaction immediately costly**. Replicate it with a timer or a non-negotiable appointment.
 - *Overthinking* and procrastination have the **same structure**: delaying action by seeking certainty that won't exist.
-- 50 games = 1,500 decisions under uncertainty. Measurable but moderate effect on **ambiguity tolerance** off the board—provided you consciously bridge the two.
+- 50 games = 1,500 decisions under uncertainty. Measurable but moderate effect on **ambiguity tolerance** off the board, provided you consciously bridge the two.
 - **"Touch-move"** trains you to decouple decision from regret. That's what to steal from chess for your life.

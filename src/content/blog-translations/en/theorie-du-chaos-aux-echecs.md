@@ -110,7 +110,7 @@ Some practical rules:
 
 ## What Chaos Tells You About Beauty in Chess
 
-The most beautiful games in chess history are often chaotic games. Tal's audacious sacrifices, Morphy's lightning attacks, Kasparov's irresistible complications—all this beauty is born from positions where chaos reigns and where a player has navigated with extraordinary precision where the opponent was lost.
+The most beautiful games in chess history are often chaotic games. Tal's audacious sacrifices, Morphy's lightning attacks, Kasparov's irresistible complications, all this beauty is born from positions where chaos reigns and where a player has navigated with extraordinary precision where the opponent was lost.
 
 Beauty in chess is perhaps the beauty of mastered chaos.
 

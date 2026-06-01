@@ -31,7 +31,7 @@ This paralysis is worsened by a cognitive mechanism known as [anticipated regret
 
 ### Obsessive Post-Game Analysis
 
-After every game, even victories, the toxic perfectionist is immediately absorbed by errors. They launch the engine and spend hours on every inaccuracy, mentally flagellating themselves for every inexact move. Well-played games don't generate satisfaction—they generate anxiety: "next time, I might not be so lucky with my errors."
+After every game, even victories, the toxic perfectionist is immediately absorbed by errors. They launch the engine and spend hours on every inaccuracy, mentally flagellating themselves for every inexact move. Well-played games don't generate satisfaction, they generate anxiety: "next time, I might not be so lucky with my errors."
 
 This post-game rumination is not productive analysis. It's emotionally costly and doesn't produce the learning it aims for because the player isn't in the right mindset to learn.
 
@@ -51,7 +51,7 @@ In chess, the equivalent is: "Don't blunder that piece." The cognitive resource 
 
 Peak performance psychology, across all domains, converges on a counterintuitive result: the best performances occur in a mental state of relative release from stakes, not in a state of maximum tension.
 
-The [flow](https://en.wikipedia.org/wiki/Flow_(psychology)) state described by [Mihaly Csikszentmihalyi](https://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi)—the state of total absorption in an activity with an absence of self-consciousness and awareness of stakes—is incompatible with toxic perfectionism. Flow emerges when the player is focused on the game itself, not on the stakes of each move.
+The [flow](https://en.wikipedia.org/wiki/Flow_(psychology)) state described by [Mihaly Csikszentmihalyi](https://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi), the state of total absorption in an activity with an absence of self-consciousness and awareness of stakes, is incompatible with toxic perfectionism. Flow emerges when the player is focused on the game itself, not on the stakes of each move.
 
 ## The Concept of Satisficing
 
@@ -85,4 +85,4 @@ Elite players intuitively practice this satisficing. They don't calculate to abs
 - Toxic perfectionism generates anxiety, analysis paralysis, and a fear of error that **increases errors** (ironic process theory)
 - Chess is particularly fertile ground for toxic perfectionism due to the **total transparency** of errors
 - The search for "**good enough**" (satisficing) is a superior cognitive strategy to "the best possible" under real conditions
-- Peak performance comes from **release**, not maximum control—flow is incompatible with toxic perfectionism
+- Peak performance comes from **release**, not maximum control, flow is incompatible with toxic perfectionism

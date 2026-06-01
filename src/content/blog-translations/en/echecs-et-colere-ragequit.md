@@ -21,7 +21,7 @@ In clubs or tournaments, physical ragequit (knocking over pieces, leaving withou
 
 To understand ragequit, you need to understand the brain's anger circuit. The central structure is the [amygdala](https://en.wikipedia.org/wiki/Amygdala), a small almond-shaped formation in the medial temporal lobe, part of the limbic system.
 
-The amygdala is the brain's alarm system. It processes emotional information, particularly threats and aversive stimuli, and it does so extremely quickly—before the prefrontal cortex (seat of conscious reasoning) has even processed the information.
+The amygdala is the brain's alarm system. It processes emotional information, particularly threats and aversive stimuli, and it does so extremely quickly, before the prefrontal cortex (seat of conscious reasoning) has even processed the information.
 
 When you suffer a blunder or a perceived injustice at the board, the signal reaches the amygdala via two pathways:
 
@@ -35,7 +35,7 @@ This temporal gap explains why the emotional reaction always precedes the ration
 
 [Daniel Goleman](https://en.wikipedia.org/wiki/Daniel_Goleman) popularized the concept of "amygdala hijacking": situations where the amygdala takes control of behavior at the expense of the prefrontal cortex. In these moments, logical reasoning is short-circuited, and behaviors become impulsive, disproportionate to the actual threat.
 
-In chess, amygdala hijacking occurs precisely during ragequit. Losing a piece or facing imminent defeat activates the amygdala as a "threat." The prefrontal cortex, which could rationalize ("it's just a game," "this defeat can teach me something"), is put on standby. The resulting behavior—the angry click, the aggressive chat message—is a limbic reaction to a perceived threat, not a rational decision.
+In chess, amygdala hijacking occurs precisely during ragequit. Losing a piece or facing imminent defeat activates the amygdala as a "threat." The prefrontal cortex, which could rationalize ("it's just a game," "this defeat can teach me something"), is put on standby. The resulting behavior, the angry click, the aggressive chat message, is a limbic reaction to a perceived threat, not a rational decision.
 
 ## Why Chess Is Particularly Prone to Anger
 
@@ -45,7 +45,7 @@ Several specific characteristics of chess amplify the emotional response to defe
 
 In many competitive games, defeat can be attributed to chance. In chess, there's no excuse. Every move is a conscious decision. A defeat means you played poorly, period. This absence of an external scapegoat makes defeat particularly difficult to accept for personalities that need ego protection.
 
-Anger then becomes a defense mechanism: "The position was unfair," "He played a lucky move," "The opening is terrible"—all narratives that externalize responsibility. They don't correspond to reality, but they momentarily protect self-esteem.
+Anger then becomes a defense mechanism: "The position was unfair," "He played a lucky move," "The opening is terrible", all narratives that externalize responsibility. They don't correspond to reality, but they momentarily protect self-esteem.
 
 ### Wasted Effort and Preparation Frustration
 

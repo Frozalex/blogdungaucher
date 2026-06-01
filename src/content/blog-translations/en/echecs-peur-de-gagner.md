@@ -43,7 +43,7 @@ The winning position paradoxically creates a less performant cognitive state tha
 
 ## Prospect Theory and the Pain of Losing a Won Game
 
-[Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman) and [Amos Tversky](https://en.wikipedia.org/wiki/Amos_Tversky)'s [prospect theory](https://en.wikipedia.org/wiki/Prospect_theory) partially explains why. According to this theory, losses are psychologically felt as approximately twice as painful as equivalent gains are pleasant. When you have a winning position, you psychologically "own" the victory. Losing it is perceived as a loss, not as a return to the starting point—which makes it doubly painful.
+[Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman) and [Amos Tversky](https://en.wikipedia.org/wiki/Amos_Tversky)'s [prospect theory](https://en.wikipedia.org/wiki/Prospect_theory) partially explains why. According to this theory, losses are psychologically felt as approximately twice as painful as equivalent gains are pleasant. When you have a winning position, you psychologically "own" the victory. Losing it is perceived as a loss, not as a return to the starting point, which makes it doubly painful.
 
 This logic creates a paradox: obtaining a winning position can increase the risk of error because the fear of losing this "owned" victory generates additional anxiety.
 
@@ -59,7 +59,7 @@ The player with a fear of winning misses winning positions in a less technically
 
 The first step is honest recognition of the pattern. Analyze your games while explicitly asking: "At what point did I leave the path of optimal play?" and "What was my emotional state at that moment?"
 
-**Victory visualization.** Sports psychology techniques consisting of mentally visualizing winning scenarios in detail—the converting moves, the won endgames. Familiarization with victory through visualization reduces its anxiety-inducing character.
+**Victory visualization.** Sports psychology techniques consisting of mentally visualizing winning scenarios in detail, the converting moves, the won endgames. Familiarization with victory through visualization reduces its anxiety-inducing character.
 
 **Play out won endgames.** Deliberately practice converting winning endgames from theoretically decided positions. Repeated exposure to these conversions, in a training context without stakes, creates procedural memory of conversion.
 

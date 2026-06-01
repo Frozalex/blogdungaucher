@@ -50,11 +50,11 @@ His example is extreme, and Korchnoi was a genius. But he raises a valid questio
 
 The brain begins to decline (in measurable capacities) earlier than generally thought. Information processing speed peaks around 25-30 years old and gradually declines. Working memory begins to decline around 35-40 years old measurably.
 
-This decline isn't uniform. **Fluid intelligence**—the capacity to solve new problems, to reason in unknown situations—declines steadily with age. **Crystallized intelligence**—accumulated knowledge, recognition of familiar patterns, vocabulary and experience—remains stable and can even improve into the sixties.
+This decline isn't uniform. **Fluid intelligence**, the capacity to solve new problems, to reason in unknown situations, declines steadily with age. **Crystallized intelligence**, accumulated knowledge, recognition of familiar patterns, vocabulary and experience, remains stable and can even improve into the sixties.
 
 For chess, this distinction is crucial.
 
-Blitz and speed chess primarily engage processing speed and working memory—the capacities that decline fastest. That's why blitz players reach their peak earlier and decline more markedly.
+Blitz and speed chess primarily engage processing speed and working memory, the capacities that decline fastest. That's why blitz players reach their peak earlier and decline more markedly.
 
 Slow games engage crystallized intelligence more: recognition of typical positions, knowledge of strategic plans, endgame experience. These capacities resist aging better.
 
@@ -64,7 +64,7 @@ The essential reference on board games and cognitive aging is the longitudinal s
 
 The study followed 469 adults 75 years and older, without dementia at baseline, for an average of 5 years. It measured their leisure activities and the onset of dementia.
 
-Results: leisure intellectual activities significantly reduced the risk of dementia. Playing board games reduced this risk by 74%—the strongest result among all activities tested, ahead of reading (35%), crosswords (38%), and playing a musical instrument (69%).
+Results: leisure intellectual activities significantly reduced the risk of dementia. Playing board games reduced this risk by 74%, the strongest result among all activities tested, ahead of reading (35%), crosswords (38%), and playing a musical instrument (69%).
 
 These figures are impressive but require careful reading. It's an observational study: one cannot deduce that board games *cause* the risk reduction. People who play board games may differ from non-players on other factors that are themselves protective.
 
@@ -74,7 +74,7 @@ Nevertheless, even controlling for these confounding factors, the association re
 
 Cognitive reserve is the central concept for understanding why intellectual activities can delay dementia without preventing it.
 
-The idea: throughout life, intellectually stimulating activities strengthen neural connections and build alternative processing pathways. When lesions appear (amyloid plaques, tau tangles in Alzheimer's disease), the brain with greater reserve can compensate through these alternative pathways—maintaining cognitive functions despite underlying damage.
+The idea: throughout life, intellectually stimulating activities strengthen neural connections and build alternative processing pathways. When lesions appear (amyloid plaques, tau tangles in Alzheimer's disease), the brain with greater reserve can compensate through these alternative pathways, maintaining cognitive functions despite underlying damage.
 
 Cognitive reserve doesn't prevent the disease. It delays the moment when lesions are severe enough to produce visible symptoms. In practice, this can mean several additional years of autonomous, lucid life.
 
@@ -90,7 +90,7 @@ More interesting: a 2019 Spanish study followed adults 65-80 years old beginning
 
 A 2017 study (Strittmatter, Sunde, and Zegners) analyzed data from 3,374 professional chess players over several decades. Main conclusions:
 
-**Performance peak** is on average between 35 and 45 years old—later than most cognitive disciplines. Some players continue improving up to 50.
+**Performance peak** is on average between 35 and 45 years old, later than most cognitive disciplines. Some players continue improving up to 50.
 
 **Decline begins** measurably around 45-50, accelerating after 60.
 
@@ -100,7 +100,7 @@ A 2017 study (Strittmatter, Sunde, and Zegners) analyzed data from 3,374 profess
 
 A factor often neglected in discussions of chess and aging: physical activity is itself one of the best-known cognitive protectors.
 
-Aerobic exercise increases cerebral blood flow, stimulates hippocampal neurogenesis, and reduces systemic inflammation—all mechanisms directly linked to dementia protection.
+Aerobic exercise increases cerebral blood flow, stimulates hippocampal neurogenesis, and reduces systemic inflammation, all mechanisms directly linked to dementia protection.
 
 Chess players who complement their practice with regular physical activity (walking, swimming, cycling) benefit from the synergy of both: cognitive stimulation from chess and neurobiological benefits from exercise.
 

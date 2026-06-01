@@ -1,7 +1,7 @@
 ---
 title: "Chess as Therapy: What Research Says About the Game and Mental Health"
 excerpt: "From Italian prisons to English psychiatric hospitals, from American rehabilitation programs to PTSD treatment centers: the chessboard is used as a therapeutic tool in varied contexts. What studies actually say about these applications."
-seoTitle: "Chess as Therapy: PTSD, Depression, Anxiety — What Research Says"
+seoTitle: "Chess as Therapy: PTSD, Depression, Anxiety, What Research Says"
 seoDescription: "Chess and mental health: studies on anxiety, depression, PTSD, prison rehabilitation. What research says about the chessboard as a therapeutic tool."
 enSlug: "chess-as-therapy"
 draft: false
@@ -49,13 +49,13 @@ Several mechanisms by which chess could have therapeutic effects are theoretical
 
 ### Cognitive Absorption and Interruption of Rumination
 
-Rumination—mentally replaying negative events, imagining catastrophic scenarios—is a central mechanism in depression and anxiety. It consumes cognitive resources and perpetuates suffering.
+Rumination, mentally replaying negative events, imagining catastrophic scenarios, is a central mechanism in depression and anxiety. It consumes cognitive resources and perpetuates suffering.
 
-A demanding chess game is one of the activities requiring the most cognitive absorption: analyzing a complex position leaves few available resources for ruminating. This is a mechanism of **cognitive interruption** similar to certain mindfulness techniques—not by emptying the mind, but by filling it with a well-defined task.
+A demanding chess game is one of the activities requiring the most cognitive absorption: analyzing a complex position leaves few available resources for ruminating. This is a mechanism of **cognitive interruption** similar to certain mindfulness techniques, not by emptying the mind, but by filling it with a well-defined task.
 
 ### Sense of Competence and Mastery
 
-[Self-determination theory](https://en.wikipedia.org/wiki/Self-determination_theory) (Deci & Ryan, 1985) identifies the **sense of competence** as one of three fundamental psychological needs. People with depression often have a low perception of their efficacy—they feel they don't control their life.
+[Self-determination theory](https://en.wikipedia.org/wiki/Self-determination_theory) (Deci & Ryan, 1985) identifies the **sense of competence** as one of three fundamental psychological needs. People with depression often have a low perception of their efficacy, they feel they don't control their life.
 
 Chess offers visible, objective progression. Solving a tactical problem you couldn't have solved two weeks ago is concrete proof of competence. Improving your Elo rating is a hard-to-deny indicator of progress. These objectifiable "victories" can progressively rebuild the sense of efficacy.
 
@@ -77,7 +77,7 @@ The most rigorous study on the effects of chess on childhood anxiety is by Marí
 
 **Results:** the chess group shows significant reduction in state anxiety and trait anxiety compared to the control group. The effect is moderate but robust.
 
-**Mechanism suggested by the authors:** chess offers a learning environment where errors are valued (every defeat is analyzed), which reduces the fear of failure—a central component of childhood anxiety.
+**Mechanism suggested by the authors:** chess offers a learning environment where errors are valued (every defeat is analyzed), which reduces the fear of failure, a central component of childhood anxiety.
 
 ## Prison Programs: Encouraging Results
 

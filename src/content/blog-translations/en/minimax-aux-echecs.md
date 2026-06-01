@@ -112,7 +112,7 @@ What struck the chess community wasn't just AlphaZero's performance, but its pla
 
 ## Minimax in Your Head
 
-The most fascinating aspect of minimax for the practical player is that it describes what you already do when calculating variations. When you think "if I play there, he can respond this or that. If he responds this, I play this and he's forced to..."—you mentally execute a truncated minimax algorithm.
+The most fascinating aspect of minimax for the practical player is that it describes what you already do when calculating variations. When you think "if I play there, he can respond this or that. If he responds this, I play this and he's forced to...", you mentally execute a truncated minimax algorithm.
 
 Your human limits determine the "depth" of your search. A 1200 player perhaps explores 2-3 levels reliably. A Grandmaster explores 7-10 levels in strategic positions.
 

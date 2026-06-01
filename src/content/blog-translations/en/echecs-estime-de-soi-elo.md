@@ -50,7 +50,7 @@ This is not an isolated case.
 
 ## The Elo: A Brilliant Invention Turned Trap
 
-Arpad Elo was a Hungarian-American physicist. In 1960, he developed a rating system for the USCF (US Chess Federation) that was later adopted by FIDE. His simple algorithm—calculating each player's probability of winning and adjusting ratings based on actual results—was elegant and fair.
+Arpad Elo was a Hungarian-American physicist. In 1960, he developed a rating system for the USCF (US Chess Federation) that was later adopted by FIDE. His simple algorithm, calculating each player's probability of winning and adjusting ratings based on actual results, was elegant and fair.
 
 The Elo system measures one precise thing: relative performance against opponents over a given period. Nothing else. It doesn't measure intelligence, future potential, or the worth of the person playing. It's a performance statistic in a game.
 
@@ -72,7 +72,7 @@ Numbers are **dynamic**: they change after every game. This permanent updating c
 
 Online platforms have created new exposure to rating fluctuation. In the 1990s, a club player saw their FIDE Elo updated every 3 months after a tournament. Today, Chess.com and Lichess update ratings after every game, sometimes several times per day.
 
-**"Elo anxiety"**—a term used informally in the community before appearing in some psychological studies—describes the anxiety specifically tied to the fear of losing rating points.
+**"Elo anxiety"**, a term used informally in the community before appearing in some psychological studies, describes the anxiety specifically tied to the fear of losing rating points.
 
 Its manifestations:
 
@@ -80,7 +80,7 @@ Its manifestations:
 
 *Playing "not to lose"*: adopting a defensive and solid style not out of strategic preference but to minimize the risk of defeat.
 
-*Tilting*: after a loss, immediately replaying quickly to "recover" lost points—an emotional behavior that generally leads to more losses.
+*Tilting*: after a loss, immediately replaying quickly to "recover" lost points, an emotional behavior that generally leads to more losses.
 
 *Preventive pausing*: stopping playing when the rating reaches a "sufficient" level to avoid risking a drop.
 
@@ -88,7 +88,7 @@ Its manifestations:
 
 Sports and educational psychology distinguishes two fundamental motivational styles with direct consequences for how one experiences Elo.
 
-**Ego orientation** (or performance orientation): the individual measures themselves primarily against others. Their sense of competence depends on relative performance—beating opponents, having a higher rating. In an ego-oriented framework, a defeat is a direct threat to self-esteem.
+**Ego orientation** (or performance orientation): the individual measures themselves primarily against others. Their sense of competence depends on relative performance, beating opponents, having a higher rating. In an ego-oriented framework, a defeat is a direct threat to self-esteem.
 
 **Mastery orientation** (or task orientation): the individual measures themselves against themselves and the task. Their sense of competence depends on progress, quality of play, learning. A defeat can be a valuable learning experience, if the play was good and one encountered a tactical resource one hadn't seen.
 
@@ -112,7 +112,7 @@ Moreover, platforms gamify the rating: progression graphs, "personal record" bad
 
 The solution is not to stop caring about Elo. It's to make it one indicator among others in a broader chess identity.
 
-**Define yourself as "someone who loves chess"** rather than "someone with an Elo of X." Love of the game is a stable identity—it doesn't fluctuate after a defeat. Elo is a level indicator at a given moment—it fluctuates by nature.
+**Define yourself as "someone who loves chess"** rather than "someone with an Elo of X." Love of the game is a stable identity, it doesn't fluctuate after a defeat. Elo is a level indicator at a given moment, it fluctuates by nature.
 
 **Celebrate progress independent of rating**: "I found the right defense in that difficult endgame," "I correctly calculated a 5-move variation," "I understood why my pawn structure was weak in that game." These real improvements exist even when Elo stagnates or drops.
 

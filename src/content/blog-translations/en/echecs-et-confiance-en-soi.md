@@ -1,6 +1,6 @@
 ---
 title: "Chess and Self-Confidence: What the Board Actually Builds"
-excerpt: "Confidence in chess doesn't come from a good result—it's built move by move. What performance psychology says about self-efficacy, mindset, and the difference between solid confidence and fragile arrogance."
+excerpt: "Confidence in chess doesn't come from a good result, it's built move by move. What performance psychology says about self-efficacy, mindset, and the difference between solid confidence and fragile arrogance."
 seoTitle: "Chess and Self-Confidence: Building Solid Self-Esteem on the Board"
 seoDescription: "How chess builds self-confidence. Self-efficacy (Bandura), growth mindset (Dweck), post-game analysis: performance psychology applied to the chess player."
 enSlug: "chess-and-self-confidence"
@@ -54,7 +54,7 @@ Bandura showed that self-efficacy predicts performance better than general confi
 
 Bandura identifies four mechanisms that feed or destroy self-efficacy:
 
-**1. Mastery experiences.** The most powerful source. Every time you solve a tactical problem you couldn't have solved three months ago, your brain registers proof of competence. It's not a victory against an opponent (which depends on external factors)—it's a victory against an objective problem.
+**1. Mastery experiences.** The most powerful source. Every time you solve a tactical problem you couldn't have solved three months ago, your brain registers proof of competence. It's not a victory against an opponent (which depends on external factors), it's a victory against an objective problem.
 
 **2. Vicarious learning.** Observing a player of similar level succeed at something difficult increases your sense of being able to do it too. That's why clubs with mixed levels are often more formative than homogeneous groups.
 
@@ -78,7 +78,7 @@ People with a **growth mindset**:
 - Persist through obstacles
 - Draw inspiration from others' success
 
-In chess, the fixed mindset produces a very recognizable phenomenon: the player who avoids rated games to not lose Elo points. Elo, in this logic, has become an indicator of personal value—something to protect rather than a measurement tool.
+In chess, the fixed mindset produces a very recognizable phenomenon: the player who avoids rated games to not lose Elo points. Elo, in this logic, has become an indicator of personal value, something to protect rather than a measurement tool.
 
 ## Elo: Thermometer or Judge?
 
@@ -94,7 +94,7 @@ The problem is that the human brain is wired for social comparison. [Leon Festin
 
 If you had to choose a single practice to build lasting chess confidence, systematic post-game analysis would be the strongest candidate.
 
-Why? Because it transforms an emotionally charged experience (a game, especially a loss) into factual data. And that's exactly what players with a growth mindset do naturally—and what others avoid.
+Why? Because it transforms an emotionally charged experience (a game, especially a loss) into factual data. And that's exactly what players with a growth mindset do naturally, and what others avoid.
 
 Effective post-game analysis follows a precise protocol:
 

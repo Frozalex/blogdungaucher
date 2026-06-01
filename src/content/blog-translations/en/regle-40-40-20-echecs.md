@@ -14,7 +14,7 @@ faq:
       It's a commonly cited heuristic in coaching literature without an identifiable foundational source. It
       synthesizes a recurring observation: club players spend too much time on openings (the most studied
       phase) and not enough on tactics and endgames (which decide most games). The exact percentages are
-      indicative — what matters is the rebalancing principle.
+      indicative, what matters is the rebalancing principle.
   - question: "Does the rule work for all levels?"
     answer: >-
       No. Below 1200 Elo, basic tactical patterns (forks, pins, mate in 1-2) absorb most of the budget:

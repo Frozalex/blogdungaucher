@@ -1,6 +1,6 @@
 ---
 title: "Cheating in Chess: What the Niemann Affair Really Revealed"
-excerpt: "In 2022, Magnus Carlsen implicitly accused Hans Niemann of cheating and withdrew from a tournament. What followed—a 72-page report, a $100 million lawsuit, a divided community—revealed something deeper than one player's fraud."
+excerpt: "In 2022, Magnus Carlsen implicitly accused Hans Niemann of cheating and withdrew from a tournament. What followed, a 72-page report, a $100 million lawsuit, a divided community, revealed something deeper than one player's fraud."
 seoTitle: "Cheating in Chess: The Niemann Affair Decoded"
 seoDescription: "Chess cheating: the Hans Niemann vs Magnus Carlsen affair decoded. How cheating is detected, whether it can be proven, and what the scandal reveals about professional chess."
 enSlug: "cheating-in-chess"
@@ -36,8 +36,8 @@ faq:
     answer: >-
       FIDE strengthened its anti-cheating protocols for elite tournaments: electronic jamming, 15-30 minute
       broadcast delays. Chess.com published its report, setting a precedent of transparency. And the debate
-      on burden of proof — is it for the accused to prove their innocence or for the accuser to prove the
-      fault? — remains open and structurally unresolved.
+      on burden of proof, is it for the accused to prove their innocence or for the accuser to prove the
+      fault?, remains open and structurally unresolved.
 ---
 
 On September 4, 2022, Magnus Carlsen lost to Hans Niemann at the Sinquefield Cup in Saint Louis. The next day, he withdrew from the tournament. He posted a tweet quoting José Mourinho: *"If I speak I am in big trouble."*
@@ -46,7 +46,7 @@ The chess world understood. And didn't quite understand. Because Carlsen had sai
 
 ## An Accusation Without Published Proof
 
-What Magnus Carlsen did was strategically remarkable and legally prudent: he accused Niemann of cheating without ever uttering the word. The tweet, the withdrawal, then a vague statement mentioning things he "cannot say for now"—each gesture was readable as an accusation, none was proof.
+What Magnus Carlsen did was strategically remarkable and legally prudent: he accused Niemann of cheating without ever uttering the word. The tweet, the withdrawal, then a vague statement mentioning things he "cannot say for now", each gesture was readable as an accusation, none was proof.
 
 The reason is simple: publicly accusing someone of cheating without solid documentation exposes you to defamation lawsuits. Carlsen had convictions, probably internal analyses. In a legal universe, a conviction is not proof.
 
@@ -58,7 +58,7 @@ We are in 2026, and we still don't know whether Hans Niemann cheated in that gam
 
 ## The Problem of Proof
 
-This is where the affair becomes interesting—not as gossip, but as an epistemological problem.
+This is where the affair becomes interesting, not as gossip, but as an epistemological problem.
 
 In sports, cheating is generally proven by biomarker. A doped athlete on EPO leaves an objective biological trace in blood or urine. The measurement is direct.
 
@@ -66,7 +66,7 @@ Cheating in chess leaves no biomarker. It leaves a **statistical fingerprint**.
 
 The standard method consists of comparing moves played with the recommendations of the strongest engines (Stockfish or Leela Chess Zero) and calculating a correlation index. If a player exhibits, over a long period, an abnormally high correlation with engine moves, it's suspicious.
 
-The problem is that "abnormally high" is a probabilistic notion, not an absolute one. A grandmaster in peak form can play a game at near-perfect correlation without having cheated—simply because the position was clear and the best moves were obvious. A mid-level player can show suspicious correlation in a single game through normal statistical variance.
+The problem is that "abnormally high" is a probabilistic notion, not an absolute one. A grandmaster in peak form can play a game at near-perfect correlation without having cheated, simply because the position was clear and the best moves were obvious. A mid-level player can show suspicious correlation in a single game through normal statistical variance.
 
 Kenneth Regan, a mathematician at the University of Buffalo and FIDE anti-cheating expert, has documented cases of false positives. Players questioned had their games reanalyzed with more rigorous methods, without a cheating conclusion. The method is useful as a warning signal. It is not proof.
 
@@ -76,7 +76,7 @@ The fundamental difference with anti-doping control is this:
 
 Anti-doping control is **refutable by the accused**: if my blood doesn't contain the substance, I'm cleared. The result is falsifiable in both directions.
 
-Chess cheating detection is **irrefutable by the accused**: I cannot prove that I didn't cheat—I can only demonstrate that the statistics are compatible with legitimate performance. It's not the same thing. The burden of proof is effectively reversed, even if it shouldn't be under law.
+Chess cheating detection is **irrefutable by the accused**: I cannot prove that I didn't cheat, I can only demonstrate that the statistics are compatible with legitimate performance. It's not the same thing. The burden of proof is effectively reversed, even if it shouldn't be under law.
 
 ## What Twenty Years of Engines Have Changed
 
@@ -126,7 +126,7 @@ In the absence of a biomarker, cheating in chess will always remain a gray area.
 
 ## Key Takeaways
 
-- Chess cheating is detected through **statistical correlation** with engines, not through direct proof—which produces false positives and does not constitute legal proof
+- Chess cheating is detected through **statistical correlation** with engines, not through direct proof, which produces false positives and does not constitute legal proof
 - The Niemann/Carlsen affair was **never adjudicated**: lawsuit settled out of court in 2023, with no admission or conviction
 - AI engines have **raised the general level** but made every perfect move suspect: the beauty of the game now passes through the filter of suspicion
 - Cheating in chess is **pre-digital**: AI made it statistically visible, it didn't invent it

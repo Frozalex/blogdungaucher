@@ -99,13 +99,13 @@ A human player, even the world's best, plays an approximation of the optimal str
 
 [Magnus Carlsen](https://en.wikipedia.org/wiki/Magnus_Carlsen), considered by many the best player in history, still commits errors. Stockfish, the best chess engine currently, also commits errors relative to theoretical perfect play.
 
-The difference between Carlsen and Stockfish isn't qualitative (one plays perfectly and the other doesn't)—it's quantitative (one is a finer approximation than the other).
+The difference between Carlsen and Stockfish isn't qualitative (one plays perfectly and the other doesn't), it's quantitative (one is a finer approximation than the other).
 
 ## Perfect Play Isn't Ideal Play
 
 Another dimension of Zermelo's paradox is philosophical. Even if the perfect strategy were written in black and white, would you really play it?
 
-Imagine White had a forced win in 80 moves from the initial position. Playing this forced win would mean every game would, in reality, already be over at move 1. The opponent could play anything—the result would be the same. Chess as a game would cease to exist.
+Imagine White had a forced win in 80 moves from the initial position. Playing this forced win would mean every game would, in reality, already be over at move 1. The opponent could play anything, the result would be the same. Chess as a game would cease to exist.
 
 The fact that chess is so complex that no perfect strategy is known is precisely what makes it alive.
 
@@ -117,7 +117,7 @@ Chess remains open. So does Go.
 
 ## What Zermelo Changes for You at the Board
 
-Knowing chess has an inaccessible mathematical truth—does that change anything for the practical player? Not directly on the board. But it changes how to think about the game.
+Knowing chess has an inaccessible mathematical truth, does that change anything for the practical player? Not directly on the board. But it changes how to think about the game.
 
 Each move you play is an approximation. Each position evaluation is an estimate. Each plan you build is a heuristic. There's no certainty, even for the most solid Grandmaster.
 

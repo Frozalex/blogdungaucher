@@ -64,7 +64,7 @@ In other words: in all accessible worlds (all legal moves), the position is losi
 
 ## Modal Uncertainty in Practice
 
-In practical play, modal logic applies under uncertainty. The player cannot exhaustively verify all accessible worlds—they must heuristically estimate which are possible and which are probable.
+In practical play, modal logic applies under uncertainty. The player cannot exhaustively verify all accessible worlds, they must heuristically estimate which are possible and which are probable.
 
 [Mikhail Botvinnik](https://en.wikipedia.org/wiki/Mikhail_Botvinnik) taught his students to systematically seek "candidate moves": before calculating, identify all moves worthy of examination. This is a filtering procedure of relevant possible worlds.
 
