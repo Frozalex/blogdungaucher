@@ -4,7 +4,7 @@ excerpt: "You've had a winning position for 10 moves. Victory is within reach. A
 seoTitle: "Fear of Winning in Chess: Why Players Sabotage Winning Positions"
 seoDescription: "The fear of winning in chess explained: psychological mechanisms of unconscious sabotage in winning positions. Prospect theory, patterns, and practical solutions."
 enSlug: "fear-of-winning-in-chess"
-draft: true
+draft: false
 ---
 
 The position is clearly winning. The engine would confirm it in a second. Your opponent is in time trouble, out of ideas, their position crumbling. And then, at the precise moment when victory materializes, something strange happens. You play a hesitant move, leave a counter-chance, unnecessarily complicate. The victory evaporates. And you don't quite know why you did that.

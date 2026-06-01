@@ -197,20 +197,14 @@ export function getPostUrlEnSync(post: BlogEntry, enSlug?: string) {
   return `/en/blog/${enSlug ?? getPostSlug(post)}/`;
 }
 
-export function getPostUrlDe(post: BlogEntry) {
-  return `/de/blog/${getPostSlug(post)}/`;
-}
-
-export async function getPostUrlLang(post: BlogEntry, lang: "fr" | "en" | "de"): Promise<string> {
+export async function getPostUrlLang(post: BlogEntry, lang: "fr" | "en"): Promise<string> {
   if (lang === "en") return getPostUrlEn(post);
-  if (lang === "de") return getPostUrlDe(post);
   return getPostUrl(post);
 }
 
 /** Page liste blog : chemins relatifs (évite les URL absolues Astro.pagination avec mauvais hôte/port). */
-export function getBlogIndexPagePath(lang: "fr" | "en" | "de", pageNum: number) {
-  const base =
-    lang === "en" ? "/en/blog" : lang === "de" ? "/de/blog" : "/fr/blog";
+export function getBlogIndexPagePath(lang: "fr" | "en", pageNum: number) {
+  const base = lang === "en" ? "/en/blog" : "/fr/blog";
   if (pageNum <= 1) return `${base}/`;
   return `${base}/${pageNum}/`;
 }
@@ -232,7 +226,7 @@ export function buildBreadcrumbJsonLd(
 
 export async function buildArticleJsonLd(
   post: BlogEntry,
-  options?: { lang?: "fr" | "en" | "de"; headline?: string; description?: string; pageUrl?: string },
+  options?: { lang?: "fr" | "en"; headline?: string; description?: string; pageUrl?: string },
 ) {
   const lang = options?.lang ?? "fr";
   const imagePath = post.data.ogImage ?? siteConfig.defaultOgImage;
@@ -240,14 +234,9 @@ export async function buildArticleJsonLd(
   const category = getCategoryMeta(post.data.category);
   const pageUrl =
     options?.pageUrl ??
-    (lang === "en"
-      ? await getPostUrlEn(post)
-      : lang === "de"
-        ? getPostUrlDe(post)
-        : getPostUrl(post));
+    (lang === "en" ? await getPostUrlEn(post) : getPostUrl(post));
   const articleUrl = absoluteUrl(pageUrl);
-  const inLanguage =
-    lang === "en" ? "en-US" : lang === "de" ? "de-DE" : "fr-FR";
+  const inLanguage = lang === "en" ? "en-US" : "fr-FR";
   const headline =
     options?.headline ?? (post.data.seoTitle ?? post.data.title);
   const description =

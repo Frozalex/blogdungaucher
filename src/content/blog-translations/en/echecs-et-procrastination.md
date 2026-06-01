@@ -4,7 +4,7 @@ excerpt: "Procrastination isn't a time management problem. It's an emotional reg
 seoTitle: "Procrastination and Chess: What the Board Teaches About Decision-Making"
 seoDescription: "Procrastination in chess: emotional avoidance, fear of error, and ambiguity tolerance. What the chessboard teaches about decision-making and overcoming avoidance."
 enSlug: "chess-and-procrastination"
-draft: true
+draft: false
 ---
 
 Move 23. You reach for the bishop. Put it back. Touch the knight. Put it back. Replay the position in your head from move 14, as if retracing the path would reveal the move you can't find. The clock eats 4 minutes during this routine.

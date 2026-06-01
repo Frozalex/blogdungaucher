@@ -91,12 +91,14 @@ const enTranslations = defineCollection({
 });
 
 /**
- * Traductions allemandes des articles FR.
- * Même structure qu’enTranslations : le dossier est vide par défaut,
- * à peupler au fur et à mesure des traductions.
+ * Traductions portugais brésilien (pt-BR) des articles FR.
+ * Architecture prête mais non exposée sur le site : aucune page `/pt-br/`
+ * n'est servie pour l'instant. À activer en créant `src/pages/pt-br/`
+ * et en réintégrant la langue dans BaseLayout / sitemap / navbar.
+ * Le slug du fichier MD doit correspondre au slug FR.
  */
-const deTranslations = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/blog-translations/de" }),
+const ptBrTranslations = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/blog-translations/pt-br" }),
   schema: translationSchema,
 });
 
@@ -116,5 +118,5 @@ const dissertations = defineCollection({
   }),
 });
 
-export const collections = { blog, enTranslations, deTranslations, dissertations };
+export const collections = { blog, enTranslations, ptBrTranslations, dissertations };
 

@@ -4,7 +4,7 @@ excerpt: "The clock doesn't lie. It reveals your relationship with uncertainty, 
 seoTitle: "Chess Time Management: Mastering the Clock and Decision-Making Under Pressure"
 seoDescription: "Zeitnot, analysis paralysis, anchoring bias, optimal time allocation: what decision psychology says about managing the chess clock in tournaments."
 enSlug: "chess-time-management"
-draft: true
+draft: false
 ---
 
 The clock is the great revealer of the game. You can pretend you calculated everything deeply when you had 30 minutes. With 3 minutes left, there's no more pretense: just your raw cognitive habits, under pressure.

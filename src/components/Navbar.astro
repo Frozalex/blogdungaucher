@@ -38,26 +38,26 @@ const linkKey : Record<string, string> = {
   "/fr/esprit/" : "navLinks.esprit",
   "/fr/societe/" : "navLinks.societe",
   "/fr/grand-oral/" : "navLinks.grandOral",
-  "/fr/essais/" : "navLinks.essais",
+  "/fr/dissertations/" : "navLinks.dissertations",
   "/fr/blog/" : "navLinks.blog",
   "/fr/about/" : "navLinks.about",
   "/en/science/" : "navLinks.science",
   "/en/esprit/" : "navLinks.esprit",
   "/en/societe/" : "navLinks.societe",
   "/en/grand-oral/" : "navLinks.grandOral",
-  "/en/essais/" : "navLinks.essais",
+  "/en/dissertations/" : "navLinks.dissertations",
   "/en/blog/" : "navLinks.blog",
   "/en/about/" : "navLinks.about",
   "/de/science/" : "navLinks.science",
   "/de/esprit/" : "navLinks.esprit",
   "/de/societe/" : "navLinks.societe",
   "/de/grand-oral/" : "navLinks.grandOral",
-  "/de/essais/" : "navLinks.essais",
+  "/de/dissertations/" : "navLinks.dissertations",
   "/de/blog/" : "navLinks.blog",
   "/de/about/" : "navLinks.about",
 };
 ---
-<header class="navbar" id="navbar" data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-de-href={deHref ?? "/de/"}>
+<header class="navbar" id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-de-href={deHref ?? "/de/"}>
   <div class="container nav-inner">
 
     <a href={homeHref} class="nav-logo" aria-label={lang === "en" ? "Home - A Left-Hander's Blog" : lang === "de" ? "Startseite - Blog d'un Gaucher" : "Accueil Blog d'un Gaucher"}>
@@ -720,15 +720,15 @@ const linkKey : Record<string, string> = {
     }
 
     function toggleLang() {
-      const order = ["fr", "en", "de"];
+      // DE désactivé : on n'alterne plus que FR ⇄ EN.
+      const order = ["fr", "en"];
       const current = window.__lang || "fr";
       const idx = order.indexOf(current);
-      const next = order[(idx + 1) % 3];
+      const next = order[(idx + 1) % order.length];
       const nav = document.getElementById("navbar");
       const frHref = nav?.dataset.langFrHref;
       const enHref = nav?.dataset.langEnHref;
-      const deHref = nav?.dataset.langDeHref;
-      const map = { fr : frHref, en : enHref, de : deHref };
+      const map = { fr : frHref, en : enHref };
       const target = map[next as keyof typeof map];
       if (target) {
         window.location.href = target;

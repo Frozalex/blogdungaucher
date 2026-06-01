@@ -405,7 +405,7 @@ const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
       <>
         <link rel="alternate" hrefLang="fr" href={frCanonicalUrl} />
         <link rel="alternate" hrefLang="en" href={enCanonicalUrl} />
-        <link rel="alternate" hrefLang="de" href={deCanonicalUrl} />
+        {/* hreflang "de" désactivé : les pages allemandes ne sont plus servies. */}
         <link rel="alternate" hrefLang="x-default" href={frCanonicalUrl} />
       </>
     )}

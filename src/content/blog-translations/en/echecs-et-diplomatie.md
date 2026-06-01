@@ -4,7 +4,7 @@ excerpt: "Fischer vs. Spassky in 1972, Kasparov vs. heads of state, chess clubs 
 seoTitle: "Chess and Diplomacy: The Board as a Geopolitical Tool"
 seoDescription: "Chess and diplomacy: from Fischer-Spassky 1972 to Chess for Peace, how the game served geopolitics, soft power, and reconciliation between peoples in conflict."
 enSlug: "chess-and-diplomacy"
-draft: true
+draft: false
 ---
 
 In 1972, in Reykjavik, two men sat across a chessboard. One was American, eccentric, unpredictable. The other Soviet, calm, product of a champion-making machine. Between them, sixty-four wooden squares. Around them, two nuclear superpowers watching.

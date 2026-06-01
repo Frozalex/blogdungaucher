@@ -4,7 +4,7 @@ excerpt: "Chess burnout is real. It is not laziness or a lack of passion. It is 
 seoTitle: "Chess Burnout: Recognize and Overcome Exhaustion"
 seoDescription: "Chess burnout explained: symptoms, causes and recovery strategies. How to get the pleasure of playing back after competitive exhaustion."
 enSlug: "chess-burnout"
-draft: true
+draft: false
 ---
 
 You open Chess.com. The "Play" button is there, like yesterday. Like the day before. You look at it for thirty seconds. You close the tab.

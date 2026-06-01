@@ -4,7 +4,7 @@ excerpt: "Playing many games without analyzing them is training to repeat your e
 seoTitle: "Analyzing Your Chess Games: Practical Method to Progress"
 seoDescription: "How to analyze your chess games to progress? Method without engine first, recurring errors, intelligent use of Stockfish. A practical guide."
 enSlug: "how-to-analyze-chess-games"
-draft: true
+draft: false
 ---
 
 You just lost a game. Your opponent played something unexpected at move 15, you panicked, and the position deteriorated quickly. You open a new game.

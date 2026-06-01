@@ -4,7 +4,7 @@ excerpt: "Chess seems to be a game of order and pure logic. Yet chaos theory rev
 seoTitle: "Chaos Theory in Chess: Lyapunov, Bifurcations, and Critical Moves"
 seoDescription: "Lyapunov exponent, bifurcation points, Kasparov-Topalov 1999: why a single error tips a chaotic position, and what it changes for your play."
 enSlug: "chaos-theory-in-chess"
-draft: true
+draft: false
 ---
 
 Chess is often described as the game of pure logic, a domain governed by rigor and predictability. And yet, anyone who has played a tactically tense game knows something else operates. One too many moves, a misplaced piece, and the entire structure collapses. What you feel in these moments is chaos in the technical sense.

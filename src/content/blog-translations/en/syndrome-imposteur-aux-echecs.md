@@ -4,7 +4,7 @@ excerpt: "You play well, you win, and yet you're convinced it's luck. That other
 seoTitle: "Impostor Syndrome in Chess: 4 Patterns and How to Escape Them"
 seoDescription: "The 4 patterns of chess impostor syndrome: validated mechanisms, concrete strategies (journal, attribution, exposure). Complete guide for all levels."
 enSlug: "impostor-syndrome-in-chess"
-draft: true
+draft: false
 ---
 
 You won your club tournament. Congratulations and handshakes. And in your head, a voice: "They played badly this weekend. Next week, they'll see my real level." You represent your country in a regional competition. In your head: "If only they knew how much I struggled with basic positions this week." You analyze a position brilliantly and a strong player nods. In your head: "He's just being polite."

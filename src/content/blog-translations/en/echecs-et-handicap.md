@@ -4,7 +4,7 @@ excerpt: "Blind players calculate deep variations through touch. Players with qu
 seoTitle: "Chess and Disability: The Board as an Inclusion Space"
 seoDescription: "Chess and disability: blind players, autism, quadriplegia, motor impairment. How the game adapts and creates spaces of inclusion and cognitive equality."
 enSlug: "chess-and-disability"
-draft: true
+draft: false
 ---
 
 Timur Gareyev is a Grandmaster. In 2016, he played 48 simultaneous blindfold games—a world record. He wore a blindfold, sat astride a stationary bicycle, and calculated 48 positions simultaneously for 19 hours.

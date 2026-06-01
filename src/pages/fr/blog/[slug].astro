@@ -26,7 +26,6 @@ import {
   getPostSlug,
   getPostUrl,
   getPostUrlEn,
-  getPostUrlDe,
   getPostHeroSrc,
 } from "../../../utils/blog";
 import {
@@ -109,7 +108,6 @@ const otherPillars = categorySlugs
   accentColor={category.accent}
   tags={post.data.tags}
   enPath={grandOralOnly ? "/en/blog/" : postUrlEn}
-  dePath={grandOralOnly ? "/de/blog/" : getPostUrlDe(post)}
   omitEnDeAlternateLinks={grandOralOnly}
 >
   <article class="article-page" style={`--c:${category.accent}`} data-pagefind-meta={`accent:${category.accent}`}>

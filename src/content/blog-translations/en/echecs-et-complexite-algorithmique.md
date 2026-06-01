@@ -4,7 +4,7 @@ excerpt: "The number of possible chess games exceeds the number of atoms in the 
 seoTitle: "Chess Algorithmic Complexity: Why AI Took 50 Years"
 seoDescription: "Shannon number, alpha-beta pruning, Deep Blue, AlphaZero: chess algorithmic complexity explained, and why beating humans was so difficult."
 enSlug: "chess-algorithmic-complexity"
-draft: true
+draft: false
 ---
 
 In 1950, Claude Shannon (founder of information theory) published an article titled "Programming a Computer for Playing Chess." He hadn't yet written the programs. He was calculating whether it was even *possible*.

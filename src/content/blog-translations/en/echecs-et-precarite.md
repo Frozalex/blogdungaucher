@@ -4,7 +4,7 @@ excerpt: "Chess has produced champions born in extreme poverty, Grandmasters fro
 seoTitle: "Chess and Poverty: Can the Board Transcend Inequalities?"
 seoDescription: "Chess in the Slums, cultural capital, access to resources: chess facing social inequalities — the promise of emancipation and structural realities."
 enSlug: "chess-and-poverty"
-draft: true
+draft: false
 ---
 
 Lagos, 2018. Tunde Onakoya sets up a chessboard in an Oshodi slum. The children playing in the street come closer, curious. He has no room, no chairs, no computers. He has pieces, a board, and an idea.

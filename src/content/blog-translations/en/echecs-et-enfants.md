@@ -4,7 +4,7 @@ excerpt: "At what age is a child ready for chess? Which methods work according t
 seoTitle: "Teaching Chess to Children: Ideal Age, Methods, and Benefits"
 seoDescription: "When to start teaching chess to children? Age-adapted methods, cognitive development, real benefits on executive functions: a complete guide for parents."
 enSlug: "teaching-chess-to-children"
-draft: true
+draft: false
 ---
 
 Can a 5-year-old learn chess? The short answer: some yes, most no—not the full rules. The more useful question is: how to adapt learning to each age so that chess is a joyful and beneficial experience?

@@ -4,7 +4,7 @@ excerpt: "'Anything that can go wrong will go wrong': in chess, this phrase reso
 seoTitle: "Murphy's Law in Chess: Why Blunders Always Strike at the Worst Moment"
 seoDescription: "Murphy's Law applied to chess: selective memory, stress, zeitnot, and cognitive biases. Why errors always seem cruelly well-placed."
 enSlug: "murphys-law-in-chess"
-draft: true
+draft: false
 ---
 
 You're holding a decent game. You dominate time on the clock. And then, at the moment when everything seems settled, you play the move that destroys everything. Or you hold an honorable draw in a technical endgame, you fatigue, and defeat arrives exactly where you feared. At that moment, the phrase loops back: "Of course. It was written."

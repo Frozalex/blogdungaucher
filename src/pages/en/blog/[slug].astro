@@ -23,7 +23,6 @@ import {
   getPostSlug,
   getPostUrl,
   getPostUrlEnSync,
-  getPostUrlDe,
   getPostHeroSrc,
 } from "../../../utils/blog";
 import { renderEnglishMarkdown } from "../../../utils/english-article";
@@ -150,7 +149,6 @@ const otherPillars = categorySlugs
   lang="en"
   frPath={postUrlFr}
   enPath={postUrlEn}
-  dePath={getPostUrlDe(post)}
   image={post.data.ogImage ?? siteConfig.defaultOgImage}
   type="article"
   publishDate={post.data.publishDate}

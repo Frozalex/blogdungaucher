@@ -4,7 +4,7 @@ excerpt: "Every tense move, every combination found, every hard-won victory trig
 seoTitle: "Dopamine and Chess: How Neurochemistry Explains the Fascination"
 seoDescription: "Reward circuit, anticipation, dopamine signal: what neuroscience reveals about why chess is so captivating and sometimes compulsive."
 enSlug: "chess-and-dopamine"
-draft: true
+draft: false
 ---
 
 Your brain does not distinguish between a good chess combination and a pizza. In both cases, the same circuits activate, the same neurotransmitters flow, and the same "do it again" signal is sent. The difference lies in the nature and duration of the cognitive engagement that precedes the reward.

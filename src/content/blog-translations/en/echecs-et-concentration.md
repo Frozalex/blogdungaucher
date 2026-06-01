@@ -4,7 +4,7 @@ excerpt: "Concentration is not a state that happens when you're lucky. It is a s
 seoTitle: "Chess and Concentration: Train Your Attention to Play Better"
 seoDescription: "Train concentration for chess: sustained attention, control network, mindfulness and micro-breaks. What neuroscience says about attention at the board."
 enSlug: "chess-and-concentration"
-draft: true
+draft: false
 ---
 
 There is an illusion about concentration: we think we either have it or we don't, that it happens when conditions are good and disappears when they aren't. This view is comfortable because it absolves us of all responsibility.

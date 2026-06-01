@@ -4,7 +4,7 @@ excerpt: "You reached 2000 Elo. An incredible victory. And yet, something is off
 seoTitle: "Why Crossing 2000 Elo Triggers Impostor Syndrome"
 seoDescription: "Reaching 2000 Elo and feeling illegitimate: why impostor syndrome strikes at thresholds. Rating psychology, perfectionism, and self-confidence."
 enSlug: "impostor-syndrome-2000-elo"
-draft: true
+draft: false
 ---
 
 You worked for months. You studied openings, solved thousands of tactics, calmly analyzed your games. And then, one day, the number appears: 2000. A symbolic frontier most players never cross. You should be proud. Instead, a small inner voice whispers: "It's not real. You'll drop back. Others will see through it."

@@ -4,7 +4,7 @@ excerpt: "The clock is ticking, your position is difficult, and you feel your he
 seoTitle: "Chess Tournament Stress: Psychology and Physiology of Performance Under Pressure"
 seoDescription: "Cortisol, performance anxiety, cardiac coherence: how stress science explains mistakes under pressure in chess and how to manage them better."
 enSlug: "chess-tournament-stress"
-draft: true
+draft: false
 ---
 
 Your heart rate has increased. Your hands are slightly damp. The clock ticks away the seconds and the position on the board is difficult: not lost, but difficult. You need to calculate, and your brain seems to have decided to slow down precisely now.

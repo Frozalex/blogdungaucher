@@ -4,7 +4,7 @@ excerpt: "For a refugee who doesn't speak the host country's language, the chess
 seoTitle: "Chess and Immigration: The Board as Common Language and Integration Tool"
 seoDescription: "Chess for Refugees, history of immigrant GMs, board as lingua franca: how chess facilitates integration and reflects migration movements."
 enSlug: "chess-and-immigration"
-draft: true
+draft: false
 ---
 
 Berlin, winter 2015. Hundreds of thousands of refugees arrive in Germany. Associations seek activities that don't require mastering German: language learning takes months, and the community needs contact points now.

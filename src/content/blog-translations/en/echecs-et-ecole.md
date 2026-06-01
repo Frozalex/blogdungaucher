@@ -4,7 +4,7 @@ excerpt: "Armenia made chess compulsory in primary schools. Venezuela launched t
 seoTitle: "Chess in Schools: Real Benefits for Learning According to Science"
 seoDescription: "Sala & Gobet meta-analysis, Armenian program, Venezuela: what research really says about the impact of school chess on academic results and cognitive development."
 enSlug: "chess-in-schools"
-draft: true
+draft: false
 ---
 
 In 2011, Armenia did something few countries have dared: make chess compulsory in all primary schools. Not as an optional extracurricular activity, not as a pilot project in a few volunteer classes. As a curriculum subject, on the same footing as math or reading. Three hours per week, for all students aged 6 to 9.

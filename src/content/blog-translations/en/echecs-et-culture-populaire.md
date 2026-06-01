@@ -4,7 +4,7 @@ excerpt: "The chessboard has invaded cinema, literature, music, and series. Not 
 seoTitle: "Chess and Popular Culture: From Bergman to The Queen's Gambit"
 seoDescription: "The Queen's Gambit, cinema, literature, Twitch, and memes: how chess invaded popular culture and changed its image in the mainstream."
 enSlug: "chess-and-popular-culture"
-draft: true
+draft: false
 ---
 
 On October 23, 2020, Netflix released the first episode of *The Queen's Gambit*. The next day, Chess.com recorded its biggest daily registration peak in history. Sales of physical chess sets increased by 87% in the United States within a month. Mothers watching the series signed up online after the final episode.

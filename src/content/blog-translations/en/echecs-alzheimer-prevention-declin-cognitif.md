@@ -4,7 +4,7 @@ excerpt: "Figures from recent literature: meta-analyses, cohorts, and trials on 
 seoTitle: "Chess and Alzheimer's: Studies, Figures, and Cognitive Prevention"
 seoDescription: "Chess and Alzheimer's: quantitative data on cognitive games and dementia. MMSE meta-analyses, ALSOP cohorts, clinical trials in elderly."
 enSlug: "chess-and-alzheimer-prevention"
-draft: true
+draft: false
 ---
 
 Sensationalist headlines sometimes promise a "weapon" against the pathology often called Alzheimer's in the media.

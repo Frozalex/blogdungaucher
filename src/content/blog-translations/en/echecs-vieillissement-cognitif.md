@@ -4,7 +4,7 @@ excerpt: "At 70, Korchnoi was still playing Candidates matches. At 80, club play
 seoTitle: "Cognitive Reserve and Chess After 60: What Neuroplasticity Says"
 seoDescription: "How chess delays cognitive decline after 60: cognitive reserve, senior neuroplasticity, comparison between blitz and slow games."
 enSlug: "chess-and-cognitive-aging"
-draft: true
+draft: false
 ---
 
 Viktor Korchnoi played his last official tournament at 81. At 77, he was still competing against active Grandmasters at super-tournament level. He lost more often than he won, but he played, at a level 99.9% of the population will never reach at any age.

@@ -4,7 +4,7 @@ excerpt: "Can we mathematically predict when an opponent will blunder? Bayesian 
 seoTitle: "Predicting Blunders with Bayesian Networks: Estimating Opponent Error"
 seoDescription: "How Bayesian networks and Bayesian statistics estimate the probability of an opponent's blunder in chess. Methods and practical applications."
 enSlug: "bayesian-networks-predict-blunders"
-draft: true
+draft: false
 ---
 
 A blunder is rarely totally unpredictable. Before it occurs, signals exist: the clock running wild, a complex position the opponent isn't used to handling, a long forcing sequence that their level makes difficult to calculate entirely. These signals, taken together, form a probabilistic portrait of error risk. [Bayesian networks](https://en.wikipedia.org/wiki/Bayesian_network) formalize precisely this type of reasoning.

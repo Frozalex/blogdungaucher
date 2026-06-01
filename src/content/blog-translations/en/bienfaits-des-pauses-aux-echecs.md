@@ -4,7 +4,7 @@ excerpt: "Playing less to progress more: it sounds absurd, and yet cognitive rec
 seoTitle: "Breaks in Chess: Why Stopping Makes You Better"
 seoDescription: "Why breaks make you better at chess: memory consolidation, cognitive fatigue, sleep, and rage-queue. Concrete protocols for tournaments and training."
 enSlug: "benefits-of-breaks-in-chess"
-draft: true
+draft: false
 ---
 
 The player who progresses fastest isn't always the one who plays the most. It's often the one who knows when to stop. The break isn't wasted time: it's an integral part of the learning, consolidation, and recovery process.

@@ -4,7 +4,7 @@ excerpt: "Why do some children progress twice as fast as others with identical t
 seoTitle: "Genetics and Chess Talent: What Science Says About Nature vs. Nurture"
 seoDescription: "Heritability, twin studies, deliberate practice and IQ: what research really says about the role of genes in chess talent and performance."
 enSlug: "chess-and-genetics"
-draft: true
+draft: false
 ---
 
 In 1965, Hungarian psychologist Laszlo Polgar published an essay titled "Genius Can Be Learned." His thesis: any person can become an expert in any domain with adapted training started early enough. To prove it, he decided to raise his three daughters (Susan, Sofia, and Judit) as professional chess players from their earliest childhood.

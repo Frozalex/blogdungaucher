@@ -4,7 +4,7 @@ excerpt: "In 2012, Twitch didn't exist. In 2024, Hikaru Nakamura is one of the m
 seoTitle: "Chess and Streaming: How Twitch and YouTube Revolutionized the Game"
 seoDescription: "Chess streaming: Hikaru Nakamura, GothamChess, Botez, Chess.com and Twitch. How streaming transformed chess into a viral phenomenon and democratized the game."
 enSlug: "chess-and-streaming"
-draft: true
+draft: false
 ---
 
 On September 4, 2017, Hikaru Nakamura (American Grandmaster, 5-time national champion) streamed live on Twitch for the first time. He had no widely recognized public face. He spoke about his moves out loud, made analyses, answered the chat. The audience was modest.

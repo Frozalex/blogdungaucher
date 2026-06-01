@@ -4,7 +4,7 @@ excerpt: "Meditation won't make you a better calculator. But it changes what you
 seoTitle: "Meditation and Chess: Mindfulness for Better Play"
 seoDescription: "MBSR, Default Mode Network, emotional regulation: what mindfulness research says about its contribution to chess performance and mental toughness."
 enSlug: "chess-and-meditation"
-draft: true
+draft: false
 ---
 
 The idea that meditating improves cognitive performance is one of those that meet the most skepticism, and the most misplaced enthusiasm. The reality is more precise than either camp: meditation won't make you a faster calculator, but it profoundly changes what you do with the cognitive resources you already have.

@@ -4,7 +4,7 @@ excerpt: "Chess may be the only competitive sport where solitude is not a state 
 seoTitle: "Solitude in Chess: When the Rules Isolate You"
 seoDescription: "Chess imposes a regulatory solitude unique in sport. Psychological effects, the club paradox, impact of online play on player isolation."
 enSlug: "solitude-in-chess"
-draft: true
+draft: false
 ---
 
 There's a rule in the FIDE regulations that non-players don't know about and that players find so natural they never mention it. During a game, you are not allowed to communicate with anyone. Not your coach, not your entourage, not the audience. A glance that lingers too long toward the stands can be interpreted as a signaling attempt.

@@ -4,7 +4,7 @@ excerpt: "When a chess player enters flow state, time stops, distractions vanish
 seoTitle: "Chess and Flow: How to Reach the Optimal Performance Zone"
 seoDescription: "Csikszentmihalyi's flow state in chess: conditions, challenge-skill balance, time distortion, and how to enter and sustain peak performance at the board."
 enSlug: "chess-and-flow"
-draft: true
+draft: false
 ---
 
 There are games where everything aligns. You stop thinking "I have thirty minutes on the clock" or "if I lose I'll drop below 1800." You think about the position. Nothing else. The pieces seem to move according to a logic you understand from within, the variation unfolds in your mind with an almost physical clarity, and when you finally place your hand on the piece, the gesture is natural, almost inevitable.

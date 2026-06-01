@@ -4,7 +4,7 @@ excerpt: "The Elo rating is a brilliant invention for measuring playing strength
 seoTitle: "Elo Rating and Self-Esteem: When Chess Rating Becomes Identity"
 seoDescription: "Elo anxiety, ego vs mastery orientation, identity and performance: the psychology of Elo rating and how to decouple your self-esteem from your chess rating."
 enSlug: "elo-and-self-esteem"
-draft: true
+draft: false
 ---
 
 A few years ago, I met a club player who had refused to play in tournaments for two years. His explanation: "I climbed to 1680 and I don't want to drop below that. In a tournament, I risk losing points."

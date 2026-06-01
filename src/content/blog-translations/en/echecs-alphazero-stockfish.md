@@ -9,7 +9,7 @@ seoDescription: >-
   AlphaZero vs Stockfish 2017 match, reinforcement learning, revolutionary playing style: how AlphaZero changed chess
   and AI.
 enSlug: "alphazero-vs-stockfish"
-draft: true
+draft: false
 faq:
   - question: Is AlphaZero still the strongest chess program?
     answer: >-

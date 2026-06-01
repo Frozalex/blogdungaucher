@@ -4,7 +4,7 @@ excerpt: "Adults systematically avoid situations where they're going to lose to 
 seoTitle: "Learning to Lose at Chess: What No One Really Says"
 seoDescription: "Do chess really teach you to lose? Loss aversion, Elo, public defeat, grandmasters: an honest analysis of a common assumption about chess."
 enSlug: "learning-to-lose-at-chess"
-draft: true
+draft: false
 ---
 
 There's something strange that happens in chess clubs that nobody articulates explicitly. At the end of the game, the loser extends their hand to the winner. Not in a hallway, not in a locker room, not after a moment of solitude to recover. Immediately, on the table, in front of the other players who can still watch.

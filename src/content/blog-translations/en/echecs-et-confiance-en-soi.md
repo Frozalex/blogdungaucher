@@ -4,7 +4,7 @@ excerpt: "Confidence in chess doesn't come from a good result—it's built move 
 seoTitle: "Chess and Self-Confidence: Building Solid Self-Esteem on the Board"
 seoDescription: "How chess builds self-confidence. Self-efficacy (Bandura), growth mindset (Dweck), post-game analysis: performance psychology applied to the chess player."
 enSlug: "chess-and-self-confidence"
-draft: true
+draft: false
 ---
 
 There's a persistent misconception in chess clubs: confidence comes from victories. You win, you feel good, you play better. It's logical, even seductive. It's also largely false.

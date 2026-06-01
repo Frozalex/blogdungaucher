@@ -4,7 +4,7 @@ excerpt: "Perfectionism seems like a quality in chess: seeking the best move, an
 seoTitle: "Toxic Perfectionism in Chess: Effects and Solutions"
 seoDescription: "How perfectionism becomes toxic in chess. Analysis paralysis, fear of error, stagnation: the mechanisms and practical solutions."
 enSlug: "chess-toxic-perfectionism"
-draft: true
+draft: false
 ---
 
 A perfectionist player seems, at first glance, to be a serious player. They analyze deeply, they're not satisfied with "good" moves when the best exists, they spend time understanding their errors. It's admirable. Until the point where it's not. Until the point where they can't play a game without every move costing disproportionate anxiety. Until the point where they'd rather not play than risk an imperfect defeat.

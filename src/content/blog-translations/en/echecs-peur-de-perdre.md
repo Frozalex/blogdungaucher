@@ -4,7 +4,7 @@ excerpt: "The fear of losing changes everything in chess. It transforms playing 
 seoTitle: "Fear of Losing in Chess: Psychology and Solutions"
 seoDescription: "Fear of losing in chess: psychological mechanisms, loss aversion, performance anxiety and concrete strategies to play freely and rediscover enjoyment."
 enSlug: "fear-of-losing-in-chess"
-draft: true
+draft: false
 ---
 
 There is something about the fear of losing in chess that distinguishes it from the simple disappointment of a sports defeat. In chess, the loss is irrefutable. There is no biased referee, no bad luck to invoke. When you lose, you played worse than your opponent, and it is visible in every line of the scoresheet. This absolute transparency of failure makes the fear of losing particularly powerful and particularly distorting.

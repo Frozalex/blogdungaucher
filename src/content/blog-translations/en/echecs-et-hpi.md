@@ -4,7 +4,7 @@ excerpt: "Gifted children are often described as made for chess. The reality is 
 seoTitle: "Chess and Giftedness (HPI): Benefits and Precautions"
 seoDescription: "Is the chessboard ideal for gifted children? Stimulation, perfectionism, managing failure: what research on intellectual precocity says about chess."
 enSlug: "chess-and-giftedness"
-draft: true
+draft: false
 ---
 
 "My son is gifted and bored at school. Would chess suit him?"

@@ -4,7 +4,7 @@ excerpt: "Every grandmaster has a particular relationship with defeat. Not indif
 seoTitle: "Chess Resilience: How to Bounce Back After a Loss and Improve"
 seoDescription: "Explanatory style, self-distancing, post-defeat analysis: what resilience psychology says about managing chess losses and progressing through them."
 enSlug: "chess-resilience"
-draft: true
+draft: false
 ---
 
 [Viktor Korchnoi](https://en.wikipedia.org/wiki/Viktor_Korchnoi) played chess at the highest level until age 81. He lost thousands of games during his career: including two World Championship finals, against Karpov, under psychologically exhausting conditions. And he came back. Always.

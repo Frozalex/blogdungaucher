@@ -4,7 +4,7 @@ excerpt: "In 2022, Magnus Carlsen implicitly accused Hans Niemann of cheating an
 seoTitle: "Cheating in Chess: The Niemann Affair Decoded"
 seoDescription: "Chess cheating: the Hans Niemann vs Magnus Carlsen affair decoded. How cheating is detected, whether it can be proven, and what the scandal reveals about professional chess."
 enSlug: "cheating-in-chess"
-draft: true
+draft: false
 ---
 
 On September 4, 2022, Magnus Carlsen lost to Hans Niemann at the Sinquefield Cup in Saint Louis. The next day, he withdrew from the tournament. He posted a tweet quoting José Mourinho: *"If I speak I am in big trouble."*

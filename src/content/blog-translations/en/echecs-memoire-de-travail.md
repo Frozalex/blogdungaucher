@@ -4,7 +4,7 @@ excerpt: "You can know every opening, every endgame, and still be limited by a f
 seoTitle: "Working Memory and Chess: The Cognitive Bottleneck"
 seoDescription: "Working memory in chess: Baddeley's model, chunks, 4-7 element capacity. How this cognitive bottleneck limits variation calculation and what to do about it."
 enSlug: "chess-and-working-memory"
-draft: true
+draft: false
 ---
 
 Imagine you're calculating a 6-move variation. You mentally advance the pawn, your opponent responds with the knight, you develop the bishop, the knight jumps again, your rook enters the game, and—

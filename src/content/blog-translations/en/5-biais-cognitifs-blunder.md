@@ -4,7 +4,7 @@ excerpt: "Your blunders aren't all calculation errors. Many are errors of percep
 seoTitle: "5 Cognitive Biases That Cause Chess Blunders"
 seoDescription: "The 5 most frequent cognitive biases that cause blunders in chess. Psychology of error, Kahneman, and how to train your brain to avoid them."
 enSlug: "5-cognitive-biases-blunder"
-draft: true
+draft: false
 ---
 
 You calculated everything - or so you thought. Then the blunder: "how could I have missed that?" Rarely because you ran out of computing time; almost always because **the brain made the call with a bias**, not with a calculation error. Cognitive science has mapped these drifts; five of them stick especially well to the chessboard.

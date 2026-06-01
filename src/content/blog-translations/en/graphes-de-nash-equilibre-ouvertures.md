@@ -4,7 +4,7 @@ excerpt: "Why do some openings last decades without being refuted? The Nash equi
 seoTitle: "Nash Equilibrium and Openings: Why the Ruy Lopez Lasts 200 Years"
 seoDescription: "Sicilian, Berlin Defense, Selten refinements: how Nash equilibrium explains the stability of chess openings and their most famous breakthroughs."
 enSlug: "nash-equilibrium-openings"
-draft: true
+draft: false
 ---
 
 Why is the Sicilian Defense played at every level for a hundred years? Why hasn't the Ruy Lopez been "refuted" despite centuries of analysis? Why do some theoretical variations collapse in a few years while others seem indestructible? The answer lies in a mathematical concept developed by [John Nash](https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.) in 1950: the Nash equilibrium.

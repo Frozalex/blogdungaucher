@@ -4,7 +4,7 @@ excerpt: "Every player reasons in terms of possibilities and necessities: 'he ca
 seoTitle: "Modal Logic in Chess: Thinking in Possibilities and Necessities"
 seoDescription: "How formal modal logic structures chess reasoning. Necessity, possibility, possible worlds: the tools of logic applied to the chessboard."
 enSlug: "modal-logic-in-chess"
-draft: true
+draft: false
 ---
 
 When you analyze a position, you don't think in terms of certainties. You think in terms of possibilities and necessities. "He can play there." "I must protect this piece." "If I push this pawn, he's forced to respond this way." This modal language, of the possible and the necessary, is at the heart of chess reflection. And it corresponds exactly to a formal branch of logic: [modal logic](https://en.wikipedia.org/wiki/Modal_logic).

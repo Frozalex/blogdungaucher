@@ -4,7 +4,7 @@ excerpt: "Memory, focus, plasticity, aging: chess has real, documented effects o
 seoTitle: "Cognitive Benefits of Chess: Memory, Attention and Brain Plasticity"
 seoDescription: "Working memory, brain plasticity, protection against cognitive aging: what research actually measures about the effects of chess on the brain."
 enSlug: "chess-benefits-for-the-brain"
-draft: true
+draft: false
 ---
 
 Do chess really do something to the brain? The answer sits between two caricatures: "it makes you smart" and "it is marketing." Published data already allows us to sort the question by levels of evidence.

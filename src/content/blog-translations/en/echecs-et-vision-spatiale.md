@@ -4,7 +4,7 @@ excerpt: "Visualizing 8 moves ahead without touching the pieces. Mentally calcul
 seoTitle: "Chess and Spatial Vision: How the Board Trains the Visuospatial Brain"
 seoDescription: "Chess and spatial vision: mental rotation, visualization, blindfold chess. How the game develops visuospatial abilities according to neuroscience."
 enSlug: "chess-and-spatial-vision"
-draft: true
+draft: false
 ---
 
 [Viswanathan Anand](https://en.wikipedia.org/wiki/Viswanathan_Anand) played 8 chess games simultaneously, blindfolded, without seeing a single board, beating all his opponents. In his head: 8 different positions, each with dozens of pieces, distinct game histories, plans and counter-plans—all maintained simultaneously for hours.

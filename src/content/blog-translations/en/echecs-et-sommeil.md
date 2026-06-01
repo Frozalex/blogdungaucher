@@ -4,7 +4,7 @@ excerpt: "A grandmaster who sleeps poorly plays about 10% worse by the second ho
 seoTitle: "Chess and Sleep: How Cognitive Recovery Boosts Your Progress"
 seoDescription: "REM sleep, memory consolidation, sleep deprivation and chess performance: what neuroscience says about the night as invisible training."
 enSlug: "chess-and-sleep"
-draft: true
+draft: false
 ---
 
 Imagine you have an invisible coach who consolidates your opening repertoire while you sleep, who connects the tactical patterns you studied today to those you've known for years, and who erases the interference between the variations you just learned and the old ones. This coach exists. It is your sleep.

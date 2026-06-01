@@ -4,7 +4,7 @@ excerpt: "Grandmasters play dozens of simultaneous blindfold games. It's not mag
 seoTitle: "Chess Mental Visualization: Seeing Without Looking"
 seoDescription: "How to visualize the chessboard without seeing it. Blindfold chess, cognitive chunks, Chase and Simon study, training methods: the science of mental representation in chess."
 enSlug: "chess-mental-visualization"
-draft: true
+draft: false
 ---
 
 Philidor played three simultaneous blindfold games. His 18th-century audience was stunned: how could a man hold three chessboards in his head simultaneously?

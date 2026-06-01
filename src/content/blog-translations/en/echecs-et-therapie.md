@@ -4,7 +4,7 @@ excerpt: "From Italian prisons to English psychiatric hospitals, from American r
 seoTitle: "Chess as Therapy: PTSD, Depression, Anxiety — What Research Says"
 seoDescription: "Chess and mental health: studies on anxiety, depression, PTSD, prison rehabilitation. What research says about the chessboard as a therapeutic tool."
 enSlug: "chess-as-therapy"
-draft: true
+draft: false
 ---
 
 In 1795, physician [Philippe Pinel](https://en.wikipedia.org/wiki/Philippe_Pinel), reformer of psychiatry in Paris, recommended chess to patients at the Salpêtrière as a structuring and stimulating activity. Two centuries later, psychiatrists and educators on four continents use the chessboard in very different therapeutic contexts: prisons, hospitals, refugee centers, programs for military veterans.
