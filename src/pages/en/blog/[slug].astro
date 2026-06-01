@@ -33,6 +33,7 @@ import {
 } from "../../../utils/markdown-strip-faq";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleVideo from "../../../components/ArticleVideo.astro";
+import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import { isPublicAssetAvailable } from "../../../utils/public-asset";
 
 export async function getStaticPaths() {
@@ -247,6 +248,10 @@ const otherPillars = categorySlugs
           )}
         </div>
 
+        {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
+          <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
+        )}
+
         <AdBanner format="inline" compact={true} />
 
         {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="en" />}
@@ -441,16 +446,105 @@ const otherPillars = categorySlugs
   .meta-updated svg { flex-shrink: 0; color: var(--c); opacity: 0.85; }
   .meta-updated time { font-weight: 600; color: var(--text-main); }
 
-  .article-body { line-height: 1.8; font-size: 1.02rem; color: var(--text-muted); }
-  .article-body :global(h2) { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--text-main); margin: 2.2rem 0 0.7rem; }
-  .article-body :global(h3) { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--text-main); margin: 1.8rem 0 0.5rem; }
-  .article-body :global(p) { margin-bottom: 1.1rem; }
-  .article-body :global(a) { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
-  .article-body :global(ul), .article-body :global(ol) { padding-left: 1.4rem; margin-bottom: 1.1rem; }
-  .article-body :global(li) { margin-bottom: 0.3rem; }
-  .article-body :global(blockquote) { border-left: 3px solid var(--c, var(--green)); padding: 0.6rem 1rem; margin: 1.4rem 0; color: var(--text-muted); font-style: italic; background: color-mix(in srgb, var(--c, var(--green)) 6%, var(--surface)); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+  /* article body – same rich styles as FR */
+  .article-body {
+    padding: 2rem 0;
+  }
+  .article-body :global(h2) {
+    margin: 1.9rem 0 0.7rem;
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.65rem;
+    letter-spacing: -0.01em;
+    color: color-mix(in srgb, var(--c) 72%, var(--text-main));
+    font-optical-sizing: auto;
+  }
+  .article-body :global(h3) {
+    margin: 1.4rem 0 0.5rem;
+    font-size: 1.18rem;
+    color: var(--text-main);
+  }
+  .article-body :global(p),
+  .article-body :global(li) { color: var(--text-muted); line-height: 1.75; }
+  .article-body :global(p:first-of-type)::first-letter {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3.4em;
+    line-height: 0.9;
+    float: left;
+    padding: 0.22rem 0.6rem 0 0;
+    color: var(--c);
+  }
+  .article-body :global(li::marker) { color: color-mix(in srgb, var(--c) 55%, var(--text-dim)); }
+  .article-body :global(p + p),
+  .article-body :global(p + ul),
+  .article-body :global(ul + p) { margin-top: 0.85rem; }
+  .article-body :global(ul),
+  .article-body :global(ol) { padding-left: 1.2rem; }
+  .article-body :global(li + li) { margin-top: 0.3rem; }
+  .article-body :global(strong) { color: var(--text-main); }
+  .article-body :global(a) {
+    color: var(--c);
+    font-weight: 600;
+    text-decoration: none;
+    background-image: linear-gradient(
+      to top,
+      color-mix(in srgb, var(--c) 16%, transparent) 0%,
+      color-mix(in srgb, var(--c) 16%, transparent) 36%,
+      transparent 36%
+    );
+    border-radius: 0.2rem;
+    padding: 0 0.05rem;
+    transition:
+      color 160ms ease,
+      background-size 160ms ease,
+      background-color 160ms ease;
+  }
+  .article-body :global(a:hover) {
+    color: color-mix(in srgb, var(--c) 80%, black);
+    background-image: linear-gradient(
+      to top,
+      color-mix(in srgb, var(--c) 22%, transparent) 0%,
+      color-mix(in srgb, var(--c) 22%, transparent) 42%,
+      transparent 42%
+    );
+  }
+  .article-body :global(a[href^="http"])::after {
+    content: " ↗";
+    font-size: 0.8em;
+    font-weight: 700;
+    opacity: 0.75;
+  }
+  .article-body :global(blockquote) {
+    margin: 1.25rem 0;
+    padding: 0.9rem 1.2rem;
+    border-left: 3px solid var(--c);
+    background: color-mix(in srgb, var(--c) 7%, var(--surface));
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    color: var(--text-main);
+    font-style: italic;
+  }
+  .article-body :global(hr) { border: none; border-top: 1px solid var(--border-soft); margin: 1.5rem 0; }
+  .article-body :global(code) {
+    font-size: 0.88em;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    background: var(--bg-warm);
+    color: var(--text-main);
+  }
+  .article-body :global(hr + h3) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: 0 0.8rem;
+    border-radius: var(--radius-pill);
+    background: color-mix(in srgb, var(--c) 10%, white);
+    border: 1px solid color-mix(in srgb, var(--c) 16%, var(--border-soft));
+    margin-top: 1.8rem;
+  }
   .article-body :global(pre) { border-radius: var(--radius-sm); padding: 1rem 1.2rem; overflow-x: auto; font-size: 0.9rem; margin: 1.2rem 0; background: var(--surface-warm); border: 1px solid var(--border-soft); }
-  .article-body :global(code:not(pre code)) { font-size: 0.88em; padding: 0.1em 0.35em; border-radius: 3px; background: var(--surface-warm); border: 1px solid var(--border-soft); }
   .article-body :global(img) { max-width: 100%; border-radius: var(--radius-sm); margin: 1rem 0; }
 
   .article-aside { position: sticky; top: 5rem; display: grid; gap: 1.5rem; }
