@@ -6,6 +6,7 @@ import { buildBreadcrumbJsonLd } from "../../utils/blog";
   title="Politique de confidentialité | Blog d'un Gaucher"
   description="Politique de confidentialité du Blog d'un Gaucher : collecte de données, cookies, droits des utilisateurs et gestion des données personnelles."
   canonicalPath="/fr/politique-confidentialite/"
+  noindex={true}
   structuredData={buildBreadcrumbJsonLd([
     { name: "Accueil", path: "/fr/" },
     { name: "Politique de confidentialité", path: "/fr/politique-confidentialite/" },
@@ -62,22 +63,22 @@ import { buildBreadcrumbJsonLd } from "../../utils/blog";
         </section>
 
         <section>
-          <h2>4. Notifications push (OneSignal)</h2>
+          <h2>4. Notifications push (ntfy — auto-hébergé)</h2>
           <p>
-            Si vous activez l'option dédiée dans le bandeau cookies, le site peut charger le service OneSignal afin de vous proposer des notifications navigateur (nouveaux articles, rappels éditoriaux). Ce traitement est distinct de la publicité personnalisée : vous pouvez accepter les notifications sans accepter les annonces ciblées, et inversement.
+            Si vous activez les notifications dans le bandeau de confidentialité, le navigateur s'abonne au service ntfy auto-hébergé sur notre propre infrastructure (serveur <code>ntfy.blogdungaucher.com</code>). Aucune donnée n'est transmise à un tiers : les abonnements et les notifications transitent uniquement par nos serveurs.
           </p>
           <p>
-            OneSignal peut utiliser des cookies ou équivalents pour identifier votre appareil. Le détail figure dans la <a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener noreferrer">politique de confidentialité OneSignal</a>. Vous pouvez retirer votre consentement à tout moment via « Paramètres cookies » et gérer les notifications dans les réglages de votre navigateur.
+            La seule donnée traitée est l'identifiant de souscription Web Push que le navigateur génère localement (endpoint, clés VAPID). Il est stocké sur notre serveur ntfy et supprimé automatiquement à expiration ou sur demande. Vous pouvez retirer votre consentement à tout moment via « Notifications et cookies » en bas de page, ou dans les réglages notifications de votre navigateur.
           </p>
         </section>
 
         <section>
-          <h2>5. Commentaires (Giscus)</h2>
+          <h2>5. Commentaires (remark42 — auto-hébergé)</h2>
           <p>
-            Le système de commentaires intégré au blog est géré par Giscus, qui s'appuie sur l'API de GitHub Discussions.
+            Le système de commentaires est géré par remark42, hébergé sur notre propre infrastructure (<code>remark42.blogdungaucher.com</code>). Aucune donnée n'est transmise à un tiers pour la gestion des commentaires.
           </p>
           <p>
-            En publiant un commentaire, vous vous connectez avec votre compte GitHub. Les informations publiques de votre profil (nom, avatar, lien public) sont visibles à côté de votre message. blogdungaucher.com ne stocke pas ces données dans une base locale : elles restent sous le contrôle de GitHub.
+            Vous pouvez commenter de façon anonyme ou vous authentifier via GitHub OAuth (optionnel). En cas d'authentification GitHub, les informations publiques de votre profil (nom, avatar) sont transmises à notre serveur remark42 pour afficher votre identité à côté de vos messages. Ces données sont stockées dans notre base de données locale (fichier Bolt DB sur nos serveurs) et supprimées sur demande. Vous pouvez contacter <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a> pour supprimer vos commentaires.
           </p>
         </section>
 
@@ -88,7 +89,7 @@ import { buildBreadcrumbJsonLd } from "../../utils/blog";
           </p>
           <ul>
             <li>Pour exercer ces droits ou pour toute question relative à cette politique : <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>.</li>
-            <li>Les sous-traitants ou destinataires potentiels incluent Hostinger (hébergement), Google (mesure d'audience et publicité, sous réserve de consentement), OneSignal (notifications push, sous réserve d'un consentement distinct), GitHub et Giscus (commentaires).</li>
+            <li>Les sous-traitants ou destinataires potentiels incluent Hostinger (hébergement), Google (mesure d'audience et publicité, sous réserve de consentement), notre serveur ntfy auto-hébergé (notifications push, sous réserve d'un consentement distinct), notre serveur remark42 auto-hébergé (commentaires, sous réserve de participation), GitHub (CI/CD).</li>
             <li>Certains services peuvent impliquer des transferts hors Union européenne, encadrés par les mécanismes contractuels prévus par leurs fournisseurs.</li>
             <li>Vous pouvez retirer votre consentement aux traceurs non essentiels à tout moment via le bouton de gestion des cookies.</li>
             <li>Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la <a href="https://www.cnil.fr/" target="_blank" rel="noopener noreferrer">CNIL</a>.</li>

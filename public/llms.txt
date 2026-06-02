@@ -71,9 +71,9 @@ Interdit : scraping agressif, contournement de rate limits, collecte systématiq
 - https://blogdungaucher.com/fr/blog/echecs-et-autisme/
 - https://blogdungaucher.com/fr/blog/echecs-et-femmes/
 - https://blogdungaucher.com/fr/blog/les-echecs-et-l-addiction/
-- https://blogdungaucher.com/fr/blog/echecs-et-seniors/
+- https://blogdungaucher.com/fr/blog/echecs-alzheimer-prevention-declin-cognitif/
 - https://blogdungaucher.com/fr/blog/grand-oral-mathematiques-echecs/
-- https://blogdungaucher.com/fr/blog/grand-oral-maths-spe-echecs/
+- https://blogdungaucher.com/fr/blog/guide-grand-oral-echecs-maths/
 - https://blogdungaucher.com/fr/blog/grand-oral-nsi-echecs/
 
 # ── Notes techniques (SEO / indexation) ──

@@ -94,7 +94,7 @@ Le second mécanisme est la prophétie auto-réalisatrice. Tu vois que ton adver
 
 ## Trop peu ou trop de confiance : imposteur, série de wins, et décisions parasitées
 
-Un phénomène psychologique peu souvent évoqué dans les échecs, mais extrêmement répandu, est le [syndrome de l'imposteur](/fr/blog/echecs-et-syndrome-imposteur/). Tu as gagné quelques tournois, ton classement a grimpé, on te respecte dans ton club. Et malgré tout cela, une petite voix intérieure murmure que tu n'es pas vraiment à la hauteur, que tes résultats sont dus à la chance, que tôt ou tard les autres vont "te percer à jour".
+Un phénomène psychologique peu souvent évoqué dans les échecs, mais extrêmement répandu, est le [syndrome de l'imposteur](/fr/blog/syndrome-imposteur-aux-echecs/). Tu as gagné quelques tournois, ton classement a grimpé, on te respecte dans ton club. Et malgré tout cela, une petite voix intérieure murmure que tu n'es pas vraiment à la hauteur, que tes résultats sont dus à la chance, que tôt ou tard les autres vont "te percer à jour".
 
 Ce sentiment est particulièrement toxique aux échecs parce qu'il te force à jouer en "mode démonstration" plutôt qu'en "mode jeu". Tu essaies de prouver que tu mérites ta cote plutôt que de simplement chercher le meilleur coup sur l'échiquier. Tes décisions sont parasitées par le regard imaginaire des autres.
 

@@ -16,7 +16,7 @@ Tu as travaillé pendant des mois. Tu as étudié les ouvertures, résolu des mi
 
 ## Qu'est-ce que le syndrome de l'imposteur ?
 
-Le [syndrome de l'imposteur](/fr/blog/echecs-et-syndrome-imposteur/) a été décrit pour la première fois en 1978 par les psychologues [Pauline Clance](https://fr.wikipedia.org/wiki/Pauline_Clance) et Suzanne Imes. Ils l'ont défini comme un phénomène psychologique où des individus compétents et accomplis ne parviennent pas à internaliser leurs réussites et craignent d'être "démasqués" comme des fraudes, malgré des preuves objectives de leur compétence.
+Le [syndrome de l'imposteur](/fr/blog/syndrome-imposteur-aux-echecs/) a été décrit pour la première fois en 1978 par les psychologues [Pauline Clance](https://fr.wikipedia.org/wiki/Pauline_Clance) et Suzanne Imes. Ils l'ont défini comme un phénomène psychologique où des individus compétents et accomplis ne parviennent pas à internaliser leurs réussites et craignent d'être "démasqués" comme des fraudes, malgré des preuves objectives de leur compétence.
 
 À l'origine étudié chez les femmes dans des milieux académiques, le syndrome est maintenant reconnu comme universel : il touche des personnes de tout genre, domaine et niveau de compétence. Des études estiment qu'entre 60 et 70% des personnes en ont fait l'expérience à un moment ou un autre dans leur carrière.
 

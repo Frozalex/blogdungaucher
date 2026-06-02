@@ -103,7 +103,7 @@ Les données publiées sont **plus nuancées** : certains essais mesurent des **
 
 **Objectif de cet article :** rassembler des **chiffres tirés de publications sélectionnées** (tableau et références en bas) et les relier à la **pratique du jeu d'échecs** comme loisir dense et durable : **apprendre**, **progresser**, **ancrer une routine** sans la confondre avec une ordonnance.
 
-Pour les mécanismes généraux (plasticité, imagerie), compléter avec [les bienfaits des échecs sur le cerveau](/blog/bienfaits-des-echecs-sur-le-cerveau/) et [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/). Cet article cible avant tout le **joueur** ou la **joueuse** senior, en club ou à la maison.
+Pour les mécanismes généraux (plasticité, imagerie), compléter avec [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/). Cet article cible avant tout le **joueur** ou la **joueuse** senior, en club ou à la maison.
 
 ## Synthèse chiffrée : ce que disent quelques publications clés
 
@@ -160,8 +160,6 @@ Les analyses comme **Dubois et al., 2024** (JAMA Neurology) rappellent par aille
 2. **Mesurer le bon critère** : si l’objectif est lien social et **communauté**, privilégier club ou cours ; si c’est humeur, accepter que les gains sur la mémoire de travail ou les scores globaux puissent être **absents** sur des tests courts.
 3. **Alterner** puzzles tactiques et **parties** lentes pour **réduire** la fatigue et l’écran, et soutenir la **concentration** plus de **deux ans** d’affilée.
 
-Pour les sujets âgés : voir aussi [échecs et seniors](/blog/echecs-et-seniors/) ; ergonomie, fatigue visuelle, cadence.
-
 ## Top 10 des effets attendus (jeu + vieillissement)
 
 1. **Maintien de l’attention soutenue** : mesurable en laboratoire ; transfert quotidien variable.
@@ -197,7 +195,7 @@ Pour les sujets âgés : voir aussi [échecs et seniors](/blog/echecs-et-seniors
 
 ## Aller plus loin sur le blog
 
-- Pilier **[rubrique Science](/fr/science/)**, pages [mémoire](/blog/echecs-et-memoire/) et [effets sur le cerveau](/blog/bienfaits-des-echecs-sur-le-cerveau/).
+- Pilier **[rubrique Science](/fr/science/)**, pages [mémoire](/blog/echecs-et-memoire/) et [effets sur le cerveau](/blog/les-echecs-et-le-cerveau/).
 
 Le **jeu d'échecs** n’est pas une équation fermée contre la maladie d’Alzheimer ; c’est une **pratique du jeu** longue, parfois mesurable sur humeur ou engagement, rarement réductible à un seul chiffre magique. Dans un rapport honnête aux données, c’est déjà une bonne défense.
 
