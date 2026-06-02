@@ -30,48 +30,65 @@ jobs:
           script: |
             /usr/local/bin/deploy-site.sh
 
-      - name: Push notification (OneSignal)
+      - name: Détecter nouvel article
         if: success()
-        env:
-          ONESIGNAL_APP_ID: ${{ secrets.ONESIGNAL_APP_ID }}
-          ONESIGNAL_API_KEYS: ${{ secrets.ONESIGNAL_API_KEYS }}
+        id: detect
         run: |
           set -euo pipefail
           if ! git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
-            echo "Pas de nouvel article"
+            echo "Pas d'historique git suffisant"
+            echo "new_article=" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           CONTENT_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^src/content/blog/' | grep '\.md$' || true)
           if [ -z "$CONTENT_FILES" ]; then
             echo "Pas de nouvel article (blog)"
+            echo "new_article=" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           TARGET=$(echo "$CONTENT_FILES" | sort | head -1)
           SLUG=$(basename "$TARGET" .md)
-          ARTICLE_URL="https://blogdungaucher.com/fr/blog/${SLUG}/"
-          if [ -z "${ONESIGNAL_APP_ID:-}" ] || [ -z "${ONESIGNAL_API_KEYS:-}" ]; then
-            echo "ONESIGNAL_APP_ID ou ONESIGNAL_API_KEYS absent ; notification ignorée."
+          TITLE=$(awk '/^---$/{d++;if(d>=2)exit;next}d==1&&/^title:/{line=$0;sub(/^title:[[:space:]]+/,"",line);if(line~/^".*"$/){line=substr(line,2,length(line)-2)}print line;exit}' "$TARGET")
+          [ -z "$TITLE" ] && TITLE="Nouvel article"
+          echo "new_article=$TARGET" >> "$GITHUB_OUTPUT"
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+          echo "title=$TITLE" >> "$GITHUB_OUTPUT"
+
+      - name: Push notification (ntfy)
+        if: success() && steps.detect.outputs.new_article != ''
+        env:
+          NTFY_URL:   ${{ secrets.NTFY_URL }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          ARTICLE_TITLE: ${{ steps.detect.outputs.title }}
+          ARTICLE_SLUG:  ${{ steps.detect.outputs.slug }}
+        run: |
+          set -euo pipefail
+          if [ -z "${NTFY_URL:-}" ] || [ -z "${NTFY_TOKEN:-}" ]; then
+            echo "NTFY_URL ou NTFY_TOKEN absent ; notification ignorée."
             exit 0
           fi
-          TITLE=$(awk '/^---$/{d++;if(d>=2)exit;next}d==1&&/^title:/{line=$0;sub(/^title:[[:space:]]+/,"",line);if(line~/^".*"$/){line=substr(line,2,length(line)-2)}print line;exit}' "$TARGET")
-          if [ -z "$TITLE" ]; then
-            TITLE="Nouvel article"
+          TOPIC="${NTFY_TOPIC:-blog-gaucher}"
+          curl -sS -f -X POST "${NTFY_URL}/${TOPIC}" \
+            -H "Authorization: Bearer ${NTFY_TOKEN}" \
+            -H "Title: ${ARTICLE_TITLE}" \
+            -H "Click: https://blogdungaucher.com/fr/blog/${ARTICLE_SLUG}/" \
+            -H "Tags: chess,left_fist" \
+            -d "Nouvel article publié sur Blog d'un Gaucher"
+
+      - name: Programmer email newsletter (Brevo, H+1)
+        if: success() && steps.detect.outputs.new_article != ''
+        env:
+          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID:      ${{ secrets.BREVO_LIST_ID }}
+          BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
+          BREVO_SENDER_NAME:  ${{ secrets.BREVO_SENDER_NAME }}
+          SITE_URL:           https://blogdungaucher.com
+          SEND_DELAY_MINUTES: "60"
+        run: |
+          set -euo pipefail
+          if [ -z "${BREVO_API_KEY:-}" ] || [ -z "${BREVO_SENDER_EMAIL:-}" ]; then
+            echo "BREVO_API_KEY ou BREVO_SENDER_EMAIL absent ; newsletter ignorée."
+            exit 0
           fi
-          BODY_FR="Nouvel article publié sur Blog d'un Gaucher"
-          PAYLOAD="$(jq -n \
-            --arg app_id "$ONESIGNAL_APP_ID" \
-            --arg title "$TITLE" \
-            --arg body "$BODY_FR" \
-            --arg url "$ARTICLE_URL" \
-            '{
-              app_id: $app_id,
-              included_segments: ["All"],
-              headings: { fr: $title, en: $title },
-              contents: { fr: $body, en: $body },
-              url: $url,
-              web_url: $url
-            }')"
-          curl -sS -f -X POST "https://onesignal.com/api/v1/notifications" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            -H "Authorization: Key ${ONESIGNAL_API_KEYS}" \
-            -d "$PAYLOAD"
+          node scripts/send-new-article-email.mjs "${{ steps.detect.outputs.new_article }}"
