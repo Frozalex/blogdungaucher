@@ -1,9 +1,10 @@
 import http from "node:http";
 
 const PORT = parseInt(process.env.PORT ?? "3030", 10);
-const API_TOKEN = process.env.HOSTINGER_REACH_API_TOKEN ?? "";
+const API_KEY = process.env.BREVO_API_KEY ?? "";
+const LIST_ID = parseInt(process.env.BREVO_LIST_ID ?? "2", 10);
 const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN ?? "https://blogdungaucher.com";
-const REACH_URL = "https://developers.hostinger.com/api/reach/v1/contacts";
+const BREVO_URL = "https://api.brevo.com/v3/contacts";
 
 const CORS = {
   "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
@@ -44,21 +45,29 @@ http.createServer(async (req, res) => {
       return;
     }
 
-    const payload = { email: email.trim() };
+    // Brevo "Create a contact" : si l'email existe déjà, updateEnabled=true
+    // évite le 400 et met juste à jour les listes.
+    const payload = {
+      email: email.trim(),
+      listIds: [LIST_ID],
+      updateEnabled: true,
+    };
     if (name && typeof name === "string" && name.trim()) {
-      payload.name = name.trim();
+      payload.attributes = { FIRSTNAME: name.trim() };
     }
 
-    const r = await fetch(REACH_URL, {
+    const r = await fetch(BREVO_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${API_TOKEN}`,
+        "api-key": API_KEY,
+        accept: "application/json",
       },
       body: JSON.stringify(payload),
     });
 
-    if (r.ok) {
+    // Brevo renvoie 201 (created) ou 204 (updated)
+    if (r.ok || r.status === 204) {
       json(res, 200, { ok: true });
     } else {
       const data = await r.json().catch(() => ({}));
@@ -67,6 +76,6 @@ http.createServer(async (req, res) => {
   } catch {
     json(res, 500, { error: "Server error" });
   }
-}).listen(PORT, "127.0.0.1", () => {
-  console.log(`Newsletter proxy on 127.0.0.1:${PORT}`);
+}).listen(PORT, "0.0.0.0", () => {
+  console.log(`Newsletter proxy (Brevo) on 0.0.0.0:${PORT}`);
 });

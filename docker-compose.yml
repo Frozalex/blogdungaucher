@@ -59,15 +59,16 @@ services:
       retries: 3
 
   # ── newsletter-proxy ─────────────────────────────────────────────────────
-  # Proxy minimaliste protégeant le token Hostinger Reach côté serveur.
-  # Nginx doit reverse-proxier https://newsletter.blogdungaucher.com → 127.0.0.1:3030
+  # Proxy minimaliste protégeant la clé Brevo côté serveur.
+  # Nginx reverse-proxie /newsletter/* → 127.0.0.1:3030 (dans le vhost principal).
   newsletter-proxy:
     image: node:20-alpine
     container_name: newsletter-proxy
     working_dir: /app
     command: node newsletter.mjs
     environment:
-      HOSTINGER_REACH_API_TOKEN: "${HOSTINGER_REACH_API_TOKEN}"
+      BREVO_API_KEY: "${BREVO_API_KEY}"
+      BREVO_LIST_ID: "${BREVO_LIST_ID:-2}"
       ALLOWED_ORIGIN: "${NEWSLETTER_ALLOWED_ORIGIN:-https://blogdungaucher.com}"
       PORT: "3030"
     volumes:
