@@ -953,7 +953,11 @@ const maxLong = topLong[0]?.readingTime ?? 1;
     overflow: hidden;
   }
   @media (max-width: 640px) {
-    .plot__area { aspect-ratio: 4 / 5; min-height: 460px; }
+    /* aspect-ratio + min-height forçait la largeur à 460×4/5 = 368px, au-delà
+       de la colonne de grille (≈263px) : le côté droit du scatter (articles
+       récents) débordait hors écran. On fixe la hauteur et on laisse la largeur
+       suivre la cellule 1fr. */
+    .plot__area { aspect-ratio: auto; height: 460px; min-height: 0; }
   }
 
   .plot__grid {

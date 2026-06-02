@@ -296,7 +296,7 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
     z-index: 0;
   }
 
-  [data-theme="dark"] .about-page__glyph {
+  :global([data-theme="dark"]) .about-page__glyph {
     color: color-mix(in srgb, var(--green) 10%, transparent);
   }
 
@@ -333,20 +333,18 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
     gap: 0.55rem;
   }
 
+  /* Logo monochrome : pas de fond ni de bordure, sinon le filter:invert du
+     dark mode inverserait aussi le fond et annulerait le contraste. Le glyphe
+     repose directement sur le fond du hero. */
   .about-hero__avatar {
     width: clamp(112px, 14vw, 160px);
     height: clamp(112px, 14vw, 160px);
-    border-radius: 12px;
     object-fit: contain;
-    padding: 14px;
     flex-shrink: 0;
-    border: 1.5px solid var(--border-soft);
-    background: var(--surface);
-    box-shadow: var(--shadow-sm);
     transition: filter 260ms ease;
   }
 
-  [data-theme="dark"] .about-hero__avatar {
+  :global([data-theme="dark"]) .about-hero__avatar {
     filter: invert(1);
   }
 

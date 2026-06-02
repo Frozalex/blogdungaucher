@@ -216,19 +216,17 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
     margin-bottom: 1rem;
   }
 
+  /* Logo monochrome sans fond ni bordure : le filter:invert du dark mode
+     n'inverse alors que le glyphe, pas un fond, et le contraste est préservé. */
   .about-avatar {
     width: 80px;
     height: 80px;
-    border-radius: var(--radius-lg);
     object-fit: contain;
-    padding: 8px;
-    border: 1.5px solid var(--border-soft);
-    background: var(--surface);
     flex-shrink: 0;
     transition: filter 260ms ease;
   }
 
-  [data-theme="dark"] .about-avatar {
+  :global([data-theme="dark"]) .about-avatar {
     filter: invert(1);
   }
 
