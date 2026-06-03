@@ -163,23 +163,26 @@ const articleCountLabel = (n : number): string => {
       </svg>
     </div>
     <div class="container hero--classic__inner">
-      <p class="eyebrow hero__eyebrow fade-up" style="--motion-delay: 70ms;" data-t="home.eyebrow">
+      <p class="eyebrow hero__eyebrow" data-t="home.eyebrow">
         {c.eyebrow}
       </p>
 
+      {/* Hero SANS `fade-up` (ni ici ni sur l'eyebrow/lead/actions/proof) : ce bloc est au-dessus
+         de la ligne de flottaison et contient l'élément LCP. Une entrée opacity:0→1 y retardait le
+         LCP mobile à ~5 s (l'animation décale la 1re peinture visible). Affichage immédiat → LCP ≈ FCP.
+         Les sections below-fold gardent leurs animations de scroll-reveal. */}
       <h1
         id="home-hero-heading"
-        class="hero__title--classic fade-up"
-        style="--motion-delay: 120ms;"
+        class="hero__title--classic"
         data-t-html="home.titleHtml"
         set:html={c.titleHtml}
       ></h1>
 
-      <p class="hero__lead--classic fade-up" style="--motion-delay: 170ms;" data-t="home.lead">
+      <p class="hero__lead--classic" data-t="home.lead">
         {c.lead}
       </p>
 
-      <div class="hero__actions--classic fade-up" style="--motion-delay: 220ms;">
+      <div class="hero__actions--classic">
         <a href={blogHref} class="button-primary" data-t="home.startReading">
           {c.startReading}
         </a>
@@ -189,8 +192,7 @@ const articleCountLabel = (n : number): string => {
       </div>
 
       <ul
-        class="hero-proof--classic fade-up"
-        style="--motion-delay: 280ms;"
+        class="hero-proof--classic"
         aria-label={c.proofListLabel}
       >
         <li data-t="home.proof1">{c.proof1}</li>
@@ -304,7 +306,7 @@ const articleCountLabel = (n : number): string => {
     mix-blend-mode: multiply;
   }
 
-  [data-theme="dark"] .hero--classic::before {
+  :global([data-theme="dark"]) .hero--classic::before {
     opacity: 0.12;
     mix-blend-mode: screen;
   }
@@ -314,7 +316,7 @@ const articleCountLabel = (n : number): string => {
     z-index: 1;
   }
 
-  [data-theme="dark"] .home-landing {
+  :global([data-theme="dark"]) .home-landing {
     background:
       radial-gradient(ellipse 100% 65% at 50% -12%, color-mix(in srgb, var(--green) 12%, transparent), transparent 50%),
       var(--bg);
@@ -388,8 +390,8 @@ const articleCountLabel = (n : number): string => {
     opacity: 0.06;
   }
 
-  [data-theme="dark"] .hero-deco--right { opacity: 0.1; }
-  [data-theme="dark"] .hero-deco--left { opacity: 0.08; }
+  :global([data-theme="dark"]) .hero-deco--right { opacity: 0.1; }
+  :global([data-theme="dark"]) .hero-deco--left { opacity: 0.08; }
 
   /* Cacher les déco sur petits écrans : préserve la lisibilité du hero centré. */
   @media (max-width: 720px) {
@@ -422,17 +424,16 @@ const articleCountLabel = (n : number): string => {
     color: var(--text-main);
   }
 
-  .hero__title--classic .hero__accent {
+  /* L'accent (.hero__accent) est injecté via `set:html` (titleHtml i18n) : il n'a donc PAS
+     l'attribut de scope Astro. Sans `:global()`, la règle compilée exige `.hero__accent[cid]`
+     et `color: var(--green)` ne s'applique jamais (l'accent tombait en couleur de texte).
+     On scope le parent (le H1 porte bien le cid) et on globalise l'accent. L'italique/serif
+     vient déjà de la classe globale `.display-serif` (global.css). */
+  .hero__title--classic :global(.hero__accent) {
     color: var(--green);
     font-family: var(--font-serif);
     font-weight: 500;
     font-style: italic;
-  }
-
-  .hero__title--classic .hero__accent.display-serif {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 500;
   }
 
   .hero__lead--classic {

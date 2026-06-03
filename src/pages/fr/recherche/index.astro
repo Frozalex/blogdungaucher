@@ -1,20 +1,8 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { getAllPosts, getPostUrl } from "../../../utils/blog";
-import { categoryMap } from "../../../data/site";
+import { getAllPosts } from "../../../utils/blog";
 
 const allPosts = await getAllPosts();
-const searchIndex = allPosts.map((p) => ({
-  title: p.data.title,
-  excerpt: p.data.excerpt,
-  url: getPostUrl(p),
-  category: p.data.category,
-  categoryLabel: categoryMap[p.data.category]?.shortLabel ?? p.data.category,
-  categoryAccent: categoryMap[p.data.category]?.accent ?? "#000",
-  tags: p.data.tags ?? [],
-  readingTime: p.data.readingTime ?? "",
-  publishDate: p.data.publishDate.toISOString().split("T")[0],
-}));
 ---
 
 <BaseLayout
@@ -61,59 +49,35 @@ const searchIndex = allPosts.map((p) => ({
   </div>
 </BaseLayout>
 
-<!-- Index des articles (JSON statique généré au build).
-     Échappement des séquences qui briseraient le parseur HTML : `</script>`, `<!--`, etc.
-     Conserve un JSON valide après échappement Unicode. -->
-<script
-  type="application/json"
-  id="search-index"
-  set:html={JSON.stringify(searchIndex)
-    .replace(/<\/(script)/gi, "<\\/$1")
-    .replace(/<!--/g, "<\\!--")
-    .replace(/-->/g, "--\\>")}
-></script>
-
 <script>
-  type SearchEntry = {
-    title: string;
-    excerpt: string;
-    url: string;
-    category: string;
-    categoryLabel: string;
-    categoryAccent: string;
-    tags: string[];
-    readingTime: string;
-    publishDate: string;
-  };
-
-  const raw = document.getElementById("search-index")?.textContent ?? "[]";
-  const INDEX : SearchEntry[] = JSON.parse(raw);
-
   const inputEl  = document.getElementById("search-input")  as HTMLInputElement;
   const clearBtn = document.getElementById("search-clear")   as HTMLButtonElement;
   const stateEl  = document.getElementById("search-state")  as HTMLElement;
   const listEl   = document.getElementById("search-results") as HTMLUListElement;
 
-  function normalize(s : string) {
-    return s
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[̀-ͯ]/g, ""); // strip accents
+  let pagefindInstance: { search: (q: string) => Promise<{ results: { data: () => Promise<PagefindResult> }[] }> } | null = null;
+
+  type PagefindResult = {
+    url: string;
+    excerpt: string;
+    meta: Record<string, string>;
+    word_count: number;
+  };
+
+  async function getPagefind() {
+    if (pagefindInstance) return pagefindInstance;
+    try {
+      // @ts-ignore — fichier généré au build par Pagefind
+      const pf = await import("/pagefind/pagefind.js");
+      await pf.init();
+      pagefindInstance = pf;
+      return pf;
+    } catch {
+      return null;
+    }
   }
 
-  function score(entry : SearchEntry, q : string): number {
-    const nq = normalize(q);
-    const title = normalize(entry.title);
-    const excerpt = normalize(entry.excerpt);
-    const tags = entry.tags.map(normalize).join(" ");
-    if (title.startsWith(nq))  return 100;
-    if (title.includes(nq))    return 80;
-    if (tags.includes(nq))     return 60;
-    if (excerpt.includes(nq))  return 40;
-    return 0;
-  }
-
-  function render(results : SearchEntry[], q : string) {
+  function render(results: PagefindResult[], q: string) {
     listEl.innerHTML = "";
 
     if (results.length === 0) {
@@ -123,22 +87,24 @@ const searchIndex = allPosts.map((p) => ({
 
     stateEl.textContent = `${results.length} résultat${results.length > 1 ? "s" : ""} pour « ${q} »`;
 
-    results.forEach((entry) => {
+    results.forEach((data) => {
       const li = document.createElement("li");
       li.className = "search-result";
+      const title   = data.meta?.title    ?? "Sans titre";
+      const cat     = data.meta?.category ?? "";
+      const accent  = data.meta?.accent   ?? "var(--green)";
       li.innerHTML = `
-        <a href="${entry.url}" class="search-result__link" style="--accent:${entry.categoryAccent}">
-          <span class="search-result__cat">${entry.categoryLabel}</span>
-          <strong class="search-result__title">${entry.title}</strong>
-          <p class="search-result__excerpt">${entry.excerpt}</p>
-          <span class="search-result__meta">${entry.readingTime}${entry.readingTime && entry.publishDate ? " · " : ""}${entry.publishDate}</span>
+        <a href="${data.url}" class="search-result__link" style="--accent:${accent}">
+          ${cat ? `<span class="search-result__cat">${cat}</span>` : ""}
+          <strong class="search-result__title">${title}</strong>
+          <p class="search-result__excerpt">${data.excerpt}</p>
         </a>
       `;
       listEl.appendChild(li);
     });
   }
 
-  function search(q : string) {
+  async function search(q: string) {
     q = q.trim();
     clearBtn.hidden = q.length === 0;
 
@@ -148,17 +114,22 @@ const searchIndex = allPosts.map((p) => ({
       return;
     }
 
-    const results = INDEX
-      .map((e) => ({ entry : e, s : score(e, q) }))
-      .filter(({ s }) => s > 0)
-      .sort((a, b) => b.s - a.s)
-      .map(({ entry }) => entry);
+    stateEl.textContent = "Recherche en cours…";
 
+    const pf = await getPagefind();
+    if (!pf) {
+      stateEl.textContent = "Index de recherche indisponible (lancez d'abord un build).";
+      listEl.innerHTML = "";
+      return;
+    }
+
+    const response = await pf.search(q);
+    const results  = await Promise.all(response.results.slice(0, 20).map((r) => r.data()));
     render(results, q);
   }
 
-  // Auto-populate from URL ?q=
-  const params = new URLSearchParams(window.location.search);
+  // Auto-populate depuis l'URL ?q=
+  const params   = new URLSearchParams(window.location.search);
   const initialQ = params.get("q") ?? "";
   if (initialQ) {
     inputEl.value = initialQ;
@@ -172,13 +143,7 @@ const searchIndex = allPosts.map((p) => ({
     search("");
   });
 
-  // ──────────────────────────────────────────────────────────────
-  // Navigation clavier dans les résultats (L4)
-  //   - ↑ / ↓ depuis l'input ou un résultat : déplacer l'item actif
-  //   - ↵ : ouvrir le lien de l'item actif (ou le 1er si aucun)
-  //   - Echap : vider l'input + blur
-  // L'item actif est marqué par .is-active + aria-current=true.
-  // ──────────────────────────────────────────────────────────────
+  // ── Navigation clavier ──────────────────────────────────────
   let activeIdx = -1;
 
   function getResultLinks(): HTMLAnchorElement[] {
@@ -187,11 +152,7 @@ const searchIndex = allPosts.map((p) => ({
 
   function setActive(idx: number) {
     const links = getResultLinks();
-    if (links.length === 0) {
-      activeIdx = -1;
-      return;
-    }
-    // Wrap-around : -1 → dernier, length → premier
+    if (links.length === 0) { activeIdx = -1; return; }
     activeIdx = ((idx % links.length) + links.length) % links.length;
     links.forEach((a, i) => {
       const on = i === activeIdx;
@@ -205,44 +166,27 @@ const searchIndex = allPosts.map((p) => ({
     });
   }
 
-  // Reset l'index actif quand les résultats changent.
-  const observer = new MutationObserver(() => {
-    activeIdx = -1;
-  });
-  observer.observe(listEl, { childList: true });
+  new MutationObserver(() => { activeIdx = -1; }).observe(listEl, { childList: true });
 
   inputEl.addEventListener("keydown", (e) => {
     const links = getResultLinks();
     if (e.key === "ArrowDown") {
-      e.preventDefault();
-      setActive(activeIdx + 1);
+      e.preventDefault(); setActive(activeIdx + 1);
     } else if (e.key === "ArrowUp") {
-      e.preventDefault();
-      setActive(activeIdx - 1);
+      e.preventDefault(); setActive(activeIdx - 1);
     } else if (e.key === "Enter") {
-      // Si aucun item actif, ouvrir le premier résultat.
       const target = activeIdx >= 0 ? links[activeIdx] : links[0];
-      if (target) {
-        e.preventDefault();
-        target.click();
-      }
+      if (target) { e.preventDefault(); target.click(); }
     } else if (e.key === "Escape") {
-      if (inputEl.value.length > 0) {
-        inputEl.value = "";
-        search("");
-      } else {
-        inputEl.blur();
-      }
+      if (inputEl.value.length > 0) { inputEl.value = ""; search(""); }
+      else inputEl.blur();
     }
   });
 
-  // Raccourci global "/" sur la page recherche : focus l'input.
-  // (Le raccourci global "/" → navigation vers /recherche/ est dans Navbar.astro.)
   document.addEventListener("keydown", (e) => {
     if (e.key !== "/") return;
     const target = e.target as HTMLElement | null;
     if (!target) return;
-    // Ne pas intercepter si l'utilisateur est déjà dans un champ.
     const tag = target.tagName;
     if (tag === "INPUT" || tag === "TEXTAREA" || target.isContentEditable) return;
     e.preventDefault();
@@ -377,7 +321,11 @@ const searchIndex = allPosts.map((p) => ({
     gap: 0.75rem;
   }
 
-  .search-result__link {
+  /* Les <li class="search-result"> et leurs enfants sont créés en JS (listEl.innerHTML) :
+     ils n'ont PAS l'attribut de scope Astro. On scope via le parent `.search-results` (élément
+     de template, donc porteur du cid) et on globalise les enfants injectés avec `:global()`.
+     Sans ça, ces règles exigeraient `.search-result__link[cid]` → liste de résultats sans style. */
+  .search-results :global(.search-result__link) {
     display: block;
     padding: 1.1rem 1.25rem;
     border-radius: var(--radius-md);
@@ -388,18 +336,18 @@ const searchIndex = allPosts.map((p) => ({
     text-decoration: none;
   }
 
-  .search-result__link:hover,
-  .search-result__link.is-active {
+  .search-results :global(.search-result__link:hover),
+  .search-results :global(.search-result__link.is-active) {
     border-color: var(--accent, var(--green));
     box-shadow: var(--shadow-sm);
     transform: translateY(-2px);
   }
-  .search-result__link.is-active {
+  .search-results :global(.search-result__link.is-active) {
     /* Highlight visuel plus net pour la navigation clavier. */
     box-shadow: var(--shadow-sm), 0 0 0 2px color-mix(in srgb, var(--accent, var(--green)) 35%, transparent);
   }
 
-  .search-result__cat {
+  .search-results :global(.search-result__cat) {
     display: inline-block;
     font-size: 0.68rem;
     font-weight: 700;
@@ -409,7 +357,7 @@ const searchIndex = allPosts.map((p) => ({
     margin-bottom: 0.3rem;
   }
 
-  .search-result__title {
+  .search-results :global(.search-result__title) {
     display: block;
     font-family: var(--font-display);
     font-weight: 600;
@@ -419,7 +367,7 @@ const searchIndex = allPosts.map((p) => ({
     line-height: 1.35;
   }
 
-  .search-result__excerpt {
+  .search-results :global(.search-result__excerpt) {
     font-size: 0.88rem;
     color: var(--text-muted);
     line-height: 1.6;
@@ -430,7 +378,7 @@ const searchIndex = allPosts.map((p) => ({
     overflow: hidden;
   }
 
-  .search-result__meta {
+  .search-results :global(.search-result__meta) {
     font-size: 0.78rem;
     color: var(--text-dim);
   }

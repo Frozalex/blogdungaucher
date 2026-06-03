@@ -269,7 +269,7 @@ const categoryGlyph : Record<CategorySlug, string> = {
     }
   }
 
-  [data-theme="dark"] .cat-hero__glyph {
+  :global([data-theme="dark"]) .cat-hero__glyph {
     color: color-mix(in srgb, var(--cat-accent) 14%, transparent);
   }
 
@@ -362,7 +362,7 @@ const categoryGlyph : Record<CategorySlug, string> = {
     color: var(--text-main);
   }
 
-  [data-theme="dark"] .cat-hero--accent {
+  :global([data-theme="dark"]) .cat-hero--accent {
     background: radial-gradient(
         ellipse 90% 70% at 88% -15%,
         color-mix(in srgb, var(--cat-accent) 12%, transparent),

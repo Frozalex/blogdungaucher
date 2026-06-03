@@ -152,7 +152,9 @@ const endpoint =
 
   .nl-msg--error { color: #e05252; }
 
-  .nl-success {
+  /* Injecté via `form.innerHTML` à la réussite → pas d'attribut de scope Astro.
+     On scope via le <form> (élément de template, porteur du cid) + `:global()`. */
+  .nl-form :global(.nl-success) {
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--green);

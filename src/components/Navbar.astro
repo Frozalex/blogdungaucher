@@ -272,7 +272,7 @@ const linkKey : Record<string, string> = {
   }
 
   /* Mode sombre : inversion des couleurs du SVG (#1e1e1e → clair) */
-  [data-theme="dark"] .logo-img {
+  :global([data-theme="dark"]) .logo-img {
     filter: invert(1);
   }
 
@@ -323,7 +323,7 @@ const linkKey : Record<string, string> = {
     color: var(--text-main);
     background: rgba(0,0,0,0.04);
   }
-  [data-theme="dark"] .nav-link:hover {
+  :global([data-theme="dark"]) .nav-link:hover {
     background: rgba(255,255,255,0.05);
   }
   .nav-link:hover::after { transform : scaleX(1); }
@@ -365,8 +365,8 @@ const linkKey : Record<string, string> = {
 
   /* Icônes dark toggle */
   .icon-btn .icon-dark { display : none; }
-  [data-theme="dark"] .icon-btn .icon-light { display : none; }
-  [data-theme="dark"] .icon-btn .icon-dark  { display : block; }
+  :global([data-theme="dark"]) .icon-btn .icon-light { display : none; }
+  :global([data-theme="dark"]) .icon-btn .icon-dark  { display : block; }
 
   /* Bouton recherche : identique aux autres icon-btn */
   .search-btn {
