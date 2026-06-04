@@ -2,8 +2,12 @@
 /**
  * Génère un PDF par article Grand Oral à partir du build Astro.
  *
- * Lance un serveur de prévisualisation, navigue avec Puppeteer sur chaque page
- * grand-oral en mode `?pdf=1`, et sauvegarde le PDF dans dist/pdfs/{slug}.pdf
+ * Lance un serveur de prévisualisation (sur dist/), navigue avec Puppeteer sur chaque
+ * page grand-oral, et sauvegarde le PDF dans public/pdfs/{slug}.pdf.
+ *
+ * Sortie dans public/ (versionné) et NON dist/ : ainsi `astro build` recopie
+ * automatiquement public/pdfs/ → dist/pdfs/ à chaque build, sans dépendre de
+ * Puppeteer au déploiement. Penser à committer public/pdfs/ après régénération.
  *
  * Usage : node scripts/generate-pdfs.mjs
  * Pré-requis : `npm run build` doit avoir été exécuté avant (dist/ doit exister).
@@ -19,23 +23,38 @@ import puppeteer from 'puppeteer';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const BLOG_DIR = resolve(ROOT, 'src', 'content', 'blog');
-const OUT_DIR = resolve(ROOT, 'dist', 'pdfs');
+const OUT_DIR = resolve(ROOT, 'public', 'pdfs');
 const PREVIEW_PORT = 4322;
 const PREVIEW_URL = `http://localhost:${PREVIEW_PORT}`;
 
-// 1. Lister les articles grand-oral à partir des fichiers .md
+// Liste récursivement tous les .md sous un dossier (le contenu blog est rangé
+// en sous-dossiers par rubrique : grand-oral/, science/, esprit/, societe/…).
+function listMarkdownFiles(dir) {
+  const out = [];
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const full = join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...listMarkdownFiles(full));
+    else if (entry.name.endsWith('.md')) out.push(full);
+  }
+  return out;
+}
+
+// 1. Lister les articles grand-oral à partir des fichiers .md (récursif).
 function listGrandOralArticles() {
-  const files = readdirSync(BLOG_DIR).filter((f) => f.endsWith('.md'));
+  const files = listMarkdownFiles(BLOG_DIR);
   const articles = [];
-  for (const f of files) {
-    const raw = readFileSync(join(BLOG_DIR, f), 'utf8').replace(/^﻿/, '');
+  for (const full of files) {
+    const raw = readFileSync(full, 'utf8').replace(/^﻿/, '');
     const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
     if (!m) continue;
     if (!/category:\s*["']?grand-oral["']?/.test(m[1])) continue;
     const titleMatch = m[1].match(/^title:\s*["']?([^"'\n]+)["']?/m);
+    // Le slug d'URL = dernier segment du nom de fichier sans extension
+    // (cf. getPostSlug : post.id.split('/').pop()).
+    const base = full.replace(/\\/g, '/').split('/').pop().replace(/\.md$/, '');
     articles.push({
-      slug: f.replace(/\.md$/, ''),
-      title: titleMatch ? titleMatch[1].trim() : f.replace(/\.md$/, ''),
+      slug: base,
+      title: titleMatch ? titleMatch[1].trim() : base,
     });
   }
   return articles;
@@ -139,11 +158,36 @@ const PDF_PAGE_CSS = `
   h1, h2, h3, h4, h5, h6, pre, blockquote, table { page-break-inside: avoid; }
 `;
 
+// CSS KaTeX (formules) inlinée depuis node_modules, polices woff2 en base64.
+// Le <link href*="katex"> n'existe pas dans le build (CSS bundlée + hashée), donc
+// l'ancienne extraction via fetch renvoyait du vide → maths cassées dans les PDF.
+function buildKatexCss() {
+  const cssPath = resolve(ROOT, 'node_modules', 'katex', 'dist', 'katex.min.css');
+  const fontsDir = resolve(ROOT, 'node_modules', 'katex', 'dist', 'fonts');
+  if (!existsSync(cssPath)) return '';
+  let css = readFileSync(cssPath, 'utf8');
+  // Retire les fallbacks woff/ttf (Chromium prend le woff2).
+  css = css.replace(/,url\(fonts\/[^)]+\.woff\) format\("woff"\),url\(fonts\/[^)]+\.ttf\) format\("truetype"\)/g, '');
+  // Inline chaque woff2 en data URI base64.
+  css = css.replace(/url\(fonts\/([^)]+\.woff2)\)/g, (whole, file) => {
+    const fp = join(fontsDir, file);
+    if (!existsSync(fp)) return whole;
+    const b64 = readFileSync(fp).toString('base64');
+    return `url(data:font/woff2;base64,${b64})`;
+  });
+  return css;
+}
+const KATEX_CSS = buildKatexCss();
+
 async function generatePdf(browser, slug, title) {
   const page = await browser.newPage();
   await page.setViewport({ width: 794, height: 1123 });
   const url = `${PREVIEW_URL}/fr/blog/${slug}/`;
-  await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
+  // `domcontentloaded` (pas `networkidle0`) : le contenu article est statique (SSG) et
+  // déjà dans le DOM ; `networkidle0` peut ne jamais se résoudre à cause du prefetch.
+  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+  // Laisse le temps au rendu/layout de se stabiliser.
+  await page.evaluate(() => new Promise((r) => setTimeout(r, 150)));
 
   // Extraire le HTML brut de l'article, sans le chrome de page.
   const articleHtml = await page.evaluate(() => {
@@ -186,18 +230,6 @@ async function generatePdf(browser, slug, title) {
     throw new Error('Contenu article vide ou introuvable');
   }
 
-  // Récupérer aussi les styles KaTeX si présents (formules math).
-  const katexCss = await page.evaluate(async () => {
-    const link = document.querySelector('link[rel="stylesheet"][href*="katex"]');
-    if (!link) return '';
-    try {
-      const res = await fetch(link.href);
-      return await res.text();
-    } catch {
-      return '';
-    }
-  });
-
   await page.close();
 
   // Nouvelle page propre avec le HTML extrait + CSS minimal.
@@ -206,8 +238,8 @@ async function generatePdf(browser, slug, title) {
 
   const html = `<!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8"><title>${title.replace(/[<>&]/g, '')}</title>
+<style>${KATEX_CSS}</style>
 <style>${PDF_PAGE_CSS}</style>
-<style>${katexCss}</style>
 </head><body>
 <h1>${title.replace(/[<>&]/g, (c) => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]))}</h1>
 ${articleHtml}
