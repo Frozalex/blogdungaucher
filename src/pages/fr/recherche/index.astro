@@ -67,8 +67,10 @@ const allPosts = await getAllPosts();
   async function getPagefind() {
     if (pagefindInstance) return pagefindInstance;
     try {
-      // @ts-ignore — fichier généré au build par Pagefind
-      const pf = await import("/pagefind/pagefind.js");
+      // @ts-ignore — fichier généré au build par Pagefind (n'existe pas au moment du bundling)
+      // @vite-ignore : empêche Rollup d'essayer de résoudre cet import dynamique à la compilation
+      // (sinon « Rollup failed to resolve import /pagefind/pagefind.js » → build serveur cassé).
+      const pf = await import(/* @vite-ignore */ "/pagefind/pagefind.js");
       await pf.init();
       pagefindInstance = pf;
       return pf;

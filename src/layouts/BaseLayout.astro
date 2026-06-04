@@ -25,11 +25,17 @@ import { join } from "node:path";
 
 // Dictionnaire i18n runtime externalisé (public/i18n-dict.js) pour alléger chaque page HTML.
 // On calcule un hash de contenu au build → cache long côté hôte + invalidation auto au moindre changement.
-// Chemin résolu depuis la racine projet (process.cwd()) : stable au build comme au SSR.
-const i18nDictHash = createHash("md5")
-  .update(readFileSync(join(process.cwd(), "public/i18n-dict.js")))
-  .digest("hex")
-  .slice(0, 10);
+// Lecture défensive (try/catch) : si le fichier est introuvable dans l'env de build (cwd différent…),
+// on retombe sur un horodatage plutôt que de faire planter tout le build.
+let i18nDictHash = String(Date.now());
+try {
+  i18nDictHash = createHash("md5")
+    .update(readFileSync(join(process.cwd(), "public/i18n-dict.js")))
+    .digest("hex")
+    .slice(0, 10);
+} catch {
+  // garde le fallback horodaté
+}
 
 type StructuredData = Record<string, unknown> | Array<Record<string, unknown>>;
 
