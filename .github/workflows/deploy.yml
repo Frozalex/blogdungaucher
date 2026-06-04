@@ -26,6 +26,11 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
+          # Durcissement contre les timeouts de connexion intermittents (réseau lent / lossy).
+          # DEPLOY_HOST doit être l'IPv4 littérale (177.7.37.62) : les runners GitHub sont IPv4-only,
+          # un hostname résolvant en IPv6 provoque des « dial tcp :22 i/o timeout » aléatoires.
+          timeout: 60s
+          command_timeout: 15m
           script_stop: true
           script: |
             /usr/local/bin/deploy-site.sh
