@@ -201,6 +201,11 @@ async function generatePdf(browser, slug, title) {
       '.summary-video-wrap', '.article-video', '.remotion-player', '.video-player',
       '.reading-progress', '.hero-media', '.article-nav', '.related-articles',
       '.article-tags', '.article-meta', '.meta-updated', '.article-excerpt',
+      // Chrome de fin d'article à exclure du PDF (pas du contenu de révision) :
+      '.pillar-links',   // bloc « Continuer à explorer » + cartes rubriques
+      '.nl-cta',         // encart Newsletter (NewsletterCta)
+      '.article-aside',  // sidebar (TOC, carte rubrique, pub)
+      '.related',        // « Dans la même rubrique » (articles liés)
       'script', 'style',
     ];
     clone.querySelectorAll(removeSelectors.join(',')).forEach((el) => el.remove());
