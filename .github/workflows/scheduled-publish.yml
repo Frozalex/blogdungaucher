@@ -13,7 +13,7 @@
 # - DEPLOY_HOST     : IP ou hostname SSH du VPS (exemple fictif, ne pas copier une vraie IP ici)
 # - DEPLOY_USER     : utilisateur SSH (ex: root)
 # - DEPLOY_SSH_KEY   : clé privée PEM (multi-ligne) pour GitHub Actions
-# - ONESIGNAL_APP_ID, ONESIGNAL_API_KEYS : même logique OneSignal que deploy.yml (optionnel)
+# - NTFY_URL, NTFY_TOKEN, NTFY_TOPIC : même logique ntfy que deploy.yml (optionnel)
 #
 # Sur le VPS, autorise la clé publique correspondante dans `~/.ssh/authorized_keys`.
 #
@@ -49,15 +49,16 @@ jobs:
           script: |
             /usr/local/bin/deploy-site.sh
 
-      - name: Push notification (OneSignal)
+      - name: Push notification (ntfy)
         if: success()
         env:
-          ONESIGNAL_APP_ID: ${{ secrets.ONESIGNAL_APP_ID }}
-          ONESIGNAL_API_KEYS: ${{ secrets.ONESIGNAL_API_KEYS }}
+          NTFY_URL:   ${{ secrets.NTFY_URL }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
         run: |
           set -euo pipefail
           if ! git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
-            echo "Pas de nouvel article"
+            echo "Pas d'historique git suffisant"
             exit 0
           fi
           CONTENT_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^src/content/blog/' | grep '\.md$' || true)
@@ -65,32 +66,19 @@ jobs:
             echo "Pas de nouvel article (blog)"
             exit 0
           fi
+          if [ -z "${NTFY_URL:-}" ] || [ -z "${NTFY_TOKEN:-}" ]; then
+            echo "NTFY_URL ou NTFY_TOKEN absent ; notification ignorée."
+            exit 0
+          fi
           TARGET=$(echo "$CONTENT_FILES" | sort | head -1)
           SLUG=$(basename "$TARGET" .md)
           ARTICLE_URL="https://blogdungaucher.com/fr/blog/${SLUG}/"
-          if [ -z "${ONESIGNAL_APP_ID:-}" ] || [ -z "${ONESIGNAL_API_KEYS:-}" ]; then
-            echo "ONESIGNAL_APP_ID ou ONESIGNAL_API_KEYS absent ; notification ignorée."
-            exit 0
-          fi
           TITLE=$(awk '/^---$/{d++;if(d>=2)exit;next}d==1&&/^title:/{line=$0;sub(/^title:[[:space:]]+/,"",line);if(line~/^".*"$/){line=substr(line,2,length(line)-2)}print line;exit}' "$TARGET")
-          if [ -z "$TITLE" ]; then
-            TITLE="Nouvel article"
-          fi
-          BODY_FR="Nouvel article publié sur Blog d'un Gaucher"
-          PAYLOAD="$(jq -n \
-            --arg app_id "$ONESIGNAL_APP_ID" \
-            --arg title "$TITLE" \
-            --arg body "$BODY_FR" \
-            --arg url "$ARTICLE_URL" \
-            '{
-              app_id: $app_id,
-              included_segments: ["All"],
-              headings: { fr: $title, en: $title },
-              contents: { fr: $body, en: $body },
-              url: $url,
-              web_url: $url
-            }')"
-          curl -sS -f -X POST "https://onesignal.com/api/v1/notifications" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            -H "Authorization: Key ${ONESIGNAL_API_KEYS}" \
-            -d "$PAYLOAD"
+          [ -z "$TITLE" ] && TITLE="Nouvel article"
+          TOPIC="${NTFY_TOPIC:-blog-gaucher}"
+          curl -sS -f -X POST "${NTFY_URL}/${TOPIC}" \
+            -H "Authorization: Bearer ${NTFY_TOKEN}" \
+            -H "Title: ${TITLE}" \
+            -H "Click: ${ARTICLE_URL}" \
+            -H "Tags: chess,left_fist" \
+            -d "Nouvel article publié sur Blog d'un Gaucher"

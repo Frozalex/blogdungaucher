@@ -2,6 +2,10 @@ node_modules/
 dist/
 .astro/
 
+# ntfy — données runtime Docker (volumes bind-mount si utilisés en dev)
+ntfy/data/
+ntfy/cache/
+
 # Worktrees / sandbox Claude Code (ne pas versionner)
 .claude/
 

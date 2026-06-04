@@ -1,0 +1,40 @@
+# ── ntfy server configuration ─────────────────────────────────────────────────
+# https://docs.ntfy.sh/config/
+# Ce fichier est monté en lecture seule dans le conteneur Docker.
+
+# URL publique du serveur (utilisée dans les liens des notifications)
+base-url: "https://ntfy.blogdungaucher.com"
+
+# Écoute HTTP (le proxy Nginx/Caddy termine le TLS)
+listen-http: ":80"
+
+# ── Authentification ───────────────────────────────────────────────────────────
+# Base de données des utilisateurs (volume Docker ntfy_data)
+auth-file: "/var/lib/ntfy/user.db"
+# Par défaut : accès refusé → créer un user avec :
+#   docker compose exec ntfy ntfy user add --role=admin <username>
+#   docker compose exec ntfy ntfy user add blog         # pour les abonnés du blog
+#   docker compose exec ntfy ntfy access blog blog-gaucher ro
+auth-default-access: "deny-all"
+
+# ── Persistance des messages ────────────────────────────────────────────────────
+# Stockage SQLite des messages (permet aux clients de récupérer les notifs manquées)
+cache-file: "/var/cache/ntfy/cache.db"
+# Durée de rétention : 7 jours
+cache-duration: "168h"
+
+# ── Pièces jointes ─────────────────────────────────────────────────────────────
+attachment-cache-dir: "/var/cache/ntfy/attachments"
+attachment-total-size-limit: "1G"
+attachment-file-size-limit: "10m"
+attachment-expiry-duration: "3h"
+
+# ── Derrière un reverse proxy ──────────────────────────────────────────────────
+behind-proxy: true
+
+# ── Web Push (décommenter après avoir généré des clés VAPID) ───────────────────
+# Génération : docker compose exec ntfy ntfy webpush keys
+# web-push-public-key:  ""
+# web-push-private-key: ""
+# web-push-file:        "/var/lib/ntfy/webpush.db"
+# web-push-email-address: "contact@blogdungaucher.com"

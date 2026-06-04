@@ -141,3 +141,28 @@ async function networkFirst(request, cacheName) {
     });
   }
 }
+
+// ── Web Push (ntfy) ──────────────────────────────────────────────────────────
+self.addEventListener("push", (event) => {
+  let data = {};
+  try { data = event.data?.json() ?? {}; } catch { data = { message: event.data?.text() ?? "" }; }
+
+  const title = data.title   ?? "Blog d'un Gaucher";
+  const body  = data.message ?? data.body ?? "";
+  const url   = data.click   ?? "/fr/";
+
+  event.waitUntil(
+    self.registration.showNotification(title, {
+      body,
+      icon:  "/images/icon-192x192.png",
+      badge: "/images/favicon-32x32.png",
+      data:  { url },
+    })
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const url = event.notification.data?.url ?? "/fr/";
+  event.waitUntil(clients.openWindow(url));
+});
