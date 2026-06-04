@@ -32,6 +32,12 @@ export default defineConfig({
     ssr: {
       noExternal: ["remotion", "@remotion/player"],
     },
+    build: {
+      rollupOptions: {
+        // Pagefind est généré après le build Astro : ne pas tenter de le bundler.
+        external: ["/pagefind/pagefind.js"],
+      },
+    },
   },
   prefetch: {
     prefetchAll: true,

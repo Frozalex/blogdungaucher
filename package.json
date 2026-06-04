@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/generate-og-png.mjs && node scripts/check-publish-weekly.mjs && astro build && node scripts/verify-dist-urls.mjs",
+    "build": "node scripts/generate-og-png.mjs && node scripts/check-publish-weekly.mjs && astro build && pagefind --site dist --glob \"fr/blog/**/*.html\" && node scripts/verify-dist-urls.mjs",
     "build:clean": "node scripts/build-clean.mjs",
     "strip:em-dash": "node scripts/strip-em-dash.mjs",
     "strip:em-dash:dry": "node scripts/strip-em-dash.mjs --dry",
@@ -14,7 +14,8 @@
     "apply:publish-schedule": "node scripts/apply-future-publish-schedule.mjs",
     "preview": "astro preview",
     "pdfs": "node scripts/generate-pdfs.mjs",
-    "build:pdfs": "npm run build && npm run pdfs"
+    "build:pdfs": "npm run build && npm run pdfs",
+    "notify": "node scripts/notify-ntfy.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.2.9",
@@ -48,6 +49,7 @@
     "@astrojs/react": "^4.2.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "pagefind": "^1.3.0",
     "puppeteer": "^25.0.4",
     "sharp": "^0.34.5"
   }
