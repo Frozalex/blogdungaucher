@@ -20,20 +20,26 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
+      # SSH en clair (pas appleboy) pour pouvoir : (1) FORCER l'IPv4 via `ssh -4` — les runners
+      # GitHub sont IPv4-only, et le serveur ayant une AAAA, une résolution IPv6 causait des
+      # « dial tcp :22 i/o timeout » aléatoires ; (2) RÉESSAYER — la route Azure→VPS est instable
+      # (≈1 connexion sur 5 aboutit), donc on retente jusqu'à 6 fois.
+      - name: Deploy via SSH (IPv4 forcé + retry)
+        uses: nick-fields/retry@v3
         with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USER }}
-          key: ${{ secrets.DEPLOY_SSH_KEY }}
-          # Durcissement contre les timeouts de connexion intermittents (réseau lent / lossy).
-          # DEPLOY_HOST doit être l'IPv4 littérale (177.7.37.62) : les runners GitHub sont IPv4-only,
-          # un hostname résolvant en IPv6 provoque des « dial tcp :22 i/o timeout » aléatoires.
-          timeout: 60s
-          command_timeout: 15m
-          script_stop: true
-          script: |
-            /usr/local/bin/deploy-site.sh
+          timeout_minutes: 16
+          max_attempts: 6
+          retry_wait_seconds: 25
+          command: |
+            mkdir -p ~/.ssh
+            printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+            chmod 600 ~/.ssh/deploy_key
+            ssh -4 -i ~/.ssh/deploy_key \
+              -o StrictHostKeyChecking=no \
+              -o UserKnownHostsFile=/dev/null \
+              -o ConnectTimeout=45 \
+              "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
+              '/usr/local/bin/deploy-site.sh'
 
       - name: Détecter nouvel article
         if: success()
