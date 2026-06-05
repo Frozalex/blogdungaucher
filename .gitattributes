@@ -1,0 +1,5 @@
+# Les scripts shell DOIVENT rester en LF : un CRLF casse l'exécution sur Linux
+# (VPS de déploiement). Idem pour les fichiers de config nginx inclus côté serveur.
+*.sh            text eol=lf
+*.conf          text eol=lf
+deploy/**       text eol=lf
