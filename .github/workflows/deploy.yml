@@ -1,4 +1,20 @@
-name: Deploy
+name: Deploy notifications
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Le DÉPLOIEMENT ne se fait plus ici. L'ancien push SSH GitHub→VPS timeoutait en
+# boucle (`ssh: connect to host *** port 22: Connection timed out`, route
+# Azure→VPS instable). Il a été remplacé par un déploiement PULL-BASED : le VPS
+# interroge GitHub toutes les 2 min via deploy/auto-deploy-poll.sh (cron) et tire
+# les nouveaux commits. Aucune dépendance au SSH entrant.
+#
+# Ce workflow ne gère plus que les notifications post-publication (ntfy + Brevo),
+# qui étaient auparavant gated sur le succès du SSH — donc cassées dès que le SSH
+# échouait. Elles sont désormais déclenchées directement par la détection d'un
+# nouvel article dans le push.
+#
+# ⚠️ Léger décalage : la notif ntfy part au push ; l'article est en ligne ~2 min
+# plus tard (cycle cron du VPS). L'email Brevo est planifié à H+1, donc sans souci.
+# ─────────────────────────────────────────────────────────────────────────────
 
 on:
   push:
@@ -10,39 +26,15 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  notify:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
-      # SSH en clair (pas appleboy) pour pouvoir : (1) FORCER l'IPv4 via `ssh -4` — les runners
-      # GitHub sont IPv4-only, et le serveur ayant une AAAA, une résolution IPv6 causait des
-      # « dial tcp :22 i/o timeout » aléatoires ; (2) RÉESSAYER — la route Azure→VPS est instable
-      # (≈1 connexion sur 5 aboutit), donc on retente jusqu'à 6 fois.
-      - name: Deploy via SSH (IPv4 forcé + retry)
-        uses: nick-fields/retry@v3
-        with:
-          timeout_minutes: 16
-          max_attempts: 6
-          retry_wait_seconds: 25
-          command: |
-            mkdir -p ~/.ssh
-            printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
-            chmod 600 ~/.ssh/deploy_key
-            ssh -4 -i ~/.ssh/deploy_key \
-              -o StrictHostKeyChecking=no \
-              -o UserKnownHostsFile=/dev/null \
-              -o ConnectTimeout=45 \
-              "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
-              '/usr/local/bin/deploy-site.sh'
-
       - name: Détecter nouvel article
-        if: success()
         id: detect
         run: |
           set -euo pipefail
@@ -66,7 +58,7 @@ jobs:
           echo "title=$TITLE" >> "$GITHUB_OUTPUT"
 
       - name: Push notification (ntfy)
-        if: success() && steps.detect.outputs.new_article != ''
+        if: steps.detect.outputs.new_article != ''
         env:
           NTFY_URL:   ${{ secrets.NTFY_URL }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
@@ -88,7 +80,7 @@ jobs:
             -d "Nouvel article publié sur Blog d'un Gaucher"
 
       - name: Programmer email newsletter (Brevo, H+1)
-        if: success() && steps.detect.outputs.new_article != ''
+        if: steps.detect.outputs.new_article != ''
         env:
           BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
           BREVO_LIST_ID:      ${{ secrets.BREVO_LIST_ID }}
