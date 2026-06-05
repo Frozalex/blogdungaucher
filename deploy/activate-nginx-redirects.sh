@@ -27,9 +27,11 @@ mkdir -p /etc/nginx/snippets
 cp "$SRC" "$DEST"
 echo "✓ Snippet copié → $DEST ($(grep -c 'return 301\|rewrite' "$DEST") règles)"
 
-# L'include est-il présent dans la conf chargée ?
-if nginx -T 2>/dev/null | grep -qF "$INCLUDE_LINE"; then
-  echo "✓ include déjà présent dans la conf nginx."
+# Le snippet est-il chargé dans la conf ? (nginx -T DÉVELOPPE les includes : il
+# affiche le contenu du fichier précédé de « # configuration file <path>: », et
+# NON la directive `include` elle-même — donc on cherche ce marqueur.)
+if nginx -T 2>/dev/null | grep -qF "configuration file ${DEST}"; then
+  echo "✓ snippet chargé dans la conf nginx (include actif)."
 else
   cat >&2 <<EOF
 
