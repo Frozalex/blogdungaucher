@@ -298,7 +298,7 @@ const maxLong = topLong[0]?.readingTime ?? 1;
               data-idx={i}
               role="listitem"
               style={`left:${a.x}%;top:${a.y}%;--r:${r}px;--d:${(i % 12) * 40}ms`}
-              aria-label={`${a.date} — ${a.title} (${a.readingTime} min)`}
+              aria-label={`${a.date}, ${a.title} (${a.readingTime} min)`}
             >
               <span class="star-pt__halo" aria-hidden="true"></span>
               <span class="star-pt__core" aria-hidden="true"></span>
@@ -447,7 +447,7 @@ const maxLong = topLong[0]?.readingTime ?? 1;
       <p class="eyebrow">Carte n°4</p>
       <h2 class="card-title">Lectures profondes</h2>
       <p class="card-sub">
-        Le top des articles qui demandent le plus de patience — ceux qu'on ne
+        Le top des articles qui demandent le plus de patience, ceux qu'on ne
         lit pas entre deux rames de métro.
       </p>
     </div>
@@ -484,7 +484,7 @@ const maxLong = topLong[0]?.readingTime ?? 1;
     <div class="obs-end__inner">
       <p class="obs-end__q">Le firmament continue de s'étendre.</p>
       <p class="obs-end__sub">
-        Un article par lundi, un par jeudi — sauf surprise.
+        Un article par lundi, un par jeudi, sauf surprise.
       </p>
       <div class="obs-end__ctas">
         <a class="obs-end__btn obs-end__btn--p" href="/fr/blog/">

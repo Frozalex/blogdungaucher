@@ -44,7 +44,7 @@ L'**hyperfocus** est un état d'absorption mentale intense et prolongée sur une
 
 Le terme a d'abord été utilisé en clinique du TDAH par [Thomas E. Brown](https://en.wikipedia.org/wiki/Thomas_E._Brown) et d'autres chercheurs dans les années 2000. Il décrit une particularité paradoxale : les personnes TDAH, qui ont par définition un déficit d'attention, peuvent entrer dans des états d'engagement extrême sur des activités qu'elles trouvent fascinantes. Le déficit n'est pas d'attention en général mais de **régulation** de l'attention.
 
-Depuis, l'hyperfocus a été reconnu plus largement, dans la population générale comme dans plusieurs profils neurodivergents (TDAH, autisme, haut potentiel intellectuel — voir [échecs et HPI](/fr/blog/echecs-et-hpi/)). Une étude récente (Hupfeld, Abagis & Shah, 2019) a documenté sa prévalence dans la population générale comme dans les populations neurodivergentes.
+Depuis, l'hyperfocus a été reconnu plus largement, dans la population générale comme dans plusieurs profils neurodivergents (TDAH, autisme, haut potentiel intellectuel, voir [échecs et HPI](/fr/blog/echecs-et-hpi/)). Une étude récente (Hupfeld, Abagis & Shah, 2019) a documenté sa prévalence dans la population générale comme dans les populations neurodivergentes.
 
 La signature neurale de l'hyperfocus est différente de l'attention soutenue : activation intense et **prolongée** du réseau d'attention exécutive, suppression *totale* du DMN, et baisse d'activité des régions impliquées dans la perception du temps et des signaux corporels (insula, cortex pariétal inférieur).
 

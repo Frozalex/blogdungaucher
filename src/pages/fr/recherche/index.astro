@@ -67,9 +67,9 @@ const allPosts = await getAllPosts();
   async function getPagefind() {
     if (pagefindInstance) return pagefindInstance;
     try {
-      // @ts-ignore — fichier généré au build par Pagefind (absent au moment du bundling).
+      // @ts-ignore - fichier généré au build par Pagefind (absent au moment du bundling).
       // Le spécifieur est construit à l'EXÉCUTION (window.location.origin) : Rollup ne peut donc
-      // pas l'analyser/résoudre statiquement et laisse l'import dynamique intact. Indispensable —
+      // pas l'analyser/résoudre statiquement et laisse l'import dynamique intact. Indispensable -
       // un littéral "/pagefind/pagefind.js" déclenche « Rollup failed to resolve import » et casse
       // le build serveur (le fichier n'existe qu'après `pagefind --site dist`).
       const pagefindUrl = window.location.origin + "/pagefind/pagefind.js";
