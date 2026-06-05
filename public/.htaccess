@@ -1,3 +1,8 @@
+# ⚠️  INACTIF EN PROD — le serveur actuel est nginx (VPS), qui IGNORE .htaccess.
+#     Les vrais 301 vivent désormais dans deploy/nginx-redirects.conf.
+#     Ce fichier n'est conservé que pour un éventuel retour sur hébergement Apache ;
+#     le garder cohérent évite des règles contradictoires en cas de migration.
+#
 # Hostinger / Apache  -  Astro avec trailingSlash: "always"
 # Les rubriques sont des dossiers (/fr/science/) avec index.html dedans.
 # Sans slash final, Apache peut répondre 404 ; on redirige vers la même URL avec /
@@ -31,5 +36,9 @@ Redirect 301 /fr/blog/echecs-vieillissement-cognitif/ /fr/blog/echecs-alzheimer-
 Redirect 301 /en/blog/chess-and-seniors/ /en/blog/chess-and-alzheimer-prevention/
 Redirect 301 /en/blog/chess-and-cognitive-aging/ /en/blog/chess-and-alzheimer-prevention/
 
-# Groupe 4 — Grand oral Maths (FR uniquement, pas de traduction EN existante)
-Redirect 301 /fr/blog/grand-oral-maths-spe-echecs/ /fr/blog/guide-grand-oral-echecs-maths/
+# Groupe 4 — Grand oral Maths : le gagnant prouvé (grand-oral-maths-spe-echecs,
+# 318 clics/90j) est canonique ; le guide y est redirigé.
+Redirect 301 /fr/blog/guide-grand-oral-echecs-maths/ /fr/blog/grand-oral-maths-spe-echecs/
+
+# URLs héritées sans préfixe de langue (ancienne structure pré-i18n)
+RedirectMatch 301 ^/blog/(.*)$ /fr/blog/$1

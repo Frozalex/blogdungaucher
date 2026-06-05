@@ -3,10 +3,10 @@ title: "Chess and Women: Why So Few, and Is That Changing?"
 excerpt: >-
   40 women among 1,700 Grandmasters. The gap isn't biological: it's mathematical, historical and psychological. What the
   data really says, and why the 'female brain' argument doesn't hold.
-seoTitle: "Chess and Women: Understanding the Gender Gap"
+seoTitle: "Chess and Women: The Gender Gap Explained - Participation, Not Biology"
 seoDescription: >-
-  Why are there so few women in chess? A breakdown of scientific studies, the Polgár sisters, Hou Yifan and the real
-  reasons behind this fascinating debate.
+  Why so few women in chess? The gender gap explained through participation statistics (Bilalić, 2009), the Polgár
+  sisters and Hou Yifan - not biology.
 faq:
   - question: Why are there so few women chess players in competitions?
     answer: >-

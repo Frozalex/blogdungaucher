@@ -8,6 +8,7 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 import { SITE_ORIGIN } from "./scripts/site-origin.mjs";
+import { enSlugRedirects } from "./scripts/en-redirects.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -39,10 +40,43 @@ export default defineConfig({
       },
     },
   },
+  // Redirections : générées en pages statiques (meta-refresh) car le serveur prod
+  // est nginx — le public/.htaccess Apache y est IGNORÉ. nginx porte les vrais 301
+  // (voir deploy/nginx-redirects.conf) ; ces entrées Astro sont le filet de sécurité
+  // côté build et couvrent les sources de trafic connues (GSC).
   redirects: {
+    // Rubrique renommée Essais → Dissertations
     "/fr/essais/": "/fr/dissertations/",
     "/en/essais/": "/en/dissertations/",
     "/de/essais/": "/de/dissertations/",
+
+    // Résolution cannibalisation SEO (articles fusionnés vers leur version canonique)
+    "/fr/blog/echecs-et-syndrome-imposteur/": "/fr/blog/syndrome-imposteur-aux-echecs/",
+    "/en/blog/chess-impostor-syndrome/": "/en/blog/impostor-syndrome-in-chess/",
+    "/fr/blog/bienfaits-des-echecs-sur-le-cerveau/": "/fr/blog/les-echecs-et-le-cerveau/",
+    "/en/blog/chess-benefits-for-the-brain/": "/en/blog/chess-and-the-brain/",
+    "/fr/blog/echecs-et-seniors/": "/fr/blog/echecs-alzheimer-prevention-declin-cognitif/",
+    "/fr/blog/echecs-vieillissement-cognitif/": "/fr/blog/echecs-alzheimer-prevention-declin-cognitif/",
+    "/en/blog/chess-and-seniors/": "/en/blog/chess-and-alzheimer-prevention/",
+    "/en/blog/chess-and-cognitive-aging/": "/en/blog/chess-and-alzheimer-prevention/",
+
+    // Grand oral Maths : on conserve le gagnant prouvé (grand-oral-maths-spe-echecs,
+    // 318 clics/90j) comme canonique ; le guide y est redirigé.
+    "/fr/blog/guide-grand-oral-echecs-maths/": "/fr/blog/grand-oral-maths-spe-echecs/",
+
+    // URLs héritées sans préfixe de langue (ancienne structure pré-i18n).
+    // Elles cannibalisaient les versions /fr/ et fuyaient vers l'accueil.
+    "/blog/les-echecs-et-l-addiction/": "/fr/blog/les-echecs-et-l-addiction/",
+    "/blog/les-echecs-et-les-mathematiques/": "/fr/blog/les-echecs-et-les-mathematiques/",
+    "/blog/psychologie-du-joueur-d-echecs/": "/fr/blog/psychologie-du-joueur-d-echecs/",
+    "/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/": "/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/",
+    "/blog/echecs-et-femmes/": "/fr/blog/echecs-et-femmes/",
+    "/blog/les-echecs-et-le-cerveau/": "/fr/blog/les-echecs-et-le-cerveau/",
+    "/blog/echecs-et-autisme/": "/fr/blog/echecs-et-autisme/",
+
+    // Anciennes URLs EN à slug FR (pré-localisation) → slug EN localisé.
+    // Générées dynamiquement depuis le frontmatter des traductions (62 paires).
+    ...enSlugRedirects(),
   },
   prefetch: {
     prefetchAll: true,

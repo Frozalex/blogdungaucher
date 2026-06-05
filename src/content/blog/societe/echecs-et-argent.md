@@ -18,10 +18,10 @@ tags:
   - économie des échecs
   - chess.com
   - professionnalisme
-seoTitle: "Les échecs et l'argent : prize pools, modèle économique et revenus des pros"
+seoTitle: "Combien gagne un joueur d'échecs ? Salaires, prize money et fortune des pros"
 seoDescription: >-
-  Pourquoi les meilleurs joueurs d'échecs du monde ne sont pas riches ? Prize pools, FIDE, sponsoring, streaming :
-  anatomie d'un modèle économique à la traîne.
+  Combien gagne vraiment Magnus Carlsen ? Salaire d'un joueur d'échecs professionnel, prize money et fortune des champions
+  - et pourquoi les meilleurs du monde ne sont pas si riches.
 faq:
   - question: "Comment gagne sa vie un Grand Maître \"ordinaire\" ?"
     answer: >-
