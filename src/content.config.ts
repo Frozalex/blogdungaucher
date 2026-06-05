@@ -63,11 +63,15 @@ const translationSchema = z.object({
   seoTitle: z.string().optional(),
   seoDescription: z.string().optional(),
   draft: z.boolean().default(false),
-  /** Slug localisé utilisé dans l'URL (ex. "learning-to-lose-at-chess").
-   *  Si absent, l'URL reprend le slug FR du fichier source.
-   *  Le nom du fichier MD doit toujours correspondre au slug FR pour la résolution
-   *  de la traduction depuis la page (`getEntry("enTranslations", frSlug)`). */
+  /** Slug localisé utilisé dans l'URL EN (ex. "learning-to-lose-at-chess").
+   *  Si absent, l'URL reprend le slug FR du fichier source. */
   enSlug: z.string().optional(),
+  /** Slug FR de l'article source = clé de résolution traduction ↔ source FR.
+   *  - Convention EN (héritée) : OMETTRE `frSlug` ; le NOM DE FICHIER = slug FR
+   *    (résolution via `getEntry("enTranslations", frSlug)` et la dérivation par `e.id`).
+   *  - Convention pt-BR / futures langues : NOM DE FICHIER = slug localisé (intention SEO),
+   *    et `frSlug` porte le slug FR. La résolution lit `frSlug ?? <slug dérivé du nom de fichier>`. */
+  frSlug: z.string().optional(),
   faq: z
     .array(
       z.object({
