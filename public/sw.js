@@ -1,12 +1,24 @@
-const CACHE_VERSION = "v5";
+const CACHE_VERSION = "v6";
 const STATIC_CACHE = `blogdungaucher-static-${CACHE_VERSION}`;
 const FONT_CACHE   = `blogdungaucher-fonts-${CACHE_VERSION}`;
 const IMAGE_CACHE  = `blogdungaucher-images-${CACHE_VERSION}`;
 
+// Page de repli servie quand une page jamais visitée est demandée hors ligne.
+const OFFLINE_PAGE = "/offline.html";
+
 const PRECACHE = [
   "/fr/",
+  // Pages d'index (navigation) précachées pour rester atteignables hors ligne
+  // même si l'utilisateur ne les a jamais ouvertes.
+  "/fr/blog/",
+  "/fr/science/",
+  "/fr/esprit/",
+  "/fr/societe/",
+  "/fr/grand-oral/",
+  OFFLINE_PAGE,
   "/manifest.json",
   "/favicon.svg",
+  "/images/logo.svg",
   "/images/favicon-32x32.png",
   "/images/apple-touch-icon.png",
   "/images/icon-192x192.png",
@@ -34,7 +46,11 @@ function isHTMLPage(url) {
 // ── Install : précache des pages et assets critiques ────────────────
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(STATIC_CACHE).then((cache) => cache.addAll(PRECACHE))
+    // allSettled (et non addAll atomique) : une seule URL en échec ne doit pas
+    // faire échouer toute l'installation du service worker.
+    caches.open(STATIC_CACHE).then((cache) =>
+      Promise.allSettled(PRECACHE.map((url) => cache.add(url)))
+    )
   );
   self.skipWaiting();
 });
@@ -83,9 +99,9 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // ── PAGES HTML : network-first, fallback cache ──
+  // ── PAGES HTML : network-first, fallback cache puis page offline ──
   if (isHTMLPage(url)) {
-    event.respondWith(networkFirst(request, STATIC_CACHE));
+    event.respondWith(networkFirst(request, STATIC_CACHE, true));
     return;
   }
 
@@ -124,8 +140,9 @@ async function staleWhileRevalidate(request, cacheName) {
   return cached ?? await networkFetch ?? new Response("Ressource indisponible.", { status: 503 });
 }
 
-/** Network-first : essaie le réseau, utilise le cache en cas d'échec. */
-async function networkFirst(request, cacheName) {
+/** Network-first : essaie le réseau, utilise le cache en cas d'échec.
+ *  Si `htmlFallback` et que la page n'est pas en cache, sert la page offline. */
+async function networkFirst(request, cacheName, htmlFallback = false) {
   try {
     const response = await fetch(request);
     if (response.ok) {
@@ -135,7 +152,12 @@ async function networkFirst(request, cacheName) {
     return response;
   } catch {
     const cached = await caches.match(request);
-    return cached ?? new Response("Page indisponible hors ligne.", {
+    if (cached) return cached;
+    if (htmlFallback) {
+      const offline = await caches.match(OFFLINE_PAGE);
+      if (offline) return offline;
+    }
+    return new Response("Page indisponible hors ligne.", {
       status: 503,
       headers: { "Content-Type": "text/plain; charset=utf-8" },
     });
