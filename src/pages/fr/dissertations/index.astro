@@ -1,0 +1,136 @@
+---
+import { getCollection } from "astro:content";
+
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+
+const entries = await getCollection("dissertations");
+const sorted = entries.sort(
+  (a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime()
+);
+
+function formatDate(d: Date) {
+  return d.toLocaleDateString("fr-FR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+}
+---
+
+<BaseLayout
+  title="Dissertations | textes longs et argumentés | Blog d'un Gaucher"
+  description="Dissertations sur les échecs : réflexions longues et argumentées sur la stratégie, l'investissement, la compétition et la vie de joueur. Par Le_Gaucher."
+  canonicalPath="/fr/dissertations/"
+  lang="fr"
+  enPath="/en/dissertations/"
+  dePath="/de/dissertations/"
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Accueil", path: "/fr/" },
+    { name: "Dissertations", path: "/fr/dissertations/" },
+  ])}
+>
+  <section class="page-hero dissertations-hero">
+    <div class="container">
+      <span class="eyebrow reveal">Carnet éditorial</span>
+      <h1 class="reveal">Dissertations</h1>
+      <p class="page-lead reveal">
+        Textes longs et argumentés, pas des analyses. Ce que les rubriques ne disent pas, et pourquoi je continue à jouer.
+      </p>
+    </div>
+  </section>
+
+  <div class="dissertations-list">
+    <div class="container">
+      {sorted.map((entry) => (
+        <a href={`/fr/dissertations/${entry.id}/`} class="dissertation-item reveal">
+          <article>
+            <time datetime={entry.data.publishDate.toISOString()}>
+              {formatDate(entry.data.publishDate)}
+            </time>
+            <h2>{entry.data.title}</h2>
+            <p>{entry.data.excerpt}</p>
+            <span class="read-more">Lire la dissertation →</span>
+          </article>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .dissertations-hero.page-hero {
+    padding: 4.5rem 0 2rem;
+  }
+
+  .dissertations-hero h1 {
+    font-family: var(--font-serif, Georgia, serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    margin: 0.5rem 0 0.75rem;
+    letter-spacing: -0.015em;
+  }
+
+  .page-lead {
+    max-width: 42rem;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--text-muted, inherit);
+    opacity: 0.92;
+  }
+
+  .dissertations-list {
+    padding: 2rem 0 4rem;
+  }
+
+  .dissertation-item {
+    display: block;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-soft, rgba(0, 0, 0, 0.08));
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s;
+  }
+
+  .dissertation-item:hover {
+    opacity: 0.8;
+  }
+
+  .dissertation-item:first-child {
+    border-top: 1px solid var(--border-soft, rgba(0, 0, 0, 0.08));
+  }
+
+  .dissertation-item time {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .dissertation-item h2 {
+    margin: 0.5rem 0;
+    font-family: var(--font-serif, Georgia, serif);
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+    font-weight: 500;
+    line-height: 1.35;
+  }
+
+  .dissertation-item p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 48rem;
+  }
+
+  .read-more {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--green);
+  }
+</style>

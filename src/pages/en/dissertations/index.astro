@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import EssaisComingSoon from "../../../components/EssaisComingSoon.astro";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+---
+
+<BaseLayout
+  title="Dissertations | long-form argumentative writing | A Left-Hander's Blog"
+  description="Long-form argumentative essays on chess: strategy, investment, competition and the life of a player. By Le_Gaucher."
+  canonicalPath="/en/dissertations/"
+  lang="en"
+  frPath="/fr/dissertations/"
+  enPath="/en/dissertations/"
+  dePath="/de/dissertations/"
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/en/" },
+    { name: "Dissertations", path: "/en/dissertations/" },
+  ])}
+>
+  <EssaisComingSoon lang="en" />
+</BaseLayout>

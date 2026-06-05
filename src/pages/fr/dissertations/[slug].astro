@@ -1,0 +1,116 @@
+---
+import { getCollection, render } from "astro:content";
+
+// KaTeX CSS chargé ici (et non dans BaseLayout) : une dissertation peut contenir des formules.
+import "katex/dist/katex.min.css";
+
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
+import Comments from "../../../components/Comments.astro";
+import ShareButtons from "../../../components/ShareButtons.astro";
+import { siteConfig } from "../../../data/site";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("dissertations");
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const postUrl = `/fr/dissertations/${entry.id}/`;
+const absoluteUrl = new URL(postUrl, siteConfig.siteUrl).toString();
+
+const readingTime = entry.data.readingTime ?? "10 min";
+
+const structuredData = [
+  buildBreadcrumbJsonLd([
+    { name: "Accueil", path: "/fr/" },
+    { name: "Dissertations", path: "/fr/dissertations/" },
+    { name: entry.data.title, path: postUrl },
+  ]),
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: entry.data.title,
+    description: entry.data.seoDescription ?? entry.data.excerpt,
+    author: { "@type": "Person", name: entry.data.author },
+    datePublished: entry.data.publishDate.toISOString(),
+    ...(entry.data.updatedDate
+      ? { dateModified: entry.data.updatedDate.toISOString() }
+      : {}),
+  },
+];
+
+function formatDate(d: Date) {
+  return d.toLocaleDateString("fr-FR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+}
+---
+<BaseLayout
+  title={`${entry.data.seoTitle ?? entry.data.title} | Blog d'un Gaucher`}
+  description={entry.data.seoDescription ?? entry.data.excerpt}
+  canonicalPath={postUrl}
+  type="article"
+  publishDate={entry.data.publishDate}
+  modifiedDate={entry.data.updatedDate ?? entry.data.publishDate}
+  section="Dissertations"
+  structuredData={structuredData}
+  tags={entry.data.tags}
+>
+  <article class="article-page dissertation-page">
+    <div class="reading-progress" aria-hidden="true">
+      <span id="reading-progress-fill"></span>
+    </div>
+    <div class="container article-layout">
+      <div class="article-main">
+
+        <Breadcrumb items={[
+          { label: "Accueil", href: "/fr/" },
+          { label: "Dissertations", href: "/fr/dissertations/" },
+          { label: entry.data.title },
+        ]} />
+
+        <header class="article-header fade-up" style="--motion-delay: 40ms;">
+          <div class="article-meta">
+            <span class="meta-cat" style="--c: var(--green)">Dissertation</span>
+            <span>{readingTime}</span>
+            <time datetime={entry.data.publishDate.toISOString()}>
+              {formatDate(entry.data.publishDate)}
+            </time>
+          </div>
+          <h1>{entry.data.title}</h1>
+          <p class="article-excerpt">{entry.data.excerpt}</p>
+        </header>
+
+        <div class="article-body prose fade-up" style="--motion-delay: 120ms;">
+          <Content />
+        </div>
+
+        <footer class="article-footer fade-up">
+          <p class="article-signature">
+            <em>{entry.data.author} -- blogdungaucher.com</em>
+          </p>
+          <ShareButtons url={absoluteUrl} title={entry.data.title} />
+        </footer>
+
+        <Comments lang="fr" postId={postUrl} />
+
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .dissertation-page {
+    --c: var(--green);
+  }
+</style>

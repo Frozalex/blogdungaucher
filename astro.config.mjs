@@ -39,6 +39,11 @@ export default defineConfig({
       },
     },
   },
+  redirects: {
+    "/fr/essais/": "/fr/dissertations/",
+    "/en/essais/": "/en/dissertations/",
+    "/de/essais/": "/de/dissertations/",
+  },
   prefetch: {
     prefetchAll: true,
     defaultStrategy: "viewport",

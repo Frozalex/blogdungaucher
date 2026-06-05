@@ -1,64 +1,118 @@
 ---
-/**
- * Bloc "Une réaction ?" en fin d'article.
- *
- * Volontairement sobre : un seul CTA, un email direct. Pas de système de
- * commentaires (Giscus a été retiré : compte GitHub requis = friction
- * massive pour le lecteur, et fréquence de vraies réactions très faible
- * sur ce type de contenu éditorial long).
- *
- * Si l'on veut un jour réactiver Giscus, l'ancienne implémentation est
- * dans l'historique git (commit avant la refonte UX du 17 mai 2026).
- */
 interface Props {
   lang?: "fr" | "en" | "de";
+  postId?: string;
 }
-const { lang = "fr" } = Astro.props;
+const { lang = "fr", postId } = Astro.props;
 
-const contactEmail = "contact@blogdungaucher.com";
+const remark42Url  = import.meta.env.PUBLIC_REMARK42_URL  ?? "";
+const remark42Site = import.meta.env.PUBLIC_REMARK42_SITE ?? "blog-gaucher";
+
+const localeMap: Record<string, string> = { fr: "fr", en: "en", de: "de" };
+const locale = localeMap[lang] ?? "fr";
 
 const copy = {
-  fr: {
-    title: "Une réaction ?",
-    lead:
-      "Un avis, une nuance, un témoignage : un email arrive directement, je le lis et je réponds.",
-    subject: "Réaction à l'article",
-    aria: `Envoyer un email à ${contactEmail}`,
-  },
-  en: {
-    title: "Have a reaction?",
-    lead:
-      "A thought, a nuance, a story: an email lands directly with me, I read every one and reply.",
-    subject: "Reaction to the article",
-    aria: `Send an email to ${contactEmail}`,
-  },
-  de: {
-    title: "Eine Reaktion?",
-    lead:
-      "Eine Meinung, ein Hinweis, eine Erfahrung: eine E-Mail kommt direkt bei mir an, ich lese jede und antworte.",
-    subject: "Reaktion auf den Artikel",
-    aria: `E-Mail an ${contactEmail} senden`,
-  },
+  fr: { title: "Commentaires" },
+  en: { title: "Comments" },
+  de: { title: "Kommentare" },
 };
 const t = copy[lang];
+
+// remark42 is only embedded when a URL is configured
+const enabled = remark42Url !== "";
 ---
 
-<section class="comments" id="commentaires">
+<section class="comments" id="commentaires" data-pagefind-ignore>
   <h2>{t.title}</h2>
-  <p class="comments-lead">{t.lead}</p>
 
-  <a
-    href={`mailto:${contactEmail}?subject=${encodeURIComponent(t.subject)}`}
-    class="comments-email-cta"
-    aria-label={t.aria}
-  >
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="2" y="4" width="20" height="16" rx="2"/>
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-    </svg>
-    <span class="comments-email-cta__addr">{contactEmail}</span>
-  </a>
+  {enabled ? (
+    <div
+      id="remark42"
+      data-r42-url={remark42Url}
+      data-r42-site={remark42Site}
+      data-r42-locale={locale}
+      data-r42-post-id={postId}
+    />
+  ) : (
+    <p class="comments-unavailable">Commentaires indisponibles en mode développement.</p>
+  )}
 </section>
+
+<script>
+  // Boot remark42 once; reinitialise on each View Transition page load.
+  // Guard on window.__r42Boot prevents double-registration of event listeners.
+  declare global {
+    interface Window {
+      __r42Boot?: boolean;
+      REMARK42?: {
+        destroy: () => void;
+        createInstance: (cfg: Record<string, unknown>) => void;
+        changeTheme: (theme: string) => void;
+      };
+    }
+  }
+
+  function getTheme(): string {
+    return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  }
+
+  function mountRemark42() {
+    const container = document.getElementById("remark42") as HTMLElement | null;
+    if (!container) return;
+
+    const url    = container.dataset.r42Url;
+    const siteId = container.dataset.r42Site;
+    const locale = container.dataset.r42Locale ?? "fr";
+    const postId = container.dataset.r42PostId;
+    if (!url || !siteId) return;
+
+    const config: Record<string, unknown> = {
+      host:    url,
+      site_id: siteId,
+      locale,
+      theme:   getTheme(),
+      components: ["embed"],
+    };
+    if (postId) config.page_id = postId;
+
+    if (window.REMARK42) {
+      window.REMARK42.createInstance(config);
+      return;
+    }
+
+    // Inject the remark42 embed script once
+    const script = document.createElement("script");
+    script.src   = `${url}/web/embed.js`;
+    script.defer = true;
+    // remark42 reads window.remark_config on load
+    (window as unknown as Record<string, unknown>)["remark_config"] = config;
+    document.head.appendChild(script);
+  }
+
+  if (!window.__r42Boot) {
+    window.__r42Boot = true;
+
+    document.addEventListener("astro:before-swap", () => {
+      window.REMARK42?.destroy();
+    });
+
+    document.addEventListener("astro:page-load", () => {
+      mountRemark42();
+    });
+
+    // Sync theme changes in real time
+    const themeObserver = new MutationObserver(() => {
+      window.REMARK42?.changeTheme(getTheme());
+    });
+    themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  }
+
+  // Initial mount (first page load — astro:page-load fires before this script on SSG)
+  mountRemark42();
+</script>
 
 <style>
   .comments {
@@ -77,55 +131,16 @@ const t = copy[lang];
     font-weight: 500;
     font-size: 1.35rem;
     color: var(--c, var(--green));
-    margin: 0 0 0.45rem;
+    margin: 0 0 1rem;
   }
 
-  .comments-lead {
-    margin: 0 0 1.1rem;
+  .comments-unavailable {
     color: var(--text-muted);
-    font-size: 0.95rem;
-    line-height: 1.65;
-    max-width: 38rem;
-  }
-
-  .comments-email-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    padding: 0.7rem 1.15rem;
-    border-radius: var(--radius-md);
-    border: 1.5px solid var(--c, var(--green));
-    background: color-mix(in srgb, var(--c, var(--green)) 8%, var(--surface));
-    color: var(--c, var(--green));
-    font-family: var(--font-display);
-    font-size: 0.92rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition:
-      background 160ms ease,
-      box-shadow 160ms ease,
-      transform 160ms var(--ease-spring);
-  }
-
-  .comments-email-cta:hover {
-    background: color-mix(in srgb, var(--c, var(--green)) 16%, var(--surface));
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--c, var(--green)) 18%, transparent);
-    transform: translateY(-1px);
-  }
-  .comments-email-cta:active {
-    transform: translateY(0);
-  }
-
-  .comments-email-cta__addr {
-    /* font monospace-ish pour faire "lien email" tout en gardant l'identité */
-    font-feature-settings: "tnum" 1;
+    font-size: 0.9rem;
+    margin: 0;
   }
 
   @media (max-width: 560px) {
     .comments { padding: 1.25rem 1.15rem; }
-    .comments-email-cta {
-      width: 100%;
-      justify-content: center;
-    }
   }
 </style>

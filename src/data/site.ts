@@ -225,7 +225,7 @@ export const navigationLinks = [
   { label: "Esprit", href: "/fr/esprit/" },
   { label: "Société", href: "/fr/societe/" },
   { label: "Grand oral", href: "/fr/grand-oral/" },
-  { label: "Essais", href: "/fr/essais/" },
+  { label: "Dissertations", href: "/fr/dissertations/" },
   { label: "Tous les articles", href: "/fr/blog/" },
   { label: "À propos", href: "/fr/about/" },
 ] as const;
@@ -235,7 +235,7 @@ export const enNavigationLinks = [
   { label: "Mind", href: "/en/esprit/" },
   { label: "Society", href: "/en/societe/" },
   { label: "Grand oral", href: "/en/grand-oral/" },
-  { label: "Essays", href: "/en/essais/" },
+  { label: "Dissertations", href: "/en/dissertations/" },
   { label: "All articles", href: "/en/blog/" },
   { label: "About", href: "/en/about/" },
 ] as const;
@@ -246,7 +246,7 @@ export const deNavigationLinks = [
   { label: "Geist", href: "/de/esprit/" },
   { label: "Gesellschaft", href: "/de/societe/" },
   { label: "Grand oral", href: "/de/grand-oral/" },
-  { label: "Essays", href: "/de/essais/" },
+  { label: "Dissertations", href: "/de/dissertations/" },
   { label: "Alle Artikel", href: "/de/blog/" },
   { label: "Über uns", href: "/de/about/" },
 ] as const;
@@ -258,7 +258,7 @@ export const staticRoutes = [
   "/fr/esprit/",
   "/fr/societe/",
   "/fr/grand-oral/",
-  "/fr/essais/",
+  "/fr/dissertations/",
   "/fr/analyses/",
   "/fr/about/",
   "/fr/glossaire/",
@@ -273,7 +273,7 @@ export const enStaticRoutes = [
   "/en/esprit/",
   "/en/societe/",
   "/en/grand-oral/",
-  "/en/essais/",
+  "/en/dissertations/",
   "/en/about/",
 ] as const;
 
@@ -284,7 +284,7 @@ export const deStaticRoutes = [
   "/de/esprit/",
   "/de/societe/",
   "/de/grand-oral/",
-  "/de/essais/",
+  "/de/dissertations/",
   "/de/about/",
   "/de/mentions-legales/",
   "/de/politique-confidentialite/",
