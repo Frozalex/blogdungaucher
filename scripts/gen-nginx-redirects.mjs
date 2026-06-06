@@ -49,6 +49,12 @@ location = /fr/blog/echecs-et-seniors/                   { return 301 /fr/blog/e
 location = /fr/blog/echecs-vieillissement-cognitif/      { return 301 /fr/blog/echecs-alzheimer-prevention-declin-cognitif/; }
 location = /en/blog/chess-and-seniors/                   { return 301 /en/blog/chess-and-alzheimer-prevention/; }
 location = /en/blog/chess-and-cognitive-aging/           { return 301 /en/blog/chess-and-alzheimer-prevention/; }
+# Orphelins EN à SLUG FR des articles fusionnés (page 200 sans redirect dans le dist VPS,
+# fichier de traduction disparu donc hors enSlugRedirects) → canonique EN. Trouvés via GSC.
+location = /en/blog/echecs-et-syndrome-imposteur/        { return 301 /en/blog/impostor-syndrome-in-chess/; }
+location = /en/blog/bienfaits-des-echecs-sur-le-cerveau/ { return 301 /en/blog/chess-and-the-brain/; }
+location = /en/blog/echecs-et-seniors/                   { return 301 /en/blog/chess-and-alzheimer-prevention/; }
+location = /en/blog/echecs-vieillissement-cognitif/      { return 301 /en/blog/chess-and-alzheimer-prevention/; }
 
 # ── Grand oral Maths : le gagnant prouvé (grand-oral-maths-spe-echecs) est
 #    canonique ; le guide y est redirigé. ──

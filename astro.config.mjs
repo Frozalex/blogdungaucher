@@ -60,6 +60,16 @@ export default defineConfig({
     "/en/blog/chess-and-seniors/": "/en/blog/chess-and-alzheimer-prevention/",
     "/en/blog/chess-and-cognitive-aging/": "/en/blog/chess-and-alzheimer-prevention/",
 
+    // Orphelins EN à SLUG FR des articles fusionnés (trouvés via GSC 2026-06-06).
+    // Avant la localisation des slugs EN, la page EN était générée à l'URL du slug FR ;
+    // après fusion, elle survit en 200 dans le dist VPS SANS redirection (le fichier de
+    // traduction a disparu, donc enSlugRedirects ne la couvre pas), dupliquant le
+    // canonique EN et captant des impressions à 0 clic. Redirection 1:1 vers le canonique.
+    "/en/blog/echecs-et-syndrome-imposteur/": "/en/blog/impostor-syndrome-in-chess/",
+    "/en/blog/bienfaits-des-echecs-sur-le-cerveau/": "/en/blog/chess-and-the-brain/",
+    "/en/blog/echecs-et-seniors/": "/en/blog/chess-and-alzheimer-prevention/",
+    "/en/blog/echecs-vieillissement-cognitif/": "/en/blog/chess-and-alzheimer-prevention/",
+
     // Grand oral Maths : on conserve le gagnant prouvé (grand-oral-maths-spe-echecs,
     // 318 clics/90j) comme canonique ; le guide y est redirigé.
     "/fr/blog/guide-grand-oral-echecs-maths/": "/fr/blog/grand-oral-maths-spe-echecs/",
