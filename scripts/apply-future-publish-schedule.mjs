@@ -23,6 +23,18 @@ const dryRun = process.argv.includes("--dry-run");
 const blogDir = path.join(__dirname, "..", "src", "content", "blog");
 const ANCHOR = SCHEDULE_GRID_ANCHOR_MONDAY;
 
+/** Liste récursive des .md : les articles vivent en sous-dossiers (esprit/, science/,
+ * societe/, grand-oral/). Une lecture à plat ne voit AUCUN fichier. Renvoie des chemins complets. */
+function walk(d) {
+  const out = [];
+  for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+    const p = path.join(d, e.name);
+    if (e.isDirectory()) out.push(...walk(p));
+    else if (e.name.endsWith(".md")) out.push(p);
+  }
+  return out;
+}
+
 function parseFrontPublishDate(raw) {
   const m = raw.match(/^publishDate:\s*["']([^"']+)["']/m);
   return m ? m[1] : null;
@@ -43,11 +55,11 @@ function nextMondayStrictlyAfter(isoDateStr) {
   return toIsoDateUTC(d);
 }
 
-/** max des publishDate < cutoff, ou null */
+/** max des publishDate < cutoff, ou null. `files` = chemins complets. */
 function maxPublishDateBefore(files, cutoff) {
   let max = null;
-  for (const f of files) {
-    const raw = fs.readFileSync(path.join(blogDir, f), "utf8");
+  for (const full of files) {
+    const raw = fs.readFileSync(full, "utf8");
     const pd = parseFrontPublishDate(raw);
     if (!pd || pd >= cutoff) continue;
     if (!max || pd > max) max = pd;
@@ -61,7 +73,7 @@ function mondayPlusDays(mondayIso, weekOffset, addDays) {
   return toIsoDateUTC(d);
 }
 
-const files = fs.readdirSync(blogDir).filter((f) => f.endsWith(".md"));
+const files = walk(blogDir);
 const lastKept = maxPublishDateBefore(files, RESCHEDULE_FROM);
 if (!lastKept) {
   console.error("Aucun billet avec publishDate <", RESCHEDULE_FROM);
@@ -80,16 +92,15 @@ if (startMonday !== SCHEDULE_GRID_ANCHOR_MONDAY) {
 }
 
 const future = [];
-for (const f of files) {
-  const full = path.join(blogDir, f);
+for (const full of files) {
   const raw = fs.readFileSync(full, "utf8");
   const pd = parseFrontPublishDate(raw);
   if (!pd) {
-    console.error("publishDate manquant:", f);
+    console.error("publishDate manquant:", path.relative(blogDir, full));
     process.exit(1);
   }
   if (pd >= ANCHOR) {
-    future.push({ file: f, slug: f.replace(/\.md$/, ""), old: pd, raw });
+    future.push({ file: full, slug: path.basename(full, ".md"), old: pd, raw });
   }
 }
 
@@ -133,10 +144,10 @@ for (const a of assignments) {
     `publishDate: "${a.next}"`,
   );
   if (nextRaw === a.raw) {
-    console.error("Remplacement publishDate impossible:", a.file);
+    console.error("Remplacement publishDate impossible:", path.relative(blogDir, a.file));
     process.exit(1);
   }
-  fs.writeFileSync(path.join(blogDir, a.file), nextRaw, "utf8");
+  fs.writeFileSync(a.file, nextRaw, "utf8");
 }
 
 console.log("\nFichiers mis à jour.");

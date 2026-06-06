@@ -9,7 +9,11 @@
  * Quand tu figes une nouvelle vague : mets à jour les deux constantes puis
  * `npm run apply:publish-schedule` (dry-run d’abord).
  */
-export const RESCHEDULE_FROM = "2026-05-14";
+export const RESCHEDULE_FROM = "2026-06-07";
 
-/** Première semaine soumise à la validation stricte (lundi de début de grille). */
-export const SCHEDULE_GRID_ANCHOR_MONDAY = "2026-05-18";
+/** Première semaine soumise à la validation stricte (lundi de début de grille).
+ * Avancé au 2026-06-08 (premier lundi futur au 2026-06-06) : les billets déjà
+ * publiés <= 2026-06-06 sortent de la grille stricte — dont le singleton passé
+ * W23 (2026-05-25) qu'on ne peut pas réparer rétroactivement sans réécrire une
+ * date déjà indexée. La validation ne porte donc que sur le calendrier à venir. */
+export const SCHEDULE_GRID_ANCHOR_MONDAY = "2026-06-08";

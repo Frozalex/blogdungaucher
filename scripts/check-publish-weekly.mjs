@@ -21,6 +21,18 @@ import {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dir = path.join(__dirname, "..", "src", "content", "blog");
 
+/** Liste récursive des .md : les articles vivent en sous-dossiers (esprit/, science/,
+ * societe/, grand-oral/). Une lecture à plat ne voit AUCUN fichier → check no-op. */
+function walk(d) {
+  const out = [];
+  for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+    const p = path.join(d, e.name);
+    if (e.isDirectory()) out.push(...walk(p));
+    else if (e.name.endsWith(".md")) out.push(p);
+  }
+  return out;
+}
+
 function isoWeekKey(isoDateStr) {
   const date = new Date(`${isoDateStr}T12:00:00Z`);
   if (Number.isNaN(date.getTime())) return null;
@@ -40,16 +52,16 @@ function isMondayOrThursdayUtc(isoDateStr) {
   return dow === 1 || dow === 4;
 }
 
-const files = fs.readdirSync(dir).filter((f) => f.endsWith(".md"));
+const files = walk(dir);
 const rows = [];
-for (const f of files) {
-  const raw = fs.readFileSync(path.join(dir, f), "utf8");
+for (const full of files) {
+  const raw = fs.readFileSync(full, "utf8");
   const m = raw.match(/^publishDate:\s*["']([^"']+)["']/m);
   if (!m) {
-    console.error("publishDate manquant:", f);
+    console.error("publishDate manquant:", path.relative(dir, full));
     process.exit(1);
   }
-  rows.push({ slug: f.replace(/\.md$/, ""), date: m[1] });
+  rows.push({ slug: path.basename(full, ".md"), date: m[1] });
 }
 
 const anchor = SCHEDULE_GRID_ANCHOR_MONDAY;
