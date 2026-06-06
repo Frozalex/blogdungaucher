@@ -4,7 +4,7 @@ excerpt: >-
   Des prisons italiennes aux hôpitaux psychiatriques anglais, des programmes de réhabilitation américains aux centres de
   traitement du PTSD : l'échiquier est utilisé comme outil thérapeutique dans des contextes variés. Ce que les études
   disent réellement sur ces applications.
-publishDate: "2026-08-17"
+publishDate: "2026-08-03"
 category: societe
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   À quel âge un enfant est-il prêt pour les échecs ? Quelles méthodes fonctionnent selon la recherche ? Et quels sont
   les bénéfices réels : pas les slogans, les données ? Un guide complet pour parents et éducateurs qui veulent
   introduire les échecs intelligemment.
-publishDate: "2026-08-27"
+publishDate: "2026-08-17"
 category: societe
 featured: false
 featuredRank: 99

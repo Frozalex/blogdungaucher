@@ -4,7 +4,7 @@ excerpt: >-
   Les enfants à haut potentiel intellectuel sont souvent décrits comme faits pour les échecs. La réalité est plus
   subtile : l'échiquier peut être un refuge, un accélérateur de développement, ou une nouvelle source de perfectionnisme
   toxique. Ce que la recherche dit sur HPI et échecs.
-publishDate: "2026-08-06"
+publishDate: "2026-07-23"
 category: societe
 featured: false
 featuredRank: 99

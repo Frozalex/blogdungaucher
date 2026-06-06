@@ -3,7 +3,7 @@ title: "Les échecs en prison : quand l'échiquier devient un outil de réhabili
 excerpt: >-
   Des détenus qui apprennent à anticiper les conséquences à trois coups de distance, à gérer la frustration d'une pièce
   perdue, à respecter un adversaire. Ce que les programmes de chess therapy en prison révèlent vraiment.
-publishDate: "2026-07-09"
+publishDate: "2026-06-22"
 category: societe
 featured: false
 featuredRank: 99

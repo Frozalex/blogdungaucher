@@ -4,7 +4,7 @@ excerpt: >-
   La pendule ne ment pas. Elle révèle ta relation à l'incertitude, à la prise de décision sous pression et à la
   confiance en ton propre jugement. Ce que la psychologie de la décision et les données de tournois disent sur la
   gestion du temps, et comment l'améliorer concrètement.
-publishDate: "2026-08-10"
+publishDate: "2026-09-03"
 category: esprit
 featured: false
 featuredRank: 99

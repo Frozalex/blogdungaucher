@@ -4,7 +4,7 @@ excerpt: >-
   Visualiser 8 coups à l'avance sans toucher les pièces. Calculer mentalement des variantes sur un échiquier qui
   n'existe que dans ta tête. Les échecs sollicitent des capacités de visualisation spatiale que la neuroscience commence
   à mesurer avec précision.
-publishDate: "2026-08-13"
+publishDate: "2026-07-13"
 category: science
 featured: false
 featuredRank: 99

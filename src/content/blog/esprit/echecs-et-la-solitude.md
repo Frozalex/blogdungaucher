@@ -4,7 +4,7 @@ excerpt: >-
   Les échecs sont peut-être le seul sport de compétition où la solitude n'est pas un état d'âme mais une règle. Pas de
   coach, pas de coéquipier, pas même un regard vers le public. Ce que cette solitude structurelle fait aux joueurs, et
   pas seulement du bien.
-publishDate: "2026-11-02"
+publishDate: "2026-11-05"
 category: esprit
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   Pourquoi certains enfants progressent deux fois plus vite que d'autres à entraînement identique ? La réponse implique
   à la fois la génétique, l'épigénétique, et une vision nuancée de ce que signifie 'le talent'. Ce que la science dit
   (et ne dit pas) sur le rôle des gènes dans la performance aux échecs.
-publishDate: "2026-08-24"
+publishDate: "2026-07-30"
 category: science
 featured: false
 featuredRank: 99

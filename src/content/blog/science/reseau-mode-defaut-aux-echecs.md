@@ -1,7 +1,7 @@
 ---
 title: "Le réseau du mode par défaut aux échecs : ce que ton cerveau fait quand tu ne calcules pas"
 excerpt: "L'horloge tourne. Tu ne calcules pas de variante précise. Ton esprit dérive vers ta dernière partie, le score du tournoi, l'odeur du café. Ce n'est pas une faille de concentration : c'est le réseau du mode par défaut au travail. Ce qu'il fait pour toi, contre toi, et comment le piloter."
-publishDate: "2026-11-09"
+publishDate: "2026-10-12"
 category: "science"
 featured: false
 featuredRank: 99

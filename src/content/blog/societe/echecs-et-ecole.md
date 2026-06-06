@@ -4,7 +4,7 @@ excerpt: >-
   L'Arménie rend les échecs obligatoires à l'école primaire. Le Venezuela a lancé le plus grand programme national
   d'histoire. Mais que dit vraiment la recherche scientifique sur les effets des échecs sur les résultats scolaires ? La
   réponse est plus nuancée que les slogans.
-publishDate: "2026-07-27"
+publishDate: "2026-07-06"
 category: societe
 featured: false
 featuredRank: 99

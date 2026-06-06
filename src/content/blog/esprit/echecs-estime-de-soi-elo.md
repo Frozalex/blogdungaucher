@@ -4,7 +4,7 @@ excerpt: >-
   Le classement Elo est une invention brillante pour mesurer le niveau de jeu. C'est aussi un piège psychologique
   redoutable : quand votre Elo devient la mesure de votre valeur personnelle, chaque défaite est une blessure
   identitaire. Comment découpler performance et identité.
-publishDate: "2026-10-22"
+publishDate: "2026-10-29"
 category: esprit
 featured: false
 featuredRank: 99

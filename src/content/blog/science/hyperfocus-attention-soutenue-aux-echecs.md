@@ -1,7 +1,7 @@
 ---
 title: "Hyperfocus et attention soutenue aux échecs : deux régimes attentionnels que tout oppose"
 excerpt: "Tu es absorbé deux heures par une combinaison sans voir l'horloge filer : c'est l'hyperfocus. Tu tiens cinq heures de partie classique en restant lucide : c'est l'attention soutenue. Les neurosciences distinguent ces deux états et leurs prix : l'un te donne de la profondeur, l'autre de la durée. Et tu n'as pas le luxe de choisir le mauvais."
-publishDate: "2026-11-12"
+publishDate: "2026-10-26"
 category: "science"
 featured: false
 featuredRank: 99

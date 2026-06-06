@@ -3,7 +3,7 @@ title: "Méditation et échecs : la pleine conscience au service du jeu lent"
 excerpt: >-
   La méditation ne fait pas de toi un meilleur calculateur. Mais elle change ce que tu fais quand tu calcules : moins
   d'agitation mentale, plus de présence à la position. Ce que les études sur mindfulness disent appliqué à l'échiquier.
-publishDate: "2026-09-03"
+publishDate: "2026-08-13"
 category: science
 featured: false
 featuredRank: 99

@@ -3,7 +3,7 @@ title: "Échecs et confiance en soi : ce que l'échiquier construit vraiment"
 excerpt: >-
   La confiance aux échecs ne naît pas d'un bon résultat, elle se construit coup par coup. Ce que la psychologie de la
   performance dit sur l'auto-efficacité, le mindset et la différence entre confiance solide et arrogance fragile.
-publishDate: "2026-07-20"
+publishDate: "2026-08-20"
 category: esprit
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   Chaque grand maître a une relation particulière avec la défaite. Pas l'indifférence : les champions souffrent autant
   que nous après une partie perdue. Mais ils rebondissent différemment. Ce que la psychologie de la résilience dit sur
   comment transformer les défaites en moteur de progression.
-publishDate: "2026-08-20"
+publishDate: "2026-09-14"
 category: esprit
 featured: false
 featuredRank: 99

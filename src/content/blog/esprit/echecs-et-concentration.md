@@ -4,7 +4,7 @@ excerpt: >-
   La concentration n'est pas un état qui survient quand on est chanceux. C'est une compétence qui se dégrade quand on la
   néglige et s'améliore quand on l'entraîne. Ce que la neuroscience de l'attention dit sur la concentration aux échecs,
   et comment développer concrètement cette capacité.
-publishDate: "2026-08-31"
+publishDate: "2026-09-17"
 category: esprit
 featured: false
 featuredRank: 99

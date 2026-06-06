@@ -4,7 +4,7 @@ excerpt: >-
   Les Grands Maîtres jouent à l'aveugle des dizaines de parties simultanément. Ce n'est pas de la magie : c'est de la
   visualisation spatiale entraînée à l'extrême. Comment fonctionne la représentation mentale de l'échiquier, et comment
   l'améliorer.
-publishDate: "2026-09-21"
+publishDate: "2026-10-08"
 category: esprit
 featured: false
 featuredRank: 99

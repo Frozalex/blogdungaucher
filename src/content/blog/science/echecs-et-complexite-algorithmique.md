@@ -4,7 +4,7 @@ excerpt: >-
   Le nombre de parties d'échecs possibles dépasse le nombre d'atomes dans l'univers observable. Comprendre la complexité
   algorithmique des échecs, c'est comprendre pourquoi Deep Blue en 1997 fut un exploit, et pourquoi AlphaZero en 2017
   fut une révolution d'une nature complètement différente.
-publishDate: "2026-09-14"
+publishDate: "2026-08-24"
 category: science
 featured: false
 featuredRank: 99

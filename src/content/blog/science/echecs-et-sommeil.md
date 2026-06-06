@@ -3,7 +3,7 @@ title: "Échecs et sommeil : pourquoi la nuit joue aussi ta partie"
 excerpt: >-
   Un grand maître qui dort mal joue environ 10% moins bien dès la deuxième heure de jeu. Ce que la recherche en
   neurosciences du sommeil dit sur la consolidation mémorielle, la récupération cognitive et la performance échiquéenne.
-publishDate: "2026-07-23"
+publishDate: "2026-06-15"
 category: science
 featured: false
 featuredRank: 99

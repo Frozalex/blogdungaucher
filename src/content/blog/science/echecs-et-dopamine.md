@@ -4,7 +4,7 @@ excerpt: >-
   Chaque coup tendu, chaque combinaison trouvée, chaque victoire arrachée déclenche une vague neurochimique précise. Ce
   que la neuroscience des circuits de récompense révèle sur pourquoi les échecs sont si engageants, et pourquoi certains
   joueurs n'arrivent plus à s'arrêter.
-publishDate: "2026-08-03"
+publishDate: "2026-06-29"
 category: science
 featured: false
 featuredRank: 99

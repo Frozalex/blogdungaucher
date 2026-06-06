@@ -4,7 +4,7 @@ excerpt: >-
   On peut connaître toutes les ouvertures, toutes les finales, et rester limité par une contrainte fondamentale : la
   mémoire de travail. Ce système cognitif, capable de maintenir 4 à 7 éléments simultanément, est le vrai goulot
   d'étranglement du jeu d'échecs.
-publishDate: "2026-10-05"
+publishDate: "2026-09-10"
 category: science
 featured: false
 featuredRank: 99
