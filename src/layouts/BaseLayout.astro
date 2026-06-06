@@ -458,7 +458,9 @@ const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
   </head>
   <!-- Service worker + réapplication des préférences après chaque View Transition -->
   <body style={accentColor ? `--page-accent:${accentColor}` : ""}>
-    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    {/* Skip-link "Aller au contenu" retiré (réintroduction : remettre
+        <a class="skip-link" href="#main-content">Aller au contenu</a> ici ;
+        le CSS .skip-link reste dormant dans global.css). */}
     <Navbar frHref={resolvedFrPath} enHref={resolvedEnPath} deHref={resolvedDePath} lang={lang} />
     {/* tabindex="-1" : permet au skip-link de poser le focus programmatiquement
        sur <main>, garantissant que les lecteurs d'écran annoncent bien le landmark

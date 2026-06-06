@@ -84,13 +84,12 @@ const statsLabels = {
   de: { articles: "Artikel", minutes: "Lesezeit (min)", latest: "letzter Beitrag" },
 }[lang === "fr" || lang === "en" || lang === "de" ? lang : "fr"];
 
-/** Glyphes pièces par rubrique : signature visuelle reproduite de la home. */
-const categoryGlyph : Record<CategorySlug, string> = {
-  science: "♞",
-  esprit: "♛",
-  societe: "♜",
-  "grand-oral" : "♚",
-};
+const featuredLabel =
+  lang === "en" ? "Featured" : lang === "de" ? "Im Fokus" : "À la une";
+const allLabel =
+  lang === "en" ? "All articles" : lang === "de" ? "Alle Artikel" : "Tous les articles";
+const seeAllLabel =
+  lang === "en" ? "See the whole blog" : lang === "de" ? "Ganzen Blog ansehen" : "Voir tout le blog";
 ---
 <BaseLayout
   title={pageTitle}
@@ -99,13 +98,14 @@ const categoryGlyph : Record<CategorySlug, string> = {
   lang={lang}
   structuredData={structuredData}
 >
+  {/* ─────────────── HERO ─────────────── */}
   <section
     class:list={["cat-hero", landingRich && "cat-hero--accent"]}
     style={`--cat-accent: ${meta.accent};`}
   >
-    <span class="cat-hero__glyph" aria-hidden="true">{categoryGlyph[category]}</span>
+    {/* Logo de marque recoloré à l'accent, en filigrane (remplace l'ancien glyphe de pièce). */}
+    <span class="cat-hero__logo" aria-hidden="true"></span>
     <div class="container">
-      <span class="eyebrow reveal" data-t={`categories.${category}.shortLabel`}>{meta.shortLabel}</span>
       <h1 class="cat-hero__title reveal" data-t={`categories.${category}.label`}>{meta.label}</h1>
       <p class="cat-tagline reveal" data-t={`categories.${category}.tagline`}>{meta.tagline}</p>
       {!landingRich && <p class="cat-desc reveal">{catDescription}</p>}
@@ -133,73 +133,14 @@ const categoryGlyph : Record<CategorySlug, string> = {
     </div>
   </section>
 
-  {landingRich && (
-    <section class="cat-rich" style={`--cat-accent: ${meta.accent};`}>
-      <div class="container">
-        <span class="eyebrow reveal">{richEyebrow}</span>
-
-        {landingRich.slides && landingRich.slides.length > 0 ? (
-          <div class="cat-slides reveal-group">
-            {landingRich.slides.map((slide, idx) => (
-              <article class={`cat-slide cat-slide--${idx % 2 === 0 ? "left" : "right"} reveal`}>
-                <header class="cat-slide__head">
-                  <span class="cat-slide__num">{String(idx + 1).padStart(2, "0")}</span>
-                  {slide.kicker && <span class="cat-slide__kicker">{slide.kicker}</span>}
-                </header>
-                <h3 class="cat-slide__title">{slide.title}</h3>
-                {slide.lead && <p class="cat-slide__lead">{slide.lead}</p>}
-                <ul class="cat-slide__points">
-                  {slide.points.map((pt) => (
-                    <li>
-                      <span class="cat-slide__bullet" aria-hidden="true">→</span>
-                      <span>{pt}</span>
-                    </li>
-                  ))}
-                </ul>
-                {slide.pullquote && (
-                  <p class="cat-slide__quote">
-                    <span class="cat-slide__quote-mark" aria-hidden="true">“</span>
-                    {slide.pullquote}
-                  </p>
-                )}
-              </article>
-            ))}
-          </div>
-        ) : (
-          <div class="cat-rich__essay reveal-group">
-            {landingRich.sections.map((sec) => (
-              <div class="cat-rich__block reveal">
-                <h3 class="cat-rich__h3">{sec.title}</h3>
-                {sec.paragraphs.map((p) => (
-                  <p class="cat-rich__p">{p}</p>
-                ))}
-              </div>
-            ))}
-          </div>
-        )}
-
-        <p class="cat-rich__cards-intro reveal">{cardsIntro}</p>
-        <ul class="cat-rich__cards">
-          {landingRich.cards.map((card) => (
-            <li class="cat-rich__card reveal">
-              <strong>{card.title}</strong>
-              <p>{card.body}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
-  )}
-
-  <div class="container">
-    <AdBanner format="leaderboard" />
-  </div>
-
+  {/* ─────────────── ARTICLES D'ABORD ─────────────── */}
   {hero && (
-    <section class="cat-section">
+    <section class="cat-section cat-section--featured" style={`--cat-accent: ${meta.accent};`}>
       <div class="container">
-        <span class="eyebrow reveal" data-t="category.featured">À la une</span>
-        <div class="cat-hero-card reveal">
+        <div class="cat-section__head reveal">
+          <span class="eyebrow eyebrow--accent" data-t="category.featured">{featuredLabel}</span>
+        </div>
+        <div class="cat-featured-card reveal">
           <ArticleCard post={hero} featured={true} lang={lang} />
         </div>
       </div>
@@ -207,11 +148,11 @@ const categoryGlyph : Record<CategorySlug, string> = {
   )}
 
   {rest.length > 0 ? (
-    <section class="cat-section">
+    <section class="cat-section" style={`--cat-accent: ${meta.accent};`}>
       <div class="container">
         <div class="cat-section__head reveal">
-          <span class="eyebrow" data-t="category.allArticles">Tous les articles</span>
-          <a href={blogHref} class="text-link" data-t="category.seeAll">Voir tout le blog</a>
+          <span class="eyebrow eyebrow--accent" data-t="category.allArticles">{allLabel}</span>
+          <a href={blogHref} class="text-link" data-t="category.seeAll">{seeAllLabel}</a>
         </div>
         <div class="post-grid reveal-group">
           {rest.map((post) => <ArticleCard post={post} lang={lang} />)}
@@ -235,42 +176,105 @@ const categoryGlyph : Record<CategorySlug, string> = {
       </div>
     </section>
   )}
+
+  <div class="container">
+    <AdBanner format="leaderboard" />
+  </div>
+
+  {/* ─────────────── ÉDITORIAL CONDENSÉ (déplacé sous les articles) ─────────────── */}
+  {landingRich && (
+    <section class="cat-rich" style={`--cat-accent: ${meta.accent};`}>
+      <div class="container">
+        <span class="eyebrow eyebrow--accent reveal">{richEyebrow}</span>
+
+        {landingRich.slides && landingRich.slides.length > 0 ? (
+          <div class="cat-slides reveal-group">
+            {landingRich.slides.map((slide, idx) => (
+              <article class="cat-slide reveal">
+                <header class="cat-slide__head">
+                  <span class="cat-slide__num">{String(idx + 1).padStart(2, "0")}</span>
+                  {slide.kicker && <span class="cat-slide__kicker">{slide.kicker}</span>}
+                </header>
+                <h3 class="cat-slide__title">{slide.title}</h3>
+                {slide.lead && <p class="cat-slide__lead">{slide.lead}</p>}
+                <ul class="cat-slide__points">
+                  {slide.points.map((pt) => (
+                    <li>
+                      <span class="cat-slide__bullet" aria-hidden="true">→</span>
+                      <span>{pt}</span>
+                    </li>
+                  ))}
+                </ul>
+                {slide.pullquote && (
+                  <p class="cat-slide__quote">{slide.pullquote}</p>
+                )}
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div class="cat-rich__essay reveal-group">
+            {landingRich.sections.map((sec) => (
+              <div class="cat-rich__block reveal">
+                <h3 class="cat-rich__h3">{sec.title}</h3>
+                {sec.paragraphs.map((p) => (
+                  <p class="cat-rich__p">{p}</p>
+                ))}
+              </div>
+            ))}
+          </div>
+        )}
+
+        <p class="cat-rich__cards-intro reveal">{cardsIntro}</p>
+        <ul class="cat-rich__cards reveal-group">
+          {landingRich.cards.map((card) => (
+            <li class="cat-rich__card reveal">
+              <strong>{card.title}</strong>
+              <p>{card.body}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
 </BaseLayout>
 
 <style>
+  /* ═══════════════ HERO ═══════════════ */
   .cat-hero {
     position: relative;
-    padding: 4.5rem 0 2rem;
+    padding: 4rem 0 2rem;
     overflow: hidden;
   }
 
-  /* Glyphe pièce d'échecs surdimensionné en filigrane : signature visuelle.
-     Plage clamp resserrée pour éviter le débordement sur écran <500px. */
-  .cat-hero__glyph {
+  /* Logo de marque en filigrane, recoloré à l'accent de la rubrique (CSS mask). */
+  .cat-hero__logo {
     position: absolute;
     top: 50%;
-    right: clamp(-2rem, -2vw, 1rem);
-    font-family: var(--font-serif);
-    font-size: clamp(7rem, 22vw, 22rem);
-    line-height: 0.85;
-    color: color-mix(in srgb, var(--cat-accent) 11%, transparent);
+    /* Décalé vers la gauche (right positif) + taille réduite : le logo reste
+       ENTIER, jamais coupé par le bord d'écran ni par overflow:hidden du hero. */
+    right: clamp(1.25rem, 4vw, 4rem);
+    width: clamp(6rem, 13vw, 10rem);
+    height: clamp(8.5rem, 18vw, 14rem);
+    transform: translateY(-50%) rotate(-4deg);
+    background-color: color-mix(in srgb, var(--cat-accent) 14%, transparent);
+    -webkit-mask: url("/images/logo.svg") center / contain no-repeat;
+    mask: url("/images/logo.svg") center / contain no-repeat;
     pointer-events: none;
     user-select: none;
-    transform: translateY(-50%) rotate(-8deg);
     z-index: 0;
   }
 
-  /* Sur très petit écran, on l'efface presque totalement pour ne pas voler de l'air au contenu. */
-  @media (max-width: 540px) {
-    .cat-hero__glyph {
-      font-size: 8rem;
-      right: -1.5rem;
-      opacity: 0.6;
-    }
+  :global([data-theme="dark"]) .cat-hero__logo {
+    background-color: color-mix(in srgb, var(--cat-accent) 17%, transparent);
   }
 
-  :global([data-theme="dark"]) .cat-hero__glyph {
-    color: color-mix(in srgb, var(--cat-accent) 14%, transparent);
+  @media (max-width: 540px) {
+    .cat-hero__logo {
+      width: 5.5rem;
+      height: 7.6rem;
+      right: 1rem;
+      opacity: 0.8;
+    }
   }
 
   .cat-hero .container {
@@ -279,7 +283,7 @@ const categoryGlyph : Record<CategorySlug, string> = {
   }
 
   .cat-hero--accent {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2.25rem;
     background: radial-gradient(
         ellipse 90% 70% at 88% -15%,
         color-mix(in srgb, var(--cat-accent) 16%, transparent),
@@ -287,79 +291,6 @@ const categoryGlyph : Record<CategorySlug, string> = {
       ),
       radial-gradient(ellipse 70% 50% at 5% 100%, color-mix(in srgb, var(--cat-accent) 8%, transparent), transparent 50%),
       var(--bg);
-  }
-
-  /* Titre H1 : rule colorée qui se déploie à l'affichage. */
-  .cat-hero__title {
-    position: relative;
-    display: inline-block;
-  }
-
-  .cat-hero__title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.1em;
-    height: 4px;
-    width: 0;
-    background: linear-gradient(90deg, var(--cat-accent), color-mix(in srgb, var(--cat-accent) 25%, transparent));
-    border-radius: 2px;
-    transition: width 920ms cubic-bezier(0.22, 1, 0.36, 1) 120ms;
-  }
-
-  .cat-hero__title.is-visible::after {
-    width: clamp(3.5rem, 12vw, 7rem);
-  }
-
-  /* Strip de stats : trois chiffres typographiés à l'italique Fraunces, signature éditoriale. */
-  .cat-stats {
-    margin: 1.5rem 0 0;
-    padding: 1.1rem 0 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
-    gap: clamp(1rem, 3vw, 1.75rem) clamp(1.25rem, 4vw, 2.5rem);
-    align-items: flex-end;
-    border-top: 1px solid color-mix(in srgb, var(--cat-accent) 22%, var(--border-soft));
-    max-width: 38rem;
-  }
-
-  @media (max-width: 480px) {
-    .cat-stats {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  .cat-stats__item {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 0.18rem;
-    margin: 0;
-  }
-
-  .cat-stats__item dt {
-    font-family: var(--font-display);
-    font-size: 0.66rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-  }
-
-  .cat-stats__item dd {
-    margin: 0;
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 500;
-    font-size: clamp(1.85rem, 4vw, 2.5rem);
-    line-height: 0.95;
-    color: var(--cat-accent);
-    letter-spacing: -0.02em;
-  }
-
-  .cat-stats__item dd.cat-stats__date {
-    font-size: clamp(1.1rem, 2.2vw, 1.4rem);
-    line-height: 1.2;
-    color: var(--text-main);
   }
 
   :global([data-theme="dark"]) .cat-hero--accent {
@@ -372,263 +303,6 @@ const categoryGlyph : Record<CategorySlug, string> = {
       var(--bg);
   }
 
-  .cat-rich {
-    padding: 0 0 2.5rem;
-  }
-
-  .cat-rich .eyebrow {
-    margin-bottom: 1.1rem;
-  }
-
-  .cat-rich__essay {
-    display: grid;
-    gap: clamp(1.75rem, 4vw, 2.75rem);
-    max-width: 52rem;
-    margin-top: 0.75rem;
-  }
-
-  .cat-rich__block {
-    display: grid;
-    gap: 0.85rem;
-  }
-
-  .cat-rich__h3 {
-    margin: 0;
-    font-family: var(--font-display);
-    font-size: clamp(1.05rem, 0.9vw + 0.95rem, 1.25rem);
-    font-weight: 650;
-    letter-spacing: -0.02em;
-    color: var(--text-main);
-  }
-
-  .cat-rich__p {
-    margin: 0;
-    font-size: clamp(0.98rem, 0.65vw + 0.91rem, 1.08rem);
-    line-height: 1.72;
-    color: var(--text-muted);
-  }
-
-  /* ─── Slides magazine illustré (remplace cat-rich__essay quand slides existent) ─── */
-  .cat-slides {
-    display: grid;
-    gap: clamp(1.25rem, 3vw, 1.85rem);
-    margin: 1.5rem 0 0;
-    max-width: 64rem;
-  }
-
-  .cat-slide {
-    position: relative;
-    padding: clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 3vw, 2rem);
-    border-radius: 8px;
-    background: var(--surface);
-    border: 1px solid var(--border-soft);
-    border-left: 4px solid var(--cat-accent);
-    box-shadow: var(--shadow-sm);
-    transition: transform 280ms var(--ease-spring), box-shadow 280ms var(--ease-out), border-color 180ms ease;
-    overflow: hidden;
-  }
-
-  /* Filigrane numéroté géant en arrière-plan : signature magazine. */
-  .cat-slide::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background:
-      radial-gradient(circle at 95% 0%, color-mix(in srgb, var(--cat-accent) 9%, transparent), transparent 45%);
-    z-index: 0;
-  }
-
-  .cat-slide > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  .cat-slide:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: color-mix(in srgb, var(--cat-accent) 35%, var(--border-soft));
-  }
-
-  /* Alternance gauche/droite : effet visible UNIQUEMENT en desktop.
-     Sur mobile, toutes les bordures restent à gauche pour préserver l'alignement. */
-  @media (min-width: 760px) {
-    .cat-slide--right {
-      border-left: 1px solid var(--border-soft);
-      border-right: 4px solid var(--cat-accent);
-      padding-left: clamp(1.5rem, 3vw, 2.25rem);
-      margin-left: clamp(2rem, 8vw, 5rem);
-    }
-    .cat-slide--right::before {
-      background:
-        radial-gradient(circle at 5% 0%, color-mix(in srgb, var(--cat-accent) 9%, transparent), transparent 45%);
-    }
-    .cat-slide--left {
-      margin-right: clamp(2rem, 8vw, 5rem);
-    }
-  }
-
-  .cat-slide__head {
-    display: flex;
-    align-items: baseline;
-    gap: 0.85rem;
-    margin-bottom: 0.85rem;
-    padding-bottom: 0.6rem;
-    border-bottom: 1px solid color-mix(in srgb, var(--cat-accent) 18%, var(--border-soft));
-  }
-
-  .cat-slide__num {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 500;
-    font-size: clamp(2.1rem, 4.5vw, 3rem);
-    line-height: 0.9;
-    color: var(--cat-accent);
-    letter-spacing: -0.04em;
-  }
-
-  .cat-slide__kicker {
-    font-family: var(--font-display);
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-    padding-bottom: 0.3rem;
-  }
-
-  .cat-slide__title {
-    margin: 0 0 0.85rem;
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: clamp(1.35rem, 2.8vw, 1.85rem);
-    line-height: 1.18;
-    letter-spacing: -0.025em;
-    color: var(--text-main);
-  }
-
-  .cat-slide__lead {
-    margin: 0 0 1.1rem;
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(1rem, 1.8vw, 1.12rem);
-    line-height: 1.55;
-    color: var(--text-muted);
-    max-width: 38rem;
-  }
-
-  .cat-slide__points {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    gap: 0.7rem;
-  }
-
-  .cat-slide__points li {
-    display: grid;
-    grid-template-columns: 1.1rem 1fr;
-    gap: 0.55rem;
-    align-items: baseline;
-    font-size: 0.96rem;
-    line-height: 1.6;
-    color: var(--text-main);
-  }
-
-  .cat-slide__bullet {
-    font-family: var(--font-display);
-    font-weight: 600;
-    color: var(--cat-accent);
-    line-height: 1;
-  }
-
-  .cat-slide__quote {
-    margin: 1.25rem 0 0;
-    padding: 0.95rem 1.1rem 0.95rem 1.5rem;
-    background: color-mix(in srgb, var(--cat-accent) 7%, var(--bg-warm));
-    border-radius: 6px;
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 500;
-    font-size: clamp(1rem, 1.7vw, 1.1rem);
-    line-height: 1.5;
-    color: var(--text-main);
-    position: relative;
-  }
-
-  .cat-slide__quote-mark {
-    position: absolute;
-    top: -0.5rem;
-    left: 0.5rem;
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 2.3rem;
-    line-height: 1;
-    color: color-mix(in srgb, var(--cat-accent) 55%, transparent);
-    pointer-events: none;
-  }
-
-  @media (max-width: 600px) {
-    .cat-slide {
-      padding: 1.25rem 1.15rem 1.35rem;
-    }
-    .cat-slide__quote {
-      padding: 0.85rem 0.95rem 0.85rem 1.25rem;
-    }
-  }
-
-  @media (prefers-reduced-motion : reduce) {
-    .cat-slide,
-    .cat-slide__quote-mark {
-      transition: none !important;
-    }
-    .cat-slide:hover {
-      transform: none;
-    }
-  }
-
-  .cat-rich__cards-intro {
-    margin: clamp(1.75rem, 4vw, 2.5rem) 0 0.85rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--text-muted);
-  }
-
-  .cat-rich__cards {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .cat-rich__card {
-    margin: 0;
-    padding: 1rem 1.1rem 1.05rem;
-    border-radius: var(--radius-md);
-    border: 1px solid var(--border-soft);
-    background: var(--surface);
-    box-shadow: var(--shadow-sm);
-  }
-
-  .cat-rich__card strong {
-    display: block;
-    font-family: var(--font-display);
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--text-main);
-    margin-bottom: 0.35rem;
-  }
-
-  .cat-rich__card p {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: var(--text-muted);
-  }
-
   .cat-hero h1 {
     font-family: var(--font-serif);
     font-weight: 500;
@@ -636,22 +310,102 @@ const categoryGlyph : Record<CategorySlug, string> = {
     font-size: clamp(2.6rem, 6.2vw, 4.2rem);
     letter-spacing: -0.015em;
     line-height: 1.05;
-    margin: 0.5rem 0 0.9rem;
+    margin: 0.5rem 0 0.85rem;
     font-optical-sizing: auto;
   }
+
+  /* Titre H1 : filet accent qui se déploie à l'apparition. */
+  .cat-hero__title {
+    position: relative;
+    display: inline-block;
+  }
+  .cat-hero__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.08em;
+    height: 4px;
+    width: 0;
+    background: linear-gradient(90deg, var(--cat-accent), color-mix(in srgb, var(--cat-accent) 25%, transparent));
+    border-radius: 2px;
+    transition: width 920ms cubic-bezier(0.22, 1, 0.36, 1) 120ms;
+  }
+  .cat-hero__title.is-visible::after {
+    width: clamp(3.5rem, 12vw, 7rem);
+  }
+
   .cat-tagline {
     font-size: 1.1rem;
     color: var(--text-main);
     margin-bottom: 0.5rem;
+    max-width: 40rem;
   }
   .cat-desc {
     color: var(--text-muted);
     max-width: 38rem;
   }
 
-  .cat-section { padding: 1.5rem 0 3.5rem; }
+  /* Strip de stats : trois chiffres en italique Fraunces, signature éditoriale. */
+  .cat-stats {
+    margin: 1.5rem 0 0;
+    padding: 1.1rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    gap: clamp(1rem, 3vw, 1.75rem) clamp(1.25rem, 4vw, 2.5rem);
+    align-items: flex-end;
+    border-top: 1px solid color-mix(in srgb, var(--cat-accent) 22%, var(--border-soft));
+    max-width: 38rem;
+  }
+  @media (max-width: 480px) {
+    .cat-stats { grid-template-columns: 1fr 1fr; }
+  }
+  .cat-stats__item {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.18rem;
+    margin: 0;
+  }
+  .cat-stats__item dt {
+    font-family: var(--font-display);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .cat-stats__item dd {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.85rem, 4vw, 2.5rem);
+    line-height: 0.95;
+    color: var(--cat-accent);
+    letter-spacing: -0.02em;
+  }
+  .cat-stats__item dd.cat-stats__date {
+    font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+    line-height: 1.2;
+    color: var(--text-main);
+  }
 
-  .cat-hero-card { margin-top: 1rem; max-width: 44rem; }
+  /* ═══════════════ EYEBROW ACCENT (en-têtes de section) ═══════════════ */
+  .eyebrow--accent {
+    background: color-mix(in srgb, var(--cat-accent) 14%, transparent);
+    color: color-mix(in srgb, var(--cat-accent) 72%, var(--text-main));
+  }
+  .eyebrow--accent::before {
+    background: var(--cat-accent);
+  }
+  :global([data-theme="dark"]) .eyebrow--accent {
+    color: color-mix(in srgb, var(--cat-accent) 80%, white);
+  }
+
+  /* ═══════════════ SECTIONS ARTICLES ═══════════════ */
+  .cat-section { padding: 1.75rem 0 2.25rem; }
+  .cat-section--featured { padding-top: 2.25rem; }
+
+  .cat-featured-card { margin-top: 1rem; max-width: 46rem; }
 
   .cat-section__head {
     display: flex;
@@ -667,7 +421,7 @@ const categoryGlyph : Record<CategorySlug, string> = {
     color: var(--text-muted);
     transition: color 150ms ease;
   }
-  .text-link:hover { color : var(--green); }
+  .text-link:hover { color: var(--cat-accent); }
 
   .post-grid {
     display: grid;
@@ -675,6 +429,184 @@ const categoryGlyph : Record<CategorySlug, string> = {
     gap: 0.85rem;
   }
 
+  /* ═══════════════ ÉDITORIAL CONDENSÉ ═══════════════ */
+  .cat-rich {
+    padding: 1.5rem 0 3rem;
+  }
+  .cat-rich .eyebrow {
+    margin-bottom: 1.25rem;
+  }
+
+  .cat-slides {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0.5rem 0 0;
+  }
+  @media (min-width: 760px) {
+    .cat-slides { grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+  }
+
+  .cat-slide {
+    position: relative;
+    padding: 1.4rem 1.5rem 1.5rem;
+    border-radius: 10px;
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-left: 3px solid var(--cat-accent);
+    box-shadow: var(--shadow-sm);
+    transition: transform 240ms var(--ease-spring), box-shadow 240ms ease, border-color 180ms ease;
+  }
+  .cat-slide:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: color-mix(in srgb, var(--cat-accent) 35%, var(--border-soft));
+  }
+
+  .cat-slide__head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.65rem;
+    margin-bottom: 0.55rem;
+  }
+  .cat-slide__num {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.65rem;
+    line-height: 1;
+    color: var(--cat-accent);
+    letter-spacing: -0.03em;
+  }
+  .cat-slide__kicker {
+    font-family: var(--font-display);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .cat-slide__title {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+  }
+  .cat-slide__lead {
+    margin: 0 0 0.8rem;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+  }
+  .cat-slide__points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .cat-slide__points li {
+    display: grid;
+    grid-template-columns: 0.9rem 1fr;
+    gap: 0.5rem;
+    align-items: baseline;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text-muted);
+  }
+  .cat-slide__bullet {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--cat-accent);
+    line-height: 1;
+  }
+  .cat-slide__quote {
+    margin: 0.9rem 0 0;
+    padding-left: 0.9rem;
+    border-left: 2px solid color-mix(in srgb, var(--cat-accent) 45%, transparent);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--text-main);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cat-slide { transition: none !important; }
+    .cat-slide:hover { transform: none; }
+  }
+
+  /* Essai (fallback quand pas de slides). */
+  .cat-rich__essay {
+    display: grid;
+    gap: clamp(1.5rem, 4vw, 2.5rem);
+    max-width: 52rem;
+    margin-top: 0.5rem;
+  }
+  .cat-rich__block { display: grid; gap: 0.85rem; }
+  .cat-rich__h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.05rem, 0.9vw + 0.95rem, 1.25rem);
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+  }
+  .cat-rich__p {
+    margin: 0;
+    font-size: clamp(0.98rem, 0.65vw + 0.91rem, 1.08rem);
+    line-height: 1.72;
+    color: var(--text-muted);
+  }
+
+  /* Trois angles (cartes) sous l'éditorial. */
+  .cat-rich__cards-intro {
+    margin: clamp(1.5rem, 4vw, 2.25rem) 0 0.85rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+  .cat-rich__cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  @media (min-width: 700px) {
+    .cat-rich__cards { grid-template-columns: repeat(3, 1fr); }
+  }
+  .cat-rich__card {
+    margin: 0;
+    padding: 1rem 1.1rem 1.05rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-soft);
+    border-top: 2px solid color-mix(in srgb, var(--cat-accent) 55%, var(--border-soft));
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+  }
+  .cat-rich__card strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.35rem;
+  }
+  .cat-rich__card p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+  }
+
+  /* ═══════════════ EMPTY STATE ═══════════════ */
   .empty-state {
     display: grid;
     place-items: center;
@@ -696,9 +628,9 @@ const categoryGlyph : Record<CategorySlug, string> = {
     margin-bottom: 0.25rem;
   }
   .empty-state h2 { font-size: 1.3rem; }
-  .empty-state p { color : var(--text-muted); font-size: 0.92rem; }
+  .empty-state p { color: var(--text-muted); font-size: 0.92rem; }
 
   @media (max-width: 680px) {
-    .cat-section__head { flex-direction : column; align-items : flex-start; }
+    .cat-section__head { flex-direction: column; align-items: flex-start; }
   }
 </style>
