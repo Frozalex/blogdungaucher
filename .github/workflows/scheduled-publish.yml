@@ -2,83 +2,66 @@
 # Publication automatique différée  -  Blog d'un Gaucher
 # ─────────────────────────────────────────────────────────────
 #
-# Ce workflow se déclenche chaque matin à 06h00 UTC (08h00 Paris).
-# Il se connecte au VPS via SSH et exécute `/usr/local/bin/deploy-site.sh`.
-# Le site Astro reconstruit automatiquement, et les articles dont la
-# publishDate est passée apparaissent d'eux-mêmes.
+# Déclenche chaque matin à 06h00 UTC (08h00 Paris) et les
+# jours de publication habituels (lun + jeu) à 07h00 UTC.
 #
-# ── CONFIGURATION (à faire une seule fois) ───────────────────
+# MÉCANISME (pull-based, sans SSH) :
+#   1. Ce workflow pousse un micro-commit sur main qui met à
+#      jour deploy/scheduled-trigger.txt (date du jour).
+#   2. Le cron VPS (auto-deploy-poll.sh, toutes les 2 min)
+#      détecte le nouveau commit → lance deploy-site.sh.
+#   3. Astro reconstruit ; les articles dont publishDate ≤ now
+#      apparaissent automatiquement.
 #
-# GitHub → Settings → Secrets and variables → Actions → New repository secret :
-# - DEPLOY_HOST     : IP ou hostname SSH du VPS (exemple fictif, ne pas copier une vraie IP ici)
-# - DEPLOY_USER     : utilisateur SSH (ex: root)
-# - DEPLOY_SSH_KEY   : clé privée PEM (multi-ligne) pour GitHub Actions
-# - NTFY_URL, NTFY_TOKEN, NTFY_TOPIC : même logique ntfy que deploy.yml (optionnel)
-#
-# Sur le VPS, autorise la clé publique correspondante dans `~/.ssh/authorized_keys`.
-#
+# Pas de secrets SSH requis — seul GITHUB_TOKEN (natif) est utilisé.
 # ─────────────────────────────────────────────────────────────
 
 name: Publication automatique
 
 on:
-  # Déclenche chaque matin à 06:00 UTC
   schedule:
+    # Tous les jours à 06h00 UTC (filet de sécurité)
     - cron: "0 6 * * *"
-  # Permet aussi un déclenchement manuel depuis l'onglet Actions
+    # Lundi et jeudi à 07h00 UTC (jours de publication)
+    - cron: "0 7 * * 1,4"
   workflow_dispatch:
 
 jobs:
-  deploy:
-    name: Déclencher le déploiement
+  trigger-deploy:
+    name: Déclencher le déploiement (commit trigger)
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          # Token avec droit d'écriture pour pouvoir pusher
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
 
-      - name: Déployer via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USER }}
-          key: ${{ secrets.DEPLOY_SSH_KEY }}
-          script_stop: true
-          script: |
-            /usr/local/bin/deploy-site.sh
-
-      - name: Push notification (ntfy)
-        if: success()
-        env:
-          NTFY_URL:   ${{ secrets.NTFY_URL }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+      - name: Créer le commit de trigger
         run: |
-          set -euo pipefail
-          if ! git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
-            echo "Pas d'historique git suffisant"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Met à jour le fichier de timestamp (idempotent)
+          echo "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" > deploy/scheduled-trigger.txt
+
+          git add deploy/scheduled-trigger.txt
+
+          # N'écrit un commit que si quelque chose a changé
+          if git diff --cached --quiet; then
+            echo "Aucun changement — le VPS est déjà à jour."
             exit 0
           fi
-          CONTENT_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^src/content/blog/' | grep '\.md$' || true)
-          if [ -z "$CONTENT_FILES" ]; then
-            echo "Pas de nouvel article (blog)"
-            exit 0
-          fi
-          if [ -z "${NTFY_URL:-}" ] || [ -z "${NTFY_TOKEN:-}" ]; then
-            echo "NTFY_URL ou NTFY_TOKEN absent ; notification ignorée."
-            exit 0
-          fi
-          TARGET=$(echo "$CONTENT_FILES" | sort | head -1)
-          SLUG=$(basename "$TARGET" .md)
-          ARTICLE_URL="https://blogdungaucher.com/fr/blog/${SLUG}/"
-          TITLE=$(awk '/^---$/{d++;if(d>=2)exit;next}d==1&&/^title:/{line=$0;sub(/^title:[[:space:]]+/,"",line);if(line~/^".*"$/){line=substr(line,2,length(line)-2)}print line;exit}' "$TARGET")
-          [ -z "$TITLE" ] && TITLE="Nouvel article"
-          TOPIC="${NTFY_TOPIC:-blog-gaucher}"
-          curl -sS -f -X POST "${NTFY_URL}/${TOPIC}" \
-            -H "Authorization: Bearer ${NTFY_TOKEN}" \
-            -H "Title: ${TITLE}" \
-            -H "Click: ${ARTICLE_URL}" \
-            -H "Tags: chess,left_fist" \
-            -d "Nouvel article publié sur Blog d'un Gaucher"
+
+          git commit -m "chore(deploy): scheduled trigger $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci-notify]"
+          git push origin main
+
+      - name: Résumé
+        run: |
+          echo "### Trigger envoyé" >> "$GITHUB_STEP_SUMMARY"
+          echo "Le VPS détectera ce commit dans les 2 minutes et déclenchera un rebuild." >> "$GITHUB_STEP_SUMMARY"
+          echo "Les articles dont \`publishDate\` est passée seront désormais en ligne." >> "$GITHUB_STEP_SUMMARY"
