@@ -35,6 +35,9 @@ gh_deploy_blog_rsa*
 # Exports locaux (Word, etc.) — non versionnés
 exports/
 
+# Rapport généré du maillage interne (régénéré à la volée)
+docs/maillage-interne-rapport.md
+
 # Fichiers temporaires locaux (logs git / scripts jetables)
 _git_result.txt
 _shell_probe.txt
