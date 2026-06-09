@@ -172,6 +172,7 @@ Shannon avait vu juste en 1950. La recherche exhaustive était impossible. La so
 
 ## Pour aller plus loin
 
-- [AlphaZero contre Stockfish : la révolution de l'intelligence artificielle aux échecs](/fr/blog/echecs-alphazero-stockfish/)
 - [Sujet Grand Oral NSI : Pourquoi AlphaZero représente-t-il une rupture dans l'intelligence artificielle ?](/fr/blog/sujet-grand-oral-nsi-alphazero/)
 - [Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)
+- [Sujet Grand Oral Maths : En quoi le jeu d'échecs constitue-t-il un modèle de la pensée combinatoire ?](/fr/blog/sujet-grand-oral-maths-combinatoire/)
+

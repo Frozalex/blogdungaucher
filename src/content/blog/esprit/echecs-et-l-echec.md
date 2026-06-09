@@ -220,3 +220,4 @@ Sans ce travail, les échecs ne forment pas plus à la défaite que n'importe qu
 - [Résilience aux échecs : apprendre à rebondir après la défaite](/fr/blog/echecs-et-resilience/)
 - [Elo et estime de soi : quand votre classement devient votre identité](/fr/blog/echecs-estime-de-soi-elo/)
 - [Échecs et confiance en soi : ce que l'échiquier construit vraiment](/fr/blog/echecs-et-confiance-en-soi/)
+

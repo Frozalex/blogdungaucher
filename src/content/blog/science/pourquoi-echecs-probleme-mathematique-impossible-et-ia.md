@@ -295,5 +295,6 @@ Non. C'est une **estimation d'ordre de grandeur** du nombre de parties possibles
 ## Pour aller plus loin
 
 - [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
-- [Sujet Grand Oral Maths : En quoi le jeu d'échecs constitue-t-il un modèle de la pensée combinatoire ?](/fr/blog/sujet-grand-oral-maths-combinatoire/)
-- [Sujet Grand Oral Maths : Pourquoi les mathématiques prouvent-elles que les échecs ne seront jamais résolus par la force brute ?](/fr/blog/sujet-grand-oral-maths-zermelo-complexite/)
+- [La psychologie du joueur d'échecs : ce qui se passe vraiment dans ta tête](/fr/blog/psychologie-du-joueur-d-echecs/)
+- [Les échecs et l'addiction : quand le jeu devient une drogue](/fr/blog/les-echecs-et-l-addiction/)
+

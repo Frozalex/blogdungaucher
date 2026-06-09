@@ -571,4 +571,5 @@ C'est la partie où beaucoup décrochent par fatigue. Tiens bon. Prépare une r�
 
 - [Sujet Grand Oral NSI : En quoi l'élagage alpha-bêta illustre-t-il l'optimisation d'une recherche arborescente ?](/fr/blog/sujet-grand-oral-nsi-alpha-beta/)
 - [Sujet Grand Oral NSI : Comment un programme informatique peut-il jouer aux échecs ?](/fr/blog/sujet-grand-oral-nsi-minimax/)
-- [Guide Grand Oral SES/HGGSP – Échecs : script, arguments et questions jury](/fr/blog/guide-grand-oral-echecs-ses-hggsp/)
+- [Sujet Grand Oral NSI : Pourquoi AlphaZero représente-t-il une rupture dans l'intelligence artificielle ?](/fr/blog/sujet-grand-oral-nsi-alphazero/)
+

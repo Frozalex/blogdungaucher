@@ -184,3 +184,4 @@ Les échecs peuvent être une école de la solitude productive. Ils peuvent auss
 - [Échecs et état de flux : comment atteindre le flow sur l'échiquier](/fr/blog/echecs-et-flow/)
 - [Concentration aux échecs : entraîner l'attention comme un muscle](/fr/blog/echecs-et-concentration/)
 - [Échecs et confiance en soi : ce que l'échiquier construit vraiment](/fr/blog/echecs-et-confiance-en-soi/)
+

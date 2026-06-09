@@ -50,7 +50,7 @@ Les échecs en **ligne** ajoutent une couche : cadences infernales (Bullet, **Bl
 
 ### La boucle dopaminergique
 
-Victoire → [dopamine](/fr/blog/echecs-et-dopamine/) → sensation de progression → envie de recommencer → **nouvelle** partie → nouveau pic (ou nouvelle frustration à « effacer »). Ton [striatum](https://fr.wikipedia.org/wiki/Striatum), hub du circuit de la récompense, est sollicité quand le mat tombe, quand tu gagnes du **temps** à la pendule, quand tu cliques juste au **moment** précis.
+Victoire → dopamine → sensation de progression → envie de recommencer → **nouvelle** partie → nouveau pic (ou nouvelle frustration à « effacer »). Ton [striatum](https://fr.wikipedia.org/wiki/Striatum), hub du circuit de la récompense, est sollicité quand le mat tombe, quand tu gagnes du **temps** à la pendule, quand tu cliques juste au **moment** précis.
 
 Ce n’est pas que tu es « faible ». C’est que ton cerveau fait exactement ce que l’évolution lui a appris : poursuivre les signaux qui ressemblent à de la réussite.
 

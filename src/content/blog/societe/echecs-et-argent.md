@@ -223,8 +223,3 @@ Les échecs ont produit certains des esprits les plus fascinants de l'histoire s
 - **Shenk, D. (2006).** - *The Immortal Game : A History of Chess.* Doubleday. (Histoire économique et culturelle des échecs, y compris l'impact de la Guerre froide sur le financement du jeu professionnel.)
 - **Byrne, R. (1972).** - *Fischer-Spassky Match Reports.* New York Times. (Contexte géopolitique et économique du match du siècle ; première grande médiatisation internationale des échecs.)
 
-## Pour aller plus loin
-
-- [La triche aux échecs : ce que l'affaire Niemann a vraiment révélé](/fr/blog/echecs-et-la-triche/)
-- [Échecs et streaming : comment Twitch et YouTube ont révolutionné le jeu](/fr/blog/echecs-et-streaming/)
-- [Échecs et handicap : quand l'échiquier efface les frontières](/fr/blog/echecs-et-handicap/)

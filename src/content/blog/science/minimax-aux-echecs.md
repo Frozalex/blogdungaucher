@@ -141,7 +141,7 @@ AlphaZero n'utilise pas minimax classique mais une [Monte Carlo Tree Search](htt
 
 Ce qui a frappé la communauté des échecs n'est pas seulement la performance d'AlphaZero, mais son style de jeu. AlphaZero joue de façon audacieuse et créative, avec des sacrifices de matériel à long terme et une préférence pour l'activité des pièces sur les avantages matériels immédiats. Ce style ressemble plus à un joueur humain intuitif qu'à un moteur de force brute.
 
-AlphaZero a montré que minimax n'est pas la seule voie vers la maîtrise des échecs. L'apprentissage par renforcement peut produire une compréhension différente et parfois plus profonde du jeu. (Le [match AlphaZero-Stockfish de 2017](/fr/blog/echecs-alphazero-stockfish/) reste l'épisode fondateur de cette révolution. Pour le mur combinatoire qui rend ces approches nécessaires, voir [pourquoi les échecs sont un problème presque impossible](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/) ; pour les zones où ces algorithmes sont les plus stressés, [la théorie du chaos aux échecs](/blog/theorie-du-chaos-aux-echecs/).)
+AlphaZero a montré que minimax n'est pas la seule voie vers la maîtrise des échecs. L'apprentissage par renforcement peut produire une compréhension différente et parfois plus profonde du jeu. (Le match AlphaZero-Stockfish de 2017 reste l'épisode fondateur de cette révolution. Pour le mur combinatoire qui rend ces approches nécessaires, voir [pourquoi les échecs sont un problème presque impossible](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/) ; pour les zones où ces algorithmes sont les plus stressés, [la théorie du chaos aux échecs](/blog/theorie-du-chaos-aux-echecs/).)
 
 ## Minimax dans ta tête
 

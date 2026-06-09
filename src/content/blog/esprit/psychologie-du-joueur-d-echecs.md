@@ -94,7 +94,7 @@ Le second mécanisme est la prophétie auto-réalisatrice. Tu vois que ton adver
 
 ## Trop peu ou trop de confiance : imposteur, série de wins, et décisions parasitées
 
-Un phénomène psychologique peu souvent évoqué dans les échecs, mais extrêmement répandu, est le [syndrome de l'imposteur](/fr/blog/syndrome-imposteur-aux-echecs/). Tu as gagné quelques tournois, ton classement a grimpé, on te respecte dans ton club. Et malgré tout cela, une petite voix intérieure murmure que tu n'es pas vraiment à la hauteur, que tes résultats sont dus à la chance, que tôt ou tard les autres vont "te percer à jour".
+Un phénomène psychologique peu souvent évoqué dans les échecs, mais extrêmement répandu, est le syndrome de l'imposteur. Tu as gagné quelques tournois, ton classement a grimpé, on te respecte dans ton club. Et malgré tout cela, une petite voix intérieure murmure que tu n'es pas vraiment à la hauteur, que tes résultats sont dus à la chance, que tôt ou tard les autres vont "te percer à jour".
 
 Ce sentiment est particulièrement toxique aux échecs parce qu'il te force à jouer en "mode démonstration" plutôt qu'en "mode jeu". Tu essaies de prouver que tu mérites ta cote plutôt que de simplement chercher le meilleur coup sur l'échiquier. Tes décisions sont parasitées par le regard imaginaire des autres.
 
@@ -104,7 +104,7 @@ L'inverse existe aussi, et est tout aussi dangereux : l'excès de confiance apr�
 
 Il y a des moments rares et précieux, que tout joueur a connus au moins une ou deux fois dans sa pratique, où quelque chose de différent se produit. La pendule n'existe plus. La salle autour de toi disparaît. Ton adversaire n'est plus une menace mais simplement le contexte de ta réflexion. Tu vois la position avec une clarté inhabituelle. Les variantes se déroulent naturellement dans ta tête comme si elles étaient déjà écrites.
 
-[Mihaly Csikszentmihalyi](https://fr.wikipedia.org/wiki/Mihaly_Csikszentmihalyi), psychologue à l'[Université de Chicago](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Chicago), a consacré sa vie à étudier cet état qu'il a appelé le [flow](/fr/blog/echecs-et-flow/) : un état d'absorption totale dans une activité, caractérisé par une absence complète de conscience du temps, un sentiment de contrôle profond et une satisfaction intrinsèque intense. Les échecs, selon Csikszentmihalyi lui-même, sont l'une des activités humaines qui induisent le flow le plus facilement et le plus complètement.
+[Mihaly Csikszentmihalyi](https://fr.wikipedia.org/wiki/Mihaly_Csikszentmihalyi), psychologue à l'[Université de Chicago](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Chicago), a consacré sa vie à étudier cet état qu'il a appelé le flow : un état d'absorption totale dans une activité, caractérisé par une absence complète de conscience du temps, un sentiment de contrôle profond et une satisfaction intrinsèque intense. Les échecs, selon Csikszentmihalyi lui-même, sont l'une des activités humaines qui induisent le flow le plus facilement et le plus complètement.
 
 ### Les conditions du flow sur l'échiquier
 

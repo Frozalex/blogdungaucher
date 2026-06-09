@@ -177,3 +177,4 @@ Pas de magie. Juste de l'expertise portée à un niveau extraordinaire.
 - [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)
 - [Concentration aux échecs : entraîner l'attention comme un muscle](/fr/blog/echecs-et-concentration/)
 - [Mémoire de travail et échecs : le goulot d'étranglement cognitif](/fr/blog/echecs-memoire-de-travail/)
+

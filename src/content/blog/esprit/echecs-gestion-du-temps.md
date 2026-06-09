@@ -203,8 +203,3 @@ Progresser en gestion du temps, c'est donc aussi progresser en connaissance de s
 - La **cadence régulière** (éviter les marathons de 40 minutes suivis de coups rapides) réduit significativement les erreurs de fin de partie
 - La **pendule de l'adversaire** est une source d'information stratégique souvent ignorée
 
-## Pour aller plus loin
-
-- [Procrastination et échecs : ce que l'échiquier apprend sur l'évitement](/fr/blog/echecs-et-procrastination/)
-- [Gérer le stress en tournoi d'échecs : ce que disent la psychologie et la physiologie](/fr/blog/echecs-stress-tournoi/)
-- [Échecs et confiance en soi : ce que l'échiquier construit vraiment](/fr/blog/echecs-et-confiance-en-soi/)

@@ -177,5 +177,6 @@ La pendule tourne. La position est difficile. Mais votre cerveau connaît le che
 ## Pour aller plus loin
 
 - [Résilience aux échecs : apprendre à rebondir après la défaite](/fr/blog/echecs-et-resilience/)
-- [Elo et estime de soi : quand votre classement devient votre identité](/fr/blog/echecs-estime-de-soi-elo/)
 - [Concentration aux échecs : entraîner l'attention comme un muscle](/fr/blog/echecs-et-concentration/)
+- [Échecs et état de flux : comment atteindre le flow sur l'échiquier](/fr/blog/echecs-et-flow/)
+

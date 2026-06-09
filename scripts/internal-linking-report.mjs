@@ -138,6 +138,7 @@ function loadArticles() {
       ...tokenize(tagList.join(" ")),
       ...tokenize(data.pillar),
     ]);
+    const publishDate = data.publishDate ? new Date(data.publishDate) : null;
     return {
       slug,
       path,
@@ -146,6 +147,7 @@ function loadArticles() {
       title: data.title || slug,
       tags,
       tokens,
+      publishDate,
       outgoing: extractInternalLinks(body),
     };
   });
@@ -169,6 +171,11 @@ function suggestionsFor(article, all) {
     .map((other) => ({ other, score: similarity(article, other) }))
     .filter((x) => x.score > 0)
     .filter((x) => !article.outgoing.has(x.other.slug))
+    // Un article ne peut pointer que vers un article déjà publié à sa propre date.
+    .filter((x) => {
+      if (!article.publishDate || !x.other.publishDate) return true;
+      return x.other.publishDate <= article.publishDate;
+    })
     .sort((a, b) => b.score - a.score)
     .slice(0, TOP_K);
   return scored;

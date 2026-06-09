@@ -230,6 +230,7 @@ C'est le paradoxe de la confiance aux échecs : elle se construit dans l'inconfo
 
 ## Pour aller plus loin
 
-- [Résilience aux échecs : apprendre à rebondir après la défaite](/fr/blog/echecs-et-resilience/)
-- [Apprendre à perdre aux échecs : plus difficile qu'on ne le dit](/fr/blog/echecs-et-l-echec/)
-- [Échecs et état de flux : comment atteindre le flow sur l'échiquier](/fr/blog/echecs-et-flow/)
+- [La psychologie du joueur d'échecs : ce qui se passe vraiment dans ta tête](/fr/blog/psychologie-du-joueur-d-echecs/)
+- [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
+- [Les échecs et l'addiction : quand le jeu devient une drogue](/fr/blog/les-echecs-et-l-addiction/)
+

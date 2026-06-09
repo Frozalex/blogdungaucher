@@ -178,3 +178,4 @@ C'est peut-être la contribution la plus durable d'AlphaZero aux échecs : rappe
 - [Sujet Grand Oral NSI : Pourquoi AlphaZero représente-t-il une rupture dans l'intelligence artificielle ?](/fr/blog/sujet-grand-oral-nsi-alphazero/)
 - [La complexité algorithmique des échecs : pourquoi l'IA a mis 50 ans à battre l'homme](/fr/blog/echecs-et-complexite-algorithmique/)
 - [Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)
+

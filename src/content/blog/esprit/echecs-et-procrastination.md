@@ -184,5 +184,6 @@ Et reconnais la vraie nature de ton "je n'ai pas le temps de l'analyse aujourd'h
 ## Pour aller plus loin
 
 - [Gestion du temps aux échecs : la pendule comme miroir de tes décisions](/fr/blog/echecs-gestion-du-temps/)
-- [Apprendre à perdre aux échecs : plus difficile qu'on ne le dit](/fr/blog/echecs-et-l-echec/)
-- [Elo et estime de soi : quand votre classement devient votre identité](/fr/blog/echecs-estime-de-soi-elo/)
+- [La psychologie du joueur d'échecs : ce qui se passe vraiment dans ta tête](/fr/blog/psychologie-du-joueur-d-echecs/)
+- [Les échecs et l'addiction : quand le jeu devient une drogue](/fr/blog/les-echecs-et-l-addiction/)
+

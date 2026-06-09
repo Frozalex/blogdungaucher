@@ -169,8 +169,3 @@ La révolution du streaming d'échecs est réelle, Chess.com et ses 150 millions
 
 *Nakamura joue ses parties de Championnat du monde en streaming. Ses spectateurs regardent simultanément les coups joués et la réaction du joueur qui les joue. C'est peut-être la chose la plus étrange et la plus fascinante que le numérique ait faite au jeu le plus ancien du monde.*
 
-## Pour aller plus loin
-
-- [Échecs et immigration : l'échiquier comme langue commune](/fr/blog/echecs-et-immigration/)
-- [Échecs et handicap : quand l'échiquier efface les frontières](/fr/blog/echecs-et-handicap/)
-- [Les échecs et l'argent : pourquoi les meilleurs joueurs du monde ne sont pas riches](/fr/blog/echecs-et-argent/)

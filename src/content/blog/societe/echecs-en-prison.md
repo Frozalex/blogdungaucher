@@ -209,5 +209,5 @@ L'échiquier enseigne quelque chose que peu d'activités enseignent aussi claire
 ## Pour aller plus loin
 
 - [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
-- [Échecs comme thérapie : ce que la recherche dit sur le jeu et la santé mentale](/fr/blog/echecs-et-therapie/)
-- [Échecs et précarité : quand l'échiquier transcende les inégalités sociales](/fr/blog/echecs-et-precarite/)
+- [Les échecs et le cerveau : ce que la science révèle vraiment](/fr/blog/les-echecs-et-le-cerveau/)
+

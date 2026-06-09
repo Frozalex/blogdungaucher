@@ -168,6 +168,7 @@ L'échiquier reste l'un des rares espaces où la performance cognitive peut s'ex
 
 ## Pour aller plus loin
 
-- [Échecs et immigration : l'échiquier comme langue commune](/fr/blog/echecs-et-immigration/)
 - [Échecs et streaming : comment Twitch et YouTube ont révolutionné le jeu](/fr/blog/echecs-et-streaming/)
-- [La triche aux échecs : ce que l'affaire Niemann a vraiment révélé](/fr/blog/echecs-et-la-triche/)
+- [Échecs et autisme : pourquoi l'échiquier devient un refuge](/fr/blog/echecs-et-autisme/)
+- [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
+

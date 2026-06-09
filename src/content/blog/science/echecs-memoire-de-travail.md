@@ -177,4 +177,5 @@ C'est la vraie leçon : le goulot d'étranglement est réel. La compétence aux 
 
 - [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)
 - [Échecs et vision spatiale : le cerveau qui voit en 3D](/fr/blog/echecs-et-vision-spatiale/)
-- [Visualisation mentale aux échecs : voir sans regarder](/fr/blog/echecs-et-visualisation/)
+- [Échecs et sommeil : pourquoi la nuit joue aussi ta partie](/fr/blog/echecs-et-sommeil/)
+

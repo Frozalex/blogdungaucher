@@ -203,4 +203,4 @@ Quelques recommandations pratiques pour les parents et entraîneurs :
 
 - [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
 - [Échecs et autisme : pourquoi l'échiquier devient un refuge](/fr/blog/echecs-et-autisme/)
-- [Échecs et immigration : l'échiquier comme langue commune](/fr/blog/echecs-et-immigration/)
+

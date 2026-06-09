@@ -206,6 +206,7 @@ C'est l'une des rares interventions où le rapport coût-bénéfice est extrême
 
 ## Pour aller plus loin
 
-- [Concentration aux échecs : entraîner l'attention comme un muscle](/fr/blog/echecs-et-concentration/)
 - [Échecs et sommeil : pourquoi la nuit joue aussi ta partie](/fr/blog/echecs-et-sommeil/)
 - [Échecs et vision spatiale : le cerveau qui voit en 3D](/fr/blog/echecs-et-vision-spatiale/)
+- [Dopamine et échecs : la neurochimie du jeu](/fr/blog/echecs-et-dopamine/)
+

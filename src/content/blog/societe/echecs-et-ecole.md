@@ -207,6 +207,7 @@ C'est peut-être l'argument le plus solide pour les programmes scolaires obligat
 
 ## Pour aller plus loin
 
-- [Enseigner les échecs aux enfants : âge idéal, méthodes et bénéfices réels](/fr/blog/echecs-et-enfants/)
 - [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
-- [Échecs et précarité : quand l'échiquier transcende les inégalités sociales](/fr/blog/echecs-et-precarite/)
+- [Sujet Grand Oral Maths : Quels modèles mathématiques permettent de comprendre les échecs, et où sont leurs limites ?](/fr/blog/sujet-grand-oral-maths-modeles-limites/)
+- [Échecs et Alzheimer : comment stimuler son cerveau pour prévenir le déclin cognitif](/fr/blog/echecs-alzheimer-prevention-declin-cognitif/)
+

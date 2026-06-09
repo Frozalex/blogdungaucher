@@ -132,6 +132,7 @@ function loadArticles() {
       ...tokenize(tagList.join(" ")),
       ...tokenize(data.pillar),
     ]);
+    const publishDate = data.publishDate ? new Date(data.publishDate) : null;
     return {
       slug,
       path,
@@ -142,6 +143,7 @@ function loadArticles() {
       title: data.title || slug,
       tags,
       tokens,
+      publishDate,
       outgoing: extractInternalLinks(body),
       hasFooterBlock: /## Pour aller plus loin/i.test(body) || /## À lire aussi/i.test(body),
     };
@@ -159,6 +161,8 @@ function similarity(a, b) {
   return tagInter * 4 + jaccard * 20 + sameCat * 1.5 + samePillar * 1.5;
 }
 
+const FOOTER_RE = /\n## Pour aller plus loin\s*\n[\s\S]*?(?=\n## |\s*$)/;
+
 function buildFooterBlock(suggestions) {
   const bullets = suggestions
     .map((s) => `- [${s.other.title}](/fr/blog/${s.other.slug}/)`)
@@ -166,35 +170,68 @@ function buildFooterBlock(suggestions) {
   return `\n## Pour aller plus loin\n\n${bullets}\n`;
 }
 
-const articles = loadArticles();
-const candidates = articles
-  .filter((a) => a.outgoing.size === 0 && !a.hasFooterBlock)
-  .map((a) => {
-    const sugg = articles
-      .map((other) => ({ other, score: similarity(a, other) }))
-      .filter((x) => x.score >= MIN_SCORE)
-      .sort((x, y) => y.score - x.score)
-      .slice(0, MAX_LINKS);
-    return { article: a, suggestions: sugg };
-  })
-  .filter((c) => c.suggestions.length >= 2);
+function suggestFor(a, articles) {
+  return articles
+    .map((other) => ({ other, score: similarity(a, other) }))
+    .filter((x) => x.score >= MIN_SCORE)
+    // Un article ne peut pointer que vers un article déjà publié à sa propre date.
+    .filter((x) => {
+      if (!a.publishDate || !x.other.publishDate) return true;
+      return x.other.publishDate <= a.publishDate;
+    })
+    .sort((x, y) => y.score - x.score)
+    .slice(0, MAX_LINKS);
+}
 
-console.log(`${candidates.length} articles candidats (orphelins avec ≥ 2 suggestions de score ≥ ${MIN_SCORE}).`);
+const articles = loadArticles();
+
+const work = [];
+for (const a of articles) {
+  // Cas 1 : orphelin sans bloc → on ajoute
+  // Cas 2 : article avec bloc déjà ajouté par ce script → on régénère
+  if (a.hasFooterBlock) {
+    const block = a.raw.match(FOOTER_RE);
+    if (!block) continue;
+    const sugg = suggestFor(a, articles);
+    if (sugg.length < 2) {
+      work.push({ article: a, suggestions: [], action: "remove" });
+      continue;
+    }
+    work.push({ article: a, suggestions: sugg, action: "regenerate" });
+  } else if (a.outgoing.size === 0) {
+    const sugg = suggestFor(a, articles);
+    if (sugg.length >= 2) work.push({ article: a, suggestions: sugg, action: "add" });
+  }
+}
+
+const adds = work.filter((w) => w.action === "add");
+const regens = work.filter((w) => w.action === "regenerate");
+const removes = work.filter((w) => w.action === "remove");
+
+console.log(`${adds.length} ajouts, ${regens.length} régénérations, ${removes.length} suppressions de bloc.`);
 console.log("");
 
-let applied = 0;
-for (const { article, suggestions } of candidates) {
-  const block = buildFooterBlock(suggestions);
-  const newRaw = article.raw.replace(/\s*$/, "") + "\n" + block;
+let written = 0;
+for (const { article, suggestions, action } of work) {
+  let newRaw = article.raw;
+  if (action === "add") {
+    newRaw = article.raw.replace(/\s*$/, "") + "\n" + buildFooterBlock(suggestions);
+  } else if (action === "regenerate") {
+    newRaw = article.raw.replace(FOOTER_RE, buildFooterBlock(suggestions));
+  } else if (action === "remove") {
+    newRaw = article.raw.replace(FOOTER_RE, "");
+  }
+
+  if (newRaw === article.raw) continue;
 
   if (!APPLY) {
-    console.log(`[DRY] ${article.category}/${article.slug}`);
+    console.log(`[DRY ${action}] ${article.category}/${article.slug}`);
     for (const s of suggestions) {
-      console.log(`       → ${s.other.slug} (${s.score.toFixed(1)})`);
+      console.log(`              → ${s.other.slug} (${s.score.toFixed(1)})`);
     }
   } else {
     writeFileSync(article.path, newRaw);
-    applied++;
+    written++;
   }
 }
 
@@ -202,5 +239,5 @@ if (!APPLY) {
   console.log("");
   console.log("Aucun fichier modifié. Relance avec --apply pour écrire.");
 } else {
-  console.log(`\n${applied} fichiers modifiés.`);
+  console.log(`\n${written} fichiers écrits.`);
 }

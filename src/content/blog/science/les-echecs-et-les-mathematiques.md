@@ -228,8 +228,3 @@ Non. Les corrélations entre niveau Elo et performance académique en mathémati
 - **Gupta** *From Minimax to AI: Exploring Game Theory in Chess Strategy.* (Sur la théorie des jeux et le calcul combinatoire pas de lien direct fourni.)
 - **Tachie & Ramathe** *Metacognition application: The use of chess as a strategy.* / **Bahri & Noviani** *Metacognitive profile of students who play chess.* (Sur le profil métacognitif très spécifique développé par les joueurs d'échecs réguliers pas de lien direct fourni.)
 
-## Pour aller plus loin
-
-- [Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)
-- [Échecs et Alzheimer : comment stimuler son cerveau pour prévenir le déclin cognitif](/fr/blog/echecs-alzheimer-prevention-declin-cognitif/)
-- [Échecs à l'école : ce que la recherche dit vraiment sur l'apprentissage](/fr/blog/echecs-et-ecole/)

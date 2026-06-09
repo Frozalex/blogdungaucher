@@ -206,4 +206,5 @@ L'objectif n'est pas d'éliminer les pauses : c'est d'augmenter progressivement 
 
 - [Échecs et état de flux : comment atteindre le flow sur l'échiquier](/fr/blog/echecs-et-flow/)
 - [Méditation et échecs : la pleine conscience au service du jeu lent](/fr/blog/echecs-et-meditation/)
-- [La solitude aux échecs : le sport où vous êtes réglementairement seul](/fr/blog/echecs-et-la-solitude/)
+- [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)
+

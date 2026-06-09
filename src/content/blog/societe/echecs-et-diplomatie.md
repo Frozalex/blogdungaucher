@@ -168,3 +168,4 @@ L'échiquier reste une table de négociation. Les règles du jeu au-dessus chang
 - [Sujet Grand Oral HGGSP : Fischer-Spassky 1972, un instrument d'influence dans la guerre froide ?](/fr/blog/sujet-grand-oral-hggsp-fischer-spassky/)
 - [Guide Grand Oral SES/HGGSP – Échecs : script, arguments et questions jury](/fr/blog/guide-grand-oral-echecs-ses-hggsp/)
 - [La psychologie du joueur d'échecs : ce qui se passe vraiment dans ta tête](/fr/blog/psychologie-du-joueur-d-echecs/)
+

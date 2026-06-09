@@ -207,6 +207,6 @@ Le **jeu d'échecs** n’est pas une équation fermée contre la maladie d’Alz
 
 ## Pour aller plus loin
 
-- [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)
-- [Mémoire de travail et échecs : le goulot d'étranglement cognitif](/fr/blog/echecs-memoire-de-travail/)
 - [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
+- [Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)
+

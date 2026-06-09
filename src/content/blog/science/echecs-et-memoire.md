@@ -287,8 +287,3 @@ Tu as déjà eu l'impression de « reconnaître » une position sans pouvoir l'e
 - **Ericsson, K. A., & Chase, W. G. (1982).** - *Exceptional memory.* *American Scientist*, 70(6), 607-615. (La mémoire domaine-spécifique est une compétence construite par la pratique délibérée, pas un talent inné.)
 - **Charness, N. (1976).** - *Memory for chess positions : Resistance to interference.* *Journal of Experimental Psychology : Human Learning and Memory*, 2(6), 641-653. (Les adultes construisent des chunks aussi efficacement que les enfants, à rythme d'apprentissage comparable.)
 
-## Pour aller plus loin
-
-- [Mémoire de travail et échecs : le goulot d'étranglement cognitif](/fr/blog/echecs-memoire-de-travail/)
-- [Visualisation mentale aux échecs : voir sans regarder](/fr/blog/echecs-et-visualisation/)
-- [Échecs et Alzheimer : comment stimuler son cerveau pour prévenir le déclin cognitif](/fr/blog/echecs-alzheimer-prevention-declin-cognitif/)

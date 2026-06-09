@@ -225,5 +225,5 @@ Pour un parent qui se demande "pourquoi les échecs plutôt qu'un autre jeu ou u
 ## Pour aller plus loin
 
 - [Échecs à l'école : ce que la recherche dit vraiment sur l'apprentissage](/fr/blog/echecs-et-ecole/)
-- [Échecs et précarité : quand l'échiquier transcende les inégalités sociales](/fr/blog/echecs-et-precarite/)
 - [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)
+

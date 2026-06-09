@@ -204,3 +204,4 @@ En attendant, la pratique en avance sur la recherche, comme c'est souvent le cas
 - [Les échecs en prison : quand l'échiquier devient un outil de réhabilitation](/fr/blog/echecs-en-prison/)
 - [Échecs et autisme : pourquoi l'échiquier devient un refuge](/fr/blog/echecs-et-autisme/)
 - [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
+
