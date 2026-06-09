@@ -1,4 +1,4 @@
----
+﻿---
 title: "Dopamina e xadrez: a neuroquímica do jogo"
 excerpt: >-
   Cada lance tenso, cada combinação encontrada, cada vitória arrancada dispara uma onda neuroquímica precisa. O que a
@@ -7,7 +7,6 @@ excerpt: >-
 seoTitle: "Dopamina e xadrez: como a neuroquímica explica o fascínio pelo jogo"
 seoDescription: >-
   Circuito de recompensa, antecipação, sinal dopaminérgico: o que a neurociência revela sobre por que o xadrez é tão cativante e, às vezes, compulsivo.
-draft: true
 frSlug: echecs-et-dopamine
 faq:
   - question: O xadrez libera dopamina de verdade?

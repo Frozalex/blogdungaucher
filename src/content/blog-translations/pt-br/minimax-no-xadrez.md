@@ -1,9 +1,8 @@
----
+﻿---
 title: "Minimax no xadrez: o algoritmo que pensa por você"
 excerpt: "O minimax é o algoritmo fundamental do raciocínio estratégico no xadrez. Dos engines modernos ao seu próprio pensamento diante do tabuleiro, veja como essa ferramenta matemática estrutura cada decisão."
 seoTitle: "Minimax no xadrez: alfa-beta, negamax e o cálculo dos engines"
 seoDescription: "Minimax, poda alfa-beta, negamax, null-move pruning, MCTS: como os engines calculam o lance ótimo no xadrez e o que o seu cérebro faz sem saber."
-draft: true
 frSlug: minimax-aux-echecs
 faq:
   - question: "O minimax sempre produz o melhor lance?"

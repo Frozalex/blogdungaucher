@@ -1,4 +1,4 @@
----
+﻿---
 title: "Xadrez e o cérebro: o que a ciência realmente revela"
 excerpt: >-
   Um grande mestre? Não é um gênio nato, é um cérebro treinado. RM estrutural, conectividade funcional, cronectoma,
@@ -6,7 +6,6 @@ excerpt: >-
 seoTitle: "Xadrez e cérebro: o que a RMf revela sobre os jogadores experientes"
 seoDescription: >-
   Xadrez e cérebro: RM estrutural, funções executivas, neuroplasticidade. Como o cérebro de um jogador experiente difere neurologicamente, com os estudos-chave.
-draft: true
 frSlug: les-echecs-et-le-cerveau
 faq:
   - question: O xadrez modifica fisicamente o cérebro?

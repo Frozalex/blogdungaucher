@@ -1,9 +1,8 @@
----
+﻿---
 title: "Teoria dos jogos no xadrez: por que cada lance é uma decisão estratégica"
 excerpt: "O xadrez é o terreno de origem da teoria dos jogos. Minimax, equilíbrio de Nash, informação perfeita: a anatomia matemática do que realmente acontece quando você joga."
 seoTitle: "Teoria dos jogos no xadrez: Nash, minimax e Zermelo explicados"
 seoDescription: "Minimax, equilíbrio de Nash, estratégias mistas, teorema de Zermelo: a teoria dos jogos aplicada ao xadrez, das aberturas à preparação contra um adversário específico."
-draft: true
 frSlug: theorie-des-jeux-aux-echecs
 faq:
   - question: "O xadrez é um jogo de soma zero no sentido estrito?"

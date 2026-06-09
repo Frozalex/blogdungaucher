@@ -1,4 +1,4 @@
----
+﻿---
 title: "O xadrez deixa você melhor em matemática? A verdade científica"
 excerpt: >-
   Jogar xadrez deixa você bom em matemática? A resposta não é a que você espera, e ela muda radicalmente o que
@@ -6,7 +6,6 @@ excerpt: >-
 seoTitle: "Xadrez e matemática: transferência real ou mito? As meta-análises"
 seoDescription: >-
   Xadrez e matemática: meta-análise de Sala e Gobet, passeio do cavalo, problema das oito damas. O que a ciência diz da relação xadrez-matemática e como aproveitar.
-draft: true
 frSlug: les-echecs-et-les-mathematiques
 faq:
   - question: "Botar uma criança para jogar xadrez melhora a nota dela em matemática?"

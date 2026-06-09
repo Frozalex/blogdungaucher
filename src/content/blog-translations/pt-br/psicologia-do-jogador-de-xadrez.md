@@ -1,4 +1,4 @@
----
+﻿---
 title: "A psicologia do jogador de xadrez: o que realmente acontece na sua cabeça"
 excerpt: >-
   O xadrez não se joga só no tabuleiro. Joga-se primeiro na sua cabeça, antes mesmo de a mão tocar uma peça.
@@ -6,7 +6,6 @@ excerpt: >-
 seoTitle: "Psicologia do jogador de xadrez: ego, tilt, flow e medo de perder"
 seoDescription: >-
   Ego, tilt, flow, medo de perder, raiva: a anatomia completa da psicologia do enxadrista. Como suas emoções influenciam cada decisão no tabuleiro.
-draft: true
 frSlug: psychologie-du-joueur-d-echecs
 faq:
   - question: "Como lidar com o tilt no xadrez?"

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Xadrez e mulheres: por que tão poucas jogadoras hoje?"
 excerpt: >-
   40 mulheres entre 1700 Grandes Mestres. A diferença não é biológica: é matemática, histórica e psicológica.
@@ -6,7 +6,6 @@ excerpt: >-
 seoTitle: "Xadrez e mulheres: por que tão poucas jogadoras hoje?"
 seoDescription: >-
   Mulheres e xadrez: 40 mulheres entre 1700 Grandes Mestres. É biológico, cultural ou estrutural? Os dados que desmontam as ideias prontas sobre a diferença de gênero.
-draft: true
 frSlug: echecs-et-femmes
 faq:
   - question: Por que há tão poucas jogadoras de xadrez nas competições?

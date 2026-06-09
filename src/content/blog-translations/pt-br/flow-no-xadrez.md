@@ -1,4 +1,4 @@
----
+﻿---
 title: "Xadrez e estado de flow: como entrar no flow diante do tabuleiro"
 excerpt: >-
   Quando um enxadrista entra em estado de flow, o tempo para, as distrações somem, e o jogo vira a única realidade.
@@ -6,7 +6,6 @@ excerpt: >-
 seoTitle: "Xadrez e flow: como atingir o estado de flow no tabuleiro"
 seoDescription: >-
   O flow de Csikszentmihalyi, as condições do estado de flow, a perda da noção do tempo no xadrez: como entrar e manter o estado ótimo de desempenho no jogo.
-draft: true
 frSlug: echecs-et-flow
 faq:
   - question: O que é o flow no xadrez, na prática?

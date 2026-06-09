@@ -1,4 +1,4 @@
----
+﻿---
 title: "Descubra o poder do xadrez sobre a sua memória"
 excerpt: >-
   Memória de trabalho, chunks, aberturas, partidas esquecidas ou gravadas: o que a psicologia cognitiva e a
@@ -6,7 +6,6 @@ excerpt: >-
 seoTitle: "Xadrez e memória: memória de trabalho, chunks e aprendizado"
 seoDescription: >-
   Memória de trabalho, chunks de Chase & Simon, memória procedural: como o xadrez transforma a memória e em que condições esses ganhos realmente se transferem.
-draft: true
 frSlug: echecs-et-memoire
 faq:
   - question: "O xadrez melhora a memória de todo mundo?"

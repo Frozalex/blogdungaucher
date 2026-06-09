@@ -1,4 +1,4 @@
----
+﻿---
 title: "Xadrez e dinheiro: por que os melhores jogadores do mundo não são ricos"
 excerpt: >-
   Magnus Carlsen é o melhor jogador da história. Ganhou cerca de 2 milhões de dólares em premiação ao longo de
@@ -7,7 +7,6 @@ excerpt: >-
 seoTitle: "Quanto ganha um jogador de xadrez? Salários, premiações e fortuna dos pros"
 seoDescription: >-
   Quanto Magnus Carlsen ganha de verdade? Salário de um jogador de xadrez profissional, premiações e fortuna dos campeões, e por que os melhores do mundo não são tão ricos.
-draft: true
 frSlug: echecs-et-argent
 faq:
   - question: "Como ganha a vida um Grande Mestre \"comum\"?"

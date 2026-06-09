@@ -1,9 +1,8 @@
----
+﻿---
 title: "A síndrome do impostor no xadrez: jogar sob o peso da dúvida"
 excerpt: "Você joga bem, você ganha e, mesmo assim, está convencido de que foi sorte. De que os outros vão 'te desmascarar'. A síndrome do impostor no xadrez atinge milhares de jogadores em todos os níveis. Veja como reconhecê-la e superá-la."
 seoTitle: "Síndrome do impostor no xadrez: 4 padrões e como sair deles"
 seoDescription: "Os 4 padrões da síndrome do impostor no xadrez: mecanismos validados, estratégias concretas (diário, atribuição, exposição). Guia completo para todos os níveis."
-draft: true
 frSlug: syndrome-imposteur-aux-echecs
 ---
 

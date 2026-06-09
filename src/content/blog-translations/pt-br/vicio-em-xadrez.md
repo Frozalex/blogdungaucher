@@ -1,4 +1,4 @@
----
+﻿---
 title: "Xadrez e vício: quando o jogo vira uma droga"
 excerpt: >-
   São 3h da manhã. Você prometeu que era a última partida, mas começa outra. Dá pra ser viciado em xadrez de
@@ -6,7 +6,6 @@ excerpt: >-
 seoTitle: "Vício em xadrez: entender e superar a dependência"
 seoDescription: >-
   Vício em xadrez: 47 partidas na madrugada, rating virando obsessão, ciclo de dopamina. O xadrez cria dependência real? Sinais e soluções.
-draft: true
 frSlug: les-echecs-et-l-addiction
 ---
 
