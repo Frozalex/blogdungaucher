@@ -266,10 +266,14 @@ const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
 
         window.__applyLang = applyLang;
 
-        // On EN server-rendered pages, always use "en" regardless of localStorage
+        // Pages serveur en EN/DE/PT-BR : on respecte la langue serveur, pas le localStorage.
         var serverLang = document.documentElement.dataset.serverLang || "fr";
-        var storedLang = serverLang === "en" ? "en" : (localStorage.getItem("blogdungaucher.lang") || "fr");
+        var storedLang =
+          serverLang === "en" || serverLang === "de" || serverLang === "pt-br"
+            ? serverLang
+            : (localStorage.getItem("blogdungaucher.lang") || "fr");
         window.__lang = storedLang;
+        // applyLang() ne gère runtime que fr/en. Pour pt-br/de, le rendu serveur fait foi.
         if (storedLang === "en") applyLang("en");
       })();
     </script>
@@ -467,7 +471,7 @@ const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
     {/* Skip-link "Aller au contenu" retiré (réintroduction : remettre
         <a class="skip-link" href="#main-content">Aller au contenu</a> ici ;
         le CSS .skip-link reste dormant dans global.css). */}
-    <Navbar frHref={resolvedFrPath} enHref={resolvedEnPath} deHref={resolvedDePath} lang={lang} />
+    <Navbar frHref={resolvedFrPath} enHref={resolvedEnPath} deHref={resolvedDePath} ptBrHref={resolvedPtBrPath} lang={lang} />
     {/* tabindex="-1" : permet au skip-link de poser le focus programmatiquement
        sur <main>, garantissant que les lecteurs d'écran annoncent bien le landmark
        et que les navigateurs ne se contentent pas de scroller sans focuser. */}
@@ -493,11 +497,14 @@ const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
 
         const serverLang2 = document.documentElement.dataset.serverLang || "fr";
         const lang =
-          serverLang2 === "en" || serverLang2 === "de"
+          serverLang2 === "en" || serverLang2 === "de" || serverLang2 === "pt-br"
             ? serverLang2
             : (localStorage.getItem("blogdungaucher.lang") || "fr");
         window.__lang = lang;
-        if (typeof window.__applyLang === "function") window.__applyLang(lang);
+        // applyLang() ne gère runtime que fr/en. Pour pt-br/de, le rendu serveur fait foi.
+        if (typeof window.__applyLang === "function" && (lang === "fr" || lang === "en")) {
+          window.__applyLang(lang);
+        }
 
         // Synchroniser le bouton dark mode
         const btn = document.getElementById("dark-toggle");

@@ -1,5 +1,6 @@
 ---
 import { navigationLinks, enNavigationLinks, deNavigationLinks, ptBrNavigationLinks } from "../data/site";
+import { t, type Lang } from "../i18n/translations";
 
 const { frHref, enHref, deHref, ptBrHref, lang = "fr" } = Astro.props as {
   frHref?: string;
@@ -20,6 +21,13 @@ const links =
         : navigationLinks;
 
 const homeHref = lang === "en" ? "/en/" : lang === "de" ? "/de/" : lang === "pt-br" ? "/pt-br/" : "/fr/";
+
+/** Lang sûr pour le helper t() : retombe sur fr si la langue n'est pas couverte. */
+const tLang: Lang = (["fr", "en", "pt-br"].includes(lang) ? lang : "fr") as Lang;
+const siteName = (() => {
+  const v = t(tLang, "nav.siteName");
+  return v && typeof v === "string" ? v : "Blog d'un Gaucher";
+})();
 
 const isActive = (href : string) => {
   const homePaths = ["/fr/", "/en/", "/de/", "/pt-br/"];
@@ -79,7 +87,7 @@ const linkKey : Record<string, string> = {
         height="36"
         loading="eager"
       />
-      <span class="logo-text" data-t="nav.siteName">Blog d'un Gaucher</span>
+      <span class="logo-text" data-t="nav.siteName">{siteName}</span>
     </a>
 
     <nav class="nav-desktop" aria-label="Navigation principale">
@@ -157,7 +165,7 @@ const linkKey : Record<string, string> = {
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <div class="mobile-menu__inner">
       <div class="container mobile-menu__content">
-        <span class="mobile-eyebrow" data-t="nav.navigation">Navigation</span>
+        <span class="mobile-eyebrow" data-t="nav.navigation">{(t(tLang, "nav.navigation") as string) || "Navigation"}</span>
         {links.map((link) => (
           <a
             href={link.href}
@@ -187,7 +195,7 @@ const linkKey : Record<string, string> = {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
             </svg>
-            <span data-t="nav.darkOn">Mode sombre</span>
+            <span data-t="nav.darkOn">{(t(tLang, "nav.darkOn") as string) || "Mode sombre"}</span>
           </button>
           {/* Bouton langue masqué (cf. desktop, même raison). */}
           <button

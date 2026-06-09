@@ -1,6 +1,7 @@
 ---
 import { categoryMap, categorySlugs } from "../data/site";
 import NewsletterForm from "./NewsletterForm.astro";
+import { t, type Lang } from "../i18n/translations";
 
 interface Props {
   lang?: "fr" | "en" | "de" | "pt-br";
@@ -12,11 +13,17 @@ const blogHref =
 const aboutHref =
   lang === "en" ? "/en/about/" : lang === "de" ? "/de/about/" : lang === "pt-br" ? "/pt-br/about/" : "/fr/about/";
 
+/** Lang sûr pour le helper t() : si la clé n'existe pas dans la langue cible (ex. de), retombe sur fr. */
+const tLang: Lang = (["fr", "en", "pt-br"].includes(lang) ? lang : "fr") as Lang;
+const tt = (key: string, fallback: string) => {
+  const v = t(tLang, key);
+  return v && typeof v === "string" ? v : fallback;
+};
 ---
 <footer class="footer" data-pagefind-ignore>
   <div class="container footer-top">
     <div class="footer-brand fade-up" style="--motion-delay: 50ms;">
-      <span class="eyebrow" data-t="footer.contactEyebrow">Restons en contact</span>
+      <span class="eyebrow" data-t="footer.contactEyebrow">{tt("footer.contactEyebrow", "Restons en contact")}</span>
       <div class="footer-brand-name">
         <img
           src="/images/logo.svg"
@@ -27,31 +34,31 @@ const aboutHref =
           height="40"
           loading="lazy"
         />
-        <span class="footer-logo" data-t="nav.siteName">Blog d'un Gaucher</span>
+        <span class="footer-logo" data-t="nav.siteName">{tt("nav.siteName", "Blog d'un Gaucher")}</span>
       </div>
       <p class="footer-tagline" data-t="footer.tagline">
-        Un espace éditorial indépendant pour explorer les échecs en profondeur, avec des contenus utiles et actionnables.
+        {tt("footer.tagline", "Un espace éditorial indépendant pour explorer les échecs en profondeur, avec des contenus utiles et actionnables.")}
       </p>
 
       <div class="footer-newsletter">
-        <p class="footer-newsletter__title" data-t="newsletter.footerTitle">Recevoir les articles</p>
-        <p class="footer-newsletter__desc" data-t="newsletter.footerDesc">Deux fois par semaine dans ta boîte mail.</p>
+        <p class="footer-newsletter__title" data-t="newsletter.footerTitle">{tt("newsletter.footerTitle", "Recevoir les articles")}</p>
+        <p class="footer-newsletter__desc" data-t="newsletter.footerDesc">{tt("newsletter.footerDesc", "Deux fois par semaine dans ta boîte mail.")}</p>
         <NewsletterForm variant="footer" />
       </div>
 
-      <a class="footer-contact" href="mailto:contact@blogdungaucher.com" data-t="footer.suggestTopic">Proposer un sujet ou poser une question</a>
+      <a class="footer-contact" href="mailto:contact@blogdungaucher.com" data-t="footer.suggestTopic">{tt("footer.suggestTopic", "Proposer un sujet ou poser une question")}</a>
     </div>
 
     <div class="footer-col fade-up" style="--motion-delay: 110ms;">
-      <h2 data-t="footer.exploreTitle">Explorer</h2>
-      <a href={blogHref} data-t="footer.allArticles">Tous les articles</a>
-      <a href={aboutHref} data-t="footer.editorial">Ligne éditoriale</a>
+      <h2 data-t="footer.exploreTitle">{tt("footer.exploreTitle", "Explorer")}</h2>
+      <a href={blogHref} data-t="footer.allArticles">{tt("footer.allArticles", "Tous les articles")}</a>
+      <a href={aboutHref} data-t="footer.editorial">{tt("footer.editorial", "Ligne éditoriale")}</a>
       {lang === "fr" && <a href="/fr/glossaire/">Glossaire</a>}
       {lang === "fr" && <a href="/fr/infographie/">Infographies</a>}
     </div>
 
     <div class="footer-col fade-up" style="--motion-delay: 170ms;">
-      <h2 data-t="footer.sectionsTitle">Rubriques</h2>
+      <h2 data-t="footer.sectionsTitle">{tt("footer.sectionsTitle", "Rubriques")}</h2>
       {categorySlugs.map((cat) => (
         <a
           href={
@@ -59,31 +66,33 @@ const aboutHref =
               ? `/en/${cat}/`
               : lang === "de"
                 ? `/de/${cat}/`
-                : categoryMap[cat].href
+                : lang === "pt-br"
+                  ? `/pt-br/${cat}/`
+                  : categoryMap[cat].href
           }
           data-t={`categories.${cat}.label`}
-        >{categoryMap[cat].label}</a>
+        >{tt(`categories.${cat}.label`, categoryMap[cat].label)}</a>
       ))}
     </div>
 
     <div class="footer-col fade-up" style="--motion-delay: 230ms;">
-      <h2 data-t="footer.trustTitle">Confiance</h2>
+      <h2 data-t="footer.trustTitle">{tt("footer.trustTitle", "Confiance")}</h2>
       <button
         type="button"
         class="footer-text-link"
         id="footer-open-notification-settings"
         data-t="footer.notificationSettings"
       >
-        Notifications et cookies
+        {tt("footer.notificationSettings", "Notifications et cookies")}
       </button>
-      <a href={lang === "en" ? "/en/mentions-legales/" : lang === "de" ? "/de/mentions-legales/" : "/fr/mentions-legales/"} data-t="footer.legal">Mentions légales</a>
-      <a href={lang === "en" ? "/en/politique-confidentialite/" : lang === "de" ? "/de/politique-confidentialite/" : "/fr/politique-confidentialite/"} data-t="footer.privacy">Confidentialité</a>
+      <a href={lang === "en" ? "/en/mentions-legales/" : lang === "de" ? "/de/mentions-legales/" : "/fr/mentions-legales/"} data-t="footer.legal">{tt("footer.legal", "Mentions légales")}</a>
+      <a href={lang === "en" ? "/en/politique-confidentialite/" : lang === "de" ? "/de/politique-confidentialite/" : "/fr/politique-confidentialite/"} data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
     </div>
   </div>
 
   <div class="footer-bottom">
     <div class="container footer-bottom__inner">
-      <p>&copy; {new Date().getFullYear()} <span data-t="nav.siteName">Blog d'un Gaucher</span></p>
+      <p>&copy; {new Date().getFullYear()} <span data-t="nav.siteName">{tt("nav.siteName", "Blog d'un Gaucher")}</span></p>
       <p>blogdungaucher.com</p>
     </div>
   </div>
