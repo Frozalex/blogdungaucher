@@ -223,3 +223,9 @@ Selon la théorie de la *systemizing* de Simon Baron-Cohen (Cambridge), les cerv
 - **Gobet, F. & Charness, N.** *Expertise in Chess*, In *The Cambridge Handbook of Expertise and Expert Performance*, 2006. (Sur la mémoire des motifs et la théorie des "chunks").
 - **Attwood, T.** *The Complete Guide to Asperger's Syndrome.* Jessica Kingsley Publishers, 2007. (Référence clinique sur le syndrome d'Asperger et les contextes d'inclusion sociale).
 - **Chess in Schools and Communities (CSC)** [*Impact Reports.*](https://www.chessintheschools.co.uk) (Données de terrain sur les effets de l'enseignement des échecs dans les écoles spécialisées).
+
+## Pour aller plus loin
+
+- [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
+- [Échecs et haut potentiel intellectuel : l'échiquier comme espace HPI](/fr/blog/echecs-et-hpi/)
+- [Échecs comme thérapie : ce que la recherche dit sur le jeu et la santé mentale](/fr/blog/echecs-et-therapie/)

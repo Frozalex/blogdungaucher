@@ -171,3 +171,9 @@ Pas de magie. Juste de l'expertise portée à un niveau extraordinaire.
 ---
 
 *"Quand je ferme les yeux et que je joue à l'aveugle, je ne vois pas un échiquier. Je vois des relations, des tensions, des forces. Comme un musicien qui entend la musique qu'il n'a pas encore jouée.", Grandmaster anonyme, cité dans une étude de 2015 sur la cognition des experts.*
+
+## Pour aller plus loin
+
+- [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)
+- [Concentration aux échecs : entraîner l'attention comme un muscle](/fr/blog/echecs-et-concentration/)
+- [Mémoire de travail et échecs : le goulot d'étranglement cognitif](/fr/blog/echecs-memoire-de-travail/)

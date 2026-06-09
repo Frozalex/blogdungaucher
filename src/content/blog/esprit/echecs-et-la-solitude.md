@@ -178,3 +178,9 @@ Les échecs peuvent être une école de la solitude productive. Ils peuvent auss
 - La **solitude productive** (être seul avec un problème difficile) se distingue de la **solitude refuge** (éviter la vie sociale): les échecs peuvent être les deux selon l'intention du joueur
 - Les joueurs d'élite développent des stratégies opposées pour gérer l'intensité de l'isolement en tournoi : l'ascèse cognitive (Carlsen) ou la décompression sociale intense (Tal)
 - La capacité d'être seul est une **compétence transférable**, mais seulement si elle est travaillée consciemment, pas juste subie
+
+## Pour aller plus loin
+
+- [Échecs et état de flux : comment atteindre le flow sur l'échiquier](/fr/blog/echecs-et-flow/)
+- [Concentration aux échecs : entraîner l'attention comme un muscle](/fr/blog/echecs-et-concentration/)
+- [Échecs et confiance en soi : ce que l'échiquier construit vraiment](/fr/blog/echecs-et-confiance-en-soi/)

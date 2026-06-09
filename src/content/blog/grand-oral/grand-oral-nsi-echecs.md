@@ -651,3 +651,9 @@ Les cinq dernières **minutes** portent sur ton projet post-bac. Prépare une **
 - Le **Grand Oral** se gagne autant sur la maîtrise que sur la **posture**, la **parole** et la **qualité** de l'échange avec le **jury**
 
 **Après lecture :** enregistre-toi en **une prise** sur le minimax (tableau blanc ou IDE, **trois minutes max**) ; si tu bloques sur une ligne de code, c'est là que le **jury** creusera.
+
+## Pour aller plus loin
+
+- [Guide Grand Oral NSI – Échecs : script, code Python commenté et questions jury](/fr/blog/guide-grand-oral-echecs-nsi/)
+- [Grand oral spé Maths : les échecs comme terrain d'application du programme de terminale](/fr/blog/grand-oral-maths-spe-echecs/)
+- [Sujet Grand Oral NSI : Comment un programme informatique peut-il jouer aux échecs ?](/fr/blog/sujet-grand-oral-nsi-minimax/)

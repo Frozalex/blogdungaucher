@@ -227,3 +227,9 @@ C'est le paradoxe de la confiance aux échecs : elle se construit dans l'inconfo
 - L'**Elo est un thermomètre**, pas un juge : le confondre avec ta valeur personnelle est le mécanisme central du syndrome de l'imposteur échiquéen
 - Les expériences de **maîtrise progressive** (pas les victoires faciles) sont le moteur principal de la confiance durable (Bandura, 1997)
 - L'**analyse post-partie** rigoureuse est la pratique la mieux documentée pour construire une confiance qui résiste à la pression
+
+## Pour aller plus loin
+
+- [Résilience aux échecs : apprendre à rebondir après la défaite](/fr/blog/echecs-et-resilience/)
+- [Apprendre à perdre aux échecs : plus difficile qu'on ne le dit](/fr/blog/echecs-et-l-echec/)
+- [Échecs et état de flux : comment atteindre le flow sur l'échiquier](/fr/blog/echecs-et-flow/)

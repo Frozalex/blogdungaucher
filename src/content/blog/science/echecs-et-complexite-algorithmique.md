@@ -169,3 +169,9 @@ Shannon avait vu juste en 1950. La recherche exhaustive était impossible. La so
 ---
 
 *Claude Shannon jouait lui-même aux échecs, avec un niveau "raisonnable" selon ses contemporains. Il aurait probablement trouvé ironique que la meilleure solution à son problème soit d'imiter non pas l'ordinateur, mais l'humain.*
+
+## Pour aller plus loin
+
+- [AlphaZero contre Stockfish : la révolution de l'intelligence artificielle aux échecs](/fr/blog/echecs-alphazero-stockfish/)
+- [Sujet Grand Oral NSI : Pourquoi AlphaZero représente-t-il une rupture dans l'intelligence artificielle ?](/fr/blog/sujet-grand-oral-nsi-alphazero/)
+- [Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)

@@ -221,3 +221,9 @@ Pour un parent qui se demande "pourquoi les échecs plutôt qu'un autre jeu ou u
 - Les bénéfices sur les **fonctions exécutives** (planification, inhibition) apparaissent dès 10-12 semaines d'instruction régulière
 - La **motivation intrinsèque** est le prédicteur le plus fort de la progression, jamais forcer
 - La première **compétition** doit attendre que l'enfant la réclame lui-même
+
+## Pour aller plus loin
+
+- [Échecs à l'école : ce que la recherche dit vraiment sur l'apprentissage](/fr/blog/echecs-et-ecole/)
+- [Échecs et précarité : quand l'échiquier transcende les inégalités sociales](/fr/blog/echecs-et-precarite/)
+- [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)

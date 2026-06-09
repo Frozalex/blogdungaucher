@@ -233,3 +233,8 @@ Pour approfondir les idées développées dans cet article :
 - **Dvoretsky, M., & Yusupov, A. (1991).** - *Technique for the Tournament Player.* Batsford. (Méthode d'entraînement intensif centrée sur la tactique et les finales ; référence pour l'entraînement structuré des joueurs en progression.)
 - **Rowson, J. (2005).** - *Chess for Zebras : Thinking Differently about Black and White.* Gambit Publications. (Réflexion sur les biais cognitifs dans l'apprentissage des échecs et les limites des conseils d'entraînement génériques.)
 - **Fine, R. (1941).** - *Basic Chess Endings.* McKay. (Référence classique sur les finales ; première phrase de l'introduction : l'étude des finales est le fondement de la progression aux échecs.)
+
+## Pour aller plus loin
+
+- [Analyser ses parties d'échecs : le guide pratique pour progresser vraiment](/fr/blog/analyser-ses-parties/)
+- [Résilience aux échecs : apprendre à rebondir après la défaite](/fr/blog/echecs-et-resilience/)

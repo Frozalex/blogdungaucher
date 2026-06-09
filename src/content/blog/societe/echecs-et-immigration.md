@@ -159,3 +159,9 @@ Dans le Berlin hivernal de 2015, la partie qui commence entre le réfugié syrie
 ---
 
 *"Aux échecs, je suis quelqu'un. Pas 'le réfugié', pas 'l'étranger'. Je suis le joueur sur la case e4.", Témoignage collecté dans un programme Chess for Integration, Hambourg, 2017.*
+
+## Pour aller plus loin
+
+- [Échecs et handicap : quand l'échiquier efface les frontières](/fr/blog/echecs-et-handicap/)
+- [Échecs et streaming : comment Twitch et YouTube ont révolutionné le jeu](/fr/blog/echecs-et-streaming/)
+- [Échecs et haut potentiel intellectuel : l'échiquier comme espace HPI](/fr/blog/echecs-et-hpi/)

@@ -187,3 +187,9 @@ En l'absence de biomarqueur, la triche aux échecs restera toujours une zone gri
 - Les moteurs d'IA ont **élevé le niveau général** mais rendu chaque coup parfait suspect : la beauté du jeu passe désormais par le filtre de la suspicion
 - La triche aux échecs est **pré-numérique** : l'IA l'a rendue statistiquement visible, elle ne l'a pas inventée
 - Le mobile est rarement l'argent : c'est le **classement Elo**, monnaie de réputation dans un circuit très petit et très compétitif
+
+## Pour aller plus loin
+
+- [Les échecs et l'argent : pourquoi les meilleurs joueurs du monde ne sont pas riches](/fr/blog/echecs-et-argent/)
+- [Échecs et handicap : quand l'échiquier efface les frontières](/fr/blog/echecs-et-handicap/)
+- [Gérer le stress en tournoi d'échecs : ce que disent la psychologie et la physiologie](/fr/blog/echecs-stress-tournoi/)

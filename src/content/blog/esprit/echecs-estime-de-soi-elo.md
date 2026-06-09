@@ -181,3 +181,9 @@ La solution n'est pas de ne pas se préoccuper du Elo. C'est d'en faire un indic
 ---
 
 *Le Elo est un outil de mesure. Il ne mesure pas votre valeur : seulement votre performance à un jeu, à un moment donné. Arpad Elo n'avait probablement pas prévu que son algorithme deviendrait pour certains une mesure d'existence. Il aurait probablement trouvé ça triste, et lui-même, joueur modeste, aurait peut-être souri.*
+
+## Pour aller plus loin
+
+- [Apprendre à perdre aux échecs : plus difficile qu'on ne le dit](/fr/blog/echecs-et-l-echec/)
+- [Échecs et état de flux : comment atteindre le flow sur l'échiquier](/fr/blog/echecs-et-flow/)
+- [Résilience aux échecs : apprendre à rebondir après la défaite](/fr/blog/echecs-et-resilience/)

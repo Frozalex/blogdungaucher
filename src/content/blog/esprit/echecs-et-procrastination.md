@@ -180,3 +180,9 @@ Et reconnais la vraie nature de ton "je n'ai pas le temps de l'analyse aujourd'h
 - "Touché-joué" entraîne à découpler la décision du regret. C'est ce qu'il faut voler de l'échiquier vers ta vie.
 
 **Maintenant, ferme cet onglet.** Ouvre le dossier que tu reportes depuis trois jours. Donne-toi 25 minutes au timer. Ce que tu produiras dans ces 25 minutes battra tout ce que tu n'as pas produit depuis lundi.
+
+## Pour aller plus loin
+
+- [Gestion du temps aux échecs : la pendule comme miroir de tes décisions](/fr/blog/echecs-gestion-du-temps/)
+- [Apprendre à perdre aux échecs : plus difficile qu'on ne le dit](/fr/blog/echecs-et-l-echec/)
+- [Elo et estime de soi : quand votre classement devient votre identité](/fr/blog/echecs-estime-de-soi-elo/)

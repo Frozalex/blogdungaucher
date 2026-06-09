@@ -204,3 +204,9 @@ C'est peut-être l'argument le plus solide pour les programmes scolaires obligat
 - **Sala & Gobet (2016, 2017)** : méta-analyse de référence : les effets sont positifs mais diminuent quand les contrôles expérimentaux sont rigoureux
 - Le **modèle arménien** (obligatoire, CP-CM2) est le plus ambitieux au monde et montre des résultats encourageants mais encore mal documentés à long terme
 - Le bénéfice des échecs n'est pas magique : il nécessite une **instruction de qualité**, des **enseignants formés** et un **minimum de 30 heures annuelles**
+
+## Pour aller plus loin
+
+- [Enseigner les échecs aux enfants : âge idéal, méthodes et bénéfices réels](/fr/blog/echecs-et-enfants/)
+- [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
+- [Échecs et précarité : quand l'échiquier transcende les inégalités sociales](/fr/blog/echecs-et-precarite/)

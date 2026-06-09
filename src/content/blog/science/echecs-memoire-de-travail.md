@@ -172,3 +172,9 @@ C'est la vraie leçon : le goulot d'étranglement est réel. La compétence aux 
 ---
 
 *Baddeley, interrogé sur l'application de son modèle aux échecs, a dit qu'il jouait lui-même "très mal". Il comprenait parfaitement le mécanisme, et était limité, comme tout le monde, par la capacité du système qu'il avait décrit.*
+
+## Pour aller plus loin
+
+- [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)
+- [Échecs et vision spatiale : le cerveau qui voit en 3D](/fr/blog/echecs-et-vision-spatiale/)
+- [Visualisation mentale aux échecs : voir sans regarder](/fr/blog/echecs-et-visualisation/)

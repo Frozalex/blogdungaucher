@@ -172,3 +172,9 @@ C'est peut-être la contribution la plus durable d'AlphaZero aux échecs : rappe
 ---
 
 *AlphaZero n'a jamais joué une partie contre un humain. Ses adversaires étaient des moteurs et ses propres copies antérieures. Il n'a jamais ressenti la pression d'un tournoi, l'inconfort d'une position perdante, la joie d'une belle combinaison trouvée. Et pourtant, les Grands Maîtres ont dit de son jeu qu'il était le plus 'humain' qu'ils aient jamais analysé. Il y a quelque chose dans cette ironie qui mérite réflexion.*
+
+## Pour aller plus loin
+
+- [Sujet Grand Oral NSI : Pourquoi AlphaZero représente-t-il une rupture dans l'intelligence artificielle ?](/fr/blog/sujet-grand-oral-nsi-alphazero/)
+- [La complexité algorithmique des échecs : pourquoi l'IA a mis 50 ans à battre l'homme](/fr/blog/echecs-et-complexite-algorithmique/)
+- [Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)

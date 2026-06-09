@@ -214,3 +214,9 @@ Sans ce travail, les échecs ne forment pas plus à la défaite que n'importe qu
 - Les adultes abandonnent souvent les échecs **au moment d'apprentissage maximal**, quand les défaites deviennent systématiques, précisément parce qu'on joue à son vrai niveau
 - **Apprendre à perdre ≠ rebondir** : rebondir c'est retrouver l'état d'avant ; apprendre à perdre c'est intégrer la défaite comme information sans en faire un verdict sur soi
 - Le **transfert à la vie réelle** n'est pas automatique : il dépend de comment on a pratiqué, avec analyse consciente des défaites, pas juste en jouant beaucoup
+
+## Pour aller plus loin
+
+- [Résilience aux échecs : apprendre à rebondir après la défaite](/fr/blog/echecs-et-resilience/)
+- [Elo et estime de soi : quand votre classement devient votre identité](/fr/blog/echecs-estime-de-soi-elo/)
+- [Échecs et confiance en soi : ce que l'échiquier construit vraiment](/fr/blog/echecs-et-confiance-en-soi/)

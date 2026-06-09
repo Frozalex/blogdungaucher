@@ -198,3 +198,9 @@ En attendant, la pratique en avance sur la recherche, comme c'est souvent le cas
 - Les programmes en **milieu carcéral** montrent des réductions d'incidents disciplinaires de 20-30% (programme UK)
 - L'échiquier offre un **espace relationnel structuré**: précieux pour les profils avec difficultés relationnelles (dépression, PTSD, TSA)
 - Les données sur la **dépression et le PTSD** sont prometteuses mais encore insuffisamment documentées par des essais rigoureux
+
+## Pour aller plus loin
+
+- [Les échecs en prison : quand l'échiquier devient un outil de réhabilitation](/fr/blog/echecs-en-prison/)
+- [Échecs et autisme : pourquoi l'échiquier devient un refuge](/fr/blog/echecs-et-autisme/)
+- [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)

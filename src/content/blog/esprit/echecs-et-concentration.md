@@ -201,3 +201,9 @@ L'objectif n'est pas d'éliminer les pauses : c'est d'augmenter progressivement 
 - L'esprit vagabonde **46,9% du temps de veille** en moyenne (Killingsworth & Gilbert, 2010): aux échecs, réduire ce pourcentage est une compétence entraînable
 - Les **micro-pauses** (30-60 secondes, regard au loin) pendant les parties longues ralentissent la dégradation sans perturber la continuité
 - L'entraînement en **blocs de 25-50 minutes** (technique Pomodoro adaptée) développe l'attention soutenue plus efficacement que les sessions longues ininterrompues
+
+## Pour aller plus loin
+
+- [Échecs et état de flux : comment atteindre le flow sur l'échiquier](/fr/blog/echecs-et-flow/)
+- [Méditation et échecs : la pleine conscience au service du jeu lent](/fr/blog/echecs-et-meditation/)
+- [La solitude aux échecs : le sport où vous êtes réglementairement seul](/fr/blog/echecs-et-la-solitude/)

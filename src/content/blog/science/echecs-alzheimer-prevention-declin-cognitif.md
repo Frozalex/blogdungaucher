@@ -204,3 +204,9 @@ Le **jeu d'échecs** n’est pas une équation fermée contre la maladie d’Alz
 - Les associations épidémiologiques (probabilité relative sur une cohorte, souvent présentée comme un ratio) ne valent pas causalité individuelle.
 - Jeux de plateau ≠ médicament : les effets dépendent de la dose (temps, semaines), du profil (MCI, diagnostic déjà posé, **sujet** senior bien portant) et du résultat mesuré (MMSE, humeur, qualité de vie).
 - Le **jeu d'échecs** reste un levier réaliste : engagement cognitif fort, feedback immédiat, **communauté** active ; trois facteurs **grâce** auxquels les politiques de vieillissement actif intègrent le **jouer aux échecs** dans leurs leviers.
+
+## Pour aller plus loin
+
+- [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)
+- [Mémoire de travail et échecs : le goulot d'étranglement cognitif](/fr/blog/echecs-memoire-de-travail/)
+- [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)

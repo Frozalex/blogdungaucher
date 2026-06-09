@@ -203,3 +203,9 @@ C'est l'une des rares interventions où le rapport coût-bénéfice est extrême
 - La pleine conscience améliore la **régulation émotionnelle** post-erreur : précieux après un blunder
 - **Une seule séance** de 10 min avant une tâche améliore l'attention (effet d'état): pertinent pour la préparation pré-partie
 - La méditation **ne remplace pas** l'entraînement échiquéen : elle amplifie son rendement en supprimant les freins mentaux
+
+## Pour aller plus loin
+
+- [Concentration aux échecs : entraîner l'attention comme un muscle](/fr/blog/echecs-et-concentration/)
+- [Échecs et sommeil : pourquoi la nuit joue aussi ta partie](/fr/blog/echecs-et-sommeil/)
+- [Échecs et vision spatiale : le cerveau qui voit en 3D](/fr/blog/echecs-et-vision-spatiale/)

@@ -291,3 +291,9 @@ Non. C'est une **estimation d'ordre de grandeur** du nombre de parties possibles
 - **Silver, D., et al.** [*Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm.*](https://arxiv.org/abs/1712.01815) arXiv, 2017. (Publication originale d'AlphaZero, MCTS + réseau de neurones.)
 - **Campbell, M., Hoane, A. J., & Hsu, F.** [*Deep Blue.*](https://doi.org/10.1016/S0004-3702(01)00129-1) Artificial Intelligence, 134(1-2), 57-83, 2002. (Description du système Deep Blue qui battit Kasparov en 1997.)
 - **Allis, L. V.** *Searching for Solutions in Games and Artificial Intelligence.* PhD Thesis, University of Limburg, 1994. (Classification des jeux résolus et méthodes générales de résolution.)
+
+## Pour aller plus loin
+
+- [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
+- [Sujet Grand Oral Maths : En quoi le jeu d'échecs constitue-t-il un modèle de la pensée combinatoire ?](/fr/blog/sujet-grand-oral-maths-combinatoire/)
+- [Sujet Grand Oral Maths : Pourquoi les mathématiques prouvent-elles que les échecs ne seront jamais résolus par la force brute ?](/fr/blog/sujet-grand-oral-maths-zermelo-complexite/)

@@ -165,3 +165,9 @@ L'échiquier reste l'un des rares espaces où la performance cognitive peut s'ex
 ---
 
 *"Aux échecs, je ne suis pas autiste, je ne suis pas handicapé, je ne suis pas différent. Je suis un joueur. Et les 64 cases, elles sont les mêmes pour tout le monde.", Témoignage d'un joueur autiste dans un programme Chess for Inclusion, Barcelone, 2021.*
+
+## Pour aller plus loin
+
+- [Échecs et immigration : l'échiquier comme langue commune](/fr/blog/echecs-et-immigration/)
+- [Échecs et streaming : comment Twitch et YouTube ont révolutionné le jeu](/fr/blog/echecs-et-streaming/)
+- [La triche aux échecs : ce que l'affaire Niemann a vraiment révélé](/fr/blog/echecs-et-la-triche/)

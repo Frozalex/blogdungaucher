@@ -513,3 +513,9 @@ Les **cinq dernières minutes** portent sur ton projet post-bac. Prépare une r�
 ---
 
 *Ce **guide** est librement utilisable et imprimable. Si d'autres lycéens préparent le même **sujet**, [partage-leur le lien](/fr/grand-oral/). Et bonne chance : tu as fait le travail.*
+
+## Pour aller plus loin
+
+- [Sujet Grand Oral SES : En quoi les échecs sont-ils un capital culturel qui reproduit les inégalités ?](/fr/blog/sujet-grand-oral-ses-bourdieu-reproduction/)
+- [Sujet Grand Oral HGGSP : Fischer-Spassky 1972, un instrument d'influence dans la guerre froide ?](/fr/blog/sujet-grand-oral-hggsp-fischer-spassky/)
+- [Guide Grand Oral NSI – Échecs : script, code Python commenté et questions jury](/fr/blog/guide-grand-oral-echecs-nsi/)

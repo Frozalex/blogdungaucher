@@ -205,3 +205,9 @@ L'échiquier enseigne quelque chose que peu d'activités enseignent aussi claire
 - **Change Through Chess (2017-2023).** - *Programme Reports.* [changethroughchess.com](https://www.changethroughchess.com/). (Rapports annuels documentant les effets observés sur les participants incarcérés au Royaume-Uni : gestion des émotions, comportement en établissement, engagement dans les programmes éducatifs.)
 - **Fazel, S., Doll, H., & Långström, N. (2008).** - [*Mental disorders among adolescents in juvenile detention and correctional facilities: A systematic review and metaregression analysis of 25 surveys.*](https://doi.org/10.1097/01.chi.0000290670.27678.2a) *Journal of the American Academy of Child & Adolescent Psychiatry*, 47(9), 1010-1019. (Prévalence élevée du TDAH et des troubles neuropsychiatriques dans les populations carcérales, renforçant la pertinence des interventions cognitives.)
 - **Hare, R. D. (2006).** - *Psychopathy: A clinical and forensic overview.* *Psychiatric Clinics of North America*, 29(3), 709-724. (Cadre d'évaluation des profils carcéraux et limites des interventions cognitives selon les profils.)
+
+## Pour aller plus loin
+
+- [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
+- [Échecs comme thérapie : ce que la recherche dit sur le jeu et la santé mentale](/fr/blog/echecs-et-therapie/)
+- [Échecs et précarité : quand l'échiquier transcende les inégalités sociales](/fr/blog/echecs-et-precarite/)

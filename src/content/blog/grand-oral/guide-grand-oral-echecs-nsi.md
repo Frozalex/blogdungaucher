@@ -566,3 +566,9 @@ C'est la partie où beaucoup décrochent par fatigue. Tiens bon. Prépare une r�
 ---
 
 *Ce guide est librement utilisable et imprimable. Si d'autres lycéens préparent le même **sujet**, [partage-leur le lien](/fr/grand-oral/). Et bonne chance : tu as fait le travail.*
+
+## Pour aller plus loin
+
+- [Sujet Grand Oral NSI : En quoi l'élagage alpha-bêta illustre-t-il l'optimisation d'une recherche arborescente ?](/fr/blog/sujet-grand-oral-nsi-alpha-beta/)
+- [Sujet Grand Oral NSI : Comment un programme informatique peut-il jouer aux échecs ?](/fr/blog/sujet-grand-oral-nsi-minimax/)
+- [Guide Grand Oral SES/HGGSP – Échecs : script, arguments et questions jury](/fr/blog/guide-grand-oral-echecs-ses-hggsp/)

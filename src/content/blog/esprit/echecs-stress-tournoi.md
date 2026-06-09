@@ -173,3 +173,9 @@ La pendule tourne. La position est difficile. Mais votre cerveau connaît le che
 ---
 
 *"Sous pression, vous ne vous hissez pas à la hauteur de vos attentes. Vous retombez au niveau de votre entraînement.", Citation souvent attribuée aux forces spéciales, parfaitement applicable à l'échiquier.*
+
+## Pour aller plus loin
+
+- [Résilience aux échecs : apprendre à rebondir après la défaite](/fr/blog/echecs-et-resilience/)
+- [Elo et estime de soi : quand votre classement devient votre identité](/fr/blog/echecs-estime-de-soi-elo/)
+- [Concentration aux échecs : entraîner l'attention comme un muscle](/fr/blog/echecs-et-concentration/)

@@ -171,3 +171,9 @@ L'échiquier peut être un levier. Mais un levier sans point d'appui ne soulève
 ---
 
 *Wilhelm Steinitz, premier champion du monde d'échecs, est mort dans un asile à New York en 1900. Il était dans la misère. Les échecs ne l'avaient pas protégé de la précarité : ils lui avaient seulement permis d'y vivre en roi, pendant quelques heures par jour, sur soixante-quatre cases.*
+
+## Pour aller plus loin
+
+- [Les échecs en prison : quand l'échiquier devient un outil de réhabilitation](/fr/blog/echecs-en-prison/)
+- [Échecs à l'école : ce que la recherche dit vraiment sur l'apprentissage](/fr/blog/echecs-et-ecole/)
+- [Enseigner les échecs aux enfants : âge idéal, méthodes et bénéfices réels](/fr/blog/echecs-et-enfants/)
