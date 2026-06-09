@@ -1,11 +1,12 @@
 ---
-import { navigationLinks, enNavigationLinks, deNavigationLinks } from "../data/site";
+import { navigationLinks, enNavigationLinks, deNavigationLinks, ptBrNavigationLinks } from "../data/site";
 
-const { frHref, enHref, deHref, lang = "fr" } = Astro.props as {
+const { frHref, enHref, deHref, ptBrHref, lang = "fr" } = Astro.props as {
   frHref?: string;
   enHref?: string;
   deHref?: string;
-  lang?: "fr" | "en" | "de";
+  ptBrHref?: string;
+  lang?: "fr" | "en" | "de" | "pt-br";
 };
 
 const pathname = Astro.url.pathname;
@@ -14,12 +15,14 @@ const links =
     ? enNavigationLinks
     : lang === "de"
       ? deNavigationLinks
-      : navigationLinks;
+      : lang === "pt-br"
+        ? ptBrNavigationLinks
+        : navigationLinks;
 
-const homeHref = lang === "en" ? "/en/" : lang === "de" ? "/de/" : "/fr/";
+const homeHref = lang === "en" ? "/en/" : lang === "de" ? "/de/" : lang === "pt-br" ? "/pt-br/" : "/fr/";
 
 const isActive = (href : string) => {
-  const homePaths = ["/fr/", "/en/", "/de/"];
+  const homePaths = ["/fr/", "/en/", "/de/", "/pt-br/"];
   if (homePaths.includes(href)) {
     return pathname === href;
   }
@@ -29,10 +32,13 @@ const isActive = (href : string) => {
   if (lang === "de") {
     return href === "/de/" ? pathname === "/de/" : pathname.startsWith(href);
   }
+  if (lang === "pt-br") {
+    return href === "/pt-br/" ? pathname === "/pt-br/" : pathname.startsWith(href);
+  }
   return href === "/fr/" ? pathname === "/fr/" : pathname.startsWith(href);
 };
 
-// Correspondance href → clé de traduction navLinks (FR / EN / DE partagent les clés côté runtime i18n pour FR & EN)
+// Correspondance href → clé de traduction navLinks
 const linkKey : Record<string, string> = {
   "/fr/science/" : "navLinks.science",
   "/fr/esprit/" : "navLinks.esprit",
@@ -44,23 +50,26 @@ const linkKey : Record<string, string> = {
   "/en/science/" : "navLinks.science",
   "/en/esprit/" : "navLinks.esprit",
   "/en/societe/" : "navLinks.societe",
-  "/en/grand-oral/" : "navLinks.grandOral",
   "/en/dissertations/" : "navLinks.dissertations",
   "/en/blog/" : "navLinks.blog",
   "/en/about/" : "navLinks.about",
   "/de/science/" : "navLinks.science",
   "/de/esprit/" : "navLinks.esprit",
   "/de/societe/" : "navLinks.societe",
-  "/de/grand-oral/" : "navLinks.grandOral",
   "/de/dissertations/" : "navLinks.dissertations",
   "/de/blog/" : "navLinks.blog",
   "/de/about/" : "navLinks.about",
+  "/pt-br/science/" : "navLinks.science",
+  "/pt-br/esprit/" : "navLinks.esprit",
+  "/pt-br/societe/" : "navLinks.societe",
+  "/pt-br/blog/" : "navLinks.blog",
+  "/pt-br/about/" : "navLinks.about",
 };
 ---
-<header class="navbar" id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-de-href={deHref ?? "/de/"}>
+<header class="navbar" id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-de-href={deHref ?? "/de/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"}>
   <div class="container nav-inner">
 
-    <a href={homeHref} class="nav-logo" aria-label={lang === "en" ? "Home - A Left-Hander's Blog" : lang === "de" ? "Startseite - Blog d'un Gaucher" : "Accueil Blog d'un Gaucher"}>
+    <a href={homeHref} class="nav-logo" aria-label={lang === "en" ? "Home - A Left-Hander's Blog" : lang === "de" ? "Startseite - Blog d'un Gaucher" : lang === "pt-br" ? "Início - Blog de um Canhoto" : "Accueil Blog d'un Gaucher"}>
       <img
         src="/images/logo.svg"
         alt=""
