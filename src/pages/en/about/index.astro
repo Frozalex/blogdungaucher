@@ -1,327 +1,815 @@
-﻿---
+---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { buildBreadcrumbJsonLd } from "../../../utils/blog";
 ---
 <BaseLayout
-  title="About | Discover the World of A Left-Hander's Blog"
-  description="The editorial project behind A Left-Hander's Blog: a personal, honest and rigorous voice on chess and those who play it."
+  title="About | Le_Gaucher, A Left-Hander's Blog"
+  description="Who is Le_Gaucher? A 19-year-old computer science student, chess player at 1,600 Elo, and author of a blog crossing neuroscience, psychology and chess strategy."
   canonicalPath="/en/about/"
   lang="en"
-  frPath="/about/"
+  frPath="/fr/about/"
   enPath="/en/about/"
   structuredData={buildBreadcrumbJsonLd([
-    { name: "Home", path: "/en/" },
-    { name: "About", path: "/en/about" },
+    { name : "Home", path : "/en/" },
+    { name : "About", path : "/en/about/" },
   ])}
 >
-  <section class="about">
-    <div class="container">
-      <div class="about-hero reveal">
-        <img
-          src="/images/logo.svg"
-          alt="A Left-Hander's Blog logo"
-          class="about-avatar"
-          width="96"
-          height="96"
-          loading="eager"
-        />
-        <span class="eyebrow">About</span>
+  <article class="about-page">
+    <img class="about-page__glyph" src="/images/logo.svg" alt="" aria-hidden="true" />
+
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero__grid">
+          <div class="about-hero__avatar-block">
+            <img
+              src="/images/logo.svg"
+              alt="A Left-Hander's Blog logo"
+              class="about-hero__avatar"
+              width="160"
+              height="160"
+              loading="eager"
+            />
+            <a
+              class="about-hero__avatar-tag about-hero__avatar-tag--link"
+              href="https://www.chess.com/member/le_gaucher"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Le_Gaucher's Chess.com profile (opens in a new tab)"
+            >
+              <span aria-hidden="true" class="about-hero__avatar-piece">♞</span>
+              Le_Gaucher
+              <svg
+                class="about-hero__avatar-arrow"
+                aria-hidden="true"
+                width="10"
+                height="10"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 9L9 3M9 3H4M9 3V8" />
+              </svg>
+            </a>
+          </div>
+          <div class="about-hero__text">
+            <span class="eyebrow about-hero__eyebrow">About</span>
+            <h1 class="about-hero__title">
+              One guy, one <span class="about-hero__title-em">blog</span>,
+              <br />and a methodical obsession for&nbsp;chess.
+            </h1>
+            <p class="about-hero__lead">
+              I'm <strong>19 years old</strong>. I'm left-handed, not
+              metaphorically, actually. That's where the site's name comes from.
+            </p>
+          </div>
+        </div>
+
+        <dl class="about-stats">
+          <div class="about-stats__item">
+            <dt>age</dt>
+            <dd>19</dd>
+          </div>
+          <div class="about-stats__item">
+            <dt>Rapid Elo</dt>
+            <dd>1&thinsp;600</dd>
+          </div>
+          <div class="about-stats__item">
+            <dt>playing chess</dt>
+            <dd>3 years</dd>
+          </div>
+          <div class="about-stats__item">
+            <dt>writing</dt>
+            <dd class="about-stats__place">solo</dd>
+          </div>
+          <div class="about-stats__item about-stats__item--wide">
+            <dt>based in</dt>
+            <dd class="about-stats__place">Gosier, Guadeloupe</dd>
+          </div>
+        </dl>
       </div>
-      <h1 class="reveal">One player, one blog,<br/><span class="green">one passion.</span></h1>
-      <p class="about-lead reveal">
-        A Left-Hander's Blog is entirely dedicated to chess. The idea isn't to
-        claim the absolute truth, but rather to share a sincere, personal and
-        humble reflection on the game we love.
-      </p>
+    </section>
 
-      <div class="principles reveal-group">
-        <details class="principle">
-          <summary>
-            <strong>Honesty</strong>
-            <span>Click to read our full vision</span>
-          </summary>
-          <div class="principle-body">
-            <p>
-              When we talk about honesty on this blog, we're not talking about a decorative formula placed there for effect.
-              We're talking about a way of working and writing that accepts the reality of chess as it is: demanding,
-              sometimes frustrating, rarely linear. Too much content gives the impression that improvement is simple,
-              that you just need to follow three principles, know two openings and watch a few videos to become a solid player.
-              In practice, every player knows that's not how things work. You plateau, you doubt, you sometimes regress,
-              you think you understand a strategic idea and then lose it again a few weeks later. Honesty, here, means
-              accepting that reality without softening it.
-            </p>
-            <p>
-              This also means showing our mistakes, not just our successes. A won game is pleasant to tell, but a lost
-              game with a bad decision at the wrong moment is often far more instructive. We want to preserve this space
-              of truth, even when it's unflattering. Saying that a plan was bad, that our reading of the position was
-              superficial, or that we were mentally dominated isn't an admission of weakness. It's precisely the attitude
-              that allows you to learn durably. Honesty, in this context, isn't moral in the abstract sense: it's
-              practical. It protects against the illusion of competence.
-            </p>
-            <p>
-              Being honest also means paying close attention to how we cite research, authors and sources. On sensitive
-              topics like the brain, addiction, autism or gender gaps, it would be too easy to oversimplify to produce
-              a discourse that sounds strong but rests on little rigour. We prefer to sometimes slow down the writing,
-              cross-reference multiple publications and state our limitations rather than assert too quickly. When a
-              study is contested, we say so. When a conclusion is partial, we say so. This transparency is part of the
-              trust we want to build with readers.
-            </p>
-            <p>
-              Finally, honesty also concerns tone. This blog has no vocation to play the role of absolute authority.
-              It is run by a passionate person who works, learns, makes mistakes and adjusts their perspective over time.
-              We can defend strong ideas without claiming to possess the final truth. We can be ambitious about quality
-              while remaining modest in posture. In short, the honesty we defend is simple: write what we truly think,
-              acknowledge what we don't yet know, and treat the reader as a partner in reflection, never as an audience to impress.
-            </p>
-          </div>
-        </details>
-
-        <details class="principle">
-          <summary>
-            <strong>Reflection</strong>
-            <span>Click to read our full vision</span>
-          </summary>
-          <div class="principle-body">
-            <p>
-              Reflection means first and foremost one thing: taking time. In today's digital ecosystem, speed is often
-              rewarded more than depth. Publish fast, react fast, summarise fast. Chess teaches us exactly the opposite.
-              The best decisions rarely come from rushing, and the most useful analyses are almost never those written in
-              urgency. On this blog, reflection is therefore a deliberate editorial choice: preferring a solid, nuanced,
-              inhabited article over a short text that gives the impression of having explained everything in two pages.
-            </p>
-            <p>
-              Reflecting also means accepting complexity without hiding behind it. Many topics related to chess are
-              tempting because they lend themselves to slogans: "chess makes you smarter", "the mental is everything",
-              "theory is enough", "computers kill creativity". These phrases are catchy, but they quickly become traps
-              if you don't dismantle them. Our approach here is to return to the detail: under what conditions does an
-              idea become true? For which player profile? At what level of practice? With what limitations? This precision
-              work is what gives value to a reflection.
-            </p>
-            <p>
-              Reflection is not only intellectual - it is also introspective. Chess forces everyone to confront themselves:
-              their fear of losing, their need for recognition, their stress management, their relationship with error.
-              We want to preserve this human dimension in our content. An article should not just be an accumulation of
-              concepts - it should also help the reader ask the right questions about their own practice. Why do I crack
-              under time pressure? Why do I immediately replay after a loss? Why do I play better without stakes than in
-              a tournament? Reflection becomes useful when it transforms into a concrete tool for self-observation.
-            </p>
-            <p>
-              Finally, reflecting means creating links between domains. Chess doesn't live in a closed bubble. It touches
-              psychology, education, cognitive science, sociology, and sometimes even moral philosophy. This richness
-              deserves better than a monotone approach. We therefore try to cross perspectives, to bring together authors,
-              studies, field experiences and players' lived experiences. This method demands more effort, but it avoids
-              flat analyses. This is exactly the ambition we put behind the word "reflection": to go to the bottom without
-              losing the meaning, and to think of chess as a living laboratory of the human mind.
-            </p>
-          </div>
-        </details>
-
-        <details class="principle">
-          <summary>
-            <strong>Clarity</strong>
-            <span>Click to read our full vision</span>
-          </summary>
-          <div class="principle-body">
-            <p>
-              Clarity is a form of respect. When a reader arrives on an article, they grant us their time, their attention
-              and a part of their trust. Our responsibility is to make the reading simple, fluid and intelligible, even
-              when the subject is dense. This doesn't mean simplifying to the point of distortion. It means structuring.
-              One idea at a time. A logical progression. Understandable transitions. Precise vocabulary without being opaque.
-              In a field where much content mixes technical jargon, appeals to authority and very long sentences, clarity
-              is a concrete commitment, almost a discipline.
-            </p>
-            <p>
-              On the editorial level, this clarity comes through organised, readable texts. We look for titles that truly
-              inform, sub-sections that serve the thought, examples that bring concepts to life. When we cite an author,
-              an institution or a study, we try to provide useful links so that everyone can verify and explore further.
-              Clarity, here, is not just a matter of style: it's a way of avoiding deliberate vagueness. If an idea can
-              be stated clearly, it must be stated clearly.
-            </p>
-            <p>
-              On the visual level, clarity also guides the design of the site. A good design isn't the one that shouts
-              the loudest, but the one that steps aside in favour of the content. We prefer airy interfaces, readable
-              contrasts, consistent landmarks and useful rather than decorative animations. A reader should never have
-              to fight against the page to find information. That's why we take care with typographic hierarchy, the
-              table of contents, navigation and mobile interactions: these details seem small, but they genuinely
-              transform the reading experience.
-            </p>
-            <p>
-              Clarity finally means accepting the limits of "saying everything". Some subjects deserve several articles
-              rather than one overloaded text. Sometimes, being clear means breaking down a theme, announcing what we
-              cover now and what we'll cover later. This boundary honesty avoids confusion and helps everyone progress
-              step by step. Ultimately, the clarity we defend is simple: allow the reader to understand quickly, remember
-              for a long time, and return to the text with the feeling of having truly learnt something solid.
-            </p>
-          </div>
-        </details>
-
-        <details class="principle">
-          <summary>
-            <strong>Sharing</strong>
-            <span>Click to read our full vision</span>
-          </summary>
-          <div class="principle-body">
-            <p>
-              Sharing, for us, doesn't mean publishing content and then disappearing. It means building a conversation
-              over time with readers who have very different backgrounds: beginners, club players, blitz enthusiasts,
-              parents of children learning the game, coaches, curious visitors drawn by culture or the psychology of
-              chess. This diversity is an immense richness, provided we don't write as if only one profile existed.
-              We therefore try to write in a way that is accessible without being simplistic, demanding without being
-              exclusive, and personal without being closed.
-            </p>
-            <p>
-              Sharing begins with transmission. A useful idea kept to oneself helps no one progress. When an analytical
-              method works, when a mental framework helps better manage defeats, when a reading illuminates a common
-              difficulty, we want to make it available. But transmitting does not mean imposing. We don't write to say
-              "here is the only right way to play." We write to offer landmarks, leads, angles of approach that each
-              person can test in their own practice.
-            </p>
-            <p>
-              Sharing also means listening. Comments, feedback, argued disagreements and readers' experiences are
-              precious. They force us to reconsider certain positions, to clarify ambiguous passages, to address topics
-              we hadn't seen. A living blog is not a monologue. It is an editorial space that improves through contact
-              with its community. That's why we maintain an open tone: readers are not passive spectators, they are
-              co-actors in the quality of the project.
-            </p>
-            <p>
-              Finally, sharing means remaining useful over time. Content should not serve only the moment or the current
-              algorithm. We want this blog to be readable in six months, in a year, with value still intact. This requires
-              writing texts that go beyond the immediate news cycle, that provide transferable tools of understanding and
-              that respect the reader's intelligence. That's our definition of sharing: pooling what we learn, maintaining
-              a rigour of substance, a genuine human warmth, and the simple pleasure of thinking together about a game
-              we all love.
-            </p>
-          </div>
-        </details>
+    <section class="about-section">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">01</span>
+          <h2 class="about-section__title">Why this blog exists</h2>
+        </header>
+        <div class="about-section__body">
+          <p>
+            At 16, I was asked to lead a chess club. Problem : I didn't have the
+            level to do it. So I learned fast (very fast) absorbing everything
+            I could about the game, the strategies, the psychology behind it.
+          </p>
+          <p>
+            That pattern-based learning, I found it everywhere in my life since.
+            I solve equations mentally. I read situations quickly. Chess didn't
+            make me smarter , 
+            <em>it gave me a method</em>.
+          </p>
+          <p>
+            Later, I was writing articles on Chess.com. At least 1,000 views per
+            article, without ever appearing in the official recommendations. The
+            best unranked French-language blogger on the platform, in a way. I
+            ended up deleting everything to avoid plagiarism and to build
+            something that truly belonged to me.
+          </p>
+          <p class="about-section__close">This site is that.</p>
+        </div>
       </div>
+    </section>
 
-      <div class="contact-note reveal">
-        <span class="eyebrow">Contact</span>
-        <p>
-          For any question, request or discussion, you can reach us at:
-          <a href="mailto:contact@blogdungaucher.com" style="color: var(--green); font-weight: 500;">contact@blogdungaucher.com</a>
-        </p>
+    <section class="about-section about-section--quote">
+      <div class="container">
+        <blockquote class="about-quote">
+          <p>
+            Who am I to talk technique to people who've been playing for thirty
+            years? On the other hand, crossing chess with what research actually
+            says: about memory, the brain, the psychology of the player , 
+            that I can do rigorously.
+          </p>
+        </blockquote>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">02</span>
+          <h2 class="about-section__title">What you'll find here</h2>
+        </header>
+        <div class="about-section__body">
+          <p>
+            I'm not a grandmaster. I'm not a neuroscience researcher. I'm a guy
+            who reads the studies, checks the sources, and makes them accessible
+            to everyone.
+          </p>
+          <p>
+            The articles here are long. The summaries are detailed. The sources
+            are cited. It's not an accident : it's an editorial line.
+            <strong>You come here for an answer, you leave with an answer.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">03</span>
+          <h2 class="about-section__title">How I work</h2>
+        </header>
+        <div class="about-section__body">
+          <p>
+            Every article starts with serious research:
+          </p>
+          <ul class="about-method">
+            <li>
+              <span class="about-method__tag">research</span>
+              <span>Google Scholar, Google Academic, scientific databases accessible via my university license.</span>
+            </li>
+            <li>
+              <span class="about-method__tag">filtering</span>
+              <span>Consensus AI to identify robust studies and rule out isolated conclusions.</span>
+            </li>
+            <li>
+              <span class="about-method__tag">writing</span>
+              <span>I proofread myself. I correct. I cite my sources at the bottom of every article.</span>
+            </li>
+            <li>
+              <span class="about-method__tag">team</span>
+              <span>One person, from start to finish. No freelancing, no ghostwriting.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-section--neg">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">04</span>
+          <h2 class="about-section__title">What this blog <em>is not</em></h2>
+        </header>
+        <ul class="about-not">
+          <li>
+            <span class="about-not__mark">×</span>
+            A classical chess lesson site.
+          </li>
+          <li>
+            <span class="about-not__mark">×</span>
+            A chess.com / chess24 news blog.
+          </li>
+          <li>
+            <span class="about-not__mark">×</span>
+            A place where I'll tell you what you want to hear, if a study is
+            nuanced, I say so.
+          </li>
+          <li>
+            <span class="about-not__mark">×</span>
+            An aggregator of angles already covered a hundred times. I look for
+            what no one has seriously tackled.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-signoff">
+      <div class="container">
+        <div class="about-signoff__inner">
+          <p class="about-signoff__signature">
+            <span class="about-signoff__name">Le_Gaucher</span>
+            <span class="about-signoff__city">Gosier, Guadeloupe</span>
+          </p>
+          <p class="about-signoff__contact">
+            For questions, exchanges, or to disagree:
+            <a href="mailto:contact@blogdungaucher.com" class="about-signoff__mail">
+              contact@blogdungaucher.com
+            </a>
+          </p>
+          <p class="about-signoff__contact about-signoff__contact--chess">
+            And if you want to play or see how I play:
+            <a
+              href="https://www.chess.com/member/le_gaucher"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about-signoff__mail"
+            >
+              chess.com/member/le_gaucher
+              <svg
+                class="about-signoff__ext"
+                aria-hidden="true"
+                width="11"
+                height="11"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 9L9 3M9 3H4M9 3V8" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
 </BaseLayout>
 
 <style>
-  .about { padding: 4.5rem 0 5rem; }
-
-  .about-hero {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  /* ─── Fond + signature glyph ────────────────────────────────── */
+  .about-page {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 5rem;
+    background:
+      radial-gradient(ellipse 70% 50% at 90% -5%, color-mix(in srgb, var(--green) 8%, transparent), transparent 55%),
+      radial-gradient(ellipse 60% 40% at -10% 60%, color-mix(in srgb, var(--green) 5%, transparent), transparent 55%),
+      var(--bg);
   }
 
-  /* Logo monochrome sans fond ni bordure : le filter:invert du dark mode
-     n'inverse alors que le glyphe, pas un fond, et le contraste est préservé. */
-  .about-avatar {
-    width: 80px;
-    height: 80px;
+  .about-page__glyph {
+    position: absolute;
+    top: 8rem;
+    right: -3rem;
+    width: clamp(20rem, 38vw, 36rem);
+    height: auto;
+    opacity: 0.07;
+    pointer-events: none;
+    user-select: none;
+    transform: rotate(-4deg);
+    z-index: 0;
+  }
+
+  :global([data-theme="dark"]) .about-page__glyph {
+    opacity: 0.1;
+    filter: invert(1);
+  }
+
+  .about-page > section {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ─── HERO ─────────────────────────────────────────────────── */
+  .about-hero {
+    padding: calc(var(--navbar-h) + 2.5rem) 0 1.5rem;
+  }
+
+  .about-hero__grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 720px) {
+    .about-hero__grid {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      text-align: left;
+    }
+  }
+
+  .about-hero__avatar-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .about-hero__avatar {
+    width: clamp(112px, 14vw, 160px);
+    height: clamp(112px, 14vw, 160px);
     object-fit: contain;
     flex-shrink: 0;
     transition: filter 260ms ease;
   }
 
-  :global([data-theme="dark"]) .about-avatar {
+  :global([data-theme="dark"]) .about-hero__avatar {
     filter: invert(1);
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .about-avatar { animation: none; }
+  .about-hero__avatar-tag {
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    padding: 0.22rem 0.55rem;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.32rem;
   }
 
-  .about h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 0.5rem 0 1rem; }
-  .green { color: var(--green); }
+  .about-hero__avatar-tag--link {
+    text-decoration: none;
+    color: var(--text-main);
+    transition: color 160ms ease, border-color 160ms ease, transform 200ms var(--ease-spring), box-shadow 200ms ease;
+  }
 
-  .about-lead {
+  .about-hero__avatar-tag--link:hover,
+  .about-hero__avatar-tag--link:focus-visible {
+    color: var(--green);
+    border-color: var(--green-border);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-xs);
+  }
+
+  .about-hero__avatar-piece {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--green);
+    margin-right: 0.05rem;
+    transform: translateY(-0.5px);
+  }
+
+  .about-hero__avatar-arrow {
+    color: var(--text-dim);
+    transition: transform 200ms var(--ease-spring), color 160ms ease;
+    flex-shrink: 0;
+    display: block;
+  }
+
+  .about-hero__avatar-tag--link:hover .about-hero__avatar-arrow,
+  .about-hero__avatar-tag--link:focus-visible .about-hero__avatar-arrow {
+    color: var(--green);
+    transform: translate(2px, -2px);
+  }
+
+  .about-hero__eyebrow {
+    margin-bottom: 0.95rem;
+    color: var(--green);
+  }
+
+  .about-hero__title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2rem, 5.5vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    margin: 0 0 1rem;
+    color: var(--text-main);
+  }
+
+  .about-hero__title-em {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--green);
+  }
+
+  .about-hero__lead {
+    margin: 0;
+    font-size: clamp(1.02rem, 1.8vw, 1.15rem);
     color: var(--text-muted);
-    font-size: 1.05rem;
+    line-height: 1.7;
     max-width: 36rem;
-    line-height: 1.75;
-    margin-bottom: 2.5rem;
   }
 
-  .principles {
+  .about-hero__lead strong {
+    color: var(--text-main);
+    font-weight: 600;
+  }
+
+  /* ─── STATS ────────────────────────────────────────────────── */
+  .about-stats {
+    margin: 0;
+    padding: 1.35rem 0 0;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    margin-bottom: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap: clamp(1rem, 2.5vw, 1.75rem) clamp(1.25rem, 3.5vw, 2.5rem);
+    align-items: flex-end;
+    border-top: 1px solid color-mix(in srgb, var(--green) 22%, var(--border-soft));
     max-width: 54rem;
   }
 
-  .principle {
-    padding: 0;
-    border-radius: var(--radius-lg);
-    border: 1.5px solid var(--border-soft);
-    background: var(--surface);
-    transition: border-color 180ms ease, transform 220ms var(--ease-spring), box-shadow 220ms ease;
-  }
-  .principle:hover {
-    border-color: var(--green-border);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-sm);
+  .about-stats__item--wide {
+    grid-column: span 2;
   }
 
-  .principle summary {
-    list-style: none;
-    cursor: pointer;
-    padding: 1.1rem 1.2rem;
-    display: grid;
+  @media (max-width: 480px) {
+    .about-stats {
+      grid-template-columns: 1fr 1fr;
+    }
+    .about-stats__item--wide {
+      grid-column: span 2;
+    }
+  }
+
+  .about-stats__item {
+    display: flex;
+    flex-direction: column-reverse;
     gap: 0.15rem;
+    margin: 0;
   }
-  .principle summary::-webkit-details-marker { display: none; }
 
-  .principle summary strong {
-    display: inline-block;
-    color: var(--green);
+  .about-stats__item dt {
     font-family: var(--font-display);
+    font-size: 0.66rem;
     font-weight: 600;
-    margin-bottom: 0.1rem;
-  }
-
-  .principle summary span {
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
     color: var(--text-dim);
-    font-size: 0.84rem;
-    line-height: 1.4;
   }
 
-  .principle[open] summary {
+  .about-stats__item dd {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.85rem, 4vw, 2.5rem);
+    line-height: 0.95;
+    color: var(--green);
+    letter-spacing: -0.02em;
+  }
+
+  .about-stats__place {
+    font-size: clamp(1.1rem, 2.2vw, 1.4rem) !important;
+    color: var(--text-main) !important;
+    line-height: 1.2;
+  }
+
+  /* ─── SECTIONS NUMÉROTÉES ──────────────────────────────────── */
+  .about-section {
+    padding: clamp(2.25rem, 5vw, 3.5rem) 0;
+  }
+
+  .about-section__head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.85rem;
+    margin-bottom: 1.5rem;
     border-bottom: 1px solid var(--border-soft);
-    background: color-mix(in srgb, var(--green) 4%, var(--surface));
-    border-top-left-radius: var(--radius-lg);
-    border-top-right-radius: var(--radius-lg);
+    padding-bottom: 0.65rem;
+    max-width: 54rem;
   }
 
-  .principle-body {
-    padding: 1rem 1.2rem 1.15rem;
+  .about-section__num {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.45rem, 3vw, 1.8rem);
+    color: var(--green);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .about-section__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.55rem, 3.5vw, 2.1rem);
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    color: var(--text-main);
+  }
+
+  .about-section__title em {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    color: var(--green);
+  }
+
+  .about-section__body {
+    max-width: 38rem;
     display: grid;
-    gap: 0.9rem;
+    gap: 1rem;
   }
 
-  .principle-body p {
-    color: var(--text-muted);
-    font-size: 0.94rem;
+  .about-section__body p {
+    margin: 0;
+    font-size: 1.02rem;
     line-height: 1.78;
+    color: var(--text-main);
   }
 
-  .contact-note {
-    max-width: 36rem;
-    padding: 1.2rem 1.3rem;
-    border-radius: var(--radius-lg);
-    border: 1.5px solid var(--border-soft);
+  .about-section__body p em {
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--green);
+  }
+
+  .about-section__close {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.18rem !important;
+    color: var(--green) !important;
+    line-height: 1.4 !important;
+    padding-left: 0.85rem;
+    border-left: 3px solid var(--green);
+    margin-top: 0.5rem !important;
+  }
+
+  /* ─── PULL QUOTE ───────────────────────────────────────────── */
+  .about-section--quote {
+    padding: clamp(2rem, 4vw, 3rem) 0;
+  }
+
+  .about-quote {
+    margin: 0;
+    padding: 1.75rem 1.5rem 1.75rem 2.5rem;
+    border-left: 4px solid var(--green);
+    background: color-mix(in srgb, var(--green) 5%, var(--surface));
+    border-radius: 0 6px 6px 0;
+    max-width: 44rem;
+    position: relative;
+  }
+
+  .about-quote::before {
+    content: "\201C";
+    position: absolute;
+    top: -0.4rem;
+    left: 0.6rem;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 4rem;
+    line-height: 1;
+    color: color-mix(in srgb, var(--green) 45%, transparent);
+    pointer-events: none;
+  }
+
+  .about-quote p {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.15rem, 2vw, 1.35rem);
+    line-height: 1.55;
+    color: var(--text-main);
+  }
+
+  /* ─── LISTE MÉTHODE ────────────────────────────────────────── */
+  .about-method {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: grid;
+    gap: 0.7rem;
+    max-width: 40rem;
+  }
+
+  .about-method li {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
     background: var(--surface);
+    transition: border-color 180ms ease, transform 180ms var(--ease-spring);
+  }
+
+  .about-method li:hover {
+    border-color: color-mix(in srgb, var(--green) 35%, var(--border-soft));
+    transform: translateY(-1px);
+  }
+
+  .about-method__tag {
+    font-family: var(--font-display);
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--green);
+    padding: 0.18rem 0.45rem;
+    background: color-mix(in srgb, var(--green) 10%, var(--surface));
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--green-border);
+    text-align: center;
+    width: fit-content;
+  }
+
+  .about-method li > span:last-child {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-main);
+  }
+
+  @media (max-width: 600px) {
+    .about-method li {
+      grid-template-columns: 1fr;
+      gap: 0.45rem;
+    }
+  }
+
+  /* ─── LISTE NÉGATIVE ───────────────────────────────────────── */
+  .about-section--neg {
+    background: color-mix(in srgb, var(--bg-warm) 60%, var(--bg));
+    margin: 1.25rem 0;
+    border-block: 1px solid var(--border-soft);
+  }
+
+  .about-not {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: grid;
     gap: 0.5rem;
+    max-width: 42rem;
   }
-  .contact-note p { color: var(--text-muted); font-size: 0.92rem; }
 
-  @media (max-width: 640px) {
-    .principle summary { padding: 1rem 1rem; }
-    .principle-body { padding: 0.92rem 1rem 1.02rem; gap: 0.82rem; }
-    .principle-body p { font-size: 0.92rem; line-height: 1.72; }
+  .about-not li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    padding: 0.4rem 0;
+  }
+
+  .about-not__mark {
+    flex-shrink: 0;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--green);
+    line-height: 1;
+  }
+
+  /* ─── SIGN-OFF ─────────────────────────────────────────────── */
+  .about-signoff {
+    padding: 2.5rem 0 0;
+  }
+
+  .about-signoff__inner {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-soft);
+    max-width: 38rem;
+  }
+
+  .about-signoff__signature {
+    margin: 0 0 0.85rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .about-signoff__name {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 600;
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .about-signoff__name::after {
+    content: "*";
+    color: var(--green);
+    margin-left: 0.05em;
+  }
+
+  .about-signoff__city {
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  .about-signoff__contact {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .about-signoff__contact--chess {
+    margin-top: 0.5rem;
+  }
+
+  .about-signoff__mail {
+    color: var(--green);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--green) 35%, transparent);
+    transition: border-color 160ms ease;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.25rem;
+  }
+
+  .about-signoff__mail:hover {
+    border-bottom-color: var(--green);
+  }
+
+  .about-signoff__ext {
+    transition: transform 200ms var(--ease-spring);
+    flex-shrink: 0;
+    transform: translateY(1px);
+  }
+
+  .about-signoff__mail:hover .about-signoff__ext {
+    transform: translate(1px, 0);
+  }
+
+  /* ─── Animations reveal ───────────────────────────────────── */
+  .about-page.js-anim .about-hero__grid,
+  .about-page.js-anim .about-stats,
+  .about-page.js-anim .about-section__head,
+  .about-page.js-anim .about-section__body,
+  .about-page.js-anim .about-quote,
+  .about-page.js-anim .about-not,
+  .about-page.js-anim .about-signoff__inner {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 720ms var(--ease-out), transform 720ms var(--ease-out);
+  }
+
+  .about-page.js-anim.is-loaded .about-hero__grid { transition-delay: 0ms; opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-stats { transition-delay: 120ms; opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-section__head { opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-section__body { opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-quote { opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-not { opacity: 1; transform : none; }
+  .about-page.js-anim.is-loaded .about-signoff__inner { opacity: 1; transform : none; }
+
+  @media (prefers-reduced-motion : reduce) {
+    .about-page.js-anim .about-hero__grid,
+    .about-page.js-anim .about-stats,
+    .about-page.js-anim .about-section__head,
+    .about-page.js-anim .about-section__body,
+    .about-page.js-anim .about-quote,
+    .about-page.js-anim .about-not,
+    .about-page.js-anim .about-signoff__inner {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
   }
 </style>
+
+<script>
+  function activateAbout() {
+    const el = document.querySelector(".about-page");
+    if (!el) return;
+    el.classList.add("js-anim");
+    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("is-loaded")));
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", activateAbout, { once : true });
+  } else {
+    activateAbout();
+  }
+  document.addEventListener("astro:page-load", activateAbout);
+</script>

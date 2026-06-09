@@ -12,8 +12,7 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
   ])}
 >
   <article class="about-page">
-    <!-- Pièce d'échecs surdimensionnée en filigrane : signature visuelle. -->
-    <span class="about-page__glyph" aria-hidden="true">♟</span>
+    <img class="about-page__glyph" src="/images/logo.svg" alt="" aria-hidden="true" />
 
     <section class="about-hero">
       <div class="container">
@@ -281,15 +280,13 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
       var(--bg);
   }
 
-  /* Pion noir surdimensionné, fixé en background éditorial. */
   .about-page__glyph {
     position: absolute;
     top: 8rem;
     right: -3rem;
-    font-family: var(--font-serif);
-    font-size: clamp(20rem, 38vw, 36rem);
-    line-height: 0.85;
-    color: color-mix(in srgb, var(--green) 7%, transparent);
+    width: clamp(20rem, 38vw, 36rem);
+    height: auto;
+    opacity: 0.07;
     pointer-events: none;
     user-select: none;
     transform: rotate(-4deg);
@@ -297,7 +294,8 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
   }
 
   :global([data-theme="dark"]) .about-page__glyph {
-    color: color-mix(in srgb, var(--green) 10%, transparent);
+    opacity: 0.1;
+    filter: invert(1);
   }
 
   .about-page > section {
