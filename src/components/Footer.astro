@@ -3,14 +3,14 @@ import { categoryMap, categorySlugs } from "../data/site";
 import NewsletterForm from "./NewsletterForm.astro";
 
 interface Props {
-  lang?: "fr" | "en" | "de";
+  lang?: "fr" | "en" | "de" | "pt-br";
 }
 const { lang = "fr" } = Astro.props;
 
 const blogHref =
-  lang === "en" ? "/en/blog/" : lang === "de" ? "/de/blog/" : "/fr/blog/";
+  lang === "en" ? "/en/blog/" : lang === "de" ? "/de/blog/" : lang === "pt-br" ? "/pt-br/blog/" : "/fr/blog/";
 const aboutHref =
-  lang === "en" ? "/en/about/" : lang === "de" ? "/de/about/" : "/fr/about/";
+  lang === "en" ? "/en/about/" : lang === "de" ? "/de/about/" : lang === "pt-br" ? "/pt-br/about/" : "/fr/about/";
 
 ---
 <footer class="footer" data-pagefind-ignore>

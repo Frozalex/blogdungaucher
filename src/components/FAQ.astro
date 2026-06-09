@@ -6,7 +6,7 @@ interface FaqItem {
 
 interface Props {
   items: FaqItem[];
-  lang?: "fr" | "en" | "de";
+  lang?: "fr" | "en" | "de" | "pt-br";
 }
 
 const { items, lang = "fr" } = Astro.props;
@@ -16,13 +16,17 @@ const title =
     ? "Frequently asked questions"
     : lang === "de"
       ? "Häufig gestellte Fragen"
-      : "Questions fréquentes";
+      : lang === "pt-br"
+        ? "Perguntas frequentes"
+        : "Questions fréquentes";
 const labelOpen =
   lang === "en"
     ? "Open question"
     : lang === "de"
       ? "Frage öffnen"
-      : "Ouvrir la question";
+      : lang === "pt-br"
+        ? "Abrir pergunta"
+        : "Ouvrir la question";
 ---
 
 {items.length > 0 && (

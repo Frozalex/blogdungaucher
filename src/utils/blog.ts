@@ -77,10 +77,19 @@ export function isFrenchOnlyPost(post: BlogEntry): boolean {
 
 export function filterPostsForLang(
   posts: BlogEntry[],
-  lang: "fr" | "en" | "de",
+  lang: "fr" | "en" | "de" | "pt-br",
 ): BlogEntry[] {
   if (lang === "fr") return posts;
   return posts.filter((p) => !isFrenchOnlyPost(p));
+}
+
+export function formatDatePtBr(date: Date) {
+  return new Intl.DateTimeFormat("pt-BR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
 }
 
 /** Ordre d’affichage accueil : alterner science / esprit / société pour éviter un bloc d’une seule rubrique. */
@@ -141,7 +150,7 @@ function interleaveLatestByPillar(posts: BlogEntry[], limit: number): BlogEntry[
 
 export async function getLatestPosts(
   limit: number,
-  lang: "fr" | "en" | "de" = "fr",
+  lang: "fr" | "en" | "de" | "pt-br" = "fr",
 ) {
   const posts = await getAllPosts();
   const list = filterPostsForLang(posts, lang);
@@ -162,6 +171,36 @@ export function getPostSlug(post: BlogEntry) {
 
 export function getPostUrl(post: BlogEntry) {
   return `/fr/blog/${getPostSlug(post)}/`;
+}
+
+/** Cache des slugs PT-BR localisés (frSlug → ptBrFileSlug).
+ *  Construit une seule fois à partir de la collection `ptBrTranslations`. */
+let _ptBrSlugMapPromise: Promise<Map<string, string>> | null = null;
+
+export async function getPtBrSlugMap(): Promise<Map<string, string>> {
+  if (!_ptBrSlugMapPromise) {
+    _ptBrSlugMapPromise = (async () => {
+      const entries = await getCollection("ptBrTranslations");
+      const map = new Map<string, string>();
+      for (const e of entries) {
+        const ptBrSlug = e.id.replace(/\.mdx?$/i, "").split("/").filter(Boolean).pop()!;
+        const frSlug = (e.data as { frSlug?: string }).frSlug;
+        if (frSlug) map.set(frSlug, ptBrSlug);
+      }
+      return map;
+    })();
+  }
+  return _ptBrSlugMapPromise;
+}
+
+export async function getPostUrlPtBr(post: BlogEntry): Promise<string> {
+  const map = await getPtBrSlugMap();
+  const slug = map.get(getPostSlug(post)) ?? getPostSlug(post);
+  return `/pt-br/blog/${slug}/`;
+}
+
+export function getPostUrlPtBrSync(post: BlogEntry, ptBrSlug?: string) {
+  return `/pt-br/blog/${ptBrSlug ?? getPostSlug(post)}/`;
 }
 
 /** Cache des slugs EN localisés (frSlug → enSlug).
@@ -197,14 +236,15 @@ export function getPostUrlEnSync(post: BlogEntry, enSlug?: string) {
   return `/en/blog/${enSlug ?? getPostSlug(post)}/`;
 }
 
-export async function getPostUrlLang(post: BlogEntry, lang: "fr" | "en"): Promise<string> {
+export async function getPostUrlLang(post: BlogEntry, lang: "fr" | "en" | "pt-br"): Promise<string> {
   if (lang === "en") return getPostUrlEn(post);
+  if (lang === "pt-br") return getPostUrlPtBr(post);
   return getPostUrl(post);
 }
 
 /** Page liste blog : chemins relatifs (évite les URL absolues Astro.pagination avec mauvais hôte/port). */
-export function getBlogIndexPagePath(lang: "fr" | "en", pageNum: number) {
-  const base = lang === "en" ? "/en/blog" : "/fr/blog";
+export function getBlogIndexPagePath(lang: "fr" | "en" | "pt-br", pageNum: number) {
+  const base = lang === "en" ? "/en/blog" : lang === "pt-br" ? "/pt-br/blog" : "/fr/blog";
   if (pageNum <= 1) return `${base}/`;
   return `${base}/${pageNum}/`;
 }

@@ -4,7 +4,7 @@ type Heading = { depth: number; slug: string; text: string };
 const { headings, mode = "desktop", lang = "fr" } = Astro.props as {
   headings: Heading[];
   mode?: "desktop" | "mobile";
-  lang?: "fr" | "en";
+  lang?: "fr" | "en" | "pt-br";
 };
 
 const t =
@@ -16,13 +16,21 @@ const t =
         navDesktop: "Table of contents",
         inArticle: "In this article",
       }
-    : {
-        eyebrow: "Sommaire",
-        label: "Sauter à une section",
-        navMobile: "Table des matières mobile",
-        navDesktop: "Table des matières",
-        inArticle: "Dans cet article",
-      };
+    : lang === "pt-br"
+      ? {
+          eyebrow: "Sumário",
+          label: "Ir para uma seção",
+          navMobile: "Sumário mobile",
+          navDesktop: "Sumário",
+          inArticle: "Neste artigo",
+        }
+      : {
+          eyebrow: "Sommaire",
+          label: "Sauter à une section",
+          navMobile: "Table des matières mobile",
+          navDesktop: "Table des matières",
+          inArticle: "Dans cet article",
+        };
 
 /**
  * Sommaire repensé en "rail" minimal :

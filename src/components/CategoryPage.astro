@@ -25,7 +25,7 @@ const rest = posts.filter((p) => p.id !== hero?.id);
 const frCanonical = withTrailingSlash(meta.href);
 
 const homeLabel =
-  lang === "en" ? "Home" : lang === "de" ? "Startseite" : "Accueil";
+  lang === "en" ? "Home" : lang === "de" ? "Startseite" : lang === "pt-br" ? "Início" : "Accueil";
 
 const structuredData = buildBreadcrumbJsonLd([
   { name : homeLabel, path : swapLangPrefix("/", lang) },
@@ -34,12 +34,16 @@ const structuredData = buildBreadcrumbJsonLd([
 
 const pageTitle =
   lang === "en"
-    ? (meta.seoTitleEn ?? `${meta.label} | A Left-Hander's Blog`)
-    : (meta.seoTitle ?? `${meta.label} | Blog d'un Gaucher`);
+    ? (meta.seoTitleEn ?? `${meta.label} | A Left-Hander’s Blog`)
+    : lang === "pt-br"
+      ? `${meta.label} | Blog de um Canhoto`
+      : (meta.seoTitle ?? `${meta.label} | Blog d’un Gaucher`);
 const pageDesc =
   lang === "en"
     ? (meta.seoDescriptionEn ?? `${meta.description} ${meta.audiencePromise}`)
-    : (meta.seoDescription ?? `${meta.description} ${meta.audiencePromise}`);
+    : lang === "pt-br"
+      ? `${meta.description} ${meta.audiencePromise}`
+      : (meta.seoDescription ?? `${meta.description} ${meta.audiencePromise}`);
 const canonPath = swapLangPrefix(frCanonical, lang);
 const catDescription =
   lang === "en"
@@ -53,14 +57,18 @@ const richEyebrow =
     ? "What we explore here"
     : lang === "de"
       ? "Was wir hier vertiefen"
-      : "Ce qu'on creuse ici";
+      : lang === "pt-br"
+        ? "O que exploramos aqui"
+        : "Ce qu’on creuse ici";
 
 const cardsIntro =
   lang === "en"
     ? "Short focal points to revisit after reading:"
     : lang === "de"
       ? "Kurze Schwerpunkte zum Mitnehmen:"
-      : "Trois angles pour résumer l’essentiel :";
+      : lang === "pt-br"
+        ? "Três pontos essenciais para levar:"
+        : "Trois angles pour résumer l’essentiel :";
 
 /** Stats agrégées pour la strip sous le H1 (signature visuelle de la rubrique). */
 const totalMinutes = posts.reduce((acc, p) => {
@@ -73,7 +81,7 @@ const latestDate = posts
   .filter((d): d is Date => d instanceof Date)
   .sort((a, b) => b.getTime() - a.getTime())[0];
 
-const dateLocale = lang === "en" ? "en-US" : lang === "de" ? "de-DE" : "fr-FR";
+const dateLocale = lang === "en" ? "en-US" : lang === "de" ? "de-DE" : lang === "pt-br" ? "pt-BR" : "fr-FR";
 const latestDateLabel = latestDate
   ? latestDate.toLocaleDateString(dateLocale, { month : "short", year : "numeric" })
   : null;
@@ -82,14 +90,15 @@ const statsLabels = {
   fr: { articles: "articles", minutes: "min de lecture", latest: "dernier publié" },
   en: { articles: "articles", minutes: "min of reading", latest: "latest post" },
   de: { articles: "Artikel", minutes: "Lesezeit (min)", latest: "letzter Beitrag" },
-}[lang === "fr" || lang === "en" || lang === "de" ? lang : "fr"];
+  "pt-br": { articles: "artigos", minutes: "min de leitura", latest: "último publicado" },
+}[lang === "fr" || lang === "en" || lang === "de" || lang === "pt-br" ? lang : "fr"];
 
 const featuredLabel =
-  lang === "en" ? "Featured" : lang === "de" ? "Im Fokus" : "À la une";
+  lang === "en" ? "Featured" : lang === "de" ? "Im Fokus" : lang === "pt-br" ? "Destaque" : "À la une";
 const allLabel =
-  lang === "en" ? "All articles" : lang === "de" ? "Alle Artikel" : "Tous les articles";
+  lang === "en" ? "All articles" : lang === "de" ? "Alle Artikel" : lang === "pt-br" ? "Todos os artigos" : "Tous les articles";
 const seeAllLabel =
-  lang === "en" ? "See the whole blog" : lang === "de" ? "Ganzen Blog ansehen" : "Voir tout le blog";
+  lang === "en" ? "See the whole blog" : lang === "de" ? "Ganzen Blog ansehen" : lang === "pt-br" ? "Ver todo o blog" : "Voir tout le blog";
 ---
 <BaseLayout
   title={pageTitle}

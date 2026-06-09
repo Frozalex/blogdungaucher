@@ -1,0 +1,250 @@
+---
+import type { GetStaticPathsOptions, Page } from "astro";
+import type { BlogEntry } from "../../../utils/blog";
+
+import AdBanner from "../../../components/AdBanner.astro";
+import ArticleCard from "../../../components/ArticleCard.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+import { categoryMap, categorySlugs, PT_BR_LAUNCH_DATE } from "../../../data/site";
+import {
+  buildBreadcrumbJsonLd,
+  buildWebsiteJsonLd,
+  filterPostsForLang,
+  getAllPosts,
+  getBlogIndexPagePath,
+} from "../../../utils/blog";
+
+const listingCategorySlugs = categorySlugs.filter((s) => s !== "grand-oral");
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  if (new Date() < PT_BR_LAUNCH_DATE) return [];
+  const posts = filterPostsForLang(await getAllPosts(), "pt-br");
+  return paginate(posts, { pageSize: 9 });
+}
+
+const { page } = Astro.props as { page: Page<BlogEntry> };
+const isFirstPage = page.currentPage === 1;
+
+const MAX_PAGINATION_LINKS = 7;
+function buildPageLinks(current: number, total: number) {
+  if (total <= MAX_PAGINATION_LINKS) {
+    return Array.from({ length: total }, (_, index) => index + 1);
+  }
+  const pages = new Set<number>([1, total, current, current - 1, current + 1]);
+  if (current <= 3) [2, 3, 4].forEach((n) => pages.add(n));
+  if (current >= total - 2) [total - 1, total - 2, total - 3].forEach((n) => pages.add(n));
+  return [...pages].filter((n) => n >= 1 && n <= total).sort((a, b) => a - b);
+}
+
+const paginationPages = buildPageLinks(page.currentPage, page.lastPage);
+
+const prevPageHref =
+  page.currentPage > 1
+    ? getBlogIndexPagePath("pt-br", page.currentPage - 1)
+    : undefined;
+const nextPageHref =
+  page.currentPage < page.lastPage
+    ? getBlogIndexPagePath("pt-br", page.currentPage + 1)
+    : undefined;
+
+const structuredData = isFirstPage
+  ? [buildWebsiteJsonLd(), buildBreadcrumbJsonLd([{ name: "Início", path: "/pt-br/" }, { name: "Artigos", path: "/pt-br/blog/" }])]
+  : undefined;
+
+const canonicalPath = isFirstPage ? "/pt-br/blog/" : `/pt-br/blog/${page.currentPage}/`;
+const frCanonicalPath = getBlogIndexPagePath("fr", page.currentPage);
+const enCanonicalPath = getBlogIndexPagePath("en", page.currentPage);
+---
+<BaseLayout
+  title={isFirstPage ? "Todos os artigos | Blog de um Canhoto" : `Artigos - página ${page.currentPage} | Blog de um Canhoto`}
+  description="A biblioteca completa: ciência do xadrez, mentalidade competitiva, xadrez e sociedade."
+  canonicalPath={canonicalPath}
+  lang="pt-br"
+  frPath={frCanonicalPath}
+  enPath={enCanonicalPath}
+  noindex={!isFirstPage}
+  structuredData={structuredData}
+>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow reveal">Biblioteca</span>
+      <h1 class="reveal">Todos os artigos</h1>
+      <p class="page-lead reveal">
+        Ciência do jogo, mentalidade competitiva, xadrez e sociedade.
+      </p>
+      <div class="chips reveal" id="category-chips">
+        <button class="chip is-active" type="button" data-filter-category="all">
+          Todos
+        </button>
+        {listingCategorySlugs.map((slug) => (
+          <button type="button" class="chip" data-filter-category={slug} style={`--c:${categoryMap[slug].accent}`} data-t={`categories.${slug}.label`}>
+            {categoryMap[slug].label}
+          </button>
+        ))}
+      </div>
+      <div class="search-wrap reveal">
+        <label for="blog-search" class="search-label">Buscar um artigo</label>
+        <input id="blog-search" class="search-input" type="search" placeholder="Título, trecho ou tag…" />
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <AdBanner format="leaderboard" />
+  </div>
+
+  <section class="listing">
+    <div class="container">
+      <div class="post-grid reveal-group">
+        {page.data.map((post) => (
+          <article
+            class="post-item"
+            data-category={post.data.category}
+            data-search={`${post.data.title} ${post.data.excerpt} ${post.data.tags?.join(" ") ?? ""}`.toLowerCase()}
+          >
+            <ArticleCard post={post} lang="pt-br" />
+          </article>
+        ))}
+      </div>
+      <p id="listing-empty" class="listing-empty" hidden>
+        Nenhum artigo corresponde à sua pesquisa nesta página.
+      </p>
+
+      {page.lastPage > 1 && (
+        <nav class="pagination" aria-label="Navegação de página">
+          {prevPageHref ? (
+            <a href={prevPageHref} class="pag-arrow" rel="prev" aria-label="Página anterior">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+              <span>Anterior</span>
+            </a>
+          ) : (
+            <span class="pag-arrow is-disabled" aria-hidden="true"></span>
+          )}
+
+          <div class="pag-center">
+            <span class="pag-label">Página</span>
+            <span class="pag-current">{String(page.currentPage).padStart(2, "0")}</span>
+            <span class="pag-sep" aria-hidden="true">·</span>
+            <span class="pag-total">{String(page.lastPage).padStart(2, "0")}</span>
+          </div>
+
+          {nextPageHref ? (
+            <a href={nextPageHref} class="pag-arrow" rel="next" aria-label="Próxima página">
+              <span>Próxima</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+            </a>
+          ) : (
+            <span class="pag-arrow is-disabled" aria-hidden="true"></span>
+          )}
+        </nav>
+      )}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero { padding: 4rem 0 2rem; }
+  .page-lead { color: var(--text-muted); font-size: 1.05rem; max-width: 36rem; line-height: 1.7; margin-top: 0.5rem; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.2rem; }
+  .chip {
+    padding: 0.28rem 0.75rem; border-radius: var(--radius-pill);
+    border: 1px solid var(--border-soft); background: var(--surface);
+    color: var(--text-muted); font-size: 0.8rem; font-weight: 600; cursor: pointer;
+    transition: background 140ms ease, border-color 140ms ease, color 140ms ease;
+  }
+  .chip:hover { background: var(--surface-warm); border-color: var(--border-strong); color: var(--text-main); }
+  .chip.is-active { background: color-mix(in srgb, var(--c, var(--green)) 14%, var(--surface)); border-color: var(--c, var(--green)); color: var(--c, var(--green)); }
+
+  .search-wrap { margin-top: 1rem; display: grid; gap: 0.3rem; max-width: 28rem; }
+  .search-label { font-size: 0.8rem; color: var(--text-dim); font-weight: 600; }
+  .search-input {
+    padding: 0.55rem 0.85rem; border-radius: var(--radius-sm);
+    border: 1.5px solid var(--border-soft); background: var(--surface);
+    color: var(--text-main); font-size: 0.92rem;
+    transition: border-color 160ms ease;
+  }
+  .search-input:focus { outline: none; border-color: var(--green); }
+
+  .listing { padding: 1.5rem 0 4rem; }
+  .post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
+  .post-item { display: contents; }
+  .listing-empty { color: var(--text-muted); text-align: center; padding: 2rem 0; font-size: 0.95rem; }
+
+  .pagination {
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
+    gap: 1rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border-soft);
+  }
+  .pag-arrow {
+    display: inline-flex; align-items: center; gap: 0.45rem;
+    padding: 0.55rem 0.95rem; border-radius: var(--radius-pill);
+    color: var(--text-muted); font-family: var(--font-display);
+    font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em;
+    transition: color 160ms ease, background 160ms ease, transform 240ms var(--ease-spring);
+    width: max-content;
+  }
+  .pag-arrow:first-child { justify-self: start; }
+  .pag-arrow:last-child  { justify-self: end; }
+  .pag-arrow:not(.is-disabled):hover { color: var(--green); background: var(--green-light); }
+  .pag-arrow svg { transition: transform 240ms var(--ease-spring); }
+  .pag-arrow:first-child:not(.is-disabled):hover svg { transform: translateX(-3px); }
+  .pag-arrow:last-child:not(.is-disabled):hover svg  { transform: translateX(3px); }
+  .pag-arrow.is-disabled { visibility: hidden; }
+
+  .pag-center { display: inline-flex; align-items: baseline; gap: 0.55rem; color: var(--text-muted); white-space: nowrap; }
+  .pag-label { font-family: var(--font-display); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dim); }
+  .pag-current { font-family: var(--font-serif); font-style: italic; font-weight: 500; font-size: clamp(1.7rem, 3.4vw, 2.1rem); line-height: 1; color: var(--green); letter-spacing: -0.01em; font-optical-sizing: auto; }
+  .pag-sep { color: var(--border-strong); font-size: 1rem; }
+  .pag-total { font-family: var(--font-serif); font-weight: 500; font-size: clamp(1rem, 1.8vw, 1.2rem); color: var(--text-dim); letter-spacing: -0.005em; }
+
+  @media (max-width: 540px) {
+    .pagination { grid-template-columns: auto 1fr auto; gap: 0.5rem; }
+    .pag-arrow span { display: none; }
+    .pag-arrow { padding: 0.5rem 0.7rem; }
+  }
+  @media (max-width: 860px) { .post-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .post-grid { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  function initBlogListing() {
+    const chips  = document.querySelectorAll<HTMLElement>(".chip");
+    const posts  = document.querySelectorAll<HTMLElement>(".post-item");
+    const search = document.getElementById("blog-search") as HTMLInputElement | null;
+    const empty  = document.getElementById("listing-empty");
+
+    let activeCategory = "all";
+    let searchQuery    = "";
+
+    function applyFilters() {
+      let visible = 0;
+      posts.forEach((post) => {
+        const cat     = post.dataset.category ?? "";
+        const text    = post.dataset.search ?? "";
+        const catOk   = activeCategory === "all" || cat === activeCategory;
+        const searchOk = searchQuery === "" || text.includes(searchQuery);
+        const show    = catOk && searchOk;
+        post.style.display = show ? "" : "none";
+        if (show) visible++;
+      });
+      if (empty) empty.hidden = visible > 0;
+    }
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        chips.forEach((c) => c.classList.remove("is-active"));
+        chip.classList.add("is-active");
+        activeCategory = chip.dataset.filterCategory ?? "all";
+        applyFilters();
+      });
+    });
+
+    search?.addEventListener("input", () => {
+      searchQuery = search.value.toLowerCase().trim();
+      applyFilters();
+    });
+  }
+
+  document.addEventListener("astro:page-load", initBlogListing);
+</script>

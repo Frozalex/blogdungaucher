@@ -215,6 +215,114 @@ export const translations = {
       about: "About",
     },
   },
+  "pt-br": {
+    nav: {
+      siteName: "Blog de um Canhoto",
+      context: "Diário editorial sobre xadrez",
+      cta: "Ler os artigos",
+      openMenu: "Abrir menu",
+      closeMenu: "Fechar menu",
+      navigation: "Navegação",
+      seeAll: "Ver todos os artigos",
+      darkOn: "Ativar modo escuro",
+      darkOff: "Desativar modo escuro",
+      langSwitch: "Passer en français",
+    },
+    footer: {
+      contactEyebrow: "Vamos continuar em contato",
+      tagline:
+        "Um espaço editorial independente para explorar o xadrez em profundidade, com conteúdos úteis e aplicáveis.",
+      suggestTopic: "Sugerir um tema ou fazer uma pergunta",
+      exploreTitle: "Explorar",
+      allArticles: "Todos os artigos",
+      editorial: "Linha editorial",
+      sectionsTitle: "Seções",
+      trustTitle: "Confiança",
+      legal: "Avisos legais",
+      privacy: "Privacidade",
+    },
+    home: {
+      eyebrow: "Editorial independente",
+      titleHtml:
+        'Entendendo o <span class="hero__accent display-serif">xadrez</span><br/>sem simplificar o jogo.',
+      lead: "Dois artigos por semana: análises claras sobre a ciência do jogo, a mentalidade competitiva e o impacto do xadrez na sociedade, com uma abordagem humana e exigente.",
+      startReading: "Começar a ler",
+      seeSections: "Ver as seções",
+      proof1: "Artigos aprofundados",
+      proof2: "Tom acessível",
+      proof3: "Abordagem rigorosa",
+      editorialNote:
+        "Aqui, não prometemos progressos mágicos em 7 dias. Oferecemos ideias sólidas, exemplos concretos e análises que você pode aplicar à sua prática, seja você um jogador de clube, competidor ou simplesmente apaixonado pelo jogo.",
+      sectionsEyebrow: "3 seções",
+      sectionsTitle: "O que abordamos aqui",
+      recentEyebrow: "Recentes",
+      latestTitle: "Últimos artigos",
+      seeAll: "Ver tudo →",
+      signatureTagline:
+        "Ciência do jogo, mentalidade competitiva, xadrez no mundo real.",
+    },
+    blog: {
+      eyebrow: "Biblioteca",
+      title: "Todos os artigos",
+      lead: "Ciência do jogo, mentalidade competitiva, xadrez e sociedade.",
+      filterAll: "Tudo",
+      searchLabel: "Buscar um artigo",
+      searchPlaceholder: "Título, trecho ou etiqueta…",
+      noResults: "Nenhum artigo corresponde à sua busca nesta página.",
+      prev: "Anterior",
+      next: "Próximo",
+    },
+    category: {
+      featured: "Destaque",
+      allArticles: "Todos os artigos",
+      seeAll: "Ver todos os artigos",
+      comingSoon: "Primeiros artigos em breve.",
+      comingSoonDesc:
+        "Esta seção será publicada em breve. Enquanto isso, encontre todos os artigos disponíveis.",
+      seeAllCta: "Ver todos os artigos",
+    },
+    card: {
+      read: "Ler",
+    },
+    categories: {
+      science: {
+        label: "Ciência",
+        shortLabel: "Ciência do jogo",
+        tagline:
+          "Entendendo como o cérebro vê, calcula e decide no tabuleiro.",
+      },
+      esprit: {
+        label: "Mente",
+        shortLabel: "Mentalidade competitiva",
+        tagline: "O jogo mental, a disciplina e a lucidez quando a pressão aumenta.",
+      },
+      societe: {
+        label: "Sociedade",
+        shortLabel: "Xadrez e sociedade",
+        tagline:
+          "Quando o tabuleiro também conta a história da nossa cultura, instituições e época.",
+      },
+      "grand-oral": {
+        label: "Grand oral",
+        shortLabel: "Baccalauréat",
+        tagline: "Preparando a prova: planos, noções de Matemática e TI com xadrez.",
+      },
+      analyses: {
+        label: "Análises",
+        shortLabel: "Análise Stockfish",
+        tagline: "Importe uma posição FEN ou uma partida PGN e deixe o Stockfish analisar ao vivo.",
+      },
+    },
+    navLinks: {
+      science: "Ciência",
+      esprit: "Mente",
+      societe: "Sociedade",
+      grandOral: "Grand oral",
+      dissertations: "Dissertações",
+      blog: "Todos os artigos",
+      about: "Sobre",
+    },
+  },
 } as const;
 
 export type Lang = keyof typeof translations;

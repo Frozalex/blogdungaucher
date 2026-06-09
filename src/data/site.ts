@@ -230,11 +230,30 @@ export const navigationLinks = [
   { label: "À propos", href: "/fr/about/" },
 ] as const;
 
+/** Date de lancement de la section PT-BR. Avant cette date, aucune page /pt-br/ n'est générée. */
+export const PT_BR_LAUNCH_DATE = new Date("2026-07-01T06:00:00Z");
+
+export const ptBrNavigationLinks = [
+  { label: "Ciência", href: "/pt-br/science/" },
+  { label: "Mente", href: "/pt-br/esprit/" },
+  { label: "Sociedade", href: "/pt-br/societe/" },
+  { label: "Todos os artigos", href: "/pt-br/blog/" },
+  { label: "Sobre", href: "/pt-br/about/" },
+] as const;
+
+export const ptBrStaticRoutes = [
+  "/pt-br/",
+  "/pt-br/blog/",
+  "/pt-br/science/",
+  "/pt-br/esprit/",
+  "/pt-br/societe/",
+  "/pt-br/about/",
+] as const;
+
 export const enNavigationLinks = [
   { label: "Science", href: "/en/science/" },
   { label: "Mind", href: "/en/esprit/" },
   { label: "Society", href: "/en/societe/" },
-  { label: "Grand oral", href: "/en/grand-oral/" },
   { label: "Dissertations", href: "/en/dissertations/" },
   { label: "All articles", href: "/en/blog/" },
   { label: "About", href: "/en/about/" },
@@ -245,7 +264,6 @@ export const deNavigationLinks = [
   { label: "Wissenschaft", href: "/de/science/" },
   { label: "Geist", href: "/de/esprit/" },
   { label: "Gesellschaft", href: "/de/societe/" },
-  { label: "Grand oral", href: "/de/grand-oral/" },
   { label: "Dissertations", href: "/de/dissertations/" },
   { label: "Alle Artikel", href: "/de/blog/" },
   { label: "Über uns", href: "/de/about/" },
@@ -272,7 +290,6 @@ export const enStaticRoutes = [
   "/en/science/",
   "/en/esprit/",
   "/en/societe/",
-  "/en/grand-oral/",
   "/en/dissertations/",
   "/en/about/",
 ] as const;
@@ -283,7 +300,6 @@ export const deStaticRoutes = [
   "/de/science/",
   "/de/esprit/",
   "/de/societe/",
-  "/de/grand-oral/",
   "/de/dissertations/",
   "/de/about/",
   "/de/mentions-legales/",

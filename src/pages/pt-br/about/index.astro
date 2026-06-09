@@ -1,0 +1,525 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+import { PT_BR_LAUNCH_DATE } from "../../../data/site";
+
+if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/about/", 302);
+---
+<BaseLayout
+  title="Sobre | Le_Gaucher, Blog de um Canhoto"
+  description="Quem é Le_Gaucher? Um estudante de ciência da computação de 19 anos, enxadrista com 1.600 de Elo, e autor de um blog que cruza neurociência, psicologia e estratégia de xadrez."
+  canonicalPath="/pt-br/about/"
+  lang="pt-br"
+  frPath="/fr/about/"
+  enPath="/en/about/"
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Início", path: "/pt-br/" },
+    { name: "Sobre", path: "/pt-br/about/" },
+  ])}
+>
+  <article class="about-page">
+    <img class="about-page__glyph" src="/images/logo.svg" alt="" aria-hidden="true" />
+
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero__grid">
+          <div class="about-hero__avatar-block">
+            <img
+              src="/images/logo.svg"
+              alt="Logo Blog de um Canhoto"
+              class="about-hero__avatar"
+              width="160"
+              height="160"
+              loading="eager"
+            />
+            <a
+              class="about-hero__avatar-tag about-hero__avatar-tag--link"
+              href="https://www.chess.com/member/le_gaucher"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Perfil de Le_Gaucher no Chess.com (abre em nova aba)"
+            >
+              <span aria-hidden="true" class="about-hero__avatar-piece">♞</span>
+              Le_Gaucher
+              <svg
+                class="about-hero__avatar-arrow"
+                aria-hidden="true"
+                width="10"
+                height="10"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 9L9 3M9 3H4M9 3V8" />
+              </svg>
+            </a>
+          </div>
+          <div class="about-hero__text">
+            <span class="eyebrow about-hero__eyebrow">Sobre</span>
+            <h1 class="about-hero__title">
+              Um cara, um <span class="about-hero__title-em">blog</span>,
+              <br />e uma obsessão metódica pelo&nbsp;xadrez.
+            </h1>
+            <p class="about-hero__lead">
+              Tenho <strong>19 anos</strong>. Sou canhoto, não metaforicamente, de verdade. É daí que vem o nome do site.
+            </p>
+          </div>
+        </div>
+
+        <dl class="about-stats">
+          <div class="about-stats__item">
+            <dt>idade</dt>
+            <dd>19</dd>
+          </div>
+          <div class="about-stats__item">
+            <dt>Elo Rápido</dt>
+            <dd>1&thinsp;600</dd>
+          </div>
+          <div class="about-stats__item">
+            <dt>jogando xadrez</dt>
+            <dd>3 anos</dd>
+          </div>
+          <div class="about-stats__item">
+            <dt>escrevendo</dt>
+            <dd class="about-stats__place">solo</dd>
+          </div>
+          <div class="about-stats__item about-stats__item--wide">
+            <dt>baseado em</dt>
+            <dd class="about-stats__place">Gosier, Guadalupe</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">01</span>
+          <h2 class="about-section__title">Por que este blog existe</h2>
+        </header>
+        <div class="about-section__body">
+          <p>
+            Aos 16 anos, fui convidado a liderar um clube de xadrez. Problema: eu não tinha o nível para isso. Então aprendi rápido (muito rápido), absorvendo tudo o que pude sobre o jogo, as estratégias, a psicologia por trás dele.
+          </p>
+          <p>
+            Esse aprendizado por padrões, eu passei a encontrar em toda a minha vida desde então. Resolvo equações mentalmente. Leio situações rapidamente. O xadrez não me tornou mais inteligente, <em>ele me deu um método</em>.
+          </p>
+          <p>
+            Mais tarde, escrevi artigos no Chess.com. Pelo menos 1.000 visualizações por artigo, sem nunca aparecer nas recomendações oficiais. O melhor blogueiro de língua francesa não classificado da plataforma, de certa forma. Acabei deletando tudo para evitar plágio e construir algo que fosse verdadeiramente meu.
+          </p>
+          <p class="about-section__close">Este site é isso.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-section--quote">
+      <div class="container">
+        <blockquote class="about-quote">
+          <p>
+            Quem sou eu para falar de técnica a pessoas que jogam há trinta anos? Por outro lado, cruzar o xadrez com o que a pesquisa realmente diz: sobre memória, o cérebro, a psicologia do jogador, isso eu consigo fazer com rigor.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">02</span>
+          <h2 class="about-section__title">O que você encontrará aqui</h2>
+        </header>
+        <div class="about-section__body">
+          <p>
+            Não sou um grande mestre. Não sou um pesquisador em neurociência. Sou um cara que lê os estudos, verifica as fontes e os torna acessíveis a todos.
+          </p>
+          <p>
+            Os artigos aqui são longos. Os resumos são detalhados. As fontes são citadas. Não é por acidente: é uma linha editorial.
+            <strong>Você vem aqui com uma pergunta, sai com uma resposta.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">03</span>
+          <h2 class="about-section__title">Como eu trabalho</h2>
+        </header>
+        <div class="about-section__body">
+          <p>
+            Cada artigo começa com uma pesquisa séria:
+          </p>
+          <ul class="about-method">
+            <li>
+              <span class="about-method__tag">pesquisa</span>
+              <span>Google Scholar, bases de dados científicas acessíveis via licença universitária.</span>
+            </li>
+            <li>
+              <span class="about-method__tag">filtragem</span>
+              <span>Consensus AI para identificar estudos robustos e descartar conclusões isoladas.</span>
+            </li>
+            <li>
+              <span class="about-method__tag">escrita</span>
+              <span>Reviso meu próprio trabalho. Corrijo. Cito as fontes no final de cada artigo.</span>
+            </li>
+            <li>
+              <span class="about-method__tag">equipe</span>
+              <span>Uma pessoa, do início ao fim. Sem freelance, sem ghostwriting.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-section--neg">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">04</span>
+          <h2 class="about-section__title">O que este blog <em>não é</em></h2>
+        </header>
+        <ul class="about-not">
+          <li>
+            <span class="about-not__mark">×</span>
+            Um site clássico de aulas de xadrez.
+          </li>
+          <li>
+            <span class="about-not__mark">×</span>
+            Um blog de notícias do chess.com / chess24.
+          </li>
+          <li>
+            <span class="about-not__mark">×</span>
+            Um lugar onde direi o que você quer ouvir — se um estudo é nuançado, eu digo isso.
+          </li>
+          <li>
+            <span class="about-not__mark">×</span>
+            Um agregador de ângulos já cobertos cem vezes. Procuro o que ninguém abordou seriamente.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-signoff">
+      <div class="container">
+        <div class="about-signoff__inner">
+          <p class="about-signoff__signature">
+            <span class="about-signoff__name">Le_Gaucher</span>
+            <span class="about-signoff__city">Gosier, Guadalupe</span>
+          </p>
+          <p class="about-signoff__contact">
+            Para perguntas, trocas ou para discordar:
+            <a href="mailto:contact@blogdungaucher.com" class="about-signoff__mail">
+              contact@blogdungaucher.com
+            </a>
+          </p>
+          <p class="about-signoff__contact about-signoff__contact--chess">
+            E se quiser jogar ou ver como eu jogo:
+            <a
+              href="https://www.chess.com/member/le_gaucher"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about-signoff__mail"
+            >
+              chess.com/member/le_gaucher
+              <svg
+                class="about-signoff__ext"
+                aria-hidden="true"
+                width="11"
+                height="11"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 9L9 3M9 3H4M9 3V8" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .about-page {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 5rem;
+    background:
+      radial-gradient(ellipse 70% 50% at 90% -5%, color-mix(in srgb, var(--green) 8%, transparent), transparent 55%),
+      radial-gradient(ellipse 60% 40% at -10% 60%, color-mix(in srgb, var(--green) 5%, transparent), transparent 55%),
+      var(--bg);
+  }
+
+  .about-page__glyph {
+    position: absolute;
+    top: 8rem;
+    right: -3rem;
+    width: clamp(20rem, 38vw, 36rem);
+    height: auto;
+    opacity: 0.07;
+    pointer-events: none;
+    user-select: none;
+    transform: rotate(-4deg);
+    z-index: 0;
+  }
+
+  :global([data-theme="dark"]) .about-page__glyph {
+    opacity: 0.1;
+    filter: invert(1);
+  }
+
+  .about-page > section { position: relative; z-index: 1; }
+
+  .about-hero { padding: calc(var(--navbar-h) + 2.5rem) 0 1.5rem; }
+
+  .about-hero__grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 720px) {
+    .about-hero__grid { grid-template-columns: 1fr; gap: 1.25rem; text-align: left; }
+  }
+
+  .about-hero__avatar-block { display: flex; flex-direction: column; align-items: center; gap: 0.55rem; }
+
+  .about-hero__avatar {
+    width: clamp(112px, 14vw, 160px);
+    height: clamp(112px, 14vw, 160px);
+    object-fit: contain;
+    flex-shrink: 0;
+    transition: filter 260ms ease;
+  }
+  :global([data-theme="dark"]) .about-hero__avatar { filter: invert(1); }
+
+  .about-hero__avatar-tag {
+    font-family: var(--font-display); font-size: 0.72rem; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dim);
+    padding: 0.22rem 0.55rem; border: 1px solid var(--border-soft);
+    border-radius: var(--radius-pill); background: var(--surface);
+    display: inline-flex; align-items: center; gap: 0.32rem;
+  }
+
+  .about-hero__avatar-tag--link {
+    text-decoration: none; color: var(--text-main);
+    transition: color 160ms ease, border-color 160ms ease, transform 200ms var(--ease-spring), box-shadow 200ms ease;
+  }
+  .about-hero__avatar-tag--link:hover,
+  .about-hero__avatar-tag--link:focus-visible {
+    color: var(--green); border-color: var(--green-border);
+    transform: translateY(-1px); box-shadow: var(--shadow-xs);
+  }
+
+  .about-hero__avatar-piece {
+    font-family: var(--font-serif); font-size: 0.95rem; line-height: 1; letter-spacing: 0;
+    color: var(--green); margin-right: 0.05rem; transform: translateY(-0.5px);
+  }
+
+  .about-hero__avatar-arrow {
+    color: var(--text-dim); transition: transform 200ms var(--ease-spring), color 160ms ease;
+    flex-shrink: 0; display: block;
+  }
+  .about-hero__avatar-tag--link:hover .about-hero__avatar-arrow,
+  .about-hero__avatar-tag--link:focus-visible .about-hero__avatar-arrow {
+    color: var(--green); transform: translate(2px, -2px);
+  }
+
+  .about-hero__eyebrow { margin-bottom: 0.95rem; color: var(--green); }
+
+  .about-hero__title {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05;
+    letter-spacing: -0.035em; margin: 0 0 1rem; color: var(--text-main);
+  }
+  .about-hero__title-em {
+    font-family: var(--font-serif); font-style: italic; font-weight: 500; color: var(--green);
+  }
+
+  .about-hero__lead {
+    margin: 0; font-size: clamp(1.02rem, 1.8vw, 1.15rem);
+    color: var(--text-muted); line-height: 1.7; max-width: 36rem;
+  }
+  .about-hero__lead strong { color: var(--text-main); font-weight: 600; }
+
+  .about-stats {
+    margin: 0; padding: 1.35rem 0 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap: clamp(1rem, 2.5vw, 1.75rem) clamp(1.25rem, 3.5vw, 2.5rem);
+    align-items: flex-end;
+    border-top: 1px solid color-mix(in srgb, var(--green) 22%, var(--border-soft));
+    max-width: 54rem;
+  }
+  .about-stats__item--wide { grid-column: span 2; }
+  @media (max-width: 480px) {
+    .about-stats { grid-template-columns: 1fr 1fr; }
+    .about-stats__item--wide { grid-column: span 2; }
+  }
+  .about-stats__item { display: flex; flex-direction: column-reverse; gap: 0.15rem; margin: 0; }
+  .about-stats__item dt {
+    font-family: var(--font-display); font-size: 0.66rem; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim);
+  }
+  .about-stats__item dd {
+    margin: 0; font-family: var(--font-serif); font-style: italic; font-weight: 500;
+    font-size: clamp(1.85rem, 4vw, 2.5rem); line-height: 0.95;
+    color: var(--green); letter-spacing: -0.02em;
+  }
+  .about-stats__place { font-size: clamp(1.1rem, 2.2vw, 1.4rem) !important; color: var(--text-main) !important; line-height: 1.2; }
+
+  .about-section { padding: clamp(2.25rem, 5vw, 3.5rem) 0; }
+
+  .about-section__head {
+    display: flex; align-items: baseline; gap: 0.85rem; margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-soft); padding-bottom: 0.65rem; max-width: 54rem;
+  }
+  .about-section__num {
+    font-family: var(--font-serif); font-style: italic; font-weight: 500;
+    font-size: clamp(1.45rem, 3vw, 1.8rem); color: var(--green);
+    letter-spacing: -0.02em; line-height: 1;
+  }
+  .about-section__title {
+    margin: 0; font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(1.55rem, 3.5vw, 2.1rem); letter-spacing: -0.03em;
+    line-height: 1.15; color: var(--text-main);
+  }
+  .about-section__title em { font-family: var(--font-serif); font-style: italic; font-weight: 500; color: var(--green); }
+
+  .about-section__body { max-width: 38rem; display: grid; gap: 1rem; }
+  .about-section__body p { margin: 0; font-size: 1.02rem; line-height: 1.78; color: var(--text-main); }
+  .about-section__body p em { font-family: var(--font-serif); font-style: italic; color: var(--green); }
+  .about-section__close {
+    font-family: var(--font-serif); font-style: italic; font-size: 1.18rem !important;
+    color: var(--green) !important; line-height: 1.4 !important;
+    padding-left: 0.85rem; border-left: 3px solid var(--green); margin-top: 0.5rem !important;
+  }
+
+  .about-section--quote { padding: clamp(2rem, 4vw, 3rem) 0; }
+  .about-quote {
+    margin: 0; padding: 1.75rem 1.5rem 1.75rem 2.5rem;
+    border-left: 4px solid var(--green);
+    background: color-mix(in srgb, var(--green) 5%, var(--surface));
+    border-radius: 0 6px 6px 0; max-width: 44rem; position: relative;
+  }
+  .about-quote::before {
+    content: "\201C"; position: absolute; top: -0.4rem; left: 0.6rem;
+    font-family: var(--font-serif); font-style: italic; font-size: 4rem; line-height: 1;
+    color: color-mix(in srgb, var(--green) 45%, transparent); pointer-events: none;
+  }
+  .about-quote p {
+    margin: 0; font-family: var(--font-serif); font-style: italic; font-weight: 400;
+    font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.55; color: var(--text-main);
+  }
+
+  .about-method {
+    list-style: none; padding: 0; margin: 0.5rem 0 0;
+    display: grid; gap: 0.7rem; max-width: 40rem;
+  }
+  .about-method li {
+    display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; align-items: baseline;
+    padding: 0.85rem 1rem; border: 1px solid var(--border-soft); border-radius: 6px;
+    background: var(--surface);
+    transition: border-color 180ms ease, transform 180ms var(--ease-spring);
+  }
+  .about-method li:hover { border-color: color-mix(in srgb, var(--green) 35%, var(--border-soft)); transform: translateY(-1px); }
+  .about-method__tag {
+    font-family: var(--font-display); font-size: 0.66rem; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--green);
+    padding: 0.18rem 0.45rem; background: color-mix(in srgb, var(--green) 10%, var(--surface));
+    border-radius: var(--radius-pill); border: 1px solid var(--green-border);
+    text-align: center; width: fit-content;
+  }
+  .about-method li > span:last-child { font-size: 0.95rem; line-height: 1.6; color: var(--text-main); }
+  @media (max-width: 600px) { .about-method li { grid-template-columns: 1fr; gap: 0.45rem; } }
+
+  .about-section--neg {
+    background: color-mix(in srgb, var(--bg-warm) 60%, var(--bg));
+    margin: 1.25rem 0; border-block: 1px solid var(--border-soft);
+  }
+  .about-not { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; max-width: 42rem; }
+  .about-not li {
+    display: flex; align-items: baseline; gap: 0.7rem;
+    font-size: 1rem; line-height: 1.6; color: var(--text-main); padding: 0.4rem 0;
+  }
+  .about-not__mark {
+    flex-shrink: 0; font-family: var(--font-serif); font-style: italic;
+    font-weight: 500; font-size: 1.3rem; color: var(--green); line-height: 1;
+  }
+
+  .about-signoff { padding: 2.5rem 0 0; }
+  .about-signoff__inner { padding-top: 1.5rem; border-top: 1px solid var(--border-soft); max-width: 38rem; }
+  .about-signoff__signature { margin: 0 0 0.85rem; display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; }
+  .about-signoff__name {
+    font-family: var(--font-serif); font-style: italic; font-weight: 600;
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--text-main); letter-spacing: -0.02em; line-height: 1;
+  }
+  .about-signoff__name::after { content: "*"; color: var(--green); margin-left: 0.05em; }
+  .about-signoff__city {
+    font-family: var(--font-display); font-size: 0.78rem; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim);
+  }
+  .about-signoff__contact { margin: 0; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
+  .about-signoff__contact--chess { margin-top: 0.5rem; }
+  .about-signoff__mail {
+    color: var(--green); font-weight: 600; text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--green) 35%, transparent);
+    transition: border-color 160ms ease; display: inline-flex; align-items: baseline; gap: 0.25rem;
+  }
+  .about-signoff__mail:hover { border-bottom-color: var(--green); }
+  .about-signoff__ext { transition: transform 200ms var(--ease-spring); flex-shrink: 0; transform: translateY(1px); }
+  .about-signoff__mail:hover .about-signoff__ext { transform: translate(1px, 0); }
+
+  .about-page.js-anim .about-hero__grid,
+  .about-page.js-anim .about-stats,
+  .about-page.js-anim .about-section__head,
+  .about-page.js-anim .about-section__body,
+  .about-page.js-anim .about-quote,
+  .about-page.js-anim .about-not,
+  .about-page.js-anim .about-signoff__inner {
+    opacity: 0; transform: translateY(14px);
+    transition: opacity 720ms var(--ease-out), transform 720ms var(--ease-out);
+  }
+  .about-page.js-anim.is-loaded .about-hero__grid { transition-delay: 0ms; opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-stats { transition-delay: 120ms; opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-section__head { opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-section__body { opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-quote { opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-not { opacity: 1; transform: none; }
+  .about-page.js-anim.is-loaded .about-signoff__inner { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .about-page.js-anim .about-hero__grid,
+    .about-page.js-anim .about-stats,
+    .about-page.js-anim .about-section__head,
+    .about-page.js-anim .about-section__body,
+    .about-page.js-anim .about-quote,
+    .about-page.js-anim .about-not,
+    .about-page.js-anim .about-signoff__inner {
+      opacity: 1; transform: none; transition: none;
+    }
+  }
+</style>
+
+<script>
+  function activateAbout() {
+    const el = document.querySelector(".about-page");
+    if (!el) return;
+    el.classList.add("js-anim");
+    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("is-loaded")));
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", activateAbout, { once: true });
+  } else {
+    activateAbout();
+  }
+  document.addEventListener("astro:page-load", activateAbout);
+</script>

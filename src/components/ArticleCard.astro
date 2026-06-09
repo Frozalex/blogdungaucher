@@ -2,19 +2,18 @@
 import { getEntry } from "astro:content";
 
 import type { BlogEntry } from "../utils/blog";
-import { formatDate, formatDateEn, getCategoryMeta, getPostHeroSrc, getPostSlug, getPostUrlLang } from "../utils/blog";
+import { formatDate, formatDateEn, formatDatePtBr, getCategoryMeta, getPostHeroSrc, getPostSlug, getPostUrlLang } from "../utils/blog";
 import { t, type Lang } from "../i18n/translations";
 
 const { post, featured = false, lang = "fr" } = Astro.props as {
   post: BlogEntry;
   featured?: boolean;
-  lang?: Lang;
+  lang?: Lang | "pt-br";
 };
 
 const category = getCategoryMeta(post.data.category);
 
-// En contexte EN, on récupère le titre / excerpt depuis la traduction si elle
-// existe et n'est pas en draft. Sinon on retombe sur le contenu FR.
+// Récupère le titre/excerpt depuis la traduction de la langue si elle existe et n'est pas en draft.
 let postTitle = post.data.title;
 let postExcerpt = post.data.excerpt;
 if (lang === "en") {
@@ -23,16 +22,25 @@ if (lang === "en") {
     postTitle = enEntry.data.title;
     postExcerpt = enEntry.data.excerpt;
   }
+} else if (lang === "pt-br") {
+  const ptBrEntries = await import("astro:content").then((m) => m.getCollection("ptBrTranslations"));
+  const frSlug = getPostSlug(post);
+  const ptBrEntry = ptBrEntries.find((e) => (e.data.frSlug ?? e.id) === frSlug);
+  if (ptBrEntry && !ptBrEntry.data.draft) {
+    postTitle = ptBrEntry.data.title;
+    postExcerpt = ptBrEntry.data.excerpt;
+  }
 }
 
 // Étiquettes localisées (server-side, indexable par les moteurs).
-const categoryLabel = t(lang, `categories.${post.data.category}.label`);
-const categoryShortLabel = t(lang, `categories.${post.data.category}.shortLabel`);
-const readLabel = t(lang, "card.read");
-const formattedDate = lang === "en" ? formatDateEn(post.data.publishDate) : formatDate(post.data.publishDate);
+const tLang: Lang = lang === "pt-br" ? "pt-br" : (lang as Lang);
+const categoryLabel = t(tLang, `categories.${post.data.category}.label`);
+const categoryShortLabel = t(tLang, `categories.${post.data.category}.shortLabel`);
+const readLabel = t(tLang, "card.read");
+const formattedDate = lang === "en" ? formatDateEn(post.data.publishDate) : lang === "pt-br" ? formatDatePtBr(post.data.publishDate) : formatDate(post.data.publishDate);
 
 const thumbSrc = getPostHeroSrc(post);
-const postHref = await getPostUrlLang(post, lang);
+const postHref = lang === "pt-br" ? await getPostUrlLang(post, "pt-br") : await getPostUrlLang(post, lang as "fr" | "en");
 ---
 <article
   class={`card scale-in ${featured ? "featured" : ""}`}

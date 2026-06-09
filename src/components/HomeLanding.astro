@@ -6,7 +6,7 @@ import { swapLangPrefix } from "../utils/lang-paths";
 import type { BlogEntry } from "../utils/blog";
 
 interface Props {
-  lang: "fr" | "en" | "de";
+  lang: "fr" | "en" | "de" | "pt-br";
   latestPosts: BlogEntry[];
   totalPosts: number;
   postsByCategory?: Partial<Record<(typeof categorySlugs)[number], number>>;
@@ -36,7 +36,7 @@ type HomeCopy = {
   seeAll: string;
 };
 
-const homeByLang : Record<typeof lang, HomeCopy> = {
+const homeByLang : Record<"fr" | "en" | "de" | "pt-br", HomeCopy> = {
   fr: {
     siteName: "Blog d'un Gaucher",
     signatureTagline: "Science du jeu, esprit compétitif, échecs dans le monde réel.",
@@ -73,7 +73,7 @@ const homeByLang : Record<typeof lang, HomeCopy> = {
     proof2: "2 articles / week",
     proof3: "Cited sources, 0 clickbait",
     editorialNote: "",
-    sectionsEyebrow: "4 sections",
+    sectionsEyebrow: "3 sections",
     sectionsTitle: "What we cover here",
     recentEyebrow: "Recent",
     latestTitle: "Latest articles",
@@ -100,6 +100,27 @@ const homeByLang : Record<typeof lang, HomeCopy> = {
     latestTitle: "Neueste Artikel",
     seeAll: "Alle anzeigen →",
   },
+  "pt-br": {
+    siteName: "Blog de um Canhoto",
+    signatureTagline: "Ciência do jogo, mentalidade competitiva, xadrez no mundo real.",
+    eyebrow: "Editorial independente",
+    titleHtml:
+      'Entendendo o <span class="hero__accent display-serif">xadrez</span><br/>sem simplificar o jogo.',
+    lead:
+      "Dois artigos por semana : análises claras sobre a ciência do jogo, a mentalidade competitiva e o impacto do xadrez na sociedade, com uma abordagem humana e exigente.",
+    startReading: "Começar a ler",
+    seeSections: "Ver as seções",
+    proofListLabel: "Marcadores editoriais",
+    proof1: `${totalPosts}+ análises publicadas`,
+    proof2: "2 artigos / semana",
+    proof3: "Fontes citadas, 0 clickbait",
+    editorialNote: "",
+    sectionsEyebrow: "3 seções",
+    sectionsTitle: "O que abordamos aqui",
+    recentEyebrow: "Recentes",
+    latestTitle: "Últimos artigos",
+    seeAll: "Ver tudo →",
+  },
 };
 
 const c = homeByLang[lang];
@@ -125,6 +146,7 @@ const pillarGlyphs : Record<(typeof categorySlugs)[number], string> = {
 const articleCountLabel = (n : number): string => {
   if (lang === "en") return `${n} ${n > 1 ? "articles" : "article"}`;
   if (lang === "de") return `${n} Artikel`;
+  if (lang === "pt-br") return `${n} ${n > 1 ? "artigos" : "artigo"}`;
   return `${n} ${n > 1 ? "articles" : "article"}`;
 };
 ---
@@ -212,7 +234,7 @@ const articleCountLabel = (n : number): string => {
       </h2>
       <div class="pillar-grid reveal-group">
         {
-          categorySlugs.map((slug) => {
+          categorySlugs.filter((slug) => lang === "fr" || slug !== "grand-oral").map((slug) => {
             const cat = categoryMap[slug];
             const href = lang === "fr" ? cat.href : swapLangPrefix(cat.href, lang);
             const count = postsByCategory[slug] ?? 0;
