@@ -48,7 +48,6 @@ export default defineConfig({
     // Rubrique renommée Essais → Dissertations
     "/fr/essais/": "/fr/dissertations/",
     "/en/essais/": "/en/dissertations/",
-    "/de/essais/": "/de/dissertations/",
 
     // Résolution cannibalisation SEO (articles fusionnés vers leur version canonique)
     "/fr/blog/echecs-et-syndrome-imposteur/": "/fr/blog/syndrome-imposteur-aux-echecs/",

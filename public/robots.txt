@@ -1,101 +1,11 @@
 # Robots : Blog d'un Gaucher (https://blogdungaucher.com)
 # Politique détaillée pour assistants / crawlers IA : /llms.txt
 #
-# Indexation : pages FR et EN exposées. La version DE reste exclue
-# (meta noindex + sitemap) tant que les traductions ne sont pas finalisées.
+# Indexation : pages FR et EN exposées. Les anciennes URL /de/ sont
+# désormais redirigées en 301 vers /fr/ côté nginx — laissées crawlables
+# pour que Google puisse constater la redirection et désindexer proprement.
 
 User-agent: *
 Allow: /
-Disallow: /de/
-
-# ── Google ──
-User-agent: Googlebot
-Allow: /
-Disallow: /de/
-
-User-agent: Googlebot-Image
-Allow: /
-Disallow: /de/
-
-User-agent: AdsBot-Google
-Allow: /
-Disallow: /de/
-
-User-agent: Mediapartners-Google
-Allow: /
-Disallow: /de/
-
-User-agent: Google-Extended
-Allow: /
-Disallow: /de/
-
-User-agent: GoogleOther
-Allow: /
-Disallow: /de/
-
-# ── Crawlers et assistants IA ──
-User-agent: GPTBot
-Allow: /
-Disallow: /de/
-
-User-agent: ChatGPT-User
-Allow: /
-Disallow: /de/
-
-User-agent: OAI-SearchBot
-Allow: /
-Disallow: /de/
-
-User-agent: ClaudeBot
-Allow: /
-Disallow: /de/
-
-User-agent: Claude-Web
-Allow: /
-Disallow: /de/
-
-User-agent: anthropic-ai
-Allow: /
-Disallow: /de/
-
-User-agent: PerplexityBot
-Allow: /
-Disallow: /de/
-
-User-agent: Applebot
-Allow: /
-Disallow: /de/
-
-User-agent: Applebot-Extended
-Allow: /
-Disallow: /de/
-
-User-agent: Amazonbot
-Allow: /
-Disallow: /de/
-
-User-agent: MistralBot
-Allow: /
-Disallow: /de/
-
-User-agent: cohere-ai
-Allow: /
-Disallow: /de/
-
-User-agent: Meta-ExternalAgent
-Allow: /
-Disallow: /de/
-
-User-agent: Bytespider
-Allow: /
-Disallow: /de/
-
-User-agent: CCBot
-Allow: /
-Disallow: /de/
-
-User-agent: Diffbot
-Allow: /
-Disallow: /de/
 
 Sitemap: https://blogdungaucher.com/sitemap.xml
