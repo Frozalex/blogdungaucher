@@ -32,6 +32,9 @@ gh_deploy_blog_rsa.pub
 gh_deploy_blog_rsa.txt
 gh_deploy_blog_rsa*
 
+# Exports locaux (Word, etc.) — non versionnés
+exports/
+
 # Fichiers temporaires locaux (logs git / scripts jetables)
 _git_result.txt
 _shell_probe.txt
