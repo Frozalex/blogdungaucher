@@ -32,7 +32,7 @@ Les échecs sont ce sujet transversal. La combinatoire (Maths) explique *pourquo
 Ce n'est pas un sujet où Maths et NSI se côtoient par hasard. C'est un sujet où chaque notion mathématique *engendre* un besoin informatique, et chaque implémentation informatique *suppose* un fondement mathématique. C'est le pont réel entre les deux disciplines.
 
 > **Pourquoi cet article est différent des deux autres de la série ?**
-> - L'article [Guide Grand oral spé Maths](/fr/blog/guide-grand-oral-echecs-maths/) développe le script minuté, les formules, suites et loi binomiale pour les candidats avec Maths uniquement
+> - L'article [Guide Grand oral spé Maths](/fr/blog/grand-oral-maths-spe-echecs/) développe le script minuté, les formules, suites et loi binomiale pour les candidats avec Maths uniquement
 > - L'article [Grand oral spé NSI](/fr/blog/grand-oral-nsi-echecs/) développe le code Python, les structures de données et l'IA pour les candidats avec NSI uniquement
 > - **Cet article construit les ponts entre les deux disciplines** : il est fait pour les élèves Maths+NSI qui veulent un sujet transversal et un jury qui peut interroger dans les deux directions
 
@@ -399,7 +399,7 @@ Ton tableau (blanc ou noir) doit avoir deux ou trois éléments préparés à l'
 
 Ce sujet existe en trois versions adaptées à chaque profil :
 
-- **Tu as uniquement la spécialité Maths** → [Guide Grand oral spé Maths : script 10 min, formules et 25 questions de jury](/fr/blog/guide-grand-oral-echecs-maths/) : script minuté, formules détaillées, calculs numériques, loi binomiale pour les tournois, suite récurrente Elo.
+- **Tu as uniquement la spécialité Maths** → [Guide Grand oral spé Maths : script 10 min, formules et 25 questions de jury](/fr/blog/grand-oral-maths-spe-echecs/) : script minuté, formules détaillées, calculs numériques, loi binomiale pour les tournois, suite récurrente Elo.
 
 - **Tu as uniquement la spécialité NSI** → [Grand oral spé NSI : minimax Python, bitboard et AlphaZero](/fr/blog/grand-oral-nsi-echecs/) : code Python commenté, structures de données, format PGN, SQL, progression Stockfish → AlphaZero.
 

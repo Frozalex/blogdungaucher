@@ -94,4 +94,4 @@ Je vous remercie pour votre attention et je suis prêt à répondre à vos **que
 
 ---
 
-> **Pour aller plus loin :** [Sujet Grand Oral Maths sur la combinatoire](/fr/blog/sujet-grand-oral-maths-combinatoire/) · [Sujet Grand Oral Maths sur Elo et probabilités](/fr/blog/sujet-grand-oral-maths-elo-probabilites/) · [Sujet Grand Oral Maths sur Zermelo et complexité](/fr/blog/sujet-grand-oral-maths-zermelo-complexite/) · [Hub méthodologie Grand Oral Maths](/fr/blog/guide-grand-oral-echecs-maths/)
+> **Pour aller plus loin :** [Sujet Grand Oral Maths sur la combinatoire](/fr/blog/sujet-grand-oral-maths-combinatoire/) · [Sujet Grand Oral Maths sur Elo et probabilités](/fr/blog/sujet-grand-oral-maths-elo-probabilites/) · [Sujet Grand Oral Maths sur Zermelo et complexité](/fr/blog/sujet-grand-oral-maths-zermelo-complexite/) · [Hub méthodologie Grand Oral Maths](/fr/blog/grand-oral-maths-spe-echecs/)
