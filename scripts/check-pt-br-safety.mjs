@@ -26,6 +26,7 @@ const STATIC_ROUTES = [
   "/pt-br/esprit/",
   "/pt-br/societe/",
   "/pt-br/about/",
+  "/pt-br/recherche/",
 ];
 
 // Heuristique : mots-clés français qui n'ont rien à faire dans une page pt-BR.

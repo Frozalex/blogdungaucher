@@ -109,7 +109,7 @@ const linkKey : Record<string, string> = {
     <!-- Boutons icônes : recherche + dark mode + langue -->
     <div class="nav-actions">
       <a
-        href={lang === "en" ? "/en/recherche/" : lang === "de" ? "/de/recherche/" : "/fr/recherche/"}
+        href={lang === "en" ? "/en/recherche/" : lang === "de" ? "/de/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : "/fr/recherche/"}
         class="icon-btn search-btn"
         aria-label="Rechercher un article"
         title="Rechercher"
@@ -175,7 +175,7 @@ const linkKey : Record<string, string> = {
           >{link.label}</a>
         ))}
         <a
-          href={lang === "en" ? "/en/recherche/" : lang === "de" ? "/de/recherche/" : "/fr/recherche/"}
+          href={lang === "en" ? "/en/recherche/" : lang === "de" ? "/de/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : "/fr/recherche/"}
           class="mobile-link mobile-search-link"
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -683,7 +683,7 @@ const linkKey : Record<string, string> = {
       if (/\/recherche\/?$/.test(window.location.pathname)) return;
       e.preventDefault();
       const lang = window.__lang || "fr";
-      const path = lang === "en" ? "/en/recherche/" : lang === "de" ? "/de/recherche/" : "/fr/recherche/";
+      const path = lang === "en" ? "/en/recherche/" : lang === "de" ? "/de/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : "/fr/recherche/";
       window.location.href = path;
     }, { signal });
 
