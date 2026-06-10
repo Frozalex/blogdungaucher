@@ -149,7 +149,7 @@ export const translations = {
       proof3: "Rigorous approach",
       editorialNote:
         "Here, we don't promise magical progress in 7 days. We offer solid ideas, concrete examples and analyses that you can apply to your practice, whether you're a club player, a competitor, or simply passionate about the game.",
-      sectionsEyebrow: "4 sections",
+      sectionsEyebrow: "3 sections",
       sectionsTitle: "What we cover here",
       recentEyebrow: "Recent",
       latestTitle: "Latest articles",
@@ -160,7 +160,7 @@ export const translations = {
     blog: {
       eyebrow: "Library",
       title: "All articles",
-      lead: "Game science, competitive mindset, chess and society, Grand oral prep, personal analyses.",
+      lead: "Game science, competitive mindset, chess and society, personal analyses.",
       filterAll: "All",
       searchLabel: "Search an article",
       searchPlaceholder: "Title, excerpt or tag…",
@@ -209,7 +209,6 @@ export const translations = {
       science: "Science",
       esprit: "Mind",
       societe: "Society",
-      grandOral: "Grand oral",
       dissertations: "Dissertations",
       blog: "All articles",
       about: "About",
@@ -302,11 +301,6 @@ export const translations = {
         tagline:
           "Quando o tabuleiro também conta a história da nossa cultura, instituições e época.",
       },
-      "grand-oral": {
-        label: "Grand oral",
-        shortLabel: "Baccalauréat",
-        tagline: "Preparando a prova: planos, noções de Matemática e TI com xadrez.",
-      },
       analyses: {
         label: "Análises",
         shortLabel: "Análise Stockfish",
@@ -317,7 +311,6 @@ export const translations = {
       science: "Ciência",
       esprit: "Mente",
       societe: "Sociedade",
-      grandOral: "Grand oral",
       dissertations: "Dissertações",
       blog: "Todos os artigos",
       about: "Sobre",

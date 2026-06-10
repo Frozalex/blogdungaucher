@@ -69,9 +69,18 @@ if (stripInlineFaq) {
 const readingTime = post.data.readingTime ?? calculateReadingTime(post.body);
 
 const allPosts = await getAllPosts();
+const currentTags = new Set(post.data.tags ?? []);
 const related = allPosts
-  .filter((e) => e.id !== post.id && e.data.category === post.data.category)
-  .slice(0, 3);
+  .filter((e) => e.id !== post.id)
+  .map((e) => {
+    const sharedTags = (e.data.tags ?? []).filter((t) => currentTags.has(t)).length;
+    const sameCategory = e.data.category === post.data.category ? 1 : 0;
+    return { entry: e, score: sharedTags * 2 + sameCategory };
+  })
+  .filter(({ score }) => score > 0)
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 3)
+  .map(({ entry }) => entry);
 
 const postUrl = getPostUrl(post);
 const postUrlEn = await getPostUrlEn(post);

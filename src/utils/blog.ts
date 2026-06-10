@@ -365,7 +365,37 @@ export async function buildArticleJsonLd(
       "@id": `${siteConfig.siteUrl}/fr/about/#person`,
       name: post.data.author ?? "Le Gaucher",
       url: authorPageUrl,
+      sameAs: ["https://www.chess.com/member/le_gaucher"],
     },
+  };
+}
+
+export function buildPersonJsonLd(lang: "fr" | "en" | "pt-br" = "fr") {
+  const aboutUrl =
+    lang === "en"
+      ? `${siteConfig.siteUrl}/en/about/`
+      : lang === "pt-br"
+        ? `${siteConfig.siteUrl}/pt-br/about/`
+        : `${siteConfig.siteUrl}/fr/about/`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${siteConfig.siteUrl}/fr/about/#person`,
+    name: "Le Gaucher",
+    url: aboutUrl,
+    description:
+      lang === "en"
+        ? "Computer science student, chess player at 1,600 Elo, author of A Left-Hander's Blog."
+        : lang === "pt-br"
+          ? "Estudante de ciência da computação, enxadrista com 1.600 Elo, autor do Blog de um Canhoto."
+          : "Étudiant en informatique, joueur d'échecs à 1 600 Elo, auteur du Blog d'un Gaucher.",
+    knowsAbout:
+      lang === "en"
+        ? ["Chess", "Neuroscience", "Cognitive psychology", "Game theory", "Computer science"]
+        : lang === "pt-br"
+          ? ["Xadrez", "Neurociência", "Psicologia cognitiva", "Teoria dos jogos", "Ciência da computação"]
+          : ["Échecs", "Neurosciences", "Psychologie cognitive", "Théorie des jeux", "Informatique"],
+    sameAs: ["https://www.chess.com/member/le_gaucher"],
   };
 }
 

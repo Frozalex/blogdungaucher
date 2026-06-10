@@ -1,15 +1,18 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
 ---
 <BaseLayout
   title="À propos | Le_Gaucher, Blog d'un Gaucher"
   description="Qui est Le_Gaucher ? Étudiant en informatique, joueur d'échecs à 1 600 Elo, auteur d'un blog croisant neurosciences, psychologie et stratégie échiquéenne."
   canonicalPath="/fr/about/"
-  structuredData={buildBreadcrumbJsonLd([
-    { name : "Accueil", path : "/fr/" },
-    { name : "À propos", path : "/fr/about/" },
-  ])}
+  structuredData={[
+    buildBreadcrumbJsonLd([
+      { name : "Accueil", path : "/fr/" },
+      { name : "À propos", path : "/fr/about/" },
+    ]),
+    buildPersonJsonLd("fr"),
+  ]}
 >
   <article class="about-page">
     <img class="about-page__glyph" src="/images/logo.svg" alt="" aria-hidden="true" />

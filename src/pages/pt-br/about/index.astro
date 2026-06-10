@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
 import { PT_BR_LAUNCH_DATE } from "../../../data/site";
 
 if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/about/", 302);
@@ -12,10 +12,13 @@ if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/about/", 302);
   lang="pt-br"
   frPath="/fr/about/"
   enPath="/en/about/"
-  structuredData={buildBreadcrumbJsonLd([
-    { name: "Início", path: "/pt-br/" },
-    { name: "Sobre", path: "/pt-br/about/" },
-  ])}
+  structuredData={[
+    buildBreadcrumbJsonLd([
+      { name: "Início", path: "/pt-br/" },
+      { name: "Sobre", path: "/pt-br/about/" },
+    ]),
+    buildPersonJsonLd("pt-br"),
+  ]}
 >
   <article class="about-page">
     <img class="about-page__glyph" src="/images/logo.svg" alt="" aria-hidden="true" />

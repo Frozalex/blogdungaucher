@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
 ---
 <BaseLayout
   title="About | Le_Gaucher, A Left-Hander's Blog"
@@ -9,10 +9,13 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
   lang="en"
   frPath="/fr/about/"
   enPath="/en/about/"
-  structuredData={buildBreadcrumbJsonLd([
-    { name : "Home", path : "/en/" },
-    { name : "About", path : "/en/about/" },
-  ])}
+  structuredData={[
+    buildBreadcrumbJsonLd([
+      { name : "Home", path : "/en/" },
+      { name : "About", path : "/en/about/" },
+    ]),
+    buildPersonJsonLd("en"),
+  ]}
 >
   <article class="about-page">
     <img class="about-page__glyph" src="/images/logo.svg" alt="" aria-hidden="true" />
