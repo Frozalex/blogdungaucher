@@ -47,8 +47,16 @@ services:
       TIME_ZONE: "Europe/Paris"
       NOTIFY_TYPE: "none"
       LOW_INTERACTIVE: "false"
-    ports:
-      - "127.0.0.1:8080:8080"
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.remark42.rule=Host(`remark42.blogdungaucher.com`)
+      - traefik.http.routers.remark42.entrypoints=web,websecure
+      - traefik.http.routers.remark42.tls=true
+      - traefik.http.routers.remark42.tls.certresolver=mytlschallenge
+      - traefik.http.services.remark42.loadbalancer.server.port=8080
+    networks:
+      - default
+      - traefik_net
     volumes:
       - remark42_data:/srv/var
     restart: unless-stopped
@@ -89,3 +97,8 @@ volumes:
   ntfy_data:
   ntfy_cache:
   remark42_data:
+
+networks:
+  traefik_net:
+    external: true
+    name: n8n_default
