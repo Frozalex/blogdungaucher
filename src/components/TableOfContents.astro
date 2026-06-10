@@ -330,6 +330,17 @@ for (const h of headings) {
         if (isActive && l.closest(".toc-desktop")) activeLink = l;
       });
       syncActiveBar(desktopNav, activeLink);
+
+      // Auto-scroll du rail pour garder l'item actif visible
+      if (activeLink && desktopNav) {
+        const navRect  = desktopNav.getBoundingClientRect();
+        const linkRect = activeLink.getBoundingClientRect();
+        const isAbove  = linkRect.top < navRect.top + 32;
+        const isBelow  = linkRect.bottom > navRect.bottom - 32;
+        if (isAbove || isBelow) {
+          activeLink.scrollIntoView({ block: "nearest", behavior: "smooth" });
+        }
+      }
     };
 
     tocObserver = new IntersectionObserver(

@@ -17,6 +17,8 @@ import NewsletterCta from "../../../components/NewsletterCta.astro";
 import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleVideo from "../../../components/ArticleVideo.astro";
+import FocusMode from "../../../components/FocusMode.astro";
+import TextHighlight from "../../../components/TextHighlight.astro";
 
 import { categoryMap, categorySlugs, siteConfig } from "../../../data/site";
 import {
@@ -207,6 +209,10 @@ const otherPillars = categorySlugs
           </figure>
         )}
 
+        <div class="article-tools">
+          <FocusMode lang="fr" />
+        </div>
+
         <div class="toc-mobile-wrap">
           <TableOfContents headings={headings} mode="mobile" />
         </div>
@@ -248,6 +254,7 @@ const otherPillars = categorySlugs
         <ShareButtons title={post.data.title} url={absolutePostUrl} />
         <NewsletterCta />
         <Comments lang="fr" postId={postUrl} />
+        <TextHighlight lang="fr" />
 
       </div>
 
@@ -595,6 +602,12 @@ const otherPillars = categorySlugs
     display: grid;
     gap: 1rem;
     align-content: start;
+  }
+
+  .article-tools {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.75rem;
   }
 
   .toc-mobile-wrap {

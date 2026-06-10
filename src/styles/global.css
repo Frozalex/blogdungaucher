@@ -1155,3 +1155,26 @@ main[tabindex="-1"]:focus {
   display: none;
 }
 
+
+
+/* ── Mode focus lecture ─────────────────────────────────────────────────────
+   Masque navbar et footer pour une lecture immersive.
+   Transition douce pour ne pas brutaliser l'UI. */
+html.focus-mode .navbar {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+html.focus-mode .footer {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+html.focus-mode .article-aside {
+  opacity: 0.15;
+  transition: opacity 250ms ease;
+}
+html.focus-mode .article-aside:hover {
+  opacity: 1;
+}

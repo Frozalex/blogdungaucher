@@ -1,0 +1,176 @@
+---
+const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" };
+
+const t =
+  lang === "en"
+    ? { share: "Share", copy: "Copy", copied: "Copied!" }
+    : lang === "pt-br"
+      ? { share: "Compartilhar", copy: "Copiar", copied: "Copiado!" }
+      : { share: "Partager", copy: "Copier", copied: "Copié !" };
+---
+
+<div
+  id="highlight-popover"
+  class="hl-popover"
+  role="tooltip"
+  aria-hidden="true"
+  data-share={t.share}
+  data-copy={t.copy}
+  data-copied={t.copied}
+>
+  <button class="hl-btn hl-copy" aria-label={t.copy}>
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+    </svg>
+    <span>{t.copy}</span>
+  </button>
+  <div class="hl-sep"></div>
+  <button class="hl-btn hl-share-x" aria-label="Twitter / X">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+    </svg>
+  </button>
+</div>
+
+<style>
+  .hl-popover {
+    position: fixed;
+    z-index: 9000;
+    display: none;
+    align-items: center;
+    gap: 0;
+    padding: 0.2rem;
+    border-radius: var(--radius-pill);
+    background: var(--text-main, #1a1a1a);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(-100%);
+    white-space: nowrap;
+  }
+  .hl-popover.visible {
+    display: flex;
+    animation: hl-in 150ms var(--ease-out, cubic-bezier(0.22,1,0.36,1)) both;
+  }
+  @keyframes hl-in {
+    from { opacity: 0; transform: translateX(-50%) translateY(calc(-100% + 8px)); }
+    to   { opacity: 1; transform: translateX(-50%) translateY(-100%); }
+  }
+
+  .hl-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.32rem 0.65rem;
+    border-radius: var(--radius-pill);
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 120ms ease;
+  }
+  .hl-btn:hover {
+    background: rgba(255,255,255,0.12);
+  }
+  .hl-btn.success {
+    color: #6ee7b7;
+  }
+
+  .hl-sep {
+    width: 1px;
+    height: 1.1rem;
+    background: rgba(255,255,255,0.15);
+    flex-shrink: 0;
+  }
+</style>
+
+<script>
+  function initHighlight() {
+    const popover = document.getElementById("highlight-popover");
+    if (!popover) return;
+
+    const copyBtn  = popover.querySelector<HTMLButtonElement>(".hl-copy");
+    const shareBtn = popover.querySelector<HTMLButtonElement>(".hl-share-x");
+    const labelCopy   = popover.dataset.copy   ?? "Copier";
+    const labelCopied = popover.dataset.copied ?? "Copié !";
+
+    let currentText = "";
+    let hideTimer: ReturnType<typeof setTimeout> | null = null;
+
+    const show = (x: number, y: number, text: string) => {
+      currentText = text;
+      popover.style.left = `${x}px`;
+      popover.style.top  = `${y}px`;
+      popover.classList.add("visible");
+      popover.setAttribute("aria-hidden", "false");
+      if (hideTimer) clearTimeout(hideTimer);
+    };
+
+    const hide = () => {
+      popover.classList.remove("visible");
+      popover.setAttribute("aria-hidden", "true");
+      currentText = "";
+    };
+
+    const articleBody = document.querySelector<HTMLElement>(".article-body");
+    if (!articleBody) return;
+
+    document.addEventListener("selectionchange", () => {
+      const sel = window.getSelection();
+      const text = sel?.toString().trim() ?? "";
+
+      if (!text || text.length < 10) {
+        hideTimer = setTimeout(hide, 200);
+        return;
+      }
+
+      // Vérifier que la sélection est dans le corps de l'article
+      if (!sel?.anchorNode) return;
+      if (!articleBody.contains(sel.anchorNode)) {
+        hideTimer = setTimeout(hide, 200);
+        return;
+      }
+
+      try {
+        const range = sel.getRangeAt(0);
+        const rect  = range.getBoundingClientRect();
+        // position: fixed → coordonnées viewport (pas de scrollX/Y)
+        const x = rect.left + rect.width / 2;
+        const y = rect.top - 6;
+        show(x, y, text);
+      } catch {}
+    });
+
+    copyBtn?.addEventListener("click", async () => {
+      if (!currentText) return;
+      try {
+        await navigator.clipboard.writeText(`« ${currentText} »`);
+        const span = copyBtn.querySelector("span");
+        if (span) span.textContent = labelCopied;
+        copyBtn.classList.add("success");
+        setTimeout(() => {
+          if (span) span.textContent = labelCopy;
+          copyBtn.classList.remove("success");
+          hide();
+        }, 1500);
+      } catch {}
+    });
+
+    shareBtn?.addEventListener("click", () => {
+      if (!currentText) return;
+      const quote = encodeURIComponent(`« ${currentText} »\n\n${window.location.href}`);
+      window.open(`https://x.com/intent/tweet?text=${quote}`, "_blank", "noopener,noreferrer,width=560,height=400");
+      hide();
+    });
+
+    // Fermer si clic en dehors du popover
+    document.addEventListener("mousedown", (e) => {
+      if (!popover.contains(e.target as Node)) {
+        hideTimer = setTimeout(hide, 100);
+      }
+    });
+  }
+
+  document.addEventListener("astro:page-load", initHighlight);
+</script>

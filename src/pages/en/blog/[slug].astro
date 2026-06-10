@@ -12,6 +12,8 @@ import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
 import Comments from "../../../components/Comments.astro";
 import NewsletterCta from "../../../components/NewsletterCta.astro";
+import FocusMode from "../../../components/FocusMode.astro";
+import TextHighlight from "../../../components/TextHighlight.astro";
 
 import { categoryMap, categorySlugs, siteConfig } from "../../../data/site";
 import {
@@ -240,6 +242,10 @@ const otherPillars = categorySlugs
           </div>
         )}
 
+        <div class="article-tools">
+          <FocusMode lang="en" />
+        </div>
+
         <div class="toc-mobile-wrap">
           <TableOfContents headings={headings} mode="mobile" lang="en" />
         </div>
@@ -281,6 +287,7 @@ const otherPillars = categorySlugs
         <ShareButtons title={displayTitle} url={absolutePostUrl} />
         <NewsletterCta />
         <Comments lang="en" />
+        <TextHighlight lang="en" />
 
       </div>
 
@@ -553,6 +560,12 @@ const otherPillars = categorySlugs
   .article-body :global(img) { max-width: 100%; border-radius: var(--radius-sm); margin: 1rem 0; }
 
   .article-aside { position: sticky; top: 5rem; display: grid; gap: 1.5rem; }
+  .article-tools {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.75rem;
+  }
+
   .toc-mobile-wrap { display: none; }
 
   .aside-card {

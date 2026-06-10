@@ -1,0 +1,106 @@
+---
+const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" };
+
+const t =
+  lang === "en"
+    ? { enter: "Focus mode", exit: "Exit focus" }
+    : lang === "pt-br"
+      ? { enter: "Modo foco", exit: "Sair do foco" }
+      : { enter: "Mode lecture", exit: "Quitter" };
+---
+
+<button
+  id="focus-mode-btn"
+  class="focus-btn"
+  aria-label={t.enter}
+  title={t.enter}
+  data-label-enter={t.enter}
+  data-label-exit={t.exit}
+>
+  <svg class="icon-enter" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
+    <path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
+  </svg>
+  <svg class="icon-exit" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/>
+    <path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 21v-3a2 2 0 0 1 2-2h3"/>
+  </svg>
+  <span class="focus-btn__label">{t.enter}</span>
+</button>
+
+<style>
+  .focus-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    color: var(--text-dim);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
+    white-space: nowrap;
+  }
+  .focus-btn:hover {
+    border-color: var(--c, var(--green));
+    color: var(--c, var(--green));
+    background: color-mix(in srgb, var(--c, var(--green)) 6%, var(--surface));
+  }
+
+  .icon-exit { display: none; }
+
+  :global(.focus-mode) .icon-enter { display: none; }
+  :global(.focus-mode) .icon-exit { display: block; }
+
+  /* Bouton fixe en bas à droite quand le mode focus est actif */
+  :global(.focus-mode) .focus-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 9999;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    background: var(--surface);
+    border-color: var(--c, var(--green));
+    color: var(--c, var(--green));
+  }
+
+  @media (max-width: 900px) {
+    .focus-btn { display: none; }
+  }
+</style>
+
+<script>
+  function initFocusMode() {
+    const btn = document.getElementById("focus-mode-btn");
+    if (!btn) return;
+
+    const labelEnter = btn.dataset.labelEnter ?? "Mode lecture";
+    const labelExit = btn.dataset.labelExit ?? "Quitter";
+    const labelEl = btn.querySelector(".focus-btn__label");
+
+    const setFocus = (on: boolean) => {
+      document.documentElement.classList.toggle("focus-mode", on);
+      btn.setAttribute("aria-label", on ? labelExit : labelEnter);
+      if (labelEl) labelEl.textContent = on ? labelExit : labelEnter;
+      try { localStorage.setItem("focusMode", on ? "1" : "0"); } catch {}
+    };
+
+    btn.addEventListener("click", () => {
+      setFocus(!document.documentElement.classList.contains("focus-mode"));
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && document.documentElement.classList.contains("focus-mode")) {
+        setFocus(false);
+      }
+    });
+
+    // Ne pas restaurer le mode focus au chargement — on part toujours propre.
+    document.documentElement.classList.remove("focus-mode");
+  }
+
+  document.addEventListener("astro:page-load", initFocusMode);
+</script>
