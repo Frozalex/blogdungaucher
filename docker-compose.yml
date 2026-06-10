@@ -47,6 +47,7 @@ services:
       TIME_ZONE: "Europe/Paris"
       NOTIFY_TYPE: "none"
       LOW_INTERACTIVE: "false"
+      ALLOWED_HOSTS: "https://blogdungaucher.com,https://www.blogdungaucher.com"
     labels:
       - traefik.enable=true
       - traefik.http.routers.remark42.rule=Host(`remark42.blogdungaucher.com`)
