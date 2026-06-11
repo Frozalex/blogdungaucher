@@ -1,13 +1,17 @@
 /**
- * Envoie une notification ntfy pour chaque article dont publishDate = aujourd'hui.
+ * Envoie une notification pour chaque article dont publishDate = aujourd'hui.
+ * - ntfy : notification mobile/web via le serveur ntfy
+ * - Web Push : notification navigateur via le proxy newsletter
  *
  * Usage (post-déploiement ou manuellement) :
  *   node scripts/notify-ntfy.mjs
  *
- * Variables d'environnement requises (CI/CD secrets ou .env local) :
- *   NTFY_URL   — URL de base du serveur ntfy  ex. https://ntfy.blogdungaucher.com
- *   NTFY_TOKEN — token Bearer (ntfy user token add <username>)
- *   NTFY_TOPIC — sujet ntfy (défaut : "blog-gaucher")
+ * Variables d'environnement requises :
+ *   NTFY_URL        — ex. https://ntfy.blogdungaucher.com
+ *   NTFY_TOKEN      — token Bearer ntfy
+ *   NTFY_TOPIC      — sujet ntfy (défaut : "blog-gaucher")
+ *   PUSH_PROXY_URL  — URL du proxy push (ex. https://blogdungaucher.com/push)
+ *   PUSH_SEND_TOKEN — token Bearer pour /push/send
  */
 
 import fs   from "node:fs";
@@ -18,9 +22,11 @@ const __dirname    = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR  = path.join(__dirname, "..", "src", "content", "blog");
 const SITE_URL     = "https://blogdungaucher.com";
 
-const NTFY_URL   = process.env.NTFY_URL?.replace(/\/$/, "");
-const NTFY_TOPIC = process.env.NTFY_TOPIC ?? "blog-gaucher";
-const NTFY_TOKEN = process.env.NTFY_TOKEN;
+const NTFY_URL        = process.env.NTFY_URL?.replace(/\/$/, "");
+const NTFY_TOPIC      = process.env.NTFY_TOPIC ?? "blog-gaucher";
+const NTFY_TOKEN      = process.env.NTFY_TOKEN;
+const PUSH_PROXY_URL  = process.env.PUSH_PROXY_URL?.replace(/\/$/, "");
+const PUSH_SEND_TOKEN = process.env.PUSH_SEND_TOKEN;
 
 if (!NTFY_URL) {
   console.error("[ntfy] Variable NTFY_URL manquante. Ex : NTFY_URL=https://ntfy.blogdungaucher.com");
@@ -74,7 +80,8 @@ if (articles.length === 0) {
 for (const article of articles) {
   const url = `${SITE_URL}/fr/blog/${article.slug}/`;
 
-  const res = await fetch(`${NTFY_URL}/${NTFY_TOPIC}`, {
+  // ── ntfy (mobile app + ntfy web app) ──
+  const ntfyRes = await fetch(`${NTFY_URL}/${NTFY_TOPIC}`, {
     method: "POST",
     headers: {
       "Title":    article.title,
@@ -86,11 +93,34 @@ for (const article of articles) {
     body: article.excerpt || article.title,
   });
 
-  if (res.ok) {
+  if (ntfyRes.ok) {
     console.log(`[ntfy] Notifié : ${article.title}`);
   } else {
-    const detail = await res.text().catch(() => res.statusText);
-    console.error(`[ntfy] Erreur ${res.status} pour "${article.title}" : ${detail}`);
+    const detail = await ntfyRes.text().catch(() => ntfyRes.statusText);
+    console.error(`[ntfy] Erreur ${ntfyRes.status} pour "${article.title}" : ${detail}`);
     process.exit(1);
+  }
+
+  // ── Web Push (abonnés navigateur via le proxy) ──
+  if (PUSH_PROXY_URL && PUSH_SEND_TOKEN) {
+    const pushRes = await fetch(`${PUSH_PROXY_URL}/send`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${PUSH_SEND_TOKEN}`,
+      },
+      body: JSON.stringify({
+        title: article.title,
+        message: article.excerpt || article.title,
+        click: url,
+      }),
+    }).catch((e) => { console.warn("[push] fetch échoué :", e.message); return null; });
+
+    if (pushRes?.ok) {
+      const d = await pushRes.json().catch(() => ({}));
+      console.log(`[push] Envoyé à ${d.sent ?? "?"} abonné(s) (${d.expired ?? 0} expirés nettoyés)`);
+    } else if (pushRes) {
+      console.warn(`[push] Erreur ${pushRes.status} — notification navigateur non envoyée`);
+    }
   }
 }

@@ -1,0 +1,137 @@
+---
+const VAPID_KEY = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
+const pushEnabled = !!VAPID_KEY;
+---
+
+{pushEnabled && (
+  <div class="push-subscribe" id="push-subscribe-wrap">
+    <button
+      type="button"
+      id="push-subscribe-btn"
+      class="push-btn"
+      aria-label="Activer les notifications push"
+      data-vapid={VAPID_KEY}
+    >
+      <svg class="push-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+      </svg>
+      <span class="push-label" id="push-label">Notifications</span>
+    </button>
+  </div>
+)}
+
+<script>
+(function () {
+  const btn = document.getElementById("push-subscribe-btn");
+  const label = document.getElementById("push-label");
+  if (!btn || !label) return;
+  if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
+    document.getElementById("push-subscribe-wrap")?.remove();
+    return;
+  }
+
+  const VAPID = btn.dataset.vapid ?? "";
+  const PROXY = "/push";
+  const LS_KEY = "push_subscribed";
+
+  function urlBase64ToUint8Array(base64String) {
+    const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+    const base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");
+    const raw = atob(base64);
+    return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
+  }
+
+  function setState(subscribed) {
+    btn.classList.toggle("push-btn--active", subscribed);
+    label.textContent = subscribed ? "Notifié ✓" : "Notifications";
+    btn.title = subscribed ? "Se désabonner des notifications push" : "Recevoir une notification à chaque nouvel article";
+  }
+
+  // Restaurer l'état depuis localStorage
+  setState(localStorage.getItem(LS_KEY) === "1");
+
+  btn.addEventListener("click", async () => {
+    try {
+      const reg = await navigator.serviceWorker.ready;
+      const existing = await reg.pushManager.getSubscription();
+
+      if (existing) {
+        // Désabonnement
+        await existing.unsubscribe();
+        await fetch(`${PROXY}/unsubscribe`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ endpoint: existing.endpoint }),
+        }).catch(() => {});
+        localStorage.removeItem(LS_KEY);
+        setState(false);
+        return;
+      }
+
+      // Demande de permission
+      const permission = await Notification.requestPermission();
+      if (permission !== "granted") return;
+
+      // Abonnement push
+      const subscription = await reg.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: urlBase64ToUint8Array(VAPID),
+      });
+
+      // Envoi au proxy
+      const res = await fetch(`${PROXY}/subscribe`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(subscription.toJSON()),
+      });
+
+      if (res.ok) {
+        localStorage.setItem(LS_KEY, "1");
+        setState(true);
+      }
+    } catch (err) {
+      console.error("[push]", err);
+    }
+  });
+})();
+</script>
+
+<style>
+  .push-subscribe {
+    margin-top: 0.5rem;
+  }
+
+  .push-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-soft);
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
+  }
+
+  .push-btn:hover {
+    border-color: var(--green-border);
+    color: var(--green);
+  }
+
+  .push-btn--active {
+    border-color: var(--green-border);
+    background: color-mix(in srgb, var(--green-light) 60%, transparent);
+    color: var(--green);
+  }
+
+  .push-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+</style>

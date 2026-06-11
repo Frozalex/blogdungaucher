@@ -76,20 +76,27 @@ services:
       retries: 3
 
   # ── newsletter-proxy ─────────────────────────────────────────────────────
-  # Proxy minimaliste protégeant la clé Brevo côté serveur.
-  # Nginx reverse-proxie /newsletter/* → 127.0.0.1:3030 (dans le vhost principal).
+  # Proxy protégeant Brevo + gestionnaire d'abonnements Web Push.
+  # Nginx reverse-proxie /newsletter/* → 127.0.0.1:3030 (vhost principal).
+  # Nginx reverse-proxie /push/*       → 127.0.0.1:3030 (à ajouter dans nginx).
   newsletter-proxy:
-    image: node:20-alpine
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile
     container_name: newsletter-proxy
     working_dir: /app
-    command: node newsletter.mjs
     environment:
       BREVO_API_KEY: "${BREVO_API_KEY}"
       BREVO_LIST_ID: "${BREVO_LIST_ID:-2}"
       ALLOWED_ORIGIN: "${NEWSLETTER_ALLOWED_ORIGIN:-https://blogdungaucher.com}"
       PORT: "3030"
+      VAPID_PUBLIC_KEY:  "${PUBLIC_NTFY_VAPID_KEY}"
+      VAPID_PRIVATE_KEY: "${NTFY_VAPID_PRIVATE_KEY}"
+      PUSH_SEND_TOKEN:   "${PUSH_SEND_TOKEN}"
+      PUSH_DATA_DIR: "/app/data"
     volumes:
       - ./proxy/newsletter.mjs:/app/newsletter.mjs:ro
+      - push_data:/app/data
     ports:
       - "127.0.0.1:3030:3030"
     restart: unless-stopped
@@ -106,6 +113,7 @@ volumes:
   ntfy_data:
   ntfy_cache:
   remark42_data:
+  push_data:
 
 networks:
   traefik_net:

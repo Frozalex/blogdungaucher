@@ -1,6 +1,7 @@
 ---
 import { categoryMap, categorySlugs } from "../data/site";
 import NewsletterForm from "./NewsletterForm.astro";
+import PushSubscribe from "./PushSubscribe.astro";
 import { t, type Lang } from "../i18n/translations";
 
 interface Props {
@@ -46,6 +47,7 @@ const tt = (key: string, fallback: string) => {
         <NewsletterForm variant="footer" />
       </div>
 
+      <PushSubscribe />
       <a class="footer-contact" href="mailto:contact@blogdungaucher.com" data-t="footer.suggestTopic">{tt("footer.suggestTopic", "Proposer un sujet ou poser une question")}</a>
     </div>
 

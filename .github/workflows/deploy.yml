@@ -57,27 +57,47 @@ jobs:
           echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
           echo "title=$TITLE" >> "$GITHUB_OUTPUT"
 
-      - name: Push notification (ntfy)
+      - name: Push notification (ntfy + Web Push navigateur)
         if: steps.detect.outputs.new_article != ''
         env:
-          NTFY_URL:   ${{ secrets.NTFY_URL }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
-          ARTICLE_TITLE: ${{ steps.detect.outputs.title }}
-          ARTICLE_SLUG:  ${{ steps.detect.outputs.slug }}
+          NTFY_URL:        ${{ secrets.NTFY_URL }}
+          NTFY_TOPIC:      ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN:      ${{ secrets.NTFY_TOKEN }}
+          PUSH_PROXY_URL:  ${{ secrets.PUSH_PROXY_URL }}
+          PUSH_SEND_TOKEN: ${{ secrets.PUSH_SEND_TOKEN }}
+          ARTICLE_TITLE:   ${{ steps.detect.outputs.title }}
+          ARTICLE_SLUG:    ${{ steps.detect.outputs.slug }}
         run: |
           set -euo pipefail
-          if [ -z "${NTFY_URL:-}" ] || [ -z "${NTFY_TOKEN:-}" ]; then
-            echo "NTFY_URL ou NTFY_TOKEN absent ; notification ignorée."
-            exit 0
+          SLUG="${ARTICLE_SLUG}"
+          TITLE="${ARTICLE_TITLE:-Nouvel article}"
+          CLICK="https://blogdungaucher.com/fr/blog/${SLUG}/"
+
+          # ── ntfy ──
+          if [ -n "${NTFY_URL:-}" ] && [ -n "${NTFY_TOKEN:-}" ]; then
+            TOPIC="${NTFY_TOPIC:-blog-gaucher}"
+            curl -sS -f -X POST "${NTFY_URL}/${TOPIC}" \
+              -H "Authorization: Bearer ${NTFY_TOKEN}" \
+              -H "Title: ${TITLE}" \
+              -H "Click: ${CLICK}" \
+              -H "Tags: chess,left_fist" \
+              -d "Nouvel article publié sur Blog d'un Gaucher"
+            echo "[ntfy] Notification envoyée"
+          else
+            echo "[ntfy] NTFY_URL ou NTFY_TOKEN absent — ignoré"
           fi
-          TOPIC="${NTFY_TOPIC:-blog-gaucher}"
-          curl -sS -f -X POST "${NTFY_URL}/${TOPIC}" \
-            -H "Authorization: Bearer ${NTFY_TOKEN}" \
-            -H "Title: ${ARTICLE_TITLE}" \
-            -H "Click: https://blogdungaucher.com/fr/blog/${ARTICLE_SLUG}/" \
-            -H "Tags: chess,left_fist" \
-            -d "Nouvel article publié sur Blog d'un Gaucher"
+
+          # ── Web Push navigateur (proxy) ──
+          if [ -n "${PUSH_PROXY_URL:-}" ] && [ -n "${PUSH_SEND_TOKEN:-}" ]; then
+            curl -sS -X POST "${PUSH_PROXY_URL}/send" \
+              -H "Content-Type: application/json" \
+              -H "Authorization: Bearer ${PUSH_SEND_TOKEN}" \
+              -d "{\"title\":\"${TITLE}\",\"message\":\"Nouvel article publié sur Blog d'un Gaucher\",\"click\":\"${CLICK}\"}" \
+              && echo "[push] Notification navigateur envoyée" \
+              || echo "[push] Erreur proxy push (non bloquant)"
+          else
+            echo "[push] PUSH_PROXY_URL ou PUSH_SEND_TOKEN absent — ignoré"
+          fi
 
       - name: Programmer email newsletter (Brevo, H+1)
         if: steps.detect.outputs.new_article != ''
