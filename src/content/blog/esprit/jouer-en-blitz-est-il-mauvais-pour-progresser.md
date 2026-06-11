@@ -1,7 +1,7 @@
 ---
 title: "Jouer en blitz est-il vraiment mauvais pour progresser ?"
 excerpt: "« Le blitz, ça pourrit ton jeu. » C'est le consensus chez les coachs. Mais que disent les données et les top joueurs ? Le contre-point honnête."
-publishDate: "2027-02-11"
+publishDate: "2027-01-21"
 category: "esprit"
 featured: false
 featuredRank: 99
@@ -68,7 +68,7 @@ Quand il est bien utilisé, le blitz a des vertus réelles :
 
 **Intuition tactique.** Quand tu vois 50 fois la même structure d'attaque, tu finis par la « sentir » avant de la calculer. C'est cette intuition qui distingue les bons joueurs des autres.
 
-**Vitesse de décision.** À tous les niveaux, savoir prendre la décision « 90 % correcte en 5 secondes » plutôt que « 95 % correcte en 5 minutes » est précieux — surtout en zeitnot.
+**Vitesse de décision.** À tous les niveaux, savoir prendre la décision « 90 % correcte en 5 secondes » plutôt que « 95 % correcte en 5 minutes » est précieux, surtout en zeitnot.
 
 **Adaptabilité aux ouvertures variées.** En blitz, tu rencontres des centaines d'ouvertures différentes par semaine. Cela élargit ton répertoire de manière organique.
 
@@ -95,11 +95,11 @@ Voici une règle pratique pour intégrer le blitz dans ta progression :
 - **30 % maximum de blitz/bullet** dans ton temps d'échecs total.
 - **70 % de parties longues + étude + tactiques**.
 
-Si tu joues 1 heure d'échecs par jour, ça fait 20 minutes de blitz max, et 40 minutes pour le reste. C'est très peu — et c'est précisément le piège : le blitz est tellement addictif qu'il bouffe naturellement plus que sa part.
+Si tu joues 1 heure d'échecs par jour, ça fait 20 minutes de blitz max, et 40 minutes pour le reste. C'est très peu, et c'est précisément le piège : le blitz est tellement addictif qu'il bouffe naturellement plus que sa part.
 
 Concrètement, pour un joueur club qui veut progresser :
 
-1. **Une partie longue par semaine** (1h ou plus). En tournoi, en ligne, peu importe — mais cadence sérieuse.
+1. **Une partie longue par semaine** (1h ou plus). En tournoi, en ligne, peu importe, mais cadence sérieuse.
 2. **15-30 minutes de tactiques par jour** (puzzles).
 3. **20-30 minutes de blitz par jour**, *en mode apprentissage* (analyser une partie ou deux par session).
 4. **Étude d'ouvertures et de finales** : 30 min, 2-3 fois par semaine.
@@ -132,6 +132,6 @@ L'autoréflexion sur tes habitudes compte plus que la règle absolue. Le blitz n
 
 ## En résumé
 
-Le blitz n'est pas mauvais pour progresser — *l'usage déséquilibré* du blitz l'est. Les top joueurs en jouent énormément et progressent. La différence est qu'ils étudient en parallèle, jouent en classique régulièrement et analysent leurs blitz.
+Le blitz n'est pas mauvais pour progresser, *l'usage déséquilibré* du blitz l'est. Les top joueurs en jouent énormément et progressent. La différence est qu'ils étudient en parallèle, jouent en classique régulièrement et analysent leurs blitz.
 
-Pour un joueur club, la règle d'équilibre est 30 % blitz / 70 % autres formes de travail. Le bullet, lui, est principalement un divertissement, pas un outil de progression. Le vrai danger n'est jamais le format — c'est le mode dans lequel on joue : consommation passive ou apprentissage actif.
+Pour un joueur club, la règle d'équilibre est 30 % blitz / 70 % autres formes de travail. Le bullet, lui, est principalement un divertissement, pas un outil de progression. Le vrai danger n'est jamais le format, c'est le mode dans lequel on joue : consommation passive ou apprentissage actif.

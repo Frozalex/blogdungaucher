@@ -24,12 +24,12 @@ faq:
   - question: "Les enfants progressent-ils en maths grâce aux échecs ?"
     answer: "Légèrement, mais pas plus qu'avec d'autres activités structurées (musique, théâtre, jeux de stratégie). L'effet spécifique des échecs sur les maths est plus faible que ce que les médias affirment."
   - question: "Faut-il arrêter d'enseigner les échecs à l'école ?"
-    answer: "Non, mais en changeant le discours : pas pour augmenter l'intelligence, mais pour ce que les échecs apportent vraiment — un cadre pour apprendre à perdre, à se concentrer longtemps, et à analyser ses erreurs."
+    answer: "Non, mais en changeant le discours : pas pour augmenter l'intelligence, mais pour ce que les échecs apportent vraiment, un cadre pour apprendre à perdre, à se concentrer longtemps, et à analyser ses erreurs."
 ---
 
 Tu as déjà entendu cette phrase mille fois : « les échecs développent l'intelligence ». Sur les sites des fédérations, dans les programmes éducatifs, dans la bouche des parents qui inscrivent leur enfant au club. C'est devenu une évidence culturelle.
 
-Sauf que cette évidence ne résiste pas à un examen scientifique sérieux. Quand on regarde les méta-analyses contrôlées de la dernière décennie, l'effet réel des échecs sur l'intelligence générale est bien plus modeste — voire quasi nul — que ce que le discours public laisse entendre.
+Sauf que cette évidence ne résiste pas à un examen scientifique sérieux. Quand on regarde les méta-analyses contrôlées de la dernière décennie, l'effet réel des échecs sur l'intelligence générale est bien plus modeste, voire quasi nul, que ce que le discours public laisse entendre.
 
 Cet article n'est pas un réquisitoire contre les échecs. C'est un retour aux preuves, parce qu'un bon argument pour pratiquer les échecs n'a pas besoin de mythes pour tenir debout.
 
@@ -39,7 +39,7 @@ L'association entre échecs et intelligence est ancienne. Les premiers traités 
 
 Le passage à la science a commencé dans les années 1970-80. Les chercheurs voulaient mesurer ce que tout le monde semblait savoir : oui ou non, les échecs développent-ils des compétences cognitives transférables ?
 
-Les premières études ont trouvé des effets positifs. Mais elles avaient un problème méthodologique majeur : pas de groupe contrôle placebo. Si les enfants qui apprennent les échecs progressent en maths plus que ceux qui ne font rien, ce n'est pas forcément grâce aux échecs — ça peut être grâce au fait de faire *quelque chose* de structuré avec un adulte attentif.
+Les premières études ont trouvé des effets positifs. Mais elles avaient un problème méthodologique majeur : pas de groupe contrôle placebo. Si les enfants qui apprennent les échecs progressent en maths plus que ceux qui ne font rien, ce n'est pas forcément grâce aux échecs, ça peut être grâce au fait de faire *quelque chose* de structuré avec un adulte attentif.
 
 ## Ce que disent les méta-analyses récentes
 
@@ -51,11 +51,11 @@ En 2019, une seconde méta-analyse encore plus stricte a confirmé : les bénéf
 
 ## Le problème du transfert cognitif
 
-Pour comprendre pourquoi ce résultat n'est pas si surprenant, il faut parler du **transfert cognitif** — la capacité d'une compétence apprise dans un domaine à s'appliquer dans un autre.
+Pour comprendre pourquoi ce résultat n'est pas si surprenant, il faut parler du **transfert cognitif**, la capacité d'une compétence apprise dans un domaine à s'appliquer dans un autre.
 
 En psychologie cognitive, c'est l'un des phénomènes les mieux établis : *le transfert est rare et limité*. Un expert d'échecs reste un expert d'échecs. Sa mémoire spectaculaire des positions ne le rend pas meilleur que la moyenne pour mémoriser des numéros de téléphone, des visages, ou des listes de courses.
 
-Les travaux fondateurs de [Adriaan de Groot](https://fr.wikipedia.org/wiki/Adriaan_de_Groot) dans les années 1940-60 ont montré que les grands maîtres ont une mémoire des positions d'échecs hors-norme — mais uniquement pour des positions « logiques », tirées de vraies parties. Sur des positions aléatoires (pièces placées au hasard), leur mémoire redevient ordinaire.
+Les travaux fondateurs de [Adriaan de Groot](https://fr.wikipedia.org/wiki/Adriaan_de_Groot) dans les années 1940-60 ont montré que les grands maîtres ont une mémoire des positions d'échecs hors-norme, mais uniquement pour des positions « logiques », tirées de vraies parties. Sur des positions aléatoires (pièces placées au hasard), leur mémoire redevient ordinaire.
 
 Autrement dit : ce que les échecs développent, ce sont des compétences *spécifiques* aux échecs. La généralisation est l'exception.
 
@@ -65,7 +65,7 @@ Une autre explication des résultats positifs publiés est ce qu'on appelle l'**
 
 Dans les études bien contrôlées (avec un groupe qui fait autre chose mais avec la même intensité et le même encadrement), l'effet spécifique des échecs sur la cognition générale devient indistinguable du bruit statistique.
 
-Cela ne veut pas dire que les enfants qui jouent aux échecs « ne progressent pas ». Ils progressent — mais comme ils progresseraient avec n'importe quelle activité cognitive structurée. Le mérite n'est pas aux échecs, il est au fait d'apprendre quelque chose d'exigeant avec rigueur.
+Cela ne veut pas dire que les enfants qui jouent aux échecs « ne progressent pas ». Ils progressent, mais comme ils progresseraient avec n'importe quelle activité cognitive structurée. Le mérite n'est pas aux échecs, il est au fait d'apprendre quelque chose d'exigeant avec rigueur.
 
 ## Ce que les échecs développent vraiment
 
@@ -76,7 +76,7 @@ Soyons honnêtes : dire que les échecs n'augmentent pas le QI ne veut pas dire 
 - **Anticipation et planification** : envisager plusieurs coups d'avance, modéliser les conséquences. Cette compétence se transfère mal à d'autres domaines, mais elle s'affine au sein du jeu.
 - **Gestion de la défaite** : apprendre à perdre régulièrement et à analyser ses erreurs. C'est probablement le bénéfice le plus transférable, parce qu'il est émotionnel autant que cognitif.
 
-Ce dernier point est central. Les échecs ne fabriquent pas des cerveaux plus puissants. Ils fabriquent des joueurs qui ont appris à encaisser, à analyser, à recommencer. Ça, c'est précieux — et c'est différent.
+Ce dernier point est central. Les échecs ne fabriquent pas des cerveaux plus puissants. Ils fabriquent des joueurs qui ont appris à encaisser, à analyser, à recommencer. Ça, c'est précieux, et c'est différent.
 
 ## Pourquoi le mythe persiste
 
@@ -84,9 +84,9 @@ Si la science est si claire, pourquoi la croyance reste-t-elle aussi forte ? Plu
 
 D'abord, les fédérations et les écoles d'échecs ont intérêt à promouvoir ce récit. C'est leur argument de vente le plus puissant auprès des parents.
 
-Ensuite, le grand public confond corrélation et causalité. Les bons joueurs d'échecs sont en moyenne plus intelligents que la population générale — mais c'est parce que les gens intelligents s'orientent plus volontiers vers les échecs, pas parce que les échecs les ont rendus intelligents.
+Ensuite, le grand public confond corrélation et causalité. Les bons joueurs d'échecs sont en moyenne plus intelligents que la population générale, mais c'est parce que les gens intelligents s'orientent plus volontiers vers les échecs, pas parce que les échecs les ont rendus intelligents.
 
-Enfin, l'idée est trop séduisante pour mourir. « Mon enfant joue aux échecs, donc il développe son cerveau » est un récit confortable. Le récit alternatif — « mon enfant joue aux échecs, et c'est une belle activité en soi » — est moins vendeur.
+Enfin, l'idée est trop séduisante pour mourir. « Mon enfant joue aux échecs, donc il développe son cerveau » est un récit confortable. Le récit alternatif, « mon enfant joue aux échecs, et c'est une belle activité en soi », est moins vendeur.
 
 ## Que faire de tout ça
 
@@ -100,4 +100,4 @@ Ces qualités-là ne sont pas mesurables au QI. Elles sont précieuses pour d'au
 
 Les échecs ne rendent pas plus intelligent au sens où on l'entend communément. Les méta-analyses récentes le montrent : l'effet spécifique sur la cognition générale est faible voire nul une fois les biais contrôlés. Le transfert cognitif d'un domaine à un autre est rare en psychologie, et les échecs ne font pas exception.
 
-Mais ils développent des compétences réelles — concentration, anticipation, gestion de la défaite — qui sont précieuses dans leur propre droit. Le vrai bénéfice est moral et émotionnel autant que cognitif. C'est largement suffisant comme argument.
+Mais ils développent des compétences réelles, concentration, anticipation, gestion de la défaite, qui sont précieuses dans leur propre droit. Le vrai bénéfice est moral et émotionnel autant que cognitif. C'est largement suffisant comme argument.

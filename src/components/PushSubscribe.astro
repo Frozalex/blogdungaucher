@@ -22,10 +22,12 @@ const pushEnabled = !!VAPID_KEY;
 )}
 
 <script>
-(function () {
+function initPushSubscribe() {
   const btn = document.getElementById("push-subscribe-btn");
   const label = document.getElementById("push-label");
-  if (!btn || !label) return;
+  if (!btn || !label || btn.dataset.bound === "1") return;
+  btn.dataset.bound = "1";
+
   if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
     document.getElementById("push-subscribe-wrap")?.remove();
     return;
@@ -42,22 +44,29 @@ const pushEnabled = !!VAPID_KEY;
     return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
   }
 
-  function setState(subscribed) {
-    btn.classList.toggle("push-btn--active", subscribed);
-    label.textContent = subscribed ? "Notifié ✓" : "Notifications";
-    btn.title = subscribed ? "Se désabonner des notifications push" : "Recevoir une notification à chaque nouvel article";
+  function setState(state) {
+    btn.disabled = state === "loading";
+    btn.classList.toggle("push-btn--active", state === "on");
+    btn.classList.toggle("push-btn--error", state === "error");
+    if (state === "on")      label.textContent = "Notifié ✓";
+    else if (state === "off") label.textContent = "Notifications";
+    else if (state === "loading") label.textContent = "…";
+    else if (state === "error")   label.textContent = "Erreur";
+    btn.title = state === "on"
+      ? "Cliquer pour se désabonner"
+      : "Recevoir une notification à chaque nouvel article";
   }
 
-  // Restaurer l'état depuis localStorage
-  setState(localStorage.getItem(LS_KEY) === "1");
+  // État initial depuis localStorage
+  setState(localStorage.getItem(LS_KEY) === "1" ? "on" : "off");
 
   btn.addEventListener("click", async () => {
+    setState("loading");
     try {
       const reg = await navigator.serviceWorker.ready;
       const existing = await reg.pushManager.getSubscription();
 
       if (existing) {
-        // Désabonnement
         await existing.unsubscribe();
         await fetch(`${PROXY}/unsubscribe`, {
           method: "POST",
@@ -65,21 +74,21 @@ const pushEnabled = !!VAPID_KEY;
           body: JSON.stringify({ endpoint: existing.endpoint }),
         }).catch(() => {});
         localStorage.removeItem(LS_KEY);
-        setState(false);
+        setState("off");
         return;
       }
 
-      // Demande de permission
       const permission = await Notification.requestPermission();
-      if (permission !== "granted") return;
+      if (permission !== "granted") {
+        setState("off");
+        return;
+      }
 
-      // Abonnement push
       const subscription = await reg.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey: urlBase64ToUint8Array(VAPID),
       });
 
-      // Envoi au proxy
       const res = await fetch(`${PROXY}/subscribe`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -88,13 +97,22 @@ const pushEnabled = !!VAPID_KEY;
 
       if (res.ok) {
         localStorage.setItem(LS_KEY, "1");
-        setState(true);
+        setState("on");
+      } else {
+        console.error("[push] proxy error", res.status);
+        setState("error");
+        setTimeout(() => setState("off"), 3000);
       }
     } catch (err) {
       console.error("[push]", err);
+      setState("error");
+      setTimeout(() => setState("off"), 3000);
     }
   });
-})();
+}
+
+document.addEventListener("astro:page-load", initPushSubscribe);
+initPushSubscribe();
 </script>
 
 <style>
@@ -118,15 +136,25 @@ const pushEnabled = !!VAPID_KEY;
     transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
   }
 
-  .push-btn:hover {
+  .push-btn:hover:not(:disabled) {
     border-color: var(--green-border);
     color: var(--green);
+  }
+
+  .push-btn:disabled {
+    cursor: wait;
+    opacity: 0.6;
   }
 
   .push-btn--active {
     border-color: var(--green-border);
     background: color-mix(in srgb, var(--green-light) 60%, transparent);
     color: var(--green);
+  }
+
+  .push-btn--error {
+    border-color: #c0392b;
+    color: #c0392b;
   }
 
   .push-icon {

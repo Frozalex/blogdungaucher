@@ -12,7 +12,7 @@ seoTitle: "Les échecs sont-ils un sport ? Le débat tranché par la science"
 seoDescription: "Reconnu par le CIO mais contesté par le grand public, le statut sportif des échecs interroge. Physiologie, droit, sociologie : ce que dit la recherche."
 keyTakeaways:
   - "Le CIO reconnaît les échecs comme sport depuis 1999, mais ils restent absents des Jeux olympiques d'été."
-  - "Pendant un tournoi long, un joueur consomme jusqu'à 6 000 kcal par jour — comparable à un marathonien."
+  - "Pendant un tournoi long, un joueur consomme jusqu'à 6 000 kcal par jour, comparable à un marathonien."
   - "La fréquence cardiaque d'un joueur en partie classique peut dépasser 160 bpm, équivalente à celle d'un sprinteur."
   - "La définition juridique du sport varie selon les pays : la France le reconnaît partiellement, l'Allemagne pas du tout."
   - "Le vrai débat n'est pas physiologique mais culturel : un sport doit-il nécessairement être physique ?"
@@ -102,7 +102,7 @@ L'arrivée massive du streaming d'échecs (Chess.com, Lichess, Twitch) a aussi m
 
 ## Verdict : un sport, mais pas comme les autres
 
-Si on accepte une définition large et raisonnée du sport — une activité compétitive structurée, qui demande un entraînement régulier, qui produit une fatigue physiologique mesurable et qui se déroule selon des règles formelles — alors les échecs sont sans ambiguïté un sport.
+Si on accepte une définition large et raisonnée du sport, une activité compétitive structurée, qui demande un entraînement régulier, qui produit une fatigue physiologique mesurable et qui se déroule selon des règles formelles, alors les échecs sont sans ambiguïté un sport.
 
 Mais ils sont aussi un jeu, un art, une discipline intellectuelle. Ces catégories ne sont pas exclusives. Le sport moderne intègre déjà des disciplines hybrides : la voile est un sport et une science de la météo, l'équitation est un sport et un dialogue inter-espèces, le tir est un sport et un exercice de contrôle de soi.
 

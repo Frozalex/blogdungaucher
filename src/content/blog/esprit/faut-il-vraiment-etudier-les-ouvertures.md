@@ -29,7 +29,7 @@ faq:
 
 C'est devenu un mantra dans tous les blogs et chaînes YouTube d'échecs : « n'étudie pas les ouvertures, travaille les tactiques et les finales ». Le conseil est si répandu qu'il est devenu un dogme. Et comme tous les dogmes, il est *partiellement* vrai et *partiellement* faux.
 
-Cet article ne dit pas le contraire — il dit : *ça dépend du niveau*. Et pour beaucoup de joueurs entre 1 600 et 2 200, le conseil dominant est mal calibré. Voici pourquoi.
+Cet article ne dit pas le contraire, il dit : *ça dépend du niveau*. Et pour beaucoup de joueurs entre 1 600 et 2 200, le conseil dominant est mal calibré. Voici pourquoi.
 
 ## D'où vient le conseil dominant
 
@@ -37,7 +37,7 @@ L'argument classique est solide : en dessous de 1 200-1 500 Elo, les parties se 
 
 Dans ce contexte, oui : étudier les ouvertures est inefficace. La marginalité gagnée n'est jamais activée parce que les bourdes en milieu de partie l'écrasent.
 
-C'est ce que disent Magnus Carlsen, Daniel Naroditsky, Hikaru Nakamura quand ils s'adressent au grand public. Et ils ont raison — pour leur public majoritaire.
+C'est ce que disent Magnus Carlsen, Daniel Naroditsky, Hikaru Nakamura quand ils s'adressent au grand public. Et ils ont raison, pour leur public majoritaire.
 
 Mais ce conseil suppose que tu sois dans cette zone. Si tu n'y es plus, la règle change.
 
@@ -60,7 +60,7 @@ Le malentendu vient souvent de là. Beaucoup de joueurs imaginent que « étudie
 Étudier une ouverture sérieusement, c'est comprendre :
 
 - **Les plans typiques** : où vont les pièces, où se jouent les ruptures, quel côté on attaque.
-- **Les structures de pions** : isolés, doublés, chaînes — chaque structure crée des plans différents.
+- **Les structures de pions** : isolés, doublés, chaînes, chaque structure crée des plans différents.
 - **Les transpositions** : quelles autres ouvertures peuvent y mener.
 - **Les ressources tactiques récurrentes** : les coups qui reviennent souvent (sacrifice sur f7, manœuvre Bc1-g5, etc.).
 

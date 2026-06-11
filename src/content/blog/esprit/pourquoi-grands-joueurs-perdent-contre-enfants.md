@@ -29,7 +29,7 @@ faq:
 
 Le scénario revient régulièrement dans les tournois : un grand maître international, peut-être 2 600 Elo, s'assoit face à un enfant de 11 ans noté 2 100. Sur le papier, c'est une exécution annoncée. Et pourtant, deux heures plus tard, l'enfant a gagné.
 
-Ce genre de scène choque. Elle alimente les vidéos virales et les threads X. Mais pour qui connaît un peu la psychologie du jeu, elle n'a rien d'un accident statistique. C'est le résultat prévisible d'un ensemble d'asymétries — cognitives, émotionnelles, tactiques — que l'écart Elo ne capture qu'imparfaitement.
+Ce genre de scène choque. Elle alimente les vidéos virales et les threads X. Mais pour qui connaît un peu la psychologie du jeu, elle n'a rien d'un accident statistique. C'est le résultat prévisible d'un ensemble d'asymétries, cognitives, émotionnelles, tactiques, que l'écart Elo ne capture qu'imparfaitement.
 
 ## L'écart Elo et ses limites
 
@@ -47,11 +47,11 @@ Un enfant fort a souvent grandi avec un moteur d'analyse comme Stockfish. Son ce
 
 Résultat : il joue des coups que le GM trouve « bizarres », parfois objectivement excellents selon le moteur, mais étrangers au répertoire stratégique humain. Le GM se retrouve à devoir calculer concrètement à partir d'une position inconnue, sans pouvoir s'appuyer sur ses années d'expérience.
 
-C'est exactement la situation où l'avantage Elo s'érode. L'expérience ne sert plus, seul le calcul brut compte — et là, l'enfant peut être à parité.
+C'est exactement la situation où l'avantage Elo s'érode. L'expérience ne sert plus, seul le calcul brut compte, et là, l'enfant peut être à parité.
 
 ## La fatigue cognitive asymétrique
 
-Une autre asymétrie sous-estimée concerne la fatigue. Les tournois sérieux durent 4 à 9 jours, avec une à deux parties longues par jour. Au fil des rondes, la précision tactique baisse pour tout le monde — mais pas au même rythme.
+Une autre asymétrie sous-estimée concerne la fatigue. Les tournois sérieux durent 4 à 9 jours, avec une à deux parties longues par jour. Au fil des rondes, la précision tactique baisse pour tout le monde, mais pas au même rythme.
 
 Les études en neurosciences du sport intellectuel montrent que la fatigue mentale affecte d'abord les fonctions exécutives élaborées (planification, contrôle inhibiteur, mémoire de travail), avant d'atteindre les automatismes tactiques.
 
@@ -75,7 +75,7 @@ L'enfant, lui, n'a aucune de ces pressions. Il joue librement. Il n'a rien à pe
 
 Un autre paramètre concret : les enfants forts choisissent souvent des ouvertures tranchantes, désuètes ou peu explorées au plus haut niveau, justement parce qu'ils savent que c'est là que leur adversaire adulte est le moins préparé.
 
-Un GM a sa bibliothèque d'ouvertures testée des dizaines de fois. Si l'enfant le tire dans une variante atypique — un gambit oublié, une structure rare — l'adulte se retrouve à devoir « réfléchir » dès le coup 5, là où il pensait jouer en pilote automatique.
+Un GM a sa bibliothèque d'ouvertures testée des dizaines de fois. Si l'enfant le tire dans une variante atypique, un gambit oublié, une structure rare, l'adulte se retrouve à devoir « réfléchir » dès le coup 5, là où il pensait jouer en pilote automatique.
 
 Les premières erreurs viennent souvent là : on perd 10 minutes au coup 6, on prend une décision peu naturelle au coup 10, et la position est subtilement perdue avant le milieu de partie.
 
@@ -83,7 +83,7 @@ Les premières erreurs viennent souvent là : on perd 10 minutes au coup 6, on p
 
 Sur Lichess et Chess.com, les bases de données permettent désormais de quantifier ces phénomènes. Quelques chiffres parlants :
 
-- Dans les parties classiques entre 2 600+ et 2 100, le 2 100 gagne en moyenne 6-8 % des parties — légèrement au-dessus de la prédiction Elo (≈ 5 %).
+- Dans les parties classiques entre 2 600+ et 2 100, le 2 100 gagne en moyenne 6-8 % des parties, légèrement au-dessus de la prédiction Elo (≈ 5 %).
 - Quand le 2 100 est un junior de moins de 14 ans, ce chiffre grimpe à 10-13 %.
 - En fin de tournoi (rondes 6+), l'écart se réduit encore : 12-16 % de victoires pour le junior.
 
