@@ -1,5 +1,6 @@
 import { makeProject } from "@motion-canvas/core";
 
+import blogTeaser from "./scenes/blog-teaser?scene";
 import summaryEchecsEtMemoire from "./scenes/summary-echecs-et-memoire?scene";
 
 /**
@@ -10,6 +11,6 @@ import summaryEchecsEtMemoire from "./scenes/summary-echecs-et-memoire?scene";
  * l'importer ici, et l'ajouter au tableau `scenes`.
  */
 export default makeProject({
-  scenes: [summaryEchecsEtMemoire],
+  scenes: [blogTeaser, summaryEchecsEtMemoire],
   experimentalFeatures: false,
 });
