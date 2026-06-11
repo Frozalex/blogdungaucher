@@ -1,7 +1,7 @@
 ---
 title: "Échecs vs Scrabble : deux exigences cognitives très différentes"
 excerpt: "Tactique pure d'un côté, vocabulaire et combinaisons de l'autre. Comparaison cognitive entre deux jeux que tout oppose sauf l'image de jeu intellectuel."
-publishDate: "2027-02-02"
+publishDate: "2027-02-01"
 category: "esprit"
 featured: false
 featuredRank: 99

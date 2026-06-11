@@ -1,7 +1,7 @@
 ---
 title: "Échecs vs poker : quelle stratégie est la plus complexe ?"
 excerpt: "Aux échecs, tout est visible. Au poker, presque rien. Cette différence change-t-elle la nature de la stratégie ? Le comparatif complet entre information parfaite et incertitude radicale."
-publishDate: "2027-01-26"
+publishDate: "2027-01-25"
 category: "esprit"
 featured: false
 featuredRank: 99

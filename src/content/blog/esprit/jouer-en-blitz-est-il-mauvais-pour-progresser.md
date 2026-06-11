@@ -1,7 +1,7 @@
 ---
 title: "Jouer en blitz est-il vraiment mauvais pour progresser ?"
 excerpt: "« Le blitz, ça pourrit ton jeu. » C'est le consensus chez les coachs. Mais que disent les données et les top joueurs ? Le contre-point honnête."
-publishDate: "2027-02-12"
+publishDate: "2027-02-11"
 category: "esprit"
 featured: false
 featuredRank: 99

@@ -1,7 +1,7 @@
 ---
 title: "Faut-il vraiment étudier les ouvertures ? Le contre-argument"
 excerpt: "Tous les coachs disent la même chose : « ne perds pas de temps sur les ouvertures, travaille la finale ». Mais cette règle est-elle vraie pour tous les niveaux ? Le contre-argument."
-publishDate: "2027-01-15"
+publishDate: "2027-01-14"
 category: "esprit"
 featured: false
 featuredRank: 99

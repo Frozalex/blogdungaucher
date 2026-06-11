@@ -1,7 +1,7 @@
 ---
 title: "Échecs vs philosophie : deux manières de penser stratégiquement"
 excerpt: "On compare souvent les échecs à un combat, à la guerre, à un sport. On les compare rarement à la philosophie — pourtant les deux disciplines partagent un rapport étroit à la pensée structurée."
-publishDate: "2027-02-16"
+publishDate: "2026-06-04"
 category: "societe"
 featured: false
 featuredRank: 99

@@ -1,7 +1,7 @@
 ---
 title: "Échecs vs jeux vidéo : quel impact sur le cerveau ?"
 excerpt: "On oppose souvent les échecs « bons pour la tête » aux jeux vidéo « toxiques ». La science est beaucoup plus nuancée. Comparatif honnête des effets cognitifs des deux activités."
-publishDate: "2027-01-29"
+publishDate: "2027-01-28"
 category: "science"
 featured: false
 featuredRank: 99
