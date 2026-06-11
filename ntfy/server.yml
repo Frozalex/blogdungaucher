@@ -32,9 +32,8 @@ attachment-expiry-duration: "3h"
 # ── Derrière un reverse proxy ──────────────────────────────────────────────────
 behind-proxy: true
 
-# ── Web Push (décommenter après avoir généré des clés VAPID) ───────────────────
-# Génération : docker compose exec ntfy ntfy webpush keys
-# web-push-public-key:  ""
-# web-push-private-key: ""
-# web-push-file:        "/var/lib/ntfy/webpush.db"
-# web-push-email-address: "contact@blogdungaucher.com"
+# ── Web Push ───────────────────────────────────────────────────────────────────
+web-push-public-key: "BFGcMI-3WpqTBzlWowwN4Jgua3Bpy3Zdh3G3rJBrRCoNM5Piny55RpnqjhZZdadPZR6H79BD2XvktBRxNczAj4I"
+web-push-private-key: "ps6nvSU55N7MpJXmpsUWNw6farS30xlRXtwL3r3LzMk"
+web-push-file: "/var/cache/ntfy/webpush.db"
+web-push-email-address: "contact@blogdungaucher.com"
