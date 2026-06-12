@@ -406,11 +406,15 @@ const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
         }
 
         function urlBase64ToUint8Array(base64String) {
-          const clean = base64String.replace(/[^A-Za-z0-9\-_]/g, "");
-          const padding = "=".repeat((4 - (clean.length % 4)) % 4);
-          const base64 = (clean + padding).replace(/-/g, "+").replace(/_/g, "/");
-          const raw = atob(base64);
-          return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
+          try {
+            const clean = base64String.replace(/[^A-Za-z0-9+/=_-]/g, "");
+            const padding = "=".repeat((4 - (clean.length % 4)) % 4);
+            const base64 = (clean + padding).replace(/-/g, "+").replace(/_/g, "/");
+            const raw = atob(base64);
+            return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
+          } catch (_) {
+            return null;
+          }
         }
 
         /** ntfy Web Push : abonne le navigateur au topic ntfy via PushManager (VAPID). */
@@ -421,9 +425,11 @@ const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
           try {
             const reg = await navigator.serviceWorker.ready;
             if (await reg.pushManager.getSubscription()) return; // déjà abonné
+            const serverKey = urlBase64ToUint8Array(vapidKey);
+            if (!serverKey) return;
             const sub = await reg.pushManager.subscribe({
               userVisibleOnly: true,
-              applicationServerKey: urlBase64ToUint8Array(vapidKey),
+              applicationServerKey: serverKey,
             });
             const url   = (globalThis.__NTFY_URL__   || "").replace(/\/$/, "");
             const topic = (globalThis.__NTFY_TOPIC__ || "blog-gaucher").trim();

@@ -43,11 +43,15 @@ function initPushSubscribe() {
   }
 
   function urlBase64ToUint8Array(base64String) {
-    const clean = base64String.replace(/[^A-Za-z0-9\-_]/g, "");
-    const padding = "=".repeat((4 - (clean.length % 4)) % 4);
-    const base64 = (clean + padding).replace(/-/g, "+").replace(/_/g, "/");
-    const raw = atob(base64);
-    return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
+    try {
+      const clean = base64String.replace(/[^A-Za-z0-9+/=_-]/g, "");
+      const padding = "=".repeat((4 - (clean.length % 4)) % 4);
+      const base64 = (clean + padding).replace(/-/g, "+").replace(/_/g, "/");
+      const raw = atob(base64);
+      return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
+    } catch (_) {
+      return null;
+    }
   }
 
   function setState(state) {
@@ -90,9 +94,14 @@ function initPushSubscribe() {
         return;
       }
 
+      const serverKey = urlBase64ToUint8Array(VAPID);
+      if (!serverKey) {
+        document.getElementById("push-subscribe-wrap")?.remove();
+        return;
+      }
       const subscription = await reg.pushManager.subscribe({
         userVisibleOnly: true,
-        applicationServerKey: urlBase64ToUint8Array(VAPID),
+        applicationServerKey: serverKey,
       });
 
       const res = await fetch(`${PROXY}/subscribe`, {
