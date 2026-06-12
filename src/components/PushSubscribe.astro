@@ -43,10 +43,9 @@ function initPushSubscribe() {
   }
 
   function urlBase64ToUint8Array(base64String) {
-    const trimmed = base64String.trim();
-    const padding = "=".repeat((4 - (trimmed.length % 4)) % 4);
-    const base64 = (trimmed + padding).replace(/-/g, "+").replace(/_/g, "/");
-    console.log("[push] VAPID len=" + trimmed.length + " preview=" + trimmed.slice(0, 8) + "..." + trimmed.slice(-4));
+    const clean = base64String.replace(/[^A-Za-z0-9\-_]/g, "");
+    const padding = "=".repeat((4 - (clean.length % 4)) % 4);
+    const base64 = (clean + padding).replace(/-/g, "+").replace(/_/g, "/");
     const raw = atob(base64);
     return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
   }

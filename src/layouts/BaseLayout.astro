@@ -406,9 +406,9 @@ const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
         }
 
         function urlBase64ToUint8Array(base64String) {
-          const trimmed = base64String.trim();
-          const padding = "=".repeat((4 - (trimmed.length % 4)) % 4);
-          const base64 = (trimmed + padding).replace(/-/g, "+").replace(/_/g, "/");
+          const clean = base64String.replace(/[^A-Za-z0-9\-_]/g, "");
+          const padding = "=".repeat((4 - (clean.length % 4)) % 4);
+          const base64 = (clean + padding).replace(/-/g, "+").replace(/_/g, "/");
           const raw = atob(base64);
           return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
         }
