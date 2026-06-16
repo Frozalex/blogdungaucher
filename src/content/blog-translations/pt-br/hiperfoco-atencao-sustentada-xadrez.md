@@ -129,6 +129,12 @@ O hiperfoco se gerencia mais do que se treina. Alguns protocolos:
 
 **Recuperar-se depois.** Uma sessão longa de hiperfoco merece um protocolo de recuperação: água, carboidratos, caminhada, sono se possível. Não encadear diretamente em outra tarefa cognitiva intensa.
 
+## TDAH e educação: pesquisa em São Paulo
+
+São Paulo concentra pesquisas sobre o impacto do xadrez no desenvolvimento cognitivo de alunos com TDAH. Estudos em escola mostram que o xadrez melhora o foco e o comportamento escolar das crianças. A educação com xadrez tem base em pesquisa científica: o jogo estimula o desenvolvimento de habilidades cognitivas essenciais.
+
+O desenvolvimento das crianças com TDAH melhora com a educação pelo xadrez. Pesquisas em São Paulo documentam que a prática em escolas é eficaz para alunos com déficit de atenção, melhorando foco e desempenho escolar.
+
 ## O regime certo para cada cadência
 
 - **Partida clássica (2h+ por jogador).** Atenção sustentada. O hiperfoco é um risco (perda do tempo, cegueira periférica). Usar apenas em flashes muito breves nos momentos táticos agudos.

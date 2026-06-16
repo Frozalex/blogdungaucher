@@ -88,6 +88,20 @@ O [jogo da velha](https://pt.wikipedia.org/wiki/Jogo_da_velha) é nulo sob jogo 
 
 O [xadrez](https://pt.wikipedia.org/wiki/Xadrez) permanece em aberto. O [Go](https://pt.wikipedia.org/wiki/Go_(jogo)) também. A resolução completa desses jogos permanece fora de alcance, não em princípio (Zermelo garante que uma resposta existe), mas na prática (a complexidade combinatória é demasiado elevada).
 
+## O contexto axiomático: teoria dos conjuntos e teoria dos jogos
+
+O teorema de Zermelo sobre o xadrez não é isolado, ele emerge do projeto científico mais amplo de Zermelo na teoria dos conjuntos. Zermelo é principalmente conhecido pelos axiomas de Zermelo-Fraenkel, que são também chamados os axiomas ZF. Esses axiomas representam hoje o fundamento padrão de quase toda a matemática.
+
+Um axioma, na lógica matemática, é uma afirmação aceita como ponto de partida sem demonstração. Um sistema axiomático reúne axiomas a partir dos quais todos os teoremas são derivados por regras de inferência. Os axiomas de Zermelo incluem o axioma da extensionalidade, o axioma do par, o axioma da união, o axioma do conjunto das partes, e, o mais famoso, o axioma da escolha. Existem também axiomas de infinito e de regularidade. A teoria axiomática de Zermelo foi depois completada por Abraham Fraenkel, dando os axiomas de Zermelo-Fraenkel (ZF). Quando o axioma da escolha é incluído, obtém-se o sistema ZFC.
+
+Os axiomas de Zermelo-Fraenkel são também a fundação sobre a qual a teoria dos conjuntos repousa. A teoria dos conjuntos, por sua vez, é o quadro formal em que a teoria dos jogos se desenvolve. Existem portanto ligações profundas entre os axiomas de Zermelo e o seu teorema sobre os jogos: ambos são manifestações do mesmo projeto de rigor axiomático.
+
+Para o jogador que lê este artigo, esses fundamentos axiomáticos têm um significado prático. Eles garantem que existem exatamente três situações possíveis para o xadrez sob jogo perfeito: vitória das Brancas, vitória das Pretas, ou empate. Não existem mais alternativas. O sistema axiomático garante a completude dessa conclusão, é então um resultado que transcende a intuição empírica.
+
+A teoria dos jogos também é relevante neste artigo: ela é a disciplina que formaliza os jogos de estratégia. Existem teoremas gerais na teoria dos jogos que são, em parte, generalizações do resultado de Zermelo. A teoria dos jogos moderna, desenvolvida por John von Neumann e John Nash, entre outros, parte dos mesmos axiomas de finitude, racionalidade e informação perfeita que Zermelo usou em 1913. O lema de König, que também foi mobilizado para completar a prova de Zermelo, é também um resultado fundamental da teoria dos grafos. Teoria e axiomas são então inseparáveis nesse domínio.
+
+Para quem quer aprofundar o tema, este artigo é uma introdução. Os textos de referência sobre o assunto, Zermelo (1913), Schwalbe & Walker (2001), e os artigos de história da teoria dos jogos, estão também disponíveis em bases de dados acadêmicas. A Wikipédia também oferece uma boa introdução ao teorema de Zermelo e aos axiomas de Zermelo-Fraenkel para quem quer então explorar o contexto matemático mais amplo.
+
 ## O que Zermelo muda para você no tabuleiro
 
 Saber que o xadrez tem uma verdade matemática inacessível muda algo para o jogador prático? Não diretamente no tabuleiro. Mas muda a forma de pensar o jogo.

@@ -103,9 +103,51 @@ O Grande Mestre raciocina sobre planos de longo prazo, estruturas de peões que 
 
 Essa progressão é uma progressão na profundidade e na riqueza do raciocínio modal. É talvez a descrição mais precisa do que significa "compreender o xadrez": ter acesso a um universo de mundos possíveis mais amplo, e raciocinar sobre ele com mais rigor.
 
+## Box, diamond e lógica temporal: os operadores modais em detalhe
+
+### Os operadores box e diamond
+
+Em inglês, os dois operadores da modal logic recebem nomes informais que derivam dos símbolos tipográficos: o operador **diamond** (◇) e o operador **box** (□). Toda a literatura anglófona de modal logic usa box e diamond como termos técnicos correntes. Conhecer esses termos é então essencial para acessar os textos de referência, de Kripke a Hughes & Cresswell.
+
+O operador **diamond** representa a possibilidade. "Diamond P" é verdadeiro num mundo w quando existe pelo menos um mundo acessível w' no qual P é verdadeiro. Use diamond para expressar que algo é possível: existe uma linha onde o mate acontece (diamond-mate), existe um caso em que o sacrifício funciona (diamond-sacrifício-vantajoso). O operador diamond captura a estrutura do raciocínio "pode funcionar".
+
+O operador **box** representa a necessidade. "Box P" é verdadeiro num mundo w quando P é verdadeiro em todos os mundos acessíveis a partir de w. Use box para expressar o que é forçado: em todos os casos em que o adversário pode responder (box), a defesa falha. Box e diamond são duais: box P é equivalente a não-diamond-não-P. No raciocínio sobre o xadrez, box e diamond permitem precisar o que é necessário versus o que é apenas possible.
+
+Os different sistemas de modal logic, K, T, S4, S5, diferem nas propriedades do operador box. Em S4, box é transitivo: box P implica box-box P. Em S5, box P implica diamond-box P. A Kripke semantics classifica esses sistemas pelos tipos de relação de acessibilidade entre os mundos. Para raciocinar sobre o xadrez, use S4: a transitividade das posições acessíveis é natural. Em cada case de análise tática, pergunte: "isto é box (necessário) ou diamond (possible)?", essa distinção é central.
+
+### Lógicas temporais: box e diamond no tempo
+
+As lógicas temporais (temporal logics) são uma extensão direta da modal logic onde a relação de acessibilidade representa o tempo. No contexto das temporal logics, diamond significa "em algum momento futuro" e box significa "sempre no futuro". As temporal logics são hoje especialmente aplicadas em verificação formal de software e em análise de sistemas.
+
+No xadrez, a temporal logic fornece um framework natural. "Diamond-mate" significa que o mate é possible em algum momento futuro. "Box-empate" significa que o empate é necessário em todos os futuros acessíveis, é exatamente o que as tablebases computam. A lógica temporal e a modal logic formam então um continuum de ferramentas formais.
+
+Use o operador box quando a necessity é o objeto de interesse; use diamond quando se trata de possibilidade. As temporal logics e as lógicas epistêmicas, extensões da modal logic que tratam do conhecimento, são também aplicadas no raciocínio sobre jogos em teoria dos jogos e em inteligência artificial. A semantics de Kripke unifica todos esses sistemas: cada extensão da modal logic corresponde a uma classe de frames com propriedades específicas.
+
+A distinção box-diamond é, portanto, o cerne da modal logic e das suas applications ao xadrez. Em cada caso concreto, a análise começa por essa pergunta: necessity ou possibilidade, box ou diamond?
+
+## A lógica modal na prática: há mais do que teoria
+
+Há uma dimensão prática frequentemente negligenciada na lógica modal aplicada ao xadrez: o uso concreto dos operadores de necessidade e possibilidade no cálculo cotidiano. Há jogadores que dominam intuitivamente esses conceitos sem nunca ter ouvido falar de Kripke. O que a lógica formal faz é tornar explícito o que a prática já usa de forma implícita.
+
+Há pelo menos três contextos em que o uso consciente da lógica modal muda o cálculo de um jogador. O primeiro é o cálculo de variantes forçadas: reconhecer que há um lance que é necessário (o adversário não tem escolha) em vez de apenas possível. O segundo é a avaliação de sacrifícios: há sacrifícios que são "logicamente possíveis" mas praticamente improváveis, um jogador experiente usa o raciocínio modal para filtrar essas falsas possibilidades. O terceiro é o planejamento de longo prazo: há planos que dependem de mundos futuros acessíveis apenas sob condições específicas.
+
+Use o raciocínio modal como ferramenta de diagnóstico. Antes de calcular, pergunte: "há um lance necessário aqui?", um lance que o adversário deve jogar em todos os mundos acessíveis. Se há, você tem um ponto de partida para a variante forçada. Se não há, você está na lógica do possível: há várias linhas que devem ser avaliadas. Essa distinção, entre o necessário e o possível, é o que a formal logic theory da lógica modal captura em notação precisa, e que o jogador de xadrez captura em termos de intuição tática.
+
+Há também uma aplicação da lógica modal à psicologia do torneio. Quando você está perdendo, há uma tendência a superdimensionar as possibilidades do adversário, a ver ameaças em mundos que não são acessíveis na posição real. O jogador que usa a lógica modal sabe distinguir o que há de real de o que há de imaginado: a necessidade objetiva versus a ansiedade subjetiva. Use esse quadro mental para se ancorar na análise concreta da posição.
+
 **Após a leitura:** numa posição de treinamento, escreva para **dois lances candidatos** a frase "se eu jogar X, em quais **mundos** aterrisso no próximo lance?" antes de calcular em profundidade.
 
 ---
+
+## Sistemas normais, modelos e recursos disponíveis
+
+A modal logic é também uma disciplina com uma literatura técnica rica. Os textos fundamentais são diferentes em ênfase e estilo. O text de C.I. Lewis e Langford (Symbolic Logic, 1932) introduz os primeiros sistemas formais S1-S5. O text de Hughes e Cresswell (An Introduction to Modal Logic, 1968) é o manual clássico de referência para os sistemas normais de modal logic. Os results da teoria dos modelos são então os alicerces da disciplina, disponivel nas bibliotecas universitárias e em acesso aberto.
+
+Os modelos de Kripke, também chamados frames de Kripke, são o instrumento central da semantics da modal logic. Um model é um triple (W, R, V) onde W é um conjunto de mundos, R é a relação de acessibilidade e V é uma função de valoração. Em cada case de application da modal logic, o primeiro passo é então construir o model adequado ao domínio.
+
+Os different sistemas normais, K, T, S4, S5, são definidos pelas propriedades da relação de acessibilidade R no model. Os results da teoria dos modelos mostram que cada sistema normal corresponde a uma classe de frames axiomaticamente definida. As different modalities (necessidade, possibilidade, temporalidade, conhecimento) correspondem então a different sistemas formais. Use o framework Kripke para analisar caso a caso qual sistema é adequado.
+
+No caso do xadrez, o sistema S4 é o mais natural: a relação de acessibilidade entre posições é reflexiva e transitiva. Em cada case concreto de análise de um zugzwang ou de uma variante forçada, o model S4 fornece o quadro formal adequate. Os results da análise formal concordam então com a intuição prática dos jogadores experientes.
 
 ## O que guardar
 

@@ -110,6 +110,12 @@ The exclusion of Russia and Belarus from FIDE competitions since 2022 abruptly i
 
 The board remains a negotiation table. The rules of the game above change. The sixty-four squares stay the same.
 
+## Chess Diplomacy in Practice: Players, Nations, and International Relations
+
+Chess diplomacy extends beyond historical episodes into a continuing practice in international relations. Chess players serve as informal ambassadors, crossing political boundaries that formal diplomacy cannot bridge. The international chess community offers competition under universal rules where players engage regardless of the political tensions between their nations.
+
+Today, chess organizations navigate complex international relations. Cold War chess contests were the most visible moments of chess diplomacy, but international chess tournaments have continued even when diplomatic relations between states collapsed. Chess success translates directly into global soft power and politics. International players compete across diplomatic divides, making chess a unique form of international engagement.
+
 ## Sources
 
 - Edmonds, D., & Eidinow, J. (2004). *Bobby Fischer Goes to War*. Ecco.

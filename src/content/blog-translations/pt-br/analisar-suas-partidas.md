@@ -90,11 +90,30 @@ Quando você identificou o momento crítico, a pergunta seguinte é : que tipo d
 
 O **[Lichess](https://lichess.org)** oferece análise por motor gratuita para todas as partidas jogadas na plataforma, com indicadores de precisão e identificação automática dos erros significativos. O relatório de análise mostra as "inaccuracies", "mistakes" e "blunders", útil para identificar os momentos críticos rapidamente.
 
-O **Chess.com** propõe uma análise similar e um score de precisão por fase do jogo (abertura, meio-jogo, final), útil para identificar que fase lhe custa mais.
+O **[Chess.com](https://chess.com)** propõe uma análise similar e um score de precisão por fase do jogo (abertura, meio-jogo, final), útil para identificar que fase lhe custa mais. O site oferece também dados estatísticos sobre seus erros recorrentes, como a porcentagem de blunders por fase. Analisando esses dados ao longo de vários jogos, você identifica padrões que se repetem.
 
 **ChessBase** ou **SCID** (gratuito) permitem uma análise mais aprofundada com anotação manual e busca em bases de dados de partidas, para os jogadores que querem comparar seu tratamento de uma posição com partidas de referência.
 
+### Como importar e analisar uma partida online
+
+Para aproveitar ao máximo as ferramentas de chess online, siga este fluxo:
+
+1. **Exporte o PGN** da sua partida mais recente. No Chess.com e no Lichess, o arquivo PGN está disponível no histórico de jogos, com acesso direto pela página da partida. O PGN contém todos os lances e as linhas anotadas.
+2. **Importe no computador** ou use a análise diretamente no navegador. Selecione "Análise" e configure as opções: número de linhas alternativas a exibir (recomendamos 2-3 linhas para não se perder), profundidade do motor. As configurações padrão da versão gratuita já são suficientes para jogadores abaixo de 2000.
+3. **Navegue no tabuleiro** interativo, lance por lance. O motor mostra a avaliação de cada posição no tabuleiro e as variantes alternativas. Para cada lance em que a avaliação caiu significativamente, analise por que.
+4. **Use o suporte do motor com moderação**: veja a melhor variante, tente entendê-la, feche o painel e reproduza mentalmente. O suporte do motor ajuda a confirmar hipóteses, não a substituir o pensamento. No contexto do xadrez online, esse suporte está disponível imediatamente após cada partida, aproveite-o de forma estruturada, não apenas para confirmar seus vieses.
+
+### O que os dados dizem sobre seu jogo
+
+Chess.com e Lichess oferecem estatísticas que ajudam a melhorar de forma mais direcionada: precisão média por cor, taxa de erros na abertura versus no final, desempenho por controle de tempo. Esses dados são valiosos para identificar onde focar o estudo. Se sua precisão cai sistematicamente nos jogos de longa duração, o problema pode ser de gestão de energia e concentração, não de nível técnico.
+
+Para trabalhar as aberturas de xadrez a partir da análise de partidas, o Chesss.com e o Lichess fornecem também o banco de dados de aberturas que mostra onde você divergiu da teoria. Fica disponível logo após o fim de cada partida e é possível filtrar por tipo de abertura ou por fase do jogo. As linhas do motor que aparecem nesse banco de dados são sugestões de seguir, não receitas infalíveis: o objetivo é usar a análise para formular perguntas, não para copiar a melhor variante.
+
+O Chess.com ajuda você a melhorar também através dos seus dados históricos: a progressão do seu Elo, os tipos de erros que você comete com maior frequência, as fases do jogo onde seu desempenho cai. Será necessário algum tempo para acumular dados suficientes para que esses padrões apareçam com clareza, normalmente 15 a 20 partidas analisadas. Mas quando aparecem, os detalhes são muitas vezes surpreendentes: erros semelhantes em posições completamente diferentes revelam uma lacuna de compreensão que o jogador como aluno de si mesmo nunca havia identificado.
+
 A melhor ferramenta é aquela que você usa regularmente com disciplina. Um caderno de papel com 10 minutos de análise honesta por partida vale mais do que o ChessBase aberto duas vezes por ano.
+
+O uso de IA (inteligência artificial) para análise de xadrez está se tornando cada vez mais acessível. O stockfish já foi descrito como um dos motores mais fortes do mundo, e é usado gratuitamente por milhões de jogadores no Lichess e no Chess.com. O motor é forte o suficiente para análise até nas posições mais complexas. A ferramenta fornece avaliações que ajudam a melhorar seu jogo, mas é importante explorar as variantes com autonomia antes de consultar o motor. As informações que o motor fornece são mais úteis quando há uma hipótese prévia para verificar, não apenas para descobrir "o que foi jogado". Configurações completas de análise como número de linhas e profundidade de busca podem ser ajustadas conforme o nível. Avaliações do motor usadas de forma passiva raramente ajudam tanto quanto a análise ativa feita pelo próprio jogador. Um ajedrez eficaz passa por entender o porquê dos lances, não apenas anotar as variantes ótimas. Até mesmo jogadores fortes cometem o erro de usar o motor como oráculo em vez de como ferramenta de verificação.
 
 ## A regra das três partidas
 
@@ -107,6 +126,14 @@ Partida em que você não compreendeu o que estava acontecendo : você se sentiu
 Partida com um belo lance perdido : você viu depois que havia uma combinação ou um belo recurso que não jogou. Compreender por que não o viu reforça o reconhecimento desse padrão.
 
 Esses três critérios filtram as partidas mais instrutivas e tornam a análise gerenciável mesmo com pouco tempo disponível.
+
+## Analisando para aprender, não para justificar
+
+Um erro comum ao analisar suas próprias partidas: buscar confirmar que você jogou bem, não entender onde errou. O motor ajuda a evitar essa armadilha, pois é imparcial.
+
+Antes de entrar na próxima partida, reveja rapidamente as conclusões da análise anterior. Que problema recorrente você vai prestar atenção? Que estratégia vai aplicar de forma diferente? Essa ligação entre análise e prática seguinte é o que transforma o estudo em progressão real.
+
+Analisando regularmente seus jogos de chess, mesmo 10 minutos por partida, você acumula um mapa pessoal dos seus pontos fracos. Esse mapa é o ponto de partida de qualquer plano de estudo sério. Sem ele, você trabalha às cegas e repete os mesmos problemas por meses.
 
 ---
 

@@ -208,6 +208,16 @@ The debate on **women's sections** often splits the ground between **visibility 
 
 ---
 
+## Women's Chess Today: Progress and What Still Needs to Change
+
+The landscape of women in chess has shifted meaningfully over the past decade. In 2024, the total number of women with FIDE ratings reached record levels across every region. Yet the gender gap in chess remains one of the most studied topics in the chess world, drawing sustained attention from researchers, players, and chess media alike.
+
+Ju Wenjun, four-time women's world champion, defended her title again in 2024, continuing China's remarkable dominance in women's chess. The women's world champion has most frequently come from China or the former Soviet states, demonstrating that deliberate national investment in women's chess produces world champions consistently. Understanding why the women's world champion comes disproportionately from certain countries helps explain the gender gap in chess at the global level: it is primarily a story of resources and access, not biology.
+
+Female players who train from childhood in environments where chess excellence is expected can perform within the same range as top male players in their cohort. The evidence from China, Georgia, and the Polgar experiment is consistent: the gender gap in chess is not fixed by biology, but by access and environment. Every strong female player who competes in open events and earns a women grandmaster or open grandmaster title adds to the body of evidence that the gender gap in chess is entirely addressable. The women grandmaster title, the women's world championship, and women chess players as coaches and content creators are all now occupied by women building careers in a world still not fully designed for them.
+
+---
+
 ## Key takeaways
 
 - Women represent 10 to 15 percent of rated players worldwide (FIDE, 2024)

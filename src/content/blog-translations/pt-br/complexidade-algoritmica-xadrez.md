@@ -15,6 +15,18 @@ Sua conclusão : o número de posições legais de xadrez é de aproximadamente 
 
 Era preciso encontrar outra coisa.
 
+A questão de como ensinar um computador a jogar xadrez é uma das mais importantes da história da ciência da computação e da inteligência artificial. Por décadas, o xadrez foi o principal banco de testes da inteligência artificial, o problema emblema que separava o que as máquinas podiam e não podiam fazer. Compreender a complexidade algorítmica do xadrez é compreender a história da inteligência artificial e da ciência cognitiva.
+
+## Alan Turing e as origens do xadrez computacional
+
+Antes de Shannon, um outro matemático já havia tentado fazer um computador jogar xadrez: [Alan Turing](https://pt.wikipedia.org/wiki/Alan_Turing). A história de Turing é contada no filme *O Jogo da Imitação* (2014): matemático britânico a serviço da agência de inteligência dos Aliados na Segunda Guerra Mundial, ele foi responsável por quebrar o código nazista Enigma, um feito que foi decisivo para os Aliados na guerra. Depois da guerra, focou seu trabalho na área de ciências da computação e inteligência artificial, tornando-se um dos fundadores dessa disciplina.
+
+Em 1950, Turing publicou seu célebre artigo *Computing Machinery and Intelligence*, no qual apresentou o famoso "Teste de Turing": dois seres, um humano e uma máquina, se confrontam num jogo de perguntas e respostas; se a máquina conseguir enganar o interrogador fazendo-o acreditar que é humana, ela passou no teste. Nascia aí a base que fundou a ideia de inteligência artificial como a conhecemos hoje. (O link para o artigo original está disponível nos arquivos digitais da Oxford University Press.)
+
+Em 1948, junto com seu colega David Champernowne, Turing havia começado a trabalhar no xadrez computacional. O algoritmo que criaram, o Turochamp (junção dos nomes Turing e Champernowne), ficou pronto em 1950, porém as limitações computacionais da época não permitiram que o código pudesse ser implementado num computador real. Só restou a Turing executar o algoritmo usando lápis e papel, calculando cada lance manualmente. Naturalmente, a série de cálculos necessários era enorme, mas a ideia estava lançada: podemos, a princípio, fazer um programa jogar xadrez seguindo regras explícitas.
+
+A história de Turing no xadrez é, portanto, também a história de um herói: ele focou seu trabalho nos fundamentos da inteligência artificial numa época em que os computadores mal existiam. A ciência da computação e a área de inteligência artificial têm nele um dos seus nomes mais decisivos. Você pode encontrar um link para a versão digitalizada do Turochamp (executado em emulador) em vários museus virtuais de história da computação. O link para a entrada da Wikipedia sobre Turing (o link acima) é um bom ponto de partida; há também um link para o artigo de 1950 no site da *Mind* (Oxford); e um link para o documentário da BBC sobre seu trabalho na segunda guerra. Explorar esses links dá ao leitor uma visão mais completa da série de contribuições que Turing deixou para a ciência.
+
 ## O que é a complexidade algorítmica?
 
 A [complexidade algorítmica](https://pt.wikipedia.org/wiki/Complexidade_computacional) é um ramo da informática teórica que estuda os recursos (tempo, memória) necessários para resolver problemas. Ela classifica os problemas segundo sua "dificuldade fundamental" : não na prática num computador dado, mas em teoria, assintoticamente, à medida que o tamanho do problema cresce.
@@ -52,25 +64,35 @@ Combinado a uma **função de avaliação**: uma fórmula que estima o valor de 
 
 ## Deep Blue : a vitória da engenharia
 
-Deep Blue não era um programa sutil. Era uma obra-prima de engenharia bruta aplicada às heurísticas de xadrez.
+Deep Blue não era um programa sutil. Era uma obra-prima de engenharia bruta aplicada às heurísticas de xadrez. No ano 1997, o confronto entre Garry Kasparov (campeão mundial em título) e o computador Deep Blue tornou-se o evento mais simbólico na história da inteligência artificial aplicada ao xadrez.
 
 A IBM havia construído **chips especializados** (ASICs) concebidos unicamente para avaliar posições de xadrez : centenas em paralelo. Deep Blue avaliava entre 100 e 300 milhões de posições por segundo. Com um alpha-beta pruning bem otimizado e heurísticas de ordenação sofisticadas, buscava tipicamente a uma profundidade de 12 a 16 lances, às vezes mais nas posições críticas ("busca de extensão").
 
-A função de avaliação havia sido desenvolvida com a ajuda de Grandes Mestres : ela codificava explicitamente conceitos como a estrutura de peões, a segurança do rei, a atividade das peças, as casas fracas. Cada conceito era traduzido em termos numéricos, com pesos ajustados pelos engenheiros.
+A função de avaliação havia sido desenvolvida com a ajuda de Grandes Mestres : ela codificava explicitamente conceitos como a estrutura de peões, a segurança do rei, a atividade das peças, as casas fracas. Cada conceito era traduzido em termos numéricos, com pesos ajustados pelos engenheiros. O código desta função de avaliação era o coração do sistema, um algoritmo que transformava a posição do tabuleiro num número representando a vantagem estimada.
 
-Kasparov havia batido Deep Blue em 1996 (4-2). Perdeu em 1997 (3,5-2,5). Sua derrota não se devia à "compreensão" do jogo por Deep Blue : não havia nenhuma no sentido cognitivo. Era poder de cálculo + heurísticas humanas codificadas + engenharia material, levados até um limiar onde a força de cálculo bruta compensava as limitações da abordagem.
+Kasparov havia batido Deep Blue em 1996 (4-2). Perdeu em 1997 (3,5-2,5). Naquele ano, sua derrota não se devia à "compreensão" do jogo por Deep Blue : não havia nenhuma no sentido cognitivo. Era poder de cálculo + heurísticas humanas codificadas + engenharia material, levados até um limiar onde a força de cálculo bruta compensava as limitações da abordagem. O campeão mundial humano havia sido batido, mas por razões que tinham pouco a ver com inteligência artificial no sentido moderno do termo: era ciência da engenharia, não ciência cognitiva.
 
 ## AlphaZero : uma revolução de natureza diferente
 
-Vinte anos mais tarde, a DeepMind apresentava AlphaZero. A diferença não era quantitativa : era qualitativa.
+Vinte anos mais tarde, a DeepMind apresentava AlphaZero. A diferença não era quantitativa : era qualitativa. Pela primeira vez, a inteligência artificial havia aprendido a jogar xadrez sem código humano de avaliação: sem heurísticas escritas, sem conceitos explicitados por Grandes Mestres.
 
-AlphaZero havia recebido apenas as **regras do jogo**: quais peças existem, como se movem, quando uma partida termina. Nenhuma base de dados de partidas humanas. Nenhuma heurística explicitada. Nenhum conceito codificado por Grandes Mestres.
+AlphaZero havia recebido apenas as **regras do jogo**: quais peças existem, como se movem, quando uma partida termina. Nenhuma base de dados de partidas humanas. Nenhuma heurística explicitada. Nenhum conceito codificado por Grandes Mestres. A ciência da inteligência artificial havia avançado ao ponto em que o algoritmo de aprendizagem profunda tornava-se mais eficaz do que qualquer código de avaliação manual.
 
-Ele jogava contra si mesmo : milhões de partidas. A cada partida, uma rede de neurônios profunda aprendia : quais posições tendem a ser ganhadoras, quais lances tendem a ser bons a partir de quais posições. Após **9 horas** de treinamento em TPUs (processadores especializados da Google), AlphaZero havia atingido um nível que superava Stockfish, o melhor motor "clássico" da época.
+Ele jogava contra si mesmo : milhões de partidas. A cada partida, uma rede de neurônios profunda aprendia : quais posições tendem a ser ganhadoras, quais lances tendem a ser bons a partir de quais posições. Após **9 horas** de treinamento em TPUs (processadores especializados da Google), AlphaZero havia atingido um nível que superava Stockfish, o melhor motor "clássico" da época. Em 9 horas, um algoritmo de inteligência artificial havia recapitulado séculos de teoria de xadrez humano, e descoberto ideias que os humanos nunca haviam codificado.
 
 O estilo de jogo que AlphaZero havia desenvolvido fascinava os Grandes Mestres : dinâmico, voluntariamente sacrificial, com intuições posicionais que os teóricos nunca tinham codificado explicitamente. AlphaZero buscava claramente menos posições do que Stockfish (cerca de 80.000 por segundo contra 60 milhões), mas cada uma era avaliada por uma rede de neurônios que codificava uma "intuição" aprendida pela experiência em vez de por regras explícitas.
 
-Não era mais uma busca exaustiva melhorada. Era algo estruturalmente diferente : uma aproximação da intuição pelo aprendizado profundo.
+Não era mais uma busca exaustiva melhorada. Era algo estruturalmente diferente : uma aproximação da intuição pelo aprendizado profundo. A inteligência artificial havia encontrado um caminho para jogar xadrez que era, paradoxalmente, mais similar à computação humana do que ao modelo de busca exaustiva dos computadores clássicos.
+
+## O que isso significa para quem quer jogar xadrez melhor
+
+A ciência da inteligência artificial e da complexidade algorítmica não é apenas um assunto teórico. Ela tem implicações diretas para qualquer pessoa que quer aprender a jogar xadrez e a melhorar.
+
+**O algoritmo de um bom jogador humano não é busca exaustiva.** Você não precisa calcular todas as variantes. Os Grandes Mestres calculam em média 3 a 5 lances candidatos em profundidade, não 35. O trabalho de treino consiste em desenvolver a "função de avaliação intuitiva", a capacidade de reconhecer rapidamente quais posições são boas e quais lances merecem ser explorados. Jogar xadrez bem é, neste sentido, um problema de ciência cognitiva tanto quanto de cálculo.
+
+**O Stockfish e AlphaZero são ferramentas de estudo, não de substituição.** Usando esses motores para analisar suas partidas, você pode identificar onde seu algoritmo humano diverge do ideal. Um erro sistemático nas posições de final, por exemplo, revela uma lacuna no seu "código" de avaliação dessas situações.
+
+**A complexidade não deve intimidar, deve informar.** Saber que o espaço de busca do xadrez é astronômico ajuda a entender por que a intuição e o reconhecimento de padrões são mais valiosos do que a tentativa de calcular tudo. O campeão mundial não calcula mais do que você: ele reconhece mais. Esse reconhecimento é treinável, e é o coração da progressão em xadrez.
 
 ## O que a IA revela sobre a cognição humana no xadrez
 
@@ -85,6 +107,10 @@ Esse processamento (rápido, baseado em padrões, econômico) é o que AlphaZero
 A complexidade algorítmica do xadrez era tão grande que foi preciso esperar não um computador rápido o suficiente para resolvê-la pela força, mas um novo paradigma computacional (o aprendizado profundo) para aproximar a cognição que, desde sempre, permitia aos humanos jogar apesar dessa complexidade.
 
 Shannon havia visto certo em 1950. A busca exaustiva era impossível. A solução não era buscar mais rápido. Era aprender a não buscar.
+
+A ciência da complexidade algorítmica do xadrez continua a evoluir. Cada ano traz novos avanços na ciência da inteligência artificial aplicada ao jogo. Os motores de xadrez também continuam a melhorar: o Stockfish de hoje é muito mais forte do que o Stockfish do campeão mundial de xadrez do ano de 2015, além do que o Stockfish do ano anterior, mesmo usando o mesmo paradigma de busca clássica. Claro que a diferença qualitativa entre Deep Blue e AlphaZero permanece a mais significativa da história. A ciência computacional e a ciência cognitiva avançam em paralelo, e o xadrez permanece um dos campos de estudo mais ricos para ambas.
+
+Para siga acompanhando os desenvolvimentos da IA no xadrez, vale a pena seguir os avanços da DeepMind e da organização USCF que publica análises regulares. A questão de saber se jogando contra IA melhora o ser humano é ainda debatida, mas o consenso é que usar os motores como ferramentas de análise (e não como adversários diretos) é o approach mundial de xadrez mais eficaz. A série de confrontos entre Stockfish e outros motores de topo é transmitida online com comentário ao vivo por especialistas. Um link para o campeonato mundial de xadrez de motores está disponível no site da TCEC, onde todos os jogos são arquivados.
 
 ---
 

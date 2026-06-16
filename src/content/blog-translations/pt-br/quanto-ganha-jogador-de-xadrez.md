@@ -189,6 +189,35 @@ O xadrez produziu algumas das mentes mais fascinantes da história esportiva e i
 
 ---
 
+## Os maiores GMs do mundo e seus ganhos estimados
+
+Para entender a escala do problema econômico, vale comparar os ganhos estimados dos principais GMs do mundo. Os dados abaixo combinam premiações de torneios, contratos com plataformas e fontes de renda conhecidas publicamente.
+
+| Jogador | Elo FIDE | Renda em torneios (carreira) | Fontes adicionais |
+|---|---|---|---|
+| GM Magnus Carlsen | 2830+ | ~$2,4 mi (carreira completa) | Play Magnus, contratos, streaming |
+| GM Hikaru Nakamura | 2790 | Moderada por torneio | Twitch (principal renda), Chess.com |
+| GM Fabiano Caruana | 2800 | ~$500k–$1 mi | Contratos de plataformas, aulas |
+| GM Ian Nepomniachtchi | 2780 | ~$300k–$600k | Torneios FIDE, apoio da federação |
+| GM Pragg | 2760 | Em crescimento | Patrocinios indianos |
+| GM Gukesh | 2750+ | ~$1 mi (2024) | Campeonato mundial 2024 |
+| GM Alireza Firouzja | 2750 | Moderada | Federação francesa, conteúdo |
+| GM Wesley So | 2760 | Moderada | Torneios USA, streaming esporádico |
+| GM Levon Aronian | 2740 | Moderada | Torneios, comentários |
+| GM Viswanathan Anand | 2750+ (no auge) | Histórico significativo | Patrocinios indianos, lendária carreira |
+
+Um GM situado entre os melhores do mundo pode esperar ganhar entre $50.000 e $200.000 por ano em premiações, dependendo dos torneios que disputa e dos resultados obtidos. Um GM do Top 5 nos anos mais fortes pode ultrapassar $300.000 apenas em premiações, mas isso representa menos de dez jogadores no mundo inteiro.
+
+Para um GM situado entre o Top 50 e o Top 100, a realidade é bem diferente: premiações de $5.000 a $30.000 por ano, sendo necessário complementar com outras fontes de renda.
+
+## GMs além do Top 10: o que ganha a maioria dos profissionais
+
+Entre os GMs notáveis fora do Top 10, há exemplos como GM Duda Foroni (do Brasil), GM Nodirbek Abdusattorov, GM Vincent Keymer, GM Arjun Erigaisi, GM Vidit Gujarathi, GM Alexei Shirov, GM Sergey Karjakin, GM Richard Rapport, GM Veselin Topalov e GM Leinier Dominguez, cada um com trajetórias econômicas distintas e fontes de renda complementares. Um GM de nível intermediário também pode construir uma carreira sustentável: as aulas também representam a principal fonte de renda, os patrocinios de academias também aparecem com o tempo, e o conteúdo online também cria uma renda passiva relevante. O jogador de xadrez que também investe em competicoes regionais, além de competicoes internacionais, também constrói a reputação que atrai alunos e pode também gerar patrocinios locais. Para um enxadrista profissional no Brasil, a situação também é de oportunidades: esse enxadrista que domina o português também tem acesso a um mercado amplo. No entanto, os patrocinios individuais continuam raros; no entanto, a situação também melhora a cada ano com o crescimento do xadrez. O jogador de xadrez brasileiro que também participa de competicoes e também produz conteúdo digital constrói a base mais sólida possível para uma carreira de longo prazo.
+
+## O jogador de xadrez profissional no Brasil: carreira e perspectivas
+
+No Brasil, vários GMs construíram carreiras respeitáveis combinando competicoes internacionais com ensino e treinamento. O Brasil conta com cerca de 20 GMs ativos, sendo que a maioria complementa a renda do xadrez com aulas. O jogador de xadrez profissional brasileiro enfrenta a mesma realidade econômica descrita acima: patrocinios individuais são raros, sendo o xadrez um esporte de nicho no mercado publicitário. Entanto, o enxadrista que investe em conteúdo em português tem uma vantagem real, pois há poucos GMs criando material de qualidade nessa língua. O jogador de xadrez que combina aulas, torneios e conteúdo digital constrói uma carreira mais sólida do que quem depende apenas de premiações, no Brasil como em qualquer lugar do mundo.
+
 ## O essencial
 
 - As premiações do xadrez são irrisórias se comparadas a outros esportes e jogos de estratégia, inclusive alguns esports
