@@ -55,3 +55,6 @@ _commit.ps1
 _cleanup.ps1
 _push.bat
 
+
+# Artefact de build régénéré par scripts/generate-og-png.mjs (octets non déterministes -> bloquait git pull sur le VPS)
+public/images/og-default.png
