@@ -1,0 +1,76 @@
+# ─────────────────────────────────────────────────────────────
+# Newsletter "nouvel article"  -  Blog d'un Gaucher
+# ─────────────────────────────────────────────────────────────
+#
+# Envoie un email aux abonnés Brevo QUAND un article passe en ligne
+# (publishDate ≤ now), et non quand il est commité. Tourne juste après
+# le cron de publication, lit directement le frontmatter des .md, et
+# délègue à scripts/newsletter-dispatch.mjs.
+#
+# Anti-doublon : deploy/newsletter-sent.json (committé) mémorise les slugs
+# déjà notifiés. Le run programme la campagne Brevo à H+1 (marge de relecture).
+#
+# Seul GITHUB_TOKEN (natif) est requis pour recommiter l'état.
+# ─────────────────────────────────────────────────────────────
+
+name: Newsletter nouvel article
+
+on:
+  schedule:
+    # ~15 min après le cron de publication (filet de sécurité quotidien)
+    - cron: "15 6 * * *"
+    # Lundi et jeudi, ~15 min après la publication des nouveaux articles
+    - cron: "15 7 * * 1,4"
+  workflow_dispatch:
+
+concurrency:
+  group: newsletter
+  cancel-in-progress: false
+
+jobs:
+  dispatch:
+    name: Programmer les emails des articles fraîchement publiés
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Dispatch newsletter (Brevo, H+1)
+        continue-on-error: true   # un échec Brevo ne doit pas casser le run — réessai au prochain cron
+        env:
+          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID:      ${{ secrets.BREVO_LIST_ID }}
+          BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
+          BREVO_SENDER_NAME:  ${{ secrets.BREVO_SENDER_NAME }}
+          SITE_URL:           https://blogdungaucher.com
+          SEND_DELAY_MINUTES: "60"
+        run: |
+          set -euo pipefail
+          if [ -z "${BREVO_API_KEY:-}" ] || [ -z "${BREVO_SENDER_EMAIL:-}" ]; then
+            echo "BREVO_API_KEY ou BREVO_SENDER_EMAIL absent ; dispatch ignoré."
+            exit 0
+          fi
+          node scripts/newsletter-dispatch.mjs
+
+      - name: Commiter l'état (si changé)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add deploy/newsletter-sent.json
+          if git diff --cached --quiet; then
+            echo "État inchangé — rien à committer."
+            exit 0
+          fi
+          git commit -m "chore(newsletter): maj état d'envoi $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci-notify]"
+          git push origin main

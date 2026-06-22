@@ -100,20 +100,9 @@ jobs:
             echo "[push] PUSH_PROXY_URL ou PUSH_SEND_TOKEN absent — ignoré"
           fi
 
-      - name: Programmer email newsletter (Brevo, H+1)
-        if: steps.detect.outputs.new_article != ''
-        continue-on-error: true   # Brevo cassé/indispo ne doit pas marquer le run en échec (l'article est déjà publié)
-        env:
-          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
-          BREVO_LIST_ID:      ${{ secrets.BREVO_LIST_ID }}
-          BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
-          BREVO_SENDER_NAME:  ${{ secrets.BREVO_SENDER_NAME }}
-          SITE_URL:           https://blogdungaucher.com
-          SEND_DELAY_MINUTES: "60"
-        run: |
-          set -euo pipefail
-          if [ -z "${BREVO_API_KEY:-}" ] || [ -z "${BREVO_SENDER_EMAIL:-}" ]; then
-            echo "BREVO_API_KEY ou BREVO_SENDER_EMAIL absent ; newsletter ignorée."
-            exit 0
-          fi
-          node scripts/send-new-article-email.mjs "${{ steps.detect.outputs.new_article }}"
+      # ── L'email newsletter NE part plus ici ──────────────────────────────
+      # La détection « au commit » envoyait l'email quand l'article était écrit,
+      # pas quand il passait en ligne (publishDate future → email 7 mois trop tôt).
+      # C'est désormais .github/workflows/newsletter.yml qui s'en charge, déclenché
+      # sur publishDate via scripts/newsletter-dispatch.mjs. La notif ntfy/push
+      # ci-dessus reste « au commit » (acceptable : simple alerte perso).
