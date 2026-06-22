@@ -59,6 +59,7 @@ jobs:
 
       - name: Push notification (ntfy + Web Push navigateur)
         if: steps.detect.outputs.new_article != ''
+        continue-on-error: true   # une notif ratée ne doit JAMAIS marquer le run en échec
         env:
           NTFY_URL:        ${{ secrets.NTFY_URL }}
           NTFY_TOPIC:      ${{ secrets.NTFY_TOPIC }}
@@ -101,6 +102,7 @@ jobs:
 
       - name: Programmer email newsletter (Brevo, H+1)
         if: steps.detect.outputs.new_article != ''
+        continue-on-error: true   # Brevo cassé/indispo ne doit pas marquer le run en échec (l'article est déjà publié)
         env:
           BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
           BREVO_LIST_ID:      ${{ secrets.BREVO_LIST_ID }}

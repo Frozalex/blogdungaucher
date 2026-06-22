@@ -25,6 +25,8 @@
 
 set -euo pipefail
 
+REPO="${REPO:-/var/www/site/repo}"
+BRANCH="${BRANCH:-main}"
 DEPLOY_CMD="${DEPLOY_CMD:-/usr/local/bin/deploy-site.sh}"
 LOG="${DEPLOY_LOG:-/var/www/site/deploy.log}"
 LOCK="${DEPLOY_LOCK:-/tmp/blog-deploy.lock}"
@@ -41,6 +43,17 @@ if ! flock -w 300 9; then
 fi
 
 log "rebuild planifié (publication différée) → déploiement"
+
+# Même garde-fou que auto-deploy-poll.sh : on recale l'arbre sur origin/main avant
+# de construire, pour qu'aucune dérive locale ne fasse échouer le build du jour J
+# (artefact régénéré, mode de fichier, CRLF…). Voir auto-deploy-poll.sh pour le
+# détail. `git fetch` est tolérant (|| true) : même si GitHub est injoignable une
+# seconde, on reconstruit avec le code déjà présent — publication jamais bloquée.
+cd "$REPO"
+git fetch --quiet origin "$BRANCH" >> "$LOG" 2>&1 || true
+git reset --hard "origin/${BRANCH}" >> "$LOG" 2>&1
+git clean -fd >> "$LOG" 2>&1
+
 if "$DEPLOY_CMD" >> "$LOG" 2>&1; then
   log "rebuild planifié OK"
 else

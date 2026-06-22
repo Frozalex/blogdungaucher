@@ -38,6 +38,22 @@ REMOTE="$(git rev-parse "origin/${BRANCH}")"
 [ "$LOCAL" = "$REMOTE" ] && exit 0
 
 log "nouveau commit ${REMOTE} (local ${LOCAL}) → déploiement"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SYNCHRONISATION FORCÉE de l'arbre de travail sur origin/main AVANT le build.
+#
+# POURQUOI : deploy-site.sh fait un `git pull`, qui AVORTE dès que l'arbre local
+# a la moindre dérive — et c'est précisément ce qui faisait échouer le déploiement
+# les jours de publication (artefact de build régénéré dans un chemin suivi,
+# bits de permission qui bougent, fins de ligne CRLF, édition manuelle sur le VPS).
+# `reset --hard` recale tous les fichiers SUIVIS sur la version GitHub ; `clean -fd`
+# retire les fichiers non suivis NON ignorés (ceux qui bloquent un checkout), tout
+# en PRÉSERVANT node_modules/, dist/ et les artefacts gitignorés (pas de -x).
+# Après ça, le `git pull` de deploy-site.sh ne peut plus que réussir (no-op).
+# ─────────────────────────────────────────────────────────────────────────────
+git reset --hard "origin/${BRANCH}" >> "$LOG" 2>&1
+git clean -fd >> "$LOG" 2>&1
+
 if "$DEPLOY_CMD" >> "$LOG" 2>&1; then
   log "déploiement OK (${REMOTE})"
 else
