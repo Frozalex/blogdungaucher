@@ -186,6 +186,8 @@ function safeJsonLd(item: unknown): string {
 const ntfyUrl      = import.meta.env.PUBLIC_NTFY_URL       ?? "";
 const ntfyTopic    = import.meta.env.PUBLIC_NTFY_TOPIC     ?? "blog-gaucher";
 const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
+const umamiId      = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID ?? "";
+const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.blogdungaucher.com";
 ---
 <!DOCTYPE html>
 <html lang={lang} data-server-lang={lang}>
@@ -338,6 +340,20 @@ const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
     {allStructuredDataItems.map((item) => (
       <script type="application/ld+json" set:html={safeJsonLd(item)} />
     ))}
+
+    {umamiId && (
+      <script is:inline define:vars={{ umamiId, umamiUrl }}>
+        (function() {
+          var s = document.createElement('script');
+          s.async = true;
+          s.defer = true;
+          s.dataset.websiteId = umamiId;
+          s.dataset.domains = 'blogdungaucher.com';
+          s.src = umamiUrl + '/script.js';
+          document.head.appendChild(s);
+        })();
+      </script>
+    )}
 
     <script is:inline define:vars={{ ntfyUrl, ntfyTopic, ntfyVapidKey }}>
       globalThis.__NTFY_URL__       = ntfyUrl;
