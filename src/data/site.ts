@@ -11,7 +11,6 @@ export const siteConfig = {
   /** PNG : meilleure compatibilité og:image que le SVG (réseaux, messageries). */
   defaultOgImage: "/images/og-default.png",
   features: {
-    analysesAvailable: false,
   },
   futureInfoEmailLabel:
     "Vous pouvez nous contacter à l'adresse contact@blogdungaucher.com.",
@@ -105,7 +104,7 @@ export const categorySlugs = [
 ] as const;
 
 export type CategorySlug = (typeof categorySlugs)[number];
-export type SiteSectionSlug = CategorySlug | "analyses";
+export type SiteSectionSlug = CategorySlug;
 
 export const categoryMap: Record<
   SiteSectionSlug,
@@ -206,18 +205,6 @@ export const categoryMap: Record<
     seoDescriptionEn:
       "Prepare your Grand oral on chess: outlines, Maths and CS concepts, concrete examples.",
   },
-  analyses: {
-    label: "Analyses",
-    shortLabel: "Analyse Stockfish",
-    href: "/fr/analyses/",
-    tagline: "Importe une position FEN ou une partie PGN et laisse Stockfish analyser en direct.",
-    description:
-      "Un espace d'analyse ouvert à tous : échiquier interactif, notation des coups, barre d'évaluation et meilleure suite.",
-    audiencePromise:
-      "Pour visualiser et comprendre une position à l'aide d'un moteur de calcul.",
-    accent: "#e07272",
-    surface: "rgba(224,114,114,0.1)",
-  },
 };
 
 export const navigationLinks = [
@@ -259,15 +246,6 @@ export const enNavigationLinks = [
   { label: "About", href: "/en/about/" },
 ] as const;
 
-/** Navigation allemande (contenu aligné sur la version française jusqu’à traduction). */
-export const deNavigationLinks = [
-  { label: "Wissenschaft", href: "/de/science/" },
-  { label: "Geist", href: "/de/esprit/" },
-  { label: "Gesellschaft", href: "/de/societe/" },
-  { label: "Dissertations", href: "/de/dissertations/" },
-  { label: "Alle Artikel", href: "/de/blog/" },
-  { label: "Über uns", href: "/de/about/" },
-] as const;
 
 export const staticRoutes = [
   "/fr/",
@@ -277,7 +255,6 @@ export const staticRoutes = [
   "/fr/societe/",
   "/fr/grand-oral/",
   "/fr/dissertations/",
-  "/fr/analyses/",
   "/fr/about/",
   "/fr/glossaire/",
   "/fr/mentions-legales/",
@@ -294,14 +271,3 @@ export const enStaticRoutes = [
   "/en/about/",
 ] as const;
 
-export const deStaticRoutes = [
-  "/de/",
-  "/de/blog/",
-  "/de/science/",
-  "/de/esprit/",
-  "/de/societe/",
-  "/de/dissertations/",
-  "/de/about/",
-  "/de/mentions-legales/",
-  "/de/politique-confidentialite/",
-] as const;

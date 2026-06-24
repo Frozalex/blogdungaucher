@@ -5,14 +5,14 @@ import PushSubscribe from "./PushSubscribe.astro";
 import { t, type Lang } from "../i18n/translations";
 
 interface Props {
-  lang?: "fr" | "en" | "de" | "pt-br";
+  lang?: "fr" | "en" | "pt-br";
 }
 const { lang = "fr" } = Astro.props;
 
 const blogHref =
-  lang === "en" ? "/en/blog/" : lang === "de" ? "/de/blog/" : lang === "pt-br" ? "/pt-br/blog/" : "/fr/blog/";
+  lang === "en" ? "/en/blog/" : lang === "pt-br" ? "/pt-br/blog/" : "/fr/blog/";
 const aboutHref =
-  lang === "en" ? "/en/about/" : lang === "de" ? "/de/about/" : lang === "pt-br" ? "/pt-br/about/" : "/fr/about/";
+  lang === "en" ? "/en/about/" : lang === "pt-br" ? "/pt-br/about/" : "/fr/about/";
 
 /** Lang sûr pour le helper t() : si la clé n'existe pas dans la langue cible (ex. de), retombe sur fr. */
 const tLang: Lang = (["fr", "en", "pt-br"].includes(lang) ? lang : "fr") as Lang;
@@ -66,11 +66,9 @@ const tt = (key: string, fallback: string) => {
           href={
             lang === "en"
               ? `/en/${cat}/`
-              : lang === "de"
-                ? `/de/${cat}/`
-                : lang === "pt-br"
-                  ? `/pt-br/${cat}/`
-                  : categoryMap[cat].href
+              : lang === "pt-br"
+                ? `/pt-br/${cat}/`
+                : categoryMap[cat].href
           }
           data-t={`categories.${cat}.label`}
         >{tt(`categories.${cat}.label`, categoryMap[cat].label)}</a>
@@ -87,8 +85,8 @@ const tt = (key: string, fallback: string) => {
       >
         {tt("footer.notificationSettings", "Notifications et cookies")}
       </button>
-      <a href={lang === "en" ? "/en/mentions-legales/" : lang === "de" ? "/de/mentions-legales/" : "/fr/mentions-legales/"} data-t="footer.legal">{tt("footer.legal", "Mentions légales")}</a>
-      <a href={lang === "en" ? "/en/politique-confidentialite/" : lang === "de" ? "/de/politique-confidentialite/" : "/fr/politique-confidentialite/"} data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
+      <a href={lang === "en" ? "/en/mentions-legales/" : "/fr/mentions-legales/"} data-t="footer.legal">{tt("footer.legal", "Mentions légales")}</a>
+      <a href={lang === "en" ? "/en/politique-confidentialite/" : "/fr/politique-confidentialite/"} data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
     </div>
   </div>
 

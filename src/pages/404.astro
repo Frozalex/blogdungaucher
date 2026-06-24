@@ -5,11 +5,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
    `Astro.url.pathname` reflète le chemin demandé par l'utilisateur (ex.
    `/en/blog/foo-non-existant`). On adapte les CTAs en conséquence. */
 const pathname = Astro.url.pathname || "/";
-const lang: "fr" | "en" | "de" = pathname.startsWith("/en/")
+const lang: "fr" | "en" = pathname.startsWith("/en/")
   ? "en"
-  : pathname.startsWith("/de/")
-    ? "de"
-    : "fr";
+  : "fr";
 
 const copy = {
   fr: {
@@ -42,21 +40,6 @@ const copy = {
     blogHref: "/en/blog/",
     searchHref: "/en/recherche/",
   },
-  de: {
-    title: "Seite nicht gefunden | Blog d'un Gaucher",
-    description: "Die gesuchte Seite existiert nicht.",
-    eyebrow: "Schachmatt",
-    h1: "Diese Seite hat das Brett verlassen.",
-    lead: "Die gesuchte Stellung existiert nicht oder wurde auf ein anderes Feld verschoben.",
-    quote: "Man kann nicht gewinnen, ohne zu riskieren zu verlieren.",
-    quoteAuthor: "Emanuel Lasker",
-    home: "Zur Startseite",
-    blog: "Alle Artikel",
-    search: "Suchen",
-    homeHref: "/de/",
-    blogHref: "/de/blog/",
-    searchHref: "/de/recherche/",
-  },
 };
 const t = copy[lang];
 ---
@@ -64,7 +47,7 @@ const t = copy[lang];
   title={t.title}
   description={t.description}
   canonicalPath="/404"
-  lang={lang}
+  lang={lang as "fr" | "en"}
   noindex={true}
 >
   <section class="nf">

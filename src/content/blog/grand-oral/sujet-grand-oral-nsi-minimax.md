@@ -73,6 +73,10 @@ def minimax(position, profondeur, maximise):
 
 Trois éléments du **programme** de spécialité **NSI** apparaissent ici. Premièrement, la **récursivité** : la fonction `minimax` s'appelle elle-même, sur une position transformée par un coup. Deuxièmement, le **cas de base** : la condition `profondeur == 0` ou `position.est_terminee()` qui arrête la récursion. Sans ce cas de base, on aurait une récursion infinie. Troisièmement, la structure d'**arbre** : chaque appel récursif explore les fils d'un nœud avant de remonter le résultat au parent. C'est exactement un parcours en profondeur.
 
+Pour visualiser ce parcours, l'arbre ci-dessous montre minimax à l'œuvre sur un petit exemple : les triangles pointant vers le haut sont des nœuds **MAX** (mon tour), ceux pointant vers le bas des nœuds **MIN** (l'adversaire), et les carrés sont les feuilles évaluées. Lance la lecture pour voir le score remonter de bas en haut. Active ensuite l'**élagage alpha-bêta** : tu verras certaines branches se faire couper, car le programme peut prouver qu'elles ne changeront pas le résultat — c'est exactement l'optimisation dont je parlerai plus loin.
+
+<minimax-tree leaves="3 5 6 9 1 2 0 -1"></minimax-tree>
+
 La **complexité** de l'algorithme est cruciale à comprendre. Aux échecs, chaque joueur dispose en moyenne de trente-cinq coups légaux. Si je veux explorer toutes les variantes jusqu'à une profondeur de quatre demi-coups, je dois examiner trente-cinq puissance quatre positions, soit environ un million cinq cent mille. À profondeur six, on dépasse le milliard. La **complexité** est exponentielle, en notation grand O, on écrit O(b puissance d), où b est le facteur de branchement et d la profondeur.
 
 Or les échecs ont environ dix puissance cent vingt parties possibles, plus que d'atomes dans l'univers observable. Il est physiquement impossible d'explorer l'arbre entier. Le **programme** doit donc se contenter d'une exploration partielle, à profondeur fixée, et utiliser une fonction d'évaluation pour estimer la qualité des positions atteintes à cette profondeur limite.

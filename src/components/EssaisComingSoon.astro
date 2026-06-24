@@ -1,5 +1,5 @@
 ---
-type Lang = "fr" | "en" | "de";
+type Lang = "fr" | "en";
 const { lang = "fr" } = Astro.props as { lang?: Lang };
 
 const copy : Record<
@@ -21,14 +21,6 @@ const copy : Record<
     curtainTitle: "The first dissertation is here",
     curtainText:
       "Dissertations will not follow a regular schedule: each piece will appear when it can stand on its own.",
-  },
-  de: {
-    eyebrow: "Redaktionelles Notizbuch",
-    h1: "Dissertationen",
-    lead: "Lange argumentative Texte, keine Analysen. Was die Rubriken nicht sagen, und warum ich weiterspiele.",
-    curtainTitle: "Die erste Dissertation ist da",
-    curtainText:
-      "Die Dissertationen erscheinen ohne festen Rhythmus, sondern wenn ein Text auf eigenen Beinen steht.",
   },
 };
 

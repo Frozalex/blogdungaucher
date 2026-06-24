@@ -1,6 +1,6 @@
 # Blog d'un Gaucher
 
-Blog bilingue FR/EN sur les échecs : psychologie, science, société, grand oral bac.  
+Blog sur les échecs en FR/EN/PT-BR : psychologie, science, société, grand oral bac.  
 → [blogdungaucher.com](https://blogdungaucher.com)
 
 ## Stack
@@ -8,9 +8,10 @@ Blog bilingue FR/EN sur les échecs : psychologie, science, société, grand ora
 | Couche | Outil |
 |---|---|
 | Framework | Astro 6 (SSG, sortie statique) |
-| Langues | FR (principale) + EN (traductions) |
-| Styles | CSS pur, variables custom, dark mode |
-| Recherche | Pagefind (index généré au build) |
+| Langues | FR (principale) + EN + PT-BR (lancement 01/07/2026) |
+| Styles | CSS pur, variables custom, dark mode toggle |
+| Recherche | Pagefind (index généré au build) + filtres catégorie |
+| Analytics | Umami (auto-hébergé, privacy-first, sans consentement) |
 | Commentaires | Remark42 (auto-hébergé) |
 | Notifications | ntfy (auto-hébergé) + Brevo (newsletter) |
 | Déploiement | VPS Ubuntu / nginx, pull-based (cron) |
@@ -64,7 +65,8 @@ blog-gaucher/
 │   │   └── dissertations/          ← textes longs argumentés
 │   ├── pages/
 │   │   ├── fr/                     ← toutes les pages FR
-│   │   └── en/                     ← toutes les pages EN
+│   │   ├── en/                     ← toutes les pages EN
+│   │   └── pt-br/                  ← pages PT-BR (actives dès 01/07/2026)
 │   ├── components/
 │   ├── layouts/
 │   ├── data/site.ts                ← navigation, routes statiques, categoryMap
@@ -204,3 +206,11 @@ Voir `.env.example` pour la liste complète. Les variables `PUBLIC_*` sont embar
 | `PUBLIC_NTFY_URL` | URL ntfy (notifications push) |
 | `PUBLIC_NTFY_TOPIC` | Topic ntfy |
 | `PUBLIC_NTFY_VAPID_KEY` | Clé VAPID publique (web push) |
+| `PUBLIC_UMAMI_WEBSITE_ID` | Website ID Umami (analytics, optionnel en dev) |
+| `PUBLIC_UMAMI_URL` | URL de l'instance Umami (défaut : stats.blogdungaucher.com) |
+
+## Umami Analytics
+
+Instance auto-hébergée sur le VPS à `stats.blogdungaucher.com`.  
+Config Docker : `tools/umami/docker-compose.yml` → à copier dans `/docker/umami/` sur le VPS.  
+Privacy-first, sans cookie, pas de bannière de consentement RGPD requise.

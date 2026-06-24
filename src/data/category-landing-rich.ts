@@ -20,7 +20,7 @@ export type CategoryLandingRich = {
 };
 
 export const categoryLandingRich: Partial<
-  Record<CategorySlug, Record<"fr" | "en" | "de", CategoryLandingRich>>
+  Record<CategorySlug, Record<"fr" | "en", CategoryLandingRich>>
 > = {
   science: {
     fr: {
@@ -162,55 +162,6 @@ export const categoryLandingRich: Partial<
           title: "Measurement & humility",
           body:
             "MRI, cohorts, meta-analyses: reading studies without pretending your next round was predicted on page four.",
-        },
-      ],
-    },
-    de: {
-      sections: [
-        {
-          title: "Warum Spielwissenschaft mehr ist als Vereinskultur",
-          paragraphs: [
-            "Schach ist kein vager Intelligenztest: Es verbindet Gedächtnis, Wahrnehmung, Rechnen und Entscheiden unter Bedingungen. Die Forschung nutzt das Spielfeld seit Jahrzehnten, von de Groot bis zu aktuellen bildgebenden Verfahren. Für dich zählt weniger, welche Hirnregion auf einem Scan „aufleuchtet“, sondern welche Fähigkeiten du wirklich trainierst und welche populären Geschichten die Daten nicht tragen.",
-            "In dieser Rubrik trennen wir robuste Befunde von Neuromythen und PR-Narrativen. Eine kleine, sauber gemachte Studie kann wichtiger sein als eine spektakuläre Anekdote. Wir lesen methodisch: Stichprobe, Aufgabe, Messung, Grenzen. Du findest Zusammenfassungen mit Bezug zur Praxis: Chunking, kognitive Last, Zeitnot, Entscheidungsmüdigkeit : ohne Neuro-Wundertäterei.",
-          ],
-        },
-        {
-          title: "Expertise, Gedächtnis und Transferillusionen",
-          paragraphs: [
-            "Starke Spieler merken sich keine zufälligen Figurenhaufen besser; sie erkennen Bedeutungsmuster und verdichten Information zu wenigen mentalen Objekten. Klassische Demonstrationen, echte Stellung gegen durchgemischte Figuren, sind keine Tricks; sie zeigen strukturiertes Langzeitwissen.",
-            "Automatischer Transfer ins Leben außerhalb des Bretts bleibt oft eng oder schwach: Variantenrechnen macht dich nicht automatisch zum Planungsgenie. Metaanalysen warnen genau vor dieser Fantasie. Wir fragen, was plausibel übergeht: Aufmerksamkeitsgewohnheiten, Umgang mit Fehlern, Analysehygiene, und was feldspezifisch bleibt.",
-          ],
-        },
-        {
-          title: "Messbare Gehirne, vermessene Aussagen",
-          paragraphs: [
-            "Bildgebung und Längsschnitte bereichern das Bild von Expertise : ohne Individualität auszulöschen. Korrelation ist nicht Schicksal; oft spiegelt sie intensiven Übungsweg und Kontext wider. Wir übersetzen Ergebnisse in Trainingsfragen: Was übst du beim Taktiklösen, Endspieltraining, Eröffnungsmodellen wirklich? Wo endet der Nutzen einer Session, und wann sind Stress oder Müdigkeit als „kognitive“ Schwäche getarnt?",
-            "Wissenschaft ersetzt keine Biografie; sie liefert Raster für klügere Zeitinvestition. Texte nennen überprüfbare Quellen, Zahlen wo möglich, kritische Kanten bei Dissens. Nuancierte Wahrheit schlägt Marketingversprechen.",
-          ],
-        },
-        {
-          title: "So kannst du diese Rubrik nutzen",
-          paragraphs: [
-            "Sieh sie als Werkzeugkasten. Für effizienteres Training starte bei Aufmerksamkeit und Arbeitsgedächtnis; bei Überlast oder Stockungen lies zu Last und Energiemanagement. Geh zu den Primärquellen zurück : Forschung bewegt sich, unsere Synthesen auch.",
-            "Der rote Faden: Neugier ohne Naivität, methodische Strenge ohne Menschen zu Versuchskaninchen zu machen; und immer noch einen nächlichen Zug zu spielen.",
-          ],
-        },
-      ],
-      cards: [
-        {
-          title: "Kognition & Gedächtnis",
-          body:
-            "Chunks, schnelle Mustererkennung, organisiertes Wissen : Expertise wirkt „flüssig“, ohne mystisches Talent.",
-        },
-        {
-          title: "Entscheidung unter Druck",
-          body:
-            "Zeitnot, typische Spätfehler, emotionale Schärfe: wie du Routinen baust, die im Ernstfall halten.",
-        },
-        {
-          title: "Messung & Demut",
-          body:
-            "Datensätze, Kohorten, Metaanalysen : Studien lesen, ohne die nächste Partie vorgezeichnet zu glauben.",
         },
       ],
     },
@@ -359,55 +310,6 @@ export const categoryLandingRich: Partial<
         },
       ],
     },
-    de: {
-      sections: [
-        {
-          title: "Das Spiel ist auch ein psychologisches Ereignis",
-          paragraphs: [
-            "Du kannst Eröffnungen und Muster perfektionieren : und trotzdem ein Feld haben, das der Motor nicht repariert: Verhältnis zum Ergebnis, zur Uhr, zum Selbstbild gegenüber dem Gegner. Wettkampfmentalität ist keine Motivationsdekoration, sondern ein Rahmen für Ungewissheit, wenn das Ergebnis Matt oder Aufgabe heißt.",
-            "Diese Rubrik nimmt Psychologie ernst ohne sie zu mystifizieren. Wir sprechen über Leistungsangst, Emotionsregulation, nachhaltige Aufmerksamkeit : für Vereinsspielerinnen ebenso wie für ambitionierte Turnierspieler. Wenig Floskeln: Beobachtungsraster, Benennung, dann kleine, wiederholbare Verhaltensänderungen.",
-          ],
-        },
-        {
-          title: "Druck, Fehler und die Geschichte danach",
-          paragraphs: [
-            "Ein Fehler ist nicht nur ein schwacher Zug : oft startet er eine Erzählung („ich tauge nicht“, „schon wieder“), die spätere Entscheidungen kapert. Umgekehrt kann eine Serie dich trunken machen und taktisch nachlässig werden. Materialfehler und Identitätsnarrativ zu trennen ist trainierbar: Atempausen, Mini-Checklisten vor kritischen Zügen, Session-Tagebuch.",
-            "Ratingdruck verwandelt eine Schätzung manchmal in ein moralisches Etikett. Erinnerung: Elo ist ein Modell, kein Urteil über deinen Wert. Überidentifikation lässt dich eine Zahl schützen statt die Stellung zu spielen : ein teurer Effekt, den wir klar benennen.",
-          ],
-        },
-        {
-          title: "Vertrauen, Vorbereitung, sozialer Kontext",
-          paragraphs: [
-            "Vertrauen entsteht aus Belegen echter Arbeit: ehrliche Partieanalysen, messbare Trainingsziele, kleine Fortschritte. Wir behandeln auch Umfeld: Vereinsklima, Online-Toxizität, Vergleiche mit anderen : Kräfte, die Stereotypbedrohung oder sozialen Druck schüren.",
-            "Statt Selbsthilfe-Kitsch: realistische Routinen, Schlaf und Belastung vor Events, sauberes Ende einer Niederlage ohne Grübeln. Verhalten zählt, nicht Parolen.",
-          ],
-        },
-        {
-          title: "Lesen und anwenden",
-          paragraphs: [
-            "Nutze die Texte wie Feldnotizen: eine Idee pro Woche, testen auf wenigen Partien, protokollieren was sich ändert. Psychologie wächst iterativ : nicht durch eine Erleuchtung.",
-            "Wenn ein Artikel unbequem trifft, ist das gut: Es geht um nutzbare Klarheit : Niederlagen erträglicher, Siege weniger berauschend. Justiere dein inneres Tempo so sorgfältig wie deine Varianten.",
-          ],
-        },
-      ],
-      cards: [
-        {
-          title: "Emotion & Uhr",
-          body:
-            "Zeitnot, Patzer-Spiralen, Adrenalin : Sequenzen erkennen und unterbrechen.",
-        },
-        {
-          title: "Identität & Ergebnis",
-          body:
-            "Aus der Falle „Ich bin meine Wertung“ : zurück zu messbaren Prozesszielen.",
-        },
-        {
-          title: "Soziales Rauschen",
-          body:
-            "Verein, Foren, Vergleiche : wie Außenblicke Druck erzeugen und wie du ihn senkst.",
-        },
-      ],
-    },
   },
 
   societe: {
@@ -550,55 +452,6 @@ export const categoryLandingRich: Partial<
           title: "Digital & governance",
           body:
             "Platforms, federations, communities : where decisions happen and who bears social costs.",
-        },
-      ],
-    },
-    de: {
-      sections: [
-        {
-          title: "Schach in der Welt jenseits des Monitors",
-          paragraphs: [
-            "Das Spiel hat eine ambigue Kulturrolle : mal Genie-Einsiedler-Mythos, mal Wunderpädagogik, oft Kulisse in Film oder Vereinsplakaten. Jenseits der Motive durchziehen Schach Institutionen : Schulen, Verbände, Medien, Online-Plattformen : und beeinflussen, wer lernen darf, wer bleibt, wer oben mitspielen kann.",
-            "Wir ordnen soziale Mechanismen mit überprüfbaren Hinweisen ein : FIDE-Demografie, Forschung zu Beteiligung und Gender, Soziologie kompetitiver Freizeit : ohne Menschen auf Schubladen zu reduzieren und ohne Spieler zu Projektionsfiguren zu machen. Komplexität bleibt: dieselbe Maßnahme kann je Kontext völlig unterschiedlich wirken.",
-          ],
-        },
-        {
-          title: "Bildung, Outreach, Versprechen",
-          paragraphs: [
-            "Schulprojekte und Vereine zeigen: Schach kann Konzentration und Kooperation öffnen : wenn Betreuung ernst genommen wird, pädagogische Ziele klar sind und informelle Ausschlüsse wegen Geschlecht, sozialer Klasse oder Behinderung als Risiko behandelt werden, nicht als Randnotiz.",
-            "Wir prüfen Marketing („Schach macht schlau“) gegentragfähige Literatur. Transfer in Schule existiert manchmal, oft bescheiden, immer abhängig vom Design : keine Universalmagie, aber erkennbare Bedingungen für wirksame Programme.",
-          ],
-        },
-        {
-          title: "Darstellung, Medien, symbolische Macht",
-          paragraphs: [
-            "Vom Kino zum Stream formen Spielerbilder Erwartungen : inspirierend oder erstickend. Wer ist sichtbar als Modell? Welche Geschichten werden über Frauen, über Kinder aus prekären Kontexten, über Randregionen der Weltelite erzählt? Darstellung ist nicht nur Ästhetik: Sie lenkt Budgets, Sponsoren, Vereinszugang.",
-            "Wir kreuzen diese Fragen mit Daten : wenn möglich : und mit Alltagsnotizen aus Vereinen, wenn nationale Medien Schach eine Saison lang „entdecken“ und dann vergessen.",
-          ],
-        },
-        {
-          title: "Lesen mit kritischem Blick",
-          paragraphs: [
-            "Nutze die Texte für ehrliche Gespräche : in Schule, Familie, Verein : ohne Schach zur Wunderwaffe oder zur leeren Kulturkampf-Kulisse zu machen. Jeder Artikel trennt Fakten, Interpretation und moralische Appelle.",
-            "Wenn Schach deine Leidenschaft ist, teilen Millionen sie unter anderen Rahmenbedingungen. Perspektivenvielfalt stärkt Anstand im Feld : und die Qualität der Debatte.",
-          ],
-        },
-      ],
-      cards: [
-        {
-          title: "Schule & Vereine",
-          body:
-            "Zugang, echte Inklusion, Evaluation : jenseits von Slogans.",
-        },
-        {
-          title: "Gender & Demografie",
-          body:
-            "Teilnahmezahlen und warum Elitenpyramiden die Basis widerspiegeln.",
-        },
-        {
-          title: "Digital & Governance",
-          body:
-            "Plattformen, FIDE, Communities : wo entschieden wird und wer zahlt.",
         },
       ],
     },

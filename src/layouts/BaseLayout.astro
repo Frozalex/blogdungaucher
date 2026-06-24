@@ -55,7 +55,6 @@ const {
   lang = "fr",
   frPath,
   enPath,
-  dePath,
   ptBrPath,
   omitEnDeAlternateLinks = false,
   prevHref,
@@ -73,11 +72,9 @@ const {
   publishDate?: Date;
   modifiedDate?: Date;
   section?: string;
-  lang?: "fr" | "en" | "de" | "pt-br";
+  lang?: "fr" | "en" | "pt-br";
   frPath?: string;
   enPath?: string;
-  /** Chemin DE optionnel (sinon dérivé du canonical via swapLangPrefix). */
-  dePath?: string;
   /** Chemin PT-BR optionnel (sinon dérivé du canonical via swapLangPrefix). */
   ptBrPath?: string;
   /** Articles FR uniquement (ex. Grand oral) : pas d’hreflang en/de/pt-br vers des URLs inexistantes. */
@@ -89,12 +86,10 @@ const {
 
 const resolvedFrPath = frPath ?? swapLangPrefix(canonicalPath, "fr");
 const resolvedEnPath = enPath ?? swapLangPrefix(canonicalPath, "en");
-const resolvedDePath = dePath ?? swapLangPrefix(canonicalPath, "de");
 const resolvedPtBrPath = ptBrPath ?? swapLangPrefix(canonicalPath, "pt-br");
 const canonicalUrl = new URL(canonicalPath, siteConfig.siteUrl).toString();
 const frCanonicalUrl = new URL(resolvedFrPath, siteConfig.siteUrl).toString();
 const enCanonicalUrl = new URL(resolvedEnPath, siteConfig.siteUrl).toString();
-const deCanonicalUrl = new URL(resolvedDePath, siteConfig.siteUrl).toString();
 const ptBrCanonicalUrl = new URL(resolvedPtBrPath, siteConfig.siteUrl).toString();
 const ptBrLive = new Date() >= PT_BR_LAUNCH_DATE;
 
@@ -105,11 +100,10 @@ const structuredDataItems = structuredData
     : [structuredData]
   : [];
 
-const inLanguage = lang === "en" ? "en-US" : lang === "de" ? "de-DE" : lang === "pt-br" ? "pt-BR" : "fr-FR";
+const inLanguage = lang === "en" ? "en-US" : lang === "pt-br" ? "pt-BR" : "fr-FR";
 
-/** Politique d'indexation : FR + EN sont désormais indexables. PT-BR indexable dès lancement.
-   DE reste en noindex. */
-const effectiveNoindex = noindex || lang === "de";
+/** Politique d'indexation : FR + EN sont désormais indexables. PT-BR indexable dès lancement. */
+const effectiveNoindex = noindex;
 
 // Fallback: si une page "article" oublie de fournir structuredData,
 // on injecte un BlogPosting minimal pour ne jamais "perdre" le schema.org.
@@ -271,7 +265,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         // Pages serveur en EN/DE/PT-BR : on respecte la langue serveur, pas le localStorage.
         var serverLang = document.documentElement.dataset.serverLang || "fr";
         var storedLang =
-          serverLang === "en" || serverLang === "de" || serverLang === "pt-br"
+          serverLang === "en" || serverLang === "pt-br"
             ? serverLang
             : (localStorage.getItem("blogdungaucher.lang") || "fr");
         window.__lang = storedLang;
@@ -320,7 +314,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <meta property="og:image" content={socialImage} />
     <meta property="og:image:secure_url" content={socialImage} />
     <meta property="og:image:alt" content={title} />
-    <meta property="og:locale" content={lang === "en" ? "en_US" : lang === "de" ? "de_DE" : lang === "pt-br" ? "pt_BR" : "fr_FR"} />
+    <meta property="og:locale" content={lang === "en" ? "en_US" : lang === "pt-br" ? "pt_BR" : "fr_FR"} />
     {type === "article" && publishDate && (
       <meta property="article:published_time" content={publishDate.toISOString()} />
     )}
@@ -501,7 +495,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     {/* Skip-link "Aller au contenu" retiré (réintroduction : remettre
         <a class="skip-link" href="#main-content">Aller au contenu</a> ici ;
         le CSS .skip-link reste dormant dans global.css). */}
-    <Navbar frHref={resolvedFrPath} enHref={resolvedEnPath} deHref={resolvedDePath} ptBrHref={resolvedPtBrPath} lang={lang} />
+    <Navbar frHref={resolvedFrPath} enHref={resolvedEnPath} ptBrHref={resolvedPtBrPath} lang={lang} />
     {/* tabindex="-1" : permet au skip-link de poser le focus programmatiquement
        sur <main>, garantissant que les lecteurs d'écran annoncent bien le landmark
        et que les navigateurs ne se contentent pas de scroller sans focuser. */}
@@ -527,7 +521,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
 
         const serverLang2 = document.documentElement.dataset.serverLang || "fr";
         const lang =
-          serverLang2 === "en" || serverLang2 === "de" || serverLang2 === "pt-br"
+          serverLang2 === "en" || serverLang2 === "pt-br"
             ? serverLang2
             : (localStorage.getItem("blogdungaucher.lang") || "fr");
         window.__lang = lang;

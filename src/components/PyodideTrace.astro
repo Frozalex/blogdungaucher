@@ -1,0 +1,401 @@
+---
+/**
+ * Visualiseur d'exécution Python (trace pas-à-pas, style « Python Tutor »).
+ *
+ * Objectif : montrer *ce que fait* un script Python — la ligne en cours, la
+ * pile d'appels (donc la récursivité), les variables locales et la sortie —
+ * directement dans un article.
+ *
+ * Opt-in côté Markdown : placer un marqueur invisible juste AVANT le bloc de
+ * code à rendre exécutable :
+ *
+ *     <div data-pytrace></div>
+ *
+ *     ```python
+ *     def f(x): ...
+ *     ```
+ *
+ * Le code reste un bloc ```python normal (coloré par Shiki, copiable, propre
+ * dans les exports PDF). Ce composant repère chaque marqueur, retrouve le bloc
+ * qui suit, et y greffe un bouton « Visualiser l'exécution ».
+ *
+ * Contraintes assumées :
+ *  - N'attacher le visualiseur QU'À des extraits autonomes (runnable). Le
+ *    pseudo-code (position.coups_possibles()…) n'est pas marqué.
+ *  - Pyodide (~6-7 Mo WASM) est chargé en LAZY au premier clic uniquement,
+ *    depuis le CDN jsDelivr. Rien n'est téléchargé pour les lecteurs qui ne
+ *    cliquent pas. Le poids est annoncé sur le bouton.
+ *
+ * À inclure une fois dans les templates d'article (comme InteractiveWidgets).
+ */
+const PYODIDE_VERSION = "0.26.4";
+---
+
+<script define:vars={{ PYODIDE_VERSION }}>
+  (() => {
+    const PYO_BASE = `https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/`;
+
+    // ── Chargement paresseux et partagé de Pyodide ────────────────────────
+    function loadPyodideOnce() {
+      if (window.__pyodideReady) return window.__pyodideReady;
+      window.__pyodideReady = (async () => {
+        await new Promise((resolve, reject) => {
+          const s = document.createElement("script");
+          s.src = `${PYO_BASE}pyodide.js`;
+          s.onload = resolve;
+          s.onerror = () => reject(new Error("Échec du chargement de Pyodide"));
+          document.head.appendChild(s);
+        });
+        // eslint-disable-next-line no-undef
+        return await loadPyodide({ indexURL: PYO_BASE });
+      })();
+      return window.__pyodideReady;
+    }
+
+    // Harnais Python : trace l'exécution du code utilisateur et renvoie un JSON
+    // { steps:[{event,line,func,depth,stack,locals,ret,out}], stdout, error }.
+    const HARNESS = `
+import sys, io, json
+_steps = []
+_out = io.StringIO()
+_code = compile(USER_CODE, '<user>', 'exec')
+_ns = {'__name__': '__main__'}
+
+def _name(co):
+    return '(module)' if co.co_name == '<module>' else co.co_name
+
+def _tr(frame, event, arg):
+    if frame.f_code.co_filename != '<user>':
+        return _tr
+    if event in ('line', 'call', 'return'):
+        fn = _name(frame.f_code)
+        # On ignore l'entrée/sortie du module lui-même (bruit « ligne 0 »).
+        if fn == '(module)' and event in ('call', 'return'):
+            return _tr
+        stack = []
+        f = frame
+        while f is not None:
+            if f.f_code.co_filename == '<user>':
+                stack.append(_name(f.f_code))
+            f = f.f_back
+        stack.reverse()
+        loc = {}
+        for k, v in list(frame.f_locals.items()):
+            # Masque dunders, builtins et la variable d'injection du harnais.
+            if k.startswith('__') or k == 'USER_CODE':
+                continue
+            try:
+                loc[k] = repr(v)
+            except Exception:
+                loc[k] = '<?>'
+        _steps.append({
+            'event': event,
+            'line': frame.f_lineno,
+            'func': _name(frame.f_code),
+            'depth': len(stack),
+            'stack': stack,
+            'locals': loc,
+            'ret': (repr(arg) if event == 'return' else None),
+            'out': _out.getvalue(),
+        })
+        if len(_steps) > 4000:
+            sys.settrace(None)
+    return _tr
+
+_old = sys.stdout
+sys.stdout = _out
+_err = None
+try:
+    sys.settrace(_tr)
+    exec(_code, _ns)
+except Exception:
+    import traceback
+    _err = traceback.format_exc()
+finally:
+    sys.settrace(None)
+    sys.stdout = _old
+
+# Étape finale : état complet (notamment la sortie du dernier print, écrite
+# après le dernier événement tracé).
+_steps.append({
+    'event': 'end', 'line': 0, 'func': '(module)', 'depth': 0,
+    'stack': [], 'locals': {}, 'ret': None, 'out': _out.getvalue(),
+})
+
+json.dumps({'steps': _steps, 'stdout': _out.getvalue(), 'error': _err})
+`;
+
+    // ── Styles (injectés une fois, classes préfixées pyt-) ────────────────
+    function injectStyles() {
+      if (document.getElementById("pyt-styles")) return;
+      const css = `
+        .pyt-launch {
+          display: inline-flex; align-items: center; gap: .45rem;
+          margin: -0.4rem 0 1.4rem; font: inherit; font-size: .82rem; font-weight: 600;
+          cursor: pointer; padding: .45rem .85rem; border-radius: var(--radius-pill, 999px);
+          border: 1px solid var(--c, #3d8b37); background: var(--c, #3d8b37); color: #fff;
+          transition: filter .15s;
+        }
+        .pyt-launch:hover { filter: brightness(1.06); }
+        .pyt-launch small { font-weight: 500; opacity: .8; }
+        .pyt-launch:disabled { opacity: .55; cursor: progress; }
+        .pyt-panel {
+          margin: -0.4rem 0 1.6rem; border: 1px solid var(--border-soft, #e4dfd5);
+          border-left: 4px solid var(--c, #3d8b37); border-radius: var(--radius-lg, 14px);
+          background: var(--surface, #fff); box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,.06));
+          overflow: hidden; font-family: var(--font-display, system-ui, sans-serif);
+        }
+        .pyt-head {
+          display: flex; align-items: center; justify-content: space-between; gap: .6rem;
+          padding: .7rem 1rem; border-bottom: 1px solid var(--border-soft, #e4dfd5);
+          font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+          color: var(--c, #3d8b37);
+        }
+        .pyt-close { background: none; border: none; cursor: pointer; color: var(--text-dim, #8a857d);
+          font-size: 1.1rem; line-height: 1; padding: .1rem .3rem; border-radius: 6px; }
+        .pyt-close:hover { color: var(--text-main, #1c1a16); background: var(--bg-warm, #f4f1ea); }
+        .pyt-code { margin: 0; padding: .6rem 0; background: var(--bg-warm, #f4f1ea);
+          font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .82rem;
+          line-height: 1.6; overflow-x: auto; }
+        .pyt-ln { display: flex; padding: 0 1rem; white-space: pre; }
+        .pyt-ln.cur { background: color-mix(in srgb, var(--c, #3d8b37) 16%, transparent); }
+        .pyt-gut { display: inline-block; width: 2ch; margin-right: 1rem; text-align: right;
+          color: var(--text-dim, #8a857d); user-select: none; flex: none; }
+        .pyt-ln.cur .pyt-gut { color: var(--c, #3d8b37); font-weight: 700; }
+        .pyt-ln.cur .pyt-gut::after { content: " ▸"; }
+        .pyt-src { color: var(--text-main, #1c1a16); }
+        .pyt-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem;
+          padding: .7rem 1rem; border-top: 1px solid var(--border-soft, #e4dfd5); }
+        .pyt-controls button {
+          font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer;
+          padding: .38rem .7rem; border-radius: var(--radius-pill, 999px);
+          border: 1px solid var(--c, #3d8b37); background: transparent; color: var(--c, #3d8b37);
+        }
+        .pyt-controls button.solid { background: var(--c, #3d8b37); color: #fff; }
+        .pyt-controls button:disabled { opacity: .4; cursor: not-allowed; }
+        .pyt-count { margin-left: auto; font-size: .78rem; color: var(--text-muted, #54504a); }
+        .pyt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+          background: var(--border-soft, #e4dfd5); border-top: 1px solid var(--border-soft, #e4dfd5); }
+        .pyt-box { background: var(--surface, #fff); padding: .7rem 1rem; min-height: 4.5rem; }
+        .pyt-box h4 { margin: 0 0 .45rem; font-size: .66rem; font-weight: 700; letter-spacing: .1em;
+          text-transform: uppercase; color: var(--text-dim, #8a857d); }
+        .pyt-vars { list-style: none; margin: 0; padding: 0; display: grid; gap: .25rem;
+          font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .82rem; }
+        .pyt-vars li { color: var(--text-muted, #54504a); }
+        .pyt-vars b { color: var(--text-main, #1c1a16); font-weight: 700; }
+        .pyt-vars .v { color: var(--c, #3d8b37); }
+        .pyt-stack { display: flex; flex-direction: column-reverse; gap: .25rem; margin: 0; padding: 0; list-style: none; }
+        .pyt-stack li { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .8rem;
+          padding: .2rem .5rem; border-radius: 6px; background: var(--bg-warm, #f4f1ea); color: var(--text-muted, #54504a); }
+        .pyt-stack li.top { background: color-mix(in srgb, var(--c, #3d8b37) 16%, var(--bg-warm, #f4f1ea));
+          color: var(--text-main, #1c1a16); font-weight: 700; }
+        .pyt-out { grid-column: 1 / -1; }
+        .pyt-out pre { margin: .2rem 0 0; font-family: ui-monospace, Menlo, Consolas, monospace;
+          font-size: .82rem; color: var(--text-main, #1c1a16); white-space: pre-wrap; min-height: 1.2em; }
+        .pyt-status { padding: .65rem 1rem .8rem; border-top: 1px solid var(--border-soft, #e4dfd5);
+          background: color-mix(in srgb, var(--c, #3d8b37) 5%, var(--surface, #fff));
+          font-size: .85rem; line-height: 1.5; color: var(--text-muted, #54504a); }
+        .pyt-status .ev { font-weight: 700; color: var(--text-main, #1c1a16); }
+        .pyt-err { color: #b4233a; white-space: pre-wrap; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .8rem; }
+        @media (max-width: 560px) { .pyt-grid { grid-template-columns: 1fr; } }
+      `;
+      const style = document.createElement("style");
+      style.id = "pyt-styles";
+      style.textContent = css;
+      document.head.appendChild(style);
+    }
+
+    const esc = (s) =>
+      String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+    // ── Construit le visualiseur pour un extrait de code ───────────────────
+    function buildViz(codeText, mountAfter) {
+      const lines = codeText.replace(/\s+$/, "").split("\n");
+      const panel = document.createElement("div");
+      panel.className = "pyt-panel";
+      panel.innerHTML = `
+        <div class="pyt-head">
+          <span>Exécution pas à pas</span>
+          <button class="pyt-close" type="button" aria-label="Fermer">✕</button>
+        </div>
+        <div class="pyt-code">${lines
+          .map(
+            (l, i) =>
+              `<div class="pyt-ln" data-l="${i + 1}"><span class="pyt-gut">${i + 1}</span><span class="pyt-src">${esc(l) || " "}</span></div>`,
+          )
+          .join("")}</div>
+        <div class="pyt-controls">
+          <button class="pyt-prev" type="button">◀ Précédent</button>
+          <button class="pyt-next solid" type="button">Suivant ▶</button>
+          <button class="pyt-auto" type="button">▶ Auto</button>
+          <button class="pyt-reset" type="button">↺</button>
+          <span class="pyt-count"></span>
+        </div>
+        <div class="pyt-grid">
+          <div class="pyt-box"><h4>Pile d'appels</h4><ul class="pyt-stack"></ul></div>
+          <div class="pyt-box"><h4>Variables locales</h4><ul class="pyt-vars"></ul></div>
+          <div class="pyt-box pyt-out"><h4>Sortie (stdout)</h4><pre></pre></div>
+        </div>
+        <div class="pyt-status"></div>
+      `;
+      mountAfter.insertAdjacentElement("afterend", panel);
+
+      const els = {
+        lines: [...panel.querySelectorAll(".pyt-ln")],
+        prev: panel.querySelector(".pyt-prev"),
+        next: panel.querySelector(".pyt-next"),
+        auto: panel.querySelector(".pyt-auto"),
+        reset: panel.querySelector(".pyt-reset"),
+        count: panel.querySelector(".pyt-count"),
+        stack: panel.querySelector(".pyt-stack"),
+        vars: panel.querySelector(".pyt-vars"),
+        out: panel.querySelector(".pyt-out pre"),
+        status: panel.querySelector(".pyt-status"),
+        close: panel.querySelector(".pyt-close"),
+      };
+      return { panel, els };
+    }
+
+    const EV_LABEL = {
+      call: "appel de fonction",
+      line: "exécution de la ligne",
+      return: "retour de fonction",
+    };
+
+    function renderStep(els, steps, i) {
+      const s = steps[i];
+      els.lines.forEach((el) => el.classList.toggle("cur", Number(el.dataset.l) === s.line));
+      const curLine = els.lines.find((el) => Number(el.dataset.l) === s.line);
+      if (curLine) curLine.scrollIntoView({ block: "nearest" });
+
+      // Pile d'appels (haut = frame courante).
+      els.stack.innerHTML = s.stack
+        .map((f, idx) => `<li class="${idx === s.stack.length - 1 ? "top" : ""}">${esc(f)}</li>`)
+        .join("");
+
+      // Variables locales.
+      const entries = Object.entries(s.locals);
+      els.vars.innerHTML = entries.length
+        ? entries.map(([k, v]) => `<li><b>${esc(k)}</b> = <span class="v">${esc(v)}</span></li>`).join("")
+        : `<li style="opacity:.6">— aucune —</li>`;
+
+      els.out.textContent = s.out || "";
+      els.count.textContent = `Étape ${i + 1} / ${steps.length}`;
+
+      let msg = `<span class="ev">${EV_LABEL[s.event]}</span> · <code>${esc(s.func)}</code> (ligne ${s.line})`;
+      if (s.event === "return") msg += ` → renvoie <span class="ev">${esc(s.ret)}</span>`;
+      els.status.innerHTML = msg;
+
+      els.prev.disabled = i === 0;
+      els.next.disabled = i === steps.length - 1;
+    }
+
+    async function runViz(codeText, mountAfter, launchBtn) {
+      launchBtn.disabled = true;
+      launchBtn.innerHTML = "⏳ Chargement du moteur Python…";
+      let py;
+      try {
+        py = await loadPyodideOnce();
+      } catch (e) {
+        launchBtn.disabled = false;
+        launchBtn.textContent = "⚠ Échec du chargement — réessayer";
+        return;
+      }
+      launchBtn.innerHTML = "⏳ Exécution…";
+      let data;
+      try {
+        py.globals.set("USER_CODE", codeText);
+        const raw = await py.runPythonAsync(HARNESS);
+        data = JSON.parse(raw);
+      } catch (e) {
+        launchBtn.disabled = false;
+        launchBtn.textContent = "⚠ Erreur d'exécution — réessayer";
+        return;
+      }
+
+      launchBtn.style.display = "none";
+      const { panel, els } = buildViz(codeText, mountAfter);
+
+      if (data.error) {
+        els.status.innerHTML = `<div class="pyt-err">${esc(data.error)}</div>`;
+      }
+      const steps = data.steps || [];
+      if (!steps.length) {
+        els.status.innerHTML = els.status.innerHTML || "Aucune étape tracée.";
+        return;
+      }
+
+      let i = 0;
+      let timer = null;
+      const stopAuto = () => {
+        if (timer) { clearInterval(timer); timer = null; els.auto.textContent = "▶ Auto"; }
+      };
+      const go = (n) => { i = Math.max(0, Math.min(steps.length - 1, n)); renderStep(els, steps, i); };
+
+      els.next.addEventListener("click", () => { stopAuto(); go(i + 1); });
+      els.prev.addEventListener("click", () => { stopAuto(); go(i - 1); });
+      els.reset.addEventListener("click", () => { stopAuto(); go(0); });
+      els.auto.addEventListener("click", () => {
+        if (timer) { stopAuto(); return; }
+        if (i >= steps.length - 1) go(0);
+        els.auto.textContent = "⏸ Pause";
+        timer = setInterval(() => {
+          if (i >= steps.length - 1) { stopAuto(); return; }
+          go(i + 1);
+        }, 850);
+      });
+      els.close.addEventListener("click", () => {
+        stopAuto();
+        panel.remove();
+        launchBtn.style.display = "";
+        launchBtn.disabled = false;
+        launchBtn.innerHTML = LAUNCH_LABEL;
+      });
+
+      renderStep(els, steps, 0);
+    }
+
+    const LAUNCH_LABEL = `▶ Visualiser l'exécution <small>· moteur Python ~7 Mo au 1ᵉʳ clic</small>`;
+
+    // ── Repère les marqueurs et greffe le bouton ──────────────────────────
+    // Couvre les deux chemins de rendu : Shiki (pre.astro-code, éventuellement
+    // emballé dans .code-block par CodeBlockEnhancer) ET le pipeline custom des
+    // articles à FAQ (<pre><code class="language-python">, sans classe sur <pre>).
+    function findCodeBlock(marker) {
+      let node = marker.nextElementSibling;
+      while (node) {
+        if (node.matches?.("pre")) return node;
+        if (node.matches?.(".code-block")) return node.querySelector("pre");
+        const inner = node.querySelector?.("pre");
+        if (inner) return inner;
+        node = node.nextElementSibling;
+      }
+      return null;
+    }
+
+    function init() {
+      const markers = document.querySelectorAll("[data-pytrace]:not([data-pyt-done])");
+      if (!markers.length) return;
+      injectStyles();
+      markers.forEach((marker) => {
+        marker.setAttribute("data-pyt-done", "1");
+        marker.style.display = "none";
+        const pre = findCodeBlock(marker);
+        if (!pre) return;
+        const code = pre.querySelector("code");
+        const codeText = (code ? code.textContent : pre.textContent).replace(/\s+$/, "");
+        // Point d'ancrage : le wrapper .code-block s'il existe, sinon le <pre>.
+        const mountAfter = pre.closest(".code-block") || pre;
+
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "pyt-launch";
+        btn.innerHTML = LAUNCH_LABEL;
+        mountAfter.insertAdjacentElement("afterend", btn);
+        btn.addEventListener("click", () => runViz(codeText, mountAfter, btn));
+      });
+    }
+
+    document.addEventListener("astro:page-load", init);
+  })();
+</script>

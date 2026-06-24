@@ -70,14 +70,14 @@ export async function getPostsByCategory(category: CategorySlug) {
   return posts.filter((post) => post.data.category === category);
 }
 
-/** Rubrique « Grand oral » : contenu uniquement en français (pas de pages EN/DE). */
+/** Rubrique « Grand oral » : contenu uniquement en français (pas de pages EN/PT-BR). */
 export function isFrenchOnlyPost(post: BlogEntry): boolean {
   return post.data.category === "grand-oral";
 }
 
 export function filterPostsForLang(
   posts: BlogEntry[],
-  lang: "fr" | "en" | "de" | "pt-br",
+  lang: "fr" | "en" | "pt-br",
 ): BlogEntry[] {
   if (lang === "fr") return posts;
   return posts.filter((p) => !isFrenchOnlyPost(p));
@@ -150,7 +150,7 @@ function interleaveLatestByPillar(posts: BlogEntry[], limit: number): BlogEntry[
 
 export async function getLatestPosts(
   limit: number,
-  lang: "fr" | "en" | "de" | "pt-br" = "fr",
+  lang: "fr" | "en" | "pt-br" = "fr",
 ) {
   const posts = await getAllPosts();
   const list = filterPostsForLang(posts, lang);

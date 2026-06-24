@@ -1,0 +1,598 @@
+---
+/**
+ * Infrastructure des visuels interactifs embarqués dans les articles.
+ *
+ * Les articles sont en Markdown pur (pas de MDX) : on ne peut pas y importer
+ * de composants Astro/React. La solution retenue est un ensemble de *custom
+ * elements* (web components vanilla) auto-enregistrés. L'auteur les déclenche
+ * depuis le Markdown avec une simple balise HTML, par ex. :
+ *
+ *   <minimax-tree leaves="3 5 6 9 1 2 0 -1"></minimax-tree>
+ *
+ * Le HTML brut passe (rehype `allowDangerousHtml`), et le navigateur « upgrade »
+ * automatiquement la balise dès que le custom element est défini — y compris
+ * après une View Transition Astro (la définition persiste).
+ *
+ * Ce composant n'émet PAS de balise visible : il ne fait qu'injecter le script
+ * de définition. On l'inclut une fois dans les templates d'article. Le script
+ * ne fait aucun travail tant qu'aucune balise widget n'est présente dans le DOM.
+ *
+ * Thématisation : les web components lisent les variables CSS de la page
+ * (--c accent d'article, --surface, --text-main…) qui traversent la frontière
+ * du Shadow DOM via héritage des custom properties. Fallbacks fournis pour les
+ * contextes hors-article.
+ */
+---
+
+<script>
+  // ── <minimax-tree> ──────────────────────────────────────────────────────
+  // Arbre de jeu binaire animé : visualise le parcours en profondeur de
+  // l'algorithme minimax, avec élagage alpha-bêta activable. Pédagogique pour
+  // les articles NSI (minimax, alpha-bêta).
+  //
+  // Attributs :
+  //   leaves : valeurs des feuilles, séparées par espaces/virgules. Le nombre
+  //            doit être une puissance de 2 (4, 8, 16…). Défaut : exemple à 8
+  //            feuilles choisi pour produire une coupure simple ET une coupure
+  //            de sous-arbre entier.
+  //   root   : "max" (défaut) ou "min" — type de la racine.
+  //   lang   : "fr" (défaut) ou "en" — langue des libellés.
+  class MinimaxTree extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.ready) return; // évite double-init (re-connexion DOM)
+      this.dataset.ready = "1";
+
+      const lang = (this.getAttribute("lang") || "fr").toLowerCase() === "en" ? "en" : "fr";
+      const T = MinimaxTree.STRINGS[lang];
+
+      const leaves = (this.getAttribute("leaves") || "3 5 6 9 1 2 0 -1")
+        .split(/[\s,]+/)
+        .map((s) => Number(s))
+        .filter((n) => Number.isFinite(n));
+      // Ramener à la puissance de 2 inférieure pour garantir un arbre binaire complet.
+      let n = 1;
+      while (n * 2 <= leaves.length) n *= 2;
+      const leafVals = leaves.slice(0, Math.max(n, 2));
+      const depth = Math.round(Math.log2(leafVals.length));
+      const rootIsMax = (this.getAttribute("root") || "max").toLowerCase() !== "min";
+
+      this._build(leafVals, depth, rootIsMax, T);
+    }
+
+    /** Construit la structure d'arbre + les positions SVG. */
+    _build(leafVals, depth, rootIsMax, T) {
+      const W = 760;
+      const H = 380;
+      const marginX = 34;
+      const top = 42;
+      const bottom = 338;
+
+      // Niveaux 0..depth. nodes[level] = tableau de nœuds.
+      const levels = [];
+      let idc = 0;
+      for (let l = 0; l <= depth; l++) {
+        const count = 2 ** l;
+        const arr = [];
+        const isMax = l % 2 === 0 ? rootIsMax : !rootIsMax;
+        const y = top + (l * (bottom - top)) / depth;
+        for (let i = 0; i < count; i++) {
+          const x = marginX + ((i + 0.5) * (W - 2 * marginX)) / count;
+          arr.push({
+            id: idc++,
+            level: l,
+            isLeaf: l === depth,
+            isMax,
+            x,
+            y,
+            value: l === depth ? leafVals[i] : null,
+            alpha: -Infinity,
+            beta: Infinity,
+            state: "idle",
+            children: [],
+          });
+        }
+        levels.push(arr);
+      }
+      // Liens parent → enfants.
+      for (let l = 0; l < depth; l++) {
+        levels[l].forEach((node, i) => {
+          node.children = [levels[l + 1][2 * i], levels[l + 1][2 * i + 1]];
+        });
+      }
+
+      const all = levels.flat();
+      this._nodes = all;
+      this._root = levels[0][0];
+      this._T = T;
+      this._W = W;
+      this._H = H;
+
+      this._renderShell();
+      this._renderTree();
+      this.reset();
+    }
+
+    /** Génère la séquence d'événements d'animation via alpha-bêta. */
+    _genSteps(pruning) {
+      const steps = [];
+      const reset = () => {
+        this._nodes.forEach((nd) => {
+          nd.value = nd.isLeaf ? nd.value : null;
+          nd.alpha = -Infinity;
+          nd.beta = Infinity;
+          nd.state = "idle";
+        });
+      };
+      reset();
+
+      const visit = (node, alpha, beta) => {
+        steps.push({ kind: "enter", id: node.id, alpha, beta });
+        if (node.isLeaf) {
+          steps.push({ kind: "leaf", id: node.id, value: node.value });
+          return node.value;
+        }
+        let value = node.isMax ? -Infinity : Infinity;
+        for (let c = 0; c < node.children.length; c++) {
+          const child = node.children[c];
+          steps.push({ kind: "descend", from: node.id, to: child.id });
+          const childVal = visit(child, alpha, beta);
+          if (node.isMax) {
+            if (childVal > value) {
+              value = childVal;
+              steps.push({ kind: "update", id: node.id, value });
+            }
+            alpha = Math.max(alpha, value);
+          } else {
+            if (childVal < value) {
+              value = childVal;
+              steps.push({ kind: "update", id: node.id, value });
+            }
+            beta = Math.min(beta, value);
+          }
+          steps.push({ kind: "bounds", id: node.id, alpha, beta });
+          if (pruning && alpha >= beta) {
+            const cut = node.children.slice(c + 1).map((ch) => ch.id);
+            if (cut.length) steps.push({ kind: "prune", id: node.id, cut });
+            break;
+          }
+        }
+        steps.push({ kind: "return", id: node.id, value });
+        return value;
+      };
+
+      visit(this._root, -Infinity, Infinity);
+      reset();
+      return steps;
+    }
+
+    _renderShell() {
+      const T = this._T;
+      const root = this.attachShadow({ mode: "open" });
+      root.innerHTML = `
+        <style>
+          :host {
+            display: block;
+            margin: 2rem 0 2.25rem;
+            --mt-accent: var(--c, #3d8b37);
+            --mt-surface: var(--surface, #fff);
+            --mt-bg: var(--bg-warm, #f4f1ea);
+            --mt-text: var(--text-main, #1c1a16);
+            --mt-muted: var(--text-muted, #54504a);
+            --mt-dim: var(--text-dim, #8a857d);
+            --mt-border: var(--border-soft, #e4dfd5);
+            --mt-min: #b4683a;
+            font-family: var(--font-display, system-ui, sans-serif);
+          }
+          .card {
+            border: 1px solid var(--mt-border);
+            border-left: 4px solid var(--mt-accent);
+            border-radius: var(--radius-lg, 14px);
+            background: var(--mt-surface);
+            box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,.06));
+            overflow: hidden;
+          }
+          .eyebrow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: .6rem;
+            padding: .8rem 1.05rem .7rem;
+            border-bottom: 1px solid var(--mt-border);
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--mt-accent);
+          }
+          .legend { display: flex; gap: .8rem; font-size: .62rem; letter-spacing: .04em; color: var(--mt-dim); }
+          .legend span { display: inline-flex; align-items: center; gap: .3rem; }
+          .swatch { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; }
+          .swatch.max { border-bottom: 9px solid var(--mt-accent); }
+          .swatch.min { border-top: 9px solid var(--mt-min); }
+          .stage { padding: .4rem .4rem 0; background: var(--mt-bg); }
+          svg { display: block; width: 100%; height: auto; }
+          .edge { stroke: var(--mt-border); stroke-width: 2; transition: stroke .25s, opacity .25s; }
+          .edge.active { stroke: var(--mt-accent); stroke-width: 3; }
+          .edge.pruned { stroke: var(--mt-dim); stroke-dasharray: 4 4; opacity: .35; }
+          .node-shape { transition: fill .25s, stroke .25s, opacity .25s; }
+          .leaf-box { fill: var(--mt-surface); stroke: var(--mt-border); stroke-width: 1.5; transition: all .25s; }
+          .node-tri-max { fill: color-mix(in srgb, var(--mt-accent) 16%, var(--mt-surface)); stroke: var(--mt-accent); stroke-width: 1.5; }
+          .node-tri-min { fill: color-mix(in srgb, var(--mt-min) 16%, var(--mt-surface)); stroke: var(--mt-min); stroke-width: 1.5; }
+          .node.active .node-shape { stroke-width: 3; filter: drop-shadow(0 0 4px color-mix(in srgb, var(--mt-accent) 55%, transparent)); }
+          .node.set .node-tri-max { fill: color-mix(in srgb, var(--mt-accent) 32%, var(--mt-surface)); }
+          .node.set .node-tri-min { fill: color-mix(in srgb, var(--mt-min) 32%, var(--mt-surface)); }
+          .node.pruned { opacity: .3; }
+          .node.pruned .leaf-box { stroke-dasharray: 4 4; }
+          .nval { font-size: 15px; font-weight: 700; fill: var(--mt-text); text-anchor: middle; dominant-baseline: central; font-family: var(--font-display, system-ui, sans-serif); }
+          .nval.empty { fill: var(--mt-dim); font-weight: 500; }
+          .bound { font-size: 9.5px; fill: var(--mt-dim); text-anchor: middle; font-family: var(--font-display, system-ui, sans-serif); }
+          .bound.on { fill: var(--mt-muted); }
+          .controls { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding: .8rem 1.05rem; }
+          button {
+            font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer;
+            display: inline-flex; align-items: center; gap: .35rem;
+            padding: .42rem .8rem; border-radius: var(--radius-pill, 999px);
+            border: 1px solid var(--mt-accent); background: var(--mt-accent); color: #fff;
+            transition: background .15s, opacity .15s;
+          }
+          button.ghost { background: transparent; color: var(--mt-accent); }
+          button:disabled { opacity: .4; cursor: not-allowed; }
+          button:not(:disabled):hover { filter: brightness(1.05); }
+          .toggle { display: inline-flex; align-items: center; gap: .4rem; margin-left: auto; font-size: .8rem; color: var(--mt-muted); cursor: pointer; user-select: none; }
+          .toggle input { accent-color: var(--mt-accent); width: 1rem; height: 1rem; cursor: pointer; }
+          .status {
+            padding: .7rem 1.05rem .85rem; border-top: 1px solid var(--mt-border);
+            background: color-mix(in srgb, var(--mt-accent) 5%, var(--mt-surface));
+            font-size: .85rem; line-height: 1.5; color: var(--mt-muted); min-height: 1.5em;
+          }
+          .status strong { color: var(--mt-text); }
+          .result { color: var(--mt-accent); font-weight: 700; }
+          @media (prefers-reduced-motion: reduce) {
+            .edge, .node-shape, .leaf-box, .node.active .node-shape { transition: none; filter: none; }
+          }
+          @media (max-width: 560px) {
+            .legend { display: none; }
+            .controls { gap: .4rem; }
+            button { padding: .4rem .65rem; font-size: .78rem; }
+          }
+        </style>
+        <div class="card">
+          <div class="eyebrow">
+            <span>${T.title}</span>
+            <span class="legend">
+              <span><i class="swatch max"></i>${T.max}</span>
+              <span><i class="swatch min"></i>${T.min}</span>
+            </span>
+          </div>
+          <div class="stage"><div class="svg-wrap"></div></div>
+          <div class="controls">
+            <button class="play" type="button">▶ ${T.play}</button>
+            <button class="step ghost" type="button">${T.step}</button>
+            <button class="reset ghost" type="button">↺ ${T.reset}</button>
+            <label class="toggle"><input type="checkbox" class="prune-cb" />${T.pruneLabel}</label>
+          </div>
+          <div class="status" aria-live="polite"></div>
+        </div>
+      `;
+
+      this._els = {
+        wrap: root.querySelector(".svg-wrap"),
+        play: root.querySelector(".play"),
+        step: root.querySelector(".step"),
+        resetBtn: root.querySelector(".reset"),
+        pruneCb: root.querySelector(".prune-cb"),
+        status: root.querySelector(".status"),
+      };
+
+      this._els.play.addEventListener("click", () => this._togglePlay());
+      this._els.step.addEventListener("click", () => this.stepForward());
+      this._els.resetBtn.addEventListener("click", () => this.reset());
+      this._els.pruneCb.addEventListener("change", () => this.reset());
+    }
+
+    _renderTree() {
+      const ns = "http://www.w3.org/2000/svg";
+      const svg = document.createElementNS(ns, "svg");
+      svg.setAttribute("viewBox", `0 0 ${this._W} ${this._H}`);
+      svg.setAttribute("role", "img");
+      svg.setAttribute("aria-label", this._T.title);
+
+      const edgeLayer = document.createElementNS(ns, "g");
+      const nodeLayer = document.createElementNS(ns, "g");
+      svg.append(edgeLayer, nodeLayer);
+
+      // Arêtes (clé "parentId-childId").
+      this._edgeEls = {};
+      this._nodes.forEach((nd) => {
+        nd.children.forEach((ch) => {
+          const line = document.createElementNS(ns, "line");
+          line.setAttribute("x1", nd.x);
+          line.setAttribute("y1", nd.y);
+          line.setAttribute("x2", ch.x);
+          line.setAttribute("y2", ch.y);
+          line.setAttribute("class", "edge");
+          edgeLayer.appendChild(line);
+          this._edgeEls[`${nd.id}-${ch.id}`] = line;
+        });
+      });
+
+      // Nœuds.
+      this._nodeEls = {};
+      this._nodes.forEach((nd) => {
+        const g = document.createElementNS(ns, "g");
+        g.setAttribute("class", "node");
+
+        let shape;
+        if (nd.isLeaf) {
+          shape = document.createElementNS(ns, "rect");
+          shape.setAttribute("x", nd.x - 16);
+          shape.setAttribute("y", nd.y - 14);
+          shape.setAttribute("width", 32);
+          shape.setAttribute("height", 28);
+          shape.setAttribute("rx", 6);
+          shape.setAttribute("class", "node-shape leaf-box");
+        } else {
+          shape = document.createElementNS(ns, "polygon");
+          const r = 17;
+          const pts = nd.isMax
+            ? `${nd.x},${nd.y - r} ${nd.x - r},${nd.y + r * 0.7} ${nd.x + r},${nd.y + r * 0.7}`
+            : `${nd.x},${nd.y + r} ${nd.x - r},${nd.y - r * 0.7} ${nd.x + r},${nd.y - r * 0.7}`;
+          shape.setAttribute("points", pts);
+          shape.setAttribute("class", `node-shape ${nd.isMax ? "node-tri-max" : "node-tri-min"}`);
+        }
+        g.appendChild(shape);
+
+        const txt = document.createElementNS(ns, "text");
+        txt.setAttribute("x", nd.x);
+        txt.setAttribute("y", nd.isLeaf ? nd.y : nd.y + (nd.isMax ? 6 : -4));
+        txt.setAttribute("class", "nval");
+        g.appendChild(txt);
+
+        // Étiquette alpha/bêta (nœuds internes, mode élagage).
+        let bound = null;
+        if (!nd.isLeaf) {
+          bound = document.createElementNS(ns, "text");
+          bound.setAttribute("x", nd.x);
+          bound.setAttribute("y", nd.isMax ? nd.y - 22 : nd.y + 30);
+          bound.setAttribute("class", "bound");
+          g.appendChild(bound);
+        }
+
+        nodeLayer.appendChild(g);
+        this._nodeEls[nd.id] = { g, shape, txt, bound };
+      });
+
+      this._els.wrap.replaceChildren(svg);
+    }
+
+    /** Applique l'état courant des nœuds au DOM SVG. */
+    _paint() {
+      const pruning = this._els.pruneCb.checked;
+      this._nodes.forEach((nd) => {
+        const el = this._nodeEls[nd.id];
+        el.g.setAttribute("class", `node ${nd.state}`);
+        if (nd.value === null || nd.value === undefined) {
+          el.txt.textContent = nd.isLeaf ? String(nd.value) : "?";
+          el.txt.classList.toggle("empty", !nd.isLeaf);
+        } else {
+          el.txt.textContent = nd.value === Infinity ? "+∞" : nd.value === -Infinity ? "−∞" : String(nd.value);
+          el.txt.classList.remove("empty");
+        }
+        if (el.bound) {
+          if (pruning && (nd.state === "active" || nd.state === "set") && (nd.alpha !== -Infinity || nd.beta !== Infinity)) {
+            const a = nd.alpha === -Infinity ? "−∞" : nd.alpha;
+            const b = nd.beta === Infinity ? "+∞" : nd.beta;
+            el.bound.textContent = `α ${a} · β ${b}`;
+            el.bound.classList.add("on");
+          } else {
+            el.bound.textContent = "";
+            el.bound.classList.remove("on");
+          }
+        }
+      });
+      // Arêtes : refléter prune + chemin actif.
+      Object.values(this._edgeEls).forEach((e) => e.setAttribute("class", "edge"));
+      this._nodes.forEach((nd) => {
+        if (nd.state === "pruned") {
+          const parent = this._nodes.find((p) => p.children.includes(nd));
+          if (parent) this._edgeEls[`${parent.id}-${nd.id}`]?.classList.add("pruned");
+        }
+      });
+    }
+
+    reset() {
+      this._stop();
+      this._nodes.forEach((nd) => {
+        nd.value = nd.isLeaf ? nd.value : null;
+        nd.alpha = -Infinity;
+        nd.beta = Infinity;
+        nd.state = "idle";
+      });
+      this._steps = this._genSteps(this._els.pruneCb.checked);
+      this._cursor = 0;
+      this._paint();
+      this._setStatus(this._T.intro(this._els.pruneCb.checked));
+      this._els.step.disabled = false;
+      this._els.play.innerHTML = `▶ ${this._T.play}`;
+    }
+
+    stepForward() {
+      if (this._cursor >= this._steps.length) {
+        this._stop();
+        return false;
+      }
+      const s = this._steps[this._cursor++];
+      this._apply(s);
+      this._paint();
+      if (this._cursor >= this._steps.length) {
+        this._els.step.disabled = true;
+        this._els.play.innerHTML = `▶ ${this._T.play}`;
+      }
+      return true;
+    }
+
+    _apply(s) {
+      const T = this._T;
+      const node = this._nodes.find((n) => n.id === s.id) || this._nodes.find((n) => n.id === s.to);
+      switch (s.kind) {
+        case "enter": {
+          const nd = this._nodes.find((n) => n.id === s.id);
+          nd.state = "active";
+          nd.alpha = s.alpha;
+          nd.beta = s.beta;
+          this._clearActiveExcept(nd);
+          this._setStatus(nd.isLeaf ? T.evalLeaf(nd.value) : T.enter(nd.isMax));
+          break;
+        }
+        case "leaf": {
+          const nd = this._nodes.find((n) => n.id === s.id);
+          nd.state = "set";
+          this._setStatus(T.leafReturn(s.value));
+          break;
+        }
+        case "descend": {
+          const child = this._nodes.find((n) => n.id === s.to);
+          child.state = "active";
+          break;
+        }
+        case "update": {
+          const nd = this._nodes.find((n) => n.id === s.id);
+          nd.value = s.value;
+          this._setStatus(T.update(nd.isMax, s.value));
+          break;
+        }
+        case "bounds": {
+          const nd = this._nodes.find((n) => n.id === s.id);
+          nd.alpha = s.alpha;
+          nd.beta = s.beta;
+          break;
+        }
+        case "prune": {
+          const nd = this._nodes.find((n) => n.id === s.id);
+          s.cut.forEach((cid) => this._markSubtreePruned(cid));
+          this._setStatus(T.prune(nd.alpha, nd.beta));
+          break;
+        }
+        case "return": {
+          const nd = this._nodes.find((n) => n.id === s.id);
+          nd.value = s.value;
+          nd.state = "set";
+          if (nd === this._root) {
+            this._setStatus(T.done(s.value));
+          } else {
+            this._setStatus(T.ret(nd.isMax, s.value));
+          }
+          break;
+        }
+      }
+      void node;
+    }
+
+    _markSubtreePruned(id) {
+      const nd = this._nodes.find((n) => n.id === id);
+      if (!nd) return;
+      nd.state = "pruned";
+      nd.children.forEach((ch) => this._markSubtreePruned(ch.id));
+    }
+
+    _clearActiveExcept(keep) {
+      // Les nœuds "active" qui ne sont pas sur le chemin courant et déjà résolus
+      // restent "set". On ne touche pas aux états set/pruned.
+      void keep;
+    }
+
+    _togglePlay() {
+      if (this._timer) {
+        this._stop();
+        return;
+      }
+      if (this._cursor >= this._steps.length) this.reset();
+      this._els.play.innerHTML = `⏸ ${this._T.pause}`;
+      const tick = () => {
+        const more = this.stepForward();
+        if (!more) {
+          this._stop();
+        }
+      };
+      tick();
+      this._timer = setInterval(tick, 950);
+    }
+
+    _stop() {
+      if (this._timer) {
+        clearInterval(this._timer);
+        this._timer = null;
+      }
+      if (this._els) this._els.play.innerHTML = `▶ ${this._T.play}`;
+    }
+
+    _setStatus(html) {
+      if (this._els) this._els.status.innerHTML = html;
+    }
+
+    disconnectedCallback() {
+      this._stop();
+    }
+  }
+
+  MinimaxTree.STRINGS = {
+    fr: {
+      title: "Arbre minimax interactif",
+      max: "MAX (mon tour)",
+      min: "MIN (adversaire)",
+      play: "Lecture",
+      pause: "Pause",
+      step: "Pas à pas",
+      reset: "Réinitialiser",
+      pruneLabel: "Élagage alpha-bêta",
+      intro: (p) =>
+        p
+          ? "L'élagage est activé : les branches dont on peut prouver l'inutilité seront <strong>coupées</strong>. Lance la lecture."
+          : "Le programme explore l'arbre en <strong>profondeur d'abord</strong>. Lance la lecture ou avance pas à pas.",
+      enter: (isMax) =>
+        isMax
+          ? "Nœud <strong>MAX</strong> : je cherche à <strong>maximiser</strong> mon score parmi mes coups."
+          : "Nœud <strong>MIN</strong> : l'adversaire cherche à <strong>minimiser</strong> mon score.",
+      evalLeaf: () => "On atteint une <strong>feuille</strong> : la fonction d'évaluation donne un score.",
+      leafReturn: (v) => `Feuille évaluée à <strong>${v}</strong>. On remonte ce score au parent.`,
+      update: (isMax, v) =>
+        isMax
+          ? `Meilleur score MAX provisoire : <strong>${v}</strong>.`
+          : `Meilleur score MIN provisoire : <strong>${v}</strong>.`,
+      prune: (a, b) =>
+        `<strong>Coupure !</strong> α (${a === -Infinity ? "−∞" : a}) ≥ β (${b === Infinity ? "+∞" : b}) : inutile d'explorer les branches restantes, elles ne changeront pas le résultat.`,
+      ret: (isMax, v) => `Le nœud ${isMax ? "MAX" : "MIN"} renvoie <strong>${v}</strong> à son parent.`,
+      done: (v) => `Exploration terminée. Le meilleur coup garantit un score de <span class="result">${v}</span>.`,
+    },
+    en: {
+      title: "Interactive minimax tree",
+      max: "MAX (my turn)",
+      min: "MIN (opponent)",
+      play: "Play",
+      pause: "Pause",
+      step: "Step",
+      reset: "Reset",
+      pruneLabel: "Alpha-beta pruning",
+      intro: (p) =>
+        p
+          ? "Pruning is on: branches that can be proven useless will be <strong>cut</strong>. Press play."
+          : "The program explores the tree <strong>depth-first</strong>. Press play or step through it.",
+      enter: (isMax) =>
+        isMax
+          ? "<strong>MAX</strong> node: I try to <strong>maximise</strong> my score across my moves."
+          : "<strong>MIN</strong> node: the opponent tries to <strong>minimise</strong> my score.",
+      evalLeaf: () => "We reach a <strong>leaf</strong>: the evaluation function returns a score.",
+      leafReturn: (v) => `Leaf evaluated to <strong>${v}</strong>. The score is passed up to the parent.`,
+      update: (isMax, v) =>
+        isMax ? `Best MAX score so far: <strong>${v}</strong>.` : `Best MIN score so far: <strong>${v}</strong>.`,
+      prune: (a, b) =>
+        `<strong>Cutoff!</strong> α (${a === -Infinity ? "−∞" : a}) ≥ β (${b === Infinity ? "+∞" : b}): no need to explore the remaining branches, they cannot change the result.`,
+      ret: (isMax, v) => `The ${isMax ? "MAX" : "MIN"} node returns <strong>${v}</strong> to its parent.`,
+      done: (v) => `Search complete. The best move guarantees a score of <span class="result">${v}</span>.`,
+    },
+  };
+
+  if (!customElements.get("minimax-tree")) {
+    customElements.define("minimax-tree", MinimaxTree);
+  }
+</script>

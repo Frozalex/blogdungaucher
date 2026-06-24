@@ -1,6 +1,6 @@
 ---
 interface Props {
-  lang?: "fr" | "en" | "de" | "pt-br";
+  lang?: "fr" | "en" | "pt-br";
   postId?: string;
 }
 const { lang = "fr", postId } = Astro.props;
@@ -8,13 +8,12 @@ const { lang = "fr", postId } = Astro.props;
 const remark42Url  = import.meta.env.PUBLIC_REMARK42_URL  ?? "";
 const remark42Site = import.meta.env.PUBLIC_REMARK42_SITE ?? "blog-gaucher";
 
-const localeMap: Record<string, string> = { fr: "fr", en: "en", de: "de", "pt-br": "pt-BR" };
+const localeMap: Record<string, string> = { fr: "fr", en: "en", "pt-br": "pt-BR" };
 const locale = localeMap[lang] ?? "fr";
 
 const copy: Record<string, { title: string }> = {
   fr: { title: "Commentaires" },
   en: { title: "Comments" },
-  de: { title: "Kommentare" },
   "pt-br": { title: "Comentários" },
 };
 const t = copy[lang] ?? copy.fr;

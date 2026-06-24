@@ -6,7 +6,7 @@ import { swapLangPrefix } from "../utils/lang-paths";
 import type { BlogEntry } from "../utils/blog";
 
 interface Props {
-  lang: "fr" | "en" | "de" | "pt-br";
+  lang: "fr" | "en" | "pt-br";
   latestPosts: BlogEntry[];
   totalPosts: number;
   postsByCategory?: Partial<Record<(typeof categorySlugs)[number], number>>;
@@ -36,7 +36,7 @@ type HomeCopy = {
   seeAll: string;
 };
 
-const homeByLang : Record<"fr" | "en" | "de" | "pt-br", HomeCopy> = {
+const homeByLang : Record<"fr" | "en" | "pt-br", HomeCopy> = {
   fr: {
     siteName: "Blog d'un Gaucher",
     signatureTagline: "Science du jeu, esprit compétitif, échecs dans le monde réel.",
@@ -79,27 +79,6 @@ const homeByLang : Record<"fr" | "en" | "de" | "pt-br", HomeCopy> = {
     latestTitle: "Latest articles",
     seeAll: "See all →",
   },
-  de: {
-    siteName: "Blog d'un Gaucher",
-    signatureTagline: "Spielwissenschaft, Wettkampfgeist, Schach in der realen Welt.",
-    eyebrow: "Unabhängiges Editorial",
-    titleHtml:
-      '<span class="hero__accent display-serif">Schach</span> verstehen<br/>ohne das Spiel zu vereinfachen.',
-    lead:
-      "Zwei Artikel pro Woche : klare Analysen zur Spielwissenschaft, zum Wettkampfgeist und zur Rolle des Schachs in der Gesellschaft, mit einem menschlichen und anspruchsvollen Ansatz.",
-    startReading: "Zur Lektüre",
-    seeSections: "Rubriken ansehen",
-    proofListLabel: "Redaktionelle Merkmale",
-    proof1: `${totalPosts}+ Analysen veröffentlicht`,
-    proof2: "2 Artikel / Woche",
-    proof3: "Quellen zitiert, 0 Clickbait",
-    editorialNote: "",
-    sectionsEyebrow: "4 Rubriken",
-    sectionsTitle: "Darum geht es hier",
-    recentEyebrow: "Neu",
-    latestTitle: "Neueste Artikel",
-    seeAll: "Alle anzeigen →",
-  },
   "pt-br": {
     siteName: "Blog de um Canhoto",
     signatureTagline: "Ciência do jogo, mentalidade competitiva, xadrez no mundo real.",
@@ -141,11 +120,9 @@ const pillarGlyphs : Record<(typeof categorySlugs)[number], string> = {
   "grand-oral" : "♚",
 };
 
-/** Libellé i18n pour le compteur d'articles par rubrique.
-   Allemand : "Artikel" est invariant en pluriel : pas de risque d'erreur. */
+/** Libellé i18n pour le compteur d'articles par rubrique. */
 const articleCountLabel = (n : number): string => {
   if (lang === "en") return `${n} ${n > 1 ? "articles" : "article"}`;
-  if (lang === "de") return `${n} Artikel`;
   if (lang === "pt-br") return `${n} ${n > 1 ? "artigos" : "artigo"}`;
   return `${n} ${n > 1 ? "articles" : "article"}`;
 };

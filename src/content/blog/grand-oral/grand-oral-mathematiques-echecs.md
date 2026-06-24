@@ -145,6 +145,8 @@ Cette formule est la **fonction logistique**, une fonction en forme de S que l'o
 
 #### Code (Maths → NSI)  -  calculer une probabilité Elo en Python
 
+<div data-pytrace></div>
+
 ```python
 def proba_elo(ra: int, rb: int) -> float:
     return 1 / (1 + 10 ** ((rb - ra) / 400))

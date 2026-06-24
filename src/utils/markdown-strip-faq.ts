@@ -109,7 +109,12 @@ export async function renderMarkdownToArticleHtml(markdown: string): Promise<{
     .use(rehypeKatex)
     .run(tree);
 
-  let html = toHtml(hast);
+  // allowDangerousHtml : laisse passer le HTML brut auteur (ex. <div data-pytrace>,
+  // <minimax-tree>…) au lieu de l'échapper. remarkRehype émet déjà des nœuds `raw`
+  // (allowDangerousHtml ci-dessus) ; sans cette option toHtml les ré-échappait, ce
+  // qui rendait les widgets interactifs inertes dans les articles à FAQ — alors que
+  // le chemin de rendu Astro (articles sans FAQ) les rend, lui. On aligne les deux.
+  let html = toHtml(hast, { allowDangerousHtml: true });
   const $ = cheerio.load(`<div class="md-root">${html}</div>`);
   const h23 = $(".md-root h2, .md-root h3").toArray();
   headings.forEach((h, i) => {

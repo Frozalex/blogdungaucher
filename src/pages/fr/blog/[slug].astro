@@ -17,6 +17,8 @@ import NewsletterCta from "../../../components/NewsletterCta.astro";
 import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleVideo from "../../../components/ArticleVideo.astro";
+import InteractiveWidgets from "../../../components/InteractiveWidgets.astro";
+import PyodideTrace from "../../../components/PyodideTrace.astro";
 import FocusMode from "../../../components/FocusMode.astro";
 import TextHighlight from "../../../components/TextHighlight.astro";
 
@@ -237,6 +239,16 @@ const otherPillars = categorySlugs
             Content && <Content />
           )}
         </div>
+
+        {/* Définit les custom elements interactifs (<minimax-tree>…) que les
+            articles peuvent invoquer en HTML brut dans leur Markdown. N'émet
+            aucun visuel propre : ne fait qu'enregistrer les web components. */}
+        <InteractiveWidgets />
+
+        {/* Visualiseur d'exécution Python (trace pas-à-pas). S'active sur les
+            blocs ```python précédés d'un <div data-pytrace></div>. Pyodide
+            chargé en lazy au clic uniquement. */}
+        <PyodideTrace />
 
         <AdBanner format="inline" compact={true} />
 
