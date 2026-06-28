@@ -2,13 +2,13 @@
 import { getEntry } from "astro:content";
 
 import type { BlogEntry } from "../utils/blog";
-import { formatDate, formatDateEn, formatDatePtBr, getCategoryMeta, getPostHeroSrc, getPostSlug, getPostUrlLang } from "../utils/blog";
+import { formatDate, formatDateEn, formatDatePtBr, formatDateNl, getCategoryMeta, getPostHeroSrc, getPostSlug, getPostUrlLang } from "../utils/blog";
 import { t, type Lang } from "../i18n/translations";
 
 const { post, featured = false, lang = "fr" } = Astro.props as {
   post: BlogEntry;
   featured?: boolean;
-  lang?: Lang | "pt-br";
+  lang?: Lang | "pt-br" | "nl";
 };
 
 const category = getCategoryMeta(post.data.category);
@@ -30,17 +30,25 @@ if (lang === "en") {
     postTitle = ptBrEntry.data.title;
     postExcerpt = ptBrEntry.data.excerpt;
   }
+} else if (lang === "nl") {
+  const nlEntries = await import("astro:content").then((m) => m.getCollection("nlTranslations"));
+  const frSlug = getPostSlug(post);
+  const nlEntry = nlEntries.find((e) => (e.data.frSlug ?? e.id) === frSlug);
+  if (nlEntry && !nlEntry.data.draft) {
+    postTitle = nlEntry.data.title;
+    postExcerpt = nlEntry.data.excerpt;
+  }
 }
 
 // Étiquettes localisées (server-side, indexable par les moteurs).
-const tLang: Lang = lang === "pt-br" ? "pt-br" : (lang as Lang);
+const tLang: Lang = (lang === "pt-br" || lang === "nl") ? lang : (lang as Lang);
 const categoryLabel = t(tLang, `categories.${post.data.category}.label`);
 const categoryShortLabel = t(tLang, `categories.${post.data.category}.shortLabel`);
 const readLabel = t(tLang, "card.read");
-const formattedDate = lang === "en" ? formatDateEn(post.data.publishDate) : lang === "pt-br" ? formatDatePtBr(post.data.publishDate) : formatDate(post.data.publishDate);
+const formattedDate = lang === "en" ? formatDateEn(post.data.publishDate) : lang === "pt-br" ? formatDatePtBr(post.data.publishDate) : lang === "nl" ? formatDateNl(post.data.publishDate) : formatDate(post.data.publishDate);
 
 const thumbSrc = getPostHeroSrc(post);
-const postHref = lang === "pt-br" ? await getPostUrlLang(post, "pt-br") : await getPostUrlLang(post, lang as "fr" | "en");
+const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl");
 ---
 <article
   class={`card scale-in ${featured ? "featured" : ""}`}

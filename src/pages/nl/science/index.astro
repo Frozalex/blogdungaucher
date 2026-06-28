@@ -1,0 +1,7 @@
+---
+import CategoryPage from "../../../components/CategoryPage.astro";
+import { NL_LAUNCH_DATE } from "../../../data/site";
+
+if (new Date() < NL_LAUNCH_DATE) return Astro.redirect("/fr/science/", 302);
+---
+<CategoryPage category="science" lang="nl" />

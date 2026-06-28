@@ -77,7 +77,7 @@ export function isFrenchOnlyPost(post: BlogEntry): boolean {
 
 export function filterPostsForLang(
   posts: BlogEntry[],
-  lang: "fr" | "en" | "pt-br",
+  lang: "fr" | "en" | "pt-br" | "nl",
 ): BlogEntry[] {
   if (lang === "fr") return posts;
   return posts.filter((p) => !isFrenchOnlyPost(p));
@@ -85,6 +85,15 @@ export function filterPostsForLang(
 
 export function formatDatePtBr(date: Date) {
   return new Intl.DateTimeFormat("pt-BR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+}
+
+export function formatDateNl(date: Date) {
+  return new Intl.DateTimeFormat("nl-NL", {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -150,7 +159,7 @@ function interleaveLatestByPillar(posts: BlogEntry[], limit: number): BlogEntry[
 
 export async function getLatestPosts(
   limit: number,
-  lang: "fr" | "en" | "pt-br" = "fr",
+  lang: "fr" | "en" | "pt-br" | "nl" = "fr",
 ) {
   const posts = await getAllPosts();
   const list = filterPostsForLang(posts, lang);
@@ -171,6 +180,36 @@ export function getPostSlug(post: BlogEntry) {
 
 export function getPostUrl(post: BlogEntry) {
   return `/fr/blog/${getPostSlug(post)}/`;
+}
+
+/** Cache des slugs NL localisés (frSlug → nlFileSlug).
+ *  Construit une seule fois à partir de la collection `nlTranslations`. */
+let _nlSlugMapPromise: Promise<Map<string, string>> | null = null;
+
+export async function getNlSlugMap(): Promise<Map<string, string>> {
+  if (!_nlSlugMapPromise) {
+    _nlSlugMapPromise = (async () => {
+      const entries = await getCollection("nlTranslations");
+      const map = new Map<string, string>();
+      for (const e of entries) {
+        const nlSlug = e.id.replace(/\.mdx?$/i, "").split("/").filter(Boolean).pop()!;
+        const frSlug = (e.data as { frSlug?: string }).frSlug;
+        if (frSlug) map.set(frSlug, nlSlug);
+      }
+      return map;
+    })();
+  }
+  return _nlSlugMapPromise;
+}
+
+export async function getPostUrlNl(post: BlogEntry): Promise<string> {
+  const map = await getNlSlugMap();
+  const slug = map.get(getPostSlug(post)) ?? getPostSlug(post);
+  return `/nl/blog/${slug}/`;
+}
+
+export function getPostUrlNlSync(post: BlogEntry, nlSlug?: string) {
+  return `/nl/blog/${nlSlug ?? getPostSlug(post)}/`;
 }
 
 /** Cache des slugs PT-BR localisés (frSlug → ptBrFileSlug).
@@ -236,15 +275,16 @@ export function getPostUrlEnSync(post: BlogEntry, enSlug?: string) {
   return `/en/blog/${enSlug ?? getPostSlug(post)}/`;
 }
 
-export async function getPostUrlLang(post: BlogEntry, lang: "fr" | "en" | "pt-br"): Promise<string> {
+export async function getPostUrlLang(post: BlogEntry, lang: "fr" | "en" | "pt-br" | "nl"): Promise<string> {
   if (lang === "en") return getPostUrlEn(post);
   if (lang === "pt-br") return getPostUrlPtBr(post);
+  if (lang === "nl") return getPostUrlNl(post);
   return getPostUrl(post);
 }
 
 /** Page liste blog : chemins relatifs (évite les URL absolues Astro.pagination avec mauvais hôte/port). */
-export function getBlogIndexPagePath(lang: "fr" | "en" | "pt-br", pageNum: number) {
-  const base = lang === "en" ? "/en/blog" : lang === "pt-br" ? "/pt-br/blog" : "/fr/blog";
+export function getBlogIndexPagePath(lang: "fr" | "en" | "pt-br" | "nl", pageNum: number) {
+  const base = lang === "en" ? "/en/blog" : lang === "pt-br" ? "/pt-br/blog" : lang === "nl" ? "/nl/blog" : "/fr/blog";
   if (pageNum <= 1) return `${base}/`;
   return `${base}/${pageNum}/`;
 }
@@ -370,13 +410,15 @@ export async function buildArticleJsonLd(
   };
 }
 
-export function buildPersonJsonLd(lang: "fr" | "en" | "pt-br" = "fr") {
+export function buildPersonJsonLd(lang: "fr" | "en" | "pt-br" | "nl" = "fr") {
   const aboutUrl =
     lang === "en"
       ? `${siteConfig.siteUrl}/en/about/`
       : lang === "pt-br"
         ? `${siteConfig.siteUrl}/pt-br/about/`
-        : `${siteConfig.siteUrl}/fr/about/`;
+        : lang === "nl"
+          ? `${siteConfig.siteUrl}/nl/about/`
+          : `${siteConfig.siteUrl}/fr/about/`;
   return {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -388,13 +430,17 @@ export function buildPersonJsonLd(lang: "fr" | "en" | "pt-br" = "fr") {
         ? "Computer science student, chess player at 1,600 Elo, author of A Left-Hander's Blog."
         : lang === "pt-br"
           ? "Estudante de ciência da computação, enxadrista com 1.600 Elo, autor do Blog de um Canhoto."
-          : "Étudiant en informatique, joueur d'échecs à 1 600 Elo, auteur du Blog d'un Gaucher.",
+          : lang === "nl"
+            ? "Informaticastudent, schaker op 1.600 Elo, auteur van Blog van een Linkshandige."
+            : "Étudiant en informatique, joueur d'échecs à 1 600 Elo, auteur du Blog d'un Gaucher.",
     knowsAbout:
       lang === "en"
         ? ["Chess", "Neuroscience", "Cognitive psychology", "Game theory", "Computer science"]
         : lang === "pt-br"
           ? ["Xadrez", "Neurociência", "Psicologia cognitiva", "Teoria dos jogos", "Ciência da computação"]
-          : ["Échecs", "Neurosciences", "Psychologie cognitive", "Théorie des jeux", "Informatique"],
+          : lang === "nl"
+            ? ["Schaken", "Neurowetenschappen", "Cognitieve psychologie", "Speltheorie", "Informatica"]
+            : ["Échecs", "Neurosciences", "Psychologie cognitive", "Théorie des jeux", "Informatique"],
     sameAs: ["https://www.chess.com/member/le_gaucher"],
   };
 }

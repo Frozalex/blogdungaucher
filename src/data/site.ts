@@ -220,6 +220,9 @@ export const navigationLinks = [
 /** Date de lancement de la section PT-BR. Avant cette date, aucune page /pt-br/ n'est générée. */
 export const PT_BR_LAUNCH_DATE = new Date("2026-07-01T06:00:00Z");
 
+/** Date de lancement de la section NL. Avant cette date, aucune page /nl/ n'est générée. */
+export const NL_LAUNCH_DATE = new Date("2026-09-01T06:00:00Z");
+
 export const ptBrNavigationLinks = [
   { label: "Ciência", href: "/pt-br/science/" },
   { label: "Mente", href: "/pt-br/esprit/" },
@@ -235,6 +238,23 @@ export const ptBrStaticRoutes = [
   "/pt-br/esprit/",
   "/pt-br/societe/",
   "/pt-br/about/",
+] as const;
+
+export const nlNavigationLinks = [
+  { label: "Wetenschap", href: "/nl/science/" },
+  { label: "Geest", href: "/nl/esprit/" },
+  { label: "Samenleving", href: "/nl/societe/" },
+  { label: "Alle artikelen", href: "/nl/blog/" },
+  { label: "Over", href: "/nl/about/" },
+] as const;
+
+export const nlStaticRoutes = [
+  "/nl/",
+  "/nl/blog/",
+  "/nl/science/",
+  "/nl/esprit/",
+  "/nl/societe/",
+  "/nl/about/",
 ] as const;
 
 export const enNavigationLinks = [

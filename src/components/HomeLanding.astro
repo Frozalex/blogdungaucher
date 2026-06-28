@@ -6,845 +6,778 @@ import { swapLangPrefix } from "../utils/lang-paths";
 import type { BlogEntry } from "../utils/blog";
 
 interface Props {
-  lang: "fr" | "en" | "pt-br";
+  lang: "fr" | "en" | "pt-br" | "nl";
   latestPosts: BlogEntry[];
   totalPosts: number;
   postsByCategory?: Partial<Record<(typeof categorySlugs)[number], number>>;
 }
 
 const { lang, latestPosts, totalPosts, postsByCategory = {} } = Astro.props;
-const sectionsId = lang === "en" ? "sections" : "rubriques";
 const blogHref = `/${lang}/blog/`;
 
 type HomeCopy = {
-  siteName: string;
-  signatureTagline: string;
   eyebrow: string;
-  titleHtml: string;
+  titleLine1: string;
+  titleAccent: string;
+  titleLine2: string;
   lead: string;
   startReading: string;
   seeSections: string;
-  proofListLabel: string;
   proof1: string;
   proof2: string;
   proof3: string;
-  editorialNote: string;
-  sectionsEyebrow: string;
-  sectionsTitle: string;
-  recentEyebrow: string;
-  latestTitle: string;
+  featuredEyebrow: string;
+  allPostsTitle: string;
+  tabAll: string;
+  searchPlaceholder: string;
   seeAll: string;
+  noResults: string;
 };
 
-const homeByLang : Record<"fr" | "en" | "pt-br", HomeCopy> = {
+const homeByLang: Record<"fr" | "en" | "pt-br" | "nl", HomeCopy> = {
   fr: {
-    siteName: "Blog d'un Gaucher",
-    signatureTagline: "Science du jeu, esprit compétitif, échecs dans le monde réel.",
-    eyebrow: "Éditorial indépendant",
-    titleHtml:
-      'Comprendre les <span class="hero__accent display-serif">échecs</span><br/>sans simplifier le jeu.',
-    lead:
-      "Deux articles par semaine : des analyses claires sur la science du jeu, le mental compétitif et l'impact des échecs dans la société, avec une approche humaine et exigeante.",
+    eyebrow: "",
+    titleLine1: "Un blog sur",
+    titleAccent: "les échecs",
+    titleLine2: "",
+    lead: "Deux articles par semaine : des analyses claires sur la science du jeu, le mental compétitif et l'impact des échecs dans la société.",
     startReading: "Commencer la lecture",
     seeSections: "Voir les rubriques",
-    proofListLabel: "Repères éditoriaux",
     proof1: `${totalPosts}+ analyses publiées`,
     proof2: "2 articles / semaine",
     proof3: "Sources citées, 0 clickbait",
-    editorialNote: "",
-    sectionsEyebrow: "4 rubriques",
-    sectionsTitle: "Ce dont on parle ici",
-    recentEyebrow: "Récents",
-    latestTitle: "Derniers articles",
-    seeAll: "Tout voir →",
+    featuredEyebrow: "À la une",
+    allPostsTitle: "Tous les articles",
+    tabAll: "Tout",
+    searchPlaceholder: "Chercher un article…",
+    seeAll: "Voir tout →",
+    noResults: "Aucun article trouvé.",
   },
   en: {
-    siteName: "A Left-Hander's Blog",
-    signatureTagline: "Game science, competitive mindset, chess in the real world.",
     eyebrow: "Independent editorial",
-    titleHtml:
-      'Understanding <span class="hero__accent display-serif">chess</span><br/>without oversimplifying.',
-    lead:
-      "Two articles every week : clear analyses on the science of the game, the competitive mindset and the impact of chess on society, with a human and demanding approach.",
+    titleLine1: "Understanding",
+    titleAccent: "chess",
+    titleLine2: "without oversimplifying.",
+    lead: "Two articles every week: clear analyses on game science, the competitive mindset and the impact of chess on society.",
     startReading: "Start reading",
     seeSections: "See sections",
-    proofListLabel: "Editorial markers",
     proof1: `${totalPosts}+ analyses published`,
     proof2: "2 articles / week",
     proof3: "Cited sources, 0 clickbait",
-    editorialNote: "",
-    sectionsEyebrow: "3 sections",
-    sectionsTitle: "What we cover here",
-    recentEyebrow: "Recent",
-    latestTitle: "Latest articles",
+    featuredEyebrow: "Featured",
+    allPostsTitle: "All articles",
+    tabAll: "All",
+    searchPlaceholder: "Search articles…",
     seeAll: "See all →",
+    noResults: "No articles found.",
   },
   "pt-br": {
-    siteName: "Blog de um Canhoto",
-    signatureTagline: "Ciência do jogo, mentalidade competitiva, xadrez no mundo real.",
     eyebrow: "Editorial independente",
-    titleHtml:
-      'Entendendo o <span class="hero__accent display-serif">xadrez</span><br/>sem simplificar o jogo.',
-    lead:
-      "Dois artigos por semana : análises claras sobre a ciência do jogo, a mentalidade competitiva e o impacto do xadrez na sociedade, com uma abordagem humana e exigente.",
+    titleLine1: "Entendendo o",
+    titleAccent: "xadrez",
+    titleLine2: "sem simplificar o jogo.",
+    lead: "Dois artigos por semana: análises claras sobre a ciência do jogo, a mentalidade competitiva e o impacto do xadrez na sociedade.",
     startReading: "Começar a ler",
     seeSections: "Ver as seções",
-    proofListLabel: "Marcadores editoriais",
     proof1: `${totalPosts}+ análises publicadas`,
     proof2: "2 artigos / semana",
     proof3: "Fontes citadas, 0 clickbait",
-    editorialNote: "",
-    sectionsEyebrow: "3 seções",
-    sectionsTitle: "O que abordamos aqui",
-    recentEyebrow: "Recentes",
-    latestTitle: "Últimos artigos",
+    featuredEyebrow: "Destaque",
+    allPostsTitle: "Todos os artigos",
+    tabAll: "Todos",
+    searchPlaceholder: "Buscar artigos…",
     seeAll: "Ver tudo →",
+    noResults: "Nenhum artigo encontrado.",
+  },
+  nl: {
+    eyebrow: "Onafhankelijk redactioneel",
+    titleLine1: "Schaken begrijpen",
+    titleAccent: "zonder",
+    titleLine2: "het spel te vereenvoudigen.",
+    lead: "Twee artikelen per week: heldere analyses over schaakwetenschap, competitieve mindset en de impact van schaken op de samenleving.",
+    startReading: "Begin met lezen",
+    seeSections: "Bekijk de rubrieken",
+    proof1: `${totalPosts}+ gepubliceerde analyses`,
+    proof2: "2 artikelen / week",
+    proof3: "Bronnen vermeld, 0 clickbait",
+    featuredEyebrow: "Uitgelicht",
+    allPostsTitle: "Alle artikelen",
+    tabAll: "Alles",
+    searchPlaceholder: "Zoek artikelen…",
+    seeAll: "Alles bekijken →",
+    noResults: "Geen artikelen gevonden.",
   },
 };
 
 const c = homeByLang[lang];
 
-/** Icônes stroke (24) alignées sur la couleur d’accent de chaque rubrique. */
-const pillarIcons : Record<(typeof categorySlugs)[number], string> = {
-  science: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2.25"/><path d="M12 3v2.5M12 18.5V21M4.5 12H7m10 0h2.5"/><path d="M6.4 6.4l1.75 1.75m7.7 7.7l1.75 1.75M6.4 17.6l1.75-1.75m7.7-7.7l1.75-1.75"/></svg>`,
-  esprit: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-4.5-3.2-7.5-6.4-7.5-10.2A4.5 4.5 0 0 1 12 6.5a4.5 4.5 0 0 1 7.5 4.3C19.5 14.6 16.5 17.8 12 21z"/></svg>`,
-  societe: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="3.25"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
-  "grand-oral": `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h6"/></svg>`,
-};
+const featuredPost = latestPosts[0];
+const gridPosts = latestPosts.slice(1);
 
-/** Glyphes pièces d'échecs en filigrane derrière les pillars : donne une signature visuelle au site. */
-const pillarGlyphs : Record<(typeof categorySlugs)[number], string> = {
-  science: "♞",
-  esprit: "♛",
-  societe: "♜",
-  "grand-oral" : "♚",
-};
-
-/** Libellé i18n pour le compteur d'articles par rubrique. */
-const articleCountLabel = (n : number): string => {
+const articleCountLabel = (n: number): string => {
   if (lang === "en") return `${n} ${n > 1 ? "articles" : "article"}`;
   if (lang === "pt-br") return `${n} ${n > 1 ? "artigos" : "artigo"}`;
+  if (lang === "nl") return `${n} ${n > 1 ? "artikelen" : "artikel"}`;
   return `${n} ${n > 1 ? "articles" : "article"}`;
 };
+
+const sectionsId = lang === "en" ? "sections" : "rubriques";
 ---
 
 <div class="home-landing">
-  <section class="hero hero--classic" aria-labelledby="home-hero-heading">
-    <!-- Décoration : mini échiquiers pixel art (gauche + droite), aria-hidden -->
-    <div class="hero-deco hero-deco--right" aria-hidden="true">
-      <svg width="120" height="120" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
-        {[...Array(8)].map((_, r) =>
-          [...Array(8)].map((_, c) => (
-            <rect
-              x={c}
-              y={r}
-              width="1"
-              height="1"
-              fill={(r + c) % 2 === 0 ? "currentColor" : "transparent"}
-            />
-          ))
-        )}
-      </svg>
-    </div>
-    <div class="hero-deco hero-deco--left" aria-hidden="true">
-      <svg width="96" height="96" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
-        {[...Array(8)].map((_, r) =>
-          [...Array(8)].map((_, c) => (
-            <rect
-              x={c}
-              y={r}
-              width="1"
-              height="1"
-              fill={(r + c) % 2 === 0 ? "currentColor" : "transparent"}
-            />
-          ))
-        )}
-      </svg>
-    </div>
-    <div class="container hero--classic__inner">
-      <p class="eyebrow hero__eyebrow" data-t="home.eyebrow">
-        {c.eyebrow}
-      </p>
 
-      {/* Hero SANS `fade-up` (ni ici ni sur l'eyebrow/lead/actions/proof) : ce bloc est au-dessus
-         de la ligne de flottaison et contient l'élément LCP. Une entrée opacity:0→1 y retardait le
-         LCP mobile à ~5 s (l'animation décale la 1re peinture visible). Affichage immédiat → LCP ≈ FCP.
-         Les sections below-fold gardent leurs animations de scroll-reveal. */}
-      <h1
-        id="home-hero-heading"
-        class="hero__title--classic"
-        data-t-html="home.titleHtml"
-        set:html={c.titleHtml}
-      ></h1>
+  <!-- ════════════════════════════════════════════
+       HERO — 2 colonnes : texte gauche, déco droite
+  ════════════════════════════════════════════ -->
+  <section class="hero" aria-labelledby="home-hero-heading">
+    <div class="container hero__inner">
 
-      <p class="hero__lead--classic" data-t="home.lead">
-        {c.lead}
-      </p>
-
-      <div class="hero__actions--classic">
-        <a href={blogHref} class="button-primary" data-t="home.startReading">
-          {c.startReading}
-        </a>
-        <a href={`#${sectionsId}`} class="button-secondary" data-t="home.seeSections">
-          {c.seeSections}
-        </a>
+      <!-- Colonne texte -->
+      <div class="hero__text">
+        {c.eyebrow && <span class="eyebrow hero__eyebrow">{c.eyebrow}</span>}
+        <h1 id="home-hero-heading" class="hero__title">
+          {c.titleLine1} <span class="hero__accent">{c.titleAccent}</span><br/>
+          {c.titleLine2}
+        </h1>
+        <p class="hero__lead">{c.lead}</p>
+        <div class="hero__actions">
+          <a href={blogHref} class="button-primary">{c.startReading}</a>
+          <a href={`#${sectionsId}`} class="button-secondary">{c.seeSections}</a>
+        </div>
+        <ul class="hero__proof" aria-label="Repères éditoriaux">
+          <li>{c.proof1}</li>
+          <li>{c.proof2}</li>
+          <li>{c.proof3}</li>
+        </ul>
       </div>
 
-      <ul
-        class="hero-proof--classic"
-        aria-label={c.proofListLabel}
-      >
-        <li data-t="home.proof1">{c.proof1}</li>
-        <li data-t="home.proof2">{c.proof2}</li>
-        <li data-t="home.proof3">{c.proof3}</li>
-      </ul>
+      <!-- Colonne déco : pièce d'échecs illustrative (comme la 3D Appux) -->
+      <div class="hero__deco" aria-hidden="true">
+        <div class="hero__deco-card">
+          <span class="hero__deco-glyph">♛</span>
+          <div class="hero__deco-board">
+            <svg width="100%" height="100%" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+              {[...Array(8)].map((_, r) =>
+                [...Array(8)].map((_, cc) => (
+                  <rect x={cc} y={r} width="1" height="1"
+                    fill={(r + cc) % 2 === 0 ? "currentColor" : "transparent"} />
+                ))
+              )}
+            </svg>
+          </div>
+          <div class="hero__deco-chips">
+            <span class="hero__deco-chip">Science du jeu</span>
+            <span class="hero__deco-chip hero__deco-chip--accent">Esprit compétitif</span>
+            <span class="hero__deco-chip">Société</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section class="pillars" id={sectionsId}>
-    <div class="container">
-      <span class="eyebrow reveal" data-t="home.sectionsEyebrow">
-        {c.sectionsEyebrow}
-      </span>
-      <h2 class="drop-heading section-title reveal" data-t="home.sectionsTitle">
-        {c.sectionsTitle}
-      </h2>
-      <div class="pillar-grid reveal-group">
-        {
-          categorySlugs.filter((slug) => lang === "fr" || slug !== "grand-oral").map((slug) => {
-            const cat = categoryMap[slug];
-            const href = lang === "fr" ? cat.href : swapLangPrefix(cat.href, lang);
-            const count = postsByCategory[slug] ?? 0;
-            return (
-              <a href={href} class="pillar" style={`--p:${cat.accent};--pillar-surface:${cat.surface};`}>
-                <span class="pillar__glyph" aria-hidden="true">{pillarGlyphs[slug]}</span>
-                <span class="pillar__icon" set:html={pillarIcons[slug]} />
-                <div>
-                  <span class="pillar__kicker" data-t={`categories.${slug}.shortLabel`}>
-                    {cat.shortLabel}
-                  </span>
-                  <strong data-t={`categories.${slug}.label`}>{cat.label}</strong>
-                  <p data-t={`categories.${slug}.tagline`}>{cat.tagline}</p>
-                  {count > 0 && (
-                    <span class="pillar__count">
-                      <span class="pillar__count-num">{count}</span>
-                      <span class="pillar__count-label">{articleCountLabel(count).replace(`${count} `, "")}</span>
-                    </span>
-                  )}
-                </div>
-                <svg
-                  class="pillar__arrow"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14" />
-                  <path d="M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            );
-          })
-        }
+  <!-- ════════════════════════════════════════════
+       ARTICLE EN UNE — carte horizontale (style Appux)
+  ════════════════════════════════════════════ -->
+  {featuredPost && (
+    <section class="featured-section">
+      <div class="container">
+        <span class="eyebrow featured-section__eyebrow">{c.featuredEyebrow}</span>
+        <div class="featured-showcase reveal">
+          <ArticleCard post={featuredPost} featured={true} lang={lang} />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  )}
 
   <div class="container">
     <AdBanner format="leaderboard" />
   </div>
 
-  <section class="latest">
+  <!-- ════════════════════════════════════════════
+       RUBRIQUES — pillar grid (compact, horizontal)
+  ════════════════════════════════════════════ -->
+  <section class="pillars" id={sectionsId}>
     <div class="container">
-      <div class="section-head reveal">
-        <div class="section-head__titles">
-          <span class="eyebrow" data-t="home.recentEyebrow">
-            {c.recentEyebrow}
-          </span>
-          <h2 class="drop-heading section-title" data-t="home.latestTitle">
-            {c.latestTitle}
-          </h2>
-        </div>
-        <a href={blogHref} class="see-all link-underline" data-t="home.seeAll">
-          {c.seeAll}
-        </a>
-      </div>
-      <div class="latest-grid reveal-group">
-        {latestPosts.map((post, idx) => (
-          <ArticleCard post={post} featured={idx === 0} lang={lang} />
-        ))}
+      <div class="pillar-strip reveal-group">
+        {categorySlugs.filter((slug) => lang === "fr" || slug !== "grand-oral").map((slug) => {
+          const cat = categoryMap[slug];
+          const href = lang === "fr" ? cat.href : swapLangPrefix(cat.href, lang);
+          const count = postsByCategory[slug] ?? 0;
+          return (
+            <a href={href} class="pillar-chip" style={`--p:${cat.accent};`}>
+              <span class="pillar-chip__label">{cat.shortLabel}</span>
+              {count > 0 && <span class="pillar-chip__count">{count}</span>}
+            </a>
+          );
+        })}
       </div>
     </div>
   </section>
+
+  <!-- ════════════════════════════════════════════
+       TOUS LES ARTICLES — onglets + recherche + grille (style Appux)
+  ════════════════════════════════════════════ -->
+  <section class="allposts">
+    <div class="container">
+
+      <!-- En-tête : titre gauche, actions droite -->
+      <div class="allposts__header reveal">
+        <h2 class="allposts__title">{c.allPostsTitle}</h2>
+        <div class="allposts__controls">
+          <!-- Onglets -->
+          <div class="allposts__tabs" role="tablist" aria-label="Filtrer par rubrique">
+            <button class="tab active" data-filter="all" role="tab" aria-selected="true">{c.tabAll}</button>
+            {categorySlugs.filter((slug) => lang === "fr" || slug !== "grand-oral").map((slug) => (
+              <button
+                class="tab"
+                data-filter={slug}
+                role="tab"
+                aria-selected="false"
+                style={`--tab-accent: ${categoryMap[slug].accent}`}
+              >{categoryMap[slug].shortLabel}</button>
+            ))}
+          </div>
+          <!-- Recherche -->
+          <div class="allposts__search-wrap">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input
+              type="search"
+              class="allposts__search"
+              placeholder={c.searchPlaceholder}
+              aria-label={c.searchPlaceholder}
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Grille d'articles -->
+      <div class="allposts__grid reveal-group">
+        {gridPosts.map((post) => (
+          <div
+            class="post-wrapper"
+            data-category={post.data.category}
+            data-title={post.data.title.toLowerCase()}
+            data-excerpt={(post.data.excerpt ?? "").toLowerCase()}
+          >
+            <ArticleCard post={post} featured={false} lang={lang} />
+          </div>
+        ))}
+      </div>
+
+      <p class="allposts__empty" aria-live="polite" style="display:none">{c.noResults}</p>
+
+      <div class="allposts__see-all reveal">
+        <a href={blogHref} class="see-all-btn">{c.seeAll}</a>
+      </div>
+
+    </div>
+  </section>
+
 </div>
 
 <style>
   .home-landing {
     overflow-x: clip;
-    position: relative;
+  }
+
+  /* ════════════════════════════════════════════
+     HERO
+  ════════════════════════════════════════════ */
+  .hero {
+    padding: calc(var(--navbar-h) + 4rem) 0 4rem;
     background:
-      radial-gradient(ellipse 100% 70% at 50% -15%, color-mix(in srgb, var(--green) 9%, transparent), transparent 52%),
+      radial-gradient(ellipse 80% 60% at 15% 40%, color-mix(in srgb, var(--green) 8%, transparent), transparent 55%),
       var(--bg);
   }
 
-  /* Grain texture éditorial : SVG noise inline, ultra-discret, limité au hero.
-     Évite la sur-texture du body et préserve la lisibilité des cartes articles. */
-  .hero--classic::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.22;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.13  0 0 0 0 0.10  0 0 0 0 0.04  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-    mix-blend-mode: multiply;
-  }
-
-  :global([data-theme="dark"]) .hero--classic::before {
-    opacity: 0.12;
-    mix-blend-mode: screen;
-  }
-
-  .hero--classic > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  :global([data-theme="dark"]) .home-landing {
+  :global([data-theme="dark"]) .hero {
     background:
-      radial-gradient(ellipse 100% 65% at 50% -12%, color-mix(in srgb, var(--green) 12%, transparent), transparent 50%),
+      radial-gradient(ellipse 80% 60% at 15% 40%, color-mix(in srgb, var(--green) 10%, transparent), transparent 55%),
       var(--bg);
   }
 
-  /* Animation : trait d'accent qui se déploie au scroll-reveal sous le section-title. */
-  .home-landing h2.drop-heading.section-title {
-    position: relative;
-    padding-bottom: 0.45rem;
+  .hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 4rem;
+    align-items: center;
+    max-width: 72rem;
   }
 
-  .home-landing h2.drop-heading.section-title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 3px;
-    width: 0;
-    background: linear-gradient(90deg, var(--green), color-mix(in srgb, var(--green) 30%, transparent));
-    border-radius: 2px;
-    transition: width 720ms cubic-bezier(0.22, 1, 0.36, 1);
-  }
-
-  .home-landing h2.drop-heading.section-title.is-visible::after,
-  .home-landing .is-visible h2.drop-heading.section-title::after {
-    width: clamp(2.5rem, 8vw, 5.5rem);
-  }
-
-  /* Fallback : si l'utilisateur préfère réduire les animations, on affiche le trait directement. */
-  @media (prefers-reduced-motion : reduce) {
-    .home-landing h2.drop-heading.section-title::after {
-      width: clamp(2.5rem, 8vw, 5.5rem);
-      transition: none;
+  @media (max-width: 860px) {
+    .hero__inner {
+      grid-template-columns: 1fr;
     }
+    .hero__deco { display: none; }
   }
 
-  /* Sur mobile, garder le titre centré (le trait reste à gauche du bloc). */
-  @media (max-width: 900px) {
-    .pillars .container h2.drop-heading.section-title,
-    .latest .container h2.drop-heading.section-title {
-      display: inline-block;
-    }
-  }
-
-  .editorial-intro .container,
-  .pillars .container,
-  .latest .container {
-    width: min(1280px, calc(100% - 2rem));
-    margin-inline: auto;
-  }
-
-  /* ── Décoration échiquier ── */
-  .hero-deco {
-    position: absolute;
-    color: var(--green);
-    opacity: 0.07;
-    pointer-events: none;
-    user-select: none;
-  }
-
-  .hero-deco--right {
-    top: calc(var(--navbar-h) + 1.5rem);
-    right: clamp(0.5rem, 4vw, 5rem);
-    transform: rotate(12deg);
-  }
-
-  .hero-deco--left {
-    bottom: 2.5rem;
-    left: clamp(0.5rem, 4vw, 5rem);
-    transform: rotate(-8deg);
-    opacity: 0.06;
-  }
-
-  :global([data-theme="dark"]) .hero-deco--right { opacity: 0.1; }
-  :global([data-theme="dark"]) .hero-deco--left { opacity: 0.08; }
-
-  /* Cacher les déco sur petits écrans : préserve la lisibilité du hero centré. */
-  @media (max-width: 720px) {
-    .hero-deco--left { display : none; }
-  }
-
-  /* ── Hero d’accueil : typo du site (Space Grotesk / Fraunces), fond = même grain que le body ── */
-  .hero--classic {
-    position: relative;
-    padding: calc(var(--navbar-h) + 3rem) 0 4rem;
-    text-align: center;
-  }
-
-  .hero--classic__inner {
-    max-width: 50rem;
-    margin-inline: auto;
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
   }
 
   .hero__eyebrow {
-    margin-bottom: 1.1rem;
+    margin-bottom: 0.4rem;
   }
 
-  .hero__title--classic {
+  .hero__title {
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: clamp(2.35rem, 8vw, 3.65rem);
-    margin: 0 0 1rem;
-    line-height: 1.08;
-    letter-spacing: -0.035em;
+    font-size: clamp(2.4rem, 5.5vw, 3.75rem);
+    line-height: 1.06;
+    letter-spacing: -0.04em;
     color: var(--text-main);
-  }
-
-  /* L'accent (.hero__accent) est injecté via `set:html` (titleHtml i18n) : il n'a donc PAS
-     l'attribut de scope Astro. Sans `:global()`, la règle compilée exige `.hero__accent[cid]`
-     et `color: var(--green)` ne s'applique jamais (l'accent tombait en couleur de texte).
-     On scope le parent (le H1 porte bien le cid) et on globalise l'accent. L'italique/serif
-     vient déjà de la classe globale `.display-serif` (global.css). */
-  .hero__title--classic :global(.hero__accent) {
-    color: var(--green);
-    font-family: var(--font-serif);
-    font-weight: 500;
-    font-style: italic;
-  }
-
-  .hero__lead--classic {
-    margin: 0 auto;
-    font-size: clamp(1rem, 2.4vw, 1.08rem);
-    font-weight: 400;
-    color: var(--text-muted);
-    max-width: 38rem;
-    line-height: 1.65;
-  }
-
-  .hero__actions--classic {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1.5rem;
-  }
-
-  .hero-proof--classic {
-    list-style: none;
-    padding: 0;
-    margin: 1.85rem 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-    justify-content: center;
-  }
-
-  .hero-proof--classic li {
-    padding: 0.38rem 0.78rem;
-    border-radius: var(--radius-pill);
-    border: 1px solid var(--border-soft);
-    background: var(--surface);
-    box-shadow: var(--shadow-xs);
-    font-family: var(--font-display);
-    font-size: 0.69rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    color: var(--text-muted);
-  }
-
-  @media (max-width: 560px) {
-    .hero__actions--classic {
-      flex-direction: column;
-      width: 100%;
-      max-width: 20rem;
-      margin-inline: auto;
-      margin-top: 1.35rem;
-    }
-
-    .hero__actions--classic :global(.button-primary),
-    .hero__actions--classic :global(.button-secondary) {
-      width: 100%;
-    }
-  }
-
-  .editorial-intro {
-    padding: clamp(2.5rem, 6vw, 4rem) 0;
-  }
-
-  .editorial-intro__wrap {
-    display: flex;
-    justify-content: center;
-  }
-
-  .editorial-note--home {
-    width: 100%;
-    max-width: 40rem;
-    margin-inline: auto;
-    text-align: left;
-    border: 1px solid var(--border-soft);
-    border-radius: 3px;
-    padding: 1.35rem 1.35rem 1.35rem 1.25rem;
-    border-left: 4px solid var(--green);
-    background: var(--surface);
-    box-shadow: var(--shadow-sm);
-  }
-
-  /* Titres type maquette : première lettre en vert (reste en noir via tokens). */
-  .home-landing h2.drop-heading.section-title {
-    font-family: var(--font-display);
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(1.85rem, 4.8vw, 2.85rem);
-    letter-spacing: -0.03em;
-    line-height: 1.12;
-    margin: 0 0 0.25rem;
-    color: var(--text-main);
-  }
-
-  .home-landing h2.drop-heading.section-title::first-letter {
-    color: var(--green);
-    font-weight: 800;
-    font-size: clamp(2.75rem, 9vw, 4.25rem);
-    line-height: 0.85;
-    margin-right: 0.02em;
-  }
-
-  .pillars {
-    padding: clamp(2rem, 5vw, 3rem) 0 3.75rem;
-  }
-
-  .pillars .container {
-    text-align: center;
-  }
-
-  /* Grid 2×2 sur desktop : évite la 4ᵉ carte orpheline d'un layout 3+1. */
-  .pillar-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.35rem;
-    margin-top: 2rem;
-    align-items: stretch;
-    max-width: 56rem;
-    margin-inline: auto;
-  }
-
-  @media (max-width: 640px) {
-    .pillar-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .pillar {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1.55rem 1.45rem 1.5rem;
-    min-height: 10.5rem;
-    border-radius: 6px;
-    border: 1px solid color-mix(in srgb, var(--p) 28%, var(--border-soft));
-    background:
-      linear-gradient(
-        145deg,
-        color-mix(in srgb, var(--p) 16%, var(--surface)) 0%,
-        color-mix(in srgb, var(--pillar-surface, transparent) 55%, var(--surface)) 48%,
-        var(--surface) 100%
-      );
-    box-shadow: var(--shadow-sm);
-    transition:
-      transform 240ms var(--ease-spring),
-      border-color 180ms ease,
-      box-shadow 240ms var(--ease-out);
-    text-align: left;
-    overflow: hidden;
-  }
-
-  /* Glyphe pièce d'échecs en filigrane derrière le contenu : signature visuelle. */
-  .pillar__glyph {
-    position: absolute;
-    top: -0.6rem;
-    right: 0.4rem;
-    font-family: var(--font-serif);
-    font-size: 6.5rem;
-    line-height: 1;
-    color: color-mix(in srgb, var(--p) 22%, transparent);
-    pointer-events: none;
-    user-select: none;
-    transform: rotate(-6deg);
-    transition: transform 380ms var(--ease-spring), color 240ms ease;
-    z-index: 0;
-  }
-
-  .pillar > *:not(.pillar__glyph) {
-    position: relative;
-    z-index: 1;
-  }
-
-  .pillar:hover .pillar__glyph {
-    transform: rotate(0deg) scale(1.08) translateY(-3px);
-    color: color-mix(in srgb, var(--p) 36%, transparent);
-  }
-
-  .pillar:hover,
-  .pillar:focus-visible {
-    transform: translateY(-4px);
-    border-color: color-mix(in srgb, var(--p) 55%, var(--border-soft));
-    box-shadow: var(--shadow-md), 0 0 0 1px color-mix(in srgb, var(--p) 18%, transparent);
-  }
-
-  /* Anneau de focus net pour la navigation clavier (au-delà du décollement). */
-  .pillar:focus-visible {
-    outline: 2px solid var(--p);
-    outline-offset: 3px;
-  }
-
-  /* prefers-reduced-motion : on coupe les transforms et transitions pour ce composant. */
-  @media (prefers-reduced-motion : reduce) {
-    .pillar,
-    .pillar__glyph,
-    .pillar__icon,
-    .pillar__arrow {
-      transition: none !important;
-    }
-    .pillar:hover,
-    .pillar:focus-visible {
-      transform: none;
-    }
-    .pillar:hover .pillar__glyph,
-    .pillar:hover .pillar__icon,
-    .pillar:hover .pillar__arrow {
-      transform: none;
-    }
-  }
-
-  /* Compteur d'articles : repère discret de la richesse de la rubrique. */
-  .pillar__count {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 0.32rem;
-    margin-top: 0.7rem;
-    padding: 0.25rem 0.6rem 0.28rem;
-    border-radius: var(--radius-pill);
-    border: 1px solid color-mix(in srgb, var(--p) 30%, var(--border-soft));
-    background: color-mix(in srgb, var(--p) 8%, var(--surface));
-  }
-
-  .pillar__count-num {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--p);
-    line-height: 1;
-  }
-
-  .pillar__count-label {
-    font-family: var(--font-display);
-    font-size: 0.65rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-  }
-
-  .pillar__icon {
-    flex-shrink: 0;
-    width: 2.85rem;
-    height: 2.85rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    color: var(--p);
-    background: color-mix(in srgb, var(--p) 14%, var(--surface));
-    border: 1px solid color-mix(in srgb, var(--p) 22%, transparent);
-    transition: transform 240ms var(--ease-spring), background 180ms ease;
-  }
-
-  .pillar__icon :global(svg) {
-    display: block;
-  }
-
-  .pillar:hover .pillar__icon {
-    transform: scale(1.06);
-    background: color-mix(in srgb, var(--p) 22%, var(--surface));
-  }
-
-  .pillar > div {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .pillar__kicker {
-    display: inline-flex;
-    margin-bottom: 0.28rem;
-    font-size: 0.68rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: color-mix(in srgb, var(--p) 55%, var(--text-dim));
-    font-weight: 700;
-  }
-
-  .pillar strong {
-    display: block;
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 1.08rem;
-    color: var(--text-main);
-    margin-bottom: 0.35rem;
-    letter-spacing: -0.02em;
-  }
-
-  .pillar p {
-    font-size: 0.92rem;
-    color: color-mix(in srgb, var(--text-main) 38%, var(--text-muted));
-    line-height: 1.58;
     margin: 0;
   }
 
-  .pillar__arrow {
-    color: var(--text-dim);
-    flex-shrink: 0;
-    margin-top: 0.2rem;
-    transition:
-      color 180ms ease,
-      transform 240ms var(--ease-spring);
+  .hero__accent {
+    color: var(--green);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
   }
 
-  .pillar:hover .pillar__arrow {
-    color: var(--p);
-    transform: translateX(3px);
+  .hero__lead {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    color: var(--text-muted);
+    line-height: 1.65;
+    max-width: 34rem;
+    margin: 0.4rem 0 0;
   }
 
-  .latest {
-    padding: clamp(2rem, 5vw, 3rem) 0 5.5rem;
-  }
-
-  .latest .container {
-    text-align: center;
-  }
-
-  .section-head {
+  .hero__actions {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1.65rem;
+    gap: 0.65rem;
+    margin-top: 0.75rem;
+  }
+
+  .hero__proof {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+
+  .hero__proof li {
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  /* Déco droite : carte illustrative avec grande pièce */
+  .hero__deco {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero__deco-card {
+    position: relative;
+    width: min(340px, 100%);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .hero__deco-glyph {
+    font-size: 7rem;
+    line-height: 1;
+    color: var(--green);
+    opacity: 0.85;
+    display: block;
+    text-align: center;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero__deco-glyph { animation: none; }
+  }
+
+  .hero__deco-board {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 80px;
+    height: 80px;
+    color: var(--green);
+    opacity: 0.1;
+  }
+
+  .hero__deco-chips {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero__deco-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-soft);
+    background: var(--bg-warm);
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    width: fit-content;
+  }
+
+  .hero__deco-chip--accent {
+    border-color: var(--green-border);
+    background: color-mix(in srgb, var(--green-light) 55%, var(--surface));
+    color: var(--green);
+  }
+
+  /* ════════════════════════════════════════════
+     FEATURED — carte horizontale (style Appux)
+  ════════════════════════════════════════════ */
+  .featured-section {
+    padding: 2rem 0 0;
+  }
+
+  .featured-section__eyebrow {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  /* Rendre la carte featured horizontale via :global() */
+  .featured-showcase :global(.card.featured) {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .featured-showcase :global(.card.featured .card-link--thumb) {
+    display: grid !important;
+    grid-template-columns: 46% 54% !important;
+    gap: 0 !important;
+    align-items: stretch !important;
+    height: 100%;
+    min-height: 22rem;
+  }
+
+  .featured-showcase :global(.card.featured .card-thumb-wrap) {
+    aspect-ratio: auto !important;
+    height: 100% !important;
+    border-radius: 12px 0 0 12px !important;
+    min-height: 22rem;
+  }
+
+  .featured-showcase :global(.card.featured .card-body) {
+    padding: 2.5rem 2.25rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+
+  .featured-showcase :global(.card.featured .card-title) {
+    font-size: clamp(1.5rem, 2.5vw, 2.1rem) !important;
+  }
+
+  .featured-showcase :global(.card.featured .card-excerpt) {
+    -webkit-line-clamp: 4 !important;
+    font-size: 0.95rem !important;
+  }
+
+  @media (max-width: 760px) {
+    .featured-showcase :global(.card.featured .card-link--thumb) {
+      grid-template-columns: 1fr !important;
+    }
+    .featured-showcase :global(.card.featured .card-thumb-wrap) {
+      height: 16rem !important;
+      border-radius: 12px 12px 0 0 !important;
+    }
+  }
+
+  /* ════════════════════════════════════════════
+     RUBRIQUES — strip compact
+  ════════════════════════════════════════════ */
+  .pillars {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .pillar-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    justify-content: center;
+  }
+
+  .pillar-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.55rem 1.1rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid color-mix(in srgb, var(--p) 30%, var(--border-soft));
+    background: color-mix(in srgb, var(--p) 8%, var(--surface));
+    color: var(--text-main);
+    font-family: var(--font-display);
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: transform 200ms var(--ease-spring), background 180ms ease, border-color 180ms ease;
+  }
+
+  .pillar-chip:hover {
+    transform: translateY(-2px);
+    background: color-mix(in srgb, var(--p) 16%, var(--surface));
+    border-color: color-mix(in srgb, var(--p) 55%, var(--border-soft));
+    color: var(--p);
+  }
+
+  .pillar-chip__label { color: inherit; }
+
+  .pillar-chip__count {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 0.75rem;
+    color: var(--p);
+    background: color-mix(in srgb, var(--p) 12%, var(--surface));
+    border: 1px solid color-mix(in srgb, var(--p) 22%, transparent);
+    border-radius: var(--radius-pill);
+    padding: 0.05rem 0.45rem;
+  }
+
+  /* ════════════════════════════════════════════
+     TOUS LES ARTICLES — header + tabs + grille
+  ════════════════════════════════════════════ */
+  .allposts {
+    padding: 3rem 0 5rem;
+  }
+
+  .allposts__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin-bottom: 1.75rem;
     max-width: 72rem;
     margin-inline: auto;
   }
 
-  .section-head__titles {
-    text-align: left;
-  }
-
-  .section-head .drop-heading {
-    margin-bottom: 0;
-  }
-
-  .see-all {
-    display: inline-block;
+  .allposts__title {
     font-family: var(--font-display);
-    font-size: 0.9rem;
     font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     color: var(--text-main);
-    border-bottom: 2px solid color-mix(in srgb, var(--green) 55%, transparent);
-    padding-bottom: 0.18rem;
-    transition: color 160ms ease, border-color 160ms ease, transform 220ms var(--ease-spring);
+    margin: 0;
+    letter-spacing: -0.025em;
   }
 
-  .see-all:hover {
-    color: var(--green);
-    border-bottom-color: var(--green);
-    transform: translateX(2px);
+  .allposts__controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
   }
 
-  /* Grid 3 colonnes 3 rangées :
-     - la 1ère carte est "featured" et occupe 2 col × 2 rg (top-left)
-     - les 5 autres remplissent naturellement la col 3 (row 1, 2) puis la row 3
-     Layout : [F F A] / [F F B] / [C D E]: pas de carte orpheline. */
-  .latest-grid {
+  /* Onglets de filtre */
+  .allposts__tabs {
+    display: flex;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    padding: 0.4rem 0.9rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 180ms var(--ease-spring);
+  }
+
+  .tab:hover {
+    border-color: color-mix(in srgb, var(--tab-accent, var(--green)) 45%, var(--border-soft));
+    color: var(--tab-accent, var(--green));
+    transform: translateY(-1px);
+  }
+
+  .tab.active {
+    background: var(--tab-accent, var(--green));
+    border-color: var(--tab-accent, var(--green));
+    color: #fff;
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--tab-accent, var(--green)) 30%, transparent);
+  }
+
+  /* Barre de recherche */
+  .allposts__search-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .allposts__search-wrap svg {
+    position: absolute;
+    left: 0.65rem;
+    color: var(--text-dim);
+    pointer-events: none;
+  }
+
+  .allposts__search {
+    padding: 0.42rem 0.9rem 0.42rem 2rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    color: var(--text-main);
+    font-family: var(--font-display);
+    font-size: 0.82rem;
+    width: 13rem;
+    outline: none;
+    transition: border-color 160ms ease, width 220ms ease, box-shadow 160ms ease;
+  }
+
+  .allposts__search::placeholder { color: var(--text-dim); }
+
+  .allposts__search:focus {
+    border-color: var(--green);
+    width: 17rem;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--green) 16%, transparent);
+  }
+
+  /* Grille 3 colonnes (comme Appux) */
+  .allposts__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    gap: 1.15rem;
-    text-align: left;
+    gap: 1.25rem;
     max-width: 72rem;
     margin-inline: auto;
-  }
-
-  .latest-grid > :global(.card) {
-    box-shadow: var(--shadow-md);
-    border-radius: 3px;
-    border-width: 1px;
-  }
-
-  .latest-grid > :global(.card.featured) {
-    grid-column: span 2;
-    grid-row: span 2;
   }
 
   @media (max-width: 900px) {
-    .latest-grid {
-      grid-template-columns: 1fr 1fr;
-      grid-auto-rows: auto;
-    }
-    .latest-grid > :global(.card.featured) {
-      grid-column: span 2;
-      grid-row: auto;
-    }
-    .section-head {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .section-head__titles {
-      text-align: center;
-    }
+    .allposts__grid { grid-template-columns: 1fr 1fr; }
+    .allposts__header { flex-direction: column; align-items: flex-start; }
   }
 
   @media (max-width: 560px) {
-    .latest-grid {
-      grid-template-columns: 1fr;
-    }
-    .latest-grid > :global(.card.featured) {
-      grid-column: auto;
-    }
+    .allposts__grid { grid-template-columns: 1fr; }
+    .allposts__search { width: 100%; }
+    .allposts__search:focus { width: 100%; }
+    .allposts__search-wrap { width: 100%; }
+    .allposts__controls { width: 100%; flex-direction: column; align-items: flex-start; }
   }
 
-  @media (max-width: 560px) {
-    .editorial-intro .container,
-    .pillars .container,
-    .latest .container {
-      width: min(1280px, calc(100% - 1.25rem));
-    }
-    .hero-proof--classic li {
-      font-size: 0.65rem;
-    }
+  /* Wrappers de filtrage */
+  .post-wrapper {
+    display: contents;
+  }
+
+  .post-wrapper.hidden > :global(.card) {
+    display: none !important;
+  }
+
+  .allposts__empty {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    padding: 3rem 0;
+    max-width: 72rem;
+    margin-inline: auto;
+  }
+
+  .allposts__see-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  .see-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.65rem 1.75rem;
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--green-border);
+    background: transparent;
+    color: var(--green);
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: background 180ms ease, color 180ms ease, transform 200ms var(--ease-spring);
+  }
+
+  .see-all-btn:hover {
+    background: var(--green);
+    color: #fff;
+    transform: translateY(-2px);
   }
 </style>
+
+<script>
+  function initFilters() {
+    const tabs = document.querySelectorAll<HTMLButtonElement>(".allposts__tabs .tab");
+    const wrappers = document.querySelectorAll<HTMLElement>(".post-wrapper");
+    const searchInput = document.querySelector<HTMLInputElement>(".allposts__search");
+    const emptyMsg = document.querySelector<HTMLElement>(".allposts__empty");
+    if (!tabs.length || !wrappers.length) return;
+
+    let activeFilter = "all";
+    let searchQuery = "";
+
+    function applyFilters() {
+      let visible = 0;
+      wrappers.forEach((wrapper) => {
+        const cat = wrapper.dataset.category ?? "";
+        const title = wrapper.dataset.title ?? "";
+        const excerpt = wrapper.dataset.excerpt ?? "";
+        const matchesCat = activeFilter === "all" || cat === activeFilter;
+        const matchesSearch =
+          !searchQuery || title.includes(searchQuery) || excerpt.includes(searchQuery);
+        const show = matchesCat && matchesSearch;
+        wrapper.classList.toggle("hidden", !show);
+        if (show) visible++;
+      });
+      if (emptyMsg) emptyMsg.style.display = visible === 0 ? "block" : "none";
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => { t.classList.remove("active"); t.setAttribute("aria-selected", "false"); });
+        tab.classList.add("active");
+        tab.setAttribute("aria-selected", "true");
+        activeFilter = tab.dataset.filter ?? "all";
+        applyFilters();
+      });
+    });
+
+    searchInput?.addEventListener("input", () => {
+      searchQuery = (searchInput.value ?? "").toLowerCase().trim();
+      applyFilters();
+    });
+  }
+
+  document.addEventListener("astro:page-load", initFilters);
+</script>

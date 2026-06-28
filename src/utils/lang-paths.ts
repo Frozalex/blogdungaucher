@@ -1,5 +1,5 @@
 /** Préfixes URL pour toutes les langues du site. */
-export type SiteLang = "fr" | "en" | "pt-br";
+export type SiteLang = "fr" | "en" | "pt-br" | "nl";
 
 export function withTrailingSlash(path: string): string {
   if (path === "" || path === "/") return "/";
@@ -13,7 +13,7 @@ export function withTrailingSlash(path: string): string {
  */
 export function swapLangPrefix(path: string, target: SiteLang): string {
   const norm = withTrailingSlash(path);
-  const stripped = norm.replace(/^\/(fr|en|pt-br)(?=\/|$)/, "");
+  const stripped = norm.replace(/^\/(fr|en|pt-br|nl)(?=\/|$)/, "");
   const rest =
     stripped === "" || stripped === "/"
       ? "/"

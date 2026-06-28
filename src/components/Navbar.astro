@@ -1,12 +1,13 @@
 ---
-import { navigationLinks, enNavigationLinks, ptBrNavigationLinks } from "../data/site";
+import { navigationLinks, enNavigationLinks, ptBrNavigationLinks, nlNavigationLinks } from "../data/site";
 import { t, type Lang } from "../i18n/translations";
 
-const { frHref, enHref, ptBrHref, lang = "fr" } = Astro.props as {
+const { frHref, enHref, ptBrHref, nlHref, lang = "fr" } = Astro.props as {
   frHref?: string;
   enHref?: string;
   ptBrHref?: string;
-  lang?: "fr" | "en" | "pt-br";
+  nlHref?: string;
+  lang?: "fr" | "en" | "pt-br" | "nl";
 };
 
 const pathname = Astro.url.pathname;
@@ -15,19 +16,21 @@ const links =
     ? enNavigationLinks
     : lang === "pt-br"
       ? ptBrNavigationLinks
-      : navigationLinks;
+      : lang === "nl"
+        ? nlNavigationLinks
+        : navigationLinks;
 
-const homeHref = lang === "en" ? "/en/" : lang === "pt-br" ? "/pt-br/" : "/fr/";
+const homeHref = lang === "en" ? "/en/" : lang === "pt-br" ? "/pt-br/" : lang === "nl" ? "/nl/" : "/fr/";
 
 /** Lang sûr pour le helper t() : retombe sur fr si la langue n'est pas couverte. */
-const tLang: Lang = (["fr", "en", "pt-br"].includes(lang) ? lang : "fr") as Lang;
+const tLang: Lang = (["fr", "en", "pt-br", "nl"].includes(lang) ? lang : "fr") as Lang;
 const siteName = (() => {
   const v = t(tLang, "nav.siteName");
   return v && typeof v === "string" ? v : "Blog d'un Gaucher";
 })();
 
 const isActive = (href : string) => {
-  const homePaths = ["/fr/", "/en/", "/pt-br/"];
+  const homePaths = ["/fr/", "/en/", "/pt-br/", "/nl/"];
   if (homePaths.includes(href)) {
     return pathname === href;
   }
@@ -36,6 +39,9 @@ const isActive = (href : string) => {
   }
   if (lang === "pt-br") {
     return href === "/pt-br/" ? pathname === "/pt-br/" : pathname.startsWith(href);
+  }
+  if (lang === "nl") {
+    return href === "/nl/" ? pathname === "/nl/" : pathname.startsWith(href);
   }
   return href === "/fr/" ? pathname === "/fr/" : pathname.startsWith(href);
 };
@@ -60,12 +66,17 @@ const linkKey : Record<string, string> = {
   "/pt-br/societe/" : "navLinks.societe",
   "/pt-br/blog/" : "navLinks.blog",
   "/pt-br/about/" : "navLinks.about",
+  "/nl/science/" : "navLinks.science",
+  "/nl/esprit/" : "navLinks.esprit",
+  "/nl/societe/" : "navLinks.societe",
+  "/nl/blog/" : "navLinks.blog",
+  "/nl/about/" : "navLinks.about",
 };
 ---
-<header class="navbar" id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"}>
+<header class="navbar" id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"} data-lang-nl-href={nlHref ?? "/nl/"}>
   <div class="container nav-inner">
 
-    <a href={homeHref} class="nav-logo" aria-label={lang === "en" ? "Home - A Left-Hander's Blog" : lang === "pt-br" ? "Início - Blog de um Canhoto" : "Accueil Blog d'un Gaucher"}>
+    <a href={homeHref} class="nav-logo" aria-label={lang === "en" ? "Home - A Left-Hander's Blog" : lang === "pt-br" ? "Início - Blog de um Canhoto" : lang === "nl" ? "Home - Blog van een Linkshandige" : "Accueil Blog d'un Gaucher"}>
       <img
         src="/images/logo.svg"
         alt=""
@@ -97,7 +108,7 @@ const linkKey : Record<string, string> = {
     <!-- Boutons icônes : recherche + dark mode + langue -->
     <div class="nav-actions">
       <a
-        href={lang === "en" ? "/en/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : "/fr/recherche/"}
+        href={lang === "en" ? "/en/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : lang === "nl" ? "/nl/recherche/" : "/fr/recherche/"}
         class="icon-btn search-btn"
         aria-label="Rechercher un article"
         title="Rechercher"
@@ -163,7 +174,7 @@ const linkKey : Record<string, string> = {
           >{link.label}</a>
         ))}
         <a
-          href={lang === "en" ? "/en/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : "/fr/recherche/"}
+          href={lang === "en" ? "/en/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : lang === "nl" ? "/nl/recherche/" : "/fr/recherche/"}
           class="mobile-link mobile-search-link"
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -671,7 +682,7 @@ const linkKey : Record<string, string> = {
       if (/\/recherche\/?$/.test(window.location.pathname)) return;
       e.preventDefault();
       const lang = window.__lang || "fr";
-      const path = lang === "en" ? "/en/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : "/fr/recherche/";
+      const path = lang === "en" ? "/en/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : lang === "nl" ? "/nl/recherche/" : "/fr/recherche/";
       window.location.href = path;
     }, { signal });
 

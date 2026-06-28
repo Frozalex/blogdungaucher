@@ -96,13 +96,22 @@ const enTranslations = defineCollection({
 
 /**
  * Traductions portugais brésilien (pt-BR) des articles FR.
- * Architecture prête mais non exposée sur le site : aucune page `/pt-br/`
- * n'est servie pour l'instant. À activer en créant `src/pages/pt-br/`
- * et en réintégrant la langue dans BaseLayout / sitemap / navbar.
- * Le slug du fichier MD doit correspondre au slug FR.
+ * Le slug du fichier MD est le slug localisé ; `frSlug` dans le frontmatter
+ * pointe vers le slug FR source.
  */
 const ptBrTranslations = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog-translations/pt-br" }),
+  schema: translationSchema,
+});
+
+/**
+ * Traductions néerlandaises (NL) des articles FR.
+ * Convention identique à PT-BR : nom de fichier = slug NL localisé,
+ * `frSlug` dans le frontmatter = slug FR source.
+ * Lancement prévu le 1er septembre 2026.
+ */
+const nlTranslations = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/blog-translations/nl" }),
   schema: translationSchema,
 });
 
@@ -122,5 +131,5 @@ const dissertations = defineCollection({
   }),
 });
 
-export const collections = { blog, enTranslations, ptBrTranslations, dissertations };
+export const collections = { blog, enTranslations, ptBrTranslations, nlTranslations, dissertations };
 

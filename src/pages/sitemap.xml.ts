@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 
-import { siteConfig, staticRoutes, enStaticRoutes, ptBrStaticRoutes, PT_BR_LAUNCH_DATE } from "../data/site";
-import { getAllPosts, getEnSlugMap, getPtBrSlugMap, getPostSlug, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
+import { siteConfig, staticRoutes, enStaticRoutes, ptBrStaticRoutes, nlStaticRoutes, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE } from "../data/site";
+import { getAllPosts, getEnSlugMap, getPtBrSlugMap, getNlSlugMap, getPostSlug, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
 
 /** Langues indexées dans le sitemap. */
@@ -18,7 +18,9 @@ export const GET: APIRoute = async () => {
   const posts = await getAllPosts();
   const enSlugMap = await getEnSlugMap();
   const ptBrLive = new Date() >= PT_BR_LAUNCH_DATE;
+  const nlLive = new Date() >= NL_LAUNCH_DATE;
   const ptBrSlugMap = ptBrLive ? await getPtBrSlugMap() : new Map<string, string>();
+  const nlSlugMap = nlLive ? await getNlSlugMap() : new Map<string, string>();
 
   function absolute(path: string) {
     return new URL(withTrailingSlash(path), siteConfig.siteUrl).toString();
@@ -44,6 +46,14 @@ export const GET: APIRoute = async () => {
     const frSlug = getPostSlug(post);
     const ptBrSlug = ptBrSlugMap.get(frSlug) ?? frSlug;
     return `/pt-br/blog/${ptBrSlug}/`;
+  }
+
+  function nlPathFor(frPath: string): string {
+    const post = posts.find((p) => getPostUrl(p) === frPath);
+    if (!post) return swapLangPrefix(frPath, "nl");
+    const frSlug = getPostSlug(post);
+    const nlSlug = nlSlugMap.get(frSlug) ?? frSlug;
+    return `/nl/blog/${nlSlug}/`;
   }
 
   // Pour les routes statiques, détermine si une version EN existe
@@ -84,10 +94,14 @@ export const GET: APIRoute = async () => {
         .join("\n          ");
       const frSlug = posts.find((p) => getPostUrl(p) === frPath);
       const hasPtBr = frSlug ? ptBrSlugMap.has(getPostSlug(frSlug)) : false;
+      const hasNl = frSlug ? nlSlugMap.has(getPostSlug(frSlug)) : false;
       const ptBrPart = ptBrLive && hasPtBr
         ? `\n          <xhtml:link rel="alternate" hreflang="pt-BR" href="${absolute(ptBrPathFor(frPath))}"/>`
         : "";
-      alternates = base + ptBrPart + `\n          <xhtml:link rel="alternate" hreflang="x-default" href="${loc}"/>`;
+      const nlPart = nlLive && hasNl
+        ? `\n          <xhtml:link rel="alternate" hreflang="nl" href="${absolute(nlPathFor(frPath))}"/>`
+        : "";
+      alternates = base + ptBrPart + nlPart + `\n          <xhtml:link rel="alternate" hreflang="x-default" href="${loc}"/>`;
     }
 
     return `
@@ -131,8 +145,12 @@ export const GET: APIRoute = async () => {
     const enHref = absolute(enPath);
     const matchedFrPost = posts.find((p) => getPostUrl(p) === frPath);
     const enHasPtBr = matchedFrPost ? ptBrSlugMap.has(getPostSlug(matchedFrPost)) : false;
+    const enHasNl = matchedFrPost ? nlSlugMap.has(getPostSlug(matchedFrPost)) : false;
     const ptBrPart = ptBrLive && !isFrOnlyPath(frPath) && enHasPtBr
       ? `\n        <xhtml:link rel="alternate" hreflang="pt-BR" href="${absolute(ptBrPathFor(frPath))}"/>`
+      : "";
+    const nlEnPart = nlLive && !isFrOnlyPath(frPath) && enHasNl
+      ? `\n        <xhtml:link rel="alternate" hreflang="nl" href="${absolute(nlPathFor(frPath))}"/>`
       : "";
 
     return `
@@ -140,10 +158,46 @@ export const GET: APIRoute = async () => {
         <loc>${enHref}</loc>
         <lastmod>${lastmod}</lastmod>
         <xhtml:link rel="alternate" hreflang="fr" href="${frHref}"/>
-        <xhtml:link rel="alternate" hreflang="en" href="${enHref}"/>${ptBrPart}
+        <xhtml:link rel="alternate" hreflang="en" href="${enHref}"/>${ptBrPart}${nlEnPart}
         <xhtml:link rel="alternate" hreflang="x-default" href="${frHref}"/>
       </url>`;
   });
+
+  // ── Entrées NL (gated : uniquement si nlLive) ──────────────────────────────
+  const nlEntries: string[] = [];
+  if (nlLive) {
+    const nlPostPaths = posts
+      .filter((post) => !isFrenchOnlyPost(post))
+      .filter((post) => nlSlugMap.has(getPostSlug(post)))
+      .map((post) => {
+        const frSlug = getPostSlug(post);
+        const nlSlug = nlSlugMap.get(frSlug)!;
+        return { nlPath: `/nl/blog/${nlSlug}/`, frPath: getPostUrl(post) };
+      });
+
+    const allNlPaths = [
+      ...nlStaticRoutes.map((r) => ({ nlPath: withTrailingSlash(r), frPath: swapLangPrefix(r, "fr") })),
+      ...nlPostPaths,
+    ];
+
+    for (const { nlPath, frPath } of allNlPaths) {
+      const lastmod = lastmodFor(frPath);
+      const frHref = absolute(frPath);
+      const enPath = enPathFor(frPath);
+      const enHref = absolute(enPath);
+      const nlHref = absolute(nlPath);
+
+      nlEntries.push(`
+      <url>
+        <loc>${nlHref}</loc>
+        <lastmod>${lastmod}</lastmod>
+        <xhtml:link rel="alternate" hreflang="fr" href="${frHref}"/>
+        <xhtml:link rel="alternate" hreflang="en" href="${enHref}"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="${nlHref}"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="${frHref}"/>
+      </url>`);
+    }
+  }
 
   // ── Entrées PT-BR (gated : uniquement si ptBrLive) ─────────────────────────
   const ptBrEntries: string[] = [];
@@ -184,7 +238,7 @@ export const GET: APIRoute = async () => {
   const body = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
           xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    ${[...frEntries, ...enEntries, ...ptBrEntries].join("")}
+    ${[...frEntries, ...enEntries, ...nlEntries, ...ptBrEntries].join("")}
   </urlset>`;
 
   return new Response(body, {

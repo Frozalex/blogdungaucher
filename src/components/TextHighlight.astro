@@ -1,12 +1,14 @@
 ---
-const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" };
+const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
 
 const t =
   lang === "en"
     ? { share: "Share", copy: "Copy", copied: "Copied!" }
     : lang === "pt-br"
       ? { share: "Compartilhar", copy: "Copiar", copied: "Copiado!" }
-      : { share: "Partager", copy: "Copier", copied: "Copié !" };
+      : lang === "nl"
+        ? { share: "Delen", copy: "Kopiëren", copied: "Gekopieerd!" }
+        : { share: "Partager", copy: "Copier", copied: "Copié !" };
 ---
 
 <div

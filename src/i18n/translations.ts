@@ -316,6 +316,109 @@ export const translations = {
       about: "Sobre",
     },
   },
+  nl: {
+    nav: {
+      siteName: "Blog van een Linkshandige",
+      context: "Redactioneel dagboek over schaken",
+      cta: "Lees de artikelen",
+      openMenu: "Menu openen",
+      closeMenu: "Menu sluiten",
+      navigation: "Navigatie",
+      seeAll: "Alle artikelen bekijken",
+      darkOn: "Donkere modus inschakelen",
+      darkOff: "Donkere modus uitschakelen",
+      langSwitch: "Passer en français",
+    },
+    footer: {
+      contactEyebrow: "Laten we in contact blijven",
+      tagline:
+        "Een onafhankelijke redactionele ruimte om schaken grondig te verkennen, met nuttige en toepasbare inhoud.",
+      suggestTopic: "Een onderwerp voorstellen of een vraag stellen",
+      exploreTitle: "Verkennen",
+      allArticles: "Alle artikelen",
+      editorial: "Redactionele lijn",
+      sectionsTitle: "Rubrieken",
+      trustTitle: "Vertrouwen",
+      legal: "Juridische vermeldingen",
+      privacy: "Privacy",
+    },
+    home: {
+      eyebrow: "Onafhankelijk redactioneel",
+      titleHtml:
+        'Schaken begrijpen<br/>zonder het spel te <span class="hero__accent display-serif">vereenvoudigen</span>.',
+      lead: "Twee artikelen per week: heldere analyses over de wetenschap van het spel, de competitieve mindset en de impact van schaken op de samenleving — menselijk en veeleisend.",
+      startReading: "Begin met lezen",
+      seeSections: "Bekijk de rubrieken",
+      proof1: "Diepgaande artikelen",
+      proof2: "Toegankelijke toon",
+      proof3: "Rigoureuze aanpak",
+      editorialNote:
+        "Hier beloven we geen magische vooruitgang in 7 dagen. We bieden solide ideeën, concrete voorbeelden en analyses die je kunt toepassen in je eigen praktijk — of je nu clubspeler bent, competitieschaker of gewoon gepassioneerd door het spel.",
+      sectionsEyebrow: "3 rubrieken",
+      sectionsTitle: "Wat we hier behandelen",
+      recentEyebrow: "Recent",
+      latestTitle: "Laatste artikelen",
+      seeAll: "Alles bekijken →",
+      signatureTagline:
+        "Schaakwetenschap, competitieve mindset, schaken in de echte wereld.",
+    },
+    blog: {
+      eyebrow: "Bibliotheek",
+      title: "Alle artikelen",
+      lead: "Schaakwetenschap, competitieve mindset, schaken en samenleving.",
+      filterAll: "Alles",
+      searchLabel: "Zoek een artikel",
+      searchPlaceholder: "Titel, fragment of tag…",
+      noResults: "Geen artikelen gevonden voor je zoekopdracht op deze pagina.",
+      prev: "Vorige",
+      next: "Volgende",
+    },
+    category: {
+      featured: "Uitgelicht",
+      allArticles: "Alle artikelen",
+      seeAll: "Alle artikelen bekijken",
+      comingSoon: "Eerste artikelen binnenkort.",
+      comingSoonDesc:
+        "Deze rubriek wordt binnenkort gepubliceerd. Bekijk ondertussen alle beschikbare artikelen.",
+      seeAllCta: "Alle artikelen bekijken",
+    },
+    card: {
+      read: "Lezen",
+    },
+    categories: {
+      science: {
+        label: "Wetenschap",
+        shortLabel: "Schaakwetenschap",
+        tagline:
+          "Begrijpen hoe het brein ziet, berekent en beslist op het schaakbord.",
+      },
+      esprit: {
+        label: "Geest",
+        shortLabel: "Competitieve mindset",
+        tagline: "Het mentale spel, discipline en helderheid wanneer de druk toeneemt.",
+      },
+      societe: {
+        label: "Samenleving",
+        shortLabel: "Schaken en samenleving",
+        tagline:
+          "Wanneer het schaakbord ook het verhaal vertelt van onze cultuur, onze instellingen en ons tijdperk.",
+      },
+      analyses: {
+        label: "Analyses",
+        shortLabel: "Stockfish-analyse",
+        tagline:
+          "Importeer een FEN-positie of een PGN-partij en laat Stockfish in real time analyseren.",
+      },
+    },
+    navLinks: {
+      science: "Wetenschap",
+      esprit: "Geest",
+      societe: "Samenleving",
+      dissertations: "Verhandelingen",
+      blog: "Alle artikelen",
+      about: "Over",
+    },
+  },
 } as const;
 
 export type Lang = keyof typeof translations;

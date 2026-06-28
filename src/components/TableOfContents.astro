@@ -4,7 +4,7 @@ type Heading = { depth: number; slug: string; text: string };
 const { headings, mode = "desktop", lang = "fr" } = Astro.props as {
   headings: Heading[];
   mode?: "desktop" | "mobile";
-  lang?: "fr" | "en" | "pt-br";
+  lang?: "fr" | "en" | "pt-br" | "nl";
 };
 
 const t =
@@ -24,10 +24,18 @@ const t =
           navDesktop: "Sumário",
           inArticle: "Neste artigo",
         }
-      : {
-          eyebrow: "Sommaire",
-          label: "Sauter à une section",
-          navMobile: "Table des matières mobile",
+      : lang === "nl"
+        ? {
+            eyebrow: "Inhoud",
+            label: "Naar een sectie springen",
+            navMobile: "Mobiele inhoudsopgave",
+            navDesktop: "Inhoudsopgave",
+            inArticle: "In dit artikel",
+          }
+        : {
+            eyebrow: "Sommaire",
+            label: "Sauter à une section",
+            navMobile: "Table des matières mobile",
           navDesktop: "Table des matières",
           inArticle: "Dans cet article",
         };

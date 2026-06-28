@@ -1,0 +1,498 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
+import { NL_LAUNCH_DATE } from "../../../data/site";
+
+if (new Date() < NL_LAUNCH_DATE) return Astro.redirect("/fr/about/", 302);
+---
+<BaseLayout
+  title="Over | Le_Gaucher, Blog van een Linkshandige"
+  description="Wie is Le_Gaucher? Een informaticástudent van 19, schaker op 1.600 Elo, en auteur van een blog dat neurowetenschappen, psychologie en schaakstrategie kruist."
+  canonicalPath="/nl/about/"
+  lang="nl"
+  frPath="/fr/about/"
+  enPath="/en/about/"
+  structuredData={[
+    buildBreadcrumbJsonLd([
+      { name: "Home", path: "/nl/" },
+      { name: "Over", path: "/nl/about/" },
+    ]),
+    buildPersonJsonLd("nl"),
+  ]}
+>
+  <article class="about-page">
+    <img class="about-page__glyph" src="/images/logo.svg" alt="" aria-hidden="true" />
+
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero__grid">
+          <div class="about-hero__avatar-block">
+            <img
+              src="/images/logo.svg"
+              alt="Logo Blog van een Linkshandige"
+              class="about-hero__avatar"
+              width="160"
+              height="160"
+              loading="eager"
+            />
+            <a
+              class="about-hero__avatar-tag about-hero__avatar-tag--link"
+              href="https://www.chess.com/member/le_gaucher"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Le_Gaucher profiel op Chess.com (opent in nieuw tabblad)"
+            >
+              <span aria-hidden="true" class="about-hero__avatar-piece">♞</span>
+              Le_Gaucher
+              <svg
+                class="about-hero__avatar-arrow"
+                aria-hidden="true"
+                width="10"
+                height="10"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 9L9 3M9 3H4M9 3V8" />
+              </svg>
+            </a>
+          </div>
+          <div class="about-hero__text">
+            <span class="eyebrow about-hero__eyebrow">Over</span>
+            <h1 class="about-hero__title">
+              Één persoon, één <span class="about-hero__title-em">blog</span>,
+              <br />en een methodische obsessie voor&nbsp;schaken.
+            </h1>
+            <p class="about-hero__lead">
+              Ik ben <strong>19 jaar</strong>. Linkshandig — niet figuurlijk, maar echt. Vandaar de naam van de site.
+            </p>
+          </div>
+        </div>
+
+        <dl class="about-stats">
+          <div class="about-stats__item">
+            <dt>leeftijd</dt>
+            <dd>19</dd>
+          </div>
+          <div class="about-stats__item">
+            <dt>Rapid Elo</dt>
+            <dd>1&thinsp;600</dd>
+          </div>
+          <div class="about-stats__item">
+            <dt>schakend</dt>
+            <dd>3 jaar</dd>
+          </div>
+          <div class="about-stats__item">
+            <dt>schrijvend</dt>
+            <dd class="about-stats__place">solo</dd>
+          </div>
+          <div class="about-stats__item about-stats__item--wide">
+            <dt>gebaseerd in</dt>
+            <dd class="about-stats__place">Gosier, Guadeloupe</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">01</span>
+          <h2 class="about-section__title">Waarom dit blog bestaat</h2>
+        </header>
+        <div class="about-section__body">
+          <p>
+            Op mijn zestiende werd ik gevraagd een schaakclub te leiden. Probleem: ik was daar helemaal niet goed genoeg voor. Dus leerde ik snel — héél snel — en absorbeerde alles wat ik kon over het spel, de strategie en de psychologie erachter.
+          </p>
+          <p>
+            Dat patroondenken ben ik sindsdien overal tegengekomen. Ik los vergelijkingen mentaal op. Ik lees situaties razendsnel. Schaken heeft me niet slimmer gemaakt, <em>het heeft me een methode gegeven</em>.
+          </p>
+          <p>
+            Later schreef ik artikelen op Chess.com. Minstens duizend views per artikel, zonder ooit in de officiële aanbevelingen te verschijnen. Waarschijnlijk de beste niet-geclassificeerde Franstalige blogger op het platform. Uiteindelijk heb ik alles verwijderd om plagiaat te vermijden en iets te bouwen dat echt van mij is.
+          </p>
+          <p class="about-section__close">Dit is dat iets.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-section--quote">
+      <div class="container">
+        <blockquote class="about-quote">
+          <p>
+            Wie ben ik om techniek te bespreken tegenover mensen die al dertig jaar spelen? Maar schaken kruisen met wat het onderzoek werkelijk zegt — over geheugen, het brein, de psychologie van de speler — dat kan ik met de nodige grondigheid doen.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">02</span>
+          <h2 class="about-section__title">Wat je hier vindt</h2>
+        </header>
+        <div class="about-section__body">
+          <p>
+            Ik ben geen grootmeester. Ik ben geen neurowetenschapper. Ik ben iemand die de studies leest, de bronnen controleert en ze toegankelijk maakt voor iedereen.
+          </p>
+          <p>
+            De artikelen hier zijn lang. De samenvattingen zijn gedetailleerd. De bronnen worden geciteerd. Dat is geen toeval: het is een redactionele keuze.
+            <strong>Je komt hier met een vraag, je gaat eruit met een antwoord.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">03</span>
+          <h2 class="about-section__title">Hoe ik werk</h2>
+        </header>
+        <div class="about-section__body">
+          <p>
+            Elk artikel begint met serieus onderzoek:
+          </p>
+          <ul class="about-method">
+            <li>
+              <span class="about-method__tag">onderzoek</span>
+              <span>Google Scholar, wetenschappelijke databases toegankelijk via universitaire licentie.</span>
+            </li>
+            <li>
+              <span class="about-method__tag">filteren</span>
+              <span>Consensus AI om robuuste studies te identificeren en geïsoleerde conclusies te schrappen.</span>
+            </li>
+            <li>
+              <span class="about-method__tag">schrijven</span>
+              <span>Ik herlees mijn eigen werk. Ik corrigeer. Ik citeer de bronnen aan het einde van elk artikel.</span>
+            </li>
+            <li>
+              <span class="about-method__tag">team</span>
+              <span>Één persoon, van begin tot eind. Geen freelancers, geen ghostwriting.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-section--neg">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">04</span>
+          <h2 class="about-section__title">Wat dit blog <em>niet is</em></h2>
+        </header>
+        <ul class="about-not">
+          <li>
+            <span class="about-not__mark">×</span>
+            Een klassieke schaaklessite.
+          </li>
+          <li>
+            <span class="about-not__mark">×</span>
+            Een nieuwsblog over Chess.com of chess24.
+          </li>
+          <li>
+            <span class="about-not__mark">×</span>
+            Een plek waar ik je vertel wat je wilt horen — als een studie genuanceerd is, zeg ik dat ook.
+          </li>
+          <li>
+            <span class="about-not__mark">×</span>
+            Een aggregator van al honderd keer behandelde invalshoeken. Ik zoek wat niemand serieus heeft aangepakt.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-signoff">
+      <div class="container">
+        <div class="about-signoff__inner">
+          <p class="about-signoff__signature">
+            <span class="about-signoff__name">Le_Gaucher</span>
+            <span class="about-signoff__city">Gosier, Guadeloupe</span>
+          </p>
+          <p class="about-signoff__contact">
+            Voor vragen, uitwisselingen of om het oneens te zijn:
+            <a href="mailto:contact@blogdungaucher.com" class="about-signoff__mail">
+              contact@blogdungaucher.com
+            </a>
+          </p>
+          <p class="about-signoff__contact about-signoff__contact--chess">
+            En als je wilt spelen of zien hoe ik speel:
+            <a
+              href="https://www.chess.com/member/le_gaucher"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="about-signoff__mail"
+            >
+              chess.com/member/le_gaucher
+              <svg
+                class="about-signoff__ext"
+                aria-hidden="true"
+                width="11"
+                height="11"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 9L9 3M9 3H4M9 3V8" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .about-page {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 5rem;
+    background:
+      radial-gradient(ellipse 70% 50% at 90% -5%, color-mix(in srgb, var(--green) 8%, transparent), transparent 55%),
+      radial-gradient(ellipse 60% 40% at -10% 60%, color-mix(in srgb, var(--green) 5%, transparent), transparent 55%),
+      var(--bg);
+  }
+
+  .about-page__glyph {
+    position: absolute;
+    top: 8rem;
+    right: -3rem;
+    width: clamp(20rem, 38vw, 36rem);
+    height: auto;
+    opacity: 0.07;
+    pointer-events: none;
+    user-select: none;
+    transform: rotate(-4deg);
+    z-index: 0;
+  }
+
+  :global([data-theme="dark"]) .about-page__glyph {
+    opacity: 0.1;
+    filter: invert(1);
+  }
+
+  .about-page > section { position: relative; z-index: 1; }
+
+  .about-hero { padding: calc(var(--navbar-h) + 2.5rem) 0 1.5rem; }
+
+  .about-hero__grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 720px) {
+    .about-hero__grid { grid-template-columns: 1fr; gap: 1.25rem; text-align: left; }
+  }
+
+  .about-hero__avatar-block { display: flex; flex-direction: column; align-items: center; gap: 0.55rem; }
+
+  .about-hero__avatar {
+    width: clamp(112px, 14vw, 160px);
+    height: clamp(112px, 14vw, 160px);
+    object-fit: contain;
+    flex-shrink: 0;
+    transition: filter 260ms ease;
+  }
+  :global([data-theme="dark"]) .about-hero__avatar { filter: invert(1); }
+
+  .about-hero__avatar-tag {
+    font-family: var(--font-display); font-size: 0.72rem; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dim);
+    padding: 0.22rem 0.55rem; border: 1px solid var(--border-soft);
+    border-radius: var(--radius-pill); background: var(--surface);
+    display: inline-flex; align-items: center; gap: 0.32rem;
+  }
+
+  .about-hero__avatar-tag--link {
+    text-decoration: none; color: var(--text-main);
+    transition: color 160ms ease, border-color 160ms ease, transform 200ms var(--ease-spring), box-shadow 200ms ease;
+  }
+  .about-hero__avatar-tag--link:hover,
+  .about-hero__avatar-tag--link:focus-visible {
+    color: var(--green); border-color: var(--green-border);
+    transform: translateY(-1px); box-shadow: var(--shadow-xs);
+  }
+
+  .about-hero__avatar-piece {
+    font-family: var(--font-serif); font-size: 0.95rem; line-height: 1; letter-spacing: 0;
+    color: var(--green); margin-right: 0.05rem; transform: translateY(-0.5px);
+  }
+
+  .about-hero__avatar-arrow {
+    color: var(--text-dim); transition: transform 200ms var(--ease-spring), color 160ms ease;
+    flex-shrink: 0; display: block;
+  }
+  .about-hero__avatar-tag--link:hover .about-hero__avatar-arrow,
+  .about-hero__avatar-tag--link:focus-visible .about-hero__avatar-arrow {
+    color: var(--green); transform: translate(2px, -2px);
+  }
+
+  .about-hero__eyebrow { margin-bottom: 0.95rem; color: var(--green); }
+
+  .about-hero__title {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05;
+    letter-spacing: -0.035em; margin: 0 0 1rem; color: var(--text-main);
+  }
+  .about-hero__title-em {
+    font-family: var(--font-serif); font-style: italic; font-weight: 500; color: var(--green);
+  }
+
+  .about-hero__lead {
+    margin: 0; font-size: clamp(1.02rem, 1.8vw, 1.15rem);
+    color: var(--text-muted); line-height: 1.7; max-width: 36rem;
+  }
+  .about-hero__lead strong { color: var(--text-main); font-weight: 600; }
+
+  .about-stats {
+    margin: 0; padding: 1.35rem 0 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap: clamp(1rem, 2.5vw, 1.75rem) clamp(1.25rem, 3.5vw, 2.5rem);
+    align-items: flex-end;
+    border-top: 1px solid color-mix(in srgb, var(--green) 22%, var(--border-soft));
+    max-width: 54rem;
+  }
+  .about-stats__item--wide { grid-column: span 2; }
+  @media (max-width: 480px) {
+    .about-stats { grid-template-columns: 1fr 1fr; }
+    .about-stats__item--wide { grid-column: span 2; }
+  }
+  .about-stats__item { display: flex; flex-direction: column-reverse; gap: 0.15rem; margin: 0; }
+  .about-stats__item dt {
+    font-family: var(--font-display); font-size: 0.66rem; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim);
+  }
+  .about-stats__item dd {
+    margin: 0; font-family: var(--font-serif); font-style: italic; font-weight: 500;
+    font-size: clamp(1.85rem, 4vw, 2.5rem); line-height: 0.95;
+    color: var(--green); letter-spacing: -0.02em;
+  }
+  .about-stats__place { font-size: clamp(1.1rem, 2.2vw, 1.4rem) !important; color: var(--text-main) !important; line-height: 1.2; }
+
+  .about-section { padding: clamp(2.25rem, 5vw, 3.5rem) 0; }
+
+  .about-section__head {
+    display: flex; align-items: baseline; gap: 0.85rem; margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-soft); padding-bottom: 0.65rem; max-width: 54rem;
+  }
+  .about-section__num {
+    font-family: var(--font-serif); font-style: italic; font-weight: 500;
+    font-size: clamp(1.45rem, 3vw, 1.8rem); color: var(--green);
+    letter-spacing: -0.02em; line-height: 1;
+  }
+  .about-section__title {
+    margin: 0; font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(1.55rem, 3.5vw, 2.1rem); letter-spacing: -0.03em;
+    line-height: 1.15; color: var(--text-main);
+  }
+  .about-section__title em { font-family: var(--font-serif); font-style: italic; font-weight: 500; color: var(--green); }
+
+  .about-section__body { max-width: 38rem; display: grid; gap: 1rem; }
+  .about-section__body p { margin: 0; font-size: 1.02rem; line-height: 1.78; color: var(--text-main); }
+  .about-section__body p em { font-family: var(--font-serif); font-style: italic; color: var(--green); }
+  .about-section__close {
+    font-family: var(--font-serif); font-style: italic; font-size: 1.18rem !important;
+    color: var(--green) !important; line-height: 1.4 !important;
+    padding-left: 0.85rem; border-left: 3px solid var(--green); margin-top: 0.5rem !important;
+  }
+
+  .about-section--quote { padding: clamp(2rem, 4vw, 3rem) 0; }
+  .about-quote {
+    margin: 0; padding: 1.75rem 1.5rem 1.75rem 2.5rem;
+    border-left: 4px solid var(--green);
+    background: color-mix(in srgb, var(--green) 5%, var(--surface));
+    border-radius: 0 6px 6px 0; max-width: 44rem; position: relative;
+  }
+  .about-quote::before {
+    content: "\201C"; position: absolute; top: -0.4rem; left: 0.6rem;
+    font-family: var(--font-serif); font-style: italic; font-size: 4rem; line-height: 1;
+    color: color-mix(in srgb, var(--green) 45%, transparent); pointer-events: none;
+  }
+  .about-quote p {
+    margin: 0; font-family: var(--font-serif); font-style: italic; font-weight: 400;
+    font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.55; color: var(--text-main);
+  }
+
+  .about-method {
+    list-style: none; padding: 0; margin: 0.5rem 0 0;
+    display: grid; gap: 0.7rem; max-width: 40rem;
+  }
+  .about-method li {
+    display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; align-items: baseline;
+    padding: 0.85rem 1rem; border: 1px solid var(--border-soft); border-radius: 6px;
+    background: var(--surface);
+    transition: border-color 180ms ease, transform 180ms var(--ease-spring);
+  }
+  .about-method li:hover { border-color: color-mix(in srgb, var(--green) 35%, var(--border-soft)); transform: translateY(-1px); }
+  .about-method__tag {
+    font-family: var(--font-display); font-size: 0.66rem; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--green);
+    padding: 0.18rem 0.45rem; background: color-mix(in srgb, var(--green) 10%, var(--surface));
+    border-radius: var(--radius-pill); border: 1px solid var(--green-border);
+    text-align: center; width: fit-content;
+  }
+  .about-method li > span:last-child { font-size: 0.95rem; line-height: 1.6; color: var(--text-main); }
+  @media (max-width: 600px) { .about-method li { grid-template-columns: 1fr; gap: 0.45rem; } }
+
+  .about-section--neg {
+    background: color-mix(in srgb, var(--bg-warm) 60%, var(--bg));
+    margin: 1.25rem 0; border-block: 1px solid var(--border-soft);
+  }
+  .about-not { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; max-width: 42rem; }
+  .about-not li {
+    display: flex; align-items: baseline; gap: 0.7rem;
+    font-size: 1rem; line-height: 1.6; color: var(--text-main); padding: 0.4rem 0;
+  }
+  .about-not__mark {
+    flex-shrink: 0; font-family: var(--font-serif); font-style: italic;
+    font-weight: 500; font-size: 1.3rem; color: var(--green); line-height: 1;
+  }
+
+  .about-signoff { padding: 2.5rem 0 0; }
+  .about-signoff__inner { padding-top: 1.5rem; border-top: 1px solid var(--border-soft); max-width: 38rem; }
+  .about-signoff__signature { margin: 0 0 0.85rem; display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; }
+  .about-signoff__name {
+    font-family: var(--font-serif); font-style: italic; font-weight: 600;
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--text-main); letter-spacing: -0.02em; line-height: 1;
+  }
+  .about-signoff__name::after { content: "*"; color: var(--green); margin-left: 0.05em; }
+  .about-signoff__city {
+    font-family: var(--font-display); font-size: 0.78rem; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim);
+  }
+  .about-signoff__contact { margin: 0; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
+  .about-signoff__contact--chess { margin-top: 0.5rem; }
+  .about-signoff__mail {
+    color: var(--green); font-weight: 600; text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--green) 35%, transparent);
+    transition: border-color 160ms ease; display: inline-flex; align-items: baseline; gap: 0.25rem;
+  }
+  .about-signoff__mail:hover { border-bottom-color: var(--green); }
+  .about-signoff__ext { transition: transform 200ms var(--ease-spring); flex-shrink: 0; transform: translateY(1px); }
+  .about-signoff__mail:hover .about-signoff__ext { transform: translate(1px, 0); }
+</style>
+
+<script>
+  function activateAbout() {
+    const el = document.querySelector(".about-page");
+    if (!el) return;
+    el.classList.add("js-anim");
+    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("is-loaded")));
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", activateAbout, { once: true });
+  } else {
+    activateAbout();
+  }
+  document.addEventListener("astro:page-load", activateAbout);
+</script>

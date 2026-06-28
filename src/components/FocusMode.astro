@@ -1,12 +1,14 @@
 ---
-const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" };
+const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
 
 const t =
   lang === "en"
     ? { enter: "Focus mode", exit: "Exit focus" }
     : lang === "pt-br"
       ? { enter: "Modo foco", exit: "Sair do foco" }
-      : { enter: "Mode lecture", exit: "Quitter" };
+      : lang === "nl"
+        ? { enter: "Focusmodus", exit: "Focus verlaten" }
+        : { enter: "Mode lecture", exit: "Quitter" };
 ---
 
 <button
