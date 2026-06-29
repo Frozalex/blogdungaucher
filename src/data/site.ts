@@ -208,13 +208,9 @@ export const categoryMap: Record<
 };
 
 export const navigationLinks = [
-  { label: "Science", href: "/fr/science/" },
-  { label: "Esprit", href: "/fr/esprit/" },
-  { label: "Société", href: "/fr/societe/" },
-  { label: "Grand oral", href: "/fr/grand-oral/" },
-  { label: "Dissertations", href: "/fr/dissertations/" },
-  { label: "Tous les articles", href: "/fr/blog/" },
   { label: "À propos", href: "/fr/about/" },
+  { label: "Dissertations", href: "/fr/dissertations/" },
+  { label: "Articles", href: "/fr/blog/" },
 ] as const;
 
 /** Date de lancement de la section PT-BR. Avant cette date, aucune page /pt-br/ n'est générée. */
@@ -224,11 +220,8 @@ export const PT_BR_LAUNCH_DATE = new Date("2026-07-01T06:00:00Z");
 export const NL_LAUNCH_DATE = new Date("2026-09-01T06:00:00Z");
 
 export const ptBrNavigationLinks = [
-  { label: "Ciência", href: "/pt-br/science/" },
-  { label: "Mente", href: "/pt-br/esprit/" },
-  { label: "Sociedade", href: "/pt-br/societe/" },
-  { label: "Todos os artigos", href: "/pt-br/blog/" },
   { label: "Sobre", href: "/pt-br/about/" },
+  { label: "Artigos", href: "/pt-br/blog/" },
 ] as const;
 
 export const ptBrStaticRoutes = [
@@ -241,11 +234,8 @@ export const ptBrStaticRoutes = [
 ] as const;
 
 export const nlNavigationLinks = [
-  { label: "Wetenschap", href: "/nl/science/" },
-  { label: "Geest", href: "/nl/esprit/" },
-  { label: "Samenleving", href: "/nl/societe/" },
-  { label: "Alle artikelen", href: "/nl/blog/" },
   { label: "Over", href: "/nl/about/" },
+  { label: "Artikelen", href: "/nl/blog/" },
 ] as const;
 
 export const nlStaticRoutes = [
@@ -258,12 +248,9 @@ export const nlStaticRoutes = [
 ] as const;
 
 export const enNavigationLinks = [
-  { label: "Science", href: "/en/science/" },
-  { label: "Mind", href: "/en/esprit/" },
-  { label: "Society", href: "/en/societe/" },
-  { label: "Dissertations", href: "/en/dissertations/" },
-  { label: "All articles", href: "/en/blog/" },
   { label: "About", href: "/en/about/" },
+  { label: "Dissertations", href: "/en/dissertations/" },
+  { label: "Articles", href: "/en/blog/" },
 ] as const;
 
 

@@ -144,11 +144,24 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
           <a href={blogHref} class="button-primary">{c.startReading}</a>
           <a href={`#${sectionsId}`} class="button-secondary">{c.seeSections}</a>
         </div>
-        <ul class="hero__proof" aria-label="Repères éditoriaux">
-          <li>{c.proof1}</li>
-          <li>{c.proof2}</li>
-          <li>{c.proof3}</li>
-        </ul>
+        <div class="hero__stats" aria-label="Repères éditoriaux">
+          <div class="stat-card">
+            <span class="stat-card__value">{totalPosts}+</span>
+            <span class="stat-card__label">{lang === "en" ? "Analyses published" : lang === "pt-br" ? "Análises publicadas" : lang === "nl" ? "Analyses gepubliceerd" : "Analyses publiées"}</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__value">2</span>
+            <span class="stat-card__label">{lang === "en" ? "Articles / week" : lang === "pt-br" ? "Artigos / semana" : lang === "nl" ? "Artikelen / week" : "Articles / semaine"}</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__value">100<span class="stat-card__unit">%</span></span>
+            <span class="stat-card__label">{lang === "en" ? "Sources cited" : lang === "pt-br" ? "Fontes citadas" : lang === "nl" ? "Bronnen vermeld" : "Sources citées"}</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__value">0</span>
+            <span class="stat-card__label">Clickbait</span>
+          </div>
+        </div>
       </div>
 
       <!-- Colonne déco : pièce d'échecs illustrative (comme la 3D Appux) -->
@@ -175,20 +188,6 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
 
     </div>
   </section>
-
-  <!-- ════════════════════════════════════════════
-       ARTICLE EN UNE — carte horizontale (style Appux)
-  ════════════════════════════════════════════ -->
-  {featuredPost && (
-    <section class="featured-section">
-      <div class="container">
-        <span class="eyebrow featured-section__eyebrow">{c.featuredEyebrow}</span>
-        <div class="featured-showcase reveal">
-          <ArticleCard post={featuredPost} featured={true} lang={lang} />
-        </div>
-      </div>
-    </section>
-  )}
 
   <div class="container">
     <AdBanner format="leaderboard" />
@@ -355,24 +354,43 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     margin-top: 0.75rem;
   }
 
-  .hero__proof {
-    list-style: none;
-    padding: 0;
-    margin: 0.75rem 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
+  .hero__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    margin: 1.5rem 0 0;
+    max-width: 22rem;
   }
 
-  .hero__proof li {
-    padding: 0.35rem 0.75rem;
-    border-radius: var(--radius-pill);
-    border: 1px solid var(--border-soft);
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.9rem 1rem;
     background: var(--surface);
-    font-family: var(--font-display);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+  }
+
+  .stat-card__value {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--text-main);
+  }
+
+  .stat-card__unit {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .stat-card__label {
     font-size: 0.7rem;
     font-weight: 600;
-    color: var(--text-muted);
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
   }
 
   /* Déco droite : carte illustrative avec grande pièce */

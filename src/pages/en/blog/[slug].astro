@@ -289,9 +289,11 @@ const otherPillars = categorySlugs
           <FocusMode lang="en" />
         </div>
 
-        <div class="toc-mobile-wrap">
-          <TableOfContents headings={headings} mode="mobile" lang="en" />
-        </div>
+        {headings.length > 0 && (
+          <div class="toc-inline-wrap">
+            <TableOfContents headings={headings} mode="mobile" lang="en" />
+          </div>
+        )}
 
         <div class="article-body fade-up" style="--motion-delay: 100ms;">
           {englishHtml ? (
@@ -334,10 +336,6 @@ const otherPillars = categorySlugs
       </div>
 
       <aside class="article-aside">
-        <div class="toc-desktop-wrap">
-          <TableOfContents headings={headings} mode="desktop" lang="en" />
-        </div>
-
         {relatedWithUrls.length > 0 && (
           <div class="aside-related fade-up" style="--motion-delay: 120ms;">
             <span class="aside-related__label">For you</span>
@@ -645,8 +643,7 @@ const otherPillars = categorySlugs
     margin-bottom: 0.75rem;
   }
 
-  .toc-mobile-wrap { display: none; }
-  .toc-desktop-wrap { width: 100%; max-width: 15.5rem; margin-inline: auto; }
+  .toc-inline-wrap { margin-bottom: 1.5rem; }
 
   .aside-card {
     padding: 1.1rem 1.2rem; border-radius: var(--radius-lg);
@@ -723,8 +720,6 @@ const otherPillars = categorySlugs
   @media (max-width: 900px) {
     .article-layout { grid-template-columns: 1fr; }
     .article-aside { position: static; grid-column: 1; }
-    .toc-mobile-wrap { display: block; }
-    .toc-desktop-wrap { display: none; }
     .reading-progress { display: none; }
   }
 </style>

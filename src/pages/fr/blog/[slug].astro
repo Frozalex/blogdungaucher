@@ -242,9 +242,11 @@ const otherPillars = categorySlugs
           <FocusMode lang="fr" />
         </div>
 
-        <div class="toc-mobile-wrap">
-          <TableOfContents headings={headings} mode="mobile" />
-        </div>
+        {headings.length > 0 && (
+          <div class="toc-inline-wrap">
+            <TableOfContents headings={headings} mode="mobile" lang="fr" />
+          </div>
+        )}
 
         {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
           <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
@@ -299,10 +301,6 @@ const otherPillars = categorySlugs
       <CodeBlockEnhancer />
 
       <aside class="article-aside" data-pagefind-ignore>
-        <div class="toc-desktop-wrap">
-          <TableOfContents headings={headings} mode="desktop" />
-        </div>
-
         {related.length > 0 && (
           <div class="aside-related fade-up" style="--motion-delay: 120ms;">
             <span class="aside-related__label">Pour vous</span>
@@ -751,14 +749,8 @@ const otherPillars = categorySlugs
     margin-bottom: 0.75rem;
   }
 
-  .toc-mobile-wrap {
-    display: none;
-  }
-
-  .toc-desktop-wrap {
-    width: 100%;
-    max-width: 15.5rem;
-    margin-inline: auto;
+  .toc-inline-wrap {
+    margin-bottom: 1.5rem;
   }
 
   .aside-card {
