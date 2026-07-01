@@ -242,10 +242,6 @@ const structuredData = [
           </div>
         )}
 
-        {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
-          <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
-        )}
-
         <div class="article-body fade-up" style="--motion-delay: 100ms;" data-pagefind-body>
           {strippedArticleHtml ? (
             <div class="md-chunk" set:html={strippedArticleHtml} />
@@ -267,6 +263,10 @@ const structuredData = [
         <AdBanner format="inline" compact={true} />
 
         {faqs.length > 0 && <FAQ items={faqs} lang="fr" />}
+
+        {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
+          <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
+        )}
 
         <Comments lang="fr" postId={postUrl} />
         <TextHighlight lang="fr" />

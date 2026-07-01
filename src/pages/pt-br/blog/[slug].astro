@@ -286,13 +286,13 @@ const structuredData = [
           )}
         </div>
 
-        {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
-          <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
-        )}
-
         <AdBanner format="inline" compact={true} />
 
         {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="pt-br" />}
+
+        {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
+          <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
+        )}
 
         <Comments lang="pt-br" />
 

@@ -130,6 +130,10 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
        HERO — texte centré sur la largeur du contenu
   ════════════════════════════════════════════ -->
   <section class="hero" aria-labelledby="home-hero-heading">
+    <div class="hero__blobs" aria-hidden="true">
+      <span class="hero__blob hero__blob--a"></span>
+      <span class="hero__blob hero__blob--b"></span>
+    </div>
     <div class="container hero__inner">
       <div class="hero__text">
         {c.eyebrow && <span class="eyebrow hero__eyebrow">{c.eyebrow}</span>}
@@ -161,23 +165,33 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
 
       <div class="stats-showcase" aria-label="Repères éditoriaux">
         <div class="stat-hero" style="--accent: var(--green);">
-          <p class="stat-hero__figure">
-            <span class="stat-num" data-count-to={totalPosts}>0</span><span class="stat-hero__suffix">+</span>
-          </p>
+          <div class="odometer odometer--hero" data-count-to={totalPosts} data-suffix="+">
+            <div class="odometer__tiles" aria-hidden="true"></div>
+            <span class="odometer__sr">{totalPosts}+</span>
+          </div>
           <p class="stat-hero__caption">{lang === "en" ? "analyses published, zero filler" : lang === "pt-br" ? "análises publicadas, sem enrolação" : lang === "nl" ? "analyses gepubliceerd, zonder opvulling" : "analyses publiées, sans remplissage"}</p>
         </div>
 
         <div class="stats-row">
           <div class="stat-mini" style="--accent: #f0a050;">
-            <p class="stat-mini__figure"><span class="stat-num" data-count-to="2">0</span></p>
+            <div class="odometer odometer--mini" data-count-to="2" data-suffix="">
+              <div class="odometer__tiles" aria-hidden="true"></div>
+              <span class="odometer__sr">2</span>
+            </div>
             <p class="stat-mini__label">{lang === "en" ? "Articles / week" : lang === "pt-br" ? "Artigos / semana" : lang === "nl" ? "Artikelen / week" : "Articles / semaine"}</p>
           </div>
           <div class="stat-mini" style="--accent: #5b9fd4;">
-            <p class="stat-mini__figure"><span class="stat-num" data-count-to="100">0</span><span>%</span></p>
+            <div class="odometer odometer--mini" data-count-to="100" data-suffix="%">
+              <div class="odometer__tiles" aria-hidden="true"></div>
+              <span class="odometer__sr">100%</span>
+            </div>
             <p class="stat-mini__label">{lang === "en" ? "Sources cited" : lang === "pt-br" ? "Fontes citadas" : lang === "nl" ? "Bronnen vermeld" : "Sources citées"}</p>
           </div>
           <div class="stat-mini" style="--accent: #5cc4b0;">
-            <p class="stat-mini__figure"><span class="stat-num" data-count-to="0">0</span></p>
+            <div class="odometer odometer--mini" data-count-to="0" data-suffix="">
+              <div class="odometer__tiles" aria-hidden="true"></div>
+              <span class="odometer__sr">0</span>
+            </div>
             <p class="stat-mini__label">Clickbait</p>
           </div>
         </div>
@@ -293,19 +307,47 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
      HERO
   ════════════════════════════════════════════ */
   .hero {
+    position: relative;
     padding: calc(var(--navbar-h) + 4rem) 0 4rem;
-    background:
-      radial-gradient(ellipse 80% 60% at 15% 40%, color-mix(in srgb, var(--green) 8%, transparent), transparent 55%),
-      var(--bg);
+    background: var(--bg);
+    overflow: clip;
   }
 
-  :global([data-theme="dark"]) .hero {
-    background:
-      radial-gradient(ellipse 80% 60% at 15% 40%, color-mix(in srgb, var(--green) 10%, transparent), transparent 55%),
-      var(--bg);
+  /* Formes abstraites floutées en fond, façon "gradient blobs" —
+     idée reprise du site de référence, réinterprétée en tons sombres
+     avec les couleurs de la charte plutôt que du bleu SaaS générique. */
+  .hero__blobs {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .hero__blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+  }
+
+  .hero__blob--a {
+    top: -12%;
+    left: 8%;
+    width: 26rem;
+    height: 26rem;
+    background: radial-gradient(circle, color-mix(in srgb, var(--green) 22%, transparent), transparent 70%);
+  }
+
+  .hero__blob--b {
+    top: 10%;
+    right: -8%;
+    width: 22rem;
+    height: 22rem;
+    background: radial-gradient(circle, color-mix(in srgb, #5b9fd4 16%, transparent), transparent 70%);
   }
 
   .hero__inner {
+    position: relative;
+    z-index: 1;
     max-width: 60rem;
   }
 
@@ -429,31 +471,8 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     border-bottom: 1px solid var(--border-soft);
   }
 
-  .stat-hero__figure {
-    display: flex;
-    align-items: baseline;
-    gap: 0.15rem;
-    margin: 0;
-    line-height: 1;
-  }
-
-  .stat-hero .stat-num {
-    font-family: var(--font-serif);
-    font-weight: 700;
-    font-size: clamp(3.4rem, 7vw, 5rem);
-    color: var(--accent);
-    letter-spacing: -0.02em;
-  }
-
-  .stat-hero__suffix {
-    font-family: var(--font-serif);
-    font-weight: 700;
-    font-size: clamp(2rem, 4vw, 2.75rem);
-    color: var(--accent);
-  }
-
   .stat-hero__caption {
-    margin: 0.35rem 0 0;
+    margin: 0.6rem 0 0;
     font-size: 0.95rem;
     color: var(--text-muted);
   }
@@ -473,16 +492,72 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     border-left: none;
   }
 
-  .stat-mini__figure {
+  /* ── Odomètre : chaque chiffre dans sa tuile, façon compteur mécanique.
+     Emprunté au langage visuel demandé (paynexus-template), réinterprété
+     dans la palette sombre du site plutôt que copié tel quel. ── */
+  .odometer {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .odometer__tiles {
     display: flex;
-    align-items: baseline;
-    gap: 0.05rem;
-    margin: 0;
-    line-height: 1;
+    gap: 0.3rem;
+  }
+
+  /* :global() nécessaire : les tuiles sont injectées dynamiquement en JS
+     (innerHTML) après le rendu Astro, elles n'héritent donc jamais de
+     l'attribut data-astro-cid- utilisé par le scoping des styles. */
+  .odometer__tiles :global(.tile) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--font-serif);
     font-weight: 700;
-    font-size: clamp(1.7rem, 3vw, 2.15rem);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
     color: var(--accent);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: 0.45rem;
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.04),
+      0 3px 0 var(--border-soft),
+      0 8px 16px rgba(0,0,0,0.22);
+  }
+
+  .odometer__tiles :global(.tile--suffix) {
+    color: var(--bg);
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow:
+      0 3px 0 color-mix(in srgb, var(--accent) 65%, black),
+      0 8px 16px rgba(0,0,0,0.22);
+  }
+
+  .odometer--hero .odometer__tiles :global(.tile) {
+    width: clamp(2.6rem, 5.5vw, 3.4rem);
+    height: clamp(3.4rem, 7vw, 4.3rem);
+    font-size: clamp(2rem, 4.5vw, 2.75rem);
+  }
+
+  .odometer--mini .odometer__tiles :global(.tile) {
+    width: 1.85rem;
+    height: 2.3rem;
+    font-size: 1.2rem;
+    border-radius: 0.35rem;
+  }
+
+  /* Le contenu réel (accessible) reste dans le DOM pour les lecteurs
+     d'écran ; les tuiles générées en JS sont purement décoratives. */
+  .odometer__sr {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 
   .stat-mini__label {
@@ -837,15 +912,27 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
   }
 
   function initStatsCountUp() {
-    const nums = document.querySelectorAll<HTMLElement>(".stats-section .stat-num");
-    if (!nums.length) return;
+    const odometers = document.querySelectorAll<HTMLElement>(".stats-section .odometer");
+    if (!odometers.length) return;
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+    function paint(el: HTMLElement, value: number, digits: number) {
+      const tiles = el.querySelector<HTMLElement>(".odometer__tiles");
+      if (!tiles) return;
+      const suffix = el.dataset.suffix ?? "";
+      const str = String(value).padStart(digits, "0");
+      let html = "";
+      for (const ch of str) html += `<span class="tile">${ch}</span>`;
+      for (const ch of suffix) html += `<span class="tile tile--suffix">${ch}</span>`;
+      tiles.innerHTML = html;
+    }
+
     function animate(el: HTMLElement) {
       const target = parseInt(el.dataset.countTo ?? "0", 10);
+      const digits = String(target).length;
       if (reduceMotion || target === 0) {
-        el.textContent = String(target);
+        paint(el, target, digits);
         return;
       }
       const duration = 1100;
@@ -853,7 +940,7 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
       function tick(now: number) {
         const progress = Math.min(1, (now - start) / duration);
         const eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = String(Math.round(eased * target));
+        paint(el, Math.round(eased * target), digits);
         if (progress < 1) requestAnimationFrame(tick);
       }
       requestAnimationFrame(tick);
@@ -867,7 +954,7 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
       });
     }, { threshold: 0.4 });
 
-    nums.forEach((el) => observer.observe(el));
+    odometers.forEach((el) => observer.observe(el));
   }
 
   document.addEventListener("astro:page-load", initFilters);
