@@ -155,45 +155,31 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
        façon page "in numbers" d'un magazine (pas une grille SaaS)
   ════════════════════════════════════════════ -->
   <section class="stats-section" aria-labelledby="stats-heading">
-    <span class="stats-section__ghost" aria-hidden="true">{totalPosts}</span>
     <div class="container stats-section__inner">
       <div class="stats-section__head">
-        <span class="eyebrow">{lang === "en" ? "(Editorial)" : lang === "pt-br" ? "(Editorial)" : lang === "nl" ? "(Redactioneel)" : "(Éditorial)"}</span>
-        <h2 id="stats-heading" class="stats-section__title">{lang === "en" ? "Numbers that\nset the tone" : lang === "pt-br" ? "Números que\ndão o tom" : lang === "nl" ? "Cijfers die\nde toon zetten" : "Des repères qui\ndonnent le ton"}</h2>
-        <p class="stats-section__sub">{lang === "en" ? "No growth-hacking, no vanity metrics — just the rhythm we hold ourselves to." : lang === "pt-br" ? "Sem growth hacking, sem métricas de vaidade — só o ritmo que seguimos à risca." : lang === "nl" ? "Geen groeihacks, geen ijdele cijfers — gewoon het ritme dat we onszelf opleggen." : "Pas de growth hacking, pas de métriques de vanité — juste le rythme qu'on s'impose."}</p>
+        <span class="stats-section__bolt" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 11-14h-7l1-6Z"/></svg>
+        </span>
+        <h2 id="stats-heading" class="stats-section__title">{lang === "en" ? "Honest, sourced writing." : lang === "pt-br" ? "Escrita honesta e referenciada." : lang === "nl" ? "Eerlijk, gebronneerd schrijven." : "Une écriture honnête, sourcée."}</h2>
+        <p class="stats-section__sub">{lang === "en" ? "Our editorial process keeps every article accountable — checking sources, cutting filler, and respecting the reader's time so you can focus on what actually helps you improve." : lang === "pt-br" ? "Nosso processo editorial mantém cada artigo responsável — verificando fontes, cortando enrolação e respeitando o tempo do leitor para você focar no que realmente ajuda a melhorar." : lang === "nl" ? "Ons redactionele proces houdt elk artikel verantwoordelijk — bronnen controleren, opvulling schrappen en de tijd van de lezer respecteren, zodat jij je kunt richten op wat je echt vooruit helpt." : "Notre processus éditorial tient chaque article responsable : sources vérifiées, remplissage coupé, temps du lecteur respecté — pour se concentrer sur ce qui fait vraiment progresser."}</p>
       </div>
 
-      <div class="stats-showcase" aria-label="Repères éditoriaux">
-        <div class="stat-hero" style="--accent: var(--green);">
-          <div class="odometer odometer--hero" data-count-to={totalPosts} data-suffix="+">
-            <div class="odometer__tiles" aria-hidden="true"></div>
-            <span class="odometer__sr">{totalPosts}+</span>
-          </div>
-          <p class="stat-hero__caption">{lang === "en" ? "analyses published, zero filler" : lang === "pt-br" ? "análises publicadas, sem enrolação" : lang === "nl" ? "analyses gepubliceerd, zonder opvulling" : "analyses publiées, sans remplissage"}</p>
+      <div class="stats-grid" aria-label="Repères éditoriaux">
+        <div class="stat-tile">
+          <span class="stat-tile__value">{totalPosts}+</span>
+          <span class="stat-tile__label">{lang === "en" ? "Analyses published" : lang === "pt-br" ? "Análises publicadas" : lang === "nl" ? "Analyses gepubliceerd" : "Analyses publiées"}</span>
         </div>
-
-        <div class="stats-row">
-          <div class="stat-mini" style="--accent: #f0a050;">
-            <div class="odometer odometer--mini" data-count-to="2" data-suffix="">
-              <div class="odometer__tiles" aria-hidden="true"></div>
-              <span class="odometer__sr">2</span>
-            </div>
-            <p class="stat-mini__label">{lang === "en" ? "Articles / week" : lang === "pt-br" ? "Artigos / semana" : lang === "nl" ? "Artikelen / week" : "Articles / semaine"}</p>
-          </div>
-          <div class="stat-mini" style="--accent: #5b9fd4;">
-            <div class="odometer odometer--mini" data-count-to="100" data-suffix="%">
-              <div class="odometer__tiles" aria-hidden="true"></div>
-              <span class="odometer__sr">100%</span>
-            </div>
-            <p class="stat-mini__label">{lang === "en" ? "Sources cited" : lang === "pt-br" ? "Fontes citadas" : lang === "nl" ? "Bronnen vermeld" : "Sources citées"}</p>
-          </div>
-          <div class="stat-mini" style="--accent: #5cc4b0;">
-            <div class="odometer odometer--mini" data-count-to="0" data-suffix="">
-              <div class="odometer__tiles" aria-hidden="true"></div>
-              <span class="odometer__sr">0</span>
-            </div>
-            <p class="stat-mini__label">Clickbait</p>
-          </div>
+        <div class="stat-tile">
+          <span class="stat-tile__value">2 / {lang === "en" ? "week" : lang === "pt-br" ? "sem." : lang === "nl" ? "week" : "sem."}</span>
+          <span class="stat-tile__label">{lang === "en" ? "Publishing rhythm" : lang === "pt-br" ? "Ritmo de publicação" : lang === "nl" ? "Publicatieritme" : "Rythme de publication"}</span>
+        </div>
+        <div class="stat-tile stat-tile--photo">
+          <span class="stat-tile__value">100%</span>
+          <span class="stat-tile__label">{lang === "en" ? "Sources cited" : lang === "pt-br" ? "Fontes citadas" : lang === "nl" ? "Bronnen vermeld" : "Sources citées"}</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-tile__value">0</span>
+          <span class="stat-tile__label">Clickbait</span>
         </div>
       </div>
     </div>
@@ -414,14 +400,25 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
 <style>
   .home-landing {
     overflow-x: clip;
+    /* Le hero sert de gabarit : toutes les sections statiques de la
+       landing (hero, chiffres, promos, rubriques, en une) partagent
+       cette même hauteur minimale pour un rythme vertical régulier. */
+    --section-h: 38rem;
+  }
+
+  @media (max-width: 760px) {
+    .home-landing { --section-h: auto; }
   }
 
   /* ════════════════════════════════════════════
-     HERO
+     HERO — gabarit de hauteur pour les autres sections
   ════════════════════════════════════════════ */
   .hero {
     position: relative;
-    padding: calc(var(--navbar-h) + 4rem) 0 4rem;
+    min-height: var(--section-h);
+    display: grid;
+    align-items: center;
+    padding: calc(var(--navbar-h) + 2rem) 0 2rem;
     background: var(--bg);
     overflow: clip;
   }
@@ -511,34 +508,14 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
   }
 
   /* ════════════════════════════════════════════
-     REPÈRES ÉDITORIAUX — chiffre-phare + mesures,
-     dans l'esprit d'une double-page "en chiffres" de magazine
+     "Secure, fast payments" — copié fidèlement : icône + titre + texte
+     à gauche, grille 2×2 de cartes chiffrées simples à droite (une
+     carte porte un motif décoratif, comme la photo de dune du modèle).
   ════════════════════════════════════════════ */
   .stats-section {
-    position: relative;
-    padding: 2.5rem 0 3.5rem;
-    overflow: clip;
-    border-top: 1px solid var(--border-soft);
-    border-bottom: 1px solid var(--border-soft);
-  }
-
-  /* Chiffre géant en filigrane, purement décoratif : ancre l'ensemble
-     dans le chiffre-phare sans reproduire un dashboard SaaS. */
-  .stats-section__ghost {
-    position: absolute;
-    top: 50%;
-    right: -1.5rem;
-    transform: translateY(-50%);
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 600;
-    font-size: min(22rem, 40vw);
-    line-height: 1;
-    color: var(--text-main);
-    opacity: 0.035;
-    pointer-events: none;
-    user-select: none;
-    white-space: nowrap;
+    min-height: var(--section-h);
+    display: grid;
+    align-items: center;
   }
 
   .stats-section__inner {
@@ -546,13 +523,24 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
     gap: 2.5rem 4rem;
     align-items: center;
-    position: relative;
+    width: 100%;
   }
 
   .stats-section__head {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 1rem;
+  }
+
+  .stats-section__bolt {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--green) 16%, var(--surface));
+    color: var(--green);
   }
 
   .stats-section__title {
@@ -563,150 +551,92 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     letter-spacing: -0.03em;
     color: var(--text-main);
     margin: 0;
-    white-space: pre-line;
   }
 
   .stats-section__sub {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
-    line-height: 1.55;
-    max-width: 26rem;
+    line-height: 1.6;
+    max-width: 28rem;
     margin: 0;
   }
 
-  .stats-showcase {
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stat-tile {
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
-  }
-
-  /* Chiffre-phare : traitement asymétrique, bien plus grand que les
-     autres — c'est la hiérarchie qui donne vie à la section. */
-  .stat-hero {
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border-soft);
-  }
-
-  .stat-hero__caption {
-    margin: 0.6rem 0 0;
-    font-size: 0.95rem;
-    color: var(--text-muted);
-  }
-
-  .stats-row {
-    display: flex;
-    gap: 0;
-  }
-
-  .stat-mini {
-    flex: 1;
-    padding: 0 1.5rem;
-    border-left: 1px solid var(--border-soft);
-  }
-  .stat-mini:first-child {
-    padding-left: 0;
-    border-left: none;
-  }
-
-  /* ── Odomètre : chaque chiffre dans sa tuile, façon compteur mécanique.
-     Emprunté au langage visuel demandé (paynexus-template), réinterprété
-     dans la palette sombre du site plutôt que copié tel quel. ── */
-  .odometer {
-    display: inline-flex;
-    align-items: center;
-  }
-
-  .odometer__tiles {
-    display: flex;
-    gap: 0.3rem;
-  }
-
-  /* :global() nécessaire : les tuiles sont injectées dynamiquement en JS
-     (innerHTML) après le rendu Astro, elles n'héritent donc jamais de
-     l'attribut data-astro-cid- utilisé par le scoping des styles. */
-  .odometer__tiles :global(.tile) {
-    display: inline-flex;
-    align-items: center;
     justify-content: center;
-    font-family: var(--font-serif);
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
-    line-height: 1;
-    color: var(--accent);
+    gap: 0.5rem;
+    min-height: 8rem;
+    padding: 1.5rem 1.6rem;
+    border-radius: var(--radius-lg);
     background: var(--surface);
     border: 1px solid var(--border-soft);
-    border-radius: 0.45rem;
-    box-shadow:
-      inset 0 1px 0 rgba(255,255,255,0.04),
-      0 3px 0 var(--border-soft),
-      0 8px 16px rgba(0,0,0,0.22);
   }
 
-  .odometer__tiles :global(.tile--suffix) {
-    color: var(--bg);
-    background: var(--accent);
-    border-color: var(--accent);
-    box-shadow:
-      0 3px 0 color-mix(in srgb, var(--accent) 65%, black),
-      0 8px 16px rgba(0,0,0,0.22);
+  .stat-tile__value {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+    color: var(--text-main);
+    letter-spacing: -0.02em;
   }
 
-  .odometer--hero .odometer__tiles :global(.tile) {
-    width: clamp(2.6rem, 5.5vw, 3.4rem);
-    height: clamp(3.4rem, 7vw, 4.3rem);
-    font-size: clamp(2rem, 4.5vw, 2.75rem);
-  }
-
-  .odometer--mini .odometer__tiles :global(.tile) {
-    width: 1.85rem;
-    height: 2.3rem;
-    font-size: 1.2rem;
-    border-radius: 0.35rem;
-  }
-
-  /* Le contenu réel (accessible) reste dans le DOM pour les lecteurs
-     d'écran ; les tuiles générées en JS sont purement décoratives. */
-  .odometer__sr {
-    position: absolute;
-    width: 1px; height: 1px;
-    padding: 0; margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  .stat-mini__label {
-    margin: 0.4rem 0 0;
-    font-size: 0.72rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+  .stat-tile__label {
+    font-size: 0.82rem;
     color: var(--text-dim);
   }
 
+  /* Carte décorative (équivalent de la photo de dune du modèle) :
+     motif damier en dégradé, sans dépendre d'une image importée. */
+  .stat-tile--photo {
+    position: relative;
+    overflow: clip;
+    background:
+      repeating-conic-gradient(
+        color-mix(in srgb, var(--green) 22%, var(--surface)) 0% 25%,
+        var(--surface) 0% 50%
+      )
+      0 0 / 2.5rem 2.5rem;
+    border-color: color-mix(in srgb, var(--green) 30%, var(--border-soft));
+  }
+  .stat-tile--photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 55%, transparent), var(--bg) 96%);
+  }
+  .stat-tile--photo .stat-tile__value,
+  .stat-tile--photo .stat-tile__label {
+    position: relative;
+    z-index: 1;
+  }
+  .stat-tile--photo .stat-tile__value { color: #fff; }
+  .stat-tile--photo .stat-tile__label { color: rgba(255,255,255,0.75); }
+
   @media (max-width: 760px) {
-    .stats-section { padding: 2rem 0 2.75rem; }
     .stats-section__inner {
       grid-template-columns: 1fr;
       gap: 2rem;
     }
-    .stats-section__ghost { opacity: 0.03; }
   }
 
   @media (max-width: 480px) {
-    .stats-row { flex-wrap: wrap; row-gap: 1.25rem; }
-    .stat-mini {
-      flex: 1 1 40%;
-      padding: 0 0 0 1.25rem;
-    }
-    .stat-mini:nth-child(odd) { border-left: none; padding-left: 0; }
+    .stats-grid { grid-template-columns: 1fr; }
   }
 
   /* ════════════════════════════════════════════
      FEATURED — carte horizontale (style Appux)
   ════════════════════════════════════════════ */
   .featured-section {
+    min-height: var(--section-h);
+    display: grid;
+    align-items: center;
     padding: 2rem 0 0;
   }
 
@@ -768,6 +698,9 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
      RUBRIQUES — strip compact
   ════════════════════════════════════════════ */
   .pillars {
+    min-height: var(--section-h);
+    display: grid;
+    align-items: center;
     padding: 3.5rem 0;
     border-bottom: 1px solid var(--border-soft);
   }
@@ -869,6 +802,9 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
      PROMO SPLIT — texte/checklist alterné avec un visuel
   ════════════════════════════════════════════ */
   .promo-split {
+    min-height: var(--section-h);
+    display: grid;
+    align-items: center;
     padding: 3.5rem 0;
     border-bottom: 1px solid var(--border-soft);
   }
@@ -1232,52 +1168,5 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     });
   }
 
-  function initStatsCountUp() {
-    const odometers = document.querySelectorAll<HTMLElement>(".stats-section .odometer");
-    if (!odometers.length) return;
-
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    function paint(el: HTMLElement, value: number, digits: number) {
-      const tiles = el.querySelector<HTMLElement>(".odometer__tiles");
-      if (!tiles) return;
-      const suffix = el.dataset.suffix ?? "";
-      const str = String(value).padStart(digits, "0");
-      let html = "";
-      for (const ch of str) html += `<span class="tile">${ch}</span>`;
-      for (const ch of suffix) html += `<span class="tile tile--suffix">${ch}</span>`;
-      tiles.innerHTML = html;
-    }
-
-    function animate(el: HTMLElement) {
-      const target = parseInt(el.dataset.countTo ?? "0", 10);
-      const digits = String(target).length;
-      if (reduceMotion || target === 0) {
-        paint(el, target, digits);
-        return;
-      }
-      const duration = 1100;
-      const start = performance.now();
-      function tick(now: number) {
-        const progress = Math.min(1, (now - start) / duration);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        paint(el, Math.round(eased * target), digits);
-        if (progress < 1) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        animate(entry.target as HTMLElement);
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.4 });
-
-    odometers.forEach((el) => observer.observe(el));
-  }
-
   document.addEventListener("astro:page-load", initFilters);
-  document.addEventListener("astro:page-load", initStatsCountUp);
 </script>
