@@ -205,21 +205,3 @@ Les échecs ont produit certains des esprits les plus fascinants de l'histoire s
 **Après lecture :** si tu vises une carrière semi-pro, **modélise trois flux** (cours, contenu, tournois) sur une feuille, pas seulement le prize money du maître que tu suis en stream.
 
 ---
-
-## À retenir
-
-- Les prize pools des échecs sont dérisoires comparés aux autres sports et jeux de stratégie, y compris certains esports
-- La grande majorité des joueurs professionnels ne vivent pas des tournois mais de l'enseignement, du contenu en ligne et des contrats de streaming
-- Chess.com et Lichess ont transformé l'économie du jeu, en créant de nouveaux revenus mais en captant aussi une grande partie de la valeur
-- Le modèle économique des échecs est en mutation : la question n'est pas si les revenus vont augmenter, mais qui va en bénéficier
-
-### Sources et références
-
-- **FIDE (2023).** - [*World Chess Championship 2023 - Official Prize Fund.*](https://fide.com) Astana, Kazakhstan. (Prize pool officiel et répartition entre les joueurs.)
-- **Nakamura, H. (2022-2024).** - Twitch & YouTube [@GMHikaru](https://www.twitch.tv/gmhikaru). (Modèle économique du streaming aux échecs : revenus publicitaires, abonnements, partenariats Chess.com.)
-- **Chess.com Press (2022).** - [*Chess.com Acquires Play Magnus Group.*](https://www.chess.com/article/view/chess-com-acquires-play-magnus-group) (Acquisition pour 83 millions de dollars ; valorisation de Chess.com et modèle économique des plateformes.)
-- **Statista (2023).** - *Esports prize pool comparison by game, 2023.* (Comparaison des prize pools entre esports, poker et échecs.)
-- **Elo, A. E. (1978).** - *The Rating of Chessplayers, Past and Present.* Arco Publishing. (Système de classement FIDE et base de la hiérarchie professionnelle aux échecs.)
-- **Shenk, D. (2006).** - *The Immortal Game : A History of Chess.* Doubleday. (Histoire économique et culturelle des échecs, y compris l'impact de la Guerre froide sur le financement du jeu professionnel.)
-- **Byrne, R. (1972).** - *Fischer-Spassky Match Reports.* New York Times. (Contexte géopolitique et économique du match du siècle ; première grande médiatisation internationale des échecs.)
-

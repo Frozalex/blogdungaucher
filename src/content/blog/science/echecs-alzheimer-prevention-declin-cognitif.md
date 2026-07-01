@@ -61,7 +61,6 @@ dataReveal:
     risque relatif de démence. Pour une personne donnée, aucune activité isolée ne permet d’inférer un résultat
     individuel à partir de ces chiffres.
 
-
     Les échecs peuvent contribuer au plaisir et à la stimulation mentale comme d’autres activités régulières. Les travaux
     cités mesurent surtout des tendances agrégées, pas des promesses au cas par cas.
 seoTitle: "Échecs et Alzheimer : études, chiffres et prévention cognitive"
@@ -199,14 +198,7 @@ Les analyses comme **Dubois et al., 2024** (JAMA Neurology) rappellent par aille
 
 Le **jeu d'échecs** n’est pas une équation fermée contre la maladie d’Alzheimer ; c’est une **pratique du jeu** longue, parfois mesurable sur humeur ou engagement, rarement réductible à un seul chiffre magique. Dans un rapport honnête aux données, c’est déjà une bonne défense.
 
-## À retenir
-
-- Les associations épidémiologiques (probabilité relative sur une cohorte, souvent présentée comme un ratio) ne valent pas causalité individuelle.
-- Jeux de plateau ≠ médicament : les effets dépendent de la dose (temps, semaines), du profil (MCI, diagnostic déjà posé, **sujet** senior bien portant) et du résultat mesuré (MMSE, humeur, qualité de vie).
-- Le **jeu d'échecs** reste un levier réaliste : engagement cognitif fort, feedback immédiat, **communauté** active ; trois facteurs **grâce** auxquels les politiques de vieillissement actif intègrent le **jouer aux échecs** dans leurs leviers.
-
 ## Pour aller plus loin
 
 - [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
 - [Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)
-

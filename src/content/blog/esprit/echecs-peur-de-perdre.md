@@ -97,18 +97,3 @@ La peur de perdre bien gérée n'est pas éliminée : elle est transformée en a
 **Après lecture :** avant ta prochaine partie « à enjeux », écris **un objectif de processus** (ex. tenir un plan dix coups) distinct du résultat : c’est la variable que tu contrôles.
 
 ---
-
-## À retenir
-
-- La peur de perdre modifie profondément le style de jeu, favorisant la passivité et les positions "sûres"
-- Elle génère une prophétie auto-réalisatrice : les comportements d'évitement créent les conditions des défaites qu'on cherche à éviter
-- La distinction entre "jouer pour gagner" et "jouer pour ne pas perdre" est l'une des plus importantes en psychologie des échecs
-- Des techniques issues de la psychologie du sport et de la thérapie cognitivo-comportementale permettent de transformer cette peur
-
-### Sources et références
-
-- **Martens, R.** *Sport Competition Anxiety Test.* Human Kinetics, 1977. (L'un des premiers outils de mesure de l'anxiété compétitive dans le sport.)
-- **Hanin, Y. L.** *Emotions in Sport.* Human Kinetics, 2000. (La théorie des zones individuelles de fonctionnement optimal et l'anxiété de performance.)
-- **Yerkes, R. M., & Dodson, J. D.** *The Relation of Strength of Stimulus to Rapidity of Habit-Formation.* Journal of Comparative Neurology and Psychology, 18(5), 459-482, 1908. (La loi de Yerkes-Dodson sur la relation entre activation et performance.)
-- **Kasparov, G.** *How Life Imitates Chess.* Bloomsbury, 2007. (Les réflexions de Kasparov sur la psychologie de la performance aux échecs et dans la vie.)
-- **Smith, R. E., & Smoll, F. L.** *Sport Performance Anxiety.* In Handbook of Social and Evaluation Anxiety. Plenum Press, 1990. (Le cadre théorique de l'anxiété de performance sportive.)

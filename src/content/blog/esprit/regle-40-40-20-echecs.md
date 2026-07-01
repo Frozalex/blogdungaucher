@@ -215,22 +215,3 @@ En blitz pur, les finales comptent beaucoup moins (les parties se terminent rare
 **Après lecture :** pendant **une semaine**, chronomètre le temps réel tactique / finales / ouvertures ; compare au tableau « session type » du milieu d’article et ajuste **un** levier seulement.
 
 ---
-
-## À retenir
-
-- La plupart des joueurs amateurs surindexent massivement sur les ouvertures, là où l'impact sur le résultat est le plus faible à leur niveau
-- La tactique est le levier de progression le plus documenté et le plus immédiat : elle améliore le calcul, la reconnaissance de patterns et la précision dans toutes les phases du jeu
-- Les finales sont chroniquement négligées alors qu'elles sont la phase où les erreurs techniques coûtent le plus - une partie nulle ou gagnée se convertit ou s'échappe en finale
-- La règle 40-40-20 n'est pas universelle : elle doit être ajustée selon le niveau, le style et les faiblesses identifiées du joueur
-
-### Sources et références
-Pour approfondir les idées développées dans cet article :
-
-- **Chase, W. G., & Simon, H. A. (1973).** - [*Perception in chess.*](https://doi.org/10.1016/0010-0285(73)90004-2) *Cognitive Psychology*, 4(1), 55-81. (Étude fondatrice sur la reconnaissance de patterns chez les joueurs d'échecs experts : les Grand Maîtres ne calculent pas mieux, ils reconnaissent plus vite les configurations significatives.)
-- **Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993).** - [*The role of deliberate practice in the acquisition of expert performance.*](https://doi.org/10.1037/0033-295X.100.3.363) *Psychological Review*, 100(3), 363-406. (Cadre théorique de la pratique délibérée : c'est la qualité de l'attention pendant l'entraînement, et non la durée brute, qui produit la progression vers l'expertise.)
-- **de Groot, A. D. (1965).** - *Thought and Choice in Chess.* Mouton. (Première étude systématique sur la pensée des joueurs d'échecs, base de toutes les recherches cognitives ultérieures sur le jeu.)
-- **Nunn, J. (1998).** - *Secrets of Practical Chess.* Gambit Publications. (Approche pragmatique de l'entraînement et de la gestion des erreurs ; discussion sur la surévaluation des ouvertures à bas niveau.)
-- **Dvoretsky, M., & Yusupov, A. (1991).** - *Technique for the Tournament Player.* Batsford. (Méthode d'entraînement intensif centrée sur la tactique et les finales ; référence pour l'entraînement structuré des joueurs en progression.)
-- **Rowson, J. (2005).** - *Chess for Zebras : Thinking Differently about Black and White.* Gambit Publications. (Réflexion sur les biais cognitifs dans l'apprentissage des échecs et les limites des conseils d'entraînement génériques.)
-- **Fine, R. (1941).** - *Basic Chess Endings.* McKay. (Référence classique sur les finales ; première phrase de l'introduction : l'étude des finales est le fondement de la progression aux échecs.)
-

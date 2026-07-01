@@ -220,17 +220,8 @@ C'est le paradoxe de la confiance aux échecs : elle se construit dans l'inconfo
 - Kasparov, G. (2007). *How Life Imitates Chess*. Bloomsbury.
 - Kaufman, K. A., Glass, C. R., & Arnkoff, D. B. (2009). Evaluation of Mindful Sport Performance Enhancement (MSPE). *Journal of Clinical Sport Psychology*, 3(4), 334–356.
 
-## À retenir
-
-- La confiance qui dure repose sur l'**auto-efficacité** (croire en sa capacité à exécuter *ce* processus précis) et non sur l'estime générale
-- Le **mindset de croissance** (Dweck, 2006) transforme chaque défaite en information : c'est mesurable et entraînable
-- L'**Elo est un thermomètre**, pas un juge : le confondre avec ta valeur personnelle est le mécanisme central du syndrome de l'imposteur échiquéen
-- Les expériences de **maîtrise progressive** (pas les victoires faciles) sont le moteur principal de la confiance durable (Bandura, 1997)
-- L'**analyse post-partie** rigoureuse est la pratique la mieux documentée pour construire une confiance qui résiste à la pression
-
 ## Pour aller plus loin
 
 - [La psychologie du joueur d'échecs : ce qui se passe vraiment dans ta tête](/fr/blog/psychologie-du-joueur-d-echecs/)
 - [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
 - [Les échecs et l'addiction : quand le jeu devient une drogue](/fr/blog/les-echecs-et-l-addiction/)
-

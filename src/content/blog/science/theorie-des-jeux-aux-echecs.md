@@ -212,21 +212,3 @@ Parce que "le meilleur coup" dépend de ton modèle de l'adversaire. Si tu joues
 Non, et c'est important. Elle dit que **sous jeu parfait**, le résultat est déterminé. Mais le jeu parfait n'existe ni chez l'humain (limites cognitives) ni chez la machine (limites computationnelles au-delà des finales à 7 pièces). La théorie prédit les *équilibres asymptotiques* (Espagnole stable depuis 200 ans), pas les *issues individuelles*. Pour ça, il faut modéliser l'écart de force, la préparation, la fatigue, l'horaire de la partie : et là, la théorie des jeux cède la place à la statistique et à la psychologie.
 
 ---
-
-## À retenir
-
-- Les échecs sont un jeu fini, à somme nulle, à deux joueurs, à information parfaite, donc analysable par Zermelo (1913).
-- Une "vérité" du jeu existe déjà (Blanc gagne, Noir gagne, ou nul sous jeu parfait), mais $10^{120}$ parties la rendent inaccessible.
-- Minimax = maximiser pour soi en supposant que l'autre minimise pour soi. C'est ce que ton cerveau fait sans le savoir.
-- L'élagage alpha-bêta double la profondeur atteignable : la raison pour laquelle Deep Blue battait Kasparov en 1997.
-- L'équilibre de Nash explique pourquoi certaines ouvertures (Espagnole) traversent les siècles : personne n'a intérêt à dévier seul.
-- L'**élimination des stratégies dominées** est ce qui te permet de ne calculer que 3-5 coups sur 35 sans réfléchir : tu écartes intuitivement ce qui est strictement pire.
-- En pratique, l'information n'est jamais parfaite : l'incertitude est dans la tête de l'adversaire, pas sur l'échiquier. C'est là que la psychologie remplace les maths.
-
-### Sources et références
-
-- **von Neumann, J., & Morgenstern, O.** *Theory of Games and Economic Behavior.* Princeton University Press, 1944. (Le texte fondateur de la théorie des jeux moderne.)
-- **Nash, J.** [*Non-Cooperative Games.*](https://www.jstor.org/stable/1969529) Annals of Mathematics, 54(2), 286-295, 1951. (L'introduction formelle de l'équilibre de Nash.)
-- **Zermelo, E.** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* Proceedings of the Fifth International Congress of Mathematicians, 1913. (Le théorème fondateur sur la résolution des jeux finis.)
-- **Schaeffer, J., et al.** [*Checkers Is Solved.*](https://www.science.org/doi/10.1126/science.1144079) Science, 317(5844), 1518-1522, 2007. (La résolution complète du jeu de dames par ordinateur.)
-- **Shannon, C. E.** *Programming a Computer for Playing Chess.* Philosophical Magazine, Series 7, 41(314), 1950. (L'estimation du nombre de parties possibles aux échecs.)

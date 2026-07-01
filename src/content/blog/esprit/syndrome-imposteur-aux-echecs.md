@@ -89,18 +89,3 @@ La transformation du syndrome de l'imposteur ne se fait pas en un jour, mais ell
 **Après lecture :** après **trois** parties, écris **une** décision interne et attribuable (temps, plan, tactique) pour chaque victoire, pas « j’ai eu de la chance ».
 
 ---
-
-## À retenir
-
-- Le syndrome de l'imposteur aux échecs se traduit par une attribution systématique des succès à la chance et des échecs à la compétence
-- Les caractéristiques du jeu (transparence des erreurs, absence de hasard) amplifient ce mécanisme
-- Il existe des patterns comportementaux identifiables qui permettent de le diagnostiquer chez soi
-- La psychothérapie cognitivo-comportementale et des techniques spécifiques permettent une vraie transformation
-
-### Sources et références
-
-- **Clance, P. R.** *The Impostor Phenomenon : Overcoming the Fear That Haunts Your Success.* Peachtree Publishers, 1985. (Le livre de référence sur le syndrome de l'imposteur par sa co-découvreuse.)
-- **Beck, A. T.** *Cognitive Therapy of Depression.* Guilford Press, 1979. (Les distorsions cognitives et leur correction dans la thérapie cognitive.)
-- **Weiner, B.** *An Attributional Theory of Motivation and Emotion.* Springer, 1986. (La théorie des attributions causales et ses applications à la performance.)
-- **Dweck, C. S., & Leggett, E. L.** *A Social-Cognitive Approach to Motivation and Personality.* Psychological Review, 95(2), 256-273, 1988. (Les orientations de but et leur impact sur la performance et la motivation.)
-- **Young, V.** *The Secret Thoughts of Successful Women : Why Capable People Suffer from the Impostor Syndrome.* Crown Business, 2011. (Les différents "types" d'imposteurs et leurs stratégies caractéristiques.)

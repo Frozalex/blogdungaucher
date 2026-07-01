@@ -180,20 +180,3 @@ Le tableau ci-dessous synthétise quelle disposition attentionnelle privilégier
 **Après lecture :** sur ta prochaine session de tactique, observe pendant 15 minutes si tu es en attention soutenue ou en hyperfocus, sans rien changer. Cette métacognition seule modifie la régulation du système.
 
 ---
-
-## À retenir
-
-- L'attention soutenue et l'hyperfocus sont deux états neuroscientifiques distincts, pas deux niveaux d'intensité d'un même état.
-- L'attention soutenue privilégie la durée et la lucidité périphérique : essentielle en cadence classique.
-- L'hyperfocus privilégie la profondeur et l'absorption totale : précieux pour la tactique, l'analyse approfondie et le blitz.
-- L'hyperfocus a un prix neuro-cognitif : perte de la perception du temps, cécité tactique périphérique, épuisement post-session.
-- L'expertise aux échecs n'est pas l'hyperfocus permanent, mais la **flexibilité de bascule** entre les deux régimes selon le contexte.
-
-### Sources et références
-
-- **Posner, M. I., & Petersen, S. E.** [*The Attention System of the Human Brain.*](https://www.annualreviews.org/doi/10.1146/annurev.ne.13.030190.000325) *Annual Review of Neuroscience*, 13, 25-42, 1990. (Article fondateur sur la décomposition tripartite de l'attention.)
-- **Hupfeld, K. E., Abagis, T. R., & Shah, P.** [*Living "in the Zone": Hyperfocus in Adult ADHD.*](https://link.springer.com/article/10.1007/s12402-018-0272-y) *ADHD Attention Deficit and Hyperactivity Disorders*, 11(2), 191-208, 2019. (Documentation empirique de l'hyperfocus dans le TDAH adulte.)
-- **Murray, D., Lesser, M., & Lawson, W.** [*Attention, Monotropism and the Diagnostic Criteria for Autism.*](https://journals.sagepub.com/doi/10.1177/1362361305051398) *Autism*, 9(2), 139-156, 2005. (Théorie monotropique de l'autisme.)
-- **Hillman, C. H., Erickson, K. I., & Kramer, A. F.** [*Be Smart, Exercise Your Heart: Exercise Effects on Brain and Cognition.*](https://www.nature.com/articles/nrn2298) *Nature Reviews Neuroscience*, 9(1), 58-65, 2008. (Effets de l'exercice sur l'attention.)
-- **Gobet, F., de Voogt, A., & Retschitzki, J.** *Moves in Mind: The Psychology of Board Games.* Psychology Press, 2004. (Référence sur l'expertise cognitive aux échecs et autres jeux de plateau.)
-- **Brown, T. E.** *Attention Deficit Disorder: The Unfocused Mind in Children and Adults.* Yale University Press, 2005. (Référence clinique sur le TDAH et l'hyperfocus.)

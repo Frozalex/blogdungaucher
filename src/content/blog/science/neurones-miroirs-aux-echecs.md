@@ -95,18 +95,3 @@ C'est pourquoi les joueurs qui ont un style très marqué ont souvent des "angle
 **Après lecture :** sur une partie récente, rejoue **cinq coups** du camp adverse à voix haute avec « il veut obtenir quoi ? » avant de vérifier au moteur.
 
 ---
-
-## À retenir
-
-- Les neurones miroirs s'activent à la fois lors de l'exécution d'une action et lors de l'observation de la même action chez autrui
-- Aux échecs, ils sous-tendent la simulation mentale des intentions de l'adversaire
-- Le joueur expérimenté simule les plans adverses depuis l'intérieur, comme s'il jouait lui-même les deux côtés
-- Cette simulation peut être entraînée et affinée par la pratique de l'analyse à deux points de vue
-
-### Sources et références
-
-- **Rizzolatti, G., & Craighero, L.** [*The Mirror-Neuron System.*](https://www.annualreviews.org/doi/10.1146/annurev.neuro.27.070203.144230) Annual Review of Neuroscience, 27, 169-192, 2004. (La revue de référence sur le système miroir chez l'humain.)
-- **Iacoboni, M.** *Mirroring People: The New Science of How We Connect with Others.* Farrar, Straus and Giroux, 2008. (La vulgarisation des travaux sur les neurones miroirs et leurs implications sociales.)
-- **Bilalić, M., McLeod, P., & Gobet, F.** [*Inflexibility of Experts -- Reality or Myth? Quantifying the Einstellung Effect in Chess Masters.*](https://pubmed.ncbi.nlm.nih.gov/18380819/) Cognitive Psychology, 56(2), 73-102, 2008. (La rigidité cognitive et ses bases neurales chez les experts aux échecs.)
-- **Amidzic, O., et al.** [*Pattern of Focal gamma-bursts in Chess Players.*](https://www.nature.com/articles/nature01112) Nature, 412, 603, 2001. (L'activité cérébrale différentielle chez les experts et les novices d'échecs.)
-- **Gobet, F., & Simon, H. A.** *Expert Chess Memory: Revisiting the Chunking Hypothesis.* Memory, 6(3), 225-255, 1998. (La théorie des chunks et la reconnaissance de patterns aux échecs.)

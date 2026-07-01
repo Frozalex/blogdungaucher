@@ -191,23 +191,7 @@ L'échiquier enseigne quelque chose que peu d'activités enseignent aussi claire
 
 ---
 
-## À retenir
-
-- La criminologie contemporaine identifie trois déficits cognitifs liés à la récidive : pensée court-termiste, impulsivité, faible théorie de l'esprit (Ross & Fabiano, 1985)
-- Ces trois déficits sont précisément les trois axes qu'une partie d'échecs exige de travailler
-- Les programmes documentés (Change Through Chess, San Quentin) montrent des effets observés sur les comportements en établissement, mais les études randomisées restent rares
-- La limite principale de tous ces programmes : le biais de sélection, les participants sont déjà motivés à changer
-
-### Sources et références
-
-- **Davis, L. M., Bozick, R., Steele, J. L., Saunders, J., & Miles, J. N. V. (2013).** - [*Evaluating the Effectiveness of Correctional Education: A Meta-Analysis of Programs That Provide Education to Incarcerated Adults.*](https://www.rand.org/pubs/research_reports/RR266.html) RAND Corporation, RR-266-BJA. (Les détenus ayant participé à des programmes éducatifs ont 43 % moins de risques d'être réincarcérés dans les 3 ans suivant leur libération.)
-- **Ross, R. R., & Fabiano, E. A. (1985).** - *Time to Think: A Cognitive Model of Delinquency Prevention and Offender Rehabilitation.* Johnson City, TN: Institute of Social Sciences and Arts. (Formalisation du lien entre déficits cognitifs, pensée court-termiste, impulsivité, faible théorie de l'esprit, et comportements délinquants récurrents.)
-- **Change Through Chess (2017-2023).** - *Programme Reports.* [changethroughchess.com](https://www.changethroughchess.com/). (Rapports annuels documentant les effets observés sur les participants incarcérés au Royaume-Uni : gestion des émotions, comportement en établissement, engagement dans les programmes éducatifs.)
-- **Fazel, S., Doll, H., & Långström, N. (2008).** - [*Mental disorders among adolescents in juvenile detention and correctional facilities: A systematic review and metaregression analysis of 25 surveys.*](https://doi.org/10.1097/01.chi.0000290670.27678.2a) *Journal of the American Academy of Child & Adolescent Psychiatry*, 47(9), 1010-1019. (Prévalence élevée du TDAH et des troubles neuropsychiatriques dans les populations carcérales, renforçant la pertinence des interventions cognitives.)
-- **Hare, R. D. (2006).** - *Psychopathy: A clinical and forensic overview.* *Psychiatric Clinics of North America*, 29(3), 709-724. (Cadre d'évaluation des profils carcéraux et limites des interventions cognitives selon les profils.)
-
 ## Pour aller plus loin
 
 - [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
 - [Les échecs et le cerveau : ce que la science révèle vraiment](/fr/blog/les-echecs-et-le-cerveau/)
-

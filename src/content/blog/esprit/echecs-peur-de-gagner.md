@@ -85,18 +85,3 @@ La première étape est la reconnaissance honnête du pattern. Analyser ses part
 **Après lecture :** entraîne-toi à **convertir** trois fins de partie gagnantes cette semaine depuis des positions « sans suspense », pour désensibiliser le passage à la victoire.
 
 ---
-
-## À retenir
-
-- La peur de gagner n'est pas un paradoxe irrationnel : elle est une réponse logique à des conséquences anxiogènes de la victoire
-- Les mécanismes incluent la peur des attentes augmentées, la peur de la responsabilité et la peur de la perte du statut de "challenger"
-- Elle se manifeste par des comportements de sabotage inconscient en position gagnante
-- La prise de conscience et des techniques comportementales spécifiques permettent de la surmonter
-
-### Sources et références
-
-- **Kahneman, D., & Tversky, A.** [*Prospect Theory: An Analysis of Decision under Risk.*](https://www.econometricsociety.org/publications/econometrica/1979/03/01/prospect-theory-analysis-decision-under-risk) Econometrica, 47(2), 263-291, 1979. (La théorie des perspectives et l'asymétrie gains/pertes.)
-- **Atkinson, J. W.** *Motives in Fantasy, Action, and Society.* Van Nostrand, 1958. (La théorie de la motivation à la réussite et la peur de l'échec, applicable aussi à la peur du succès.)
-- **Horner, M. S.** *Toward an Understanding of Achievement-Related Conflicts in Women.* Journal of Social Issues, 28(2), 157-175, 1972. (La recherche fondatrice sur la "peur du succès".)
-- **Jones, G.** *More Than Just the Mental Side.* Sport Psychologist, 9(1), 48-58, 1995. (La psychologie de la performance sous pression et la gestion de l'anxiété compétitive.)
-- **Weinberg, R. S., & Gould, D.** *Foundations of Sport and Exercise Psychology.* Human Kinetics, 2015. (Les bases de la psychologie du sport, incluant la peur du succès et le sabotage de performance.)

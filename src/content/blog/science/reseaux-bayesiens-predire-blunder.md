@@ -107,18 +107,3 @@ Même sans construire formellement un réseau bayésien, les principes bayésien
 **Après lecture :** pendant une partie en ligne, note **trois indices** (pendule adverse, complexité, hors zone de confort) ; à la fin, vérifie si le blunder adverse coïncide avec ce tableau, sans « confirmer » n’importe quoi.
 
 ---
-
-## À retenir
-
-- Le raisonnement bayésien permet de mettre à jour une estimation de probabilité à mesure que de nouvelles informations arrivent
-- Un réseau bayésien modélise les dépendances causales entre plusieurs variables pour estimer une probabilité composite
-- La probabilité d'un blunder adverse dépend de plusieurs facteurs corrélés : temps restant, complexité, style, pression psychologique
-- Cette approche fournit un cadre pour des décisions stratégiques basées sur le risque d'erreur adverse
-
-### Sources et références
-
-- **Regan, K. W., & Haworth, G.** *Intrinsic Chess Ratings.* Proceedings of the 25th AAAI Conference on Artificial Intelligence, 2011. (L'analyse statistique de la qualité de jeu aux échecs et son lien avec le niveau Elo.)
-- **Pearl, J.** *Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference.* Morgan Kaufmann, 1988. (Le livre fondateur sur les réseaux bayésiens.)
-- **Guid, M., & Bratko, I.** [*Computer Analysis of World Chess Champions.*](https://icga.org/icga/journal/30-1_2007.pdf) ICGA Journal, 30(1), 3-18, 2007. (L'analyse de la qualité de jeu des champions du monde par ordinateur.)
-- **Charness, N.** *Components of Skill in Bridge.* Canadian Journal of Psychology, 33(1), 1-16, 1979. (La psychologie de l'expertise et la gestion des ressources cognitives dans les jeux de stratégie.)
-- **Kahneman, D.** *Thinking, Fast and Slow.* Farrar, Straus and Giroux, 2011. (La psychologie de la décision sous incertitude et le raisonnement bayésien intuitif.)

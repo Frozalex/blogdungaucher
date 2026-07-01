@@ -168,20 +168,3 @@ Aucun de ces profils n'est "meilleur" pour les échecs. Le profil "désactivatio
 **Après lecture :** sur ta prochaine partie longue, identifie *trois* moments où tu as senti ton attention dériver et nomme mentalement ce qui occupait ton DMN. Tu ne supprimes rien : tu observes. Cette simple métacognition affaiblit l'emprise des ruminations sur les coups suivants.
 
 ---
-
-## À retenir
-
-- Le DMN s'active quand tu ne te concentres pas sur une tâche externe. Il occupe environ 20 % de l'énergie de ton cerveau et près de la moitié de ton temps de veille.
-- Aux échecs, il intervient massivement pendant l'attente de l'adversaire, dans les positions familières, et entre les parties d'un tournoi.
-- Ses fonctions utiles : incubation, consolidation mnésique, prospection stratégique. Ses fonctions toxiques : rumination, prospection anxieuse, blunders dans les positions routinières.
-- Le DMN est anti-corrélé avec les réseaux d'attention exécutive : maintenir le calcul long demande de le supprimer, ce qui est coûteux et explique la fatigue mentale en parties longues.
-- Quelques protocoles le pilotent : checklist pré-coup, respiration consciente, externalisation des ruminations, pauses délibérées, méditation, journal post-partie.
-
-### Sources et références
-
-- **Raichle, M. E., MacLeod, A. M., Snyder, A. Z., Powers, W. J., Gusnard, D. A., & Shulman, G. L.** [*A Default Mode of Brain Function.*](https://www.pnas.org/doi/10.1073/pnas.98.2.676) *PNAS*, 98(2), 676-682, 2001. (L'article fondateur qui a identifié le réseau.)
-- **Killingsworth, M. A., & Gilbert, D. T.** [*A Wandering Mind Is an Unhappy Mind.*](https://www.science.org/doi/10.1126/science.1192439) *Science*, 330(6006), 932, 2010. (Sur la prévalence du mind-wandering dans la vie quotidienne.)
-- **Sio, U. N., & Ormerod, T. C.** [*Does Incubation Enhance Problem Solving? A Meta-Analytic Review.*](https://psycnet.apa.org/record/2009-00378-008) *Psychological Bulletin*, 135(1), 94-120, 2009. (Méta-analyse sur le rôle de l'incubation dans la résolution de problèmes.)
-- **Hamilton, J. P., Farmer, M., Fogelman, P., & Gotlib, I. H.** [*Depressive Rumination, the Default-Mode Network, and the Dark Matter of Clinical Neuroscience.*](https://www.biologicalpsychiatryjournal.com/article/S0006-3223(15)00263-1/abstract) *Biological Psychiatry*, 78(4), 224-230, 2015. (Sur le DMN dans la rumination dépressive.)
-- **Brewer, J. A., Worhunsky, P. D., Gray, J. R., Tang, Y. Y., Weber, J., & Kober, H.** [*Meditation Experience Is Associated with Differences in Default Mode Network Activity and Connectivity.*](https://www.pnas.org/doi/10.1073/pnas.1112029108) *PNAS*, 108(50), 20254-20259, 2011. (Effets de la méditation sur la connectivité du DMN.)
-- **Tang, Y. Y., Hölzel, B. K., & Posner, M. I.** [*The Neuroscience of Mindfulness Meditation.*](https://www.nature.com/articles/nrn3916) *Nature Reviews Neuroscience*, 16(4), 213-225, 2015. (Revue de référence sur les bases neurales de la pleine conscience.)

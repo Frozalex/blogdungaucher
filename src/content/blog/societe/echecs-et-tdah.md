@@ -187,17 +187,3 @@ Pas systématiquement, faute de preuves assez robustes pour intégrer les échec
 **Après lecture :** séances **courtes** (20 minutes), **même créneau** hebdo, plateau **physique** en priorité ; éviter les grandes salles bruyantes au début. Complément au suivi médical ou psychologique, pas substitut.
 
 ---
-
-## À retenir
-
-- Le TDAH n'est pas un déficit d'attention au sens littéral : c'est un déficit des fonctions exécutives, particulièrement l'inhibition et la planification (Barkley, 1997)
-- Le cerveau TDAH répond mieux aux activités à retour immédiat, règles stables et enjeu tangible, exactement ce que propose l'échiquier
-- Les études directes échecs-TDAH sont encore limitées mais les mécanismes neurobiologiques sont bien documentés (Castellanos & Tannock, 2002)
-- Les échecs sont un complément précieux à un suivi spécialisé, pas un substitut
-
-### Sources et références
-
-- **Barkley, R. A. (1997).** - *Behavioral inhibition, sustained attention, and executive functions: Constructing a unifying theory of ADHD.* *Psychological Bulletin*, 121(1), 65-94. (Reformulation du TDAH comme déficit des fonctions exécutives, inhibition, planification, mémoire de travail, plutôt que simple manque d'attention.)
-- **Castellanos, F. X., & Tannock, R. (2002).** - [*Neuroscience of attention-deficit/hyperactivity disorder: The search for endophenotypes.*](https://doi.org/10.1038/nrn894) *Nature Reviews Neuroscience*, 3(9), 617-628. (Base neurobiologique du TDAH : déficits dopaminergiques dans les circuits de récompense et d'inhibition, répondant mieux aux activités à retour immédiat et règles stables.)
-- **Sala, G., & Gobet, F. (2016).** - [*Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis.*](https://doi.org/10.3389/fpsyg.2016.00645) *Frontiers in Psychology*, 7, 645. (Méta-analyse : bénéfices modérés mais réels des échecs sur les compétences cognitives ciblées par la pratique. Transfert limité vers les matières scolaires générales.)
-- **Faraone, S. V., et al. (2021).** - [*The World Federation of ADHD International Consensus Statement: 208 evidence-based conclusions about the disorder.*](https://doi.org/10.1016/j.neubiorev.2021.01.022) *Neuroscience & Biobehavioral Reviews*, 128, 789-818. (État de l'art sur la persistance du TDAH à l'âge adulte et l'efficacité comparative des interventions.)

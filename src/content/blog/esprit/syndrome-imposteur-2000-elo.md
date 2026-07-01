@@ -89,18 +89,3 @@ Le joueur idéal à 2000 Elo est celui qui sait qu'il a encore beaucoup à appre
 **Après lecture :** joue **deux** tournois ou pools où l’objectif affiché est « tester des idées », pas « défendre le 2000 » : l’exposition sans enjeu de confirmation est le traitement.
 
 ---
-
-## À retenir
-
-- Le syndrome de l'imposteur au seuil des 2000 Elo est une réponse psychologique normale à une transition identitaire
-- Il est amplifié par le fait que 2000 est une frontière symbolique forte dans la culture des échecs
-- La stratégie naturelle d'évitement (jouer moins pour ne pas "prouver" qu'on n'est pas à ce niveau) est contre-productive
-- La consolidation psychologique d'un nouveau niveau nécessite du temps et de l'exposition répétée, pas de la perfection
-
-### Sources et références
-
-- **Clance, P. R., & Imes, S. A.** [*The Imposter Phenomenon in High Achieving Women: Dynamics and Therapeutic Intervention.*](https://www.paulineroseclance.com/pdf/ip_high_achieving_women.pdf) Psychotherapy: Theory, Research & Practice, 15(3), 241-247, 1978. (La description originale du syndrome de l'imposteur.)
-- **Dweck, C. S.** *Mindset: The New Psychology of Success.* Random House, 2006. (La distinction entre fixed mindset et growth mindset dans la performance.)
-- **Sakulku, J., & Alexander, J.** *The Impostor Phenomenon.* International Journal of Behavioral Science, 6(1), 75-97, 2011. (La revue complète de la recherche sur le syndrome de l'imposteur.)
-- **Langford, J., & Clance, P. R.** *The Impostor Phenomenon: Recent Research Findings.* Psychotherapy, 30(3), 495-501, 1993. (Les développements théoriques et empiriques sur le phénomène.)
-- **Elo, A.** *The Rating of Chessplayers: Past and Present.* Arco, 1978. (Le système Elo original et ses bases statistiques.)

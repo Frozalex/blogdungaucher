@@ -211,20 +211,3 @@ Oui. C'est l'exemple pédagogique le plus utilisé pour enseigner le **backtrack
 Non. Les corrélations entre niveau Elo et performance académique en mathématiques sont **faibles** au-delà du seuil basique de compréhension des règles. Beaucoup de Grand Maîtres ont un profil littéraire ou intuitif sans formation mathématique avancée ([Magnus Carlsen](https://fr.wikipedia.org/wiki/Magnus_Carlsen) lui-même n'a pas de cursus scientifique poussé). À l'inverse, des mathématiciens reconnus jouent à un niveau amateur tout en ayant un excellent transfert *méthodologique*. Les deux disciplines partagent une **posture**, pas un même socle de connaissances.
 
 ---
-
-## À retenir
-
-- Les échecs ne transfèrent pas directement du "contenu" mathématique dans le cerveau (Sala & Gobet, méta-analyses)
-- Le seul transfert solide est méthodologique : décomposer, tester, vérifier, douter au bon moment
-- La métacognition, penser sur sa propre pensée, est le vrai pont mesurable entre les deux disciplines
-- Jouer lentement (30 min+) active les zones cérébrales liées à la résolution de problèmes ; le Blitz ne le fait pas
-
-### Sources et références
-
-- **Sala, G., & Gobet, F.** [*Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis.*](https://www.sciencedirect.com/science/article/pii/S1747938X16300112) (Sur l'absence de transfert massif automatique article ScienceDirect, PII `S1747938X16300112`).
-- **Kazemi, F., Yektayar, M., & Abad, A. M. B.** [*Investigation the impact of chess play on developing meta-cognitive ability and math problem-solving power.*](https://onlinelibrary.wiley.com/doi/epdf/10.1155/2022/6257414) (Sur l'amélioration des capacités métacognitives et la résolution de problèmes.)
-- **Scholz, M., et al.** [*Impact of chess training on mathematics performance and concentration ability of children.*](https://www.ijfmr.com/papers/2025/3/47194.pdf) (L'étude de Trèves remplaçant les cours de maths par les échecs.)
-- **Gutiérrez, Corona, Garduño, & Bonilla** [*On the determination of centers of mass via fractal structures on the chessboard.*](https://www.sciencedirect.com/science/article/pii/S1877042812000572) (Sur la géométrie et les centres de masse sur l'échiquier article ScienceDirect, PII `S1877042812000572`.)
-- **Gupta** *From Minimax to AI: Exploring Game Theory in Chess Strategy.* (Sur la théorie des jeux et le calcul combinatoire pas de lien direct fourni.)
-- **Tachie & Ramathe** *Metacognition application: The use of chess as a strategy.* / **Bahri & Noviani** *Metacognitive profile of students who play chess.* (Sur le profil métacognitif très spécifique développé par les joueurs d'échecs réguliers pas de lien direct fourni.)
-

@@ -424,21 +424,3 @@ Et si l'on te demande pourquoi tu as choisi les échecs, la réponse honnête et
 **Après lecture :** fais une **répétition hybride** : cinq minutes maths au tableau (Elo ou combinatoire), cinq minutes oral sur le lien avec une idée NSI (minimax ou données), sans support, comme au jury.
 
 ---
-
-## À retenir
-
-- La combinatoire (Maths) produit $\sim 10^{120}$ parties → rend le minimax (NSI) **nécessaire**
-- Les probabilités Elo (Maths) sont stockées et interrogées en SQL (NSI)
-- Les graphes hamiltoniens (Maths) sont implémentés comme arbres de décision (NSI)
-- AlphaZero = algèbre linéaire des réseaux de neurones (Maths) + apprentissage par renforcement (NSI)
-- Un sujet transversal oblige le jury à poser des questions *entre* les deux disciplines : c'est l'avantage compétitif
-
-### Sources et références
-
-- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*, 41(314), 256-275. (Estimation du nombre de parties d'échecs possibles, fondement du « nombre de Shannon ».)
-- **Zermelo, E. (1913).** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* Proceedings of the Fifth International Congress of Mathematicians. (Démonstration de l'existence d'une stratégie gagnante dans tout jeu fini à information parfaite.)
-- **von Neumann, J. & Morgenstern, O. (1944).** [*Theory of Games and Economic Behavior.*](https://press.princeton.edu/books/paperback/9780691130613/theory-of-games-and-economic-behavior) Princeton University Press. (Fondation formelle de la théorie des jeux et de l'algorithme minimax.)
-- **Elo, A. E. (1978).** *The Rating of Chessplayers, Past and Present.* Arco Publishing. (Présentation du système probabiliste de classement Elo et de son fondement statistique.)
-- **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419), 1140-1144. (Publication originale d'AlphaZero et de ses résultats contre Stockfish.)
-- **Euler, L. (1759).** *Solution d'une question curieuse qui ne paroit soumise à aucune analyse.* Mémoires de l'Académie Royale des Sciences. (Étude pionnière du problème du cavalier et de la règle de Warnsdorff.)
-- **Warnsdorff, H. C. (1823).** *Des Rösselsprunges einfachste und allgemeinste Lösung.* Schmalkalden. (Formulation originale de la règle heuristique pour le tour du cavalier.)

@@ -87,18 +87,3 @@ Transformer le perfectionnisme toxique ne signifie pas abaisser ses standards. C
 **Après lecture :** impose pour les parties sérieuses un **plafond de temps par coup** (même large) : le perfectionnisme toxique se nourrit du « meilleur coup » sans horizon.
 
 ---
-
-## À retenir
-
-- Il existe deux formes de perfectionnisme : adaptatif (sain) et maladaptatif (toxique)
-- Le perfectionnisme toxique génère de l'anxiété, de la paralysie par l'analyse et une peur de l'erreur qui [augmente les erreurs](/fr/blog/5-biais-cognitifs-blunder/)
-- Les échecs sont un terrain particulièrement propice au perfectionnisme toxique en raison de la transparence totale des erreurs
-- La recherche du "suffisamment bon" (satisficing) est une stratégie cognitives supérieure au "meilleur possible" dans des conditions réelles
-
-### Sources et références
-
-- **Flett, G. L., & Hewitt, P. L.** *Perfectionism: Theory, Research, and Treatment.* American Psychological Association, 2002. (La référence principale sur le perfectionnisme adaptatif et maladaptatif.)
-- **Simon, H. A.** *A Behavioral Model of Rational Choice.* Quarterly Journal of Economics, 69(1), 99-118, 1955. (L'introduction du concept de satisficing dans la prise de décision.)
-- **Wegner, D. M.** [*Ironic Processes of Mental Control.*](https://psycnet.apa.org/doi/10.1037/0033-295X.101.1.34) Psychological Review, 101(1), 34-52, 1994. (La théorie des processus ironiques, ou pourquoi supprimer une pensée la rend plus présente.)
-- **Csikszentmihalyi, M.** *Flow: The Psychology of Optimal Experience.* Harper & Row, 1990. (L'état de flow et ses conditions d'apparition dans la performance.)
-- **Stoeber, J., & Otto, K.** *Positive Conceptions of Perfectionism: Approaches, Evidence, Challenges.* Personality and Social Psychology Review, 10(4), 295-319, 2006. (La distinction empirique entre perfectionnisme positif et négatif.)

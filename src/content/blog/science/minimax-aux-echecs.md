@@ -180,20 +180,3 @@ Pas vraiment : il garde une recherche arborescente (MCTS), mais remplace l'explo
 Approximativement, oui. Tu fais une recherche arborescente avec un facteur de branchement très faible (3-5 coups candidats au lieu de 35), une profondeur très limitée (3-8 demi-coups), et une fonction d'évaluation intuitive (sens positionnel). Tu utilises aussi des heuristiques d'élagage très puissantes : tu **rejettes** la plupart des coups en un coup d'œil sans les calculer. La différence avec un moteur n'est pas qualitative, elle est quantitative.
 
 ---
-
-## À retenir
-
-- Minimax est l'algorithme qui explore l'arbre des parties en alternant maximisation (Blanc) et minimisation (Noir)
-- **Negamax** est la formulation moderne, plus courte, équivalente mathématiquement
-- L'**élagage alpha-bêta** réduit dramatiquement le nombre de noeuds à explorer sans changer le résultat
-- Les moteurs modernes ajoutent des fonctions d'évaluation heuristiques, des tables de transposition, du **null-move pruning**, de l'approfondissement itératif et de la quiescence
-- AlphaZero a montré qu'une approche **MCTS + réseau de neurones** peut dépasser minimax pur pour les jeux complexes
-- Ton cerveau exécute mentalement une version simplifiée de minimax (branchement faible + élagage intuitif fort)
-
-### Sources et références
-
-- **Shannon, C. E.** *Programming a Computer for Playing Chess.* Philosophical Magazine, Series 7, 41(314), 256-275, 1950. (L'article fondateur des moteurs d'échecs et de l'application de minimax.)
-- **Silver, D., et al.** [*Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm.*](https://arxiv.org/abs/1712.01815) arXiv, 2017. (La publication originale d'AlphaZero.)
-- **Knuth, D. E., & Moore, R. W.** *An Analysis of Alpha-Beta Pruning.* Artificial Intelligence, 6(4), 293-326, 1975. (L'analyse formelle de l'algorithme alpha-bêta.)
-- **Campbell, M., Hoane, A. J., & Hsu, F.** [*Deep Blue.*](https://www.sciencedirect.com/science/article/pii/S0004370201001291) Artificial Intelligence, 134(1-2), 57-83, 2002. (La description du système Deep Blue qui battit Kasparov.)
-- **Iyengar, S.** *Chess Programming : From Minimax to Neural Networks.* ACM Computing Surveys, 2019. (La revue des approches algorithmiques en informatique des échecs.)

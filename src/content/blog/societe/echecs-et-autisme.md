@@ -206,21 +206,3 @@ Selon la théorie de la *systemizing* de Simon Baron-Cohen (Cambridge), les cerv
 **Après lecture :** pour une première mise en place, vise **trois** séances courtes par semaine, plateau physique, **sans** objectif de classement pendant un mois ; note ce qui fatigue (bruit, durée, groupe).
 
 ---
-
-## À retenir
-
-- 1 enfant sur 36 est autiste aux États-Unis (CDC, 2023) ; 1 sur 100 dans le monde (OMS)
-- L'échiquier est un "jeu à information parfaite" : aucune règle implicite, aucun sous-entendu social
-- La théorie de la *systemizing* (Baron-Cohen, Cambridge) explique pourquoi les cerveaux autistes y excellent naturellement
-- Les échecs peuvent améliorer les fonctions exécutives et réduire l'anxiété sociale, jamais remplacer une prise en charge
-
-### Sources et références
-
-- **Baron-Cohen, S.** [*The extreme male brain theory of autism.*](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(02)01904-6) *Trends in Cognitive Sciences*, 2002. (Théorie de la systématisation et profil cognitif autiste).
-- **Baron-Cohen, S., Wheelwright, S., et al.** [*The Systemizing Quotient (SQ): An investigation of adults with Asperger Syndrome or high-functioning autism.*](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1698898/) *Philosophical Transactions of the Royal Society B*, 2003.
-- **Frith, U.** *Autism: Explaining the Enigma.* Blackwell Publishing, 2003. (Référence fondamentale sur la cognition autiste et la cohérence centrale faible).
-- **Csikszentmihalyi, M.** *Flow: The Psychology of Optimal Experience.* Harper & Row, 1990. (Théorie de l'état de flux et ses applications au bien-être).
-- **Gobet, F. & Charness, N.** *Expertise in Chess*, In *The Cambridge Handbook of Expertise and Expert Performance*, 2006. (Sur la mémoire des motifs et la théorie des "chunks").
-- **Attwood, T.** *The Complete Guide to Asperger's Syndrome.* Jessica Kingsley Publishers, 2007. (Référence clinique sur le syndrome d'Asperger et les contextes d'inclusion sociale).
-- **Chess in Schools and Communities (CSC)** [*Impact Reports.*](https://www.chessintheschools.co.uk) (Données de terrain sur les effets de l'enseignement des échecs dans les écoles spécialisées).
-

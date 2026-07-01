@@ -168,20 +168,3 @@ Surtout quand tu progresses bien. Le système dopaminergique se désensibilise p
 À court terme oui, mais sur une partie classique de 4-5 heures, la caféine **déplace** la fatigue plutôt qu'elle ne la résout : tu te sens alerte au coup 20, tu craches plus fort entre les coups 35 et 50. Les coachs FIDE recommandent typiquement **un café juste avant la partie** + **eau pendant**, jamais d'enchaînement de stimulants. La caféine consommée après 14h dégrade aussi le sommeil de la nuit suivante, donc la consolidation de cette partie-là.
 
 ---
-
-## À retenir
-
-- La consolidation mémorielle, le processus par lequel les apprentissages deviennent durables, a lieu hors de la pratique, notamment pendant le sommeil
-- La fatigue cognitive est réelle et mesurable : après un certain seuil, la qualité de la réflexion baisse même si la motivation reste présente
-- Les pauses courtes en cours de session (micro-pauses, structure **50/10**) restaurent l'attention soutenue de façon significative
-- Le **rage-queue** après défaite renforce des réflexes faibles : pause obligatoire avant relance
-- Les plateformes en ligne suppriment les pauses naturelles : **réintroduire de la friction artificielle** (minuteur, fermeture d'onglet) est plus efficace que la volonté
-- L'alternance délibérée entre effort et récupération est le principe central de tout entraînement haute performance
-
-### Sources et références
-
-- **Walker, M.** *Why We Sleep : Unlocking the Power of Sleep and Dreams.* Scribner, 2017. (Rôle du sommeil dans la consolidation mémorielle et la performance cognitive.)
-- **Stickgold, R., & Walker, M. P.** [*Sleep-Dependent Memory Consolidation and Reconsolidation.*](https://www.nature.com/articles/nn1469) Nature Neuroscience, 8(4), 381-388, 2005. (La consolidation mémorielle pendant le sommeil et ses mécanismes.)
-- **Marcora, S. M., Staiano, W., & Manning, V.** [*Mental Fatigue Impairs Physical Performance in Humans.*](https://pubmed.ncbi.nlm.nih.gov/19196901/) Journal of Applied Physiology, 106(3), 857-864, 2009. (La fatigue cognitive et ses effets mesurés sur la performance.)
-- **Sonnentag, S.** [*Psychological Detachment from Work during Leisure Time.*](https://pubmed.ncbi.nlm.nih.gov/23587718/) Current Directions in Psychological Science, 21(2), 114-118, 2012. (Bénéfices des pauses et du détachement psychologique sur la récupération.)
-- **Cepeda, N. J., et al.** [*Distributed Practice in Verbal Recall Tasks : A Review and Quantitative Synthesis.*](https://pubmed.ncbi.nlm.nih.gov/16719566/) Psychological Bulletin, 132(3), 354-380, 2006. (L'effet d'espacement et la supériorité de la pratique distribuée sur la pratique massée.)

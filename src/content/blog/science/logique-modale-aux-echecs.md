@@ -112,18 +112,3 @@ Cette progression est une progression dans la profondeur et la richesse du raiso
 **Après lecture :** sur une position d’entraînement, écris pour **deux coups candidats** la phrase « si je joue X, dans quels **mondes** j’atterris au coup suivant ? » avant de calculer en profondeur.
 
 ---
-
-## À retenir
-
-- La logique modale formalise les raisonnements sur le possible et le nécessaire
-- Aux échecs, chaque position est un "monde possible" dans l'arbre des variantes
-- "Gagnant si..." est une formule modale : la victoire est possible (accessible) dans certains mondes, nécessaire dans d'autres
-- Le raisonnement prophylactique est une application directe de la logique modale au jeu pratique
-
-### Sources et références
-
-- **Kripke, S.** [*Semantical Considerations on Modal Logic.*](https://www.jstor.org/stable/20009997) Acta Philosophica Fennica, 16, 83-94, 1963. (La sémantique des mondes possibles, fondement de la logique modale moderne.)
-- **Lewis, C. I., & Langford, C. H.** *Symbolic Logic.* Dover Publications, 1932. (Les premiers systèmes formels de logique modale.)
-- **Nimzowitsch, A.** *Mon système.* Payot, 1925. (La théorie de la prophylaxie et de la prévention aux échecs.)
-- **Botvinnik, M.** *Achieving the Aim.* Pergamon Press, 1981. (La méthode d'analyse des coups candidats et la pensée stratégique aux échecs.)
-- **Hughes, G. E., & Cresswell, M. J.** *An Introduction to Modal Logic.* Methuen, 1968. (Introduction classique à la logique modale et ses applications.)

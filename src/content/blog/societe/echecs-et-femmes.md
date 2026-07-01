@@ -236,19 +236,3 @@ Le débat sur les **sections féminines** partage souvent le terrain entre **vis
 **Après lecture :** si tu encadres ou anime un club, teste **une** friction simple (accueil du premier cours, binômes mixtes systématiques, ou affichage des règles anti-harcèlement) pendant un trimestre et mesure les inscriptions féminines avant/après.
 
 ---
-
-## À retenir
-
-- Les femmes représentent 10 à 15 % des joueurs licenciés dans le monde (FIDE, 2024)
-- L'immense majorité de l'écart de classement s'explique par le biais de participation, pas par la biologie (Bilalić, 2009)
-- La menace du stéréotype réduit la performance des joueuses face aux adversaires masculins (Backus, Cubel et al., 2023)
-- L'expérience Polgár démontre que le plafond est culturel et environnemental, pas biologique
-
-### Sources et références
-
-- **Backus, P., Cubel, M., Guid, M., Sánchez-Pagés, S., & López Mañas, E. (2023).** - [*Gender, competition, and performance : Evidence from chess players.*](https://doi.org/10.3982/QE1404) *Quantitative Economics*, 14(1), 349-380. (L'étude démontrant l'impact de la "menace du stéréotype" sur la qualité des coups joués par les femmes face aux hommes).
-- **Bilalić, M., Smallbone, K., McLeod, P., & Gobet, F. (2009).** - [*Why are (the best) women so good at chess? Participation rates and gender differences in intellectual domains.*](https://royalsocietypublishing.org/doi/10.1098/rspb.2008.1576) *Proceedings of the Royal Society B*. (Démonstration du biais statistique de participation).
-- **Howard, R. W. (2014).** - [*Gender differences in intellectual performance persist at the limits of individual capabilities.*](https://doi.org/10.1017/S0021932013000205) *Journal of Biosocial Science*, 46(3), 386-404. (Contre-étude nuançant le biais de participation via l'exemple de la Géorgie).
-- **Steele, C. M., & Aronson, J. (1995).** - [*Stereotype threat and the intellectual test performance of African Americans.*](https://doi.org/10.1037/0022-3514.69.5.797) *Journal of Personality and Social Psychology*, 69(5), 797-811. (Théorisation initiale de la menace du stéréotype, fondement des études sur la performance féminine en compétition).
-- **Rippon, G. (2019).** - [*The Gendered Brain : The new neuroscience that shatters the myth of the female brain.*](https://fr.wikipedia.org/wiki/Gina_Rippon) The Bodley Head, London. (Sur la plasticité cérébrale et la construction sociale des différences de genre perçues).
-- **Shenk, D. (2011).** - *The Genius in All of Us.* Doubleday. (Sur le rôle de l'environnement et de la pratique dans l'émergence du talent - contexte de l'expérience Polgár).

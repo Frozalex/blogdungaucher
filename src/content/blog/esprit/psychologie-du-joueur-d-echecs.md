@@ -145,19 +145,3 @@ La règle la plus efficace selon les entraîneurs, dont Mark Dvoretsky : arrête
 Le zeitnot active un mécanisme documenté par les psychologues : la paralysie par l'analyse. Le cerveau cherche la réponse parfaite au lieu d'une bonne réponse rapide, consomme du temps, et la panique s'installe en spirale (Kahneman, Système 2 en surchauffe). La solution n'est pas de calculer plus vite : c'est de faire confiance plus tôt à son jugement positionnel accumulé (Système 1).
 
 ---
-
-## À retenir
-
-- La frontière entre jouer pour gagner et jouer pour ne pas perdre est psychologiquement abyssale (Kasparov)
-- Le tilt n'est pas une faiblesse : c'est un signal lisible sur tes patterns émotionnels (Damasio, Dvoretsky)
-- Le flow (Csikszentmihalyi) émerge quand le défi est à la limite de tes compétences, ni trop facile, ni écrasant
-- La qualité de ta pensée est la vraie variable de progression, pas le score de la partie
-
-### Sources et références
-
-- **Dweck, C. S.** [*Mindset: The New Psychology of Success.*](https://fr.wikipedia.org/wiki/Carol_Dweck) Random House, 2006. (La théorie du *fixed mindset* vs. *growth mindset* appliquée à la performance.)
-- **Csikszentmihalyi, M.** [*Flow: The Psychology of Optimal Experience.*](https://fr.wikipedia.org/wiki/Mihaly_Csikszentmihalyi) Harper & Row, 1990. (La théorie du flow et ses conditions d'apparition dans des activités complexes.)
-- **Kahneman, D.** [*Thinking, Fast and Slow.*](https://fr.wikipedia.org/wiki/Daniel_Kahneman) Farrar, Straus and Giroux, 2011. (Les systèmes 1 et 2 et leurs implications dans la prise de décision sous pression.)
-- **Damasio, A.** [*Descartes' Error: Emotion, Reason, and the Human Brain.*](https://fr.wikipedia.org/wiki/Antonio_Damasio) Putnam, 1994. (Le rôle des marqueurs somatiques et des émotions dans la décision rationnelle.)
-- **Dvoretsky, M.** *Dvoretsky's Analytical Manual.* Russell Enterprises, 2008. (L'importance de l'analyse émotionnelle des erreurs dans la progression des joueurs.)
-- **Gelfand, B., & Aagaard, J.** [*Positional Decision Making in Chess.*](https://fr.wikipedia.org/wiki/Boris_Gelfand) Quality Chess, 2015. (La préparation psychologique et la construction d'un style de jeu cohérent.)

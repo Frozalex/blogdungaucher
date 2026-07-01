@@ -270,20 +270,3 @@ Tu as déjà eu l'impression de « reconnaître » une position sans pouvoir l'e
 **Après lecture :** cette semaine, **une** partie analysée à froid avec la question « quel était mon **premier** coup envisagé ? », c’est le levier le plus documenté pour caler la mémoire de domaine.
 
 ---
-
-## À retenir
-
-- Les grands maîtres n'ont pas une mémoire « générale » supérieure : sur des listes de mots ou des positions aléatoires, leur avantage s'effondre (Chase & Simon, 1973).
-- Sur l'échiquier, ils compressent l'information en **chunks** puis en **templates** (Gobet & Simon, 1996) : la mémoire de travail reste limitée, mais chaque « slot » contient plus de sens.
-- La qualité du **premier coup envisagé** distingue surtout les experts (de Groot, 1965) : la mémoire à long terme oriente l'attention avant le calcul profond.
-- Pour progresser, il faut une pratique **réflexive** (analyse, fins de partie, leçons tirées), pas seulement du volume de parties rapides.
-
-### Sources et références
-
-- **Chase, W. G., & Simon, H. A. (1973).** - *Perception in chess.* *Cognitive Psychology*, 4(1), 55-81. (L'expérience fondatrice : les maîtres mémorisent des groupes fonctionnels de pièces, pas des pièces individuelles. Sur des positions aléatoires, leur avantage disparaît complètement.)
-- **de Groot, A. D. (1965).** - *Thought and Choice in Chess.* The Hague : Mouton. (Pionnière de la psychologie de l'expertise aux échecs : les grands maîtres regardent d'emblée les bons coups parce que la mémoire à long terme leur présente déjà les hypothèses pertinentes.)
-- **Gobet, F., & Simon, H. A. (1996).** - [*Templates in chess memory : A mechanism for recalling several boards.*](https://doi.org/10.1006/cogp.1996.0011) *Cognitive Psychology*, 31(1), 1-40. (Extension du modèle de chunks : les templates permettent de gérer des positions complexes grâce à des structures cognitives flexibles avec noyau fixe et slots variables.)
-- **Miller, G. A. (1956).** - [*The magical number seven, plus or minus two : Some limits on our capacity for processing information.*](https://doi.org/10.1037/h0043158) *Psychological Review*, 63(2), 81-97. (La capacité de la mémoire de travail est universellement limitée à ~7 éléments. Le chunking est la façon dont l'expertise contourne cette limite.)
-- **Ericsson, K. A., & Chase, W. G. (1982).** - *Exceptional memory.* *American Scientist*, 70(6), 607-615. (La mémoire domaine-spécifique est une compétence construite par la pratique délibérée, pas un talent inné.)
-- **Charness, N. (1976).** - *Memory for chess positions : Resistance to interference.* *Journal of Experimental Psychology : Human Learning and Memory*, 2(6), 641-653. (Les adultes construisent des chunks aussi efficacement que les enfants, à rythme d'apprentissage comparable.)
-

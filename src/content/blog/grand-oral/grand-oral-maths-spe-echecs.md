@@ -408,14 +408,6 @@ Prépare une réponse courte et cohérente :
 
 ---
 
-## À retenir
-
-- La mise à jour Elo est une suite récurrente : $u_{n+1} = u_n + K(r_n - p_n)$
-- La loi binomiale $B(n,p)$ modélise directement un match d'échecs à $n$ parties
-- Le nombre de Shannon ($10^{120}$) est un argument de combinatoire calculable pas à pas
-- L'algorithme minimax est le cas concret de récursivité le plus puissant du programme NSI-Maths
-- Les trois problématiques de fin d'article correspondent aux trois chapitres-clés du jury
-
 ## Pour aller plus loin : sujets développés
 
 Pour chaque problématique, j'ai rédigé un **sujet entièrement développé** à 10 minutes d'exposé, prêt à réciter ou à adapter :

@@ -171,17 +171,8 @@ Les échecs peuvent être une école de la solitude productive. Ils peuvent auss
 - Csikszentmihalyi, M. (1990). *Flow : The Psychology of Optimal Experience*. Harper & Row.
 - Polgar, J. (2012). *How I Beat Fischer's Record*. Everyman Chess.
 
-## À retenir
-
-- La solitude aux échecs est **réglementaire** : le règlement FIDE interdit toute communication pendant la partie, en faisant une contrainte structurelle, pas un choix
-- Les **échecs en ligne** ont démocratisé la pratique mais supprimé l'obligation sociale du club : on peut jouer intensément sans jamais appartenir à une communauté
-- La **solitude productive** (être seul avec un problème difficile) se distingue de la **solitude refuge** (éviter la vie sociale): les échecs peuvent être les deux selon l'intention du joueur
-- Les joueurs d'élite développent des stratégies opposées pour gérer l'intensité de l'isolement en tournoi : l'ascèse cognitive (Carlsen) ou la décompression sociale intense (Tal)
-- La capacité d'être seul est une **compétence transférable**, mais seulement si elle est travaillée consciemment, pas juste subie
-
 ## Pour aller plus loin
 
 - [Échecs et état de flux : comment atteindre le flow sur l'échiquier](/fr/blog/echecs-et-flow/)
 - [Concentration aux échecs : entraîner l'attention comme un muscle](/fr/blog/echecs-et-concentration/)
 - [Échecs et confiance en soi : ce que l'échiquier construit vraiment](/fr/blog/echecs-et-confiance-en-soi/)
-

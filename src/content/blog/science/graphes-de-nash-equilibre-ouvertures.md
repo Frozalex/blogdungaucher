@@ -175,22 +175,3 @@ Pour un amateur, c'est jouer **deux ou trois ouvertures** différentes avec des 
 Parce que les ouvertures **transposent** : des séquences de coups différentes mènent à la même position. Le pion en c4 au coup 1 ou au coup 3 peut donner la même position de Réti dans certaines lignes. Un arbre suppose un chemin unique vers chaque feuille ; un graphe acyclique dirigé autorise plusieurs chemins. Les bases d'ouvertures professionnelles (ChessBase, Lichess Masters) sont en réalité des graphes compressés, avec des millions de transpositions précalculées.
 
 ---
-
-## À retenir
-
-- Un équilibre de Nash est une situation où aucun joueur ne peut améliorer son résultat en changeant unilatéralement de stratégie
-- Les ouvertures considérées "théoriquement égales" sont des équilibres de Nash locaux
-- Une variante qui donne un avantage réel rompt l'équilibre et force une correction théorique (exemple : défense berlinoise après Kramnik 2000)
-- Le **raffinement de Selten** (main tremblante) explique pourquoi un coup "robuste" peut battre un coup "théoriquement optimal" en partie réelle
-- Les graphes de positions permettent de visualiser ces équilibres comme des attracteurs dans l'espace des parties possibles
-- Un répertoire mixte est une **stratégie mixte au sens de Nash** : il diversifie pour éviter d'être exploité
-
-### Sources et références
-
-- **Nash, J. F.** [*Non-Cooperative Games.*](https://www.jstor.org/stable/1969529) Annals of Mathematics, 54(2), 286-295, 1951. (L'article fondateur de l'équilibre de Nash.)
-- **Nash, J. F.** *Equilibrium Points in n-Person Games.* Proceedings of the National Academy of Sciences, 36(1), 48-49, 1950. (La publication initiale du concept d'équilibre.)
-- **Selten, R.** *Reexamination of the Perfectness Concept for Equilibrium Points in Extensive Games.* International Journal of Game Theory, 4(1), 25-55, 1975. (Le raffinement à "main tremblante" qui rend les équilibres robustes aux erreurs adverses.)
-- **Osborne, M. J., & Rubinstein, A.** [*A Course in Game Theory.*](https://theory.economics.utoronto.ca/books/gametheory.pdf) MIT Press, 1994. (Introduction accessible à la théorie des jeux incluant l'équilibre de Nash et ses raffinements.)
-- **Kramnik, V., & Damsky, I.** *My Life and Games.* Everyman Chess, 2000. (Analyse par Kramnik de la défense berlinoise utilisée contre Kasparov au championnat du monde 2000.)
-- **de Groot, A. D.** *Thought and Choice in Chess.* Mouton, 1965. (La psychologie de la pensée du joueur d'échecs et la reconnaissance de patterns.)
-- **Lasker, E.** *Manual of Chess.* Dover Publications, 1947. (Les principes stratégiques fondamentaux des ouvertures et de l'équilibre positionnel.)

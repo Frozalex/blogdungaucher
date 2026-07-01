@@ -197,17 +197,8 @@ C'est peut-être l'argument le plus solide pour les programmes scolaires obligat
 - Ferreira, D., & Palhares, P. (2008). Chess and problem-solving involving patterns. *The Montana Mathematics Enthusiast*, 5(2–3), 249–256.
 - Trinchero, R. (2013). Can chess training improve Pisa scores in mathematics? *Kasparov Chess Foundation Europe*.
 
-## À retenir
-
-- Les échecs ont un effet positif sur les **fonctions exécutives** (planification, inhibition, mémoire de travail): le consensus scientifique est solide sur ce point
-- L'effet sur les **résultats scolaires** directs (notes en maths, lecture) est **réel mais modéré**, et dépend fortement de la qualité pédagogique du programme
-- **Sala & Gobet (2016, 2017)** : méta-analyse de référence : les effets sont positifs mais diminuent quand les contrôles expérimentaux sont rigoureux
-- Le **modèle arménien** (obligatoire, CP-CM2) est le plus ambitieux au monde et montre des résultats encourageants mais encore mal documentés à long terme
-- Le bénéfice des échecs n'est pas magique : il nécessite une **instruction de qualité**, des **enseignants formés** et un **minimum de 30 heures annuelles**
-
 ## Pour aller plus loin
 
 - [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
 - [Sujet Grand Oral Maths : Quels modèles mathématiques permettent de comprendre les échecs, et où sont leurs limites ?](/fr/blog/sujet-grand-oral-maths-modeles-limites/)
 - [Échecs et Alzheimer : comment stimuler son cerveau pour prévenir le déclin cognitif](/fr/blog/echecs-alzheimer-prevention-declin-cognitif/)
-

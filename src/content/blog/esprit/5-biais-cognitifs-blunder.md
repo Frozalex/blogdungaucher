@@ -89,18 +89,3 @@ L'entraînement de la pensée échiquéenne n'est pas seulement l'entraînement 
 **Après lecture :** choisis **un** biais qui t’a coûté une partie récente ; pendant les trois prochaines sessions, pose la **même question de contrôle** avant chaque coup important (ex. « quelle autre idée j’écarte ? » pour l’Einstellung).
 
 ---
-
-## À retenir
-
-- Les biais cognitifs sont des déviations systématiques du raisonnement rationnel, documentées par la recherche en psychologie
-- Ils ne sont pas des signes de bêtise : ils affectent tout le monde, y compris les experts
-- Aux échecs, ils se manifestent de façon identifiable et prévisible
-- La première étape pour les contrer est de les reconnaître en temps réel
-
-### Sources et références
-
-- **Bilalić, M., McLeod, P., & Gobet, F.** [*Why Good Thoughts Block Better Ones: The Mechanism of the Pernicious Einstellung (Set) Effect.*](https://pubmed.ncbi.nlm.nih.gov/20175829/) Cognition, 108(3), 652-661, 2008. (L'étude fondatrice sur l'effet Einstellung aux échecs avec imagerie cérébrale.)
-- **Kahneman, D.** *Thinking, Fast and Slow.* Farrar, Straus and Giroux, 2011. (La synthèse complète des biais cognitifs, incluant ancrage, surconfiance et disponibilité.)
-- **Kahneman, D., & Tversky, A.** [*Judgment under Uncertainty: Heuristics and Biases.*](https://www.science.org/doi/10.1126/science.185.4157.1124) Science, 185(4157), 1124-1131, 1974. (L'article fondateur sur les heuristiques et biais cognitifs.)
-- **Pronin, E., Lin, D. Y., & Ross, L.** [*The Bias Blind Spot: Perceptions of Bias in Self Versus Others.*](https://www.researchgate.net/publication/8152440) Personality and Social Psychology Bulletin, 28(3), 369-381, 2002. (Le biais de l'angle mort et la tendance à se croire moins biaisé que les autres.)
-- **Gobet, F., & Simon, H. A.** *Expert Chess Memory: Revisiting the Chunking Hypothesis.* Memory, 6(3), 225-255, 1998. (La mémoire experte aux échecs et la reconnaissance de patterns, contexte pour comprendre les biais de fixation.)

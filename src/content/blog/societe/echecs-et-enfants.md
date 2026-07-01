@@ -214,16 +214,7 @@ Pour un parent qui se demande "pourquoi les échecs plutôt qu'un autre jeu ou u
 - Pandolfini, B. (1992). *Pandolfini's Chess Complete*. Simon & Schuster.
 - FIDE for Schools. (2020). *Chess in Education : A Guide for Teachers*. FIDE Commission for Chess in Schools.
 
-## À retenir
-
-- L'âge optimal d'initiation structurée est **5-7 ans**: après la théorie de l'esprit, dans la fenêtre de plasticité visuo-spatiale
-- Les méthodes **adaptées à l'âge** (pièces simplifiées, mini-jeux, récits) font une différence énorme sur l'engagement
-- Les bénéfices sur les **fonctions exécutives** (planification, inhibition) apparaissent dès 10-12 semaines d'instruction régulière
-- La **motivation intrinsèque** est le prédicteur le plus fort de la progression, jamais forcer
-- La première **compétition** doit attendre que l'enfant la réclame lui-même
-
 ## Pour aller plus loin
 
 - [Échecs à l'école : ce que la recherche dit vraiment sur l'apprentissage](/fr/blog/echecs-et-ecole/)
 - [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)
-

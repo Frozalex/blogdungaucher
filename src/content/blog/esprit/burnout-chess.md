@@ -145,19 +145,3 @@ Bobby Fischer a gagné le championnat du monde en 1972 à Reykjavik. Il n'a pas 
 **Après lecture :** si tu te reconnais dans l'épuisement décrit, fixe **deux semaines** sans partie en ligne ; au retour, **une** partie lente par jour maximum la première semaine, sans objectif Elo.
 
 ---
-
-## À retenir
-
-- Le burnout aux échecs partage les trois symptômes du burnout professionnel : épuisement, cynisme, perte d'efficacité. Il faut les trois, sur plusieurs mois, pour parler de burnout réel.
-- Volume d'étude > 15h/semaine, classement public, comparaison sociale continue, dominance du mécanique sur le créatif : les quatre voies royales aux échecs.
-- Quatre profils sur-exposés : perfectionniste, junior poussé, adulte multi-vies, joueur sur plateau long.
-- Le seul protocole de sortie : arrêt total pendant 3 semaines à 6 mois selon la sévérité, puis reprise radicalement différente (volume divisé par 3-4, plaisir avant Elo).
-- Prévention en quatre règles : diversifier, plafonner les heures, garder une vie hors-échiquier, réévaluer la motivation tous les 3 mois.
-
-### Sources et références
-
-- **Maslach, C., & Leiter, M. P.** *The Truth About Burnout : How Organizations Cause Personal Stress and What to Do About It.* Jossey-Bass, 1997. (La théorie du burnout et ses trois dimensions par sa conceptrice principale.)
-- **Deci, E. L., & Ryan, R. M.** *Intrinsic Motivation and Self-Determination in Human Behavior.* Plenum Press, 1985. (La théorie de l'autodétermination et le rôle de la motivation intrinsèque dans l'engagement durable.)
-- **Freudenberger, H. J.** *Staff Burn-Out.* Journal of Social Issues, 30(1), 159-165, 1974. (La première description formelle du burnout dans la littérature psychologique.)
-- **Gustafsson, H., et al.** [*A Conceptual Model of Burnout in Youth Athletes.*](https://www.researchgate.net/publication/6677049) International Journal of Sports Science & Coaching, 2(4), 467-480, 2007. (Le burnout chez les athlètes juniors, directement applicable aux joueurs d'échecs compétitifs jeunes.)
-- **Lemyre, P. N., Treasure, D. C., & Roberts, G. C.** [*Influence of Variability in Motivation and Affect on Elite Athlete Burnout Susceptibility.*](https://pubmed.ncbi.nlm.nih.gov/16886826/) Journal of Sport and Exercise Psychology, 28(1), 32-48, 2006. (Les facteurs de risque du burnout chez les athlètes d'élite.)

@@ -185,21 +185,3 @@ Ce protocole, appliqué aux 5 ou 6 décisions critiques d'une partie, prend peu 
 **Après lecture :** identifie sur ta dernière partie *un* coup où tu as choisi entre deux candidats sans procédure claire. Reconstruis a posteriori quel critère implicite tu as utilisé. Tu peux être surpris du résultat.
 
 ---
-
-## À retenir
-
-- Toute décision aux échecs se prend sous incertitude knightienne : tu ne connais ni toutes les variantes ni les probabilités exactes.
-- L'utilité espérée est un critère utile mais pas suffisant. Le maximin, le critère bayésien, le satisficing et le principe de moindre engagement s'appliquent selon le contexte.
-- L'aversion à la perte et l'aversion à l'ambiguïté biaisent systématiquement les choix humains. Les reconnaître est la première étape pour les corriger.
-- La rationalité limitée de Simon implique d'allouer le temps de réflexion proportionnellement à la criticité estimée de chaque décision.
-- Les Grands Maîtres ne procèdent pas par exploration exhaustive mais par recognition-primed decision : la qualité de leur base de patterns détermine la qualité de leurs décisions rapides.
-
-### Sources et références
-
-- **von Neumann, J., & Morgenstern, O.** *Theory of Games and Economic Behavior.* Princeton University Press, 1944. (Le fondement axiomatique de la théorie de l'utilité espérée.)
-- **Knight, F. H.** *Risk, Uncertainty and Profit.* Houghton Mifflin, 1921. (La distinction historique entre risque et incertitude.)
-- **Kahneman, D., & Tversky, A.** [*Prospect Theory: An Analysis of Decision under Risk.*](https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-64a0-5b1c-0000-00003b7ec704/10.05-kahneman-tversky-79.pdf) *Econometrica*, 47(2), 263-291, 1979. (Article fondateur de la *Prospect Theory* et de l'aversion à la perte.)
-- **Simon, H. A.** [*A Behavioral Model of Rational Choice.*](https://academic.oup.com/qje/article-abstract/69/1/99/1942869) *Quarterly Journal of Economics*, 69(1), 99-118, 1955. (Première formalisation de la rationalité limitée.)
-- **Ellsberg, D.** [*Risk, Ambiguity, and the Savage Axioms.*](https://academic.oup.com/qje/article-abstract/75/4/643/1907708) *Quarterly Journal of Economics*, 75(4), 643-669, 1961. (Le paradoxe d'Ellsberg et l'aversion à l'ambiguïté.)
-- **Klein, G. A.** *Sources of Power: How People Make Decisions.* MIT Press, 1998. (Le modèle *recognition-primed decision* fondé sur les études d'experts en situation réelle.)
-- **Gigerenzer, G., & Selten, R. (Eds.).** *Bounded Rationality: The Adaptive Toolbox.* MIT Press, 2001. (Synthèse contemporaine sur la rationalité limitée et les heuristiques adaptatives.)

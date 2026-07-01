@@ -107,18 +107,3 @@ Si tu ragequit systématiquement après des blunders en zeitnot, l'information e
 **Après lecture :** après ta prochaine défaite frustrante, attends **cinq minutes** avant le moteur ; note **un** déclencheur (« zeitnot », « coup bizarre », « adversaire plus faible ») pour ton protocole perso.
 
 ---
-
-## À retenir
-
-- Le ragequit est déclenché par un circuit neurologique précis dont le coeur est l'amygdale
-- La colère aux échecs est amplifiée par le sentiment d'injustice et la frustration de l'effort gâché
-- La fenêtre entre déclenchement émotionnel et comportement destructeur est mesurable : environ 90 secondes selon les neurosciences
-- La régulation de la colère aux échecs est une compétence qui s'entraîne, pas un trait de caractère fixe
-
-### Sources et références
-
-- **Goleman, D.** *Emotional Intelligence: Why It Can Matter More Than IQ.* Bantam Books, 1995. (Le concept d'amygdale hijacking et la régulation émotionnelle.)
-- **LeDoux, J.** *The Emotional Brain: The Mysterious Underpinnings of Emotional Life.* Simon & Schuster, 1996. (Les circuits neurologiques de la peur et de la colère, y compris les voies courtes et longues vers l'amygdale.)
-- **Bolte Taylor, J.** *My Stroke of Insight: A Brain Scientist's Personal Journey.* Viking, 2008. (La fenêtre de 90 secondes pour la réponse neurochimique aux émotions.)
-- **Dollard, J., et al.** *Frustration and Aggression.* Yale University Press, 1939. (La théorie frustration-agression, applicable aux réactions émotionnelles aux échecs.)
-- **Gross, J. J.** [*Emotion Regulation: Affective, Cognitive, and Social Consequences.*](https://www.cambridge.org/core/journals/psychophysiology/article/emotion-regulation-affective-cognitive-and-social-consequences/8685ED81D6E3374A40F8E7FEF19A56B3) Psychophysiology, 39(3), 281-291, 2002. (Les mécanismes de régulation émotionnelle et leurs effets cognitifs.)

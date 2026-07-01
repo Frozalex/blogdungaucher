@@ -196,17 +196,8 @@ C'est l'une des rares interventions où le rapport coût-bénéfice est extrême
 - Sedlmeier, P., et al. (2012). The psychological effects of meditation : A meta-analysis. *Psychological Bulletin*, 138(6), 1139–1171.
 - Norris, C. J., Creem, D., Hendler, R., & Kober, H. (2018). Brief mindfulness meditation improves attention in novices. *Frontiers in Human Neuroscience*, 12, 315.
 
-## À retenir
-
-- La méditation modifie le **Default Mode Network** (-22% d'activation) → moins de rumination, plus de présence
-- 8 semaines à 20 min/jour produisent des **changements cérébraux mesurables** en IRM structurelle (Hölzel 2011)
-- La pleine conscience améliore la **régulation émotionnelle** post-erreur : précieux après un blunder
-- **Une seule séance** de 10 min avant une tâche améliore l'attention (effet d'état): pertinent pour la préparation pré-partie
-- La méditation **ne remplace pas** l'entraînement échiquéen : elle amplifie son rendement en supprimant les freins mentaux
-
 ## Pour aller plus loin
 
 - [Échecs et sommeil : pourquoi la nuit joue aussi ta partie](/fr/blog/echecs-et-sommeil/)
 - [Échecs et vision spatiale : le cerveau qui voit en 3D](/fr/blog/echecs-et-vision-spatiale/)
 - [Dopamine et échecs : la neurochimie du jeu](/fr/blog/echecs-et-dopamine/)
-

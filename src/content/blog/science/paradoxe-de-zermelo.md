@@ -168,22 +168,3 @@ Parce que ni l'un ni l'autre ne joue parfaitement au sens Zermelo. Tous deux son
 Probablement pas par force brute pure : l'arbre $10^{120}$ est définitivement hors d'atteinte physique. Une **preuve indirecte** reste théoriquement possible (démonstration par symétrie, par invariant, par stratégie miroir partielle), mais aucune piste sérieuse n'existe. Le calcul quantique change la borne (Grover divise l'exposant par deux), mais $10^{60}$ reste astronomique. La résolution des échecs au sens strict est plus probablement un horizon que jamais atteint.
 
 ---
-
-## À retenir
-
-- Zermelo prouve que dans tout jeu fini à deux joueurs à information parfaite, le résultat sous jeu parfait est déterminé à l'avance
-- Pour les échecs, cela signifie que soit Blanc gagne, soit Noir gagne, soit la partie est nulle sous jeu parfait des deux côtés
-- Personne ne sait encore laquelle de ces trois options est vraie ; l'hypothèse majoritaire est la nulle
-- La démonstration a été affinée par **König (1927) et Kalmár (1928)** pour traiter rigoureusement la finitude
-- Les **tablebases ≤ 7 pièces** sont la confirmation constructive du théorème sur un sous-ensemble accessible
-- Ce paradoxe révèle que la "perfection" aux échecs est un idéal mathématiquement défini mais physiquement inaccessible
-
-### Sources et références
-
-- **Zermelo, E.** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* Proceedings of the Fifth International Congress of Mathematicians, Cambridge, 1913. (Le texte original du théorème.)
-- **Schwalbe, U., & Walker, P.** [*Zermelo and the Early History of Game Theory.*](https://doi.org/10.1006/game.1999.0773) Games and Economic Behavior, 34(1), 123-137, 2001. (Reconstruction historique précise de la preuve de Zermelo et des corrections apportées par König et Kalmár.)
-- **Schaeffer, J., et al.** [*Checkers Is Solved.*](https://www.science.org/doi/10.1126/science.1144079) Science, 317(5844), 1518-1522, 2007. (La résolution complète du jeu de dames par ordinateur.)
-- **Fraenkel, A. S., & Lichtenstein, D.** *Computing a Perfect Strategy for n×n Chess Requires Time Exponential in n.* Journal of Combinatorial Theory, Series A, 31(2), 199-214, 1981. (La complexité computationnelle de la résolution des échecs généralisés.)
-- **Stiller, L.** *Multilinear Algebra and Chess Endgames.* Games of No Chance, MSRI Publications, 29, 1996. (Le travail sur les tablebases et les fins de partie résolues.)
-- **Lomonosov, V., & Konoval, M.** *7-piece Endgame Tablebases.* Moscow State University, 2012. (Génération des tablebases 7 pièces, avec exemples de victoires forcées de plus de 500 coups.)
-- **Shannon, C. E.** *Programming a Computer for Playing Chess.* Philosophical Magazine, Series 7, 41(314), 1950. (L'estimation de la complexité du jeu d'échecs.)

@@ -180,21 +180,3 @@ Statistiquement, oui dans une certaine fenêtre. L'analyse de millions de partie
 Une position compliquée a beaucoup de coups candidats mais des écarts d'évaluation faibles : tu peux te tromper sans perdre la partie. Une position chaotique a peu de coups viables mais des écarts énormes : un seul coup faible et la position bascule. C'est l'écart d'évaluation par coup, pas le nombre de candidats, qui mesure le chaos. Un moteur la quantifie pour toi en deux secondes ; à toi de reconnaître la forme à l'œil nu.
 
 ---
-
-## À retenir
-
-- Les positions complexes aux échecs exhibent une **sensibilité aux conditions initiales** caractéristique des systèmes chaotiques (exposant de Lyapunov élevé)
-- Les **points de bifurcation** correspondent aux moments où la nature de la position change radicalement : un seul coup faible suffit à tout faire basculer
-- Le chaos n'est pas du désordre : c'est de la **complexité déterministe imprévisible à long terme**
-- Compliqué ≠ chaotique : c'est l'**écart d'évaluation par coup**, pas le nombre de candidats, qui mesure le vrai risque
-- Comprendre où sont les points critiques d'une position est la clé de l'évaluation positionnelle avancée
-
-### Sources et références
-
-- **Lorenz, E. N.** [*Deterministic Nonperiodic Flow.*](https://journals.ametsoc.org/view/journals/atsc/20/2/1520-0469_1963_020_0130_dnf_2_0_co_2.xml) Journal of Atmospheric Sciences, 20(2), 130-141, 1963. (L'article fondateur de la théorie du chaos moderne ; introduit la sensibilité aux conditions initiales.)
-- **Lyapunov, A. M.** *The General Problem of the Stability of Motion.* (Réédition Taylor & Francis, 1992). Thèse de 1892 où apparaît l'exposant qui mesure la divergence des trajectoires, base formelle du chaos.
-- **Regan, K. W., & Haworth, G.** *Intrinsic Chess Ratings.* Proceedings of the 25th AAAI Conference on Artificial Intelligence, 2011. (Analyse statistique de la qualité de jeu et de la sensibilité des évaluations dans les positions critiques.)
-- **Gleick, J.** *Chaos: Making a New Science.* Viking Press, 1987. (Introduction accessible à la théorie du chaos et à ses applications interdisciplinaires.)
-- **Botvinnik, M.** *Chess in the USSR.* Progress Publishers, 1983. (Réflexions du champion du monde sur la pensée stratégique et le "sens de la position critique".)
-- **Kasparov, G., & King, D.** *Kasparov vs. Topalov, Wijk aan Zee 1999.* Annotation dans *New In Chess*, 1999/2. (Analyse annotée par Kasparov de la combinaison à partir du sacrifice Txd4.)
-- **Mandelbrot, B.** *The Fractal Geometry of Nature.* W.H. Freeman, 1982. (Bases de la géométrie fractale, applicable à la structure de la complexité aux échecs.)

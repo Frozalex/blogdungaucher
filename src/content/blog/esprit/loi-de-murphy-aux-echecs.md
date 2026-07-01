@@ -81,18 +81,3 @@ Ce n'est pas le destin. C'est la répétition.
 **Après lecture :** prends une défaite où tu as invoqué « Murphy » et réécris-la en **une phrase procédurale** (temps, fatigue, préparation, format de jeu). Si la même cause revient trois fois, c’est ton levier d’entraînement, pas une malédiction.
 
 ---
-
-## À retenir
-
-- Murphy n'est pas une « loi » au sens scientifique : c'est une intuition sociale sur les défaillances dans les systèmes complexes
-- Aux échecs, le « pire moment » est souvent corrélé avec zeitnot, tension maximale ou fin de séquence de calcul, où le taux d'erreur augmente pour tout le monde
-- La mémoire retient surtout les parties où la douleur est forte (effet de disponibilité), ce qui donne l'illusion que « ça arrive toujours comme ça »
-- Tu ne contrôles pas le hasard sur l'échiquier (il n'y en a pas), mais tu peux contrôler le processus : temps, habitudes anti-blunder, récupération attentionnelle
-
-### Sources et références
-
-- **Kahneman, D.** *Thinking, Fast and Slow.* Farrar, Straus and Giroux, 2011. (Heuristiques, biais de jugement, disponibilité.)
-- **Kahneman, D., & Tversky, A.** *Judgment under Uncertainty: Heuristics and Biases.* Science, 1974. (Fondations des biais de disponibilité et d'évaluation.)
-- **Nickerson, R. S.** *Confirmation Bias: A Ubiquitous Phenomenon in Many Guises.* Review of General Psychology, 2(2), 175-220, 1998. (Comment on construit des récits cohérents avec ses croyances.)
-- **Reason, J.** *Human Error.* Cambridge University Press, 1990. (Erreurs humaines dans les systèmes complexes, procédures et fiabilité.)
-- **Matthews, G., et al.** *Human Performance: Cognition, Stress and Individual Differences.* Elsevier, 2000. (Performance cognitive sous stress et fatigue.)

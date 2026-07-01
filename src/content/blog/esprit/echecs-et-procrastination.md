@@ -171,19 +171,8 @@ La solution n'est pas la discipline héroïque. C'est la **réduction de frictio
 
 Et reconnais la vraie nature de ton "je n'ai pas le temps de l'analyse aujourd'hui". Ce n'est pas du temps qui manque. C'est de l'évitement habillé en lucidité.
 
-## À retenir
-
-- Procrastiner = neutraliser une émotion inconfortable. Pas un défaut de volonté.
-- La pendule d'échecs réussit parce qu'elle rend l'inaction immédiatement coûteuse. Réplique-la avec un timer ou un rendez-vous non-négociable.
-- *Overthinking* et procrastination ont la même structure : retarder l'action en cherchant une certitude qui n'existera pas.
-- 50 parties = 1500 décisions sous incertitude. Effet mesurable mais modéré sur la tolérance à l'ambiguïté hors-échiquier : à condition de faire le pont consciemment.
-- "Touché-joué" entraîne à découpler la décision du regret. C'est ce qu'il faut voler de l'échiquier vers ta vie.
-
-**Maintenant, ferme cet onglet.** Ouvre le dossier que tu reportes depuis trois jours. Donne-toi 25 minutes au timer. Ce que tu produiras dans ces 25 minutes battra tout ce que tu n'as pas produit depuis lundi.
-
 ## Pour aller plus loin
 
 - [Gestion du temps aux échecs : la pendule comme miroir de tes décisions](/fr/blog/echecs-gestion-du-temps/)
 - [La psychologie du joueur d'échecs : ce qui se passe vraiment dans ta tête](/fr/blog/psychologie-du-joueur-d-echecs/)
 - [Les échecs et l'addiction : quand le jeu devient une drogue](/fr/blog/les-echecs-et-l-addiction/)
-

@@ -191,17 +191,8 @@ En attendant, la pratique en avance sur la recherche, comme c'est souvent le cas
 - Ruiz, J. D. (2011). Chess as an educational tool for violent youth offenders in Spanish prisons. *Physical Culture and Sport. Studies and Research*, 52, 71–79.
 - Gobet, F., & Campitelli, G. (2002). Intelligence and chess. In J. Retschitzki & R. Haddad-Zubel (Eds.), *Step by Step : Proceedings of the 4th Colloquium on Board Games in Education* (pp. 103–112).
 
-## À retenir
-
-- Les échecs réduisent les symptômes d'**anxiété** chez les enfants de manière significative dans des études contrôlées (Marín et al., 2017)
-- Le mécanisme principal : **l'absorption cognitive** interrompt les ruminations et pensées intrusives
-- Les programmes en **milieu carcéral** montrent des réductions d'incidents disciplinaires de 20-30% (programme UK)
-- L'échiquier offre un **espace relationnel structuré**: précieux pour les profils avec difficultés relationnelles (dépression, PTSD, TSA)
-- Les données sur la **dépression et le PTSD** sont prometteuses mais encore insuffisamment documentées par des essais rigoureux
-
 ## Pour aller plus loin
 
 - [Les échecs en prison : quand l'échiquier devient un outil de réhabilitation](/fr/blog/echecs-en-prison/)
 - [Échecs et autisme : pourquoi l'échiquier devient un refuge](/fr/blog/echecs-et-autisme/)
 - [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
-

@@ -191,16 +191,7 @@ Quelques recommandations pratiques pour les parents et entraîneurs :
 - Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. *Psychological Review*, 100(3), 363–406.
 - Piechowski, M. M. (2006). Mellow out, they say. If only I could : Intensities and sensitivities of the young and bright. Yunasa Books.
 
-## À retenir
-
-- Les HPI sont **surreprésentés dans les clubs d'échecs**, sans que la causalité soit claire (sélection naturelle vers les activités stimulantes)
-- L'échiquier répond à des besoins HPI réels : **stimulation cognitive intense, règles formelles, progression sans plafond**
-- Le **perfectionnisme** des HPI peut transformer les défaites aux échecs en souffrance disproportionnée : un accompagnement actif est nécessaire
-- Le **QI ne garantit pas la performance** : la pratique délibérée explique davantage de variance que le potentiel brut (Hambrick et al., 2014)
-- Les échecs ne sont **pas exclusivement réservés aux HPI**: ils sont simplement bien adaptés à leurs besoins spécifiques, parmi d'autres activités possibles
-
 ## Pour aller plus loin
 
 - [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
 - [Échecs et autisme : pourquoi l'échiquier devient un refuge](/fr/blog/echecs-et-autisme/)
-

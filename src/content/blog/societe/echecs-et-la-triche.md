@@ -180,17 +180,8 @@ En l'absence de biomarqueur, la triche aux échecs restera toujours une zone gri
 - Hsu, F.-H. (2002). *Behind Deep Blue*. Princeton University Press.
 - Kasparov, G. (2003). *My Great Predecessors* (Vol. 1). Everyman Chess.
 
-## À retenir
-
-- La triche aux échecs se détecte par **corrélation statistique** avec les moteurs, pas par preuve directe : ce qui produit des faux positifs et ne constitue pas une preuve juridique
-- L'affaire Niemann/Carlsen **n'a jamais été tranchée** : procès réglé à l'amiable en 2023, sans aveu ni condamnation
-- Les moteurs d'IA ont **élevé le niveau général** mais rendu chaque coup parfait suspect : la beauté du jeu passe désormais par le filtre de la suspicion
-- La triche aux échecs est **pré-numérique** : l'IA l'a rendue statistiquement visible, elle ne l'a pas inventée
-- Le mobile est rarement l'argent : c'est le **classement Elo**, monnaie de réputation dans un circuit très petit et très compétitif
-
 ## Pour aller plus loin
 
 - [Les échecs et l'argent : pourquoi les meilleurs joueurs du monde ne sont pas riches](/fr/blog/echecs-et-argent/)
 - [Échecs et handicap : quand l'échiquier efface les frontières](/fr/blog/echecs-et-handicap/)
 - [Gérer le stress en tournoi d'échecs : ce que disent la psychologie et la physiologie](/fr/blog/echecs-stress-tournoi/)
-

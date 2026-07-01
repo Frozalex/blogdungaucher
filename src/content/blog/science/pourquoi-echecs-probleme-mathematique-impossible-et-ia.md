@@ -272,17 +272,6 @@ Non. C'est une **estimation d'ordre de grandeur** du nombre de parties possibles
 
 ---
 
-## À retenir
-
-- L'arbre des parties est borné par le **nombre de Shannon ($10^{120}$)** : aucun algorithme par force brute n'arrivera à le parcourir
-- Les échecs généralisés sont **EXPTIME-complet** : il existe une **preuve d'impossibilité** d'algorithme polynomial
-- Les moteurs ne *résolvent* pas, ils *approximent* : minimax + alpha-bêta + évaluation heuristique + apprentissage
-- Battre l'humain et résoudre le jeu sont deux problèmes différents ; Stockfish/AlphaZero font le premier, personne ne fait le second
-- Progresser comme joueur, c'est améliorer **ta fonction d'évaluation interne** et **ton élagage intuitif**, exactement comme un moteur
-- "Impossible" au sens formel ne veut pas dire "inutilisable" : la qualité du tri compte plus que la quantité de calcul
-
----
-
 ## Sources et références
 
 - **Shannon, C. E.** *Programming a Computer for Playing Chess.* Philosophical Magazine, Series 7, 41(314), 256-275, 1950. (Estimation originale du nombre de parties possibles, $\sim 10^{120}$.)
@@ -297,4 +286,3 @@ Non. C'est une **estimation d'ordre de grandeur** du nombre de parties possibles
 - [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
 - [La psychologie du joueur d'échecs : ce qui se passe vraiment dans ta tête](/fr/blog/psychologie-du-joueur-d-echecs/)
 - [Les échecs et l'addiction : quand le jeu devient une drogue](/fr/blog/les-echecs-et-l-addiction/)
-
