@@ -8,13 +8,12 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
 import Comments from "../../../components/Comments.astro";
-import NewsletterCta from "../../../components/NewsletterCta.astro";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleVideo from "../../../components/ArticleVideo.astro";
 import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import FocusMode from "../../../components/FocusMode.astro";
 
-import { categoryMap, categorySlugs, siteConfig, PT_BR_LAUNCH_DATE } from "../../../data/site";
+import { categoryMap, siteConfig, PT_BR_LAUNCH_DATE } from "../../../data/site";
 import {
   absoluteUrl,
   buildBreadcrumbJsonLd,
@@ -144,15 +143,6 @@ const structuredData = [
   ...(faqsForDisplay.length > 0 ? [buildFaqJsonLd(faqsForDisplay)] : []),
 ];
 
-const ptBrCategoryShortLabels: Record<string, string> = {
-  science: "Ciência",
-  esprit: "Mente & Foco",
-  societe: "Xadrez & Sociedade",
-};
-
-const otherPillars = categorySlugs
-  .filter((s) => s !== post.data.category && s !== "grand-oral")
-  .map((s) => ({ ...categoryMap[s], ptBrShort: ptBrCategoryShortLabels[s] ?? categoryMap[s].shortLabel }));
 ---
 <BaseLayout
   title={`${ptBrTitle} | Blog de um Canhoto`}
@@ -304,64 +294,41 @@ const otherPillars = categorySlugs
 
         {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="pt-br" />}
 
-        {otherPillars.length > 0 && (
-          <nav class="pillar-links fade-up" style="--motion-delay: 130ms;" aria-label="Outras seções do blog">
-            <span class="pillar-links__eyebrow">Continue explorando</span>
-            <div class="pillar-links__grid">
-              {otherPillars.map((p) => (
-                <a href={swapLangPrefix(p.href, "pt-br")} class="pillar-link" style={`--pc:${p.accent}`}>
-                  <span class="pillar-link__dot"></span>
-                  <div>
-                    <strong>{p.ptBrShort}</strong>
-                    <span>{p.tagline}</span>
-                  </div>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-                </a>
-              ))}
-            </div>
-          </nav>
-        )}
-
-        <NewsletterCta />
         <Comments lang="pt-br" />
 
       </div>
-
-      <aside class="article-aside">
-        {relatedWithUrls.length > 0 && (
-          <div class="aside-related fade-up" style="--motion-delay: 120ms;">
-            <span class="aside-related__label">Para você</span>
-            <div class="aside-related__list">
-              {relatedWithUrls.map(({ entry: e, url }) => (
-                <a href={url} class="aside-related__item">
-                  {getPostHeroSrc(e) && (
-                    <img class="aside-related__thumb" src={getPostHeroSrc(e)!} alt="" loading="lazy" decoding="async" width="60" height="60" />
-                  )}
-                  <div class="aside-related__body">
-                    <span class="aside-related__cat" style={`color:${categoryMap[e.data.category]?.accent}`}>
-                      {categoryMap[e.data.category]?.shortLabel}
-                    </span>
-                    <p class="aside-related__title">{e.data.title}</p>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        )}
-
-        <div class="aside-card fade-up" style="--motion-delay: 160ms;">
-          <span class="aside-dot" style={`background:${category.accent}`}></span>
-          <h2>{ptBrCategoryLabel}</h2>
-          <p data-t={`categories.${post.data.category}.tagline`}>{category.tagline}</p>
-          <a href={ptBrCategoryHref} class="aside-link">
-            Explorar esta seção
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-
-        <AdBanner format="rectangle" />
-      </aside>
     </div>
+
+    {relatedWithUrls.length > 0 && (
+      <section class="related-carousel container" aria-label="Artigos recomendados" data-pagefind-ignore>
+        <div class="related-carousel__head">
+          <span class="related-carousel__label">Para você</span>
+          <div class="related-carousel__nav">
+            <button type="button" class="rc-btn" data-rc-prev aria-label="Artigos anteriores">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" class="rc-btn" data-rc-next aria-label="Próximos artigos">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="related-carousel__track" data-rc-track>
+          {relatedWithUrls.map(({ entry: e, url }) => (
+            <a href={url} class="rc-card">
+              {getPostHeroSrc(e) && (
+                <img class="rc-card__img" src={getPostHeroSrc(e)!} alt="" loading="lazy" decoding="async" width="320" height="180" />
+              )}
+              <div class="rc-card__body">
+                <span class="rc-card__cat" style={`color:${categoryMap[e.data.category]?.accent}`}>
+                  {categoryMap[e.data.category]?.shortLabel}
+                </span>
+                <p class="rc-card__title">{e.data.title}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
   </article>
 </BaseLayout>
 
@@ -473,9 +440,11 @@ const otherPillars = categorySlugs
 
   .article-layout {
     display: grid;
-    grid-template-columns: 3rem minmax(0, 1fr) 17rem;
-    gap: 0 2rem;
+    grid-template-columns: 3rem minmax(0, 1fr);
+    gap: 0 2.5rem;
     align-items: start;
+    max-width: 56rem;
+    margin-inline: auto;
   }
   .article-share-sidebar { grid-column: 1; grid-row: 1; }
   .share-sidebar-sticky {
@@ -483,7 +452,6 @@ const otherPillars = categorySlugs
     display: flex; flex-direction: column; align-items: center;
   }
   .article-main { grid-column: 2; grid-row: 1; }
-  .article-aside { grid-column: 3; grid-row: 1; }
 
   .meta-cat {
     display: inline-flex; align-items: center; min-height: 1.5rem; padding: 0 0.5rem;
@@ -557,66 +525,48 @@ const otherPillars = categorySlugs
   .article-body :global(pre) { border-radius: var(--radius-sm); padding: 1rem 1.2rem; overflow-x: auto; font-size: 0.9rem; margin: 1.2rem 0; background: var(--surface-warm); border: 1px solid var(--border-soft); }
   .article-body :global(img) { max-width: 100%; border-radius: var(--radius-sm); margin: 1rem 0; }
 
-  .article-aside { position: sticky; top: 5rem; display: grid; gap: 1rem; align-content: start; }
   .article-tools { display: flex; justify-content: flex-end; margin-bottom: 0.75rem; }
   .toc-inline-wrap { margin-bottom: 1.5rem; }
 
-  .aside-card {
-    padding: 1.1rem 1.2rem; border-radius: var(--radius-lg);
-    border: 1.5px solid var(--border-soft); background: var(--surface); display: grid; gap: 0.4rem;
+  /* ── Carrossel "Para você" — slide cards interativos ── */
+  .related-carousel { margin: 3.5rem auto 1rem; max-width: 64rem; }
+  .related-carousel__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
+  .related-carousel__label { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text-main); }
+  .related-carousel__nav { display: flex; gap: 0.5rem; }
+  .rc-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 2.6rem; height: 2.6rem; border-radius: 50%;
+    border: 1.5px solid var(--border-strong); background: var(--surface);
+    color: var(--text-muted); cursor: pointer;
+    transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
   }
-  .aside-dot { width: 8px; height: 8px; border-radius: 50%; display: block; }
-  .aside-card h2 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--text-main); }
-  .aside-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
-  .aside-link { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.3rem; font-size: 0.82rem; font-weight: 600; color: var(--green); transition: gap 180ms var(--ease-spring); }
-  .aside-link:hover { gap: 0.5rem; }
-
-  /* aside related "Para você" */
-  .aside-related {
-    padding: 1.1rem; border-radius: var(--radius-lg); background: var(--surface);
-    border: 1px solid var(--border-soft); box-shadow: var(--shadow-xs);
+  .rc-btn:hover { background: var(--text-main); border-color: var(--text-main); color: var(--bg); }
+  .rc-btn:disabled { opacity: 0.35; cursor: not-allowed; pointer-events: none; }
+  .related-carousel__track {
+    display: grid; grid-auto-flow: column; grid-auto-columns: minmax(17rem, 17rem);
+    gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    padding-bottom: 0.75rem; scrollbar-width: none;
   }
-  .aside-related__label {
-    display: block; font-size: 0.68rem; font-family: var(--font-display);
-    font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em;
-    color: var(--green); margin-bottom: 0.8rem;
+  .related-carousel__track::-webkit-scrollbar { display: none; }
+  .rc-card {
+    scroll-snap-align: start; display: flex; flex-direction: column;
+    border-radius: var(--radius-lg); border: 1px solid var(--border-soft);
+    background: var(--surface); overflow: hidden; text-decoration: none;
+    transition: transform 220ms var(--ease-out), box-shadow 220ms ease, border-color 220ms ease;
   }
-  .aside-related__list { display: flex; flex-direction: column; gap: 0.85rem; }
-  .aside-related__item {
-    display: flex; gap: 0.7rem; align-items: flex-start;
-    text-decoration: none; transition: opacity 160ms ease;
-  }
-  .aside-related__item:hover { opacity: 0.78; }
-  .aside-related__thumb {
-    flex-shrink: 0; width: 3.5rem; height: 3.5rem; border-radius: var(--radius-md);
-    object-fit: cover; background: var(--surface-warm); border: 1px solid var(--border-soft);
-  }
-  .aside-related__body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.2rem; }
-  .aside-related__cat { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
-  .aside-related__title {
-    font-size: 0.82rem; font-weight: 600; color: var(--text-main); line-height: 1.4;
+  .rc-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+  .rc-card__img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--surface-warm); display: block; }
+  .rc-card__body { display: flex; flex-direction: column; gap: 0.45rem; padding: 1rem 1.1rem 1.2rem; }
+  .rc-card__cat { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+  .rc-card__title {
+    font-family: var(--font-display); font-size: 0.98rem; font-weight: 600; color: var(--text-main); line-height: 1.4;
     display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
   }
-
-  .pillar-links { margin-top: 2rem; padding: 1.5rem; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--border-soft); box-shadow: var(--shadow-xs); }
-  .pillar-links__eyebrow { display: block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.9rem; }
-  .pillar-links__grid { display: grid; gap: 0.7rem; }
-  .pillar-link { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-soft); background: color-mix(in srgb, var(--pc) 4%, var(--bg-warm)); transition: border-color 180ms ease, background 180ms ease; text-decoration: none; }
-  .pillar-link:hover { border-color: var(--pc); background: color-mix(in srgb, var(--pc) 8%, var(--bg-warm)); }
-  .pillar-link__dot { flex-shrink: 0; width: 8px; height: 8px; border-radius: 50%; background: var(--pc); margin-top: 0.35rem; }
-  .pillar-link div { flex: 1; display: flex; flex-direction: column; gap: 0.15rem; }
-  .pillar-link strong { font-size: 0.9rem; color: var(--text-main); }
-  .pillar-link span { font-size: 0.8rem; color: var(--text-dim); line-height: 1.5; }
-  .pillar-link svg { flex-shrink: 0; color: var(--pc); margin-top: 0.25rem; }
 
   @media (max-width: 1100px) {
     .article-hero { min-height: min(70vh, 600px); }
     .hero-photo-wrap { width: 50%; }
     .hero-content { max-width: 70%; }
-    .article-layout { grid-template-columns: minmax(0, 1fr) 16rem; grid-template-rows: auto; }
-    .article-share-sidebar { display: none; }
-    .article-main { grid-column: 1; }
-    .article-aside { grid-column: 2; }
   }
 
   @media (max-width: 820px) {
@@ -632,9 +582,15 @@ const otherPillars = categorySlugs
   }
 
   @media (max-width: 900px) {
+    .article-share-sidebar { display: none; }
     .article-layout { grid-template-columns: 1fr; }
-    .article-aside { position: static; grid-column: 1; }
+    .article-main { grid-column: 1; }
     .reading-progress { display: none; }
+  }
+
+  @media (max-width: 560px) {
+    .related-carousel__track { grid-auto-columns: minmax(14rem, 80%); }
+    .related-carousel__label { font-size: 1.15rem; }
   }
 </style>
 
@@ -656,5 +612,28 @@ const otherPillars = categorySlugs
     update();
   }
 
+  function initRelatedCarousel() {
+    const track = document.querySelector("[data-rc-track]") as HTMLElement | null;
+    const prevBtn = document.querySelector("[data-rc-prev]") as HTMLButtonElement | null;
+    const nextBtn = document.querySelector("[data-rc-next]") as HTMLButtonElement | null;
+    if (!track || !prevBtn || !nextBtn) return;
+    const step = () => {
+      const card = track.querySelector(".rc-card") as HTMLElement | null;
+      const gap = parseFloat(getComputedStyle(track).columnGap || "20") || 20;
+      return card ? card.getBoundingClientRect().width + gap : track.clientWidth * 0.8;
+    };
+    const sync = () => {
+      const max = track.scrollWidth - track.clientWidth - 2;
+      prevBtn.disabled = track.scrollLeft <= 2;
+      nextBtn.disabled = track.scrollLeft >= max;
+    };
+    prevBtn.addEventListener("click", () => track.scrollBy({ left: -step() * 1.5, behavior: "smooth" }));
+    nextBtn.addEventListener("click", () => track.scrollBy({ left: step() * 1.5, behavior: "smooth" }));
+    track.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", sync);
+    sync();
+  }
+
   document.addEventListener("astro:page-load", initReadingProgress);
+  document.addEventListener("astro:page-load", initRelatedCarousel);
 </script>
