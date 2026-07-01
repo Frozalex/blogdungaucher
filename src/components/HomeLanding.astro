@@ -161,23 +161,24 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 11-14h-7l1-6Z"/></svg>
         </span>
         <h2 id="stats-heading" class="stats-section__title">{lang === "en" ? "Honest, sourced writing." : lang === "pt-br" ? "Escrita honesta e referenciada." : lang === "nl" ? "Eerlijk, gebronneerd schrijven." : "Une écriture honnête, sourcée."}</h2>
-        <p class="stats-section__sub">{lang === "en" ? "Our editorial process keeps every article accountable — checking sources, cutting filler, and respecting the reader's time so you can focus on what actually helps you improve." : lang === "pt-br" ? "Nosso processo editorial mantém cada artigo responsável — verificando fontes, cortando enrolação e respeitando o tempo do leitor para você focar no que realmente ajuda a melhorar." : lang === "nl" ? "Ons redactionele proces houdt elk artikel verantwoordelijk — bronnen controleren, opvulling schrappen en de tijd van de lezer respecteren, zodat jij je kunt richten op wat je echt vooruit helpt." : "Notre processus éditorial tient chaque article responsable : sources vérifiées, remplissage coupé, temps du lecteur respecté — pour se concentrer sur ce qui fait vraiment progresser."}</p>
+        <p class="stats-section__sub">{lang === "en" ? "Our editorial process keeps every article accountable: checking sources, cutting filler, and respecting the reader's time so you can focus on what actually helps you improve." : lang === "pt-br" ? "Nosso processo editorial mantém cada artigo responsável: verificando fontes, cortando enrolação e respeitando o tempo do leitor para você focar no que realmente ajuda a melhorar." : lang === "nl" ? "Ons redactionele proces houdt elk artikel verantwoordelijk: bronnen controleren, opvulling schrappen en de tijd van de lezer respecteren, zodat jij je kunt richten op wat je echt vooruit helpt." : "Notre processus éditorial tient chaque article responsable : sources vérifiées, remplissage coupé, temps du lecteur respecté, pour se concentrer sur ce qui fait vraiment progresser."}</p>
       </div>
 
       <div class="stats-grid" aria-label="Repères éditoriaux">
-        <div class="stat-tile">
+        <div class="stat-tile stat-tile--wide stat-tile--a">
           <span class="stat-tile__value">{totalPosts}+</span>
           <span class="stat-tile__label">{lang === "en" ? "Analyses published" : lang === "pt-br" ? "Análises publicadas" : lang === "nl" ? "Analyses gepubliceerd" : "Analyses publiées"}</span>
         </div>
-        <div class="stat-tile">
+        <div class="stat-tile stat-tile--wide stat-tile--b">
           <span class="stat-tile__value">2 / {lang === "en" ? "week" : lang === "pt-br" ? "sem." : lang === "nl" ? "week" : "sem."}</span>
           <span class="stat-tile__label">{lang === "en" ? "Publishing rhythm" : lang === "pt-br" ? "Ritmo de publicação" : lang === "nl" ? "Publicatieritme" : "Rythme de publication"}</span>
         </div>
-        <div class="stat-tile stat-tile--photo">
+        <div class="stat-tile stat-tile--c">
           <span class="stat-tile__value">100%</span>
           <span class="stat-tile__label">{lang === "en" ? "Sources cited" : lang === "pt-br" ? "Fontes citadas" : lang === "nl" ? "Bronnen vermeld" : "Sources citées"}</span>
         </div>
-        <div class="stat-tile">
+        <div class="stat-tile stat-tile--photo" aria-hidden="true"></div>
+        <div class="stat-tile stat-tile--e">
           <span class="stat-tile__value">0</span>
           <span class="stat-tile__label">Clickbait</span>
         </div>
@@ -284,7 +285,7 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
           </li>
           <li>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>{lang === "en" ? "Two articles a week — not one more, not one less" : lang === "pt-br" ? "Dois artigos por semana — nem mais, nem menos" : lang === "nl" ? "Twee artikelen per week — niet meer, niet minder" : "Deux articles par semaine, pas un de plus"}</span>
+            <span>{lang === "en" ? "Two articles a week, not one more, not one less" : lang === "pt-br" ? "Dois artigos por semana, nem mais, nem menos" : lang === "nl" ? "Twee artikelen per week, niet meer, niet minder" : "Deux articles par semaine, pas un de plus"}</span>
           </li>
         </ul>
       </div>
@@ -292,7 +293,7 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
         <div class="promo-card promo-card--source">
           <span class="promo-card__eyebrow">{lang === "en" ? "Cited source" : lang === "pt-br" ? "Fonte citada" : lang === "nl" ? "Geciteerde bron" : "Source citée"}</span>
           <p class="promo-card__quote">“Mindfulness practice leads to increases in regional brain gray matter density.”</p>
-          <span class="promo-card__cite">Hölzel et al., 2011 — Psychiatry Research</span>
+          <span class="promo-card__cite">Hölzel et al., 2011, Psychiatry Research</span>
         </div>
       </div>
     </div>
@@ -561,28 +562,41 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     margin: 0;
   }
 
+  /* Grille asymétrique copiée du modèle : 2 grandes cartes en haut,
+     puis carte étroite | photo pure (sans donnée) | carte étroite. */
   .stats-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a a b b"
+      "c d d e";
     gap: 1rem;
   }
+
+  .stat-tile--a { grid-area: a; }
+  .stat-tile--b { grid-area: b; }
+  .stat-tile--c { grid-area: c; }
+  .stat-tile--photo { grid-area: d; }
+  .stat-tile--e { grid-area: e; }
 
   .stat-tile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-    min-height: 8rem;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 9rem;
     padding: 1.5rem 1.6rem;
     border-radius: var(--radius-lg);
     background: var(--surface);
     border: 1px solid var(--border-soft);
   }
 
+  .stat-tile--wide { min-height: 10.5rem; }
+
   .stat-tile__value {
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
     color: var(--text-main);
     letter-spacing: -0.02em;
   }
@@ -592,32 +606,20 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     color: var(--text-dim);
   }
 
-  /* Carte décorative (équivalent de la photo de dune du modèle) :
-     motif damier en dégradé, sans dépendre d'une image importée. */
+  /* Carte purement décorative (équivalent de la photo de dune du
+     modèle) : aucune donnée dessus, motif damier en dégradé plutôt
+     qu'une image importée. */
   .stat-tile--photo {
     position: relative;
     overflow: clip;
     background:
       repeating-conic-gradient(
-        color-mix(in srgb, var(--green) 22%, var(--surface)) 0% 25%,
+        color-mix(in srgb, var(--green) 24%, var(--surface)) 0% 25%,
         var(--surface) 0% 50%
       )
       0 0 / 2.5rem 2.5rem;
     border-color: color-mix(in srgb, var(--green) 30%, var(--border-soft));
   }
-  .stat-tile--photo::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 55%, transparent), var(--bg) 96%);
-  }
-  .stat-tile--photo .stat-tile__value,
-  .stat-tile--photo .stat-tile__label {
-    position: relative;
-    z-index: 1;
-  }
-  .stat-tile--photo .stat-tile__value { color: #fff; }
-  .stat-tile--photo .stat-tile__label { color: rgba(255,255,255,0.75); }
 
   @media (max-width: 760px) {
     .stats-section__inner {
@@ -626,8 +628,17 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     }
   }
 
-  @media (max-width: 480px) {
-    .stats-grid { grid-template-columns: 1fr; }
+  @media (max-width: 560px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+    }
+    .stat-tile--photo { min-height: 7rem; }
   }
 
   /* ════════════════════════════════════════════
