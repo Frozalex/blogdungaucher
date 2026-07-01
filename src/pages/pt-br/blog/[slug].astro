@@ -423,7 +423,7 @@ const structuredData = [
     grid-template-columns: 3rem minmax(0, 1fr);
     gap: 0 2.5rem;
     align-items: start;
-    max-width: 56rem;
+    max-width: 62rem;
     margin-inline: auto;
   }
   .article-share-sidebar { grid-column: 1; grid-row: 1; }
@@ -462,7 +462,7 @@ const structuredData = [
   }
   .article-body :global(h3) { margin: 1.4rem 0 0.5rem; font-size: 1.18rem; color: var(--text-main); }
   .article-body :global(p),
-  .article-body :global(li) { color: var(--text-muted); line-height: 1.75; }
+  .article-body :global(li) { color: var(--text-muted); line-height: 1.75; font-size: clamp(17px, 0.95vw + 13px, 19px); }
   .article-body :global(p:first-of-type)::first-letter {
     font-family: var(--font-serif); font-style: italic; font-weight: 500;
     font-size: 3.4em; line-height: 0.9; float: left; padding: 0.22rem 0.6rem 0 0; color: var(--c);
