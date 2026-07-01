@@ -122,10 +122,6 @@ const structuredData = [
   omitEnDeAlternateLinks={grandOralOnly}
 >
   <article class="article-page" style={`--c:${category.accent}`} data-pagefind-meta={`accent:${category.accent}`}>
-    <div class="reading-progress" aria-hidden="true">
-      <span id="reading-progress-fill"></span>
-    </div>
-
     {/* Fil d'Ariane fin au-dessus du hero */}
     <div class="container">
       <nav class="hero-breadcrumb" aria-label="Fil d'Ariane">
@@ -262,11 +258,11 @@ const structuredData = [
 
         <AdBanner format="inline" compact={true} />
 
-        {faqs.length > 0 && <FAQ items={faqs} lang="fr" />}
-
         {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
           <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
         )}
+
+        {faqs.length > 0 && <FAQ items={faqs} lang="fr" />}
 
         <Comments lang="fr" postId={postUrl} />
         <TextHighlight lang="fr" />
@@ -478,37 +474,6 @@ const structuredData = [
   /* Tags sous le hero */
   .hero-tags {
     margin-top: 1.5rem;
-  }
-
-  /* Rail vertical aligné avec le bord droit du container article (max-width 1280px).
-     Sur écrans larges (> 1280px), le rail suit le container plutôt que le bord
-     du viewport : il reste donc visuellement lié à la zone de lecture.
-     Sur écrans étroits, fallback à 0.65rem du bord viewport.
-     Caché en mobile (cf. media query plus bas). */
-  .reading-progress {
-    position: fixed;
-    top: calc(var(--navbar-h) + 2rem);
-    right: max(0.65rem, calc(50vw - 640px - 1rem));
-    bottom: 2rem;
-    z-index: 30;
-    width: 3px;
-    background: color-mix(in srgb, var(--border-soft) 70%, transparent);
-    border-radius: 3px;
-    overflow: hidden;
-    pointer-events: none;
-    opacity: 0.55;
-    transition: opacity 220ms ease;
-  }
-  .reading-progress:hover { opacity: 1; }
-  .reading-progress span {
-    position: absolute;
-    inset: 0 0 auto 0;
-    display: block;
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(180deg, var(--c), color-mix(in srgb, var(--c) 55%, #fff));
-    transition: height 120ms linear;
-    border-radius: 3px;
   }
 
   .article-layout {
@@ -866,7 +831,6 @@ const structuredData = [
     .article-share-sidebar { display: none; }
     .article-layout { grid-template-columns: 1fr; }
     .article-main { grid-column: 1; }
-    .reading-progress { display : none; }
   }
 
   @media (max-width: 560px) {
@@ -882,8 +846,6 @@ const structuredData = [
     articleCleanup?.();
 
     const articleBody = document.querySelector(".article-body");
-    const articleHero = document.querySelector(".article-hero");
-    const progressFill = document.getElementById("reading-progress-fill");
     if (!articleBody) return;
 
     articleBody
@@ -892,21 +854,6 @@ const structuredData = [
         link.target = "_blank";
         link.rel = "noopener noreferrer";
       });
-
-    const onScroll = () => {
-      if (!progressFill) return;
-      const start = articleHero ? articleHero.offsetTop : articleBody.offsetTop;
-      const end = articleBody.offsetTop + articleBody.offsetHeight - window.innerHeight * 0.4;
-      const range = Math.max(end - start, 1);
-      const value = (window.scrollY - start) / range;
-      const clamped = Math.min(1, Math.max(0, value));
-      // Rail vertical à droite : on anime la hauteur, plus la largeur.
-      progressFill.style.height = `${(clamped * 100).toFixed(2)}%`;
-    };
-
-    window.addEventListener("scroll", onScroll, { passive : true });
-    window.addEventListener("resize", onScroll);
-    onScroll();
 
     // ── Carrousel "Pour vous" ──
     const track = document.querySelector("[data-rc-track]");
@@ -933,8 +880,6 @@ const structuredData = [
     }
 
     articleCleanup = () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
       if (track && onTrackScroll) {
         track.removeEventListener("scroll", onTrackScroll);
         window.removeEventListener("resize", onTrackScroll);

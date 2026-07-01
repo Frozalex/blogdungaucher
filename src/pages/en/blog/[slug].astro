@@ -169,10 +169,6 @@ const structuredData = [
   tags={post.data.tags}
 >
   <article class="article-page" style={`--c:${category.accent}`}>
-    <div class="reading-progress" aria-hidden="true">
-      <span id="reading-progress-fill"></span>
-    </div>
-
     {/* Thin breadcrumb above the hero */}
     <div class="container">
       <nav class="hero-breadcrumb" aria-label="Breadcrumb">
@@ -295,11 +291,11 @@ const structuredData = [
 
         <AdBanner format="inline" compact={true} />
 
-        {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="en" />}
-
         {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
           <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
         )}
+
+        {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="en" />}
 
         <Comments lang="en" />
         <TextHighlight lang="en" />
@@ -355,37 +351,6 @@ const structuredData = [
     margin-bottom: 1.5rem;
   }
   .translation-notice svg { flex-shrink: 0; margin-top: 0.1rem; color: var(--green); }
-
-  /* Rail vertical aligné avec le bord droit du container article (max-width 1280px).
-     Cf. version FR pour le raisonnement détaillé. */
-  .reading-progress {
-    position: fixed;
-    top: calc(var(--navbar-h) + 2rem);
-    right: max(0.65rem, calc(50vw - 640px - 1rem));
-    bottom: 2rem;
-    width: 3px;
-    z-index: 30;
-    background: color-mix(in srgb, var(--border-soft) 70%, transparent);
-    border-radius: 3px;
-    overflow: hidden;
-    pointer-events: none;
-    opacity: 0.55;
-    transition: opacity 220ms ease;
-  }
-  .reading-progress:hover { opacity: 1; }
-  #reading-progress-fill {
-    position: absolute;
-    inset: 0 0 auto 0;
-    display: block;
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(180deg, var(--c, var(--green)), color-mix(in srgb, var(--c, var(--green)) 55%, #fff));
-    transition: height 120ms linear;
-    border-radius: 3px;
-  }
-  @media (max-width: 900px) {
-    .reading-progress { display: none; }
-  }
 
   .article-page { padding: 0 0 2rem; }
 
@@ -669,7 +634,6 @@ const structuredData = [
     .article-share-sidebar { display: none; }
     .article-layout { grid-template-columns: 1fr; }
     .article-main { grid-column: 1; }
-    .reading-progress { display: none; }
   }
 
   @media (max-width: 560px) {
@@ -679,24 +643,6 @@ const structuredData = [
 </style>
 
 <script>
-  function initReadingProgress() {
-    const fill = document.getElementById("reading-progress-fill");
-    const body = document.querySelector(".article-body") as HTMLElement | null;
-    if (!fill || !body) return;
-
-    function update() {
-      const rect  = body!.getBoundingClientRect();
-      const total = body!.offsetHeight;
-      const read  = Math.max(0, -rect.top);
-      const pct   = Math.min(100, (read / total) * 100);
-      // Rail vertical à droite : on anime la hauteur.
-      fill.style.height = `${pct}%`;
-    }
-
-    window.addEventListener("scroll", update, { passive: true });
-    update();
-  }
-
   function initRelatedCarousel() {
     const track = document.querySelector("[data-rc-track]") as HTMLElement | null;
     const prevBtn = document.querySelector("[data-rc-prev]") as HTMLButtonElement | null;
@@ -719,6 +665,5 @@ const structuredData = [
     sync();
   }
 
-  document.addEventListener("astro:page-load", initReadingProgress);
   document.addEventListener("astro:page-load", initRelatedCarousel);
 </script>

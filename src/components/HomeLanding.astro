@@ -219,17 +219,57 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
   <!-- ════════════════════════════════════════════
        RUBRIQUES — pillar grid (compact, horizontal)
   ════════════════════════════════════════════ -->
-  <section class="pillars" id={sectionsId}>
+  <section class="pillars" id={sectionsId} aria-labelledby="pillars-heading">
     <div class="container">
-      <div class="pillar-strip reveal-group">
+      <div class="pillars__head">
+        <span class="eyebrow">{lang === "en" ? "(Sections)" : lang === "pt-br" ? "(Seções)" : lang === "nl" ? "(Rubrieken)" : "(Rubriques)"}</span>
+        <h2 id="pillars-heading" class="pillars__title">{lang === "en" ? "Four angles to explore the game" : lang === "pt-br" ? "Quatro ângulos para explorar o jogo" : lang === "nl" ? "Vier invalshoeken om het spel te verkennen" : "Quatre angles pour explorer le jeu"}</h2>
+      </div>
+
+      <div class="pillars__grid reveal-group">
         {categorySlugs.filter((slug) => lang === "fr" || slug !== "grand-oral").map((slug) => {
           const cat = categoryMap[slug];
           const href = lang === "fr" ? cat.href : swapLangPrefix(cat.href, lang);
           const count = postsByCategory[slug] ?? 0;
           return (
-            <a href={href} class="pillar-chip" style={`--p:${cat.accent};`}>
-              <span class="pillar-chip__label">{cat.shortLabel}</span>
-              {count > 0 && <span class="pillar-chip__count">{count}</span>}
+            <a href={href} class="feature-card" style={`--fc:${cat.accent};`}>
+              <span class="feature-card__icon">
+                {slug === "science" && (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/>
+                    <ellipse cx="12" cy="12" rx="9" ry="3.8"/>
+                    <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(60 12 12)"/>
+                    <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(120 12 12)"/>
+                  </svg>
+                )}
+                {slug === "esprit" && (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="8.2"/>
+                    <circle cx="12" cy="12" r="4.6"/>
+                    <circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/>
+                  </svg>
+                )}
+                {slug === "societe" && (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M17 20v-1.5a4 4 0 0 0-4-4h-2a4 4 0 0 0-4 4V20"/>
+                    <circle cx="12" cy="8.2" r="3.2"/>
+                    <path d="M21.5 20v-1.2a3.6 3.6 0 0 0-2.5-3.4"/>
+                    <path d="M2.5 20v-1.2a3.6 3.6 0 0 1 2.5-3.4"/>
+                  </svg>
+                )}
+                {slug === "grand-oral" && (
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 9.5 12 4.5 2 9.5l10 5 10-5Z"/>
+                    <path d="M6 11.8v4.3c0 1.5 2.7 3.1 6 3.1s6-1.6 6-3.1v-4.3"/>
+                  </svg>
+                )}
+              </span>
+              <h3 class="feature-card__title">{cat.shortLabel}</h3>
+              <p class="feature-card__text">{cat.tagline}</p>
+              <span class="feature-card__meta">
+                <span>{count > 0 ? articleCountLabel(count) : (lang === "en" ? "Explore" : lang === "pt-br" ? "Explorar" : lang === "nl" ? "Verkennen" : "Explorer")}</span>
+                <svg class="feature-card__arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+              </span>
             </a>
           );
         })}
@@ -348,13 +388,15 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
   .hero__inner {
     position: relative;
     z-index: 1;
-    max-width: 60rem;
+    max-width: 44rem;
+    margin-inline: auto;
+    text-align: center;
   }
 
   .hero__text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 0.6rem;
   }
 
@@ -390,6 +432,7 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
   .hero__actions {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.65rem;
     margin-top: 0.75rem;
   }
@@ -652,50 +695,101 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
      RUBRIQUES — strip compact
   ════════════════════════════════════════════ */
   .pillars {
-    padding: 2.5rem 0;
+    padding: 3.5rem 0;
     border-bottom: 1px solid var(--border-soft);
   }
 
-  .pillar-strip {
+  .pillars__head {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 34rem;
+    margin-bottom: 2rem;
   }
 
-  .pillar-chip {
+  .pillars__title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+    margin: 0;
+  }
+
+  .pillars__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.1rem;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 1.6rem 1.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    text-decoration: none;
+    transition: transform 220ms var(--ease-out), border-color 220ms ease, box-shadow 220ms ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--fc) 45%, var(--border-soft));
+    box-shadow: var(--shadow-md);
+  }
+
+  .feature-card__icon {
     display: inline-flex;
     align-items: center;
-    gap: 0.55rem;
-    padding: 0.55rem 1.1rem;
-    border-radius: var(--radius-pill);
-    border: 1px solid color-mix(in srgb, var(--p) 30%, var(--border-soft));
-    background: color-mix(in srgb, var(--p) 8%, var(--surface));
-    color: var(--text-main);
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.85rem;
+    background: color-mix(in srgb, var(--fc) 16%, var(--surface));
+    color: var(--fc);
+  }
+
+  .feature-card__title {
     font-family: var(--font-display);
-    font-size: 0.82rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0;
+  }
+
+  .feature-card__text {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin: 0;
+    flex: 1;
+  }
+
+  .feature-card__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.78rem;
     font-weight: 600;
-    transition: transform 200ms var(--ease-spring), background 180ms ease, border-color 180ms ease;
+    color: var(--fc);
+    margin-top: 0.2rem;
   }
 
-  .pillar-chip:hover {
-    transform: translateY(-2px);
-    background: color-mix(in srgb, var(--p) 16%, var(--surface));
-    border-color: color-mix(in srgb, var(--p) 55%, var(--border-soft));
-    color: var(--p);
+  .feature-card__arrow {
+    transition: transform 200ms var(--ease-spring);
+  }
+  .feature-card:hover .feature-card__arrow {
+    transform: translateX(3px);
   }
 
-  .pillar-chip__label { color: inherit; }
+  @media (max-width: 900px) {
+    .pillars__grid { grid-template-columns: repeat(2, 1fr); }
+  }
 
-  .pillar-chip__count {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 0.75rem;
-    color: var(--p);
-    background: color-mix(in srgb, var(--p) 12%, var(--surface));
-    border: 1px solid color-mix(in srgb, var(--p) 22%, transparent);
-    border-radius: var(--radius-pill);
-    padding: 0.05rem 0.45rem;
+  @media (max-width: 560px) {
+    .pillars__grid { grid-template-columns: 1fr; }
   }
 
   /* ════════════════════════════════════════════
