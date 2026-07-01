@@ -278,6 +278,79 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
   </section>
 
   <!-- ════════════════════════════════════════════
+       PROMO SPLIT A — texte + checklist | visuel
+       (rythme repris de paynexus-template : sections alternées
+       texte/checklist + carte illustrative, adaptées à notre contenu)
+  ════════════════════════════════════════════ -->
+  <section class="promo-split" aria-labelledby="promo-a-heading">
+    <div class="container promo-split__inner">
+      <div class="promo-split__text">
+        <span class="eyebrow">{lang === "en" ? "(Method)" : lang === "pt-br" ? "(Método)" : lang === "nl" ? "(Methode)" : "(Méthode)"}</span>
+        <h2 id="promo-a-heading" class="promo-split__title">{lang === "en" ? "A method, not an algorithm" : lang === "pt-br" ? "Um método, não um algoritmo" : lang === "nl" ? "Een methode, geen algoritme" : "Une méthode, pas un algorithme"}</h2>
+        <ul class="promo-checklist">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>{lang === "en" ? "Every scientific claim is sourced and dated" : lang === "pt-br" ? "Toda afirmação científica é referenciada e datada" : lang === "nl" ? "Elke wetenschappelijke claim is gebronneerd en gedateerd" : "Chaque affirmation scientifique est sourcée et datée"}</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>{lang === "en" ? "No content generated just to fill a calendar" : lang === "pt-br" ? "Nenhum conteúdo gerado só para preencher um calendário" : lang === "nl" ? "Geen content gegenereerd om een kalender te vullen" : "Aucun contenu généré juste pour remplir un calendrier"}</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>{lang === "en" ? "Two articles a week — not one more, not one less" : lang === "pt-br" ? "Dois artigos por semana — nem mais, nem menos" : lang === "nl" ? "Twee artikelen per week — niet meer, niet minder" : "Deux articles par semaine, pas un de plus"}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="promo-split__visual" aria-hidden="true">
+        <div class="promo-card promo-card--source">
+          <span class="promo-card__eyebrow">{lang === "en" ? "Cited source" : lang === "pt-br" ? "Fonte citada" : lang === "nl" ? "Geciteerde bron" : "Source citée"}</span>
+          <p class="promo-card__quote">“Mindfulness practice leads to increases in regional brain gray matter density.”</p>
+          <span class="promo-card__cite">Hölzel et al., 2011 — Psychiatry Research</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       PROMO SPLIT B — visuel | texte + checklist (sens inversé)
+  ════════════════════════════════════════════ -->
+  <section class="promo-split promo-split--reverse" aria-labelledby="promo-b-heading">
+    <div class="container promo-split__inner">
+      <div class="promo-split__text">
+        <span class="eyebrow">{lang === "en" ? "(Reading experience)" : lang === "pt-br" ? "(Experiência de leitura)" : lang === "nl" ? "(Leeservaring)" : "(Expérience de lecture)"}</span>
+        <h2 id="promo-b-heading" class="promo-split__title">{lang === "en" ? "Built so you actually finish reading" : lang === "pt-br" ? "Feito para você terminar de ler" : lang === "nl" ? "Ontworpen om het artikel echt uit te lezen" : "Conçu pour qu'on aille jusqu'au bout"}</h2>
+        <ul class="promo-checklist">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>{lang === "en" ? "Clickable table of contents at the start" : lang === "pt-br" ? "Sumário clicável no início" : lang === "nl" ? "Klikbare inhoudsopgave aan het begin" : "Sommaire cliquable en début d'article"}</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>{lang === "en" ? "Key takeaways before the FAQ, to keep what matters" : lang === "pt-br" ? "O essencial antes do FAQ, para reter o que importa" : lang === "nl" ? "Het essentiële vóór de FAQ, om het belangrijkste te onthouden" : "L'essentiel avant la FAQ, pour retenir ce qui compte"}</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>{lang === "en" ? "Personalized suggestions at the end of each article" : lang === "pt-br" ? "Sugestões personalizadas no fim de cada artigo" : lang === "nl" ? "Persoonlijke suggesties aan het einde van elk artikel" : "Suggestions personnalisées en fin de lecture"}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="promo-split__visual" aria-hidden="true">
+        <div class="promo-card promo-card--stack">
+          <div class="promo-mini-card" style="--pc:#5b9fd4">
+            <span>Science du jeu</span>
+            <strong>Échecs et sommeil</strong>
+          </div>
+          <div class="promo-mini-card promo-mini-card--offset" style="--pc:#f0a050">
+            <span>Esprit compétitif</span>
+            <strong>Le syndrome de l'imposteur</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
        TOUS LES ARTICLES — onglets + recherche + grille (style Appux)
   ════════════════════════════════════════════ -->
   <section class="allposts">
@@ -790,6 +863,160 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
 
   @media (max-width: 560px) {
     .pillars__grid { grid-template-columns: 1fr; }
+  }
+
+  /* ════════════════════════════════════════════
+     PROMO SPLIT — texte/checklist alterné avec un visuel
+  ════════════════════════════════════════════ */
+  .promo-split {
+    padding: 3.5rem 0;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .promo-split__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (min-width: 761px) {
+    .promo-split--reverse .promo-split__text { order: 2; }
+    .promo-split--reverse .promo-split__visual { order: 1; }
+  }
+
+  .promo-split__title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+    margin: 0.4rem 0 1.1rem;
+    line-height: 1.15;
+  }
+
+  .promo-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .promo-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .promo-checklist svg {
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+    color: var(--green);
+  }
+
+  .promo-split__visual {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Carte "source citée" */
+  .promo-card--source {
+    width: min(360px, 100%);
+    padding: 1.75rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-md);
+  }
+
+  .promo-card__eyebrow {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--green);
+    margin-bottom: 0.9rem;
+  }
+
+  .promo-card__quote {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: var(--text-main);
+    margin: 0 0 1rem;
+  }
+
+  .promo-card__cite {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+  }
+
+  /* Pile de mini-cartes d'articles */
+  .promo-card--stack {
+    position: relative;
+    width: min(360px, 100%);
+    height: 13rem;
+  }
+
+  .promo-mini-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14rem;
+    padding: 1.1rem 1.25rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    transform: rotate(-4deg);
+  }
+
+  .promo-mini-card span {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--pc);
+  }
+
+  .promo-mini-card strong {
+    font-family: var(--font-display);
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .promo-mini-card--offset {
+    top: 4.5rem;
+    left: 6.5rem;
+    transform: rotate(3deg);
+    box-shadow: var(--shadow-md), 0 14px 28px rgba(0,0,0,0.28);
+  }
+
+  @media (max-width: 760px) {
+    .promo-split { padding: 2.5rem 0; }
+    .promo-split__inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .promo-split--reverse .promo-split__text,
+    .promo-split--reverse .promo-split__visual {
+      order: initial;
+    }
+    .promo-card--stack { height: 11.5rem; margin: 0 auto; }
+    .promo-mini-card { width: 12rem; }
+    .promo-mini-card--offset { left: 4.5rem; top: 3.75rem; }
   }
 
   /* ════════════════════════════════════════════
