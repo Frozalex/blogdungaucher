@@ -6,6 +6,7 @@ import "../styles/global.css";
 // pages/{fr,en}/blog/[slug].astro et pages/fr/dissertations/[slug].astro.
 import { ClientRouter } from "astro:transitions";
 import Navbar from "../components/Navbar.astro";
+import SearchOverlay from "../components/SearchOverlay.astro";
 import Footer from "../components/Footer.astro";
 import BackToTop from "../components/BackToTop.astro";
 import CookieConsent from "../components/CookieConsent.astro";
@@ -530,6 +531,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     </main>
     <Footer lang={lang} />
     <CookieConsent />
+    <SearchOverlay lang={lang} />
     <BackToTop />
 
     <!-- ── Service Worker + réapplication préférences après View Transitions ── -->

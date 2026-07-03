@@ -1,5 +1,6 @@
 ---
-import { navigationLinks, enNavigationLinks, ptBrNavigationLinks, nlNavigationLinks } from "../data/site";
+import { navigationLinks, enNavigationLinks, ptBrNavigationLinks, nlNavigationLinks, categoryMap, categorySlugs } from "../data/site";
+import { swapLangPrefix } from "../utils/lang-paths";
 import { t, type Lang } from "../i18n/translations";
 
 const { frHref, enHref, ptBrHref, nlHref, lang = "fr" } = Astro.props as {
@@ -83,6 +84,19 @@ const linkKey : Record<string, string> = {
   "/nl/blog/" : "navLinks.blog",
   "/nl/about/" : "navLinks.about",
 };
+
+// Rubriques éditoriales du header (menu déroulant). Grand oral est FR-only → exclu
+// des autres langues (évite les liens 404). Libellés localisés via t(), href par langue.
+const rubriques = categorySlugs
+  .filter((slug) => lang === "fr" || slug !== "grand-oral")
+  .map((slug) => ({
+    slug,
+    label: (t(tLang, `categories.${slug}.label`) as string) || categoryMap[slug].label,
+    href: lang === "fr" ? categoryMap[slug].href : swapLangPrefix(categoryMap[slug].href, lang),
+    accent: categoryMap[slug].accent,
+  }));
+const rubriquesLabel = lang === "en" ? "Sections" : lang === "pt-br" ? "Seções" : lang === "nl" ? "Rubrieken" : "Rubriques";
+const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
 ---
 <header class="navbar" id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"} data-lang-nl-href={nlHref ?? "/nl/"}>
   <div class="container nav-inner">
@@ -102,6 +116,22 @@ const linkKey : Record<string, string> = {
 
     <nav class="nav-desktop" aria-label="Navigation principale">
       <ul class="nav-links">
+        <li class="nav-dropdown" data-nav-dropdown>
+          <button type="button" class={`nav-link nav-dropdown__btn${rubriquesActive ? " active" : ""}`} aria-haspopup="true" aria-expanded="false">
+            {rubriquesLabel}
+            <svg class="nav-dropdown__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <ul class="nav-dropdown__menu" role="menu">
+            {rubriques.map((r) => (
+              <li role="none">
+                <a role="menuitem" href={r.href} class="nav-dropdown__item" style={`--fc:${r.accent}`}>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                  {r.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
         {links.map((link) => (
           <li>
             <a
@@ -118,17 +148,18 @@ const linkKey : Record<string, string> = {
 
     <!-- Boutons icônes : recherche + dark mode + langue -->
     <div class="nav-actions">
-      <a
-        href={lang === "en" ? "/en/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : lang === "nl" ? "/nl/recherche/" : "/fr/recherche/"}
+      <button
+        type="button"
         class="icon-btn search-btn"
+        data-search-trigger
         aria-label="Rechercher un article"
-        title="Rechercher"
+        title="Rechercher (/)"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="11" cy="11" r="8"/>
           <path d="m21 21-4.35-4.35"/>
         </svg>
-      </a>
+      </button>
       <button
         id="dark-toggle"
         class="icon-btn"
@@ -208,6 +239,15 @@ const linkKey : Record<string, string> = {
             data-t={linkKey[link.href] ?? ""}
           >{link.label}</a>
         ))}
+        <span class="mobile-sublabel">{rubriquesLabel}</span>
+        <div class="mobile-rubriques">
+          {rubriques.map((r) => (
+            <a href={r.href} class="mobile-rubrique" style={`--fc:${r.accent}`}>
+              <span class="nav-dropdown__dot" aria-hidden="true"></span>
+              {r.label}
+            </a>
+          ))}
+        </div>
         <a
           href={lang === "en" ? "/en/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : lang === "nl" ? "/nl/recherche/" : "/fr/recherche/"}
           class="mobile-link mobile-search-link"
@@ -385,6 +425,90 @@ const linkKey : Record<string, string> = {
     background: color-mix(in srgb, var(--green-light) 72%, transparent);
   }
   .nav-link.active::after { transform : scaleX(1); }
+
+  /* ── Menu déroulant « Rubriques » ── */
+  .nav-dropdown { position: relative; }
+  .nav-dropdown__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.28rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+  }
+  .nav-dropdown__chevron {
+    opacity: 0.65;
+    transition: transform 200ms var(--ease-out);
+  }
+  .nav-dropdown__btn[aria-expanded="true"] .nav-dropdown__chevron { transform: rotate(180deg); }
+
+  .nav-dropdown__menu {
+    position: absolute;
+    top: calc(100% + 0.4rem);
+    left: 0;
+    z-index: 20;
+    min-width: 13rem;
+    margin: 0;
+    padding: 0.35rem;
+    list-style: none;
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 160ms ease, transform 160ms var(--ease-out), visibility 160ms;
+  }
+  .nav-dropdown.is-open .nav-dropdown__menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .nav-dropdown__item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0.65rem;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background 140ms ease, color 140ms ease;
+  }
+  .nav-dropdown__item:hover {
+    background: color-mix(in srgb, var(--fc) 12%, var(--surface));
+    color: var(--text-main);
+  }
+  .nav-dropdown__dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--fc);
+    flex-shrink: 0;
+  }
+
+  /* Rubriques dans le menu mobile */
+  .mobile-sublabel {
+    margin: 0.55rem 0 0.1rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    font-weight: 700;
+  }
+  .mobile-rubriques { display: grid; gap: 0.05rem; }
+  .mobile-rubrique {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.55rem 0.5rem;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+  .mobile-rubrique:hover { background: var(--bg-warm); color: var(--text-main); }
 
   /* ── Boutons icônes ── */
   .nav-actions {
@@ -789,22 +913,6 @@ const linkKey : Record<string, string> = {
       }
     }, { signal });
 
-    /* Raccourci global "/" : depuis n'importe quelle page, naviguer vers la recherche.
-       Sur /recherche/, c'est le script de la page qui focus l'input directement. */
-    document.addEventListener("keydown", (e) => {
-      if (e.key !== "/") return;
-      const target = e.target as HTMLElement | null;
-      if (!target) return;
-      const tag = target.tagName;
-      if (tag === "INPUT" || tag === "TEXTAREA" || target.isContentEditable) return;
-      // Si déjà sur la page recherche, on laisse le script local prendre la main.
-      if (/\/recherche\/?$/.test(window.location.pathname)) return;
-      e.preventDefault();
-      const lang = window.__lang || "fr";
-      const path = lang === "en" ? "/en/recherche/" : lang === "pt-br" ? "/pt-br/recherche/" : lang === "nl" ? "/nl/recherche/" : "/fr/recherche/";
-      window.location.href = path;
-    }, { signal });
-
     menuLinks?.forEach((link) => {
       link.addEventListener("click", () => {
         if (!menu?.classList.contains("is-open")) return;
@@ -873,6 +981,32 @@ const linkKey : Record<string, string> = {
       if (e.key === "Escape" && langBtn?.getAttribute("aria-expanded") === "true") {
         closeLangMenu();
         langBtn.focus();
+      }
+    }, { signal });
+
+    /* ── Menu déroulant « Rubriques » (clic + clavier + clic-extérieur) ── */
+    const rubDropdown = navbar.querySelector("[data-nav-dropdown]");
+    const rubBtn = rubDropdown?.querySelector(".nav-dropdown__btn") as HTMLButtonElement | null;
+
+    function closeRubMenu() {
+      rubDropdown?.classList.remove("is-open");
+      rubBtn?.setAttribute("aria-expanded", "false");
+    }
+
+    rubBtn?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = rubDropdown!.classList.toggle("is-open");
+      rubBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }, { signal });
+
+    document.addEventListener("click", (e) => {
+      if (rubDropdown && !rubDropdown.contains(e.target as Node)) closeRubMenu();
+    }, { signal });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && rubDropdown?.classList.contains("is-open")) {
+        closeRubMenu();
+        rubBtn?.focus();
       }
     }, { signal });
   }

@@ -97,7 +97,8 @@ const requiredNote = lang === "en"
 
       <div class="footer-col-group">
         <h2 class="footer-col-label" data-t="footer.sectionsTitle">{tt("footer.sectionsTitle", "Rubriques")}</h2>
-        {categorySlugs.map((cat) => (
+        {/* Grand oral est FR-only : on l'exclut des rubriques EN/PT-BR/NL (évite les liens 404). */}
+        {categorySlugs.filter((cat) => lang === "fr" || cat !== "grand-oral").map((cat) => (
           <a
             href={
               lang === "en" ? `/en/${cat}/`
