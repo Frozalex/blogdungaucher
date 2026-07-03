@@ -55,14 +55,13 @@ const fc = formCopy[lang] ?? formCopy.fr;
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
         const lang = (document.documentElement.lang || "fr");
-        const isEn = lang === "en";
-        const T = {
-          loading:    isEn ? "Subscribing…" : "Inscription…",
-          success:    lang === "en" ? "You’re subscribed!" : "Inscription confirmée !",
-          errorEmail: lang === "en" ? "Invalid email address." : "Adresse email invalide.",
-          error:      lang === "en" ? "An error occurred. Please try again." : "Une erreur s’est produite. Réessaie.",
-          submit:     lang === "en" ? "Subscribe" : "S’inscrire",
+        const MSG = {
+          fr:      { loading: "Inscription…",  success: "Inscription confirmée !", errorEmail: "Adresse email invalide.",      error: "Une erreur s’est produite. Réessaie.",        submit: "S’inscrire" },
+          en:      { loading: "Subscribing…",  success: "You’re subscribed!",      errorEmail: "Invalid email address.",        error: "An error occurred. Please try again.",        submit: "Subscribe" },
+          "pt-br": { loading: "Inscrevendo…",  success: "Inscrição confirmada!",   errorEmail: "Endereço de e-mail inválido.", error: "Ocorreu um erro. Tente novamente.",           submit: "Inscrever-se" },
+          nl:      { loading: "Aanmelden…",    success: "Je bent aangemeld!",      errorEmail: "Ongeldig e-mailadres.",         error: "Er is een fout opgetreden. Probeer opnieuw.", submit: "Aanmelden" },
         };
+        const T = MSG[lang] || MSG.fr;
 
         const email = (form.querySelector<HTMLInputElement>('[name="email"]')!).value.trim();
 
