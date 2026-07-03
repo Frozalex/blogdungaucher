@@ -1,10 +1,18 @@
 ---
+const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
+const bttCopy = {
+  fr: { aria: "Retour en haut de page", title: "Retour en haut", label: "Haut" },
+  en: { aria: "Back to top", title: "Back to top", label: "Top" },
+  "pt-br": { aria: "Voltar ao topo", title: "Voltar ao topo", label: "Topo" },
+  nl: { aria: "Terug naar boven", title: "Naar boven", label: "Boven" },
+} as const;
+const b = bttCopy[lang] ?? bttCopy.fr;
 ---
-<button id="back-to-top" class="btt" aria-label="Retour en haut de page" title="Retour en haut">
+<button id="back-to-top" class="btt" aria-label={b.aria} title={b.title}>
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
     <path d="M12 19V5"/><path d="M5 12l7-7 7 7"/>
   </svg>
-  <span class="btt-label">Haut</span>
+  <span class="btt-label">{b.label}</span>
 </button>
 
 <style>

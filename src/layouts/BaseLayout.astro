@@ -281,15 +281,22 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
 
         window.__applyLang = applyLang;
 
-        // Pages serveur en EN/PT-BR/NL : on respecte la langue serveur, pas le localStorage.
-        var serverLang = document.documentElement.dataset.serverLang || "fr";
-        var storedLang =
-          serverLang === "en" || serverLang === "pt-br" || serverLang === "nl"
-            ? serverLang
-            : (localStorage.getItem("blogdungaucher.lang") || "fr");
-        window.__lang = storedLang;
-        // applyLang() ne gère runtime que fr/en. Pour pt-br/nl, le rendu serveur fait foi.
-        if (storedLang === "en") applyLang("en");
+        // Langue dérivée de l'URL : source de vérité sur ce site statique multilingue.
+        // Fiable et jamais périmée (contrairement à un attribut swappé ou au localStorage)
+        // → aucun retour intempestif au FR après une View Transition.
+        function langFromPath(path) {
+          if (path === "/en" || path.indexOf("/en/") === 0) return "en";
+          if (path === "/pt-br" || path.indexOf("/pt-br/") === 0) return "pt-br";
+          if (path === "/nl" || path.indexOf("/nl/") === 0) return "nl";
+          return "fr";
+        }
+        window.__langFromPath = langFromPath;
+
+        var pageLang = langFromPath(location.pathname);
+        window.__lang = pageLang;
+        // Le rendu serveur fait déjà foi dans chaque langue ; applyLang ne couvre que le
+        // runtime fr/en, on ne l'invoque donc que pour EN (parité des nœuds [data-t]).
+        if (pageLang === "en") applyLang("en");
       })();
     </script>
     <meta name="google-adsense-account" content="ca-pub-1244325018333025" />
@@ -530,9 +537,9 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
       <slot />
     </main>
     <Footer lang={lang} />
-    <CookieConsent />
+    <CookieConsent lang={lang} />
     <SearchOverlay lang={lang} />
-    <BackToTop />
+    <BackToTop lang={lang} />
 
     <!-- ── Service Worker + réapplication préférences après View Transitions ── -->
     <script>
@@ -541,42 +548,61 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         navigator.serviceWorker.register("/sw.js").catch(() => {});
       }
 
-      // Réappliquer dark mode + langue après chaque transition de page Astro
-      function reapplyPreferences() {
+      // Langue courante dérivée de l'URL (repli si le helper anti-flash manque).
+      function currentLang() {
+        if (typeof window.__langFromPath === "function") {
+          return window.__langFromPath(location.pathname);
+        }
+        const p = location.pathname;
+        if (p === "/en" || p.indexOf("/en/") === 0) return "en";
+        if (p === "/pt-br" || p.indexOf("/pt-br/") === 0) return "pt-br";
+        if (p === "/nl" || p.indexOf("/nl/") === 0) return "nl";
+        return "fr";
+      }
+
+      // Thème + langue réappliqués AVANT la peinture de la nouvelle page
+      // (astro:after-swap) : supprime le flash de thème clair ("film blanc") et tout
+      // retour au FR pendant la View Transition. Le rendu serveur fait foi par langue ;
+      // applyLang ne concerne que le runtime fr/en, donc invoqué uniquement pour EN.
+      function applyThemeAndLang() {
         const theme = localStorage.getItem("blogdungaucher.theme") ||
           (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
         document.documentElement.dataset.theme = theme;
 
-        const serverLang2 = document.documentElement.dataset.serverLang || "fr";
-        const lang =
-          serverLang2 === "en" || serverLang2 === "pt-br" || serverLang2 === "nl"
-            ? serverLang2
-            : (localStorage.getItem("blogdungaucher.lang") || "fr");
+        const lang = currentLang();
         window.__lang = lang;
-        // applyLang() ne gère runtime que fr/en. Pour pt-br/nl, le rendu serveur fait foi.
-        if (typeof window.__applyLang === "function" && (lang === "fr" || lang === "en")) {
-          window.__applyLang(lang);
+        if (lang === "en" && typeof window.__applyLang === "function") {
+          window.__applyLang("en");
         }
+      }
 
-        // Synchroniser le bouton dark mode
+      // Boutons (état dark + code langue) synchronisés une fois la page chargée.
+      function syncNavButtons() {
+        const lang = currentLang();
+        const isDark = (document.documentElement.dataset.theme || "light") === "dark";
+        const dict = (window.__i18n && (window.__i18n[lang] || window.__i18n.fr)) || {};
+
         const btn = document.getElementById("dark-toggle");
         if (btn) {
-          const isDark = theme === "dark";
           btn.setAttribute("aria-pressed", String(isDark));
           btn.setAttribute("aria-label", isDark
-            ? (window.__i18n?.[lang]?.["nav.darkOff"] || "Disable dark mode")
-            : (window.__i18n?.[lang]?.["nav.darkOn"] || "Enable dark mode")
+            ? (dict["nav.darkOff"] || "Disable dark mode")
+            : (dict["nav.darkOn"] || "Enable dark mode")
           );
         }
 
-        // Synchroniser le bouton langue (affiche FR / EN)
+        const shortLabel = lang === "pt-br" ? "PT" : lang === "en" ? "EN" : lang === "nl" ? "NL" : "FR";
         const desktopLangSpan = document.querySelector("#lang-toggle .lang-label");
-        const mobileLangSpan  = document.querySelector("#lang-toggle-mobile .lang-label-mobile");
-        if (desktopLangSpan) desktopLangSpan.textContent = lang.toUpperCase();
-        if (mobileLangSpan)  mobileLangSpan.textContent  = lang.toUpperCase();
+        if (desktopLangSpan) desktopLangSpan.textContent = shortLabel;
       }
 
-      document.addEventListener("astro:page-load", reapplyPreferences);
+      // Avant peinture (transitions) : tue le flash de thème/langue.
+      document.addEventListener("astro:after-swap", applyThemeAndLang);
+      // Après chargement complet (premier rendu + transitions) : re-sync + boutons.
+      document.addEventListener("astro:page-load", function () {
+        applyThemeAndLang();
+        syncNavButtons();
+      });
     </script>
 
     <!-- ── Scroll reveal - re-déclenché à chaque transition de page ── -->

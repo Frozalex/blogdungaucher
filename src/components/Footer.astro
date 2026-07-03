@@ -1,5 +1,4 @@
 ---
-import { categoryMap, categorySlugs } from "../data/site";
 import NewsletterForm from "./NewsletterForm.astro";
 import PushSubscribe from "./PushSubscribe.astro";
 import { t, type Lang } from "../i18n/translations";
@@ -63,7 +62,7 @@ const requiredNote = lang === "en"
       <p class="footer-signup-required">{requiredNote}</p>
 
       <div class="footer-signup-form">
-        <NewsletterForm variant="footer" />
+        <NewsletterForm variant="footer" lang={lang} />
       </div>
 
     </div>
@@ -77,7 +76,7 @@ const requiredNote = lang === "en"
       <p class="footer-tagline" data-t="footer.tagline">
         {tt("footer.tagline", "Un espace éditorial indépendant pour explorer les échecs en profondeur, avec des contenus utiles et actionnables.")}
       </p>
-      <PushSubscribe />
+      <PushSubscribe lang={lang} />
       <a class="footer-contact" href="mailto:contact@blogdungaucher.com" data-t="footer.suggestTopic">
         {tt("footer.suggestTopic", "Proposer un sujet ou poser une question")}
       </a>
@@ -93,22 +92,6 @@ const requiredNote = lang === "en"
         <a href={aboutHref} data-t="footer.editorial">{tt("footer.editorial", "Ligne éditoriale")}</a>
         {lang === "fr" && <a href="/fr/glossaire/">Glossaire</a>}
         {lang === "fr" && <a href="/fr/infographie/">Infographies</a>}
-      </div>
-
-      <div class="footer-col-group">
-        <h2 class="footer-col-label" data-t="footer.sectionsTitle">{tt("footer.sectionsTitle", "Rubriques")}</h2>
-        {/* Grand oral est FR-only : on l'exclut des rubriques EN/PT-BR/NL (évite les liens 404). */}
-        {categorySlugs.filter((cat) => lang === "fr" || cat !== "grand-oral").map((cat) => (
-          <a
-            href={
-              lang === "en" ? `/en/${cat}/`
-              : lang === "pt-br" ? `/pt-br/${cat}/`
-              : lang === "nl" ? `/nl/${cat}/`
-              : categoryMap[cat].href
-            }
-            data-t={`categories.${cat}.label`}
-          >{tt(`categories.${cat}.label`, categoryMap[cat].label)}</a>
-        ))}
       </div>
 
       <div class="footer-col-group">
@@ -311,7 +294,7 @@ const requiredNote = lang === "en"
   /* Navigation droite */
   .footer-nav-col {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem 1rem;
     align-items: start;
   }
@@ -356,7 +339,9 @@ const requiredNote = lang === "en"
     margin: 0;
     border: none;
     background: none;
-    font: inherit;
+    /* font-family seul (pas le raccourci `font`) : sinon font-size retomberait à
+       `inherit` et écraserait le 0.88rem partagé avec les liens voisins. */
+    font-family: inherit;
     cursor: pointer;
     text-align: left;
     text-decoration: underline;

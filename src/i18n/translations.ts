@@ -24,6 +24,7 @@ export const translations = {
       trustTitle: "Confiance",
       legal: "Mentions légales",
       privacy: "Confidentialité",
+      notificationSettings: "Notifications et cookies",
     },
     home: {
       eyebrow: "Éditorial indépendant",
@@ -136,6 +137,7 @@ export const translations = {
       trustTitle: "Trust",
       legal: "Legal notices",
       privacy: "Privacy",
+      notificationSettings: "Notifications & cookies",
     },
     home: {
       eyebrow: "Independent editorial",
@@ -239,6 +241,7 @@ export const translations = {
       trustTitle: "Confiança",
       legal: "Avisos legais",
       privacy: "Privacidade",
+      notificationSettings: "Notificações e cookies",
     },
     home: {
       eyebrow: "Editorial independente",
@@ -341,6 +344,7 @@ export const translations = {
       trustTitle: "Vertrouwen",
       legal: "Juridische vermeldingen",
       privacy: "Privacy",
+      notificationSettings: "Meldingen en cookies",
     },
     home: {
       eyebrow: "Onafhankelijk redactioneel",

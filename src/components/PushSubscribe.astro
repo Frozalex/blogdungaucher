@@ -1,6 +1,15 @@
 ---
+const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
 const VAPID_KEY = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
 const pushEnabled = !!VAPID_KEY;
+
+const pushCopy = {
+  fr: { aria: "Activer les notifications push", off: "Notifications", on: "Notifié ✓", error: "Erreur", titleOn: "Cliquer pour se désabonner", titleOff: "Recevoir une notification à chaque nouvel article" },
+  en: { aria: "Enable push notifications", off: "Notifications", on: "Subscribed ✓", error: "Error", titleOn: "Click to unsubscribe", titleOff: "Get notified for each new article" },
+  "pt-br": { aria: "Ativar notificações push", off: "Notificações", on: "Inscrito ✓", error: "Erro", titleOn: "Clique para cancelar", titleOff: "Receber uma notificação a cada novo artigo" },
+  nl: { aria: "Pushmeldingen inschakelen", off: "Meldingen", on: "Geabonneerd ✓", error: "Fout", titleOn: "Klik om af te melden", titleOff: "Ontvang een melding bij elk nieuw artikel" },
+} as const;
+const p = pushCopy[lang] ?? pushCopy.fr;
 ---
 
 {pushEnabled && (
@@ -9,14 +18,19 @@ const pushEnabled = !!VAPID_KEY;
       type="button"
       id="push-subscribe-btn"
       class="push-btn"
-      aria-label="Activer les notifications push"
+      aria-label={p.aria}
       data-vapid={VAPID_KEY}
+      data-label-on={p.on}
+      data-label-off={p.off}
+      data-label-error={p.error}
+      data-title-on={p.titleOn}
+      data-title-off={p.titleOff}
     >
       <svg class="push-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
         <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
       </svg>
-      <span class="push-label" id="push-label">Notifications</span>
+      <span class="push-label" id="push-label">{p.off}</span>
     </button>
   </div>
 )}
@@ -54,17 +68,24 @@ function initPushSubscribe() {
     }
   }
 
+  // Libellés localisés injectés côté serveur (data-*), repli FR si absents.
+  const T = {
+    on:       btn.dataset.labelOn    || "Notifié ✓",
+    off:      btn.dataset.labelOff   || "Notifications",
+    error:    btn.dataset.labelError || "Erreur",
+    titleOn:  btn.dataset.titleOn    || "Cliquer pour se désabonner",
+    titleOff: btn.dataset.titleOff   || "Recevoir une notification à chaque nouvel article",
+  };
+
   function setState(state) {
     btn.disabled = state === "loading";
     btn.classList.toggle("push-btn--active", state === "on");
     btn.classList.toggle("push-btn--error", state === "error");
-    if (state === "on")      label.textContent = "Notifié ✓";
-    else if (state === "off") label.textContent = "Notifications";
+    if (state === "on")      label.textContent = T.on;
+    else if (state === "off") label.textContent = T.off;
     else if (state === "loading") label.textContent = "…";
-    else if (state === "error")   label.textContent = "Erreur";
-    btn.title = state === "on"
-      ? "Cliquer pour se désabonner"
-      : "Recevoir une notification à chaque nouvel article";
+    else if (state === "error")   label.textContent = T.error;
+    btn.title = state === "on" ? T.titleOn : T.titleOff;
   }
 
   // État initial depuis localStorage

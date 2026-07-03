@@ -1,3 +1,86 @@
+---
+// Localisation côté serveur (le dict runtime ne couvre que fr/en) — même pattern
+// que HomeLanding/NewsletterForm : un objet `copy` par langue.
+const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
+
+const consentCopy = {
+  fr: {
+    brand: "Blog d'un Gaucher",
+    title: "Vos préférences de confidentialité",
+    intro: "Ce site utilise des <strong>cookies</strong> pour mesurer l'audience (Google Analytics) et afficher des publicités (Google AdSense). Les <strong>notifications push</strong> sont indépendantes des cookies et entièrement optionnelles.",
+    acceptAll: "Accepter tout",
+    rejectAll: "Tout refuser",
+    customize: "Personnaliser mes choix",
+    chooseByCategory: "Choisir par catégorie",
+    analyticsName: "Mesure d'audience",
+    analyticsDesc: "Google Analytics : comprendre combien de personnes lisent le blog et quels articles intéressent le plus",
+    adsName: "Publicité",
+    adsDesc: "Google AdSense : permet de financer la création de contenus gratuits",
+    pushName: "Notifications push",
+    pushDesc: "Alerte navigateur à chaque nouvel article (2 par semaine). Le navigateur demandera confirmation. Révocable à tout moment.",
+    save: "Enregistrer mes choix",
+    footerNote: "Modifiable à tout moment via « Notifications et cookies » en bas de page.",
+    privacyLink: "Politique de confidentialité →",
+  },
+  en: {
+    brand: "A Left-Hander's Blog",
+    title: "Your privacy preferences",
+    intro: "This site uses <strong>cookies</strong> to measure audience (Google Analytics) and display ads (Google AdSense). <strong>Push notifications</strong> are independent of cookies and entirely optional.",
+    acceptAll: "Accept all",
+    rejectAll: "Reject all",
+    customize: "Customize my choices",
+    chooseByCategory: "Choose by category",
+    analyticsName: "Audience measurement",
+    analyticsDesc: "Google Analytics: see how many people read the blog and which articles are most popular",
+    adsName: "Advertising",
+    adsDesc: "Google AdSense: helps fund the creation of free content",
+    pushName: "Push notifications",
+    pushDesc: "Browser alert for each new article (2 per week). The browser will ask for confirmation. Revocable at any time.",
+    save: "Save my choices",
+    footerNote: "Changeable anytime via “Notifications & cookies” at the bottom of the page.",
+    privacyLink: "Privacy policy →",
+  },
+  "pt-br": {
+    brand: "Blog de um Canhoto",
+    title: "Suas preferências de privacidade",
+    intro: "Este site usa <strong>cookies</strong> para medir a audiência (Google Analytics) e exibir anúncios (Google AdSense). As <strong>notificações push</strong> são independentes dos cookies e totalmente opcionais.",
+    acceptAll: "Aceitar tudo",
+    rejectAll: "Recusar tudo",
+    customize: "Personalizar minhas escolhas",
+    chooseByCategory: "Escolher por categoria",
+    analyticsName: "Medição de audiência",
+    analyticsDesc: "Google Analytics: entender quantas pessoas leem o blog e quais artigos despertam mais interesse",
+    adsName: "Publicidade",
+    adsDesc: "Google AdSense: ajuda a financiar a criação de conteúdos gratuitos",
+    pushName: "Notificações push",
+    pushDesc: "Alerta do navegador a cada novo artigo (2 por semana). O navegador pedirá confirmação. Revogável a qualquer momento.",
+    save: "Salvar minhas escolhas",
+    footerNote: "Alterável a qualquer momento via « Notificações e cookies » no rodapé da página.",
+    privacyLink: "Política de privacidade →",
+  },
+  nl: {
+    brand: "Blog van een Linkshandige",
+    title: "Je privacyvoorkeuren",
+    intro: "Deze site gebruikt <strong>cookies</strong> om het publiek te meten (Google Analytics) en advertenties te tonen (Google AdSense). <strong>Pushmeldingen</strong> staan los van cookies en zijn volledig optioneel.",
+    acceptAll: "Alles accepteren",
+    rejectAll: "Alles weigeren",
+    customize: "Mijn keuzes aanpassen",
+    chooseByCategory: "Kies per categorie",
+    analyticsName: "Publieksmeting",
+    analyticsDesc: "Google Analytics: zien hoeveel mensen de blog lezen en welke artikelen het populairst zijn",
+    adsName: "Advertenties",
+    adsDesc: "Google AdSense: helpt de creatie van gratis content te financieren",
+    pushName: "Pushmeldingen",
+    pushDesc: "Browsermelding bij elk nieuw artikel (2 per week). De browser vraagt om bevestiging. Op elk moment intrekbaar.",
+    save: "Mijn keuzes opslaan",
+    footerNote: "Altijd aanpasbaar via « Meldingen en cookies » onderaan de pagina.",
+    privacyLink: "Privacybeleid →",
+  },
+} as const;
+const c = consentCopy[lang] ?? consentCopy.fr;
+const privacyHref = lang === "en" ? "/en/politique-confidentialite/" : "/fr/politique-confidentialite/";
+---
+
 <!-- ── Backdrop ──────────────────────────────────────────────── -->
 <div class="consent-backdrop" id="consent-backdrop" hidden aria-hidden="true"></div>
 
@@ -21,27 +104,25 @@
       loading="eager"
       decoding="sync"
     />
-    <span class="consent-site">Blog d'un Gaucher</span>
+    <span class="consent-site">{c.brand}</span>
   </div>
 
-  <h2 class="consent-title" id="consent-title">Vos préférences de confidentialité</h2>
+  <h2 class="consent-title" id="consent-title">{c.title}</h2>
 
-  <p class="consent-text">
-    Ce site utilise des <strong>cookies</strong> pour mesurer l'audience (Google Analytics) et afficher des publicités (Google AdSense). Les <strong>notifications push</strong> sont indépendantes des cookies et entièrement optionnelles.
-  </p>
+  <p class="consent-text" set:html={c.intro}></p>
 
   <div class="consent-quick">
     <button type="button" class="consent-btn consent-btn--primary" id="consent-accept">
-      Accepter tout
+      {c.acceptAll}
     </button>
     <button type="button" class="consent-btn consent-btn--ghost" id="consent-reject">
-      Tout refuser
+      {c.rejectAll}
     </button>
   </div>
 
   <details class="consent-details" id="consent-customize-details">
     <summary class="consent-summary">
-      <span>Personnaliser mes choix</span>
+      <span>{c.customize}</span>
       <svg
         class="consent-chevron"
         width="14" height="14"
@@ -58,43 +139,43 @@
     </summary>
 
     <fieldset class="consent-fieldset">
-      <legend class="consent-fieldset__legend">Choisir par catégorie</legend>
+      <legend class="consent-fieldset__legend">{c.chooseByCategory}</legend>
 
       <label class="consent-option">
         <input type="checkbox" id="cookie-analytics" class="consent-checkbox" />
         <span class="consent-option__body">
-          <strong class="consent-option__name">Mesure d'audience</strong>
-          <span class="consent-option__desc">Google Analytics : comprendre combien de personnes lisent le blog et quels articles intéressent le plus</span>
+          <strong class="consent-option__name">{c.analyticsName}</strong>
+          <span class="consent-option__desc">{c.analyticsDesc}</span>
         </span>
       </label>
 
       <label class="consent-option">
         <input type="checkbox" id="cookie-marketing" class="consent-checkbox" />
         <span class="consent-option__body">
-          <strong class="consent-option__name">Publicité</strong>
-          <span class="consent-option__desc">Google AdSense : permet de financer la création de contenus gratuits</span>
+          <strong class="consent-option__name">{c.adsName}</strong>
+          <span class="consent-option__desc">{c.adsDesc}</span>
         </span>
       </label>
 
       <label class="consent-option">
         <input type="checkbox" id="cookie-notifications" class="consent-checkbox" />
         <span class="consent-option__body">
-          <strong class="consent-option__name">Notifications push</strong>
-          <span class="consent-option__desc">Alerte navigateur à chaque nouvel article (2 par semaine). Le navigateur demandera confirmation. Révocable à tout moment.</span>
+          <strong class="consent-option__name">{c.pushName}</strong>
+          <span class="consent-option__desc">{c.pushDesc}</span>
         </span>
       </label>
     </fieldset>
 
     <div class="consent-save-wrap">
       <button type="button" class="consent-btn consent-btn--save" id="consent-save">
-        Enregistrer mes choix
+        {c.save}
       </button>
     </div>
   </details>
 
   <p class="consent-footer-note">
-    Modifiable à tout moment via « Notifications et cookies » en bas de page.
-    <a href="/fr/politique-confidentialite/" class="consent-privacy-link">Politique de confidentialité →</a>
+    {c.footerNote}
+    <a href={privacyHref} class="consent-privacy-link">{c.privacyLink}</a>
   </p>
 </div>
 

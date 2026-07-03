@@ -1,7 +1,6 @@
 ---
 import AdBanner from "./AdBanner.astro";
 import ArticleCard from "./ArticleCard.astro";
-import NewsletterCta from "./NewsletterCta.astro";
 import { categoryMap, categorySlugs } from "../data/site";
 import { swapLangPrefix } from "../utils/lang-paths";
 import { getFeaturedPosts, filterPostsForLang, type BlogEntry } from "../utils/blog";
@@ -407,15 +406,6 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
         <a href={blogHref} class="see-all-btn">{c.seeAll}</a>
       </div>
 
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════
-       NEWSLETTER — appel clair à l'abonnement en fin de page
-  ════════════════════════════════════════════ -->
-  <section class="home-newsletter" aria-label="Newsletter">
-    <div class="container">
-      <NewsletterCta lang={lang} />
     </div>
   </section>
 
@@ -1002,12 +992,7 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
      TOUS LES ARTICLES — header + tabs + grille
   ════════════════════════════════════════════ */
   .allposts {
-    padding: var(--section-pad) 0 3rem;
-  }
-
-  /* Section newsletter de fin de page */
-  .home-newsletter {
-    padding: 0 0 var(--section-pad);
+    padding: var(--section-pad) 0 var(--section-pad);
   }
 
   .allposts__header {
