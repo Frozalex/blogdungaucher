@@ -61,7 +61,7 @@ const fc = formCopy[lang] ?? formCopy.fr;
           "pt-br": { loading: "Inscrevendo…",  success: "Inscrição confirmada!",   errorEmail: "Endereço de e-mail inválido.", error: "Ocorreu um erro. Tente novamente.",           submit: "Inscrever-se" },
           nl:      { loading: "Aanmelden…",    success: "Je bent aangemeld!",      errorEmail: "Ongeldig e-mailadres.",         error: "Er is een fout opgetreden. Probeer opnieuw.", submit: "Aanmelden" },
         };
-        const T = MSG[lang] || MSG.fr;
+        const T = MSG[lang as keyof typeof MSG] || MSG.fr;
 
         const email = (form.querySelector<HTMLInputElement>('[name="email"]')!).value.trim();
 
