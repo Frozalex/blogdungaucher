@@ -1,12 +1,22 @@
 ---
 interface Props {
   variant?: "footer" | "article";
+  lang?: "fr" | "en" | "pt-br" | "nl";
 }
-const { variant = "footer" } = Astro.props;
+const { variant = "footer", lang = "fr" } = Astro.props;
 
 const endpoint =
   (import.meta.env.PUBLIC_NEWSLETTER_URL ?? "https://blogdungaucher.com/newsletter") +
   "/subscribe";
+
+// Placeholder + libellé bouton localisés côté serveur (le dict runtime ne couvre que fr/en).
+const formCopy = {
+  fr: { placeholder: "ton@email.com", submit: "S'inscrire" },
+  en: { placeholder: "your@email.com", submit: "Subscribe" },
+  "pt-br": { placeholder: "seu@email.com", submit: "Inscrever-se" },
+  nl: { placeholder: "jouw@email.com", submit: "Aanmelden" },
+} as const;
+const fc = formCopy[lang] ?? formCopy.fr;
 ---
 
 <form
@@ -22,11 +32,11 @@ const endpoint =
       class="nl-input"
       required
       autocomplete="email"
-      placeholder="ton@email.com"
+      placeholder={fc.placeholder}
       data-t-placeholder="newsletter.emailPlaceholder"
     />
     <button type="submit" class="nl-btn" data-t="newsletter.submit">
-      S'inscrire
+      {fc.submit}
     </button>
   </div>
   <p class="nl-msg" aria-live="polite" hidden></p>
@@ -44,9 +54,10 @@ const endpoint =
 
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
-        const lang = (document.documentElement.lang ?? "fr") as "fr" | "en";
+        const lang = (document.documentElement.lang || "fr");
+        const isEn = lang === "en";
         const T = {
-          loading:    lang === "en" ? "Subscribing…" : "Inscription…",
+          loading:    isEn ? "Subscribing…" : "Inscription…",
           success:    lang === "en" ? "You’re subscribed!" : "Inscription confirmée !",
           errorEmail: lang === "en" ? "Invalid email address." : "Adresse email invalide.",
           error:      lang === "en" ? "An error occurred. Please try again." : "Une erreur s’est produite. Réessaie.",

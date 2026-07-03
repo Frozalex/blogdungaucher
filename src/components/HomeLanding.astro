@@ -1,9 +1,10 @@
 ---
 import AdBanner from "./AdBanner.astro";
 import ArticleCard from "./ArticleCard.astro";
+import NewsletterCta from "./NewsletterCta.astro";
 import { categoryMap, categorySlugs } from "../data/site";
 import { swapLangPrefix } from "../utils/lang-paths";
-import type { BlogEntry } from "../utils/blog";
+import { getFeaturedPosts, filterPostsForLang, type BlogEntry } from "../utils/blog";
 
 interface Props {
   lang: "fr" | "en" | "pt-br" | "nl";
@@ -111,8 +112,12 @@ const homeByLang: Record<"fr" | "en" | "pt-br" | "nl", HomeCopy> = {
 
 const c = homeByLang[lang];
 
-const featuredPost = latestPosts[0];
-const gridPosts = latestPosts.slice(1);
+// Article « phare » : premier article éditorialement mis en avant (featured),
+// classé par featuredRank ; repli sur le plus récent si aucun n'est marqué.
+const featuredRanked = filterPostsForLang(await getFeaturedPosts(), lang)
+  .sort((a, b) => a.data.featuredRank - b.data.featuredRank);
+const flagshipPost = featuredRanked[0] ?? latestPosts[0];
+const gridPosts = latestPosts.filter((p) => p.id !== flagshipPost?.id).slice(0, 5);
 
 const articleCountLabel = (n: number): string => {
   if (lang === "en") return `${n} ${n > 1 ? "articles" : "article"}`;
@@ -195,11 +200,14 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
   <!-- ════════════════════════════════════════════
        ARTICLE EN UNE — carte horizontale
   ════════════════════════════════════════════ -->
-  {featuredPost && (
-    <section class="featured-section">
+  {flagshipPost && (
+    <section class="featured-section" aria-labelledby="featured-heading">
       <div class="container">
+        <div class="featured-head">
+          <span class="eyebrow" id="featured-heading">{c.featuredEyebrow}</span>
+        </div>
         <div class="featured-showcase reveal">
-          <ArticleCard post={featuredPost} featured={true} lang={lang} />
+          <ArticleCard post={flagshipPost} featured={true} lang={lang} />
         </div>
       </div>
     </section>
@@ -402,19 +410,29 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     </div>
   </section>
 
+  <!-- ════════════════════════════════════════════
+       NEWSLETTER — appel clair à l'abonnement en fin de page
+  ════════════════════════════════════════════ -->
+  <section class="home-newsletter" aria-label="Newsletter">
+    <div class="container">
+      <NewsletterCta lang={lang} />
+    </div>
+  </section>
+
 </div>
 
 <style>
   .home-landing {
     overflow-x: clip;
-    /* Le hero sert de gabarit : toutes les sections statiques de la
-       landing (hero, chiffres, promos, rubriques, en une) partagent
-       cette même hauteur minimale pour un rythme vertical régulier. */
-    --section-h: 38rem;
+    /* Densité réduite : plus de hauteur uniforme forcée. Les sections prennent
+       leur hauteur naturelle et respirent grâce à un rythme d'espacement
+       vertical généreux et cohérent (--section-pad). */
+    --section-h: auto;
+    --section-pad: clamp(3.5rem, 7vw, 6rem);
   }
 
   @media (max-width: 760px) {
-    .home-landing { --section-h: auto; }
+    .home-landing { --section-pad: 3rem; }
   }
 
   /* ════════════════════════════════════════════
@@ -422,10 +440,10 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
   ════════════════════════════════════════════ */
   .hero {
     position: relative;
-    min-height: var(--section-h);
+    min-height: min(82vh, 40rem);
     display: grid;
     align-items: center;
-    padding: calc(var(--navbar-h) + 2rem) 0 2rem;
+    padding: calc(var(--navbar-h) + 3rem) 0 3rem;
     background: var(--bg);
     overflow: clip;
   }
@@ -522,9 +540,9 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
        [ d ][    photo (2 col)    ][ e ]
   ════════════════════════════════════════════ */
   .stats-section {
-    min-height: var(--section-h);
     display: grid;
     align-items: center;
+    padding: var(--section-pad) 0;
   }
 
   .stats-grid {
@@ -658,10 +676,13 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
      FEATURED — carte horizontale (style Appux)
   ════════════════════════════════════════════ */
   .featured-section {
-    min-height: var(--section-h);
     display: grid;
     align-items: center;
-    padding: 2rem 0 0;
+    padding: var(--section-pad) 0 0;
+  }
+
+  .featured-head {
+    margin-bottom: 1.25rem;
   }
 
   /* Rendre la carte featured horizontale via :global() */
@@ -722,10 +743,9 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
      RUBRIQUES — strip compact
   ════════════════════════════════════════════ */
   .pillars {
-    min-height: var(--section-h);
     display: grid;
     align-items: center;
-    padding: 3.5rem 0;
+    padding: var(--section-pad) 0;
     border-bottom: 1px solid var(--border-soft);
   }
 
@@ -826,10 +846,9 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
      PROMO SPLIT — texte/checklist alterné avec un visuel
   ════════════════════════════════════════════ */
   .promo-split {
-    min-height: var(--section-h);
     display: grid;
     align-items: center;
-    padding: 3.5rem 0;
+    padding: var(--section-pad) 0;
     border-bottom: 1px solid var(--border-soft);
   }
 
@@ -983,7 +1002,12 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
      TOUS LES ARTICLES — header + tabs + grille
   ════════════════════════════════════════════ */
   .allposts {
-    padding: 3rem 0 5rem;
+    padding: var(--section-pad) 0 3rem;
+  }
+
+  /* Section newsletter de fin de page */
+  .home-newsletter {
+    padding: 0 0 var(--section-pad);
   }
 
   .allposts__header {

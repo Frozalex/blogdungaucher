@@ -1,16 +1,28 @@
 ---
 import NewsletterForm from "./NewsletterForm.astro";
+
+const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
+
+// Localisé côté serveur : le dict runtime (i18n-dict.js) ne couvre que fr/en,
+// donc on rend directement la bonne langue (pas de flash, marche sans JS).
+const ctaCopy = {
+  fr: { eyebrow: "Newsletter", title: "Recevoir les prochains articles", desc: "Deux articles par semaine dans ta boîte mail. Pas de spam." },
+  en: { eyebrow: "Newsletter", title: "Get the next articles", desc: "Two articles a week in your inbox. No spam." },
+  "pt-br": { eyebrow: "Newsletter", title: "Receber os próximos artigos", desc: "Dois artigos por semana no seu e-mail. Sem spam." },
+  nl: { eyebrow: "Newsletter", title: "Ontvang de volgende artikelen", desc: "Twee artikelen per week in je inbox. Geen spam." },
+} as const;
+const c = ctaCopy[lang] ?? ctaCopy.fr;
 ---
 
 <aside class="nl-cta fade-up" style="--motion-delay: 140ms;" aria-label="Newsletter">
   <div class="nl-cta__inner">
     <div class="nl-cta__text">
-      <span class="nl-cta__eyebrow" data-t="newsletter.eyebrow">Newsletter</span>
-      <p class="nl-cta__title" data-t="newsletter.ctaTitle">Recevoir les prochains articles</p>
-      <p class="nl-cta__desc" data-t="newsletter.ctaDesc">Deux articles par semaine dans ta boîte mail. Pas de spam.</p>
+      <span class="nl-cta__eyebrow" data-t="newsletter.eyebrow">{c.eyebrow}</span>
+      <p class="nl-cta__title" data-t="newsletter.ctaTitle">{c.title}</p>
+      <p class="nl-cta__desc" data-t="newsletter.ctaDesc">{c.desc}</p>
     </div>
     <div class="nl-cta__form">
-      <NewsletterForm variant="article" />
+      <NewsletterForm variant="article" lang={lang} />
     </div>
   </div>
 </aside>
