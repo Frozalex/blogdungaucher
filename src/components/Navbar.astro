@@ -22,6 +22,17 @@ const links =
 
 const homeHref = lang === "en" ? "/en/" : lang === "pt-br" ? "/pt-br/" : lang === "nl" ? "/nl/" : "/fr/";
 
+/** Langues proposées dans le sélecteur : uniquement celles réellement en ligne
+ *  (NL lancé au 1er sept., donc exclu pour l'instant). Les href sont déjà résolus
+ *  par BaseLayout vers la traduction de la page courante — ou l'accueil de la
+ *  langue en repli — ce qui évite tout lien mort. Libellés = endonymes (non traduits). */
+const switchLanguages = [
+  { code: "fr", label: "Français", short: "FR", href: frHref ?? "/fr/" },
+  { code: "en", label: "English", short: "EN", href: enHref ?? "/en/" },
+  { code: "pt-br", label: "Português", short: "PT", href: ptBrHref ?? "/pt-br/" },
+] as const;
+const currentSwitch = switchLanguages.find((l) => l.code === lang) ?? switchLanguages[0];
+
 /** Lang sûr pour le helper t() : retombe sur fr si la langue n'est pas couverte. */
 const tLang: Lang = (["fr", "en", "pt-br", "nl"].includes(lang) ? lang : "fr") as Lang;
 const siteName = (() => {
@@ -137,16 +148,40 @@ const linkKey : Record<string, string> = {
         </svg>
       </button>
 
-      {/* Bouton langue masqué tant que EN/DE ne sont pas validés éditorialement
-         (cf. sitemap exclu + meta noindex sur ces préfixes). Réactiver en
-         supprimant le `hidden` quand les versions seront prêtes. */}
-      <button
-        id="lang-toggle"
-        class="icon-btn lang-btn"
-        type="button"
-        aria-label="Changer la langue"
-        hidden
-      ><span class="lang-label">{lang.toUpperCase()}</span></button>
+      {/* Sélecteur de langue : menu déroulant FR · EN · PT-BR. Chaque lien pointe
+         vers la traduction de la page courante (ou l'accueil de la langue en repli). */}
+      <div class="lang-switch" data-lang-switch>
+        <button
+          id="lang-toggle"
+          class="icon-btn lang-btn"
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-label="Changer la langue"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span class="lang-label">{currentSwitch.short}</span>
+        </button>
+        <ul class="lang-menu" role="menu" hidden>
+          {switchLanguages.map((l) => (
+            <li role="none">
+              <a
+                role="menuitem"
+                href={l.href}
+                hreflang={l.code}
+                lang={l.code}
+                class={`lang-menu__item${l.code === lang ? " is-current" : ""}`}
+                aria-current={l.code === lang ? "true" : undefined}
+              >
+                <span class="lang-menu__name">{l.label}</span>
+                <span class="lang-menu__code">{l.short}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
 
     <button
@@ -196,19 +231,21 @@ const linkKey : Record<string, string> = {
             </svg>
             <span data-t="nav.darkOn">{(t(tLang, "nav.darkOn") as string) || "Mode sombre"}</span>
           </button>
-          {/* Bouton langue masqué (cf. desktop, même raison). */}
-          <button
-            id="lang-toggle-mobile"
-            class="mobile-util-btn"
-            type="button"
-            aria-label="Changer la langue"
-            hidden
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          {/* Sélecteur de langue mobile : puces FR · EN · PT-BR. */}
+          <div class="mobile-langs" role="group" aria-label="Langue">
+            <svg class="mobile-langs__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
             </svg>
-            <span class="lang-label-mobile">{lang.toUpperCase()}</span>
-          </button>
+            {switchLanguages.map((l) => (
+              <a
+                href={l.href}
+                hreflang={l.code}
+                lang={l.code}
+                class={`mobile-lang${l.code === lang ? " is-current" : ""}`}
+                aria-current={l.code === lang ? "true" : undefined}
+              >{l.short}</a>
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -389,14 +426,65 @@ const linkKey : Record<string, string> = {
     text-decoration: none;
   }
 
-  /* Bouton langue : même taille que dark toggle, juste FR/EN */
+  /* ── Sélecteur de langue (menu déroulant) ── */
+  .lang-switch { position: relative; }
+
+  /* Bouton langue : globe + code de la langue courante (FR/EN/PT). */
   .lang-btn {
-    width: 2.75rem;
-    padding: 0;
+    width: auto;
+    min-width: 2.75rem;
+    gap: 0.3rem;
+    padding: 0 0.6rem;
     font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.04em;
   }
+  .lang-btn[aria-expanded="true"] {
+    background: var(--surface-warm);
+    color: var(--text-main);
+    border-color: var(--border-strong);
+  }
+
+  .lang-menu {
+    position: absolute;
+    top: calc(100% + 0.4rem);
+    right: 0;
+    z-index: 20;
+    min-width: 11rem;
+    margin: 0;
+    padding: 0.35rem;
+    list-style: none;
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+  }
+  .lang-menu[hidden] { display: none; }
+
+  .lang-menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem 0.65rem;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 140ms ease, color 140ms ease;
+  }
+  .lang-menu__item:hover { background: var(--surface-warm); color: var(--text-main); }
+  .lang-menu__item.is-current {
+    color: var(--text-main);
+    background: color-mix(in srgb, var(--green-light) 70%, transparent);
+  }
+  .lang-menu__code {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+  }
+  .lang-menu__item.is-current .lang-menu__code { color: var(--green); }
 
   /* ── burger ── */
   .burger {
@@ -504,6 +592,8 @@ const linkKey : Record<string, string> = {
   /* Utilitaires mobile (dark + lang): apparition juste après le dernier lien. */
   .mobile-utils {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 0.5rem;
     margin: 0.5rem 0;
     opacity: 0;
@@ -533,6 +623,35 @@ const linkKey : Record<string, string> = {
     background: var(--bg-warm);
     color: var(--text-main);
   }
+
+  /* Puces de langue (menu mobile) */
+  .mobile-langs {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .mobile-langs__icon { color: var(--text-dim); flex-shrink: 0; margin-right: 0.15rem; }
+  .mobile-lang {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    padding: 0 0.6rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-soft);
+    background: var(--surface-warm);
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+  .mobile-lang.is-current {
+    color: var(--text-main);
+    background: color-mix(in srgb, var(--green-light) 72%, transparent);
+    border-color: var(--green-border);
+  }
+  .mobile-lang:hover { background: var(--bg-warm); color: var(--text-main); }
 
   @media (max-width: 960px) {
     .nav-desktop, .nav-actions { display : none; }
@@ -726,42 +845,36 @@ const linkKey : Record<string, string> = {
 
     syncDarkBtn(document.documentElement.dataset.theme === "dark");
 
-    /* ── Language toggle ── */
-    function syncLangBtns(lang : string) {
-      const label = lang.toUpperCase();
-      const desktopSpan = document.querySelector("#lang-toggle .lang-label");
-      const mobileSpan  = document.querySelector("#lang-toggle-mobile .lang-label-mobile");
-      if (desktopSpan) desktopSpan.textContent = label;
-      if (mobileSpan)  mobileSpan.textContent  = label;
+    /* ── Sélecteur de langue (menu déroulant) ──
+       Chaque langue a sa propre URL (site statique) : le menu NAVIGUE vers la
+       traduction, il ne fait plus de bascule i18n en place. */
+    const langSwitch = navbar.querySelector("[data-lang-switch]");
+    const langBtn    = document.getElementById("lang-toggle");
+    const langMenu   = langSwitch?.querySelector(".lang-menu") as HTMLElement | null;
+
+    function closeLangMenu() {
+      if (langMenu) langMenu.hidden = true;
+      langBtn?.setAttribute("aria-expanded", "false");
     }
 
-    function toggleLang() {
-      // DE désactivé : on n'alterne plus que FR ⇄ EN.
-      const order = ["fr", "en"];
-      const current = window.__lang || "fr";
-      const idx = order.indexOf(current);
-      const next = order[(idx + 1) % order.length];
-      const nav = document.getElementById("navbar");
-      const frHref = nav?.dataset.langFrHref;
-      const enHref = nav?.dataset.langEnHref;
-      const map = { fr : frHref, en : enHref };
-      const target = map[next as keyof typeof map];
-      if (target) {
-        window.location.href = target;
-        return;
+    langBtn?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = langBtn.getAttribute("aria-expanded") === "true";
+      if (isOpen) { closeLangMenu(); return; }
+      if (langMenu) langMenu.hidden = false;
+      langBtn.setAttribute("aria-expanded", "true");
+    }, { signal });
+
+    document.addEventListener("click", (e) => {
+      if (langSwitch && !langSwitch.contains(e.target as Node)) closeLangMenu();
+    }, { signal });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && langBtn?.getAttribute("aria-expanded") === "true") {
+        closeLangMenu();
+        langBtn.focus();
       }
-
-      window.__lang = next;
-      localStorage.setItem("blogdungaucher.lang", next);
-      if (typeof window.__applyLang === "function") window.__applyLang(next);
-      syncLangBtns(next);
-      syncDarkBtn(document.documentElement.dataset.theme === "dark");
-    }
-
-    syncLangBtns(window.__lang || "fr");
-
-    document.getElementById("lang-toggle")?.addEventListener("click", toggleLang, { signal });
-    document.getElementById("lang-toggle-mobile")?.addEventListener("click", toggleLang, { signal });
+    }, { signal });
   }
 
   document.addEventListener("astro:page-load", initNavbar);

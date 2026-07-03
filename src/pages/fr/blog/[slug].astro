@@ -33,6 +33,7 @@ import {
   getPostSlug,
   getPostUrl,
   getPostUrlEn,
+  getPostUrlPtBr,
   getPostHeroSrc,
 } from "../../../utils/blog";
 import {
@@ -86,6 +87,10 @@ const related = allPosts
 const postUrl = getPostUrl(post);
 const postUrlEn = await getPostUrlEn(post);
 const grandOralOnly = post.data.category === "grand-oral";
+// PT-BR : URL localisée (slug pt-br) si l'article n'est pas FR-only, sinon accueil pt-br.
+// Corrige le lien du sélecteur de langue + le hreflang pt-BR (auparavant dérivé du slug FR
+// via swapLangPrefix, donc en 404 pour tout article au slug pt-br localisé).
+const postUrlPtBr = grandOralOnly ? "/pt-br/" : await getPostUrlPtBr(post);
 const absolutePostUrl = absoluteUrl(postUrl);
 
 const heroSrc = getPostHeroSrc(post);
@@ -119,6 +124,7 @@ const structuredData = [
   accentColor={category.accent}
   tags={post.data.tags}
   enPath={grandOralOnly ? "/en/blog/" : postUrlEn}
+  ptBrPath={postUrlPtBr}
   omitEnDeAlternateLinks={grandOralOnly}
 >
   <article class="article-page" style={`--c:${category.accent}`} data-pagefind-meta={`accent:${category.accent}`}>

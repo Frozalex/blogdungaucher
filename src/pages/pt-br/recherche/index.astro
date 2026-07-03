@@ -76,6 +76,13 @@ const ptBrCount = allPosts.filter((p) => !isFrenchOnlyPost(p)).length;
       // @ts-ignore - généré au build par Pagefind (absent au moment du bundling)
       const pagefindUrl = window.location.origin + "/pagefind/pagefind.js";
       const pf = await import(/* @vite-ignore */ pagefindUrl);
+      // Scoping par langue : Pagefind segmente ses index par l'attribut <html lang> des pages
+      // indexées (ici pt-br). On force explicitement l'index pt-BR AVANT init() pour ne chercher
+      // QUE dans les articles portugais, indépendamment de l'auto-détection (robuste aux
+      // View Transitions Astro qui peuvent réinitialiser document.documentElement.lang).
+      if (typeof pf.options === "function") {
+        await pf.options({ language: "pt-br" });
+      }
       await pf.init();
       pagefindInstance = pf;
       return pf;
@@ -131,9 +138,9 @@ const ptBrCount = allPosts.filter((p) => !isFrenchOnlyPost(p)).length;
     }
 
     const response = await pf.search(q);
-    // Filtre côté client : on ne garde que les URLs /pt-br/ (Pagefind indexe
-    // toutes les langues ; le filtre par <html lang="pt-br"> ne marche que si
-    // les segments sont activés côté build, ce qu'on n'a pas voulu imposer ici).
+    // L'index est déjà restreint au portugais (pf.options language pt-br), donc tous les
+    // résultats pointent vers /pt-br/. On conserve un filtre d'URL défensif au cas où un
+    // ancien index multilingue serait servi (cache/proxy), sans coût perceptible.
     const all = await Promise.all(response.results.slice(0, 40).map((r) => r.data()));
     const results = all.filter((d) => d.url.includes("/pt-br/")).slice(0, 20);
     render(results, q);

@@ -10,8 +10,8 @@ import Footer from "../components/Footer.astro";
 import BackToTop from "../components/BackToTop.astro";
 import CookieConsent from "../components/CookieConsent.astro";
 
-import { siteConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE } from "../data/site";
-import { swapLangPrefix } from "../utils/lang-paths";
+import { siteConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, enStaticRoutes, ptBrStaticRoutes } from "../data/site";
+import { swapLangPrefix, withTrailingSlash } from "../utils/lang-paths";
 
 // Préchargement de la police de titre (Space Grotesk, subset latin) : présente dans le H1/LCP de
 // toutes les pages, légère (~22 ko), donc gaspillage négligeable. `?url` renvoie l'URL hashée émise
@@ -91,6 +91,18 @@ const resolvedFrPath = frPath ?? swapLangPrefix(canonicalPath, "fr");
 const resolvedEnPath = enPath ?? swapLangPrefix(canonicalPath, "en");
 const resolvedPtBrPath = ptBrPath ?? swapLangPrefix(canonicalPath, "pt-br");
 const resolvedNlPath = nlPath ?? swapLangPrefix(canonicalPath, "nl");
+
+// Hrefs du sélecteur de langue : identiques aux chemins résolus quand la page a
+// un équivalent EN/PT-BR connu (routes statiques, ou chemin explicite passé par
+// les templates d'article), mais repliés sur l'accueil de la langue sinon —
+// pages FR-only (glossaire, grand oral, dissertations, mentions légales…) — pour
+// ne jamais exposer de lien mort dans le menu de langue.
+const enStaticSet = new Set(enStaticRoutes.map((r) => withTrailingSlash(r)));
+const ptBrStaticSet = new Set(ptBrStaticRoutes.map((r) => withTrailingSlash(r)));
+const enSwapped = withTrailingSlash(swapLangPrefix(canonicalPath, "en"));
+const ptBrSwapped = withTrailingSlash(swapLangPrefix(canonicalPath, "pt-br"));
+const enSwitchHref = enPath ?? (enStaticSet.has(enSwapped) ? enSwapped : "/en/");
+const ptBrSwitchHref = ptBrPath ?? (ptBrStaticSet.has(ptBrSwapped) ? ptBrSwapped : "/pt-br/");
 const canonicalUrl = new URL(canonicalPath, siteConfig.siteUrl).toString();
 const frCanonicalUrl = new URL(resolvedFrPath, siteConfig.siteUrl).toString();
 const enCanonicalUrl = new URL(resolvedEnPath, siteConfig.siteUrl).toString();
@@ -305,7 +317,14 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         <link rel="alternate" hrefLang="x-default" href={frCanonicalUrl} />
       </>
     )}
-    <link rel="alternate" type="application/rss+xml" title={`${siteConfig.name} RSS`} href={`${siteConfig.siteUrl}/rss.xml`} />
+    {/* Flux RSS de la langue courante : fr → /rss.xml ; en → /en/rss.xml ; pt-br → /pt-br/rss.xml.
+        Le NL n'a pas encore de flux (rubrique gated). Le flux fr reste la valeur par défaut. */}
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={`${siteConfig.name} RSS`}
+      href={`${siteConfig.siteUrl}${lang === "en" ? "/en/rss.xml" : lang === "pt-br" ? "/pt-br/rss.xml" : "/rss.xml"}`}
+    />
     {prevHref && <link rel="prev" href={new URL(prevHref, siteConfig.siteUrl).toString()} />}
     {nextHref && <link rel="next" href={new URL(nextHref, siteConfig.siteUrl).toString()} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -502,7 +521,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     {/* Skip-link "Aller au contenu" retiré (réintroduction : remettre
         <a class="skip-link" href="#main-content">Aller au contenu</a> ici ;
         le CSS .skip-link reste dormant dans global.css). */}
-    <Navbar frHref={resolvedFrPath} enHref={resolvedEnPath} ptBrHref={resolvedPtBrPath} nlHref={resolvedNlPath} lang={lang} />
+    <Navbar frHref={resolvedFrPath} enHref={enSwitchHref} ptBrHref={ptBrSwitchHref} nlHref={resolvedNlPath} lang={lang} />
     {/* tabindex="-1" : permet au skip-link de poser le focus programmatiquement
        sur <main>, garantissant que les lecteurs d'écran annoncent bien le landmark
        et que les navigateurs ne se contentent pas de scroller sans focuser. */}

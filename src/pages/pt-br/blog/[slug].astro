@@ -200,7 +200,7 @@ const structuredData = [
             {formatDatePtBr(post.data.publishDate)}
           </time>
 
-          <h1 class="hero-title">
+          <h1 class="hero-title" data-pagefind-meta="title">
             <span>{displayTitle}</span>
           </h1>
 
@@ -274,7 +274,7 @@ const structuredData = [
           </div>
         )}
 
-        <div class="article-body fade-up" style="--motion-delay: 100ms;">
+        <div class="article-body fade-up" style="--motion-delay: 100ms;" data-pagefind-body>
           {ptBrHtml ? (
             <div class="md-chunk" set:html={ptBrHtml} />
           ) : (
