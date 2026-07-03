@@ -113,7 +113,7 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
       box-shadow   260ms var(--ease-out);
   }
 
-  /* Filet supérieur catégorie : signature visuelle discrète, révélée au hover. */
+  /* Filet supérieur catégorie : ancre visuelle présente au repos, pleine au hover. */
   .card::after {
     content: "";
     position: absolute;
@@ -127,8 +127,8 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
       var(--accent),
       transparent
     );
-    opacity: 0.55;
-    transform: scaleX(0.5);
+    opacity: 0.75;
+    transform: scaleX(0.72);
     transform-origin: center;
     transition:
       opacity 260ms var(--ease-out),
@@ -310,6 +310,12 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    /* Fond teinté doux : identité catégorie lisible d'un coup d'œil, sans agressivité */
+    background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  }
+  :global([data-theme="dark"]) .card-badge {
+    /* En dark mode l'accent est souvent plus saturé : on adoucit légèrement la teinte */
+    background: color-mix(in srgb, var(--accent) 16%, var(--surface));
   }
 
   .card-time {
@@ -317,7 +323,7 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
     color: var(--text-dim);
   }
 
-  /* titre - serif éditorial */
+  /* titre - serif éditorial, clampé pour éviter les hauteurs explosives sur mobile */
   .card-title {
     font-family: var(--font-serif);
     font-weight: 500;
@@ -328,9 +334,17 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
     color: var(--text-main);
     font-optical-sizing: auto;
     transition: color 180ms ease;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
   .card:hover .card-title { color: var(--accent); }
-  .featured .card-title { font-size: clamp(1.5rem, 2.7vw, 2rem); }
+  /* Featured : taille plus généreuse, on autorise une ligne supplémentaire */
+  .featured .card-title {
+    font-size: clamp(1.5rem, 2.7vw, 2rem);
+    -webkit-line-clamp: 4;
+  }
 
   /* excerpt */
   .card-excerpt {
