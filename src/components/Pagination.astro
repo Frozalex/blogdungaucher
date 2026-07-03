@@ -9,6 +9,7 @@ interface Props {
   prevHref?: string;
   nextHref?: string;
   ariaLabel?: string;
+  lang?: "fr" | "en" | "pt-br" | "nl";
 }
 
 const {
@@ -18,16 +19,26 @@ const {
   getHref,
   prevHref,
   nextHref,
-  ariaLabel = "Navigation entre les pages",
+  ariaLabel,
+  lang = "fr",
 } = Astro.props;
+
+const pagCopy = {
+  fr: { prev: "Page précédente", next: "Page suivante", page: "Page", nav: "Navigation entre les pages" },
+  en: { prev: "Previous page", next: "Next page", page: "Page", nav: "Pagination" },
+  "pt-br": { prev: "Página anterior", next: "Próxima página", page: "Página", nav: "Paginação" },
+  nl: { prev: "Vorige pagina", next: "Volgende pagina", page: "Pagina", nav: "Paginering" },
+} as const;
+const pg = pagCopy[lang as keyof typeof pagCopy] ?? pagCopy.fr;
+const navLabel = ariaLabel ?? pg.nav;
 ---
 
 {lastPage > 1 && (
-  <nav class="pagination" aria-label={ariaLabel}>
+  <nav class="pagination" aria-label={navLabel}>
 
     <!-- Flèche précédente -->
     {prevHref ? (
-      <a href={prevHref} class="pag-btn pag-btn--arrow" rel="prev" aria-label="Page précédente">
+      <a href={prevHref} class="pag-btn pag-btn--arrow" rel="prev" aria-label={pg.prev}>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M15 18l-6-6 6-6"/>
         </svg>
@@ -55,7 +66,7 @@ const {
                 {p}
               </span>
             ) : (
-              <a href={getHref(p)} class="pag-btn pag-btn--num" role="listitem" aria-label={`Page ${p}`}>
+              <a href={getHref(p)} class="pag-btn pag-btn--num" role="listitem" aria-label={`${pg.page} ${p}`}>
                 {p}
               </a>
             )}
@@ -66,7 +77,7 @@ const {
 
     <!-- Flèche suivante -->
     {nextHref ? (
-      <a href={nextHref} class="pag-btn pag-btn--arrow" rel="next" aria-label="Page suivante">
+      <a href={nextHref} class="pag-btn pag-btn--arrow" rel="next" aria-label={pg.next}>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M9 18l6-6-6-6"/>
         </svg>

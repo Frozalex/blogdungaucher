@@ -292,17 +292,23 @@ export const translations = {
         shortLabel: "Ciência do jogo",
         tagline:
           "Entendendo como o cérebro vê, calcula e decide no tabuleiro.",
+        description:
+          "Artigos sobre cognição, memória, vieses, preparação e aprendizado aplicados ao xadrez.",
       },
       esprit: {
         label: "Mente",
         shortLabel: "Mentalidade competitiva",
         tagline: "O jogo mental, a disciplina e a lucidez quando a pressão aumenta.",
+        description:
+          "Uma seção sobre atenção, confiança, gestão da derrota e o trabalho interior do jogador.",
       },
       societe: {
         label: "Sociedade",
         shortLabel: "Xadrez e sociedade",
         tagline:
           "Quando o tabuleiro também conta a história da nossa cultura, instituições e época.",
+        description:
+          "Análises sobre o lugar do xadrez na educação, na mídia, na tecnologia e na vida coletiva.",
       },
       analyses: {
         label: "Análises",
@@ -395,17 +401,23 @@ export const translations = {
         shortLabel: "Schaakwetenschap",
         tagline:
           "Begrijpen hoe het brein ziet, berekent en beslist op het schaakbord.",
+        description:
+          "Artikelen over cognitie, geheugen, denkfouten, voorbereiding en leren toegepast op schaken.",
       },
       esprit: {
         label: "Geest",
         shortLabel: "Competitieve mindset",
         tagline: "Het mentale spel, discipline en helderheid wanneer de druk toeneemt.",
+        description:
+          "Een rubriek over aandacht, zelfvertrouwen, omgaan met verlies en het innerlijke werk van de speler.",
       },
       societe: {
         label: "Samenleving",
         shortLabel: "Schaken en samenleving",
         tagline:
           "Wanneer het schaakbord ook het verhaal vertelt van onze cultuur, onze instellingen en ons tijdperk.",
+        description:
+          "Analyses over de plaats van schaken in onderwijs, media, technologie en het collectieve leven.",
       },
       analyses: {
         label: "Analyses",

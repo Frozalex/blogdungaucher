@@ -1,44 +1,52 @@
 ---
-const { title, url, variant = "inline" } = Astro.props as { title: string; url: string; variant?: "inline" | "sidebar" };
+const { title, url, variant = "inline", lang = "fr" } = Astro.props as { title: string; url: string; variant?: "inline" | "sidebar"; lang?: "fr" | "en" | "pt-br" | "nl" };
 const twitterIntent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
 const linkedInIntent = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+
+const shareCopy = {
+  fr: { share: "Partager", shareArticle: "Partager cet article", shareTwitter: "Partager sur X/Twitter", shareLinkedin: "Partager sur LinkedIn", copyLink: "Copier le lien", copied: "Copié !", shareText: "Article partagé depuis Blog d'un Gaucher" },
+  en: { share: "Share", shareArticle: "Share this article", shareTwitter: "Share on X/Twitter", shareLinkedin: "Share on LinkedIn", copyLink: "Copy link", copied: "Copied!", shareText: "Article shared from A Left-Hander's Blog" },
+  "pt-br": { share: "Compartilhar", shareArticle: "Compartilhar este artigo", shareTwitter: "Compartilhar no X/Twitter", shareLinkedin: "Compartilhar no LinkedIn", copyLink: "Copiar link", copied: "Copiado!", shareText: "Artigo compartilhado do Blog de um Canhoto" },
+  nl: { share: "Delen", shareArticle: "Dit artikel delen", shareTwitter: "Delen op X/Twitter", shareLinkedin: "Delen op LinkedIn", copyLink: "Link kopiëren", copied: "Gekopieerd!", shareText: "Artikel gedeeld vanaf Blog van een Linkshandige" },
+} as const;
+const sc = shareCopy[lang] ?? shareCopy.fr;
 ---
 {variant === "sidebar" ? (
-  <div class="share share--sidebar" aria-label="Partager cet article">
-    <span class="share-label--sidebar">Partager</span>
-    <a href={twitterIntent} target="_blank" rel="noopener noreferrer" class="share-icon twitter" aria-label="Partager sur X/Twitter" title="X / Twitter">
+  <div class="share share--sidebar" aria-label={sc.shareArticle} data-share-text={sc.shareText}>
+    <span class="share-label--sidebar">{sc.share}</span>
+    <a href={twitterIntent} target="_blank" rel="noopener noreferrer" class="share-icon twitter" aria-label={sc.shareTwitter} title="X / Twitter">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.912-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
     </a>
-    <a href={linkedInIntent} target="_blank" rel="noopener noreferrer" class="share-icon linkedin" aria-label="Partager sur LinkedIn" title="LinkedIn">
+    <a href={linkedInIntent} target="_blank" rel="noopener noreferrer" class="share-icon linkedin" aria-label={sc.shareLinkedin} title="LinkedIn">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5a2.2 2.2 0 110-4.4 2.2 2.2 0 010 4.4zM4.8 9.95h4.3V19.2H4.8V9.95zm7.1 0h4.1v1.26h.06c.57-1.02 1.96-2.1 4.03-2.1 4.3 0 5.1 2.83 5.1 6.5v3.6h-4.3v-3.2c0-1.76-.03-4.03-2.46-4.03-2.46 0-2.84 1.92-2.84 3.9v3.33h-4.3V9.95z"/></svg>
     </a>
-    <button class="share-icon native" id="native-share" aria-label="Partager" title="Partager">
+    <button class="share-icon native" id="native-share" aria-label={sc.share} title={sc.share}>
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4"/><path d="M15.4 6.5l-6.8 4"/></svg>
     </button>
-    <button class="share-icon copy" id="copy-link" aria-label="Copier le lien" title="Copier le lien">
+    <button class="share-icon copy" id="copy-link" aria-label={sc.copyLink} title={sc.copyLink} data-label-copy={sc.copyLink} data-label-copied={sc.copied}>
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-check" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
     </button>
   </div>
 ) : (
-  <div class="share">
-    <span class="share-label">Partager</span>
-    <a href={twitterIntent} target="_blank" rel="noopener noreferrer" class="share-btn twitter" aria-label="Partager sur Twitter/X" title="Partager sur Twitter/X">
+  <div class="share" data-share-text={sc.shareText}>
+    <span class="share-label">{sc.share}</span>
+    <a href={twitterIntent} target="_blank" rel="noopener noreferrer" class="share-btn twitter" aria-label={sc.shareTwitter} title={sc.shareTwitter}>
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.912-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
       <span>Twitter</span>
     </a>
-    <a href={linkedInIntent} target="_blank" rel="noopener noreferrer" class="share-btn linkedin" aria-label="Partager sur LinkedIn" title="Partager sur LinkedIn">
+    <a href={linkedInIntent} target="_blank" rel="noopener noreferrer" class="share-btn linkedin" aria-label={sc.shareLinkedin} title={sc.shareLinkedin}>
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5a2.2 2.2 0 110-4.4 2.2 2.2 0 010 4.4zM4.8 9.95h4.3V19.2H4.8V9.95zm7.1 0h4.1v1.26h.06c.57-1.02 1.96-2.1 4.03-2.1 4.3 0 5.1 2.83 5.1 6.5v3.6h-4.3v-3.2c0-1.76-.03-4.03-2.46-4.03-2.46 0-2.84 1.92-2.84 3.9v3.33h-4.3V9.95z"/></svg>
       <span>LinkedIn</span>
     </a>
-    <button class="share-btn native" id="native-share" aria-label="Partager" title="Partager">
+    <button class="share-btn native" id="native-share" aria-label={sc.share} title={sc.share}>
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4"/><path d="M15.4 6.5l-6.8 4"/></svg>
-      <span>Partager</span>
+      <span>{sc.share}</span>
     </button>
-    <button class="share-btn copy" id="copy-link" aria-label="Copier le lien" title="Copier le lien">
+    <button class="share-btn copy" id="copy-link" aria-label={sc.copyLink} title={sc.copyLink} data-label-copy={sc.copyLink} data-label-copied={sc.copied}>
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-check" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
-      <span id="copy-label">Copier le lien</span>
+      <span id="copy-label">{sc.copyLink}</span>
     </button>
   </div>
 )}
@@ -196,7 +204,7 @@ const linkedInIntent = `https://www.linkedin.com/sharing/share-offsite/?url=${en
     try {
       await navigator.share({
         title: document.title,
-        text: "Article partage depuis Blog d'un Gaucher",
+        text: document.querySelector(".share")?.getAttribute("data-share-text") || document.title,
         url: window.location.href,
       });
     } catch {
@@ -205,14 +213,16 @@ const linkedInIntent = `https://www.linkedin.com/sharing/share-offsite/?url=${en
   });
 
   btn?.addEventListener("click", async () => {
+    const copyLabel = btn.getAttribute("data-label-copy") || "Copier le lien";
+    const copiedLabel = btn.getAttribute("data-label-copied") || "Copié !";
     try {
       await navigator.clipboard.writeText(window.location.href);
-      if (label)       label.textContent = "Copie !";
+      if (label)       label.textContent = copiedLabel;
       if (iconCopy)    iconCopy.style.display  = "none";
       if (iconCheck)   iconCheck.style.display = "";
       btn.classList.add("copied");
       setTimeout(() => {
-        if (label)     label.textContent = "Copier le lien";
+        if (label)     label.textContent = copyLabel;
         if (iconCopy)  iconCopy.style.display  = "";
         if (iconCheck) iconCheck.style.display = "none";
         btn.classList.remove("copied");

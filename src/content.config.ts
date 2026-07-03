@@ -72,6 +72,9 @@ const translationSchema = z.object({
    *  - Convention pt-BR / futures langues : NOM DE FICHIER = slug localisé (intention SEO),
    *    et `frSlug` porte le slug FR. La résolution lit `frSlug ?? <slug dérivé du nom de fichier>`. */
   frSlug: z.string().optional(),
+  /** Tags localisés (optionnels) : si absents, aucun tag n'est affiché dans la langue
+   *  traduite (on n'affiche pas les tags FR de la source pour éviter du français). */
+  tags: z.array(z.string()).optional(),
   faq: z
     .array(
       z.object({

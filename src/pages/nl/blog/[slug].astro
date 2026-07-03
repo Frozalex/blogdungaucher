@@ -14,6 +14,7 @@ import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import FocusMode from "../../../components/FocusMode.astro";
 
 import { categoryMap, siteConfig, NL_LAUNCH_DATE } from "../../../data/site";
+import { t } from "../../../i18n/translations";
 import {
   absoluteUrl,
   buildBreadcrumbJsonLd,
@@ -103,8 +104,18 @@ const related = filterPostsForLang(
   "nl",
 ).slice(0, 3);
 
+// Titres nl des articles liés (repli sur le titre FR si pas de traduction publiée).
+const nlTitleByFrSlug = new Map(
+  nlEntries
+    .filter((e) => !e.data.draft)
+    .map((e) => [e.data.frSlug ?? e.id.replace(/\.mdx?$/i, "").split("/").filter(Boolean).pop(), e.data.title] as const),
+);
 const relatedWithUrls = await Promise.all(
-  related.map(async (e) => ({ entry: e, url: await getPostUrlNl(e) })),
+  related.map(async (e) => ({
+    entry: e,
+    url: await getPostUrlNl(e),
+    title: nlTitleByFrSlug.get(getPostSlug(e)) ?? e.data.title,
+  })),
 );
 
 const postUrlNl = getPostUrlNlSync(post, nlSlug);
@@ -115,6 +126,8 @@ const absolutePostUrl = absoluteUrl(postUrlNl);
 const nlTitle     = nlEntry?.data?.seoTitle ?? nlEntry?.data?.title ?? post.data.seoTitle ?? post.data.title;
 const nlDesc      = nlEntry?.data?.seoDescription ?? nlEntry?.data?.excerpt ?? post.data.seoDescription ?? post.data.excerpt;
 const displayTitle  = nlEntry?.data?.title ?? post.data.title;
+// Tags : uniquement ceux de la traduction nl (pas les tags FR de la source).
+const displayTags = nlEntry?.data?.tags ?? [];
 const displayExcerpt = nlEntry?.data?.excerpt ?? post.data.excerpt;
 const hasNlTranslation = !!nlEntry;
 
@@ -224,10 +237,10 @@ const structuredData = [
       </div>
     </div>
 
-    {post.data.tags && post.data.tags.length > 0 && (
+    {displayTags.length > 0 && (
       <div class="container">
         <nav class="article-tags hero-tags" aria-label="Tags">
-          {post.data.tags.slice(0, 6).map((tag) => (
+          {displayTags.slice(0, 6).map((tag) => (
             <a href={`/nl/recherche/?q=${encodeURIComponent(tag)}`} class="article-tag">{tag}</a>
           ))}
         </nav>
@@ -239,7 +252,7 @@ const structuredData = [
 
       <aside class="article-share-sidebar" aria-label="Dit artikel delen">
         <div class="share-sidebar-sticky">
-          <ShareButtons title={displayTitle} url={absolutePostUrl} variant="sidebar" />
+          <ShareButtons title={displayTitle} url={absolutePostUrl} variant="sidebar" lang="nl" />
         </div>
       </aside>
 
@@ -308,16 +321,16 @@ const structuredData = [
           </div>
         </div>
         <div class="related-carousel__track" data-rc-track>
-          {relatedWithUrls.map(({ entry: e, url }) => (
+          {relatedWithUrls.map(({ entry: e, url, title }) => (
             <a href={url} class="rc-card">
               {getPostHeroSrc(e) && (
                 <img class="rc-card__img" src={getPostHeroSrc(e)!} alt="" loading="lazy" decoding="async" width="320" height="180" />
               )}
               <div class="rc-card__body">
                 <span class="rc-card__cat" style={`color:${categoryMap[e.data.category]?.accent}`}>
-                  {categoryMap[e.data.category]?.shortLabel}
+                  {t("nl", `categories.${e.data.category}.shortLabel`)}
                 </span>
-                <p class="rc-card__title">{e.data.title}</p>
+                <p class="rc-card__title">{title}</p>
               </div>
             </a>
           ))}

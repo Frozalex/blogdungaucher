@@ -10,10 +10,10 @@
 const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
 
 const copy = {
-  fr: { placeholder: "Rechercher un article…", dialog: "Recherche", start: "Ex. Alzheimer, TDAH, Elo, minimax, dopamine…", allLink: "Recherche avancée" },
-  en: { placeholder: "Search articles…", dialog: "Search", start: "e.g. Alzheimer, ADHD, Elo, minimax, dopamine…", allLink: "Advanced search" },
-  "pt-br": { placeholder: "Buscar artigos…", dialog: "Busca", start: "ex. Alzheimer, TDAH, Elo, minimax, dopamina…", allLink: "Busca avançada" },
-  nl: { placeholder: "Artikelen zoeken…", dialog: "Zoeken", start: "bijv. Alzheimer, ADHD, Elo, minimax, dopamine…", allLink: "Uitgebreid zoeken" },
+  fr: { placeholder: "Rechercher un article…", dialog: "Recherche", start: "Ex. Alzheimer, TDAH, Elo, minimax, dopamine…", allLink: "Recherche avancée", close: "Fermer" },
+  en: { placeholder: "Search articles…", dialog: "Search", start: "e.g. Alzheimer, ADHD, Elo, minimax, dopamine…", allLink: "Advanced search", close: "Close" },
+  "pt-br": { placeholder: "Buscar artigos…", dialog: "Busca", start: "ex. Alzheimer, TDAH, Elo, minimax, dopamina…", allLink: "Busca avançada", close: "Fechar" },
+  nl: { placeholder: "Artikelen zoeken…", dialog: "Zoeken", start: "bijv. Alzheimer, ADHD, Elo, minimax, dopamine…", allLink: "Uitgebreid zoeken", close: "Sluiten" },
 } as const;
 const c = copy[lang] ?? copy.fr;
 const searchPageHref = `/${lang}/recherche/`;
@@ -35,7 +35,7 @@ const searchPageHref = `/${lang}/recherche/`;
         autocomplete="off"
         spellcheck="false"
       />
-      <button class="search-overlay__esc" data-search-close type="button" aria-label="Fermer"><kbd>Esc</kbd></button>
+      <button class="search-overlay__esc" data-search-close type="button" aria-label={c.close}><kbd>Esc</kbd></button>
     </div>
     <p class="search-overlay__state" data-search-state aria-live="polite">{c.start}</p>
     <ul class="search-overlay__results" data-search-results role="list"></ul>

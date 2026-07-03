@@ -2,6 +2,7 @@
 import AdBanner from "./AdBanner.astro";
 import ArticleCard from "./ArticleCard.astro";
 import { categoryMap, categorySlugs } from "../data/site";
+import { t } from "../i18n/translations";
 import { swapLangPrefix } from "../utils/lang-paths";
 import { getFeaturedPosts, filterPostsForLang, type BlogEntry } from "../utils/blog";
 
@@ -110,6 +111,24 @@ const homeByLang: Record<"fr" | "en" | "pt-br" | "nl", HomeCopy> = {
 };
 
 const c = homeByLang[lang];
+
+// Libellés de rubrique localisés côté serveur (repli sur categoryMap FR si clé absente).
+const catShort = (slug: (typeof categorySlugs)[number]) => {
+  const v = t(lang, `categories.${slug}.shortLabel`);
+  return v.startsWith("categories.") ? categoryMap[slug].shortLabel : v;
+};
+const catTagline = (slug: (typeof categorySlugs)[number]) => {
+  const v = t(lang, `categories.${slug}.tagline`);
+  return v.startsWith("categories.") ? categoryMap[slug].tagline : v;
+};
+
+// Titres d'exemple des cartes décoratives (promo-split B), localisés.
+const promoEx = ({
+  fr: ["Échecs et sommeil", "Le syndrome de l'imposteur"],
+  en: ["Chess and sleep", "Impostor syndrome"],
+  "pt-br": ["Xadrez e sono", "A síndrome do impostor"],
+  nl: ["Schaken en slaap", "Het impostorsyndroom"],
+} as const)[lang] ?? ["Échecs et sommeil", "Le syndrome de l'imposteur"];
 
 // Article « phare » : premier article éditorialement mis en avant (featured),
 // classé par featuredRank ; repli sur le plus récent si aucun n'est marqué.
@@ -264,8 +283,8 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
                   </svg>
                 )}
               </span>
-              <h3 class="feature-card__title">{cat.shortLabel}</h3>
-              <p class="feature-card__text">{cat.tagline}</p>
+              <h3 class="feature-card__title">{catShort(slug)}</h3>
+              <p class="feature-card__text">{catTagline(slug)}</p>
               <span class="feature-card__meta">
                 <span>{count > 0 ? articleCountLabel(count) : (lang === "en" ? "Explore" : lang === "pt-br" ? "Explorar" : lang === "nl" ? "Verkennen" : "Explorer")}</span>
                 <svg class="feature-card__arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
@@ -338,12 +357,12 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
       <div class="promo-split__visual" aria-hidden="true">
         <div class="promo-card promo-card--stack">
           <div class="promo-mini-card" style="--pc:#5b9fd4">
-            <span>Science du jeu</span>
-            <strong>Échecs et sommeil</strong>
+            <span>{catShort("science")}</span>
+            <strong>{promoEx[0]}</strong>
           </div>
           <div class="promo-mini-card promo-mini-card--offset" style="--pc:#f0a050">
-            <span>Esprit compétitif</span>
-            <strong>Le syndrome de l'imposteur</strong>
+            <span>{catShort("esprit")}</span>
+            <strong>{promoEx[1]}</strong>
           </div>
         </div>
       </div>
@@ -370,7 +389,7 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
                 role="tab"
                 aria-selected="false"
                 style={`--tab-accent: ${categoryMap[slug].accent}`}
-              >{categoryMap[slug].shortLabel}</button>
+              >{catShort(slug)}</button>
             ))}
           </div>
           <!-- Recherche -->

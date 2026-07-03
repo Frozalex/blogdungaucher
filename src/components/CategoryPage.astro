@@ -11,6 +11,7 @@ import {
   getPostsByCategory,
 } from "../utils/blog";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
+import { t, type Lang } from "../i18n/translations";
 
 const { category, lang = "fr" } = Astro.props as { category : CategorySlug; lang?: SiteLang };
 const meta = categoryMap[category];
@@ -52,7 +53,14 @@ const canonPath = swapLangPrefix(frCanonical, lang);
 const catDescription =
   lang === "en"
     ? (meta.descriptionEn ?? meta.description)
-    : meta.description;
+    : lang === "pt-br" || lang === "nl"
+      ? t(lang as Lang, `categories.${category}.description`)
+      : meta.description;
+// Tagline localisée côté serveur pour pt-br/nl (le dict runtime ne couvre que fr/en).
+const catTagline =
+  lang === "pt-br" || lang === "nl"
+    ? t(lang as Lang, `categories.${category}.tagline`)
+    : meta.tagline;
 
 const blogHref = swapLangPrefix("/fr/blog/", lang);
 
@@ -120,7 +128,7 @@ const seeAllLabel =
     <span class="cat-hero__logo" aria-hidden="true"></span>
     <div class="container">
       <h1 class="cat-hero__title reveal" data-t={`categories.${category}.label`}>{meta.label}</h1>
-      <p class="cat-tagline reveal" data-t={`categories.${category}.tagline`}>{meta.tagline}</p>
+      <p class="cat-tagline reveal" data-t={`categories.${category}.tagline`}>{catTagline}</p>
       {!landingRich && <p class="cat-desc reveal">{catDescription}</p>}
 
       {posts.length > 0 && (
