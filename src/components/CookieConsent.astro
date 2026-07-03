@@ -78,7 +78,9 @@ const consentCopy = {
   },
 } as const;
 const c = consentCopy[lang] ?? consentCopy.fr;
-const privacyHref = lang === "en" ? "/en/politique-confidentialite/" : "/fr/politique-confidentialite/";
+// Seule la version FR de la politique existe → on y pointe quelle que soit la langue
+// (évite un 404 sur /en/politique-confidentialite/ qui n'est pas générée).
+const privacyHref = "/fr/politique-confidentialite/";
 ---
 
 <!-- ── Backdrop ──────────────────────────────────────────────── -->

@@ -112,19 +112,17 @@ const requiredNote = lang === "en"
     <div class="container footer-bottom-bar__inner">
       <p>&copy; {new Date().getFullYear()} <span data-t="nav.siteName">{tt("nav.siteName", "Blog d'un Gaucher")}</span></p>
       <div class="footer-bottom-links">
-        <a href={lang === "en" ? "/en/mentions-legales/" : "/fr/mentions-legales/"}>
-          {lang === "en" ? "Terms" : "Mentions légales"}
-        </a>
-        <a href={lang === "en" ? "/en/politique-confidentialite/" : "/fr/politique-confidentialite/"}>
-          {lang === "en" ? "Privacy" : "Confidentialité"}
-        </a>
-        <a href={aboutHref}>{lang === "en" ? "About" : "À propos"}</a>
+        {/* Pages légales : seules les versions FR existent → tous les liens y pointent
+            (évite un 404 sur les liens /en/ qui n'ont pas de page). */}
+        <a href="/fr/mentions-legales/" data-t="footer.legal">{tt("footer.legal", "Mentions légales")}</a>
+        <a href="/fr/politique-confidentialite/" data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
+        <a href={aboutHref}>{lang === "en" ? "About" : lang === "pt-br" ? "Sobre" : lang === "nl" ? "Over" : "À propos"}</a>
       </div>
       <!-- Icônes pièces d'échecs en guise d'icônes sociales -->
       <div class="footer-chess-icons" aria-hidden="true">
-        <span title="Science">♞</span>
-        <span title="Esprit">♛</span>
-        <span title="Société">♜</span>
+        <span title={tt("categories.science.label", "Science")}>♞</span>
+        <span title={tt("categories.esprit.label", "Esprit")}>♛</span>
+        <span title={tt("categories.societe.label", "Société")}>♜</span>
       </div>
     </div>
   </div>

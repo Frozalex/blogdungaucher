@@ -130,6 +130,23 @@ const promoEx = ({
   nl: ["Schaken en slaap", "Het impostorsyndroom"],
 } as const)[lang] ?? ["Échecs et sommeil", "Le syndrome de l'imposteur"];
 
+// Rubriques réellement affichées (Grand oral est FR-only) → le titre annonce le
+// vrai nombre au lieu d'un « quatre » codé en dur qui ne colle pas en pt-br/en/nl.
+const pillarSlugs = categorySlugs.filter((slug) => lang === "fr" || slug !== "grand-oral");
+const pillarCount = pillarSlugs.length;
+const pillarWords: Record<string, Record<number, string>> = {
+  fr: { 3: "Trois", 4: "Quatre" },
+  en: { 3: "Three", 4: "Four" },
+  "pt-br": { 3: "Três", 4: "Quatro" },
+  nl: { 3: "Drie", 4: "Vier" },
+};
+const pillarNumberWord = pillarWords[lang]?.[pillarCount] ?? String(pillarCount);
+const pillarsTitle =
+  lang === "en" ? `${pillarNumberWord} angles to explore the game`
+  : lang === "pt-br" ? `${pillarNumberWord} ângulos para explorar o jogo`
+  : lang === "nl" ? `${pillarNumberWord} invalshoeken om het spel te verkennen`
+  : `${pillarNumberWord} angles pour explorer le jeu`;
+
 // Article « phare » : premier article éditorialement mis en avant (featured),
 // classé par featuredRank ; repli sur le plus récent si aucun n'est marqué.
 const featuredRanked = filterPostsForLang(await getFeaturedPosts(), lang)
@@ -242,11 +259,11 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
     <div class="container">
       <div class="pillars__head">
         <span class="eyebrow">{lang === "en" ? "(Sections)" : lang === "pt-br" ? "(Seções)" : lang === "nl" ? "(Rubrieken)" : "(Rubriques)"}</span>
-        <h2 id="pillars-heading" class="pillars__title">{lang === "en" ? "Four angles to explore the game" : lang === "pt-br" ? "Quatro ângulos para explorar o jogo" : lang === "nl" ? "Vier invalshoeken om het spel te verkennen" : "Quatre angles pour explorer le jeu"}</h2>
+        <h2 id="pillars-heading" class="pillars__title">{pillarsTitle}</h2>
       </div>
 
       <div class="pillars__grid reveal-group">
-        {categorySlugs.filter((slug) => lang === "fr" || slug !== "grand-oral").map((slug) => {
+        {pillarSlugs.map((slug) => {
           const cat = categoryMap[slug];
           const href = lang === "fr" ? cat.href : swapLangPrefix(cat.href, lang);
           const count = postsByCategory[slug] ?? 0;
@@ -382,7 +399,7 @@ const sectionsId = lang === "en" ? "sections" : "rubriques";
           <!-- Onglets -->
           <div class="allposts__tabs" role="tablist" aria-label="Filtrer par rubrique">
             <button class="tab active" data-filter="all" role="tab" aria-selected="true">{c.tabAll}</button>
-            {categorySlugs.filter((slug) => lang === "fr" || slug !== "grand-oral").map((slug) => (
+            {pillarSlugs.map((slug) => (
               <button
                 class="tab"
                 data-filter={slug}

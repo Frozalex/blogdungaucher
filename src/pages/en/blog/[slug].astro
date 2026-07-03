@@ -1,5 +1,5 @@
 ---
-import { render, getEntry } from "astro:content";
+import { render, getEntry, getCollection } from "astro:content";
 
 // KaTeX CSS chargé ici (et non dans BaseLayout) : seuls les articles peuvent contenir des formules.
 import "katex/dist/katex.min.css";
@@ -13,6 +13,7 @@ import FocusMode from "../../../components/FocusMode.astro";
 import TextHighlight from "../../../components/TextHighlight.astro";
 
 import { categoryMap, siteConfig } from "../../../data/site";
+import { t } from "../../../i18n/translations";
 import {
   absoluteUrl,
   buildArticleJsonLd,
@@ -112,8 +113,18 @@ const related = filterPostsForLang(
   "en",
 ).slice(0, 3);
 
+// Titres EN des articles liés (repli sur le titre FR si pas de traduction publiée).
+const enTitleByFrSlug = new Map(
+  (await getCollection("enTranslations"))
+    .filter((e) => !e.data.draft)
+    .map((e) => [e.data.frSlug ?? e.id.replace(/\.mdx?$/i, "").split("/").filter(Boolean).pop(), e.data.title] as const),
+);
 const relatedWithUrls = await Promise.all(
-  related.map(async (e) => ({ entry: e, url: await getPostUrlEn(e) })),
+  related.map(async (e) => ({
+    entry: e,
+    url: await getPostUrlEn(e),
+    title: enTitleByFrSlug.get(getPostSlug(e)) ?? e.data.title,
+  })),
 );
 
 const postUrlEn = getPostUrlEnSync(post, enSlug);
@@ -127,6 +138,8 @@ const enDesc         = enEntry?.data?.seoDescription ?? enEntry?.data?.excerpt ?
 const displayTitle   = enEntry?.data?.title   ?? post.data.title;
 const displayExcerpt = enEntry?.data?.excerpt ?? post.data.excerpt;
 const hasEnTranslation = !!enEntry;
+// Tags : uniquement ceux de la traduction EN (pas les tags FR de la source).
+const displayTags = enEntry?.data?.tags ?? [];
 
 const heroSrc = getPostHeroSrc(post);
 const heroImage = heroSrc ? post.data.heroImage : undefined;
@@ -235,10 +248,10 @@ const structuredData = [
       </div>
     </div>
 
-    {post.data.tags && post.data.tags.length > 0 && (
+    {displayTags.length > 0 && (
       <div class="container">
         <nav class="article-tags hero-tags" aria-label="Tags">
-          {post.data.tags.slice(0, 6).map((tag) => (
+          {displayTags.slice(0, 6).map((tag) => (
             <a href={`/en/recherche/?q=${encodeURIComponent(tag)}`} class="article-tag">{tag}</a>
           ))}
         </nav>
@@ -320,16 +333,16 @@ const structuredData = [
           </div>
         </div>
         <div class="related-carousel__track" data-rc-track>
-          {relatedWithUrls.map(({ entry: e, url }) => (
+          {relatedWithUrls.map(({ entry: e, url, title }) => (
             <a href={url} class="rc-card">
               {getPostHeroSrc(e) && (
                 <img class="rc-card__img" src={getPostHeroSrc(e)!} alt="" loading="lazy" decoding="async" width="320" height="180" />
               )}
               <div class="rc-card__body">
                 <span class="rc-card__cat" style={`color:${categoryMap[e.data.category]?.accent}`}>
-                  {categoryMap[e.data.category]?.shortLabel}
+                  {t("en", `categories.${e.data.category}.shortLabel`)}
                 </span>
-                <p class="rc-card__title">{e.data.title}</p>
+                <p class="rc-card__title">{title}</p>
               </div>
             </a>
           ))}

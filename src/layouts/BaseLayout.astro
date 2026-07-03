@@ -59,6 +59,7 @@ const {
   ptBrPath,
   nlPath,
   omitEnDeAlternateLinks = false,
+  omitPtBrNlAlternates = false,
   prevHref,
   nextHref,
 } = Astro.props as {
@@ -83,6 +84,9 @@ const {
   nlPath?: string;
   /** Articles FR uniquement (ex. Grand oral) : pas d’hreflang en/de/pt-br vers des URLs inexistantes. */
   omitEnDeAlternateLinks?: boolean;
+  /** Pages FR+EN sans version pt-br/nl (ex. Dissertations) : garde l’hreflang EN
+   *  mais pas pt-BR/nl, qui pointeraient vers des URLs 404. */
+  omitPtBrNlAlternates?: boolean;
   /** Pagination : liens rel="prev" et rel="next" pour les moteurs. */
   prevHref?: string;
   nextHref?: string;
@@ -320,8 +324,8 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         <link rel="alternate" hrefLang="fr" href={frCanonicalUrl} />
         <link rel="alternate" hrefLang="en" href={enCanonicalUrl} />
         {/* hreflang "de" désactivé : les pages allemandes ne sont plus servies. */}
-        {ptBrLive && <link rel="alternate" hrefLang="pt-BR" href={ptBrCanonicalUrl} />}
-        {nlLive && <link rel="alternate" hrefLang="nl" href={nlCanonicalUrl} />}
+        {ptBrLive && !omitPtBrNlAlternates && <link rel="alternate" hrefLang="pt-BR" href={ptBrCanonicalUrl} />}
+        {nlLive && !omitPtBrNlAlternates && <link rel="alternate" hrefLang="nl" href={nlCanonicalUrl} />}
         <link rel="alternate" hrefLang="x-default" href={frCanonicalUrl} />
       </>
     )}
