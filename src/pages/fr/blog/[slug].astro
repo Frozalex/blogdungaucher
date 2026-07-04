@@ -52,7 +52,7 @@ const category = categoryMap[post.data.category];
 
 const faqs = post.data.faq ?? [];
 const stripInlineFaq = faqs.length > 0;
-const mdForArticle = stripInlineFaq ? stripFaqH2Section(post.body) : post.body;
+const mdForArticle = stripInlineFaq ? stripFaqH2Section(post.body ?? "") : (post.body ?? "");
 
 let Content : Awaited<ReturnType<typeof render>>["Content"] | undefined;
 let headings : Awaited<ReturnType<typeof render>>["headings"];
@@ -68,7 +68,7 @@ if (stripInlineFaq) {
   headings = r.headings;
 }
 
-const readingTime = post.data.readingTime ?? calculateReadingTime(post.body);
+const readingTime = post.data.readingTime ?? calculateReadingTime(post.body ?? "");
 
 const allPosts = await getAllPosts();
 const currentTags = new Set(post.data.tags ?? []);

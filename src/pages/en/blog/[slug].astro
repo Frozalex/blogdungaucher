@@ -68,7 +68,7 @@ const englishMarkdown = enEntry?.body;
 
 const faqsForDisplay = enEntry?.data?.faq ?? post.data.faq ?? [];
 const stripInlineFaq = faqsForDisplay.length > 0;
-const mdSource = englishMarkdown ?? post.body;
+const mdSource = englishMarkdown ?? post.body ?? "";
 const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
 
 let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
@@ -78,7 +78,7 @@ let englishHtml: string | undefined;
 if (englishMarkdown) {
   const rendered = stripInlineFaq
     ? renderEnglishMarkdown(mdForArticle)
-    : renderEnglishMarkdown(englishMarkdown);
+    : renderEnglishMarkdown(englishMarkdown ?? "");
   englishHtml = rendered.html;
   headings = rendered.headings;
 } else if (stripInlineFaq) {
@@ -95,7 +95,7 @@ const category = categoryMap[post.data.category];
 
 const readingTime =
   post.data.readingTime ??
-  (englishMarkdown ? calculateReadingTime(englishMarkdown) : calculateReadingTime(post.body));
+  (englishMarkdown ? calculateReadingTime(englishMarkdown) : calculateReadingTime(post.body ?? ""));
 
 const allPosts = await getAllPosts();
 const currentTags = new Set(post.data.tags ?? []);

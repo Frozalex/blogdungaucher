@@ -3,11 +3,8 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "baseUrl": ".",
-    "paths": {
-      "@remotion/*": ["remotion/src/*"]
-    }
+    "baseUrl": "."
   },
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+  "exclude": ["dist", "motion-canvas"]
 }

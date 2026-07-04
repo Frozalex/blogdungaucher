@@ -69,7 +69,7 @@ const nlMarkdown = nlEntry?.body;
 
 const faqsForDisplay = nlEntry?.data?.faq ?? post.data.faq ?? [];
 const stripInlineFaq = faqsForDisplay.length > 0;
-const mdSource = nlMarkdown ?? post.body;
+const mdSource = nlMarkdown ?? post.body ?? "";
 const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
 
 let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
@@ -79,7 +79,7 @@ let nlHtml: string | undefined;
 if (nlMarkdown) {
   const rendered = stripInlineFaq
     ? renderEnglishMarkdown(mdForArticle)
-    : renderEnglishMarkdown(nlMarkdown);
+    : renderEnglishMarkdown(nlMarkdown ?? "");
   nlHtml = rendered.html;
   headings = rendered.headings;
 } else if (stripInlineFaq) {
@@ -96,7 +96,7 @@ const category = categoryMap[post.data.category];
 
 const readingTime =
   post.data.readingTime ??
-  (nlMarkdown ? calculateReadingTime(nlMarkdown) : calculateReadingTime(post.body));
+  (nlMarkdown ? calculateReadingTime(nlMarkdown) : calculateReadingTime(post.body ?? ""));
 
 const allPosts = await getAllPosts();
 const related = filterPostsForLang(

@@ -316,17 +316,17 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <link rel="canonical" href={canonicalUrl} />
     {omitEnDeAlternateLinks ? (
       <>
-        <link rel="alternate" hrefLang="fr" href={frCanonicalUrl} />
-        <link rel="alternate" hrefLang="x-default" href={frCanonicalUrl} />
+        <link rel="alternate" hreflang="fr" href={frCanonicalUrl} />
+        <link rel="alternate" hreflang="x-default" href={frCanonicalUrl} />
       </>
     ) : (
       <>
-        <link rel="alternate" hrefLang="fr" href={frCanonicalUrl} />
-        <link rel="alternate" hrefLang="en" href={enCanonicalUrl} />
+        <link rel="alternate" hreflang="fr" href={frCanonicalUrl} />
+        <link rel="alternate" hreflang="en" href={enCanonicalUrl} />
         {/* hreflang "de" désactivé : les pages allemandes ne sont plus servies. */}
-        {ptBrLive && !omitPtBrNlAlternates && <link rel="alternate" hrefLang="pt-BR" href={ptBrCanonicalUrl} />}
-        {nlLive && !omitPtBrNlAlternates && <link rel="alternate" hrefLang="nl" href={nlCanonicalUrl} />}
-        <link rel="alternate" hrefLang="x-default" href={frCanonicalUrl} />
+        {ptBrLive && !omitPtBrNlAlternates && <link rel="alternate" hreflang="pt-BR" href={ptBrCanonicalUrl} />}
+        {nlLive && !omitPtBrNlAlternates && <link rel="alternate" hreflang="nl" href={nlCanonicalUrl} />}
+        <link rel="alternate" hreflang="x-default" href={frCanonicalUrl} />
       </>
     )}
     {/* Flux RSS de la langue courante : fr → /rss.xml ; en → /en/rss.xml ; pt-br → /pt-br/rss.xml.

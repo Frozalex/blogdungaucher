@@ -329,7 +329,7 @@ export async function buildArticleJsonLd(
   };
 
   // Métriques de lecture
-  const words = post.body.trim().split(/\s+/).filter(Boolean).length;
+  const words = (post.body ?? "").trim().split(/\s+/).filter(Boolean).length;
   const readingMinutes = Math.max(1, Math.ceil(words / 200));
 
   // Images : OG (dimensions fixes 1200×630) + hero Wikimedia si distinct

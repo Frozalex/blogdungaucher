@@ -70,7 +70,7 @@ const ptBrMarkdown = ptBrEntry?.body;
 
 const faqsForDisplay = ptBrEntry?.data?.faq ?? post.data.faq ?? [];
 const stripInlineFaq = faqsForDisplay.length > 0;
-const mdSource = ptBrMarkdown ?? post.body;
+const mdSource = ptBrMarkdown ?? post.body ?? "";
 const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
 
 let Content: Awaited<ReturnType<typeof render>>["Content"] | undefined;
@@ -80,7 +80,7 @@ let ptBrHtml: string | undefined;
 if (ptBrMarkdown) {
   const rendered = stripInlineFaq
     ? renderEnglishMarkdown(mdForArticle)
-    : renderEnglishMarkdown(ptBrMarkdown);
+    : renderEnglishMarkdown(ptBrMarkdown ?? "");
   ptBrHtml = rendered.html;
   headings = rendered.headings;
 } else if (stripInlineFaq) {
@@ -97,7 +97,7 @@ const category = categoryMap[post.data.category];
 
 const readingTime =
   post.data.readingTime ??
-  (ptBrMarkdown ? calculateReadingTime(ptBrMarkdown) : calculateReadingTime(post.body));
+  (ptBrMarkdown ? calculateReadingTime(ptBrMarkdown) : calculateReadingTime(post.body ?? ""));
 
 const allPosts = await getAllPosts();
 const related = filterPostsForLang(
