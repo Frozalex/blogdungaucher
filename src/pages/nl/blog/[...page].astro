@@ -116,7 +116,7 @@ const enCanonicalPath = getBlogIndexPagePath("en", page.currentPage);
         currentPage={page.currentPage}
         lastPage={page.lastPage}
         pages={paginationPages}
-        getHref={(n) => getBlogIndexPagePath("nl", n)}
+        getHref={(n: number) => getBlogIndexPagePath("nl", n)}
         prevHref={prevPageHref}
         nextHref={nextPageHref}
         ariaLabel="Paginanavigatie"

@@ -213,11 +213,11 @@ const searchPageHref = `/${lang}/recherche/`;
   let overlayCtrl: AbortController | null = null;
 
   function initSearchOverlay() {
-    const overlay = document.getElementById("searchOverlay");
+    const overlay = document.getElementById("searchOverlay")!;
     if (!overlay) return;
-    const input   = overlay.querySelector<HTMLInputElement>("#searchOverlayInput");
-    const stateEl = overlay.querySelector<HTMLElement>("[data-search-state]");
-    const listEl  = overlay.querySelector<HTMLUListElement>("[data-search-results]");
+    const input   = overlay.querySelector<HTMLInputElement>("#searchOverlayInput")!;
+    const stateEl = overlay.querySelector<HTMLElement>("[data-search-state]")!;
+    const listEl  = overlay.querySelector<HTMLUListElement>("[data-search-results]")!;
     const allLink = overlay.querySelector<HTMLElement>("[data-search-all]");
     if (!input || !stateEl || !listEl) return;
 

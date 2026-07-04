@@ -854,7 +854,7 @@ const structuredData = [
 </style>
 
 <script>
-  let articleCleanup;
+  let articleCleanup: (() => void) | undefined;
 
   function initArticlePage() {
     articleCleanup?.();
@@ -863,7 +863,7 @@ const structuredData = [
     if (!articleBody) return;
 
     articleBody
-      .querySelectorAll('a[href^="http"]')
+      .querySelectorAll<HTMLAnchorElement>('a[href^="http"]')
       .forEach((link) => {
         link.target = "_blank";
         link.rel = "noopener noreferrer";
@@ -871,9 +871,9 @@ const structuredData = [
 
     // ── Carrousel "Pour vous" ──
     const track = document.querySelector("[data-rc-track]");
-    const prevBtn = document.querySelector("[data-rc-prev]");
-    const nextBtn = document.querySelector("[data-rc-next]");
-    let onTrackScroll = null;
+    const prevBtn = document.querySelector<HTMLButtonElement>("[data-rc-prev]");
+    const nextBtn = document.querySelector<HTMLButtonElement>("[data-rc-next]");
+    let onTrackScroll: (() => void) | null = null;
     if (track && prevBtn && nextBtn) {
       const step = () => {
         const card = track.querySelector(".rc-card");

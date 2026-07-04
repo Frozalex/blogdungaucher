@@ -192,8 +192,8 @@ const sc = shareCopy[lang] ?? shareCopy.fr;
   const btn   = document.getElementById("copy-link");
   const nativeBtn = document.getElementById("native-share");
   const label = document.getElementById("copy-label");
-  const iconCopy  = btn?.querySelector(".icon-copy");
-  const iconCheck = btn?.querySelector(".icon-check");
+  const iconCopy  = btn?.querySelector<HTMLElement>(".icon-copy");
+  const iconCheck = btn?.querySelector<HTMLElement>(".icon-check");
 
   if (!navigator.share && nativeBtn) {
     nativeBtn.style.display = "none";

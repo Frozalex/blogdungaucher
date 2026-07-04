@@ -53,7 +53,7 @@ const navLabel = ariaLabel ?? pg.nav;
 
     <!-- Numéros de page + ellipses -->
     <div class="pag-numbers" role="list">
-      {pages.map((p, i) => {
+      {pages.map((p: number, i: number) => {
         const prev = pages[i - 1];
         const showEllipsis = prev !== undefined && p - prev > 1;
         return (

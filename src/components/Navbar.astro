@@ -797,12 +797,12 @@ const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
 </style>
 
 <script>
-  let _onScroll = null;
-  let _onMouse  = null;
+  let _onScroll: any = null;
+  let _onMouse: any = null;
   let _ctrl : AbortController | null = null;
 
   function initNavbar() {
-    const navbar = document.getElementById("navbar");
+    const navbar = document.getElementById("navbar") as HTMLElement;
     if (!navbar) return;
 
     // Nettoyer les anciens listeners pour éviter les doublons
@@ -901,7 +901,7 @@ const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
     const menu   = document.getElementById("mobileMenu");
     const menuLinks = menu?.querySelectorAll("a");
 
-    function setMenuState(isOpen) {
+    function setMenuState(isOpen: boolean) {
       const lang = window.__lang || "fr";
       const dict = window.__i18n?.[lang] || {};
       burger?.setAttribute("aria-expanded", isOpen ? "true" : "false");

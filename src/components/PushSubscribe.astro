@@ -37,8 +37,10 @@ const p = pushCopy[lang] ?? pushCopy.fr;
 
 <script>
 function initPushSubscribe() {
-  const btn = document.getElementById("push-subscribe-btn");
-  const label = document.getElementById("push-label");
+  // Cast non-null : le guard ci-dessous protège au runtime, mais le type non-null
+  // permet aux fonctions hoistées (setState) de voir btn/label sans ts(18047).
+  const btn = document.getElementById("push-subscribe-btn") as HTMLButtonElement;
+  const label = document.getElementById("push-label") as HTMLElement;
   if (!btn || !label || btn.dataset.bound === "1") return;
   btn.dataset.bound = "1";
 
@@ -56,7 +58,7 @@ function initPushSubscribe() {
     return;
   }
 
-  function urlBase64ToUint8Array(base64String) {
+  function urlBase64ToUint8Array(base64String: string) {
     try {
       const clean = base64String.replace(/[^A-Za-z0-9+/=_-]/g, "");
       const padding = "=".repeat((4 - (clean.length % 4)) % 4);
@@ -77,7 +79,7 @@ function initPushSubscribe() {
     titleOff: btn.dataset.titleOff   || "Recevoir une notification à chaque nouvel article",
   };
 
-  function setState(state) {
+  function setState(state: string) {
     btn.disabled = state === "loading";
     btn.classList.toggle("push-btn--active", state === "on");
     btn.classList.toggle("push-btn--error", state === "error");

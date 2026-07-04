@@ -110,7 +110,7 @@ const structuredData = isFirstPage
         currentPage={page.currentPage}
         lastPage={page.lastPage}
         pages={paginationPages}
-        getHref={(n) => getBlogIndexPagePath("fr", n)}
+        getHref={(n: number) => getBlogIndexPagePath("fr", n)}
         prevHref={prevPageHref}
         nextHref={nextPageHref}
         ariaLabel="Navigation entre les pages"
@@ -198,8 +198,8 @@ const structuredData = isFirstPage
 
 <script>
   function initBlogFilters() {
-    const items = Array.from(document.querySelectorAll(".post-item"));
-    const chips = Array.from(document.querySelectorAll("[data-filter-category]"));
+    const items = Array.from(document.querySelectorAll<HTMLElement>(".post-item"));
+    const chips = Array.from(document.querySelectorAll<HTMLElement>("[data-filter-category]"));
     const empty = document.getElementById("listing-empty");
     if (!items.length || !chips.length || !empty) return;
 
@@ -212,7 +212,7 @@ const structuredData = isFirstPage
         item.hidden = !show;
         if (show) visible += 1;
       });
-      empty.hidden = visible > 0;
+      if (empty) empty.hidden = visible > 0;
     }
 
     chips.forEach((chip) => {

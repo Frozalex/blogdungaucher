@@ -331,12 +331,14 @@ for (const h of headings) {
       .filter(Boolean) as HTMLElement[];
 
     const setActive = (slug: string) => {
-      let activeLink: HTMLAnchorElement | null = null;
       allLinks.forEach((l) => {
-        const isActive = l.dataset.slug === slug;
-        l.classList.toggle("active", isActive);
-        if (isActive && l.closest(".toc-desktop")) activeLink = l;
+        l.classList.toggle("active", l.dataset.slug === slug);
       });
+      // `find` (au lieu d'une assignation dans forEach) : type correctement inféré,
+      // évite le narrowing-to-never de TS sur une variable assignée en closure.
+      const activeLink = Array.from(allLinks).find(
+        (l) => l.dataset.slug === slug && l.closest(".toc-desktop"),
+      ) ?? null;
       syncActiveBar(desktopNav, activeLink);
 
       // Auto-scroll du rail pour garder l'item actif visible
