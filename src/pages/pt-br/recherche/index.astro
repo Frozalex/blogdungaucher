@@ -141,7 +141,7 @@ const ptBrCount = allPosts.filter((p) => !isFrenchOnlyPost(p)).length;
     // L'index est déjà restreint au portugais (pf.options language pt-br), donc tous les
     // résultats pointent vers /pt-br/. On conserve un filtre d'URL défensif au cas où un
     // ancien index multilingue serait servi (cache/proxy), sans coût perceptible.
-    const all = await Promise.all(response.results.slice(0, 40).map((r) => r.data()));
+    const all = await Promise.all(response.results.slice(0, 40).map((r: any) => r.data()));
     const results = all.filter((d) => d.url.includes("/pt-br/")).slice(0, 20);
     render(results, q);
   }

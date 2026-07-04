@@ -141,7 +141,7 @@ const enCount = filterPostsForLang(allPosts, "en").length;
     }
 
     const response = await pf.search(q);
-    const results = await Promise.all(response.results.slice(0, 40).map((r) => r.data()));
+    const results = await Promise.all(response.results.slice(0, 40).map((r: any) => r.data()));
     render(results, q);
   }
 

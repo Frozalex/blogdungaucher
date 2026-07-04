@@ -152,7 +152,7 @@ const allPosts = await getAllPosts();
     }
 
     const response = await pf.search(q);
-    allResults = await Promise.all(response.results.slice(0, 40).map((r) => r.data()));
+    allResults = await Promise.all(response.results.slice(0, 40).map((r: any) => r.data()));
     render(allResults, q);
   }
 

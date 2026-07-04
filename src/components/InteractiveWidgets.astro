@@ -38,6 +38,21 @@
   //   root   : "max" (défaut) ou "min" — type de la racine.
   //   lang   : "fr" (défaut) ou "en" — langue des libellés.
   class MinimaxTree extends HTMLElement {
+    // Champs d'instance déclarés (web component vanilla) : lèvent les ts(2339)
+    // « property does not exist » sans changer le comportement runtime.
+    static STRINGS: any;
+    _nodes: any[] = [];
+    _root: any = null;
+    _T: any = null;
+    _W = 0;
+    _H = 0;
+    _els: Record<string, any> = {};
+    _edgeEls: Record<string, any> = {};
+    _nodeEls: Record<string, any> = {};
+    _steps: any[] = [];
+    _cursor = 0;
+    _timer: ReturnType<typeof setInterval> | null = null;
+
     connectedCallback() {
       if (this.dataset.ready) return; // évite double-init (re-connexion DOM)
       this.dataset.ready = "1";
@@ -60,7 +75,7 @@
     }
 
     /** Construit la structure d'arbre + les positions SVG. */
-    _build(leafVals, depth, rootIsMax, T) {
+    _build(leafVals: any, depth: any, rootIsMax: any, T: any) {
       const W = 760;
       const H = 380;
       const marginX = 34;
@@ -68,7 +83,7 @@
       const bottom = 338;
 
       // Niveaux 0..depth. nodes[level] = tableau de nœuds.
-      const levels = [];
+      const levels: any[] = [];
       let idc = 0;
       for (let l = 0; l <= depth; l++) {
         const count = 2 ** l;
@@ -95,7 +110,7 @@
       }
       // Liens parent → enfants.
       for (let l = 0; l < depth; l++) {
-        levels[l].forEach((node, i) => {
+        levels[l].forEach((node: any, i: any) => {
           node.children = [levels[l + 1][2 * i], levels[l + 1][2 * i + 1]];
         });
       }
@@ -113,8 +128,8 @@
     }
 
     /** Génère la séquence d'événements d'animation via alpha-bêta. */
-    _genSteps(pruning) {
-      const steps = [];
+    _genSteps(pruning: any) {
+      const steps: any[] = [];
       const reset = () => {
         this._nodes.forEach((nd) => {
           nd.value = nd.isLeaf ? nd.value : null;
@@ -125,7 +140,7 @@
       };
       reset();
 
-      const visit = (node, alpha, beta) => {
+      const visit = (node: any, alpha: any, beta: any) => {
         steps.push({ kind: "enter", id: node.id, alpha, beta });
         if (node.isLeaf) {
           steps.push({ kind: "leaf", id: node.id, value: node.value });
@@ -151,7 +166,7 @@
           }
           steps.push({ kind: "bounds", id: node.id, alpha, beta });
           if (pruning && alpha >= beta) {
-            const cut = node.children.slice(c + 1).map((ch) => ch.id);
+            const cut = node.children.slice(c + 1).map((ch: any) => ch.id);
             if (cut.length) steps.push({ kind: "prune", id: node.id, cut });
             break;
           }
@@ -304,7 +319,7 @@
       // Arêtes (clé "parentId-childId").
       this._edgeEls = {};
       this._nodes.forEach((nd) => {
-        nd.children.forEach((ch) => {
+        nd.children.forEach((ch: any) => {
           const line = document.createElementNS(ns, "line");
           line.setAttribute("x1", nd.x);
           line.setAttribute("y1", nd.y);
@@ -325,11 +340,11 @@
         let shape;
         if (nd.isLeaf) {
           shape = document.createElementNS(ns, "rect");
-          shape.setAttribute("x", nd.x - 16);
-          shape.setAttribute("y", nd.y - 14);
-          shape.setAttribute("width", 32);
-          shape.setAttribute("height", 28);
-          shape.setAttribute("rx", 6);
+          shape.setAttribute("x", String(nd.x - 16));
+          shape.setAttribute("y", String(nd.y - 14));
+          shape.setAttribute("width", "32");
+          shape.setAttribute("height", "28");
+          shape.setAttribute("rx", "6");
           shape.setAttribute("class", "node-shape leaf-box");
         } else {
           shape = document.createElementNS(ns, "polygon");
@@ -431,7 +446,7 @@
       return true;
     }
 
-    _apply(s) {
+    _apply(s: any) {
       const T = this._T;
       const node = this._nodes.find((n) => n.id === s.id) || this._nodes.find((n) => n.id === s.to);
       switch (s.kind) {
@@ -469,7 +484,7 @@
         }
         case "prune": {
           const nd = this._nodes.find((n) => n.id === s.id);
-          s.cut.forEach((cid) => this._markSubtreePruned(cid));
+          s.cut.forEach((cid: any) => this._markSubtreePruned(cid));
           this._setStatus(T.prune(nd.alpha, nd.beta));
           break;
         }
@@ -488,14 +503,14 @@
       void node;
     }
 
-    _markSubtreePruned(id) {
+    _markSubtreePruned(id: any) {
       const nd = this._nodes.find((n) => n.id === id);
       if (!nd) return;
       nd.state = "pruned";
-      nd.children.forEach((ch) => this._markSubtreePruned(ch.id));
+      nd.children.forEach((ch: any) => this._markSubtreePruned(ch.id));
     }
 
-    _clearActiveExcept(keep) {
+    _clearActiveExcept(keep: any) {
       // Les nœuds "active" qui ne sont pas sur le chemin courant et déjà résolus
       // restent "set". On ne touche pas aux états set/pruned.
       void keep;
@@ -526,7 +541,7 @@
       if (this._els) this._els.play.innerHTML = `▶ ${this._T.play}`;
     }
 
-    _setStatus(html) {
+    _setStatus(html: any) {
       if (this._els) this._els.status.innerHTML = html;
     }
 
@@ -545,24 +560,24 @@
       step: "Pas à pas",
       reset: "Réinitialiser",
       pruneLabel: "Élagage alpha-bêta",
-      intro: (p) =>
+      intro: (p: any) =>
         p
           ? "L'élagage est activé : les branches dont on peut prouver l'inutilité seront <strong>coupées</strong>. Lance la lecture."
           : "Le programme explore l'arbre en <strong>profondeur d'abord</strong>. Lance la lecture ou avance pas à pas.",
-      enter: (isMax) =>
+      enter: (isMax: any) =>
         isMax
           ? "Nœud <strong>MAX</strong> : je cherche à <strong>maximiser</strong> mon score parmi mes coups."
           : "Nœud <strong>MIN</strong> : l'adversaire cherche à <strong>minimiser</strong> mon score.",
       evalLeaf: () => "On atteint une <strong>feuille</strong> : la fonction d'évaluation donne un score.",
-      leafReturn: (v) => `Feuille évaluée à <strong>${v}</strong>. On remonte ce score au parent.`,
-      update: (isMax, v) =>
+      leafReturn: (v: any) => `Feuille évaluée à <strong>${v}</strong>. On remonte ce score au parent.`,
+      update: (isMax: any, v: any) =>
         isMax
           ? `Meilleur score MAX provisoire : <strong>${v}</strong>.`
           : `Meilleur score MIN provisoire : <strong>${v}</strong>.`,
-      prune: (a, b) =>
+      prune: (a: any, b: any) =>
         `<strong>Coupure !</strong> α (${a === -Infinity ? "−∞" : a}) ≥ β (${b === Infinity ? "+∞" : b}) : inutile d'explorer les branches restantes, elles ne changeront pas le résultat.`,
-      ret: (isMax, v) => `Le nœud ${isMax ? "MAX" : "MIN"} renvoie <strong>${v}</strong> à son parent.`,
-      done: (v) => `Exploration terminée. Le meilleur coup garantit un score de <span class="result">${v}</span>.`,
+      ret: (isMax: any, v: any) => `Le nœud ${isMax ? "MAX" : "MIN"} renvoie <strong>${v}</strong> à son parent.`,
+      done: (v: any) => `Exploration terminée. Le meilleur coup garantit un score de <span class="result">${v}</span>.`,
     },
     en: {
       title: "Interactive minimax tree",
@@ -573,22 +588,22 @@
       step: "Step",
       reset: "Reset",
       pruneLabel: "Alpha-beta pruning",
-      intro: (p) =>
+      intro: (p: any) =>
         p
           ? "Pruning is on: branches that can be proven useless will be <strong>cut</strong>. Press play."
           : "The program explores the tree <strong>depth-first</strong>. Press play or step through it.",
-      enter: (isMax) =>
+      enter: (isMax: any) =>
         isMax
           ? "<strong>MAX</strong> node: I try to <strong>maximise</strong> my score across my moves."
           : "<strong>MIN</strong> node: the opponent tries to <strong>minimise</strong> my score.",
       evalLeaf: () => "We reach a <strong>leaf</strong>: the evaluation function returns a score.",
-      leafReturn: (v) => `Leaf evaluated to <strong>${v}</strong>. The score is passed up to the parent.`,
-      update: (isMax, v) =>
+      leafReturn: (v: any) => `Leaf evaluated to <strong>${v}</strong>. The score is passed up to the parent.`,
+      update: (isMax: any, v: any) =>
         isMax ? `Best MAX score so far: <strong>${v}</strong>.` : `Best MIN score so far: <strong>${v}</strong>.`,
-      prune: (a, b) =>
+      prune: (a: any, b: any) =>
         `<strong>Cutoff!</strong> α (${a === -Infinity ? "−∞" : a}) ≥ β (${b === Infinity ? "+∞" : b}): no need to explore the remaining branches, they cannot change the result.`,
-      ret: (isMax, v) => `The ${isMax ? "MAX" : "MIN"} node returns <strong>${v}</strong> to its parent.`,
-      done: (v) => `Search complete. The best move guarantees a score of <span class="result">${v}</span>.`,
+      ret: (isMax: any, v: any) => `The ${isMax ? "MAX" : "MIN"} node returns <strong>${v}</strong> to its parent.`,
+      done: (v: any) => `Search complete. The best move guarantees a score of <span class="result">${v}</span>.`,
     },
   };
 

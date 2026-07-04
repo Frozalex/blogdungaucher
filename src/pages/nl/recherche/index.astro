@@ -131,7 +131,7 @@ const nlCount = allPosts.filter((p) => !isFrenchOnlyPost(p)).length;
     }
 
     const response = await pf.search(q);
-    const all = await Promise.all(response.results.slice(0, 40).map((r) => r.data()));
+    const all = await Promise.all(response.results.slice(0, 40).map((r: any) => r.data()));
     const results = all.filter((d) => d.url.includes("/nl/")).slice(0, 20);
     render(results, q);
   }
