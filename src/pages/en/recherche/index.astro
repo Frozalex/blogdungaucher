@@ -7,11 +7,14 @@ const allPosts = await getAllPosts();
 const enCount = filterPostsForLang(allPosts, "en").length;
 ---
 
+{/* noindex : résultats de recherche interne — même HTML statique servi pour tout ?q=…
+    (rendu Pagefind côté client). On n'indexe pas ces pages (reco Google). */}
 <BaseLayout
   title="Search | A Left-Hander's Blog"
   description="Search a chess article by keyword: Alzheimer, ADHD, Elo, AlphaZero, dopamine, stress, memory. Dozens of analyses available."
   canonicalPath="/en/recherche/"
   lang="en"
+  noindex={true}
   omitEnDeAlternateLinks={true}
 >
   <div class="search-page container">

@@ -9,11 +9,14 @@ const allPosts = await getAllPosts();
 const nlCount = allPosts.filter((p) => !isFrenchOnlyPost(p)).length;
 ---
 
+{/* noindex : résultats de recherche interne — même HTML statique servi pour tout ?q=…
+    (rendu Pagefind côté client). On n'indexe pas ces pages (reco Google). */}
 <BaseLayout
   title="Zoeken | Blog van een Linkshandige"
   description="Zoek een schaakartikelen op trefwoord: Alzheimer, ADHD, Elo, AlphaZero, dopamine, stress, geheugen. Meer dan 80 analyses beschikbaar."
   canonicalPath="/nl/recherche/"
   lang="nl"
+  noindex={true}
   omitEnDeAlternateLinks={true}
 >
   <div class="search-page container">

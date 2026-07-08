@@ -9,11 +9,14 @@ const allPosts = await getAllPosts();
 const ptBrCount = allPosts.filter((p) => !isFrenchOnlyPost(p)).length;
 ---
 
+{/* noindex : résultats de recherche interne — même HTML statique servi pour tout ?q=…
+    (rendu Pagefind côté client). On n'indexe pas ces pages (reco Google). */}
 <BaseLayout
   title="Buscar | Blog de um Canhoto"
   description="Busque um artigo de xadrez por palavra-chave : Alzheimer, TDAH, Elo, AlphaZero, dopamina, estresse, memória. Mais de 80 análises disponíveis."
   canonicalPath="/pt-br/recherche/"
   lang="pt-br"
+  noindex={true}
   omitEnDeAlternateLinks={true}
 >
   <div class="search-page container">

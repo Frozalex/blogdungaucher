@@ -5,10 +5,15 @@ import { getAllPosts } from "../../../utils/blog";
 const allPosts = await getAllPosts();
 ---
 
+{/* noindex : page de résultats de recherche interne. Le même HTML statique est servi pour
+    TOUT /fr/recherche/?q=… (Pagefind rend les résultats côté client), donc chaque requête
+    d'un visiteur deviendrait sinon une URL 200 indexable au contenu identique. Google
+    recommande explicitement de ne pas indexer les pages de recherche interne. */}
 <BaseLayout
   title="Rechercher, Blog d'un Gaucher"
   description="Recherchez un article sur les échecs par mot-clé : Alzheimer, TDAH, Elo, AlphaZero, Grand Oral, dopamine, stress, mémoire. Plus de 80 analyses disponibles."
   canonicalPath="/fr/recherche/"
+  noindex={true}
   omitEnDeAlternateLinks={true}
 >
   <div class="search-page container">

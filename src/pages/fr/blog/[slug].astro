@@ -200,8 +200,10 @@ const structuredData = [
     {post.data.tags && post.data.tags.length > 0 && (
       <div class="container">
         <nav class="article-tags hero-tags" aria-label="Tags">
+          {/* rel="nofollow" : ces liens de tags pointent vers la recherche interne (noindex) —
+              évite que Google découvre/crawle une URL ?q= par tag et par article. */}
           {post.data.tags.slice(0, 6).map((tag) => (
-            <a href={`/fr/recherche/?q=${encodeURIComponent(tag)}`} class="article-tag">{tag}</a>
+            <a href={`/fr/recherche/?q=${encodeURIComponent(tag)}`} class="article-tag" rel="nofollow">{tag}</a>
           ))}
         </nav>
       </div>

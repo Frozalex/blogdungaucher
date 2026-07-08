@@ -305,8 +305,12 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     </script>
     <meta name="google-adsense-account" content="ca-pub-1244325018333025" />
     {tags && tags.length > 0 && <meta name="keywords" content={tags.join(", ")} />}
+    {/* Pages noindex (recherche interne, pagination page 2+, 404, pages légales) :
+        `follow` et non `nofollow`. On refuse d'indexer la page elle-même, mais on laisse
+        Google suivre ses liens — sinon la pagination casse la découverte des articles
+        de page 2+ et le jus de lien ne circule plus. */}
     {effectiveNoindex ? (
-      <meta name="robots" content="noindex, nofollow" />
+      <meta name="robots" content="noindex, follow" />
     ) : (
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     )}
