@@ -9,6 +9,11 @@ ntfy/cache/
 # Worktrees / sandbox Claude Code (ne pas versionner)
 .claude/
 
+# Skills tiers installés via `npx skills add` (code tiers, non versionné ;
+# .claude/skills/* ne sont que des symlinks vers ce dossier)
+.agents/
+skills-lock.json
+
 # Variables d'environnement locales (secrets / overrides build)
 .env
 .env.*
