@@ -332,25 +332,16 @@ export async function buildArticleJsonLd(
   const words = (post.body ?? "").trim().split(/\s+/).filter(Boolean).length;
   const readingMinutes = Math.max(1, Math.ceil(words / 200));
 
-  // Images : OG (dimensions fixes 1200×630) + hero Wikimedia si distinct
-  const images: Record<string, unknown>[] = [
-    {
-      "@type": "ImageObject",
-      "@id": `${articleUrl}#primaryimage`,
-      url: absoluteUrl(imagePath),
-      width: 1200,
-      height: 630,
-    },
-  ];
+  // Images : OG (1200×630) + hero Wikimedia si distinct.
+  // Google ET les validateurs stricts (squirrel) acceptent une URL / un tableau
+  // d'URL pour Article.image — on évite l'ImageObject imbriqué que certains
+  // validateurs refusent, tout en gardant les images en tête de graphe.
+  const imageUrls: string[] = [absoluteUrl(imagePath)];
   const heroSrc = getPostHeroSrc(post);
   if (heroSrc) {
     const heroAbsolute = absoluteUrl(heroSrc);
     if (heroAbsolute !== absoluteUrl(imagePath)) {
-      images.push({
-        "@type": "ImageObject",
-        url: heroAbsolute,
-        ...(post.data.heroImage?.alt ? { caption: post.data.heroImage.alt } : {}),
-      });
+      imageUrls.push(heroAbsolute);
     }
   }
 
@@ -378,7 +369,7 @@ export async function buildArticleJsonLd(
       "@type": "WebPage",
       "@id": articleUrl,
     },
-    image: images.length === 1 ? images[0] : images,
+    image: imageUrls,
     articleSection:
       lang === "en" ? articleSectionEn[post.data.category] : category.label,
     keywords: post.data.tags?.join(", "),

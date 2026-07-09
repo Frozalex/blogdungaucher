@@ -10,7 +10,7 @@ readingTime: "17 min"
 pillar: "Mathématiques"
 tags: ["Nash", "équilibre", "ouvertures", "théorie des jeux", "échecs", "défense berlinoise", "Kramnik 2000", "trembling-hand", "mathématiques"]
 seoTitle: "Équilibre de Nash et ouvertures : pourquoi l'Espagnole dure 200 ans"
-seoDescription: "Sicilienne, défense berlinoise, refinements de Selten : comment l'équilibre de Nash explique la stabilité des ouvertures d'échecs et leurs ruptures les plus célèbres."
+seoDescription: "Sicilienne, défense berlinoise, refinements de Selten : comment l'équilibre de Nash explique la stabilité des ouvertures d'échecs et leurs ruptures célèbres."
 faq:
   - question: "Une ouverture \"réfutée\" cesse-t-elle d'exister ?"
     answer: >-

@@ -9,7 +9,7 @@ readingTime: "23 min"
 pillar: "Théorie de la décision"
 tags: ["décision sous incertitude", "échecs", "utilité espérée", "Bayes", "Kahneman", "Simon", "rationalité limitée"]
 seoTitle: "Décision sous incertitude aux échecs : utilité espérée, Bayes et rationalité limitée"
-seoDescription: "Utilité espérée, critère bayésien, aversion à la perte, rationalité limitée : les outils de la théorie de la décision appliqués au moment précis où tu choisis un coup sans tout savoir."
+seoDescription: "Utilité espérée, critère bayésien, aversion à la perte, rationalité limitée : la décision appliquée quand tu choisis un coup dans l'incertitude."
 ---
 
 Tu as quatre coups candidats. Tu n'as pas le temps de calculer chacun jusqu'au bout. Tu sais que ton évaluation est approximative. Tu sais que l'adversaire ne jouera pas forcément la meilleure réponse théorique. Tu dois choisir quand même.

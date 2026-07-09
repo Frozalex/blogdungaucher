@@ -98,7 +98,7 @@ Le neurotransmetteur central de ce circuit est la **dopamine**. Contrairement à
 
 ## La découverte de Schultz : l'erreur de prédiction
 
-Le neuroscientifique [Wolfram Schultz](https://www.neuroscience.cam.ac.uk/directory/profile.php?ws234) (Cambridge) a réalisé l'une des expériences les plus importantes de la neuroscience des récompenses. Dans une étude de 1997 publiée dans *Science*, il a enregistré l'activité des neurones dopaminergiques de singes exposés à des jus de fruits avec ou sans signaux préalables.
+Le neuroscientifique Wolfram Schultz (Cambridge) a réalisé l'une des expériences les plus importantes de la neuroscience des récompenses. Dans une étude de 1997 publiée dans *Science*, il a enregistré l'activité des neurones dopaminergiques de singes exposés à des jus de fruits avec ou sans signaux préalables.
 
 Résultat contre-intuitif : les neurones dopaminergiques ne s'activent pas au moment de la récompense (le jus), mais au moment du **signal qui la prédit** (la lumière). Et quand la récompense attendue n'arrive pas, il y a une **inhibition** des neurones dopaminergiques : un signal de "moins que prévu".
 
@@ -112,7 +112,7 @@ Aux échecs, plusieurs moments spécifiques correspondent à des pics d'activit�
 
 ### La découverte de la combinaison
 
-[John Kounios](https://drexel.edu/coas/faculty-staff/faculty-directory/Kounios-John/) (Drexel University) et [Mark Beeman](https://beemanlab.com) (Northwestern) ont étudié le moment de la perspicacité (l'"aha moment") dans la résolution de problèmes. Leur étude de 2014 dans *Psychological Science* utilise IRMf et EEG pour montrer qu'au moment où la solution émerge, il y a un burst d'activité gamma dans le cortex temporal droit, immédiatement suivi d'une activation du circuit de récompense.
+John Kounios (Drexel University) et [Mark Beeman](https://beemanlab.com) (Northwestern) ont étudié le moment de la perspicacité (l'"aha moment") dans la résolution de problèmes. Leur étude de 2014 dans *Psychological Science* utilise IRMf et EEG pour montrer qu'au moment où la solution émerge, il y a un burst d'activité gamma dans le cortex temporal droit, immédiatement suivi d'une activation du circuit de récompense.
 
 Ce moment : reconnaître soudainement que ta tour en b7 force un mat en 3 que l'adversaire ne peut pas éviter : a exactement ce profil. C'est un insight, et les insights activent le circuit de récompense.
 

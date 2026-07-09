@@ -11,10 +11,10 @@ const endpoint =
 
 // Placeholder + libellé bouton localisés côté serveur (le dict runtime ne couvre que fr/en).
 const formCopy = {
-  fr: { placeholder: "ton@email.com", submit: "S'inscrire" },
-  en: { placeholder: "your@email.com", submit: "Subscribe" },
-  "pt-br": { placeholder: "seu@email.com", submit: "Inscrever-se" },
-  nl: { placeholder: "jouw@email.com", submit: "Aanmelden" },
+  fr: { placeholder: "ton@email.com", submit: "S'inscrire", label: "Adresse email" },
+  en: { placeholder: "your@email.com", submit: "Subscribe", label: "Email address" },
+  "pt-br": { placeholder: "seu@email.com", submit: "Inscrever-se", label: "Endereço de e-mail" },
+  nl: { placeholder: "jouw@email.com", submit: "Aanmelden", label: "E-mailadres" },
 } as const;
 const fc = formCopy[lang] ?? formCopy.fr;
 ---
@@ -33,6 +33,7 @@ const fc = formCopy[lang] ?? formCopy.fr;
       required
       autocomplete="email"
       placeholder={fc.placeholder}
+      aria-label={fc.label}
       data-t-placeholder="newsletter.emailPlaceholder"
     />
     <button type="submit" class="nl-btn" data-t="newsletter.submit">

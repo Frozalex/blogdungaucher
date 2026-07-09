@@ -9,7 +9,7 @@ readingTime: "15 min"
 pillar: "Psychologie"
 tags: ["biais cognitifs", "blunder", "psychologie", "erreurs", "raisonnement", "Kahneman", "échecs"]
 seoTitle: "5 biais cognitifs qui causent des blunders aux échecs"
-seoDescription: "Les 5 biais cognitifs les plus fréquents qui provoquent des blunders aux échecs. Psychologie de l'erreur, Kahneman et comment entraîner son cerveau à les éviter."
+seoDescription: "Les 5 biais cognitifs qui causent le plus de blunders aux échecs. Psychologie de l'erreur, Kahneman et comment entraîner son cerveau à les éviter."
 ---
 
 Tu as tout calculé  -  enfin, tu le croyais. Puis le blunder : « comment j’ai pu rater ça ? » Rarement par manque de temps au calculateur ; presque toujours parce que **le cerveau a tranché avec un biais**, pas avec une erreur de variante. La science cognitive a cartographié ces dérives ; cinq d’entre elles collent particulièrement à l’échiquier.

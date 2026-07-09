@@ -5,9 +5,11 @@ import type { BlogEntry } from "../utils/blog";
 import { formatDate, formatDateEn, formatDatePtBr, formatDateNl, getCategoryMeta, getPostHeroSrc, getPostSlug, getPostUrlLang } from "../utils/blog";
 import { t, type Lang } from "../i18n/translations";
 
-const { post, featured = false, lang = "fr" } = Astro.props as {
+const { post, featured = false, eager = false, lang = "fr" } = Astro.props as {
   post: BlogEntry;
   featured?: boolean;
+  /** Charge la vignette en priorité (image above-the-fold / LCP) : désactive le lazy-loading. */
+  eager?: boolean;
   lang?: Lang | "pt-br" | "nl";
 };
 
@@ -60,10 +62,11 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
         <img
           class="card-thumb"
           src={thumbSrc}
-          alt=""
+          alt={post.data.heroImage?.alt || postTitle}
           width="600"
           height="400"
-          loading="lazy"
+          loading={eager ? "eager" : "lazy"}
+          fetchpriority={eager ? "high" : "auto"}
           decoding="async"
         />
       ) : (

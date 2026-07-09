@@ -163,7 +163,7 @@ const seeAllLabel =
           <span class="eyebrow eyebrow--accent" data-t="category.featured">{featuredLabel}</span>
         </div>
         <div class="cat-featured-card reveal">
-          <ArticleCard post={hero} featured={true} lang={lang} />
+          <ArticleCard post={hero} featured={true} eager={true} lang={lang} />
         </div>
       </div>
     </section>
@@ -177,7 +177,7 @@ const seeAllLabel =
           <a href={blogHref} class="text-link" data-t="category.seeAll">{seeAllLabel}</a>
         </div>
         <div class="post-grid reveal-group">
-          {rest.map((post) => <ArticleCard post={post} lang={lang} />)}
+          {rest.map((post, i) => <ArticleCard post={post} eager={i < 2} lang={lang} />)}
         </div>
       </div>
     </section>

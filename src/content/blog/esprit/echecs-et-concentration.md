@@ -179,7 +179,7 @@ L'objectif n'est pas d'éliminer les pauses : c'est d'augmenter progressivement 
 
 **L'environnement numérique.** La vérification régulière du téléphone entre les séances d'entraînement fragmente l'attention de fond, même quand le téléphone est rangé pendant la partie, le cerveau reste en mode "scannage" qui fragmente l'attention soutenue. Des études de [Larry Rosen](https://drlarryrosen.com) (California State University) montrent que la simple présence visible d'un smartphone réduit la mémoire de travail.
 
-**La fatigue de décision.** [Roy Baumeister](https://psy.fsu.edu/faculty/baumeister/baumfram.dp.html) a documenté l'"épuisement de l'ego" : prendre beaucoup de décisions (même triviales) réduit la qualité des décisions ultérieures. Avant une partie importante, éviter la surcharge décisionnelle : les plats de restaurant, les discussions de planning, les choix administratifs, pour préserver ses ressources attentionnelles.
+**La fatigue de décision.** Roy Baumeister a documenté l'"épuisement de l'ego" : prendre beaucoup de décisions (même triviales) réduit la qualité des décisions ultérieures. Avant une partie importante, éviter la surcharge décisionnelle : les plats de restaurant, les discussions de planning, les choix administratifs, pour préserver ses ressources attentionnelles.
 
 **Le sommeil insuffisant.** L'attention soutenue est l'une des premières capacités cognitives touchées par le manque de sommeil. Jouer une partie classique après une nuit de moins de 6 heures est l'une des façons les plus sûres de produire des blunders en fin de partie.
 

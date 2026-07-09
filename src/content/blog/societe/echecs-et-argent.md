@@ -136,7 +136,7 @@ Il crée aussi une nouvelle hiérarchie dans le monde des échecs : celle de l'a
 
 ### Les tournois en ligne : plus d'argent mais moins de prestige
 
-Chess.com et d'autres plateformes ont créé des tournois en ligne avec des prize pools parfois supérieurs aux tournois physiques. [Le Speed Chess Championship](https://www.chess.com/article/view/speed-chess-championship) ou les événements Champions Showdown offrent des sommes significatives dans des formats rapides et diffusables.
+Chess.com et d'autres plateformes ont créé des tournois en ligne avec des prize pools parfois supérieurs aux tournois physiques. Le Speed Chess Championship ou les événements Champions Showdown offrent des sommes significatives dans des formats rapides et diffusables.
 
 Ces tournois ont rendu les échecs plus accessibles et plus spectaculaires - les formats en blitz et en bullet sont infiniment plus faciles à suivre pour un néophyte qu'une partie classique de six heures. Mais ils ont aussi renforcé le statut des formats courts au détriment des formats classiques, ce qui pose une question de fond sur ce que "être le meilleur" signifie dans ce nouveau contexte.
 
@@ -168,7 +168,7 @@ Le Championnat du Monde 2024 a opposé Gukesh à Ding Liren. Pour la première f
 
 Certains acteurs du milieu regardent vers les esports pour trouver un modèle viable. Les ligues d'esport ont développé des structures de franchise, de partage de revenus et de contrats de joueurs qui n'existent pas encore aux échecs.
 
-La [PRO Chess League](https://www.chess.com/article/view/pro-chess-league) de Chess.com est une tentative dans cette direction : une compétition par équipes, avec des franchises, diffusée en ligne. Les résultats sont encourageants en termes d'audience, mais le modèle économique reste fragile.
+La PRO Chess League de Chess.com est une tentative dans cette direction : une compétition par équipes, avec des franchises, diffusée en ligne. Les résultats sont encourageants en termes d'audience, mais le modèle économique reste fragile.
 
 ---
 

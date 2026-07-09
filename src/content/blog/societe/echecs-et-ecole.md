@@ -114,7 +114,7 @@ La Russie, la Géorgie, et l'Allemagne ont des programmes d'échecs intégrés d
 
 ## La méta-analyse Sala & Gobet : la référence scientifique
 
-[Giovanni Sala](https://www.livjm.ac.uk/research/faculty-of-science/psychology/giovanni-sala/) et [Fernand Gobet](https://www.lse.ac.uk/psychological-and-behavioural-science/people/fernand-gobet) ont produit la synthèse scientifique la plus rigoureuse sur les effets des échecs à l'école. Leurs deux méta-analyses sont incontournables.
+[Giovanni Sala](https://www.livjm.ac.uk/research/faculty-of-science/psychology/giovanni-sala/) et Fernand Gobet ont produit la synthèse scientifique la plus rigoureuse sur les effets des échecs à l'école. Leurs deux méta-analyses sont incontournables.
 
 ### Méta-analyse 2016 (Educational Research Review)
 

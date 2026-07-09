@@ -106,7 +106,7 @@ Le "talent" est en réalité un **ensemble de capacités** dont certaines ont de
 
 ## La thèse Ericsson : la pratique délibérée prime
 
-[Anders Ericsson](https://psy.fsu.edu/~ericsson/) (Florida State University) est le chercheur qui a le plus influencé le débat sur l'expertise. Ses travaux, synthétisés dans *Peak : Secrets from the New Science of Expertise* (2016), défendent une thèse forte : **la pratique délibérée est le facteur principal** de l'expertise dans n'importe quel domaine.
+Anders Ericsson (Florida State University) est le chercheur qui a le plus influencé le débat sur l'expertise. Ses travaux, synthétisés dans *Peak : Secrets from the New Science of Expertise* (2016), défendent une thèse forte : **la pratique délibérée est le facteur principal** de l'expertise dans n'importe quel domaine.
 
 Sa définition de la pratique délibérée est précise : ce n'est pas simplement "jouer des parties". C'est pratiquer avec un objectif précis, sous la supervision d'un expert, avec un feedback immédiat, juste au-delà de son niveau de confort actuel. La répétition de parties amicales sans analyse ni correction n'est pas de la pratique délibérée.
 

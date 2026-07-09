@@ -96,7 +96,7 @@ Pour un joueur d'échecs, les implications sont concrètes : **les 6 premières 
 
 ## Ce que la privation de sommeil fait au calcul
 
-[John Harrison](https://www.birmingham.ac.uk) et [Jim Horne](https://www.lboro.ac.uk/departments/psychology/staff/jim-horne/) (Loughborough Sleep Research Centre) ont mené en 2000 une étude fondamentale (*Neuropsychologia*) sur les effets de la privation de sommeil sur les fonctions exécutives. Leurs résultats concernent directement les joueurs d'échecs :
+[John Harrison](https://www.birmingham.ac.uk) et Jim Horne (Loughborough Sleep Research Centre) ont mené en 2000 une étude fondamentale (*Neuropsychologia*) sur les effets de la privation de sommeil sur les fonctions exécutives. Leurs résultats concernent directement les joueurs d'échecs :
 
 - **Flexibilité cognitive** (capacité à passer d'un plan à un autre) : dégradée significativement après une nuit sans sommeil
 - **Inhibition** (capacité à rejeter une mauvaise réponse évidente au profit d'une meilleure) : parmi les premières fonctions touchées

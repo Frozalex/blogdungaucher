@@ -9,7 +9,7 @@ readingTime: "12 min"
 pillar: "Mémoire"
 tags: ["scrabble", "mémoire lexicale", "calcul combinatoire", "comparaison", "cognition", "anagrammes"]
 seoTitle: "Échecs vs Scrabble : quelles compétences cognitives développent-ils ?"
-seoDescription: "Échecs ou Scrabble : quelles compétences mentales développent ces deux jeux ? Mémoire lexicale, calcul combinatoire, profils cognitifs : la comparaison complète."
+seoDescription: "Échecs ou Scrabble : quelles compétences mentales développent ces jeux ? Mémoire lexicale, calcul combinatoire, profils cognitifs : la comparaison complète."
 keyTakeaways:
   - "Le Scrabble exige une mémoire lexicale massive (200 000 mots valides en français) que les échecs ne développent pas."
   - "Les deux jeux nécessitent un calcul combinatoire intense, mais de nature différente (positional vs anagrammatique)."

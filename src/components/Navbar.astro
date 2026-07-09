@@ -198,7 +198,7 @@ const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
           type="button"
           aria-haspopup="true"
           aria-expanded="false"
-          aria-label={ui.changeLang}
+          aria-label={`${currentSwitch.short} — ${ui.changeLang}`}
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
@@ -237,7 +237,7 @@ const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
     </button>
   </div>
 
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" inert>
     <div class="mobile-menu__inner">
       <div class="container mobile-menu__content">
         <span class="mobile-eyebrow" data-t="nav.navigation">{(t(tLang, "nav.navigation") as string) || "Navigation"}</span>
@@ -909,6 +909,11 @@ const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
         ? (dict["nav.closeMenu"] || "Fermer le menu")
         : (dict["nav.openMenu"]  || "Ouvrir le menu"));
       menu?.setAttribute("aria-hidden", isOpen ? "false" : "true");
+      // `inert` quand fermé : retire les liens du menu du tab order ET de l'arbre
+      // d'accessibilité (sinon des <a> focusables restent dans un conteneur
+      // aria-hidden → erreur a11y/aria-hidden-focus).
+      if (isOpen) menu?.removeAttribute("inert");
+      else menu?.setAttribute("inert", "");
     }
 
     burger?.addEventListener("click", () => {

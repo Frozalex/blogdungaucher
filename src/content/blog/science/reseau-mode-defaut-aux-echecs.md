@@ -9,7 +9,7 @@ readingTime: "22 min"
 pillar: "Neurosciences"
 tags: ["réseau mode par défaut", "DMN", "échecs", "neurosciences", "mind-wandering", "rumination", "incubation"]
 seoTitle: "Réseau du mode par défaut aux échecs : ce que ton cerveau fait quand tu ne calcules pas"
-seoDescription: "DMN, mind-wandering, incubation : pourquoi ton cerveau passe en mode 'par défaut' entre les coups, ce que ça t'apporte, ce que ça te coûte, et comment piloter ce système."
+seoDescription: "DMN, mind-wandering, incubation : pourquoi ton cerveau passe en mode par défaut entre les coups, ce que ça t'apporte et comment piloter ce système."
 ---
 
 Tu regardes la position. Sept minutes d'horloge, l'adversaire prend son temps. Tu as déjà identifié les trois coups candidats. Tu ne calcules plus rien. Et pourtant, ton esprit n'est pas vide. Il dérive vers ta défaite de la veille, vers la cote Elo que ce résultat te donnerait, vers une mélodie entendue ce matin. Tu reviens à la position, l'adversaire a joué, tu réponds vite et mal.

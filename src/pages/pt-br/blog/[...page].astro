@@ -98,13 +98,13 @@ const enCanonicalPath = getBlogIndexPagePath("en", page.currentPage);
   <section class="listing">
     <div class="container">
       <div class="post-grid reveal-group">
-        {page.data.map((post) => (
+        {page.data.map((post, i) => (
           <article
             class="post-item"
             data-category={post.data.category}
             data-search={`${post.data.title} ${post.data.excerpt} ${post.data.tags?.join(" ") ?? ""}`.toLowerCase()}
           >
-            <ArticleCard post={post} lang="pt-br" />
+            <ArticleCard post={post} lang="pt-br" eager={i < 3} />
           </article>
         ))}
       </div>

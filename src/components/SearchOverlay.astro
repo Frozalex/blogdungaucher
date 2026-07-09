@@ -35,7 +35,7 @@ const searchPageHref = `/${lang}/recherche/`;
         autocomplete="off"
         spellcheck="false"
       />
-      <button class="search-overlay__esc" data-search-close type="button" aria-label={c.close}><kbd>Esc</kbd></button>
+      <button class="search-overlay__esc" data-search-close type="button" aria-label={`${c.close} (Esc)`}><kbd>Esc</kbd></button>
     </div>
     <p class="search-overlay__state" data-search-state aria-live="polite">{c.start}</p>
     <ul class="search-overlay__results" data-search-results role="list"></ul>

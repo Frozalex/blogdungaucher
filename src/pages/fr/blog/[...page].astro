@@ -93,12 +93,12 @@ const structuredData = isFirstPage
   <section class="listing">
     <div class="container">
       <div class="post-grid reveal-group">
-        {page.data.map((post) => (
+        {page.data.map((post, i) => (
           <article
             class="post-item"
             data-category={post.data.category}
           >
-            <ArticleCard post={post} />
+            <ArticleCard post={post} eager={i < 3} />
           </article>
         ))}
       </div>

@@ -422,7 +422,7 @@ Chaque sujet a son propre bouton PDF en haut de page.
 ### Sources et références
 
 - **Bulletin officiel - Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
-- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*, 41(314). (Calcul du nombre de parties possibles, fondement du dénombrement.)
+- **Shannon, C. E. (1950).** *Programming a Computer for Playing Chess.* *Philosophical Magazine*, 41(314). (Calcul du nombre de parties possibles, fondement du dénombrement.)
 - **Zermelo, E. (1913).** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* Congrès international des mathématiciens. (Théorème fondamental.)
 - **Elo, A. E. (1978).** *The Rating of Chessplayers, Past and Present.* Arco Publishing. (Présentation de la suite récurrente et du modèle probabiliste Elo.)
 - **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*, 6(4). (Analyse formelle de la complexité de l'élagage.)

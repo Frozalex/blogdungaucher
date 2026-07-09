@@ -9,7 +9,7 @@ readingTime: "11 min"
 pillar: "Cognition"
 tags: ["intelligence", "QI", "transfert cognitif", "éducation", "neurosciences", "méta-analyse"]
 seoTitle: "Les échecs rendent-ils plus intelligent ? Le vrai bilan scientifique"
-seoDescription: "Méta-analyses et études contrôlées : que disent vraiment les preuves sur l'effet des échecs sur l'intelligence, le QI et les performances scolaires ? Un bilan honnête."
+seoDescription: "Méta-analyses et études contrôlées : que disent les preuves sur l'effet des échecs sur l'intelligence, le QI et les résultats scolaires ? Un bilan honnête."
 keyTakeaways:
   - "Les méta-analyses récentes montrent un effet sur la cognition générale beaucoup plus faible que celui mis en avant par les défenseurs des échecs à l'école."
   - "Le transfert cognitif (du jeu vers d'autres domaines) reste l'exception, pas la règle : la pratique experte se transfère mal."

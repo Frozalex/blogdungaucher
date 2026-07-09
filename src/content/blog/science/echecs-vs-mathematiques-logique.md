@@ -9,7 +9,7 @@ readingTime: "12 min"
 pillar: "Mathématiques"
 tags: ["mathématiques", "logique", "cognition", "transfert", "raisonnement formel", "preuve"]
 seoTitle: "Échecs vs mathématiques : compétences cognitives partagées ou non ?"
-seoDescription: "Les échecs et les maths partagent-ils vraiment des compétences cognitives ? Logique, calcul, intuition : tout ce que la recherche dit du lien entre les deux disciplines."
+seoDescription: "Échecs et maths partagent-ils vraiment des compétences cognitives ? Logique, calcul, intuition : ce que la recherche dit du lien entre les deux disciplines."
 keyTakeaways:
   - "Les corrélations entre niveau d'échecs et niveau mathématique sont positives mais modérées (r ≈ 0,3 à 0,4)."
   - "Le calcul d'échecs et la résolution d'équations sollicitent des fonctions cognitives proches mais pas identiques."

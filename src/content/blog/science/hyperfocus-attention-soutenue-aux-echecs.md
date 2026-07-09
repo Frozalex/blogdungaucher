@@ -9,7 +9,7 @@ readingTime: "21 min"
 pillar: "Neurosciences"
 tags: ["hyperfocus", "attention soutenue", "échecs", "neurosciences", "neurodivergence", "TDAH", "flow"]
 seoTitle: "Hyperfocus vs attention soutenue aux échecs : deux régimes neuroscientifiques distincts"
-seoDescription: "Hyperfocus et attention soutenue : ce que les neurosciences distinguent, pourquoi l'un est précieux en blitz et l'autre indispensable en classique, et comment les piloter sans se brûler."
+seoDescription: "Hyperfocus et attention soutenue : ce que les neurosciences distinguent, pourquoi l'un est précieux en blitz et l'autre en classique, et comment les piloter."
 ---
 
 Tu commences à analyser une finale après le dîner. Tu lèves les yeux : il est trois heures du matin. Tu n'as pas senti le temps passer, tu n'as pas eu faim, tu n'as pas répondu aux messages. C'est l'hyperfocus.

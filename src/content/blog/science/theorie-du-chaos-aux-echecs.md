@@ -10,7 +10,7 @@ readingTime: "19 min"
 pillar: "Mathématiques"
 tags: ["chaos", "échecs", "mathématiques", "complexité", "sensibilité", "bifurcation", "exposant de Lyapunov", "Kasparov Topalov 1999", "science"]
 seoTitle: "Théorie du chaos aux échecs : Lyapunov, bifurcations et coups critiques"
-seoDescription: "Exposant de Lyapunov, points de bifurcation, Kasparov-Topalov 1999 : pourquoi une seule erreur fait basculer une position chaotique, et ce que ça change pour ton jeu."
+seoDescription: "Exposant de Lyapunov, bifurcations, Kasparov-Topalov 1999 : pourquoi une seule erreur fait basculer une position chaotique, et ce que ça change pour ton jeu."
 faq:
   - question: "Les échecs sont-ils vraiment \"chaotiques\" au sens mathématique ?"
     answer: >-

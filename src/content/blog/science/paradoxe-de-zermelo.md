@@ -10,7 +10,7 @@ readingTime: "17 min"
 pillar: "Mathématiques"
 tags: ["Zermelo", "échecs", "mathématiques", "théorie des jeux", "tablebases", "induction rétrograde", "König", "complexité", "logique"]
 seoTitle: "Paradoxe de Zermelo aux échecs : vérité déterminée mais inaccessible"
-seoDescription: "Ernst Zermelo (1913) a prouvé que les échecs ont un résultat sous jeu parfait : Blanc gagne, Noir gagne ou nulle. Pourquoi cette certitude reste hors d'atteinte, et ce que ça change pour ton jeu."
+seoDescription: "Ernst Zermelo (1913) a prouvé que les échecs ont un résultat sous jeu parfait : gain Blanc, gain Noir ou nulle. Pourquoi cette certitude reste hors d'atteinte."
 faq:
   - question: "Le théorème de Zermelo prouve-t-il que les Blancs gagnent ?"
     answer: >-

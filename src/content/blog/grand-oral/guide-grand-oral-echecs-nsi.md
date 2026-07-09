@@ -555,7 +555,7 @@ C'est la partie où beaucoup décrochent par fatigue. Tiens bon. Prépare une r�
 ## Sources et références
 
 - **Bulletin officiel, Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
-- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*. (Fondation de l'algorithme minimax.)
+- **Shannon, C. E. (1950).** *Programming a Computer for Playing Chess.* *Philosophical Magazine*. (Fondation de l'algorithme minimax.)
 - **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero : apprentissage par renforcement et MCTS.)
 - **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*. (Analyse formelle de la coupure alpha-bêta.)
 - **Documentation Stockfish.** [*Stockfish Chess Engine, Source code.*](https://github.com/official-stockfish/Stockfish) GitHub. (Référence pour l'implémentation réelle.)

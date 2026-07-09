@@ -632,7 +632,7 @@ Les cinq dernières **minutes** portent sur ton projet post-bac. Prépare une **
 
 ## Sources et références
 
-- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*, 41(314). (Fondation de l'algorithme minimax appliqué aux échecs.)
+- **Shannon, C. E. (1950).** *Programming a Computer for Playing Chess.* *Philosophical Magazine*, 41(314). (Fondation de l'algorithme minimax appliqué aux échecs.)
 - **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero : apprentissage par renforcement et MCTS.)
 - **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*, 6(4), 293-326. (Analyse formelle de la complexité de l'élagage alpha-bêta.)
 - **Zobrist, A. L. (1970).** *A New Hashing Method with Application for Game Playing.* ICCA Journal. (Invention du hachage de Zobrist pour les tables de transposition.)

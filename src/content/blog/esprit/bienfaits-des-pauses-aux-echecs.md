@@ -10,7 +10,7 @@ readingTime: "17 min"
 pillar: "Psychologie"
 tags: ["pauses", "récupération", "psychologie", "performance", "fatigue cognitive", "consolidation", "sommeil", "rage-queue", "entraînement"]
 seoTitle: "Pauses aux échecs : pourquoi t'arrêter te rend meilleur"
-seoDescription: "Pourquoi les pauses rendent meilleur aux échecs : consolidation mémorielle, fatigue cognitive, sommeil et rage-queue. Protocoles concrets pour tournoi et entraînement."
+seoDescription: "Pourquoi les pauses rendent meilleur aux échecs : consolidation mémorielle, fatigue cognitive et sommeil. Protocoles concrets pour tournoi et entraînement."
 faq:
   - question: "Combien de temps de pause faut-il vraiment entre deux parties longues ?"
     answer: >-

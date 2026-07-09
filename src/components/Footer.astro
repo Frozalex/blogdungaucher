@@ -375,6 +375,11 @@ const requiredNote = lang === "en"
     color: var(--text-dim);
     font-size: 0.82rem;
     transition: color 150ms ease;
+    /* Zone tactile >= 44px (norme WCAG 2.5.5 / mobile) sans grossir le texte. */
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 0.15rem;
   }
   .footer-bottom-links a:hover {
     color: var(--green);

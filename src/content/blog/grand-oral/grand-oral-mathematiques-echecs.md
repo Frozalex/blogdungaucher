@@ -9,7 +9,7 @@ readingTime: "24 min"
 pillar: "Cognition"
 tags: ["grand-oral", "mathématiques", "NSI", "terminale", "combinatoire", "théorie des jeux", "IA", "Elo", "minimax", "baccalauréat", "transversal"]
 seoTitle: "Grand oral Maths + NSI : les échecs, pont entre les deux spécialités"
-seoDescription: "Grand Oral Maths + NSI échecs : sujet transversal combinatoire, minimax, probabilités Elo, graphes et structures de données. Plan, formules et code Python prêts."
+seoDescription: "Grand Oral Maths et NSI échecs : combinatoire, minimax, probabilités Elo, graphes et structures de données. Plan, formules et code Python prêts."
 faq:
   - question: "Pourquoi le lien entre les mathématiques et les échecs est-il un bon sujet de Grand Oral ?"
     answer: "Ce sujet mêle des notions du programme de terminale (combinatoire, probabilités, théorie des graphes, algorithmique) à un objet culturel concret et connu du jury. Il permet une démonstration visuelle sur l'échiquier, une ouverture vers l'intelligence artificielle et une conclusion philosophique sur la pensée formelle, ce qui facilite la structuration en trois parties et anticipe naturellement les questions du jury."

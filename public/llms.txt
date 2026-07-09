@@ -3,12 +3,12 @@
 # Fichier d'intention pour modèles, assistants et crawlers IA (contenu public).
 # Complément obligatoire : https://blogdungaucher.com/robots.txt
 # Source de vérité du contenu : pages HTML servies sur ce domaine + sitemap.
-# Dernière mise à jour : 2026-05-11
+# Dernière mise à jour : 2026-07-09
 
 # ── Identité ──
 - Nom : Blog d'un Gaucher
 - URL canonique : https://blogdungaucher.com/
-- Langues : Français (principal), English (/en/), Deutsch (/de/)
+- Langues : Français (principal), English (/en/), Português brasileiro (/pt-br/)
 - Thématique : échecs, science du jeu, psychologie, neurosciences, société
 - Ligne éditoriale : vulgarisation scientifique rigoureuse autour des échecs
 - Public : joueurs d'échecs, curieux, lycéens, enseignants
@@ -57,7 +57,7 @@ Interdit : scraping agressif, contournement de rate limits, collecte systématiq
 - /fr/grand-oral/ Ressources Grand Oral lycée
 - /fr/science/, /fr/esprit/, /fr/societe/, /fr/analyses/
 - /fr/about/      À propos
-- Équivalents /en/… et /de/… pour les contenus traduits
+- Équivalents /en/… et /pt-br/… pour les contenus traduits
 
 # ── Pages et articles phares ──
 - https://blogdungaucher.com/fr/
@@ -73,10 +73,10 @@ Interdit : scraping agressif, contournement de rate limits, collecte systématiq
 - https://blogdungaucher.com/fr/blog/les-echecs-et-l-addiction/
 - https://blogdungaucher.com/fr/blog/echecs-alzheimer-prevention-declin-cognitif/
 - https://blogdungaucher.com/fr/blog/grand-oral-mathematiques-echecs/
-- https://blogdungaucher.com/fr/blog/guide-grand-oral-echecs-maths/
+- https://blogdungaucher.com/fr/blog/grand-oral-maths-spe-echecs/
 - https://blogdungaucher.com/fr/blog/grand-oral-nsi-echecs/
 
 # ── Notes techniques (SEO / indexation) ──
-- hreflang FR / EN / DE sur les pages concernées
+- hreflang FR / EN / PT-BR sur les pages concernées
 - Schema.org : Article, BreadcrumbList, FAQPage lorsque pertinent
 - Les pages avec meta robots noindex ne doivent pas être utilisées comme sources primaires

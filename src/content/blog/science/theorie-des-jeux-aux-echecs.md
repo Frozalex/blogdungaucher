@@ -10,7 +10,7 @@ readingTime: "18 min"
 pillar: "Mathématiques"
 tags: ["théorie des jeux", "échecs", "mathématiques", "Nash", "minimax", "Zermelo", "stratégie dominante", "stratégie mixte", "science"]
 seoTitle: "Théorie des jeux aux échecs : Nash, minimax, Zermelo expliqués"
-seoDescription: "Minimax, équilibre de Nash, stratégies mixtes, théorème de Zermelo : la théorie des jeux appliquée aux échecs, des ouvertures à la préparation contre un adversaire précis."
+seoDescription: "Minimax, équilibre de Nash, stratégies mixtes, théorème de Zermelo : la théorie des jeux appliquée aux échecs, des ouvertures à la préparation adverse."
 faq:
   - question: "Les échecs sont-ils un jeu à somme nulle au sens strict ?"
     answer: >-

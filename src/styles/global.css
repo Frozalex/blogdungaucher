@@ -810,6 +810,27 @@ main[tabindex="-1"]:focus {
 }
 .article-body .katex {
   font-size: 1.05em;
+  /* Maths trop larges pour l'écran (ex. environnement `cases` écrit en math inline) :
+     scroll horizontal interne au lieu de déborder la page sur mobile. position:relative
+     contient aussi le <math> d'accessibilité (positionné en absolu) sans le supprimer
+     du DOM (screen readers conservés). */
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Colonne principale de l'article : c'est un grid item (article-layout).
+   Par défaut min-width:auto = min-content : une équation KaTeX large empêchait
+   alors la colonne de tenir dans le viewport mobile (scroll horizontal parasite
+   sur toutes les pages avec maths). min-width:0 l'autorise à rétrécir ; overflow-x:clip
+   contient le <math> d'accessibilité (positionné en absolu, il échappait au clip et
+   étirait la largeur de page) sans casser position:sticky (contrairement à hidden). */
+.article-main {
+  /* Grid item (article-layout) : min-width:auto par défaut = min-content, ce qui
+     empêchait la colonne de tenir sur mobile dès qu'une équation large était présente
+     (scroll horizontal parasite). min-width:0 l'autorise à rétrécir au viewport. */
+  min-width: 0;
 }
 
 /* ─── SELECTION ───────────────────────────────────────────────── */

@@ -101,7 +101,7 @@ Ces trois composantes sont toutes sollicitées aux échecs, à des degrés diff�
 
 ## La méta-analyse Tejada-Gallardo (2021)
 
-L'étude la plus rigoureuse sur le lien entre échecs et cognition spatiale est la méta-analyse de [Tejada-Gallardo et al.](https://link.springer.com/article/10.1007/s10648-020-09556-6) (2021), publiée dans *Educational Psychology Review*.
+L'étude la plus rigoureuse sur le lien entre échecs et cognition spatiale est la méta-analyse de Tejada-Gallardo et al. (2021), publiée dans *Educational Psychology Review*.
 
 Les auteurs ont sélectionné 17 études répondant à des critères de qualité méthodologique minimaux, portant sur des enfants et des adultes de niveaux variés. L'effet global sur le raisonnement spatial est de **ES = 0.54**: un effet moyen à fort, significatif et robuste à travers les études.
 
@@ -123,7 +123,7 @@ La réalité est plus intéressante.
 
 Des études de protocoles verbaux (demander aux joueurs de décrire à voix haute leur réflexion pendant qu'ils analysent) et de eye-tracking montrent que les experts ne regardent pas uniformément toutes les cases : ils **saccadent** vers les zones pertinentes pour leur variante en cours.
 
-[Neil Charness](https://psy.fsu.edu/faculty/charness/charness.dp.html) (Florida State University) a montré que les grands maîtres construisent une représentation "épurée" : les pièces importantes pour la variante en cours sont maintenues avec précision, le reste est traité de façon plus schématique et peut même être rappelé de façon inexacte si on les interroge sur des pièces périphériques au milieu d'un calcul.
+Neil Charness (Florida State University) a montré que les grands maîtres construisent une représentation "épurée" : les pièces importantes pour la variante en cours sont maintenues avec précision, le reste est traité de façon plus schématique et peut même être rappelé de façon inexacte si on les interroge sur des pièces périphériques au milieu d'un calcul.
 
 Ce n'est pas une limitation : c'est une adaptation efficace. Maintenir une représentation complète et précise de toutes les 32 pièces consommerait des ressources cognitives inutilement. Le cerveau expert fait une sélection intelligente basée sur la pertinence.
 
@@ -137,7 +137,7 @@ Cela explique pourquoi les grands maîtres peuvent analyser une position à l'av
 
 Les études d'IRMf sur la cognition spatiale montrent systématiquement l'implication du **cortex pariétal supérieur**, du **cortex pré-moteur** et de l'**espace de mémoire de travail visuospatiale** (phonological loop du modèle de Baddeley).
 
-[Giorgio Cattaneo](https://scholar.google.com/citations?user=HhD6e9QAAAAJ) et collègues (2009) ont étudié les corrélats cérébraux du calcul de variantes aux échecs. Leurs résultats montrent une activation bilatérale du cortex pariétal supérieur : la même région que celle activée lors des tâches classiques de rotation mentale.
+Giorgio Cattaneo et collègues (2009) ont étudié les corrélats cérébraux du calcul de variantes aux échecs. Leurs résultats montrent une activation bilatérale du cortex pariétal supérieur : la même région que celle activée lors des tâches classiques de rotation mentale.
 
 Ce résultat est important : il suggère que le calcul de variantes aux échecs (visualiser les pièces se déplacer) utilise les mêmes circuits que les tâches spatiales générales. La pratique des échecs entraîne donc ces circuits de façon ciblée.
 

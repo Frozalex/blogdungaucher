@@ -406,7 +406,7 @@ Trois techniques rapides :
 ## Sources et références
 
 - **Bulletin officiel - Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
-- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://www.cs.mcgill.ca/~dprecup/courses/AI/Materials/shannon1950.pdf) *Philosophical Magazine*. (Nombre de parties d'échecs possibles.)
+- **Shannon, C. E. (1950).** *Programming a Computer for Playing Chess.* *Philosophical Magazine*. (Nombre de parties d'échecs possibles.)
 - **Bourdieu, P. (1979).** *La Distinction : critique sociale du jugement.* Éditions de Minuit. (Capital culturel, distinction, reproduction sociale.)
 - **Nye, J. (1990).** *Bound to Lead : The Changing Nature of American Power.* Basic Books. (Théorie du *soft power*.)
 - **Nora, P. (1984-1992).** *Les Lieux de mémoire.* Gallimard. (Distinction histoire / mémoire, **patrimoine** culturel.)
