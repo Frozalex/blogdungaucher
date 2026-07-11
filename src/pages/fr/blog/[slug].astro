@@ -116,6 +116,7 @@ const structuredData = [
   description={post.data.seoDescription ?? post.data.excerpt}
   canonicalPath={postUrl}
   image={post.data.ogImage ?? siteConfig.defaultOgImage}
+  preloadImage={!showSummaryVideo && heroSrc && heroImage ? heroSrc : undefined}
   type="article"
   publishDate={post.data.publishDate}
   modifiedDate={post.data.updatedDate ?? post.data.publishDate}
@@ -149,6 +150,7 @@ const structuredData = [
             src={heroSrc}
             alt={heroImage.alt}
             loading="eager"
+            fetchpriority="high"
             decoding="async"
           />
           {(heroImage.credit || heroImage.sourceUrl) && (

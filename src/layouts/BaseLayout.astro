@@ -62,6 +62,7 @@ const {
   omitPtBrNlAlternates = false,
   prevHref,
   nextHref,
+  preloadImage,
 } = Astro.props as {
   title?: string;
   description?: string;
@@ -90,6 +91,8 @@ const {
   /** Pagination : liens rel="prev" et rel="next" pour les moteurs. */
   prevHref?: string;
   nextHref?: string;
+  /** Image LCP à précharger (hero d'article) → <link rel=preload as=image fetchpriority=high>. */
+  preloadImage?: string;
 };
 
 const resolvedFrPath = frPath ?? swapLangPrefix(canonicalPath, "fr");
@@ -221,6 +224,10 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <!-- ── Préchargement de la police de titre (Space Grotesk) présente dans le H1/LCP de chaque page.
          crossorigin obligatoire : les woff2 sont chargés en mode CORS anonyme même en same-origin. -->
     <link rel="preload" as="font" type="font/woff2" href={spaceGroteskWoff2} crossorigin />
+
+    {/* Préchargement de l'image LCP (hero d'article) : le navigateur la découvre
+        sinon tard, après le CSS. `fetchpriority=high` la hisse en tête de file. */}
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
 
     <!-- ── i18n : dictionnaire runtime externalisé (bloquant + caché), AVANT le script anti-flash ──
          pour qu'il soit disponible synchronement (swap EN + aria-labels FR de la navbar). -->

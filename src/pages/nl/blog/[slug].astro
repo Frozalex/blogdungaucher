@@ -165,6 +165,7 @@ const structuredData = [
   enPath={postUrlEn}
   nlPath={postUrlNl}
   image={post.data.ogImage ?? siteConfig.defaultOgImage}
+  preloadImage={!showSummaryVideo && heroSrc && heroImage ? heroSrc : undefined}
   type="article"
   publishDate={post.data.publishDate}
   modifiedDate={post.data.updatedDate ?? post.data.publishDate}
@@ -190,7 +191,7 @@ const structuredData = [
 
       {!showSummaryVideo && heroSrc && heroImage ? (
         <figure class="hero-photo-wrap">
-          <img class="hero-photo" src={heroSrc} alt={heroImage.alt} loading="eager" decoding="async" />
+          <img class="hero-photo" src={heroSrc} alt={heroImage.alt} loading="eager" fetchpriority="high" decoding="async" />
           {(heroImage.credit || heroImage.sourceUrl) && (
             <figcaption class="hero-photo-credit">
               {heroImage.credit && <span>Foto: {heroImage.credit}</span>}
