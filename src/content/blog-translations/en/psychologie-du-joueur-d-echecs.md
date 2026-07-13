@@ -3,7 +3,7 @@ title: "The Psychology of the Chess Player: What's Really Happening Inside Your 
 excerpt: >-
   Chess isn't just played on the board. It's played first in your head, before your hand ever touches a piece. A
   psychological portrait of a player facing themselves.
-seoTitle: "Chess Player Psychology: Master Your Mental Game"
+seoTitle: "Chess Psychology: Ego, Tilt, Flow and the Mental Game"
 seoDescription: >-
   Ego, tilt, flow, fear of losing: a complete breakdown of chess player psychology and how emotions influence every
   single move you make.

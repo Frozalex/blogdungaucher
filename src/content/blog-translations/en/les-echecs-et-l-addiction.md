@@ -3,10 +3,10 @@ title: "Chess and Addiction: When the Game Becomes a Drug"
 excerpt: >-
   It's 3am. You promised yourself it was the last game, but you're launching another one. Can you really be addicted to
   chess? A breakdown of a silent addiction.
-seoTitle: "Chess and Addiction: Understanding and Overcoming Dependency"
+seoTitle: "Chess Addiction: Signs, Causes and How to Take Back Control"
 seoDescription: >-
-  Discover the complex link between chess and addiction. Learn to identify the signs of dependency and find concrete
-  advice on how to take back control.
+  Can you be addicted to chess? The signs of chess addiction, why the game hooks you at 3am, and concrete ways to take
+  back control.
 enSlug: "chess-and-addiction"
 ---
 

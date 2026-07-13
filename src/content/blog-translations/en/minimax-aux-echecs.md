@@ -1,8 +1,8 @@
 ---
 title: "Minimax in Chess: The Algorithm That Thinks for You"
 excerpt: "Minimax is the fundamental algorithm of strategic reflection in chess. From modern engines to your own thinking at the board, here's how this mathematical tool structures every decision."
-seoTitle: "Minimax in Chess: Alpha-Beta, Negamax, and Engine Calculation"
-seoDescription: "Minimax, alpha-beta pruning, negamax, null-move pruning, MCTS: how engines calculate the optimal move in chess and what your brain does without knowing it."
+seoTitle: "Minimax Algorithm in Chess: Alpha-Beta, Negamax, and How Engines Calculate"
+seoDescription: "What is minimax in chess? Alpha-beta pruning, negamax, null-move, MCTS: how engines calculate the best move and what your brain does without knowing it."
 enSlug: "minimax-in-chess"
 draft: false
 faq:

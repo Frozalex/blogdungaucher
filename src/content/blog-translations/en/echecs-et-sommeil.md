@@ -2,7 +2,7 @@
 title: "Chess and Sleep: Why the Night Also Plays Your Game"
 excerpt: "A grandmaster who sleeps poorly plays about 10% worse by the second hour of play. What sleep neuroscience research says about memory consolidation, cognitive recovery, and chess performance."
 seoTitle: "Chess and Sleep: How Cognitive Recovery Boosts Your Progress"
-seoDescription: "REM sleep, memory consolidation, sleep deprivation and chess performance: what neuroscience says about the night as invisible training."
+seoDescription: "REM sleep, memory consolidation and sleep deprivation in chess: how the night trains you, and whether playing chess before bed helps or wrecks your sleep."
 enSlug: "chess-and-sleep"
 draft: false
 faq:
