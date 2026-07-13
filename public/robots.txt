@@ -7,5 +7,7 @@
 
 User-agent: *
 Allow: /
+Disallow: /b2a53c47978774b85b17.txt
+Disallow: /34187b51f98646a5aaccb756d68be08e.txt
 
 Sitemap: https://blogdungaucher.com/sitemap.xml
