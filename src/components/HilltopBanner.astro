@@ -1,0 +1,57 @@
+---
+import { hilltopConfig } from "../data/site";
+
+const zone = hilltopConfig.zones.rectangle300x250;
+const showReal = hilltopConfig.live && Boolean(zone.src);
+---
+{showReal && (
+  <aside
+    class="ad ad--live rectangle"
+    aria-label="Publicité"
+    data-hilltop-zone
+    data-hilltop-src={zone.src}
+  />
+)}
+{!showReal && (
+  <aside class="ad ad--placeholder rectangle">
+    <span class="ad-label">Espace publicitaire</span>
+    <span class="ad-hint">HilltopAds désactivé · hilltopConfig.live dans site.ts</span>
+  </aside>
+)}
+
+<style>
+  .ad {
+    margin: 1.25rem auto;
+    border-radius: var(--radius-md);
+    width: 300px;
+  }
+  .ad--live {
+    min-height: 250px;
+    overflow: hidden;
+  }
+  .ad--placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    min-height: 250px;
+    padding: 0.75rem;
+    background: var(--bg-warm);
+    border: 1px dashed var(--border-strong);
+  }
+  .ad-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .ad-hint {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    text-align: center;
+    max-width: 18rem;
+    line-height: 1.35;
+  }
+</style>

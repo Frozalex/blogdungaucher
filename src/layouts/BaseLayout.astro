@@ -459,6 +459,23 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
           );
         }
 
+        /** Zones HilltopAds (HilltopBanner.astro) : re-scanné à chaque navigation
+         * (contrairement à enableAds, pas de garde globale) car chaque page peut
+         * porter sa propre instance de bannière. */
+        function injectHilltopZones() {
+          document.querySelectorAll("[data-hilltop-zone]").forEach((el) => {
+            if (el.dataset.hilltopLoaded === "1") return;
+            const src = el.dataset.hilltopSrc;
+            if (!src) return;
+            el.dataset.hilltopLoaded = "1";
+            const script = document.createElement("script");
+            script.src = src;
+            script.async = true;
+            script.referrerPolicy = "no-referrer-when-downgrade";
+            el.appendChild(script);
+          });
+        }
+
         function urlBase64ToUint8Array(base64String) {
           try {
             const clean = base64String.replace(/[^A-Za-z0-9+/=_-]/g, "");
@@ -513,7 +530,10 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         function applyConsent(consent) {
           if (!consent) return;
           if (consent.analytics) enableAnalytics();
-          if (consent.marketing) enableAds();
+          if (consent.marketing) {
+            enableAds();
+            injectHilltopZones();
+          }
           if (consent.notifications) {
             enableNtfyPush();
           } else {

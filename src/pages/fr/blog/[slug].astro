@@ -5,6 +5,7 @@ import { render } from "astro:content";
 import "katex/dist/katex.min.css";
 
 import AdBanner from "../../../components/AdBanner.astro";
+import HilltopBanner from "../../../components/HilltopBanner.astro";
 import ArticleCard from "../../../components/ArticleCard.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
@@ -267,6 +268,7 @@ const structuredData = [
         <PyodideTrace />
 
         <AdBanner format="inline" compact={true} />
+        <HilltopBanner />
 
         {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
           <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />

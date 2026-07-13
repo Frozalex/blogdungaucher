@@ -96,6 +96,18 @@ export function getAdsenseSlot(
   return slots.default;
 }
 
+/** HilltopAds - zone "MultiTag : Bannière 300x250" (desktop + mobile). Script
+ * injecté par HilltopBanner.astro, chargé sur consentement marketing (cf.
+ * BaseLayout.astro). `live: false` désactive l'emplacement (rien n'est rendu). */
+export const hilltopConfig = {
+  live: true,
+  zones: {
+    rectangle300x250: {
+      src: "//untimely-hello.com/b.XRVysLdvGMlG0gY_W/cs/Ae_mu9LuLZdUzljkAP/T/c/yaMtj/A/ypNWDlkRt/NtzkI_y/MBD/Ia1uM/wM",
+    },
+  },
+} as const;
+
 export const categorySlugs = [
   "science",
   "esprit",
