@@ -3,7 +3,7 @@ import { getCollection, render } from "astro:content";
 
 import "katex/dist/katex.min.css";
 
-import AdBanner from "../../../components/AdBanner.astro";
+import EzoicAd from "../../../components/EzoicAd.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
@@ -299,7 +299,7 @@ const structuredData = [
           )}
         </div>
 
-        <AdBanner format="inline" compact={true} />
+        <EzoicAd />
 
         {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
           <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />

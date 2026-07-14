@@ -224,6 +224,31 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <script is:inline>
       window.ezstandalone = window.ezstandalone || {};
       ezstandalone.cmd = ezstandalone.cmd || [];
+
+      /* Intégration avec le ClientRouter d'Astro (View Transitions) : le site
+         navigue en SPA, donc les <script> inline des articles ne se ré-exécutent
+         pas. On pilote Ezoic depuis un handler central : showAds sur chaque
+         astro:page-load (initial + après chaque transition), destroyAll avant le
+         swap pour ne pas laisser d'annonces mortes. `.ezoicad` = les emplacements
+         posés par EzoicAd.astro. La file cmd absorbe le chargement async de sa.min.js. */
+      (function () {
+        function ezShow() {
+          window.ezstandalone.cmd.push(function () {
+            if (document.querySelector(".ezoicad")) {
+              window.ezstandalone.showAds(".ezoicad");
+            }
+          });
+        }
+        function ezDestroy() {
+          try {
+            if (typeof window.ezstandalone.destroyAll === "function") {
+              window.ezstandalone.destroyAll();
+            }
+          } catch (e) {}
+        }
+        document.addEventListener("astro:page-load", ezShow);
+        document.addEventListener("astro:before-swap", ezDestroy);
+      })();
     </script>
     <script is:inline src="//ezoicanalytics.com/analytics.js"></script>
 
@@ -532,7 +557,10 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         function applyConsent(consent) {
           if (!consent) return;
           if (consent.analytics) enableAnalytics();
-          if (consent.marketing) enableAds();
+          // SDK AdSense désactivé : passage à EzoicAds, qui interdit le code d'autres
+          // régies sur la page (Step 3 doc Ezoic). Le consentement pub est géré par le
+          // CMP gatekeeper d'Ezoic. Réactiver enableAds() ici en cas de retour AdSense.
+          void enableAds;
           if (consent.notifications) {
             enableNtfyPush();
           } else {

@@ -1,0 +1,37 @@
+---
+/**
+ * Emplacement publicitaire EzoicAds (intégration id-less / "simple setup").
+ *
+ * Ezoic insère l'annonce DANS l'élément `.ezoicad`. L'affichage est piloté de
+ * façon centralisée par le handler `astro:page-load` de BaseLayout (compatible
+ * ClientRouter) : NE PAS ajouter de <script> showAds ici, sinon double appel.
+ *
+ * ⚠️ Consigne Ezoic : ne PAS réserver de hauteur fixe (pas de min-height). Si
+ *    l'annonce ne se charge pas, une hauteur réservée laisserait un blanc. On se
+ *    limite donc à un centrage + marge (la largeur cadre les tailles demandées).
+ *    C'est un compromis assumé : un peu de CLS possible, contrairement aux
+ *    anciennes bannières AdSense/HilltopAds à espace réservé.
+ *
+ * `data-sizes` : tailles fixes WxH que le spot accepte (les natives fluides sont
+ * ajoutées automatiquement par Ezoic là où c'est éligible).
+ */
+const {
+  sizes = "300x250,336x280",
+  label = "Publicité",
+} = Astro.props as { sizes?: string; label?: string };
+---
+<aside class="ezoic-slot" aria-label={label}>
+  <div class="ezoicad" data-sizes={sizes}></div>
+</aside>
+
+<style>
+  .ezoic-slot {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  /* Pas de hauteur/min-height sur .ezoicad (consigne Ezoic). */
+  .ezoicad {
+    display: inline-block;
+    max-width: 100%;
+  }
+</style>
