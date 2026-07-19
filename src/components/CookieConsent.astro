@@ -1,21 +1,24 @@
 ---
 // Localisation côté serveur (le dict runtime ne couvre que fr/en) — même pattern
 // que HomeLanding/NewsletterForm : un objet `copy` par langue.
+// Design « façon CMP » : modal centré, interrupteurs, catégorie « nécessaires »
+// toujours active, accent indigo (var --consent-accent, changer ici pour tout basculer).
 const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
 
 const consentCopy = {
   fr: {
     brand: "Blog d'un Gaucher",
-    title: "Vos préférences de confidentialité",
-    intro: "Ce site utilise des <strong>cookies</strong> pour mesurer l'audience (Google Analytics) et afficher des publicités (Google AdSense). Les <strong>notifications push</strong> sont indépendantes des cookies et entièrement optionnelles.",
-    acceptAll: "Accepter tout",
+    title: "Nous respectons votre vie privée",
+    intro: "Ce site utilise des cookies de <strong>mesure d'audience</strong> pour comprendre ce qui intéresse les lecteurs. Les <strong>notifications push</strong> sont indépendantes des cookies et entièrement optionnelles.",
+    acceptAll: "Tout accepter",
     rejectAll: "Tout refuser",
     customize: "Personnaliser mes choix",
     chooseByCategory: "Choisir par catégorie",
+    necessaryName: "Strictement nécessaires",
+    necessaryDesc: "Indispensables au fonctionnement du site. Toujours actifs.",
+    alwaysOn: "Toujours actif",
     analyticsName: "Mesure d'audience",
-    analyticsDesc: "Google Analytics : comprendre combien de personnes lisent le blog et quels articles intéressent le plus",
-    adsName: "Publicité",
-    adsDesc: "Google AdSense : permet de financer la création de contenus gratuits",
+    analyticsDesc: "Google Analytics : comprendre combien de personnes lisent le blog et quels articles intéressent le plus.",
     pushName: "Notifications push",
     pushDesc: "Alerte navigateur à chaque nouvel article (2 par semaine). Le navigateur demandera confirmation. Révocable à tout moment.",
     save: "Enregistrer mes choix",
@@ -24,16 +27,17 @@ const consentCopy = {
   },
   en: {
     brand: "A Left-Hander's Blog",
-    title: "Your privacy preferences",
-    intro: "This site uses <strong>cookies</strong> to measure audience (Google Analytics) and display ads (Google AdSense). <strong>Push notifications</strong> are independent of cookies and entirely optional.",
+    title: "We respect your privacy",
+    intro: "This site uses <strong>audience measurement</strong> cookies to understand what readers are interested in. <strong>Push notifications</strong> are independent of cookies and entirely optional.",
     acceptAll: "Accept all",
     rejectAll: "Reject all",
     customize: "Customize my choices",
     chooseByCategory: "Choose by category",
+    necessaryName: "Strictly necessary",
+    necessaryDesc: "Essential for the site to work. Always on.",
+    alwaysOn: "Always on",
     analyticsName: "Audience measurement",
-    analyticsDesc: "Google Analytics: see how many people read the blog and which articles are most popular",
-    adsName: "Advertising",
-    adsDesc: "Google AdSense: helps fund the creation of free content",
+    analyticsDesc: "Google Analytics: see how many people read the blog and which articles are most popular.",
     pushName: "Push notifications",
     pushDesc: "Browser alert for each new article (2 per week). The browser will ask for confirmation. Revocable at any time.",
     save: "Save my choices",
@@ -42,16 +46,17 @@ const consentCopy = {
   },
   "pt-br": {
     brand: "Blog de um Canhoto",
-    title: "Suas preferências de privacidade",
-    intro: "Este site usa <strong>cookies</strong> para medir a audiência (Google Analytics) e exibir anúncios (Google AdSense). As <strong>notificações push</strong> são independentes dos cookies e totalmente opcionais.",
+    title: "Respeitamos a sua privacidade",
+    intro: "Este site usa cookies de <strong>medição de audiência</strong> para entender o que interessa aos leitores. As <strong>notificações push</strong> são independentes dos cookies e totalmente opcionais.",
     acceptAll: "Aceitar tudo",
     rejectAll: "Recusar tudo",
     customize: "Personalizar minhas escolhas",
     chooseByCategory: "Escolher por categoria",
+    necessaryName: "Estritamente necessários",
+    necessaryDesc: "Essenciais para o funcionamento do site. Sempre ativos.",
+    alwaysOn: "Sempre ativo",
     analyticsName: "Medição de audiência",
-    analyticsDesc: "Google Analytics: entender quantas pessoas leem o blog e quais artigos despertam mais interesse",
-    adsName: "Publicidade",
-    adsDesc: "Google AdSense: ajuda a financiar a criação de conteúdos gratuitos",
+    analyticsDesc: "Google Analytics: entender quantas pessoas leem o blog e quais artigos despertam mais interesse.",
     pushName: "Notificações push",
     pushDesc: "Alerta do navegador a cada novo artigo (2 por semana). O navegador pedirá confirmação. Revogável a qualquer momento.",
     save: "Salvar minhas escolhas",
@@ -60,16 +65,17 @@ const consentCopy = {
   },
   nl: {
     brand: "Blog van een Linkshandige",
-    title: "Je privacyvoorkeuren",
-    intro: "Deze site gebruikt <strong>cookies</strong> om het publiek te meten (Google Analytics) en advertenties te tonen (Google AdSense). <strong>Pushmeldingen</strong> staan los van cookies en zijn volledig optioneel.",
+    title: "We respecteren je privacy",
+    intro: "Deze site gebruikt cookies voor <strong>publieksmeting</strong> om te begrijpen wat lezers interesseert. <strong>Pushmeldingen</strong> staan los van cookies en zijn volledig optioneel.",
     acceptAll: "Alles accepteren",
     rejectAll: "Alles weigeren",
     customize: "Mijn keuzes aanpassen",
     chooseByCategory: "Kies per categorie",
+    necessaryName: "Strikt noodzakelijk",
+    necessaryDesc: "Essentieel voor de werking van de site. Altijd actief.",
+    alwaysOn: "Altijd actief",
     analyticsName: "Publieksmeting",
-    analyticsDesc: "Google Analytics: zien hoeveel mensen de blog lezen en welke artikelen het populairst zijn",
-    adsName: "Advertenties",
-    adsDesc: "Google AdSense: helpt de creatie van gratis content te financieren",
+    analyticsDesc: "Google Analytics: zien hoeveel mensen de blog lezen en welke artikelen het populairst zijn.",
     pushName: "Pushmeldingen",
     pushDesc: "Browsermelding bij elk nieuw artikel (2 per week). De browser vraagt om bevestiging. Op elk moment intrekbaar.",
     save: "Mijn keuzes opslaan",
@@ -96,16 +102,13 @@ const privacyHref = "/fr/politique-confidentialite/";
   hidden
 >
   <div class="consent-header">
-    <img
-      src="/images/logo.svg"
-      alt=""
-      aria-hidden="true"
-      class="consent-logo"
-      width="20"
-      height="28"
-      loading="eager"
-      decoding="sync"
-    />
+    <span class="consent-badge" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l7 3v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z"/>
+        <circle cx="12" cy="11" r="1.8"/>
+        <path d="M12 12.8v2.4"/>
+      </svg>
+    </span>
     <span class="consent-site">{c.brand}</span>
   </div>
 
@@ -124,7 +127,13 @@ const privacyHref = "/fr/politique-confidentialite/";
 
   <details class="consent-details" id="consent-customize-details">
     <summary class="consent-summary">
-      <span>{c.customize}</span>
+      <span class="consent-summary__label">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="6" cy="8" r="2"/><path d="M8 8h11"/><path d="M5 8H4"/>
+          <circle cx="16" cy="16" r="2"/><path d="M14 16H4"/><path d="M20 16h-2"/>
+        </svg>
+        <span>{c.customize}</span>
+      </span>
       <svg
         class="consent-chevron"
         width="14" height="14"
@@ -143,28 +152,47 @@ const privacyHref = "/fr/politique-confidentialite/";
     <fieldset class="consent-fieldset">
       <legend class="consent-fieldset__legend">{c.chooseByCategory}</legend>
 
-      <label class="consent-option">
-        <input type="checkbox" id="cookie-analytics" class="consent-checkbox" />
+      <!-- Nécessaires : toujours actif, non modifiable -->
+      <div class="consent-option consent-option--locked">
+        <span class="consent-option__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/>
+          </svg>
+        </span>
         <span class="consent-option__body">
-          <strong class="consent-option__name">{c.analyticsName}</strong>
+          <span class="consent-option__name">{c.necessaryName}</span>
+          <span class="consent-option__desc">{c.necessaryDesc}</span>
+        </span>
+        <span class="consent-switch consent-switch--on consent-switch--locked" aria-hidden="true"></span>
+        <span class="sr-only">{c.alwaysOn}</span>
+      </div>
+
+      <label class="consent-option">
+        <span class="consent-option__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16v-4"/><path d="M13 16V8"/><path d="M18 16v-2"/>
+          </svg>
+        </span>
+        <span class="consent-option__body">
+          <span class="consent-option__name">{c.analyticsName}</span>
           <span class="consent-option__desc">{c.analyticsDesc}</span>
         </span>
+        <input type="checkbox" id="cookie-analytics" class="consent-switch-input" />
+        <span class="consent-switch" aria-hidden="true"></span>
       </label>
 
       <label class="consent-option">
-        <input type="checkbox" id="cookie-marketing" class="consent-checkbox" />
-        <span class="consent-option__body">
-          <strong class="consent-option__name">{c.adsName}</strong>
-          <span class="consent-option__desc">{c.adsDesc}</span>
+        <span class="consent-option__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9a6 6 0 0112 0c0 4.5 1.8 5.8 1.8 5.8H4.2S6 13.5 6 9z"/><path d="M10 19a2 2 0 004 0"/>
+          </svg>
         </span>
-      </label>
-
-      <label class="consent-option">
-        <input type="checkbox" id="cookie-notifications" class="consent-checkbox" />
         <span class="consent-option__body">
-          <strong class="consent-option__name">{c.pushName}</strong>
+          <span class="consent-option__name">{c.pushName}</span>
           <span class="consent-option__desc">{c.pushDesc}</span>
         </span>
+        <input type="checkbox" id="cookie-notifications" class="consent-switch-input" />
+        <span class="consent-switch" aria-hidden="true"></span>
       </label>
     </fieldset>
 
@@ -210,7 +238,7 @@ const privacyHref = "/fr/politique-confidentialite/";
         if (p && typeof p === "object" && !("notifications" in p)) {
           var migrated = {
             analytics: p.analytics,
-            marketing: p.marketing,
+            marketing: false,
             notifications: false,
             updatedAt: p.updatedAt || new Date().toISOString(),
           };
@@ -226,7 +254,8 @@ const privacyHref = "/fr/politique-confidentialite/";
     function writeConsent(payload) {
       var normalized = {
         analytics: Boolean(payload.analytics),
-        marketing: Boolean(payload.marketing),
+        // Plus de régie publicitaire : marketing toujours false (catégorie retirée de l'UI).
+        marketing: false,
         notifications: Boolean(payload.notifications),
         updatedAt: new Date().toISOString(),
       };
@@ -238,11 +267,9 @@ const privacyHref = "/fr/politique-confidentialite/";
     /* ── Formulaire ───────────────────────────────────────── */
     function syncForm(consent) {
       var a = document.getElementById("cookie-analytics");
-      var m = document.getElementById("cookie-marketing");
       var n = document.getElementById("cookie-notifications");
-      if (!a || !m || !n) return;
+      if (!a || !n) return;
       a.checked = Boolean(consent && consent.analytics);
-      m.checked = Boolean(consent && consent.marketing);
       n.checked = Boolean(consent && consent.notifications);
     }
 
@@ -289,7 +316,6 @@ const privacyHref = "/fr/politique-confidentialite/";
       var saveBtn    = document.getElementById("consent-save");
       var manageBtn  = document.getElementById("cookie-manage");
       var analyticsI = document.getElementById("cookie-analytics");
-      var marketingI = document.getElementById("cookie-marketing");
       var notifI     = document.getElementById("cookie-notifications");
 
       var current = readConsent();
@@ -306,19 +332,18 @@ const privacyHref = "/fr/politique-confidentialite/";
       }
 
       bindClick(acceptBtn, function () {
-        writeConsent({ analytics : true, marketing : true, notifications : true });
+        writeConsent({ analytics : true, notifications : true });
         hideModal();
       });
 
       bindClick(rejectBtn, function () {
-        writeConsent({ analytics : false, marketing : false, notifications : false });
+        writeConsent({ analytics : false, notifications : false });
         hideModal();
       });
 
       bindClick(saveBtn, function () {
         writeConsent({
           analytics:     analyticsI ? analyticsI.checked : false,
-          marketing:     marketingI ? marketingI.checked : false,
           notifications: notifI     ? notifI.checked     : false,
         });
         hideModal();
@@ -374,7 +399,27 @@ const privacyHref = "/fr/politique-confidentialite/";
 </script>
 
 <style>
-  /* ── hidden override : empêche display:flex/block de masquer l'attribut hidden ── */
+  /* Accent du modal (façon CMP). Changer cette seule valeur pour tout re-teinter
+     (ex. var(--green) pour rester sur la couleur de marque). */
+  .consent-panel {
+    --consent-accent: #534ab7;
+    --consent-accent-hover: #443c99;
+    --consent-accent-tint: color-mix(in srgb, var(--consent-accent) 12%, transparent);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* ── hidden override ── */
   .consent-backdrop[hidden],
   .consent-panel[hidden] {
     display: none;
@@ -385,7 +430,7 @@ const privacyHref = "/fr/politique-confidentialite/";
     position: fixed;
     inset: 0;
     z-index: 200;
-    background: rgba(0, 0, 0, 0.52);
+    background: rgba(10, 10, 15, 0.55);
     -webkit-backdrop-filter : blur(3px);
     backdrop-filter: blur(3px);
   }
@@ -406,7 +451,7 @@ const privacyHref = "/fr/politique-confidentialite/";
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 201;
-    width: min(500px, calc(100vw - 2rem));
+    width: min(480px, calc(100vw - 2rem));
     max-height: calc(100dvh - 2rem);
     overflow-y: auto;
     overscroll-behavior: contain;
@@ -417,7 +462,7 @@ const privacyHref = "/fr/politique-confidentialite/";
     padding: 1.6rem 1.6rem 1.3rem;
     display: flex;
     flex-direction: column;
-    gap: 1.05rem;
+    gap: 1rem;
   }
 
   .consent-panel:not([hidden]) {
@@ -429,22 +474,28 @@ const privacyHref = "/fr/politique-confidentialite/";
     to   { opacity: 1; transform : translate(-50%, -50%); }
   }
 
-  /* ── Header ────────────────────────────────────────────── */
+  /* ── Header (badge + marque) ───────────────────────────── */
   .consent-header {
     display: flex;
     align-items: center;
-    gap: 0.55rem;
+    gap: 0.6rem;
   }
 
-  .consent-logo {
-    width: 18px;
-    height: 26px;
-    object-fit: contain;
+  .consent-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
     flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--consent-accent-tint);
+    color: var(--consent-accent);
   }
 
-  :global([data-theme="dark"]) .consent-logo {
-    filter: invert(1);
+  .consent-badge svg {
+    width: 1.15rem;
+    height: 1.15rem;
   }
 
   .consent-site {
@@ -458,7 +509,7 @@ const privacyHref = "/fr/politique-confidentialite/";
   /* ── Title ─────────────────────────────────────────────── */
   .consent-title {
     font-family: var(--font-display);
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-main);
     margin: 0;
@@ -492,10 +543,10 @@ const privacyHref = "/fr/politique-confidentialite/";
     justify-content: center;
     min-height: 2.75rem;
     padding: 0.55rem 1.15rem;
-    border-radius: var(--radius-pill);
+    border-radius: var(--radius-md);
     font-family: var(--font-display);
-    font-size: 0.88rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 600;
     cursor: pointer;
     border: 1.5px solid transparent;
     touch-action: manipulation;
@@ -511,12 +562,10 @@ const privacyHref = "/fr/politique-confidentialite/";
     white-space: nowrap;
   }
 
-  .consent-btn:focus {
-    outline: none;
-  }
+  .consent-btn:focus { outline: none; }
 
   .consent-btn:focus-visible {
-    outline: 2px solid var(--green);
+    outline: 2px solid var(--consent-accent);
     outline-offset: 2px;
   }
 
@@ -526,29 +575,25 @@ const privacyHref = "/fr/politique-confidentialite/";
   }
 
   @media (hover : hover) and (pointer : fine) {
-    .consent-btn:hover {
-      transform: translateY(-1px);
-    }
-    .consent-btn:active {
-      transform: translateY(0) scale(0.99);
-    }
+    .consent-btn:hover { transform: translateY(-1px); }
+    .consent-btn:active { transform: translateY(0) scale(0.99); }
   }
 
   .consent-btn--primary {
-    background: var(--green);
+    background: var(--consent-accent);
     color: #fff;
-    border-color: var(--green);
+    border-color: var(--consent-accent);
   }
   .consent-btn--primary:active {
-    background: var(--green-hover);
-    border-color: var(--green-hover);
+    background: var(--consent-accent-hover);
+    border-color: var(--consent-accent-hover);
   }
 
   @media (hover : hover) and (pointer : fine) {
     .consent-btn--primary:hover {
-      background: var(--green-hover);
-      border-color: var(--green-hover);
-      box-shadow: 0 4px 16px color-mix(in srgb, var(--green) 40%, transparent);
+      background: var(--consent-accent-hover);
+      border-color: var(--consent-accent-hover);
+      box-shadow: 0 4px 16px color-mix(in srgb, var(--consent-accent) 38%, transparent);
     }
   }
 
@@ -572,21 +617,19 @@ const privacyHref = "/fr/politique-confidentialite/";
 
   .consent-btn--save {
     width: 100%;
-    background: var(--bg-warm);
-    color: var(--text-main);
-    border-color: var(--border-strong);
+    background: var(--consent-accent);
+    color: #fff;
+    border-color: var(--consent-accent);
   }
   .consent-btn--save:active {
-    background: color-mix(in srgb, var(--green) 12%, var(--bg-warm));
-    border-color: var(--green-border);
-    color: var(--green);
+    background: var(--consent-accent-hover);
+    border-color: var(--consent-accent-hover);
   }
 
   @media (hover : hover) and (pointer : fine) {
     .consent-btn--save:hover {
-      background: color-mix(in srgb, var(--green) 8%, var(--bg-warm));
-      border-color: var(--green-border);
-      color: var(--green);
+      background: var(--consent-accent-hover);
+      border-color: var(--consent-accent-hover);
     }
   }
 
@@ -605,7 +648,7 @@ const privacyHref = "/fr/politique-confidentialite/";
     padding: 0.7rem 0.9rem;
     background: var(--bg-warm);
     cursor: pointer;
-    font-size: 0.84rem;
+    font-size: 0.86rem;
     font-weight: 600;
     color: var(--text-muted);
     list-style: none;
@@ -616,26 +659,23 @@ const privacyHref = "/fr/politique-confidentialite/";
     transition: color 120ms ease, background 120ms ease;
   }
 
+  .consent-summary__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   .consent-summary::-webkit-details-marker { display : none; }
-
-  .consent-summary:focus {
-    outline: none;
-  }
-
+  .consent-summary:focus { outline: none; }
   .consent-summary:focus-visible {
-    outline: 2px solid var(--green);
+    outline: 2px solid var(--consent-accent);
     outline-offset: -2px;
-  }
-
-  .consent-summary:active {
-    background: color-mix(in srgb, var(--green) 10%, var(--bg-warm));
-    color: var(--text-main);
   }
 
   @media (hover : hover) and (pointer : fine) {
     .consent-summary:hover {
       color: var(--text-main);
-      background: color-mix(in srgb, var(--green) 6%, var(--bg-warm));
+      background: color-mix(in srgb, var(--consent-accent) 6%, var(--bg-warm));
     }
   }
 
@@ -670,54 +710,104 @@ const privacyHref = "/fr/politique-confidentialite/";
     clip: rect(0 0 0 0);
   }
 
+  /* ── Ligne d'option (avec interrupteur) ────────────────── */
   .consent-option {
     display: flex;
     align-items: flex-start;
     gap: 0.7rem;
-    padding: 0.85rem 0;
+    padding: 0.9rem 0;
     border-bottom: 1px solid var(--border-soft);
     cursor: pointer;
     touch-action: manipulation;
     -webkit-tap-highlight-color : transparent;
   }
 
-  .consent-option:active {
-    background: color-mix(in srgb, var(--green) 5%, transparent);
-    margin-inline: -0.35rem;
-    padding-inline: 0.35rem;
-    border-radius: var(--radius-sm);
-  }
+  .consent-option:last-of-type { border-bottom: none; }
+  .consent-option--locked { cursor: default; }
 
-  .consent-option:last-of-type {
-    border-bottom: none;
-  }
-
-  .consent-checkbox {
+  .consent-option__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
     flex-shrink: 0;
-    width: 1.15rem;
-    height: 1.15rem;
-    margin-top: 0.12rem;
-    accent-color: var(--green);
-    cursor: pointer;
+    border-radius: 50%;
+    background: var(--consent-accent-tint);
+    color: var(--consent-accent);
   }
+
+  .consent-option__icon svg { width: 1.05rem; height: 1.05rem; }
 
   .consent-option__body {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
+    flex: 1;
+    min-width: 0;
   }
 
   .consent-option__name {
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-main);
   }
 
   .consent-option__desc {
-    font-size: 0.77rem;
+    font-size: 0.78rem;
     color: var(--text-dim);
     line-height: 1.45;
   }
+
+  /* ── Interrupteur (checkbox stylée en toggle) ──────────── */
+  .consent-switch-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    margin: 0;
+    pointer-events: none;
+  }
+
+  .consent-switch {
+    position: relative;
+    flex-shrink: 0;
+    width: 2.6rem;
+    height: 1.5rem;
+    margin-top: 0.15rem;
+    border-radius: 999px;
+    background: var(--border-strong);
+    transition: background 180ms var(--ease-out);
+  }
+
+  .consent-switch::after {
+    content: "";
+    position: absolute;
+    top: 0.18rem;
+    left: 0.18rem;
+    width: 1.14rem;
+    height: 1.14rem;
+    border-radius: 50%;
+    background: #fff;
+    transition: left 180ms var(--ease-out);
+  }
+
+  .consent-switch-input:checked ~ .consent-switch,
+  .consent-switch--on {
+    background: var(--consent-accent);
+  }
+
+  .consent-switch-input:checked ~ .consent-switch::after,
+  .consent-switch--on::after {
+    left: 1.28rem;
+  }
+
+  .consent-switch-input:focus-visible ~ .consent-switch {
+    outline: 2px solid var(--consent-accent);
+    outline-offset: 2px;
+  }
+
+  .consent-switch--locked { opacity: 0.5; }
 
   .consent-save-wrap {
     padding: 0.9rem;
@@ -735,7 +825,7 @@ const privacyHref = "/fr/politique-confidentialite/";
   }
 
   .consent-privacy-link {
-    color: var(--green);
+    color: var(--consent-accent);
     font-weight: 600;
     text-decoration: none;
     white-space: nowrap;
@@ -758,14 +848,8 @@ const privacyHref = "/fr/politique-confidentialite/";
       transform: translateX(-50%);
     }
 
-    .consent-btn {
-      min-height: 3rem;
-      font-size: 0.92rem;
-    }
-
-    .consent-summary {
-      min-height: 3rem;
-    }
+    .consent-btn { min-height: 3rem; font-size: 0.94rem; }
+    .consent-summary { min-height: 3rem; }
 
     .consent-panel:not([hidden]) {
       animation: consent-panel-mobile-in 300ms var(--ease-out) both;
@@ -776,9 +860,7 @@ const privacyHref = "/fr/politique-confidentialite/";
       to   { opacity: 1; transform : translateX(-50%) translateY(0); }
     }
 
-    .consent-quick {
-      grid-template-columns: 1fr;
-    }
+    .consent-quick { grid-template-columns: 1fr; }
   }
 
   /* ── Accessibilité : réduction de mouvement ────────────── */
@@ -787,5 +869,7 @@ const privacyHref = "/fr/politique-confidentialite/";
     .consent-panel:not([hidden]) {
       animation: none;
     }
+    .consent-switch,
+    .consent-switch::after { transition: none; }
   }
 </style>
