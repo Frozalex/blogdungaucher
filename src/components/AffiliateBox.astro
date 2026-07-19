@@ -1,0 +1,97 @@
+---
+/**
+ * Bloc « Matériel recommandé » en fin d'article : liste de produits affiliés
+ * Amazon FR liés au sujet. Ne rend RIEN si l'article n'a pas d'association
+ * (cf. affiliateBySlug dans data/affiliate-products.ts).
+ *
+ * Conformité : mention Partenaire Amazon obligatoire (Programme Partenaires) +
+ * `rel="sponsored nofollow noopener"` sur chaque lien (règle Google pour les
+ * liens rémunérés). Ouverture dans un nouvel onglet.
+ */
+import { getAffiliateProductsForSlug } from "../data/affiliate-products";
+
+const { slug } = Astro.props as { slug: string };
+const products = getAffiliateProductsForSlug(slug);
+---
+{products.length > 0 && (
+  <aside class="affiliate-box" aria-labelledby="affiliate-title">
+    <p class="affiliate-eyebrow">Pour aller plus loin</p>
+    <h2 id="affiliate-title" class="affiliate-title">Matériel recommandé</h2>
+    <ul class="affiliate-list">
+      {products.map((p) => (
+        <li>
+          <a href={p.url} target="_blank" rel="sponsored nofollow noopener">
+            <span class="affiliate-name">{p.name}</span>
+            <span class="affiliate-arrow" aria-hidden="true">›</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="affiliate-disclaimer">
+      En tant que Partenaire Amazon, je réalise un bénéfice sur les achats
+      remplissant les conditions requises. Liens affiliés, sans surcoût pour vous.
+    </p>
+  </aside>
+)}
+
+<style>
+  .affiliate-box {
+    margin: 2.5rem 0;
+    padding: 1.5rem 1.75rem;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-lg, 16px);
+    background: var(--bg-warm);
+  }
+  .affiliate-eyebrow {
+    margin: 0 0 0.15rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--page-accent, var(--text-dim));
+  }
+  .affiliate-title {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+  .affiliate-list {
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+  }
+  .affiliate-list a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md, 10px);
+    background: var(--bg);
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .affiliate-list a:hover {
+    border-color: var(--page-accent, var(--border-strong));
+    transform: translateX(2px);
+  }
+  .affiliate-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .affiliate-arrow {
+    flex: none;
+    font-size: 1.1rem;
+    color: var(--page-accent, var(--text-dim));
+  }
+  .affiliate-disclaimer {
+    margin: 0;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    color: var(--text-dim);
+  }
+</style>

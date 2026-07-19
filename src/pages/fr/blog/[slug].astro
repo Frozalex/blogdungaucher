@@ -5,6 +5,7 @@ import { render } from "astro:content";
 import "katex/dist/katex.min.css";
 
 import EzoicAd from "../../../components/EzoicAd.astro";
+import AffiliateBox from "../../../components/AffiliateBox.astro";
 import ArticleCard from "../../../components/ArticleCard.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
@@ -273,6 +274,8 @@ const structuredData = [
         )}
 
         {faqs.length > 0 && <FAQ items={faqs} lang="fr" />}
+
+        <AffiliateBox slug={getPostSlug(post)} />
 
         <Comments lang="fr" postId={postUrl} />
         <TextHighlight lang="fr" />
