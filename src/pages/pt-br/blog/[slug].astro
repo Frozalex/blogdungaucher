@@ -3,7 +3,6 @@ import { getCollection, render } from "astro:content";
 
 import "katex/dist/katex.min.css";
 
-import EzoicAd from "../../../components/EzoicAd.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
@@ -298,8 +297,6 @@ const structuredData = [
             Content && <Content />
           )}
         </div>
-
-        <EzoicAd />
 
         {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
           <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />

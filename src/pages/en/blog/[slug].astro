@@ -4,7 +4,6 @@ import { render, getEntry, getCollection } from "astro:content";
 // KaTeX CSS chargé ici (et non dans BaseLayout) : seuls les articles peuvent contenir des formules.
 import "katex/dist/katex.min.css";
 
-import EzoicAd from "../../../components/EzoicAd.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
@@ -307,8 +306,6 @@ const structuredData = [
             Content && <Content />
           )}
         </div>
-
-        <EzoicAd />
 
         {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
           <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />

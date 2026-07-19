@@ -209,49 +209,6 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {/* ── EzoicAds (programme Incubator) ──────────────────────────────────────
-        Chargé le plus haut possible dans le <head>, AVANT tout autre script pub.
-        Ordre imposé par Ezoic : scripts de consentement (gatekeeper) d'abord,
-        puis le header script `sa.min.js`. `is:inline` sur CHAQUE balise : sans
-        lui, Astro bundle/réécrit les <script> et casse l'intégration (perte de
-        data-cfasync, du src tiers, de l'ordre de chargement).
-        NB : le consentement pub est géré par le CMP gatekeeper d'Ezoic, pas par
-        le CookieConsent maison (qui reste pour Umami/GA4/ntfy). Voir la CSP dans
-        deploy/nginx-headers.conf (domaines Ezoic autorisés). */}
-    <script is:inline data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
-    <script is:inline data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
-    <script is:inline async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-    <script is:inline>
-      window.ezstandalone = window.ezstandalone || {};
-      ezstandalone.cmd = ezstandalone.cmd || [];
-
-      /* Intégration avec le ClientRouter d'Astro (View Transitions) : le site
-         navigue en SPA, donc les <script> inline des articles ne se ré-exécutent
-         pas. On pilote Ezoic depuis un handler central : showAds sur chaque
-         astro:page-load (initial + après chaque transition), destroyAll avant le
-         swap pour ne pas laisser d'annonces mortes. `.ezoicad` = les emplacements
-         posés par EzoicAd.astro. La file cmd absorbe le chargement async de sa.min.js. */
-      (function () {
-        function ezShow() {
-          window.ezstandalone.cmd.push(function () {
-            if (document.querySelector(".ezoicad")) {
-              window.ezstandalone.showAds(".ezoicad");
-            }
-          });
-        }
-        function ezDestroy() {
-          try {
-            if (typeof window.ezstandalone.destroyAll === "function") {
-              window.ezstandalone.destroyAll();
-            }
-          } catch (e) {}
-        }
-        document.addEventListener("astro:page-load", ezShow);
-        document.addEventListener("astro:before-swap", ezDestroy);
-      })();
-    </script>
-    <script is:inline src="//ezoicanalytics.com/analytics.js"></script>
-
     <meta name="description" content={description} />
     <meta name="author" content="Le Gaucher" />
     <meta name="generator" content={Astro.generator} />
@@ -557,9 +514,10 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         function applyConsent(consent) {
           if (!consent) return;
           if (consent.analytics) enableAnalytics();
-          // SDK AdSense désactivé : passage à EzoicAds, qui interdit le code d'autres
-          // régies sur la page (Step 3 doc Ezoic). Le consentement pub est géré par le
-          // CMP gatekeeper d'Ezoic. Réactiver enableAds() ici en cas de retour AdSense.
+          // Aucune régie display active pour l'instant (AdSense et Ezoic refusés) :
+          // le SDK AdSense n'est PAS chargé. La monétisation passe par l'affiliation
+          // (liens statiques, sans script tiers ni consentement). Réactiver
+          // enableAds() ici si une régie display est acceptée un jour.
           void enableAds;
           if (consent.notifications) {
             enableNtfyPush();

@@ -4,7 +4,6 @@ import { render } from "astro:content";
 // KaTeX CSS chargé ici (et non dans BaseLayout) : seuls les articles peuvent contenir des formules.
 import "katex/dist/katex.min.css";
 
-import EzoicAd from "../../../components/EzoicAd.astro";
 import AffiliateBox from "../../../components/AffiliateBox.astro";
 import ArticleCard from "../../../components/ArticleCard.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
@@ -266,8 +265,6 @@ const structuredData = [
             blocs ```python précédés d'un <div data-pytrace></div>. Pyodide
             chargé en lazy au clic uniquement. */}
         <PyodideTrace />
-
-        <EzoicAd />
 
         {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
           <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
