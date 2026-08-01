@@ -8,6 +8,7 @@ publishDate: "2026-11-19"
 category: societe
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 16 min
 pillar: Échecs et société
 tags:
@@ -131,7 +132,7 @@ Avec les règles modernes en place, il restait à unifier le reste. Cette standa
 
 Le premier grand livre imprimé sur le jeu nouveau, celui de **Luis Ramírez de Lucena**, paraît à Salamanque en 1497. Le roque, le double pas initial du pion et la prise en passant se fixent entre le XVᵉ et le XVIᵉ siècle. Mais les **pièces**, elles, varient encore énormément d'un pays à l'autre, au point de gêner les rencontres internationales.
 
-La solution arrive en **1849** avec le set **Staunton** : un modèle sobre, stable, immédiatement lisible, enregistré par Nathaniel Cooke et promu par le champion anglais Howard Staunton. Il s'impose comme la norme universelle, et reste aujourd'hui le seul autorisé en compétition officielle.
+La solution arrive en **1849** avec le [set **Staunton**](https://amzn.to/4fJByQt) : un modèle sobre, stable, immédiatement lisible, enregistré par Nathaniel Cooke et promu par le champion anglais Howard Staunton. Il s'impose comme la norme universelle, et reste aujourd'hui le seul autorisé en compétition officielle.
 
 Les institutions suivent. Le premier grand **tournoi international** se tient à Londres en **1851**, remporté par Adolf Anderssen. Le premier **championnat du monde** officiel couronne Wilhelm Steinitz en **1886**. Enfin, la **FIDE**, la fédération internationale, naît à Paris en **1924**. La pendule, la notation, le classement Elo viendront compléter l'édifice. Le jeu millénaire est devenu une institution mondiale réglée.
 

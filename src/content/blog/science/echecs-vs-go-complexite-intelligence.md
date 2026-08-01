@@ -5,6 +5,7 @@ publishDate: "2027-01-25"
 category: "science"
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: "12 min"
 pillar: "Théorie des jeux"
 tags: ["Go", "AlphaGo", "complexité combinatoire", "IA", "comparaison", "cognition"]
@@ -57,7 +58,7 @@ Les fonctions cognitives les plus sollicitées aux échecs sont les fonctions ex
 
 ## Ce que le Go demande différemment
 
-Le Go se joue sur un goban vierge. Les premiers coups n'ont pas de valeur tactique immédiate visible : ils établissent des influences, des territoires potentiels, des directions de jeu. Un débutant regarde un goban en cours de partie et ne comprend pas comment l'évaluer. Un maître voit des structures globales, des équilibres de territoire et de force.
+Le Go se joue sur un [goban](https://amzn.to/44EReyb) vierge. Les premiers coups n'ont pas de valeur tactique immédiate visible : ils établissent des influences, des territoires potentiels, des directions de jeu. Un débutant regarde un goban en cours de partie et ne comprend pas comment l'évaluer. Un maître voit des structures globales, des équilibres de territoire et de force.
 
 Ce que les études cognitives montrent au Go, c'est que l'expertise repose davantage sur une évaluation holistique des positions globales, plutôt que sur le calcul de séquences précises. Les top joueurs de Go calculent des séquences tactiques dans les combats locaux (les "ladders", les captures en séquence), mais l'essentiel de leur supériorité réside dans l'évaluation stratégique globale, difficile à formaliser.
 

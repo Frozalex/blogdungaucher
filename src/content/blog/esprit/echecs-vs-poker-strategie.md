@@ -5,6 +5,7 @@ publishDate: "2027-01-28"
 category: "esprit"
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: "13 min"
 pillar: "Prise de décision"
 tags: ["poker", "stratégie", "GTO", "bluff", "théorie des jeux", "incertitude", "prise de décision"]
@@ -49,7 +50,7 @@ La GTO (Game Theory Optimal) est le concept central du poker moderne de haut niv
 
 La GTO au poker est un mélange de décisions : vous ne faites pas toujours la même chose dans la même situation. Dans certaines situations, la GTO prescrit de bluffer avec une fréquence précise, disons 33% du temps. Pas toujours, pas jamais, mais exactement 33% pour rendre votre adversaire indifférent entre appeler et se coucher face à vos mises.
 
-Cela signifie que la stratégie optimale au poker est intrinsèquement aléatoire. C'est paradoxal pour un esprit formé aux échecs, où chaque position a (théoriquement) un coup objectivement meilleur. Au poker, l'optimalité exige de l'imprévisibilité.
+Cela signifie que la stratégie optimale au poker est intrinsèquement aléatoire. C'est paradoxal pour un esprit formé aux échecs, où chaque position a (théoriquement) un coup objectivement meilleur. Au poker — qu'un simple [set de cartes et jetons](https://amzn.to/4hlYy9s) suffit à pratiquer —, l'optimalité exige de l'imprévisibilité.
 
 Cette propriété a été formalisée par John Nash en 1950 et s'applique à tout jeu à somme nulle à deux joueurs. Mais ses implications pratiques pour le poker n'ont été exploitées qu'à partir des années 2010, grâce aux solveurs informatiques comme PioSolver et GTO+.
 

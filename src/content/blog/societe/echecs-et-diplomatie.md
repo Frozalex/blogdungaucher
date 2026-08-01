@@ -8,6 +8,7 @@ publishDate: "2026-08-31"
 category: societe
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 17 min
 pillar: Échecs et société
 tags:
@@ -87,7 +88,7 @@ faq:
 
 En 1972, à Reykjavik, deux hommes étaient assis face à un échiquier. L'un était américain, excentrique, imprévisible. L'autre soviétique, calme, produit d'une machine à fabriquer des champions. Entre eux, soixante-quatre cases en bois. Autour d'eux, deux superpuissances nucléaires qui regardaient.
 
-Bobby Fischer contre Boris Spassky n'était pas seulement un Championnat du monde d'échecs. C'était un épisode de guerre froide, et tout le monde le savait.
+Bobby Fischer contre Boris Spassky n'était pas seulement un Championnat du monde d'échecs. C'était un épisode de guerre froide, et tout le monde le savait. Le récit coup par coup de cet affrontement est rassemblé dans [*Fischer–Spassky 1972*](https://amzn.to/4fndWQb).
 
 ## L'échiquier comme métaphore géopolitique
 

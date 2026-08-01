@@ -5,6 +5,7 @@ publishDate: "2027-02-04"
 category: "esprit"
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: "12 min"
 pillar: "Mémoire"
 tags: ["scrabble", "mémoire lexicale", "calcul combinatoire", "comparaison", "cognition", "anagrammes"]
@@ -29,7 +30,7 @@ heroImage:
 ogImage: "/images/og-default.png"
 ---
 
-On range les deux dans la même catégorie : jeux de table, jeux pour gens intelligents, activités mentalement stimulantes. Mais les champions de Scrabble et les grands maîtres d'échecs ont des profils cognitifs très différents. Et les deux disciplines entraînent le cerveau de manières qui ne se recoupent que partiellement.
+On range les deux dans la même catégorie : jeux de table, jeux pour gens intelligents, activités mentalement stimulantes. Mais les champions de [Scrabble](https://amzn.to/44E2zP2) et les grands maîtres d'échecs ont des profils cognitifs très différents. Et les deux disciplines entraînent le cerveau de manières qui ne se recoupent que partiellement.
 
 Cette comparaison révèle quelque chose d'intéressant sur ce qu'on appelle communément "l'intelligence" : ce terme recouvre des aptitudes distinctes, parfois non corrélées, parfois en tension.
 
