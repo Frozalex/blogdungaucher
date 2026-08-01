@@ -16,7 +16,7 @@
  */
 
 export interface AffiliateProduct {
-  /** Nom affiché dans le bloc (concis). */
+  /** Nom concis du produit (aide au choix de l'ancre à insérer). */
   name: string;
   /** Lien affilié (amzn.to). */
   url: string;
@@ -139,12 +139,3 @@ export const affiliateBySlug: Record<string, string[]> = {
   "les-echecs-et-l-addiction": ["L9", "B5", "C1", "B1", "L3", "B2", "B3"],
   "les-echecs-sont-ils-vraiment-un-sport": ["B1", "B2", "C1", "B3", "B5", "L3", "L1"],
 };
-
-/** Retourne les produits (résolus) à afficher pour un slug donné, ou [] si aucun. */
-export function getAffiliateProductsForSlug(slug: string): AffiliateProduct[] {
-  const ids = affiliateBySlug[slug];
-  if (!ids) return [];
-  return ids
-    .map((id) => affiliateProducts[id])
-    .filter((p): p is AffiliateProduct => Boolean(p));
-}

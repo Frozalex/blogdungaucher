@@ -81,7 +81,7 @@ Ce paradoxe résume le sujet : **les échecs ne « donnent » pas une mémoire m
 
 Jouer aux échecs, c'est en permanence **retenir**, **mettre à jour** et **oublier à dessein** : variantes partielles, menaces indirectes, contrainte de temps. La mémoire n'est pas un seul bloc : on distingue classiquement la **mémoire de travail** (manipuler l'information en cours), la **mémoire à long terme** (bibliothèque de schémas), et des processus exécutifs (inhiber une capture tentante, maintenir l'attention).
 
-Les échecs sollicitent surtout une **mémoire de domaine** : tu deviens très fort pour reconnaître des configurations qui **ressemblent aux échecs**. Le transfert vers d'autres tâches (listes de courses, cours d'histoire) existe mais reste **modeste** et dépend de la façon dont tu t'entraînes. Pour le cerveau au scanner et les bénéfices liés à l'âge, l'article sur [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/) et celui sur [les les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/) complètent le tableau.
+Les échecs sollicitent surtout une **mémoire de domaine** : tu deviens très fort pour reconnaître des configurations qui **ressemblent aux échecs**. Le transfert vers d'autres tâches (listes de courses, cours d'histoire) existe mais reste **modeste** et dépend de la façon dont tu t'entraînes. Pour le cerveau au scanner et les bénéfices liés à l'âge, l'article sur [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/) complète le tableau.
 
 ## Comment les échecs améliorent la mémoire de travail
 
