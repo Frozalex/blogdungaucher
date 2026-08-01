@@ -8,6 +8,7 @@ publishDate: "2026-05-12"
 category: societe
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 24 min
 pillar: Culture
 tags:
@@ -138,7 +139,7 @@ C'est en partie pour cette raison que les plateformes numériques ont transform�
 
 ### L'héritage de la Guerre froide
 
-Pendant des décennies, les échecs ont été financés par des États, notamment l'URSS, qui y voyait un terrain de prestige idéologique. [Bobby Fischer](https://fr.wikipedia.org/wiki/Bobby_Fischer) contre [Boris Spassky](https://fr.wikipedia.org/wiki/Boris_Spassky) en 1972 a attiré l'attention mondiale précisément parce qu'il s'inscrivait dans ce contexte géopolitique. L'État soviétique subventionnait des dizaines de joueurs professionnels, leur offrait des appartements, des salaires, des entraîneurs.
+Pendant des décennies, les échecs ont été financés par des États, notamment l'URSS, qui y voyait un terrain de prestige idéologique. [Bobby Fischer](https://fr.wikipedia.org/wiki/Bobby_Fischer) contre [Boris Spassky](https://fr.wikipedia.org/wiki/Boris_Spassky) en 1972 a attiré l'attention mondiale précisément parce qu'il s'inscrivait dans ce contexte géopolitique. L'État soviétique subventionnait des dizaines de joueurs professionnels, leur offrait des appartements, des salaires, des entraîneurs. Ce duel de 1972, sommet de la guerre froide échiquéenne, est raconté coup par coup dans [*Fischer–Spassky 1972*](https://amzn.to/4fndWQb).
 
 La chute de l'URSS a effondré ce modèle de subvention étatique sans que rien de commercial ne le remplace. Les joueurs des années 1990 et 2000 se sont retrouvés dans un vide économique. Beaucoup de Grand Maîtres de cette génération ont quitté le jeu professionnel pour l'informatique ou la finance - deux domaines où leurs capacités d'analyse étaient monnayables.
 

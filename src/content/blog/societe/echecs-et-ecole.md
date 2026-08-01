@@ -8,6 +8,7 @@ publishDate: "2026-07-06"
 category: societe
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 20 min
 pillar: Éducation
 tags:
@@ -165,7 +166,7 @@ Sur la base de la littérature disponible, voici ce que la recherche suggère po
 
 **Enseignants spécifiquement formés.** Les études montrent systématiquement de meilleurs résultats quand les cours sont donnés par des entraîneurs d'échecs formés à la pédagogie, plutôt que par des instituteurs ayant appris les règles à la hâte. Cela implique un investissement en formation.
 
-**Progression structurée.** Les programmes efficaces suivent une progression pédagogique claire : règles → tactiques simples → stratégie → analyse de parties. Les programmes qui sautent à la stratégie trop tôt ou qui se limitent aux règles trop longtemps perdent les enfants.
+**Progression structurée.** Les programmes efficaces suivent une progression pédagogique claire : règles → tactiques simples → stratégie → analyse de parties. Un classique de l'initiation comme [*Bobby Fischer Teaches Chess*](https://amzn.to/4pqR0UO) épouse exactement cette logique. Les programmes qui sautent à la stratégie trop tôt ou qui se limitent aux règles trop longtemps perdent les enfants.
 
 **Évaluation continue.** Les meilleurs programmes intègrent des petits tournois en classe, des analyses collectives, et des journaux d'apprentissage. Ces pratiques renforcent la méta-cognition : la capacité à penser à sa propre pensée.
 

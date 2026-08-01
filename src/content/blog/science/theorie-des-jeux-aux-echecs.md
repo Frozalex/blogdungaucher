@@ -6,6 +6,7 @@ updatedDate: "2026-05-21"
 category: "science"
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: "18 min"
 pillar: "Mathématiques"
 tags: ["théorie des jeux", "échecs", "mathématiques", "Nash", "minimax", "Zermelo", "stratégie dominante", "stratégie mixte", "science"]
@@ -64,7 +65,7 @@ Quatre propriétés font des échecs un objet rare en théorie des jeux. Elles p
 
 **Somme nulle.** Aucune issue où vous gagnez tous les deux. Aucune où vous perdez tous les deux. La nullité est un partage strict, pas un compromis. Cette propriété rend les échecs analysables : c'est ce qu'on appelle un *jeu à somme nulle à deux joueurs*, la classe la plus simple en théorie des jeux.
 
-**Information parfaite.** Au poker, tu ne vois pas les cartes adverses. Au backgammon, tu lances des dés. Aux échecs, *tout* est sur l'échiquier. À tout instant, les deux joueurs ont accès à exactement la même information. Aucun élément caché, aucun hasard.
+**Information parfaite.** Au poker (un simple [jeu de cartes et jetons](https://amzn.to/4hlYy9s) suffit à le vérifier), tu ne vois pas les cartes adverses. Au backgammon, tu lances des dés. Aux échecs, *tout* est sur l'échiquier. À tout instant, les deux joueurs ont accès à exactement la même information. Aucun élément caché, aucun hasard.
 
 **Fini.** Le nombre de parties légales est l'estimation de Shannon : $10^{120}$. Astronomique : plus grand que le nombre d'atomes dans l'univers observable. Mais **fini**. Et c'est cette finitude qui rend possible le théorème suivant.
 
