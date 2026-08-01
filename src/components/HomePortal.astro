@@ -5,8 +5,6 @@ import ArticleCard from "./ArticleCard.astro";
 import SectionTitle from "./SectionTitle.astro";
 import FilPanel from "./FilPanel.astro";
 import type { FilItem } from "./FilPanel.astro";
-import RankedPanel from "./RankedPanel.astro";
-import type { RankedItem } from "./RankedPanel.astro";
 import PillarGrid from "./PillarGrid.astro";
 import type { PillarTile } from "./PillarGrid.astro";
 import DossierBox from "./DossierBox.astro";
@@ -101,24 +99,23 @@ const filItems: FilItem[] = await Promise.all(
   })),
 );
 
-// Les plus lus : liste manuelle résolue, complétée par les plus récents si < 5.
+// Les plus lus : liste manuelle résolue en 6 cartes (grille 2×3), complétée par
+// les plus récents si < 6. On exclut l'article de tête et les cartes déjà
+// affichées dans « Derniers articles » pour ne pas dupliquer une carte sur la page.
 const bySlug = new Map(posts.map((p) => [getPostSlug(p), p]));
 const rankedSource: BlogEntry[] = [];
 const seen = new Set<string>();
+if (leadPost) seen.add(leadPost.id);
+for (const p of gridPosts) seen.add(p.id);
 for (const slug of mostReadSlugs) {
   const p = bySlug.get(slug);
-  if (p) { rankedSource.push(p); seen.add(p.id); }
+  if (p && !seen.has(p.id)) { rankedSource.push(p); seen.add(p.id); }
 }
 for (const p of posts) {
-  if (rankedSource.length >= 5) break;
+  if (rankedSource.length >= 6) break;
   if (!seen.has(p.id)) { rankedSource.push(p); seen.add(p.id); }
 }
-const rankedItems: RankedItem[] = await Promise.all(
-  rankedSource.slice(0, 5).map(async (p) => ({
-    href: await getPostUrlLang(p, lang),
-    title: await localizedTitle(p),
-  })),
-);
+const mostReadPosts = rankedSource.slice(0, 6);
 
 // ── Rubriques (Grand oral FR-only) ──────────────────────────────
 const pillarGlyphs: Record<string, string> = {
@@ -186,12 +183,23 @@ const blogHref = `/${lang}/blog/`;
             <ArticleCard post={post} lang={lang} />
           ))}
         </div>
+
+        <!-- Les plus lus : grille 2×3, juste sous « Derniers articles » -->
+        {mostReadPosts.length > 0 && (
+          <>
+            <SectionTitle title={L.mostRead} id="plus-lus" />
+            <div class="portal__cards">
+              {mostReadPosts.map((post) => (
+                <ArticleCard post={post} lang={lang} />
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
-      <!-- Colonne latérale : Le fil + Les plus lus -->
+      <!-- Colonne latérale : Le fil -->
       <aside class="portal__side">
         <FilPanel items={filItems} heading={L.theFil} allLabel={L.allFil} allHref={blogHref} />
-        <RankedPanel items={rankedItems} heading={L.mostRead} />
       </aside>
     </div>
 
@@ -247,8 +255,7 @@ const blogHref = `/${lang}/blog/`;
   }
 
   .portal__side {
-    position: sticky;
-    top: calc(var(--navbar-h) + 1.5rem);
+    /* En flux (pas de sticky) : la colonne ne suit plus le défilement. */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -283,7 +290,6 @@ const blogHref = `/${lang}/blog/`;
   /* Sous 980px : une seule colonne, la sidebar tombe sous le contenu principal. */
   @media (max-width: 980px) {
     .portal__grid { grid-template-columns: 1fr; gap: 2.5rem; }
-    .portal__side { position: static; top: auto; }
   }
   @media (max-width: 560px) {
     .portal__cards { grid-template-columns: 1fr; }
