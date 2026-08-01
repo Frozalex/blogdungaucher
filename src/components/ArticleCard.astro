@@ -5,9 +5,11 @@ import type { BlogEntry } from "../utils/blog";
 import { formatDate, formatDateEn, formatDatePtBr, formatDateNl, getCategoryMeta, getPostHeroSrc, getPostSlug, getPostUrlLang } from "../utils/blog";
 import { t, type Lang } from "../i18n/translations";
 
-const { post, featured = false, eager = false, lang = "fr" } = Astro.props as {
+const { post, featured = false, lead = false, eager = false, lang = "fr" } = Astro.props as {
   post: BlogEntry;
   featured?: boolean;
+  /** Variante « article de tête » : disposition horizontale image/texte (portail éditorial). */
+  lead?: boolean;
   /** Charge la vignette en priorité (image above-the-fold / LCP) : désactive le lazy-loading. */
   eager?: boolean;
   lang?: Lang | "pt-br" | "nl";
@@ -53,7 +55,7 @@ const thumbSrc = getPostHeroSrc(post);
 const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl");
 ---
 <article
-  class={`card scale-in ${featured ? "featured" : ""}`}
+  class={`card scale-in ${featured ? "featured" : ""} ${lead ? "lead" : ""}`}
   style={`--motion-delay: 60ms; --accent:${category.accent};`}
 >
   <a href={postHref} class="card-link card-link--thumb">
@@ -385,4 +387,50 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
     transition: transform 220ms var(--ease-spring);
   }
   .card:hover .card-cta svg { transform: translateX(4px); }
+
+  /* ════════════════════════════════════════════
+     Variante LEAD — article de tête horizontal (portail éditorial).
+     Image ~52 % / texte ~48 %, image à hauteur pleine, corps centré.
+     Autonome : ne dépend d'aucune surcharge du composant parent.
+  ════════════════════════════════════════════ */
+  .card.lead .card-link--thumb {
+    grid-template-columns: 52% 48%;
+    align-items: stretch;
+    height: 100%;
+  }
+  .card.lead .card-thumb-wrap {
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 300px;
+    border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+  }
+  .card.lead .card-body {
+    padding: 2rem 2.15rem;
+    justify-content: center;
+    gap: 0.85rem;
+  }
+  .card.lead .card-title {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+    line-height: 1.18;
+    -webkit-line-clamp: 3;
+  }
+  .card.lead .card-excerpt {
+    font-size: 0.95rem;
+    -webkit-line-clamp: 4;
+  }
+
+  /* Sous 980px : l'article de tête repasse en vertical, vignette 16/9. */
+  @media (max-width: 980px) {
+    .card.lead .card-link--thumb { grid-template-columns: 1fr; }
+    .card.lead .card-thumb-wrap {
+      aspect-ratio: 16 / 9;
+      height: auto;
+      min-height: 0;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+    .card.lead .card-body { padding: 1.5rem 1.5rem 1.4rem; }
+  }
 </style>

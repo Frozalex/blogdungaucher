@@ -1,0 +1,136 @@
+---
+/**
+ * Panneau latéral « Le fil » — équivalent du flash-infos d'un portail.
+ * Présentationnel : reçoit des entrées déjà résolues (titre + URL localisés).
+ * Faute d'heure de publication dans les données, la colonne date empile le
+ * numéro du jour (gras) et le mois abrégé plutôt qu'une heure factice.
+ */
+export interface FilItem {
+  href: string;
+  title: string;
+  /** Nom complet de la rubrique (petites capitales colorées). */
+  catShort: string;
+  /** Couleur pleine de la rubrique. */
+  catAccent: string;
+  /** Numéro du jour (ex. 12). */
+  day: string;
+  /** Mois abrégé localisé (ex. « mai »). */
+  month: string;
+}
+interface Props {
+  items: FilItem[];
+  heading: string;
+  allLabel: string;
+  allHref: string;
+}
+const { items, heading, allLabel, allHref } = Astro.props;
+---
+<aside class="fil">
+  <div class="fil__head">{heading}</div>
+  <ol class="fil__list">
+    {items.map((it) => (
+      <li class="fil__item">
+        <span class="fil__date" style={`--fc:${it.catAccent}`}>
+          <span class="fil__day">{it.day}</span>
+          <span class="fil__month">{it.month}</span>
+        </span>
+        <a class="fil__content" href={it.href}>
+          <span class="fil__cat" style={`--fc:${it.catAccent}`}>{it.catShort}</span>
+          <span class="fil__title">{it.title}</span>
+        </a>
+      </li>
+    ))}
+  </ol>
+  <a class="fil__all" href={allHref}>{allLabel}</a>
+</aside>
+
+<style>
+  .fil {
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .fil__head {
+    padding: 0.85rem 1.15rem;
+    background: #1c1a16;
+    color: #f0ebe0;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.14rem;
+    line-height: 1;
+  }
+  .fil__list {
+    list-style: none;
+    margin: 0;
+    padding: 0.35rem 1.15rem 0.5rem;
+  }
+  .fil__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .fil__item:last-child { border-bottom: none; }
+
+  .fil__date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    min-width: 50px;
+    padding-right: 12px;
+    border-right: 2px solid color-mix(in srgb, var(--fc) 55%, var(--border-soft));
+    font-variant-numeric: tabular-nums;
+    line-height: 1.05;
+  }
+  .fil__day {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--text-main);
+  }
+  .fil__month {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    text-transform: lowercase;
+  }
+
+  .fil__content { display: block; }
+  .fil__cat {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-family: var(--font-display);
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--fc);
+  }
+  .fil__title {
+    display: block;
+    font-size: 0.86rem;
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--text-main);
+    transition: color 160ms ease;
+  }
+  .fil__content:hover .fil__title { color: var(--green); }
+
+  .fil__all {
+    display: block;
+    margin: 0.15rem 1.15rem 1.15rem;
+    padding: 0.55rem 1rem;
+    border: 1.5px solid var(--green-border);
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--green);
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    transition: background 180ms ease, color 180ms ease;
+  }
+  .fil__all:hover { background: var(--green); color: #fff; }
+</style>

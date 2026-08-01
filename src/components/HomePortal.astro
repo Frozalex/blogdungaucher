@@ -1,0 +1,291 @@
+---
+import { getEntry, getCollection } from "astro:content";
+
+import ArticleCard from "./ArticleCard.astro";
+import SectionTitle from "./SectionTitle.astro";
+import FilPanel from "./FilPanel.astro";
+import type { FilItem } from "./FilPanel.astro";
+import RankedPanel from "./RankedPanel.astro";
+import type { RankedItem } from "./RankedPanel.astro";
+import PillarGrid from "./PillarGrid.astro";
+import type { PillarTile } from "./PillarGrid.astro";
+import DossierBox from "./DossierBox.astro";
+import type { DossierBoxEntry } from "./DossierBox.astro";
+
+import { categoryMap, categorySlugs } from "../data/site";
+import { mostReadSlugs } from "../data/most-read";
+import { currentDossier } from "../data/dossier";
+import { t, type Lang } from "../i18n/translations";
+import { swapLangPrefix } from "../utils/lang-paths";
+import {
+  getAllPosts,
+  getFeaturedPosts,
+  getLatestPosts,
+  filterPostsForLang,
+  getPostSlug,
+  getPostUrlLang,
+  type BlogEntry,
+} from "../utils/blog";
+
+interface Props {
+  lang: "fr" | "en" | "pt-br" | "nl";
+}
+const { lang } = Astro.props;
+const tLang: Lang = lang;
+
+// ── Libellés localisés ──────────────────────────────────────────
+const L = {
+  latestArticles: t(tLang, "portal.latestArticles"),
+  sections: t(tLang, "portal.sections"),
+  mostRead: t(tLang, "portal.mostRead"),
+  theFil: t(tLang, "portal.theFil"),
+  allFil: t(tLang, "portal.allFil"),
+  seeAll: t(tLang, "portal.seeAll"),
+  seeSection: t(tLang, "portal.seeSection"),
+  dossierLabel: t(tLang, "portal.dossierLabel"),
+};
+
+const localeOf: Record<string, string> = {
+  fr: "fr-FR", en: "en-US", "pt-br": "pt-BR", nl: "nl-NL",
+};
+const monthFmt = new Intl.DateTimeFormat(localeOf[lang] ?? "fr-FR", { month: "short", timeZone: "UTC" });
+
+// Titre localisé d'un article (mêmes collections que ArticleCard).
+async function localizedTitle(post: BlogEntry): Promise<string> {
+  const slug = getPostSlug(post);
+  if (lang === "en") {
+    const e = await getEntry("enTranslations", slug);
+    if (e && !e.data.draft) return e.data.title;
+  } else if (lang === "pt-br") {
+    const entries = await getCollection("ptBrTranslations");
+    const e = entries.find((x) => (x.data.frSlug ?? x.id) === slug);
+    if (e && !e.data.draft) return e.data.title;
+  } else if (lang === "nl") {
+    const entries = await getCollection("nlTranslations");
+    const e = entries.find((x) => (x.data.frSlug ?? x.id) === slug);
+    if (e && !e.data.draft) return e.data.title;
+  }
+  return post.data.title;
+}
+
+const catShort = (slug: (typeof categorySlugs)[number]) => {
+  const v = t(tLang, `categories.${slug}.shortLabel`);
+  return v.startsWith("categories.") ? categoryMap[slug].shortLabel : v;
+};
+const catTagline = (slug: (typeof categorySlugs)[number]) => {
+  const v = t(tLang, `categories.${slug}.tagline`);
+  return v.startsWith("categories.") ? categoryMap[slug].tagline : v;
+};
+
+// ── Données articles ────────────────────────────────────────────
+const posts = filterPostsForLang(await getAllPosts(), lang); // tri date décroissante
+
+// Article de tête : premier « featured » (par featuredRank), repli sur le plus récent.
+const featuredRanked = filterPostsForLang(await getFeaturedPosts(), lang);
+const leadPost = featuredRanked[0] ?? posts[0];
+
+// Grille « Derniers articles » : 6 cartes, alternées par pilier, hors article de tête.
+const interleaved = await getLatestPosts(8, lang);
+const gridPosts = interleaved.filter((p) => p.id !== leadPost?.id).slice(0, 6);
+
+// Le fil : 5 articles les plus récents (chronologique, toutes rubriques), hors tête.
+const filSource = posts.filter((p) => p.id !== leadPost?.id).slice(0, 5);
+const filItems: FilItem[] = await Promise.all(
+  filSource.map(async (p) => ({
+    href: await getPostUrlLang(p, lang),
+    title: await localizedTitle(p),
+    catShort: catShort(p.data.category),
+    catAccent: categoryMap[p.data.category].accent,
+    day: String(p.data.publishDate.getUTCDate()),
+    month: monthFmt.format(p.data.publishDate).replace(/\.$/, ""),
+  })),
+);
+
+// Les plus lus : liste manuelle résolue, complétée par les plus récents si < 5.
+const bySlug = new Map(posts.map((p) => [getPostSlug(p), p]));
+const rankedSource: BlogEntry[] = [];
+const seen = new Set<string>();
+for (const slug of mostReadSlugs) {
+  const p = bySlug.get(slug);
+  if (p) { rankedSource.push(p); seen.add(p.id); }
+}
+for (const p of posts) {
+  if (rankedSource.length >= 5) break;
+  if (!seen.has(p.id)) { rankedSource.push(p); seen.add(p.id); }
+}
+const rankedItems: RankedItem[] = await Promise.all(
+  rankedSource.slice(0, 5).map(async (p) => ({
+    href: await getPostUrlLang(p, lang),
+    title: await localizedTitle(p),
+  })),
+);
+
+// ── Rubriques (Grand oral FR-only) ──────────────────────────────
+const pillarGlyphs: Record<string, string> = {
+  science: "♞",      // ♞ cavalier
+  esprit: "♛",       // ♛ dame
+  societe: "♜",      // ♜ tour
+  "grand-oral": "♚", // ♚ roi
+};
+const pillarSlugs = categorySlugs.filter((slug) => lang === "fr" || slug !== "grand-oral");
+const pillarTiles: PillarTile[] = pillarSlugs.map((slug) => {
+  const cat = categoryMap[slug];
+  return {
+    href: lang === "fr" ? cat.href : swapLangPrefix(cat.href, lang),
+    glyph: pillarGlyphs[slug] ?? "♟",
+    title: catShort(slug),
+    description: catTagline(slug),
+    accent: cat.accent,
+  };
+});
+
+// ── Dossier thématique (FR uniquement : Grand oral) ─────────────
+const showDossier = lang === "fr";
+let dossierEntries: DossierBoxEntry[] = [];
+let dossierTitle = "";
+if (showDossier) {
+  const pillarLabel = (() => {
+    const v = t(tLang, `categories.${currentDossier.pillar}.label`);
+    return v.startsWith("categories.") ? categoryMap[currentDossier.pillar].label : v;
+  })();
+  dossierTitle = `${L.dossierLabel} ${pillarLabel}`;
+  dossierEntries = currentDossier.entries.map((e) => {
+    const p = bySlug.get(e.slug);
+    return {
+      kicker: e.kicker,
+      title: p ? p.data.title : e.kicker,
+      href: p ? `/fr/blog/${e.slug}/` : currentDossier.href,
+      summary: e.summary,
+    };
+  }).filter((e) => e.title);
+}
+const dossierAccent = categoryMap[currentDossier.pillar].accent;
+const dossierBannerLabel = currentDossier.bannerLabel[lang] ?? currentDossier.bannerLabel.fr;
+
+const blogHref = `/${lang}/blog/`;
+---
+
+<div class="portal">
+  <div class="container">
+
+    <!-- Bande à deux colonnes : contenu principal + colonne latérale (340px) -->
+    <div class="portal__grid">
+      <div class="portal__main">
+
+        <!-- Article de tête (horizontal), sans titre de section -->
+        {leadPost && (
+          <div class="portal__lead">
+            <ArticleCard post={leadPost} lead={true} eager={true} lang={lang} />
+          </div>
+        )}
+
+        <!-- Derniers articles -->
+        <SectionTitle title={L.latestArticles} id="derniers-articles" />
+        <div class="portal__cards">
+          {gridPosts.map((post) => (
+            <ArticleCard post={post} lang={lang} />
+          ))}
+        </div>
+      </div>
+
+      <!-- Colonne latérale : Le fil + Les plus lus -->
+      <aside class="portal__side">
+        <FilPanel items={filItems} heading={L.theFil} allLabel={L.allFil} allHref={blogHref} />
+        <RankedPanel items={rankedItems} heading={L.mostRead} />
+      </aside>
+    </div>
+
+    <!-- Rubriques (pleine largeur) -->
+    <SectionTitle title={L.sections} id="rubriques" />
+    <PillarGrid items={pillarTiles} />
+
+    <!-- Dossier thématique (pleine largeur, FR uniquement) -->
+    {showDossier && dossierEntries.length > 0 && (
+      <>
+        <SectionTitle title={dossierTitle} />
+        <DossierBox
+          accent={dossierAccent}
+          bannerLabel={dossierBannerLabel}
+          bannerHref={currentDossier.href}
+          seeLabel={L.seeSection}
+          entries={dossierEntries}
+        />
+      </>
+    )}
+
+    <!-- Voir tout -->
+    <div class="portal__seeall">
+      <a class="portal__seeall-btn" href={blogHref}>{L.seeAll} <span aria-hidden="true">→</span></a>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .portal {
+    padding: calc(var(--navbar-h) + 1.5rem) 0 4rem;
+    background: var(--bg);
+  }
+
+  .portal__grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2rem;
+    align-items: start;
+  }
+  .portal__main { min-width: 0; }
+
+  .portal__lead {
+    /* La carte lead prend une hauteur généreuse, alignée en haut de la sidebar. */
+    margin-top: 0.35rem;
+  }
+
+  .portal__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .portal__side {
+    position: sticky;
+    top: calc(var(--navbar-h) + 1.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 0.35rem;
+  }
+
+  .portal__seeall {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.75rem;
+  }
+  .portal__seeall-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.7rem 1.9rem;
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--green-border);
+    background: transparent;
+    color: var(--green);
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: background 180ms ease, color 180ms ease, transform 200ms var(--ease-spring);
+  }
+  .portal__seeall-btn:hover {
+    background: var(--green);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  /* Sous 980px : une seule colonne, la sidebar tombe sous le contenu principal. */
+  @media (max-width: 980px) {
+    .portal__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .portal__side { position: static; top: auto; }
+  }
+  @media (max-width: 560px) {
+    .portal__cards { grid-template-columns: 1fr; }
+  }
+</style>

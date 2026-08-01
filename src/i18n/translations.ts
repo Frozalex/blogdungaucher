@@ -69,6 +69,16 @@ export const translations = {
     card: {
       read: "Lire",
     },
+    portal: {
+      latestArticles: "Derniers articles",
+      sections: "Les rubriques",
+      mostRead: "Les plus lus",
+      theFil: "Le fil",
+      allFil: "Tout le fil",
+      seeAll: "Voir tout",
+      seeSection: "Voir la rubrique",
+      dossierLabel: "Dossier",
+    },
     categories: {
       science: {
         label: "Science",
@@ -182,6 +192,16 @@ export const translations = {
     card: {
       read: "Read",
     },
+    portal: {
+      latestArticles: "Latest articles",
+      sections: "The sections",
+      mostRead: "Most read",
+      theFil: "The feed",
+      allFil: "See the whole feed",
+      seeAll: "See all",
+      seeSection: "See the section",
+      dossierLabel: "Dossier",
+    },
     categories: {
       science: {
         label: "Science",
@@ -285,6 +305,16 @@ export const translations = {
     },
     card: {
       read: "Ler",
+    },
+    portal: {
+      latestArticles: "Últimos artigos",
+      sections: "As seções",
+      mostRead: "Mais lidos",
+      theFil: "O fluxo",
+      allFil: "Ver todo o fluxo",
+      seeAll: "Ver tudo",
+      seeSection: "Ver a seção",
+      dossierLabel: "Dossiê",
     },
     categories: {
       science: {
@@ -394,6 +424,16 @@ export const translations = {
     },
     card: {
       read: "Lezen",
+    },
+    portal: {
+      latestArticles: "Laatste artikelen",
+      sections: "De rubrieken",
+      mostRead: "Meest gelezen",
+      theFil: "De stroom",
+      allFil: "Bekijk de hele stroom",
+      seeAll: "Alles bekijken",
+      seeSection: "Bekijk de rubriek",
+      dossierLabel: "Dossier",
     },
     categories: {
       science: {

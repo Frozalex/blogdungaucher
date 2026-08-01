@@ -1,17 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HomeLanding from "../../components/HomeLanding.astro";
+import HomePortal from "../../components/HomePortal.astro";
 
-import { buildWebsiteJsonLd, getAllPosts, getLatestPosts } from "../../utils/blog";
-import { categorySlugs } from "../../data/site";
-
-const allPosts = await getAllPosts();
-const totalPosts = allPosts.length;
-const latestPosts = await getLatestPosts(6, "fr");
-
-const postsByCategory = Object.fromEntries(
-  categorySlugs.map((slug) => [slug, allPosts.filter((p) => p.data.category === slug).length]),
-) as Partial<Record<(typeof categorySlugs)[number], number>>;
+import { buildWebsiteJsonLd } from "../../utils/blog";
 ---
 <BaseLayout
   title="Blog d'un Gaucher"
@@ -19,5 +10,5 @@ const postsByCategory = Object.fromEntries(
   canonicalPath="/fr/"
   structuredData={buildWebsiteJsonLd()}
 >
-  <HomeLanding lang="fr" latestPosts={latestPosts} totalPosts={totalPosts} postsByCategory={postsByCategory} />
+  <HomePortal lang="fr" />
 </BaseLayout>

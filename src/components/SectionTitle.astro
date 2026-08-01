@@ -1,0 +1,46 @@
+---
+/**
+ * Titre de section façon portail : intitulé en gras à gauche, filet plein qui
+ * court jusqu'au bord droit. Utilisé pour « Derniers articles », « Les rubriques »,
+ * « Dossier Grand oral », etc.
+ */
+interface Props {
+  title: string;
+  /** id optionnel pour lier une section via aria-labelledby. */
+  id?: string;
+}
+const { title, id } = Astro.props;
+---
+<div class="section-title">
+  <h2 class="section-title__text" id={id}>{title}</h2>
+  <span class="section-title__rule" aria-hidden="true"></span>
+</div>
+
+<style>
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 38px 0 20px;
+  }
+  .section-title__text {
+    flex-shrink: 0;
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.45rem;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--green);
+  }
+  .section-title__rule {
+    flex: 1;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--green);
+  }
+  @media (max-width: 520px) {
+    .section-title { gap: 12px; margin: 30px 0 16px; }
+    .section-title__text { font-size: 1.2rem; }
+  }
+</style>

@@ -1,0 +1,135 @@
+---
+/**
+ * Encadré dossier thématique, bordé 2px dans la couleur du pilier.
+ * Bandeau supérieur plein (libellé à gauche, lien à droite) puis corps en
+ * 4 colonnes séparées par des filets verticaux. Paramétrable via props pour
+ * basculer le dossier selon la saison.
+ */
+export interface DossierBoxEntry {
+  kicker: string;
+  title: string;
+  href: string;
+  summary: string;
+}
+interface Props {
+  /** Couleur pleine du pilier. */
+  accent: string;
+  bannerLabel: string;
+  bannerHref: string;
+  seeLabel: string;
+  entries: DossierBoxEntry[];
+}
+const { accent, bannerLabel, bannerHref, seeLabel, entries } = Astro.props;
+---
+<section class="dossier" style={`--fc:${accent}`}>
+  <div class="dossier__banner">
+    <span class="dossier__label">{bannerLabel}</span>
+    <a class="dossier__link" href={bannerHref}>
+      {seeLabel}
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+  <div class="dossier__body">
+    {entries.map((e) => (
+      <a class="dossier__col" href={e.href}>
+        <span class="dossier__kicker">{e.kicker}</span>
+        <h3 class="dossier__title">{e.title}</h3>
+        <p class="dossier__summary">{e.summary}</p>
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  .dossier {
+    border: 2px solid var(--fc);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .dossier__banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.7rem 1.25rem;
+    background: var(--fc);
+    color: #fff;
+  }
+  .dossier__label {
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .dossier__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: opacity 160ms ease;
+  }
+  .dossier__link:hover { opacity: 0.82; }
+
+  .dossier__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .dossier__col {
+    display: block;
+    padding: 1.35rem 1.35rem 1.5rem;
+    border-left: 1px solid var(--border-soft);
+    text-decoration: none;
+    transition: background 160ms ease;
+  }
+  .dossier__col:first-child { border-left: none; }
+  .dossier__col:hover { background: color-mix(in srgb, var(--fc) 7%, var(--surface)); }
+
+  .dossier__kicker {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-family: var(--font-display);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fc);
+  }
+  .dossier__title {
+    margin: 0 0 0.45rem;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.05rem;
+    line-height: 1.25;
+    color: var(--text-main);
+    transition: color 160ms ease;
+  }
+  .dossier__col:hover .dossier__title { color: var(--fc); }
+  .dossier__summary {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+  }
+
+  /* Sous 980px : colonnes empilées, filets horizontaux au lieu de verticaux. */
+  @media (max-width: 980px) {
+    .dossier__body { grid-template-columns: 1fr 1fr; }
+    .dossier__col { border-left: none; border-top: 1px solid var(--border-soft); }
+    .dossier__col:first-child, .dossier__col:nth-child(2) { border-top: none; }
+    .dossier__col:nth-child(odd) { border-left: none; }
+    .dossier__col:nth-child(even) { border-left: 1px solid var(--border-soft); }
+  }
+  @media (max-width: 560px) {
+    .dossier__body { grid-template-columns: 1fr; }
+    .dossier__col { border-left: none; border-top: 1px solid var(--border-soft); }
+    .dossier__col:first-child { border-top: none; }
+    .dossier__col:nth-child(even) { border-left: none; }
+  }
+</style>

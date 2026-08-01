@@ -1,22 +1,11 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HomeLanding from "../../components/HomeLanding.astro";
+import HomePortal from "../../components/HomePortal.astro";
 
-import { buildWebsiteJsonLd, getAllPosts, getLatestPosts, isFrenchOnlyPost } from "../../utils/blog";
-import { categorySlugs, NL_LAUNCH_DATE } from "../../data/site";
+import { buildWebsiteJsonLd } from "../../utils/blog";
+import { NL_LAUNCH_DATE } from "../../data/site";
 
 if (new Date() < NL_LAUNCH_DATE) return Astro.redirect("/fr/", 302);
-
-const allPosts = await getAllPosts();
-const totalPosts = allPosts.filter((p) => !isFrenchOnlyPost(p)).length;
-const latestPosts = await getLatestPosts(6, "nl");
-
-const postsByCategory = Object.fromEntries(
-  categorySlugs.map((slug) => [
-    slug,
-    allPosts.filter((p) => p.data.category === slug && !isFrenchOnlyPost(p)).length,
-  ]),
-) as Partial<Record<(typeof categorySlugs)[number], number>>;
 ---
 <BaseLayout
   title="Blog van een Linkshandige — Schaken zonder oversimplificatie"
@@ -27,5 +16,5 @@ const postsByCategory = Object.fromEntries(
   enPath="/en/"
   structuredData={buildWebsiteJsonLd()}
 >
-  <HomeLanding lang="nl" latestPosts={latestPosts} totalPosts={totalPosts} postsByCategory={postsByCategory} />
+  <HomePortal lang="nl" />
 </BaseLayout>

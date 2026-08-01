@@ -1,20 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HomeLanding from "../../components/HomeLanding.astro";
+import HomePortal from "../../components/HomePortal.astro";
 
-import { buildWebsiteJsonLd, getAllPosts, getLatestPosts, isFrenchOnlyPost } from "../../utils/blog";
-import { categorySlugs } from "../../data/site";
-
-const allPosts = await getAllPosts();
-const totalPosts = allPosts.length;
-const latestPosts = await getLatestPosts(6, "en");
-
-const postsByCategory = Object.fromEntries(
-  categorySlugs.map((slug) => [
-    slug,
-    allPosts.filter((p) => p.data.category === slug && !isFrenchOnlyPost(p)).length,
-  ]),
-) as Partial<Record<(typeof categorySlugs)[number], number>>;
+import { buildWebsiteJsonLd } from "../../utils/blog";
 ---
 <BaseLayout
   title="A Left-Hander's Blog - Chess Without Oversimplifying"
@@ -25,5 +13,5 @@ const postsByCategory = Object.fromEntries(
   enPath="/en/"
   structuredData={buildWebsiteJsonLd()}
 >
-  <HomeLanding lang="en" latestPosts={latestPosts} totalPosts={totalPosts} postsByCategory={postsByCategory} />
+  <HomePortal lang="en" />
 </BaseLayout>

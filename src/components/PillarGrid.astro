@@ -1,0 +1,78 @@
+---
+/**
+ * Bandeau des rubriques : une tuile par pilier, fond dans la couleur pastel du
+ * pilier, glyphe de pièce d'échecs dans sa couleur pleine, titre serif italique
+ * et description courte. Présentationnel : reçoit des tuiles déjà localisées.
+ */
+export interface PillarTile {
+  href: string;
+  /** Glyphe unicode de pièce d'échecs (♞ ♛ ♜ ♚). */
+  glyph: string;
+  title: string;
+  description: string;
+  /** Couleur pleine du pilier. */
+  accent: string;
+}
+interface Props {
+  items: PillarTile[];
+}
+const { items } = Astro.props;
+---
+<div class="pillar-grid" style={`--cols:${items.length}`}>
+  {items.map((it) => (
+    <a class="pillar-tile" href={it.href} style={`--fc:${it.accent}`}>
+      <span class="pillar-tile__glyph" aria-hidden="true">{it.glyph}</span>
+      <h3 class="pillar-tile__title">{it.title}</h3>
+      <p class="pillar-tile__desc">{it.description}</p>
+    </a>
+  ))}
+</div>
+
+<style>
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    gap: 1.1rem;
+  }
+  .pillar-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem 1.5rem 1.6rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid color-mix(in srgb, var(--fc) 22%, transparent);
+    background: color-mix(in srgb, var(--fc) 14%, var(--surface));
+    text-decoration: none;
+    transition: transform 220ms var(--ease-out), box-shadow 220ms ease;
+  }
+  .pillar-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .pillar-tile__glyph {
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--fc);
+  }
+  .pillar-tile__title {
+    margin: 0.15rem 0 0;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--text-main);
+  }
+  .pillar-tile__desc {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 900px) {
+    .pillar-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 520px) {
+    .pillar-grid { grid-template-columns: 1fr; }
+  }
+</style>
