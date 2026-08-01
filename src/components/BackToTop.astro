@@ -65,10 +65,11 @@ const b = bttCopy[lang] ?? bttCopy.fr;
 
   @media (max-width: 900px) {
     .btt {
-      bottom: calc(1.05rem + env(safe-area-inset-bottom));
-      right: auto;
-      left: 1rem;
-      width: auto;
+      /* En flux, juste avant le footer : plus d'overlay flottant qui suit le
+         scroll. Le bouton reste en bas à gauche du contenu. */
+      position: static;
+      margin: 1.75rem 1rem;
+      width: fit-content;
       min-width: 2.6rem;
       height: 2.6rem;
       padding: 0 0.95rem;
@@ -76,13 +77,15 @@ const b = bttCopy[lang] ?? bttCopy.fr;
       border-color: color-mix(in srgb, var(--green) 18%, var(--border-soft));
       background: color-mix(in srgb, var(--green) 12%, var(--surface));
       box-shadow: var(--shadow-md);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      transform: translateY(12px);
+      /* Toujours visible : c'est un élément de page, pas un overlay conditionné
+         au défilement. */
+      opacity: 1;
+      transform: none;
+      pointer-events: auto;
     }
 
     .btt.visible {
-      transform: translateY(0);
+      transform: none;
     }
 
     .btt-label {

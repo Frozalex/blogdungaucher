@@ -551,10 +551,13 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <main id="main-content" tabindex="-1">
       <slot />
     </main>
+    {/* Placé avant le footer : sur mobile le bouton « retour en haut » est en flux
+       (juste avant le footer, pas un overlay). Sur desktop il reste en position
+       fixe, donc son ordre dans le DOM n'a pas d'incidence visuelle. */}
+    <BackToTop lang={lang} />
     <Footer lang={lang} />
     <CookieConsent lang={lang} />
     <SearchOverlay lang={lang} />
-    <BackToTop lang={lang} />
 
     <!-- ── Service Worker + réapplication préférences après View Transitions ── -->
     <script>
