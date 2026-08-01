@@ -4,7 +4,6 @@ import { render } from "astro:content";
 // KaTeX CSS chargé ici (et non dans BaseLayout) : seuls les articles peuvent contenir des formules.
 import "katex/dist/katex.min.css";
 
-import AffiliateBox from "../../../components/AffiliateBox.astro";
 import ArticleCard from "../../../components/ArticleCard.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
@@ -248,6 +247,13 @@ const structuredData = [
           </div>
         )}
 
+        {post.data.affiliate && (
+          <p class="affiliate-note">
+            Cet article contient des liens affiliés Amazon. Si vous achetez via
+            l'un d'eux, je touche une petite commission, sans surcoût pour vous.
+          </p>
+        )}
+
         <div class="article-body fade-up" style="--motion-delay: 100ms;" data-pagefind-body>
           {strippedArticleHtml ? (
             <div class="md-chunk" set:html={strippedArticleHtml} />
@@ -271,8 +277,6 @@ const structuredData = [
         )}
 
         {faqs.length > 0 && <FAQ items={faqs} lang="fr" />}
-
-        <AffiliateBox slug={getPostSlug(post)} />
 
         <Comments lang="fr" postId={postUrl} />
         <TextHighlight lang="fr" />
@@ -488,6 +492,19 @@ const structuredData = [
     margin: 0;
   }
   .hero-updated { color: var(--text-dim); }
+
+  /* Mention légale d'affiliation (ARPP/DGCCRF), affichée en tête d'article
+     quand le frontmatter porte affiliate: true. */
+  .affiliate-note {
+    margin: 0 0 1.5rem;
+    padding: 0.55rem 0.85rem;
+    border-left: 3px solid var(--border-strong, var(--border-soft));
+    background: var(--bg-warm);
+    border-radius: 0 var(--radius-md, 8px) var(--radius-md, 8px) 0;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: var(--text-dim);
+  }
 
   /* Tags sous le hero */
   .hero-tags {

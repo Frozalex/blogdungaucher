@@ -14,6 +14,9 @@ const blog = defineCollection({
     category: z.enum(categorySlugs),
     featured: z.boolean().default(false),
     featuredRank: z.number().int().default(99),
+    /** L'article contient des liens affiliés (Amazon) tissés dans le corps du texte.
+       Active la mention légale d'affiliation (ARPP/DGCCRF) en tête d'article. */
+    affiliate: z.boolean().default(false),
     readingTime: z.string().optional(),
     pillar: z.string(),
     tags: z.array(z.string()).optional(),

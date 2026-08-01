@@ -1,16 +1,18 @@
 /**
- * Produits affiliés (Amazon FR, matériel d'échecs) et leur association par article.
+ * Catalogue de référence des produits affiliés (Amazon FR, matériel d'échecs).
  *
- * - `affiliateProducts` : catalogue des produits RÉELLEMENT sourcés (un lien par
- *   produit). Ajouter un produit ici puis le référencer dans `affiliateBySlug`.
- * - `affiliateBySlug` : pour chaque slug d'article FR, la liste ordonnée d'IDs
- *   produits à afficher dans le bloc « Matériel recommandé » (composant
- *   AffiliateBox.astro). Les articles absents de cette table n'affichent aucun
- *   bloc (ex. grand-oral / bac, volontairement exclus).
+ * Depuis juillet 2026, les liens ne sont plus affichés dans un bloc « Matériel
+ * recommandé » en fin d'article : ils sont tissés en EXEMPLES CONTEXTUELS dans le
+ * corps des articles (là où le texte cite un livre, un échiquier, un roman…), et
+ * les articles concernés portent `affiliate: true` dans leur frontmatter (active
+ * la mention légale en tête). Ce fichier n'est donc plus consommé par un composant :
+ * il sert de source unique (id → nom, url) pour retrouver le bon lien à insérer.
+ *
+ * - `affiliateProducts` : catalogue des produits sourcés (un lien par produit).
+ * - `affiliateBySlug` : pour chaque slug FR, les IDs pertinents par ordre de
+ *   ciblage (le 1er est le plus adapté au thème). Aide au choix du produit à citer.
  *
  * Provenance des associations : drafts/affiliation/liens-affilies-par-article.md.
- * Les produits non encore sourcés (pendules A*, livres IA/histoire, etc.) sont
- * omis ; les articles sont complétés à 7 liens avec du matériel générique.
  */
 
 export interface AffiliateProduct {

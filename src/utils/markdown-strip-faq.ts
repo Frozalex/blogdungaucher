@@ -11,6 +11,8 @@ import remarkRehype from "remark-rehype";
 import remarkStringify from "remark-stringify";
 import { unified } from "unified";
 
+import { rehypeAffiliateLinks } from "./rehype-affiliate-links";
+
 export type ArticleHeading = { depth: number; slug: string; text: string };
 
 function parseMarkdown(markdown: string): MdastRoot {
@@ -107,6 +109,7 @@ export async function renderMarkdownToArticleHtml(markdown: string): Promise<{
   const hast = await unified()
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeKatex)
+    .use(rehypeAffiliateLinks)
     .run(tree);
 
   // allowDangerousHtml : laisse passer le HTML brut auteur (ex. <div data-pytrace>,

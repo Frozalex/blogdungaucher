@@ -8,6 +8,7 @@ publishDate: "2026-09-07"
 category: societe
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 16 min
 pillar: Échecs et société
 tags:
@@ -88,7 +89,7 @@ faq:
       Clan est un joueur passionné et intègre régulièrement des métaphores d'échecs dans ses textes.
 ---
 
-Le 23 octobre 2020, Netflix diffuse le premier épisode de *The Queen's Gambit*. Le lendemain, Chess.com enregistre son plus grand pic d'inscriptions journalières de l'histoire. Les ventes de jeux d'échecs physiques augmentent de 87% aux États-Unis en l'espace d'un mois. Des mères qui regardaient la série s'inscrivent en ligne après le dernier épisode.
+Le 23 octobre 2020, Netflix diffuse le premier épisode de *The Queen's Gambit*, adapté du [roman de Walter Tevis](https://amzn.to/3TdPuti) paru en 1983. Le lendemain, Chess.com enregistre son plus grand pic d'inscriptions journalières de l'histoire. Les ventes de jeux d'échecs physiques augmentent de 87% aux États-Unis en l'espace d'un mois. Des mères qui regardaient la série s'inscrivent en ligne après le dernier épisode.
 
 Ce n'est pas un phénomène ordinaire. C'est la démonstration de quelque chose que les sociologues étudient depuis des décennies : le pouvoir d'une représentation culturelle pour transformer une pratique réelle.
 
