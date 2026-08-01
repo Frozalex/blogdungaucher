@@ -8,6 +8,7 @@ updatedDate: "2026-05-10"
 category: science
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 22 min
 pillar: Neurosciences
 tags:
@@ -82,7 +83,7 @@ faq:
 
 Ce n'est pas un cerveau exceptionnel qui permet de jouer brillamment aux échecs. C'est la pratique acharnée des échecs qui fabrique un cerveau d'exception. L'image du grand maître né avec un don divin est exactement à l'envers.
 
-Ton cerveau n'est pas une machine figée à la naissance : c'est une pâte à modeler qui se rebranche, se répare et s'optimise en fonction des défis que tu lui lances. Après ça, tu ne regarderas plus ta fatigue post-partie de la même façon.
+Ton cerveau n'est pas une machine figée à la naissance : c'est une pâte à modeler qui se rebranche, se répare et s'optimise en fonction des défis que tu lui lances (la vulgarisation de [*Les Fabuleux Pouvoirs du cerveau*](https://amzn.to/45b6O4L) donne un bon aperçu de cette plasticité). Après ça, tu ne regarderas plus ta fatigue post-partie de la même façon.
 
 ## L'illusion de l'intelligence innée : ce n'est pas ce que tu crois
 

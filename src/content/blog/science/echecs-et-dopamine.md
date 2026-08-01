@@ -8,6 +8,7 @@ publishDate: "2026-06-29"
 category: science
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 18 min
 pillar: Neurosciences
 tags:
@@ -86,7 +87,7 @@ faq:
 
 Ton cerveau ne fait pas la distinction entre une bonne combinaison aux échecs et une pizza. Dans les deux cas, les mêmes circuits s'activent, les mêmes neurotransmetteurs circulent, et le même signal "fais-le encore" est envoyé. La différence est dans la nature et la durée de l'engagement cognitif qui précède la récompense.
 
-Comprendre la neurochimie des échecs n'est pas qu'une curiosité intellectuelle. C'est comprendre pourquoi certaines pratiques motivent sur le long terme et d'autres épuisent, pourquoi le blitz en ligne peut devenir compulsif quand les parties longues restent saines, et comment structurer son entraînement en accord avec la biologie du cerveau.
+Comprendre la neurochimie des échecs n'est pas qu'une curiosité intellectuelle. C'est comprendre pourquoi certaines pratiques motivent sur le long terme et d'autres épuisent, pourquoi le blitz en ligne peut devenir compulsif quand les parties longues restent saines, et comment structurer son entraînement en accord avec la biologie du cerveau : alterner de courtes séries d'exercices tactiques — un [recueil comme « 1001 exercices »](https://amzn.to/4wdx8HC) est idéal pour ça — et des parties longues permet d'entretenir la motivation sans glisser vers la compulsion.
 
 ## Le circuit de récompense : une introduction
 

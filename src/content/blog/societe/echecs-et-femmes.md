@@ -8,6 +8,7 @@ updatedDate: "2026-05-21"
 category: societe
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 25 min
 pillar: Genre
 tags:
@@ -147,7 +148,7 @@ Le traitement qu'elle reçut en retour dit tout de l'époque. Un groupe de joueu
 
 ### Nona Gaprindashvili et le mythe de la faiblesse féminine
 
-Trente ans plus tard, [Nona Gaprindashvili](https://fr.wikipedia.org/wiki/Nona_Gaprindachvili), géorgienne et première femme à recevoir le titre de Grand Maître International de la FIDE (1978), fut au cœur d'une polémique moderne lorsque la série *Le Jeu de la Dame* la présenta comme n'ayant "jamais affronté d'hommes". Elle les avait pourtant battus. Elle a intenté un procès à Netflix, qui a reconnu l'erreur. Cette anecdote dit quelque chose d'important : l'histoire efface souvent les femmes, même quand leur présence était réelle et leur niveau indiscutable.
+Trente ans plus tard, [Nona Gaprindashvili](https://fr.wikipedia.org/wiki/Nona_Gaprindachvili), géorgienne et première femme à recevoir le titre de Grand Maître International de la FIDE (1978), fut au cœur d'une polémique moderne lorsque la série *Le Jeu de la Dame* (adaptée du [roman de Walter Tevis](https://amzn.to/3TdPuti)) la présenta comme n'ayant "jamais affronté d'hommes". Elle les avait pourtant battus. Elle a intenté un procès à Netflix, qui a reconnu l'erreur. Cette anecdote dit quelque chose d'important : l'histoire efface souvent les femmes, même quand leur présence était réelle et leur niveau indiscutable.
 
 ### L'école soviétique et ses championnes
 

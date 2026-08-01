@@ -7,6 +7,7 @@ publishDate: "2026-05-18"
 category: science
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 24 min
 pillar: Cognition
 tags:
@@ -74,7 +75,7 @@ Anatoli Karpov rejouait de mémoire, sans échiquier, des parties disputées vin
 
 Et pourtant, si tu lui avais demandé de mémoriser une liste de 30 mots sans rapport entre eux, il aurait fait comme toi : oublié la moitié en moins d'une heure.
 
-Ce paradoxe résume le sujet : **les échecs ne « donnent » pas une mémoire magique**. Ils entraînent des circuits très spécifiques (reconnaissance de motifs sur l'échiquier, planification, inhibition d'impulsions) tout en s'appuyant sur les mêmes limites humaines que partout ailleurs. Cet article relie **mémoire de travail**, **mémoire à long terme**, **pratique** et **ce que la science autorise vraiment à conclure**.
+Ce paradoxe résume le sujet : **les échecs ne « donnent » pas une mémoire magique**. Ils entraînent des circuits très spécifiques (reconnaissance de motifs sur l'échiquier, planification, inhibition d'impulsions) tout en s'appuyant sur les mêmes limites humaines que partout ailleurs (pour une vue d'ensemble grand public de ces mécanismes, [*Les Fabuleux Pouvoirs du cerveau*](https://amzn.to/45b6O4L) est une bonne porte d'entrée). Cet article relie **mémoire de travail**, **mémoire à long terme**, **pratique** et **ce que la science autorise vraiment à conclure**.
 
 ## Introduction : le lien entre les échecs et la mémoire
 

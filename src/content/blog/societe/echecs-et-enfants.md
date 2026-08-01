@@ -8,6 +8,7 @@ publishDate: "2026-08-17"
 category: societe
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 19 min
 pillar: Éducation
 tags:
@@ -142,7 +143,7 @@ Introduire les pièces progressivement, avec des mini-jeux pour chacune :
 - **Roi + Tour :** apprendre le mat avec Tour + Roi contre Roi seul. Enseigne les échecs, les patterns de mat, et l'endgame de base en même temps.
 - **Ajout du Fou, puis du Cavalier.** Chaque ajout est accompagné de mini-jeux spécifiques.
 
-Cette approche, popularisée notamment par [Bruce Pandolfini](https://en.wikipedia.org/wiki/Bruce_Pandolfini) aux États-Unis et adoptée par de nombreux programmes scolaires, est plus efficace que l'apprentissage des règles complètes d'un coup.
+Cette approche, popularisée notamment par [Bruce Pandolfini](https://en.wikipedia.org/wiki/Bruce_Pandolfini) aux États-Unis et adoptée par de nombreux programmes scolaires, est plus efficace que l'apprentissage des règles complètes d'un coup. Pour prolonger à la maison, un [manuel d'initiation conçu pour les enfants](https://amzn.to/4gMGYex) reprend cette progression pièce par pièce.
 
 ### Les échecs "avec histoires"
 

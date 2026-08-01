@@ -5,6 +5,7 @@ publishDate: "2027-01-14"
 category: "esprit"
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: "9 min"
 pillar: "Apprentissage"
 tags: ["ouvertures", "apprentissage", "progression", "Elo", "stratégie d'étude", "coaching"]
@@ -66,7 +67,7 @@ Le malentendu vient souvent de là. Beaucoup de joueurs imaginent que « étudie
 
 Quand tu comprends ces éléments, tu peux jouer une ouverture sans avoir mémorisé 25 coups. Tu sais ce que la position *veut*, et tu joues en conséquence.
 
-C'est cette compréhension qui se transfère vers le milieu de partie. Mémoriser des coups sans comprendre les idées, c'est inutile. Comprendre les idées sans connaître quelques coups concrets, c'est lent. Les deux ensemble, c'est efficace.
+C'est cette compréhension qui se transfère vers le milieu de partie. Mémoriser des coups sans comprendre les idées, c'est inutile. Comprendre les idées sans connaître quelques coups concrets, c'est lent. Les deux ensemble, c'est efficace. C'est tout l'esprit d'un classique comme [*Mon Système* de Nimzowitsch](https://amzn.to/45dIhfq), qui enseigne les idées derrière les coups plutôt que des variantes à réciter.
 
 ## Le piège du répertoire trop large
 

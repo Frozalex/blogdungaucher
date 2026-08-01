@@ -887,7 +887,12 @@ const structuredData = [
       .querySelectorAll<HTMLAnchorElement>('a[href^="http"]')
       .forEach((link) => {
         link.target = "_blank";
-        link.rel = "noopener noreferrer";
+        // Les liens affiliés portent déjà rel="sponsored nofollow noopener"
+        // (rehype-affiliate-links) : ne pas l'écraser, sinon on perd les
+        // attributs sponsored/nofollow imposés par Google.
+        if (!link.classList.contains("affiliate-link")) {
+          link.rel = "noopener noreferrer";
+        }
       });
 
     // ── Carrousel "Pour vous" ──
