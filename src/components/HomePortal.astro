@@ -5,6 +5,8 @@ import ArticleCard from "./ArticleCard.astro";
 import SectionTitle from "./SectionTitle.astro";
 import FilPanel from "./FilPanel.astro";
 import type { FilItem } from "./FilPanel.astro";
+import RankedPanel from "./RankedPanel.astro";
+import type { RankedItem } from "./RankedPanel.astro";
 import PillarGrid from "./PillarGrid.astro";
 import type { PillarTile } from "./PillarGrid.astro";
 import DossierBox from "./DossierBox.astro";
@@ -117,6 +119,14 @@ for (const p of posts) {
 }
 const mostReadPosts = rankedSource.slice(0, 6);
 
+// Panneau latéral « Les plus lus » : liste numérotée des 5 mêmes articles.
+const rankedItems: RankedItem[] = await Promise.all(
+  mostReadPosts.slice(0, 5).map(async (p) => ({
+    href: await getPostUrlLang(p, lang),
+    title: await localizedTitle(p),
+  })),
+);
+
 // ── Rubriques (Grand oral FR-only) ──────────────────────────────
 const pillarGlyphs: Record<string, string> = {
   science: "♞",      // ♞ cavalier
@@ -197,9 +207,10 @@ const blogHref = `/${lang}/blog/`;
         )}
       </div>
 
-      <!-- Colonne latérale : Le fil -->
+      <!-- Colonne latérale : Le fil + Les plus lus -->
       <aside class="portal__side">
         <FilPanel items={filItems} heading={L.theFil} allLabel={L.allFil} allHref={blogHref} />
+        <RankedPanel items={rankedItems} heading={L.mostRead} />
       </aside>
     </div>
 
