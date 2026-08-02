@@ -93,6 +93,8 @@ Comprendre la neurochimie des échecs n'est pas qu'une curiosité intellectuelle
 
 Le **circuit de récompense mésolimbique** est l'un des circuits neuronaux les plus conservés dans l'évolution. Il relie l'**aire tegmentale ventrale** (ATV), dans le mésencéphale, au **noyau accumbens**, dans le striatum ventral, avec des projections vers le cortex préfrontal.
 
+![Schéma du circuit de récompense : l'aire tegmentale ventrale libère de la dopamine vers le noyau accumbens puis le cortex préfrontal, avec une boucle de renforcement « fais-le encore ».](/images/echecs-dopamine-01-circuit.svg)
+
 Sa fonction originelle : signaler la présence d'une récompense biologiquement significative (nourriture, partenaire) et motiver à répéter le comportement qui y a conduit. Mais ce circuit ne fait pas de distinction qualitative entre les types de récompenses : il répond de la même façon à une carotte, à un compliment, à un gain financier, et à la découverte d'un mat en 4 coups.
 
 Le neurotransmetteur central de ce circuit est la **dopamine**. Contrairement à une idée répandue, la dopamine ne produit pas directement le plaisir : elle produit le **désir** et la **motivation**. C'est la distinction fondamentale établie par [Kent Berridge](https://lsa.umich.edu/psych/people/faculty/berridge.html) (University of Michigan) entre le "wanting" (désir dopaminergique) et le "liking" (plaisir hédonique, davantage lié aux opioïdes endogènes).
@@ -104,6 +106,8 @@ Le neuroscientifique Wolfram Schultz (Cambridge) a réalisé l'une des expérien
 Résultat contre-intuitif : les neurones dopaminergiques ne s'activent pas au moment de la récompense (le jus), mais au moment du **signal qui la prédit** (la lumière). Et quand la récompense attendue n'arrive pas, il y a une **inhibition** des neurones dopaminergiques : un signal de "moins que prévu".
 
 Ce concept d'**erreur de prédiction de récompense** est fondamental pour comprendre les échecs. Le cerveau compare en permanence ce qu'il attendait (basé sur son évaluation de la position) avec ce qui se produit réellement. Chaque coup qui excède les attentes (une combinaison imprévue qui fonctionne, un blunder de l'adversaire) génère un pic dopaminergique. Chaque coup en deçà des attentes génère une inhibition.
+
+![Courbe du niveau de dopamine dans le temps : un pic marqué lors de la résolution d'une combinaison tactique, bien plus fort que lors d'un coup de routine.](/images/echecs-dopamine-02-pic.svg)
 
 C'est pourquoi **l'incertitude est au cœur de l'engagement aux échecs** : une partie trop facile (où toutes les prédictions sont justes) génère peu de dopamine. Une partie équilibrée, où le résultat reste incertain jusqu'au bout, génère un profil dopaminergique étalé et soutenu.
 

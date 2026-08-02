@@ -15,6 +15,8 @@ seoDescription: "Les 5 biais cognitifs qui causent le plus de blunders aux éche
 
 Tu as tout calculé  -  enfin, tu le croyais. Puis le blunder : « comment j’ai pu rater ça ? » Rarement par manque de temps au calculateur ; presque toujours parce que **le cerveau a tranché avec un biais**, pas avec une erreur de variante. La science cognitive a cartographié ces dérives ; cinq d’entre elles collent particulièrement à l’échiquier.
 
+![Cinq biais cognitifs — effet Einstellung, biais de confirmation, ancrage, excès de confiance, effet de disponibilité — convergent vers le blunder ; le méta-biais de se croire immunisé les aggrave.](/images/5-biais-01-overview.svg)
+
 ## Biais n°1 : l'effet Einstellung (le problème de la première idée)
 
 L'[effet Einstellung](https://fr.wikipedia.org/wiki/Effet_Einstellung) est probablement le biais cognitif le plus étudié aux échecs. Il désigne la tendance à s'accrocher à la première solution qui vient à l'esprit, même quand une meilleure solution existe.
@@ -26,6 +28,8 @@ Dans leur protocole, des problèmes d'échecs contenaient deux solutions : une s
 L'imagerie cérébrale (IRMf) a montré que dans ces conditions, les zones cérébrales liées à l'inhibition de la première réponse étaient en suractivation, et que malgré cela, la solution familière continuait à "envahir" la pensée.
 
 **Comment il se manifeste en partie :** Tu vois une combinaison tactique apparemment forte. Tu l'analyses pendant plusieurs minutes. La combinaison fonctionne mais n'est pas la meilleure option. Une meilleure idée était disponible dès le début, mais ton cerveau, "fixé" sur la première idée, a bloqué l'exploration des alternatives. Tu joues la combinaison correcte-mais-sous-optimale, ou pire, une variante calculée depuis la première idée avec une erreur.
+
+![La première idée qui fonctionne accapare l'attention et bloque l'exploration de la meilleure option, laissée de côté.](/images/5-biais-02-einstellung.svg)
 
 **Comment le contrer :** Après avoir trouvé une bonne option, se forcer explicitement à chercher une meilleure avant de calculer. La formulation mentale "y a-t-il mieux que ça ?" comme question systématique avant tout calcul approfondi. Cette question ouvre la "brèche inhibitrice" nécessaire pour explorer des alternatives.
 
