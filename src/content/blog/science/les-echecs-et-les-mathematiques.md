@@ -82,7 +82,11 @@ Ces propriétés spatiales ne sont pas que décoratives : elles ancrent les éc
 
 Le **problème du cavalier d'Euler** (1759) : peut-on faire visiter toutes les 64 cases de l'échiquier par un cavalier, sans en passer deux fois sur la même ? La réponse est oui, et il existe des millions de solutions. [Leonhard Euler](https://fr.wikipedia.org/wiki/Leonhard_Euler) a posé le problème de façon formelle ; sa résolution a fondé une branche entière de la théorie des graphes (les *chemins hamiltoniens*).
 
+![Un tour du cavalier sur l'échiquier 8×8 : un parcours vert relie les 64 cases, chacune visitée une seule fois, du départ à la 64ᵉ case.](/images/echecs-maths-01-tour-cavalier.svg)
+
 Le **problème des huit dames** (Bezzel, 1848) : combien y a-t-il de façons de placer huit dames sur un échiquier sans qu'aucune ne menace une autre ? La réponse est 92 (12 solutions fondamentales × symétries). C'est un problème combinatoire célèbre, devenu un exercice classique d'algorithmique récursive (*backtracking*) enseigné dans toutes les écoles d'informatique. Sa généralisation à $n$ dames sur $n \times n$ cases n'a une formule analytique close pour aucune valeur de $n$ : on ne connaît que des décomptes par énumération.
+
+![Une des 92 solutions du problème des huit dames : huit dames placées sur l'échiquier sans qu'aucune n'en menace une autre.](/images/echecs-maths-02-huit-dames.svg)
 
 Ces deux exemples disent quelque chose d'important : l'échiquier n'a pas seulement *inspiré* des mathématiciens, il a *fait émerger* des problèmes ouverts qui ont structuré des pans entiers de la théorie des graphes et de l'algorithmique combinatoire.
 
