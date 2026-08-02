@@ -5,6 +5,7 @@ publishDate: "2026-11-09"
 category: "science"
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: "23 min"
 pillar: "Théorie de la décision"
 tags: ["décision sous incertitude", "échecs", "utilité espérée", "Bayes", "Kahneman", "Simon", "rationalité limitée"]
@@ -45,7 +46,7 @@ L'utilité espérée recommande le coup A. Mais beaucoup de joueurs choisissent 
 
 Le critère d'utilité espérée a un défaut majeur : il suppose que tu connais les probabilités. Aux échecs, tu les *estimes*, et tes estimations sont imprécises. Ce n'est pas une nuance : c'est une différence de nature.
 
-[Frank Knight](https://en.wikipedia.org/wiki/Frank_Knight) a introduit en 1921 la distinction entre **risque** (probabilités connues) et **incertitude** (probabilités inconnues). Le poker est globalement un jeu de risque : la distribution des cartes est connue, on parie sur des probabilités calculables. Les échecs sont un jeu d'incertitude knightienne : tu n'as pas de table de probabilités pour "l'adversaire va jouer Tc4 après mon Cf5".
+[Frank Knight](https://en.wikipedia.org/wiki/Frank_Knight) a introduit en 1921 la distinction entre **risque** (probabilités connues) et **incertitude** (probabilités inconnues). Le poker (un simple [jeu de cartes et jetons](https://amzn.to/4hlYy9s)) est globalement un jeu de risque : la distribution des cartes est connue, on parie sur des probabilités calculables. Les échecs sont un jeu d'incertitude knightienne : tu n'as pas de table de probabilités pour "l'adversaire va jouer Tc4 après mon Cf5".
 
 Quand on passe du risque à l'incertitude knightienne, l'utilité espérée pure devient un guide imparfait. Plusieurs critères alternatifs ont été proposés, qui prennent en compte la méconnaissance des probabilités elles-mêmes.
 
