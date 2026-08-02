@@ -91,6 +91,8 @@ La [mémoire de travail](https://fr.wikipedia.org/wiki/M%C3%A9moire_de_travail),
 
 Voici l'expérience la plus simple pour le voir. Tu montres une position de milieu de partie pendant cinq secondes, tu caches l'échiquier, tu demandes de la reconstituer : un novice replace 3 ou 4 pièces correctement, un grand maître en replace 28 ou 29. Tu disperses les mêmes pièces **au hasard** et tu recommences : maître et novice retombent à 3 ou 4. Ce résultat, publié en 1973 par [William Chase](https://en.wikipedia.org/wiki/William_Chase_(psychologist)) et [Herbert Simon](https://fr.wikipedia.org/wiki/Herbert_Simon) dans *Cognitive Psychology*, a renversé le mythe de la mémoire photographique.
 
+![Après cinq secondes, un novice et un grand maître replacent tous deux environ 4 pièces sur une position aléatoire ; mais sur une position réelle de partie, le grand maître en replace 28 contre 4 pour le novice.](/images/echecs-memoire-01-chunking.svg)
+
 > **Chase WG & Simon HA.** (1973). *Perception in chess.* Cognitive Psychology, 4(1), 55-81.
 
 ## Le rôle des échecs dans le calcul et la planification

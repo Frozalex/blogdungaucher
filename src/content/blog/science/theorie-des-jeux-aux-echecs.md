@@ -94,6 +94,8 @@ L'idée tient en deux phrases. Tu cherches le coup qui te donne le **meilleur r�
 
 Avant la formule, l'analogie : imagine deux joueurs qui se passent une lampe. Celui qui tient la lampe choisit, dans une pièce, l'ampoule qu'il allume : il prend la plus brillante pour son équipe et la moins brillante pour l'équipe adverse. Maximiser pour soi, minimiser pour l'autre, à chaque tour. C'est tout.
 
+![Arbre minimax à deux demi-coups : MAX choisit la branche de valeur maximale (3), en anticipant que MIN prendra le minimum dans chaque sous-arbre.](/images/theorie-des-jeux-01-minimax.svg)
+
 Si tu notes $v(p)$ la valeur d'une position $p$ pour les Blancs :
 
 $$v(p) = \max_{c \in C(p)} v(\text{résultat}(p, c)) \quad \text{si c'est le tour des Blancs}$$
