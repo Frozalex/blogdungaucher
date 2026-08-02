@@ -88,6 +88,11 @@ Près de mille ans plus tôt, vers 1061, un cardinal italien saisit sa plume pou
 
 Entre ces deux scènes, mille ans de méfiance. L'Église latine, l'islam, l'orthodoxie russe ont tour à tour soupçonné, encadré ou banni les échecs. Ce qui surprend, quand on relit cette histoire, c'est que la cible n'a presque jamais été le jeu lui-même.
 
+<figure>
+  <img src="/images/blog/religion-libro-juegos.jpg" alt="Enluminure médiévale de deux joueurs d'échecs, tirée du Libro de los juegos (1283)." width="960" height="1440" loading="lazy" decoding="async" />
+  <figcaption>Le <em>Libro de los juegos</em> (Alphonse X de Castille, 1283) : commandé par un roi chrétien, il puise dans la tradition arabe des échecs — le jeu circulait au plus haut niveau malgré les condamnations. Domaine public, via <a href="https://commons.wikimedia.org/wiki/File:Two_men_playing_chess_-_Libro_de_los_juegos.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a>.</figcaption>
+</figure>
+
 ## Pourquoi un jeu de plateau dérange les religions
 
 Avant d'entrer dans le détail des interdits, il faut comprendre ce qui, dans un jeu silencieux et sans hasard apparent, pouvait inquiéter des autorités spirituelles. Trois griefs reviennent, siècle après siècle, d'une religion à l'autre.
@@ -121,6 +126,11 @@ L'artisan de cette ruse est un dominicain, **Jacques de Cessoles**, qui rédige 
 Le procédé est génial : il ne nie pas le jeu, il le moralise. Les échecs cessent d'être une vanité pour devenir un **miroir du bon gouvernement**. Le traité circule dans toute l'Europe en d'innombrables copies, traductions et adaptations. Lorsque l'imprimerie arrive, **William Caxton** en publie une version anglaise, *The Game and Playe of the Chesse*, vers 1474 : c'est l'un des tout premiers livres imprimés en langue anglaise. Symbole frappant : le jeu jadis voué au bûcher devient l'un des premiers objets de la culture imprimée.
 
 À partir de là, la cause est entendue dans l'Occident chrétien. Le jeu reste parfois suspect quand on y mise de l'argent, mais l'échiquier en lui-même est blanchi. Il deviendra même, à la Renaissance puis aux Lumières, un emblème d'intelligence et de civilité, la racine lointaine de sa place actuelle dans [la culture populaire](/fr/blog/echecs-et-culture-populaire/).
+
+<figure>
+  <img src="/images/blog/religion-templiers-echecs.jpg" alt="Deux chevaliers du Temple jouant aux échecs, enluminure du Libro de los juegos (1283)." width="555" height="325" loading="lazy" decoding="async" />
+  <figcaption>Deux Templiers à l'échiquier : même un ordre religieux-militaire pratiquait le jeu que l'Église regardait de travers. <em>Libro de los juegos</em> (1283), domaine public, via <a href="https://commons.wikimedia.org/wiki/File:Templars_chess_libro-de-los-juegos_alfons-X.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a>.</figcaption>
+</figure>
 
 ## L'islam : du soupçon à la tolérance conditionnelle
 
