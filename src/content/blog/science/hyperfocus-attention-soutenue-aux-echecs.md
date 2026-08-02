@@ -5,6 +5,7 @@ publishDate: "2026-10-26"
 category: "science"
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: "21 min"
 pillar: "Neurosciences"
 tags: ["hyperfocus", "attention soutenue", "échecs", "neurosciences", "neurodivergence", "TDAH", "flow"]
@@ -52,7 +53,7 @@ La signature neurale de l'hyperfocus est différente de l'attention soutenue : a
 
 Bien utilisé, l'hyperfocus est un avantage compétitif réel.
 
-**Sur les problèmes tactiques.** Une session de tactique sur Lichess ou sur un livre de combinaisons engagée en hyperfocus permet une densité d'apprentissage que l'attention soutenue normale n'atteint pas. Tu vois des patterns que tu n'aurais pas vus en mode dispersé. Une heure en hyperfocus sur des puzzles peut valoir trois heures d'entraînement distrait.
+**Sur les problèmes tactiques.** Une session de tactique sur Lichess ou sur un [livre de combinaisons](https://amzn.to/4wdx8HC) engagée en hyperfocus permet une densité d'apprentissage que l'attention soutenue normale n'atteint pas. Tu vois des patterns que tu n'aurais pas vus en mode dispersé. Une heure en hyperfocus sur des puzzles peut valoir trois heures d'entraînement distrait.
 
 **Sur l'analyse de partie en profondeur.** Quand tu décortiques une variante d'ouverture pendant des heures avec un moteur, l'hyperfocus permet de tenir la complexité combinatoire en mémoire sans la saturation qui te ferait abandonner.
 

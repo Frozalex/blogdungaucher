@@ -5,6 +5,7 @@ publishDate: "2026-05-25"
 category: "science"
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: "13 min"
 pillar: "Logique"
 tags: ["logique modale", "échecs", "raisonnement", "possibilité", "nécessité", "stratégie", "philosophie"]
@@ -57,7 +58,7 @@ Plus formellement : si $\Diamond_{futur} \text{menace}$ est vrai dans la positio
 
 ### La préventive de Nimzovitch
 
-[Aaron Nimzovitch](https://fr.wikipedia.org/wiki/Aaron_Nimzowitsch) a théorisé le concept de "prévention" dans son livre *Mon système* (1925). Il expliquait que parfois le coup le plus fort est celui qui neutralise une menace adverse avant qu'elle ne devienne réelle, même si cette menace n'est pas encore immédiate.
+[Aaron Nimzovitch](https://fr.wikipedia.org/wiki/Aaron_Nimzowitsch) a théorisé le concept de "prévention" dans son livre [*Mon système*](https://amzn.to/45dIhfq) (1925). Il expliquait que parfois le coup le plus fort est celui qui neutralise une menace adverse avant qu'elle ne devienne réelle, même si cette menace n'est pas encore immédiate.
 
 En langage modal, Nimzovitch disait : il ne faut pas seulement regarder les menaces actuelles (les mondes immédiatement accessibles), mais aussi les menaces potentielles (les mondes accessibles après plusieurs coups). Le raisonnement modal sur les futurs possibles est plus riche que le raisonnement sur les menaces immédiates.
 

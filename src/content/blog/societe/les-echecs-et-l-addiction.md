@@ -7,6 +7,7 @@ publishDate: "2026-04-03"
 category: societe
 featured: false
 featuredRank: 99
+affiliate: true
 readingTime: 22 min
 pillar: Psychologie
 tags:
@@ -116,7 +117,7 @@ Les critères du [DSM-5](https://fr.wikipedia.org/wiki/Manuel_diagnostique_et_st
 
 ## Contexte chiffré : tu n’inventes pas un problème « perso »
 
-Après *Le Jeu de la Dame* (2020), Chess.com a publié une explosion des inscriptions souvent citée autour de **+200 %** en 2020. Traduction : des millions de nouveaux comptes, dont beaucoup sans culture du **jeu** lent, direction **Bullet** ou cadences courtes, donc vers la boucle la plus nerveuse.
+Après [*Le Jeu de la Dame*](https://amzn.to/3TdPuti) (2020), Chess.com a publié une explosion des inscriptions souvent citée autour de **+200 %** en 2020. Traduction : des millions de nouveaux comptes, dont beaucoup sans culture du **jeu** lent, direction **Bullet** ou cadences courtes, donc vers la boucle la plus nerveuse.
 
 Les travaux nationaux sur le *gaming disorder* donnent des fourchettes très variables (outils, pays, définitions). L’important n’est **pas** un pourcentage « magique » universel : c’est que l’usage problématique existe, qu’il est mesuré dans la littérature, et que l’OMS a donné un cadre clinique. Tu n’es ni fou ni seul **face** à la machine.
 
