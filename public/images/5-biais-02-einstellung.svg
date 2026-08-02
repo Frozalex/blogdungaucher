@@ -18,7 +18,7 @@
 
   <rect x="324" y="74" width="212" height="46" rx="10" fill="#fff" stroke="#e08a3c" stroke-width="2"/>
   <text x="430" y="103" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#1c1a16">1ʳᵉ idée qui fonctionne</text>
-  <text x="430" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12.5" fill="#c47a2e">jouée — mais sous-optimale</text>
+  <text x="430" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12.5" fill="#c47a2e">jouée, mais sous-optimale</text>
 
   <rect x="324" y="192" width="212" height="46" rx="10" fill="#f4f1ea" stroke="#b7b0a3" stroke-width="1.6" stroke-dasharray="5 4"/>
   <text x="430" y="221" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#8a8478">Meilleure idée</text>

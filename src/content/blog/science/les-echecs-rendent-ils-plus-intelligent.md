@@ -75,7 +75,7 @@ Soyons honnêtes : dire que les échecs n'augmentent pas le QI ne veut pas dire 
 - **Concentration soutenue** : tenir 30, 60, 90 minutes d'attention sur un seul problème. À une époque de fragmentation cognitive, ce n'est pas rien.
 - **Mémoire de motifs** : reconnaître des structures, des plans, des tactiques. C'est une mémoire procédurale, pas une mémoire de travail élargie.
 - **Anticipation et planification** : envisager plusieurs coups d'avance, modéliser les conséquences. Cette compétence se transfère mal à d'autres domaines, mais elle s'affine au sein du jeu.
-- **Gestion de la défaite** : apprendre à perdre régulièrement et à analyser ses erreurs. C'est probablement le bénéfice le plus transférable, parce qu'il est émotionnel autant que cognitif. C'est d'ailleurs sur ce terrain — apprendre à perdre, à se concentrer, à recommencer — qu'un [manuel d'échecs pensé pour les enfants](https://amzn.to/4gMGYex) aide vraiment, bien plus qu'en promettant des points de QI.
+- **Gestion de la défaite** : apprendre à perdre régulièrement et à analyser ses erreurs. C'est probablement le bénéfice le plus transférable, parce qu'il est émotionnel autant que cognitif. C'est d'ailleurs sur ce terrain (apprendre à perdre, à se concentrer, à recommencer) qu'un [manuel d'échecs pensé pour les enfants](https://amzn.to/4gMGYex) aide vraiment, bien plus qu'en promettant des points de QI.
 
 Ce dernier point est central. Les échecs ne fabriquent pas des cerveaux plus puissants. Ils fabriquent des joueurs qui ont appris à encaisser, à analyser, à recommencer. Ça, c'est précieux, et c'est différent.
 

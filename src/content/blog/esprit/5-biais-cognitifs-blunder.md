@@ -15,7 +15,7 @@ seoDescription: "Les 5 biais cognitifs qui causent le plus de blunders aux éche
 
 Tu as tout calculé  -  enfin, tu le croyais. Puis le blunder : « comment j’ai pu rater ça ? » Rarement par manque de temps au calculateur ; presque toujours parce que **le cerveau a tranché avec un biais**, pas avec une erreur de variante. La science cognitive a cartographié ces dérives ; cinq d’entre elles collent particulièrement à l’échiquier.
 
-![Cinq biais cognitifs — effet Einstellung, biais de confirmation, ancrage, excès de confiance, effet de disponibilité — convergent vers le blunder ; le méta-biais de se croire immunisé les aggrave.](/images/5-biais-01-overview.svg)
+![Cinq biais cognitifs (effet Einstellung, biais de confirmation, ancrage, excès de confiance, effet de disponibilité) convergent vers le blunder ; le méta-biais de se croire immunisé les aggrave.](/images/5-biais-01-overview.svg)
 
 ## Biais n°1 : l'effet Einstellung (le problème de la première idée)
 

@@ -96,7 +96,7 @@ Les statistiques de la [Fédération Internationale des Échecs](https://fr.wiki
 
 <figure>
   <img src="/images/blog/femmes-tournoi.jpg" alt="Des femmes concentrées sur leurs parties lors d'un tournoi d'échecs." width="685" height="1023" loading="lazy" decoding="async" />
-  <figcaption>Un écart de nombre, pas de capacité : les femmes ne forment que 10 à 15 % des licenciés. Photo : <a href="https://www.flickr.com/photos/8022405@N02/7713813594" target="_blank" rel="noreferrer">karpidis</a> — <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noreferrer">CC BY-SA 2.0</a>, via Flickr.</figcaption>
+  <figcaption>Un écart de nombre, pas de capacité : les femmes ne forment que 10 à 15 % des licenciés. Photo : <a href="https://www.flickr.com/photos/8022405@N02/7713813594" target="_blank" rel="noreferrer">karpidis</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noreferrer">CC BY-SA 2.0</a>, via Flickr.</figcaption>
 </figure>
 
 Cette écrasante sous-représentation à la base de la pyramide est le point de départ de tout le problème. Imaginez une école où 90 % des élèves qui étudient la musique sont des garçons. Statistiquement, il est évident que 90 % (voire plus) des prodiges qui en sortiront seront des garçons. L'écart de genre aux échecs n'est pas seulement un problème d'élite ; c'est avant tout un désert démographique à la racine même de la discipline.
@@ -170,8 +170,8 @@ Toutes ces théories, ces probabilités et ces menaces psychologiques volent pou
 Mais c'est [Judit Polgár](https://fr.wikipedia.org/wiki/Judit_Polg%C3%A1r), la benjamine, qui est entrée dans l'histoire absolue. Elle a sciemment refusé de participer aux championnats exclusivement féminins, insistant pour se frotter au circuit "open" général. Elle est devenue Grand Maître International à 15 ans et 4 mois, battant le record de précocité de [Bobby Fischer](https://fr.wikipedia.org/wiki/Bobby_Fischer). Elle a atteint la 8ème place du classement mondial absolu, battant [Garry Kasparov](https://fr.wikipedia.org/wiki/Garry_Kasparov) lui-même en 2002 lors du tournoi de Moscou.
 
 <figure>
-  <img src="/images/blog/femmes-polgar-soeurs.jpg" alt="Les trois sœurs Polgár — Susan, Sofia et Judit — joueuses d'échecs hongroises." width="960" height="680" loading="lazy" decoding="async" />
-  <figcaption>Les sœurs Polgár — Susan, Sofia et Judit — élevées par leur père dans un projet éducatif tourné vers les échecs : une démonstration éclatante du poids de l'environnement. Photo : <a href="https://commons.wikimedia.org/wiki/File:Sofia,_Judit,_Susan_Polgar_sisters.jpg" target="_blank" rel="noreferrer">R. Cottrell</a> — <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons.</figcaption>
+  <img src="/images/blog/femmes-polgar-soeurs.jpg" alt="Les trois sœurs Polgár (Susan, Sofia et Judit), joueuses d'échecs hongroises." width="960" height="680" loading="lazy" decoding="async" />
+  <figcaption>Les sœurs Polgár (Susan, Sofia et Judit), élevées par leur père dans un projet éducatif tourné vers les échecs : une démonstration éclatante du poids de l'environnement. Photo : <a href="https://commons.wikimedia.org/wiki/File:Sofia,_Judit,_Susan_Polgar_sisters.jpg" target="_blank" rel="noreferrer">R. Cottrell</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons.</figcaption>
 </figure>
 
 Ce que l'expérience Polgár prouve, au fond, n'est pas que toutes les filles pourraient devenir Judit avec le bon entraînement. C'est quelque chose de plus fondamental et de plus utile : que le plafond n'est pas biologique. Le plafond est culturel, environnemental, social. Une fille élevée dans un environnement où l'excellence aux échecs est non seulement accessible mais attendue peut atteindre les sommets absolus. C'est Laszlo Polgár qui a eu raison.

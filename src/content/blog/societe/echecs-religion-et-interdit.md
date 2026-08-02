@@ -90,7 +90,7 @@ Entre ces deux scènes, mille ans de méfiance. L'Église latine, l'islam, l'ort
 
 <figure>
   <img src="/images/blog/religion-libro-juegos.jpg" alt="Enluminure médiévale de deux joueurs d'échecs, tirée du Libro de los juegos (1283)." width="960" height="1440" loading="lazy" decoding="async" />
-  <figcaption>Le <em>Libro de los juegos</em> (Alphonse X de Castille, 1283) : commandé par un roi chrétien, il puise dans la tradition arabe des échecs — le jeu circulait au plus haut niveau malgré les condamnations. Domaine public, via <a href="https://commons.wikimedia.org/wiki/File:Two_men_playing_chess_-_Libro_de_los_juegos.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a>.</figcaption>
+  <figcaption>Le <em>Libro de los juegos</em> (Alphonse X de Castille, 1283) : commandé par un roi chrétien, il puise dans la tradition arabe des échecs : le jeu circulait au plus haut niveau malgré les condamnations. Domaine public, via <a href="https://commons.wikimedia.org/wiki/File:Two_men_playing_chess_-_Libro_de_los_juegos.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a>.</figcaption>
 </figure>
 
 ## Pourquoi un jeu de plateau dérange les religions
