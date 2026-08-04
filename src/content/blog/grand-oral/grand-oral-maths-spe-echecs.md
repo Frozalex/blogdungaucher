@@ -131,6 +131,8 @@ La **variance** des résultats est $\mathrm{Var}(X) = \mathbb{E}(X^2) - (\mathbb
 
 Ces notions (espérance, variance, écart-type) sont exactement au programme de terminale et peuvent être présentées avec des valeurs numériques précises en appui de la formule Elo. C'est ce niveau de détail qui distingue un Grand Oral solide d'une présentation superficielle.
 
+![Loi binomiale B(14, 0,5) sur un match de 14 parties entre joueurs égaux : espérance à 7, un 7-7 exact dans environ 21 % des cas.](/images/go-maths-spe-01-binomiale-match.svg)
+
 ## Suites récurrentes : l'Elo comme modèle dynamique
 
 C'est le chapitre de terminale le moins exploité sur les échecs, et c'est justement là que tu peux créer une différence.
@@ -164,6 +166,8 @@ En termes de terminale : cette suite a un **point fixe** (la vraie force E), et 
 La question pratique « combien de parties faut-il jouer pour que sa cote soit fiable ? » est une question sur la **vitesse de convergence**. Elle dépend de K : avec K = 32, la cote fluctue plus vite et converge plus rapidement mais avec plus de variance ; avec K = 10, la convergence est plus lente mais plus stable.
 
 Ce compromis biais-variance est exactement la même tension que celle évoquée dans les cours de statistiques : un estimateur convergent rapidement mais instable versus un estimateur lent mais précis. Mentionner ce lien en conclusion de la section montre une vraie maîtrise du programme.
+
+![Suite récurrente Elo : un joueur de force réelle 1600 parti de 1400 converge vers 1600 en une cinquantaine de parties.](/images/go-maths-spe-02-suite-elo.svg)
 
 ## Algorithmique : la récursivité illustrée par le minimax
 

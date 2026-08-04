@@ -62,6 +62,8 @@ Un équilibre de Nash est un profil de stratégies (une stratégie par joueur) t
 
 Pour comprendre l'intuition, pensons au dilemme du prisonnier. Deux complices sont interrogés séparément. Si les deux se taisent, ils écopent chacun d'un an. Si l'un parle et l'autre non, le premier est libéré et l'autre prend dix ans. Si les deux parlent, ils écopent chacun de cinq ans. L'équilibre de Nash est que les deux parlent : même si c'est globalement sous-optimal, aucun ne peut améliorer son sort en changeant de comportement si l'autre maintient sa stratégie.
 
+![Matrice de gains 2x2 illustrant l'équilibre de Nash dans les ouvertures d'échecs : la case bas-droite est l'équilibre stable car aucun joueur n'a intérêt à dévier seul de sa stratégie.](/images/nash-01-matrice-gains.svg)
+
 ## Les ouvertures comme équilibres dynamiques
 
 Aux échecs, les ouvertures théoriques peuvent être analysées comme des équilibres de Nash locaux. Quand une variante est qualifiée de "théoriquement égale", cela signifie que ni Blanc ni Noir n'a trouvé de déviation qui améliore son résultat de façon prouvée. Les deux camps peuvent maintenir l'équilibre en jouant les coups théoriquement corrects.
@@ -121,6 +123,8 @@ L'équilibre de Nash de ce méta-jeu est une distribution sur les ouvertures : j
 L'équilibre de Nash standard suppose des joueurs rationnels parfaits. Mais que se passe-t-il si l'adversaire commet une erreur **avec une probabilité ε** ? [Reinhard Selten](https://fr.wikipedia.org/wiki/Reinhard_Selten) (prix Nobel 1994 avec Nash) a proposé le concept d'**équilibre à main tremblante** (*trembling-hand perfect equilibrium*) : un coup est "robuste" s'il reste optimal même quand l'adversaire dévie légèrement de la stratégie pure.
 
 Cela a une traduction directe aux échecs. Un coup peut être théoriquement *parfait sous Nash strict* tout en étant **fragile** : il dépend de la précision de l'adversaire jusqu'au dernier coup. Un autre coup, légèrement sous-optimal en évaluation, peut être **plus robuste** parce qu'il garde l'avantage même si l'adversaire joue trois ou quatre coups inexacts. Les bons préparateurs (Carlsen, Caruana) optimisent moins l'évaluation absolue que la *robustesse à la main tremblante* : ils visent des positions où **rester sur la bonne route** est plus facile pour eux que pour l'adversaire.
+
+![Comparaison coup fragile vs coup robuste au sens de Selten : le coup fragile s'effondre quand l'adversaire dévie légèrement, le coup robuste maintient l'avantage même face à une erreur adverse.](/images/nash-02-trembling-hand.svg)
 
 ## Les variantes refusées : équilibres sous-optimaux
 

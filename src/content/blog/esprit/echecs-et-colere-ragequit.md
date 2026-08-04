@@ -42,6 +42,8 @@ Ce décalage temporel explique pourquoi la réaction émotionnelle précède tou
 
 Aux échecs, l'amygdale hijacking se produit exactement lors du ragequit. La perte d'une pièce ou une défaite imminente active l'amygdale comme une "menace". Le cortex préfrontal, qui pourrait rationaliser ("ce n'est qu'un jeu", "cette défaite peut m'apprendre quelque chose"), est mis en veille. Le comportement qui en résulte, le clic rageux, le message agressif dans le chat, est une réaction limbique à une menace perçue, pas une décision rationnelle.
 
+![Les deux voies de la colère vers l'amygdale : la voie courte (12 ms) déclenche le ragequit, la voie longue (40 ms) permet l'évaluation.](/images/colere-01-voies-amygdale.svg)
+
 ## Pourquoi les échecs sont particulièrement propices à la colère
 
 Plusieurs caractéristiques spécifiques des échecs amplifient la réponse émotionnelle à la défaite.

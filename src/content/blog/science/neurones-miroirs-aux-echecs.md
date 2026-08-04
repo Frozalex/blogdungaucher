@@ -64,6 +64,8 @@ Cette différence a des conséquences pratiques intéressantes. Les moteurs sont
 
 Un Grand Maître contre un adversaire humain peut délibérément choisir des positions "difficiles pour l'humain" même si elles sont objectivement inférieures selon le moteur. Cette stratégie exploite précisément les limites cognitives humaines, y compris les biais de simulation mentale.
 
+![Simulation du plan adverse : l'expert humain active ses circuits miroirs, le moteur calcule sans simuler d'intentions.](/images/neurones-miroirs-01-simulation-adverse.svg)
+
 ## Empathie et analyse post-partie
 
 Le système miroir joue aussi un rôle dans l'analyse post-partie. Quand tu rejoues une partie avec l'adversaire, quand tu essaies de comprendre pourquoi il a joué tel coup plutôt que tel autre, tu utilises tes circuits miroirs pour simuler son raisonnement.

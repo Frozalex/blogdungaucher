@@ -58,6 +58,8 @@ Résultat : le joueur à 2000 Elo avec un fort syndrome de l'imposteur joue souv
 
 [Carol Dweck](https://fr.wikipedia.org/wiki/Carol_Dweck) décrit ce mécanisme dans sa théorie du fixed mindset : quand l'objectif est de "paraître compétent" plutôt que de "devenir compétent", les stratégies adoptées sont fondamentalement différentes et moins efficaces.
 
+![Schéma de la prophétie auto-réalisatrice à 2000 Elo : le doute initial génère des comportements d'évitement qui dégradent réellement le jeu dans les situations importantes, confirmant les craintes et refermant la boucle, à moins d'une exposition répétée et d'un journal de performances.](/images/imposteur-2000-01-prophetie.svg)
+
 ## Ce que "mériter" son Elo signifie réellement
 
 Une confusion centrale dans le syndrome de l'imposteur aux échecs est la notion de "mériter" son classement. Beaucoup de joueurs pensent qu'il faudrait pouvoir reproduire à la demande, de façon parfaitement consistante, leur niveau maximum.

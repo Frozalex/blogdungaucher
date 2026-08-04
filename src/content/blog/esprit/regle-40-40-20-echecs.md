@@ -80,6 +80,8 @@ Quand on travaille les finales, la boucle est longue. Le bénéfice d'avoir appr
 
 Ce que la recherche sur l'apprentissage appelle l'[illusion de la compétence](https://fr.wikipedia.org/wiki/Effet_Dunning-Kruger) joue ici à plein : les activités qui produisent un sentiment immédiat de maîtrise sont surévaluées, celles qui produisent une progression réelle mais invisible à court terme sont abandonnées.
 
+![Répartition spontanée des amateurs (surtout des ouvertures) comparée à la règle 40-40-20 qui priorise tactique et finales.](/images/regle-40-40-20-01-repartition.svg)
+
 ## Le socle : pourquoi 40 % de tactique
 
 ### La tactique est le langage de base
@@ -159,6 +161,8 @@ La règle 40-40-20 est un point de départ, pas une prescription rigide. Elle do
 **Tu joues surtout en blitz et en rapide** → les finales sont moins critiques en temps court, la tactique mérite un poids encore plus fort.
 
 L'objectif est d'avoir une répartition consciente, défendue par une raison, pas une répartition par défaut.
+
+![Session d'entraînement d'une heure selon la règle 40-40-20 : 24 min de tactique, 24 min de finales, 12 min d'ouvertures.](/images/regle-40-40-20-02-session-type.svg)
 
 ## Les critiques de la règle
 

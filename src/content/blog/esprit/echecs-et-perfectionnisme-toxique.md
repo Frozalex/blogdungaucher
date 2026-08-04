@@ -56,6 +56,8 @@ Ce mécanisme est documenté en psychologie sous le nom d'"[ironic process theor
 
 Aux échecs, l'équivalent est : "Ne blunde pas cette pièce." La ressource cognitive consacrée à cette suppression active détourne l'attention de l'échiquier lui-même. Le joueur anxieux à l'idée de blunder crée exactement les conditions d'inattention qui produisent les blunders.
 
+![Schéma du paradoxe du perfectionnisme aux échecs : la pensée parasite « ne blunde pas » détourne les ressources cognitives de l'échiquier et augmente la probabilité du blunder redouté, formant une boucle ironique que le satisficing de Simon permet de rompre.](/images/perfectionnisme-01-paradoxe-erreur.svg)
+
 ## Les performances maximales naissent de la libération, pas du contrôle
 
 La psychologie de la performance de pointe, dans tous les domaines, converge vers un résultat contre-intuitif : les meilleures performances se produisent dans un état mental de relative libération des enjeux, pas dans un état de tension maximale.

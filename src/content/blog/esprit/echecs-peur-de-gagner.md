@@ -46,6 +46,8 @@ Cette anxiété active les mêmes circuits neurologiques que d'autres formes d'a
 
 La position gagnante crée paradoxalement un état cognitif moins performant que la position équilibrée, chez certains joueurs.
 
+![Schéma de l'anxiété du gagnant selon Kahneman et Tversky : la position gagnante crée une possession psychologique de la victoire, dont la perte potentielle est ressentie deux fois plus douloureusement qu'un gain, activant l'amygdale et réduisant les capacités du cortex préfrontal au moment précis où la précision est la plus nécessaire.](/images/peur-gagner-01-anxiete-gagnant.svg)
+
 ## Exemples historiques de peur de gagner
 
 Plusieurs joueurs d'élite ont été analysés sous cet angle par des psychologues du sport et des biographes.

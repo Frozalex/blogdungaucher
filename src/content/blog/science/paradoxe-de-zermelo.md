@@ -61,11 +61,15 @@ Le théorème de Zermelo s'applique à une classe de jeux qui incluent les éche
 
 **Énoncé :** Dans tout jeu de ce type, l'une des trois situations suivantes est nécessairement vraie : le joueur 1 a une stratégie gagnante, ou le joueur 2 a une stratégie gagnante, ou les deux joueurs peuvent forcer le nul.
 
+![Les trois issues déterminées par Zermelo : victoire forcée des Blancs, victoire forcée des Noirs, ou nulle forcée — la nulle étant l'hypothèse dominante non prouvée à ce jour.](/images/zermelo-01-trois-issues.svg)
+
 La démonstration utilise une **induction rétrograde** (*backward induction*) sur la longueur maximale possible de la partie. C'est exactement le même mécanisme que la version moderne de [minimax aux échecs](/blog/minimax-aux-echecs/), à 35 ans d'écart : Zermelo l'a formulé pour les mathématiciens, Shannon (1950) l'a réutilisé tel quel pour les premiers programmes.
 
 Imagine une fin de partie atteinte. Chaque position terminale est soit une victoire pour Blanc, soit une victoire pour Noir, soit une nulle. Maintenant, remontons d'un coup. Si c'est le tour de Blanc, il peut choisir parmi les positions terminales qui lui sont accessibles celle qui lui est la plus favorable. De même pour Noir. En remontant récursivement ainsi depuis toutes les positions terminales jusqu'à la position initiale, chaque position dans l'arbre du jeu reçoit une valeur définie : victoire Blanc, victoire Noir, ou nulle.
 
 La valeur de la position initiale est donc déterminée. Le premier joueur à jouer a soit une stratégie pour forcer la victoire, soit les deux joueurs peuvent forcer le nul, soit le second joueur a une stratégie pour forcer la victoire.
+
+![Induction rétrograde de Zermelo : l'arbre est parcouru de bas en haut, chaque nœud héritant de la valeur optimale selon le joueur au trait, jusqu'à ce que la racine reçoive sa valeur définitive.](/images/zermelo-02-backward-induction.svg)
 
 ### Une démonstration affinée après coup
 

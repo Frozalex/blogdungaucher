@@ -274,6 +274,8 @@ Points importants pour le **jury** :
 
 La différence avec un arbre binaire de recherche : dans un arbre des coups, on ne cherche **pas** une valeur, on **propage des scores** de bas en haut. C'est ce qu'on appelle la **rétropropagation des valeurs**, un concept qui réapparaît dans les réseaux de neurones (backpropagation).
 
+![Élagage alpha-bêta sur un arbre minimax : une branche est coupée car elle ne peut pas améliorer le résultat déjà garanti par MAX.](/images/go-nsi-01-alphabeta-coupure.svg)
+
 ## Programmation Python : représenter l'échiquier
 
 ### Tableau 2D : la représentation naïve
@@ -396,6 +398,8 @@ Les échecs permettent d'illustrer la distinction entre les grandes familles d'a
 **Apprentissage par renforcement** (AlphaZero) : on ne fournit que les règles du jeu et un signal de récompense (gagner = +1, perdre = -1). Le programme joue contre lui-même, améliore sa stratégie en fonction des résultats, sans jamais voir de partie humaine.
 
 Cette distinction est l'une des **questions** les plus probables du **jury** sur un **sujet** IA/NSI.
+
+![Deux paradigmes d'IA aux échecs : Stockfish (alpha-bêta, évaluation experte) contre AlphaZero (réseau de neurones, auto-apprentissage).](/images/go-nsi-02-stockfish-alphazero.svg)
 
 ## Données et bases de données
 

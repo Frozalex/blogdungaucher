@@ -54,6 +54,8 @@ Le réseau encode les dépendances suivantes : T, P et C influencent K (un temps
 
 $$P(B | T, C, E, S, P) = \sum_{k} P(B | K=k, E) \cdot P(K=k | T, C, P)$$
 
+![Réseau bayésien du risque de blunder : temps, complexité, pression et Elo influencent l'état cognitif, qui détermine la probabilité de gaffe.](/images/reseaux-bayesiens-01-graphe-blunder.svg)
+
 ## Les facteurs réels du blunder : ce que la recherche dit
 
 Des études empiriques sur les bases de données de parties ont quantifié les facteurs de risque de blunder. Ces résultats permettent de calibrer les probabilités conditionnelles du réseau.

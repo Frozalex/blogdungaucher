@@ -48,6 +48,8 @@ Décomposons les raisonnements typiques :
 
 Cette traduction formelle n'est pas simplement académique. Elle précise ce que signifie "forcer" quelque chose aux échecs. Une victoire forcée est une proposition nécessaire ($\Box$) dans le sous-arbre des réponses adverses. Une idée qui "peut fonctionner" est une proposition possible ($\Diamond$) dans ce sous-arbre.
 
+![Positions d'échecs comme mondes possibles de Kripke : les coups légaux sont les relations d'accessibilité, avec les opérateurs de nécessité et de possibilité.](/images/logique-modale-01-mondes-possibles.svg)
+
 ## Le raisonnement prophylactique et la logique modale
 
 [Tigran Petrossian](https://fr.wikipedia.org/wiki/Tigran_Petrossian) est célèbre pour son jeu prophylactique : il jouait régulièrement des coups qui "prévenaient" des menaces adverses avant même qu'elles soient concrètement présentes. Ses adversaires trouvaient souvent ses coups mystérieux parce qu'ils ne comprenaient pas ce qu'il prévenait.

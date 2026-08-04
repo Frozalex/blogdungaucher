@@ -61,6 +61,8 @@ La recherche sur la [consolidation de la mémoire procédurale](https://fr.wikip
 
 Pour les joueurs d'échecs, cela signifie concrètement : les patterns tactiques étudiés la veille au soir sont mieux intégrés après une nuit complète que si tu t'étais contenté de les revoir immédiatement.
 
+![Consolidation mémorielle en deux temps : encodage pendant la pratique, consolidation pendant le repos et le sommeil.](/images/pauses-01-consolidation-memoire.svg)
+
 ## La fatigue cognitive et ses effets sur la qualité de jeu
 
 La [fatigue cognitive](https://fr.wikipedia.org/wiki/Fatigue_mentale) est l'état de déclin des performances mentales qui résulte d'une période prolongée d'activité intellectuelle intense. Elle n'est pas identique à la fatigue physique, mais elle est tout aussi réelle.
@@ -80,6 +82,8 @@ La raison neurologique est liée au [réseau par défaut](https://fr.wikipedia.o
 En pratique, la règle souvent citée dans la littérature sur la gestion de l'attention est la structure **50/10** : 50 minutes de travail concentré, 10 minutes de pause sans stimulation intense. Pour une session d'entraînement aux échecs de 3 heures, deux micro-pauses de 10 minutes maintiennent la qualité de la réflexion bien au-dessus de ce qu'elle serait en session continue.
 
 Ce que la micro-pause doit être : marche courte, regard par la fenêtre, respiration consciente. Ce qu'elle ne doit pas être : regarder son téléphone, lancer une partie rapide « juste pour se détendre ». La partie rapide n'est pas une pause : c'est de la fatigue supplémentaire dans le même canal cognitif.
+
+![Qualité d'attention sur trois heures : elle chute sans pauses, mais se maintient avec la structure 50/10.](/images/pauses-02-structure-50-10.svg)
 
 ## La pause entre les parties : la décision la plus sous-estimée
 

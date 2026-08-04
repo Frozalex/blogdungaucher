@@ -54,6 +54,8 @@ Le joueur qui a peur de perdre joue de façon passive. La passivité lui donne u
 
 Ce cercle vicieux a été documenté dans de nombreuses études longitudinales en psychologie du sport. Les athlètes avec une haute anxiété de performance ont des résultats moins bons dans les compétitions importantes que dans les entraînements, et cet écart se creuse dans le temps si la peur n'est pas traitée.
 
+![Le cercle vicieux de la peur de perdre : jeu passif, position inférieure, défaite, puis peur amplifiée pour la partie suivante.](/images/peur-perdre-01-cercle-vicieux.svg)
+
 ## L'Elo comme déclencheur de peur : la protection du "nombre"
 
 Un facteur spécifique aux échecs est le rôle du classement Elo dans l'amplification de la peur de perdre. Comme évoqué dans d'autres articles de ce blog, quand [l'Elo devient une identité](/fr/blog/echecs-estime-de-soi-elo/) plutôt qu'un outil statistique, chaque partie devient une menace existentielle.

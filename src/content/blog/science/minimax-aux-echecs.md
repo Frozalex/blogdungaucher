@@ -97,6 +97,8 @@ Quand $\alpha \geq \beta$, la branche courante est élagée : elle ne peut pas p
 
 Dans le cas optimal (si les coups sont ordonnés par ordre de qualité décroissante), alpha-bêta réduit le nombre de noeuds de $b^d$ à $b^{d/2}$, doublant effectivement la profondeur de recherche possible pour un même budget de calcul.
 
+![Arbre minimax à trois niveaux avec élagage alpha-bêta : les branches grisées sont abandonnées car alpha vaut déjà 3, rendant inutile l'exploration de toute branche où MIN peut forcer moins de 3.](/images/minimax-01-alpha-beta.svg)
+
 ### Negamax : la simplification qui change le code
 
 En pratique, presque aucun moteur n'implémente minimax dans sa forme à deux branches (max pour Blanc, min pour Noir). Tous utilisent la formulation **negamax**, qui exploite l'identité $\min(a,b) = -\max(-a,-b)$ dans un jeu à somme nulle. Le code passe de deux fonctions distinctes à une seule, avec un retournement de signe à chaque appel récursif. Conceptuellement identique, mais beaucoup plus court (15 lignes de code contre 40) et facile à maintenir. Quand un développeur dit "j'implémente minimax", il veut presque toujours dire "j'implémente negamax avec alpha-bêta".
@@ -152,6 +154,8 @@ Tes limites humaines déterminent la "profondeur" de ta recherche. Un joueur à 
 La différence entre un joueur moyen et un Grand Maître n'est pas seulement la profondeur : c'est aussi la qualité de la fonction d'évaluation interne (l'intuition positionnelle) et l'efficacité de l'élagage (la capacité à identifier rapidement les coups pertinents et à ignorer les mauvais sans les calculer).
 
 Entraîner ces deux aspects est au coeur du développement d'un joueur : enrichir son sens positionnel pour améliorer son évaluation, et affiner son instinct des "coups candidats" pour améliorer son élagage. Minimax est la description formelle de ce processus.
+
+![Comparaison de la profondeur de recherche minimax entre un humain (facteur b de 3 à 5, profondeur 3-8) et un moteur avec alpha-bêta (facteur b de 35, profondeur 10-20, 52 millions de nœuds au lieu de 35^10).](/images/minimax-02-profondeur-humain-moteur.svg)
 
 **Après lecture :** sur un problème tactique, impose une **profondeur fixe** (ex. trois demi-coups) avant de regarder la solution : tu calibres ton minimax interne.
 

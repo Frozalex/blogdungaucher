@@ -51,6 +51,8 @@ Avant d'entrer dans le contenu, la structure de pensée est essentielle. Un jury
 
 Ce tableau est la colonne vertébrale de ton Grand Oral. Chaque ligne est une transition entre une partie et la suivante. Et c'est ce que les candidats Maths-seuls ou NSI-seuls **ne peuvent pas faire** : montrer que l'un engendre l'autre.
 
+![Les quatre ponts entre Mathématiques et NSI illustrés par les échecs : combinatoire, probabilités Elo, théorie des graphes, algèbre linéaire.](/images/go-maths-01-ponts-disciplines.svg)
+
 ## Pourquoi Maths + NSI font un sujet idéal pour le Grand Oral
 
 Avant de plonger dans le contenu, il faut comprendre pourquoi ce sujet fonctionne structurellement.
@@ -185,6 +187,8 @@ Par exemple, après 1.e4 e5 2.Nf3 Nc6 (ouverture italienne), les bases contempor
 Cette approche statistique est à la base de la préparation des joueurs professionnels : ils choisissent leurs ouvertures en optimisant leur espérance de gain mathématique. Un joueur de 2700 Elo qui joue une ouverture avec un taux de victoire moyen de 42 % au lieu de 38 % gagne 4 points d'espérance sur chaque partie, un avantage décisif sur un tournoi de 10 parties.
 
 Pour un Grand Oral, c'est l'exemple parfait de l'**espérance mathématique appliquée** : $\mathbb{E}(\text{gain}) = \mathbb{P}(\text{victoire}) + \tfrac{1}{2}\mathbb{P}(\text{nulle})$.
+
+![Courbe logistique Elo : probabilité de victoire selon l'écart de cotes, 50 % à égalité, 91 % à +400 points, 9 % à −400.](/images/go-maths-02-courbe-elo.svg)
 
 ## L'intelligence artificielle et les échecs : une révolution mathématique
 

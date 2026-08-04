@@ -66,6 +66,8 @@ Il y a une peur très spécifique que comprennent parfaitement les joueurs d'un 
 
 Cette sensation est psychologiquement analogue à ce que les psychologues appellent l'[intolérance à l'incertitude](https://fr.wikipedia.org/wiki/Intolérance_à_l%27incertitude). Certains cerveaux sont câblés pour la gérer avec une relative sérénité ; d'autres réagissent avec une anxiété qui paralyse le calcul. [Daniel Kahneman](https://fr.wikipedia.org/wiki/Daniel_Kahneman) l'a formalisé dans sa théorie des deux systèmes : dans la théorie, c'est ton Système 1 (rapide, intuitif, automatisé) qui prend le relais, appuyé sur des patterns mémorisés. Hors de la théorie, ton Système 2 (lent, conscient, laborieux) doit faire tout le travail. C'est épuisant. Et cet épuisement soudain peut se transformer en panique si tu n'es pas entraîné à y faire face.
 
+![Schéma du relais Système 1 / Système 2 de Kahneman aux échecs : dans la théorie, le Système 1 rapide et intuitif s'appuie sur les patterns mémorisés ; quand l'adversaire dévie, le Système 2 lent et laborieux doit tout recalculer, au risque de la panique.](/images/psychologie-joueur-02-systeme-1-2.svg)
+
 ### Petrossian et l'art de s'y sentir chez soi dans le chaos
 
 Il n'y a qu'une façon saine de répondre à cette peur : s'entraîner délibérément dans l'inconfort. [Tigran Petrossian](https://fr.wikipedia.org/wiki/Tigran_Petrossian), Champion du Monde de 1963 à 1969, était un joueur qui semblait toujours à l'aise dans des positions complexes, ambiguës et difficiles à évaluer. Son style fait d'échanges préventifs et d'une défense profonde n'était pas de la lâcheté. C'était l'expression d'une maîtrise psychologique totale : il se sentait plus à l'aise dans des positions légèrement inférieures mais solides que dans des positions théoriquement gagnantes mais volatiles. Il avait fait la paix avec l'incertitude, et il l'exploitait contre ses adversaires qui, eux, en avaient peur.
@@ -109,6 +111,8 @@ Il y a des moments rares et précieux, que tout joueur a connus au moins une ou 
 ### Les conditions du flow sur l'échiquier
 
 Le flow n'est pas un cadeau du hasard. Il survient dans des conditions très précises. La condition fondamentale est l'équilibre parfait entre le niveau de difficulté de la tâche et les compétences de celui qui l'accomplit. Trop facile, et le cerveau s'ennuie. Trop difficile, et il angoisse. Dans la fenêtre étroite où le défi est à la limite de tes capacités sans les dépasser, le flow peut émerger.
+
+![Le canal du flow selon Csikszentmihalyi : en abscisse les compétences du joueur, en ordonnée la difficulté de la partie. Quand le défi dépasse les compétences c'est l'anxiété, quand il est trop faible c'est l'ennui ; le flow n'émerge que dans la bande diagonale où défi et compétence progressent ensemble.](/images/psychologie-joueur-01-flow.svg)
 
 Cela signifie pratiquement que tu ne peux pas forcer le flow. Mais tu peux créer les conditions pour le rendre possible : être bien reposé, avoir suffisamment étudié pour que le matériel ne soit pas totalement étranger, jouer dans un environnement serein, et surtout, avoir lâché toute attente quant au résultat. Paradoxalement, c'est souvent quand tu joues sans enjeu dans des parties d'entraînement, dans des tournois sans pression de classement que tu touches à tes meilleures performances.
 

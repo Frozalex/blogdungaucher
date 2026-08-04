@@ -78,6 +78,8 @@ Dans une attaque de roque, il existe souvent un coup précis après lequel l'att
 
 Les Grand Maîtres développent intuitivement un sens des bifurcations. Ils reconnaissent les moments où la position exige une précision absolue versus les moments où plusieurs coups raisonnables maintiennent l'équilibre. Cette reconnaissance est ce que [Mikhail Botvinnik](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Botvinnik) appelait "le sens de la position critique".
 
+![Diagramme du point de bifurcation aux échecs : avant le coup critique plusieurs lignes restent équilibrées, après le coup 24 une seule branche mène à la victoire et toutes les déviations s'effondrent de plus de 5 pions.](/images/theorie-chaos-02-bifurcation.svg)
+
 ### L'exposant de Lyapunov : mesurer le chaos
 
 Le critère mathématique formel du chaos est l'[exposant de Lyapunov](https://fr.wikipedia.org/wiki/Exposant_de_Liapounov), noté λ. Il quantifie la vitesse à laquelle deux trajectoires initialement très proches divergent : si λ > 0, l'écart croît exponentiellement avec le temps, et le système est chaotique au sens strict.
@@ -85,6 +87,8 @@ Le critère mathématique formel du chaos est l'[exposant de Lyapunov](https://f
 Aux échecs, on peut transposer l'idée sans rigueur : prends une position et sa "voisine" qui ne diffère que d'une demi-case (un pion en h3 vs h4). Joue les meilleurs coups dans chacune et compare l'évaluation à la profondeur 10, 15, 20. Dans une position calme, les deux trajectoires restent proches : l'écart se résorbe ou plafonne. Dans une position tendue, l'écart se creuse à chaque coup. C'est cette amplification, mesurable empiriquement avec un moteur, qui constitue la signature du chaos sur l'échiquier. Le travail de [Kenneth Regan](https://fr.wikipedia.org/wiki/Kenneth_Regan) sur l'évaluation intrinsèque des joueurs s'appuie indirectement sur ce type de diagnostic : il distingue les coups "à fort λ" (où l'erreur coûte cher) des coups "à faible λ" (où plusieurs choix se valent).
 
 C'est aussi la raison pour laquelle l'[explosion combinatoire des échecs](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/) n'est pas seulement un problème de taille : c'est un problème d'instabilité. Doubler la profondeur de calcul ne double pas la qualité de l'évaluation dans une zone chaotique, parce que les erreurs aux feuilles de l'arbre divergent à mesure qu'on remonte.
+
+![Schéma de l'exposant de Lyapunov appliqué aux échecs : dans une position calme deux coups voisins restent proches, dans une position chaotique l'écart d'évaluation croît exponentiellement à chaque demi-coup.](/images/theorie-chaos-01-lyapunov.svg)
 
 ## La dynamique des positions tactiques
 

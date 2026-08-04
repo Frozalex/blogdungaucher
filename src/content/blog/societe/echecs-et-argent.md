@@ -117,6 +117,8 @@ La disproportion devient frappante quand on compare avec d'autres univers compé
 
 [Dota 2](https://fr.wikipedia.org/wiki/Dota_2), un jeu vidéo de stratégie sorti en 2013, offre un prize pool plus élevé que le jeu de 1500 ans d'histoire de l'humanité. Le poker, qui est légalement un jeu d'argent et non un sport, distribue six fois plus au niveau mondial.
 
+![Prize pools des championnats du monde 2023 : les échecs (2 M$) loin derrière tennis, poker, Dota 2 et Wimbledon.](/images/echecs-argent-02-comparaison-prize-pools.svg)
+
 ## Pourquoi ce déséquilibre existe
 
 ### Une structure organisationnelle fragmentée
@@ -142,6 +144,8 @@ C'est en partie pour cette raison que les plateformes numériques ont transform�
 Pendant des décennies, les échecs ont été financés par des États, notamment l'URSS, qui y voyait un terrain de prestige idéologique. [Bobby Fischer](https://fr.wikipedia.org/wiki/Bobby_Fischer) contre [Boris Spassky](https://fr.wikipedia.org/wiki/Boris_Spassky) en 1972 a attiré l'attention mondiale précisément parce qu'il s'inscrivait dans ce contexte géopolitique. L'État soviétique subventionnait des dizaines de joueurs professionnels, leur offrait des appartements, des salaires, des entraîneurs. Ce duel de 1972, sommet de la guerre froide échiquéenne, est raconté coup par coup dans [*Fischer–Spassky 1972*](https://amzn.to/4fndWQb).
 
 La chute de l'URSS a effondré ce modèle de subvention étatique sans que rien de commercial ne le remplace. Les joueurs des années 1990 et 2000 se sont retrouvés dans un vide économique. Beaucoup de Grand Maîtres de cette génération ont quitté le jeu professionnel pour l'informatique ou la finance - deux domaines où leurs capacités d'analyse étaient monnayables.
+
+![Pyramide économique des Grands Maîtres : une poignée vit du prize money, la majorité vit de l'enseignement.](/images/echecs-argent-01-pyramide-revenus.svg)
 
 ## La révolution numérique : une chance incomplète
 

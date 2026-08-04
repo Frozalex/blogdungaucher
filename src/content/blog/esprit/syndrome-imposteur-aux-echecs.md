@@ -23,6 +23,8 @@ La psychologie du syndrome de l'imposteur repose sur un mécanisme d'attribution
 
 Cette asymétrie crée une comptabilité émotionnelle faussée. Les preuves de compétence s'accumulent dans la colonne "facteurs externes non fiables". Les preuves d'incompétence s'accumulent dans la colonne "facteurs internes permanents". La conclusion est inévitable et toujours la même : "Je ne suis pas vraiment bon."
 
+![Schéma de l'attribution asymétrique du syndrome de l'imposteur : succès attribués à des facteurs externes instables (chance, faiblesse adverse) et échecs à des facteurs internes stables (manque de talent), aboutissant toujours à la même conclusion négative.](/images/imposteur-01-attribution.svg)
+
 En termes cognitifs, c'est ce que [Aaron Beck](https://fr.wikipedia.org/wiki/Aaron_Beck), le fondateur de la thérapie cognitive, appelle une distorsion cognitive : une façon systématiquement biaisée de traiter l'information qui maintient des croyances négatives sur soi-même.
 
 ## Les échecs comme amplificateur du syndrome
