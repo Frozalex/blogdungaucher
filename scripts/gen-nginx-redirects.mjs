@@ -35,6 +35,14 @@ const header = `# ────────────────────�
 #        # attendu : Location: /en/blog/chess-and-women/  (301)
 # ─────────────────────────────────────────────────────────────────────────────
 
+# ── Racine du domaine → langue par défaut (VRAI 301 HTTP) ──
+# Sans ça, l'apex sert dist/index.html : une page meta-refresh + window.location
+# (HTTP 200, 0 contenu). Les crawlers IA qui n'exécutent pas le JS et ne suivent
+# pas le meta-refresh voient une page "Redirection…" vide → "impossible de lire le
+# site". Le 301 same-host /→/fr/ est suivi par tous les bots. Match exact (= /) :
+# n'affecte QUE la racine, jamais /fr/, /en/, /pt-br/…
+location = / { return 301 /fr/; }
+
 # ── Rubrique renommée : Essais → Dissertations ──
 location = /fr/essais/ { return 301 /fr/dissertations/; }
 location = /en/essais/ { return 301 /en/dissertations/; }
