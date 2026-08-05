@@ -96,6 +96,8 @@ Quatre dimensions sont évaluées selon le Bulletin officiel :
 
 C'est l'**épreuve** la plus rentable du **bac** au ratio temps de **préparation** / impact note. Trois **minutes** solides peuvent te faire gagner une mention.
 
+![Structure des 40 minutes du Grand Oral : 20 min de préparation, 5 min d'exposé debout, 10 min d'échange avec le jury, 5 min sur l'orientation post-bac.](/images/guide-go-toutes-01-structure-epreuve.svg)
+
 ## Quelle problématique selon ta spécialité ?
 
 Avant tout script, trouve ta problématique en croisant ton angle disciplinaire avec les échecs.
@@ -111,6 +113,8 @@ Avant tout script, trouve ta problématique en croisant ton angle disciplinaire 
 | **Toutes** *(généraliste)* | *"En quoi les échecs constituent-ils un objet d'étude privilégié des sciences humaines ?"* | Transversalité, interdisciplinarité |
 
 → **Si tu hésites entre deux spécialités**, choisis celle où tu es le plus à l'aise avec les questions-réponses : les 10 minutes de questions jury comptent autant que l'exposé.
+
+![Tableau de correspondance spécialité × problématique recommandée pour le Grand Oral sur les échecs, de Philosophie à STMG, avec la notion-clé à mobiliser dans chaque cas.](/images/guide-go-toutes-02-tableau-specialites.svg)
 
 ---
 
@@ -147,6 +151,8 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 **Deep Blue (1997)** incarne ce déterminisme : il calcule 200 millions de positions par seconde, sans états d'âme, sans fatigue, sans ego blessé. Il 'joue' aux échecs sans sujet joueur. Et il bat Kasparov.*
 
 **Deux lectures sont possibles.** Lecture déterministe : si un programme sans conscience peut battre le meilleur humain, alors l'intelligence aux échecs est réductible à du calcul, et la 'liberté' du joueur n'est qu'une illusion de complexité computationnelle. Lecture libertaire : Deep Blue ne joue pas : il exécute. Kasparov joue, avec tout ce que cela implique de délibération, d'incertitude, d'intention. La performance peut être réductible ; l'expérience ne l'est pas."*
+
+![Kasparov face à Deep Blue en 1997 : d'un côté le joueur humain qui délibère avec intention, de l'autre le programme IBM qui calcule 200 millions de positions par seconde sans conscience, avec le théorème de Zermelo (1913) comme toile de fond.](/images/guide-go-toutes-03-liberte-determinisme.svg)
 
 ---
 
@@ -296,6 +302,8 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 ## Les 5 erreurs à éviter absolument
 
+![Les cinq erreurs classiques au Grand Oral sur les échecs : expliquer les règles, réciter sans conviction, absence de vraie problématique, ignorer les limites, ne pas préparer les questions jury.](/images/guide-go-toutes-04-5-erreurs.svg)
+
 **Erreur 1, Expliquer les règles du jeu.**
 Le jury n'a pas besoin de savoir comment se déplace le fou. Si tu passes 2 minutes à expliquer les règles, tu perds 2 minutes de contenu disciplinaire. Mentionne le jeu comme connu, va directement au concept.
 
@@ -362,6 +370,8 @@ Trois techniques rapides :
 - **Si on te pousse dans tes retranchements**, c'est normal : le **jury** teste ta capacité à raisonner sous pression, pas à tout savoir
 
 ## Check-list de préparation
+
+![Frise de préparation du Grand Oral de J-30 au Jour J : cinq jalons — problématique, script, premier chrono seul, simulation jury hostile, et la veille anti-sèche 5 minutes puis coucher tôt.](/images/guide-go-toutes-05-checklist-j30.svg)
 
 ### J-30 (un mois avant)
 

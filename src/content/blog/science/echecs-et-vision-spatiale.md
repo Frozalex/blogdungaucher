@@ -99,6 +99,8 @@ Les chercheurs distinguent généralement plusieurs composantes :
 
 Ces trois composantes sont toutes sollicitées aux échecs, à des degrés différents selon les phases du jeu.
 
+![Les trois composantes de la cognition spatiale aux échecs : visualisation, mémoire et raisonnement spatial, chacune activée différemment selon la phase de jeu.](/images/echecs-vision-01-trois-composantes.svg)
+
 ## La méta-analyse Tejada-Gallardo (2021)
 
 L'étude la plus rigoureuse sur le lien entre échecs et cognition spatiale est la méta-analyse de Tejada-Gallardo et al. (2021), publiée dans *Educational Psychology Review*.
@@ -127,6 +129,8 @@ Neil Charness (Florida State University) a montré que les grands maîtres const
 
 Ce n'est pas une limitation : c'est une adaptation efficace. Maintenir une représentation complète et précise de toutes les 32 pièces consommerait des ressources cognitives inutilement. Le cerveau expert fait une sélection intelligente basée sur la pertinence.
 
+![Comparaison de la représentation mentale de l'échiquier : le novice tente une image photographique complète (charge élevée, pièces oubliées), le grand maître maintient une représentation schématique centrée sur les pièces critiques.](/images/echecs-vision-02-schematique-vs-photographique.svg)
+
 ### Les chunks spatiaux
 
 La théorie du "chunking" de [Gobet & Simon](https://fr.wikipedia.org/wiki/Fernand_Gobet) s'applique aussi à la dimension spatiale. Les experts ne voient pas 16 pièces noires séparément : ils voient des "structures" : "roque long avec pions intacts", "structure Carlsbad avec double colonne ouverte", "finale R+P vs R". Ces chunks spatiaux sont reconnus en bloc, pas reconstruits pièce par pièce.
@@ -146,6 +150,8 @@ L'étude d'[Atherton et al. (2003)](https://www.sciencedirect.com/science/articl
 ## Les parties à l'aveugle : l'exercice ultime
 
 Les parties à l'aveugle (*blindfold chess*): jouer sans voir l'échiquier, en dictant les coups oralement ou par notation : représentent l'exercice le plus direct de visualisation spatiale aux échecs.
+
+![Les trois niveaux d'entraînement à la visualisation à l'aveugle : du débutant (5-10 coups d'ouverture) à l'avancé (parties complètes), avec les records historiques de Morphy, Pillsbury et Gareyev.](/images/echecs-vision-03-niveaux-aveugle.svg)
 
 Historiquement, les exploits à l'aveugle ont fasciné le public : [Paul Morphy](https://fr.wikipedia.org/wiki/Paul_Morphy) jouait 8 parties simultanées à l'aveugle en 1858. [Harry Nelson Pillsbury](https://fr.wikipedia.org/wiki/Harry_Nelson_Pillsbury) en jouait 12 en 1900. La record actuel, établi par [Timur Gareyev](https://fr.wikipedia.org/wiki/Timur_Gareyev) en 2016, est de 48 parties simultanées à l'aveugle.
 

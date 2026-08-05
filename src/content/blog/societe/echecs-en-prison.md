@@ -81,6 +81,8 @@ La criminologie contemporaine a progressivement déplacé son regard. Derrière 
 
 Ces trois déficits sont précisément les trois axes qu'une partie d'échecs exige de travailler, coup après coup, pendant chaque séance. Quand des éducateurs cherchent des activités pour travailler l'inhibition, la planification et la théorie de l'esprit, ils finissent par poser un échiquier. La convergence est trop précise pour être ignorée.
 
+![Schéma des trois déficits cognitifs liés à la récidive selon Ross et Fabiano : pensée court-termiste, impulsivité, faible théorie de l'esprit.](/images/echecs-prison-01-deficits-cognitifs.svg)
+
 ## Les programmes qui documentent leurs résultats
 
 ### Change Through Chess (Royaume-Uni, depuis 2014)
@@ -94,6 +96,8 @@ Leur approche est explicitement cognitive, pas ludique. Elle structure les sessi
 **Gestion de la frustration** : perdre une pièce, se retrouver dans une position difficile, rester assis et réfléchir au lieu de se lever. L'échiquier oblige à traverser l'adversité dans le calme et à chercher une issue plutôt qu'à fuir ou à s'emporter.
 
 **Modélisation de l'adversaire** : anticiper ce que l'autre va jouer, c'est-à-dire entrer mentalement dans sa perspective. *Que voit-il sur l'échiquier ? Que veut-il ? Que craint-il ?* C'est exactement l'exercice de théorie de l'esprit que les programmes de réhabilitation cherchent à développer.
+
+![Les trois objectifs cognitifs de Change Through Chess mis en correspondance avec les trois déficits de Ross et Fabiano.](/images/echecs-prison-02-objectifs-ctc.svg)
 
 Les rapports publiés entre 2017 et 2023 font état d'effets observés par les éducateurs pénitentiaires : réduction des incidents disciplinaires dans les semaines suivant les sessions, amélioration du comportement en classe carcérale, et dans certains cas, réduction de l'isolement social des participants.
 
@@ -112,6 +116,8 @@ Ces formulations ne sont pas des anecdotes. Elles cartographient exactement les 
 > **Davis LM, et al.** (2013). *Evaluating the Effectiveness of Correctional Education.* RAND Corporation.
 
 Cette étude, portant sur des dizaines de programmes éducatifs dans les prisons américaines, a estimé que les détenus ayant participé à des programmes éducatifs avaient **43 % moins de risques d'être réincarcérés** dans les trois ans suivant leur libération. Elle porte sur l'éducation au sens large, pas les échecs spécifiquement. Mais elle situe les programmes cognitifs dans un cadre où l'effet de la stimulation intellectuelle sur la récidive est maintenant bien documenté.
+
+![Comparaison visuelle du risque de réincarcération dans les trois ans : groupe sans programme éducatif versus groupe avec programme, méta-analyse RAND 2013.](/images/echecs-prison-03-rand-recidive.svg)
 
 ### La France : des initiatives locales, pas de programme national
 
@@ -134,6 +140,8 @@ Chaque activité travaille des dimensions différentes. Ce qui est spécifique a
 **Le jeu est universel et ne respecte pas les hiérarchies préexistantes.** Un détenu sans diplôme peut battre quelqu'un de diplômé. Cette équité du point de départ est un signal fort pour des personnes dont l'expérience sociale a souvent été marquée par des hiérarchies perçues comme inaccessibles ou injustes. Sur un échiquier, personne n'a d'avantage de départ. Tout se construit coup par coup.
 
 **La pensée devient visible.** Aux échecs, on ne peut pas tricher sur la qualité de sa réflexion : la position sur l'échiquier dit tout. Ce caractère transparent de la pensée, ce que j'ai joué révèle comment j'ai raisonné, peut être un levier pédagogique puissant pour amener quelqu'un à observer ses propres patterns de décision.
+
+![Les quatre propriétés spécifiques des échecs en réhabilitation : irréversibilité des coups, domination intellectuelle, équité du départ, pensée rendue visible.](/images/echecs-prison-04-specificite-echecs.svg)
 
 ## Les mêmes mécanismes, d'autres contextes
 

@@ -94,11 +94,15 @@ Cette définition statistique cache une réalité psychologique complexe. Les en
 
 Concrètement : un enfant de 8 ans HPI peut raisonner comme un enfant de 12 ans, mais vivre émotionnellement comme un enfant de 8 ans : voire de 7 ans, si l'environnement ne l'a pas aidé à développer sa maturité émotionnelle. Cette dyssynchronie crée des tensions particulières : l'enfant comprend intellectuellement des situations complexes mais ne dispose pas encore des ressources émotionnelles pour y répondre.
 
+![Courbes de développement chez l'enfant HPI : le développement intellectuel dépasse nettement le développement affectif, créant un écart qui se maintient avec l'âge.](/images/echecs-hpi-01-dyssynchronie.svg)
+
 Terrassier distingue également deux profils de HPI :
 - **Le profil "harmonieux"** : développement intellectuel avancé, bonnes compétences sociales, épanouissement relatif. Ces enfants s'adaptent généralement bien aux environnements variés.
 - **Le profil "complexe"** : développement intellectuel avancé combiné à une hypersensibilité émotionnelle, des difficultés d'intégration sociale, et parfois de l'anxiété. Ces enfants ont besoin d'environnements particulièrement bien adaptés.
 
 Cette distinction est fondamentale pour comprendre comment les échecs peuvent être vécus différemment selon le profil.
+
+![Comparaison des deux profils HPI selon Terrassier : profil harmonieux adapté aux échecs avec encadrement standard, profil complexe nécessitant un encadrement spécifique et présentant un risque de perfectionnisme élevé.](/images/echecs-hpi-02-profils-terrassier.svg)
 
 ## Pourquoi l'échiquier correspond aux besoins HPI
 
@@ -148,6 +152,8 @@ La recherche sur la gestion du perfectionnisme chez les HPI converge vers quelqu
 
 **Le rituel post-défaite.** Établir un protocole d'analyse systématique après chaque défaite (noter une chose bien jouée et une chose à améliorer) transforme la défaite en donnée plutôt qu'en verdict.
 
+![Cycle du perfectionnisme HPI aux échecs : des standards impossibles à l'auto-critique, à l'évitement des tournois, au blocage du développement. Trois points de rupture pour briser ce cycle.](/images/echecs-hpi-04-perfectionnisme-cycle.svg)
+
 ## HPI et performance : ce que la recherche dit
 
 L'intuition populaire ("les surdoués sont naturellement meilleurs aux échecs") mérite d'être confrontée aux données.
@@ -161,6 +167,8 @@ L'étude de [David Hambrick](https://msu.edu/~hambrick/) et ses collègues (2014
 Ces chiffres nuancent fortement l'idée que les HPI sont naturellement supérieurs aux échecs. Un enfant à QI 110 qui s'entraîne sérieusement 3 heures par semaine progressera plus vite qu'un enfant à QI 140 qui joue une fois de temps en temps.
 
 Ce résultat est important à communiquer aux parents et aux enfants HPI eux-mêmes : les échecs ne récompensent pas automatiquement le potentiel. Ils récompensent le travail. Cette réalité peut être difficile à accepter pour un enfant HPI habitué à réussir facilement à l'école, mais c'est aussi l'une des leçons les plus précieuses que les échecs peuvent enseigner.
+
+![Diagramme en barres montrant la part de variance expliquée dans la performance aux échecs selon Hambrick 2014 : la pratique délibérée domine largement devant le QI et la mémoire de travail.](/images/echecs-hpi-03-hambrick-qi-pratique.svg)
 
 ## Le club d'échecs comme espace social adapté
 

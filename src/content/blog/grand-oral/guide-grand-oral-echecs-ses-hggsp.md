@@ -117,6 +117,8 @@ Le **jury** SES/HGGSP attend davantage que les **jurys** scientifiques :
 - **Une nuance critique** : ne jamais accepter une thèse sans la contredire au moins partiellement
 - **Un lien avec un thème** du programme (mondialisation, **conflits**, **mémoire**, **patrimoine**)
 
+![Les trois formes de puissance de Joseph Nye (hard, soft, smart power) appliquées aux échecs comme instrument d'influence.](/images/guide-go-ses-hggsp-01-soft-power.svg)
+
 ## Choisir ta problématique : trois angles solides
 
 En SES ou HGGSP, la problématique doit articuler les échecs avec des concepts du **programme**. L'objectif : montrer que tu maîtrises les outils de la discipline : pas juste l'**histoire** des échecs.
@@ -152,6 +154,8 @@ Cet angle est plus rare et très différenciant. Il s'inscrit dans le **thème**
 - **HGGSP forte, profil littéraire** : angle D (**mémoire** et **histoire**)
 - **Pour viser Sciences Po** : angle C ou D, mieux valorisés en concours
 
+![Les trois états du capital culturel de Bourdieu appliqués aux échecs : incorporé, objectivé, institutionnalisé.](/images/guide-go-ses-hggsp-02-capital-culturel-bourdieu.svg)
+
 ## Autres idées de sujets Grand Oral SES/HGGSP
 
 Pour situer le **choix** des échecs par rapport aux autres **sujets Grand Oral** possibles dans ces **spécialités**, voici un panorama des **idées de sujets** les plus solides :
@@ -178,6 +182,8 @@ Trois critères distinguent un bon **sujet** Grand Oral SES/HGGSP :
 
 Les échecs cochent les trois. La crise de 2008 coche le 1 et 2 mais est sur-traitée. Les **réseaux** sociaux cochent le 1 mais souffrent souvent d'un manque de **données** précises chez les candidats.
 
+![L'économie des superstars de Rosen : une poignée de joueurs capte l'essentiel des revenus du circuit.](/images/guide-go-ses-hggsp-03-economie-superstars.svg)
+
 ## Construire ta problématique : méthode pas à pas
 
 ### Étape 1, Identifier le concept central
@@ -195,6 +201,8 @@ Prends une feuille, écris ta problématique en haut, et essaie de lister 3 argu
 ### Étape 4, Vérifier le lien avec ton orientation
 
 Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « voilà pourquoi je veux étudier les sciences sociales ». Si tu vises une école de commerce, vers « voilà pourquoi je veux étudier la stratégie ».
+
+![Fischer-Spassky 1972 : la fin de l'hégémonie soviétique aux échecs, épisode marquant de la guerre froide.](/images/guide-go-ses-hggsp-04-fischer-spassky.svg)
 
 ## Script minuté pour 10 minutes, Angle C (guerre froide et influence)
 
@@ -248,6 +256,8 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > 
 > *La vraie **question** pour aujourd'hui : dans un monde où les plateformes remplacent les États comme vecteurs d'influence culturelle, qui contrôle réellement le **patrimoine** des échecs, et au bénéfice de qui ? »*
 
+![L'hégémonie échiquéenne soviétique comme politique d'État : investissement massif converti en domination et prestige idéologique.](/images/guide-go-ses-hggsp-06-hegemonie-sovietique.svg)
+
 ## Variantes pour les autres angles
 
 ### Variante Angle A (économie du marché des talents)
@@ -270,6 +280,8 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 - **Partie 2 :** les **patrimoines** échiquéens, Reykjavik aujourd'hui, musée de l'échec à Saint-Pétersbourg, exposition Cooper-Hewitt
 - **Partie 3 :** la **mémoire** numérique : base Lichess de 4 milliards de parties, **histoire** sous forme de **données** massives
 - **Sources clés :** Pierre Nora (« Les Lieux de **mémoire** ») applicable, **histoire** du Champ-de-Mars, etc.
+
+![La plateformisation du marché des échecs : des clubs et fédérations aux plateformes numériques après 2020.](/images/guide-go-ses-hggsp-05-plateformisation.svg)
 
 ## Anticiper l'épreuve : 25 questions de jury rédigées
 

@@ -113,6 +113,8 @@ New York, Los Angeles, Chicago : de nombreuses grandes villes américaines ont d
 
 La Russie, la Géorgie, et l'Allemagne ont des programmes d'échecs intégrés dans certains établissements. En France, la [Fédération Française des Échecs](https://www.echecs.asso.fr) gère un programme "Échecs et Mathématiques" en partenariat avec l'Éducation nationale, présent dans plusieurs académies mais non obligatoire.
 
+![Cartographie des grands programmes d'échecs scolaires dans le monde : Arménie obligatoire, Venezuela pionnier, États-Unis et Europe en initiatives partielles.](/images/echecs-ecole-01-programmes-mondiaux.svg)
+
 ## La méta-analyse Sala & Gobet : la référence scientifique
 
 [Giovanni Sala](https://www.livjm.ac.uk/research/faculty-of-science/psychology/giovanni-sala/) et Fernand Gobet ont produit la synthèse scientifique la plus rigoureuse sur les effets des échecs à l'école. Leurs deux méta-analyses sont incontournables.
@@ -127,6 +129,8 @@ Cette méta-analyse analyse **24 études** portant sur des programmes d'échecs 
 - **Méta-cognition** : *d* = 0.49 (effet moyen)
 
 La conclusion de Sala & Gobet (2016) est encourageante : "l'instruction aux échecs semble améliorer les compétences cognitives et scolaires chez les enfants". Mais ils ajoutent une nuance critique : **la qualité méthodologique des études est généralement faible**, avec peu d'études avec assignation aléatoire et groupes de contrôle strictement comparables.
+
+![Tailles d'effet de la méta-analyse Sala et Gobet 2016 : cognition globale, méta-cognition, mathématiques et lecture, avec mise en garde sur la méta-analyse 2017.](/images/echecs-ecole-02-sala-gobet-effets.svg)
 
 ### Méta-analyse 2017 (Current Directions in Psychological Science)
 
@@ -146,6 +150,8 @@ Mais le transfert est plus difficile qu'on ne le pense parce que le cerveau est 
 
 C'est là que la qualité pédagogique fait toute la différence. Un programme d'échecs qui se contente d'enseigner les règles et de faire jouer les enfants produira peu de transfert. Un programme qui explique comment l'analyse d'une position (identifier les menaces, évaluer les forces et faiblesses, planifier) ressemble à la résolution d'un problème de maths ou à la compréhension d'un texte : celui-là peut produire un transfert réel.
 
+![Schéma comparant deux situations : sans instruction explicite le transfert cognitif est faible, avec instruction explicite qui nomme les liens vers les maths et la lecture le transfert devient réel.](/images/echecs-ecole-03-transfert-cognitif.svg)
+
 ## Les fonctions exécutives : le bénéfice le plus solide
 
 Si le transfert direct vers les notes scolaires est discuté, un consensus plus solide se dessine autour des **fonctions exécutives** (FE).
@@ -155,6 +161,8 @@ Les FE sont un ensemble de compétences cognitives de haut niveau gérées princ
 Ces quatre compétences sont directement sollicitées par les échecs. Et leur développement a un effet prouvé sur la réussite scolaire, indépendamment du QI (Diamond, 2013, *Annual Review of Psychology*).
 
 L'étude de [Dania et al. (2021)](https://www.mdpi.com/2076-3425/11/10/1330), menée sur 26 athlètes scolarisés pendant 10 semaines, a montré des améliorations significatives de la mémoire de travail et de l'attention sélective dans le groupe échecs par rapport au groupe contrôle. C'est une taille d'échantillon modeste, mais le design (RCT) est solide.
+
+![Les quatre fonctions exécutives sollicitées par les échecs : planification, inhibition, flexibilité cognitive et mémoire de travail, avec leur équivalent échiquéen concret.](/images/echecs-ecole-04-fonctions-executives.svg)
 
 ## Ce qu'un bon programme scolaire doit inclure
 

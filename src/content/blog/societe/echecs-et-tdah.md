@@ -74,6 +74,8 @@ Luca peut passer une heure à construire une ville entière en Lego. Il peut reg
 
 Les fonctions exécutives comprennent l'inhibition des réponses impulsives (résister à une impulsion immédiate), la mémoire de travail (garder en tête plusieurs informations en même temps), la flexibilité mentale (changer de plan quand le contexte change), et la planification à terme (voir les conséquences à plusieurs coups de distance).
 
+![Les quatre fonctions exécutives selon Barkley (1997) : inhibition, mémoire de travail, flexibilité, planification — chacune mise en déficit par le TDAH et sollicitée à chaque coup aux échecs.](/images/echecs-tdah-01-fonctions-executives.svg)
+
 Ces quatre fonctions sont précisément celles que les échecs sollicitent à chaque coup, dans chaque partie, pendant toute la séance. (La dimension [concentration](/fr/blog/echecs-et-concentration/) fait l'objet d'une analyse dédiée.) Le parallèle est direct.
 
 ## La biologie derrière l'inconsistance
@@ -85,6 +87,8 @@ Pourquoi le cerveau TDAH fonctionne-t-il si différemment selon l'activité ? [X
 Les déficits de [dopamine](/fr/blog/echecs-et-dopamine/) et de noradrénaline dans le cerveau TDAH touchent spécifiquement les circuits de récompense et d'inhibition. Ces circuits répondent différemment selon le type de stimulation. Une tâche abstraite avec une récompense lointaine (apprendre une leçon pour un examen dans trois semaines) active ces circuits faiblement. Une activité à récompense immédiate (chaque coup change la position de façon visible et irréversible), avec des règles parfaitement stables et un enjeu tangible (gagner ou perdre cette partie, maintenant), les active beaucoup plus fortement.
 
 Ce n'est pas que Luca est paresseux. C'est que son cerveau a besoin d'un carburant que l'école, dans sa forme actuelle, ne lui fournit souvent pas.
+
+![Comparaison neurobiologique : le cerveau TDAH répond faiblement à la récompense lointaine d'une tâche scolaire abstraite et fortement au retour immédiat d'un coup d'échecs visible.](/images/echecs-tdah-02-dopamine-stimulation.svg)
 
 **La phrase que les parents de Luca ont retenue :** *Le cerveau TDAH ne manque pas de carburant. Il a besoin du bon carburant au bon moment.*
 
@@ -101,6 +105,8 @@ Il existe des dizaines d'activités qui pourraient en théorie aider les enfants
 **4. Engagement social borné.** Jouer contre quelqu'un crée un niveau d'attention sociale, le désir de ne pas "lâcher" l'adversaire, qui est un moteur puissant pour des personnes qui peinent à maintenir l'effort dans des tâches solitaires. Contrairement aux interactions sociales habituelles, cette interaction est entièrement cadrée : il n'y a pas à interpréter les expressions du visage, les sous-entendus, les règles implicites. Il y a juste la position.
 
 **5. L'inhibition comme compétence centrale.** Aux échecs, résister à la capture d'une pièce apparemment gratuite pour calculer si c'est un piège est une forme d'entraînement direct à l'inhibition. Cette fonction exécutive est précisément celle qui fait le plus défaut dans le TDAH. L'échiquier la sollicite des dizaines de fois par partie, dans un contexte où l'enjeu est réel mais les conséquences restent bénignes.
+
+![Les cinq conditions de l'échiquier qui favorisent l'engagement du cerveau TDAH : retour immédiat, règles stables, structure bornée, social cadré, inhibition entraînée.](/images/echecs-tdah-03-echiquier-conditions.svg)
 
 ## Ce que la recherche dit (et ce qu'elle ne dit pas encore)
 
@@ -123,6 +129,8 @@ Une question légitime : le sport ne fait-il pas la même chose ? Il a des règl
 La différence tient dans la nature de l'inhibition sollicitée. Au football, la bonne décision est souvent la décision rapide : voir, décider, tirer. Inhiber une impulsion au football revient parfois à dribbler quand il faudrait passer, un apprentissage réel, mais d'une autre nature.
 
 Aux échecs, la bonne décision est presque toujours la décision lente : voir, freiner l'impulsion du premier coup qui semble évident, calculer, puis décider. Chaque partie est une longue suite d'occasions où l'impulsion doit être inhibée pour laisser la réflexion faire son travail.
+
+![Comparaison de l'inhibition au sport et aux échecs : au football la décision rapide est souvent juste, aux échecs il faut presque toujours freiner le premier coup évident pour calculer.](/images/echecs-tdah-04-inhibition-sport-echecs.svg)
 
 Pour un enfant TDAH dont le problème central est l'impulsivité, cette différence est fondamentale.
 

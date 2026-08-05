@@ -99,6 +99,8 @@ Gobet & Simon ont estimé qu'un joueur professionnel stocke dans sa mémoire à 
 
 C'est comme apprendre à lire : un enfant épelle lettre par lettre, toi tu lis "MAISON" comme un bloc. Les grands maîtres "lisent" l'échiquier. Ce mécanisme est particulièrement intéressant pour certains profils cognitifs ; voir [Échecs et autisme](/fr/blog/echecs-et-autisme/).
 
+![Le chunking selon Gobet et Simon : un novice mémorise 8 pièces isolées saturant sa mémoire de travail, tandis qu'un Grand Maître reconnaît 3 blocs de configuration familiers parmi ses 50 000 à 300 000 chunks stockés.](/images/echecs-cerveau-01-chunking.svg)
+
 ## Ce qui s'illumine sous un scanner IRMf
 
 La psychologie cognitive explique le comportement ; l'imagerie cérébrale permet de voir le cerveau en action. Des chercheurs ont placé des joueurs de différents niveaux dans des appareils d'IRM fonctionnelle (IRMf) pour observer quelles zones s'activaient pendant qu'ils résolvaient des problèmes tactiques.
@@ -106,6 +108,8 @@ La psychologie cognitive explique le comportement ; l'imagerie cérébrale perme
 **Atherton et al. (2003)**, dans *Cognitive Brain Research* (**123 citations**), ont été parmi les premiers à documenter systématiquement ces différences. Leur résultat : une activation **bilatérale** des lobes frontaux supérieurs, pariétaux et occipitaux pendant la résolution de problèmes d'échecs, avec une prédominance de l'hémisphère gauche. Chez les novices, c'est le lobe temporal médian qui s'allume de façon spectaculaire : une région fortement impliquée dans la formation de nouvelles mémoires. Chez l'expert, ce sont les cortex frontal et pariétal qui prennent le relais : l'expert ne "cherche" pas la solution dans l'effort brut, il **"récupère"** la solution dans sa base de données neuronale.
 
 Ce transfert de charge de travail (du calcul conscient lent, système 2 de Kahneman, vers la reconnaissance visuelle rapide, système 1) est mesurable, reproductible, et constitue l'une des preuves les plus solides de l'effet structurant de la pratique des échecs sur le cerveau.
+
+![IRMf pendant une tâche d'échecs selon Atherton 2003 : chez le novice le lobe temporal médian s'allume fortement pour former de nouvelles mémoires, tandis que chez l'expert ce sont les cortex frontal et pariétal qui prennent le relais pour récupérer la solution.](/images/echecs-cerveau-02-irmf-activation.svg)
 
 ## Architecture structurelle : quand la matière grise change
 
@@ -151,6 +155,8 @@ La connectivité fonctionnelle n'est pas statique. Elle fluctue second par secon
 
 Les professionnels **traversent davantage de configurations cérébrales distinctes** et se déplacent plus loin dans l'espace des méta-états. Leur cerveau est fonctionnellement **plus fluide**, capable de passer rapidement d'un mode cognitif à un autre, ce qui correspond intuitivement à la capacité à switcher entre calcul précis, évaluation intuitive, gestion émotionnelle et planification à long terme pendant une partie.
 
+![Chronnectome selon Premi et al. 2020 : les pros traversent 75,8 méta-états distincts contre 68,8 pour les débutants, et parcourent une distance totale de 131,7 contre 108,7 dans l'espace des états cérébraux (p=0,0004).](/images/echecs-cerveau-03-chronnectome.svg)
+
 ## Le connectome cognitif : une architecture en trois modules
 
 Jusqu'ici, les études comparaient des mesures isolées. **Gonzalez-Burgos et al. (2024)**, dans *Frontiers in Psychology* (Q2, **4 citations**), ont adopté une approche de théorie des graphes sur des **données cognitives** (pas cérébrales) pour cartographier l'architecture cognitive globale de **19 joueurs d'échecs et 19 contrôles** âgés de 39 à 69 ans.
@@ -192,6 +198,8 @@ Une revue de la littérature honnête doit mentionner les limites. **Sala & Gobe
 
 Autrement dit : plus le design contrôle rigoureusement les biais, plus l'effet estimé diminue. Le "transfert lointain" vers des domaines non liés (calcul mental, lecture, créativité) reste faible. Ce que les études contrôlées montrent, c'est surtout un **transfert proche** : mémoire de travail spatiale, planification visuo-spatiale, inhibition dans des contextes proches des échecs.
 
+![Sala et Gobet 2017 (méta-analyse, 259 citations) : l'effet estimé des échecs sur les compétences cognitives décline à mesure que la qualité du design expérimental augmente, de grand (sans contrôle) à faible (contrôle actif rigoureux).](/images/echecs-cerveau-04-transfert-qualite.svg)
+
 ## Vieillissement et réserve cognitive
 
 Si les échecs modifient la façon dont ton cerveau traite l'information, ont-ils un impact sur la santé globale de ta matière grise à long terme ? C'est ici qu'intervient la notion de **réserve cognitive**.
@@ -201,6 +209,8 @@ Si les échecs modifient la façon dont ton cerveau traite l'information, ont-il
 En forçant le cerveau à analyser, calculer, mémoriser des ouvertures et résoudre des problèmes sous contrainte de temps, la pratique favorise la création de nouvelles connexions. Cette densité neuronale accrue constitue ce que la littérature appelle une **réserve cognitive** : un réseau routier dense qui permet de trouver des chemins alternatifs quand des lésions ou le vieillissement bloquent les routes principales.
 
 La **revue systématique de Williams et al. (2025)**, dans *Brain Mechanisms* (**2 citations**, la plus récente du corpus), synthétise les études d'imagerie cérébrale comparant experts et novices. Elle confirme que l'expertise aux échecs est associée à des changements **structurels et fonctionnels** qui renforcent les performances cognitives, et note que ces changements ont un potentiel bénéfique pour des domaines comme le contrôle des impulsions et l'autorégulation. Les auteurs soulignent néanmoins les limites des designs observationnels et l'absence d'essais randomisés sur le vieillissement cognitif.
+
+![Réserve cognitive et démence selon Verghese et al. NEJM 2003 (n=469, suivi 5 ans) : un cerveau peu entraîné se retrouve en impasse face à une lésion, un cerveau riche en connexions trouve un itinéraire bis — association de −74 % de risque de démence pour les pratiquants de jeux de plateau.](/images/echecs-cerveau-05-reserve-cognitive.svg)
 
 ## Au-delà de la mémoire : la gestion de l'incertitude et des émotions
 

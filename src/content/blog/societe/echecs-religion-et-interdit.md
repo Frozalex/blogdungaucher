@@ -105,6 +105,8 @@ Le troisième grief, plus subtil, concerne **les passions**. Les échecs réveil
 
 Retenez ces trois axes (argent, temps, passions), car ils expliquent presque tout. Là où ils sont présents, l'interdit tombe. Là où on parvient à les retirer, le jeu est gracié.
 
+![Les trois griefs religieux contre les échecs communs à toutes les traditions : l'argent misé, le temps soustrait à la prière, les passions de la compétition.](/images/echecs-religion-01-trois-griefs.svg)
+
 ## La chrétienté médiévale : l'Église contre l'échiquier
 
 Les échecs arrivent en Europe occidentale autour de l'an mille, par l'Espagne musulmane et l'Italie du Sud. Leur diffusion est rapide dans l'aristocratie : c'est un jeu de cour, un marqueur de raffinement. L'Église réagit presque aussitôt.
@@ -117,6 +119,8 @@ Le sommet de cette défiance est sans doute l'**ordonnance de Saint Louis**, en 
 
 À chaque fois, on retrouve nos trois axes : l'assimilation au pari (l'argent), le détournement des devoirs (le temps), et l'idée que le jeu nourrit des passions indignes d'un chrétien.
 
+![Chronologie des interdits et réhabilitations religieuses des échecs : de Pierre Damien en 1061 à la fatwa saoudienne de 2016, avec les réhabilitations de Cessoles (1300) et Khomeini (1988).](/images/echecs-religion-02-chronologie-interdits.svg)
+
 ## Le retournement : l'échiquier devient une leçon de morale
 
 Et puis, quelque chose bascule. Au lieu de combattre frontalement un jeu impossible à éradiquer, des religieux choisissent de le **retourner**. Si l'on ne peut empêcher les fidèles de jouer, qu'au moins le jeu leur enseigne la vertu.
@@ -126,6 +130,8 @@ L'artisan de cette ruse est un dominicain, **Jacques de Cessoles**, qui rédige 
 Le procédé est génial : il ne nie pas le jeu, il le moralise. Les échecs cessent d'être une vanité pour devenir un **miroir du bon gouvernement**. Le traité circule dans toute l'Europe en d'innombrables copies, traductions et adaptations. Lorsque l'imprimerie arrive, **William Caxton** en publie une version anglaise, *The Game and Playe of the Chesse*, vers 1474 : c'est l'un des tout premiers livres imprimés en langue anglaise. Symbole frappant : le jeu jadis voué au bûcher devient l'un des premiers objets de la culture imprimée.
 
 À partir de là, la cause est entendue dans l'Occident chrétien. Le jeu reste parfois suspect quand on y mise de l'argent, mais l'échiquier en lui-même est blanchi. Il deviendra même, à la Renaissance puis aux Lumières, un emblème d'intelligence et de civilité, la racine lointaine de sa place actuelle dans [la culture populaire](/fr/blog/echecs-et-culture-populaire/).
+
+![La ruse de Cessoles vers 1300 : transformer l'échiquier en allégorie morale où chaque pièce représente un ordre social, réhabilitant ainsi le jeu aux yeux de l'Église.](/images/echecs-religion-03-cessoles-moralisation.svg)
 
 <figure>
   <img src="/images/blog/religion-templiers-echecs.jpg" alt="Deux chevaliers du Temple jouant aux échecs, enluminure du Libro de los juegos (1283)." width="555" height="325" loading="lazy" decoding="async" />
@@ -143,6 +149,8 @@ Leur examen ne porte pas sur l'échiquier mais, là encore, sur ce qui l'entoure
 Les écoles juridiques divergent. L'**école chaféite** se montre la plus accommodante (la tradition rapporte que l'imam al-Chafi'i lui-même pratiquait), tandis que d'autres courants penchent vers la réprobation, classant le jeu comme déconseillé (*makruh*), voire illicite. Cette pluralité explique l'oscillation des siècles suivants : aucune position unique ne s'impose à l'islam tout entier.
 
 L'époque contemporaine en offre deux illustrations spectaculaires et opposées. En Iran, la révolution de 1979 entraîne une mise à l'écart des échecs, soupçonnés d'être un jeu de pari ; puis, en **1988, l'ayatollah Khomeini émet une fatwa qui les autorise** dès lors qu'ils ne servent pas au jeu d'argent, décision qui relance toute une école iranienne. À l'inverse, en **janvier 2016, le grand mufti d'Arabie saoudite, cheikh Abdulaziz Al ash-Sheikh, déclare les échecs illicites**, « gaspillage de temps et d'argent » et germe d'inimitié. Mais l'avis ne se traduit par aucune interdiction effective : la fédération saoudienne précise qu'il n'a pas force de loi, et un tournoi se tient peu après. La condamnation morale et l'interdiction réelle, une fois de plus, ne coïncident pas.
+
+![L'oscillation de l'islam face aux échecs : trois conditions de licéité et deux positions contemporaines opposées, fatwa Khomeini (Iran 1988, jeu autorisé) contre fatwa du grand mufti (Arabie saoudite 2016, jeu illicite).](/images/echecs-religion-04-islam-oscillation.svg)
 
 ## La Russie orthodoxe : interdit par l'Église, adoré par le peuple
 

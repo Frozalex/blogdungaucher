@@ -101,6 +101,8 @@ Les statistiques de la [Fédération Internationale des Échecs](https://fr.wiki
 
 Cette écrasante sous-représentation à la base de la pyramide est le point de départ de tout le problème. Imaginez une école où 90 % des élèves qui étudient la musique sont des garçons. Statistiquement, il est évident que 90 % (voire plus) des prodiges qui en sortiront seront des garçons. L'écart de genre aux échecs n'est pas seulement un problème d'élite ; c'est avant tout un désert démographique à la racine même de la discipline.
 
+![Pyramide de participation aux échecs par genre : les femmes représentent 10 à 15 % des licenciés à la base, ce qui se traduit par moins de 3 % des titres de Grand Maître au sommet.](/images/echecs-femmes-01-pyramide-participation.svg)
+
 ### Le club d'échecs local comme miroir d'un monde genré
 
 Dans presque tous les clubs locaux, une petite fille qui pousse la porte se retrouve plongée dans un environnement ultra-masculin, entourée d'hommes de tous âges. Très vite, le jeu d'échecs, qui devrait être universel et asexué par nature, est codé socialement comme une "activité de garçons". Cette réalité mathématique têtue des effectifs est le premier mur contre lequel butent les jeunes joueuses.
@@ -117,6 +119,8 @@ La réponse statistique est écrasante. Bilalić a démontré que l'immense majo
 
 Le simple fait qu'ils soient dix fois plus nombreux au départ justifie mathématiquement qu'ils occupent presque toutes les places au sommet. La quantité engendre l'excellence extrême. S'il y avait autant de petites filles que de petits garçons inscrits dans les écoles d'échecs, le top 10 mondial aurait un visage radicalement différent.
 
+![Visualisation du biais de participation selon Bilalić (2009) : deux distributions de talent identiques, mais un vivier masculin neuf fois plus grand produit mécaniquement beaucoup plus d'éléments d'extrême droite dans la courbe.](/images/echecs-femmes-02-biais-participation-bilalic.svg)
+
 ### La géographie comme contre-expérience naturelle
 
 Cependant, le débat scientifique n'est jamais clos. D'autres chercheurs, comme Robert W. Howard dans le *Journal of Biosocial Science* (2014), ont nuancé cette approche en observant des pays comme la [Géorgie](https://fr.wikipedia.org/wiki/G%C3%A9orgie_(%C3%89checs)), où les femmes sont très fortement encouragées à jouer et représentent près de 32 % des joueurs internationaux. Même là, l'écart de performance au plus haut niveau persiste, suggérant que le taux de participation, s'il explique beaucoup, n'est peut-être pas l'unique variable de l'équation.
@@ -132,6 +136,8 @@ Une étude publiée par la prestigieuse *Econometric Society* (Backus, Cubel et 
 ### La menace du stéréotype : un poison cognitif silencieux
 
 Comment expliquer cette chute de performance ciblée chez les femmes ? Par un phénomène psychologique bien documenté : [la menace du stéréotype](https://fr.wikipedia.org/wiki/Menace_du_st%C3%A9r%C3%A9otype) (*stereotype threat*), théorisé par les psychologues [Claude Steele](https://fr.wikipedia.org/wiki/Claude_Steele) et Joshua Aronson de l'[Université Stanford](https://fr.wikipedia.org/wiki/Universit%C3%A9_Stanford).
+
+![Mécanisme de la menace du stéréotype : face à un adversaire masculin, une partie de la bande passante cognitive de la joueuse est consommée par l'angoisse de confirmer le préjugé, dégradant la qualité des coups joués.](/images/echecs-femmes-03-menace-stereotype.svg)
 
 Quand une femme joue aux échecs contre un homme, elle ne combat pas seulement la position sur le plateau. Elle se bat, inconsciemment, contre le poids du préjugé social qui dit que "les femmes sont moins bonnes aux échecs". Cette angoisse de confirmer le stéréotype consomme de la bande passante cognitive précieuse, de l'énergie mentale qui n'est plus disponible pour calculer des variantes. Le mécanisme général : comment une pression psychologique externe dégrade la qualité de la prise de décision pendant une partie : est analysé dans [la psychologie du joueur d'échecs](/blog/psychologie-du-joueur-d-echecs/).
 
@@ -200,6 +206,8 @@ L'argument inverse est tout aussi solide. En maintenant un circuit séparé, la 
 
 De plus, les titres féminins de la FIDE sont obtenus à des niveaux de performance significativement inférieurs aux titres masculins équivalents. Une WGM (Grand Maître féminine) a un Elo requis de 2300, là où un GM masculin en nécessite 2500. Cette asymétrie structurelle institutionnalise l'idée d'une infériorité de performance, même quand cette infériorité n'est pas intrinsèque mais statistiquement construite.
 
+![Asymétrie des seuils Elo FIDE : le titre WGM (Grand Maître féminin) s'obtient à 2300 Elo, contre 2500 pour le GM masculin, soit un écart institutionnalisé de 200 points.](/images/echecs-femmes-04-titres-fide-asymetrie.svg)
+
 ### La voie du milieu : encourager sans enfermer
 
 La solution la plus raisonnable semble être une position nuancée : maintenir des circuits féminins comme tremplins d'exposition et de financement à court terme, tout en investissant massivement dans l'inclusion mixte dès l'enfance. L'objectif final n'est pas d'avoir plus de tournois féminins, mais d'en avoir un jour si peu besoin que leur existence devient anecdotique, parce que les femmes représentent enfin 40 ou 50 % des joueurs de compétition.
@@ -217,6 +225,8 @@ Des données anecdotiques et plusieurs enquêtes de communauté suggèrent que l
 Si le constat actuel reste difficile, les lignes sont incontestablement en train de bouger. Le monde des échecs vit une mutation démographique silencieuse mais puissante, portée par un événement culturel majeur : la sortie de la série Netflix [*Le Jeu de la Dame*](https://fr.wikipedia.org/wiki/Le_Jeu_de_la_Dame_(série_télévisée)) (*The Queen's Gambit*) en octobre 2020.
 
 Le personnage fictif de Beth Harmon, affrontant des salles entières de joueurs masculins russes avec une froideur assassine, a eu un impact réel, massif et mesurable sur la pratique féminine. Les plateformes d'échecs en ligne ont enregistré une explosion historique des inscriptions de femmes et de jeunes filles dans les mois qui ont suivi. Les fédérations nationales ont vu affluer de nouvelles licenciées. Soudain, l'imaginaire collectif venait de produire un modèle de réussite féminine "cool", brillante et impitoyable aux échecs.
+
+![Courbe des nouvelles inscriptions féminines sur les plateformes d'échecs en ligne autour de la sortie de la série Le Jeu de la Dame sur Netflix en octobre 2020 : pic d'environ deux fois la normale dans les mois suivants.](/images/echecs-femmes-05-effet-netflix.svg)
 
 ### Pourquoi les modèles de représentation comptent autant
 

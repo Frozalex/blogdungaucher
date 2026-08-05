@@ -47,6 +47,8 @@ Cette analogie a des conséquences profondes. Elle invalide ce que Wittgenstein 
 
 Mais l'analogie a aussi des limites que Wittgenstein reconnaît lui-même. Les règles du langage sont beaucoup moins stables, précises et consensuelles que les règles des échecs. On peut toujours se demander si on "joue" au même jeu de langage que son interlocuteur. Aux échecs, on sait. Dans une conversation philosophique, c'est beaucoup moins certain.
 
+![Wittgenstein et les échecs : un cavalier en bois et un bouchon de bouteille ont la même signification dans le jeu si les deux joueurs reconnaissent les mêmes règles — la forme importe moins que l'usage.](/images/echecs-philosophie-01-wittgenstein-usage.svg)
+
 ## Hegel et la dialectique du jeu
 
 Georg Wilhelm Friedrich Hegel n'a pas commenté les échecs directement de manière extensive, mais sa philosophie de la dialectique offre un cadre particulièrement adapté pour comprendre la structure d'une partie.
@@ -58,6 +60,8 @@ Une partie d'échecs a une structure dialectique profonde. Blanc joue un coup (t
 Ce mouvement se répète à chaque coup, sur toute la durée de la partie. Ce n'est pas une série de décisions indépendantes mais un déploiement dynamique dans lequel chaque moment est à la fois la conséquence des moments précédents et le point de départ des moments suivants.
 
 Hegel dirait que la partie d'échecs est un bel exemple de ce qu'il appelle l'"esprit objectif" : la raison qui se déploie dans et par des institutions et des pratiques partagées. Les deux joueurs ne poursuivent pas des buts opposés de manière externe : ils co-construisent une forme de vérité positionnelle à travers leur confrontation.
+
+![La dialectique hégélienne appliquée à une partie d'échecs : le coup de Blanc (thèse), la réponse de Noir (antithèse) et la nouvelle position résultante (synthèse) forment un cycle qui se répète à chaque coup.](/images/echecs-philosophie-02-dialectique-hegel.svg)
 
 ## Sartre : la liberté dans la nécessité
 
@@ -82,6 +86,8 @@ Mais cette objectivité est-elle absolue ou contextuelle ? Elle est absolue dans
 Le philosophe Thomas Nagel distingue les vérités "from nowhere" (valables indépendamment de tout point de vue) et les vérités "from somewhere" (valables dans un cadre donné). Le "meilleur coup aux échecs" est une vérité from somewhere : objectif dans le cadre des échecs, mais relatif à ce cadre.
 
 Cette distinction a des implications pour la pensée stratégique en général. Toute décision "optimale" est optimale par rapport à un objectif. Clarifier l'objectif est souvent plus important que d'optimiser les moyens.
+
+![La distinction de Nagel entre vérité absolue et vérité relative à un cadre : le meilleur coup aux échecs est objectif dans les règles standard mais change entièrement si l'objectif du jeu est modifié.](/images/echecs-philosophie-03-objectivite-nagel.svg)
 
 ## Les échecs comme limite de la pensée formelle
 

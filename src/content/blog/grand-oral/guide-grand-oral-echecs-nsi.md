@@ -207,6 +207,8 @@ Si tu vises une école d'ingénieur, ta problématique doit pouvoir conduire au 
 > 
 > *Voici le code en Python : »*
 
+![Arbre de jeu minimax à trois niveaux avec alternance de nœuds MAX (Blancs) et MIN (Noirs) jusqu'aux feuilles où s'applique la fonction d'évaluation.](/images/guide-go-nsi-01-arbre-jeu.svg)
+
 ```python
 def minimax(position, profondeur, maximise):
     # Cas de base : profondeur atteinte ou partie terminée
@@ -235,6 +237,8 @@ def minimax(position, profondeur, maximise):
 > *« Trois points clés : la récursivité (la fonction s'appelle elle-même), l'alternance maximise/minimise (les deux joueurs alternent), et la fonction `evaluer()` qui attribue un score à chaque position.*
 > 
 > *Quel coût ? Avec b ≈ 35 coups possibles par position et d = 4 niveaux de profondeur, le minimax explore 35^4 ≈ 1,5 million de positions. Sur 6 niveaux : 35^6 ≈ 1,8 milliard. La croissance est exponentielle, O(b^d). »*
+
+![Croissance exponentielle du coût minimax O(b^d) : de 35 positions à profondeur 1 jusqu'à 1,8 milliard à profondeur 6 avec b=35.](/images/guide-go-nsi-02-cout-minimax.svg)
 
 ### ⏱ 4:00–7:00, Partie 2 : l'élagage alpha-bêta
 
@@ -273,8 +277,12 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
 ```
 
 > *« `alpha` = meilleur score garanti pour les Blancs. `beta` = meilleur score garanti pour les Noirs. Quand `beta ≤ alpha`, il est inutile d'explorer davantage : les deux joueurs ne choisiraient jamais cette branche.*
-> 
+
+![Mécanisme des paramètres alpha et bêta dans l'élagage alpha-bêta : condition de coupure beta inférieur ou égal à alpha illustrée sur un arbre de décision.](/images/guide-go-nsi-03-alpha-beta-params.svg)
+
 > *Gain pratique : dans le meilleur cas (coups triés par ordre de qualité), alpha-bêta réduit le coût à O(b^(d/2)). Soit 35^2 = 1 225 positions pour d = 4 au lieu de 1,5 million. On passe de l'impossible au réalisable en quelques millisecondes. »*
+
+![Comparaison minimax vs alpha-bêta pour b=35 d=4 : 1 500 000 positions contre 1 225, soit un gain supérieur à 1 000 dans le meilleur cas.](/images/guide-go-nsi-04-gain-complexite.svg)
 
 ### ⏱ 7:00–9:00, Partie 3 : limites et rupture AlphaZero
 
@@ -287,6 +295,8 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
 > ***La rupture d'AlphaZero (2017) :** AlphaZero n'a pas de fonction d'évaluation écrite par des humains. Il apprend à jouer en jouant contre lui-même (apprentissage par renforcement) et développe sa propre évaluation à travers un réseau de neurones. En 4 heures d'entraînement autonome, AlphaZero a battu Stockfish, le meilleur programme minimax au monde.*
 > 
 > *Ce n'est plus une optimisation : c'est un paradigme différent. Au lieu de chercher dans un arbre, il apprend à reconnaître des positions. »*
+
+![Opposition entre IA symbolique minimax à règles explicites humaines et IA connexionniste AlphaZero apprenant par auto-jeu et réseaux de neurones.](/images/guide-go-nsi-05-alphazero-paradigme.svg)
 
 ### ⏱ 9:00–10:00, Conclusion
 
@@ -414,6 +424,8 @@ Voici une fiche mémo concentrée que tu peux imprimer ou recopier sur une feuil
 - **1950** : Turing et Shannon, fondations algorithmiques
 - **1997** : Deep Blue bat Kasparov (symbolique, force brute)
 - **2017** : AlphaZero bat Stockfish en 4 h (connexionniste, apprentissage)
+
+![Frise chronologique de l'IA aux échecs : 1950 Shannon et Turing, 1997 Deep Blue bat Kasparov, 2017 AlphaZero bat Stockfish en 4 heures par apprentissage par renforcement.](/images/guide-go-nsi-06-chronologie-ia.svg)
 
 ### Les trois notations de coût à manier
 

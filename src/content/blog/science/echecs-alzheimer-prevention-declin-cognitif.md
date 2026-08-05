@@ -119,6 +119,8 @@ Le tableau suivant résume **des ordres de grandeur publiés** ; à interpréter
 
 **Lecture honnête** : ces travaux **ne remplacent pas** la prévention cardiometabolique (pression, glycémie, sommeil, activité physique). Ils montrent surtout que **« jouer sérieusement »** peut **cohabiter** avec des gains psychologiques ou des scores mieux préservés, selon le critère mesuré.
 
+![Hazard ratios ajustés ALSOP (Wu et al., 2023) : la littératie fréquente réduit de 11 % et les jeux actifs de 9 % le risque démentiel relatif sur 10 ans, avec intervalles de confiance à 95 %.](/images/echecs-alzheimer-01-hazard-ratios.svg)
+
 ## Hazard ratios dans la cohorte ALSOP
 
 La cohorte **ALSOP** suit en Australie des sujets âgés initialement peu compromis sur le plan cognitif. Les hazard ratios **0,89** et **0,91** traduisent une **réduction relative modérée** de la probabilité de **développer la maladie d'Alzheimer** ou un syndrome démentiel sur dix **ans** pour des habitudes régulières ; pas une division par deux. Les modèles **ajustent** déjà éducation, statut socio-économique et santé ; il reste une part d’**inobservables** (fragilité avant inclusion, biais de survie).
@@ -131,9 +133,13 @@ La synthèse de **Li et al.** agrège des protocoles **hétérogènes** (types d
 
 Message positif pour la vie quotidienne : les interventions ludiques structurées montrent souvent un **signal sur la dépression**, ce qui compte pour le **maintien à domicile**, la **concentration** au quotidien et l’adhésion aux soins.
 
+![Tailles d’effet de la thérapie par le jeu sur le MMSE (SMD 2,69) et la dépression (SMD 4,28) versus absence de différence significative sur la qualité de vie (SMD 0,17, p = 0,74) — Li et al., 2023.](/images/echecs-alzheimer-03-mmse-depression.svg)
+
 ## Essais ciblés : Go en Chine, échecs en Italie
 
 Sur **147** patients, **six mois** de pratique quotidienne du Go versus absence de partie : variations sur échelles de **dépression** et de **fonctionnement**, et écart marqué sur le **BDNF** ; une molécule souvent présentée comme liée à la neuroplasticité (à ne pas confondre avec un « traitement anti-neurodégénératif » générique).
+
+![BDNF sérique selon la dose de jeu : 17,3 ng/ml dans le groupe contrôle, 24,0 ng/ml pour 1 heure par jour de Go, 28,9 ng/ml pour 2 heures par jour (Lin et al., 2015, p < 0,001).](/images/echecs-alzheimer-02-bdnf-go.svg)
 
 Dans COGniChESs (Pozzi et al.), le résultat **frappe par ce qu’il ne montre pas** : pas d’effet net robuste sur **la cognition globale** au bout du protocole, mais des effets sur **qualité de vie** et **humeur** chez certaines sous-populations. Pour une **partie** sérieuse ou une analyse après coup, l’intérêt peut être davantage **humeur / ancrage social** que score cognitif brut. C’est aussi un argument pour la **concentration** soutenue en **communauté** plutôt qu’en isolement à domicile.
 
@@ -173,6 +179,8 @@ Les analyses comme **Dubois et al., 2024** (JAMA Neurology) rappellent par aille
 10. **Plaisir** : variable souvent négligée dans les essais mais cruciale pour **tenir dans le temps**.
 
 **Après lecture :** choisir un critère pour les trois prochains mois (social, humeur ou stimulation cognitive) et une dose réaliste du type **deux fois 45 minutes** par semaine avec une partie lente analysée. Pas trois objectifs à la fois.
+
+![Comparaison des doses hebdomadaires : 7 à 14 heures par semaine dans les essais Go (cadre thérapeutique), contre 1 heure 30 pour 2 séances de 45 à 60 minutes dans le pilote échecs de Cibeira et al. (2021), la seule dose réaliste en club.](/images/echecs-alzheimer-04-dose-hebdo.svg)
 
 ## Sources et références scientifiques
 

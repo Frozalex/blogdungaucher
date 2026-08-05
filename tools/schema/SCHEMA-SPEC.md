@@ -38,6 +38,7 @@ vulgarisation scientifique sérieuse. Public : joueurs d'échecs, curieux, lycé
 | Blanc (remplissage cartes) | `#fff` |
 | Accent ambre (attention/transition/secondaire) | `#c9a24b` |
 | Accent bleu (2e catégorie/contraste) | `#5b9fd4` |
+| Fill bleu très clair (compagnon de l'accent bleu) | `#e8f1f8` |
 
 Convention : le vert marque l'élément « choisi », « optimal » ou « sain » ; les neutres
 gris = éléments non retenus ou secondaires ; ambre = alerte/bascule ; bleu = 2e série.
@@ -55,12 +56,10 @@ gris = éléments non retenus ou secondaires ; ambre = alerte/bascule ; bleu = 2
   `logique-modale`, `go-maths`, `go-nsi`, `go-maths-spe`, `echecs-argent`).
 - `NN` = 01, 02… `<descr>` = 1–3 mots kebab-case.
 
-## Watermark (filigrane logo)
-NE PAS l'écrire à la main. Après avoir créé tes SVG, lance :
-```
-node scripts/add-watermark.mjs public/images/mon-fichier-01-xxx.svg public/images/autre-02-yyy.svg
-```
-Le script ajoute le logo en bas-droite (opacité 0.07), idempotent. Fais-le pour CHACUN de tes fichiers.
+## Watermark (filigrane logo) — NE PAS le faire toi-même
+Le filigrane logo est appliqué **centralement par l'orchestrateur** après ton passage
+(via `scripts/add-watermark.mjs`). Toi, tu NE lances AUCUNE commande Bash et tu
+n'écris PAS de watermark à la main. Crée simplement les SVG **sans** bloc `<g id="wm">`.
 
 ## Insertion dans l'article
 Insère une image markdown sur sa propre ligne, entourée de lignes vides, JUSTE APRÈS le
@@ -72,16 +71,17 @@ paragraphe qui introduit le concept illustré (pas en tête d'article, pas coll�
 Le `alt` doit décrire le contenu du schéma (utile SEO + accessibilité), pas répéter la légende mot pour mot.
 
 ## Combien de schémas par article
-- Article < 1600 mots : **1** schéma.
-- Article 1600–3000 mots : **2** schémas.
-- Article > 3000 mots (grand oral) : **2** schémas (éventuellement 3 si le contenu s'y prête vraiment).
+Le nombre exact à créer t'est donné dans ta mission (ex. « +4 schémas »). Répartis-les
+sur toute la longueur de l'article (≈ 1 image toutes les 2-3 sections), pas tous groupés.
+Chaque schéma illustre une idée DIFFÉRENTE ; ne redonde pas un schéma déjà présent.
 
-## Validation avant de rendre la main
-- Vérifie que chaque SVG est bien formé (XML valide). Exemple :
-  `node -e "new (require('xmldom').DOMParser)()" ` n'est pas dispo → utilise plutôt un contrôle simple :
-  `node -e "const s=require('fs').readFileSync(process.argv[1],'utf8'); if(!s.includes('</svg>'))throw new Error('SVG incomplet'); if((s.match(/</g)||[]).length!==(s.match(/>/g)||[]).length) throw new Error('balises déséquilibrées'); console.log('ok',process.argv[1])" public/images/ton-fichier.svg`
-- NE lance PAS de serveur de dev (`npm run dev`/`astro dev`) : le port 4321 est utilisé par le process principal, tu créerais un conflit. La vérification visuelle finale est faite par l'orchestrateur.
-- Confirme que chaque fichier contient bien `id="wm"` (watermark appliqué).
+## Contraintes de process (IMPORTANT)
+- Tu NE lances AUCUNE commande Bash (pas de watermark, pas de validation script, pas de
+  serveur dev). Tu utilises uniquement Read / Write / Edit.
+- Ton livrable = les fichiers SVG créés (sans watermark) + les insertions markdown faites
+  dans les articles. Le watermark, la validation XML et le rendu sont gérés par l'orchestrateur.
+- Écris un SVG bien formé (balise `</svg>` finale, pas de `<` ni `&` littéraux dans le texte :
+  utilise `&lt;` et `&amp;` ; `>` est toléré). Reste STRICTEMENT dans la palette.
 
 ## Exemple complet de référence (schéma réel, déjà en prod)
 Voir `public/images/psychologie-joueur-01-flow.svg` (diagramme à axes) et

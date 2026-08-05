@@ -121,6 +121,8 @@ De nombreuses personnes en difficulté psychologique ont des relations sociales 
 
 Cette structure peut être particulièrement utile pour des personnes avec de l'anxiété sociale, de la schizophrénie en phase stable, ou des séquelles de traumatisme qui rendent les interactions informelles difficiles.
 
+![Les quatre mécanismes thérapeutiques des échecs : absorption cognitive, sentiment de compétence, structure et prévisibilité, connexion sociale structurée.](/images/echecs-therapie-01-mecanismes.svg)
+
 ## Les données sur l'anxiété : l'étude Marín
 
 L'étude la plus rigoureuse sur les effets des échecs sur l'anxiété chez les enfants est celle de [Marín et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28282259/) publiée dans le *Journal of Educational Psychology*.
@@ -132,6 +134,8 @@ L'étude la plus rigoureuse sur les effets des échecs sur l'anxiété chez les 
 **Mécanisme suggéré par les auteurs :** les échecs offrent un environnement d'apprentissage avec erreurs valorisées (chaque défaite est analysée), ce qui réduit la peur de l'échec : un composant central de l'anxiété chez les enfants.
 
 Cette étude ne dit pas que les échecs traitent l'anxiété au sens clinique : elle dit qu'un programme structuré d'échecs réduit le niveau d'anxiété trait chez des enfants en population générale.
+
+![Résultats de l'étude Marín 2017 : après 20 séances d'échecs, le groupe intervention réduit significativement son score d'anxiété STAI-C tandis que le groupe contrôle reste stable.](/images/echecs-therapie-02-marin-anxiete.svg)
 
 ## Les programmes de prison : des résultats encourageants
 
@@ -168,6 +172,8 @@ Une note de prudence importante : les bénéfices documentés des échecs en con
 **Le contexte compte autant que le jeu.** Les bénéfices observés dans les programmes de prison ou les centres de soin ne viennent pas seulement du jeu : ils viennent aussi de l'encadrement, de la relation avec l'intervenant, et de la structure de groupe. Un détenus jouant seul contre un ordinateur dans sa cellule ne bénéficiera pas des mêmes effets.
 
 **Les profils à risque doivent être identifiés.** Pour des personnes avec une forte anxiété de performance, les tournois et la compétition peuvent aggraver la souffrance. L'introduction des échecs en contexte thérapeutique doit être accompagnée d'une vigilance sur la relation au résultat et à la défaite.
+
+![Les échecs en thérapie : bénéfices documentés à gauche (absorption cognitive, compétence, lien social, prison), ce qu'ils ne remplacent pas à droite (TCC, EMDR, médicaments). Complément, jamais substitut.](/images/echecs-therapie-03-limites-complement.svg)
 
 ## L'avenir : la recherche à faire
 

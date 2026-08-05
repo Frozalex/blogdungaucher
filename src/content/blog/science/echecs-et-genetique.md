@@ -133,6 +133,8 @@ Ce dernier chiffre est la vraie découverte : même en combinant pratique et QI,
 
 Hambrick interprète ce résultat comme une réfutation de la vision "pratique seule" d'Ericsson. Il ne dit pas que les gènes *déterminent* la performance : il dit qu'ils *contribuent* de façon non négligeable.
 
+![Décomposition de la variance du niveau aux échecs selon Hambrick et al. (2014) : 30 % expliqués par la pratique délibérée, 8 % par le QI, et plus de 60 % restant inexpliqué, incluant probablement des facteurs génétiques non mesurés.](/images/echecs-genetique-01-variance-hambrick.svg)
+
 ## Ce que la génétique mesure vraiment
 
 Les études génétiques sur l'intelligence et les capacités cognitives utilisent principalement deux approches :
@@ -143,6 +145,8 @@ Les études génétiques sur l'intelligence et les capacités cognitives utilise
 
 L'implication : l'intelligence (et par extension, les capacités aux échecs) est un trait **polygénique**: influencé par des milliers de gènes avec des effets individuels minuscules. Il n'y a pas de "gène de l'intelligence" ou de "gène des échecs" : il y a des milliers de petites contributions génétiques qui s'accumulent.
 
+![Méthode des jumeaux pour estimer l'héritabilité du QI : corrélation ~0,80 chez les monozygotes (100 % ADN commun) contre ~0,40 chez les dizygotes (50 %), soit une héritabilité estimée à 54–66 % chez l'adulte (Polderman et al., 2015).](/images/echecs-genetique-02-heritabilite-jumeaux.svg)
+
 ### L'héritabilité n'est pas un destin
 
 Un concept crucial souvent mal compris : **l'héritabilité est une statistique de population, pas un déterminisme individuel**.
@@ -150,6 +154,8 @@ Un concept crucial souvent mal compris : **l'héritabilité est une statistique 
 Une héritabilité du QI de 60% signifie que, dans la population étudiée dans les conditions étudiées, 60% des différences de QI entre individus s'expliquent par des différences génétiques. Cela ne dit pas que ton QI est déterminé à 60% par tes gènes : ça dit que si tu changeais ton environnement (nutrition, éducation, stimulation), ton QI pourrait changer.
 
 De plus, l'héritabilité varie selon l'environnement. Dans des environnements très homogènes (où tout le monde a accès aux mêmes ressources), la génétique explique davantage les différences. Dans des environnements très variables, l'environnement explique davantage. L'héritabilité n'est donc pas une constante : elle reflète l'interaction gènes × environnement.
+
+![L'héritabilité du QI varie selon le contexte : élevée (~70 % génétique) dans un environnement homogène, basse (~30 % génétique) dans un environnement inégal. Ce n'est pas un destin individuel mais une statistique de population.](/images/echecs-genetique-03-heritabilite-contexte.svg)
 
 ## Les prodiges : que nous apprennent-ils ?
 
@@ -162,6 +168,8 @@ Mais voici ce qu'on sait systématiquement de ces prodiges : **ils ont tous comm
 La question est donc : est-ce la génétique qui produit des prodiges, ou est-ce la combinaison de prédispositions génétiques ET d'un entraînement démarré précocement dans une période de plasticité cérébrale maximale ?
 
 La recherche en neurosciences du développement suggère que les deux sont vrais. La plasticité cérébrale entre 5 et 12 ans est exceptionnellement élevée : les circuits de traitement pattern/spatial sont particulièrement sensibles à l'entraînement à cette période. Un entraînement intensif sur un cerveau encore très plastique produit des résultats qui semblent "prodigieux" mais reflètent en réalité l'interaction entre prédispositions et fenêtre de développement optimal.
+
+![Les capacités cognitives sont polygéniques : les études GWAS identifient des centaines de loci significatifs sur le QI, mais chacun contribue moins de 0,1 % de la variance. Il n'existe pas de « gène des échecs » unique (Lee et al., 2018, Nature Genetics, n = 1,1 million).](/images/echecs-genetique-04-polygenie.svg)
 
 ## La vision intégrée : ce qu'un praticien doit retenir
 

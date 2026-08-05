@@ -78,6 +78,8 @@ Le chercheur [Simon Baron-Cohen](https://fr.wikipedia.org/wiki/Simon_Baron-Cohen
 
 Selon l'[Organisation mondiale de la santé](https://fr.wikipedia.org/wiki/Organisation_mondiale_de_la_sant%C3%A9), environ 1 enfant sur 100 dans le monde est diagnostiqué autiste. Aux États-Unis, les [Centers for Disease Control and Prevention](https://fr.wikipedia.org/wiki/Centers_for_Disease_Control_and_Prevention) (CDC) estiment ce chiffre à 1 enfant sur 36 en 2023. Une prévalence en hausse qui reflète à la fois une meilleure connaissance du spectre et un accès élargi au diagnostic.
 
+![Comparaison de la prévalence du TSA : 1 enfant sur 100 selon l'OMS (monde) et 1 enfant sur 36 selon les CDC (États-Unis, 2023).](/images/echecs-autisme-01-prevalence-tsa.svg)
+
 ## Pourquoi l'échiquier rassure : ordre, règles visibles, et "jeu à information parfaite"
 
 Pour comprendre pourquoi les échecs attirent autant les personnes autistes, il faut d'abord essayer d'appréhender leur expérience quotidienne. L'autisme est souvent caractérisé entre autres par un besoin profond de prévisibilité, de routines stables et de règles claires. Le monde réel est fondamentalement désordonné et ambigu. Les interactions humaines, en particulier, sont gouvernées par une quantité phénoménale de règles implicites, de sous-entendus, de codes non écrits qui varient selon le contexte, la culture et l'humeur des interlocuteurs.
@@ -89,6 +91,8 @@ L'échiquier, à l'inverse, est ce que les mathématiciens et les économistes a
 La chercheuse [Uta Frith](https://fr.wikipedia.org/wiki/Uta_Frith), professeure de psychologie du développement à l'[University College London](https://fr.wikipedia.org/wiki/University_College_de_Londres) (UCL) et pionnière dans la recherche sur l'autisme, a décrit ce besoin de cohérence et de prévisibilité comme un trait fondamental du profil cognitif autiste. Elle parle de "recherche de cohérence centrale faible" (*weak central coherence*) : tendance à traiter les détails de façon très précise plutôt que de les intégrer dans une vue d'ensemble floue et approximative.
 
 Sur l'échiquier, cette force devient un atout formidable. Chaque case, chaque pièce, chaque règle de déplacement est une donnée précise, stable, fiable. L'univers n'a pas de sous-entendus. On sait exactement ce qu'on a le droit de faire et ce qui est interdit. Cette prévisibilité structurelle agit comme un baume apaisant pour un système nerveux habitué à constamment surveiller, analyser et décoder un monde social perçu comme imprévisible et parfois hostile.
+
+![Comparaison entre l'ambiguïté des interactions sociales quotidiennes et la clarté totale de l'échiquier comme jeu à information parfaite : règles visibles, stables, sans zone d'ombre.](/images/echecs-autisme-03-information-parfaite.svg)
 
 ### Les rituels d'ouverture et la stabilité rassurante
 
@@ -138,11 +142,15 @@ La recherche académique sur le lien spécifique entre les TSA et les échecs es
 
 Baron-Cohen a également formulé la théorie de l'[empathie-systématisation](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_l%27empathie-systématisation), selon laquelle les cerveaux autistes auraient un profil "hyper-systemizing / hypo-empathizing" : des capacités de systématisation supérieures à la moyenne, couplées à des difficultés dans la cognition sociale émotionnelle. L'échiquier ne requiert pas d'empathie émotionnelle : il requiert de la systématisation logique. L'adéquation est presque parfaite.
 
+![Théorie empathie-systématisation de Baron-Cohen : le profil TSA typique combine une capacité de systématisation élevée et une empathie émotionnelle plus faible, ce qui correspond exactement aux exigences de l'échiquier.](/images/echecs-autisme-02-empathie-systemisation.svg)
+
 ### Les études sur les fonctions exécutives et le transfert de compétences
 
 Plusieurs études psychoéducatives sur les interventions avec des enfants TSA ont montré que la pratique régulière des échecs peut améliorer plusieurs [fonctions exécutives](https://fr.wikipedia.org/wiki/Fonctions_ex%C3%A9cutives) déficitaires dans le cadre de l'autisme : la planification à court terme, le contrôle de l'inhibition (attendre son tour, ne pas toucher les pièces de l'adversaire), et la flexibilité cognitive (s'adapter quand l'adversaire contrecarre son plan initial).
 
 Ces améliorations ne restent pas confinées à l'échiquier. On observe ce que les psychologues appellent un "transfert proche" : les compétences exécutives travaillées sur le plateau commencent à déborder légèrement sur certains aspects de la vie quotidienne. La tolérance à la frustration (perdre une pièce sans s'effondrer), la régulation émotionnelle (gérer une défaite avec grâce), la patience (attendre patiemment que l'adversaire réfléchisse)... Aucun miracle, aucune guérison. Mais des progrès concrets, mesurables et profondément significatifs pour les familles.
+
+![Les trois fonctions exécutives travaillées par les échecs chez les enfants TSA : planification, contrôle de l'inhibition et flexibilité cognitive, avec transfert proche vers la vie quotidienne.](/images/echecs-autisme-04-fonctions-executives.svg)
 
 ### Le programme Chess for Change et les preuves de terrain
 
@@ -172,6 +180,8 @@ Les données disponibles suggèrent que les échecs peuvent, dans un cadre adapt
 Les échecs ne remplacent pas une [prise en charge multidisciplinaire](https://fr.wikipedia.org/wiki/Autisme#Interventions) incluant orthophonie, ergothérapie, accompagnement psychologique et pédagogique adapté. Présenter les échecs comme un outil thérapeutique miracle serait malhonnête et même dangereux, car cela pourrait détourner des familles de prises en charge réellement nécessaires.
 
 La nuance est essentielle : les échecs sont un formidable *complément* à un accompagnement global. Jamais un substitut.
+
+![Tableau comparatif : ce que les échecs peuvent apporter aux personnes autistes (réduction d'anxiété, fonctions exécutives, estime de soi) versus ce qu'ils ne remplacent pas (orthophonie, ergothérapie, accompagnement psychologique).](/images/echecs-autisme-05-complement-pas-therapie.svg)
 
 ## 64 cases, un langage commun sans effacer qui tu es
 

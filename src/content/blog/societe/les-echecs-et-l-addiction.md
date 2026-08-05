@@ -57,11 +57,15 @@ Ce n’est pas que tu es « faible ». C’est que ton cerveau fait exactement c
 
 Le chercheur [Matthias Brand](https://fr.wikipedia.org/wiki/Matthias_Brand) (Université de [Duisbourg-Essen](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Duisbourg-Essen)) insiste : une grande **partie** de la dépendance ne vient **pas** du plaisir pendant la **partie**, mais de l’anticipation : voir l’icône de l’appli, entendre la notif, *cue reactivity*, réactivité aux signaux. Là commence souvent le craving.
 
+![La boucle dopaminergique de l’addiction aux échecs en ligne : victoire, pic de dopamine, envie de recommencer, nouvelle partie, nouveau pic ou frustration à effacer — cycle auto-entretenu.](/images/echecs-addiction-01-boucle-dopamine.svg)
+
 ### La récompense variable : le piège, c’est l’incertitude
 
 Le mécanisme du *variable reward schedule*, théorisé par [Burrhus Frederic Skinner](https://fr.wikipedia.org/wiki/Burrhus_Frederic_Skinner), c’est le casino : tu ne sais pas si la prochaine rencontre sera un smash, une **défaite** ridicule, ou un match serré contre un inconnu plus **haut** que ton rating.
 
 Sur [Lichess](https://lichess.org) ou Chess.com, tu ne maîtrises pas le pairing : l’imprévisibilité maintient ton cerveau en alerte. Le [NIDA](https://nida.nih.gov) a documenté comment ce type d’incertitude renforce l’apprentissage compulsif dans d’autres contextes ; le principe est transposable au rythme des **parties** en **ligne**.
+
+![Le mécanisme de récompense variable de Skinner aux échecs en ligne : victoire, défaite, match serré, smash — l’imprévisibilité du résultat maintient le cerveau en alerte et renforce l’apprentissage compulsif.](/images/echecs-addiction-02-recompense-variable.svg)
 
 ### Craving : plus pour le plaisir, pour faire taire le vide
 
@@ -96,6 +100,8 @@ Tu perds une **partie** bête. Tu relances tout de suite. Tu perds moins bien. T
 Le stress monte, le cortisol grimpe ; le [Dr Elke van der Meer](https://www.researchgate.net/profile/Elke-Van-der-Meer) ([Humboldt Berlin](https://fr.wikipedia.org/wiki/Universit%C3%A9_Humboldt_de_Berlin)) a mesuré des niveaux de stress en **cadences courtes** comparables à… un parachutiste avant le premier saut. Sous pression, le [cortex préfrontal](https://fr.wikipedia.org/wiki/Cortex_pr%C3%A9frontal) lâche prise ; l’[amygdale](https://fr.wikipedia.org/wiki/Amygdale_(cerveau)) pilote. Tu **joues** vite et mal. [Matthias Brand](https://fr.wikipedia.org/wiki/Matthias_Brand) relie ça aux fonctions exécutives dans les usages problématiques.
 
 **Paradoxe cruel :** plus tu veux rattraper le **dernier** **point** perdu, plus tu t’enfonces, et plus les **défaites** s’enchaînent.
+
+![La spirale du tilt aux échecs en ligne : défaite, cortisol en hausse, relance immédiate, cortex préfrontal débordé, jeu dégradé — chaque défaite alimente la suivante.](/images/echecs-addiction-03-tilt-spiral.svg)
 
 Pour aller plus loin sur le mécanisme psychologique du tilt, ego, imposteur et flow : l’article [Psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/) y consacre une section entière.
 
@@ -136,6 +142,8 @@ Une semaine en non classé, ou sans regarder le graphique : remets la motivation
 ### Étape 3 : La règle des trois parties
 
 **Maximum trois parties jouées par session**, que tu gagnes ou que tu perdes. Si tu tilt, tu t’arrêtes. C’est plus fort que la volonté « je promets » : c’est une règle de design.
+
+![Plan de sortie en trois étapes contre l’addiction aux échecs en ligne : ralentir vers les cadences longues, désacraliser l’Elo, et appliquer la règle des trois parties maximum par session.](/images/echecs-addiction-04-plan-sortie.svg)
 
 **Environnement** ([sciences du comportement](https://fr.wikipedia.org/wiki/Sciences_du_comportement)) : pas d’échecs au lit ; apps de blocage ([Cold Turkey](https://getcoldturkey.com), [Freedom](https://freedom.to)) ; si ça persiste → professionnel, par **exemple** [Addiction France](https://www.addictionfrance.fr).
 

@@ -94,6 +94,8 @@ Une nuit de sommeil n'est pas un bloc uniforme. Elle s'organise en **cycles de 9
 
 Pour un joueur d'échecs, les implications sont concrètes : **les 6 premières heures de sommeil consolident la théorie** (variantes, plans caractéristiques d'une structure de pions) ; **les 2 dernières heures de sommeil REM intègrent la reconnaissance de patterns**: exactement ce qui distingue un joueur intuitif d'un joueur purement calculateur.
 
+![Architecture d'une nuit de sommeil en cycles de 90 minutes : le sommeil N3 (ondes delta, fond vert) domine en début de nuit pour consolider les variantes, tandis que le REM (fond ambre) domine en fin de nuit pour intégrer les patterns. Couper le réveil prive des phases REM les plus précieuses.](/images/echecs-sommeil-01-architecture-nuit.svg)
+
 ## Ce que la privation de sommeil fait au calcul
 
 [John Harrison](https://www.birmingham.ac.uk) et Jim Horne (Loughborough Sleep Research Centre) ont mené en 2000 une étude fondamentale (*Neuropsychologia*) sur les effets de la privation de sommeil sur les fonctions exécutives. Leurs résultats concernent directement les joueurs d'échecs :
@@ -103,6 +105,8 @@ Pour un joueur d'échecs, les implications sont concrètes : **les 6 premières 
 - **[Mémoire de travail](/fr/blog/echecs-memoire-de-travail/)** (maintenir une variante en tête pendant le calcul) : réduite après 24h de veille
 
 Ce dernier point est particulièrement important. La mémoire de travail est le goulot d'étranglement du calcul aux échecs : c'est elle qui permet de garder en tête la position d'arrivée d'une variante pendant qu'on en explore les branches. Une mémoire de travail dégradée signifie des variantes raccourcies, des positions mal évaluées, des blunders sur des menaces qu'on a calculées mais pas maintenues.
+
+![Effet de la privation de sommeil sur les trois fonctions exécutives clés aux échecs : l'inhibition des mauvaises réponses est dégradée en premier, suivie de la flexibilité cognitive, puis de la mémoire de travail. À 24 heures de veille, équivalent cognitif d'une alcoolémie de 0,10 % (Harrison et Horne, 2000 ; Walker, 2017).](/images/echecs-sommeil-02-privation-fonctions.svg)
 
 [Matthew Walker](https://www.humansleepscience.com), dans *Why We Sleep* (2017), synthétise des décennies de recherche : après 17-19 heures de veille, la performance cognitive est équivalente à un taux d'alcoolémie de 0,05%. Après 24h, elle équivaut à 0,10%: au-dessus du seuil légal de conduite dans la plupart des pays. Jouer une partie importante après une nuit blanche, c'est jouer en état d'ivresse légère.
 
@@ -114,6 +118,8 @@ Les recherches de [David Dinges](https://www.med.upenn.edu/sleeplab/) (Universit
 
 En tournoi, ça se traduit par un joueur qui se sent "un peu fatigué" en ronde 7, mais dont les erreurs de calcul ont doublé par rapport aux rondes 1-3. La fatigue subjective est un mauvais juge de la fatigue cognitive.
 
+![Dette de sommeil cumulative sur 9 rondes de tournoi : les erreurs de calcul réelles (courbe ambre) s'emballent à partir de la ronde 4, alors que la fatigue subjective ressentie (courbe grise, pointillés) progresse lentement — le joueur sous-estime systématiquement sa dégradation (Dinges et al., 1997).](/images/echecs-sommeil-04-dette-cumulative.svg)
+
 ## Sommeil REM et reconnaissance de patterns échiquéens
 
 L'étude de [Robert Stickgold](https://stickgoldlab.hms.harvard.edu) (Harvard) et Matthew Walker sur la mémoire procédurale a révélé un phénomène contre-intuitif : les participants qui dormaient entre deux sessions d'entraînement sur une tâche de reconnaissance de séquences amélioraient leurs performances de 20% lors de la session suivante, même s'ils n'avaient pas pratiqué entre temps. Le sommeil seul produisait une amélioration.
@@ -123,6 +129,8 @@ Le mécanisme : pendant le REM, le cerveau **rejoue les séquences en accélér�
 Un exemple concret : si tu étudies 20 positions tactiques à thème "clouage" dans l'après-midi, puis que tu dors normalement, le lendemain tu reconnaîtras les clouages plus rapidement dans des positions nouvelles, même sans avoir rejoué les exercices. C'est la consolidation REM en action.
 
 [Sara Mednick](https://www.saramednick.com) (UC Riverside) a quantifié cet effet dans une étude de 2003 publiée dans *Nature Neuroscience* : un groupe avec une sieste de 90 minutes (incluant une phase REM) après une séance d'apprentissage de tâches visuelles améliorait ses performances de 34% par rapport au groupe sans sieste, et surpassait même le groupe qui avait bénéficié d'une nuit complète.
+
+![Comparaison des trois conditions de Mednick et al. (2003) : le groupe sans sieste régresse de 10 %, le groupe avec sieste de 90 minutes progresse de 34 %, équivalent au groupe nuit complète. La sieste incluant une phase REM suffit à consolider l'apprentissage.](/images/echecs-sommeil-03-sieste-retention.svg)
 
 ## Sommeil et intuition échiquéenne
 
