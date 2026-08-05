@@ -53,6 +53,8 @@ Un **lieu de mémoire**, chez Nora, n'est pas forcément un lieu géographique. 
 
 Fischer-Spassky mille neuf cent soixante-douze fonctionne exactement comme un lieu de **mémoire**, mais pour plusieurs nations en même temps. Le même événement est récupéré différemment selon les besoins identitaires de chacune. Cette concurrence des récits est précisément ce que je vais analyser.
 
+![La distinction de Pierre Nora : l'histoire vise l'objectivité universelle tandis que la mémoire est sélective et identitaire — Fischer-Spassky 1972 illustre les deux à la fois.](/images/sujet-memoire-patrimoine-01-histoire-memoire-nora.svg)
+
 ## Les trois récits concurrents
 
 Premier récit : la **mémoire américaine**. Aux États-Unis, Fischer-Spassky est raconté comme le triomphe du génie individuel sur le système collectiviste. Bobby Fischer, jeune homme issu de Brooklyn, élevé par une mère seule, autodidacte, brillant et instable, incarne le rêve américain. Sa victoire à Reykjavik est présentée comme l'illustration parfaite de la supériorité du modèle américain sur le modèle soviétique : un individu motivé peut battre toute une bureaucratie d'État. Cette **mémoire** est cohérente avec d'autres récits américains de la guerre froide, où l'individu héroïque (astronaute Neil Armstrong, dissident Aleksandr Soljenitsyne célébré aux USA) sert de symbole d'un système.
@@ -66,6 +68,8 @@ Aujourd'hui, dans la Russie de Vladimir Poutine, cette **mémoire** est mobilis�
 Troisième récit : la **mémoire internationale**. Hors des États-Unis et de la Russie, Fischer-Spassky est souvent raconté comme un événement universel, transcendant les deux camps de la guerre froide. La biographie *Bobby Fischer Goes to War*, publiée en deux mille quatre par les Britanniques David Edmonds et John Eidinow, propose cette lecture neutre. Le match y est présenté comme une rencontre culturelle entre deux conceptions opposées du jeu, mais sans privilégier explicitement l'un ou l'autre. Reykjavik elle-même cultive cette **mémoire** internationale en conservant la salle du match comme lieu touristique et patrimonial.
 
 Ces trois récits coexistent et ne s'éliminent pas mutuellement. Ils répondent à trois besoins identitaires différents : valorisation du modèle américain, continuité de la **puissance** russe, universalisme culturel européen. C'est exactement la situation que Nora décrit : un même fait, plusieurs **mémoires** parallèles.
+
+![Les trois récits concurrents de Reykjavik 1972 : la mémoire américaine (génie individuel), la mémoire russe (continuité de puissance) et la mémoire internationale (universalisme culturel).](/images/sujet-memoire-patrimoine-02-trois-recits.svg)
 
 ## Le patrimoine culturel immatériel et ses enjeux contemporains
 

@@ -53,6 +53,8 @@ Le troisième état est l'**état institutionnalisé** : ce sont les titres reco
 
 Cette grille de lecture s'applique aux échecs avec une précision frappante. Le jeu est apparemment peu coûteux : un échiquier de base vaut trente euros, et les plateformes en ligne sont gratuites. Mais la maîtrise du jeu suppose une **incorporation** longue, qui dépend fortement du milieu familial. Bourdieu parlerait d'une pratique à faible coût économique mais à fort coût de **temps** de socialisation, donc structurellement inégalitaire dans l'accès.
 
+![Les trois états du capital culturel de Bourdieu appliqués aux échecs : état incorporé (raisonnement abstrait, patience), état objectivé (échiquier, livres, logiciels), état institutionnalisé (classement Elo, titres FIDE).](/images/sujet-bourdieu-01-trois-etats-capital.svg)
+
 ## Les mécanismes de reproduction sociale aux échecs
 
 Comment exactement les échecs reproduisent-ils les inégalités sociales ? Bourdieu décrit plusieurs mécanismes, qu'on peut documenter empiriquement aux échecs.
@@ -68,6 +70,8 @@ Quatrième mécanisme : la **distinction sociale**. Bourdieu insiste sur le fait
 Cinquième mécanisme, plus subtil : l'**habitus** échiquéen. Bourdieu théorise l'**habitus** comme un ensemble de dispositions intériorisées qui orientent les choix sans qu'on en ait conscience. Aux échecs, jouer suppose des dispositions précises : valoriser la gratification différée (calculer plusieurs coups à l'avance), accepter l'effort sans récompense immédiate, gérer la défaite comme une information plutôt qu'une humiliation. Or ces dispositions sont précisément celles que les classes supérieures inculquent à leurs enfants. La concordance entre **habitus** échiquéen et **habitus** de classe est donc forte.
 
 Tous ces mécanismes opèrent ensemble. Le résultat empirique est que, dans les clubs français d'échecs, soixante à soixante-dix pour cent des licenciés ont au moins un parent diplômé du supérieur. Cette **donnée** dépasse largement la proportion en population générale, qui est d'environ quarante pour cent. Les échecs reproduisent donc, statistiquement, une domination culturelle des classes éduquées.
+
+![Les cinq mécanismes de reproduction sociale aux échecs selon Bourdieu : transmission familiale, coût du temps, coût matériel, distinction sociale et habitus échiquéen concordant avec les classes supérieures.](/images/sujet-bourdieu-02-mecanismes-reproduction.svg)
 
 ## Limites de l'analyse et contre-exemples historiques
 

@@ -53,6 +53,8 @@ La beauté du théorème, c'est qu'il s'agit d'un résultat d'existence. Zermelo
 
 Ce résultat est analogue à beaucoup de théorèmes d'existence en **mathématiques** : on prouve qu'un objet existe sans pouvoir le construire. C'est par **exemple** le cas du théorème des valeurs intermédiaires, qui prouve l'existence d'une solution à une équation continue sans donner la solution. Zermelo ne nous donne pas la solution des échecs, il nous dit seulement qu'elle existe.
 
+![Arbre de jeu illustrant le théorème de Zermelo : par récurrence depuis les feuilles, MAX choisit le résultat maximal et MIN le minimal, garantissant qu'un résultat déterminé remonte jusqu'à la racine.](/images/sujet-zermelo-complexite-01-theoreme-zermelo.svg)
+
 ## La complexité combinatoire : un calcul qui explose
 
 Si on sait que la solution existe, pourquoi ne la calcule-t-on pas ? La réponse tient en un mot : la **complexité**.
@@ -74,6 +76,8 @@ Le physicien Hans Bremermann, dans les années mille neuf cent soixante, a calcu
 À partir de cette borne, on peut estimer combien d'opérations pourraient être effectuées par un ordinateur de la taille de la Terre, fonctionnant pendant l'âge de l'univers. Le résultat est de l'ordre de dix puissance quatre-vingt-treize opérations. C'est-à-dire vingt-sept ordres de grandeur en dessous du nombre de Shannon.
 
 Autrement dit, même si on transformait toute la Terre en ordinateur, et qu'on le faisait fonctionner depuis le big bang jusqu'à aujourd'hui, on n'aurait pas effectué assez d'opérations pour explorer l'arbre des échecs par force brute. C'est une **limite** physique, pas une **limite** technologique : aucun progrès n'y changera quoi que ce soit.
+
+![Comparaison logarithmique : atomes dans l'univers (10^80), opérations maximales selon Bremermann (10^93) et nombre de Shannon (10^120) — l'écart de 27 ordres de grandeur rend la force brute physiquement impossible.](/images/sujet-zermelo-complexite-02-limite-bremermann.svg)
 
 Cette **limite** est ce qui rend les **mathématiques** d'AlphaZero si frappantes. Au lieu d'explorer l'arbre exhaustivement, AlphaZero apprend à reconnaître les bonnes positions par un réseau de neurones. Il joue au niveau humain non pas en calculant plus, mais en calculant différemment. C'est une réponse pragmatique au théorème de Zermelo : la solution existe en théorie, mais elle est inaccessible en pratique ; donc on construit des approximations qui marchent suffisamment bien.
 

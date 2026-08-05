@@ -56,6 +56,8 @@ La **limite** de ce modèle est sa non-constructivité. Zermelo prouve qu'une st
 
 Ensemble, ces deux modèles déterministes nous disent : le jeu a un nombre fini de parties (dix puissance cent vingt), et il a un résultat déterminé (par Zermelo). Et pourtant, on ne sait pas quel est ce résultat, parce qu'on ne peut pas explorer l'arbre. Les modèles déterministes nous montrent à la fois la rigueur et l'impuissance des **mathématiques** classiques face à un objet trop grand.
 
+![Tableau comparatif des quatre modèles mathématiques des échecs : combinatoire, théorie des jeux Zermelo, probabiliste Elo et apprentissage AlphaZero, avec ce que chacun capture et ce qu'il manque.](/images/sujet-modeles-01-comparaison-quatre-modeles.svg)
+
 ## Le modèle probabiliste : Elo et loi binomiale
 
 Face à l'impossibilité d'explorer l'arbre complet, les **mathématiciens** ont adopté un autre point de vue : modéliser non plus le jeu lui-même, mais la **performance** des joueurs. C'est l'approche probabiliste, dont le succès le plus visible est le système Elo.
@@ -65,6 +67,8 @@ Le système Elo, créé par Arpad Elo dans les années mille neuf cent soixante,
 La seconde fonction est une mise à jour de cote, qui s'écrit comme une **suite récurrente** : R_{n+1} égale R_n plus K multiplié par (résultat moins P). Cette suite converge vers la vraie force du joueur sous l'hypothèse de stationnarité, par application de la **loi des grands nombres**. C'est un beau résultat **mathématique** : un objet inobservable, le vrai niveau d'un joueur, est estimé de mieux en mieux à mesure que les parties s'accumulent.
 
 Le modèle Elo a connu un succès énorme. Il est utilisé dans tous les sports compétitifs : tennis, football, esports. Il est devenu le standard de la modélisation de la performance individuelle. Mais ses **limites** sont réelles. Premièrement, l'hypothèse de stationnarité est fausse : les joueurs progressent ou déclinent. Deuxièmement, l'hypothèse d'indépendance des parties est fausse : une défaite peut entraîner un tilt. Troisièmement, la formule extrapole mal aux écarts extrêmes : la probabilité qu'un joueur de mille deux cents Elo batte Magnus Carlsen (deux mille huit cent cinquante) est calculée à un sur treize mille, mais cette précision est invérifiable empiriquement.
+
+![Suite récurrente Elo convergeant vers le vrai niveau E : les fluctuations de la cote diminuent au fil des parties jusqu'à se stabiliser autour de E, illustrant la loi des grands nombres.](/images/sujet-modeles-02-convergence-suite-elo.svg)
 
 Plus fondamentalement, le modèle Elo modélise la performance, pas le jeu. Il nous dit qui va gagner avec quelle probabilité, mais pas pourquoi. Il est utile pour classer les joueurs et organiser les compétitions, mais il ne nous aide pas à comprendre les échecs en tant que jeu. C'est une **limite** structurelle : changer d'angle revient à changer d'objet.
 

@@ -73,6 +73,8 @@ def minimax(position, profondeur, maximise):
 
 Trois éléments du **programme** de spécialité **NSI** apparaissent ici. Premièrement, la **récursivité** : la fonction `minimax` s'appelle elle-même, sur une position transformée par un coup. Deuxièmement, le **cas de base** : la condition `profondeur == 0` ou `position.est_terminee()` qui arrête la récursion. Sans ce cas de base, on aurait une récursion infinie. Troisièmement, la structure d'**arbre** : chaque appel récursif explore les fils d'un nœud avant de remonter le résultat au parent. C'est exactement un parcours en profondeur.
 
+![Pile d'appels récursifs de minimax : la fonction descend jusqu'au cas de base (evaluer), puis remonte les scores MIN et MAX de nœud en nœud jusqu'à la racine.](/images/sujet-nsi-minimax-01-recursivite-pile.svg)
+
 Pour visualiser ce parcours, l'arbre ci-dessous montre minimax à l'œuvre sur un petit exemple : les triangles pointant vers le haut sont des nœuds **MAX** (mon tour), ceux pointant vers le bas des nœuds **MIN** (l'adversaire), et les carrés sont les feuilles évaluées. Lance la lecture pour voir le score remonter de bas en haut. Active ensuite l'**élagage alpha-bêta** : tu verras certaines branches se faire couper, car le programme peut prouver qu'elles ne changeront pas le résultat : c'est exactement l'optimisation dont je parlerai plus loin.
 
 <minimax-tree leaves="3 5 6 9 1 2 0 -1"></minimax-tree>
@@ -86,6 +88,8 @@ Or les échecs ont environ dix puissance cent vingt parties possibles, plus que 
 C'est ici que se joue toute la subtilité. Quand le **programme** arrête sa recherche à une profondeur donnée, il atteint des positions qui ne sont pas des fins de partie. Il faut leur attribuer un score numérique pour pouvoir comparer les branches entre elles.
 
 La fonction d'évaluation classique aux échecs combine plusieurs critères. Le plus simple est la valeur matérielle des pièces : la dame vaut neuf points, la tour cinq, le fou et le cavalier trois, le pion un. Si je calcule la somme pour les Blancs et que je soustrais la somme pour les Noirs, j'obtiens un déséquilibre matériel positif si les Blancs ont l'avantage.
+
+![Décomposition de la fonction d'évaluation en trois composantes : avantage matériel (valeur des pièces), bonus de position (contrôle du centre et mobilité) et bonus de sécurité du roi, donnant un score total positif en faveur des Blancs.](/images/sujet-nsi-minimax-02-evaluation-criteres.svg)
 
 Mais le matériel ne suffit pas. Un **programme** sérieux ajoute des bonus pour la position : contrôle du centre, sécurité du roi, mobilité des pièces, structure des pions. Voici une version simplifiée en Python.
 

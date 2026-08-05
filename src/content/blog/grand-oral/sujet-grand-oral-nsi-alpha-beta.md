@@ -74,6 +74,8 @@ def minimax(position, profondeur, maximise):
 
 Le problème de cet algorithme est sa **complexité**. À chaque nœud, on explore en moyenne trente-cinq fils. Sur quatre niveaux de profondeur, on a trente-cinq puissance quatre, soit environ un million cinq cent mille positions. Sur six niveaux, on dépasse le milliard et demi. La **complexité** s'écrit O(b puissance d), où b est le facteur de branchement et d la profondeur. Cette croissance exponentielle est, en termes de **programme** de spécialité, une fonction qui explose : impossible à gérer sans optimisation.
 
+![Comparaison des courbes O(b^d) et O(b^(d/2)) montrant qu'à profondeur 6 l'élagage alpha-bêta réduit le nombre de nœuds d'un facteur 40 000.](/images/sujet-alphabeta-01-complexite-exponentielle.svg)
+
 Pour la perspective historique : il y a environ dix puissance cent vingt parties d'échecs possibles. C'est le nombre de Shannon. Aucun ordinateur ne pourra jamais explorer l'**arbre** entier, même en utilisant toute la puissance de calcul de l'humanité pendant l'âge de l'univers. Le **programme** doit donc se contenter d'une exploration partielle, à profondeur fixée, et c'est ici que l'optimisation devient cruciale : chaque profondeur supplémentaire gagnée se traduit par une amélioration mesurable de la force du **programme**.
 
 ## L'idée de l'élagage alpha-bêta
@@ -81,6 +83,8 @@ Pour la perspective historique : il y a environ dix puissance cent vingt parties
 L'élagage alpha-bêta repose sur une intuition simple. Si je sais déjà qu'une branche ne peut pas améliorer ma meilleure option connue, il est inutile de l'explorer. On gagne du temps en abandonnant des sous-arbres entiers dès qu'on peut prouver qu'ils ne changeront pas le résultat.
 
 Concrètement, on maintient deux bornes pendant l'exploration. **Alpha** est le meilleur score que les Blancs peuvent garantir sur la branche actuelle. **Beta** est le meilleur score que les Noirs peuvent garantir. Si à un nœud on découvre que beta est inférieur ou égal à alpha, cela signifie que la branche n'intéressera ni les Blancs ni les Noirs : on peut l'abandonner immédiatement. Cette coupure est ce qu'on appelle un **élagage**.
+
+![La fenêtre alpha-bêta : alpha est le plancher garanti par MAX, beta le plafond garanti par MIN ; dès que beta ≤ alpha la branche est coupée sans exploration supplémentaire.](/images/sujet-alphabeta-02-fenetre-alpha-beta.svg)
 
 Le code Python correspondant ajoute deux paramètres au minimax classique.
 

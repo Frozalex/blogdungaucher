@@ -53,6 +53,8 @@ Pour donner une intuition, ce nombre s'écrit avec cent vingt zéros. Si on asso
 
 Le calcul est mathématiquement simple, mais sa signification physique est profonde. Le **principe multiplicatif**, qu'on utilise au lycée pour des **exemples** triviaux (combien de tenues avec trois chemises et deux pantalons), produit ici un nombre que l'esprit humain ne peut pas se représenter.
 
+![Calcul du nombre de Shannon par principe multiplicatif : b = 35 coups, d = 80 demi-coups donnent 35^80 ≈ 10^120 parties, quarante ordres de grandeur au-dessus du nombre d'atomes dans l'univers.](/images/sujet-combinatoire-01-principe-multiplicatif.svg)
+
 ## L'arbre de dénombrement et la croissance exponentielle
 
 On peut visualiser le nombre de Shannon comme un **arbre** de **dénombrement**. La racine est la position initiale, où on a vingt coups possibles pour les Blancs. Chaque nœud représente une position, et a en moyenne trente-cinq fils, qui sont les positions atteignables en un coup. Les feuilles sont les positions finales, ou les positions atteintes à la profondeur d'analyse fixée.
@@ -60,6 +62,8 @@ On peut visualiser le nombre de Shannon comme un **arbre** de **dénombrement**.
 Mathématiquement, le nombre de nœuds à la profondeur k est b puissance k. Pour k égal à un : trente-cinq positions. Pour k égal à deux : trente-cinq au carré, soit mille deux cent vingt-cinq. Pour k égal à quatre : trente-cinq puissance quatre, soit environ un million et demi. C'est exactement une **suite géométrique** de raison b, c'est-à-dire la suite (u_n) définie par u_0 = 1 et u_{n+1} = 35 × u_n.
 
 Cette suite illustre parfaitement la notion de **croissance exponentielle** au **programme** de **terminale**. Le terme général est u_n = b puissance n. Sa croissance n'est pas une intuition pour le cerveau humain, qui pense plutôt en termes linéaires ou polynomiaux. C'est pour cela que les **mathématiques** sont indispensables : elles nous permettent de raisonner sur des objets que nous ne pouvons pas visualiser.
+
+![Arbre de dénombrement à branchement b = 3 : à chaque profondeur k le nombre de nœuds est b^k, formant une suite géométrique de raison 3. Avec b = 35 et k = 80 l'explosion atteint 10^120 feuilles.](/images/sujet-combinatoire-02-arbre-suite-geometrique.svg)
 
 L'**arbre** de dénombrement aux échecs a une propriété remarquable : il ne croît pas linéairement avec la durée de la partie, il explose. Cette explosion est ce qu'on appelle l'**explosion combinatoire**, et c'est l'un des phénomènes les plus importants en **mathématiques** appliquées et en **informatique**. Elle apparaît dans la cryptographie (force brute), dans la biologie (combinaisons d'ADN), dans la chimie (conformations moléculaires), et dans tous les problèmes où il faut chercher dans un espace très grand.
 

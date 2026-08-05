@@ -56,6 +56,8 @@ Plus intéressant encore : la probabilité de remporter le match, c'est-à-dire 
 
 C'est un résultat contre-intuitif. Même entre joueurs parfaitement égaux, le résultat parfaitement équitable de cinq-cinq n'a que vingt-cinq pour cent de probabilité. Autrement dit, un score « inégal » est plus probable qu'un score « égal ». La **loi binomiale** explique pourquoi tant de matchs paraissent déséquilibrés alors que les joueurs sont au même niveau : c'est le hasard de la distribution, pas une différence de force.
 
+![Distribution binomiale B(10 ; 0,5) : P(X = 5) ≈ 24,6 % seulement, et la probabilité de gagner au moins 6 parties sur 10 est ≈ 37,7 %, plus élevée qu'un score parfaitement égal.](/images/sujet-elo-02-loi-binomiale.svg)
+
 La principale **limite** de cette modélisation est l'hypothèse p égal à zéro virgule cinq. En pratique, deux joueurs ne sont jamais exactement au même niveau. Il faut donc une méthode pour estimer p à partir des cotes des deux joueurs. C'est ce que fait la formule Elo.
 
 ## La formule Elo et la suite récurrente de mise à jour
@@ -65,6 +67,8 @@ Le système Elo est composé de deux **fonctions** mathématiques essentielles. 
 La **formule de probabilité** s'écrit : P(A bat B) égale un divisé par (un plus dix puissance (R_B moins R_A divisé par quatre cents)), où R_A et R_B sont les cotes des deux joueurs. Cette fonction est une **sigmoïde** : elle vaut toujours entre zéro et un, elle est croissante en (R_A moins R_B), et elle prend la valeur zéro virgule cinq quand les cotes sont égales.
 
 Calculons un **exemple**. Si R_A vaut mille six cents et R_B vaut mille huit cents, l'écart est de deux cents points en faveur de B. On calcule P égale un divisé par (un plus dix puissance zéro virgule cinq), soit un divisé par environ quatre virgule un six, soit environ zéro virgule deux quatre. Donc le joueur A, plus faible, a environ vingt-quatre pour cent de chances de battre B. Ce chiffre, vingt-quatre pour cent, est précieux : il quantifie une intuition qualitative (« A est plus faible mais peut gagner »).
+
+![Courbe sigmoïde de la formule Elo : P(A bat B) vaut 0,5 quand les cotes sont égales, monte à 0,76 pour un écart de +200 points et descend à 0,24 pour −200 points, toujours comprise entre 0 et 1.](/images/sujet-elo-01-sigmoide-probabilite.svg)
 
 La **mise à jour de cote**, après une partie, suit la formule R'_A égale R_A plus K multiplié par (résultat moins P), où le résultat vaut un en cas de victoire, zéro virgule cinq en cas de nulle, zéro en cas de défaite, et où K est un coefficient typiquement entre seize et trente-deux.
 

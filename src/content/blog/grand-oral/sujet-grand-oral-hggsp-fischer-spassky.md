@@ -59,6 +59,8 @@ Le match se déroule en juillet et août mille neuf cent soixante-douze. Fischer
 
 C'est exactement ce que Joseph Nye, deux décennies plus tard, théorisera sous le nom de **soft power** : la capacité d'un État à influencer les autres par l'attraction culturelle plutôt que par la coercition. L'URSS avait construit son soft power échiquéen pendant vingt-quatre ans, et les États-Unis le récupèrent en quelques mois grâce à une figure individuelle. Le rapport de force symbolique bascule.
 
+![Hard power et soft power selon Nye : Fischer-Spassky 1972 illustre comment un match d'échecs bascule le rapport de puissance symbolique entre deux blocs.](/images/sujet-fischer-01-soft-power-hard-power.svg)
+
 ## Les limites de cette lecture
 
 Cette analyse est puissante, mais plusieurs **limites** doivent être posées honnêtement.
@@ -68,6 +70,8 @@ Première **limite** : l'**instrumentalisation n'est pas totale**. Fischer lui-m
 Deuxième **limite** : l'**effet mesurable est incertain**. L'augmentation des adhésions aux clubs américains est documentée, mais son lien causal avec le soft power étatique est discutable. D'autres facteurs peuvent l'expliquer : médiatisation, personnalité de Fischer, contexte de **mémoire** générale du **conflit** est-ouest. La causalité en sciences sociales est rarement aussi propre que les récits le suggèrent.
 
 Troisième **limite** : le **soft power ne dure pas**. Fischer refuse de défendre son titre en mille neuf cent soixante-quinze, s'exile, et disparaît du circuit officiel. L'URSS reprend immédiatement la domination avec Anatoly Karpov, champion de mille neuf cent soixante-quinze à mille neuf cent quatre-vingt-cinq, puis Garry Kasparov, de mille neuf cent quatre-vingt-cinq à deux mille. Le match de mille neuf cent soixante-douze n'a pas modifié la structure de **puissance** : il l'a temporairement inversée, mais sans continuité institutionnelle, l'effet s'estompe.
+
+![Frise chronologique de la domination soviétique aux échecs de 1948 à 2000 : vingt-quatre ans de monopole, trois ans Fischer, puis retour immédiat de l'URSS avec Karpov et Kasparov.](/images/sujet-fischer-02-domination-chronologie.svg)
 
 Quatrième **limite** : la **mémoire divisée**. Le même événement est raconté différemment selon les pays. Aux États-Unis, c'est l'histoire du génie individuel battant le système collectiviste, récit qui colle au rêve américain. En Russie, on insiste sur l'instabilité psychologique de Fischer (refus de jouer, exigences absurdes lors du match) pour minimiser la portée symbolique. Ces deux récits coexistent et alimentent deux **mémoires** nationales différentes du même fait. C'est un cas d'école pour la **mémoire**-**histoire** au sens de Pierre Nora.
 

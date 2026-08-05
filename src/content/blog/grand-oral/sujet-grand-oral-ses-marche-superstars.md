@@ -55,6 +55,8 @@ Du côté des revenus, les écarts sont vertigineux. Le tournoi des Candidats de
 
 Cette **donnée** est typique d'un marché à très forte concentration. Pour la quantifier rigoureusement, on peut citer l'indice de Gini, qui mesure l'inégalité des revenus : il est probablement supérieur à zéro virgule sept dans le marché des joueurs d'échecs professionnels, soit plus que l'indice de Gini du Brésil ou de l'Afrique du Sud, qui sont parmi les pays les plus inégalitaires du monde.
 
+![Pyramide des revenus des joueurs d'échecs : moins de 300 professionnels sur 200 000 classés FIDE, avec un facteur 100 à 1000 d'écart entre la base et les superstars comme Carlsen à 10 millions d'euros par an.](/images/sujet-marche-superstars-01-concentration-revenus.svg)
+
 ## L'économie des superstars et la rente différentielle
 
 Comment expliquer cette concentration extrême des revenus ? La théorie économique la plus pertinente est celle de l'**économie des superstars**, formulée par Sherwin Rosen en mille neuf cent quatre-vingt-un dans un article devenu célèbre, *The Economics of Superstars*.
@@ -68,6 +70,8 @@ Deuxième mécanisme : la **substituabilité imparfaite**. Pour un consommateur,
 Aux échecs, ces deux mécanismes opèrent à plein. Les plateformes Chess.com et Lichess permettent à des millions de spectateurs de regarder la même partie en direct. Le sponsoring se concentre sur les figures reconnaissables. Les éditeurs de livres préfèrent payer Magnus Carlsen pour son nom plutôt que dix grands maîtres anonymes pour la même expertise technique.
 
 Un second mécanisme économique pertinent est la **rente différentielle**, théorisée par David Ricardo au dix-neuvième siècle pour la terre agricole. L'idée : quand un facteur de production est rare, il capte un revenu supérieur sans contribution proportionnelle supplémentaire. Aux échecs, les organisateurs des tournois super-élite, comme Tata Steel ou la Sinquefield Cup, n'invitent qu'environ quinze joueurs sur les deux cent mille classés. Ces invitations sont une rente : les joueurs invités touchent des cachets de présence en plus des prix, indépendamment de leur résultat. Cette rente est différentielle parce qu'elle reflète une rareté que les autres joueurs, même très forts, ne peuvent pas reproduire.
+
+![Les deux mécanismes de Rosen (technologie de diffusion et substituabilité imparfaite) et la rente différentielle de Ricardo expliquant la concentration extrême des revenus au sommet du marché des joueurs d'échecs.](/images/sujet-marche-superstars-02-mecanismes-rosen-ricardo.svg)
 
 ## Limites du modèle et transformation contemporaine
 

@@ -62,7 +62,11 @@ Premièrement, un **réseau de neurones** profond. Ce réseau prend en entrée u
 
 Deuxièmement, un algorithme de recherche appelé **Monte Carlo Tree Search**, ou MCTS. Contrairement au minimax, qui explore l'**arbre** de manière déterministe et exhaustive, MCTS explore de manière sélective et stochastique. Il visite préférentiellement les nœuds que le réseau de neurones juge prometteurs, accumule des statistiques de victoire et de défaite par simulation, et retourne le coup le plus visité.
 
+![Contraste entre minimax (exploration exhaustive de tous les nœuds à profondeur fixée) et MCTS d'AlphaZero (exploration sélective guidée par les probabilités du réseau de neurones).](/images/sujet-alphazero-02-mcts-vs-minimax.svg)
+
 Troisièmement, un mécanisme d'**apprentissage par renforcement**. AlphaZero joue contre lui-même, des millions de parties. À chaque partie, il observe le résultat (victoire, défaite, nulle) et ajuste les poids de son réseau de neurones pour mieux prédire les positions gagnantes la prochaine fois. C'est une boucle d'auto-amélioration : le réseau guide MCTS, MCTS produit des **données**, ces **données** entraînent le réseau, et le cycle recommence.
+
+![Cycle d'auto-amélioration d'AlphaZero : le réseau de neurones oriente MCTS, qui joue des parties contre lui-même, dont les résultats entraînent le réseau à nouveau, sans aucune connaissance humaine injectée.](/images/sujet-alphazero-01-boucle-self-play.svg)
 
 Le résultat est spectaculaire. En quatre **heures** d'entraînement sur du matériel spécialisé (5 000 TPUs), AlphaZero atteint un niveau supérieur à Stockfish. Lors du match officiel, sur cent parties, AlphaZero a gagné vingt-huit fois, n'a jamais perdu, et a fait soixante-douze nulles. Aucune connaissance humaine n'a été injectée : AlphaZero a redécouvert seul les principes des ouvertures, des structures de pions, des sacrifices positionnels. Mieux : il a inventé des stratégies que les commentateurs humains ont qualifiées de profondément originales.
 
