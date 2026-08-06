@@ -7,7 +7,7 @@
   <rect x="40" y="55" width="255" height="220" rx="8" fill="#fff" stroke="#c9c2b4" stroke-width="1.6"/>
   <rect x="40" y="55" width="255" height="38" rx="8" fill="#c9c2b4"/>
   <rect x="40" y="75" width="255" height="18" rx="0" fill="#c9c2b4"/>
-  <text x="167" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#1c1a16">DTM — Distance to Mate</text>
+  <text x="167" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#1c1a16">DTM : Distance to Mate</text>
 
   <text x="167" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="800" fill="#9b9384">517</text>
   <text x="167" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6e6a64">coups jusqu'au mat forcé</text>
@@ -29,7 +29,7 @@
   <rect x="345" y="55" width="255" height="220" rx="8" fill="#fff" stroke="#3d8b37" stroke-width="1.8"/>
   <rect x="345" y="55" width="255" height="38" rx="8" fill="#eef3e9"/>
   <rect x="345" y="75" width="255" height="18" rx="0" fill="#eef3e9"/>
-  <text x="472" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#2e7d34">DTZ — Distance to Zero</text>
+  <text x="472" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#2e7d34">DTZ : Distance to Zero</text>
 
   <text x="472" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="800" fill="#3d8b37">7</text>
   <text x="472" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6e6a64">coups jusqu'à la prochaine</text>

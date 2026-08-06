@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="mm4">
-  <title id="mm4">Tables de transposition dans minimax : deux ordres de coups différents mènent à la même position P ; sans table de transposition le moteur l'analyse deux fois, avec table il réutilise le résultat déjà calculé — économie d'ordres de grandeur en temps de calcul.</title>
+  <title id="mm4">Tables de transposition dans minimax : deux ordres de coups différents mènent à la même position P ; sans table de transposition le moteur l'analyse deux fois, avec table il réutilise le résultat déjà calculé, économie d'ordres de grandeur en temps de calcul.</title>
   <rect width="640" height="360" fill="#faf8ef"/>
   <text x="320" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Tables de transposition : ne pas recalculer ce qu'on sait déjà</text>
 

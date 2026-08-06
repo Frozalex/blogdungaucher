@@ -21,7 +21,7 @@
 
   <!-- Gauche : Iran 1988 AUTORISÉ -->
   <rect x="40" y="210" width="240" height="112" rx="12" fill="#eef3e9" stroke="#3d8b37" stroke-width="2"/>
-  <text x="160" y="238" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2e7d34">IRAN — 1988</text>
+  <text x="160" y="238" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2e7d34">IRAN : 1988</text>
   <text x="160" y="260" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#1c1a16">Fatwa de l'ayatollah Khomeini :</text>
   <text x="160" y="278" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#2e7d34">jeu autorisé</text>
   <text x="160" y="296" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">(sans enjeu d'argent)</text>
@@ -29,7 +29,7 @@
 
   <!-- Droite : Arabie 2016 INTERDIT -->
   <rect x="360" y="210" width="240" height="112" rx="12" fill="#fff" stroke="#c9a24b" stroke-width="2"/>
-  <text x="480" y="238" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#c9a24b">ARABIE SAOUDITE — 2016</text>
+  <text x="480" y="238" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#c9a24b">ARABIE SAOUDITE : 2016</text>
   <text x="480" y="260" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#1c1a16">Fatwa du grand mufti :</text>
   <text x="480" y="278" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#c9a24b">jeu déclaré illicite</text>
   <text x="480" y="296" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">(sans force de loi)</text>

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="350" viewBox="0 0 640 350" role="img" aria-labelledby="colere3">
-  <title id="colere3">Le profil du joueur à risque de ragequit : quatre facteurs amplificateurs identifiés par la psychologie du sport — orientation ego, rigidité identitaire autour de l'Elo, perfectionnisme, et fatigue — comparés au profil résilient centré sur la maîtrise.</title>
+  <title id="colere3">Le profil du joueur à risque de ragequit : quatre facteurs amplificateurs identifiés par la psychologie du sport, orientation ego, rigidité identitaire autour de l'Elo, perfectionnisme, et fatigue, comparés au profil résilient centré sur la maîtrise.</title>
   <rect width="640" height="350" fill="#faf8ef"/>
   <text x="320" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Profils face à la colère : orientation ego vs. orientation maîtrise</text>
 
@@ -9,11 +9,11 @@
   <text x="168" y="96" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-style="italic" fill="#8a8478">orientation ego</text>
 
   <g font-family="system-ui, sans-serif" font-size="13" fill="#1c1a16">
-    <text x="60" y="126">— Objectif : battre les autres</text>
-    <text x="60" y="152">— Elo = identité</text>
-    <text x="60" y="178">— Perfectionnisme élevé</text>
-    <text x="60" y="204">— Tolérance à l'erreur faible</text>
-    <text x="60" y="230">— Manque de sommeil</text>
+    <text x="60" y="126">Objectif : battre les autres</text>
+    <text x="60" y="152">Elo = identité</text>
+    <text x="60" y="178">Perfectionnisme élevé</text>
+    <text x="60" y="204">Tolérance à l'erreur faible</text>
+    <text x="60" y="230">Manque de sommeil</text>
   </g>
 
   <text x="168" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-style="italic" fill="#a67f2a">amygdale hyperactivée</text>
@@ -29,11 +29,11 @@
   <text x="472" y="96" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-style="italic" fill="#8a8478">orientation maîtrise</text>
 
   <g font-family="system-ui, sans-serif" font-size="13" fill="#1c1a16">
-    <text x="365" y="126">— Objectif : apprendre, progresser</text>
-    <text x="365" y="152">— Elo = outil statistique</text>
-    <text x="365" y="178">— Standards élevés, erreurs = infos</text>
-    <text x="365" y="204">— Récupération rapide</text>
-    <text x="365" y="230">— Gestion du sommeil</text>
+    <text x="365" y="126">Objectif : apprendre, progresser</text>
+    <text x="365" y="152">Elo = outil statistique</text>
+    <text x="365" y="178">Standards élevés, erreurs = infos</text>
+    <text x="365" y="204">Récupération rapide</text>
+    <text x="365" y="230">Gestion du sommeil</text>
   </g>
 
   <text x="472" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-style="italic" fill="#3d8b37">amygdale régulée</text>

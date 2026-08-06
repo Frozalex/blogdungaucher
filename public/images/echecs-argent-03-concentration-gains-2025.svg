@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="ea3">
-  <title id="ea3">Concentration des gains en tournoi 2025 : courbe de Pareto des 26 premiers joueurs. Magnus Carlsen domine avec environ 1 455 000 $ ; la courbe s'effondre rapidement — seuls 4 joueurs dépassent 500 000 $, et moins de 26 atteignent 100 000 $, sur 1 800 Grand Maîtres dans le monde.</title>
+  <title id="ea3">Concentration des gains en tournoi 2025 : courbe de Pareto des 26 premiers joueurs. Magnus Carlsen domine avec environ 1 455 000 $ ; la courbe s'effondre rapidement, seuls 4 joueurs dépassent 500 000 $, et moins de 26 atteignent 100 000 $, sur 1 800 Grand Maîtres dans le monde.</title>
   <rect width="640" height="360" fill="#faf8ef"/>
   <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Concentration des gains en tournoi 2025 (top 26 sur 1 800 GMs)</text>
 
@@ -51,7 +51,7 @@
   <!-- Calcul x : rang r → x = 80 + (r-0.5)*19.8 ≈ 80 + r*19.8 - 9.9 -->
   <!-- r=1 → x=89.9; r=2→109.7; etc. step=19.8, w_bar=18 -->
 
-  <!-- Barre 1 : Carlsen 1455k → y_top=57 h=233 — vert foncé + étiquette -->
+  <!-- Barre 1 : Carlsen 1455k → y_top=57 h=233 - vert foncé + étiquette -->
   <rect x="82" y="57" width="18" height="233" fill="#3d8b37"/>
   <!-- Barre 2 : 900k → y=146 h=144 -->
   <rect x="102" y="146" width="18" height="144" fill="#3d8b37"/>

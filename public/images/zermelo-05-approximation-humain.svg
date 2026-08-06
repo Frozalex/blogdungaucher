@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="z5">
-  <title id="z5">Le joueur humain comme approximation de la stratégie parfaite de Zermelo : trois niveaux d'approximation — amateur, Grand Maître, moteur — se rapprochent progressivement de la vérité Zermelo (inaccessible), mais aucun ne l'atteint ; la différence entre humain et moteur est quantitative, pas qualitative.</title>
+  <title id="z5">Le joueur humain comme approximation de la stratégie parfaite de Zermelo : trois niveaux d'approximation, amateur, Grand Maître, moteur, se rapprochent progressivement de la vérité Zermelo (inaccessible), mais aucun ne l'atteint ; la différence entre humain et moteur est quantitative, pas qualitative.</title>
   <rect width="640" height="360" fill="#faf8ef"/>
   <text x="320" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Tous les joueurs sont des approximations de Zermelo</text>
 
@@ -10,7 +10,7 @@
 
   <!-- Ligne de la vérité Zermelo (inaccessible) -->
   <line x1="80" y1="68" x2="620" y2="68" stroke="#c9a24b" stroke-width="2" stroke-dasharray="8 5"/>
-  <text x="395" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#c9a24b">Vérité Zermelo (valeur réelle des échecs — inaccessible)</text>
+  <text x="395" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#c9a24b">Vérité Zermelo (valeur réelle des échecs : inaccessible)</text>
 
   <!-- Niveaux d'approximation : barres verticales -->
 

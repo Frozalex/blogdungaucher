@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="350" viewBox="0 0 640 350" role="img" aria-labelledby="gm3">
-  <title id="gm3">Théorème de Zermelo (1913) : dans tout jeu à deux joueurs, à information parfaite, fini et à somme nulle, l'une des trois issues est vraie avec le jeu parfait — victoire des Blancs, victoire des Noirs, ou nulle. Les quatre propriétés des échecs qui satisfont les hypothèses du théorème sont illustrées : somme nulle, information parfaite, stratégie pure, déterministe.</title>
+  <title id="gm3">Théorème de Zermelo (1913) : dans tout jeu à deux joueurs, à information parfaite, fini et à somme nulle, l'une des trois issues est vraie avec le jeu parfait, victoire des Blancs, victoire des Noirs, ou nulle. Les quatre propriétés des échecs qui satisfont les hypothèses du théorème sont illustrées : somme nulle, information parfaite, stratégie pure, déterministe.</title>
   <rect width="640" height="350" fill="#faf8ef"/>
   <text x="320" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Théorème de Zermelo (1913) : les échecs ont une issue déterminée</text>
 

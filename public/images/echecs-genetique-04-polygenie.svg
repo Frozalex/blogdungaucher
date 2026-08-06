@@ -2,7 +2,7 @@
   <title id="gen4">Les capacités cognitives sont un trait polygénique : des centaines de loci génétiques identifiés par les études GWAS contribuent chacun moins de 0,1 % de la variance du QI. Il n'existe pas de « gène de l'intelligence » unique ; l'effet résulte de milliers de petites contributions additives (Lee et al., 2018, Nature Genetics, n = 1,1 million).</title>
   <rect width="640" height="340" fill="#faf8ef"/>
   <text x="320" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">L'intelligence est polygénique : des centaines de loci, chacun infime</text>
-  <text x="320" y="50" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#8a8478">Lee et al., 2018 — Nature Genetics — n = 1,1 million de participants</text>
+  <text x="320" y="50" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#8a8478">Lee et al., 2018 : Nature Genetics : n = 1,1 million de participants</text>
 
   <!-- Manhattan-plot inspired visualization -->
   <!-- X axis = chromosomes / loci, Y = effect size (tiny) -->
@@ -34,7 +34,7 @@
   <line x1="70" y1="154" x2="590" y2="154" stroke="#c9a24b" stroke-width="1.2" stroke-dasharray="5 3"/>
   <text x="595" y="157" font-family="system-ui, sans-serif" font-size="10" fill="#c9a24b">0,10 %</text>
 
-  <!-- Many small dots representing SNPs — mostly clustered near zero, none > 0.10% -->
+  <!-- Many small dots representing SNPs - mostly clustered near zero, none > 0.10% -->
   <!-- We distribute dots across x=80 to 580 at various small heights -->
   <!-- Using circles at y values close to 260 (small effect) -->
   <g fill="#3d8b37" opacity="0.6">

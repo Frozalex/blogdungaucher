@@ -7,9 +7,9 @@
   <!-- Each shows: label + bar + value -->
 
   <!-- Y positions for the three bars -->
-  <!-- Bar 1: Matériel — y center = 105 -->
-  <!-- Bar 2: Position — y center = 195 -->
-  <!-- Bar 3: Sécurité roi — y center = 285 -->
+  <!-- Bar 1: Matériel - y center = 105 -->
+  <!-- Bar 2: Position - y center = 195 -->
+  <!-- Bar 3: Sécurité roi - y center = 285 -->
 
   <!-- Zero line at x=320 -->
   <line x1="320" y1="50" x2="320" y2="330" stroke="#1c1a16" stroke-width="1.5"/>

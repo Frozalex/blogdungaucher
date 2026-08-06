@@ -8,35 +8,35 @@
   <text x="320" y="168" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">Reproduction</text>
   <text x="320" y="186" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">sociale</text>
 
-  <!-- Mechanism 1 — top left -->
+  <!-- Mechanism 1 - top left -->
   <rect x="20" y="44" width="168" height="68" rx="8" fill="#fff" stroke="#c9c2b4" stroke-width="1.5"/>
   <text x="104" y="67" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1c1a16">① Transmission familiale</text>
   <text x="104" y="86" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Parent joueur → enfant joueur</text>
   <text x="104" y="103" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Surreprésentation classes sup.</text>
   <line x1="188" y1="78" x2="279" y2="148" stroke="#c9c2b4" stroke-width="1.2" stroke-dasharray="4 3"/>
 
-  <!-- Mechanism 2 — top right -->
+  <!-- Mechanism 2 - top right -->
   <rect x="452" y="44" width="168" height="68" rx="8" fill="#fff" stroke="#c9c2b4" stroke-width="1.5"/>
   <text x="536" y="67" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1c1a16">② Coût du temps</text>
   <text x="536" y="86" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Centaines d'heures requises</text>
   <text x="536" y="103" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Effet ciseau silencieux</text>
   <line x1="452" y1="78" x2="361" y2="148" stroke="#c9c2b4" stroke-width="1.2" stroke-dasharray="4 3"/>
 
-  <!-- Mechanism 3 — left -->
+  <!-- Mechanism 3 - left -->
   <rect x="20" y="222" width="168" height="68" rx="8" fill="#fff" stroke="#c9c2b4" stroke-width="1.5"/>
   <text x="104" y="245" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1c1a16">③ Coût matériel</text>
   <text x="104" y="264" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Entraîneurs 40–100 €/h</text>
   <text x="104" y="281" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Tournois : milliers €/an</text>
   <line x1="188" y1="256" x2="279" y2="200" stroke="#c9c2b4" stroke-width="1.2" stroke-dasharray="4 3"/>
 
-  <!-- Mechanism 4 — right -->
+  <!-- Mechanism 4 - right -->
   <rect x="452" y="222" width="168" height="68" rx="8" fill="#fff" stroke="#c9c2b4" stroke-width="1.5"/>
   <text x="536" y="245" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1c1a16">④ Distinction sociale</text>
   <text x="536" y="264" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Marqueur d'appartenance</text>
   <text x="536" y="281" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">aux classes éduquées</text>
   <line x1="452" y1="256" x2="361" y2="200" stroke="#c9c2b4" stroke-width="1.2" stroke-dasharray="4 3"/>
 
-  <!-- Mechanism 5 — bottom center -->
+  <!-- Mechanism 5 - bottom center -->
   <rect x="196" y="308" width="248" height="50" rx="8" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.8"/>
   <text x="320" y="329" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#2e7d34">⑤ Habitus échiquéen</text>
   <text x="320" y="348" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Concorde avec l'habitus des classes sup. : effort différé, défaite = info</text>

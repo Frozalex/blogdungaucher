@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="em3">
-  <title id="em3">Explosion combinatoire et nombre de Shannon : après 1 coup de chaque camp il y a 400 positions, après 2 coups 8 902, après 3 coups 9 millions — le nombre total de parties possibles est estimé à 10^120, soit 40 ordres de grandeur de plus que le nombre d'atomes dans l'univers observable (10^80).</title>
+  <title id="em3">Explosion combinatoire et nombre de Shannon : après 1 coup de chaque camp il y a 400 positions, après 2 coups 8 902, après 3 coups 9 millions, le nombre total de parties possibles est estimé à 10^120, soit 40 ordres de grandeur de plus que le nombre d'atomes dans l'univers observable (10^80).</title>
   <rect width="640" height="360" fill="#faf8ef"/>
   <text x="320" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Le nombre de Shannon : l'explosion combinatoire des échecs</text>
 

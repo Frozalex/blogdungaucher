@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="350" viewBox="0 0 640 350" role="img" aria-labelledby="sz1">
-  <title id="sz1">Théorème de Zermelo illustré par récurrence sur l'arbre de jeu : à chaque feuille le résultat est connu (victoire Blancs, Noirs, ou nulle). En remontant vers la racine, MAX choisit le meilleur résultat disponible et MIN choisit le pire pour l'adversaire. Zermelo garantit que l'un des trois cas — Blancs gagnent, Noirs gagnent, nulle — est inévitable sous jeu parfait.</title>
+  <title id="sz1">Théorème de Zermelo illustré par récurrence sur l'arbre de jeu : à chaque feuille le résultat est connu (victoire Blancs, Noirs, ou nulle). En remontant vers la racine, MAX choisit le meilleur résultat disponible et MIN choisit le pire pour l'adversaire. Zermelo garantit que l'un des trois cas, Blancs gagnent, Noirs gagnent, nulle, est inévitable sous jeu parfait.</title>
   <rect width="640" height="350" fill="#faf8ef"/>
-  <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Zermelo 1913 : récurrence sur l'arbre — un résultat existe</text>
+  <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Zermelo 1913 : récurrence sur l'arbre, un résultat existe</text>
 
   <!-- Arêtes niveau 0→1 -->
   <g stroke="#c9c2b4" stroke-width="1.5" fill="none">
@@ -15,7 +15,7 @@
     <line x1="165" y1="180" x2="230" y2="258"/>
   </g>
 
-  <!-- Arêtes niveau 1→2 (droite) — chemin vert -->
+  <!-- Arêtes niveau 1→2 (droite) - chemin vert -->
   <g stroke="#3d8b37" stroke-width="2.2" fill="none">
     <line x1="320" y1="78" x2="480" y2="165"/>
     <line x1="472" y1="180" x2="410" y2="258"/>

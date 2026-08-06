@@ -38,7 +38,7 @@
 
   <!-- Courbe de la cote : oscille autour de E=170, amplitude décroissante
        Début autour de 130 (sous E), puis remonte et fluctue de plus en plus près de 170
-       Points (x, y) — x de 70 à 580 -->
+       Points (x, y) - x de 70 à 580 -->
   <polyline points="
     70,230
     85,200

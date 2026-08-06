@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="se2">
   <title id="se2">Distribution binomiale B(10, 0,5) : probabilité d'obtenir exactement k victoires sur 10 parties entre deux joueurs de niveau identique. P(X=5) ≈ 24,6 % seulement ; P(X≥6) ≈ 37,7 %, ce qui montre qu'un score déséquilibré est plus probable qu'un score parfaitement égal.</title>
   <rect width="640" height="360" fill="#faf8ef"/>
-  <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Loi binomiale B(10 ; 0,5) — victoires sur 10 parties à égalité</text>
+  <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Loi binomiale B(10 ; 0,5) : victoires sur 10 parties à égalité</text>
 
   <!-- Axes -->
   <g stroke="#1c1a16" stroke-width="1.8" fill="none">
@@ -44,12 +44,12 @@
   <rect x="274" y="117" width="36" height="183" fill="#9b9384"/>
   <text x="292" y="315" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8a8478">4</text>
 
-  <!-- k=5 bar_h=220 x=322 — le plus haut, couleur accent -->
+  <!-- k=5 bar_h=220 x=322 - le plus haut, couleur accent -->
   <rect x="322" y="80" width="36" height="220" fill="#3d8b37"/>
   <text x="340" y="315" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#2e7d34">5</text>
   <text x="340" y="73" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#2e7d34">24,6 %</text>
 
-  <!-- k=6 bar_h=183 x=370 — vert clair (zone "déséquilibré mais attendu") -->
+  <!-- k=6 bar_h=183 x=370 - vert clair (zone "déséquilibré mais attendu") -->
   <rect x="370" y="117" width="36" height="183" fill="#c9a24b"/>
   <text x="388" y="315" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8a8478">6</text>
 

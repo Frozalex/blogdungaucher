@@ -18,11 +18,11 @@
   <!-- Milieu : joueur concerné -->
   <line x1="158" y1="240" x2="482" y2="240" stroke="#3d8b37" stroke-width="1.5"/>
   <rect x="240" y="200" width="160" height="34" rx="6" fill="#3d8b37"/>
-  <text x="320" y="218" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#fff">TOI — 1800 Elo</text>
+  <text x="320" y="218" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#fff">TOI : 1800 Elo</text>
   <text x="320" y="234" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#eef3e9">classement visible par tous</text>
 
   <!-- Bas : masse -->
-  <text x="320" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6e6a64">moins de 1800 — grande majorité</text>
+  <text x="320" y="272" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6e6a64">moins de 1800 : grande majorité</text>
 
   <!-- Flèche vers le haut (regard imposteur) -->
   <line x1="560" y1="240" x2="560" y2="115" stroke="#c9a24b" stroke-width="2.2"/>

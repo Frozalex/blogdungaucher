@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="340" viewBox="0 0 640 340" role="img" aria-labelledby="gg01">
-  <title id="gg01">Structure de l'épreuve Grand Oral : 40 minutes réparties en 4 phases — 20 min de préparation, 5 min d'exposé debout, 10 min d'échange avec le jury, 5 min sur l'orientation post-bac.</title>
+  <title id="gg01">Structure de l'épreuve Grand Oral : 40 minutes réparties en 4 phases, 20 min de préparation, 5 min d'exposé debout, 10 min d'échange avec le jury, 5 min sur l'orientation post-bac.</title>
   <rect width="640" height="340" fill="#faf8ef"/>
   <text x="320" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Les 40 minutes du Grand Oral : quatre phases distinctes</text>
 
@@ -16,7 +16,7 @@
   <rect x="530" y="70" width="70" height="44" rx="8" fill="#c9a24b"/>
 
   <!-- Phase labels inside bars -->
-  <text x="180" y="97" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2e7d34">20 min — Préparation</text>
+  <text x="180" y="97" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2e7d34">20 min : Préparation</text>
   <text x="355" y="97" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#fff">5 min</text>
   <text x="460" y="97" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">10 min</text>
   <text x="565" y="97" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#fff">5 min</text>

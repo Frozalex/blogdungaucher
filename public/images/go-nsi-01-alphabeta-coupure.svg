@@ -38,7 +38,7 @@
     <circle cx="390" cy="240" r="20" fill="#fff" stroke="#c9c2b4" stroke-width="1.6"/>
     <text x="390" y="246" fill="#6e6a64">8</text>
 
-    <!-- Right subtree right leaf: PRUNED — show with X -->
+    <!-- Right subtree right leaf: PRUNED - show with X -->
     <circle cx="530" cy="240" r="20" fill="#fff" stroke="#c9c2b4" stroke-width="1.4" stroke-dasharray="4 3"/>
     <text x="530" y="246" fill="#c9c2b4">?</text>
   </g>

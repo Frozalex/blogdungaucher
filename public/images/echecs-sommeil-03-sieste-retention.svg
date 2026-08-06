@@ -2,7 +2,7 @@
   <title id="som3">Effet de la sieste sur la rétention mémorielle selon Mednick et al. (2003, Nature Neuroscience) : le groupe sans sieste régresse de 10 % entre la session du matin et celle de l'après-midi ; le groupe avec sieste de 90 minutes (incluant une phase REM) améliore ses performances de 34 % et surpasse même le groupe nuit complète.</title>
   <rect width="640" height="340" fill="#faf8ef"/>
   <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Sieste et rétention : +34 % vs groupe sans sieste</text>
-  <text x="320" y="47" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#8a8478">Mednick et al., 2003 — Nature Neuroscience — tâches de reconnaissance visuelle</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#8a8478">Mednick et al., 2003 : Nature Neuroscience : tâches de reconnaissance visuelle</text>
 
   <!-- 3 group bars: No nap / Nap 90min / Full night -->
   <!-- Y axis: performance change % from -15 to +40 -->
@@ -32,21 +32,21 @@
     <line x1="100" y1="268" x2="580" y2="268"/>
   </g>
 
-  <!-- Bar 1: No nap — regression −10% → bar goes DOWN from 230 to 268 (38px down) -->
+  <!-- Bar 1: No nap - regression −10% → bar goes DOWN from 230 to 268 (38px down) -->
   <rect x="145" y="230" width="100" height="38" rx="4" fill="#c9c2b4"/>
   <text x="195" y="220" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#9b9384">−10 %</text>
   <text x="195" y="284" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#6e6a64">Sans sieste</text>
   <text x="195" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8a8478">régression</text>
   <text x="195" y="315" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8a8478">après-midi</text>
 
-  <!-- Bar 2: Nap 90min — +34% → 34*3.818=129.8→130px UP from 230 → top y=100 -->
+  <!-- Bar 2: Nap 90min - +34% → 34*3.818=129.8→130px UP from 230 → top y=100 -->
   <rect x="270" y="100" width="100" height="130" rx="4" fill="#3d8b37"/>
   <text x="320" y="94" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#3d8b37">+34 %</text>
   <text x="320" y="284" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1c1a16">Sieste 90 min</text>
   <text x="320" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">avec phase REM</text>
   <text x="320" y="315" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">(Mednick 2003)</text>
 
-  <!-- Bar 3: Full night — +35% comparable → ~133px UP → top y=97 -->
+  <!-- Bar 3: Full night - +35% comparable → ~133px UP → top y=97 -->
   <rect x="395" y="97" width="100" height="133" rx="4" fill="#5b9fd4"/>
   <text x="445" y="91" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#5b9fd4">+35 %</text>
   <text x="445" y="284" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1c1a16">Nuit complète</text>

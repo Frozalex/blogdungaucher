@@ -2,7 +2,7 @@
   <title id="som4">Dette de sommeil cumulative sur 5 jours de tournoi selon Dinges et al. (1997) : une perte de 1 à 2 heures par nuit crée une dégradation cognitive aussi sévère qu'une nuit blanche, mais les joueurs sous-estiment systématiquement leur niveau de fatigue. Les erreurs de calcul augmentent à partir de la ronde 4, alors que la fatigue subjective reste apparemment faible.</title>
   <rect width="640" height="340" fill="#faf8ef"/>
   <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Dette de sommeil cumulative en tournoi de 5 jours</text>
-  <text x="320" y="47" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#8a8478">Dinges et al., 1997 — restriction chronique 4–5 h/nuit</text>
+  <text x="320" y="47" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#8a8478">Dinges et al., 1997 : restriction chronique 4–5 h/nuit</text>
 
   <!-- Axes -->
   <line x1="80" y1="260" x2="590" y2="260" stroke="#1c1a16" stroke-width="1.5"/>
@@ -25,7 +25,7 @@
   </g>
   <text x="335" y="295" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8a8478">Rondes du tournoi</text>
 
-  <!-- Y labels: two curves — cognitive errors (red/amber) and subjective fatigue (gray) -->
+  <!-- Y labels: two curves - cognitive errors (red/amber) and subjective fatigue (gray) -->
   <!-- Range 0–100 (arbitrary units), y=260 is 0, y=80 is 100 → 180px / 100 = 1.8px/unit -->
 
   <!-- Grid lines -->
@@ -45,7 +45,7 @@
   </g>
   <text x="32" y="175" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#6e6a64" transform="rotate(-90 32 175)">Niveau relatif (0–100)</text>
 
-  <!-- Curve 1: Cognitive errors (amber/red) — rises steeply from R4 onwards -->
+  <!-- Curve 1: Cognitive errors (amber/red) - rises steeply from R4 onwards -->
   <!-- Points: R1=15, R2=18, R3=22, R4=35, R5=50, R6=65, R7=78, R8=88, R9=95 -->
   <!-- y = 260 - value*1.8 -->
   <!-- R1: y=233, R2=228, R3=220, R4=197, R5=170, R6=143, R7=120, R8=101, R9=89 -->
@@ -74,7 +74,7 @@
     <circle cx="590" cy="89"  r="7"/>
   </g>
 
-  <!-- Curve 2: Subjective fatigue (gray) — rises slowly, plateaus -->
+  <!-- Curve 2: Subjective fatigue (gray) - rises slowly, plateaus -->
   <!-- R1=10, R2=14, R3=20, R4=28, R5=35, R6=40, R7=44, R8=47, R9=50 -->
   <!-- y: 242, 235, 224, 210, 197, 188, 181, 175, 170 -->
   <polyline points="

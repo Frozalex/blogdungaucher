@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="350" viewBox="0 0 640 350" role="img" aria-labelledby="chaos2">
-  <title id="chaos2">Point de bifurcation sur l'échiquier : avant le coup critique, plusieurs chemins restent équilibrés ; au point de bifurcation, la nature de la position change qualitativement — un seul chemin mène à la victoire, tous les autres s'effondrent.</title>
+  <title id="chaos2">Point de bifurcation sur l'échiquier : avant le coup critique, plusieurs chemins restent équilibrés ; au point de bifurcation, la nature de la position change qualitativement, un seul chemin mène à la victoire, tous les autres s'effondrent.</title>
   <rect width="640" height="350" fill="#faf8ef"/>
   <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Le coup de bifurcation : quand la trajectoire se décide</text>
 

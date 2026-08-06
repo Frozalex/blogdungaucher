@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="gms1">
   <title id="gms1">Histogramme de la loi binomiale B(14, 0,5) appliquée à un match d'échecs de 14 parties entre deux joueurs égaux. L'espérance est à 7 parties gagnées. La probabilité d'un résultat exact de 7-7 est d'environ 21 %. La zone grisée (8 victoires ou plus) couvre environ 39,5 % des cas.</title>
   <rect width="640" height="360" fill="#faf8ef"/>
-  <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Loi binomiale B(14, ½) — match de 14 parties entre égaux</text>
+  <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Loi binomiale B(14, ½) : match de 14 parties entre égaux</text>
 
   <!-- Axes -->
   <g stroke="#1c1a16" stroke-width="1.8" fill="none">

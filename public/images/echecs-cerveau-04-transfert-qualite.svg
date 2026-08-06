@@ -2,7 +2,7 @@
   <title id="ec04">Sala et Gobet 2017 (méta-analyse, 259 citations) : l'effet estimé des échecs sur les compétences cognitives diminue à mesure que la qualité du design expérimental augmente. Avec des groupes contrôles actifs rigoureux, les effets sont faibles à modérés et le transfert lointain reste non prouvé.</title>
   <rect width="640" height="340" fill="#faf8ef"/>
   <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Sala &amp; Gobet 2017 : plus le design est rigoureux, plus l'effet diminue</text>
-  <text x="320" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8a8478">Méta-analyse, 259 citations — Current Directions in Psychological Science (Q1)</text>
+  <text x="320" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8a8478">Méta-analyse, 259 citations : Current Directions in Psychological Science (Q1)</text>
 
   <!-- Axes -->
   <line x1="80" y1="270" x2="590" y2="270" stroke="#1c1a16" stroke-width="1.8"/>

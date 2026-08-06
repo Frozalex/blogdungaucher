@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="mm1">
-  <title id="mm1">Élagage alpha-bêta appliqué à un arbre minimax à trois niveaux : les branches grisées sont élaggées car elles ne peuvent pas influencer la décision finale — alpha vaut déjà 3 pour MAX, donc toute branche où MIN peut forcer moins de 3 est abandonnée sans exploration.</title>
+  <title id="mm1">Élagage alpha-bêta appliqué à un arbre minimax à trois niveaux : les branches grisées sont élaggées car elles ne peuvent pas influencer la décision finale, alpha vaut déjà 3 pour MAX, donc toute branche où MIN peut forcer moins de 3 est abandonnée sans exploration.</title>
   <rect width="640" height="360" fill="#faf8ef"/>
   <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Élagage alpha-bêta : couper sans changer le résultat</text>
 

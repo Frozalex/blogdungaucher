@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="chaos5">
-  <title id="chaos5">Distinction entre position compliquée et position chaotique : une position compliquée a beaucoup de coups candidats mais de faibles écarts d'évaluation entre eux — on peut se tromper sans perdre la partie. Une position chaotique a peu de coups viables mais des écarts d'évaluation énormes — un seul coup faible et la position bascule.</title>
+  <title id="chaos5">Distinction entre position compliquée et position chaotique : une position compliquée a beaucoup de coups candidats mais de faibles écarts d'évaluation entre eux, on peut se tromper sans perdre la partie. Une position chaotique a peu de coups viables mais des écarts d'évaluation énormes, un seul coup faible et la position bascule.</title>
   <rect width="640" height="360" fill="#faf8ef"/>
   <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">Compliqué ≠ Chaotique : deux régimes d'erreur très différents</text>
 
@@ -48,7 +48,7 @@
     <!-- good moves (green) -->
     <rect x="358" y="148" width="28" height="90" fill="#3d8b37" rx="3"/>
     <rect x="398" y="155" width="28" height="83" fill="#3d8b37" rx="3"/>
-    <!-- bad moves (red/amber) — very short = very negative, drawn differently as downward -->
+    <!-- bad moves (red/amber) - very short = very negative, drawn differently as downward -->
     <!-- show as tall red bars below baseline to indicate big negative eval -->
     <rect x="438" y="238" width="28" height="60" fill="#c9a24b" rx="3"/>
     <rect x="478" y="238" width="28" height="75" fill="#c9a24b" rx="3"/>
