@@ -60,6 +60,8 @@ Une défaite après avoir bien joué pendant 40 coups, ratée à cause d'un blun
 
 La [frustration](https://fr.wikipedia.org/wiki/Frustration), définie en psychologie comme la réponse émotionnelle à l'obstruction d'un objectif valorisé, est un puissant déclencheur de colère selon la [théorie frustration-agression](https://fr.wikipedia.org/wiki/Th%C3%A9orie_frustration-agression) de Dollard et Miller. Plus l'objectif est valorisé (gagner cette partie, maintenir son classement, battre cet adversaire spécifique), plus la frustration de ne pas l'atteindre est intense.
 
+![Théorie frustration-agression de Dollard et Miller : plus l'objectif est valorisé (classement, adversaire symbolique), plus la frustration et la probabilité de ragequit sont élevées.](/images/colere-02-frustration-agression.svg)
+
 ### Le sentiment d'injustice
 
 Les "mauvais coups qui fonctionnent" sont une source particulière de colère aux échecs. L'adversaire joue un coup théoriquement mauvais, mais tu ne le punis pas correctement et il l'emporte. Ton cerveau enregistre cela comme une injustice profonde : le bon jeu aurait dû être récompensé.
@@ -85,6 +87,8 @@ La recherche en psychologie du sport a identifié des facteurs personnels qui au
 **Le perfectionnisme** combiné à une faible tolérance à l'erreur. Les perfectionnistes souffrent particulièrement des blunders, car chaque erreur constitue une violation de leur standard interne.
 
 **Le manque de sommeil et la fatigue**. Le cortex préfrontal, responsable de la régulation émotionnelle, est particulièrement sensible à la fatigue. Un joueur fatigué est neuralement moins capable de réguler ses émotions, même avec la même motivation consciente de le faire.
+
+![Comparaison des profils face à la colère : le joueur orienté ego (Elo identité, perfectionnisme fort) présente une amygdale hyperactivée, tandis que le joueur orienté maîtrise régule efficacement ses émotions.](/images/colere-03-profil-risque.svg)
 
 ## Techniques de régulation concrètes
 

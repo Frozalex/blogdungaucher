@@ -78,6 +78,8 @@ En termes bayésiens, si $P(\text{blunder} | \text{complication}) > \text{seuil}
 
 [Bobby Fischer](https://fr.wikipedia.org/wiki/Bobby_Fischer) avait une réputation de fuir les complications sauf quand son analyse lui donnait un avantage clair. [Tal](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Tal), au contraire, cherchait systématiquement les complications, pariant implicitement sur une probabilité élevée d'erreur adverse dans les positions chaotiques qu'il créait. Ces deux approches sont cohérentes avec des estimations bayésiennes du risque d'erreur adverse différentes.
 
+![Arbre de décision bayésien compliquer vs simplifier : la ligne compliquée est objectivement inférieure mais justifiée si P(blunder adverse) × gain dépasse le seuil d'espérance de la ligne simple.](/images/reseaux-bayesiens-03-compliquer-vs-simplifier.svg)
+
 ## L'adversaire comme source d'information continue
 
 Dans une partie, l'adversaire te fournit de l'information à chaque coup. Du temps utilisé, du style de jeu révélé, des réactions aux complications. La perspective bayésienne formelle dit : utilise toute cette information pour mettre à jour en permanence ton estimation de son état cognitif et de ses ressources.
@@ -85,6 +87,8 @@ Dans une partie, l'adversaire te fournit de l'information à chaque coup. Du tem
 Si l'adversaire a utilisé 15 minutes sur un coup que tu avais vu rapidement, deux interprétations sont possibles : soit la position est plus complexe que tu ne le pensais (mise à jour de ta propre analyse), soit l'adversaire est en difficulté (mise à jour de ton estimation de son état). La bonne réponse bayésienne est de peser les deux interprétations selon leur vraisemblance.
 
 Si l'adversaire a joué rapidement une série de coups précis dans une position complexe, son état cognitif est manifestement bon : il voit clairement. Ta probabilité estimée de le faire blunder dans les prochains coups doit baisser. Si au contraire il joue lentement des coups sous-optimaux mais pas encore catastrophiques, c'est un signal que sa compréhension de la position est imparfaite : le risque de blunder dans les prochains coups monte.
+
+![Mise à jour bayésienne de P(blunder) au fil de la partie : la courbe monte lors d'un long temps de réflexion ou d'un zeitnot, et redescend après une série de coups rapides et précis.](/images/reseaux-bayesiens-02-mise-a-jour-partie.svg)
 
 ## Les limites du raisonnement bayésien aux échecs
 

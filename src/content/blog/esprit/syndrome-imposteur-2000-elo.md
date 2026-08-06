@@ -36,6 +36,8 @@ Un autre facteur spécifique aux échecs est la nature fluctuante du classement 
 
 Ce caractère volatile renforce l'impression que le chiffre "ne t'appartient pas vraiment". Si c'était une compétence stable, elle ne fluctuerait pas autant. En réalité, les fluctuations de classement sont la norme statistique, pas une preuve d'imposteur. Mais le cerveau en mode syndrome de l'imposteur interprète chaque descente comme une "révélation de la vérité" et chaque montée comme de la chance.
 
+![Fluctuations normales de l'Elo vs. interprétation de l'imposteur : chaque montée est vue comme de la chance, chaque descente comme la révélation du vrai niveau, alors que les oscillations sont statistiquement prévues par le système.](/images/imposteur-2000-02-decalage-subjectif.svg)
+
 ## Les comportements caractéristiques à 2000 Elo
 
 Le syndrome de l'imposteur à 2000 Elo génère plusieurs comportements caractéristiques reconnaissables :
@@ -57,6 +59,8 @@ Le syndrome de l'imposteur crée un paradoxe : les comportements qu'il génère 
 Résultat : le joueur à 2000 Elo avec un fort syndrome de l'imposteur joue souvent en dessous de ses moyennes réelles dans les situations importantes, confirmant par là ses craintes. C'est une prophétie auto-réalisatrice.
 
 [Carol Dweck](https://fr.wikipedia.org/wiki/Carol_Dweck) décrit ce mécanisme dans sa théorie du fixed mindset : quand l'objectif est de "paraître compétent" plutôt que de "devenir compétent", les stratégies adoptées sont fondamentalement différentes et moins efficaces.
+
+![Fixed mindset vs. growth mindset de Carol Dweck à 2000 Elo : l'un cherche à paraître compétent et évite l'exposition, l'autre cherche à devenir compétent et utilise chaque partie comme information pour dissoudre le syndrome.](/images/imposteur-2000-03-fixed-growth-mindset.svg)
 
 ![Schéma de la prophétie auto-réalisatrice à 2000 Elo : le doute initial génère des comportements d'évitement qui dégradent réellement le jeu dans les situations importantes, confirmant les craintes et refermant la boucle, à moins d'une exposition répétée et d'un journal de performances.](/images/imposteur-2000-01-prophetie.svg)
 

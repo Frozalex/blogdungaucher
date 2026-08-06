@@ -74,6 +74,8 @@ La distinction est dans le pattern. Un joueur avec des lacunes techniques dans l
 
 Le joueur avec une peur de gagner rate les positions gagnantes de façon moins cohérente techniquement, mais cohérente émotionnellement : les erreurs se concentrent dans les moments de haute pression émotionnelle (parties importantes, adversaires symboliquement significatifs, positions où la victoire est très proche).
 
+![Blunder technique ordinaire vs. sabotage inconscient lié à la peur de gagner : le premier est cohérent techniquement, le second est cohérent émotionnellement — les erreurs se concentrent en position gagnante.](/images/peur-gagner-02-sabotage-pattern.svg)
+
 ## Comment travailler sur la peur de gagner
 
 La première étape est la reconnaissance honnête du pattern. Analyser ses parties en se posant explicitement la question : "À quel moment ai-je quitté le chemin du jeu optimal ?" et "Quel était mon état émotionnel à ce moment ?"
@@ -81,6 +83,8 @@ La première étape est la reconnaissance honnête du pattern. Analyser ses part
 **La visualisation de la victoire.** Des techniques issues de la psychologie du sport consistant à visualiser mentalement de façon détaillée les scénarios de victoire, les coups qui convertissent, les fins de partie gagnées. La familiarisation avec la victoire par visualisation réduit son caractère anxiogène.
 
 **Jouer des fins de partie gagnées.** S'entraîner délibérément à convertir des fins de partie gagnantes depuis des positions théoriquement décidées. L'exposition répétée à ces conversions, dans un contexte d'entraînement sans enjeux, crée une mémoire procédurale de la conversion.
+
+![Cycle de désensibilisation à la victoire : visualisation mentale répétée puis entraînement à la conversion sans enjeu, réduisant progressivement l'anxiété liée à la position gagnante.](/images/peur-gagner-03-visualisation-conversion.svg)
 
 **Accepter que la victoire puisse faire peur.** Beaucoup de joueurs honteux de cette réaction la cachent et ne peuvent donc pas travailler dessus. La reconnaître, sans jugement, est la première condition du changement.
 

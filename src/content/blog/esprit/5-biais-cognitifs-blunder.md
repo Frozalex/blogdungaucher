@@ -89,6 +89,8 @@ Un dernier biais mérite d'être mentionné, même s'il n'est pas spécifique au
 
 Pour le joueur d'échecs, la conséquence est importante : connaître ces cinq biais ne suffit pas à s'en immuniser. La connaissance théorique et le comportement en partie sont deux choses différentes. Des protocoles comportementaux explicites (les questions systématiques mentionnées dans chaque section) sont nécessaires pour que la connaissance théorique se traduise en comportement différent à l'échiquier.
 
+![Le méta-biais de l'angle mort selon Pronin : chacun détecte facilement les biais chez les autres mais se croit immunisé soi-même ; seuls des protocoles comportementaux explicites permettent de combler cet angle mort en partie.](/images/5-biais-03-angle-mort.svg)
+
 L'entraînement de la pensée échiquéenne n'est pas seulement l'entraînement du calcul. C'est l'entraînement de la vigilance sur ses propres processus cognitifs. C'est ce que les psychologues appellent la métacognition : penser sur sa propre pensée. Et c'est peut-être la compétence la plus précieuse que les échecs peuvent développer.
 
 **Après lecture :** choisis **un** biais qui t’a coûté une partie récente ; pendant les trois prochaines sessions, pose la **même question de contrôle** avant chaque coup important (ex. « quelle autre idée j’écarte ? » pour l’Einstellung).

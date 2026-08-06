@@ -98,6 +98,8 @@ Or, les patterns tactiques s'acquièrent uniquement par la pratique répétée. 
 
 Ce qui est souvent sous-estimé dans le travail tactique : il améliore **toutes les phases du jeu**. Un joueur qui a une bonne vision tactique calcule mieux en milieu de jeu, gère mieux les pièces actives en finale et évite les pièges dans les ouvertures. La tactique est un méta-outil : son bénéfice dépasse largement les combinaisons pures.
 
+![L'effet de transfert de la tactique : travailler les combinaisons améliore non seulement la tactique pure mais aussi le calcul en milieu de jeu, la gestion des pièces en finale et la détection des pièges dans les ouvertures.](/images/regle-03-transfert-tactique.svg)
+
 [Mark Dvoretsky](https://fr.wikipedia.org/wiki/Mark_Dvoretsky), l'un des entraîneurs les plus influents du XX^e siècle, structurait l'entraînement de ses élèves autour de la résolution intensive de problèmes tactiques, même pour des joueurs déjà de haut niveau. Son argument : la rigueur du calcul se dégrade sans exercice régulier, comme un muscle non sollicité.
 
 ## Le parent pauvre : pourquoi 40 % de finales
@@ -183,6 +185,8 @@ Une version améliorée de la règle pourrait ressembler à : 30 % tactique, 30 
 Passer 40 % du temps sur la tactique en parcourant des puzzles distraitement pendant trente minutes devant une série sur fond d'écran ne produit rien. La recherche sur l'expertise, notamment les travaux d'[Anders Ericsson](https://doi.org/10.1037/0033-295X.100.3.363) sur la pratique délibérée, est nette sur ce point : c'est la qualité de l'attention pendant l'entraînement qui produit la progression, pas la durée.
 
 Un problème tactique résolu avec attention complète, en cherchant vraiment à comprendre pourquoi la combinaison fonctionne, vaut dix fois plus que dix problèmes résolus par essai-erreur sans analyse. C'est aussi pour cette raison que la **récupération** est partie intégrante de l'entraînement : voir [les bienfaits des pauses aux échecs](/blog/bienfaits-des-pauses-aux-echecs/) pour les mécanismes de consolidation mémorielle qui rendent 30 minutes de pratique attentive plus productives que 2 heures de pratique fatiguée.
+
+![Pratique délibérée selon Ericsson : un seul puzzle résolu avec attention et analyse complète produit une progression bien supérieure à dix puzzles parcourus distraitement par essai-erreur.](/images/regle-04-pratique-deliberee.svg)
 
 ---
 

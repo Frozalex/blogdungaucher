@@ -58,7 +58,9 @@ Le système [Elo](https://fr.wikipedia.org/wiki/Classement_Elo), conçu par [Arp
 
 Cette fusion entre l'estime de soi et un nombre flottant est psychologiquement très coûteuse. Elle transforme chaque partie en une menace existentielle. Une défaite ne signifie plus simplement "j'ai joué une mauvaise partie ce soir-là" elle signifie "je suis moins que ce que je croyais être". [Carol Dweck](https://fr.wikipedia.org/wiki/Carol_Dweck), psychologue à l'[Université Stanford](https://fr.wikipedia.org/wiki/Universit%C3%A9_Stanford), a consacré sa carrière à distinguer deux états d'esprit fondamentaux face à la performance : l'état d'esprit fixe (*fixed mindset*) et l'état d'esprit de croissance (*growth mindset*). Le joueur piégé par son classement Elo est un cas d'école d'état d'esprit fixe : chaque résultat est une confirmation ou une infirmation de ce qu'il "est", non de ce qu'il "apprend".
 
-Le joueur avec un état d'esprit de croissance, lui, regarde la même défaite différemment. Elle lui dit : "Il y a quelque chose ici que je ne comprends pas encore." La partie devient un document de travail, pas un verdict.
+Le joueur avec un état d’esprit de croissance, lui, regarde la même défaite différemment. Elle lui dit : "Il y a quelque chose ici que je ne comprends pas encore." La partie devient un document de travail, pas un verdict.
+
+![Fixed mindset contre Growth mindset selon Dweck aux échecs : le joueur à état d’esprit fixe fusionne son Elo avec son identité et vit chaque défaite comme un verdict ; le joueur à état d’esprit de croissance y voit un document de travail.](/images/psychologie-joueur-04-fixed-growth-mindset.svg)
 
 ## Hors prep : intolérance à l’incertitude, Système 1 / 2, et l’art d’être mal à l’aise
 
@@ -77,6 +79,8 @@ Il n'y a qu'une façon saine de répondre à cette peur : s'entraîner délibér
 Si tu as joué plus de quelques dizaines de parties dans ta vie, tu l'as vécu. Une gaffe incompréhensible. Un pion oublié. Un coup qui semblait bon et qui s'est révélé catastrophique. Et soudain, quelque chose change dans ta façon de jouer. Tu accélères. Tu calcules moins bien. Tu prends des risques absurdes pour "rattraper" une position qui ne le nécessite pas. Tu es en tilt.
 
 Le concept de [tilt](https://fr.wikipedia.org/wiki/Tilt_(poker)), emprunté au poker, décrit l'état dans lequel un joueur laisse ses émotions dicter ses décisions à la place de sa raison. [Antonio Damasio](https://fr.wikipedia.org/wiki/Antonio_Damasio), neuroscientifique à l'[Université de Californie du Sud](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Californie_du_Sud), a montré dans ses travaux sur les marqueurs somatiques que les émotions ne sont pas séparables du processus décisionnel : elles en font partie intégrante, que tu le veuilles ou non. Le problème du tilt n'est pas que tu ressens des émotions (c'est humain et inévitable). Le problème, c'est que ces émotions prennent le dessus sur l'évaluation rationnelle de la position, faussant ton jugement à chaque coup suivant.
+
+![Le mécanisme du tilt : un blunder déclenche une émotion négative qui dégrade le calcul, produisant de nouveaux blunders dans une boucle auto-amplifiante que seul l'arrêt volontaire peut briser.](/images/psychologie-joueur-03-tilt-boucle.svg)
 
 ### Ce que le tilt révèle sur toi
 
@@ -100,7 +104,9 @@ Un phénomène psychologique peu souvent évoqué dans les échecs, mais extrêm
 
 Ce sentiment est particulièrement toxique aux échecs parce qu'il te force à jouer en "mode démonstration" plutôt qu'en "mode jeu". Tu essaies de prouver que tu mérites ta cote plutôt que de simplement chercher le meilleur coup sur l'échiquier. Tes décisions sont parasitées par le regard imaginaire des autres.
 
-L'inverse existe aussi, et est tout aussi dangereux : l'excès de confiance après une série de victoires. Le cerveau humain a une tendance naturelle à extrapoler les tendances récentes. Après cinq gains consécutifs, il est très facile de sous-estimer un adversaire, de jouer avec moins de rigueur, de prendre des risques que tu n'aurais jamais pris deux semaines plus tôt. C'est souvent là que les chutes de classement les plus douloureuses surviennent.
+L’inverse existe aussi, et est tout aussi dangereux : l’excès de confiance après une série de victoires. Le cerveau humain a une tendance naturelle à extrapoler les tendances récentes. Après cinq gains consécutifs, il est très facile de sous-estimer un adversaire, de jouer avec moins de rigueur, de prendre des risques que tu n’aurais jamais pris deux semaines plus tôt. C’est souvent là que les chutes de classement les plus douloureuses surviennent.
+
+![Spectre de la confiance aux échecs : à gauche le syndrome de l’imposteur qui joue en mode démonstration, à droite la surconfiance qui réduit la vigilance après une série de victoires, au centre la zone d’équanimité optimale illustrée par Carlsen.](/images/psychologie-joueur-05-confiance-spectre.svg)
 
 ## Flow : l’état rare et les conditions pour ne pas le mythifier
 

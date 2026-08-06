@@ -64,6 +64,8 @@ Perdre des points d'Elo est ressenti comme une "destruction de soi". Cette menac
 
 Ce phénomène est particulièrement marqué autour des seuils symboliques : 1500, 1800, 2000. Un joueur à 2001 qui joue en ayant constamment peur de descendre sous 2000 est dans un état d'anxiété chronique qui dégrade systématiquement ses performances.
 
+![L'Elo comme amplificateur de la peur de perdre : autour des seuils symboliques 1500, 1800 et 2000, le classement devient une identité dont la perte potentielle active l'amygdale plus fortement qu'une simple défaite sportive.](/images/peur-perdre-02-elo-identite.svg)
+
 ## La distinction fondamentale : jouer pour gagner vs. jouer pour ne pas perdre
 
 [Garry Kasparov](https://fr.wikipedia.org/wiki/Garry_Kasparov) l'a formulé dans ses écrits sur la psychologie du jeu : la frontière entre "jouer pour gagner" et "jouer pour ne pas perdre" est l'une des plus importantes de la psychologie des échecs.
@@ -73,6 +75,8 @@ Jouer pour gagner, c'est avoir un objectif positif : créer des menaces, génér
 Jouer pour ne pas perdre, c'est avoir un objectif négatif : éviter les erreurs, réduire les risques, chercher la sécurité. L'état d'esprit est tourné vers la défense et l'évitement.
 
 Ces deux états d'esprit produisent des jeux fondamentalement différents. Et contre un adversaire de force équivalente, le joueur qui joue pour gagner a statistiquement l'avantage sur le joueur qui joue pour ne pas perdre.
+
+![Jouer pour gagner vs. jouer pour ne pas perdre selon Kasparov : deux états d'esprit opposés qui produisent des styles de jeu radicalement différents, avec un avantage statistique pour l'orientation positive.](/images/peur-perdre-03-jouer-pour-gagner.svg)
 
 ## Techniques de gestion concrètes
 

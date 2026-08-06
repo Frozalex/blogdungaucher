@@ -93,6 +93,8 @@ En état émotionnel dégradé et cognitivement fatigué, les processus de réfl
 
 Des études sur l'apprentissage moteur et cognitif montrent que l'espace entre les répétitions (inter-trial interval) affecte la qualité de la consolidation. Un espacement raisonnable entre les sessions de pratique produit de meilleurs apprentissages à long terme qu'une accumulation dense sur une courte période. C'est ce qu'on appelle l'[effet d'espacement](https://fr.wikipedia.org/wiki/Effet_d%27espacement) ou spaced practice.
 
+![Rage-queue versus espacement : relancer immédiatement après une défaite produit des réflexes dégradés, alors qu'espacer les sessions avec analyse intermédiaire permet une consolidation supérieure.](/images/pauses-03-rage-queue-espacement.svg)
+
 ## Le sommeil comme outil d'entraînement
 
 Si les micro-pauses sont utiles en cours de session, le sommeil est la pause la plus puissante disponible. La recherche sur le [sommeil et la mémoire](https://fr.wikipedia.org/wiki/Sommeil_et_m%C3%A9moire) s'est considérablement développée au cours des deux dernières décennies.
@@ -102,6 +104,8 @@ Pendant le sommeil, et particulièrement pendant les phases de [sommeil lent pro
 [Matthew Walker](https://fr.wikipedia.org/wiki/Matthew_Walker_(scientifique)), chercheur spécialiste du sommeil à Berkeley, souligne dans ses travaux que la privation de sommeil détruit la qualité de la consolidation mémorielle de façon dose-dépendante. Six heures de sommeil ne permettent pas une consolidation aussi efficace que huit heures, même si la personne ne ressent pas de somnolence objective.
 
 Pour le joueur d'échecs qui s'entraîne sérieusement, cela veut dire que compromettre le sommeil pour jouer plus est une stratégie perdante net : on perd en consolidation plus qu'on ne gagne en heures de pratique supplémentaire.
+
+![Rôle des phases de sommeil dans la consolidation aux échecs : le sommeil lent profond consolide les patterns tactiques, le sommeil paradoxal les réorganise de façon créative — Walker montre qu'en dessous de 8h la consolidation est nettement dégradée.](/images/pauses-04-sommeil-consolidation.svg)
 
 ## Les pauses longues et leur rôle dans la prévention du burnout
 
@@ -118,6 +122,8 @@ Les pauses ont un troisième rôle moins évident : elles facilitent l'[incubati
 L'incubation est le phénomène par lequel un problème qui résistait à l'analyse consciente trouve sa solution après une période de non-travail sur ce problème. Des recherches classiques en psychologie de la créativité, depuis [Wallas](https://fr.wikipedia.org/wiki/Graham_Wallas) jusqu'aux études modernes d'imagerie cérébrale, montrent que le cerveau continue à traiter un problème de façon non consciente pendant les pauses.
 
 Aux échecs, cela se manifeste parfois de façon frappante : tu travailles sur une position difficile, tu ne trouves pas la clé, tu t'arrêtes. Quelques heures plus tard, souvent le lendemain matin, la solution apparaît avec une clarté soudaine. Ce n'est pas de la magie : c'est le réseau par défaut qui a continué à explorer l'espace du problème pendant ton repos.
+
+![L'incubation créative : pendant une pause, le réseau par défaut du cerveau explore le problème de façon non consciente en mode diffus et génère parfois une solution que l'analyse consciente n'avait pas trouvée.](/images/pauses-05-incubation-reseau-defaut.svg)
 
 ## Construire ses pauses délibérément
 

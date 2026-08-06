@@ -84,6 +84,8 @@ $$\forall c \in \text{coups\_légaux} : \Box \text{perdant après } c$$
 
 Autrement dit : dans tous les mondes accessibles (tous les coups légaux), la position est perdante. Le joueur est piégé par la nécessité modale : il est nécessaire qu'il joue, et tous les coups possibles mènent à la défaite.
 
+![Zugzwang en logique modale : tous les coups légaux aboutissent à une position perdante — la nécessité de jouer est elle-même la défaite (∀c □ perdant).](/images/logique-modale-02-zugzwang-modal.svg)
+
 Le zugzwang mutuel (ou "distant zugzwang") est encore plus complexe : c'est une position où quel que soit le camp qui doit jouer, il perd. En logique modale, les deux directions sont contraintes de façon symétrique. Ces positions révèlent la structure la plus profonde de la logique du jeu : parfois, le mouvement lui-même est la défaite.
 
 ## L'incertitude modale dans la pratique
@@ -99,6 +101,8 @@ Cette distinction entre possibilité logique et probabilité pratique est crucia
 Une extension importante de la logique modale est la [logique épistémique](https://fr.wikipedia.org/wiki/Logique_%C3%A9pist%C3%A9mique), qui s'occupe non pas du possible et du nécessaire en général, mais de ce que les agents savent ou ignorent. Aux échecs, cette dimension est pertinente dans le cadre de la préparation d'ouverture.
 
 Quand tu prépares une nouveauté théorique, tu crées une asymétrie épistémique : tu sais ce que l'adversaire ne sait pas. Dans les termes de la logique épistémique, tu as accès à des mondes possibles (les suites de ta préparation) que l'adversaire ne peut pas évaluer au même rythme. Cette asymétrie d'accès aux mondes possibles est une arme stratégique.
+
+![Asymétrie épistémique en logique modale : le joueur préparé accède à W₄ (nouveauté) inaccessible à l'adversaire — K_A(nouveauté)=✓ vs K_B(nouveauté)=✗.](/images/logique-modale-03-epistemique-preparation.svg)
 
 La surprise tactique repose sur la même logique : jouer un coup que l'adversaire ne croit pas possible ($\neg \Diamond_{adversaire} \text{coup}$), mais qui est légal et fort. Souvent, les sacrifices de pièces créent exactement cette situation : l'adversaire n'avait pas calculé cette possibilité comme viable.
 

@@ -41,6 +41,8 @@ Quand tu perds aux échecs, tu ne peux pas dire "l'arbitre m'a pénalisé injust
 
 Les classements Elo et les résultats de tournoi créent une hiérarchie de performance visible par tous. À tout moment, n'importe qui peut voir ton classement, tes résultats récents, tes performances en tournois. Cette transparence sociale nourrit le mécanisme de comparaison vers le haut (regarder ceux qui sont "meilleurs" que soi) plutôt que vers le bas, ce qui est caractéristique des personnes souffrant du syndrome de l'imposteur.
 
+![Le classement Elo public amplifie le syndrome de l'imposteur : la pyramide des niveaux est visible en permanence, orientant systématiquement le regard vers le haut et ignorant les joueurs en dessous.](/images/imposteur-03-comparaison-elo.svg)
+
 ### La profondeur des connaissances requises
 
 Plus tu progresses aux échecs, plus tu réalises l'étendue de ce que tu ne sais pas. Un joueur à 1400 ne connaît pas les subtilités des ouvertures du Roi. Un joueur à 1800 connaît les ouvertures mais ignore les finesses des fins de partie. Un Grand Maître sait encore plus ce qu'il ne sait pas, parce qu'il voit plus clairement la profondeur infinie du jeu.
@@ -60,6 +62,8 @@ Le syndrome de l'imposteur aux échecs se manifeste par des patterns comportemen
 **Le refus des compliments.** "Tu as bien joué ce coup !" / "Je ne savais pas pourquoi je le jouais vraiment, j'ai eu de la chance." Ce refus n'est pas de la modestie : c'est de l'incapacité à internaliser les preuves de compétence.
 
 **Éviter les situations où le "vrai niveau" pourrait être révélé.** Fuir les tournois officiels, refuser de jouer contre des joueurs plus forts, rester dans des parties en ligne "informelles".
+
+![Les cinq patterns comportementaux du syndrome de l'imposteur aux échecs : discours négatif post-victoire, acceptation asymétrique, préparation anxiolytique, refus des compliments, évitement des situations d'évaluation.](/images/imposteur-02-patterns-comportementaux.svg)
 
 ## Syndrome de l'imposteur et niveau de jeu : à qui ça touche ?
 

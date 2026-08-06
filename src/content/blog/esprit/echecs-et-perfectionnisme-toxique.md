@@ -26,6 +26,8 @@ La psychologie distingue deux formes de perfectionnisme qui ont des effets radic
 
 Des chercheurs comme [Gordon Flett](https://fr.wikipedia.org/wiki/Perfectionnisme_(psychologie)) et Paul Hewitt ont développé des échelles de mesure du perfectionnisme qui distinguent ces deux formes. La recherche montre systématiquement que le perfectionnisme maladaptatif est associé à l'anxiété, la dépression, la procrastination et une performance sous-optimale dans les domaines compétitifs.
 
+![Perfectionnisme adaptatif vs. toxique selon Flett et Hewitt : standards élevés avec acceptation de l'imperfection d'un côté, standards impossibles avec rumination et paralysie de l'autre.](/images/perfectionnisme-02-adaptatif-toxique.svg)
+
 ## Comment le perfectionnisme toxique se manifeste aux échecs
 
 Aux échecs, le perfectionnisme toxique prend plusieurs formes caractéristiques.
@@ -73,6 +75,8 @@ L'état de [flow](https://fr.wikipedia.org/wiki/Flow_(psychologie)) décrit par 
 Aux échecs, avec une pendule qui tourne et une position qui se complexifie, trouver un bon coup raisonnablement rapidement est souvent supérieur à trouver le coup parfait après une demi-heure de réflexion. La raison est simple : le temps économisé peut être utilisé sur les coups suivants, qui seront peut-être plus critiques.
 
 Les joueurs d'élite pratiquent intuitivement ce satisficing. Ils ne calculent pas jusqu'à la certitude absolue sur chaque coup. Ils identifient les coups candidats, évaluent rapidement, et jouent quand leur confiance atteint un seuil raisonnable. La "certitude" absolue est une illusion, et la chercher coûte plus qu'elle n'apporte.
+
+![Le satisficing de Simon appliqué aux échecs : trouver un bon coup rapidement libère du temps pour les coups critiques, surpassant la recherche du coup parfait au détriment de la pendule.](/images/perfectionnisme-03-satisficing.svg)
 
 ## Comment transformer son perfectionnisme
 

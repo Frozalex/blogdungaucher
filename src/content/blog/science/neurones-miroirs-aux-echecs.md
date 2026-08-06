@@ -50,6 +50,8 @@ Aux échecs, cela se traduit par une capacité des joueurs expérimentés à "vo
 
 C'est ce qui explique les coups prophylactiques visionnaires que jouent parfois les Grands Maîtres. Ils ne répondent pas à une menace concrète : ils répondent à une intention qu'ils ont simulée, à un plan qu'ils ont ressenti comme plausible depuis le point de vue de l'adversaire.
 
+![Cycle de détection précoce des intentions : la structure de position préfigure un plan, le système miroir de l'expert le détecte, un coup prophylactique ferme le monde-menace avant qu'il soit concret.](/images/neurones-miroirs-02-prefiguration-intention.svg)
+
 ### L'exemple de la simulation inversée
 
 [Mikhail Botvinnik](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Botvinnik) recommandait à ses élèves une technique que tu peux appeler l'analyse "en miroir" : analyser systématiquement chaque position depuis le point de vue de l'adversaire avant de jouer. "Qu'est-ce que je voudrais faire si j'étais à sa place ?" Cette question, répétée méthodiquement, force l'activation du système de simulation mentale.
@@ -93,6 +95,8 @@ Le système miroir a aussi des limites qui peuvent conduire à des erreurs carac
 Un joueur offensif a tendance à surestimer les intentions offensives de l'adversaire, parce que son système miroir est fortement calibré sur ce type de jeu. Il peut manquer des plans défensifs subtils que l'adversaire prépare, parce que ces plans ne "résonnent" pas de la même façon dans son système de simulation.
 
 C'est pourquoi les joueurs qui ont un style très marqué ont souvent des "angles morts" : des types de plans adverses qu'ils reconnaissent moins bien parce qu'ils ne les jouent pas eux-mêmes. Diversifier son répertoire et son style est aussi une façon de calibrer son système miroir sur un spectre plus large d'intentions adverses.
+
+![Angles morts du système miroir : le joueur offensif détecte bien les plans d'attaque mais sous-estime les plans défensifs, et inversement pour le joueur défensif — les plans non joués ne sont pas simulés.](/images/neurones-miroirs-03-angles-morts-style.svg)
 
 **Après lecture :** sur une partie récente, rejoue **cinq coups** du camp adverse à voix haute avec « il veut obtenir quoi ? » avant de vérifier au moteur.
 
