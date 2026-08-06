@@ -102,6 +102,8 @@ Un phénomène directement lié au chaos est l'[effet d'horizon](https://fr.wiki
 
 Les moteurs modernes atténuent ce problème via des extensions de recherche dans les positions tactiques (continuation forcée jusqu'à stabilisation) et des fonctions d'évaluation statique qui capturent des propriétés structurelles plus robustes. Mais l'horizon ne disparaît pas, il s'éloigne.
 
+![Effet d'horizon en informatique des échecs : le moteur évalue correctement jusqu'à sa profondeur maximale (ici 10 coups), mais un événement décisif au coup 11 lui est invisible — l'évaluation reste stable à 0 alors que la réalité bondit à +3,5.](/images/theorie-chaos-04-horizon-calcul.svg)
+
 ## L'attracteur étrange et le style de jeu
 
 En théorie du chaos, un [attracteur étrange](https://fr.wikipedia.org/wiki/Attracteur_de_Lorenz) est l'ensemble des états vers lesquels converge un système chaotique dans l'espace des phases. Il a une structure fractale complexe : le système ne revient jamais exactement au même état, mais reste confiné dans une région définie.
@@ -109,6 +111,8 @@ En théorie du chaos, un [attracteur étrange](https://fr.wikipedia.org/wiki/Att
 Par analogie, le style de jeu d'un Grand Maître peut être pensé comme un attracteur dans l'espace des positions. Chaque joueur a une "zone de confort" positionnelle : des structures de pions qu'il comprend intuitivement, des configurations pièces qu'il sait gérer, des types de fins de partie qu'il maîtrise. Quand la partie reste dans cet espace, il joue de façon cohérente. Quand elle en sort, ses coups deviennent moins précis.
 
 [Anatoly Karpov](https://fr.wikipedia.org/wiki/Anatoli_Karpov) gravitait naturellement vers des positions légèrement avantageuses mais solides, où il pouvait exercer une pression constante et précise. [Mikhail Tal](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Tal) gravitait vers des positions chaotiques et tactiquement explosives où l'adversaire pouvait facilement commettre des erreurs sous pression. Ces attracteurs différents expliquent en partie pourquoi les parties entre ces deux joueurs étaient si déséquilibrées : Tal cherchait à sortir Karpov de son attracteur et inversement.
+
+![Attracteurs de style en échecs : Karpov converge vers des positions positionnelles et solides (attracteur vert, faible lambda), Tal vers des positions tactiques et explosives (attracteur ambre, fort lambda). Chacun cherche à maintenir la partie dans son attracteur et à en expulser l'adversaire.](/images/theorie-chaos-03-attracteur-style.svg)
 
 ### Cas d'école : Kasparov – Topalov, Wijk aan Zee 1999
 
@@ -141,6 +145,8 @@ La décision de compliquer est elle-même une question chaotique : à quel momen
 ### Compliqué n'est pas chaotique
 
 Distinguer les deux est crucial. Une position **compliquée** a beaucoup de coups candidats mais des écarts d'évaluation faibles entre eux ; tu peux perdre du temps sans perdre la partie. Une position **chaotique** a peu de candidats viables mais des écarts énormes ; une seconde d'inattention coûte le point. Les Grand Maîtres complices font les deux à dessein : ils compliquent pour fatiguer, et basculent dans le chaos seulement quand l'horloge ou la fatigue de l'adversaire augmentent leur propre marge de manœuvre. La [psychologie du joueur sous pression](/blog/psychologie-du-joueur-d-echecs/) explique pourquoi le second registre est si dévastateur en partie réelle, bien plus qu'en analyse à froid.
+
+![Compliqué vs chaotique : dans une position compliquée (bleu), cinq coups candidats ont des évaluations proches (0,0 à 0,3) — une erreur est tolérée. Dans une position chaotique (ambre), seuls deux coups sont viables ; les autres s'effondrent à -3,5 ou pire — un seul faux pas et la partie bascule.](/images/theorie-chaos-05-complique-vs-chaotique.svg)
 
 ## Pour ton jeu : exploiter ou éviter le chaos
 

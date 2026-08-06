@@ -37,6 +37,7 @@ vulgarisation scientifique sérieuse. Public : joueurs d'échecs, curieux, lycé
 | Gris moyen | `#9b9384` |
 | Blanc (remplissage cartes) | `#fff` |
 | Accent ambre (attention/transition/secondaire) | `#c9a24b` |
+| Ambre foncé (texte ambre sur crème, meilleur contraste) | `#a67f2a` |
 | Accent bleu (2e catégorie/contraste) | `#5b9fd4` |
 | Fill bleu très clair (compagnon de l'accent bleu) | `#e8f1f8` |
 

@@ -77,6 +77,10 @@ En revanche, si l'ordre n'importe pas (quelle que soit l'ordre dans lequel certa
 
 Ce point peut être développé en 3 minutes devant le jury avec des exemples sur les premiers coups de la partie italienne (1.e4 e5 2.Cf3 Cc6 3.Fc4).
 
+![Arrangements et combinaisons appliqués aux ouvertures : l'ordre des coups compte dans le dénombrement des séquences.](/images/go-maths-spe-04-arrangements-combinaisons.svg)
+
+![Arbre des coups aux échecs : le nombre de positions se multiplie à chaque niveau, cœur du dénombrement combinatoire.](/images/go-maths-spe-03-arbre-combinatoire.svg)
+
 ## Probabilités et variables aléatoires
 
 ### La formule Elo : une loi logistique en terminale
@@ -133,6 +137,8 @@ Ces notions (espérance, variance, écart-type) sont exactement au programme de 
 
 ![Loi binomiale B(14, 0,5) sur un match de 14 parties entre joueurs égaux : espérance à 7, un 7-7 exact dans environ 21 % des cas.](/images/go-maths-spe-01-binomiale-match.svg)
 
+![Espérance et écart-type du résultat Elo selon l'écart de cotes entre deux joueurs.](/images/go-maths-spe-05-esperance-variance.svg)
+
 ## Suites récurrentes : l'Elo comme modèle dynamique
 
 C'est le chapitre de terminale le moins exploité sur les échecs, et c'est justement là que tu peux créer une différence.
@@ -169,6 +175,8 @@ Ce compromis biais-variance est exactement la même tension que celle évoquée 
 
 ![Suite récurrente Elo : un joueur de force réelle 1600 parti de 1400 converge vers 1600 en une cinquantaine de parties.](/images/go-maths-spe-02-suite-elo.svg)
 
+![Compromis biais-variance du coefficient K dans la mise à jour Elo : réactivité contre stabilité.](/images/go-maths-spe-07-compromis-k-biais-variance.svg)
+
 ## Algorithmique : la récursivité illustrée par le minimax
 
 ### L'algorithme minimax comme cas d'école
@@ -193,6 +201,8 @@ La complexité en $O(b^d)$ est exponentielle. Pour « résoudre » les échecs (
 Les échecs sont donc, selon la terminologie de la théorie de la complexité, un problème **PSPACE-complet** (famille des problèmes difficiles exhaustivement). La notion n'est pas au programme de terminale, mais la **croissance exponentielle versus polynomiale** l'est : c'est l'argument central.
 
 L'élagage **alpha-bêta** réduit la complexité effective à $O(b^{d/2})$ dans le cas optimal : pour $d = 8$, on explore environ $35^4 \approx 1{,}5 \times 10^6$ nœuds au lieu de $35^8$. Cette optimisation illustre l'**analyse algorithmique** au programme de terminale.
+
+![Complexité du minimax O(b^d) comparée à l'élagage alpha-bêta, qui divise l'exposant par deux.](/images/go-maths-spe-06-complexite-minimax-alphabeta.svg)
 
 ## Construire ta problématique : méthode pas à pas
 

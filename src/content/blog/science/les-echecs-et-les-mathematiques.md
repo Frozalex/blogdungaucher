@@ -94,7 +94,9 @@ Ces deux exemples disent quelque chose d'important : l'échiquier n'a pas seulem
 
 Le deuxième pilier fondamental qui lie les échecs et les mathématiques est sans aucun doute la combinatoire. Dès les premiers échanges de la partie, le nombre de positions possibles explose de façon exponentielle.
 
-Après seulement trois coups de chaque côté, il y a déjà plus de neuf millions de positions différentes envisageables sur l'échiquier. [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) a estimé l'ordre de grandeur du nombre de parties possibles à $10^{120}$ (**nombre de Shannon**), largement au-delà du nombre d'atomes dans l'univers observable ($\sim 10^{80}$). 
+Après seulement trois coups de chaque côté, il y a déjà plus de neuf millions de positions différentes envisageables sur l'échiquier. [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) a estimé l'ordre de grandeur du nombre de parties possibles à $10^{120}$ (**nombre de Shannon**), largement au-delà du nombre d'atomes dans l'univers observable ($\sim 10^{80}$).
+
+![Explosion combinatoire aux échecs : de 400 positions après 2 coups à 10^120 parties possibles (nombre de Shannon) — 40 ordres de grandeur au-dessus du nombre d'atomes dans l'univers observable (10^80).](/images/echecs-maths-03-shannon.svg)
 
 Quand tu t'assois devant le plateau pour calculer la ligne forcée d'un sacrifice, ton cerveau doit opérer exactement comme un algorithme mathématique de théorie des graphes. Tu dois visualiser ce que les cours appellent souvent un arbre de probabilités. C'est la base de l'algorithme [minimax](/blog/minimax-aux-echecs/) : un pont documenté entre la théorie des jeux et l'intelligence artificielle appliquée aux échecs. (Le détail de ce mécanisme, minimax, élagage alpha-bêta et comment les moteurs modernes gèrent cette explosion, est développé dans l'article [Pourquoi les échecs sont un problème mathématique (presque) impossible](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
 
@@ -112,7 +114,9 @@ En psychologie cognitive, il existe un concept absolument central appelé le tra
 
 La communauté scientifique s'est écharpée pendant des années sur la capacité des échecs à déclencher un transfert lointain vers les mathématiques. Les chercheurs [Fernand Gobet](https://fr.wikipedia.org/wiki/Fernand_Gobet) (Université de Liverpool) et [Giovanni Sala](https://scholar.google.com/citations?user=Giovanni_Sala) ont mené plusieurs méta-analyses exhaustives (compilant les résultats de dizaines d'autres études) pour trancher le débat.
 
-Leurs conclusions ont fait grincer des dents de nombreux promoteurs des échecs à l'école. En analysant rigoureusement les données, Sala et Gobet ont démontré que les preuves d'un transfert cognitif significatif des échecs vers les compétences académiques générales, y compris les mathématiques, sont faibles à modérées. 
+Leurs conclusions ont fait grincer des dents de nombreux promoteurs des échecs à l'école. En analysant rigoureusement les données, Sala et Gobet ont démontré que les preuves d'un transfert cognitif significatif des échecs vers les compétences académiques générales, y compris les mathématiques, sont faibles à modérées.
+
+![Transfert proche vs transfert lointain : les échecs améliorent directement les compétences intra-échecs, modérément la métacognition et la résolution de problèmes, mais faiblement les mathématiques académiques en général selon les méta-analyses de Sala et Gobet (2016).](/images/echecs-maths-04-transfert.svg)
 
 Dit plus simplement : faire jouer un enfant dix heures par semaine aux échecs ne va pas faire grimper magiquement sa moyenne en algèbre de façon automatique. Le cerveau n'est pas un muscle général que tu gonfles en ne faisant que des pompes sur 64 cases. Quand tu t'entraînes énormément aux échecs, tu deviens surtout... extrêmement fort pour résoudre des problèmes d'échecs.
 

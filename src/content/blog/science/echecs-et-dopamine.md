@@ -159,6 +159,8 @@ En position difficile (surtout dans un tournoi avec des enjeux) le système **sy
 
 Les joueurs de haut niveau ont des profils neurochimiques particuliers en tournoi : leur cortisol monte moins haut que les amateurs et redescend plus vite après la partie. Cette régulation du stress est en partie innée, en partie entraînable : c'est tout l'objet de la préparation mentale.
 
+![Loi de Yerkes-Dodson à l'échiquier : la qualité de jeu est maximale pour un stress modéré (eustress) — en deçà l'ennui dégrade la concentration, au-delà le cortisol excessif inhibe le cortex préfrontal et multiplie les blunders.](/images/echecs-dopamine-03-yerkes-dodson.svg)
+
 ## Sérotonine et statut social : l'échiquier comme arène
 
 La **sérotonine** est impliquée dans la régulation du statut social et du sentiment de valeur personnelle. Des études sur les primates montrent que les individus dominants ont des niveaux de sérotonine plus élevés, et que les changements de rang social modifient les niveaux de sérotonine.
@@ -166,6 +168,8 @@ La **sérotonine** est impliquée dans la régulation du statut social et du sen
 Aux échecs, le classement Elo est un proxy de statut social extrêmement précis et visible. Une victoire contre un joueur mieux classé augmente non seulement la dopamine (récompense) mais aussi probablement la sérotonine (sentiment de statut amélioré). Une défaite contre un joueur moins classé produit l'effet inverse.
 
 C'est pourquoi les défaites contre des adversaires "inférieurs" sont souvent vécues plus intensément que les défaites contre des adversaires "supérieurs" : elles impliquent une menace au statut perçu.
+
+![Sérotonine et statut social à l'échiquier : victoire contre un adversaire mieux classé (hausse dopamine + sérotonine), défaite contre un moins bien classé (chute de sérotonine plus intense) — le classement Elo agit comme un proxy précis du statut social.](/images/echecs-dopamine-04-serotonine-statut.svg)
 
 ## Utiliser la neurochimie pour progresser
 

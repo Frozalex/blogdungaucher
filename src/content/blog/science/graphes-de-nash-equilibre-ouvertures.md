@@ -94,11 +94,15 @@ Ce graphe est immense : il contient environ $10^{44}$ noeuds (estimations du nom
 
 Depuis la position initiale, l'arbre des parties se ramifie exponentiellement. Mais de nombreuses variantes différentes convergent vers les mêmes positions (transpositions). La structure n'est donc pas un arbre pur mais un graphe acyclique dirigé : certains noeuds peuvent être atteints par de multiples chemins.
 
+![Graphe acyclique dirigé des transpositions : deux ordres de coups différents (1.d4 Cf6 2.c4 et 1.c4 Cf6 2.d4) convergent vers la même position, illustrant pourquoi le graphe des ouvertures n'est pas un arbre.](/images/nash-03-graphe-transpositions.svg)
+
 ### Les attracteurs dans le graphe
 
 Dans ce graphe géant, les positions d'équilibre correspondent à des attracteurs. Ce sont des noeuds vers lesquels de nombreux chemins convergent et depuis lesquels les deux joueurs préfèrent maintenir leurs stratégies. Les ouvertures théoriques populaires correspondent à des régions denses du graphe, des zones que beaucoup de parties visitent.
 
 Les positions "nulles par répétition" sont un exemple extrême d'attracteur : ce sont des noeuds où le jeu se stabilise dans un cycle. La règle de la triple répétition est précisément la codification formelle de la reconnaissance que certains équilibres de Nash sont des cycles.
+
+![Attracteurs dans le graphe des positions : les ouvertures populaires (Sicilienne, Espagnole, KID) sont des zones denses vers lesquelles convergent de nombreux chemins ; les nulles par répétition sont des attracteurs cycliques.](/images/nash-05-attracteurs-graphe.svg)
 
 ## Les équilibres de Nash dans les fins de partie
 
@@ -117,6 +121,8 @@ Deux joueurs qui se rencontrent régulièrement en tournoi s'adaptent mutuelleme
 L'équilibre de Nash de ce méta-jeu est une distribution sur les ouvertures : jouer chaque variante avec une certaine fréquence pour rendre sa stratégie globale imprévisible tout en maintenant une préparation suffisante. Les grands joueurs modernes, souvent avec l'aide d'équipes d'analystes et de moteurs, gèrent explicitement cette dimension stratégique.
 
 [Magnus Carlsen](https://fr.wikipedia.org/wiki/Magnus_Carlsen) est connu pour une approche particulièrement sophistiquée de ce méta-jeu. Il joue un large répertoire d'ouvertures, y compris des variantes inhabituelles ou considérées comme inférieures, précisément pour perturber la préparation adverse et l'emmener dans des terrains moins familiers. C'est une stratégie mixte au sens de Nash : diversifier pour éviter l'exploitation.
+
+![Stratégie mixte de Nash dans la préparation d'ouvertures : répartir son répertoire sur plusieurs variantes avec des probabilités stables rend la stratégie imprévisible et empêche l'adversaire de se préparer spécifiquement.](/images/nash-04-strategie-mixte.svg)
 
 ### Le raffinement de Selten : l'équilibre à "main tremblante"
 

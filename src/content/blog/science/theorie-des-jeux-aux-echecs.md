@@ -84,6 +84,8 @@ Personne ne sait laquelle. Personne ne le saura probablement jamais : il faudrai
 
 L'hypothèse majoritaire des experts est que c'est la nulle. Mais c'est une croyance, pas un théorème.
 
+![Théorème de Zermelo (1913) : dans tout jeu fini à deux joueurs à information parfaite, exactement l'une de trois conclusions est vraie — Blancs gagnent, Noirs gagnent, ou nul sous jeu parfait. L'hypothèse dominante est la nulle, mais la preuve reste hors d'atteinte.](/images/theorie-des-jeux-02-zermelo.svg)
+
 ## Minimax : ce que ton cerveau exécute déjà, sans le savoir
 
 Quand tu réfléchis à un coup, tu fais quelque chose comme : *"Si je joue le cavalier ici, il va prendre. Si je reprends, il a Df3, ça menace... non, j'ai Te1 entre."*
@@ -117,6 +119,8 @@ Suppose que tu as déjà trouvé une variante qui te garantit un avantage. Si en
 
 L'élagage transforme du $35^d$ en $35^{d/2}$: autrement dit, il **double la profondeur** atteignable avec le même budget calcul. C'est la raison technique pour laquelle un moteur de 1997 (Deep Blue) pouvait déjà battre Kasparov.
 
+![Élagage alpha-bêta : dès qu'une branche ne peut améliorer le résultat acquis (alpha), elle est coupée sans exploration. Résultat : la complexité passe de 35 puissance d à 35 puissance d/2, doublant la profondeur atteignable.](/images/theorie-des-jeux-03-alpha-beta.svg)
+
 ## Nash, ou pourquoi 1.e4 e5 2.Cf3 Cc6 3.Fb5 a survécu 200 ans
 
 John Nash a généralisé minimax aux jeux où plusieurs équilibres coexistent. L'**équilibre de Nash** est un état où aucun joueur n'a intérêt à modifier sa stratégie **unilatéralement**, à condition que l'autre garde la sienne.
@@ -126,6 +130,8 @@ John Nash a généralisé minimax aux jeux où plusieurs équilibres coexistent.
 Aux échecs, ça se traduit dans les ouvertures.
 
 Quand on dit qu'une variante est *"théoriquement égale"*, ça veut dire précisément ça : les deux camps disposent de ressources qui maintiennent l'équilibre, et le premier qui dévie unilatéralement risque de se faire punir. C'est pour ça que l'Espagnole (1.e4 e5 2.Cf3 Cc6 3.Fb5) traverse les siècles : c'est un équilibre stable que personne n'a réussi à briser.
+
+![Équilibre de Nash dans les ouvertures : Blancs et Noirs maintiennent chacun leurs ressources dans l'Espagnole ; dévier unilatéralement expose celui qui bouge à une punition, ce qui explique la stabilité de la variante depuis deux siècles.](/images/theorie-des-jeux-04-equilibre-nash.svg)
 
 Sous jeu parfait des deux côtés, *toute la partie* serait un seul gigantesque équilibre de Nash. Et si la vérité des échecs est la nulle, alors cet équilibre est la nulle. La cartographie complète de ces équilibres dans les ouvertures actuelles est l'objet de [graphes de Nash et équilibre des ouvertures](/blog/graphes-de-nash-equilibre-ouvertures/) ; un même répertoire peut contenir plusieurs équilibres, et le choix entre eux relève déjà du méta-jeu.
 
@@ -156,6 +162,8 @@ Stratégie pure, prévisibilité totale, violation apparente du principe de stra
 Parce que sa préparation dans les lignes de 1.e4 était d'une profondeur telle qu'il *préférait jouer des positions familières*, même attendues, plutôt que de surprendre dans des positions qu'il maîtrisait moins bien. Sa stratégie pure dominait toute stratégie mixte d'un adversaire moins préparé. C'est un résultat de théorie des jeux à part entière : quand le différentiel de préparation est suffisant, la prévisibilité devient un avantage.
 
 Toi, à 1500 Elo, tu n'es pas Fischer. Diversifie tes ouvertures.
+
+![Stratégie pure vs mixte : jouer toujours 1.e4 concentre la préparation adverse sur une seule ligne ; diversifier (40 % 1.e4, 40 % 1.d4, 20 % 1.Cf3) dilue cet effort. Le paradoxe Fischer montre que la stratégie pure domine quand la profondeur de préparation est nettement supérieure.](/images/theorie-des-jeux-05-strategies-mixtes.svg)
 
 ## Pourquoi Magnus Carlsen ne joue presque jamais une partie isolée
 

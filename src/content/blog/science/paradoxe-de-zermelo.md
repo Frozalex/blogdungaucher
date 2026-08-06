@@ -107,11 +107,15 @@ Ce résultat est instructif. Il montre que ton intuition sur ce qui est « gagn�
 
 Les tablebases distinguent deux mesures de la "victoire forcée" : DTM (*Distance to Mate*, distance au mat) et DTZ (*Distance to Zero*, distance au prochain coup de pion ou prise qui remet à zéro le compteur des 50 coups). Une même finale gagnante peut avoir DTM = 517 et DTZ = 7 : il existe un coup qui simplifie la victoire en sept demi-coups si l'on accepte de "perdre" la victoire mathématique au profit d'une victoire plus courte mais accessible. Cette dualité illustre quelque chose de profond sur Zermelo : la **vérité mathématique** d'une position dépend du critère choisi pour "gagner", et l'humanité joue presque toujours avec un critère pratique (gagner avant la pendule, avant la fatigue) très différent du critère théorique.
 
+![DTM vs DTZ dans les tablebases : une même finale gagnante peut nécessiter 517 coups jusqu'au mat (DTM) mais seulement 7 coups jusqu'au prochain coup remettant le compteur à zéro (DTZ) — deux vérités pour une même position selon le critère choisi.](/images/zermelo-04-dtm-dtz.svg)
+
 ## L'imperfection structurelle du joueur humain
 
 Le paradoxe de Zermelo révèle quelque chose de fondamental sur la condition du joueur humain. Il joue un jeu dont la "perfection" est mathématiquement définie, mais physiquement inaccessible.
 
 Un joueur humain, même le meilleur du monde, joue une approximation de la stratégie optimale. Son niveau de jeu est déterminé par la qualité de cette approximation : à quelle profondeur il peut calculer, combien de patterns tactiques il reconnaît, à quel point son évaluation positionnelle est fidèle à la réalité.
+
+![Tous les joueurs sont des approximations de la vérité Zermelo : amateur, Grand Maître et moteur se rapprochent progressivement de la stratégie parfaite sans jamais l'atteindre — la différence est quantitative (profondeur de calcul), pas qualitative.](/images/zermelo-05-approximation-humain.svg)
 
 [Magnus Carlsen](https://fr.wikipedia.org/wiki/Magnus_Carlsen), considéré par beaucoup comme le meilleur joueur de l'histoire, commet encore des erreurs. [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(moteur_d%27%C3%A9checs)), le meilleur moteur d'échecs actuel, commet aussi des erreurs par rapport au jeu parfait théorique, des erreurs bien plus rares et bien plus petites, mais des erreurs tout de même.
 
@@ -132,6 +136,8 @@ Ce paradoxe est profond : la beauté et la richesse des échecs reposent sur l'i
 La communauté informatique a progressivement résolu des jeux plus complexes les uns après les autres, suivant la logique de Zermelo.
 
 Le [morpion](https://fr.wikipedia.org/wiki/Morpion) est nul sous jeu parfait, et cette vérité est accessible à n'importe quel enfant qui apprend la stratégie correcte. Le [Puissance 4](https://fr.wikipedia.org/wiki/Puissance_4) a été résolu en 1988 : victoire du premier joueur. Les [dames](https://fr.wikipedia.org/wiki/Dames_(jeu)) ont été résolues en 2007 par [Jonathan Schaeffer](https://fr.wikipedia.org/wiki/Jonathan_Schaeffer) : nul sous jeu parfait, après 18 ans de calcul et un registre de $5 \times 10^{20}$ positions.
+
+![Hiérarchie des jeux résolus selon la logique de Zermelo : du morpion (trivial) au Puissance 4 (1988), aux dames (2007), jusqu'aux échecs et au Go qui restent ouverts bien que leur solution soit garantie d'exister.](/images/zermelo-03-jeux-resolus.svg)
 
 Les [échecs](https://fr.wikipedia.org/wiki/%C3%89checs) restent ouverts. Le [Go](https://fr.wikipedia.org/wiki/Go_(jeu)) aussi. La résolution complète de ces jeux reste hors de portée, non pas en principe (Zermelo garantit qu'une réponse existe), mais en pratique (la complexité combinatoire est trop élevée).
 

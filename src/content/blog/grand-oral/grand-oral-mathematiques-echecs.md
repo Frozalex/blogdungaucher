@@ -129,6 +129,10 @@ Cette structure est exactement celle d'une **démonstration par disjonction de c
 
 Les joueurs d'échecs de haut niveau décrivent souvent leur processus de calcul comme « construire une ligne forcée » : identifier une séquence de coups où, quelle que soit la réponse de l'adversaire, la conclusion est inévitable. C'est la définition d'une **implication universelle** : ∀ réponse de l'adversaire, ∃ continuation gagnante. Cette formalisation peut être présentée en deux phrases devant le jury et crée un pont immédiat entre les deux disciplines.
 
+![L'explosion combinatoire des échecs sur échelle logarithmique, jusqu'au nombre de Shannon (10^120).](/images/go-maths-05-explosion-combinatoire.svg)
+
+![Théorème de Zermelo (1913) : aux échecs, une seule des trois issues (gain blanc, gain noir, nulle) est théoriquement déterminée.](/images/go-maths-03-zermelo-jeu-determine.svg)
+
 ## Probabilités et analyse dans le jeu d'échecs
 
 ### Calculer les chances de victoire : la formule Elo
@@ -189,6 +193,8 @@ Cette approche statistique est à la base de la préparation des joueurs profess
 Pour un Grand Oral, c'est l'exemple parfait de l'**espérance mathématique appliquée** : $\mathbb{E}(\text{gain}) = \mathbb{P}(\text{victoire}) + \tfrac{1}{2}\mathbb{P}(\text{nulle})$.
 
 ![Courbe logistique Elo : probabilité de victoire selon l'écart de cotes, 50 % à égalité, 91 % à +400 points, 9 % à −400.](/images/go-maths-02-courbe-elo.svg)
+
+![Le problème du cavalier comme chemin hamiltonien dans un graphe : visiter chaque case une seule fois.](/images/go-maths-04-cavalier-hamiltonien.svg)
 
 ## L'intelligence artificielle et les échecs : une révolution mathématique
 
@@ -255,6 +261,8 @@ AlphaZero utilise un **réseau de neurones convolutif** (une architecture mathé
 Ce résultat est l'un des arguments les plus frappants pour la conclusion d'un Grand Oral : **l'intelligence artificielle aux échecs est passée de la programmation explicite (dire à la machine quelles positions sont bonnes) à l'apprentissage implicite (laisser la machine découvrir par elle-même ce qui est bon)**. Ce glissement mathématique correspond au passage de l'optimisation combinatoire à l'apprentissage statistique, deux piliers des mathématiques contemporaines.
 
 Pour aller plus loin sur la complexité mathématique sous-jacente, l'article [Pourquoi les échecs sont un problème mathématique (presque) impossible](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/) décortique en détail l'arbre des coups, minimax et alpha-bêta.
+
+![L'algèbre linéaire derrière AlphaZero : la position devient un vecteur transformé par des matrices en politique et valeur.](/images/go-maths-06-algebre-reseau-neurones.svg)
 
 ## Applications pratiques et exemples concrets
 

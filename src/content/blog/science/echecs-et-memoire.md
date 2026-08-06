@@ -89,6 +89,8 @@ La [mémoire de travail](https://fr.wikipedia.org/wiki/M%C3%A9moire_de_travail),
 
 [George Miller](https://fr.wikipedia.org/wiki/George_Armitage_Miller) a montré en 1956 que la capacité brute est d'environ **7 ± 2** « unités » pour la plupart des gens. Les joueurs d'échecs ne brisent pas cette loi : ils **chargent davantage de sens dans chaque unité** en regroupant les pièces en **chunks** (motifs fonctionnels). Un pion en f2, g2, h2 et un roi en g1, ce n'est pas quatre objets isolés pour un habitué : c'est souvent **un seul** schéma : roque court intact.
 
+![Loi de Miller (1956) : novice et expert disposent tous deux d'environ 7 unités en mémoire de travail, mais l'expert charge 4 à 5 pièces par chunk, portant sa portée effective à 28-30 pièces contre 7 pour le novice.](/images/echecs-memoire-03-miller-travail.svg)
+
 Voici l'expérience la plus simple pour le voir. Tu montres une position de milieu de partie pendant cinq secondes, tu caches l'échiquier, tu demandes de la reconstituer : un novice replace 3 ou 4 pièces correctement, un grand maître en replace 28 ou 29. Tu disperses les mêmes pièces **au hasard** et tu recommences : maître et novice retombent à 3 ou 4. Ce résultat, publié en 1973 par [William Chase](https://en.wikipedia.org/wiki/William_Chase_(psychologist)) et [Herbert Simon](https://fr.wikipedia.org/wiki/Herbert_Simon) dans *Cognitive Psychology*, a renversé le mythe de la mémoire photographique.
 
 ![Après cinq secondes, un novice et un grand maître replacent tous deux environ 4 pièces sur une position aléatoire ; mais sur une position réelle de partie, le grand maître en replace 28 contre 4 pour le novice.](/images/echecs-memoire-01-chunking.svg)
@@ -100,6 +102,8 @@ Voici l'expérience la plus simple pour le voir. Tu montres une position de mili
 Calculer une variante, c'est parcourir un **arbre** de positions possibles sous contrainte de temps. La planification, c'est choisir **quelles** branches explorer : tu ne peux pas tout tenir en tête.
 
 Les travaux d'[Adriaan de Groot](https://fr.wikipedia.org/wiki/Adriaan_de_groot) (*Thought and Choice in Chess*, 1965) ont montré une différence frappante : ce qui sépare surtout les maîtres n'est pas « calculer plus loin à tout prix », c'est la **qualité du premier coup sérieusement envisagé**. Un maître oriente vite l'attention vers les coups plausibles ; un novice peut brûler du temps sur des idées faibles. La mémoire à long terme **suggère des hypothèses** avant que le calcul conscient ne prenne le relais.
+
+![De Groot (1965) : le novice explore plusieurs coups faibles avant de trouver un bon candidat ; le maître, guidé par sa mémoire à long terme, identifie d'emblée les coups plausibles et consacre l'essentiel de son temps au calcul utile.](/images/echecs-memoire-04-degroot-candidats.svg)
 
 > **de Groot AD.** (1965). *Thought and Choice in Chess.* The Hague : Mouton.
 
@@ -127,6 +131,8 @@ La mémoire à long terme, ce n'est pas un disque dur passif : ce qui entre dura
 
 [Fernand Gobet](https://fr.wikipedia.org/wiki/Fernand_Gobet) et Simon (1996) ont affiné le modèle des chunks avec les **templates** : de grandes structures avec un **noyau** stable (un plan typique, une structure de pions) et des **emplacements variables** pour l'adapter à la position réelle. Un grand maître n'encode pas 100 000 positions indépendantes : il réutilise des familles de motifs.
 
+![Le modèle des templates (Gobet & Simon, 1996) : un noyau stable de pièces invariantes et des emplacements variables qui s'adaptent à chaque variante, comparé au modèle des chunks isolés de 1973.](/images/echecs-memoire-02-templates.svg)
+
 > **Gobet F & Simon HA.** (1996). *Templates in chess memory : A mechanism for recalling several boards.* Cognitive Psychology, 31(1), 1-40.
 
 Des travaux en [neuroimagerie](https://fr.wikipedia.org/wiki/Neuroimagerie) montrent que les joueurs expérimentés s'appuient davantage sur des aires liées à la **mémoire à long terme** lors de la reconnaissance de positions, et moins sur une mémoire de travail « brute ». Le cerveau **classe** plutôt qu'il ne surcharge. Le détail est développé dans l'article sur [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
@@ -146,6 +152,8 @@ Mémoriser des coups sans le **pourquoi** du plan, c'est stocker une liste fragi
 - apprendre des variantes par cœur sans idée positionnelle.
 
 [Anders Ericsson](https://fr.wikipedia.org/wiki/K._Anders_Ericsson) a souvent illustré la **pratique délibérée** avec les échecs : le volume seul ne suffit pas ; il faut du feedback et de l'attention sur les erreurs.
+
+![Pratique délibérée (Ericsson) : la courbe de construction de chunks est bien plus rapide avec feedback ciblé et analyse des erreurs qu'avec un simple volume de parties rapides non analysées.](/images/echecs-memoire-05-pratique-deliberee.svg)
 
 ## Le souvenir des parties jouées et des leçons apprises
 
@@ -216,6 +224,8 @@ La consolidation favorise la **régularité** modérée plutôt que les cramming
 ## Comment analyser ses parties pour progresser
 
 Ouvre la partie le lendemain, sans le mode « justification immédiate » du moteur : note où ton plan s'est cassé, si tu as manqué un **thème** récurrent chez toi (temps, fianchetto adverse, structure de pions). Transforme ça en **exercice ciblé** la semaine suivante.
+
+![Cycle de consolidation mémorielle : jouer la partie, analyser à froid le lendemain, encoder une fiche courte sur l'erreur-clé, créer un exercice ciblé, puis rejouer pour ancrer le motif en mémoire à long terme.](/images/echecs-memoire-06-cycle-analyse.svg)
 
 ## Le jeu d'échecs de mémoire pour enfants : une approche ludique
 

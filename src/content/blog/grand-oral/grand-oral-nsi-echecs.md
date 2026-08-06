@@ -276,6 +276,8 @@ La différence avec un arbre binaire de recherche : dans un arbre des coups, on 
 
 ![Élagage alpha-bêta sur un arbre minimax : une branche est coupée car elle ne peut pas améliorer le résultat déjà garanti par MAX.](/images/go-nsi-01-alphabeta-coupure.svg)
 
+![Arbre n-aire des coups parcouru par un DFS récursif, de la racine aux feuilles.](/images/go-nsi-03-arbre-naire-dfs.svg)
+
 ## Programmation Python : représenter l'échiquier
 
 ### Tableau 2D : la représentation naïve
@@ -333,6 +335,8 @@ pions_blancs = (pions_blancs & ~case_e2) | (1 << 28)
 ```
 
 Ce code mobilise les **opérateurs bit à bit** Python : `&` (ET), `|` (OU), `~` (NON), `<<` (décalage gauche). Ces opérateurs sont au **programme** et sont ici directement utiles. Un moteur peut calculer tous les coups légaux d'une pièce avec quelques opérations bit à bit en microsecondes, alors qu'un tableau 2D nécessite des boucles.
+
+![Deux représentations de l'échiquier : tableau 2D lisible contre bitboard (64 bits) performant.](/images/go-nsi-04-bitboard-vs-tableau2d.svg)
 
 ## Intelligence artificielle : de Stockfish à AlphaZero
 
@@ -400,6 +404,10 @@ Les échecs permettent d'illustrer la distinction entre les grandes familles d'a
 Cette distinction est l'une des **questions** les plus probables du **jury** sur un **sujet** IA/NSI.
 
 ![Deux paradigmes d'IA aux échecs : Stockfish (alpha-bêta, évaluation experte) contre AlphaZero (réseau de neurones, auto-apprentissage).](/images/go-nsi-02-stockfish-alphazero.svg)
+
+![Apprentissage supervisé (imiter des parties) contre apprentissage par renforcement (auto-jeu d'AlphaZero).](/images/go-nsi-07-apprentissage-supervise-vs-renforcement.svg)
+
+![Alpha-bêta (exploration exhaustive élaguée) contre MCTS (exploration sélective par simulations).](/images/go-nsi-06-mcts-vs-alphabeta.svg)
 
 ## Données et bases de données
 
@@ -500,6 +508,8 @@ def calculer_hash(echiquier_liste):
 ```
 
 Ce code illustre les notions d'**opérateurs XOR**, de **tables de hachage**, et de **collision de hachage**.
+
+![Table de transposition et hachage Zobrist : deux séquences menant à la même position ne sont calculées qu'une fois.](/images/go-nsi-05-table-transposition-zobrist.svg)
 
 ## FAQ jury : 15 questions classées par difficulté
 

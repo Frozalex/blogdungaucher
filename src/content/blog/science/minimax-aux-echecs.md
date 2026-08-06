@@ -107,11 +107,15 @@ En pratique, presque aucun moteur n'implémente minimax dans sa forme à deux br
 
 Une heuristique puissante : et si tu **passes ton tour** ? Si la position reste bonne pour toi malgré ce coup gratuit donné à l'adversaire, alors elle est probablement *très* bonne pour toi, et tu peux élaguer profondément le reste de l'analyse. C'est le **null-move pruning**, technique standard depuis les années 1990. Aux échecs, l'astuce a une limite connue (le *zugzwang*: situation où tout coup empire la position, typique des finales de pions), donc les moteurs désactivent l'heuristique en finale ou dans les positions identifiées comme zugzwang potentiel. Gain typique : encore un facteur 2 à 4 sur la vitesse effective.
 
+![Null-move pruning : si la position reste positive après un coup nul (passer son tour), le moteur élague profondément l'arbre — avec la limite du zugzwang en finale où cette heuristique est désactivée.](/images/minimax-03-null-move.svg)
+
 ## Les techniques avancées des moteurs modernes
 
 Les moteurs d'échecs modernes comme Stockfish ajoutent de nombreuses techniques au-dessus d'alpha-bêta de base :
 
 **Tables de transposition** : un cache de positions déjà analysées. Si la même position est atteinte par des ordres de coups différents (transposition), le moteur réutilise l'analyse précédente au lieu de la recalculer. Les tables de transposition peuvent économiser des ordres de grandeur en temps de calcul.
+
+![Tables de transposition : deux ordres de coups différents mènent à la même position — sans table le moteur l'analyse deux fois, avec table (hachage Zobrist) le second chemin reçoit le résultat instantanément depuis le cache.](/images/minimax-04-transposition.svg)
 
 **Approfondissement itératif** : au lieu d'effectuer directement une recherche à profondeur $d$, le moteur enchaîne des recherches successives à profondeur 1, 2, 3, ..., $d$. Chaque itération fournit un meilleur ordonnancement des coups pour l'itération suivante, améliorant l'efficacité de l'élagage.
 
