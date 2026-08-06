@@ -23,7 +23,7 @@
 
   <!-- Barre de référence 100% -->
   <line x1="160" y1="208" x2="640" y2="208" stroke="#c9c2b4" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="648" y="212" font-family="system-ui, sans-serif" font-size="11" fill="#8a8478">100%</text>
+  <text x="636" y="212" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#8a8478">100%</text>
 
   <!-- Séparateur -->
   <line x1="40" y1="232" x2="600" y2="232" stroke="#c9c2b4" stroke-width="1"/>

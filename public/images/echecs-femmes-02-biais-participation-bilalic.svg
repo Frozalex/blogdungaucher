@@ -7,7 +7,7 @@
   <!-- Axes -->
   <line x1="60" y1="280" x2="590" y2="280" stroke="#1c1a16" stroke-width="1.5"/>
   <polygon points="590,280 580,275 580,285" fill="#1c1a16"/>
-  <text x="596" y="284" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Niveau Elo</text>
+  <text x="636" y="284" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Niveau Elo</text>
   <line x1="60" y1="280" x2="60" y2="55" stroke="#1c1a16" stroke-width="1.5"/>
   <polygon points="60,55 55,65 65,65" fill="#1c1a16"/>
   <text x="62" y="50" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Nombre de joueurs</text>
