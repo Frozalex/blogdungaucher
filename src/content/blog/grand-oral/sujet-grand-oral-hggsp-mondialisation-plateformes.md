@@ -57,6 +57,8 @@ Quatrième marqueur : la langue de communication est dominée par l'anglais. Les
 
 À ce stade, le verdict semble simple : les échecs incarnent la mondialisation culturelle uniformisante. Mais ce serait une lecture rapide. La réalité est plus nuancée.
 
+![Les marqueurs de la mondialisation échiquéenne convergent vers un jeu mondial homogène : règles FIDE, jeu en ligne, moteurs, notation et circulation des joueurs.](/images/sujet-mondialisation-01-marqueurs.svg)
+
 ## Les résistances locales et la persistance des styles nationaux
 
 Sous cette homogénéisation apparente, plusieurs résistances locales persistent et structurent en profondeur la pratique du jeu.
@@ -82,6 +84,8 @@ Deuxième acteur non étatique : les **streamers et créateurs individuels**. Hi
 Troisième acteur non étatique : les **organisations internationales humanitaires**. Le programme Chess for Refugees, opéré par le Haut-Commissariat des Nations Unies pour les Réfugiés, utilise les échecs comme outil d'intégration dans des camps au Kenya, en Syrie, au Bangladesh. Ce programme illustre une autre dimension de la mondialisation : la circulation des outils culturels comme moyens d'aide humanitaire. C'est un usage social du jeu qui dépasse complètement les logiques étatiques classiques.
 
 Cette montée des acteurs non étatiques pose des **questions** politiques nouvelles. Si les plateformes privées définissent ce qu'est un bon joueur, qui les régule ? Si un streamer individuel influence des millions de jeunes joueurs, quelle responsabilité a-t-il ? Ces **enjeux** dépassent les échecs et concernent toute la culture numérique mondiale. C'est l'un des **conflits** centraux du vingt-et-unième siècle.
+
+![La tension du sujet : forces d'uniformisation (plateformes, règles, moteurs) contre résistances (écoles nationales, styles, acteurs non étatiques).](/images/sujet-mondialisation-02-tension-resistances.svg)
 
 ## Conclusion
 
