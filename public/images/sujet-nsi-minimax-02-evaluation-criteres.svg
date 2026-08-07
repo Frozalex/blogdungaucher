@@ -62,8 +62,8 @@
 
   <text x="108" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1c1a16">Sécurité roi</text>
   <text x="108" y="293" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">structure de roque, tropisme</text>
-  <text x="164" y="280" font-family="system-ui, sans-serif" font-size="10" fill="#8a8478">bonus_securite_roi(position)</text>
-  <text x="164" y="295" font-family="system-ui, sans-serif" font-size="10" fill="#8a8478">pions devant le roi, pièces adverses proches</text>
+  <text x="330" y="280" font-family="system-ui, sans-serif" font-size="10" fill="#8a8478">bonus_securite_roi(position)</text>
+  <text x="330" y="295" font-family="system-ui, sans-serif" font-size="10" fill="#8a8478">pions devant le roi, pièces adverses proches</text>
 
   <!-- Vertical separator between label zone and bars -->
   <line x1="216" y1="55" x2="216" y2="330" stroke="#c9c2b4" stroke-width="1" stroke-dasharray="3 3"/>

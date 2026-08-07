@@ -35,49 +35,49 @@
 
   <!-- Cards below timeline -->
   <!-- J-30 card -->
-  <line x1="60" y1="100" x2="60" y2="120" stroke="#3d8b37" stroke-width="1.5" stroke-dasharray="3 2"/>
-  <rect x="12" y="120" width="140" height="100" rx="8" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.5"/>
-  <text x="82" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#2e7d34">Choisir</text>
-  <text x="82" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Problématique</text>
-  <text x="82" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">dans le tableau</text>
-  <text x="82" y="187" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">3 données à</text>
-  <text x="82" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">mémoriser</text>
+  <line x1="60" y1="100" x2="73" y2="120" stroke="#3d8b37" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="14" y="120" width="118" height="100" rx="8" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.5"/>
+  <text x="73" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#2e7d34">Choisir</text>
+  <text x="73" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Problématique</text>
+  <text x="73" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">dans le tableau</text>
+  <text x="73" y="187" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">3 données à</text>
+  <text x="73" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">mémoriser</text>
 
   <!-- J-15 card -->
-  <line x1="168" y1="100" x2="168" y2="120" stroke="#3d8b37" stroke-width="1.5" stroke-dasharray="3 2"/>
-  <rect x="104" y="120" width="128" height="100" rx="8" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.5"/>
-  <text x="168" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#2e7d34">Script</text>
-  <text x="168" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">1er entraînement</text>
-  <text x="168" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">chrono, seul</text>
-  <text x="168" y="187" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Fiches perso</text>
-  <text x="168" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">à construire</text>
+  <line x1="168" y1="100" x2="197" y2="120" stroke="#3d8b37" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="138" y="120" width="118" height="100" rx="8" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.5"/>
+  <text x="197" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#2e7d34">Script</text>
+  <text x="197" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">1er entraînement</text>
+  <text x="197" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">chrono, seul</text>
+  <text x="197" y="187" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Fiches perso</text>
+  <text x="197" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">à construire</text>
 
   <!-- J-7 card -->
-  <line x1="312" y1="100" x2="312" y2="120" stroke="#3d8b37" stroke-width="1.5" stroke-dasharray="3 2"/>
-  <rect x="248" y="120" width="128" height="100" rx="8" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.5"/>
-  <text x="312" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#2e7d34">Simulation</text>
-  <text x="312" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Jury hostile</text>
-  <text x="312" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">avec un proche</text>
-  <text x="312" y="187" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">1 auteur + 2</text>
-  <text x="312" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">exemples concrets</text>
+  <line x1="312" y1="100" x2="321" y2="120" stroke="#3d8b37" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="262" y="120" width="118" height="100" rx="8" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.5"/>
+  <text x="321" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#2e7d34">Simulation</text>
+  <text x="321" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Jury hostile</text>
+  <text x="321" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">avec un proche</text>
+  <text x="321" y="187" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">1 auteur + 2</text>
+  <text x="321" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">exemples concrets</text>
 
   <!-- J-2 card -->
-  <line x1="456" y1="100" x2="456" y2="120" stroke="#c9a24b" stroke-width="1.5" stroke-dasharray="3 2"/>
-  <rect x="392" y="120" width="128" height="100" rx="8" fill="#fff" stroke="#c9a24b" stroke-width="1.5"/>
-  <text x="456" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#c9a24b">Filmer</text>
-  <text x="456" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Dernier chrono</text>
-  <text x="456" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">complet filmé</text>
-  <text x="456" y="187" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Préparer le sac</text>
-  <text x="456" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">convocation, eau</text>
+  <line x1="456" y1="100" x2="445" y2="120" stroke="#c9a24b" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="386" y="120" width="118" height="100" rx="8" fill="#fff" stroke="#c9a24b" stroke-width="1.5"/>
+  <text x="445" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#c9a24b">Filmer</text>
+  <text x="445" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Dernier chrono</text>
+  <text x="445" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">complet filmé</text>
+  <text x="445" y="187" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Préparer le sac</text>
+  <text x="445" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">convocation, eau</text>
 
   <!-- J-1 card -->
-  <line x1="528" y1="100" x2="528" y2="120" stroke="#c9a24b" stroke-width="1.5" stroke-dasharray="3 2"/>
-  <rect x="490" y="120" width="128" height="100" rx="8" fill="#fff" stroke="#c9a24b" stroke-width="1.5"/>
-  <text x="554" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#c9a24b">Reposer</text>
-  <text x="554" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Anti-sèche</text>
-  <text x="554" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">5 min max</text>
-  <text x="554" y="187" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Se coucher tôt</text>
-  <text x="554" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">échiquier prêt</text>
+  <line x1="528" y1="100" x2="569" y2="120" stroke="#c9a24b" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="510" y="120" width="118" height="100" rx="8" fill="#fff" stroke="#c9a24b" stroke-width="1.5"/>
+  <text x="569" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#c9a24b">Reposer</text>
+  <text x="569" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Anti-sèche</text>
+  <text x="569" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">5 min max</text>
+  <text x="569" y="187" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Se coucher tôt</text>
+  <text x="569" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">échiquier prêt</text>
 
   <!-- Jour J big banner -->
   <rect x="40" y="240" width="560" height="56" rx="10" fill="#1c1a16"/>

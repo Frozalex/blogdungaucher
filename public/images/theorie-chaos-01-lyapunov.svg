@@ -75,7 +75,7 @@
   <line x1="570" y1="155" x2="570" y2="213" stroke="#3d8b37" stroke-width="1.5" stroke-dasharray="3 2"/>
   <polygon points="570,155 566,163 574,163" fill="#3d8b37"/>
   <polygon points="570,213 566,205 574,205" fill="#3d8b37"/>
-  <text x="595" y="190" text-anchor="start" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#2e7d34">+1,3 pion</text>
+  <text x="636" y="190" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#2e7d34">+1,3 pion</text>
 
   <!-- label chaotique -->
   <rect x="374" y="72" width="195" height="54" rx="6" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.8"/>

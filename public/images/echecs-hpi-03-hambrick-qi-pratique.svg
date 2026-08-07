@@ -29,19 +29,19 @@
   <!-- Bar 1 : Pratique délibérée - ~34% (dominant) -->
   <!-- 34% → largeur = 34/100 * 400 = 136px -->
   <rect x="201" y="80" width="136" height="44" rx="4" fill="#3d8b37"/>
-  <text x="195" y="107" text-anchor="end" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1c1a16">Pratique délibérée</text>
+  <text x="205" y="74" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1c1a16">Pratique délibérée</text>
   <text x="342" y="107" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#2e7d34">~34 %</text>
 
   <!-- Bar 2 : QI - 8% -->
   <!-- 8% → largeur = 8/100 * 400 = 32px -->
   <rect x="201" y="143" width="32" height="44" rx="4" fill="#c9a24b"/>
-  <text x="195" y="170" text-anchor="end" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1c1a16">QI</text>
+  <text x="205" y="137" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1c1a16">QI</text>
   <text x="238" y="170" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#c9a24b">~8 %</text>
 
   <!-- Bar 3 : Mémoire de travail - faible quand pratique contrôlée -->
   <!-- ~5% → largeur = 20px -->
   <rect x="201" y="206" width="20" height="44" rx="4" fill="#9b9384"/>
-  <text x="195" y="233" text-anchor="end" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1c1a16">Mémoire de travail</text>
+  <text x="205" y="200" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1c1a16">Mémoire de travail</text>
   <text x="226" y="233" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#6e6a64">faible*</text>
 
   <!-- Footnote -->

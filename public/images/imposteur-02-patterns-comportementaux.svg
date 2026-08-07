@@ -7,7 +7,7 @@
   <rect x="40" y="55" width="272" height="52" rx="8" fill="#fff" stroke="#c9a24b" stroke-width="1.5"/>
   <text x="56" y="76" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#c9a24b">1</text>
   <text x="82" y="74" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1c1a16">Discours négatif après les victoires</text>
-  <text x="82" y="92" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">« J'ai eu de la chance / il était en mauvaise forme »</text>
+  <text x="82" y="92" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">« J'ai eu de la chance / il jouait mal »</text>
 
   <!-- Pattern 2 -->
   <rect x="328" y="55" width="272" height="52" rx="8" fill="#fff" stroke="#c9a24b" stroke-width="1.5"/>

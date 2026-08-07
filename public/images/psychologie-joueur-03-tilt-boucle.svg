@@ -41,9 +41,9 @@
   <path d="M220 295 Q120 295 120 78 Q120 52 220 58" stroke="#c9a24b" stroke-width="2" fill="none" marker-end="url(#arr-amber)"/>
 
   <!-- TILT label in center -->
-  <text x="295" y="190" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#c9a24b">TILT</text>
-  <text x="295" y="212" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8a8478">boucle</text>
-  <text x="295" y="226" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8a8478">auto-amplifiante</text>
+  <text x="300" y="142" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#c9a24b">TILT</text>
+  <text x="300" y="160" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8a8478">boucle</text>
+  <text x="300" y="174" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8a8478">auto-amplifiante</text>
 
   <!-- Break arrow: sortie volontaire -->
   <line x1="420" y1="192" x2="370" y2="192" stroke="#3d8b37" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arr-green)"/>
