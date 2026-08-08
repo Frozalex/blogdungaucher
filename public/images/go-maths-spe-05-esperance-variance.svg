@@ -6,7 +6,7 @@
   <!-- Axe horizontal -->
   <line x1="80" y1="270" x2="600" y2="270" stroke="#1c1a16" stroke-width="1.5"/>
   <polygon points="600,270 592,266 592,274" fill="#1c1a16"/>
-  <text x="340" y="298" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6e6a64">Écart de cotes (R_A − R_B)</text>
+  <text x="340" y="318" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6e6a64">Écart de cotes (R_A − R_B)</text>
   <!-- ticks axe X -->
   <line x1="160" y1="266" x2="160" y2="274" stroke="#1c1a16" stroke-width="1.2"/>
   <text x="160" y="288" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">−400</text>
@@ -34,12 +34,12 @@
 
   <!-- Courbe Espérance (logistique) -->
   <polyline points="100,258 120,254 140,248 160,238 180,225 200,210 220,193 240,176 260,162 270,155 280,149 300,140 320,133 340,128 360,123 380,119 400,113 430,107 460,102 490,97 520,93 550,90 570,88 590,87" fill="none" stroke="#3d8b37" stroke-width="2.5"/>
-  <text x="595" y="84" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#3d8b37">E(X)</text>
+  <text x="595" y="112" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#3d8b37">E(X)</text>
 
   <!-- Bande écart-type (σ autour de E) - remplissage semi-transparent -->
   <polygon points="100,258 120,254 140,248 160,238 180,225 200,210 220,193 240,176 260,162 270,155 280,149 300,140 320,133 340,128 360,123 380,119 400,113 430,107 460,102 490,97 520,93 550,90 570,88 590,87 590,115 570,118 550,122 520,127 490,134 460,140 430,148 400,157 380,163 360,169 340,175 320,180 300,186 280,190 270,193 260,195 240,199 220,202 200,202 180,200 160,196 140,186 120,170 100,152" fill="#eef3e9" stroke="none" opacity="0.7"/>
   <polyline points="100,152 120,170 140,186 160,196 180,200 200,202 220,202 240,199 260,195 270,193 280,190 300,186 320,180 340,175 360,169 380,163 400,157 430,148 460,140 490,134 520,127 550,122 570,118 590,115" fill="none" stroke="#3d8b37" stroke-width="1.2" stroke-dasharray="3 3"/>
-  <text x="595" y="120" font-family="system-ui, sans-serif" font-size="11" fill="#3d8b37">E±σ</text>
+  <text x="595" y="132" font-family="system-ui, sans-serif" font-size="11" fill="#3d8b37">E±σ</text>
 
   <!-- Points clés annotés -->
   <!-- Écart 0 : E=0.5, σ=0.5 -->

@@ -14,7 +14,7 @@
 
   <!-- === NIVEAU 3 : FEUILLES (positions terminales) === -->
   <!-- Label niveau -->
-  <text x="580" y="314" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#8a8478">Niveau 3 (terminaux)</text>
+  <text x="580" y="358" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#8a8478">Niveau 3 (terminaux)</text>
 
   <!-- Feuille 1 : Mat Blancs gagne -->
   <circle cx="110" cy="305" r="20" fill="#fff" stroke="#5b9fd4" stroke-width="2"/>

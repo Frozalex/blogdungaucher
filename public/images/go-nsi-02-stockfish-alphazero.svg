@@ -54,11 +54,11 @@
   <text x="320" y="174" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#fff">VS</text>
 
   <!-- Training time badges -->
-  <rect x="68" y="295" width="186" height="28" rx="6" fill="#fff" stroke="#c9c2b4" stroke-width="1.2"/>
-  <text x="161" y="313" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6e6a64">Entraînement : aucun</text>
+  <rect x="68" y="283" width="186" height="24" rx="6" fill="#fff" stroke="#c9c2b4" stroke-width="1.2"/>
+  <text x="161" y="299" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6e6a64">Entraînement : aucun</text>
 
-  <rect x="386" y="295" width="186" height="28" rx="6" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.5"/>
-  <text x="479" y="313" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#2e7d34">Entraînement : 4 heures</text>
+  <rect x="386" y="283" width="186" height="24" rx="6" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.5"/>
+  <text x="479" y="299" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#2e7d34">Entraînement : 4 heures</text>
 
   <!-- Result banner at bottom -->
   <rect x="150" y="308" width="340" height="24" rx="6" fill="#faf8ef"/>

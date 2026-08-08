@@ -51,8 +51,8 @@
   <!-- Pros: 131.7 → 131.7/170*170 = 131.7 px -->
   <rect x="512" y="128" width="52" height="132" rx="4" fill="#3d8b37"/>
   <!-- Badge for most significant -->
-  <rect x="508" y="106" width="60" height="18" rx="4" fill="#c9a24b"/>
-  <text x="538" y="119" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#fff">p = 0,0004</text>
+  <rect x="508" y="92" width="60" height="18" rx="4" fill="#c9a24b"/>
+  <text x="538" y="105" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#fff">p = 0,0004</text>
   <text x="538" y="124" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2e7d34">131,7</text>
   <text x="538" y="278" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#2e7d34">Pros</text>
 

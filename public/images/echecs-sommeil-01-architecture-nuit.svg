@@ -116,9 +116,9 @@
   <text x="502" y="73" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#c9a24b">REM : intégration patterns</text>
 
   <!-- Alarm clock warning -->
-  <rect x="490" y="232" width="110" height="30" rx="5" fill="#c9a24b"/>
-  <text x="545" y="245" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#fff">Alarme trop tôt</text>
-  <text x="545" y="258" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#fff">prive du REM !</text>
+  <rect x="490" y="196" width="110" height="30" rx="5" fill="#c9a24b"/>
+  <text x="545" y="209" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#fff">Alarme trop tôt</text>
+  <text x="545" y="222" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#fff">prive du REM !</text>
 
   <!-- Cycle brackets -->
   <g stroke="#8a8478" stroke-width="1" fill="none">

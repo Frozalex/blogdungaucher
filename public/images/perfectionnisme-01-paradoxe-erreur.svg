@@ -54,7 +54,7 @@
   <text x="120" y="244" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1c1a16">satisficing</text>
   <text x="120" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">un bon coup joué vite</text>
   <text x="120" y="278" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">vaut mieux que le parfait</text>
-  <text x="120" y="282" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#3d8b37">(Herbert Simon)</text>
+  <text x="120" y="295" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#3d8b37">(Herbert Simon)</text>
 
   <!-- Legend/annotation bottom -->
   <text x="320" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#8a8478">« Ne pensez pas à un ours blanc. » : et vous y pensez.</text>

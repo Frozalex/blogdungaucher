@@ -45,15 +45,15 @@
   <text x="83" y="247" font-family="system-ui, sans-serif" font-size="11" fill="#c9a24b" font-weight="700">départ 1400</text>
 
   <!-- Légendes -->
-  <rect x="330" y="220" width="270" height="90" rx="8" fill="#fff" stroke="#c9c2b4" stroke-width="1.2"/>
+  <rect x="330" y="194" width="270" height="90" rx="8" fill="#fff" stroke="#c9c2b4" stroke-width="1.2"/>
 
-  <line x1="346" y1="245" x2="386" y2="245" stroke="#3d8b37" stroke-width="2.5"/>
-  <text x="394" y="249" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#3d8b37">K = 32</text>
-  <text x="394" y="265" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">rapide, instable (débutant)</text>
+  <line x1="346" y1="219" x2="386" y2="219" stroke="#3d8b37" stroke-width="2.5"/>
+  <text x="394" y="223" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#3d8b37">K = 32</text>
+  <text x="394" y="239" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">rapide, instable (débutant)</text>
 
-  <line x1="346" y1="284" x2="386" y2="284" stroke="#5b9fd4" stroke-width="2.5"/>
-  <text x="394" y="288" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#5b9fd4">K = 10</text>
-  <text x="394" y="304" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">lent, stable (&gt; 2400 Elo)</text>
+  <line x1="346" y1="258" x2="386" y2="258" stroke="#5b9fd4" stroke-width="2.5"/>
+  <text x="394" y="262" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#5b9fd4">K = 10</text>
+  <text x="394" y="278" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">lent, stable (&gt; 2400 Elo)</text>
 
   <!-- Annotation convergence K=32 -->
   <line x1="200" y1="115" x2="200" y2="80" stroke="#3d8b37" stroke-width="1" stroke-dasharray="3 3"/>

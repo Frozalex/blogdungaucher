@@ -47,11 +47,11 @@
   <circle cx="540" cy="138" r="22" fill="#faf8ef" stroke="#c9c2b4" stroke-width="1.5" stroke-dasharray="4 3"/>
   <text x="540" y="143" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#c9c2b4">?</text>
 
-  <text x="480" y="185" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Biais invisibles</text>
-  <text x="480" y="201" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">« Moi je réfléchis</text>
-  <text x="480" y="217" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">   vraiment »</text>
-  <text x="480" y="233" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">« Je connais les biais,</text>
-  <text x="480" y="249" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">   donc j'y échappe »</text>
+  <text x="480" y="177" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">Biais invisibles</text>
+  <text x="480" y="193" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">« Moi je réfléchis</text>
+  <text x="480" y="209" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">   vraiment »</text>
+  <text x="480" y="225" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">« Je connais les biais,</text>
+  <text x="480" y="241" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16">   donc j'y échappe »</text>
 
   <rect x="382" y="248" width="196" height="14" rx="4" fill="#faf8ef" stroke="#c9a24b" stroke-width="1.2"/>
   <text x="480" y="259" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#a67f2a">Détection aveugle</text>

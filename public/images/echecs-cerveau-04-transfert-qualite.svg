@@ -12,7 +12,7 @@
   <polygon points="80,68 75,78 85,78" fill="#1c1a16"/>
 
   <!-- Axis labels -->
-  <text x="335" y="298" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6e6a64">Qualité du design expérimental →</text>
+  <text x="335" y="313" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">Qualité du design expérimental →</text>
   <text x="28" y="175" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6e6a64" transform="rotate(-90 28 175)">Effet estimé →</text>
 
   <!-- X-axis ticks -->
