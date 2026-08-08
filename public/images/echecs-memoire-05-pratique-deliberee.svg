@@ -23,7 +23,7 @@
 
   <!-- labels on curves -->
   <text x="420" y="188" text-anchor="start" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#9b9384">Volume seul</text>
-  <text x="370" y="127" text-anchor="start" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2e7d34">Pratique délibérée</text>
+  <text x="370" y="127" text-anchor="start" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2e7d34" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">Pratique délibérée</text>
 
   <!-- annotations for deliberate practice -->
   <circle cx="195" cy="232" r="5" fill="#3d8b37"/>

@@ -12,7 +12,7 @@
   <!-- Étape 1 : Victoire (haut) -->
   <rect x="248" y="50" width="144" height="46" rx="10" fill="#eef3e9" stroke="#3d8b37" stroke-width="2"/>
   <text x="320" y="71" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2e7d34">① Victoire (ou défaite)</text>
-  <text x="320" y="88" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64">le mat tombe, le temps expire</text>
+  <text x="320" y="88" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6e6a64" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">le mat tombe, le temps expire</text>
 
   <!-- Étape 2 : Dopamine (droite) -->
   <rect x="468" y="148" width="130" height="46" rx="10" fill="#eef3e9" stroke="#3d8b37" stroke-width="1.8"/>

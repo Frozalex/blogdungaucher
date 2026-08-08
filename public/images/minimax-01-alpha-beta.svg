@@ -66,7 +66,7 @@
 
   <!-- Croix sur les branches élaggées -->
   <text x="472" y="256" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#c9a24b" opacity="0.7">✗</text>
-  <text x="535" y="248" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#c9a24b" opacity="0.7">✗</text>
+  <text x="535" y="248" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#c9a24b" opacity="0.7" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">✗</text>
 
   <!-- Annotation élagage -->
   <rect x="395" y="228" width="195" height="42" rx="6" fill="#fff" stroke="#c9a24b" stroke-width="1.5"/>

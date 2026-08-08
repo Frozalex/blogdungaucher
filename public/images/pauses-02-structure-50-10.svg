@@ -32,7 +32,7 @@
 
   <!-- Curve WITHOUT pauses (dégradation) -->
   <path d="M70,88 C130,88 200,100 270,148 C330,190 380,230 590,272" fill="none" stroke="#c9c2b4" stroke-width="2" stroke-dasharray="6 4"/>
-  <text x="435" y="248" font-family="system-ui, sans-serif" font-size="12" fill="#9b9384">sans pause</text>
+  <text x="435" y="248" font-family="system-ui, sans-serif" font-size="12" fill="#9b9384" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">sans pause</text>
 
   <!-- Micro-pause zones (10 min breaks at ~50min and ~110min in session) -->
   <!-- Pause 1: at x≈213 (50min) to x≈248 (60min) -->

@@ -55,7 +55,7 @@
   <!-- Asymptote: vraie force E=1600, y=125 -->
   <line x1="80" y1="125" x2="590" y2="125" stroke="#3d8b37" stroke-width="1.5" stroke-dasharray="7 5"/>
   <text x="636" y="122" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#3d8b37" font-weight="700">E = 1600</text>
-  <text x="636" y="134" text-anchor="end" font-family="system-ui, sans-serif" font-size="10" font-style="italic" fill="#3d8b37">(vraie force)</text>
+  <text x="636" y="134" text-anchor="end" font-family="system-ui, sans-serif" font-size="10" font-style="italic" fill="#3d8b37" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">(vraie force)</text>
 
   <!-- Simulated Elo trajectory starting at 1400, converging to 1600
        Using K=32, player wins more than expected (undersestimated)
@@ -93,7 +93,7 @@
 
   <!-- Starting point annotation -->
   <circle cx="80" cy="235" r="6" fill="#c9a24b" stroke="#fff" stroke-width="1.5"/>
-  <text x="93" y="232" font-family="system-ui, sans-serif" font-size="12" fill="#c9a24b" font-weight="700">Départ : 1400</text>
+  <text x="93" y="232" font-family="system-ui, sans-serif" font-size="12" fill="#c9a24b" font-weight="700" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">Départ : 1400</text>
   <text x="93" y="248" font-family="system-ui, sans-serif" font-size="11" font-style="italic" fill="#8a8478">(joueur sous-estimé)</text>
 
   <!-- Convergence zone annotation -->

@@ -49,9 +49,9 @@
 
   <!-- Edge labels -->
   <text x="432" y="128" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#3d8b37">guide</text>
-  <text x="408" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#3d8b37">produit</text>
-  <text x="228" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#3d8b37">fournit données</text>
-  <text x="210" y="128" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#3d8b37">améliore</text>
+  <text x="408" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#3d8b37" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">produit</text>
+  <text x="228" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#3d8b37" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">fournit données</text>
+  <text x="210" y="128" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#3d8b37" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">améliore</text>
 
   <!-- Center label: number of self-play games -->
   <text x="320" y="188" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#1c1a16">×</text>

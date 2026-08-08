@@ -9,7 +9,7 @@
   <text x="320" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#2e7d34">initiale</text>
 
   <!-- Étiquette "sous jeu parfait" -->
-  <text x="320" y="126" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#8a8478">sous jeu parfait des deux camps</text>
+  <text x="320" y="126" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#8a8478" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">sous jeu parfait des deux camps</text>
 
   <!-- Branches vers les 3 issues -->
   <line x1="285" y1="96" x2="120" y2="190" stroke="#c9c2b4" stroke-width="1.8"/>

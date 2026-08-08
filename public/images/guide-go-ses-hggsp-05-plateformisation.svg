@@ -29,7 +29,7 @@
   </g>
   <text x="481" y="205" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-style="italic" fill="#2e7d34">effets de réseau, échelle mondiale</text>
 
-  <text x="320" y="255" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6e6a64">Joueurs actifs en ligne : une croissance qui s'emballe après 2020</text>
+  <text x="320" y="255" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6e6a64" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">Joueurs actifs en ligne : une croissance qui s'emballe après 2020</text>
   <!-- mini growth curve -->
   <polyline points="120,310 260,304 380,292 470,262 560,214" fill="none" stroke="#3d8b37" stroke-width="3"/>
   <circle cx="470" cy="262" r="4" fill="#3d8b37"/>

@@ -53,7 +53,7 @@
   <line x1="436" y1="136" x2="444" y2="136" stroke="#c9a24b" stroke-width="1.8"/>
   <line x1="436" y1="210" x2="444" y2="210" stroke="#c9a24b" stroke-width="1.8"/>
   <text x="432" y="178" text-anchor="end" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#c9a24b">effet</text>
-  <text x="432" y="192" text-anchor="end" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#c9a24b">modéré</text>
+  <text x="432" y="192" text-anchor="end" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#c9a24b" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">modéré</text>
 
   <!-- Note méthodologie -->
   <rect x="110" y="60" width="300" height="52" rx="7" fill="#fff" stroke="#c9c2b4" stroke-width="1.2"/>

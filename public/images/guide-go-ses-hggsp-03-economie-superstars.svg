@@ -49,8 +49,8 @@
   <text x="148" y="63" font-family="system-ui, sans-serif" font-size="10" fill="#2e7d34">streaming + pub + prix</text>
 
   <!-- Annotation: below threshold -->
-  <text x="380" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8a8478">Majorité des GM</text>
-  <text x="380" y="265" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8a8478">sous le seuil de rentabilité</text>
+  <text x="380" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8a8478" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">Majorité des GM</text>
+  <text x="380" y="265" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8a8478" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">sous le seuil de rentabilité</text>
 
   <!-- Source note -->
   <text x="320" y="344" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8a8478">Moins de 300 joueurs vivent exclusivement des prix selon la FIDE : les 10 premiers captent l'essentiel.</text>

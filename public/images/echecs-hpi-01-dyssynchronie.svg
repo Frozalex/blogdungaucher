@@ -33,7 +33,7 @@
   <!-- Intellectuel curve (higher than diagonal) -->
   <!-- Points approximatifs : (80,285), (180,230), (300,155), (420,90), (540,60) -->
   <polyline points="80,285 180,218 300,138 420,82 540,58" fill="none" stroke="#3d8b37" stroke-width="2.8"/>
-  <text x="430" y="74" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2e7d34">Intellectuel</text>
+  <text x="430" y="74" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#2e7d34" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">Intellectuel</text>
 
   <!-- Affectif curve (below diagonal) -->
   <!-- Points approximatifs : (80,285), (180,250), (300,208), (420,165), (540,130) -->

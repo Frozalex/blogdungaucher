@@ -50,7 +50,7 @@
   <text x="57" y="104" font-family="system-ui, sans-serif" font-size="11" fill="#1c1a16"> possible</text>
 
   <!-- Annotation □ on forced arrow -->
-  <text x="240" y="254" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#2e7d34">□</text>
+  <text x="240" y="254" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#2e7d34" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">□</text>
   <text x="258" y="254" font-family="system-ui, sans-serif" font-size="10" fill="#2e7d34">tous les mondes</text>
   <text x="258" y="266" font-family="system-ui, sans-serif" font-size="10" fill="#2e7d34">mènent au mat</text>
 
@@ -64,7 +64,7 @@
   <line x1="480" y1="174" x2="516" y2="210" stroke="#c9c2b4" stroke-width="1.5" stroke-dasharray="3 3"/>
 
   <!-- Accessibility relation label -->
-  <text x="320" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8a8478">coups légaux = relations d'accessibilité</text>
+  <text x="320" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8a8478" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">coups légaux = relations d'accessibilité</text>
 
   <!-- Bottom legend -->
   <text x="320" y="350" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#8a8478">Structure de Kripke : un monde par position, une flèche par coup légal</text>

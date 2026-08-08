@@ -63,8 +63,8 @@
   <polygon points="418,96 410,108 422,108" fill="#3d8b37"/>
 
   <!-- Annotations next to arrows -->
-  <text x="302" y="226" font-family="system-ui, sans-serif" font-size="10" fill="#2e7d34">retourne 3</text>
-  <text x="374" y="128" font-family="system-ui, sans-serif" font-size="10" fill="#2e7d34">remonte 3</text>
+  <text x="302" y="226" font-family="system-ui, sans-serif" font-size="10" fill="#2e7d34" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">retourne 3</text>
+  <text x="374" y="128" font-family="system-ui, sans-serif" font-size="10" fill="#2e7d34" stroke="#faf8ef" stroke-width="3" stroke-linejoin="round" paint-order="stroke">remonte 3</text>
 
   <!-- LEFT SIDE: Call stack -->
   <text x="130" y="56" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1c1a16">Pile d'appels</text>
