@@ -22,6 +22,11 @@ tags:
 seoTitle: "Psychologie du joueur d'échecs : ego, tilt, flow et peur de perdre"
 seoDescription: >-
   Ego, tilt, flow, peur de perdre, colère : décryptage complet de la psychologie du joueur d'échecs. Comment vos émotions influencent chaque décision sur l'échiquier.
+ogImage: /images/og/psychologie-du-joueur-d-echecs-og.webp
+heroImage:
+  src: /images/blog/psychologie-du-joueur-d-echecs-hero.webp
+  alt: >-
+    Une silhouette assise de profil faisant face à son ombre redressée comme un adversaire.
 faq:
   - question: "Comment gérer le tilt aux échecs ?"
     answer: >-

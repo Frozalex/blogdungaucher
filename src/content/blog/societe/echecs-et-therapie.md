@@ -40,14 +40,11 @@ seoTitle: "Échecs comme thérapie : PTSD, dépression, anxiété : ce que la re
 seoDescription: >-
   Échecs et santé mentale : études sur l'anxiété, la dépression, le PTSD, la réhabilitation en prison. Ce que la
   recherche dit sur l'échiquier comme outil thérapeutique.
-ogImage: /images/blog/echecs-et-therapie-hero.png
+ogImage: /images/og/echecs-et-therapie-og.webp
 heroImage:
-  src: /images/blog/echecs-et-therapie-hero.png
+  src: /images/blog/echecs-et-therapie-hero.webp
   alt: >-
-    Illustration pixel art : mains de deux personnes déplaçant des pièces d'échecs, lumière douce et atmosphère
-    bienveillante, « Échecs et thérapie »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une pelote de fil emmêlée d'où sort un unique brin parfaitement tendu et droit.
 faq:
   - question: Les échecs peuvent-ils traiter la dépression ?
     answer: >-

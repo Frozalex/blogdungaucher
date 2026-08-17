@@ -40,14 +40,11 @@ keyTakeaways:
 seoTitle: "Analyser ses parties d'échecs : méthode pratique pour progresser"
 seoDescription: >-
   Comment analyser ses parties d'échecs pour progresser ? Méthode sans moteur d'abord, erreurs récurrentes, utilisation intelligente de Stockfish. Guide pratique.
-ogImage: /images/blog/analyser-ses-parties-hero.png
+ogImage: /images/og/analyser-ses-parties-og.webp
 heroImage:
-  src: /images/blog/analyser-ses-parties-hero.png
+  src: /images/blog/analyser-ses-parties-hero.webp
   alt: >-
-    Illustration pixel art : joueur d'échecs analysant une position sur un carnet, échiquier devant lui, annotations
-    manuscrites, « Analyser ses parties »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une traînée d'empreintes rectiligne dont une seule marque bifurque nettement sur le côté.
 faq:
   - question: Combien de temps faut-il consacrer à l'analyse post-partie ?
     answer: >-

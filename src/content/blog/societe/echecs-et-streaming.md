@@ -43,14 +43,11 @@ keyTakeaways:
 seoTitle: "Échecs et streaming : Twitch et YouTube révolutionnent le jeu"
 seoDescription: >-
   Streaming et échecs : Hikaru Nakamura, GothamChess, Botez, Chess.com et Twitch. Comment le streaming a transformé les échecs en phénomène viral et démocratisé le jeu.
-ogImage: /images/blog/echecs-et-streaming-hero.png
+ogImage: /images/og/echecs-et-streaming-og.webp
 heroImage:
-  src: /images/blog/echecs-et-streaming-hero.png
+  src: /images/blog/echecs-et-streaming-hero.webp
   alt: >-
-    Illustration pixel art : streamer d'échecs devant un écran avec échiquier, icônes de notifications et viewers en
-    arrière-plan, « Échecs et streaming »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Un petit micro dont l'onde sonore s'ouvre en un vaste champ de formes identiques.
 faq:
   - question: Combien gagne un Grand Maître qui streame sur Twitch ?
     answer: >-

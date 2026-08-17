@@ -38,14 +38,11 @@ seoTitle: "Échecs et corps : calories, cœur et fatigue physique du joueur"
 seoDescription: >-
   Les échecs épuisent-ils physiquement ? Calories brûlées, fréquence cardiaque, perte de poids de Karpov, mythe des
   6000 calories : ce que la physiologie révèle du corps du joueur d'échecs.
-ogImage: /images/blog/echecs-et-le-corps-hero.png
+ogImage: /images/og/echecs-et-le-corps-og.webp
 heroImage:
-  src: /images/blog/echecs-et-le-corps-hero.png
+  src: /images/blog/echecs-et-le-corps-hero.webp
   alt: >-
-    Illustration pixel art : silhouette d'un joueur d'échecs assis, traversée de lignes rouges figurant le rythme
-    cardiaque et la chaleur du corps, échiquier au premier plan, « Échecs et corps »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une chaise vide de profil, le sol usé et marqué juste en dessous d'elle.
 faq:
   - question: Les échecs font-ils vraiment maigrir ?
     answer: >-

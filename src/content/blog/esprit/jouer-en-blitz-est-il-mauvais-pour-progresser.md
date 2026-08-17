@@ -16,6 +16,11 @@ keyTakeaways:
   - "Les top joueurs (Carlsen, Nakamura) jouent énormément de blitz et restent les meilleurs en classique."
   - "Le vrai danger n'est pas le blitz : c'est l'addiction au blitz qui empêche d'étudier sérieusement."
   - "Pour progresser : 30 % blitz/bullet maximum, 70 % parties longues + étude + tactiques."
+ogImage: /images/og/jouer-en-blitz-est-il-mauvais-pour-progresser-og.webp
+heroImage:
+  src: /images/blog/jouer-en-blitz-est-il-mauvais-pour-progresser-hero.webp
+  alt: >-
+    Une flaque très large et peu profonde à côté d'un puits étroit qui plonge loin.
 faq:
   - question: "Le blitz est-il dangereux pour la progression ?"
     answer: "Non en lui-même. Le danger est dans la disproportion : si tu joues 100 blitz par jour et 0 partie longue, oui tu vas plafonner. Si tu équilibres, le blitz peut accélérer ta progression en renforçant ta reconnaissance tactique."

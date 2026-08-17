@@ -36,14 +36,11 @@ keyTakeaways:
 seoTitle: "Échecs et confiance en soi : construire une estime solide sur l'échiquier"
 seoDescription: >-
   Comment les échecs forgent la confiance en soi ? Auto-efficacité, mindset de croissance, analyse post-partie : psychologie de la performance appliquée au joueur.
-ogImage: /images/blog/echecs-et-confiance-en-soi-hero.png
+ogImage: /images/og/echecs-et-confiance-en-soi-og.webp
 heroImage:
-  src: /images/blog/echecs-et-confiance-en-soi-hero.png
+  src: /images/blog/echecs-et-confiance-en-soi-hero.webp
   alt: >-
-    Illustration pixel art : pièce d'échecs debout sur une falaise face au vide, lumière dorée à l'horizon, « Échecs et
-    confiance en soi »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Deux empilements côte à côte, l'un maçonné rang par rang, l'autre en équilibre instable.
 faq:
   - question: Les échecs aident-ils vraiment à développer la confiance en soi ?
     answer: >-

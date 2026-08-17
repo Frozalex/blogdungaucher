@@ -37,14 +37,11 @@ keyTakeaways:
 seoTitle: "Échecs et vision spatiale : comment l'échiquier entraîne le cerveau visuo-spatial"
 seoDescription: >-
   Échecs et vision spatiale : rotation mentale, visualisation, parties à l'aveugle. Comment le jeu développe les capacités visuo-spatiales selon les neurosciences.
-ogImage: /images/blog/echecs-et-vision-spatiale-hero.png
+ogImage: /images/og/echecs-et-vision-spatiale-og.webp
 heroImage:
-  src: /images/blog/echecs-et-vision-spatiale-hero.png
+  src: /images/blog/echecs-et-vision-spatiale-hero.webp
   alt: >-
-    Illustration pixel art : échiquier en perspective 3D flottant dans l'espace, avec des variantes de coups visualisées
-    comme des lignes lumineuses, « Échecs et vision spatiale »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une maquette flottante réduite à quelques poutres porteuses, le reste du bâtiment absent.
 faq:
   - question: Les échecs améliorent-ils vraiment la vision spatiale ?
     answer: >-

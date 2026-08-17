@@ -39,14 +39,11 @@ seoTitle: "Gestion du temps aux échecs : maîtriser la pendule et la décision 
 seoDescription: >-
   Zeitnot, paralysie par l'analyse, allocation optimale du temps : ce que la psychologie de la décision dit sur la
   gestion de la pendule aux échecs en tournoi.
-ogImage: /images/blog/echecs-gestion-du-temps-hero.png
+ogImage: /images/og/echecs-gestion-du-temps-og.webp
 heroImage:
-  src: /images/blog/echecs-gestion-du-temps-hero.png
+  src: /images/blog/echecs-gestion-du-temps-hero.webp
   alt: >-
-    Illustration pixel art : pendule d'échecs avec aiguilles formant des flèches d'analyse, échiquier en arrière-plan
-    tendu, « Gestion du temps aux échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une rangée de récipients de verre de largeurs très inégales où un liquide s'écoule.
 faq:
   - question: Combien de temps faut-il consacrer à chaque coup en partie classique ?
     answer: >-

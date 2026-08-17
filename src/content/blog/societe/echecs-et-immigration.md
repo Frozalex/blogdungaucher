@@ -42,14 +42,11 @@ seoTitle: "Échecs et immigration : l'échiquier comme langue commune et outil d
 seoDescription: >-
   Chess for Refugees, histoire des GM immigrés, échiquier comme lingua franca : comment les échecs facilitent
   l'intégration et reflètent les mouvements migratoires.
-ogImage: /images/blog/echecs-et-immigration-hero.png
+ogImage: /images/og/echecs-et-immigration-og.webp
 heroImage:
-  src: /images/blog/echecs-et-immigration-hero.png
+  src: /images/blog/echecs-et-immigration-hero.webp
   alt: >-
-    Illustration pixel art : mains de plusieurs origines déplaçant des pièces sur un échiquier, drapeaux multiples en
-    arrière-plan, « Échecs et immigration »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Deux bulles de dialogue vides venues de côtés opposés se recouvrant en leur centre.
 faq:
   - question: Comment les échecs facilitent-ils l'intégration des réfugiés ?
     answer: >-

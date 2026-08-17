@@ -42,14 +42,11 @@ keyTakeaways:
 seoTitle: "Visualisation mentale aux échecs : voir sans regarder"
 seoDescription: >-
   Comment visualiser l'échiquier sans le voir ? Jeu à l'aveugle, chunks cognitifs, Chase et Simon, entraînement : la science de la représentation mentale aux échecs.
-ogImage: /images/blog/echecs-et-visualisation-hero.png
+ogImage: /images/og/echecs-et-visualisation-og.webp
 heroImage:
-  src: /images/blog/echecs-et-visualisation-hero.png
+  src: /images/blog/echecs-et-visualisation-hero.webp
   alt: >-
-    Illustration pixel art : joueur d'échecs aux yeux fermés, échiquier mental lumineux projeté dans son esprit, «
-    Visualisation mentale aux échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une grille d'échiquier dont les cases fusionnent en cinq grands blocs cohérents.
 faq:
   - question: Comment les joueurs à l'aveugle se souviennent-ils de toutes les positions ?
     answer: >-

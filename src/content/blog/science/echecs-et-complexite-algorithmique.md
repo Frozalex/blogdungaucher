@@ -42,14 +42,11 @@ seoTitle: "Complexité algorithmique des échecs : pourquoi l'IA a mis 50 ans"
 seoDescription: >-
   Nombre de Shannon, alpha-beta pruning, Deep Blue, AlphaZero : la complexité algorithmique des échecs expliquée, et
   pourquoi battre l'humain fut si difficile.
-ogImage: /images/blog/echecs-et-complexite-algorithmique-hero.png
+ogImage: /images/og/echecs-et-complexite-algorithmique-og.webp
 heroImage:
-  src: /images/blog/echecs-et-complexite-algorithmique-hero.png
+  src: /images/blog/echecs-et-complexite-algorithmique-hero.webp
   alt: >-
-    Illustration pixel art : arbre de jeu d'échecs en données numériques, branches infinies, fond cosmique, « Complexité
-    algorithmique des échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une main minuscule tenant un dé à coudre au pied d'une immense dune de sable.
 faq:
   - question: Qu'est-ce que le 'nombre de Shannon' ?
     answer: >-

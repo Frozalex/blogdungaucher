@@ -10,6 +10,12 @@ pillar: "Intelligence artificielle"
 tags: ["réseaux bayésiens", "blunder", "probabilités", "échecs", "intelligence artificielle", "statistiques", "prédiction"]
 seoTitle: "Prédire les blunders avec les réseaux bayésiens : estimer l'erreur adverse"
 seoDescription: "Comment les réseaux bayésiens estiment la probabilité d'un blunder adverse aux échecs. Statistique bayésienne, méthodes et applications pratiques."
+ogImage: /images/og/reseaux-bayesiens-predire-blunder-og.webp
+heroImage:
+  src: /images/blog/reseaux-bayesiens-predire-blunder-hero.webp
+  alt: >-
+    De petits poids déposés un à un sur un plateau qui finit par basculer.
+
 ---
 
 Un blunder est rarement totalement imprévisible. Avant qu'il se produise, des signaux existent : la pendule qui s'affole, une position complexe que l'adversaire n'a pas l'habitude de gérer, une suite forcée longue que son niveau de jeu rend difficile à calculer intégralement. Ces signaux, pris ensemble, forment un portrait probabiliste du risque d'erreur. Les [réseaux bayésiens](https://fr.wikipedia.org/wiki/R%C3%A9seau_bay%C3%A9sien) formalisent précisément ce type de raisonnement.

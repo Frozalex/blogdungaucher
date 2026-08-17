@@ -10,6 +10,12 @@ pillar: "Psychologie"
 tags: ["perfectionnisme", "toxique", "échecs", "psychologie", "performance", "blunder", "anxiété"]
 seoTitle: "Perfectionnisme toxique aux échecs : effets et solutions"
 seoDescription: "Comment le perfectionnisme devient toxique aux échecs. Paralysie par l'analyse, peur de l'erreur, stagnation : les mécanismes et les solutions concrètes."
+ogImage: /images/og/echecs-et-perfectionnisme-toxique-og.webp
+heroImage:
+  src: /images/blog/echecs-et-perfectionnisme-toxique-hero.webp
+  alt: >-
+    Une main polissant un point d'une surface lisse jusqu'à y creuser un trou.
+
 ---
 
 Un joueur perfectionniste semble, de prime abord, être un joueur sérieux. Il analyse profondément, il ne se contente pas de "bons" coups quand le meilleur existe, il passe du temps à comprendre ses erreurs. C'est admirable. Jusqu'au point où ça ne l'est plus. Jusqu'au point où il ne peut plus jouer une partie sans que chaque coup lui coûte une anxiété disproportionnée. Jusqu'au point où il préfère ne pas jouer plutôt que de risquer une défaite imparfaite.

@@ -40,14 +40,11 @@ keyTakeaways:
 seoTitle: "Échecs et diplomatie : l'échiquier comme outil géopolitique"
 seoDescription: >-
   Échecs et diplomatie : de Fischer-Spassky 1972 à Chess for Peace, comment le jeu a servi la géopolitique, le soft power et la réconciliation entre peuples en conflit.
-ogImage: /images/blog/echecs-et-diplomatie-hero.png
+ogImage: /images/og/echecs-et-diplomatie-og.webp
 heroImage:
-  src: /images/blog/echecs-et-diplomatie-hero.png
+  src: /images/blog/echecs-et-diplomatie-hero.webp
   alt: >-
-    Illustration pixel art : échiquier sur fond de drapeaux des nations, pièces en or et argent se tendant la main, «
-    Échecs et diplomatie »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une longue table de négociation vue de dessus dont le plateau est un damier.
 faq:
   - question: Pourquoi le match Fischer-Spassky de 1972 est-il considéré comme un événement diplomatique ?
     answer: >-

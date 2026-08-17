@@ -41,14 +41,11 @@ keyTakeaways:
 seoTitle: "Mémoire de travail et échecs : le goulot d'étranglement cognitif"
 seoDescription: >-
   Mémoire de travail aux échecs : modèle de Baddeley, chunks, capacité de 4 à 7 éléments. Comment ce goulot d'étranglement cognitif limite le calcul de variantes.
-ogImage: /images/blog/echecs-memoire-de-travail-hero.png
+ogImage: /images/og/echecs-memoire-de-travail-og.webp
 heroImage:
-  src: /images/blog/echecs-memoire-de-travail-hero.png
+  src: /images/blog/echecs-memoire-de-travail-hero.webp
   alt: >-
-    Illustration pixel art : cerveau avec cases de mémoire remplies de pièces d'échecs, variantes en arbre émergeant, «
-    Mémoire de travail aux échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Un entonnoir de verre étroit laissant passer cinq pièces d'échecs, les autres s'accumulant au-dessus.
 faq:
   - question: Qu'est-ce que la mémoire de travail et en quoi diffère-t-elle de la mémoire à court terme ?
     answer: >-

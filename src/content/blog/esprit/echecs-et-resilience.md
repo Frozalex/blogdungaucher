@@ -39,14 +39,11 @@ seoTitle: "Résilience aux échecs : comment rebondir après une défaite et pro
 seoDescription: >-
   Style explicatif, distanciation de soi, analyse post-défaite : ce que la psychologie de la résilience dit sur la
   gestion des défaites aux échecs et la progression.
-ogImage: /images/blog/echecs-et-resilience-hero.png
+ogImage: /images/og/echecs-et-resilience-og.webp
 heroImage:
-  src: /images/blog/echecs-et-resilience-hero.png
+  src: /images/blog/echecs-et-resilience-hero.webp
   alt: >-
-    Illustration pixel art : roi d'échecs tombé qui se relève, lumière de l'aube en arrière-plan, « Résilience aux
-    échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une silhouette de profil avançant courbée contre un vent de face, sur une plaine vide.
 faq:
   - question: Comment accepter une défaite aux échecs sans se décourager ?
     answer: >-

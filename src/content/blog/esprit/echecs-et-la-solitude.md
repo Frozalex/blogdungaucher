@@ -37,14 +37,11 @@ keyTakeaways:
 seoTitle: "La solitude aux échecs : quand le règlement vous isole"
 seoDescription: >-
   Les échecs imposent une solitude réglementaire unique dans le sport. Effets psychologiques, paradoxe des clubs, impact du jeu en ligne sur l'isolement du joueur.
-ogImage: /images/blog/echecs-et-la-solitude-hero.png
+ogImage: /images/og/echecs-et-la-solitude-og.webp
 heroImage:
-  src: /images/blog/echecs-et-la-solitude-hero.png
+  src: /images/blog/echecs-et-la-solitude-hero.webp
   alt: >-
-    Illustration pixel art : joueur seul face à un échiquier dans une grande salle, lumière froide venant d'une fenêtre,
-    silhouettes floues en arrière-plan, « La solitude aux échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Deux sièges se faisant face autour d'une table, séparés par une cloison verticale nette.
 faq:
   - question: Les joueurs d'échecs sont-ils plus solitaires que les autres sportifs ?
     answer: >-

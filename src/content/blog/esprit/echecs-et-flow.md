@@ -39,14 +39,11 @@ seoTitle: "Échecs et flow : comment atteindre l'état de flux sur l'échiquier"
 seoDescription: >-
   Flow de Csikszentmihalyi, conditions du flux, perte de conscience du temps aux échecs : comment entrer et maintenir
   l'état optimal de performance au jeu.
-ogImage: /images/blog/echecs-et-flow-hero.png
+ogImage: /images/og/echecs-et-flow-og.webp
 heroImage:
-  src: /images/blog/echecs-et-flow-hero.png
+  src: /images/blog/echecs-et-flow-hero.webp
   alt: >-
-    Illustration pixel art : joueur d'échecs absorbé, entouré de particules lumineuses bleues et violettes, échiquier
-    flottant, « Échecs et flow »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une silhouette assise de dos, au centre d'un couloir de lumière qui s'ouvre droit devant elle.
 faq:
   - question: Qu'est-ce que le flow aux échecs concrètement ?
     answer: >-

@@ -40,14 +40,11 @@ keyTakeaways:
 seoTitle: "Procrastination et échecs : ce que l'échiquier apprend sur l'évitement"
 seoDescription: >-
   Procrastination aux échecs : évitement émotionnel, peur de l'erreur et tolérance à l'incertitude. Ce que l'échiquier apprend sur la prise de décision et la motivation.
-ogImage: /images/blog/echecs-et-procrastination-hero.png
+ogImage: /images/og/echecs-et-procrastination-og.webp
 heroImage:
-  src: /images/blog/echecs-et-procrastination-hero.png
+  src: /images/blog/echecs-et-procrastination-hero.webp
   alt: >-
-    Illustration pixel art : joueur d'échecs regardant fixement la pendule, pièces attendant d'être bougées, «
-    Procrastination et échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Un sablier presque écoulé posé près d'une pièce d'échecs restée immobile.
 faq:
   - question: Pourquoi procrastine-t-on, scientifiquement parlant ?
     answer: >-

@@ -40,14 +40,11 @@ seoTitle: "Dopamine et échecs : comment la neurochimie explique l'engouement po
 seoDescription: >-
   Circuit de récompense, anticipation, signal dopaminergique : ce que la neuroscience révèle sur pourquoi les échecs
   sont si captivants et parfois compulsifs.
-ogImage: /images/blog/echecs-et-dopamine-hero.png
+ogImage: /images/og/echecs-et-dopamine-og.webp
 heroImage:
-  src: /images/blog/echecs-et-dopamine-hero.png
+  src: /images/blog/echecs-et-dopamine-hero.webp
   alt: >-
-    Illustration pixel art : cerveau lumineux avec circuits dorés et pièces d'échecs flottantes, synapses brillantes, «
-    Dopamine et échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une main en suspension au-dessus d'une pièce d'échecs, d'où partent de larges ondes concentriques.
 faq:
   - question: Les échecs libèrent-ils vraiment de la dopamine ?
     answer: >-

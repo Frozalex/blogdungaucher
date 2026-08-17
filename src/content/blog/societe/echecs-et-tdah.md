@@ -22,11 +22,9 @@ seoTitle: "Échecs et TDAH : pourquoi l'échiquier capte l'attention que l'écol
 seoDescription: >-
   TDAH et échecs : pourquoi l'échiquier crée les conditions où le cerveau TDAH s'ancre naturellement. Recherche, adaptations pratiques et bénéfices mesurés.
 heroImage:
-  src: https://upload.wikimedia.org/wikipedia/commons/c/cc/Empty_wooden_chessboard.jpg
-  alt: Échiquier en bois vide
-  sourceUrl: https://commons.wikimedia.org/wiki/File:Empty_wooden_chessboard.jpg
-  credit: Paul Lloyd
-  license: CC0 1.0
+  src: /images/blog/echecs-et-tdah-hero.webp
+  alt: >-
+    Une aiguille de boussole démultipliée en flou se stabilisant sur un point unique.
 faq:
   - question: "À quel âge un enfant TDAH peut-il commencer les échecs ?"
     answer: >-

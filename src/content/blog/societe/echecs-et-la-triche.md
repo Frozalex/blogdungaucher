@@ -38,14 +38,11 @@ keyTakeaways:
 seoTitle: "La triche aux échecs : l'affaire Niemann décryptée"
 seoDescription: >-
   Triche aux échecs : affaire Hans Niemann vs Magnus Carlsen décryptée. Comment détecte-t-on la triche, peut-on la prouver, et que révèle le scandale sur le jeu pro ?
-ogImage: /images/blog/echecs-et-la-triche-hero.png
+ogImage: /images/og/echecs-et-la-triche-og.webp
 heroImage:
-  src: /images/blog/echecs-et-la-triche-hero.png
+  src: /images/blog/echecs-et-la-triche-hero.webp
   alt: >-
-    Illustration pixel art : pièce d'échecs avec une ombre suspecte, lumière rasante sur un échiquier, atmosphère de
-    tension, « Échecs et triche »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Un pion projetant une ombre longue dont la silhouette géométrique ne correspond pas à l'objet.
 faq:
   - question: Hans Niemann a-t-il vraiment triché contre Magnus Carlsen ?
     answer: >-

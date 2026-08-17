@@ -40,14 +40,11 @@ seoTitle: "Échecs à l'école : bénéfices réels sur l'apprentissage selon la
 seoDescription: >-
   Méta-analyse Sala & Gobet, programme arménien, Venezuela : ce que la recherche dit vraiment sur l'impact des échecs
   scolaires sur les résultats et le développement cognitif.
-ogImage: /images/blog/echecs-et-ecole-hero.png
+ogImage: /images/og/echecs-et-ecole-og.webp
 heroImage:
-  src: /images/blog/echecs-et-ecole-hero.png
+  src: /images/blog/echecs-et-ecole-hero.webp
   alt: >-
-    Illustration pixel art : tableau noir avec échiquier en craie, élèves autour des pièces en classe, « Échecs à
-    l'école »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une passerelle de craie inachevée reliant deux estrades, avec une case damier.
 faq:
   - question: Les échecs améliorent-ils les résultats en mathématiques ?
     answer: >-

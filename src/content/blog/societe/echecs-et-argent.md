@@ -23,6 +23,11 @@ seoTitle: "Combien gagne Magnus Carlsen ? Fortune, salaire et prize money aux é
 seoDescription: >-
   Fortune de Magnus Carlsen : 83 M$ via la vente de Play Magnus, mais seulement 2,4 M$ de prize money en carrière.
   Salaire réel des joueurs d'échecs pros et pourquoi les meilleurs du monde ne sont pas si riches.
+ogImage: /images/og/echecs-et-argent-og.webp
+heroImage:
+  src: /images/blog/echecs-et-argent-hero.webp
+  alt: >-
+    Une balance où un grand trophée est soulevé par trois petites pièces de monnaie.
 faq:
   - question: "Comment gagne sa vie un Grand Maître \"ordinaire\" ?"
     answer: >-

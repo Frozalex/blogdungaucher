@@ -42,14 +42,11 @@ keyTakeaways:
 seoTitle: "Échecs et culture populaire : de Bergman à The Queen's Gambit"
 seoDescription: >-
   Le Jeu de la Dame (Netflix), cinéma, littérature, Twitch et mèmes : comment les échecs ont envahi la culture populaire et changé leur image dans le grand public.
-ogImage: /images/blog/echecs-et-culture-populaire-hero.png
+ogImage: /images/og/echecs-et-culture-populaire-og.webp
 heroImage:
-  src: /images/blog/echecs-et-culture-populaire-hero.png
+  src: /images/blog/echecs-et-culture-populaire-hero.webp
   alt: >-
-    Illustration pixel art : échiquier stylisé en affiche de film rétro, pièces géantes, couleurs pop art, « Échecs et
-    culture populaire »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Un projecteur de cinéma transformant un objet détaillé en silhouette plate sur un écran.
 faq:
   - question: Pourquoi The Queen's Gambit a-t-il eu un tel impact sur la pratique des échecs ?
     answer: >-

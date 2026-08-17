@@ -16,6 +16,11 @@ keyTakeaways:
   - "Le surinvestissement émotionnel (peur de perdre face à un enfant) crée une crispation qui coûte des coups."
   - "La fatigue cognitive en fin de tournoi affecte plus les joueurs adultes : leur précision baisse plus vite que celle des enfants."
   - "Ces défaites ne sont pas des accidents : elles sont prévisibles statistiquement."
+ogImage: /images/og/pourquoi-grands-joueurs-perdent-contre-enfants-og.webp
+heroImage:
+  src: /images/blog/pourquoi-grands-joueurs-perdent-contre-enfants-hero.webp
+  alt: >-
+    Une clé ouvragée présentée devant une serrure dont le profil ne lui correspond pas.
 faq:
   - question: "Un grand maître peut-il vraiment perdre contre un enfant ?"
     answer: "Oui, et ça arrive régulièrement dans les tournois open. Magnus Carlsen, Vishy Anand et bien d'autres ont perdu contre des juniors, parfois âgés de 12 ans à peine. L'écart Elo réduit fortement la probabilité, mais ne l'annule pas."

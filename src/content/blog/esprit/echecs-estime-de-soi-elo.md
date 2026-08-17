@@ -43,14 +43,11 @@ seoTitle: "Elo et estime de soi : quand votre classement devient votre identité
 seoDescription: >-
   Elo anxiety, orientation ego vs maîtrise, identité et performance : la psychologie du classement Elo et comment
   découpler son estime de soi de son Elo.
-ogImage: /images/blog/echecs-estime-de-soi-elo-hero.png
+ogImage: /images/og/echecs-estime-de-soi-elo-og.webp
 heroImage:
-  src: /images/blog/echecs-estime-de-soi-elo-hero.png
+  src: /images/blog/echecs-estime-de-soi-elo-hero.webp
   alt: >-
-    Illustration pixel art : graphe Elo avec montagnes russes, joueur d'échecs regardant l'écran avec anxiété, « Elo et
-    estime de soi »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une aiguille de mesure massive vissée sur un panneau mince qu'elle fissure sous son poids.
 faq:
   - question: Comment fonctionne le calcul du Elo ?
     answer: >-

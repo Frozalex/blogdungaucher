@@ -39,14 +39,11 @@ keyTakeaways:
 seoTitle: "Concentration aux échecs : entraîner l'attention pour mieux jouer"
 seoDescription: >-
   Entraîner sa concentration aux échecs : attention soutenue, réseau de contrôle, pleine conscience et micro-pauses. Ce que la neuroscience dit de l'attention au jeu.
-ogImage: /images/blog/echecs-et-concentration-hero.png
+ogImage: /images/og/echecs-et-concentration-og.webp
 heroImage:
-  src: /images/blog/echecs-et-concentration-hero.png
+  src: /images/blog/echecs-et-concentration-hero.webp
   alt: >-
-    Illustration pixel art : joueur d'échecs concentré, rayon de lumière sur l'échiquier, particules d'attention
-    flottant autour de lui, « Concentration aux échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Un cône lumineux large qui se resserre en un mince faisceau au fond d'une salle vide.
 faq:
   - question: Pourquoi est-il si difficile de maintenir la concentration pendant une longue partie ?
     answer: >-

@@ -43,14 +43,11 @@ keyTakeaways:
 seoTitle: "Échecs et handicap : l'échiquier comme espace d'inclusion"
 seoDescription: >-
   Échecs et handicap : joueurs aveugles, autisme, tétraplégie, handicap moteur. Comment le jeu s'adapte et crée des espaces d'inclusion et d'égalité cognitive.
-ogImage: /images/blog/echecs-et-handicap-hero.png
+ogImage: /images/og/echecs-et-handicap-og.webp
 heroImage:
-  src: /images/blog/echecs-et-handicap-hero.png
+  src: /images/blog/echecs-et-handicap-hero.webp
   alt: >-
-    Illustration pixel art : mains de différentes morphologies touchant un échiquier adapté, pièces marquées, lumière
-    douce, « Échecs et handicap »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une marche de pierre se fondant en une rampe continue qui aplanit le sol.
 faq:
   - question: Comment jouent les personnes aveugles aux échecs ?
     answer: >-

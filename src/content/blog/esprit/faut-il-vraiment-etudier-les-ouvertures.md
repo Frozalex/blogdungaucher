@@ -17,6 +17,11 @@ keyTakeaways:
   - "Étudier une ouverture, ce n'est pas mémoriser des coups : c'est comprendre les plans typiques et les structures de pions associées."
   - "Le piège : étudier 5 ouvertures en surface au lieu de 2 en profondeur."
   - "Un bon répertoire bien construit fait gagner du temps à la pendule et de la confiance émotionnelle."
+ogImage: /images/og/faut-il-vraiment-etudier-les-ouvertures-og.webp
+heroImage:
+  src: /images/blog/faut-il-vraiment-etudier-les-ouvertures-hero.webp
+  alt: >-
+    Un escalier dont les marches basses sont aplaties et les marches hautes bien formées.
 faq:
   - question: "Faut-il étudier les ouvertures quand on débute ?"
     answer: "Pas vraiment. En dessous de 1200 Elo, 95 % des parties se décident sur des fautes tactiques en milieu de jeu ou en finale. Étudier les ouvertures à ce niveau, c'est mémoriser des coups qu'on n'aura jamais l'occasion d'appliquer."

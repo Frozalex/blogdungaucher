@@ -38,14 +38,11 @@ seoTitle: "Méditation et échecs : la pleine conscience pour mieux jouer"
 seoDescription: >-
   MBSR, Default Mode Network, régulation émotionnelle : ce que la recherche sur la pleine conscience dit sur son apport
   pour la performance et le mental aux échecs.
-ogImage: /images/blog/echecs-et-meditation-hero.png
+ogImage: /images/og/echecs-et-meditation-og.webp
 heroImage:
-  src: /images/blog/echecs-et-meditation-hero.png
+  src: /images/blog/echecs-et-meditation-hero.webp
   alt: >-
-    Illustration pixel art : silhouette assise en méditation devant un échiquier, halo doré, atmosphère apaisée, «
-    Méditation et échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Un bol d'eau vu de près dont la surface vient de redevenir parfaitement immobile.
 faq:
   - question: La méditation rend-elle vraiment meilleur aux échecs ?
     answer: >-
