@@ -1,8 +1,6 @@
 ﻿---
-import { getEntry } from "astro:content";
-
 import type { BlogEntry } from "../utils/blog";
-import { formatDate, formatDateEn, formatDatePtBr, formatDateNl, getCategoryMeta, getPostHeroSrc, getPostSlug, getPostUrlLang } from "../utils/blog";
+import { formatDateForLang, getCategoryMeta, getLocalizedPostText, getPostHeroSrc, getPostUrlLang } from "../utils/blog";
 import { t, type Lang } from "../i18n/translations";
 
 const { post, featured = false, lead = false, eager = false, lang = "fr" } = Astro.props as {
@@ -17,39 +15,15 @@ const { post, featured = false, lead = false, eager = false, lang = "fr" } = Ast
 
 const category = getCategoryMeta(post.data.category);
 
-// Récupère le titre/excerpt depuis la traduction de la langue si elle existe et n'est pas en draft.
-let postTitle = post.data.title;
-let postExcerpt = post.data.excerpt;
-if (lang === "en") {
-  const enEntry = await getEntry("enTranslations", getPostSlug(post));
-  if (enEntry && !enEntry.data.draft) {
-    postTitle = enEntry.data.title;
-    postExcerpt = enEntry.data.excerpt;
-  }
-} else if (lang === "pt-br") {
-  const ptBrEntries = await import("astro:content").then((m) => m.getCollection("ptBrTranslations"));
-  const frSlug = getPostSlug(post);
-  const ptBrEntry = ptBrEntries.find((e) => (e.data.frSlug ?? e.id) === frSlug);
-  if (ptBrEntry && !ptBrEntry.data.draft) {
-    postTitle = ptBrEntry.data.title;
-    postExcerpt = ptBrEntry.data.excerpt;
-  }
-} else if (lang === "nl") {
-  const nlEntries = await import("astro:content").then((m) => m.getCollection("nlTranslations"));
-  const frSlug = getPostSlug(post);
-  const nlEntry = nlEntries.find((e) => (e.data.frSlug ?? e.id) === frSlug);
-  if (nlEntry && !nlEntry.data.draft) {
-    postTitle = nlEntry.data.title;
-    postExcerpt = nlEntry.data.excerpt;
-  }
-}
+// Titre/extrait dans la langue de la page (retombe sur le FR si pas de traduction publiée).
+const { title: postTitle, excerpt: postExcerpt } = await getLocalizedPostText(post, lang);
 
 // Étiquettes localisées (server-side, indexable par les moteurs).
 const tLang: Lang = (lang === "pt-br" || lang === "nl") ? lang : (lang as Lang);
 const categoryLabel = t(tLang, `categories.${post.data.category}.label`);
 const categoryShortLabel = t(tLang, `categories.${post.data.category}.shortLabel`);
 const readLabel = t(tLang, "card.read");
-const formattedDate = lang === "en" ? formatDateEn(post.data.publishDate) : lang === "pt-br" ? formatDatePtBr(post.data.publishDate) : lang === "nl" ? formatDateNl(post.data.publishDate) : formatDate(post.data.publishDate);
+const formattedDate = formatDateForLang(post.data.publishDate, lang);
 
 const thumbSrc = getPostHeroSrc(post);
 const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl");

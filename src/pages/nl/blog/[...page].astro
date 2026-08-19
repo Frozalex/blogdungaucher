@@ -14,6 +14,7 @@ import {
   filterPostsForLang,
   getAllPosts,
   getBlogIndexPagePath,
+  getPostHeroSrc,
 } from "../../../utils/blog";
 
 const listingCategorySlugs = categorySlugs.filter((s) => s !== "grand-oral");
@@ -26,6 +27,12 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 
 const { page } = Astro.props as { page: Page<BlogEntry> };
 const isFirstPage = page.currentPage === 1;
+
+// Gabarits clonés par le filtre client pour rendre les articles des autres pages
+// (voir src/scripts/blog-filter.ts). Rendus par ArticleCard pour hériter du CSS scopé.
+const allPosts = filterPostsForLang(await getAllPosts(), "nl");
+const heroTemplatePost = allPosts.find((p) => getPostHeroSrc(p));
+const plainTemplatePost = allPosts.find((p) => !getPostHeroSrc(p));
 
 const MAX_PAGINATION_LINKS = 7;
 function buildPageLinks(current: number, total: number) {
@@ -84,10 +91,10 @@ const enCanonicalPath = getBlogIndexPagePath("en", page.currentPage);
           </button>
         ))}
       </div>
-      <div class="search-wrap reveal">
+      <form class="search-wrap reveal" action="/nl/recherche/" method="get" role="search">
         <label for="blog-search" class="search-label">Zoek een artikel</label>
-        <input id="blog-search" class="search-input" type="search" placeholder="Titel, fragment of tag…" />
-      </div>
+        <input id="blog-search" class="search-input" type="search" name="q" placeholder="Titel, fragment of tag…" autocomplete="off" />
+      </form>
     </div>
   </section>
 
@@ -97,33 +104,49 @@ const enCanonicalPath = getBlogIndexPagePath("en", page.currentPage);
 
   <section class="listing">
     <div class="container">
-      <div class="post-grid reveal-group">
+      <p id="filter-count" class="filter-count" hidden aria-live="polite" data-count-template="{count} artikelen in deze rubriek"></p>
+
+      <div class="post-grid reveal-group" id="post-grid" data-blog-index="/blog-index/nl.json">
         {page.data.map((post, i) => (
           <article
             class="post-item"
             data-category={post.data.category}
-            data-search={`${post.data.title} ${post.data.excerpt} ${post.data.tags?.join(" ") ?? ""}`.toLowerCase()}
           >
             <ArticleCard post={post} lang="nl" eager={i < 3} />
           </article>
         ))}
       </div>
       <p id="listing-empty" class="listing-empty" hidden>
-        Geen artikelen gevonden voor je zoekopdracht op deze pagina.
+        Geen artikelen gevonden voor dit filter.
       </p>
 
-      <Pagination
-        currentPage={page.currentPage}
-        lastPage={page.lastPage}
-        pages={paginationPages}
-        getHref={(n: number) => getBlogIndexPagePath("nl", n)}
-        prevHref={prevPageHref}
-        nextHref={nextPageHref}
-        ariaLabel="Paginanavigatie"
-        lang="nl"
-      />
+      <div id="listing-pagination">
+        <Pagination
+          currentPage={page.currentPage}
+          lastPage={page.lastPage}
+          pages={paginationPages}
+          getHref={(n: number) => getBlogIndexPagePath("nl", n)}
+          prevHref={prevPageHref}
+          nextHref={nextPageHref}
+          ariaLabel="Paginanavigatie"
+          lang="nl"
+        />
+      </div>
     </div>
   </section>
+
+  <div id="card-templates" hidden aria-hidden="true" data-pagefind-ignore>
+    {heroTemplatePost && (
+      <article class="post-item" data-template="hero">
+        <ArticleCard post={heroTemplatePost} lang="nl" />
+      </article>
+    )}
+    {plainTemplatePost && (
+      <article class="post-item" data-template="plain">
+        <ArticleCard post={plainTemplatePost} lang="nl" />
+      </article>
+    )}
+  </div>
 </BaseLayout>
 
 <style>
@@ -153,7 +176,11 @@ const enCanonicalPath = getBlogIndexPagePath("en", page.currentPage);
   .listing { padding: 1.5rem 0 4rem; }
   .post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
   .post-item { display: contents; }
+  /* `display: contents` l'emporte sur la règle `[hidden]` du navigateur. */
+  .post-item[hidden] { display: none; }
   .listing-empty { color: var(--text-muted); text-align: center; padding: 2rem 0; font-size: 0.95rem; }
+  .filter-count { margin-bottom: 0.9rem; color: var(--text-muted); font-size: 0.85rem; }
+  .filter-count[hidden] { display: none; }
 
   /* Pagination gérée par Pagination.astro */
 
@@ -167,43 +194,5 @@ const enCanonicalPath = getBlogIndexPagePath("en", page.currentPage);
 </style>
 
 <script>
-  function initBlogListing() {
-    const chips  = document.querySelectorAll<HTMLElement>(".chip");
-    const posts  = document.querySelectorAll<HTMLElement>(".post-item");
-    const search = document.getElementById("blog-search") as HTMLInputElement | null;
-    const empty  = document.getElementById("listing-empty");
-
-    let activeCategory = "all";
-    let searchQuery    = "";
-
-    function applyFilters() {
-      let visible = 0;
-      posts.forEach((post) => {
-        const cat     = post.dataset.category ?? "";
-        const text    = post.dataset.search ?? "";
-        const catOk   = activeCategory === "all" || cat === activeCategory;
-        const searchOk = searchQuery === "" || text.includes(searchQuery);
-        const show    = catOk && searchOk;
-        post.style.display = show ? "" : "none";
-        if (show) visible++;
-      });
-      if (empty) empty.hidden = visible > 0;
-    }
-
-    chips.forEach((chip) => {
-      chip.addEventListener("click", () => {
-        chips.forEach((c) => c.classList.remove("is-active"));
-        chip.classList.add("is-active");
-        activeCategory = chip.dataset.filterCategory ?? "all";
-        applyFilters();
-      });
-    });
-
-    search?.addEventListener("input", () => {
-      searchQuery = search.value.toLowerCase().trim();
-      applyFilters();
-    });
-  }
-
-  document.addEventListener("astro:page-load", initBlogListing);
+  import "../../../scripts/blog-filter";
 </script>

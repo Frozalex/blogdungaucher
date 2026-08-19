@@ -13,6 +13,7 @@ import {
   buildWebsiteJsonLd,
   getAllPosts,
   getBlogIndexPagePath,
+  getPostHeroSrc,
 } from "../../../utils/blog";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
@@ -22,6 +23,12 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 
 const { page } = Astro.props as { page: Page<BlogEntry> };
 const isFirstPage = page.currentPage === 1;
+
+// Gabarits clonés par le filtre client pour rendre les articles des autres pages
+// (voir src/scripts/blog-filter.ts). Rendus par ArticleCard pour hériter du CSS scopé.
+const allPosts = await getAllPosts();
+const heroTemplatePost = allPosts.find((p) => getPostHeroSrc(p));
+const plainTemplatePost = allPosts.find((p) => !getPostHeroSrc(p));
 
 const MAX_PAGINATION_LINKS = 7;
 function buildPageLinks(current: number, total: number) {
@@ -92,7 +99,9 @@ const structuredData = isFirstPage
 
   <section class="listing">
     <div class="container">
-      <div class="post-grid reveal-group">
+      <p id="filter-count" class="filter-count" hidden aria-live="polite" data-count-template="{count} articles dans cette rubrique"></p>
+
+      <div class="post-grid reveal-group" id="post-grid" data-blog-index="/blog-index/fr.json">
         {page.data.map((post, i) => (
           <article
             class="post-item"
@@ -103,20 +112,35 @@ const structuredData = isFirstPage
         ))}
       </div>
       <p id="listing-empty" class="listing-empty" hidden data-t="blog.noResults">
-        Aucun article ne correspond à ta recherche sur cette page.
+        Aucun article ne correspond à ce filtre.
       </p>
 
-      <Pagination
-        currentPage={page.currentPage}
-        lastPage={page.lastPage}
-        pages={paginationPages}
-        getHref={(n: number) => getBlogIndexPagePath("fr", n)}
-        prevHref={prevPageHref}
-        nextHref={nextPageHref}
-        ariaLabel="Navigation entre les pages"
-      />
+      <div id="listing-pagination">
+        <Pagination
+          currentPage={page.currentPage}
+          lastPage={page.lastPage}
+          pages={paginationPages}
+          getHref={(n: number) => getBlogIndexPagePath("fr", n)}
+          prevHref={prevPageHref}
+          nextHref={nextPageHref}
+          ariaLabel="Navigation entre les pages"
+        />
+      </div>
     </div>
   </section>
+
+  <div id="card-templates" hidden aria-hidden="true" data-pagefind-ignore>
+    {heroTemplatePost && (
+      <article class="post-item" data-template="hero">
+        <ArticleCard post={heroTemplatePost} />
+      </article>
+    )}
+    {plainTemplatePost && (
+      <article class="post-item" data-template="plain">
+        <ArticleCard post={plainTemplatePost} />
+      </article>
+    )}
+  </div>
 </BaseLayout>
 
 <style>
@@ -192,39 +216,18 @@ const structuredData = isFirstPage
     color: var(--text-muted);
     font-size: 0.95rem;
   }
+  .filter-count {
+    margin-bottom: 0.9rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+  .filter-count[hidden] {
+    display: none;
+  }
 
   /* Pagination gérée par Pagination.astro */
 </style>
 
 <script>
-  function initBlogFilters() {
-    const items = Array.from(document.querySelectorAll<HTMLElement>(".post-item"));
-    const chips = Array.from(document.querySelectorAll<HTMLElement>("[data-filter-category]"));
-    const empty = document.getElementById("listing-empty");
-    if (!items.length || !chips.length || !empty) return;
-
-    let activeCategory = "all";
-
-    function applyFilters() {
-      let visible = 0;
-      items.forEach((item) => {
-        const show = activeCategory === "all" || item.dataset.category === activeCategory;
-        item.hidden = !show;
-        if (show) visible += 1;
-      });
-      if (empty) empty.hidden = visible > 0;
-    }
-
-    chips.forEach((chip) => {
-      chip.addEventListener("click", () => {
-        activeCategory = chip.dataset.filterCategory ?? "all";
-        chips.forEach((el) => el.classList.toggle("is-active", el === chip));
-        applyFilters();
-      });
-    });
-
-    applyFilters();
-  }
-
-  document.addEventListener("astro:page-load", initBlogFilters);
+  import "../../../scripts/blog-filter";
 </script>

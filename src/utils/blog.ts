@@ -1,4 +1,4 @@
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection, getEntry, type CollectionEntry } from "astro:content";
 
 import { categoryMap, siteConfig, type CategorySlug } from "../data/site";
 import { isPublicAssetAvailable } from "./public-asset";
@@ -81,6 +81,48 @@ export function filterPostsForLang(
 ): BlogEntry[] {
   if (lang === "fr") return posts;
   return posts.filter((p) => !isFrenchOnlyPost(p));
+}
+
+export type SiteLang = "fr" | "en" | "pt-br" | "nl";
+
+/**
+ * Titre/extrait d'un article dans la langue demandée.
+ *
+ * Les traductions vivent dans des collections séparées (`enTranslations`,
+ * `ptBrTranslations`, `nlTranslations`) reliées au slug FR ; une entrée en
+ * `draft` est ignorée et on retombe sur le texte français. Partagé entre
+ * ArticleCard (rendu serveur) et l'index JSON du filtre client, pour que les
+ * deux affichent exactement le même texte.
+ */
+export async function getLocalizedPostText(post: BlogEntry, lang: SiteLang) {
+  const fallback = { title: post.data.title, excerpt: post.data.excerpt };
+  if (lang === "fr") return fallback;
+
+  const frSlug = getPostSlug(post);
+
+  if (lang === "en") {
+    const entry = await getEntry("enTranslations", frSlug);
+    if (entry && !entry.data.draft) {
+      return { title: entry.data.title, excerpt: entry.data.excerpt };
+    }
+    return fallback;
+  }
+
+  const collection = lang === "pt-br" ? "ptBrTranslations" : "nlTranslations";
+  const entries = await getCollection(collection);
+  const entry = entries.find((e) => (e.data.frSlug ?? e.id) === frSlug);
+  if (entry && !entry.data.draft) {
+    return { title: entry.data.title, excerpt: entry.data.excerpt };
+  }
+  return fallback;
+}
+
+/** Date d'un article formatée selon la locale du site. */
+export function formatDateForLang(date: Date, lang: SiteLang) {
+  if (lang === "en") return formatDateEn(date);
+  if (lang === "pt-br") return formatDatePtBr(date);
+  if (lang === "nl") return formatDateNl(date);
+  return formatDate(date);
 }
 
 export function formatDatePtBr(date: Date) {
