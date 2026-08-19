@@ -292,16 +292,16 @@ json.dumps({'steps': _steps, 'stdout': _out.getvalue(), 'error': _err})
 
     async function runViz(codeText, mountAfter, launchBtn) {
       launchBtn.disabled = true;
-      launchBtn.innerHTML = "⏳ Chargement du moteur Python…";
+      launchBtn.innerHTML = "Chargement du moteur Python…";
       let py;
       try {
         py = await loadPyodideOnce();
       } catch (e) {
         launchBtn.disabled = false;
-        launchBtn.textContent = "⚠ Échec du chargement — réessayer";
+        launchBtn.textContent = "Échec du chargement — réessayer";
         return;
       }
-      launchBtn.innerHTML = "⏳ Exécution…";
+      launchBtn.innerHTML = "Exécution…";
       let data;
       try {
         py.globals.set("USER_CODE", codeText);
@@ -309,7 +309,7 @@ json.dumps({'steps': _steps, 'stdout': _out.getvalue(), 'error': _err})
         data = JSON.parse(raw);
       } catch (e) {
         launchBtn.disabled = false;
-        launchBtn.textContent = "⚠ Erreur d'exécution — réessayer";
+        launchBtn.textContent = "Erreur d'exécution — réessayer";
         return;
       }
 

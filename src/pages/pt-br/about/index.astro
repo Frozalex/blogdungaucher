@@ -42,7 +42,6 @@ if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/about/", 302);
               rel="noopener noreferrer"
               aria-label="Perfil de Le_Gaucher no Chess.com (abre em nova aba)"
             >
-              <span aria-hidden="true" class="about-hero__avatar-piece">♞</span>
               Le_Gaucher
               <svg
                 class="about-hero__avatar-arrow"
@@ -321,11 +320,6 @@ if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/about/", 302);
   .about-hero__avatar-tag--link:focus-visible {
     color: var(--green); border-color: var(--green-border);
     transform: translateY(-1px); box-shadow: var(--shadow-xs);
-  }
-
-  .about-hero__avatar-piece {
-    font-family: var(--font-serif); font-size: 0.95rem; line-height: 1; letter-spacing: 0;
-    color: var(--green); margin-right: 0.05rem; transform: translateY(-0.5px);
   }
 
   .about-hero__avatar-arrow {

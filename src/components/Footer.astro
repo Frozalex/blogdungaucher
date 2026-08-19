@@ -118,12 +118,6 @@ const requiredNote = lang === "en"
         <a href="/fr/politique-confidentialite/" data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
         <a href={aboutHref}>{lang === "en" ? "About" : lang === "pt-br" ? "Sobre" : lang === "nl" ? "Over" : "À propos"}</a>
       </div>
-      <!-- Icônes pièces d'échecs en guise d'icônes sociales -->
-      <div class="footer-chess-icons" aria-hidden="true">
-        <span title={tt("categories.science.label", "Science")}>♞</span>
-        <span title={tt("categories.esprit.label", "Esprit")}>♛</span>
-        <span title={tt("categories.societe.label", "Société")}>♜</span>
-      </div>
     </div>
   </div>
 
@@ -383,23 +377,6 @@ const requiredNote = lang === "en"
   }
   .footer-bottom-links a:hover {
     color: var(--green);
-  }
-
-  .footer-chess-icons {
-    display: flex;
-    gap: 0.65rem;
-    font-size: 1.15rem;
-    color: var(--text-dim);
-    letter-spacing: 0.05em;
-  }
-
-  .footer-chess-icons span {
-    cursor: default;
-    transition: color 200ms ease, transform 200ms ease;
-  }
-  .footer-chess-icons span:hover {
-    color: var(--green);
-    transform: scale(1.2);
   }
 
   @media (max-width: 540px) {

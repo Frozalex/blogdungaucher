@@ -69,7 +69,7 @@ const translationSchema = z.object({
   /** Slug localisé utilisé dans l'URL EN (ex. "learning-to-lose-at-chess").
    *  Si absent, l'URL reprend le slug FR du fichier source. */
   enSlug: z.string().optional(),
-  /** Slug FR de l'article source = clé de résolution traduction ↔ source FR.
+  /** Slug FR de l'article source = clé de résolution traduction vers source FR.
    *  - Convention EN (héritée) : OMETTRE `frSlug` ; le NOM DE FICHIER = slug FR
    *    (résolution via `getEntry("enTranslations", frSlug)` et la dérivation par `e.id`).
    *  - Convention pt-BR / futures langues : NOM DE FICHIER = slug localisé (intention SEO),

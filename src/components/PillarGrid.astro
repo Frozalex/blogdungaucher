@@ -1,13 +1,11 @@
 ---
 /**
  * Bandeau des rubriques : une tuile par pilier, fond dans la couleur pastel du
- * pilier, glyphe de pièce d'échecs dans sa couleur pleine, titre serif italique
- * et description courte. Présentationnel : reçoit des tuiles déjà localisées.
+ * pilier, titre serif italique et description courte. Présentationnel : reçoit
+ * des tuiles déjà localisées.
  */
 export interface PillarTile {
   href: string;
-  /** Glyphe unicode de pièce d'échecs (♞ ♛ ♜ ♚). */
-  glyph: string;
   title: string;
   description: string;
   /** Couleur pleine du pilier. */
@@ -21,7 +19,6 @@ const { items } = Astro.props;
 <div class="pillar-grid" style={`--cols:${items.length}`}>
   {items.map((it) => (
     <a class="pillar-tile" href={it.href} style={`--fc:${it.accent}`}>
-      <span class="pillar-tile__glyph" aria-hidden="true">{it.glyph}</span>
       <h3 class="pillar-tile__title">{it.title}</h3>
       <p class="pillar-tile__desc">{it.description}</p>
     </a>
@@ -49,13 +46,8 @@ const { items } = Astro.props;
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
   }
-  .pillar-tile__glyph {
-    font-size: 2rem;
-    line-height: 1;
-    color: var(--fc);
-  }
   .pillar-tile__title {
-    margin: 0.15rem 0 0;
+    margin: 0;
     font-family: var(--font-serif);
     font-style: italic;
     font-weight: 500;

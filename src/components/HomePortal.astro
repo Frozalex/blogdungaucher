@@ -128,18 +128,11 @@ const rankedItems: RankedItem[] = await Promise.all(
 );
 
 // ── Rubriques (Grand oral FR-only) ──────────────────────────────
-const pillarGlyphs: Record<string, string> = {
-  science: "♞",      // ♞ cavalier
-  esprit: "♛",       // ♛ dame
-  societe: "♜",      // ♜ tour
-  "grand-oral": "♚", // ♚ roi
-};
 const pillarSlugs = categorySlugs.filter((slug) => lang === "fr" || slug !== "grand-oral");
 const pillarTiles: PillarTile[] = pillarSlugs.map((slug) => {
   const cat = categoryMap[slug];
   return {
     href: lang === "fr" ? cat.href : swapLangPrefix(cat.href, lang),
-    glyph: pillarGlyphs[slug] ?? "♟",
     title: catShort(slug),
     description: catTagline(slug),
     accent: cat.accent,
