@@ -10,6 +10,14 @@ pillar: "Informatique"
 tags: ["grand-oral", "NSI", "terminale", "algorithmique", "minimax", "Python", "AlphaZero", "intelligence artificielle", "structures de données", "baccalauréat"]
 seoTitle: "Grand oral NSI : les échecs, de l'algorithmique à l'IA, plan complet"
 seoDescription: "Grand Oral spé NSI bac 2025 : minimax Python, arbres de décision, PGN, bitboard, AlphaZero. Plan détaillé, code commenté et questions jury pour réussir."
+ogImage: /images/og/grand-oral-nsi-echecs-og.webp
+heroImage:
+  src: /images/blog/grand-oral-nsi-echecs-hero.webp
+  alt: >-
+    Une salle de sciences avec paillasses et tableau noir, vue depuis l'entrée.
+  credit: "Douglas P. Perkins, CC BY 3.0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Jinego_Elementary_School_science_room_front.jpg
+  license: CC BY 3.0
 faq:
   - question: "Pourquoi les échecs sont-ils un sujet idéal pour un Grand Oral spécialité NSI ?"
     answer: "Les échecs incarnent les quatre piliers du programme de spé NSI : les algorithmes (minimax, alpha-bêta, récursivité), les structures de données (arbres de jeu, graphes), la programmation (représentation de l'échiquier en Python, fonctions récursives), et l'intelligence artificielle (passage de Stockfish à AlphaZero). C'est l'un des rares sujets qui permet de montrer concrètement le lien entre la théorie algorithmique et une application réelle connue du jury."
@@ -31,7 +39,7 @@ Parmi les **idées de sujets Grand Oral** en spécialité **NSI**, les échecs c
 
 Cet **article** te donne un kit complet, exploitable directement pour préparer ton **oral** : la méthodologie de l'**épreuve**, un plan minuté de **vingt minutes**, du code Python que tu peux expliquer ligne par ligne, une FAQ jury de quinze **questions** déjà classées par difficulté, une anti-sèche imprimable et des **conseils** de posture pour le **jour** J.
 
-> 💡 **Astuce :** clique sur le bouton « Télécharger en PDF » en haut de la page pour récupérer tout le **guide** au format imprimable, et le glisser dans ton classeur de révision.
+> **Astuce :** clique sur le bouton « Télécharger en PDF » en haut de la page pour récupérer tout le **guide** au format imprimable, et le glisser dans ton classeur de révision.
 
 ## Comprendre l'épreuve : Grand Oral en spécialité NSI
 

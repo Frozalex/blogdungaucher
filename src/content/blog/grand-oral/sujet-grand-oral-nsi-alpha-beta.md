@@ -24,15 +24,17 @@ seoTitle: "Sujet Grand Oral NSI alpha-bêta échecs : texte complet à réciter"
 seoDescription: >-
   Sujet Grand Oral NSI sur l'élagage alpha-bêta aux échecs, entièrement rédigé pour 10 minutes d'exposé. Optimisation,
   coupure, complexité, code Python : copie d'examen prête à utiliser.
-ogImage: /images/blog/guide-grand-oral-echecs-nsi-hero.png
+ogImage: /images/og/sujet-grand-oral-nsi-alpha-beta-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-nsi-hero.png
-  alt: "Sujet Grand Oral NSI sur l'élagage alpha-bêta : texte rédigé pour 10 minutes d'exposé"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/sujet-grand-oral-nsi-alpha-beta-hero.webp
+  alt: >-
+    Les rayonnages ordonnés d'une bibliothèque universitaire moderne.
+  credit: "Szalax, CC0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:University_of_Miskolc_Library_Reading_Room_2025_03.jpg
+  license: CC0
 ---
 
-> **📥 Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
 
 ---
 

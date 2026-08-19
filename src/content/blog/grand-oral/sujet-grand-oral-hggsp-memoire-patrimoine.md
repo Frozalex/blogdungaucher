@@ -23,15 +23,17 @@ seoTitle: "Sujet Grand Oral HGGSP mémoire patrimoine échecs : texte complet"
 seoDescription: >-
   Sujet Grand Oral HGGSP sur la mémoire divisée de Fischer-Spassky et le patrimoine échiquéen, entièrement rédigé pour
   10 minutes. Pierre Nora, lieux de mémoire, UNESCO : copie d'examen prête à utiliser.
-ogImage: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
+ogImage: /images/og/sujet-grand-oral-hggsp-memoire-patrimoine-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
-  alt: "Sujet Grand Oral HGGSP sur la mémoire et le patrimoine échiquéen : texte rédigé pour 10 minutes"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/sujet-grand-oral-hggsp-memoire-patrimoine-hero.webp
+  alt: >-
+    La grande salle de lecture néogothique d'une bibliothèque universitaire.
+  credit: "Guywelch2000, CC BY 4.0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Suzzallo_Reading_Room_University_of_Washington_restoration_Seattle_Washington_2026.jpg
+  license: CC BY 4.0
 ---
 
-> **📥 Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
 
 ---
 

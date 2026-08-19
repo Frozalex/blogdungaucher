@@ -23,15 +23,17 @@ seoTitle: "Sujet Grand Oral Maths combinatoire échecs : texte complet à récit
 seoDescription: >-
   Sujet Grand Oral Maths sur la combinatoire et les échecs, entièrement rédigé pour 10 minutes d'exposé. Principe
   multiplicatif, nombre de Shannon, arbres de dénombrement : copie d'examen prête à utiliser.
-ogImage: /images/blog/guide-grand-oral-echecs-maths-hero.png
+ogImage: /images/og/sujet-grand-oral-maths-combinatoire-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-maths-hero.png
-  alt: "Sujet Grand Oral Maths sur la combinatoire et les échecs : texte rédigé pour 10 minutes d'exposé"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/sujet-grand-oral-maths-combinatoire-hero.webp
+  alt: >-
+    L'entrée en bois d'un ancien bâtiment scolaire, avec un tableau noir posé sur un chevalet.
+  credit: "Tokumeigakarinoaoshima, CC BY-SA 4.0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Toyosato_Elementary_School_Old_Building_Conference_Room_Entrance_on_21st_July_2019.jpg
+  license: CC BY-SA 4.0
 ---
 
-> **📥 Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
 
 ---
 

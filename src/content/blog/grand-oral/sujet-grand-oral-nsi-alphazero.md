@@ -24,15 +24,17 @@ seoTitle: "Sujet Grand Oral NSI AlphaZero échecs : texte complet à réciter"
 seoDescription: >-
   Sujet Grand Oral NSI sur AlphaZero et l'apprentissage par renforcement, entièrement rédigé pour 10 minutes d'exposé.
   Réseaux de neurones, MCTS, rupture épistémologique : copie d'examen prête à utiliser.
-ogImage: /images/blog/guide-grand-oral-echecs-nsi-hero.png
+ogImage: /images/og/sujet-grand-oral-nsi-alphazero-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-nsi-hero.png
-  alt: "Sujet Grand Oral NSI sur AlphaZero : texte rédigé pour 10 minutes d'exposé"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/sujet-grand-oral-nsi-alphazero-hero.webp
+  alt: >-
+    Un espace de travail contemporain dans une bibliothèque, sous un plafond lumineux.
+  credit: "Szalax, CC0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:University_of_Miskolc_Library_Reading_Room_2025_01.jpg
+  license: CC0
 ---
 
-> **📥 Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
 
 ---
 

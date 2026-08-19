@@ -23,15 +23,17 @@ seoTitle: "Sujet Grand Oral SES Bourdieu reproduction échecs : texte complet"
 seoDescription: >-
   Sujet Grand Oral SES sur Bourdieu, capital culturel et reproduction sociale, entièrement rédigé pour 10 minutes
   d'exposé. La Distinction, habitus, capabilités : copie d'examen prête à utiliser.
-ogImage: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
+ogImage: /images/og/sujet-grand-oral-ses-bourdieu-reproduction-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
-  alt: "Sujet Grand Oral SES sur Bourdieu et la reproduction sociale : texte rédigé pour 10 minutes"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/sujet-grand-oral-ses-bourdieu-reproduction-hero.webp
+  alt: >-
+    Un vaste escalier d'honneur intérieur, vu depuis le rez-de-chaussée.
+  credit: "PCR Services Corporation, creator, Public domain, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Interior_view_of_staircase_-_Westlake_School_for_Girls,_Dormitory,_700_North_Faring_Street,_Los_Angeles,_Los_Angeles_County,_CA_HABS_CA-2791-21.tif
+  license: Public domain
 ---
 
-> **📥 Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
 
 ---
 

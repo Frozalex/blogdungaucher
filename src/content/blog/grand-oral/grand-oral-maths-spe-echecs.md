@@ -10,6 +10,14 @@ pillar: "Cognition"
 tags: ["grand-oral", "mathématiques", "terminale", "spécialité maths", "combinatoire", "loi binomiale", "suites", "Elo", "algorithme", "baccalauréat"]
 seoTitle: "Grand oral spé Maths : échecs et programme de terminale, plan complet"
 seoDescription: "Grand Oral spé Maths bac 2025 : sujet échecs avec combinatoire, probabilités, suites Elo, loi binomiale. Plan détaillé, formules et questions jury pour réussir."
+ogImage: /images/og/grand-oral-maths-spe-echecs-og.webp
+heroImage:
+  src: /images/blog/grand-oral-maths-spe-echecs-hero.webp
+  alt: >-
+    Une salle de cours dont les murs sont couverts de tableaux noirs remplis de calculs.
+  credit: "Anthony J. Bentley, Public domain, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Blackboards_%E2%80%93_UNM_Astrophysics.JPG
+  license: Public domain
 faq:
   - question: "Quelles notions du programme de terminale Maths peut-on illustrer avec les échecs ?"
     answer: "Les échecs couvrent les quatre grandes parties du programme de terminale Maths : la combinatoire et le dénombrement (nombre de Shannon, $10^{120}$ parties possibles), les probabilités et la loi binomiale (modélisation d'un tournoi, espérance de résultat Elo), les suites récurrentes (la mise à jour Elo est une suite $u_{n+1} = u_n + K(r_n - p_n)$), et l'algorithmique (minimax comme exemple de récursivité et de complexité)."
@@ -24,9 +32,9 @@ faq:
 ---
 Tu es en spécialité **mathématiques** en **terminale** ; le **Grand Oral du bac** approche. Tu cherches un **sujet** **ancré dans le programme**, personnel, et moins rabâché que la vingtième fractale ou la suite de Fibonacci.
 
-**Proposition centrale :** les échecs comme terrain d'application **complet** du **programme** - combinatoire (explosion des positions), probabilités (tournoi, Elo), suites récurrentes (mise à jour de cote), algorithmique (minimax). Pas un survol : une table d'équivalences chapitre ↔ échiquier, puis les livrables ci-dessous (formules, **exemples** chiffrés, plans, **questions** **jury**, **fiches** anti-sèche et **conseils** de **préparation**).
+**Proposition centrale :** les échecs comme terrain d'application **complet** du **programme** - combinatoire (explosion des positions), probabilités (tournoi, Elo), suites récurrentes (mise à jour de cote), algorithmique (minimax). Pas un survol : une table d'équivalences chapitre-échiquier, puis les livrables ci-dessous (formules, **exemples** chiffrés, plans, **questions** **jury**, **fiches** anti-sèche et **conseils** de **préparation**).
 
-> **📥 Télécharger ce sujet en PDF** via le bouton en haut de la page pour l'avoir hors-ligne sur tablette, téléphone ou ordinateur.
+> **Télécharger ce sujet en PDF** via le bouton en haut de la page pour l'avoir hors-ligne sur tablette, téléphone ou ordinateur.
 
 ## Comprendre l'épreuve : Grand Oral en spécialité Maths
 

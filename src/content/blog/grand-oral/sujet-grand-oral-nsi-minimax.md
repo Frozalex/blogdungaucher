@@ -23,15 +23,17 @@ seoTitle: "Sujet Grand Oral NSI minimax échecs : texte complet à réciter"
 seoDescription: >-
   Sujet Grand Oral NSI sur les échecs et le minimax, entièrement rédigé pour 10 minutes d'exposé. Récursivité, arbre
   de décision, fonction d'évaluation, code Python : copie d'examen prête à utiliser.
-ogImage: /images/blog/guide-grand-oral-echecs-nsi-hero.png
+ogImage: /images/og/sujet-grand-oral-nsi-minimax-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-nsi-hero.png
-  alt: "Sujet Grand Oral NSI sur les échecs et le minimax : texte rédigé pour 10 minutes d'exposé"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/sujet-grand-oral-nsi-minimax-hero.webp
+  alt: >-
+    Un couloir d'établissement scolaire bordé de casiers métalliques.
+  credit: "Htetrasme, CC BY-SA 4.0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Corridor_in_Robert_E._Bell_school,_1990s.jpg
+  license: CC BY-SA 4.0
 ---
 
-> **📥 Télécharger ce sujet en PDF** pour l'imprimer et le réciter à voix haute. Ce texte est rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+> **Télécharger ce sujet en PDF** pour l'imprimer et le réciter à voix haute. Ce texte est rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
 
 ---
 

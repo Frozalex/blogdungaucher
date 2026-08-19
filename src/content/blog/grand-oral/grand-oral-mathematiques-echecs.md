@@ -10,6 +10,14 @@ pillar: "Cognition"
 tags: ["grand-oral", "mathématiques", "NSI", "terminale", "combinatoire", "théorie des jeux", "IA", "Elo", "minimax", "baccalauréat", "transversal"]
 seoTitle: "Grand oral Maths + NSI : les échecs, pont entre les deux spécialités"
 seoDescription: "Grand Oral Maths et NSI échecs : combinatoire, minimax, probabilités Elo, graphes et structures de données. Plan, formules et code Python prêts."
+ogImage: /images/og/grand-oral-mathematiques-echecs-og.webp
+heroImage:
+  src: /images/blog/grand-oral-mathematiques-echecs-hero.webp
+  alt: >-
+    Une salle de lecture symétrique, alignement de lampes sur les tables de travail.
+  credit: "Dr. Marcus Gossler, CC BY-SA 3.0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Graz_University-Library_reading-room.jpg
+  license: CC BY-SA 3.0
 faq:
   - question: "Pourquoi le lien entre les mathématiques et les échecs est-il un bon sujet de Grand Oral ?"
     answer: "Ce sujet mêle des notions du programme de terminale (combinatoire, probabilités, théorie des graphes, algorithmique) à un objet culturel concret et connu du jury. Il permet une démonstration visuelle sur l'échiquier, une ouverture vers l'intelligence artificielle et une conclusion philosophique sur la pensée formelle, ce qui facilite la structuration en trois parties et anticipe naturellement les questions du jury."
@@ -38,7 +46,7 @@ Ce n'est pas un sujet où Maths et NSI se côtoient par hasard. C'est un sujet o
 
 Cet article te donne le plan complet, le contenu des deux programmes, les points de connexion entre les disciplines, et les conseils pour tenir la distance face à un jury qui connaît les deux spécialités.
 
-## Les trois ponts Maths ↔ NSI : l'angle unique du sujet transversal
+## Les trois ponts Maths-NSI : l'angle unique du sujet transversal
 
 Avant d'entrer dans le contenu, la structure de pensée est essentielle. Un jury de Grand Oral transversal Maths+NSI n'attend pas deux exposés collés l'un à l'autre. Il attend un candidat qui **montre comment les deux disciplines se nécessitent**.
 

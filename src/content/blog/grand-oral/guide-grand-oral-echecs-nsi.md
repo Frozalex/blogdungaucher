@@ -31,14 +31,14 @@ seoTitle: "Guide Grand Oral NSI Échecs 2026 : script 10 min + Python minimax + 
 seoDescription: >-
   Script 10 min, code Python minimax et alpha-bêta commenté ligne par ligne, 25 questions de jury rédigées. Le guide
   imprimable pour ton Grand Oral NSI avec les échecs.
-ogImage: /images/blog/guide-grand-oral-echecs-nsi-hero.png
+ogImage: /images/og/guide-grand-oral-echecs-nsi-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-nsi-hero.png
+  src: /images/blog/guide-grand-oral-echecs-nsi-hero.webp
   alt: >-
-    Illustration pixel art : lycéen face à un jury, échiquier et code Python en arrière-plan, « Guide Grand Oral NSI
-    Échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Les paillasses et les armoires vitrées d'une salle de travaux pratiques.
+  credit: "Douglas P. Perkins, CC BY 3.0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Jinego_Elementary_School_science_room_side.jpg
+  license: CC BY 3.0
 faq:
   - question: Quelle problématique choisir pour un Grand Oral NSI avec les échecs ?
     answer: >-
@@ -77,7 +77,7 @@ Ce **guide** rassemble **tout** ce qu'un élève de **terminale** spécialité *
 
 L'objectif : que tu n'aies plus à chercher d'**exemples**, plus à compiler des sources d'**internet** dispersées, plus à inventer ton plan dans l'urgence. **Tout** est là, exploitable directement.
 
-> **📥 Comment utiliser ce guide ?** Télécharge le PDF via le bouton en haut de la page pour l'avoir hors-ligne. Lis-le sur écran ou impression selon ce qui te convient. Entraîne-toi à expliquer le code à voix haute ligne par ligne : c'est l'exercice clé pour l'**oral** **NSI**.
+> **Comment utiliser ce guide ?** Télécharge le PDF via le bouton en haut de la page pour l'avoir hors-ligne. Lis-le sur écran ou impression selon ce qui te convient. Entraîne-toi à expliquer le code à voix haute ligne par ligne : c'est l'exercice clé pour l'**oral** **NSI**.
 
 ## Comprendre l'épreuve : Grand Oral en spécialité NSI
 
@@ -193,7 +193,7 @@ Si tu vises une école d'ingénieur, ta problématique doit pouvoir conduire au 
 
 *Les transitions rédigées sont en italique. Le code Python est dans des blocs à expliquer oralement : tu n'as pas à le lire mot à mot, mais à l'expliquer en français clair.*
 
-### ⏱ 0:00–1:00, Introduction et problématique
+### 0:00–1:00, Introduction et problématique
 
 > *« Bonjour. Je vais vous parler de la façon dont un ordinateur joue aux échecs, et plus précisément, comment il choisit son coup en un **temps** raisonnable.*
 > 
@@ -201,7 +201,7 @@ Si tu vises une école d'ingénieur, ta problématique doit pouvoir conduire au 
 > 
 > *Je développerai en trois étapes : l'algorithme minimax de base, l'élagage alpha-bêta qui le rend efficace, puis les **limites** de cette approche et ce qu'AlphaZero a changé. »*
 
-### ⏱ 1:00–4:00, Partie 1 : l'algorithme minimax
+### 1:00–4:00, Partie 1 : l'algorithme minimax
 
 > *« L'idée de base : modéliser le jeu comme un arbre. Chaque nœud est une position, chaque branche un coup possible. Le joueur blanc cherche à maximiser son avantage, le noir à le minimiser : d'où le nom minimax.*
 > 
@@ -240,7 +240,7 @@ def minimax(position, profondeur, maximise):
 
 ![Croissance exponentielle du coût minimax O(b^d) : de 35 positions à profondeur 1 jusqu'à 1,8 milliard à profondeur 6 avec b=35.](/images/guide-go-nsi-02-cout-minimax.svg)
 
-### ⏱ 4:00–7:00, Partie 2 : l'élagage alpha-bêta
+### 4:00–7:00, Partie 2 : l'élagage alpha-bêta
 
 > *« Le problème du minimax : il explore des branches inutiles. L'élagage alpha-bêta coupe ces branches sans changer le résultat.*
 > 
@@ -284,7 +284,7 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
 
 ![Comparaison minimax vs alpha-bêta pour b=35 d=4 : 1 500 000 positions contre 1 225, soit un gain supérieur à 1 000 dans le meilleur cas.](/images/guide-go-nsi-04-gain-complexite.svg)
 
-### ⏱ 7:00–9:00, Partie 3 : limites et rupture AlphaZero
+### 7:00–9:00, Partie 3 : limites et rupture AlphaZero
 
 > *« L'élagage alpha-bêta est élégant, mais avec des **limites** structurelles.*
 > 
@@ -298,7 +298,7 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
 
 ![Opposition entre IA symbolique minimax à règles explicites humaines et IA connexionniste AlphaZero apprenant par auto-jeu et réseaux de neurones.](/images/guide-go-nsi-05-alphazero-paradigme.svg)
 
-### ⏱ 9:00–10:00, Conclusion
+### 9:00–10:00, Conclusion
 
 > *« L'élagage alpha-bêta illustre un principe fondamental de l'**informatique** : optimiser ne consiste pas à chercher toutes les solutions, mais à éliminer intelligemment les mauvaises.*
 > 

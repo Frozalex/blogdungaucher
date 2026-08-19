@@ -132,7 +132,11 @@ if (!APPLY) {
     if (!existsSync(f)) { console.log(`❌ ${p.slug} : article introuvable`); continue; }
     const src = readFileSync(f, "utf8");
     const cut = src.indexOf("\n---", 4);
-    let fm = src.slice(0, cut);
+    // Le "\n" ajouté est indispensable : sans lui la DERNIÈRE ligne du frontmatter n'a
+    // pas de fin de ligne, et les regex ci-dessous (qui exigent un \n final) ne peuvent
+    // pas la consommer — un `license:` résiduel survivait alors au remplacement du bloc,
+    // et en YAML c'est la seconde occurrence qui l'emporte.
+    let fm = src.slice(0, cut) + "\n";
     const body = src.slice(cut);
     const block = `heroImage:\n  src: /images/blog/${p.slug}-hero.webp\n  alt: >-\n    ${p.alt}`;
     const og = `ogImage: /images/og/${p.slug}-og.webp`;
@@ -144,7 +148,7 @@ if (!APPLY) {
       const ins = `${og}\n${block}\n`;
       fm = /^faq:/m.test(fm) ? fm.replace(/^faq:/m, ins + "faq:") : fm.trimEnd() + "\n" + ins;
     }
-    writeFileSync(f, fm + body);
+    writeFileSync(f, fm.replace(/\n$/, "") + body);
     console.log(`✔ ${p.slug}`);
   }
   console.log(`\n${pairs.length} vignettes intégrées.`);

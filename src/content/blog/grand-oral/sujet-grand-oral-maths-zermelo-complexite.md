@@ -23,15 +23,17 @@ seoTitle: "Sujet Grand Oral Maths Zermelo complexité échecs : texte complet à
 seoDescription: >-
   Sujet Grand Oral Maths sur le théorème de Zermelo et la complexité, entièrement rédigé pour 10 minutes d'exposé.
   Force brute, jeu parfait, limites physiques : copie d'examen prête à utiliser.
-ogImage: /images/blog/guide-grand-oral-echecs-maths-hero.png
+ogImage: /images/og/sujet-grand-oral-maths-zermelo-complexite-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-maths-hero.png
-  alt: "Sujet Grand Oral Maths sur Zermelo et la complexité : texte rédigé pour 10 minutes d'exposé"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/sujet-grand-oral-maths-zermelo-complexite-hero.webp
+  alt: >-
+    Des rangées de pupitres vides dans un amphithéâtre de cours.
+  credit: "Paul The Writer, CC0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Rows_of_Desks_in_Lecture_Theatre.jpg
+  license: CC0
 ---
 
-> **📥 Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
 
 ---
 

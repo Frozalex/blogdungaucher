@@ -31,14 +31,14 @@ seoTitle: "Guide Grand Oral Échecs toutes spécialités 2026 : kit universel + 
 seoDescription: >-
   Kit complet pour faire un Grand Oral brillant avec les échecs dans n'importe quelle spécialité (Philo, SVT, PC, HGG).
   Script 10 min, 20 questions jury rédigées, erreurs à éviter.
-ogImage: /images/blog/guide-grand-oral-echecs-toutes-specialites-hero.png
+ogImage: /images/og/guide-grand-oral-echecs-toutes-specialites-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-toutes-specialites-hero.png
+  src: /images/blog/guide-grand-oral-echecs-toutes-specialites-hero.webp
   alt: >-
-    Illustration pixel art : lycéen face à un jury avec différentes disciplines autour d'un échiquier, « Guide Grand
-    Oral Échecs toutes spécialités »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Le plafond décoré et le lustre d'une salle solennelle d'établissement scolaire.
+  credit: "Filip Popovic, CC BY-SA 4.0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Congress_hall_of_the_Grammar_school_in_Sremski_Karlovci_08.jpg
+  license: CC BY-SA 4.0
 faq:
   - question: Peut-on vraiment faire son Grand Oral sur les échecs sans avoir Maths ou NSI ?
     answer: >-
@@ -74,7 +74,7 @@ faq:
       Ignorer les limites du sujet: un bon exposé pose aussi les limites de sa propre argumentation.
 ---
 
-> **📥 Comment utiliser ce guide ?** Télécharge la version PDF via le bouton en haut de la page pour l'avoir hors-ligne sur tablette ou téléphone. Lis d'abord le tableau de correspondance pour trouver ta problématique en 5 minutes, puis suis le script de ta section spécialité. Entraîne-toi à voix haute avec chronomètre.
+> **Comment utiliser ce guide ?** Télécharge la version PDF via le bouton en haut de la page pour l'avoir hors-ligne sur tablette ou téléphone. Lis d'abord le tableau de correspondance pour trouver ta problématique en 5 minutes, puis suis le script de ta section spécialité. Entraîne-toi à voix haute avec chronomètre.
 
 ---
 
@@ -124,7 +124,7 @@ Avant tout script, trouve ta problématique en croisant ton angle disciplinaire 
 
 ---
 
-### ⏱ 0:00–1:00, Introduction et problématique
+### 0:00–1:00, Introduction et problématique
 
 *"Bonjour. Garry Kasparov, champion du monde d'échecs, décrit chaque partie comme 'une lutte entre deux êtres libres'. Mais en 1997, il perd contre Deep Blue : un programme informatique. Ce programme ne délibère pas : il calcule. Est-ce que Kasparov était vraiment libre ?*
 
@@ -134,7 +134,7 @@ Avant tout script, trouve ta problématique en croisant ton angle disciplinaire 
 
 ---
 
-### ⏱ 1:00–4:00, Partie 1 : la décision aux échecs comme liberté rationnelle
+### 1:00–4:00, Partie 1 : la décision aux échecs comme liberté rationnelle
 
 *"Aux échecs, chaque joueur choisit parmi plusieurs coups légaux. Cette multiplicité des possibles est une condition nécessaire de la liberté : sans alternatives, pas de choix. Kant définissait la liberté comme l'autonomie de la volonté : la capacité à agir selon des principes que l'on se donne soi-même. Le joueur d'échecs qui adopte un style de jeu (agressif, positionnel, sacrificiel) se donne à lui-même ses propres principes d'action.*
 
@@ -144,7 +144,7 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 ---
 
-### ⏱ 4:00–7:00 (Partie 2 : le défi du déterminisme) Deep Blue et Zermelo
+### 4:00–7:00 (Partie 2 : le défi du déterminisme) Deep Blue et Zermelo
 
 *"L'informatique pose cette question en termes radicaux. Le théorème de Zermelo (1913) prouve que les échecs ont un résultat déterminé sous jeu parfait : soit les Blancs gagnent, soit les Noirs, soit c'est nulle, mais l'un des trois est inévitable avec deux joueurs parfaits. Les échecs sont donc déterministes en théorie.*
 
@@ -156,7 +156,7 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 ---
 
-### ⏱ 7:00–9:00 (Partie 3 : liberté et calcul) une fausse opposition ?
+### 7:00–9:00 (Partie 3 : liberté et calcul) une fausse opposition ?
 
 *"Sartre affirmait que l'existence précède l'essence : que l'humain se définit par ses choix, non par sa nature. Mais les joueurs d'échecs passent des années à s'entraîner pour que certains coups deviennent automatiques : des réflexes. Ils réduisent volontairement leur liberté de choix immédiate pour agir plus vite et mieux.*
 
@@ -166,7 +166,7 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 ---
 
-### ⏱ 9:00–10:00, Conclusion
+### 9:00–10:00, Conclusion
 
 *"Les échecs ne tranchent pas le débat liberté-déterminisme : ils le rendent concret et visible. La décision du joueur est simultanément libre (choix réel parmi des alternatives) et déterminée (par la formation, l'habitude, l'état émotionnel).*
 

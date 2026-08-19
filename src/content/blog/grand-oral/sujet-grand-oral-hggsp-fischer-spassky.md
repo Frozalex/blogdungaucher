@@ -23,15 +23,17 @@ seoTitle: "Sujet Grand Oral HGGSP Fischer-Spassky échecs : texte complet à ré
 seoDescription: >-
   Sujet Grand Oral HGGSP sur Fischer-Spassky 1972 et le soft power pendant la guerre froide, entièrement rédigé pour
   10 minutes. Nye, conflit culturel, données chiffrées : copie d'examen prête à utiliser.
-ogImage: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
+ogImage: /images/og/sujet-grand-oral-hggsp-fischer-spassky-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
-  alt: "Sujet Grand Oral HGGSP sur Fischer-Spassky 1972 : texte rédigé pour 10 minutes d'exposé"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/sujet-grand-oral-hggsp-fischer-spassky-hero.webp
+  alt: >-
+    Une salle de lecture ancienne, tables de travail entre les rayonnages.
+  credit: "University of Texas at Arlington Photograph Collection, CC BY 4.0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Grubbs_Vocational_College_Library_Reading_Room_(10003712).jpg
+  license: CC BY 4.0
 ---
 
-> **📥 Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
 
 ---
 

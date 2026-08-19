@@ -33,14 +33,14 @@ seoTitle: "Guide Grand Oral SES HGGSP Échecs 2026 : script 10 min + Bourdieu + 
 seoDescription: >-
   Méthodologie, script 10 min, données économiques et géopolitiques, Bourdieu et capital culturel, 25 questions jury
   rédigées. Le guide complet imprimable pour ton Grand Oral SES ou HGGSP avec les échecs.
-ogImage: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
+ogImage: /images/og/guide-grand-oral-echecs-ses-hggsp-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
+  src: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.webp
   alt: >-
-    Illustration pixel art : lycéen face à un jury, échiquier et carte du monde en arrière-plan, « Guide Grand Oral SES
-    HGGSP Échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+    Une bibliothèque scolaire, tables de travail entre les rayonnages.
+  credit: "State Government Photographer, CC0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Students_Reading_at_Tables_in_School_Library(GN08836).jpg
+  license: CC0
 faq:
   - question: Peut-on faire un Grand Oral SES avec les échecs sans être joueur ?
     answer: >-
@@ -81,7 +81,7 @@ Ce **guide** rassemble **tout** ce qu'un élève de **terminale** spécialité *
 
 L'objectif : que tu n'aies plus à compiler des **fiches** dispersées, plus à chercher des **exemples**, plus à inventer ton plan dans l'urgence. **Tout** est là, exploitable directement, conçu pour t'aider à passer du score moyen au score d'excellence.
 
-> **📥 Comment utiliser ce guide ?** Télécharge le PDF via le bouton en haut de la page pour l'avoir hors-ligne. Lis sur écran ou support de ton choix. Entraîne-toi à citer chaque chiffre sans lire tes notes : le **jury** le remarque immédiatement.
+> **Comment utiliser ce guide ?** Télécharge le PDF via le bouton en haut de la page pour l'avoir hors-ligne. Lis sur écran ou support de ton choix. Entraîne-toi à citer chaque chiffre sans lire tes notes : le **jury** le remarque immédiatement.
 
 ## Comprendre l'épreuve : Grand Oral en SES et HGGSP
 
@@ -208,7 +208,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 
 *Les transitions rédigées sont en italique. Les **données** chiffrées sont à citer de mémoire : c'est ce qui impressionne le **jury**.*
 
-### ⏱ 0:00–1:00, Introduction et problématique
+### 0:00–1:00, Introduction et problématique
 
 > *« Bonjour. Reykjavik, 1972. Bobby Fischer, Américain, affronte Boris Spassky, Soviétique, dans ce qui sera appelé « le match du siècle ». 80 millions de téléspectateurs américains suivent la finale à son apogée. Henry Kissinger appelle Fischer pour l'encourager à participer.*
 > 
@@ -216,7 +216,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > 
 > *Je développerai en trois étapes : Fischer-Spassky 1972 comme **conflit** culturel emblématique, les **limites** de cette lecture, et la transformation contemporaine. »*
 
-### ⏱ 1:00–4:00, Partie 1 : Fischer-Spassky, un conflit culturel emblématique
+### 1:00–4:00, Partie 1 : Fischer-Spassky, un conflit culturel emblématique
 
 > *« Le concept de **soft power**, théorisé par Joseph Nye en 1990, désigne la capacité d'un État à attirer et persuader plutôt qu'à contraindre. Les ressources d'influence sont la culture, les valeurs politiques, la politique étrangère perçue comme légitime.*
 > 
@@ -226,7 +226,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > 
 > ***Données clés :*** *le match génère 3 millions de dollars d'enjeux télévisuels (1972), une couverture dans 100 pays, et une augmentation de 300 % des adhésions aux clubs d'échecs américains l'année suivante. C'est l'un des grands **exemples** de **conflit** culturel pendant la guerre froide. »*
 
-### ⏱ 4:00–7:00, Partie 2 : limites et nuances
+### 4:00–7:00, Partie 2 : limites et nuances
 
 > *« Ce récit est puissant, mais plusieurs **limites** méritent d'être posées.*
 > 
@@ -238,7 +238,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > 
 > *En termes d'analyse SES/HGGSP : l'influence culturelle est efficace quand elle est cohérente avec les autres formes de puissance. Un coup isolé ne transforme pas les rapports de force. »*
 
-### ⏱ 7:00–9:00, Partie 3 : la transformation contemporaine
+### 7:00–9:00, Partie 3 : la transformation contemporaine
 
 > *« Aujourd'hui, l'influence échiquéenne a changé de nature.*
 > 
@@ -248,7 +248,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > 
 > ***La platformisation :*** *Chess.com compte 150 millions d'inscrits en 2024 (post-Queen's Gambit, 2020). L'influence échiquéenne est devenue culturellement diffuse : portée par des plateformes et des streamers (Nakamura, 1,5 million d'abonnés Twitch). »*
 
-### ⏱ 9:00–10:00, Conclusion
+### 9:00–10:00, Conclusion
 
 > *« L'influence échiquéenne a traversé trois phases : l'instrumentalisation étatique soviéto-américaine (1950-1991), la globalisation par le marché (1991-2020), et la platformisation par la culture numérique (2020-aujourd'hui).*
 > 

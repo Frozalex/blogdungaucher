@@ -23,15 +23,17 @@ seoTitle: "Sujet Grand Oral HGGSP mondialisation échecs : texte complet à réc
 seoDescription: >-
   Sujet Grand Oral HGGSP sur les échecs et la mondialisation, entièrement rédigé pour 10 minutes d'exposé.
   Glocalisation, plateformes Chess.com, acteurs non étatiques : copie d'examen prête à utiliser.
-ogImage: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
+ogImage: /images/og/sujet-grand-oral-hggsp-mondialisation-plateformes-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
-  alt: "Sujet Grand Oral HGGSP sur la mondialisation des échecs : texte rédigé pour 10 minutes d'exposé"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/sujet-grand-oral-hggsp-mondialisation-plateformes-hero.webp
+  alt: >-
+    Une assemblée scolaire réunissant plusieurs centaines d'élèves dans un grand hall.
+  credit: "褒忠國中 雲端網, CC BY 2.0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Hall_of_the_Baozhong_Junior_High_School_20190924.jpg
+  license: CC BY 2.0
 ---
 
-> **📥 Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
 
 ---
 

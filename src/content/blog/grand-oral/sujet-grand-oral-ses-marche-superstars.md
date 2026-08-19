@@ -23,15 +23,17 @@ seoTitle: "Sujet Grand Oral SES marché superstars échecs : texte complet à r�
 seoDescription: >-
   Sujet Grand Oral SES sur le marché des joueurs d'échecs et l'économie des superstars, entièrement rédigé pour 10
   minutes. Rosen, Ricardo, Becker, données chiffrées : copie d'examen prête à utiliser.
-ogImage: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
+ogImage: /images/og/sujet-grand-oral-ses-marche-superstars-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.png
-  alt: "Sujet Grand Oral SES sur le marché des joueurs d'échecs : texte rédigé pour 10 minutes d'exposé"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/sujet-grand-oral-ses-marche-superstars-hero.webp
+  alt: >-
+    Une cage d'escalier ornée vue en plongée depuis le dernier étage.
+  credit: "Globetrotter19, CC BY-SA 3.0, via Wikimedia Commons"
+  sourceUrl: https://commons.wikimedia.org/wiki/File:Jelky_School._Staircase_from_top._-_Budapest.JPG
+  license: CC BY-SA 3.0
 ---
 
-> **📥 Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
 
 ---
 
