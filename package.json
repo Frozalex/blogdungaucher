@@ -11,6 +11,7 @@
     "indexnow": "node scripts/indexnow-submit.mjs",
     "serpmantics": "node scripts/serpmantics.mjs",
     "check:publish-weekly": "node scripts/check-publish-weekly.mjs",
+    "check:link-timing": "node scripts/check-internal-link-timing.mjs",
     "apply:publish-schedule": "node scripts/apply-future-publish-schedule.mjs",
     "preview": "astro preview",
     "pdfs": "node scripts/generate-pdfs.mjs",

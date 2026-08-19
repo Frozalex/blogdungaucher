@@ -102,9 +102,9 @@ Pour un joueur d'échecs, les implications sont concrètes : **les 6 premières 
 
 - **Flexibilité cognitive** (capacité à passer d'un plan à un autre) : dégradée significativement après une nuit sans sommeil
 - **Inhibition** (capacité à rejeter une mauvaise réponse évidente au profit d'une meilleure) : parmi les premières fonctions touchées
-- **[Mémoire de travail](/fr/blog/echecs-memoire-de-travail/)** (maintenir une variante en tête pendant le calcul) : réduite après 24h de veille
+- **Mémoire de travail** (maintenir une variante en tête pendant le calcul) : réduite après 24h de veille
 
-Ce dernier point est particulièrement important. La mémoire de travail est le goulot d'étranglement du calcul aux échecs : c'est elle qui permet de garder en tête la position d'arrivée d'une variante pendant qu'on en explore les branches. Une mémoire de travail dégradée signifie des variantes raccourcies, des positions mal évaluées, des blunders sur des menaces qu'on a calculées mais pas maintenues.
+Ce dernier point est particulièrement important. La mémoire de travail est le goulot d'étranglement du calcul aux échecs : c'est elle qui permet de garder en tête la position d'arrivée d'une variante pendant qu'on en explore les branches. Une mémoire de travail dégradée signifie des variantes raccourcies, des positions mal évaluées, des blunders sur des menaces qu'on a calculées mais pas maintenues. Un article dédié à la mémoire de travail aux échecs est à venir sur le blog.
 
 ![Effet de la privation de sommeil sur les trois fonctions exécutives clés aux échecs : l'inhibition des mauvaises réponses est dégradée en premier, suivie de la flexibilité cognitive, puis de la mémoire de travail. À 24 heures de veille, équivalent cognitif d'une alcoolémie de 0,10 % (Harrison et Horne, 2000 ; Walker, 2017).](/images/echecs-sommeil-02-privation-fonctions.svg)
 

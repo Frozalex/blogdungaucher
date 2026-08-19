@@ -74,7 +74,7 @@ Les fonctions exécutives comprennent l'inhibition des réponses impulsives (ré
 
 ![Les quatre fonctions exécutives selon Barkley (1997) : inhibition, mémoire de travail, flexibilité, planification — chacune mise en déficit par le TDAH et sollicitée à chaque coup aux échecs.](/images/echecs-tdah-01-fonctions-executives.svg)
 
-Ces quatre fonctions sont précisément celles que les échecs sollicitent à chaque coup, dans chaque partie, pendant toute la séance. (La dimension [concentration](/fr/blog/echecs-et-concentration/) fait l'objet d'une analyse dédiée.) Le parallèle est direct.
+Ces quatre fonctions sont précisément celles que les échecs sollicitent à chaque coup, dans chaque partie, pendant toute la séance. (La dimension concentration fera l'objet d'une analyse dédiée, à venir sur le blog.) Le parallèle est direct.
 
 ## La biologie derrière l'inconsistance
 

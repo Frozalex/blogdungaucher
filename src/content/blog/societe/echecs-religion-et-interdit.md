@@ -129,7 +129,7 @@ L'artisan de cette ruse est un dominicain, **Jacques de Cessoles**, qui rédige 
 
 Le procédé est génial : il ne nie pas le jeu, il le moralise. Les échecs cessent d'être une vanité pour devenir un **miroir du bon gouvernement**. Le traité circule dans toute l'Europe en d'innombrables copies, traductions et adaptations. Lorsque l'imprimerie arrive, **William Caxton** en publie une version anglaise, *The Game and Playe of the Chesse*, vers 1474 : c'est l'un des tout premiers livres imprimés en langue anglaise. Symbole frappant : le jeu jadis voué au bûcher devient l'un des premiers objets de la culture imprimée.
 
-À partir de là, la cause est entendue dans l'Occident chrétien. Le jeu reste parfois suspect quand on y mise de l'argent, mais l'échiquier en lui-même est blanchi. Il deviendra même, à la Renaissance puis aux Lumières, un emblème d'intelligence et de civilité, la racine lointaine de sa place actuelle dans [la culture populaire](/fr/blog/echecs-et-culture-populaire/).
+À partir de là, la cause est entendue dans l'Occident chrétien. Le jeu reste parfois suspect quand on y mise de l'argent, mais l'échiquier en lui-même est blanchi. Il deviendra même, à la Renaissance puis aux Lumières, un emblème d'intelligence et de civilité, la racine lointaine de sa place actuelle dans la culture populaire, à laquelle un article à venir sera consacré.
 
 ![La ruse de Cessoles vers 1300 : transformer l'échiquier en allégorie morale où chaque pièce représente un ordre social, réhabilitant ainsi le jeu aux yeux de l'Église.](/images/echecs-religion-03-cessoles-moralisation.svg)
 
@@ -160,7 +160,7 @@ Au Moyen Âge, l'**Église orthodoxe russe** condamne les échecs. Elle hérite 
 
 Sur le terrain, c'est une autre histoire. Les fouilles archéologiques, notamment à Novgorod, exhument quantité de pièces d'échecs de toutes les couches de la société, signe d'une pratique populaire intense et continue, parfaitement indifférente aux remontrances du clergé. La légende même de la mort d'**Ivan le Terrible**, en 1584, le montre s'effondrant alors qu'il disposait ou s'apprêtait à jouer une partie d'échecs : que l'anecdote soit exacte ou enjolivée, elle dit assez la place du jeu jusqu'au sommet de l'État.
 
-Le renversement viendra bien plus tard, et il est total. Au XXᵉ siècle, l'**Union soviétique** fait des échecs une affaire d'État : écoles, clubs, champions célébrés comme des héros nationaux, jeu érigé en vitrine de la supériorité intellectuelle du régime. Le divertissement que l'Église avait jadis voulu bannir devient un instrument d'**influence** que l'État met en scène jusque sur la [grande scène diplomatique](/fr/blog/echecs-et-diplomatie/) de la guerre froide. Rarement un interdit religieux aura connu pareille revanche.
+Le renversement viendra bien plus tard, et il est total. Au XXᵉ siècle, l'**Union soviétique** fait des échecs une affaire d'État : écoles, clubs, champions célébrés comme des héros nationaux, jeu érigé en vitrine de la supériorité intellectuelle du régime. Le divertissement que l'Église avait jadis voulu bannir devient un instrument d'**influence** que l'État met en scène jusque sur la grande scène diplomatique de la guerre froide, sujet d'un article à venir sur le blog. Rarement un interdit religieux aura connu pareille revanche.
 
 ## Le judaïsme : une tolérance studieuse
 

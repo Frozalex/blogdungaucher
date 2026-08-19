@@ -11,6 +11,7 @@ Voici **tous les scripts**, regroupés par fonction.
 ## Publication et calendrier
 *(détaillés au [chapitre 10](10-publication-planning.md))*
 - **`check-publish-weekly.mjs`** — vérifie la règle « 2 articles/semaine, lundi/jeudi ». Fait partie du build.
+- **`check-internal-link-timing.mjs`** (`npm run check:link-timing`) — détecte les liens internes « en avance » : un article déjà publié qui pointe vers un article dont la `publishDate` est encore dans le futur, donc invisible pour `getAllPosts()` et **404 en production**. Convention à appliquer : annoncer la cible en clair comme « à venir », sans lien actif, et rétablir le lien à sa publication. **Ne fait pas partie du build** : à lancer à la main, en particulier avant de publier ou de replanifier des dates.
 - **`apply-future-publish-schedule.mjs`** — réassigne les dates des articles à venir sur la grille.
 - **`interleave-future-themes.mjs`** — alterne les rubriques dans la file de publication.
 - **`publish-schedule-constants.mjs`** — les dates de référence partagées par les scripts ci-dessus.
