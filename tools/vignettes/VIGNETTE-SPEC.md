@@ -64,9 +64,19 @@ Deux pièges rencontrés :
   agrandit la bande : l'image reste entière, avec du crème autour — invisible, le fond
   des vignettes étant lui-même crème.
 
-Le dérivé OG est **letterboxé sur le crème** et non recadré : le 1,91:1 imposé par les
-réseaux amputait 21 % de l'image, or c'est cette version qui circule sur Pinterest.
-Régénération de tout le lot : `node scripts/regen-og-letterbox.mjs`.
+Le dérivé OG dépend de la **nature de l'image**, le 1,91:1 étant imposé par les réseaux :
+
+- **Illustration maison → letterbox** sur le crème. Le fond de la vignette étant déjà
+  crème, les bandes latérales sont invisibles et l'image est vue entière sur Pinterest.
+- **Photo tierce → recadrage centré.** Une photo occupe tout son cadre : la letterbox y
+  laisse deux bandes crème bien visibles, qui font sale.
+
+Le critère se lit dans le frontmatter : `heroImage.sourceUrl` n'est renseigné que pour
+les images tierces. Régénération du lot : `node scripts/regen-og-letterbox.mjs`.
+
+> Piège : composer l'image sur un canevas plus petit ne letterboxe pas — le dépassement
+> est simplement rogné, et on retombe exactement sur le recadrage qu'on voulait éviter.
+> Il faut un `-resize` (ou `fit: "inside"`) préalable.
 
 Reste les **9 anciennes vignettes pixel art en 16:9**, qui perdent ~16 % dans un
 conteneur 3:2. Elles disparaîtront à mesure qu'elles seront remplacées.

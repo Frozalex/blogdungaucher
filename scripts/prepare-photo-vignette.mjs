@@ -57,8 +57,10 @@ if (isLandscape) {
 // Dérivé OG : vignette entière posée sur le crème au format 1,91:1 imposé par les
 // réseaux, et non recadrée — un recadrage centré amputait 21 % de l'image, alors que
 // c'est cette version qui circule sur Pinterest et les partages.
-// `-resize WxH` sans `^` : l'image tient ENTIÈREMENT dans le cadre. Sans lui, le
-// composite déborde du canevas et se fait rogner — soit le recadrage qu'on évite.
-execFileSync("magick", ["-size", `${W}x${OG_H}`, `xc:${CREAM}`, hero, "-resize", `${W}x${OG_H}`, "-gravity", "center", "-composite", "-quality", "82", og]);
+// Dérivé OG par RECADRAGE, contrairement à nos illustrations maison qui sont
+// letterboxées. Une photo occupe tout son cadre : la letterbox y laisserait deux
+// bandes crème bien visibles sur les côtés, alors qu'elles sont invisibles sur une
+// illustration dont le fond est déjà crème. Cf. prepare-vignette.mjs.
+execFileSync("magick", [hero, "-gravity", "center", "-crop", `${W}x${OG_H}+0+0`, "+repage", "-quality", "82", og]);
 
 for (const p of [hero, og]) console.log(`${p}  ${(statSync(p).size / 1024).toFixed(0)} Ko`);
