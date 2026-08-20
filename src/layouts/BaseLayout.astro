@@ -209,9 +209,38 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- ── Google Consent Mode v2 : DOIT s'exécuter avant tout tag Google (AdSense, gtag) ──
+         Défaut : tout refusé tant que l'utilisateur n'a pas répondu au bandeau cookies.
+         Un visiteur qui revient avec un choix déjà enregistré voit ce choix réappliqué
+         immédiatement (synchrone), avant même que les scripts Google ne partent en requête. -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+        wait_for_update: 500,
+      });
+      try {
+        var storedConsent = JSON.parse(localStorage.getItem("blogdungaucher.cookieConsent.v1") || "null");
+        if (storedConsent) {
+          gtag("consent", "update", {
+            ad_storage: storedConsent.marketing ? "granted" : "denied",
+            ad_user_data: storedConsent.marketing ? "granted" : "denied",
+            ad_personalization: storedConsent.marketing ? "granted" : "denied",
+            analytics_storage: storedConsent.analytics ? "granted" : "denied",
+          });
+        }
+      } catch (_) {}
+    </script>
+
     <!-- ── AdSense : chargement inconditionnel du SDK (exigé par Google pour la revue de site) ──
-         Le compte n'est pas encore approuvé : aucune unité <ins class="adsbygoogle"> n'est posée,
-         ce script ne sert donc aucune pub tant que l'approbation n'est pas obtenue. -->
+         Le compte n'est pas encore approuvé : aucune unité <ins class="adsbygoogle"> n'est posée.
+         Le Consent Mode ci-dessus restreint cookies et personnalisation tant que le consentement
+         « Publicité » n'est pas donné via le bandeau (CookieConsent.astro). -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244325018333025" crossorigin="anonymous"></script>
 
     <meta name="description" content={description} />
@@ -445,10 +474,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         function enableAnalytics() {
           if (state.analyticsLoaded) return;
           state.analyticsLoaded = true;
-          window.dataLayer = window.dataLayer || [];
-          window.gtag = function gtag() {
-            window.dataLayer.push(arguments);
-          };
+          // dataLayer/gtag déjà définis en tête de <head> (Consent Mode) : pas de redéfinition ici.
           loadScript(`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`);
           window.gtag("js", new Date());
           window.gtag("config", GA_MEASUREMENT_ID);
@@ -507,6 +533,14 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
 
         function applyConsent(consent) {
           if (!consent) return;
+          if (window.gtag) {
+            window.gtag("consent", "update", {
+              ad_storage: consent.marketing ? "granted" : "denied",
+              ad_user_data: consent.marketing ? "granted" : "denied",
+              ad_personalization: consent.marketing ? "granted" : "denied",
+              analytics_storage: consent.analytics ? "granted" : "denied",
+            });
+          }
           if (consent.analytics) enableAnalytics();
           if (consent.notifications) {
             enableNtfyPush();

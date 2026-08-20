@@ -9,7 +9,7 @@ const consentCopy = {
   fr: {
     brand: "Blog d'un Gaucher",
     title: "Nous respectons votre vie privée",
-    intro: "Ce site utilise des cookies de <strong>mesure d'audience</strong> pour comprendre ce qui intéresse les lecteurs. Les <strong>notifications push</strong> sont indépendantes des cookies et entièrement optionnelles.",
+    intro: "Ce site utilise des cookies de <strong>mesure d'audience</strong> et, à terme, de <strong>publicité</strong> pour comprendre ce qui intéresse les lecteurs. Les <strong>notifications push</strong> sont indépendantes des cookies et entièrement optionnelles.",
     acceptAll: "Tout accepter",
     rejectAll: "Tout refuser",
     customize: "Personnaliser mes choix",
@@ -19,6 +19,8 @@ const consentCopy = {
     alwaysOn: "Toujours actif",
     analyticsName: "Mesure d'audience",
     analyticsDesc: "Google Analytics : comprendre combien de personnes lisent le blog et quels articles intéressent le plus.",
+    marketingName: "Publicité",
+    marketingDesc: "Google AdSense : personnalisation des annonces et mesure de leur performance. Aucune annonce n'est encore diffusée sur ce site.",
     pushName: "Notifications push",
     pushDesc: "Alerte navigateur à chaque nouvel article (2 par semaine). Le navigateur demandera confirmation. Révocable à tout moment.",
     save: "Enregistrer mes choix",
@@ -28,7 +30,7 @@ const consentCopy = {
   en: {
     brand: "A Left-Hander's Blog",
     title: "We respect your privacy",
-    intro: "This site uses <strong>audience measurement</strong> cookies to understand what readers are interested in. <strong>Push notifications</strong> are independent of cookies and entirely optional.",
+    intro: "This site uses <strong>audience measurement</strong> and, eventually, <strong>advertising</strong> cookies to understand what readers are interested in. <strong>Push notifications</strong> are independent of cookies and entirely optional.",
     acceptAll: "Accept all",
     rejectAll: "Reject all",
     customize: "Customize my choices",
@@ -38,6 +40,8 @@ const consentCopy = {
     alwaysOn: "Always on",
     analyticsName: "Audience measurement",
     analyticsDesc: "Google Analytics: see how many people read the blog and which articles are most popular.",
+    marketingName: "Advertising",
+    marketingDesc: "Google AdSense: ad personalization and performance measurement. No ads are served on this site yet.",
     pushName: "Push notifications",
     pushDesc: "Browser alert for each new article (2 per week). The browser will ask for confirmation. Revocable at any time.",
     save: "Save my choices",
@@ -47,7 +51,7 @@ const consentCopy = {
   "pt-br": {
     brand: "Blog de um Canhoto",
     title: "Respeitamos a sua privacidade",
-    intro: "Este site usa cookies de <strong>medição de audiência</strong> para entender o que interessa aos leitores. As <strong>notificações push</strong> são independentes dos cookies e totalmente opcionais.",
+    intro: "Este site usa cookies de <strong>medição de audiência</strong> e, no futuro, de <strong>publicidade</strong> para entender o que interessa aos leitores. As <strong>notificações push</strong> são independentes dos cookies e totalmente opcionais.",
     acceptAll: "Aceitar tudo",
     rejectAll: "Recusar tudo",
     customize: "Personalizar minhas escolhas",
@@ -57,6 +61,8 @@ const consentCopy = {
     alwaysOn: "Sempre ativo",
     analyticsName: "Medição de audiência",
     analyticsDesc: "Google Analytics: entender quantas pessoas leem o blog e quais artigos despertam mais interesse.",
+    marketingName: "Publicidade",
+    marketingDesc: "Google AdSense: personalização de anúncios e medição de desempenho. Nenhum anúncio é exibido neste site ainda.",
     pushName: "Notificações push",
     pushDesc: "Alerta do navegador a cada novo artigo (2 por semana). O navegador pedirá confirmação. Revogável a qualquer momento.",
     save: "Salvar minhas escolhas",
@@ -66,7 +72,7 @@ const consentCopy = {
   nl: {
     brand: "Blog van een Linkshandige",
     title: "We respecteren je privacy",
-    intro: "Deze site gebruikt cookies voor <strong>publieksmeting</strong> om te begrijpen wat lezers interesseert. <strong>Pushmeldingen</strong> staan los van cookies en zijn volledig optioneel.",
+    intro: "Deze site gebruikt cookies voor <strong>publieksmeting</strong> en, later, <strong>advertenties</strong> om te begrijpen wat lezers interesseert. <strong>Pushmeldingen</strong> staan los van cookies en zijn volledig optioneel.",
     acceptAll: "Alles accepteren",
     rejectAll: "Alles weigeren",
     customize: "Mijn keuzes aanpassen",
@@ -76,6 +82,8 @@ const consentCopy = {
     alwaysOn: "Altijd actief",
     analyticsName: "Publieksmeting",
     analyticsDesc: "Google Analytics: zien hoeveel mensen de blog lezen en welke artikelen het populairst zijn.",
+    marketingName: "Advertenties",
+    marketingDesc: "Google AdSense: advertentiepersonalisatie en prestatiemeting. Er worden nog geen advertenties getoond op deze site.",
     pushName: "Pushmeldingen",
     pushDesc: "Browsermelding bij elk nieuw artikel (2 per week). De browser vraagt om bevestiging. Op elk moment intrekbaar.",
     save: "Mijn keuzes opslaan",
@@ -184,6 +192,21 @@ const privacyHref = "/fr/politique-confidentialite/";
       <label class="consent-option">
         <span class="consent-option__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11v2a2 2 0 002 2h1l2 5h2l-1.5-5H10l8 4V6l-8 4H6a2 2 0 00-2 2z"/>
+            <path d="M18 9.5v5"/>
+          </svg>
+        </span>
+        <span class="consent-option__body">
+          <span class="consent-option__name">{c.marketingName}</span>
+          <span class="consent-option__desc">{c.marketingDesc}</span>
+        </span>
+        <input type="checkbox" id="cookie-marketing" class="consent-switch-input" />
+        <span class="consent-switch" aria-hidden="true"></span>
+      </label>
+
+      <label class="consent-option">
+        <span class="consent-option__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
             <path d="M6 9a6 6 0 0112 0c0 4.5 1.8 5.8 1.8 5.8H4.2S6 13.5 6 9z"/><path d="M10 19a2 2 0 004 0"/>
           </svg>
         </span>
@@ -254,8 +277,7 @@ const privacyHref = "/fr/politique-confidentialite/";
     function writeConsent(payload) {
       var normalized = {
         analytics: Boolean(payload.analytics),
-        // Plus de régie publicitaire : marketing toujours false (catégorie retirée de l'UI).
-        marketing: false,
+        marketing: Boolean(payload.marketing),
         notifications: Boolean(payload.notifications),
         updatedAt: new Date().toISOString(),
       };
@@ -267,9 +289,11 @@ const privacyHref = "/fr/politique-confidentialite/";
     /* ── Formulaire ───────────────────────────────────────── */
     function syncForm(consent) {
       var a = document.getElementById("cookie-analytics");
+      var m = document.getElementById("cookie-marketing");
       var n = document.getElementById("cookie-notifications");
-      if (!a || !n) return;
+      if (!a || !m || !n) return;
       a.checked = Boolean(consent && consent.analytics);
+      m.checked = Boolean(consent && consent.marketing);
       n.checked = Boolean(consent && consent.notifications);
     }
 
@@ -316,6 +340,7 @@ const privacyHref = "/fr/politique-confidentialite/";
       var saveBtn    = document.getElementById("consent-save");
       var manageBtn  = document.getElementById("cookie-manage");
       var analyticsI = document.getElementById("cookie-analytics");
+      var marketingI = document.getElementById("cookie-marketing");
       var notifI     = document.getElementById("cookie-notifications");
 
       var current = readConsent();
@@ -332,18 +357,19 @@ const privacyHref = "/fr/politique-confidentialite/";
       }
 
       bindClick(acceptBtn, function () {
-        writeConsent({ analytics : true, notifications : true });
+        writeConsent({ analytics : true, marketing : true, notifications : true });
         hideModal();
       });
 
       bindClick(rejectBtn, function () {
-        writeConsent({ analytics : false, notifications : false });
+        writeConsent({ analytics : false, marketing : false, notifications : false });
         hideModal();
       });
 
       bindClick(saveBtn, function () {
         writeConsent({
           analytics:     analyticsI ? analyticsI.checked : false,
+          marketing:     marketingI ? marketingI.checked : false,
           notifications: notifI     ? notifI.checked     : false,
         });
         hideModal();
