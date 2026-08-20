@@ -372,10 +372,13 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
     align-items: stretch;
     height: 100%;
   }
+  /* Ratio 3:2 conservé (et non `auto` + hauteur pleine) : la vignette est produite en
+     3:2, l'étirer à la hauteur de la carte en rognait un quart. Le corps de carte
+     s'aligne sur la hauteur de l'image plutôt que l'inverse. */
   .card.lead .card-thumb-wrap {
-    aspect-ratio: auto;
-    height: 100%;
-    min-height: 300px;
+    aspect-ratio: 3 / 2;
+    height: auto;
+    align-self: center;
     border-radius: var(--radius-lg) 0 0 var(--radius-lg);
   }
   .card.lead .card-body {
@@ -396,11 +399,12 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
     -webkit-line-clamp: 4;
   }
 
-  /* Sous 980px : l'article de tête repasse en vertical, vignette 16/9. */
+  /* Sous 980px : l'article de tête repasse en vertical. Vignette toujours en 3:2 —
+     le 16/9 d'avant coupait les côtés de l'image. */
   @media (max-width: 980px) {
     .card.lead .card-link--thumb { grid-template-columns: 1fr; }
     .card.lead .card-thumb-wrap {
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 3 / 2;
       height: auto;
       min-height: 0;
       border-radius: var(--radius-lg) var(--radius-lg) 0 0;

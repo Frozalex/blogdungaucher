@@ -25,6 +25,8 @@ const WM_H = 96;       // hauteur du cavalier en px sur le master
 const WM_MARGIN = 34;  // marge depuis les bords bas et gauche
 const WM_OPACITY = 0.34; // renforcé le 17/08/2026 : à 0.18 le cavalier ne se voyait pas
 const INK = "#1c1a16";
+/** Crème de la charte : fond des bandes du dérivé OG. */
+const PAPER = { r: 0xfa, g: 0xf8, b: 0xef };
 const WEIGHT_WARN = 200 * 1024;
 
 const args = process.argv.slice(2);
@@ -139,9 +141,19 @@ if (q !== quality) console.log(`qualité abaissée ${quality} → ${q} pour teni
 // seconde fois à la qualité par défaut — perte de qualité et poids gonflé.
 writeFileSync(heroPath, heroBuf);
 
-// Le dérivé OG est recadré DANS le master : le filigrane et le sujet restent alignés.
-await sharp(heroBuf)
-  .extract({ left: 0, top: Math.round((HERO_H - OG_H) / 2), width: OG_W, height: OG_H })
+// Dérivé OG : la vignette entière est posée sur un fond crème au format 1,91:1 imposé
+// par les réseaux, plutôt que recadrée. Un recadrage centré amputait 21 % de l'image —
+// or c'est cette version-là qui circule sur Pinterest et les partages.
+// `fit: "inside"` : la vignette est réduite pour tenir ENTIÈREMENT dans le cadre
+// (945x630 pour un 3:2), avec des bandes crème sur les côtés. Un simple resize sur la
+// largeur déborderait du canevas et se ferait rogner — le recadrage qu'on veut éviter.
+await sharp({
+  create: { width: OG_W, height: OG_H, channels: 3, background: PAPER },
+})
+  .composite([{
+    input: await sharp(heroBuf).resize(OG_W, OG_H, { fit: "inside" }).toBuffer(),
+    gravity: "centre",
+  }])
   .webp({ quality: q })
   .toFile(ogPath);
 

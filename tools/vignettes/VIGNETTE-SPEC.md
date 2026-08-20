@@ -40,6 +40,37 @@ carte. Le dérivé OG en 1,91:1 se coupe ensuite proprement en rognant haut et b
 > l'extension `.png` alors que ce sont des **JPEG**. Elles sont donc recadrées sur la
 > carte. À reprendre au fil de l'eau, pas en urgence.
 
+### Les conteneurs d'affichage sont tous en 3:2
+
+Règle posée le 19/08/2026 : **aucun emplacement ne recadre la vignette**. Tous les
+conteneurs adoptent le 3:2 du fichier, plutôt que l'inverse.
+
+| Emplacement | Fichier | Était | Est |
+|---|---|---|---|
+| Carte de grille | `ArticleCard.astro` | 3:2 | 3:2 |
+| Carte de tête (accueil) | `ArticleCard.astro` | hauteur pleine (1,10) | 3:2 |
+| Hero d'article ×4 langues | `pages/*/blog/[slug].astro` | panneau plein (1,05) | 3:2 |
+| Carrousel « à lire aussi » ×4 | `pages/*/blog/[slug].astro` | 16:9 | 3:2 |
+| Image de partage OG | `scripts/*-vignette.mjs` | recadrage 1,91:1 | letterbox crème |
+
+Deux pièges rencontrés :
+
+- Le panneau du hero était en `inset: 0`, donc **étiré à la hauteur de la bande**. Lui
+  donner un `aspect-ratio` ne suffit pas : il faut retirer l'étirement
+  (`inset: 50% 0 auto auto` + `transform: translateY(-50%)`), sinon un titre long fait
+  grandir la bande et le recadrage revient.
+- La hauteur de bande est calée sur le panneau (`min-height: calc(56vw * 2 / 3)`) pour
+  qu'il n'y ait ni bande vide ni recadrage. Comme c'est un *minimum*, un titre long
+  agrandit la bande : l'image reste entière, avec du crème autour — invisible, le fond
+  des vignettes étant lui-même crème.
+
+Le dérivé OG est **letterboxé sur le crème** et non recadré : le 1,91:1 imposé par les
+réseaux amputait 21 % de l'image, or c'est cette version qui circule sur Pinterest.
+Régénération de tout le lot : `node scripts/regen-og-letterbox.mjs`.
+
+Reste les **9 anciennes vignettes pixel art en 16:9**, qui perdent ~16 % dans un
+conteneur 3:2. Elles disparaîtront à mesure qu'elles seront remplacées.
+
 ### Zone de sécurité
 
 Le sujet principal doit tenir dans le **rectangle central 3:2 amputé de 12 % en haut et
