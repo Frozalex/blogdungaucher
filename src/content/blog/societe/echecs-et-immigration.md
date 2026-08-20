@@ -4,7 +4,7 @@ excerpt: >-
   Pour un réfugié qui ne parle pas la langue du pays d'accueil, l'échiquier peut être la première conversation réussie.
   Pour un immigré qui cherche sa place, le club d'échecs peut être le premier espace communautaire. L'histoire des
   échecs est en partie une histoire de migrations et d'intégration.
-publishDate: "2026-11-02"
+publishDate: "2026-11-26"
 category: societe
 featured: false
 featuredRank: 99

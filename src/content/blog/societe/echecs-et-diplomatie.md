@@ -4,7 +4,7 @@ excerpt: >-
   Fischer contre Spassky en 1972, Kasparov contre des chefs d'État, les clubs d'échecs comme vecteurs de réconciliation
   en zones de conflit. L'histoire et la psychologie de la négociation révèlent pourquoi l'échiquier fascine autant les
   diplomates que les stratèges militaires.
-publishDate: "2026-08-31"
+publishDate: "2026-09-03"
 category: societe
 featured: false
 featuredRank: 99

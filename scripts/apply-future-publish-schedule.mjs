@@ -139,6 +139,8 @@ if (dryRun) {
 }
 
 for (const a of assignments) {
+  // Date inchangée : le remplacement serait un no-op, indiscernable d’un échec de regex.
+  if (a.next === a.old) continue;
   const nextRaw = a.raw.replace(
     /^publishDate:\s*["'][^"']+["']/m,
     `publishDate: "${a.next}"`,

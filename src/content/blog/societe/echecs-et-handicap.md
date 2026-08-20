@@ -4,7 +4,7 @@ excerpt: >-
   Des joueurs aveugles calculent des variantes profondes en s'appuyant sur le toucher. Des joueurs atteints de
   tétraplégie déplacent les pièces avec leur regard. Des personnes avec autisme trouvent aux échecs une structure que le
   monde social ne leur offre pas. L'échiquier est l'un des rares espaces où le handicap cesse d'être une barrière.
-publishDate: "2026-10-05"
+publishDate: "2026-10-22"
 category: societe
 featured: false
 featuredRank: 99

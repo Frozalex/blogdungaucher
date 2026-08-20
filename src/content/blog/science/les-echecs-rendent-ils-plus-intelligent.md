@@ -1,7 +1,7 @@
 ---
 title: "Les échecs rendent-ils vraiment plus intelligent ? Ce que dit la science"
 excerpt: "On lit partout que les échecs développent l'intelligence. Mais que disent vraiment les méta-analyses ? Spoiler : le transfert cognitif est beaucoup plus limité qu'on ne le prétend."
-publishDate: "2027-01-04"
+publishDate: "2027-01-07"
 category: "science"
 featured: false
 featuredRank: 99

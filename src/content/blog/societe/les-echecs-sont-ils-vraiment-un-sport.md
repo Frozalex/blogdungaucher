@@ -1,7 +1,7 @@
 ---
 title: "Les échecs sont-ils vraiment un sport ? Le débat scientifique"
 excerpt: "Le CIO les a reconnus comme sport en 1999. Et pourtant, l'idée crée toujours un malaise. Que disent vraiment la physiologie, la sociologie et le droit sur la sportivité des échecs ?"
-publishDate: "2027-01-11"
+publishDate: "2027-01-14"
 category: "societe"
 featured: false
 featuredRank: 99

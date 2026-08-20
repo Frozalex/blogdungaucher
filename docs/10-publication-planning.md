@@ -30,15 +30,21 @@ Ce script **vérifie** que le calendrier respecte la règle. Pour tous les artic
 - chaque date tombe bien un **lundi ou un jeudi** ;
 - chaque semaine a **exactement 2** articles (jamais 1, jamais 3) ;
 - le nombre total est **pair** (sinon il manquerait un article quelque part) ;
-- aucune date n'est utilisée deux fois.
+- aucune date n'est utilisée deux fois ;
+- les deux articles d'une semaine sont de **rubriques différentes** (jamais Science le lundi *et* le jeudi).
 
 **Ce contrôle fait partie du build** (`npm run build`). Si la règle est violée, **le build échoue** et signale précisément le problème. C'est un filet de sécurité : impossible de mettre en ligne un calendrier bancal.
 
 ### `scripts/apply-future-publish-schedule.mjs` — le réorganisateur
 Si on veut **(ré)assigner proprement** les dates de tous les articles à venir sur la grille lundi/jeudi, ce script le fait automatiquement. On le lance d'abord en mode **`--dry-run`** (« essai à blanc » : il montre ce qu'il *ferait* sans rien modifier), puis en vrai si le résultat convient. Il ne touche **jamais** aux articles déjà publiés.
 
-### `scripts/interleave-future-themes.mjs` — l'alternateur de rubriques
-Problème possible : la file des prochains articles pourrait être « 10 articles Science d'affilée ». Ce script **réordonne** quels articles tombent sur quelles dates (sans changer l'ensemble des dates) pour **alterner les rubriques** (Science, Esprit, Société…) et offrir de la variété au lecteur. Lui aussi a un mode `--dry-run`.
+### `scripts/pair-week-themes.mjs` — l'appariement de la semaine
+Problème : une série éditoriale entière (la série Psychologie, par exemple) est presque mono-rubrique. Fusionnée dans la file, elle produit des semaines où le lundi *et* le jeudi sortent en Esprit. Ce script **réordonne** quels articles tombent sur quelles dates (sans changer l'ensemble des dates) jusqu'à ce qu'aucune semaine ne répète une rubrique.
+
+Sa particularité : il part de l'**ordre chronologique en place** — qui encode l'ordre de priorité voulu — et ne fait que les permutations **strictement nécessaires**. Il choisit aussi, dans chaque semaine, lequel des deux articles passe le lundi, de façon à ne pas répéter non plus la rubrique entre un jeudi et le lundi suivant. Un article peut être **épinglé** au dernier créneau (`PINNED_LAST`) : c'est le cas du hub de la série Psychologie, qui doit fermer la série. Mode `--dry-run` disponible.
+
+### `scripts/interleave-future-themes.mjs` — l'alternateur global (historique)
+Même famille, approche plus brutale : il étale chaque rubrique uniformément sur toute la timeline (positions fractionnaires) sans se soucier des semaines. Il bouscule donc l'ordre éditorial. Conservé pour repartir de zéro sur une file devenue très mono-thématique ; au quotidien, préférer `pair-week-themes.mjs`.
 
 ## Un détail technique important : la lecture récursive
 
@@ -51,7 +57,10 @@ Avant de publier de nouveaux articles, on lance :
 ```
 npm run check:publish-weekly       # vérifie la grille
 npm run apply:publish-schedule -- --dry-run   # voit la réorganisation proposée
+npm run pair:week-themes -- --dry-run         # voit l'appariement des rubriques
 ```
+
+L'ordre compte : `apply:publish-schedule` **pose les dates**, `pair:week-themes` décide ensuite **quel article va sur quelle date**. Faire l'inverse annulerait l'appariement.
 
 Un message « OK : N billets sur la grille, 2 par semaine » confirme que tout est bon.
 

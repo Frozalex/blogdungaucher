@@ -13,6 +13,7 @@
     "check:publish-weekly": "node scripts/check-publish-weekly.mjs",
     "check:link-timing": "node scripts/check-internal-link-timing.mjs",
     "apply:publish-schedule": "node scripts/apply-future-publish-schedule.mjs",
+    "pair:week-themes": "node scripts/pair-week-themes.mjs",
     "preview": "astro preview",
     "pdfs": "node scripts/generate-pdfs.mjs",
     "build:pdfs": "npm run build && npm run pdfs",

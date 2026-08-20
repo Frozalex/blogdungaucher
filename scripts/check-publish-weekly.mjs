@@ -3,7 +3,9 @@
  * nombre total de ces billets : **pair** (sinon impossible d’avoir 2 par semaine partout) ;
  * chaque date : lundi ou jeudi (UTC) ;
  * chaque semaine ISO contenant au moins un de ces billets : **exactement 2** billets ;
- * pas deux billets le même jour.
+ * pas deux billets le même jour ;
+ * les 2 billets d’une semaine : **rubriques différentes** (jamais science le lundi
+ *   ET le jeudi). Réparation : `node scripts/pair-week-themes.mjs --dry-run`.
  *
  * Les billets avec publishDate < SCHEDULE_GRID_ANCHOR_MONDAY ne sont pas soumis à cette grille.
  *
@@ -61,7 +63,8 @@ for (const full of files) {
     console.error("publishDate manquant:", path.relative(dir, full));
     process.exit(1);
   }
-  rows.push({ slug: path.basename(full, ".md"), date: m[1] });
+  const c = raw.match(/^category:\s*["']?([a-z-]+)["']?/m);
+  rows.push({ slug: path.basename(full, ".md"), date: m[1], cat: c ? c[1] : null });
 }
 
 const anchor = SCHEDULE_GRID_ANCHOR_MONDAY;
@@ -111,6 +114,15 @@ for (const w of weeks) {
     errors++;
     console.error(`${w} : ${n} billet(s), attendu exactement 2.`);
     for (const r of list) console.error(`  ${r.date}  ${r.slug}`);
+    continue;
+  }
+  const [a, b] = list;
+  if (a.cat && b.cat && a.cat === b.cat) {
+    errors++;
+    console.error(
+      `${w} : lundi et jeudi sur la même rubrique « ${a.cat} » — attendu deux rubriques différentes.`,
+    );
+    for (const r of list) console.error(`  ${r.date}  ${r.slug}`);
   }
 }
 
@@ -125,10 +137,13 @@ for (const r of scheduled) {
 
 if (errors) {
   console.error(
-    `\n${errors} problème(s). Grille : exactement 2 billets / semaine ISO (lun. + jeu. UTC), ancrage ${anchor}.`,
+    `\n${errors} problème(s). Grille : exactement 2 billets / semaine ISO (lun. + jeu. UTC, rubriques différentes), ancrage ${anchor}.`,
   );
   console.error(
     `Constantes : RESCHEDULE_FROM=${RESCHEDULE_FROM}, SCHEDULE_GRID_ANCHOR_MONDAY=${anchor}.`,
+  );
+  console.error(
+    "Réparation : apply-future-publish-schedule.mjs (dates) puis pair-week-themes.mjs (rubriques), --dry-run d’abord.",
   );
   process.exit(1);
 }

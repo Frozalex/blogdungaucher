@@ -4,7 +4,7 @@ excerpt: >-
   La procrastination n'est pas un problème de gestion du temps. C'est un problème de régulation émotionnelle. Et
   l'échiquier, avec ses positions inconfortables, ses décisions forcées et ses pendules implacables : est l'un des
   meilleurs laboratoires pour comprendre et combattre l'évitement.
-publishDate: "2026-10-15"
+publishDate: "2026-11-16"
 category: esprit
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   Un joueur reste assis des heures sans bouger, et termine pourtant vidé, le cœur emballé, parfois plusieurs kilos en
   moins. Derrière l'image d'un jeu cérébral et sédentaire se cache une charge physiologique réelle, longtemps
   caricaturée par le mythe des « 6 000 calories ».
-publishDate: "2026-09-24"
+publishDate: "2026-10-08"
 category: science
 featured: false
 featuredRank: 99

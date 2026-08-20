@@ -4,7 +4,7 @@ excerpt: >-
   Quand un joueur d'échecs entre en état de flux, le temps s'arrête, les distractions disparaissent, et le jeu devient
   le seul réel. Ce n'est pas un accident ni un mythe : c'est une expérience psychologique documentée, reproductible, et
   que tu peux cultiver délibérément.
-publishDate: "2026-08-27"
+publishDate: "2026-08-31"
 category: esprit
 featured: false
 featuredRank: 99

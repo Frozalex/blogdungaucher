@@ -4,7 +4,7 @@ excerpt: >-
   En 2022, Magnus Carlsen accuse implicitement Hans Niemann de tricher et se retire d'un tournoi. Ce qui suit : un
   rapport de 72 pages, un procès à 100 millions de dollars, une communauté divisée : révèle quelque chose de plus
   profond que la fraude d'un joueur.
-publishDate: "2026-10-19"
+publishDate: "2026-11-12"
 category: societe
 featured: false
 featuredRank: 99

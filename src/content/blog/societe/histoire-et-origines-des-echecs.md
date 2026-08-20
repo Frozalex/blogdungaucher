@@ -4,7 +4,7 @@ excerpt: >-
   Aujourd'hui, la dame est la pièce la plus puissante de l'échiquier. Pendant près de mille ans, elle fut la plus
   faible. Cette inversion résume à elle seule l'histoire des échecs : un jeu né dans l'Inde du VIᵉ siècle, réécrit par
   chaque civilisation qu'il a traversée.
-publishDate: "2026-11-19"
+publishDate: "2026-12-31"
 category: societe
 featured: false
 featuredRank: 99
