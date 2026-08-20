@@ -209,6 +209,11 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- ── AdSense : chargement inconditionnel du SDK (exigé par Google pour la revue de site) ──
+         Le compte n'est pas encore approuvé : aucune unité <ins class="adsbygoogle"> n'est posée,
+         ce script ne sert donc aucune pub tant que l'approbation n'est pas obtenue. -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244325018333025" crossorigin="anonymous"></script>
+
     <meta name="description" content={description} />
     <meta name="author" content="Le Gaucher" />
     <meta name="generator" content={Astro.generator} />
@@ -404,11 +409,9 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
       (() => {
         const CONSENT_KEY = "blogdungaucher.cookieConsent.v1";
         const GA_MEASUREMENT_ID = "G-D31YHTHQT5";
-        const ADS_CLIENT = "ca-pub-1244325018333025";
 
         const state = {
           analyticsLoaded: false,
-          adsLoaded: false,
         };
 
         function readConsent() {
@@ -449,15 +452,6 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
           loadScript(`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`);
           window.gtag("js", new Date());
           window.gtag("config", GA_MEASUREMENT_ID);
-        }
-
-        function enableAds() {
-          if (state.adsLoaded) return;
-          state.adsLoaded = true;
-          loadScript(
-            `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADS_CLIENT}`,
-            { crossorigin: "anonymous" },
-          );
         }
 
         function urlBase64ToUint8Array(base64String) {
@@ -514,11 +508,6 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         function applyConsent(consent) {
           if (!consent) return;
           if (consent.analytics) enableAnalytics();
-          // Aucune régie display active pour l'instant (AdSense et Ezoic refusés) :
-          // le SDK AdSense n'est PAS chargé. La monétisation passe par l'affiliation
-          // (liens statiques, sans script tiers ni consentement). Réactiver
-          // enableAds() ici si une régie display est acceptée un jour.
-          void enableAds;
           if (consent.notifications) {
             enableNtfyPush();
           } else {

@@ -8,8 +8,6 @@ interface Props {
 }
 const { lang = "fr" } = Astro.props;
 
-const blogHref =
-  lang === "en" ? "/en/blog/" : lang === "pt-br" ? "/pt-br/blog/" : lang === "nl" ? "/nl/blog/" : "/fr/blog/";
 const aboutHref =
   lang === "en" ? "/en/about/" : lang === "pt-br" ? "/pt-br/about/" : lang === "nl" ? "/nl/about/" : "/fr/about/";
 
@@ -88,7 +86,6 @@ const requiredNote = lang === "en"
 
       <div class="footer-col-group">
         <h2 class="footer-col-label" data-t="footer.exploreTitle">{tt("footer.exploreTitle", "Explorer")}</h2>
-        <a href={blogHref} data-t="footer.allArticles">{tt("footer.allArticles", "Tous les articles")}</a>
         <a href={aboutHref} data-t="footer.editorial">{tt("footer.editorial", "Ligne éditoriale")}</a>
         {lang === "fr" && <a href="/fr/glossaire/">Glossaire</a>}
         {lang === "fr" && <a href="/fr/infographie/">Infographies</a>}
