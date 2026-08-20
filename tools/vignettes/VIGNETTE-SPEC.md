@@ -59,6 +59,11 @@ Deux pièges rencontrés :
   donner un `aspect-ratio` ne suffit pas : il faut retirer l'étirement
   (`inset: 50% 0 auto auto` + `transform: translateY(-50%)`), sinon un titre long fait
   grandir la bande et le recadrage revient.
+- Le ratio étant figé, **la seule façon de donner de la hauteur à l'image est de
+  l'élargir**. Le panneau est passé de 56 % à 72 % pour retrouver la présence qu'avait
+  la version recadrée (686 px de haut contre 761 avant, au lieu de 534). Le titre est
+  fait pour déborder dessus (`hero-content { max-width: 64% }`), l'élargissement va donc
+  dans le sens du design.
 - La hauteur de bande est calée sur le panneau (`min-height: calc(56vw * 2 / 3)`) pour
   qu'il n'y ait ni bande vide ni recadrage. Comme c'est un *minimum*, un titre long
   agrandit la bande : l'image reste entière, avec du crème autour — invisible, le fond

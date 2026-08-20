@@ -368,7 +368,7 @@ const structuredData = [
   .article-hero {
     position: relative;
     /* Hauteur calée sur le panneau photo (56 % de large, ratio 3:2). */
-    min-height: calc(56vw * 2 / 3);
+    min-height: calc(72vw * 2 / 3);
     margin: 1.25rem 0 0;
     display: flex;
     align-items: stretch;
@@ -377,7 +377,7 @@ const structuredData = [
     /* Pas d'`inset: 0` : le panneau ne doit pas s'étirer à la hauteur de la bande,
        sinon un titre long finit par recadrer l'image. */
     position: absolute; inset: 50% 0 auto auto; transform: translateY(-50%);
-    width: 56%; aspect-ratio: 3 / 2; margin: 0;
+    width: 72%; aspect-ratio: 3 / 2; margin: 0;
     overflow: hidden; z-index: 0;
   }
   .hero-photo { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -571,8 +571,8 @@ const structuredData = [
   }
 
   @media (max-width: 1100px) {
-    .article-hero { min-height: calc(50vw * 2 / 3); }
-    .hero-photo-wrap { width: 50%; }
+    .article-hero { min-height: calc(64vw * 2 / 3); }
+    .hero-photo-wrap { width: 64%; }
     .hero-content { max-width: 70%; }
   }
 
