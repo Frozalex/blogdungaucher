@@ -211,6 +211,7 @@ export const navigationLinks = [
   { label: "À propos", href: "/fr/about/" },
   { label: "Dissertations", href: "/fr/dissertations/" },
   { label: "Articles", href: "/fr/blog/" },
+  { label: "Séries", href: "/fr/series/" },
 ] as const;
 
 /** Date de lancement de la section PT-BR. Avant cette date, aucune page /pt-br/ n'est générée. */
@@ -264,6 +265,11 @@ export const staticRoutes = [
   "/fr/dissertations/",
   "/fr/about/",
   "/fr/glossaire/",
+  // Séries : FR-only (le sitemap les traite comme telles puisque leur équivalent /en/
+  // n'est pas dans enStaticRoutes). Ajouter ici chaque nouvelle page de série.
+  "/fr/series/",
+  "/fr/series/psychologie/",
+  "/fr/series/moteur-python/",
   "/fr/mentions-legales/",
   "/fr/politique-confidentialite/",
 ] as const;

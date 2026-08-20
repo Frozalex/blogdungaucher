@@ -2,6 +2,7 @@
 title: "5 biais cognitifs qui te font blunder aux échecs"
 excerpt: "Tes blunders ne sont pas tous des erreurs de calcul. Beaucoup sont des erreurs de perception, de raisonnement, de jugement. Ces 5 biais cognitifs documentés par la psychologie sont responsables d'une large partie des erreurs que tu commets à l'échiquier."
 publishDate: "2026-07-27"
+updatedDate: "2026-11-23"
 category: "esprit"
 featured: false
 featuredRank: 99
@@ -14,6 +15,8 @@ seoDescription: "Les 5 biais cognitifs qui causent le plus de blunders aux éche
 ---
 
 Tu as tout calculé  -  enfin, tu le croyais. Puis le blunder : « comment j’ai pu rater ça ? » Rarement par manque de temps au calculateur ; presque toujours parce que **le cerveau a tranché avec un biais**, pas avec une erreur de variante. La science cognitive a cartographié ces dérives ; cinq d’entre elles collent particulièrement à l’échiquier.
+
+*Cet article sert de porte d'entrée à notre série sur la psychologie appliquée aux échecs. Chaque biais renvoie, quand il existe, vers son article dédié.*
 
 ![Cinq biais cognitifs (effet Einstellung, biais de confirmation, ancrage, excès de confiance, effet de disponibilité) convergent vers le blunder ; le méta-biais de se croire immunisé les aggrave.](/images/5-biais-01-overview.svg)
 
@@ -37,13 +40,13 @@ L'imagerie cérébrale (IRMf) a montré que dans ces conditions, les zones cér�
 
 Le [biais de confirmation](https://fr.wikipedia.org/wiki/Biais_de_confirmation) est la tendance à rechercher, interpréter et mémoriser les informations d'une façon qui confirme ses croyances préexistantes, tout en ignorant les informations contradictoires.
 
-[Daniel Kahneman](https://fr.wikipedia.org/wiki/Daniel_Kahneman), dans *Thinking, Fast and Slow*, le décrit comme l'un des biais cognitifs les plus universels et les plus résistants à la correction. Il affecte aussi bien les novices que les experts dans leur domaine.
+[Daniel Kahneman](https://fr.wikipedia.org/wiki/Daniel_Kahneman), dans *Thinking, Fast and Slow*, le décrit comme l'un des biais cognitifs les plus universels et les plus résistants à la correction.
 
-**Comment il se manifeste en partie :** Tu décides que l'adversaire prépare une attaque sur l'aile-roi. Tu commences à analyser les coups en filtrant les informations à travers cette hypothèse. Les coups qui confirment ton hypothèse sont remarqués et mémorisés. Les coups qui indiquent une stratégie complètement différente (par exemple une attaque au centre ou un plan de minorité) sont sous-pondérés ou ignorés. Tu joues contre une menace que l'adversaire ne préparait pas, en laissant libre cours à sa vraie intention.
+**Comment il se manifeste en partie :** Tu décides que l'adversaire prépare une attaque sur l'aile-roi. Tu analyses ensuite les coups en filtrant tout à travers cette hypothèse. Ceux qui la confirment sont remarqués et mémorisés ; ceux qui indiquent une stratégie complètement différente sont sous-pondérés ou ignorés. Tu joues contre une menace qu'il ne préparait pas, en laissant libre cours à sa vraie intention.
 
-Ce biais est amplifié dans les positions où tu as investi du temps dans une analyse. Plus tu as calculé une idée, plus tu as du mal à l'abandonner même face à des preuves contraires.
+**Comment le contrer :** Après avoir formulé une hypothèse sur l'intention adverse, chercher activement les preuves qu'elle est fausse. « Qu'est-ce qui me montrerait que j'ai tort ? » est la question défensive de référence.
 
-**Comment le contrer :** Pratiquer l'analyse "à rebours". Après avoir formulé une hypothèse sur l'intention adverse, chercher activement les preuves qu'elle est fausse. "Qu'est-ce qui me montrerait que j'ai tort ?" est une question défensive contre le biais de confirmation. Se forcer à trouver au moins un argument contre son propre plan avant de le jouer.
+> **Article dédié à venir :** un article consacré au biais de confirmation développera la mécanique de ce biais **dans le calcul de variantes**, et présentera l'étude de Cowley et Byrne (2004) menée directement sur des joueurs d'échecs. Son résultat nuance l'idée reçue selon laquelle experts et novices seraient touchés à égalité : dans leur domaine d'expertise, les maîtres réfutent leurs propres plans là où les novices les confirment.
 
 ## Biais n°3 : l'ancrage (les premiers coups te piègent dans une évaluation)
 
@@ -56,6 +59,8 @@ Le [biais d'ancrage](https://fr.wikipedia.org/wiki/Ancrage_(biais_cognitif)) est
 L'ancrage de l'ouverture est un cas particulier. Si tu joues une variante considérée "égale" dans la théorie, tu tends à évaluer la position comme égale même quand des coups précis ont créé un déséquilibre réel. L'ancre théorique résiste à la mise à jour positionnelle.
 
 **Comment le contrer :** S'entraîner à "effacer" périodiquement son évaluation et la reconstruire depuis la position actuelle, sans référence à l'évaluation précédente. Se demander : "Si je voyais cette position pour la première fois, sans savoir comment j'y suis arrivé, comment l'évaluerais-je ?" Cette question force une évaluation sans ancre.
+
+> **Article dédié à venir :** un article consacré au biais d'ancrage traitera spécifiquement de l'ancre chiffrée, celle que produisent l'évaluation du moteur et le classement de l'adversaire.
 
 ## Biais n°4 : l'excès de confiance (la surconfiance après une série de bons coups)
 

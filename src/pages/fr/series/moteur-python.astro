@@ -1,0 +1,259 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { serieMoteurPhases, serieMoteurTotal } from "../../../data/serie-moteur-python";
+import { absoluteUrl, buildBreadcrumbJsonLd, formatDate, getAllPosts } from "../../../utils/blog";
+
+// getAllPosts() ne renvoie que les articles dont la publishDate est passée : la série se
+// dévoile au fil des semaines. Les articles à venir restent listés, sans lien, pour que le
+// parcours complet soit lisible dès le départ.
+const published = await getAllPosts();
+const bySlug = new Map(published.map((post) => [post.id.split("/").pop() ?? post.id, post]));
+
+const phases = serieMoteurPhases.map((phase) => ({
+  ...phase,
+  items : phase.items.map((item) => {
+    const post = bySlug.get(item.slug);
+    return {
+      ...item,
+      post,
+      href : post ? `/fr/blog/${item.slug}/` : null,
+      date : post ? formatDate(post.data.publishDate) : null,
+      excerpt : post?.data.excerpt ?? null,
+    };
+  }),
+}));
+
+const publishedCount = phases.reduce(
+  (total, phase) => total + phase.items.filter((item) => item.post).length,
+  0,
+);
+
+const canonPath = "/fr/series/moteur-python/";
+const title = "Série : programmer son moteur d'échecs en Python";
+const description =
+  `Une série de ${serieMoteurTotal} articles pour construire un moteur d'échecs de zéro en Python : échiquier, coups légaux, perft, évaluation, minimax, alpha-bêta, UCI. Du code qui tourne et un test vérifiable à chaque étape.`;
+
+const structuredData = [
+  buildBreadcrumbJsonLd([
+    { name : "Accueil", path : "/fr/" },
+    { name : "Séries", path : "/fr/series/" },
+    { name : "Moteur en Python", path : canonPath },
+  ]),
+  {
+    "@context" : "https://schema.org",
+    "@type" : "CollectionPage",
+    name : title,
+    description,
+    url : absoluteUrl(canonPath),
+    inLanguage : "fr-FR",
+    mainEntity : {
+      "@type" : "ItemList",
+      numberOfItems : publishedCount,
+      itemListElement : phases
+        .flatMap((phase) => phase.items)
+        .filter((item) => item.href)
+        .map((item, index) => ({
+          "@type" : "ListItem",
+          position : index + 1,
+          url : absoluteUrl(item.href as string),
+          name : item.post?.data.title ?? item.label,
+        })),
+    },
+  },
+];
+---
+
+<BaseLayout
+  title={`${title} | Blog d’un Gaucher`}
+  description={description}
+  canonicalPath={canonPath}
+  structuredData={structuredData}
+  omitEnDeAlternateLinks
+  omitPtBrNlAlternates
+>
+  <main class="serie">
+    <header class="serie__hero">
+      <p class="serie__eyebrow">Série en {serieMoteurTotal} articles</p>
+      <h1>Programmer son moteur d’échecs en Python</h1>
+      <p class="serie__lede">
+        Construire un moteur de zéro, article après article : représenter l’échiquier, générer les
+        coups légaux, évaluer une position, chercher le meilleur coup, et finir par le brancher dans
+        une vraie interface. Chaque étape livre du code qui tourne.
+      </p>
+      <p class="serie__lede">
+        La particularité de cette série tient en un mot : <strong>vérifiable</strong>. La correction du
+        générateur de coups se prouve par <em>perft</em>, en comparant à des valeurs de référence
+        publiées. La force du moteur se mesure contre Stockfish bridé. À chaque article, tu sais si
+        ton code est juste, et de combien tu as progressé.
+      </p>
+      <p class="serie__progress">
+        <strong>{publishedCount}</strong> article{publishedCount > 1 ? "s" : ""} publié{publishedCount > 1 ? "s" : ""}
+        sur {serieMoteurTotal}. Premier article le 13 juillet 2027.
+      </p>
+    </header>
+
+    {phases.map((phase) => (
+      <section class="phase" id={phase.id}>
+        <h2>{phase.titre}</h2>
+        <p class="phase__chapeau">{phase.chapeau}</p>
+        <ol class="phase__list">
+          {phase.items.map((item) => (
+            <li class:list={["item", { "item--soon" : !item.href }]}>
+              {item.href ? (
+                <a href={item.href}>
+                  <span class="item__title">{item.post?.data.title ?? item.label}</span>
+                  {item.excerpt && <span class="item__excerpt">{item.excerpt}</span>}
+                  <span class="item__meta">
+                    <span class="item__check">{item.verification}</span>
+                    <span class="item__date">{item.date}</span>
+                  </span>
+                </a>
+              ) : (
+                <div>
+                  <span class="item__title">{item.label}</span>
+                  <span class="item__meta">
+                    <span class="item__check">{item.verification}</span>
+                    <span class="item__date">à venir</span>
+                  </span>
+                </div>
+              )}
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </main>
+</BaseLayout>
+
+<style>
+  .serie {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+  }
+
+  .serie__hero {
+    max-width: 46rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .serie__eyebrow {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 0.75rem;
+  }
+
+  .serie__hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+  }
+
+  .serie__lede {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+
+  .serie__progress {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    background: var(--surface-warm);
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+
+  .phase {
+    margin-bottom: 3rem;
+  }
+
+  .phase h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    margin-bottom: 0.4rem;
+  }
+
+  .phase__chapeau {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    max-width: 44rem;
+  }
+
+  .phase__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .item > a,
+  .item > div {
+    display: block;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color var(--motion-fast) var(--ease-out),
+      transform var(--motion-fast) var(--ease-out);
+  }
+
+  .item > a:hover,
+  .item > a:focus-visible {
+    border-color: var(--green-border);
+    transform: translateX(2px);
+  }
+
+  .item--soon > div {
+    background: transparent;
+    border-style: dashed;
+    opacity: 0.6;
+  }
+
+  .item__title {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.02rem;
+    line-height: 1.35;
+  }
+
+  .item__excerpt {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text-dim);
+  }
+
+  .item__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  /* Ce que le lecteur pourra vérifier lui-même à la fin de l'article. */
+  .item__check {
+    font-size: 0.75rem;
+    padding: 0.12rem 0.5rem;
+    border: 1px solid var(--green-border);
+    border-radius: var(--radius-pill);
+    color: var(--green);
+  }
+
+  .item__date {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+  }
+</style>
