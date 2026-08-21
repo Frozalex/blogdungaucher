@@ -1,0 +1,7 @@
+---
+import ContactPage from "../../../components/ContactPage.astro";
+import { PT_BR_LAUNCH_DATE } from "../../../data/site";
+
+if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/contact/", 302);
+---
+<ContactPage lang="pt-br" />

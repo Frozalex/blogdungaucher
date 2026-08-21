@@ -1,0 +1,915 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../utils/blog";
+import { siteConfig } from "../data/site";
+import { swapLangPrefix, type SiteLang } from "../utils/lang-paths";
+
+const { lang = "fr" } = Astro.props as { lang?: SiteLang };
+
+const EMAIL = "contact@blogdungaucher.com";
+const CHESS_URL = "https://www.chess.com/member/le_gaucher";
+
+/** Les pages légales n'existent qu'en FR : toutes les langues y pointent (cf. Footer). */
+const PRIVACY_HREF = "/fr/politique-confidentialite/";
+
+type Copy = {
+  homeLabel: string;
+  breadcrumb: string;
+  seoTitle: string;
+  seoDescription: string;
+  /** Titre du hero, encadré par les chevrons de la maquette. */
+  heroTitle: string;
+  formTitle: string;
+  fieldName: string;
+  fieldEmail: string;
+  fieldSubject: string;
+  fieldMessage: string;
+  subjectPlaceholder: string;
+  /** Options du menu Sujet : servent de préfixe d'objet dans le mailto. */
+  subjects: string[];
+  submit: string;
+  submitHint: string;
+  errRequired: string;
+  errEmail: string;
+  cardPill: string;
+  cardIntro: string;
+  infoTitle: string;
+  emailRow: string;
+  siteRow: string;
+  delayRow: string;
+  delayValue: string;
+  langRow: string;
+  langValue: string;
+  noAddress: string;
+  followTitle: string;
+  chessLabel: string;
+  rssLabel: string;
+  aboutLabel: string;
+  aboutLine: [string, string];
+  privacy: [string, string, string];
+};
+
+const COPY: Record<SiteLang, Copy> = {
+  fr: {
+    homeLabel: "Accueil",
+    breadcrumb: "Contact",
+    seoTitle: "Contact | Blog d'un Gaucher",
+    seoDescription:
+      "Contacter le Blog d'un Gaucher : proposer un sujet d'article, signaler une erreur, poser une question sur les échecs ou discuter d'un partenariat.",
+    heroTitle: "Contact",
+    formTitle: "Écrire un message",
+    fieldName: "Nom",
+    fieldEmail: "Adresse email",
+    fieldSubject: "Sujet",
+    fieldMessage: "Ton message",
+    subjectPlaceholder: "Choisis un sujet",
+    subjects: [
+      "Proposition de sujet",
+      "Correction sur un article",
+      "Question sur un article",
+      "Presse / partenariat",
+      "Autre",
+    ],
+    submit: "Préparer le message",
+    submitHint:
+      "Le bouton ouvre ton logiciel de mail avec le message déjà rempli. Rien n'est envoyé depuis cette page.",
+    errRequired: "Merci de remplir ce champ.",
+    errEmail: "Adresse email invalide.",
+    cardPill: "En direct avec l'auteur",
+    cardIntro:
+      "Pas de service client, pas de réponse automatique. Les messages arrivent dans ma boîte et j'y réponds moi-même, en général en quelques jours.",
+    infoTitle: "Informations de contact",
+    emailRow: "Email",
+    siteRow: "Site",
+    delayRow: "Délai de réponse",
+    delayValue: "48 à 108 heures",
+    langRow: "Langues",
+    langValue: "Français, anglais",
+    noAddress:
+      "Blog édité à titre personnel : les coordonnées postales ne sont pas publiées, conformément aux mentions légales.",
+    followTitle: "Me suivre",
+    chessLabel: "Chess.com",
+    rssLabel: "Flux RSS",
+    aboutLabel: "À propos",
+    aboutLine: ["Tu cherches qui écrit tout ça ? La page", "détaille le parcours et la ligne éditoriale."],
+    privacy: [
+      "Ton adresse et ton message servent uniquement à te répondre. Ils ne sont ni revendus, ni ajoutés à la newsletter sans ton accord. Voir la",
+      "politique de confidentialité",
+      ".",
+    ],
+  },
+
+  en: {
+    homeLabel: "Home",
+    breadcrumb: "Contact",
+    seoTitle: "Contact | A Left-Hander's Blog",
+    seoDescription:
+      "Get in touch with A Left-Hander's Blog: suggest an article topic, report a mistake, ask a question about chess, or discuss a partnership.",
+    heroTitle: "Contact",
+    formTitle: "Write a message",
+    fieldName: "Name",
+    fieldEmail: "Email address",
+    fieldSubject: "Subject",
+    fieldMessage: "Your message",
+    subjectPlaceholder: "Pick a subject",
+    subjects: [
+      "Topic suggestion",
+      "Correction on an article",
+      "Question about an article",
+      "Press / partnership",
+      "Other",
+    ],
+    submit: "Prepare the message",
+    submitHint:
+      "This button opens your mail app with the message already filled in. Nothing is sent from this page.",
+    errRequired: "Please fill in this field.",
+    errEmail: "Invalid email address.",
+    cardPill: "Straight to the author",
+    cardIntro:
+      "No support desk, no auto-reply. Messages land in my inbox and I answer them myself, usually within a few days.",
+    infoTitle: "Contact information",
+    emailRow: "Email",
+    siteRow: "Website",
+    delayRow: "Response time",
+    delayValue: "48 to 108 hours",
+    langRow: "Languages",
+    langValue: "French, English",
+    noAddress:
+      "This blog is published in a personal capacity: no postal address is disclosed, in line with the legal notices.",
+    followTitle: "Follow me",
+    chessLabel: "Chess.com",
+    rssLabel: "RSS feed",
+    aboutLabel: "About",
+    aboutLine: ["Wondering who writes all this? The", "page covers the background and the editorial line."],
+    privacy: [
+      "Your address and message are used only to reply to you. They are never sold, nor added to the newsletter without your consent. See the",
+      "privacy policy",
+      ".",
+    ],
+  },
+
+  "pt-br": {
+    homeLabel: "Início",
+    breadcrumb: "Contato",
+    seoTitle: "Contato | Blog de um Canhoto",
+    seoDescription:
+      "Entre em contato com o Blog de um Canhoto: sugerir um tema, apontar um erro, tirar uma dúvida sobre xadrez ou falar sobre uma parceria.",
+    heroTitle: "Contato",
+    formTitle: "Escrever uma mensagem",
+    fieldName: "Nome",
+    fieldEmail: "Endereço de e-mail",
+    fieldSubject: "Assunto",
+    fieldMessage: "Sua mensagem",
+    subjectPlaceholder: "Escolha um assunto",
+    subjects: [
+      "Sugestão de tema",
+      "Correção em um artigo",
+      "Dúvida sobre um artigo",
+      "Imprensa / parceria",
+      "Outro",
+    ],
+    submit: "Preparar a mensagem",
+    submitHint:
+      "O botão abre seu aplicativo de e-mail com a mensagem já preenchida. Nada é enviado a partir desta página.",
+    errRequired: "Preencha este campo, por favor.",
+    errEmail: "Endereço de e-mail inválido.",
+    cardPill: "Direto com o autor",
+    cardIntro:
+      "Sem atendimento ao cliente, sem resposta automática. As mensagens chegam à minha caixa e eu mesmo respondo, normalmente em alguns dias.",
+    infoTitle: "Informações de contato",
+    emailRow: "E-mail",
+    siteRow: "Site",
+    delayRow: "Prazo de resposta",
+    delayValue: "48 a 108 horas",
+    langRow: "Idiomas",
+    langValue: "Francês, inglês",
+    noAddress:
+      "Blog publicado a título pessoal: nenhum endereço postal é divulgado, conforme os avisos legais.",
+    followTitle: "Me acompanhar",
+    chessLabel: "Chess.com",
+    rssLabel: "Feed RSS",
+    aboutLabel: "Sobre",
+    aboutLine: ["Quer saber quem escreve tudo isso? A página", "detalha a trajetória e a linha editorial."],
+    privacy: [
+      "Seu endereço e sua mensagem servem apenas para responder a você. Não são vendidos nem adicionados à newsletter sem o seu consentimento. Veja a",
+      "política de privacidade",
+      ".",
+    ],
+  },
+
+  nl: {
+    homeLabel: "Home",
+    breadcrumb: "Contact",
+    seoTitle: "Contact | Blog van een Linkshandige",
+    seoDescription:
+      "Neem contact op met Blog van een Linkshandige: een onderwerp voorstellen, een fout melden, een vraag over schaken stellen of over een samenwerking praten.",
+    heroTitle: "Contact",
+    formTitle: "Een bericht schrijven",
+    fieldName: "Naam",
+    fieldEmail: "E-mailadres",
+    fieldSubject: "Onderwerp",
+    fieldMessage: "Je bericht",
+    subjectPlaceholder: "Kies een onderwerp",
+    subjects: [
+      "Voorstel voor een onderwerp",
+      "Correctie op een artikel",
+      "Vraag over een artikel",
+      "Pers / samenwerking",
+      "Anders",
+    ],
+    submit: "Bericht voorbereiden",
+    submitHint:
+      "Deze knop opent je mailprogramma met het bericht al ingevuld. Er wordt niets vanaf deze pagina verstuurd.",
+    errRequired: "Vul dit veld in.",
+    errEmail: "Ongeldig e-mailadres.",
+    cardPill: "Rechtstreeks met de auteur",
+    cardIntro:
+      "Geen klantenservice, geen automatisch antwoord. Berichten komen in mijn inbox en ik beantwoord ze zelf, meestal binnen een paar dagen.",
+    infoTitle: "Contactgegevens",
+    emailRow: "E-mail",
+    siteRow: "Website",
+    delayRow: "Reactietijd",
+    delayValue: "48 tot 108 uur",
+    langRow: "Talen",
+    langValue: "Frans, Engels",
+    noAddress:
+      "Deze blog wordt op persoonlijke titel uitgegeven: er wordt geen postadres gepubliceerd, conform de juridische kennisgeving.",
+    followTitle: "Volg mij",
+    chessLabel: "Chess.com",
+    rssLabel: "RSS-feed",
+    aboutLabel: "Over",
+    aboutLine: ["Benieuwd wie dit allemaal schrijft? De pagina", "beschrijft het traject en de redactionele lijn."],
+    privacy: [
+      "Je adres en je bericht worden alleen gebruikt om je te antwoorden. Ze worden niet verkocht en niet zonder je toestemming aan de nieuwsbrief toegevoegd. Zie het",
+      "privacybeleid",
+      ".",
+    ],
+  },
+};
+
+const c = COPY[lang] ?? COPY.fr;
+const canonicalPath = swapLangPrefix("/fr/contact/", lang);
+const aboutHref = swapLangPrefix("/fr/about/", lang);
+/** Le flux RSS n'existe qu'en FR et EN. */
+const rssHref = lang === "en" ? "/en/rss.xml" : "/rss.xml";
+const inLanguage =
+  lang === "en" ? "en-US" : lang === "pt-br" ? "pt-BR" : lang === "nl" ? "nl-NL" : "fr-FR";
+
+const contactPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": `${siteConfig.siteUrl}${canonicalPath}#contactpage`,
+  url: `${siteConfig.siteUrl}${canonicalPath}`,
+  name: c.breadcrumb,
+  description: c.seoDescription,
+  inLanguage,
+  mainEntity: {
+    "@type": "Organization",
+    "@id": `${siteConfig.siteUrl}/#publisher`,
+    name: siteConfig.name,
+    url: siteConfig.siteUrl,
+    email: EMAIL,
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      email: EMAIL,
+      availableLanguage: ["fr", "en", "pt-BR", "nl"],
+    },
+  },
+};
+---
+<BaseLayout
+  title={c.seoTitle}
+  description={c.seoDescription}
+  canonicalPath={canonicalPath}
+  lang={lang}
+  structuredData={[
+    buildBreadcrumbJsonLd([
+      { name: c.homeLabel, path: swapLangPrefix("/", lang) },
+      { name: c.breadcrumb, path: canonicalPath },
+    ]),
+    contactPageJsonLd,
+  ]}
+>
+  <section class="contact">
+    <div class="container">
+
+      {/* ── Hero centré, chevrons + filet pointillé (repris de la maquette) ── */}
+      <header class="c-hero fade-up">
+        <div class="c-hero__line">
+          <span class="c-hero__chev c-hero__chev--l" aria-hidden="true"></span>
+          <h1 class="c-hero__title">{c.heroTitle}</h1>
+          <span class="c-hero__chev c-hero__chev--r" aria-hidden="true"></span>
+        </div>
+        <span class="c-hero__rule" aria-hidden="true"></span>
+      </header>
+
+      <div class="c-layout">
+
+        {/* ── Panneau sombre : le formulaire ── */}
+        <div class="c-panel fade-up" style="--motion-delay: 80ms;">
+          <h2 class="c-panel__title">{c.formTitle}</h2>
+
+          <form class="c-form" data-contact-form data-email={EMAIL} novalidate>
+            <div class="c-field">
+              <label class="c-label" for="cf-name">{c.fieldName}</label>
+              <input class="c-input" id="cf-name" name="name" type="text" autocomplete="name" required />
+            </div>
+
+            <div class="c-field">
+              <label class="c-label" for="cf-email">{c.fieldEmail}</label>
+              <input class="c-input" id="cf-email" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="c-field">
+              <label class="c-label" for="cf-subject">{c.fieldSubject}</label>
+              <select class="c-input c-select" id="cf-subject" name="subject" required>
+                <option value="" disabled selected>{c.subjectPlaceholder}</option>
+                {c.subjects.map((s) => <option value={s}>{s}</option>)}
+              </select>
+            </div>
+
+            <div class="c-field">
+              <label class="c-label" for="cf-message">{c.fieldMessage}</label>
+              <textarea class="c-input c-textarea" id="cf-message" name="message" rows="6" required></textarea>
+            </div>
+
+            <p class="c-error" data-form-error aria-live="polite" hidden></p>
+
+            <button class="c-submit" type="submit">{c.submit}</button>
+            <p class="c-hint">{c.submitHint}</p>
+          </form>
+        </div>
+
+        {/* ── Carte flottante : infos de contact ── */}
+        <aside class="c-card fade-up" style="--motion-delay: 160ms;">
+          <p class="c-card__pill">{c.cardPill}</p>
+
+          <div class="c-card__body">
+            <p class="c-card__intro">{c.cardIntro}</p>
+
+            <h2 class="c-card__title">{c.infoTitle}</h2>
+            <dl class="c-info">
+              <div class="c-info__row">
+                <dt>{c.emailRow}</dt>
+                <dd><a href={`mailto:${EMAIL}`}>{EMAIL}</a></dd>
+              </div>
+              <div class="c-info__row">
+                <dt>{c.siteRow}</dt>
+                <dd>blogdungaucher.com</dd>
+              </div>
+              <div class="c-info__row">
+                <dt>{c.delayRow}</dt>
+                <dd>{c.delayValue}</dd>
+              </div>
+              <div class="c-info__row">
+                <dt>{c.langRow}</dt>
+                <dd>{c.langValue}</dd>
+              </div>
+            </dl>
+
+            <p class="c-card__note">{c.noAddress}</p>
+
+            <h2 class="c-card__title c-card__title--follow">{c.followTitle}</h2>
+            <div class="c-social">
+              <a class="c-social__link" href={CHESS_URL} target="_blank" rel="noopener noreferrer">
+                {/* Marque Chess.com (simple-icons, CC0). */}
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0a3.85 3.85 0 0 0-3.875 3.846A3.84 3.84 0 0 0 9.73 6.969l-2.79 1.85c0 .622.144 1.114.434 1.649H9.83c-.014.245-.014.549-.014.925 0 .025.003.048.006.071-.064 1.353-.507 3.472-3.62 5.842-.816.625-1.423 1.495-1.806 2.533a.33.33 0 0 0-.045.084 8.124 8.124 0 0 0-.39 2.516c0 .1.216 1.561 8.038 1.561s8.038-1.46 8.038-1.561c0-2.227-.824-4.048-2.24-5.133-4.034-3.08-3.586-5.74-3.644-6.838h2.458c.29-.535.434-1.027.434-1.649l-2.79-1.836a3.86 3.86 0 0 0 1.604-3.123A3.873 3.873 0 0 0 13.445.275c-.004-.002-.01.004-.015.004A3.76 3.76 0 0 0 12 0Z"/>
+                </svg>
+                {c.chessLabel}
+              </a>
+              <a class="c-social__link" href={rssHref}>
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="6.2" cy="17.8" r="2.2"/>
+                  <path d="M4 10.2v3a6.8 6.8 0 0 1 6.8 6.8h3A9.8 9.8 0 0 0 4 10.2Zm0-6v3A15.8 15.8 0 0 1 19.8 23h3A18.8 18.8 0 0 0 4 4.2Z"/>
+                </svg>
+                {c.rssLabel}
+              </a>
+            </div>
+
+            <p class="c-card__about">
+              {c.aboutLine[0]} <a href={aboutHref}>{c.aboutLabel}</a> {c.aboutLine[1]}
+            </p>
+          </div>
+        </aside>
+
+      </div>
+
+      <p class="c-privacy fade-up" style="--motion-delay: 200ms;">
+        {c.privacy[0]} <a href={PRIVACY_HREF}>{c.privacy[1]}</a>{c.privacy[2]}
+      </p>
+
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  /* Le site est en `output: "static"` : aucun endpoint pour recevoir un POST. Le formulaire
+     assemble donc un lien mailto: (objet + corps préremplis) et laisse le client mail de
+     l'utilisateur faire l'envoi. Le libellé du bouton et la note sous le formulaire le disent
+     explicitement pour ne pas laisser croire à un envoi depuis la page.
+
+     Initialisé au niveau module ET sur astro:page-load : au tout premier chargement,
+     astro:page-load n'arrive qu'au window load, ce qui laisserait le formulaire inerte
+     pendant plusieurs centaines de ms sur connexion lente. */
+  const MSG = {
+    fr: { required: "Merci de remplir tous les champs.", email: "Adresse email invalide." },
+    en: { required: "Please fill in every field.", email: "Invalid email address." },
+    "pt-br": { required: "Preencha todos os campos.", email: "Endereço de e-mail inválido." },
+    nl: { required: "Vul alle velden in.", email: "Ongeldig e-mailadres." },
+  } as const;
+
+  function bindContactForm() {
+    document.querySelectorAll<HTMLFormElement>("[data-contact-form]").forEach((form) => {
+      if (form.dataset.bound === "1") return;
+      form.dataset.bound = "1";
+
+      const email = form.dataset.email!;
+      const err = form.querySelector<HTMLElement>("[data-form-error]")!;
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const lang = document.documentElement.lang || "fr";
+        const T = MSG[lang as keyof typeof MSG] ?? MSG.fr;
+
+        const get = (n: string) =>
+          (form.querySelector<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>(
+            `[name="${n}"]`,
+          )!).value.trim();
+
+        const name = get("name");
+        const from = get("email");
+        const subject = get("subject");
+        const message = get("message");
+
+        const fail = (text: string) => {
+          err.textContent = text;
+          err.hidden = false;
+        };
+
+        if (!name || !from || !subject || !message) return fail(T.required);
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(from)) return fail(T.email);
+
+        err.hidden = true;
+
+        // Le corps reprend l'expéditeur : si la personne écrit depuis une autre adresse que
+        // celle saisie, on garde quand même une trace de celle qu'elle veut voir utilisée.
+        const body = `${message}\n\n--\n${name}\n${from}`;
+        const href =
+          `mailto:${email}` +
+          `?subject=${encodeURIComponent(`[${subject}] ${name}`)}` +
+          `&body=${encodeURIComponent(body)}`;
+
+        window.location.href = href;
+      });
+    });
+  }
+
+  bindContactForm();
+  document.addEventListener("astro:page-load", bindContactForm);
+</script>
+
+<style>
+  /* Panneau sombre : teinte dérivée du vert du site plutôt que le cyan de la maquette,
+     pour rester dans la charte. */
+  .contact {
+    --panel: #2f4a3c;
+    --panel-soft: rgba(255, 255, 255, 0.09);
+    --scallop: 15px;
+    padding: 3rem 0 5rem;
+  }
+
+  :global([data-theme="dark"]) .contact {
+    --panel: #23342c;
+  }
+
+  .contact .container {
+    max-width: 68rem;
+  }
+
+  /* ── Hero ── */
+  .c-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .c-hero__line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+  }
+
+  .c-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(2.1rem, 6.4vw, 3.9rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--panel);
+    margin: 0;
+  }
+
+  :global([data-theme="dark"]) .c-hero__title {
+    color: var(--text-main);
+  }
+
+  /* Chevrons pleins de la maquette, en CSS pur (pas d'image à charger). */
+  .c-hero__chev {
+    width: 0;
+    height: 0;
+    border-top: 0.62rem solid transparent;
+    border-bottom: 0.62rem solid transparent;
+    flex: none;
+  }
+
+  .c-hero__chev--l {
+    border-left: 0.85rem solid var(--green);
+  }
+
+  .c-hero__chev--r {
+    border-right: 0.85rem solid var(--green);
+  }
+
+  .c-hero__rule {
+    display: block;
+    width: min(24rem, 70%);
+    height: 2px;
+    margin: 0.9rem auto 0;
+    background-image: linear-gradient(to right, var(--border-strong) 55%, transparent 55%);
+    background-size: 11px 2px;
+    background-repeat: repeat-x;
+  }
+
+  /* ── Grille : panneau + carte chevauchante ── */
+  .c-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 0;
+  }
+
+  /* ── Panneau formulaire ── */
+  .c-panel {
+    background: var(--panel);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    padding: 2.2rem 2.2rem calc(2.2rem + var(--scallop));
+    /* Bosses arrondies en bas, comme la maquette : une bande de hauteur --scallop
+       n'est conservée que là où les demi-cercles la couvrent. */
+    -webkit-mask:
+      radial-gradient(circle at 50% 0, #000 var(--scallop), #0000 calc(var(--scallop) + 0.5px))
+        50% 100% / calc(2 * var(--scallop)) var(--scallop) repeat-x,
+      linear-gradient(#000 0 0) 0 0 / 100% calc(100% - var(--scallop)) no-repeat;
+    mask:
+      radial-gradient(circle at 50% 0, #000 var(--scallop), #0000 calc(var(--scallop) + 0.5px))
+        50% 100% / calc(2 * var(--scallop)) var(--scallop) repeat-x,
+      linear-gradient(#000 0 0) 0 0 / 100% calc(100% - var(--scallop)) no-repeat;
+    /* La carte de droite passe par-dessus. */
+    margin-right: -3.5rem;
+  }
+
+  .c-panel__title {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 1.4rem;
+  }
+
+  /* ── Formulaire ── */
+  .c-field {
+    margin-bottom: 0.8rem;
+  }
+
+  .c-label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+    margin-bottom: 0.35rem;
+  }
+
+  .c-input {
+    width: 100%;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-main);
+    background: var(--surface);
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    padding: 0.72rem 0.85rem;
+    transition:
+      border-color var(--motion-fast) var(--ease-out),
+      box-shadow var(--motion-fast) var(--ease-out);
+  }
+
+  .c-input:focus-visible {
+    outline: none;
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px var(--green-light);
+  }
+
+  .c-select {
+    appearance: none;
+    /* Chevron dessiné en CSS : deux dégradés qui forment les deux branches. */
+    background-image:
+      linear-gradient(45deg, transparent 50%, currentColor 50%),
+      linear-gradient(135deg, currentColor 50%, transparent 50%);
+    background-position:
+      calc(100% - 1.05rem) calc(50% + 0.1rem),
+      calc(100% - 0.75rem) calc(50% + 0.1rem);
+    background-size: 0.3rem 0.3rem, 0.3rem 0.3rem;
+    background-repeat: no-repeat;
+    padding-right: 2.1rem;
+    cursor: pointer;
+  }
+
+  .c-select:invalid {
+    color: var(--text-dim);
+  }
+
+  .c-textarea {
+    resize: vertical;
+    min-height: 8.5rem;
+    line-height: 1.6;
+  }
+
+  .c-error {
+    background: rgba(255, 255, 255, 0.12);
+    border-left: 3px solid #ffb4a2;
+    border-radius: var(--radius-sm);
+    color: #ffd9d0;
+    font-size: 0.88rem;
+    padding: 0.55rem 0.75rem;
+    margin: 0.9rem 0 0;
+  }
+
+  .c-submit {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--panel);
+    background: #fff;
+    border: none;
+    border-radius: var(--radius-pill);
+    padding: 0.72rem 1.6rem;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    transition:
+      background-color var(--motion-fast) var(--ease-out),
+      transform var(--motion-fast) var(--ease-out);
+  }
+
+  .c-submit:hover {
+    background: var(--green);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+  .c-hint {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.82rem;
+    line-height: 1.55;
+    margin: 0.85rem 0 0;
+    max-width: 30rem;
+  }
+
+  /* ── Carte flottante ── */
+  .c-card {
+    position: relative;
+    z-index: 2;
+    margin-top: 3.2rem;
+  }
+
+  .c-card__pill {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-md);
+    font-family: var(--font-display);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-main);
+    padding: 0.6rem 1.3rem;
+    margin: 0 0 -0.7rem 1.4rem;
+  }
+
+  .c-card__body {
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-bottom: none;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    box-shadow: var(--shadow-md);
+    padding: 1.8rem 1.6rem calc(1.4rem + var(--scallop));
+    -webkit-mask:
+      radial-gradient(circle at 50% 0, #000 var(--scallop), #0000 calc(var(--scallop) + 0.5px))
+        50% 100% / calc(2 * var(--scallop)) var(--scallop) repeat-x,
+      linear-gradient(#000 0 0) 0 0 / 100% calc(100% - var(--scallop)) no-repeat;
+    mask:
+      radial-gradient(circle at 50% 0, #000 var(--scallop), #0000 calc(var(--scallop) + 0.5px))
+        50% 100% / calc(2 * var(--scallop)) var(--scallop) repeat-x,
+      linear-gradient(#000 0 0) 0 0 / 100% calc(100% - var(--scallop)) no-repeat;
+  }
+
+  .c-card__intro {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin: 0 0 1.5rem;
+  }
+
+  .c-card__title {
+    font-family: var(--font-display);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-main);
+    margin: 0 0 0.9rem;
+  }
+
+  .c-card__title--follow {
+    margin-top: 1.6rem;
+  }
+
+  .c-info {
+    margin: 0;
+  }
+
+  .c-info__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.6rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--border-soft);
+  }
+
+  .c-info__row:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .c-info dt {
+    flex: none;
+    min-width: 8.5rem;
+    font-size: 0.86rem;
+    color: var(--text-dim);
+  }
+
+  .c-info dd {
+    flex: 1 1 12rem;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    margin: 0;
+    word-break: break-word;
+  }
+
+  .c-info a {
+    color: var(--green);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--motion-fast) var(--ease-out);
+  }
+
+  .c-info a:hover {
+    border-bottom-color: var(--green);
+  }
+
+  .c-card__note {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    line-height: 1.55;
+    margin: 1rem 0 0;
+  }
+
+  .c-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .c-social__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.86rem;
+    font-weight: 500;
+    color: var(--text-main);
+    text-decoration: none;
+    background: var(--surface-warm);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-pill);
+    padding: 0.42rem 0.9rem;
+    transition:
+      border-color var(--motion-fast) var(--ease-out),
+      color var(--motion-fast) var(--ease-out);
+  }
+
+  .c-social__link:hover {
+    border-color: var(--green);
+    color: var(--green);
+  }
+
+  .c-card__about {
+    color: var(--text-muted);
+    font-size: 0.86rem;
+    line-height: 1.6;
+    margin: 1.5rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-soft);
+  }
+
+  .c-card__about a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .c-card__about a:hover {
+    color: var(--green);
+  }
+
+  /* ── Bas de page ── */
+  .c-privacy {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 44rem;
+    margin: 2.5rem auto 0;
+  }
+
+  .c-privacy a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .c-privacy a:hover {
+    color: var(--green);
+  }
+
+  /* ── Empilement : la carte passe sous le panneau ── */
+  @media (max-width: 900px) {
+    .c-layout {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    .c-panel {
+      margin-right: 0;
+    }
+
+    .c-card {
+      margin-top: 0;
+    }
+
+    .c-card__pill {
+      margin-left: 1rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .contact {
+      padding: 2rem 0 3.5rem;
+    }
+
+    .c-hero {
+      margin-bottom: 2.2rem;
+    }
+
+    .c-hero__line {
+      gap: 0.7rem;
+    }
+
+    .c-panel {
+      padding: 1.5rem 1.2rem calc(1.5rem + var(--scallop));
+    }
+
+    .c-card__body {
+      padding: 1.4rem 1.2rem calc(1.2rem + var(--scallop));
+    }
+
+    .c-info dt {
+      min-width: 100%;
+    }
+
+    .c-submit {
+      width: 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .c-submit:hover {
+      transform: none;
+    }
+  }
+</style>

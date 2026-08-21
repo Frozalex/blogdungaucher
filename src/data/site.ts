@@ -212,6 +212,7 @@ export const navigationLinks = [
   { label: "Dissertations", href: "/fr/dissertations/" },
   { label: "Articles", href: "/fr/blog/" },
   { label: "Séries", href: "/fr/series/" },
+  { label: "Contact", href: "/fr/contact/" },
 ] as const;
 
 /** Date de lancement de la section PT-BR. Avant cette date, aucune page /pt-br/ n'est générée. */
@@ -223,6 +224,7 @@ export const NL_LAUNCH_DATE = new Date("2026-09-01T06:00:00Z");
 export const ptBrNavigationLinks = [
   { label: "Sobre", href: "/pt-br/about/" },
   { label: "Artigos", href: "/pt-br/blog/" },
+  { label: "Contato", href: "/pt-br/contact/" },
 ] as const;
 
 export const ptBrStaticRoutes = [
@@ -232,11 +234,13 @@ export const ptBrStaticRoutes = [
   "/pt-br/esprit/",
   "/pt-br/societe/",
   "/pt-br/about/",
+  "/pt-br/contact/",
 ] as const;
 
 export const nlNavigationLinks = [
   { label: "Over", href: "/nl/about/" },
   { label: "Artikelen", href: "/nl/blog/" },
+  { label: "Contact", href: "/nl/contact/" },
 ] as const;
 
 export const nlStaticRoutes = [
@@ -246,12 +250,14 @@ export const nlStaticRoutes = [
   "/nl/esprit/",
   "/nl/societe/",
   "/nl/about/",
+  "/nl/contact/",
 ] as const;
 
 export const enNavigationLinks = [
   { label: "About", href: "/en/about/" },
   { label: "Dissertations", href: "/en/dissertations/" },
   { label: "Articles", href: "/en/blog/" },
+  { label: "Contact", href: "/en/contact/" },
 ] as const;
 
 
@@ -264,6 +270,7 @@ export const staticRoutes = [
   "/fr/grand-oral/",
   "/fr/dissertations/",
   "/fr/about/",
+  "/fr/contact/",
   "/fr/glossaire/",
   // Séries : FR-only (le sitemap les traite comme telles puisque leur équivalent /en/
   // n'est pas dans enStaticRoutes). Ajouter ici chaque nouvelle page de série.
@@ -282,5 +289,6 @@ export const enStaticRoutes = [
   "/en/societe/",
   "/en/dissertations/",
   "/en/about/",
+  "/en/contact/",
 ] as const;
 

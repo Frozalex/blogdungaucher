@@ -119,6 +119,7 @@ export const translations = {
       dissertations: "Dissertations",
       blog: "Tous les articles",
       about: "À propos",
+      contact: "Contact",
     },
   },
 
@@ -234,6 +235,7 @@ export const translations = {
       dissertations: "Dissertations",
       blog: "All articles",
       about: "About",
+      contact: "Contact",
     },
   },
   "pt-br": {
@@ -353,6 +355,7 @@ export const translations = {
       dissertations: "Dissertações",
       blog: "Todos os artigos",
       about: "Sobre",
+      contact: "Contato",
     },
   },
   nl: {
@@ -473,6 +476,7 @@ export const translations = {
       dissertations: "Verhandelingen",
       blog: "Alle artikelen",
       about: "Over",
+      contact: "Contact",
     },
   },
 } as const;

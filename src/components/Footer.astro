@@ -11,6 +11,11 @@ const { lang = "fr" } = Astro.props;
 const aboutHref =
   lang === "en" ? "/en/about/" : lang === "pt-br" ? "/pt-br/about/" : lang === "nl" ? "/nl/about/" : "/fr/about/";
 
+/** Contact : contrairement aux pages légales, la page existe dans les 4 langues. */
+const contactHref =
+  lang === "en" ? "/en/contact/" : lang === "pt-br" ? "/pt-br/contact/" : lang === "nl" ? "/nl/contact/" : "/fr/contact/";
+const contactLabel = lang === "pt-br" ? "Contato" : "Contact";
+
 const tLang: Lang = (["fr", "en", "pt-br", "nl"].includes(lang) ? lang : "fr") as Lang;
 const tt = (key: string, fallback: string) => {
   const v = t(tLang, key);
@@ -114,6 +119,7 @@ const requiredNote = lang === "en"
         <a href="/fr/mentions-legales/" data-t="footer.legal">{tt("footer.legal", "Mentions légales")}</a>
         <a href="/fr/politique-confidentialite/" data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
         <a href={aboutHref}>{lang === "en" ? "About" : lang === "pt-br" ? "Sobre" : lang === "nl" ? "Over" : "À propos"}</a>
+        <a href={contactHref}>{contactLabel}</a>
       </div>
     </div>
   </div>
