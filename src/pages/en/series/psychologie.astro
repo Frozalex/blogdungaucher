@@ -1,44 +1,68 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { seriePsychologieGrappes, seriePsychologieTotal } from "../../../data/serie-psychologie";
-import { absoluteUrl, buildBreadcrumbJsonLd, formatDate, getAllPosts } from "../../../utils/blog";
+import {
+  grappeText,
+  itemLabel,
+  seriePsychologieGrappes,
+  seriePsychologieTotal,
+} from "../../../data/serie-psychologie";
+import {
+  absoluteUrl,
+  buildBreadcrumbJsonLd,
+  filterPostsForLang,
+  formatDateForLang,
+  getAllPosts,
+  getLocalizedPostText,
+  getPostUrlEn,
+} from "../../../utils/blog";
 
-// getAllPosts() ne renvoie que les articles dont la publishDate est passée : la série se dévoile
-// donc au fil des semaines. Les articles à venir restent listés (sans lien) pour que l'ensemble
-// soit lisible en bloc dès le départ.
-const published = await getAllPosts();
+const LANG = "en" as const;
+
+// Même logique que la page FR : getAllPosts() ne renvoie que les articles déjà publiés, donc la
+// série se dévoile au fil des semaines. Les articles à venir restent listés sans lien.
+// Différence ici : le titre et l'extrait viennent de la traduction, et l'URL du slug localisé.
+const published = filterPostsForLang(await getAllPosts(), LANG);
 const bySlug = new Map(published.map((post) => [post.id.split("/").pop() ?? post.id, post]));
 
-const grappes = seriePsychologieGrappes.map((grappe) => ({
-  ...grappe,
-  items : grappe.items.map((item) => {
-    const post = bySlug.get(item.slug);
-    return {
-      ...item,
-      post,
-      href : post ? `/fr/blog/${item.slug}/` : null,
-      date : post ? formatDate(post.data.publishDate) : null,
-      excerpt : post?.data.excerpt ?? null,
-    };
-  }),
-}));
+const grappes = await Promise.all(
+  seriePsychologieGrappes.map(async (grappe) => ({
+    id : grappe.id,
+    ...grappeText(grappe, LANG),
+    items : await Promise.all(
+      grappe.items.map(async (item) => {
+        const post = bySlug.get(item.slug);
+        if (!post) {
+          return { ...item, href : null, date : null, title : itemLabel(item, LANG), excerpt : null };
+        }
+        const text = await getLocalizedPostText(post, LANG);
+        return {
+          ...item,
+          href : await getPostUrlEn(post),
+          date : formatDateForLang(post.data.publishDate, LANG),
+          title : text.title,
+          excerpt : text.excerpt,
+        };
+      }),
+    ),
+  })),
+);
 
 const publishedCount = grappes.reduce(
-  (total, grappe) => total + grappe.items.filter((item) => item.post).length,
+  (total, grappe) => total + grappe.items.filter((item) => item.href).length,
   0,
 );
 
-const canonPath = "/fr/series/psychologie/";
-const title = "Série : la psychologie appliquée aux échecs";
+const canonPath = "/en/series/psychologie/";
+const title = "Series: The Psychology of Chess";
 const description =
-  `Une série de ${seriePsychologieTotal} articles sur ce que la psychologie dit vraiment du joueur d'échecs : biais, mémoire, motivation, influence et statut. Chaque concept est confronté à sa critique.`;
+  `A ${seriePsychologieTotal}-article series on what psychology actually says about the chess player: bias, memory, motivation, influence and status. Every concept is set against its critique.`;
 
 // ItemList : rend la série citable comme un ensemble, et pas seulement article par article.
 const structuredData = [
   buildBreadcrumbJsonLd([
-    { name : "Accueil", path : "/fr/" },
-    { name : "Séries", path : "/fr/series/" },
-    { name : "Psychologie", path : canonPath },
+    { name : "Home", path : "/en/" },
+    { name : "Series", path : "/en/series/" },
+    { name : "Psychology", path : canonPath },
   ]),
   {
     "@context" : "https://schema.org",
@@ -46,7 +70,7 @@ const structuredData = [
     name : title,
     description,
     url : absoluteUrl(canonPath),
-    inLanguage : "fr-FR",
+    inLanguage : "en",
     mainEntity : {
       "@type" : "ItemList",
       numberOfItems : publishedCount,
@@ -57,7 +81,7 @@ const structuredData = [
           "@type" : "ListItem",
           position : index + 1,
           url : absoluteUrl(item.href as string),
-          name : item.post?.data.title ?? item.label,
+          name : item.title,
         })),
     },
   },
@@ -69,24 +93,24 @@ const structuredData = [
   description={description}
   canonicalPath={canonPath}
   structuredData={structuredData}
+  lang="en"
 >
   <main class="serie">
     <header class="serie__hero">
-      <p class="serie__eyebrow">Série en {seriePsychologieTotal} articles</p>
-      <h1>La psychologie appliquée aux échecs</h1>
+      <p class="serie__eyebrow">A series in {seriePsychologieTotal} articles</p>
+      <h1>The psychology of chess</h1>
       <p class="serie__lede">
-        Les échecs produisent une information rare : une défaite sans ambiguïté, sans coéquipier à qui
-        l’attribuer, sans part de hasard, publique et fréquente. C’est ce qui en fait le meilleur
-        terrain d’observation qui soit pour comprendre comment un cerveau traite ce qui le contredit.
+        Chess produces a rare kind of information: an unambiguous defeat, with no teammate to pin it
+        on, no element of luck, public and frequent. That is what makes it the best observation
+        ground there is for understanding how a brain handles what contradicts it.
       </p>
       <p class="serie__lede">
-        Chaque article part d’une scène de partie, cite l’étude fondatrice <strong>et sa critique</strong>,
-        et se termine par une chose à faire. Plusieurs classiques que tu crois connaître n’ont pas
-        survécu aux réplications : c’est dit à chaque fois.
+        Every article opens on a scene from a game, cites the founding study <strong>and its
+        critique</strong>, and ends with one thing to do. Several classics you think you know did not
+        survive replication: that gets said every time.
       </p>
       <p class="serie__progress">
-        <strong>{publishedCount}</strong> article{publishedCount > 1 ? "s" : ""} publié{publishedCount > 1 ? "s" : ""}
-        sur {seriePsychologieTotal}. Un nouveau chaque mardi.
+        <strong>{publishedCount}</strong> of {seriePsychologieTotal} article{seriePsychologieTotal > 1 ? "s" : ""} published.
       </p>
     </header>
 
@@ -99,7 +123,7 @@ const structuredData = [
             <li class:list={["item", { "item--pilier" : item.pilier, "item--soon" : !item.href }]}>
               {item.href ? (
                 <a href={item.href}>
-                  <span class="item__title">{item.post?.data.title ?? item.label}</span>
+                  <span class="item__title">{item.title}</span>
                   {item.excerpt && <span class="item__excerpt">{item.excerpt}</span>}
                   <span class="item__meta">
                     <span class="item__date">{item.date}</span>
@@ -107,9 +131,9 @@ const structuredData = [
                 </a>
               ) : (
                 <div>
-                  <span class="item__title">{item.label}</span>
+                  <span class="item__title">{item.title}</span>
                   <span class="item__meta">
-                    <span class="item__date">à venir</span>
+                    <span class="item__date">coming soon</span>
                   </span>
                 </div>
               )}
