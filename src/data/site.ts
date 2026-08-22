@@ -234,6 +234,8 @@ export const ptBrStaticRoutes = [
   "/pt-br/societe/",
   "/pt-br/about/",
   "/pt-br/contact/",
+  "/pt-br/series/",
+  "/pt-br/series/psychologie/",
 ] as const;
 
 export const nlNavigationLinks = [
@@ -269,8 +271,10 @@ export const staticRoutes = [
   "/fr/about/",
   "/fr/contact/",
   "/fr/glossaire/",
-  // Séries : FR-only (le sitemap les traite comme telles puisque leur équivalent /en/
-  // n'est pas dans enStaticRoutes). Ajouter ici chaque nouvelle page de série.
+  // Séries. `/fr/series/` et `/fr/series/psychologie/` ont désormais leur équivalent EN et
+  // pt-BR (cf. enStaticRoutes / ptBrStaticRoutes) : le sitemap les traite donc comme des pages
+  // traduites. `moteur-python` reste FR-only tant qu'il n'est pas traduit.
+  // Ajouter ici chaque nouvelle page de série.
   "/fr/series/",
   "/fr/series/psychologie/",
   "/fr/series/moteur-python/",
@@ -287,5 +291,7 @@ export const enStaticRoutes = [
   "/en/dissertations/",
   "/en/about/",
   "/en/contact/",
+  "/en/series/",
+  "/en/series/psychologie/",
 ] as const;
 

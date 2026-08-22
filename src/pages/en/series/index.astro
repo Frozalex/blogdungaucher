@@ -1,31 +1,44 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { series } from "../../../data/series";
-import { absoluteUrl, buildBreadcrumbJsonLd, getAllPosts } from "../../../utils/blog";
+import { seriePsychologieSlugs, seriePsychologieTotal } from "../../../data/serie-psychologie";
+import {
+  absoluteUrl,
+  buildBreadcrumbJsonLd,
+  filterPostsForLang,
+  getAllPosts,
+} from "../../../utils/blog";
 
-// Chaque série se dévoile au fil des semaines : on compte les articles réellement publiés.
-const published = await getAllPosts();
+/**
+ * Index des séries en anglais.
+ *
+ * On ne réutilise pas `data/series.ts` : ce registre liste aussi les séries qui n'existent qu'en
+ * français (moteur Python, etc.). Les annoncer ici pointerait vers des pages absentes ou du
+ * contenu français. Cette page ne liste donc que les séries réellement traduites, et gagnera une
+ * entrée quand une autre série le sera.
+ */
+const published = filterPostsForLang(await getAllPosts(), "en");
 const publishedSlugs = new Set(published.map((post) => post.id.split("/").pop() ?? post.id));
 
-const items = series
-  .slice()
-  .sort((a, b) => a.rank - b.rank)
-  .map((serie) => ({
-    ...serie,
-    published : (serie.slugs ?? []).filter((slug) => publishedSlugs.has(slug)).length,
-    /** Une série sans page d'index est annoncée mais pas encore ouverte. */
-    ouverte : Boolean(serie.href),
-  }));
+const items = [
+  {
+    title : "The psychology of chess",
+    lede :
+      "Bias, memory, motivation, influence, status: what the research actually says about the chess player. Every concept is set against its critique, and several classics do not survive it.",
+    href : "/en/series/psychologie/",
+    total : seriePsychologieTotal,
+    published : seriePsychologieSlugs.filter((slug) => publishedSlugs.has(slug)).length,
+  },
+];
 
-const canonPath = "/fr/series/";
-const title = "Les séries";
+const canonPath = "/en/series/";
+const title = "The series";
 const description =
-  "Les séries du blog : des ensembles d'articles conçus ensemble, publiés dans un ordre voulu, et pensés pour être lus comme un tout plutôt qu'un par un.";
+  "The blog's series: sets of articles designed together, published in a deliberate order, and meant to be read as a whole rather than one by one.";
 
 const structuredData = [
   buildBreadcrumbJsonLd([
-    { name : "Accueil", path : "/fr/" },
-    { name : "Séries", path : canonPath },
+    { name : "Home", path : "/en/" },
+    { name : "Series", path : canonPath },
   ]),
   {
     "@context" : "https://schema.org",
@@ -33,20 +46,16 @@ const structuredData = [
     name : title,
     description,
     url : absoluteUrl(canonPath),
-    inLanguage : "fr-FR",
-    // Seules les séries réellement ouvertes entrent dans l'ItemList : une entrée
-    // sans URL n'a pas de sens pour un moteur.
+    inLanguage : "en",
     mainEntity : {
       "@type" : "ItemList",
-      numberOfItems : items.filter((serie) => serie.ouverte).length,
-      itemListElement : items
-        .filter((serie) => serie.ouverte)
-        .map((serie, index) => ({
-          "@type" : "ListItem",
-          position : index + 1,
-          url : absoluteUrl(serie.href as string),
-          name : serie.title,
-        })),
+      numberOfItems : items.length,
+      itemListElement : items.map((serie, index) => ({
+        "@type" : "ListItem",
+        position : index + 1,
+        url : absoluteUrl(serie.href),
+        name : serie.title,
+      })),
     },
   },
 ];
@@ -57,20 +66,21 @@ const structuredData = [
   description={description}
   canonicalPath={canonPath}
   structuredData={structuredData}
+  lang="en"
 >
   <main class="series">
     <header class="series__hero">
-      <p class="series__eyebrow">Lectures au long cours</p>
-      <h1>Les séries</h1>
+      <p class="series__eyebrow">Long-form reading</p>
+      <h1>The series</h1>
       <p class="series__lede">
-        La plupart des articles de ce blog se lisent seuls. Certains sujets, eux, demandent un
-        ensemble : plusieurs textes conçus ensemble, publiés dans un ordre voulu, qui se répondent
-        et se complètent. C’est ce que rassemble cette page.
+        Most articles on this blog stand alone. Some subjects need a set: several texts designed
+        together, published in a deliberate order, answering and completing each other. That is what
+        this page gathers.
       </p>
     </header>
 
     <ul class="series__list">
-      {items.filter((serie) => serie.ouverte).map((serie) => {
+      {items.map((serie) => {
         const complete = serie.published >= serie.total;
         const progress = Math.round((serie.published / serie.total) * 100);
         return (
@@ -83,38 +93,16 @@ const structuredData = [
                   <span class="serie-card__fill" style={`width:${progress}%`}></span>
                 </div>
                 <p class="serie-card__count">
-                  <strong>{serie.published}</strong> sur {serie.total}
-                  {!complete && serie.cadence && <span> · {serie.cadence}</span>}
+                  <strong>{serie.published}</strong> of {serie.total}
+                  {!complete && <span> · in progress</span>}
                 </p>
               </div>
-              <span class="serie-card__cta">Voir la série</span>
+              <span class="serie-card__cta">View the series</span>
             </a>
           </li>
         );
       })}
     </ul>
-
-    {items.some((serie) => !serie.ouverte) && (
-      <section class="series__soon">
-        <h2 class="series__soon-title">En préparation</h2>
-        <p class="series__soon-lede">
-          Ces séries sont écrites ou en cours d’écriture. Elles s’ouvriront ici au fur et à mesure.
-        </p>
-        <ul class="series__list">
-          {items.filter((serie) => !serie.ouverte).map((serie) => (
-            <li class="serie-card serie-card--soon">
-              <div>
-                <h3 class="serie-card__title">{serie.title}</h3>
-                <p class="serie-card__lede">{serie.lede}</p>
-                <p class="serie-card__count">
-                  {serie.total} articles prévus
-                </p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </section>
-    )}
   </main>
 </BaseLayout>
 
@@ -233,45 +221,5 @@ const structuredData = [
 
   .serie-card > a:hover .serie-card__cta {
     text-decoration: underline;
-  }
-
-  /* ── Séries annoncées, pas encore ouvertes ── */
-  .series__soon {
-    margin-top: 3.5rem;
-    padding-top: 2.5rem;
-    border-top: 1px solid var(--border-soft);
-  }
-
-  .series__soon-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.2rem, 3vw, 1.5rem);
-    margin: 0 0 0.4rem;
-  }
-
-  .series__soon-lede {
-    color: var(--text-dim);
-    font-size: 0.95rem;
-    margin: 0 0 1.5rem;
-    max-width: 42rem;
-  }
-
-  /* Pas de <a> : l'entrée est volontairement non cliquable. */
-  .serie-card--soon > div {
-    display: block;
-    padding: 1.35rem 1.6rem;
-    border: 1px dashed var(--border-soft);
-    border-radius: var(--radius-lg);
-    background: transparent;
-  }
-
-  .serie-card--soon .serie-card__title {
-    font-size: clamp(1.1rem, 3vw, 1.35rem);
-    color: var(--text-muted);
-  }
-
-  .serie-card--soon .serie-card__lede {
-    font-size: 0.92rem;
-    margin-bottom: 0.75rem;
-    color: var(--text-dim);
   }
 </style>
