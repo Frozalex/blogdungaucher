@@ -207,11 +207,11 @@ export const categoryMap: Record<
   },
 };
 
+/** Articles, rubriques et séries sont regroupés dans le menu déroulant « Articles »
+ *  de la navbar (voir Navbar.astro) : ne pas les remettre en lien de premier niveau. */
 export const navigationLinks = [
   { label: "À propos", href: "/fr/about/" },
   { label: "Dissertations", href: "/fr/dissertations/" },
-  { label: "Articles", href: "/fr/blog/" },
-  { label: "Séries", href: "/fr/series/" },
   { label: "Contact", href: "/fr/contact/" },
 ] as const;
 
@@ -223,7 +223,6 @@ export const NL_LAUNCH_DATE = new Date("2026-09-01T06:00:00Z");
 
 export const ptBrNavigationLinks = [
   { label: "Sobre", href: "/pt-br/about/" },
-  { label: "Artigos", href: "/pt-br/blog/" },
   { label: "Contato", href: "/pt-br/contact/" },
 ] as const;
 
@@ -239,7 +238,6 @@ export const ptBrStaticRoutes = [
 
 export const nlNavigationLinks = [
   { label: "Over", href: "/nl/about/" },
-  { label: "Artikelen", href: "/nl/blog/" },
   { label: "Contact", href: "/nl/contact/" },
 ] as const;
 
@@ -256,7 +254,6 @@ export const nlStaticRoutes = [
 export const enNavigationLinks = [
   { label: "About", href: "/en/about/" },
   { label: "Dissertations", href: "/en/dissertations/" },
-  { label: "Articles", href: "/en/blog/" },
   { label: "Contact", href: "/en/contact/" },
 ] as const;
 

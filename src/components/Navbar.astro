@@ -109,8 +109,38 @@ const rubriques = categorySlugs
     href: lang === "fr" ? categoryMap[slug].href : swapLangPrefix(categoryMap[slug].href, lang),
     accent: categoryMap[slug].accent,
   }));
-const rubriquesLabel = lang === "en" ? "Sections" : lang === "pt-br" ? "Seções" : lang === "nl" ? "Rubrieken" : "Rubriques";
-const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
+/** Menu « Articles » : regroupe l'index du blog, les rubriques éditoriales et les séries,
+ *  qui occupaient auparavant trois entrées de premier niveau. « Tous les articles » reste
+ *  en tête, sinon /blog/ ne serait plus atteignable depuis la navbar. Les séries sont
+ *  FR-only (cf. staticRoutes), d'où l'ajout conditionnel. */
+const articlesLabel = lang === "pt-br" ? "Artigos" : lang === "nl" ? "Artikelen" : "Articles";
+const blogHref = swapLangPrefix("/fr/blog/", lang);
+const articlesMenu = [
+  {
+    label: (t(tLang, "navLinks.blog") as string) || "Tous les articles",
+    href: blogHref,
+    accent: "var(--green)",
+    key: "navLinks.blog",
+  },
+  ...rubriques.map((r) => ({ label: r.label, href: r.href, accent: r.accent, key: "" })),
+  ...(lang === "fr"
+    ? [{ label: "Séries", href: "/fr/series/", accent: "var(--green)", key: "" }]
+    : []),
+];
+const articlesActive = articlesMenu.some((item) => pathname.startsWith(item.href));
+
+/** Ordre de la navbar : « Articles » se place juste après la première entrée (À propos),
+ *  et Contact ferme la barre en étant déjà le dernier élément de navigationLinks.
+ *  L'insertion se fait dans le DOM plutôt qu'avec `order` en CSS, pour que l'ordre de
+ *  tabulation et celui lu par un lecteur d'écran suivent l'ordre visuel. */
+type NavEntry =
+  | { kind: "link"; label: string; href: string }
+  | { kind: "articles" };
+const navEntries: NavEntry[] = links.flatMap((link, i) =>
+  i === 0
+    ? [{ kind: "link" as const, label: link.label, href: link.href }, { kind: "articles" as const }]
+    : [{ kind: "link" as const, label: link.label, href: link.href }],
+);
 ---
 <header class="navbar" id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"} data-lang-nl-href={nlHref ?? "/nl/"}>
   <div class="container nav-inner">
@@ -130,33 +160,41 @@ const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
 
     <nav class="nav-desktop" aria-label={ui.mainNav}>
       <ul class="nav-links">
-        {links.map((link) => (
+        {navEntries.map((entry) => entry.kind === "link" ? (
           <li>
             <a
-              href={link.href}
-              class={`nav-link${isActive(link.href) ? " active" : ""}`}
-              data-t={linkKey[link.href] ?? ""}
+              href={entry.href}
+              class={`nav-link${isActive(entry.href) ? " active" : ""}`}
+              data-t={linkKey[entry.href] ?? ""}
             >
-              {link.label}
+              {entry.label}
             </a>
           </li>
+        ) : (
+          <li class="nav-dropdown" data-nav-dropdown>
+            <button type="button" class={`nav-link nav-dropdown__btn${articlesActive ? " active" : ""}`} aria-haspopup="true" aria-expanded="false">
+              {articlesLabel}
+              <svg class="nav-dropdown__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <ul class="nav-dropdown__menu" role="menu">
+              {articlesMenu.map((item) => (
+                <li role="none">
+                  <a
+                    role="menuitem"
+                    href={item.href}
+                    class={`nav-dropdown__item${isActive(item.href) ? " active" : ""}`}
+                    style={`--fc:${item.accent}`}
+                    data-t={item.key}
+                    aria-current={isActive(item.href) ? "page" : undefined}
+                  >
+                    <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </li>
         ))}
-        <li class="nav-dropdown" data-nav-dropdown>
-          <button type="button" class={`nav-link nav-dropdown__btn${rubriquesActive ? " active" : ""}`} aria-haspopup="true" aria-expanded="false">
-            {rubriquesLabel}
-            <svg class="nav-dropdown__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-          </button>
-          <ul class="nav-dropdown__menu" role="menu">
-            {rubriques.map((r) => (
-              <li role="none">
-                <a role="menuitem" href={r.href} class="nav-dropdown__item" style={`--fc:${r.accent}`}>
-                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
-                  {r.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </li>
       </ul>
     </nav>
 
@@ -253,12 +291,18 @@ const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
             data-t={linkKey[link.href] ?? ""}
           >{link.label}</a>
         ))}
-        <span class="mobile-sublabel">{rubriquesLabel}</span>
+        <span class="mobile-sublabel">{articlesLabel}</span>
         <div class="mobile-rubriques">
-          {rubriques.map((r) => (
-            <a href={r.href} class="mobile-rubrique" style={`--fc:${r.accent}`}>
+          {articlesMenu.map((item) => (
+            <a
+              href={item.href}
+              class={`mobile-rubrique${isActive(item.href) ? " active" : ""}`}
+              style={`--fc:${item.accent}`}
+              data-t={item.key}
+              aria-current={isActive(item.href) ? "page" : undefined}
+            >
               <span class="nav-dropdown__dot" aria-hidden="true"></span>
-              {r.label}
+              {item.label}
             </a>
           ))}
         </div>
@@ -493,7 +537,8 @@ const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
     font-weight: 600;
     transition: background 140ms ease, color 140ms ease;
   }
-  .nav-dropdown__item:hover {
+  .nav-dropdown__item:hover,
+  .nav-dropdown__item.active {
     background: color-mix(in srgb, var(--fc) 12%, var(--surface));
     color: var(--text-main);
   }
@@ -524,7 +569,8 @@ const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
     color: var(--text-muted);
     font-weight: 600;
   }
-  .mobile-rubrique:hover { background: var(--bg-warm); color: var(--text-main); }
+  .mobile-rubrique:hover,
+  .mobile-rubrique.active { background: var(--bg-warm); color: var(--text-main); }
 
   /* ── Boutons icônes ── */
   .nav-actions {
@@ -1032,5 +1078,12 @@ const rubriquesActive = rubriques.some((r) => pathname.startsWith(r.href));
     }, { signal });
   }
 
+  /* Init immédiate EN PLUS de astro:page-load : au tout premier chargement, cet évènement
+     n'arrive qu'au window load, ce qui laisserait le menu « Articles » inerte jusque-là.
+     Depuis que les rubriques, les séries et l'index du blog sont regroupés derrière ce
+     menu, ce délai rendrait toute la navigation vers les articles injoignable.
+     initNavbar est idempotent (il abandonne ses anciens écouteurs), donc le second appel
+     déclenché par astro:page-load ne crée pas de doublon. */
+  initNavbar();
   document.addEventListener("astro:page-load", initNavbar);
 </script>
