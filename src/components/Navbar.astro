@@ -111,10 +111,12 @@ const rubriques = categorySlugs
   }));
 /** Menu « Articles » : regroupe l'index du blog, les rubriques éditoriales et les séries,
  *  qui occupaient auparavant trois entrées de premier niveau. « Tous les articles » reste
- *  en tête, sinon /blog/ ne serait plus atteignable depuis la navbar. Les séries sont
- *  FR-only (cf. staticRoutes), d'où l'ajout conditionnel. */
+ *  en tête, sinon /blog/ ne serait plus atteignable depuis la navbar. Les séries ont une
+ *  page d'index en fr/en/pt-br (cf. staticRoutes / enStaticRoutes / ptBrStaticRoutes) ;
+ *  le NL en est exclu tant qu'il n'a pas sa propre page (lancement 2026-11-01). */
 const articlesLabel = lang === "pt-br" ? "Artigos" : lang === "nl" ? "Artikelen" : "Articles";
 const blogHref = swapLangPrefix("/fr/blog/", lang);
+const seriesHref = lang === "fr" ? "/fr/series/" : lang === "en" ? "/en/series/" : "/pt-br/series/";
 const articlesMenu = [
   {
     label: (t(tLang, "navLinks.blog") as string) || "Tous les articles",
@@ -123,8 +125,8 @@ const articlesMenu = [
     key: "navLinks.blog",
   },
   ...rubriques.map((r) => ({ label: r.label, href: r.href, accent: r.accent, key: "" })),
-  ...(lang === "fr"
-    ? [{ label: "Séries", href: "/fr/series/", accent: "var(--green)", key: "" }]
+  ...(lang === "fr" || lang === "en" || lang === "pt-br"
+    ? [{ label: (t(tLang, "navLinks.series") as string) || "Séries", href: seriesHref, accent: "var(--green)", key: "navLinks.series" }]
     : []),
 ];
 const articlesActive = articlesMenu.some((item) => pathname.startsWith(item.href));
