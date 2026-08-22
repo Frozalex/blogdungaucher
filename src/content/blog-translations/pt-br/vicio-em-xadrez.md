@@ -31,7 +31,7 @@ O xadrez online acrescenta uma camada: cadências infernais (Bullet, Blitz), **E
 
 ### O ciclo dopaminérgico
 
-Vitória → [dopamina](/pt-br/blog/echecs-et-dopamine/) → sensação de progresso → vontade de recomeçar → nova partida → novo pico (ou nova frustração a "apagar"). Seu [corpo estriado](https://pt.wikipedia.org/wiki/Corpo_estriado), o hub do circuito de recompensa, é acionado quando o mate cai, quando você ganha tempo no relógio, quando clica no instante exato.
+Vitória → [dopamina](/pt-br/blog/dopamina-e-xadrez/) → sensação de progresso → vontade de recomeçar → nova partida → novo pico (ou nova frustração a "apagar"). Seu [corpo estriado](https://pt.wikipedia.org/wiki/Corpo_estriado), o hub do circuito de recompensa, é acionado quando o mate cai, quando você ganha tempo no relógio, quando clica no instante exato.
 
 Não é que você seja "fraco". É que seu cérebro faz exatamente o que a evolução ensinou a ele: perseguir os sinais que se parecem com sucesso.
 
@@ -53,7 +53,7 @@ O Dr. [George Imataka](https://pubmed.ncbi.nlm.nih.gov/?term=Imataka+G) et al. (
 
 ### O número que te define: quando o Elo vira uma jaula
 
-O [rating Elo](https://pt.wikipedia.org/wiki/Sistema_de_pontua%C3%A7%C3%A3o_Elo) era uma ferramenta estatística. No online, vira um espelho do ego: "Eu sou um 1600". (A psicologia por trás desse mecanismo é desenvolvida em [A psicologia do jogador de xadrez](/pt-br/blog/psychologie-du-joueur-d-echecs/).)
+O [rating Elo](https://pt.wikipedia.org/wiki/Sistema_de_pontua%C3%A7%C3%A3o_Elo) era uma ferramenta estatística. No online, vira um espelho do ego: "Eu sou um 1600". (A psicologia por trás desse mecanismo é desenvolvida em [A psicologia do jogador de xadrez](/pt-br/blog/psicologia-do-jogador-de-xadrez/).)
 
 No contexto da dependência, a virada é precisa: você não joga mais para aprender, joga para proteger o rótulo. A fixação no ponto de Elo substituiu o jogo.
 
@@ -77,7 +77,7 @@ O estresse sobe, o cortisol dispara; a [Dra. Elke van der Meer](https://www.rese
 
 **Paradoxo cruel:** quanto mais você quer recuperar o último ponto perdido, mais afunda, e mais as derrotas se emendam.
 
-Para se aprofundar no mecanismo psicológico do tilt, do ego, do impostor e do flow: o artigo [A psicologia do jogador de xadrez](/pt-br/blog/psychologie-du-joueur-d-echecs/) dedica uma seção inteira ao tema.
+Para se aprofundar no mecanismo psicológico do tilt, do ego, do impostor e do flow: o artigo [A psicologia do jogador de xadrez](/pt-br/blog/psicologia-do-jogador-de-xadrez/) dedica uma seção inteira ao tema.
 
 ## Você está mesmo na zona vermelha? (autoteste sem culpa)
 

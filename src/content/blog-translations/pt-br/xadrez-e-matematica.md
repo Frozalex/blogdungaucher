@@ -54,7 +54,7 @@ A primeira coisa que salta aos olhos de qualquer observador é o evidente parent
 
 Toda a informação está ali, estendida diante dos seus olhos e dos do adversário. É exatamente o mesmo ponto de partida de um problema de geometria ou de álgebra: o enunciado te dá os postulados iniciais, e cabe a você tirar dali as conclusões lógicas.
 
-Essas propriedades espaciais não são só decorativas: elas ancoram o xadrez num quadro matemático rigoroso, o da geometria discreta e o da [teoria dos jogos de informação perfeita](/pt-br/blog/theorie-des-jeux-aux-echecs/), com dois problemas clássicos que deram trabalho a gerações de matemáticos.
+Essas propriedades espaciais não são só decorativas: elas ancoram o xadrez num quadro matemático rigoroso, o da geometria discreta e o da [teoria dos jogos de informação perfeita](/pt-br/blog/teoria-dos-jogos-no-xadrez/), com dois problemas clássicos que deram trabalho a gerações de matemáticos.
 
 ### Dois problemas matemáticos nascidos do tabuleiro
 
@@ -70,7 +70,7 @@ O segundo pilar fundamental que liga xadrez e matemática é, sem dúvida, a com
 
 Depois de só três lances de cada lado, já há mais de nove milhões de posições diferentes possíveis no tabuleiro. [Claude Shannon](https://pt.wikipedia.org/wiki/Claude_Shannon) estimou a ordem de grandeza do número de partidas possíveis em $10^{120}$ (o **número de Shannon**), muito acima do número de átomos no universo observável ($\sim 10^{80}$).
 
-Quando você se senta diante do tabuleiro para calcular a linha forçada de um sacrifício, o seu cérebro precisa operar exatamente como um algoritmo matemático de teoria dos grafos. Você tem de visualizar o que os cursos costumam chamar de árvore de probabilidades. É a base do algoritmo [minimax](/pt-br/blog/minimax-aux-echecs/): uma ponte documentada entre a teoria dos jogos e a inteligência artificial aplicada ao xadrez. (O detalhe desse mecanismo, minimax, poda alfa-beta e como os engines modernos lidam com essa explosão, está desenvolvido no artigo [Por que o xadrez é um problema matemático (quase) impossível](/pt-br/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
+Quando você se senta diante do tabuleiro para calcular a linha forçada de um sacrifício, o seu cérebro precisa operar exatamente como um algoritmo matemático de teoria dos grafos. Você tem de visualizar o que os cursos costumam chamar de árvore de probabilidades. É a base do algoritmo [minimax](/pt-br/blog/minimax-no-xadrez/): uma ponte documentada entre a teoria dos jogos e a inteligência artificial aplicada ao xadrez. (O detalhe desse mecanismo, minimax, poda alfa-beta e como os engines modernos lidam com essa explosão, está desenvolvido no artigo [Por que o xadrez é um problema matemático (quase) impossível](/pt-br/blog/xadrez-problema-matematico-impossivel-e-ia/).)
 
 O seu pensamento se estrutura assim: "Se eu fizer tal jogada, ele pode responder com a opção A ou B. Se responder A, tenho as opções C ou D à disposição..."
 
@@ -162,7 +162,7 @@ Se você procura uma promessa honesta, aqui está ela: o xadrez não substitui a
 
 O bom argumento, portanto, não é "o xadrez deixa bom em matemática", mas "o xadrez pode ajudar a construir uma postura diante dos problemas". E essa postura pode servir na matemática... como na vida real.
 
-**Depois da leitura:** um problema tático por dia durante uma semana, com a **hipótese escrita antes** da solução; para a combinatória e os engines, emende com [por que o xadrez segue sendo um problema matemático brutal para a IA](/pt-br/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
+**Depois da leitura:** um problema tático por dia durante uma semana, com a **hipótese escrita antes** da solução; para a combinatória e os engines, emende com [por que o xadrez segue sendo um problema matemático brutal para a IA](/pt-br/blog/xadrez-problema-matematico-impossivel-e-ia/).
 
 ---
 

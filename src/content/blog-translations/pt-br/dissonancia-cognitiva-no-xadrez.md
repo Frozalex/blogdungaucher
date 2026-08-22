@@ -155,11 +155,11 @@ E se você achar desconfortável que um artigo sobre dissonância cognitiva venh
 
 **Atrase a resolução, não a impeça.** Você não pode decidir não sentir a dissonância. Você pode decidir não concluir na hora. A redução opera principalmente nos minutos que seguem a derrota, quando o desconforto está no máximo. Anote os fatos no calor da hora, sem interpretação: o lance em que a coisa virou, a sua avaliação naquele momento, o seu tempo restante. Analise vinte e quatro horas depois. A conclusão tirada a frio não é a mesma.
 
-**Transforme "eu estava ganhando" em pergunta.** No dia em que "eu estava ganhando no lance 28" virar "por que eu não converti no lance 28", você terá mudado a função da frase. A mesma informação deixa de ser ponto final para virar ponto de partida. O método completo está no nosso guia sobre [analisar as próprias partidas](/pt-br/blog/analyser-ses-parties/).
+**Transforme "eu estava ganhando" em pergunta.** No dia em que "eu estava ganhando no lance 28" virar "por que eu não converti no lance 28", você terá mudado a função da frase. A mesma informação deixa de ser ponto final para virar ponto de partida. O método completo está no nosso guia sobre [analisar as próprias partidas](/pt-br/blog/analisar-suas-partidas/).
 
 **Defina o critério de abandono antes de investir.** É o remédio direto para a justificativa do esforço, e ele precisa ser estabelecido com antecedência, quando o investimento ainda é zero. Antes de começar um repertório, escreva o que te faria abandoná-lo: um aproveitamento abaixo de 40 % em trinta partidas, por exemplo. Escrito depois do fato, o critério vai ser negociado. Escrito antes, ele se sustenta.
 
-**Trate os seus lances como hipóteses.** Um lance não é uma promessa. A pergunta depois de um lance duvidoso não é "como justificar o que eu joguei" e sim "qual é a melhor continuação a partir desta posição, esta aqui, agora". É também o remédio para o [viés de ancoragem](/pt-br/blog/5-biais-cognitifs-blunder/), e não é coincidência: os dois consistem em se recusar a partir da posição real.
+**Trate os seus lances como hipóteses.** Um lance não é uma promessa. A pergunta depois de um lance duvidoso não é "como justificar o que eu joguei" e sim "qual é a melhor continuação a partir desta posição, esta aqui, agora". É também o remédio para o [viés de ancoragem](/pt-br/blog/5-vieses-cognitivos-blunder/), e não é coincidência: os dois consistem em se recusar a partir da posição real.
 
 ## O essencial
 
@@ -173,7 +173,7 @@ A base experimental da teoria é mais frágil do que se conta por aí, e a repli
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Ver também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/). Artigos futuros vão tratar da racionalização e dos mecanismos de defesa, que são as ferramentas pelas quais essa redução acontece.*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Ver também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/). Artigos futuros vão tratar da racionalização e dos mecanismos de defesa, que são as ferramentas pelas quais essa redução acontece.*
 
 ## Fontes
 

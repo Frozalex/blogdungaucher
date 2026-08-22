@@ -112,7 +112,7 @@ E não é figura de linguagem. Um jogador incapaz dessa operação jogaria sempr
 
 Este é o ponto mais importante do artigo.
 
-Um motor de xadrez clássico avalia as posições supondo **um jogo ótimo por parte do adversário**. É a lógica do minimax, detalhada no nosso artigo sobre [minimax no xadrez](/pt-br/blog/minimax-aux-echecs/). Na prática, isso equivale a tratar o adversário como se ele enxergasse tudo.
+Um motor de xadrez clássico avalia as posições supondo **um jogo ótimo por parte do adversário**. É a lógica do minimax, detalhada no nosso artigo sobre [minimax no xadrez](/pt-br/blog/minimax-no-xadrez/). Na prática, isso equivale a tratar o adversário como se ele enxergasse tudo.
 
 Um motor, portanto, não possui **nenhum modelo do adversário**. Ele não sabe quem está do outro lado, o que essa pessoa conhece, o que ela costuma deixar passar, nem o que ela está deixando escapar agora. Ele não consegue formular o pensamento "ele não vai ver isso".
 
@@ -120,13 +120,13 @@ Consequência direta: um motor nunca arma uma cilada. Ele joga o melhor lance. S
 
 O que dá ao jogador humano uma habilidade que a máquina não tem, e provavelmente a única que sobra no jogo prático. Somos irremediavelmente inferiores na avaliação e no cálculo. Continuamos sendo os únicos capazes de jogar **contra alguém** em vez de jogar contra uma posição.
 
-É também um motivo para relativizar a relação de autoridade com o motor descrita no nosso artigo sobre [a obediência à autoridade no xadrez](/pt-br/blog/obeissance-a-l-autorite-aux-echecs/): num ponto específico, a recomendação dele não é a melhor decisão prática, porque responde a outra pergunta.
+É também um motivo para relativizar a relação de autoridade com o motor descrita no nosso artigo sobre [a obediência à autoridade no xadrez](/pt-br/blog/obediencia-a-autoridade-no-xadrez/): num ponto específico, a recomendação dele não é a melhor decisão prática, porque responde a outra pergunta.
 
 ### A diferença em relação aos neurônios-espelho
 
 Uma precisão, já que os dois assuntos são vizinhos e muitas vezes confundidos.
 
-Os neurônios-espelho, tratados no nosso artigo sobre [os neurônios-espelho no xadrez](/pt-br/blog/neurones-miroirs-aux-echecs/), dizem respeito a uma **simulação motora**: entender uma ação reproduzindo-a internamente. É um mecanismo de baixo nível, em grande parte automático.
+Os neurônios-espelho, tratados no nosso artigo sobre [os neurônios-espelho no xadrez](/pt-br/blog/neuronios-espelho-no-xadrez/), dizem respeito a uma **simulação motora**: entender uma ação reproduzindo-a internamente. É um mecanismo de baixo nível, em grande parte automático.
 
 A teoria da mente diz respeito à atribuição de **crenças**, e em especial de crenças **falsas**. Ela exige manter simultaneamente duas representações de mundo incompatíveis, a verdadeira e a do outro, sem misturar as duas.
 
@@ -138,7 +138,7 @@ Simular um gesto e representar o erro alheio não são a mesma operação.
 
 **O cálculo do lance prático.** Numa posição perdida, o melhor lance objetivo quase nunca é a melhor escolha. É preciso aquele que maximiza as chances de erro do adversário, o que exige saber o que é difícil de enxergar para um humano.
 
-**A oferta de empate.** Ela é integralmente uma operação de teoria da mente: o que ele vai acreditar sobre a minha posição ao me ver oferecendo? É também isso que a torna manipulável, como descreve o nosso artigo sobre [a manipulação emocional no xadrez](/pt-br/blog/manipulation-emotionnelle-aux-echecs/).
+**A oferta de empate.** Ela é integralmente uma operação de teoria da mente: o que ele vai acreditar sobre a minha posição ao me ver oferecendo? É também isso que a torna manipulável, como descreve o nosso artigo sobre [a manipulação emocional no xadrez](/pt-br/blog/manipulacao-emocional-no-xadrez/).
 
 **E o limite, que é severo.** Modelar a mente do outro é caro, e a principal fonte de erro é **preenchê-la com a sua**. Acreditar que ele viu o que você viu, ou que ele ignora o que você ignora, é o mecanismo da projeção, tema do próximo artigo desta série. É também a razão pela qual esse raciocínio fica reservado aos momentos em que agrega alguma coisa: numa posição clara, o melhor lance objetivo continua sendo a melhor escolha.
 
@@ -164,7 +164,7 @@ E é exatamente isso que o motor não faz, já que ele supõe um jogo perfeito d
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. O próximo trata da projeção, isto é, do que acontece quando esse modelo é preenchido com o conteúdo da própria pessoa. Veja também [os neurônios-espelho no xadrez](/pt-br/blog/neurones-miroirs-aux-echecs/) e [minimax no xadrez](/pt-br/blog/minimax-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. O próximo trata da projeção, isto é, do que acontece quando esse modelo é preenchido com o conteúdo da própria pessoa. Veja também [os neurônios-espelho no xadrez](/pt-br/blog/neuronios-espelho-no-xadrez/) e [minimax no xadrez](/pt-br/blog/minimax-no-xadrez/).*
 
 ## Fontes
 

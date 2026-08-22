@@ -93,7 +93,7 @@ Ce qui est fascinant avec le tilt aux échecs, c'est ce qu'il révèle sur tes p
 
 [Mark Dvoretsky](https://fr.wikipedia.org/wiki/Mark_Dvoretsky), l'un des plus grands entraîneurs de l'histoire des échecs, insistait sur ce point avec ses élèves. L'analyse post-partie ne devrait pas seulement chercher l'erreur technique. Elle devrait chercher l'état émotionnel dans lequel cette erreur a été commise. C'est là que réside la véritable information.
 
-Quand le tilt devient une boucle répétée, parties lancées compulsivement après chaque défaite, c'est le signe que quelque chose d'autre opère. L'article [Les échecs et l'addiction](/blog/les-echecs-et-l-addiction/) traite ce cas précis.
+Quand le tilt devient une boucle répétée, parties lancées compulsivement après chaque défaite, c'est le signe que quelque chose d'autre opère. L'article [Les échecs et l'addiction](/fr/blog/les-echecs-et-l-addiction/) traite ce cas précis.
 
 ## Zeitnot : le temps ne te tue pas, ta peur du temps le fait
 

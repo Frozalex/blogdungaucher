@@ -114,7 +114,7 @@ A literatura sobre melhoria cognitiva vai na mesma direção, e de forma bem con
 
 Traduzindo para a sua escala: acreditar que o seu moletom dá sorte provavelmente vai fazer você **se sentir** melhor preparado, mais lúcido, mais confiante. Não há motivo sério para achar que isso vai fazer você enxergar o lance que teria deixado passar.
 
-E essa conclusão é coerente com o que se sabe por outras vias sobre esse jogo. O xadrez é um dos raros campos em que o desempenho é medido com uma precisão brutal, sem parcela de sorte nem de interpretação. É isso que faz dele um terreno de observação tão bom, como mostra nosso artigo sobre [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/). É também isso que o deixa impermeável aos efeitos de expectativa.
+E essa conclusão é coerente com o que se sabe por outras vias sobre esse jogo. O xadrez é um dos raros campos em que o desempenho é medido com uma precisão brutal, sem parcela de sorte nem de interpretação. É isso que faz dele um terreno de observação tão bom, como mostra nosso artigo sobre [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/). É também isso que o deixa impermeável aos efeitos de expectativa.
 
 Vale distinguir o que se discute aqui de outra questão, tratada em [o xadrez deixa a pessoa mais inteligente](/pt-br/blog/les-echecs-rendent-ils-plus-intelligent/): lá, o efeito de expectativa diz respeito aos **pesquisadores e professores** e distorce a medição dos benefícios. Aqui, trata-se de você, jogador, e do seu próprio desempenho em partida.
 
@@ -162,7 +162,7 @@ Transpondo: você pode manter o moletom sabendo perfeitamente que ele não tem p
 
 **Cace os seus nocebos, eles custam mais caro.** Faça a lista das frases que você diz antes de jogar: "eu odeio jogar contra esse cara", "eu sou péssimo nessa estrutura". São expectativas negativas explícitas, e é o único terreno em que a crença tem ação bem documentada. Elas se corrigem com fatos: confira o seu retrospecto real contra esse adversário, ele raramente é o que você imagina.
 
-**Desconfie dos suplementos vendidos para cognição.** Em critérios objetivos, a régua da prova é alta e raramente é ultrapassada. Já o seu sono tem efeito documentado sobre o desempenho cognitivo, e é de graça. Veja [xadrez e sono](/pt-br/blog/echecs-et-sommeil/).
+**Desconfie dos suplementos vendidos para cognição.** Em critérios objetivos, a régua da prova é alta e raramente é ultrapassada. Já o seu sono tem efeito documentado sobre o desempenho cognitivo, e é de graça. Veja [xadrez e sono](/pt-br/blog/xadrez-e-sono/).
 
 ## O que ficar disso
 
@@ -178,7 +178,7 @@ O risco, por outro lado, é real e vai no sentido oposto. A expectativa negativa
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [não, o xadrez não reprograma o seu cérebro](/pt-br/blog/neuroplasticite-aux-echecs/) e [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [não, o xadrez não reprograma o seu cérebro](/pt-br/blog/neuroplasticidade-e-xadrez/) e [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/).*
 
 ## Fontes
 

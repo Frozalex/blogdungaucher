@@ -12,16 +12,41 @@
 // Auto-maintenu : lit le champ `enSlug` du frontmatter de chaque traduction EN.
 // Ajouter/renommer une traduction met à jour les redirects sans édition manuelle.
 
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const EN_DIR = resolve(__dirname, "../src/content/blog-translations/en");
+const BLOG_DIR = resolve(__dirname, "../src/content/blog");
+const CATEGORIES = ["science", "esprit", "societe", "grand-oral"];
+
+/**
+ * Un article dont la `publishDate` est future n'est pas généré par getStaticPaths : la page
+ * au slug EN n'existe donc pas encore. Émettre quand même la redirection produit un
+ * **301 vers une 404**, ce qui est pire que pas de redirection du tout, puisque Google suit
+ * le 301 et enregistre l'erreur. On n'émet donc la redirection qu'une fois l'article publié.
+ *
+ * @param {string} frSlug
+ * @returns {boolean} true si l'article FR source est déjà publié.
+ */
+function isPublished(frSlug) {
+  for (const cat of CATEGORIES) {
+    const file = join(BLOG_DIR, cat, `${frSlug}.md`);
+    if (!existsSync(file)) continue;
+    const fm = readFileSync(file, "utf8").replace(/^﻿/, "").match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    if (!fm) return false;
+    const dm = fm[1].match(/^publishDate:\s*["']?(\d{4}-\d{2}-\d{2})/m);
+    if (!dm) return false;
+    return new Date(`${dm[1]}T00:00:00Z`) <= new Date();
+  }
+  // Traduction orpheline (article FR supprimé ou renommé) : aucune page cible non plus.
+  return false;
+}
 
 /**
  * @returns {Record<string,string>} map { "/en/blog/<slugFR>/": "/en/blog/<slugEN>/" }
- *          pour chaque traduction dont le slug EN diffère du slug FR.
+ *          pour chaque traduction publiée dont le slug EN diffère du slug FR.
  */
 export function enSlugRedirects() {
   /** @type {Record<string,string>} */
@@ -34,7 +59,7 @@ export function enSlugRedirects() {
     if (!fm) continue;
     const em = fm[1].match(/^enSlug:\s*["']?([^"'\n\r]+)["']?/m);
     const enSlug = em ? em[1].trim() : null;
-    if (enSlug && enSlug !== frSlug) {
+    if (enSlug && enSlug !== frSlug && isPublished(frSlug)) {
       out[`/en/blog/${frSlug}/`] = `/en/blog/${enSlug}/`;
     }
   }

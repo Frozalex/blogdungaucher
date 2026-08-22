@@ -59,7 +59,7 @@ Quatro propriedades fazem do xadrez um objeto raro na teoria dos jogos. Parecem 
 
 ## O teorema de 110 anos que diz que uma partida de xadrez já tem um resultado
 
-Em 1913, o matemático [Ernst Zermelo](https://pt.wikipedia.org/wiki/Ernst_Zermelo) prova um resultado que deveria te dar vertigem. (O teorema, o seu alcance, os seus limites e a sua sutileza combinatória estão detalhados no artigo dedicado sobre [o paradoxo de Zermelo](/pt-br/blog/paradoxe-de-zermelo/).)
+Em 1913, o matemático [Ernst Zermelo](https://pt.wikipedia.org/wiki/Ernst_Zermelo) prova um resultado que deveria te dar vertigem. (O teorema, o seu alcance, os seus limites e a sua sutileza combinatória estão detalhados no artigo dedicado sobre [o paradoxo de Zermelo](/pt-br/blog/paradoxo-de-zermelo/).)
 
 Em todo jogo de dois jogadores, com informação perfeita, sem acaso e finito, uma destas três afirmações é *forçosamente verdadeira*:
 1. O primeiro jogador tem uma estratégia vencedora.
@@ -91,7 +91,7 @@ $C(p)$ é o conjunto dos lances legais na posição $p$.
 
 O que essa fórmula te faz evitar recalcular: a cada profundidade, ela supõe que o adversário vai jogar o *seu* melhor lance, o que te dispensa de imaginar os erros prováveis dele (que te custariam cálculo sem ganhar segurança).
 
-É exatamente o que o Stockfish, o Leela e todos os engines modernos executam. A diferença em relação a você: eles fazem isso sobre milhões de nós por segundo, enquanto o seu cérebro processa talvez três ou quatro. O detalhe do algoritmo, os seus refinamentos (tabela de transposição, *iterative deepening*) e a sua versão moderna em rede neural são tratados no artigo [minimax no xadrez](/pt-br/blog/minimax-aux-echecs/).
+É exatamente o que o Stockfish, o Leela e todos os engines modernos executam. A diferença em relação a você: eles fazem isso sobre milhões de nós por segundo, enquanto o seu cérebro processa talvez três ou quatro. O detalhe do algoritmo, os seus refinamentos (tabela de transposição, *iterative deepening*) e a sua versão moderna em rede neural são tratados no artigo [minimax no xadrez](/pt-br/blog/minimax-no-xadrez/).
 
 ### Por que um engine não explora $35^{10}$ posições
 
@@ -113,7 +113,7 @@ No xadrez, isso se traduz nas aberturas.
 
 Quando se diz que uma variante é *"teoricamente igual"*, é exatamente isso que se quer dizer: os dois lados dispõem de recursos que mantêm o equilíbrio, e o primeiro que desvia unilateralmente corre o risco de ser punido. É por isso que a Espanhola (1.e4 e5 2.Cf3 Cc6 3.Bb5) atravessa os séculos: é um equilíbrio estável que ninguém conseguiu quebrar.
 
-Sob jogo perfeito dos dois lados, *a partida inteira* seria um único e gigantesco equilíbrio de Nash. E se a verdade do xadrez é o empate, então esse equilíbrio é o empate. O mapeamento completo desses equilíbrios nas aberturas atuais é o tema de [grafos de Nash e equilíbrio das aberturas](/pt-br/blog/graphes-de-nash-equilibre-ouvertures/); um mesmo repertório pode conter vários equilíbrios, e a escolha entre eles já é coisa do metajogo.
+Sob jogo perfeito dos dois lados, *a partida inteira* seria um único e gigantesco equilíbrio de Nash. E se a verdade do xadrez é o empate, então esse equilíbrio é o empate. O mapeamento completo desses equilíbrios nas aberturas atuais é o tema de [grafos de Nash e equilíbrio das aberturas](/pt-br/blog/grafos-de-nash-equilibrio-aberturas/); um mesmo repertório pode conter vários equilíbrios, e a escolha entre eles já é coisa do metajogo.
 
 ### Estratégias dominantes e estratégias dominadas
 
@@ -129,7 +129,7 @@ A informação que falta não está no tabuleiro. Está na cabeça do seu advers
 
 Você não sabe até onde ele calculou. Não sabe se ele conhece a variante que você preparou ontem à noite. Não sabe se a calma aparente dele esconde uma posição que ele acha perdida ou uma combinação devastadora que ele espera soltar no lance 27.
 
-Essa assimetria subjetiva transforma o xadrez, na prática, num jogo de informação imperfeita. É aí que a [psicologia do jogador de xadrez](/pt-br/blog/psychologie-du-joueur-d-echecs/) entra em cena. É aí que a teoria dos jogos pura deixa de prever corretamente o comportamento humano.
+Essa assimetria subjetiva transforma o xadrez, na prática, num jogo de informação imperfeita. É aí que a [psicologia do jogador de xadrez](/pt-br/blog/psicologia-do-jogador-de-xadrez/) entra em cena. É aí que a teoria dos jogos pura deixa de prever corretamente o comportamento humano.
 
 ## O paradoxo Bobby Fischer: por que o jogador mais previsível do século XX ganhou
 
@@ -164,7 +164,7 @@ Para comparar:
 - **O Nim**: resolvido analiticamente (teorema de Sprague-Grundy).
 - **O xadrez**: continua em aberto. Por muito tempo.
 
-Não é um limite da disciplina. A teoria afirma que a resposta existe. É só que os recursos de cálculo necessários estão fora de alcance físico. (Para a demonstração detalhada dessa impossibilidade prática e o jeito como a IA contorna o muro, veja [por que o xadrez é um problema matemático quase impossível](/pt-br/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
+Não é um limite da disciplina. A teoria afirma que a resposta existe. É só que os recursos de cálculo necessários estão fora de alcance físico. (Para a demonstração detalhada dessa impossibilidade prática e o jeito como a IA contorna o muro, veja [por que o xadrez é um problema matemático quase impossível](/pt-br/blog/xadrez-problema-matematico-impossivel-e-ia/).)
 
 ## A lição que cabe em uma linha
 

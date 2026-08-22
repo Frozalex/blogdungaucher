@@ -65,7 +65,7 @@ C'est probablement la pire façon d'utiliser ton temps de travail aux échecs.
 
 La règle 40-40-20 est une heuristique popularisée parmi les entraîneurs et les joueurs en progression : **40 % du temps d'entraînement consacré à la tactique, 40 % aux finales, 20 % aux ouvertures**. Elle renverse complètement la répartition spontanée de la majorité des joueurs amateurs, qui passent l'essentiel de leur temps sur les ouvertures, ensuite sur la tactique, et à peine sur les finales.
 
-Ce n'est pas un dogme. C'est une hypothèse solide. Et pour comprendre pourquoi elle est solide, il faut comprendre ce que la recherche sur l'expertise aux échecs a mis des décennies à démonter. (La mécanique cognitive qui rend cette répartition rationnelle (chunks, métacognition, transfert) est détaillée dans [les échecs et les mathématiques](/blog/les-echecs-et-les-mathematiques/) ; la posture mentale qui détermine si tu en profites vraiment, dans [la psychologie du joueur](/blog/psychologie-du-joueur-d-echecs/).)
+Ce n'est pas un dogme. C'est une hypothèse solide. Et pour comprendre pourquoi elle est solide, il faut comprendre ce que la recherche sur l'expertise aux échecs a mis des décennies à démonter. (La mécanique cognitive qui rend cette répartition rationnelle (chunks, métacognition, transfert) est détaillée dans [les échecs et les mathématiques](/fr/blog/les-echecs-et-les-mathematiques/) ; la posture mentale qui détermine si tu en profites vraiment, dans [la psychologie du joueur](/fr/blog/psychologie-du-joueur-d-echecs/).)
 
 ## Pourquoi la répartition spontanée est contre-productive
 
@@ -189,7 +189,7 @@ Une version améliorée de la règle pourrait ressembler à : 30 % tactique, 30 
 
 Passer 40 % du temps sur la tactique en parcourant des puzzles distraitement pendant trente minutes devant une série sur fond d'écran ne produit rien. La recherche sur l'expertise, notamment les travaux d'[Anders Ericsson](https://doi.org/10.1037/0033-295X.100.3.363) sur la pratique délibérée, est nette sur ce point : c'est la qualité de l'attention pendant l'entraînement qui produit la progression, pas la durée.
 
-Un problème tactique résolu avec attention complète, en cherchant vraiment à comprendre pourquoi la combinaison fonctionne, vaut dix fois plus que dix problèmes résolus par essai-erreur sans analyse. C'est aussi pour cette raison que la **récupération** est partie intégrante de l'entraînement : voir [les bienfaits des pauses aux échecs](/blog/bienfaits-des-pauses-aux-echecs/) pour les mécanismes de consolidation mémorielle qui rendent 30 minutes de pratique attentive plus productives que 2 heures de pratique fatiguée.
+Un problème tactique résolu avec attention complète, en cherchant vraiment à comprendre pourquoi la combinaison fonctionne, vaut dix fois plus que dix problèmes résolus par essai-erreur sans analyse. C'est aussi pour cette raison que la **récupération** est partie intégrante de l'entraînement : voir [les bienfaits des pauses aux échecs](/fr/blog/bienfaits-des-pauses-aux-echecs/) pour les mécanismes de consolidation mémorielle qui rendent 30 minutes de pratique attentive plus productives que 2 heures de pratique fatiguée.
 
 ![Pratique délibérée selon Ericsson : un seul puzzle résolu avec attention et analyse complète produit une progression bien supérieure à dix puzzles parcourus distraitement par essai-erreur.](/images/regle-04-pratique-deliberee.svg)
 

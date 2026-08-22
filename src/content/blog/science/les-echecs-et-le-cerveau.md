@@ -255,7 +255,7 @@ Ce que le scanner ne capture pas, c'est la **géographie fonctionnelle** : quell
 
 ### Les échecs peuvent-ils prévenir Alzheimer ?
 
-Pas guérir, mais potentiellement participer à la prévention. L'étude Verghese et al. (*NEJM*, 2003) a montré que la pratique régulière de jeux de plateau était associée à une réduction de **74 %** du risque de démence sur un suivi de **5 ans** et **469 personnes âgées**. Il s'agit d'une association, pas d'une causalité prouvée. Voir aussi l'article [Échecs et Alzheimer](/blog/echecs-alzheimer-prevention-declin-cognitif/).
+Pas guérir, mais potentiellement participer à la prévention. L'étude Verghese et al. (*NEJM*, 2003) a montré que la pratique régulière de jeux de plateau était associée à une réduction de **74 %** du risque de démence sur un suivi de **5 ans** et **469 personnes âgées**. Il s'agit d'une association, pas d'une causalité prouvée. Voir aussi l'article [Échecs et Alzheimer](/fr/blog/echecs-alzheimer-prevention-declin-cognitif/).
 
 ### Combien d'heures faut-il jouer pour voir un effet sur le cerveau ?
 

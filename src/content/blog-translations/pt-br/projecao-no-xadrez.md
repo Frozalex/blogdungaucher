@@ -57,7 +57,7 @@ Não é um problema de nível: você tinha visto a ideia. É um problema de atri
 
 É preciso começar por um esclarecimento, porque a palavra é carregada.
 
-No vocabulário clássico, herdado de Freud e retomado pela filha dele no inventário que apresentamos no nosso artigo sobre [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismes-de-defense-aux-echecs/), a projeção é um mecanismo **defensivo**. Atribui-se ao outro um conteúdo psíquico que não se consegue reconhecer em si: o agressivo vê agressividade em todo lugar, o trapaceiro desconfia de trapaça.
+No vocabulário clássico, herdado de Freud e retomado pela filha dele no inventário que apresentamos no nosso artigo sobre [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismos-de-defesa-no-xadrez/), a projeção é um mecanismo **defensivo**. Atribui-se ao outro um conteúdo psíquico que não se consegue reconhecer em si: o agressivo vê agressividade em todo lugar, o trapaceiro desconfia de trapaça.
 
 Essa versão é mal sustentada. Como todo o modelo das defesas, ela sofre de um problema de medida intransponível: o mecanismo deveria ser inconsciente, portanto inacessível por questionário, e a observação dele por um terceiro depende em grande parte da interpretação desse terceiro. A retirada da escala correspondente do DSM-5 se inscreve nessa constatação.
 
@@ -73,7 +73,7 @@ Os que aceitam estimam que a maioria aceitaria. Os que recusam estimam que a mai
 
 Cada grupo superestima a frequência da própria escolha. E o resultado se reproduz em opiniões, preferências e comportamentos bem variados.
 
-O mecanismo não tem nada de defensivo. Não há nada de vergonhoso em aceitar ou recusar uma placa. Trata-se de um problema de **inferência sob informação limitada**: para estimar o que os outros pensam, a gente só dispõe de uma mente acessível por dentro, a própria. Ela serve, então, de ponto de partida, e o ajuste é insuficiente, exatamente como no [viés de ancoragem](/pt-br/blog/biais-d-ancrage-aux-echecs/).
+O mecanismo não tem nada de defensivo. Não há nada de vergonhoso em aceitar ou recusar uma placa. Trata-se de um problema de **inferência sob informação limitada**: para estimar o que os outros pensam, a gente só dispõe de uma mente acessível por dentro, a própria. Ela serve, então, de ponto de partida, e o ajuste é insuficiente, exatamente como no [viés de ancoragem](/pt-br/blog/vies-de-ancoragem-no-xadrez/).
 
 É essa versão, não defensiva e solidamente documentada, que explica o que acontece no tabuleiro.
 
@@ -81,7 +81,7 @@ O mecanismo não tem nada de defensivo. Não há nada de vergonhoso em aceitar o
 
 A formulação mais útil é esta, e ela liga este artigo ao anterior da série.
 
-A [teoria da mente](/pt-br/blog/theorie-de-l-esprit-aux-echecs/) consiste em construir um modelo da mente do outro **distinto da sua**. É isso que permite armar uma cilada: saber que ele não vê o que você vê.
+A [teoria da mente](/pt-br/blog/teoria-da-mente-no-xadrez/) consiste em construir um modelo da mente do outro **distinto da sua**. É isso que permite armar uma cilada: saber que ele não vê o que você vê.
 
 A projeção é o que acontece quando esse modelo é construído **por padrão**, ou seja, preenchido com o seu próprio conteúdo.
 
@@ -117,7 +117,7 @@ Você prepara uma linha supondo que ele vai escolher a continuação mais natura
 
 Ela merece ser mencionada porque produz acusações.
 
-Supor que o adversário sente o que você sentiria no lugar dele, desprezo, deboche, irritação, é uma operação de projeção. E ela pode alimentar interpretações que não têm nenhum apoio nos fatos, como descreve o nosso artigo sobre [o efeito espectador no xadrez](/pt-br/blog/effet-spectateur-aux-echecs/) a respeito das suspeitas de trapaça.
+Supor que o adversário sente o que você sentiria no lugar dele, desprezo, deboche, irritação, é uma operação de projeção. E ela pode alimentar interpretações que não têm nenhum apoio nos fatos, como descreve o nosso artigo sobre [o efeito espectador no xadrez](/pt-br/blog/efeito-espectador-no-xadrez/) a respeito das suspeitas de trapaça.
 
 ## Por que o xadrez amplifica o mecanismo
 
@@ -157,7 +157,7 @@ Uma única pergunta basta para pegá-lo: de onde vem aquilo que eu acho que sei 
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Ele aprofunda um mecanismo inventariado em [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismes-de-defense-aux-echecs/). Ver também [a teoria da mente no xadrez](/pt-br/blog/theorie-de-l-esprit-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Ele aprofunda um mecanismo inventariado em [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismos-de-defesa-no-xadrez/). Ver também [a teoria da mente no xadrez](/pt-br/blog/teoria-da-mente-no-xadrez/).*
 
 ## Fontes
 

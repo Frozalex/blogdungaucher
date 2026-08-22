@@ -122,7 +122,7 @@ O que sugere uma conclusão pouco intuitiva: **a estagnação prolongada não é
 
 **O abandono precoce.** O mais visível. Você abandona uma posição difícil mas defensável, e depois vai explicar que estava perdida. O ponto a observar é que você não procura o recurso: você não atravessa a barreira baixa.
 
-**A parada do esforço no meio da sessão.** Depois de uma derrota, as partidas seguintes são jogadas pela metade. Não é tilt no sentido da raiva, descrito no nosso artigo sobre [xadrez e raiva](/pt-br/blog/echecs-et-colere-ragequit/): é mais frio, mais resignado. O comportamento está lá, o investimento não está mais.
+**A parada do esforço no meio da sessão.** Depois de uma derrota, as partidas seguintes são jogadas pela metade. Não é tilt no sentido da raiva, descrito no nosso artigo sobre [xadrez e raiva](/pt-br/blog/xadrez-e-raiva-ragequit/): é mais frio, mais resignado. O comportamento está lá, o investimento não está mais.
 
 **As crenças cristalizadas.** "Eu sou péssimo em finais." "Eu não entendo nada de posições fechadas." Essas frases são zonas declaradas fora de alcance, portanto nunca trabalhadas, o que as torna verdadeiras. Elas também funcionam como profecias autorrealizáveis, tema de um artigo futuro desta série.
 
@@ -168,7 +168,7 @@ Mudar de sinal não é mentir para si mesmo sobre o próprio progresso. É forne
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/), [a formação de hábitos no xadrez](/pt-br/blog/formation-des-habitudes-aux-echecs/) e [resiliência no xadrez](/pt-br/blog/echecs-et-resilience/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/), [a formação de hábitos no xadrez](/pt-br/blog/formacao-de-habitos-no-xadrez/) e [resiliência no xadrez](/pt-br/blog/xadrez-e-resiliencia/).*
 
 ## Fontes
 

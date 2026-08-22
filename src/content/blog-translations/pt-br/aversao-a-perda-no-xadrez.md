@@ -155,7 +155,7 @@ Se você não conseguir nomear três elementos concretos, o sacrifício provavel
 
 A cada avaliação, a pergunta é: **se eu descobrisse essa posição agora, sem saber como se chegou nela, o que eu diria?**
 
-É o mesmo remédio do viés de ancoragem, e não é à toa: nos dois casos, trata-se de recusar um ponto de referência herdado. O [panorama dos vieses cognitivos](/pt-br/blog/5-biais-cognitifs-blunder/) detalha esse mecanismo.
+É o mesmo remédio do viés de ancoragem, e não é à toa: nos dois casos, trata-se de recusar um ponto de referência herdado. O [panorama dos vieses cognitivos](/pt-br/blog/5-vieses-cognitivos-blunder/) detalha esse mecanismo.
 
 ### 3. Treine em posições de sacrifício
 
@@ -163,7 +163,7 @@ A cada avaliação, a pergunta é: **se eu descobrisse essa posição agora, sem
 
 O objetivo não é decorar essas posições. É **construir os padrões que tornam a compensação visível**. Uma compensação reconhecida deixa de ser opinião, vira padrão, e um padrão se compara a um peão.
 
-É também a lição do estudo de Cowley e Byrne mencionado no nosso artigo sobre [o viés de confirmação no xadrez](/pt-br/blog/biais-de-confirmation-aux-echecs/): o que se acredita ser qualidade de julgamento muitas vezes é consequência do repertório de padrões disponível.
+É também a lição do estudo de Cowley e Byrne mencionado no nosso artigo sobre [o viés de confirmação no xadrez](/pt-br/blog/vies-de-confirmacao-no-xadrez/): o que se acredita ser qualidade de julgamento muitas vezes é consequência do repertório de padrões disponível.
 
 ### 4. Fique de olho no domínio das perdas
 
@@ -183,7 +183,7 @@ O ponto de referência espontâneo, a igualdade material do início, não tem le
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [decisão sob incerteza no xadrez](/pt-br/blog/decision-sous-incertitude-aux-echecs/) e [o viés de confirmação no xadrez](/pt-br/blog/biais-de-confirmation-aux-echecs/). Um artigo futuro vai tratar da gratificação adiada.*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [decisão sob incerteza no xadrez](/pt-br/blog/decisao-sob-incerteza-xadrez/) e [o viés de confirmação no xadrez](/pt-br/blog/vies-de-confirmacao-no-xadrez/). Um artigo futuro vai tratar da gratificação adiada.*
 
 ## Fontes
 

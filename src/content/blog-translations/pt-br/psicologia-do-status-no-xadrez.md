@@ -96,7 +96,7 @@ Aplique agora essa grade ao rating Elo, e o resultado é mais matizado do que se
 
 **Ela é unidimensional.** Num ambiente profissional, dá para ter cargo menor e ser mais querido, mais competente tecnicamente, mais antigo na casa. No xadrez, existe um eixo só.
 
-**Ela é permanente.** Não há intertemporada, como descreve o nosso artigo sobre [a comparação social no xadrez](/pt-br/blog/comparaison-sociale-aux-echecs/).
+**Ela é permanente.** Não há intertemporada, como descreve o nosso artigo sobre [a comparação social no xadrez](/pt-br/blog/comparacao-social-no-xadrez/).
 
 **E ela é instável no sentido de Sapolsky.** A posição muda toda semana, que é exatamente a condição em que o estresse hierárquico é mais alto, inclusive para quem está no topo.
 
@@ -122,7 +122,7 @@ O rating Elo fecha essa saída. Ele é **calculado, transparente, merecido e rev
 
 É uma hierarquia notavelmente justa. E é exatamente por isso que ela pesa.
 
-Uma posição injusta remete ao sistema. Uma posição justa remete inteiramente a você. É o que torna tão fácil o deslizamento do número para a identidade, mecanismo tratado no nosso artigo sobre [Elo e autoestima](/pt-br/blog/echecs-estime-de-soi-elo/).
+Uma posição injusta remete ao sistema. Uma posição justa remete inteiramente a você. É o que torna tão fácil o deslizamento do número para a identidade, mecanismo tratado no nosso artigo sobre [Elo e autoestima](/pt-br/blog/xadrez-autoestima-elo/).
 
 ## O status no mundo real do xadrez
 
@@ -130,7 +130,7 @@ Três observações que essa grade ilumina.
 
 **O título é um status adquirido, o rating é um status corrente.** Um mestre internacional continua mestre internacional mesmo que o rating dele caia. Essa dissociação é rara e valiosa: ela oferece um componente estável dentro de uma hierarquia que, no mais, é instável.
 
-**O status não se converte.** Ao contrário do esporte profissional, ser forte no xadrez quase não traz nada fora do meio. O nosso artigo sobre [xadrez e dinheiro](/pt-br/blog/echecs-et-argent/) mostra que mesmo os melhores jogadores do mundo tiram pouco disso. O que traz uma consequência interessante: a hierarquia enxadrística é **encapsulada**, e portanto mais fácil de abandonar que a maioria.
+**O status não se converte.** Ao contrário do esporte profissional, ser forte no xadrez quase não traz nada fora do meio. O nosso artigo sobre [xadrez e dinheiro](/pt-br/blog/quanto-ganha-jogador-de-xadrez/) mostra que mesmo os melhores jogadores do mundo tiram pouco disso. O que traz uma consequência interessante: a hierarquia enxadrística é **encapsulada**, e portanto mais fácil de abandonar que a maioria.
 
 **O status de clube existe em paralelo.** Num clube de verdade, outros eixos funcionam: o tempo de casa, a disponibilidade para arbitrar, a capacidade de ensinar, a confiabilidade nas competições por equipes. Esses eixos não são numéricos e não dependem do rating, o que faz deles, no sentido de Deci e Ryan, uma fonte de vínculo que o jogo online não fornece.
 
@@ -142,7 +142,7 @@ Três observações que essa grade ilumina.
 
 **Cultive um segundo eixo.** Arbitrar, treinar, organizar, animar. Esses papéis produzem um status que não depende do número, o que reduz a dependência de um eixo único e instável.
 
-**Tenha cautela em período de instabilidade.** O resultado de Sapolsky merece ser levado a sério: é quando a posição está em jogo que a carga é máxima, inclusive no topo. Um período de forte variação de rating é um momento em que faz sentido reduzir a carga competitiva, como detalha o nosso artigo sobre [o estresse crônico no xadrez](/pt-br/blog/stress-chronique-aux-echecs/).
+**Tenha cautela em período de instabilidade.** O resultado de Sapolsky merece ser levado a sério: é quando a posição está em jogo que a carga é máxima, inclusive no topo. Um período de forte variação de rating é um momento em que faz sentido reduzir a carga competitiva, como detalha o nosso artigo sobre [o estresse crônico no xadrez](/pt-br/blog/estresse-cronico-no-xadrez/).
 
 ## O que guardar
 
@@ -158,7 +158,7 @@ Resta uma carga que lhe é própria, e que é o preço da sua qualidade. Esse ra
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [Elo e autoestima](/pt-br/blog/echecs-estime-de-soi-elo/), [a comparação social no xadrez](/pt-br/blog/comparaison-sociale-aux-echecs/) e [o estresse crônico no xadrez](/pt-br/blog/stress-chronique-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [Elo e autoestima](/pt-br/blog/xadrez-autoestima-elo/), [a comparação social no xadrez](/pt-br/blog/comparacao-social-no-xadrez/) e [o estresse crônico no xadrez](/pt-br/blog/estresse-cronico-no-xadrez/).*
 
 ## Fontes
 

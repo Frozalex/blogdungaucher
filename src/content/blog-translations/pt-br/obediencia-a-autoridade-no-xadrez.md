@@ -100,11 +100,11 @@ Guarde essa formulação, ela é exatamente transponível.
 
 São quatro, e elas não funcionam do mesmo jeito.
 
-**O treinador.** Ele dá instruções, ele avalia, ele tem um status. O nosso artigo sobre [a teoria do apego no xadrez](/pt-br/blog/theorie-de-l-attachement-aux-echecs/) mostra que ele ocupa muitas vezes um lugar que vai bem além da pedagogia.
+**O treinador.** Ele dá instruções, ele avalia, ele tem um status. O nosso artigo sobre [a teoria do apego no xadrez](/pt-br/blog/teoria-do-apego-no-xadrez/) mostra que ele ocupa muitas vezes um lugar que vai bem além da pedagogia.
 
 **O jogador titulado.** O rating dele é público e numérico, o que dá à sua autoridade uma objetividade que poucos campos oferecem. Uma opinião emitida por um 2600 é recebida de outro jeito que uma opinião emitida por um 1800, antes mesmo de ter sido ouvida.
 
-**A teoria.** "É a linha principal." Ninguém decidiu isso, nenhuma instância promulga, e mesmo assim ela funciona como norma. O nosso artigo sobre [o viés do sobrevivente no xadrez](/pt-br/blog/biais-du-survivant-aux-echecs/) mostra por qual filtro ela se constituiu.
+**A teoria.** "É a linha principal." Ninguém decidiu isso, nenhuma instância promulga, e mesmo assim ela funciona como norma. O nosso artigo sobre [o viés do sobrevivente no xadrez](/pt-br/blog/vies-do-sobrevivente-no-xadrez/) mostra por qual filtro ela se constituiu.
 
 **A engine.** E essa é de outra natureza.
 
@@ -142,9 +142,9 @@ E a análise de Haslam e Reicher se aplica palavra por palavra. Você não se su
 
 ## O caso das outras três autoridades
 
-**O treinador, e o lance que não se entende.** Jogar um lance que você não entende é sempre uma perda, mesmo quando o lance é bom. Ele não se integra a nenhuma estrutura de conhecimento e não vai ser transferível para a posição vizinha. A regra útil é simples: um lance não compreendido deve ser anotado como tal, e a pergunta deve ser feita. Um bom treinador espera essa pergunta. Quem desencoraja ela levanta um problema de outra ordem, abordado no nosso artigo sobre [o gaslighting no xadrez](/pt-br/blog/gaslighting-aux-echecs/).
+**O treinador, e o lance que não se entende.** Jogar um lance que você não entende é sempre uma perda, mesmo quando o lance é bom. Ele não se integra a nenhuma estrutura de conhecimento e não vai ser transferível para a posição vizinha. A regra útil é simples: um lance não compreendido deve ser anotado como tal, e a pergunta deve ser feita. Um bom treinador espera essa pergunta. Quem desencoraja ela levanta um problema de outra ordem, abordado no nosso artigo sobre [o gaslighting no xadrez](/pt-br/blog/gaslighting-no-xadrez/).
 
-**O jogador titulado, e a transferência de competência.** O título atesta um nível de jogo. Ele não atesta nem competência pedagógica, nem julgamento confiável fora do tabuleiro, nem sequer uma avaliação correta num tipo de posição que ele pratica pouco. O princípio de autoridade opera por extensão automática, e é essa extensão que sai caro. O nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/) detalha como essa alavanca estrutura um mercado inteiro.
+**O jogador titulado, e a transferência de competência.** O título atesta um nível de jogo. Ele não atesta nem competência pedagógica, nem julgamento confiável fora do tabuleiro, nem sequer uma avaliação correta num tipo de posição que ele pratica pouco. O princípio de autoridade opera por extensão automática, e é essa extensão que sai caro. O nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/) detalha como essa alavanca estrutura um mercado inteiro.
 
 **A teoria, e a autoridade sem autor.** É a mais curiosa, porque não há ninguém para questionar. "É a teoria" é uma frase sem sujeito. Ela descreve na verdade um consenso histórico constituído por seleção de partidas publicadas, com tudo o que esse filtro implica.
 
@@ -174,7 +174,7 @@ Daí uma regra única, que não custa nada: produza o seu veredicto antes de ped
 
 ---
 
-*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Ele complementa o nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/). Artigos futuros vão tratar do conformismo e da psicologia das multidões.*
+*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Ele complementa o nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/). Artigos futuros vão tratar do conformismo e da psicologia das multidões.*
 
 ## Fontes
 

@@ -54,7 +54,7 @@ Você joga mais rápido. Não porque a posição exija, mas porque cada minuto a
 
 O que você está vivendo aí é exatamente o mecanismo que o marketing usa para te vender cursos online. Mesma alavanca, mesmo efeito, dois contextos que ninguém nunca aproxima.
 
-Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/), que apresenta as sete alavancas.
+Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/), que apresenta as sete alavancas.
 
 ## Os biscoitos
 
@@ -78,7 +78,7 @@ Não é, portanto, o nível de disponibilidade que conta. É **a direção da mu
 
 Esse resultado liga diretamente a escassez a um mecanismo já tratado nesta série.
 
-Uma possibilidade que desaparece não é simplesmente uma opção indisponível: é uma **perda**. E a assimetria entre perdas e ganhos, descrita no nosso artigo sobre [a aversão à perda no xadrez](/pt-br/blog/aversion-a-la-perte-aux-echecs/), faz o resto.
+Uma possibilidade que desaparece não é simplesmente uma opção indisponível: é uma **perda**. E a assimetria entre perdas e ganhos, descrita no nosso artigo sobre [a aversão à perda no xadrez](/pt-br/blog/aversao-a-perda-no-xadrez/), faz o resto.
 
 Daí uma consequência prática imediata: um cronômetro regressivo é mais eficiente que uma menção de estoque limitado, porque coloca o desaparecimento em movimento diante dos olhos do comprador.
 
@@ -120,7 +120,7 @@ Só que, em zeitnot, observa-se o contrário. O jogador preserva o recurso em ve
 
 E o custo é duplo. O tempo mal distribuído, mas também a atenção consumida pela vigilância do recurso, retirada do próprio cálculo.
 
-O nosso artigo sobre [a gestão do tempo no xadrez](/pt-br/blog/echecs-gestion-du-temps/) trata do lado técnico dessa questão. O que nos interessa aqui é o mecanismo psicológico por trás dela, e ele é idêntico ao dos potes.
+O nosso artigo sobre [a gestão do tempo no xadrez](/pt-br/blog/xadrez-gestao-do-tempo/) trata do lado técnico dessa questão. O que nos interessa aqui é o mecanismo psicológico por trás dela, e ele é idêntico ao dos potes.
 
 ### A escassez como arma
 
@@ -128,7 +128,7 @@ Uma consequência direta, e ela é usada conscientemente por muitos jogadores.
 
 Jogar rápido quando o adversário está com pouco tempo não modifica a posição. Isso acelera a rarefação de um recurso cujo valor percebido já está subindo. É jogo psicológico perfeitamente legítimo, já que o relógio faz parte do jogo, e é terrivelmente eficiente.
 
-A se distinguir do que acontece fora do tabuleiro, tratado no nosso artigo sobre [a manipulação emocional no xadrez](/pt-br/blog/manipulation-emotionnelle-aux-echecs/).
+A se distinguir do que acontece fora do tabuleiro, tratado no nosso artigo sobre [a manipulação emocional no xadrez](/pt-br/blog/manipulacao-emocional-no-xadrez/).
 
 ## O terceiro terreno: a escassez das aberturas
 
@@ -162,7 +162,7 @@ O tempo não vale nada em si. Ele vale só o que compra em qualidade de decisão
 
 ---
 
-*Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/). Veja também [a reciprocidade no xadrez](/pt-br/blog/reciprocite-aux-echecs/) e [a prova social no xadrez](/pt-br/blog/preuve-sociale-aux-echecs/).*
+*Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/). Veja também [a reciprocidade no xadrez](/pt-br/blog/reciprocidade-no-xadrez/) e [a prova social no xadrez](/pt-br/blog/prova-social-no-xadrez/).*
 
 ## Fontes
 

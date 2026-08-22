@@ -134,7 +134,7 @@ Esse custo é coletivo, e age ao longo de décadas.
 
 Uma linha pouco jogada é pouco analisada. Pouco analisada, ela fica num estado teórico incerto. Incerta, é evitada pelos jogadores cautelosos. Evitada, é jogada ainda menos.
 
-O corpus, portanto, se contrai em torno daquilo que já foi explorado, o que não é a mesma coisa que aquilo que é bom. Nosso artigo sobre [o viés do sobrevivente no xadrez](/pt-br/blog/biais-du-survivant-aux-echecs/) descreve esse filtro em detalhe. O conformismo individual é o motor dele, um jogador de cada vez.
+O corpus, portanto, se contrai em torno daquilo que já foi explorado, o que não é a mesma coisa que aquilo que é bom. Nosso artigo sobre [o viés do sobrevivente no xadrez](/pt-br/blog/vies-do-sobrevivente-no-xadrez/) descreve esse filtro em detalhe. O conformismo individual é o motor dele, um jogador de cada vez.
 
 É também por isso que aberturas "refutadas" há décadas ressuscitam com regularidade quando um jogador forte decide olhar para elas com seriedade. Elas não eram ruins: elas estavam abandonadas.
 
@@ -146,7 +146,7 @@ Numa análise coletiva pós-partida, quando três jogadores mais fortes que voc�
 
 Dois elementos merecem ser guardados aqui.
 
-Primeiro, **o resultado sobre a unanimidade se aplica**. Uma única voz discordante já basta para soltar a fala. Se você duvida em silêncio, há boas chances de que outra pessoa também duvide, e de que vocês confirmem mutuamente uma evidência falsa. É a ignorância pluralista descrita no nosso artigo sobre [o efeito espectador no xadrez](/pt-br/blog/effet-spectateur-aux-echecs/).
+Primeiro, **o resultado sobre a unanimidade se aplica**. Uma única voz discordante já basta para soltar a fala. Se você duvida em silêncio, há boas chances de que outra pessoa também duvide, e de que vocês confirmem mutuamente uma evidência falsa. É a ignorância pluralista descrita no nosso artigo sobre [o efeito espectador no xadrez](/pt-br/blog/efeito-espectador-no-xadrez/).
 
 Depois, a ressalva de Bond e Smith é útil aqui: o conformismo não é fatalidade, ele depende do contexto. Um clube onde a contradição é bem recebida produz mecanicamente menos conformismo que um clube onde ela soa como pretensão. É um parâmetro sobre o qual dá para agir.
 
@@ -174,7 +174,7 @@ A pergunta útil, portanto, não é "eu sou original?", que é um objetivo ruim.
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a obediência à autoridade no xadrez](/pt-br/blog/obeissance-a-l-autorite-aux-echecs/) e [o efeito espectador no xadrez](/pt-br/blog/effet-spectateur-aux-echecs/). Um artigo dedicado à psicologia das multidões virá nesta série.*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a obediência à autoridade no xadrez](/pt-br/blog/obediencia-a-autoridade-no-xadrez/) e [o efeito espectador no xadrez](/pt-br/blog/efeito-espectador-no-xadrez/). Um artigo dedicado à psicologia das multidões virá nesta série.*
 
 ## Fontes
 

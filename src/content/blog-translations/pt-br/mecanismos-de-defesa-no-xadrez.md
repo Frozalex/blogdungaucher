@@ -107,7 +107,7 @@ A derrota no xadrez, por sua vez, tem cinco propriedades raras e acumuladas:
 
 **Ela é sem ambiguidade.** O rei está em mate ou não está. Nenhuma interpretação é possível sobre o resultado em si.
 
-**Ela não é atribuível a mais ninguém.** Sem companheiro de equipe, sem lesão, sem decisão de arbitragem. É o assunto do nosso artigo sobre [a solidão no xadrez](/pt-br/blog/echecs-et-la-solitude/): você está regulamentarmente sozinho.
+**Ela não é atribuível a mais ninguém.** Sem companheiro de equipe, sem lesão, sem decisão de arbitragem. É o assunto do nosso artigo sobre [a solidão no xadrez](/pt-br/blog/xadrez-e-solidao/): você está regulamentarmente sozinho.
 
 **Ela não tem nenhuma parcela de sorte.** Sem dado, sem distribuição de cartas, nenhuma parcela de acaso a invocar honestamente. A informação é completa dos dois lados.
 
@@ -135,7 +135,7 @@ A versão mais eficaz dela é a evitação do terreno em si: parar de jogar torn
 
 A emoção é descarregada em comportamento em vez de sentida e pensada.
 
-É a peça que voa, o teclado esmurrado, a desconexão brusca no meio de uma posição perdida. O ragequit é a forma moderna disso, e tem uma neurologia identificável, descrita no nosso artigo sobre [xadrez e raiva](/pt-br/blog/echecs-et-colere-ragequit/).
+É a peça que voa, o teclado esmurrado, a desconexão brusca no meio de uma posição perdida. O ragequit é a forma moderna disso, e tem uma neurologia identificável, descrita no nosso artigo sobre [xadrez e raiva](/pt-br/blog/xadrez-e-raiva-ragequit/).
 
 O que caracteriza a passagem ao ato é que ela **dá um curto-circuito** na emoção. O jogador que bate a porta não sentiu a própria derrota: ele a evacuou antes de senti-la. É por isso que ele não tira nada dali, e que vai repetir.
 
@@ -169,7 +169,7 @@ A fabricação, depois do fato, de uma explicação aceitável.
 
 É a defesa rainha do enxadrista, a ponto de ganhar artigo próprio nesta série. O princípio dela: produzir uma razão plausível, muitas vezes verdadeira, que torna a derrota compatível com a imagem que a pessoa tem de si. Cansaço, ritmo, preparação, forma do dia.
 
-A eficácia dela vem da exatidão. Talvez você estivesse mesmo cansado. O problema não é a veracidade da explicação, é **o momento em que ela chega** e a pergunta que ela permite não fazer. O mecanismo está detalhado no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/).
+A eficácia dela vem da exatidão. Talvez você estivesse mesmo cansado. O problema não é a veracidade da explicação, é **o momento em que ela chega** e a pergunta que ela permite não fazer. O mecanismo está detalhado no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/).
 
 ### A intelectualização
 
@@ -195,7 +195,7 @@ A adoção do sentimento oposto àquele que se experimenta. O jogador excessivam
 
 O fato, separado da emoção que deveria acompanhá-lo. "Eu perdi." Tom neutro, mudança de assunto, nenhum vestígio aparente.
 
-Atenção aqui, porque essa defesa tem um sósia maduro do qual vamos falar mais adiante. A distinção se faz no retorno da emoção: isolada, ela reaparece em outro lugar, em forma de irritabilidade, de cansaço inexplicado, de desinteresse progressivo pelo jogo. O [burnout no xadrez](/pt-br/blog/burnout-chess/) costuma seguir esse caminho.
+Atenção aqui, porque essa defesa tem um sósia maduro do qual vamos falar mais adiante. A distinção se faz no retorno da emoção: isolada, ela reaparece em outro lugar, em forma de irritabilidade, de cansaço inexplicado, de desinteresse progressivo pelo jogo. O [burnout no xadrez](/pt-br/blog/burnout-no-xadrez/) costuma seguir esse caminho.
 
 ## Nível 4: as defesas maduras
 
@@ -217,7 +217,7 @@ O adiamento voluntário e consciente. "Não vou olhar essa partida agora, estou 
 
 É o sósia maduro do isolamento, e a diferença cabe numa palavra: **voluntário**. O jogador sabe que está adiando, sabe por quê, e volta. Vaillant considera a supressão uma das defesas mais adaptativas que existem, e ela é diretamente ensinável, o que é raro nessa área.
 
-É também, exatamente, o conselho prático dado em vários artigos deste blog: analisar a frio, não a quente. Ver [analisar as próprias partidas](/pt-br/blog/analyser-ses-parties/).
+É também, exatamente, o conselho prático dado em vários artigos deste blog: analisar a frio, não a quente. Ver [analisar as próprias partidas](/pt-br/blog/analisar-suas-partidas/).
 
 ### A antecipação
 
@@ -275,7 +275,7 @@ A teoria que organiza tudo isso é mais frágil do que parece, e o DSM-5 tirou a
 
 ---
 
-*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Dois mecanismos inventariados aqui terão artigo próprio: a racionalização e a projeção. Ver também [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/) e [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/). Ver [o índice completo da série](/pt-br/series/psychologie/).*
+*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Dois mecanismos inventariados aqui terão artigo próprio: a racionalização e a projeção. Ver também [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/) e [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/). Ver [o índice completo da série](/pt-br/series/psychologie/).*
 
 ## Fontes
 

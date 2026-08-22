@@ -98,7 +98,7 @@ Se não é (só) uma questão de números, o que acontece na cabeça de uma comp
 
 Como explicar essa queda específica? Por um fenômeno bem documentado: [a ameaça do estereótipo](https://pt.wikipedia.org/wiki/Amea%C3%A7a_dos_este%C3%B3tipos) (*stereotype threat*), teorizada pelos psicólogos [Claude Steele](https://en.wikipedia.org/wiki/Claude_Steele) e Joshua Aronson, da [Universidade Stanford](https://pt.wikipedia.org/wiki/Universidade_Stanford).
 
-Diante de um rival masculino, ela não combate só a posição no tabuleiro. Luta, inconscientemente, contra o peso do preconceito social que a diz inferior. Essa angústia consome largura de banda cognitiva preciosa, que deixa de estar disponível para calcular variantes. Como uma pressão externa degrada a tomada de decisão é analisado em [a psicologia do jogador de xadrez](/pt-br/blog/psychologie-du-joueur-d-echecs/).
+Diante de um rival masculino, ela não combate só a posição no tabuleiro. Luta, inconscientemente, contra o peso do preconceito social que a diz inferior. Essa angústia consome largura de banda cognitiva preciosa, que deixa de estar disponível para calcular variantes. Como uma pressão externa degrada a tomada de decisão é analisado em [a psicologia do jogador de xadrez](/pt-br/blog/psicologia-do-jogador-de-xadrez/).
 
 O fenômeno aparece em vários campos: estudantes vão pior em provas de matemática quando lembradas do próprio sexo; golfistas negros caem de rendimento quando se ativa o estereótipo racial. A pressão dispensa ser dita em voz alta: pertencer a um grupo estigmatizado já basta. É um fardo invisível, ausente do lado do adversário.
 
@@ -162,7 +162,7 @@ A saída mais razoável é matizada: manter as provas reservadas como trampolins
 
 ## Internet: uma tela pode apagar o gênero (e parte do peso)?
 
-O crescimento do jogo online criou um espaço estruturalmente diferente do presencial. No [Chess.com](https://www.chess.com) ou no [Lichess](https://lichess.org), o sexo do adversário é invisível por padrão, e a ameaça do estereótipo perde parte do combustível. (O reverso: tempo online sem pausas estruturadas pode reforçar outros reflexos negativos, veja [os benefícios das pausas](/pt-br/blog/bienfaits-des-pauses-aux-echecs/).)
+O crescimento do jogo online criou um espaço estruturalmente diferente do presencial. No [Chess.com](https://www.chess.com) ou no [Lichess](https://lichess.org), o sexo do adversário é invisível por padrão, e a ameaça do estereótipo perde parte do combustível. (O reverso: tempo online sem pausas estruturadas pode reforçar outros reflexos negativos, veja [os benefícios das pausas](/pt-br/blog/beneficios-das-pausas-no-xadrez/).)
 
 Enquetes de comunidade sugerem que a participação delas online é bem maior que nas provas oficiais da FIDE, chegando a 20 ou 25% em algumas plataformas. Talvez seja o sinal mais claro: boa parte da defasagem vem do ambiente físico, social e simbólico em que a modalidade se desenvolveu, e não de falta de vontade.
 
@@ -180,7 +180,7 @@ Hoje, cada vez mais streamers e comentaristas ocupam o centro do palco na intern
 
 A defasagem é um espelho. Reflete uma sociedade que ainda orienta as crianças para mundos diferentes conforme o sexo, perpetuando preconceitos que os dados já desmontaram. As alavancas são conhecidas: clubes acolhedores desde cedo, instituições que financiam a formação com rigor, uma imprensa que não transforme uma competidora num ângulo exótico.
 
-No Brasil, como no resto do mundo, as federações criam programas de inclusão. A Confederação Brasileira de Xadrez (CBX) e as estaduais organizam provas reservadas, e os campeonatos escolares têm dado resultados animadores. A igualdade é alcançável, desde que as condições mudem de forma duradoura. A ligação com as desigualdades de premiação é tratada em [xadrez e dinheiro](/pt-br/blog/echecs-et-argent/): o mesmo círculo vicioso de público pequeno, prêmios baixos e carreiras arriscadas.
+No Brasil, como no resto do mundo, as federações criam programas de inclusão. A Confederação Brasileira de Xadrez (CBX) e as estaduais organizam provas reservadas, e os campeonatos escolares têm dado resultados animadores. A igualdade é alcançável, desde que as condições mudem de forma duradoura. A ligação com as desigualdades de premiação é tratada em [xadrez e dinheiro](/pt-br/blog/quanto-ganha-jogador-de-xadrez/): o mesmo círculo vicioso de público pequeno, prêmios baixos e carreiras arriscadas.
 
 ## O tabuleiro não precisa de desculpas: precisa de volume
 

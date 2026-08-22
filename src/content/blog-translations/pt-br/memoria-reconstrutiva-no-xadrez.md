@@ -95,7 +95,7 @@ Antes de tudo é preciso traçar duas fronteiras, porque este assunto tem dois v
 
 **Não se trata da memorização de posições.** O jeito como um jogador forte retém uma posição em poucos segundos é assunto de chunks e de expertise perceptiva, tratado no nosso artigo sobre [memorizar partidas no xadrez](/pt-br/blog/memoriser-parties-aux-echecs/).
 
-**Também não se trata da implantação por uma fonte externa.** Nosso artigo sobre [as falsas memórias no xadrez](/pt-br/blog/faux-souvenirs-aux-echecs/) descreve o que acontece quando uma análise ou uma pergunta sugestiva introduz um conteúdo que não estava lá.
+**Também não se trata da implantação por uma fonte externa.** Nosso artigo sobre [as falsas memórias no xadrez](/pt-br/blog/falsas-memorias-no-xadrez/) descreve o que acontece quando uma análise ou uma pergunta sugestiva introduz um conteúdo que não estava lá.
 
 Aqui a questão é o mecanismo **normal**, sem nenhuma intervenção externa. Ninguém sugere nada para você. A sua lembrança se deforma sozinha, na direção daquilo que você já acredita sobre si mesmo.
 
@@ -115,7 +115,7 @@ O resultado, ao cabo de alguns anos, é um conjunto de lembranças notavelmente 
 
 **A vitória vira controlada.** Os momentos em que você não sabia o que jogar somem, porque não combinam com o fato de ter ganho. O plano aparece, em retrospecto, como se tivesse sido pretendido desde o começo.
 
-**A derrota vira fatal.** O contrário. Os momentos em que você estava melhor se apagam, e a partida vira uma ladeira contínua. É o que alimenta as análises falsas do tipo "eu estava perdido desde o lance 20", descritas no nosso artigo sobre [o gaslighting no xadrez](/pt-br/blog/gaslighting-aux-echecs/), com a diferença de que aqui ninguém está impondo isso a você.
+**A derrota vira fatal.** O contrário. Os momentos em que você estava melhor se apagam, e a partida vira uma ladeira contínua. É o que alimenta as análises falsas do tipo "eu estava perdido desde o lance 20", descritas no nosso artigo sobre [o gaslighting no xadrez](/pt-br/blog/gaslighting-no-xadrez/), com a diferença de que aqui ninguém está impondo isso a você.
 
 **A causalidade se estreita.** Uma partida raramente se decide num único lance. A lembrança, porém, sempre aponta um, porque todo relato precisa de uma virada.
 
@@ -125,7 +125,7 @@ Ele não está na exatidão da lembrança em si. Está nas **decisões** que voc
 
 Você escolhe seu repertório, seu programa de trabalho e seus objetivos a partir da ideia que faz do seu jogo. Só que essa ideia vem de lembranças que foram normalizadas, ao longo de anos, na direção dessa mesma ideia.
 
-É um circuito fechado. O esquema deforma as lembranças, e as lembranças confirmam o esquema. É também a matéria-prima das profecias autorrealizáveis descritas [no artigo correspondente](/pt-br/blog/prophetie-auto-realisatrice-aux-echecs/) desta série.
+É um circuito fechado. O esquema deforma as lembranças, e as lembranças confirmam o esquema. É também a matéria-prima das profecias autorrealizáveis descritas [no artigo correspondente](/pt-br/blog/profecia-autorrealizavel-no-xadrez/) desta série.
 
 ## O lado bom da reconstrução
 
@@ -137,7 +137,7 @@ E a reconsolidação, que deixa a lembrança modificável no momento da evocaç�
 
 Reler uma partida comentada é passivo: a lembrança não é evocada, é reconhecida, o que produz uma forte impressão de domínio e pouco traço. Reconstituir a partida **de memória**, num tabuleiro vazio, força uma evocação verdadeira, portanto uma reconsolidação, portanto um reforço.
 
-É o mecanismo que explica por que o exercício mais desagradável é também o mais eficaz. O método geral está detalhado no nosso artigo sobre [analisar suas partidas](/pt-br/blog/analyser-ses-parties/).
+É o mecanismo que explica por que o exercício mais desagradável é também o mais eficaz. O método geral está detalhado no nosso artigo sobre [analisar suas partidas](/pt-br/blog/analisar-suas-partidas/).
 
 ## O protocolo
 
@@ -165,7 +165,7 @@ A mesma propriedade, virada do avesso, é o que torna a recordação ativa tão 
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [as falsas memórias no xadrez](/pt-br/blog/faux-souvenirs-aux-echecs/) para a versão patológica deste mecanismo, e [memorizar partidas no xadrez](/pt-br/blog/memoriser-parties-aux-echecs/) para a memória das posições.*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [as falsas memórias no xadrez](/pt-br/blog/falsas-memorias-no-xadrez/) para a versão patológica deste mecanismo, e [memorizar partidas no xadrez](/pt-br/blog/memoriser-parties-aux-echecs/) para a memória das posições.*
 
 ## Fontes
 

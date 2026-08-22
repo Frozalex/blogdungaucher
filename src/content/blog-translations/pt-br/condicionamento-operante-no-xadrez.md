@@ -98,7 +98,7 @@ Olhe a estrutura, sem julgamento moral.
 
 Temos então uma razão variável quase perfeita, com um intervalo curtíssimo e custo de entrada zero. Do ponto de vista do modelo, é a configuração que produz o comportamento mais intenso e mais difícil de interromper.
 
-Isso não é uma acusação de design mal-intencionado. Essa estrutura não vem de uma escolha: ela decorre naturalmente de um jogo competitivo rápido em que dá para emendar uma partida na outra. Nosso artigo sobre [xadrez e vício](/pt-br/blog/les-echecs-et-l-addiction/) trata do lado clínico, e o de [dopamina e xadrez](/pt-br/blog/echecs-et-dopamine/), do lado neuroquímico. O que nos interessa aqui é puramente comportamental: qual regra de entrega, qual efeito sobre a frequência.
+Isso não é uma acusação de design mal-intencionado. Essa estrutura não vem de uma escolha: ela decorre naturalmente de um jogo competitivo rápido em que dá para emendar uma partida na outra. Nosso artigo sobre [xadrez e vício](/pt-br/blog/vicio-em-xadrez/) trata do lado clínico, e o de [dopamina e xadrez](/pt-br/blog/dopamina-e-xadrez/), do lado neuroquímico. O que nos interessa aqui é puramente comportamental: qual regra de entrega, qual efeito sobre a frequência.
 
 ### Por que a derrota aumenta a vontade de jogar de novo
 
@@ -145,13 +145,13 @@ Essa nota se sustenta em duas ou três partidas por dia, não em dezessete. E el
 
 O *shaping*, ou modelagem por aproximações sucessivas, é a outra grande contribuição de Skinner. Não se espera o comportamento final para recompensar: recompensa-se cada etapa que se aproxima dele.
 
-Aplicado ao treino, isso quer dizer que a dificuldade precisa ser calibrada para produzir acertos frequentes. Exercícios difíceis demais não reforçam nada, já que não produzem sucesso. É também o que aparece no modelo do aprendizado do controle descrito no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/impuissance-apprise-aux-echecs/).
+Aplicado ao treino, isso quer dizer que a dificuldade precisa ser calibrada para produzir acertos frequentes. Exercícios difíceis demais não reforçam nada, já que não produzem sucesso. É também o que aparece no modelo do aprendizado do controle descrito no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/).
 
 ### 3. Quebre a razão variável com uma regra externa
 
 Como a ausência de recompensa não é um sinal de parada, nenhum sinal de parada virá do próprio esquema. Ele tem que vir de fora.
 
-Uma regra numérica, decidida a frio, do tipo três partidas e eu paro, funciona por um motivo preciso: ela não depende do seu estado nem do resultado. É o mesmo princípio exposto no nosso artigo sobre [a inteligência emocional no xadrez](/pt-br/blog/intelligence-emotionnelle-aux-echecs/).
+Uma regra numérica, decidida a frio, do tipo três partidas e eu paro, funciona por um motivo preciso: ela não depende do seu estado nem do resultado. É o mesmo princípio exposto no nosso artigo sobre [a inteligência emocional no xadrez](/pt-br/blog/inteligencia-emocional-no-xadrez/).
 
 Acrescente um obstáculo físico. Dez segundos de atrito costumam bastar para transformar um impulso em decisão.
 
@@ -169,7 +169,7 @@ O remédio não é jogar menos por virtude. É criar um reforço que incida sobr
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. O próximo trata do condicionamento clássico, que diz respeito a associações involuntárias em vez de consequências. Veja também [dopamina e xadrez](/pt-br/blog/echecs-et-dopamine/) e [a formação de hábitos no xadrez](/pt-br/blog/formation-des-habitudes-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. O próximo trata do condicionamento clássico, que diz respeito a associações involuntárias em vez de consequências. Veja também [dopamina e xadrez](/pt-br/blog/dopamina-e-xadrez/) e [a formação de hábitos no xadrez](/pt-br/blog/formacao-de-habitos-no-xadrez/).*
 
 ## Fontes
 

@@ -76,7 +76,7 @@ La première chose qui frappe n'importe quel observateur, c'est l'évidente pare
 
 Toute l'information est là, étalée sous tes yeux et ceux de ton adversaire. C'est exactement le même point de départ qu'un problème de géométrie ou d'algèbre : l'énoncé te donne des postulats de départ, et c'est à toi d'en tirer les conclusions logiques.
 
-Ces propriétés spatiales ne sont pas que décoratives : elles ancrent les échecs dans un cadre mathématique rigoureux, celui de la géométrie discrète et de la [théorie des jeux à information parfaite](/blog/theorie-des-jeux-aux-echecs/), avec deux problèmes classiques qui ont fait travailler des générations de mathématiciens.
+Ces propriétés spatiales ne sont pas que décoratives : elles ancrent les échecs dans un cadre mathématique rigoureux, celui de la géométrie discrète et de la [théorie des jeux à information parfaite](/fr/blog/theorie-des-jeux-aux-echecs/), avec deux problèmes classiques qui ont fait travailler des générations de mathématiciens.
 
 ### Deux problèmes mathématiques nés de l'échiquier
 
@@ -98,7 +98,7 @@ Après seulement trois coups de chaque côté, il y a déjà plus de neuf millio
 
 ![Explosion combinatoire aux échecs : de 400 positions après 2 coups à 10^120 parties possibles (nombre de Shannon) — 40 ordres de grandeur au-dessus du nombre d'atomes dans l'univers observable (10^80).](/images/echecs-maths-03-shannon.svg)
 
-Quand tu t'assois devant le plateau pour calculer la ligne forcée d'un sacrifice, ton cerveau doit opérer exactement comme un algorithme mathématique de théorie des graphes. Tu dois visualiser ce que les cours appellent souvent un arbre de probabilités. C'est la base de l'algorithme [minimax](/blog/minimax-aux-echecs/) : un pont documenté entre la théorie des jeux et l'intelligence artificielle appliquée aux échecs. (Le détail de ce mécanisme, minimax, élagage alpha-bêta et comment les moteurs modernes gèrent cette explosion, est développé dans l'article [Pourquoi les échecs sont un problème mathématique (presque) impossible](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
+Quand tu t'assois devant le plateau pour calculer la ligne forcée d'un sacrifice, ton cerveau doit opérer exactement comme un algorithme mathématique de théorie des graphes. Tu dois visualiser ce que les cours appellent souvent un arbre de probabilités. C'est la base de l'algorithme [minimax](/fr/blog/minimax-aux-echecs/) : un pont documenté entre la théorie des jeux et l'intelligence artificielle appliquée aux échecs. (Le détail de ce mécanisme, minimax, élagage alpha-bêta et comment les moteurs modernes gèrent cette explosion, est développé dans l'article [Pourquoi les échecs sont un problème mathématique (presque) impossible](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
 
 Ta pensée se structure ainsi : "Si je fais telle action, il peut répondre par l'option A ou B. S'il répond A, j'ai les options C ou D à ma disposition..."
 
@@ -192,7 +192,7 @@ Si tu cherches une promesse honnête, la voilà : les échecs ne remplacent pas 
 
 Le bon pitch n’est donc pas “les échecs rendent bon en maths”, mais “les échecs peuvent aider à construire une posture face aux problèmes”. Et cette posture, elle peut servir en maths… comme dans la vraie vie.
 
-**Après lecture :** un problème tactique par jour pendant une semaine, **hypothèse écrite avant** la solution ; pour la combinatoire et les moteurs, enchaîne avec [pourquoi les échecs restent un problème mathématique brutal pour l’IA](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
+**Après lecture :** un problème tactique par jour pendant une semaine, **hypothèse écrite avant** la solution ; pour la combinatoire et les moteurs, enchaîne avec [pourquoi les échecs restent un problème mathématique brutal pour l’IA](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
 
 ---
 

@@ -107,7 +107,7 @@ O estudo mais citado para demonstrar que o aprendizado transforma o cérebro de 
 
 ## O salto lógico
 
-Vamos admitir tudo o que veio antes, e acrescentar os estudos feitos diretamente com jogadores de xadrez, que de fato evidenciaram diferenças estruturais entre experts e novatos. Nosso artigo sobre [o xadrez e o cérebro](/pt-br/blog/les-echecs-et-le-cerveau/) detalha isso.
+Vamos admitir tudo o que veio antes, e acrescentar os estudos feitos diretamente com jogadores de xadrez, que de fato evidenciaram diferenças estruturais entre experts e novatos. Nosso artigo sobre [o xadrez e o cérebro](/pt-br/blog/xadrez-e-o-cerebro/) detalha isso.
 
 Continua tendo um problema, e é esse o assunto de verdade.
 
@@ -143,7 +143,7 @@ Não se trata de concluir que o xadrez não faz nada. Ele faz muito, só que nã
 
 **Você fica de fato melhor no xadrez, e isso é uma transformação cognitiva considerável.** Um jogador experiente não vê o mesmo tabuleiro que um iniciante. Ele percebe estruturas onde o outro vê peças, o que a pesquisa chama de *chunking*. Essa competência é real, mensurável e profunda. Ela é simplesmente **específica**.
 
-**Alguns efeitos menos espetaculares resistem melhor.** A ligação entre atividades cognitivas sustentadas e reserva cognitiva na velhice é documentada, mesmo com problemas de causalidade, e nosso artigo sobre [xadrez e Alzheimer](/pt-br/blog/echecs-alzheimer-prevention-declin-cognitif/) discute os limites disso.
+**Alguns efeitos menos espetaculares resistem melhor.** A ligação entre atividades cognitivas sustentadas e reserva cognitiva na velhice é documentada, mesmo com problemas de causalidade, e nosso artigo sobre [xadrez e Alzheimer](/pt-br/blog/xadrez-alzheimer-prevencao-declinio-cognitivo/) discute os limites disso.
 
 **E o prazer não precisa de justificativa neurológica.** Talvez seja essa a verdadeira questão de todo este artigo.
 
@@ -179,7 +179,7 @@ O xadrez deixa você bom de xadrez. Já é muita coisa, e essa já era a única 
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/) e [o viés do sobrevivente no xadrez](/pt-br/blog/biais-du-survivant-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/) e [o viés do sobrevivente no xadrez](/pt-br/blog/vies-do-sobrevivente-no-xadrez/).*
 
 ## Fontes
 

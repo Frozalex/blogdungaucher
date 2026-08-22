@@ -106,7 +106,7 @@ A boa pergunta não é "a inteligência emocional prevê o desempenho", mas **"e
 
 As meta-análises lhes dão bastante razão. Para a inteligência emocional-aptidão, a validade incremental sobre o desempenho no trabalho, para além dos cinco grandes traços de personalidade e da inteligência geral, é fraca ou nula. As medidas mistas preveem melhor, mas já incluem traços de personalidade, o que torna difícil interpretar o resultado de outro jeito que não como redundância.
 
-E um terceiro problema se soma no caso dos questionários autorrelatados, este familiar aos leitores desta série: **eles pedem às pessoas que avaliem uma competência cujo déficit impede justamente a avaliação**. É a estrutura exata do efeito descrito no nosso artigo sobre [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/).
+E um terceiro problema se soma no caso dos questionários autorrelatados, este familiar aos leitores desta série: **eles pedem às pessoas que avaliem uma competência cujo déficit impede justamente a avaliação**. É a estrutura exata do efeito descrito no nosso artigo sobre [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/).
 
 ## O que sobra, e por que isso interessa ao xadrez
 
@@ -118,7 +118,7 @@ Tomado isoladamente, isso não é uma teoria do sucesso. É uma questão factual
 
 O tilt não é perigoso porque deixa você triste. Ele é perigoso porque **degrada a qualidade das suas decisões enquanto degrada a sua capacidade de constatar que elas estão degradadas**. As duas deteriorações chegam juntas. É o que torna o conselho "pare de jogar quando estiver em tilt" ao mesmo tempo obviamente certo e praticamente inaplicável: no momento em que seria preciso aplicá-lo, o instrumento de medida está quebrado.
 
-O nosso artigo sobre [xadrez e raiva](/pt-br/blog/echecs-et-colere-ragequit/) descreve o circuito neurológico envolvido. Aqui, a pergunta é outra: como saber que você está nele.
+O nosso artigo sobre [xadrez e raiva](/pt-br/blog/xadrez-e-raiva-ragequit/) descreve o circuito neurológico envolvido. Aqui, a pergunta é outra: como saber que você está nele.
 
 ## A vantagem que o xadrez tem
 
@@ -184,7 +184,7 @@ A boa notícia é que você não precisa resolver esse problema por introspecç�
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/), [xadrez e raiva](/pt-br/blog/echecs-et-colere-ragequit/) e [a formação de hábitos no xadrez](/pt-br/blog/formation-des-habitudes-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/), [xadrez e raiva](/pt-br/blog/xadrez-e-raiva-ragequit/) e [a formação de hábitos no xadrez](/pt-br/blog/formacao-de-habitos-no-xadrez/).*
 
 ## Fontes
 

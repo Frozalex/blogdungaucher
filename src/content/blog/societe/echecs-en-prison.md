@@ -145,7 +145,7 @@ Chaque activité travaille des dimensions différentes. Ce qui est spécifique a
 
 ## Les mêmes mécanismes, d'autres contextes
 
-Les déficits cognitifs que les échecs travaillent dans le contexte carcéral, impulsivité, planification déficiente, difficulté à modéliser l'autre, se retrouvent dans d'autres profils souvent associés à des trajectoires de vulnérabilité sociale. L'article sur [les échecs et le TDAH](/blog/echecs-et-tdah/) explore ces mêmes mécanismes pour un profil neurodéveloppemental particulièrement représenté dans les populations carcérales : on estime que 25 à 40 % des personnes incarcérées présentent un TDAH non diagnostiqué.
+Les déficits cognitifs que les échecs travaillent dans le contexte carcéral, impulsivité, planification déficiente, difficulté à modéliser l'autre, se retrouvent dans d'autres profils souvent associés à des trajectoires de vulnérabilité sociale. L'article sur [les échecs et le TDAH](/fr/blog/echecs-et-tdah/) explore ces mêmes mécanismes pour un profil neurodéveloppemental particulièrement représenté dans les populations carcérales : on estime que 25 à 40 % des personnes incarcérées présentent un TDAH non diagnostiqué.
 
 Ce n'est pas un détail. Si une part significative des comportements impulsifs qui mènent à l'incarcération est d'origine neurologique plutôt que morale, l'approche par l'entraînement des fonctions cognitives, dont les échecs sont un outil, prend une dimension encore plus claire.
 
@@ -193,7 +193,7 @@ C'est une des dimensions les plus intéressantes. Anticiper le coup de son adver
 
 ---
 
-L'échiquier enseigne quelque chose que peu d'activités enseignent aussi clairement : chaque décision a une conséquence visible et irréversible, et l'adversaire en face de toi a une perspective que tu as intérêt à comprendre. Les programmes qui **durent** combinent jeu, **accompagnement humain stable** et **suite après la sortie** ; l’échiquier seul ne réécrit pas un parcours. Pour les effets cognitifs mesurés hors milieu carcéral, voir [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
+L'échiquier enseigne quelque chose que peu d'activités enseignent aussi clairement : chaque décision a une conséquence visible et irréversible, et l'adversaire en face de toi a une perspective que tu as intérêt à comprendre. Les programmes qui **durent** combinent jeu, **accompagnement humain stable** et **suite après la sortie** ; l’échiquier seul ne réécrit pas un parcours. Pour les effets cognitifs mesurés hors milieu carcéral, voir [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/).
 
 **Après lecture :** si tu pilotes ou soutiens un atelier, trace **un** objectif mesurable en établissement (respect du temps, formulation du coup joué) pendant six séances avant d’évaluer quoi que ce soit sur la récidive.
 

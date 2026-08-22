@@ -41,7 +41,7 @@ No mesmo ano, o Campeonato Mundial de Fórmula 1 distribuiu cerca de 1,2 bilhão
 
 Magnus Carlsen, o melhor jogador da história do xadrez segundo praticamente todos os indicadores, acumulou cerca de 2,4 milhões de dólares em premiação ao longo de toda a sua carreira de torneios. Não por temporada. Na carreira inteira.
 
-Não é um problema de popularidade: o xadrez tem de 600 a 800 milhões de jogadores no mundo, segundo as estimativas. É um problema de estrutura econômica. E essa estrutura é mais interessante de destrinchar do que os números deixam supor. (Para o contexto sociológico em que esse problema se encaixa, em especial a sub-representação das mulheres nos circuitos pagos, veja [xadrez e mulheres](/pt-br/blog/echecs-et-femmes/).)
+Não é um problema de popularidade: o xadrez tem de 600 a 800 milhões de jogadores no mundo, segundo as estimativas. É um problema de estrutura econômica. E essa estrutura é mais interessante de destrinchar do que os números deixam supor. (Para o contexto sociológico em que esse problema se encaixa, em especial a sub-representação das mulheres nos circuitos pagos, veja [xadrez e mulheres](/pt-br/blog/mulheres-no-xadrez/).)
 
 ## Os números que chocam
 
@@ -115,7 +115,7 @@ Mas eis a pergunta econômica que se impõe: **quem captura o valor criado por e
 
 Esse modelo tem um limite: funciona para as personalidades carismáticas e para os jogadores já no topo, que se beneficiam de uma fama preexistente. Não resolve o problema econômico dos 1.750 Grandes Mestres que não são o Hikaru Nakamura.
 
-Ele também cria uma nova hierarquia no mundo do xadrez: a da audiência, não a do nível de jogo. Um jogador de 2600 de Elo pouco carismático vai ganhar menos que um jogador de 2450 que sabe animar uma comunidade. É uma transformação profunda dos incentivos no meio, que, aliás, se conecta ao debate mais amplo sobre [a psicologia competitiva do jogador](/pt-br/blog/psychologie-du-joueur-d-echecs/): quando a renda depende mais do público do que do resultado, a pressão e as motivações mudam de natureza.
+Ele também cria uma nova hierarquia no mundo do xadrez: a da audiência, não a do nível de jogo. Um jogador de 2600 de Elo pouco carismático vai ganhar menos que um jogador de 2450 que sabe animar uma comunidade. É uma transformação profunda dos incentivos no meio, que, aliás, se conecta ao debate mais amplo sobre [a psicologia competitiva do jogador](/pt-br/blog/psicologia-do-jogador-de-xadrez/): quando a renda depende mais do público do que do resultado, a pressão e as motivações mudam de natureza.
 
 ### Os torneios online: mais dinheiro, menos prestígio
 

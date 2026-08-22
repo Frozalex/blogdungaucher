@@ -82,7 +82,7 @@ Resultado: **o efeito médio é praticamente nulo.**
 
 Não é um efeito menor do que se anunciava. É um efeito cuja média, sobre o conjunto dos dados disponíveis, não se distingue de zero. Vários experimentos encontram até o contrário: mais opções facilita a decisão e aumenta a satisfação.
 
-A inclusão de estudos não publicados é importante aqui, porque corrige em parte o viés de publicação: um experimento que não encontra nada tem menos chance de sair, o que infla artificialmente os efeitos na literatura visível. É uma forma de [viés do sobrevivente](/pt-br/blog/biais-du-survivant-aux-echecs/) aplicada à própria ciência.
+A inclusão de estudos não publicados é importante aqui, porque corrige em parte o viés de publicação: um experimento que não encontra nada tem menos chance de sair, o que infla artificialmente os efeitos na literatura visível. É uma forma de [viés do sobrevivente](/pt-br/blog/vies-do-sobrevivente-no-xadrez/) aplicada à própria ciência.
 
 ### A parte útil do resultado
 
@@ -98,7 +98,7 @@ Os trabalhos posteriores propuseram várias condições favoráveis e acontece q
 
 **Quando não se tem preferência prévia.** Um consumidor que gosta de morango escolhe em dois segundos entre 24 potes. Um jogador que ainda não sabe que tipo de posição combina com ele não tem critério nenhum.
 
-**Quando não se tem a expertise para avaliar as opções.** Esse é o ponto decisivo, e ele é estrutural: **a escolha de um repertório exige uma competência que só se terá depois de ter jogado o repertório**. É a mesma assimetria descrita no nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/).
+**Quando não se tem a expertise para avaliar as opções.** Esse é o ponto decisivo, e ele é estrutural: **a escolha de um repertório exige uma competência que só se terá depois de ter jogado o repertório**. É a mesma assimetria descrita no nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/).
 
 Essas três condições estão reunidas quase perfeitamente no xadrez. O que explica por que a dificuldade é real, mesmo que o efeito geral não seja.
 
@@ -126,7 +126,7 @@ Cabe acrescentar que a troca de repertório é quase sempre disparada por uma de
 
 Trocar de abertura é uma ação concreta, visível, agradável, que dá a sensação de estar fazendo alguma coisa. Trabalhar os finais não oferece nada disso. E, principalmente, trocar de abertura fornece uma **explicação retrospectiva** para a derrota que não põe o jogador em causa: não fui eu, foi a abertura.
 
-Dá para reconhecer aí o mecanismo descrito no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/). Com a diferença de que aqui a dissonância não produz uma desculpa: ela produz uma decisão cara.
+Dá para reconhecer aí o mecanismo descrito no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/). Com a diferença de que aqui a dissonância não produz uma desculpa: ela produz uma decisão cara.
 
 ## O protocolo
 
@@ -152,7 +152,7 @@ Fixe uma única dimensão e decida por ela. Por exemplo: quero uma abertura com 
 
 ### 4. Separe a escolha do repertório do resto do treino
 
-O tempo gasto escolhendo é tempo que não vai para a tática nem para os finais, que são os itens mais bem documentados em termos de rendimento. O nosso artigo sobre [a regra 40-40-20](/pt-br/blog/regle-40-40-20-echecs/) detalha essa distribuição, e [vale mesmo a pena estudar aberturas](/pt-br/blog/faut-il-vraiment-etudier-les-ouvertures/) pega o problema pela outra ponta.
+O tempo gasto escolhendo é tempo que não vai para a tática nem para os finais, que são os itens mais bem documentados em termos de rendimento. O nosso artigo sobre [a regra 40-40-20](/pt-br/blog/regra-40-40-20-xadrez/) detalha essa distribuição, e [vale mesmo a pena estudar aberturas](/pt-br/blog/faut-il-vraiment-etudier-les-ouvertures/) pega o problema pela outra ponta.
 
 ## O que fica
 
@@ -168,7 +168,7 @@ Daí uma conclusão pouco intuitiva. A pergunta certa não é qual abertura esco
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a formação de hábitos no xadrez](/pt-br/blog/formation-des-habitudes-aux-echecs/) e [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a formação de hábitos no xadrez](/pt-br/blog/formacao-de-habitos-no-xadrez/) e [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/).*
 
 ## Fontes
 

@@ -55,7 +55,7 @@ O xadrez fez uma coisa que nenhum outro passatempo fez. Ele não apenas tornou a
 
 ## Festinger, 1954
 
-Seis anos antes do experimento do dólar que o deixou famoso e que vimos no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/), [Leon Festinger](https://en.wikipedia.org/wiki/Social_comparison_theory) publica na *Human Relations* uma teoria mais discreta e provavelmente mais universal.
+Seis anos antes do experimento do dólar que o deixou famoso e que vimos no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/), [Leon Festinger](https://en.wikipedia.org/wiki/Social_comparison_theory) publica na *Human Relations* uma teoria mais discreta e provavelmente mais universal.
 
 A proposta dele cabe em três ideias.
 
@@ -99,7 +99,7 @@ E esse ponto pesa mais do que parece, porque a teoria de Festinger descreve uma 
 
 ### O rating vira uma medida de si mesmo
 
-É o desvio central, e ele é tratado a fundo no nosso artigo sobre [Elo e autoestima](/pt-br/blog/echecs-estime-de-soi-elo/).
+É o desvio central, e ele é tratado a fundo no nosso artigo sobre [Elo e autoestima](/pt-br/blog/xadrez-autoestima-elo/).
 
 O deslizamento é simples de descrever. O rating mede resultados. Como ele é o único número disponível e é exato, acaba medindo o jogador. Depois a pessoa.
 
@@ -111,7 +111,7 @@ As flutuações normais de um rating, num volume de partidas habitual, superam d
 
 Só que a exibição diária convida a interpretar cada variação. Um jogador que consulta o rating depois de cada partida passa a maior parte do tempo interpretando ruído, com os efeitos afetivos correspondentes.
 
-É também o que torna o rating inutilizável como sinal de aprendizado, pelas razões desenvolvidas no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/impuissance-apprise-aux-echecs/): lento demais, ruidoso demais, não atribuível.
+É também o que torna o rating inutilizável como sinal de aprendizado, pelas razões desenvolvidas no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/): lento demais, ruidoso demais, não atribuível.
 
 ### A comparação lateral, a mais dolorosa
 
@@ -157,7 +157,7 @@ A saída não é ignorar o rating, o que seria abrir mão de uma informação re
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [Elo e autoestima](/pt-br/blog/echecs-estime-de-soi-elo/), [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/) e [o desamparo aprendido no xadrez](/pt-br/blog/impuissance-apprise-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [Elo e autoestima](/pt-br/blog/xadrez-autoestima-elo/), [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/) e [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/).*
 
 ## Fontes
 

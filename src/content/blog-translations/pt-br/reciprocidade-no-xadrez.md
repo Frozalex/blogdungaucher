@@ -54,7 +54,7 @@ Vinte e cinco minutos depois, você entendeu três coisas que não teria encontr
 
 Ainda assim, você deve alguma coisa a ele, e vocês dois sabem disso sem que seja dito.
 
-Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/), que apresenta as sete alavancas. Ele trata da alavanca mais antiga, a mais sólida experimentalmente, e a única cujo uso é tão frequentemente benéfico quanto manipulador.
+Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/), que apresenta as sete alavancas. Ele trata da alavanca mais antiga, a mais sólida experimentalmente, e a única cujo uso é tão frequentemente benéfico quanto manipulador.
 
 ## A latinha de Regan
 
@@ -110,9 +110,9 @@ Na maioria das vezes, o jogador mais forte dá mais: ele enxerga mais coisas, ex
 
 Isso cria uma **obrigação difusa**, nunca formulada, e que produz efeitos reais nos clubes.
 
-**Alguns jogadores nunca pedem análise.** Não por timidez, mas porque percebem a dívida e não veem como pagá-la. É uma perda considerável, já que a análise feita por um jogador mais forte é de longe o retorno mais rico disponível, como lembra o nosso artigo sobre [analisar as próprias partidas](/pt-br/blog/analyser-ses-parties/).
+**Alguns jogadores nunca pedem análise.** Não por timidez, mas porque percebem a dívida e não veem como pagá-la. É uma perda considerável, já que a análise feita por um jogador mais forte é de longe o retorno mais rico disponível, como lembra o nosso artigo sobre [analisar as próprias partidas](/pt-br/blog/analisar-suas-partidas/).
 
-**Outros pagam em moeda social.** Admiração, deferência, aceitação sistemática das opiniões. O que cria um problema: a dívida então é paga **abrindo mão de contestar**, o que esvazia parte do valor da análise e prepara o terreno para os mecanismos descritos no nosso artigo sobre [a obediência à autoridade no xadrez](/pt-br/blog/obeissance-a-l-autorite-aux-echecs/).
+**Outros pagam em moeda social.** Admiração, deferência, aceitação sistemática das opiniões. O que cria um problema: a dívida então é paga **abrindo mão de contestar**, o que esvazia parte do valor da análise e prepara o terreno para os mecanismos descritos no nosso artigo sobre [a obediência à autoridade no xadrez](/pt-br/blog/obediencia-a-autoridade-no-xadrez/).
 
 **E a solução é estrutural.** Um clube que institui a análise como prática normal, sistemática e esperada elimina a dívida, porque um costume coletivo não compromete ninguém individualmente. É provavelmente o arranjo mais útil que um clube pode adotar, e não custa nada.
 
@@ -122,7 +122,7 @@ Elas existem, e são reais.
 
 Devolver um lance jogado por engano quando o regulamento não obriga. Aceitar um empate por cortesia depois de ter conseguido um nas mesmas circunstâncias. Relevar um relógio mal apertado.
 
-Esses gestos criam uma expectativa de retorno. O que é perfeitamente saudável entre jogadores de boa-fé, e manipulável no caso contrário, como descreve o nosso artigo sobre [a manipulação emocional no xadrez](/pt-br/blog/manipulation-emotionnelle-aux-echecs/).
+Esses gestos criam uma expectativa de retorno. O que é perfeitamente saudável entre jogadores de boa-fé, e manipulável no caso contrário, como descreve o nosso artigo sobre [a manipulação emocional no xadrez](/pt-br/blog/manipulacao-emocional-no-xadrez/).
 
 O caso mais nítido continua sendo a oferta de empate: aceitar um empate que você não deveria aceitar porque o adversário foi complacente em outra coisa é um pagamento de dívida disfarçado de decisão enxadrística.
 
@@ -138,7 +138,7 @@ No xadrez, isso aparece na organização: condições de participação, horári
 
 Essa alavanca tem uma particularidade: é a única da lista de Cialdini cujo **uso sincero é francamente bom**. Não se trata, portanto, só de se proteger dela.
 
-**Dê primeiro, sem esperar nada.** Num clube, propor uma análise a um jogador mais fraco é uma doação real, e produz um efeito real. É isso que constrói uma comunidade, e é isso também que responde à necessidade de vínculo descrita no nosso artigo sobre [a teoria da autodeterminação no xadrez](/pt-br/blog/theorie-auto-determination-aux-echecs/).
+**Dê primeiro, sem esperar nada.** Num clube, propor uma análise a um jogador mais fraco é uma doação real, e produz um efeito real. É isso que constrói uma comunidade, e é isso também que responde à necessidade de vínculo descrita no nosso artigo sobre [a teoria da autodeterminação no xadrez](/pt-br/blog/teoria-da-autodeterminacao-no-xadrez/).
 
 **Deixe a dívida explicitamente cancelável.** Se você é quem dá, diga: "um dia você me mostra uma partida sua". Isso transforma uma obrigação vaga numa troca nomeada, o que é bem mais confortável para quem recebe.
 
@@ -160,7 +160,7 @@ O remédio não é individual, é coletivo. Uma prática instituída não compro
 
 ---
 
-*Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/). Outros dois tratam da prova social e da escassez.*
+*Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/). Outros dois tratam da prova social e da escassez.*
 
 ## Fontes
 

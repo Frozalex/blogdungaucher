@@ -92,7 +92,7 @@ Quem tinha recebido a bebida compra cerca de duas vezes mais. E o resultado se m
 
 **No xadrez:** ele age principalmente sobre você mesmo, e é aí que sai mais caro. Anunciar publicamente o seu objetivo de rating. Se inscrever num programa de um ano. Comprar um repertório completo. Cada um desses atos cria um compromisso que fica psicologicamente caro de renegar, independentemente do valor real dele.
 
-É exatamente a estrutura da justificação do esforço descrita no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/): quanto mais você investiu, menos consegue concluir que foi um erro.
+É exatamente a estrutura da justificação do esforço descrita no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/): quanto mais você investiu, menos consegue concluir que foi um erro.
 
 ### 3. A prova social
 
@@ -108,7 +108,7 @@ Quem tinha recebido a bebida compra cerca de duas vezes mais. E o resultado se m
 
 **No xadrez:** essa alavanca é provavelmente mais poderosa aqui do que em qualquer outra área, porque a autoridade aqui é **numérica**. Um título e um rating são marcadores objetivos e públicos, e essa objetividade dá a eles um peso considerável.
 
-O que produz um deslize preciso, e caro. O título atesta um **nível de jogo**. Ele não atesta nenhuma **competência pedagógica**, que é outra coisa completamente diferente. Um grande mestre pode ser um excelente jogador e um professor ruim, principalmente porque ele esqueceu como se pensa a 1.400 de Elo, e porque não enxerga mais as dificuldades que ficaram invisíveis para ele. É o mecanismo do ponto cego descrito no nosso artigo sobre [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/), virado para cima.
+O que produz um deslize preciso, e caro. O título atesta um **nível de jogo**. Ele não atesta nenhuma **competência pedagógica**, que é outra coisa completamente diferente. Um grande mestre pode ser um excelente jogador e um professor ruim, principalmente porque ele esqueceu como se pensa a 1.400 de Elo, e porque não enxerga mais as dificuldades que ficaram invisíveis para ele. É o mecanismo do ponto cego descrito no nosso artigo sobre [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/), virado para cima.
 
 A pergunta útil, portanto, não é "qual é o rating dele", e sim **"quanto progrediram os alunos dele que partiram do meu nível"**. Isso raramente aparece no anúncio.
 
@@ -120,7 +120,7 @@ A pergunta útil, portanto, não é "qual é o rating dele", e sim **"quanto pro
 
 **No xadrez:** a era do streaming transformou essa alavanca em modelo de negócio. Você assiste alguém jogar por centenas de horas, conhece as reações, as expressões, o jeito de comentar. Ele é familiar para você. Essa familiaridade é real e perfeitamente unilateral.
 
-Quando ele recomenda um produto, a sua decisão é influenciada por centenas de horas de relação percebida, e nada por uma avaliação do produto. O nosso artigo sobre [xadrez e streaming](/pt-br/blog/echecs-et-streaming/) trata dessa economia.
+Quando ele recomenda um produto, a sua decisão é influenciada por centenas de horas de relação percebida, e nada por uma avaliação do produto. O nosso artigo sobre [xadrez e streaming](/pt-br/blog/xadrez-e-streaming/) trata dessa economia.
 
 ### 6. A escassez
 
@@ -210,7 +210,7 @@ Não é "a prova social não existe". É algo mais incômodo que isso: o efeito 
 
 **Aplique o prazo de vinte e quatro horas.** A escassez fabricada não resiste à espera, essa é inclusive a única fraqueza dela. Se a oferta sumiu no dia seguinte, você escapou de um vendedor que precisava que você não pensasse. Na imensa maioria dos casos, ela vai continuar lá.
 
-**Procure o denominador.** Três depoimentos entusiasmados não dizem nada enquanto você não souber quantos alunos passaram por ali. É o viés do sobrevivente aplicado ao mercado de formação, descrito no nosso artigo sobre [o viés do sobrevivente no xadrez](/pt-br/blog/biais-du-survivant-aux-echecs/).
+**Procure o denominador.** Três depoimentos entusiasmados não dizem nada enquanto você não souber quantos alunos passaram por ali. É o viés do sobrevivente aplicado ao mercado de formação, descrito no nosso artigo sobre [o viés do sobrevivente no xadrez](/pt-br/blog/vies-do-sobrevivente-no-xadrez/).
 
 **Desconfie do conforto.** A alavanca mais eficiente não é o argumento mais forte, é a sensação de ser compreendido por alguém que é dos seus. Quando uma oferta deixa você especialmente à vontade, é a hora de olhar o conteúdo.
 
@@ -228,7 +228,7 @@ Basta escrever o número antes de pagar.
 
 ---
 
-*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Três alavancas vão ter artigo próprio: a reciprocidade, a prova social e a escassez. O próximo artigo trata da obediência à autoridade. Veja também [o gaslighting no xadrez](/pt-br/blog/gaslighting-aux-echecs/) e [o viés do sobrevivente no xadrez](/pt-br/blog/biais-du-survivant-aux-echecs/). Veja [o índice completo da série](/pt-br/series/psychologie/).*
+*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Três alavancas vão ter artigo próprio: a reciprocidade, a prova social e a escassez. O próximo artigo trata da obediência à autoridade. Veja também [o gaslighting no xadrez](/pt-br/blog/gaslighting-no-xadrez/) e [o viés do sobrevivente no xadrez](/pt-br/blog/vies-do-sobrevivente-no-xadrez/). Veja [o índice completo da série](/pt-br/series/psychologie/).*
 
 ## Fontes
 

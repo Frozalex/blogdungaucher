@@ -123,9 +123,9 @@ Só que ele produz dois efeitos mensuráveis na sua evolução.
 
 **Ele converte uma regularidade em identidade.** Existe uma diferença enorme entre "nas minhas últimas 200 partidas, marco 41% nos finais de torres" e "sou um jogador intuitivo, não técnico". A primeira formulação aponta uma obra em andamento. A segunda aponta uma natureza, e uma natureza não se trabalha: se aceita.
 
-É o mecanismo que alimenta as crenças cristalizadas descritas no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/impuissance-apprise-aux-echecs/). Uma identidade de "jogador atacante" é uma excelente razão para nunca treinar finais.
+É o mecanismo que alimenta as crenças cristalizadas descritas no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/). Uma identidade de "jogador atacante" é uma excelente razão para nunca treinar finais.
 
-**Ele fornece uma explicação pronta para as derrotas.** "Perdi porque era uma posição técnica, e eu sou um jogador intuitivo." A explicação está disponível, é coerente, socialmente aceitável, e encerra a análise. É exatamente a função descrita no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/).
+**Ele fornece uma explicação pronta para as derrotas.** "Perdi porque era uma posição técnica, e eu sou um jogador intuitivo." A explicação está disponível, é coerente, socialmente aceitável, e encerra a análise. É exatamente a função descrita no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/).
 
 ## O protocolo de substituição
 
@@ -155,7 +155,7 @@ Uma frase que não pode ser falsa não te ensina nada. Uma porcentagem, sim.
 
 ---
 
-*Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/), [o efeito halo no xadrez](/pt-br/blog/effet-de-halo-aux-echecs/) e [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/).*
+*Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/), [o efeito halo no xadrez](/pt-br/blog/efeito-halo-no-xadrez/) e [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/).*
 
 ## Fontes
 

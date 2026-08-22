@@ -69,7 +69,7 @@ O ponto em comum de todos esses exemplos: **tudo acontece no tabuleiro**. O adve
 
 A manipulação emocional começa quando a ação recai sobre o **estado interno** do adversário por meios externos à posição. Já não é o jogo dele que se ataca, é a capacidade dele de jogar.
 
-Duas precisões sobre o escopo deste artigo. Ele trata unicamente do que se exerce **durante** a partida. O que acontece depois, quando se reescreve o que se passou, é outro mecanismo, descrito no nosso artigo sobre [o gaslighting no xadrez](/pt-br/blog/gaslighting-aux-echecs/). E não se trata de trapaça: ninguém consulta motor aqui, o que é um assunto completamente diferente, tratado em [a trapaça no xadrez](/pt-br/blog/echecs-et-la-triche/).
+Duas precisões sobre o escopo deste artigo. Ele trata unicamente do que se exerce **durante** a partida. O que acontece depois, quando se reescreve o que se passou, é outro mecanismo, descrito no nosso artigo sobre [o gaslighting no xadrez](/pt-br/blog/gaslighting-no-xadrez/). E não se trata de trapaça: ninguém consulta motor aqui, o que é um assunto completamente diferente, tratado em [a trapaça no xadrez](/pt-br/blog/xadrez-e-trapaca/).
 
 ## O caso escolar: Baguio, 1978
 
@@ -95,7 +95,7 @@ Zukhar não tinha poder nenhum. A parapsicologia não funciona. Um homem sentado
 
 E, ainda assim, o efeito foi considerável. Kortchnoi dedicou uma parcela enorme da energia dele a esse caso: protestos, negociações, vigilância da sala, atenção desviada a cada partida.
 
-**O efeito não foi produzido por Zukhar. Foi produzido pela convicção de Kortchnoi.** É exatamente o mecanismo do nocebo, descrito no nosso artigo sobre [o efeito placebo no xadrez](/pt-br/blog/effet-placebo-aux-echecs/): a expectativa negativa age onde a expectativa positiva não age.
+**O efeito não foi produzido por Zukhar. Foi produzido pela convicção de Kortchnoi.** É exatamente o mecanismo do nocebo, descrito no nosso artigo sobre [o efeito placebo no xadrez](/pt-br/blog/efeito-placebo-no-xadrez/): a expectativa negativa age onde a expectativa positiva não age.
 
 O que entrega o princípio geral de todo o assunto. **A manipulação nunca funciona diretamente.** Ela funciona conseguindo que você a processe.
 
@@ -171,7 +171,7 @@ Daí a única defesa que se sustenta. Não ser mentalmente mais forte, o que nã
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o gaslighting no xadrez](/pt-br/blog/gaslighting-aux-echecs/), que trata do que acontece depois da partida, e [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismes-de-defense-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o gaslighting no xadrez](/pt-br/blog/gaslighting-no-xadrez/), que trata do que acontece depois da partida, e [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismos-de-defesa-no-xadrez/).*
 
 ## Fontes
 

@@ -55,7 +55,7 @@ faq:
       des bénéfices <strong>généraux</strong> (« meilleure mémoire partout »), le mot <strong>preuve</strong>
       est trop fort : on parle plutôt d'indices, de méta-analyses parfois mitigées sur le transfert lointain.
       Voir aussi les sources en fin d'article et <a
-      href="/blog/les-echecs-et-le-cerveau/">les échecs et le cerveau</a>.
+      href="/fr/blog/les-echecs-et-le-cerveau/">les échecs et le cerveau</a>.
   - question: "Quelle est la durée d'entraînement aux échecs recommandée pour améliorer sa mémoire « échiquéenne » ?"
     answer: >-
       Il n'y a pas de dose universelle : les études d'intervention en cognition suggèrent souvent des
@@ -68,7 +68,7 @@ faq:
       Les données populationnelles vont plutôt vers des <strong>associations</strong> entre activités
       intellectuelles variées et risque de démence dans certaines cohortes ; ce n'est pas une garantie
       individuelle. Les échecs peuvent faire partie d'un <strong>style de vie</strong> stimulant (social +
-      planification). Lis la synthèse prudente dans <a href="/blog/echecs-alzheimer-prevention-declin-cognitif/">échecs, Alzheimer et déclin cognitif</a>.
+      planification). Lis la synthèse prudente dans <a href="/fr/blog/echecs-alzheimer-prevention-declin-cognitif/">échecs, Alzheimer et déclin cognitif</a>.
 ---
 
 Anatoli Karpov rejouait de mémoire, sans échiquier, des parties disputées vingt ans plus tôt. Coup par coup. Variante par variante. Des journalistes l'ont testé plusieurs fois : il ne se trompait pas.
@@ -81,7 +81,7 @@ Ce paradoxe résume le sujet : **les échecs ne « donnent » pas une mémoire m
 
 Jouer aux échecs, c'est en permanence **retenir**, **mettre à jour** et **oublier à dessein** : variantes partielles, menaces indirectes, contrainte de temps. La mémoire n'est pas un seul bloc : on distingue classiquement la **mémoire de travail** (manipuler l'information en cours), la **mémoire à long terme** (bibliothèque de schémas), et des processus exécutifs (inhiber une capture tentante, maintenir l'attention).
 
-Les échecs sollicitent surtout une **mémoire de domaine** : tu deviens très fort pour reconnaître des configurations qui **ressemblent aux échecs**. Le transfert vers d'autres tâches (listes de courses, cours d'histoire) existe mais reste **modeste** et dépend de la façon dont tu t'entraînes. Pour le cerveau au scanner et les bénéfices liés à l'âge, l'article sur [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/) complète le tableau.
+Les échecs sollicitent surtout une **mémoire de domaine** : tu deviens très fort pour reconnaître des configurations qui **ressemblent aux échecs**. Le transfert vers d'autres tâches (listes de courses, cours d'histoire) existe mais reste **modeste** et dépend de la façon dont tu t'entraînes. Pour le cerveau au scanner et les bénéfices liés à l'âge, l'article sur [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/) complète le tableau.
 
 ## Comment les échecs améliorent la mémoire de travail
 
@@ -135,7 +135,7 @@ La mémoire à long terme, ce n'est pas un disque dur passif : ce qui entre dura
 
 > **Gobet F & Simon HA.** (1996). *Templates in chess memory : A mechanism for recalling several boards.* Cognitive Psychology, 31(1), 1-40.
 
-Des travaux en [neuroimagerie](https://fr.wikipedia.org/wiki/Neuroimagerie) montrent que les joueurs expérimentés s'appuient davantage sur des aires liées à la **mémoire à long terme** lors de la reconnaissance de positions, et moins sur une mémoire de travail « brute ». Le cerveau **classe** plutôt qu'il ne surcharge. Le détail est développé dans l'article sur [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
+Des travaux en [neuroimagerie](https://fr.wikipedia.org/wiki/Neuroimagerie) montrent que les joueurs expérimentés s'appuient davantage sur des aires liées à la **mémoire à long terme** lors de la reconnaissance de positions, et moins sur une mémoire de travail « brute ». Le cerveau **classe** plutôt qu'il ne surcharge. Le détail est développé dans l'article sur [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/).
 
 ## Mémorisation des ouvertures et des stratégies
 
@@ -163,7 +163,7 @@ En 2004, adolescent, [Magnus Carlsen](https://fr.wikipedia.org/wiki/Magnus_Carls
 
 ## Les échecs comme outil de stimulation cognitive globale
 
-Au-delà de la mémoire stricte, les échecs sollicitent une **constellation** de compétences : attention soutenue, flexibilité mentale (changer de plan), résolution de problèmes sous contraintes. Ce sont des **habiletés** transférables avec modestie : elles ressemblent à ce que demandent les mathématiques ou la gestion de projets (découper, tester, vérifier), sans remplacer un cours. Pour le lien avec les maths, voir [les échecs et les mathématiques](/blog/les-echecs-et-les-mathematiques/).
+Au-delà de la mémoire stricte, les échecs sollicitent une **constellation** de compétences : attention soutenue, flexibilité mentale (changer de plan), résolution de problèmes sous contraintes. Ce sont des **habiletés** transférables avec modestie : elles ressemblent à ce que demandent les mathématiques ou la gestion de projets (découper, tester, vérifier), sans remplacer un cours. Pour le lien avec les maths, voir [les échecs et les mathématiques](/fr/blog/les-echecs-et-les-mathematiques/).
 
 ## Amélioration de la concentration et de l'attention soutenue
 
@@ -179,7 +179,7 @@ Les échecs ne « prouvent » pas que tu es logique en toutes circonstances ; il
 
 ## Les bienfaits des échecs pour le cerveau : neurosciences et plasticité
 
-La **plasticité** (le cerveau qui s'adapte à l'usage) explique pourquoi une pratique régulière modifie la façon dont tu traites l'échiquier : moins de recalcul naïf, plus de reconnaissance. Ce n'est pas une promesse de QI global : c'est une spécialisation. L'article [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/) résume ce que les études mesurent vraiment, et ce qu'elles ne mesurent pas.
+La **plasticité** (le cerveau qui s'adapte à l'usage) explique pourquoi une pratique régulière modifie la façon dont tu traites l'échiquier : moins de recalcul naïf, plus de reconnaissance. Ce n'est pas une promesse de QI global : c'est une spécialisation. L'article [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/) résume ce que les études mesurent vraiment, et ce qu'elles ne mesurent pas.
 
 ## Création et renforcement des connexions neuronales
 
@@ -195,7 +195,7 @@ Les échecs peuvent **structurer** le temps, offrir des objectifs clairs et un c
 
 ## Les échecs chez les seniors pour maintenir les compétences cognitives
 
-La littérature sur le vieillissement distingue **réserve cognitive**, activités stimulantes et études observationnelles. L'article [échecs, Alzheimer et déclin cognitif](/blog/echecs-alzheimer-prevention-declin-cognitif/) détaille ce que l'étude Verghese (*NEJM*, 2003) autorise à dire, et ce qu'elle n'autorise pas.
+La littérature sur le vieillissement distingue **réserve cognitive**, activités stimulantes et études observationnelles. L'article [échecs, Alzheimer et déclin cognitif](/fr/blog/echecs-alzheimer-prevention-declin-cognitif/) détaille ce que l'étude Verghese (*NEJM*, 2003) autorise à dire, et ce qu'elle n'autorise pas.
 
 ## Utilisation des échecs dans la rééducation cognitive
 
@@ -237,7 +237,7 @@ Matériel tangible (bois, pièces lourdes) aide certains enfants à **ancrer** l
 
 ## Comment le « memory chess » développe la cognition des jeunes enfants
 
-Jeux de paires, mini-échiquiers, défis « retrouve la case de la dame » : tout cela travaille la **mémoire immédiate** et l'attention sélective. Pour l'effet sur le développement global, reste prudent sur les promesses : la recherche sur le **transfert** depuis les jeux vers l'école est inégale ; l'article sur [les échecs et les mathématiques](/blog/les-echecs-et-les-mathematiques/) insiste sur cette nuance.
+Jeux de paires, mini-échiquiers, défis « retrouve la case de la dame » : tout cela travaille la **mémoire immédiate** et l'attention sélective. Pour l'effet sur le développement global, reste prudent sur les promesses : la recherche sur le **transfert** depuis les jeux vers l'école est inégale ; l'article sur [les échecs et les mathématiques](/fr/blog/les-echecs-et-les-mathematiques/) insiste sur cette nuance.
 
 ## Conclusion : les échecs, un allié précieux pour ta mémoire
 
@@ -266,7 +266,7 @@ Les adultes motivés construisent des chunks efficacement ; [Neil Charness](http
 
 ### Existe-t-il des études scientifiques prouvant les bienfaits des échecs sur la mémoire ?
 
-Oui pour des **tâches proches** des échecs (perception, rappel de positions légales). Pour des bénéfices **généraux** (« meilleure mémoire partout »), le mot **preuve** est trop fort : on parle plutôt d'indices, de méta-analyses parfois mitigées sur le transfert lointain. Voir aussi les sources en fin d'article et [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
+Oui pour des **tâches proches** des échecs (perception, rappel de positions légales). Pour des bénéfices **généraux** (« meilleure mémoire partout »), le mot **preuve** est trop fort : on parle plutôt d'indices, de méta-analyses parfois mitigées sur le transfert lointain. Voir aussi les sources en fin d'article et [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/).
 
 ### Quelle est la durée d'entraînement aux échecs recommandée pour améliorer sa mémoire « échiquéenne » ?
 
@@ -274,7 +274,7 @@ Il n'y a pas de dose universelle : les études d'intervention en cognition sugg�
 
 ### Les échecs peuvent-ils aider à prévenir la perte de mémoire liée à l'âge ?
 
-Les données populationnelles vont plutôt vers des **associations** entre activités intellectuelles variées et risque de démence dans certaines cohortes ; ce n'est pas une garantie individuelle. Les échecs peuvent faire partie d'un **style de vie** stimulant (social + planification). Lis la synthèse prudente dans [échecs, Alzheimer et déclin cognitif](/blog/echecs-alzheimer-prevention-declin-cognitif/).
+Les données populationnelles vont plutôt vers des **associations** entre activités intellectuelles variées et risque de démence dans certaines cohortes ; ce n'est pas une garantie individuelle. Les échecs peuvent faire partie d'un **style de vie** stimulant (social + planification). Lis la synthèse prudente dans [échecs, Alzheimer et déclin cognitif](/fr/blog/echecs-alzheimer-prevention-declin-cognitif/).
 
 ---
 

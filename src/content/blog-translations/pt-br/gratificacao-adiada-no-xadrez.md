@@ -103,7 +103,7 @@ A leitura ingênua diria: os jogadores que sabem adiar progridem mais, então tr
 
 A leitura corrigida faz outra pergunta: **a ligação entre o que você faz e o que você obtém é confiável e constatável?**
 
-E aí o xadrez tem um problema estrutural, que já apareceu no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/impuissance-apprise-aux-echecs/).
+E aí o xadrez tem um problema estrutural, que já apareceu no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/).
 
 Adiar, no xadrez, significa trabalhar hoje por um resultado dali a vários meses. Só que o retorno de informação disponível, o rating, é lento, ruidoso, dependente do adversário e não atribuível. Você não tem como saber se o trabalho de março produziu o ganho de junho.
 
@@ -121,7 +121,7 @@ O lance de ataque dá uma recompensa **antes mesmo de ser verificado**. A empolg
 
 O lance posicional não dá nada. Melhorar um cavalo não produz nenhuma sensação.
 
-O desequilíbrio, portanto, não é só temporal, é **estrutural**: uma das duas opções paga adiantado. É também por isso que as combinações são examinadas com menos severidade que os outros lances, mecanismo descrito no nosso artigo sobre [o viés de confirmação no xadrez](/pt-br/blog/biais-de-confirmation-aux-echecs/).
+O desequilíbrio, portanto, não é só temporal, é **estrutural**: uma das duas opções paga adiantado. É também por isso que as combinações são examinadas com menos severidade que os outros lances, mecanismo descrito no nosso artigo sobre [o viés de confirmação no xadrez](/pt-br/blog/vies-de-confirmacao-no-xadrez/).
 
 O remédio não é renunciar às belas combinações, o que seria absurdo e triste. É **restabelecer a simetria do exame**: aplicar ao lance que te agrada o mesmo nível de verificação que ao lance que te entedia.
 
@@ -129,7 +129,7 @@ O remédio não é renunciar às belas combinações, o que seria absurdo e tris
 
 Mesmo mecanismo, outro horizonte.
 
-Jogar dá uma recompensa imediata e variável, o que faz dele, como detalha o nosso artigo sobre [a formação de hábitos no xadrez](/pt-br/blog/formation-des-habitudes-aux-echecs/), um hábito quase perfeito. Trabalhar os finais não dá nada durante semanas.
+Jogar dá uma recompensa imediata e variável, o que faz dele, como detalha o nosso artigo sobre [a formação de hábitos no xadrez](/pt-br/blog/formacao-de-habitos-no-xadrez/), um hábito quase perfeito. Trabalhar os finais não dá nada durante semanas.
 
 Mas aplique agora a lição corrigida do marshmallow. O problema não é que falta paciência em você. O problema é que **a promessa não é cumprida de maneira visível**. Dizem a você que os finais vão melhorar o seu rating dali a seis meses, e você não terá nenhum jeito de verificar que foi aquele trabalho ali que produziu o efeito.
 
@@ -175,7 +175,7 @@ A alavanca, portanto, não é se obrigar a esperar mais. É cumprir a promessa c
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a formação de hábitos no xadrez](/pt-br/blog/formation-des-habitudes-aux-echecs/), [o desamparo aprendido no xadrez](/pt-br/blog/impuissance-apprise-aux-echecs/) e [procrastinação e xadrez](/pt-br/blog/echecs-et-procrastination/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a formação de hábitos no xadrez](/pt-br/blog/formacao-de-habitos-no-xadrez/), [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/) e [procrastinação e xadrez](/pt-br/blog/xadrez-e-procrastinacao/).*
 
 ## Fontes
 

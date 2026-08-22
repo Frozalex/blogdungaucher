@@ -81,7 +81,7 @@ A vertente mais discutida é a afirmação de que essas três necessidades seria
 
 Vamos ficar então com o quadro como **uma grade de diagnóstico útil**, e não como uma teoria das necessidades humanas. Já é bastante, e é disso que se precisa aqui.
 
-Vale também precisar a fronteira com o artigo anterior desta série. A [motivação intrínseca](/pt-br/blog/motivation-intrinseque-aux-echecs/) tratava de um mecanismo preciso, a substituição de uma razão de agir por uma recompensa. Aqui se trata do quadro geral que descreve o que mantém uma prática ao longo do tempo.
+Vale também precisar a fronteira com o artigo anterior desta série. A [motivação intrínseca](/pt-br/blog/motivacao-intrinseca-no-xadrez/) tratava de um mecanismo preciso, a substituição de uma razão de agir por uma recompensa. Aqui se trata do quadro geral que descreve o que mantém uma prática ao longo do tempo.
 
 ## O xadrez, necessidade por necessidade
 
@@ -95,7 +95,7 @@ Você escolhe quando joga, contra quem, em qual ritmo, com quais aberturas, com 
 
 É até uma das atividades mais autônomas que existem. Nada para reservar, ninguém para convencer, nenhum material exigido.
 
-Essa necessidade, portanto, quase nunca é a causa de um abandono num jogador adulto. Pode ser numa criança empurrada pelos pais, o que é uma configuração diferente, abordada no nosso artigo sobre [a teoria do apego no xadrez](/pt-br/blog/theorie-de-l-attachement-aux-echecs/).
+Essa necessidade, portanto, quase nunca é a causa de um abandono num jogador adulto. Pode ser numa criança empurrada pelos pais, o que é uma configuração diferente, abordada no nosso artigo sobre [a teoria do apego no xadrez](/pt-br/blog/teoria-do-apego-no-xadrez/).
 
 ### A competência: ambivalente
 
@@ -105,7 +105,7 @@ O xadrez oferece o melhor retorno de informação de todos os passatempos: um ra
 
 Mas esse mesmo dispositivo vira hostil assim que o progresso para. Um platô não é vivido como uma ausência de informação: é vivido como uma **informação negativa permanente**, pública e numérica.
 
-E o rating é estruturalmente um sinal ruim de aprendizado, pelas razões desenvolvidas no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/impuissance-apprise-aux-echecs/): lento, ruidoso, não atribuível. Ele informa muito bem sobre o resultado e muito mal sobre o progresso.
+E o rating é estruturalmente um sinal ruim de aprendizado, pelas razões desenvolvidas no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/): lento, ruidoso, não atribuível. Ele informa muito bem sobre o resultado e muito mal sobre o progresso.
 
 Daí uma previsão: a necessidade de competência é **superalimentada na fase de progresso e atacada na fase de platô**, sem estado intermediário. É uma trajetória de risco.
 
@@ -113,7 +113,7 @@ Daí uma previsão: a necessidade de competência é **superalimentada na fase d
 
 Aqui está o ponto central deste artigo.
 
-O xadrez é, estruturalmente, uma atividade solitária. O nosso artigo sobre [a solidão no xadrez](/pt-br/blog/echecs-et-la-solitude/) lembra disso: você está regulamentarmente sozinho, sem companheiro de equipe, sem treinador durante a partida.
+O xadrez é, estruturalmente, uma atividade solitária. O nosso artigo sobre [a solidão no xadrez](/pt-br/blog/xadrez-e-solidao/) lembra disso: você está regulamentarmente sozinho, sem companheiro de equipe, sem treinador durante a partida.
 
 E o jogo online, que hoje representa o grosso da prática, eliminou o que ainda restava.
 
@@ -133,7 +133,7 @@ E as previsões correspondem a fenômenos bem conhecidos dos clubes e das federa
 
 **A volta ao clube.** Muitos jogadores que retomam depois de anos voltam **para o clube** e não para o online, e costumam dizer que não é a mesma coisa. O quadro explica isso sem mistério: o clube é ruim na autonomia, preso a um horário e a um lugar, e é o único que satisfaz o vínculo.
 
-**O paradoxo dos jogadores muito ativos que se apagam.** Milhares de partidas online podem alimentar intensamente duas necessidades e não tocar em nenhuma terceira. O volume não compensa a ausência, e esse é um dos caminhos para o [burnout no xadrez](/pt-br/blog/burnout-chess/).
+**O paradoxo dos jogadores muito ativos que se apagam.** Milhares de partidas online podem alimentar intensamente duas necessidades e não tocar em nenhuma terceira. O volume não compensa a ausência, e esse é um dos caminhos para o [burnout no xadrez](/pt-br/blog/burnout-no-xadrez/).
 
 ## O protocolo
 
@@ -145,7 +145,7 @@ A casa mais baixa é o seu canteiro de obras. Quase nunca é a que você imagina
 
 Não é um consolo social: é o que transforma uma derrota num objeto compartilhado em vez de num saldo privado.
 
-**3. Conserte a competência pelo sinal, não pelo resultado.** Um platô de rating não é uma ausência de progresso, é uma ausência de medida do progresso. Adote um indicador de ciclo curto, como detalha o nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/impuissance-apprise-aux-echecs/).
+**3. Conserte a competência pelo sinal, não pelo resultado.** Um platô de rating não é uma ausência de progresso, é uma ausência de medida do progresso. Adote um indicador de ciclo curto, como detalha o nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/).
 
 **4. Proteja a autonomia quando for estruturar.** Um programa de treino rígido pode degradar a única necessidade que a sua prática satisfazia bem. Guarde uma parte de jogo sem objetivo, escolhida na hora.
 
@@ -165,7 +165,7 @@ E isso aponta para a alavanca mais rentável, que não tem nada a ver com treino
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a motivação intrínseca no xadrez](/pt-br/blog/motivation-intrinseque-aux-echecs/), [a solidão no xadrez](/pt-br/blog/echecs-et-la-solitude/) e [burnout no xadrez](/pt-br/blog/burnout-chess/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a motivação intrínseca no xadrez](/pt-br/blog/motivacao-intrinseca-no-xadrez/), [a solidão no xadrez](/pt-br/blog/xadrez-e-solidao/) e [burnout no xadrez](/pt-br/blog/burnout-no-xadrez/).*
 
 ## Fontes
 

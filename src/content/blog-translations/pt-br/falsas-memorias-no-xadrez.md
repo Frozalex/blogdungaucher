@@ -109,7 +109,7 @@ Olhe agora o que acontece quando você analisa uma partida, e compare com os ing
 
 **Perguntas sugestivas.** Este é o ponto mais direto. "Você tinha visto Txf7?" não é uma pergunta neutra: ela já contém o lance e propõe uma resposta. É estruturalmente a mesma coisa que a escolha entre "bateram" e "colidiram violentamente".
 
-**Um interesse em aceitar a sugestão.** Em Loftus, os participantes não tinham nada a ganhar lembrando do vidro quebrado. Você tem. "Eu tinha visto" preserva a imagem que você tem do seu nível, enquanto "eu não vi" a coloca em xeque. É o mecanismo descrito no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/).
+**Um interesse em aceitar a sugestão.** Em Loftus, os participantes não tinham nada a ganhar lembrando do vidro quebrado. Você tem. "Eu tinha visto" preserva a imagem que você tem do seu nível, enquanto "eu não vi" a coloca em xeque. É o mecanismo descrito no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/).
 
 **A repetição.** Você repete a posição várias vezes, olha a variante, comenta. Cada passagem reforça o traço, e um traço reforçado se torna indistinguível de uma lembrança original.
 
@@ -145,7 +145,7 @@ Logo depois da partida, antes de qualquer análise, antes do motor, antes da con
 
 Essa nota é um **registro externo à sua memória**. É a única coisa que vai permitir, uma semana depois, saber o que você tinha visto, porque a essa altura a sua memória já terá incorporado a análise.
 
-É a mesma regra dada no nosso artigo sobre [a obediência à autoridade no xadrez](/pt-br/blog/obeissance-a-l-autorite-aux-echecs/), e não é coincidência: nos dois casos, trata-se de registrar o próprio julgamento antes que uma fonte mais confiável o substitua.
+É a mesma regra dada no nosso artigo sobre [a obediência à autoridade no xadrez](/pt-br/blog/obediencia-a-autoridade-no-xadrez/), e não é coincidência: nos dois casos, trata-se de registrar o próprio julgamento antes que uma fonte mais confiável o substitua.
 
 ### 2. Proíba as perguntas sugestivas
 
@@ -187,7 +187,7 @@ Três linhas escritas antes de ligar o motor bastam para preservar a resposta.
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Um artigo futuro vai tratar da memória reconstrutiva, ou seja, do mecanismo normal do qual as falsas memórias são a patologia. Veja também [analisar suas partidas](/pt-br/blog/analyser-ses-parties/) e [o viés de confirmação no xadrez](/pt-br/blog/biais-de-confirmation-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Um artigo futuro vai tratar da memória reconstrutiva, ou seja, do mecanismo normal do qual as falsas memórias são a patologia. Veja também [analisar suas partidas](/pt-br/blog/analisar-suas-partidas/) e [o viés de confirmação no xadrez](/pt-br/blog/vies-de-confirmacao-no-xadrez/).*
 
 ## Fontes
 

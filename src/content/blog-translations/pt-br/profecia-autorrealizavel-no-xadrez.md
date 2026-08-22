@@ -111,7 +111,7 @@ Aplique o moderador de Raudenbush ao seu caso.
 
 Que informação independente você tem sobre o seu nível real em finais?
 
-Quase nenhuma. Você tem lembranças, e vimos no nosso artigo sobre [as falsas memórias no xadrez](/pt-br/blog/faux-souvenirs-aux-echecs/) o quanto elas valem. Você tem algumas derrotas marcantes, selecionadas por serem memoráveis mais do que representativas, o que é o [viés do sobrevivente](/pt-br/blog/biais-du-survivant-aux-echecs/) aplicado à sua própria memória.
+Quase nenhuma. Você tem lembranças, e vimos no nosso artigo sobre [as falsas memórias no xadrez](/pt-br/blog/falsas-memorias-no-xadrez/) o quanto elas valem. Você tem algumas derrotas marcantes, selecionadas por serem memoráveis mais do que representativas, o que é o [viés do sobrevivente](/pt-br/blog/vies-do-sobrevivente-no-xadrez/) aplicado à sua própria memória.
 
 O que você não tem é o número.
 
@@ -141,7 +141,7 @@ A mais insidiosa, porque não muda nenhum comportamento, só a leitura dos fatos
 
 Você perde um final: confirma. Você ganha um final: o adversário jogou mal, ou você deu sorte. Nenhum dado consegue contradizer a crença, já que a triagem é feita na entrada.
 
-É o [viés de confirmação](/pt-br/blog/biais-de-confirmation-aux-echecs/) aplicado a si mesmo, e é o que torna a experiência vivida tão pouco informativa.
+É o [viés de confirmação](/pt-br/blog/vies-de-confirmacao-no-xadrez/) aplicado a si mesmo, e é o que torna a experiência vivida tão pouco informativa.
 
 ## A versão inversa também existe
 
@@ -151,7 +151,7 @@ Vale mencionar o outro sentido, menos comentado e bem real.
 
 O custo está em outro lugar: em tudo o que a identidade excluiu. Um jogador de ataque que nunca treina técnica atinge um teto, e esse teto é produzido pela mesma crença que o fez progredir.
 
-É também por isso que os perfis de estilo, tratados no nosso artigo sobre [o efeito Barnum no xadrez](/pt-br/blog/effet-barnum-aux-echecs/), não são inofensivos: uma descrição vira um programa.
+É também por isso que os perfis de estilo, tratados no nosso artigo sobre [o efeito Barnum no xadrez](/pt-br/blog/efeito-barnum-no-xadrez/), não são inofensivos: uma descrição vira um programa.
 
 ## O protocolo
 
@@ -181,7 +181,7 @@ Uma crença formulada como identidade é inatacável. Formulada como medida, ela
 
 ### 5. Imponha-se a área evitada
 
-Trinta partidas em que você não foge da estrutura que teme. O objetivo não é ganhar, é **produzir dados** numa zona onde você nunca produziu nenhum. É o mesmo princípio do aprendizado do controle descrito no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/impuissance-apprise-aux-echecs/).
+Trinta partidas em que você não foge da estrutura que teme. O objetivo não é ganhar, é **produzir dados** numa zona onde você nunca produziu nenhum. É o mesmo princípio do aprendizado do controle descrito no nosso artigo sobre [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/).
 
 ## O que vale reter
 
@@ -197,7 +197,7 @@ Mas ela entregou de quebra a chave mais útil: **o efeito de expectativa só ope
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o desamparo aprendido no xadrez](/pt-br/blog/impuissance-apprise-aux-echecs/), [o efeito Barnum no xadrez](/pt-br/blog/effet-barnum-aux-echecs/) e [o efeito placebo no xadrez](/pt-br/blog/effet-placebo-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/), [o efeito Barnum no xadrez](/pt-br/blog/efeito-barnum-no-xadrez/) e [o efeito placebo no xadrez](/pt-br/blog/efeito-placebo-no-xadrez/).*
 
 ## Fontes
 

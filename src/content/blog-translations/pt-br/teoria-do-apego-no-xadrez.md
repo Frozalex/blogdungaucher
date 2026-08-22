@@ -104,7 +104,7 @@ No xadrez, o pai está num corredor. A sala está fechada, o silêncio é regula
 
 Disso decorrem três consequências.
 
-**A criança vive a prova inteiramente sozinha.** Sem intervalo, sem treinador à beira do campo, sem companheiro de time. É o tema do nosso artigo sobre [a solidão no xadrez](/pt-br/blog/echecs-et-la-solitude/), e isso piora quando se tem dez anos.
+**A criança vive a prova inteiramente sozinha.** Sem intervalo, sem treinador à beira do campo, sem companheiro de time. É o tema do nosso artigo sobre [a solidão no xadrez](/pt-br/blog/xadrez-e-solidao/), e isso piora quando se tem dez anos.
 
 **O pai só recebe um resultado.** Nenhum contexto, nenhuma nuance, nenhuma imagem do esforço feito. Só uma letra numa folha de emparceiramento. O que, mecanicamente, concentra toda a atenção dele nessa letra.
 
@@ -128,7 +128,7 @@ O xadrez favorece relações pedagógicas longas e exclusivas. Uma criança pode
 
 É uma configuração poderosa quando funciona: Davis e Jowett mostram que um treinador que cumpre corretamente a função de base segura permite a tomada de risco, portanto o progresso. Ousa-se uma abertura nova, um sacrifício, um torneio forte demais, porque se sabe para onde voltar.
 
-E é uma configuração de risco quando descarrila. Uma figura de apego dispõe de uma alavanca que nenhum professor comum tem: a de tornar a aprovação condicional. É o que torna certas relações de coaching tão difíceis de abandonar, mesmo quando fazem mal. O nosso artigo sobre [o gaslighting no xadrez](/pt-br/blog/gaslighting-aux-echecs/) descreve um mecanismo vizinho.
+E é uma configuração de risco quando descarrila. Uma figura de apego dispõe de uma alavanca que nenhum professor comum tem: a de tornar a aprovação condicional. É o que torna certas relações de coaching tão difíceis de abandonar, mesmo quando fazem mal. O nosso artigo sobre [o gaslighting no xadrez](/pt-br/blog/gaslighting-no-xadrez/) descreve um mecanismo vizinho.
 
 ### O jogador adulto que já não tem base
 
@@ -136,7 +136,7 @@ A teoria não diz respeito só às crianças.
 
 Um adulto que joga torneio vive exatamente a mesma estrutura: uma prova solitária, longa, de desfecho nítido, seguida de uma volta em direção a alguém. Esse alguém pode ser um cônjuge, um amigo, um grupo de clube, ou ninguém.
 
-Essa última opção é mais comum do que se imagina, e tem um custo. Sem destinatário para a experiência, a derrota fica inteira. É um dos caminhos documentados para o [burnout no xadrez](/pt-br/blog/burnout-chess/): não partidas demais, mas partidas demais sem ninguém a quem contá-las.
+Essa última opção é mais comum do que se imagina, e tem um custo. Sem destinatário para a experiência, a derrota fica inteira. É um dos caminhos documentados para o [burnout no xadrez](/pt-br/blog/burnout-no-xadrez/): não partidas demais, mas partidas demais sem ninguém a quem contá-las.
 
 ## Por que se para
 
@@ -154,7 +154,7 @@ O que explica uma coisa que os pais costumam achar incompreensível: a parada ac
 
 **Seja mais estável que justo.** O seu rosto transmite mais que o seu discurso. Uma reação moderada depois de uma vitória custa um pouco de alegria compartilhada e rende muito: mostra que o seu estado não depende do resultado.
 
-**Separe a análise do acolhimento.** O pós-partida não é hora de lição. A volta ao corredor é um reencontro, não um debriefing. A partida pode ser vista no dia seguinte, e assim funciona melhor de qualquer forma, como explica o nosso guia sobre [analisar as próprias partidas](/pt-br/blog/analyser-ses-parties/).
+**Separe a análise do acolhimento.** O pós-partida não é hora de lição. A volta ao corredor é um reencontro, não um debriefing. A partida pode ser vista no dia seguinte, e assim funciona melhor de qualquer forma, como explica o nosso guia sobre [analisar as próprias partidas](/pt-br/blog/analisar-suas-partidas/).
 
 ### Se você é treinador
 
@@ -178,7 +178,7 @@ As categorias de Ainsworth devem ser manejadas com cuidado: elas também medem n
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismes-de-defense-aux-echecs/) e [o gaslighting no xadrez](/pt-br/blog/gaslighting-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismos-de-defesa-no-xadrez/) e [o gaslighting no xadrez](/pt-br/blog/gaslighting-no-xadrez/).*
 
 ## Fontes
 

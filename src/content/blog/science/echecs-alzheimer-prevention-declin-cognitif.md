@@ -102,7 +102,7 @@ Les données publiées sont **plus nuancées** : certains essais mesurent des **
 
 **Objectif de cet article :** rassembler des **chiffres tirés de publications sélectionnées** (tableau et références en bas) et les relier à la **pratique du jeu d'échecs** comme loisir dense et durable : **apprendre**, **progresser**, **ancrer une routine** sans la confondre avec une ordonnance.
 
-Pour les mécanismes généraux (plasticité, imagerie), compléter avec [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/). Cet article cible avant tout le **joueur** ou la **joueuse** senior, en club ou à la maison.
+Pour les mécanismes généraux (plasticité, imagerie), compléter avec [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/). Cet article cible avant tout le **joueur** ou la **joueuse** senior, en club ou à la maison.
 
 ## Synthèse chiffrée : ce que disent quelques publications clés
 
@@ -202,7 +202,7 @@ Les analyses comme **Dubois et al., 2024** (JAMA Neurology) rappellent par aille
 
 ## Aller plus loin sur le blog
 
-- Pilier **[rubrique Science](/fr/science/)**, pages [mémoire](/blog/echecs-et-memoire/) et [effets sur le cerveau](/blog/les-echecs-et-le-cerveau/).
+- Pilier **[rubrique Science](/fr/science/)**, pages [mémoire](/fr/blog/echecs-et-memoire/) et [effets sur le cerveau](/fr/blog/les-echecs-et-le-cerveau/).
 
 Le **jeu d'échecs** n’est pas une équation fermée contre la maladie d’Alzheimer ; c’est une **pratique du jeu** longue, parfois mesurable sur humeur ou engagement, rarement réductible à un seul chiffre magique. Dans un rapport honnête aux données, c’est déjà une bonne défense.
 

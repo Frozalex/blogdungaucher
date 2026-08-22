@@ -65,7 +65,7 @@ Ele formalizou o mecanismo. Um estímulo inicialmente neutro, apresentado com re
 
 O ponto que importa, e que a gente esquece sistematicamente, é que **o cachorro não decide nada**. Ele não concluiu que o barulho anunciava a comida. Ele não formou uma crença. Uma associação se instalou, e ela produz uma resposta fisiológica.
 
-É isso que distingue radicalmente esse mecanismo do [condicionamento operante](/pt-br/blog/conditionnement-operant-aux-echecs/), tratado no artigo anterior desta série. O operante diz respeito às consequências das suas ações e molda o que você faz. O clássico diz respeito a associações involuntárias e molda o que você sente.
+É isso que distingue radicalmente esse mecanismo do [condicionamento operante](/pt-br/blog/condicionamento-operante-no-xadrez/), tratado no artigo anterior desta série. O operante diz respeito às consequências das suas ações e molda o que você faz. O clássico diz respeito a associações involuntárias e molda o que você sente.
 
 ## O pequeno Albert, e por que ele precisa ser citado com cautela
 
@@ -99,7 +99,7 @@ O caso mais frequente. Você levou três derrotas dolorosas numa estrutura espec
 
 A associação se instala entre a configuração visual e o estado interno. Depois disso, a posição sozinha já basta.
 
-E é aí que o mecanismo fica caro: **o estado disparado degrada de fato o seu jogo**, o que produz mais um resultado ruim, o que reforça a associação. O ciclo é aquele descrito no nosso artigo sobre [a profecia autorrealizável no xadrez](/pt-br/blog/prophetie-auto-realisatrice-aux-echecs/), com um gatilho fisiológico a mais.
+E é aí que o mecanismo fica caro: **o estado disparado degrada de fato o seu jogo**, o que produz mais um resultado ruim, o que reforça a associação. O ciclo é aquele descrito no nosso artigo sobre [a profecia autorrealizável no xadrez](/pt-br/blog/profecia-autorrealizavel-no-xadrez/), com um gatilho fisiológico a mais.
 
 ### Um adversário
 
@@ -167,7 +167,7 @@ O que a desfaz é a exposição repetida sem consequência desagradável. O que 
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o condicionamento operante no xadrez](/pt-br/blog/conditionnement-operant-aux-echecs/), [como lidar com o estresse em torneio](/pt-br/blog/echecs-stress-tournoi/) e [xadrez e medo de perder](/pt-br/blog/echecs-peur-de-perdre/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o condicionamento operante no xadrez](/pt-br/blog/condicionamento-operante-no-xadrez/), [como lidar com o estresse em torneio](/pt-br/blog/xadrez-estresse-torneio/) e [xadrez e medo de perder](/pt-br/blog/xadrez-medo-de-perder/).*
 
 ## Fontes
 

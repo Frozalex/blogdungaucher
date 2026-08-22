@@ -66,7 +66,7 @@ O fascinante do tilt no xadrez é o que ele revela sobre os seus pontos fracos p
 
 [Mark Dvoretsky](https://en.wikipedia.org/wiki/Mark_Dvoretsky), um dos maiores treinadores da história do xadrez, batia nessa tecla com os seus alunos. A análise pós-partida não deveria buscar só o erro técnico. Deveria buscar o estado emocional em que esse erro foi cometido. É aí que está a verdadeira informação.
 
-Quando o tilt vira um ciclo que se repete, partidas começadas compulsivamente depois de cada derrota, é sinal de que outra coisa está operando. O artigo [Xadrez e vício](/pt-br/blog/les-echecs-et-l-addiction/) trata justamente desse caso.
+Quando o tilt vira um ciclo que se repete, partidas começadas compulsivamente depois de cada derrota, é sinal de que outra coisa está operando. O artigo [Xadrez e vício](/pt-br/blog/vicio-em-xadrez/) trata justamente desse caso.
 
 ## Zeitnot: o tempo não te mata, o seu medo do tempo, sim
 
@@ -78,7 +78,7 @@ O segundo mecanismo é a profecia autorrealizável. Você vê que o adversário 
 
 ## Confiança de menos ou de mais: impostor, sequência de vitórias e decisões contaminadas
 
-Um fenômeno psicológico pouco comentado no xadrez, mas extremamente comum, é a [síndrome do impostor](/pt-br/blog/syndrome-imposteur-aux-echecs/). Você ganhou alguns torneios, o seu rating subiu, te respeitam no clube. E, apesar de tudo isso, uma vozinha interna sussurra que você não está realmente à altura, que os seus resultados são fruto da sorte, que mais cedo ou mais tarde os outros vão "te desmascarar".
+Um fenômeno psicológico pouco comentado no xadrez, mas extremamente comum, é a [síndrome do impostor](/pt-br/blog/sindrome-do-impostor-no-xadrez/). Você ganhou alguns torneios, o seu rating subiu, te respeitam no clube. E, apesar de tudo isso, uma vozinha interna sussurra que você não está realmente à altura, que os seus resultados são fruto da sorte, que mais cedo ou mais tarde os outros vão "te desmascarar".
 
 Esse sentimento é especialmente tóxico no xadrez porque te força a jogar em "modo demonstração" em vez de "modo jogo". Você tenta provar que merece o seu rating em vez de simplesmente procurar o melhor lance no tabuleiro. Suas decisões ficam contaminadas pelo olhar imaginário dos outros.
 
@@ -88,7 +88,7 @@ O inverso também existe e é igualmente perigoso: o excesso de confiança depoi
 
 Existem momentos raros e preciosos, que todo jogador já viveu pelo menos uma ou duas vezes, em que algo diferente acontece. O relógio deixa de existir. A sala ao redor desaparece. O adversário já não é uma ameaça, mas apenas o contexto da sua reflexão. Você enxerga a posição com uma clareza incomum. As variantes se desenrolam naturalmente na sua cabeça, como se já estivessem escritas.
 
-[Mihály Csíkszentmihályi](https://pt.wikipedia.org/wiki/Mih%C3%A1ly_Cs%C3%ADkszentmih%C3%A1lyi), psicólogo da [Universidade de Chicago](https://pt.wikipedia.org/wiki/Universidade_de_Chicago), dedicou a vida a estudar esse estado, que chamou de [flow](/pt-br/blog/echecs-et-flow/): um estado de absorção total numa atividade, marcado por uma ausência completa de noção do tempo, uma sensação de controle profundo e uma satisfação intrínseca intensa. O xadrez, segundo o próprio Csíkszentmihályi, é uma das atividades humanas que mais fácil e completamente induzem o flow.
+[Mihály Csíkszentmihályi](https://pt.wikipedia.org/wiki/Mih%C3%A1ly_Cs%C3%ADkszentmih%C3%A1lyi), psicólogo da [Universidade de Chicago](https://pt.wikipedia.org/wiki/Universidade_de_Chicago), dedicou a vida a estudar esse estado, que chamou de flow: um estado de absorção total numa atividade, marcado por uma ausência completa de noção do tempo, uma sensação de controle profundo e uma satisfação intrínseca intensa. O xadrez, segundo o próprio Csíkszentmihályi, é uma das atividades humanas que mais fácil e completamente induzem o flow.
 
 ### As condições do flow no tabuleiro
 

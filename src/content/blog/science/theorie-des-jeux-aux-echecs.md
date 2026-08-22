@@ -76,7 +76,7 @@ Quatre propriétés font des échecs un objet rare en théorie des jeux. Elles p
 
 ## Le théorème vieux de 110 ans qui dit qu'une partie d'échecs a déjà un résultat
 
-En 1913, le mathématicien [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) prouve un résultat qui devrait te donner le vertige. (Le théorème, sa portée, ses limites et sa subtilité combinatoire sont détaillés dans l'article dédié sur [le paradoxe de Zermelo](/blog/paradoxe-de-zermelo/).)
+En 1913, le mathématicien [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) prouve un résultat qui devrait te donner le vertige. (Le théorème, sa portée, ses limites et sa subtilité combinatoire sont détaillés dans l'article dédié sur [le paradoxe de Zermelo](/fr/blog/paradoxe-de-zermelo/).)
 
 Dans tout jeu à deux joueurs, à information parfaite, sans hasard, et fini, l'une de ces trois affirmations est *forcément vraie* :
 1. Le premier joueur a une stratégie gagnante.
@@ -112,7 +112,7 @@ $C(p)$ est l'ensemble des coups légaux en position $p$.
 
 Ce que cette formule te fait éviter de recalculer : à chaque profondeur, elle suppose que l'adversaire jouera *son* meilleur coup, ce qui te dispense d'imaginer ses erreurs probables (qui te coûteraient du calcul sans gagner en sécurité).
 
-C'est exactement ce que Stockfish, Leela et tous les moteurs modernes exécutent. La différence avec toi : ils le font sur des millions de nœuds par seconde, là où ton cerveau en traite peut-être trois ou quatre. Le détail de l'algorithme, ses raffinements (table de transposition, *iterative deepening*) et sa version moderne en réseau de neurones sont traités dans l'article [minimax aux échecs](/blog/minimax-aux-echecs/).
+C'est exactement ce que Stockfish, Leela et tous les moteurs modernes exécutent. La différence avec toi : ils le font sur des millions de nœuds par seconde, là où ton cerveau en traite peut-être trois ou quatre. Le détail de l'algorithme, ses raffinements (table de transposition, *iterative deepening*) et sa version moderne en réseau de neurones sont traités dans l'article [minimax aux échecs](/fr/blog/minimax-aux-echecs/).
 
 ### Pourquoi un moteur n'explore pas $35^{10}$ positions
 
@@ -138,7 +138,7 @@ Quand on dit qu'une variante est *"théoriquement égale"*, ça veut dire préci
 
 ![Équilibre de Nash dans les ouvertures : Blancs et Noirs maintiennent chacun leurs ressources dans l'Espagnole ; dévier unilatéralement expose celui qui bouge à une punition, ce qui explique la stabilité de la variante depuis deux siècles.](/images/theorie-des-jeux-04-equilibre-nash.svg)
 
-Sous jeu parfait des deux côtés, *toute la partie* serait un seul gigantesque équilibre de Nash. Et si la vérité des échecs est la nulle, alors cet équilibre est la nulle. La cartographie complète de ces équilibres dans les ouvertures actuelles est l'objet de [graphes de Nash et équilibre des ouvertures](/blog/graphes-de-nash-equilibre-ouvertures/) ; un même répertoire peut contenir plusieurs équilibres, et le choix entre eux relève déjà du méta-jeu.
+Sous jeu parfait des deux côtés, *toute la partie* serait un seul gigantesque équilibre de Nash. Et si la vérité des échecs est la nulle, alors cet équilibre est la nulle. La cartographie complète de ces équilibres dans les ouvertures actuelles est l'objet de [graphes de Nash et équilibre des ouvertures](/fr/blog/graphes-de-nash-equilibre-ouvertures/) ; un même répertoire peut contenir plusieurs équilibres, et le choix entre eux relève déjà du méta-jeu.
 
 ### Stratégies dominantes et stratégies dominées
 
@@ -154,7 +154,7 @@ L'information manquante n'est pas sur l'échiquier. Elle est dans le crâne de t
 
 Tu ne sais pas jusqu'où il a calculé. Tu ne sais pas s'il connaît la variante que tu as préparée hier soir. Tu ne sais pas si son calme apparent cache une position qu'il pense perdue ou une combinaison dévastatrice qu'il attend de lâcher au coup 27.
 
-Cette asymétrie subjective transforme les échecs, en pratique, en jeu à information imparfaite. C'est là que la [psychologie du joueur d'échecs](/blog/psychologie-du-joueur-d-echecs/) débarque. C'est là que la théorie des jeux pure cesse de prédire correctement le comportement humain.
+Cette asymétrie subjective transforme les échecs, en pratique, en jeu à information imparfaite. C'est là que la [psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/) débarque. C'est là que la théorie des jeux pure cesse de prédire correctement le comportement humain.
 
 ## Le paradoxe Bobby Fischer : pourquoi le joueur le plus prévisible du XXe siècle a gagné
 
@@ -191,7 +191,7 @@ Pour comparer :
 - **Le Nim** : résolu analytiquement (théorème de Sprague-Grundy).
 - **Les échecs** : restent ouverts. Pour très longtemps.
 
-Ce n'est pas une limite de la discipline. La théorie affirme que la réponse existe. C'est juste que les ressources de calcul nécessaires sont hors d'atteinte physique. (Pour la démonstration détaillée de cette impossibilité pratique et la façon dont l'IA contourne le mur, voir [pourquoi les échecs sont un problème mathématique presque impossible](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
+Ce n'est pas une limite de la discipline. La théorie affirme que la réponse existe. C'est juste que les ressources de calcul nécessaires sont hors d'atteinte physique. (Pour la démonstration détaillée de cette impossibilité pratique et la façon dont l'IA contourne le mur, voir [pourquoi les échecs sont un problème mathématique presque impossible](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
 
 ## La leçon qui tient en une ligne
 

@@ -63,7 +63,7 @@ Le théorème de Zermelo s'applique à une classe de jeux qui incluent les éche
 
 ![Les trois issues déterminées par Zermelo : victoire forcée des Blancs, victoire forcée des Noirs, ou nulle forcée — la nulle étant l'hypothèse dominante non prouvée à ce jour.](/images/zermelo-01-trois-issues.svg)
 
-La démonstration utilise une **induction rétrograde** (*backward induction*) sur la longueur maximale possible de la partie. C'est exactement le même mécanisme que la version moderne de [minimax aux échecs](/blog/minimax-aux-echecs/), à 35 ans d'écart : Zermelo l'a formulé pour les mathématiciens, Shannon (1950) l'a réutilisé tel quel pour les premiers programmes.
+La démonstration utilise une **induction rétrograde** (*backward induction*) sur la longueur maximale possible de la partie. C'est exactement le même mécanisme que la version moderne de [minimax aux échecs](/fr/blog/minimax-aux-echecs/), à 35 ans d'écart : Zermelo l'a formulé pour les mathématiciens, Shannon (1950) l'a réutilisé tel quel pour les premiers programmes.
 
 Imagine une fin de partie atteinte. Chaque position terminale est soit une victoire pour Blanc, soit une victoire pour Noir, soit une nulle. Maintenant, remontons d'un coup. Si c'est le tour de Blanc, il peut choisir parmi les positions terminales qui lui sont accessibles celle qui lui est la plus favorable. De même pour Noir. En remontant récursivement ainsi depuis toutes les positions terminales jusqu'à la position initiale, chaque position dans l'arbre du jeu reçoit une valeur définie : victoire Blanc, victoire Noir, ou nulle.
 
@@ -81,11 +81,11 @@ Le paradoxe de Zermelo n'est pas logique. C'est un paradoxe pratique. Le théor�
 
 Pour trouver la valeur réelle de la position initiale des échecs, il faudrait parcourir l'intégralité de l'arbre du jeu. Cet arbre contient environ $10^{120}$ feuilles selon l'estimation de Shannon. Pour référence, l'âge de l'univers est d'environ $4 \times 10^{17}$ secondes, et le nombre d'atomes dans l'univers observable est d'environ $10^{80}$.
 
-Un ordinateur qui pourrait évaluer $10^{20}$ positions par seconde (soit environ $10^{11}$ fois plus vite que les meilleurs ordinateurs actuels) mettrait environ $10^{100}$ secondes pour résoudre les échecs par force brute. C'est infiniment plus long que l'âge de l'univers. La résolution complète des échecs par exploration exhaustive est physiquement impossible avec toute technologie concevable. (La démonstration détaillée de cette impossibilité, avec les notions de complexité EXPTIME et de facteur de branchement, est dans [pourquoi les échecs sont un problème mathématique presque impossible](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
+Un ordinateur qui pourrait évaluer $10^{20}$ positions par seconde (soit environ $10^{11}$ fois plus vite que les meilleurs ordinateurs actuels) mettrait environ $10^{100}$ secondes pour résoudre les échecs par force brute. C'est infiniment plus long que l'âge de l'univers. La résolution complète des échecs par exploration exhaustive est physiquement impossible avec toute technologie concevable. (La démonstration détaillée de cette impossibilité, avec les notions de complexité EXPTIME et de facteur de branchement, est dans [pourquoi les échecs sont un problème mathématique presque impossible](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
 
 ## La vérité inconnue des échecs
 
-La grande question que le théorème de Zermelo laisse en suspens est : quelle est la valeur des échecs sous jeu parfait ? (Le théorème lui-même est l'un des cinq concepts fondateurs de la [théorie des jeux appliquée aux échecs](/blog/theorie-des-jeux-aux-echecs/).)
+La grande question que le théorème de Zermelo laisse en suspens est : quelle est la valeur des échecs sous jeu parfait ? (Le théorème lui-même est l'un des cinq concepts fondateurs de la [théorie des jeux appliquée aux échecs](/fr/blog/theorie-des-jeux-aux-echecs/).)
 
 La majorité des grands maîtres et des théoriciens pensent que la réponse est le nul. L'argument empirique est fort : au plus haut niveau de jeu, les nulles sont très fréquentes, et la position initiale est considérée comme légèrement favorable aux Blancs (qui ont le premier mouvement) mais pas suffisamment pour forcer la victoire contre une défense optimale.
 

@@ -60,7 +60,7 @@ E é exatamente o inverso de tudo o que a psicologia das multidões descreveu du
 
 Uma antimultidão. Que age sobre você mesmo assim, e de forma mensurável.
 
-Três artigos desta série já exploraram aspectos disso: [o conformismo](/pt-br/blog/conformisme-aux-echecs/), [a obediência à autoridade](/pt-br/blog/obeissance-a-l-autorite-aux-echecs/) e [o efeito espectador](/pt-br/blog/effet-spectateur-aux-echecs/). Aqui se trata de montar o quadro geral, e de mostrar que o quadro mais famoso é o errado.
+Três artigos desta série já exploraram aspectos disso: [o conformismo](/pt-br/blog/conformismo-no-xadrez/), [a obediência à autoridade](/pt-br/blog/obediencia-a-autoridade-no-xadrez/) e [o efeito espectador](/pt-br/blog/efeito-espectador-no-xadrez/). Aqui se trata de montar o quadro geral, e de mostrar que o quadro mais famoso é o errado.
 
 ## Le Bon, 1895
 
@@ -180,7 +180,7 @@ A explicação preguiçosa invoca a desindividuação clássica: anônimos, logo
 
 O modelo correto diz outra coisa. O anonimato e a imersão **reforçam as normas do grupo**. O que significa que o comportamento de um chat é uma informação sobre as normas dele, não sobre o desaparecimento das normas.
 
-Duas consequências práticas. A primeira é que os chats não se parecem: dependendo do canal, o clima é hostil ou notavelmente acolhedor, com a mesma tecnologia e o mesmo anonimato. A segunda é que essas normas se constroem, principalmente pelo exemplo de quem transmite e pela moderação. O nosso artigo sobre [xadrez e streaming](/pt-br/blog/echecs-et-streaming/) trata dessa economia.
+Duas consequências práticas. A primeira é que os chats não se parecem: dependendo do canal, o clima é hostil ou notavelmente acolhedor, com a mesma tecnologia e o mesmo anonimato. A segunda é que essas normas se constroem, principalmente pelo exemplo de quem transmite e pela moderação. O nosso artigo sobre [xadrez e streaming](/pt-br/blog/xadrez-e-streaming/) trata dessa economia.
 
 E, para o jogador que está ao vivo, o efeito Zajonc se aplica com intensidade particular: o público é numeroso, as reações dele são visíveis em tempo real, e ele comenta os lances enquanto eles estão sendo jogados.
 
@@ -190,7 +190,7 @@ A terceira nunca se reúne no mesmo lugar, e talvez seja a mais influente.
 
 Ela define o que se faz e o que não se faz: quais aberturas são respeitáveis, quais ritmos de jogo são sérios, qual atitude é correta depois de uma derrota, a partir de que nível a pessoa tem direito de dar opinião.
 
-É o terreno do conformismo, tratado num artigo próprio desta série. E o modelo da identidade social é diretamente aplicável ali: essas normas não se impõem por contágio, elas se aplicam porque a pessoa se reconhece como membro do grupo. É também isso que torna a alavanca da unidade tão eficiente comercialmente, como mostra o nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/).
+É o terreno do conformismo, tratado num artigo próprio desta série. E o modelo da identidade social é diretamente aplicável ali: essas normas não se impõem por contágio, elas se aplicam porque a pessoa se reconhece como membro do grupo. É também isso que torna a alavanca da unidade tão eficiente comercialmente, como mostra o nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/).
 
 ## A experiência decisiva: quando uma multidão jogou de verdade
 
@@ -230,7 +230,7 @@ A confusão mais frequente consiste em tratar um problema de obediência com um 
 
 **Automatize o que precisa resistir ao público.** É a consequência direta do modelo de Zajonc, e a mais acionável. Já que a presença de outras pessoas favorece as respostas dominantes, a única proteção é fazer com que as suas respostas dominantes sejam boas. As técnicas de final, os motivos táticos e os primeiros lances do seu repertório precisam ser aprendidos além do ponto de saturação, até ficarem automáticos. O que é automático melhora sob público; o que é frágil desmorona.
 
-**Treine nas condições da competição.** Um jogador que só treina online, sozinho, prepara as respostas dele num contexto sem ativação. Jogar com regularidade em presença física não é só questão de prazer: é o que torna o seu repertório disponível nas condições em que ele vai servir. O fenômeno de dependência do contexto, descrito no nosso artigo sobre [o condicionamento clássico no xadrez](/pt-br/blog/conditionnement-classique-aux-echecs/), aponta na mesma direção.
+**Treine nas condições da competição.** Um jogador que só treina online, sozinho, prepara as respostas dele num contexto sem ativação. Jogar com regularidade em presença física não é só questão de prazer: é o que torna o seu repertório disponível nas condições em que ele vai servir. O fenômeno de dependência do contexto, descrito no nosso artigo sobre [o condicionamento clássico no xadrez](/pt-br/blog/condicionamento-classico-no-xadrez/), aponta na mesma direção.
 
 **Desacelere de propósito nas posições novas.** A ativação acelera e empurra para a resposta mais disponível. Isso é útil no conhecido e perigoso no desconhecido. Uma regra mecânica, do tipo fazer uma pausa assim que a posição sai do terreno familiar, contra-ataca esse efeito sem exigir sangue-frio.
 
@@ -250,7 +250,7 @@ Daí o paradoxo do salão de torneio, dispositivo pensado para suprimir qualquer
 
 ---
 
-*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Veja [o conformismo no xadrez](/pt-br/blog/conformisme-aux-echecs/), [a obediência à autoridade no xadrez](/pt-br/blog/obeissance-a-l-autorite-aux-echecs/) e [o efeito espectador no xadrez](/pt-br/blog/effet-spectateur-aux-echecs/). Veja [o índice completo da série](/pt-br/series/psychologie/).*
+*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Veja [o conformismo no xadrez](/pt-br/blog/conformismo-no-xadrez/), [a obediência à autoridade no xadrez](/pt-br/blog/obediencia-a-autoridade-no-xadrez/) e [o efeito espectador no xadrez](/pt-br/blog/efeito-espectador-no-xadrez/). Veja [o índice completo da série](/pt-br/series/psychologie/).*
 
 ## Fontes
 

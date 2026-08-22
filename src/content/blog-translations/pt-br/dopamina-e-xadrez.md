@@ -87,7 +87,7 @@ Esse fenômeno explica um viés de comportamento frequente no xadrez: os jogador
 
 O rating Elo é uma fonte de recompensa dopaminérgica adiada, mas poderosa. Cada ponto ganho é uma microrrecompensa. Cada passagem por um marco simbólico (1500, 1700, 2000) é uma recompensa mais forte.
 
-Esse sistema de progressão visível e numérica é um dos mecanismos mais eficazes para manter o engajamento no longo prazo, e também um dos mais arriscados para os perfis suscetíveis à [dependência comportamental](/pt-br/blog/les-echecs-et-l-addiction/).
+Esse sistema de progressão visível e numérica é um dos mecanismos mais eficazes para manter o engajamento no longo prazo, e também um dos mais arriscados para os perfis suscetíveis à [dependência comportamental](/pt-br/blog/vicio-em-xadrez/).
 
 ## Comparação com outros jogos: o perfil específico do xadrez
 

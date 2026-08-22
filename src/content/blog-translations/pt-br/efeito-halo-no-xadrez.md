@@ -131,7 +131,7 @@ Existe também uma versão que diz respeito diretamente a você: a que se aplica
 
 Você está, na verdade, ligeiramente melhor. Mas a diferença de rating produz uma impressão global desfavorável, e essa impressão contamina a sua avaliação. Você procura o que está errado na sua posição em vez de procurar como explorá-la. O seu julgamento objetivo é reescrito por um número.
 
-Esse mecanismo é próximo do descrito no nosso artigo sobre [o efeito placebo no xadrez](/pt-br/blog/effet-placebo-aux-echecs/), no capítulo do nocebo: a expectativa negativa, essa, morde de verdade.
+Esse mecanismo é próximo do descrito no nosso artigo sobre [o efeito placebo no xadrez](/pt-br/blog/efeito-placebo-no-xadrez/), no capítulo do nocebo: a expectativa negativa, essa, morde de verdade.
 
 ## O teste que você pode fazer hoje à noite
 
@@ -175,7 +175,7 @@ Mas o xadrez também oferece algo que a psicologia social quase nunca teve: a po
 
 ---
 
-*Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/), [a obediência à autoridade no xadrez](/pt-br/blog/obeissance-a-l-autorite-aux-echecs/) e [Elo e autoestima](/pt-br/blog/echecs-estime-de-soi-elo/).*
+*Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/), [a obediência à autoridade no xadrez](/pt-br/blog/obediencia-a-autoridade-no-xadrez/) e [Elo e autoestima](/pt-br/blog/xadrez-autoestima-elo/).*
 
 ## Fontes
 

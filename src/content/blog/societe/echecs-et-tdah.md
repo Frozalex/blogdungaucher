@@ -132,7 +132,7 @@ Aux échecs, la bonne décision est presque toujours la décision lente : voir, 
 
 Pour un enfant TDAH dont le problème central est l'impulsivité, cette différence est fondamentale.
 
-Ce même profil cognitif, difficulté à inhiber, besoin d'un cadre stable, sensibilité aux récompenses immédiates, se retrouve dans d'autres contextes où les échecs ont montré des effets documentés, notamment en milieu carcéral. L'article sur [les échecs en prison](/blog/echecs-en-prison/) explore les mêmes mécanismes appliqués à la réhabilitation.
+Ce même profil cognitif, difficulté à inhiber, besoin d'un cadre stable, sensibilité aux récompenses immédiates, se retrouve dans d'autres contextes où les échecs ont montré des effets documentés, notamment en milieu carcéral. L'article sur [les échecs en prison](/fr/blog/echecs-en-prison/) explore les mêmes mécanismes appliqués à la réhabilitation.
 
 ## Les limites : ce que les échecs ne peuvent pas faire
 
@@ -144,7 +144,7 @@ Il serait malhonnête de présenter l'échiquier comme une solution au TDAH. Que
 
 **Les échecs ne remplacent pas un suivi spécialisé.** Médication (dont l'efficacité pour les fonctions exécutives est parmi les mieux documentées en médecine), thérapie cognitive-comportementale et aménagements scolaires restent les traitements aux bases scientifiques les plus solides. Les échecs peuvent être un complément précieux et un espace positif, pas un substitut.
 
-**Daria Kuss** ([Nottingham Trent University](https://fr.wikipedia.org/wiki/Nottingham_Trent_University)) a montré comment anxiété, dépression ou TDAH peuvent pousser vers des activités à hyperstimulation, ce qui explique en partie la vulnérabilité particulière des profils TDAH à certaines formes d'usage excessif des jeux en ligne. Un angle exploré dans l'article sur [les échecs et l'addiction](/blog/les-echecs-et-l-addiction/).
+**Daria Kuss** ([Nottingham Trent University](https://fr.wikipedia.org/wiki/Nottingham_Trent_University)) a montré comment anxiété, dépression ou TDAH peuvent pousser vers des activités à hyperstimulation, ce qui explique en partie la vulnérabilité particulière des profils TDAH à certaines formes d'usage excessif des jeux en ligne. Un angle exploré dans l'article sur [les échecs et l'addiction](/fr/blog/les-echecs-et-l-addiction/).
 
 ## Conseils pratiques pour adapter les échecs au cerveau TDAH
 

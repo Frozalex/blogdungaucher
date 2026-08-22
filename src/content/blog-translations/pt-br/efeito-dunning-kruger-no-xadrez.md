@@ -248,7 +248,7 @@ Um último ponto, porque este artigo pode dar a impressão de que todo mundo se 
 
 Os jogadores de rating mais alto não se subestimam: eles são **precisos**. O padrão não é simétrico. Não existe uma massa de jogadores fortes e modestos que compensaria a massa de jogadores fracos e presunçosos. Existe uma superestimação enorme embaixo que vai se apagando conforme se sobe.
 
-O que significa que, se você é um jogador sólido e duvida o tempo todo da própria legitimidade, o seu caso não é Dunning-Kruger. É outra coisa, que mexe com o sentimento de pertencimento e não com a avaliação do nível, e que se chama [síndrome do impostor](/pt-br/blog/syndrome-imposteur-2000-elo/).
+O que significa que, se você é um jogador sólido e duvida o tempo todo da própria legitimidade, o seu caso não é Dunning-Kruger. É outra coisa, que mexe com o sentimento de pertencimento e não com a avaliação do nível, e que se chama [síndrome do impostor](/pt-br/blog/sindrome-impostora-2000-elo/).
 
 Os dois fenômenos parecem ser o direito e o avesso da mesma moeda. Não são. Um é um erro de estimativa, o outro é uma relação consigo mesmo. Dá perfeitamente para conhecer o próprio nível ponto a ponto e não se sentir no lugar certo.
 
@@ -264,7 +264,7 @@ O que é, quando você para para pensar, uma razão bem sólida para continuar t
 
 **Depois da leitura:** faça o teste dos 89 pontos. Escreva o rating que você acha que merece, calcule o placar que essa diferença implica, e confronte isso com as suas últimas cinquenta partidas contra adversários do seu nível. O resultado, seja qual for, é mais instrutivo que este artigo.
 
-*Este artigo abre uma série dedicada à psicologia aplicada ao xadrez. Ele será seguido de artigos sobre a dissonância cognitiva, o viés de confirmação, os mecanismos de defesa e a racionalização. Veja também o panorama dos [5 vieses cognitivos que te fazem dar blunder](/pt-br/blog/5-biais-cognitifs-blunder/). Veja [o índice completo da série](/pt-br/series/psychologie/).*
+*Este artigo abre uma série dedicada à psicologia aplicada ao xadrez. Ele será seguido de artigos sobre a dissonância cognitiva, o viés de confirmação, os mecanismos de defesa e a racionalização. Veja também o panorama dos [5 vieses cognitivos que te fazem dar blunder](/pt-br/blog/5-vieses-cognitivos-blunder/). Veja [o índice completo da série](/pt-br/series/psychologie/).*
 
 ## Fontes
 

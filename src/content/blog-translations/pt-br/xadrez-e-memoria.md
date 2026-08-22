@@ -26,7 +26,7 @@ faq:
       benefícios <strong>gerais</strong> ("memória melhor em tudo"), a palavra <strong>prova</strong> é forte
       demais: fala-se mais de indícios, de meta-análises às vezes inconclusivas sobre a transferência distante.
       Veja também as fontes no fim do artigo e <a
-      href="/pt-br/blog/les-echecs-et-le-cerveau/">xadrez e o cérebro</a>.
+      href="/pt-br/blog/xadrez-e-o-cerebro/">xadrez e o cérebro</a>.
   - question: "Qual é a duração de treino de xadrez recomendada para melhorar a memória 'enxadrística'?"
     answer: >-
       Não há dose universal: os estudos de intervenção em cognição costumam sugerir <strong>meses</strong> de
@@ -38,7 +38,7 @@ faq:
       Os dados populacionais apontam mais para <strong>associações</strong> entre atividades intelectuais
       variadas e risco de demência em certas coortes; não é uma garantia individual. O xadrez pode fazer parte
       de um <strong>estilo de vida</strong> estimulante (social + planejamento). Leia a síntese cautelosa em <a
-      href="/pt-br/blog/echecs-alzheimer-prevention-declin-cognitif/">xadrez, Alzheimer e declínio cognitivo</a>.
+      href="/pt-br/blog/xadrez-alzheimer-prevencao-declinio-cognitivo/">xadrez, Alzheimer e declínio cognitivo</a>.
 ---
 
 Anatoli Karpov rejogava de memória, sem tabuleiro, partidas disputadas vinte anos antes. Lance por lance. Variante por variante. Jornalistas o testaram várias vezes: ele não errava.
@@ -51,7 +51,7 @@ Esse paradoxo resume o assunto: **o xadrez não "dá" uma memória mágica**. El
 
 Jogar xadrez é, o tempo todo, **reter**, **atualizar** e **esquecer de propósito**: variantes parciais, ameaças indiretas, pressão de tempo. A memória não é um bloco só: distingue-se classicamente a **memória de trabalho** (manipular a informação em curso), a **memória de longo prazo** (biblioteca de padrões) e os processos executivos (inibir uma captura tentadora, manter a atenção).
 
-O xadrez exige sobretudo uma **memória de domínio**: você fica muito forte em reconhecer configurações que **se parecem com xadrez**. A transferência para outras tarefas (lista de compras, aula de história) existe, mas é **modesta** e depende do jeito como você treina. Para o cérebro no aparelho e os benefícios ligados à idade, o artigo sobre [xadrez e o cérebro](/pt-br/blog/les-echecs-et-le-cerveau/) completa o quadro.
+O xadrez exige sobretudo uma **memória de domínio**: você fica muito forte em reconhecer configurações que **se parecem com xadrez**. A transferência para outras tarefas (lista de compras, aula de história) existe, mas é **modesta** e depende do jeito como você treina. Para o cérebro no aparelho e os benefícios ligados à idade, o artigo sobre [xadrez e o cérebro](/pt-br/blog/xadrez-e-o-cerebro/) completa o quadro.
 
 ## Como o xadrez melhora a memória de trabalho
 
@@ -97,7 +97,7 @@ A memória de longo prazo não é um HD passivo: o que entra de forma duradoura 
 
 > **Gobet F & Simon HA.** (1996). *Templates in chess memory: A mechanism for recalling several boards.* Cognitive Psychology, 31(1), 1-40.
 
-Trabalhos em [neuroimagem](https://pt.wikipedia.org/wiki/Neuroimagem) mostram que os jogadores experientes se apoiam mais em áreas ligadas à **memória de longo prazo** ao reconhecer posições, e menos numa memória de trabalho "bruta". O cérebro **classifica** em vez de sobrecarregar. O detalhe está desenvolvido no artigo sobre [xadrez e o cérebro](/pt-br/blog/les-echecs-et-le-cerveau/).
+Trabalhos em [neuroimagem](https://pt.wikipedia.org/wiki/Neuroimagem) mostram que os jogadores experientes se apoiam mais em áreas ligadas à **memória de longo prazo** ao reconhecer posições, e menos numa memória de trabalho "bruta". O cérebro **classifica** em vez de sobrecarregar. O detalhe está desenvolvido no artigo sobre [xadrez e o cérebro](/pt-br/blog/xadrez-e-o-cerebro/).
 
 ## Memorização das aberturas e das estratégias
 
@@ -123,7 +123,7 @@ Em 2004, adolescente, [Magnus Carlsen](https://pt.wikipedia.org/wiki/Magnus_Carl
 
 ## O xadrez como ferramenta de estimulação cognitiva global
 
-Para além da memória estrita, o xadrez exige uma **constelação** de competências: atenção sustentada, flexibilidade mental (mudar de plano), resolução de problemas sob restrições. São **habilidades** transferíveis com modéstia: parecem com o que a matemática ou a gestão de projetos pedem (decompor, testar, conferir), sem substituir uma aula. Para a ligação com a matemática, veja [xadrez e matemática](/pt-br/blog/les-echecs-et-les-mathematiques/).
+Para além da memória estrita, o xadrez exige uma **constelação** de competências: atenção sustentada, flexibilidade mental (mudar de plano), resolução de problemas sob restrições. São **habilidades** transferíveis com modéstia: parecem com o que a matemática ou a gestão de projetos pedem (decompor, testar, conferir), sem substituir uma aula. Para a ligação com a matemática, veja [xadrez e matemática](/pt-br/blog/xadrez-e-matematica/).
 
 ## Melhora da concentração e da atenção sustentada
 
@@ -139,7 +139,7 @@ O xadrez não "prova" que você é lógico em toda circunstância; ele mostra co
 
 ## Os benefícios do xadrez para o cérebro: neurociência e plasticidade
 
-A **plasticidade** (o cérebro que se adapta ao uso) explica por que a prática regular muda o jeito como você processa o tabuleiro: menos recálculo ingênuo, mais reconhecimento. Não é uma promessa de QI global: é uma especialização. O artigo [xadrez e o cérebro](/pt-br/blog/les-echecs-et-le-cerveau/) resume o que os estudos realmente medem, e o que eles não medem.
+A **plasticidade** (o cérebro que se adapta ao uso) explica por que a prática regular muda o jeito como você processa o tabuleiro: menos recálculo ingênuo, mais reconhecimento. Não é uma promessa de QI global: é uma especialização. O artigo [xadrez e o cérebro](/pt-br/blog/xadrez-e-o-cerebro/) resume o que os estudos realmente medem, e o que eles não medem.
 
 ## Criação e reforço das conexões neuronais
 
@@ -155,7 +155,7 @@ O xadrez pode **estruturar** o tempo, oferecer objetivos claros e um enquadramen
 
 ## O xadrez nos idosos para manter as competências cognitivas
 
-A literatura sobre o envelhecimento distingue **reserva cognitiva**, atividades estimulantes e estudos observacionais. O artigo [xadrez, Alzheimer e declínio cognitivo](/pt-br/blog/echecs-alzheimer-prevention-declin-cognitif/) detalha o que o estudo Verghese (*NEJM*, 2003) autoriza a dizer, e o que não autoriza.
+A literatura sobre o envelhecimento distingue **reserva cognitiva**, atividades estimulantes e estudos observacionais. O artigo [xadrez, Alzheimer e declínio cognitivo](/pt-br/blog/xadrez-alzheimer-prevencao-declinio-cognitivo/) detalha o que o estudo Verghese (*NEJM*, 2003) autoriza a dizer, e o que não autoriza.
 
 ## Uso do xadrez na reabilitação cognitiva
 
@@ -195,7 +195,7 @@ Material tangível (madeira, peças pesadas) ajuda algumas crianças a **fixar**
 
 ## Como o "memory chess" desenvolve a cognição das crianças pequenas
 
-Jogos de pares, mini-tabuleiros, desafios "ache a casa da dama": tudo isso trabalha a **memória imediata** e a atenção seletiva. Sobre o efeito no desenvolvimento global, mantenha a cautela quanto às promessas: a pesquisa sobre a **transferência** dos jogos para a escola é desigual; o artigo sobre [xadrez e matemática](/pt-br/blog/les-echecs-et-les-mathematiques/) insiste nessa nuance.
+Jogos de pares, mini-tabuleiros, desafios "ache a casa da dama": tudo isso trabalha a **memória imediata** e a atenção seletiva. Sobre o efeito no desenvolvimento global, mantenha a cautela quanto às promessas: a pesquisa sobre a **transferência** dos jogos para a escola é desigual; o artigo sobre [xadrez e matemática](/pt-br/blog/xadrez-e-matematica/) insiste nessa nuance.
 
 ## Conclusão: o xadrez, um aliado precioso para a sua memória
 
@@ -224,7 +224,7 @@ Adultos motivados constroem chunks com eficiência; [Neil Charness](https://www.
 
 ### Existem estudos científicos que provam os benefícios do xadrez sobre a memória?
 
-Sim, para **tarefas próximas** do xadrez (percepção, recordação de posições legais). Para benefícios **gerais** ("memória melhor em tudo"), a palavra **prova** é forte demais: fala-se mais de indícios, de meta-análises às vezes inconclusivas sobre a transferência distante. Veja também as fontes no fim do artigo e [xadrez e o cérebro](/pt-br/blog/les-echecs-et-le-cerveau/).
+Sim, para **tarefas próximas** do xadrez (percepção, recordação de posições legais). Para benefícios **gerais** ("memória melhor em tudo"), a palavra **prova** é forte demais: fala-se mais de indícios, de meta-análises às vezes inconclusivas sobre a transferência distante. Veja também as fontes no fim do artigo e [xadrez e o cérebro](/pt-br/blog/xadrez-e-o-cerebro/).
 
 ### Qual é a duração de treino de xadrez recomendada para melhorar a memória "enxadrística"?
 
@@ -232,7 +232,7 @@ Não há dose universal: os estudos de intervenção em cognição costumam suge
 
 ### O xadrez pode ajudar a prevenir a perda de memória ligada à idade?
 
-Os dados populacionais apontam mais para **associações** entre atividades intelectuais variadas e risco de demência em certas coortes; não é uma garantia individual. O xadrez pode fazer parte de um **estilo de vida** estimulante (social + planejamento). Leia a síntese cautelosa em [xadrez, Alzheimer e declínio cognitivo](/pt-br/blog/echecs-alzheimer-prevention-declin-cognitif/).
+Os dados populacionais apontam mais para **associações** entre atividades intelectuais variadas e risco de demência em certas coortes; não é uma garantia individual. O xadrez pode fazer parte de um **estilo de vida** estimulante (social + planejamento). Leia a síntese cautelosa em [xadrez, Alzheimer e declínio cognitivo](/pt-br/blog/xadrez-alzheimer-prevencao-declinio-cognitivo/).
 
 ---
 

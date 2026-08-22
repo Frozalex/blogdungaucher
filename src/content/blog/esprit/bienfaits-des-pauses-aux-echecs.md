@@ -94,7 +94,7 @@ Ce que la micro-pause doit être : marche courte, regard par la fenêtre, respir
 
 La décision de lancer une nouvelle partie immédiatement après une défaite est l'une des sources d'entraînement de basse qualité les plus fréquentes en ligne. Ce schéma a un nom dans la communauté : le « rage-queue » (relancer immédiatement en état émotionnel dégradé).
 
-En état émotionnel dégradé et cognitivement fatigué, les processus de réflexion sont compromis. Les coups joués renforcent des réflexes de mauvaise qualité. La session se termine souvent après plusieurs défaites supplémentaires, avec une frustration accumulée et des habitudes renforcées dans le mauvais sens. Le mécanisme psychologique sous-jacent (tilt, ego, peur de perdre) est analysé en détail dans [la psychologie du joueur d'échecs](/blog/psychologie-du-joueur-d-echecs/).
+En état émotionnel dégradé et cognitivement fatigué, les processus de réflexion sont compromis. Les coups joués renforcent des réflexes de mauvaise qualité. La session se termine souvent après plusieurs défaites supplémentaires, avec une frustration accumulée et des habitudes renforcées dans le mauvais sens. Le mécanisme psychologique sous-jacent (tilt, ego, peur de perdre) est analysé en détail dans [la psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/).
 
 Des études sur l'apprentissage moteur et cognitif montrent que l'espace entre les répétitions (inter-trial interval) affecte la qualité de la consolidation. Un espacement raisonnable entre les sessions de pratique produit de meilleurs apprentissages à long terme qu'une accumulation dense sur une courte période. C'est ce qu'on appelle l'[effet d'espacement](https://fr.wikipedia.org/wiki/Effet_d%27espacement) ou spaced practice.
 

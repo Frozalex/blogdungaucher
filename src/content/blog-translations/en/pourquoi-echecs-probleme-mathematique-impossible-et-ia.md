@@ -199,7 +199,7 @@ At your level as a player the lesson is the same: you cannot see everything; you
 
 ## What this means for you as a player
 
-**Try this.** If you want to see what an engine does on a position, open the site's [analysis workspace](/analyses) (Stockfish in the browser): depth, score, and variations live.
+**Try this.** If you want to see what an engine does on a position, open it in your own analysis tool (Stockfish, locally or in the browser): depth, score, and variations live.
 
 **On the blog:**
 - [Do chess players get better at maths?](/en/blog/les-echecs-et-les-mathematiques/)
@@ -210,4 +210,4 @@ Chess is "impossible" if you imagine a brute solution: explore everything, prove
 
 **To go further:** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/), [arXiv](https://arxiv.org/).
 
-**After reading:** open the [analysis space](/en/analyses/), spot the **first move** where your line and the engine's diverge by more than half a pawn, then replay **that position alone** three times in the day (without starting a new game).
+**After reading:** open your analysis tool, spot the **first move** where your line and the engine's diverge by more than half a pawn, then replay **that position alone** three times in the day (without starting a new game).

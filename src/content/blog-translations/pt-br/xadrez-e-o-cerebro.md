@@ -54,9 +54,9 @@ A verdadeira revelação científica surgiu quando os pesquisadores mediram o im
 
 Se os grandes mestres não têm uma memória geral extraordinária, como conseguem jogar às cegas contra dez adversários ou se lembrar de uma partida jogada há vinte anos? A resposta se apoia nos trabalhos de [Fernand Gobet](https://en.wikipedia.org/wiki/Fernand_Gobet), pesquisador da Universidade de Liverpool, e de [Herbert Simon](https://pt.wikipedia.org/wiki/Herbert_Simon), prêmio Nobel de economia.
 
-Gobet & Simon estimaram que um jogador profissional armazena na memória de longo prazo entre **50.000 e 300.000 "chunks"** (ou "templates"), ou seja, blocos de configurações de peças já encontradas (mecanismo analisado em detalhe em [Xadrez e memória](/pt-br/blog/echecs-et-memoire/)). As experiências pioneiras de [Adriaan de Groot](https://en.wikipedia.org/wiki/Adriaan_de_Groot) nos anos 1940 já tinham mostrado que, se você apresenta as mesmas peças em posições aleatórias (fora de uma partida real), a vantagem de memória dos experts desaparece quase por completo. A memória deles não é "melhor" em termos absolutos: ela é **organizada** em torno de padrões significativos.
+Gobet & Simon estimaram que um jogador profissional armazena na memória de longo prazo entre **50.000 e 300.000 "chunks"** (ou "templates"), ou seja, blocos de configurações de peças já encontradas (mecanismo analisado em detalhe em [Xadrez e memória](/pt-br/blog/xadrez-e-memoria/)). As experiências pioneiras de [Adriaan de Groot](https://en.wikipedia.org/wiki/Adriaan_de_Groot) nos anos 1940 já tinham mostrado que, se você apresenta as mesmas peças em posições aleatórias (fora de uma partida real), a vantagem de memória dos experts desaparece quase por completo. A memória deles não é "melhor" em termos absolutos: ela é **organizada** em torno de padrões significativos.
 
-É como aprender a ler: uma criança soletra letra por letra, você lê "CASA" como um bloco. Os grandes mestres "leem" o tabuleiro. Esse mecanismo é particularmente interessante para certos perfis cognitivos; veja [Xadrez e autismo](/pt-br/blog/echecs-et-autisme/).
+É como aprender a ler: uma criança soletra letra por letra, você lê "CASA" como um bloco. Os grandes mestres "leem" o tabuleiro. Esse mecanismo é particularmente interessante para certos perfis cognitivos; veja [Xadrez e autismo](/pt-br/blog/xadrez-e-autismo/).
 
 ## O que se acende sob um aparelho de RMf
 
@@ -204,7 +204,7 @@ O que o exame não capta é a **geografia funcional**: quais áreas se acendem, 
 
 ### O xadrez pode prevenir o Alzheimer?
 
-Não curar, mas possivelmente participar da prevenção. O estudo de Verghese et al. (*NEJM*, 2003) mostrou que a prática regular de jogos de tabuleiro estava associada a uma redução de **74%** do risco de demência num acompanhamento de **5 anos** com **469 idosos**. Trata-se de uma associação, não de uma causalidade comprovada. Veja também o artigo [Xadrez e Alzheimer](/pt-br/blog/echecs-alzheimer-prevention-declin-cognitif/).
+Não curar, mas possivelmente participar da prevenção. O estudo de Verghese et al. (*NEJM*, 2003) mostrou que a prática regular de jogos de tabuleiro estava associada a uma redução de **74%** do risco de demência num acompanhamento de **5 anos** com **469 idosos**. Trata-se de uma associação, não de uma causalidade comprovada. Veja também o artigo [Xadrez e Alzheimer](/pt-br/blog/xadrez-alzheimer-prevencao-declinio-cognitivo/).
 
 ### Quantas horas é preciso jogar para ver um efeito no cérebro?
 

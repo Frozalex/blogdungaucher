@@ -114,7 +114,7 @@ const ptBrTranslations = defineCollection({
  * Traductions néerlandaises (NL) des articles FR.
  * Convention identique à PT-BR : nom de fichier = slug NL localisé,
  * `frSlug` dans le frontmatter = slug FR source.
- * Lancement prévu le 1er septembre 2026.
+ * Lancement prévu le 1er novembre 2026 (repoussé du 1er septembre le 2026-08-21).
  */
 const nlTranslations = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog-translations/nl" }),

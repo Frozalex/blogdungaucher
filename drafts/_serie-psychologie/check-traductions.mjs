@@ -52,6 +52,23 @@ for (const f of readdirSync(dir).filter((f) => f.endsWith(".md"))) {
 const srcPath = (slug) =>
   CATS.map((c) => path.join(ROOT, "src/content/blog", c, `${slug}.md`)).find(existsSync);
 
+/**
+ * Cibles valides pour un lien interne, selon la convention de la langue.
+ *
+ * EN : les pages sont générées au slug EN mais les liens gardent le slug FR, une
+ *      redirection assurant le passage. La cible valide est donc le slug FR.
+ * PT-BR : les pages sont générées au slug LOCALISÉ et il n'existe aucune redirection
+ *      depuis le slug FR. La cible valide est donc le slug pt-BR, sauf pour un article
+ *      sans traduction, dont la page de repli vit au slug FR.
+ */
+const localSlugs = new Set([...byFr.values()].map((v) => v.file.replace(/\.md$/, "")));
+const isValidTarget = (slug) => {
+  if (lang !== "pt-br") return Boolean(srcPath(slug));
+  if (localSlugs.has(slug)) return true;
+  // Slug FR accepté seulement s'il n'a pas de traduction pt-BR (sinon le lien est mort).
+  return Boolean(srcPath(slug)) && !byFr.has(slug);
+};
+
 const split = (raw) => {
   const m = raw.replace(/^﻿/, "").match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
   return m ? { fm: m[1], body: m[2] } : null;
@@ -108,7 +125,7 @@ for (const slug of serie) {
   if (stale) errs.push(`${stale.length} lien(s) restés en /fr/`);
   for (const m of entry.raw.matchAll(/\]\(\/([a-z-]+)\/blog\/([a-z0-9-]+)\//g)) {
     if (m[1] !== lang) errs.push(`lien préfixe /${m[1]}/ au lieu de /${lang}/`);
-    if (!srcPath(m[2])) errs.push(`lien vers slug inexistant: ${m[2]}`);
+    if (!isValidTarget(m[2])) errs.push(`lien vers slug inexistant: ${m[2]}`);
   }
 
   // 7. volume (détecte le résumé déguisé)

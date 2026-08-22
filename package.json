@@ -12,6 +12,7 @@
     "serpmantics": "node scripts/serpmantics.mjs",
     "check:publish-weekly": "node scripts/check-publish-weekly.mjs",
     "check:link-timing": "node scripts/check-internal-link-timing.mjs",
+    "check:dead-links": "node scripts/check-dead-links.mjs",
     "apply:publish-schedule": "node scripts/apply-future-publish-schedule.mjs",
     "pair:week-themes": "node scripts/pair-week-themes.mjs",
     "preview": "astro preview",

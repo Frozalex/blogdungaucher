@@ -41,7 +41,7 @@ faq:
       quantitativa.
 ---
 
-Há algo de estranho no fato de a estratégia no xadrez, esse jogo milenar de intuição e arte, poder ser reduzida a um algoritmo de algumas linhas. O algoritmo minimax faz exatamente isso: formaliza o coração do raciocínio estratégico num jogo de soma zero numa recorrência matemática elegante. E ele não é só a alma dos engines de xadrez modernos: é também a descrição formal do que você faz na sua cabeça quando calcula. (Para o quadro teórico geral do qual o minimax é o algoritmo central, veja [teoria dos jogos no xadrez](/pt-br/blog/theorie-des-jeux-aux-echecs/); para o teorema que garante a existência de um valor para toda posição, [o paradoxo de Zermelo](/pt-br/blog/paradoxe-de-zermelo/).)
+Há algo de estranho no fato de a estratégia no xadrez, esse jogo milenar de intuição e arte, poder ser reduzida a um algoritmo de algumas linhas. O algoritmo minimax faz exatamente isso: formaliza o coração do raciocínio estratégico num jogo de soma zero numa recorrência matemática elegante. E ele não é só a alma dos engines de xadrez modernos: é também a descrição formal do que você faz na sua cabeça quando calcula. (Para o quadro teórico geral do qual o minimax é o algoritmo central, veja [teoria dos jogos no xadrez](/pt-br/blog/teoria-dos-jogos-no-xadrez/); para o teorema que garante a existência de um valor para toda posição, [o paradoxo de Zermelo](/pt-br/blog/paradoxo-de-zermelo/).)
 
 ## A intuição por trás do minimax
 
@@ -133,7 +133,7 @@ O AlphaZero não usa o minimax clássico, mas uma [Busca em Árvore Monte Carlo]
 
 O que impressionou a comunidade do xadrez não foi só o desempenho do AlphaZero, mas o seu estilo de jogo. O AlphaZero joga de forma audaciosa e criativa, com sacrifícios de material de longo prazo e uma preferência pela atividade das peças em vez das vantagens materiais imediatas. Esse estilo lembra mais um jogador humano intuitivo do que um engine de força bruta.
 
-O AlphaZero mostrou que o minimax não é o único caminho para o domínio do xadrez. O aprendizado por reforço pode produzir uma compreensão diferente e, às vezes, mais profunda do jogo. (O [match AlphaZero-Stockfish de 2017](/pt-br/blog/echecs-alphazero-stockfish/) continua sendo o episódio fundador dessa revolução. Para o muro combinatório que torna essas abordagens necessárias, veja [por que o xadrez é um problema quase impossível](/pt-br/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/); para as zonas em que esses algoritmos são mais exigidos, [a teoria do caos no xadrez](/pt-br/blog/theorie-du-chaos-aux-echecs/).)
+O AlphaZero mostrou que o minimax não é o único caminho para o domínio do xadrez. O aprendizado por reforço pode produzir uma compreensão diferente e, às vezes, mais profunda do jogo. (O match AlphaZero-Stockfish de 2017 continua sendo o episódio fundador dessa revolução. Para o muro combinatório que torna essas abordagens necessárias, veja [por que o xadrez é um problema quase impossível](/pt-br/blog/xadrez-problema-matematico-impossivel-e-ia/); para as zonas em que esses algoritmos são mais exigidos, [a teoria do caos no xadrez](/pt-br/blog/teoria-do-caos-no-xadrez/).)
 
 ## O minimax na sua cabeça
 

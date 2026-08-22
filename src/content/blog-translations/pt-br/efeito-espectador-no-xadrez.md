@@ -116,7 +116,7 @@ Se as pessoas intervêm em 91% dos conflitos públicos, é preciso explicar de o
 
 Aqui está o fator dominante, e ele é específico desse meio.
 
-Denunciar uma trapaça é formular uma acusação. E, há pouco tempo, a comunidade enxadrística passou a ter uma jurisprudência explícita sobre esse ponto: em julho de 2026, a Comissão de Ética da FIDE puniu um ex-campeão do mundo por, entre outras coisas, acusações públicas sem fundamento e abuso psicológico, estabelecendo que apontar publicamente jogadores identificáveis sem verificação institucional causa a eles um prejuízo injustificado. Nosso artigo sobre [o gaslighting no xadrez](/pt-br/blog/gaslighting-aux-echecs/) detalha essa decisão.
+Denunciar uma trapaça é formular uma acusação. E, há pouco tempo, a comunidade enxadrística passou a ter uma jurisprudência explícita sobre esse ponto: em julho de 2026, a Comissão de Ética da FIDE puniu um ex-campeão do mundo por, entre outras coisas, acusações públicas sem fundamento e abuso psicológico, estabelecendo que apontar publicamente jogadores identificáveis sem verificação institucional causa a eles um prejuízo injustificado. Nosso artigo sobre [o gaslighting no xadrez](/pt-br/blog/gaslighting-no-xadrez/) detalha essa decisão.
 
 Essa posição é justa. Ela protege os jogadores contra um mecanismo realmente destrutivo.
 
@@ -174,7 +174,7 @@ A única saída é parar de tratar a denúncia como uma acusação. Ela não é,
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o gaslighting no xadrez](/pt-br/blog/gaslighting-aux-echecs/), [a trapaça no xadrez](/pt-br/blog/echecs-et-la-triche/) e [o viés do sobrevivente no xadrez](/pt-br/blog/biais-du-survivant-aux-echecs/). Artigos futuros vão tratar do conformismo e da psicologia das multidões.*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o gaslighting no xadrez](/pt-br/blog/gaslighting-no-xadrez/), [a trapaça no xadrez](/pt-br/blog/xadrez-e-trapaca/) e [o viés do sobrevivente no xadrez](/pt-br/blog/vies-do-sobrevivente-no-xadrez/). Artigos futuros vão tratar do conformismo e da psicologia das multidões.*
 
 ## Fontes
 

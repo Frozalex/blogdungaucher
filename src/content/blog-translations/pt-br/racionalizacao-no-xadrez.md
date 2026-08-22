@@ -82,7 +82,7 @@ Boa parte dos processos mentais responsáveis pelas nossas preferências, escolh
 
 O resultado costuma estar certo, porque as teorias do senso comum costumam ser boas. Mas ele não é obtido por introspecção: ele é **inferido**, exatamente como se inferiria as razões de outra pessoa.
 
-É o mesmo artigo que estabelece o efeito halo, apresentado no nosso texto sobre [o efeito halo no xadrez](/pt-br/blog/effet-de-halo-aux-echecs/), em que os participantes chegavam a inverter a direção da causalidade.
+É o mesmo artigo que estabelece o efeito halo, apresentado no nosso texto sobre [o efeito halo no xadrez](/pt-br/blog/efeito-halo-no-xadrez/), em que os participantes chegavam a inverter a direção da causalidade.
 
 ## Os dois momentos da racionalização
 
@@ -96,7 +96,7 @@ O cálculo entra depois, e o papel real dele é ambíguo. Ele verifica o lance, 
 
 Os dois casos existem, e nada permite distingui-los por dentro. É isso que torna certos lances tão difíceis de abandonar: eles não são defendidos pela justificativa deles, eles **produziram** a própria justificativa. Atacar o argumento não toca na decisão.
 
-É também a ligação direta com o [viés de confirmação](/pt-br/blog/biais-de-confirmation-aux-echecs/): se o cálculo serve para justificar, ele já sai orientado desde o início, e vai procurar o que confirma.
+É também a ligação direta com o [viés de confirmação](/pt-br/blog/vies-de-confirmacao-no-xadrez/): se o cálculo serve para justificar, ele já sai orientado desde o início, e vai procurar o que confirma.
 
 ### Depois da partida: explicar a derrota
 
@@ -112,7 +112,7 @@ Essas explicações têm duas características notáveis.
 
 Uma explicação produzida em três minutos sem consultar os fatos não é resultado de uma investigação. É uma **saída de sistema**. A exatidão dela é um feliz acidente, não uma prova de pertinência.
 
-É o mecanismo descrito no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/): a explicação tem uma função, apagar o desconforto, e essa função é cumprida sendo a explicação exata ou não.
+É o mecanismo descrito no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/): a explicação tem uma função, apagar o desconforto, e essa função é cumprida sendo a explicação exata ou não.
 
 ## A assimetria que entrega o mecanismo
 
@@ -186,7 +186,7 @@ O custo dela não é a mentira, é a interrupção prematura da busca. E o únic
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Ele aprofunda um mecanismo inventariado em [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismes-de-defense-aux-echecs/). Ver também [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/) e [o viés de confirmação no xadrez](/pt-br/blog/biais-de-confirmation-aux-echecs/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Ele aprofunda um mecanismo inventariado em [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismos-de-defesa-no-xadrez/). Ver também [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/) e [o viés de confirmação no xadrez](/pt-br/blog/vies-de-confirmacao-no-xadrez/).*
 
 ## Fontes
 

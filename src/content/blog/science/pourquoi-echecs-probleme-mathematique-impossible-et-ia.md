@@ -87,7 +87,7 @@ Pour un mathématicien ou un informaticien, le [jeu d'échecs](https://fr.wikipe
 - un coup légal = une transition vers un autre état ;
 - une partie = une trajectoire, donc une suite d'états dans un espace gigantesque.
 
-Si tu veux être un peu formel, tu peux voir ça comme un [graphe orienté](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9) : chaque nœud est un état, chaque arête est un coup légal ; depuis un état fixé, tu peux aussi imaginer un arbre d'exploration où les joueurs alternent des branches. Ce cadre est exactement celui exploré en détail dans [théorie des jeux aux échecs](/blog/theorie-des-jeux-aux-echecs/), avec l'angle dual sur les [équilibres dans les ouvertures](/blog/graphes-de-nash-equilibre-ouvertures/).
+Si tu veux être un peu formel, tu peux voir ça comme un [graphe orienté](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9) : chaque nœud est un état, chaque arête est un coup légal ; depuis un état fixé, tu peux aussi imaginer un arbre d'exploration où les joueurs alternent des branches. Ce cadre est exactement celui exploré en détail dans [théorie des jeux aux échecs](/fr/blog/theorie-des-jeux-aux-echecs/), avec l'angle dual sur les [équilibres dans les ouvertures](/fr/blog/graphes-de-nash-equilibre-ouvertures/).
 
 ![Graphe orienté : positions et coups possibles sur le plateau](/images/echecs-ia-02-graphe.svg)
 
@@ -126,7 +126,7 @@ Le tableau suivant résume la différence entre quelques jeux célèbres et les 
 | **Échecs** | Non | Espace trop vaste ; aucune preuve complète d'issue |
 | [Go](https://fr.wikipedia.org/wiki/Go_%28jeu%29) | Partiellement exploré | IA ([AlphaGo](https://fr.wikipedia.org/wiki/AlphaGo)) a changé le niveau du débat |
 
-Une confusion fréquente : "Si ce n'est pas résolu, un moteur ne peut pas être sûr." C'est exact au sens formel, mais ce n'est pas le but. En usage réel, un moteur n'a pas besoin de résoudre la position initiale pour te battre : il doit jouer suffisamment proche de l'optimal dans les situations réelles. Le théorème qui garantit qu'une réponse *existe* (sans qu'on puisse la trouver) est analysé en détail dans [le paradoxe de Zermelo](/blog/paradoxe-de-zermelo/).
+Une confusion fréquente : "Si ce n'est pas résolu, un moteur ne peut pas être sûr." C'est exact au sens formel, mais ce n'est pas le but. En usage réel, un moteur n'a pas besoin de résoudre la position initiale pour te battre : il doit jouer suffisamment proche de l'optimal dans les situations réelles. Le théorème qui garantit qu'une réponse *existe* (sans qu'on puisse la trouver) est analysé en détail dans [le paradoxe de Zermelo](/fr/blog/paradoxe-de-zermelo/).
 
 ### EXPTIME-complet : le résultat de complexité que personne ne contournera
 
@@ -152,7 +152,7 @@ $$
 
 Si tu veux une traduction club : minimax, c'est "je ne joue pas un coup qui marche seulement si l'autre dort." C'est une logique claire de prudence rationnelle, pas une garantie contre le tilt, mais un modèle du "pire cas".
 
-Minimax brut, seul, te fait explorer un arbre beaucoup trop gros : sans optimisation, tu meurs avant d'avoir réfléchi ; la bonne nouvelle, c'est qu'une immense partie de l'arbre est inutile si tu sais la couper sans regret. (L'algorithme, ses raffinements modernes (negamax, null-move pruning, table de transposition) et leur version en réseau de neurones sont déroulés dans [minimax aux échecs](/blog/minimax-aux-echecs/).)
+Minimax brut, seul, te fait explorer un arbre beaucoup trop gros : sans optimisation, tu meurs avant d'avoir réfléchi ; la bonne nouvelle, c'est qu'une immense partie de l'arbre est inutile si tu sais la couper sans regret. (L'algorithme, ses raffinements modernes (negamax, null-move pruning, table de transposition) et leur version en réseau de neurones sont déroulés dans [minimax aux échecs](/fr/blog/minimax-aux-echecs/).)
 
 ![Minimax : maximiser son gain face au pire adversaire](/images/echecs-ia-05-minimax.svg)
 
@@ -174,7 +174,7 @@ Même avec alpha-bêta, tu ne peux pas aller au bout de l'arbre : tu arrives sur
 - sécurité du roi ;
 - contrôle de cases (et bien d'autres dans les moteurs de pointe).
 
-Ce n'est pas qu'une addition naïve de points : les bons moteurs combinent des heuristiques, des ajustements et des paramètres optimisés pour obtenir une évaluation corrélée au résultat final sans atteindre ce résultat final. Dans la vraie vie, c'est comme juger une position "prometteuse" sans calculer le mat en vingt-huit coups : tu sais reconnaître un schéma où l'initiative et la paire de fous "sentent bon", même si nulle ligne ne tient lieu de preuve complète. Le moteur formalise ce savoir technique et le fait sans fatigue, pour des milliers de joueurs. (Là où l'évaluation devient instable même pour les moteurs, c'est le terrain analysé dans [la théorie du chaos aux échecs](/blog/theorie-du-chaos-aux-echecs/) : positions à fort exposant de Lyapunov où un demi-pas hors de la ligne juste fait basculer l'évaluation.)
+Ce n'est pas qu'une addition naïve de points : les bons moteurs combinent des heuristiques, des ajustements et des paramètres optimisés pour obtenir une évaluation corrélée au résultat final sans atteindre ce résultat final. Dans la vraie vie, c'est comme juger une position "prometteuse" sans calculer le mat en vingt-huit coups : tu sais reconnaître un schéma où l'initiative et la paire de fous "sentent bon", même si nulle ligne ne tient lieu de preuve complète. Le moteur formalise ce savoir technique et le fait sans fatigue, pour des milliers de joueurs. (Là où l'évaluation devient instable même pour les moteurs, c'est le terrain analysé dans [la théorie du chaos aux échecs](/fr/blog/theorie-du-chaos-aux-echecs/) : positions à fort exposant de Lyapunov où un demi-pas hors de la ligne juste fait basculer l'évaluation.)
 
 ![Fonction d'évaluation heuristique sur l'échiquier](/images/echecs-ia-07-evaluation.svg)
 
@@ -233,18 +233,18 @@ Le message le plus important n'est pas "l'IA est magique" : c'est que la puissan
 
 ## Ce que ça change pour toi, joueur
 
-**À tester ici.** Si tu veux voir ce que fait un moteur sur une configuration, ouvre l'[espace d'analyse](/analyses) du site (Stockfish dans le navigateur) : profondeur, score et variantes en direct.
+**À tester.** Si tu veux voir ce que fait un moteur sur une configuration, ouvre-la dans ton outil d'analyse (Stockfish, en local ou dans le navigateur) : profondeur, score et variantes en direct.
 
 **Sur le blog.**
-- [Les échecs rendent-ils meilleur en maths ?](/blog/les-echecs-et-les-mathematiques/)
-- [Psychologie du joueur d'échecs](/blog/psychologie-du-joueur-d-echecs/)
-- [Les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/)
+- [Les échecs rendent-ils meilleur en maths ?](/fr/blog/les-echecs-et-les-mathematiques/)
+- [Psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/)
+- [Les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/)
 
 Les échecs sont "impossibles" si tu imagines une solution brute : tout explorer, tout prouver, tout résoudre d'un seul tenant. Ils deviennent "possibles" dès que tu acceptes la réalité : tu gagnes en sélectionnant, en évaluant et en élaguant. Ce n'est pas la quantité de coups calculés qui fait la force, c'est la qualité du tri. Un joueur lucide le sait déjà.
 
 **Pour aller plus loin :** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/), [arXiv](https://arxiv.org/).
 
-**Après lecture :** ouvre l’[espace d’analyse](/analyses), repère le **premier coup** où ta variante et la ligne du moteur divergent de plus d’un demi-pion, puis rejoue **cette position seule** trois fois dans la journée (sans nouvelle partie).
+**Après lecture :** ouvre ton outil d’analyse, repère le **premier coup** où ta variante et la ligne du moteur divergent de plus d’un demi-pion, puis rejoue **cette position seule** trois fois dans la journée (sans nouvelle partie).
 
 ---
 

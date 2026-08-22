@@ -78,7 +78,7 @@ Des études comportementales (Sio & Ormerod, 2009) ont confirmé que pour les pr
 
 Le DMN joue un rôle clé dans ce processus parce qu'il recombine librement des éléments mémoriels qui ne sont pas activés ensemble en mode focal. Il fait des associations que l'attention exécutive ne tolère pas, parce qu'elles paraissent absurdes ou hors-sujet. Mais certaines de ces associations sont précisément les solutions que tu cherchais.
 
-Voir aussi sur ce sujet l'article [échecs et sommeil](/blog/echecs-et-sommeil/) : la consolidation mnésique en sommeil paradoxal partage des mécanismes avec le DMN éveillé.
+Voir aussi sur ce sujet l'article [échecs et sommeil](/fr/blog/echecs-et-sommeil/) : la consolidation mnésique en sommeil paradoxal partage des mécanismes avec le DMN éveillé.
 
 ## Le DMN antagonise le calcul concret
 
@@ -143,7 +143,7 @@ Le DMN n'est pas un ennemi à éliminer. C'est un système à orchestrer. Quelqu
 
 ## Méditation, mindfulness et DMN : ce que les études montrent
 
-Les techniques de méditation (déjà abordées dans [méditation et échecs](/blog/echecs-et-meditation/)) ont un effet documenté sur le DMN. Des études d'imagerie (Brewer et al., 2011) ont montré chez des méditants expérimentés une **désactivation plus marquée du DMN** pendant les tâches focales, et une **récupération plus rapide** vers un état de mind-wandering non ruminatif après l'effort.
+Les techniques de méditation (déjà abordées dans [méditation et échecs](/fr/blog/echecs-et-meditation/)) ont un effet documenté sur le DMN. Des études d'imagerie (Brewer et al., 2011) ont montré chez des méditants expérimentés une **désactivation plus marquée du DMN** pendant les tâches focales, et une **récupération plus rapide** vers un état de mind-wandering non ruminatif après l'effort.
 
 Cela ne fait pas de la méditation une recette magique, mais une pratique qui entraîne spécifiquement la flexibilité de bascule entre DMN et réseaux exécutifs. Pour un joueur d'échecs qui veut améliorer sa capacité à passer rapidement de l'analyse focalisée au repos actif (et inversement), c'est probablement l'entraînement cognitif le plus directement utile.
 

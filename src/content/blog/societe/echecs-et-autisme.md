@@ -122,13 +122,13 @@ Une caractéristique fréquente et souvent mal comprise de l'autisme est la capa
 
 ### L'état de flux : quand tout le reste disparaît
 
-Le [flow](https://fr.wikipedia.org/wiki/Flow_(psychologie)), cet état d'immersion totale théorisé par Csikszentmihalyi, est remarquablement accessible aux personnes autistes lors d'une partie d'échecs, précisément parce que leur cerveau est naturellement plus enclin à la concentration monofocale intense. (Le mécanisme complet est détaillé dans l'article [Psychologie du joueur d'échecs](/blog/psychologie-du-joueur-d-echecs/).)
+Le [flow](https://fr.wikipedia.org/wiki/Flow_(psychologie)), cet état d'immersion totale théorisé par Csikszentmihalyi, est remarquablement accessible aux personnes autistes lors d'une partie d'échecs, précisément parce que leur cerveau est naturellement plus enclin à la concentration monofocale intense. (Le mécanisme complet est détaillé dans l'article [Psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/).)
 
 Pour des personnes qui reçoivent souvent des messages négatifs sur leur inadaptation sociale, devenir l'expert incontesté du club sur la Défense Sicilienne ou les finales de Tours est un moteur d'estime de soi inestimable.
 
 ### La mémoire des motifs : un talent naturel
 
-Les recherches de [Fernand Gobet](https://fr.wikipedia.org/wiki/Fernand_Gobet) sur les "chunks", ces blocs de motifs mémorisés qui permettent aux grands maîtres de "lire" l'échiquier au lieu de le calculer, prennent un relief particulier dans le contexte des TSA. (La théorie est expliquée en détail dans l'article [Les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).) Les personnes autistes présentent souvent une mémoire à long terme d'une précision exceptionnelle pour les systèmes de règles et les motifs répétitifs : c'est exactement ce que les échecs demandent et récompensent.
+Les recherches de [Fernand Gobet](https://fr.wikipedia.org/wiki/Fernand_Gobet) sur les "chunks", ces blocs de motifs mémorisés qui permettent aux grands maîtres de "lire" l'échiquier au lieu de le calculer, prennent un relief particulier dans le contexte des TSA. (La théorie est expliquée en détail dans l'article [Les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/).) Les personnes autistes présentent souvent une mémoire à long terme d'une précision exceptionnelle pour les systèmes de règles et les motifs répétitifs : c'est exactement ce que les échecs demandent et récompensent.
 
 La surreprésentation de traits autistiques parmi les grands prodiges de l'échiquier n'a rien d'accidentel : de [Paul Morphy](https://fr.wikipedia.org/wiki/Paul_Morphy) au XIXème siècle à plusieurs champions contemporains, les profils cognitifs associés au spectre traversent l'histoire du jeu.
 
@@ -191,7 +191,7 @@ Dans ce monde de 64 cases, les règles implicites disparaissent. Il reste la bea
 
 Si une phrase doit rester : les échecs peuvent être un cadre formidable, jamais une **étiquette**, jamais un substitut à un accompagnement sérieux quand il est nécessaire.
 
-Si tu accompagnes une personne autiste qui accroche aux échecs : **séances courtes**, **lieu stable**, **règles répétées** ; note ce qui fonctionne (durée, puzzles contre partie libre) pour le reproduire. Pour le lien avec la cognition mesurable au-delà du TSA, enchaîne avec [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/).
+Si tu accompagnes une personne autiste qui accroche aux échecs : **séances courtes**, **lieu stable**, **règles répétées** ; note ce qui fonctionne (durée, puzzles contre partie libre) pour le reproduire. Pour le lien avec la cognition mesurable au-delà du TSA, enchaîne avec [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/).
 
 ---
 

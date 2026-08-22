@@ -78,16 +78,44 @@ Règles communes :
 
 ## 3. Liens internes
 
-Un lien interne garde **toujours le slug FR** dans le chemin, seul le préfixe de langue change :
+**La règle diffère selon la langue.** C'est le piège n°1 de ce chantier, et il ne se voit pas
+au moment de la rédaction : dans les deux cas le lien « a l'air » correct.
+
+### Anglais : slug FR
+
+Les pages EN sont générées au slug anglais, mais `scripts/en-redirects.mjs` crée une redirection
+depuis le slug FR. Un lien au slug FR fonctionne donc, via un 301 :
 
 ```
-FR      ](/fr/blog/effet-dunning-kruger-aux-echecs/)
-EN      ](/en/blog/effet-dunning-kruger-aux-echecs/)
-PT-BR   ](/pt-br/blog/effet-dunning-kruger-aux-echecs/)
+FR   ](/fr/blog/effet-dunning-kruger-aux-echecs/)
+EN   ](/en/blog/effet-dunning-kruger-aux-echecs/)
 ```
 
-Ne jamais remplacer le slug FR par le slug localisé dans une URL interne : le lien casserait.
-Les chemins d'images (`/images/…`) restent identiques.
+### Portugais brésilien : slug LOCALISÉ
+
+Les pages pt-BR sont générées au slug localisé et **aucune redirection n'existe** depuis le
+slug FR. Un lien au slug FR est donc une **404 sèche** :
+
+```
+PT-BR   ](/pt-br/blog/efeito-dunning-kruger-no-xadrez/)     correct
+PT-BR   ](/pt-br/blog/effet-dunning-kruger-aux-echecs/)     404
+```
+
+Exception : un article sans traduction pt-BR voit sa page de repli générée au slug FR. Dans ce
+cas seulement, le lien garde le slug FR.
+
+Le script `scripts/fix-ptbr-internal-links.mjs` remet tous les liens pt-BR d'aplomb et se relance
+sans risque (idempotent). Les chemins d'images (`/images/…`) restent identiques.
+
+### Jamais de lien sans préfixe de langue
+
+`](/blog/<slug>/)` ne correspond à aucune route : le site est entièrement préfixé.
+Voir `scripts/fix-unprefixed-blog-links.mjs`.
+
+### Ne pas inventer de lien absent du FR
+
+Plusieurs traductions pt-BR avaient ajouté des liens que le texte français n'a pas, dont deux
+vers des articles non encore publiés, donc morts. Le maillage se décide en français.
 
 Les liens Wikipédia externes basculent de langue quand l'article existe :
 `fr.wikipedia.org` → `en.wikipedia.org` en anglais, → `pt.wikipedia.org` en portugais.

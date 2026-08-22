@@ -21,11 +21,11 @@ Ce moment n'a rien d'exceptionnel : c'est la situation par défaut aux échecs. 
 
 Aux échecs, le mot "incertitude" est partout. Avant d'avancer, il faut séparer cet article de quelques voisins.
 
-**Ce n'est pas la théorie des jeux.** La [théorie des jeux aux échecs](/blog/theorie-des-jeux-aux-echecs/) étudie l'interaction stratégique entre joueurs : équilibres, anticipations mutuelles, stratégies optimales en information complète. Ici on s'intéresse à un sujet plus précis : la décision *individuelle* face à une incertitude.
+**Ce n'est pas la théorie des jeux.** La [théorie des jeux aux échecs](/fr/blog/theorie-des-jeux-aux-echecs/) étudie l'interaction stratégique entre joueurs : équilibres, anticipations mutuelles, stratégies optimales en information complète. Ici on s'intéresse à un sujet plus précis : la décision *individuelle* face à une incertitude.
 
-**Ce n'est pas la statistique bayésienne pure.** L'article sur les [réseaux bayésiens aux échecs](/blog/reseaux-bayesiens-predire-blunder/) regarde comment construire des modèles statistiques pour prédire des événements (blunders, gains). Ici on s'intéresse à l'usage du raisonnement bayésien comme méthode de décision en temps réel.
+**Ce n'est pas la statistique bayésienne pure.** L'article sur les [réseaux bayésiens aux échecs](/fr/blog/reseaux-bayesiens-predire-blunder/) regarde comment construire des modèles statistiques pour prédire des événements (blunders, gains). Ici on s'intéresse à l'usage du raisonnement bayésien comme méthode de décision en temps réel.
 
-**Ce n'est pas la complexité algorithmique.** Le fait que les échecs soient un problème EXPTIME-complet (voir [pourquoi les échecs sont un problème mathématique impossible](/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)) explique pourquoi tu *dois* décider sous incertitude. Mais le comment, c'est ici.
+**Ce n'est pas la complexité algorithmique.** Le fait que les échecs soient un problème EXPTIME-complet (voir [pourquoi les échecs sont un problème mathématique impossible](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)) explique pourquoi tu *dois* décider sous incertitude. Mais le comment, c'est ici.
 
 L'enjeu propre de cet article : que faire au moment précis où tu hésites entre plusieurs coups et où tu sais que tu ne sauras pas tout.
 
@@ -99,7 +99,7 @@ Reconnaître ses propres biais d'aversion à la perte est la première étape po
 
 Cette intuition est centrale aux échecs. Tu n'as pas le temps de trouver le meilleur coup mathématique dans une position complexe. Tu cherches un coup qui satisfait un seuil de qualité acceptable, et tu joues. Le temps gagné peut servir ailleurs : à un autre moment de la partie où il sera plus rentable.
 
-Simon a même formalisé cette idée pour les échecs dans ses travaux sur l'expertise. Les joueurs forts ne calculent pas exhaustivement : ils utilisent des heuristiques fondées sur la reconnaissance de patterns (théorie des chunks, voir [les échecs et le cerveau](/blog/les-echecs-et-le-cerveau/)) pour réduire l'espace de recherche à quelques coups candidats, puis ils analysent ces candidats avec plus de profondeur.
+Simon a même formalisé cette idée pour les échecs dans ses travaux sur l'expertise. Les joueurs forts ne calculent pas exhaustivement : ils utilisent des heuristiques fondées sur la reconnaissance de patterns (théorie des chunks, voir [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/)) pour réduire l'espace de recherche à quelques coups candidats, puis ils analysent ces candidats avec plus de profondeur.
 
 Le satisficing aux échecs se décline ainsi :
 
@@ -179,7 +179,7 @@ Pour intégrer tout ce qui précède dans une routine concrète, voici un protoc
 
 6. **Vérification anti-blunder.** Avant de jouer, une dernière passe : ton coup laisse-t-il une menace adverse non couverte ? Tu vérifies les échecs, les prises, les fourchettes, les batteries.
 
-7. **Décision.** Tu joues. Tu ne reviens pas en arrière. La rumination post-coup est gérée par d'autres mécanismes (voir [le réseau du mode par défaut aux échecs](/blog/reseau-mode-defaut-aux-echecs/)).
+7. **Décision.** Tu joues. Tu ne reviens pas en arrière. La rumination post-coup est gérée par d'autres mécanismes (voir [le réseau du mode par défaut aux échecs](/fr/blog/reseau-mode-defaut-aux-echecs/)).
 
 Ce protocole, appliqué aux 5 ou 6 décisions critiques d'une partie, prend peu de temps cumulé. Sur les coups non critiques, l'expérience suffit.
 

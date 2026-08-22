@@ -82,7 +82,7 @@ Ou seja: quando este artigo te diz que o número do motor desloca o seu julgamen
 
 ## O que distingue a ancoragem da simples deferência
 
-Uma precisão necessária, porque o assunto parece com o do nosso artigo sobre [a obediência à autoridade no xadrez](/pt-br/blog/obeissance-a-l-autorite-aux-echecs/), e difere dele num ponto decisivo.
+Uma precisão necessária, porque o assunto parece com o do nosso artigo sobre [a obediência à autoridade no xadrez](/pt-br/blog/obediencia-a-autoridade-no-xadrez/), e difere dele num ponto decisivo.
 
 A deferência consiste em aceitar um veredito **porque a fonte é competente**. É um raciocínio, e ele costuma estar correto: o motor tem razão, aceitar o que ele diz é racional.
 
@@ -106,11 +106,11 @@ Hoje, o número aparece por padrão, muitas vezes antes mesmo de você ter olhad
 
 O resultado é que a era dos motores **industrializou a ancoragem**. Não porque os jogadores tenham ficado preguiçosos, mas porque a ordem de aparição das informações foi invertida. O número chega antes do julgamento, quando deveria chegar depois.
 
-E o efeito não para na avaliação global. Depois de ancorado em +1,4, você não procura mais as mesmas coisas: procura por que está ganho, não procura mais se está ganho. A âncora orienta a busca, o que a liga diretamente ao [viés de confirmação](/pt-br/blog/biais-de-confirmation-aux-echecs/).
+E o efeito não para na avaliação global. Depois de ancorado em +1,4, você não procura mais as mesmas coisas: procura por que está ganho, não procura mais se está ganho. A âncora orienta a busca, o que a liga diretamente ao [viés de confirmação](/pt-br/blog/vies-de-confirmacao-no-xadrez/).
 
 ### 2. O rating do adversário
 
-Atenção à distinção com [o efeito halo](/pt-br/blog/effet-de-halo-aux-echecs/), que trata da **qualidade percebida** dos lances dele. Aqui, trata-se de uma estimativa numérica: quais são as minhas chances nesta partida.
+Atenção à distinção com [o efeito halo](/pt-br/blog/efeito-halo-no-xadrez/), que trata da **qualidade percebida** dos lances dele. Aqui, trata-se de uma estimativa numérica: quais são as minhas chances nesta partida.
 
 Um jogador vê "1 890" e estima as próprias chances em 20%. Já a fórmula Elo dá um valor preciso, e para uma diferença de 200 pontos ela indica cerca de 24% para o de rating mais baixo. A maioria dos jogadores de clube subestima esse número, às vezes bastante, porque ajusta a partir de uma âncora fornecida pela diferença exibida em vez de calcular.
 
@@ -120,7 +120,7 @@ O mais discreto dos quatro, porque não se parece com um número.
 
 Uma variante de abertura anotada como "igual" num livro te fornece uma âncora que vai sobreviver a quinze lances de jogo real. Você continua avaliando a posição como equilibrada mesmo depois de escolhas precisas terem criado um desequilíbrio.
 
-O que torna essa âncora especialmente resistente é ela ser percebida como um **fato** e não como uma avaliação. Só que é uma avaliação, produzida numa data específica, muitas vezes por um autor que trabalhava com ferramentas de outra geração. Nosso artigo sobre [o viés do sobrevivente no xadrez](/pt-br/blog/biais-du-survivant-aux-echecs/) mostra por qual filtro esse corpus se constituiu.
+O que torna essa âncora especialmente resistente é ela ser percebida como um **fato** e não como uma avaliação. Só que é uma avaliação, produzida numa data específica, muitas vezes por um autor que trabalhava com ferramentas de outra geração. Nosso artigo sobre [o viés do sobrevivente no xadrez](/pt-br/blog/vies-do-sobrevivente-no-xadrez/) mostra por qual filtro esse corpus se constituiu.
 
 ### 4. O relógio
 
@@ -140,7 +140,7 @@ Duas exigências, e a segunda é a que costuma ser negligenciada.
 
 **Um número, não uma impressão.** Escreva "+0,5" ou "ligeiramente melhor para as brancas, mais ou menos +0,5". Uma avaliação vaga não pode ser comparada, logo não mede nada.
 
-**Por escrito.** Isso é indispensável, e não por pedantismo. Depois de conhecer o número do motor, a sua memória do que você pensava vai ser ajustada na direção dele. É o mecanismo descrito no nosso artigo sobre [as falsas memórias no xadrez](/pt-br/blog/faux-souvenirs-aux-echecs/). Sem anotação prévia, você vai acreditar sinceramente ter pensado algo próximo.
+**Por escrito.** Isso é indispensável, e não por pedantismo. Depois de conhecer o número do motor, a sua memória do que você pensava vai ser ajustada na direção dele. É o mecanismo descrito no nosso artigo sobre [as falsas memórias no xadrez](/pt-br/blog/falsas-memorias-no-xadrez/). Sem anotação prévia, você vai acreditar sinceramente ter pensado algo próximo.
 
 ### 2. Analise primeiro com o motor desligado
 
@@ -172,7 +172,7 @@ Essa diferença é a sua evolução. A avaliação do motor, essa, não te ensin
 
 ---
 
-*Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Ele aprofunda um viés apresentado no nosso panorama dos [5 vieses cognitivos que te fazem dar blunder](/pt-br/blog/5-biais-cognitifs-blunder/). Veja também [a obediência à autoridade no xadrez](/pt-br/blog/obeissance-a-l-autorite-aux-echecs/) e [o efeito halo no xadrez](/pt-br/blog/effet-de-halo-aux-echecs/).*
+*Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Ele aprofunda um viés apresentado no nosso panorama dos [5 vieses cognitivos que te fazem dar blunder](/pt-br/blog/5-vieses-cognitivos-blunder/). Veja também [a obediência à autoridade no xadrez](/pt-br/blog/obediencia-a-autoridade-no-xadrez/) e [o efeito halo no xadrez](/pt-br/blog/efeito-halo-no-xadrez/).*
 
 ## Fontes
 

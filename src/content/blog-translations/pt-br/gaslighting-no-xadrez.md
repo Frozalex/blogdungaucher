@@ -115,7 +115,7 @@ A sanção: dois anos de proibição mundial de competir e de exercer funções 
 
 O que torna esse mecanismo tão destrutivo é a assimetria dele. O acusado não pode provar a própria inocência: não se demonstra a ausência de trapaça, só se constata a ausência de prova de trapaça. Enquanto isso, cada boa partida dele vira suspeita, inclusive aos olhos dele mesmo. Ele acaba jogando contra o próprio passado.
 
-É uma situação diferente da do [caso Niemann](/pt-br/blog/echecs-et-la-triche/), em que a questão da prova se colocava de outro jeito. Aqui, a instância que decide qualificou o comportamento em si.
+É uma situação diferente da do [caso Niemann](/pt-br/blog/xadrez-e-trapaca/), em que a questão da prova se colocava de outro jeito. Aqui, a instância que decide qualificou o comportamento em si.
 
 ### 2. O coaching que desloca o alvo
 
@@ -170,7 +170,7 @@ Três usos concretos:
 
 **Confronte as afirmações com o arquivo, não com a sua memória.** Se disserem que você estava perdido no lance 20, não procure na sua lembrança. Abra a posição. A resposta existe.
 
-**Peça a análise de um terceiro independente.** Não um motor sozinho, que diz *que* o lance é ruim sem dizer o que era humanamente visível. Um jogador mais forte, externo à relação. O método está detalhado no nosso guia sobre [analisar as próprias partidas](/pt-br/blog/analyser-ses-parties/).
+**Peça a análise de um terceiro independente.** Não um motor sozinho, que diz *que* o lance é ruim sem dizer o que era humanamente visível. Um jogador mais forte, externo à relação. O método está detalhado no nosso guia sobre [analisar as próprias partidas](/pt-br/blog/analisar-suas-partidas/).
 
 E para as acusações formais: os canais institucionais existem exatamente para isso. A função deles não é burocrática, é protetora. Eles tiram o caso do terreno onde o boato vence a prova, e onde, como a FIDE lembrou, o prejuízo acontece independentemente da verdade dos fatos.
 
@@ -186,7 +186,7 @@ A sua proteção é concreta e você já a tem: é o registro escrito. O xadrez 
 
 ---
 
-*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/). Um artigo futuro vai tratar da manipulação emocional, que se exerce durante a partida e não depois.*
+*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/). Um artigo futuro vai tratar da manipulação emocional, que se exerce durante a partida e não depois.*
 
 ## Fontes
 

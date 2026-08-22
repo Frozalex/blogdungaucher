@@ -124,7 +124,7 @@ O primeiro é estatístico. Um protocolo com três sujeitos, sem grupo de contro
 
 O segundo problema é mais interessante, porque diz respeito ao próprio resultado. Em 2011, o pesquisador Robert Howard publicou na *Cognitive Development* uma análise do caso mostrando que **apesar de um treino comparável, as três irmãs não chegaram ao mesmo nível**. Judit foi número 8 do mundo; Sofia, jogadora forte, não seguiu a mesma trajetória. Com protocolo igual, os resultados divergem. A conclusão dele: a expertise enxadrística não depende só da prática.
 
-O debate de fundo entre inato e adquirido é tratado no nosso artigo sobre [genética e talento no xadrez](/pt-br/blog/echecs-et-genetique/). O que nos ocupa aqui é mais estreito: mesmo o exemplo invocado para provar a tese não a prova, e a amostra que permitiria decidir é invisível por construção.
+O debate de fundo entre inato e adquirido é tratado no nosso artigo sobre [genética e talento no xadrez](/pt-br/blog/genetica-e-talento-xadrez/). O que nos ocupa aqui é mais estreito: mesmo o exemplo invocado para provar a tese não a prova, e a amostra que permitiria decidir é invisível por construção.
 
 ### 4. O seu próprio gambito
 
@@ -144,7 +144,7 @@ E o remédio, aqui, é trivial. A base de partidas dele contém a resposta exata
 
 **Consulte a base, não a sua memória.** Para tudo o que envolve os seus próprios resultados por abertura, por cor, por ritmo, o dado existe e é gratuito. A sua memória não é uma amostra, é uma seleção editorial.
 
-**Mantenha o registro completo.** Anote todas as suas partidas, inclusive os empates sem graça e as derrotas sem história. Um caderno que só contém as partidas marcantes acaba descrevendo um jogador que não existe. É o princípio básico de uma [análise de partidas que serve para alguma coisa](/pt-br/blog/analyser-ses-parties/).
+**Mantenha o registro completo.** Anote todas as suas partidas, inclusive os empates sem graça e as derrotas sem história. Um caderno que só contém as partidas marcantes acaba descrevendo um jogador que não existe. É o princípio básico de uma [análise de partidas que serve para alguma coisa](/pt-br/blog/analisar-suas-partidas/).
 
 **Procure os ausentes.** Toda vez que te apresentarem uma trajetória bem-sucedida, pergunte-se como seria o mesmo caminho para alguém em quem ele fracassou, e por que você nunca ouviria falar dessa pessoa. A resposta quase sempre é: porque não haveria nada a contar.
 
@@ -160,7 +160,7 @@ Nenhuma dessas fontes mente. Todas descrevem fielmente os aviões que voltaram.
 
 ---
 
-*Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/) e [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/).*
+*Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/) e [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/).*
 
 ## Fontes
 

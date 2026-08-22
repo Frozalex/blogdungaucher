@@ -86,23 +86,23 @@ O efeito descrito por Kruger e Dunning não é que os fracos se acham fortes. É
 
 Esse é o ponto de partida obrigatório, porque ele determina todo o resto: você não consegue ver o que não sabe ver. E o estudo feito em 2025 com 3 388 jogadores de torneio mostra que nem mesmo um retorno exato, preciso, público e permanente é suficiente para corrigir isso. Eles se achavam em média 89 pontos de Elo acima do seu rating real, depois de quase vinte anos de prática.
 
-É o assunto do nosso artigo sobre [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/).
+É o assunto do nosso artigo sobre [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/).
 
 ### Durante: a busca orientada
 
 O segundo mecanismo não espera o resultado. Ele age enquanto você calcula.
 
-O [viés de confirmação](/pt-br/blog/biais-de-confirmation-aux-echecs/) não faz você calcular menos: faz você calcular **numa direção só**. Oito minutos do lado que te dá razão, alguns segundos do lado que te contradiria. A árvore não é curta demais, ela é assimétrica.
+O [viés de confirmação](/pt-br/blog/vies-de-confirmacao-no-xadrez/) não faz você calcular menos: faz você calcular **numa direção só**. Oito minutos do lado que te dá razão, alguns segundos do lado que te contradiria. A árvore não é curta demais, ela é assimétrica.
 
 Wason tinha demonstrado isso com três números: os participantes testavam a própria hipótese com exemplos incapazes de desmenti-la, e depois se declaravam confiantes ao final de uma demonstração vazia.
 
-E enquanto a busca está orientada, a [projeção](/pt-br/blog/projection-aux-echecs/) preenche as casas que faltam. Modelar a mente do adversário é caro; sem esforço explícito, o sistema preenche esse espaço com o seu próprio conteúdo. Você supõe que ele viu o que você viu, e que ele não viu o que você não viu.
+E enquanto a busca está orientada, a [projeção](/pt-br/blog/projecao-no-xadrez/) preenche as casas que faltam. Modelar a mente do adversário é caro; sem esforço explícito, o sistema preenche esse espaço com o seu próprio conteúdo. Você supõe que ele viu o que você viu, e que ele não viu o que você não viu.
 
 ### No momento do resultado: o desconforto
 
 A partida está perdida. Duas cognições incompatíveis aparecem: eu sou um jogador razoável, eu acabei de perder uma posição ganha.
 
-É a [dissonância cognitiva](/pt-br/blog/dissonance-cognitive-aux-echecs/), e Festinger mostrou que ela tem uma força motivacional própria. Ela não pede para ser compreendida: ela pede para cessar.
+É a [dissonância cognitiva](/pt-br/blog/dissonancia-cognitiva-no-xadrez/), e Festinger mostrou que ela tem uma força motivacional própria. Ela não pede para ser compreendida: ela pede para cessar.
 
 Existem três saídas. Mudar a primeira cognição sai caro, porque mexe com quem você é. Mudar a segunda é impossível, o resultado já está registrado. Sobra o terceiro caminho, aquele que consiste em acrescentar uma cognição que reconcilia as duas.
 
@@ -110,7 +110,7 @@ Existem três saídas. Mudar a primeira cognição sai caro, porque mexe com que
 
 Essa terceira cognição chega rápido, e é produzida por um sistema notavelmente eficiente.
 
-A [racionalização](/pt-br/blog/rationalisation-aux-echecs/) fornece uma explicação aceitável, coerente e muitas vezes correta. Você estava cansado. Era blitz. Você tinha preparado mal.
+A [racionalização](/pt-br/blog/racionalizacao-no-xadrez/) fornece uma explicação aceitável, coerente e muitas vezes correta. Você estava cansado. Era blitz. Você tinha preparado mal.
 
 O experimento mais perturbador da área mostra que esse sistema funciona até quando não tem acesso a nada: num protocolo de 2005, trocaram sorrateiramente a fotografia escolhida pelos participantes, e 87 % deles explicaram com convicção por que tinham preferido um rosto que, na verdade, haviam descartado.
 
@@ -122,7 +122,7 @@ E o que essa explicação custa não é a mentira. É a interrupção prematura 
 
 ### O que sobra: as defesas
 
-O que a racionalização não absorve é tratado por um repertório mais amplo, inventariado no nosso artigo sobre [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismes-de-defense-aux-echecs/).
+O que a racionalização não absorve é tratado por um repertório mais amplo, inventariado no nosso artigo sobre [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismos-de-defesa-no-xadrez/).
 
 A negação não consiste em negar o resultado, mas em não olhar a partida. O deslocamento gasta trinta minutos com o barulho da sala e zero com o lance 22. A intelectualização, a mais difícil de identificar, analisa com competência sem nunca falar do que foi sentido, porque o tabuleiro não dói.
 
@@ -132,7 +132,7 @@ Vale lembrar aqui que esse modelo é frágil: o DSM-5 retirou a escala de funcio
 
 O último mecanismo é o mais lento e provavelmente o mais decisivo.
 
-A [memória reconstrutiva](/pt-br/blog/memoire-reconstructive-aux-echecs/) não relê uma gravação: ela refabrica. E Bartlett mostrou que essa reconstrução não é aleatória: ela se normaliza na direção do esquema de quem lembra.
+A [memória reconstrutiva](/pt-br/blog/memoria-reconstrutiva-no-xadrez/) não relê uma gravação: ela refabrica. E Bartlett mostrou que essa reconstrução não é aleatória: ela se normaliza na direção do esquema de quem lembra.
 
 O seu esquema, aqui, é a ideia que você faz do seu próprio jogo. Cada vez que você se lembra de uma partida, os elementos que não se encaixam nele apagam um pouco. Depois de alguns anos, você tem um conjunto de lembranças notavelmente coerente, descrevendo um jogador que não existe.
 
@@ -160,19 +160,19 @@ Cada artigo foi escrito de forma independente, com as próprias fontes e o próp
 
 **Escreva antes.**
 
-A sua avaliação da posição antes de ligar o engine, contra [a ancoragem](/pt-br/blog/biais-d-ancrage-aux-echecs/) e contra [a obediência à autoridade](/pt-br/blog/obeissance-a-l-autorite-aux-echecs/).
+A sua avaliação da posição antes de ligar o engine, contra [a ancoragem](/pt-br/blog/vies-de-ancoragem-no-xadrez/) e contra [a obediência à autoridade](/pt-br/blog/obediencia-a-autoridade-no-xadrez/).
 
-Os lances que você realmente considerou, antes da análise, contra [as falsas memórias](/pt-br/blog/faux-souvenirs-aux-echecs/).
+Os lances que você realmente considerou, antes da análise, contra [as falsas memórias](/pt-br/blog/falsas-memorias-no-xadrez/).
 
 A sua primeira explicação da derrota antes de examinar os fatos, contra a racionalização.
 
-O seu critério de abandono antes de investir num repertório, contra a justificativa do esforço e o [paradoxo da escolha](/pt-br/blog/paradoxe-du-choix-aux-echecs/).
+O seu critério de abandono antes de investir num repertório, contra a justificativa do esforço e o [paradoxo da escolha](/pt-br/blog/paradoxo-da-escolha-no-xadrez/).
 
-A sua regra de parada antes de começar a jogar, contra o reforço de razão variável do [condicionamento operante](/pt-br/blog/conditionnement-operant-aux-echecs/).
+A sua regra de parada antes de começar a jogar, contra o reforço de razão variável do [condicionamento operante](/pt-br/blog/condicionamento-operante-no-xadrez/).
 
-Aquilo que você acha que é a sua fraqueza antes de consultar as suas estatísticas, contra a [profecia autorrealizável](/pt-br/blog/prophetie-auto-realisatrice-aux-echecs/) e contra [o efeito Barnum](/pt-br/blog/effet-barnum-aux-echecs/).
+Aquilo que você acha que é a sua fraqueza antes de consultar as suas estatísticas, contra a [profecia autorrealizável](/pt-br/blog/profecia-autorrealizavel-no-xadrez/) e contra [o efeito Barnum](/pt-br/blog/efeito-barnum-no-xadrez/).
 
-O rating que você espera antes de pagar uma aula, contra as sete alavancas da [persuasão](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/).
+O rating que você espera antes de pagar uma aula, contra as sete alavancas da [persuasão](/pt-br/blog/psicologia-da-persuasao-no-xadrez/).
 
 Sete mecanismos diferentes, sete literaturas diferentes, uma única defesa.
 
@@ -198,11 +198,11 @@ Esta série pegou o hábito de apresentar sistematicamente a crítica daquilo qu
 
 O título deste artigo dá a entender que seria sempre preferível aprender. Isso é falso, e existem pelo menos três situações em que defender o próprio modelo é a decisão correta.
 
-**Quando o sinal é ruído.** Uma derrota não é uma informação sobre o seu nível, é uma amostra de tamanho um. Revisar a imagem de si mesmo depois de cada partida perdida não é lucidez, é sobreajuste. As flutuações normais de um rating superam de longe o efeito de um mês de trabalho sério, como lembra o nosso artigo sobre [a comparação social no xadrez](/pt-br/blog/comparaison-sociale-aux-echecs/). Um jogador que põe tudo em questão toda semana não constrói nada.
+**Quando o sinal é ruído.** Uma derrota não é uma informação sobre o seu nível, é uma amostra de tamanho um. Revisar a imagem de si mesmo depois de cada partida perdida não é lucidez, é sobreajuste. As flutuações normais de um rating superam de longe o efeito de um mês de trabalho sério, como lembra o nosso artigo sobre [a comparação social no xadrez](/pt-br/blog/comparacao-social-no-xadrez/). Um jogador que põe tudo em questão toda semana não constrói nada.
 
 O critério, portanto, não é "revisar sempre", e sim **revisar sobre agregados**. Trinta partidas dizem alguma coisa. Uma não diz nada.
 
-**Quando a revisão chega na hora errada.** Durante um torneio, entre duas rodadas, a pergunta "sou mesmo o jogador que eu acho que sou" é a pior possível. Ela consome exatamente o recurso de que a rodada seguinte precisa. A supressão voluntária, ou seja, o adiamento consciente e datado, está classificada entre as defesas mais adaptativas no nosso artigo sobre [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismes-de-defense-aux-echecs/). Adiar não é fugir, desde que se volte.
+**Quando a revisão chega na hora errada.** Durante um torneio, entre duas rodadas, a pergunta "sou mesmo o jogador que eu acho que sou" é a pior possível. Ela consome exatamente o recurso de que a rodada seguinte precisa. A supressão voluntária, ou seja, o adiamento consciente e datado, está classificada entre as defesas mais adaptativas no nosso artigo sobre [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismos-de-defesa-no-xadrez/). Adiar não é fugir, desde que se volte.
 
 **Quando o custo supera o benefício.** Nem toda revisão vale a pena. Descobrir que você tem uma lacuna num tipo de final que aparece uma vez por ano é uma informação exata e sem valor prático. A lucidez não é um fim em si mesma: ela tem um preço, e esse preço deve ser pago onde ele rende.
 
@@ -258,7 +258,7 @@ Um texto datado é a única coisa nessa história toda que o seu cérebro não c
 
 ---
 
-*Este artigo é o hub de uma série de 41 textos sobre psicologia aplicada ao xadrez. Ele fecha os seis artigos do núcleo: [Dunning-Kruger](/pt-br/blog/effet-dunning-kruger-aux-echecs/), [a dissonância cognitiva](/pt-br/blog/dissonance-cognitive-aux-echecs/), [o viés de confirmação](/pt-br/blog/biais-de-confirmation-aux-echecs/), [os mecanismos de defesa](/pt-br/blog/mecanismes-de-defense-aux-echecs/), [a racionalização](/pt-br/blog/rationalisation-aux-echecs/) e [a projeção](/pt-br/blog/projection-aux-echecs/). Ver [o índice completo da série](/pt-br/series/psychologie/).*
+*Este artigo é o hub de uma série de 41 textos sobre psicologia aplicada ao xadrez. Ele fecha os seis artigos do núcleo: [Dunning-Kruger](/pt-br/blog/efeito-dunning-kruger-no-xadrez/), [a dissonância cognitiva](/pt-br/blog/dissonancia-cognitiva-no-xadrez/), [o viés de confirmação](/pt-br/blog/vies-de-confirmacao-no-xadrez/), [os mecanismos de defesa](/pt-br/blog/mecanismos-de-defesa-no-xadrez/), [a racionalização](/pt-br/blog/racionalizacao-no-xadrez/) e [a projeção](/pt-br/blog/projecao-no-xadrez/). Ver [o índice completo da série](/pt-br/series/psychologie/).*
 
 ## Fontes
 

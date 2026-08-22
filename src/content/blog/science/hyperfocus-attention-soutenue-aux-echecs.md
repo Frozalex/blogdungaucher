@@ -43,7 +43,7 @@ Au laboratoire, on la mesure avec des tâches comme le **Sustained Attention to 
 
 Aux échecs en cadence classique, l'attention soutenue est exactement ce dont tu as besoin. Tu dois rester engagé pendant des heures, tu dois pouvoir détecter une menace tactique qui apparaît dans une position que tu pensais calme, tu dois maintenir le calcul sur des variantes profondes sans saturer ton cerveau.
 
-Sa signature neurale est une activation modérée mais stable du réseau d'attention exécutive, avec une suppression efficace mais souple du réseau du mode par défaut (voir [le réseau du mode par défaut aux échecs](/blog/reseau-mode-defaut-aux-echecs/)).
+Sa signature neurale est une activation modérée mais stable du réseau d'attention exécutive, avec une suppression efficace mais souple du réseau du mode par défaut (voir [le réseau du mode par défaut aux échecs](/fr/blog/reseau-mode-defaut-aux-echecs/)).
 
 ## Définir l'hyperfocus
 

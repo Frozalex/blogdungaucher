@@ -57,7 +57,7 @@ Você pega o primeiro.
 
 E em nenhum momento olhou a coluna bem ao lado, a que indica o que cada um desses lances **rendeu**.
 
-Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/), que apresenta as sete alavancas. Ele trata da alavanca mais discutida da área, e do único terreno no mundo em que dá para colocá-la à prova em três segundos.
+Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/), que apresenta as sete alavancas. Ele trata da alavanca mais discutida da área, e do único terreno no mundo em que dá para colocá-la à prova em três segundos.
 
 ## O princípio, e a lógica dele
 
@@ -106,7 +106,7 @@ Quatro motivos, dos quais só um é aquele que a gente supõe.
 
 **Porque ele é ensinado.** Os livros e os cursos transmitem a linha principal, o que a torna principal, o que justifica ensiná-la.
 
-**Porque ele é publicado.** O corpus é feito de partidas de torneio entre jogadores rateados, com o filtro de seleção descrito no nosso artigo sobre [o viés do sobrevivente no xadrez](/pt-br/blog/biais-du-survivant-aux-echecs/).
+**Porque ele é publicado.** O corpus é feito de partidas de torneio entre jogadores rateados, com o filtro de seleção descrito no nosso artigo sobre [o viés do sobrevivente no xadrez](/pt-br/blog/vies-do-sobrevivente-no-xadrez/).
 
 Três desses quatro motivos não têm nada a ver com a qualidade do lance na **sua** partida.
 
@@ -138,7 +138,7 @@ Só que as dificuldades práticas de uma linha não são as mesmas conforme o n�
 
 **Peça sempre o denominador.** Três milhões de usuários entre quantos cadastrados? Dez mil alunos formados, dos quais quantos progrediram? Um número sem denominador é uma anedota de tamanho grande.
 
-**Trate a ausência como ausência.** Um lance raro não foi julgado ruim por nenhuma instância. Ele simplesmente não foi jogado pelas pessoas cujas partidas entram nos bancos. É também o que mostra o nosso artigo sobre [o conformismo no xadrez](/pt-br/blog/conformisme-aux-echecs/).
+**Trate a ausência como ausência.** Um lance raro não foi julgado ruim por nenhuma instância. Ele simplesmente não foi jogado pelas pessoas cujas partidas entram nos bancos. É também o que mostra o nosso artigo sobre [o conformismo no xadrez](/pt-br/blog/conformismo-no-xadrez/).
 
 ## O que vale reter
 
@@ -154,7 +154,7 @@ A alavanca mais poderosa do marketing pode aqui ser desarmada com um filtro e um
 
 ---
 
-*Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psychologie-de-la-persuasion-aux-echecs/). Veja também [a reciprocidade no xadrez](/pt-br/blog/reciprocite-aux-echecs/).*
+*Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/). Veja também [a reciprocidade no xadrez](/pt-br/blog/reciprocidade-no-xadrez/).*
 
 ## Fontes
 

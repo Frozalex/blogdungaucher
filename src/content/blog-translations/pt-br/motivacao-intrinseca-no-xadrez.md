@@ -121,7 +121,7 @@ Três indícios, bastante confiáveis.
 
 **Uma vitória sem pontos não conta.** Uma partida amistosa, não valendo rating, te parece vazia, como se não tivesse acontecido.
 
-**Você evita adversários mais fortes.** Não por medo de perder o jogo, mas por medo de perder pontos. É o sinal mais nítido, porque leva a evitar justamente as partidas mais formadoras. Ele se conecta com o que descreve o nosso artigo sobre [Elo e autoestima](/pt-br/blog/echecs-estime-de-soi-elo/).
+**Você evita adversários mais fortes.** Não por medo de perder o jogo, mas por medo de perder pontos. É o sinal mais nítido, porque leva a evitar justamente as partidas mais formadoras. Ele se conecta com o que descreve o nosso artigo sobre [Elo e autoestima](/pt-br/blog/xadrez-autoestima-elo/).
 
 ## O que distingue este artigo do outro
 
@@ -135,7 +135,7 @@ Este texto aqui trata de um mecanismo preciso e bem delimitado: **a substituiç�
 
 **Passe do resultado para o conteúdo no seu retorno de informação.** É a distinção mais bem estabelecida da área. Depois de uma partida, anote o que você jogou bem, não o que você ganhou. Um retorno informativo alimenta a motivação; uma contrapartida numérica a substitui.
 
-**Reduza a saliência, não o número.** O problema não é que o rating exista, mas que ele fique exibido o tempo todo. É também a conclusão do nosso artigo sobre [a comparação social no xadrez](/pt-br/blog/comparaison-sociale-aux-echecs/): a frequência de consulta conta mais que o valor.
+**Reduza a saliência, não o número.** O problema não é que o rating exista, mas que ele fique exibido o tempo todo. É também a conclusão do nosso artigo sobre [a comparação social no xadrez](/pt-br/blog/comparacao-social-no-xadrez/): a frequência de consulta conta mais que o valor.
 
 **Reencontre o que fez você vir.** Muitos jogadores chegaram por um livro, uma partida famosa, um filme, uma pessoa. Voltar àquele objeto, de vez em quando, mantém uma motivação que o rating não consegue fornecer.
 
@@ -151,7 +151,7 @@ O rating Elo tem o perfil de uma recompensa externa esperada. Mas saber se ele t
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Um artigo futuro tratará da teoria da autodeterminação. Veja também [Elo e autoestima](/pt-br/blog/echecs-estime-de-soi-elo/), [dopamina e xadrez](/pt-br/blog/echecs-et-dopamine/) e [burnout no xadrez](/pt-br/blog/burnout-chess/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Um artigo futuro tratará da teoria da autodeterminação. Veja também [Elo e autoestima](/pt-br/blog/xadrez-autoestima-elo/), [dopamina e xadrez](/pt-br/blog/dopamina-e-xadrez/) e [burnout no xadrez](/pt-br/blog/burnout-no-xadrez/).*
 
 ## Fontes
 

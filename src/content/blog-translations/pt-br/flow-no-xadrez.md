@@ -120,7 +120,7 @@ Esses números são para o trabalho intelectual em geral. Para uma atividade tã
 
 A implicação prática é importante: **uma única notificação pode custar um quarto de hora de reflexão profunda**. Numa partida de 3 horas, duas interrupções representam potencialmente 30 minutos de flow perdidos, ou seja, a duração de uma fase crítica de meio-jogo.
 
-Os jogadores sérios tratam a [higiene de concentração](/pt-br/blog/echecs-et-concentration/) como um elemento tático por si só: celular no modo avião ou guardado, fones com cancelamento de ruído se o ambiente for barulhento, ritual de entrada em concentração antes de se sentar. Até no mundo amador, os jogadores que chegam 5 minutos antes e respiram tranquilamente têm performance mental significativamente superior aos que se sentam ainda acelerados de algo anterior.
+Os jogadores sérios tratam a [higiene de concentração](/pt-br/blog/xadrez-e-concentracao/) como um elemento tático por si só: celular no modo avião ou guardado, fones com cancelamento de ruído se o ambiente for barulhento, ritual de entrada em concentração antes de se sentar. Até no mundo amador, os jogadores que chegam 5 minutos antes e respiram tranquilamente têm performance mental significativamente superior aos que se sentam ainda acelerados de algo anterior.
 
 ## Criar as condições do flow
 

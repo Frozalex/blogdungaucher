@@ -121,7 +121,7 @@ Abrir um aplicativo e clicar em "nova partida" é um hábito perfeito. Veja por 
 
 **A recompensa é imediata.** Três minutos depois, você já sabe se ganhou.
 
-**E, principalmente, ela é variável.** Você não sabe de antemão se vai ganhar. Esse tipo de recompensa, imprevisível mas frequente, é de longe o reforçador mais poderoso que se conhece, e é também o das máquinas caça-níqueis. Um artigo futuro desta série, dedicado ao condicionamento operante, detalha esse mecanismo, que o nosso artigo sobre [dopamina e xadrez](/pt-br/blog/echecs-et-dopamine/) aborda pela neuroquímica.
+**E, principalmente, ela é variável.** Você não sabe de antemão se vai ganhar. Esse tipo de recompensa, imprevisível mas frequente, é de longe o reforçador mais poderoso que se conhece, e é também o das máquinas caça-níqueis. Um artigo futuro desta série, dedicado ao condicionamento operante, detalha esse mecanismo, que o nosso artigo sobre [dopamina e xadrez](/pt-br/blog/dopamina-e-xadrez/) aborda pela neuroquímica.
 
 ### O que torna "treinar" impossível
 
@@ -204,7 +204,7 @@ A única alavanca bem sustentada consiste em escrever uma frase: se tal coisa ac
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a regra 40-40-20](/pt-br/blog/regle-40-40-20-echecs/) para o conteúdo do treino, e [procrastinação e xadrez](/pt-br/blog/echecs-et-procrastination/) para a esquiva. Artigos futuros tratarão da gratificação adiada e do condicionamento operante.*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a regra 40-40-20](/pt-br/blog/regra-40-40-20-xadrez/) para o conteúdo do treino, e [procrastinação e xadrez](/pt-br/blog/xadrez-e-procrastinacao/) para a esquiva. Artigos futuros tratarão da gratificação adiada e do condicionamento operante.*
 
 ## Fontes
 

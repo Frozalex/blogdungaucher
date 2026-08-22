@@ -70,7 +70,7 @@ A atenção se estreita, o que costuma ser descrito como um efeito de túnel. A 
 
 Não é acidente: é a função do sistema. Ele foi feito para melhorar o desempenho diante de uma ameaça pontual, e depois voltar ao estado de base.
 
-É esse regime que o nosso artigo sobre [como lidar com o estresse em torneio](/pt-br/blog/echecs-stress-tournoi/) descreve, e é também por isso que uma dose de tensão antes de uma partida importante não é um problema a ser eliminado.
+É esse regime que o nosso artigo sobre [como lidar com o estresse em torneio](/pt-br/blog/xadrez-estresse-torneio/) descreve, e é também por isso que uma dose de tensão antes de uma partida importante não é um problema a ser eliminado.
 
 ### O estresse crônico degrada
 
@@ -82,9 +82,9 @@ Uma exposição prolongada aos glicocorticoides afeta os neurônios e acaba alte
 
 **O córtex pré-frontal.** Uma elevação sustentada de cortisol provoca ali uma retração dendrítica comparável, e os dados mostram déficits associados de memória de trabalho, já que essa memória se apoia na interação entre o córtex pré-frontal e o hipocampo.
 
-Ou seja: o estresse prolongado ataca justamente **as duas estruturas de que depende o jogo de xadrez**. Nosso artigo sobre [memória de trabalho e xadrez](/pt-br/blog/echecs-memoire-de-travail/) descreve por que esse recurso é o gargalo do cálculo de variantes.
+Ou seja: o estresse prolongado ataca justamente **as duas estruturas de que depende o jogo de xadrez**. Nosso artigo sobre [memória de trabalho e xadrez](/pt-br/blog/xadrez-memoria-de-trabalho/) descreve por que esse recurso é o gargalo do cálculo de variantes.
 
-Outra nuance documentada: o estresse prolongado prejudica as tarefas baseadas na cognição, como a evocação verbal ou a memória espacial, ao mesmo tempo que **facilita** as baseadas na emoção, em especial o condicionamento do medo. O que sugere que nesse estado você aprende pior as posições e melhor os receios. O mecanismo é o descrito no nosso artigo sobre [o condicionamento clássico no xadrez](/pt-br/blog/conditionnement-classique-aux-echecs/).
+Outra nuance documentada: o estresse prolongado prejudica as tarefas baseadas na cognição, como a evocação verbal ou a memória espacial, ao mesmo tempo que **facilita** as baseadas na emoção, em especial o condicionamento do medo. O que sugere que nesse estado você aprende pior as posições e melhor os receios. O mecanismo é o descrito no nosso artigo sobre [o condicionamento clássico no xadrez](/pt-br/blog/condicionamento-classico-no-xadrez/).
 
 ## A carga alostática
 
@@ -104,9 +104,9 @@ Quatro fontes, e nenhuma delas é espetacular.
 
 **A temporada competitiva.** Um torneio isolado é um estresse agudo, com recuperação. Oito fins de semana em quatro meses, com noites curtas e deslocamentos, produzem uma ativação que nunca desce por completo.
 
-**A pressão contínua do rating.** Provavelmente é a fonte mais específica do xadrez. Ao contrário de quase qualquer outro hobby, a sua avaliação é permanente, pública e atualizada depois de cada partida. Não existe pré-temporada. Nosso artigo sobre [a comparação social no xadrez](/pt-br/blog/comparaison-sociale-aux-echecs/) descreve esse dispositivo.
+**A pressão contínua do rating.** Provavelmente é a fonte mais específica do xadrez. Ao contrário de quase qualquer outro hobby, a sua avaliação é permanente, pública e atualizada depois de cada partida. Não existe pré-temporada. Nosso artigo sobre [a comparação social no xadrez](/pt-br/blog/comparacao-social-no-xadrez/) descreve esse dispositivo.
 
-**O jogo online tarde da noite.** Ponto muitas vezes ignorado e provavelmente decisivo. Uma sessão de blitz à noite combina ativação competitiva, exposição à luz e um encadeamento difícil de interromper, pelos motivos expostos no nosso artigo sobre [o condicionamento operante no xadrez](/pt-br/blog/conditionnement-operant-aux-echecs/). Ela atrasa o adormecer, o que degrada a regulação do cortisol no dia seguinte, o que aumenta a vulnerabilidade ao estresse, o que torna a sessão noturna mais atraente.
+**O jogo online tarde da noite.** Ponto muitas vezes ignorado e provavelmente decisivo. Uma sessão de blitz à noite combina ativação competitiva, exposição à luz e um encadeamento difícil de interromper, pelos motivos expostos no nosso artigo sobre [o condicionamento operante no xadrez](/pt-br/blog/condicionamento-operante-no-xadrez/). Ela atrasa o adormecer, o que degrada a regulação do cortisol no dia seguinte, o que aumenta a vulnerabilidade ao estresse, o que torna a sessão noturna mais atraente.
 
 **O resto da sua vida.** Precisa ser dito, porque os artigos de xadrez esquecem isso sistematicamente: o seu trabalho, a sua situação familiar e a sua saúde pesam bem mais que o seu calendário de torneios. O cortisol não distingue as fontes.
 
@@ -118,7 +118,7 @@ Esse assunto é cercado de vizinhos próximos, e confundi-los leva a aplicar o r
 
 **O estresse crônico**, objeto deste artigo, é um estado fisiológico prolongado que degrada a cognição. Ele não se trata com técnicas de manejo no momento, porque não existe um momento. Ele se trata com redução de carga e restauração da recuperação.
 
-**O burnout** é uma síndrome psicológica constituída, com as suas três dimensões características, descrita no nosso artigo sobre [o burnout no xadrez](/pt-br/blog/burnout-chess/). Dá para estar em estresse crônico sem burnout, e o estresse crônico prolongado é um fator de risco para ele.
+**O burnout** é uma síndrome psicológica constituída, com as suas três dimensões características, descrita no nosso artigo sobre [o burnout no xadrez](/pt-br/blog/burnout-no-xadrez/). Dá para estar em estresse crônico sem burnout, e o estresse crônico prolongado é um fator de risco para ele.
 
 ## Os sinais úteis
 
@@ -128,7 +128,7 @@ Os indicadores emocionais são pouco confiáveis aqui, porque a pessoa se acostu
 
 **Os erros em padrões simples.** Não os erros posicionais sutis, que são questão de nível, mas os garfos que passam batido e as peças penduradas. Esses padrões são superaprendidos: falhar neles sinaliza problema de recurso, não de conhecimento.
 
-**O sono que se degrada de forma duradoura.** Demora para pegar no sono, despertares noturnos, sono não reparador, por várias semanas. Nosso artigo sobre [xadrez e sono](/pt-br/blog/echecs-et-sommeil/) detalha as ligações com o desempenho.
+**O sono que se degrada de forma duradoura.** Demora para pegar no sono, despertares noturnos, sono não reparador, por várias semanas. Nosso artigo sobre [xadrez e sono](/pt-br/blog/xadrez-e-sono/) detalha as ligações com o desempenho.
 
 **A irritabilidade persistente depois das partidas.** Não o tilt, que é agudo e passa, mas um fundo de irritação que não passa.
 
@@ -176,7 +176,7 @@ O sinal mais específico não é emocional. É uma memória de trabalho que desa
 
 ---
 
-*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [como lidar com o estresse em torneio](/pt-br/blog/echecs-stress-tournoi/) para o estresse agudo, [burnout no xadrez](/pt-br/blog/burnout-chess/) para a síndrome constituída, e [xadrez e sono](/pt-br/blog/echecs-et-sommeil/).*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [como lidar com o estresse em torneio](/pt-br/blog/xadrez-estresse-torneio/) para o estresse agudo, [burnout no xadrez](/pt-br/blog/burnout-no-xadrez/) para a síndrome constituída, e [xadrez e sono](/pt-br/blog/xadrez-e-sono/).*
 
 ## Fontes
 

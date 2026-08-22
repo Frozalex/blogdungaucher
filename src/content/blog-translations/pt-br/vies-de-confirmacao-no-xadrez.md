@@ -90,7 +90,7 @@ A sua árvore de variantes não estava curta demais. Ela estava **desequilibrada
 
 Dois mecanismos deixam a coisa especialmente teimosa no xadrez.
 
-**O investimento.** Quanto mais você calculou uma ideia, mais caro custa abandoná-la. Depois de seis minutos numa combinação, o cérebro não procura mais se ela é boa: procura como fazê-la funcionar. É o mecanismo de justificação descrito no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/).
+**O investimento.** Quanto mais você calculou uma ideia, mais caro custa abandoná-la. Depois de seis minutos numa combinação, o cérebro não procura mais se ela é boa: procura como fazê-la funcionar. É o mecanismo de justificação descrito no nosso artigo sobre [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/).
 
 **A beleza.** Uma combinação é esteticamente satisfatória. O prazer que ela dá é uma recompensa recebida **antes** de você saber se ela funciona, e essa recompensa contamina o exame que vem depois. As ideias feias são examinadas com mais honestidade que as bonitas.
 
@@ -108,7 +108,7 @@ Os mestres também são melhores em detectar o lance adversário exato que inval
 
 ### Por que isso importa
 
-Esse resultado corrige uma ideia difundida que aparece em todo lugar, inclusive no nosso próprio panorama dos [5 vieses cognitivos que te fazem dar blunder](/pt-br/blog/5-biais-cognitifs-blunder/), onde está escrito que esse viés afeta novatos e especialistas do mesmo jeito. Dentro da área de expertise, não é isso que Cowley e Byrne mostram.
+Esse resultado corrige uma ideia difundida que aparece em todo lugar, inclusive no nosso próprio panorama dos [5 vieses cognitivos que te fazem dar blunder](/pt-br/blog/5-vieses-cognitivos-blunder/), onde está escrito que esse viés afeta novatos e especialistas do mesmo jeito. Dentro da área de expertise, não é isso que Cowley e Byrne mostram.
 
 E a implicação é otimista. Se os mestres refutassem melhor por terem um temperamento mais cético, não haveria nada a fazer. Mas a explicação proposta é outra: eles refutam melhor **porque conhecem mais lances**. A falsificação não é uma virtude, é uma consequência do repertório.
 
@@ -148,7 +148,7 @@ Este vale para o pós-partida, e é o único jeito de medir o seu próprio viés
 
 Quando você analisa no motor, aprende que o seu lance 24 era ruim. Não aprende que **você nunca tinha olhado a refutação**. E é essa informação que tem valor, porque ela fala do seu processo e não da posição.
 
-O único jeito de preservá-la: anotar, durante ou logo depois da partida, o que você realmente calculou. Sem essa anotação, a sua memória vai reconstruir uma versão na qual você tinha considerado a resposta dele mas avaliou mal a continuação. Isso quase nunca é verdade, e é o tema de um artigo desta série ainda por vir, sobre a memória reconstrutiva. O método geral está detalhado no nosso guia sobre [analisar as próprias partidas](/pt-br/blog/analyser-ses-parties/).
+O único jeito de preservá-la: anotar, durante ou logo depois da partida, o que você realmente calculou. Sem essa anotação, a sua memória vai reconstruir uma versão na qual você tinha considerado a resposta dele mas avaliou mal a continuação. Isso quase nunca é verdade, e é o tema de um artigo desta série ainda por vir, sobre a memória reconstrutiva. O método geral está detalhado no nosso guia sobre [analisar as próprias partidas](/pt-br/blog/analisar-suas-partidas/).
 
 ## O que ficar
 
@@ -164,7 +164,7 @@ Em outras palavras: a pergunta "o que me mostraria que estou errado" só tem val
 
 ---
 
-*Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/effet-dunning-kruger-aux-echecs/), [a dissonância cognitiva no xadrez](/pt-br/blog/dissonance-cognitive-aux-echecs/) e [o viés do sobrevivente no xadrez](/pt-br/blog/biais-du-survivant-aux-echecs/).*
+*Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/), [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/) e [o viés do sobrevivente no xadrez](/pt-br/blog/vies-do-sobrevivente-no-xadrez/).*
 
 ## Fontes
 
