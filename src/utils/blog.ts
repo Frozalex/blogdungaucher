@@ -19,12 +19,15 @@ export function calculateReadingTime(body: string): string {
 }
 
 export function formatDate(date: Date) {
-  return new Intl.DateTimeFormat("fr-FR", {
+  const texte = new Intl.DateTimeFormat("fr-FR", {
     day: "numeric",
     month: "long",
     year: "numeric",
     timeZone: "UTC",
   }).format(date);
+  // `Intl` rend « 1 juin 2027 » ; le français écrit « 1er juin ». La règle ne
+  // vaut que pour le premier du mois, les autres quantièmes restent cardinaux.
+  return date.getUTCDate() === 1 ? texte.replace(/^1\b/, "1er") : texte;
 }
 
 export function formatDateEn(date: Date) {
