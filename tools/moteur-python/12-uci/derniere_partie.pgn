@@ -1,0 +1,13 @@
+[Event "Match contre Stockfish 1600"]
+[Site "blogdungaucher.com"]
+[White "Stockfish 1600"]
+[Black "Gaucher 1.0"]
+[Result "1-0"]
+[Termination "échec et mat"]
+
+1.e3 Cc6 2.c4 Cf6 3.d4 d5 4.Cc3 e6 5.a3 Fd6 6.f4 O-O 7.Cf3 a5 8.c5 Fe7 9.Ce5 h5
+10.Fd3 h4 11.O-O Tb8 12.Cxc6 bxc6 13.Tb1 Fd7 14.Fd2 Te8 15.Ca2 Ta8 16.De1 Cg4
+17.Cc1 a4 18.Dd1 Cf6 19.Ca2 Ce4 20.Tc1 Tb8 21.Cb4 Cxd2 22.Dxd2 Ff6 23.Fc2 Ta8
+24.Dd1 g5 25.Fxa4 gxf4 26.Cxc6 Fxc6 27.Fxc6 e5 28.Dg4+ Rf8 29.dxe5 Fxe5 30.
+Fxa8 Dxa8 31.Rh1 fxe3 32.Dh5 f6 33.Dh8+ Re7 34.Dh7+ Rd8 35.c6 Dc8 36.Tf3 Fxb2
+37.Tb1 Fxa3 38.Dxh4 Fc5 39.Tb5 Te4 40.Dxf6+ Te7 41.Dh4 Fb6 42.Tf8# 1-0

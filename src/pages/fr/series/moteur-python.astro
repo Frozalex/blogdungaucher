@@ -1,6 +1,8 @@
 ---
+import { getCollection } from "astro:content";
+
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { serieMoteurPhases, serieMoteurTotal } from "../../../data/serie-moteur-python";
+import { serieMoteurPhases, serieMoteurSlugs, serieMoteurTotal } from "../../../data/serie-moteur-python";
 import { absoluteUrl, buildBreadcrumbJsonLd, formatDate, getAllPosts } from "../../../utils/blog";
 
 // getAllPosts() ne renvoie que les articles dont la publishDate est passée : la série se
@@ -8,6 +10,16 @@ import { absoluteUrl, buildBreadcrumbJsonLd, formatDate, getAllPosts } from "../
 // parcours complet soit lisible dès le départ.
 const published = await getAllPosts();
 const bySlug = new Map(published.map((post) => [post.id.split("/").pop() ?? post.id, post]));
+
+// La collection complète, elle, contient aussi les articles à venir : c'est la seule
+// façon d'annoncer la date de sortie sans la recopier à la main dans cette page.
+const toutes = await getCollection("blog");
+const datesDeLaSerie = toutes
+  .filter((post) => serieMoteurSlugs.includes(post.id.split("/").pop() ?? post.id))
+  .map((post) => post.data.publishDate)
+  .sort((a, b) => a.getTime() - b.getTime());
+const premiereDate = datesDeLaSerie.at(0) ?? null;
+const derniereDate = datesDeLaSerie.at(-1) ?? null;
 
 const phases = serieMoteurPhases.map((phase) => ({
   ...phase,
@@ -88,7 +100,10 @@ const structuredData = [
       </p>
       <p class="serie__progress">
         <strong>{publishedCount}</strong> article{publishedCount > 1 ? "s" : ""} publié{publishedCount > 1 ? "s" : ""}
-        sur {serieMoteurTotal}. Premier article le 13 juillet 2027.
+        sur {serieMoteurTotal}.
+        {publishedCount === 0 && premiereDate && ` Un article par mardi, du ${formatDate(premiereDate)} au ${formatDate(derniereDate!)}.`}
+        {publishedCount > 0 && publishedCount < serieMoteurTotal && derniereDate
+          && ` Un nouvel article chaque mardi, jusqu’au ${formatDate(derniereDate)}.`}
       </p>
     </header>
 

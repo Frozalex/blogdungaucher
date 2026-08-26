@@ -43,12 +43,12 @@ export const serieMoteurPhases: MoteurPhase[] = [
       {
         slug : "generer-les-coups-legaux-en-python",
         label : "Générer les coups légaux",
-        verification : "Roque, en passant et promotions produits correctement",
+        verification : "41 648 coups comparés à Stockfish",
       },
       {
         slug : "perft-verifier-son-generateur-de-coups",
         label : "Perft : prouver que le générateur est juste",
-        verification : "6 positions de référence, jusqu'à la profondeur 5",
+        verification : "6 positions de référence, comptages exacts",
       },
     ],
   },
@@ -99,7 +99,7 @@ export const serieMoteurPhases: MoteurPhase[] = [
       {
         slug : "quiescence-et-tables-de-cases-python",
         label : "Quiescence et tables de cases",
-        verification : "Effet de horizon supprimé sur positions tactiques",
+        verification : "Effet d'horizon supprimé sur positions tactiques",
       },
     ],
   },
@@ -112,7 +112,7 @@ export const serieMoteurPhases: MoteurPhase[] = [
       {
         slug : "protocole-uci-python-et-mesurer-son-elo",
         label : "Parler UCI, et mesurer son Elo",
-        verification : "Match contre Stockfish bridé, estimation Elo",
+        verification : "Elo mesuré contre Stockfish bridé, avec sa marge",
       },
     ],
   },
