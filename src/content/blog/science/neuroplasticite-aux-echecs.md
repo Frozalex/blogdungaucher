@@ -4,7 +4,7 @@ excerpt: >-
   Les taxis de Londres, les jongleurs, la matière grise qui grossit : les deux études qu'on cite
   toujours pour prouver que les échecs transforment le cerveau disent en réalité l'inverse de ce qu'on
   leur fait dire. Le détail que personne ne rapporte change tout.
-publishDate: "2026-10-01"
+publishDate: "2026-09-15"
 category: science
 featured: false
 featuredRank: 99

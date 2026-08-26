@@ -4,7 +4,7 @@ excerpt: >-
   La théorie des ouvertures est construite sur les parties qui ont été publiées. Les conseils de grands
   maîtres viennent de ceux qui sont devenus grands maîtres. Sur 502 000 joueurs classés, environ 1 750
   portent le titre. Tout ce que tu apprends vient des survivants.
-publishDate: "2026-09-21"
+publishDate: "2026-09-08"
 category: esprit
 featured: false
 featuredRank: 99

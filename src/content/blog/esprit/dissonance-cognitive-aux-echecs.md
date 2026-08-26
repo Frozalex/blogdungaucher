@@ -4,7 +4,7 @@ excerpt: >-
   Perdre crée un inconfort mental que le cerveau cherche à éteindre le plus vite possible. Le plus
   souvent, il n'éteint pas la défaite : il éteint ce qu'elle signifie. Voilà comment naît la phrase la
   plus prononcée après une partie d'échecs.
-publishDate: "2026-09-07"
+publishDate: "2026-09-01"
 category: esprit
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   Cinquante ans après son expérience fondatrice, Seligman a publié un article expliquant que sa théorie
   avait tout pris à l'envers. Ce n'est pas l'impuissance qui s'apprend, c'est le contrôle. Et ce
   renversement change complètement ce qu'il faut faire quand on stagne.
-publishDate: "2027-02-11"
+publishDate: "2026-12-15"
 category: esprit
 featured: false
 featuredRank: 99

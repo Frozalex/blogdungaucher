@@ -4,7 +4,7 @@ excerpt: >-
   L'expérience des confitures est l'une des plus citées du marketing. Une méta-analyse sur 50 études et
   5 036 participants a trouvé un effet moyen quasiment nul. Pourtant, le joueur qui change de
   répertoire tous les trois mois a un vrai problème. Il n'est simplement pas là où on le croit.
-publishDate: "2027-03-18"
+publishDate: "2027-01-19"
 category: esprit
 featured: false
 featuredRank: 99

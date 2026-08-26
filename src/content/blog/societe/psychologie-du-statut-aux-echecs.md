@@ -4,7 +4,7 @@ excerpt: >-
   Chez les fonctionnaires britanniques, la mortalité était trois fois plus élevée en bas de la
   hiérarchie qu'en haut. Le facteur principal n'était pas le revenu : c'était le manque de contrôle.
   C'est précisément ce qui rend la hiérarchie échiquéenne différente de toutes les autres.
-publishDate: "2027-04-29"
+publishDate: "2027-04-13"
 category: societe
 featured: false
 featuredRank: 99

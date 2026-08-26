@@ -1,7 +1,7 @@
 ---
 title: "Pourquoi les grands joueurs d'échecs perdent contre des enfants"
 excerpt: "Un GM contre un enfant de 10 ans qui le bat : la scène choque, mais elle n'est pas un accident. Elle révèle des asymétries cognitives, émotionnelles et tactiques que la force brute ne suffit pas à compenser."
-publishDate: "2027-01-18"
+publishDate: "2026-12-03"
 category: "esprit"
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   Le concept d'intelligence émotionnelle tient beaucoup moins bien debout qu'on ne le raconte, au point
   que l'un de ses inventeurs a publiquement dénoncé sa version populaire. Mais il en reste une brique,
   et les échecs sont l'un des rares endroits où elle se mesure au lieu de se ressentir.
-publishDate: "2026-12-21"
+publishDate: "2026-11-10"
 category: esprit
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   L'histoire des 38 témoins de Kitty Genovese est fausse, et les données modernes montrent qu'on
   intervient dans 91 % des conflits publics réels. Alors pourquoi la communauté échiquéenne regarde-t-elle
   sans agir ? La réponse n'est pas celle du manuel, et elle est plus embarrassante.
-publishDate: "2027-02-01"
+publishDate: "2026-12-08"
 category: societe
 featured: false
 featuredRank: 99

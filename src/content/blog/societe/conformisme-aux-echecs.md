@@ -4,7 +4,7 @@ excerpt: >-
   Chez Asch, se conformer c'était donner une réponse manifestement fausse. Aux échecs, la majorité suit
   le moteur, donc se conformer c'est le plus souvent avoir raison. Ce qui rend le coût du conformisme
   bien plus difficile à voir, et probablement plus élevé.
-publishDate: "2027-03-15"
+publishDate: "2027-01-12"
 category: societe
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   Des biscuits identiques ont été jugés meilleurs quand il n'en restait que deux, et meilleurs encore
   quand on venait d'en retirer huit. Ce mécanisme n'agit pas seulement sur les offres à durée limitée :
   il agit sur ta pendule, deux fois par partie, dans les dix dernières minutes.
-publishDate: "2027-05-17"
+publishDate: "2027-05-18"
 category: societe
 featured: false
 featuredRank: 99

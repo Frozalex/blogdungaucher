@@ -4,7 +4,7 @@ excerpt: >-
   La pendule tourne, votre position est difficile, et vous sentez votre cœur s'emballer. Le stress de tournoi n'est pas
   une faiblesse : c'est une réponse biologique normale qui peut être canalisée ou sabotée. Ce que la science sait sur la
   performance sous pression.
-publishDate: "2026-10-26"
+publishDate: "2026-10-08"
 category: esprit
 featured: false
 featuredRank: 99

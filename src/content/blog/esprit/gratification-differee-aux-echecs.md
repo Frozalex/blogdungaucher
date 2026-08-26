@@ -4,7 +4,7 @@ excerpt: >-
   La réplication de 2018 a divisé l'effet du célèbre test par deux, puis l'a réduit des deux tiers en
   tenant compte du milieu familial. Ce qui reste concerne moins la volonté de l'enfant que la fiabilité
   de son environnement. Et ça change complètement la lecture du coup lent contre le coup flashy.
-publishDate: "2027-04-08"
+publishDate: "2027-03-02"
 category: esprit
 featured: false
 featuredRank: 99

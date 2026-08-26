@@ -4,7 +4,7 @@ excerpt: >-
   Une canette de Coca offerte sans être demandée a doublé le nombre de billets de tombola achetés.
   Aux échecs, ce mécanisme n'agit pas seulement dans le marketing : il structure l'analyse d'après-partie,
   et il explique pourquoi certains joueurs ne demandent jamais rien.
-publishDate: "2027-05-06"
+publishDate: "2027-04-27"
 category: societe
 featured: false
 featuredRank: 99

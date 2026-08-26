@@ -1,13 +1,23 @@
 /**
- * Valide la grille pour tout billet avec publishDate >= SCHEDULE_GRID_ANCHOR_MONDAY :
- * nombre total de ces billets : **pair** (sinon impossible d’avoir 2 par semaine partout) ;
- * chaque date : lundi ou jeudi (UTC) ;
- * chaque semaine ISO contenant au moins un de ces billets : **exactement 2** billets ;
- * pas deux billets le même jour ;
- * les 2 billets d’une semaine : **rubriques différentes** (jamais science le lundi
- *   ET le jeudi). Réparation : `node scripts/pair-week-themes.mjs --dry-run`.
+ * Valide la grille de publication pour tout billet avec
+ * publishDate >= SCHEDULE_GRID_ANCHOR_MONDAY.
  *
- * Les billets avec publishDate < SCHEDULE_GRID_ANCHOR_MONDAY ne sont pas soumis à cette grille.
+ * Deux files indépendantes se partagent la semaine :
+ *
+ *   MARDI   — les séries éditoriales (Psychologie, puis Moteur en Python).
+ *             Un article par mardi, sans trou, dans l'ordre de la série.
+ *   LUN/JEU — la file historique, hors série. Deux articles par semaine, de
+ *             rubriques différentes. La dernière semaine peut n'en porter qu'un
+ *             (le stock n'est pas forcément pair), et les semaines qui suivent
+ *             l'épuisement du stock n'ont pas de lundi/jeudi du tout : seul le
+ *             mardi de la série continue.
+ *
+ * La correspondance mardi ⇄ série est stricte dans les deux sens : un article
+ * de série ne peut pas sortir un lundi, et un article hors série ne peut pas
+ * occuper un mardi.
+ *
+ * Les billets avec publishDate < SCHEDULE_GRID_ANCHOR_MONDAY ne sont pas soumis
+ * à cette grille.
  *
  * Run: node scripts/check-publish-weekly.mjs
  */
@@ -19,9 +29,15 @@ import {
   RESCHEDULE_FROM,
   SCHEDULE_GRID_ANCHOR_MONDAY,
 } from "./publish-schedule-constants.mjs";
+import { ensembleDesSlugsDeSerie, serieDuSlug } from "./series-slugs.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dir = path.join(__dirname, "..", "src", "content", "blog");
+
+const LUNDI = 1;
+const MARDI = 2;
+const JEUDI = 4;
+const NOMS_DE_JOUR = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
 
 /** Liste récursive des .md : les articles vivent en sous-dossiers (esprit/, science/,
  * societe/, grand-oral/). Une lecture à plat ne voit AUCUN fichier → check no-op. */
@@ -35,23 +51,21 @@ function walk(d) {
   return out;
 }
 
-function isoWeekKey(isoDateStr) {
-  const date = new Date(`${isoDateStr}T12:00:00Z`);
-  if (Number.isNaN(date.getTime())) return null;
-  const dayNr = (date.getUTCDay() + 6) % 7;
-  const d = new Date(date);
-  d.setUTCDate(d.getUTCDate() - dayNr + 3);
-  const firstThursday = new Date(Date.UTC(d.getUTCFullYear(), 0, 4));
-  const firstDayNr = (firstThursday.getUTCDay() + 6) % 7;
-  firstThursday.setUTCDate(4 - firstDayNr);
-  const weekNo = 1 + Math.round((d - firstThursday) / 604800000);
-  return `${d.getUTCFullYear()}-W${String(weekNo).padStart(2, "0")}`;
+function jourUtc(isoDateStr) {
+  return new Date(`${isoDateStr}T12:00:00Z`).getUTCDay();
 }
 
-function isMondayOrThursdayUtc(isoDateStr) {
+function lundiDeLaSemaine(isoDateStr) {
   const d = new Date(`${isoDateStr}T12:00:00Z`);
-  const dow = d.getUTCDay();
-  return dow === 1 || dow === 4;
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
+  return d.toISOString().slice(0, 10);
+}
+
+/** Nombre de semaines entières entre deux dates ISO tombant le même jour. */
+function semainesEntre(debut, fin) {
+  const a = new Date(`${debut}T12:00:00Z`);
+  const b = new Date(`${fin}T12:00:00Z`);
+  return Math.round((b - a) / 604800000);
 }
 
 const files = walk(dir);
@@ -76,81 +90,126 @@ if (scheduled.length === 0) {
   process.exit(0);
 }
 
+const slugsDeSerie = ensembleDesSlugsDeSerie();
 let errors = 0;
 
-if (scheduled.length % 2 !== 0) {
-  errors++;
-  console.error(
-    `Nombre impair (${scheduled.length}) de billets avec publishDate >= ${anchor} : impossible d’avoir exactement 2 billets par semaine sans semaine à 1. Ajoute un billet ou repasse-en un sous l’ancrage (< ${anchor}).`,
-  );
+// --- 1. Dates uniques ------------------------------------------------------
+const vues = new Map();
+for (const r of scheduled) {
+  if (vues.has(r.date)) {
+    errors++;
+    console.error(`Date dupliquée ${r.date} : ${vues.get(r.date)} et ${r.slug}`);
+  }
+  vues.set(r.date, r.slug);
 }
 
+// --- 2. Jour autorisé, et correspondance mardi ⇄ série ---------------------
+const series = [];
+const horsSerie = [];
 for (const r of scheduled) {
-  if (!isMondayOrThursdayUtc(r.date)) {
+  const jour = jourUtc(r.date);
+  const estSerie = slugsDeSerie.has(r.slug);
+
+  if (![LUNDI, MARDI, JEUDI].includes(jour)) {
     errors++;
     console.error(
-      `Pas un lundi/jeudi (UTC) : ${r.slug} → ${r.date} (attendu lun. ou jeu. à partir du ${anchor})`,
+      `Jour interdit : ${r.slug} → ${r.date} (${NOMS_DE_JOUR[jour]}), attendu lundi, mardi ou jeudi.`,
+    );
+    continue;
+  }
+  if (estSerie && jour !== MARDI) {
+    errors++;
+    console.error(
+      `${r.slug} appartient à la série « ${serieDuSlug(r.slug)} » : attendu un mardi, trouvé ${r.date} (${NOMS_DE_JOUR[jour]}).`,
+    );
+    continue;
+  }
+  if (!estSerie && jour === MARDI) {
+    errors++;
+    console.error(
+      `Le mardi est réservé aux séries : ${r.slug} → ${r.date}. Déplace-le un lundi ou un jeudi, ou déclare-le dans src/data/serie-*.ts.`,
+    );
+    continue;
+  }
+  (estSerie ? series : horsSerie).push(r);
+}
+
+// --- 3. Les mardis de série se suivent sans trou --------------------------
+for (let i = 1; i < series.length; i++) {
+  const ecart = semainesEntre(series[i - 1].date, series[i].date);
+  if (ecart !== 1) {
+    errors++;
+    console.error(
+      `Trou dans la file des séries : ${series[i - 1].date} (${series[i - 1].slug}) puis ${series[i].date} (${series[i].slug}), ${ecart} semaine(s) d'écart.`,
     );
   }
 }
 
-const byWeek = new Map();
-for (const r of scheduled) {
-  const w = isoWeekKey(r.date);
-  if (!w) {
-    errors++;
-    continue;
-  }
-  if (!byWeek.has(w)) byWeek.set(w, []);
-  byWeek.get(w).push(r);
+// --- 4. La file hors série : 2 par semaine, rubriques différentes ----------
+const parSemaine = new Map();
+for (const r of horsSerie) {
+  const lundi = lundiDeLaSemaine(r.date);
+  if (!parSemaine.has(lundi)) parSemaine.set(lundi, []);
+  parSemaine.get(lundi).push(r);
 }
 
-const weeks = [...byWeek.keys()].sort();
+const semaines = [...parSemaine.keys()].sort();
+for (let i = 0; i < semaines.length; i++) {
+  const lundi = semaines[i];
+  const liste = parSemaine.get(lundi).sort((a, b) => a.date.localeCompare(b.date));
+  const derniere = i === semaines.length - 1;
 
-for (const w of weeks) {
-  const list = byWeek.get(w).sort((a, b) => a.date.localeCompare(b.date));
-  const n = list.length;
-  if (n !== 2) {
+  if (liste.length > 2) {
     errors++;
-    console.error(`${w} : ${n} billet(s), attendu exactement 2.`);
-    for (const r of list) console.error(`  ${r.date}  ${r.slug}`);
-    continue;
-  }
-  const [a, b] = list;
-  if (a.cat && b.cat && a.cat === b.cat) {
+    console.error(`Semaine du ${lundi} : ${liste.length} billets hors série, maximum 2.`);
+    for (const r of liste) console.error(`  ${r.date}  ${r.slug}`);
+  } else if (liste.length === 1 && !derniere) {
     errors++;
     console.error(
-      `${w} : lundi et jeudi sur la même rubrique « ${a.cat} » — attendu deux rubriques différentes.`,
+      `Semaine du ${lundi} : 1 seul billet hors série (${liste[0].slug}). Seule la dernière semaine de la file a le droit d'être incomplète.`,
     );
-    for (const r of list) console.error(`  ${r.date}  ${r.slug}`);
   }
-}
 
-const seen = new Map();
-for (const r of scheduled) {
-  if (seen.has(r.date)) {
-    errors++;
-    console.error(`Date dupliquée ${r.date} : ${seen.get(r.date)} et ${r.slug}`);
+  if (liste.length === 2) {
+    const [a, b] = liste;
+    if (a.cat && b.cat && a.cat === b.cat) {
+      errors++;
+      console.error(
+        `Semaine du ${lundi} : lundi et jeudi sur la même rubrique « ${a.cat} » — attendu deux rubriques différentes.`,
+      );
+      for (const r of liste) console.error(`  ${r.date}  ${r.slug}`);
+    }
   }
-  seen.set(r.date, r.slug);
+
+  // Pas de semaine sautée tant que la file dure.
+  if (i > 0) {
+    const ecart = semainesEntre(semaines[i - 1], lundi);
+    if (ecart !== 1) {
+      errors++;
+      console.error(
+        `Trou dans la file hors série : semaine du ${semaines[i - 1]} puis du ${lundi}, ${ecart} semaine(s) d'écart.`,
+      );
+    }
+  }
 }
 
 if (errors) {
   console.error(
-    `\n${errors} problème(s). Grille : exactement 2 billets / semaine ISO (lun. + jeu. UTC, rubriques différentes), ancrage ${anchor}.`,
+    `\n${errors} problème(s). Grille : mardi = séries (1/semaine, sans trou), lundi+jeudi = file hors série (2/semaine, rubriques différentes). Ancrage ${anchor}.`,
   );
   console.error(
     `Constantes : RESCHEDULE_FROM=${RESCHEDULE_FROM}, SCHEDULE_GRID_ANCHOR_MONDAY=${anchor}.`,
   );
   console.error(
-    "Réparation : apply-future-publish-schedule.mjs (dates) puis pair-week-themes.mjs (rubriques), --dry-run d’abord.",
+    "Réparation : apply-future-publish-schedule.mjs (dates) puis pair-week-themes.mjs (rubriques), --dry-run d'abord.",
   );
   process.exit(1);
 }
 
+const finSerie = series.length ? series[series.length - 1].date : "—";
+const finFile = horsSerie.length ? horsSerie[horsSerie.length - 1].date : "—";
+console.log(`OK : ${scheduled.length} billet(s) sur la grille (≥ ${anchor}).`);
+console.log(`  mardi   — séries     : ${series.length} billet(s), jusqu'au ${finSerie}`);
 console.log(
-  `OK : ${scheduled.length} billet(s) sur la grille (≥ ${anchor}) : semaines ${weeks[0]} … ${weeks[weeks.length - 1]}, lun/jeu UTC, 2 par semaine.`,
-);
-console.log(
-  `Rappel : replanification auto des dates ≥ ${anchor} via apply-future-publish-schedule.mjs ; billets entre RESCHEDULE_FROM et l’ancrage : manuels.`,
+  `  lun/jeu — hors série : ${horsSerie.length} billet(s) sur ${semaines.length} semaine(s), jusqu'au ${finFile}`,
 );

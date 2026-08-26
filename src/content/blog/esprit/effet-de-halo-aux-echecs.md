@@ -4,7 +4,7 @@ excerpt: >-
   Un coup joué par un 2600 te paraît profond. Le même coup joué par un 1400 te paraît douteux. En 1977,
   Nisbett et Wilson ont montré que non seulement ce mécanisme existe, mais que les gens le nient
   formellement et se trompent même sur le sens de la causalité.
-publishDate: "2027-01-11"
+publishDate: "2026-11-24"
 category: esprit
 featured: false
 featuredRank: 99

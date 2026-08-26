@@ -4,7 +4,7 @@ excerpt: >-
   Aux échecs, le matériel n'est pas le but : c'est un indicateur du but. L'aversion à la perte te fait
   défendre l'indicateur contre l'objectif, et c'est probablement l'un des mécanismes les plus coûteux
   du jeu de club. Y compris pour la théorie économique dont il vient.
-publishDate: "2027-03-01"
+publishDate: "2026-12-29"
 category: science
 featured: false
 featuredRank: 99

@@ -35,7 +35,7 @@ Le site est pensé pour **trois langues** :
 Sans entrer dans le détail (les chapitres suivants le feront), voici ce qui caractérise ce site :
 
 - **Il est « statique ».** Cela veut dire que toutes les pages sont fabriquées **à l'avance**, une fois pour toutes, et stockées comme de simples fichiers. Quand un visiteur arrive, on lui sert une page déjà prête. C'est extrêmement **rapide**, **robuste** (peu de choses peuvent casser) et **sûr** (pas de base de données à pirater). On reviendra longuement là-dessus.
-- **Il publie tout seul.** Les articles sont écrits à l'avance avec une date de publication. Un programme automatique reconstruit le site chaque jour : le jour venu, l'article apparaît. Le rythme visé est **deux articles par semaine** (lundi et jeudi).
+- **Il publie tout seul.** Les articles sont écrits à l'avance avec une date de publication. Un programme automatique reconstruit le site chaque jour : le jour venu, l'article apparaît. Le rythme visé est de **trois articles par semaine** : la file générale le lundi et le jeudi, et la série éditoriale en cours le mardi.
 - **Il est très soigné pour Google et les IA.** Énormément de travail invisible sert à ce que les moteurs de recherche (Google) et les assistants IA (ChatGPT, Claude…) comprennent bien le contenu. C'est ce qu'on appelle le **référencement** ou **SEO**.
 - **Il est rapide.** De nombreuses optimisations ont été faites pour que les pages s'affichent vite, même sur un téléphone avec une connexion lente.
 - **Il s'installe comme une application.** Sur mobile, on peut « l'installer » sur l'écran d'accueil et il fonctionne même partiellement **hors ligne**. C'est ce qu'on appelle une **PWA**.

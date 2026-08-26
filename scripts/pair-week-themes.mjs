@@ -2,18 +2,22 @@
  * Garantit qu'une même semaine ne publie jamais deux fois la même rubrique
  * (lundi ≠ jeudi), en déplaçant le MOINS d'articles possible.
  *
+ * PÉRIMÈTRE : la file hors série uniquement, celle des lundis et des jeudis.
+ * Les articles de série occupent le mardi, seuls, dans un ordre imposé par la
+ * série elle-même : aucune collision de rubrique n'y est possible et aucune
+ * permutation n'y est souhaitable. Ils sont donc exclus d'office.
+ *
  * Différence avec interleave-future-themes.mjs : celui-là réoptimise globalement
  * l'étalement des rubriques sur toute la timeline (méthode des positions
  * fractionnaires) et bouscule donc l'ordre éditorial. Ici on part de l'ordre
- * chronologique en place — qui encode l'ordre de priorité voulu (vagues de la
- * série Psychologie, file historique) — et on ne fait que les permutations
- * strictement nécessaires pour casser les collisions de rubrique.
+ * chronologique en place — qui encode l'ordre de priorité voulu — et on ne fait
+ * que les permutations strictement nécessaires pour casser les collisions.
  *
  * Sécurité :
  *  - opère sur le même périmètre que la grille (publishDate >= SCHEDULE_GRID_ANCHOR_MONDAY),
  *    jamais sur un article déjà publié (garde-fou supplémentaire : > aujourd'hui) ;
  *  - réutilise EXACTEMENT les dates déjà en place : seul le mapping article → date change ;
- *  - PINNED_LAST reste sur le tout dernier créneau (article de clôture de série).
+ *  - PINNED_LAST reste sur le tout dernier créneau de la file traitée.
  *
  * Usage : node scripts/pair-week-themes.mjs --dry-run
  *         node scripts/pair-week-themes.mjs
@@ -23,6 +27,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { SCHEDULE_GRID_ANCHOR_MONDAY } from "./publish-schedule-constants.mjs";
+import { ensembleDesSlugsDeSerie } from "./series-slugs.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dryRun = process.argv.includes("--dry-run");
@@ -32,9 +37,14 @@ const today = new Date().toISOString().slice(0, 10);
 /** Première date réordonnançable (incluse) : le début de grille, jamais le passé. */
 const FROM = SCHEDULE_GRID_ANCHOR_MONDAY > today ? SCHEDULE_GRID_ANCHOR_MONDAY : today;
 
-/** Articles épinglés sur le dernier créneau de la grille (dans cet ordre).
- * Le hub de la série Psychologie doit fermer la série : il référence les 40 autres. */
-const PINNED_LAST = ["pourquoi-ton-cerveau-prefere-avoir-raison"];
+const SLUGS_DE_SERIE = ensembleDesSlugsDeSerie();
+
+/** Articles épinglés sur le dernier créneau de la file hors série (dans cet ordre).
+ * Vide aujourd'hui : le seul épinglage qui existait, le hub de la série
+ * Psychologie, est passé au mardi avec le reste de sa série. Son rang de
+ * clôture est désormais garanti par l'ordre chronologique que
+ * apply-future-publish-schedule.mjs préserve, et non plus par ce script. */
+const PINNED_LAST = [];
 
 function parsePub(raw) {
   const m = raw.match(/^publishDate:\s*["']?(\d{4}-\d{2}-\d{2})["']?/m);
@@ -74,6 +84,8 @@ for (const full of walk(blogDir)) {
   const cat = parseCat(raw);
   if (!date) continue;
   if (date < FROM || date <= today) continue;
+  // Le mardi appartient aux séries : hors périmètre de ce script.
+  if (SLUGS_DE_SERIE.has(path.basename(full, ".md"))) continue;
   if (!cat) {
     console.error("category manquante :", path.relative(blogDir, full));
     process.exit(1);

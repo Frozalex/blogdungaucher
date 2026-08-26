@@ -4,7 +4,7 @@ excerpt: >-
   La projection défensive de Freud tient mal. Mais un cousin beaucoup mieux établi existe : nous
   surestimons systématiquement à quel point les autres pensent comme nous. Aux échecs, ce mécanisme
   produit une catégorie d'erreurs bien identifiable, et elle coûte cher.
-publishDate: "2027-04-22"
+publishDate: "2027-03-30"
 category: esprit
 featured: false
 featuredRank: 99

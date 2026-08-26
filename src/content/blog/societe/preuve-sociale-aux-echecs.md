@@ -4,7 +4,7 @@ excerpt: >-
   Partout ailleurs, quand on t'annonce que tout le monde fait ainsi, tu dois croire sur parole. Devant
   une base de données d'échecs, la popularité d'un coup et son taux de réussite sont affichés côte à
   côte. Ils ne disent pas la même chose, et presque personne ne regarde le second.
-publishDate: "2027-05-13"
+publishDate: "2027-05-11"
 category: societe
 featured: false
 featuredRank: 99

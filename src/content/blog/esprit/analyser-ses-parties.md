@@ -3,7 +3,7 @@ title: "Analyser ses parties d'échecs : le guide pratique pour progresser vraim
 excerpt: >-
   Jouer beaucoup de parties sans les analyser, c'est s'entraîner à répéter ses erreurs. L'analyse post-partie est la
   tâche la plus rentable pour progresser aux échecs, et la plus mal faite. Méthode, outils, pièges à éviter.
-publishDate: "2026-11-30"
+publishDate: "2026-11-02"
 category: esprit
 featured: false
 featuredRank: 99

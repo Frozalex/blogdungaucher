@@ -1,7 +1,7 @@
 ---
 title: "Échecs vs Go : quel jeu demande le plus d'intelligence ?"
 excerpt: "Les fans de Go disent que leur jeu est infiniment plus complexe. Les fans d'échecs répondent que c'est différent, pas inférieur. Que disent vraiment les chiffres, la cognition et les IA ?"
-publishDate: "2027-02-08"
+publishDate: "2026-12-17"
 category: "science"
 featured: false
 featuredRank: 99

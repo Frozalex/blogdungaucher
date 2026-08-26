@@ -4,7 +4,7 @@ excerpt: >-
   Tversky et Kahneman ont montré qu'un nombre tiré au hasard, devant les participants, déplaçait
   massivement leurs estimations. L'ère des moteurs a industrialisé ce mécanisme : le chiffre arrive
   désormais avant ton jugement, et il est juste, ce qui le rend bien plus contaminant.
-publishDate: "2027-03-11"
+publishDate: "2027-01-05"
 category: esprit
 featured: false
 featuredRank: 99

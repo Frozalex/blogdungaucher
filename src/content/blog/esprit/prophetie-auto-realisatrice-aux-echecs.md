@@ -4,7 +4,7 @@ excerpt: >-
   L'effet Pygmalion est bien plus faible qu'on ne le raconte : d = 0,11 sur dix-huit expériences. Mais
   la méta-analyse a identifié une condition où il opère fortement, et cette condition décrit exactement
   la relation que tu entretiens avec tes propres faiblesses.
-publishDate: "2027-03-25"
+publishDate: "2027-02-02"
 category: esprit
 featured: false
 featuredRank: 99

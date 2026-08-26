@@ -1,7 +1,7 @@
 ---
 title: "Décision sous incertitude aux échecs : choisir sans connaître toutes les variantes"
 excerpt: "Aucune partie d'échecs n'est jouée avec une information complète. Tu décides toujours sans calculer jusqu'au bout, sans savoir ce que l'adversaire va répondre, sans certitude sur ton évaluation. La théorie de la décision sous incertitude a un siècle d'outils pour ce moment précis. Voici ceux qui s'appliquent à l'échiquier."
-publishDate: "2026-12-03"
+publishDate: "2026-11-05"
 category: "science"
 featured: false
 featuredRank: 99

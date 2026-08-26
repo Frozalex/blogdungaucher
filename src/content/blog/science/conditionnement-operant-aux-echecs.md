@@ -4,7 +4,7 @@ excerpt: >-
   Skinner a montré que la récompense imprévisible produit le comportement le plus intense et le plus
   difficile à éteindre. Le blitz en ligne applique exactement ce programme. Le problème n'est pas qu'il
   te fasse jouer trop : c'est qu'il renforce le fait de gagner, pas le fait de bien jouer.
-publishDate: "2027-03-22"
+publishDate: "2027-01-26"
 category: science
 featured: false
 featuredRank: 99

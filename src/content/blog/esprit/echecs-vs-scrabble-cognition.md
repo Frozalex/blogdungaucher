@@ -1,7 +1,7 @@
 ---
 title: "Échecs vs Scrabble : deux types d'esprits, deux types de mémoire"
 excerpt: "Scrabble et échecs sont souvent présentés comme des jeux de l'intelligence pure. Mais les profils cognitifs qu'ils développent sont très différents, voire opposés. Exploration."
-publishDate: "2027-03-04"
+publishDate: "2026-12-31"
 category: "esprit"
 featured: false
 featuredRank: 99

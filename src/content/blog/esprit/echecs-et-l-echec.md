@@ -4,7 +4,7 @@ excerpt: >-
   Les adultes évitent systématiquement les situations où ils vont perdre face à quelqu'un. Les joueurs d'échecs font
   l'inverse. Ce n'est pas naturel, ça s'apprend, et l'idée que les échecs 'apprennent à perdre' mérite d'être examinée
   sérieusement : pas célébrée naïvement.
-publishDate: "2027-01-04"
+publishDate: "2026-11-23"
 category: esprit
 featured: false
 featuredRank: 99

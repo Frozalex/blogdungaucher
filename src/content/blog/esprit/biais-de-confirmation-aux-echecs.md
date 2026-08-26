@@ -4,7 +4,7 @@ excerpt: >-
   Huit minutes sur une combinaison, et il joue une défense que tu n'avais même pas regardée. Ce n'est
   pas un manque de temps. Une étude menée sur des joueurs d'échecs montre que les maîtres cherchent à
   réfuter leur propre plan, et que les novices cherchent à le confirmer.
-publishDate: "2026-11-23"
+publishDate: "2026-10-20"
 category: esprit
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   Poser un piège suppose de se représenter ce que l'adversaire croit, et de savoir que cette croyance
   est fausse. C'est exactement la compétence que les psychologues testent chez l'enfant de quatre ans.
   C'est aussi la seule chose que les moteurs ne savent pas faire.
-publishDate: "2027-04-19"
+publishDate: "2027-03-23"
 category: science
 featured: false
 featuredRank: 99

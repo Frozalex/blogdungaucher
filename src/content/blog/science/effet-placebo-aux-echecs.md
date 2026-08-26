@@ -4,7 +4,7 @@ excerpt: >-
   Croire qu'on a pris de la caféine augmente réellement la puissance d'un cycliste de 3,1 %. Mais la
   recherche montre que le placebo agit très bien sur l'effort et la douleur, et très mal sur la
   performance cognitive objective. Les échecs sont exactement le mauvais terrain.
-publishDate: "2026-10-29"
+publishDate: "2026-10-06"
 category: science
 featured: false
 featuredRank: 99

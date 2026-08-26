@@ -5,7 +5,7 @@ excerpt: >-
   l'inverse, et attaque en priorité l'hippocampe et le cortex préfrontal, c'est-à-dire les deux
   structures dont tu as le plus besoin. Ce n'est pas une différence d'intensité, c'est un régime
   différent.
-publishDate: "2027-04-12"
+publishDate: "2027-03-09"
 category: science
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   Un souvenir n'est pas relu, il est refabriqué. Et depuis 2000, on sait que le simple fait de se
   souvenir rend le souvenir modifiable avant qu'il ne soit rangé de nouveau. Ce qui signifie que
   l'histoire que tu racontes sur ton propre jeu s'éloigne un peu plus de la réalité à chaque récit.
-publishDate: "2027-04-26"
+publishDate: "2027-04-06"
 category: science
 featured: false
 featuredRank: 99

@@ -1,5 +1,5 @@
 /**
- * Série « Psychologie appliquée aux échecs » : 41 articles publiés d'août 2026 à juillet 2027.
+ * Série « Psychologie appliquée aux échecs » : 41 articles, un par mardi, d'août 2026 à mai 2027.
  *
  * Les articles sont regroupés en 10 grappes thématiques. Chaque grappe possède un pilier
  * (article long qui indexe ses déclinaisons) et le hub `pourquoi-ton-cerveau-prefere-avoir-raison`

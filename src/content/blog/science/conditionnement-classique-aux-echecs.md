@@ -4,7 +4,7 @@ excerpt: >-
   Tu sais que cette structure est jouable. Tu l'as vérifiée au moteur. Et pourtant, dès qu'elle
   apparaît, quelque chose se serre. Savoir n'annule pas un réflexe conditionné, et c'est exactement ce
   qui rend ce mécanisme si résistant à l'analyse.
-publishDate: "2027-03-29"
+publishDate: "2027-02-09"
 category: science
 featured: false
 featuredRank: 99

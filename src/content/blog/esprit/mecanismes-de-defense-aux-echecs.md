@@ -4,7 +4,7 @@ excerpt: >-
   Cinq joueurs perdent la même partie. Le premier casse une pièce, le deuxième accuse la pendule, le
   troisième explique longuement la théorie, le quatrième en rit, le cinquième note ce qu'il a raté.
   Ce sont cinq défenses, et la psychiatrie les a classées par ordre de maturité.
-publishDate: "2026-10-05"
+publishDate: "2026-09-22"
 category: esprit
 featured: false
 featuredRank: 99

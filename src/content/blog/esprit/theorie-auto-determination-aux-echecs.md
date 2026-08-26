@@ -4,7 +4,7 @@ excerpt: >-
   Deci et Ryan ont identifié trois besoins dont la satisfaction conditionne la motivation durable.
   Les échecs en ligne en couvrent deux remarquablement bien et manquent complètement le troisième.
   C'est probablement ce qui explique la forme des abandons.
-publishDate: "2027-05-10"
+publishDate: "2027-05-04"
 category: esprit
 featured: false
 featuredRank: 99

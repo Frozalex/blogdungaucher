@@ -4,7 +4,7 @@ excerpt: >-
   Festinger a proposé en 1954 que faute de critère objectif, nous nous évaluons en nous comparant aux
   autres. Les échecs ont fait quelque chose qu'aucun autre loisir n'a fait : ils ont supprimé le besoin
   de comparaison en fournissant le résultat de la comparaison, en permanence, à quatre chiffres.
-publishDate: "2027-04-01"
+publishDate: "2027-02-16"
 category: esprit
 featured: false
 featuredRank: 99

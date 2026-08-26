@@ -1,9 +1,19 @@
 /**
- * Replanifie les publishDate sur la grille 2 / semaine (lundi + jeudi UTC),
- * pour tout billet avec publishDate >= SCHEDULE_GRID_ANCHOR_MONDAY.
+ * Replanifie les publishDate sur la grille, pour tout billet avec
+ * publishDate >= SCHEDULE_GRID_ANCHOR_MONDAY.
  *
- * Les billets avec publishDate < SCHEDULE_GRID_ANCHOR_MONDAY ne sont pas modifiés
- * (coussin calendaire ou passé figé, ex. un jeudi entre RESCHEDULE_FROM et le lundi d’ancrage).
+ * Deux files, remplies indépendamment à partir du même lundi d'ancrage :
+ *   - les articles de SÉRIE prennent les mardis consécutifs ;
+ *   - les autres prennent les lundis et jeudis, deux par semaine.
+ *
+ * L'ORDRE de chaque file est celui des publishDate actuelles : c'est lui qui
+ * encode les décisions éditoriales déjà prises (priorité de trafic pour la
+ * série Psychologie, alternance de rubriques pour la file historique). Le
+ * script ne réordonne rien, il ne fait que reposer les dates sur la nouvelle
+ * grille.
+ *
+ * Les billets avec publishDate < SCHEDULE_GRID_ANCHOR_MONDAY ne sont pas
+ * modifiés (coussin calendaire ou passé figé).
  *
  * Usage : node scripts/apply-future-publish-schedule.mjs
  *         node scripts/apply-future-publish-schedule.mjs --dry-run
@@ -16,6 +26,7 @@ import {
   RESCHEDULE_FROM,
   SCHEDULE_GRID_ANCHOR_MONDAY,
 } from "./publish-schedule-constants.mjs";
+import { ensembleDesSlugsDeSerie } from "./series-slugs.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dryRun = process.argv.includes("--dry-run");
@@ -23,8 +34,12 @@ const dryRun = process.argv.includes("--dry-run");
 const blogDir = path.join(__dirname, "..", "src", "content", "blog");
 const ANCHOR = SCHEDULE_GRID_ANCHOR_MONDAY;
 
+/** Décalage en jours depuis le lundi de la semaine. */
+const MARDI = 1;
+const JEUDI = 3;
+
 /** Liste récursive des .md : les articles vivent en sous-dossiers (esprit/, science/,
- * societe/, grand-oral/). Une lecture à plat ne voit AUCUN fichier. Renvoie des chemins complets. */
+ * societe/, grand-oral/). Une lecture à plat ne voit AUCUN fichier. */
 function walk(d) {
   const out = [];
   for (const e of fs.readdirSync(d, { withFileTypes: true })) {
@@ -47,7 +62,7 @@ function toIsoDateUTC(d) {
   return `${y}-${mo}-${da}`;
 }
 
-/** Premier lundi (UTC) strictement après la date ISO donnée (jour J + 1 → …). */
+/** Premier lundi (UTC) strictement après la date ISO donnée. */
 function nextMondayStrictlyAfter(isoDateStr) {
   const d = new Date(`${isoDateStr}T12:00:00Z`);
   d.setUTCDate(d.getUTCDate() + 1);
@@ -91,6 +106,7 @@ if (startMonday !== SCHEDULE_GRID_ANCHOR_MONDAY) {
   );
 }
 
+const slugsDeSerie = ensembleDesSlugsDeSerie();
 const future = [];
 for (const full of files) {
   const raw = fs.readFileSync(full, "utf8");
@@ -100,37 +116,53 @@ for (const full of files) {
     process.exit(1);
   }
   if (pd >= ANCHOR) {
-    future.push({ file: full, slug: path.basename(full, ".md"), old: pd, raw });
+    future.push({
+      file: full,
+      slug: path.basename(full, ".md"),
+      old: pd,
+      raw,
+      serie: slugsDeSerie.has(path.basename(full, ".md")),
+    });
   }
 }
 
-future.sort((a, b) => {
-  if (a.old !== b.old) return a.old.localeCompare(b.old);
-  return a.slug.localeCompare(b.slug);
-});
+future.sort((a, b) => a.old.localeCompare(b.old) || a.slug.localeCompare(b.slug));
 
-if (future.length % 2 !== 0) {
-  console.error(
-    `Nombre impair de billets sur la grille (publishDate >= ${ANCHOR}) : ${future.length}.`,
-    "Ajoute un billet, ou place un billet sous l’ancrage (publishDate <",
-    `${ANCHOR}) pour que le total sur la grille soit pair.`,
-  );
-  process.exit(1);
+const series = future.filter((r) => r.serie);
+const horsSerie = future.filter((r) => !r.serie);
+
+// Les séries prennent un mardi chacune, à la suite.
+const assignments = series.map((row, i) => ({
+  ...row,
+  next: mondayPlusDays(startMonday, i, MARDI),
+}));
+
+// La file historique prend lundi puis jeudi, deux par semaine. Un stock impair
+// laisse la dernière semaine avec le seul lundi, ce que le contrôleur autorise.
+for (const [i, row] of horsSerie.entries()) {
+  const semaine = Math.floor(i / 2);
+  const jour = i % 2 === 0 ? 0 : JEUDI;
+  assignments.push({ ...row, next: mondayPlusDays(startMonday, semaine, jour) });
 }
 
-const assignments = future.map((row, i) => {
-  const week = Math.floor(i / 2);
-  const slot = i % 2;
-  const add = slot === 0 ? 0 : 3;
-  const next = mondayPlusDays(startMonday, week, add);
-  return { ...row, next };
-});
+assignments.sort((a, b) => a.next.localeCompare(b.next) || a.slug.localeCompare(b.slug));
 
 console.log(
-  `Replanification : ${assignments.length} billet(s), publishDate >= ${ANCHOR}, grille à partir du lundi ${startMonday} (lun/jeu).`,
+  `Replanification à partir du lundi ${startMonday} (publishDate >= ${ANCHOR}) :`,
 );
+console.log(
+  `  ${series.length} article(s) de série sur les mardis, ${horsSerie.length} hors série sur les lundis/jeudis.`,
+);
+if (horsSerie.length % 2 !== 0) {
+  console.log(
+    `  Stock hors série impair : la dernière semaine n'aura qu'un lundi, sans jeudi.`,
+  );
+}
+console.log();
+
 for (const a of assignments) {
-  console.log(`${a.old} → ${a.next}  ${a.slug}`);
+  const marque = a.serie ? "série " : "      ";
+  console.log(`${a.old} → ${a.next}  ${marque}${a.slug}`);
 }
 
 if (dryRun) {
@@ -138,8 +170,9 @@ if (dryRun) {
   process.exit(0);
 }
 
+let modifies = 0;
 for (const a of assignments) {
-  // Date inchangée : le remplacement serait un no-op, indiscernable d’un échec de regex.
+  // Date inchangée : le remplacement serait un no-op, indiscernable d'un échec de regex.
   if (a.next === a.old) continue;
   const nextRaw = a.raw.replace(
     /^publishDate:\s*["'][^"']+["']/m,
@@ -150,6 +183,7 @@ for (const a of assignments) {
     process.exit(1);
   }
   fs.writeFileSync(a.file, nextRaw, "utf8");
+  modifies++;
 }
 
-console.log("\nFichiers mis à jour.");
+console.log(`\n${modifies} fichier(s) mis à jour.`);

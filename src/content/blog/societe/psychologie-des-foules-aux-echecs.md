@@ -4,7 +4,7 @@ excerpt: >-
   Le Bon a écrit que la foule dissout l'individu. Un siècle de recherche a montré l'inverse : elle
   substitue une identité à une autre. Et les échecs offrent le cas le plus étrange qui soit, une foule
   organisée pour supprimer tout ce qui fait une foule, et qui agit quand même sur toi.
-publishDate: "2027-04-05"
+publishDate: "2027-02-23"
 category: societe
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   Les échecs ont produit des champions nés dans la pauvreté extrême, des Grands Maîtres sortis de quartiers défavorisés,
   des programmes de rue qui utilisent le jeu comme levier d'émancipation. Et pourtant, les inégalités d'accès sont
   réelles. Portrait d'un jeu qui promet l'égalité et peine à la tenir.
-publishDate: "2026-12-17"
+publishDate: "2026-11-12"
 category: societe
 featured: false
 featuredRank: 99

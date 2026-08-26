@@ -118,7 +118,7 @@ Les articles ont un champ `publishDate` dans leur frontmatter. Un article dont l
 
 Ce workflow se déclenche sur **pull request ou push** dès que des fichiers d'articles ou de scripts de calendrier sont modifiés.
 
-**Ce qu'il fait :** il lance simplement `node scripts/check-publish-weekly.mjs`, le script qui vérifie que tous les articles futurs respectent la grille lundi/jeudi (voir [chapitre 10](10-publication-planning.md)). Si la grille est cassée, le workflow **échoue** et bloque le merge. C'est un filet de sécurité : on ne peut pas accidentellement créer un trou ou un doublon dans le calendrier.
+**Ce qu'il fait :** il lance simplement `node scripts/check-publish-weekly.mjs`, le script qui vérifie que tous les articles futurs respectent la grille (séries le mardi, file générale le lundi et le jeudi, voir [chapitre 10](10-publication-planning.md)). Si la grille est cassée, le workflow **échoue** et bloque le merge. C'est un filet de sécurité : on ne peut pas accidentellement créer un trou ou un doublon dans le calendrier.
 
 ---
 

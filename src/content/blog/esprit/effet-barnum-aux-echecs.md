@@ -4,7 +4,7 @@ excerpt: >-
   En 1949, Forer a distribué à 39 étudiants un profil de personnalité tiré d'un livre d'astrologie de
   gare. Le même pour tous. Ils l'ont noté 4,26 sur 5. Les descriptions de style de jeu fonctionnent
   exactement pareil, à ceci près qu'aux échecs, on peut vérifier.
-publishDate: "2027-02-25"
+publishDate: "2026-12-22"
 category: esprit
 featured: false
 featuredRank: 99

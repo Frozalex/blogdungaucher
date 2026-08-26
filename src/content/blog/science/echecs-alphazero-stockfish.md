@@ -4,7 +4,7 @@ excerpt: >-
   En décembre 2017, DeepMind publiait les résultats d'un match qui a changé la façon dont on pense à la fois à
   l'intelligence artificielle et aux échecs. AlphaZero, entraîné sans données humaines, battait Stockfish avec un style
   de jeu que personne n'avait anticipé.
-publishDate: "2026-10-15"
+publishDate: "2026-10-01"
 category: science
 featured: false
 featuredRank: 99

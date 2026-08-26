@@ -4,7 +4,7 @@ excerpt: >-
   Dans une expérience de 2005, on a échangé en douce la photo choisie par les participants. Seuls 13 %
   l'ont remarqué. Les autres ont expliqué avec conviction pourquoi ils avaient préféré un visage qu'ils
   avaient en réalité écarté. Ta raison de jouer ce coup vient peut-être du même atelier.
-publishDate: "2027-05-03"
+publishDate: "2027-04-20"
 category: esprit
 featured: false
 featuredRank: 99

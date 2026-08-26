@@ -4,7 +4,7 @@ excerpt: >-
   L'échiquier a envahi le cinéma, la littérature, la musique et les séries. Pas comme décor, comme métaphore vivante.
   Retour sur la présence des échecs dans la culture populaire, ce qu'elle dit de notre rapport au jeu, à l'intelligence
   et au pouvoir.
-publishDate: "2026-09-10"
+publishDate: "2026-09-07"
 category: societe
 featured: false
 featuredRank: 99

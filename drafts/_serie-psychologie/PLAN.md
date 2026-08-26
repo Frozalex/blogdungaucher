@@ -16,10 +16,13 @@ si complète et si structurée que toute reprise ultérieure ressemble à du pla
 - **Maillage des piliers** : un pilier publié avant ses spokes les annonce en clair comme
   « à venir », sans lien actif. Les liens sont ajoutés à la publication de chaque spoke.
   Zéro lien mort à aucun moment.
-- **Cadence** : la série est **fusionnée dans la grille lundi/jeudi** du blog (révisé le
-  2026-08-19 ; les créneaux mardi dédiés sont abandonnés). Le blog reste à 2 articles/semaine,
-  la série s'intercale avec la file historique. Du **2026-08-18** au **2027-05-20**.
-  Calendrier complet en §7bis.
+- **Cadence** : **un article par mardi**, créneau réservé aux séries (révisé le 2026-08-26 ;
+  la fusion dans la grille lundi/jeudi décidée le 2026-08-19 est annulée). La file historique
+  garde le lundi et le jeudi, ce qui porte le blog à 3 articles/semaine tant qu'elle tient.
+  Du **2026-08-18** au **2027-05-25**. La série « Moteur en Python » prend le relais du mardi
+  à partir du 2027-06-01. Règle et outillage : `docs/10-publication-planning.md`.
+  Le §7bis ci-dessous décrit l'ancien calendrier lundi/jeudi et n'est plus à jour ; les dates
+  qui font foi sont les `publishDate` des fichiers, posées par `apply:publish-schedule`.
 - **Visuels non bloquants** : ni la vignette Midjourney ni le schéma SVG ne retiennent la
   publication. Rattrapage en lot ensuite.
 - **Sourcing** : vérification web systématique de chaque étude citée (auteurs, année,

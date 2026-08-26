@@ -20,9 +20,12 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { ensembleDesSlugsDeSerie } from "./series-slugs.mjs";
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dryRun = process.argv.includes("--dry-run");
 const blogDir = path.join(__dirname, "..", "src", "content", "blog");
+const SLUGS_DE_SERIE = ensembleDesSlugsDeSerie();
 
 const CUTOFF = process.env.CUTOFF || new Date().toISOString().slice(0, 10);
 /** Ordre de cycle pour départager les ex æquo de position (déterminisme). */
@@ -53,6 +56,9 @@ for (const full of walk(blogDir)) {
   const date = parsePub(raw);
   const cat = parseCat(raw);
   if (!date || !cat) continue;
+  // Le mardi appartient aux séries, dans un ordre imposé : les mélanger aux
+  // créneaux lundi/jeudi casserait à la fois la grille et la lecture des séries.
+  if (SLUGS_DE_SERIE.has(path.basename(full, ".md"))) continue;
   if (date > CUTOFF) future.push({ full, slug: path.basename(full, ".md"), date, cat, raw });
 }
 

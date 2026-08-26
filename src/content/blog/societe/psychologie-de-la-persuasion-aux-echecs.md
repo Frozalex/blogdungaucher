@@ -4,7 +4,7 @@ excerpt: >-
   Les échecs sont probablement l'unique marché du développement personnel où la promesse est
   vérifiable. Ton classement dans six mois dira si le cours valait son prix. Presque personne
   n'utilise ce pouvoir, et l'industrie s'appuie sur sept leviers pour que ça continue.
-publishDate: "2026-12-10"
+publishDate: "2026-11-03"
 category: societe
 featured: false
 featuredRank: 99

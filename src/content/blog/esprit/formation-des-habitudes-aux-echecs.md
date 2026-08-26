@@ -4,7 +4,7 @@ excerpt: >-
   Tu as déjà formé une habitude parfaite aux échecs : cliquer sur « nouvelle partie ». Contexte stable,
   récompense immédiate, zéro effort de volonté. Ton plan d'entraînement, lui, n'a aucune de ces
   propriétés. Ce n'est pas un problème de discipline, c'est un problème de conception.
-publishDate: "2026-12-07"
+publishDate: "2026-10-27"
 category: esprit
 featured: false
 featuredRank: 99

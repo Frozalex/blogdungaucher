@@ -4,7 +4,7 @@ excerpt: >-
   L'expérimentateur de Milgram disposait de quatre phrases pour te faire continuer. Le moteur d'analyse
   n'en a qu'une : un nombre. C'est la première autorité de l'histoire qui soit à la fois presque
   infaillible et structurellement incapable de se justifier. Et tu lui obéis tous les jours.
-publishDate: "2026-12-24"
+publishDate: "2026-11-17"
 category: societe
 featured: false
 featuredRank: 99

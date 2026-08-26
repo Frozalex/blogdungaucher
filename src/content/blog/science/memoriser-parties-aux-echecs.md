@@ -1,7 +1,7 @@
 ---
 title: "Mémoriser des parties aux échecs : est-ce vraiment utile ?"
 excerpt: "Tous les manuels recommandent d'étudier les parties des grands maîtres. Mais que reste-t-il dans ta mémoire 6 mois plus tard ? La recherche cognitive donne une réponse nuancée."
-publishDate: "2027-01-28"
+publishDate: "2026-12-10"
 category: "science"
 featured: false
 featuredRank: 99

@@ -4,7 +4,7 @@ excerpt: >-
   Les échecs sont l'une des rares compétitions où l'adulte ne peut pas regarder. L'enfant entre seul,
   joue seul, perd seul, et ressort vers un visage qui n'a rien vu. Ce que la théorie de l'attachement
   dit de ce moment explique beaucoup d'abandons.
-publishDate: "2026-10-19"
+publishDate: "2026-09-29"
 category: esprit
 featured: false
 featuredRank: 99

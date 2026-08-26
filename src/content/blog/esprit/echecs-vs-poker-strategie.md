@@ -1,7 +1,7 @@
 ---
 title: "Échecs vs poker : stratégie sous information complète ou incomplète"
 excerpt: "Les deux jeux exigent de la stratégie, de la psychologie et de la gestion du risque. Mais l'un se joue sous information parfaite, l'autre dans le brouillard. Ce que ça change, fondamentalement."
-publishDate: "2027-02-18"
+publishDate: "2026-12-24"
 category: "esprit"
 featured: false
 featuredRank: 99

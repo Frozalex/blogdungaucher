@@ -4,7 +4,7 @@ excerpt: >-
   L'analyse d'après-partie réunit toutes les conditions identifiées par Elizabeth Loftus pour implanter
   un souvenir : une suggestion plausible, une source crédible, une répétition, et un sujet qui a envie
   d'y croire. Les joueurs d'échecs s'y soumettent après chaque partie.
-publishDate: "2027-01-21"
+publishDate: "2026-12-01"
 category: science
 featured: false
 featuredRank: 99

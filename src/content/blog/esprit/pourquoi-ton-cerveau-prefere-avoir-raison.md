@@ -4,7 +4,7 @@ excerpt: >-
   Au terme de quarante articles sur la psychologie appliquée aux échecs, une chaîne se dessine : six
   mécanismes qui s'enclenchent dans un ordre précis, avant, pendant et après chaque partie. Et une
   seule défense revient partout, sans qu'on l'ait cherchée.
-publishDate: "2027-05-20"
+publishDate: "2027-05-25"
 category: esprit
 featured: true
 featuredRank: 2

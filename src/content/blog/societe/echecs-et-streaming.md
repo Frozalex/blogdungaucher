@@ -4,7 +4,7 @@ excerpt: >-
   En 2012, Twitch n'existait pas. En 2024, Hikaru Nakamura est l'un des streamers de jeu les plus suivis au monde, Grand
   Maître d'échecs. Entre les deux, une révolution culturelle et économique qui a transformé un jeu millénaire en contenu
   viral.
-publishDate: "2026-09-24"
+publishDate: "2026-09-17"
 category: societe
 featured: false
 featuredRank: 99

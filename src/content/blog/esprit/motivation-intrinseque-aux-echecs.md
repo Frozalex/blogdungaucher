@@ -4,7 +4,7 @@ excerpt: >-
   L'expérience de 1973 sur la récompense qui détruit l'intérêt contient une condition que les résumés
   populaires suppriment systématiquement : les enfants avaient été sélectionnés parce qu'ils aimaient
   déjà l'activité. Cette précision décide entièrement de ce que le Elo te fait.
-publishDate: "2027-04-15"
+publishDate: "2027-03-16"
 category: esprit
 featured: false
 featuredRank: 99

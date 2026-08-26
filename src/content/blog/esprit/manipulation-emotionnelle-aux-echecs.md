@@ -4,7 +4,7 @@ excerpt: >-
   Une proposition de nulle au bon moment, un coup joué en deux secondes, un soupir. Aucun de ces gestes
   ne touche à la position. Tous visent la ressource qui te sert à la calculer. Inventaire de ce qui
   s'exerce pendant la partie, et de ce qui n'est qu'une légende.
-publishDate: "2026-11-09"
+publishDate: "2026-10-13"
 category: esprit
 featured: false
 featuredRank: 99

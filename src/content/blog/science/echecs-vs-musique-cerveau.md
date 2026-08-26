@@ -1,7 +1,7 @@
 ---
 title: "Échecs vs musique : deux écoles de la concentration"
 excerpt: "On dit que la musique développe le cerveau comme rien d'autre. Et les échecs ? Comparaison des effets neurologiques d'une pratique régulière dans les deux disciplines."
-publishDate: "2027-03-08"
+publishDate: "2027-01-04"
 category: "science"
 featured: false
 featuredRank: 99

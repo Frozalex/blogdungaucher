@@ -1,7 +1,7 @@
 ---
 title: "Échecs vs mathématiques : un même langage logique ?"
 excerpt: "On dit souvent que les bons joueurs d'échecs ont la bosse des maths. Vrai, faux ? Comparaison des structures cognitives sollicitées par les deux disciplines."
-publishDate: "2027-02-22"
+publishDate: "2026-12-28"
 category: "science"
 featured: false
 featuredRank: 99
