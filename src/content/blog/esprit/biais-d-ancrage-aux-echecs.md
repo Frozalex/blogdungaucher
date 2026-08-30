@@ -82,7 +82,7 @@ Il faut le signaler, parce que cette série a passé beaucoup de temps à démon
 
 L'ancrage n'est pas de ceux-là. Il figure parmi les effets testés par le projet Many Labs, qui a rejoué des résultats célèbres sur des dizaines d'échantillons dans plusieurs pays. L'ancrage a été **répliqué solidement**, avec des effets parfois supérieurs à ceux de l'étude d'origine.
 
-Autrement dit : quand cet article te dit que le chiffre du moteur déplace ton jugement, ce n'est pas une extrapolation à partir d'un résultat fragile. C'est l'un des phénomènes les mieux établis de la psychologie de la décision.
+Autrement dit : quand cet article te dit que le chiffre du moteur déplace ton jugement, ce n'est pas une extrapolation à partir d'un résultat fragile. C'est l'un des phénomènes les mieux établis de la psychologie de la décision. Le cerveau ne traite pas un nombre comme une simple donnée neutre : dès qu'il entre dans le champ de la perception, il devient un repère à partir duquel tout le reste se calcule, un mécanisme proche du biais d'attention qui capte le regard sur ce qui est immédiatement visible plutôt que sur ce qui compte.
 
 ## Ce qui distingue l'ancrage de la simple déférence
 

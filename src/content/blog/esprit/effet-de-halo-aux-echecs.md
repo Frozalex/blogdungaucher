@@ -61,7 +61,9 @@ Si tu vois écrit 2 480 à côté de son nom, tu vas passer six minutes à compr
 
 Si tu vois écrit 1 380, tu vas passer quarante secondes à chercher comment le punir.
 
-C'est la même tour, sur la même case, dans la même position. Ce qui a changé, c'est un nombre affiché à côté d'un nom.
+C'est la même tour, sur la même case, dans la même position. Ce qui a changé, c'est un nombre affiché à côté d'un nom. C'est exactement la définition d'un biais cognitif : une déformation systématique du jugement, produite non pas par la situation elle-même mais par une information annexe qui n'a aucun rapport logique avec elle.
+
+Ce mécanisme porte un nom précis en psychologie sociale : l'effet de halo. Il ne s'agit pas d'une simple première impression qui s'efface avec le temps. C'est une impression globale, positive ou négative, qui contamine ensuite chaque jugement particulier porté sur la même personne, y compris quand ces jugements portent sur des éléments totalement indépendants de ce qui a formé l'impression de départ.
 
 ## Thorndike, 1920
 
@@ -73,7 +75,9 @@ Les officiers devaient noter chaque homme sur des qualités distinctes et théor
 
 Le résultat est que ces notes étaient **fortement corrélées entre elles**. Beaucoup trop pour que les qualités le soient réellement. Un cadet jugé bon physiquement était presque systématiquement jugé intelligent et bon meneur.
 
-La conclusion de Thorndike est que les officiers étaient **incapables de séparer les dimensions**. Ils formaient d'abord une impression d'ensemble, favorable ou défavorable, puis en déduisaient chaque note particulière. Le terme de *halo* décrit exactement cela : une lumière globale qui colore tout ce qu'elle éclaire.
+La conclusion de Thorndike est que les officiers étaient **incapables de séparer les dimensions**. Ils formaient d'abord une impression d'ensemble, favorable ou défavorable, puis en déduisaient chaque note particulière. Le terme de *halo* décrit exactement cela : une lumière globale qui colore tout ce qu'elle éclaire. C'est l'un des biais cognitifs les plus étudiés en psychologie sociale, bien au-delà du recrutement où il est le plus souvent cité : dès qu'une première impression se forme, elle contamine le jugement porté sur des éléments et des compétences qui n'ont rien à voir avec elle.
+
+Depuis Thorndike, le halo est un biais cognitif qu'on retrouve documenté dans énormément de contextes très éloignés de l'aviation militaire : le recrutement en entreprise, où un bon feeling en entretien fait paraître meilleures des compétences techniques jamais vérifiées, l'évaluation scolaire, où un élève jugé sérieux voit ses copies notées plus favorablement à contenu égal, ou encore la vente et le marketing, où une marque perçue positivement voit chacun de ses produits crédité par avance de qualités qu'il n'a pas nécessairement. Le mécanisme est toujours le même : une impression globale, positive ou négative, précède l'examen du détail et le déforme.
 
 ## Nisbett et Wilson, ou le vrai problème
 
@@ -107,7 +111,7 @@ Presque tous les domaines produisent des impressions globales floues : il a l'ai
 
 Objectif, public, calculé par un tiers, mis à jour, et prédictif. Ce n'est pas une impression : c'est une information exacte. Ce qui rend son effet contaminant beaucoup plus difficile à repérer, puisqu'il est parfaitement légitime d'en tenir compte.
 
-Voici où il opère.
+Voici où il opère. Dans chacun des cas, la première impression laissée par le classement précède l'observation des éléments concrets de la position, ce qu'il faudrait pourtant éviter.
 
 ### L'évaluation du coup
 
@@ -137,6 +141,12 @@ Tu es en réalité légèrement mieux. Mais l'écart de classement produit une i
 
 Ce mécanisme est proche de celui décrit dans notre article sur [l'effet placebo aux échecs](/fr/blog/effet-placebo-aux-echecs/), au chapitre du nocebo : l'attente négative, elle, mord réellement.
 
+### Le halo dans le club et l'équipe
+
+Le mécanisme dépasse la partie individuelle. Dans un club, l'impression laissée par un joueur au fil du temps, sérieux, sympathique, régulier aux entraînements, finit par contaminer l'évaluation de son niveau de jeu réel. Un joueur apprécié de l'équipe voit ses résultats mitigés excusés plus facilement, tandis qu'un joueur moins intégré au groupe voit une bonne performance mise sur le compte de la chance.
+
+Ce halo social n'a rien de propre aux échecs : on le retrouve dans n'importe quel collectif, sportif ou professionnel. Ce qui est particulier ici, c'est qu'il vient s'ajouter à un second halo, chiffré celui-là, le classement, sans que les deux se neutralisent. Ils s'additionnent au contraire, et rendent d'autant plus difficile un jugement objectif porté sur un coup ou une partie donnée.
+
 ## Le test que tu peux faire ce soir
 
 C'est le grand avantage des échecs sur les autres terrains d'application de la psychologie : ici, le biais est **directement testable sur toi-même**, gratuitement, sans laboratoire.
@@ -164,6 +174,16 @@ Et attention à l'interprétation : le résultat peut aussi être nul. C'est un 
 **Méfie-toi de tes explications.** C'est la leçon spécifique de Nisbett et Wilson. Si tu te dis « ce n'est pas son classement qui m'influence, c'est que le coup est vraiment étrange », note que c'est exactement ce que répondaient les participants. La sincérité de la dénégation n'est pas un indice de son exactitude.
 
 **Analyse en aveugle.** Quand tu travailles sur des parties de maîtres, cache les noms et les résultats. Évalue la position, choisis ton coup, puis découvre. Le halo attaché à un nom célèbre te fait accepter des coups que tu n'aurais pas acceptés autrement, ce qui supprime tout l'intérêt de l'exercice.
+
+## Ce que le halo n'est pas
+
+Il est utile de distinguer l'effet de halo de deux notions voisines, avec lesquelles il se confond facilement.
+
+Ce n'est pas la simple première impression. Une première impression peut rester isolée, sans contaminer les jugements suivants si l'observateur reste attentif. Le halo, lui, désigne précisément le moment où cette impression se généralise et vient colorer des jugements portés sur des éléments totalement indépendants, comme l'apparence ou l'accent dans l'expérience de Nisbett et Wilson.
+
+Ce n'est pas non plus un simple excès de confiance dans son propre jugement. On peut être parfaitement humble sur sa capacité à juger une position et rester quand même sous l'effet du halo : le problème n'est pas la confiance qu'on accorde à son jugement, c'est la source, invisible, qui a orienté ce jugement avant même qu'il ne se forme.
+
+Il existe enfin un halo positif et un halo négatif, symétriques. Le halo positif fait paraître meilleur tout ce qui touche à une personne ou un joueur déjà bien vu. Le halo négatif, à l'inverse, fait paraître pire tout ce qui touche à une personne déjà mal vue, y compris quand les faits concrets ne le justifient pas.
 
 ## Ce qu'il faut retenir
 

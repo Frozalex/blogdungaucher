@@ -63,7 +63,7 @@ Tu cliques sur « nouvelle partie ».
 
 Voilà l'énigme que cet article essaie de traiter. Il ne s'agit pas d'un déficit de connaissance : tu disposes de toute l'information nécessaire. Il s'agit d'un déficit d'usage de cette information au moment précis où elle servirait.
 
-C'est très exactement ce que le concept d'intelligence émotionnelle prétend nommer. Reste à savoir si ce concept vaut quelque chose.
+C'est très exactement ce que le concept d'intelligence émotionnelle prétend nommer : la capacité à gérer ses émotions plutôt qu'à simplement les connaître. Reste à savoir si ce concept vaut quelque chose.
 
 ## L'idée de départ
 
@@ -76,7 +76,7 @@ Leur proposition est mesurée. Ils décrivent un ensemble d'aptitudes distinctes
 3. **Comprendre** les émotions, leurs causes et leurs enchaînements.
 4. **Réguler** les émotions.
 
-Formulé ainsi, c'est raisonnable, testable, et modeste. Ce sont des aptitudes, présentées comme telles, dont il reste à établir qu'elles forment un ensemble cohérent et qu'elles prédisent quelque chose.
+Formulé ainsi, c'est raisonnable, testable, et modeste. Ce sont des aptitudes, présentées comme telles, dont il reste à établir qu'elles forment un ensemble cohérent et qu'elles prédisent quelque chose. Rien, dans cette version d'origine, ne prétend que ces compétences suffiraient à elles seules à gérer le stress d'une partie ou à garantir la concentration : c'est une grille de lecture, pas une méthode.
 
 ## Puis le livre
 
@@ -112,7 +112,7 @@ C'est le cœur de la critique portée notamment par John Antonakis, Edwin Locke 
 
 Les méta-analyses leur donnent largement raison. Pour l'intelligence émotionnelle-aptitude, la validité incrémentale sur la performance au travail, au-delà des cinq grands traits de personnalité et de l'intelligence générale, est faible à nulle. Les mesures mixtes prédisent mieux, mais elles incluent déjà des traits de personnalité, ce qui rend le résultat difficile à interpréter autrement que comme une redondance.
 
-Et un troisième problème s'ajoute pour les questionnaires auto-rapportés, celui-là familier aux lecteurs de cette série : **ils demandent aux gens d'évaluer une compétence dont le déficit empêche justement de l'évaluer**. C'est la structure exacte de l'effet décrit dans notre article sur [l'effet Dunning-Kruger aux échecs](/fr/blog/effet-dunning-kruger-aux-echecs/).
+Et un troisième problème s'ajoute pour les questionnaires auto-rapportés, celui-là familier aux lecteurs de cette série : **ils demandent aux gens d'évaluer une compétence dont le déficit empêche justement de l'évaluer**. C'est la structure exacte de l'effet décrit dans notre article sur [l'effet Dunning-Kruger aux échecs](/fr/blog/effet-dunning-kruger-aux-echecs/). La psychologie du sport a d'ailleurs fait le même constat pour d'autres compétences dites mentales, comme la résolution de problèmes sous pression.
 
 ## Ce qu'il reste, et pourquoi ça concerne les échecs
 
@@ -124,7 +124,7 @@ Prise isolément, ce n'est pas une théorie de la réussite. C'est une question 
 
 Le tilt n'est pas dangereux parce qu'il te rend triste. Il est dangereux parce qu'il **dégrade la qualité de tes décisions tout en dégradant ta capacité à constater qu'elles sont dégradées**. Les deux détériorations arrivent ensemble. C'est ce qui rend le conseil « arrête de jouer quand tu tiltes » à la fois évidemment juste et pratiquement inapplicable : au moment où il faudrait l'appliquer, l'instrument de mesure est en panne.
 
-Notre article sur [échecs et colère](/fr/blog/echecs-et-colere-ragequit/) décrit le circuit neurologique en jeu. Ici, la question est différente : comment savoir qu'on y est.
+Notre article sur [échecs et colère](/fr/blog/echecs-et-colere-ragequit/) décrit le circuit neurologique en jeu. Ici, la question est différente : comment savoir qu'on y est, avant même d'essayer de gérer quoi que ce soit.
 
 ## L'avantage que les échecs possèdent
 
@@ -142,7 +142,7 @@ Ton état émotionnel produit des traces objectives, horodatées, consultables, 
 
 **La série.** Trois défaites consécutives est un fait, pas une impression.
 
-**Le profil d'erreurs.** Le tilt ne produit pas des erreurs stratégiques subtiles, il produit des erreurs grossières : pièces en prise, coups non forcés joués vite.
+**Le profil d'erreurs.** Le tilt ne produit pas des erreurs stratégiques subtiles, il produit des erreurs grossières : pièces en prise, coups non forcés joués vite, absence totale de vérification de la réponse de l'adversaire.
 
 **L'heure.** Tes statistiques par tranche horaire disent probablement quelque chose que tu ne veux pas savoir.
 

@@ -59,7 +59,7 @@ Tu jouais parce que c'était beau, ou parce que tu voulais battre ton frère, ou
 
 Aujourd'hui, tu ouvres l'application et tu sais avant de jouer combien de points sont en jeu. Après la partie, tu regardes la variation avant de regarder la position.
 
-La question de cet article est de savoir si le chiffre a remplacé quelque chose. La réponse dépend d'un détail expérimental que presque tous les résumés suppriment.
+La question de cet article est de savoir si le chiffre a remplacé quelque chose, c'est-à-dire si ta motivation intrinsèque a cédé la place à une motivation extrinsèque, celle qui vient du classement plutôt que du jeu lui-même. La réponse dépend d'un détail expérimental que presque tous les résumés suppriment.
 
 ## L'expérience des feutres
 
@@ -87,7 +87,7 @@ Cette condition est presque toujours absente des résumés populaires, et son om
 
 Ce que l'étude démontre n'est pas que les récompenses démotivent. Elle démontre que les récompenses **dégradent une motivation intrinsèque préexistante**.
 
-C'est une affirmation beaucoup plus étroite, et beaucoup plus utile, parce qu'elle indique immédiatement à qui elle s'applique. Sur un enfant qui n'aimait pas dessiner, il n'y a rien à détruire. La récompense peut même être la seule chose qui l'amène à essayer.
+C'est une affirmation beaucoup plus étroite, et beaucoup plus utile, parce qu'elle indique immédiatement à qui elle s'applique. Sur un enfant qui n'aimait pas dessiner, il n'y a rien à détruire. La récompense peut même être la seule chose qui l'amène à essayer, exactement comme un salaire peut faire commencer un travail qu'on finit ensuite par apprécier pour lui-même.
 
 ## Ce que la méta-analyse a établi
 
@@ -101,7 +101,7 @@ Leurs conclusions, qui font aujourd'hui largement référence, sont plus fines q
 
 **Le retour verbal positif ne dégrade pas la motivation**, et peut la renforcer. Un commentaire sur ce qui a été bien fait informe sur la compétence sans se substituer à la raison d'agir.
 
-Cette dernière distinction est la plus exploitable : ce qui compte n'est pas tant la récompense que **la fonction qu'elle occupe**. Une information sur ta compétence nourrit la motivation. Une contrepartie de ton activité la remplace.
+Cette dernière distinction est la plus exploitable : ce qui compte n'est pas tant la récompense que **la fonction qu'elle occupe**. Une information sur ta compétence nourrit la motivation. Une contrepartie de ton activité, comme un salaire ou un classement, la remplace. C'est une nuance essentielle pour comprendre pourquoi l'engagement dans une tâche peut rester intact malgré un système de points, tant que ce système reste informatif plutôt que contractuel.
 
 ## Le cas du classement
 
@@ -133,7 +133,7 @@ Trois indices, assez fiables.
 
 Une précision, parce que la théorie de l'autodétermination fera l'objet d'un article de cette série.
 
-Ce texte-ci traite d'un mécanisme précis et bien délimité : **la substitution d'une raison d'agir par une autre**. L'article à venir traitera des trois besoins psychologiques que Deci et Ryan ont identifiés comme conditions de la motivation, soit une question différente et plus large.
+Ce texte-ci traite d'un mécanisme précis et bien délimité : **la substitution d'une raison d'agir par une autre**. L'article à venir traitera des besoins psychologiques que Deci et Ryan ont identifiés comme conditions de la motivation, dont l'apprentissage continu et le sentiment de compétence, soit une question différente et plus large.
 
 ## Quatre pratiques
 
@@ -143,7 +143,9 @@ Ce texte-ci traite d'un mécanisme précis et bien délimité : **la substitutio
 
 **Réduis la saillance, pas le chiffre.** Le problème n'est pas que le classement existe, mais qu'il soit affiché en permanence. C'est aussi la conclusion de notre article sur [la comparaison sociale aux échecs](/fr/blog/comparaison-sociale-aux-echecs/) : la fréquence de consultation compte plus que la valeur.
 
-**Retrouve ce qui t'a fait venir.** Beaucoup de joueurs sont arrivés par un livre, une partie célèbre, un film, une personne. Revenir à cet objet-là, occasionnellement, entretient une motivation que le classement ne peut pas fournir.
+**Retrouve ce qui t'a fait venir.** Beaucoup de joueurs sont arrivés par un livre, une partie célèbre, un film, une personne. Revenir à cet objet-là, occasionnellement, entretient une motivation que le classement ne peut pas fournir, et procure une satisfaction plus personnelle, moins dépendante de la réussite du jour.
+
+**Évite de faire du chiffre le seul critère de réussite.** Une session peut être bonne sans faire progresser le classement d'un seul point. Juger le travail à cette seule aune revient à réintroduire la même logique de contrepartie que celle mise en cause plus haut.
 
 ## Ce qu'il faut retenir
 

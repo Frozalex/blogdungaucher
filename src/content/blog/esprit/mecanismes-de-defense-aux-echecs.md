@@ -69,7 +69,7 @@ Le premier balance sa pièce sur la table et sort en claquant la porte. Le deuxi
 
 Même événement. Cinq traitements. Et la psychiatrie du vingtième siècle a passé beaucoup de temps à établir que ces cinq traitements ne se valent pas, qu'ils forment une hiérarchie, et que la position d'une personne dans cette hiérarchie prédit des choses sur sa vie qui dépassent largement les échecs.
 
-Cet article est un inventaire. Plusieurs de ces mécanismes auront leur propre article, en particulier la rationalisation et la projection. Ici, on établit la carte.
+Cet article est un inventaire. Plusieurs de ces mécanismes auront leur propre article, en particulier la rationalisation et la projection. Ici, on établit la carte de la psychologie du joueur d'échecs face à la défaite, et des ressorts de sa gestion des émotions.
 
 ## D'où vient l'idée
 
@@ -203,7 +203,7 @@ Attention ici, car cette défense a un sosie mature dont on parlera plus bas. La
 
 ## Niveau 4 : les défenses matures
 
-Voici la partie que la vulgarisation psychologique oublie presque toujours, alors qu'elle est le cœur de l'apport de Vaillant.
+Voici la partie que la vulgarisation psychologique oublie presque toujours, alors qu'elle est le cœur de l'apport de Vaillant : ce sont ces défenses qui distinguent une bonne santé mentale d'un simple évitement de la souffrance, et qui forment le socle de la résilience du joueur.
 
 Les défenses matures **sont des défenses**. Elles ne consistent pas à affronter la réalité sans protection. Elles protègent aussi, mais sans exiger de payer en lucidité.
 
@@ -269,7 +269,7 @@ Quatre approches, dans l'ordre de faisabilité.
 
 ## Ce qu'il faut retenir
 
-Un mécanisme de défense n'est pas une faiblesse morale, c'est une opération automatique qui rend supportable une information douloureuse. Aux échecs, cette information arrive avec une netteté que peu d'activités humaines produisent : sans ambiguïté, sans coupable extérieur, sans hasard, publique, et répétée toutes les semaines.
+Un mécanisme de défense n'est pas une faiblesse morale, c'est une opération automatique qui rend supportable une information douloureuse. Aux échecs, cette information arrive avec une netteté que peu d'activités humaines produisent : sans ambiguïté, sans coupable extérieur, sans hasard, publique, et répétée toutes les semaines. La psychiatrie appelle ça le fonctionnement défensif ; le club appelle ça un mauvais perdant, ou un bon.
 
 Tu en emploies. Tout le monde en emploie. Ce qui varie, c'est le prix payé. Le déni et le passage à l'acte règlent l'inconfort immédiat en supprimant l'information, donc l'apprentissage. La rationalisation et l'intellectualisation conservent l'information mais l'enveloppent. L'humour, la suppression et la sublimation la conservent intacte et la rendent utilisable.
 

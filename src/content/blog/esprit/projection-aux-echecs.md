@@ -51,11 +51,13 @@ faq:
       que toi tu as en tête. Sans preuve tirée de la position, il s'agit d'une projection.
 ---
 
-Tu vois une idée. Un sacrifice de qualité qui ouvre la colonne. Tu calcules, tu trouves que ça ne marche pas tout à fait, tu abandonnes l'idée.
+Tu vois une idée. Un sacrifice de qualité qui ouvre la colonne devant le roi adverse. Tu calcules, tu trouves que ça ne marche pas tout à fait, tu abandonnes l'idée et tu joues autre chose sur l'échiquier.
 
-Trois coups plus tard, ton adversaire joue précisément ce sacrifice. Et il marche, parce que tu n'avais pas poussé le calcul assez loin.
+Trois coups plus tard, ton adversaire joue précisément ce sacrifice. Et il marche, parce que tu n'avais pas poussé le calcul assez loin : la tour qui arrive sur la colonne ouverte fait bien plus de dégâts que ce que tu avais évalué en surface.
 
-Ce n'est pas un problème de niveau : tu avais vu l'idée. C'est un problème d'attribution. Tu as supposé que sa vision de la position ressemblait à la tienne, y compris dans ce que tu avais écarté.
+Ce n'est pas un problème de niveau au jeu d'échecs : tu avais vu l'idée, au bon moment, sur la bonne case. C'est un problème d'attribution. Tu as supposé que sa vision de la position ressemblait à la tienne, y compris dans ce que tu avais écarté. Deux joueurs qui regardent le même échiquier peuvent construire deux représentations complètement différentes de ce qui s'y joue.
+
+Imagine une partie où tu as le trait, ton roi est roqué côté roi, et ton adversaire a une tour et un fou pointés vers ta position. Tu calcules le sacrifice de qualité, tu trouves une défense qui tient, et tu ranges l'idée dans la case « ne fonctionne pas ». Le problème, c'est que cette case existe uniquement dans ta tête, pas dans celle de ton adversaire, et rien ne garantit qu'il l'a examinée avec la même profondeur que toi.
 
 ## Le problème avec la projection freudienne
 
@@ -95,11 +97,11 @@ Ce n'est donc pas un autre mécanisme : c'est **le mode dégradé du même méca
 
 ### 1. « Il a vu ce que j'ai vu »
 
-La plus fréquente et la plus coûteuse.
+La plus fréquente et la plus coûteuse. Elle ne se limite pas à une pièce isolée : elle peut porter sur une case faible, un pion avancé, une manœuvre de tour que tu as jugée sans suite, ou un déplacement de dame que tu n'as même pas envisagé comme dangereux.
 
-Tu trouves une idée forte, tu calcules la réfutation, tu écartes l'idée. L'erreur consiste à supposer que **lui aussi** l'a écartée pour la même raison, alors qu'il ne l'a peut-être jamais envisagée, ou qu'il a poussé le calcul un coup plus loin que toi.
+Tu trouves une idée forte, tu calcules la réfutation, tu écartes l'idée. L'erreur consiste à supposer que **lui aussi** l'a écartée pour la même raison, alors qu'il ne l'a peut-être jamais envisagée, ou qu'il a poussé le calcul un coup plus loin que toi. Il arrive même que l'adversaire n'ait pas du tout vu ta réfutation et joue le coup en pensant simplement gagner du temps et de l'espace.
 
-C'est la scène d'ouverture de cet article. Elle produit une catégorie d'erreurs très identifiable : tu ne surveilles pas une idée **que tu as pourtant vue**, parce que tu l'as classée comme réfutée pour vous deux.
+C'est la scène d'ouverture de cet article. Elle produit une catégorie d'erreurs très identifiable : tu ne surveilles pas une idée **que tu as pourtant vue**, parce que tu l'as classée comme réfutée pour vous deux. Prends l'exemple d'une position où une tour peut sacrifier sur une case proche du roi : si tu as jugé ce sacrifice insuffisant, tu risques de baisser ta garde exactement au moment où ton adversaire, lui, le tente quand même.
 
 ### 2. « Il n'a pas vu ce que je n'ai pas vu »
 
@@ -107,7 +109,9 @@ Le symétrique, plus insidieux.
 
 Tu ne perçois pas de menace dans une position, donc tu joues avec confiance. L'absence de menace dans ta représentation devient une absence de menace dans la sienne.
 
-Or son plan peut être construit sur une case, une structure ou un motif que tu ne maîtrises simplement pas. Ce n'est pas qu'il calcule mieux : il voit autre chose.
+Or son plan peut être construit sur une case, une structure ou un motif que tu ne maîtrises simplement pas, une faiblesse près de ton roi ou une case d'appui pour son cavalier. Ce n'est pas qu'il calcule mieux : il voit autre chose. Un joueur habitué à un certain type de finale de tours, par exemple, repère instantanément un motif que d'autres joueurs, même plus forts en milieu de partie, ne verront jamais sans y consacrer un temps de réflexion beaucoup plus long.
+
+Cette forme de projection est particulièrement coûteuse en début de partie et en milieu de jeu, quand le nombre de pièces encore présentes sur l'échiquier multiplie les plans possibles pour chaque camp.
 
 ### 3. « Il jouerait comme je jouerais »
 
@@ -123,6 +127,14 @@ Elle mérite d'être signalée parce qu'elle produit des accusations.
 
 Supposer que l'adversaire ressent ce que tu ressentirais à sa place, mépris, moquerie, agacement, est une opération de projection. Et elle peut alimenter des interprétations qui n'ont aucun support dans les faits, comme le décrit notre article sur [l'effet spectateur aux échecs](/fr/blog/effet-spectateur-aux-echecs/) à propos des soupçons de triche.
 
+## Un exemple concret pour fixer le mécanisme
+
+Imagine une partie de club, où tu joues les blancs contre un adversaire de niveau proche du tien. Ton roi est en sécurité, roqué côté roi, tes tours sont reliées, et tu prépares une avancée de pion sur l'aile dame pour gagner de l'espace.
+
+À un moment, tu remarques que ton cavalier pourrait sauter sur une case avancée, près du camp adverse, en menaçant sa dame et sa tour à la fois. Tu calcules trois coups, tu trouves une parade pour ton adversaire, et tu conclus que le saut de cavalier ne rapporte rien de concret. Tu abandonnes donc cette idée et tu joues ton avancée de pion prévue.
+
+Le problème, c'est que tu as raisonné pour deux joueurs avec un seul cerveau. Rien ne prouve que ton adversaire, de son côté du plateau, ait vu la même menace ni la même parade. S'il n'a pas anticipé le saut de cavalier, ta décision de l'écarter t'a privé d'une occasion réelle, simplement parce que ta propre réfutation a servi de vérité pour la partie entière. Inversement, s'il a bien vu la parade, ton avancée de pion peut se révéler prématurée, car il a gagné du temps pendant que tu réfléchissais à un plan que tu as fini par abandonner.
+
 ## Pourquoi les échecs amplifient le mécanisme
 
 Trois raisons, et la troisième est propre à ce jeu.
@@ -131,7 +143,9 @@ Trois raisons, et la troisième est propre à ce jeu.
 
 **L'effort de modélisation est coûteux en pleine partie.** Tenir simultanément deux représentations de la position, la tienne et une estimation de la sienne, consomme une ressource déjà saturée par le calcul. Le mode par défaut est donc le mode économique.
 
-**Et le moteur t'entraîne à projeter.** C'est le point le moins évident. Quand tu analyses avec une machine, tu travailles dans un monde où l'adversaire voit tout, puisque c'est l'hypothèse du calcul minimax. Des centaines d'heures d'analyse dans ce cadre installent une habitude de raisonnement : supposer que l'autre voit ce qu'il y a à voir. En partie contre un humain, cette hypothèse est fausse dans les deux sens.
+**Et l'entraînement analytique t'entraîne à projeter.** C'est le point le moins évident. Quand tu analyses une partie après coup avec une aide informatique, tu travailles dans un monde où l'adversaire voit tout, puisque c'est l'hypothèse de calcul retenue par l'analyse. Des centaines d'heures d'analyse dans ce cadre installent une habitude de raisonnement : supposer que l'autre voit ce qu'il y a à voir sur l'échiquier. En partie contre un humain, cette hypothèse est fausse dans les deux sens, et elle explique pourquoi tant de joueurs, forts en analyse, restent surpris en partie réelle par des coups pourtant simples à repérer.
+
+**L'expérience personnelle sert de filtre.** Un joueur qui a beaucoup pratiqué les finales de pions verra une opposition de rois à trois cases de distance comme une évidence. Un autre joueur, dont la pratique s'est concentrée sur les ouvertures, peut passer à côté du même motif malgré un niveau de jeu comparable. Chacun projette son propre répertoire d'expérience sur l'autre, en croyant décrire la position alors qu'il décrit surtout sa propre pratique.
 
 ## Le protocole
 
@@ -145,7 +159,23 @@ Il n'y a que deux réponses possibles. Soit d'un élément de la position, un co
 
 **4. Utilise ce que tu sais réellement de lui.** La projection comble un vide. Le meilleur remède est de ne pas laisser le vide : trois lignes d'observations concrètes sur un adversaire régulier valent mieux qu'un modèle par défaut.
 
-**5. En analyse, distingue deux questions.** Quel était le meilleur coup, et qu'est-ce qui était humainement visible dans cette position ? Le moteur répond à la première. Seul un joueur peut t'aider sur la seconde, et c'est elle qui corrige la projection.
+**5. En analyse, distingue deux questions.** Quel était le meilleur coup, et qu'est-ce qui était humainement visible dans cette position ? L'analyse informatique répond à la première. Seul un autre joueur peut t'aider sur la seconde, et c'est elle qui corrige la projection.
+
+**6. Reviens sur les cases sensibles autour du roi.** Après chaque partie, repère les cases qui entouraient ton roi et demande-toi si tu as vraiment évalué chaque coup possible de l'adversaire sur ces cases, ou si tu as supposé qu'il ne verrait pas ce que toi-même tu n'avais pas vu de son côté du plateau.
+
+## Ce que la projection n'est pas
+
+Il vaut la peine de distinguer la projection de deux mécanismes voisins avec lesquels elle se confond facilement en pratique.
+
+Elle n'est pas une simple erreur de calcul. Une erreur de calcul porte sur la position elle-même : tu comptes mal les pièces qui défendent une case, tu oublies un pion qui bloque une colonne. La projection porte sur l'estimation de ce que l'autre joueur a en tête, pas sur la position en tant que telle.
+
+Elle n'est pas non plus de l'excès de confiance généralisé. Un joueur trop confiant sous-estime son adversaire dans l'absolu, quel que soit le contenu de la position. La projection, elle, peut toucher un joueur parfaitement lucide sur le niveau de son adversaire : le problème n'est pas de le sous-estimer, c'est de lui prêter, par défaut, ta propre vision de l'échiquier.
+
+## Une variante utile pour l'entraînement en club
+
+Une manière simple de travailler ce point en dehors de la partie elle-même consiste à jouer, une fois de temps en temps, à l'aveugle sur une seule question : à chaque coup joué par ton adversaire, note par écrit ce que tu penses qu'il a vu et ce que tu penses qu'il n'a pas vu, avant de continuer la partie. Compare ensuite cette note à ce qui s'est réellement passé sur l'échiquier.
+
+Cet exercice, pratiqué régulièrement dans un club ou avec un partenaire d'entraînement, rend visible l'écart entre ta représentation de l'esprit de l'adversaire et la réalité de ses coups. Beaucoup de joueurs découvrent alors qu'ils attribuent systématiquement à l'autre camp une vision de la position bien plus proche de la leur que ce que les coups joués révèlent ensuite. Un roi resté au centre, une tour laissée passive, une case faible jamais exploitée : chacun de ces indices renseigne sur ce que l'adversaire voyait réellement, indépendamment de ce que toi tu voyais.
 
 ## Ce qu'il faut retenir
 

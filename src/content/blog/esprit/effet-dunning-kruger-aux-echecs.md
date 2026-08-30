@@ -66,7 +66,7 @@ faq:
 
 Il est classé 1 150. Il vient de perdre, et il t'explique pourquoi ce classement ne veut rien dire. Il a joué en blitz alors qu'il est « un joueur de parties longues ». Il n'a pas travaillé ses ouvertures depuis six mois. Son adversaire a gagné « au temps, pas au jeu ». Et puis franchement, ses parties contre le gars à 1 600 du club, il en gagne « quand même une sur deux ».
 
-Tu connais ce joueur. Peut-être que tu l'as été. La question intéressante n'est pas de savoir s'il ment : il ne ment pas, il croit sincèrement ce qu'il dit. La question est de savoir **combien de points Elo sépare ce qu'il croit valoir de ce qu'il vaut**.
+Tu connais ce joueur. Peut-être que tu l'as été. La question intéressante n'est pas de savoir s'il ment : il ne ment pas, il croit sincèrement ce qu'il dit. La question est de savoir **combien de points Elo sépare ce qu'il croit valoir de ce qu'il vaut**. La psychologie a un nom pour cette erreur d'estimation, et les échecs en offrent la démonstration la plus propre parmi tous les domaines étudiés.
 
 Depuis août 2025, on a le chiffre. Il est de 89 points.
 
@@ -184,6 +184,8 @@ Ce qu'il ne voit pas, c'est **ce qui n'a pas été joué**. Il ne voit pas les q
 
 L'écart entre 1 200 et 1 800 est fait de choses **absentes de l'échiquier**. Et on ne peut pas mesurer une absence qu'on ne sait pas identifier. C'est très exactement la thèse de 1999 : il faut la compétence pour voir ce que la compétence permet.
 
+Imagine deux joueurs qui commentent la même partie de tournoi, l'un classé 1 100, l'autre 1 900. Le premier suit chaque coup, hoche la tête, trouve la partie « logique ». Le second voit, en plus, les trois idées silencieuses que chaque camp a évaluées puis écartées avant de jouer le coup visible. Le premier n'a pas moins bien regardé : il a regardé la même chose avec un instrument qui ne détecte pas ces idées-là.
+
 ## La contre-attaque : et si l'effet n'existait pas ?
 
 Maintenant, l'honnêteté impose la partie que la plupart des articles sur Dunning-Kruger passent sous silence. **L'effet est sérieusement contesté.**
@@ -239,6 +241,8 @@ C'est aussi l'enseignement de leur quatrième étude, la seule qui propose un re
 Après chaque défaite, note en une ligne la raison que tu invoques. Ne cherche pas à être objectif, note ce qui te vient spontanément.
 
 Relis au bout de trente parties. Si « manque de temps », « fatigue » et « malchance » représentent l'essentiel de tes lignes, tu tiens la preuve écrite du mécanisme de réinterprétation. Une raison ponctuelle explique une partie. Trente raisons ponctuelles décrivent un niveau.
+
+Imagine ce même carnet relu un an plus tard : ce ne sont plus tes défaites qui sautent aux yeux, mais la répétition des mêmes trois excuses, appliquées à des adversaires différents, dans des tournois différents, à des saisons différentes. C'est cette répétition, plus que n'importe quelle partie isolée, qui constitue la preuve.
 
 ### 5. Accepte la traduction dans les deux sens
 

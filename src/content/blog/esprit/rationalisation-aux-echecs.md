@@ -59,7 +59,7 @@ Demande à un joueur de club pourquoi il a joué le coup 19. Il te répondra. Il
 
 L'explication sera cohérente, techniquement défendable, et probablement fausse. Non pas fausse sur l'échiquier, mais fausse sur lui : ce n'est pas ce qui a produit le coup.
 
-Cet article porte sur une machine que tu as en permanence en fonctionnement, et dont la production est indiscernable, pour toi, d'un raisonnement.
+Cet article porte sur une machine que tu as en permanence en fonctionnement, et dont la production est indiscernable, pour toi, d'un raisonnement. En psychologie, ce type de fausse explication produite avec une conviction sincère porte un nom précis : la confabulation. Ce n'est pas une excuse consciente, c'est une histoire que le cerveau se raconte à lui-même.
 
 ## L'expérience des visages
 
@@ -187,7 +187,7 @@ Nisbett et Wilson l'avaient établi dès 1977 : les processus responsables de no
 
 Aux échecs, cette machine tourne pendant la partie, en justifiant des coups décidés par reconnaissance de motifs, et après la partie, en produisant en trois minutes une explication de la défaite qui est souvent exacte et presque toujours stérile.
 
-Son coût n'est pas le mensonge, c'est l'arrêt prématuré de la recherche. Et le seul moyen fiable de trier consiste à dater les explications : celles qui précèdent le résultat valent quelque chose, celles qui le suivent ne prouvent rien.
+Son coût n'est pas le mensonge, c'est l'arrêt prématuré de la recherche. Et le seul moyen fiable de trier consiste à dater les explications : celles qui précèdent le résultat valent quelque chose, celles qui le suivent ne prouvent rien. Ce ne sont jamais des excuses au sens moral du terme, mais une confabulation systématique, la même chez tous les niveaux de jeu.
 
 **Après lecture :** à ta prochaine défaite, écris la première explication qui te vient, puis n'y touche plus. Analyse le lendemain. L'écart entre les deux textes est la mesure exacte de ce dont parle cet article.
 

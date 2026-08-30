@@ -59,15 +59,15 @@ La première voie est rapide. Elle consiste à comprendre pourquoi le moteur dit
 
 La seconde voie est lente. Elle consiste à admettre que ton évaluation était fausse, à chercher ce que tu ne sais pas voir, à reconnaître que ce trou existe probablement dans des centaines de tes parties, et à changer ton programme de travail en conséquence. Elle coûte des semaines, et elle fait mal.
 
-Tu prends presque toujours la première. Ce n'est pas de la paresse, et cet article est consacré à expliquer pourquoi.
+Tu prends presque toujours la première. Ce n'est pas de la paresse, et ce texte est consacré à expliquer pourquoi.
 
-Il clôt une série de quarante et un textes sur la psychologie appliquée aux échecs. Ce qui suit n'est pas un résumé : c'est ce qui est apparu une fois que tous les autres ont été écrits.
+Il clôt une série de quarante et un écrits sur la psychologie appliquée aux échecs. Ce qui suit n'est pas un résumé : c'est ce qui est apparu une fois que tous les autres ont été rédigés.
 
 ## Une question mal posée
 
 On formule habituellement le problème en termes de caractère. Il faudrait de l'humilité, du courage, une capacité à se remettre en question.
 
-Cette formulation ne mène nulle part, pour une raison simple : elle transforme un mécanisme en défaut moral, et un défaut moral ne se corrige pas par une procédure.
+Cette formulation ne mène nulle part, pour un motif simple : elle transforme un mécanisme en défaut moral, et un défaut moral ne se corrige pas par une procédure.
 
 La formulation utile est économique. **Avoir raison et apprendre n'ont pas le même prix.**
 
@@ -77,7 +77,7 @@ Face à un tel écart de coût, il n'y a rien d'étonnant à ce que le système 
 
 Ce qu'il optimise, c'est la stabilité du modèle que tu as de toi. Et cette stabilité n'est pas un luxe : c'est ce qui te permet de décider, de t'engager, de recommencer après une défaite. Un joueur dont l'image de soi serait entièrement révisée à chaque partie perdue serait incapable de jouer la suivante.
 
-Le problème n'est donc pas que ce système existe. C'est qu'il n'a pas de bouton d'arrêt, et qu'il fonctionne aussi quand la révision serait exactement ce qu'il faudrait faire.
+Le problème n'est donc pas que ce processus existe. C'est qu'il n'a pas de bouton d'arrêt, et qu'il fonctionne aussi quand la révision serait exactement ce qu'il faudrait faire.
 
 ## La chaîne
 
@@ -91,13 +91,13 @@ L'effet décrit par Kruger et Dunning n'est pas que les faibles se croient forts
 
 C'est le point de départ obligé, parce qu'il détermine tout le reste : tu ne peux pas voir ce que tu ne sais pas voir. Et l'étude menée en 2025 sur 3 388 joueurs de tournoi montre que même un retour d'information exact, précis, public et permanent ne suffit pas à corriger cela. Ils se croyaient en moyenne 89 points Elo au-dessus de leur classement réel, après près de vingt ans de pratique.
 
-C'est le sujet de notre article sur [l'effet Dunning-Kruger aux échecs](/fr/blog/effet-dunning-kruger-aux-echecs/).
+C'est ce que détaille notre texte sur [l'effet Dunning-Kruger aux échecs](/fr/blog/effet-dunning-kruger-aux-echecs/).
 
 ### Pendant : la recherche orientée
 
 Le deuxième mécanisme n'attend pas le résultat. Il agit pendant que tu calcules.
 
-Le [biais de confirmation](/fr/blog/biais-de-confirmation-aux-echecs/) ne te fait pas calculer moins : il te fait calculer **dans une seule direction**. Huit minutes du côté qui te donne raison, quelques secondes du côté qui te contredirait. L'arbre n'est pas trop court, il est asymétrique.
+Le [biais de confirmation](/fr/blog/biais-de-confirmation-aux-echecs/) ne te fait pas calculer moins : il te fait calculer **dans une seule direction**. Huit minutes du côté qui va dans ton sens, quelques secondes du côté qui te contredirait. L'arbre n'est pas trop court, il est asymétrique.
 
 Wason l'avait démontré avec trois nombres : les participants testaient leur hypothèse par des exemples incapables de la démentir, puis se déclaraient sûrs au terme d'une démonstration vide.
 
@@ -107,7 +107,7 @@ Et pendant que la recherche est orientée, la [projection](/fr/blog/projection-a
 
 La partie est perdue. Deux cognitions incompatibles se présentent : je suis un joueur correct, je viens de perdre une position gagnante.
 
-C'est la [dissonance cognitive](/fr/blog/dissonance-cognitive-aux-echecs/), et Festinger a montré qu'elle a une force motivationnelle propre. Elle ne demande pas à être comprise : elle demande à cesser.
+C'est la [dissonance cognitive](/fr/blog/dissonance-cognitive-aux-echecs/), et Festinger a établi qu'elle possède une force motivationnelle propre. Elle ne demande pas à être comprise : elle demande à cesser.
 
 Trois issues sont disponibles. Changer la première cognition coûte cher, elle touche à qui tu es. Changer la seconde est impossible, le résultat est enregistré. Reste la troisième voie, celle qui consiste à ajouter une cognition qui réconcilie les deux.
 
@@ -115,19 +115,19 @@ Trois issues sont disponibles. Changer la première cognition coûte cher, elle 
 
 Cette troisième cognition arrive vite, et elle est produite par un système remarquablement efficace.
 
-La [rationalisation](/fr/blog/rationalisation-aux-echecs/) fournit une explication acceptable, cohérente, et souvent exacte. Tu étais fatigué. C'était du blitz. Tu avais mal préparé.
+La [rationalisation](/fr/blog/rationalisation-aux-echecs/) livre une explication acceptable, cohérente, et souvent exacte. Tu étais fatigué. C'était du blitz. Tu avais mal préparé.
 
 L'expérience la plus troublante du domaine montre que ce système fonctionne même quand il n'a accès à rien : dans un protocole de 2005, on a échangé en douce la photographie choisie par des participants, et 87 % d'entre eux ont expliqué avec conviction pourquoi ils avaient préféré un visage qu'ils avaient en réalité écarté.
 
-Ils ne mentaient pas. Le système qui produit les justifications est distinct de celui qui produit les décisions, et il justifie ce qu'on lui présente.
+Ils ne mentaient pas. Le mécanisme qui produit les justifications est distinct de celui qui produit les décisions, et il justifie ce qu'on lui présente.
 
-Ce qui donne le critère décisif : **une explication produite en trois minutes, sans consultation des faits, n'est pas le résultat d'une enquête. C'est une sortie.** Son exactitude est un heureux accident.
+Ce qui livre le critère décisif : **une explication produite en trois minutes, sans consultation des faits, n'est pas le résultat d'une enquête. C'est une sortie.** Son exactitude est un heureux accident.
 
 Et ce que cette explication coûte n'est pas le mensonge. C'est l'arrêt prématuré de la recherche, avec le sentiment d'avoir compris.
 
 ### Ce qui reste : les défenses
 
-Ce que la rationalisation n'absorbe pas est traité par un répertoire plus large, inventorié dans notre article sur [les mécanismes de défense aux échecs](/fr/blog/mecanismes-de-defense-aux-echecs/).
+Ce que la rationalisation n'absorbe pas est traité par un répertoire plus large, inventorié dans notre texte sur [les mécanismes de défense aux échecs](/fr/blog/mecanismes-de-defense-aux-echecs/).
 
 Le déni ne consiste pas à nier le résultat, mais à ne pas regarder la partie. Le déplacement met trente minutes sur le bruit de la salle et zéro sur le coup 22. L'intellectualisation, la plus difficile à repérer, analyse avec compétence en ne parlant jamais de ce qui a été ressenti, parce que l'échiquier ne fait pas mal.
 
@@ -145,9 +145,9 @@ Et comme tu construis ton entraînement à partir de cette image, la boucle se r
 
 ## Pourquoi ce sont les échecs qui révèlent tout ça
 
-Une question mérite d'être posée : pourquoi une série entière sur ce sujet à propos d'un jeu ?
+Une interrogation mérite d'être posée : pourquoi une série entière sur ce thème à propos d'un jeu ?
 
-Parce que les échecs constituent probablement **le meilleur détecteur de ces mécanismes qui existe**, pour une raison qui tient à la nature du résultat qu'ils produisent.
+Parce que les échecs constituent probablement **le meilleur détecteur de ces mécanismes qui existe**, ce qui tient à la nature du résultat qu'ils produisent.
 
 La défaite aux échecs a cinq propriétés rarement réunies. Elle est **sans ambiguïté** : le roi est mat ou il ne l'est pas. Elle n'est **attribuable à personne d'autre** : pas de coéquipier, pas d'arbitre. Elle ne comporte **aucune part de hasard** : information complète des deux côtés. Elle est **publique et chiffrée**. Et elle est **fréquente**.
 
@@ -155,43 +155,43 @@ Autrement dit, ce jeu produit en continu des preuves susceptibles de contredire 
 
 C'est ce qui en fait une activité difficile. C'est aussi ce qui en fait un instrument. Il existe très peu d'endroits dans une vie où l'on reçoive une information aussi propre sur soi, aussi souvent.
 
-Et c'est là que se trouve la vraie raison de jouer, celle que cette série a fini par établir sans l'avoir cherchée : les échecs ne rendent pas plus intelligent, comme le montre notre article sur [les échecs rendent-ils plus intelligent](/fr/blog/les-echecs-rendent-ils-plus-intelligent/). Ils font autre chose, et de plus rare. Ils rendent visible la façon dont tu traites ce qui te contredit.
+Et c'est là que se trouve le vrai motif de jouer, celui que cette série a fini par établir sans l'avoir cherché : les échecs ne rendent pas plus intelligent, comme le montre notre texte sur [les échecs rendent-ils plus intelligent](/fr/blog/les-echecs-rendent-ils-plus-intelligent/). Ils accomplissent autre chose, et de plus rare. Ils rendent visible la façon dont tu traites ce qui te contredit.
 
 ## Ce qui est apparu tout seul
 
 Voici le point que je n'attendais pas en commençant cette série.
 
-Chaque article a été écrit indépendamment, avec ses propres sources et son propre terrain. Et à la fin de presque chacun, la même recommandation pratique est apparue, formulée différemment à chaque fois.
+Chaque texte a été écrit indépendamment, avec ses propres sources et son propre terrain. Et à la fin de presque chacun, la même recommandation pratique est apparue, formulée différemment à chaque reprise.
 
 **Écrire avant.**
 
-Ton évaluation de la position avant d'allumer le moteur, contre [l'ancrage](/fr/blog/biais-d-ancrage-aux-echecs/) et contre [l'obéissance à l'autorité](/fr/blog/obeissance-a-l-autorite-aux-echecs/).
+Ton évaluation de la position avant d'allumer le moteur, à l'opposé de [l'ancrage](/fr/blog/biais-d-ancrage-aux-echecs/) et de [l'obéissance à l'autorité](/fr/blog/obeissance-a-l-autorite-aux-echecs/).
 
-Les coups que tu as réellement envisagés avant l'analyse, contre [les faux souvenirs](/fr/blog/faux-souvenirs-aux-echecs/).
+Les coups que tu as réellement envisagés avant l'analyse, en réponse aux [faux souvenirs](/fr/blog/faux-souvenirs-aux-echecs/).
 
-Ta première explication de la défaite avant d'examiner les faits, contre la rationalisation.
+Ta première explication de la défaite avant d'examiner les faits, en rempart face à la rationalisation.
 
-Ton critère d'abandon avant d'investir dans un répertoire, contre la justification de l'effort et le [paradoxe du choix](/fr/blog/paradoxe-du-choix-aux-echecs/).
+Ton critère d'abandon avant d'investir dans un répertoire, en rempart face à la justification de l'effort et au [paradoxe du choix](/fr/blog/paradoxe-du-choix-aux-echecs/).
 
-Ta règle d'arrêt avant de commencer à jouer, contre le renforcement à ratio variable du [conditionnement opérant](/fr/blog/conditionnement-operant-aux-echecs/).
+Ta règle d'arrêt avant de commencer à jouer, en rempart face au renforcement à ratio variable du [conditionnement opérant](/fr/blog/conditionnement-operant-aux-echecs/).
 
-Ce que tu crois être ta faiblesse avant de consulter tes statistiques, contre la [prophétie auto-réalisatrice](/fr/blog/prophetie-auto-realisatrice-aux-echecs/) et contre [l'effet Barnum](/fr/blog/effet-barnum-aux-echecs/).
+Ce que tu crois être ta faiblesse avant de consulter tes statistiques, en rempart face à la [prophétie auto-réalisatrice](/fr/blog/prophetie-auto-realisatrice-aux-echecs/) et à [l'effet Barnum](/fr/blog/effet-barnum-aux-echecs/).
 
-Le classement que tu attends avant de payer un cours, contre les sept leviers de [la persuasion](/fr/blog/psychologie-de-la-persuasion-aux-echecs/).
+Le classement que tu attends avant de payer un cours, en rempart face aux sept leviers de [la persuasion](/fr/blog/psychologie-de-la-persuasion-aux-echecs/).
 
 Sept mécanismes différents, sept littératures différentes, une seule parade.
 
 ### Pourquoi ça marche
 
-La raison est structurelle, et elle est ce que cet article a de plus utile à offrir.
+L'explication est structurelle, et elle est ce que ce texte a de plus utile à offrir.
 
 **Tous ces mécanismes opèrent après coup.**
 
 La rationalisation produit l'explication après la défaite. La reconstruction normalise le souvenir après l'événement. L'ancrage déplace ton estimation après l'apparition du chiffre. La mémoire ajuste ce que tu croyais avoir pensé après l'analyse.
 
-Ils réécrivent tous **la même chose** : ce que tu pensais avant.
+Ils réécrivent tous **le même contenu** : ce que tu pensais avant.
 
-Et aucun d'eux ne peut modifier une note écrite. Un texte daté est extérieur au système. Il ne se normalise pas, il ne se justifie pas, il ne se souvient pas autrement.
+Et aucun d'eux ne peut modifier une note écrite. Un texte daté est extérieur à ce circuit. Il ne se normalise pas, il ne se justifie pas, il ne se souvient pas autrement.
 
 C'est pour cette raison qu'une phrase notée avant vaut plus qu'une heure d'introspection sincère après. Il ne s'agit pas d'être plus honnête. Il s'agit de **produire une trace que le mécanisme ne peut pas atteindre**.
 
@@ -201,17 +201,17 @@ Et le coût est dérisoire : dix secondes, une ligne, avant. Comparé à tout ce
 
 Cette série a pris l'habitude de présenter systématiquement la critique de ce qu'elle avance. Il serait malhonnête de s'en dispenser au moment de conclure.
 
-Le titre de cet article laisse entendre qu'il faudrait toujours préférer apprendre. C'est faux, et il existe au moins trois situations où défendre son modèle est la décision correcte.
+Le titre de ce texte laisse entendre qu'il faudrait toujours préférer apprendre. C'est faux, et il existe au moins trois situations où défendre son modèle est la décision correcte.
 
-**Quand le signal est du bruit.** Une défaite n'est pas une information sur ton niveau, c'est un échantillon de taille un. Réviser son image de soi après chaque partie perdue n'est pas de la lucidité, c'est du surajustement. Les fluctuations normales d'un classement dépassent largement l'effet d'un mois de travail sérieux, comme le rappelle notre article sur [la comparaison sociale aux échecs](/fr/blog/comparaison-sociale-aux-echecs/). Un joueur qui remet tout en cause toutes les semaines ne construit rien.
+**Quand le signal est du bruit.** Une défaite n'est pas une information sur ton niveau, c'est un échantillon de taille un. Réviser son image de soi après chaque partie perdue n'est pas de la lucidité, c'est du surajustement. Les fluctuations normales d'un classement dépassent largement l'effet d'un mois de travail sérieux, comme le rappelle notre texte sur [la comparaison sociale aux échecs](/fr/blog/comparaison-sociale-aux-echecs/). Un joueur qui remet tout en cause toutes les semaines ne construit rien.
 
-Le critère n'est donc pas « toujours réviser », mais **réviser sur des agrégats**. Trente parties disent quelque chose. Une n'en dit rien.
+Le critère n'est donc pas « toujours réviser », mais **réviser sur des agrégats**. Trente parties disent quelque chose. Une seule n'apprend pas grand-chose.
 
-**Quand la révision arrive au mauvais moment.** Pendant un tournoi, entre deux rondes, la question « suis-je vraiment le joueur que je crois » est la pire qui soit. Elle consomme exactement la ressource dont la ronde suivante a besoin. La suppression volontaire, c'est-à-dire le report conscient et daté, est classée parmi les défenses les plus adaptatives dans notre article sur [les mécanismes de défense aux échecs](/fr/blog/mecanismes-de-defense-aux-echecs/). Différer n'est pas fuir, à condition de revenir.
+**Quand la révision arrive au mauvais moment.** Pendant un tournoi, entre deux rondes, la question « suis-je vraiment le joueur que je crois » est la pire qui soit. Elle consomme exactement la ressource dont la ronde suivante a besoin. La suppression volontaire, c'est-à-dire le report conscient et daté, est classée parmi les défenses les plus adaptatives dans notre texte sur [les mécanismes de défense aux échecs](/fr/blog/mecanismes-de-defense-aux-echecs/). Différer n'est pas fuir, à condition de revenir.
 
 **Quand le coût dépasse le bénéfice.** Toute révision n'en vaut pas la peine. Découvrir qu'on a une lacune dans un type de finale qu'on rencontre une fois par an est une information exacte et sans valeur pratique. La lucidité n'est pas une fin en soi : elle a un prix, et ce prix doit être payé là où il rapporte.
 
-Ce qui donne la formulation correcte de la thèse de cet article, et elle est plus étroite que son titre.
+Ce qui livre la formulation correcte de la thèse de ce texte, et elle est plus étroite que son titre.
 
 Le problème n'est pas que ton cerveau préfère avoir raison. C'est qu'il le préfère **de façon indiscriminée**, y compris dans les cas où la révision serait rentable, et qu'il ne dispose d'aucun mécanisme pour distinguer les cas.
 
@@ -219,13 +219,13 @@ C'est précisément ce qu'une trace écrite antérieure permet de faire. Elle ne
 
 ## Une remarque sur les sources
 
-Il faut dire quelque chose sur ce qui est apparu, article après article, en vérifiant les études citées.
+Il faut dire un mot sur ce qui est apparu, texte après texte, en vérifiant les études citées.
 
 Une proportion frappante des classiques présentés dans cette série **n'a pas survécu**.
 
 La courbe virale de Dunning-Kruger n'existe dans aucune publication de ses auteurs. Le paradigme de la dissonance a échoué dans une réplication menée en 2024 dans 39 laboratoires. Les 38 témoins de Kitty Genovese sont une invention journalistique. Le paradoxe du choix a un effet moyen quasiment nul sur 63 conditions. L'effet Pygmalion est à 0,11. Le test du marshmallow perd les deux tiers de son effet une fois le milieu familial pris en compte. Seligman a publié en 2016 que sa propre théorie de 1967 avait le mécanisme à l'envers. Et l'expérience fondatrice de la psychologie sociale, celle de Triplett en 1898, n'était pas statistiquement significative.
 
-Ce n'est pas une raison de rejeter la psychologie. C'est une raison de la lire comme le reste.
+Ce n'est pas un motif pour rejeter la psychologie. C'est un motif pour la lire comme le reste.
 
 Ce qui a le mieux tenu, sur l'ensemble de la série, présente une régularité intéressante : les protocoles **préenregistrés**, les mesures **indépendantes du jugement du sujet**, et les études où le critère de vérification est **extérieur** à l'expérimentateur.
 
@@ -235,7 +235,7 @@ Ce n'est pas une coïncidence. C'est le même problème, à deux échelles.
 
 ## Alors pourquoi préférer apprendre ?
 
-Reste la question qui donne son titre à cet article, et elle mérite une réponse qui ne soit pas morale.
+Reste la question qui donne son titre à ce texte, et elle mérite une réponse qui ne soit pas morale.
 
 Avoir raison est agréable, gratuit et immédiat. Apprendre est désagréable, coûteux et différé. Sur ces critères, avoir raison gagne à chaque fois.
 
@@ -243,9 +243,9 @@ L'argument en faveur de l'apprentissage n'est donc pas qu'il serait plus vertueu
 
 Chaque défaite expliquée en trois minutes est une défaite qui ne t'a rien coûté et rien rapporté. Elle est nette. Chaque défaite examinée coûte un après-midi désagréable et laisse quelque chose qui sera encore là dans cinq ans.
 
-Sur une partie, la première option est clairement meilleure. Sur mille parties, elle produit un joueur qui a beaucoup joué et qui n'a pas bougé, ce que tout club connaît.
+Sur une seule partie, la première option est clairement meilleure. Sur mille parties, elle produit un joueur qui a beaucoup joué et qui n'a pas bougé, ce que tout club connaît.
 
-C'est aussi ce qui rend ce jeu intéressant. Il ne récompense pas la sincérité, il ne récompense pas l'effort, il ne récompense pas la bonne volonté. Il récompense exactement une chose : le fait d'avoir corrigé quelque chose. Et il tient les comptes.
+C'est aussi ce qui rend ce jeu intéressant. Il ne récompense pas la sincérité, il ne récompense pas l'effort, il ne récompense pas la bonne volonté. Il récompense exactement un point : le fait d'avoir corrigé quelque chose. Et il tient les comptes.
 
 ## Ce qu'il faut retenir
 
@@ -255,9 +255,9 @@ Six mécanismes s'en chargent, dans un ordre régulier. Un angle mort qui t'emp�
 
 Ils ont tous un point commun : ils agissent **après**, et ils réécrivent tous ce que tu pensais avant.
 
-D'où la seule parade qui soit apparue dans presque tous les articles de cette série, sans avoir été cherchée. Écris-le avant. Ton évaluation, ton calcul, ton explication, ton critère, ta règle. Une ligne, dix secondes.
+D'où la seule parade qui soit apparue dans presque tous les textes de cette série, sans avoir été cherchée. Écris-le avant. Ton évaluation, ton calcul, ton explication, ton critère, ta règle. Une ligne, dix secondes.
 
-Un texte daté est la seule chose dans toute cette affaire que ton cerveau ne peut pas modifier.
+Un texte daté est le seul élément dans toute cette affaire que ton cerveau ne peut pas modifier.
 
 **Après lecture :** ouvre un fichier, aujourd'hui, et écris une phrase : ce que tu penses être ta principale faiblesse aux échecs. Date-la. Rouvre-la dans un an. C'est le protocole entier de cette série, en une ligne.
 

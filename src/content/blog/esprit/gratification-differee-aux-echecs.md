@@ -60,7 +60,7 @@ La première est un coup d'attaque. Il crée des menaces immédiates, l'adversai
 
 La seconde consiste à améliorer un cavalier mal placé. Rien ne se passera. La position sera légèrement meilleure dans une dizaine de coups.
 
-Tu joues la première. Comme la plupart des joueurs de club, et comme l'auraient prédit trente ans de littérature sur la gratification différée.
+Tu joues la première. Comme la plupart des joueurs de club, et comme l'auraient prédit trente ans de littérature sur la gratification différée, cette capacité à retarder une récompense immédiate au profit d'un résultat meilleur mais plus lointain.
 
 Sauf que cette littérature vient d'être sérieusement revue à la baisse, et que ce qu'il en reste dit autre chose.
 
@@ -72,7 +72,7 @@ Le protocole est l'un des plus connus de la psychologie, et l'un des plus simple
 
 Puis l'adulte sort. On mesure le temps d'attente.
 
-L'expérience serait restée une curiosité si Mischel n'avait pas, des années plus tard, retrouvé certains de ces enfants. Les suivis rapportent une association entre le temps d'attente à quatre ans et divers résultats à l'adolescence : réussite scolaire, scores aux tests d'entrée à l'université, capacités d'adaptation.
+L'expérience serait restée une curiosité si Mischel n'avait pas, des années plus tard, retrouvé certains de ces enfants devenus grands. Les suivis rapportent une association entre le temps d'attente à quatre ans et divers résultats à l'adolescence : réussite scolaire, scores aux tests d'entrée à l'université, capacités d'adaptation. La corrélation avec un contrôle de soi précoce a longtemps semblé montrer qu'apprendre à résister à une récompense immédiate garantissait presque une grande réussite plus tard dans la vie.
 
 Le résultat devient un pilier de la psychologie du développement, puis du discours grand public sur la volonté et la réussite.
 
@@ -96,7 +96,7 @@ La lecture qui résiste est différente et bien plus intéressante.
 
 Attendre n'est rationnel **que si la promesse est tenue**. Un enfant dont l'expérience quotidienne enseigne que les adultes ne reviennent pas toujours, que ce qui est annoncé n'arrive pas, que ce qui est posé sur la table peut disparaître, prend la friandise. Ce n'est pas un déficit de volonté : c'est une **estimation correcte de son environnement**.
 
-La capacité à différer n'est donc pas seulement un trait de caractère. C'est en partie **une réponse apprise à la fiabilité du lien entre attente et récompense**.
+La capacité à différer n'est donc pas seulement un trait de caractère fixé une fois pour toutes, ni une simple question d'âge ou de maturité. C'est en partie **une réponse apprise à la fiabilité du lien entre attente et récompense**, une compétence de savoir attendre qui se construit avec l'expérience et le développement.
 
 Retiens cette formulation, parce qu'elle transforme complètement la question qui nous occupe.
 
@@ -146,7 +146,7 @@ Tout ce qui suit consiste à rendre la promesse tenable et constatable, plutôt 
 
 Ne mesure pas ton travail sur les finales par ton classement. Mesure-le par un test de finales : dix positions, un score, avant et après trois semaines de travail.
 
-Ce score est immédiat, attribuable et non bruité. Tu passes d'une promesse dans six mois à une vérification dans trois semaines, ce qui change la nature de la décision.
+Ce score est immédiat, attribuable et non bruité. Tu passes d'une promesse dans six mois à une vérification dans trois semaines, ce qui change la nature de la décision et rend la maîtrise obtenue enfin mesurable, plutôt que suspendue à un long terme incertain.
 
 ### 2. Rends la récompense présente
 

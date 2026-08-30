@@ -60,7 +60,7 @@ Tu calcules huit minutes. Tu vérifies l'ordre des coups. Tu prolonges jusqu'au 
 
 Il répond en quarante secondes par un coup que tu n'avais pas regardé. Pas un coup difficile : un coup que tu aurais trouvé en trente secondes si tu l'avais cherché. Mais tu ne l'as pas cherché.
 
-Voilà le sujet. Ton problème n'était pas le temps, tu en avais mis huit minutes. Ton problème est **la direction dans laquelle ces huit minutes ont été dépensées**.
+Voilà le sujet. Ton problème n'était pas le temps, tu en avais mis huit minutes. Ton problème est **la direction dans laquelle ces huit minutes ont été dépensées**. Parmi les biais cognitifs qui affectent la psychologie du joueur, celui-ci est probablement le plus difficile à percevoir de l'intérieur, parce que ton cerveau ne signale jamais qu'il vient de cesser de chercher.
 
 ## La démonstration de Wason
 

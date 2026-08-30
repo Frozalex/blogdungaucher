@@ -61,7 +61,7 @@ Salle de tournoi, ronde 2, catégorie moins de douze ans. La porte est fermée. 
 
 Un enfant sort. Il a perdu. Il traverse dix mètres de couloir vers son père.
 
-Ce que ce père va dire dans les quatre secondes qui suivent aura beaucoup plus d'effet sur la carrière échiquéenne de cet enfant que n'importe quelle leçon d'ouverture. Et il existe une théorie psychologique qui décrit précisément ce qui se joue dans ces quatre secondes.
+Ce que ce père va dire dans les quatre secondes qui suivent aura beaucoup plus d'effet sur la carrière échiquéenne de cet enfant que n'importe quelle leçon d'ouverture. Et il existe une théorie psychologique qui décrit précisément ce qui se joue dans ces quatre secondes, et comment un enfant apprend à gérer ses émotions à partir de ce qu'il lit sur ce visage.
 
 ## La base de sécurité
 
@@ -81,7 +81,7 @@ Dans les années 1960 et 1970, [Mary Ainsworth](https://fr.wikipedia.org/wiki/Ma
 
 Un enfant d'environ un an, sa mère et une personne inconnue, dans une pièce avec des jouets. Huit épisodes courts, incluant deux séparations et deux retrouvailles. Ce qu'on observe n'est pas la détresse pendant la séparation, contrairement à ce qu'on croit souvent, mais **le comportement au moment des retrouvailles**.
 
-Trois profils s'en dégagent, un quatrième sera ajouté plus tard. L'enfant sécurisé proteste au départ, accueille le retour, se console et retourne jouer. L'enfant évitant semble indifférent au départ comme au retour, tout en présentant des signes physiologiques de stress. L'enfant ambivalent est très éprouvé par la séparation et difficile à consoler au retour, oscillant entre demande et rejet.
+Trois profils s'en dégagent, un quatrième sera ajouté plus tard. L'enfant sécure proteste au départ, accueille le retour, se console et retourne jouer : c'est le modèle qui gère le mieux le stress de la séparation. L'enfant évitant semble indifférent au départ comme au retour, tout en présentant des signes physiologiques de stress. L'enfant ambivalent est très éprouvé par la séparation et difficile à consoler au retour, oscillant entre demande et rejet.
 
 ### Ce que le protocole mesure aussi
 
@@ -97,7 +97,7 @@ Conclusion à retenir : le protocole mesure un mélange de qualité du lien **et
 
 En 1987, Cindy Hazan et Phillip Shaver proposent que ce système ne disparaît pas à l'âge adulte, mais se transporte vers les relations proches. Leur travail ouvre tout un champ, avec ses propres controverses, notamment sur la stabilité réelle d'un style d'attachement au cours d'une vie.
 
-Puis la question arrive dans le sport. En 2010, Louise Davis et Sophia Jowett testent une hypothèse simple : **l'entraîneur remplit-il les fonctions d'une figure d'attachement ?** Leur réponse est oui. Un entraîneur est recherché en cas de difficulté, sert de refuge après l'échec, et sert de base depuis laquelle l'athlète ose prendre des risques. Les styles d'attachement des athlètes sont associés à la qualité de la relation, en particulier au soutien social perçu, à la profondeur du lien et au niveau de conflit interpersonnel.
+Puis la question arrive dans le sport. En 2010, Louise Davis et Sophia Jowett testent une hypothèse simple : **l'entraîneur remplit-il les fonctions d'une figure d'attachement ?** Leur réponse est oui. Un entraîneur est recherché en cas de difficulté, sert de refuge après l'échec, et sert de base depuis laquelle l'athlète ose prendre des risques. Les styles d'attachement des athlètes sont associés à la qualité de la relation, en particulier au soutien social perçu, à la profondeur du lien, à la manière dont ils gèrent leurs émotions en compétition et au niveau de conflit interpersonnel.
 
 ## Pourquoi les échecs sont un cas à part
 
@@ -111,7 +111,7 @@ Il en découle trois conséquences.
 
 **L'enfant vit l'épreuve entièrement seul.** Pas de mi-temps, pas de coach au bord du terrain, pas de coéquipier. C'est le sujet de notre article sur [la solitude aux échecs](/fr/blog/echecs-et-la-solitude/), et c'est aggravé quand on a dix ans.
 
-**Le parent ne reçoit qu'un résultat.** Aucun contexte, aucune nuance, aucune image de l'effort fourni. Juste une lettre sur une feuille d'appariement. Ce qui, mécaniquement, concentre toute son attention sur cette lettre.
+**Le parent ne reçoit qu'un résultat.** Aucun contexte, aucune nuance, aucune image de l'effort fourni. Juste une lettre sur une feuille d'appariement. Ce qui, mécaniquement, concentre toute son attention sur cette lettre, faute d'autres informations pour nuancer son jugement.
 
 **La rencontre est brutale et immédiate.** L'enfant passe en trois secondes de la table à un visage. Et il lit ce visage avant même d'entendre la phrase. Dans le vocabulaire de Bowlby, ce moment est une **retrouvaille**, exactement au sens de la situation étrange. C'est là que se vérifie si la base est fiable.
 
@@ -131,7 +131,7 @@ L'enfant, qui est un excellent lecteur de visages parce que c'est une compétenc
 
 Les échecs favorisent des relations pédagogiques longues et exclusives. Un enfant peut travailler avec le même entraîneur pendant des années, souvent en tête-à-tête, sur un objet qui structure toute son identité.
 
-C'est une configuration puissante quand elle fonctionne : Davis et Jowett montrent qu'un entraîneur remplissant correctement la fonction de base de sécurité permet la prise de risque, donc la progression. On ose une ouverture nouvelle, un sacrifice, un tournoi trop fort, parce qu'on sait où revenir.
+C'est une configuration puissante quand elle fonctionne : Davis et Jowett montrent qu'un entraîneur remplissant correctement la fonction de base de sécurité permet la prise de risque, donc la progression, et facilite un apprentissage plus rapide des positions exigeantes. On ose une ouverture nouvelle, un sacrifice, un tournoi trop fort, parce qu'on sait où revenir.
 
 Et c'est une configuration à risque quand elle dérape. Une figure d'attachement dispose d'un levier qu'aucun professeur ordinaire ne possède : celui de rendre l'approbation conditionnelle. C'est ce qui rend certaines relations de coaching si difficiles à quitter, même quand elles font du mal. Notre article sur [le gaslighting aux échecs](/fr/blog/gaslighting-aux-echecs/) décrit un mécanisme voisin.
 

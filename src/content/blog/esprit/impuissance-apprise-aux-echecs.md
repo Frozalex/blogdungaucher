@@ -62,23 +62,23 @@ Le chiffre ne bouge pas.
 
 Alors tu joues encore, mais différemment. Tu abandonnes plus tôt. Tu ne prends plus la peine de chercher la ressource défensive dans les positions difficiles. Tu as commencé à dire, presque en plaisantant, que tu as atteint ton niveau.
 
-Il existe un nom pour cet état. Ce qui est intéressant, c'est que l'homme qui l'a nommé a publié cinquante ans plus tard un article expliquant qu'il s'était trompé sur le mécanisme, et que ce qu'il faut faire est presque l'inverse de ce qu'on croyait.
+Il existe un nom pour cet état, l'**impuissance apprise**, parfois traduite « impuissance acquise » ou par l'anglais *learned helplessness*. Le concept est né d'une expérience sur des chiens, avant d'être repris en psychologie scolaire, en thérapie comportementale et cognitive et dans le monde de l'entreprise pour expliquer pourquoi certains employés cessent de proposer des idées après plusieurs refus. Ce qui est intéressant, c'est que l'homme qui l'a nommé a publié cinquante ans plus tard un article expliquant qu'il s'était trompé sur le mécanisme, et que ce qu'il faut faire est presque l'inverse de ce qu'on croyait.
 
 ## L'expérience de 1967
 
-En 1967, [Martin Seligman](https://fr.wikipedia.org/wiki/R%C3%A9signation_apprise) et Steven Maier, alors à l'université de Pennsylvanie, conduisent une expérience devenue un classique.
+En 1967, [Martin Seligman](https://fr.wikipedia.org/wiki/R%C3%A9signation_apprise), alors jeune psychologue, et Steven Maier, alors à l'université de Pennsylvanie, conduisent une expérience devenue un classique sur des chiens.
 
-Le dispositif comporte trois groupes, ce qui est essentiel et souvent oublié.
+Le dispositif comporte trois groupes, ce qui est essentiel et souvent oublié dans les résumés simplifiés qu'on trouve un peu partout.
 
-Le premier groupe d'animaux reçoit des chocs électriques légers qu'il **peut interrompre** par une action. Le deuxième reçoit exactement les mêmes chocs, de même durée et de même intensité, mais **sans aucun moyen de les interrompre** : sa situation est appariée à celle du premier groupe. Le troisième ne reçoit rien.
+Le premier groupe de chiens reçoit des chocs électriques légers qu'il **peut interrompre** par une action, en appuyant sur un panneau avec le museau. Le deuxième reçoit exactement les mêmes chocs électriques, de même durée et de même intensité, mais **sans aucun moyen de les interrompre** : sa situation est appariée à celle du premier groupe, seul change le contrôle. Le troisième ne reçoit rien.
 
-Ce point est ce qui fait la valeur du protocole : les deux premiers groupes reçoivent la même quantité de chocs. La seule différence est le **contrôle**.
+Ce point est ce qui fait la valeur du protocole : les deux premiers groupes reçoivent la même quantité de chocs. La seule différence est le **contrôle** sur l'événement, pas l'événement lui-même.
 
-Ensuite, tous les animaux sont placés dans une situation nouvelle où il suffit de franchir une barrière basse pour éviter le choc. C'est facile, et visible.
+Ensuite, tous les chiens sont placés dans une situation nouvelle, une cage à deux compartiments, où il suffit de franchir une barrière basse pour éviter le choc. C'est facile, et visible depuis n'importe quelle position dans la cage.
 
-Les animaux du premier et du troisième groupe apprennent rapidement à franchir la barrière. Ceux du deuxième groupe, dans une large proportion, **ne l'essaient même pas**. Ils restent, et ils encaissent.
+Les chiens du premier et du troisième groupe apprennent rapidement à franchir la barrière. Ceux du deuxième groupe, dans une large proportion, **ne l'essaient même pas**. Ils restent couchés, et ils encaissent, alors même que la fuite était à leur portée.
 
-Seligman en tire une théorie : l'organisme a **appris** que ses actions n'avaient pas d'effet, et il généralise cet apprentissage à une situation où il en aurait pourtant. Le concept est ensuite étendu à la dépression humaine et devient l'un des plus influents de la psychologie du vingtième siècle.
+Seligman en tire une théorie : l'organisme a **appris** que ses actions n'avaient pas d'effet, et il généralise cet apprentissage à une situation où il en aurait pourtant. Le concept d'impuissance apprise est ensuite étendu à la dépression humaine et devient l'un des plus influents de la psychologie du vingtième siècle, y compris dans le champ de la thérapie, où il inspire des protocoles centrés sur la restauration du sentiment de contrôle. En milieu scolaire, on retrouve la même mécanique décrite chez un élève qui multiplie les mauvaises notes malgré ses efforts, et qui finit par se dire que rien de ce qu'il fera n'y changera rien, un raccourci qui ressemble beaucoup à celui du joueur d'échecs bloqué sur un plateau.
 
 ## Le renversement de 2016
 
@@ -96,11 +96,13 @@ Ce qui est appris, c'est **le contraire**. Le cortex préfrontal médian détect
 
 Reformulé simplement : **on n'apprend pas l'impuissance, on apprend le contrôle**. Et quand cet apprentissage n'a pas lieu, ce qui reste est l'état de base.
 
+Cette découverte a des conséquences bien au-delà du laboratoire. Elle explique en partie pourquoi certaines approches issues de la thérapie comportementale et cognitive, qui cherchent à faire vivre des expériences concrètes de réussite plutôt qu'à convaincre par le discours, obtiennent de meilleurs résultats contre la passivité que les approches purement motivationnelles. Le sujet n'a pas besoin qu'on lui répète qu'il en est capable, il a besoin de le constater.
+
 ## Pourquoi ce renversement change tout
 
 Ce n'est pas une subtilité académique. Les deux versions conduisent à des interventions opposées.
 
-**Dans l'ancienne version**, un joueur bloqué a appris quelque chose de faux, à savoir que ses efforts sont sans effet. La solution est donc de le **désapprendre** : le convaincre, le remotiver, restaurer sa confiance. C'est le registre du discours et de la persuasion, et c'est très exactement ce que fait un entraîneur qui explique à son élève qu'il ne faut pas se décourager.
+**Dans l'ancienne version**, un joueur bloqué a appris quelque chose de faux, à savoir que ses efforts sont sans effet. La solution serait de le **désapprendre** : le convaincre, le remotiver, restaurer sa confiance. C'est le registre du discours et de la persuasion, celui qu'emprunte souvent une thérapie centrée sur l'estime de soi, et c'est très exactement ce que fait un entraîneur qui explique à son élève qu'il ne faut pas se décourager.
 
 **Dans la nouvelle version**, il n'y a rien à désapprendre. Le joueur est simplement dans l'état par défaut, parce que le circuit de détection du contrôle **n'a rien détecté**. La solution n'est donc pas de le convaincre : c'est de lui fournir des situations où le contrôle est **effectif, visible et attribuable**.
 
@@ -118,7 +120,7 @@ Regarde le principal retour d'information dont dispose un joueur : le classement
 
 **Il dépend d'un tiers.** Ton résultat dépend autant de la forme de l'adversaire que de la tienne.
 
-**Il n'est pas attribuable.** Quand il monte, tu ne sais pas ce qui a marché. Quand il baisse, tu ne sais pas ce qui a échoué.
+**Il n'est pas attribuable.** Quand il monte, tu ne sais jamais vraiment ce qui a marché. Quand il baisse, tu ne sais pas ce qui a échoué. Cette incertitude entretient un stress diffus et une anxiété de performance qui n'ont rien à voir avec le niveau réel du joueur.
 
 Autrement dit, le classement possède **toutes les propriétés d'un signal dont on ne peut pas extraire un contrôle**. C'est exactement la condition du deuxième groupe de Seligman : les événements arrivent, ils sont réels, et le lien avec l'action est indétectable.
 
@@ -130,7 +132,15 @@ Ce qui suggère une conclusion peu intuitive : **la stagnation prolongée n'est 
 
 **L'arrêt de l'effort en cours de session.** Après une défaite, les parties suivantes sont jouées à moitié. Ce n'est pas du tilt au sens de la colère, décrit dans notre article sur [échecs et colère](/fr/blog/echecs-et-colere-ragequit/) : c'est plus froid, plus résigné. Le comportement est là, l'investissement n'y est plus.
 
-**Les croyances figées.** « Je suis nul en finales. » « Je ne comprends rien aux positions fermées. » Ces phrases sont des zones déclarées hors de portée, donc jamais travaillées, ce qui les rend vraies. Elles fonctionnent aussi comme prophéties auto-réalisatrices, ce qui fait l'objet d'un article à venir de cette série.
+**Les croyances figées.** « Je suis nul en finales. » « Je ne comprends rien aux positions fermées. » Ces phrases sont des zones déclarées hors de portée, donc jamais travaillées, ce qui les rend vraies. Elles fonctionnent aussi comme prophéties auto-réalisatrices, ce qui fait l'objet d'un article à venir de cette série, et elles entretiennent un cercle vicieux assez proche de celui observé chez un élève en échec scolaire : moins on essaie, moins on progresse, et moins on progresse, plus la croyance initiale semble confirmée.
+
+Ce mécanisme touche aussi le rapport à l'effort en dehors des parties elles-mêmes. Un joueur qui a intégré l'idée que rien ne sert à rien réduit spontanément le temps consacré à l'entraînement, alors même que c'est précisément ce moment qui pourrait lui fournir la preuve du contraire. L'anxiété de performance qui accompagne souvent ce stade n'aide pas : elle pousse à éviter les formats où l'échec serait visible, comme les tournois classiques, au profit de parties rapides où une défaite se dilue vite dans la suivante.
+
+## Impuissance apprise et dépression : un lien à ne pas surinterpréter
+
+Le concept d'impuissance apprise a longtemps servi de modèle animal de la dépression humaine. L'idée était que la dépression, comme l'impuissance apprise du deuxième groupe de chiens, naissait d'une exposition répétée à des événements incontrôlables. Le renversement de 2016 ne détruit pas ce lien, il le précise : dans les deux cas, le problème n'est pas un excès d'apprentissage négatif, c'est un déficit de détection du contrôle.
+
+Cela ne veut pas dire qu'un joueur stagnant est en dépression, loin de là. Mais la parenté du mécanisme explique pourquoi les symptômes se ressemblent, un désengagement progressif, une anxiété diffuse, un sentiment que rien ne sert à rien, alors que les causes sont très différentes en intensité et en portée. Un vrai épisode dépressif dépasse largement le cadre de cet article et relève d'un accompagnement professionnel, pas d'un changement de méthode d'entraînement.
 
 ## Le protocole, dérivé du bon mécanisme
 
@@ -146,7 +156,7 @@ Ce ne sont pas des consolations pour joueur découragé. Du point de vue du méc
 
 ### 2. Rends les progrès attribuables
 
-Un progrès dont on ignore la cause n'apprend rien. Travaille une chose à la fois, pendant assez longtemps pour que le résultat lui soit imputable, et note ce que tu travailles et ce que tu mesures.
+Un progrès dont on ignore la cause n'apprend rien. Travaille une chose à la fois, pendant assez longtemps pour que le résultat lui soit imputable, et note ce que tu travailles et ce que tu mesures. C'est la meilleure façon d'échapper à l'ambiguïté qui nourrit l'impuissance acquise.
 
 C'est aussi ce qui distingue un plan d'entraînement d'une accumulation de contenus.
 
@@ -159,6 +169,16 @@ L'objectif n'est pas de sauver des parties perdues, il est de **produire des cas
 ### 4. Traite les croyances figées comme des hypothèses testables
 
 « Je suis nul en finales » est une affirmation vérifiable. Va chercher ton pourcentage réel dans les finales de tours. Il est souvent moins mauvais que la croyance, et parfois il est exact, auquel cas tu tiens un plan de travail au lieu d'une identité.
+
+### 5. Sépare l'effort de la performance
+
+C'est le point sur lequel la thérapie comportementale et cognitive insiste le plus, souvent résumé par la formule « je peux contrôler mon effort, je ne contrôle pas mon résultat ». Note chaque semaine ce que tu as réellement travaillé, indépendamment de tes résultats en partie. C'est un signal que rien ne peut brouiller, ni la forme de l'adversaire, ni la variance d'une série de parties rapides.
+
+## Ce que ce n'est pas
+
+Sortir d'un plateau par le changement de signal n'a rien à voir avec la pensée positive ou l'auto-persuasion. Se répéter qu'on va y arriver, sans preuve, entretient au contraire l'écart entre le discours et l'expérience vécue, ce qui use la confiance plus vite qu'il ne la restaure. Le protocole décrit ici ne demande aucune croyance préalable : il fournit des faits, et laisse le cerveau en tirer ses propres conclusions.
+
+Ce n'est pas non plus une méthode réservée aux joueurs stagnants. Un débutant peut l'appliquer dès le début, pour éviter que l'habitude de mesurer sa valeur au seul classement ne s'installe. C'est plus facile à construire qu'à corriger, comme pour beaucoup d'habitudes décrites dans notre article sur [la formation des habitudes aux échecs](/fr/blog/formation-des-habitudes-aux-echecs/).
 
 ## Ce qu'il faut retenir
 

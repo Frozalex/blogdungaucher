@@ -74,6 +74,8 @@ Son exemple canonique est une banque solvable. Une rumeur d'insolvabilité se r�
 
 Ce dernier point est l'essentiel : **la boucle produit sa propre confirmation**. Non seulement la croyance se réalise, mais elle apparaît rétrospectivement comme une lucidité.
 
+Merton s'appuie sur une intuition plus ancienne, le théorème de Thomas, formulé par le sociologue William Isaac Thomas dans les années 1920 : si des hommes définissent des situations comme réelles, elles sont réelles dans leurs conséquences. Une croyance n'a pas besoin d'être vraie pour produire des effets réels ; il lui suffit d'être crue et d'orienter le comportement en conséquence.
+
 ## L'effet Pygmalion, et ses problèmes
 
 Le versant expérimental le plus célèbre date de 1968. Robert Rosenthal et Lenore Jacobson publient *Pygmalion in the Classroom*.
@@ -159,6 +161,12 @@ Il faut mentionner l'autre sens, moins commenté et bien réel.
 Le coût est ailleurs : dans tout ce que l'identité a exclu. Un joueur d'attaque qui ne travaille jamais la technique atteint un plafond, et ce plafond est produit par la même croyance qui l'a fait progresser.
 
 C'est aussi pour cette raison que les profils de style, traités dans notre article sur [l'effet Barnum aux échecs](/fr/blog/effet-barnum-aux-echecs/), ne sont pas inoffensifs : une description devient un programme.
+
+## Ce que Merton et Raudenbush ont en commun
+
+Les deux travaux racontent une version différente de la même situation. Merton décrit comment une croyance fausse, une fois installée, produit le comportement qui la rend vraie. Raudenbush montre à quel moment précis cette attente a le plus de pouvoir : au tout début, avant que des faits indépendants aient eu le temps de s'accumuler.
+
+Un enseignant qui découvre un élève sans idée préconçue observe. Un enseignant qui reçoit une étiquette avant même la première rencontre interprète. C'est exactement la différence entre toi face à une position que tu découvres et toi face à une position que ta croyance sur ton propre niveau a déjà classée d'avance comme perdue ou gagnée.
 
 ## Le protocole
 

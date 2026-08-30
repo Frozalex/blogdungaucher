@@ -62,7 +62,7 @@ Sortie de salle, tournoi de club, ronde 3. Trois joueurs viennent de perdre. Éc
 
 Aucun des trois ne ment. C'est ce qui rend le phénomène intéressant. Le premier était probablement gagnant. Le deuxième avait probablement calculé. Le troisième pense sincèrement ce qu'il dit sur les cadences rapides.
 
-Et pourtant, quelque chose vient de se produire dans leur tête, en moins de trois minutes, qui a très peu à voir avec les échecs.
+Et pourtant, quelque chose vient de se produire dans leur tête, en moins de trois minutes, qui a très peu à voir avec les échecs, et beaucoup avec l'une des théories les plus solides de la psychologie sociale.
 
 ## L'inconfort, et ce qu'on en fait
 
@@ -156,6 +156,14 @@ La distinction à faire est celle-ci : la dissonance cognitive est une **excelle
 
 Et si tu trouves inconfortable qu'un article sur la dissonance cognitive vienne saper sa propre théorie, observe ce que tu es en train de faire de cet inconfort.
 
+## Ce que la dissonance n'est pas
+
+Une précision utile avant les leviers pratiques, parce que la confusion est fréquente dans les articles de vulgarisation sur ce sujet.
+
+La dissonance cognitive n'est pas un manque de caractère ni un signe de mauvaise foi. C'est un mécanisme cognitif ordinaire, présent chez tous les joueurs, y compris les plus honnêtes intellectuellement. La personne qui explique sa défaite en trois minutes ne cherche pas à tromper son entourage : elle cherche, sans même en avoir conscience, à faire cesser un inconfort réel. La théorie de Festinger décrit ce mécanisme avec précision, même si son socle expérimental historique s'est révélé plus fragile que sa popularité ne le laissait penser.
+
+C'est aussi ce qui distingue la dissonance d'un simple mensonge à soi-même. Un mensonge implique de connaître la vérité et de la nier. La dissonance, elle, opère avant que la question de la vérité ne soit même posée consciemment : l'explication apparaît comme une évidence, pas comme une invention.
+
 ## Quatre leviers
 
 **Retarde la résolution, ne l'empêche pas.** Tu ne peux pas décider de ne pas ressentir la dissonance. Tu peux décider de ne pas conclure tout de suite. La réduction opère surtout dans les minutes qui suivent la défaite, quand l'inconfort est maximal. Note les faits à chaud, sans interprétation : le coup où ça a basculé, ton évaluation à ce moment, ton temps restant. Analyse vingt-quatre heures plus tard. La conclusion tirée à froid n'est pas la même.
@@ -165,6 +173,12 @@ Et si tu trouves inconfortable qu'un article sur la dissonance cognitive vienne 
 **Fixe le critère d'abandon avant d'investir.** C'est le remède direct à la justification de l'effort, et il doit être posé à l'avance, quand l'investissement est encore nul. Avant de commencer un répertoire, écris ce qui te ferait l'abandonner : un score sous 40 % sur trente parties, par exemple. Écrit après coup, le critère sera négocié. Écrit avant, il tient.
 
 **Traite tes coups comme des hypothèses.** Un coup n'est pas une promesse. La question après un coup douteux n'est pas « comment justifier ce que j'ai joué » mais « quelle est la meilleure suite depuis cette position, celle-ci, maintenant ». C'est aussi le remède au [biais d'ancrage](/fr/blog/5-biais-cognitifs-blunder/), et ce n'est pas un hasard : les deux consistent à refuser de repartir de la position réelle.
+
+## Un mécanisme enseigné partout, testé nulle part comme il faudrait
+
+La dissonance cognitive figure dans quasiment tous les manuels d'introduction à la psychologie sociale, et Festinger reste l'un des noms les plus cités du domaine. Cette popularité a un revers : la théorie a longtemps été enseignée comme un fait établi, avant même que ses fondations expérimentales ne soient réexaminées avec les standards actuels de la recherche.
+
+Ce décalage entre la réputation d'une théorie et la solidité réelle de ses preuves n'a rien de propre à la dissonance cognitive. La psychologie sociale traverse depuis une décennie une période de réplication qui a fragilisé plusieurs de ses résultats les plus enseignés. Ce qui distingue la dissonance, c'est que le comportement qu'elle décrit reste observable, même quand l'explication théorique d'origine perd en solidité.
 
 ## Ce qu'il faut retenir
 

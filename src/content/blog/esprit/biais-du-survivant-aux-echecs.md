@@ -64,6 +64,8 @@ Et il a des preuves. Il te montre la partie où l'adversaire a pris le pion, pui
 
 Ce sont de vraies parties. Elles se sont vraiment passées. Et pourtant sa conclusion est fausse, pour une raison qui n'a rien à voir avec les échecs et tout à voir avec ce qu'il est possible de raconter.
 
+Ce raisonnement porte un nom en psychologie cognitive : le biais du survivant. C'est un cas particulier d'un phénomène plus large, le biais de sélection, qui touche toute conclusion tirée à partir d'un échantillon filtré sans qu'on en tienne compte. Aux échecs, ce biais du survivant est partout, et il est particulièrement difficile à repérer parce que ce qui a été éliminé du champ d'observation ne laisse, par définition, aucune trace visible.
+
 ## Les avions qui rentraient
 
 L'histoire est devenue le raccourci universel pour expliquer ce biais, et elle mérite d'être racontée correctement, parce que la version qui circule est elle-même déformée.
@@ -84,7 +86,9 @@ L'image que tout le monde associe à cette histoire, une silhouette de bombardie
 
 Ses mémorandums sont restés confidentiels jusqu'en 1980, et ont été portés à la connaissance du public par Marc Mangel et Francisco Samaniego dans le *Journal of the American Statistical Association* en 1984. La Société américaine de mathématiques note que plusieurs des détails les plus savoureux de l'anecdote sont invérifiables.
 
-Autrement dit : l'histoire la plus célèbre sur le biais du survivant a survécu en perdant tout ce qui la rendait compliquée. Elle a franchi le filtre de la répétition parce qu'elle était racontable. C'est exactement le mécanisme qu'elle décrit.
+Autrement dit : l'histoire la plus célèbre sur le biais du survivant a survécu en perdant tout ce qui la rendait compliquée. Elle a franchi le filtre de la répétition parce qu'elle était racontable. C'est exactement le mécanisme qu'elle décrit : dès qu'un échantillon est filtré avant d'être observé, aucune conclusion tirée sur ce sous-ensemble ne vaut pour l'ensemble d'origine, même si chaque élément de ce sous-ensemble est parfaitement réel.
+
+Ce biais cognitif se retrouve dans énormément de domaines qui n'ont rien à voir avec l'aviation militaire. En finance, les fonds d'investissement qui ont fait faillite disparaissent des statistiques de performance, ce qui gonfle artificiellement la rentabilité moyenne apparente des fonds survivants. En entreprise, on célèbre les entrepreneurs qui ont réussi sans jamais comptabiliser les entreprises comparables qui ont échoué avec la même stratégie. Dans chaque cas, la mécanique est identique : les survivants sont visibles et racontent leur histoire, les autres ont simplement disparu du champ d'observation.
 
 ## Ce que le filtre élimine aux échecs
 
@@ -116,7 +120,7 @@ Maintenant, réfléchis à l'origine des conseils que tu reçois. Les livres de 
 
 Ce n'est pas un scandale, c'est même normal : on ne demande pas à quelqu'un qui a échoué comment réussir. Mais le corpus qui en résulte a une propriété gênante. **On ne dispose que de la branche gagnante.** Si dix mille joueurs ont appliqué la même méthode et que quinze sont devenus forts, ce sont ces quinze qui écriront le livre, et ils décriront honnêtement ce qu'ils ont fait. Rien dans leur témoignage ne permet de distinguer ce qui a causé leur réussite de ce qui l'a simplement accompagnée.
 
-La question à se poser devant chaque conseil n'est donc pas « est-ce que ça a marché pour lui », mais **« combien de personnes ont fait pareil sans que ça marche »**. Cette information n'existe presque jamais. Son absence est le biais.
+La question à se poser devant chaque conseil n'est donc pas « est-ce que ça a marché pour lui », mais **« combien de personnes ont fait pareil sans que ça marche »**. Cette information n'existe presque jamais. Son absence est le biais. Les études sur la réussite sportive ou intellectuelle rencontrent le même problème : on interroge les réussites, jamais le compte complet des tentatives.
 
 ### 3. Les prodiges, et la famille dont personne n'a parlé
 
@@ -142,6 +146,14 @@ Le taux de réussite qu'il perçoit est le taux de réussite **de ses souvenirs*
 
 Et le remède, ici, est trivial. Sa base de parties contient la réponse exacte. Il lui suffit de filtrer sur l'ouverture et de lire le pourcentage. C'est le seul des quatre filtres qu'on peut lever en trente secondes, et c'est probablement pour ça que si peu de gens le lèvent.
 
+## Un biais cognitif, pas un mensonge
+
+Il faut insister sur un point avant de passer aux réflexes pratiques, parce qu'il change la manière d'aborder le problème.
+
+Ce biais cognitif ne repose sur aucune malhonnêteté. Les personnes qui racontent leur réussite ne mentent pas, et les joueurs qui vantent leur gambit favori ne trichent pas non plus avec la réalité de leurs parties. Le raisonnement lui-même est souvent impeccable : on observe des faits réels, on en tire une conclusion logique. Le défaut n'est pas dans le raisonnement, il est dans l'échantillon sur lequel ce raisonnement s'exerce. Pour l'éviter, il ne suffit donc pas de raisonner mieux : il faut changer la source des données avant même de commencer à raisonner.
+
+C'est exactement ce qui s'est joué avec les avions de la Seconde Guerre mondiale. Les ingénieurs de l'armée américaine avaient un raisonnement solide, une méthode de comptage rigoureuse, et une conclusion fausse, parce que l'échantillon des avions revenus de mission avait déjà éliminé les cas les plus informatifs. Le biais du survivant n'est pas une erreur qu'on repère en réfléchissant plus fort. C'est une erreur qu'on ne peut corriger qu'en allant chercher, activement, ce qui a disparu du champ de vision.
+
 ## Quatre réflexes
 
 **Demande le dénominateur.** Devant toute affirmation de réussite, la question utile n'est pas « combien ont réussi » mais « sur combien ». Un chiffre sans dénominateur n'est pas une statistique, c'est une anecdote.
@@ -159,6 +171,8 @@ Le biais du survivant n'est pas une erreur de raisonnement, c'est une erreur d'�
 Aux échecs, le filtre est partout et il est particulièrement discret, parce que ce qui a été éliminé n'a laissé aucune trace. La théorie des ouvertures décrit les chemins publiés. Les méthodes d'entraînement viennent des 0,35 % qui ont obtenu le titre. Les histoires de prodiges sont racontées par les familles où ça a marché. Ton gambit préféré est évalué par tes souvenirs les plus racontables.
 
 Aucune de ces sources ne ment. Elles décrivent toutes fidèlement les avions qui sont rentrés.
+
+Le club où tu joues a probablement, lui aussi, ses propres survivants : ce joueur qui a échoué deux fois avant de percer, présenté après coup comme un exemple de persévérance, quand dix autres personnes ayant échoué de la même façon ont simplement arrêté les échecs sans que personne ne raconte jamais leur histoire. Les chances de réussite qu'on prête rétrospectivement à une méthode dépendent presque toujours de qui a survécu assez longtemps pour la raconter.
 
 **Après lecture :** ouvre ta base de parties, filtre sur ton ouverture préférée, et lis ton pourcentage réel. Compare-le à celui que tu aurais annoncé de mémoire. L'écart, c'est le biais, mesuré sur toi.
 

@@ -64,23 +64,23 @@ Il existe un cadre qui rend ces abandons prévisibles, et qui explique aussi pou
 
 ## Trois besoins
 
-Edward Deci et Richard Ryan développent à partir des années 1980 une théorie de la motivation qui s'est imposée en psychologie de l'éducation et du sport.
+Edward Deci et Richard Ryan développent à partir des années 1980 une théorie de la motivation qui s'est imposée en psychologie de l'éducation, du sport et du travail. Elle éclaire aussi bien la motivation intrinsèque que la motivation extrinsèque : ce n'est pas l'origine de la motivation qui compte d'abord, mais ce qui la fait tenir dans la durée.
 
-Leur proposition centrale : la motivation durable ne dépend pas de la force du désir ni de l'importance de la récompense. Elle dépend de la satisfaction de **trois besoins psychologiques**.
+Leur proposition centrale : la motivation durable ne dépend pas de la force du désir ni de l'importance de la récompense externe. Elle dépend de la satisfaction de **trois besoins psychologiques fondamentaux**, dont la théorie postule qu'ils conditionnent le bien-être autant que la persévérance.
 
 **L'autonomie.** Le sentiment d'être à l'origine de ses propres actions. Non pas l'indépendance, mais le fait que ce qu'on fait vienne de soi plutôt que d'une contrainte.
 
-**La compétence.** Le sentiment d'être efficace, de progresser, d'avoir prise sur le résultat.
+**La compétence.** Le sentiment d'être efficace, de progresser, d'avoir prise sur le résultat, de développer ses compétences dans le temps.
 
-**L'affiliation.** Le sentiment d'être relié à d'autres, de compter pour quelqu'un, d'appartenir.
+**L'affiliation.** Le sentiment d'être relié à d'autres, de compter pour quelqu'un, d'appartenir à un groupe et d'entretenir des relations qui donnent du sens à la pratique.
 
-L'affirmation forte de la théorie est que ces trois besoins sont **nécessaires ensemble**. Une activité qui en satisfait deux sur trois peut fonctionner longtemps, mais elle est fragile, et son abandon paraîtra inexplicable à celui qui l'abandonne, puisque rien ne s'est dégradé du côté des deux autres.
+L'affirmation forte de la théorie est que ces trois besoins sont **nécessaires ensemble**. Une activité qui en satisfait deux sur trois peut fonctionner longtemps, mais elle est fragile, et son abandon paraîtra inexplicable à celui qui l'abandonne, puisque rien ne s'est dégradé du côté des deux autres. La tendance de fond, documentée dans de nombreux domaines, est qu'un déficit prolongé sur l'un des trois finit par produire un désengagement, parfois jusqu'à des troubles motivationnels plus marqués.
 
 ### Ce qui tient et ce qui est discuté
 
 Il faut poser la nuance habituelle.
 
-Le versant empirique le mieux soutenu concerne l'**autonomie**. Le lien entre un environnement qui soutient l'autonomie et la persévérance dans une activité est documenté dans de nombreux contextes, écoles, sport, santé, travail.
+Le versant empirique le mieux soutenu concerne l'**autonomie**. Le lien entre un environnement qui soutient l'autonomie et la persévérance dans une activité est documenté dans de nombreux contextes : écoles, sport, santé, travail, apprentissage.
 
 Le versant le plus discuté est l'affirmation que ces trois besoins seraient **fondamentaux et universels**. Cette proposition est difficile à falsifier : on peut presque toujours reformuler un cas problématique en termes de besoin non satisfait. Sa portée interculturelle a également été débattue, notamment sur l'autonomie, dont l'expression varie selon les contextes.
 
@@ -142,7 +142,7 @@ Et les prédictions correspondent à des phénomènes bien connus des clubs et d
 
 ## Le protocole
 
-**1. Fais le diagnostic à trois cases.** Note, de 0 à 5, où tu en es sur chaque besoin ce mois-ci. Autonomie : est-ce que je choisis vraiment ce que je fais ? Compétence : est-ce que je perçois un progrès attribuable ? Affiliation : est-ce que quelqu'un sait ce que je joue ?
+**1. Fais le diagnostic à trois cases.** Note, de 0 à 5, où tu en es sur chaque besoin ce mois-ci. Autonomie : est-ce que je choisis vraiment ce que je fais ? Compétence : est-ce que je perçois un progrès attribuable ? Affiliation : est-ce que quelqu'un sait ce que je joue ? Ce diagnostic simple aide à répondre à la vraie question, celle du besoin en déficit plutôt que celle du temps disponible.
 
 La case la plus basse est ton chantier. Ce n'est presque jamais celle que tu croyais.
 
@@ -152,7 +152,7 @@ Ce n'est pas une consolation sociale : c'est ce qui transforme une défaite en o
 
 **3. Répare la compétence par le signal, pas par le résultat.** Un plateau de classement n'est pas une absence de progrès, c'est une absence de mesure du progrès. Adopte un indicateur à boucle courte, comme le détaille notre article sur [l'impuissance apprise aux échecs](/fr/blog/impuissance-apprise-aux-echecs/).
 
-**4. Protège l'autonomie quand tu structures.** Un programme d'entraînement rigide peut dégrader le seul besoin que ta pratique satisfaisait bien. Garde une part de jeu sans objectif, choisie sur le moment.
+**4. Protège l'autonomie quand tu structures.** Un programme d'entraînement rigide, avec des objectifs imposés de l'extérieur, peut dégrader le seul besoin que ta pratique satisfaisait bien. Garde une part de jeu sans objectif, choisie sur le moment, en cohérence avec tes propres valeurs plutôt qu'avec une pression externe.
 
 **5. Si tu encadres des joueurs, regarde l'affiliation.** Pour un club ou un entraîneur, c'est le levier le plus rentable, parce que c'est le seul que le jeu en ligne ne fournit pas et donc le seul qui rende un club irremplaçable.
 

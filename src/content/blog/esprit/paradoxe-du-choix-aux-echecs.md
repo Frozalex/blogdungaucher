@@ -60,7 +60,7 @@ Tu as le choix entre la Sicilienne, la Française, la Caro-Kann, la Scandinave, 
 
 Trois semaines plus tard, tu n'as pas commencé. Tu as regardé sept vidéos, acheté deux livres et changé d'avis quatre fois.
 
-Il existe un nom populaire pour ça, et il se trouve que ce nom désigne un effet que la recherche n'a pas confirmé. Ce qui ne veut pas dire que ton problème est imaginaire : il veut dire qu'il faut le regarder ailleurs.
+Il existe un nom populaire pour ça, et il se trouve que ce nom désigne un effet que la recherche n'a pas confirmé. Ce qui ne veut pas dire que ton problème est imaginaire : il veut dire qu'il faut le regarder ailleurs, du côté de la manière dont un joueur gère ses ressources plutôt que du nombre brut d'options.
 
 ## Les confitures
 
@@ -104,7 +104,7 @@ Les travaux ultérieurs ont proposé plusieurs conditions favorables, et il se t
 
 **Quand on n'a pas l'expertise pour évaluer les options.** C'est le point décisif, et il est structurel : **le choix d'un répertoire demande une compétence que l'on n'aura qu'après avoir joué le répertoire**. C'est la même asymétrie que celle décrite dans notre article sur [la psychologie de la persuasion aux échecs](/fr/blog/psychologie-de-la-persuasion-aux-echecs/).
 
-Ces trois conditions sont réunies presque parfaitement aux échecs. Ce qui explique pourquoi la difficulté est réelle, même si l'effet général ne l'est pas.
+Ces trois conditions sont réunies presque parfaitement aux échecs. Ce qui explique pourquoi la difficulté est réelle, même si l'effet général ne l'est pas : les joueurs consacrent des ressources d'attention considérables à comparer des options qu'ils ne savent pas encore juger.
 
 ## Le vrai coût n'est pas celui qu'on croit
 
@@ -122,7 +122,7 @@ Et cette perte est bien plus profonde qu'un simple oubli de variantes. Ce qui se
 
 C'est aussi ce qui rend la comparaison avec les confitures trompeuse. Un pot de confiture se consomme et se remplace. Un répertoire est un investissement dont le rendement croît avec le temps de détention.
 
-Ce qui suggère une reformulation : le problème n'est pas **combien** d'options, c'est **combien de temps** on garde celle qu'on a prise.
+Ce qui suggère une reformulation : le problème n'est pas **combien** d'options, c'est **combien de temps** on garde celle qu'on a prise. Les erreurs coûteuses ne viennent pas du choix initial, mais de l'instabilité qui suit.
 
 ### La force qui rend le changement séduisant
 
@@ -146,7 +146,7 @@ Un exemple de critère : je joue cette ouverture pendant 100 parties classées m
 
 Puisque le choix demande une compétence que seule la pratique procure, l'optimisation initiale est largement illusoire. Presque toutes les ouvertures respectables mènent à des positions jouables à ton niveau.
 
-Un critère suffit : prends celle dont les positions te plaisent quand tu les regardes. C'est un critère sérieux, parce que ce que tu aimes regarder est ce que tu travailleras réellement.
+Un critère suffit : prends celle dont les positions te plaisent quand tu les regardes. C'est un critère sérieux, parce que ce que tu aimes regarder est ce que tu travailleras réellement, et c'est cette stratégie de choix rapide qui limite le risque de te tromper sur un critère que tu ne sais pas encore évaluer.
 
 ### 3. Réduis les dimensions plutôt que les options
 

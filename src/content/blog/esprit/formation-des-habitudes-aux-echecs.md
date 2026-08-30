@@ -60,7 +60,7 @@ Chaque année, la même scène.
 
 Tu décides que cette fois c'est la bonne. Trente minutes de tactique par jour. Une partie longue par semaine, analysée sérieusement. Un chapitre de finales le dimanche.
 
-Trois semaines plus tard, il ne reste rien. Sauf, curieusement, une chose : tu as joué quarante parties de blitz.
+Trois semaines plus tard, il ne reste rien de tes objectifs de départ. Sauf, curieusement, une chose : tu as joué quarante parties de blitz.
 
 L'explication habituelle est la discipline. Elle est fausse, et surtout elle est inutile, parce qu'elle ne suggère aucune action. L'explication réelle est que **tu as déjà une habitude parfaitement formée aux échecs**, et que tout ce qui la rend si solide manque à ton plan d'entraînement.
 
@@ -112,6 +112,14 @@ Une habitude n'est pas une intention. « Je veux travailler mes finales » est u
 
 Et c'est exactement là que ton plan d'entraînement s'effondre : il ne contient aucune habitude. Il contient des intentions, des quantités et des projets, dont chacun exige une décision consciente à chaque occurrence. Or la décision consciente est une ressource épuisable, contrairement à l'automatisme.
 
+## Pourquoi le mot « habitude » est mal choisi pour un plan d'entraînement
+
+Il y a une confusion de vocabulaire qui mérite d'être nommée, parce qu'elle explique une bonne partie des échecs de méthode.
+
+Quand tu écris « je veux prendre l'habitude de m'entraîner », tu emploies le mot habitude pour désigner en réalité un **objectif**. Un objectif décrit un résultat souhaité, pas un mécanisme pour l'atteindre. « Progresser aux échecs », « avoir un meilleur niveau », « tenir un plan sérieux » sont tous des objectifs, légitimes, mais qui ne se traduisent en rien d'exécutable tant qu'ils n'ont pas été décomposés en actions déclenchées.
+
+C'est là que la plupart des plans échouent avant même de commencer : ils listent des objectifs, parfois très détaillés, sans jamais descendre au niveau de l'action unique et du signal. Un plan qui contient la ligne « 30 minutes de tactique par jour » a l'air concret, mais il ne l'est pas, au sens où l'entend la recherche sur les habitudes : c'est un budget de temps, pas un déclenchement. Rien ne dit quand, ni à partir de quel signal, ni ce qui se passe si le moment prévu est raté.
+
 ## Le problème propre aux échecs
 
 Maintenant, compare les deux comportements qui te concernent.
@@ -136,7 +144,7 @@ Applique la même grille à ta séance de tactique.
 
 **Un coût d'entrée élevé.** Quel exercice, quel niveau, quel thème, quelle durée, sur quel support. Chaque question est une décision, et chaque décision est une occasion d'abandonner.
 
-**Une récompense différée et bruitée.** Le bénéfice arrive dans plusieurs semaines, sous forme de progression de classement, laquelle est de toute façon noyée dans les fluctuations normales. Tu ne peux pas percevoir le lien entre la séance de mardi et le gain de quinze points en mars.
+**Une récompense différée et bruitée.** Le bénéfice arrive dans plusieurs semaines, sous forme de progression de classement, laquelle est de toute façon noyée dans les fluctuations normales. Tu ne peux pas percevoir le lien entre la séance de mardi et le gain de quinze points en mars. C'est pour ça que « progresser aux échecs » ne fonctionne jamais comme moteur d'une habitude : le retour est trop lent pour renforcer quoi que ce soit.
 
 Conclusion : **tu n'as pas un problème de volonté, tu as un problème de conception**. Tu essaies d'installer un comportement qui ne possède aucune des propriétés qui rendent un comportement installable, en concurrence directe avec un comportement qui les possède toutes.
 
@@ -167,7 +175,7 @@ Une. Pas trois.
 
 Et si tu devais n'en installer qu'une aux échecs, la plus rentable a un avantage décisif : **son déclencheur est parfait**. C'est la vérification avant de jouer un coup, au moment où la main se tend vers la pièce. Ce signal est net, il se produit trente fois par partie, et il ne demande aucune organisation.
 
-Une seule question, toujours la même : *qu'est-ce qu'il menace maintenant ?* Trois secondes.
+Une seule question, toujours la même : *qu'est-ce qu'il menace maintenant ?* Trois secondes. C'est un outil de vérification, pas un exercice tactique de plus : il ne demande aucun niveau particulier, seulement de le déclencher à chaque coup, quelle que soit la position sur l'échiquier.
 
 Compare avec « travailler les finales deux fois par semaine », qui exige un créneau, un support, un choix de thème et une décision.
 
@@ -183,7 +191,7 @@ Le signal doit être un événement, pas une plage horaire. « À 19 h » est un
 
 C'est ce que suggère la structure des données de Lally : plus le comportement est simple, plus la courbe d'automaticité est courte.
 
-Donc : cinq exercices, pas trente minutes. Une partie analysée, pas une session d'analyse. Tu n'installes pas un volume de travail, tu installes un **déclenchement**. Le volume viendra tout seul une fois que le démarrage sera gratuit, parce que le coût est presque entièrement dans le démarrage.
+Donc : cinq exercices, pas trente minutes. Une partie analysée, pas une session d'analyse. Tu n'installes pas un volume de travail, tu installes un **déclenchement**. Le volume viendra tout seul une fois que le démarrage sera gratuit, parce que le coût est presque entièrement dans le démarrage. C'est aussi la meilleure façon d'apprendre à repérer ses propres erreurs sans se lasser : cinq positions vues à froid valent mieux que trente vues en pilote automatique.
 
 ### 4. Supprime les décisions d'avance
 
@@ -194,6 +202,34 @@ Prépare le contexte quand tu es motivé, pour l'utiliser quand tu ne le seras p
 La médiane est à 66 jours, et l'étendue va jusqu'à 254. Si tu évalues ton plan au bout de trois semaines, tu conclus à un échec au moment exact où le processus commence.
 
 Et un jour manqué ne casse rien : c'est un résultat explicite de l'étude. La règle utile n'est pas « ne jamais rater », elle est « ne jamais rater deux fois de suite ».
+
+### 6. Sépare l'habitude de la progression
+
+C'est le point le plus contre-intuitif du protocole, et pourtant il conditionne tout le reste : ton habitude n'a pas pour but de te faire progresser, elle a pour but de se produire. La progression viendra en conséquence, mais si tu la mets comme critère de réussite immédiat, tu recrées exactement le problème que tu cherches à éviter.
+
+Rappelle-toi pourquoi la récompense différée casse une habitude en formation : ton cerveau a besoin d'un signal de succès rapproché du geste, pas d'un signal arrivant des semaines plus tard sous forme de points de classement. Si ton critère du jour est « est-ce que j'ai progressé », la réponse est presque toujours invisible à cette échelle de temps, et l'absence de retour ressemble à un échec. Si ton critère du jour est « ai-je déclenché l'action prévue », la réponse est binaire, immédiate, et disponible tous les jours.
+
+Concrètement : ne regarde pas ton classement pour juger si l'habitude fonctionne. Regarde si tu as fait les cinq exercices, ou vérifié le coup avant de le jouer. La progression se mesure sur des mois. L'habitude se mesure sur un jour, et c'est cette mesure-là qui doit piloter ta motivation quotidienne.
+
+## Ce que tu peux répliquer sur toi-même
+
+Une dernière chose vaut la peine d'être détaillée, parce qu'elle transforme un article de lecture en outil d'entraînement concret : comment savoir si, chez toi, l'habitude est en train de s'installer, sans attendre les 66 jours pour le découvrir ?
+
+L'échelle utilisée par Lally repose sur une question simple, que tu peux te poser toi-même chaque semaine : à quel point l'action te paraît-elle automatique aujourd'hui, comparée à la première fois ? Pas « est-ce que je progresse aux échecs », mais « est-ce que je dois encore me forcer à ouvrir le fichier d'exercices, ou est-ce que ça part tout seul quand le signal apparaît ». C'est une question sur le déclenchement, pas sur le niveau.
+
+Trois signes indiquent que la courbe avance dans le bon sens, même avant le plateau. Le temps de latence entre le signal et l'action se raccourcit : au début, tu remarques le signal, puis tu hésites, puis tu agis ; après quelques semaines, il n'y a presque plus d'hésitation. Le sentiment d'effort diminue à volume constant : les mêmes cinq exercices demandent moins d'énergie mentale pour être lancés, même si l'exercice lui-même reste aussi difficile. Et le manque devient perceptible : sauter le geste un jour laisse une sensation d'incomplet, ce qui est en réalité un bon signe, pas un motif de culpabilité.
+
+À l'inverse, si après plusieurs semaines tu dois encore négocier avec toi-même à chaque occurrence du signal, ce n'est probablement pas un problème de volonté supplémentaire à trouver. C'est le signe que le signal choisi n'est pas assez net, ou que l'action est encore trop lourde. Le bon réflexe n'est pas d'insister davantage sur le même plan, mais de revenir à l'étape 3 du protocole et de réduire encore l'action, quitte à la rendre presque risible de petitesse. Une habitude qui démarre à un niveau ridicule et s'installe vaut infiniment mieux qu'un objectif ambitieux qui échoue chaque semaine.
+
+## Les erreurs qui font échouer un plan par ailleurs raisonnable
+
+Trois pièges reviennent tellement souvent d'un joueur à l'autre qu'ils méritent d'être nommés à part, même s'ils découlent tous du même malentendu sur ce qu'est vraiment une habitude.
+
+**Vouloir installer plusieurs habitudes le même mois.** L'envie est compréhensible, tellement il y a de choses à travailler : tactique, finales, ouvertures, analyse de parties. Mais chaque nouvelle habitude consomme une part de la même ressource limitée, l'attention consciente nécessaire tant que l'action n'est pas automatique. Superposer trois signaux nouveaux revient à demander trois fois plus de cette ressource rare, au moment précis où aucun des trois n'est encore acquis. Le résultat habituel n'est pas trois habitudes à moitié installées, c'est zéro habitude installée, parce que la première semaine de fatigue suffit à faire sauter les trois en même temps.
+
+**Confondre une bonne intention avec une bonne exécution.** Beaucoup de joueurs pensent avoir un plan solide parce qu'ils savent précisément ce qu'ils devraient faire : quels exercices, quel niveau de difficulté, quelle progression sur le classement viser. Cette clarté intellectuelle rassure, mais elle ne remplace jamais le signal concret qui déclenche l'action. On peut connaître parfaitement la théorie d'une ouverture sans savoir la jouer sous pression ; de la même façon, on peut connaître parfaitement son plan d'entraînement sans jamais réussir à le déclencher.
+
+**Juger le plan sur une mauvaise semaine.** Une semaine chargée, un tournoi, une fatigue passagère : le signal habituel ne se produit pas, ou tu ne réponds pas au signal. Le réflexe naturel est d'en tirer une conclusion générale sur ta capacité à tenir un plan. Mais une semaine ratée ne dit rien sur la solidité de l'habitude en construction, comme le montre justement la donnée sur les oublis isolés. Ce qui compte est ce que tu fais la semaine suivante : reprendre exactement le même protocole, sans l'alourdir pour compenser, est le seul geste qui ait un effet mesurable sur la suite.
 
 ## Ce qu'il faut retenir
 

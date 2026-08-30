@@ -74,7 +74,7 @@ Sa proposition tient en trois idées.
 
 La théorie a été enrichie ensuite, notamment par Thomas Wills, qui a formalisé en 1981 la **comparaison descendante** : se comparer à moins bien loti protège l'estime de soi, ce qui explique pourquoi on y a recours quand on va mal.
 
-On distingue donc deux directions, avec deux fonctions opposées. La comparaison **ascendante** fournit de l'information et un modèle, au prix d'un coût affectif. La comparaison **descendante** fournit du réconfort, et aucune information.
+On distingue donc deux directions, avec deux fonctions opposées, et deux effets différents sur le sentiment qu'on a de soi. La comparaison **ascendante** fournit de l'information et un modèle, au prix d'un coût affectif, parfois une pointe d'anxiété quand l'écart de niveau semble trop grand pour être comblé. La comparaison **descendante** fournit du réconfort, et aucune information. Ce cadre reste valable qu'on se compare à un groupe entier ou à une seule personne, et il est aussi utilisé pour comprendre la motivation scolaire : un élève qui se compare systématiquement à un camarade plus fort développe souvent une évaluation de lui-même plus sévère que ne le justifient ses résultats réels.
 
 ## Le retournement échiquéen
 
@@ -118,7 +118,7 @@ Les fluctuations normales d'un classement, à volume de parties habituel, dépas
 
 Or l'affichage quotidien invite à interpréter chaque variation. Un joueur qui consulte son classement après chaque partie passe l'essentiel de son temps à interpréter du bruit, avec les effets affectifs correspondants.
 
-C'est aussi ce qui rend le classement inutilisable comme signal d'apprentissage, pour les raisons développées dans notre article sur [l'impuissance apprise aux échecs](/fr/blog/impuissance-apprise-aux-echecs/) : trop lent, trop bruité, non attribuable.
+C'est aussi ce qui rend le classement inutilisable comme signal d'apprentissage, pour les raisons développées dans notre article sur [l'impuissance apprise aux échecs](/fr/blog/impuissance-apprise-aux-echecs/) : trop lent, trop bruité, non attribuable. L'environnement échiquéen, en cela, diffère nettement de la plupart des environnements où la comparaison se construit lentement plutôt qu'elle ne s'affiche en continu.
 
 ### La comparaison latérale, la plus douloureuse
 
@@ -126,7 +126,9 @@ Festinger avait raison sur ce point, et l'expérience des joueurs le confirme : 
 
 Deux mille points d'écart avec Carlsen ne provoquent rien. Quatre-vingts points d'écart avec quelqu'un qui a débuté le même mois provoquent beaucoup, parce que la comparaison est **informative** : elle isole une différence qui ne peut pas être attribuée aux circonstances.
 
-C'est aussi ce qui rend les listes d'amis classées particulièrement efficaces sur le plan émotionnel. Elles sélectionnent exactement la population qui maximise l'effet.
+C'est aussi ce qui rend les listes d'amis classées particulièrement efficaces sur le plan émotionnel. Elles sélectionnent exactement la population qui maximise l'effet, celle des personnes dont le niveau est assez proche du tien pour rendre la comparaison sociale informative, et donc douloureuse quand elle tourne en ta défaveur.
+
+Un mécanisme voisin est bien documenté chez les élèves en milieu scolaire, où le classement de classe produit le même type d'anxiété comparative : ce n'est pas la moyenne nationale qui inquiète, c'est le rang du voisin de table.
 
 ## Ce qui distingue une comparaison utile
 
@@ -138,7 +140,15 @@ Savoir qu'un joueur du club est 200 points au-dessus de toi ne t'apprend rien. S
 
 La différence est celle entre comparer des **résultats** et comparer des **méthodes**. Les résultats sont visibles et inutiles. Les méthodes sont invisibles et utiles, ce qui explique pourquoi presque tout le monde compare les premiers.
 
-C'est aussi la limite du versant descendant : se rassurer en regardant plus faible que soi fonctionne réellement sur l'humeur, et ne produit strictement aucune information.
+C'est aussi la limite du versant descendant : se rassurer en regardant plus faible que soi fonctionne réellement sur l'humeur, et ne produit strictement aucune information exploitable pour progresser.
+
+Cette distinction rejoint des travaux plus larges sur l'évaluation de soi et la motivation : quand l'évaluation ne porte que sur des résultats déjà produits, elle ne fait que confirmer ou fragiliser l'estime de soi, sans jamais alimenter l'apprentissage. Une évaluation utile porte toujours, d'une manière ou d'une autre, sur un processus observable, pas sur un score final.
+
+## Un parallèle avec le milieu scolaire
+
+Le rapprochement avec l'école n'est pas gratuit : c'est l'un des terrains où la théorie de la comparaison sociale a été le plus étudiée. Dans une classe, les élèves ne se comparent presque jamais à l'ensemble du pays, ils se comparent à leurs voisins immédiats, ceux dont ils connaissent le travail et la trajectoire. C'est exactement la même logique de proximité que décrit Festinger, et c'est aussi ce qui rend certaines évaluations aussi anxiogènes : quand une note s'affiche publiquement, l'élève ne l'interprète pas comme une mesure isolée, il l'interprète immédiatement par rapport au reste de la classe.
+
+Les échecs poussent cette logique plus loin encore. Là où une note de classe reste ponctuelle, le classement Elo est permanent, ce qui transforme une comparaison ponctuelle et occasionnelle en flux continu. Un élève sort de l'évaluation et retrouve un quotidien sans chiffre ; un joueur d'échecs, lui, retrouve son classement à chaque connexion.
 
 ## Quatre pratiques
 
