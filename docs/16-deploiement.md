@@ -80,21 +80,19 @@ Ce projet en a **quatre** :
 
 ---
 
-### 1. `deploy.yml` — Notifications post-publication
+### 1. `ntfy-notify.yml` — Notifications post-publication
 
-Ce workflow se déclenche à chaque **push sur `main`**.
+Ce workflow se déclenche **sur planification** (même cadence que `scheduled-publish.yml`, ~15 min après), et non plus au push.
 
-> **Important :** contrairement à ce que son nom laisse entendre, ce workflow **ne déploie plus le site directement**. Il s'occupait autrefois du déploiement par SSH (GitHub → VPS), mais cette approche a échoué de façon répétée : la connexion SSH depuis les serveurs GitHub (hébergés chez Microsoft Azure) vers le VPS timeoutait en boucle, probablement à cause d'une route réseau instable. La solution a été d'**inverser le sens** : plutôt que GitHub « pousse » vers le VPS, c'est le VPS qui vient « tirer » depuis GitHub (voir la section sur le cron VPS ci-dessous). Le workflow `deploy.yml` gère désormais uniquement les **notifications** :
+> **Historique :** la notification a longtemps été envoyée par `deploy.yml`, déclenché au **push sur `main`**. Le problème : les articles sont souvent commités des mois avant leur `publishDate` (rédaction en avance), donc la notif partait bien trop tôt — ou, pour les commits de `scheduled-publish.yml` qui ne touchent pas `src/content/blog/`, ne partait jamais le jour réel de publication. `deploy.yml` a été supprimé et remplacé par `ntfy-notify.yml`, calqué sur le fonctionnement de `newsletter.yml` (déclenchement sur `publishDate`, pas sur commit).
 
 **Ce qu'il fait, étape par étape :**
 
-1. **Détecte si un nouvel article a été publié** : il compare les fichiers modifiés entre le commit actuel et le précédent. Si un fichier dans `src/content/blog/` a changé, il extrait le slug et le titre de l'article depuis le frontmatter.
+1. Appelle `scripts/notify-ntfy.mjs`, qui lit le frontmatter de tous les articles et sélectionne ceux dont `publishDate ≤ maintenant` et pas encore notifiés.
+2. **Envoie une notification push (ntfy + Web Push)** pour chaque article nouvellement publié : titre, lien direct, icônes (♟️ + ✊).
+3. **Enregistre les slugs notifiés** dans `deploy/ntfy-sent.json` (anti-doublon, même mécanisme que `deploy/newsletter-sent.json`) et recommit ce fichier d'état.
 
-2. **Envoie une notification push (ntfy)** si un nouvel article est détecté. La notification arrive sur le téléphone de l'auteur (et des abonnés aux push) : titre de l'article, lien direct, icônes (♟️ + ✊).
-
-3. **Programme un e-mail newsletter (Brevo) avec une heure de délai** : il appelle `scripts/send-new-article-email.mjs` pour prévenir les abonnés par e-mail. Le délai d'une heure laisse au VPS le temps de déployer l'article avant que les abonnés reçoivent le mail.
-
-> **Léger décalage intentionnel :** la notification push part au moment du push (donc ~2 min avant que l'article soit en ligne). L'e-mail est envoyé H+1, donc sans problème. C'est un compromis acceptable.
+> **Décalage voulu :** le workflow tourne ~15 min après le cron de publication, le temps que le VPS ait tiré et rebuild le site (cycle `auto-deploy-poll.sh`, 2 min).
 
 ---
 
@@ -108,9 +106,9 @@ Les articles ont un champ `publishDate` dans leur frontmatter. Un article dont l
 
 **Ce qu'il fait :**
 
-1. Se connecte au VPS par SSH.
-2. Exécute `/usr/local/bin/deploy-site.sh` sur le VPS (rebuild complet).
-3. Si un nouvel article est apparu (détecté dans le diff git), envoie une notification ntfy.
+1. Pousse un micro-commit sur `main` qui met à jour `deploy/scheduled-trigger.txt` (aucun SSH — voir la section pull-based ci-dessous).
+2. Le cron VPS (`auto-deploy-poll.sh`) détecte ce commit dans les 2 minutes et déclenche `deploy-site.sh` (rebuild complet).
+3. `ntfy-notify.yml` tourne ~15 min plus tard et notifie les articles dont `publishDate` est désormais passée.
 
 ---
 

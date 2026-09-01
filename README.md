@@ -31,7 +31,8 @@ npm run preview      # prévisualise dist/ en local
 ```
 blog-gaucher/
 ├── .github/workflows/
-│   ├── deploy.yml                  ← notifications ntfy + Brevo au push
+│   ├── ntfy-notify.yml             ← notif ntfy + Web Push sur publishDate (pas au push)
+│   ├── newsletter.yml              ← e-mail Brevo sur publishDate
 │   ├── check-publish-schedule.yml  ← vérifie le rythme 2 articles/semaine
 │   ├── scheduled-publish.yml       ← rebuild quotidien (articles à date future)
 │   ├── remotion-render.yml         ← génération vidéos Remotion

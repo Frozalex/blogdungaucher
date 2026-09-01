@@ -429,7 +429,7 @@ Le **dossier racine servi par nginx**. Quand nginx reçoit une requête pour `/f
 Format de fichier de **police de caractères** optimisé pour le web. Très compressé (plus léger que les anciens `.ttf` ou `.otf`). Les trois polices du site (Space Grotesk, Fraunces, Outfit) sont servies en `.woff2`.
 
 ### Workflow (GitHub Actions)
-Un **fichier YAML** dans `.github/workflows/` qui définit une séquence de tâches automatiques déclenchées par des événements. Ce projet en a quatre : `deploy.yml`, `scheduled-publish.yml`, `check-publish-schedule.yml`, `secrets-scan.yml`. (Voir [chapitre 16](16-deploiement.md).)
+Un **fichier YAML** dans `.github/workflows/` qui définit une séquence de tâches automatiques déclenchées par des événements. Ce projet en a six : `scheduled-publish.yml`, `ntfy-notify.yml`, `newsletter.yml`, `check-publish-schedule.yml`, `secrets-scan.yml`, `remotion-render.yml`. (Voir [chapitre 16](16-deploiement.md).)
 
 ---
 

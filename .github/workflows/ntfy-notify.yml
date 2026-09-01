@@ -1,0 +1,76 @@
+# ─────────────────────────────────────────────────────────────
+# Notification ntfy + Web Push "nouvel article"  -  Blog d'un Gaucher
+# ─────────────────────────────────────────────────────────────
+#
+# Envoie une notification ntfy/Web Push QUAND un article passe en ligne
+# (publishDate ≤ now), et non quand il est commité. Auparavant la notif
+# partait au push (deploy.yml), donc des mois trop tôt pour les articles
+# rédigés en avance — et jamais le jour J pour les triggers de
+# scheduled-publish.yml qui ne touchent pas src/content/blog/.
+#
+# Tourne juste après le cron de publication (même offset que newsletter.yml),
+# le temps que le VPS ait tiré et rebuild (cron auto-deploy-poll.sh, 2 min).
+#
+# Anti-doublon : deploy/ntfy-sent.json (committé) mémorise les slugs déjà
+# notifiés, cf. deploy/newsletter-sent.json.
+# ─────────────────────────────────────────────────────────────
+
+name: Notification nouvel article (ntfy)
+
+on:
+  schedule:
+    # ~15 min après le cron de publication (filet de sécurité quotidien)
+    - cron: "15 6 * * *"
+    # Lundi, mardi (série) et jeudi, ~15 min après la publication
+    - cron: "15 7 * * 1,2,4"
+  workflow_dispatch:
+
+concurrency:
+  group: ntfy-notify
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    name: Notifier les articles fraîchement publiés
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Notifier (ntfy + Web Push)
+        continue-on-error: true   # un échec de notif ne doit jamais casser le run
+        env:
+          NTFY_URL:        ${{ secrets.NTFY_URL }}
+          NTFY_TOPIC:      ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN:      ${{ secrets.NTFY_TOKEN }}
+          PUSH_PROXY_URL:  ${{ secrets.PUSH_PROXY_URL }}
+          PUSH_SEND_TOKEN: ${{ secrets.PUSH_SEND_TOKEN }}
+        run: |
+          if [ -z "${NTFY_URL:-}" ]; then
+            echo "NTFY_URL absent — notification ignorée."
+            exit 0
+          fi
+          node scripts/notify-ntfy.mjs
+
+      - name: Commiter l'état (si changé)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add deploy/ntfy-sent.json
+          if git diff --cached --quiet; then
+            echo "État inchangé — rien à committer."
+            exit 0
+          fi
+          git commit -m "chore(ntfy): maj état d'envoi $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci-notify]"
+          git push origin main
