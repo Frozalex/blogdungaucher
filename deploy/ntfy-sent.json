@@ -1,6 +1,7 @@
 {
   "sent": [
     "5-biais-cognitifs-blunder",
+    "biais-du-survivant-aux-echecs",
     "bienfaits-des-pauses-aux-echecs",
     "burnout-chess",
     "dissonance-cognitive-aux-echecs",
@@ -11,6 +12,8 @@
     "echecs-et-colere-ragequit",
     "echecs-et-complexite-algorithmique",
     "echecs-et-confiance-en-soi",
+    "echecs-et-culture-populaire",
+    "echecs-et-diplomatie",
     "echecs-et-dopamine",
     "echecs-et-ecole",
     "echecs-et-enfants",
@@ -22,9 +25,12 @@
     "echecs-et-memoire",
     "echecs-et-perfectionnisme-toxique",
     "echecs-et-sommeil",
+    "echecs-et-streaming",
     "echecs-et-tdah",
     "echecs-et-therapie",
     "echecs-et-vision-spatiale",
+    "echecs-gestion-du-temps",
+    "echecs-memoire-de-travail",
     "echecs-peur-de-gagner",
     "echecs-peur-de-perdre",
     "echecs-religion-et-interdit",
@@ -45,6 +51,7 @@
     "loi-de-murphy-aux-echecs",
     "minimax-aux-echecs",
     "neurones-miroirs-aux-echecs",
+    "neuroplasticite-aux-echecs",
     "paradoxe-de-zermelo",
     "pourquoi-echecs-probleme-mathematique-impossible-et-ia",
     "psychologie-du-joueur-d-echecs",
@@ -67,5 +74,5 @@
     "theorie-des-jeux-aux-echecs",
     "theorie-du-chaos-aux-echecs"
   ],
-  "updatedAt": "2026-09-01T16:39:52.651Z"
+  "updatedAt": "2026-09-18T11:10:34.037Z"
 }
