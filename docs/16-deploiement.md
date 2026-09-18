@@ -170,6 +170,8 @@ astro build                 ← génère tous les fichiers HTML/CSS/JS
        ↓
 pagefind --site dist        ← construit l'index de recherche
        ↓
+strip-inline-script-comments ← retire les commentaires internes du HTML livré
+       ↓
 verify-dist-urls            ← vérifie les URL produites
 ```
 

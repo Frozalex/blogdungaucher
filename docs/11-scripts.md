@@ -24,6 +24,7 @@ Voici **tous les scripts**, regroupés par fonction.
 - **`site-origin.mjs`** — définit l'adresse officielle du site (`https://blogdungaucher.com`) comme constante partagée, pour éviter les incohérences.
 - **`indexnow-submit.mjs`** — prévient instantanément les moteurs (Bing, Yandex…) qu'une page a changé, via le protocole **IndexNow** (accélère l'indexation).
 - **`verify-dist-urls.mjs`** — après le build, vérifie que les adresses produites dans `dist/` sont correctes (pas de mauvaise origine, pas de lien cassé évident). Fait partie du build.
+- **`strip-inline-script-comments.mjs`** — après le build, retire les **commentaires de travail** des scripts `is:inline` (et de `sw.js`) dans `dist/`. Ces blocs échappent au traitement de Vite : sans ce passage, les notes internes du code partiraient telles quelles dans la page, lisibles par n'importe quel visiteur. Les fichiers **sources gardent leur documentation** : seul le dossier `dist/` est nettoyé. L'analyse est confiée à esbuild (un vrai parseur JS), afin qu'un `//` situé dans une adresse ou une chaîne de caractères ne soit jamais confondu avec un commentaire. Fait partie du build.
 - **`serpmantics.mjs`, `serpmantics-audit-all.mjs`, `serpmantics-gap-analysis.mjs`, `serpmantics-rescore-live.mjs`, `serpmantics-retry-timeouts.mjs`** — une famille d'outils d'**audit de positionnement** : ils analysent comment le site se classe sur ses mots-clés et repèrent les opportunités. Les fichiers `.json`/`.md` à côté sont leurs rapports.
 
 ## Contenu et nettoyage du texte
@@ -56,7 +57,7 @@ Le fichier `package.json` définit les raccourcis suivants (lancés avec `npm ru
 | Commande | Ce qu'elle fait |
 |----------|-----------------|
 | `npm run dev` | Lance le site en mode développement (aperçu local en direct). |
-| `npm run build` | **Fabrique le site complet** : génère l'image OG, vérifie le calendrier, build Astro, indexe la recherche (Pagefind), vérifie les URL. |
+| `npm run build` | **Fabrique le site complet** : génère l'image OG, vérifie le calendrier, build Astro, indexe la recherche (Pagefind), retire les commentaires du HTML livré, vérifie les URL. |
 | `npm run preview` | Affiche localement le site déjà construit (pour tester le résultat final). |
 | `npm run pdfs` | Régénère les PDF du Grand oral. |
 | `npm run build:pdfs` | Build complet **puis** régénération des PDF. |
@@ -71,9 +72,9 @@ Le fichier `package.json` définit les raccourcis suivants (lancés avec `npm ru
 La commande la plus importante enchaîne plusieurs étapes, **dans l'ordre** :
 
 ```
-generate-og-png  →  check-publish-weekly  →  astro build  →  pagefind  →  verify-dist-urls
-   (image OG)        (vérifie la grille)     (fabrique)     (indexe la    (vérifie les
-                                                            recherche)     adresses)
+generate-og-png → check-publish-weekly → astro build → pagefind → strip-inline-script-comments → verify-dist-urls
+  (image OG)       (vérifie la grille)    (fabrique)    (indexe la      (retire les commentaires        (vérifie les
+                                                        recherche)       du HTML livré)                  adresses)
 ```
 
 Si **une seule** de ces étapes échoue, tout le build s'arrête. C'est voulu : on ne met jamais en ligne un site dont une étape de contrôle a échoué.

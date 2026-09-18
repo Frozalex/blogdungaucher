@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/generate-og-png.mjs && node scripts/check-publish-weekly.mjs && astro build && pagefind --site dist --glob \"{fr,en,pt-br}/blog/**/*.html\" && node scripts/verify-dist-urls.mjs",
+    "build": "node scripts/generate-og-png.mjs && node scripts/check-publish-weekly.mjs && astro build && pagefind --site dist --glob \"{fr,en,pt-br}/blog/**/*.html\" && node scripts/strip-inline-script-comments.mjs && node scripts/verify-dist-urls.mjs",
     "build:clean": "node scripts/build-clean.mjs",
     "strip:em-dash": "node scripts/strip-em-dash.mjs",
     "strip:em-dash:dry": "node scripts/strip-em-dash.mjs --dry",
@@ -58,6 +58,7 @@
     "@astrojs/react": "^4.2.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "esbuild": "^0.27.7",
     "pagefind": "^1.3.0",
     "puppeteer": "^25.0.4",
     "sharp": "^0.34.5"
