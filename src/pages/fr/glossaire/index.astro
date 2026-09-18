@@ -195,7 +195,7 @@ const definedTermSet = {
   <div class="glossaire">
     <div class="container">
 
-      <!-- Hero -->
+      {/* Hero */}
       <header class="glossaire-hero reveal">
         <span class="eyebrow">Référence</span>
         <h1>Glossaire des échecs</h1>
@@ -203,7 +203,7 @@ const definedTermSet = {
           Plus de 55 définitions classées de A à Z : termes du jeu, de la neuroscience et de la psychologie de la performance. Une ressource de référence pour comprendre le vocabulaire des articles du blog.
         </p>
 
-        <!-- Légende catégories -->
+        {/* Légende catégories */}
         <div class="cat-legend" aria-label="Légende des catégories">
           {Object.entries(catMeta).map(([key, { label, color }]) => (
             <span class="cat-chip" style={`--cc: ${color}`}>
@@ -214,7 +214,7 @@ const definedTermSet = {
         </div>
       </header>
 
-      <!-- Nav alphabétique -->
+      {/* Nav alphabétique */}
       <nav class="alpha-nav reveal" aria-label="Navigation alphabétique">
         {ALL_LETTERS.map(l => (
           letters.includes(l) ? (
@@ -225,7 +225,7 @@ const definedTermSet = {
         ))}
       </nav>
 
-      <!-- Termes -->
+      {/* Termes */}
       <div class="glossaire-body">
         {letters.map(letter => (
           <section class="letter-section reveal" id={`lettre-${letter}`}>
@@ -251,7 +251,7 @@ const definedTermSet = {
         ))}
       </div>
 
-      <!-- Pied de page de la page -->
+      {/* Pied de page de la page */}
       <footer class="glossaire-footer reveal">
         <p>
           Ce glossaire est mis à jour au fil des articles.

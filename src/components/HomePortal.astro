@@ -174,18 +174,18 @@ const pageH1 = `${t(tLang, "nav.siteName")} : ${t(tLang, "nav.context")}`;
 
     <h1 class="portal__h1">{pageH1}</h1>
 
-    <!-- Bande à deux colonnes : contenu principal + colonne latérale (340px) -->
+    {/* Bande à deux colonnes : contenu principal + colonne latérale (340px) */}
     <div class="portal__grid">
       <div class="portal__main">
 
-        <!-- Article de tête (horizontal), sans titre de section -->
+        {/* Article de tête (horizontal), sans titre de section */}
         {leadPost && (
           <div class="portal__lead">
             <ArticleCard post={leadPost} lead={true} eager={true} lang={lang} />
           </div>
         )}
 
-        <!-- Derniers articles -->
+        {/* Derniers articles */}
         <SectionTitle title={L.latestArticles} id="derniers-articles" />
         <div class="portal__cards">
           {gridPosts.map((post) => (
@@ -193,7 +193,7 @@ const pageH1 = `${t(tLang, "nav.siteName")} : ${t(tLang, "nav.context")}`;
           ))}
         </div>
 
-        <!-- Les plus lus : grille 2×3, juste sous « Derniers articles » -->
+        {/* Les plus lus : grille 2×3, juste sous « Derniers articles » */}
         {mostReadPosts.length > 0 && (
           <>
             <SectionTitle title={L.mostRead} id="plus-lus" />
@@ -206,18 +206,18 @@ const pageH1 = `${t(tLang, "nav.siteName")} : ${t(tLang, "nav.context")}`;
         )}
       </div>
 
-      <!-- Colonne latérale : Le fil + Les plus lus -->
+      {/* Colonne latérale : Le fil + Les plus lus */}
       <aside class="portal__side">
         <FilPanel items={filItems} heading={L.theFil} allLabel={L.allFil} allHref={blogHref} />
         <RankedPanel items={rankedItems} heading={L.mostRead} />
       </aside>
     </div>
 
-    <!-- Rubriques (pleine largeur) -->
+    {/* Rubriques (pleine largeur) */}
     <SectionTitle title={L.sections} id="rubriques" />
     <PillarGrid items={pillarTiles} />
 
-    <!-- Dossier thématique (pleine largeur, FR uniquement) -->
+    {/* Dossier thématique (pleine largeur, FR uniquement) */}
     {showDossier && dossierEntries.length > 0 && (
       <>
         <SectionTitle title={dossierTitle} />
@@ -231,7 +231,7 @@ const pageH1 = `${t(tLang, "nav.siteName")} : ${t(tLang, "nav.context")}`;
       </>
     )}
 
-    <!-- Voir tout -->
+    {/* Voir tout */}
     <div class="portal__seeall">
       <a class="portal__seeall-btn" href={blogHref}>{L.seeAll} <span aria-hidden="true">→</span></a>
     </div>

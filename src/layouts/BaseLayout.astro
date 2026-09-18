@@ -209,10 +209,10 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ── Google Consent Mode v2 : DOIT s'exécuter avant tout tag Google (AdSense, gtag) ──
+    {/* ── Google Consent Mode v2 : DOIT s'exécuter avant tout tag Google (AdSense, gtag) ──
          Défaut : tout refusé tant que l'utilisateur n'a pas répondu au bandeau cookies.
          Un visiteur qui revient avec un choix déjà enregistré voit ce choix réappliqué
-         immédiatement (synchrone), avant même que les scripts Google ne partent en requête. -->
+         immédiatement (synchrone), avant même que les scripts Google ne partent en requête. */}
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() { window.dataLayer.push(arguments); }
@@ -237,10 +237,10 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
       } catch (_) {}
     </script>
 
-    <!-- ── AdSense : chargement inconditionnel du SDK (exigé par Google pour la revue de site) ──
-         Le compte n'est pas encore approuvé : aucune unité <ins class="adsbygoogle"> n'est posée.
+    {/* ── AdSense : chargement inconditionnel du SDK (exigé par Google pour la revue de site) ──
+         Le compte n'est pas encore approuvé : aucune unité `ins.adsbygoogle` n'est posée.
          Le Consent Mode ci-dessus restreint cookies et personnalisation tant que le consentement
-         « Publicité » n'est pas donné via le bandeau (CookieConsent.astro). -->
+         « Publicité » n'est pas donné via le bandeau (CookieConsent.astro). */}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244325018333025" crossorigin="anonymous"></script>
 
     <meta name="description" content={description} />
@@ -256,19 +256,19 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <meta name="apple-mobile-web-app-title" content="Blog Gaucher" />
     <link rel="manifest" href="/manifest.json" />
 
-    <!-- ── Préchargement de la police de titre (Space Grotesk) présente dans le H1/LCP de chaque page.
-         crossorigin obligatoire : les woff2 sont chargés en mode CORS anonyme même en same-origin. -->
+    {/* ── Préchargement de la police de titre (Space Grotesk) présente dans le H1/LCP de chaque page.
+         crossorigin obligatoire : les woff2 sont chargés en mode CORS anonyme même en same-origin. */}
     <link rel="preload" as="font" type="font/woff2" href={spaceGroteskWoff2} crossorigin />
 
     {/* Préchargement de l'image LCP (hero d'article) : le navigateur la découvre
         sinon tard, après le CSS. `fetchpriority=high` la hisse en tête de file. */}
     {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
 
-    <!-- ── i18n : dictionnaire runtime externalisé (bloquant + caché), AVANT le script anti-flash ──
-         pour qu'il soit disponible synchronement (swap EN + aria-labels FR de la navbar). -->
+    {/* ── i18n : dictionnaire runtime externalisé (bloquant + caché), AVANT le script anti-flash ──
+         pour qu'il soit disponible synchronement (swap EN + aria-labels FR de la navbar). */}
     <script is:inline src={`/i18n-dict.js?v=${i18nDictHash}`}></script>
 
-    <!-- ── Anti-flash : dark mode + i18n appliqués avant render ── -->
+    {/* ── Anti-flash : dark mode + i18n appliqués avant render ── */}
     <script is:inline>
       (function () {
         // ── DARK MODE ──
@@ -559,10 +559,9 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         });
       })();
     </script>
-    <!-- KaTeX CSS : importé seulement par les templates d'article (cf. en-tête de ce fichier). -->
+    {/* KaTeX CSS : importé seulement par les templates d'article (cf. en-tête de ce fichier). */}
 
   </head>
-  <!-- Service worker + réapplication des préférences après chaque View Transition -->
   <body style={accentColor ? `--page-accent:${accentColor}` : ""}>
     {/* Skip-link "Aller au contenu" retiré (réintroduction : remettre
         <a class="skip-link" href="#main-content">Aller au contenu</a> ici ;
@@ -582,7 +581,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <CookieConsent lang={lang} />
     <SearchOverlay lang={lang} />
 
-    <!-- ── Service Worker + réapplication préférences après View Transitions ── -->
+    {/* ── Service Worker + réapplication préférences après View Transitions ── */}
     <script>
       // Enregistrement du service worker (PWA)
       if ("serviceWorker" in navigator) {
@@ -646,7 +645,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
       });
     </script>
 
-    <!-- ── Scroll reveal - re-déclenché à chaque transition de page ── -->
+    {/* ── Scroll reveal - re-déclenché à chaque transition de page ── */}
     <script>
       function initReveal() {
         const revealObs = new IntersectionObserver(

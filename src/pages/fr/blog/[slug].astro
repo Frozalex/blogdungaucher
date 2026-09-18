@@ -139,7 +139,7 @@ const structuredData = [
       </nav>
     </div>
 
-    <!-- ── Hero PT's Coffee : titre superposé sur photo pleine hauteur ── -->
+    {/* ── Hero PT's Coffee : titre superposé sur photo pleine hauteur ── */}
     <div class={`article-hero${(!showSummaryVideo && heroSrc && heroImage) ? " article-hero--has-image" : " article-hero--placeholder"}`}>
 
       {!showSummaryVideo && heroSrc && heroImage ? (
@@ -210,10 +210,10 @@ const structuredData = [
       </div>
     )}
 
-    <!-- ── Corps 3 colonnes : partage | contenu | aside ── -->
+    {/* ── Corps 3 colonnes : partage | contenu | aside ── */}
     <div class="container article-layout">
 
-      <!-- Sidebar gauche : boutons de partage verticaux -->
+      {/* Sidebar gauche : boutons de partage verticaux */}
       <aside class="article-share-sidebar" aria-label="Partager l'article" data-pagefind-ignore>
         <div class="share-sidebar-sticky">
           <ShareButtons title={post.data.title} url={absolutePostUrl} variant="sidebar" />

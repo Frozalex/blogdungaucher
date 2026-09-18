@@ -36,7 +36,7 @@ const navLabel = ariaLabel ?? pg.nav;
 {lastPage > 1 && (
   <nav class="pagination" aria-label={navLabel}>
 
-    <!-- Flèche précédente -->
+    {/* Flèche précédente */}
     {prevHref ? (
       <a href={prevHref} class="pag-btn pag-btn--arrow" rel="prev" aria-label={pg.prev}>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -51,7 +51,7 @@ const navLabel = ariaLabel ?? pg.nav;
       </span>
     )}
 
-    <!-- Numéros de page + ellipses -->
+    {/* Numéros de page + ellipses */}
     <div class="pag-numbers" role="list">
       {pages.map((p: number, i: number) => {
         const prev = pages[i - 1];
@@ -75,7 +75,7 @@ const navLabel = ariaLabel ?? pg.nav;
       })}
     </div>
 
-    <!-- Flèche suivante -->
+    {/* Flèche suivante */}
     {nextHref ? (
       <a href={nextHref} class="pag-btn pag-btn--arrow" rel="next" aria-label={pg.next}>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

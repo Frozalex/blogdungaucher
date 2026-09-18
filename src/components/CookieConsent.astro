@@ -97,10 +97,10 @@ const c = consentCopy[lang] ?? consentCopy.fr;
 const privacyHref = "/fr/politique-confidentialite/";
 ---
 
-<!-- ── Backdrop ──────────────────────────────────────────────── -->
+{/* ── Backdrop ──────────────────────────────────────────────── */}
 <div class="consent-backdrop" id="consent-backdrop" hidden aria-hidden="true"></div>
 
-<!-- ── Modal de consentement ──────────────────────────────── -->
+{/* ── Modal de consentement ──────────────────────────────── */}
 <div
   class="consent-panel"
   id="consent-panel"
@@ -160,7 +160,7 @@ const privacyHref = "/fr/politique-confidentialite/";
     <fieldset class="consent-fieldset">
       <legend class="consent-fieldset__legend">{c.chooseByCategory}</legend>
 
-      <!-- Nécessaires : toujours actif, non modifiable -->
+      {/* Nécessaires : toujours actif, non modifiable */}
       <div class="consent-option consent-option--locked">
         <span class="consent-option__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
@@ -232,10 +232,10 @@ const privacyHref = "/fr/politique-confidentialite/";
   </p>
 </div>
 
-<!--
+{/*
   Déclencheur programmatique (utilisé par le footer).
   Invisible et non-interactif pour l'utilisateur, mais .click() fonctionne via JS.
--->
+*/}
 <button
   type="button"
   id="cookie-manage"
