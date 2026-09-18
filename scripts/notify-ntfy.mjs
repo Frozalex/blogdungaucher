@@ -29,7 +29,9 @@ import { fileURLToPath } from "node:url";
 const __dirname    = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR  = path.join(__dirname, "..", "src", "content", "blog");
 const SITE_URL     = "https://blogdungaucher.com";
-const STATE_FILE   = path.join(__dirname, "..", process.env.NTFY_STATE_FILE ?? "deploy/ntfy-sent.json");
+// resolve (et non join) : un NTFY_STATE_FILE absolu doit être respecté tel quel,
+// sinon il est recollé sous la racine du dépôt.
+const STATE_FILE   = path.resolve(__dirname, "..", process.env.NTFY_STATE_FILE ?? "deploy/ntfy-sent.json");
 const seed         = process.env.SEED === "1";
 
 const NTFY_URL        = process.env.NTFY_URL?.replace(/\/$/, "");
@@ -59,6 +61,20 @@ function saveState(state) {
 
 const now = new Date();
 
+/**
+ * Lit un scalaire du frontmatter, quoté OU non quoté.
+ * L'ancienne regex exigeait des guillemets : 3 articles dont le `title:` est
+ * nu (ex. science/echecs-et-memoire.md) retombaient sur le slug dans la notif.
+ */
+function readScalar(raw, field) {
+  const line = raw.match(new RegExp(`^${field}:[ \\t]*(.+?)[ \\t]*$`, "m"))?.[1];
+  if (!line) return null;
+  const quoted = line.match(/^(["'])([\s\S]*)\1$/);
+  const value = quoted ? quoted[2] : line;
+  // Une valeur nue ouvrant un bloc YAML (>, |) n'est pas un scalaire inline.
+  return /^[>|]/.test(value) ? null : value.trim() || null;
+}
+
 /** Lit tous les .md dans src/content/blog/{categorie}/ et retourne ceux déjà en ligne. */
 function findPublishedArticles() {
   const found = [];
@@ -77,13 +93,11 @@ function findPublishedArticles() {
       const publishDate = new Date(dateMatch[1]);
       if (Number.isNaN(publishDate.getTime()) || publishDate > now) continue;
 
-      const title = raw.match(/^title:\s*["'](.+?)["']/m)?.[1]
-        ?? file.replace(/\.md$/, "");
+      const title = readScalar(raw, "title") ?? file.replace(/\.md$/, "");
 
       // Support excerpt multi-ligne (block scalar YAML) et inline
-      const excerptBlock  = raw.match(/^excerpt:\s*>-?\s*\n((?:[ \t]+.+\n?)+)/m);
-      const excerptInline = raw.match(/^excerpt:\s*["'](.+?)["']/m);
-      const excerptRaw = (excerptBlock?.[1] ?? excerptInline?.[1] ?? "")
+      const excerptBlock = raw.match(/^excerpt:\s*>-?\s*\n((?:[ \t]+.+\n?)+)/m);
+      const excerptRaw = (excerptBlock?.[1] ?? readScalar(raw, "excerpt") ?? "")
         .replace(/\s+/g, " ").trim();
 
       found.push({
@@ -121,16 +135,23 @@ for (const article of articles) {
   const url = `${SITE_URL}/fr/blog/${article.slug}/`;
 
   // ── ntfy (mobile app + ntfy web app) ──
-  const ntfyRes = await fetch(`${NTFY_URL}/${NTFY_TOPIC}`, {
+  // Publication au format JSON plutôt que par en-têtes : un en-tête HTTP est
+  // une ByteString (Latin-1), donc un titre contenant un tiret demi-cadratin
+  // « – » (U+2013) ou toute autre ponctuation typographique faisait planter
+  // fetch — ces articles n'étaient jamais notifiés, à chaque run.
+  const ntfyRes = await fetch(NTFY_URL, {
     method: "POST",
     headers: {
-      "Title":    article.title,
-      "Click":    url,
-      "Tags":     "chess,left_fist",
-      "Priority": "default",
+      "Content-Type": "application/json",
       ...(NTFY_TOKEN ? { "Authorization": `Bearer ${NTFY_TOKEN}` } : {}),
     },
-    body: article.excerpt || article.title,
+    body: JSON.stringify({
+      topic:   NTFY_TOPIC,
+      title:   article.title,
+      message: article.excerpt || article.title,
+      click:   url,
+      tags:    ["chess", "left_fist"],
+    }),
   }).catch((e) => { console.warn("[ntfy] fetch échoué :", e.message); return null; });
 
   if (ntfyRes?.ok) {
@@ -164,10 +185,12 @@ for (const article of articles) {
     }
   }
 
+  // Écriture immédiate : si le run casse sur l'article suivant, celui-ci ne
+  // sera pas re-notifié au prochain passage.
   sent.add(article.slug);
+  state.sent = [...sent].sort();
+  saveState(state);
   ok++;
 }
 
-state.sent = [...sent].sort();
-saveState(state);
 console.log(`[ntfy] Terminé : ${ok}/${articles.length} notifié(s). État écrit → ${STATE_FILE}`);

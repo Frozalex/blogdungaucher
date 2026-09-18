@@ -48,8 +48,11 @@ jobs:
         with:
           node-version: "22"
 
+      # Volontairement SANS continue-on-error. La version précédente combinait
+      # un `exit 0` silencieux (secret absent) avec continue-on-error : le job
+      # affichait « success » alors qu'il n'avait rien envoyé, et le problème
+      # est resté invisible plusieurs jours. Un échec doit être rouge.
       - name: Notifier (ntfy + Web Push)
-        continue-on-error: true   # un échec de notif ne doit jamais casser le run
         env:
           NTFY_URL:        ${{ secrets.NTFY_URL }}
           NTFY_TOPIC:      ${{ secrets.NTFY_TOPIC }}
@@ -57,14 +60,20 @@ jobs:
           PUSH_PROXY_URL:  ${{ secrets.PUSH_PROXY_URL }}
           PUSH_SEND_TOKEN: ${{ secrets.PUSH_SEND_TOKEN }}
         run: |
+          set -euo pipefail
           if [ -z "${NTFY_URL:-}" ]; then
-            echo "NTFY_URL absent — notification ignorée."
-            exit 0
+            echo "::error title=Secret manquant::NTFY_URL n'est pas configuré dans les secrets du dépôt — aucune notification ne peut partir."
+            exit 1
           fi
           node scripts/notify-ntfy.mjs
 
+      # if: always() — si l'envoi a réussi pour 3 articles puis échoué sur le 4e,
+      # l'état des 3 est déjà écrit sur disque et DOIT être persisté, sinon ils
+      # seraient re-notifiés au prochain run.
       - name: Commiter l'état (si changé)
+        if: always()
         run: |
+          set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add deploy/ntfy-sent.json
@@ -73,4 +82,17 @@ jobs:
             exit 0
           fi
           git commit -m "chore(ntfy): maj état d'envoi $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci-notify]"
-          git push origin main
+
+          # newsletter.yml pousse sur main dans la même fenêtre horaire : un push
+          # rejeté perdrait l'état et provoquerait des notifications en double.
+          for i in 1 2 3 4 5; do
+            if git push origin main; then
+              echo "État poussé (tentative $i)."
+              exit 0
+            fi
+            echo "Push rejeté (tentative $i) — rebase sur origin/main puis nouvel essai."
+            git pull --rebase --autostash origin main || true   # set -e ne doit pas avorter la boucle
+            sleep $(( i * 5 ))
+          done
+          echo "::error title=Push impossible::Impossible de pousser deploy/ntfy-sent.json après 5 tentatives ; risque de notifications en double au prochain run."
+          exit 1
