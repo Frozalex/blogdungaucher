@@ -35,7 +35,6 @@ blog-gaucher/
 │   ├── newsletter.yml              ← e-mail Brevo sur publishDate
 │   ├── check-publish-schedule.yml  ← vérifie le rythme 2 articles/semaine
 │   ├── scheduled-publish.yml       ← rebuild quotidien (articles à date future)
-│   ├── remotion-render.yml         ← génération vidéos Remotion
 │   └── secrets-scan.yml            ← TruffleHog
 ├── deploy/
 │   ├── nginx-redirects.conf        ← vrais 301 nginx (⚠️ à scp sur le VPS)
