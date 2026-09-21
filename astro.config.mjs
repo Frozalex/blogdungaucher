@@ -1,6 +1,3 @@
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-
 import react from "@astrojs/react";
 import { defineConfig } from "astro/config";
 
@@ -11,8 +8,6 @@ import { rehypeAffiliateLinks } from "./src/utils/rehype-affiliate-links.ts";
 
 import { SITE_ORIGIN } from "./scripts/site-origin.mjs";
 import { enSlugRedirects } from "./scripts/en-redirects.mjs";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /**
  * `site` fixe (sans lecture de SITE / PUBLIC_SITE_URL au build).
@@ -27,14 +22,6 @@ export default defineConfig({
   trailingSlash: "always",
   compressHTML: true,
   vite: {
-    resolve: {
-      alias: {
-        "@remotion": path.resolve(__dirname, "remotion/src"),
-      },
-    },
-    ssr: {
-      noExternal: ["remotion", "@remotion/player"],
-    },
     build: {
       rollupOptions: {
         // Pagefind est généré après le build Astro : ne pas tenter de le bundler.

@@ -334,7 +334,7 @@ Technique de programmation où une **fonction s'appelle elle-même** pour traite
 Instruction donnée par le serveur qui dit au navigateur et aux moteurs de recherche : « cette URL a définitivement déménagé ici ». Les 301 transmettent le **PageRank** (l'autorité SEO) de l'ancienne URL vers la nouvelle. Utilisées lors de fusions d'articles ou de renommages. (Voir [chapitre 09](09-seo.md) et [chapitre 16](16-deploiement.md).)
 
 ### Remotion
-Outil de création de vidéos par le code (remplacé par Motion Canvas). Encore mentionné dans `package.json` pour trace historique. (Voir [chapitre 15](15-pdf-et-videos.md).)
+Outil de création de vidéos par le code, utilisé au début du projet puis **remplacé par Motion Canvas** en mai 2026. Ne subsiste plus dans le dépôt : ni dépendance, ni code, ni workflow. (Voir [chapitre 15](15-pdf-et-videos.md).)
 
 ### RGPD (GDPR)
 **Règlement Général sur la Protection des Données**. Loi européenne qui oblige les sites à informer les visiteurs sur la collecte de leurs données et à obtenir leur consentement avant d'activer des traceurs (analytics, publicité). Mis en œuvre par le composant `CookieConsent`. (Voir [chapitre 14](14-fonctionnalites-interactives.md).)

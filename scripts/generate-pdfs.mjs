@@ -198,7 +198,7 @@ async function generatePdf(browser, slug, title) {
     const removeSelectors = [
       '.breadcrumb', '.article-header', '[data-no-print]',
       '.share', '.comments', '.related-posts', '.ad-banner',
-      '.summary-video-wrap', '.article-video', '.remotion-player', '.video-player',
+      '.summary-video-wrap', '.article-video', '.video-player',
       '.reading-progress', '.hero-media', '.article-nav', '.related-articles',
       '.article-tags', '.article-meta', '.meta-updated', '.article-excerpt',
       // Chrome de fin d'article à exclure du PDF (pas du contenu de révision) :

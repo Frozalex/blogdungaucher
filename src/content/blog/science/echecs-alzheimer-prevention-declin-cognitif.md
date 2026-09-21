@@ -32,9 +32,6 @@ keyTakeaways:
   - >-
     Les échecs : stimulation cognitive comme d’autres loisirs ; pas un substitut à suivi médical ou prévention
     vasculaire.
-remotionPlayerIntro: false
-remotionPlayerMid: true
-remotionPlayerSummary: true
 introVideoAspect: "16:9"
 midArticleVideoAspect: "16:9"
 midArticleVideoHeadingSlug: synthèse-chiffrée--ce-que-disent-quelques-études-clés

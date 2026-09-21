@@ -64,7 +64,7 @@ Voici les principaux paquets installés (listés dans `package.json`) et **à qu
 - **`html2pdf.js`** — transforme une page HTML en fichier **PDF téléchargeable** (utilisé pour les sujets de Grand oral).
 
 ### Pour les vidéos
-- **`remotion`, `@remotion/player`** — une technologie pour fabriquer des **vidéos à partir de code**. *Note : le projet a basculé vers un autre outil appelé **Motion Canvas** (dossier `motion-canvas/`) pour les vidéos récap ; Remotion reste présent dans la liste mais n'est plus le moteur principal.* Voir [chapitre 15](15-pdf-et-videos.md).
+- **Motion Canvas** (dossier `motion-canvas/`) — une technologie pour fabriquer des **vidéos à partir de code**, utilisée pour les vidéos récap. C'est un **sous-projet** : ses dépendances lui sont propres et n'apparaissent pas dans le `package.json` du site. *Note historique : le projet employait auparavant Remotion, retiré depuis.* Voir [chapitre 15](15-pdf-et-videos.md).
 
 ### Pour la recherche, les images, les tests
 - **`pagefind`** — un moteur de **recherche** qui fonctionne entièrement côté visiteur, sans serveur (idéal pour un site statique). Il indexe tous les articles après le build.

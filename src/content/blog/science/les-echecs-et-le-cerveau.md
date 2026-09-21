@@ -45,7 +45,6 @@ heroImage:
   alt: "Vignette pixel art : cerveau lumineux sur fond étoilé violet-bleu, titre « Les échecs et le cerveau »"
   credit: Blog d'un Gaucher
   license: Création originale
-remotionPlayerSummary: true
 summarySequence: classic
 faq:
   - question: Les échecs modifient-ils physiquement le cerveau ?

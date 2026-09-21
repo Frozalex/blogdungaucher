@@ -27,7 +27,7 @@ Certains articles ont une **vidéo de résumé** (champ `summaryVideo` du frontm
 ### Comment elles sont fabriquées : Motion Canvas
 Les vidéos sont fabriquées avec **Motion Canvas**, un outil qui permet de **créer des animations vidéo à partir de code** (plutôt qu'à la main dans un logiciel de montage). Le projet vidéo est **séparé** du site, dans le dossier `motion-canvas/` (avec sa propre configuration, son thème, ses scènes). On y « code » l'animation, on exporte une vidéo (`.mp4`), et on la dépose dans `public/videos/` du site.
 
-> **Note historique.** Le projet utilisait initialement **Remotion** (une autre technologie de vidéo par le code, encore listée dans `package.json`). Il a basculé vers **Motion Canvas** pour les vidéos récap. Les deux reposent sur la même idée : décrire une vidéo par du code, ce qui la rend **reproductible** et **automatisable** (on peut alimenter l'animation avec les « points à retenir » de l'article).
+> **Note historique.** Le projet utilisait initialement **Remotion** (une autre technologie de vidéo par le code). Il a basculé vers **Motion Canvas** pour les vidéos récap en mai 2026, et Remotion a depuis été entièrement retiré du dépôt. Les deux reposent sur la même idée : décrire une vidéo par du code, ce qui la rend **reproductible** et **automatisable** (on peut alimenter l'animation avec les « points à retenir » de l'article).
 
 ### Pourquoi le service worker ignore les vidéos
 Petit détail cohérent avec le [chapitre 13](13-pwa-hors-ligne.md) : le service worker **ne met pas les vidéos en cache** (elles sont trop volumineuses, elles satureraient la réserve locale). Elles sont donc toujours chargées depuis le réseau.
