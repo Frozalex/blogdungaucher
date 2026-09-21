@@ -61,9 +61,19 @@ jobs:
           PUSH_SEND_TOKEN: ${{ secrets.PUSH_SEND_TOKEN }}
         run: |
           set -euo pipefail
-          if [ -z "${NTFY_URL:-}" ]; then
-            echo "::error title=Secret manquant::NTFY_URL n'est pas configuré dans les secrets du dépôt — aucune notification ne peut partir."
+          # Les canaux sont indépendants : on n'exige pas ntfy pour laisser
+          # partir le Web Push (et inversement). Seule l'absence TOTALE de
+          # canal est une erreur. Un canal manquant reste signalé en warning,
+          # pour qu'une configuration incomplète ne passe pas inaperçue.
+          if [ -z "${NTFY_URL:-}" ] && { [ -z "${PUSH_PROXY_URL:-}" ] || [ -z "${PUSH_SEND_TOKEN:-}" ]; }; then
+            echo "::error title=Aucun canal configuré::Il faut le secret NTFY_URL, ou bien PUSH_PROXY_URL + PUSH_SEND_TOKEN — aucune notification ne peut partir."
             exit 1
+          fi
+          if [ -z "${NTFY_URL:-}" ]; then
+            echo "::warning title=ntfy inactif::NTFY_URL n'est pas configuré : seules les notifications navigateur (Web Push) partiront."
+          fi
+          if [ -z "${PUSH_PROXY_URL:-}" ] || [ -z "${PUSH_SEND_TOKEN:-}" ]; then
+            echo "::warning title=Web Push inactif::PUSH_PROXY_URL / PUSH_SEND_TOKEN absents : seules les notifications ntfy partiront."
           fi
           node scripts/notify-ntfy.mjs
 

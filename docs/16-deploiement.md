@@ -60,15 +60,19 @@ Les secrets utilisés par ce projet :
 | `DEPLOY_HOST` | L'adresse IP du VPS (pour la connexion SSH) |
 | `DEPLOY_USER` | Le nom d'utilisateur sur le VPS (ex. `root`) |
 | `DEPLOY_SSH_KEY` | La clé privée SSH qui autorise GitHub à se connecter au VPS |
-| `NTFY_URL` | L'adresse du service de notifications push |
+| `NTFY_URL` | L'adresse du serveur ntfy (notification sur mobile) |
 | `NTFY_TOPIC` | Le « canal » ntfy pour ce blog |
 | `NTFY_TOKEN` | La clé secrète qui autorise l'envoi de notifications ntfy |
+| `PUSH_PROXY_URL` | L'adresse du proxy Web Push (notification navigateur des lecteurs) |
+| `PUSH_SEND_TOKEN` | La clé secrète qui autorise l'envoi Web Push |
 | `BREVO_API_KEY` | La clé API du service d'envoi d'e-mails Brevo (newsletter) |
 | `BREVO_LIST_ID` | L'identifiant de la liste d'abonnés dans Brevo |
 | `BREVO_SENDER_EMAIL` | L'adresse e-mail expéditrice |
 | `BREVO_SENDER_NAME` | Le nom affiché comme expéditeur |
 
 > **Image mentale.** Les secrets, c'est comme le trousseau de clés du site. Ils sont dans un coffre (GitHub), jamais imprimés sur le code, et les robots automatiques peuvent les emprunter le temps d'une tâche.
+
+> **Les deux canaux de notification sont indépendants.** ntfy (notification sur ton téléphone) et Web Push (notification dans le navigateur des lecteurs) sont tentés séparément : configurer l'un sans l'autre est une situation valide, et la panne de l'un n'empêche pas l'autre de partir. Le workflow n'échoue que si **aucun** des deux n'est configuré ; s'il n'en manque qu'un, il le signale en avertissement pour qu'une configuration incomplète ne passe pas inaperçue.
 
 ---
 

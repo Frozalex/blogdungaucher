@@ -13,13 +13,22 @@
  *   SEED=1 node scripts/notify-ntfy.mjs     # marque le backlog déjà publié
  *                                            #   comme notifié, sans rien envoyer
  *
- * Variables d'environnement requises :
- *   NTFY_URL        — ex. https://ntfy.blogdungaucher.com
- *   NTFY_TOKEN      — token Bearer ntfy
- *   NTFY_TOPIC      — sujet ntfy (défaut : "blog-gaucher")
- *   PUSH_PROXY_URL  — URL du proxy push (ex. https://blogdungaucher.com/push)
- *   PUSH_SEND_TOKEN — token Bearer pour /push/send
- *   NTFY_STATE_FILE — chemin du fichier d'état (défaut deploy/ntfy-sent.json)
+ * Les deux canaux sont INDÉPENDANTS : chacun n'est tenté que s'il est
+ * configuré, et la panne de l'un n'empêche pas l'autre de partir. Un article
+ * n'est marqué « notifié » que si au moins un canal a réussi ; sinon il sera
+ * réessayé au prochain run. Auparavant le Web Push était placé derrière un
+ * `continue` conditionné au succès de ntfy : une panne ntfy (ou son simple
+ * défaut de configuration) coupait aussi les notifications des lecteurs.
+ *
+ * Variables d'environnement — au moins UN canal doit être configuré :
+ *   ntfy (facultatif)
+ *     NTFY_URL        — ex. https://ntfy.blogdungaucher.com
+ *     NTFY_TOKEN      — token Bearer ntfy (topic protégé)
+ *     NTFY_TOPIC      — sujet ntfy (défaut : "blog-gaucher")
+ *   Web Push (facultatif)
+ *     PUSH_PROXY_URL  — URL du proxy push (ex. https://blogdungaucher.com/push)
+ *     PUSH_SEND_TOKEN — token Bearer pour /push/send
+ *   NTFY_STATE_FILE   — chemin du fichier d'état (défaut deploy/ntfy-sent.json)
  */
 
 import fs   from "node:fs";
@@ -40,9 +49,24 @@ const NTFY_TOKEN      = process.env.NTFY_TOKEN;
 const PUSH_PROXY_URL  = process.env.PUSH_PROXY_URL?.replace(/\/$/, "");
 const PUSH_SEND_TOKEN = process.env.PUSH_SEND_TOKEN;
 
-if (!NTFY_URL && process.env.SEED !== "1") {
-  console.error("[ntfy] Variable NTFY_URL manquante. Ex : NTFY_URL=https://ntfy.blogdungaucher.com");
+const ntfyEnabled = Boolean(NTFY_URL);
+const pushEnabled = Boolean(PUSH_PROXY_URL && PUSH_SEND_TOKEN);
+
+// Échec seulement si AUCUN canal n'est joignable : là, le run ne peut
+// rien faire et le silence doit être bruyant. Un seul canal configuré
+// est une situation valide, pas une erreur.
+if (!ntfyEnabled && !pushEnabled && !seed) {
+  console.error(
+    "[notify] Aucun canal configuré : il faut NTFY_URL, ou bien " +
+      "PUSH_PROXY_URL + PUSH_SEND_TOKEN. Aucune notification ne peut partir.",
+  );
   process.exit(1);
+}
+if (!seed) {
+  console.log(
+    `[notify] Canaux actifs : ntfy=${ntfyEnabled ? "oui" : "NON"}, ` +
+      `webpush=${pushEnabled ? "oui" : "NON"}`,
+  );
 }
 
 function loadState() {
@@ -131,39 +155,46 @@ if (articles.length === 0) {
 }
 
 let ok = 0;
+let failed = 0;
 for (const article of articles) {
   const url = `${SITE_URL}/fr/blog/${article.slug}/`;
+
+  // Les deux canaux sont tentés séparément : aucun n'est la condition de
+  // l'autre. `delivered` retient si au moins un abonné a pu être touché.
+  let delivered = false;
 
   // ── ntfy (mobile app + ntfy web app) ──
   // Publication au format JSON plutôt que par en-têtes : un en-tête HTTP est
   // une ByteString (Latin-1), donc un titre contenant un tiret demi-cadratin
   // « – » (U+2013) ou toute autre ponctuation typographique faisait planter
   // fetch — ces articles n'étaient jamais notifiés, à chaque run.
-  const ntfyRes = await fetch(NTFY_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      ...(NTFY_TOKEN ? { "Authorization": `Bearer ${NTFY_TOKEN}` } : {}),
-    },
-    body: JSON.stringify({
-      topic:   NTFY_TOPIC,
-      title:   article.title,
-      message: article.excerpt || article.title,
-      click:   url,
-      tags:    ["chess", "left_fist"],
-    }),
-  }).catch((e) => { console.warn("[ntfy] fetch échoué :", e.message); return null; });
+  if (ntfyEnabled) {
+    const ntfyRes = await fetch(NTFY_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        ...(NTFY_TOKEN ? { "Authorization": `Bearer ${NTFY_TOKEN}` } : {}),
+      },
+      body: JSON.stringify({
+        topic:   NTFY_TOPIC,
+        title:   article.title,
+        message: article.excerpt || article.title,
+        click:   url,
+        tags:    ["chess", "left_fist"],
+      }),
+    }).catch((e) => { console.warn("[ntfy] fetch échoué :", e.message); return null; });
 
-  if (ntfyRes?.ok) {
-    console.log(`[ntfy] Notifié : ${article.title}`);
-  } else {
-    const detail = ntfyRes ? await ntfyRes.text().catch(() => ntfyRes.statusText) : "réseau";
-    console.error(`[ntfy] Erreur pour "${article.title}" : ${detail} — sera réessayé au prochain run.`);
-    continue; // ne marque pas comme envoyé → réessai
+    if (ntfyRes?.ok) {
+      console.log(`[ntfy] Notifié : ${article.title}`);
+      delivered = true;
+    } else {
+      const detail = ntfyRes ? await ntfyRes.text().catch(() => ntfyRes.statusText) : "réseau";
+      console.error(`[ntfy] Erreur pour "${article.title}" : ${detail}`);
+    }
   }
 
   // ── Web Push (abonnés navigateur via le proxy) ──
-  if (PUSH_PROXY_URL && PUSH_SEND_TOKEN) {
+  if (pushEnabled) {
     const pushRes = await fetch(`${PUSH_PROXY_URL}/send`, {
       method: "POST",
       headers: {
@@ -180,9 +211,19 @@ for (const article of articles) {
     if (pushRes?.ok) {
       const d = await pushRes.json().catch(() => ({}));
       console.log(`[push] Envoyé à ${d.sent ?? "?"} abonné(s) (${d.expired ?? 0} expirés nettoyés)`);
-    } else if (pushRes) {
-      console.warn(`[push] Erreur ${pushRes.status} — notification navigateur non envoyée`);
+      delivered = true;
+    } else {
+      const detail = pushRes ? `HTTP ${pushRes.status}` : "réseau";
+      console.error(`[push] Erreur pour "${article.title}" : ${detail}`);
     }
+  }
+
+  // Aucun canal n'a abouti : ne pas marquer comme envoyé, l'article repassera
+  // au prochain run plutôt que d'être silencieusement perdu.
+  if (!delivered) {
+    console.error(`[notify] "${article.title}" non notifié — sera réessayé au prochain run.`);
+    failed++;
+    continue;
   }
 
   // Écriture immédiate : si le run casse sur l'article suivant, celui-ci ne
@@ -193,4 +234,11 @@ for (const article of articles) {
   ok++;
 }
 
-console.log(`[ntfy] Terminé : ${ok}/${articles.length} notifié(s). État écrit → ${STATE_FILE}`);
+console.log(`[notify] Terminé : ${ok}/${articles.length} notifié(s). État écrit → ${STATE_FILE}`);
+
+// Un article resté sur le carreau doit rendre le run rouge : c'est
+// précisément le silence vert qui avait laissé passer 7 articles.
+if (failed > 0) {
+  console.error(`[notify] ${failed} article(s) n'ont atteint aucun canal.`);
+  process.exit(1);
+}
