@@ -293,7 +293,7 @@ const structuredData = [
           {related.map((e) => (
             <a href={getPostUrl(e)} class="rc-card" style={`--accent:${categoryMap[e.data.category]?.accent}`}>
               <div class="rc-card__media">
-                {getPostHeroSrc(e) && (
+                {getPostHeroSrc(e) ? (
                   <img
                     class="rc-card__img"
                     src={getPostHeroSrc(e)!}
@@ -303,6 +303,10 @@ const structuredData = [
                     width="320"
                     height="180"
                   />
+                ) : (
+                  <div class="rc-card__fallback" aria-hidden="true">
+                    <span class="rc-card__fallback-logo" role="presentation"></span>
+                  </div>
                 )}
                 <span class="rc-card__badge">{categoryMap[e.data.category]?.shortLabel}</span>
               </div>
@@ -892,6 +896,63 @@ const structuredData = [
   }
   .rc-card:hover .rc-card__img {
     transform: scale(1.06);
+  }
+  /* Article sans vignette : même repli que les ArticleCard (damier teinté +
+     logo du site recoloré à l'accent de la rubrique). Pas de kicker ici :
+     la pastille de rubrique porte déjà le libellé. */
+  .rc-card__fallback {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background-color: color-mix(in srgb, var(--accent) 6%, var(--surface));
+    background-image:
+      linear-gradient(
+        45deg,
+        color-mix(in srgb, var(--accent) 14%, transparent) 25%,
+        transparent 25%,
+        transparent 75%,
+        color-mix(in srgb, var(--accent) 14%, transparent) 75%
+      ),
+      linear-gradient(
+        45deg,
+        color-mix(in srgb, var(--accent) 14%, transparent) 25%,
+        transparent 25%,
+        transparent 75%,
+        color-mix(in srgb, var(--accent) 14%, transparent) 75%
+      );
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+  }
+  .rc-card__fallback-logo {
+    display: block;
+    width: 42%;
+    aspect-ratio: 625 / 868;
+    background-color: color-mix(in srgb, var(--accent) 78%, var(--text-main));
+    -webkit-mask-image: url("/images/logo.svg");
+    mask-image: url("/images/logo.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    filter: drop-shadow(0 2px 14px color-mix(in srgb, var(--accent) 22%, transparent));
+    user-select: none;
+    pointer-events: none;
+    transform: rotate(-6deg);
+    transition: transform 320ms var(--ease-spring), background-color 220ms ease;
+  }
+  .rc-card:hover .rc-card__fallback-logo {
+    transform: rotate(0deg) scale(1.06);
+    background-color: var(--accent);
+  }
+  :global([data-theme="dark"]) .rc-card__fallback-logo {
+    background-color: color-mix(in srgb, var(--accent) 88%, white);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .rc-card__fallback-logo { transition: none; }
+    .rc-card:hover .rc-card__fallback-logo { transform: rotate(-6deg); }
   }
   .rc-card__badge {
     position: absolute;
