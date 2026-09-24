@@ -1,0 +1,182 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
+---
+<BaseLayout
+  title="Privacybeleid | Blog d'un Gaucher"
+  description="Privacybeleid van Blog d'un Gaucher: gegevensverzameling, cookies, gebruikersrechten en beheer van persoonsgegevens."
+  canonicalPath="/nl/privacybeleid/"
+  lang="nl"
+  frPath="/fr/politique-confidentialite/"
+  enPath="/en/privacy-policy/"
+  ptBrPath="/pt-br/politica-de-privacidade/"
+  nlPath="/nl/privacybeleid/"
+  noindex={true}
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/nl/" },
+    { name: "Privacybeleid", path: "/nl/privacybeleid/" },
+  ])}
+>
+  <section class="legal">
+    <div class="container">
+      <header class="legal-header">
+        <h1>Privacybeleid</h1>
+        <p class="legal-lead">
+          Blog d'un Gaucher hecht veel belang aan de bescherming van uw persoonsgegevens. Het doel is onnodige verwerkingen te beperken en een veilige, transparante leeservaring te garanderen.
+        </p>
+      </header>
+
+      <div class="legal-body">
+
+        <section>
+          <h2>1. Verzameling en gebruik van gegevens</h2>
+          <p>
+            blogdungaucher.com beperkt de gegevensverzameling en maakt onderscheid tussen strikt noodzakelijke en optionele verwerkingen.
+          </p>
+          <ul>
+            <li><strong>Eenvoudig browsen:</strong> er is geen accountaanmaak vereist om artikelen te lezen.</li>
+            <li><strong>Verbindingsgegevens:</strong> onze hostingprovider Hostinger verzamelt technische gegevens (IP-adres, browser, systeem, tijdstempel) voor beveiligings- en onderhoudsdoeleinden. Rechtsgrond: gerechtvaardigd belang.</li>
+            <li><strong>Contact:</strong> als u ons schrijft naar <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>, wordt uw adres uitsluitend gebruikt om u te antwoorden.</li>
+          </ul>
+          <p>
+            Bewaartermijn: contact-e-mails worden bewaard zolang nodig is voor de uitwisseling en vervolgens verwijderd of redelijkerwijs gearchiveerd.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Bezoekersmeting (Google Analytics)</h2>
+          <p>
+            Om te begrijpen welke rubrieken het meest worden gelezen en om de redactionele kwaliteit van de blog te verbeteren, kan de website gebruikmaken van meettools, waaronder Google Analytics.
+          </p>
+          <p>
+            Deze metingen worden pas geactiveerd na uitdrukkelijke toestemming via de cookiebanner. U kunt deze keuze op elk moment accepteren, weigeren of wijzigen via de knop "Cookie-instellingen".
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Zelf gehoste bezoekersmeting (Umami)</h2>
+          <p>
+            Daarnaast gebruikt de website Umami, een open source tool voor bezoekersmeting die op onze eigen infrastructuur wordt gehost (<code>stats.blogdungaucher.com</code>). Umami plaatst geen enkele cookie en verzamelt geen gegevens waarmee een bezoeker individueel kan worden geïdentificeerd: de statistieken zijn geaggregeerd en geanonimiseerd (paginaweergaven, herkomst, apparaat).
+          </p>
+          <p>
+            Omdat er geen cookie of tracker wordt gebruikt, wordt deze bezoekersmeting beschouwd als vrijgesteld van toestemming volgens de richtlijnen van de CNIL (de Franse gegevensbeschermingsautoriteit), en is daarom actief zodra u de website bezoekt, ongeacht uw keuzes in de cookiebanner.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Advertenties van derden</h2>
+          <p>
+            Om de hosting en ontwikkeling van de website te financieren, kan blogdungaucher.com advertentieruimtes tonen via gespecialiseerde netwerken, waaronder Google AdSense.
+          </p>
+          <p>Deze advertentienetwerken kunnen trackers gebruiken om advertenties te personaliseren.</p>
+          <ul>
+            <li>Google kan, als externe dienstverlener, cookies gebruiken om relevante advertenties te tonen.</li>
+            <li>De AdSense-bibliotheek kan op elke pagina worden geladen, maar er wordt geen advertentiecookie of personalisatie geactiveerd totdat u toestemming heeft gegeven (Google Consent Mode) via de op het scherm getoonde banner.</li>
+            <li>U behoudt volledige controle via de op het scherm getoonde tool voor toestemmingsbeheer.</li>
+            <li>U kunt het gebruik van cookies door Google voor advertentieweergave bekijken en uitschakelen op de pagina met het <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">privacybeleid van Google</a>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. Pushmeldingen (ntfy, zelf gehost)</h2>
+          <p>
+            Als u meldingen inschakelt in de privacybanner, abonneert uw browser zich op de ntfy-dienst, zelf gehost op onze eigen infrastructuur (server <code>ntfy.blogdungaucher.com</code>). Er worden geen gegevens naar derden doorgestuurd: abonnementen en meldingen verlopen uitsluitend via onze servers.
+          </p>
+          <p>
+            De enige verwerkte gegeven is de Web Push-abonnements-ID die uw browser lokaal genereert (endpoint, VAPID-sleutels). Deze wordt opgeslagen op onze ntfy-server en automatisch verwijderd bij verloop of op verzoek. U kunt uw toestemming op elk moment intrekken via "Meldingen en cookies" onderaan de pagina, of in de meldingsinstellingen van uw browser.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Reacties (remark42, zelf gehost)</h2>
+          <p>
+            Het reactiesysteem wordt beheerd door remark42, gehost op onze eigen infrastructuur (<code>remark42.blogdungaucher.com</code>). Er worden geen gegevens naar derden doorgestuurd voor het beheer van reacties.
+          </p>
+          <p>
+            U kunt anoniem reageren of zich authenticeren via GitHub OAuth (optioneel). Bij authenticatie via GitHub worden de openbare profielgegevens (naam, avatar) doorgestuurd naar onze remark42-server om uw identiteit naast uw berichten weer te geven. Deze gegevens worden opgeslagen in onze lokale database (Bolt DB-bestand op onze servers) en op verzoek verwijderd. U kunt contact opnemen via <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a> om uw reacties te laten verwijderen.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Uw rechten (AVG/GDPR)</h2>
+          <p>
+            Overeenkomstig de AVG en de gewijzigde Franse wet Informatique et Libertés van 6 januari 1978 heeft u recht op inzage, rectificatie, verwijdering, bezwaar, beperking en, in bepaalde gevallen, overdraagbaarheid van de gegevens die op u betrekking hebben.
+          </p>
+          <ul>
+            <li>Om deze rechten uit te oefenen of voor vragen over dit beleid: <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>.</li>
+            <li>Mogelijke verwerkers of ontvangers zijn onder meer Hostinger (hosting), onze zelf gehoste Umami-instantie (geanonimiseerde bezoekersmeting, geen toestemming vereist), Google (bezoekersmeting en advertenties, mits toestemming), onze zelf gehoste ntfy-server (pushmeldingen, mits afzonderlijke toestemming), onze zelf gehoste remark42-server (reacties, mits deelname), GitHub (CI/CD).</li>
+            <li>Sommige diensten kunnen doorgiften buiten de Europese Unie inhouden, geregeld door de contractuele mechanismen van hun leveranciers.</li>
+            <li>U kunt uw toestemming voor niet-essentiële trackers op elk moment intrekken via de knop voor cookiebeheer.</li>
+            <li>Indien u, na contact met ons te hebben opgenomen, van mening bent dat uw rechten niet worden gerespecteerd, kunt u een klacht indienen bij de <a href="https://www.cnil.fr/" target="_blank" rel="noopener noreferrer">CNIL</a> (Franse gegevensbeschermingsautoriteit).</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    padding: 4rem 0 5rem;
+  }
+
+  .legal .container {
+    max-width: 46rem;
+  }
+
+  .legal-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-header h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin: 0 0 1rem;
+  }
+
+  .legal-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .legal-body section {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-body h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 0.85rem;
+  }
+
+  .legal-body p {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin: 0 0 0.75rem;
+  }
+
+  .legal-body strong {
+    font-weight: 600;
+  }
+
+  .legal-body a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .legal-body ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .legal-body li {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin-bottom: 0.4rem;
+  }
+</style>

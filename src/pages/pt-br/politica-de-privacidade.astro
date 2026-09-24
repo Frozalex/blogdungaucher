@@ -1,0 +1,182 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
+---
+<BaseLayout
+  title="Política de privacidade | Blog d'un Gaucher"
+  description="Política de privacidade do Blog d'un Gaucher: coleta de dados, cookies, direitos dos usuários e gestão de dados pessoais."
+  canonicalPath="/pt-br/politica-de-privacidade/"
+  lang="pt-br"
+  frPath="/fr/politique-confidentialite/"
+  enPath="/en/privacy-policy/"
+  ptBrPath="/pt-br/politica-de-privacidade/"
+  nlPath="/nl/privacybeleid/"
+  noindex={true}
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Início", path: "/pt-br/" },
+    { name: "Política de privacidade", path: "/pt-br/politica-de-privacidade/" },
+  ])}
+>
+  <section class="legal">
+    <div class="container">
+      <header class="legal-header">
+        <h1>Política de privacidade</h1>
+        <p class="legal-lead">
+          O Blog d'un Gaucher dá grande importância à proteção dos seus dados pessoais. O objetivo é limitar os tratamentos desnecessários e garantir uma experiência de leitura segura e transparente.
+        </p>
+      </header>
+
+      <div class="legal-body">
+
+        <section>
+          <h2>1. Coleta e uso de dados</h2>
+          <p>
+            O blogdungaucher.com limita a coleta de dados e distingue os tratamentos estritamente necessários dos tratamentos opcionais.
+          </p>
+          <ul>
+            <li><strong>Navegação simples:</strong> nenhuma criação de conta é exigida para ler os artigos.</li>
+            <li><strong>Dados de conexão:</strong> nosso provedor de hospedagem, a Hostinger, coleta dados técnicos (endereço IP, navegador, sistema, data e hora) para fins de segurança e manutenção. Base legal: interesse legítimo.</li>
+            <li><strong>Contato:</strong> se você nos escrever para <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>, seu endereço é usado apenas para responder a você.</li>
+          </ul>
+          <p>
+            Prazo de retenção: os e-mails de contato são mantidos pelo tempo necessário para a troca e, depois, excluídos ou arquivados de forma razoável.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Medição de audiência (Google Analytics)</h2>
+          <p>
+            Para entender quais seções são mais lidas e melhorar a qualidade editorial do blog, o site pode usar ferramentas de medição de audiência, notadamente o Google Analytics.
+          </p>
+          <p>
+            Essas medições só são ativadas após consentimento explícito por meio do banner de cookies. Você pode aceitar, recusar ou alterar essa escolha a qualquer momento pelo botão "Configurações de cookies".
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Medição de audiência auto-hospedada (Umami)</h2>
+          <p>
+            Além disso, o site usa o Umami, uma ferramenta de medição de audiência de código aberto auto-hospedada em nossa própria infraestrutura (<code>stats.blogdungaucher.com</code>). O Umami não utiliza nenhum cookie nem coleta dados que permitam identificar individualmente um visitante: as estatísticas são agregadas e anonimizadas (páginas visualizadas, origem, dispositivo).
+          </p>
+          <p>
+            Por não usar cookie nem rastreador, essa medição de audiência é considerada isenta de consentimento segundo as diretrizes da CNIL (autoridade francesa de proteção de dados) e, portanto, é ativada assim que você visita o site, independentemente das suas escolhas no banner de cookies.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Publicidade de terceiros</h2>
+          <p>
+            Para financiar a hospedagem e o desenvolvimento do site, o blogdungaucher.com pode exibir espaços publicitários por meio de redes especializadas, notadamente o Google AdSense.
+          </p>
+          <p>Essas redes publicitárias podem usar rastreadores para personalizar os anúncios.</p>
+          <ul>
+            <li>O Google, como prestador terceirizado, pode usar cookies para exibir anúncios relevantes.</li>
+            <li>A biblioteca do AdSense pode ser carregada em todas as páginas, mas nenhum cookie publicitário nem personalização é ativado até que você tenha dado seu consentimento (Google Consent Mode) por meio do banner exibido na tela.</li>
+            <li>Você mantém controle total por meio da ferramenta de gestão de consentimento exibida na tela.</li>
+            <li>Você pode consultar e desativar o uso de cookies pelo Google para veiculação de anúncios na página de <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">políticas de privacidade do Google</a>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. Notificações push (ntfy, auto-hospedado)</h2>
+          <p>
+            Se você ativar as notificações no banner de privacidade, o navegador se inscreve no serviço ntfy, auto-hospedado em nossa própria infraestrutura (servidor <code>ntfy.blogdungaucher.com</code>). Nenhum dado é transmitido a terceiros: as inscrições e notificações passam apenas pelos nossos servidores.
+          </p>
+          <p>
+            O único dado tratado é o identificador de inscrição Web Push que o navegador gera localmente (endpoint, chaves VAPID). Ele é armazenado em nosso servidor ntfy e excluído automaticamente ao expirar ou mediante solicitação. Você pode retirar seu consentimento a qualquer momento em "Notificações e cookies" no rodapé da página, ou nas configurações de notificação do seu navegador.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Comentários (remark42, auto-hospedado)</h2>
+          <p>
+            O sistema de comentários é gerenciado pelo remark42, hospedado em nossa própria infraestrutura (<code>remark42.blogdungaucher.com</code>). Nenhum dado é transmitido a terceiros para a gestão dos comentários.
+          </p>
+          <p>
+            Você pode comentar de forma anônima ou se autenticar via GitHub OAuth (opcional). No caso de autenticação via GitHub, as informações públicas do seu perfil (nome, avatar) são transmitidas ao nosso servidor remark42 para exibir sua identidade ao lado das suas mensagens. Esses dados são armazenados em nosso banco de dados local (arquivo Bolt DB em nossos servidores) e excluídos mediante solicitação. Você pode contatar <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a> para excluir seus comentários.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Seus direitos (LGPD/RGPD)</h2>
+          <p>
+            Em conformidade com o RGPD europeu e a lei francesa de Informática e Liberdades de 6 de janeiro de 1978 modificada, você dispõe de direito de acesso, retificação, exclusão, oposição, limitação e, conforme o caso, portabilidade dos dados que lhe dizem respeito.
+          </p>
+          <ul>
+            <li>Para exercer esses direitos ou para qualquer dúvida sobre esta política: <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>.</li>
+            <li>Os subcontratados ou destinatários potenciais incluem a Hostinger (hospedagem), nossa instância Umami auto-hospedada (medição de audiência anonimizada, sem necessidade de consentimento), o Google (medição de audiência e publicidade, sujeito a consentimento), nosso servidor ntfy auto-hospedado (notificações push, sujeito a consentimento distinto), nosso servidor remark42 auto-hospedado (comentários, sujeito à participação), o GitHub (CI/CD).</li>
+            <li>Alguns serviços podem envolver transferências para fora da União Europeia, regidas pelos mecanismos contratuais previstos por seus fornecedores.</li>
+            <li>Você pode retirar seu consentimento a rastreadores não essenciais a qualquer momento pelo botão de gestão de cookies.</li>
+            <li>Se, após nos contatar, você considerar que seus direitos não estão sendo respeitados, pode apresentar uma reclamação à <a href="https://www.cnil.fr/" target="_blank" rel="noopener noreferrer">CNIL</a> (autoridade francesa de proteção de dados).</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    padding: 4rem 0 5rem;
+  }
+
+  .legal .container {
+    max-width: 46rem;
+  }
+
+  .legal-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-header h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin: 0 0 1rem;
+  }
+
+  .legal-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .legal-body section {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-body h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 0.85rem;
+  }
+
+  .legal-body p {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin: 0 0 0.75rem;
+  }
+
+  .legal-body strong {
+    font-weight: 600;
+  }
+
+  .legal-body a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .legal-body ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .legal-body li {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin-bottom: 0.4rem;
+  }
+</style>

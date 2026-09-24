@@ -1,0 +1,182 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
+---
+<BaseLayout
+  title="Privacy policy | Blog d'un Gaucher"
+  description="Privacy policy for Blog d'un Gaucher: data collection, cookies, user rights and personal data management."
+  canonicalPath="/en/privacy-policy/"
+  lang="en"
+  frPath="/fr/politique-confidentialite/"
+  enPath="/en/privacy-policy/"
+  ptBrPath="/pt-br/politica-de-privacidade/"
+  nlPath="/nl/privacybeleid/"
+  noindex={true}
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/en/" },
+    { name: "Privacy policy", path: "/en/privacy-policy/" },
+  ])}
+>
+  <section class="legal">
+    <div class="container">
+      <header class="legal-header">
+        <h1>Privacy policy</h1>
+        <p class="legal-lead">
+          Blog d'un Gaucher places great importance on protecting your personal data. The goal is to limit unnecessary processing and to guarantee a secure, transparent reading experience.
+        </p>
+      </header>
+
+      <div class="legal-body">
+
+        <section>
+          <h2>1. Data collection and use</h2>
+          <p>
+            blogdungaucher.com limits data collection and distinguishes strictly necessary processing from optional processing.
+          </p>
+          <ul>
+            <li><strong>Simple browsing:</strong> no account creation is required to read articles.</li>
+            <li><strong>Connection data:</strong> our host Hostinger collects technical data (IP address, browser, system, timestamp) for security and maintenance purposes. Legal basis: legitimate interest.</li>
+            <li><strong>Contact:</strong> if you write to us at <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>, your address is used only to reply to you.</li>
+          </ul>
+          <p>
+            Retention period: contact emails are kept for as long as needed for the exchange, then deleted or reasonably archived.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Audience measurement (Google Analytics)</h2>
+          <p>
+            To understand which sections are most read and to improve the editorial quality of the blog, the site may use audience measurement tools, notably Google Analytics.
+          </p>
+          <p>
+            These measurements are only activated after explicit consent via the cookie banner. You can accept, refuse or change this choice at any time via the "Cookie settings" button.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Self-hosted audience measurement (Umami)</h2>
+          <p>
+            In addition, the site uses Umami, an open-source audience measurement tool self-hosted on our own infrastructure (<code>stats.blogdungaucher.com</code>). Umami does not set any cookie and does not collect any data that could individually identify a visitor: statistics are aggregated and anonymised (page views, referrer, device).
+          </p>
+          <p>
+            As it uses no cookie or tracker, this audience measurement is considered exempt from consent under CNIL (the French data protection authority) guidance, and is therefore active as soon as you visit the site, regardless of your choices in the cookie banner.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Third-party advertising</h2>
+          <p>
+            To fund hosting and site development, blogdungaucher.com may display advertising spaces via specialised networks, notably Google AdSense.
+          </p>
+          <p>These ad networks may use trackers to personalise advertisements.</p>
+          <ul>
+            <li>Google, as a third-party provider, may use cookies to serve relevant ads.</li>
+            <li>The AdSense library may be loaded on every page, but no advertising cookie or personalisation is activated until you have given your consent (Google Consent Mode) via the banner shown on screen.</li>
+            <li>You retain full control via the consent management tool shown on screen.</li>
+            <li>You can view and disable Google's use of cookies for ad delivery on the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google privacy policy</a> page.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. Push notifications (ntfy, self-hosted)</h2>
+          <p>
+            If you enable notifications in the privacy banner, your browser subscribes to the ntfy service, self-hosted on our own infrastructure (server <code>ntfy.blogdungaucher.com</code>). No data is transmitted to a third party: subscriptions and notifications pass only through our servers.
+          </p>
+          <p>
+            The only data processed is the Web Push subscription identifier that your browser generates locally (endpoint, VAPID keys). It is stored on our ntfy server and automatically deleted on expiry or on request. You can withdraw your consent at any time via "Notifications & cookies" at the bottom of the page, or in your browser's notification settings.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Comments (remark42, self-hosted)</h2>
+          <p>
+            The comment system is powered by remark42, hosted on our own infrastructure (<code>remark42.blogdungaucher.com</code>). No data is transmitted to a third party for comment management.
+          </p>
+          <p>
+            You can comment anonymously or authenticate via GitHub OAuth (optional). If you authenticate via GitHub, your public profile information (name, avatar) is transmitted to our remark42 server to display your identity next to your comments. This data is stored in our local database (Bolt DB file on our servers) and deleted on request. You can contact <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a> to have your comments removed.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Your rights (GDPR)</h2>
+          <p>
+            In accordance with the GDPR and the French Data Protection Act of 6 January 1978 as amended, you have the right to access, rectify, erase, object to, restrict, and, in some cases, port the data concerning you.
+          </p>
+          <ul>
+            <li>To exercise these rights or for any question about this policy: <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>.</li>
+            <li>Potential subprocessors or recipients include Hostinger (hosting), our self-hosted Umami instance (anonymised audience measurement, no consent required), Google (audience measurement and advertising, subject to consent), our self-hosted ntfy server (push notifications, subject to separate consent), our self-hosted remark42 server (comments, subject to participation), GitHub (CI/CD).</li>
+            <li>Some services may involve transfers outside the European Union, governed by the contractual mechanisms provided by their vendors.</li>
+            <li>You can withdraw your consent to non-essential trackers at any time via the cookie management button.</li>
+            <li>If, after contacting us, you believe your rights are not being respected, you can file a complaint with the <a href="https://www.cnil.fr/" target="_blank" rel="noopener noreferrer">CNIL</a> (French data protection authority).</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    padding: 4rem 0 5rem;
+  }
+
+  .legal .container {
+    max-width: 46rem;
+  }
+
+  .legal-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-header h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin: 0 0 1rem;
+  }
+
+  .legal-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .legal-body section {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-body h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 0.85rem;
+  }
+
+  .legal-body p {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin: 0 0 0.75rem;
+  }
+
+  .legal-body strong {
+    font-weight: 600;
+  }
+
+  .legal-body a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .legal-body ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .legal-body li {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin-bottom: 0.4rem;
+  }
+</style>

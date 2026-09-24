@@ -24,6 +24,7 @@ export const translations = {
       trustTitle: "Confiance",
       legal: "Mentions légales",
       privacy: "Confidentialité",
+      accessibility: "Accessibilité",
       notificationSettings: "Notifications et cookies",
     },
     home: {
@@ -149,6 +150,7 @@ export const translations = {
       trustTitle: "Trust",
       legal: "Legal notices",
       privacy: "Privacy",
+      accessibility: "Accessibility",
       notificationSettings: "Notifications & cookies",
     },
     home: {
@@ -265,6 +267,7 @@ export const translations = {
       trustTitle: "Confiança",
       legal: "Avisos legais",
       privacy: "Privacidade",
+      accessibility: "Acessibilidade",
       notificationSettings: "Notificações e cookies",
     },
     home: {
@@ -386,6 +389,7 @@ export const translations = {
       trustTitle: "Vertrouwen",
       legal: "Juridische vermeldingen",
       privacy: "Privacy",
+      accessibility: "Toegankelijkheid",
       notificationSettings: "Meldingen en cookies",
     },
     home: {

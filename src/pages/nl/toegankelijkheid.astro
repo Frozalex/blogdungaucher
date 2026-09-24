@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
+---
+<BaseLayout
+  title="Toegankelijkheid | Blog d'un Gaucher"
+  description="Toegankelijkheidsverklaring van Blog d'un Gaucher: inzet, huidige praktijken en hoe u een probleem kunt melden."
+  canonicalPath="/nl/toegankelijkheid/"
+  lang="nl"
+  frPath="/fr/accessibilite/"
+  enPath="/en/accessibility/"
+  ptBrPath="/pt-br/acessibilidade/"
+  nlPath="/nl/toegankelijkheid/"
+  noindex={true}
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/nl/" },
+    { name: "Toegankelijkheid", path: "/nl/toegankelijkheid/" },
+  ])}
+>
+  <section class="legal">
+    <div class="container">
+      <header class="legal-header">
+        <h1>Toegankelijkheid</h1>
+        <p class="legal-lead">
+          Blog d'un Gaucher streeft ernaar de website bruikbaar te maken voor zoveel mogelijk mensen, ongeacht de apparatuur, software of vaardigheden van wie de site bezoekt.
+        </p>
+      </header>
+
+      <div class="legal-body">
+
+        <section>
+          <h2>1. Conformiteitsstatus</h2>
+          <p>
+            Deze website heeft geen formele audit ondergaan volgens het Franse Référentiel général d'amélioration de l'accessibilité (RGAA) of een gelijkwaardige standaard zoals WCAG. Deze pagina is een zelfverklaarde intentieverklaring, geen certificering van volledige conformiteit.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Reeds toegepaste praktijken</h2>
+          <ul>
+            <li>Volledige toetsenbordnavigatie op interactieve componenten (menu's, cookiebanner, formulieren).</li>
+            <li>Expliciete ARIA-attributen en rollen op interactieve elementen (dialogen, knoppen, regio's).</li>
+            <li>Focusvasthouding (« focus trap ») en focusherstel in modale vensters, bijvoorbeeld de cookiebanner.</li>
+            <li>Respect voor de systeemvoorkeur <code>prefers-reduced-motion</code> om animaties te beperken.</li>
+            <li>Ondersteuning van donkere modus en tekstcontrast dat is ontworpen voor leesbaarheid.</li>
+            <li>Tikgebieden van minstens 44 pixels op links en knoppen in de voettekst, conform de WCAG 2.5.5-richtlijn.</li>
+            <li>Semantische paginastructuur (hiërarchische koppen, lijsten, navigatiebakens).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. Bekende beperkingen</h2>
+          <p>
+            Sommige externe content die op de website is ingesloten (reactiewidgets, externe videospelers, advertenties) voldoet mogelijk niet aan hetzelfde niveau van toegankelijkheid, aangezien de code niet onder onze directe controle staat.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Een probleem melden</h2>
+          <p>
+            Als u een toegankelijkheidsprobleem op deze website ondervindt, laat het ons dan weten via <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>, met vermelding van de betreffende pagina en, indien mogelijk, de gebruikte hulptechnologie. Wij streven ernaar gemelde problemen binnen een redelijke termijn te beantwoorden en te verhelpen.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    padding: 4rem 0 5rem;
+  }
+
+  .legal .container {
+    max-width: 46rem;
+  }
+
+  .legal-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-header h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin: 0 0 1rem;
+  }
+
+  .legal-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .legal-body section {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-body h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 0.85rem;
+  }
+
+  .legal-body p {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin: 0 0 0.75rem;
+  }
+
+  .legal-body strong {
+    font-weight: 600;
+  }
+
+  .legal-body a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .legal-body ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .legal-body li {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin-bottom: 0.4rem;
+  }
+</style>

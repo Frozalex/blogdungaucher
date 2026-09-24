@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
+---
+<BaseLayout
+  title="Accessibility | Blog d'un Gaucher"
+  description="Accessibility statement for Blog d'un Gaucher: commitments, current practices and how to report an issue."
+  canonicalPath="/en/accessibility/"
+  lang="en"
+  frPath="/fr/accessibilite/"
+  enPath="/en/accessibility/"
+  ptBrPath="/pt-br/acessibilidade/"
+  nlPath="/nl/toegankelijkheid/"
+  noindex={true}
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/en/" },
+    { name: "Accessibility", path: "/en/accessibility/" },
+  ])}
+>
+  <section class="legal">
+    <div class="container">
+      <header class="legal-header">
+        <h1>Accessibility</h1>
+        <p class="legal-lead">
+          Blog d'un Gaucher strives to make the site usable by as many people as possible, regardless of the hardware, software, or abilities of the people browsing it.
+        </p>
+      </header>
+
+      <div class="legal-body">
+
+        <section>
+          <h2>1. Compliance status</h2>
+          <p>
+            This site has not undergone a formal audit against the French Référentiel général d'amélioration de l'accessibilité (RGAA) or an equivalent standard such as WCAG. This page is a self-declared statement of commitment, not a certification of full compliance.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Practices already in place</h2>
+          <ul>
+            <li>Full keyboard navigation across interactive components (menus, cookie banner, forms).</li>
+            <li>Explicit ARIA attributes and roles on interactive elements (dialogs, buttons, regions).</li>
+            <li>Focus trapping and focus restoration in modal windows, for example the cookie consent banner.</li>
+            <li>Respect for the system preference <code>prefers-reduced-motion</code> to reduce animations.</li>
+            <li>Support for dark mode and text contrast designed for readability.</li>
+            <li>Tap targets of at least 44 pixels on footer links and buttons, in line with WCAG 2.5.5 guidance.</li>
+            <li>Semantic page structure (hierarchical headings, lists, navigation landmarks).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. Known limitations</h2>
+          <p>
+            Some third-party content embedded on the site (comment widgets, external video players, advertisements) may not meet the same level of accessibility, as their code is not under our direct control.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Report an issue</h2>
+          <p>
+            If you encounter an accessibility difficulty on this site, please let us know at <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>, specifying the page concerned and, if possible, the assistive technology used. We aim to respond and address reported issues within a reasonable timeframe.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    padding: 4rem 0 5rem;
+  }
+
+  .legal .container {
+    max-width: 46rem;
+  }
+
+  .legal-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-header h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin: 0 0 1rem;
+  }
+
+  .legal-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .legal-body section {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-body h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 0.85rem;
+  }
+
+  .legal-body p {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin: 0 0 0.75rem;
+  }
+
+  .legal-body strong {
+    font-weight: 600;
+  }
+
+  .legal-body a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .legal-body ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .legal-body li {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin-bottom: 0.4rem;
+  }
+</style>

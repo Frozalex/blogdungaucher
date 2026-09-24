@@ -1,0 +1,152 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
+---
+<BaseLayout
+  title="Juridische vermeldingen | Blog d'un Gaucher"
+  description="Juridische vermeldingen van Blog d'un Gaucher: uitgever, hosting, intellectueel eigendom en gebruiksvoorwaarden van blogdungaucher.com."
+  canonicalPath="/nl/juridische-vermeldingen/"
+  lang="nl"
+  frPath="/fr/mentions-legales/"
+  enPath="/en/legal-notice/"
+  ptBrPath="/pt-br/aviso-legal/"
+  nlPath="/nl/juridische-vermeldingen/"
+  noindex={true}
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/nl/" },
+    { name: "Juridische vermeldingen", path: "/nl/juridische-vermeldingen/" },
+  ])}
+>
+  <section class="legal">
+    <div class="container">
+      <header class="legal-header">
+        <h1>Juridische vermeldingen</h1>
+        <p class="legal-lead">
+          Overeenkomstig de Franse wet nr. 2004-575 van 21 juni 2004 betreffende het vertrouwen in de digitale economie (L.C.E.N.), artikelen 6-III en 19, worden onderstaande juridische vermeldingen ter kennis gebracht van de gebruikers en bezoekers van de website Blog d'un Gaucher.
+        </p>
+      </header>
+
+      <div class="legal-body">
+
+        <section>
+          <h2>1. Uitgever van de website</h2>
+          <p>blogdungaucher.com wordt op persoonlijke, niet-professionele basis uitgegeven.</p>
+          <ul>
+            <li><strong>Verantwoordelijke voor de publicatie:</strong> Blog d'un Gaucher</li>
+            <li><strong>Contact e-mail:</strong> <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a></li>
+            <li><strong>Status:</strong> Particulier. Aangezien de website op niet-professionele basis wordt uitgegeven door een natuurlijke persoon, zijn overeenkomstig artikel 6 van de wet nr. 2004-575 van 21 juni 2004 de persoonlijke identificatiegegevens (naam en adres) meegedeeld aan de hostingprovider en niet openbaar gemaakt.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>2. Hosting</h2>
+          <p>De website wordt gehost door Hostinger, dat zorgt voor directe en permanente opslag.</p>
+          <ul>
+            <li><strong>Bedrijfsnaam:</strong> Hostinger International Ltd.</li>
+            <li><strong>Adres:</strong> 61 Lordou Vironos Street, 6023 Larnaca, Cyprus</li>
+            <li><strong>Contact:</strong> <a href="https://www.hostinger.fr/contact" target="_blank" rel="noopener noreferrer">https://www.hostinger.fr/contact</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. Intellectueel eigendom</h2>
+          <p>
+            Alle elementen op blogdungaucher.com, waaronder teksten, analyses, commentaar, structuur, huisstijl en logo's, zijn het exclusieve intellectuele eigendom van de uitgever van de website, tenzij uitdrukkelijk anders vermeld. Het schaakbord en de stukken kunnen onderworpen zijn aan licenties van derden, bijvoorbeeld van Wikimedia Commons.
+          </p>
+          <p>
+            Elke reproductie, weergave, wijziging, publicatie of aanpassing van alle of een deel van de elementen van de website, ongeacht het gebruikte middel of procedé, is verboden zonder voorafgaande schriftelijke toestemming.
+          </p>
+          <p>
+            Elk ongeoorloofd gebruik van de website of van een van de elementen die zij bevat, wordt beschouwd als inbreuk en vervolgd overeenkomstig de artikelen L.335-2 en volgende van het Franse Wetboek van Intellectuele Eigendom.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Aansprakelijkheidsbeperking</h2>
+          <p>
+            De uitgever streeft ernaar zo nauwkeurig mogelijke informatie op de website te verstrekken. De uitgever kan echter niet aansprakelijk worden gesteld voor weglatingen, onnauwkeurigheden of tekortkomingen in de bijwerking, ongeacht of deze te wijten zijn aan de uitgever of aan derde partners die deze informatie leveren.
+          </p>
+          <p>
+            De analyses van schaakpartijen, de resultaten van de rekenmachines (Stockfish) en de meningen die op deze blog worden geuit, zijn eigen aan hun auteur of aan de software van derden, en hebben slechts een informatieve waarde.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Hyperlinks en reclame</h2>
+          <p>
+            blogdungaucher.com bevat een aantal hyperlinks naar andere websites (wetenschappelijke bronnen, schaakreferenties, enz.). De uitgever heeft niet de mogelijkheid om de inhoud van de aldus bezochte websites te controleren en aanvaardt dientengevolge geen enkele aansprakelijkheid voor eventuele risico's van onwettige inhoud.
+          </p>
+          <p>
+            De website behoudt zich het recht voor om discrete advertentieruimtes te tonen (bijvoorbeeld via Google AdSense). Deze advertenties worden beheerd door externe advertentienetwerken, die trackers kunnen gebruiken. Raadpleeg voor meer informatie ons Privacybeleid.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    padding: 4rem 0 5rem;
+  }
+
+  .legal .container {
+    max-width: 46rem;
+  }
+
+  .legal-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-header h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin: 0 0 1rem;
+  }
+
+  .legal-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .legal-body section {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-body h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 0.85rem;
+  }
+
+  .legal-body p {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin: 0 0 0.75rem;
+  }
+
+  .legal-body strong {
+    font-weight: 600;
+  }
+
+  .legal-body a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .legal-body ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .legal-body li {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin-bottom: 0.4rem;
+  }
+</style>

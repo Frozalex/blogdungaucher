@@ -6,8 +6,11 @@ import { buildBreadcrumbJsonLd } from "../../utils/blog";
   title="Politique de confidentialité | Blog d'un Gaucher"
   description="Politique de confidentialité du Blog d'un Gaucher : collecte de données, cookies, droits des utilisateurs et gestion des données personnelles."
   canonicalPath="/fr/politique-confidentialite/"
+  frPath="/fr/politique-confidentialite/"
+  enPath="/en/privacy-policy/"
+  ptBrPath="/pt-br/politica-de-privacidade/"
+  nlPath="/nl/privacybeleid/"
   noindex={true}
-  omitEnDeAlternateLinks={true}
   structuredData={buildBreadcrumbJsonLd([
     { name: "Accueil", path: "/fr/" },
     { name: "Politique de confidentialité", path: "/fr/politique-confidentialite/" },
@@ -40,7 +43,7 @@ import { buildBreadcrumbJsonLd } from "../../utils/blog";
         </section>
 
         <section>
-          <h2>2. Mesure d'audience</h2>
+          <h2>2. Mesure d'audience (Google Analytics)</h2>
           <p>
             Afin de comprendre quelles rubriques sont les plus consultées et d'améliorer la qualité éditoriale du blog, le site peut utiliser des outils de mesure d'audience, notamment Google Analytics.
           </p>
@@ -50,7 +53,17 @@ import { buildBreadcrumbJsonLd } from "../../utils/blog";
         </section>
 
         <section>
-          <h2>3. Publicités tierces</h2>
+          <h2>3. Mesure d'audience auto-hébergée (Umami)</h2>
+          <p>
+            En complément, le site utilise Umami, un outil de mesure d'audience open source auto-hébergé sur notre propre infrastructure (<code>stats.blogdungaucher.com</code>). Umami ne dépose aucun cookie et ne collecte aucune donnée permettant d'identifier individuellement un visiteur : les statistiques sont agrégées et anonymisées (pages vues, provenance, appareil).
+          </p>
+          <p>
+            En l'absence de cookie et de traceur, cette mesure d'audience est considérée comme exemptée de consentement au sens des recommandations de la CNIL et est donc active dès votre visite, indépendamment de vos choix dans le bandeau cookies.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Publicités tierces</h2>
           <p>
             Pour financer l'hébergement et le développement du site, blogdungaucher.com peut afficher des espaces publicitaires via des réseaux spécialisés, notamment Google AdSense.
           </p>
@@ -64,7 +77,7 @@ import { buildBreadcrumbJsonLd } from "../../utils/blog";
         </section>
 
         <section>
-          <h2>4. Notifications push (ntfy, auto-hébergé)</h2>
+          <h2>5. Notifications push (ntfy, auto-hébergé)</h2>
           <p>
             Si vous activez les notifications dans le bandeau de confidentialité, le navigateur s'abonne au service ntfy auto-hébergé sur notre propre infrastructure (serveur <code>ntfy.blogdungaucher.com</code>). Aucune donnée n'est transmise à un tiers : les abonnements et les notifications transitent uniquement par nos serveurs.
           </p>
@@ -74,7 +87,7 @@ import { buildBreadcrumbJsonLd } from "../../utils/blog";
         </section>
 
         <section>
-          <h2>5. Commentaires (remark42, auto-hébergé)</h2>
+          <h2>6. Commentaires (remark42, auto-hébergé)</h2>
           <p>
             Le système de commentaires est géré par remark42, hébergé sur notre propre infrastructure (<code>remark42.blogdungaucher.com</code>). Aucune donnée n'est transmise à un tiers pour la gestion des commentaires.
           </p>
@@ -84,13 +97,13 @@ import { buildBreadcrumbJsonLd } from "../../utils/blog";
         </section>
 
         <section>
-          <h2>6. Vos droits (RGPD)</h2>
+          <h2>7. Vos droits (RGPD)</h2>
           <p>
             Conformément au RGPD et à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition, de limitation et, selon les cas, de portabilité des données vous concernant.
           </p>
           <ul>
             <li>Pour exercer ces droits ou pour toute question relative à cette politique : <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>.</li>
-            <li>Les sous-traitants ou destinataires potentiels incluent Hostinger (hébergement), Google (mesure d'audience et publicité, sous réserve de consentement), notre serveur ntfy auto-hébergé (notifications push, sous réserve d'un consentement distinct), notre serveur remark42 auto-hébergé (commentaires, sous réserve de participation), GitHub (CI/CD).</li>
+            <li>Les sous-traitants ou destinataires potentiels incluent Hostinger (hébergement), notre instance Umami auto-hébergée (mesure d'audience anonymisée, sans consentement requis), Google (mesure d'audience et publicité, sous réserve de consentement), notre serveur ntfy auto-hébergé (notifications push, sous réserve d'un consentement distinct), notre serveur remark42 auto-hébergé (commentaires, sous réserve de participation), GitHub (CI/CD).</li>
             <li>Certains services peuvent impliquer des transferts hors Union européenne, encadrés par les mécanismes contractuels prévus par leurs fournisseurs.</li>
             <li>Vous pouvez retirer votre consentement aux traceurs non essentiels à tout moment via le bouton de gestion des cookies.</li>
             <li>Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la <a href="https://www.cnil.fr/" target="_blank" rel="noopener noreferrer">CNIL</a>.</li>

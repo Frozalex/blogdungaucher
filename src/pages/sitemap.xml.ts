@@ -11,6 +11,10 @@ const langs: SiteLang[] = ["fr", "en"];
 const EXCLUDED_PATHS = new Set([
   "/fr/mentions-legales/",
   "/fr/politique-confidentialite/",
+  "/fr/accessibilite/",
+  "/en/legal-notice/",
+  "/en/privacy-policy/",
+  "/en/accessibility/",
   "/fr/analyses/",
 ]);
 

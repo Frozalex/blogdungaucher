@@ -11,10 +11,17 @@ const { lang = "fr" } = Astro.props;
 const aboutHref =
   lang === "en" ? "/en/about/" : lang === "pt-br" ? "/pt-br/about/" : lang === "nl" ? "/nl/about/" : "/fr/about/";
 
-/** Contact : contrairement aux pages légales, la page existe dans les 4 langues. */
 const contactHref =
   lang === "en" ? "/en/contact/" : lang === "pt-br" ? "/pt-br/contact/" : lang === "nl" ? "/nl/contact/" : "/fr/contact/";
 const contactLabel = lang === "pt-br" ? "Contato" : "Contact";
+
+/** Pages légales : désormais traduites dans les 4 langues. */
+const legalHref =
+  lang === "en" ? "/en/legal-notice/" : lang === "pt-br" ? "/pt-br/aviso-legal/" : lang === "nl" ? "/nl/juridische-vermeldingen/" : "/fr/mentions-legales/";
+const privacyHref =
+  lang === "en" ? "/en/privacy-policy/" : lang === "pt-br" ? "/pt-br/politica-de-privacidade/" : lang === "nl" ? "/nl/privacybeleid/" : "/fr/politique-confidentialite/";
+const accessibilityHref =
+  lang === "en" ? "/en/accessibility/" : lang === "pt-br" ? "/pt-br/acessibilidade/" : lang === "nl" ? "/nl/toegankelijkheid/" : "/fr/accessibilite/";
 
 const tLang: Lang = (["fr", "en", "pt-br", "nl"].includes(lang) ? lang : "fr") as Lang;
 const tt = (key: string, fallback: string) => {
@@ -104,6 +111,7 @@ const requiredNote = lang === "en"
           id="footer-open-notification-settings"
           data-t="footer.notificationSettings"
         >{tt("footer.notificationSettings", "Notifications et cookies")}</button>
+        <a href={accessibilityHref} data-t="footer.accessibility">{tt("footer.accessibility", "Accessibilité")}</a>
       </div>
 
     </nav>
@@ -114,10 +122,8 @@ const requiredNote = lang === "en"
     <div class="container footer-bottom-bar__inner">
       <p>&copy; {new Date().getFullYear()} <span data-t="nav.siteName">{tt("nav.siteName", "Blog d'un Gaucher")}</span></p>
       <div class="footer-bottom-links">
-        {/* Pages légales : seules les versions FR existent → tous les liens y pointent
-            (évite un 404 sur les liens /en/ qui n'ont pas de page). */}
-        <a href="/fr/mentions-legales/" data-t="footer.legal">{tt("footer.legal", "Mentions légales")}</a>
-        <a href="/fr/politique-confidentialite/" data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
+        <a href={legalHref} data-t="footer.legal">{tt("footer.legal", "Mentions légales")}</a>
+        <a href={privacyHref} data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
         <a href={aboutHref}>{lang === "en" ? "About" : lang === "pt-br" ? "Sobre" : lang === "nl" ? "Over" : "À propos"}</a>
         <a href={contactHref}>{contactLabel}</a>
       </div>

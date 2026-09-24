@@ -1,0 +1,152 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
+---
+<BaseLayout
+  title="Legal notice | Blog d'un Gaucher"
+  description="Legal notice for Blog d'un Gaucher: publisher, host, intellectual property and terms of use for blogdungaucher.com."
+  canonicalPath="/en/legal-notice/"
+  lang="en"
+  frPath="/fr/mentions-legales/"
+  enPath="/en/legal-notice/"
+  ptBrPath="/pt-br/aviso-legal/"
+  nlPath="/nl/juridische-vermeldingen/"
+  noindex={true}
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/en/" },
+    { name: "Legal notice", path: "/en/legal-notice/" },
+  ])}
+>
+  <section class="legal">
+    <div class="container">
+      <header class="legal-header">
+        <h1>Legal notice</h1>
+        <p class="legal-lead">
+          In accordance with French law n° 2004-575 of 21 June 2004 for confidence in the digital economy (L.C.E.N.), articles 6-III and 19, this legal notice is provided for the information of users and visitors of the Blog d'un Gaucher website.
+        </p>
+      </header>
+
+      <div class="legal-body">
+
+        <section>
+          <h2>1. Site publisher</h2>
+          <p>blogdungaucher.com is published on a personal, non-professional basis.</p>
+          <ul>
+            <li><strong>Publication manager:</strong> Blog d'un Gaucher</li>
+            <li><strong>Contact email:</strong> <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a></li>
+            <li><strong>Status:</strong> Private individual. As the site is published on a non-professional basis by a natural person, in accordance with article 6 of French law n° 2004-575 of 21 June 2004, personal identification information (name and address) has been communicated to the host and is not publicly disclosed.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>2. Hosting</h2>
+          <p>The site is hosted by Hostinger, which provides direct and permanent storage.</p>
+          <ul>
+            <li><strong>Company name:</strong> Hostinger International Ltd.</li>
+            <li><strong>Address:</strong> 61 Lordou Vironos Street, 6023 Larnaca, Cyprus</li>
+            <li><strong>Contact:</strong> <a href="https://www.hostinger.fr/contact" target="_blank" rel="noopener noreferrer">https://www.hostinger.fr/contact</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. Intellectual property</h2>
+          <p>
+            All content on blogdungaucher.com, including text, analyses, commentary, structure, visual identity and logos, is the exclusive intellectual property of the site publisher, unless otherwise explicitly stated. The chessboard and pieces may be subject to third-party open licences, for example from Wikimedia Commons.
+          </p>
+          <p>
+            Any reproduction, representation, modification, publication or adaptation of all or part of the site's content, by any means, is prohibited without prior written authorisation.
+          </p>
+          <p>
+            Any unauthorised use of the site or any of its content will be considered an infringement and prosecuted in accordance with articles L.335-2 et seq. of the French Intellectual Property Code.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Limitation of liability</h2>
+          <p>
+            The publisher strives to provide information on the site that is as accurate as possible. However, the publisher cannot be held liable for omissions, inaccuracies or failures to update, whether caused by the publisher or by third-party partners who supply this information.
+          </p>
+          <p>
+            Chess game analyses, engine outputs (Stockfish) and opinions expressed on this blog belong to their respective author or to the third-party software, and are provided for informational purposes only.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Hyperlinks and advertising</h2>
+          <p>
+            blogdungaucher.com contains a number of hyperlinks to other sites (scientific sources, chess references, etc.). The publisher has no way of verifying the content of these external sites and therefore assumes no liability for any risk of unlawful content.
+          </p>
+          <p>
+            The site reserves the right to display discreet advertising spaces (for example via Google AdSense). These advertisements are managed by third-party ad networks, which may use trackers. For more information, see our Privacy Policy.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    padding: 4rem 0 5rem;
+  }
+
+  .legal .container {
+    max-width: 46rem;
+  }
+
+  .legal-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-header h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin: 0 0 1rem;
+  }
+
+  .legal-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .legal-body section {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-body h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 0.85rem;
+  }
+
+  .legal-body p {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin: 0 0 0.75rem;
+  }
+
+  .legal-body strong {
+    font-weight: 600;
+  }
+
+  .legal-body a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .legal-body ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .legal-body li {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin-bottom: 0.4rem;
+  }
+</style>
