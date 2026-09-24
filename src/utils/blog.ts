@@ -86,6 +86,42 @@ export function filterPostsForLang(
   return posts.filter((p) => !isFrenchOnlyPost(p));
 }
 
+/**
+ * Articles « Pour vous » : scoring par tags partagés + catégorie, avec la
+ * proximité de date de publication comme départage. Sans le départage,
+ * les ~25 % d'articles sans tags retombaient tous sur la même sélection
+ * (ordre de `allPosts`, donc identique pour tout article d'une catégorie)
+ * — le carrousel n'était alors pas réellement lié à l'article lu.
+ */
+export function getRelatedPosts(
+  allPosts: BlogEntry[],
+  post: BlogEntry,
+  lang: "fr" | "en" | "pt-br" | "nl",
+  limit = 6,
+): BlogEntry[] {
+  const currentTags = new Set(post.data.tags ?? []);
+  const currentTime = post.data.publishDate.getTime();
+  const oneDay = 1000 * 60 * 60 * 24;
+
+  return filterPostsForLang(
+    allPosts.filter((e) => e.id !== post.id),
+    lang,
+  )
+    .map((entry) => {
+      const sharedTags = (entry.data.tags ?? []).filter((t) => currentTags.has(t)).length;
+      const sameCategory = entry.data.category === post.data.category ? 1 : 0;
+      const daysApart = Math.abs(entry.data.publishDate.getTime() - currentTime) / oneDay;
+      // Le départage temporel reste marginal (< 1 pt) : il ne doit jamais
+      // dépasser l'écart d'un tag partagé, seulement casser les égalités.
+      const recencyBonus = 1 / (1 + daysApart);
+      return { entry, score: sharedTags * 2 + sameCategory + recencyBonus, sharedTags, sameCategory };
+    })
+    .filter(({ sharedTags, sameCategory }) => sharedTags > 0 || sameCategory > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(({ entry }) => entry);
+}
+
 export type SiteLang = "fr" | "en" | "pt-br" | "nl";
 
 /**

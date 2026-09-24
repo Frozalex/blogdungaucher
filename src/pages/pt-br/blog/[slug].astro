@@ -21,6 +21,7 @@ import {
   calculateReadingTime,
   formatDatePtBr,
   filterPostsForLang,
+  getRelatedPosts,
   getAllPosts,
   getEnSlugMap,
   getPtBrSlugMap,
@@ -99,10 +100,7 @@ const readingTime =
   (ptBrMarkdown ? calculateReadingTime(ptBrMarkdown) : calculateReadingTime(post.body ?? ""));
 
 const allPosts = await getAllPosts();
-const related = filterPostsForLang(
-  allPosts.filter((e) => e.id !== post.id && e.data.category === post.data.category),
-  "pt-br",
-).slice(0, 3);
+const related = getRelatedPosts(allPosts, post, "pt-br");
 
 // Titres pt-br des articles liés (repli sur le titre FR si pas de traduction publiée).
 const ptBrTitleByFrSlug = new Map(
@@ -324,15 +322,19 @@ const structuredData = [
         </div>
         <div class="related-carousel__track" data-rc-track>
           {relatedWithUrls.map(({ entry: e, url, title }) => (
-            <a href={url} class="rc-card">
-              {getPostHeroSrc(e) && (
-                <img class="rc-card__img" src={getPostHeroSrc(e)!} alt="" loading="lazy" decoding="async" width="320" height="180" />
-              )}
+            <a href={url} class="rc-card" style={`--accent:${categoryMap[e.data.category]?.accent}`}>
+              <div class="rc-card__media">
+                {getPostHeroSrc(e) && (
+                  <img class="rc-card__img" src={getPostHeroSrc(e)!} alt="" loading="lazy" decoding="async" width="320" height="180" />
+                )}
+                <span class="rc-card__badge">{t("pt-br", `categories.${e.data.category}.shortLabel`)}</span>
+              </div>
               <div class="rc-card__body">
-                <span class="rc-card__cat" style={`color:${categoryMap[e.data.category]?.accent}`}>
-                  {t("pt-br", `categories.${e.data.category}.shortLabel`)}
-                </span>
                 <p class="rc-card__title">{title}</p>
+                <span class="rc-card__cta">
+                  {t("pt-br", "card.read")}
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+                </span>
               </div>
             </a>
           ))}
@@ -536,39 +538,72 @@ const structuredData = [
   .toc-inline-wrap { margin-bottom: 1.5rem; }
 
   /* ── Carrossel "Para você" — slide cards interativos ── */
-  .related-carousel { margin: 3.5rem auto 1rem; max-width: 64rem; }
-  .related-carousel__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
-  .related-carousel__label { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text-main); }
+  .related-carousel {
+    margin: 4rem auto 1rem;
+    max-width: 68rem;
+    padding: 2rem clamp(1.25rem, 4vw, 2.25rem) 1.75rem;
+    background: var(--surface-warm);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-lg);
+  }
+  .related-carousel__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; }
+  .related-carousel__label { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text-main); }
+  .related-carousel__label::before {
+    content: ""; display: inline-block; width: 0.55rem; height: 0.55rem;
+    margin-right: 0.55rem; border-radius: 50%; background: var(--green); vertical-align: middle;
+  }
   .related-carousel__nav { display: flex; gap: 0.5rem; }
   .rc-btn {
     display: inline-flex; align-items: center; justify-content: center;
     width: 2.6rem; height: 2.6rem; border-radius: 50%;
     border: 1.5px solid var(--border-strong); background: var(--surface);
     color: var(--text-muted); cursor: pointer;
-    transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+    transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease;
   }
-  .rc-btn:hover { background: var(--text-main); border-color: var(--text-main); color: var(--bg); }
+  .rc-btn:hover { background: var(--text-main); border-color: var(--text-main); color: var(--bg); transform: translateY(-2px); }
   .rc-btn:disabled { opacity: 0.35; cursor: not-allowed; pointer-events: none; }
   .related-carousel__track {
-    display: grid; grid-auto-flow: column; grid-auto-columns: minmax(17rem, 17rem);
-    gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
-    padding-bottom: 0.75rem; scrollbar-width: none;
+    display: grid; grid-auto-flow: column; grid-auto-columns: minmax(17.5rem, 17.5rem);
+    gap: 1.5rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    padding: 0.15rem 0.15rem 0.75rem; scrollbar-width: none;
   }
   .related-carousel__track::-webkit-scrollbar { display: none; }
   .rc-card {
+    position: relative;
     scroll-snap-align: start; display: flex; flex-direction: column;
-    border-radius: var(--radius-lg); border: 1px solid var(--border-soft);
-    background: var(--surface); overflow: hidden; text-decoration: none;
-    transition: transform 220ms var(--ease-out), box-shadow 220ms ease, border-color 220ms ease;
+    border-radius: var(--radius-lg); border: 1.5px solid var(--border-soft);
+    background: var(--surface); box-shadow: var(--shadow-xs); overflow: hidden; text-decoration: none;
+    transition: transform 260ms var(--ease-spring), box-shadow 260ms var(--ease-out), border-color 220ms ease;
   }
-  .rc-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
-  .rc-card__img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: var(--surface-warm); display: block; }
-  .rc-card__body { display: flex; flex-direction: column; gap: 0.45rem; padding: 1rem 1.1rem 1.2rem; }
-  .rc-card__cat { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+  .rc-card::after {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0; transform: scaleX(0.72); transform-origin: center;
+    transition: opacity 260ms var(--ease-out), transform 360ms var(--ease-editorial);
+    pointer-events: none; z-index: 2;
+  }
+  .rc-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: var(--accent); }
+  .rc-card:hover::after { opacity: 1; transform: scaleX(1); }
+  .rc-card__media { position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: color-mix(in srgb, var(--text-main) 6%, var(--surface)); }
+  .rc-card__img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 420ms var(--ease-out); }
+  .rc-card:hover .rc-card__img { transform: scale(1.06); }
+  .rc-card__badge {
+    position: absolute; top: 0.7rem; left: 0.7rem;
+    display: inline-flex; align-items: center; min-height: 1.45rem; padding: 0 0.55rem;
+    border-radius: var(--radius-pill); border: 1px solid var(--accent); color: var(--accent);
+    font-size: 0.64rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    background: color-mix(in srgb, var(--surface) 82%, transparent); backdrop-filter: blur(3px);
+  }
+  .rc-card__body { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.05rem 1.15rem 1.15rem; flex: 1; }
   .rc-card__title {
     font-family: var(--font-display); font-size: 0.98rem; font-weight: 600; color: var(--text-main); line-height: 1.4;
     display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+    transition: color 180ms ease;
   }
+  .rc-card:hover .rc-card__title { color: var(--accent); }
+  .rc-card__cta { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: auto; color: var(--green); font-weight: 600; font-size: 0.8rem; }
+  .rc-card__cta svg { transition: transform 220ms var(--ease-spring); }
+  .rc-card:hover .rc-card__cta svg { transform: translateX(4px); }
 
   @media (max-width: 1100px) {
     .article-hero { min-height: calc(50vw * 2 / 3); }
