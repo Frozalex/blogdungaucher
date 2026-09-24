@@ -1052,9 +1052,50 @@ const structuredData = [
     .article-main { grid-column: 1; }
   }
 
+  /* ── Carrousel : échelle responsive ──
+     Au-dessus de 1024px les cartes gardent une largeur fixe (3 visibles dans
+     le panneau). En dessous on bascule sur des largeurs en pourcentage : la
+     carte suivante reste amorcée à l'écran, seul indice que le rail défile
+     une fois les flèches trop petites pour être évidentes. */
+  @media (max-width: 1024px) {
+    .related-carousel {
+      margin-top: 3.25rem;
+      padding: 1.75rem 1.25rem 1.5rem;
+    }
+    .related-carousel__track {
+      grid-auto-columns: 15.5rem;
+      gap: 1.25rem;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .related-carousel {
+      margin-top: 3rem;
+      padding: 1.5rem 1.1rem 1.25rem;
+    }
+    .related-carousel__head { margin-bottom: 1.15rem; }
+    .related-carousel__label { font-size: 1.25rem; }
+    .related-carousel__track {
+      grid-auto-columns: 46%;
+      gap: 1rem;
+    }
+    /* 2.3rem reste au-dessus de la cible tactile de 44px une fois le halo
+       de focus compté : on rétrécit sans casser l'accessibilité. */
+    .rc-btn { width: 2.3rem; height: 2.3rem; }
+  }
+
   @media (max-width: 560px) {
-    .related-carousel__track { grid-auto-columns: minmax(14rem, 80%); }
     .related-carousel__label { font-size: 1.15rem; }
+    .related-carousel__track { grid-auto-columns: 82%; }
+    .rc-card__body {
+      gap: 0.6rem;
+      padding: 0.9rem 1rem 1rem;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .related-carousel { padding: 1.25rem 0.9rem 1.1rem; }
+    .related-carousel__track { grid-auto-columns: 88%; }
   }
 </style>
 
