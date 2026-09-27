@@ -165,11 +165,117 @@ function json(res, status, body) {
   res.end(JSON.stringify(body));
 }
 
+/** Aucune requête légitime ne dépasse quelques centaines d'octets. */
+const MAX_BODY_BYTES = 8 * 1024;
+
+/**
+ * Lit le corps en coupant au-delà de MAX_BODY_BYTES : sans borne, un client
+ * hostile peut faire grossir la chaîne jusqu'à saturer la mémoire du process.
+ */
 async function readBody(req) {
   let body = "";
-  for await (const chunk of req) body += chunk;
+  let size = 0;
+  for await (const chunk of req) {
+    size += chunk.length;
+    if (size > MAX_BODY_BYTES) {
+      req.destroy();
+      throw new Error("body too large");
+    }
+    body += chunk;
+  }
   return body;
 }
+
+// ── Anti-spam ───────────────────────────────────────────────────────
+/**
+ * Identifie le client pour la limitation de débit.
+ *
+ * Le service n'est joignable qu'à travers nginx, donc `remoteAddress` vaut
+ * toujours 127.0.0.1 : la seule source utilisable est X-Forwarded-For. On prend
+ * la DERNIÈRE valeur, celle que notre nginx a ajoutée
+ * (`$proxy_add_x_forwarded_for`) ; les précédentes sont déclarées par le client
+ * et donc falsifiables.
+ *
+ * Si l'en-tête manque (nginx mal configuré), on ne peut plus distinguer les
+ * clients : `trusted` passe à faux et l'appelant retombe sur un plafond global
+ * large, plutôt que d'enfermer tout le site dans le quota d'une seule IP.
+ */
+function clientIp(req) {
+  const xff = req.headers["x-forwarded-for"];
+  if (typeof xff === "string" && xff.trim()) {
+    const parts = xff.split(",").map((s) => s.trim()).filter(Boolean);
+    if (parts.length > 0) return { ip: parts[parts.length - 1], trusted: true };
+  }
+  if (!clientIp.warned) {
+    clientIp.warned = true;
+    console.warn(
+      "[anti-spam] X-Forwarded-For absent : nginx doit poser " +
+        "`proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;` sur /newsletter et /push. " +
+        "En attendant, la limitation de débit est globale et non par IP.",
+    );
+  }
+  return { ip: req.socket.remoteAddress ?? "inconnu", trusted: false };
+}
+
+/** Fenêtre glissante en mémoire : clé → horodatages des requêtes retenues. */
+const hits = new Map();
+
+/**
+ * Facteur appliqué au plafond quand l'IP du client est inconnue : le compteur
+ * devient commun à tout le trafic, il doit donc laisser passer une audience
+ * normale tout en coupant une inondation.
+ */
+const UNTRUSTED_IP_FACTOR = 40;
+
+/**
+ * Limitation de débit par IP et par route. En mémoire volontairement : le
+ * service est mono-instance, et un redémarrage qui remet les compteurs à zéro
+ * est sans conséquence ici.
+ */
+function rateLimited(req, bucket, max, windowMs) {
+  const { ip, trusted } = clientIp(req);
+  const key = `${bucket}:${trusted ? ip : "global"}`;
+  const ceiling = trusted ? max : max * UNTRUSTED_IP_FACTOR;
+  const now = Date.now();
+  const recent = (hits.get(key) ?? []).filter((t) => now - t < windowMs);
+
+  if (recent.length >= ceiling) {
+    hits.set(key, recent);
+    return true;
+  }
+
+  recent.push(now);
+  hits.set(key, recent);
+
+  // Purge opportuniste : sans elle, la Map garderait une entrée par IP vue
+  // depuis le démarrage.
+  if (hits.size > 5000) {
+    for (const [k, times] of hits) {
+      if (times.every((t) => now - t >= windowMs)) hits.delete(k);
+    }
+  }
+  return false;
+}
+
+/**
+ * Refuse les requêtes dont l'`Origin` n'est pas le site. Le navigateur envoie
+ * toujours cet en-tête sur un POST, y compris en même origine : une absence
+ * signale un client qui n'est pas une page du site (curl, script). Falsifiable,
+ * mais écarte le spam opportuniste sans gêner personne.
+ */
+function wrongOrigin(req) {
+  const origin = req.headers["origin"];
+  return origin !== ALLOWED_ORIGIN;
+}
+
+/** Validation d'adresse : une seule arobase, un point dans le domaine, longueur bornée. */
+const EMAIL_RE = /^[^\s@]{1,64}@[^\s@.]+(?:\.[^\s@.]+)+$/;
+
+/** Délai minimal entre l'affichage du formulaire et l'envoi (cf. NewsletterForm.astro). */
+const MIN_FILL_MS = 1500;
+
+/** Plafond d'abonnés push conservés (fichier relu et réécrit à chaque diffusion). */
+const MAX_PUSH_SUBS = 20000;
 
 // ── Serveur ──────────────────────────────────────────────────────────
 http.createServer(async (req, res) => {
@@ -186,9 +292,37 @@ http.createServer(async (req, res) => {
 
   // ── Newsletter (Brevo) ───────────────────────────────────────────
   if (req.method === "POST" && req.url === "/subscribe") {
+    if (wrongOrigin(req)) {
+      json(res, 403, { error: "forbidden origin" });
+      return;
+    }
+    // Chaque inscription réussie déclenche un email de bienvenue : sans plafond,
+    // un script pourrait faire envoyer des messages en masse à des adresses
+    // arbitraires et brûler la réputation de l'expéditeur.
+    if (rateLimited(req, "subscribe", 5, 15 * 60 * 1000)) {
+      console.warn(`[anti-spam] débit dépassé sur /subscribe depuis ${clientIp(req).ip}`);
+      json(res, 429, { error: "too many requests" });
+      return;
+    }
     try {
-      const { email, name } = JSON.parse(await readBody(req));
-      if (!email || typeof email !== "string" || !email.includes("@")) {
+      const { email, name, website, elapsedMs } = JSON.parse(await readBody(req));
+
+      // Pot de miel rempli : on répond comme si tout allait bien pour ne rien
+      // apprendre au robot, sans rien envoyer à Brevo.
+      if (typeof website === "string" && website.trim()) {
+        console.warn(`[anti-spam] pot de miel rempli depuis ${clientIp(req).ip}`);
+        json(res, 200, { ok: true });
+        return;
+      }
+
+      // Formulaire posté trop vite, ou sans le compteur : ce n'est pas la page du site.
+      if (typeof elapsedMs !== "number" || !Number.isFinite(elapsedMs) || elapsedMs < MIN_FILL_MS) {
+        console.warn(`[anti-spam] envoi trop rapide (${elapsedMs}) depuis ${clientIp(req).ip}`);
+        json(res, 400, { error: "invalid submission" });
+        return;
+      }
+
+      if (!email || typeof email !== "string" || email.length > 254 || !EMAIL_RE.test(email.trim())) {
         json(res, 400, { error: "invalid email" });
         return;
       }
@@ -197,8 +331,10 @@ http.createServer(async (req, res) => {
         listIds: [LIST_ID],
         updateEnabled: true,
       };
+      // Prénom borné : ce champ finit dans les emails envoyés, pas question d'y
+      // laisser passer une charge arbitraire.
       if (name && typeof name === "string" && name.trim()) {
-        payload.attributes = { FIRSTNAME: name.trim() };
+        payload.attributes = { FIRSTNAME: name.trim().slice(0, 80) };
       }
       const r = await fetch(BREVO_URL, {
         method: "POST",
@@ -229,10 +365,25 @@ http.createServer(async (req, res) => {
   // ── Web Push : enregistrer un abonné ────────────────────────────
   if (req.method === "POST" && req.url === "/push/subscribe") {
     if (!VAPID_PUBLIC_KEY) { json(res, 503, { error: "push not configured" }); return; }
+    if (wrongOrigin(req)) { json(res, 403, { error: "forbidden origin" }); return; }
+    if (rateLimited(req, "push-subscribe", 20, 15 * 60 * 1000)) {
+      json(res, 429, { error: "too many requests" });
+      return;
+    }
     try {
       const subscription = JSON.parse(await readBody(req));
-      if (!subscription?.endpoint) { json(res, 400, { error: "invalid subscription" }); return; }
+      if (typeof subscription?.endpoint !== "string" || !/^https:\/\//.test(subscription.endpoint)) {
+        json(res, 400, { error: "invalid subscription" });
+        return;
+      }
       const subs = loadSubs();
+      // Le fichier d'abonnés est relu et réécrit à chaque diffusion : on refuse de
+      // le laisser croître sans limite.
+      if (subs.length >= MAX_PUSH_SUBS && !subs.some((s) => s.endpoint === subscription.endpoint)) {
+        console.warn(`[anti-spam] plafond d'abonnés push atteint (${subs.length})`);
+        json(res, 503, { error: "subscription list full" });
+        return;
+      }
       if (!subs.some((s) => s.endpoint === subscription.endpoint)) {
         subs.push(subscription);
         saveSubs(subs);
@@ -247,6 +398,11 @@ http.createServer(async (req, res) => {
   // ── Web Push : supprimer un abonné ──────────────────────────────
   if (req.method === "POST" && req.url === "/push/unsubscribe") {
     if (!VAPID_PUBLIC_KEY) { json(res, 503, { error: "push not configured" }); return; }
+    if (wrongOrigin(req)) { json(res, 403, { error: "forbidden origin" }); return; }
+    if (rateLimited(req, "push-unsubscribe", 20, 15 * 60 * 1000)) {
+      json(res, 429, { error: "too many requests" });
+      return;
+    }
     try {
       const { endpoint } = JSON.parse(await readBody(req));
       if (!endpoint) { json(res, 400, { error: "missing endpoint" }); return; }
@@ -262,9 +418,13 @@ http.createServer(async (req, res) => {
   // ── Web Push : diffuser à tous les abonnés (interne — token requis) ──
   if (req.method === "POST" && req.url === "/push/send") {
     if (!VAPID_PUBLIC_KEY) { json(res, 503, { error: "push not configured" }); return; }
+    // Pas de contrôle d'Origin ici : l'appelant est le script de publication, qui
+    // n'est pas une page de navigateur. Le jeton fait foi, et on borne les essais
+    // ratés pour qu'il ne puisse pas être cherché par force brute.
     const auth = req.headers["authorization"] ?? "";
     if (!PUSH_SEND_TOKEN || auth !== `Bearer ${PUSH_SEND_TOKEN}`) {
-      json(res, 401, { error: "unauthorized" });
+      const throttled = rateLimited(req, "push-send-auth", 10, 15 * 60 * 1000);
+      json(res, throttled ? 429 : 401, { error: throttled ? "too many requests" : "unauthorized" });
       return;
     }
     try {

@@ -40,6 +40,17 @@ const fc = formCopy[lang] ?? formCopy.fr;
       {fc.submit}
     </button>
   </div>
+  {/*
+    Pot de miel : un champ que les robots remplissent volontiers et qu'un humain
+    ne voit jamais. Pas `type="hidden"` (les robots savent l'éviter) mais un champ
+    réel sorti du flux visuel, retiré du parcours clavier (`tabindex="-1"`) et de
+    l'arbre d'accessibilité (`aria-hidden`) pour ne piéger personne au lecteur
+    d'écran. Rempli → la requête est abandonnée côté serveur.
+  */}
+  <div class="nl-trap" aria-hidden="true">
+    <label for={`nl-website-${variant}`}>Site web</label>
+    <input type="text" id={`nl-website-${variant}`} name="website" tabindex="-1" autocomplete="off" />
+  </div>
   <p class="nl-msg" aria-live="polite" hidden></p>
 </form>
 
@@ -48,6 +59,13 @@ const fc = formCopy[lang] ?? formCopy.fr;
     document.querySelectorAll<HTMLFormElement>("[data-newsletter-form]").forEach((form) => {
       if (form.dataset.bound === "1") return;
       form.dataset.bound = "1";
+
+      // Piège temporel : un robot poste dans la milliseconde, un humain met
+      // quelques secondes à taper son adresse. On envoie le délai écoulé et le
+      // serveur refuse en dessous d'un seuil. Filtre grossier assumé (la valeur
+      // est falsifiable) : le vrai garde-fou est la limitation de débit côté
+      // serveur, celui-ci ne coûte rien et écarte les robots naïfs.
+      const readyAt = Date.now();
 
       const endpoint = form.dataset.endpoint!;
       const btn = form.querySelector<HTMLButtonElement>(".nl-btn")!;
@@ -81,7 +99,11 @@ const fc = formCopy[lang] ?? formCopy.fr;
           const r = await fetch(endpoint, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email }),
+            body: JSON.stringify({
+              email,
+              website: (form.querySelector<HTMLInputElement>('[name="website"]')?.value ?? ""),
+              elapsedMs: Date.now() - readyAt,
+            }),
           });
           if (r.ok) {
             form.innerHTML = `<p class="nl-success">${T.success}</p>`;
@@ -104,6 +126,19 @@ const fc = formCopy[lang] ?? formCopy.fr;
   .nl-form {
     display: grid;
     gap: 0.4rem;
+    /* Référence de positionnement pour le pot de miel. */
+    position: relative;
+  }
+
+  /* Hors écran plutôt que `display: none` : un robot qui lit le CSS saute un champ
+     masqué, alors qu'il remplit volontiers un champ simplement déporté. */
+  .nl-trap {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
   }
 
   .nl-row {
