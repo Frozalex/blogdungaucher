@@ -2,6 +2,7 @@
 import type { BlogEntry } from "../utils/blog";
 import { formatDateForLang, getCategoryMeta, getLocalizedPostText, getPostHeroSrc, getPostUrlLang } from "../utils/blog";
 import { t, type Lang } from "../i18n/translations";
+import { getResponsiveImage } from "../utils/thumbs";
 
 const { post, featured = false, lead = false, eager = false, lang = "fr" } = Astro.props as {
   post: BlogEntry;
@@ -27,6 +28,15 @@ const formattedDate = formatDateForLang(post.data.publishDate, lang);
 
 const thumbSrc = getPostHeroSrc(post);
 const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl");
+
+// Largeurs d'affichage réelles de la vignette (cf. `.card-thumb-wrap` plus bas) :
+// les cartes de tête et vedettes occupent un demi-écran large, les cartes de
+// grille tournent autour de 380 px. Sans ce `sizes`, le navigateur retiendrait
+// la variante la plus large du `srcset`.
+const thumbSizes = lead || featured
+  ? "(max-width: 980px) 94vw, 640px"
+  : "(max-width: 760px) 94vw, (max-width: 1100px) 46vw, 400px";
+const thumb = thumbSrc ? getResponsiveImage(thumbSrc, thumbSizes) : null;
 ---
 <article
   class={`card scale-in ${featured ? "featured" : ""} ${lead ? "lead" : ""}`}
@@ -34,10 +44,12 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
 >
   <a href={postHref} class="card-link card-link--thumb">
     <div class="card-thumb-wrap">
-      {thumbSrc ? (
+      {thumb ? (
         <img
           class="card-thumb"
-          src={thumbSrc}
+          src={thumb.src}
+          srcset={thumb.srcset}
+          sizes={thumb.sizes}
           alt={post.data.heroImage?.alt || postTitle}
           width="600"
           height="400"

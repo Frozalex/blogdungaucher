@@ -41,6 +41,7 @@ import {
   stripFaqH2Section,
 } from "../../../utils/markdown-strip-faq";
 import { isPublicAssetAvailable } from "../../../utils/public-asset";
+import { ARTICLE_HERO_SIZES, RELATED_CARD_SIZES, getResponsiveImage } from "../../../utils/thumbs";
 
 export async function getStaticPaths() {
   const posts = await getAllPosts();
@@ -136,7 +137,7 @@ const structuredData = [
         <figure class="hero-photo-wrap">
           <img
             class="hero-photo"
-            src={heroSrc}
+            {...getResponsiveImage(heroSrc, ARTICLE_HERO_SIZES)}
             alt={heroImage.alt}
             loading="eager"
             fetchpriority="high"
@@ -296,7 +297,7 @@ const structuredData = [
                 {getPostHeroSrc(e) ? (
                   <img
                     class="rc-card__img"
-                    src={getPostHeroSrc(e)!}
+                    {...getResponsiveImage(getPostHeroSrc(e)!, RELATED_CARD_SIZES)}
                     alt=""
                     loading="lazy"
                     decoding="async"

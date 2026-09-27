@@ -13,6 +13,7 @@ import CookieConsent from "../components/CookieConsent.astro";
 
 import { siteConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, enStaticRoutes, ptBrStaticRoutes } from "../data/site";
 import { swapLangPrefix, withTrailingSlash } from "../utils/lang-paths";
+import { ARTICLE_HERO_SIZES, getResponsiveImage } from "../utils/thumbs";
 
 // Préchargement de la police de titre (Space Grotesk, subset latin) : présente dans le H1/LCP de
 // toutes les pages, légère (~22 ko), donc gaspillage négligeable. `?url` renvoie l'URL hashée émise
@@ -94,6 +95,10 @@ const {
   /** Image LCP à précharger (hero d'article) → <link rel=preload as=image fetchpriority=high>. */
   preloadImage?: string;
 };
+
+// Le préchargement doit décrire les mêmes candidats que le `<img>` du hero, sinon
+// le navigateur télécharge le fichier pleine taille en plus de la variante choisie.
+const preloadHero = preloadImage ? getResponsiveImage(preloadImage, ARTICLE_HERO_SIZES) : null;
 
 const resolvedFrPath = frPath ?? swapLangPrefix(canonicalPath, "fr");
 const resolvedEnPath = enPath ?? swapLangPrefix(canonicalPath, "en");
@@ -262,7 +267,16 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
 
     {/* Préchargement de l'image LCP (hero d'article) : le navigateur la découvre
         sinon tard, après le CSS. `fetchpriority=high` la hisse en tête de file. */}
-    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
+    {preloadHero && (
+      <link
+        rel="preload"
+        as="image"
+        href={preloadHero.src}
+        imagesrcset={preloadHero.srcset}
+        imagesizes={preloadHero.sizes}
+        fetchpriority="high"
+      />
+    )}
 
     {/* ── i18n : dictionnaire runtime externalisé (bloquant + caché), AVANT le script anti-flash ──
          pour qu'il soit disponible synchronement (swap EN + aria-labels FR de la navbar). */}

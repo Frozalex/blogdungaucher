@@ -63,3 +63,7 @@ _push.bat
 
 # Artefact de build régénéré par scripts/generate-og-png.mjs (octets non déterministes -> bloquait git pull sur le VPS)
 public/images/og-default.png
+
+# Variantes responsives régénérées par scripts/generate-thumbs.mjs avant chaque build
+# (même raison que og-default.png : octets non déterministes, et ~13 Mo inutiles dans l'historique)
+public/images/**/thumbs/
