@@ -63,9 +63,9 @@ dataReveal:
 seoTitle: "Échecs et Alzheimer : études, chiffres et prévention cognitive"
 seoDescription: >-
   Échecs et Alzheimer : données chiffrées sur les jeux cognitifs et la démence. Méta-analyses MMSE, cohortes ALSOP, essais cliniques chez les personnes âgées.
-ogImage: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.png
+ogImage: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.webp
 heroImage:
-  src: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.png
+  src: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.webp
   alt: >-
     Vignette pixel art : cerveau en pixels dont une partie se dissipe, titre sur les échecs et la prévention du déclin
     cognitif

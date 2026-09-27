@@ -23,9 +23,9 @@ tags:
 seoTitle: "Échecs et Femmes : pourquoi si peu de joueuses aujourd'hui ?"
 seoDescription: >-
   Femmes et échecs : 40 femmes parmi 1700 Grands Maîtres. Est-ce biologique, culturel ou structurel ? Les données qui démontent les idées reçues sur l'écart de genre.
-ogImage: /images/blog/echecs-et-femmes-hero.png
+ogImage: /images/blog/echecs-et-femmes-hero.webp
 heroImage:
-  src: /images/blog/echecs-et-femmes-hero.png
+  src: /images/blog/echecs-et-femmes-hero.webp
   alt: >-
     Illustration pixel art : cinq femmes assises à une longue table sous un projecteur, fond sombre ; titre « Échecs et
     Femmes : pourquoi si peu de joueuses aujourd'hui ? » en surimpression.
@@ -95,7 +95,7 @@ La science, la statistique et la sociologie ont tranché. La réponse est contre
 Les statistiques de la [Fédération Internationale des Échecs](https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_internationale_des_%C3%A9checs) (FIDE) pour l'année 2024 sont sans appel. Les femmes représentent en moyenne entre 10 % et 15 % seulement des joueurs licenciés participant à des tournois officiels dans le monde entier.
 
 <figure>
-  <img src="/images/blog/femmes-tournoi.jpg" alt="Des femmes concentrées sur leurs parties lors d'un tournoi d'échecs." width="685" height="1023" loading="lazy" decoding="async" />
+  <img src="/images/blog/femmes-tournoi.webp" alt="Des femmes concentrées sur leurs parties lors d'un tournoi d'échecs." width="685" height="1023" loading="lazy" decoding="async" />
   <figcaption>Un écart de nombre, pas de capacité : les femmes ne forment que 10 à 15 % des licenciés. Photo : <a href="https://www.flickr.com/photos/8022405@N02/7713813594" target="_blank" rel="noreferrer">karpidis</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noreferrer">CC BY-SA 2.0</a>, via Flickr.</figcaption>
 </figure>
 
@@ -176,7 +176,7 @@ Toutes ces théories, ces probabilités et ces menaces psychologiques volent pou
 Mais c'est [Judit Polgár](https://fr.wikipedia.org/wiki/Judit_Polg%C3%A1r), la benjamine, qui est entrée dans l'histoire absolue. Elle a sciemment refusé de participer aux championnats exclusivement féminins, insistant pour se frotter au circuit "open" général. Elle est devenue Grand Maître International à 15 ans et 4 mois, battant le record de précocité de [Bobby Fischer](https://fr.wikipedia.org/wiki/Bobby_Fischer). Elle a atteint la 8ème place du classement mondial absolu, battant [Garry Kasparov](https://fr.wikipedia.org/wiki/Garry_Kasparov) lui-même en 2002 lors du tournoi de Moscou.
 
 <figure>
-  <img src="/images/blog/femmes-polgar-soeurs.jpg" alt="Les trois sœurs Polgár (Susan, Sofia et Judit), joueuses d'échecs hongroises." width="960" height="680" loading="lazy" decoding="async" />
+  <img src="/images/blog/femmes-polgar-soeurs.webp" alt="Les trois sœurs Polgár (Susan, Sofia et Judit), joueuses d'échecs hongroises." width="960" height="680" loading="lazy" decoding="async" />
   <figcaption>Les sœurs Polgár (Susan, Sofia et Judit), élevées par leur père dans un projet éducatif tourné vers les échecs : une démonstration éclatante du poids de l'environnement. Photo : <a href="https://commons.wikimedia.org/wiki/File:Sofia,_Judit,_Susan_Polgar_sisters.jpg" target="_blank" rel="noreferrer">R. Cottrell</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons.</figcaption>
 </figure>
 

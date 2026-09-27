@@ -21,9 +21,9 @@ tags:
 seoTitle: "Addiction aux échecs : comprendre et surmonter la dépendance"
 seoDescription: >-
   Addiction aux échecs : 47 parties dans la nuit, rating obsessionnel, boucle dopaminergique. Les échecs créent-ils une vraie dépendance ? Signes et solutions.
-ogImage: /images/blog/les-echecs-et-l-addiction-hero.png
+ogImage: /images/blog/les-echecs-et-l-addiction-hero.webp
 heroImage:
-  src: /images/blog/les-echecs-et-l-addiction-hero.png
+  src: /images/blog/les-echecs-et-l-addiction-hero.webp
   alt: "Vignette pixel art : bureau la nuit, écran montrant un échiquier, titre sur l’addiction aux échecs"
   credit: Blog d'un Gaucher
   license: Création originale

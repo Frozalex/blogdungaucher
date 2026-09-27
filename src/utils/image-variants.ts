@@ -1,4 +1,5 @@
 import { isPublicAssetAvailable } from "./public-asset";
+import imageWidths from "../data/image-widths.json";
 
 /**
  * Largeurs des variantes produites par scripts/generate-image-variants.mjs.
@@ -17,24 +18,30 @@ const SOURCE_RE = /\.(?:webp|jpe?g|png)$/i;
  * `srcset` cassé pointant vers des 404.
  *
  * L'original est ajouté en dernier avec sa largeur réelle, pour que les écrans
- * haute densité disposent encore de la pleine résolution.
+ * haute densité disposent encore de la pleine résolution. Cette largeur vient
+ * de src/data/image-widths.json (écrit par le script de génération) ; le
+ * paramètre `intrinsicWidth` ne sert que de repli pour les images absentes du
+ * manifeste, comme celles insérées en HTML dans le markdown.
  */
 export function buildSrcset(src: string | null | undefined, intrinsicWidth = 1200): string | undefined {
   if (!src) return undefined;
   const s = src.trim();
   if (!s.startsWith("/") || !SOURCE_RE.test(s)) return undefined;
 
+  const known = (imageWidths as Record<string, number>)[s];
+  const width = known ?? intrinsicWidth;
+
   const base = s.replace(SOURCE_RE, "");
   const entries: string[] = [];
 
   for (const w of WIDTHS) {
-    if (w >= intrinsicWidth) continue;
+    if (w >= width) continue;
     const candidate = `${base}-${w}w.webp`;
     if (isPublicAssetAvailable(candidate)) entries.push(`${candidate} ${w}w`);
   }
 
   if (entries.length === 0) return undefined;
-  entries.push(`${s} ${intrinsicWidth}w`);
+  entries.push(`${s} ${width}w`);
   return entries.join(", ");
 }
 

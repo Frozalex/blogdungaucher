@@ -89,7 +89,7 @@ Près de mille ans plus tôt, vers 1061, un cardinal italien saisit sa plume pou
 Entre ces deux scènes, mille ans de méfiance. L'Église latine, l'islam, l'orthodoxie russe ont tour à tour soupçonné, encadré ou banni les échecs. Ce qui surprend, quand on relit cette histoire, c'est que la cible n'a presque jamais été le jeu lui-même.
 
 <figure>
-  <img src="/images/blog/religion-libro-juegos.jpg" alt="Enluminure médiévale de deux joueurs d'échecs, tirée du Libro de los juegos (1283)." width="960" height="1440" loading="lazy" decoding="async" />
+  <img src="/images/blog/religion-libro-juegos.webp" alt="Enluminure médiévale de deux joueurs d'échecs, tirée du Libro de los juegos (1283)." width="960" height="1440" loading="lazy" decoding="async" />
   <figcaption>Le <em>Libro de los juegos</em> (Alphonse X de Castille, 1283) : commandé par un roi chrétien, il puise dans la tradition arabe des échecs : le jeu circulait au plus haut niveau malgré les condamnations. Domaine public, via <a href="https://commons.wikimedia.org/wiki/File:Two_men_playing_chess_-_Libro_de_los_juegos.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a>.</figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ Le procédé est génial : il ne nie pas le jeu, il le moralise. Les échecs ces
 ![La ruse de Cessoles vers 1300 : transformer l'échiquier en allégorie morale où chaque pièce représente un ordre social, réhabilitant ainsi le jeu aux yeux de l'Église.](/images/echecs-religion-03-cessoles-moralisation.svg)
 
 <figure>
-  <img src="/images/blog/religion-templiers-echecs.jpg" alt="Deux chevaliers du Temple jouant aux échecs, enluminure du Libro de los juegos (1283)." width="555" height="325" loading="lazy" decoding="async" />
+  <img src="/images/blog/religion-templiers-echecs.webp" alt="Deux chevaliers du Temple jouant aux échecs, enluminure du Libro de los juegos (1283)." width="555" height="325" loading="lazy" decoding="async" />
   <figcaption>Deux Templiers à l'échiquier : même un ordre religieux-militaire pratiquait le jeu que l'Église regardait de travers. <em>Libro de los juegos</em> (1283), domaine public, via <a href="https://commons.wikimedia.org/wiki/File:Templars_chess_libro-de-los-juegos_alfons-X.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a>.</figcaption>
 </figure>
 

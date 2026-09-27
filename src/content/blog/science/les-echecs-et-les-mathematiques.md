@@ -23,9 +23,9 @@ tags:
 seoTitle: "Échecs et mathématiques : vrai transfert ou mythe ? Méta-analyses"
 seoDescription: >-
   Échecs et mathématiques : méta-analyse Sala et Gobet, tour du cavalier, problème des huit dames. Ce que la science dit du lien maths-échecs et comment en profiter.
-ogImage: /images/blog/les-echecs-et-les-mathematiques-hero.png
+ogImage: /images/blog/les-echecs-et-les-mathematiques-hero.webp
 heroImage:
-  src: /images/blog/les-echecs-et-les-mathematiques-hero.png
+  src: /images/blog/les-echecs-et-les-mathematiques-hero.webp
   alt: "Vignette pixel art : motif neural lumineux sur fond violet, titre échecs et mathématiques"
   credit: Blog d'un Gaucher
   license: Création originale

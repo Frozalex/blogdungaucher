@@ -20,9 +20,9 @@ tags:
 seoTitle: "Les échecs en prison : réhabilitation, fonctions exécutives et récidive"
 seoDescription: >-
   Échecs en prison : Change Through Chess, San Quentin, Rikers Island. Effets mesurables sur l'impulsivité et la récidive. La chess therapy comme outil de réhabilitation.
-ogImage: /images/blog/echecs-en-prison-hero.png
+ogImage: /images/blog/echecs-en-prison-hero.webp
 heroImage:
-  src: /images/blog/echecs-en-prison-hero.png
+  src: /images/blog/echecs-en-prison-hero.webp
   alt: >-
     Illustration pixel art : cellule aux murs de pierre sombres, lumière à barreaux dessinant un damier au sol, roi noir
     au centre, porte ouverte sur un couloir éclairé ; titre « Les échecs en prison : quand l'échiquier devient un outil

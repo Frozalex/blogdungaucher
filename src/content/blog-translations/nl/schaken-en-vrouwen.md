@@ -77,7 +77,7 @@ De wetenschap, statistiek en sociologie hebben beslist. Het antwoord is contra-i
 De statistieken van de [Internationale Schaakfederatie](https://nl.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_internationale_des_%C3%A9checs) (FIDE) voor 2024 laten geen ruimte voor tegenspraak. Vrouwen vertegenwoordigen gemiddeld slechts tussen de 10% en 15% van de aangesloten spelers die deelnemen aan officiële toernooien wereldwijd.
 
 <figure>
-  <img src="/images/blog/femmes-tournoi.jpg" alt="Vrouwen geconcentreerd op hun partijen tijdens een schaaktoernooi." width="685" height="1023" loading="lazy" decoding="async" />
+  <img src="/images/blog/femmes-tournoi.webp" alt="Vrouwen geconcentreerd op hun partijen tijdens een schaaktoernooi." width="685" height="1023" loading="lazy" decoding="async" />
   <figcaption>Een kloof van aantal, geen kloof van vermogen: vrouwen vormen slechts 10 tot 15% van de aangesloten spelers. Foto: <a href="https://www.flickr.com/photos/8022405@N02/7713813594" target="_blank" rel="noreferrer">karpidis</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noreferrer">CC BY-SA 2.0</a>, via Flickr.</figcaption>
 </figure>
 
@@ -158,7 +158,7 @@ Al deze theorieën, kansberekeningen en psychologische dreigingen vallen echter 
 Maar het is [Judit Polgár](https://en.wikipedia.org/wiki/Judit_Polg%C3%A1r), de benjamin, die de absolute geschiedenis inging. Ze weigerde bewust deel te nemen aan exclusief vrouwelijke kampioenschappen, en drong erop aan zich te meten met het algemene "open" circuit. Ze werd Internationaal Grootmeester op 15 jaar en 4 maanden, en brak daarmee het vroegrijpheidsrecord van [Bobby Fischer](https://en.wikipedia.org/wiki/Bobby_Fischer). Ze bereikte de 8e plaats van de absolute wereldrangschikking, en versloeg [Garri Kasparov](https://nl.wikipedia.org/wiki/Garri_Kasparov) zelf in 2002 tijdens het toernooi van Moskou.
 
 <figure>
-  <img src="/images/blog/femmes-polgar-soeurs.jpg" alt="De drie Polgár-zussen (Susan, Sofia en Judit), Hongaarse schaaksters." width="960" height="680" loading="lazy" decoding="async" />
+  <img src="/images/blog/femmes-polgar-soeurs.webp" alt="De drie Polgár-zussen (Susan, Sofia en Judit), Hongaarse schaaksters." width="960" height="680" loading="lazy" decoding="async" />
   <figcaption>De Polgár-zussen (Susan, Sofia en Judit), opgevoed door hun vader in een educatief project gericht op schaken: een schitterende demonstratie van het gewicht van de omgeving. Foto: <a href="https://commons.wikimedia.org/wiki/File:Sofia,_Judit,_Susan_Polgar_sisters.jpg" target="_blank" rel="noreferrer">R. Cottrell</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons.</figcaption>
 </figure>
 

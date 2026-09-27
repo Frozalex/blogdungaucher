@@ -25,12 +25,12 @@ seoTitle: "Échecs et mémoire : mémoire de travail, chunks et apprentissage"
 seoDescription: >-
   Mémoire de travail, chunks de Chase & Simon, mémoire procédurale : comment les échecs transforment la mémoire et dans
   quelles conditions ces gains se transfèrent réellement.
-ogImage: /images/blog/echecs-et-memoire-hero.png
+ogImage: /images/blog/echecs-et-memoire-hero.webp
 summaryVideo: /videos/summary-echecs-et-memoire.mp4
 summaryVideoNote: >-
   Version 1, résumé visuel de l'article (~2 min, sans son pour l'instant). Produite avec Motion Canvas, en itération.
 heroImage:
-  src: /images/blog/echecs-et-memoire-hero.png
+  src: /images/blog/echecs-et-memoire-hero.webp
   alt: >-
     Illustration pixel art : profil de tête rempli de pièces d’échecs et d’étoiles sur fond bleu nuit ; texte «
     Découvrez le pouvoir des échecs sur votre mémoire » à gauche.

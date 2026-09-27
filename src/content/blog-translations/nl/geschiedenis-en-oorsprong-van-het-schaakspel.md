@@ -82,7 +82,7 @@ Vooral wordt shatranj een studieobject. Meesters als al-Adli of as-Suli, in de a
 Het spel bereikt Europa via meerdere poorten rond de tiende en elfde eeuw: moslim Spanje, Sicilië, en de contacten met Byzantium. De beroemde **schaakstukken van Lewis**, in de twaalfde eeuw uit walrusivoor gesneden en teruggevonden in Schotland, getuigen van zijn verankering tot in de Noorse wereld.
 
 <figure>
-  <img src="/images/blog/lewis-chessmen.jpg" alt="Stukken van het Lewis-schaakspel, gesneden uit walrusivoor in Scandinavië in de twaalfde eeuw." width="840" height="1629" loading="lazy" decoding="async" />
+  <img src="/images/blog/lewis-chessmen.webp" alt="Stukken van het Lewis-schaakspel, gesneden uit walrusivoor in Scandinavië in de twaalfde eeuw." width="840" height="1629" loading="lazy" decoding="async" />
   <figcaption>De Lewis-schaakstukken (ca. 1150-1200), tot de oudste bewaard gebleven Europese schaakstukken. Foto: <a href="https://commons.wikimedia.org/wiki/File:Lewis_chessmen_(crop).jpg" target="_blank" rel="noreferrer">Jessica Spengler</a>, <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noreferrer">CC BY 2.0</a>, via Wikimedia Commons.</figcaption>
 </figure>
 

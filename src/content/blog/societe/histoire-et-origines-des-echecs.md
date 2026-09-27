@@ -115,7 +115,7 @@ Surtout, le shatranj devient un objet d'étude. Des maîtres comme al-Adli ou as
 Le jeu gagne l'Europe par plusieurs portes autour des Xᵉ et XIᵉ siècles : l'Espagne musulmane, la Sicile, et les échanges avec Byzance. Les célèbres **pièces de Lewis**, sculptées dans l'ivoire de morse au XIIᵉ siècle et retrouvées en Écosse, témoignent de son enracinement jusque dans le monde nordique.
 
 <figure>
-  <img src="/images/blog/lewis-chessmen.jpg" alt="Pièces du jeu d'échecs de Lewis, sculptées dans l'ivoire de morse en Scandinavie au XIIᵉ siècle." width="840" height="1629" loading="lazy" decoding="async" />
+  <img src="/images/blog/lewis-chessmen.webp" alt="Pièces du jeu d'échecs de Lewis, sculptées dans l'ivoire de morse en Scandinavie au XIIᵉ siècle." width="840" height="1629" loading="lazy" decoding="async" />
   <figcaption>Les pièces de Lewis (v. 1150-1200), parmi les plus anciennes pièces d'échecs européennes conservées. Photo : <a href="https://commons.wikimedia.org/wiki/File:Lewis_chessmen_(crop).jpg" target="_blank" rel="noreferrer">Jessica Spengler</a>, <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noreferrer">CC BY 2.0</a>, via Wikimedia Commons.</figcaption>
 </figure>
 

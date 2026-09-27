@@ -26,9 +26,9 @@ tags:
 seoTitle: "Échecs problème mathématique impossible : complexité, Shannon, IA"
 seoDescription: >-
   10^120 parties possibles, complexité EXPTIME, Stockfish à 3500 Elo : pourquoi résoudre les échecs reste mathématiquement impossible et comment l'IA contourne le mur.
-ogImage: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.png
+ogImage: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.webp
 heroImage:
-  src: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.png
+  src: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.webp
   alt: >-
     Vignette pixel art : ordinateur rétro, écran avec arbre de décision lumineux, titre sur la complexité mathématique
     des échecs et l’IA
