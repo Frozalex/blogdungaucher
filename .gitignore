@@ -63,3 +63,22 @@ _push.bat
 
 # Artefact de build régénéré par scripts/generate-og-png.mjs (octets non déterministes -> bloquait git pull sur le VPS)
 public/images/og-default.png
+
+# Variantes responsives régénérées à chaque build par scripts/generate-image-variants.mjs
+# (câblé dans `npm run build`, avant `astro build`). Ne pas les versionner : ce sont des
+# dérivés des sources déjà suivies, et cela ajouterait des centaines de binaires au dépôt.
+# Le motif suit la même règle que VARIANT_RE du script : tout `<nom>-<largeur>w.webp`.
+# Sans ces fichiers le site build quand même — `buildSrcset` teste leur existence et
+# retombe sur le `src` seul, donc jamais de srcset cassé en 404.
+# Deux lignes plutôt qu'un `**` : les variantes de l'OG par défaut vivent à la racine
+# de public/images/, celles des articles dans public/images/blog/.
+public/images/*-[0-9]*w.webp
+public/images/blog/*-[0-9]*w.webp
+
+# Artefacts de revue locaux déposés dans public/ : tout ce qui traîne ici est SERVI
+# publiquement une fois déployé (blogdungaucher.com/_rev.html), d'où l'ignore explicite.
+public/_rev.html
+public/_svglist.json
+
+# Scripts d'analyse jetables (mesure de poids de page, inspection d'un article)
+scripts/_tmp-*.mjs
