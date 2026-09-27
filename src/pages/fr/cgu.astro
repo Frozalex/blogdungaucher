@@ -1,0 +1,200 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
+---
+<BaseLayout
+  title="Conditions générales d'utilisation | Blog d'un Gaucher"
+  description="Conditions générales d'utilisation du Blog d'un Gaucher : accès au site, règles de participation, commentaires, newsletter, notifications et responsabilités."
+  canonicalPath="/fr/cgu/"
+  frPath="/fr/cgu/"
+  enPath="/en/terms-of-use/"
+  ptBrPath="/pt-br/termos-de-uso/"
+  nlPath="/nl/gebruiksvoorwaarden/"
+  noindex={true}
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Accueil", path: "/fr/" },
+    { name: "Conditions générales d'utilisation", path: "/fr/cgu/" },
+  ])}
+>
+  <section class="legal">
+    <div class="container">
+      <header class="legal-header">
+        <h1>Conditions générales d'utilisation</h1>
+        <p class="legal-lead">
+          Les présentes conditions générales d'utilisation, ci-après les « CGU », encadrent l'accès au site blogdungaucher.com et son usage. En naviguant sur le site, vous en acceptez l'application.
+        </p>
+      </header>
+
+      <div class="legal-body">
+
+        <section>
+          <h2>1. Objet et acceptation</h2>
+          <p>
+            Blog d'un Gaucher est un site éditorial personnel consacré aux échecs : articles de fond, analyses de parties, vulgarisation scientifique et outils pédagogiques. Les présentes CGU définissent les règles d'accès et de participation.
+          </p>
+          <p>
+            L'utilisation du site vaut acceptation pleine et entière des CGU en vigueur au moment de la visite. Si vous les refusez, il vous appartient de ne pas utiliser le site.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Accès au site</h2>
+          <p>
+            L'accès au site et à l'intégralité de ses contenus éditoriaux est gratuit et ne nécessite pas de compte. Les frais de connexion et d'équipement restent à votre charge.
+          </p>
+          <p>
+            L'éditeur s'efforce de maintenir le site accessible en permanence, sans y être tenu. Il peut l'interrompre à tout moment, notamment pour maintenance, mise à jour ou raison technique, sans préavis ni indemnité.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Usages interdits</h2>
+          <p>Sont notamment interdits :</p>
+          <ul>
+            <li>toute tentative d'atteinte à l'intégrité, à la sécurité ou à la disponibilité du site, y compris les envois automatisés massifs ;</li>
+            <li>l'extraction systématique du contenu, par aspiration ou moissonnage automatisé, à des fins de republication ou de réutilisation commerciale ;</li>
+            <li>l'usage des formulaires du site pour diffuser du contenu publicitaire, frauduleux ou non sollicité ;</li>
+            <li>la diffusion de contenus illicites, diffamatoires, haineux, ou portant atteinte aux droits d'autrui.</li>
+          </ul>
+          <p>
+            En cas de manquement, l'éditeur peut restreindre l'accès au site, supprimer les contributions concernées et, si nécessaire, engager les poursuites appropriées.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Commentaires et contributions</h2>
+          <p>
+            Les articles peuvent accueillir des commentaires via le service de commentaires auto-hébergé du site. Les commentaires sont modérés a posteriori : l'éditeur peut supprimer, sans justification préalable, toute contribution contraire aux CGU, hors sujet ou relevant du spam.
+          </p>
+          <p>
+            Vous demeurez responsable des propos que vous publiez. En publiant un commentaire, vous accordez à l'éditeur le droit non exclusif et gratuit de l'afficher sur le site, de le conserver et de le citer en lien avec l'article concerné.
+          </p>
+          <p>
+            Le site n'étant pas destiné aux mineurs de moins de quinze ans, ceux-ci sont invités à ne pas y publier de contribution sans l'accord de leur représentant légal.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Newsletter et notifications</h2>
+          <p>
+            L'inscription à la newsletter et l'activation des notifications sont facultatives et reposent sur votre démarche volontaire. Chaque envoi comporte un moyen de désinscription, et les notifications peuvent être désactivées à tout moment depuis le site ou depuis les réglages du navigateur.
+          </p>
+          <p>
+            L'inscription d'une adresse email dont vous n'êtes pas titulaire est interdite. Le traitement des données correspondantes est décrit dans la <a href="/fr/politique-confidentialite/">politique de confidentialité</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Propriété intellectuelle</h2>
+          <p>
+            Les contenus du site sont protégés dans les conditions détaillées par les <a href="/fr/mentions-legales/">mentions légales</a>. La citation courte avec mention de la source et lien vers l'article d'origine est admise ; la reproduction intégrale d'un article, sa traduction ou son adaptation nécessitent une autorisation écrite préalable.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Liens, sources et affiliation</h2>
+          <p>
+            Le site renvoie vers des ressources externes, notamment des publications scientifiques et des références échiquéennes, dont il ne maîtrise pas le contenu. Certains liens vers des boutiques sont des liens affiliés : ils sont signalés comme tels et n'entraînent aucun surcoût pour vous.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Nature des contenus</h2>
+          <p>
+            Les articles ont une visée informative et pédagogique. Les contenus évoquant la mémoire, le vieillissement cognitif, l'attention, le sommeil ou la santé mentale rendent compte de travaux de recherche et ne constituent en aucun cas un diagnostic, un avis médical ou une recommandation thérapeutique. Pour toute question de santé, consultez un professionnel qualifié.
+          </p>
+          <p>
+            Les évaluations produites par les moteurs d'échecs et les estimations de niveau restent indicatives et dépendantes des conditions de calcul.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Données personnelles</h2>
+          <p>
+            Les traitements de données, la mesure d'audience et vos droits au titre du RGPD sont décrits dans la <a href="/fr/politique-confidentialite/">politique de confidentialité</a>, qui fait partie intégrante des présentes CGU.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. Modification des CGU</h2>
+          <p>
+            L'éditeur peut modifier les présentes CGU à tout moment, afin de suivre l'évolution du site ou du cadre légal. La version applicable est celle publiée sur cette page au moment de votre visite.
+          </p>
+        </section>
+
+        <section>
+          <h2>11. Droit applicable</h2>
+          <p>
+            Les présentes CGU sont soumises au droit français. En cas de difficulté, une solution amiable sera recherchée en priorité, par écrit à <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>, avant toute action contentieuse.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    padding: 4rem 0 5rem;
+  }
+
+  .legal .container {
+    max-width: 46rem;
+  }
+
+  .legal-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-header h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin: 0 0 1rem;
+  }
+
+  .legal-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .legal-body section {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-body h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 0.85rem;
+  }
+
+  .legal-body p {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin: 0 0 0.75rem;
+  }
+
+  .legal-body strong {
+    font-weight: 600;
+  }
+
+  .legal-body a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .legal-body ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .legal-body li {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin-bottom: 0.4rem;
+  }
+</style>

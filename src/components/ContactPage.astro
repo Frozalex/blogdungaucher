@@ -9,8 +9,15 @@ const { lang = "fr" } = Astro.props as { lang?: SiteLang };
 const EMAIL = "contact@blogdungaucher.com";
 const CHESS_URL = "https://www.chess.com/member/le_gaucher";
 
-/** Les pages légales n'existent qu'en FR : toutes les langues y pointent (cf. Footer). */
-const PRIVACY_HREF = "/fr/politique-confidentialite/";
+/** Slug de la politique de confidentialité propre à chaque langue (cf. Footer). */
+const PRIVACY_HREF =
+  lang === "en"
+    ? "/en/privacy-policy/"
+    : lang === "pt-br"
+      ? "/pt-br/politica-de-privacidade/"
+      : lang === "nl"
+        ? "/nl/privacybeleid/"
+        : "/fr/politique-confidentialite/";
 
 type Copy = {
   homeLabel: string;

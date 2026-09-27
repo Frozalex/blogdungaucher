@@ -92,9 +92,16 @@ const consentCopy = {
   },
 } as const;
 const c = consentCopy[lang] ?? consentCopy.fr;
-// Seule la version FR de la politique existe → on y pointe quelle que soit la langue
-// (évite un 404 sur /en/politique-confidentialite/ qui n'est pas générée).
-const privacyHref = "/fr/politique-confidentialite/";
+// La politique existe désormais dans les 4 langues, sous un slug différent
+// par langue : on pointe vers celle du lecteur plutôt que vers le FR.
+const privacyHref =
+  lang === "en"
+    ? "/en/privacy-policy/"
+    : lang === "pt-br"
+      ? "/pt-br/politica-de-privacidade/"
+      : lang === "nl"
+        ? "/nl/privacybeleid/"
+        : "/fr/politique-confidentialite/";
 ---
 
 {/* ── Backdrop ──────────────────────────────────────────────── */}

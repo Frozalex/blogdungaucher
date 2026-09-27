@@ -22,6 +22,11 @@ const privacyHref =
   lang === "en" ? "/en/privacy-policy/" : lang === "pt-br" ? "/pt-br/politica-de-privacidade/" : lang === "nl" ? "/nl/privacybeleid/" : "/fr/politique-confidentialite/";
 const accessibilityHref =
   lang === "en" ? "/en/accessibility/" : lang === "pt-br" ? "/pt-br/acessibilidade/" : lang === "nl" ? "/nl/toegankelijkheid/" : "/fr/accessibilite/";
+const termsHref =
+  lang === "en" ? "/en/terms-of-use/" : lang === "pt-br" ? "/pt-br/termos-de-uso/" : lang === "nl" ? "/nl/gebruiksvoorwaarden/" : "/fr/cgu/";
+// Libellé court : la barre du bas est déjà chargée, et « CGU » est l'usage courant en FR.
+const termsLabel =
+  lang === "en" ? "Terms of Use" : lang === "pt-br" ? "Termos de uso" : lang === "nl" ? "Gebruiksvoorwaarden" : "CGU";
 
 const tLang: Lang = (["fr", "en", "pt-br", "nl"].includes(lang) ? lang : "fr") as Lang;
 const tt = (key: string, fallback: string) => {
@@ -123,6 +128,7 @@ const requiredNote = lang === "en"
       <p>&copy; {new Date().getFullYear()} <span data-t="nav.siteName">{tt("nav.siteName", "Blog d'un Gaucher")}</span></p>
       <div class="footer-bottom-links">
         <a href={legalHref} data-t="footer.legal">{tt("footer.legal", "Mentions légales")}</a>
+        <a href={termsHref}>{termsLabel}</a>
         <a href={privacyHref} data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
         <a href={aboutHref}>{lang === "en" ? "About" : lang === "pt-br" ? "Sobre" : lang === "nl" ? "Over" : "À propos"}</a>
         <a href={contactHref}>{contactLabel}</a>

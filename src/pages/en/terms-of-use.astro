@@ -1,0 +1,201 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { buildBreadcrumbJsonLd } from "../../utils/blog";
+---
+<BaseLayout
+  title="Terms of Use | Blog d'un Gaucher"
+  description="Terms of Use for Blog d'un Gaucher: access to the site, participation rules, comments, newsletter, notifications and liability."
+  canonicalPath="/en/terms-of-use/"
+  lang="en"
+  frPath="/fr/cgu/"
+  enPath="/en/terms-of-use/"
+  ptBrPath="/pt-br/termos-de-uso/"
+  nlPath="/nl/gebruiksvoorwaarden/"
+  noindex={true}
+  structuredData={buildBreadcrumbJsonLd([
+    { name: "Home", path: "/en/" },
+    { name: "Terms of Use", path: "/en/terms-of-use/" },
+  ])}
+>
+  <section class="legal">
+    <div class="container">
+      <header class="legal-header">
+        <h1>Terms of Use</h1>
+        <p class="legal-lead">
+          These Terms of Use govern access to blogdungaucher.com and how the site may be used. By browsing the site, you accept that they apply.
+        </p>
+      </header>
+
+      <div class="legal-body">
+
+        <section>
+          <h2>1. Purpose and acceptance</h2>
+          <p>
+            Blog d'un Gaucher is a personal editorial site devoted to chess: in-depth articles, game analysis, science writing and teaching tools. These Terms set out the rules for access and participation.
+          </p>
+          <p>
+            Using the site means fully accepting the Terms in force at the time of your visit. If you do not accept them, please do not use the site.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Access to the site</h2>
+          <p>
+            Access to the site and to all of its editorial content is free of charge and requires no account. Connection and equipment costs remain yours.
+          </p>
+          <p>
+            The publisher aims to keep the site available at all times but is under no obligation to do so. Service may be interrupted at any moment, in particular for maintenance, updates or technical reasons, without notice or compensation.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Prohibited uses</h2>
+          <p>The following are prohibited:</p>
+          <ul>
+            <li>any attempt to compromise the integrity, security or availability of the site, including mass automated submissions;</li>
+            <li>systematic extraction of content, by scraping or automated harvesting, for republication or commercial reuse;</li>
+            <li>using the site's forms to distribute advertising, fraudulent or unsolicited content;</li>
+            <li>posting unlawful, defamatory or hateful content, or content that infringes the rights of others.</li>
+          </ul>
+          <p>
+            In the event of a breach, the publisher may restrict access to the site, delete the contributions concerned and, where necessary, take appropriate legal action.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Comments and contributions</h2>
+          <p>
+            Articles may accept comments through the site's self-hosted comment service. Comments are moderated after publication: the publisher may remove, without prior justification, any contribution that breaches these Terms, is off topic or amounts to spam.
+          </p>
+          <p>
+            You remain responsible for what you post. By publishing a comment, you grant the publisher a non-exclusive, royalty-free right to display it on the site, to keep it and to quote it in connection with the article concerned.
+          </p>
+          <p>
+            The site is not intended for children under fifteen, who should not post contributions without the consent of their legal guardian.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Newsletter and notifications</h2>
+          <p>
+            Subscribing to the newsletter and enabling notifications are optional and rely on your own action. Every mailing includes a way to unsubscribe, and notifications can be turned off at any time from the site or from your browser settings.
+          </p>
+          <p>
+            Subscribing an email address you do not own is prohibited. The related processing of data is described in the <a href="/en/privacy-policy/">privacy policy</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Intellectual property</h2>
+          <p>
+            Site content is protected under the conditions set out in the <a href="/en/legal-notice/">legal notice</a>. Short quotations are allowed provided the source is credited and linked to the original article; reproducing a whole article, translating it or adapting it requires prior written permission.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Links, sources and affiliate content</h2>
+          <p>
+            The site links to external resources, in particular scientific publications and chess references, whose content it does not control. Some links to shops are affiliate links: they are labelled as such and never cost you anything extra.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Nature of the content</h2>
+          <p>
+            Articles are informative and educational. Content dealing with memory, cognitive ageing, attention, sleep or mental health reports on research work and is in no way a diagnosis, medical advice or a treatment recommendation. For any health question, consult a qualified professional.
+          </p>
+          <p>
+            Chess engine evaluations and rating estimates are indicative and depend on the computing conditions used.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Personal data</h2>
+          <p>
+            Data processing, audience measurement and your rights under the GDPR are described in the <a href="/en/privacy-policy/">privacy policy</a>, which forms an integral part of these Terms.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. Changes to these Terms</h2>
+          <p>
+            The publisher may amend these Terms at any time, to keep up with changes to the site or to the legal framework. The applicable version is the one published on this page at the time of your visit.
+          </p>
+        </section>
+
+        <section>
+          <h2>11. Governing law</h2>
+          <p>
+            These Terms are governed by French law. Should any difficulty arise, an amicable solution will be sought first, in writing to <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>, before any legal proceedings.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    padding: 4rem 0 5rem;
+  }
+
+  .legal .container {
+    max-width: 46rem;
+  }
+
+  .legal-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-header h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin: 0 0 1rem;
+  }
+
+  .legal-lead {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .legal-body section {
+    margin-bottom: 2.5rem;
+  }
+
+  .legal-body h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 0.85rem;
+  }
+
+  .legal-body p {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin: 0 0 0.75rem;
+  }
+
+  .legal-body strong {
+    font-weight: 600;
+  }
+
+  .legal-body a {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .legal-body ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .legal-body li {
+    color: var(--text-main);
+    line-height: 1.65;
+    margin-bottom: 0.4rem;
+  }
+</style>
