@@ -63,6 +63,8 @@ const {
   prevHref,
   nextHref,
   preloadImage,
+  preloadImageSrcset,
+  preloadImageSizes,
 } = Astro.props as {
   title?: string;
   description?: string;
@@ -93,6 +95,10 @@ const {
   nextHref?: string;
   /** Image LCP à précharger (hero d'article) → <link rel=preload as=image fetchpriority=high>. */
   preloadImage?: string;
+  /** `srcset`/`sizes` du hero : le preload doit les répéter, sinon le navigateur
+      précharge l'original pleine largeur puis télécharge la variante choisie. */
+  preloadImageSrcset?: string;
+  preloadImageSizes?: string;
 };
 
 const resolvedFrPath = frPath ?? swapLangPrefix(canonicalPath, "fr");
@@ -262,7 +268,16 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
 
     {/* Préchargement de l'image LCP (hero d'article) : le navigateur la découvre
         sinon tard, après le CSS. `fetchpriority=high` la hisse en tête de file. */}
-    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
+    {preloadImage && (
+      <link
+        rel="preload"
+        as="image"
+        href={preloadImage}
+        imagesrcset={preloadImageSrcset}
+        imagesizes={preloadImageSrcset ? preloadImageSizes : undefined}
+        fetchpriority="high"
+      />
+    )}
 
     {/* ── i18n : dictionnaire runtime externalisé (bloquant + caché), AVANT le script anti-flash ──
          pour qu'il soit disponible synchronement (swap EN + aria-labels FR de la navbar). */}

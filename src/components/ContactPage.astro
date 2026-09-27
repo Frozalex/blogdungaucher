@@ -53,7 +53,7 @@ const COPY: Record<SiteLang, Copy> = {
   fr: {
     homeLabel: "Accueil",
     breadcrumb: "Contact",
-    seoTitle: "Contact | Blog d'un Gaucher",
+    seoTitle: "Contact - Une question, une idée d'article ? | Blog d'un Gaucher",
     seoDescription:
       "Contacter le Blog d'un Gaucher : proposer un sujet d'article, signaler une erreur, poser une question sur les échecs ou discuter d'un partenariat.",
     heroTitle: "Contact",
@@ -102,7 +102,7 @@ const COPY: Record<SiteLang, Copy> = {
   en: {
     homeLabel: "Home",
     breadcrumb: "Contact",
-    seoTitle: "Contact | A Left-Hander's Blog",
+    seoTitle: "Contact - Questions and article ideas | A Left-Hander's Blog",
     seoDescription:
       "Get in touch with A Left-Hander's Blog: suggest an article topic, report a mistake, ask a question about chess, or discuss a partnership.",
     heroTitle: "Contact",
@@ -151,7 +151,7 @@ const COPY: Record<SiteLang, Copy> = {
   "pt-br": {
     homeLabel: "Início",
     breadcrumb: "Contato",
-    seoTitle: "Contato | Blog de um Canhoto",
+    seoTitle: "Contato - Dúvidas e sugestões de artigo | Blog de um Canhoto",
     seoDescription:
       "Entre em contato com o Blog de um Canhoto: sugerir um tema, apontar um erro, tirar uma dúvida sobre xadrez ou falar sobre uma parceria.",
     heroTitle: "Contato",
@@ -310,6 +310,13 @@ const contactPageJsonLd = {
         <div class="c-panel fade-up" style="--motion-delay: 80ms;">
           <h2 class="c-panel__title">{c.formTitle}</h2>
 
+          {/* Pas de CAPTCHA, volontairement : ce formulaire n'a pas d'attribut `action` et le
+              site est en `output: "static"` — il n'existe aucun endpoint POST sur le domaine.
+              Le submit fait `preventDefault()` et se contente d'assembler un lien `mailto:`
+              (voir le <script> en bas de fichier), donc un bot n'a rien où soumettre : un
+              CAPTCHA ne protégerait rien tout en imposant un script tiers, un élargissement de
+              la CSP et un domaine traceur. Les audits automatisés signalent ce formulaire comme
+              « public form without CAPTCHA » : c'est un faux positif, ne pas y céder. */}
           <form class="c-form" data-contact-form data-email={EMAIL} novalidate>
             <div class="c-field">
               <label class="c-label" for="cf-name">{c.fieldName}</label>
@@ -599,7 +606,9 @@ const contactPageJsonLd = {
     font-size: 0.95rem;
     color: var(--text-main);
     background: var(--surface);
-    border: 1px solid transparent;
+    /* Contour visible obligatoire : la bordure d'un champ est un élément d'UI qui
+       doit atteindre 3:1 (WCAG 1.4.11). Était `transparent` — invisible. */
+    border: 1px solid var(--field-border);
     border-radius: var(--radius-sm);
     padding: 0.72rem 0.85rem;
     transition:
@@ -667,7 +676,7 @@ const contactPageJsonLd = {
 
   .c-submit:hover {
     background: var(--green);
-    color: #fff;
+    color: var(--on-green);
     transform: translateY(-1px);
   }
 

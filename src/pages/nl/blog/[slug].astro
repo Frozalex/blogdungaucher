@@ -17,6 +17,7 @@ import { categoryMap, siteConfig, NL_LAUNCH_DATE } from "../../../data/site";
 import { t } from "../../../i18n/translations";
 import {
   absoluteUrl,
+  buildArticleJsonLd,
   buildBreadcrumbJsonLd,
   buildFaqJsonLd,
   calculateReadingTime,
@@ -33,6 +34,7 @@ import {
   getPostUrlNlSync,
   getPostHeroSrc,
 } from "../../../utils/blog";
+import { buildSrcset, imgSizing } from "../../../utils/image-variants";
 import { renderEnglishMarkdown } from "../../../utils/english-article";
 import { swapLangPrefix } from "../../../utils/lang-paths";
 import {
@@ -131,6 +133,13 @@ const hasNlTranslation = !!nlEntry;
 
 const heroSrc = getPostHeroSrc(post);
 const heroImage = heroSrc ? post.data.heroImage : undefined;
+/* Hero full-bleed → sizes="100vw". Sans srcset un mobile de 380 px payait
+   l'original 1200 px (~150-190 Ko) pour l'afficher à 380 px. */
+const heroSrcset = buildSrcset(heroSrc);
+const HERO_SIZES = "100vw";
+/* Vignettes du carrousel "Pour vous" : 17,5 rem (280 px) en desktop, 46vw sous
+   760 px. Sans `sizes`, six cartes tiraient six originaux 1200 px (~680 Ko). */
+const RC_SIZES = "(max-width: 760px) 46vw, 280px";
 
 const summaryVideoSrc = post.data.summaryVideo?.trim();
 const showSummaryVideo = !!summaryVideoSrc && isPublicAssetAvailable(summaryVideoSrc);
@@ -144,6 +153,13 @@ const nlCategoryLabel = nlCategoryLabels[post.data.category] ?? category.label;
 const nlCategoryHref = swapLangPrefix(category.href, "nl");
 
 const structuredData = [
+  await buildArticleJsonLd(post, {
+    lang: "nl",
+    headline: nlTitle,
+    description: nlDesc,
+    pageUrl: postUrlNl,
+    articleSection: nlCategoryLabel,
+  }),
   buildBreadcrumbJsonLd([
     { name: "Home", path: "/nl/" },
     { name: "Artikelen", path: "/nl/blog/" },
@@ -164,6 +180,8 @@ const structuredData = [
   nlPath={postUrlNl}
   image={post.data.ogImage ?? siteConfig.defaultOgImage}
   preloadImage={!showSummaryVideo && heroSrc && heroImage ? heroSrc : undefined}
+  preloadImageSrcset={heroSrcset}
+  preloadImageSizes={HERO_SIZES}
   type="article"
   publishDate={post.data.publishDate}
   modifiedDate={post.data.updatedDate ?? post.data.publishDate}
@@ -189,7 +207,16 @@ const structuredData = [
 
       {!showSummaryVideo && heroSrc && heroImage ? (
         <figure class="hero-photo-wrap">
-          <img class="hero-photo" src={heroSrc} alt={heroImage.alt} loading="eager" fetchpriority="high" decoding="async" />
+          <img
+            class="hero-photo"
+            src={heroSrc}
+            srcset={heroSrcset}
+            sizes={heroSrcset ? HERO_SIZES : undefined}
+            alt={heroImage.alt}
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
           {(heroImage.credit || heroImage.sourceUrl) && (
             <figcaption class="hero-photo-credit">
               {heroImage.credit && <span>Foto: {heroImage.credit}</span>}
@@ -217,11 +244,13 @@ const structuredData = [
 
           <div class="hero-byline">
             <div class="hero-avatar">
-              <img src="/images/logo.svg" alt="Blog van een Linkshandige" width="28" height="40" />
+              <img src="/images/logo.svg" alt="" width="28" height="40" />
             </div>
             <div class="hero-author-info">
+              {/* Le nom vient de post.data.author, la même source que l'auteur du JSON-LD :
+                  byline visible et données structurées ne peuvent pas diverger (E-E-A-T). */}
               <p class="hero-author-name">
-                <span class="hero-author-prefix">Door&nbsp;</span>Blog van een Linkshandige
+                <span class="hero-author-prefix">Door&nbsp;</span><a class="hero-author-link" href="/nl/about/" rel="author">{post.data.author}</a>
               </p>
               <p class="hero-author-role">
                 {nlCategoryLabel} · {readingTime}
@@ -326,7 +355,7 @@ const structuredData = [
             <a href={url} class="rc-card" style={`--accent:${categoryMap[e.data.category]?.accent}`}>
               <div class="rc-card__media">
                 {getPostHeroSrc(e) ? (
-                  <img class="rc-card__img" src={getPostHeroSrc(e)!} alt="" loading="lazy" decoding="async" width="320" height="180" />
+                  <img class="rc-card__img" src={getPostHeroSrc(e)!} {...imgSizing(getPostHeroSrc(e), RC_SIZES)} alt="" loading="lazy" decoding="async" width="320" height="180" />
                 ) : (
                   <div class="rc-card__fallback" aria-hidden="true">
                     <span class="rc-card__fallback-logo" role="presentation"></span>
@@ -448,6 +477,9 @@ const structuredData = [
   .hero-author-info { display: flex; flex-direction: column; gap: 0.1rem; }
   .hero-author-name { font-size: 1rem; font-weight: 700; color: var(--text-main); margin: 0; }
   .hero-author-prefix { font-weight: 400; color: var(--text-dim); }
+  .hero-author-link { color: inherit; text-decoration: none; }
+  .hero-author-link:hover,
+  .hero-author-link:focus-visible { text-decoration: underline; }
   .hero-author-role { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
   .hero-updated { color: var(--text-dim); }
   .hero-tags { margin-top: 1.5rem; }

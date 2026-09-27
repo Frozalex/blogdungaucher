@@ -387,7 +387,14 @@ export function buildBreadcrumbJsonLd(
 
 export async function buildArticleJsonLd(
   post: BlogEntry,
-  options?: { lang?: "fr" | "en"; headline?: string; description?: string; pageUrl?: string },
+  options?: {
+    lang?: "fr" | "en" | "pt-br" | "nl";
+    headline?: string;
+    description?: string;
+    pageUrl?: string;
+    /** Libellé de rubrique localisé (pt-br/nl) : sinon on retombe sur le libellé FR. */
+    articleSection?: string;
+  },
 ) {
   const lang = options?.lang ?? "fr";
   const imagePath = post.data.ogImage ?? siteConfig.defaultOgImage;
@@ -397,7 +404,8 @@ export async function buildArticleJsonLd(
     options?.pageUrl ??
     (lang === "en" ? await getPostUrlEn(post) : getPostUrl(post));
   const articleUrl = absoluteUrl(pageUrl);
-  const inLanguage = lang === "en" ? "en-US" : "fr-FR";
+  const inLanguage =
+    lang === "en" ? "en-US" : lang === "pt-br" ? "pt-BR" : lang === "nl" ? "nl-NL" : "fr-FR";
   const headline =
     options?.headline ?? (post.data.seoTitle ?? post.data.title);
   const description =
@@ -430,7 +438,11 @@ export async function buildArticleJsonLd(
   const authorPageUrl =
     lang === "en"
       ? `${siteConfig.siteUrl}/en/about/`
-      : `${siteConfig.siteUrl}/fr/about/`;
+      : lang === "pt-br"
+        ? `${siteConfig.siteUrl}/pt-br/about/`
+        : lang === "nl"
+          ? `${siteConfig.siteUrl}/nl/about/`
+          : `${siteConfig.siteUrl}/fr/about/`;
 
   return {
     "@context": "https://schema.org",
@@ -452,7 +464,8 @@ export async function buildArticleJsonLd(
     },
     image: imageUrls,
     articleSection:
-      lang === "en" ? articleSectionEn[post.data.category] : category.label,
+      options?.articleSection ??
+      (lang === "en" ? articleSectionEn[post.data.category] : category.label),
     keywords: post.data.tags?.join(", "),
     isPartOf: {
       "@type": "Blog",

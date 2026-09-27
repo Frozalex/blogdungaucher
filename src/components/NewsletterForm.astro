@@ -115,7 +115,8 @@ const fc = formCopy[lang] ?? formCopy.fr;
     flex: 1;
     min-width: 0;
     padding: 0.5rem 0.75rem;
-    border: 1px solid var(--border-soft);
+    /* --field-border, pas --border-soft : un contour de champ doit faire 3:1. */
+    border: 1px solid var(--field-border);
     border-radius: var(--radius-sm, 6px);
     background: color-mix(in srgb, var(--bg-warm) 80%, var(--surface));
     color: var(--text-main);
@@ -136,7 +137,7 @@ const fc = formCopy[lang] ?? formCopy.fr;
     border: none;
     border-radius: var(--radius-sm, 6px);
     background: var(--green);
-    color: #fff;
+    color: var(--on-green);
     font-size: 0.85rem;
     font-weight: 600;
     font-family: inherit;
@@ -161,7 +162,7 @@ const fc = formCopy[lang] ?? formCopy.fr;
     padding: 0;
   }
 
-  .nl-msg--error { color: #e05252; }
+  .nl-msg--error { color: var(--danger); }
 
   /* Injecté via `form.innerHTML` à la réussite → pas d'attribut de scope Astro.
      On scope via le <form> (élément de template, porteur du cid) + `:global()`. */

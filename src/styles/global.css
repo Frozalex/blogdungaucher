@@ -14,12 +14,25 @@
   --border-soft:     rgba(51, 33, 17, 0.10);
   --border-strong:   rgba(51, 33, 17, 0.17);
   --text-main:       #18181b;
-  --text-muted:      rgba(24, 24, 27, 0.66);
-  --text-dim:        rgba(24, 24, 27, 0.44);
-  --green:           #3d8b37;
-  --green-hover:     #317030;
-  --green-light:     rgba(61, 139, 55, 0.11);
-  --green-border:    rgba(61, 139, 55, 0.26);
+  /* Opacités calibrées pour WCAG AA (4.5:1) sur le fond le plus clair (--surface).
+     Ne pas les baisser : --text-dim porte du vrai texte (dates, fils d'Ariane, labels). */
+  --text-muted:      rgba(24, 24, 27, 0.72);
+  --text-dim:        rgba(24, 24, 27, 0.61);
+  /* Vert assombri pour passer 4.5:1 en texte sur --bg-warm et sous du blanc. */
+  --green:           #377d31;
+  --green-hover:     #2c6428;
+  --green-light:     rgba(55, 125, 49, 0.11);
+  --green-border:    rgba(55, 125, 49, 0.26);
+  /* Couleur de texte à poser SUR un fond --green / --green-hover. */
+  --on-green:        #ffffff;
+  /* Texte vert posé sur une pastille --green-light (eyebrow, badges) : le vert
+     nominal n'y fait que 3.9:1, il faut le cran plus sombre. */
+  --green-on-tint:   #2c6428;
+  /* Bordure des champs de formulaire : 3:1 minimum (WCAG 1.4.11), contrairement
+     à --border-soft qui est purement décoratif (séparateurs). */
+  --field-border:    #8c8274;
+  /* Rouge d'erreur lisible sur les fonds clairs du thème. */
+  --danger:          #bf3030;
   --shadow-xs:       0 1px 3px rgba(62, 33, 10, 0.08);
   --shadow-sm:       0 3px 10px rgba(62, 33, 10, 0.10);
   --shadow-md:       0 8px 24px rgba(62, 33, 10, 0.11);
@@ -61,12 +74,18 @@
   --border-soft:     rgba(244, 235, 215, 0.07);
   --border-strong:   rgba(244, 235, 215, 0.13);
   --text-main:       #f0ebe0;
-  --text-muted:      rgba(240, 235, 224, 0.66);
-  --text-dim:        rgba(240, 235, 224, 0.40);
+  --text-muted:      rgba(240, 235, 224, 0.70);
+  --text-dim:        rgba(240, 235, 224, 0.54);
   --green:           #5ab254;
   --green-hover:     #4ea349;
   --green-light:     rgba(90, 178, 84, 0.15);
   --green-border:    rgba(90, 178, 84, 0.30);
+  /* Le vert du mode sombre est clair : du blanc dessus ne ferait que 2.65:1.
+     On y pose donc du texte sombre (6.5:1) plutôt que du blanc. */
+  --on-green:        #14120f;
+  --green-on-tint:   #6bbf65;
+  --field-border:    #7b7568;
+  --danger:          #f08080;
   --shadow-xs:       0 1px 3px rgba(0, 0, 0, 0.35);
   --shadow-sm:       0 3px 10px rgba(0, 0, 0, 0.40);
   --shadow-md:       0 8px 24px rgba(0, 0, 0, 0.45);
@@ -191,7 +210,7 @@ main { display : block; padding-top : var(--navbar-h); }
   padding: 0 0.7rem;
   border-radius: var(--radius-pill);
   background: var(--green-light);
-  color: var(--green);
+  color: var(--green-on-tint);
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -621,8 +640,8 @@ main { display : block; padding-top : var(--navbar-h); }
 
 .button-primary {
   background: var(--green);
-  color: #fff;
-  box-shadow: 0 4px 14px rgba(61, 139, 55, 0.22);
+  color: var(--on-green);
+  box-shadow: 0 4px 14px rgba(55, 125, 49, 0.22);
 }
 .button-primary:hover {
   background: var(--green-hover);
@@ -660,7 +679,7 @@ main { display : block; padding-top : var(--navbar-h); }
   padding: 0.7rem 1rem;
   border-radius: var(--radius-pill);
   background: var(--green);
-  color: #fff;
+  color: var(--on-green);
   font-weight: 700;
 }
 .skip-link:focus { top: 1rem; }

@@ -28,27 +28,26 @@ const frCanonical = withTrailingSlash(meta.href);
 const homeLabel =
   lang === "en" ? "Home" : lang === "pt-br" ? "Início" : lang === "nl" ? "Home" : "Accueil";
 
+// Libellé localisé côté serveur pour pt-br/nl : meta.label reste en français sinon
+// (le dict runtime ne couvre que fr/en, voir catTagline/catDescription plus bas).
+const catLabel =
+  lang === "pt-br" || lang === "nl"
+    ? t(lang as Lang, `categories.${category}.label`)
+    : meta.label;
+
 const structuredData = buildBreadcrumbJsonLd([
   { name : homeLabel, path : swapLangPrefix("/", lang) },
-  { name : meta.label, path : swapLangPrefix(frCanonical, lang) },
+  { name : catLabel, path : swapLangPrefix(frCanonical, lang) },
 ]);
 
 const pageTitle =
   lang === "en"
     ? (meta.seoTitleEn ?? `${meta.label} | A Left-Hander’s Blog`)
     : lang === "pt-br"
-      ? `${meta.label} | Blog de um Canhoto`
+      ? `${catLabel} | Blog de um Canhoto`
       : lang === "nl"
-        ? `${meta.label} | Blog van een Linkshandige`
+        ? `${catLabel} | Blog van een Linkshandige`
         : (meta.seoTitle ?? `${meta.label} | Blog d’un Gaucher`);
-const pageDesc =
-  lang === "en"
-    ? (meta.seoDescriptionEn ?? `${meta.description} ${meta.audiencePromise}`)
-    : lang === "pt-br"
-      ? `${meta.description} ${meta.audiencePromise}`
-      : lang === "nl"
-        ? `${meta.description} ${meta.audiencePromise}`
-        : (meta.seoDescription ?? `${meta.description} ${meta.audiencePromise}`);
 const canonPath = swapLangPrefix(frCanonical, lang);
 const catDescription =
   lang === "en"
@@ -56,6 +55,14 @@ const catDescription =
     : lang === "pt-br" || lang === "nl"
       ? t(lang as Lang, `categories.${category}.description`)
       : meta.description;
+// Meta description : pour pt-br/nl on n'a pas de traduction d'audiencePromise, donc on
+// n'utilise que la description traduite (le français fuitait sinon dans le <meta>).
+const pageDesc =
+  lang === "en"
+    ? (meta.seoDescriptionEn ?? `${meta.description} ${meta.audiencePromise}`)
+    : lang === "pt-br" || lang === "nl"
+      ? catDescription
+      : (meta.seoDescription ?? `${meta.description} ${meta.audiencePromise}`);
 // Tagline localisée côté serveur pour pt-br/nl (le dict runtime ne couvre que fr/en).
 const catTagline =
   lang === "pt-br" || lang === "nl"
@@ -128,7 +135,7 @@ const seeAllLabel =
     {/* Logo de marque recoloré à l'accent, en filigrane (remplace l'ancien glyphe de pièce). */}
     <span class="cat-hero__logo" aria-hidden="true"></span>
     <div class="container">
-      <h1 class="cat-hero__title reveal" data-t={`categories.${category}.label`}>{meta.label}</h1>
+      <h1 class="cat-hero__title reveal" data-t={`categories.${category}.label`}>{catLabel}</h1>
       <p class="cat-tagline reveal" data-t={`categories.${category}.tagline`}>{catTagline}</p>
       {!landingRich && <p class="cat-desc reveal">{catDescription}</p>}
 
