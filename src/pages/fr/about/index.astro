@@ -101,14 +101,14 @@ import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
         <div class="about-section__body">
           <p>
             À 16 ans, on m'a demandé de diriger un club d'échecs. Problème : je
-            n'avais pas le niveau pour le faire. Alors j'ai appris vite : très
-            vite: en absorbant tout ce que je pouvais sur le jeu, les
+            n'avais pas le niveau pour le faire. Alors j'ai appris vite, très
+            vite, en absorbant tout ce que je pouvais sur le jeu, les
             stratégies, la psychologie derrière.
           </p>
           <p>
             Ce mode d'apprentissage par patterns, je l'ai retrouvé partout dans
             ma vie depuis. Je résous des équations de tête. Je lis des situations
-            rapidement. Les échecs ne m'ont pas rendu plus intelligent , 
+            rapidement. Les échecs ne m'ont pas rendu plus intelligent :
             <em>ils m'ont donné une méthode</em>.
           </p>
           <p>
@@ -130,7 +130,7 @@ import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
           <p>
             Qui suis-je pour parler technique à des gens qui jouent depuis trente
             ans ? En revanche, croiser les échecs avec ce que la recherche dit
-            vraiment: sur la mémoire, le cerveau, la psychologie du joueur , 
+            vraiment, sur la mémoire, le cerveau, la psychologie du joueur :
             ça, je peux le faire rigoureusement.
           </p>
         </blockquote>
@@ -214,7 +214,7 @@ import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
           </li>
           <li>
             <span class="about-not__mark">×</span>
-            Un endroit où je te dirai ce que tu veux entendre, si une étude est
+            Un endroit où je te dirai ce que tu veux entendre : si une étude est
             nuancée, je le dis.
           </li>
           <li>
@@ -223,6 +223,57 @@ import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
             cherche ce que personne n'a sérieusement pris.
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <header class="about-section__head">
+          <span class="about-section__num">05</span>
+          <h2 class="about-section__title">Comment ce blog est financé</h2>
+        </header>
+        <div class="about-section__body">
+          <p>
+            Le site est hébergé et rédigé sur mes propres deniers. Lire ici ne
+            coûte rien et ne coûtera jamais rien : pas de paywall, pas d'article
+            réservé, pas d'inscription obligatoire. En échange, voici exactement
+            d'où vient — ou viendra — le moindre euro.
+          </p>
+          <ul class="about-method">
+            <li>
+              <span class="about-method__tag">publicité</span>
+              <span>
+                Aucune annonce n'est diffusée à ce jour. Une régie display
+                (Google AdSense) est en cours de mise en place. Quand elle sera
+                active, les emplacements resteront hors du corps des articles et
+                seront identifiables comme tels.
+              </span>
+            </li>
+            <li>
+              <span class="about-method__tag">affiliation</span>
+              <span>
+                Certains articles renvoient vers du matériel d'échecs via le
+                Programme Partenaires d'Amazon. Ces liens sont signalés comme
+                tels, ne changent pas le prix que tu paies, et je ne recommande
+                que ce que je citerais sans commission.
+              </span>
+            </li>
+            <li>
+              <span class="about-method__tag">indépendance</span>
+              <span>
+                Aucun article n'est commandé, relu ni financé par un annonceur.
+                Aucun placement de produit payé, aucun lien vendu. Si ça arrivait
+                un jour, ce serait écrit en haut de l'article.
+              </span>
+            </li>
+          </ul>
+          <p>
+            Le détail juridique est dans les
+            <a href="/fr/mentions-legales/">mentions légales</a>, les
+            <a href="/fr/cgu/">conditions générales d'utilisation</a> et la
+            <a href="/fr/politique-confidentialite/">politique de confidentialité</a>.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -544,6 +595,19 @@ import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
     font-family: var(--font-serif);
     font-style: italic;
     color: var(--green);
+  }
+
+  .about-section__body a {
+    color: var(--green);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--green) 35%, transparent);
+    transition: border-color 160ms ease;
+  }
+
+  .about-section__body a:hover,
+  .about-section__body a:focus-visible {
+    border-bottom-color: var(--green);
   }
 
   .about-section__close {

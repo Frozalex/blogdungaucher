@@ -1,11 +1,13 @@
 import type { APIRoute } from "astro";
 
-import { siteConfig, staticRoutes, enStaticRoutes, ptBrStaticRoutes, nlStaticRoutes, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE } from "../data/site";
+import { siteConfig, staticRoutes, enStaticRoutes, ptBrStaticRoutes, nlStaticRoutes, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, isIndexedLang } from "../data/site";
 import { getAllPosts, getEnSlugMap, getPtBrSlugMap, getNlSlugMap, getPostSlug, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
 
-/** Langues indexées dans le sitemap. */
-const langs: SiteLang[] = ["fr", "en"];
+/** Langues déclarées en `hreflang` dans le sitemap. Filtré par `INDEXED_LANGS` :
+ *  déclarer une alternative qui porte un `noindex` ne fait que générer du bruit
+ *  dans la Search Console. */
+const langs: SiteLang[] = (["fr", "en"] as SiteLang[]).filter((l) => isIndexedLang(l));
 
 /** Pages exclues du sitemap : thin content et pages légales. */
 const EXCLUDED_PATHS = new Set([
@@ -99,10 +101,10 @@ export const GET: APIRoute = async () => {
       const frSlug = posts.find((p) => getPostUrl(p) === frPath);
       const hasPtBr = frSlug ? ptBrSlugMap.has(getPostSlug(frSlug)) : false;
       const hasNl = frSlug ? nlSlugMap.has(getPostSlug(frSlug)) : false;
-      const ptBrPart = ptBrLive && hasPtBr
+      const ptBrPart = ptBrLive && hasPtBr && isIndexedLang("pt-br")
         ? `\n          <xhtml:link rel="alternate" hreflang="pt-BR" href="${absolute(ptBrPathFor(frPath))}"/>`
         : "";
-      const nlPart = nlLive && hasNl
+      const nlPart = nlLive && hasNl && isIndexedLang("nl")
         ? `\n          <xhtml:link rel="alternate" hreflang="nl" href="${absolute(nlPathFor(frPath))}"/>`
         : "";
       alternates = base + ptBrPart + nlPart + `\n          <xhtml:link rel="alternate" hreflang="x-default" href="${loc}"/>`;
@@ -242,7 +244,12 @@ export const GET: APIRoute = async () => {
   const body = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
           xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    ${[...frEntries, ...enEntries, ...nlEntries, ...ptBrEntries].join("")}
+    ${[
+      ...(isIndexedLang("fr") ? frEntries : []),
+      ...(isIndexedLang("en") ? enEntries : []),
+      ...(isIndexedLang("nl") ? nlEntries : []),
+      ...(isIndexedLang("pt-br") ? ptBrEntries : []),
+    ].join("")}
   </urlset>`;
 
   return new Response(body, {

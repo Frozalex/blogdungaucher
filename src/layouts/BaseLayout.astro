@@ -11,7 +11,7 @@ import Footer from "../components/Footer.astro";
 import BackToTop from "../components/BackToTop.astro";
 import CookieConsent from "../components/CookieConsent.astro";
 
-import { siteConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, enStaticRoutes, ptBrStaticRoutes } from "../data/site";
+import { siteConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, enStaticRoutes, ptBrStaticRoutes, isIndexedLang } from "../data/site";
 import { swapLangPrefix, withTrailingSlash } from "../utils/lang-paths";
 
 // Préchargement de la police de titre (Space Grotesk, subset latin) : présente dans le H1/LCP de
@@ -134,8 +134,10 @@ const structuredDataItems = structuredData
 
 const inLanguage = lang === "en" ? "en-US" : lang === "pt-br" ? "pt-BR" : lang === "nl" ? "nl-NL" : "fr-FR";
 
-/** Politique d'indexation : FR + EN sont désormais indexables. PT-BR indexable dès lancement. */
-const effectiveNoindex = noindex;
+/** Politique d'indexation : une page est noindex si elle le demande explicitement,
+ *  ou si sa langue n'est pas dans `INDEXED_LANGS` (voir `src/data/site.ts` —
+ *  seul le FR est exposé le temps de la demande AdSense). */
+const effectiveNoindex = noindex || !isIndexedLang(lang);
 
 // Fallback: si une page "article" oublie de fournir structuredData,
 // on injecte un BlogPosting minimal pour ne jamais "perdre" le schema.org.
@@ -377,11 +379,13 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
       </>
     ) : (
       <>
+        {/* Chaque alternative n'est déclarée que si sa langue est indexée : un hreflang
+            vers une page en `noindex` est ignoré par Google et pollue la Search Console. */}
         <link rel="alternate" hreflang="fr" href={frCanonicalUrl} />
-        <link rel="alternate" hreflang="en" href={enCanonicalUrl} />
+        {isIndexedLang("en") && <link rel="alternate" hreflang="en" href={enCanonicalUrl} />}
         {/* hreflang "de" désactivé : les pages allemandes ne sont plus servies. */}
-        {ptBrLive && !omitPtBrNlAlternates && <link rel="alternate" hreflang="pt-BR" href={ptBrCanonicalUrl} />}
-        {nlLive && !omitPtBrNlAlternates && <link rel="alternate" hreflang="nl" href={nlCanonicalUrl} />}
+        {ptBrLive && !omitPtBrNlAlternates && isIndexedLang("pt-br") && <link rel="alternate" hreflang="pt-BR" href={ptBrCanonicalUrl} />}
+        {nlLive && !omitPtBrNlAlternates && isIndexedLang("nl") && <link rel="alternate" hreflang="nl" href={nlCanonicalUrl} />}
         <link rel="alternate" hreflang="x-default" href={frCanonicalUrl} />
       </>
     )}

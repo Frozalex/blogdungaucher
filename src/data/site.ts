@@ -1,6 +1,8 @@
 ﻿/** Doit rester identique à `scripts/site-origin.mjs` (origine publique HTTPS sans port). */
 const SITE_ORIGIN = "https://blogdungaucher.com";
 
+import type { SiteLang } from "../utils/lang-paths";
+
 export const siteConfig = {
   name: "Blog d'un Gaucher",
   domainName: "blogdungaucher",
@@ -221,6 +223,30 @@ export const PT_BR_LAUNCH_DATE = new Date("2026-07-01T06:00:00Z");
 /** Date de lancement de la section NL. Avant cette date, aucune page /nl/ n'est générée.
  *  Repoussée du 2026-09-01 au 2026-11-01 (décidé le 2026-08-21). */
 export const NL_LAUNCH_DATE = new Date("2026-11-01T06:00:00Z");
+
+/** Langues dont les pages sont exposées à l'indexation Google.
+ *
+ *  Contexte (2026-09-28) : AdSense a refusé le site en juillet 2026 pour
+ *  « thin content ». À cette date, ~50 articles FR étaient en ligne face à
+ *  ~170 pages EN/PT-BR qui n'en sont que la traduction : aux yeux de Google,
+ *  l'essentiel du site était du contenu dupliqué traduit à l'échelle
+ *  (« scaled content abuse »). Le temps de la nouvelle demande, on ne présente
+ *  donc que le FR : 77 articles originaux à 2 771 mots de moyenne.
+ *
+ *  Les pages EN/PT-BR/NL restent EN LIGNE et accessibles aux visiteurs — elles
+ *  sont seulement passées en `noindex, follow` et retirées du sitemap. Surtout,
+ *  on ne les bloque PAS dans robots.txt : Google doit pouvoir les crawler pour
+ *  lire la balise noindex et les désindexer proprement.
+ *
+ *  REVERT APRÈS APPROBATION ADSENSE : remettre
+ *  `["fr", "en", "pt-br", "nl"]` ci-dessous. Rien d'autre à toucher.
+ */
+export const INDEXED_LANGS: readonly SiteLang[] = ["fr"];
+
+/** `true` si les pages de cette langue doivent être indexées. */
+export function isIndexedLang(lang: string): boolean {
+  return INDEXED_LANGS.includes(lang.toLowerCase() as SiteLang);
+}
 
 export const ptBrNavigationLinks = [
   { label: "Sobre", href: "/pt-br/about/" },
