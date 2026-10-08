@@ -39,6 +39,7 @@
     "echecs-peur-de-gagner",
     "echecs-peur-de-perdre",
     "echecs-religion-et-interdit",
+    "echecs-stress-tournoi",
     "echecs-vs-philosophie-pensee-strategique",
     "effet-dunning-kruger-aux-echecs",
     "effet-placebo-aux-echecs",
@@ -82,5 +83,5 @@
     "theorie-des-jeux-aux-echecs",
     "theorie-du-chaos-aux-echecs"
   ],
-  "updatedAt": "2026-10-06T13:18:35.708Z"
+  "updatedAt": "2026-10-08T13:30:01.677Z"
 }
