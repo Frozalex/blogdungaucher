@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A hand polishing one spot of a smooth surface until it wears a hole into it."
 title: "Toxic Perfectionism in Chess: When the Best Becomes the Enemy of Good"
 excerpt: "Perfectionism seems like a quality in chess: seeking the best move, analyzing deeply, leaving nothing to chance. But when it exceeds a threshold, it becomes toxic and degrades performance. Here's why."
 seoTitle: "Toxic Perfectionism in Chess: Effects and Solutions"

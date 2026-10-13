@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A chess piece placed in a base socket carved for a much larger piece."
 title: "Impostor Syndrome at 2000 Elo: Why You Don't Feel Like You Belong"
 excerpt: "You reached 2000 Elo. An incredible victory. And yet, something is off. You feel like an impostor. As if this number doesn't really belong to you. This phenomenon is more widespread than people think, and it has a precise psychological explanation."
 seoTitle: "Why Crossing 2000 Elo Triggers Impostor Syndrome"

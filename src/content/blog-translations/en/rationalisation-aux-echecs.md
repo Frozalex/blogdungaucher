@@ -83,7 +83,7 @@ Much of the mental processing responsible for our preferences, choices and emoti
 
 The result is often correct, because common-sense theories are often good. But it isn't obtained by introspection: it's **inferred**, exactly the way you'd infer someone else's reasons.
 
-It's the same paper that established the halo effect, covered in our article on [the halo effect in chess](/en/blog/effet-de-halo-aux-echecs/), where participants reversed even the direction of causality.
+It's the same paper that established the halo effect, covered in our article on [the halo effect in chess](/en/blog/halo-effect-in-chess/), where participants reversed even the direction of causality.
 
 ## The Two Moments of Rationalization
 
@@ -97,7 +97,7 @@ Calculation comes next, and its real role is ambiguous. Is it checking the move,
 
 Both happen, and nothing lets you tell them apart from the inside. That's what makes certain moves so hard to give up: they aren't defended by their justification, they **produced** their justification. Attacking the argument doesn't touch the decision.
 
-It's also the direct link to [confirmation bias](/en/blog/biais-de-confirmation-aux-echecs/): if calculation serves to justify, it's oriented from the outset, and will look for what confirms.
+It's also the direct link to [confirmation bias](/en/blog/confirmation-bias-in-chess/): if calculation serves to justify, it's oriented from the outset, and will look for what confirms.
 
 ### After the Game: Explaining the Loss
 
@@ -113,7 +113,7 @@ These explanations have two remarkable features.
 
 An explanation produced in three minutes without consulting the facts isn't the result of an investigation. It's an **output**. Its accuracy is a happy accident, not evidence that it's relevant.
 
-This is the mechanism described in our article on [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/): the explanation has a function, switching off discomfort, and that function is fulfilled whether or not the explanation is accurate.
+This is the mechanism described in our article on [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/): the explanation has a function, switching off discomfort, and that function is fulfilled whether or not the explanation is accurate.
 
 ## The Asymmetry That Gives the Mechanism Away
 
@@ -187,7 +187,7 @@ Its cost isn't dishonesty, it's the premature end of the search. And the only re
 
 ---
 
-*This article is part of a series on psychology applied to chess. It goes deeper into a mechanism catalogued in [defense mechanisms in chess](/en/blog/mecanismes-de-defense-aux-echecs/). See also [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/) and [confirmation bias in chess](/en/blog/biais-de-confirmation-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. It goes deeper into a mechanism catalogued in [defense mechanisms in chess](/en/blog/defense-mechanisms-in-chess/). See also [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/) and [confirmation bias in chess](/en/blog/confirmation-bias-in-chess/).*
 
 ## Sources
 

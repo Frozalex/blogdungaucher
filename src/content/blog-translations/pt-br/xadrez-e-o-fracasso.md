@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Ilustração em pixel art: um rei de xadrez caído sobre o tabuleiro após uma partida, luz suave e melancólica, uma atmosfera de dignidade na derrota, « Aprender a perder »"
 title: "Aprender a perder no xadrez: mais difícil do que dizem"
 excerpt: >-
   Os adultos evitam sistematicamente as situações em que vão perder diante de alguém. Os jogadores de xadrez fazem

@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Two stacks side by side, one built course by course, the other wobbling off balance."
 title: "Chess and Self-Confidence: What the Board Actually Builds"
 excerpt: "Confidence in chess doesn't come from a good result, it's built move by move. What performance psychology says about self-efficacy, mindset, and the difference between solid confidence and fragile arrogance."
 seoTitle: "Chess and Self-Confidence: Building Solid Self-Esteem on the Board"

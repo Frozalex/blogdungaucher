@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Two empty speech bubbles coming from opposite sides, overlapping at their center."
 title: "Chess and Immigration: The Board as a Common Language"
 excerpt: "For a refugee who doesn't speak the host country's language, the chessboard can be the first successful conversation. For an immigrant searching for their place, the chess club can be the first community space. The history of chess is partly a history of migration and integration."
 seoTitle: "Chess and Immigration: The Board as Common Language and Integration Tool"

@@ -53,7 +53,7 @@ You play faster. Not because the position demands it, but because each minute is
 
 What you're going through there is exactly the mechanism marketing uses to sell you online courses. Same lever, same effect, two contexts nobody ever puts side by side.
 
-This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/), which lays out the seven levers.
+This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/), which lays out the seven levers.
 
 ## The Cookies
 
@@ -77,7 +77,7 @@ So it isn't the level of availability that counts. It's **the direction of the c
 
 This result ties scarcity directly to a mechanism this series has already covered.
 
-A possibility that disappears isn't simply an unavailable option: it's a **loss**. And the asymmetry between losses and gains, described in our article on [loss aversion in chess](/en/blog/aversion-a-la-perte-aux-echecs/), does the rest.
+A possibility that disappears isn't simply an unavailable option: it's a **loss**. And the asymmetry between losses and gains, described in our article on [loss aversion in chess](/en/blog/loss-aversion-in-chess/), does the rest.
 
 Hence an immediate practical consequence: a countdown works better than a mention of limited stock, because it puts the disappearance in motion in front of the buyer's eyes.
 
@@ -119,7 +119,7 @@ It's the same confusion described for material in our article on loss aversion: 
 
 And the cost is double. The badly allocated time, but also the attention consumed by monitoring the resource, taken straight out of the calculation itself.
 
-Our article on [time management in chess](/en/blog/echecs-gestion-du-temps/) deals with the technical side of this question. What concerns us here is the psychological mechanism underneath it, and it's identical to the one in the jars.
+Our article on [time management in chess](/en/blog/chess-time-management/) deals with the technical side of this question. What concerns us here is the psychological mechanism underneath it, and it's identical to the one in the jars.
 
 ### Scarcity as a Weapon
 
@@ -127,7 +127,7 @@ One direct consequence, and plenty of players use it deliberately.
 
 Playing fast when your opponent is short of time doesn't change the position. It speeds up the depletion of a resource whose perceived value is already climbing. It's entirely legitimate psychological play, since the clock is part of the game, and it's brutally effective.
 
-Not to be confused with what happens off the board, covered in our article on [emotional manipulation in chess](/en/blog/manipulation-emotionnelle-aux-echecs/).
+Not to be confused with what happens off the board, covered in our article on [emotional manipulation in chess](/en/blog/emotional-manipulation-in-chess/).
 
 ## The Third Ground: Rare Openings
 
@@ -161,7 +161,7 @@ Time is worth nothing in itself. It's worth only what it buys in decision qualit
 
 ---
 
-*This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/). See also [reciprocity in chess](/en/blog/reciprocite-aux-echecs/) and [social proof in chess](/en/blog/preuve-sociale-aux-echecs/).*
+*This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/). See also [reciprocity in chess](/en/blog/reciprocity-in-chess/) and [social proof in chess](/en/blog/social-proof-in-chess/).*
 
 ## Sources
 

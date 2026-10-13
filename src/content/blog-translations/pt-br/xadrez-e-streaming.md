@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Um pequeno microfone cuja onda sonora se abre num vasto campo de formas idênticas."
 title: "Xadrez e streaming: como o Twitch e o YouTube revolucionaram o jogo"
 excerpt: >-
   Em 2012, o Twitch não existia. Em 2024, Hikaru Nakamura é um dos streamers de jogos mais seguidos do mundo, Grande

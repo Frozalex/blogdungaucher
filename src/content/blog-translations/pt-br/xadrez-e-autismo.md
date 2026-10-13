@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Ilustração em pixel art: uma silhueta à beira de um caminho, céu com nuvens pastel e uma esfera colorida; título « Xadrez e autismo: por que o tabuleiro se torna um refúgio » sobreposto."
 title: "Xadrez e autismo: por que o tabuleiro se torna um refúgio"
 excerpt: >-
   Para um cérebro que suporta mal a ambiguidade social, o tabuleiro é um dos raros espaços onde as regras realmente

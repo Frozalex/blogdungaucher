@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Um cone de luz largo que se estreita até um feixe fino no fundo de uma sala vazia."
 title: "Concentração no xadrez: treinar a atenção como um músculo"
 excerpt: >-
   A concentração não é um estado que ocorre quando estamos com sorte. É uma competência que se degrada quando

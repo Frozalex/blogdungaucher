@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "An underground cross-section showing a vast root network beneath a tiny sprout."
 title: "Impostor Syndrome in Chess: Playing Under the Weight of Doubt"
 excerpt: "You play well, you win, and yet you're convinced it's luck. That others will 'see through you.' Impostor syndrome in chess affects thousands of players at all levels. Here's how to recognize and overcome it."
 seoTitle: "Impostor Syndrome in Chess: 4 Patterns and How to Escape Them"

@@ -65,7 +65,7 @@ He formalized the mechanism. A stimulus that starts out neutral, presented regul
 
 The point to remember, and the one we systematically forget, is that **the dog decides nothing**. It didn't conclude that the sound announced food. It didn't form a belief. An association got installed, and it produces a physiological response.
 
-That's what radically separates this mechanism from [operant conditioning](/en/blog/conditionnement-operant-aux-echecs/), covered in the previous article in this series. Operant conditioning is about the consequences of your actions and shapes what you do. Classical conditioning is about involuntary associations and shapes what you feel.
+That's what radically separates this mechanism from [operant conditioning](/en/blog/operant-conditioning-in-chess/), covered in the previous article in this series. Operant conditioning is about the consequences of your actions and shapes what you do. Classical conditioning is about involuntary associations and shapes what you feel.
 
 ## Little Albert, and Why He Should Be Cited Carefully
 
@@ -99,7 +99,7 @@ The most frequent case. You've taken three painful losses in a given structure, 
 
 The association settles in between the visual configuration and the internal state. After that, the position alone is enough.
 
-And this is where the mechanism gets expensive: **the state it triggers genuinely degrades your play**, which produces another bad result, which reinforces the association. The loop is the one described in our article on [the self-fulfilling prophecy in chess](/en/blog/prophetie-auto-realisatrice-aux-echecs/), with a physiological trigger on top.
+And this is where the mechanism gets expensive: **the state it triggers genuinely degrades your play**, which produces another bad result, which reinforces the association. The loop is the one described in our article on [the self-fulfilling prophecy in chess](/en/blog/self-fulfilling-prophecy-in-chess/), with a physiological trigger on top.
 
 ### An opponent
 
@@ -167,7 +167,7 @@ What undoes it is repeated exposure without an unpleasant consequence. What pres
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [operant conditioning in chess](/en/blog/conditionnement-operant-aux-echecs/), [managing tournament stress](/en/blog/echecs-stress-tournoi/) and [chess and the fear of losing](/en/blog/echecs-peur-de-perdre/).*
+*This article is part of a series on psychology applied to chess. See also [operant conditioning in chess](/en/blog/operant-conditioning-in-chess/), [managing tournament stress](/en/blog/chess-tournament-stress/) and [chess and the fear of losing](/en/blog/fear-of-losing-in-chess/).*
 
 ## Sources
 

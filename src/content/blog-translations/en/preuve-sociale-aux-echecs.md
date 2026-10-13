@@ -56,7 +56,7 @@ You take the first.
 
 And at no point did you look at the column right next to it, the one showing what each of those moves actually **scored**.
 
-This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/), which lays out the seven levers. It covers the most debated lever in the field, and the only ground anywhere where you can put it to the test in three seconds.
+This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/), which lays out the seven levers. It covers the most debated lever in the field, and the only ground anywhere where you can put it to the test in three seconds.
 
 ## The Principle, and Its Logic
 
@@ -105,7 +105,7 @@ Four reasons, only one of which is the one you'd assume.
 
 **Because it's taught.** Books and courses pass on the main line, which makes it the main line, which justifies teaching it.
 
-**Because it got published.** The corpus consists of tournament games between rated players, with the selection filter described in our article on [survivorship bias in chess](/en/blog/biais-du-survivant-aux-echecs/).
+**Because it got published.** The corpus consists of tournament games between rated players, with the selection filter described in our article on [survivorship bias in chess](/en/blog/survivorship-bias-in-chess/).
 
 Three of those four reasons have nothing to do with the quality of the move in **your** game.
 
@@ -137,7 +137,7 @@ But a line's practical difficulties aren't the same at every level. A variation 
 
 **Always ask for the denominator.** Three million users out of how many sign-ups? Ten thousand students trained, of whom how many improved? A number with no denominator is a large anecdote.
 
-**Treat absence as absence.** A rare move hasn't been ruled bad by any authority. It simply hasn't been played by the people whose games make it into the databases. That's also what our article on [conformity in chess](/en/blog/conformisme-aux-echecs/) shows.
+**Treat absence as absence.** A rare move hasn't been ruled bad by any authority. It simply hasn't been played by the people whose games make it into the databases. That's also what our article on [conformity in chess](/en/blog/conformity-in-chess/) shows.
 
 ## What to Take Away
 
@@ -153,7 +153,7 @@ The most powerful lever in marketing can be defused here with a filter and one s
 
 ---
 
-*This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/). See also [reciprocity in chess](/en/blog/reciprocite-aux-echecs/).*
+*This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/). See also [reciprocity in chess](/en/blog/reciprocity-in-chess/).*
 
 ## Sources
 

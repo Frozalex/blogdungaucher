@@ -156,11 +156,11 @@ And if you find it uncomfortable that an article on cognitive dissonance undercu
 
 **Delay the resolution, don't try to prevent it.** You can't decide not to feel the dissonance. You can decide not to conclude right away. Reduction does most of its work in the minutes after the loss, when the discomfort peaks. Note the facts while it's raw, with no interpretation: the move where it turned, your evaluation at that moment, your remaining time. Analyse twenty-four hours later. The conclusion you draw cold isn't the same one.
 
-**Turn "I was winning" into a question.** The day "I was winning on move 28" becomes "why didn't I convert on move 28," you've changed what the sentence does. The same information stops being a full stop and becomes a starting point. The full method is in our guide on [how to analyze your games](/en/blog/analyser-ses-parties/).
+**Turn "I was winning" into a question.** The day "I was winning on move 28" becomes "why didn't I convert on move 28," you've changed what the sentence does. The same information stops being a full stop and becomes a starting point. The full method is in our guide on [how to analyze your games](/en/blog/how-to-analyze-chess-games/).
 
 **Set the abandonment criterion before you invest.** This is the direct remedy for effort justification, and it has to be set in advance, while the investment is still zero. Before starting a repertoire, write down what would make you drop it: a score below 40% over thirty games, for instance. Written afterwards, the criterion gets negotiated. Written beforehand, it holds.
 
-**Treat your moves as hypotheses.** A move isn't a promise. The question after a dubious move isn't "how do I justify what I played" but "what's the best continuation from this position, this one, right now." That's also the remedy for [anchoring bias](/en/blog/5-biais-cognitifs-blunder/), and it's no coincidence: both consist of refusing to start again from the real position.
+**Treat your moves as hypotheses.** A move isn't a promise. The question after a dubious move isn't "how do I justify what I played" but "what's the best continuation from this position, this one, right now." That's also the remedy for [anchoring bias](/en/blog/5-cognitive-biases-blunder/), and it's no coincidence: both consist of refusing to start again from the real position.
 
 ## What to Take Away
 
@@ -174,7 +174,7 @@ The experimental foundation of the theory is shakier than the retellings suggest
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/). Upcoming articles will cover rationalization and defense mechanisms, the tools through which this reduction operates.*
+*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/). Upcoming articles will cover rationalization and defense mechanisms, the tools through which this reduction operates.*
 
 ## Sources
 

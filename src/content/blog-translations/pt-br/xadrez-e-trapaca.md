@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Um peão projetando uma sombra longa cuja forma geométrica não corresponde ao objeto."
 title: "A trapaça no xadrez: o que o caso Niemann realmente revelou"
 excerpt: >-
   Em 2022, Magnus Carlsen acusa implicitamente Hans Niemann de trapacear e se retira de um torneio. O que se seguiu , 

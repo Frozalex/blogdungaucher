@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Small weights placed one by one on a scale that eventually tips over."
 title: "Bayesian Networks in Chess: Predicting the Opponent's Blunder"
 excerpt: "Can we mathematically predict when an opponent will blunder? Bayesian networks offer a formal framework for estimating this probability from the clues available in the position."
 seoTitle: "Predicting Blunders with Bayesian Networks: Estimating Opponent Error"

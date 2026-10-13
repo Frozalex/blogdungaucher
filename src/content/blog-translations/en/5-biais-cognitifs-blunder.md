@@ -69,7 +69,7 @@ The [availability heuristic](https://en.wikipedia.org/wiki/Availability_heuristi
 
 The availability bias can also work in reverse: if you have never suffered a certain type of combination, you tend to underestimate it because it is not available in your emotional memory, even if it is theoretically known.
 
-**How to counter it:** Regularly practice varied problem types, not just focusing on your recent weak points, but covering a broad spectrum systematically. Varied tactical training calibrates the "availability" of patterns on a more balanced sample rather than on recent memories. (These biases also explain why blunders always seem to fall at the worst moment: [Murphy's law in chess](/en/blog/loi-de-murphy-aux-echecs/) analyzes that phenomenon.)
+**How to counter it:** Regularly practice varied problem types, not just focusing on your recent weak points, but covering a broad spectrum systematically. Varied tactical training calibrates the "availability" of patterns on a more balanced sample rather than on recent memories. (These biases also explain why blunders always seem to fall at the worst moment: [Murphy's law in chess](/en/blog/murphys-law-in-chess/) analyzes that phenomenon.)
 
 ## The meta-bias: believing you are immune
 

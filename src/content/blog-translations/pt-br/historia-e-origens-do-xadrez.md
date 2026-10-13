@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Ilustração em pixel art: um friso de peças de xadrez evoluindo do elefante indiano estilizado até a torre moderna, sobre um fundo de mapa antigo ligando a Índia à Europa, « História do xadrez »"
 title: "História e origens do xadrez: do chaturanga indiano à dama moderna"
 excerpt: >-
   Hoje, a dama é a peça mais poderosa do tabuleiro. Durante quase mil anos, ela foi a mais fraca. Essa inversão

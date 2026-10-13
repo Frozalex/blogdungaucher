@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Duas pilhas lado a lado, uma construída fileira por fileira, a outra em equilíbrio instável."
 title: "Xadrez e autoconfiança: o que o tabuleiro realmente constrói"
 excerpt: >-
   A confiança no xadrez não nasce de um bom resultado : ela se constrói lance por lance. O que a psicologia da performance

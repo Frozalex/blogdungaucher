@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A raised drawbridge sealing the only crossing over a dry moat."
 title: "Chess and the Fear of Losing: When Defeat Paralyzes Before It Arrives"
 excerpt: "The fear of losing changes everything in chess. It transforms playing style, paralyzes creativity, and often creates the very defeats it seeks to avoid. Here is the complete psychology of this universal phenomenon."
 seoTitle: "Fear of Losing in Chess: Psychology and Solutions"

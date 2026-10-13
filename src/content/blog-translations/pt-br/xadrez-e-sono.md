@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Ilustração em pixel art: um tabuleiro de xadrez flutuando num céu noturno estrelado, peças adormecidas sob uma lua, « Xadrez e sono »"
 title: "Xadrez e sono: por que a noite também joga sua partida"
 excerpt: >-
   Um grande mestre que dorme mal joga cerca de 10% pior a partir da segunda hora de jogo. O que a pesquisa em

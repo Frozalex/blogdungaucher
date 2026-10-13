@@ -53,7 +53,7 @@ export const series: SerieSummary[] = [
     href : "/fr/series/moteur-python/",
     total : serieMoteurTotal,
     slugs : serieMoteurSlugs,
-    cadence : "à partir de juillet 2027",
+    cadence : "à partir du 1er juin 2027",
     rank : 2,
   },
   {

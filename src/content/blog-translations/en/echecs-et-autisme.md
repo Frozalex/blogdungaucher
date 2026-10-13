@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Pixel art illustration: a silhouette at the edge of a path, sky with pastel clouds and a colorful sphere; title \"Chess and autism: why the board becomes a refuge\" overlaid."
 title: "Chess and Autism: Why the Chessboard Becomes a Refuge"
 excerpt: >-
   For a brain that struggles with social ambiguity, the chessboard is one of the few spaces where rules truly hold. What
@@ -99,13 +100,13 @@ A frequent and often misunderstood feature of autism is the ability, sometimes t
 
 ### Flow: when everything else disappears
 
-[Flow](https://en.wikipedia.org/wiki/Flow_(psychology)), the state of total absorption theorized by Csikszentmihalyi, is remarkably accessible to autistic people during a chess game precisely because their brain is naturally more inclined to intense monofocal concentration. (The full mechanism is detailed in the article [Psychology of the chess player](/en/blog/psychologie-du-joueur-d-echecs/).)
+[Flow](https://en.wikipedia.org/wiki/Flow_(psychology)), the state of total absorption theorized by Csikszentmihalyi, is remarkably accessible to autistic people during a chess game precisely because their brain is naturally more inclined to intense monofocal concentration. (The full mechanism is detailed in the article [Psychology of the chess player](/en/blog/chess-player-psychology/).)
 
 For people who often receive negative messages about their social "misfit," becoming the club's undisputed expert on the Sicilian Defense or rook endgames is a priceless self-esteem driver.
 
 ### Pattern memory: a natural talent
 
-[Fernand Gobet](https://en.wikipedia.org/wiki/Fernand_Gobet)'s research on "chunks," those memorized pattern blocks that let grandmasters "read" the board instead of calculating, takes on special weight in an ASD context. (The theory is explained in detail in the article [Chess and the brain](/en/blog/les-echecs-et-le-cerveau/).) Autistic people often have exceptionally precise long-term memory for rule systems and repeating patterns: exactly what chess demands and rewards.
+[Fernand Gobet](https://en.wikipedia.org/wiki/Fernand_Gobet)'s research on "chunks," those memorized pattern blocks that let grandmasters "read" the board instead of calculating, takes on special weight in an ASD context. (The theory is explained in detail in the article [Chess and the brain](/en/blog/chess-and-the-brain/).) Autistic people often have exceptionally precise long-term memory for rule systems and repeating patterns: exactly what chess demands and rewards.
 
 The over-representation of autistic traits among great chess prodigies is no accident: from [Paul Morphy](https://en.wikipedia.org/wiki/Paul_Morphy) in the 19th century to several contemporary champions, cognitive profiles associated with the spectrum run through chess history.
 
@@ -175,7 +176,7 @@ For families going through the process of finding activities that genuinely help
 
 If one sentence should stick: chess can be a powerful framework, never a **label**, never a substitute for serious support when it is needed.
 
-If you support an autistic person who connects with chess: **short sessions**, **stable place**, **rules repeated**; note what works (duration, puzzles versus free games) so you can replicate it. For the link with cognition measurable beyond ASD, continue with [chess and the brain](/en/blog/les-echecs-et-le-cerveau/).
+If you support an autistic person who connects with chess: **short sessions**, **stable place**, **rules repeated**; note what works (duration, puzzles versus free games) so you can replicate it. For the link with cognition measurable beyond ASD, continue with [chess and the brain](/en/blog/chess-and-the-brain/).
 
 ---
 

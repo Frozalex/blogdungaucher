@@ -130,7 +130,7 @@ There's also a version that concerns you directly: the one that applies to your 
 
 You're actually slightly better. But the rating gap produces an unfavourable global impression, and that impression contaminates your evaluation. You look for what's wrong with your position instead of looking for how to exploit it. Your objective judgment gets rewritten by a number.
 
-This mechanism is close to the one described in our article on [the placebo effect in chess](/en/blog/effet-placebo-aux-echecs/), under the nocebo heading: negative expectation does bite for real.
+This mechanism is close to the one described in our article on [the placebo effect in chess](/en/blog/placebo-effect-in-chess/), under the nocebo heading: negative expectation does bite for real.
 
 ## The Test You Can Run Tonight
 
@@ -174,7 +174,7 @@ That's a little effort for a piece of data nobody else can give you.
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/), [obedience to authority in chess](/en/blog/obeissance-a-l-autorite-aux-echecs/) and [Elo and self-esteem](/en/blog/echecs-estime-de-soi-elo/).*
+*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/), [obedience to authority in chess](/en/blog/obedience-to-authority-in-chess/) and [Elo and self-esteem](/en/blog/elo-and-self-esteem/).*
 
 ## Sources
 

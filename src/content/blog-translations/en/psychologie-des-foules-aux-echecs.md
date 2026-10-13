@@ -59,7 +59,7 @@ And it's the exact opposite of everything crowd psychology described for a centu
 
 An anti-crowd. Which acts on you anyway, and measurably.
 
-Three articles in this series have already explored aspects of it: [conformity](/en/blog/conformisme-aux-echecs/), [obedience to authority](/en/blog/obeissance-a-l-autorite-aux-echecs/) and [the bystander effect](/en/blog/effet-spectateur-aux-echecs/). What we're doing here is setting the general frame, and showing that the most famous frame is the wrong one.
+Three articles in this series have already explored aspects of it: [conformity](/en/blog/conformity-in-chess/), [obedience to authority](/en/blog/obedience-to-authority-in-chess/) and [the bystander effect](/en/blog/bystander-effect-in-chess/). What we're doing here is setting the general frame, and showing that the most famous frame is the wrong one.
 
 ## Le Bon, 1895
 
@@ -179,7 +179,7 @@ The lazy explanation invokes classic deindividuation: anonymous, therefore disin
 
 The correct model says something else. Anonymity and immersion **strengthen the group's norms**. Which means a chat's behaviour is information about its norms, not about the disappearance of norms.
 
-Two practical consequences. The first is that chats don't resemble one another: depending on the channel, the atmosphere is hostile or remarkably kind, with the same technology and the same anonymity. The second is that these norms get built, mainly through the example set by whoever's broadcasting and through moderation. Our article on [chess and streaming](/en/blog/echecs-et-streaming/) covers that economy.
+Two practical consequences. The first is that chats don't resemble one another: depending on the channel, the atmosphere is hostile or remarkably kind, with the same technology and the same anonymity. The second is that these norms get built, mainly through the example set by whoever's broadcasting and through moderation. Our article on [chess and streaming](/en/blog/chess-and-streaming/) covers that economy.
 
 And for the player broadcasting live, the Zajonc effect applies with particular intensity: the audience is large, its reactions are visible in real time, and it comments on the moves while they're being played.
 
@@ -189,7 +189,7 @@ The third one is never gathered in one place, and it may be the most influential
 
 It sets what's done and what isn't: which openings are respectable, which time controls are serious, what attitude is correct after a loss, from what level you're allowed to have an opinion.
 
-That's the terrain of conformity, covered in a dedicated article in this series. And the social identity model applies directly to it: these norms don't impose themselves by contagion, they apply because you recognize yourself as a member of the group. It's also what makes the unity lever so commercially effective, as our article on [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/) shows.
+That's the terrain of conformity, covered in a dedicated article in this series. And the social identity model applies directly to it: these norms don't impose themselves by contagion, they apply because you recognize yourself as a member of the group. It's also what makes the unity lever so commercially effective, as our article on [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/) shows.
 
 ## The Decisive Experiment: When a Crowd Really Played
 
@@ -229,7 +229,7 @@ The most frequent confusion consists of treating an obedience problem with a con
 
 **Automate whatever has to hold up in front of an audience.** That's the direct consequence of Zajonc's model, and the most actionable one. Since the presence of others favours dominant responses, the only protection is to make sure your dominant responses are good. Endgame techniques, tactical motifs and the first moves of your repertoire have to be overlearned to the point of being automatic. What's automatic improves in front of an audience; what's fragile collapses.
 
-**Train in performance conditions.** A player who only works online, alone, prepares his responses in a context with no arousal. Playing regularly in physical company isn't just a matter of enjoyment: it's what makes your repertoire available in the conditions where it'll be needed. The context-dependence phenomenon described in our article on [classical conditioning in chess](/en/blog/conditionnement-classique-aux-echecs/) points the same way.
+**Train in performance conditions.** A player who only works online, alone, prepares his responses in a context with no arousal. Playing regularly in physical company isn't just a matter of enjoyment: it's what makes your repertoire available in the conditions where it'll be needed. The context-dependence phenomenon described in our article on [classical conditioning in chess](/en/blog/classical-conditioning-in-chess/) points the same way.
 
 **Deliberately slow down in novel positions.** Arousal speeds you up and pushes you toward the most available response. That's useful in familiar territory and dangerous in unfamiliar territory. A mechanical rule, along the lines of pausing the moment the position leaves familiar ground, counters this effect without demanding any composure.
 
@@ -249,7 +249,7 @@ Hence the paradox of the tournament hall, a device designed to suppress every cr
 
 ---
 
-*This article is part of a series on psychology applied to chess. See [conformity in chess](/en/blog/conformisme-aux-echecs/), [obedience to authority in chess](/en/blog/obeissance-a-l-autorite-aux-echecs/) and [the bystander effect in chess](/en/blog/effet-spectateur-aux-echecs/). See [the full index of the series](/en/series/psychologie/).*
+*This article is part of a series on psychology applied to chess. See [conformity in chess](/en/blog/conformity-in-chess/), [obedience to authority in chess](/en/blog/obedience-to-authority-in-chess/) and [the bystander effect in chess](/en/blog/bystander-effect-in-chess/). See [the full index of the series](/en/series/psychologie/).*
 
 ## Sources
 

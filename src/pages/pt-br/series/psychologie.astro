@@ -2,7 +2,6 @@
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import {
   grappeText,
-  itemLabel,
   seriePsychologieGrappes,
   seriePsychologieTotal,
 } from "../../../data/serie-psychologie";
@@ -24,33 +23,31 @@ const LANG = "pt-br" as const;
 const published = filterPostsForLang(await getAllPosts(), LANG);
 const bySlug = new Map(published.map((post) => [post.id.split("/").pop() ?? post.id, post]));
 
-const grappes = await Promise.all(
+// Seuls les articles publiés sont affichés : pas de ligne « em breve » sans lien.
+const grappesRaw = await Promise.all(
   seriePsychologieGrappes.map(async (grappe) => ({
     id : grappe.id,
     ...grappeText(grappe, LANG),
     items : await Promise.all(
-      grappe.items.map(async (item) => {
-        const post = bySlug.get(item.slug);
-        if (!post) {
-          return { ...item, href : null, date : null, title : itemLabel(item, LANG), excerpt : null };
-        }
-        const text = await getLocalizedPostText(post, LANG);
-        return {
-          ...item,
-          href : await getPostUrlPtBr(post),
-          date : formatDateForLang(post.data.publishDate, LANG),
-          title : text.title,
-          excerpt : text.excerpt,
-        };
-      }),
+      grappe.items
+        .filter((item) => bySlug.has(item.slug))
+        .map(async (item) => {
+          const post = bySlug.get(item.slug)!;
+          const text = await getLocalizedPostText(post, LANG);
+          return {
+            ...item,
+            href : await getPostUrlPtBr(post),
+            date : formatDateForLang(post.data.publishDate, LANG),
+            title : text.title,
+            excerpt : text.excerpt,
+          };
+        }),
     ),
   })),
 );
+const grappes = grappesRaw.filter((grappe) => grappe.items.length > 0);
 
-const publishedCount = grappes.reduce(
-  (total, grappe) => total + grappe.items.filter((item) => item.href).length,
-  0,
-);
+const publishedCount = grappes.reduce((total, grappe) => total + grappe.items.length, 0);
 
 const canonPath = "/pt-br/series/psychologie/";
 const title = "Série: a psicologia aplicada ao xadrez";
@@ -120,23 +117,14 @@ const structuredData = [
         <p class="grappe__chapeau">{grappe.chapeau}</p>
         <ol class="grappe__list">
           {grappe.items.map((item) => (
-            <li class:list={["item", { "item--pilier" : item.pilier, "item--soon" : !item.href }]}>
-              {item.href ? (
-                <a href={item.href}>
-                  <span class="item__title">{item.title}</span>
-                  {item.excerpt && <span class="item__excerpt">{item.excerpt}</span>}
-                  <span class="item__meta">
-                    <span class="item__date">{item.date}</span>
-                  </span>
-                </a>
-              ) : (
-                <div>
-                  <span class="item__title">{item.title}</span>
-                  <span class="item__meta">
-                    <span class="item__date">em breve</span>
-                  </span>
-                </div>
-              )}
+            <li class:list={["item", { "item--pilier" : item.pilier }]}>
+              <a href={item.href}>
+                <span class="item__title">{item.title}</span>
+                {item.excerpt && <span class="item__excerpt">{item.excerpt}</span>}
+                <span class="item__meta">
+                  <span class="item__date">{item.date}</span>
+                </span>
+              </a>
             </li>
           ))}
         </ol>
@@ -237,12 +225,6 @@ const structuredData = [
   .item--pilier > a,
   .item--pilier > div {
     border-left: 3px solid var(--green);
-  }
-
-  .item--soon > div {
-    background: transparent;
-    border-style: dashed;
-    opacity: 0.6;
   }
 
   .item__title {

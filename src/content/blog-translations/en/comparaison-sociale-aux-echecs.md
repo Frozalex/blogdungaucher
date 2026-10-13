@@ -56,7 +56,7 @@ Chess did something no other hobby has done. It didn't just make comparison poss
 
 ## Festinger, 1954
 
-Six years before the dollar experiment that made him famous, which we covered in our article on [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/), [Leon Festinger](https://en.wikipedia.org/wiki/Social_comparison_theory) published a quieter and probably more universal theory in *Human Relations*.
+Six years before the dollar experiment that made him famous, which we covered in our article on [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/), [Leon Festinger](https://en.wikipedia.org/wiki/Social_comparison_theory) published a quieter and probably more universal theory in *Human Relations*.
 
 His proposal comes down to three ideas.
 
@@ -100,7 +100,7 @@ And that point carries more weight than it looks, because Festinger's theory des
 
 ### The Rating Becomes a Measure of You
 
-This is the central drift, and it's dealt with in depth in our article on [Elo and self-esteem](/en/blog/echecs-estime-de-soi-elo/).
+This is the central drift, and it's dealt with in depth in our article on [Elo and self-esteem](/en/blog/elo-and-self-esteem/).
 
 The slide is easy to describe. The rating measures results. Since it's the only number available and it's exact, it ends up measuring the player. Then the person.
 
@@ -112,7 +112,7 @@ The normal fluctuations of a rating, at ordinary game volume, are far larger tha
 
 But the daily display invites you to interpret every swing. A player who checks his rating after every game spends most of his time interpreting noise, with the emotional consequences that come with it.
 
-That's also what makes the rating unusable as a learning signal, for the reasons developed in our article on [learned helplessness in chess](/en/blog/impuissance-apprise-aux-echecs/): too slow, too noisy, not attributable.
+That's also what makes the rating unusable as a learning signal, for the reasons developed in our article on [learned helplessness in chess](/en/blog/learned-helplessness-in-chess/): too slow, too noisy, not attributable.
 
 ### Lateral Comparison, the Most Painful Kind
 
@@ -158,7 +158,7 @@ The way out isn't to ignore the rating, which would mean giving up real informat
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [Elo and self-esteem](/en/blog/echecs-estime-de-soi-elo/), [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/) and [learned helplessness in chess](/en/blog/impuissance-apprise-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [Elo and self-esteem](/en/blog/elo-and-self-esteem/), [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/) and [learned helplessness in chess](/en/blog/learned-helplessness-in-chess/).*
 
 ## Sources
 

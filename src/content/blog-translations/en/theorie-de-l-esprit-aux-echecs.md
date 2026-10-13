@@ -113,7 +113,7 @@ And this isn't a figure of speech. A player incapable of that operation would al
 
 This is the most important point in the article.
 
-A classical chess engine evaluates positions assuming **optimal play from the opponent**. That's the logic of minimax, detailed in our article on [minimax in chess](/en/blog/minimax-aux-echecs/). In practice it amounts to treating your opponent as though he sees everything.
+A classical chess engine evaluates positions assuming **optimal play from the opponent**. That's the logic of minimax, detailed in our article on [minimax in chess](/en/blog/minimax-in-chess/). In practice it amounts to treating your opponent as though he sees everything.
 
 So an engine has **no model of the opponent**. It doesn't know who is sitting across the board, what that person knows, what they habitually miss, or what they're currently overlooking. It cannot form the thought "he won't see that."
 
@@ -121,13 +121,13 @@ Direct consequence: an engine never sets a trap. It plays the best move. If a tr
 
 Which gives the human player a competence the machine lacks, and probably the only one left in practical play. We are irremediably inferior at evaluation and calculation. We remain the only ones able to play **against someone** rather than against a position.
 
-It's also a reason to qualify the relationship of authority to the engine described in our article on [obedience to authority in chess](/en/blog/obeissance-a-l-autorite-aux-echecs/): on one specific point, its recommendation isn't the best practical decision, because it answers a different question.
+It's also a reason to qualify the relationship of authority to the engine described in our article on [obedience to authority in chess](/en/blog/obedience-to-authority-in-chess/): on one specific point, its recommendation isn't the best practical decision, because it answers a different question.
 
 ### The Distinction From Mirror Neurons
 
 A clarification, because the two subjects are neighbours and often confused.
 
-Mirror neurons, covered in our article on [mirror neurons in chess](/en/blog/neurones-miroirs-aux-echecs/), concern **motor simulation**: understanding an action by reproducing it internally. That's a low-level mechanism, largely automatic.
+Mirror neurons, covered in our article on [mirror neurons in chess](/en/blog/mirror-neurons-in-chess/), concern **motor simulation**: understanding an action by reproducing it internally. That's a low-level mechanism, largely automatic.
 
 Theory of mind concerns the attribution of **beliefs**, and specifically **false** ones. It requires holding two incompatible representations of the world simultaneously, the true one and the other person's, without confusing them.
 
@@ -139,7 +139,7 @@ Simulating a gesture and representing someone else's error are not the same oper
 
 **Calculating the practical move.** In a lost position, the objectively best move is almost never the best choice. You want the one that maximizes the chance of an opponent error, which requires knowing what's hard for a human to see.
 
-**The draw offer.** It's entirely a theory-of-mind operation: what will he believe about my position when he sees me offer? That's also what makes it manipulable, as our article on [emotional manipulation in chess](/en/blog/manipulation-emotionnelle-aux-echecs/) describes.
+**The draw offer.** It's entirely a theory-of-mind operation: what will he believe about my position when he sees me offer? That's also what makes it manipulable, as our article on [emotional manipulation in chess](/en/blog/emotional-manipulation-in-chess/) describes.
 
 **And the limit, which is severe.** Modelling someone else's mind is expensive, and the main source of error is **filling it with your own**. Believing he saw what you saw, or that he's unaware of what you're unaware of, is the mechanism of projection, the subject of the next article in this series. It's also why this reasoning is reserved for moments where it adds something: in a clear position, the objectively best move remains the best choice.
 
@@ -165,7 +165,7 @@ And it's precisely what the engine doesn't do, since it assumes perfect play acr
 
 ---
 
-*This article is part of a series on psychology applied to chess. The next one covers projection, meaning what happens when this model gets filled in with your own content. See also [mirror neurons in chess](/en/blog/neurones-miroirs-aux-echecs/) and [minimax in chess](/en/blog/minimax-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. The next one covers projection, meaning what happens when this model gets filled in with your own content. See also [mirror neurons in chess](/en/blog/mirror-neurons-in-chess/) and [minimax in chess](/en/blog/minimax-in-chess/).*
 
 ## Sources
 

@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma mão minúscula segurando um dedal ao pé de uma imensa duna de areia."
 title: "A complexidade algorítmica do xadrez: por que a IA levou 50 anos para bater o humano"
 excerpt: >-
   O número de partidas de xadrez possíveis supera o número de átomos no universo observável. Compreender a complexidade

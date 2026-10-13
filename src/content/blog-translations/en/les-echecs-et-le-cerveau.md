@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art thumbnail: a glowing brain on a purple-blue starry background, title \"Chess and the brain\""
 title: "Chess and the Brain: What Science Really Reveals"
 excerpt: >-
   A grandmaster isn't a born genius: they have a trained brain. Structural MRI, functional connectivity, chronnectome,
@@ -64,7 +65,7 @@ The grandmaster does not see individual pieces at all. Their brain automatically
 
 Gobet's studies show that a professional player holds between 50,000 and 300,000 such "chunks" (or "templates," more complex models) in long-term memory. It is exactly like learning to read. A child spells letter by letter ("M-A-I-S-O-N"), which costs enormous cognitive effort. You read the word "HOUSE" instantly, as a single block. Grandmasters "read" the board. That massive visual library lets them play at lightning speed, not through superhuman depth calculation of fifty moves. Their brain has optimized visual storage to get around the natural limits of human working memory.
 
-That same ability to recognize patterns, and why it comes naturally to some cognitive profiles, is central to the article [Chess and autism](/en/blog/echecs-et-autisme/).
+That same ability to recognize patterns, and why it comes naturally to some cognitive profiles, is central to the article [Chess and autism](/en/blog/chess-and-autism/).
 
 ## What really lights up under a scanner
 

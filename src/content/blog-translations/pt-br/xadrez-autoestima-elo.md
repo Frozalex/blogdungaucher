@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Um ponteiro de medição enorme parafusado sobre um painel fino que racha sob o seu peso."
 title: "Elo e autoestima: quando sua classificação vira sua identidade"
 excerpt: >-
   O ranking Elo é uma invenção brilhante para medir o nível de jogo. É também uma armadilha psicológica formidável:

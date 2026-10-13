@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Vinheta em pixel art: uma mesa à noite, uma tela mostrando um tabuleiro de xadrez, título sobre o vício em xadrez"
 title: "Xadrez e vício: quando o jogo vira uma droga"
 excerpt: >-
   São 3h da manhã. Você prometeu que era a última partida, mas começa outra. Dá pra ser viciado em xadrez de

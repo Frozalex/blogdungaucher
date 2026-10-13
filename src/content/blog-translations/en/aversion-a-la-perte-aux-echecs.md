@@ -155,7 +155,7 @@ If you can't name three concrete elements, the sacrifice is probably bad and you
 
 At every evaluation, the question is: **if I discovered this position now, without knowing how we got here, what would I say?**
 
-It's the same remedy as for anchoring bias, and for good reason: in both cases it's a matter of refusing an inherited reference point. Our [overview of cognitive biases](/en/blog/5-biais-cognitifs-blunder/) details this mechanism.
+It's the same remedy as for anchoring bias, and for good reason: in both cases it's a matter of refusing an inherited reference point. Our [overview of cognitive biases](/en/blog/5-cognitive-biases-blunder/) details this mechanism.
 
 ### 3. Train on Sacrifice Positions
 
@@ -163,7 +163,7 @@ This is the most effective remedy, and it's almost uniquely available in chess. 
 
 The objective isn't to memorize those positions. It's to **build the patterns that make compensation visible**. A recognized compensation is no longer an opinion, it's a pattern, and a pattern can be compared to a pawn.
 
-That's also the lesson of the Cowley and Byrne study mentioned in our article on [confirmation bias in chess](/en/blog/biais-de-confirmation-aux-echecs/): what you take for quality of judgment is often a consequence of the pattern repertoire available to you.
+That's also the lesson of the Cowley and Byrne study mentioned in our article on [confirmation bias in chess](/en/blog/confirmation-bias-in-chess/): what you take for quality of judgment is often a consequence of the pattern repertoire available to you.
 
 ### 4. Watch the Domain of Losses
 
@@ -183,7 +183,7 @@ The spontaneous reference point, material equality at the start, has no legitima
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [decision-making under uncertainty in chess](/en/blog/decision-sous-incertitude-aux-echecs/) and [confirmation bias in chess](/en/blog/biais-de-confirmation-aux-echecs/). An upcoming article will cover delayed gratification.*
+*This article is part of a series on psychology applied to chess. See also [decision-making under uncertainty in chess](/en/blog/decision-sous-incertitude-aux-echecs/) and [confirmation bias in chess](/en/blog/confirmation-bias-in-chess/). An upcoming article will cover delayed gratification.*
 
 ## Sources
 

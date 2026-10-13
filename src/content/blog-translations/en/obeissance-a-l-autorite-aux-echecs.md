@@ -101,11 +101,11 @@ Hold on to that phrasing. It transposes exactly.
 
 There are four of them, and they don't work the same way.
 
-**The coach.** He gives instructions, he evaluates, he has status. Our article on [attachment theory in chess](/en/blog/theorie-de-l-attachement-aux-echecs/) shows that he often occupies a place well beyond teaching.
+**The coach.** He gives instructions, he evaluates, he has status. Our article on [attachment theory in chess](/en/blog/attachment-theory-in-chess/) shows that he often occupies a place well beyond teaching.
 
 **The titled player.** His rating is public and numerical, which gives his authority an objectivity few fields can offer. An opinion from a 2600 lands differently than the same opinion from an 1800, before anyone has even heard it.
 
-**Theory.** "It's the main line." Nobody decided this, no body promulgates it, and yet it functions as a norm. Our article on [survivorship bias in chess](/en/blog/biais-du-survivant-aux-echecs/) shows the filter through which it was assembled.
+**Theory.** "It's the main line." Nobody decided this, no body promulgates it, and yet it functions as a norm. Our article on [survivorship bias in chess](/en/blog/survivorship-bias-in-chess/) shows the filter through which it was assembled.
 
 **The engine.** And that one is a different animal entirely.
 
@@ -143,9 +143,9 @@ And the Haslam and Reicher analysis applies word for word. You aren't passively 
 
 ## The Other Three Authorities
 
-**The coach, and the move you don't understand.** Playing a move you don't understand is always a loss, even when the move is good. It doesn't attach to any structure of knowledge and won't transfer to the neighbouring position. The useful rule is simple: an unexplained move should be flagged as such, and the question asked. A good coach expects that question. One who discourages it presents a different order of problem, covered in our article on [gaslighting in chess](/en/blog/gaslighting-aux-echecs/).
+**The coach, and the move you don't understand.** Playing a move you don't understand is always a loss, even when the move is good. It doesn't attach to any structure of knowledge and won't transfer to the neighbouring position. The useful rule is simple: an unexplained move should be flagged as such, and the question asked. A good coach expects that question. One who discourages it presents a different order of problem, covered in our article on [gaslighting in chess](/en/blog/gaslighting-in-chess/).
 
-**The titled player, and competence transfer.** A title certifies a level of play. It doesn't certify teaching ability, or reliable judgment away from the board, or even correct evaluation in a type of position the player rarely enters. The authority principle operates by automatic extension, and it's the extension that costs you. Our article on [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/) details how this lever underpins an entire market.
+**The titled player, and competence transfer.** A title certifies a level of play. It doesn't certify teaching ability, or reliable judgment away from the board, or even correct evaluation in a type of position the player rarely enters. The authority principle operates by automatic extension, and it's the extension that costs you. Our article on [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/) details how this lever underpins an entire market.
 
 **Theory, and authority without an author.** This is the strangest one, because there's nobody to question. "It's theory" is a sentence with no subject. What it actually describes is a historical consensus assembled by selecting published games, with everything that filter implies.
 
@@ -175,7 +175,7 @@ Which leaves one rule, and it costs nothing: produce your verdict before you ask
 
 ---
 
-*This article is part of a series on psychology applied to chess. It complements our article on [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/). Upcoming articles will cover conformity and crowd psychology.*
+*This article is part of a series on psychology applied to chess. It complements our article on [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/). Upcoming articles will cover conformity and crowd psychology.*
 
 ## Sources
 

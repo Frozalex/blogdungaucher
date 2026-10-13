@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A long negotiating table seen from above, its surface a checkerboard."
 title: "Chess and Diplomacy: When the Board Becomes a Negotiation Table"
 excerpt: "Fischer vs. Spassky in 1972, Kasparov vs. heads of state, chess clubs as vectors of reconciliation in conflict zones. The history and psychology of negotiation reveal why the chessboard fascinates diplomats as much as military strategists."
 seoTitle: "Chess and Diplomacy: The Board as a Geopolitical Tool"

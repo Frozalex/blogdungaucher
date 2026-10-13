@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art thumbnail: a pixelated brain partly dissolving, title about chess and preventing cognitive decline"
 title: "Chess and Alzheimer's: How to Stimulate Your Brain to Prevent Cognitive Decline"
 excerpt: "Figures from recent literature: meta-analyses, cohorts, and trials on board games, cognitive stimulation, and dementia risk, with statistical limits and what chess can (really) bring."
 seoTitle: "Chess and Alzheimer's: Studies, Figures, and Cognitive Prevention"

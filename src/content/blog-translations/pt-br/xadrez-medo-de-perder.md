@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma ponte levadiça erguida fechando a única passagem sobre um fosso seco."
 title: "Xadrez e medo de perder: quando a derrota paralisa antes de acontecer"
 excerpt: >-
   O medo de perder muda tudo no xadrez. Ele transforma o estilo de jogo, paralisa a criatividade e frequentemente cria

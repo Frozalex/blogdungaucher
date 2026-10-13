@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art illustration: a dark stone-walled cell, barred light casting a checkerboard pattern on the floor, a black king at the center, a door open onto a lit corridor; title \"Chess in prison: when the board becomes a tool for rehabilitation\" overlaid."
 title: "Chess in Prison: When the Chessboard Becomes a Rehabilitation Tool"
 excerpt: >-
   Inmates learning to anticipate three moves ahead, manage the frustration of a lost piece, respect an opponent. What
@@ -114,7 +115,7 @@ Each activity trains different dimensions. What is specific to chess:
 
 ## The same mechanisms, other contexts
 
-The cognitive deficits chess targets in prison (impulsivity, weak planning, difficulty modelling others) also appear in other profiles linked to social vulnerability. The article on [chess and ADHD](/en/blog/echecs-et-tdah/) explores the same mechanisms for a neurodevelopmental profile common in custody: an estimated 25 to 40% of incarcerated people have undiagnosed ADHD.
+The cognitive deficits chess targets in prison (impulsivity, weak planning, difficulty modelling others) also appear in other profiles linked to social vulnerability. The article on [chess and ADHD](/en/blog/chess-and-adhd/) explores the same mechanisms for a neurodevelopmental profile common in custody: an estimated 25 to 40% of incarcerated people have undiagnosed ADHD.
 
 That matters. If a large share of impulsive behaviour leading to incarceration is neurological rather than purely "moral," training executive functions (with chess among the tools) takes on added clarity.
 
@@ -166,7 +167,7 @@ That is one of the most interesting dimensions. Anticipating your opponent's mov
 
 ---
 
-The board teaches something few activities teach as clearly: every decision has a visible, irreversible consequence, and the person across from you has a perspective worth understanding. Programmes that **last** combine play, **stable human support**, and **continuity after release**; the board alone does not rewrite a life. For cognitive effects measured outside prison settings, see [chess and the brain](/en/blog/les-echecs-et-le-cerveau/).
+The board teaches something few activities teach as clearly: every decision has a visible, irreversible consequence, and the person across from you has a perspective worth understanding. Programmes that **last** combine play, **stable human support**, and **continuity after release**; the board alone does not rewrite a life. For cognitive effects measured outside prison settings, see [chess and the brain](/en/blog/chess-and-the-brain/).
 
 **After reading:** if you run or support a workshop, define **one** measurable in-custody goal (respecting the clock, articulating the move played) over six sessions before evaluating anything about recidivism.
 

@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma silhueta sentada de costas, no centro de um corredor de luz que se abre bem na frente."
 title: "Xadrez e estado de flow: como entrar no flow diante do tabuleiro"
 excerpt: >-
   Quando um enxadrista entra em estado de flow, o tempo para, as distrações somem, e o jogo vira a única realidade.

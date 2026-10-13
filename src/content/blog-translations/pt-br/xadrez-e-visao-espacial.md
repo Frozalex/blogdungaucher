@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma maquete flutuante reduzida a algumas vigas estruturais, o restante do edifício ausente."
 title: "Xadrez e visão espacial: o cérebro que vê em 3D"
 excerpt: >-
   Visualizar 8 lances à frente sem tocar as peças. Calcular mentalmente variantes num tabuleiro que só existe na sua

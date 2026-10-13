@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Um funil de vidro estreito deixando passar cinco peças de xadrez, enquanto as demais se acumulam acima."
 title: "Memória de trabalho e xadrez: o gargalo cognitivo"
 excerpt: >-
   Você pode conhecer todas as aberturas, todos os finais, e permanecer limitado por uma restrição fundamental : a memória

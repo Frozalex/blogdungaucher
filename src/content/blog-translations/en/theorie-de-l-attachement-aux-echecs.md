@@ -105,7 +105,7 @@ In chess, the parent is in a corridor. The hall is closed, silence is mandatory,
 
 Three consequences follow.
 
-**The child goes through the ordeal entirely alone.** No half-time, no coach at the touchline, no teammate. That's the subject of our article on [solitude in chess](/en/blog/echecs-et-la-solitude/), and it's worse when you're ten.
+**The child goes through the ordeal entirely alone.** No half-time, no coach at the touchline, no teammate. That's the subject of our article on [solitude in chess](/en/blog/solitude-in-chess/), and it's worse when you're ten.
 
 **The parent receives only a result.** No context, no nuance, no image of the effort made. Just a letter on a pairing sheet. Which mechanically concentrates all his attention on that letter.
 
@@ -129,7 +129,7 @@ Chess encourages long and exclusive teaching relationships. A child may work wit
 
 It's a powerful configuration when it works: Davis and Jowett show that a coach properly fulfilling the secure-base function enables risk-taking, and therefore improvement. You dare a new opening, a sacrifice, a tournament above your level, because you know where to come back to.
 
-And it's a risky configuration when it goes wrong. An attachment figure has a lever no ordinary teacher possesses: making approval conditional. That's what makes certain coaching relationships so hard to leave, even when they're doing harm. Our article on [gaslighting in chess](/en/blog/gaslighting-aux-echecs/) describes a neighbouring mechanism.
+And it's a risky configuration when it goes wrong. An attachment figure has a lever no ordinary teacher possesses: making approval conditional. That's what makes certain coaching relationships so hard to leave, even when they're doing harm. Our article on [gaslighting in chess](/en/blog/gaslighting-in-chess/) describes a neighbouring mechanism.
 
 ### The Adult Player With No Base Left
 
@@ -137,7 +137,7 @@ The theory doesn't only concern children.
 
 An adult playing a tournament lives exactly the same structure: a solitary, long ordeal with a clear-cut outcome, followed by a return towards someone. That someone may be a partner, a friend, a club group, or nobody.
 
-That last option is more common than people think, and it has a cost. With no recipient for the experience, the loss stays whole. It's one of the documented paths towards [burnout in chess](/en/blog/burnout-chess/): not too many games, but too many games with nobody to tell them to.
+That last option is more common than people think, and it has a cost. With no recipient for the experience, the loss stays whole. It's one of the documented paths towards [burnout in chess](/en/blog/chess-burnout/): not too many games, but too many games with nobody to tell them to.
 
 ## Why People Quit
 
@@ -155,7 +155,7 @@ Which explains something parents often find incomprehensible: quitting frequentl
 
 **Be steady rather than fair.** Your face transmits more than your words. A moderate reaction after a win costs a little shared pleasure and returns a great deal: it shows that your state doesn't depend on the result.
 
-**Separate the analysis from the greeting.** The post-game isn't the moment for the lesson. The return in the corridor is a reunion, not a debrief. The game can be looked at tomorrow, and it's more effective that way anyway, as our guide on [how to analyze your games](/en/blog/analyser-ses-parties/) explains.
+**Separate the analysis from the greeting.** The post-game isn't the moment for the lesson. The return in the corridor is a reunion, not a debrief. The game can be looked at tomorrow, and it's more effective that way anyway, as our guide on [how to analyze your games](/en/blog/how-to-analyze-chess-games/) explains.
 
 ### If You're a Coach
 
@@ -179,7 +179,7 @@ Ainsworth's categories have to be handled carefully: they also measure cultural 
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [defense mechanisms in chess](/en/blog/mecanismes-de-defense-aux-echecs/) and [gaslighting in chess](/en/blog/gaslighting-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [defense mechanisms in chess](/en/blog/defense-mechanisms-in-chess/) and [gaslighting in chess](/en/blog/gaslighting-in-chess/).*
 
 ## Sources
 

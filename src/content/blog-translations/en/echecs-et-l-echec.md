@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art illustration: a chess king lying on the board after a game, soft and melancholic light, a sense of dignity in defeat, \"Learning to lose\""
 title: "Learning to Lose at Chess: Harder Than People Say"
 excerpt: "Adults systematically avoid situations where they're going to lose to someone. Chess players do the opposite. It's not natural, it's learned, and the idea that chess 'teaches you to lose' deserves serious examination, not naive celebration."
 seoTitle: "Learning to Lose at Chess: What No One Really Says"

@@ -102,7 +102,7 @@ The naive reading would say: players who can delay improve faster, so work on yo
 
 The corrected reading asks a different question: **is the link between what you do and what you get reliable and observable?**
 
-And here, chess has a structural problem, one we already met in our article on [learned helplessness in chess](/en/blog/impuissance-apprise-aux-echecs/).
+And here, chess has a structural problem, one we already met in our article on [learned helplessness in chess](/en/blog/learned-helplessness-in-chess/).
 
 Delaying, in chess, means working today for a result several months out. But the feedback available, your rating, is slow, noisy, dependent on your opponent and impossible to attribute. You can't know whether March's work produced June's gain.
 
@@ -120,7 +120,7 @@ The attacking move delivers a reward **before it's even been verified**. The exc
 
 The positional move delivers nothing. Improving a knight produces no sensation at all.
 
-So the imbalance isn't only about timing, it's **structural**: one of the two options pays up front. That's also why combinations get examined less harshly than other moves, a mechanism described in our article on [confirmation bias in chess](/en/blog/biais-de-confirmation-aux-echecs/).
+So the imbalance isn't only about timing, it's **structural**: one of the two options pays up front. That's also why combinations get examined less harshly than other moves, a mechanism described in our article on [confirmation bias in chess](/en/blog/confirmation-bias-in-chess/).
 
 The remedy isn't giving up beautiful combinations, which would be both absurd and depressing. It's **restoring symmetry in the examination**: applying to the move you like the same level of checking you apply to the move that bores you.
 
@@ -128,7 +128,7 @@ The remedy isn't giving up beautiful combinations, which would be both absurd an
 
 Same mechanism, different horizon.
 
-Playing delivers an immediate, variable reward, which makes it, as our article on [habit formation in chess](/en/blog/formation-des-habitudes-aux-echecs/) explains, a near-perfect habit. Working on endgames delivers nothing for weeks.
+Playing delivers an immediate, variable reward, which makes it, as our article on [habit formation in chess](/en/blog/habit-formation-in-chess/) explains, a near-perfect habit. Working on endgames delivers nothing for weeks.
 
 But now apply the corrected marshmallow lesson. The problem isn't that you lack patience. The problem is that **the promise isn't visibly kept**. You're told that endgames will raise your rating in six months, and you'll have no way of verifying that this particular work is what produced the effect.
 
@@ -174,7 +174,7 @@ So the lever isn't forcing yourself to wait longer. It's keeping the promise mor
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [habit formation in chess](/en/blog/formation-des-habitudes-aux-echecs/), [learned helplessness in chess](/en/blog/impuissance-apprise-aux-echecs/) and [procrastination and chess](/en/blog/echecs-et-procrastination/).*
+*This article is part of a series on psychology applied to chess. See also [habit formation in chess](/en/blog/habit-formation-in-chess/), [learned helplessness in chess](/en/blog/learned-helplessness-in-chess/) and [procrastination and chess](/en/blog/chess-and-procrastination/).*
 
 ## Sources
 

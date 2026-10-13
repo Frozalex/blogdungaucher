@@ -82,7 +82,7 @@ Result: **the average effect is close to zero.**
 
 This isn't an effect smaller than advertised. It's an effect whose average, across all the available data, can't be distinguished from zero. Several experiments even find the opposite: more options make the decision easier and increase satisfaction.
 
-Including unpublished studies matters here, because it partly corrects publication bias: an experiment that finds nothing is less likely to appear in print, which artificially inflates effects in the visible literature. It's a form of [survivorship bias](/en/blog/biais-du-survivant-aux-echecs/) applied to science itself.
+Including unpublished studies matters here, because it partly corrects publication bias: an experiment that finds nothing is less likely to appear in print, which artificially inflates effects in the visible literature. It's a form of [survivorship bias](/en/blog/survivorship-bias-in-chess/) applied to science itself.
 
 ### The Useful Part of the Result
 
@@ -98,7 +98,7 @@ Later work proposed several favourable conditions, and as it happens they descri
 
 **When you have no prior preference.** A shopper who likes strawberry picks from 24 jars in two seconds. A player who doesn't yet know what kind of position suits them has no criterion at all.
 
-**When you lack the expertise to evaluate the options.** This is the decisive point, and it's structural: **choosing a repertoire demands a skill you'll only have after playing the repertoire**. It's the same asymmetry described in our article on [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/).
+**When you lack the expertise to evaluate the options.** This is the decisive point, and it's structural: **choosing a repertoire demands a skill you'll only have after playing the repertoire**. It's the same asymmetry described in our article on [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/).
 
 Those three conditions line up almost perfectly in chess. Which explains why the difficulty is real even though the general effect isn't.
 
@@ -126,7 +126,7 @@ Worth adding that a repertoire change is almost always triggered by a loss, and 
 
 Switching openings is a concrete, visible, pleasant action that gives you the feeling of doing something. Working on your endgames offers nothing like that. And above all, switching openings supplies a **retrospective explanation** for the loss that doesn't implicate the player: it wasn't me, it was the opening.
 
-You'll recognise the mechanism described in our article on [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/). Except that here, the dissonance doesn't produce an excuse: it produces an expensive decision.
+You'll recognise the mechanism described in our article on [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/). Except that here, the dissonance doesn't produce an excuse: it produces an expensive decision.
 
 ## The Protocol
 
@@ -152,7 +152,7 @@ Fix a single dimension and settle it on that. For instance: I want an opening wi
 
 ### 4. Separate Repertoire Choice From the Rest of Your Training
 
-Time spent choosing is time not going to tactics or endgames, which are the best-documented items in terms of return. Our article on [the 40-40-20 rule](/en/blog/regle-40-40-20-echecs/) details that split, and [do you really need to study openings](/en/blog/faut-il-vraiment-etudier-les-ouvertures/) takes the problem from the other end.
+Time spent choosing is time not going to tactics or endgames, which are the best-documented items in terms of return. Our article on [the 40-40-20 rule](/en/blog/chess-40-40-20-rule/) details that split, and [do you really need to study openings](/en/blog/faut-il-vraiment-etudier-les-ouvertures/) takes the problem from the other end.
 
 ## What to Take Away
 
@@ -168,7 +168,7 @@ Hence a counterintuitive conclusion. The right question isn't which opening to c
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [habit formation in chess](/en/blog/formation-des-habitudes-aux-echecs/) and [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [habit formation in chess](/en/blog/habit-formation-in-chess/) and [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/).*
 
 ## Sources
 

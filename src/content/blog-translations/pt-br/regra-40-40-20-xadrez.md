@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Três pilhas de peões de xadrez de alturas muito desiguais, alinhadas em contra-plongée."
 title: "A regra 40-40-20: como realmente estruturar o treinamento no xadrez"
 excerpt: >-
   A maioria dos jogadores passa 80% do tempo nas aberturas. A regra 40-40-20 diz o contrário: 40% de tática, 40% de

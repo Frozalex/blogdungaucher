@@ -95,7 +95,7 @@ Two boundaries need drawing first, because this topic has two very close neighbo
 
 **This isn't position memorization.** The way a strong player takes in a position in a few seconds is a matter of chunks and perceptual expertise, covered in our article on [memorizing chess games](/en/blog/memoriser-parties-aux-echecs/).
 
-**And it isn't implantation by an outside source either.** Our article on [false memories in chess](/en/blog/faux-souvenirs-aux-echecs/) describes what happens when an analysis session or a leading question introduces content that was never there.
+**And it isn't implantation by an outside source either.** Our article on [false memories in chess](/en/blog/false-memories-in-chess/) describes what happens when an analysis session or a leading question introduces content that was never there.
 
 What's at stake here is the **normal** mechanism, with no outside interference at all. Nobody is suggesting anything to you. Your memory warps on its own, in the direction of what you already believe about yourself.
 
@@ -115,7 +115,7 @@ The result, after a few years, is a remarkably coherent body of memories describ
 
 **The win becomes controlled.** The moments when you had no idea what to play disappear, because they don't fit with having won. The plan looks in hindsight like something you intended from the start.
 
-**The loss becomes doomed.** The reverse. The moments when you were better fade away, and the game turns into one continuous slide. That's what feeds bogus post mortems along the lines of "I was lost from move 20," described in our article on [gaslighting in chess](/en/blog/gaslighting-aux-echecs/), except that here nobody is imposing it on you.
+**The loss becomes doomed.** The reverse. The moments when you were better fade away, and the game turns into one continuous slide. That's what feeds bogus post mortems along the lines of "I was lost from move 20," described in our article on [gaslighting in chess](/en/blog/gaslighting-in-chess/), except that here nobody is imposing it on you.
 
 **Causality tightens up.** A game rarely turns on a single move. Memory, though, always picks one out, because a story needs a turning point.
 
@@ -125,7 +125,7 @@ It isn't in the accuracy of the memory for its own sake. It's in the **decisions
 
 You pick your repertoire, your training program and your goals based on the idea you hold about your play. And that idea comes from memories that have been normalized, over years, toward that same idea.
 
-It's a closed loop. The schema distorts the memories, and the memories confirm the schema. It's also the raw material of the self fulfilling prophecies described in [the corresponding article](/en/blog/prophetie-auto-realisatrice-aux-echecs/) in this series.
+It's a closed loop. The schema distorts the memories, and the memories confirm the schema. It's also the raw material of the self fulfilling prophecies described in [the corresponding article](/en/blog/self-fulfilling-prophecy-in-chess/) in this series.
 
 ## The Upside of Reconstruction
 
@@ -137,7 +137,7 @@ And reconsolidation, which makes a memory editable at the moment of recall, has 
 
 Rereading an annotated game is passive: the memory isn't recalled, it's recognized, which produces a strong feeling of mastery and very little trace. Rebuilding the game **from memory**, on an empty board, forces genuine recall, therefore reconsolidation, therefore reinforcement.
 
-That's the mechanism behind why the most unpleasant exercise is also the most effective. The general method is spelled out in our article on [analyzing your games](/en/blog/analyser-ses-parties/).
+That's the mechanism behind why the most unpleasant exercise is also the most effective. The general method is spelled out in our article on [analyzing your games](/en/blog/how-to-analyze-chess-games/).
 
 ## The Protocol
 
@@ -165,7 +165,7 @@ The same property, flipped around, is what makes active recall so effective: the
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [false memories in chess](/en/blog/faux-souvenirs-aux-echecs/) for the pathological version of this mechanism, and [memorizing chess games](/en/blog/memoriser-parties-aux-echecs/) for position memory.*
+*This article is part of a series on psychology applied to chess. See also [false memories in chess](/en/blog/false-memories-in-chess/) for the pathological version of this mechanism, and [memorizing chess games](/en/blog/memoriser-parties-aux-echecs/) for position memory.*
 
 ## Sources
 

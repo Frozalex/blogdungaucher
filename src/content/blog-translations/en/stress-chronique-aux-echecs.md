@@ -70,7 +70,7 @@ Attention narrows, something often described as a tunnel effect. Memory improves
 
 That's no accident: it's the function of the system. It's built to improve performance in the face of a one-off threat, then return to baseline.
 
-That's the regime described in our article on [managing tournament stress](/en/blog/echecs-stress-tournoi/), and it's also why a dose of tension before an important game isn't a problem to be eliminated.
+That's the regime described in our article on [managing tournament stress](/en/blog/chess-tournament-stress/), and it's also why a dose of tension before an important game isn't a problem to be eliminated.
 
 ### Chronic Stress Degrades Things
 
@@ -82,9 +82,9 @@ Prolonged exposure to glucocorticoids affects neurons and eventually impairs the
 
 **The prefrontal cortex.** Sustained cortisol elevation causes comparable dendritic retraction there, and the data show associated working memory deficits, that memory resting on the interaction between the prefrontal cortex and the hippocampus.
 
-Put another way: prolonged stress attacks precisely **the two structures chess depends on**. Our article on [working memory and chess](/en/blog/echecs-memoire-de-travail/) describes why that resource is the bottleneck in calculating variations.
+Put another way: prolonged stress attacks precisely **the two structures chess depends on**. Our article on [working memory and chess](/en/blog/chess-and-working-memory/) describes why that resource is the bottleneck in calculating variations.
 
-Another documented nuance: prolonged stress impairs cognition-based tasks, like verbal recall or spatial memory, while **facilitating** emotion-based ones, notably fear conditioning. Which suggests that in this state, you learn positions less well and apprehensions better. The mechanism is the one described in our article on [classical conditioning in chess](/en/blog/conditionnement-classique-aux-echecs/).
+Another documented nuance: prolonged stress impairs cognition-based tasks, like verbal recall or spatial memory, while **facilitating** emotion-based ones, notably fear conditioning. Which suggests that in this state, you learn positions less well and apprehensions better. The mechanism is the one described in our article on [classical conditioning in chess](/en/blog/classical-conditioning-in-chess/).
 
 ## Allostatic Load
 
@@ -104,9 +104,9 @@ Four sources, and none of them is dramatic.
 
 **The competitive season.** An isolated tournament is acute stress, with recovery. Eight weekends in four months, with short nights and travel, produce an activation that never fully comes back down.
 
-**Continuous rating pressure.** This is probably the source most specific to chess. Unlike almost any other hobby, your evaluation is permanent, public and updated after every game. There's no off-season. Our article on [social comparison in chess](/en/blog/comparaison-sociale-aux-echecs/) describes that setup.
+**Continuous rating pressure.** This is probably the source most specific to chess. Unlike almost any other hobby, your evaluation is permanent, public and updated after every game. There's no off-season. Our article on [social comparison in chess](/en/blog/social-comparison-in-chess/) describes that setup.
 
-**Late-night online play.** Often neglected and probably decisive. An evening blitz session combines competitive activation, light exposure and a sequence that's hard to break off, for the reasons laid out in our article on [operant conditioning in chess](/en/blog/conditionnement-operant-aux-echecs/). It pushes back the time you fall asleep, which degrades cortisol regulation the next day, which increases vulnerability to stress, which makes the evening session more appealing.
+**Late-night online play.** Often neglected and probably decisive. An evening blitz session combines competitive activation, light exposure and a sequence that's hard to break off, for the reasons laid out in our article on [operant conditioning in chess](/en/blog/operant-conditioning-in-chess/). It pushes back the time you fall asleep, which degrades cortisol regulation the next day, which increases vulnerability to stress, which makes the evening session more appealing.
 
 **The rest of your life.** This has to be said, because chess articles systematically forget it: your job, your family situation and your health weigh far more than your tournament calendar. Cortisol doesn't distinguish between sources.
 
@@ -118,7 +118,7 @@ This subject has close neighbours, and confusing them leads you to apply the wro
 
 **Chronic stress**, the subject of this article, is a prolonged physiological state that degrades cognition. It isn't treated with in-the-moment management techniques, because there is no moment. It's treated by reducing load and restoring recovery.
 
-**Burnout** is a fully formed psychological syndrome, with its three characteristic dimensions, described in our article on [burnout in chess](/en/blog/burnout-chess/). You can be chronically stressed without burnout, and prolonged chronic stress is a risk factor for it.
+**Burnout** is a fully formed psychological syndrome, with its three characteristic dimensions, described in our article on [burnout in chess](/en/blog/chess-burnout/). You can be chronically stressed without burnout, and prolonged chronic stress is a risk factor for it.
 
 ## The Useful Signs
 
@@ -128,7 +128,7 @@ Emotional indicators aren't very reliable here, because you get used to your own
 
 **Errors on simple patterns.** Not subtle positional mistakes, which are a matter of level, but missed forks and hanging pieces. Those patterns are overlearned: failing them signals a resource problem, not a knowledge problem.
 
-**Sleep that degrades in a lasting way.** Delayed sleep onset, night waking, unrefreshing sleep, over several weeks. Our article on [chess and sleep](/en/blog/echecs-et-sommeil/) details the links with performance.
+**Sleep that degrades in a lasting way.** Delayed sleep onset, night waking, unrefreshing sleep, over several weeks. Our article on [chess and sleep](/en/blog/chess-and-sleep/) details the links with performance.
 
 **Persistent irritability after games.** Not tilt, which is acute and subsides, but a background annoyance that doesn't subside.
 
@@ -176,7 +176,7 @@ The most specific sign isn't emotional. It's working memory dropping off, and er
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [managing tournament stress](/en/blog/echecs-stress-tournoi/) for acute stress, [burnout in chess](/en/blog/burnout-chess/) for the fully formed syndrome, and [chess and sleep](/en/blog/echecs-et-sommeil/).*
+*This article is part of a series on psychology applied to chess. See also [managing tournament stress](/en/blog/chess-tournament-stress/) for acute stress, [burnout in chess](/en/blog/chess-burnout/) for the fully formed syndrome, and [chess and sleep](/en/blog/chess-and-sleep/).*
 
 ## Sources
 

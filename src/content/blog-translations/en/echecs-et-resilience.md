@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A side-view silhouette walking bent against a headwind, across an empty plain."
 title: "Resilience in Chess: Learning to Bounce Back After Defeat"
 excerpt: "Every grandmaster has a particular relationship with defeat. Not indifference: champions suffer as much as we do after a lost game. But they bounce back differently. What the psychology of resilience says about turning defeats into a motor for progress."
 seoTitle: "Chess Resilience: How to Bounce Back After a Loss and Improve"

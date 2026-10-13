@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A compass needle multiplied into a blur, settling back onto a single point."
 title: "Chess and ADHD: Why the Chessboard Captures the Attention Everything Else Fails to Hold"
 excerpt: >-
   ADHD isn't an attention deficit - it's inconsistent attention. The chessboard creates the rare conditions where this
@@ -108,7 +109,7 @@ In chess, the good decision is almost always the slow one: see, brake the impuls
 
 For a child whose central issue is impulsivity, that difference is fundamental.
 
-That same cognitive profile, difficulty inhibiting, need for stable structure, sensitivity to immediate rewards, appears in other contexts where chess has documented effects, notably in prisons. The article on [chess in prison](/en/blog/echecs-en-prison/) explores the same mechanisms applied to rehabilitation.
+That same cognitive profile, difficulty inhibiting, need for stable structure, sensitivity to immediate rewards, appears in other contexts where chess has documented effects, notably in prisons. The article on [chess in prison](/en/blog/chess-in-prison/) explores the same mechanisms applied to rehabilitation.
 
 ## Limits: what chess cannot do
 
@@ -120,7 +121,7 @@ It would be dishonest to present the chessboard as an ADHD cure. Important cavea
 
 **Chess does not replace specialized care.** Medication (among the best-documented interventions for executive functions), cognitive-behavioral therapy, and school accommodations remain the treatments with the strongest evidence base. Chess can be a valuable complement and a positive space, not a substitute.
 
-**Daria Kuss** ([Nottingham Trent University](https://en.wikipedia.org/wiki/Nottingham_Trent_University)) showed how anxiety, depression, or ADHD can push people toward hyper-stimulating activities, which partly explains particular vulnerability of ADHD profiles to certain forms of excessive online play. An angle explored in the article on [chess and addiction](/en/blog/les-echecs-et-l-addiction/).
+**Daria Kuss** ([Nottingham Trent University](https://en.wikipedia.org/wiki/Nottingham_Trent_University)) showed how anxiety, depression, or ADHD can push people toward hyper-stimulating activities, which partly explains particular vulnerability of ADHD profiles to certain forms of excessive online play. An angle explored in the article on [chess and addiction](/en/blog/chess-and-addiction/).
 
 ## Practical tips to adapt chess to the ADHD brain
 

@@ -92,7 +92,7 @@ This is the foot-in-the-door mechanism: get a small agreement first, which makes
 
 **In chess:** it works mostly on you, and that's where it costs the most. Announcing your rating goal publicly. Signing up for a year-long program. Buying a complete repertoire. Each of those acts creates a commitment that becomes psychologically expensive to disown, regardless of its actual value.
 
-That's exactly the structure of effort justification described in our article on [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/): the more you've invested, the less you can afford to conclude it was a mistake.
+That's exactly the structure of effort justification described in our article on [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/): the more you've invested, the less you can afford to conclude it was a mistake.
 
 ### 3. Social Proof
 
@@ -108,7 +108,7 @@ That's exactly the structure of effort justification described in our article on
 
 **In chess:** this lever is probably more powerful here than in any other field, because authority comes with **a number attached**. A title and a rating are objective, public markers, and that objectivity gives them enormous weight.
 
-Which produces a very specific, very costly slippage. The title certifies a **level of play**. It certifies nothing about **teaching ability**, which is an entirely different thing. A grandmaster can be a superb player and a poor teacher, partly because he's forgotten how you think at 1,400 Elo, and partly because he no longer sees the difficulties that have become invisible to him. It's the blind-spot mechanism described in our article on [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/), turned upside down.
+Which produces a very specific, very costly slippage. The title certifies a **level of play**. It certifies nothing about **teaching ability**, which is an entirely different thing. A grandmaster can be a superb player and a poor teacher, partly because he's forgotten how you think at 1,400 Elo, and partly because he no longer sees the difficulties that have become invisible to him. It's the blind-spot mechanism described in our article on [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/), turned upside down.
 
 So the useful question isn't "what's his rating," it's **"what progress did his students make starting from my level."** That's rarely on display.
 
@@ -120,7 +120,7 @@ So the useful question isn't "what's his rating," it's **"what progress did his 
 
 **In chess:** the streaming era has turned this lever into a business model. You watch someone play for hundreds of hours, you know their reactions, their expressions, the way they comment. They feel familiar to you. That familiarity is real and completely one-directional.
 
-When they recommend a product, your decision is shaped by hundreds of hours of perceived relationship, and not at all by an evaluation of the product. Our article on [chess and streaming](/en/blog/echecs-et-streaming/) covers that economy.
+When they recommend a product, your decision is shaped by hundreds of hours of perceived relationship, and not at all by an evaluation of the product. Our article on [chess and streaming](/en/blog/chess-and-streaming/) covers that economy.
 
 ### 6. Scarcity
 
@@ -210,7 +210,7 @@ This isn't "social proof doesn't exist." It's more awkward than that: the effect
 
 **Apply the twenty-four-hour rule.** Manufactured scarcity can't survive waiting, and that's its one weakness. If the offer is gone the next day, you've dodged a seller who needed you not to think. In the overwhelming majority of cases, it'll still be there.
 
-**Look for the denominator.** Three enthusiastic testimonials tell you nothing until you know how many students went through the program. That's survivorship bias applied to the training market, described in our article on [survivorship bias in chess](/en/blog/biais-du-survivant-aux-echecs/).
+**Look for the denominator.** Three enthusiastic testimonials tell you nothing until you know how many students went through the program. That's survivorship bias applied to the training market, described in our article on [survivorship bias in chess](/en/blog/survivorship-bias-in-chess/).
 
 **Be suspicious of comfort.** The most effective lever isn't the strongest argument, it's the feeling of being understood by one of your own. When an offer makes you feel especially at ease, that's the moment to go look at the content.
 
@@ -228,7 +228,7 @@ All you have to do is write the number down before you pay.
 
 ---
 
-*This article is part of a series on psychology applied to chess. Three levers get their own dedicated articles: reciprocity, social proof, and scarcity. The next article covers obedience to authority. See also [gaslighting in chess](/en/blog/gaslighting-aux-echecs/) and [survivorship bias in chess](/en/blog/biais-du-survivant-aux-echecs/). See [the full index of the series](/en/series/psychologie/).*
+*This article is part of a series on psychology applied to chess. Three levers get their own dedicated articles: reciprocity, social proof, and scarcity. The next article covers obedience to authority. See also [gaslighting in chess](/en/blog/gaslighting-in-chess/) and [survivorship bias in chess](/en/blog/survivorship-bias-in-chess/). See [the full index of the series](/en/series/psychologie/).*
 
 ## Sources
 

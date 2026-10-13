@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art thumbnail: a glowing neural pattern on a purple background, title about chess and mathematics"
 title: Does Chess Make You Better at Maths? The Scientific Truth
 excerpt: >-
   Playing chess makes you good at maths? The answer isn't what you'd expect - and it radically changes what you should
@@ -61,7 +62,7 @@ The second fundamental pillar linking chess and mathematics is undoubtedly combi
 
 After only three moves each side, there are already more than nine million different conceivable positions on the board. [Claude Shannon](https://en.wikipedia.org/wiki/Claude_Shannon) estimated the order of magnitude of possible games at $10^{120}$ (the **Shannon number**), far beyond the number of atoms in the observable universe ($\sim 10^{80}$).
 
-When you sit down to calculate the forcing line of a sacrifice, your brain must operate like a mathematical graph-theory algorithm. You must visualize what is called a probability tree. That is the basis of the minimax algorithm: a documented bridge between game theory and chess AI. (The details of minimax, alpha-beta pruning, and how modern engines handle this explosion are developed in [Why chess is an (almost) impossible math problem and AI](/en/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
+When you sit down to calculate the forcing line of a sacrifice, your brain must operate like a mathematical graph-theory algorithm. You must visualize what is called a probability tree. That is the basis of the minimax algorithm: a documented bridge between game theory and chess AI. (The details of minimax, alpha-beta pruning, and how modern engines handle this explosion are developed in [Why chess is an (almost) impossible math problem and AI](/en/blog/chess-mathematical-problem-and-ai/).)
 
 Your thinking structures like this: "If I do this move, they can answer with option A or B. If they answer A, I have options C or D..."
 
@@ -153,7 +154,7 @@ If you want an honest promise, here it is: chess does not replace math and does 
 
 So the good pitch is not "chess makes you good at math," but "chess can help build a stance toward problems." And that stance can serve in math... and in real life.
 
-**After reading:** one tactical puzzle a day for a week, **hypothesis written before** the solution; for combinatorics and engines, continue with [why chess remains a brutal mathematical problem for AI](/en/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
+**After reading:** one tactical puzzle a day for a week, **hypothesis written before** the solution; for combinatorics and engines, continue with [why chess remains a brutal mathematical problem for AI](/en/blog/chess-mathematical-problem-and-ai/).
 
 ---
 

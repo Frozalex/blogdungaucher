@@ -89,7 +89,7 @@ Your tree of variations wasn't too short. It was **unbalanced**. Deep, precise a
 
 Two mechanisms make this especially stubborn in chess.
 
-**Investment.** The more you've calculated an idea, the more it costs you to abandon it. After six minutes on a combination, the brain stops asking whether it's good: it asks how to make it work. That's the justification mechanism described in our article on [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/).
+**Investment.** The more you've calculated an idea, the more it costs you to abandon it. After six minutes on a combination, the brain stops asking whether it's good: it asks how to make it work. That's the justification mechanism described in our article on [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/).
 
 **Beauty.** A combination is aesthetically satisfying. The pleasure it provides is a reward received **before** you know whether it works, and that reward skews the examination that follows. Ugly ideas get examined more honestly than beautiful ones.
 
@@ -107,7 +107,7 @@ Masters are also better at spotting the precise opponent move that invalidates a
 
 ### Why This Matters
 
-That result corrects a received idea you run into everywhere, including in our own overview of the [5 cognitive biases that make you blunder](/en/blog/5-biais-cognitifs-blunder/), where it says this bias affects novices and experts alike. Within a domain of expertise, that's not what Cowley and Byrne show.
+That result corrects a received idea you run into everywhere, including in our own overview of the [5 cognitive biases that make you blunder](/en/blog/5-cognitive-biases-blunder/), where it says this bias affects novices and experts alike. Within a domain of expertise, that's not what Cowley and Byrne show.
 
 And the implication is optimistic. If masters refuted better because they were temperamentally more skeptical, there'd be nothing to be done. But the explanation on offer is different: they refute better **because they know more moves**. Falsification isn't a virtue, it's a consequence of the repertoire.
 
@@ -147,7 +147,7 @@ This one is about the post-mortem, and it's the only way to measure your own bia
 
 When you analyze with the engine, you learn that your move 24 was bad. You don't learn that **you never looked at the refutation**. And that's the information with value, because it's about your process, not about the position.
 
-The only way to preserve it: write down, during or just after the game, what you actually calculated. Without that note, your memory will reconstruct a version where you did consider his reply but misevaluated the follow-up. That's almost never true, and it's the subject of an upcoming article in this series on reconstructive memory. The general method is laid out in our guide on [analyzing your games](/en/blog/analyser-ses-parties/).
+The only way to preserve it: write down, during or just after the game, what you actually calculated. Without that note, your memory will reconstruct a version where you did consider his reply but misevaluated the follow-up. That's almost never true, and it's the subject of an upcoming article in this series on reconstructive memory. The general method is laid out in our guide on [analyzing your games](/en/blog/how-to-analyze-chess-games/).
 
 ## Key Takeaways
 
@@ -163,7 +163,7 @@ Put another way: the question "what would show me I'm wrong" only has value if y
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/), [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/) and [survivorship bias in chess](/en/blog/biais-du-survivant-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/), [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/) and [survivorship bias in chess](/en/blog/survivorship-bias-in-chess/).*
 
 ## Sources
 

@@ -134,7 +134,7 @@ This cost is collective, and it works over decades.
 
 A rarely played line is rarely analysed. Rarely analysed, it stays in an uncertain theoretical state. Uncertain, it gets avoided by cautious players. Avoided, it gets played even less.
 
-So the corpus contracts around what's already been explored, which isn't the same thing as what's good. Our article on [survivorship bias in chess](/en/blog/biais-du-survivant-aux-echecs/) describes this filter in detail. Individual conformity is its engine, one player at a time.
+So the corpus contracts around what's already been explored, which isn't the same thing as what's good. Our article on [survivorship bias in chess](/en/blog/survivorship-bias-in-chess/) describes this filter in detail. Individual conformity is its engine, one player at a time.
 
 It's also why openings "refuted" decades ago come back to life regularly whenever a strong player decides to look at them seriously. They weren't bad: they were deserted.
 
@@ -146,7 +146,7 @@ In a group post-mortem, when three players stronger than you insist a position i
 
 Two things are worth keeping in mind here.
 
-First, **the unanimity result applies**. A single dissenting voice is enough to free up speech. If you doubt in silence, there's a good chance somebody else doubts too, and that you're mutually confirming a false obvious truth for each other. That's the pluralistic ignorance described in our article on [the bystander effect in chess](/en/blog/effet-spectateur-aux-echecs/).
+First, **the unanimity result applies**. A single dissenting voice is enough to free up speech. If you doubt in silence, there's a good chance somebody else doubts too, and that you're mutually confirming a false obvious truth for each other. That's the pluralistic ignorance described in our article on [the bystander effect in chess](/en/blog/bystander-effect-in-chess/).
 
 Second, the Bond and Smith qualification is useful here: conformity isn't inevitable, it depends on context. A club where being contradicted goes down well mechanically produces less conformity than a club where it reads as arrogance. That's a parameter you can act on.
 
@@ -174,7 +174,7 @@ So the useful question isn't "am I original," which is a bad goal. It's: **can I
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [obedience to authority in chess](/en/blog/obeissance-a-l-autorite-aux-echecs/) and [the bystander effect in chess](/en/blog/effet-spectateur-aux-echecs/). An article on crowd psychology will follow in this series.*
+*This article is part of a series on psychology applied to chess. See also [obedience to authority in chess](/en/blog/obedience-to-authority-in-chess/) and [the bystander effect in chess](/en/blog/bystander-effect-in-chess/). An article on crowd psychology will follow in this series.*
 
 ## Sources
 

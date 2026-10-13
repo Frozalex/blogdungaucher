@@ -95,7 +95,7 @@ Now apply that grid to the Elo rating, and the result is more nuanced than you'd
 
 **It's one-dimensional.** In a workplace you can be lower-ranked but better liked, more technically competent, more senior. In chess there's only one axis.
 
-**It's permanent.** No off-season, as our article on [social comparison in chess](/en/blog/comparaison-sociale-aux-echecs/) describes.
+**It's permanent.** No off-season, as our article on [social comparison in chess](/en/blog/social-comparison-in-chess/) describes.
 
 **And it's unstable in Sapolsky's sense.** Rank moves every week, which is precisely the condition under which hierarchical stress runs highest, including for the people at the top.
 
@@ -121,7 +121,7 @@ The Elo rating shuts that exit. It's **calculated, transparent, earned and revis
 
 It's a remarkably fair hierarchy. And that's exactly why it weighs on you.
 
-An unfair rank points at the system. A fair rank points entirely back at you. That's what makes the slide from number to identity so easy, a mechanism covered in our article on [Elo and self-esteem](/en/blog/echecs-estime-de-soi-elo/).
+An unfair rank points at the system. A fair rank points entirely back at you. That's what makes the slide from number to identity so easy, a mechanism covered in our article on [Elo and self-esteem](/en/blog/elo-and-self-esteem/).
 
 ## Status in the Real Chess World
 
@@ -129,7 +129,7 @@ Three observations this grid clarifies.
 
 **A title is acquired status, a rating is current status.** An international master stays an international master even if his rating drops. That dissociation is rare and valuable: it supplies a stable component inside an otherwise unstable hierarchy.
 
-**Status doesn't convert.** Unlike professional sport, being strong at chess brings almost nothing outside the chess world. Our article on [chess and money](/en/blog/echecs-et-argent/) shows that even the best players in the world get little out of it. Which has an interesting consequence: the chess hierarchy is **self-contained**, and therefore easier to leave than most.
+**Status doesn't convert.** Unlike professional sport, being strong at chess brings almost nothing outside the chess world. Our article on [chess and money](/en/blog/chess-and-money/) shows that even the best players in the world get little out of it. Which has an interesting consequence: the chess hierarchy is **self-contained**, and therefore easier to leave than most.
 
 **Club status runs in parallel.** In a real club, other axes are at work: seniority, willingness to arbitrate, ability to teach, reliability in team competition. Those axes aren't numerical and don't depend on rating, which makes them, in Deci and Ryan's terms, a source of relatedness that online play doesn't provide.
 
@@ -141,7 +141,7 @@ Three observations this grid clarifies.
 
 **Grow a second axis.** Arbitrate, coach, organise, run events. Those roles produce a status that doesn't depend on the number, which cuts your dependence on a single unstable axis.
 
-**Be careful during unstable periods.** Sapolsky's result deserves to be taken seriously: it's when rank is on the line that the load peaks, at the top as much as anywhere else. A stretch of heavy rating swings is a good moment to reduce the competitive load, as our article on [chronic stress in chess](/en/blog/stress-chronique-aux-echecs/) sets out.
+**Be careful during unstable periods.** Sapolsky's result deserves to be taken seriously: it's when rank is on the line that the load peaks, at the top as much as anywhere else. A stretch of heavy rating swings is a good moment to reduce the competitive load, as our article on [chronic stress in chess](/en/blog/chronic-stress-in-chess/) sets out.
 
 ## What to Take Away
 
@@ -157,7 +157,7 @@ What remains is a burden of its own, and it's the price of the hierarchy's quali
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [Elo and self-esteem](/en/blog/echecs-estime-de-soi-elo/), [social comparison in chess](/en/blog/comparaison-sociale-aux-echecs/) and [chronic stress in chess](/en/blog/stress-chronique-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [Elo and self-esteem](/en/blog/elo-and-self-esteem/), [social comparison in chess](/en/blog/social-comparison-in-chess/) and [chronic stress in chess](/en/blog/chronic-stress-in-chess/).*
 
 ## Sources
 

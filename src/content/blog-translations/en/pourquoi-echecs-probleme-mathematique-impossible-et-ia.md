@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art thumbnail: a retro computer, screen showing a glowing decision tree, title about the mathematical complexity of chess and AI"
 title: Why Chess is a (Nearly) Impossible Mathematical Problem - and How AI Solves it Anyway
 excerpt: >-
   The game tree explodes, Shannon's number is staggering, yet an engine corrects you in seconds. Is chess really
@@ -202,9 +203,9 @@ At your level as a player the lesson is the same: you cannot see everything; you
 **Try this.** If you want to see what an engine does on a position, open it in your own analysis tool (Stockfish, locally or in the browser): depth, score, and variations live.
 
 **On the blog:**
-- [Do chess players get better at maths?](/en/blog/les-echecs-et-les-mathematiques/)
-- [Psychology of the chess player](/en/blog/psychologie-du-joueur-d-echecs/)
-- [Chess and the brain](/en/blog/les-echecs-et-le-cerveau/)
+- [Do chess players get better at maths?](/en/blog/chess-and-mathematics/)
+- [Psychology of the chess player](/en/blog/chess-player-psychology/)
+- [Chess and the brain](/en/blog/chess-and-the-brain/)
 
 Chess is "impossible" if you imagine a brute solution: explore everything, prove everything, solve everything at once. It becomes "possible" once you accept reality: you win by selecting, evaluating, and pruning. Strength is not how many moves you calculate but how well you sort. A lucid player already knows that.
 

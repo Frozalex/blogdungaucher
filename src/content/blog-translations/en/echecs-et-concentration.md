@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "A wide beam of light narrowing into a thin ray at the back of an empty room."
 title: "Concentration in Chess: Training Attention Like a Muscle"
 excerpt: "Concentration is not a state that happens when you're lucky. It is a skill that degrades when neglected and improves when trained. What the neuroscience of attention says about concentration in chess, and how to concretely develop this ability."
 seoTitle: "Chess and Concentration: Train Your Attention to Play Better"

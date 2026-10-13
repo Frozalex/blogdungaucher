@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A massive gauge needle bolted onto a thin panel that cracks under its weight."
 title: "Elo and Self-Esteem: When Your Rating Becomes Your Identity"
 excerpt: "The Elo rating is a brilliant invention for measuring playing strength. It's also a formidable psychological trap: when your Elo becomes the measure of your personal worth, every defeat is an identity wound. How to decouple performance and identity."
 seoTitle: "Elo Rating and Self-Esteem: When Chess Rating Becomes Identity"

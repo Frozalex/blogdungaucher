@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Two marbles released from almost the same point on an inclined plane, landing in opposite corners."
 title: "Chaos Theory in Chess: Order in the Storm"
 excerpt: "Chess seems to be a game of order and pure logic. Yet chaos theory reveals that complex positions have real chaotic properties. A small error can have catastrophic consequences."
 seoTitle: "Chaos Theory in Chess: Lyapunov, Bifurcations, and Critical Moves"

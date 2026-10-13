@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A scale where a large trophy is lifted by three small coins."
 title: "Chess and Money: Why the World's Best Players Aren't Rich"
 excerpt: >-
   Magnus Carlsen is the greatest player in history. He's earned around $2 million in prize money over his entire career.

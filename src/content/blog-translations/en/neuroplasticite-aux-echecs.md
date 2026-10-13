@@ -106,7 +106,7 @@ The study most often cited to demonstrate that learning durably transforms the b
 
 ## The Logical Leap
 
-Grant everything above, and add the studies conducted directly on chess players, which did reveal structural differences between experts and novices. Our article on [chess and the brain](/en/blog/les-echecs-et-le-cerveau/) goes through the detail.
+Grant everything above, and add the studies conducted directly on chess players, which did reveal structural differences between experts and novices. Our article on [chess and the brain](/en/blog/chess-and-the-brain/) goes through the detail.
 
 One problem remains, and it's the real subject.
 
@@ -142,7 +142,7 @@ The conclusion isn't that chess does nothing. It does a lot, just not what it ge
 
 **You genuinely get better at chess, and that's a considerable cognitive transformation.** An experienced player doesn't see the same board as a beginner. He perceives structures where the other sees pieces, what researchers call *chunking*. That skill is real, measurable and deep. It's just **specific**.
 
-**Some less spectacular effects hold up better.** The link between sustained cognitive activity and cognitive reserve in old age is documented, even if it raises causality problems, and our article on [chess and Alzheimer's](/en/blog/echecs-alzheimer-prevention-declin-cognitif/) discusses its limits.
+**Some less spectacular effects hold up better.** The link between sustained cognitive activity and cognitive reserve in old age is documented, even if it raises causality problems, and our article on [chess and Alzheimer's](/en/blog/chess-and-alzheimer-prevention/) discusses its limits.
 
 **And pleasure doesn't need neurological justification.** That may be the real stake of this whole article.
 
@@ -178,7 +178,7 @@ Chess makes you good at chess. That's already a lot, and it was always the only 
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/) and [survivorship bias in chess](/en/blog/biais-du-survivant-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/) and [survivorship bias in chess](/en/blog/survivorship-bias-in-chess/).*
 
 ## Sources
 

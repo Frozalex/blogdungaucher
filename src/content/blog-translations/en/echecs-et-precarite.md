@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art illustration: a child playing chess in a city street, an improvised board on a wooden crate, \"Chess and poverty\""
 title: "Chess and Poverty: When the Board Transcends Social Inequality"
 excerpt: "Chess has produced champions born in extreme poverty, Grandmasters from disadvantaged neighborhoods, street programs using the game as a lever for emancipation. And yet, access inequalities are real. Portrait of a game that promises equality and struggles to deliver."
 seoTitle: "Chess and Poverty: Can the Board Transcend Inequalities?"

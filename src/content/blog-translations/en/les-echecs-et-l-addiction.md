@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art thumbnail: a desk at night, a screen showing a chessboard, title about chess addiction"
 title: "Chess and Addiction: When the Game Becomes a Drug"
 excerpt: >-
   It's 3am. You promised yourself it was the last game, but you're launching another one. Can you really be addicted to
@@ -54,7 +55,7 @@ Dr [George Imataka](https://pubmed.ncbi.nlm.nih.gov/?term=Imataka+G) et al. (202
 
 ### The number that defines you: when Elo becomes a cage
 
-The [Elo rating](https://en.wikipedia.org/wiki/Elo_rating_system) was a statistical tool. Online it becomes an ego mirror: "I am a 1600." (The psychology behind that mechanism is developed in [The psychology of the chess player](/en/blog/psychologie-du-joueur-d-echecs/).)
+The [Elo rating](https://en.wikipedia.org/wiki/Elo_rating_system) was a statistical tool. Online it becomes an ego mirror: "I am a 1600." (The psychology behind that mechanism is developed in [The psychology of the chess player](/en/blog/chess-player-psychology/).)
 
 In addiction, the switch is precise: you no longer play to learn, you play to protect the label. Addiction to the graph has replaced the game.
 
@@ -78,7 +79,7 @@ Stress rises, cortisol climbs; [Dr Elke van der Meer](https://www.researchgate.n
 
 **Cruel paradox:** the more you try to fix it, the deeper you sink.
 
-For more on tilt, ego, impostor, and flow, the article [Psychology of the chess player](/en/blog/psychologie-du-joueur-d-echecs/) has a full section.
+For more on tilt, ego, impostor, and flow, the article [Psychology of the chess player](/en/blog/chess-player-psychology/) has a full section.
 
 ## Are you really in the red zone? (A kind self-check)
 

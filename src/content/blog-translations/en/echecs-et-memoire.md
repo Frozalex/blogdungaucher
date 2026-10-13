@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art illustration: a head profile filled with chess pieces and stars on a midnight-blue background; text \"Discover the power of chess on your memory\" on the left."
 title: "Chess and Memory: How the Game Stimulates Your Cognitive Skills"
 excerpt: >-
   Working memory, chunks, openings, games forgotten or etched in mind: what cognitive psychology and neuroscience really
@@ -104,7 +105,7 @@ Chess players do not "break" that limit. What they do is compress each item into
 
 That principle, which [Anders Ericsson](https://en.wikipedia.org/wiki/K._Anders_Ericsson), theorist of deliberate practice, documented across domains, holds here too. An experienced musician does not retain a score note by note; they retain phrase by phrase, section by section. A grandmaster does not calculate square by square; they think in structures.
 
-[Neuroimaging](https://en.wikipedia.org/wiki/Neuroimaging) studies confirm the shift: experienced players activate long-term memory areas (hippocampus, dorsolateral prefrontal cortex) more and "pure" working-memory zones less when recognising positions. Their brain does not store more; it sorts better. That evolution of brain geography under practice is described in detail in the article on [chess and the brain](/en/blog/les-echecs-et-le-cerveau/).
+[Neuroimaging](https://en.wikipedia.org/wiki/Neuroimaging) studies confirm the shift: experienced players activate long-term memory areas (hippocampus, dorsolateral prefrontal cortex) more and "pure" working-memory zones less when recognising positions. Their brain does not store more; it sorts better. That evolution of brain geography under practice is described in detail in the article on [chess and the brain](/en/blog/chess-and-the-brain/).
 
 ## The Magnus Carlsen case: the library that plays for him
 
@@ -130,7 +131,7 @@ If chess memory rests on accumulated patterns rather than innate capacity, the t
 
 [Ericsson](https://en.wikipedia.org/wiki/K._Anders_Ericsson) often cited chess studies to illustrate this: gains in domain-specific memory come from reflective practice, not raw volume. The distinction between "playing" and "training" is exactly there.
 
-The same mechanism explains why some cognitive profiles, those who naturally recognise visual patterns, find chess especially suited to their information-processing style. That is explored in depth in the article on [chess and autism](/en/blog/echecs-et-autisme/).
+The same mechanism explains why some cognitive profiles, those who naturally recognise visual patterns, find chess especially suited to their information-processing style. That is explored in depth in the article on [chess and autism](/en/blog/chess-and-autism/).
 
 ---
 

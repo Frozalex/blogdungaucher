@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma trilha de pegadas retilínea em que uma única marca se desvia nitidamente para o lado."
 title: "Analisar suas partidas de xadrez: o guia prático para progredir de verdade"
 excerpt: >-
   Jogar muitas partidas sem analisá-las é treinar para repetir seus erros. A análise pós-partida é a tarefa mais

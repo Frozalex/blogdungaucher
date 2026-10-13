@@ -87,23 +87,23 @@ The effect Kruger and Dunning described isn't that weak performers think they're
 
 That's the mandatory starting point, because it determines everything downstream: you can't see what you don't know how to see. And the 2025 study of 3,388 tournament players shows that even accurate, precise, public and permanent feedback isn't enough to correct it. On average they placed themselves 89 Elo points above their actual rating, after nearly twenty years of practice.
 
-That's the subject of our article on [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/).
+That's the subject of our article on [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/).
 
 ### During: the directed search
 
 The second mechanism doesn't wait for the result. It works while you're calculating.
 
-[Confirmation bias](/en/blog/biais-de-confirmation-aux-echecs/) doesn't make you calculate less: it makes you calculate **in one direction only**. Eight minutes on the side that proves you right, a few seconds on the side that would prove you wrong. The tree isn't too short, it's lopsided.
+[Confirmation bias](/en/blog/confirmation-bias-in-chess/) doesn't make you calculate less: it makes you calculate **in one direction only**. Eight minutes on the side that proves you right, a few seconds on the side that would prove you wrong. The tree isn't too short, it's lopsided.
 
 Wason demonstrated this with three numbers: participants tested their hypothesis using examples incapable of disproving it, then declared themselves certain at the end of an empty demonstration.
 
-And while the search runs in one direction, [projection](/en/blog/projection-aux-echecs/) fills in the blanks. Modelling your opponent's mind is expensive; absent explicit effort, the system fills it with your own content. You assume he saw what you saw, and didn't see what you didn't see.
+And while the search runs in one direction, [projection](/en/blog/projection-in-chess/) fills in the blanks. Modelling your opponent's mind is expensive; absent explicit effort, the system fills it with your own content. You assume he saw what you saw, and didn't see what you didn't see.
 
 ### At the moment of the result: the discomfort
 
 The game is lost. Two incompatible cognitions turn up: I'm a decent player, I've just lost a winning position.
 
-That's [cognitive dissonance](/en/blog/dissonance-cognitive-aux-echecs/), and Festinger showed it carries a motivational force of its own. It doesn't ask to be understood: it asks to stop.
+That's [cognitive dissonance](/en/blog/cognitive-dissonance-in-chess/), and Festinger showed it carries a motivational force of its own. It doesn't ask to be understood: it asks to stop.
 
 Three exits are available. Changing the first cognition is expensive, it touches who you are. Changing the second is impossible, the result is on record. Which leaves the third route, the one that consists of adding a cognition that reconciles the other two.
 
@@ -111,7 +111,7 @@ Three exits are available. Changing the first cognition is expensive, it touches
 
 That third cognition arrives fast, and it's produced by a remarkably efficient system.
 
-[Rationalisation](/en/blog/rationalisation-aux-echecs/) supplies an explanation that's acceptable, coherent, and often accurate. You were tired. It was blitz. Your preparation was poor.
+[Rationalisation](/en/blog/rationalization-in-chess/) supplies an explanation that's acceptable, coherent, and often accurate. You were tired. It was blitz. Your preparation was poor.
 
 The most unsettling experiment in the field shows that this system works even when it has access to nothing: in a 2005 protocol, the photograph chosen by participants was secretly swapped, and 87% of them explained with conviction why they'd preferred a face they had actually rejected.
 
@@ -123,7 +123,7 @@ And what that explanation costs isn't dishonesty. It's the premature end of the 
 
 ### What's left: the defences
 
-Whatever rationalisation doesn't absorb gets handled by a broader repertoire, catalogued in our article on [defence mechanisms in chess](/en/blog/mecanismes-de-defense-aux-echecs/).
+Whatever rationalisation doesn't absorb gets handled by a broader repertoire, catalogued in our article on [defence mechanisms in chess](/en/blog/defense-mechanisms-in-chess/).
 
 Denial doesn't consist of denying the result, but of not looking at the game. Displacement spends thirty minutes on the noise in the playing hall and zero on move 22. Intellectualisation, the hardest one to spot, analyses competently while never once mentioning what was felt, because the board doesn't hurt.
 
@@ -133,7 +133,7 @@ It's worth restating here that this model is fragile: the DSM-5 dropped the defe
 
 The last mechanism is the slowest and probably the most decisive.
 
-[Reconstructive memory](/en/blog/memoire-reconstructive-aux-echecs/) doesn't replay a recording: it rebuilds. And Bartlett showed that this rebuilding isn't random: it normalises toward the schema of the person doing the remembering.
+[Reconstructive memory](/en/blog/reconstructive-memory-in-chess/) doesn't replay a recording: it rebuilds. And Bartlett showed that this rebuilding isn't random: it normalises toward the schema of the person doing the remembering.
 
 Your schema, here, is the idea you have of your own play. Every time you recall a game, the elements that don't fit fade a little. After a few years you're holding a remarkably coherent body of memories describing a player who doesn't exist.
 
@@ -161,19 +161,19 @@ Every article was written independently, with its own sources and its own ground
 
 **Write it down first.**
 
-Your evaluation of the position before you switch on the engine, against [anchoring](/en/blog/biais-d-ancrage-aux-echecs/) and against [obedience to authority](/en/blog/obeissance-a-l-autorite-aux-echecs/).
+Your evaluation of the position before you switch on the engine, against [anchoring](/en/blog/anchoring-bias-in-chess/) and against [obedience to authority](/en/blog/obedience-to-authority-in-chess/).
 
-The moves you actually considered, before the analysis, against [false memories](/en/blog/faux-souvenirs-aux-echecs/).
+The moves you actually considered, before the analysis, against [false memories](/en/blog/false-memories-in-chess/).
 
 Your first explanation for the loss before you examine the facts, against rationalisation.
 
-Your abandonment criterion before you invest in a repertoire, against effort justification and the [paradox of choice](/en/blog/paradoxe-du-choix-aux-echecs/).
+Your abandonment criterion before you invest in a repertoire, against effort justification and the [paradox of choice](/en/blog/paradox-of-choice-in-chess/).
 
-Your stopping rule before you start playing, against the variable-ratio reinforcement of [operant conditioning](/en/blog/conditionnement-operant-aux-echecs/).
+Your stopping rule before you start playing, against the variable-ratio reinforcement of [operant conditioning](/en/blog/operant-conditioning-in-chess/).
 
-What you believe your weakness to be, before you look at your statistics, against the [self-fulfilling prophecy](/en/blog/prophetie-auto-realisatrice-aux-echecs/) and against the [Barnum effect](/en/blog/effet-barnum-aux-echecs/).
+What you believe your weakness to be, before you look at your statistics, against the [self-fulfilling prophecy](/en/blog/self-fulfilling-prophecy-in-chess/) and against the [Barnum effect](/en/blog/barnum-effect-in-chess/).
 
-The rating you expect before you pay for a course, against the seven levers of [persuasion](/en/blog/psychologie-de-la-persuasion-aux-echecs/).
+The rating you expect before you pay for a course, against the seven levers of [persuasion](/en/blog/psychology-of-persuasion-in-chess/).
 
 Seven different mechanisms, seven different literatures, one countermeasure.
 
@@ -199,11 +199,11 @@ This series has made a habit of laying out the case against whatever it's arguin
 
 The title of this article implies you should always prefer learning. That's false, and there are at least three situations where defending your model is the correct call.
 
-**When the signal is noise.** A loss isn't information about your level, it's a sample of size one. Revising your self-image after every defeat isn't clear-sightedness, it's overfitting. Normal rating fluctuation comfortably exceeds the effect of a month of serious work, as our article on [social comparison in chess](/en/blog/comparaison-sociale-aux-echecs/) points out. A player who questions everything every week builds nothing.
+**When the signal is noise.** A loss isn't information about your level, it's a sample of size one. Revising your self-image after every defeat isn't clear-sightedness, it's overfitting. Normal rating fluctuation comfortably exceeds the effect of a month of serious work, as our article on [social comparison in chess](/en/blog/social-comparison-in-chess/) points out. A player who questions everything every week builds nothing.
 
 So the criterion isn't "always revise," it's **revise on aggregates**. Thirty games say something. One says nothing.
 
-**When the revision comes at the wrong moment.** During a tournament, between rounds, "am I really the player I think I am" is the worst possible question. It consumes exactly the resource the next round needs. Deliberate suppression, meaning conscious and dated postponement, ranks among the most adaptive defences in our article on [defence mechanisms in chess](/en/blog/mecanismes-de-defense-aux-echecs/). Deferring isn't fleeing, provided you come back.
+**When the revision comes at the wrong moment.** During a tournament, between rounds, "am I really the player I think I am" is the worst possible question. It consumes exactly the resource the next round needs. Deliberate suppression, meaning conscious and dated postponement, ranks among the most adaptive defences in our article on [defence mechanisms in chess](/en/blog/defense-mechanisms-in-chess/). Deferring isn't fleeing, provided you come back.
 
 **When the cost exceeds the benefit.** Not every revision is worth it. Discovering a gap in a type of endgame you meet once a year is accurate information with no practical value. Clear-sightedness isn't an end in itself: it has a price, and that price should be paid where it pays back.
 
@@ -259,7 +259,7 @@ A dated text is the only thing in this whole business your brain can't edit.
 
 ---
 
-*This article is the hub of a 41-text series on the psychology of chess. It closes the six core articles: [Dunning-Kruger](/en/blog/effet-dunning-kruger-aux-echecs/), [cognitive dissonance](/en/blog/dissonance-cognitive-aux-echecs/), [confirmation bias](/en/blog/biais-de-confirmation-aux-echecs/), [defence mechanisms](/en/blog/mecanismes-de-defense-aux-echecs/), [rationalisation](/en/blog/rationalisation-aux-echecs/) and [projection](/en/blog/projection-aux-echecs/). See [the full series index](/en/series/psychologie/).*
+*This article is the hub of a 41-text series on the psychology of chess. It closes the six core articles: [Dunning-Kruger](/en/blog/dunning-kruger-effect-in-chess/), [cognitive dissonance](/en/blog/cognitive-dissonance-in-chess/), [confirmation bias](/en/blog/confirmation-bias-in-chess/), [defence mechanisms](/en/blog/defense-mechanisms-in-chess/), [rationalisation](/en/blog/rationalization-in-chess/) and [projection](/en/blog/projection-in-chess/). See [the full series index](/en/series/psychologie/).*
 
 ## Sources
 

@@ -81,7 +81,7 @@ In other words: when this article tells you the engine's number shifts your judg
 
 ## What Separates Anchoring From Plain Deference
 
-A necessary clarification, because the subject resembles the one in our article on [obedience to authority in chess](/en/blog/obeissance-a-l-autorite-aux-echecs/), and it differs from it on one decisive point.
+A necessary clarification, because the subject resembles the one in our article on [obedience to authority in chess](/en/blog/obedience-to-authority-in-chess/), and it differs from it on one decisive point.
 
 Deference means accepting a verdict **because the source is competent**. That's a piece of reasoning, and it's often correct: the engine is right, going along with it is rational.
 
@@ -105,11 +105,11 @@ Today the number appears by default, often before you've even looked at the posi
 
 The result is that the engine era has **industrialized anchoring**. Not because players have become lazy, but because the order in which information appears has been reversed. The number arrives before the judgment, when it should arrive after.
 
-And the effect doesn't stop at the overall evaluation. Once anchored on +1.4, you're no longer looking for the same things: you're looking for why it's winning, you've stopped looking for whether it's winning. The anchor steers the search, which ties it directly to [confirmation bias](/en/blog/biais-de-confirmation-aux-echecs/).
+And the effect doesn't stop at the overall evaluation. Once anchored on +1.4, you're no longer looking for the same things: you're looking for why it's winning, you've stopped looking for whether it's winning. The anchor steers the search, which ties it directly to [confirmation bias](/en/blog/confirmation-bias-in-chess/).
 
 ### 2. Your Opponent's Rating
 
-Careful with the distinction from [the halo effect](/en/blog/effet-de-halo-aux-echecs/), which concerns the **perceived quality** of his moves. Here we're talking about a numerical estimate: what are my chances in this game.
+Careful with the distinction from [the halo effect](/en/blog/halo-effect-in-chess/), which concerns the **perceived quality** of his moves. Here we're talking about a numerical estimate: what are my chances in this game.
 
 A player sees "1890" and puts his chances at 20%. The Elo formula gives a precise value, and for a 200-point gap it indicates roughly 24% for the lower-rated player. Most club players underestimate that figure, sometimes by a lot, because they adjust from an anchor supplied by the displayed gap rather than actually computing.
 
@@ -119,7 +119,7 @@ The most discreet of the four, because it doesn't look like a number.
 
 An opening line annotated "equal" in a book hands you an anchor that will survive fifteen moves of real play. You keep evaluating the position as balanced when precise choices have created an imbalance.
 
-What makes this anchor particularly stubborn is that it's perceived as a **fact** rather than an evaluation. But it is an evaluation, produced on a given date, often by an author working with tools from another generation. Our article on [survivorship bias in chess](/en/blog/biais-du-survivant-aux-echecs/) shows the filter through which that body of theory was assembled.
+What makes this anchor particularly stubborn is that it's perceived as a **fact** rather than an evaluation. But it is an evaluation, produced on a given date, often by an author working with tools from another generation. Our article on [survivorship bias in chess](/en/blog/survivorship-bias-in-chess/) shows the filter through which that body of theory was assembled.
 
 ### 4. The Clock
 
@@ -139,7 +139,7 @@ Two requirements, and the second is the one people skip.
 
 **A number, not an impression.** Write "+0.5" or "slightly better for White, about +0.5." A vague evaluation can't be compared, so it measures nothing.
 
-**In writing.** This is essential, and not out of pedantry. Once you know the engine's number, your memory of what you thought will be adjusted in its direction. That's the mechanism described in our article on [false memories in chess](/en/blog/faux-souvenirs-aux-echecs/). Without a note made beforehand, you'll sincerely believe you thought something close to it.
+**In writing.** This is essential, and not out of pedantry. Once you know the engine's number, your memory of what you thought will be adjusted in its direction. That's the mechanism described in our article on [false memories in chess](/en/blog/false-memories-in-chess/). Without a note made beforehand, you'll sincerely believe you thought something close to it.
 
 ### 2. Analyze With the Engine Off First
 
@@ -171,7 +171,7 @@ That gap is your progress. The engine's evaluation teaches you nothing about you
 
 ---
 
-*This article is part of a series on psychology applied to chess. It develops a bias introduced in our overview of the [5 cognitive biases that make you blunder](/en/blog/5-biais-cognitifs-blunder/). See also [obedience to authority in chess](/en/blog/obeissance-a-l-autorite-aux-echecs/) and [the halo effect in chess](/en/blog/effet-de-halo-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. It develops a bias introduced in our overview of the [5 cognitive biases that make you blunder](/en/blog/5-cognitive-biases-blunder/). See also [obedience to authority in chess](/en/blog/obedience-to-authority-in-chess/) and [the halo effect in chess](/en/blog/halo-effect-in-chess/).*
 
 ## Sources
 

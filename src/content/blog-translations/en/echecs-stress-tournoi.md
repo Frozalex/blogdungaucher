@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art illustration: a competitive chess player, close-up on the clock, a visible wave of stress around him, \"Tournament chess stress\""
 title: "Managing Tournament Stress in Chess: What Psychology and Physiology Say"
 excerpt: "The clock is ticking, your position is difficult, and you feel your heart racing. Tournament stress is not a weakness: it is a normal biological response that can be channeled or sabotaged. What science knows about performing under pressure."
 seoTitle: "Chess Tournament Stress: Psychology and Physiology of Performance Under Pressure"

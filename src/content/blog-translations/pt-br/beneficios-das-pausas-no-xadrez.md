@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Um campo arado em que somente a faixa deixada intacta apresenta rebrota vegetal."
 title: "Os benefícios das pausas no xadrez: por que parar de jogar te torna melhor"
 excerpt: >-
   Jogar menos para progredir mais: parece absurdo, mas a ciência da recuperação cognitiva explica por que as

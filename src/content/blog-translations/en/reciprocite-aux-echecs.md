@@ -54,7 +54,7 @@ Twenty-five minutes later, you've understood three things you'd never have found
 
 And yet you owe him something, and you both know it without either of you saying so.
 
-This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/), which lays out the seven levers. It covers the oldest one, the most experimentally solid, and the only one whose use is as often beneficial as manipulative.
+This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/), which lays out the seven levers. It covers the oldest one, the most experimentally solid, and the only one whose use is as often beneficial as manipulative.
 
 ## Regan's Can of Coke
 
@@ -110,9 +110,9 @@ More often than not, the stronger player gives more: he sees more, he explains, 
 
 This creates a **vague obligation**, never stated out loud, that produces real effects in clubs.
 
-**Some players never ask for analysis.** Not out of shyness, but because they sense the debt and can't see how to repay it. That's a considerable loss, since analysis by a stronger player is by far the richest feedback available, as our article on [analyzing your games](/en/blog/analyser-ses-parties/) points out.
+**Some players never ask for analysis.** Not out of shyness, but because they sense the debt and can't see how to repay it. That's a considerable loss, since analysis by a stronger player is by far the richest feedback available, as our article on [analyzing your games](/en/blog/how-to-analyze-chess-games/) points out.
 
-**Others repay in social currency.** Admiration, deference, automatic acceptance of every opinion. Which creates a problem: the debt then gets repaid by **giving up the right to disagree**, which drains part of the value out of the analysis and sets the stage for the mechanisms described in our article on [obedience to authority in chess](/en/blog/obeissance-a-l-autorite-aux-echecs/).
+**Others repay in social currency.** Admiration, deference, automatic acceptance of every opinion. Which creates a problem: the debt then gets repaid by **giving up the right to disagree**, which drains part of the value out of the analysis and sets the stage for the mechanisms described in our article on [obedience to authority in chess](/en/blog/obedience-to-authority-in-chess/).
 
 **And the fix is structural.** A club that makes analysis a normal, systematic, expected practice removes the debt, because a collective custom commits nobody individually. It's probably the most useful arrangement a club can put in place, and it costs nothing.
 
@@ -122,7 +122,7 @@ They exist, and they're real.
 
 Letting an opponent take back a move played by mistake when the rules don't require it. Accepting a draw out of courtesy after being granted one in the same circumstances. Overlooking a clock that wasn't pressed properly.
 
-These gestures create an expectation of return. Which is perfectly healthy between players acting in good faith, and manipulable when they aren't, as our article on [emotional manipulation in chess](/en/blog/manipulation-emotionnelle-aux-echecs/) describes.
+These gestures create an expectation of return. Which is perfectly healthy between players acting in good faith, and manipulable when they aren't, as our article on [emotional manipulation in chess](/en/blog/emotional-manipulation-in-chess/) describes.
 
 The clearest case is still the draw offer: accepting a draw you shouldn't accept because your opponent was accommodating about something else is debt repayment dressed up as a chess decision.
 
@@ -138,7 +138,7 @@ In chess, you find it in organization: entry conditions, schedules, time control
 
 This lever has a peculiarity: it's the only one on Cialdini's list whose **sincere use is flatly good**. So it isn't just a matter of protecting yourself from it.
 
-**Give first, without waiting.** In a club, offering an analysis to a weaker player is a real gift, and it has a real effect. It's what builds a community, and it also answers the need for relatedness described in our article on [self-determination theory in chess](/en/blog/theorie-auto-determination-aux-echecs/).
+**Give first, without waiting.** In a club, offering an analysis to a weaker player is a real gift, and it has a real effect. It's what builds a community, and it also answers the need for relatedness described in our article on [self-determination theory in chess](/en/blog/self-determination-theory-in-chess/).
 
 **Make the debt explicitly cancellable.** If you're the giver, say so: "you'll show me one of your games sometime." That turns a fuzzy obligation into a named exchange, which is far more comfortable for the person receiving.
 
@@ -160,7 +160,7 @@ The remedy isn't individual, it's collective. An established practice commits no
 
 ---
 
-*This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/). Two others cover social proof and scarcity.*
+*This article extends our piece on [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/). Two others cover social proof and scarcity.*
 
 ## Sources
 

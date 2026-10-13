@@ -106,7 +106,7 @@ That's the core of the criticism raised by John Antonakis, Edwin Locke, and Fran
 
 The meta-analyses largely back them up. For ability emotional intelligence, incremental validity on job performance, beyond the big five personality traits and general intelligence, is weak to nonexistent. Mixed measures predict better, but they already include personality traits, which makes the result hard to read as anything other than redundancy.
 
-And a third problem piles on for self-report questionnaires, one familiar to readers of this series: **they ask people to rate a skill whose absence is precisely what prevents them from rating it**. That's the exact structure of the effect described in our article on [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/).
+And a third problem piles on for self-report questionnaires, one familiar to readers of this series: **they ask people to rate a skill whose absence is precisely what prevents them from rating it**. That's the exact structure of the effect described in our article on [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/).
 
 ## What's Left, and Why It Concerns Chess
 
@@ -118,7 +118,7 @@ Taken on its own, that isn't a theory of success. It's a factual, narrow, checka
 
 Tilt isn't dangerous because it makes you sad. It's dangerous because it **degrades the quality of your decisions while degrading your ability to notice that they're degraded**. Both deteriorations arrive together. That's what makes "stop playing when you're on tilt" simultaneously obviously correct and practically unusable: at the moment you'd need to apply it, the measuring instrument is broken.
 
-Our article on [chess and anger](/en/blog/echecs-et-colere-ragequit/) describes the neurological circuit involved. Here the question is different: how do you know you're in it.
+Our article on [chess and anger](/en/blog/chess-and-anger-ragequit/) describes the neurological circuit involved. Here the question is different: how do you know you're in it.
 
 ## The Advantage Chess Has
 
@@ -184,7 +184,7 @@ The good news is that you don't have to solve that problem through introspection
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/), [chess and anger](/en/blog/echecs-et-colere-ragequit/), and [habit formation in chess](/en/blog/formation-des-habitudes-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/), [chess and anger](/en/blog/chess-and-anger-ragequit/), and [habit formation in chess](/en/blog/habit-formation-in-chess/).*
 
 ## Sources
 

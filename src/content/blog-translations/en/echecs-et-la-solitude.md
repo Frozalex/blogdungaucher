@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Two chairs facing each other across a table, split by a clean vertical partition."
 title: "Solitude in Chess: The Sport Where You Are Regulated to Be Alone"
 excerpt: "Chess may be the only competitive sport where solitude is not a state of mind but a rule. No coach, no teammate, not even a glance at the audience. What this structural solitude does to players, and it's not all good."
 seoTitle: "Solitude in Chess: When the Rules Isolate You"

@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art illustration: five women seated at a long table under a spotlight, dark background; title \"Chess and women: why so few female players today?\" overlaid."
 title: "Chess and Women: Why So Few, and Is That Changing?"
 excerpt: >-
   40 women among 1,700 Grandmasters. The gap isn't biological: it's mathematical, historical and psychological. What the

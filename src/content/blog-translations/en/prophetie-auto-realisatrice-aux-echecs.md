@@ -113,7 +113,7 @@ Apply Raudenbush's moderator to your case.
 
 What independent information do you have about your actual endgame level?
 
-Almost none. You have memories, and our article on [false memories in chess](/en/blog/faux-souvenirs-aux-echecs/) covered what those are worth. You have a few memorable losses, selected for being memorable rather than representative, which is [survivorship bias](/en/blog/biais-du-survivant-aux-echecs/) applied to your own memory.
+Almost none. You have memories, and our article on [false memories in chess](/en/blog/false-memories-in-chess/) covered what those are worth. You have a few memorable losses, selected for being memorable rather than representative, which is [survivorship bias](/en/blog/survivorship-bias-in-chess/) applied to your own memory.
 
 What you don't have is the number.
 
@@ -143,7 +143,7 @@ The most insidious one, because it changes no behavior, only how facts get read.
 
 You lose an endgame: that confirms it. You win an endgame: your opponent played badly, or you got lucky. No data can contradict the belief, since the sorting happens on the way in.
 
-This is [confirmation bias](/en/blog/biais-de-confirmation-aux-echecs/) turned on yourself, and it's what makes lived experience so uninformative.
+This is [confirmation bias](/en/blog/confirmation-bias-in-chess/) turned on yourself, and it's what makes lived experience so uninformative.
 
 ## The Reverse Version Exists Too
 
@@ -153,7 +153,7 @@ The other direction deserves a mention, less discussed and entirely real.
 
 The cost sits elsewhere: in everything the identity excluded. An attacking player who never works on technique hits a ceiling, and that ceiling is produced by the same belief that drove the improvement.
 
-That's also why style profiles, covered in our article on [the Barnum effect in chess](/en/blog/effet-barnum-aux-echecs/), aren't harmless: a description turns into a program.
+That's also why style profiles, covered in our article on [the Barnum effect in chess](/en/blog/barnum-effect-in-chess/), aren't harmless: a description turns into a program.
 
 ## The Protocol
 
@@ -183,7 +183,7 @@ A belief phrased as an identity can't be attacked. Phrased as a measurement, it 
 
 ### 5. Force yourself into the avoided territory
 
-Thirty games where you don't run from the structure you dread. The goal isn't to win, it's to **produce data** in a zone where you've never produced any. It's the same principle as the learning of control described in our article on [learned helplessness in chess](/en/blog/impuissance-apprise-aux-echecs/).
+Thirty games where you don't run from the structure you dread. The goal isn't to win, it's to **produce data** in a zone where you've never produced any. It's the same principle as the learning of control described in our article on [learned helplessness in chess](/en/blog/learned-helplessness-in-chess/).
 
 ## What to Take Away
 
@@ -199,7 +199,7 @@ That's precisely the state of your beliefs about your own game. They hold not be
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [learned helplessness in chess](/en/blog/impuissance-apprise-aux-echecs/), [the Barnum effect in chess](/en/blog/effet-barnum-aux-echecs/), and [the placebo effect in chess](/en/blog/effet-placebo-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [learned helplessness in chess](/en/blog/learned-helplessness-in-chess/), [the Barnum effect in chess](/en/blog/barnum-effect-in-chess/), and [the placebo effect in chess](/en/blog/placebo-effect-in-chess/).*
 
 ## Sources
 

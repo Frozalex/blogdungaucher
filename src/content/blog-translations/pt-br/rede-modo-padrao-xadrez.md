@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Um cômodo completamente vazio onde todas as lâmpadas queimam em plena intensidade."
 title: "A rede de modo padrão no xadrez: o que seu cérebro faz quando você não calcula"
 excerpt: >-
   O relógio avança. Você não está calculando nenhuma variante precisa. Sua mente deriva para a última partida, o

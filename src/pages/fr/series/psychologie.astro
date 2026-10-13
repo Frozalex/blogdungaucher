@@ -9,24 +9,26 @@ import { absoluteUrl, buildBreadcrumbJsonLd, formatDate, getAllPosts } from "../
 const published = await getAllPosts();
 const bySlug = new Map(published.map((post) => [post.id.split("/").pop() ?? post.id, post]));
 
-const grappes = seriePsychologieGrappes.map((grappe) => ({
-  ...grappe,
-  items : grappe.items.map((item) => {
-    const post = bySlug.get(item.slug);
-    return {
-      ...item,
-      post,
-      href : post ? `/fr/blog/${item.slug}/` : null,
-      date : post ? formatDate(post.data.publishDate) : null,
-      excerpt : post?.data.excerpt ?? null,
-    };
-  }),
-}));
+// Seuls les articles publiés sont affichés : pas de ligne « à venir » sans lien.
+const grappes = seriePsychologieGrappes
+  .map((grappe) => ({
+    ...grappe,
+    items : grappe.items
+      .filter((item) => bySlug.has(item.slug))
+      .map((item) => {
+        const post = bySlug.get(item.slug)!;
+        return {
+          ...item,
+          post,
+          href : `/fr/blog/${item.slug}/`,
+          date : formatDate(post.data.publishDate),
+          excerpt : post.data.excerpt ?? null,
+        };
+      }),
+  }))
+  .filter((grappe) => grappe.items.length > 0);
 
-const publishedCount = grappes.reduce(
-  (total, grappe) => total + grappe.items.filter((item) => item.post).length,
-  0,
-);
+const publishedCount = grappes.reduce((total, grappe) => total + grappe.items.length, 0);
 
 const canonPath = "/fr/series/psychologie/";
 const title = "Série : la psychologie appliquée aux échecs";
@@ -96,23 +98,14 @@ const structuredData = [
         <p class="grappe__chapeau">{grappe.chapeau}</p>
         <ol class="grappe__list">
           {grappe.items.map((item) => (
-            <li class:list={["item", { "item--pilier" : item.pilier, "item--soon" : !item.href }]}>
-              {item.href ? (
-                <a href={item.href}>
-                  <span class="item__title">{item.post?.data.title ?? item.label}</span>
-                  {item.excerpt && <span class="item__excerpt">{item.excerpt}</span>}
-                  <span class="item__meta">
-                    <span class="item__date">{item.date}</span>
-                  </span>
-                </a>
-              ) : (
-                <div>
-                  <span class="item__title">{item.label}</span>
-                  <span class="item__meta">
-                    <span class="item__date">à venir</span>
-                  </span>
-                </div>
-              )}
+            <li class:list={["item", { "item--pilier" : item.pilier }]}>
+              <a href={item.href}>
+                <span class="item__title">{item.post.data.title}</span>
+                {item.excerpt && <span class="item__excerpt">{item.excerpt}</span>}
+                <span class="item__meta">
+                  <span class="item__date">{item.date}</span>
+                </span>
+              </a>
             </li>
           ))}
         </ol>
@@ -213,12 +206,6 @@ const structuredData = [
   .item--pilier > a,
   .item--pilier > div {
     border-left: 3px solid var(--green);
-  }
-
-  .item--soon > div {
-    background: transparent;
-    border-style: dashed;
-    opacity: 0.6;
   }
 
   .item__title {

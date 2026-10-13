@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art illustration: a smiling child facing a colorful chessboard with large stylized pieces, \"Teaching chess to children\""
 title: "Teaching Chess to Children: Ideal Age, Methods, and Real Benefits"
 excerpt: "At what age is a child ready for chess? Which methods work according to research? And what are the real benefits, not slogans, data? A complete guide for parents and educators who want to introduce chess intelligently."
 seoTitle: "Teaching Chess to Children: Ideal Age, Methods, and Benefits"

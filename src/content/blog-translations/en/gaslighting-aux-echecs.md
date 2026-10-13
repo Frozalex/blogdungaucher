@@ -113,7 +113,7 @@ The sanction: a two-year worldwide ban from competition and official functions, 
 
 What makes this mechanism so destructive is its asymmetry. The accused can't prove innocence: you can't demonstrate the absence of cheating, you can only note the absence of evidence of cheating. Meanwhile every good game he plays becomes suspect, including in his own eyes. He ends up playing against his own past.
 
-This is a different situation from [the Niemann affair](/en/blog/echecs-et-la-triche/), where the question of proof arose differently. Here, the adjudicating body characterized the behaviour itself.
+This is a different situation from [the Niemann affair](/en/blog/cheating-in-chess/), where the question of proof arose differently. Here, the adjudicating body characterized the behaviour itself.
 
 ### 2. The Coaching That Moves the Target
 
@@ -168,7 +168,7 @@ Three concrete uses:
 
 **Test claims against the archive, not against your memory.** If you're told you were lost on move 20, don't search your recollection. Open the position. The answer exists.
 
-**Get analysis from an independent third party.** Not an engine alone, which tells you *that* the move is bad without telling you what was humanly visible. A stronger player, outside the relationship. The method is detailed in our guide on [how to analyze your games](/en/blog/analyser-ses-parties/).
+**Get analysis from an independent third party.** Not an engine alone, which tells you *that* the move is bad without telling you what was humanly visible. A stronger player, outside the relationship. The method is detailed in our guide on [how to analyze your games](/en/blog/how-to-analyze-chess-games/).
 
 And for formal accusations: institutional channels exist for exactly this. Their function isn't bureaucratic, it's protective. They take the matter off the terrain where rumour beats evidence, and where, as FIDE noted, the harm occurs regardless of whether the facts are true.
 
@@ -184,7 +184,7 @@ Your protection is concrete and you already have it: the written record. Chess i
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/). An upcoming article will cover emotional manipulation, which operates during the game rather than after it.*
+*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/). An upcoming article will cover emotional manipulation, which operates during the game rather than after it.*
 
 ## Sources
 

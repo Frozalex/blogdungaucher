@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma silhueta de perfil avançando curvada contra um vento de frente, numa planície vazia."
 title: "Resiliência no xadrez: aprender a se recuperar após a derrota"
 excerpt: >-
   Todo grande mestre tem uma relação particular com a derrota. Não indiferença : os campeões sofrem tanto quanto nós após

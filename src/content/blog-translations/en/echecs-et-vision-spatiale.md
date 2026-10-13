@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A floating model reduced to a few load-bearing beams, the rest of the building missing."
 title: "Chess and Spatial Vision: The Brain That Sees in 3D"
 excerpt: "Visualizing 8 moves ahead without touching the pieces. Mentally calculating variations on a board that exists only in your head. Chess engages spatial visualization capacities that neuroscience is beginning to measure with precision."
 seoTitle: "Chess and Spatial Vision: How the Board Trains the Visuospatial Brain"

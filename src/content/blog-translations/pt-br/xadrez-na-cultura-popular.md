@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Um projetor de cinema transformando um objeto detalhado em uma silhueta plana numa tela."
 title: "O xadrez na cultura popular: de Bergman a O Gambito da Rainha"
 excerpt: >-
   O tabuleiro invadiu o cinema, a literatura, a música e as séries. Não como cenário : como metáfora viva. Um retorno

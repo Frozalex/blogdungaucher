@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Ilustração em pixel art: cinco mulheres sentadas a uma longa mesa sob um refletor, fundo escuro; título « Xadrez e mulheres: por que há tão poucas jogadoras hoje? » sobreposto."
 title: "Xadrez e mulheres: por que tão poucas jogadoras hoje?"
 excerpt: >-
   40 mulheres entre 1700 Grandes Mestres. A diferença não é biológica: é matemática, histórica e psicológica.

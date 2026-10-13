@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma bola de fio emaranhada de onde sai um único fio perfeitamente estirado e reto."
 title: "Xadrez como terapia: o tabuleiro pode tratar a ansiedade e o trauma?"
 excerpt: >-
   Desde 1795, médicos prescrevem xadrez a seus pacientes. Redução da ansiedade, interrupção da ruminação, reabilitação

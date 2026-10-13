@@ -57,7 +57,7 @@ This isn't a problem of level: you had seen the idea. It's a problem of attribut
 
 We have to start with a clarification, because the word carries baggage.
 
-In the classical vocabulary inherited from Freud and taken up by his daughter in the inventory we presented in our article on [defense mechanisms in chess](/en/blog/mecanismes-de-defense-aux-echecs/), projection is a **defensive** mechanism. You attribute to another person a mental content you can't acknowledge in yourself: the aggressive man sees aggression everywhere, the cheat suspects cheating.
+In the classical vocabulary inherited from Freud and taken up by his daughter in the inventory we presented in our article on [defense mechanisms in chess](/en/blog/defense-mechanisms-in-chess/), projection is a **defensive** mechanism. You attribute to another person a mental content you can't acknowledge in yourself: the aggressive man sees aggression everywhere, the cheat suspects cheating.
 
 That version is poorly supported. Like the defense model as a whole, it suffers from an insurmountable measurement problem: the mechanism is supposed to be unconscious, therefore unreachable by questionnaire, and observing it from outside depends heavily on the observer's interpretation. The removal of the corresponding scale from the DSM-5 fits that assessment.
 
@@ -73,7 +73,7 @@ Those who agreed estimated that a majority would agree. Those who refused estima
 
 Each group overestimates how common its own choice is. And the result reproduces across a wide range of opinions, preferences and behaviours.
 
-The mechanism isn't defensive at all. There's nothing shameful about accepting or refusing a sandwich board. It's a problem of **inference under limited information**: to estimate what others think, you have access to exactly one mind from the inside, your own. So it serves as the starting point, and the adjustment from it is insufficient, exactly as in [anchoring bias](/en/blog/biais-d-ancrage-aux-echecs/).
+The mechanism isn't defensive at all. There's nothing shameful about accepting or refusing a sandwich board. It's a problem of **inference under limited information**: to estimate what others think, you have access to exactly one mind from the inside, your own. So it serves as the starting point, and the adjustment from it is insufficient, exactly as in [anchoring bias](/en/blog/anchoring-bias-in-chess/).
 
 It's this version, non-defensive and solidly documented, that explains what happens at the board.
 
@@ -81,7 +81,7 @@ It's this version, non-defensive and solidly documented, that explains what happ
 
 The most useful formulation is this one, and it connects this article to the previous one in the series.
 
-[Theory of mind](/en/blog/theorie-de-l-esprit-aux-echecs/) means building a model of another person's mind **distinct from your own**. It's what lets you set a trap: knowing that he doesn't see what you see.
+[Theory of mind](/en/blog/theory-of-mind-in-chess/) means building a model of another person's mind **distinct from your own**. It's what lets you set a trap: knowing that he doesn't see what you see.
 
 Projection is what happens when that model is built **by default**, meaning filled in with your own content.
 
@@ -117,7 +117,7 @@ It also explains a common experience: players often report being surprised by mo
 
 This one deserves flagging because it produces accusations.
 
-Assuming your opponent feels what you would feel in his place, contempt, mockery, irritation, is an act of projection. And it can feed interpretations with no support in the facts, as our article on [the bystander effect in chess](/en/blog/effet-spectateur-aux-echecs/) describes in relation to cheating suspicions.
+Assuming your opponent feels what you would feel in his place, contempt, mockery, irritation, is an act of projection. And it can feed interpretations with no support in the facts, as our article on [the bystander effect in chess](/en/blog/bystander-effect-in-chess/) describes in relation to cheating suspicions.
 
 ## Why Chess Amplifies the Mechanism
 
@@ -157,7 +157,7 @@ One question is enough to catch it: where does what I think I know about what he
 
 ---
 
-*This article is part of a series on psychology applied to chess. It goes deeper into a mechanism catalogued in [defense mechanisms in chess](/en/blog/mecanismes-de-defense-aux-echecs/). See also [theory of mind in chess](/en/blog/theorie-de-l-esprit-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. It goes deeper into a mechanism catalogued in [defense mechanisms in chess](/en/blog/defense-mechanisms-in-chess/). See also [theory of mind in chess](/en/blog/theory-of-mind-in-chess/).*
 
 ## Sources
 

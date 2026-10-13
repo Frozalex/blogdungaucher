@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A narrow glass funnel letting five chess pieces through while the rest pile up above."
 title: "Working Memory and Chess: The Cognitive Bottleneck"
 excerpt: "You can know every opening, every endgame, and still be limited by a fundamental constraint: working memory. This cognitive system, capable of maintaining 4 to 7 elements simultaneously, is the true bottleneck of chess performance."
 seoTitle: "Working Memory and Chess: The Cognitive Bottleneck"

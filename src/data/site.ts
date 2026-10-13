@@ -298,6 +298,7 @@ export const staticRoutes = [
   "/fr/about/",
   "/fr/contact/",
   "/fr/glossaire/",
+  "/fr/infographie/",
   // Séries. `/fr/series/` et `/fr/series/psychologie/` ont désormais leur équivalent EN et
   // pt-BR (cf. enStaticRoutes / ptBrStaticRoutes) : le sitemap les traite donc comme des pages
   // traduites. `moteur-python` reste FR-only tant qu'il n'est pas traduit.

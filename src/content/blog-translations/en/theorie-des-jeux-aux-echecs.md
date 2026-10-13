@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "An hourglass whose sand is made of tiny chess pieces passing from one bulb to the other."
 title: "Game Theory in Chess: Why Every Move is a Strategic Decision"
 excerpt: "Chess is the founding ground of game theory. Minimax, Nash equilibrium, perfect information: a mathematical breakdown of what is really happening when you play."
 seoTitle: "Game Theory in Chess: Nash, Minimax, Zermelo Explained"
@@ -60,7 +61,7 @@ Four properties make chess a rare object in game theory. They sound mundane. The
 
 ## The 110-year-old theorem that says a chess game already has a result
 
-In 1913, the mathematician [Ernst Zermelo](https://en.wikipedia.org/wiki/Ernst_Zermelo) proves a result that should give you vertigo. (The theorem, its scope, its limits and its combinatorial subtlety are detailed in the dedicated article on [Zermelo's paradox](/en/blog/paradoxe-de-zermelo/).)
+In 1913, the mathematician [Ernst Zermelo](https://en.wikipedia.org/wiki/Ernst_Zermelo) proves a result that should give you vertigo. (The theorem, its scope, its limits and its combinatorial subtlety are detailed in the dedicated article on [Zermelo's paradox](/en/blog/zermelo-paradox/).)
 
 In every two-player game with perfect information, no chance, and a finite tree, one of these three statements is *necessarily true*:
 1. The first player has a winning strategy.
@@ -92,7 +93,7 @@ $C(p)$ is the set of legal moves in position $p$.
 
 What this formula spares you from recomputing: at each depth, it assumes the opponent will play *their* best move, sparing you the cost of imagining their likely mistakes (which would cost calculation without gaining safety).
 
-That is exactly what Stockfish, Leela and all modern engines run. The difference between them and you: they do it across millions of nodes per second, whereas your brain processes maybe three or four. The algorithm's details, its refinements (transposition tables, iterative deepening) and its modern neural-network version are covered in the [minimax in chess](/en/blog/minimax-aux-echecs/) article.
+That is exactly what Stockfish, Leela and all modern engines run. The difference between them and you: they do it across millions of nodes per second, whereas your brain processes maybe three or four. The algorithm's details, its refinements (transposition tables, iterative deepening) and its modern neural-network version are covered in the [minimax in chess](/en/blog/minimax-in-chess/) article.
 
 ### Why an engine does not explore $35^{10}$ positions
 
@@ -114,7 +115,7 @@ In chess, that translates into the openings.
 
 When we say a variation is *"theoretically equal,"* it means precisely that: both sides have resources that maintain the balance, and the first to deviate unilaterally risks being punished. That is why the Ruy Lopez (1.e4 e5 2.Nf3 Nc6 3.Bb5) spans centuries: it is a stable equilibrium that nobody has managed to break.
 
-Under perfect play on both sides, *the entire game* would be one gigantic Nash equilibrium. And if the truth of chess is a draw, then that equilibrium is the draw. The complete mapping of these equilibria in current openings is the subject of [Nash graphs and opening equilibria](/en/blog/graphes-de-nash-equilibre-ouvertures/); a single repertoire can contain several equilibria, and the choice between them is already part of the meta-game.
+Under perfect play on both sides, *the entire game* would be one gigantic Nash equilibrium. And if the truth of chess is a draw, then that equilibrium is the draw. The complete mapping of these equilibria in current openings is the subject of [Nash graphs and opening equilibria](/en/blog/nash-equilibrium-openings/); a single repertoire can contain several equilibria, and the choice between them is already part of the meta-game.
 
 ### Dominant strategies and dominated strategies
 
@@ -130,7 +131,7 @@ The missing information is not on the board. It is inside your opponent's skull.
 
 You do not know how deep he has calculated. You do not know if he knows the variation you prepared last night. You do not know whether his apparent calm hides a position he thinks is lost, or a devastating combination he is waiting to drop on move 27.
 
-That subjective asymmetry turns chess, in practice, into an imperfect-information game. That is where the [psychology of the chess player](/en/blog/psychologie-du-joueur-d-echecs/) comes in. That is where pure game theory stops correctly predicting human behavior.
+That subjective asymmetry turns chess, in practice, into an imperfect-information game. That is where the [psychology of the chess player](/en/blog/chess-player-psychology/) comes in. That is where pure game theory stops correctly predicting human behavior.
 
 ## The Bobby Fischer paradox: why the most predictable player of the 20th century won
 
@@ -165,7 +166,7 @@ For comparison:
 - **Nim**: solved analytically (Sprague-Grundy theorem).
 - **Chess**: remains open. For a very long time.
 
-It is not a limit of the discipline. The theory claims the answer exists. It is just that the computational resources needed are physically out of reach. (For the detailed proof of this practical impossibility and the way AI gets around the wall, see [why chess is an almost impossible mathematical problem](/en/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
+It is not a limit of the discipline. The theory claims the answer exists. It is just that the computational resources needed are physically out of reach. (For the detailed proof of this practical impossibility and the way AI gets around the wall, see [why chess is an almost impossible mathematical problem](/en/blog/chess-mathematical-problem-and-ai/).)
 
 ## The lesson that fits in one line
 

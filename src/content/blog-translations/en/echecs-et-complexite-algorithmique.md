@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A tiny hand holding a thimble at the foot of an immense sand dune."
 title: "The Algorithmic Complexity of Chess: Why AI Took 50 Years to Beat Humans"
 excerpt: "The number of possible chess games exceeds the number of atoms in the observable universe. Understanding the algorithmic complexity of chess means understanding why Deep Blue in 1997 was a feat, and why AlphaZero in 2017 was a completely different kind of revolution."
 seoTitle: "Chess Algorithmic Complexity: Why AI Took 50 Years"

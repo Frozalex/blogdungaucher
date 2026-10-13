@@ -115,7 +115,7 @@ If people intervene in 91% of public conflicts, then the chess community's silen
 
 Here's the dominant factor, and it's specific to this field.
 
-Reporting cheating means making an accusation. And the chess community now has explicit case law on this point: in July 2026, the FIDE Ethics Commission sanctioned a former world champion for, among other things, unfounded public accusations and psychological abuse, establishing that naming identifiable players publicly without institutional verification causes them unwarranted harm. Our article on [gaslighting in chess](/en/blog/gaslighting-aux-echecs/) goes through that decision in detail.
+Reporting cheating means making an accusation. And the chess community now has explicit case law on this point: in July 2026, the FIDE Ethics Commission sanctioned a former world champion for, among other things, unfounded public accusations and psychological abuse, establishing that naming identifiable players publicly without institutional verification causes them unwarranted harm. Our article on [gaslighting in chess](/en/blog/gaslighting-in-chess/) goes through that decision in detail.
 
 That position is right. It protects players against a genuinely destructive mechanism.
 
@@ -173,7 +173,7 @@ The only way out is to stop treating a report as an accusation. It isn't one, an
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [gaslighting in chess](/en/blog/gaslighting-aux-echecs/), [cheating in chess](/en/blog/echecs-et-la-triche/) and [survivorship bias in chess](/en/blog/biais-du-survivant-aux-echecs/). Upcoming articles will cover conformity and crowd psychology.*
+*This article is part of a series on psychology applied to chess. See also [gaslighting in chess](/en/blog/gaslighting-in-chess/), [cheating in chess](/en/blog/cheating-in-chess/) and [survivorship bias in chess](/en/blog/survivorship-bias-in-chess/). Upcoming articles will cover conformity and crowd psychology.*
 
 ## Sources
 

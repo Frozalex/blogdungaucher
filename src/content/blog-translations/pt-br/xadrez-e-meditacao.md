@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma tigela de água vista de perto cuja superfície acaba de voltar a ficar perfeitamente imóvel."
 title: "Meditação e xadrez: a plena consciência a serviço do jogo lento"
 excerpt: >-
   A meditação não te faz calcular melhor. Mas muda o que você faz quando calcula : menos agitação mental, mais presença

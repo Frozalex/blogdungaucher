@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma cadeira vazia de perfil, o piso desgastado e marcado bem abaixo dela."
 title: "Xadrez e corpo: o que um jogo imóvel faz de verdade ao seu organismo"
 excerpt: >-
   Um jogador fica sentado durante horas sem se mover, e termina esgotado, com o coração acelerado, às vezes vários

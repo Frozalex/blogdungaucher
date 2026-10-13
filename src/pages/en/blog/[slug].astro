@@ -130,7 +130,9 @@ const hasEnTranslation = !!enEntry;
 const displayTags = enEntry?.data?.tags ?? [];
 
 const heroSrc = getPostHeroSrc(post);
-const heroImage = heroSrc ? post.data.heroImage : undefined;
+const heroImage = heroSrc && post.data.heroImage
+  ? { ...post.data.heroImage, alt: enEntry?.data?.heroImageAlt ?? post.data.heroImage.alt }
+  : undefined;
 /* Hero full-bleed → sizes="100vw". Sans srcset un mobile de 380 px payait
    l'original 1200 px (~150-190 Ko) pour l'afficher à 380 px. */
 const heroSrcset = buildSrcset(heroSrc);

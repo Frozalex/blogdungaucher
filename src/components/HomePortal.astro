@@ -20,7 +20,6 @@ import { swapLangPrefix } from "../utils/lang-paths";
 import {
   getAllPosts,
   getFeaturedPosts,
-  getLatestPosts,
   filterPostsForLang,
   getPostSlug,
   getPostUrlLang,
@@ -84,9 +83,8 @@ const posts = filterPostsForLang(await getAllPosts(), lang); // tri date décroi
 const featuredRanked = filterPostsForLang(await getFeaturedPosts(), lang);
 const leadPost = featuredRanked[0] ?? posts[0];
 
-// Grille « Derniers articles » : 6 cartes, alternées par pilier, hors article de tête.
-const interleaved = await getLatestPosts(8, lang);
-const gridPosts = interleaved.filter((p) => p.id !== leadPost?.id).slice(0, 6);
+// Grille « Derniers articles » : 6 cartes, strictement par date décroissante, hors article de tête.
+const gridPosts = posts.filter((p) => p.id !== leadPost?.id).slice(0, 6);
 
 // Le fil : 5 articles les plus récents (chronologique, toutes rubriques), hors tête.
 const filSource = posts.filter((p) => p.id !== leadPost?.id).slice(0, 5);

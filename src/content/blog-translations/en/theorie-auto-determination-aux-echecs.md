@@ -80,7 +80,7 @@ The most contested strand is the claim that these three needs are **fundamental 
 
 So take the framework as **a useful diagnostic grid** rather than as a theory of human needs. That's already plenty, and it's what we need here.
 
-One more boundary worth drawing, with the previous article in this series. [Intrinsic motivation](/en/blog/motivation-intrinseque-aux-echecs/) dealt with a precise mechanism, a reward substituting for a reason to act. Here we're dealing with the general framework that describes what sustains a practice over time.
+One more boundary worth drawing, with the previous article in this series. [Intrinsic motivation](/en/blog/intrinsic-motivation-in-chess/) dealt with a precise mechanism, a reward substituting for a reason to act. Here we're dealing with the general framework that describes what sustains a practice over time.
 
 ## Chess, Need by Need
 
@@ -94,7 +94,7 @@ You choose when you play, against whom, at what time control, with which opening
 
 It's one of the most autonomous activities there is. Nothing to book, nobody to convince, no equipment required.
 
-So this need is almost never the cause of an adult player quitting. It can be for a child pushed by their parents, which is a different configuration, covered in our article on [attachment theory in chess](/en/blog/theorie-de-l-attachement-aux-echecs/).
+So this need is almost never the cause of an adult player quitting. It can be for a child pushed by their parents, which is a different configuration, covered in our article on [attachment theory in chess](/en/blog/attachment-theory-in-chess/).
 
 ### Competence: Ambivalent
 
@@ -104,7 +104,7 @@ Chess offers the best feedback of any hobby: an objective rating, immediate and 
 
 But that same mechanism turns hostile the moment progress stops. A plateau isn't experienced as an absence of information: it's experienced as **permanent negative information**, public and quantified.
 
-And a rating is structurally a poor learning signal, for the reasons laid out in our article on [learned helplessness in chess](/en/blog/impuissance-apprise-aux-echecs/): slow, noisy, non-attributable. It informs you very well about the result and very badly about progress.
+And a rating is structurally a poor learning signal, for the reasons laid out in our article on [learned helplessness in chess](/en/blog/learned-helplessness-in-chess/): slow, noisy, non-attributable. It informs you very well about the result and very badly about progress.
 
 Hence a prediction: the competence need is **overfed during progress and attacked during a plateau**, with no middle state. That's a risky trajectory.
 
@@ -112,7 +112,7 @@ Hence a prediction: the competence need is **overfed during progress and attacke
 
 Here's the central point of this article.
 
-Chess is, structurally, a solitary activity. Our article on [loneliness in chess](/en/blog/echecs-et-la-solitude/) makes the point: by the rules you're alone, no teammate, no coach during the game.
+Chess is, structurally, a solitary activity. Our article on [loneliness in chess](/en/blog/solitude-in-chess/) makes the point: by the rules you're alone, no teammate, no coach during the game.
 
 And online play, which today accounts for most of the practice, removed what little was left.
 
@@ -132,7 +132,7 @@ And the predictions match phenomena clubs and federations know well.
 
 **The return to the club.** Plenty of players who pick the game back up after years come back **to a club** rather than online, and often say it isn't the same thing. The framework explains that without mystery: a club is bad on autonomy, constrained by a schedule and a place, and it's the only thing that satisfies relatedness.
 
-**The paradox of very active players who fade out.** Thousands of online games can feed two needs intensely and never touch a third. Volume doesn't compensate for absence, and it's one of the roads to [burnout in chess](/en/blog/burnout-chess/).
+**The paradox of very active players who fade out.** Thousands of online games can feed two needs intensely and never touch a third. Volume doesn't compensate for absence, and it's one of the roads to [burnout in chess](/en/blog/chess-burnout/).
 
 ## The Protocol
 
@@ -144,7 +144,7 @@ The lowest box is your work site. It's almost never the one you assumed.
 
 This isn't social consolation: it's what turns a loss into a shared object rather than a private balance sheet.
 
-**3. Fix competence through the signal, not the result.** A rating plateau isn't an absence of progress, it's an absence of progress measurement. Adopt a short-loop indicator, as detailed in our article on [learned helplessness in chess](/en/blog/impuissance-apprise-aux-echecs/).
+**3. Fix competence through the signal, not the result.** A rating plateau isn't an absence of progress, it's an absence of progress measurement. Adopt a short-loop indicator, as detailed in our article on [learned helplessness in chess](/en/blog/learned-helplessness-in-chess/).
 
 **4. Protect autonomy when you add structure.** A rigid training program can degrade the one need your practice was satisfying well. Keep a share of play with no objective, chosen on the spot.
 
@@ -164,7 +164,7 @@ And it points to the highest-return lever, which has nothing to do with training
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [intrinsic motivation in chess](/en/blog/motivation-intrinseque-aux-echecs/), [loneliness in chess](/en/blog/echecs-et-la-solitude/) and [burnout in chess](/en/blog/burnout-chess/).*
+*This article is part of a series on psychology applied to chess. See also [intrinsic motivation in chess](/en/blog/intrinsic-motivation-in-chess/), [loneliness in chess](/en/blog/solitude-in-chess/) and [burnout in chess](/en/blog/chess-burnout/).*
 
 ## Sources
 

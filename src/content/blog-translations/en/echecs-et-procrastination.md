@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "An hourglass nearly empty, set next to a chess piece that has not moved."
 title: "Procrastination and Chess: What the Board Teaches About Avoidance"
 excerpt: "Procrastination isn't a time management problem. It's an emotional regulation problem. And the chessboard, with its uncomfortable positions, forced decisions, and implacable clocks, is one of the best laboratories for understanding and fighting avoidance."
 seoTitle: "Procrastination and Chess: What the Board Teaches About Decision-Making"

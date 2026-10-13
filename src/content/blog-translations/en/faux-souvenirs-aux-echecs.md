@@ -109,7 +109,7 @@ Now look at what happens when you analyze a game, and compare it against the ing
 
 **Leading questions.** This is the most direct point. "Did you see Rxf7?" isn't a neutral question: it already contains the move, and it proposes an answer. Structurally it's the same thing as the choice between "hit" and "smashed."
 
-**An interest in accepting the suggestion.** In Loftus's study, participants had nothing to gain from remembering the broken glass. You do. "I saw it" preserves the image you hold of your own level, whereas "I didn't see it" calls it into question. That's the mechanism described in our article on [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/).
+**An interest in accepting the suggestion.** In Loftus's study, participants had nothing to gain from remembering the broken glass. You do. "I saw it" preserves the image you hold of your own level, whereas "I didn't see it" calls it into question. That's the mechanism described in our article on [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/).
 
 **Repetition.** You replay the position several times, you look at the variation, you comment on it. Each pass strengthens the trace, and a strengthened trace becomes indistinguishable from an original memory.
 
@@ -145,7 +145,7 @@ Right after the game, before any analysis, before the engine, before the convers
 
 That note is a **record that lives outside your memory**. It's the only thing that will let you know, a week later, what you had seen, because by then your memory will already have absorbed the analysis.
 
-It's the same rule as the one given in our article on [obedience to authority in chess](/en/blog/obeissance-a-l-autorite-aux-echecs/), and that's no coincidence: in both cases what matters is recording your own judgment before a more reliable source replaces it.
+It's the same rule as the one given in our article on [obedience to authority in chess](/en/blog/obedience-to-authority-in-chess/), and that's no coincidence: in both cases what matters is recording your own judgment before a more reliable source replaces it.
 
 ### 2. Ban Leading Questions
 
@@ -187,7 +187,7 @@ Three lines written before you turn on the engine are enough to preserve the ans
 
 ---
 
-*This article is part of a series on psychology applied to chess. A future article will cover reconstructive memory, meaning the normal mechanism of which false memories are the pathology. See also [analyzing your games](/en/blog/analyser-ses-parties/) and [confirmation bias in chess](/en/blog/biais-de-confirmation-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. A future article will cover reconstructive memory, meaning the normal mechanism of which false memories are the pathology. See also [analyzing your games](/en/blog/how-to-analyze-chess-games/) and [confirmation bias in chess](/en/blog/confirmation-bias-in-chess/).*
 
 ## Sources
 

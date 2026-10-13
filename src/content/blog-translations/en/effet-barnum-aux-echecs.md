@@ -122,9 +122,9 @@ Except that it produces two measurable effects on your improvement.
 
 **It converts a regularity into an identity.** There's an enormous difference between "over my last 200 games, I score 41% in rook endgames" and "I'm an intuitive player, not a technical one." The first phrasing designates a project. The second designates a nature, and a nature can't be worked on: it can only be accepted.
 
-That's the mechanism feeding the fixed beliefs described in our article on [learned helplessness in chess](/en/blog/impuissance-apprise-aux-echecs/). An identity as an "attacking player" is an excellent reason never to study endgames.
+That's the mechanism feeding the fixed beliefs described in our article on [learned helplessness in chess](/en/blog/learned-helplessness-in-chess/). An identity as an "attacking player" is an excellent reason never to study endgames.
 
-**It supplies a ready-made explanation for losses.** "I lost because it was a technical position, and I'm an intuitive player." The explanation is available, coherent, socially acceptable, and it closes the analysis. That's exactly the function described in our article on [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/).
+**It supplies a ready-made explanation for losses.** "I lost because it was a technical position, and I'm an intuitive player." The explanation is available, coherent, socially acceptable, and it closes the analysis. That's exactly the function described in our article on [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/).
 
 ## The Replacement Protocol
 
@@ -154,7 +154,7 @@ A sentence that can't be false teaches you nothing. A percentage does.
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/), [the halo effect in chess](/en/blog/effet-de-halo-aux-echecs/) and [the psychology of persuasion in chess](/en/blog/psychologie-de-la-persuasion-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/), [the halo effect in chess](/en/blog/halo-effect-in-chess/) and [the psychology of persuasion in chess](/en/blog/psychology-of-persuasion-in-chess/).*
 
 ## Sources
 

@@ -115,7 +115,7 @@ The literature on cognitive enhancement points the same way, and fairly consiste
 
 Translated to your scale: believing your sweater brings luck will probably make you **feel** better prepared, sharper, more confident. There's no serious reason to think it'll make you see the move you'd have missed.
 
-And that conclusion fits what we know about this game from other angles. Chess is one of the rare domains where performance is measured with brutal precision, with no element of luck or interpretation. That's what makes it such a good observation ground, as our article on [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/) shows. It's also what makes it impervious to expectation effects.
+And that conclusion fits what we know about this game from other angles. Chess is one of the rare domains where performance is measured with brutal precision, with no element of luck or interpretation. That's what makes it such a good observation ground, as our article on [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/) shows. It's also what makes it impervious to expectation effects.
 
 Worth separating what we're discussing here from another question, handled in [does chess make you smarter](/en/blog/les-echecs-rendent-ils-plus-intelligent/): over there, the expectancy effect concerns **researchers and teachers** and skews the measurement of the benefits. Here it's about you, the player, and your own performance in a game.
 
@@ -163,7 +163,7 @@ Transposed: you can keep your sweater while knowing perfectly well it has no pow
 
 **Hunt down your nocebos, they cost more.** List the sentences you say before you play: "I hate playing this guy," "I'm useless in this structure." Those are explicit negative expectations, and that's the one area where belief has a well-documented action. They're corrected by facts: check your actual score against that opponent, it's rarely what you think.
 
-**Be wary of supplements sold for cognition.** On objective criteria the bar for evidence is high and rarely cleared. Your sleep, on the other hand, has a documented effect on cognitive performance, and it's free. See [chess and sleep](/en/blog/echecs-et-sommeil/).
+**Be wary of supplements sold for cognition.** On objective criteria the bar for evidence is high and rarely cleared. Your sleep, on the other hand, has a documented effect on cognitive performance, and it's free. See [chess and sleep](/en/blog/chess-and-sleep/).
 
 ## What to Take Away
 
@@ -179,7 +179,7 @@ The risk, though, is real and it runs the other way. Negative expectation does s
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [no, chess doesn't rewire your brain](/en/blog/neuroplasticite-aux-echecs/) and [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [no, chess doesn't rewire your brain](/en/blog/neuroplasticity-and-chess/) and [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/).*
 
 ## Sources
 

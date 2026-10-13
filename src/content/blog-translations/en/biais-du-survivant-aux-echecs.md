@@ -123,7 +123,7 @@ The first is statistical. A protocol with three subjects, no control group and n
 
 The second problem is more interesting, because it concerns the result itself. In 2011, researcher Robert Howard published an analysis of the case in *Cognitive Development* showing that **despite comparable training, the three sisters did not reach the same level**. Judit was world number 8; Sofia, a strong player, didn't follow the same trajectory. With the protocol held equal, the results diverge. His conclusion: chess expertise doesn't depend on practice alone.
 
-The underlying nature-versus-nurture debate is covered in our article on [genetics and talent in chess](/en/blog/echecs-et-genetique/). What concerns us here is narrower: even the example invoked to prove the thesis doesn't prove it, and the sample that would settle the question is invisible by construction.
+The underlying nature-versus-nurture debate is covered in our article on [genetics and talent in chess](/en/blog/chess-and-genetics/). What concerns us here is narrower: even the example invoked to prove the thesis doesn't prove it, and the sample that would settle the question is invisible by construction.
 
 ### 4. Your Own Gambit
 
@@ -143,7 +143,7 @@ And the remedy here is trivial. His game database contains the exact answer. He 
 
 **Consult the database, not your memory.** For anything concerning your own results by opening, by colour, by time control, the data exists and it's free. Your memory isn't a sample, it's an editorial selection.
 
-**Keep the complete log.** Record all your games, including the insipid draws and the uneventful losses. A notebook containing only the striking games ends up describing a player who doesn't exist. That's the basic principle of [useful game analysis](/en/blog/analyser-ses-parties/).
+**Keep the complete log.** Record all your games, including the insipid draws and the uneventful losses. A notebook containing only the striking games ends up describing a player who doesn't exist. That's the basic principle of [useful game analysis](/en/blog/how-to-analyze-chess-games/).
 
 **Look for the absent.** Every time you're shown a successful trajectory, ask what the same approach would look like for someone it failed, and why you'd never hear about that person. The answer is almost always: because there'd be nothing to tell.
 
@@ -159,7 +159,7 @@ None of these sources is lying. All of them faithfully describe the planes that 
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/) and [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/) and [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/).*
 
 ## Sources
 

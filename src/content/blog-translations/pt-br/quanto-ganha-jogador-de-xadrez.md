@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma balança em que um grande troféu é levantado por três pequenas moedas."
 title: "Xadrez e dinheiro: por que os melhores jogadores do mundo não são ricos"
 excerpt: >-
   Magnus Carlsen é o melhor jogador da história. Ganhou cerca de 2 milhões de dólares em premiação ao longo de

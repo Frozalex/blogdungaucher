@@ -69,7 +69,7 @@ What all these examples have in common: **everything happens on the board**. The
 
 Emotional manipulation begins when the action targets your opponent's **internal state** by means external to the position. It's no longer his play under attack, it's his capacity to play.
 
-Two notes on the scope of this article. It deals only with what operates **during** the game. What happens afterwards, when someone rewrites what took place, is a different mechanism, described in our article on [gaslighting in chess](/en/blog/gaslighting-aux-echecs/). And this isn't about cheating: nobody is consulting an engine here, which is an entirely different subject, covered in [cheating in chess](/en/blog/echecs-et-la-triche/).
+Two notes on the scope of this article. It deals only with what operates **during** the game. What happens afterwards, when someone rewrites what took place, is a different mechanism, described in our article on [gaslighting in chess](/en/blog/gaslighting-in-chess/). And this isn't about cheating: nobody is consulting an engine here, which is an entirely different subject, covered in [cheating in chess](/en/blog/cheating-in-chess/).
 
 ## The Textbook Case: Baguio, 1978
 
@@ -95,7 +95,7 @@ Zukhar had no power. Parapsychology doesn't work. A man sitting in a hall lookin
 
 And yet the effect was considerable. Korchnoi devoted an enormous share of his energy to the affair: protests, negotiations, monitoring the hall, attention diverted in every game.
 
-**The effect wasn't produced by Zukhar. It was produced by Korchnoi's conviction.** This is exactly the nocebo mechanism, described in our article on [the placebo effect in chess](/en/blog/effet-placebo-aux-echecs/): negative expectation acts where positive expectation doesn't.
+**The effect wasn't produced by Zukhar. It was produced by Korchnoi's conviction.** This is exactly the nocebo mechanism, described in our article on [the placebo effect in chess](/en/blog/placebo-effect-in-chess/): negative expectation acts where positive expectation doesn't.
 
 Which gives us the general principle of the whole subject. **Manipulation never works directly.** It works by getting you to process it.
 
@@ -171,7 +171,7 @@ Hence the only defence that holds. Not being mentally stronger, which means noth
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [gaslighting in chess](/en/blog/gaslighting-aux-echecs/), which deals with what happens after the game, and [defense mechanisms in chess](/en/blog/mecanismes-de-defense-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. See also [gaslighting in chess](/en/blog/gaslighting-in-chess/), which deals with what happens after the game, and [defense mechanisms in chess](/en/blog/defense-mechanisms-in-chess/).*
 
 ## Sources
 

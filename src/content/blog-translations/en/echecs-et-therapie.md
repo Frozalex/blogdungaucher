@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A tangled ball of thread from which a single strand emerges perfectly taut and straight."
 title: "Chess as Therapy: What Research Says About the Game and Mental Health"
 excerpt: "From Italian prisons to English psychiatric hospitals, from American rehabilitation programs to PTSD treatment centers: the chessboard is used as a therapeutic tool in varied contexts. What studies actually say about these applications."
 seoTitle: "Chess as Therapy: PTSD, Depression, Anxiety, What Research Says"

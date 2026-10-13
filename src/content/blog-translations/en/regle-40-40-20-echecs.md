@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Three stacks of chess pawns of very uneven heights, lined up in a low-angle shot."
 title: "The 40-40-20 Rule: How to Really Structure Your Chess Training"
 excerpt: >-
   Most players spend 80% of their time on openings. The 40-40-20 rule says the opposite: 40% tactics, 40% endgames, 20%

@@ -98,7 +98,7 @@ Look at the structure, with no moral judgment.
 
 So we have an almost perfect variable ratio, with a very short delay and a zero entry cost. From the model's point of view, that's the configuration that produces the most intense behavior and the hardest to interrupt.
 
-This isn't an accusation of malicious design. That structure isn't the result of a choice: it follows naturally from a fast competitive game where you can play one after another. Our article on [chess and addiction](/en/blog/les-echecs-et-l-addiction/) covers the clinical side, and the one on [dopamine and chess](/en/blog/echecs-et-dopamine/) the neurochemical side. What concerns us here is purely behavioral: which delivery rule, which effect on frequency.
+This isn't an accusation of malicious design. That structure isn't the result of a choice: it follows naturally from a fast competitive game where you can play one after another. Our article on [chess and addiction](/en/blog/chess-and-addiction/) covers the clinical side, and the one on [dopamine and chess](/en/blog/chess-and-dopamine/) the neurochemical side. What concerns us here is purely behavioral: which delivery rule, which effect on frequency.
 
 ### Why losing makes you want to play again
 
@@ -145,13 +145,13 @@ That kind of score holds up over two or three games a day, not seventeen. And it
 
 Shaping, or shaping by successive approximations, is Skinner's other major contribution. You don't wait for the final behavior before rewarding: you reward each step that gets closer to it.
 
-Applied to training, that means difficulty has to be calibrated to produce frequent successes. Exercises that are too hard reinforce nothing, since they produce no successes. That's also what comes out of the model of learning control described in our article on [learned helplessness in chess](/en/blog/impuissance-apprise-aux-echecs/).
+Applied to training, that means difficulty has to be calibrated to produce frequent successes. Exercises that are too hard reinforce nothing, since they produce no successes. That's also what comes out of the model of learning control described in our article on [learned helplessness in chess](/en/blog/learned-helplessness-in-chess/).
 
 ### 3. Break the variable ratio with an external rule
 
 Since the absence of a reward isn't a stop signal, no stop signal will come from the schedule itself. So it has to come from outside.
 
-A numeric rule, decided in a calm moment, of the "three games and I stop" kind, works for a precise reason: it doesn't depend on your state or on the result. It's the same principle laid out in our article on [emotional intelligence in chess](/en/blog/intelligence-emotionnelle-aux-echecs/).
+A numeric rule, decided in a calm moment, of the "three games and I stop" kind, works for a precise reason: it doesn't depend on your state or on the result. It's the same principle laid out in our article on [emotional intelligence in chess](/en/blog/emotional-intelligence-in-chess/).
 
 Add a physical obstacle. Ten seconds of friction is often enough to turn an impulse into a decision.
 
@@ -169,7 +169,7 @@ The remedy isn't to play less out of virtue. It's to create reinforcement that b
 
 ---
 
-*This article is part of a series on psychology applied to chess. The next one covers classical conditioning, which concerns involuntary associations rather than consequences. See also [dopamine and chess](/en/blog/echecs-et-dopamine/) and [habit formation in chess](/en/blog/formation-des-habitudes-aux-echecs/).*
+*This article is part of a series on psychology applied to chess. The next one covers classical conditioning, which concerns involuntary associations rather than consequences. See also [dopamine and chess](/en/blog/chess-and-dopamine/) and [habit formation in chess](/en/blog/habit-formation-in-chess/).*
 
 ## Sources
 

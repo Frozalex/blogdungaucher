@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art illustration: a chessboard floating in a starry night sky, pieces asleep under a moon, \"Chess and sleep\""
 title: "Chess and Sleep: Why the Night Also Plays Your Game"
 excerpt: "A grandmaster who sleeps poorly plays about 10% worse by the second hour of play. What sleep neuroscience research says about memory consolidation, cognitive recovery, and chess performance."
 seoTitle: "Chess and Sleep: How Cognitive Recovery Boosts Your Progress"

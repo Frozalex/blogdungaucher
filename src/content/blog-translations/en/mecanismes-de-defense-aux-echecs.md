@@ -108,7 +108,7 @@ A chess loss, by contrast, has five rare properties stacked on top of each other
 
 **It's unambiguous.** The king is mated or he isn't. No interpretation of the result itself is possible.
 
-**It's attributable to nobody else.** No teammate, no injury, no refereeing decision. That's the subject of our article on [solitude in chess](/en/blog/echecs-et-la-solitude/): by the rules, you're alone.
+**It's attributable to nobody else.** No teammate, no injury, no refereeing decision. That's the subject of our article on [solitude in chess](/en/blog/solitude-in-chess/): by the rules, you're alone.
 
 **It contains no element of luck.** No dice, no card deal, no share of chance you can honestly invoke. Information is complete on both sides.
 
@@ -136,7 +136,7 @@ Its most effective version is avoiding the ground itself: quitting tournaments, 
 
 The emotion is discharged into behavior rather than felt and thought through.
 
-That's the flying piece, the pounded keyboard, the abrupt disconnection in the middle of a lost position. The ragequit is its modern form, and it has an identifiable neurology, described in our article on [chess and anger](/en/blog/echecs-et-colere-ragequit/).
+That's the flying piece, the pounded keyboard, the abrupt disconnection in the middle of a lost position. The ragequit is its modern form, and it has an identifiable neurology, described in our article on [chess and anger](/en/blog/chess-and-anger-ragequit/).
 
 What defines acting out is that it **short-circuits** the emotion. The player who slams the door hasn't felt his defeat: he flushed it out before feeling it. That's why he gets nothing from it, and why he'll do it again.
 
@@ -170,7 +170,7 @@ The after-the-fact manufacture of an acceptable explanation.
 
 It's the chess player's reigning defense, so much so that it gets its own article in this series. The principle: produce a plausible reason, often a true one, that makes the loss compatible with the image you hold of yourself. Fatigue, time control, preparation, form on the day.
 
-Its effectiveness comes from its accuracy. You may genuinely have been tired. The problem isn't whether the explanation is true, it's **when it arrives** and the question it lets you avoid asking. The mechanism is detailed in our article on [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/).
+Its effectiveness comes from its accuracy. You may genuinely have been tired. The problem isn't whether the explanation is true, it's **when it arrives** and the question it lets you avoid asking. The mechanism is detailed in our article on [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/).
 
 ### Intellectualization
 
@@ -196,7 +196,7 @@ Adopting the feeling opposite to the one you're experiencing. The player who's e
 
 The fact, severed from the emotion that should accompany it. "I lost." Flat tone, on to the next thing, no visible trace.
 
-Careful here, because this defense has a mature lookalike we'll get to below. The distinction shows up when the emotion returns: isolated, it resurfaces somewhere else, as irritability, unexplained tiredness, a gradual loss of interest in the game. [Chess burnout](/en/blog/burnout-chess/) often follows that path.
+Careful here, because this defense has a mature lookalike we'll get to below. The distinction shows up when the emotion returns: isolated, it resurfaces somewhere else, as irritability, unexplained tiredness, a gradual loss of interest in the game. [Chess burnout](/en/blog/chess-burnout/) often follows that path.
 
 ## Level 4: The Mature Defenses
 
@@ -218,7 +218,7 @@ Deliberate, conscious postponement. "I'm not looking at this game now, I'm too a
 
 It's the mature lookalike of isolation, and the difference comes down to one word: **deliberate**. The player knows he's postponing, knows why, and comes back. Vaillant considers suppression one of the most adaptive defenses there is, and it's directly teachable, which is rare in this field.
 
-It's also, precisely, the practical advice given in several articles on this blog: analyze cold, not hot. See [analyzing your games](/en/blog/analyser-ses-parties/).
+It's also, precisely, the practical advice given in several articles on this blog: analyze cold, not hot. See [analyzing your games](/en/blog/how-to-analyze-chess-games/).
 
 ### Anticipation
 
@@ -276,7 +276,7 @@ The theory organizing all this is shakier than it looks, and the DSM-5 drew the 
 
 ---
 
-*This article is part of a series on the psychology of chess. Two mechanisms catalogued here will get their own article: rationalization and projection. See also [cognitive dissonance in chess](/en/blog/dissonance-cognitive-aux-echecs/) and [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/). See [the full series index](/en/series/psychologie/).*
+*This article is part of a series on the psychology of chess. Two mechanisms catalogued here will get their own article: rationalization and projection. See also [cognitive dissonance in chess](/en/blog/cognitive-dissonance-in-chess/) and [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/). See [the full series index](/en/series/psychologie/).*
 
 ## Sources
 

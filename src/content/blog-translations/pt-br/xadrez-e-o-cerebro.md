@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Vinheta em pixel art: um cérebro luminoso sobre fundo estrelado roxo-azulado, título « O xadrez e o cérebro »"
 title: "Xadrez e o cérebro: o que a ciência realmente revela"
 excerpt: >-
   Um grande mestre? Não é um gênio nato, é um cérebro treinado. RM estrutural, conectividade funcional, cronectoma,

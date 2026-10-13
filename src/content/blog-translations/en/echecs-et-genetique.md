@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "Pixel art illustration: a DNA double helix morphing into chess pieces, chessboard in the background, \"Genetics and chess talent\""
 title: "Genetics and Chess Talent: Nature or Nurture?"
 excerpt: "Why do some children progress twice as fast as others with identical training? The answer involves genetics, epigenetics, and a nuanced view of what 'talent' really means. What science says (and doesn't say) about the role of genes in chess performance."
 seoTitle: "Genetics and Chess Talent: What Science Says About Nature vs. Nurture"

@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A pawn casting a long shadow whose geometric shape does not match the object."
 title: "Cheating in Chess: What the Niemann Affair Really Revealed"
 excerpt: "In 2022, Magnus Carlsen implicitly accused Hans Niemann of cheating and withdrew from a tournament. What followed, a 72-page report, a $100 million lawsuit, a divided community, revealed something deeper than one player's fraud."
 seoTitle: "Cheating in Chess: The Niemann Affair Decoded"

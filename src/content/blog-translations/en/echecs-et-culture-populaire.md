@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "A film projector turning a detailed object into a flat silhouette on a screen."
 title: "Chess in Popular Culture: From Bergman to The Queen's Gambit"
 excerpt: "The chessboard has invaded cinema, literature, music, and series. Not as decor, but as a living metaphor. A look at chess in popular culture, what it says about our relationship to play, intelligence, and power."
 seoTitle: "Chess and Popular Culture: From Bergman to The Queen's Gambit"

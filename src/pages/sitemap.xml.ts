@@ -1,6 +1,7 @@
 import type { APIRoute } from "astro";
 
 import { siteConfig, staticRoutes, enStaticRoutes, ptBrStaticRoutes, nlStaticRoutes, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, isIndexedLang } from "../data/site";
+import { serieMoteurSlugs } from "../data/serie-moteur-python";
 import { getAllPosts, getEnSlugMap, getPtBrSlugMap, getNlSlugMap, getPostSlug, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
 
@@ -28,14 +29,29 @@ export const GET: APIRoute = async () => {
   const ptBrSlugMap = ptBrLive ? await getPtBrSlugMap() : new Map<string, string>();
   const nlSlugMap = nlLive ? await getNlSlugMap() : new Map<string, string>();
 
+  // La série moteur-python se dévoile au fil des semaines (cf. moteur-python.astro) :
+  // sa page d'index reste hors sitemap tant qu'aucun des 12 articles n'est publié.
+  const publishedSlugs = new Set(posts.map((p) => getPostSlug(p)));
+  const moteurPythonHasPublishedArticle = serieMoteurSlugs.some((s) => publishedSlugs.has(s));
+  if (!moteurPythonHasPublishedArticle) {
+    EXCLUDED_PATHS.add("/fr/series/moteur-python/");
+  }
+
   function absolute(path: string) {
     return new URL(withTrailingSlash(path), siteConfig.siteUrl).toString();
   }
 
+  const buildTime = new Date();
+
   function lastmodFor(frPath: string): string {
     const post = posts.find((p) => getPostUrl(p) === frPath);
-    if (post) return (post.data.updatedDate ?? post.data.publishDate).toISOString();
-    return new Date().toISOString();
+    const date = post ? (post.data.updatedDate ?? post.data.publishDate) : buildTime;
+    if (date > buildTime) {
+      throw new Error(
+        `sitemap: lastmod futur (${date.toISOString()}) pour ${frPath} — vérifier updatedDate/publishDate.`,
+      );
+    }
+    return date.toISOString();
   }
 
   function enPathFor(frPath: string): string {

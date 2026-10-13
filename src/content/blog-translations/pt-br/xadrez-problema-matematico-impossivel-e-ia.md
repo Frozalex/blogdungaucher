@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Vinheta em pixel art: um computador retrô, tela com uma árvore de decisão luminosa, título sobre a complexidade matemática do xadrez e a IA"
 title: "Por que o xadrez é um problema matemático (quase) impossível e como a IA consegue mesmo assim"
 excerpt: >-
   A árvore de lances explode, o número de Shannon dá vertigem, e ainda assim um motor te corrige em alguns segundos.

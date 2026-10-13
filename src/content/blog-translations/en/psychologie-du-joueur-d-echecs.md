@@ -1,4 +1,5 @@
 ---
+heroImageAlt: "A seated figure in profile, facing its own shadow standing up like an opponent."
 title: "The Psychology of the Chess Player: What's Really Happening Inside Your Head"
 excerpt: >-
   Chess isn't just played on the board. It's played first in your head, before your hand ever touches a piece. A
@@ -69,7 +70,7 @@ What fascinates about chess tilt is what it reveals about your psychological wea
 
 [Mark Dvoretsky](https://en.wikipedia.org/wiki/Mark_Dvoretsky), one of the greatest trainers in chess history, insisted on this with his students. Post-game analysis should not only hunt the technical error. It should hunt the emotional state in which that error was committed. That is where the real information lies.
 
-When tilt becomes a repeated loop, games launched compulsively after every loss, something else is at work. The article [Chess and addiction](/en/blog/les-echecs-et-l-addiction/) covers that case precisely.
+When tilt becomes a repeated loop, games launched compulsively after every loss, something else is at work. The article [Chess and addiction](/en/blog/chess-and-addiction/) covers that case precisely.
 
 ## Zeitnot: time does not kill you; fear of time does
 

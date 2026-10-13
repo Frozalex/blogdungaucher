@@ -247,7 +247,7 @@ One last point, because this article could give the impression that everybody ov
 
 The highest-rated players don't underestimate themselves: they're **accurate**. The pattern isn't symmetrical. There's no mass of modest strong players offsetting the mass of presumptuous weak ones. There's massive overestimation at the bottom that fades gradually as you climb.
 
-Which means that if you're a solid player who constantly doubts his own legitimacy, you're not a Dunning-Kruger case. You're something else, something that touches on a sense of belonging rather than an assessment of skill, and it's called [impostor syndrome](/en/blog/syndrome-imposteur-2000-elo/).
+Which means that if you're a solid player who constantly doubts his own legitimacy, you're not a Dunning-Kruger case. You're something else, something that touches on a sense of belonging rather than an assessment of skill, and it's called [impostor syndrome](/en/blog/impostor-syndrome-2000-elo/).
 
 The two phenomena look like two sides of the same coin. They aren't. One is an estimation error, the other is a relationship with yourself. You can know your level to the point and still not feel like you belong.
 
@@ -263,7 +263,7 @@ Which is, when you think about it, a very solid reason to keep working.
 
 **After reading:** take the 89-point test. Write down the rating you think you deserve, calculate the score that gap implies, and hold it up against your last fifty games against opponents at your level. The result, whatever it is, is more instructive than this article.
 
-*This article opens a series devoted to psychology applied to chess. It will be followed by articles on cognitive dissonance, confirmation bias, defense mechanisms and rationalization. See also the overview of the [5 cognitive biases that make you blunder](/en/blog/5-biais-cognitifs-blunder/). See [the full index of the series](/en/series/psychologie/).*
+*This article opens a series devoted to psychology applied to chess. It will be followed by articles on cognitive dissonance, confirmation bias, defense mechanisms and rationalization. See also the overview of the [5 cognitive biases that make you blunder](/en/blog/5-cognitive-biases-blunder/). See [the full index of the series](/en/series/psychologie/).*
 
 ## Sources
 

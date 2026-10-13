@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Ilustração em pixel art: uma rede neural de um lado, uma árvore de busca algorítmica do outro, tabuleiro de xadrez no centro, « AlphaZero vs Stockfish »"
 title: "AlphaZero contra Stockfish: a revolução da inteligência artificial no xadrez"
 excerpt: >-
   Em dezembro de 2017, a DeepMind publicava os resultados de um match que mudou a forma como se pensa tanto a

@@ -121,7 +121,7 @@ Three fairly reliable indicators.
 
 **A win without points doesn't count.** A friendly, unrated game feels empty, as if it hadn't happened.
 
-**You avoid stronger opponents.** Not out of fear of losing the game, but out of fear of losing points. That's the clearest sign, because it leads you to avoid exactly the games that teach you the most. It connects with what our article on [Elo and self-esteem](/en/blog/echecs-estime-de-soi-elo/) describes.
+**You avoid stronger opponents.** Not out of fear of losing the game, but out of fear of losing points. That's the clearest sign, because it leads you to avoid exactly the games that teach you the most. It connects with what our article on [Elo and self-esteem](/en/blog/elo-and-self-esteem/) describes.
 
 ## What Separates This Article from the Next One
 
@@ -135,7 +135,7 @@ This piece deals with a precise, tightly bounded mechanism: **one reason for act
 
 **Shift your feedback from result to content.** This is the best-established distinction in the field. After a game, note what you played well, not what you won. Informative feedback feeds motivation; a numbered payoff replaces it.
 
-**Reduce the salience, not the number.** The problem isn't that the rating exists, it's that it's on display all the time. That's also the conclusion of our article on [social comparison in chess](/en/blog/comparaison-sociale-aux-echecs/): how often you check matters more than the value.
+**Reduce the salience, not the number.** The problem isn't that the rating exists, it's that it's on display all the time. That's also the conclusion of our article on [social comparison in chess](/en/blog/social-comparison-in-chess/): how often you check matters more than the value.
 
 **Find what brought you here.** Plenty of players arrived through a book, a famous game, a film, a person. Coming back to that thing occasionally sustains a motivation the rating can't supply.
 
@@ -151,7 +151,7 @@ The Elo rating has the profile of an expected external reward. But whether it ha
 
 ---
 
-*This article is part of a series on psychology applied to chess. An upcoming article will cover self-determination theory. See also [Elo and self-esteem](/en/blog/echecs-estime-de-soi-elo/), [dopamine and chess](/en/blog/echecs-et-dopamine/) and [burnout in chess](/en/blog/burnout-chess/).*
+*This article is part of a series on psychology applied to chess. An upcoming article will cover self-determination theory. See also [Elo and self-esteem](/en/blog/elo-and-self-esteem/), [dopamine and chess](/en/blog/chess-and-dopamine/) and [burnout in chess](/en/blog/chess-burnout/).*
 
 ## Sources
 

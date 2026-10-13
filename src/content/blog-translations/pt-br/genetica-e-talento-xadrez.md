@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Ilustração em pixel art: uma dupla hélice de DNA se transformando em peças de xadrez, tabuleiro ao fundo, « Genética e talento no xadrez »"
 title: "Genética e talento no xadrez: quanto da sua força é inata?"
 excerpt: >-
   10.000 horas de prática deliberada, ou herança genética? A pesquisa sobre o talento enxadrístico sacudiu uma das crenças

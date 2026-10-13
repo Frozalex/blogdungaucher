@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Uma ampulheta cuja areia é feita de minúsculas peças de xadrez que passam de um bulbo ao outro."
 title: "Teoria dos jogos no xadrez: por que cada lance é uma decisão estratégica"
 excerpt: "O xadrez é o terreno de origem da teoria dos jogos. Minimax, equilíbrio de Nash, informação perfeita: a anatomia matemática do que realmente acontece quando você joga."
 seoTitle: "Teoria dos jogos no xadrez: Nash, minimax e Zermelo explicados"

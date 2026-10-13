@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Ilustração em pixel art: um tabuleiro de xadrez sobre um altar de pedra banhado por luz de vitral, peças projetando sombras longas, atmosfera medieval, « Xadrez e religião »"
 title: "Xadrez e religião: mil anos de proibições, fatwas e reabilitações"
 excerpt: >-
   Um cardeal que censura um bispo em 1061, uma fatwa saudita em 2016, uma ordenança de São Luís, uma proibição ortodoxa

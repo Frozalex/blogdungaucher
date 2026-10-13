@@ -121,7 +121,7 @@ Opening an app and clicking "new game" is a perfect habit. Look at why.
 
 **The reward is immediate.** Three minutes later, you know whether you won.
 
-**And above all, it's variable.** You don't know in advance whether you'll win. That type of reward, unpredictable but frequent, is by far the most powerful reinforcer known, and it's also the one slot machines use. An upcoming article in this series, on operant conditioning, goes into that mechanism, which our piece on [dopamine and chess](/en/blog/echecs-et-dopamine/) approaches through neurochemistry.
+**And above all, it's variable.** You don't know in advance whether you'll win. That type of reward, unpredictable but frequent, is by far the most powerful reinforcer known, and it's also the one slot machines use. An upcoming article in this series, on operant conditioning, goes into that mechanism, which our piece on [dopamine and chess](/en/blog/chess-and-dopamine/) approaches through neurochemistry.
 
 ### What Makes "Training" Impossible
 
@@ -204,7 +204,7 @@ The one well-supported lever consists of writing a sentence: if this thing happe
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the 40-40-20 rule](/en/blog/regle-40-40-20-echecs/) for what to put in your training, and [procrastination and chess](/en/blog/echecs-et-procrastination/) for avoidance. Upcoming articles will cover delayed gratification and operant conditioning.*
+*This article is part of a series on psychology applied to chess. See also [the 40-40-20 rule](/en/blog/chess-40-40-20-rule/) for what to put in your training, and [procrastination and chess](/en/blog/chess-and-procrastination/) for avoidance. Upcoming articles will cover delayed gratification and operant conditioning.*
 
 ## Sources
 

@@ -1,4 +1,5 @@
 ﻿---
+heroImageAlt: "Dois balões de diálogo vazios vindos de lados opostos, sobrepondo-se no centro."
 title: "Xadrez e imigração: o tabuleiro como língua comum"
 excerpt: >-
   Para um refugiado que não fala o idioma do país de acolhimento, o tabuleiro pode ser a primeira conversa bem-sucedida.

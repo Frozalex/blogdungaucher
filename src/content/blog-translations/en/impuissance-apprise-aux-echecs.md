@@ -123,7 +123,7 @@ Which suggests a counterintuitive conclusion: **prolonged stagnation isn't prima
 
 **Early resignation.** The most visible one. You resign a difficult but defensible position, then you'll explain that it was lost. The thing to notice is that you didn't look for the resource: you didn't cross the low barrier.
 
-**Effort collapsing mid-session.** After a loss, the following games get played at half power. This isn't tilt in the anger sense, described in our article on [chess and anger](/en/blog/echecs-et-colere-ragequit/): it's colder, more resigned. The behavior is still there, the investment isn't.
+**Effort collapsing mid-session.** After a loss, the following games get played at half power. This isn't tilt in the anger sense, described in our article on [chess and anger](/en/blog/chess-and-anger-ragequit/): it's colder, more resigned. The behavior is still there, the investment isn't.
 
 **Frozen beliefs.** "I'm hopeless in endgames." "I don't understand closed positions at all." These sentences are zones declared out of reach, therefore never worked on, which makes them true. They also work as self-fulfilling prophecies, which is the subject of an upcoming article in this series.
 
@@ -169,7 +169,7 @@ Changing signal isn't lying to yourself about your progress. It's giving the rig
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/effet-dunning-kruger-aux-echecs/), [habit formation in chess](/en/blog/formation-des-habitudes-aux-echecs/), and [resilience in chess](/en/blog/echecs-et-resilience/).*
+*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/), [habit formation in chess](/en/blog/habit-formation-in-chess/), and [resilience in chess](/en/blog/chess-resilience/).*
 
 ## Sources
 
