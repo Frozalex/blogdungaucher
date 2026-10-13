@@ -57,6 +57,7 @@
     "les-echecs-et-les-mathematiques",
     "logique-modale-aux-echecs",
     "loi-de-murphy-aux-echecs",
+    "manipulation-emotionnelle-aux-echecs",
     "mecanismes-de-defense-aux-echecs",
     "minimax-aux-echecs",
     "neurones-miroirs-aux-echecs",
@@ -84,5 +85,5 @@
     "theorie-des-jeux-aux-echecs",
     "theorie-du-chaos-aux-echecs"
   ],
-  "updatedAt": "2026-10-12T15:26:11.605Z"
+  "updatedAt": "2026-10-13T14:12:09.771Z"
 }
