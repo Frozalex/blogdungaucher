@@ -25,7 +25,7 @@ export const translations = {
       legal: "Mentions légales",
       privacy: "Confidentialité",
       accessibility: "Accessibilité",
-      notificationSettings: "Notifications et cookies",
+      notificationSettings: "Notifications",
     },
     home: {
       eyebrow: "Éditorial indépendant",
@@ -151,7 +151,7 @@ export const translations = {
       legal: "Legal notices",
       privacy: "Privacy",
       accessibility: "Accessibility",
-      notificationSettings: "Notifications & cookies",
+      notificationSettings: "Notifications",
     },
     home: {
       eyebrow: "Independent editorial",
@@ -268,7 +268,7 @@ export const translations = {
       legal: "Avisos legais",
       privacy: "Privacidade",
       accessibility: "Acessibilidade",
-      notificationSettings: "Notificações e cookies",
+      notificationSettings: "Notificações",
     },
     home: {
       eyebrow: "Editorial independente",
@@ -390,7 +390,7 @@ export const translations = {
       legal: "Juridische vermeldingen",
       privacy: "Privacy",
       accessibility: "Toegankelijkheid",
-      notificationSettings: "Meldingen en cookies",
+      notificationSettings: "Meldingen",
     },
     home: {
       eyebrow: "Onafhankelijk redactioneel",

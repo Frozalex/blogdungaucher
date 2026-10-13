@@ -1,93 +1,65 @@
 ---
 // Localisation côté serveur (le dict runtime ne couvre que fr/en) — même pattern
 // que HomeLanding/NewsletterForm : un objet `copy` par langue.
-// Design « façon CMP » : modal centré, interrupteurs, catégorie « nécessaires »
-// toujours active, accent indigo (var --consent-accent, changer ici pour tout basculer).
+//
+// Depuis le 2026-10-13, ce panneau ne gère QUE les notifications push ntfy.
+// Les catégories « Publicité » et « Mesure d'audience » ont été retirées : le
+// consentement publicitaire relève du CMP certifié de Google (livré par le script
+// AdSense, cf. BaseLayout) et Google Analytics a été supprimé du site au profit
+// d'Umami, auto-hébergé et sans cookie.
+//
+// Conséquence : le panneau ne s'ouvre plus de lui-même à la première visite — sinon
+// il s'empilerait avec la fenêtre du CMP Google. Il s'ouvre uniquement à la demande,
+// via « Notifications » en pied de page.
 const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
 
 const consentCopy = {
   fr: {
     brand: "Blog d'un Gaucher",
-    title: "Nous respectons votre vie privée",
-    intro: "Ce site utilise des cookies de <strong>mesure d'audience</strong> et, à terme, de <strong>publicité</strong> pour comprendre ce qui intéresse les lecteurs. Les <strong>notifications push</strong> sont indépendantes des cookies et entièrement optionnelles.",
-    acceptAll: "Tout accepter",
-    rejectAll: "Tout refuser",
-    customize: "Personnaliser mes choix",
-    chooseByCategory: "Choisir par catégorie",
-    necessaryName: "Strictement nécessaires",
-    necessaryDesc: "Indispensables au fonctionnement du site. Toujours actifs.",
-    alwaysOn: "Toujours actif",
-    analyticsName: "Mesure d'audience",
-    analyticsDesc: "Google Analytics : comprendre combien de personnes lisent le blog et quels articles intéressent le plus.",
-    marketingName: "Publicité",
-    marketingDesc: "Google AdSense : personnalisation des annonces et mesure de leur performance. Aucune annonce n'est encore diffusée sur ce site.",
+    title: "Notifications de nouveaux articles",
+    intro: "Recevez une alerte dans votre navigateur à chaque publication. Aucun cookie n'est posé pour cela, et c'est révocable à tout moment.",
     pushName: "Notifications push",
-    pushDesc: "Alerte navigateur à chaque nouvel article (2 par semaine). Le navigateur demandera confirmation. Révocable à tout moment.",
-    save: "Enregistrer mes choix",
-    footerNote: "Modifiable à tout moment via « Notifications et cookies » en bas de page.",
+    pushDesc: "Alerte navigateur à chaque nouvel article (2 par semaine). Le navigateur demandera confirmation.",
+    enable: "Activer les notifications",
+    decline: "Non merci",
+    save: "Enregistrer mon choix",
+    footerNote: "Vos préférences de publicité sont gérées par la fenêtre de consentement de Google, distincte de ce réglage.",
     privacyLink: "Politique de confidentialité →",
   },
   en: {
     brand: "A Left-Hander's Blog",
-    title: "We respect your privacy",
-    intro: "This site uses <strong>audience measurement</strong> and, eventually, <strong>advertising</strong> cookies to understand what readers are interested in. <strong>Push notifications</strong> are independent of cookies and entirely optional.",
-    acceptAll: "Accept all",
-    rejectAll: "Reject all",
-    customize: "Customize my choices",
-    chooseByCategory: "Choose by category",
-    necessaryName: "Strictly necessary",
-    necessaryDesc: "Essential for the site to work. Always on.",
-    alwaysOn: "Always on",
-    analyticsName: "Audience measurement",
-    analyticsDesc: "Google Analytics: see how many people read the blog and which articles are most popular.",
-    marketingName: "Advertising",
-    marketingDesc: "Google AdSense: ad personalization and performance measurement. No ads are served on this site yet.",
+    title: "New article notifications",
+    intro: "Get a browser alert whenever an article goes live. No cookie is set for this, and you can turn it off at any time.",
     pushName: "Push notifications",
-    pushDesc: "Browser alert for each new article (2 per week). The browser will ask for confirmation. Revocable at any time.",
-    save: "Save my choices",
-    footerNote: "Changeable anytime via “Notifications & cookies” at the bottom of the page.",
+    pushDesc: "Browser alert for each new article (2 per week). The browser will ask for confirmation.",
+    enable: "Enable notifications",
+    decline: "No thanks",
+    save: "Save my choice",
+    footerNote: "Your advertising preferences are handled by Google's own consent window, separate from this setting.",
     privacyLink: "Privacy policy →",
   },
   "pt-br": {
     brand: "Blog de um Canhoto",
-    title: "Respeitamos a sua privacidade",
-    intro: "Este site usa cookies de <strong>medição de audiência</strong> e, no futuro, de <strong>publicidade</strong> para entender o que interessa aos leitores. As <strong>notificações push</strong> são independentes dos cookies e totalmente opcionais.",
-    acceptAll: "Aceitar tudo",
-    rejectAll: "Recusar tudo",
-    customize: "Personalizar minhas escolhas",
-    chooseByCategory: "Escolher por categoria",
-    necessaryName: "Estritamente necessários",
-    necessaryDesc: "Essenciais para o funcionamento do site. Sempre ativos.",
-    alwaysOn: "Sempre ativo",
-    analyticsName: "Medição de audiência",
-    analyticsDesc: "Google Analytics: entender quantas pessoas leem o blog e quais artigos despertam mais interesse.",
-    marketingName: "Publicidade",
-    marketingDesc: "Google AdSense: personalização de anúncios e medição de desempenho. Nenhum anúncio é exibido neste site ainda.",
+    title: "Notificações de novos artigos",
+    intro: "Receba um alerta no navegador a cada publicação. Nenhum cookie é usado para isso, e você pode desativar quando quiser.",
     pushName: "Notificações push",
-    pushDesc: "Alerta do navegador a cada novo artigo (2 por semana). O navegador pedirá confirmação. Revogável a qualquer momento.",
-    save: "Salvar minhas escolhas",
-    footerNote: "Alterável a qualquer momento via « Notificações e cookies » no rodapé da página.",
+    pushDesc: "Alerta do navegador a cada novo artigo (2 por semana). O navegador pedirá confirmação.",
+    enable: "Ativar notificações",
+    decline: "Não, obrigado",
+    save: "Salvar minha escolha",
+    footerNote: "As suas preferências de publicidade são gerenciadas pela janela de consentimento do Google, separada deste ajuste.",
     privacyLink: "Política de privacidade →",
   },
   nl: {
     brand: "Blog van een Linkshandige",
-    title: "We respecteren je privacy",
-    intro: "Deze site gebruikt cookies voor <strong>publieksmeting</strong> en, later, <strong>advertenties</strong> om te begrijpen wat lezers interesseert. <strong>Pushmeldingen</strong> staan los van cookies en zijn volledig optioneel.",
-    acceptAll: "Alles accepteren",
-    rejectAll: "Alles weigeren",
-    customize: "Mijn keuzes aanpassen",
-    chooseByCategory: "Kies per categorie",
-    necessaryName: "Strikt noodzakelijk",
-    necessaryDesc: "Essentieel voor de werking van de site. Altijd actief.",
-    alwaysOn: "Altijd actief",
-    analyticsName: "Publieksmeting",
-    analyticsDesc: "Google Analytics: zien hoeveel mensen de blog lezen en welke artikelen het populairst zijn.",
-    marketingName: "Advertenties",
-    marketingDesc: "Google AdSense: advertentiepersonalisatie en prestatiemeting. Er worden nog geen advertenties getoond op deze site.",
+    title: "Meldingen bij nieuwe artikelen",
+    intro: "Ontvang een browsermelding bij elke publicatie. Hiervoor wordt geen cookie geplaatst, en je kunt het altijd uitzetten.",
     pushName: "Pushmeldingen",
-    pushDesc: "Browsermelding bij elk nieuw artikel (2 per week). De browser vraagt om bevestiging. Op elk moment intrekbaar.",
-    save: "Mijn keuzes opslaan",
-    footerNote: "Altijd aanpasbaar via « Meldingen en cookies » onderaan de pagina.",
+    pushDesc: "Browsermelding bij elk nieuw artikel (2 per week). De browser vraagt om bevestiging.",
+    enable: "Meldingen aanzetten",
+    decline: "Nee, bedankt",
+    save: "Mijn keuze opslaan",
+    footerNote: "Je advertentievoorkeuren worden beheerd door het consentvenster van Google, los van deze instelling.",
     privacyLink: "Privacybeleid →",
   },
 } as const;
@@ -131,107 +103,38 @@ const privacyHref =
 
   <p class="consent-text" set:html={c.intro}></p>
 
+  <fieldset class="consent-fieldset">
+    <legend class="consent-fieldset__legend">{c.pushName}</legend>
+
+    <label class="consent-option">
+      <span class="consent-option__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9a6 6 0 0112 0c0 4.5 1.8 5.8 1.8 5.8H4.2S6 13.5 6 9z"/><path d="M10 19a2 2 0 004 0"/>
+        </svg>
+      </span>
+      <span class="consent-option__body">
+        <span class="consent-option__name">{c.pushName}</span>
+        <span class="consent-option__desc">{c.pushDesc}</span>
+      </span>
+      <input type="checkbox" id="cookie-notifications" class="consent-switch-input" />
+      <span class="consent-switch" aria-hidden="true"></span>
+    </label>
+  </fieldset>
+
   <div class="consent-quick">
     <button type="button" class="consent-btn consent-btn--primary" id="consent-accept">
-      {c.acceptAll}
+      {c.enable}
     </button>
     <button type="button" class="consent-btn consent-btn--ghost" id="consent-reject">
-      {c.rejectAll}
+      {c.decline}
     </button>
   </div>
 
-  <details class="consent-details" id="consent-customize-details">
-    <summary class="consent-summary">
-      <span class="consent-summary__label">
-        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="6" cy="8" r="2"/><path d="M8 8h11"/><path d="M5 8H4"/>
-          <circle cx="16" cy="16" r="2"/><path d="M14 16H4"/><path d="M20 16h-2"/>
-        </svg>
-        <span>{c.customize}</span>
-      </span>
-      <svg
-        class="consent-chevron"
-        width="14" height="14"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        aria-hidden="true"
-      >
-        <path d="M6 9l6 6 6-6"/>
-      </svg>
-    </summary>
-
-    <fieldset class="consent-fieldset">
-      <legend class="consent-fieldset__legend">{c.chooseByCategory}</legend>
-
-      {/* Nécessaires : toujours actif, non modifiable */}
-      <div class="consent-option consent-option--locked">
-        <span class="consent-option__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/>
-          </svg>
-        </span>
-        <span class="consent-option__body">
-          <span class="consent-option__name">{c.necessaryName}</span>
-          <span class="consent-option__desc">{c.necessaryDesc}</span>
-        </span>
-        <span class="consent-switch consent-switch--on consent-switch--locked" aria-hidden="true"></span>
-        <span class="sr-only">{c.alwaysOn}</span>
-      </div>
-
-      <label class="consent-option">
-        <span class="consent-option__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16v-4"/><path d="M13 16V8"/><path d="M18 16v-2"/>
-          </svg>
-        </span>
-        <span class="consent-option__body">
-          <span class="consent-option__name">{c.analyticsName}</span>
-          <span class="consent-option__desc">{c.analyticsDesc}</span>
-        </span>
-        <input type="checkbox" id="cookie-analytics" class="consent-switch-input" />
-        <span class="consent-switch" aria-hidden="true"></span>
-      </label>
-
-      <label class="consent-option">
-        <span class="consent-option__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 11v2a2 2 0 002 2h1l2 5h2l-1.5-5H10l8 4V6l-8 4H6a2 2 0 00-2 2z"/>
-            <path d="M18 9.5v5"/>
-          </svg>
-        </span>
-        <span class="consent-option__body">
-          <span class="consent-option__name">{c.marketingName}</span>
-          <span class="consent-option__desc">{c.marketingDesc}</span>
-        </span>
-        <input type="checkbox" id="cookie-marketing" class="consent-switch-input" />
-        <span class="consent-switch" aria-hidden="true"></span>
-      </label>
-
-      <label class="consent-option">
-        <span class="consent-option__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 9a6 6 0 0112 0c0 4.5 1.8 5.8 1.8 5.8H4.2S6 13.5 6 9z"/><path d="M10 19a2 2 0 004 0"/>
-          </svg>
-        </span>
-        <span class="consent-option__body">
-          <span class="consent-option__name">{c.pushName}</span>
-          <span class="consent-option__desc">{c.pushDesc}</span>
-        </span>
-        <input type="checkbox" id="cookie-notifications" class="consent-switch-input" />
-        <span class="consent-switch" aria-hidden="true"></span>
-      </label>
-    </fieldset>
-
-    <div class="consent-save-wrap">
-      <button type="button" class="consent-btn consent-btn--save" id="consent-save">
-        {c.save}
-      </button>
-    </div>
-  </details>
+  <div class="consent-save-wrap">
+    <button type="button" class="consent-btn consent-btn--save" id="consent-save">
+      {c.save}
+    </button>
+  </div>
 
   <p class="consent-footer-note">
     {c.footerNote}
@@ -255,7 +158,6 @@ const privacyHref =
 <script is:inline>
   (function () {
     var KEY = "blogdungaucher.cookieConsent.v1";
-    var _isManageMode = false;
     var _prevFocus = null;
 
     /* ── Persistance ──────────────────────────────────────── */
@@ -264,12 +166,12 @@ const privacyHref =
         var raw = localStorage.getItem(KEY);
         if (!raw) return null;
         var p = JSON.parse(raw);
-        // Migration : anciens enregistrements sans "notifications"
-        if (p && typeof p === "object" && !("notifications" in p)) {
+        // Migration : les anciens enregistrements portaient `analytics` et
+        // `marketing`, devenus sans objet (CMP Google côté pub, Umami sans cookie
+        // côté audience). On ne conserve que le réglage notifications.
+        if (p && typeof p === "object" && ("analytics" in p || "marketing" in p)) {
           var migrated = {
-            analytics: p.analytics,
-            marketing: false,
-            notifications: false,
+            notifications: Boolean(p.notifications),
             updatedAt: p.updatedAt || new Date().toISOString(),
           };
           localStorage.setItem(KEY, JSON.stringify(migrated));
@@ -283,8 +185,6 @@ const privacyHref =
 
     function writeConsent(payload) {
       var normalized = {
-        analytics: Boolean(payload.analytics),
-        marketing: Boolean(payload.marketing),
         notifications: Boolean(payload.notifications),
         updatedAt: new Date().toISOString(),
       };
@@ -295,12 +195,8 @@ const privacyHref =
 
     /* ── Formulaire ───────────────────────────────────────── */
     function syncForm(consent) {
-      var a = document.getElementById("cookie-analytics");
-      var m = document.getElementById("cookie-marketing");
       var n = document.getElementById("cookie-notifications");
-      if (!a || !m || !n) return;
-      a.checked = Boolean(consent && consent.analytics);
-      m.checked = Boolean(consent && consent.marketing);
+      if (!n) return;
       n.checked = Boolean(consent && consent.notifications);
     }
 
@@ -326,7 +222,6 @@ const privacyHref =
       backdrop.hidden = true;
       panel.hidden    = true;
       document.body.style.removeProperty("overflow");
-      _isManageMode = false;
       if (_prevFocus) { _prevFocus.focus(); _prevFocus = null; }
     }
 
@@ -346,48 +241,32 @@ const privacyHref =
       var rejectBtn  = document.getElementById("consent-reject");
       var saveBtn    = document.getElementById("consent-save");
       var manageBtn  = document.getElementById("cookie-manage");
-      var analyticsI = document.getElementById("cookie-analytics");
-      var marketingI = document.getElementById("cookie-marketing");
       var notifI     = document.getElementById("cookie-notifications");
 
-      var current = readConsent();
-
-      if (!current) {
-        // Premier passage : pas de consentement stocké → ouvrir le modal
-        _isManageMode = false;
-        syncForm(null);
-        showModal();
-      } else {
-        // Déjà consenti : s'assurer que le modal est fermé
-        syncForm(current);
-        if (!panel.hidden) hideModal();
-      }
+      // Plus d'ouverture automatique : le panneau ne porte qu'un réglage optionnel
+      // (notifications), et la fenêtre de première visite appartient au CMP Google.
+      // Deux modales empilées à l'arrivée seraient ingérables.
+      syncForm(readConsent());
+      if (!panel.hidden) hideModal();
 
       bindClick(acceptBtn, function () {
-        writeConsent({ analytics : true, marketing : true, notifications : true });
+        writeConsent({ notifications : true });
         hideModal();
       });
 
       bindClick(rejectBtn, function () {
-        writeConsent({ analytics : false, marketing : false, notifications : false });
+        writeConsent({ notifications : false });
         hideModal();
       });
 
       bindClick(saveBtn, function () {
-        writeConsent({
-          analytics:     analyticsI ? analyticsI.checked : false,
-          marketing:     marketingI ? marketingI.checked : false,
-          notifications: notifI     ? notifI.checked     : false,
-        });
+        writeConsent({ notifications: notifI ? notifI.checked : false });
         hideModal();
       });
 
-      // Ouverture depuis le footer (« Notifications et cookies »)
+      // Ouverture depuis le footer (« Notifications »)
       bindClick(manageBtn, function () {
-        _isManageMode = true;
         syncForm(readConsent());
-        var details = document.getElementById("consent-customize-details");
-        if (details) details.open = false;
         showModal();
       });
     }
@@ -397,8 +276,9 @@ const privacyHref =
       var panel = document.getElementById("consent-panel");
       if (!panel || panel.hidden) return;
 
-      // ESC ferme seulement si l'utilisateur a déjà un consentement stocké
-      if (e.key === "Escape" && _isManageMode) {
+      // ESC ferme toujours : le panneau ne s'ouvre plus qu'à la demande, et il ne
+      // porte aucun choix obligatoire qu'il faudrait forcer avant de le refermer.
+      if (e.key === "Escape") {
         hideModal();
         return;
       }
@@ -406,7 +286,7 @@ const privacyHref =
       // Focus trap : garder le focus dans le modal
       if (e.key === "Tab") {
         var focusable = panel.querySelectorAll(
-          'button:not([disabled]), input[type="checkbox"], a[href], summary'
+          'button:not([disabled]), input[type="checkbox"], a[href]'
         );
         var arr = Array.prototype.slice.call(focusable);
         if (!arr.length) return;
@@ -438,18 +318,6 @@ const privacyHref =
     --consent-accent: #534ab7;
     --consent-accent-hover: #443c99;
     --consent-accent-tint: color-mix(in srgb, var(--consent-accent) 12%, transparent);
-  }
-
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
   }
 
   /* ── hidden override ── */
@@ -666,71 +534,12 @@ const privacyHref =
     }
   }
 
-  /* ── Personnaliser (details) ───────────────────────────── */
-  .consent-details {
-    border: 1px solid var(--border-soft);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-  }
-
-  .consent-summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 2.75rem;
-    padding: 0.7rem 0.9rem;
-    background: var(--bg-warm);
-    cursor: pointer;
-    font-size: 0.86rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    list-style: none;
-    -webkit-user-select : none;
-    user-select: none;
-    touch-action: manipulation;
-    -webkit-tap-highlight-color : transparent;
-    transition: color 120ms ease, background 120ms ease;
-  }
-
-  .consent-summary__label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .consent-summary::-webkit-details-marker { display : none; }
-  .consent-summary:focus { outline: none; }
-  .consent-summary:focus-visible {
-    outline: 2px solid var(--consent-accent);
-    outline-offset: -2px;
-  }
-
-  @media (hover : hover) and (pointer : fine) {
-    .consent-summary:hover {
-      color: var(--text-main);
-      background: color-mix(in srgb, var(--consent-accent) 6%, var(--bg-warm));
-    }
-  }
-
-  .consent-details[open] > .consent-summary {
-    color: var(--text-main);
-    border-bottom: 1px solid var(--border-soft);
-  }
-
-  .consent-chevron {
-    flex-shrink: 0;
-    transition: transform 220ms var(--ease-out);
-  }
-
-  .consent-details[open] .consent-chevron {
-    transform: rotate(180deg);
-  }
-
   /* ── Fieldset options ──────────────────────────────────── */
   .consent-fieldset {
     margin: 0;
     padding: 0 0.9rem;
-    border: none;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
   }
@@ -756,7 +565,6 @@ const privacyHref =
   }
 
   .consent-option:last-of-type { border-bottom: none; }
-  .consent-option--locked { cursor: default; }
 
   .consent-option__icon {
     display: inline-flex;
@@ -825,13 +633,11 @@ const privacyHref =
     transition: left 180ms var(--ease-out);
   }
 
-  .consent-switch-input:checked ~ .consent-switch,
-  .consent-switch--on {
+  .consent-switch-input:checked ~ .consent-switch {
     background: var(--consent-accent);
   }
 
-  .consent-switch-input:checked ~ .consent-switch::after,
-  .consent-switch--on::after {
+  .consent-switch-input:checked ~ .consent-switch::after {
     left: 1.28rem;
   }
 
@@ -839,8 +645,6 @@ const privacyHref =
     outline: 2px solid var(--consent-accent);
     outline-offset: 2px;
   }
-
-  .consent-switch--locked { opacity: 0.5; }
 
   .consent-save-wrap {
     padding: 0.9rem;
@@ -882,7 +686,6 @@ const privacyHref =
     }
 
     .consent-btn { min-height: 3rem; font-size: 0.94rem; }
-    .consent-summary { min-height: 3rem; }
 
     .consent-panel:not([hidden]) {
       animation: consent-panel-mobile-in 300ms var(--ease-out) both;

@@ -49,7 +49,9 @@ export const ADSENSE_SLOT_OVERRIDE = "7361631253";
  *   5. passer live: true → les emplacements deviennent visibles
  */
 export const adsenseConfig = {
-  /** Charge le SDK adsbygoogle.js sur consentement (nécessaire pour la review Google). */
+  /** Active les emplacements `AdBanner` dans les templates. Ne gouverne PAS le
+   *  chargement du SDK adsbygoogle.js : celui-ci est inconditionnel, en dur dans
+   *  le `<head>` de BaseLayout, sur toutes les pages et toutes les langues. */
   enabled: true,
   /** Affiche les emplacements publicitaires. Mettre à true APRÈS approbation AdSense. */
   live: false,
