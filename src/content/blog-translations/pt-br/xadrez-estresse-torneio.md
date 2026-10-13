@@ -8,6 +8,42 @@ excerpt: >-
 seoTitle: "Gerenciar o estresse no torneio de xadrez: psicologia e fisiologia"
 seoDescription: "Cortisol, ansiedade de performance, coerência cardíaca: como a ciência do estresse explica os erros sob pressão no xadrez e como gerenciá-los melhor."
 frSlug: echecs-stress-tournoi
+faq:
+  - question: Por que cometemos erros bobos sob a pressão do torneio ?
+    answer: >-
+      Não é burrice : é fisiologia. Sob estresse elevado, o cortisol e a adrenalina saturam
+      certos circuitos do córtex pré-frontal, precisamente os que gerenciam o cálculo de variantes profundas e a memória
+      de trabalho. O cérebro passa ao modo 'resposta rápida' em vez do modo 'reflexão planejada'. O resultado :
+      simplifica-se em excesso, fazem-se trocas prematuras, jogam-se lances 'reflexo', pouco profundos. É o mesmo
+      mecanismo que faz um cirurgião estressado ter movimentos menos precisos : a pressão degrada as funções
+      cognitivas finas antes das funções grosseiras.
+  - question: A respiração ajuda realmente a acalmar o estresse no meio da partida ?
+    answer: >-
+      Sim, com prazos realistas. A respiração lenta (4 segundos inspirando, 7 segundos de apneia, 8 segundos expirando)
+      ativa o sistema nervoso parassimpático pelo nervo vago em 60-180 segundos. Três ciclos completos durante o
+      lance do adversário (cerca de 3-5 minutos numa partida clássica) bastam para reduzir de forma mensurável a
+      frequência cardíaca e o cortisol. Não é uma solução milagrosa, mas uma intervenção fisiológica real.
+  - question: Como distinguir o estresse útil do estresse paralisante ?
+    answer: >-
+      O estresse útil (eustresse) se manifesta por uma vigilância aumentada, uma atenção focada na posição, uma
+      ligeira aceleração que melhora o tempo de reação. O estresse paralisante se manifesta por um pensamento em loop
+      ('se eu perder esta partida...'), dificuldade de calcular variantes simples, vontade de 'terminar' a
+      posição jogando rápido para sair do desconforto. A pergunta a se fazer : 'Estou pensando na posição ou
+      no que vai acontecer se eu perder a posição ?' Se for a segunda opção, o estresse passou para o lado
+      paralisante.
+  - question: Os jogadores profissionais sentem medo antes de um torneio importante ?
+    answer: >-
+      Sim, unanimemente. A diferença não é a ausência de ansiedade, mas a qualidade da regulação. Magnus Carlsen
+      descreveu se sentir fisicamente mal antes dos matches do Campeonato do Mundo. Kasparov dormia muito pouco na noite
+      anterior a uma rodada decisiva. O que distingue a elite não é a impermeabilidade ao estresse, mas a capacidade de
+      usá-lo como sinal de preparação em vez de razão para evitar a competição.
+  - question: Existem rituais pré-competição que funcionam de verdade ?
+    answer: >-
+      Os rituais funcionam se duas condições estiverem reunidas : estarem ancorados numa rotina repetida (não
+      improvisados no dia do torneio) e incluírem ao menos um elemento fisiológico real (respiração, ativação
+      física moderada). O ritual cria uma transição psicológica : o cérebro associa a sequência ao modo
+      'competição calibrada'. Em contrapartida, as superstições isoladas (usar sempre o mesmo suéter etc.) sem rotina
+      mais ampla têm pouco efeito mensurável no desempenho real.
 ---
 
 Seu ritmo cardíaco acelerou. As mãos estão ligeiramente úmidas. O relógio marca os segundos e a posição no tabuleiro está difícil : não perdida, mas difícil. Você precisa calcular, e seu cérebro parece ter decidido desacelerar exatamente agora.

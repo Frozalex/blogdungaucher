@@ -8,6 +8,41 @@ excerpt: >-
 seoTitle: "Concentração no xadrez: treinar a atenção para jogar melhor"
 seoDescription: "Treinar sua concentração no xadrez: atenção sustentada, rede de controle, plena consciência e micropausas. O que a neurociência diz sobre a atenção no jogo."
 frSlug: echecs-et-concentration
+faq:
+  - question: Por que é tão difícil manter a concentração durante uma partida longa ?
+    answer: >-
+      A atenção sustentada é um recurso limitado : o córtex pré-frontal, que a gerencia, consome muita glicose
+      e muitos neurotransmissores. Depois de 90-120 minutos de esforço cognitivo intenso, a qualidade da atenção começa a se
+      degradar de forma mensurável. Os estudos mostram um aumento dos erros de detecção e uma redução da
+      velocidade de processamento depois desse limiar. As partidas clássicas de 4-5 horas vão bem além desse limiar
+      natural : daí a importância das estratégias de gestão da atenção.
+  - question: A prática do xadrez melhora a concentração fora do tabuleiro ?
+    answer: >-
+      Os estudos mostram efeitos de transferência moderados. A prática do xadrez melhora a atenção seletiva
+      (capacidade de filtrar distrações) e a atenção sustentada, especificamente em tarefas cognitivas
+      estruturadas, semelhantes ao tabuleiro. A transferência para tarefas muito diferentes (atenção em reunião,
+      leitura passiva) é mais fraca. A meditação mindfulness mostra efeitos de transferência mais amplos
+      sobre a atenção geral.
+  - question: Pessoas com TDAH podem desenvolver concentração no xadrez ?
+    answer: >-
+      Sim, com as adaptações certas. Pessoas com TDAH têm muitas vezes uma capacidade de hiperfoco : em
+      contextos muito engajadores (videogames, atividades estimulantes), a atenção delas pode ser excepcionalmente
+      sustentada. O xadrez, com a sua mistura de desafio e estimulação cognitiva, pode disparar esse estado. A
+      dificuldade é a generalização : a concentração desenvolvida no xadrez não se transfere automaticamente a
+      tarefas menos engajadoras.
+  - question: O que fazer quando a mente divaga durante uma partida ?
+    answer: >-
+      Técnica em 3 etapas : (1) Reconhecer a dispersão sem se julgar ('acabei de pensar em outra coisa'). (2)
+      Ancoragem sensorial : apoiar as duas mãos na mesa, sentir a textura, fazer uma respiração completa.
+      (3) Voltar à posição com uma pergunta simples : 'Qual é a característica principal desta posição
+      ?' Esse retorno ativo à pergunta de base é mais eficaz que 'forçar' a concentração.
+  - question: Os jogadores de blitz têm melhor concentração que os de clássico ?
+    answer: >-
+      Não : eles têm uma forma de atenção diferente. O blitz desenvolve a atenção rápida e a tomada de decisão
+      intuitiva. As partidas clássicas desenvolvem a atenção sustentada e a reflexão planejada. As duas são
+      competências de atenção, mas distintas. Os estudos sobre jogadores que praticam exclusivamente blitz
+      mostram uma degradação da capacidade de manter uma reflexão profunda sobre posições complexas :
+      precisamente porque esse músculo de atenção sustentada não é exercitado.
 ---
 
 Existe uma ilusão sobre a concentração : pensa-se que se tem ou não se tem, que ela ocorre quando as condições são boas e desaparece quando não são. Essa visão é confortável porque isenta de toda responsabilidade.

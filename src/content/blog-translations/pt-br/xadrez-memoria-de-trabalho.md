@@ -8,6 +8,43 @@ excerpt: >-
 seoTitle: "Memória de trabalho e xadrez: o gargalo cognitivo"
 seoDescription: "Memória de trabalho no xadrez: modelo de Baddeley, chunks, capacidade de 4 a 7 elementos. Como esse gargalo cognitivo limita o cálculo de variantes."
 frSlug: echecs-memoire-de-travail
+faq:
+  - question: O que é a memória de trabalho e em que ela difere da memória de curto prazo ?
+    answer: >-
+      A memória de curto prazo se limita a armazenar informação temporariamente (guardar um número de telefone
+      por 30 segundos). A memória de trabalho faz mais : ela mantém E manipula a informação simultaneamente.
+      Calcular 47 × 3 de cabeça solicita a memória de trabalho : é preciso manter os números intermediários enquanto
+      se efetuam as operações. No xadrez, calcular uma variante de 5 lances exige manter a posição de
+      cada etapa enquanto se avalia o resultado.
+  - question: Quantos elementos podemos manter simultaneamente na memória de trabalho ?
+    answer: >-
+      A estimativa clássica de George Miller (1956) era de 7 ± 2 elementos. Trabalhos mais recentes, notadamente de Nelson
+      Cowan (2001), revisam para baixo : cerca de 4 elementos simultâneos em condições experimentais estritas.
+      No xadrez, um 'elemento' pode ser um chunk (grupo de peças ligadas), não uma peça individual : o que explica
+      por que um experiente parece 'ver mais' que um novato : ele comprime a informação em chunks com mais
+      eficácia.
+  - question: Como melhorar a memória de trabalho para o xadrez ?
+    answer: >-
+      Duas abordagens complementares. A primeira é específica : treinar o cálculo de variantes sem mexer as
+      peças, cronometrando e aumentando progressivamente a profundidade. Resolver problemas táticos às
+      cegas (fechar os olhos depois de ler a posição). Rejogar partidas célebres de memória. A segunda é
+      geral : os exercícios de N-back (uma tarefa de atualização da memória de trabalho) mostram melhoras
+      transferíveis em 20 sessões. A atividade aeróbica também melhora a memória de trabalho pelo aumento do fluxo
+      sanguíneo pré-frontal.
+  - question: O estresse afeta a memória de trabalho durante uma partida ?
+    answer: >-
+      Sim, diretamente. O cortisol elevado (hormônio do estresse) perturba as funções do córtex pré-frontal dorsolateral,
+      que gerencia a memória de trabalho. Estudos mostram uma redução de 15 a 25% da capacidade de memória de trabalho
+      sob estresse psicológico moderado : o que se traduz numa diminuição da profundidade de cálculo e num
+      aumento dos erros de monitoramento (esquecer as ameaças do adversário). É um dos mecanismos que explica
+      os blunders sob pressão em torneio.
+  - question: Por que as distrações durante uma partida são tão prejudiciais ?
+    answer: >-
+      Porque criam uma 'dupla tarefa' que divide os recursos da memória de trabalho. Mesmo uma distração
+      breve (uma conversa, um ruído inesperado) força o sistema executivo a reorientar a atenção e a reconstruir
+      o contexto cognitivo da partida. Estudos de dupla tarefa mostram uma degradação de 20 a 40% do
+      desempenho em tarefas de memória de trabalho durante uma distração, mesmo leve. É por isso que as salas
+      de torneio sérias impõem silêncio.
 ---
 
 Imagine que você calcula uma variante de 6 lances. Você avança mentalmente o peão, seu adversário responde com o cavalo, você desenvolve o bispo, o cavalo salta novamente, sua torre entra em jogo, e…

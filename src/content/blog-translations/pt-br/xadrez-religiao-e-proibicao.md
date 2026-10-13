@@ -7,6 +7,40 @@ excerpt: >-
 seoTitle: "Xadrez e religião: a história das proibições religiosas do jogo"
 seoDescription: "Por que a Igreja, o islão e a ortodoxia proibiram o xadrez? Pedro Damião, São Luís, a fatwa de 2016: mil anos de desconfiança religiosa em relação ao jogo, e sua reabilitação."
 frSlug: echecs-religion-et-interdit
+faq:
+  - question: O xadrez foi realmente proibido pela Igreja católica ?
+    answer: >-
+      Não por um dogma universal, mas por uma longa série de proibições pontuais, sobretudo para o clero. Por volta de 1061, o
+      cardeal Pedro Damião censura um bispo por ter jogado ; a regra dos Templários (1129) bane o jogo ; vários
+      concílios e sínodos medievais proíbem aos clérigos tocá-lo ; uma ordenação de São Luís, em 1254, o proíbe
+      entre os jogos considerados ociosos. O alvo não era o tabuleiro em si, mas a sua associação à aposta e à perda de
+      tempo. O jogo será reabilitado a partir do século XIV.
+  - question: Por que o islã tem uma relação ambígua com o xadrez ?
+    answer: >-
+      Porque a licitude do jogo (shatranj) depende de condições, não do jogo em si. Os juristas examinaram sobretudo
+      três riscos : a aposta em dinheiro (proibida), a negligência da oração e a linguagem ou as paixões
+      ruins. A escola xafiita se mostrou a mais tolerante ; outras, mais reticentes. Daí posições muito
+      variáveis segundo as épocas e os países : o Irã baniu o xadrez depois de 1979, antes de Khomeini autorizá-lo
+      em 1988 ; o grão-mufti da Arábia Saudita o declarou ilícito em 2016.
+  - question: A fatwa saudita de 2016 proíbe realmente o xadrez ?
+    answer: >-
+      Em janeiro de 2016, o grão-mufti da Arábia Saudita, xeique Abdulaziz Al ash-Sheikh, qualificou o xadrez de
+      « desperdício de tempo e de dinheiro » e de fonte de inimizade, colocando-o entre as coisas ilícitas. Mas um parecer
+      religioso (fatwa) não tem força de lei automática : a Federação Saudita de Xadrez esclareceu que nenhuma
+      proibição oficial decorria dele, e um torneio aconteceu pouco depois. O episódio ilustra a distância entre uma
+      condenação moral e uma proibição efetiva.
+  - question: O judaísmo autoriza o xadrez, mesmo no shabat ?
+    answer: >-
+      O judaísmo em geral tolerou, e até valorizou, o xadrez como exercício intelectual. O debate principal recai
+      sobre o shabat : alguns decisores o permitiram com a condição de não anotar a partida (o que se aproximaria
+      de escrever) e de usar um tabuleiro que não seja « posto de lado » (muktzeh). Jogos de xadrez especialmente
+      reservados ao shabat, às vezes em prata, existiram em algumas comunidades para afastar a objeção.
+  - question: Por que religiões temiam um simples jogo de tabuleiro ?
+    answer: >-
+      Porque um jogo nunca é só um tabuleiro. As autoridades religiosas viam nele três perigos reais, aos seus olhos :
+      o dinheiro apostado (o jogo era muitas vezes associado à aposta, como os dados), o tempo desviado da oração e do dever,
+      e as paixões que ele excita (raiva da derrota, orgulho da vitória). Quando esses elementos eram retirados
+      (jogo sem aposta, sem excesso, apresentado como escola de virtude), a desconfiança recuava.
 ---
 
 Em janeiro de 2016, o grão-mufti da Arábia Saudita declara o xadrez ilícito. Poucos dias depois, porém, um torneio se realiza no reino.

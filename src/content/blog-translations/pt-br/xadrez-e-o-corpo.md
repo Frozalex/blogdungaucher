@@ -8,6 +8,40 @@ excerpt: >-
 seoTitle: "Xadrez e corpo: calorias, coração e fadiga física do jogador"
 seoDescription: "O xadrez esgota fisicamente? Calorias queimadas, frequência cardíaca, perda de peso de Karpov, mito das 6000 calorias: o que a fisiologia revela sobre o corpo do jogador de xadrez."
 frSlug: echecs-et-le-corps
+faq:
+  - question: O xadrez realmente faz perder peso ?
+    answer: >-
+      No mais alto nível e em competições longas, sim, a perda de peso é documentada. Mas ela não vem
+      de um esforço muscular. Explica-se por um conjunto de mecanismos : frequência cardíaca elevada durante
+      horas, hormônios do estresse (cortisol, adrenalina), sono degradado em torneio e apetite cortado pela tensão. O
+      jogador come menos, dorme mal e fica sob tensão fisiológica por dias. Para uma partida amigável de
+      domingo, o efeito é evidentemente desprezível.
+  - question: Um jogador de xadrez queima 6 000 calorias por dia ?
+    answer: >-
+      É um número célebre, avançado notadamente pelo neuroendocrinologista Robert Sapolsky para grandes mestres em
+      plena competição, mas deve ser lido com cautela. O cérebro consome cerca de 20 % da energia em repouso, e
+      pensar intensamente aumenta esse gasto apenas em alguns pontos percentuais. As milhares de calorias adicionais,
+      quando existem, vêm da reação de estresse de todo o corpo ao longo de um dia inteiro, não apenas do
+      « trabalho » dos neurônios. Pensar nisso como gasto cerebral puro é enganoso.
+  - question: Por que o coração acelera durante uma partida de xadrez ?
+    answer: >-
+      Porque o cérebro não distingue bem um perigo físico de um perigo simbólico. Uma posição crítica, um
+      relógio que desce, o medo de passar vergonha disparam a mesma cascata que diante de uma ameaça real :
+      adrenalina, aceleração cardíaca, respiração curta, tensão muscular. Medições mostram frequências
+      cardíacas de jogadores subindo a níveis dignos de um esforço esportivo moderado nos momentos decisivos, enquanto
+      eles não se movem.
+  - question: Os grandes mestres praticam esporte ?
+    answer: >-
+      Cada vez mais, sim, e é uma ruptura cultural. Magnus Carlsen pratica futebol, basquete, tênis e esqui e
+      cuida do condicionamento físico ; Fabiano Caruana incorporou trabalho de resistência à preparação. A lógica é
+      simples : uma partida clássica dura cinco a seis horas, às vezes ao longo de duas semanas de torneio. Um corpo resistente
+      suporta melhor a fadiga, absorve a resposta ao estresse e mantém a mente clara quando o adversário fraqueja.
+  - question: O xadrez é oficialmente um esporte ?
+    answer: >-
+      No plano institucional, sim : o Comitê Olímpico Internacional reconhece a federação internacional de
+      xadrez (FIDE) desde 1999, o que coloca o xadrez entre os esportes reconhecidos, sem fazer dele uma disciplina
+      olímpica. O debate « esporte ou jogo » continua vivo, mas a carga fisiológica real de uma partida de competição é
+      um dos argumentos mais sérios a favor do status de esporte.
 ---
 
 No inverno de 1984, o Campeonato Mundial opõe Anatoli Karpov a um Garry Kasparov de 21 anos. A regra diz que o match continua até seis vitórias. Ele se prolonga: 48 partidas, quase cinco meses. E ao longo das semanas, o campeão defensor definha. Karpov, já magro, teria perdido cerca de dez quilos. Em fevereiro de 1985, a FIDE interrompe a disputa, alegando o esgotamento dos jogadores. Algo inédito.

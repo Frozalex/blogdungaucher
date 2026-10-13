@@ -8,6 +8,39 @@ excerpt: >-
 seoTitle: "História do xadrez: origens, do chaturanga à dama moderna"
 seoDescription: "A história completa do xadrez: nascimento na Índia (chaturanga), passagem pela Pérsia e pelo islã, chegada à Europa, revolução da dama por volta de 1475 e padronização moderna (Staunton, FIDE)."
 frSlug: histoire-et-origines-des-echecs
+faq:
+  - question: Onde e quando o xadrez foi inventado ?
+    answer: >-
+      O consenso histórico situa a origem do xadrez no norte da Índia, por volta do século VI da nossa era, sob o
+      nome de chaturanga. O jogo simula uma batalha com os quatro componentes do exército indiano : a infantaria (os
+      peões), a cavalaria (os cavalos), os elefantes (ancestrais dos bispos) e os carros (ancestrais das torres). Ele
+      se difundiu em seguida para a Pérsia, depois para o mundo islâmico, antes de chegar à Europa por volta dos
+      séculos X-XI. Existem teorias de uma origem chinesa anterior, mas são minoritárias.
+  - question: De onde vem a expressão « xeque-mate » ?
+    answer: >-
+      Do persa. Quando o jogo passa da Índia à Pérsia, torna-se o chatrang, e a palavra « shah » (o rei) entra no
+      vocabulário. « Xeque » deriva de « shah », e « xeque-mate » de « shah mat », traduzido muitas vezes por
+      « o rei está morto », mas que significa mais exatamente « o rei está encurralado », sem escapatória. A palavra
+      viajou de língua em língua até dar « checkmate » em inglês e « scacco matto » em italiano.
+  - question: Por que a dama é a peça mais poderosa ?
+    answer: >-
+      Nem sempre foi assim, longe disso. No jogo medieval, a peça ao lado do rei era o ferz, um conselheiro que
+      avançava apenas uma casa na diagonal : a mais fraca do tabuleiro depois do peão. Por volta de 1475, na
+      Espanha e na Itália, uma reforma importante lhe dá os deslocamentos atuais (todas as direções, sem limite de
+      distância), transformando-a na peça rainha. Essa mutação, contemporânea de grandes rainhas europeias,
+      revolucionou o jogo e o tornou muito mais rápido e tático.
+  - question: As regras do xadrez sempre foram as mesmas ?
+    answer: >-
+      Não. O tabuleiro de 64 casas e o andar do rei, do cavalo e da torre são muito antigos, mas outras regras
+      mudaram bastante. A dama e o bispo eram lentos antes da reforma de 1475. O roque, o lance duplo inicial do
+      peão e a tomada en passant se fixaram entre os séculos XV e XVI. A promoção, a regra do empate e a
+      notação se padronizaram ainda mais tarde, sobretudo nos séculos XIX e XX.
+  - question: Quem inventou as peças de xadrez modernas ?
+    answer: >-
+      O modelo universal de hoje é o conjunto « Staunton », desenhado em 1849, registrado por Nathaniel Cooke e
+      promovido pelo campeão inglês Howard Staunton, de quem leva o nome. Antes dele, as formas das peças variavam
+      enormemente de um país para outro, o que complicava os torneios internacionais. O design Staunton, sóbrio e
+      imediatamente legível, se impôs como norma oficial e continua sendo o de toda competição séria.
 ---
 
 Num tabuleiro moderno, a dama é rainha. Ela varre as linhas, as colunas e as diagonais; perder a sua sem compensação é quase sempre perder a partida. Ela é, de longe, a peça mais poderosa.

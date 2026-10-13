@@ -7,6 +7,39 @@ excerpt: >-
 seoTitle: "Genética e talento no xadrez: o que a ciência diz"
 seoDescription: "Prática deliberada, QI, genética: o que realmente explica o talento no xadrez? O estudo de Hambrick, os estudos com gêmeos e o caso das irmãs Polgar."
 frSlug: echecs-et-genetique
+faq:
+  - question: Existe um 'gene do xadrez' ?
+    answer: >-
+      Não : pelo menos não um só. O desempenho no xadrez é um fenótipo complexo, influenciado por centenas de variantes
+      genéticas com efeitos individuais muito pequenos. Os estudos GWAS (genome-wide association studies) sobre traços
+      cognitivos semelhantes (QI, memória de trabalho) identificam centenas de loci, cada um contribuindo com menos de
+      0,1% da variância. Um 'gene do xadrez' único é biologicamente pouco plausível.
+  - question: A herdabilidade do talento no xadrez pode ser estimada ?
+    answer: >-
+      Não diretamente : não existe estudo de gêmeos específico para o xadrez. Por analogia com as capacidades
+      cognitivas medidas (QI, memória de trabalho, velocidade de processamento), a herdabilidade situa-se provavelmente
+      entre 40% e 70% no adulto. Mas a herdabilidade é uma estatística de população, não um determinismo individual :
+      ela diz que as diferenças entre indivíduos são em parte genéticas, não que um indivíduo esteja 'limitado' pelos
+      seus genes.
+  - question: O caso das irmãs Polgár prova a superioridade do treino ?
+    answer: >-
+      Sugere fortemente, mas não prova. László Polgár aplicou o seu programa de treino intensivo às três filhas, e as
+      três se tornaram jogadoras de altíssimo nível, com Judit chegando ao top 10 mundial. A interpretação
+      'pró-treino' é sedutora. A interpretação alternativa : uma família que produz três crianças com disposições
+      cognitivas excepcionais e um ambiente de treino ótimo. Os dois fatores são provavelmente verdadeiros.
+  - question: Um jogador 'sem talento' pode atingir o nível de mestre ?
+    answer: >-
+      Os dados sugerem que sim : para a maioria das pessoas, o nível de mestre (FIDE ~2200-2300) é alcançável com um
+      treino suficientemente deliberado, e Ericsson estimava isso em 10 000-20 000 horas de prática deliberada. O nível
+      de grande mestre (FIDE > 2500) é mais seletivo, com uma parcela maior de variância não explicada apenas pela
+      prática. O nível de campeão do mundo implica muito provavelmente uma combinação rara de prática intensiva e
+      predisposições excepcionais.
+  - question: "Epigenética e xadrez : o potencial pode ser influenciado pelo ambiente ?"
+    answer: >-
+      A epigenética estuda como o ambiente modifica a expressão dos genes sem alterar a sequência de DNA. No caso das
+      capacidades cognitivas, fatores como estresse precoce, nutrição e enriquecimento do ambiente influenciam a
+      expressão gênica no cérebro. Uma criança com predisposições genéticas cognitivas, mas criada num ambiente pobre
+      em estimulação, não vai expressar esse potencial plenamente, e vice-versa.
 ---
 
 Durante muito tempo, a psicologia cognitiva tinha uma resposta clara : o talento é essencialmente construído. A prática deliberada, intensa e estruturada, explica a maior parte da excelência humana. Os grandes mestres não nasceram com um dom misterioso : simplesmente trabalharam mais e melhor.

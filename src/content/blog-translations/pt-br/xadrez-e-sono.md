@@ -7,6 +7,37 @@ excerpt: >-
 seoTitle: "Xadrez e sono: como a recuperação cognitiva impulsiona sua progressão"
 seoDescription: "Sono REM, consolidação da memória, privação de sono e desempenho no xadrez: o que a neurociência diz sobre a noite como treinamento invisível."
 frSlug: echecs-et-sommeil
+faq:
+  - question: Quantas horas de sono são necessárias para render no xadrez ?
+    answer: >-
+      Os dados sobre desempenho cognitivo convergem para 7 a 9 horas num adulto (Walker, 2017 ; NSF Sleep
+      Foundation). Abaixo de 6 horas, as funções executivas (cálculo, inibição das respostas ruins,
+      planejamento) se degradam de forma mensurável. Para um torneio sério, a regularidade do sono (mesma hora de
+      dormir e de acordar) importa mais que a duração bruta.
+  - question: A soneca melhora realmente o desempenho no xadrez ?
+    answer: >-
+      Sim, para a memória de reconhecimento de posições e para a vigilância sustentada. A soneca de 20-30 minutos (a
+      chamada 'power nap') melhora a atenção e reduz a sonolência sem criar inércia do sono. A soneca de 90 minutos
+      permite um ciclo REM completo, mais útil para a consolidação de procedimentos complexos (variantes). Evite a
+      soneca depois das 15h para não perturbar o sono noturno.
+  - question: Estudar xadrez antes de dormir é eficaz ?
+    answer: >-
+      Sim : é um dos usos mais documentados da consolidação da memória. Estudar finais ou
+      temas táticos nos 30-60 minutos antes de dormir expõe o cérebro ao material que será consolidado durante
+      o sono lento seguinte. Evite, porém, os blitz de fim de noite : a ansiedade ligada aos resultados e a tela
+      luminosa perturbam o adormecer.
+  - question: O que acontece cognitivamente depois de uma partida longa à noite ?
+    answer: >-
+      Uma partida de 5 horas à noite induz um nível de fadiga cognitiva equivalente a 20 horas de vigília para as
+      funções de cálculo (estimativa baseada nos dados de Harrison & Horne). Em torneio, o cérebro consome cerca de
+      20% de calorias adicionais (estudos de fMRI). A recuperação exige uma noite completa : um intervalo de
+      2h não basta.
+  - question: Os grandes mestres têm rotinas de sono específicas ?
+    answer: >-
+      Vários relatos convergem : a maioria dos jogadores de alto nível protege o sono em torneio com tanto
+      escrúpulo quanto a preparação de abertura. Magnus Carlsen evita partidas noturnas tanto quanto possível.
+      Anand usa tampões de ouvido e máscara de dormir em viagem. Alguns jogadores relatam
+      o uso de melatonina para lidar com a diferença de fuso horário em torneios internacionais.
 ---
 
 Imagine que você tivesse um treinador invisível que consolida seu repertório de aberturas enquanto você dorme, que conecta os padrões táticos que você estudou hoje aos que você conhece há anos, e que elimina as interferências entre as variantes que você acabou de aprender e as antigas. Esse treinador existe. É o seu sono.

@@ -7,6 +7,40 @@ excerpt: >-
 seoTitle: "Xadrez e visão espacial: como o tabuleiro treina o cérebro visuo-espacial"
 seoDescription: "Xadrez e visão espacial: rotação mental, visualização, partidas às cegas. Como o jogo desenvolve as capacidades visuo-espaciais segundo as neurociências."
 frSlug: echecs-et-vision-spatiale
+faq:
+  - question: O xadrez melhora realmente a visão espacial ?
+    answer: >-
+      Os estudos sugerem que sim. A meta-análise de Tejada-Gallardo et al. (2021), sobre 17 estudos, encontra um efeito
+      positivo significativo (ES = 0,54) da prática do xadrez sobre o raciocínio espacial. Os efeitos são mais
+      marcados em crianças (6-12 anos) que em adultos, o que sugere uma janela de desenvolvimento ótima.
+      No entanto, como para outros benefícios cognitivos do xadrez, a transferência depende da qualidade da instrução.
+  - question: Como os grandes mestres visualizam as variantes ?
+    answer: >-
+      Não de maneira fotográfica : esse é um mito popular. Os estudos de eye-tracking e de protocolos verbais (de
+      Groot, 1946 ; Charness, 1992) mostram que os grandes mestres mantêm uma representação esquemática das
+      peças *importantes* para a variante em curso, não uma imagem completa do tabuleiro. Eles usam 'âncoras
+      espaciais' (peças-chave cuja posição é mantida com precisão) enquanto o resto é tratado de forma
+      mais esquemática.
+  - question: O que é a rotação mental e por que ela importa no xadrez ?
+    answer: >-
+      A rotação mental é a capacidade de girar mentalmente um objeto tridimensional para examiná-lo de um
+      ângulo diferente. No xadrez, ela se aplica de outra forma : calcular o que o adversário vê do seu lado
+      do tabuleiro (inverter mentalmente a perspectiva), ou visualizar como uma posição evolui depois de vários lances
+      (transformação temporal da posição). Essas duas operações ativam regiões semelhantes às da rotação
+      mental clássica.
+  - question: As partidas às cegas são benéficas para a visualização ?
+    answer: >-
+      Sim, é o exercício mais direto para desenvolver a visualização. Começar por partidas simples às
+      cegas contra si mesmo (jogar um início de abertura de memória e depois reabrir o tabuleiro para verificar) é
+      acessível a partir de um nível intermediário. As partidas às cegas completas contra um adversário são reservadas
+      a jogadores fortes (a partir de 1600-1700 Elo, aproximadamente), mas exercícios parciais (5-10 primeiros lances às
+      cegas) podem ser praticados bem abaixo disso.
+  - question: O xadrez ajuda as crianças na matemática espacial ?
+    answer: >-
+      Provavelmente, via o raciocínio espacial. A matemática espacial (geometria, trigonometria, certos aspectos
+      da álgebra) exige uma representação mental das formas e das suas transformações. Os estudos mostram
+      que as crianças que praticam xadrez melhoram as notas em geometria mais que em aritmética pura. O
+      elo é o raciocínio espacial, que é um componente comum.
 ---
 
 [Viswanathan Anand](https://pt.wikipedia.org/wiki/Viswanathan_Anand) jogou 8 partidas de xadrez simultaneamente, às cegas, sem ver nenhum tabuleiro, vencendo todos os adversários. Em sua cabeça: 8 posições diferentes, cada uma com dezenas de peças, histórias de partidas distintas, planos e contra-planos : tudo mantido simultaneamente durante horas.

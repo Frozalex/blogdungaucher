@@ -7,6 +7,32 @@ excerpt: >-
 seoTitle: "Xadrez na prisão: reabilitação, funções executivas e reincidência"
 seoDescription: "Xadrez nas prisões: Change Through Chess, San Quentin, Rikers Island. Efeitos mensuráveis sobre a impulsividade e a reincidência. A chess therapy como ferramenta de reabilitação."
 frSlug: echecs-en-prison
+faq:
+  - question: "Existem programas de xadrez em prisões na França ?"
+    answer: >-
+      Existem iniciativas pontuais, conduzidas por clubes locais e voluntários, às vezes com o
+      apoio da Federação Francesa de Xadrez. Não existe, até hoje, um programa nacional
+      estruturado. Se você é educador do sistema penitenciário ou voluntário e quer lançar algo, a FFE
+      pode ser um ponto de contato útil.
+  - question: "Os detentos podem participar de torneios ?"
+    answer: >-
+      Alguns estabelecimentos organizam torneios internos. Em alguns casos documentados no Reino Unido
+      e nos Estados Unidos, detentos participaram de competições contra jogadores externos, às vezes
+      a distância, por sistemas seguros. O Change Through Chess organizou vários desses encontros, e
+      os participantes muitas vezes os descrevem como uma experiência marcante : ser tratado como jogador,
+      não como número.
+  - question: "Isso também funciona com jovens em dificuldade fora do meio carcerário ?"
+    answer: >-
+      Sim. Programas semelhantes existem em bairros desfavorecidos, em escolas de
+      educação prioritária e em centros de acolhimento de menores. Os mecanismos cognitivos visados são
+      idênticos. Os resultados observados são comparáveis, muitas vezes com uma recepção mais fácil, já que
+      o ambiente carcerário acrescenta uma camada de desconfiança em relação a qualquer iniciativa educativa.
+  - question: "É possível usar o xadrez para trabalhar a empatia ?"
+    answer: >-
+      É uma das dimensões mais interessantes. Antecipar o lance do adversário implica se
+      colocar no lugar dele, modelar a sua visão do tabuleiro, os seus medos, as suas intenções. É uma forma
+      concreta, mensurável e repetida de exercício da teoria da mente, que as ciências comportamentais
+      consideram um dos fundamentos da empatia.
 ---
 
 São 14h numa unidade penitenciária na periferia de Londres. A sala é pequena, o mobiliário desgastado. Dois detentos estão sentados diante de um tabuleiro apoiado numa mesa de fórmica. Não há vigilância próxima : o agente está no corredor.

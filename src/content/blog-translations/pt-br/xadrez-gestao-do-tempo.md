@@ -8,6 +8,37 @@ excerpt: >-
 seoTitle: "Gestão do tempo no xadrez: dominar o relógio e a decisão sob pressão"
 seoDescription: "Zeitnot, paralisia por análise, alocação ótima do tempo: o que a psicologia da decisão diz sobre a gestão do relógio no xadrez em torneio."
 frSlug: echecs-gestion-du-temps
+faq:
+  - question: Quanto tempo dedicar a cada lance numa partida clássica ?
+    answer: >-
+      Não existe duração universal : tudo depende da criticidade do lance. Os estudos sobre partidas de grandes
+      mestres mostram que os lances críticos (mudança de plano, sacrifício, entrada em final) recebem em média
+      10-15 vezes mais tempo que os lances de 'rotina'. A boa pergunta não é 'quanto tempo gastei
+      ?', mas 'identifiquei os momentos críticos e aloquei o tempo de acordo ?'
+  - question: Como evitar o zeitnot ?
+    answer: >-
+      Três causas principais do zeitnot : (1) procurar o lance perfeito em vez do lance bom : perfeccionismo que
+      consome tempo sem melhorar a decisão ; (2) pensar nas posições erradas (depois de um lance trivial, não há
+      necessidade de 10 minutos) ; (3) analisar variantes que você não vai jogar. O remédio : fixar um limiar de
+      decisão ('se não achar nada melhor em 5 minutos, jogo o melhor lance candidato') e mantê-lo.
+  - question: O blitz melhora a gestão do tempo na partida clássica ?
+    answer: >-
+      Em parte. O blitz treina a tomada de decisão rápida e a intuição posicional, mas também pode criar
+      maus hábitos se se jogar sistematicamente sem calcular a fundo. Os estudos (Charness et al., 1996)
+      mostram que os jogadores que só jogam blitz estagnam no clássico. O bom equilíbrio : blitz para
+      a intuição e a rapidez, clássico para aprofundar o cálculo e a estratégia.
+  - question: O que fazer quando se está em zeitnot severo (menos de 2 minutos) ?
+    answer: >-
+      Mudar completamente o modo de pensar : parar de calcular variantes longas, jogar apenas os lances que você
+      vê imediatamente, buscar simplificar a posição (trocas). Em posição vencedora : buscar a
+      simplificação mais segura, não a continuação mais brilhante. Em posição perdida : criar problemas
+      práticos, deixar a posição o mais complicada possível para o adversário.
+  - question: O relógio dá informações sobre o adversário ?
+    answer: >-
+      Sim : é uma leitura muitas vezes negligenciada. Se o seu adversário pensa longamente em lances que lhe pareciam
+      óbvios, talvez ele tenha visto algo que você não viu. Se joga muito rápido, ou está em território
+      teórico conhecido, ou está em zeitnot e jogando por intuição. Vigiar o uso do tempo do adversário faz parte da
+      psicologia de torneio : os grandes mestres leem o adversário tanto no relógio quanto no tabuleiro.
 ---
 
 O relógio é o grande revelador do jogo. Você pode fingir ter calculado a fundo quando tinha 30 minutos. Com 3 minutos, não há mais pretensão possível : apenas seus hábitos cognitivos nus, sob pressão.

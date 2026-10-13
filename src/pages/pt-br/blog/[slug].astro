@@ -9,7 +9,6 @@ import ShareButtons from "../../../components/ShareButtons.astro";
 import Comments from "../../../components/Comments.astro";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleVideo from "../../../components/ArticleVideo.astro";
-import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import FocusMode from "../../../components/FocusMode.astro";
 
 import { categoryMap, siteConfig, PT_BR_LAUNCH_DATE } from "../../../data/site";
@@ -70,7 +69,12 @@ const ptBrEntryRaw = ptBrEntries.find((e) => (e.data.frSlug ?? getPostSlug(post)
 const ptBrEntry = ptBrEntryRaw && !ptBrEntryRaw.data.draft ? ptBrEntryRaw : undefined;
 const ptBrMarkdown = ptBrEntry?.body;
 
-const faqsForDisplay = ptBrEntry?.data?.faq ?? post.data.faq ?? [];
+/** FAQ : jamais de repli sur celle de l'article FR quand une traduction existe.
+ *  42 traductions PT-BR n'ont pas de `faq` et affichaient donc des questions
+ *  /réponses en français au bas d'une page portugaise — y compris dans le
+ *  JSON-LD FAQPage. Sans traduction en revanche, la page sert déjà le texte FR
+ *  sous bandeau : la FAQ FR y reste cohérente. */
+const faqsForDisplay = ptBrEntry ? (ptBrEntry.data.faq ?? []) : (post.data.faq ?? []);
 const stripInlineFaq = faqsForDisplay.length > 0;
 const mdSource = ptBrMarkdown ?? post.body ?? "";
 const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
@@ -127,6 +131,10 @@ const ptBrTitle     = ptBrEntry?.data?.seoTitle ?? ptBrEntry?.data?.title ?? pos
 const ptBrDesc      = ptBrEntry?.data?.seoDescription ?? ptBrEntry?.data?.excerpt ?? post.data.seoDescription ?? post.data.excerpt;
 const displayTitle  = ptBrEntry?.data?.title ?? post.data.title;
 const displayExcerpt = ptBrEntry?.data?.excerpt ?? post.data.excerpt;
+/** Sans traduction PT-BR publiée, la page sert le texte FR + bandeau d'avertissement.
+ *  Sert aussi de condition de `noindex` : indexer du français sur une URL /pt-br/
+ *  revient à présenter un duplicata de l'article FR. Le sitemap applique le
+ *  même filtre (cf. src/pages/sitemap.xml.ts). */
 const hasPtBrTranslation = !!ptBrEntry;
 // Tags : seulement ceux de la traduction pt-br (les tags FR de la source ne sont pas
 // affichés pour éviter du français sur la page). Vides tant que non traduits.
@@ -192,6 +200,7 @@ const structuredData = [
   structuredData={structuredData}
   accentColor={category.accent}
   tags={post.data.tags}
+  noindex={!hasPtBrTranslation}
 >
   <article class="article-page" style={`--c:${category.accent}`}>
     {/* Fil d'Ariane fin au-dessus do hero */}
@@ -327,9 +336,9 @@ const structuredData = [
           )}
         </div>
 
-        {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
-          <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
-        )}
+        {/* Pas de KeyTakeaways ici : le composant a un en-tête « L'essentiel » en
+            dur et recevrait les puces FR de l'article source, alors que la
+            traduction porte déjà sa propre section « O que guardar ». */}
 
         {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="pt-br" />}
 

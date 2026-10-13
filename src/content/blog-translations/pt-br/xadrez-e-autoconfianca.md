@@ -7,6 +7,38 @@ excerpt: >-
 seoTitle: "Xadrez e autoconfiança: construir uma autoestima sólida no tabuleiro"
 seoDescription: "Como o xadrez forja a autoconfiança? Autoeficácia, mindset de crescimento, análise pós-partida: psicologia da performance aplicada ao jogador."
 frSlug: echecs-et-confiance-en-soi
+faq:
+  - question: O xadrez ajuda realmente a desenvolver a autoconfiança ?
+    answer: >-
+      Sim, mas de forma condicional. A prática do xadrez em si não basta : é a maneira como se
+      lida com as derrotas e com a análise pós-partida que constrói a confiança durável. Estudos sobre autoeficácia
+      (Bandura, 1997) mostram que as experiências de domínio progressivo (não as vitórias fáceis) são o principal
+      motor da confiança.
+  - question: Qual é a diferença entre autoconfiança e arrogância no xadrez ?
+    answer: >-
+      A confiança repousa sobre o conhecimento dos próprios processos (preparação, cálculo, gestão do tempo) e permanece
+      estável diante da derrota. A arrogância é uma confiança fundada na comparação com os outros : ela
+      desaba no primeiro adversário mais forte. Os grandes mestres descrevem uma confiança processual : 'preparei bem
+      esta abertura', não 'sou melhor que ele'.
+  - question: Como reconstruir a confiança depois de uma série de derrotas ?
+    answer: >-
+      Três etapas documentadas : (1) analisar cada partida para identificar os erros factuais em vez de
+      generalizar ('perdi esta cravada' vs 'sou um zero') ; (2) voltar a posições de força : trabalhar os
+      finais ou as táticas dominadas para ter experiências de domínio positivas ; (3) separar identidade e
+      desempenho. O psicólogo esportivo Kenneth Kaufman distingue o ego orientado a resultado (frágil) do ego orientado
+      a competência (resistente).
+  - question: O Elo impacta a autoconfiança ?
+    answer: >-
+      Fortemente, e não sempre de forma positiva. O rating Elo é visível, público e numérico : o que o torna uma
+      ferramenta de comparação social intensa. Os estudos sobre comparação social (Festinger, 1954) mostram que ela
+      alimenta a ansiedade quando é ascendente (olhar para quem está acima). O bom uso do Elo é
+      longitudinal : comparar o próprio progresso consigo mesmo ao longo do tempo, não com um adversário pontual.
+  - question: A mentalidade de crescimento se aplica realmente ao xadrez ?
+    answer: >-
+      Sim. A pesquisa de Carol Dweck (Stanford) sobre mindset foi testada em muitos contextos competitivos.
+      Os jogadores com mentalidade fixa ('sou um bom jogador') fogem de adversários fortes demais para proteger a
+      própria imagem. Os jogadores com mentalidade de crescimento ('esta partida me ensina algo') escolhem
+      deliberadamente adversários mais fortes. O segundo perfil progride significativamente mais rápido a longo prazo.
 ---
 
 Há uma ideia preconcebida tenaz nos clubes de xadrez : a confiança vem das vitórias. Você ganha, se sente bem, joga melhor. É lógico, é até sedutor. É também em grande parte falso.

@@ -8,6 +8,46 @@ excerpt: >-
 seoTitle: "Xadrez e precariedade: o tabuleiro pode transcender as desigualdades?"
 seoDescription: "Chess in the Slums, capital cultural, acesso aos recursos: o xadrez diante das desigualdades sociais, promessa de emancipação e realidades estruturais."
 frSlug: echecs-et-precarite
+faq:
+  - question: O xadrez é realmente acessível a famílias em situação de precariedade ?
+    answer: >-
+      O material básico, sim : um jogo de xadrez custa 10-20 euros, o Lichess é gratuito, as regras básicas se aprendem
+      rápido. Mas o progresso sério exige recursos desigualmente distribuídos : um treinador (100-150
+      euros/hora para um bom professor), livros ou assinaturas de plataformas de aprendizado, a participação
+      em torneios (taxas de inscrição, transporte, hotel para torneios distantes) e, sobretudo, tempo : as
+      famílias precárias têm muitas vezes pais menos disponíveis para o acompanhamento e crianças mais submetidas a
+      restrições extraescolares.
+  - question: O que é exatamente o Chess in the Slums of Africa ?
+    answer: >-
+      É uma organização nigeriana fundada por Tunde Onakoya em 2018 nas favelas de Lagos. Ela ensina
+      xadrez a crianças de famílias muito pobres, usando o jogo como porta de entrada para bolsas de estudo
+      e um acompanhamento educativo global. Onakoya atraiu atenção internacional em 2024 com uma maratona
+      de xadrez de 58 horas em Nova York para arrecadar fundos. A organização alcançou milhares de crianças e enviou
+      várias delas ao ensino superior.
+  - question: Houve campeões de xadrez realmente vindos da pobreza ?
+    answer: >-
+      Sim, vários. Wilhelm Steinitz, primeiro campeão do mundo, vinha de uma família muito modesta em Praga e
+      morreu na pobreza em Nova York, em 1900. Samuel Reshevsky, menino prodígio americano de origem polonesa, viajou
+      na infância com os pais dando exibições pagas para sobreviver : uma forma de mendicância
+      intelectual. Mais recentemente, Magnus Carlsen não vinha da pobreza, mas a sua ascensão partiu de uma
+      cidadezinha norueguesa sem tradição enxadrística. Essas trajetórias existem, mas continuam sendo exceções num
+      domínio em que os recursos familiares têm papel importante.
+  - question: O xadrez na escola reduz realmente as desigualdades escolares ?
+    answer: >-
+      Os efeitos existem, mas devem ser matizados. Estudos sobre programas de xadrez em escolas desfavorecidas
+      (no Equador, nos Estados Unidos, na Espanha) mostram melhoras nas notas de matemática e nos
+      comportamentos em sala, particularmente em crianças com dificuldades escolares preexistentes. Mas esses
+      efeitos dependem fortemente da qualidade da implementação : um programa mal conduzido por um professor não formado
+      produz poucos resultados. E o efeito sobre as desigualdades a longo prazo (acesso ao ensino superior, renda futura)
+      não está demonstrado.
+  - question: Por que os Grandes Mestres vêm tão pouco de meios precários na Europa ocidental ?
+    answer: >-
+      O caminho até o título de Grande Mestre exige anos de formação intensiva (em geral 10 000+ horas,
+      segundo Ericsson), acesso a treinadores de alto nível, participação em muitos torneios internacionais e,
+      muitas vezes, um pai ou mãe que se dedica fortemente (o modelo das irmãs Polgár, em que o pai organizou tudo, é
+      representativo). Essas exigências correspondem bem ao que os recursos de uma família de boa renda permitem e mal
+      ao que permite uma família precária. A exceção é a antiga URSS, onde o Estado financiava a formação dos jogadores
+      talentosos independentemente da origem social.
 ---
 
 Lagos, 2018. Tunde Onakoya instala um tabuleiro de xadrez numa favela de Oshodi. As crianças que brincam na rua se aproximam, curiosas. Ele não tem sala, não tem cadeiras, não tem computadores. Tem as peças, um tabuleiro e uma ideia.

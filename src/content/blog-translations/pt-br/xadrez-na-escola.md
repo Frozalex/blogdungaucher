@@ -8,6 +8,37 @@ excerpt: >-
 seoTitle: "Xadrez na escola: benefícios reais no aprendizado segundo a ciência"
 seoDescription: "Meta-análise Sala & Gobet, programa armênio, Venezuela: o que a pesquisa realmente diz sobre o impacto do xadrez escolar nos resultados e no desenvolvimento cognitivo."
 frSlug: echecs-et-ecole
+faq:
+  - question: O xadrez melhora os resultados em matemática ?
+    answer: >-
+      Os dados sugerem um efeito positivo, mas moderado. A meta-análise de Sala & Gobet (2016, 24 estudos) encontra um efeito
+      global significativo (d = 0,38). No entanto, a meta-análise de 2017 da mesma dupla, mantendo apenas os estudos
+      com grupos de controle pareados, mostra efeitos menores. Os benefícios em matemática são mais marcados na
+      aritmética e na resolução de problemas que nos conceitos abstratos.
+  - question: Com que idade começar o xadrez para obter os benefícios escolares ?
+    answer: >-
+      Os estudos tratam principalmente de crianças de 6 a 12 anos. Os programas mais eficazes começam por volta dos
+      6-7 anos (1º e 2º ano) : uma idade em que as funções executivas estão em desenvolvimento ativo e particularmente sensíveis às
+      intervenções. Os benefícios na leitura e na matemática são documentados já no primeiro ano de prática, com
+      instrução de qualidade.
+  - question: O xadrez pode substituir outras atividades extracurriculares ?
+    answer: >-
+      Não : os estudos não mostraram que o xadrez tenha vantagem global sobre outras atividades de jogo estruturado
+      (música instrumental, Go, jogos de estratégia). O benefício específico do xadrez está na combinação de
+      regras formais, planejamento em várias etapas e autonomia cognitiva. Uma hora de aula de piano por semana
+      produz benefícios comparáveis nas funções executivas.
+  - question: Qual é o modelo de programa escolar de xadrez mais eficaz ?
+    answer: >-
+      Os estudos convergem para vários fatores : (1) instrução explícita dos princípios estratégicos, não
+      apenas das regras ; (2) ao menos 30 horas de ensino ao longo do ano escolar (1h/semana, no mínimo) ; (3)
+      professores formados especificamente : um treinador de xadrez se sai melhor que um professor sem formação enxadrística
+      ; (4) integração ao currículo em vez de atividade periférica.
+  - question: Por que a Armênia tornou o xadrez obrigatório ?
+    answer: >-
+      A decisão armênia (2011) combina várias motivações : herança cultural (Tigran Petrossian, campeão do
+      mundo, é armênio), desenvolvimento cognitivo da juventude e soft power : a Armênia é um dos países de melhor
+      desempenho no mundo por habitante no xadrez de competição. O programa 'Chess in Schools' é parcialmente financiado
+      pela FIDE e serve de modelo para vários países do Leste da Europa.
 ---
 
 Em 2011, a Armênia fez algo que poucos países ousaram : tornar o xadrez obrigatório em todas as escolas primárias. Não como atividade extracurricular opcional, não como projeto piloto em algumas turmas voluntárias. Como matéria do currículo, tanto quanto a matemática ou a leitura. Três horas por semana, para todos os alunos de 6 a 9 anos.

@@ -8,6 +8,45 @@ excerpt: >-
 seoTitle: "Elo e autoestima: quando sua classificação vira sua identidade"
 seoDescription: "Elo anxiety, orientação ego vs maestria, identidade e performance: a psicologia do ranking Elo e como desacoplar sua autoestima do seu Elo."
 frSlug: echecs-estime-de-soi-elo
+faq:
+  - question: Como funciona o cálculo do Elo ?
+    answer: >-
+      O sistema Elo calcula a probabilidade teórica de um jogador vencer o outro em função da diferença de rating.
+      Se você vence um adversário de mesmo Elo, ganha cerca de 16 pontos (e ele perde 16). Se vence um
+      adversário 200 pontos acima, ganha mais (cerca de 24 pontos) e ele perde mais. Se você perde contra
+      um adversário 200 pontos abaixo, os pontos perdidos são significativos (cerca de 24). A fórmula é
+      calibrada estatisticamente para que, no conjunto das partidas, os ratings convirjam para os níveis reais
+      de jogo.
+  - question: Por que os jogadores são tão apegados ao seu Elo ?
+    answer: >-
+      Porque o Elo é um número preciso, publicamente visível, comparativo e atualizado com regularidade. Essas
+      características o tornam um objeto psicológico diferente da maioria das medidas de desempenho na vida :
+      é impossível ignorar, fácil de comparar e está imediatamente disponível. Em sociedades que valorizam a
+      medição e a comparação, o Elo cumpre uma função identitária que poucos outros indicadores de competência
+      permitem.
+  - question: Como evitar se identificar demais com o próprio Elo ?
+    answer: >-
+      Três práticas concretas : (1) Fixar objetivos de processo (jogar X partidas por semana, analisar X partidas
+      por mês) em vez de objetivos de resultado (atingir X de Elo). (2) Celebrar progressos de jogo independentes do
+      rating ('encontrei uma bela combinação', 'conduzi bem este final'). (3) Manter atividades
+      de identidade fora do Elo : o progresso no estudo das aberturas, a troca com a comunidade, o estudo
+      de partidas históricas. Quando a identidade enxadrística tem várias dimensões, a flutuação de uma só (o Elo) é
+      menos desestabilizante.
+  - question: O Elo online e o Elo FIDE são comparáveis ?
+    answer: >-
+      Não diretamente. Os Elos online (Chess.com, Lichess) são calculados de outra forma, têm populações
+      diferentes e correspondem a ritmos diferentes (blitz, bullet, clássico). Um Elo de 1500 no Chess.com
+      em bullet não equivale a um Elo de 1500 da FIDE em partidas clássicas : medem competências
+      diferentes em populações diferentes. Em geral, os Elos online em partidas rápidas são mais baixos que os
+      Elos FIDE (população mais ampla, partidas mais curtas), mas a comparação direta não faz sentido.
+  - question: É preciso continuar jogando quando o Elo cai muito ?
+    answer: >-
+      Depende da causa. Se a queda vem de excesso de treino ou de um estado de fadiga cognitiva, uma pausa de
+      alguns dias é apropriada. Se vem de mudanças no seu jogo (aprender uma nova abertura
+      que desestabiliza temporariamente as suas referências), continuar jogando e aceitar a queda temporária é muitas
+      vezes a melhor abordagem : a curva de progresso passa por um vale antes da subida. Se vem de uma
+      subestimação dos adversários ou de erros recorrentes não analisados, parar para analisar antes de voltar a jogar
+      é mais produtivo.
 ---
 
 Há alguns anos, conheci um jogador de clube que recusava jogar em torneios há dois anos. Sua explicação : "Cheguei a 1680 e não quero cair abaixo disso. Em torneio, corro o risco de perder pontos."

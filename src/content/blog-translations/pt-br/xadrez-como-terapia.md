@@ -7,6 +7,39 @@ excerpt: >-
 seoTitle: "Xadrez terapia: ansiedade, trauma e saúde mental"
 seoDescription: "O xadrez pode ser terapêutico? Estudos sobre ansiedade, ruminação, PTSD e reabilitação cognitiva. O que a ciência diz sobre o tabuleiro como ferramenta de saúde mental."
 frSlug: echecs-et-therapie
+faq:
+  - question: O xadrez pode tratar a depressão ?
+    answer: >-
+      Os dados são promissores, mas preliminares. Os mecanismos teóricos são sólidos : o xadrez oferece
+      objetivos claros, uma sensação de competência e domínio, e uma absorção cognitiva capaz de interromper as
+      ruminações depressivas. Estudos de caso e alguns estudos-piloto mostram benefícios. Mas ainda faltam
+      ensaios randomizados controlados de grande porte. O xadrez pode ser um complemento útil ao
+      tratamento da depressão, não uma substituição das terapias validadas.
+  - question: O xadrez é usado na terapia de TEPT ?
+    answer: >-
+      Em alguns programas, sim, especialmente nos Estados Unidos, com veteranos militares. O mecanismo principal é
+      a absorção cognitiva : uma partida exigente ocupa a atenção o suficiente para reduzir as ruminações e as
+      intrusões de pensamentos traumáticos. Centros do exército americano (VA) integraram o xadrez aos seus
+      programas de atividades terapêuticas. A pesquisa rigorosa sobre essa aplicação específica ainda é
+      limitada.
+  - question: Como o xadrez é usado em psiquiatria ?
+    answer: >-
+      Historicamente, o xadrez foi integrado aos hospitais psiquiátricos desde o século XVIII : os alienistas
+      o prescreviam para ocupar e estruturar o tempo dos pacientes. Na psiquiatria moderna, é usado
+      principalmente como ferramenta de socialização e de avaliação cognitiva (planejamento, flexibilidade) nos
+      serviços de admissão, não como tratamento principal.
+  - question: O xadrez ajuda crianças com dificuldades emocionais ?
+    answer: >-
+      Sim, segundo vários estudos. O estudo de Marín et al. (2017, México) mostra uma redução dos sintomas de ansiedade
+      em crianças de 8-12 anos depois de 20 sessões. Os mecanismos : as regras claras do tabuleiro são tranquilizadoras
+      para crianças em insegurança, a sensação de competência progride rapidamente, e a relação com o adulto que
+      ensina é estruturada e previsível.
+  - question: É possível usar o xadrez na própria terapia, sem programa formal ?
+    answer: >-
+      Sim, como complemento. Os benefícios mais documentados (absorção cognitiva, sensação de competência, conexão
+      social) são acessíveis em qualquer contexto de jogo. O ideal é jogar com outras pessoas
+      (contra um treinador, no clube, online com um parceiro regular) em vez de sozinho contra o computador. A
+      dimensão relacional amplifica os benefícios terapêuticos.
 ---
 
 Em 1795, [Philippe Pinel](https://pt.wikipedia.org/wiki/Philippe_Pinel): o médico que libertou os alienados de seus grilhões no hospital Bicêtre de Paris e fundou a psiquiatria moderna : prescrevia xadrez a seus pacientes. Não por capricho : Pinel observara que a prática do jogo acalmava certos doentes agitados, os recolocava numa relação com o tempo e a atenção que sua patologia havia perturbado.

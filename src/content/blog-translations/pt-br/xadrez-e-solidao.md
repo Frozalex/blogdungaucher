@@ -8,6 +8,43 @@ excerpt: >-
 seoTitle: "A solidão no xadrez: quando o regulamento o isola"
 seoDescription: "O xadrez impõe uma solidão regulamentar única no esporte. Efeitos psicológicos, paradoxo dos clubes, impacto do jogo online no isolamento do jogador."
 frSlug: echecs-et-la-solitude
+faq:
+  - question: Os jogadores de xadrez são mais solitários que outros esportistas ?
+    answer: >-
+      Não existe estudo comparativo direto. O que se sabe : a prática intensiva do xadrez, sobretudo online,
+      está correlacionada a perfis de introversão mais elevados que a média nos estudos sobre jogadores
+      competitivos. Mas a causalidade não está estabelecida : o xadrez talvez atraia perfis introvertidos em vez
+      de criá-los. O que está documentado é que os jogadores de alto nível passam milhares de horas
+      de treino em solidão : análise de partidas, estudo de aberturas, resolução de problemas táticos, sem
+      parceiro fisicamente presente.
+  - question: O xadrez online tornou os jogadores mais isolados ?
+    answer: >-
+      Provavelmente, para parte deles. Antes das plataformas online, jogar xadrez exigia se
+      deslocar até um clube, um café, um torneio. O jogo tinha uma dimensão social obrigatória. A internet tornou o
+      jogo acessível a qualquer hora sem deslocamento, o que aumentou a quantidade de prática mas suprimiu o vínculo
+      social imposto. Relatos recorrentes nas comunidades do Chess.com e do Lichess descrevem jogadores que
+      jogam horas por dia sem nenhum vínculo com uma comunidade enxadrística local.
+  - question: O silêncio obrigatório durante as partidas é específico do xadrez ?
+    answer: >-
+      Não : o golfe, o tênis e a sinuca também impõem momentos de silêncio. Mas esses esportes sempre permitem ao
+      treinador intervir entre os sets ou os buracos, e a dimensão de equipe ou de público está presente. No xadrez
+      clássico, o silêncio é total durante toda a partida, muitas vezes 3 a 5 horas, sem possibilidade de
+      coaching, sem sinal de um treinador, sem comunicação de nenhum tipo. É uma solidão prolongada que não tem
+      equivalente direto em outros esportes.
+  - question: Como os grandes mestres lidam com a solidão dos torneios ?
+    answer: >-
+      De maneiras muito diferentes. Carlsen é conhecido por ficar no quarto de hotel entre as rodadas e evitar
+      interações sociais não necessárias : uma gestão deliberada da energia cognitiva. Mikhail Tal era o oposto
+      exato : as suas noites de torneio eram lendárias, uma descompressão compensatória à intensidade do isolamento
+      da partida. Não existe estratégia universal ; existe uma gestão pessoal da alternância entre concentração
+      e descanso.
+  - question: A solidão no xadrez é benéfica para a saúde mental ?
+    answer: >-
+      É mais nuançado do que costuma se dizer. A prática da solidão escolhida : sentar-se com um problema
+      difícil sem buscar socorro imediato : está associada a uma melhor tolerância ao desconforto cognitivo
+      (Winnicott, 'a capacidade de estar sozinho'). O xadrez pode ser um treino dessa capacidade. Mas a solidão
+      sofrida, imposta por um modo de vida exclusivamente online e sem vínculo social, produz os mesmos efeitos negativos que
+      o isolamento social em geral : ansiedade, ruminação, dificuldade de regular as emoções.
 ---
 
 Há uma regra no regulamento da FIDE que os não-jogadores não conhecem e que os jogadores acham tão natural que nunca mencionam. Durante uma partida, você não tem o direito de se comunicar com ninguém. Nem seu treinador, nem seu entorno, nem o público. Um olhar muito demorado para as arquibancadas pode ser interpretado como uma tentativa de sinal.

@@ -4,6 +4,45 @@ excerpt: "Por que certas aberturas duram décadas sem serem refutadas? O equilí
 seoTitle: "Equilíbrio de Nash e aberturas: por que o Espanhol dura 200 anos"
 seoDescription: "Siciliana, defesa berlinesa, refinamentos de Selten: como o equilíbrio de Nash explica a estabilidade das aberturas de xadrez e suas rupturas mais célebres."
 frSlug: graphes-de-nash-equilibre-ouvertures
+faq:
+  - question: "Uma abertura \"refutada\" deixa de existir ?"
+    answer: >-
+      Não exatamente. Uma refutação local prova que <strong>um</strong> caminho na variante leva a uma
+      vantagem clara para um dos lados. O resto do grafo (ordens de lances, transposições, linhas laterais) pode
+      conservar equilíbrios locais jogáveis. É por isso que as "refutações" históricas são muitas vezes
+      parciais : a variante sobrevive com uma ordem de lances diferente ou com um lance intermediário. A
+      Siciliana Sveshnikov, "refutada" no fim dos anos 1990, voltou com força nos anos 2010 sobre novos
+      equilíbrios.
+  - question: "Por que os motores não \"resolvem\" todas as aberturas ?"
+    answer: >-
+      Porque resolver = atingir o <strong>valor de Zermelo</strong> (ganho, perda, empate sob jogo perfeito
+      até o mate). Os motores produzem uma <strong>avaliação heurística</strong> a profundidade finita
+      (40-60 meios-lances, tipicamente) ; isso lhes permite <strong>classificar</strong> as aberturas,
+      <strong>encontrar equilíbrios locais</strong> e <strong>quebrar</strong> equilíbrios fracos,
+      mas não provar uma verdade absoluta. A distinção é fundamental : o Stockfish diz "esta variante
+      parece +0,2" ; ele nunca diz "esta variante é empate no sentido de Zermelo".
+  - question: "Um equilíbrio de Nash garante o melhor resultado coletivo ?"
+    answer: >-
+      Não, e isso é central. O exemplo do dilema do prisioneiro mostra bem : o equilíbrio pode ser
+      Pareto-dominado (os dois poderiam ir melhor se coordenassem, mas nenhum tem interesse em desviar sozinho).
+      No xadrez, o "Nash coletivo" seria o acordo de empate mútuo ; o "Nash competitivo" empurra para
+      posições desequilibradas, em que cada um procura explorar um erro. O formato de torneio (must-win,
+      classificação, premiação) deforma a função de utilidade e, portanto, o equilíbrio escolhido.
+  - question: "O que é um \"equilíbrio misto\" na prática, para um jogador amador ?"
+    answer: >-
+      Para um amador, é jogar <strong>duas ou três aberturas</strong> diferentes com probabilidades
+      estáveis (por exemplo 50 % Italiana, 30 % Espanhola, 20 % Escocesa). A vantagem é defensiva :
+      impede que o adversário frequente se prepare especificamente contra você. A desvantagem é ofensiva : você
+      conhece cada linha com menos profundidade. O tamanho adequado do repertório depende do seu tempo de estudo
+      semanal ; abaixo de 5 h/semana, um repertório puro costuma ser mais eficaz que um repertório misto mal
+      mantido.
+  - question: "Por que falar de \"grafos\" e não de \"árvores\" de aberturas ?"
+    answer: >-
+      Porque as aberturas <strong>transpõem</strong> : sequências de lances diferentes levam à
+      mesma posição. O peão em c4 no lance 1 ou no lance 3 pode dar a mesma posição de Réti em certas
+      linhas. Uma árvore supõe um caminho único até cada folha ; um grafo acíclico dirigido autoriza
+      vários caminhos. As bases de aberturas profissionais (ChessBase, Lichess Masters) são na verdade
+      grafos comprimidos, com milhões de transposições pré-calculadas.
 ---
 
 Por que a Defesa Siciliana é jogada em todos os níveis há cem anos? Por que a Partida Espanhola não foi "refutada" apesar de séculos de análise? Por que certas variantes teóricas desmoronam em poucos anos enquanto outras parecem indestrutíveis? A resposta a essas questões se encontra num conceito matemático elaborado por [John Nash](https://pt.wikipedia.org/wiki/John_Forbes_Nash) em 1950: o equilíbrio de Nash.

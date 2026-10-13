@@ -7,6 +7,43 @@ excerpt: >-
 seoTitle: "Xadrez e cultura popular: de Bergman a O Gambito da Rainha"
 seoDescription: "O Gambito da Rainha (Netflix), cinema, literatura, Twitch e memes: como o xadrez invadiu a cultura popular e mudou sua imagem no grande público."
 frSlug: echecs-et-culture-populaire
+faq:
+  - question: Por que O Gambito da Rainha teve tanto impacto na prática do xadrez ?
+    answer: >-
+      Vários fatores se combinaram. Primeiro o timing : lançada em outubro de 2020, em plena quarentena mundial,
+      quando as pessoas buscavam atividades em casa. Depois a qualidade narrativa e visual da série : as
+      cenas de jogo são espetacularmente bem filmadas. E sobretudo a escolha de uma protagonista feminina, o que
+      atraiu um público novo, que não teria se identificado com o típico homem gênio. O aumento de 87% nas vendas
+      de jogos e a explosão das inscrições no Chess.com foram medidos diretamente nas semanas seguintes ao
+      lançamento.
+  - question: Como o cinema representa geralmente os jogadores de xadrez ?
+    answer: >-
+      Historicamente, muito mal. O jogador de xadrez do cinema é inteligente mas associal, muitas vezes obsessivo
+      até a patologia, emocionalmente frio. É o 'gênio sombrio' : uma herança da figura de Bobby Fischer
+      no imaginário popular. Essa representação evoluiu : O Gambito da Rainha mostra uma jogadora complexa, com
+      relações humanas reais. Lances Inocentes (1993) mostrava uma criança prodígio num ambiente
+      familiar acolhedor. A nuance avança, ainda que o estereótipo persista.
+  - question: O xadrez tem papel na literatura clássica ?
+    answer: >-
+      Sim, consideravelmente. Xadrez, de Stefan Zweig (1942), continua sendo talvez a mais bela novela sobre
+      xadrez : usa o jogo como metáfora da resistência intelectual contra a desumanização nazista.
+      Vladimir Nabokov era um jogador apaixonado e integrou estruturas enxadrísticas em vários dos seus romances,
+      notadamente A Defesa de Lujin (1930). Lewis Carroll, autor de Alice no País das Maravilhas, também era jogador
+      : a continuação, Através do Espelho, se passa num tabuleiro gigante.
+  - question: Como os streamers mudaram a imagem do xadrez ?
+    answer: >-
+      Radicalmente. Streamers como Hikaru Nakamura (Grande Mestre e streamer com milhões de seguidores) ou
+      criadores do YouTube como GothamChess (Levy Rozman) mostraram o xadrez como um jogo social, divertido, comentado ao
+      vivo com reações emocionais autênticas. Essa imagem (longe do gênio solitário e silencioso) atraiu
+      um público muito mais jovem e diverso. O xadrez online é hoje muitas vezes apresentado como um e-sport
+      acessível, com os seus memes, as suas personalidades e as suas controvérsias (como o caso Niemann em 2022).
+  - question: Existem obras musicais sobre xadrez ?
+    answer: >-
+      A mais conhecida é o musical Chess (1984), com música do ABBA (Benny Andersson e Björn Ulvaeus),
+      sobre um match fictício entre um jogador americano e um soviético durante a Guerra Fria. Foi encenado na Broadway
+      e no West End, e várias canções seguem populares ('One Night in Bangkok', 'I Know Him So Well'). O
+      xadrez aparece também na música hip-hop como símbolo de estratégia e inteligência : RZA, do Wu-Tang
+      Clan, é um jogador apaixonado e integra regularmente metáforas enxadrísticas às suas letras.
 ---
 
 Em 23 de outubro de 2020, a Netflix lança o primeiro episódio de *O Gambito da Rainha*. No dia seguinte, o Chess.com registra seu maior pico de inscrições diárias da história. As vendas de jogos de xadrez físicos aumentam 87% nos Estados Unidos num espaço de um mês. Mães que assistiam à série se inscrevem online após o último episódio.

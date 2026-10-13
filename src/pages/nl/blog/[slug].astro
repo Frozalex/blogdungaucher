@@ -10,7 +10,6 @@ import ShareButtons from "../../../components/ShareButtons.astro";
 import Comments from "../../../components/Comments.astro";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleVideo from "../../../components/ArticleVideo.astro";
-import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import FocusMode from "../../../components/FocusMode.astro";
 
 import { categoryMap, siteConfig, NL_LAUNCH_DATE } from "../../../data/site";
@@ -70,7 +69,11 @@ const nlEntryRaw = nlEntries.find((e) => (e.data.frSlug ?? getPostSlug(post)) ==
 const nlEntry = nlEntryRaw && !nlEntryRaw.data.draft ? nlEntryRaw : undefined;
 const nlMarkdown = nlEntry?.body;
 
-const faqsForDisplay = nlEntry?.data?.faq ?? post.data.faq ?? [];
+/** FAQ : jamais de repli sur celle de l'article FR quand une traduction existe,
+ *  sinon une page /nl/ affiche des questions/réponses en français (et les pousse
+ *  dans le JSON-LD FAQPage). Sans traduction, la page sert déjà le texte FR sous
+ *  bandeau et la FAQ FR y reste cohérente. */
+const faqsForDisplay = nlEntry ? (nlEntry.data.faq ?? []) : (post.data.faq ?? []);
 const stripInlineFaq = faqsForDisplay.length > 0;
 const mdSource = nlMarkdown ?? post.body ?? "";
 const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
@@ -189,6 +192,7 @@ const structuredData = [
   structuredData={structuredData}
   accentColor={category.accent}
   tags={post.data.tags}
+  noindex={!hasNlTranslation}
 >
   <article class="article-page" style={`--c:${category.accent}`}>
     {/* Dunne broodkruimel boven de hero */}
@@ -326,9 +330,9 @@ const structuredData = [
 
         <AdBanner format="inline" compact={true} />
 
-        {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
-          <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
-        )}
+        {/* Pas de KeyTakeaways ici : le composant a un en-tête « L'essentiel » en
+            dur et recevrait les puces FR de l'article source, alors que la
+            traduction porte déjà sa propre section de synthèse. */}
 
         {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="nl" />}
 

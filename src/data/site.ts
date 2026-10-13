@@ -226,22 +226,30 @@ export const NL_LAUNCH_DATE = new Date("2026-11-01T06:00:00Z");
 
 /** Langues dont les pages sont exposées à l'indexation Google.
  *
- *  Contexte (2026-09-28) : AdSense a refusé le site en juillet 2026 pour
- *  « thin content ». À cette date, ~50 articles FR étaient en ligne face à
- *  ~170 pages EN/PT-BR qui n'en sont que la traduction : aux yeux de Google,
- *  l'essentiel du site était du contenu dupliqué traduit à l'échelle
- *  (« scaled content abuse »). Le temps de la nouvelle demande, on ne présente
- *  donc que le FR : 77 articles originaux à 2 771 mots de moyenne.
+ *  Historique — le FR-only de septembre 2026 est levé.
  *
- *  Les pages EN/PT-BR/NL restent EN LIGNE et accessibles aux visiteurs — elles
- *  sont seulement passées en `noindex, follow` et retirées du sitemap. Surtout,
- *  on ne les bloque PAS dans robots.txt : Google doit pouvoir les crawler pour
- *  lire la balise noindex et les désindexer proprement.
+ *  2026-09-28 : passage à `["fr"]`. AdSense avait refusé le site en juillet 2026
+ *  pour « thin content » : ~50 articles FR en ligne face à ~170 pages EN/PT-BR
+ *  qui n'en sont que la traduction, soit un site majoritairement composé de
+ *  contenu dupliqué traduit à l'échelle (« scaled content abuse ») aux yeux de
+ *  Google. On n'a donc présenté que le FR le temps de la nouvelle demande.
  *
- *  REVERT APRÈS APPROBATION ADSENSE : remettre
- *  `["fr", "en", "pt-br", "nl"]` ci-dessous. Rien d'autre à toucher.
+ *  2026-10-13 : retour à `["fr", "en", "pt-br"]` sur décision éditoriale. Le FR
+ *  compte désormais 84 articles publiés, ce qui réduit le déséquilibre, et les
+ *  traductions ne sont plus indexées à l'aveugle : une page EN ou PT-BR dont la
+ *  traduction est absente ou en `draft` servait le texte FR avec un bandeau, et
+ *  passe maintenant en `noindex` (cf. `hasEnTranslation` / `hasPtBrTranslation`
+ *  dans les templates d'article) en plus d'être retirée du sitemap. Seules les
+ *  vraies traductions sont donc exposées.
+ *
+ *  NL reste hors de cette liste : la section n'est pas lancée (cf.
+ *  `NL_LAUNCH_DATE`). L'ajouter ici avant le 2026-11-01 indexerait des pages
+ *  qui ne sont pas encore reliées à la navigation.
+ *
+ *  Dans tous les cas, on ne bloque PAS les langues non indexées dans
+ *  robots.txt : Google doit pouvoir les crawler pour lire la balise noindex.
  */
-export const INDEXED_LANGS: readonly SiteLang[] = ["fr"];
+export const INDEXED_LANGS: readonly SiteLang[] = ["fr", "en", "pt-br"];
 
 /** `true` si les pages de cette langue doivent être indexées. */
 export function isIndexedLang(lang: string): boolean {

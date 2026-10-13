@@ -8,6 +8,44 @@ excerpt: >-
 seoTitle: "Xadrez e streaming: Twitch e YouTube revolucionam o jogo"
 seoDescription: "Streaming e xadrez: Hikaru Nakamura, GothamChess, Botez, Chess.com e Twitch. Como o streaming transformou o xadrez em fenômeno viral e democratizou o jogo."
 frSlug: echecs-et-streaming
+faq:
+  - question: Quanto ganha um Grande Mestre que faz streaming na Twitch ?
+    answer: >-
+      A transparência da Twitch torna algumas estimativas possíveis. Hikaru Nakamura, o streamer de xadrez mais
+      seguido, geraria entre 500 000 e 1 milhão de dólares por ano só pela Twitch (assinaturas, doações, parcerias),
+      aos quais se somam YouTube, patrocinadores e colaborações. Streamers de nível inferior (5 000 a 50 000
+      seguidores) podem tirar 30 000 a 150 000 dólares por ano : o que representa uma renda superior aos prêmios de
+      torneio para jogadores desse nível. O streaming mudou, portanto, a economia do xadrez profissional sub-elite.
+  - question: O blitz e o bullet dominam na Twitch, e isso é bom para o jogo ?
+    answer: >-
+      Sim, largamente. Os formatos rápidos (blitz = 3-5 minutos por jogador, bullet = 1-2 minutos) são bem mais
+      espetaculares de assistir : vêem-se lances a cada segundo, os erros são dramáticos, o tempo é
+      visível. As partidas clássicas de 3-4 horas seriam impossíveis de transmitir num formato de entretenimento. A
+      questão de saber se isso é bom para o jogo divide : os puristas lamentam que o grande público associe hoje o
+      xadrez ao blitz e não às partidas profundas. Outros consideram que tudo o que atrai jogadores para o xadrez
+      é positivo, qualquer que seja o ritmo.
+  - question: O que é o caso Niemann-Carlsen e por que teve tanta repercussão ?
+    answer: >-
+      Em setembro de 2022, Carlsen se retirou de um torneio depois de perder para Hans Niemann (jogador americano de
+      rating menor), insinuando implicitamente trapaça. Niemann havia sido banido temporariamente do Chess.com por trapaça
+      online no passado. Carlsen publicou depois um comunicado mais explícito. O caso explodiu no Twitter,
+      no Reddit, no YouTube : estatísticos produziram análises da probabilidade de trapaça, GMs se
+      pronunciaram, não jogadores acompanharam fascinados. Isso ilustra que o xadrez havia atingido uma massa
+      crítica de público capaz de alimentar uma controvérsia viral comparável às do esporte profissional.
+  - question: Como o Chess.com usou o streaming para crescer ?
+    answer: >-
+      O Chess.com foi muito ativo no ecossistema de streaming : patrocinar streamers, organizar eventos
+      exclusivos na sua plataforma (PogChamps : torneio de celebridades), integrar ferramentas de espectador à sua
+      interface. O PogChamps (criadores do YouTube jogando xadrez, orientados por GMs) atraiu milhões de espectadores
+      que nunca tinham assistido a xadrez antes. O Chess.com entendeu antes da maioria das organizações
+      esportivas que o streaming não era uma alternativa à prática : era um funil para a prática.
+  - question: Existem criadores de conteúdo de xadrez em francês ?
+    answer: >-
+      Sim, embora o ecossistema seja menor que o anglófono. Marie Sebag (Grande Mestre Internacional) desenvolveu
+      uma presença no YouTube. Vários clubes e federações francófonos têm canais ativos. Criadores como
+      Elyas (formato de divulgação) encontraram audiência no YouTube. O ecossistema francófono ainda carece de um
+      'GothamChess' local (um criador de escala muito grande), mas está se desenvolvendo, notadamente graças ao interesse gerado
+      por O Gambito da Rainha e pela explosão mundial do Chess.com.
 ---
 
 Em 4 de setembro de 2017, Hikaru Nakamura (Grande Mestre americano, cinco vezes campeão nacional) faz sua primeira transmissão ao vivo no Twitch. Não tem rosto conhecido do grande público. Fala de seus lances em voz alta, faz análises, responde ao chat. A audiência é modesta.

@@ -4,6 +4,40 @@ excerpt: "O xadrez tem uma verdade matemática que ninguém conhece. Zermelo a d
 seoTitle: "Paradoxo de Zermelo no xadrez: verdade determinada mas inacessível"
 seoDescription: "Ernst Zermelo (1913) provou que o xadrez tem um resultado sob jogo perfeito: Brancas ganham, Pretas ganham ou empate. Por que essa certeza permanece fora de alcance, e o que isso muda no seu jogo."
 frSlug: paradoxe-de-zermelo
+faq:
+  - question: "O teorema de Zermelo prova que as Brancas ganham ?"
+    answer: >-
+      Não. Ele prova que <strong>uma</strong> resposta existe entre três possíveis : vitória das Brancas, vitória
+      das Negras ou empate. Não diz qual. A hipótese majoritária é que seja o empate (coerente
+      com o jogo de elite e com a avaliação dos motores em torno de +0,2/+0,3), mas é uma crença baseada na
+      observação, não uma demonstração.
+  - question: "Por que chamar isso de \"paradoxo\" ?"
+    answer: >-
+      No sentido matemático, não é um : é um resultado perfeitamente coerente. O "paradoxo" é
+      <strong>epistêmico</strong> : sabe-se que existe uma resposta única, mas não é possível
+      conhecê-la, nem na prática nem em qualquer extrapolação razoável da capacidade de cálculo. São raras
+      as proposições em que a <em>certeza da existência</em> está tão nitidamente separada da
+      <em>possibilidade de acesso</em>.
+  - question: "As tablebases não contradizem Zermelo ?"
+    answer: >-
+      Ao contrário, elas o <strong>confirmam</strong> sobre um subconjunto do problema. Para qualquer
+      posição com ≤ 7 peças, o valor de Zermelo é conhecido exatamente (ganho, perda ou empate, e profundidade
+      exata). As tablebases são a prova construtiva de que a demonstração de Zermelo não é vazia :
+      aplicada a um número finito acessível de posições, ela produz de fato uma verdade única calculável.
+  - question: "Por que o AlphaZero pode vencer o Stockfish se não joga \"perfeitamente\" ?"
+    answer: >-
+      Porque nem um nem outro joga perfeitamente no sentido de Zermelo. Ambos são
+      <strong>aproximações</strong> da estratégia ótima, apenas com arquiteturas diferentes
+      (busca + heurísticas no Stockfish, rede neural + Monte Carlo Tree Search no AlphaZero).
+      Quando o AlphaZero vence o Stockfish, é porque nesse nível de aproximação as suas escolhas estão em média mais
+      próximas da verdade de Zermelo. Mas nenhum dos dois atinge essa verdade.
+  - question: "Essa verdade matemática poderia ser descoberta algum dia ?"
+    answer: >-
+      Provavelmente não por força bruta pura : a árvore de $10^{120}$ está definitivamente fora de alcance físico.
+      Uma <strong>prova indireta</strong> continua teoricamente possível (demonstração por simetria, por
+      invariante, por estratégia espelho parcial), mas não existe nenhuma pista séria. A computação quântica
+      muda o limite (Grover divide o expoente por dois), mas $10^{60}$ continua astronômico. A resolução
+      do xadrez em sentido estrito é mais provavelmente um horizonte que nunca será alcançado.
 ---
 
 Em 1913, durante o quinto Congresso Internacional de Matemáticos em Cambridge, o matemático alemão [Ernst Zermelo](https://pt.wikipedia.org/wiki/Ernst_Zermelo) apresentou um resultado que mudaria a forma como os matemáticos, e mais tarde os cientistas da computação, pensam os jogos de estratégia. Seu teorema é curto. Sua demonstração é elegante. E suas implicações no xadrez são ao mesmo tempo tranquilizadoras e vertiginosas.

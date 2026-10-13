@@ -8,6 +8,42 @@ excerpt: >-
 seoTitle: "Aprender a perder no xadrez: o que ninguém diz de verdade"
 seoDescription: "O xadrez realmente ensina a perder? Aversão à perda, Elo, derrota pública, grandes mestres: análise honesta de uma ideia recebida sobre o mundo do xadrez."
 frSlug: echecs-et-l-echec
+faq:
+  - question: O xadrez realmente ensina a perder ?
+    answer: >-
+      Em parte. O xadrez expõe à derrota em condições particulares : com frequência, objetivamente,
+      sem possibilidade de negá-la. Essa exposição repetida pode construir tolerância ao fracasso, mas apenas se
+      vier acompanhada de uma reflexão consciente. Um jogador que perde 50 partidas por semana no blitz online e
+      parte imediatamente para a seguinte não aprende a perder : aprende a ignorar a derrota. Não é a mesma
+      coisa.
+  - question: O que é a aversão à perda e como ela se aplica ao xadrez ?
+    answer: >-
+      A aversão à perda é um viés cognitivo documentado por Kahneman e Tversky : perder algo dói cerca de duas
+      vezes mais do que ganhar a mesma coisa dá prazer. No xadrez, esse viés se manifesta concretamente na
+      relação com o Elo : os jogadores sentem a perda de pontos como desproporcionalmente dolorosa. Isso produz
+      comportamentos de evitação : recusa de jogar contra adversários ligeiramente mais fortes, seleção de torneios em
+      função do risco de Elo, tendência a abandonar as partidas perdidas antes da rendição formal.
+  - question: Por que os adultos muitas vezes param de jogar xadrez ?
+    answer: >-
+      Uma das razões mais frequentemente relatadas nas comunidades de jogadores é o que se pode chamar de
+      'platô do sofrimento' : o momento em que, depois de uma fase de progresso rápido, as derrotas se tornam
+      sistemáticas porque agora se joga contra adversários do seu nível real. Esse platô é, cognitivamente, o
+      momento de aprendizado máximo : os erros são sutis e instrutivos. É também o momento em que o conforto
+      é mínimo. Muitos adultos abandonam justamente aí.
+  - question: Como os grandes mestres reagem a uma derrota em torneio ?
+    answer: >-
+      As abordagens variam. Kasparov analisava a partida imediatamente depois, às vezes até meia-noite, recusando-se a
+      deixar a derrota repousar sem compreensão. Carlsen é conhecido por fazer o contrário : não toca na
+      partida na mesma noite, espera o dia seguinte, a frio. Judit Polgár se impôs uma regra : nunca abrir o
+      motor nas 24 horas seguintes a uma derrota, para primeiro compreender a sua própria lógica. O que é comum aos
+      três : nenhum trata a derrota como um veredito sobre o seu valor.
+  - question: Os jogadores de xadrez lidam melhor com o fracasso na vida profissional ?
+    answer: >-
+      As evidências são mistas. Estudos com crianças que seguiram programas de xadrez mostram uma melhora da
+      perseverança diante de problemas difíceis e uma melhor tolerância à frustração imediata, documentadas
+      em horizontes de 6 a 18 meses. No longo prazo, na vida adulta, a transferência depende fortemente da
+      maneira como o xadrez foi praticado : em competição real, com análise consciente das derrotas, ou em
+      prática informal, sem reflexão sobre os erros.
 ---
 
 Há algo estranho que acontece nos clubes de xadrez e que ninguém formula explicitamente. No final da partida, o perdedor aperta a mão do vencedor. Não num corredor, não num vestiário, não depois de um momento de solidão para se recuperar. Imediatamente, na mesa, diante dos outros jogadores que ainda podem olhar.

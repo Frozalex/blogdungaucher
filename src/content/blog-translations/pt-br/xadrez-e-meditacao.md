@@ -7,6 +7,38 @@ excerpt: >-
 seoTitle: "Meditação e xadrez: a plena consciência para jogar melhor"
 seoDescription: "MBSR, Default Mode Network, regulação emocional: o que a pesquisa sobre a plena consciência diz sobre sua contribuição para o desempenho e o mental no xadrez."
 frSlug: echecs-et-meditation
+faq:
+  - question: A meditação realmente faz jogar melhor xadrez ?
+    answer: >-
+      Não diretamente : ela não faz calcular mais rápido nem memorizar mais variantes. Mas age sobre
+      fatores que limitam o desempenho : a divagação mental durante a partida, a ruminação depois de um erro, a
+      dificuldade de voltar à posição depois de um lance inesperado. Para um jogador que estagna por causa de blunders
+      emocionais, a meditação pode liberar Elo perdido sem treino enxadrístico adicional.
+  - question: Quanto tempo de meditação por dia para ver efeito ?
+    answer: >-
+      Os estudos de intervenção eficazes usam em geral 20 minutos por dia durante 8 semanas (protocolo MBSR
+      padrão). Abaixo de 10 minutos diários, os efeitos de traço (mudanças duráveis) são difíceis de
+      estabelecer. Acima de 30 minutos, o retorno marginal diminui em quem não tem experiência de meditação. O ponto
+      de entrada razoável : 15-20 minutos por dia durante 8 semanas, no mínimo.
+  - question: Que tipo de meditação é mais útil para o xadrez ?
+    answer: >-
+      Duas abordagens complementares : (1) Meditação de atenção focada (foco na respiração, retorno a cada
+      dispersão) : treina diretamente o músculo da concentração sustentada. (2) Meditação de atenção plena
+      aberta (observar os pensamentos sem se identificar com eles) : útil para lidar com as reações emocionais aos lances
+      do adversário. Para o xadrez, a atenção focada é provavelmente o ponto de partida mais direto.
+  - question: Quando meditar em relação a uma partida ?
+    answer: >-
+      Uma sessão curta de 5-10 minutos, 30-60 minutos antes da partida, parece a mais útil. Ela reduz a ativação
+      excessiva do sistema simpático (estresse antecipatório), melhora a disponibilidade atencional e facilita
+      a entrada em flow. Evite meditar imediatamente antes : a transição entre meditação e atividade cognitiva intensa
+      pode ser desconfortável para iniciantes.
+  - question: Os grandes mestres meditam ?
+    answer: >-
+      Cada vez mais. Magnus Carlsen já mencionou a prática de atenção plena em várias entrevistas. Fabiano
+      Caruana trabalha com um coach mental que integra elementos de mindfulness. O movimento não é
+      sistemático no topo, mas está crescendo. De forma mais ampla, o esporte de alto nível (tênis, atletismo, esportes
+      coletivos) integra a meditação há 15-20 anos, com benefícios documentados na regulação do estresse
+      competitivo.
 ---
 
 A ideia de que meditar melhora os desempenhos cognitivos é uma das que encontram mais ceticismo, e mais entusiasmo deslocado. A realidade é mais precisa do que os dois campos : a meditação não te faz um calculador mais rápido, mas muda profundamente o que você faz com os recursos cognitivos que você já tem.

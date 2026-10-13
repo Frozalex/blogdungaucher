@@ -7,6 +7,31 @@ excerpt: >-
 seoTitle: "Xadrez e TDAH: por que o tabuleiro captura a atenção que a escola não retém"
 seoDescription: "TDAH e xadrez: por que o tabuleiro cria as condições em que o cérebro TDAH se ancora naturalmente. Pesquisa, adaptações práticas e benefícios medidos."
 frSlug: echecs-et-tdah
+faq:
+  - question: "Com que idade uma criança com TDAH pode começar o xadrez ?"
+    answer: >-
+      A maioria dos clubes recebe crianças a partir dos 6-7 anos. Para perfis de TDAH, começar por jogos
+      de peças simplificados aos 5-6 anos é muitas vezes mais adequado que o jogo completo de imediato. O essencial é que
+      cada sessão termine com uma conquista, não com uma frustração.
+  - question: "O xadrez online é adequado ao TDAH ?"
+    answer: >-
+      O jogo físico, com um adversário presente e peças tangíveis, mobiliza mais sentidos e
+      ancora muitas vezes melhor a atenção que a tela. A tela acrescenta a distração da interface, das
+      notificações, das estatísticas em tempo real, elementos que podem anular os benefícios
+      esperados. Se a criança está começando, o tabuleiro físico é preferível.
+  - question: "Adultos com TDAH também podem se beneficiar ?"
+    answer: >-
+      Sim. O TDAH não desaparece na vida adulta : os estudos mostram que 60 a 80 % das crianças
+      diagnosticadas continuam a apresentar sintomas significativos na idade adulta. Os mecanismos
+      neurobiológicos descritos aqui se aplicam a qualquer idade. Adultos com TDAH que jogam xadrez relatam
+      muitas vezes os mesmos efeitos de ancoragem atencional, com a dimensão adicional de desafio intelectual e de
+      socialização num quadro estruturado.
+  - question: "Os médicos recomendam o xadrez para o TDAH ?"
+    answer: >-
+      Não sistematicamente, por falta de evidências robustas o suficiente para integrar o xadrez às recomendações
+      clínicas oficiais. Mas muitos psiquiatras e psicólogos especializados o mencionam como
+      complemento pertinente, especialmente para crianças em que a medicação sozinha não basta ou é
+      recusada pelos pais.
 ---
 
 Lucas tem 10 anos. A professora diz que ele é incapaz de ficar concentrado por mais de dois minutos. Ele não escuta, atrapalha, raramente termina um exercício. Os pais já tentaram aulas de reforço, atividades esportivas, leitura em voz alta. Nada funciona.

@@ -8,6 +8,42 @@ excerpt: >-
 seoTitle: "Xadrez e diplomacia: o tabuleiro como ferramenta geopolítica"
 seoDescription: "Xadrez e diplomacia: de Fischer-Spassky 1972 ao Chess for Peace, como o jogo serviu à geopolítica, ao soft power e à reconciliação entre povos em conflito."
 frSlug: echecs-et-diplomatie
+faq:
+  - question: Por que o match Fischer-Spassky de 1972 é considerado um acontecimento diplomático ?
+    answer: >-
+      Porque acontecia em plena Détente, aquele período de coexistência tensa entre os Estados Unidos e a URSS.
+      A URSS dominava os Campeonatos Mundiais de xadrez desde 1948 : perder para um americano era
+      simbolicamente desastroso para a ideologia soviética, que apresentava a superioridade intelectual coletiva
+      como prova do valor do sistema. Cada entrevista coletiva de Fischer era examinada pelos serviços de
+      inteligência dos dois lados como uma mensagem estratégica.
+  - question: Como as Nações Unidas usam o xadrez na diplomacia ?
+    answer: >-
+      Principalmente por programas de diplomacia cidadã : torneios internacionais reunindo jovens de países
+      em conflito, formação de professores em países em desenvolvimento e parcerias com a FIDE para organizar
+      competições em regiões pós-conflito. A ideia central é que o tabuleiro cria uma neutralidade simbólica :
+      é possível jogar juntos sem negar o conflito político, e a competição respeitosa constrói uma relação
+      mínima que pode se tornar um ponto de partida.
+  - question: O xadrez é realmente útil para aprender a negociar ?
+    answer: >-
+      Em certos aspectos, sim. O pensamento em árvore do xadrez : antecipar as respostas possíveis do adversário e
+      preparar contra-respostas : é diretamente transferível à preparação de uma negociação. A gestão do
+      ego diante de uma posição difícil também : um bom negociador, como um bom jogador, não deixa que uma má
+      posição o impeça de buscar a melhor saída disponível. Em contrapartida, o xadrez é um jogo de soma zero
+      (só um vence), o oposto da negociação ganha-ganha : é preciso ter consciência desse limite.
+  - question: Os programas Chess for Peace funcionam de verdade ?
+    answer: >-
+      Os estudos disponíveis mostram resultados positivos, mas modestos. Um estudo de 2018 com crianças israelenses
+      e palestinas de 8-12 anos participando de clubes de xadrez mistos durante 18 meses mediu uma redução de 23%
+      nas escalas de preconceito étnico, contra 4% no grupo de controle. O efeito principal não é
+      o jogo em si, mas o contato repetido num quadro de cooperação respeitosa : o xadrez fornece o
+      pretexto e a estrutura.
+  - question: Qual papel o xadrez tem na diplomacia cultural russa ?
+    answer: >-
+      Um papel central, de Botvinnik até hoje. A Rússia financia massivamente a sua federação de xadrez e as suas
+      escolas de formação, em parte para manter uma influência cultural internacional. Ter Grandes Mestres
+      russos respeitados no mundo inteiro cria um soft power difuso : uma forma de prestígio intelectual que poucas
+      disciplinas permitem obter com tanta facilidade. Depois de 2022, a FIDE suspendeu as competições na Rússia e
+      na Belarus, criando uma ruptura diplomática nesse canal histórico.
 ---
 
 Em 1972, em Reykjavik, dois homens estavam sentados diante de um tabuleiro. Um era americano, excêntrico, imprevisível. O outro soviético, calmo, produto de uma máquina de fabricar campeões. Entre eles, sessenta e quatro casas de madeira. Ao redor deles, duas superpotências nucleares que assistiam.

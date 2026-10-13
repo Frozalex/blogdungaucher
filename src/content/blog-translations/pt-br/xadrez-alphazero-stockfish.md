@@ -8,6 +8,43 @@ excerpt: >-
 seoTitle: "AlphaZero contra Stockfish: a revolução da IA no xadrez"
 seoDescription: "AlphaZero vs Stockfish 2017: aprendizado por reforço, rede neural, estilo de jogo revolucionário. Como a IA mudou a compreensão do xadrez."
 frSlug: echecs-alphazero-stockfish
+faq:
+  - question: O AlphaZero continua sendo o melhor programa de xadrez ?
+    answer: >-
+      A questão é complexa. A DeepMind não publicou nenhuma versão pública do AlphaZero. O Stockfish foi
+      massivamente aprimorado desde 2017, incorporando redes neurais na sua avaliação (NNUE, Efficiently Updatable
+      Neural Network). A versão atual do Stockfish (Stockfish 16/17) é provavelmente melhor que o AlphaZero tal como
+      ele era em 2017. O Leela Chess Zero (Lc0), equivalente open-source do AlphaZero, continua sendo desenvolvido e
+      representa a abordagem de deep learning. A fronteira entre as duas abordagens se tornou difusa.
+  - question: Por que as condições do match AlphaZero-Stockfish são contestadas ?
+    answer: >-
+      Principalmente porque o Stockfish rodava sem a base de finais de Syzygy (uma biblioteca de finais
+      perfeitamente calculados que o Stockfish normalmente usa), e porque a configuração de hardware do AlphaZero
+      (TPUs do Google, hardware especializado) não era diretamente comparável à do Stockfish (CPU padrão).
+      Resultados publicados depois na Science (dezembro de 2018), com condições mais equilibradas, confirmavam
+      ainda assim a superioridade do AlphaZero, mas com uma vantagem menos esmagadora.
+  - question: O que é o sistema NNUE, que revolucionou o Stockfish ?
+    answer: >-
+      NNUE (Efficiently Updatable Neural Network) é uma arquitetura de rede neural concebida para funcionar
+      muito rápido em CPUs padrão. Integrada ao Stockfish desde 2020, ela substitui a antiga função
+      de avaliação heurística por uma rede neural treinada em milhões de posições avaliadas pelo próprio
+      Stockfish. Resultado : o Stockfish NNUE combina a velocidade de busca do alfa-beta com a riqueza de avaliação
+      das redes neurais : um híbrido que elevou o seu nível em cerca de 80-100 pontos Elo.
+  - question: O AlphaZero realmente 'redescobriu' conceitos de xadrez esquecidos ?
+    answer: >-
+      Mais precisamente : ele jogou ideias que eram conhecidas teoricamente, mas consideradas 'arriscadas demais' ou
+      'pouco sólidas' pelos padrões dos motores clássicos. Peões de gambito mantidos durante muitos
+      lances em troca de compensação dinâmica, estruturas de peões assimétricas que o Stockfish avaliaria
+      negativamente, mas que contêm 'venenos' táticos. Grandes Mestres como Kasparov e Seirawan comentaram que o
+      estilo do AlphaZero às vezes lembrava o dos jogadores românticos do século XIX : maximizar as peças ativas
+      em vez da contagem de material.
+  - question: O Leela Chess Zero (Lc0) está acessível ao público ?
+    answer: >-
+      Sim, completamente. O Lc0 é um projeto open-source que implementa a arquitetura do AlphaZero usando pesos
+      de rede neural treinados pela comunidade. Pode ser baixado gratuitamente e se integra a
+      interfaces de análise como Arena ou ChessBase. Numa boa GPU, joga em nível comparável aos melhores
+      Stockfish. É o caminho para que jogadores comuns tenham acesso a um estilo de análise 'AlphaZero-like' : que pode
+      ser mais instrutivo que o Stockfish para compreender posições de compensação intuitiva.
 ---
 
 Dezembro de 2017. A equipe da DeepMind publica um artigo de pesquisa e, em anexo, 10 partidas comentadas. Essas 10 partidas eletrizaram a comunidade enxadrística de uma forma que nada havia feito desde o match Fischer-Spassky de 1972.

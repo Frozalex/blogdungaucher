@@ -7,6 +7,41 @@ excerpt: >-
 seoTitle: "Analisar suas partidas de xadrez: método prático para progredir"
 seoDescription: "Como analisar suas partidas de xadrez para progredir? Método sem motor primeiro, erros recorrentes, uso inteligente do Stockfish. Guia prático."
 frSlug: analyser-ses-parties
+faq:
+  - question: Quanto tempo é preciso dedicar à análise pós-partida ?
+    answer: >-
+      Para um jogador de clube que quer progredir, 15 a 30 minutos por partida é um objetivo realista e produtivo.
+      A análise pode ser feita em dois tempos : uma sessão curta logo após a partida (enquanto as impressões estão
+      frescas, 10-15 minutos), e uma sessão mais longa depois, com as ferramentas. Não é necessário analisar todas
+      as partidas : é melhor analisar a sério uma partida em cada três do que analisar todas superficialmente.
+  - question: "Qual motor usar para analisar : Stockfish, Leela Chess Zero ou outro ?"
+    answer: >-
+      O Stockfish (disponível gratuitamente no Lichess e para download) é o padrão da análise tática : é extremamente
+      preciso nos lances concretos. O Leela Chess Zero (Lc0) tem um estilo de avaliação posicional mais próximo do
+      jogo humano, o que pode ser mais instrutivo para avaliações de posição a longo prazo. Chess.com e Lichess já
+      integram motores na própria interface de análise : muitas vezes isso basta. O motor não é o fator limitante :
+      a sua maneira de usá-lo é.
+  - question: Como identificar os próprios erros recorrentes ?
+    answer: >-
+      Mantendo um diário de erros ao longo do tempo. Depois de cada análise, anote o erro ou os erros principais da
+      partida com uma descrição curta. Depois de 10-15 partidas, releia : os padrões aparecem. 'Negligenciei os
+      contra-ataques no centro 3 vezes este mês.' 'Conduzi mal o final de torres em 2 partidas.' 'Desenvolvo sempre
+      o cavalo antes de verificar o contra-jogo nos gambitos'. Esses padrões são o seu programa de trabalho
+      prioritário.
+  - question: Também é preciso analisar as partidas ganhas ?
+    answer: >-
+      Sim, mas com uma atenção específica. Numa partida ganha, procure os momentos em que *o seu adversário* teria
+      complicado a sua vida se tivesse jogado de outra forma : esses momentos revelam as suas vulnerabilidades até
+      nas vitórias. Procure também os momentos em que você jogou 'o melhor lance por acaso', sem ter calculado a
+      variante corretamente : são lembretes de que a vitória não valida o processo.
+  - question: Como analisar quando se é iniciante e se entende mal o que o motor mostra ?
+    answer: >-
+      Comece apenas pela análise sem motor. Rejogue a partida lance a lance e identifique : onde você sentiu que a
+      coisa começou a desandar, os lances sobre os quais você não tinha certeza durante a partida, e o lance em que
+      você acha que perdeu a vantagem. Converse com um jogador ligeiramente mais forte que você : a análise humana é
+      mais pedagógica que a análise de motor quando os dois jogadores têm nível comparável. O motor passa a ser útil
+      quando você tem uma hipótese a verificar ('isso era realmente vitorioso ?'), não como oráculo a quem se
+      pergunta 'qual era o lance certo ?'
 ---
 
 Você acabou de perder uma partida. Seu adversário jogou algo inesperado no lance 15, você entrou em pânico, e a posição deteriorou-se rapidamente. Você abre uma nova partida.

@@ -7,6 +7,33 @@ excerpt: >-
 seoTitle: "Xadrez e autismo: os benefícios para o TEA"
 seoDescription: "Autismo e xadrez: regras invariantes, estrutura visual, sem comunicação verbal obrigatória. Por que o tabuleiro convém aos cérebros autistas, e o que os estudos sobre TEA mostram."
 frSlug: echecs-et-autisme
+faq:
+  - question: "O xadrez é benéfico para todas as crianças autistas ?"
+    answer: >-
+      Não universalmente. Os benefícios documentados — redução da ansiedade social, melhora das
+      funções executivas, autoestima — dizem respeito principalmente a crianças cujo perfil cognitivo
+      inclui interesse por sistemas de regras, aquilo que Baron-Cohen chama de <em>systemizing</em>.
+      Algumas crianças com TEA não se identificam com o xadrez, e isso é perfeitamente normal.
+  - question: "Com que idade começar o xadrez com uma criança autista ?"
+    answer: >-
+      A maioria dos programas educativos introduz o xadrez entre 5 e 7 anos. O importante não é
+      a idade exata, mas a adaptação : peças grandes, partidas curtas, ambiente calmo, sem pressão por
+      resultado. A organização Chess in Schools and Communities (CSC) dispõe de recursos especificamente
+      adaptados a perfis TEA.
+  - question: "O xadrez pode substituir uma terapia para o autismo ?"
+    answer: >-
+      Não. Os dados disponíveis mostram que o xadrez é um complemento sério a um acompanhamento
+      multidisciplinar (fonoaudiologia, terapia ocupacional, apoio psicológico), nunca um substituto.
+      Apresentá-lo como tratamento seria desonesto e potencialmente prejudicial para famílias que
+      precisam de acompanhamento especializado.
+  - question: "Por que as pessoas autistas têm muitas vezes uma afinidade natural com o xadrez ?"
+    answer: >-
+      Segundo a teoria do <em>systemizing</em> de Simon Baron-Cohen (Cambridge), os cérebros autistas têm
+      uma forte tendência a analisar e construir sistemas de regras. O tabuleiro, jogo de informação
+      perfeita, sem ambiguidade social, com regras estáveis e verificáveis, corresponde quase
+      perfeitamente a esse perfil cognitivo. <strong>Depois da leitura :</strong> para um primeiro começo,
+      aponte para <strong>três</strong> sessões curtas por semana, tabuleiro físico, <strong>sem</strong>
+      objetivo de rating durante um mês ; anote o que cansa (ruído, duração, grupo).
 ---
 
 Imagine um pátio de recreio numa manhã de quinta-feira. O barulho é ensurdecedor : cadeiras raspando, estouros de vozes imprevisíveis, luzes fluorescentes piscando ligeiramente acima das cabeças. Para a maioria de nós, é apenas um leve ruído de fundo. Mas para Théo, 9 anos, diagnosticado com [transtorno do espectro autista](https://pt.wikipedia.org/wiki/Transtorno_do_espectro_autista) (TEA) nível 2, esse fluxo de informações sensoriais não filtradas se transforma a cada manhã numa tempestade interior paralisante. Os códigos sociais voam em todos os sentidos, implícitos, indecifráveis. É preciso saber ler nas entrelinhas de uma conversa, interpretar um esgar, compreender o segundo grau de uma piada. É exaustivo num nível que poucas pessoas neurotípicas conseguem imaginar.

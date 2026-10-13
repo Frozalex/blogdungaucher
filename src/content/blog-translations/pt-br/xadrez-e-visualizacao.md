@@ -7,6 +7,42 @@ excerpt: >-
 seoTitle: "Visualização mental no xadrez: ver sem olhar"
 seoDescription: "Como visualizar o tabuleiro sem vê-lo? Jogo às cegas, chunks cognitivos, Chase e Simon, treinamento: a ciência da representação mental no xadrez."
 frSlug: echecs-et-visualisation
+faq:
+  - question: Como os jogadores às cegas se lembram de todas as posições ?
+    answer: >-
+      Não memorizando casa por casa. Os jogadores experientes codificam as posições em 'chunks' : grupos de peças
+      que têm uma relação lógica (uma formação típica, uma estrutura de peões conhecida, uma formação de ataque). Um
+      Grande Mestre pode decompor uma posição em 5 a 7 chunks familiares, cada um guardado como unidade única na
+      memória de longo prazo. No jogo às cegas, ele não reconstrói a posição peça por peça : reconstrói
+      os seus chunks e as relações entre eles.
+  - question: É possível aprender a jogar às cegas ?
+    answer: >-
+      Sim, com treino progressivo. O método recomendado começa por finais simples (Rei + Torre
+      contra Rei sozinho) às cegas : as posições são simples e os lances, poucos. Depois avança-se para
+      finais mais complexos, em seguida problemas táticos às cegas e, por fim, partidas curtas inteiras.
+      Muitos jogadores de clube (1400-1800 Elo) conseguem aprender a jogar partidas simples às cegas em alguns
+      meses de treino regular.
+  - question: O jogo às cegas é perigoso para a saúde mental ?
+    answer: >-
+      Houve preocupações históricas, especialmente depois que vários campeões da era vitoriana que
+      praticavam intensamente o blindfold tiveram problemas psicológicos. A pesquisa moderna não confirma
+      nenhum vínculo causal direto. A prática intensa de qualquer atividade cognitiva exigente pode favorecer
+      o esgotamento mental, mas o blindfold chess em si não é mais arriscado que outras formas de treino
+      intensivo. Como todo esforço cognitivo, ele se beneficia de pausas e de variedade.
+  - question: Qual é a diferença entre a memória enxadrística dos experientes e a dos novatos ?
+    answer: >-
+      O estudo de Chase e Simon (1973) é claro : dê aos dois grupos 5 segundos para memorizar uma posição de
+      jogo real e depois pedir para reconstruí-la de memória. Os experientes recolocam 92% das peças corretamente, os novatos 20%.
+      Mas se você der uma posição ALEATÓRIA (peças colocadas ao acaso, não vindas de uma partida real), os dois
+      grupos ficam equivalentes, em torno de 30%. A memória enxadrística dos experientes não é uma memória visual superior
+      : é uma biblioteca de padrões de jogo real.
+  - question: Como melhorar a visualização sem jogar às cegas ?
+    answer: >-
+      Vários exercícios práticos : (1) Calcular variantes sem mexer as peças, visualizando mentalmente
+      cada lance antes de jogá-lo de fato. (2) Resolver problemas táticos sem olhar as peças depois
+      de ler a posição (fixar a posição por 30 segundos, fechar os olhos e calcular). (3) Rejogar partidas
+      célebres de memória, um lance por vez, conferindo com o livro. (4) Jogar finais simples contra
+      si mesmo às cegas. Esses exercícios progressivos melhoram a visualização sem o desconforto do blindfold total.
 ---
 
 [Philidor](https://pt.wikipedia.org/wiki/Fran%C3%A7ois-Andr%C3%A9_Danican_Philidor) jogava três partidas simultâneas às cegas. Seu público do século XVIII ficava estarrecido : como um homem podia manter três tabuleiros na cabeça simultaneamente?

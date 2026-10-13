@@ -1,16 +1,14 @@
 import type { APIRoute } from "astro";
+import { getCollection } from "astro:content";
 
 import { siteConfig, staticRoutes, enStaticRoutes, ptBrStaticRoutes, nlStaticRoutes, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, isIndexedLang } from "../data/site";
 import { serieMoteurSlugs } from "../data/serie-moteur-python";
 import { getAllPosts, getEnSlugMap, getPtBrSlugMap, getNlSlugMap, getPostSlug, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
 
-/** Langues déclarées en `hreflang` dans le sitemap. Filtré par `INDEXED_LANGS` :
- *  déclarer une alternative qui porte un `noindex` ne fait que générer du bruit
- *  dans la Search Console. */
-const langs: SiteLang[] = (["fr", "en"] as SiteLang[]).filter((l) => isIndexedLang(l));
-
-/** Pages exclues du sitemap : thin content et pages légales. */
+/** Pages exclues du sitemap : thin content et pages légales.
+ *  Doit rester synchrone avec les `noindex={true}` des pages correspondantes :
+ *  une URL en noindex dans le sitemap ne génère que du bruit en Search Console. */
 const EXCLUDED_PATHS = new Set([
   "/fr/mentions-legales/",
   "/fr/politique-confidentialite/",
@@ -19,6 +17,8 @@ const EXCLUDED_PATHS = new Set([
   "/en/privacy-policy/",
   "/en/accessibility/",
   "/fr/analyses/",
+  // Page « coming soon » : aucune dissertation traduite, donc noindex côté page.
+  "/en/dissertations/",
 ]);
 
 export const GET: APIRoute = async () => {
@@ -37,15 +37,48 @@ export const GET: APIRoute = async () => {
     EXCLUDED_PATHS.add("/fr/series/moteur-python/");
   }
 
+  // Slugs FR disposant d'une traduction réellement publiée (fichier présent et
+  // `draft: false`). Sans elle, /en/blog/<slug>/ et /pt-br/blog/<slug>/ servent le
+  // texte français avec un bandeau : ces pages passent en noindex côté template
+  // (cf. `hasEnTranslation` / `hasPtBrTranslation`) et n'entrent donc pas ici.
+  const lastSegment = (id: string) => id.replace(/\.mdx?$/i, "").split("/").filter(Boolean).pop()!;
+
+  const enTranslated = new Set(
+    (await getCollection("enTranslations")).filter((e) => !e.data.draft).map((e) => lastSegment(e.id)),
+  );
+  const ptBrTranslated = new Set(
+    (await getCollection("ptBrTranslations"))
+      .filter((e) => !e.data.draft)
+      .map((e) => e.data.frSlug ?? lastSegment(e.id)),
+  );
+  const nlTranslated = new Set(
+    (await getCollection("nlTranslations"))
+      .filter((e) => !e.data.draft)
+      .map((e) => e.data.frSlug ?? lastSegment(e.id)),
+  );
+
   function absolute(path: string) {
     return new URL(withTrailingSlash(path), siteConfig.siteUrl).toString();
   }
 
   const buildTime = new Date();
 
+  // Dissertations : collection distincte des articles, pages FR-only servies par
+  // /fr/dissertations/[slug].astro. `lastmodFor` les retrouve via `extraDates`,
+  // sans quoi elles hériteraient de l'heure de build.
+  const dissertations = (await getCollection("dissertations")).filter(
+    (d) => d.data.publishDate <= buildTime,
+  );
+  const extraDates = new Map<string, Date>(
+    dissertations.map((d) => [
+      `/fr/dissertations/${lastSegment(d.id)}/`,
+      d.data.updatedDate ?? d.data.publishDate,
+    ]),
+  );
+
   function lastmodFor(frPath: string): string {
     const post = posts.find((p) => getPostUrl(p) === frPath);
-    const date = post ? (post.data.updatedDate ?? post.data.publishDate) : buildTime;
+    const date = post ? (post.data.updatedDate ?? post.data.publishDate) : (extraDates.get(frPath) ?? buildTime);
     if (date > buildTime) {
       throw new Error(
         `sitemap: lastmod futur (${date.toISOString()}) pour ${frPath} — vérifier updatedDate/publishDate.`,
@@ -78,8 +111,18 @@ export const GET: APIRoute = async () => {
     return `/nl/blog/${nlSlug}/`;
   }
 
-  // Pour les routes statiques, détermine si une version EN existe
+  // Pour les routes statiques, détermine si une version traduite existe
   const enStaticSet = new Set(enStaticRoutes.map((r) => withTrailingSlash(r)));
+  const ptBrStaticSet = new Set(ptBrStaticRoutes.map((r) => withTrailingSlash(r)));
+  const nlStaticSet = new Set(nlStaticRoutes.map((r) => withTrailingSlash(r)));
+
+  /** La route statique équivalente existe dans `lang` et n'est pas exclue du
+   *  sitemap. Déclarer en hreflang une page qu'on tient en noindex (page légale,
+   *  « coming soon »…) ne ferait que remonter en Search Console. */
+  function hasIndexableStatic(set: Set<string>, frPath: string, lang: SiteLang): boolean {
+    const path = swapLangPrefix(frPath, lang);
+    return set.has(path) && !EXCLUDED_PATHS.has(path);
+  }
 
   function isFrOnlyPath(frPath: string): boolean {
     const post = posts.find((p) => getPostUrl(p) === frPath);
@@ -95,7 +138,8 @@ export const GET: APIRoute = async () => {
     .map((r) => withTrailingSlash(r));
 
   const frPostPaths = posts.map((post) => getPostUrl(post));
-  const allFrPaths = [...frStaticPaths, ...frPostPaths];
+  const frDissertationPaths = [...extraDates.keys()];
+  const allFrPaths = [...frStaticPaths, ...frPostPaths, ...frDissertationPaths];
 
   const frEntries = allFrPaths.map((frPath) => {
     const frOnly = isFrOnlyPath(frPath);
@@ -108,22 +152,27 @@ export const GET: APIRoute = async () => {
         `<xhtml:link rel="alternate" hreflang="fr" href="${loc}"/>
           <xhtml:link rel="alternate" hreflang="x-default" href="${loc}"/>`;
     } else {
-      const base = langs
-        .map((lang) => {
-          const href = absolute(lang === "en" ? enPathFor(frPath) : frPath);
-          return `<xhtml:link rel="alternate" hreflang="${lang}" href="${href}"/>`;
-        })
-        .join("\n          ");
-      const frSlug = posts.find((p) => getPostUrl(p) === frPath);
-      const hasPtBr = frSlug ? ptBrSlugMap.has(getPostSlug(frSlug)) : false;
-      const hasNl = frSlug ? nlSlugMap.has(getPostSlug(frSlug)) : false;
-      const ptBrPart = ptBrLive && hasPtBr && isIndexedLang("pt-br")
-        ? `\n          <xhtml:link rel="alternate" hreflang="pt-BR" href="${absolute(ptBrPathFor(frPath))}"/>`
-        : "";
-      const nlPart = nlLive && hasNl && isIndexedLang("nl")
-        ? `\n          <xhtml:link rel="alternate" hreflang="nl" href="${absolute(nlPathFor(frPath))}"/>`
-        : "";
-      alternates = base + ptBrPart + nlPart + `\n          <xhtml:link rel="alternate" hreflang="x-default" href="${loc}"/>`;
+      // Une alternative n'est déclarée que si la version existe ET est indexable.
+      // Pour un article, « existe » veut dire traduction publiée : sans elle, la
+      // page sert le texte FR sous bandeau et porte un noindex.
+      const matchedPost = posts.find((p) => getPostUrl(p) === frPath);
+      const slug = matchedPost ? getPostSlug(matchedPost) : null;
+      const hasEn = slug ? enTranslated.has(slug) : hasIndexableStatic(enStaticSet, frPath, "en");
+      const hasPtBr = slug ? ptBrTranslated.has(slug) : hasIndexableStatic(ptBrStaticSet, frPath, "pt-br");
+      const hasNl = slug ? nlTranslated.has(slug) : hasIndexableStatic(nlStaticSet, frPath, "nl");
+
+      const parts = [`<xhtml:link rel="alternate" hreflang="fr" href="${loc}"/>`];
+      if (hasEn && isIndexedLang("en")) {
+        parts.push(`<xhtml:link rel="alternate" hreflang="en" href="${absolute(enPathFor(frPath))}"/>`);
+      }
+      if (ptBrLive && hasPtBr && isIndexedLang("pt-br")) {
+        parts.push(`<xhtml:link rel="alternate" hreflang="pt-BR" href="${absolute(ptBrPathFor(frPath))}"/>`);
+      }
+      if (nlLive && hasNl && isIndexedLang("nl")) {
+        parts.push(`<xhtml:link rel="alternate" hreflang="nl" href="${absolute(nlPathFor(frPath))}"/>`);
+      }
+      parts.push(`<xhtml:link rel="alternate" hreflang="x-default" href="${loc}"/>`);
+      alternates = parts.join("\n          ");
     }
 
     return `
@@ -138,6 +187,7 @@ export const GET: APIRoute = async () => {
 
   const enPostPaths = posts
     .filter((post) => !isFrenchOnlyPost(post))
+    .filter((post) => enTranslated.has(getPostSlug(post)))
     .map((post) => {
       const frSlug = getPostSlug(post);
       const enSlug = enSlugMap.get(frSlug) ?? frSlug;
@@ -145,7 +195,7 @@ export const GET: APIRoute = async () => {
     });
 
   const allEnPaths = [
-    ...enStaticRoutes.map((r) => withTrailingSlash(r)),
+    ...enStaticRoutes.map((r) => withTrailingSlash(r)).filter((r) => !EXCLUDED_PATHS.has(r)),
     ...enPostPaths,
   ];
 
@@ -166,12 +216,16 @@ export const GET: APIRoute = async () => {
     const frHref = absolute(frPath);
     const enHref = absolute(enPath);
     const matchedFrPost = posts.find((p) => getPostUrl(p) === frPath);
-    const enHasPtBr = matchedFrPost ? ptBrSlugMap.has(getPostSlug(matchedFrPost)) : false;
-    const enHasNl = matchedFrPost ? nlSlugMap.has(getPostSlug(matchedFrPost)) : false;
-    const ptBrPart = ptBrLive && !isFrOnlyPath(frPath) && enHasPtBr
+    const enHasPtBr = matchedFrPost
+      ? ptBrTranslated.has(getPostSlug(matchedFrPost))
+      : hasIndexableStatic(ptBrStaticSet, frPath, "pt-br");
+    const enHasNl = matchedFrPost
+      ? nlTranslated.has(getPostSlug(matchedFrPost))
+      : hasIndexableStatic(nlStaticSet, frPath, "nl");
+    const ptBrPart = ptBrLive && isIndexedLang("pt-br") && !isFrOnlyPath(frPath) && enHasPtBr
       ? `\n        <xhtml:link rel="alternate" hreflang="pt-BR" href="${absolute(ptBrPathFor(frPath))}"/>`
       : "";
-    const nlEnPart = nlLive && !isFrOnlyPath(frPath) && enHasNl
+    const nlEnPart = nlLive && isIndexedLang("nl") && !isFrOnlyPath(frPath) && enHasNl
       ? `\n        <xhtml:link rel="alternate" hreflang="nl" href="${absolute(nlPathFor(frPath))}"/>`
       : "";
 
@@ -190,7 +244,7 @@ export const GET: APIRoute = async () => {
   if (nlLive) {
     const nlPostPaths = posts
       .filter((post) => !isFrenchOnlyPost(post))
-      .filter((post) => nlSlugMap.has(getPostSlug(post)))
+      .filter((post) => nlTranslated.has(getPostSlug(post)) && nlSlugMap.has(getPostSlug(post)))
       .map((post) => {
         const frSlug = getPostSlug(post);
         const nlSlug = nlSlugMap.get(frSlug)!;
@@ -198,23 +252,30 @@ export const GET: APIRoute = async () => {
       });
 
     const allNlPaths = [
-      ...nlStaticRoutes.map((r) => ({ nlPath: withTrailingSlash(r), frPath: swapLangPrefix(r, "fr") })),
+      ...nlStaticRoutes
+        .map((r) => withTrailingSlash(r))
+        .filter((r) => !EXCLUDED_PATHS.has(r))
+        .map((r) => ({ nlPath: r, frPath: swapLangPrefix(r, "fr") })),
       ...nlPostPaths,
     ];
 
     for (const { nlPath, frPath } of allNlPaths) {
       const lastmod = lastmodFor(frPath);
       const frHref = absolute(frPath);
-      const enPath = enPathFor(frPath);
-      const enHref = absolute(enPath);
       const nlHref = absolute(nlPath);
+      const matchedFrPost = posts.find((p) => getPostUrl(p) === frPath);
+      const hasEn = matchedFrPost
+        ? enTranslated.has(getPostSlug(matchedFrPost))
+        : hasIndexableStatic(enStaticSet, frPath, "en");
+      const enPart = hasEn && isIndexedLang("en")
+        ? `\n        <xhtml:link rel="alternate" hreflang="en" href="${absolute(enPathFor(frPath))}"/>`
+        : "";
 
       nlEntries.push(`
       <url>
         <loc>${nlHref}</loc>
         <lastmod>${lastmod}</lastmod>
-        <xhtml:link rel="alternate" hreflang="fr" href="${frHref}"/>
-        <xhtml:link rel="alternate" hreflang="en" href="${enHref}"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="${frHref}"/>${enPart}
         <xhtml:link rel="alternate" hreflang="nl" href="${nlHref}"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="${frHref}"/>
       </url>`);
@@ -226,7 +287,7 @@ export const GET: APIRoute = async () => {
   if (ptBrLive) {
     const ptBrPostPaths = posts
       .filter((post) => !isFrenchOnlyPost(post))
-      .filter((post) => ptBrSlugMap.has(getPostSlug(post)))
+      .filter((post) => ptBrTranslated.has(getPostSlug(post)) && ptBrSlugMap.has(getPostSlug(post)))
       .map((post) => {
         const frSlug = getPostSlug(post);
         const ptBrSlug = ptBrSlugMap.get(frSlug)!;
@@ -234,23 +295,30 @@ export const GET: APIRoute = async () => {
       });
 
     const allPtBrPaths = [
-      ...ptBrStaticRoutes.map((r) => ({ ptBrPath: withTrailingSlash(r), frPath: swapLangPrefix(r, "fr") })),
+      ...ptBrStaticRoutes
+        .map((r) => withTrailingSlash(r))
+        .filter((r) => !EXCLUDED_PATHS.has(r))
+        .map((r) => ({ ptBrPath: r, frPath: swapLangPrefix(r, "fr") })),
       ...ptBrPostPaths,
     ];
 
     for (const { ptBrPath, frPath } of allPtBrPaths) {
       const lastmod = lastmodFor(frPath);
       const frHref = absolute(frPath);
-      const enPath = enPathFor(frPath);
-      const enHref = absolute(enPath);
       const ptBrHref = absolute(ptBrPath);
+      const matchedFrPost = posts.find((p) => getPostUrl(p) === frPath);
+      const hasEn = matchedFrPost
+        ? enTranslated.has(getPostSlug(matchedFrPost))
+        : hasIndexableStatic(enStaticSet, frPath, "en");
+      const enPart = hasEn && isIndexedLang("en")
+        ? `\n        <xhtml:link rel="alternate" hreflang="en" href="${absolute(enPathFor(frPath))}"/>`
+        : "";
 
       ptBrEntries.push(`
       <url>
         <loc>${ptBrHref}</loc>
         <lastmod>${lastmod}</lastmod>
-        <xhtml:link rel="alternate" hreflang="fr" href="${frHref}"/>
-        <xhtml:link rel="alternate" hreflang="en" href="${enHref}"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="${frHref}"/>${enPart}
         <xhtml:link rel="alternate" hreflang="pt-BR" href="${ptBrHref}"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="${frHref}"/>
       </url>`);

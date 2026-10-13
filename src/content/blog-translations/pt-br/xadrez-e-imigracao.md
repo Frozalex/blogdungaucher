@@ -8,6 +8,44 @@ excerpt: >-
 seoTitle: "Xadrez e imigração: o tabuleiro como língua comum e ferramenta de integração"
 seoDescription: "Chess for Refugees, história dos GMs imigrantes, tabuleiro como língua franca: como o xadrez facilita a integração e reflete os movimentos migratórios."
 frSlug: echecs-et-immigration
+faq:
+  - question: Como o xadrez facilita a integração de refugiados ?
+    answer: >-
+      Por vários mecanismos simultâneos. Primeiro, a participação igual sem barreira linguística : é possível jogar
+      uma partida inteira sem falar a língua local. Depois, a criação de interações respeitosas num quadro
+      neutro : o clube de xadrez é um espaço estruturado, com códigos claros, mais fácil de navegar que uma interação
+      social não estruturada para alguém em situação de estresse. Por fim, a valorização do mérito cognitivo
+      independentemente da origem : uma pessoa pode ser claramente melhor que um local, o que muda a dinâmica
+      de poder habitual na relação refugiado/habitante.
+  - question: Quais países têm os programas Chess for Refugees mais desenvolvidos ?
+    answer: >-
+      A Alemanha (notadamente pelo programa 'Schach und Integration'), os Países Baixos (o clube de Amsterdã tem um
+      programa estruturado desde 2015), a Suécia e a Noruega (onde as federações nacionais integraram o acolhimento de
+      refugiados como missão oficial). Na França existem várias associações locais, mas não há
+      programa nacional coordenado. O ACNUR (Alto Comissariado da ONU para Refugiados) documentou programas de jogo
+      em campos no Líbano, na Jordânia e na Grécia.
+  - question: Por que tantos Grandes Mestres mudaram de nacionalidade esportiva ?
+    answer: >-
+      Várias razões. Econômicas : alguns países (notadamente monarquias do Golfo, ou países que buscam
+      desenvolver a sua federação) oferecem contratos atrativos a GMs para representá-los. Políticas : GMs
+      soviéticos desertaram durante a Guerra Fria (Kortchnoi, vários outros). Pessoais : casamentos, estudos no
+      exterior, preferência de vida. A FIDE autoriza mudanças de federação sob condições (prazo de 3 anos em
+      geral). Essas mobilidades refletem uma economia global do talento enxadrístico.
+  - question: Os imigrantes estão realmente sobrerrepresentados nas elites do xadrez ?
+    answer: >-
+      Em alguns países, sim. Nos Estados Unidos, uma proporção significativa dos jogadores melhor classificados tem
+      origem imigrante ou nasceu no exterior. Na França, vários dos jogadores melhor classificados têm
+      origem fora da França metropolitana. Não é universal e os dados raramente são coletados
+      de forma sistemática. A hipótese levantada : a mobilidade geográfica se correlaciona com ambição e aceitação do
+      risco : traços que também favorecem o progresso competitivo.
+  - question: O xadrez é realmente 'universal' culturalmente ?
+    answer: >-
+      Quase, mas não totalmente. As regras da FIDE são universais. Mas existem variantes nacionais : o
+      shogi japonês, o xiangqi chinês e o janggi coreano são jogos distintos, ainda que aparentados. Em culturas
+      onde essas variantes são dominantes, o xadrez ocidental pode não ser conhecido. Além disso, a cultura do
+      xadrez (clubes, torneios, notação) é mais desenvolvida em certas regiões que em outras : as zonas onde o
+      xadrez tem pouca tradição cultural (algumas partes da África subsaariana, algumas regiões do Sudeste
+      Asiático) podem achar o jogo menos acessível como ferramenta de integração.
 ---
 
 Berlim, inverno de 2015. Centenas de milhares de refugiados chegam à Alemanha. As associações buscam atividades que não exijam domínio do alemão : o aprendizado do idioma leva meses, e a comunidade precisa de pontos de contato agora.

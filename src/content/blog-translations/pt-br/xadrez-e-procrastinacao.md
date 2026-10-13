@@ -8,6 +8,41 @@ excerpt: >-
 seoTitle: "Procrastinação e xadrez: o que o tabuleiro ensina sobre a fuga"
 seoDescription: "Procrastinação no xadrez: esquiva emocional, medo do erro e tolerância à incerteza. O que o tabuleiro ensina sobre a tomada de decisão e a motivação."
 frSlug: echecs-et-procrastination
+faq:
+  - question: Por que procrastinamos, cientificamente falando ?
+    answer: >-
+      A pesquisa de Fuschia Sirois e Timothy Pychyl é clara : procrastinamos para administrar emoções negativas
+      ligadas a uma tarefa, não por falta de disciplina ou de tempo. A tarefa gera ansiedade (medo do
+      fracasso, perfeccionismo), tédio, dúvida. A evitação traz alívio imediato, mas reforça a
+      procrastinação a longo prazo. É um mecanismo de regulação emocional de curto prazo que se autoperpetua.
+  - question: Como o relógio de xadrez ajuda contra a procrastinação ?
+    answer: >-
+      Ele cria uma restrição externa imparcial que curto-circuita a evitação. Fora do tabuleiro, a
+      procrastinação funciona porque muitas vezes não há consequência imediata em deixar para amanhã. O relógio
+      cria uma consequência imediata para não decidir : perder tempo do seu próprio capital de tempo. Não é uma
+      solução para a procrastinação na vida real, mas é um treino para agir apesar do desconforto da
+      incerteza.
+  - question: O perfeccionismo no xadrez é uma forma de procrastinação ?
+    answer: >-
+      Muitas vezes, sim. Procurar o lance perfeito em vez do melhor lance disponível é uma forma de overthinking que
+      retarda a decisão. A maioria dos lances jogados depois de 20 minutos de reflexão não é melhor que os jogados
+      depois de 5 minutos : passado um limiar, o tempo adicional é ansiedade vestida de reflexão. Os melhores
+      jogadores aprendem a distinguir 'calculado o suficiente para jogar' de 'perfeitamente calculado' : uma distinção
+      diretamente útil fora do tabuleiro.
+  - question: É possível aprender a decidir jogando xadrez ?
+    answer: >-
+      Em parte. Os estudos sobre transferência cognitiva mostram efeitos moderados : a prática do xadrez melhora
+      a tolerância à ambiguidade decisória, mas a transferência não é automática. É preciso uma reflexão explícita
+      sobre o que se aprende ('nesta posição difícil, joguei apesar da incerteza e deu certo : o que
+      posso aplicar à decisão X na minha vida ?'). Sem essa ponte consciente, a melhora fica local ao
+      tabuleiro.
+  - question: O que fazer quando se procrastina a análise das próprias partidas ?
+    answer: >-
+      É um problema clássico : os jogadores procrastinam muitas vezes nas tarefas mais úteis ao seu progresso
+      (análise de partidas, estudo dos finais) em favor das mais agradáveis (jogar partidas). A estratégia mais
+      eficaz é tornar a análise menos aversiva : limitar a 15-20 minutos de análise por partida em vez de
+      tentar ser exaustivo, usar um motor para os lances complexos em vez de se esgotar calculando sozinho,
+      e celebrar as boas ideias encontradas em vez de se concentrar nos erros.
 ---
 
 Lance 23. Você levanta a mão em direção ao bispo. Abaixa. Toca o cavalo. Abaixa. Retoma a posição mentalmente desde o lance 14, como se refazer o caminho fosse revelar o lance que você não encontra. O relógio te consome 4 minutos durante essa encenação.

@@ -8,6 +8,43 @@ excerpt: >-
 seoTitle: "Complexidade algorítmica do xadrez: por que a IA levou 50 anos"
 seoDescription: "Número de Shannon, alpha-beta pruning, Deep Blue, AlphaZero: a complexidade algorítmica do xadrez explicada e por que bater o humano foi tão difícil."
 frSlug: echecs-et-complexite-algorithmique
+faq:
+  - question: O que é o 'número de Shannon' ?
+    answer: >-
+      É uma estimativa do número de posições legais do xadrez, proposta por Claude Shannon em 1950. Ele a estimava em
+      cerca de 10^43. Trabalhos posteriores refinaram essa estimativa entre 10^44 e 10^47. Para dar uma escala : o
+      universo observável contém cerca de 10^80 átomos, e um segundo contém 10^43 femtossegundos. O número de Shannon
+      ilustra por que uma busca exaustiva de todas as posições é fisicamente impossível, mesmo com computadores
+      infinitamente rápidos.
+  - question: Como o Deep Blue vencia Kasparov se não conseguia calcular tudo ?
+    answer: >-
+      Por duas técnicas combinadas. A poda alfa-beta (alpha-beta pruning) corta a árvore de busca de forma inteligente :
+      se um ramo não pode levar a um resultado melhor do que o já encontrado, ele é abandonado. Isso reduz
+      exponencialmente o espaço de busca. Combinado a uma função de avaliação de posição muito elaborada (desenvolvida
+      com Grandes Mestres), o Deep Blue avaliava cerca de 200 milhões de posições por segundo e buscava tipicamente a
+      12-15 lances de profundidade. É impressionante, mas não é uma resolução completa : é uma heurística muito
+      poderosa.
+  - question: O AlphaZero aprendeu xadrez de verdade em 9 horas ?
+    answer: >-
+      Sim, num sentido preciso : partindo de zero conhecimento humano (apenas as regras), jogando contra si mesmo com
+      aprendizado por reforço e redes neurais profundas, o AlphaZero alcançou um nível superior ao do Stockfish (o
+      melhor motor 'clássico') depois de 9 horas de treino em hardware especializado (TPUs do Google). O que é notável
+      não é só a velocidade, mas o estilo de jogo desenvolvido : dinâmico, sacrificial, com intuições posicionais que
+      os teóricos não haviam codificado.
+  - question: O xadrez está 'resolvido' matematicamente ?
+    answer: >-
+      Não. Um jogo está 'resolvido' quando se pode calcular a decisão ótima a partir de qualquer posição. As damas
+      (checkers) foram resolvidas em 2007 por Jonathan Schaeffer : é um empate perfeito. O xadrez não está resolvido e
+      provavelmente nunca estará com a tecnologia previsível : o espaço de jogo é grande demais. É possível jogar
+      xadrez melhor que qualquer humano, mas não de forma comprovadamente perfeita.
+  - question: Por que os jogadores humanos ainda conseguem jogar xadrez, apesar dessa complexidade ?
+    answer: >-
+      Porque os humanos não buscam no espaço de todas as posições. Eles reconhecem padrões, podam intuitivamente os
+      lances ruins e raciocinam principalmente a partir de conceitos (pressão, estrutura de peões, atividade das peças)
+      em vez de cálculo bruto. Um Grande Mestre raramente calcula mais de 3-5 lances de profundidade numa posição
+      normal : ele elimina 95% deles por intuição antes mesmo de começar a calcular. É um tipo de processamento
+      radicalmente diferente da busca em árvore, e tem as suas próprias forças (criatividade, intuição posicional) e
+      fraquezas (cálculo menos preciso sob pressão).
 ---
 
 Em 1950, Claude Shannon (o fundador da teoria da informação) publicava um artigo intitulado "Programming a Computer for Playing Chess". Ele ainda não havia escrito os programas. Ele calculava se isso era sequer *possível*.

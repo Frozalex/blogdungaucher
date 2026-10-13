@@ -7,6 +7,38 @@ excerpt: >-
 seoTitle: "Regra 40-40-20 no xadrez: tática, finais, aberturas - como estruturar o treinamento"
 seoDescription: "A regra 40-40-20 no xadrez: 40% tática, 40% finais, 20% aberturas. Por que a maioria dos jogadores faz o contrário e o que a pesquisa recomenda."
 frSlug: regle-40-40-20-echecs
+faq:
+  - question: "A partir de que nível é preciso começar a levar as aberturas a sério ?"
+    answer: >-
+      A resposta depende do contexto, mas a maioria dos treinadores situa esse limiar em torno de 1600-1800 Elo
+      no rating padrão. Abaixo disso, as partidas se ganham e se perdem em outro lugar. A exceção : se você
+      joga regularmente contra os mesmos adversários, que conhecem os seus hábitos, uma preparação
+      mínima pode ter efeito surpresa mesmo em nível baixo.
+  - question: "Quanto tempo até ver resultados com esse tipo de trabalho ?"
+    answer: >-
+      A tática produz efeitos visíveis relativamente rápido : vários jogadores relatam menos
+      blunders grosseiros depois de quatro a seis semanas de trabalho diário regular. Os finais levam mais
+      tempo para se materializar porque as situações de final são menos frequentes. Três meses de
+      trabalho estruturado bastam, em geral, para ver uma diferença mensurável nos resultados.
+  - question: "Lichess Puzzles ou Chess Tempo para a tática ?"
+    answer: >-
+      Os dois são válidos. O Chess Tempo é muitas vezes preferido para o trabalho sério porque permite
+      parametrizar categorias de táticas (mate forçado, ganho de material, defesa) e filtrar por nível.
+      O Lichess Puzzles é mais acessível e a interface é mais fluida. O que importa é a regularidade,
+      não a plataforma.
+  - question: "É realmente preciso estudar os finais antes de saber jogar corretamente o meio-jogo ?"
+    answer: >-
+      É a posição de Reuben Fine e de outros treinadores clássicos, e é defensável. Os
+      finais ensinam o valor real das peças, a importância das casas-chave e a precisão do cálculo
+      em posições limpas. Esses conhecimentos se aplicam depois naturalmente ao meio-jogo. Na
+      prática, é melhor avançar em paralelo nos dois, sem esperar ter "terminado" os finais
+      para trabalhar o resto.
+  - question: "A regra se aplica ao blitz ?"
+    answer: >-
+      No blitz puro, os finais contam muito menos (as partidas raramente terminam em final
+      técnico) e a tática ganha ainda mais peso. Mas se o seu objetivo é progredir a
+      longo prazo, o trabalho só em blitz não basta. O blitz treina os reflexos ;
+      o treino estruturado constrói a compreensão.
 ---
 
 Você acabou de perder uma partida. Abre sua biblioteca, relança a variante que lhe deu problema, passa quarenta minutos memorizando lances que talvez nunca vá jogar novamente. Parece útil. Dá a impressão de estar trabalhando.

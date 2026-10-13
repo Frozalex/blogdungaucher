@@ -8,6 +8,43 @@ excerpt: >-
 seoTitle: "Xadrez e deficiência: o tabuleiro como espaço de inclusão"
 seoDescription: "Xadrez e deficiência: jogadores cegos, autismo, tetraplegia, deficiência motora. Como o jogo se adapta e cria espaços de inclusão e igualdade cognitiva."
 frSlug: echecs-et-handicap
+faq:
+  - question: Como as pessoas cegas jogam xadrez ?
+    answer: >-
+      Em tabuleiros especiais : as casas negras são ligeiramente mais altas que as casas brancas, e as
+      peças negras têm um encaixe ou um pino no topo para distingui-las das brancas. Os jogadores podem tocar
+      as peças para verificar a posição : a regra 'peça tocada, peça jogada' é adaptada : eles devem anunciar a intenção
+      antes de tocar ('quero verificar a posição do cavalo'). Os lances são muitas vezes anunciados verbalmente
+      (notação algébrica). Alguns jogadores com deficiência visual atingem níveis de Mestre Nacional e até Internacional.
+  - question: O xadrez ajuda realmente pessoas com autismo ?
+    answer: >-
+      Os relatos e os estudos de caso convergem para sim, para uma fração significativa das pessoas com
+      autismo : não todas. Os aspectos que ajudam : a estrutura explícita das regras (sem ambiguidade), a objetividade do
+      resultado (não se pode 'interpretar mal' uma posição), a ausência de linguagem não verbal a decodificar (não é preciso
+      adivinhar o que o adversário 'quer realmente dizer') e a valorização da lógica e do cálculo, que muitas vezes
+      são forças naturais. O aspecto competitivo pode ser estressante para algumas pessoas.
+  - question: As plataformas online são acessíveis a pessoas com deficiência ?
+    answer: >-
+      Chess.com e Lichess fizeram esforços significativos de acessibilidade. As duas plataformas são compatíveis
+      com leitores de tela para pessoas com deficiência visual. O Lichess (open-source) tem uma interface acessível por
+      texto e permite jogar anunciando os lances pelo teclado. Existem interfaces voice-to-play para deficiências
+      motoras. As interfaces comerciais de eye-tracking (Tobii etc.) funcionam com interfaces web padrão.
+      O jogo online abriu o xadrez a jogadores que não podiam participar de torneios físicos.
+  - question: Existem campeões de xadrez com deficiências importantes ?
+    answer: >-
+      Vários. O Mestre Internacional Dariusz Świercz (Polônia) jogou partidas de alto nível apesar de uma
+      paralisia parcial. Na França, jogadores com deficiência visual atingiram níveis de Mestre Nacional. Num nível
+      menos competitivo, mas igualmente significativo, muitos jogadores com paralisias motoras severas participam de
+      torneios online com tecnologias assistivas. Isso não é anedótico : as organizações de xadrez
+      para deficientes visuais organizam Campeonatos do Mundo há mais de 60 anos.
+  - question: Como funcionam os programas de xadrez na educação especial ?
+    answer: >-
+      Tipicamente integrando o xadrez como ferramenta pedagógica transversal : não para formar jogadores
+      competitivos, mas para desenvolver competências gerais : atenção sustentada, gestão da frustração
+      (perder uma peça), planejamento sequencial (antecipar o próximo lance), respeito às regras. Os programas
+      adaptam as restrições : partidas mais curtas, regras simplificadas no início, foco em aspectos específicos
+      em vez do jogo completo. Estudos em escolas especializadas americanas e alemãs mostram
+      melhoras mensuráveis nos comportamentos de autorregulação em 3 a 6 meses.
 ---
 
 Timur Gareyev é Grande Mestre. Em 2016, ele jogou 48 partidas simultâneas às cegas : um recorde mundial. Usava uma máscara nos olhos, pedalando uma bicicleta estacionária, e calculava 48 posições simultaneamente durante 19 horas.

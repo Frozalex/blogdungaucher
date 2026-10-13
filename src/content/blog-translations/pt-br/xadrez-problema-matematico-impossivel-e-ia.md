@@ -7,6 +7,41 @@ excerpt: >-
 seoTitle: "Xadrez problema matemático impossível: complexidade, Shannon, IA"
 seoDescription: "10^120 partidas possíveis, complexidade EXPTIME, Stockfish a 3500 Elo: por que resolver o xadrez permanece matematicamente impossível e como a IA contorna o muro."
 frSlug: pourquoi-echecs-probleme-mathematique-impossible-et-ia
+faq:
+  - question: "O xadrez será \"resolvido\" algum dia ?"
+    answer: >-
+      No sentido forte (resultado provado a partir da posição inicial, como nas damas desde 2007),
+      <strong>provavelmente nunca</strong>. O limite de $10^{120}$ + o resultado EXPTIME-completo tornam a
+      resolução fisicamente inatingível por força bruta. Uma prova <strong>indireta</strong> (por
+      simetria, invariante, argumentação teórica) continua teoricamente possível, mas sem nenhuma pista séria. A
+      computação quântica reduz o limite à metade (Grover) : $10^{60}$ continua astronômico.
+  - question: "Qual é a diferença entre \"resolver\" e \"vencer o humano\" ?"
+    answer: >-
+      "Resolver" = provar o resultado matemático exato sob jogo perfeito. "Vencer o humano" = estar em média
+      mais próximo da estratégia ótima que um cérebro humano. O Stockfish vence qualquer humano com ~3500
+      de Elo sem nunca resolver. Inversamente, um programa que resolvesse o xadrez não seria necessariamente
+      mais forte que o Stockfish <em>por lance</em> : a resolução é uma verdade global, não uma superioridade
+      local.
+  - question: "Por que o AlphaZero \"venceu\" o Stockfish se os dois são aproximações ?"
+    answer: >-
+      Porque, num dado momento, a aproximação por rede neural + MCTS do AlphaZero estava mais
+      próxima da verdade de Zermelo que a aproximação por alfa-beta + avaliação manual do Stockfish
+      (versão 8 da época). Desde 2020, o Stockfish incorporou o NNUE (rede neural eficiente na
+      avaliação) e retomou a vantagem nos torneios TCEC. A corrida continua.
+  - question: "O número de Shannon é uma medida exata ?"
+    answer: >-
+      Não. É uma <strong>estimativa de ordem de grandeza</strong> do número de partidas possíveis ($\sim
+      10^{120}$), não do número de posições legais distintas ($\sim 10^{43}$ segundo estimativas mais
+      recentes, ainda em debate). A confusão entre as duas é muito frequente. A distinção importa :
+      para resolver o xadrez, é o número de posições que conta (para armazenar), mas é a árvore
+      das partidas que limita o tempo de exploração.
+  - question: "Se um humano não pode calcular tudo, para que serve progredir ?"
+    answer: >-
+      Para duas coisas : (1) melhorar a sua <strong>função de avaliação interna</strong> (senso posicional), (2)
+      melhorar a sua <strong>poda intuitiva</strong> (descartar rapidamente os candidatos ruins). É
+      exatamente a estratégia dos motores. A diferença entre 1200 e 2400 de Elo não é uma explosão de
+      cálculo bruto : é uma aproximação muito mais fina da verdade com praticamente o mesmo número de
+      posições efetivamente examinadas.
 ---
 
 Você já viveu esse paradoxo : os aplicativos e a mídia vendem o [xadrez](https://pt.wikipedia.org/wiki/Xadrez) como um objeto de complexidade cósmica, um jogo onde cada jogador traça uma estratégia a longo prazo; depois você abre um aplicativo, joga um lance razoável, e o motor te corrige e te explica uma linha que você sozinho jamais encontraria.

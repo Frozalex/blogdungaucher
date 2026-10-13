@@ -8,6 +8,38 @@ excerpt: >-
 seoTitle: "Resiliência no xadrez: como se recuperar após uma derrota e progredir"
 seoDescription: "Estilo explicativo, distanciamento de si, análise pós-derrota: o que a psicologia da resiliência diz sobre a gestão das derrotas no xadrez e a progressão."
 frSlug: echecs-et-resilience
+faq:
+  - question: Como aceitar uma derrota no xadrez sem se desencorajar ?
+    answer: >-
+      A chave é separar a avaliação da partida da avaliação de si mesmo. Uma derrota diz algo sobre a sua
+      preparação ou a sua forma do dia : não sobre o seu valor como pessoa. Concretamente : conceda-se um tempo
+      limitado para sentir a decepção (15-30 minutos), depois desloque a atenção para a análise factual. 'O que
+      aconteceu ?' é uma pergunta útil ; 'Por que sou tão ruim ?' não é.
+  - question: Os grandes mestres são realmente resilientes depois de uma derrota ?
+    answer: >-
+      Sim, mas não no sentido de 'indiferentes'. Garry Kasparov descreveu derrotas que o assombraram por anos.
+      Magnus Carlsen abandonou torneios com raiva depois de derrotas inesperadas. A diferença não é a ausência
+      de emoção : é a capacidade de voltar à análise produtiva apesar da emoção. Eles processam a decepção, não a
+      negam.
+  - question: É melhor analisar a partida imediatamente depois ou esperar ?
+    answer: >-
+      A pesquisa sobre memória emocional sugere um intervalo de 24-48 horas para a análise em profundidade. Nas
+      primeiras horas, a ativação emocional (cortisol, adrenalina residual) perturba o julgamento : você se
+      lembra melhor dos lances ruins que dos bons, e avalia os seus erros com dureza excessiva. Depois de 48h, alguns
+      detalhes se apagam. A manhã seguinte costuma ser o melhor momento.
+  - question: A resiliência se treina ou é uma disposição inata ?
+    answer: >-
+      As duas coisas. Existe um componente temperamental na resiliência : algumas pessoas se recuperam naturalmente
+      mais rápido. Mas os estudos (Bonanno, 2004 ; Masten, 2014) mostram que a resiliência também é uma competência que
+      se treina. As práticas concretas (escrever um diário, reformulação cognitiva, apoio social) aumentam a
+      resiliência de forma mensurável.
+  - question: Como evitar repetir os mesmos erros depois de uma derrota ?
+    answer: >-
+      O protocolo em três etapas : (1) Identificar a causa precisa da derrota : não 'joguei mal o meio de
+      jogo', mas 'subestimei a força do Cavalo dele em c5 porque só calculava as ameaças diretas' ;
+      (2) Trabalhar especificamente essa fraqueza (exercícios táticos sobre Cavalos centrais, por exemplo) ; (3)
+      Rejogar mentalmente a posição-chave com a correção. Esse ciclo transforma cada derrota em programa
+      de treino direcionado.
 ---
 
 [Viktor Kortchnoi](https://pt.wikipedia.org/wiki/Viktor_Kortchnoi) jogou xadrez em alto nível até os 81 anos. Perdeu milhares de partidas ao longo de sua carreira : incluindo duas finais de campeonato mundial, contra Karpov, em condições psicológicas extenuantes. E voltou. Sempre.

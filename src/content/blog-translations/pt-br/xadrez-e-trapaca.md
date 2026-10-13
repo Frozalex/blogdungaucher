@@ -8,6 +8,39 @@ excerpt: >-
 seoTitle: "A trapaça no xadrez: o caso Niemann decifrado"
 seoDescription: "Trapaça no xadrez: o caso Hans Niemann vs Magnus Carlsen decifrado. Como se detecta a trapaça, é possível prová-la, e o que o escândalo revela sobre o jogo profissional?"
 frSlug: echecs-et-la-triche
+faq:
+  - question: Hans Niemann realmente trapaceou contra Magnus Carlsen ?
+    answer: >-
+      Não se sabe. É precisamente o cerne do problema. O Chess.com publicou um relatório de 72 páginas sugerindo que
+      Niemann provavelmente havia trapaceado em mais de 100 partidas online, algumas delas mediante remuneração. Mas para
+      a partida contra Carlsen no torneio de Saint Louis, em setembro de 2022 (a partida em questão), nenhuma prova de
+      trapaça em condições clássicas presenciais foi estabelecida. O processo movido por Niemann foi resolvido em acordo
+      em 2023. Nem confissão, nem condenação.
+  - question: Como se detecta a trapaça no xadrez ?
+    answer: >-
+      Principalmente por análise estatística : comparam-se os lances jogados com as recomendações dos melhores motores
+      (Stockfish, Leela Chess Zero) e calcula-se um índice de correlação. Uma correlação anormalmente alta ao longo de
+      um período longo é suspeita. O problema é que isso é uma inferência probabilística, não uma prova direta.
+      Jogadores já foram acusados e depois absolvidos. O método produz falsos positivos. A FIDE trabalha em protocolos
+      mais rigorosos desde 2022.
+  - question: Por que Magnus Carlsen não explicou a sua retirada ?
+    answer: >-
+      Ele declarou não querer se manifestar, por orientação da sua equipe jurídica : coerente se um processo
+      judicial estivesse sendo considerado. O seu comportamento (retirada do torneio, tweet enigmático citando Mourinho) foi largamente
+      lido como uma acusação implícita. Mas acusar publicamente alguém de trapaça sem prova sólida expõe a
+      processos por difamação. Carlsen escolheu a ambiguidade calculada.
+  - question: A trapaça no xadrez é frequente nos torneios clássicos ?
+    answer: >-
+      Em torneios clássicos fiscalizados (presença física, proibição de celulares, às vezes bloqueio
+      eletrônico), a trapaça direta por motor é muito difícil. Os casos documentados envolvem geralmente
+      dispositivos escondidos. Online, em contrapartida, a trapaça é endêmica segundo o Chess.com e o Lichess, que banem
+      dezenas de milhares de contas por ano.
+  - question: O que o caso mudou concretamente ?
+    answer: >-
+      A FIDE reforçou os seus protocolos antitrapaça para os torneios de elite : bloqueio eletrônico, atraso de
+      transmissão de 15-30 minutos. O Chess.com publicou o seu relatório, criando um precedente de transparência. E o debate
+      sobre o ônus da prova : cabe ao acusado provar a inocência ou ao acusador provar a falta ?
+      continua aberto e estruturalmente sem solução.
 ---
 
 Em 4 de setembro de 2022, Magnus Carlsen perde contra Hans Niemann no Sinquefield Cup em Saint Louis. No dia seguinte, se retira do torneio. Publica um tweet citando José Mourinho: *"If I speak I am in big trouble."*

@@ -7,6 +7,39 @@ excerpt: >-
 seoTitle: "Pausas no xadrez: por que parar te torna melhor jogador"
 seoDescription: "Por que as pausas melhoram o xadrez: consolidação da memória, fadiga cognitiva, sono e rage-quit. Protocolos concretos para torneios e treinos."
 frSlug: bienfaits-des-pauses-aux-echecs
+faq:
+  - question: "Quanto tempo de pausa é realmente necessário entre duas partidas longas ?"
+    answer: >-
+      A literatura sobre fadiga cognitiva no esporte (FIDE incluída) sugere um mínimo de <strong>30 a 60
+      minutos de recuperação ativa</strong> (caminhada, refeição leve, hidratação, nenhuma tela de xadrez) entre
+      duas partidas clássicas (≥ 90 minutos por jogador). Online é mais difícil de respeitar, mas o princípio
+      permanece : se você enfileira 5 partidas de blitz em 30 minutos depois de uma derrota, está quase garantido
+      que vai tiltar e reforçar reflexos fracos.
+  - question: "O sono conta mais do que o estudo para progredir ?"
+    answer: >-
+      Não mais, mas <strong>tanto quanto</strong>. Trocar 1 hora de sono por 1 hora de estudo é quase sempre um mau
+      negócio : você perde mais na consolidação do que aprendeu antes do que ganha em aprendizados novos. Para uma
+      sessão de fim de noite, vale mais <strong>revisar 3 exercícios conhecidos</strong> do que <strong>descobrir 10
+      novos</strong> : a consolidação que vem a seguir será mais eficaz sobre material parcialmente dominado.
+  - question: "Uma partida rápida conta como pausa ?"
+    answer: >-
+      Não. É o erro mais comum. Uma partida rápida solicita <strong>exatamente os mesmos circuitos cognitivos</strong>
+      da sua sessão de estudo anterior : tomada de decisão sob pressão, cálculo, avaliação. Do ponto de vista da
+      fadiga cognitiva, é uma continuação da sessão, não uma pausa. Uma pausa cognitiva de verdade muda de canal :
+      caminhada, conversa sem relação com xadrez, leitura distraída, exercício físico leve.
+  - question: "É preciso fazer pausas longas mesmo quando se está progredindo bem ?"
+    answer: >-
+      Sobretudo quando você está progredindo bem. O sistema dopaminérgico se dessensibiliza mais rápido quando a
+      recompensa é regular (progresso visível) : é o paradoxo do "burnout dos bons alunos". Os jogadores que progridem
+      rápido até 1800-2000 Elo e muitas vezes abandonam depois são os que nunca fizeram uma pausa estruturada. Uma
+      pausa de 5-7 dias a cada 2-3 meses sustenta a motivação intrínseca por vários anos.
+  - question: "O café ajuda mesmo a compensar o cansaço ?"
+    answer: >-
+      No curto prazo sim, mas numa partida clássica de 4-5 horas a cafeína <strong>desloca</strong> o cansaço em vez
+      de resolvê-lo : você se sente alerta no lance 20 e desaba com mais força entre os lances 35 e 50. Os treinadores
+      da FIDE recomendam tipicamente <strong>um café pouco antes da partida</strong> + <strong>água durante</strong>,
+      nunca uma sequência de estimulantes. A cafeína consumida depois das 14h também degrada o sono da noite seguinte,
+      e portanto a consolidação daquela partida.
 ---
 
 O jogador que progride mais rápido nem sempre é o que joga mais. Frequentemente é o que sabe quando parar. A pausa não é tempo perdido: é parte integrante do processo de aprendizado, consolidação e recuperação. A neurociência e a psicologia do esporte demonstraram isso de forma cada vez mais precisa. E os jogadores de xadrez, que tendem a valorizar o acúmulo (mais horas, mais puzzles, mais partidas), subestimam sistematicamente essa ferramenta.

@@ -7,6 +7,26 @@ excerpt: >-
 seoTitle: "Xadrez e Alzheimer: estudos, dados e prevenção cognitiva"
 seoDescription: "Xadrez e Alzheimer: dados sobre jogos cognitivos e demência. Meta-análises MMSE, coortes ALSOP, ensaios clínicos em idosos."
 frSlug: echecs-alzheimer-prevention-declin-cognitif
+faq:
+  - question: O xadrez previne a doença de Alzheimer ?
+    answer: >-
+      Não : nenhuma atividade isolada pode garantir a ausência de patologia neurodegenerativa. As grandes coortes
+      mostram associações entre atividades mentais regulares e risco relativo menor na escala de uma
+      população ; não uma proteção individual mensurável com certeza.
+  - question: Quanto valem as « porcentagens » de redução de risco citadas nas publicações ?
+    answer: >-
+      São muitas vezes hazard ratios ajustados : por exemplo uma queda relativa de 11 % ou 9 % no risco de demência
+      em dez anos para hábitos frequentes (leitura ou jogos/quebra-cabeças) numa coorte específica. Não é uma
+      garantia pessoal : idade, genética, saúde vascular e azar sempre contam.
+  - question: As pesquisas sobre o jogo de Go se aplicam ao xadrez ?
+    answer: >-
+      Em parte : são jogos de tabuleiro de carga cognitiva elevada, mas os protocolos (duração, doentes já
+      diagnosticados vs idosos saudáveis) diferem. É preciso ler cada título como uma peça do quebra-cabeça, não como
+      uma prova transferível palavra por palavra ao xadrez ocidental.
+  - question: O xadrez modifica a arquitetura cerebral ?
+    answer: >-
+      A prática prolongada está associada a diferenças funcionais nos exames de imagem ; para a ligação jogo → reservas
+      cognitivas e transferência, veja as nossas páginas sobre a cognição no xadrez e sobre o jogo de xadrez.
 ---
 
 Os títulos sensacionalistas prometem às vezes uma "arma" contra a patologia frequentemente chamada doença de Alzheimer na mídia.

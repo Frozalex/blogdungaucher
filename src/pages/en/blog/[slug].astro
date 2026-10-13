@@ -40,7 +40,6 @@ import {
 } from "../../../utils/markdown-strip-faq";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleVideo from "../../../components/ArticleVideo.astro";
-import KeyTakeaways from "../../../components/KeyTakeaways.astro";
 import { isPublicAssetAvailable } from "../../../utils/public-asset";
 
 export async function getStaticPaths() {
@@ -67,7 +66,12 @@ const enEntryRaw = await getEntry("enTranslations", slug);
 const enEntry = enEntryRaw && !enEntryRaw.data.draft ? enEntryRaw : undefined;
 const englishMarkdown = enEntry?.body;
 
-const faqsForDisplay = enEntry?.data?.faq ?? post.data.faq ?? [];
+/** FAQ : jamais de repli sur celle de l'article FR quand une traduction existe,
+ *  sinon une page /en/ affiche des questions/réponses en français (et les pousse
+ *  dans le JSON-LD FAQPage). Toutes les traductions EN ont aujourd'hui leur propre
+ *  `faq` ; la règle protège les prochaines. Sans traduction, la page sert déjà le
+ *  texte FR sous bandeau et la FAQ FR y reste cohérente. */
+const faqsForDisplay = enEntry ? (enEntry.data.faq ?? []) : (post.data.faq ?? []);
 const stripInlineFaq = faqsForDisplay.length > 0;
 const mdSource = englishMarkdown ?? post.body ?? "";
 const mdForArticle = stripInlineFaq ? stripFaqH2Section(mdSource) : mdSource;
@@ -125,6 +129,10 @@ const enTitle        = enEntry?.data?.seoTitle ?? enEntry?.data?.title ?? post.d
 const enDesc         = enEntry?.data?.seoDescription ?? enEntry?.data?.excerpt ?? post.data.seoDescription ?? post.data.excerpt;
 const displayTitle   = enEntry?.data?.title   ?? post.data.title;
 const displayExcerpt = enEntry?.data?.excerpt ?? post.data.excerpt;
+/** Sans traduction EN publiée, la page sert le texte FR + bandeau d'avertissement.
+ *  Sert aussi de condition de `noindex` : indexer du français sur une URL /en/
+ *  revient à présenter un duplicata de l'article FR. Le sitemap applique le
+ *  même filtre (cf. src/pages/sitemap.xml.ts). */
 const hasEnTranslation = !!enEntry;
 // Tags : uniquement ceux de la traduction EN (pas les tags FR de la source).
 const displayTags = enEntry?.data?.tags ?? [];
@@ -183,6 +191,7 @@ const structuredData = [
   structuredData={structuredData}
   accentColor={category.accent}
   tags={post.data.tags}
+  noindex={!hasEnTranslation}
 >
   <article class="article-page" style={`--c:${category.accent}`}>
     {/* Thin breadcrumb above the hero */}
@@ -318,9 +327,9 @@ const structuredData = [
           )}
         </div>
 
-        {post.data.keyTakeaways && post.data.keyTakeaways.length > 0 && (
-          <KeyTakeaways items={post.data.keyTakeaways} accentColor={category.accent} />
-        )}
+        {/* Pas de KeyTakeaways ici : le composant a un en-tête « L'essentiel » en
+            dur et recevrait les puces FR de l'article source, alors que la
+            traduction porte déjà sa propre section « Key Takeaways ». */}
 
         {faqsForDisplay.length > 0 && <FAQ items={faqsForDisplay} lang="en" />}
 

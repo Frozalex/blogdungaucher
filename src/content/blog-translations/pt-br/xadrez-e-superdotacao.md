@@ -8,6 +8,39 @@ excerpt: >-
 seoTitle: "Xadrez e superdotação intelectual (SD): benefícios e precauções"
 seoDescription: "O tabuleiro é ideal para crianças superdotadas? Estimulação, perfeccionismo, gestão do fracasso: o que a pesquisa sobre a precocidade intelectual diz sobre o xadrez."
 frSlug: echecs-et-hpi
+faq:
+  - question: As crianças superdotadas são naturalmente melhores no xadrez ?
+    answer: >-
+      Não, ou pelo menos não sistematicamente. As pesquisas de Anders Ericsson sobre expertise mostram que o
+      desempenho no xadrez resulta da prática deliberada, não do QI isolado. Estudos de Hambrick et al. (2014,
+      Psychological Science) mostram que o QI explica cerca de 8% da variância do desempenho no xadrez na sua
+      amostra : a prática deliberada explica mais. Uma criança superdotada que não trabalha vai progredir menos
+      que uma criança de QI médio que treina a sério.
+  - question: O xadrez ajuda crianças superdotadas que se aborrecem na sala de aula ?
+    answer: >-
+      Muitas vezes sim, mas não pelas razões habitualmente citadas. O tabuleiro não aumenta o QI, mas oferece
+      uma estimulação cognitiva à altura do potencial da criança superdotada, reduz o tédio e fornece um espaço em que
+      o esforço é valorizado. Para superdotados que sofrem com a falta de desafio intelectual no meio escolar, os clubes
+      de xadrez podem ser um ambiente compensatório valioso.
+  - question: Como lidar com o perfeccionismo dos superdotados no xadrez ?
+    answer: >-
+      O perfeccionismo nos superdotados é muitas vezes intrínseco : eles se impõem padrões impossíveis. No xadrez,
+      isso se manifesta por uma incapacidade de aceitar os próprios erros, um sofrimento desproporcional depois das
+      derrotas e, às vezes, uma evitação dos torneios. A abordagem recomendada : acompanhamento por um treinador que
+      valorize a análise dos erros como aprendizado (não como confissão de fraqueza), e trabalho explícito sobre a
+      tolerância à imperfeição.
+  - question: Com que idade uma criança superdotada deveria começar o xadrez ?
+    answer: >-
+      A partir do momento em que a criança demonstra interesse, muitas vezes por volta dos 4-6 anos nos casos precoces. O desenvolvimento cognitivo de uma
+      criança superdotada é muitas vezes assimétrico (intelectualmente avançada, emocionalmente na idade real), o que Terrassier
+      chama de 'dissincronia'. O xadrez se adapta bem a essa dissincronia : a regra formal não muda
+      conforme a idade emocional, e a competição pode se dar por nível de jogo em vez de por idade.
+  - question: O xadrez pode ajudar os superdotados a se integrar melhor socialmente ?
+    answer: >-
+      Às vezes, mas não é garantido. Os clubes de xadrez reúnem pessoas de níveis de jogo variados em vez
+      de idades semelhantes : o que pode ser muito positivo para um superdotado que se sente deslocado dos colegas de classe.
+      Mas os clubes de xadrez não são automaticamente espaços inclusivos : superdotados com dificuldades sociais
+      adicionais (TEA leve, ansiedade social) podem precisar de um acompanhamento específico.
 ---
 
 "Meu filho é superdotado e se entedia na escola. O xadrez seria indicado para ele?"
