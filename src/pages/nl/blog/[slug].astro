@@ -135,7 +135,12 @@ const displayExcerpt = nlEntry?.data?.excerpt ?? post.data.excerpt;
 const hasNlTranslation = !!nlEntry;
 
 const heroSrc = getPostHeroSrc(post);
-const heroImage = heroSrc ? post.data.heroImage : undefined;
+/* Alt localisé si la traduction en porte un, sinon l'alt FR (même règle qu'en
+   /en/ et /pt-br/). Aucune traduction NL ne renseigne encore `heroImageAlt`,
+   mais le câblage évite de reproduire le bug au lancement du néerlandais. */
+const heroImage = heroSrc && post.data.heroImage
+  ? { ...post.data.heroImage, alt: nlEntry?.data?.heroImageAlt ?? post.data.heroImage.alt }
+  : undefined;
 /* Hero full-bleed → sizes="100vw". Sans srcset un mobile de 380 px payait
    l'original 1200 px (~150-190 Ko) pour l'afficher à 380 px. */
 const heroSrcset = buildSrcset(heroSrc);

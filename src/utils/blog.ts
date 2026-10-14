@@ -125,34 +125,45 @@ export function getRelatedPosts(
 export type SiteLang = "fr" | "en" | "pt-br" | "nl";
 
 /**
- * Titre/extrait d'un article dans la langue demandée.
+ * Titre/extrait/alt de vignette d'un article dans la langue demandée.
  *
  * Les traductions vivent dans des collections séparées (`enTranslations`,
  * `ptBrTranslations`, `nlTranslations`) reliées au slug FR ; une entrée en
  * `draft` est ignorée et on retombe sur le texte français. Partagé entre
  * ArticleCard (rendu serveur) et l'index JSON du filtre client, pour que les
  * deux affichent exactement le même texte.
+ *
+ * `heroImageAlt` est porté ici — et non lu directement depuis `post.data` par
+ * les appelants — parce que l'alt localisé vit dans la traduction alors que
+ * l'image vit dans l'article FR : sans ce passage par le helper, les listings
+ * affichaient l'alt français sur les pages /en/ et /pt-br/.
  */
 export async function getLocalizedPostText(post: BlogEntry, lang: SiteLang) {
-  const fallback = { title: post.data.title, excerpt: post.data.excerpt };
+  const frAlt = post.data.heroImage?.alt ?? null;
+  const fallback = { title: post.data.title, excerpt: post.data.excerpt, heroImageAlt: frAlt };
   if (lang === "fr") return fallback;
 
   const frSlug = getPostSlug(post);
 
+  const localized = (entry: { data: { title: string; excerpt: string; heroImageAlt?: string } }) => ({
+    title: entry.data.title,
+    excerpt: entry.data.excerpt,
+    // Une traduction sans `heroImageAlt` retombe sur l'alt FR : mieux qu'un alt
+    // vide pour les lecteurs d'écran, et le cas est résiduel (toutes les
+    // traductions dont la source FR porte un alt en ont un, cf. audit).
+    heroImageAlt: entry.data.heroImageAlt ?? frAlt,
+  });
+
   if (lang === "en") {
     const entry = await getEntry("enTranslations", frSlug);
-    if (entry && !entry.data.draft) {
-      return { title: entry.data.title, excerpt: entry.data.excerpt };
-    }
+    if (entry && !entry.data.draft) return localized(entry);
     return fallback;
   }
 
   const collection = lang === "pt-br" ? "ptBrTranslations" : "nlTranslations";
   const entries = await getCollection(collection);
   const entry = entries.find((e) => (e.data.frSlug ?? e.id) === frSlug);
-  if (entry && !entry.data.draft) {
-    return { title: entry.data.title, excerpt: entry.data.excerpt };
-  }
+  if (entry && !entry.data.draft) return localized(entry);
   return fallback;
 }
 

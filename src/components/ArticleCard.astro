@@ -21,8 +21,8 @@ const TitleTag = lead || featured ? "h2" : "h3";
 
 const category = getCategoryMeta(post.data.category);
 
-// Titre/extrait dans la langue de la page (retombe sur le FR si pas de traduction publiée).
-const { title: postTitle, excerpt: postExcerpt } = await getLocalizedPostText(post, lang);
+// Titre/extrait/alt dans la langue de la page (retombe sur le FR si pas de traduction publiée).
+const { title: postTitle, excerpt: postExcerpt, heroImageAlt } = await getLocalizedPostText(post, lang);
 
 // Étiquettes localisées (server-side, indexable par les moteurs).
 const tLang: Lang = (lang === "pt-br" || lang === "nl") ? lang : (lang as Lang);
@@ -56,7 +56,7 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
           src={thumbSrc}
           srcset={thumbSrcset}
           sizes={thumbSrcset ? thumbSizes : undefined}
-          alt={post.data.heroImage?.alt || postTitle}
+          alt={heroImageAlt || postTitle}
           width="600"
           height="400"
           loading={eager ? "eager" : "lazy"}

@@ -24,7 +24,7 @@ export async function buildBlogIndexResponse(lang: SiteLang) {
 
   const entries = await Promise.all(
     posts.map(async (post) => {
-      const { title, excerpt } = await getLocalizedPostText(post, lang);
+      const { title, excerpt, heroImageAlt } = await getLocalizedPostText(post, lang);
       const hero = getPostHeroSrc(post);
       return {
         href: await getPostUrlLang(post, lang),
@@ -35,7 +35,7 @@ export async function buildBlogIndexResponse(lang: SiteLang) {
         date: formatDateForLang(post.data.publishDate, lang),
         iso: post.data.publishDate.toISOString(),
         hero,
-        heroAlt: hero ? (post.data.heroImage?.alt || title) : "",
+        heroAlt: hero ? (heroImageAlt || title) : "",
       };
     }),
   );
