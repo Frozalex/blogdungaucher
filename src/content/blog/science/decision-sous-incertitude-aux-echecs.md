@@ -6,7 +6,7 @@ category: "science"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "23 min"
+readingTime: "12 min"
 pillar: "Théorie de la décision"
 tags: ["décision sous incertitude", "échecs", "utilité espérée", "Bayes", "Kahneman", "Simon", "rationalité limitée"]
 seoTitle: "Décision sous incertitude aux échecs : utilité espérée, Bayes et rationalité limitée"

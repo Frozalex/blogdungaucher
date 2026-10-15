@@ -8,7 +8,7 @@ publishDate: "2026-09-22"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 20 min
+readingTime: 15 min
 pillar: Psychologie
 tags:
   - mécanismes de défense

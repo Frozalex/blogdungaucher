@@ -8,7 +8,7 @@ updatedDate: "2026-05-10"
 category: science
 featured: true
 featuredRank: 3
-readingTime: 28 min
+readingTime: 11 min
 pillar: Neurosciences
 tags:
   - Alzheimer

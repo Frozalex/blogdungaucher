@@ -5,7 +5,7 @@ publishDate: "2026-06-04"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "13 min"
+readingTime: "8 min"
 pillar: "Intelligence artificielle"
 tags: ["réseaux bayésiens", "blunder", "probabilités", "échecs", "intelligence artificielle", "statistiques", "prédiction"]
 seoTitle: "Prédire les blunders avec les réseaux bayésiens : estimer l'erreur adverse"

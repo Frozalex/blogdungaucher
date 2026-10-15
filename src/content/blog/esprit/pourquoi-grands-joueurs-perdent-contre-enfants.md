@@ -5,7 +5,7 @@ publishDate: "2026-12-03"
 category: "esprit"
 featured: false
 featuredRank: 99
-readingTime: "10 min"
+readingTime: "6 min"
 pillar: "Mental"
 tags: ["grands maîtres", "enfants prodiges", "Elo", "fatigue cognitive", "prises de risque", "psychologie"]
 seoTitle: "Pourquoi un GM peut perdre contre un enfant : explication cognitive"

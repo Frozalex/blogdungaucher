@@ -7,7 +7,7 @@ publishDate: "2026-04-05"
 category: esprit
 featured: true
 featuredRank: 1
-readingTime: 16 min
+readingTime: 13 min
 pillar: Psychologie
 tags:
   - psychologie

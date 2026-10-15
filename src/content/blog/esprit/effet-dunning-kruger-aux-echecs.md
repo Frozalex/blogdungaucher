@@ -8,7 +8,7 @@ publishDate: "2026-08-18"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 18 min
+readingTime: 19 min
 pillar: Psychologie
 tags:
   - Dunning-Kruger

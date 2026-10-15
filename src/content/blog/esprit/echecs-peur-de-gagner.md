@@ -5,7 +5,7 @@ publishDate: "2026-07-09"
 category: "esprit"
 featured: false
 featuredRank: 99
-readingTime: "13 min"
+readingTime: "6 min"
 pillar: "Psychologie"
 tags: ["peur de gagner", "psychologie", "échecs", "sabotage", "performance", "anxiété", "victoire"]
 seoTitle: "Peur de gagner aux échecs : pourquoi on se sabote"

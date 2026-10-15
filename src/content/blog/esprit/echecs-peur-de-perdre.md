@@ -5,7 +5,7 @@ publishDate: "2026-07-20"
 category: "esprit"
 featured: false
 featuredRank: 99
-readingTime: "14 min"
+readingTime: "7 min"
 pillar: "Psychologie"
 tags: ["peur de perdre", "psychologie", "échecs", "défaite", "anxiété", "performance", "Elo"]
 seoTitle: "Peur de perdre aux échecs : psychologie et solutions"

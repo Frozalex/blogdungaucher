@@ -2,9 +2,9 @@ import react from "@astrojs/react";
 import { defineConfig } from "astro/config";
 
 import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
 
 import { rehypeAffiliateLinks } from "./src/utils/rehype-affiliate-links.ts";
+import { rehypeMathSingle } from "./src/utils/rehype-math-single.ts";
 
 import { SITE_ORIGIN } from "./scripts/site-origin.mjs";
 import { enSlugRedirects } from "./scripts/en-redirects.mjs";
@@ -82,7 +82,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkMath],
-    rehypePlugins: [rehypeKatex, rehypeAffiliateLinks],
+    rehypePlugins: [rehypeMathSingle, rehypeAffiliateLinks],
     shikiConfig: {
       // Thème clair lisible, contraste élevé sur fond blanc.
       theme: "github-light",

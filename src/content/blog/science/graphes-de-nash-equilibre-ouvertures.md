@@ -6,7 +6,7 @@ updatedDate: "2026-05-21"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "17 min"
+readingTime: "12 min"
 pillar: "Mathématiques"
 tags: ["Nash", "équilibre", "ouvertures", "théorie des jeux", "échecs", "défense berlinoise", "Kramnik 2000", "trembling-hand", "mathématiques"]
 seoTitle: "Équilibre de Nash et ouvertures : pourquoi l'Espagnole dure 200 ans"

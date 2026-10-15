@@ -8,7 +8,7 @@ publishDate: "2027-07-13"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 9 min
+readingTime: 8 min
 pillar: Intelligence artificielle
 tags:
   - Python

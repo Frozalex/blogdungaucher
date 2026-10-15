@@ -5,7 +5,7 @@ publishDate: "2026-06-01"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "13 min"
+readingTime: "7 min"
 pillar: "Neurosciences"
 tags: ["neurones miroirs", "échecs", "neurosciences", "cerveau", "anticipation", "empathie", "cognition"]
 seoTitle: "Neurones miroirs aux échecs : anticiper l'adversaire"

@@ -8,7 +8,7 @@ publishDate: "2026-10-06"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 15 min
+readingTime: 10 min
 pillar: Psychologie
 tags:
   - effet placebo

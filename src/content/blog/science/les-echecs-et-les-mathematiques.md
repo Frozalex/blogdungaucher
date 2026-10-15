@@ -8,7 +8,7 @@ updatedDate: "2026-05-21"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 19 min
+readingTime: 15 min
 pillar: Cognition
 tags:
   - échecs

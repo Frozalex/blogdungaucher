@@ -8,7 +8,7 @@ publishDate: "2026-07-23"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 19 min
+readingTime: 9 min
 pillar: Inclusion
 tags:
   - HPI

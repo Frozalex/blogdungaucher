@@ -3,7 +3,6 @@ import * as cheerio from "cheerio";
 import { toHtml } from "hast-util-to-html";
 import { toString } from "mdast-util-to-string";
 import type { Root as MdastRoot } from "mdast";
-import rehypeKatex from "rehype-katex";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
@@ -12,6 +11,8 @@ import remarkStringify from "remark-stringify";
 import { unified } from "unified";
 
 import { rehypeAffiliateLinks } from "./rehype-affiliate-links";
+import { rehypeMathSingle } from "./rehype-math-single";
+import { stripInlineMath } from "./inline-math";
 
 export type ArticleHeading = { depth: number; slug: string; text: string };
 
@@ -88,8 +89,10 @@ function extractHeadingsFromMdast(tree: MdastRoot): ArticleHeading[] {
       const text = toString(node).trim();
       out.push({
         depth: node.depth,
+        // Slug sur le texte brut (ancre publique, à ne pas faire bouger) ;
+        // libellé du sommaire nettoyé de son LaTeX.
         slug: slugger.slug(text),
-        text,
+        text: stripInlineMath(text),
       });
     }
   }
@@ -108,7 +111,7 @@ export async function renderMarkdownToArticleHtml(markdown: string): Promise<{
 
   const hast = await unified()
     .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeKatex)
+    .use(rehypeMathSingle)
     .use(rehypeAffiliateLinks)
     .run(tree);
 

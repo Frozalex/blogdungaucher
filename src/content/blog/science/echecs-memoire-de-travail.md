@@ -8,7 +8,7 @@ publishDate: "2026-09-14"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 17 min
+readingTime: 6 min
 pillar: Science des échecs
 tags:
   - mémoire de travail

@@ -9,7 +9,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 17 min
+readingTime: 8 min
 pillar: Échecs et société
 tags:
   - diplomatie

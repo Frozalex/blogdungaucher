@@ -8,7 +8,7 @@ publishDate: "2027-01-12"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 15 min
+readingTime: 8 min
 pillar: Psychologie
 tags:
   - conformisme

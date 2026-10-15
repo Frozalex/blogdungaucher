@@ -8,7 +8,7 @@ publishDate: "2027-03-30"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 14 min
+readingTime: 13 min
 pillar: Psychologie
 tags:
   - projection

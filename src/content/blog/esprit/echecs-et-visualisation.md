@@ -8,7 +8,7 @@ publishDate: "2026-10-12"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 17 min
+readingTime: 6 min
 pillar: Performance mentale
 tags:
   - visualisation

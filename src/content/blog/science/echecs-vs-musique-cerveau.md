@@ -6,7 +6,7 @@ category: "science"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "12 min"
+readingTime: "6 min"
 pillar: "Plasticité cérébrale"
 tags: ["musique", "cerveau", "plasticité", "concentration", "comparaison", "neurosciences"]
 seoTitle: "Échecs vs musique : quel impact sur le cerveau ?"

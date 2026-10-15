@@ -8,7 +8,7 @@ publishDate: "2026-11-23"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 17 min
+readingTime: 10 min
 pillar: Performance mentale
 tags:
   - défaite

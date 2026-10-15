@@ -8,7 +8,7 @@ publishDate: "2026-12-15"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 15 min
+readingTime: 12 min
 pillar: Psychologie
 tags:
   - impuissance apprise

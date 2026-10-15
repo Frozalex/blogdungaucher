@@ -1,6 +1,7 @@
 import { getCollection, getEntry, type CollectionEntry } from "astro:content";
 
 import { categoryMap, siteConfig, type CategorySlug } from "../data/site";
+import { stripInlineMath } from "./inline-math";
 import { isPublicAssetAvailable } from "./public-asset";
 
 export type BlogEntry = CollectionEntry<"blog">;
@@ -12,9 +13,10 @@ export function getPostHeroSrc(post: BlogEntry): string | null {
   return isPublicAssetAvailable(src) ? src : null;
 }
 
+/** Doit rester aligné sur `scripts/normalize-reading-time.mjs`, qui écrit le champ du frontmatter. */
 export function calculateReadingTime(body: string): string {
   const words = body.trim().split(/\s+/).filter(Boolean).length;
-  const minutes = Math.max(1, Math.ceil(words / 200));
+  const minutes = Math.max(1, Math.ceil(words / 220));
   return `${minutes} min`;
 }
 
@@ -482,12 +484,15 @@ export function buildFaqJsonLd(
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    // `stripInlineMath` : les réponses de frontmatter contiennent parfois du
+    // LaTeX (`$10^{120}$`). Injecté tel quel dans le JSON-LD, Google l'affiche
+    // en clair dans le rich result ; on le réduit donc à sa forme lisible.
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
-      name: faq.question,
+      name: stripInlineMath(faq.question),
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer,
+        text: stripInlineMath(faq.answer),
       },
     })),
   };

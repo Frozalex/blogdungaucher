@@ -8,7 +8,7 @@ publishDate: "2027-05-25"
 category: esprit
 featured: true
 featuredRank: 2
-readingTime: 20 min
+readingTime: 15 min
 pillar: Psychologie
 tags:
   - biais cognitifs

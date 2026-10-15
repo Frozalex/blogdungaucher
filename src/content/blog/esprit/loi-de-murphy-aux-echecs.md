@@ -5,7 +5,7 @@ publishDate: "2026-08-10"
 category: "esprit"
 featured: false
 featuredRank: 99
-readingTime: "13 min"
+readingTime: "6 min"
 pillar: "Psychologie"
 tags: ["loi de Murphy", "psychologie", "échecs", "blunder", "biais cognitifs", "erreurs", "cognition"]
 seoTitle: "Loi de Murphy aux échecs : pourquoi les blunders tombent toujours au pire moment"

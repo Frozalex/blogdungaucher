@@ -8,7 +8,7 @@ publishDate: "2026-09-29"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 16 min
+readingTime: 10 min
 pillar: Psychologie
 tags:
   - théorie de l'attachement

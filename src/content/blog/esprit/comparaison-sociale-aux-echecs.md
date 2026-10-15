@@ -8,7 +8,7 @@ publishDate: "2027-02-16"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 14 min
+readingTime: 9 min
 pillar: Psychologie
 tags:
   - comparaison sociale

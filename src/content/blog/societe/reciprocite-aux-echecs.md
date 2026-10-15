@@ -8,7 +8,7 @@ publishDate: "2027-04-27"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 13 min
+readingTime: 8 min
 pillar: Psychologie
 tags:
   - réciprocité

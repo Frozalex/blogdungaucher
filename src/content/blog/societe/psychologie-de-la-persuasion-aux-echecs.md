@@ -8,7 +8,7 @@ publishDate: "2026-11-03"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 19 min
+readingTime: 15 min
 pillar: Psychologie
 tags:
   - persuasion

@@ -8,7 +8,7 @@ publishDate: "2026-07-16"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 17 min
+readingTime: 11 min
 pillar: Échecs et société
 tags:
   - religion

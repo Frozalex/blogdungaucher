@@ -8,7 +8,7 @@ category: science
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 24 min
+readingTime: 15 min
 pillar: Cognition
 tags:
   - échecs mémoire

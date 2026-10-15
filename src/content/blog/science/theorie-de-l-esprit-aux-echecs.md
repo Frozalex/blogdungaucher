@@ -8,7 +8,7 @@ publishDate: "2027-03-23"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 15 min
+readingTime: 9 min
 pillar: Cognition
 tags:
   - théorie de l'esprit

@@ -8,7 +8,7 @@ publishDate: "2026-11-10"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 15 min
+readingTime: 9 min
 pillar: Psychologie
 tags:
   - intelligence émotionnelle

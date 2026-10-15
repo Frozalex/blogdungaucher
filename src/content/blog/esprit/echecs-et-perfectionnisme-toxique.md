@@ -5,7 +5,7 @@ publishDate: "2026-07-02"
 category: "esprit"
 featured: false
 featuredRank: 99
-readingTime: "13 min"
+readingTime: "7 min"
 pillar: "Psychologie"
 tags: ["perfectionnisme", "toxique", "échecs", "psychologie", "performance", "blunder", "anxiété"]
 seoTitle: "Perfectionnisme toxique aux échecs : effets et solutions"

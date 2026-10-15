@@ -5,7 +5,7 @@ publishDate: "2026-06-25"
 category: "esprit"
 featured: false
 featuredRank: 99
-readingTime: "13 min"
+readingTime: "7 min"
 pillar: "Psychologie"
 tags: ["syndrome de l'imposteur", "2000 elo", "psychologie", "classement", "confiance", "perfectionnisme", "échecs"]
 seoTitle: "Pourquoi franchir 2000 Elo déclenche le syndrome de l'imposteur"

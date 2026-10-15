@@ -7,7 +7,7 @@ publishDate: "2026-06-22"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 24 min
+readingTime: 11 min
 pillar: Inclusion
 tags:
   - échecs prison

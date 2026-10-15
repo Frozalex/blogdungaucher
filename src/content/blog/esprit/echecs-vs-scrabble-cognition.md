@@ -6,7 +6,7 @@ category: "esprit"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "12 min"
+readingTime: "7 min"
 pillar: "Mémoire"
 tags: ["scrabble", "mémoire lexicale", "calcul combinatoire", "comparaison", "cognition", "anagrammes"]
 seoTitle: "Échecs vs Scrabble : quelles compétences cognitives développent-ils ?"

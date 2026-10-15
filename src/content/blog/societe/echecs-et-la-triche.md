@@ -8,7 +8,7 @@ publishDate: "2026-10-19"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 16 min
+readingTime: 8 min
 pillar: Échecs et société
 tags:
   - triche

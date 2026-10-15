@@ -9,7 +9,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 16 min
+readingTime: 6 min
 pillar: Échecs et société
 tags:
   - culture populaire

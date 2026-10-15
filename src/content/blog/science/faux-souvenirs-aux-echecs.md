@@ -8,7 +8,7 @@ publishDate: "2026-12-01"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 15 min
+readingTime: 9 min
 pillar: Psychologie
 tags:
   - faux souvenirs

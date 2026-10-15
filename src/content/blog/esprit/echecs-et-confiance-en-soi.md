@@ -7,7 +7,7 @@ publishDate: "2026-08-20"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 18 min
+readingTime: 9 min
 pillar: Performance mentale
 tags:
   - confiance en soi

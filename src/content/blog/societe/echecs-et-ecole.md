@@ -9,7 +9,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 20 min
+readingTime: 9 min
 pillar: Éducation
 tags:
   - échecs à l'école

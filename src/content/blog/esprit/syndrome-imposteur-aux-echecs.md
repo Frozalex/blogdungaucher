@@ -6,7 +6,7 @@ category: "esprit"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "14 min"
+readingTime: "7 min"
 pillar: "Psychologie"
 tags: ["syndrome de l'imposteur", "psychologie", "échecs", "confiance en soi", "performance", "mental"]
 seoTitle: "Syndrome de l'imposteur aux échecs : 4 patterns et comment en sortir"

@@ -8,7 +8,7 @@ publishDate: "2026-10-20"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 16 min
+readingTime: 9 min
 pillar: Psychologie
 tags:
   - biais de confirmation

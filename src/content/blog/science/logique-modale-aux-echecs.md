@@ -6,7 +6,7 @@ category: "science"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "13 min"
+readingTime: "8 min"
 pillar: "Logique"
 tags: ["logique modale", "échecs", "raisonnement", "possibilité", "nécessité", "stratégie", "philosophie"]
 seoTitle: "Logique modale aux échecs : penser par possibilités et nécessités sur l'échiquier"

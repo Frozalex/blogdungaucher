@@ -9,7 +9,7 @@ updatedDate: "2026-05-21"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 20 min
+readingTime: 16 min
 pillar: Informatique
 tags:
   - échecs

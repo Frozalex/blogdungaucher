@@ -6,7 +6,7 @@ updatedDate: "2026-05-21"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "19 min"
+readingTime: "11 min"
 pillar: "Intelligence artificielle"
 tags: ["minimax", "alpha-bêta", "negamax", "null-move", "intelligence artificielle", "échecs", "informatique", "Stockfish", "calcul"]
 seoTitle: "Algorithme minimax aux échecs : alpha-bêta, negamax et calcul des moteurs"

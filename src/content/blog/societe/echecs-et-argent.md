@@ -9,7 +9,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 24 min
+readingTime: 15 min
 pillar: Culture
 tags:
   - échecs et argent

@@ -5,7 +5,7 @@ publishDate: "2026-12-10"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "9 min"
+readingTime: "6 min"
 pillar: "Mémoire"
 tags: ["mémoire", "apprentissage", "parties classiques", "de Groot", "chunking", "cognition"]
 seoTitle: "Mémoriser des parties d'échecs : ce que dit la science cognitive"

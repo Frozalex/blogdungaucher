@@ -6,7 +6,7 @@ updatedDate: "2026-05-21"
 category: "esprit"
 featured: false
 featuredRank: 99
-readingTime: "17 min"
+readingTime: "11 min"
 pillar: "Psychologie"
 tags: ["pauses", "récupération", "psychologie", "performance", "fatigue cognitive", "consolidation", "sommeil", "rage-queue", "entraînement"]
 seoTitle: "Pauses aux échecs : pourquoi t'arrêter te rend meilleur"

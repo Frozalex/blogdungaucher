@@ -5,7 +5,7 @@ publishDate: "2026-06-04"
 category: "societe"
 featured: false
 featuredRank: 99
-readingTime: "13 min"
+readingTime: "8 min"
 pillar: "Philosophie"
 tags: ["philosophie", "Wittgenstein", "Hegel", "pensée stratégique", "liberté", "métaphore"]
 seoTitle: "Échecs et philosophie : ce que le jeu révèle sur la pensée humaine"

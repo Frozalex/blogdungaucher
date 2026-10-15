@@ -8,7 +8,7 @@ publishDate: "2026-08-27"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 14 min
+readingTime: 10 min
 pillar: Psychologie
 tags:
   - gaslighting

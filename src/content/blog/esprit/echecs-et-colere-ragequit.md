@@ -5,7 +5,7 @@ publishDate: "2026-06-08"
 category: "esprit"
 featured: false
 featuredRank: 99
-readingTime: "14 min"
+readingTime: "8 min"
 pillar: "Psychologie"
 tags: ["colère", "ragequit", "échecs", "psychologie", "neurosciences", "émotions", "amygdale", "tilt"]
 seoTitle: "Colère aux échecs et ragequit : les circuits du cerveau"

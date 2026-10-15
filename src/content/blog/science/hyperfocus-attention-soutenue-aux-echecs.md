@@ -6,7 +6,7 @@ category: "science"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "21 min"
+readingTime: "11 min"
 pillar: "Neurosciences"
 tags: ["hyperfocus", "attention soutenue", "échecs", "neurosciences", "neurodivergence", "TDAH", "flow"]
 seoTitle: "Hyperfocus vs attention soutenue aux échecs : deux régimes neuroscientifiques distincts"

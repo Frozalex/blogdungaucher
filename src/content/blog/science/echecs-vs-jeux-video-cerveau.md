@@ -5,7 +5,7 @@ publishDate: "2026-12-21"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "12 min"
+readingTime: "7 min"
 pillar: "Cerveau"
 tags: ["jeux vidéo", "neurosciences", "cognition", "attention", "réflexes", "addiction"]
 seoTitle: "Échecs vs jeux vidéo : ce que dit la science sur le cerveau"

@@ -8,7 +8,7 @@ publishDate: "2027-05-11"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 13 min
+readingTime: 7 min
 pillar: Psychologie
 tags:
   - preuve sociale

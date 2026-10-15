@@ -8,7 +8,7 @@ publishDate: "2026-11-24"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 14 min
+readingTime: 11 min
 pillar: Psychologie
 tags:
   - effet de halo

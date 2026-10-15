@@ -9,7 +9,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 19 min
+readingTime: 8 min
 pillar: Éducation
 tags:
   - enfants

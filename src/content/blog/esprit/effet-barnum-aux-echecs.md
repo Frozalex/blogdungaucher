@@ -8,7 +8,7 @@ publishDate: "2026-12-22"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 13 min
+readingTime: 12 min
 pillar: Psychologie
 tags:
   - effet Barnum

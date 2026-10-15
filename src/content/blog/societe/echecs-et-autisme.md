@@ -7,7 +7,7 @@ publishDate: "2026-04-02"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 22 min
+readingTime: 14 min
 pillar: Inclusion
 tags:
   - échecs autisme

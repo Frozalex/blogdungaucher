@@ -7,7 +7,7 @@ publishDate: "2026-08-13"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 18 min
+readingTime: 8 min
 pillar: Neurosciences
 tags:
   - méditation

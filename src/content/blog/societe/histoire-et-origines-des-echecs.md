@@ -9,7 +9,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 16 min
+readingTime: 7 min
 pillar: Échecs et société
 tags:
   - histoire des échecs

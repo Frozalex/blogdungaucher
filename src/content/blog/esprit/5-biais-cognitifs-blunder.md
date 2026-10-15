@@ -7,7 +7,7 @@ category: "esprit"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "15 min"
+readingTime: "8 min"
 pillar: "Psychologie"
 tags: ["biais cognitifs", "blunder", "psychologie", "erreurs", "raisonnement", "Kahneman", "échecs"]
 seoTitle: "5 biais cognitifs qui causent des blunders aux échecs"

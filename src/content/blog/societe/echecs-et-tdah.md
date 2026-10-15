@@ -7,7 +7,7 @@ publishDate: "2026-06-11"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 22 min
+readingTime: 11 min
 pillar: Inclusion
 tags:
   - échecs TDAH

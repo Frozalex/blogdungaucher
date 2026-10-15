@@ -6,7 +6,7 @@ category: "esprit"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "13 min"
+readingTime: "8 min"
 pillar: "Prise de décision"
 tags: ["poker", "stratégie", "GTO", "bluff", "théorie des jeux", "incertitude", "prise de décision"]
 seoTitle: "Échecs vs poker : stratégie, incertitude et prise de décision"

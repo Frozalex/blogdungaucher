@@ -820,6 +820,19 @@ main[tabindex="-1"]:focus {
 }
 
 /* ─── KATEX (markdown math) : débordements sur mobile ─────────── */
+
+/* Conteneur posé par `rehype-math-single` / `inline-math`. Il porte role="math"
+   et aria-label (la source LaTeX) parce que la branche HTML de KaTeX est
+   aria-hidden ; neutre en mise en page, il ne fait que délimiter la formule. */
+.math-render {
+  display: inline;
+  max-width: 100%;
+}
+.math-render--display {
+  display: block;
+  max-width: 100%;
+}
+
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;

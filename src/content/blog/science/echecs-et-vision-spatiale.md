@@ -8,7 +8,7 @@ publishDate: "2026-07-13"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 19 min
+readingTime: 8 min
 pillar: Neurosciences
 tags:
   - vision spatiale

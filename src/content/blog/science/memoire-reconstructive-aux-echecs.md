@@ -8,7 +8,7 @@ publishDate: "2027-04-06"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 15 min
+readingTime: 8 min
 pillar: Cognition
 tags:
   - mémoire reconstructive

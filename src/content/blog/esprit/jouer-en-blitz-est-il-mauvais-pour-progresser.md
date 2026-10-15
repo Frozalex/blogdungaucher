@@ -5,7 +5,7 @@ publishDate: "2026-12-14"
 category: "esprit"
 featured: false
 featuredRank: 99
-readingTime: "9 min"
+readingTime: "6 min"
 pillar: "Apprentissage"
 tags: ["blitz", "bullet", "progression", "Elo", "coaching", "Chess.com"]
 seoTitle: "Le blitz est-il mauvais pour progresser aux échecs ? La vérité"

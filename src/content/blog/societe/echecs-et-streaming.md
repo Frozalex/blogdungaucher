@@ -8,7 +8,7 @@ publishDate: "2026-09-17"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 15 min
+readingTime: 6 min
 pillar: Échecs et société
 tags:
   - streaming

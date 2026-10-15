@@ -9,7 +9,7 @@ category: science
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 22 min
+readingTime: 18 min
 pillar: Neurosciences
 tags:
   - échecs et cerveau

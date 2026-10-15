@@ -8,7 +8,7 @@ publishDate: "2026-11-16"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 14 min
+readingTime: 7 min
 pillar: Performance mentale
 tags:
   - solitude

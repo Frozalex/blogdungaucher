@@ -8,7 +8,7 @@ publishDate: "2027-01-26"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 15 min
+readingTime: 7 min
 pillar: Psychologie
 tags:
   - conditionnement opérant

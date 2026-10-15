@@ -6,7 +6,7 @@ category: "science"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "12 min"
+readingTime: "7 min"
 pillar: "Théorie des jeux"
 tags: ["Go", "AlphaGo", "complexité combinatoire", "IA", "comparaison", "cognition"]
 seoTitle: "Échecs vs Go : comparaison complète (complexité, cognition, IA)"

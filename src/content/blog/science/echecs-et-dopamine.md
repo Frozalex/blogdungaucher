@@ -9,7 +9,7 @@ category: science
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 18 min
+readingTime: 9 min
 pillar: Neurosciences
 tags:
   - dopamine

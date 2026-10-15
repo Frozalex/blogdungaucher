@@ -8,7 +8,7 @@ publishDate: "2027-02-02"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 15 min
+readingTime: 10 min
 pillar: Psychologie
 tags:
   - prophétie auto-réalisatrice

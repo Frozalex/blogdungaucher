@@ -8,7 +8,7 @@ publishDate: "2027-02-09"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 14 min
+readingTime: 8 min
 pillar: Psychologie
 tags:
   - conditionnement classique

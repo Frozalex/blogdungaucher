@@ -6,7 +6,7 @@ updatedDate: "2026-05-21"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "19 min"
+readingTime: "14 min"
 pillar: "Mathématiques"
 tags: ["chaos", "échecs", "mathématiques", "complexité", "sensibilité", "bifurcation", "exposant de Lyapunov", "Kasparov Topalov 1999", "science"]
 seoTitle: "Théorie du chaos aux échecs : Lyapunov, bifurcations et coups critiques"

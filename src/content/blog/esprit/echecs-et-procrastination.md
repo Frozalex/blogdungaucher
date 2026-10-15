@@ -8,7 +8,7 @@ publishDate: "2026-10-22"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 16 min
+readingTime: 7 min
 pillar: Performance mentale
 tags:
   - procrastination

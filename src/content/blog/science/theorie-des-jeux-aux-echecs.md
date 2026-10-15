@@ -7,7 +7,7 @@ category: "science"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "18 min"
+readingTime: "13 min"
 pillar: "Mathématiques"
 tags: ["théorie des jeux", "échecs", "mathématiques", "Nash", "minimax", "Zermelo", "stratégie dominante", "stratégie mixte", "science"]
 seoTitle: "Théorie des jeux aux échecs : Nash, minimax, Zermelo expliqués"

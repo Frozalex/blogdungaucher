@@ -8,7 +8,7 @@ publishDate: "2026-09-24"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 13 min
+readingTime: 8 min
 pillar: Physiologie
 tags:
   - physiologie

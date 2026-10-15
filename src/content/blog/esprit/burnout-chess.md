@@ -5,7 +5,7 @@ publishDate: "2026-08-06"
 category: "esprit"
 featured: false
 featuredRank: 99
-readingTime: "15 min"
+readingTime: "8 min"
 pillar: "Psychologie"
 tags: ["burnout", "épuisement", "échecs", "psychologie", "motivation", "récupération", "santé mentale"]
 seoTitle: "Burnout aux échecs : reconnaître et surmonter l'épuisement"

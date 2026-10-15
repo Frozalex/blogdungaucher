@@ -8,7 +8,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 22 min
+readingTime: 10 min
 pillar: Psychologie
 tags:
   - échecs

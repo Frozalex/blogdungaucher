@@ -8,7 +8,7 @@ publishDate: "2026-10-05"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 16 min
+readingTime: 7 min
 pillar: Échecs et société
 tags:
   - handicap

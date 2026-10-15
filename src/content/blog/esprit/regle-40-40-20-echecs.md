@@ -7,7 +7,7 @@ publishDate: "2026-05-05"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 20 min
+readingTime: 13 min
 pillar: Progression
 tags:
   - entraînement aux échecs

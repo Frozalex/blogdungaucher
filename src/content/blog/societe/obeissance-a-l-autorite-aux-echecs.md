@@ -8,7 +8,7 @@ publishDate: "2026-11-17"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 16 min
+readingTime: 10 min
 pillar: Psychologie
 tags:
   - obéissance

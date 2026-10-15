@@ -6,7 +6,7 @@ category: "esprit"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "9 min"
+readingTime: "6 min"
 pillar: "Apprentissage"
 tags: ["ouvertures", "apprentissage", "progression", "Elo", "stratégie d'étude", "coaching"]
 seoTitle: "Faut-il étudier les ouvertures aux échecs ? Le vrai conseil"

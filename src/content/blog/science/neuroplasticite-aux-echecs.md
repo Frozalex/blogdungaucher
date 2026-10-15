@@ -8,7 +8,7 @@ publishDate: "2026-09-15"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 16 min
+readingTime: 10 min
 pillar: Neurosciences
 tags:
   - neuroplasticité

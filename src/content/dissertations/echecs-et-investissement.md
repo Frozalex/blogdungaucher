@@ -3,7 +3,7 @@ title: "Dans quelle mesure la pratique des échecs prépare-t-elle à l'investis
 excerpt: "Un ami m'a posé la question : existe-t-il un lien entre la pratique des échecs et l'aptitude à investir ? L'intuition est séduisante, mais elle mérite un examen rigoureux. Dissertation complète."
 publishDate: "2026-05-26"
 author: "Le Gaucher"
-readingTime: "12 min"
+readingTime: "6 min"
 tags: ["échecs", "investissement", "finance", "stratégie", "biais cognitifs", "dissertation"]
 seoTitle: "Échecs et investissement : la pratique des échecs prépare-t-elle à investir ?"
 seoDescription: "Dissertation : dans quelle mesure les échecs préparent-ils à l'investissement ? Patience, calcul, gestion du risque. Parentés réelles et limites du transfert."

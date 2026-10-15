@@ -6,7 +6,7 @@ category: "science"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "11 min"
+readingTime: "6 min"
 pillar: "Cognition"
 tags: ["intelligence", "QI", "transfert cognitif", "éducation", "neurosciences", "méta-analyse"]
 seoTitle: "Les échecs rendent-ils plus intelligent ? Le vrai bilan scientifique"

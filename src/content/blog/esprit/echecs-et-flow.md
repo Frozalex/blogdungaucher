@@ -8,7 +8,7 @@ publishDate: "2026-08-31"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 17 min
+readingTime: 9 min
 pillar: Performance mentale
 tags:
   - flow

@@ -9,7 +9,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 25 min
+readingTime: 20 min
 pillar: Genre
 tags:
   - échecs femmes

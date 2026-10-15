@@ -8,7 +8,7 @@ publishDate: "2026-10-01"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 19 min
+readingTime: 7 min
 pillar: Science des échecs
 tags:
   - AlphaZero

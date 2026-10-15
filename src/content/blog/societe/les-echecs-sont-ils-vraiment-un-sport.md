@@ -5,7 +5,7 @@ publishDate: "2026-11-30"
 category: "societe"
 featured: false
 featuredRank: 99
-readingTime: "10 min"
+readingTime: "6 min"
 pillar: "Société du jeu"
 tags: ["sport", "CIO", "physiologie", "compétition", "définition du sport", "tournois"]
 seoTitle: "Les échecs sont-ils un sport ? Le débat tranché par la science"

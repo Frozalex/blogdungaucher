@@ -5,7 +5,7 @@ publishDate: "2026-04-28"
 category: "grand-oral"
 featured: false
 featuredRank: 99
-readingTime: "24 min"
+readingTime: "26 min"
 pillar: "Cognition"
 tags: ["grand-oral", "mathématiques", "NSI", "terminale", "combinatoire", "théorie des jeux", "IA", "Elo", "minimax", "baccalauréat", "transversal"]
 seoTitle: "Grand oral Maths + NSI : les échecs, pont entre les deux spécialités"

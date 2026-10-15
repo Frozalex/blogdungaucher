@@ -5,7 +5,7 @@ publishDate: "2026-04-28"
 category: "grand-oral"
 featured: false
 featuredRank: 99
-readingTime: "42 min"
+readingTime: "28 min"
 pillar: "Informatique"
 tags: ["grand-oral", "NSI", "terminale", "algorithmique", "minimax", "Python", "AlphaZero", "intelligence artificielle", "structures de données", "baccalauréat"]
 seoTitle: "Grand oral NSI : les échecs, de l'algorithmique à l'IA, plan complet"

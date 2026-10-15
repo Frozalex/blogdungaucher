@@ -8,7 +8,7 @@ publishDate: "2026-10-08"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 16 min
+readingTime: 8 min
 pillar: Performance mentale
 tags:
   - stress

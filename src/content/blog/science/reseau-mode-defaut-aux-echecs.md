@@ -5,7 +5,7 @@ publishDate: "2026-10-15"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "22 min"
+readingTime: "12 min"
 pillar: "Neurosciences"
 tags: ["réseau mode par défaut", "DMN", "échecs", "neurosciences", "mind-wandering", "rumination", "incubation"]
 seoTitle: "Réseau du mode par défaut aux échecs : ce que ton cerveau fait quand tu ne calcules pas"

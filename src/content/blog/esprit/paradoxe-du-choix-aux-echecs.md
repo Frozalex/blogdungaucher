@@ -8,7 +8,7 @@ publishDate: "2027-01-19"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 14 min
+readingTime: 8 min
 pillar: Psychologie
 tags:
   - paradoxe du choix

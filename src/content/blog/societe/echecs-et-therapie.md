@@ -8,7 +8,7 @@ publishDate: "2026-08-03"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 20 min
+readingTime: 8 min
 pillar: Santé mentale
 tags:
   - thérapie

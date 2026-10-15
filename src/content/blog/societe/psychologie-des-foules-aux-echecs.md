@@ -8,7 +8,7 @@ publishDate: "2027-02-23"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 19 min
+readingTime: 15 min
 pillar: Psychologie
 tags:
   - psychologie des foules

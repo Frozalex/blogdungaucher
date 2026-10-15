@@ -7,7 +7,7 @@ publishDate: "2026-11-02"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 18 min
+readingTime: 7 min
 pillar: Performance mentale
 tags:
   - analyse

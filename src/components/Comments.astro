@@ -23,21 +23,23 @@ const t = copy[lang] ?? copy.fr;
 const enabled = remark42Url !== "";
 ---
 
+{/* Sans URL remark42 configurée (dev, ou build où la variable manque), la section
+    n'affichait qu'un titre « Commentaires » suivi d'un message d'indisponibilité :
+    un bloc mort en bas de chaque article, et un H2 vide pour les crawlers. On ne
+    rend donc la section que lorsque le fil de discussion existe réellement. */}
+{enabled && (
 <section class="comments" id="commentaires" data-pagefind-ignore>
   <h2>{t.title}</h2>
 
-  {enabled ? (
-    <div
-      id="remark42"
-      data-r42-url={remark42Url}
-      data-r42-site={remark42Site}
-      data-r42-locale={locale}
-      data-r42-post-id={postId}
-    />
-  ) : (
-    <p class="comments-unavailable">Commentaires indisponibles en mode développement.</p>
-  )}
+  <div
+    id="remark42"
+    data-r42-url={remark42Url}
+    data-r42-site={remark42Site}
+    data-r42-locale={locale}
+    data-r42-post-id={postId}
+  />
 </section>
+)}
 
 <script>
   // Boot remark42 once; reinitialise on each View Transition page load.
@@ -133,12 +135,6 @@ const enabled = remark42Url !== "";
     font-size: 1.35rem;
     color: var(--c, var(--green));
     margin: 0 0 1rem;
-  }
-
-  .comments-unavailable {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    margin: 0;
   }
 
   @media (max-width: 560px) {

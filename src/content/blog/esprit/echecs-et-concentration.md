@@ -8,7 +8,7 @@ publishDate: "2026-09-28"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 18 min
+readingTime: 9 min
 pillar: Performance mentale
 tags:
   - concentration

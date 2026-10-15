@@ -7,7 +7,7 @@ publishDate: "2026-06-15"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 19 min
+readingTime: 9 min
 pillar: Neurosciences
 tags:
   - sommeil

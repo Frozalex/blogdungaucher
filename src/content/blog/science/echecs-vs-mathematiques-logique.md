@@ -5,7 +5,7 @@ publishDate: "2026-12-28"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "12 min"
+readingTime: "6 min"
 pillar: "Mathématiques"
 tags: ["mathématiques", "logique", "cognition", "transfert", "raisonnement formel", "preuve"]
 seoTitle: "Échecs vs mathématiques : compétences cognitives partagées ou non ?"

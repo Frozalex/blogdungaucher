@@ -8,7 +8,7 @@ publishDate: "2026-07-30"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 20 min
+readingTime: 9 min
 pillar: Neurosciences
 tags:
   - génétique
