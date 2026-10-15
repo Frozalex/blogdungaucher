@@ -87,10 +87,11 @@ Le **Grand Oral** est l'épreuve la mieux notée du **bac** général, à **coef
 
 | Temps | Phase | Ce que tu fais | Ce que le **jury** observe |
 |---|---|---|---|
-| 20 min | Préparation | On te donne deux **questions** issues de ton **programme** de spécialité. Tu choisis l'une des deux. Brouillon autorisé. |, |
-| 5 min | Exposé debout | Tu présentes ta **question** debout, sans notes (ou très peu). | **Posture**, voix, structure |
+| 20 min | Préparation | On te donne deux **questions** issues de ton **programme** de spécialité. Tu choisis l'une des deux. Brouillon autorisé. | Rien : tu es seul en salle |
+| 10 min | Exposé debout | Tu présentes ta **question** debout, sans notes (ou très peu). | **Posture**, voix, structure |
 | 10 min | Échange avec le **jury** | Le **jury** te questionne sur le **sujet**, ton plan, ton code. | Maîtrise, réactivité, ouverture |
-| 5 min | Projet d'**orientation** | Tu expliques comment ce **sujet** s'inscrit dans ton parcours post-bac. | Cohérence parcours |
+
+Attention aux guides encore en ligne qui décrivent un exposé de 5 minutes suivi d'une troisième partie de 5 minutes sur le projet d'orientation : c'était le format jusqu'à la session 2023. Depuis la session 2024, l'épreuve tient en deux temps de 10 minutes et la partie orientation a été supprimée.
 
 Sur les **10 minutes** d'exposé, tu joues 1 point coefficient par minute. C'est l'**épreuve** la plus rentable du **bac** au ratio temps de préparation / impact note.
 
@@ -112,7 +113,7 @@ Le rapport officiel du Bulletin officiel précise que le **jury** évalue quatre
 
 - **Réciter par cœur** : le **jury** entend la mémorisation. Préfère un canevas que tu adaptes au moment.
 - **Lire ses notes** : disqualifiant. Tu peux avoir un papier mais ne le regarde que pour vérifier une **donnée** chiffrée.
-- **Dépasser le temps** : à 5 minutes pile, le **jury** coupe. Mieux vaut conclure 30 secondes en avance que d'être interrompu.
+- **Dépasser le temps** : à 10 minutes pile, le **jury** coupe. Mieux vaut conclure 30 secondes en avance que d'être interrompu.
 
 ## Choisir ta problématique
 
@@ -216,7 +217,7 @@ def minimax(position, profondeur, maximise):
         return evaluer(position)   # retourne un score numérique
     
     if maximise:  # tour des Blancs : on cherche le maximum
-        meilleur = -infini
+        meilleur = float("-inf")
         for coup in position.coups_possibles():
             position.joue(coup)
             score = minimax(position, profondeur-1, False)
@@ -225,7 +226,7 @@ def minimax(position, profondeur, maximise):
         return meilleur
     
     else:  # tour des Noirs : on cherche le minimum
-        meilleur = +infini
+        meilleur = float("inf")
         for coup in position.coups_possibles():
             position.joue(coup)
             score = minimax(position, profondeur-1, True)
@@ -252,7 +253,7 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
         return evaluer(position)
     
     if maximise:
-        meilleur = -infini
+        meilleur = float("-inf")
         for coup in position.coups_possibles():
             position.joue(coup)
             score = alpha_beta(position, profondeur-1, alpha, beta, False)
@@ -264,7 +265,7 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
         return meilleur
     
     else:
-        meilleur = +infini
+        meilleur = float("inf")
         for coup in position.coups_possibles():
             position.joue(coup)
             score = alpha_beta(position, profondeur-1, alpha, beta, True)
@@ -454,7 +455,7 @@ Voici une fiche mémo concentrée que tu peux imprimer ou recopier sur une feuil
 ║ ALPHA-BÊTA (meilleur cas : coups bien triés)                 ║
 ║   Coût temporel : O(b^(d/2))                                 ║
 ║   Exemple : b=35, d=4 → 35^2 = 1 225 positions               ║
-║   Gain facteur b^(d/2) : environ 1000× sur d=6               ║
+║   Gain facteur b^(d/2) : 1 225x sur d=4, 42 875x sur d=6     ║
 ╠══════════════════════════════════════════════════════════════╣
 ║ PARAMÈTRES ALPHA-BÊTA                                        ║
 ║   alpha : meilleur score garanti pour le maximiseur          ║
@@ -479,7 +480,7 @@ Voici une fiche mémo concentrée que tu peux imprimer ou recopier sur une feuil
 
 ### Posture et présence
 
-Tu es debout pendant les **cinq minutes** d'exposé. Les détails comptent :
+Tu es debout pendant les **dix minutes** d'exposé. Les détails comptent :
 
 - **Pieds ancrés** à largeur d'épaules, **jamais** croisés
 - **Mains visibles** : sur la table, en mouvement, jamais dans les poches
@@ -510,9 +511,9 @@ Le **jury** te questionne. Quelques règles :
 - **Distingue les niveaux** : si on te demande « définissez la récursivité », commence par une phrase simple puis nuance.
 - **Quand tu ne comprends pas**, demande poliment « pourriez-vous reformuler ? » plutôt que de répondre à côté.
 
-### Le projet d'orientation : les 5 dernières minutes
+### Ton projet d'orientation pendant l'échange
 
-C'est la partie où beaucoup décrochent par fatigue. Tiens bon. Prépare une réponse courte et cohérente :
+Depuis la session 2024, l'orientation n'est plus une troisième partie chronométrée : elle est absorbée par les 10 minutes d'échange, où le **jury** cherche à savoir pourquoi ce **sujet** te mène quelque part. La question tombe presque toujours. Prépare une réponse courte et cohérente :
 
 - Si tu vises une **CPGE** : « Ce **sujet** m'a fait découvrir le raisonnement formel, c'est ce que je veux approfondir en maths-info ou MPI. »
 - Si tu vises une **école d'ingénieur** post-bac : « L'algorithmique appliquée à un cas concret m'a passionné, je veux continuer dans un cursus pratique comme l'INSA ou l'UTC. »
@@ -566,8 +567,9 @@ C'est la partie où beaucoup décrochent par fatigue. Tiens bon. Prépare une r�
 
 ## Sources et références
 
-- **Bulletin officiel, Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
-- **Shannon, C. E. (1950).** *Programming a Computer for Playing Chess.* *Philosophical Magazine*. (Fondation de l'algorithme minimax.)
+- **Bulletin officiel n° 36 du 28 septembre 2023.** [*Épreuve orale dite Grand oral de la classe de terminale des voies générale et technologique : modification.*](https://www.education.gouv.fr/bo/2023/Hebdo36/MENE2323117N) (C'est ce texte qui fixe le format en vigueur depuis la session 2024 : deux temps de 10 minutes, sans partie orientation. Il remplace la note de service 2020-014, qui décrivait l'ancien découpage 5/10/5 encore repris par beaucoup de guides.)
+- **Éduscol.** [*Présentation du Grand oral.*](https://eduscol.education.gouv.fr/5661/presentation-du-grand-oral) (Page de référence du ministère sur le déroulé et les attendus.)
+- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf) *Philosophical Magazine*, Ser. 7, 41(314), 256-275. (Fondation de l'algorithme minimax. PDF intégral en accès libre.)
 - **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero : apprentissage par renforcement et MCTS.)
 - **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*. (Analyse formelle de la coupure alpha-bêta.)
 - **Documentation Stockfish.** [*Stockfish Chess Engine, Source code.*](https://github.com/official-stockfish/Stockfish) GitHub. (Référence pour l'implémentation réelle.)
