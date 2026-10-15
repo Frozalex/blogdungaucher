@@ -82,9 +82,10 @@ faq:
 
 Le **Grand Oral du bac** est l'**épreuve** la mieux notée du **bac** général, à **coefficient 10**. Sa durée totale est de **40 minutes** :
 - **20 minutes** de **préparation** où tu choisis entre **deux questions** issues de ton **programme**
-- **5 minutes** d'exposé debout, sans notes ou très peu
+- **10 minutes** d'exposé debout, sans notes ou très peu
 - **10 minutes** d'échange avec le **jury** sur ton **sujet**, ton plan, tes sources
-- **5 minutes** sur ton projet d'**orientation** post-bac
+
+Beaucoup de guides en ligne décrivent encore un exposé de 5 minutes suivi d'une troisième partie de 5 minutes sur le projet d'**orientation**. C'était le format jusqu'à la session 2023. Depuis la session 2024, l'**épreuve** tient en deux temps de 10 minutes et la partie orientation a été supprimée en tant que telle : la question de ton projet est désormais posée pendant l'échange.
 
 Le **jury** est composé de **deux** professeurs : l'un de ta spécialité, l'autre d'une discipline différente. Le second n'est **pas** spécialiste de ton **sujet**. Ton **oral** doit donc être compréhensible par un non-spécialiste, quelle que soit ta spécialité.
 
@@ -96,7 +97,11 @@ Quatre dimensions sont évaluées selon le Bulletin officiel :
 
 C'est l'**épreuve** la plus rentable du **bac** au ratio temps de **préparation** / impact note. Trois **minutes** solides peuvent te faire gagner une mention.
 
-![Structure des 40 minutes du Grand Oral : 20 min de préparation, 5 min d'exposé debout, 10 min d'échange avec le jury, 5 min sur l'orientation post-bac.](/images/guide-go-toutes-01-structure-epreuve.svg)
+| Temps | Phase | Ce que tu fais |
+|---|---|---|
+| 20 min | Préparation | Tu choisis entre deux **questions**, tu prépares tes notes. Deux minutes maximum pour choisir. |
+| 10 min | Exposé debout | Sans notes, regard vers le **jury**, voix projetée. |
+| 10 min | Échange | Ton **sujet**, ton plan, tes sources, et ton projet post-bac. |
 
 ## Quelle problématique selon ta spécialité ?
 
@@ -236,13 +241,20 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 *Ces questions peuvent être posées quelle que soit la spécialité. Le jury cherche à savoir si tu maîtrises ton sujet au-delà du script préparé.*
 
+> **Mode d'emploi.** Les réponses ci-dessous sont des ossatures, pas des textes à réciter : le guide s'adresse à onze spécialités, aucune formulation ne peut convenir à toutes. Tout ce qui est **entre crochets** est à remplacer par ton contenu à toi. Un exemple entièrement rempli est donné en Q2 pour que tu voies à quoi doit ressembler le résultat. Si tu récites une phrase à trous sans l'avoir remplie, le jury l'entendra immédiatement.
+
 ---
 
 **Q1. Pourquoi avoir choisi les échecs pour ton Grand Oral ?**
 > *"Les échecs permettent d'illustrer des notions de [ta spécialité] avec un objet concret, historiquement documenté et culturellement riche. Ils évitent les exemples trop scolaires : les données et les cas réels sont accessibles. Et personnellement, c'est un sujet que je peux défendre avec conviction, ce qui est essentiel pour un exposé oral."*
 
 **Q2. Ta problématique est-elle vraiment liée à ta spécialité ?**
-> *"[Ta problématique] mobilise directement [la notion centrale de ta spécialité]. Je pars des échecs comme terrain d'observation, mais la question finale revient à [la notion]. C'est la même démarche que d'utiliser un exemple concret pour illustrer un concept théorique : l'exemple n'est pas le sujet, il le révèle."*
+
+Ossature : *"[Ta problématique] mobilise directement [la notion centrale de ta spécialité]. Je pars des échecs comme terrain d'observation, mais la question finale revient à [la notion]. C'est la même démarche que d'utiliser un exemple concret pour illustrer un concept théorique : l'exemple n'est pas le sujet, il le révèle."*
+
+Le même, rempli, pour un candidat de spécialité SES :
+
+> *"Ma question, « le marché des joueurs d'échecs illustre-t-il les mécanismes du marché des talents ? », mobilise directement la notion de marché du travail et de formation des salaires, au programme de terminale. Je pars des échecs comme terrain d'observation, mais la question finale revient à l'économie des superstars de Rosen et à la rente différentielle de Ricardo. C'est la même démarche que d'utiliser un exemple concret pour illustrer un concept théorique : l'exemple n'est pas le sujet, il le révèle."*
 
 **Q3. Qu'est-ce que tu n'aurais pas eu le temps de développer dans les 10 minutes ?**
 > *"[Cite un point réel que tu as coupé]. J'aurais aimé développer [un aspect supplémentaire] : par exemple [exemple concret]. Mais pour respecter la durée et la cohérence de la progression, j'ai choisi de l'écarter. C'est un choix éditorial assumé."*
@@ -281,13 +293,13 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 > *"[Cite les sources les plus accessibles que tu as vraiment lues / parcourues]. En [ta spécialité], j'ai consulté [auteur/texte de ton programme]. Pour les échecs, j'ai utilisé [sources : articles, ce blog, vidéos]. Je n'ai pas tout lu en entier : j'ai sélectionné les passages pertinents pour ma problématique, ce qui est une compétence en soi."*
 
 **Q15. Ton sujet est-il sérieux ? Les échecs ne sont-ils pas juste un jeu ?**
-> *"La frontière entre 'jeu' et 'objet sérieux d'étude' est moins nette qu'il n'y paraît. L'anthropologie (Huizinga, Homo Ludens, 1938) montre que le jeu est un fait culturel fondamental : il révèle les structures d'une société. Les économistes étudient le football, les politistes les Jeux Olympiques, les psychologues les jeux vidéo. Les échecs sont un jeu extraordinairement documenté : deux siècles de données, 200 pays, études scientifiques publiées dans Nature et le New England Journal of Medicine. C'est un terrain d'étude sérieux."*
+> *"La frontière entre 'jeu' et 'objet sérieux d'étude' est moins nette qu'il n'y paraît. L'anthropologie (Huizinga, Homo Ludens, 1938) montre que le jeu est un fait culturel fondamental : il révèle les structures d'une société. Les économistes étudient le football, les politistes les Jeux Olympiques, les psychologues les jeux vidéo. Les échecs sont un jeu extraordinairement documenté : deux siècles de données, 200 pays, études publiées dans des revues de premier plan, par exemple celle de Verghese et al. dans le New England Journal of Medicine en 2003 sur les jeux de plateau et le risque de démence. C'est un terrain d'étude sérieux."*
 
 **Q16. Quelle est la part de chance aux échecs ?**
 > *"Les échecs sont un jeu d'information parfaite et sans hasard au sens strict : pas de dé, pas de tirage. Mais il y a de l'incertitude : on ne connaît pas les intentions de l'adversaire, on ne peut pas calculer toutes les variantes. Cette incertitude n'est pas du hasard : c'est de la complexité. La différence est importante : le hasard est irréductible, la complexité est partiellement maîtrisable par l'expertise."*
 
 **Q17. Les femmes jouent-elles aussi bien que les hommes aux échecs ?**
-> *"La biologie ne prédit pas de différence de capacité cognitive pertinente pour les échecs. Les différences observées dans les classements mondiaux (très peu de femmes dans le top 100) s'expliquent mieux par des facteurs sociaux : moindre pratique dès l'enfance, stéréotypes de menace (les études de Maass et D'Ettole, 2008, montrent que jouer contre un homme réduit les performances des joueuses), et structure des tournois. Judith Polgar, la meilleure joueuse de l'histoire, a battu 11 champions du monde masculins en match. Elle a refusé de participer aux tournois féminins séparés."*
+> *"La biologie ne prédit pas de différence de capacité cognitive pertinente pour les échecs. Les différences observées dans les classements mondiaux (très peu de femmes dans le top 100) s'expliquent mieux par des facteurs sociaux : moindre pratique dès l'enfance, stéréotypes de menace (l'étude de Maass, D'Ettole et Cadinu (2008) montre que jouer contre un homme réduit les performances des joueuses), et structure des tournois. Judit Polgár, la meilleure joueuse de l'histoire, a battu onze champions du monde, en titre ou anciens. Elle a refusé de participer aux tournois féminins séparés."*
 
 **Q18. Que disent les échecs sur la créativité humaine ?**
 > *"Les échecs permettent de distinguer deux formes de créativité. La créativité combinatoire : trouver une séquence de coups non évidente dans un arbre de calcul. C'est une forme de créativité que les ordinateurs maîtrisent mieux que les humains. La créativité conceptuelle : inventer un nouveau plan stratégique, changer le paradigme d'une ouverture, proposer une idée nouvelle à la communauté. Cette forme-là est plus difficile à réduire à un algorithme, AlphaZero l'a partiellement accomplie en 'réinventant' des stratégies que les humains n'avaient pas explorées."*
