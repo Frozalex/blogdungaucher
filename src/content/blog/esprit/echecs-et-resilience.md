@@ -80,7 +80,7 @@ faq:
 
 [Viktor Korchnoi](https://fr.wikipedia.org/wiki/Viktor_Kortchnoi) a joué aux échecs à haut niveau jusqu'à l'âge de 81 ans. Il a perdu des milliers de parties au cours de sa carrière : y compris deux finales de championnat du monde, contre Karpov, dans des conditions psychologiques épuisantes. Et il est revenu. Toujours.
 
-[Judit Polgar](https://fr.wikipedia.org/wiki/Judit_Polg%C3%A1r) a perdu contre tous les meilleurs joueurs du monde masculins à l'époque où peu de femmes s'y risquaient. Ces défaites n'ont pas réduit son appétit pour la confrontation : elles ont construit sa capacité à jouer à ce niveau.
+[Judit Polgár](https://fr.wikipedia.org/wiki/Judit_Polg%C3%A1r) a passé sa carrière à affronter l'élite mondiale, à une époque où presque aucune femme ne jouait ces tournois. Elle y a beaucoup perdu, comme tout le monde à ce niveau. Elle y a aussi battu onze champions du monde, en titre ou anciens, dont Kasparov en 2002 alors qu'il était numéro un mondial. Les défaites accumulées contre les meilleurs n'ont pas réduit son appétit pour la confrontation : ce sont elles qui ont construit sa capacité à jouer là.
 
 La résilience aux échecs n'est pas une propriété mystérieuse que certains ont et d'autres non. C'est une compétence, avec des mécanismes identifiables et des pratiques qui l'amplifient.
 
@@ -137,11 +137,11 @@ Dans cet état, l'analyse de la partie sera **biaisée** : tu surévalueras tes 
 
 ## La distanciation de soi : une technique contre-intuitive
 
-[Ethan Kross](https://ethan.kross.com) (University of Michigan) a développé une technique de régulation émotionnelle qu'il appelle la **distanciation de soi** (*self-distancing*). Son principe : au lieu de s'immerger dans ses émotions à la première personne ("je suis tellement en colère"), adopter une perspective à la troisième personne ("Lucas est en colère : pourquoi ?").
+[Ethan Kross](https://ethan.kross.com) (University of Michigan) a développé une technique de régulation émotionnelle qu'il appelle la **distanciation de soi** (*self-distancing*). Son principe : au lieu de s'immerger dans ses émotions à la première personne ("je suis tellement en colère"), se désigner par son prénom, à la troisième personne ("Camille est en colère : pourquoi ?").
 
 Dans ses études, Kross montre que cette simple bascule de perspective réduit l'activation émotionnelle, améliore la qualité du raisonnement, et permet une analyse plus équilibrée de la situation.
 
-Appliqué aux échecs après une défaite : plutôt que "je suis nul, j'aurais dû voir ça", essaie "en voyant cette partie de l'extérieur, [ton prénom] a bien géré les 25 premiers coups et a raté le moment de simplification en coup 26. Qu'est-ce qu'il peut faire différemment ?"
+Appliqué aux échecs après une défaite : plutôt que "je suis nul, j'aurais dû voir ça", reprends la partie en te nommant, comme si tu commentais celle d'un autre. "Vu de l'extérieur, Camille a bien géré les 25 premiers coups et a raté le moment de simplification au coup 26. Qu'est-ce qu'elle peut faire différemment la prochaine fois ?" Remplace par ton propre prénom : c'est précisément le fait de l'entendre qui produit l'effet.
 
 Cette technique semble artificielle au premier abord. Elle l'est, et c'est son intérêt : elle crée délibérément un écart entre toi et ton état émotionnel, qui permet une réflexion de meilleure qualité.
 
@@ -149,7 +149,7 @@ Cette technique semble artificielle au premier abord. Elle l'est, et c'est son i
 
 Sur la base des données disponibles, voici un protocole pratique pour après une défaite difficile :
 
-**Étape 1 : L'espace d'émotion (immédiatement après).** Accordez-vous 20-30 minutes pour ressentir la déception sans la combattre ni l'amplifier. Pas d'analyse, pas de relecture de la partie. Marche courte, respiration, éloignement de l'échiquier.
+**Étape 1 : L'espace d'émotion (immédiatement après).** Accorde-toi 20-30 minutes pour ressentir la déception sans la combattre ni l'amplifier. Pas d'analyse, pas de relecture de la partie. Marche courte, respiration, éloignement de l'échiquier.
 
 **Étape 2 : Le lendemain matin : notation rapide.** Avant de regarder le moteur, note les 3 moments où tu as senti que quelque chose n'allait pas. Juste 3 moments, pas une analyse complète. Cette notation rapide fixe ta mémoire subjective avant qu'elle s'efface.
 
