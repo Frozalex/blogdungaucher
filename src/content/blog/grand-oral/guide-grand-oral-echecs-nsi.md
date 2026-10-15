@@ -7,7 +7,7 @@ publishDate: "2026-05-08"
 category: grand-oral
 featured: false
 featuredRank: 99
-readingTime: 28 min
+readingTime: 29 min
 pillar: Grand Oral
 tags:
   - grand-oral

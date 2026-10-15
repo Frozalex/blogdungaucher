@@ -6,7 +6,7 @@ updatedDate: "2026-05-21"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "12 min"
+readingTime: "13 min"
 pillar: "Mathématiques"
 tags: ["Zermelo", "échecs", "mathématiques", "théorie des jeux", "tablebases", "induction rétrograde", "König", "complexité", "logique"]
 seoTitle: "Paradoxe de Zermelo aux échecs : vérité déterminée mais inaccessible"

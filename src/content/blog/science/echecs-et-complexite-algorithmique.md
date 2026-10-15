@@ -8,7 +8,7 @@ publishDate: "2026-08-24"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 7 min
+readingTime: 8 min
 pillar: Science des échecs
 tags:
   - algorithmique
