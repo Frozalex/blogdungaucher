@@ -68,9 +68,9 @@ faq:
       <strong>posture</strong>, pas un même socle de connaissances.
 ---
 
-Il n’y a pas un seul chiffre sur un échiquier. Aucune équation à résoudre. Un Grand Maître n’est pas nécessairement capable de calculer une intégrale plus vite que toi. Et pourtant, l’idée que « les échecs rendent bon en maths » est répétée dans les écoles, les clubs périscolaires et les arguments d’admission depuis des décennies - comme si les 64 cases implantaient des formules algébriques dans le cerveau par simple contact.
+Il n'y a pas un seul chiffre sur un échiquier. Aucune équation à résoudre. Un Grand Maître n'est pas nécessairement capable de calculer une intégrale plus vite que toi. Et pourtant, l'idée que « les échecs rendent bon en maths » est répétée dans les écoles, les clubs périscolaires et les arguments d'admission depuis des décennies - comme si les 64 cases implantaient des formules algébriques dans le cerveau par simple contact.
 
-## Pourquoi associe-t-on instinctivement les échecs et les mathématiques ? (le “wow” est réel)
+## Pourquoi associe-t-on instinctivement les échecs et les mathématiques ? (le "wow" est réel)
 
 La première chose qui frappe n'importe quel observateur, c'est l'évidente parenté structurelle entre ces deux univers. Les échecs constituent, par essence, un système clos et parfaitement déterministe. Il n'y a pas la moindre place pour le hasard. Tu ne lances pas de dés, tu ne tires pas de cartes face cachée, le vent ne vient pas dévier la trajectoire de ta Dame. 
 
@@ -104,7 +104,7 @@ Ta pensée se structure ainsi : "Si je fais telle action, il peut répondre par 
 
 C'est cet exercice particulièrement intense de calcul arborescent qui fait tant ressembler la réflexion échiquéenne à la résolution d'une équation complexe à plusieurs inconnues. Tu dois impérativement tenir toutes ces variables actives dans ta mémoire de travail, sous peine de commettre une erreur fatale.
 
-## Le point qui fâche : pourquoi “les échecs rendent bon en maths” est souvent faux (transfert lointain)
+## Le point qui fâche : pourquoi "les échecs rendent bon en maths" est souvent faux (transfert lointain)
 
 Maintenant que les parallèles structurels sont posés, entrons dans le vif du sujet. Est-ce que cet entraînement intensif sur un échiquier se traduit par de meilleures notes en classe ou une aisance accrue pour résoudre des problèmes mathématiques dans la vie réelle ?
 
@@ -120,7 +120,7 @@ Leurs conclusions ont fait grincer des dents de nombreux promoteurs des échecs 
 
 Dit plus simplement : faire jouer un enfant dix heures par semaine aux échecs ne va pas faire grimper magiquement sa moyenne en algèbre de façon automatique. Le cerveau n'est pas un muscle général que tu gonfles en ne faisant que des pompes sur 64 cases. Quand tu t'entraînes énormément aux échecs, tu deviens surtout... extrêmement fort pour résoudre des problèmes d'échecs.
 
-La vraie question n’est pas là. Ce que les échecs font à l’esprit n’est pas quantitatif, c’est méthodologique. Et ce transfert-là, la recherche le documente solidement.
+La vraie question n'est pas là. Ce que les échecs font à l'esprit n'est pas quantitatif, c'est méthodologique. Et ce transfert-là, la recherche le documente solidement.
 
 ### Le seul transfert réel : ta méthode face aux problèmes, pas tes notes
 
@@ -148,7 +148,7 @@ Ce processus d'auto-évaluation constante, cette critique impitoyable de ses pro
 
 Un étudiant en sciences qui prend le soin de vérifier le signe négatif qu'il a pu malencontreusement oublier à la troisième ligne de son développement algébrique fait exactement le même effort mental qu'un joueur qui vérifie si sa pièce est bien protégée avant de la lâcher sur l'échiquier. La gymnastique cognitive est la même.
 
-## Comment utiliser concrètement les échecs pour muscler ta méthode (sans te raconter d’histoires)
+## Comment utiliser concrètement les échecs pour muscler ta méthode (sans te raconter d'histoires)
 
 Si tu aimes profondément les échecs et que tu souhaites t'en servir comme d'un véritable outil pour affûter ta rigueur logique, ou si ton but est d'aider un jeune à mieux structurer sa pensée face aux problèmes abstraits, la recherche scientifique te prescrit une méthodologie claire. Il ne suffit pas de jouer au hasard.
 
@@ -178,7 +178,7 @@ Lasker n'était pas fort aux échecs *parce qu'il* était mathématicien, ni mat
 
 Il n'est pas seul. [John von Neumann](https://fr.wikipedia.org/wiki/John_von_Neumann), père de la théorie des jeux et architecte de l'ordinateur moderne, était un joueur d'échecs passionné. [Alan Turing](https://fr.wikipedia.org/wiki/Alan_Turing), fondateur de l'informatique théorique, a écrit l'un des premiers programmes de jeu d'échecs. Ce n'est pas un hasard. C'est la signature d'un type de pensée particulier qui trouve dans l'échiquier son terrain d'expression naturel.
 
-## Pourquoi ça dépasse les maths : les échecs comme école de rigueur (au-delà de l’échiquier)
+## Pourquoi ça dépasse les maths : les échecs comme école de rigueur (au-delà de l'échiquier)
 
 Au bout du compte, le lien viscéral entre les échecs et les mathématiques n'est certainement pas un mythe, mais il a souvent été caricaturé et mal compris par le grand public. Les échecs ne sont en aucun cas un manuel scolaire déguisé qui viendrait t'enseigner magiquement le calcul différentiel, les probabilités ou la géométrie dans l'espace.
 
@@ -188,11 +188,11 @@ Les échecs te donnent, en réalité, l'attitude mentale indispensable pour affr
 
 ## Ce qu'il faut retenir avant la prochaine partie
 
-Si tu cherches une promesse honnête, la voilà : les échecs ne remplacent pas les maths et ne transfèrent pas automatiquement du “contenu” mathématique dans ton cerveau. En revanche, ils peuvent entraîner des habitudes mentales qui ressemblent beaucoup à ce que visent les cours de mathématiques : **décomposer, tester, vérifier, douter au bon moment**, et ne pas paniquer quand la complexité augmente.
+Si tu cherches une promesse honnête, la voilà : les échecs ne remplacent pas les maths et ne transfèrent pas automatiquement du "contenu" mathématique dans ton cerveau. En revanche, ils peuvent entraîner des habitudes mentales qui ressemblent beaucoup à ce que visent les cours de mathématiques : **décomposer, tester, vérifier, douter au bon moment**, et ne pas paniquer quand la complexité augmente.
 
-Le bon pitch n’est donc pas “les échecs rendent bon en maths”, mais “les échecs peuvent aider à construire une posture face aux problèmes”. Et cette posture, elle peut servir en maths… comme dans la vraie vie.
+Le bon pitch n'est donc pas "les échecs rendent bon en maths", mais "les échecs peuvent aider à construire une posture face aux problèmes". Et cette posture, elle peut servir en maths… comme dans la vraie vie.
 
-**Après lecture :** un problème tactique par jour pendant une semaine, **hypothèse écrite avant** la solution ; pour la combinatoire et les moteurs, enchaîne avec [pourquoi les échecs restent un problème mathématique brutal pour l’IA](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
+**Après lecture :** un problème tactique par jour pendant une semaine, **hypothèse écrite avant** la solution ; pour la combinatoire et les moteurs, enchaîne avec [pourquoi les échecs restent un problème mathématique brutal pour l'IA](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).
 
 ---
 

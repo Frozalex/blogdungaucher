@@ -264,7 +264,7 @@ La recherche ne fixe pas de seuil universel. Les changements comportementaux (fo
 
 Non. Les études sur l'activation cérébrale montrent que le jeu lent mobilise davantage les zones de planification et de métacognition. Le Blitz repose principalement sur la reconnaissance de motifs déjà stockés, utile pour l'entraînement tactique, mais moins formateur pour les bénéfices cognitifs profonds.
 
-**Après lecture :** choisis **une** section du tableau des études clés et retiens **un** chiffre (effet, n, durée) que tu pourras citer correctement la prochaine fois que tu parles d’échecs et cerveau.
+**Après lecture :** choisis **une** section du tableau des études clés et retiens **un** chiffre (effet, n, durée) que tu pourras citer correctement la prochaine fois que tu parles d'échecs et cerveau.
 
 ---
 

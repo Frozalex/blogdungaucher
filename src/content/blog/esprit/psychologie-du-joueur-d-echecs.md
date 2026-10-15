@@ -63,11 +63,11 @@ Le système [Elo](https://fr.wikipedia.org/wiki/Classement_Elo), conçu par [Arp
 
 Cette fusion entre l'estime de soi et un nombre flottant est psychologiquement très coûteuse. Elle transforme chaque partie en une menace existentielle. Une défaite ne signifie plus simplement "j'ai joué une mauvaise partie ce soir-là" elle signifie "je suis moins que ce que je croyais être". [Carol Dweck](https://fr.wikipedia.org/wiki/Carol_Dweck), psychologue à l'[Université Stanford](https://fr.wikipedia.org/wiki/Universit%C3%A9_Stanford), a consacré sa carrière à distinguer deux états d'esprit fondamentaux face à la performance : l'état d'esprit fixe (*fixed mindset*) et l'état d'esprit de croissance (*growth mindset*). Le joueur piégé par son classement Elo est un cas d'école d'état d'esprit fixe : chaque résultat est une confirmation ou une infirmation de ce qu'il "est", non de ce qu'il "apprend".
 
-Le joueur avec un état d’esprit de croissance, lui, regarde la même défaite différemment. Elle lui dit : "Il y a quelque chose ici que je ne comprends pas encore." La partie devient un document de travail, pas un verdict.
+Le joueur avec un état d'esprit de croissance, lui, regarde la même défaite différemment. Elle lui dit : "Il y a quelque chose ici que je ne comprends pas encore." La partie devient un document de travail, pas un verdict.
 
-![Fixed mindset contre Growth mindset selon Dweck aux échecs : le joueur à état d’esprit fixe fusionne son Elo avec son identité et vit chaque défaite comme un verdict ; le joueur à état d’esprit de croissance y voit un document de travail.](/images/psychologie-joueur-04-fixed-growth-mindset.svg)
+![Fixed mindset contre Growth mindset selon Dweck aux échecs : le joueur à état d'esprit fixe fusionne son Elo avec son identité et vit chaque défaite comme un verdict ; le joueur à état d'esprit de croissance y voit un document de travail.](/images/psychologie-joueur-04-fixed-growth-mindset.svg)
 
-## Hors prep : intolérance à l’incertitude, Système 1 / 2, et l’art d’être mal à l’aise
+## Hors prep : intolérance à l'incertitude, Système 1 / 2, et l'art d'être mal à l'aise
 
 Il y a une peur très spécifique que comprennent parfaitement les joueurs d'un certain niveau : la peur de sortir de la théorie. Après dix ou quinze coups de préparation bien rodée, l'adversaire joue quelque chose d'imprévu. Une déviation subtile. Un coup que tu n'as pas en mémoire. Et soudain, tu te retrouves seul face à toi-même, sans le filet de sécurité de la connaissance apprise par cœur.
 
@@ -79,7 +79,7 @@ Cette sensation est psychologiquement analogue à ce que les psychologues appell
 
 Il n'y a qu'une façon saine de répondre à cette peur : s'entraîner délibérément dans l'inconfort. [Tigran Petrossian](https://fr.wikipedia.org/wiki/Tigran_Petrossian), Champion du Monde de 1963 à 1969, était un joueur qui semblait toujours à l'aise dans des positions complexes, ambiguës et difficiles à évaluer. Son style fait d'échanges préventifs et d'une défense profonde n'était pas de la lâcheté. C'était l'expression d'une maîtrise psychologique totale : il se sentait plus à l'aise dans des positions légèrement inférieures mais solides que dans des positions théoriquement gagnantes mais volatiles. Il avait fait la paix avec l'incertitude, et il l'exploitait contre ses adversaires qui, eux, en avaient peur.
 
-## Tilt : quand l’émotion mange ton calcul (et ce qu’elle révèle sur toi)
+## Tilt : quand l'émotion mange ton calcul (et ce qu'elle révèle sur toi)
 
 Si tu as joué plus de quelques dizaines de parties dans ta vie, tu l'as vécu. Une gaffe incompréhensible. Un pion oublié. Un coup qui semblait bon et qui s'est révélé catastrophique. Et soudain, quelque chose change dans ta façon de jouer. Tu accélères. Tu calcules moins bien. Tu prends des risques absurdes pour "rattraper" une position qui ne le nécessite pas. Tu es en tilt.
 
@@ -109,11 +109,11 @@ Un phénomène psychologique peu souvent évoqué dans les échecs, mais extrêm
 
 Ce sentiment est particulièrement toxique aux échecs parce qu'il te force à jouer en "mode démonstration" plutôt qu'en "mode jeu". Tu essaies de prouver que tu mérites ta cote plutôt que de simplement chercher le meilleur coup sur l'échiquier. Tes décisions sont parasitées par le regard imaginaire des autres.
 
-L’inverse existe aussi, et est tout aussi dangereux : l’excès de confiance après une série de victoires. Le cerveau humain a une tendance naturelle à extrapoler les tendances récentes. Après cinq gains consécutifs, il est très facile de sous-estimer un adversaire, de jouer avec moins de rigueur, de prendre des risques que tu n’aurais jamais pris deux semaines plus tôt. C’est souvent là que les chutes de classement les plus douloureuses surviennent.
+L'inverse existe aussi, et est tout aussi dangereux : l'excès de confiance après une série de victoires. Le cerveau humain a une tendance naturelle à extrapoler les tendances récentes. Après cinq gains consécutifs, il est très facile de sous-estimer un adversaire, de jouer avec moins de rigueur, de prendre des risques que tu n'aurais jamais pris deux semaines plus tôt. C'est souvent là que les chutes de classement les plus douloureuses surviennent.
 
-![Spectre de la confiance aux échecs : à gauche le syndrome de l’imposteur qui joue en mode démonstration, à droite la surconfiance qui réduit la vigilance après une série de victoires, au centre la zone d’équanimité optimale illustrée par Carlsen.](/images/psychologie-joueur-05-confiance-spectre.svg)
+![Spectre de la confiance aux échecs : à gauche le syndrome de l'imposteur qui joue en mode démonstration, à droite la surconfiance qui réduit la vigilance après une série de victoires, au centre la zone d'équanimité optimale illustrée par Carlsen.](/images/psychologie-joueur-05-confiance-spectre.svg)
 
-## Flow : l’état rare et les conditions pour ne pas le mythifier
+## Flow : l'état rare et les conditions pour ne pas le mythifier
 
 Il y a des moments rares et précieux, que tout joueur a connus au moins une ou deux fois dans sa pratique, où quelque chose de différent se produit. La pendule n'existe plus. La salle autour de toi disparaît. Ton adversaire n'est plus une menace mais simplement le contexte de ta réflexion. Tu vois la position avec une clarté inhabituelle. Les variantes se déroulent naturellement dans ta tête comme si elles étaient déjà écrites.
 
@@ -129,23 +129,23 @@ Cela signifie pratiquement que tu ne peux pas forcer le flow. Mais tu peux crée
 
 ## Équanimité au sommet : ce que Carlsen montre sur le mental (sans mythologie)
 
-[Magnus Carlsen](https://fr.wikipedia.org/wiki/Magnus_Carlsen) est souvent réduit au cliché du « génie technique » ; pourtant, une grande part de son avantage tient à l’équanimité : il ne semble pas avoir de position « préférée ». Il joue aussi bien dans des positions équilibrées que dans des positions déséquilibrées, dans des fins de partie simples que dans des labyrinthes tactiques. Cette indifférence stratégique est une arme absolue. Ses adversaires essaient systématiquement d'orienter la partie vers un type de position qui pourrait le mettre mal à l'aise. Et ils échouent, parce qu'il ne semble rien craindre en particulier. Cette équanimité, la capacité à maintenir un état intérieur stable quelles que soient les turbulences extérieures, n'est pas naturelle. Elle se travaille, se cultive, et se construit dans des milliers de parties disputées avec la même intensité quelle que soit la position sur le plateau.
+[Magnus Carlsen](https://fr.wikipedia.org/wiki/Magnus_Carlsen) est souvent réduit au cliché du « génie technique » ; pourtant, une grande part de son avantage tient à l'équanimité : il ne semble pas avoir de position « préférée ». Il joue aussi bien dans des positions équilibrées que dans des positions déséquilibrées, dans des fins de partie simples que dans des labyrinthes tactiques. Cette indifférence stratégique est une arme absolue. Ses adversaires essaient systématiquement d'orienter la partie vers un type de position qui pourrait le mettre mal à l'aise. Et ils échouent, parce qu'il ne semble rien craindre en particulier. Cette équanimité, la capacité à maintenir un état intérieur stable quelles que soient les turbulences extérieures, n'est pas naturelle. Elle se travaille, se cultive, et se construit dans des milliers de parties disputées avec la même intensité quelle que soit la position sur le plateau.
 
-## Ce que l’échiquier dit de toi (et que tu ne veux pas entendre)
+## Ce que l'échiquier dit de toi (et que tu ne veux pas entendre)
 
-La psychologie du joueur d’échecs ne se travaille pas comme une liste d’objectifs. Elle se travaille dans la défaite.
+La psychologie du joueur d'échecs ne se travaille pas comme une liste d'objectifs. Elle se travaille dans la défaite.
 
-C’est dans le coup joué en tilt, dans la partie lancée « juste pour rattraper », dans le refus instinctif de la complication que tu te révèles vraiment. Pas dans ta préparation théorique. Pas dans ton classement du moment.
+C'est dans le coup joué en tilt, dans la partie lancée « juste pour rattraper », dans le refus instinctif de la complication que tu te révèles vraiment. Pas dans ta préparation théorique. Pas dans ton classement du moment.
 
-Le vrai progrès n’est pas de ne plus avoir peur de perdre. C’est d’apprendre à jouer avec cette peur sans la laisser choisir à ta place. **La qualité de ta pensée est la seule variable sur laquelle tu as vraiment prise.** Le résultat, lui, ne t’appartient qu’à moitié.
+Le vrai progrès n'est pas de ne plus avoir peur de perdre. C'est d'apprendre à jouer avec cette peur sans la laisser choisir à ta place. **La qualité de ta pensée est la seule variable sur laquelle tu as vraiment prise.** Le résultat, lui, ne t'appartient qu'à moitié.
 
-## Le meilleur joueur, c’est souvent le plus lucide - pas le plus fort
+## Le meilleur joueur, c'est souvent le plus lucide - pas le plus fort
 
-Le mental aux échecs, ce n’est pas une aura mystique : c’est une **capacité à rester joueur** quand la position te dit que tu t’es trompé. Pas à être indestructible, mais à être **moins naïf** avec tes propres patterns.
+Le mental aux échecs, ce n'est pas une aura mystique : c'est une **capacité à rester joueur** quand la position te dit que tu t'es trompé. Pas à être indestructible, mais à être **moins naïf** avec tes propres patterns.
 
-Le plateau continue d’afficher ce que tu refuses parfois de voir : ta réaction à la pression, à la peur et à l’orgueil, et la façon dont tu te relèves après une erreur. Ce n’est pas toujours confortable ; c’est toujours instructif.
+Le plateau continue d'afficher ce que tu refuses parfois de voir : ta réaction à la pression, à la peur et à l'orgueil, et la façon dont tu te relèves après une erreur. Ce n'est pas toujours confortable ; c'est toujours instructif.
 
-**Après lecture :** sur ta prochaine défaite, note en une phrase l’**émotion** au moment du premier gros coup faible, puis l’**erreur technique** : l’analyse à froid part de là, pas du classement.
+**Après lecture :** sur ta prochaine défaite, note en une phrase l'**émotion** au moment du premier gros coup faible, puis l'**erreur technique** : l'analyse à froid part de là, pas du classement.
 
 ---
 

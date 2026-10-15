@@ -121,7 +121,7 @@ Ces propriétés font du Elo un objet psychologique particulièrement actif. Dan
 
 Les plateformes de jeu en ligne ont créé une exposition nouvelle à la fluctuation du classement. Dans les années 1990, un joueur de club voyait son Elo FIDE mis à jour tous les 3 mois après un tournoi. Aujourd'hui, Chess.com et Lichess mettent à jour le classement après chaque partie, parfois plusieurs fois par jour.
 
-Le **"Elo anxiety"**: terme utilisé informellement dans la communauté avant d'apparaître dans quelques études psychologiques : désigne l'anxiété spécifiquement liée à la peur de perdre des points de classement.
+Le **"Elo anxiety"** : terme utilisé informellement dans la communauté avant d'apparaître dans quelques études psychologiques : désigne l'anxiété spécifiquement liée à la peur de perdre des points de classement.
 
 Ses manifestations :
 

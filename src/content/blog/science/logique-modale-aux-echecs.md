@@ -116,6 +116,6 @@ Le Grand Maître raisonne sur des plans à long terme, des structures de pions q
 
 Cette progression est une progression dans la profondeur et la richesse du raisonnement modal. C'est peut-être la description la plus précise de ce que signifie "comprendre les échecs" : avoir accès à un univers de mondes possibles plus large, et raisonner dessus avec plus de rigueur.
 
-**Après lecture :** sur une position d’entraînement, écris pour **deux coups candidats** la phrase « si je joue X, dans quels **mondes** j’atterris au coup suivant ? » avant de calculer en profondeur.
+**Après lecture :** sur une position d'entraînement, écris pour **deux coups candidats** la phrase « si je joue X, dans quels **mondes** j'atterris au coup suivant ? » avant de calculer en profondeur.
 
 ---

@@ -111,7 +111,7 @@ C'est un résultat important : 8 semaines, c'est court. La plasticité cérébra
 
 ### Brewer (2011) : moins de mind wandering
 
-[Judson Brewer](https://drjud.com) (Yale) a publié en 2011 dans *PNAS* une étude d'IRMf comparant méditants experts (>10 000 heures de pratique) et novices. Résultats : les méditants experts montrent une **réduction de 22%** des activations du Default Mode Network (DMN): exactement le réseau impliqué dans la rêverie, la rumination, et le vagabondage mental.
+[Judson Brewer](https://drjud.com) (Yale) a publié en 2011 dans *PNAS* une étude d'IRMf comparant méditants experts (>10 000 heures de pratique) et novices. Résultats : les méditants experts montrent une **réduction de 22%** des activations du Default Mode Network (DMN) : exactement le réseau impliqué dans la rêverie, la rumination, et le vagabondage mental.
 
 Pour un joueur d'échecs, c'est l'effet le plus directement actionnable. Si l'esprit vagabonde 46,9% du temps en moyenne (Killingsworth & Gilbert, 2010), réduire ce pourcentage pendant une partie classique de 4 heures représente un gain attentionnel énorme : potentiellement plus important que toute amélioration technique à court terme.
 

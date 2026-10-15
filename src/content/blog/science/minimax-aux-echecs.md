@@ -105,7 +105,7 @@ En pratique, presque aucun moteur n'implémente minimax dans sa forme à deux br
 
 ### Null-move pruning : faire passer son tour pour gagner du temps
 
-Une heuristique puissante : et si tu **passes ton tour** ? Si la position reste bonne pour toi malgré ce coup gratuit donné à l'adversaire, alors elle est probablement *très* bonne pour toi, et tu peux élaguer profondément le reste de l'analyse. C'est le **null-move pruning**, technique standard depuis les années 1990. Aux échecs, l'astuce a une limite connue (le *zugzwang*: situation où tout coup empire la position, typique des finales de pions), donc les moteurs désactivent l'heuristique en finale ou dans les positions identifiées comme zugzwang potentiel. Gain typique : encore un facteur 2 à 4 sur la vitesse effective.
+Une heuristique puissante : et si tu **passes ton tour** ? Si la position reste bonne pour toi malgré ce coup gratuit donné à l'adversaire, alors elle est probablement *très* bonne pour toi, et tu peux élaguer profondément le reste de l'analyse. C'est le **null-move pruning**, technique standard depuis les années 1990. Aux échecs, l'astuce a une limite connue (le *zugzwang* : situation où tout coup empire la position, typique des finales de pions), donc les moteurs désactivent l'heuristique en finale ou dans les positions identifiées comme zugzwang potentiel. Gain typique : encore un facteur 2 à 4 sur la vitesse effective.
 
 ![Null-move pruning : si la position reste positive après un coup nul (passer son tour), le moteur élague profondément l'arbre — avec la limite du zugzwang en finale où cette heuristique est désactivée.](/images/minimax-03-null-move.svg)
 

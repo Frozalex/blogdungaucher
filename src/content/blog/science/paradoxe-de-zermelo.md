@@ -151,7 +151,7 @@ Cette humilité mathématique est saine. Elle signifie que même face à un adve
 
 Le génie de Zermelo n'est pas d'avoir résolu les échecs. C'est d'avoir prouvé que la solution existe, de façon définitive, sans pouvoir la trouver. Un exemple rare où la certitude de l'existence est séparée de la possibilité de l'accès.
 
-**Après lecture :** garde en tête une **phrase d’humilité mathématique** en partie longue : tu joues des approximations, pas la vérité de tablebase ; ça peut lever du perfectionnisme au mauvais moment.
+**Après lecture :** garde en tête une **phrase d'humilité mathématique** en partie longue : tu joues des approximations, pas la vérité de tablebase ; ça peut lever du perfectionnisme au mauvais moment.
 
 ---
 

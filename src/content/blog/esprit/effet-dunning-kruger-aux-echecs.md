@@ -272,7 +272,7 @@ Ce qui est, quand on y pense, une raison très solide de continuer à travailler
 
 **Après lecture :** fais le test des 89 points. Écris le classement que tu penses mériter, calcule le score que cet écart implique, et confronte-le à tes cinquante dernières parties contre des adversaires de ton niveau. Le résultat, quel qu'il soit, est plus instructif que cet article.
 
-*Cet article ouvre une série consacrée à la psychologie appliquée aux échecs. Il sera suivi d'articles sur la dissonance cognitive, le biais de confirmation, les mécanismes de défense et la rationalisation. Voir aussi le panorama des [5 biais cognitifs qui te font blunder](/fr/blog/5-biais-cognitifs-blunder/). Voir [l’index complet de la série](/fr/series/psychologie/).*
+*Cet article ouvre une série consacrée à la psychologie appliquée aux échecs. Il sera suivi d'articles sur la dissonance cognitive, le biais de confirmation, les mécanismes de défense et la rationalisation. Voir aussi le panorama des [5 biais cognitifs qui te font blunder](/fr/blog/5-biais-cognitifs-blunder/). Voir [l'index complet de la série](/fr/series/psychologie/).*
 
 ## Sources
 

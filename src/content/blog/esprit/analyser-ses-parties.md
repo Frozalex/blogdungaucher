@@ -165,7 +165,7 @@ Quand vous avez identifié le moment critique, la question suivante est : quel t
 
 **Lichess** offre une analyse par moteur gratuite pour toutes les parties jouées sur la plateforme, avec des indicateurs de précision et l'identification automatique des erreurs significatives. Le rapport d'analyse montre les "inaccuracies", "mistakes" et "blunders" : utile pour identifier les moments critiques rapidement.
 
-**Chess.com** propose une analyse similaire (avec des fonctionnalités avancées dans les comptes payants) et un score de précision par phase de jeu (ouverture, milieu de jeu, finale): utile pour identifier quelle phase vous coûte le plus.
+**Chess.com** propose une analyse similaire (avec des fonctionnalités avancées dans les comptes payants) et un score de précision par phase de jeu (ouverture, milieu de jeu, finale) : utile pour identifier quelle phase vous coûte le plus.
 
 **ChessBase** ou **SCID** (gratuit) permettent une analyse plus approfondie avec annotation manuelle et recherche dans des bases de données de parties, pour les joueurs qui veulent comparer leur traitement d'une position avec des parties de référence.
 

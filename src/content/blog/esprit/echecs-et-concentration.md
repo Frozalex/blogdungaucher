@@ -119,7 +119,7 @@ L'une des découvertes les plus contre-intuitives de la neuroscience des 20 dern
 
 Le DMN et les réseaux attentionnels sont en compétition : quand l'un est actif, l'autre tend à se désactiver. La concentration sur une tâche difficile supprime le DMN ; le relâchement de l'attention réactive le DMN et produit la "mind wandering" : l'esprit qui vagabonde.
 
-[Matthew Killingsworth](https://killingsworth.me) et [Daniel Gilbert](https://wjh.harvard.edu/~dtg/gilbert.htm) (Harvard) ont mesuré en 2010, dans une étude monumentale (*Science*) utilisant une application iPhone avec 2 250 adultes, que l'esprit vagabonde **46,9% du temps de veille**: indépendamment de l'activité en cours. Et quand l'esprit vagabonde, les gens sont systématiquement moins heureux qu'en état d'attention focalisée.
+[Matthew Killingsworth](https://killingsworth.me) et [Daniel Gilbert](https://wjh.harvard.edu/~dtg/gilbert.htm) (Harvard) ont mesuré en 2010, dans une étude monumentale (*Science*) utilisant une application iPhone avec 2 250 adultes, que l'esprit vagabonde **46,9% du temps de veille** : indépendamment de l'activité en cours. Et quand l'esprit vagabonde, les gens sont systématiquement moins heureux qu'en état d'attention focalisée.
 
 Pour les joueurs d'échecs, l'implication est directe : **presque la moitié du temps de jeu, ton cerveau tend naturellement à s'évader**. La concentration n'est pas un état naturel : c'est un état maintenu activement contre la tendance spontanée du cerveau.
 

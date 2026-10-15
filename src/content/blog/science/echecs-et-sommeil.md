@@ -92,7 +92,7 @@ Une nuit de sommeil n'est pas un bloc uniforme. Elle s'organise en **cycles de 9
 
 **Le sommeil REM (Rapid Eye Movement)** : consolidation des mémoires procédurales et des connexions entre patterns. C'est le stade de l'intégration : le cerveau relie ce qu'il vient d'apprendre à ce qu'il sait déjà. Le REM est prépondérant en fin de nuit (dernières 2 heures), ce qui explique pourquoi court-circuiter le réveil avec une alarme prive d'une phase particulièrement précieuse.
 
-Pour un joueur d'échecs, les implications sont concrètes : **les 6 premières heures de sommeil consolident la théorie** (variantes, plans caractéristiques d'une structure de pions) ; **les 2 dernières heures de sommeil REM intègrent la reconnaissance de patterns**: exactement ce qui distingue un joueur intuitif d'un joueur purement calculateur.
+Pour un joueur d'échecs, les implications sont concrètes : **les 6 premières heures de sommeil consolident la théorie** (variantes, plans caractéristiques d'une structure de pions) ; **les 2 dernières heures de sommeil REM intègrent la reconnaissance de patterns** : exactement ce qui distingue un joueur intuitif d'un joueur purement calculateur.
 
 ![Architecture d'une nuit de sommeil en cycles de 90 minutes : le sommeil N3 (ondes delta, fond vert) domine en début de nuit pour consolider les variantes, tandis que le REM (fond ambre) domine en fin de nuit pour intégrer les patterns. Couper le réveil prive des phases REM les plus précieuses.](/images/echecs-sommeil-01-architecture-nuit.svg)
 

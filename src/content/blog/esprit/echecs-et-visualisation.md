@@ -111,11 +111,11 @@ Résultats : les experts replacent en moyenne 92% des pièces correctement. Les 
 
 Conclusion prévisible : les experts ont une meilleure mémoire, non ?
 
-Deuxième phase de l'expérience. On leur montre une position *aléatoire*: les mêmes pièces, mais placées sans logique de jeu, comme tirées au hasard sur l'échiquier. Même durée d'exposition, même tâche de reconstruction.
+Deuxième phase de l'expérience. On leur montre une position *aléatoire* : les mêmes pièces, mais placées sans logique de jeu, comme tirées au hasard sur l'échiquier. Même durée d'exposition, même tâche de reconstruction.
 
 Cette fois, les deux groupes sont comparables : environ 30% de reconstruction correcte chacun.
 
-La conclusion est radicale : les experts d'échecs n'ont pas une mémoire visuelle supérieure. Ils ont une **bibliothèque de patterns**: des milliers de configurations de jeu réel stockées en mémoire à long terme. Quand ils voient une position de jeu réel, ils la décomposent en patterns familiers (des "chunks"), chacun mémorisé comme une unité. Quand la position est aléatoire, ces patterns ne s'appliquent pas et leur avantage disparaît.
+La conclusion est radicale : les experts d'échecs n'ont pas une mémoire visuelle supérieure. Ils ont une **bibliothèque de patterns** : des milliers de configurations de jeu réel stockées en mémoire à long terme. Quand ils voient une position de jeu réel, ils la décomposent en patterns familiers (des "chunks"), chacun mémorisé comme une unité. Quand la position est aléatoire, ces patterns ne s'appliquent pas et leur avantage disparaît.
 
 Un joueur de niveau maître dispose d'environ 50 000 chunks d'échecs stockés en mémoire à long terme : une estimation de Simon lui-même. Un Grand Maître en aurait davantage. Un débutant en a quelques dizaines.
 
@@ -131,7 +131,7 @@ La capacité de visualisation se développe donc à deux niveaux simultanément 
 
 Le jeu à l'aveugle (*blindfold chess*) pousse ces mécanismes à leur extrême. Sans échiquier visible, le joueur doit maintenir la représentation complète de la position en mémoire de travail : en s'appuyant lourdement sur la mémoire à long terme pour stocker les chunks et ne garder en mémoire de travail que les modifications récentes.
 
-L'imagerie cérébrale de joueurs en blindfold montre une activation particulièrement forte du **sillon intrapariétal** (traitement spatial) et de l'**hippocampe** (mémoire épisodique et spatiale): les mêmes régions qui s'activent quand on navigue mentalement dans un environnement familier. En jouant à l'aveugle, le joueur navigue mentalement dans un espace de positions, comme un architecte qui se déplace mentalement dans un bâtiment qu'il connaît bien.
+L'imagerie cérébrale de joueurs en blindfold montre une activation particulièrement forte du **sillon intrapariétal** (traitement spatial) et de l'**hippocampe** (mémoire épisodique et spatiale) : les mêmes régions qui s'activent quand on navigue mentalement dans un environnement familier. En jouant à l'aveugle, le joueur navigue mentalement dans un espace de positions, comme un architecte qui se déplace mentalement dans un bâtiment qu'il connaît bien.
 
 Les études comparant le jeu normal et le jeu à l'aveugle chez le même joueur montrent que les performances diminuent en aveugle (typiquement de 100 à 200 points Elo) mais que la *qualité* des coups joués est similaire pour les coups simples. Les erreurs en aveugle se produisent principalement sur des positions complexes avec beaucoup de pièces actives : précisément les cas où la charge de la mémoire de travail est maximale.
 

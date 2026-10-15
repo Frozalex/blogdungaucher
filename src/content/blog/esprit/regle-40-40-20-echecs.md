@@ -225,6 +225,6 @@ En blitz pur, les finales comptent beaucoup moins (les parties se terminent rare
 
 ---
 
-**Après lecture :** pendant **une semaine**, chronomètre le temps réel tactique / finales / ouvertures ; compare au tableau « session type » du milieu d’article et ajuste **un** levier seulement.
+**Après lecture :** pendant **une semaine**, chronomètre le temps réel tactique / finales / ouvertures ; compare au tableau « session type » du milieu d'article et ajuste **un** levier seulement.
 
 ---

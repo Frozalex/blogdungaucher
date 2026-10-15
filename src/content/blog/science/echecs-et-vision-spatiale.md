@@ -102,7 +102,7 @@ Ces trois composantes sont toutes sollicitées aux échecs, à des degrés diff�
 
 L'étude la plus rigoureuse sur le lien entre échecs et cognition spatiale est la méta-analyse de Tejada-Gallardo et al. (2021), publiée dans *Educational Psychology Review*.
 
-Les auteurs ont sélectionné 17 études répondant à des critères de qualité méthodologique minimaux, portant sur des enfants et des adultes de niveaux variés. L'effet global sur le raisonnement spatial est de **ES = 0.54**: un effet moyen à fort, significatif et robuste à travers les études.
+Les auteurs ont sélectionné 17 études répondant à des critères de qualité méthodologique minimaux, portant sur des enfants et des adultes de niveaux variés. L'effet global sur le raisonnement spatial est de **ES = 0.54** : un effet moyen à fort, significatif et robuste à travers les études.
 
 Points importants de cette méta-analyse :
 
@@ -146,7 +146,7 @@ L'étude d'[Atherton et al. (2003)](https://www.sciencedirect.com/science/articl
 
 ## Les parties à l'aveugle : l'exercice ultime
 
-Les parties à l'aveugle (*blindfold chess*): jouer sans voir l'échiquier, en dictant les coups oralement ou par notation : représentent l'exercice le plus direct de visualisation spatiale aux échecs.
+Les parties à l'aveugle (*blindfold chess*) : jouer sans voir l'échiquier, en dictant les coups oralement ou par notation : représentent l'exercice le plus direct de visualisation spatiale aux échecs.
 
 ![Les trois niveaux d'entraînement à la visualisation à l'aveugle : du débutant (5-10 coups d'ouverture) à l'avancé (parties complètes), avec les records historiques de Morphy, Pillsbury et Gareyev.](/images/echecs-vision-03-niveaux-aveugle.svg)
 

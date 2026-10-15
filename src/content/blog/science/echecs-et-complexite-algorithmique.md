@@ -125,7 +125,7 @@ L'idée : si on recherche l'arbre de jeu et qu'on trouve une branche qui ne peut
 
 Dans le meilleur cas, l'élagage alpha-bêta réduit le nombre de nœuds à explorer de la racine carrée de l'arbre complet. À partir d'un espace de 10^123, on peut espérer chercher 10^61, toujours astronomique, mais beaucoup plus gérable avec de bonnes heuristiques d'ordonnancement des coups (chercher d'abord les coups probablement bons rend l'élagage plus efficace).
 
-Combiné à une **fonction d'évaluation**: une formule qui estime la valeur d'une position sans aller jusqu'aux feuilles de l'arbre : l'alpha-bêta permet de chercher à une profondeur fixe et d'évaluer les positions résultantes. C'est exactement ce que faisait Deep Blue en 1997.
+Combiné à une **fonction d'évaluation** : une formule qui estime la valeur d'une position sans aller jusqu'aux feuilles de l'arbre : l'alpha-bêta permet de chercher à une profondeur fixe et d'évaluer les positions résultantes. C'est exactement ce que faisait Deep Blue en 1997.
 
 ## Deep Blue : la victoire de l'ingénierie
 

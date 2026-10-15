@@ -143,7 +143,7 @@ Il y a autant de stratégies que de joueurs, mais quelques patterns se dégagent
 
 **Le décompresseur actif**, Mikhail Tal, champion du monde en 1960, était l'opposé exact. Ses soirées de tournoi étaient légendaires : conversations jusqu'à l'aube, récits, rencontres. Les psychologues sportifs qui ont étudié son style interprètent cela comme une décompression compensatoire : l'intensité de l'isolement de la partie nécessitait une intensité égale dans la socialisation post-partie, pour rééquilibrer.
 
-**Le créateur de rituel**: certains joueurs encadrent la solitude par des rituels précis. Une conversation spécifique avant la partie (mais pas dans les 30 dernières minutes), l'analyse avec un ami immédiatement après, une routine de décompression fixe. Ces rituels délimitent la solitude dans le temps : elle commence quand la pendule démarre, elle s'arrête quand on serre la main.
+**Le créateur de rituel** : certains joueurs encadrent la solitude par des rituels précis. Une conversation spécifique avant la partie (mais pas dans les 30 dernières minutes), l'analyse avec un ami immédiatement après, une routine de décompression fixe. Ces rituels délimitent la solitude dans le temps : elle commence quand la pendule démarre, elle s'arrête quand on serre la main.
 
 Ce que ces trois profils ont en commun : aucun ne subit la solitude passivement. Chacun a développé une stratégie consciente pour l'habiter ou la contrebalancer. Ce n'est pas inné. Ça se construit.
 

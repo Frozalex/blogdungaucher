@@ -94,7 +94,7 @@ La psychologie contemporaine a inversé son modèle dans les vingt dernières an
 
 Quand une tâche génère de l'anxiété, du doute, de la peur de l'échec ou simplement de l'ennui, ton cerveau cherche à neutraliser l'inconfort immédiat. La façon la plus rapide : ne plus s'y exposer. Tu ouvres un autre onglet. Tu vérifies tes mails. Tu fais du café que tu n'as pas demandé. Soulagement.
 
-Sauf que la tâche revient. Plus tard. Avec une anxiété **augmentée** parce que la deadline s'est rapprochée. Ce qui rend l'évitement suivant encore plus probable. C'est ce que le psychologue B.F. Skinner appelait un *conditionnement opérant*: version courte : un comportement qui produit du soulagement immédiat se renforce, même quand il aggrave le problème à long terme.
+Sauf que la tâche revient. Plus tard. Avec une anxiété **augmentée** parce que la deadline s'est rapprochée. Ce qui rend l'évitement suivant encore plus probable. C'est ce que le psychologue B.F. Skinner appelait un *conditionnement opérant* : version courte : un comportement qui produit du soulagement immédiat se renforce, même quand il aggrave le problème à long terme.
 
 > **Définition rapide : conditionnement opérant.** Quand une action est suivie d'un soulagement, le cerveau apprend à la répéter. Procrastiner = appuyer sur un bouton qui éteint l'anxiété 30 secondes. Le bouton fonctionne. C'est ça le piège.
 
@@ -133,7 +133,7 @@ Les psychologues mesurent une variable qu'ils appellent *tolérance à l'ambigu�
 Faible tolérance → tu repousses les choix non-évidents, tu vises la sécurité absolue, tu vires perfectionniste paralysant.
 Haute tolérance → tu décides "suffisamment bien" vite, puis tu ajustes en chemin.
 
-Plusieurs études (méta-analyse Sala & Gobet, 2017, sur le transfert cognitif des échecs) montrent que les joueurs réguliers présentent en moyenne une tolérance à l'ambiguïté plus élevée que les non-joueurs de même niveau d'éducation, y compris sur des tâches sans rapport avec l'échiquier. L'effet est **modéré**: pas spectaculaire, pas universel, mais réplicable.
+Plusieurs études (méta-analyse Sala & Gobet, 2017, sur le transfert cognitif des échecs) montrent que les joueurs réguliers présentent en moyenne une tolérance à l'ambiguïté plus élevée que les non-joueurs de même niveau d'éducation, y compris sur des tâches sans rapport avec l'échiquier. L'effet est **modéré** : pas spectaculaire, pas universel, mais réplicable.
 
 Le mécanisme proposé est simple : 50 parties = 1500 décisions sous information incomplète, chacune suivie d'une conséquence immédiate (la réponse adverse révèle si c'était bon). Cette boucle *décision → conséquence → ajustement*, répétée des milliers de fois, recâble la tolérance.
 

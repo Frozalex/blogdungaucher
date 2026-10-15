@@ -244,7 +244,7 @@ Les échecs sont "impossibles" si tu imagines une solution brute : tout explorer
 
 **Pour aller plus loin :** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/), [arXiv](https://arxiv.org/).
 
-**Après lecture :** ouvre ton outil d’analyse, repère le **premier coup** où ta variante et la ligne du moteur divergent de plus d’un demi-pion, puis rejoue **cette position seule** trois fois dans la journée (sans nouvelle partie).
+**Après lecture :** ouvre ton outil d'analyse, repère le **premier coup** où ta variante et la ligne du moteur divergent de plus d'un demi-pion, puis rejoue **cette position seule** trois fois dans la journée (sans nouvelle partie).
 
 ---
 

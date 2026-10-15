@@ -263,7 +263,7 @@ Un texte daté est le seul élément dans toute cette affaire que ton cerveau ne
 
 ---
 
-*Cet article est le hub d'une série de 41 textes sur la psychologie appliquée aux échecs. Il referme les six articles du noyau : [Dunning-Kruger](/fr/blog/effet-dunning-kruger-aux-echecs/), [la dissonance cognitive](/fr/blog/dissonance-cognitive-aux-echecs/), [le biais de confirmation](/fr/blog/biais-de-confirmation-aux-echecs/), [les mécanismes de défense](/fr/blog/mecanismes-de-defense-aux-echecs/), [la rationalisation](/fr/blog/rationalisation-aux-echecs/) et [la projection](/fr/blog/projection-aux-echecs/). Voir [l’index complet de la série](/fr/series/psychologie/).*
+*Cet article est le hub d'une série de 41 textes sur la psychologie appliquée aux échecs. Il referme les six articles du noyau : [Dunning-Kruger](/fr/blog/effet-dunning-kruger-aux-echecs/), [la dissonance cognitive](/fr/blog/dissonance-cognitive-aux-echecs/), [le biais de confirmation](/fr/blog/biais-de-confirmation-aux-echecs/), [les mécanismes de défense](/fr/blog/mecanismes-de-defense-aux-echecs/), [la rationalisation](/fr/blog/rationalisation-aux-echecs/) et [la projection](/fr/blog/projection-aux-echecs/). Voir [l'index complet de la série](/fr/series/psychologie/).*
 
 ## Sources
 

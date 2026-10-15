@@ -205,7 +205,7 @@ Si tu vises une école d'ingénieur, ta problématique doit pouvoir conduire au 
 
 > *« L'idée de base : modéliser le jeu comme un arbre. Chaque nœud est une position, chaque branche un coup possible. Le joueur blanc cherche à maximiser son avantage, le noir à le minimiser : d'où le nom minimax.*
 > 
-> *Voici le code en Python : »*
+> *Voici le code en Python. »*
 
 ![Arbre de jeu minimax à trois niveaux avec alternance de nœuds MAX (Blancs) et MIN (Noirs) jusqu'aux feuilles où s'applique la fonction d'évaluation.](/images/guide-go-nsi-01-arbre-jeu.svg)
 

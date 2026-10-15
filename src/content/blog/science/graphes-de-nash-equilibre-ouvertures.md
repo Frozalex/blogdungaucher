@@ -158,7 +158,7 @@ Le coup "équilibrant" d'une position n'est pas toujours le coup le plus visible
 
 Les deux approches coexistent dans les échecs de haut niveau. Les positions déséquilibrées appelées par certains styles de jeu sont délibérément des tentatives de sortir l'adversaire de ses équilibres confortables pour le placer dans des territoires où son instinct pour l'équilibre est moins fiable. C'est précisément ce qu'analyse en détail [la psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/) sous l'angle de l'attracteur stylistique.
 
-**Après lecture :** pour **une** ouverture que tu joues souvent, note si tu cherches surtout le piège ou l’équilibre stable ; ajuste selon le format (must-win vs nulle acceptable).
+**Après lecture :** pour **une** ouverture que tu joues souvent, note si tu cherches surtout le piège ou l'équilibre stable ; ajuste selon le format (must-win vs nulle acceptable).
 
 ---
 

@@ -96,7 +96,7 @@ La résilience aux échecs, c'est la **capacité à maintenir ou retrouver un en
 
 ## Le style explicatif : comment tu interprètes la défaite
 
-[Martin Seligman](https://en.wikipedia.org/wiki/Martin_Seligman) (University of Pennsylvania) a développé dans les années 1980-1990 le concept de **style explicatif**: la manière habituelle dont une personne explique les événements négatifs qui lui arrivent.
+[Martin Seligman](https://en.wikipedia.org/wiki/Martin_Seligman) (University of Pennsylvania) a développé dans les années 1980-1990 le concept de **style explicatif** : la manière habituelle dont une personne explique les événements négatifs qui lui arrivent.
 
 Il distingue trois dimensions :
 

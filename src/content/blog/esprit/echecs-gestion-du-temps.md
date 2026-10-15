@@ -145,7 +145,7 @@ L'important est d'avoir un seuil explicite *avant*, pas de décider en cours de 
 
 ### Éviter la dépense de temps "émotionnelle"
 
-Une cause fréquente de zeitnot chez les amateurs : réfléchir longuement non pas parce que la position est complexe, mais parce qu'on est **ému**: après un blunder adverse, après avoir raté une combinaison, après avoir reçu un coup inattendu.
+Une cause fréquente de zeitnot chez les amateurs : réfléchir longuement non pas parce que la position est complexe, mais parce qu'on est **ému** : après un blunder adverse, après avoir raté une combinaison, après avoir reçu un coup inattendu.
 
 Ces états émotionnels peuvent pousser à réfléchir longtemps sans réfléchir utile : le cerveau est occupé à gérer les émotions plutôt que la position. La technique : reconnaître l'état émotionnel ("je viens de rater quelque chose, je suis frustré"), prendre 2-3 respirations profondes, puis revenir à la position comme si c'était une position de puzzle vu pour la première fois.
 

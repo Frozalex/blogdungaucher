@@ -168,7 +168,7 @@ Les parties les plus belles de l'histoire des échecs sont souvent des parties c
 
 La beauté aux échecs est peut-être la beauté du chaos maîtrisé : la capacité à voir l'ordre là où tout paraît désordre, à suivre le fil de la logique dans le labyrinthe des bifurcations, à trouver le coup unique qui transforme le chaos en victoire. C'est ce que [Tal] lui-même exprimait quand il disait que ses sacrifices n'étaient pas des paris : ils étaient des calculs que ses adversaires ne pouvaient pas vérifier.
 
-**Après lecture :** dans une partie récente « qui a explosé », identifie **le coup bifurcation** (où la nature de la position a basculé) ; c’est souvent là que l’analyse à froid doit commencer.
+**Après lecture :** dans une partie récente « qui a explosé », identifie **le coup bifurcation** (où la nature de la position a basculé) ; c'est souvent là que l'analyse à froid doit commencer.
 
 ---
 

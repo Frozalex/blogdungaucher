@@ -156,7 +156,7 @@ Les plateformes (Chess.com, Lichess) sont conçues pour minimiser la friction en
 
 Cette absence de friction est neutre techniquement, mais hostile cognitivement. Une bonne pratique en ligne consiste à **réintroduire de la friction artificielle** : fermer l'onglet entre deux parties, faire trois respirations conscientes, ou simplement utiliser un minuteur externe qui te force à t'arrêter après 60 minutes. Ce n'est pas une question de volonté : c'est une question de design.
 
-**Après lecture :** cette semaine, bloque **un jour sans parties en ligne** et une **micro-pause de cinq minutes** toutes les deux sessions d’analyse.
+**Après lecture :** cette semaine, bloque **un jour sans parties en ligne** et une **micro-pause de cinq minutes** toutes les deux sessions d'analyse.
 
 ---
 
@@ -176,7 +176,7 @@ Non. C'est l'erreur la plus courante. Une partie rapide sollicite **exactement l
 
 ### Faut-il prendre des pauses longues même quand on progresse bien ?
 
-Surtout quand tu progresses bien. Le système dopaminergique se désensibilise plus vite quand la récompense est régulière (progression visible): c'est le paradoxe du "burnout des bons élèves". Les joueurs qui progressent vite jusqu'à 1800-2000 Elo et abandonnent souvent ensuite sont ceux qui n'ont jamais pris de pause structurée. Une pause de 5-7 jours tous les 2-3 mois maintient la motivation intrinsèque sur plusieurs années.
+Surtout quand tu progresses bien. Le système dopaminergique se désensibilise plus vite quand la récompense est régulière (progression visible) : c'est le paradoxe du "burnout des bons élèves". Les joueurs qui progressent vite jusqu'à 1800-2000 Elo et abandonnent souvent ensuite sont ceux qui n'ont jamais pris de pause structurée. Une pause de 5-7 jours tous les 2-3 mois maintient la motivation intrinsèque sur plusieurs années.
 
 ### Le café aide-t-il vraiment à compenser la fatigue ?
 

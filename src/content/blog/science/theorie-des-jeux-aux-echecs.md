@@ -158,7 +158,7 @@ Cette asymétrie subjective transforme les échecs, en pratique, en jeu à infor
 
 ## Le paradoxe Bobby Fischer : pourquoi le joueur le plus prévisible du XXe siècle a gagné
 
-La théorie des jeux dit : diversifie tes ouvertures, sinon tu deviens prévisible et tu te fais préparer. C'est ce qu'on appelle une **stratégie mixte**: jouer plusieurs lignes avec des probabilités variées plutôt que la même à chaque fois.
+La théorie des jeux dit : diversifie tes ouvertures, sinon tu deviens prévisible et tu te fais préparer. C'est ce qu'on appelle une **stratégie mixte** : jouer plusieurs lignes avec des probabilités variées plutôt que la même à chaque fois.
 
 Bobby Fischer a joué **1.e4** dans presque toutes ses parties.
 

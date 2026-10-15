@@ -96,7 +96,7 @@ Quand le cerveau perçoit un enjeu (une partie importante, un adversaire redout�
 
 Cette réponse est conçue pour vous sauver la vie face à un prédateur physique. Pour les échecs, le résultat est ambivalent.
 
-À des niveaux modérés, le cortisol améliore effectivement certaines fonctions cognitives. La mémoire à court terme est légèrement boostée. La vigilance augmente. Le temps de traitement des informations visuelles s'accélère. C'est l'**eustress**: le stress utile qui explique pourquoi beaucoup de joueurs reconnaissent jouer "mieux" quand l'enjeu est réel.
+À des niveaux modérés, le cortisol améliore effectivement certaines fonctions cognitives. La mémoire à court terme est légèrement boostée. La vigilance augmente. Le temps de traitement des informations visuelles s'accélère. C'est l'**eustress** : le stress utile qui explique pourquoi beaucoup de joueurs reconnaissent jouer "mieux" quand l'enjeu est réel.
 
 Mais il existe un seuil. Au-delà, le même cortisol commence à impair précisément les fonctions dont les échecs ont le plus besoin : la mémoire de travail (maintenir plusieurs variantes en tête simultanément), le cortex préfrontal dorsolatéral (planification à long terme, inhibition des coups impulsifs), et la flexibilité cognitive (changer de plan face à une réponse inattendue).
 

@@ -279,7 +279,7 @@ La théorie qui organise tout ça est plus fragile qu'elle n'en a l'air, et le D
 
 ---
 
-*Cet article fait partie d'une série consacrée à la psychologie appliquée aux échecs. Deux mécanismes inventoriés ici auront leur article dédié : la rationalisation et la projection. Voir aussi [la dissonance cognitive aux échecs](/fr/blog/dissonance-cognitive-aux-echecs/) et [l'effet Dunning-Kruger aux échecs](/fr/blog/effet-dunning-kruger-aux-echecs/). Voir [l’index complet de la série](/fr/series/psychologie/).*
+*Cet article fait partie d'une série consacrée à la psychologie appliquée aux échecs. Deux mécanismes inventoriés ici auront leur article dédié : la rationalisation et la projection. Voir aussi [la dissonance cognitive aux échecs](/fr/blog/dissonance-cognitive-aux-echecs/) et [l'effet Dunning-Kruger aux échecs](/fr/blog/effet-dunning-kruger-aux-echecs/). Voir [l'index complet de la série](/fr/series/psychologie/).*
 
 ## Sources
 

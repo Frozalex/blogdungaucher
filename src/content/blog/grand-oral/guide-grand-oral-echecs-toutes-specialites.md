@@ -186,7 +186,7 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 **0:00–1:00, Intro :** le joueur d'échecs aveugle (jouer sans voir l'échiquier) comme cas-limite de la mémoire. 35-40 parties simultanées à l'aveugle pour les meilleurs.
 
-**1:00–4:00, La mémoire de travail et les chunks :** l'expérience de Chase et Simon (1973): les Grands Maîtres reconnaissent 50 000 à 100 000 patterns (chunks), pas des pièces isolées. La mémoire de travail traite des unités complexes, pas des données brutes. Lien au programme SVT : mémoire explicite (hippocampe) vs mémoire procédurale (cervelet, ganglions de la base).
+**1:00–4:00, La mémoire de travail et les chunks :** l'expérience de Chase et Simon (1973) : les Grands Maîtres reconnaissent 50 000 à 100 000 patterns (chunks), pas des pièces isolées. La mémoire de travail traite des unités complexes, pas des données brutes. Lien au programme SVT : mémoire explicite (hippocampe) vs mémoire procédurale (cervelet, ganglions de la base).
 
 **4:00–7:00 (Neuroplasticité et IRM :** l'étude de Hänggi (2014)) le précunéus et le lobe temporal supérieur ont un volume de matière grise plus important chez les Grands Maîtres. La pratique intense modifie la structure cérébrale. Lien au programme SVT : synaptogenèse, plasticité synaptique, LTP (long-term potentiation).
 
@@ -224,7 +224,7 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 **1:00–4:00, L'échiquier comme métaphore du destin :** dans le *Livre des rois* (Ferdowsi), les pièces d'échecs illustrent la prédestination divine : les êtres humains sont des pièces déplacées par Dieu. Dans la poésie persane classique et chez Borges (*Échecs*, 1960), l'échiquier est une mise en abyme du cosmos : le joueur déplace les pièces, mais qui déplace le joueur ? La métaphore révèle l'angoisse du déterminisme.
 
-**4:00–7:00, Le joueur d'échecs comme figure de l'intelligence solitaire :** Zweig, *Le Joueur d'échecs*: le personnage de Dr. B. apprend les échecs par cœur pour survivre à l'isolement nazi. L'intelligence aux échecs comme refuge de l'humanité contre la brutalité. Mais aussi folie : l'enfermement dans le jeu mène à la dissociation. La littérature montre que la maîtrise absolue du calcul coûte quelque chose d'humain.
+**4:00–7:00, Le joueur d'échecs comme figure de l'intelligence solitaire :** Zweig, *Le Joueur d'échecs* : le personnage de Dr. B. apprend les échecs par cœur pour survivre à l'isolement nazi. L'intelligence aux échecs comme refuge de l'humanité contre la brutalité. Mais aussi folie : l'enfermement dans le jeu mène à la dissociation. La littérature montre que la maîtrise absolue du calcul coûte quelque chose d'humain.
 
 **7:00–9:00, La dimension politique de la métaphore :** dans *Queen's Gambit* (Tevis, 1983 / série Netflix 2020), Beth Harmon conquiert le monde des échecs dominé par les hommes. La partie d'échecs devient métaphore de l'émancipation sociale. Les pièces ont un genre : la reine est la plus puissante, mais elle protège un roi. La critique féministe de la structure du jeu est une entrée en littérature.
 
@@ -245,7 +245,7 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 > *"[Ta problématique] mobilise directement [la notion centrale de ta spécialité]. Je pars des échecs comme terrain d'observation, mais la question finale revient à [la notion]. C'est la même démarche que d'utiliser un exemple concret pour illustrer un concept théorique : l'exemple n'est pas le sujet, il le révèle."*
 
 **Q3. Qu'est-ce que tu n'aurais pas eu le temps de développer dans les 10 minutes ?**
-> *"[Cite un point réel que tu as coupé]. J'aurais aimé développer [un aspect supplémentaire]: par exemple [exemple concret]. Mais pour respecter la durée et la cohérence de la progression, j'ai choisi de l'écarter. C'est un choix éditorial assumé."*
+> *"[Cite un point réel que tu as coupé]. J'aurais aimé développer [un aspect supplémentaire] : par exemple [exemple concret]. Mais pour respecter la durée et la cohérence de la progression, j'ai choisi de l'écarter. C'est un choix éditorial assumé."*
 
 **Q4. Quelles sont les limites de ton exposé ?**
 > *"Deux limites principales. D'abord, j'ai utilisé les échecs comme terrain unique : on pourrait se demander si les conclusions sont généralisables à d'autres jeux ou domaines. Ensuite, les études que je cite sont parfois observationnelles, pas expérimentales : la causalité est difficile à établir. Un exposé plus développé prendrait le temps de nuancer ces points."*
@@ -263,16 +263,16 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 > *"En [année], [événement actuel lié aux échecs ou à la notion centrale]. Cela illustre que la question que je pose n'est pas purement académique : elle a des résonances contemporaines dans [domaine]. Par exemple, [lien avec actualité]."*
 
 **Q9. Qu'est-ce qui t'a surpris en préparant ce sujet ?**
-> *"Ce qui m'a le plus surpris, c'est [découverte authentique pendant la préparation]. Je m'attendais à [ce que tu pensais au début], et j'ai découvert que [ce que tu as appris]. Ça a changé ma perspective sur [la notion]: c'est d'ailleurs ce qui m'a poussé à [ajustement dans l'exposé]."*
+> *"Ce qui m'a le plus surpris, c'est [découverte authentique pendant la préparation]. Je m'attendais à [ce que tu pensais au début], et j'ai découvert que [ce que tu as appris]. Ça a changé ma perspective sur [la notion] : c'est d'ailleurs ce qui m'a poussé à [ajustement dans l'exposé]."*
 
 **Q10. Si tu refaisais cet exposé, qu'est-ce que tu changerais ?**
-> *"Je développerais davantage [un point spécifique]: j'ai senti que je l'avais traité trop rapidement. Et je commencerais par [l'accroche la plus forte], qui m'a semblé captiver davantage que l'introduction initiale. Mais dans l'ensemble, je maintiens la structure en trois parties : elle correspond à une progression logique."*
+> *"Je développerais davantage [un point spécifique] : j'ai senti que je l'avais traité trop rapidement. Et je commencerais par [l'accroche la plus forte], qui m'a semblé captiver davantage que l'introduction initiale. Mais dans l'ensemble, je maintiens la structure en trois parties : elle correspond à une progression logique."*
 
 **Q11. Quelle est la différence entre un champion d'échecs et un expert dans ta spécialité ?**
 > *"Les deux formes d'expertise partagent [caractéristiques communes : pattern recognition, mémoire de long terme, délibération structurée]. Mais [une différence importante : l'expert en médecine/droit/etc. doit gérer des incertitudes différentes / l'expert en philosophie ne gagne pas au sens sportif, etc.]. Ce parallèle est utile pour penser ce qu'est l'expertise en général."*
 
 **Q12. Y a-t-il des études scientifiques qui contredisent ta position ?**
-> *"La méta-analyse de [Sala et Gobet, 2016] sur le transfert cognitif des échecs montre que les bénéfices aux tests standardisés sont moins robustes que certaines études isolées le suggèrent. Ce n'est pas une contradiction directe de [ma thèse]: qui porte sur [angle précis], pas sur le transfert général. Mais cela m'impose d'être prudent sur les généralisations."*
+> *"La méta-analyse de [Sala et Gobet, 2016] sur le transfert cognitif des échecs montre que les bénéfices aux tests standardisés sont moins robustes que certaines études isolées le suggèrent. Ce n'est pas une contradiction directe de [ma thèse] : qui porte sur [angle précis], pas sur le transfert général. Mais cela m'impose d'être prudent sur les généralisations."*
 
 **Q13. Peut-on réduire [le concept central de ton exposé] à un algorithme ?**
 > *"C'est la question profonde. Pour [concept], la réduction algorithmique est [possible / impossible / partielle] parce que [raison précise]. AlphaZero joue aux échecs sans avoir de conscience, mais cela ne signifie pas que la conscience n'existe pas, seulement qu'elle n'est pas nécessaire à la performance. La réductibilité de la performance n'implique pas la réductibilité de l'expérience."*

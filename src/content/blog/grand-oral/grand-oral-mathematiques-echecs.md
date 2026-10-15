@@ -237,7 +237,7 @@ def minimax(position, profondeur, est_max):
 
 L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)) et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer. En pratique, il réduit la complexité effective de $O(b^d)$ à environ $O(b^{d/2})$ ; pour $b = 35$ et $d = 10$, le nombre de nœuds passe d'environ $2{,}7 \times 10^{15}$ à $\sim 5{,}2 \times 10^7$. C'est un résultat d'algorithmique accessible en terminale NSI.
 
-#### Code (NSI)  -  alpha-bêta (l’optimisation “visible”)
+#### Code (NSI)  -  alpha-bêta (l'optimisation "visible")
 
 ```python
 def alpha_beta(position, profondeur, alpha, beta, est_max):

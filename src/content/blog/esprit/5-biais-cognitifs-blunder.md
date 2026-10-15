@@ -14,7 +14,7 @@ seoTitle: "5 biais cognitifs qui causent des blunders aux échecs"
 seoDescription: "Les 5 biais cognitifs qui causent le plus de blunders aux échecs. Psychologie de l'erreur, Kahneman et comment entraîner son cerveau à les éviter."
 ---
 
-Tu as tout calculé  -  enfin, tu le croyais. Puis le blunder : « comment j’ai pu rater ça ? » Rarement par manque de temps au calculateur ; presque toujours parce que **le cerveau a tranché avec un biais**, pas avec une erreur de variante. La science cognitive a cartographié ces dérives ; cinq d’entre elles collent particulièrement à l’échiquier.
+Tu as tout calculé  -  enfin, tu le croyais. Puis le blunder : « comment j'ai pu rater ça ? » Rarement par manque de temps au calculateur ; presque toujours parce que **le cerveau a tranché avec un biais**, pas avec une erreur de variante. La science cognitive a cartographié ces dérives ; cinq d'entre elles collent particulièrement à l'échiquier.
 
 *Cet article sert de porte d'entrée à notre série sur la psychologie appliquée aux échecs. Chaque biais renvoie, quand il existe, vers son article dédié.*
 
@@ -98,6 +98,6 @@ Pour le joueur d'échecs, la conséquence est importante : connaître ces cinq b
 
 L'entraînement de la pensée échiquéenne n'est pas seulement l'entraînement du calcul. C'est l'entraînement de la vigilance sur ses propres processus cognitifs. C'est ce que les psychologues appellent la métacognition : penser sur sa propre pensée. Et c'est peut-être la compétence la plus précieuse que les échecs peuvent développer.
 
-**Après lecture :** choisis **un** biais qui t’a coûté une partie récente ; pendant les trois prochaines sessions, pose la **même question de contrôle** avant chaque coup important (ex. « quelle autre idée j’écarte ? » pour l’Einstellung).
+**Après lecture :** choisis **un** biais qui t'a coûté une partie récente ; pendant les trois prochaines sessions, pose la **même question de contrôle** avant chaque coup important (ex. « quelle autre idée j'écarte ? » pour l'Einstellung).
 
 ---

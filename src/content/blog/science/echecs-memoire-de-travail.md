@@ -128,7 +128,7 @@ Pourquoi les Grands Maîtres semblent-ils avoir une mémoire de travail bien sup
 
 Ils ne l'ont pas, fondamentalement. Leur mémoire de travail "brute" (mesurée sur des tâches neutres sans rapport avec les échecs) est comparable à celle des non-joueurs du même groupe d'âge et d'éducation.
 
-Ce qu'ils ont, c'est une bibliothèque de **chunks**: des configurations de pièces stockées en mémoire à long terme comme unités. Quand un expert voit la position, il ne la décompose pas en 20 pièces individuelles. Il la reconnaît comme "roque court classique + cavalier sur f6 + structure de pions sicilienne typique", 3 chunks au lieu de 20 éléments.
+Ce qu'ils ont, c'est une bibliothèque de **chunks** : des configurations de pièces stockées en mémoire à long terme comme unités. Quand un expert voit la position, il ne la décompose pas en 20 pièces individuelles. Il la reconnaît comme "roque court classique + cavalier sur f6 + structure de pions sicilienne typique", 3 chunks au lieu de 20 éléments.
 
 Cette compression libère de la capacité de mémoire de travail pour le calcul de variantes nouvelles. L'expert n'a pas besoin de maintenir mentalement toutes les pièces de la position : il a stocké la "position de base" comme chunk et peut récupérer les détails depuis la mémoire à long terme quand nécessaire.
 

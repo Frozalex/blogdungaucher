@@ -143,7 +143,7 @@ Les études génétiques sur l'intelligence et les capacités cognitives utilise
 
 **Les études GWAS** (Genome-Wide Association Studies). Elles analysent des centaines de milliers de variants génétiques (SNPs) dans des populations de dizaines de milliers d'individus pour identifier ceux associés à un trait. Pour le QI, les études GWAS récentes (Lee et al., 2018, *Nature Genetics*, n=1.1 million) identifient des centaines de loci significatifs, mais chacun n'explique qu'une infime fraction de la variance.
 
-L'implication : l'intelligence (et par extension, les capacités aux échecs) est un trait **polygénique**: influencé par des milliers de gènes avec des effets individuels minuscules. Il n'y a pas de "gène de l'intelligence" ou de "gène des échecs" : il y a des milliers de petites contributions génétiques qui s'accumulent.
+L'implication : l'intelligence (et par extension, les capacités aux échecs) est un trait **polygénique** : influencé par des milliers de gènes avec des effets individuels minuscules. Il n'y a pas de "gène de l'intelligence" ou de "gène des échecs" : il y a des milliers de petites contributions génétiques qui s'accumulent.
 
 ![Méthode des jumeaux pour estimer l'héritabilité du QI : corrélation ~0,80 chez les monozygotes (100 % ADN commun) contre ~0,40 chez les dizygotes (50 %), soit une héritabilité estimée à 54–66 % chez l'adulte (Polderman et al., 2015).](/images/echecs-genetique-02-heritabilite-jumeaux.svg)
 
