@@ -1,5 +1,5 @@
 ---
-title: Découvrez le pouvoir des échecs sur votre mémoire
+title: "Échecs et mémoire : mémoire de travail, chunks et parties qui restent"
 excerpt: >-
   Mémoire de travail, chunks, ouvertures, parties oubliées ou gravées : ce que la psychologie cognitive et les
   neurosciences disent vraiment du lien entre échecs et mémoire, et comment t'entraîner pour que ça compte.

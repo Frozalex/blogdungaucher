@@ -40,7 +40,7 @@ keyTakeaways:
     La controverse Niemann-Carlsen (2022) est devenue un événement médiatique mondial via les réseaux sociaux :
     démontrant que les échecs avaient atteint la masse critique pour générer des dramas viraux à l'échelle de l'internet
     grand public.
-seoTitle: "Échecs et streaming : Twitch et YouTube révolutionnent le jeu"
+seoTitle: "Échecs et streaming : comment Twitch et YouTube ont révolutionné le jeu"
 seoDescription: >-
   Streaming et échecs : Hikaru Nakamura, GothamChess, Botez, Chess.com et Twitch. Comment le streaming a transformé les échecs en phénomène viral et démocratisé le jeu.
 ogImage: /images/og/echecs-et-streaming-og.webp

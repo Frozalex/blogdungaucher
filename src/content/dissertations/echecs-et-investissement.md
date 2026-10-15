@@ -5,7 +5,7 @@ publishDate: "2026-05-26"
 author: "Le Gaucher"
 readingTime: "6 min"
 tags: ["échecs", "investissement", "finance", "stratégie", "biais cognitifs", "dissertation"]
-seoTitle: "Échecs et investissement : la pratique des échecs prépare-t-elle à investir ?"
+seoTitle: "Échecs et investissement : la pratique des échecs prépare-t-elle à l'investissement ?"
 seoDescription: "Dissertation : dans quelle mesure les échecs préparent-ils à l'investissement ? Patience, calcul, gestion du risque. Parentés réelles et limites du transfert."
 ---
 
