@@ -51,13 +51,13 @@ Commençons par les **données**. La Fédération internationale des échecs, la
 
 Cette première donnée chiffrée est frappante. C'est un taux de professionnalisation de l'ordre de zéro virgule un cinq pour cent. Le marché concentre donc une grande masse de pratiquants amateurs et une élite extrêmement restreinte. Cette structure se rapproche de celle qu'on observe dans la musique classique, le tennis professionnel, ou les arts plastiques.
 
-Du côté des revenus, les écarts sont vertigineux. Le tournoi des Candidats de deux mille vingt-quatre offrait une dotation totale de cinq cent mille euros, répartie entre huit joueurs. Le champion du monde Magnus Carlsen génère environ dix millions d'euros par an, en combinant gains de tournois, sponsoring, droits d'image et revenus de plateformes. Hikaru Nakamura, principalement actif sur Twitch et YouTube, génère entre deux et trois millions de dollars par an grâce à un audience de plus d'un million et demi d'abonnés.
+Du côté des revenus, les écarts sont vertigineux. Le tournoi des Candidats de deux mille vingt-quatre offrait une dotation totale d'un demi-million de dollars, répartie entre huit joueurs. Magnus Carlsen, numéro un mondial au classement Elo, cumule gains de tournois, sponsoring, droits d'image et revenus de plateformes : les estimations de presse situent son revenu annuel autour de dix millions d'euros, sans qu'aucun chiffre officiel ne vienne les confirmer. Hikaru Nakamura, principalement actif sur Twitch et YouTube, tire l'essentiel de ses revenus d'une audience de plusieurs millions d'abonnés cumulés, selon les mêmes estimations de presse.
 
 À l'autre bout du spectre, un joueur classé deux mille six cents Elo, qui est pourtant dans l'élite mondiale du top trois cents, peut ne générer aucun revenu de notoriété et survivre principalement par l'enseignement, à hauteur de quinze à trente mille euros par an. L'écart entre les deux extrêmes est donc d'un facteur cent à mille.
 
-Cette **donnée** est typique d'un marché à très forte concentration. Pour la quantifier rigoureusement, on peut citer l'indice de Gini, qui mesure l'inégalité des revenus : il est probablement supérieur à zéro virgule sept dans le marché des joueurs d'échecs professionnels, soit plus que l'indice de Gini du Brésil ou de l'Afrique du Sud, qui sont parmi les pays les plus inégalitaires du monde.
+Cette **donnée** est typique d'un marché à très forte concentration. L'outil qui permettrait de la quantifier est l'indice de Gini, qui mesure l'inégalité d'une distribution de revenus. Attention toutefois à ce que tu affirmes devant le jury : personne n'a publié d'indice de Gini du marché des joueurs d'échecs professionnels, faute de données de revenus exhaustives. Dis plutôt que la distribution observée, moins de trois cents professionnels sur deux cent mille classés et un facteur cent à mille entre les extrêmes, est caractéristique d'une concentration que l'indice de Gini mesurerait à un niveau très élevé. Un jury de SES valorisera bien davantage cette prudence méthodologique qu'un chiffre avancé au hasard.
 
-![Pyramide des revenus des joueurs d'échecs : moins de 300 professionnels sur 200 000 classés FIDE, avec un facteur 100 à 1000 d'écart entre la base et les superstars comme Carlsen à 10 millions d'euros par an.](/images/sujet-marche-superstars-01-concentration-revenus.svg)
+![Pyramide des revenus des joueurs d'échecs : moins de 300 professionnels sur 200 000 classés FIDE, avec un facteur 100 à 1000 d'écart entre la base et les superstars du sommet.](/images/sujet-marche-superstars-01-concentration-revenus.svg)
 
 ## L'économie des superstars et la rente différentielle
 
@@ -83,7 +83,7 @@ Première **limite** : elle ne dit rien sur la légitimité morale de cette dist
 
 Deuxième **limite** : la théorie suppose un marché global, alors qu'historiquement les échecs ont été nationaux. Pendant la guerre froide, l'URSS finançait ses champions par l'État, sans logique de marché. Le système des écoles soviétiques d'échecs, opérationnel de mille neuf cent quarante-huit à mille neuf cent quatre-vingt-onze, est l'**exemple** d'un mode d'organisation alternatif où le marché ne joue pas. Cuba opère encore aujourd'hui sur ce modèle. Le marché des superstars n'est donc pas une fatalité économique, c'est un choix institutionnel.
 
-Troisième **limite** : l'arrivée du numérique transforme profondément la structure. Avant **internet**, les revenus des joueurs venaient essentiellement des tournois et des livres. Aujourd'hui, ils viennent en grande partie du streaming (Twitch, YouTube), des plateformes (Chess.com revendique cent cinquante millions d'inscrits en deux mille vingt-quatre), et du contenu pédagogique en ligne. Cette plateformisation amplifie certaines tendances et en crée de nouvelles.
+Troisième **limite** : l'arrivée du numérique transforme profondément la structure. Avant **internet**, les revenus des joueurs venaient essentiellement des tournois et des livres. Aujourd'hui, ils viennent en grande partie du streaming (Twitch, YouTube), des plateformes (Chess.com revendiquait deux cents millions de membres en avril deux mille vingt-cinq, et deux cent cinquante millions début deux mille vingt-six), et du contenu pédagogique en ligne. Cette plateformisation amplifie certaines tendances et en crée de nouvelles.
 
 Trois effets se cumulent. Premier effet, démocratisation de l'accès : Chess.com et Lichess offrent des **données** et des outils gratuitement, ce qui réduit les barrières à l'entrée. Deuxième effet, concentration des revenus : les algorithmes de recommandation amplifient les figures déjà connues, créant un effet boule de neige. Troisième effet, émergence de nouveaux talents non joueurs : des streamers comme Levy Rozman, qui n'est pas dans le top mondial sur l'échiquier, génèrent des revenus comparables aux meilleurs joueurs grâce à leur production de contenu. C'est un brouillage des frontières classiques du marché.
 
@@ -96,6 +96,16 @@ Pour répondre à ma **question** initiale, le marché des joueurs d'échecs ill
 Les **limites** sont importantes : la théorie ne traite pas la question morale, ne couvre pas les modes d'organisation non marchands (modèle soviétique), et est en cours de redéfinition par la plateformisation numérique. Pour aller plus loin, on peut se demander si ce qu'on observe aux échecs préfigure ce qui se passera dans d'autres secteurs créatifs et intellectuels touchés par la même logique de diffusion : musique, écriture, journalisme. Les échecs sont peut-être un laboratoire d'observation pour comprendre l'économie du vingt-et-unième siècle.
 
 Je vous remercie pour votre attention et je suis prêt à répondre à vos **questions**.
+
+## Sources
+
+- Rosen, S. (1981). *The Economics of Superstars*. **American Economic Review**, 71(5), 845-858. [PDF intégral](https://milescorak.com/wp-content/uploads/2018/09/rosen-1981-aer-economics-superstars.pdf) — l'article fondateur, à citer nommément devant le jury.
+- Ricardo, D. (1817). *On the Principles of Political Economy and Taxation*. Chapitre II, « On Rent ». Domaine public, [texte intégral sur Project Gutenberg](https://www.gutenberg.org/ebooks/33310).
+- Becker, G. S. (1964). *Human Capital: A Theoretical and Empirical Analysis*. University of Chicago Press.
+- **FIDE**, [liste de classement officielle](https://ratings.fide.com/) — pour vérifier le nombre de joueurs classés et le classement du jour, qui bouge tous les mois.
+- TechCrunch (24 avril 2025). [*Chess.com reaches 200 million members*](https://techcrunch.com/2025/04/24/chess-com-reaches-200-million-members/).
+
+> **Prudence sur les revenus.** Les montants attribués à Carlsen ou Nakamura viennent d'estimations de presse, jamais de comptes publiés. Devant un jury de SES, présente-les comme des ordres de grandeur et dis d'où ils sortent : c'est la différence entre un chiffre et une donnée.
 
 ---
 
