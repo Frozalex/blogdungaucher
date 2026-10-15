@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="z4">
-  <title id="z4">Dualité DTM et DTZ dans les tablebases : pour une même finale gagnante, DTM (distance au mat) peut valoir 517 coups tandis que DTZ (distance au prochain coup de pion ou prise) vaut 7 coups, illustrant que la vérité mathématique de Zermelo dépend du critère choisi pour définir « gagner ».</title>
+  <title id="z4">Dualité DTM et DTZ dans les tablebases : le plus long mat forcé connu à sept pièces demande 549 coups (DTM), alors que la distance au prochain coup irréversible (DTZ) se compte en quelques coups, illustrant que la vérité mathématique de Zermelo dépend du critère choisi pour définir « gagner ».</title>
   <rect width="640" height="360" fill="#faf8ef"/>
   <text x="320" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="#1c1a16">DTM vs DTZ : deux vérités pour une même finale</text>
 
@@ -9,8 +9,8 @@
   <rect x="40" y="75" width="255" height="18" rx="0" fill="#c9c2b4"/>
   <text x="167" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#1c1a16">DTM : Distance to Mate</text>
 
-  <text x="167" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="800" fill="#9b9384">517</text>
-  <text x="167" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6e6a64">coups jusqu'au mat forcé</text>
+  <text x="167" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="800" fill="#9b9384">549</text>
+  <text x="167" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6e6a64">coups : le plus long mat connu</text>
 
   <line x1="60" y1="165" x2="275" y2="165" stroke="#c9c2b4" stroke-width="1"/>
   <text x="167" y="185" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6e6a64">Vérité théorique absolue</text>
@@ -31,9 +31,9 @@
   <rect x="345" y="75" width="255" height="18" rx="0" fill="#eef3e9"/>
   <text x="472" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#2e7d34">DTZ : Distance to Zero</text>
 
-  <text x="472" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="800" fill="#3d8b37">7</text>
-  <text x="472" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6e6a64">coups jusqu'à la prochaine</text>
-  <text x="472" y="159" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6e6a64">prise ou poussée de pion</text>
+  <text x="472" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="800" fill="#3d8b37">&lt;10</text>
+  <text x="472" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6e6a64">quelques coups jusqu'à la</text>
+  <text x="472" y="159" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6e6a64">prochaine prise ou poussée</text>
 
   <line x1="365" y1="175" x2="580" y2="175" stroke="#c9c2b4" stroke-width="1"/>
   <text x="472" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6e6a64">Remet à zéro la règle des 50 coups</text>

@@ -47,13 +47,13 @@ faq:
       des échecs au sens strict est plus probablement un horizon que jamais atteint.
 ---
 
-En 1913, lors du cinquième Congrès International des Mathématiciens à Cambridge, le mathématicien allemand [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) a présenté un résultat qui allait changer la façon dont les mathématiciens, et plus tard les informaticiens, pensent aux jeux de stratégie. Son théorème est court. Sa démonstration est élégante. Et ses implications aux échecs sont à la fois rassurantes et vertigineuses.
+En 1912, lors du cinquième Congrès International des Mathématiciens à Cambridge, le mathématicien allemand [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) a présenté un résultat qui allait changer la façon dont les mathématiciens, et plus tard les informaticiens, pensent aux jeux de stratégie. Son théorème est court. Sa démonstration est élégante. Et ses implications aux échecs sont à la fois rassurantes et vertigineuses.
 
 ## Ernst Zermelo et la théorie des ensembles
 
 Avant de parler des échecs, il faut comprendre qui était Zermelo. Il est principalement connu pour ses contributions fondamentales à la théorie des ensembles, en particulier l'[axiome du choix](https://fr.wikipedia.org/wiki/Axiome_du_choix) et les [axiomes de Zermelo-Fraenkel](https://fr.wikipedia.org/wiki/Axiomes_de_Zermelo-Fraenkel) qui constituent encore aujourd'hui les fondements standard des mathématiques.
 
-En 1913, son intérêt pour les échecs n'était pas anodin. Les mathématiciens de l'époque cherchaient à formaliser le raisonnement logique dans des systèmes aussi rigoureux que possible. Les jeux de stratégie parfaite représentaient un terrain idéal : des règles précises, un nombre fini d'états, pas de hasard. La question naturelle était : existe-t-il, en théorie, une façon "parfaite" de jouer ?
+Son intérêt pour les échecs n'était pas anodin. Les mathématiciens de l'époque cherchaient à formaliser le raisonnement logique dans des systèmes aussi rigoureux que possible. Les jeux de stratégie parfaite représentaient un terrain idéal : des règles précises, un nombre fini d'états, pas de hasard. La question naturelle était : existe-t-il, en théorie, une façon "parfaite" de jouer ?
 
 ## Le théorème de Zermelo : énoncé et démonstration
 
@@ -63,7 +63,7 @@ Le théorème de Zermelo s'applique à une classe de jeux qui incluent les éche
 
 ![Les trois issues déterminées par Zermelo : victoire forcée des Blancs, victoire forcée des Noirs, ou nulle forcée — la nulle étant l'hypothèse dominante non prouvée à ce jour.](/images/zermelo-01-trois-issues.svg)
 
-La démonstration utilise une **induction rétrograde** (*backward induction*) sur la longueur maximale possible de la partie. C'est exactement le même mécanisme que la version moderne de [minimax aux échecs](/fr/blog/minimax-aux-echecs/), à 35 ans d'écart : Zermelo l'a formulé pour les mathématiciens, Shannon (1950) l'a réutilisé tel quel pour les premiers programmes.
+La démonstration utilise une **induction rétrograde** (*backward induction*) sur la longueur maximale possible de la partie. C'est exactement le même mécanisme que la version moderne de [minimax aux échecs](/fr/blog/minimax-aux-echecs/), à 37 ans d'écart : Zermelo l'a formulé pour les mathématiciens, Shannon (1950) l'a réutilisé tel quel pour les premiers programmes.
 
 Imagine une fin de partie atteinte. Chaque position terminale est soit une victoire pour Blanc, soit une victoire pour Noir, soit une nulle. Maintenant, remontons d'un coup. Si c'est le tour de Blanc, il peut choisir parmi les positions terminales qui lui sont accessibles celle qui lui est la plus favorable. De même pour Noir. En remontant récursivement ainsi depuis toutes les positions terminales jusqu'à la position initiale, chaque position dans l'arbre du jeu reçoit une valeur définie : victoire Blanc, victoire Noir, ou nulle.
 
@@ -99,15 +99,15 @@ Si résoudre les échecs en entier est impossible, il existe un domaine où la r
 
 Les [bases de données de fins de partie](https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_d%27%C3%A9checs) (tablebases) développées par Ken Thompson puis Marc Bourzutschky et d'autres ont résolu toutes les fins de partie jusqu'à sept pièces sur l'échiquier. Ce travail monumental a révélé des résultats surprenants.
 
-La fin de partie Roi-Dame-Tour contre Roi-Dame, par exemple, avait été longtemps considérée comme nulle. Les tablebases ont révélé que dans certaines configurations, un camp peut forcer la victoire en... 517 coups. Aucun humain, même le meilleur Grand Maître du monde, ne pourrait trouver ce chemin par raisonnement propre. La profondeur de la vérité échiquéenne dans ces configurations dépasse largement les capacités humaines.
+En mai 2006, Marc Bourzutschky et Yakov Konoval ont ainsi trouvé une position Roi-Dame-Cavalier contre Roi-Tour-Fou-Cavalier où la conversion forcée demande 517 coups. Le record est tombé depuis : en 2012, l'achèvement des tablebases Lomonosov à sept pièces a mis au jour un mat forcé en **549 coups**, règle des 50 coups ignorée. Aucun humain, même le meilleur Grand Maître du monde, ne pourrait trouver ce chemin par raisonnement propre, et aucun moteur ne le joue correctement sans accès à la tablebase. La profondeur de la vérité échiquéenne dans ces configurations dépasse largement les capacités humaines.
 
 Ce résultat est instructif. Il montre que ton intuition sur ce qui est « gagné » ou « nul » peut être profondément erronée quand tu t'éloignes des positions familières. Il renforce le mystère de Zermelo : la vérité existe, mais elle peut se cacher à des profondeurs qui défient l'entendement humain.
 
 ### Le saut DTM / DTZ : deux vérités pour une même position
 
-Les tablebases distinguent deux mesures de la "victoire forcée" : DTM (*Distance to Mate*, distance au mat) et DTZ (*Distance to Zero*, distance au prochain coup de pion ou prise qui remet à zéro le compteur des 50 coups). Une même finale gagnante peut avoir DTM = 517 et DTZ = 7 : il existe un coup qui simplifie la victoire en sept demi-coups si l'on accepte de "perdre" la victoire mathématique au profit d'une victoire plus courte mais accessible. Cette dualité illustre quelque chose de profond sur Zermelo : la **vérité mathématique** d'une position dépend du critère choisi pour "gagner", et l'humanité joue presque toujours avec un critère pratique (gagner avant la pendule, avant la fatigue) très différent du critère théorique.
+Les tablebases distinguent deux mesures de la "victoire forcée" : DTM (*Distance to Mate*, distance au mat) et DTZ (*Distance to Zero*, distance au prochain coup de pion ou prise qui remet à zéro le compteur des 50 coups). Les deux nombres n'ont rien à voir : une position dont le mat optimal est à plusieurs centaines de coups peut n'être qu'à quelques coups d'une prise ou d'une poussée de pion, c'est-à-dire d'une simplification qui remet le compteur à zéro. Suivre le DTZ, c'est accepter de renoncer au chemin mathématiquement optimal pour un chemin jouable. Cette dualité illustre quelque chose de profond sur Zermelo : la **vérité mathématique** d'une position dépend du critère choisi pour "gagner", et l'humanité joue presque toujours avec un critère pratique (gagner avant la pendule, avant la fatigue) très différent du critère théorique.
 
-![DTM vs DTZ dans les tablebases : une même finale gagnante peut nécessiter 517 coups jusqu'au mat (DTM) mais seulement 7 coups jusqu'au prochain coup remettant le compteur à zéro (DTZ) — deux vérités pour une même position selon le critère choisi.](/images/zermelo-04-dtm-dtz.svg)
+![DTM vs DTZ dans les tablebases : le plus long mat forcé connu à sept pièces demande 549 coups, alors que la distance au prochain coup irréversible se compte en quelques coups. Deux vérités pour une même position, selon le critère choisi.](/images/zermelo-04-dtm-dtz.svg)
 
 ## L'imperfection structurelle du joueur humain
 
@@ -176,5 +176,13 @@ Parce que ni l'un ni l'autre ne joue parfaitement au sens Zermelo. Tous deux son
 ### Cette vérité mathématique pourrait-elle être un jour découverte ?
 
 Probablement pas par force brute pure : l'arbre $10^{120}$ est définitivement hors d'atteinte physique. Une **preuve indirecte** reste théoriquement possible (démonstration par symétrie, par invariant, par stratégie miroir partielle), mais aucune piste sérieuse n'existe. Le calcul quantique change la borne (Grover divise l'exposant par deux), mais $10^{60}$ reste astronomique. La résolution des échecs au sens strict est plus probablement un horizon que jamais atteint.
+
+## Sources
+
+- Zermelo, E. (1913). *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels*. **Proceedings of the Fifth International Congress of Mathematicians**, Cambridge, vol. II, 501-504. Communication présentée au congrès en **1912**, publiée dans les actes en 1913 : c'est de là que vient la double datation qu'on croise partout.
+- Schwalbe, U., & Walker, P. (2001). *Zermelo and the Early History of Game Theory*. **Games and Economic Behavior**, 34(1), 123-137. DOI : [10.1006/game.2000.0794](https://doi.org/10.1006/game.2000.0794) — l'étude de référence sur ce que Zermelo a réellement démontré, et sur les compléments apportés par König (1927) et Kalmár (1928).
+- Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. **Philosophical Magazine**, Ser. 7, 41(314), 256-275. [PDF intégral](https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf).
+- **Tablebases de finales** : synthèse et records de profondeur sur [l'article Endgame tablebase de Wikipédia](https://en.wikipedia.org/wiki/Endgame_tablebase), qui documente la position à 517 coups de Bourzutschky et Konoval (2006) et le record Lomonosov à 549 coups (2012).
+- **Lichess tablebase**, [interrogation en ligne des finales à 7 pièces](https://syzygy-tables.info/) : pour vérifier soi-même DTM et DTZ sur une position donnée.
 
 ---
