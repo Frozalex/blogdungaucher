@@ -68,12 +68,14 @@ Au premier coup des Blancs : **20 coups possibles** (16 déplacements de pions +
 En généralisant : si chaque joueur dispose en moyenne de $b \approx 35$ coups légaux à chaque tour, et qu'une partie dure en moyenne $d \approx 80$ demi-coups (40 coups de chaque joueur), le nombre de parties est de l'ordre de :
 
 $$
-N \approx b^d = 35^{80} \approx 10^{124}
+N \approx b^d = 35^{80} \approx 10^{123}
 $$
 
 C'est le **principe de l'arbre de dénombrement** : à chaque nœud, le nombre de branches se multiplie par le facteur de branchement. La croissance est exponentielle, et la base du programme de terminale Maths permet de comprendre exactement pourquoi ce nombre est si spectaculaire.
 
-À titre de comparaison : le nombre d'atomes dans l'univers observable est estimé à $10^{80}$. Le nombre de parties d'échecs le dépasse de **44 ordres de grandeur**.
+Un détail qui peut te valoir un bon point devant le jury : ce $10^{123}$ n'est pas tout à fait le nombre de Shannon. Shannon partait de $b \approx 30$ et obtenait $10^{120}$ ; avec $b \approx 35$, estimation retenue plus tard, on monte à $10^{123}$. Les deux chiffres circulent, et savoir d'où vient l'écart montre que tu as compris le calcul au lieu de l'avoir recopié.
+
+À titre de comparaison : le nombre d'atomes dans l'univers observable est estimé à $10^{80}$. Le nombre de parties d'échecs le dépasse de **plus de 40 ordres de grandeur**.
 
 ### Arrangements et permutations dans les ouvertures
 
@@ -204,9 +206,9 @@ La **profondeur de récursion** est le paramètre clé : à profondeur $d$, l'al
 
 Un jury de terminale Maths connaît la notion de complexité. Voici l'argument que tu peux développer en deux minutes :
 
-La complexité en $O(b^d)$ est exponentielle. Pour « résoudre » les échecs (trouver le coup parfait depuis n'importe quelle position), il faudrait explorer tout l'arbre jusqu'aux feuilles, soit de l'ordre de $10^{120}$ nœuds. Même un ordinateur capable d'évaluer $10^{18}$ positions par seconde mettrait de l'ordre de $10^{102}$ secondes, soit **$10^{94}$ fois l'âge de l'univers**.
+La complexité en $O(b^d)$ est exponentielle. Pour « résoudre » les échecs (trouver le coup parfait depuis n'importe quelle position), il faudrait explorer tout l'arbre jusqu'aux feuilles, soit de l'ordre de $10^{120}$ nœuds. Même un ordinateur capable d'évaluer $10^{18}$ positions par seconde mettrait de l'ordre de $10^{102}$ secondes, soit **$10^{84}$ fois l'âge de l'univers** (qui vaut environ $4{,}4 \times 10^{17}$ secondes).
 
-Les échecs sont donc, selon la terminologie de la théorie de la complexité, un problème **PSPACE-complet** (famille des problèmes difficiles exhaustivement). La notion n'est pas au programme de terminale, mais la **croissance exponentielle versus polynomiale** l'est : c'est l'argument central.
+Dans la terminologie de la théorie de la complexité, c'est la version généralisée des échecs (sur un échiquier n×n) qui est **EXPTIME-complète**, résultat démontré par Fraenkel et Lichtenstein en 1981. Sur l'échiquier 8×8, le jeu reste fini : aucune classe de complexité ne s'y applique au sens strict, seule la taille de l'arbre fait obstacle. La notion n'est pas au programme de terminale, mais la **croissance exponentielle versus polynomiale** l'est : c'est l'argument central.
 
 L'élagage **alpha-bêta** réduit la complexité effective à $O(b^{d/2})$ dans le cas optimal : pour $d = 8$, on explore environ $35^4 \approx 1{,}5 \times 10^6$ nœuds au lieu de $35^8$. Cette optimisation illustre l'**analyse algorithmique** au programme de terminale.
 
@@ -322,7 +324,7 @@ Les échecs gagnent sur trois critères : ils contiennent au moins **deux formul
 P(A bat B) = 1 / (1 + 10^((R_B - R_A)/400))
 R'_A = R_A + K × (résultat − P)
 P(X=k) = C(n,k) × p^k × (1−p)^(n−k)
-N_Shannon ≈ 35^80 ≈ 10^124
+Arbre de jeu ≈ 35^80 ≈ 10^123 (Shannon : 10^120)
 Complexité minimax = O(b^d) ; alpha-bêta = O(b^(d/2))
 ```
 
