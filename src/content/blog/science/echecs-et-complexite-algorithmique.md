@@ -21,8 +21,9 @@ tags:
   - informatique théorique
 keyTakeaways:
   - >-
-    Le nombre de positions légales d'échecs est estimé entre 10^44 et 10^47 : le 'nombre de Shannon'. L'univers
-    observable contient environ 10^80 atomes. L'espace de recherche exhaustif est impossible par définition.
+    Le nombre de positions légales d'échecs vaut environ 4,8×10^44 (dénombrement de John Tromp). Le "nombre de Shannon",
+    lui, désigne autre chose : les ~10^120 parties possibles. L'univers observable contient environ 10^80 atomes.
+    L'espace de recherche exhaustif est impossible par définition.
   - >-
     Deep Blue battait Kasparov en 1997 par force brute augmentée : évaluation de 200 millions de positions par seconde +
     heuristiques d'élagage (alpha-beta pruning). Un programme basé sur des règles humaines explicites, poussé à
@@ -32,7 +33,7 @@ keyTakeaways:
     développé des concepts de jeu inconnus des théoriciens, sans jamais avoir vu une base de données de parties
     humaines.
   - >-
-    La complexité des échecs est EXPSPACE-complète dans la version généralisée (échiquier n×n): une classe de complexité
+    La complexité des échecs est EXPTIME-complète dans la version généralisée (échiquier n×n) : une classe de complexité
     supérieure à NP, ce qui signifie qu'aucun algorithme polynomial ne peut résoudre les échecs de façon générale.
   - >-
     La compréhension humaine des échecs n'est pas une version dégradée de la recherche arborescente : c'est un type de
@@ -50,18 +51,20 @@ heroImage:
 faq:
   - question: Qu'est-ce que le 'nombre de Shannon' ?
     answer: >-
-      C'est une estimation du nombre de positions légales d'échecs, proposée par Claude Shannon en 1950. Il l'estimait à
-      environ 10^43. Des travaux ultérieurs ont affiné cette estimation entre 10^44 et 10^47. Pour donner une échelle :
-      l'univers observable contient environ 10^80 atomes, et une seconde contient 10^43 femtosecondes. Le nombre de
-      Shannon illustre pourquoi une recherche exhaustive de toutes les positions est physiquement impossible, même avec
-      des ordinateurs infiniment rapides.
+      C'est la borne basse que Claude Shannon a donnée en 1950 au nombre de parties d'échecs possibles : environ
+      10^120. Attention à ne pas le confondre avec le nombre de <em>positions</em> légales, bien plus petit, que
+      Shannon estimait dans le même article autour de 10^43 et que le dénombrement de John Tromp place depuis
+      autour de 4,8×10^44. Pour donner une échelle : l'univers observable contient environ 10^80 atomes, soit un nombre
+      négligeable devant 10^120. Le nombre de Shannon illustre pourquoi une recherche exhaustive de l'arbre de jeu
+      est physiquement impossible, même avec des ordinateurs infiniment rapides.
   - question: Comment Deep Blue battait-il Kasparov s'il ne pouvait pas tout calculer ?
     answer: >-
       Par deux techniques combinées. L'alpha-beta pruning (élagage alpha-bêta) élague intelligemment l'arbre de
       recherche : si une branche ne peut pas mener à un résultat meilleur que ce qu'on a déjà trouvé, elle est
       abandonnée. Cela réduit exponentiellement l'espace de recherche. Combiné à une fonction d'évaluation de position
       très élaborée (développée avec des Grands Maîtres), Deep Blue évaluait environ 200 millions de positions par
-      seconde et cherchait typiquement à 12-15 coups de profondeur. C'est impressionnant, mais ce n'est pas une
+      seconde et cherchait typiquement entre 6 et 12 demi-coups de profondeur, jusqu'à une quarantaine dans
+      certaines lignes forcées. C'est impressionnant, mais ce n'est pas une
       résolution complète, c'est une heuristique très puissante.
   - question: AlphaZero a-t-il vraiment appris les échecs en 9 heures ?
     answer: >-
@@ -88,7 +91,9 @@ faq:
 
 En 1950, Claude Shannon (le fondateur de la théorie de l'information) publiait un article intitulé "Programming a Computer for Playing Chess". Il n'avait pas encore écrit les programmes. Il calculait si c'était seulement *possible*.
 
-Sa conclusion : le nombre de positions légales d'échecs est d'environ 10^43. Le nombre de parties distinctes possibles est encore plus grand. Une recherche exhaustive de l'arbre de jeu complet dépasserait les capacités de n'importe quel ordinateur physiquement réalisable : pas par manque de vitesse, mais parce que le temps nécessaire dépasserait l'âge de l'univers.
+Sa conclusion : le nombre de positions légales d'échecs tourne autour de 10^43, et le nombre de parties distinctes possibles est bien plus grand encore, au moins 10^120. C'est ce second nombre qu'on appelle aujourd'hui le nombre de Shannon. Une recherche exhaustive de l'arbre de jeu complet dépasserait les capacités de n'importe quel ordinateur physiquement réalisable : pas par manque de vitesse, mais parce que le temps nécessaire dépasserait l'âge de l'univers.
+
+Son estimation des positions était une approximation grossière, qui incluait des configurations illégales. Elle a depuis été resserrée : le travail de dénombrement de John Tromp place le nombre de positions légales autour de 4,8×10^44.
 
 Il fallait donc trouver autre chose.
 
@@ -101,15 +106,15 @@ Les classes les plus connues :
 - **NP** : problèmes dont les solutions peuvent être *vérifiées* en temps polynomial (potentiellement lents à résoudre, rapides à vérifier)
 - **PSPACE** : problèmes solubles avec de la mémoire polynomiale (même si le temps est exponentiel)
 - **EXPTIME** : problèmes qui nécessitent un temps exponentiel dans le pire cas
-- **EXPSPACE** : la classe la plus redoutable, nécessitant à la fois temps et mémoire exponentiels
+- **EXPSPACE** : problèmes nécessitant une mémoire exponentielle, la plus redoutable des cinq (elle contient EXPTIME)
 
-Les échecs généralisés (sur un échiquier n×n au lieu de 8×8) appartiennent à la classe **EXPTIME-complets** selon les résultats de Fraser et al. (1981). Cela signifie que la résolution exacte des échecs sur un échiquier arbitraire est, au sens formel, aussi difficile que les problèmes les plus durs de sa classe, et qu'aucun algorithme polynomial ne peut espérer les résoudre.
+Les échecs généralisés (sur un échiquier n×n au lieu de 8×8) appartiennent à la classe **EXPTIME-complets** selon les résultats de Fraenkel et Lichtenstein (1981). Cela signifie que la résolution exacte des échecs sur un échiquier arbitraire est, au sens formel, aussi difficile que les problèmes les plus durs de sa classe, et qu'aucun algorithme polynomial ne peut espérer les résoudre.
 
 Pour les échecs sur échiquier 8×8 standard, la question est légèrement différente : la partie se termine toujours (règle des 50 coups, répétition), donc le problème est fini. Mais l'espace de recherche reste astronomique.
 
 ## L'arbre de jeu et la malédiction de l'explosion combinatoire
 
-Imaginez l'arbre de jeu d'une partie d'échecs. À la racine, la position de départ. Après le premier coup des Blancs (20 possibles), 20 nœuds. Après le premier coup des Noirs (20 possibles), 400 nœuds. Après deux coups de chaque côté : environ 8 902 positions. Après cinq coups de chaque côté : environ 69 milliards.
+Imagine l'arbre de jeu d'une partie d'échecs. À la racine, la position de départ. Après le premier coup des Blancs (20 possibles), 20 nœuds. Après le premier coup des Noirs (20 possibles), 400 nœuds. Après deux coups de chaque côté : environ 8 902 positions. Après cinq coups de chaque côté : environ 69 milliards.
 
 Le facteur de branchement moyen d'une partie d'échecs est d'environ 35 (le nombre de coups légaux dans une position typique). La longueur moyenne d'une partie est d'environ 40 coups par joueur. L'arbre complet a donc approximativement 35^80 ≈ 10^123 nœuds.
 
@@ -125,13 +130,13 @@ L'idée : si on recherche l'arbre de jeu et qu'on trouve une branche qui ne peut
 
 Dans le meilleur cas, l'élagage alpha-bêta réduit le nombre de nœuds à explorer de la racine carrée de l'arbre complet. À partir d'un espace de 10^123, on peut espérer chercher 10^61, toujours astronomique, mais beaucoup plus gérable avec de bonnes heuristiques d'ordonnancement des coups (chercher d'abord les coups probablement bons rend l'élagage plus efficace).
 
-Combiné à une **fonction d'évaluation** : une formule qui estime la valeur d'une position sans aller jusqu'aux feuilles de l'arbre : l'alpha-bêta permet de chercher à une profondeur fixe et d'évaluer les positions résultantes. C'est exactement ce que faisait Deep Blue en 1997.
+Combiné à une **fonction d'évaluation**, c'est-à-dire une formule qui estime la valeur d'une position sans aller jusqu'aux feuilles de l'arbre, l'alpha-bêta permet de chercher à une profondeur fixe puis d'évaluer les positions résultantes. C'est exactement ce que faisait Deep Blue en 1997.
 
 ## Deep Blue : la victoire de l'ingénierie
 
 Deep Blue n'était pas un programme subtil. C'était un chef-d'œuvre d'ingénierie brute appliqué aux heuristiques d'échecs.
 
-IBM avait construit des **puces spécialisées** (ASICs) conçues uniquement pour évaluer des positions d'échecs : des centaines en parallèle. Deep Blue évaluait entre 100 et 300 millions de positions par seconde. Avec un élagage alpha-bêta bien optimisé et des heuristiques d'ordonnancement sophistiquées, il cherchait typiquement à une profondeur de 12 à 16 coups, parfois plus dans les positions critiques ("recherche d'extension").
+IBM avait construit des **puces spécialisées** (ASICs) conçues uniquement pour évaluer des positions d'échecs : des centaines en parallèle. Deep Blue évaluait entre 100 et 200 millions de positions par seconde selon le type de position. Avec un élagage alpha-bêta bien optimisé et des heuristiques d'ordonnancement sophistiquées, il cherchait typiquement entre 6 et 12 demi-coups de profondeur, et jusqu'à une quarantaine dans les lignes forcées ("recherche d'extension").
 
 La fonction d'évaluation avait été développée avec l'aide de Grands Maîtres : elle codifiait explicitement des concepts comme la structure de pions, la sécurité du roi, l'activité des pièces, les cases faibles. Chaque concept était traduit en termes numériques, avec des poids ajustés par les ingénieurs.
 
@@ -166,6 +171,14 @@ Shannon avait vu juste en 1950. La recherche exhaustive était impossible. La so
 ---
 
 *Claude Shannon jouait lui-même aux échecs, avec un niveau "raisonnable" selon ses contemporains. Il aurait probablement trouvé ironique que la meilleure solution à son problème soit d'imiter non pas l'ordinateur, mais l'humain.*
+
+## Sources
+
+- Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. **Philosophical Magazine**, Ser. 7, 41(314), 256-275. [PDF intégral](https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf) — l'article d'origine, où figurent les deux nombres : « there will be 10^120 variations to be calculated from the initial position » et « the number of possible positions […] roughly 10^43 ».
+- Tromp, J. (2021). *Chess Position Ranking* : dénombrement des positions légales. [tromp.github.io/chess/chess.html](https://tromp.github.io/chess/chess.html) — environ 4,8×10^44.
+- Fraenkel, A. S., & Lichtenstein, D. (1981). *Computing a perfect strategy for n×n chess requires time exponential in n*. **Journal of Combinatorial Theory, Series A**, 31(2), 199-214. DOI : [10.1016/0097-3165(81)90016-9](https://doi.org/10.1016/0097-3165(81)90016-9) — la preuve de l'EXPTIME-complétude. Référence bibliographique : le texte intégral n'est pas en accès libre.
+- Campbell, M., Hoane, A. J., & Hsu, F. (2002). *Deep Blue*. **Artificial Intelligence**, 134(1-2), 57-83. DOI : [10.1016/S0004-3702(01)00129-1](https://doi.org/10.1016/S0004-3702(01)00129-1) — les chiffres de vitesse et de profondeur de recherche viennent de là. Texte intégral non ouvert.
+- Silver, D., et al. (2018). *A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play*. **Science**, 362(6419), 1140-1144. DOI : [10.1126/science.aar6404](https://doi.org/10.1126/science.aar6404). Préprint en accès libre : [arXiv:1712.01815](https://arxiv.org/abs/1712.01815).
 
 ## Pour aller plus loin
 
