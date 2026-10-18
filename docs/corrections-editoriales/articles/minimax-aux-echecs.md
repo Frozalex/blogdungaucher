@@ -10,3 +10,8 @@ Profondeurs humaines contradictoires retirées ; analogie cognitive précisée ;
 - [Silver 2017](https://arxiv.org/html/1712.01815v1)
 
 SEO, date et slug conservés. Aucun marqueur « À VÉRIFIER PAR LUC » ajouté.
+
+## Contrôle transversal final
+
+Schéma null-move aligné sur le corps : pas de désactivation universelle dans toutes les finales ni de multiplicateur garanti.
+
