@@ -26,7 +26,7 @@ window.__I18N_DICT__ = {
             "footer.accessibility": "Accessibilit\u00e9",
             "footer.notificationSettings": "Notifications",
             "home.eyebrow": "\u00c9ditorial ind\u00e9pendant",
-            "home.titleHtml": "Comprendre les <span class=\"hero__accent display-serif\">\u00e9checs</span><br/>sans simplifier le jeu.",
+            "home.titleHtml": "Pratique et <span class=\"hero__accent display-serif\">simple</span>",
             "home.lead": "Deux articles par semaine : des analyses claires sur la science du jeu, le mental comp\u00e9titif et l\u2019impact des \u00e9checs dans la soci\u00e9t\u00e9, avec une approche humaine et exigeante.",
             "home.startReading": "Commencer la lecture",
             "home.seeSections": "Voir les rubriques",
