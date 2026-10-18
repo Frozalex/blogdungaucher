@@ -1,5 +1,5 @@
 ---
-title: "La solitude aux échecs : le sport où vous êtes réglementairement seul"
+title: "La solitude aux échecs : le sport où tu es réglementairement seul"
 excerpt: >-
   Les échecs sont peut-être le seul sport de compétition où la solitude n'est pas un état d'âme mais une règle. Pas de
   coach, pas de coéquipier, pas même un regard vers le public. Ce que cette solitude structurelle fait aux joueurs, et
@@ -81,15 +81,15 @@ faq:
       l'isolement social en général : anxiété, rumination, difficulté à réguler les émotions.
 ---
 
-Il y a une règle dans le règlement FIDE que les non-joueurs ne connaissent pas et que les joueurs trouvent si naturelle qu'ils ne la mentionnent jamais. Pendant une partie, vous n'avez pas le droit de communiquer avec qui que ce soit. Pas votre entraîneur, pas votre entourage, pas le public. Un regard trop appuyé vers les gradins peut être interprété comme une tentative de signal.
+Il y a une règle dans le règlement FIDE que les non-joueurs ne connaissent pas et que les joueurs trouvent si naturelle qu'ils ne la mentionnent jamais. Pendant une partie, tu n’as pas le droit de communiquer avec qui que ce soit. Pas ton entraîneur, pas ton entourage, pas le public. Un regard trop appuyé vers les gradins peut être interprété comme une tentative de signal.
 
-Vous êtes seul. Pas parce que vous le choisissez. Parce que le règlement l'exige.
+Tu es seul. Pas parce que tu le choisis. Parce que le règlement l'exige.
 
 ## La solitude réglementaire
 
 Dans la plupart des sports compétitifs, l'athlète est entouré. Le tennisman peut regarder sa loge entre les points. Le golfeur a un caddie. Le basketteur a des coéquipiers, un coach qui crie depuis le bord, un banc entier qui suit chaque décision. Même dans les sports individuels comme la natation ou l'athlétisme, le coach est visible, et les athlètes partagent une salle d'échauffement, un vestiaire, une équipe nationale.
 
-Aux échecs classiques, pendant toute la durée de la partie (souvent trois à cinq heures) vous n'avez accès à rien et à personne d'autre que la position devant vous.
+Aux échecs classiques, pendant toute la durée de la partie (souvent trois à cinq heures) tu n’as accès à rien et à personne d'autre que la position devant toi.
 
 Le règlement FIDE (article 12) est explicite : "Il est interdit aux joueurs d'utiliser des notes, des sources d'information ou des conseils, ou d'analyser sur un autre échiquier pendant la partie." Le mot "conseils" est large. Il inclut un hochement de tête approbateur, un geste de soutien, n'importe quelle forme de communication non verbale susceptible d'être interprétée comme un signal.
 
@@ -97,9 +97,9 @@ Cette règle n'est pas une curiosité technique. Elle définit l'expérience sub
 
 ### Cinq heures de monologue intérieur
 
-Essayez de rester cinq heures sans feedback externe sur une décision en cours. Pas de validation, pas de correction, pas de regard rassurant. Juste vous, le problème, et le temps qui passe.
+Essaie de rester cinq heures sans feedback externe sur une décision en cours. Pas de validation, pas de correction, pas de regard rassurant. Juste toi, le problème, et le temps qui passe.
 
-C'est ce que vit un joueur dans une partie longue. La position change, les menaces évoluent, le temps presse, et l'unique interlocuteur disponible est votre propre calcul.
+C'est ce que vit un joueur dans une partie longue. La position change, les menaces évoluent, le temps presse, et l'unique interlocuteur disponible est ton propre calcul.
 
 Les psychologues cognitifs appellent cela le monologue intérieur : le flux de pensée verbal qui accompagne la réflexion. Dans les positions difficiles, ce monologue peut devenir anxieux, répétitif, circulaire. *"Je vois cette menace. Est-ce que j'ai raté quelque chose ? Cette variante est-elle correcte ?"* Sans aucun signal externe pour calibrer, le joueur doit apprendre à faire confiance à son propre raisonnement, ou apprendre à vivre avec l'incertitude de ne pas le pouvoir.
 
@@ -121,7 +121,7 @@ Pendant la partie, chaque joueur est dans sa bulle. Les deux personnes assises f
 
 Avant les plateformes en ligne (avant Chess.com, Lichess, ICC) jouer aux échecs nécessitait de se déplacer. Un club, un café, un tournoi. Le lien social était une contrainte du format, pas un choix.
 
-Cette contrainte avait une fonction que personne n'avait vraiment anticipée : elle rendait la pratique des échecs sociale par défaut, même pour des joueurs fondamentalement introvertis. Vous veniez pour les pièces. Vous repartiez avec des conversations, des adversaires réguliers, des visages familiers.
+Cette contrainte avait une fonction que personne n'avait vraiment anticipée : elle rendait la pratique des échecs sociale par défaut, même pour des joueurs fondamentalement introvertis. Tu venais pour les pièces. Tu repartais avec des conversations, des adversaires réguliers, des visages familiers.
 
 Internet a supprimé cette contrainte. On peut maintenant jouer 500 parties par an sans croiser un autre joueur en personne, sans jamais mettre les pieds dans un club, sans jamais avoir à gérer l'imprévisibilité d'une interaction sociale réelle.
 
