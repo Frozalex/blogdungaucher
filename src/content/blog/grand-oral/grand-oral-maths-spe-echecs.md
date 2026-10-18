@@ -443,6 +443,28 @@ Pour chaque problématique, j'ai rédigé un **sujet entièrement développé** 
 
 Chaque sujet a son propre bouton PDF en haut de page.
 
+## Deux fiches intégrées : combinatoire et limites des modèles
+
+Les développements des sujets [combinatoire](/fr/blog/sujet-grand-oral-maths-combinatoire/) et [modèles et limites](/fr/blog/sujet-grand-oral-maths-modeles-limites/) sont regroupés ici ; leurs pages servent désormais de fiches courtes.
+
+### Refaire le calcul sans confondre les objets
+
+Dans l’arbre uniforme, b^d compte les feuilles à profondeur d. Le total de ses nœuds inclut également les niveaux précédents. Une position distincte n’est pas non plus une suite : des ordres de coups différents peuvent rejoindre la même position.
+
+Pour b = 35 et d = 80, le calcul donne :
+
+$$\log_{10}(35^{80})=80\log_{10}(35)\approx123{,}53.$$
+
+Ainsi 35^80 vaut environ 3,35 × 10^123. Le repère historique 10^120 de Shannon ne doit pas être présenté comme une égalité avec ce modèle. Il s’agit d’estimations sous des hypothèses différentes, pas d’un dénombrement exact du jeu entier.
+
+### Dire ce que le modèle laisse ouvert
+
+La loi binomiale suppose un nombre d’essais, leur indépendance et une probabilité de succès constante. Un tournoi réel ne remplit pas automatiquement ces conditions. Les nulles et les changements d’adversaire demandent un modèle plus riche.
+
+La loi des grands nombres ne signifie pas qu’une victoire doit compenser prochainement des défaites. Elle ne garantit pas non plus qu’une cote converge vers une valeur fixe lorsque le niveau du joueur évolue.
+
+Enfin, le score d’un moteur mesure sa performance dans un protocole, pas une résolution mathématique du jeu. Pour l’entraînement d’AlphaZero, le préprint de Silver et collègues décrit de nombreux TPUs : une durée sans indication de matériel ne permet pas de comparer des coûts.
+
 ### Sources et références
 
 - FIDE (2024). *FIDE Rating Regulations effective from 1 March 2024*. [Règlement, § 8](https://handbook.fide.com/chapter/B022024) : score attendu et coefficients K utilisés dans cet exemple.
