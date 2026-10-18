@@ -73,7 +73,7 @@ faq:
     answer: >-
       L'étude de Chase et Simon (1973) est claire : donnez aux deux groupes 5 secondes pour mémoriser une position de
       jeu réel, puis reconstruisez-la de mémoire. Les experts replacent 92% des pièces correctement, les novices 20%.
-      Mais si vous donnez une position ALÉATOIRE (pièces placées au hasard, pas issues d'une vraie partie), les deux
+      Mais si tu donnes une position ALÉATOIRE (pièces placées au hasard, pas issues d'une vraie partie), les deux
       groupes sont équivalents autour de 30%. La mémoire d'échecs des experts n'est pas une mémoire visuelle supérieure
       : c'est une bibliothèque de patterns de jeu réel.
   - question: Comment améliorer sa visualisation sans jouer à l'aveugle ?
@@ -121,7 +121,7 @@ Un joueur de niveau maître dispose d'environ 50 000 chunks d'échecs stockés e
 
 ## Comment fonctionnent les chunks dans la visualisation
 
-Prenez une formation courante : le roque côté roi, avec le roi en g1, la tour en f1, un fou en e2, et un pion en g2, f2, h2. Pour un joueur expérimenté, c'est un seul chunk ("roque court classique") mémorisé comme une unité. Il n'a pas besoin de se souvenir de sept éléments séparés, seulement d'un.
+Prends une formation courante : le roque côté roi, avec le roi en g1, la tour en f1, un fou en e2, et un pion en g2, f2, h2. Pour un joueur expérimenté, c'est un seul chunk ("roque court classique") mémorisé comme une unité. Il n'a pas besoin de se souvenir de sept éléments séparés, seulement d'un.
 
 Quand ce joueur calcule une variante à l'aveugle, il manipule ces chunks comme des blocs. "Si j'avance le pion h, le roque court classique devient un roque court affaibli, avec telle ou telle vulnérabilité typique." Ces relations entre chunks sont elles-mêmes mémorisées : la bibliothèque n'est pas une liste plate d'images, c'est un réseau de structures liées.
 
@@ -171,7 +171,7 @@ Pas de magie. Juste de l'expertise portée à un niveau extraordinaire.
 
 ## Pour aller plus loin
 
-- [Découvrez le pouvoir des échecs sur votre mémoire](/fr/blog/echecs-et-memoire/)
+- [Découvre le pouvoir des échecs sur ta mémoire](/fr/blog/echecs-et-memoire/)
 - [Concentration aux échecs : entraîner l'attention comme un muscle](/fr/blog/echecs-et-concentration/)
 - [Mémoire de travail et échecs : le goulot d'étranglement cognitif](/fr/blog/echecs-memoire-de-travail/)
 
