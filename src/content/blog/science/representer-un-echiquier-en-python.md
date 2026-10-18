@@ -61,7 +61,7 @@ faq:
   - question: "Pourquoi ma FEN diffère de celle de Stockfish sur la case de prise en passant ?"
     answer: >-
       Parce qu'il existe deux conventions. La FEN d'origine annonce la case survolée après toute poussée
-      de deux cases. Stockfish et la plupart des moteurs modernes ne l'annoncent que si la prise en
+      de deux cases. Stockfish et la plupart des moteurs modernes ne l'annonce que si la prise en
       passant est <strong>réellement jouable</strong> par le camp au trait. Les deux positions sont
       identiques sur l'échiquier, mais les chaînes diffèrent. Adopter la seconde convention suppose de
       savoir générer les coups, ce qui vient à l'article suivant.
@@ -87,7 +87,7 @@ def cavalier_64(depart):
     arrivees = []
     for saut in SAUTS_64:
         arrivee = depart + saut
-        if 0 <= arrivee <= 63:  # la seule vérification possible ici
+        if 0 <= arrivee <= 63:  # vérification insuffisante à elle seule
             arrivees.append(nom_64(arrivee))
     return arrivees
 ```
@@ -107,7 +107,7 @@ Cavalier en a4
 
 Un cavalier en h4 a quatre coups. Le code en trouve huit. Les quatre supplémentaires (a1, a5, b2, b4) sont ceux où la pièce est sortie par le bord droit de l'échiquier et est réapparue à gauche, une ou deux rangées plus loin. Vu comme une bande de 64 cases, le déplacement est parfaitement légitime : h4 est à l'indice 39, moins six donne 33, et l'indice 33 existe. C'est b4.
 
-Ce bug a trois propriétés qui en font le pire ennemi du débutant. Il ne lève **aucune exception**. Il ne se déclenche que sur les colonnes a et h, donc pas dans les positions qu'on teste au début. Et il produit des coups plausibles : dans une partie, tu verras un cavalier faire quelque chose d'aberrant sans jamais soupçonner la structure de données, puisque le générateur de coups « fonctionne » ailleurs.
+Ce bug a trois propriétés qui en font le pire ennemi du débutant. Il ne lève **aucune exception**. Il peut se déclencher près des bords, donc pas dans les positions qu'on teste au début. Et il produit des coups plausibles : dans une partie, tu verras un cavalier faire quelque chose d'aberrant sans jamais soupçonner la structure de données, puisque le générateur de coups « fonctionne » ailleurs.
 
 On peut le corriger en comparant les colonnes de départ et d'arrivée à chaque coup. C'est possible, c'est laid, et surtout c'est une vérification à répéter dans chaque fonction de génération, donc à oublier quelque part.
 
@@ -117,9 +117,9 @@ On peut le corriger en comparant les colonnes de départ et d'arrivée à chaque
 |---|---|---|---|
 | Tableau 8×8 | 64 cases, tests de bornes explicites | Immédiat à comprendre | Un test de débordement à ne jamais oublier, dans chaque fonction |
 | Mailbox 10×12 | 64 cases utiles entourées de sentinelles | Le débordement se lit dans le tableau lui-même | 56 cases inutilisées, indices moins intuitifs |
-| Bitboards | 12 entiers de 64 bits, un par type de pièce | Très rapide, génération par opérations bit à bit | Illisible pour un débutant, et sans intérêt en Python |
+| Bitboards | 12 entiers de 64 bits, un par type de pièce | Très rapide, génération par opérations bit à bit | Plus technique à expliquer ; utilisable aussi en Python |
 
-Le choix des bitboards mérite qu'on s'y arrête, parce que c'est celui de tous les moteurs sérieux et qu'on pourrait croire à un renoncement de notre part. Leur intérêt tient à une propriété du processeur : il manipule un entier de 64 bits en une seule instruction. Un échiquier tenant dans un entier de 64 bits, « toutes les cases attaquées par les tours blanches » se calcule en quelques opérations. Or les entiers de Python ne sont pas des mots machine : ce sont des objets de taille illimitée, alloués sur le tas. On paierait toute la complexité conceptuelle des bitboards sans en toucher le bénéfice.
+Les bitboards utilisent des opérations sur des entiers pour représenter des ensembles de cases. Python les permet aussi : la bibliothèque python-chess en fournit un exemple. Le choix mailbox de cette série est pédagogique ; sa supériorité de vitesse dépendrait d'une comparaison mesurée, pas du seul langage.
 
 Reste la mailbox, et c'est notre choix pour le reste de la série.
 
@@ -354,16 +354,22 @@ Ces 78 positions ne sont pas fausses : l'échiquier, le trait, les droits de roq
 
 La FEN d'origine annonce la case survolée après toute poussée de deux cases. C'est ce que fait notre code : après 1.e4, il écrit `e3`.
 
-Stockfish, et la plupart des moteurs modernes, ne l'annoncent que si la prise en passant est **réellement jouable** par le camp au trait. Après 1.e4 sans pion noir en d4 ou f4, il écrit `-`. C'est la convention retenue par les positions de référence de `perft`, ce qui n'est pas un détail : à l'article suivant, une position dont la case de prise en passant est annoncée à tort compterait des coups qui n'existent pas.
+Dans les sorties comparées ici, Stockfish ne l'annonce que si la prise en passant est **réellement jouable** par le camp au trait. Après 1.e4 sans pion noir en d4 ou f4, il écrit `-`. C'est la convention retenue par les positions de référence de `perft`, ce qui n'est pas un détail : à l'article suivant, le générateur doit vérifier la réalité de la prise au lieu de déduire sa légalité du seul champ FEN.
 
 Pourquoi ne pas corriger tout de suite ? Parce que savoir si une prise en passant est jouable suppose de savoir générer les coups, et de vérifier qu'aucun d'eux ne laisse son propre roi en échec. C'est exactement le sujet de l'article 3. Corriger maintenant obligerait à écrire un demi générateur de coups dans une fonction d'écriture de FEN.
 
-C'est une dette, pas un oubli. Elle est écrite noir sur blanc dans la sortie du test, avec son compteur, et elle sera remboursée à l'article suivant.
+Les conventions d'écriture sont donc distinguées dans le résultat du contrôle. Le prochain article implémente le contrôle de légalité de la prise en passant.
 
 ## Ce que tu as maintenant
 
-Une structure de données de 120 cases où le débordement est impossible, la lecture et l'écriture de FEN vérifiées sur 1 498 positions réelles, et un couple `jouer` / `annuler` qui restaure exactement l'état, y compris dans les trois cas qui cassent tous les moteurs débutants.
+Une structure de données de 120 cases où les déplacements usuels rencontrent une bordure de sentinelles, la lecture et l'écriture de FEN vérifiées sur 1 498 positions réelles, et un couple `jouer` / `annuler` qui restaure exactement l'état, y compris dans les trois cas qui cassent tous les moteurs débutants.
 
 Ce n'est pas encore un moteur : il ne sait pas quels coups sont autorisés. C'est le sujet du prochain article, le plus long et le plus ingrat de la série, celui qui contient à lui seul la majorité des bugs d'un moteur d'échecs.
 
 **Prochain article :** générer les coups légaux en Python, où l'on découvre que la difficulté n'est pas de trouver les coups, mais d'éliminer ceux qui laissent son propre roi en échec.
+
+## Sources
+
+La documentation de python-chess décrit notamment les bitboards et les conventions de sortie FEN (en passant « legal » ou « fen »). Elle sert de comparaison technique ; la série ne dépend pas de cette bibliothèque.
+
+- Fiekas, N. et contributeurs (s. d.), Core, documentation python-chess, [texte de référence](https://python-chess.readthedocs.io/en/latest/core.html).
