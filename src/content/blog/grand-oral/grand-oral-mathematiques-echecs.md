@@ -117,7 +117,7 @@ Comment arrive-t-on à ce chiffre ? Voici l'argument de dénombrement que tu peu
 2. Au premier coup des Noirs, il y a également **20 réponses possibles**.
 3. Après un coup de chaque côté, on a donc **20 × 20 = 400 positions**.
 4. Au deuxième coup, il y a environ **29 coups possibles en moyenne** pour chaque joueur.
-5. L'arbre des coups grandit exponentiellement : après 3 coups de chaque côté, on dépasse **9 millions de positions**.
+5. L'arbre des coups grandit exponentiellement : après 3 coups de chaque côté, on dépasse **119 060 324 suites de six demi-coups**, soit environ 10^8 feuilles.
 
 La formule générale est $N \approx b^d$, où $b$ est le facteur de branchement moyen ($\approx 35$ aux échecs) et $d$ la profondeur ($\approx 80$ demi-coups). On obtient $35^{80} \approx 10^{124}$, dans le même ordre de grandeur que l'estimation de Shannon.
 
@@ -143,21 +143,21 @@ Les joueurs d'échecs de haut niveau décrivent souvent leur processus de calcul
 
 ## Probabilités et analyse dans le jeu d'échecs
 
-### Calculer les chances de victoire : la formule Elo
+### Calculer un score attendu : la formule Elo
 
-Le [classement Elo](https://fr.wikipedia.org/wiki/Classement_Elo), inventé par le physicien et mathématicien [Arpad Elo](https://fr.wikipedia.org/wiki/Arpad_Elo) dans les années 1960, est l'une des applications les plus élégantes des probabilités à un jeu. Il repose sur une idée simple : **la différence de cote entre deux joueurs doit prédire la probabilité de victoire de chacun**.
+Le [classement Elo](https://fr.wikipedia.org/wiki/Classement_Elo), inventé par le physicien et mathématicien [Arpad Elo](https://fr.wikipedia.org/wiki/Arpad_Elo) dans les années 1960, est l'une des applications les plus élégantes des probabilités à un jeu. Il repose sur une idée simple : **la différence de cote sert à estimer le score attendu**.
 
-La probabilité que le joueur A batte le joueur B est :
+Une approximation logistique du score attendu de A est :
 
 $$
-\mathbb{P}(\text{A bat B}) = \frac{1}{1 + 10^{(R_B - R_A)/400}}
+\mathbb{E}(S_A) = \frac{1}{1 + 10^{(R_B - R_A)/400}}
 $$
 
 où $R_A$ et $R_B$ sont les cotes Elo respectives. Si $R_A = R_B$, on obtient $\mathbb{P} = \tfrac{1}{2}$. Si $R_A = 2000$ et $R_B = 1600$, on obtient $\mathbb{P} \approx 91\,\%$.
 
-Cette formule est la **fonction logistique**, une fonction en forme de S que l'on rencontre aussi en modélisation démographique, en médecine (probabilité d'un événement clinique) et dans les réseaux de neurones (fonction d'activation sigmoïde). Le faire remarquer au jury montre que tu places l'exemple dans une famille mathématique plus large.
+Le score vaut 1, 0,5 ou 0 selon le résultat. Une espérance de 0,5 n’est donc pas une probabilité de victoire de 50 %. Cette formule est une approximation logistique pédagogique ; la FIDE utilise ses tables réglementaires. Cette **fonction logistique**, une fonction en forme de S que l'on rencontre aussi en modélisation démographique, en médecine (probabilité d'un événement clinique) et dans les réseaux de neurones (fonction d'activation sigmoïde). Le faire remarquer au jury montre que tu places l'exemple dans une famille mathématique plus large.
 
-#### Code (Maths → NSI)  -  calculer une probabilité Elo en Python
+#### Code (Maths → NSI) : calculer un score attendu Elo en Python
 
 <div data-pytrace></div>
 
@@ -173,7 +173,7 @@ La mise à jour des cotes après chaque partie obéit à une règle simple :
 
 $$\text{Nouvelle cote de } A = R_A + K\,(\text{résultat réel} - \text{résultat attendu})$$
 
-où $K$ est un coefficient (32 ou 16 selon le niveau), le résultat réel vaut $1$, $\tfrac{1}{2}$ ou $0$, et le résultat attendu est la probabilité $\mathbb{P}$ ci-dessus.
+où $K$ est un coefficient (40, 20 ou 10 selon les conditions du règlement FIDE), le résultat réel vaut $1$, $\tfrac{1}{2}$ ou $0$, et le résultat attendu est la probabilité $\mathbb{P}$ ci-dessus.
 
 C'est un **estimateur bayésien** : chaque partie apporte de l'information sur la vraie force d'un joueur, et la cote converge vers cette vraie valeur au fil du temps. Ce mécanisme est directement lié aux notions de statistiques inférentielles du programme de terminale.
 
@@ -235,7 +235,7 @@ def minimax(position, profondeur, est_max):
         return meilleur
 ```
 
-L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)) et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer. En pratique, il réduit la complexité effective de $O(b^d)$ à environ $O(b^{d/2})$ ; pour $b = 35$ et $d = 10$, le nombre de nœuds passe d'environ $2{,}7 \times 10^{15}$ à $\sim 5{,}2 \times 10^7$. C'est un résultat d'algorithmique accessible en terminale NSI.
+L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)) et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer. Dans le meilleur cas, avec un tri idéal des coups, il réduit l’ordre de grandeur de $O(b^d)$ à environ $O(b^{d/2})$ ; pour $b = 35$ et $d = 10$, le nombre de nœuds passe d'environ $2{,}7 \times 10^{15}$ à $\sim 5{,}2 \times 10^7$. C'est un résultat d'algorithmique accessible en terminale NSI.
 
 #### Code (NSI)  -  alpha-bêta (l'optimisation "visible")
 
@@ -313,60 +313,18 @@ Le classement Elo a depuis été repris dans de nombreux autres domaines : jeux 
 *« Des mathématiques de Shannon à l'IA d'AlphaZero : comment l'informatique a-t-elle transformé les échecs ? »*
 → Angle : progression historique de 1950 à 2017, chaque étape correspond à un outil Maths et un outil NSI.
 
-## Structurer votre Grand Oral : un plan détaillé
+## Structurer ton Grand Oral en dix minutes
 
-Un Grand Oral dure vingt minutes : cinq minutes de questions et quinze à vingt minutes d'exposé. La structure ci-dessous est optimisée pour tenir ce cadre.
+Choisis un pont central plutôt que de développer les trois au même niveau. Pour la méthode générale, consulte le [guide toutes spécialités](/fr/blog/guide-grand-oral-echecs-toutes-specialites/). Pour un exposé centré sur le code, utilise le [guide NSI](/fr/blog/guide-grand-oral-echecs-nsi/) ; pour les calculs, le [guide Maths](/fr/blog/grand-oral-maths-spe-echecs/).
 
-### Reformulation du plan pour l'angle transversal
+Voici une proposition de découpage à chronométrer :
 
-Le plan en trois parties devient :
-1. **Pourquoi les échecs débordent le calcul** → Maths (combinatoire) + NSI (complexité algorithmique)
-2. **Comment les mesurer et les modéliser** → Maths (probabilités, Elo, graphes) + NSI (SQL, structures de données)
-3. **Comment l'IA a dépassé la programmation** → Maths (algèbre linéaire) + NSI (réseaux de neurones, AlphaZero)
+- Introduction, 1 minute : pourquoi un programme ne peut-il pas explorer uniformément toutes les variantes ?
+- Combinatoire, 3 minutes : construire un petit arbre et expliquer le modèle b^d, avec ses hypothèses.
+- Algorithmique, 4 minutes : montrer minimax sur cet arbre, puis une coupure alpha-bêta ; préciser le rôle du tri des coups.
+- Conclusion, 2 minutes : distinguer performance et résolution, puis ouvrir sur la sélection des variantes par apprentissage dans AlphaZero.
 
-### Introduction percutante (3 minutes)
-
-**Objectif :** capter l'attention et poser la problématique.
-
-Commence par la mise en scène : *« Voici un échiquier. Il y a 64 cases, 32 pièces, et un nombre de parties possibles supérieur au nombre d'atomes de l'univers. »* Pose ce chiffre (10^120) sur le tableau. Le jury note le nombre. Tu as leur attention.
-
-Puis formule ta **problématique** : *« En quoi les échecs sont-ils un objet mathématique, et comment cette nature mathématique a-t-elle transformé notre façon de penser l'intelligence artificielle ? »*
-
-Annonce ton plan en trois parties : les fondements mathématiques du jeu, l'application des probabilités et des statistiques, et la révolution de l'intelligence artificielle.
-
-### Partie I : Combinatoire (Maths) → Complexité (NSI) (7 minutes)
-
-**Transition** : *« Je vais commencer par montrer pourquoi les échecs ne peuvent pas être résolus par la force brute, et cela va relier directement les mathématiques et l'informatique. »*
-
-1. **[Maths] Combinatoire** : calcul de 10^120 par l'arbre (principe multiplicatif b^d), dessiner 2 niveaux au tableau. (2 min)
-2. **Pont** : *« Cette explosion combinatoire est exactement pourquoi en NSI, on ne peut pas explorer tout l'arbre. Il faut un algorithme intelligent. »* (30 s)
-3. **[NSI] Minimax + élagage alpha-bêta** : récursivité, coupure, O(b^d) → O(b^(d/2)). (2 min)
-4. **Problème du cavalier** : chemin hamiltonien [Maths] / DFS récursif [NSI], règle de Warnsdorff en pseudo-code. (2 min 30)
-
-### Partie II : Probabilités (Maths) → Données (NSI) (5 minutes)
-
-**Transition** : *« Comment mesurer statistiquement ce jeu si complexe ? Les probabilités mathématiques rencontrent ici les bases de données informatiques. »*
-
-1. **[Maths] Formule Elo** : formule logistique, calcul numérique deux exemples, suite récurrente. (2 min)
-2. **Pont** : *« Ce modèle probabiliste est stocké et interrogé dans des bases de 3 milliards de parties. »*
-3. **[NSI] SQL sur base de parties** : requête taux de victoire par ouverture, format PGN comme données structurées. (3 min)
-
-### Partie III : Algèbre (Maths) → IA (NSI) (5 minutes)
-
-**Transition** : *« La révolution d'AlphaZero illustre comment l'algèbre linéaire mathématique se traduit en apprentissage automatique. »*
-
-1. **[NSI] Stockfish vs AlphaZero** : tableau comparatif, apprentissage par renforcement. (1 min 30)
-2. **Pont** : *« AlphaZero repose sur des réseaux de neurones, dont la structure est purement algébrique. »*
-3. **[Maths] Réseaux de neurones** : chaque couche = matrice de poids, activation sigmoïde = fonction logistique déjà vue avec Elo. (2 min)
-4. **Portée** : le même AlphaZero a résolu le Go (10^170 parties) et le shogi avec les mêmes principes. (1 min 30)
-
-### Conclusion et ouverture (2 minutes)
-
-**Résumé** en trois phrases : les échecs sont un jeu fini mais combinatoirement inépuisable, les probabilités permettent de le mesurer statistiquement, et l'IA a montré que l'apprentissage pouvait supplanter la programmation.
-
-**Ouverture** : *« Le théorème de Zermelo nous dit que l'issue parfaite des échecs est déterminée. Nous ne la connaissons pas encore. Et peut-être que la machine qui finira par la trouver n'aura été programmée par personne : elle l'aura appris seule. »*
-
-C'est une conclusion philosophique qui reste dans les esprits du jury. Elle dit quelque chose d'important : les mathématiques formelles et l'apprentissage automatique se rejoignent à la frontière de la connaissance.
+Ce découpage totalise dix minutes. Le ministère prévoit ensuite dix minutes d’échange ; ce second temps ne doit pas être ajouté à la durée de ton exposé.
 
 ## Anticiper le jury transversal Maths+NSI
 
@@ -376,13 +334,16 @@ Un jury transversal peut interroger dans les deux directions. Voici les cinq que
 La croissance b^d (Maths, combinatoire) rend l'exploration complète impossible. Le minimax (NSI) est la réponse algorithmique : explorer jusqu'à une profondeur d limitée, évaluer les feuilles avec une heuristique, et propager les scores par récursivité. Sans la borne combinatoire, le minimax ne serait pas nécessaire.
 
 **2. « Quel est le lien entre la fonction logistique Elo et la sigmoïde des réseaux de neurones ? »**
-Ce sont la même fonction : f(x) = 1/(1+e^(−x)) (version continue) ou 1/(1+10^(−x/400)) (version Elo). Dans les deux cas, elle transforme un score réel en probabilité dans [0,1]. AlphaZero utilise la sigmoïde comme fonction d'activation dans ses couches internes : c'est le même outil mathématique que l'Elo.
+Une logistique peut transformer un réel en valeur entre 0 et 1. Ce rapprochement mathématique ne décrit pas les couches internes d’AlphaZero : sa publication décrit notamment des activations ReLU, une sortie de politique softmax et une sortie de valeur tanh. Le modèle Elo et ce réseau ont des fonctions différentes.
+
 
 **3. « Pourquoi l'élagage alpha-bêta réduit-il la complexité de O(b^d) à O(b^(d/2)) ? »**
-Dans le meilleur cas (coups triés parfaitement), alpha-bêta n'explore que √(b^d) = b^(d/2) nœuds. Intuition : au lieu d'un arbre complet de b^d branches, on obtient un arbre « plié » dont la moitié des branches est élagée à chaque niveau.
+O(b^(d/2)) est une borne asymptotique dans le meilleur cas de tri. Une coupure évite d’examiner des réponses qui ne peuvent plus changer le choix d’un ancêtre. Cela ne signifie pas qu’exactement la moitié des branches disparaît à chaque niveau.
+
 
 **4. « En quoi AlphaZero est-il différent de Stockfish du point de vue mathématique ? »**
-Stockfish maximise une fonction d'évaluation codée à la main (règle explicite). AlphaZero minimise une fonction de perte définie par le résultat des parties (apprentissage automatique). Mathématiquement, l'un est une optimisation combinatoire, l'autre est une descente de gradient dans un espace de paramètres de réseaux de neurones (algèbre linéaire + analyse).
+Le contraste historique porte sur Stockfish 8 et AlphaZero dans l’étude de 2017 : recherche alpha-bêta et évaluation conçue à la main d’un côté, réseau entraîné par autojeu associé à MCTS de l’autre. Le Stockfish actuel emploie aussi des réseaux NNUE ; ce n’est donc pas une opposition permanente entre « programmation » et « apprentissage ».
+
 
 **5. « Quel est le rapport entre le chemin hamiltonien (Maths) et la DFS (NSI) ? »**
 Un parcours en profondeur (DFS) est exactement l'algorithme qui explore un graphe en cherchant un chemin hamiltonien par backtracking. Le graphe hamiltonien est l'objet mathématique ; la DFS est son implémentation informatique naturelle. C'est un exemple direct du pont Maths → NSI.
@@ -444,3 +405,13 @@ Et si l'on te demande pourquoi tu as choisi les échecs, la réponse honnête et
 **Après lecture :** fais une **répétition hybride** : cinq minutes maths au tableau (Elo ou combinatoire), cinq minutes oral sur le lien avec une idée NSI (minimax ou données), sans support, comme au jury.
 
 ---
+
+## Sources
+
+- Ministère de l’Éducation nationale (2026). *Baccalauréat : comment se passe le Grand oral ?* [Présentation officielle](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).
+- Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. Philosophical Magazine. [Article original](https://www.computerhistory.org/chess/doc-431614f453dde/).
+- FIDE (2024). *FIDE Rating Regulations*. [Score attendu et coefficients K](https://handbook.fide.com/chapter/B022024).
+- Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*. Pearson. [Recherche adversariale](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
+- Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Préprint](https://arxiv.org/html/1712.01815v1).
+- Équipe Stockfish (sans date). *Stockfish*. [Projet officiel et description NNUE](https://github.com/official-stockfish/Stockfish).
+- Edwards, S., et contributeurs (sans date). *Perft Results*. Chess Programming Wiki. [Décompte des suites légales](https://www.chessprogramming.org/Perft_Results).
