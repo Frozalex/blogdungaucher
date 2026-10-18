@@ -1,0 +1,65 @@
+{
+  "results": [
+    {
+      "slug": "minimax-aux-echecs",
+      "maths": 26,
+      "mathml": 0,
+      "metaParasite": false,
+      "doubleEncodage": false,
+      "h1": 1
+    },
+    {
+      "slug": "graphes-de-nash-equilibre-ouvertures",
+      "maths": 1,
+      "mathml": 0,
+      "metaParasite": false,
+      "doubleEncodage": false,
+      "h1": 1
+    },
+    {
+      "slug": "paradoxe-de-zermelo",
+      "maths": 7,
+      "mathml": 0,
+      "metaParasite": false,
+      "doubleEncodage": false,
+      "h1": 1
+    },
+    {
+      "slug": "theorie-des-jeux-aux-echecs",
+      "maths": 13,
+      "mathml": 0,
+      "metaParasite": false,
+      "doubleEncodage": false,
+      "h1": 1
+    },
+    {
+      "slug": "reseaux-bayesiens-predire-blunder",
+      "maths": 6,
+      "mathml": 0,
+      "metaParasite": false,
+      "doubleEncodage": false,
+      "h1": 1
+    },
+    {
+      "slug": "sujet-grand-oral-maths-combinatoire",
+      "robots": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "slug": "sujet-grand-oral-maths-modeles-limites",
+      "robots": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "slug": "sujet-grand-oral-nsi-minimax",
+      "robots": "noindex, follow",
+      "inSitemap": false
+    },
+    {
+      "slug": "sujet-grand-oral-nsi-alpha-beta",
+      "robots": "noindex, follow",
+      "inSitemap": false
+    }
+  ],
+  "errors": []
+}

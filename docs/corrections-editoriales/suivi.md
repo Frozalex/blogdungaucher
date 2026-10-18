@@ -124,3 +124,39 @@ Corrigé : épuisement sportif distingué du burnout professionnel de l’OMS ; 
 ### echecs-et-le-corps
 
 Corrigé : tutoiement, fréquence cardiaque distinguée de la dépense calorique, 138 kcal de l’étude Troubat présentées comme total du protocole et non supplément. Retirés : narration Karpov, équivalence marathon, gain Elo garanti par l’endurance, explication spéculative des 6 000 calories. Antipov : reportage 2019 relatant 2018, confirmé par [NPR](https://www.npr.org/2019/09/18/762046422/the-chess-grandmasters-diet) ; anecdote retirée au profit des mesures directes. Sources ouvertes et utilisées : [Troubat 2009](https://gwern.net/doc/psychology/chess/2009-troubat.pdf), [Raichle–Gusnard 2002](https://brendans-island.com/blogsource/20151212ff-Documents/PNAS-2002-Raichle-10237-9.pdf). SEO conservé : la description mentionne encore Karpov alors que l’anecdote n’est plus développée. Aucun marqueur ajouté.
+
+## Tutoiement complémentaire — vérification de fond restante
+
+Un commit distinct a été créé pour chacun de ces articles. Cette correction de personne grammaticale ne vaut pas validation des faits ni de la bibliographie :
+
+- `analyser-ses-parties` : corps, essentiel et FAQ.
+- `echecs-et-l-echec` : corps, essentiel et lien de lecture complémentaire.
+- `echecs-estime-de-soi-elo` : titre, extrait, corps et FAQ ; SEO en vouvoiement conservé.
+- `echecs-et-la-solitude` : titre et corps ; SEO en vouvoiement conservé.
+- `echecs-vs-poker-strategie` : paragraphes sur les décisions et la stratégie.
+- `pourquoi-grands-joueurs-perdent-contre-enfants` : FAQ.
+- `echecs-et-visualisation` : FAQ et lien mémoire.
+- `echecs-et-concentration` : lien mémoire.
+- `echecs-et-genetique` : conseil aux parents et coquille « une plus grande part ».
+- `echecs-et-memoire` : alt reformulé sans fausse transcription du texte de l’image.
+- `echecs-vs-go-complexite-intelligence` : paragraphe comparatif.
+
+## Périmètre restant et limites du rapport
+
+Ce suivi n’est pas une déclaration d’achèvement des lots 2 à 4. Le fichier `etat-articles.tsv` recense tous les articles du périmètre et distingue les corrections de fond, le tutoiement seul et les articles encore à traiter. Les articles non repris peuvent encore contenir les erreurs de la relecture initiale. Les sources et illustrations de l’ensemble du corpus ne sont pas encore toutes vérifiées.
+
+Contrôle des modifications depuis `be5bc23` : 40 articles comparés, aucune modification des champs `seoTitle`, `seoDescription`, `publishDate` ou `slug`. Aucun marqueur littéral `[À VÉRIFIER PAR LUC]` présent dans les quatre dossiers du périmètre à la date de ce contrôle. Cela ne signifie pas que tous les faits du corpus sont validés.
+
+### mecanismes-de-defense-aux-echecs — correction ciblée
+
+H1 aligné sur le titre SEO existant « inventaire par niveau » ; promesse d’article à venir remplacée par le lien vers `projection-aux-echecs`, fichier existant. SEO conservé. La vérification des études, de l’échantillon Vaillant, de Perry et de la formulation neurologique reste à faire. `echecs-et-concentration` : deux coquilles « mesurablalement » corrigées en complément du tutoiement, sans valider les délais attentionnels.
+
+## Validation technique de fin de passe
+
+- `npm run build` : succès. Une nouvelle génération `astro build` après les deux dernières corrections, suivie de Pagefind et de tous les traitements et contrôles de fin de build : succès également.
+- Contrôle final : **389 pages, 17 120 liens internes, aucun lien interne mort**. Les liens vers les publications futures sont neutralisés par le traitement existant de navigation publique ; les liens se rétabliront lors de leur publication.
+- Cinq pages vérifiées : minimax (26 formules accessibles), graphes de Nash (1), Zermelo (7), théorie des jeux (13), réseaux bayésiens (6). Aucun MathML doublonné, aucune meta parasite, aucune apostrophe doublement encodée ; un seul H1 par page.
+- Les quatre fiches consolidées portent `noindex, follow` dans le HTML et sont absentes du sitemap. Détails dans `validation-technique.json`.
+- Les quatre SVG ajoutés à stress-tournoi et burnout ont été rendus et inspectés : textes lisibles, aucun chevauchement observé.
+- 40 articles comparés depuis `be5bc23` : aucun changement de SEO, date ou slug. Le champ `noindex` des quatre fiches a été ajouté avec l’autorisation de Luc.
+- Aucun déploiement effectué. Le build réussi ne valide pas les faits des 82 articles non repris dans cette passe, ni ceux des 11 articles corrigés seulement pour le tutoiement. Les corrections ciblées des guides et mécanismes de défense restent également à compléter.
