@@ -20,15 +20,14 @@ tags:
   - cognition spatiale
 keyTakeaways:
   - >-
-    La méta-analyse de référence (Sala et Gobet, 2016) trouve un effet global modéré (g = 0,34) qui tombe à 0,05
-    dès qu'on compare les échecs à une autre activité structurée : l'entraînement spatial est un effet de domaine,
-    pas un don transférable.
+    La synthèse de Sala et Gobet (2017) rapporte un effet global de 0,34 pour les interventions échiquéennes,
+    mais souligne la faiblesse des contrôles expérimentaux. Ce résultat ne démontre pas un gain spatial général.
   - >-
     Le calcul de variantes mobilise des régions pariétales également impliquées dans les tâches de rotation mentale
     (Atherton et al., 2003, IRMf sur joueurs d'échecs).
   - >-
-    Les parties à l'aveugle (*blindfold chess*) poussent la visualisation spatiale à ses limites extrêmes, Viswanathan
-    Anand a disputé 8 parties simultanées à l'aveugle.
+    Les parties à l’aveugle sollicitent la représentation mentale des positions. Guinness documente les
+    48 parties simultanées de Timur Gareyev en décembre 2016.
   - >-
     La visualisation échiquéenne n'est pas photographique : les grands maîtres maintiennent une représentation
     schématique des pièces critiques, pas une image complète de l'échiquier.
@@ -46,33 +45,25 @@ heroImage:
 faq:
   - question: Les échecs améliorent-ils vraiment la vision spatiale ?
     answer: >-
-      Sur l'échiquier, oui, et spectaculairement : un joueur entraîné se représente des positions, calcule des
-      variantes et joue à l'aveugle, ce qu'un débutant ne peut pas faire. Hors de l'échiquier, la réponse honnête
-      est non, ou du moins rien ne le prouve. La méta-analyse de référence (Sala et Gobet, 2016) trouve un effet
-      global de g = 0,34 sur les compétences cognitives et scolaires, mais il tombe à 0,05 quand on compare les
-      échecs à une autre activité structurée plutôt qu'à rien du tout. C'est un entraînement de domaine, pas un
-      gain de capacité spatiale générale.
+      La pratique développe des savoir-faire échiquéens. Elle ne prouve pas une amélioration générale de la
+      vision spatiale. Sala et Gobet (2017) soulignent que les effets estimés diminuent avec la qualité du
+      protocole et que les contrôles actifs étaient particulièrement rares dans les études sur les échecs.
   - question: Comment les grands maîtres visualisent-ils les variantes ?
     answer: >-
-      Pas de manière photographique : c'est un mythe populaire. Les études d'eye-tracking et de protocoles verbaux (de
-      Groot, 1946 ; Charness, 1992) montrent que les grands maîtres maintiennent une représentation schématique des
-      pièces *importantes* pour la variante en cours, pas une image complète de l'échiquier. Ils utilisent des 'ancres
-      spatiales' (des pièces clés dont la position est maintenue précisément) pendant que le reste est traité de façon
-      plus schématique.
+      Les observations de Charness et collègues (2001) montrent une attention plus sélective chez les experts :
+      ils fixent davantage les pièces pertinentes et certaines cases vides. Cela renseigne sur la sélection de
+      l’information, sans donner une photographie complète de leur représentation mentale pendant le calcul.
   - question: Qu'est-ce que la rotation mentale et pourquoi est-ce important aux échecs ?
     answer: >-
       La rotation mentale est la capacité à faire pivoter mentalement un objet tridimensionnel pour l'examiner sous un
       angle différent. Aux échecs, elle s'applique différemment : calculer ce que voit l'adversaire depuis son côté de
       l'échiquier (inverser mentalement la perspective), ou visualiser comment une position évolue après plusieurs coups
-      (transformation temporelle de la position). Ces deux opérations activent des régions similaires à la rotation
-      mentale classique.
+      (transformation temporelle de la position). Cela ne permet pas de conclure que le calcul échiquéen et la rotation mentale sont une seule et même aptitude.
   - question: Les parties à l'aveugle sont-elles bénéfiques pour la visualisation ?
     answer: >-
-      Oui, c'est l'exercice le plus direct pour développer la visualisation. Commencer par des parties simples à
-      l'aveugle contre soi-même (jouer un début d'ouverture de mémoire, puis rouvrir l'échiquier pour vérifier) est
-      accessible à partir d'un niveau intermédiaire. Les parties à l'aveugle complètes contre adversaire sont réservées
-      aux joueurs forts (à partir de 1600-1700 Elo environ), mais des exercices partiels (5-10 premiers coups à
-      l'aveugle) peuvent être pratiqués bien en dessous.
+      Tu peux les utiliser comme exercice de représentation des positions, en commençant par quelques coups
+      d’une ouverture connue et en vérifiant ensuite le plateau. Il n’existe pas ici de seuil Elo validé ni de
+      garantie de progrès. Adapte la difficulté à ce que tu arrives effectivement à suivre.
   - question: Les échecs aident-ils les enfants en mathématiques spatiales ?
     answer: >-
       L'hypothèse est séduisante : géométrie et trigonométrie demandent de se représenter des formes et leurs
@@ -105,15 +96,11 @@ Ces trois composantes sont toutes sollicitées aux échecs, à des degrés diff�
 
 C'est ici qu'il faut être honnête, parce que la littérature ne dit pas ce qu'on aimerait lui faire dire.
 
-La synthèse de référence est celle de Giovanni Sala et Fernand Gobet (2016), qui agrège les études sur le transfert des bénéfices de l'enseignement des échecs vers les compétences scolaires et cognitives. Leur effet global est modéré : **g = 0,34**. De quoi alimenter beaucoup d'articles enthousiastes, et c'est ce qui s'est passé.
+Dans leur synthèse de 2017, Giovanni Sala et Fernand Gobet reprennent les résultats d’une méta-analyse des interventions échiquéennes : l’effet global est de 0,34 écart-type. Mais ce chiffre agrège des protocoles dont les contrôles sont souvent insuffisants.
 
-Sauf que les mêmes auteurs posent immédiatement la question qui tue : à quoi comparait-on les enfants qui apprenaient les échecs ? Dans la plupart des études, à des enfants qui ne faisaient **rien de particulier**. Or un groupe qui reçoit une activité structurée, de l'attention d'adultes et un cadre progresse, à peu près quelle que soit l'activité. Quand on ne retient que les études comparant les échecs à une **autre activité structurée** (un groupe contrôle actif), l'effet moyen tombe à **0,05**. C'est-à-dire rien.
+La même synthèse précise qu’une seule étude sur les échecs utilisait un groupe contrôle actif, avec un effet de 0,10 écart-type. Le chiffre de 0,05 parfois repris dans ce contexte concerne l’entraînement de la mémoire de travail, pas les échecs. On ne peut donc pas le présenter comme un effet spatial démontré du jeu.
 
-Le même constat vaut pour le transfert lointain, que Sala et Gobet ont examiné séparément en 2017 : l'effet estimé contre groupe contrôle actif est proche de zéro, aux échecs comme en entraînement musical ou en entraînement de la mémoire de travail.
-
-Ce que cela veut dire pour le sujet de cet article : **l'entraînement spatial dont on parle ici est un effet de domaine, pas un don transférable**. Tu deviens remarquable pour te représenter un échiquier, et c'est déjà beaucoup. Rien ne permet d'affirmer que cela te rendra meilleur en géométrie ou en lecture de plans.
-
-Une note sur les études plus anciennes, souvent citées dans les brochures de promotion des échecs à l'école : Robert Ferguson a publié en 1995 une synthèse rapportant des gains en pensée créative chez des élèves suivant un programme d'échecs. Ces travaux sont antérieurs aux exigences méthodologiques actuelles et ne comportaient pas de groupe contrôle actif. Ils font partie, précisément, du corpus que Sala et Gobet ont réévalué à la baisse.
+Pour toi, la distinction reste essentielle : apprendre à représenter un échiquier n’établit pas un transfert vers la géométrie ou la lecture de plans. La littérature examinée n’autorise pas cette promesse.
 
 ## Ce que les grands maîtres voient vraiment
 
@@ -123,37 +110,35 @@ La réalité est plus intéressante.
 
 ### La représentation schématique, pas photographique
 
-Des études de protocoles verbaux (demander aux joueurs de décrire à voix haute leur réflexion pendant qu'ils analysent) et de eye-tracking montrent que les experts ne regardent pas uniformément toutes les cases : ils **saccadent** vers les zones pertinentes pour leur variante en cours.
+Dans l’étude de Charness et collègues (2001), les experts choisissent plus vite et plus précisément que les joueurs intermédiaires. Le suivi des mouvements oculaires montre qu’ils fixent davantage les éléments pertinents de la position.
 
-Neil Charness (Florida State University) a montré que les grands maîtres construisent une représentation "épurée" : les pièces importantes pour la variante en cours sont maintenues avec précision, le reste est traité de façon plus schématique et peut même être rappelé de façon inexacte si on les interroge sur des pièces périphériques au milieu d'un calcul.
-
-Ce n'est pas une limitation : c'est une adaptation efficace. Maintenir une représentation complète et précise de toutes les 32 pièces consommerait des ressources cognitives inutilement. Le cerveau expert fait une sélection intelligente basée sur la pertinence.
+C’est un résultat sur la sélection visuelle. Il ne suffit pas à démontrer que les pièces périphériques disparaissent de leur mémoire, ni que tous les grands maîtres visualisent leurs variantes de la même façon. Le schéma ci-dessous illustre une stratégie de sélection ; il ne représente pas une mesure cérébrale.
 
 ![Comparaison de la représentation mentale de l'échiquier : le novice tente une image photographique complète (charge élevée, pièces oubliées), le grand maître maintient une représentation schématique centrée sur les pièces critiques.](/images/echecs-vision-02-schematique-vs-photographique.svg)
 
 ### Les chunks spatiaux
 
-La théorie du "chunking" de [Gobet & Simon](https://fr.wikipedia.org/wiki/Fernand_Gobet) s'applique aussi à la dimension spatiale. Les experts ne voient pas 16 pièces noires séparément : ils voient des "structures" : "roque long avec pions intacts", "structure Carlsbad avec double colonne ouverte", "finale R+P vs R". Ces chunks spatiaux sont reconnus en bloc, pas reconstruits pièce par pièce.
+La théorie du "chunking" présentée dans la synthèse de Sala et Gobet (2017) s'applique aussi à la dimension spatiale. Les experts ne voient pas 16 pièces noires séparément : ils voient des "structures" : "roque long avec pions intacts", "structure Carlsbad avec double colonne ouverte", "finale R+P vs R". Ces chunks spatiaux sont reconnus en bloc, pas reconstruits pièce par pièce.
 
 Cela explique pourquoi les grands maîtres peuvent analyser une position à l'aveugle : ils n'ont pas besoin de mémoriser chaque pièce séparément. Ils mémorisent des configurations significatives, qui ont chacune une logique interne qu'ils peuvent reconstituer.
 
 ## L'activation cérébrale : le cortex pariétal en action
 
-Les études d'IRMf sur la cognition spatiale montrent systématiquement l'implication du **cortex pariétal supérieur**, du **cortex pré-moteur** et du **calepin visuo-spatial** (*visuospatial sketchpad*) du modèle de mémoire de travail de Baddeley, à ne pas confondre avec la boucle phonologique, qui traite le verbal.
+Le **calepin visuo-spatial** (*visuospatial sketchpad*) est une composante fonctionnelle du modèle de mémoire de travail, pas une région anatomique. Il concerne l’information visuelle et spatiale, à distinguer du traitement verbal.
 
 L'étude IRMf d'Atherton et collègues (2003), menée sur des joueurs confrontés à des positions réelles, retrouve des activations pariétales pendant la réflexion échiquéenne, dans des régions également sollicitées par les tâches de rotation mentale.
 
 Le rapprochement est intéressant, mais il faut le prendre pour ce qu'il est : une **ressemblance de localisation**, pas une preuve que les deux tâches entraînent la même chose. Deux activités peuvent allumer les mêmes régions sans que l'entraînement de l'une bénéficie à l'autre, et c'est précisément ce que montrent les données comportementales de la section précédente. L'imagerie dit où ça travaille, pas ce qui se transfère.
 
-L'étude d'[Atherton et al. (2003)](https://www.sciencedirect.com/science/article/pii/S0926641003000418) avait déjà montré des différences d'activation préfrontale et pariétale entre experts et novices lors de la résolution de problèmes d'échecs : les experts activant davantage le cortex préfrontal dorsolatéral (planification) et moins le cortex temporal médian (formation de nouvelles mémoires), ce qui correspond à un mode de traitement plus "fluide" et moins coûteux.
+L’étude d’Atherton et collègues compare l’analyse de positions à une tâche spatiale avec des stimuli visuels similaires. Elle rapporte des activations frontales, pariétales et occipitales ; elle ne démontre pas une supériorité causée par l’entraînement ni le contraste experts/novices décrit parfois à tort.
 
 ## Les parties à l'aveugle : l'exercice ultime
 
 Les parties à l'aveugle (*blindfold chess*) : jouer sans voir l'échiquier, en dictant les coups oralement ou par notation : représentent l'exercice le plus direct de visualisation spatiale aux échecs.
 
-![Les trois niveaux d'entraînement à la visualisation à l'aveugle : du débutant (5-10 coups d'ouverture) à l'avancé (parties complètes), avec les records historiques de Morphy, Pillsbury et Gareyev.](/images/echecs-vision-03-niveaux-aveugle.svg)
+![Les trois niveaux d'entraînement à la visualisation à l'aveugle : du débutant (5-10 coups d'ouverture) à l'avancé (parties complètes), avec une progression illustrative et le record documenté de Gareyev.](/images/echecs-vision-03-niveaux-aveugle.svg)
 
-Historiquement, les exploits à l'aveugle ont fasciné le public : [Paul Morphy](https://fr.wikipedia.org/wiki/Paul_Morphy) jouait 8 parties simultanées à l'aveugle en 1858. [Harry Nelson Pillsbury](https://fr.wikipedia.org/wiki/Harry_Nelson_Pillsbury) en jouait 12 en 1900. Le record actuel, établi par [Timur Gareyev](https://fr.wikipedia.org/wiki/Timur_Gareyev) en 2016, est de 48 parties simultanées à l'aveugle.
+Guinness documente un record de 48 parties simultanées à l’aveugle établi par Timur Gareyev les 3 et 4 décembre 2016. Cet exploit décrit une performance échiquéenne ; il ne mesure pas un transfert vers d’autres tâches spatiales.
 
 Mais les parties à l'aveugle ne sont pas réservées aux grands maîtres. Elles sont un outil d'entraînement scalable :
 
@@ -165,11 +150,9 @@ Mais les parties à l'aveugle ne sont pas réservées aux grands maîtres. Elles
 
 ## Vision spatiale et mathématiques : le lien
 
-Un bénéfice souvent mentionné des programmes d'échecs scolaires est l'amélioration en mathématiques. Les études montrent que ce bénéfice est plus marqué pour les **mathématiques spatiales** (géométrie, trigonométrie, certains aspects de la physique) que pour l'arithmétique ou l'algèbre abstraite.
+Le lien avec la géométrie est une hypothèse intéressante : les deux activités demandent de représenter des relations spatiales. Il faut toutefois une expérience contrôlée pour vérifier qu’apprendre les échecs améliore effectivement les résultats en géométrie. Des régions cérébrales communes ne suffisent pas à le prouver.
 
-Ce résultat fait sens : la géométrie et la physique requièrent exactement les mêmes opérations de rotation mentale, de décomposition spatiale et de transformation que le calcul de variantes aux échecs. Le transfert est réel parce que les deux domaines partagent les mêmes circuits cérébraux.
-
-[Lynn Friedman](https://www.researchgate.net/scientific-contributions/Lynn-Friedman-72399854) (1992) a montré dans une méta-analyse sur le genre et les mathématiques spatiales que les filles tendent à avoir des scores légèrement inférieurs en rotation mentale : un écart qui disparaît avec la pratique. Les programmes d'échecs ciblés pour les filles ont donc un double intérêt : réduire l'écart de genre en mathématiques spatiales et réduire l'écart de représentation dans les clubs d'échecs.
+La synthèse de Sala et Gobet (2017) invite précisément à distinguer cette hypothèse des effets établis sur les tâches entraînées. Les exercices ci-dessous servent donc à travailler ta visualisation échiquéenne, sans promesse de gain scolaire général.
 
 ## Exercices pratiques pour développer la visualisation
 
@@ -183,9 +166,7 @@ Ce résultat fait sens : la géométrie et la physique requièrent exactement le
 
 ## Sources
 
-- Sala, G., & Gobet, F. (2016). Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis. *Educational Research Review*, 18, 46–57. [Texte intégral en accès libre](https://escholarship.org/uc/item/5xc0v159). (Effet global g = 0,34 ; 0,05 contre groupe contrôle actif.)
-- Sala, G., & Gobet, F. (2017). Does far transfer exist? Negative evidence from chess, music, and working memory training. *Current Directions in Psychological Science*, 26(6), 515–520. [PDF en accès libre](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5724589/).
-- Charness, N., Reingold, E. M., Pomplun, M., & Stampe, D. M. (2001). The perceptual aspect of skilled performance in chess : Evidence from eye movements. *Memory & Cognition*, 29(8), 1146–1152.
-- Atherton, M., Zhuang, J., Bart, W. M., Hu, X., & He, S. (2003). A functional MRI study of high-level cognition. *Cognitive Brain Research*, 16(1), 26–31.
-- Gobet, F., & Simon, H. A. (1996). Templates in chess memory : A mechanism for recalling several boards. *Cognitive Psychology*, 31(1), 1–40.
-- Ferguson, R. (1995). Chess in education research summary. *Chess in Education Research Summary*. Paper presented at the Chess in Education, A Wise Move Conference, New York.
+- Sala, G., & Gobet, F. (2017). *Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training*. Current Directions in Psychological Science, 26(6), 515–520. [Texte intégral](https://journals.sagepub.com/doi/10.1177/0963721417712760) : effets et limites des contrôles expérimentaux, ainsi que synthèse de la reconnaissance de configurations.
+- Charness, N., Reingold, E. M., Pomplun, M., & Stampe, D. M. (2001). *The perceptual aspect of skilled performance in chess: Evidence from eye movements*. Memory & Cognition, 29(8), 1146–1152. [Résumé et DOI](https://pubmed.ncbi.nlm.nih.gov/11913751/).
+- Atherton, M., Zhuang, J., Bart, W. M., Hu, X., & He, S. (2003). *A functional MRI study of high-level cognition. I. The game of chess*. Cognitive Brain Research, 16(1), 26–31. [Notice et résumé de l’université des auteurs](https://experts.umn.edu/en/publications/a-functional-mri-study-of-high-level-cognition-i-the-game-of-ches/).
+- Guinness World Records (2016). *Most simultaneous blindfolded chess games (total games)*. [Fiche du record de Gareyev](https://www.guinnessworldrecords.de/world-records/72345-most-simultaneous-blindfolded-chess-wins).
