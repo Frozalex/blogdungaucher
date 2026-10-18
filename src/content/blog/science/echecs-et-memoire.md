@@ -29,8 +29,8 @@ ogImage: /images/blog/echecs-et-memoire-hero.webp
 heroImage:
   src: /images/blog/echecs-et-memoire-hero.webp
   alt: >-
-    Illustration pixel art : profil de tête rempli de pièces d’échecs et d’étoiles sur fond bleu nuit ; texte «
-    Découvrez le pouvoir des échecs sur votre mémoire » à gauche.
+    Illustration pixel art : profil de tête rempli de pièces d’échecs et d’étoiles sur fond bleu nuit,
+    avec une accroche sur la mémoire à gauche.
   credit: Blog d'un Gaucher
   license: Création originale
 faq:
