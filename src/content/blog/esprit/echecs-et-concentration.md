@@ -22,7 +22,7 @@ tags:
 keyTakeaways:
   - >-
     L'attention soutenue (maintenir un effort cognitif élevé pendant plusieurs heures) est l'une des ressources les plus
-    limitées du cerveau humain et se dégrade mesurablalement après 90-120 minutes sans pause.
+    limitées du cerveau humain et se dégrade mesurablement après 90-120 minutes sans pause.
   - >-
     Les études IRMf montrent que les joueurs d'échecs experts activent davantage le réseau de contrôle de l'attention
     (cortex préfrontal dorsolatéral + cortex pariétal) que les novices, même en dehors de l'échiquier.
@@ -49,7 +49,7 @@ faq:
     answer: >-
       L'attention soutenue est une ressource limitée : le cortex préfrontal, qui la gère, consomme beaucoup de glucose
       et de neurotransmetteurs. Après 90-120 minutes d'effort cognitif intense, la qualité de l'attention commence à se
-      dégrader mesurablalement. Les études montrent une augmentation des erreurs de détection et une réduction de la
+      dégrader mesurablement. Les études montrent une augmentation des erreurs de détection et une réduction de la
       vitesse de traitement après ce seuil. Les parties classiques de 4-5 heures poussent bien au-delà de ce seuil
       naturel : d'où l'importance des stratégies de gestion de l'attention.
   - question: La pratique des échecs améliore-t-elle la concentration en dehors de l'échiquier ?
