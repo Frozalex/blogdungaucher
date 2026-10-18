@@ -50,7 +50,7 @@ Shannon (1950) estime un ordre de grandeur d'environ $10^{120}$ pour les suites 
 
 Si tu prends à titre de modèle 35 choix à chacun de 80 demi-coups, tu obtiens :
 
-$$35^{80}\approx 3,39\times 10^{123}.$$
+$$35^{80}\approx 3,35\times 10^{123}.$$
 
 Les hypothèses diffèrent : il ne faut pas écrire que ce calcul est exactement égal au nombre de Shannon. Un demi-coup est le déplacement d'un seul joueur ; un coup complet comprend un coup blanc et un coup noir.
 

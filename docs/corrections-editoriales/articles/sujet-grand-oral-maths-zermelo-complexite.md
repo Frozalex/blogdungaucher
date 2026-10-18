@@ -11,3 +11,8 @@ Question initiale affirmant une preuve d’impossibilité future reformulée. Co
 - [Ministère](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028)
 
 SEO, date et slug conservés. Aucun marqueur « À VÉRIFIER PAR LUC » ajouté.
+
+## Contrôle transversal final
+
+35^80 recomputé : 3,353077…×10^123, soit 3,35×10^123 après arrondi.
+
