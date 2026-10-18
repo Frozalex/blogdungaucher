@@ -24,7 +24,7 @@ faq:
   - question: "Quelle est la part des mathématiques dans le jeu d'échecs ?"
     answer: "Les échecs s'appuient sur plusieurs domaines mathématiques : la combinatoire (le nombre de Shannon évalue à 10^120 le nombre de parties possibles), la théorie des jeux (l'algorithme minimax, formalisé par John von Neumann), la théorie des graphes (problème du cavalier, graphe des déplacements de pièces), les probabilités (évaluation statistique des ouvertures), et l'algèbre linéaire (apprentissage par renforcement dans AlphaZero). Chaque pièce, chaque coup, chaque classement a un substrat mathématique précis."
   - question: "Comment expliquer le classement Elo lors d'un Grand Oral ?"
-    answer: "Le classement Elo, inventé par le physicien Arpad Elo, repose sur la loi logistique : la probabilité qu'un joueur A batte un joueur B vaut 1/(1+10^((Rb-Ra)/400)). Chaque partie met à jour les deux cotes selon l'écart entre le résultat attendu et le résultat réel. C'est un exemple direct de probabilités appliquées et de statistiques bayésiennes accessibles en terminale, ce qui en fait un argument fort pour le jury de mathématiques."
+    answer: "L’approximation logistique 1/(1+10^((Rb-Ra)/400)) représente le score attendu : une victoire vaut 1, une nulle 0,5 et une défaite 0. Ce n’est pas directement la probabilité de gagner. La cote évolue selon l’écart entre score obtenu et score attendu ; la FIDE applique ses tables réglementaires."
   - question: "Qu'est-ce que le problème du cavalier et pourquoi est-il utile au Grand Oral ?"
     answer: "Le problème du cavalier consiste à trouver un chemin sur un échiquier 8×8 où le cavalier visite exactement une fois chacune des 64 cases. Il appartient à la théorie des graphes (chercher un chemin hamiltonien dans le graphe de déplacements du cavalier) et peut être résolu par des algorithmes de backtracking ou la règle de Warnsdorff. C'est un exemple parfait pour illustrer comment la mathématique formelle s'applique à un objet physique posé devant le jury."
   - question: "Comment utiliser AlphaZero comme argument dans un Grand Oral sur les maths et les échecs ?"
@@ -155,7 +155,7 @@ $$
 
 où $R_A$ et $R_B$ sont les cotes Elo respectives. Si $R_A = R_B$, on obtient $\mathbb{P} = \tfrac{1}{2}$. Si $R_A = 2000$ et $R_B = 1600$, on obtient $\mathbb{P} \approx 91\,\%$.
 
-Le score vaut 1, 0,5 ou 0 selon le résultat. Une espérance de 0,5 n’est donc pas une probabilité de victoire de 50 %. Cette formule est une approximation logistique pédagogique ; la FIDE utilise ses tables réglementaires. Cette **fonction logistique**, une fonction en forme de S que l'on rencontre aussi en modélisation démographique, en médecine (probabilité d'un événement clinique) et dans les réseaux de neurones (fonction d'activation sigmoïde). Le faire remarquer au jury montre que tu places l'exemple dans une famille mathématique plus large.
+Le score vaut 1, 0,5 ou 0 selon le résultat. Une espérance de 0,5 n’est donc pas une probabilité de victoire de 50 %. Cette formule est une approximation logistique pédagogique ; la FIDE utilise ses tables réglementaires. Cette **fonction logistique** a une forme en S que l’on rencontre aussi en modélisation démographique, en médecine (probabilité d'un événement clinique) et dans les réseaux de neurones (fonction d'activation sigmoïde). Le faire remarquer au jury montre que tu places l'exemple dans une famille mathématique plus large.
 
 #### Code (Maths → NSI) : calculer un score attendu Elo en Python
 
@@ -235,7 +235,7 @@ def minimax(position, profondeur, est_max):
         return meilleur
 ```
 
-L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)) et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer. Dans le meilleur cas, avec un tri idéal des coups, il réduit l’ordre de grandeur de $O(b^d)$ à environ $O(b^{d/2})$ ; pour $b = 35$ et $d = 10$, le nombre de nœuds passe d'environ $2{,}7 \times 10^{15}$ à $\sim 5{,}2 \times 10^7$. C'est un résultat d'algorithmique accessible en terminale NSI.
+L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)) et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer. Dans le meilleur cas, avec un tri idéal des coups, il réduit l’ordre de grandeur de $O(b^d)$ à environ $O(b^{d/2})$ ; pour $b = 35$ et $d = 10$, les puissances indicatives passent d’environ $2{,}7 \times 10^{15}$ à $\sim 5{,}2 \times 10^7$. C'est un résultat d'algorithmique accessible en terminale NSI.
 
 #### Code (NSI)  -  alpha-bêta (l'optimisation "visible")
 

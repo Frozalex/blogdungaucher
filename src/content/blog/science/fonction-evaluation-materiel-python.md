@@ -32,15 +32,12 @@ keyTakeaways:
 faq:
   - question: "Combien vaut chaque pièce dans un moteur d'échecs ?"
     answer: >-
-      L'échelle usuelle, en centièmes de pion : pion 100, cavalier 320, fou 330, tour 500, dame 900. Les
-      valeurs entières 1/3/3/5/9 remontent à Claude Shannon en 1949 ; le léger avantage donné au fou sur
-      le cavalier est une correction plus tardive, tirée de statistiques de parties. Le roi vaut zéro.
+      L'échelle usuelle, en centièmes de pion : pion 100, cavalier 320, fou 330, tour 500, dame 900 dans ce tutoriel. Ce sont des choix d'implémentation, pas des constantes universelles. Le roi vaut zéro dans ce décompte matériel.
   - question: "Pourquoi le roi vaut-il zéro dans l'évaluation ?"
     answer: >-
       Parce qu'il est toujours présent des deux côtés de l'échiquier. Lui attribuer une valeur, même
       énorme, ajouterait exactement la même constante aux deux camps et ne changerait donc jamais la
-      différence. La perte du roi n'est pas gérée par l'évaluation mais par le générateur de coups : une
-      position sans coup légal est un mat, avec un score séparé.
+      différence. La perte du roi n'est pas gérée par l'évaluation mais par le générateur de coups : position sans coup légal est un mat si le roi est en échec, sinon un pat ; les scores de fin sont traités séparément.
   - question: "Qu'est-ce qu'un centième de pion (centipawn) ?"
     answer: >-
       L'unité universelle des moteurs : un centième de la valeur d'un pion. Elle permet de travailler en
@@ -63,7 +60,7 @@ faq:
 
 Ton moteur [joue des parties complètes](/fr/blog/un-moteur-qui-joue-au-hasard/) et n'a aucune raison de préférer un coup à un autre. Il est temps de lui en donner une.
 
-C'est le rôle de la **fonction d'évaluation** : répondre à « qui est mieux, et de combien ? » en regardant la position, sans jouer un seul coup de plus. Elle rend un nombre, et ce nombre est une opinion. La seule évaluation exacte serait « gagné, nul ou perdu », et [personne ne sait la calculer aux échecs](/fr/blog/paradoxe-de-zermelo/).
+C'est le rôle de la **fonction d'évaluation** : répondre à « qui est mieux, et de combien ? » en regardant la position, sans jouer un seul coup de plus. Elle rend un nombre, et ce nombre est une opinion. Une valeur exacte peut être connue dans certaines positions, notamment des finales couvertes par des tables. L'issue sous jeu parfait depuis la position initiale reste inconnue ; voir [Zermelo](/fr/blog/paradoxe-de-zermelo/).
 
 Cet article code la plus simple des évaluations, celle que tout le monde connaît : compter les pièces. Et il se termine par un résultat que je ne m'attendais pas à mesurer aussi net.
 
@@ -84,9 +81,9 @@ VALEURS = {
 }
 ```
 
-Les valeurs entières 1, 3, 3, 5, 9 remontent à [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) et à son article fondateur de 1949, *Programming a Computer for Playing Chess*. Elles n'ont quasiment pas bougé depuis, ce qui est remarquable pour un domaine où tout le reste a changé trois fois. Le léger avantage donné ici au fou sur le cavalier est une correction plus tardive, tirée de statistiques sur de grandes bases de parties.
+Ces valeurs sont les paramètres choisis pour ce tutoriel. Elles ne sont pas des constantes universelles : leur utilité dépend de l'évaluation complète et des positions.
 
-**Le roi vaut zéro**, et c'est le point qui surprend toujours. Ce n'est pas une négligence : il est présent des deux côtés de l'échiquier, en permanence. Lui donner une valeur, même énorme, ajouterait la même constante aux deux camps et ne changerait jamais la différence. La perte du roi n'est pas gérée par l'évaluation : elle est gérée par le générateur de coups, puisqu'une position sans coup légal est un mat.
+**Le roi vaut zéro**, et c'est le point qui surprend toujours. Ce n'est pas une négligence : il est présent des deux côtés de l'échiquier, en permanence. Lui donner une valeur, même énorme, ajouterait la même constante aux deux camps et ne changerait jamais la différence. La perte du roi n'est pas gérée par l'évaluation : elle est gérée par le générateur de coups, puisqu'une position sans coup légal est un mat si le roi est en échec, et un pat sinon.
 
 ## Le bug de signe, et comment ne pas l'écrire
 
@@ -109,9 +106,9 @@ Ce qui suit est plus important que la fonction elle-même.
 
 Il existe **deux points de vue** sur une évaluation, et les confondre est le bug le plus classique de tout moteur débutant.
 
-Le premier est celui des Blancs : un score positif veut dire « les Blancs sont mieux », quel que soit le camp au trait. C'est la convention d'affichage, celle des barres d'évaluation, celle de la sortie de Stockfish.
+Le premier est celui des Blancs : un score positif veut dire « les Blancs sont mieux », quel que soit le camp au trait. C'est la convention d'affichage, celle des barres d'évaluation, La sortie UCI de Stockfish exprime au contraire le score du point de vue du camp au trait ; l'interface peut l'inverser pour afficher celui des Blancs.
 
-Le second est celui du **camp au trait** : un score positif veut dire « celui qui doit jouer est mieux ». Il change donc de signe à chaque demi-coup. C'est celui qu'exigera l'algorithme négamax de l'article 8, et c'est pour cela qu'on l'écrit tout de suite, séparément.
+Le second est celui du **camp au trait** : un score positif veut dire « celui qui doit jouer est mieux ». La convention de signe change avec le camp au trait ; la valeur peut aussi changer parce que la position a changé. C'est celui qu'exigera l'algorithme négamax de l'article 8, et c'est pour cela qu'on l'écrit tout de suite, séparément.
 
 ```python
 def evaluer(echiquier):
@@ -157,9 +154,9 @@ Tout est vert.
 
 La seconde épreuve demande une explication, parce qu'elle ne cherche **pas** l'égalité. Stockfish évalue avec un réseau de neurones entraîné sur des milliards de positions ; nous comptons des pions. Attendre les mêmes nombres n'aurait aucun sens.
 
-Ce qu'on mesure, c'est l'accord sur ce qui compte : **désigner le même camp comme étant mieux**. Sur 1 305 positions évaluables, c'est le cas 86,5 % du temps, avec seulement 2,4 % de désaccords nets où les deux annoncent au moins un pion d'avance en sens contraire. L'écart médian de 1,5 pion mesure exactement ce que le matériel ne voit pas : l'activité des pièces, la sécurité du roi, la structure de pions.
+Ce qu'on mesure, c'est l'accord sur ce qui compte : **désigner le même camp comme étant mieux**. Sur 1 305 positions évaluables, c'est le cas 86,5 % du temps, avec seulement 2,4 % de désaccords nets où les deux annoncent au moins un pion d'avance en sens contraire. L'écart médian mesure un désaccord entre deux évaluations selon leurs conventions ; il ne décompose pas à lui seul les causes positionnelles de cet écart.
 
-Un mot sur les 193 positions écartées. Stockfish refuse d'évaluer une position où le camp au trait est en échec, au motif qu'une évaluation statique n'a pas de sens tant qu'une capture forcée est en l'air. C'est exactement le problème que l'article 11 traitera sous le nom d'effet d'horizon, et il est intéressant de constater que le meilleur moteur du monde le contourne en refusant de répondre.
+Un mot sur les 193 positions écartées. Stockfish refuse d'évaluer une position où le camp au trait est en échec, dans sa commande de diagnostic statique ; être en échec n'implique pas qu'une capture soit forcée. C'est exactement le problème que l'article 11 traitera sous le nom d'effet d'horizon, et il est intéressant de constater que le meilleur moteur du monde le contourne en refusant de répondre.
 
 ## Le moteur glouton
 
@@ -226,3 +223,10 @@ Le matériel est un moyen, pas un but. On le sait quand on joue aux échecs ; on
 C'est aussi une bonne nouvelle pour la suite de la série. Elle indique que l'effort ne doit pas porter en priorité sur la finesse de l'évaluation, mais sur la profondeur de la recherche. Un moteur qui voit à quatre coups avec une évaluation grossière bat très largement un moteur qui voit à un coup avec une évaluation raffinée. C'est la raison pour laquelle les six articles suivants parlent presque uniquement de recherche.
 
 **Prochain article :** minimax, l'algorithme qui suppose que l'adversaire joue bien. Le moteur cesse enfin de mettre son adversaire pat, et commence à trouver des mats en deux.
+
+## Sources
+
+Le code officiel de Stockfish distingue recherche, évaluation et scores UCI. Le chapitre de Russell et Norvig décrit la séparation entre valeurs terminales et heuristiques.
+
+- Équipe Stockfish (s. d.), search.cpp, code officiel, [texte](https://raw.githubusercontent.com/official-stockfish/Stockfish/master/src/search.cpp).
+- Russell, S. et Norvig, P. (s. d.), Adversarial Search, chapitre des auteurs, [texte](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).

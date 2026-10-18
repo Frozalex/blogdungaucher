@@ -25,7 +25,7 @@ seoDescription: >-
   killers, heuristique d'historique. Mesure du gain en nœuds et en profondeur atteinte.
 keyTakeaways:
   - L'efficacité d'alpha-bêta dépend entièrement de l'ordre des coups, pas de l'algorithme.
-  - MVV-LVA classe les prises en pondérant la victime dix fois plus que l'agresseur, ce qui suffit à ordonner correctement toutes les combinaisons.
+  - MVV-LVA classe les prises en pondérant la victime dix fois plus que l'agresseur, selon une priorité heuristique, sans garantir le meilleur échange.
   - Les coups killers sont les coups tranquilles ayant provoqué une coupure au même étage ailleurs dans l'arbre.
   - "L'heuristique d'historique récompense par le carré de la profondeur : une coupure haute vaut bien plus qu'une coupure dans les feuilles."
   - Trier coûte du temps à chaque nœud. La seule mesure qui compte est donc la profondeur atteinte à budget de temps fixé, pas le nombre de nœuds.
@@ -34,8 +34,7 @@ faq:
     answer: >-
       <em>Most Valuable Victim, Least Valuable Attacker</em> : essayer d'abord de capturer la pièce la
       plus chère avec la moins chère. Le score s'écrit
-      <code>10 × valeur(victime) - valeur(agresseur)</code> ; le facteur dix garantit que la valeur de la
-      victime domine toujours, si bien que « dame prise par pion » passe avant « pion pris par dame »
+      <code>10 × valeur(victime) - valeur(agresseur)</code> ; avec des rangs de pièces assez espacés, le facteur choisi peut faire dominer la valeur de la victime ; avec 320 et 330 pour cavalier et fou, dix ne garantit pas une priorité lexicographique dans tous les cas, si bien que « dame prise par pion » passe avant « pion pris par dame »
       quelles que soient les pièces en jeu.
   - question: "Qu'est-ce qu'un coup killer ?"
     answer: >-
@@ -87,7 +86,8 @@ L'intuition est immédiate : prendre une dame avec un pion est presque toujours 
 return 1_000_000 + 10 * VALEURS[victime.upper()] - VALEURS[agresseur.upper()]
 ```
 
-Le facteur **dix** est ce qui fait fonctionner la formule. Il garantit que la valeur de la victime domine toujours celle de l'agresseur : la pire des prises d'une dame (dame prise par dame, $10 \times 900 - 900 = 8100$) reste classée au dessus de la meilleure des prises d'une tour (tour prise par pion, $10 \times 500 - 100 = 4900$). Sans ce facteur, les deux critères se mélangeraient.
+Le facteur dix favorise la valeur de la victime, sans garantir toutes les priorités avec notre échelle. Par exemple, prendre un fou (330) avec une dame (900) donne 2400, alors que prendre un cavalier (320) avec un pion (100) donne 3100. Si tu veux une priorité stricte par victime puis par agresseur, utilise des rangs de pièces ou un facteur adapté à toute l'échelle.
+
 
 C'est une heuristique franchement rudimentaire. Elle ignore complètement le fait que la case d'arrivée soit défendue : « dame prend pion défendu par pion » est classée avant beaucoup de bons coups. Il existe mieux, l'échange statique (*SEE*), qui simule toute la suite de prises sur une case. Mais MVV-LVA se calcule en deux lectures de tableau, et l'essentiel du bénéfice est déjà là.
 
@@ -203,7 +203,7 @@ Avec un budget de 5 s par position
 
 Six fois moins de positions visitées pour le même résultat, et les scores restent identiques : l'ordonnancement n'a rien changé à ce que le moteur pense, seulement à ce qu'il lui en coûte.
 
-Un détail mérite d'être relevé : le gain en temps (7,5x) dépasse le gain en nœuds (6,1x), alors que le tri coûte du travail supplémentaire à chaque nœud. Ce n'est pas une anomalie. Les nœuds éliminés par l'élagage ne sont pas des nœuds moyens : ce sont ceux du fond de l'arbre, les plus nombreux et les plus chers à traiter puisque chacun exige une génération complète des coups. Économiser un nœud profond vaut plus qu'économiser un nœud proche de la racine.
+Dans cette mesure, le gain en temps (7,5×) dépasse celui en nœuds (6,1×). Ce seul résultat ne permet pas d'en isoler la cause : le coût des nœuds, le tri et les variations d'exécution doivent être examinés séparément.
 
 ## Une demi-profondeur, et pourquoi c'est déjà beaucoup
 
@@ -211,9 +211,9 @@ Le second tableau est nettement moins spectaculaire, et c'est lui qui dit la vé
 
 Six fois moins de nœuds ne donne pas six fois plus de profondeur, mais **une demi-profondeur** en moyenne : 3,58 sans tri, 4,08 avec. Sur douze positions, six demi-coups gagnés au total.
 
-La déception est arithmétique. Avec un facteur de branchement effectif d'environ 5 après élagage, gagner un demi-coup complet de profondeur exige de diviser le travail par 5. Notre facteur 6 nous en offre donc à peine plus d'un, et encore, pas sur toutes les positions : sur les douze testées, la profondeur atteinte ne bouge pas partout.
+La déception est arithmétique. Avec un facteur de branchement effectif d'environ 5 après élagage, gagner un demi-coup de profondeur supplémentaire exige, dans ce modèle simplifié, de diviser le travail par 5. Notre facteur 6 nous en offre donc à peine plus d'un, et encore, pas sur toutes les positions : sur les douze testées, la profondeur atteinte ne bouge pas partout.
 
-Et pourtant, une demi-profondeur, en pratique, c'est énorme. C'est la différence entre voir la fourchette de cavalier et ne pas la voir. Chaque demi-coup de vision supplémentaire vaut, dans les estimations courantes, entre 50 et 100 points Elo à ce niveau de jeu.
+Et pourtant, une demi-profondeur, en pratique, c'est énorme. C'est la différence entre voir la fourchette de cavalier et ne pas la voir. Aucun gain Elo universel ne se déduit d'un demi-coup supplémentaire.
 
 C'est aussi la leçon générale de tout le travail d'optimisation qui suit : **les gains se comptent en facteurs multiplicatifs sur les nœuds et se paient en fractions de profondeur.** Un moteur qui gagne un facteur 1 000 sur son arbre gagne quatre profondeurs, pas mille.
 
@@ -227,4 +227,12 @@ Parce qu'une recherche interrompue ne renvoie rien d'exploitable. Si le moteur a
 
 Ce qui laisse notre moteur avec un défaut rédhibitoire pour un vrai joueur : **il ne sait pas s'arrêter**. On lui donne une profondeur, il rend un coup quand il a fini, que cela prenne une seconde ou dix minutes. Aucune interface, aucune cadence de jeu ne fonctionne ainsi.
 
-**Prochain article :** l'approfondissement itératif, qui consiste à refaire tout le travail à chaque profondeur, et qui est pourtant plus rapide que de chercher directement à la profondeur finale.
+**Prochain article :** l'approfondissement itératif, qui consiste à refaire tout le travail à chaque profondeur, et dont le coût et le bénéfice doivent être mesurés.
+
+## Sources
+
+Le code de recherche de Stockfish fournit un exemple réel de tri et d’historiques. La documentation Python définit le retour NotImplemented utilisé pour les comparaisons de Coup.
+
+- Équipe Stockfish (s. d.), search.cpp, code officiel, [texte](https://raw.githubusercontent.com/official-stockfish/Stockfish/master/src/search.cpp).
+
+- Python Software Foundation (s. d.), Data model, documentation officielle, [texte](https://docs.python.org/3/reference/datamodel.html#object.__eq__).

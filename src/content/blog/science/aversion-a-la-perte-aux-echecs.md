@@ -21,35 +21,14 @@ tags:
 seoTitle: "Aversion à la perte et échecs : une analogie à examiner"
 seoDescription: "Kahneman et Tversky, critique de Gal et Rucker, sacrifices aux échecs : ce que l'aversion à la perte peut éclairer sans expliquer à elle seule tes décisions."
 faq:
-  - question: "Qu'est-ce que l'aversion à la perte ?"
-    answer: >-
-      C'est l'idée, proposée par Daniel Kahneman et Amos Tversky en 1979, selon laquelle une perte
-      produit un effet psychologique plus fort qu'un gain de même ampleur. Le rapport souvent cité est
-      d'environ deux pour un, mais ce chiffre précis est bien plus fragile que sa notoriété ne le
-      suggère.
+  - question: "Qu’est-ce que l’aversion à la perte ?"
+    answer: "Dans la théorie des perspectives de Kahneman et Tversky, les gains et pertes sont évalués relativement à un point de référence, avec une asymétrie en défaveur des pertes. Son ampleur n'est pas une constante universelle."
   - question: "Le rapport de deux pour un est-il exact ?"
-    answer: >-
-      Il est très discuté. David Gal et Derek Rucker ont publié en 2018 une revue concluant que les
-      données n'établissent pas de tendance générale des pertes à peser davantage que les gains, et que
-      tout dépend du contexte. L'asymétrie varie selon les populations, les enjeux et les situations :
-      ce n'est pas une constante.
-  - question: "Pourquoi les joueurs refusent-ils les sacrifices positionnels ?"
-    answer: >-
-      Parce qu'un sacrifice demande d'échanger une perte certaine et immédiate contre un gain incertain
-      et différé. C'est précisément la configuration où l'asymétrie joue le plus fort. Le pion perdu est
-      visible sur l'échiquier, tandis que la compensation n'est qu'une évaluation.
-  - question: "Quel est le point de référence aux échecs ?"
-    answer: >-
-      C'est toute la question, et elle est mal posée dans la plupart des parties. Le nombre de pièces
-      au début n'a aucune valeur normative : le point de référence pertinent est l'évaluation de la
-      position actuelle. Un joueur qui compte le matériel par rapport au départ traite chaque échange
-      comme un solde, alors que seule compte l'évaluation.
-  - question: "Comment s'entraîner à accepter les pertes matérielles justifiées ?"
-    answer: >-
-      En rendant la compensation aussi concrète que le matériel. La règle pratique consiste à formuler
-      la contrepartie en termes vérifiables avant de décider : quelle case obtenue, quelle colonne
-      ouverte, combien de temps gagné, quelle pièce adverse immobilisée. Une compensation nommée résiste
-      beaucoup mieux qu'une compensation ressentie.
+    answer: "Il ne faut pas l'appliquer comme une loi à chaque personne ou chaque décision. Gal et Rucker (2018) contestent notamment la généralité de l'aversion à la perte."
+  - question: "Refuser un sacrifice prouve-t-il ce biais ?"
+    answer: "Non. Cela peut aussi venir d'un calcul incomplet, d'une compensation insuffisante ou d'une préférence pratique. Les études citées ne diagnostiquent pas tes décisions échiquéennes."
+  - question: "Comment travailler un sacrifice ?"
+    answer: "Explique la compensation envisagée et cherche la meilleure défense. Aucun nombre fixe de trois éléments ne garantit que le sacrifice soit bon."
 ---
 
 Position équilibrée, milieu de partie. Tu vois une idée : abandonner un pion pour ouvrir la colonne b et immobiliser son fou de cases blanches. L'évaluation dit que c'est bon. Ton intuition dit que c'est bon.
@@ -58,7 +37,7 @@ Tu ne le joues pas.
 
 Tu joues le coup solide, tu gardes ton pion, et cinquante coups plus tard tu perds une finale légèrement inférieure.
 
-Ce n'est pas une erreur de calcul. C'est une asymétrie dans la façon dont ton cerveau traite ce qui s'ajoute et ce qui se retire.
+L'aversion à la perte est une hypothèse pour comprendre cette hésitation. Sans examiner ton calcul et la position, on ne peut pas conclure que c'est sa cause.
 
 ## Ce que Kahneman et Tversky ont proposé
 
@@ -72,7 +51,7 @@ Et surtout : la fonction qui relie ces variations à leur valeur psychologique n
 
 Le rapport souvent avancé est d'environ **deux pour un**, chiffre qui a fait fortune bien au-delà du domaine.
 
-Deux conséquences découlent directement de cette asymétrie, et toutes deux se voient sur un échiquier.
+Ces notions suggèrent des questions pour l'analyse d'une partie. Leur application aux échecs reste ici une analogie, pas une mesure expérimentale.
 
 **Le point de référence détermine tout.** La même position peut être un gain ou une perte selon ce à quoi on la compare. La question « comment le point de référence est-il fixé » devient centrale.
 
@@ -92,9 +71,9 @@ L'article a déclenché un débat nourri, et plusieurs réponses ont défendu un
 
 C'est la position honnête aujourd'hui. **L'asymétrie n'est pas une loi universelle avec un coefficient fixe. C'est un phénomène contextuel**, et la question utile est de savoir dans quels contextes il se manifeste fortement.
 
-Ce qui rend les échecs intéressants, parce qu'ils réunissent à peu près toutes les conditions favorables.
+Les sources citées ne mesurent pas l'amplification de ce phénomène aux échecs.
 
-## Pourquoi les échecs amplifient le phénomène
+## Comment l'analogie peut éclairer une décision
 
 Trois raisons, et la troisième est la plus importante.
 
@@ -110,7 +89,7 @@ Tu compares donc un fait certain à une opinion. Et l'asymétrie est déjà là 
 
 Le pion part maintenant. L'avantage se réalise, s'il se réalise, dans quinze coups.
 
-Toute la littérature sur la décision converge sur ce point : un coût immédiat et certain contre un bénéfice futur et incertain est la configuration la plus défavorable qui soit. C'est le sujet d'un article à venir de cette série sur la gratification différée.
+Un coût immédiat et un bénéfice incertain ne se comparent pas facilement. Ce sujet rejoint [la gratification différée](/fr/blog/gratification-differee-aux-echecs/), sans établir que cette configuration produit toujours le même choix.
 
 ### 3. Le matériel n'est pas l'objectif, et on l'oublie
 
@@ -128,11 +107,11 @@ C'est ce qui rend le phénomène particulièrement absurde ici, et particulière
 
 Kahneman et Tversky ont montré que tout dépend du point de référence. Aux échecs, cette question a une réponse par défaut, et elle est mauvaise.
 
-Le point de référence spontané de presque tous les joueurs est **l'égalité matérielle du début de partie**. On compte en écarts : j'ai un pion de moins, j'ai la qualité en plus.
+Un point de référence possible est **l'égalité matérielle du début de partie**. On compte en écarts : j'ai un pion de moins, j'ai la qualité en plus.
 
 Or ce point de référence n'a aucune justification. La position de départ n'est pas une norme à laquelle il faudrait revenir : c'est simplement l'endroit où la partie a commencé.
 
-Le point de référence correct est **l'évaluation de la position actuelle**. Et une évaluation intègre le matériel parmi d'autres facteurs, au lieu de le traiter comme un solde à préserver.
+Pour analyser le coup, la référence utile est **l'évaluation de la position actuelle**. Et une évaluation intègre le matériel parmi d'autres facteurs, au lieu de le traiter comme un solde à préserver.
 
 Cette confusion produit des comportements identifiables :
 
@@ -142,7 +121,7 @@ Cette confusion produit des comportements identifiables :
 
 **Refuser de rendre du matériel.** La situation inverse, et elle est très coûteuse : tu as gagné une pièce, tu es sous pression, et rendre cette pièce désamorcerait toute l'attaque adverse pour une position gagnante. Tu ne le fais pas, parce que rendre est une perte par rapport à un point de référence mis à jour cinq coups plus tôt.
 
-Ce dernier cas est le plus instructif, parce qu'il montre que le point de référence **se déplace** dès que l'avantage est acquis. Ce que Kahneman appelait l'effet de dotation.
+Ce dernier cas est le plus instructif, parce qu'il montre que le point de référence **se déplace** dès que l'avantage est acquis. Cela ne suffit pas à diagnostiquer un effet de dotation au sens expérimental.
 
 ## Le protocole
 
@@ -152,7 +131,7 @@ C'est le levier principal, et il consiste à égaliser la visibilité des deux t
 
 Avant de renoncer à un sacrifice, oblige-toi à formuler la contrepartie en **termes vérifiables** : quelle case précise j'obtiens, quelle colonne s'ouvre, quelle pièce devient mauvaise, combien de coups je gagne, quel roi devient inconfortable.
 
-Si tu ne parviens pas à nommer trois éléments concrets, le sacrifice est probablement mauvais, et ton refus est justifié. Si tu en nommes trois, tu viens de rendre la compensation aussi concrète que le pion, et la décision se prend alors sur des bases comparables.
+N'impose pas un quota : une seule menace forcée peut justifier un sacrifice, et trois avantages vagues peuvent ne rien compenser. Vérifie surtout les réponses adverses.
 
 ### 2. Réévalue depuis la position, jamais depuis l'historique
 
@@ -162,27 +141,19 @@ C'est le même remède que celui du biais d'ancrage, et pour cause : dans les de
 
 ### 3. Entraîne-toi sur des positions de sacrifice
 
-C'est le remède le plus efficace, et il est presque uniquement disponible aux échecs. Travaille des recueils de sacrifices positionnels, où la solution consiste précisément à donner du matériel pour une compensation durable.
+C'est une proposition d'entraînement, sans efficacité comparative démontrée dans les sources citées. Travaille des recueils de sacrifices positionnels, où la solution consiste précisément à donner du matériel pour une compensation durable.
 
-L'objectif n'est pas d'apprendre ces positions par cœur. Il est de **construire les motifs qui rendent la compensation visible**. Une compensation reconnue n'est plus une opinion, c'est un motif, et un motif se compare à un pion.
-
-C'est aussi la leçon de l'étude de Cowley et Byrne évoquée dans notre article sur [le biais de confirmation aux échecs](/fr/blog/biais-de-confirmation-aux-echecs/) : ce qu'on croit être une qualité de jugement est souvent une conséquence du répertoire de motifs disponibles.
+L'objectif n'est pas d'apprendre ces positions par cœur. Il est de **construire les motifs qui rendent la compensation visible**. Reconnaître un motif aide à chercher ; il faut encore vérifier qu'il fonctionne dans cette position.
 
 ### 4. Surveille le domaine des pertes
 
 L'autre versant de la théorie est moins connu et tout aussi coûteux : dans une position déjà mauvaise, on devient trop joueur. On lance des attaques désespérées, on refuse les nulles tenables, on complique pour compliquer.
 
-La règle utile est mécanique : dans une position que tu juges perdante, réduis d'un cran le niveau de risque que ton intuition propose. Elle est faussée par la direction, pas par la position.
+Avant de choisir une complication, compare les ressources réelles des deux camps. Dans une position perdante, prendre un risque peut être justifié ; aucune correction mécanique ne convient à toutes les positions.
 
 ## Ce qu'il faut retenir
 
-Kahneman et Tversky ont proposé en 1979 que les gens évaluent des variations par rapport à un point de référence, et que les pertes pèsent plus lourd que les gains équivalents. Le rapport de deux pour un a fait fortune, mais il ne tient pas comme constante : la revue de Gal et Rucker de 2018 conclut que l'asymétrie est contextuelle, et la position raisonnable aujourd'hui est celle d'un phénomène conditionnel plutôt que d'une loi.
-
-Les échecs réunissent précisément les conditions qui l'amplifient. La perte est un objet visible, la compensation est une évaluation. La perte est immédiate, la compensation est différée. Et surtout, le matériel n'est pas l'objectif du jeu : c'est un indicateur de l'objectif, que l'on finit par défendre contre lui.
-
-Le point de référence spontané, l'égalité matérielle du départ, n'a aucune légitimité. Le seul point de référence pertinent est l'évaluation de la position que tu as sous les yeux.
-
-**Après lecture :** sur ta prochaine partie, quand tu écartes un sacrifice, écris les trois éléments concrets de compensation que tu avais identifiés. Si tu n'arrives pas à en écrire trois, tu sais ce qu'il te reste à apprendre à voir.
+La théorie des perspectives et sa critique aident à interroger tes préférences. Elles ne démontrent ni un coefficient universel de douleur ni la cause de chaque sacrifice refusé. À l'analyse, distingue ce que tu craignais de perdre, ce que tu avais calculé et ce que les variantes montrent réellement.
 
 ---
 
@@ -190,7 +161,5 @@ Le point de référence spontané, l'égalité matérielle du départ, n'a aucun
 
 ## Sources
 
-- Kahneman, D., & Tversky, A. (1979). Prospect theory : An analysis of decision under risk. *Econometrica*, 47(2), 263–291.
-- Tversky, A., & Kahneman, D. (1991). Loss aversion in riskless choice : A reference-dependent model. *Quarterly Journal of Economics*, 106(4), 1039–1061.
-- Gal, D., & Rucker, D. D. (2018). The loss of loss aversion : Will it loom larger than its gain? *Journal of Consumer Psychology*, 28(3), 497–516.
-- Kahneman, D., Knetsch, J. L., & Thaler, R. H. (1990). Experimental tests of the endowment effect and the Coase theorem. *Journal of Political Economy*, 98(6), 1325–1348.
+- Kahneman, D. et Tversky, A. (1979), *Prospect Theory: An Analysis of Decision under Risk*, Econometrica, 47(2), 263–292, [original](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf).
+- Gal, D. et Rucker, D. D. (2018), *The Loss of Loss Aversion: Will It Loom Larger Than Its Gain?*, Journal of Consumer Psychology, 28(3), 497–516, [article](https://statmodeling.stat.columbia.edu/wp-content/uploads/2018/06/Loss-of-Loss-Aversion.pdf).

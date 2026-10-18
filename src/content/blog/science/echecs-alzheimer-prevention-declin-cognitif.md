@@ -1,5 +1,5 @@
 ---
-title: "Échecs et Alzheimer : comment stimuler son cerveau pour prévenir le déclin cognitif"
+title: "Échecs et Alzheimer : ce que les études permettent de dire"
 excerpt: >-
   Chiffres extraits de la littérature récente : méta-analyses, cohortes et essais sur jeux de plateau, stimulation
   cognitive et risque de démence, avec les limites statistiques et ce que les échecs peuvent (vraiment) apporter.
@@ -23,15 +23,10 @@ tags:
   - BDNF
   - cognition
 keyTakeaways:
-  - "Cohortes : hazard ratios au niveau population ; pas une garantie pour un individu."
-  - "ALSOP : « jeux actifs » est une catégorie large ; les échecs y sont regroupés avec d’autres loisirs."
-  - "Essais récents : gains souvent plus nets sur humeur ou qualité de vie que sur la cognition globale."
-  - >-
-    Méta-analyses sur les jeux : effets sur scores cognitifs souvent modestes ; pas de preuve robuste d’une protection
-    individuelle contre la démence.
-  - >-
-    Les échecs : stimulation cognitive comme d’autres loisirs ; pas un substitut à suivi médical ou prévention
-    vasculaire.
+  - "La cohorte de Wu et al. mesure des associations, pas un effet causal propre aux échecs."
+  - "Un hazard ratio ne représente pas une probabilité individuelle ni une réduction absolue du risque."
+  - "Les interventions chez des personnes vivant avec une démence n'établissent pas une prévention chez les personnes bien portantes."
+  - "Les jeux peuvent être un loisir et un support d'activité ; aucune dose préventive d'échecs n'est établie ici."
 introVideoAspect: "16:9"
 midArticleVideoAspect: "16:9"
 midArticleVideoHeadingSlug: synthèse-chiffrée--ce-que-disent-quelques-études-clés
@@ -39,27 +34,18 @@ midArticleVideoEyebrow: Données clés
 summaryVideoAspect: "16:9"
 summarySequence: data-reveal
 dataReveal:
-  vizTitle: Jeux, cohortes et incidence (vue synthétique)
+  vizTitle: Associations observées dans ALSOP
   bars:
-    - label: HR démence (littératie)
+    - label: HR activités de littératie
       value: 0.89
       max: 1
-    - label: HR démence (jeux actifs)
+    - label: HR activités mentales actives
       value: 0.91
       max: 1
-    - label: SMD MMSE (Li 2023)
-      value: 2.69
-      max: 4
-  highlight: −11 % / −9 %
-  highlightSub: réduction relative du risque sur 10 ans (ALSOP)
-  source: Wu et al., JAMA Netw Open 2023 ; Li et al., Worldviews Evid Based Nurs 2023
-  takeaway: >
-    À l’échelle des populations, les synthèses et cohortes rapportent des associations entre activités cognitives et
-    risque relatif de démence. Pour une personne donnée, aucune activité isolée ne permet d’inférer un résultat
-    individuel à partir de ces chiffres.
-
-    Les échecs peuvent contribuer au plaisir et à la stimulation mentale comme d’autres activités régulières. Les travaux
-    cités mesurent surtout des tendances agrégées, pas des promesses au cas par cas.
+  highlight: HR ajustés
+  highlightSub: Associations observées, sans effet causal isolé des échecs
+  source: Wu et al., JAMA Network Open, 2023
+  takeaway: "Ces rapports de risques instantanés concernent des catégories d'activités dans une cohorte. Ils ne mesurent pas une protection individuelle propre aux échecs."
 seoTitle: "Échecs et Alzheimer : ce que les études permettent de dire"
 seoDescription: "Loisirs cognitifs et démence : lire les associations observées, distinguer prévention et accompagnement et comprendre pourquoi un effet propre aux échecs reste incertain."
 ogImage: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.webp
@@ -71,138 +57,58 @@ heroImage:
   credit: Blog d'un Gaucher
   license: Création originale
 faq:
-  - question: Les échecs empêchent-ils la maladie d’Alzheimer ?
-    answer: >-
-      Non : aucune activité isolée ne peut garantir l’absence de pathologie neurodégénérative. Les grandes cohortes
-      montrent des associations entre activités mentales régulières et risque relatif plus faible à l’échelle d’une
-      population ; pas une protection individuelle mesurable à coup sûr.
-  - question: Que valent les « pourcentages » de réduction de risque cités dans les publications ?
-    answer: >-
-      Ce sont souvent des hazard ratios ajustés : par exemple une baisse relative de 11 % ou 9 % du risque de démence
-      sur dix ans pour des habitudes fréquentes (littératie ou jeux/puzzles) dans une cohorte précise. Ce n’est pas une
-      garantie personnelle : âge, génétique, santé vasculaire et hasard jouent toujours.
-  - question: Les recherches sur le jeu de Go s’appliquent-elles aux échecs ?
-    answer: >-
-      Partiellement : ce sont des jeux de plateau à charge cognitive élevée, mais les protocoles (durée, malades déjà
-      diagnostiqués vs seniors bien portants) diffèrent. Il faut lire chaque titre comme une pièce du puzzle, pas comme
-      une preuve transférable mot pour mot aux échecs occidentaux.
-  - question: Les échecs modifient-ils l’architecture cérébrale ?
-    answer: >-
-      La pratique prolongée est associée à des différences fonctionnelles sur l’imagerie ; pour le lien jeu → réserves
-      cognitives et transfert, voir nos pages sur la cognition aux échecs et le jeu d’échecs.
+  - question: "Les échecs empêchent-ils Alzheimer ?"
+    answer: "Aucune prévention propre aux échecs n'est démontrée ici. Une association entre activités et incidence de démence dans une cohorte ne prouve pas un effet causal individuel."
+  - question: "Que signifient les HR de 0,89 et 0,91 ?"
+    answer: "Ce sont des rapports de risques instantanés ajustés dans le modèle de Wu et al. Ils ne sont ni des probabilités individuelles ni des baisses absolues de 11 ou 9 points de pourcentage."
+  - question: "Les résultats sur tous les jeux s’appliquent-ils aux échecs ?"
+    answer: "Pas directement. Les catégories regroupent plusieurs activités et les protocoles peuvent concerner des personnes déjà malades. Prévention et accompagnement ne se confondent pas."
+  - question: "Quelle durée de jeu est recommandée pour prévenir la démence ?"
+    answer: "Les sources citées ne donnent pas de dose préventive validée propre aux échecs. Choisis une pratique adaptée et conserve ton suivi de santé."
 ---
 
-Les titres racoleurs promettent parfois une « arme » contre la pathologie souvent nommée maladie d'Alzheimer dans les médias.
+Les titres promettent parfois une « arme » contre Alzheimer. Les recherches sur les loisirs cognitifs posent une question plus précise : quelles activités sont associées à quels résultats, chez quelles personnes et avec quel protocole ?
 
-Les données publiées sont **plus nuancées** : certains essais mesurent des **effets** sur humeur, dépression ou scores cognitifs ; d'autres protocoles ne trouvent **aucune différence** sur la cognition globale dès qu'on durcit les contrôles (essais randomisés, méta-analyses).
+Les échecs peuvent être un loisir stimulant et une occasion d'échange. Cela ne les transforme pas en traitement ni en prévention démontrée de la maladie.
 
-**Objectif de cet article :** rassembler des **chiffres tirés de publications sélectionnées** (tableau et références en bas) et les relier à la **pratique du jeu d'échecs** comme loisir dense et durable : **apprendre**, **progresser**, **ancrer une routine** sans la confondre avec une ordonnance.
+## Une cohorte ne teste pas une prescription
 
-Pour les mécanismes généraux (plasticité, imagerie), compléter avec [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/). Cet article cible avant tout le **joueur** ou la **joueuse** senior, en club ou à la maison.
+Wu et ses collègues (2023) analysent les activités de 10 318 personnes en Australie, âgées d'au moins 70 ans et généralement en bonne santé à l'inclusion. Leur étude examine l'incidence de démence avec des modèles ajustés sur plusieurs caractéristiques.
 
-## Synthèse chiffrée : ce que disent quelques publications clés
+| Catégorie étudiée | HR ajusté | Intervalle de confiance à 95 % |
+| --- | --- | --- |
+| Activités de littératie adulte | 0,89 | 0,85–0,93 |
+| Activités mentales actives | 0,91 | 0,87–0,95 |
 
-Le tableau suivant résume **des ordres de grandeur publiés** ; à interpréter avec leur **intervalle de confiance** et leur **population**.
+Les activités mentales actives regroupent notamment jeux, cartes, échecs, mots croisés et puzzles. L'étude ne permet pas d'en extraire un effet propre aux échecs.
 
-| Travail (référence courte) | Population / design | Chiffres qui comptent |
-| ----- | ----- | ----- |
-| **Wu et al., 2023** : cohorte ALSOP | 10 **318** adultes ≥ 70 ans (Australie), suivi **10 ans** pour un diagnostic démentiel, modèle de Cox ajusté | Activités de **littératie** adulte plus fréquentes : **−11 %** sur l'incidence démentielle rapportée (HR ajusté **0,89**, IC 95 % **0,85–0,93**). Activités mentales **actives** (jeux, cartes, **jeu d'échecs**, mots croisés, puzzles) : **−9 %** (**HR 0,91**, **0,87–0,95**). Effets plus modestes pour loisirs artistiques ou activités mentales passives. |
-| **Li et al., 2023** : méta-analyse jeux et troubles neurocognitifs majeurs | **12** travaux, **877** personnes vivant avec un diagnostic démentiel | Score MMSE : **SMD = 2,69** (IC 95 % **1,88–3,51**, *p* < 0,01) en faveur des interventions « jeu » vs contrôle. Dépression (échelle Cornell) : **SMD = −4,28** (**−6,96** à **−1,60**, *p* < 0,01). Qualité de vie : pas de différence significative globale (**SMD = 0,17**, *p* = 0,74). |
-| **Lin et al., 2015** : Go vs syndrome démentiel | **147** participants randomisés : contrôle, **1 h/j** ou **2 h/j** de Go, **6 mois** | Baisse des scores de dépression MADRS et HADS, hausse du fonctionnement (GAF, RAND-36) vs contrôle (*p* < 0,05 pour plusieurs contrastes). **BDNF sérique** : environ **17,3** ng/ml (contrôle) vs **24,0** et **28,9** ng/ml (groupes joueurs ; *p* < 0,001). À retenir : il s'agit du **weiqi** / Go, pas du **jeu d'échecs** occidental. |
-| **Pozzi et al., 2025** : COGniChESs (échecs & Go) | **69** participants (TCL ou plainte cognitive subjective), randomisation échecs / Go / liste d'attente, **12** séances hebdomadaires | Pas de gain net sur la cognition globale entre groupes ; **qualité de vie** améliorée chez les TCL au jeu (*p* = **0,002**) ; **dépression** diminuée chez les femmes du groupe jeu (*p* = **0,013**). |
-| **Lillo-Crespo et al., 2019** : scoping review | **21** publications sur échecs et troubles démentiels | Synthèse qualitative : **peu de preuves directes chez les personnes déjà diagnostiquées** ; davantage d'arguments pour la **prévention** chez des non-diagnostiqués ; besoin de travaux plus robustes. |
-| **Wu et al., 2024** : randomisation mendélienne | Données GWAS, causalité génétique instrumentée | Association **causale suggérée** entre temps de jeu vidéo sur PC et **fonction cognitive** (β ≈ **0,80**, *p* = **0,001**) ; **pas** d'association significative avec la **cible « maladie d'Alzheimer »** génétique ou le **BDNF**. |
+Ces HR sont des rapports de risques instantanés dans le modèle. Ils ne sont pas une réduction absolue de 11 ou 9 points de pourcentage ni une probabilité individuelle d'éviter Alzheimer. La mesure porte sur la démence, pas exclusivement sur cette maladie.
 
-**Lecture honnête** : ces travaux **ne remplacent pas** la prévention cardiometabolique (pression, glycémie, sommeil, activité physique). Ils montrent surtout que **« jouer sérieusement »** peut **cohabiter** avec des gains psychologiques ou des scores mieux préservés, selon le critère mesuré.
+L'ajustement statistique réduit certaines différences entre participants sans supprimer toutes les explications possibles. Des personnes qui restent en meilleure santé peuvent aussi continuer davantage leurs activités. L'étude ne répartit pas les participants au hasard entre « jouer aux échecs » et « ne pas jouer ».
 
-![Hazard ratios ajustés ALSOP (Wu et al., 2023) : la littératie fréquente réduit de 11 % et les jeux actifs de 9 % le risque démentiel relatif sur 10 ans, avec intervalles de confiance à 95 %.](/images/echecs-alzheimer-01-hazard-ratios.svg)
+## Prévention et accompagnement sont deux questions
 
-## Hazard ratios dans la cohorte ALSOP
+Un essai mené auprès de personnes déjà diagnostiquées peut mesurer une évolution de l'humeur, du fonctionnement ou d'un score cognitif. Même positif, ce résultat ne démontrerait pas une prévention chez des personnes bien portantes.
 
-La cohorte **ALSOP** suit en Australie des sujets âgés initialement peu compromis sur le plan cognitif. Les hazard ratios **0,89** et **0,91** traduisent une **réduction relative modérée** de la probabilité de **développer la maladie d'Alzheimer** ou un syndrome démentiel sur dix **ans** pour des habitudes régulières ; pas une division par deux. Les modèles **ajustent** déjà éducation, statut socio-économique et santé ; il reste une part d'**inobservables** (fragilité avant inclusion, biais de survie).
+Il faut donc examiner la population, le type de jeu, le groupe de comparaison et le critère mesuré. Les résultats d'un autre jeu ou d'un dispositif thérapeutique encadré ne se transfèrent pas automatiquement à une partie d'échecs en club.
 
-Point utile pour qui **joue aux échecs** en club : la catégorie « **jeux, cartes, échecs, mots croisés** » est **regroupée** dans la publication source ; **impossible** d'isoler le seul effet du **jeu d'échecs** à partir de cette ligne. En **France**, aucune cohorte n'a publié l'équivalent à ce jour ; on importe la lecture australienne avec prudence. Une revue grand public synthétique se trouve sur [https://www.inserm.fr/dossier/alzheimer-maladie/](https://www.inserm.fr/dossier/alzheimer-maladie/).
+## Garder les bons critères
 
-## Méta-analyse « game therapy » et MMSE
+Pour une activité de loisir, tu peux choisir un objectif observable : prendre plaisir à une séance, rencontrer d'autres joueurs ou apprendre une finale. Un changement d'humeur ou de qualité de vie compte pour la personne, mais ne mesure pas une modification de la maladie.
 
-La synthèse de **Li et al.** agrège des protocoles **hétérogènes** (types de loisirs, durées). Le **SMD** élevé sur le MMSE invite à la prudence : le MMSE est grossier et sensible au contexte de test ; la **signification statistique** ne dit pas si la différence est **cliniquement majeure** pour chaque patient.
+Aucun nombre de séances par semaine ni durée de 45 ou 60 minutes ne constitue ici une dose préventive validée. Si une étude pilote utilise cette durée, elle décrit son protocole ; elle ne prescrit pas la même chose à tout le monde.
 
-Message positif pour la vie quotidienne : les interventions ludiques structurées montrent souvent un **signal sur la dépression**, ce qui compte pour le **maintien à domicile**, la **concentration** au quotidien et l'adhésion aux soins.
+Tu peux adapter le rythme, la difficulté et le support à tes envies et à ta fatigue. Une partie interrompue ou simplifiée peut rester une activité agréable. L'objectif n'est pas de transformer chaque séance en test de performance.
 
-![Tailles d'effet de la thérapie par le jeu sur le MMSE (SMD 2,69) et la dépression (SMD 4,28) versus absence de différence significative sur la qualité de vie (SMD 0,17, p = 0,74) — Li et al., 2023.](/images/echecs-alzheimer-03-mmse-depression.svg)
+## La santé ne se résume pas au jeu
 
-## Essais ciblés : Go en Chine, échecs en Italie
+L'OMS rappelle que la démence a plusieurs causes et présente des facteurs de risque modifiables, dont l'activité physique et la santé cardiovasculaire. Le jeu ne remplace ni ces dimensions ni un suivi médical adapté.
 
-Sur **147** patients, **six mois** de pratique quotidienne du Go versus absence de partie : variations sur échelles de **dépression** et de **fonctionnement**, et écart marqué sur le **BDNF** ; une molécule souvent présentée comme liée à la neuroplasticité (à ne pas confondre avec un « traitement anti-neurodégénératif » générique).
+Si tu constates des difficultés de mémoire persistantes ou un changement dans les activités quotidiennes, cherche un avis médical plutôt que d'interpréter un score de puzzle ou ton Elo comme un test de dépistage.
 
-![BDNF sérique selon la dose de jeu : 17,3 ng/ml dans le groupe contrôle, 24,0 ng/ml pour 1 heure par jour de Go, 28,9 ng/ml pour 2 heures par jour (Lin et al., 2015, p < 0,001).](/images/echecs-alzheimer-02-bdnf-go.svg)
+Pour les études d'expertise et leurs limites causales, vois [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/). Ici, la conclusion reste limitée : les loisirs cognitifs méritent d'être étudiés, mais les sources citées ne démontrent pas une protection propre aux échecs contre Alzheimer.
 
-Dans COGniChESs (Pozzi et al.), le résultat **frappe par ce qu'il ne montre pas** : pas d'effet net robuste sur **la cognition globale** au bout du protocole, mais des effets sur **qualité de vie** et **humeur** chez certaines sous-populations. Pour une **partie** sérieuse ou une analyse après coup, l'intérêt peut être davantage **humeur / ancrage social** que score cognitif brut. C'est aussi un argument pour la **concentration** soutenue en **communauté** plutôt qu'en isolement à domicile.
+## Sources
 
-## Échecs comme facteur protecteur : revue exploratoire
-
-**Lillo-Crespo et al.** passent en revue **21** publications : la littérature suggère surtout des **bienfaits** cognitifs attendus chez des personnes **non diagnostiquées**, et peu de données solides pour modifier l'évolution chez des patients déjà étiquetés « démence ». Conclusion limpide : il reste à conduire **encore des essais randomisés**.
-
-L'article en **randomisation mendélienne** (**Wu et al., 2024**) sépare ce qui relève de la **fonction cognitive mesurée** de ce qui relève du **diagnostic**. Résultat utile pour calmer les slogans marketing : passer du temps sur des jeux PC n'implique pas mécaniquement une baisse de la probabilité personnelle **AD** dans ce cadre statistique. La revue critique parallèle [https://www.cochrane.org/](https://www.cochrane.org/) liste les méta-analyses qui aboutissent à des conclusions plus tièdes.
-
-## Chess-training pilote chez les seniors
-
-**Cibeira et al., 2021** (pilote, *Geriatric Nursing*) explorent un programme d'**entraînement au jeu d'échecs** sur **12 semaines**, **deux séances de 60 minutes par semaine**. La cible n'est pas d'éviter la pathologie mais de soutenir la **concentration**, l'humeur et les **compétences** mentales du **joueur** senior. Pour calibrer une vidéo intro ou un module Remotion sur la « dose » hebdomadaire, c'est une référence utile : **apprendre** une ouverture, **progresser** sur un thème tactique, **réduire** la rumination après une défaite.
-
-Les analyses comme **Dubois et al., 2024** (JAMA Neurology) rappellent par ailleurs que poser le diagnostic uniquement sur biomarqueurs chez des **sujets** encore asymptomatiques pose des **problèmes éthiques**. **Jouer aux échecs** ne « désamyloïde » pas le cerveau ; ce n'est pas l'**enjeu** du loisir, et ce n'est pas un mauvais point.
-
-## Comparaison avec d'autres loisirs
-
-À l'échelle d'ALSOP, **la lecture**, l'écriture ou les cours présentent le signal le plus régulier sur la probabilité relative. Les jeux de plateau et puzzles donnent un signal modéré, souvent regroupé statistiquement. Le **jeu d'échecs** isolé est rarement individualisable dans ces bases populationnelles : on le cite à l'intérieur de catégories plus larges. Ce point limite ce que le **joueur** peut **développer** comme attente personnelle.
-
-## Stratégies concrètes (sans medicaliser le loisir)
-
-1. **Fixer une dose réaliste** : l'ordre de grandeur **deux fois 45–60 minutes par semaine** apparaît dans les pilotes sur le **jeu d'échecs** ; les essais Go utilisent **1–2 h par jour**, niveau rarement tenable hors cadre thérapeutique encadré.
-2. **Mesurer le bon critère** : si l'objectif est lien social et **communauté**, privilégier club ou cours ; si c'est humeur, accepter que les gains sur la mémoire de travail ou les scores globaux puissent être **absents** sur des tests courts.
-3. **Alterner** puzzles tactiques et **parties** lentes pour **réduire** la fatigue et l'écran, et soutenir la **concentration** plus de **deux ans** d'affilée.
-
-## Top 10 des effets attendus (jeu + vieillissement)
-
-1. **Maintien de l'attention soutenue** : mesurable en laboratoire ; transfert quotidien variable.
-2. **Planification sous contrainte** : proche des tâches exécutives du frontal.
-3. **Régulation émotionnelle après erreur** : utile hors plateau.
-4. **Socialisation structurée** : rendez-vous hebdomadaires, pairs, récits partagés au sein de la **communauté** d'échecs.
-5. **Charge cognitive progressive** : puzzles à difficulté adaptée (success ~70 %).
-6. **Routine santé** : le loisir comme ancrage temporel après la retraite, durable pendant plusieurs **ans**.
-7. **Réduction possible de la rumination** lorsque le jeu est choisi et *flow*.
-8. **Self-efficacy** : progression objective via puzzles résolus, **compétences** mesurables.
-9. **Complémentarité avec marche ou équilibre** : la sphère cognitive vieillit aussi via le corps.
-10. **Plaisir** : variable souvent négligée dans les essais mais cruciale pour **tenir dans le temps**.
-
-**Après lecture :** choisir un critère pour les trois prochains mois (social, humeur ou stimulation cognitive) et une dose réaliste du type **deux fois 45 minutes** par semaine avec une partie lente analysée. Pas trois objectifs à la fois.
-
-![Comparaison des doses hebdomadaires : 7 à 14 heures par semaine dans les essais Go (cadre thérapeutique), contre 1 heure 30 pour 2 séances de 45 à 60 minutes dans le pilote échecs de Cibeira et al. (2021), la seule dose réaliste en club.](/images/echecs-alzheimer-04-dose-hebdo.svg)
-
-## Sources et références scientifiques
-
-**Références avec DOI** (liens `https://doi.org/...`), bibliographie telle qu'exportée en mai 2026. Les titres sont repris du fichier source ; orthographe anglaise conservée pour faciliter la recherche.
-
-1. Lin Q., Cao Y., Gao J. (2015). *The impacts of a GO-game (Chinese chess) intervention on Alzheimer disease in a Northeast Chinese population.* **Frontiers in Aging Neuroscience**. DOI [10.3389/fnagi.2015.00163](https://doi.org/10.3389/fnagi.2015.00163).
-2. Li J., Guo Y., Yang K. *et al.* (2023). *Rehabilitation effects of game therapy in people living with dementia: A systematic review and meta-analysis.* **Worldviews on Evidence-Based Nursing**. DOI [10.1111/wvn.12648](https://doi.org/10.1111/wvn.12648).
-3. Cibeira N., Lorenzo-López L., Maseda A. *et al.* (2021). *Effectiveness of a chess-training program for improving cognition, mood, and quality of life in older adults: A pilot study.* **Geriatric Nursing**. DOI [10.1016/j.gerinurse.2021.04.026](https://doi.org/10.1016/j.gerinurse.2021.04.026).
-4. Pozzi F.E., Spanio A., Gallo F. *et al.* (2025). *Cognitive and social intervention with Go and chess in early and subjective cognitive decline: The COGniChESs study results, with an updated meta-analysis.* **Journal of Alzheimer's Disease**. DOI [10.1177/13872877251401481](https://doi.org/10.1177/13872877251401481).
-5. Wu Z., Pandigama D.H., Wrigglesworth J. *et al.* (2023). *Lifestyle Enrichment in Later Life and Its Association With Dementia Risk.* **JAMA Network Open**. DOI [10.1001/jamanetworkopen.2023.23690](https://doi.org/10.1001/jamanetworkopen.2023.23690).
-6. Lillo-Crespo M., Forner-Ruiz M., Riquelme-Galindo J. *et al.* (2019). *Chess Practice as a Protective Factor in Dementia.* **International Journal of Environmental Research and Public Health**. DOI [10.3390/ijerph16122116](https://doi.org/10.3390/ijerph16122116).
-7. Wu J., Mao Z., Ren Z. *et al.* (2024). *Exploring the impact of computer game playing on cognitive function, Alzheimer's disease risk, and brain-derived neurotrophic factor levels: Basic evidence from Mendelian randomization.* **Digital Health**. DOI [10.1177/20552076241256519](https://doi.org/10.1177/20552076241256519).
-8. Bart W. (2023). *Chess Training for the Elderly: Insights and Prospects as a Dementia Preventive Treatment.* **Medical Research Archives**. DOI [10.18103/mra.v11i7.2.4138](https://doi.org/10.18103/mra.v11i7.2.4138).
-9. Dubois B., Villain N., Schneider L.S. *et al.* (2024). *Alzheimer Disease as a Clinical-Biological Construct-An International Working Group Recommendation.* **JAMA Neurology**. DOI [10.1001/jamaneurol.2024.3770](https://doi.org/10.1001/jamaneurol.2024.3770).
-10. Laws K., Irvine K., Gale T. (2018). *Sex differences in Alzheimer's disease.* **Current Opinion in Psychiatry**. DOI [10.1097/yco.0000000000000401](https://doi.org/10.1097/yco.0000000000000401).
-11. Fang Y., Si X., Wang J. *et al.* (2023). *Alzheimer Disease and Epilepsy.* **Neurology**. DOI [10.1212/wnl.0000000000207423](https://doi.org/10.1212/wnl.0000000000207423).
-
-**Avertissement** : cet article vulgarise des travaux tiers ; il ne remplace ni une consultation médicale ni une analyse individuelle des publications originales.
-
-## Aller plus loin sur le blog
-
-- Pilier **[rubrique Science](/fr/science/)**, pages [mémoire](/fr/blog/echecs-et-memoire/) et [effets sur le cerveau](/fr/blog/les-echecs-et-le-cerveau/).
-
-Le **jeu d'échecs** n'est pas une équation fermée contre la maladie d'Alzheimer ; c'est une **pratique du jeu** longue, parfois mesurable sur humeur ou engagement, rarement réductible à un seul chiffre magique. Dans un rapport honnête aux données, c'est déjà une bonne défense.
-
-## Pour aller plus loin
-
-- [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
-- [Pourquoi les échecs sont un problème mathématique (presque) impossible et comment l'IA s'en sort quand même](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)
+- Wu, Z., Pandigama, D. H., Wrigglesworth, J. et al. (2023), *Lifestyle Enrichment in Later Life and Its Association With Dementia Risk*, JAMA Network Open, [article](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2807256).
+- Organisation mondiale de la santé (2025), *Dementia*, fiche d'information, [texte](https://www.who.int/news-room/fact-sheets/detail/dementia).

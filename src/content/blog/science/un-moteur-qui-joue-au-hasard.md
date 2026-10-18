@@ -2,7 +2,7 @@
 title: "Un moteur d'échecs qui joue au hasard : le premier qui joue vraiment"
 excerpt: >-
   Le plus mauvais moteur possible est aussi le plus instructif à écrire. Il met en place tout ce qui
-  entoure le choix du coup : la boucle de partie, les cinq façons de finir, la notation. Après lui, il
+  entoure le choix du coup : la boucle de partie, cinq cas de fin gérés ici, la notation. Après lui, il
   ne restera qu'une seule ligne à changer pour que le moteur devienne intelligent.
 publishDate: "2027-06-29"
 category: science
@@ -25,7 +25,7 @@ seoDescription: >-
   coups, matériel insuffisant, triple répétition, et génération d'un PGN lisible.
 keyTakeaways:
   - Le mat et le pat se détectent par le même test, l'absence de coup légal, et se distinguent par un second, l'échec.
-  - "Une partie jouée au hasard se termine toujours : la règle des cinquante coups garantit la terminaison."
+  - "Une partie jouée au hasard se termine toujours : notre arrêt à 100 demi-coups sans prise ni coup de pion garantit la terminaison de cette boucle."
   - Sur 500 parties jouées au hasard, 86 % finissent en nulle, dont plus de la moitié par épuisement du matériel. La médiane est de 356 demi-coups.
   - La triple répétition compare l'échiquier, le trait, les droits de roque et les prises en passant disponibles, mais aucun des deux compteurs.
   - La notation algébrique n'a d'utilité que pour les humains. Le moteur travaille en notation UCI du début à la fin.
@@ -42,10 +42,9 @@ faq:
       sans prise ni coup de pion. Or le compteur ne se remet à zéro que sur une prise ou un coup de
       pion, et il n'y a qu'un nombre fini de pièces à prendre et de cases devant les pions, qui ne
       reculent jamais. Le nombre de remises à zéro est donc borné, donc la partie l'est aussi.
-  - question: "Quelles sont les cinq façons de terminer une partie d'échecs ?"
+  - question: "Quelles sont les cas de fin gérés ici une partie d'échecs ?"
     answer: >-
-      Échec et mat, pat, règle des cinquante coups, matériel insuffisant et triple répétition. Un moteur
-      doit toutes les implémenter : oublier la triple répétition, par exemple, lui fera jouer
+      Échec et mat, pat, règle des cinquante coups, matériel insuffisant et triple répétition. Cette liste décrit notre programme ; elle ne couvre pas les abandons, le temps, les accords de nulle ni toutes les positions mortes. Il faut aussi distinguer répétitions réclamables et automatiques. Un programme peut : oublier la triple répétition, par exemple, lui fera jouer
       indéfiniment une position gagnante qu'il ne sait pas convertir.
   - question: "Qu'est-ce que le matériel insuffisant exactement ?"
     answer: >-
@@ -63,7 +62,7 @@ faq:
 
 La [phase 1 de cette série](/fr/blog/perft-verifier-son-generateur-de-coups/) s'est terminée sur un programme qui connaît parfaitement les règles des échecs et qui ne joue pas. Il sait ce qui est permis. Il n'a aucune idée de ce qui est bon.
 
-On pourrait attaquer directement l'évaluation et la recherche. Ce serait une erreur, parce qu'entre « connaître les coups » et « jouer une partie » il reste toute une plomberie : la boucle qui alterne les camps, les cinq façons de terminer, l'écriture de la partie dans un format lisible. Autant l'écrire une bonne fois pendant que le choix du coup est trivial.
+On pourrait attaquer directement l'évaluation et la recherche. Ce serait une erreur, parce qu'entre « connaître les coups » et « jouer une partie » il reste toute une plomberie : la boucle qui alterne les camps, les cas de fin gérés ici, l'écriture de la partie dans un format lisible. Autant l'écrire une bonne fois pendant que le choix du coup est trivial.
 
 D'où le moteur de cet article, le pire qu'on puisse écrire tout en restant légal.
 
@@ -110,7 +109,7 @@ Rien de surprenant, à un détail près : on comptabilise la position **avant** 
 
 Autre détail que la boucle ne contient pas : aucune limite de coups. Ce n'est pas un oubli, et c'est démontrable.
 
-La règle des cinquante coups met fin à la partie après cent demi-coups sans prise ni coup de pion. Le compteur ne se remet à zéro que dans ces deux cas. Or il n'y a qu'un nombre fini de pièces à prendre, et les pions ne reculent jamais : le nombre de remises à zéro possibles est donc borné. Une partie au hasard, aussi absurde soit-elle, se termine toujours.
+Dans ce programme, on arrête automatiquement après cent demi-coups sans prise ni coup de pion : c'est une convention qui suppose la réclamation acceptée. En compétition, les 50 coups permettent une réclamation ; les 75 coups déclenchent une nulle automatique, sous réserve de la priorité du mat. Le compteur ne se remet à zéro que dans ces deux cas. Or il n'y a qu'un nombre fini de pièces à prendre, et les pions ne reculent jamais : le nombre de remises à zéro possibles est donc borné. Une partie au hasard, aussi absurde soit-elle, se termine toujours.
 
 ## Les cinq façons de finir, et l'ordre dans lequel les tester
 
@@ -146,7 +145,7 @@ if len(mineures) == 2 and all(self.cases[case] in "Bb" for case in mineures):
 return False
 ```
 
-Quatre cas seulement sont des nulles immédiates : roi contre roi, roi et fou, roi et cavalier, et les deux fous de même couleur de case. La condition sur la couleur des cases se lit directement dans les indices mailbox : la somme de la rangée et de la colonne a la même parité pour toutes les cases d'une même teinte.
+Ce détecteur reconnaît quatre cas simples de nulles immédiates : roi contre roi, roi et fou, roi et cavalier, et les deux fous de même couleur de case. La condition sur la couleur des cases se lit directement dans les indices mailbox : la somme de la rangée et de la colonne a la même parité pour toutes les cases d'une même teinte.
 
 Le piège est ailleurs, dans un cas qu'on croit en faire partie : **roi et deux cavaliers contre roi**. Le mat y est possible, il n'est simplement pas forçable si l'adversaire joue bien. La FIDE ne déclare donc pas la nulle : la partie continue, et se terminera par la règle des cinquante coups. Un moteur qui range ce cas parmi les nulles immédiates abandonne une position qu'il aurait pu gagner contre un adversaire distrait.
 
@@ -221,7 +220,7 @@ Df3 d6 10.Dxf7+ Txf7 11.Fc3 c5 12.Fa5 Ff5 13.Ta2 Ff6 14.Tb2 Fd3 15.f3 Cc6 16.
 286 demi-coups, matériel insuffisant
 ```
 
-Ce PGN s'ouvre dans n'importe quel visualiseur. Deux détails valent le coup d'œil. Au coup 10, `Dxf7+` : la dame blanche se donne gratuitement avec échec, et le coup est correctement noté. Au coup 98, `e8=T` : le hasard a promu en tour plutôt qu'en dame, ce qui ne serait pas arrivé avec un générateur qui oublie les sous-promotions.
+Cet extrait utilise les lettres françaises. Pour un PGN standard interopérable, exporte N/B/R/Q/K, comme le précise la spécification PGN ; le code de notation fourni ici produit une présentation française. Deux détails valent le coup d'œil. Au coup 10, `Dxf7+` : la dame blanche se donne gratuitement avec échec, et le coup est correctement noté. Au coup 98, `e8=T` : le hasard a promu en tour plutôt qu'en dame, ce qui ne serait pas arrivé avec un générateur qui oublie les sous-promotions.
 
 ## Cinq cents parties au hasard
 
@@ -248,9 +247,9 @@ Longueur : 27 à 628 demi-coups, médiane 356
 
 Trois choses méritent qu'on s'y arrête.
 
-**Le hasard fait nulle dans 86 % des cas**, et pour l'essentiel par épuisement du matériel : les deux camps se dévorent mutuellement jusqu'à ce qu'il ne reste plus de quoi mater. C'est le portrait exact d'un jeu sans plan, où chaque pièce posée en prise est prise.
+**Dans cet échantillon, le hasard fait nulle dans 86 % des cas**, et pour l'essentiel par épuisement du matériel : les deux camps se dévorent mutuellement jusqu'à ce qu'il ne reste plus de quoi mater. C'est le portrait exact d'un jeu sans plan, où chaque pièce posée en prise est prise.
 
-**Le mat survient tout de même une fois sur sept.** C'est plus que ce à quoi on s'attend, et l'explication est un peu vexante pour le hasard : avec un roi qui se promène au centre et une dame adverse encore sur l'échiquier, le mat finit par arriver tout seul. Il n'est pas construit, il est subi.
+**Dans cet échantillon, le mat survient environ une fois sur sept.** C'est plus que ce à quoi on s'attend, et l'explication est un peu vexante pour le hasard : avec un roi qui se promène au centre et une dame adverse encore sur l'échiquier, le mat finit par arriver tout seul. Il n'est pas construit, il est subi.
 
 **Le pat représente 7 % des fins**, contre une fraction de pourcent dans les parties humaines. Les positions dépouillées où un roi n'a plus de case sont précisément celles où le hasard passe le plus de temps.
 
@@ -279,8 +278,15 @@ Six mille cent cinquante positions, dont aucune ne figurait dans le jeu d'essai 
 
 ## Ce que tu as maintenant
 
-Un programme qui joue des parties d'échecs complètes, du premier coup au verdict final, sans jamais produire un coup illégal ni se tromper sur la fin. Il ne lui manque qu'une chose : une raison de préférer un coup à un autre.
+Un programme qui joue des parties d'échecs complètes, du premier coup au verdict final, dont les coups ont été contrôlés sur les parties examinées, avec les conventions de fin précisées plus haut. Il ne lui manque qu'une chose : une raison de préférer un coup à un autre.
 
 C'est l'objet du prochain article, et le premier moment de la série où le moteur commence à ressembler à quelque chose.
 
 **Prochain article :** évaluer une position, en commençant par ce que tout le monde sait faire, compter le matériel. Avec une surprise à la clé : un moteur qui ne fait que ça, sans chercher plus loin qu'un demi-coup, est déjà infiniment meilleur que le hasard, et reste très mauvais.
+
+## Sources
+
+La documentation de python-chess distingue les nulles réclamables, automatiques et le détecteur matériel limité. La spécification PGN fixe les lettres des pièces pour l’export.
+
+- Fiekas, N. et contributeurs (s. d.), Core, documentation python-chess, [texte](https://python-chess.readthedocs.io/en/latest/core.html).
+- Edwards, S. J. (1994), Portable Game Notation Specification and Implementation Guide, spécification, [texte](https://www.saremba.de/chessgml/standards/pgn/pgn-complete.htm).

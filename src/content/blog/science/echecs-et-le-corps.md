@@ -1,9 +1,8 @@
 ---
-title: "Échecs et corps : ce qu'un jeu immobile fait vraiment à votre organisme"
+title: "Échecs et corps : ce qu'un jeu immobile fait vraiment à ton organisme"
 excerpt: >-
-  Un joueur reste assis des heures sans bouger, et termine pourtant vidé, le cœur emballé, parfois plusieurs kilos en
-  moins. Derrière l'image d'un jeu cérébral et sédentaire se cache une charge physiologique réelle, longtemps
-  caricaturée par le mythe des « 6 000 calories ».
+  Tu restes assis pendant la partie et tu peux pourtant finir fatigué. Ce que les mesures de fréquence cardiaque
+  et de dépense énergétique permettent de dire, sans confondre stress, effort cérébral et amaigrissement.
 publishDate: "2026-09-24"
 category: science
 featured: false
@@ -20,20 +19,14 @@ tags:
   - sport
 keyTakeaways:
   - >-
-    Une mesure rapportée en 2018 a montré le grand maître Mikhaïl Antipov brûlant environ 560 calories en deux heures
-    de jeu assis : sa dépense ne tient pas à ses muscles mais à la réponse de stress de tout l'organisme.
+    Troubat et ses collègues (2009) mesurent une accélération cardiaque chez 20 joueurs affrontant un programme ;
+    leur étude ne démontre pas une dépense énergétique comparable à un marathon.
   - >-
-    Le chiffre des « 6 000 calories par jour » est un demi-mythe : penser fort n'augmente que faiblement la dépense du
-    cerveau ; l'amaigrissement vient surtout du cœur accéléré, du cortisol, du sommeil perturbé et de l'appétit coupé.
+    La dépense totale moyenne mesurée sur la partie est de 138 kcal dans ce protocole, pas 138 kcal supplémentaires dues au calcul.
   - >-
-    Lors du marathonien championnat du monde 1984-1985, Anatoli Karpov aurait perdu près de 10 kg ; la rencontre fut
-    interrompue par la FIDE sur fond d'inquiétudes pour la santé des joueurs.
+    Une fréquence cardiaque élevée ne suffit pas à déterminer les calories dépensées : méthode et contexte comptent.
   - >-
-    La qualité des coups se dégrade avec la fatigue et la pression du temps : l'épuisement du joueur finit par
-    s'inscrire sur l'échiquier, en fin de partie comme en fin de tournoi.
-  - >-
-    Les champions contemporains comme Magnus Carlsen ou Fabiano Caruana s'entraînent physiquement : une bonne condition
-    cardiovasculaire amortit la réponse de stress et soutient la concentration sur cinq à six heures.
+    Une fatigue ressentie n’est pas une mesure de calories brûlées ni une preuve de perte de poids.
 seoTitle: "Échecs et physiologie : calories, rythme cardiaque et fatigue"
 seoDescription: "Que mesure-t-on pendant une partie d'échecs ? Fréquence cardiaque, dépense énergétique et fatigue : les résultats de Troubat et les limites des chiffres avancés."
 ogImage: /images/og/echecs-et-le-corps-og.webp
@@ -42,120 +35,69 @@ heroImage:
   alt: >-
     Une chaise vide de profil, le sol usé et marqué juste en dessous d'elle.
 faq:
-  - question: Les échecs font-ils vraiment maigrir ?
+  - question: Une partie d’échecs fait-elle maigrir ?
     answer: >-
-      Au plus haut niveau et sur de longues compétitions, oui, une perte de poids est documentée. Mais elle ne vient pas
-      d'un effort musculaire. Elle s'explique par un faisceau de mécanismes : fréquence cardiaque élevée pendant des
-      heures, hormones de stress (cortisol, adrénaline), sommeil dégradé en tournoi et appétit coupé par la tension. Le
-      joueur mange moins, dort mal et reste sous tension physiologique des jours durant. Pour une partie amicale du
-      dimanche, l'effet est évidemment négligeable.
-  - question: Un joueur d'échecs brûle-t-il 6 000 calories par jour ?
+      Les études citées ne permettent pas de présenter le jeu comme une méthode de perte de poids.
+      Fatigue, fréquence cardiaque et bilan énergétique sont des mesures différentes.
+  - question: Un joueur brûle-t-il 6 000 calories par jour en tournoi ?
     answer: >-
-      C'est un chiffre célèbre, avancé notamment par le neuroendocrinologue Robert Sapolsky pour des grands maîtres en
-      pleine compétition, mais il faut le lire avec prudence. Le cerveau consomme environ 20 % de l'énergie au repos, et
-      réfléchir intensément n'augmente cette dépense que de quelques pour cent. Les milliers de calories supplémentaires,
-      quand elles existent, proviennent de la réaction de stress de tout le corps sur une journée entière, pas du seul
-      « travail » des neurones. Le penser comme une dépense cérébrale pure est trompeur.
-  - question: Pourquoi le cœur s'emballe-t-il pendant une partie d'échecs ?
+      Ce chiffre n’est pas établi par les mesures directes présentées ici. Il ne faut ni l’attribuer au calcul
+      cérébral ni expliquer après coup une dépense dont on n’a pas vérifié la mesure.
+  - question: Que montre l’étude de Troubat ?
     answer: >-
-      Parce que le cerveau ne distingue pas bien un danger physique d'un danger symbolique. Une position critique, une
-      pendule qui descend, la peur de perdre la face déclenchent la même cascade que face à une menace réelle :
-      adrénaline, accélération cardiaque, respiration courte, tension musculaire. Des relevés montrent des fréquences
-      cardiaques de joueurs grimpant à des niveaux dignes d'un effort sportif modéré dans les moments décisifs, alors
-      qu'ils ne bougent pas.
-  - question: Les grands maîtres font-ils du sport ?
+      Chez 20 hommes jouant contre un programme, les auteurs observent une fréquence cardiaque accrue et une dépense
+      totale moyenne de 138 kcal sur la partie. Cela inclut l’énergie que le corps aurait de toute façon utilisée.
+  - question: Que peux-tu faire pour ton confort ?
     answer: >-
-      De plus en plus, oui, et c'est une rupture culturelle. Magnus Carlsen pratique football, basket, tennis et ski et
-      soigne sa condition physique ; Fabiano Caruana a intégré un travail d'endurance à sa préparation. La logique est
-      simple : une partie classique dure cinq à six heures, parfois sur deux semaines de tournoi. Un corps endurant
-      résiste mieux à la fatigue, encaisse la réponse de stress et garde l'esprit clair quand l'adversaire flanche.
-  - question: Les échecs sont-ils officiellement un sport ?
-    answer: >-
-      Sur le plan institutionnel, oui : le Comité international olympique reconnaît la fédération internationale des
-      échecs (FIDE) depuis 1999, ce qui range les échecs parmi les sports reconnus, sans en faire une discipline
-      olympique. Le débat « sport ou jeu » reste vif, mais la charge physiologique réelle d'une partie de compétition est
-      l'un des arguments les plus sérieux en faveur du statut de sport.
+      Prévois une installation confortable et des moments pour changer de position entre les parties.
+      Ces propositions ne garantissent pas un gain Elo et ne remplacent pas une activité physique.
 ---
 
-À l'hiver 1984, le championnat du monde oppose Anatoli Karpov à un Garry Kasparov de vingt-et-un ans. La règle veut que le match se poursuive jusqu'à six victoires. Il s'éternise : quarante-huit parties, près de cinq mois. Et au fil des semaines, le tenant du titre fond. Karpov, déjà mince, aurait perdu près de dix kilos. En février 1985, la FIDE interrompt la rencontre, invoquant notamment l'épuisement des joueurs. Du jamais-vu.
+La partie est finie. Tu es resté assis et tu te sens pourtant vidé. Le cœur a parfois accéléré, les épaules se sont tendues, et tu as passé du temps à retenir des variantes.
 
-Un joueur d'échecs ne court pas, ne saute pas, ne soulève rien. Il est assis. Comment un homme immobile peut-il s'effondrer physiquement ?
+Ce ressenti mérite d’être pris au sérieux. Il ne dit toutefois pas combien de calories tu as brûlées. C’est précisément là que les récits spectaculaires sur les échecs font souvent un raccourci.
 
-## Le paradoxe du sport assis
+## Ce que mesurent les chercheurs
 
-L'image d'Épinal des échecs est celle d'un jeu purement cérébral, l'antithèse du sport. On y voit deux personnes attablées dans le silence, le menton sur les poings. Rien n'y évoque l'effort.
+Troubat, Fargeas-Gluck, Tulppo et Dugué (2009) suivent 20 hommes jouant contre un programme. Ils enregistrent notamment la fréquence cardiaque et les échanges respiratoires, utilisés pour estimer la dépense énergétique par calorimétrie indirecte.
 
-Pourtant, sur le plan institutionnel, les échecs sont reconnus comme un sport : le Comité international olympique a reconnu la fédération internationale (FIDE) en 1999. La justification n'est pas anecdotique. Elle repose sur une idée contre-intuitive mais solide : la compétition d'échecs sollicite l'organisme bien au-delà de ce que l'immobilité laisse croire.
+Le cœur accélère pendant le jeu. La dépense totale moyenne rapportée est de 138 kcal sur l’ensemble de la partie, avec des valeurs comprises entre 102 et 198 kcal. Ce total inclut le métabolisme de base ; ce ne sont pas des calories supplémentaires attribuables au seul calcul. Les auteurs ne trouvent pas de variation significative de la dépense énergétique entre les moments comparés.
 
-Le corps d'un joueur en partie classique n'est pas au repos. Il est en alerte. Et cette alerte, maintenue des heures durant, a un coût mesurable.
+Ce protocole donne une mesure située. Il ne décrit ni tous les joueurs ni une journée complète de championnat du monde. Il ne permet donc pas d’extrapoler directement à une semaine de tournoi.
 
-## Ce que disent les capteurs : cœur, tension, calories
+## Fréquence cardiaque et calories : deux informations différentes
 
-Depuis qu'on équipe les joueurs de cardiofréquencemètres, le tableau s'est précisé. Dans les moments décisifs d'une partie, la fréquence cardiaque grimpe à des niveaux que l'on associe à un exercice physique modéré, alors que le joueur ne fait que rester assis. La respiration se raccourcit, la tension artérielle monte, les muscles se contractent insensiblement.
+Un cardiofréquencemètre mesure d’abord le rythme du cœur. Une estimation calorique calculée à partir de ce signal dépend aussi du modèle utilisé. Elle ne doit pas être assimilée automatiquement à une mesure des échanges gazeux.
 
-Une mesure souvent citée, rapportée en 2018, concerne le grand maître Mikhaïl Antipov : environ 560 calories brûlées en deux heures de jeu. Pour un effort où rien ne bouge, le chiffre surprend. Il ne s'explique pas par les muscles mais par la **réponse de stress** de tout l'organisme.
+Tu peux donc observer une accélération cardiaque sans pouvoir en déduire une dépense comparable à celle d’une course. La présence de stress ne suffit pas à valider n’importe quel chiffre calorique.
 
-Le mécanisme est connu des physiologistes. Une position critique, une pendule qui s'égrène, la perspective d'une défaite humiliante : le cerveau traite ces menaces symboliques presque comme des menaces physiques. Il déclenche la même cascade : adrénaline, cortisol, accélération du cœur, mobilisation du glucose. C'est la vieille réaction de « combat ou fuite », sauf qu'il n'y a ni à combattre ni à fuir. L'énergie est libérée et brûlée sur place, dans un corps qui reste cloué à sa chaise.
+## Le cerveau consomme déjà au repos
 
-## Le mythe des 6 000 calories
+Raichle et Gusnard (2002) rappellent que le cerveau mobilise une part importante de l’énergie de l’organisme même au repos. Les variations locales liées à une tâche s’inscrivent dans cette activité de fond. Une impression d’effort intense n’implique pas une explosion équivalente de sa consommation globale.
 
-C'est ici qu'il faut être rigoureux, car une légende circule. On lit régulièrement qu'un grand maître brûlerait jusqu'à 6 000 calories par jour en tournoi, du seul fait de penser. Le neuroendocrinologue Robert Sapolsky est souvent cité à l'appui. Le chiffre est spectaculaire. Il est aussi trompeur s'il est mal compris.
+L’erreur serait de raisonner ainsi : je suis épuisé après la partie, donc mon cerveau a dépensé des milliers de calories supplémentaires. Pour démontrer une telle dépense, il faudrait la mesurer avec une méthode adaptée et préciser la durée, les conditions et le point de comparaison.
 
-Le cerveau est un organe gourmand : il représente environ 2 % de la masse du corps mais consomme près de 20 % de l'énergie au repos. On pourrait croire qu'un effort de calcul intense fait exploser cette facture. C'est faux, ou presque. Réfléchir très fort n'augmente la dépense cérébrale que de **quelques pour cent**. Le cerveau d'un grand maître en pleine combinaison ne consomme pas radicalement plus que celui d'une personne qui regarde la télévision. La dépense énergétique du tissu nerveux est remarquablement stable.
+## Le chiffre des 6 000 calories
 
-D'où viennent alors les calories perdues, puisque la perte de poids, elle, est bien réelle ? Pas du calcul, mais de tout ce qui l'entoure :
+Il n’est pas établi par l’étude de Troubat. On ne peut pas sauver une estimation non vérifiée en l’expliquant ensuite par le cœur, le cortisol ou le sommeil. Ces mécanismes ne remplacent pas une mesure.
 
-- le **cœur accéléré** pendant des heures, jour après jour, qui à lui seul augmente la dépense ;
-- les **hormones de stress** qui maintiennent l'organisme en surrégime ;
-- le **sommeil dégradé** en tournoi, qui dérègle le métabolisme et l'appétit ;
-- l'**appétit coupé** par la tension, qui fait que le joueur mange moins alors qu'il dépense plus.
+De même, une variation de poids rapportée pendant une compétition ne suffit pas à isoler la cause : elle ne fournit pas à elle seule un bilan énergétique ni une mesure de l’effort cérébral. Le jeu ne doit pas être présenté comme une méthode d’amaigrissement.
 
-Autrement dit, l'amaigrissement du joueur n'est pas la preuve que « penser brûle des calories ». C'est la signature d'un corps soumis à un stress prolongé, qui dort mal, mange peu et reste en tension nerveuse. La nuance n'est pas un détail : elle déplace la cause du cerveau vers l'ensemble de la physiologie du stress.
+## La fatigue reste une expérience réelle
 
-## Karpov, ou le corps qui lâche
+Retirer les chiffres spectaculaires ne rend pas ton ressenti imaginaire. Tu peux avoir du mal à rester attentif, ressentir une tension ou avoir envie de quitter l’échiquier. Note à quel moment cela arrive et ce qui l’accompagne : temps restant, position difficile, absence de pause, inconfort.
 
-Le championnat 1984-1985 reste le cas d'école. Le format sans limite de parties a transformé un duel intellectuel en épreuve d'endurance. À mesure que Kasparov refusait de céder, Karpov s'usait. La perte de poids du champion, estimée autour de dix kilos, est devenue le symbole de ce que la compétition d'échecs peut infliger au corps.
+Ce relevé personnel ne mesure pas une hormone. Il peut en revanche t’aider à organiser les conditions de jeu que tu maîtrises.
 
-L'arrêt de la rencontre par le président de la FIDE, Florencio Campomanes, a fait scandale et nourri d'innombrables théories. Mais l'argument officiel, l'épuisement des deux joueurs, n'était pas absurde au regard de ce que l'on comprend aujourd'hui. Un organisme ne peut pas rester des mois en état d'alerte sans payer un tribut. Le système nerveux s'épuise, les défenses immunitaires baissent, le sommeil se délite.
+## Préparer le corps sans promesse Elo
 
-Karpov n'était pas un cas isolé, seulement le plus visible. Beaucoup de professionnels rapportent finir un tournoi important amaigris, lessivés, parfois malades. Le jeu immobile laisse des traces très matérielles.
+Pour ton prochain tournoi, pense aussi à l’installation : une chaise qui te convient, du matériel prêt et un rythme qui laisse de la place à la récupération. Entre deux parties, tu peux changer de position et marcher un peu si cela te convient.
 
-## La fatigue de décision : quand l'épuisement s'inscrit sur l'échiquier
+Tu n’as pas besoin de copier le programme physique d’un champion. L’intérêt d’une activité hors de l’échiquier ne dépend pas d’un nombre de points Elo gagnés. Les échecs peuvent occuper une place importante dans ta vie sans remplacer les autres formes de mouvement.
 
-La charge physiologique ne reste pas confinée au corps. Elle remonte vers le jeu lui-même.
-
-On observe que la qualité des coups tend à se dégrader en fin de partie et en fin de tournoi, lorsque la fatigue s'accumule. La pression du temps, ces dernières minutes où il faut jouer vite sous peine de perdre au temps, amplifie le phénomène : les erreurs grossières se concentrent statistiquement dans ces fenêtres de tension maximale. Ce n'est pas un hasard de tempérament, c'est une physiologie qui flanche.
-
-La concentration soutenue a un coût qui se cumule. Tenir une attention de haut niveau pendant cinq heures épuise des ressources que le corps doit ensuite reconstituer. C'est précisément ce que vise la [gestion du temps à la pendule](/fr/blog/echecs-gestion-du-temps/) : économiser non seulement des minutes, mais aussi de l'énergie mentale pour les moments où elle comptera le plus. Le joueur fatigué ne voit pas moins de coups par paresse ; il en voit moins parce que la machine biologique qui les calcule est en déficit.
-
-## Pourquoi les champions s'entraînent désormais physiquement
-
-Comprendre cela a changé la préparation de l'élite. Là où l'on imaginait le maître d'échecs comme un pur esprit, les meilleurs joueurs actuels soignent leur corps comme des athlètes.
-
-Magnus Carlsen en est l'exemple le plus net : football, basket, tennis, ski, et une attention constante à sa condition physique. Fabiano Caruana, son rival, a intégré l'endurance à son entraînement. Ce virage n'est pas une coquetterie. Il répond à une logique implacable : si la fatigue physiologique dégrade le jeu en fin de partie, alors améliorer son endurance, c'est directement améliorer ses résultats.
-
-Une bonne condition cardiovasculaire amortit la réponse de stress, stabilise la fréquence cardiaque, retarde l'épuisement. Le joueur entraîné garde l'esprit clair à la cinquième heure, quand l'adversaire commence à voir trouble. Dans un sport où une seule erreur peut renverser une partie, ce surcroît d'endurance vaut des points Elo. Le corps est devenu une variable de performance à part entière.
-
-## Et pour le joueur du dimanche ?
-
-Tout ce qui précède décrit l'élite en compétition. Pour l'immense majorité des joueurs, une partie entre amis ou quelques blitz en ligne ne déclenchent rien de comparable. La réponse de stress existe, mais elle est modeste, brève, et sans conséquence métabolique notable. Personne ne maigrit en jouant une partie tranquille le dimanche après-midi.
-
-Le paradoxe, c'est que pour l'amateur, le vrai risque corporel est exactement inverse : non pas l'excès de tension, mais l'**excès d'immobilité**. Des heures passées courbé sur un écran à enchaîner les parties rapides, c'est de la sédentarité pure, avec son cortège ordinaire : dos tendu, nuque raide, yeux fatigués, circulation au ralenti. Le danger n'est pas de brûler trop de calories, c'est de ne pas en brûler du tout, posture figée et regard rivé à l'écran.
-
-La leçon pratique est donc symétrique de celle des professionnels. Le champion ajoute du sport pour encaisser le stress ; l'amateur, lui, gagnerait surtout à se lever, à marcher entre deux parties et à soigner sa posture. Dans les deux cas, le corps n'est pas l'ennemi du jeu : il en est le support, qu'il faut entretenir pour des raisons opposées.
-
-## Ce que le corps nous apprend du jeu
-
-L'histoire du joueur d'échecs amaigri n'est donc pas une curiosité. Elle dit quelque chose de profond sur la nature du jeu.
-
-Les échecs ne sont pas un exercice purement abstrait, suspendu au-dessus de la chair. Ils mobilisent l'organisme entier par le canal du stress, de l'attention prolongée, de l'émotion compétitive. Le cerveau ne brûle pas des milliers de calories en pensant, mais le corps, lui, paie le prix de l'angoisse, de la vigilance et de la durée.
-
-C'est pourquoi traiter la préparation physique comme une composante sérieuse de l'entraînement n'a rien d'un gadget. C'est la reconnaissance que l'esprit ne joue jamais seul : il joue avec, et parfois contre, le corps qui le porte. Le sport le plus immobile du monde est aussi, à sa manière, une épreuve d'endurance.
+Pour poursuivre : [la gestion du temps à la pendule](/fr/blog/echecs-gestion-du-temps/) et [le stress en tournoi](/fr/blog/echecs-stress-tournoi/).
 
 ## Sources
 
-- Kumar, A. (2019). Why grandmasters like Magnus Carlsen lose weight playing chess. *ESPN*.
-- Sapolsky, R. (2004). *Why Zebras Don't Get Ulcers* (3ᵉ éd.). Henry Holt.
-- Raichle, M. E., & Gusnard, D. A. (2002). Appraising the brain's energy budget. *PNAS*, 99(16).
-- Kasparov, G. (2008). *Modern Chess, Part Two: Kasparov vs Karpov 1975-1985*. Everyman Chess.
-- Comité international olympique (1999). *Reconnaissance de la FIDE*. CIO.
+- Troubat, N., Fargeas-Gluck, M.-A., Tulppo, M., & Dugué, B. (2009). *The stress of chess players as a model to study the effects of psychological stimuli on physiological responses: an example of substrate oxidation and heart rate variability in man*. European Journal of Applied Physiology, 105, 343–349. [Article](https://gwern.net/doc/psychology/chess/2009-troubat.pdf).
+- Raichle, M. E., & Gusnard, D. A. (2002). *Appraising the brain’s energy budget*. PNAS, 99(16), 10237–10239. [Article](https://brendans-island.com/blogsource/20151212ff-Documents/PNAS-2002-Raichle-10237-9.pdf).

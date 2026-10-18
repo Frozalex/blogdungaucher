@@ -34,49 +34,22 @@ heroImage:
   credit: Blog d'un Gaucher
   license: Création originale
 faq:
-  - question: "Les échecs seront-ils \"résolus\" un jour ?"
-    answer: >-
-      Au sens fort (issue prouvée depuis la position initiale, comme les dames depuis 2007),
-      <strong>probablement jamais</strong>. La borne $10^{120}$ + le résultat EXPTIME-complet rendent la
-      résolution physiquement inatteignable par force brute. Une preuve <strong>indirecte</strong> (par
-      symétrie, invariant, argumentation théorique) reste théoriquement possible mais sans piste sérieuse. Le
-      calcul quantique réduit la borne de moitié (Grover) : $10^{60}$ reste astronomique.
-  - question: "Quelle différence entre \"résoudre\" et \"battre l'humain\" ?"
-    answer: >-
-      "Résoudre" = prouver l'issue mathématique exacte sous jeu parfait. "Battre l'humain" = être en moyenne
-      plus proche de la stratégie optimale qu'un cerveau humain. Stockfish bat n'importe quel humain à ~3500
-      Elo sans jamais résoudre. Inversement, un programme qui résoudrait les échecs ne serait pas forcément
-      plus fort que Stockfish <em>par coup</em> : la résolution est une vérité globale, pas une supériorité
-      locale.
-  - question: "Pourquoi AlphaZero a-t-il \"battu\" Stockfish si tous deux sont des approximations ?"
-    answer: >-
-      Parce qu'à un instant donné, l'approximation par réseau de neurones + MCTS d'AlphaZero était plus
-      proche de la vérité Zermelo que l'approximation par alpha-bêta + évaluation manuelle de Stockfish
-      (version 8 de l'époque). Depuis 2020, Stockfish a intégré NNUE (réseau de neurones efficace dans
-      l'évaluation) et a repris l'avantage dans les tournois TCEC. La course continue.
-  - question: "Le nombre de Shannon est-il une mesure exacte ?"
-    answer: >-
-      Non. C'est une <strong>estimation d'ordre de grandeur</strong> du nombre de parties possibles ($\sim
-      10^{120}$), pas du nombre de positions légales distinctes ($\sim 10^{43}$ selon estimations plus
-      récentes, encore débattu). La confusion entre les deux est très fréquente. La distinction matters :
-      pour résoudre les échecs, c'est le nombre de positions qui compte (pour stocker), mais c'est l'arbre
-      des parties qui borne le temps d'exploration.
-  - question: "Si un humain ne peut pas tout calculer, à quoi sert de progresser ?"
-    answer: >-
-      À deux choses : (1) améliorer ta <strong>fonction d'évaluation interne</strong> (sens positionnel), (2)
-      améliorer ton <strong>élagage intuitif</strong> (rejeter rapidement les mauvais candidats). C'est
-      exactement la stratégie des moteurs. La différence entre 1200 et 2400 Elo n'est pas une explosion de
-      calcul brut : c'est une approximation beaucoup plus fine de la vérité avec à peu près le même nombre de
-      positions effectivement examinées.
+  - question: "Les échecs seront-ils résolus un jour ?"
+    answer: "On ne le sait pas. L'exploration exhaustive est hors de portée des méthodes actuelles, mais cela n'exclut pas une autre forme de preuve. Le résultat EXPTIME concerne une généralisation du jeu, pas une impossibilité démontrée pour l'échiquier 8×8."
+  - question: "Quelle différence entre résoudre et battre un humain ?"
+    answer: "Résoudre exige une preuve du résultat sous jeu parfait. Gagner des parties contre des humains mesure une performance dans certaines conditions, sans établir cette preuve. Les cotes de moteurs et les classements humains ne sont pas directement interchangeables."
+  - question: "Le nombre de Shannon est-il exact ?"
+    answer: "Non. L'ordre de grandeur $10^{120}$ décrit la taille estimée d'un arbre de parties, pas un décompte exact des positions légales distinctes."
+
 ---
 
-Tu as déjà vécu ce paradoxe : les applis et les médias te vendent le [jeu d'échecs](https://fr.wikipedia.org/wiki/%C3%89checs) comme un objet d'une complexité cosmique, un jeu où chaque joueur trace une stratégie sur le long terme ; puis tu ouvres une appli, tu joues un coup raisonnable, et le moteur te corrige puis t'explique une ligne introuvable pour toi seul.
+Tu as déjà vécu ce paradoxe : les applis et les médias te vendent le [jeu d'échecs](https://fr.wikipedia.org/wiki/%C3%89checs) comme un objet d'une complexité immense, un jeu où chaque joueur trace une stratégie sur le long terme ; puis tu ouvres une appli, tu joues un coup raisonnable, et le moteur te corrige puis t'explique une ligne introuvable pour toi seul.
 
 Alors quoi ? Peut-on vraiment tout ramener à des formules ? Ce jeu est-il un problème mathématique auquel les mathématiques et l'informatique apportent des réponses partielles ou est-ce une légende qu'on se répète pour se donner l'air profond ? La réponse tient en deux étapes : cette discipline est impossible à traiter par force brute sur tout l'espace des parties, mais elle devient jouable à un niveau surhumain dès que tu acceptes de mesurer le réel grâce à des programmes où se combinent exploration, évaluation, élagage et, aujourd'hui, apprentissage sur des machines très puissantes.
 
 ![Schéma d'un plateau 8×8, jeu d'échecs et configurations discrètes](/images/echecs-ia-01-plateau.svg)
 
-La vérité est plus intéressante que le mythe : aucune liste finie de coups ne "ferme" le jeu comme un énoncé formel clos et pourtant, des programmes battent régulièrement les meilleurs joueurs humains parce qu'ils ne cherchent pas la perfection absolue, seulement une décision assez bonne face à un adversaire réel.
+La vérité est plus intéressante que le mythe : aucune solution complète depuis la position initiale n'est connue et pourtant, des programmes battent régulièrement les meilleurs joueurs humains parce qu'ils ne cherchent pas la perfection absolue, seulement une décision assez bonne face à un adversaire réel.
 
 ## L'échiquier vu de l'intérieur : un graphe d'états, pas un chaos
 
@@ -92,7 +65,7 @@ Si tu veux être un peu formel, tu peux voir ça comme un [graphe orienté](http
 
 ## L'arbre des coups : pourquoi "je calcule tout" est un mythe
 
-À ton niveau de club, tu as peut-être déjà entendu un joueur dire : "J'ai tout calculé." C'est une phrase qui sonne bien, mais elle est presque toujours fausse à la rigueur : même les grands maîtres et les champions ne parcourent aucune fraction complète de l'arbre ; du joueur de club au grand maître, chacun n'effleure qu'une infime partie des branches. Ils calculent une petite partie, et ils le font bien.
+À ton niveau de club, tu as peut-être déjà entendu un joueur dire : "J'ai tout calculé." C'est une phrase qui sonne bien, mais elle est presque toujours fausse à la rigueur : même les grands maîtres et les champions ne parcourent qu'une petite partie de l'arbre ; du joueur de club au grand maître, chacun n'effleure qu'une infime partie des branches. Ils calculent une petite partie, et ils le font bien.
 
 Les ouvrages notent souvent \(b\) le nombre moyen de coups possibles (facteur de branchement), \(d\) la profondeur explorée en demi-coups (*plies*), et \(N(b,d)\) le nombre approximatif de nœuds à explorer ; une approximation naïve donne \(N(b,d) \approx b^d\). Dès que tu ajoutes de la profondeur, tu ne rajoutes pas "un peu" de travail : tu multiplies le travail, c'est une loi des mathématiques : l'exponentielle. Elle explique pourquoi même les machines les plus rapides restent contraintes par le temps disponible et la mémoire, même avec les meilleurs algorithmes connus.
 
@@ -106,7 +79,7 @@ Pour endiguer cette explosion, il n'y a pas de magie : il faut couper, estimer, 
 
 ![Arbre d'exploration : explosion combinatoire b^d dans ce jeu](/images/echecs-ia-03-arbre.svg)
 
-## Le nombre de Shannon : le "wow" qui n'est pas qu'un gimmick
+## Le nombre de Shannon : un ordre de grandeur
 
 [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon), professeur au [MIT](https://fr.wikipedia.org/wiki/Massachusetts_Institute_of_Technology) et père de la [théorie de l'information](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_l%27information), a posé au milieu du XXe siècle une question de mathématiques : combien de parties d'échecs sont possibles ? Son estimation, devenue célèbre, aboutit à \(10^{120}\), le [nombre de Shannon](https://fr.wikipedia.org/wiki/Nombre_de_Shannon). Attention : ce chiffre n'est pas une vérité gravée dans le marbre ; c'est une mesure pour saisir l'échelle, pas une liste exhaustive de configurations atteignables. Ce qui rend ça fascinant, c'est que cette impossibilité ne vient pas d'un détail technique mais d'une loi profonde : l'espace des possibles est si vaste que "tout explorer" est hors de portée, même pour les algorithmes les plus avancés.
 
@@ -114,7 +87,7 @@ Pour endiguer cette explosion, il n'y a pas de magie : il faut couper, estimer, 
 
 ## Pourquoi ce jeu n'est pas "résolu" (et pourquoi ça n'empêche pas de gagner)
 
-Un jeu est "[résolu](https://fr.wikipedia.org/wiki/Jeu_r%C3%A9solu)" au sens des mathématiques lorsque l'issue du jeu parfait (victoire, défaite, nul) est connue depuis la position initiale et/ou qu'une stratégie optimale est entièrement décrite. La [théorie des jeux](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux), héritée de [John von Neumann](https://fr.wikipedia.org/wiki/John_von_Neumann), fournit un outil pour parler de joueurs rationnels et d'[équilibre de Nash](https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash) ; ici, la structure est surtout celle d'un duel à information quasi parfaite.
+Un jeu est "[résolu](https://fr.wikipedia.org/wiki/Jeu_r%C3%A9solu)" au sens des mathématiques lorsque l'issue du jeu parfait (victoire, défaite, nul) est connue depuis la position initiale et/ou qu'une stratégie optimale est entièrement décrite. La [théorie des jeux](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux), héritée de [John von Neumann](https://fr.wikipedia.org/wiki/John_von_Neumann), fournit un outil pour parler de joueurs rationnels et d'[équilibre de Nash](https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash) ; ici, la structure est surtout celle d'un duel à information parfaite.
 
 Le tableau suivant résume la différence entre quelques jeux célèbres et les échecs, le seul tableau de cet article.
 
@@ -127,13 +100,12 @@ Le tableau suivant résume la différence entre quelques jeux célèbres et les 
 
 Une confusion fréquente : "Si ce n'est pas résolu, un moteur ne peut pas être sûr." C'est exact au sens formel, mais ce n'est pas le but. En usage réel, un moteur n'a pas besoin de résoudre la position initiale pour te battre : il doit jouer suffisamment proche de l'optimal dans les situations réelles. Le théorème qui garantit qu'une réponse *existe* (sans qu'on puisse la trouver) est analysé en détail dans [le paradoxe de Zermelo](/fr/blog/paradoxe-de-zermelo/).
 
-### EXPTIME-complet : le résultat de complexité que personne ne contournera
+### EXPTIME-complet : attention à la généralisation
 
-Sur le plan strict de la complexité algorithmique, **les échecs généralisés** (sur un échiquier $n \times n$) appartiennent à la classe **EXPTIME-complet** : tout algorithme correct pour résoudre la position initiale demande un temps exponentiel en $n$. C'est le résultat de [Fraenkel et Lichtenstein (1981)](https://doi.org/10.1016/0097-3165(81)90016-9). EXPTIME-complet signifie quelque chose de très fort : **aucun progrès algorithmique** n'amènera la résolution dans une classe polynomiale, sauf à briser une hiérarchie fondamentale de la théorie de la complexité (EXPTIME $\neq$ P, démontré). C'est l'un des rares résultats où l'on a une **preuve d'impossibilité** plutôt qu'une simple absence de solution.
+Fraenkel et Lichtenstein (1981) étudient le problème de décider qui peut gagner depuis une position arbitraire dans une généralisation des échecs sur un échiquier $n\times n$. Ce problème est EXPTIME-complet. Les auteurs précisent que leur résultat dit peu de choses directement sur les échecs 8×8.
 
-Pour les échecs 8×8 spécifiquement (taille fixe, pas généralisée), le statut formel est plus subtil : c'est techniquement un problème *fini*, donc *décidable*. Mais la borne pratique reste $10^{120}$ : décidable au sens logique, indécidable au sens physique.
+Il s'agit d'une difficulté dans le pire cas pour une famille de problèmes dont la taille varie. Ce n'est ni un temps de calcul imposé pour chaque position ni une preuve d'impossibilité physique de résoudre la position initiale habituelle. Les échecs de taille fixe restent un problème fini ; « indécidable » ne convient pas pour désigner un calcul trop coûteux en pratique.
 
-Résoudre un jeu et jouer très fort à ce jeu, ce n'est pas la même chose. Tu peux être imbattable pour l'immense majorité des joueurs sans disposer d'une preuve formelle totale sur l'issue du jeu parfait. Les machines impressionnent parce qu'elles excellent à chercher et à évaluer, pas à "fermer" le jeu par une preuve exhaustive.
 
 ## Ce que fait un moteur "classique" : minimax, mais pas naïf
 
@@ -151,7 +123,7 @@ $$
 
 Si tu veux une traduction club : minimax, c'est "je ne joue pas un coup qui marche seulement si l'autre dort." C'est une logique claire de prudence rationnelle, pas une garantie contre le tilt, mais un modèle du "pire cas".
 
-Minimax brut, seul, te fait explorer un arbre beaucoup trop gros : sans optimisation, tu meurs avant d'avoir réfléchi ; la bonne nouvelle, c'est qu'une immense partie de l'arbre est inutile si tu sais la couper sans regret. (L'algorithme, ses raffinements modernes (negamax, null-move pruning, table de transposition) et leur version en réseau de neurones sont déroulés dans [minimax aux échecs](/fr/blog/minimax-aux-echecs/).)
+Minimax brut, seul, te fait explorer un arbre beaucoup trop gros : sans optimisation, le coût devient vite prohibitif ; la bonne nouvelle, c'est qu'une immense partie de l'arbre est inutile si tu sais la couper sans regret. (L'algorithme, ses raffinements modernes (negamax, null-move pruning, table de transposition) et leur version en réseau de neurones sont déroulés dans [minimax aux échecs](/fr/blog/minimax-aux-echecs/).)
 
 ![Minimax : maximiser son gain face au pire adversaire](/images/echecs-ia-05-minimax.svg)
 
@@ -163,7 +135,7 @@ C'est le même geste que toi quand tu calcules une tactique : tu explores une li
 
 ![Élagage alpha-bêta : branches coupées sans changer la décision](/images/echecs-ia-06-alphabeta.svg)
 
-## L'évaluation : le vrai cœur, parce que tout est impossible à calculer
+## L'évaluation : estimer sans tout calculer
 
 Même avec alpha-bêta, tu ne peux pas aller au bout de l'arbre : tu arrives sur des feuilles à profondeur limitée, et tu dois répondre à une question qui ressemble à de la magie : « cette configuration, elle vaut quoi ? ». Les moteurs "classiques" utilisent une fonction d'évaluation faite de critères comme :
 
@@ -173,7 +145,7 @@ Même avec alpha-bêta, tu ne peux pas aller au bout de l'arbre : tu arrives sur
 - sécurité du roi ;
 - contrôle de cases (et bien d'autres dans les moteurs de pointe).
 
-Ce n'est pas qu'une addition naïve de points : les bons moteurs combinent des heuristiques, des ajustements et des paramètres optimisés pour obtenir une évaluation corrélée au résultat final sans atteindre ce résultat final. Dans la vraie vie, c'est comme juger une position "prometteuse" sans calculer le mat en vingt-huit coups : tu sais reconnaître un schéma où l'initiative et la paire de fous "sentent bon", même si nulle ligne ne tient lieu de preuve complète. Le moteur formalise ce savoir technique et le fait sans fatigue, pour des milliers de joueurs. (Là où l'évaluation devient instable même pour les moteurs, c'est le terrain analysé dans [la théorie du chaos aux échecs](/fr/blog/theorie-du-chaos-aux-echecs/) : positions à fort exposant de Lyapunov où un demi-pas hors de la ligne juste fait basculer l'évaluation.)
+Ce n'est pas qu'une addition naïve de points : les moteurs traditionnels combinent des heuristiques et des paramètres optimisés. Stockfish a annoncé en 2020 l'intégration de NNUE, une évaluation par réseau de neurones, tout en conservant une recherche alpha-bêta. Ces approches combinent donc recherche et apprentissage pour obtenir une évaluation corrélée au résultat final sans atteindre ce résultat final. Dans la vraie vie, c'est comme juger une position "prometteuse" sans calculer le mat en vingt-huit coups : tu sais reconnaître un schéma où l'initiative et la paire de fous "sentent bon", même si nulle ligne ne tient lieu de preuve complète. Le moteur formalise ce savoir technique et le fait sans fatigue, pour des milliers de joueurs. (L'article sur [la théorie du chaos aux échecs](/fr/blog/theorie-du-chaos-aux-echecs/) distingue l'analogie d'une instabilité tactique d'une preuve de chaos mathématique.)
 
 ![Fonction d'évaluation heuristique sur l'échiquier](/images/echecs-ia-07-evaluation.svg)
 
@@ -209,7 +181,7 @@ Pourtant, ce succès ne résout pas les échecs au sens théorique : une machine
 
 La [théorie des jeux](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux) relie les échecs, via les mathématiques, à toute une famille de modèles où des joueurs choisissent des actions en réaction aux autres. Le formalisme y croise l'économie, l'aide à la décision et le calcul automatisé.
 
-Pour un joueur de club, l'intuition à retenir est simple : tu navigues dans un jeu où le hasard pur est faible, mais l'incertitude sur les choix adverses est réelle, une structure proche des duels étudiés par la science des jeux, même si le jeu garde sa saveur propre.
+Pour un joueur de club, l'intuition à retenir est simple : tu navigues dans un jeu où les règles ne comportent pas de tirage aléatoire, mais l'incertitude sur les choix adverses est réelle, une structure proche des duels étudiés par la science des jeux, même si le jeu garde sa saveur propre.
 
 **Démonstrations.** La communauté a publié une quantité de travaux sur des sous-problèmes (finales, ouvertures, tables de positions), mais aucune preuve ne fixe l'issue du jeu parfait depuis la position initiale : l'espace des parties résiste à l'exploration exhaustive.
 
@@ -247,41 +219,11 @@ Les échecs sont "impossibles" si tu imagines une solution brute : tout explorer
 
 ---
 
-## Questions fréquentes
+## Sources
 
-### Les échecs seront-ils "résolus" un jour ?
+- Shannon, C. E. (1950), *Programming a Computer for Playing Chess*, Philosophical Magazine, 41, 256–275, [article original](https://d1yx3ys82bpsa0.cloudfront.net/chess/programming-a-computer-for-playing-chess.shannon.062303002.pdf), pour l’estimation combinatoire présentée plus haut.
 
-Au sens fort (issue prouvée depuis la position initiale, comme les dames depuis 2007), **probablement jamais**. La borne $10^{120}$ + le résultat EXPTIME-complet rendent la résolution physiquement inatteignable par force brute. Une preuve **indirecte** (par symétrie, invariant, argumentation théorique) reste théoriquement possible mais sans piste sérieuse. Le calcul quantique réduit la borne de moitié (Grover) : $10^{60}$ reste astronomique.
-
-### Quelle différence entre "résoudre" et "battre l'humain" ?
-
-"Résoudre" = prouver l'issue mathématique exacte sous jeu parfait. "Battre l'humain" = être en moyenne plus proche de la stratégie optimale qu'un cerveau humain. Stockfish bat n'importe quel humain à ~3500 Elo sans jamais résoudre. Inversement, un programme qui résoudrait les échecs ne serait pas forcément plus fort que Stockfish *par coup* : la résolution est une vérité globale, pas une supériorité locale.
-
-### Pourquoi AlphaZero a-t-il "battu" Stockfish si tous deux sont des approximations ?
-
-Parce qu'à un instant donné, l'approximation par réseau de neurones + MCTS d'AlphaZero était plus proche de la vérité Zermelo que l'approximation par alpha-bêta + évaluation manuelle de Stockfish (version 8 de l'époque). Depuis 2020, Stockfish a intégré NNUE (réseau de neurones efficace dans l'évaluation) et a repris l'avantage dans les tournois TCEC. La course continue.
-
-### Le nombre de Shannon est-il une mesure exacte ?
-
-Non. C'est une **estimation d'ordre de grandeur** du nombre de parties possibles ($\sim 10^{120}$), pas du nombre de positions légales distinctes ($\sim 10^{43}$ selon estimations plus récentes, encore débattu). La confusion entre les deux est très fréquente. La distinction matters : pour résoudre les échecs, c'est le nombre de positions qui compte (pour stocker), mais c'est l'arbre des parties qui borne le temps d'exploration.
-
-### Si un humain ne peut pas tout calculer, à quoi sert de progresser ?
-
-À deux choses : (1) améliorer ta **fonction d'évaluation interne** (sens positionnel), (2) améliorer ton **élagage intuitif** (rejeter rapidement les mauvais candidats). C'est exactement la stratégie des moteurs. La différence entre 1200 et 2400 Elo n'est pas une explosion de calcul brut : c'est une approximation beaucoup plus fine de la vérité avec à peu près le même nombre de positions effectivement examinées.
-
----
-
-## Sources et références
-
-- **Shannon, C. E.** *Programming a Computer for Playing Chess.* Philosophical Magazine, Series 7, 41(314), 256-275, 1950. (Estimation originale du nombre de parties possibles, $\sim 10^{120}$.)
-- **Fraenkel, A. S., & Lichtenstein, D.** [*Computing a Perfect Strategy for n×n Chess Requires Time Exponential in n.*](https://doi.org/10.1016/0097-3165(81)90016-9) Journal of Combinatorial Theory, Series A, 31(2), 199-214, 1981. (Démonstration que les échecs généralisés sont EXPTIME-complets.)
-- **Knuth, D. E., & Moore, R. W.** *An Analysis of Alpha-Beta Pruning.* Artificial Intelligence, 6(4), 293-326, 1975. (Analyse formelle de l'élagage alpha-bêta.)
-- **Silver, D., et al.** [*Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm.*](https://arxiv.org/abs/1712.01815) arXiv, 2017. (Publication originale d'AlphaZero, MCTS + réseau de neurones.)
-- **Campbell, M., Hoane, A. J., & Hsu, F.** [*Deep Blue.*](https://doi.org/10.1016/S0004-3702(01)00129-1) Artificial Intelligence, 134(1-2), 57-83, 2002. (Description du système Deep Blue qui battit Kasparov en 1997.)
-- **Allis, L. V.** *Searching for Solutions in Games and Artificial Intelligence.* PhD Thesis, University of Limburg, 1994. (Classification des jeux résolus et méthodes générales de résolution.)
-
-## Pour aller plus loin
-
-- [Les échecs rendent-ils meilleur en maths ? La vérité scientifique](/fr/blog/les-echecs-et-les-mathematiques/)
-- [La psychologie du joueur d'échecs : ce qui se passe vraiment dans ta tête](/fr/blog/psychologie-du-joueur-d-echecs/)
-- [Les échecs et l'addiction : quand le jeu devient une drogue](/fr/blog/les-echecs-et-l-addiction/)
+- Fraenkel, A. S. et Lichtenstein, D. (1981), *Computing a Perfect Strategy for n×n Chess Requires Time Exponential in n*, Journal of Combinatorial Theory, série A, 31, 199–214, [texte des auteurs](https://kubokovac.eu/zlozitost/mat/chessExptime.pdf).
+- Russell, S. et Norvig, P. (s. d.), *Adversarial Search*, chapitre de manuel, [texte](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf), pour minimax, alpha-bêta et les limites de recherche présentées ici.
+- Équipe Stockfish (2020), *Introducing NNUE Evaluation*, site officiel, [annonce](https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/).
+- IBM (s. d.), *Deep Blue*, archives de l'entreprise, [histoire du match de 1997](https://www.ibm.com/history/deep-blue).

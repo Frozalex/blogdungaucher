@@ -137,7 +137,7 @@ export const GET: APIRoute = async () => {
     .filter((r) => !EXCLUDED_PATHS.has(r))
     .map((r) => withTrailingSlash(r));
 
-  const frPostPaths = posts.map((post) => getPostUrl(post));
+  const frPostPaths = posts.filter((post) => !post.data.noindex).map((post) => getPostUrl(post));
   const frDissertationPaths = [...extraDates.keys()];
   const allFrPaths = [...frStaticPaths, ...frPostPaths, ...frDissertationPaths];
 

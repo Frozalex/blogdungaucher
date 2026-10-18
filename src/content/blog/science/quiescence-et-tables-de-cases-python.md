@@ -1,8 +1,7 @@
 ---
 title: "Quiescence et tables de cases : le moteur cesse de croire aux cadeaux"
 excerpt: >-
-  À profondeur 4, un moteur voit qu'il prend la dame et pas qu'on reprend son cavalier. Chercher plus
-  profond ne corrige rien, ça déplace le problème d'un cran. La seule solution est de refuser
+  À profondeur 4, un moteur voit qu'il prend la dame et pas qu'on reprend son cavalier. Chercher plus profond peut résoudre certains cas, sans éliminer tous les effets d'horizon. Une technique consiste à éviter
   d'évaluer une position où les pièces se mangent encore.
 publishDate: "2027-08-10"
 category: science
@@ -24,39 +23,20 @@ seoDescription: >-
   Corriger l'effet d'horizon d'un moteur d'échecs avec une recherche de quiescence, et ajouter des
   tables de cases à l'évaluation. Code Python, stand pat, et mesure de l'écart avant et après.
 keyTakeaways:
-  - L'effet d'horizon vient de ce qu'on évalue une position au milieu d'une suite de prises. Chercher plus profond ne fait que le déplacer.
-  - La quiescence prolonge la recherche aux seules prises, jusqu'à ce que la position soit calme.
-  - "Le « stand pat » est correct parce que le camp au trait a toujours le droit de ne pas capturer : l'évaluation immédiate est donc un plancher."
-  - "En échec, pas de stand pat : il faut examiner tous les coups, sinon on déclare calme une position où le roi est attaqué."
-  - Les tables de cases ajoutent une notion de position pour le prix d'une addition par pièce. Celle du roi est fausse en finale, et c'est assumé.
+  - "La quiescence atténue certains effets d'horizon ; elle ne les élimine pas tous."
+  - "Ce prototype examine les prises hors échec et toutes les parades en échec."
+  - "Le stand pat est une approximation, particulièrement fragile en zugzwang."
+  - "Le budget local et une borne absolue empêchent une suite d'échecs de prolonger indéfiniment la récursion."
+  - "Les tables de cases sont des paramètres pédagogiques ; une table unique du roi a des limites selon la phase."
 faq:
-  - question: "Qu'est-ce que l'effet d'horizon aux échecs ?"
-    answer: >-
-      C'est l'erreur d'un moteur qui arrête sa recherche au milieu d'une suite de captures. Il voit
-      « je prends sa dame », évalue la position à +900 et s'arrête, sans voir que le demi-coup suivant,
-      hors de son horizon, est « il reprend ma pièce ». Le score est faux, et il l'est dans le sens qui
-      rend le mauvais coup attirant.
-  - question: "Chercher plus profond ne suffit-il pas à corriger l'effet d'horizon ?"
-    answer: >-
-      Non, cela ne fait que le déplacer. À quelque profondeur qu'on s'arrête, il existe des positions où
-      une suite de prises est en cours à cet endroit précis. Le problème n'est pas la profondeur, c'est
-      le fait d'évaluer une position instable, et la seule réponse est de ne pas l'évaluer.
-  - question: "Qu'est-ce que le « stand pat » dans une recherche de quiescence ?"
-    answer: >-
-      C'est l'évaluation de la position telle quelle, utilisée comme score plancher. Elle est légitime
-      parce que le camp au trait n'est jamais obligé de capturer : s'il a mieux à faire, la valeur de la
-      position est au moins celle qu'elle a maintenant. Il ne jouera une prise que si elle améliore ce
-      plancher.
-  - question: "Que sont les tables de cases (piece-square tables) ?"
-    answer: >-
-      Un tableau de bonus et de malus par type de pièce et par case : cavalier au centre, bonus ; roi au
-      centre en milieu de partie, malus. C'est la façon la moins chère d'introduire du positionnel dans
-      une évaluation, puisque tout est pré-calculé et qu'il ne reste qu'une addition par pièce.
-  - question: "Faut-il des tables différentes pour le milieu de partie et la finale ?"
-    answer: >-
-      Oui, au moins pour le roi et les pions. Un roi doit rester à l'abri en milieu de partie et monter
-      au centre en finale : une table unique se trompe forcément dans l'une des deux phases. Les moteurs
-      sérieux interpolent entre deux jeux de tables selon le matériel restant.
+  - question: "Qu’est-ce que la recherche de quiescence ?"
+    answer: "Elle prolonge certaines variantes tactiques au-delà de la profondeur principale. Dans ce tutoriel, elle examine les prises et toutes les parades lorsque le roi est en échec, avec des limites de profondeur."
+  - question: "Supprime-t-elle l’effet d’horizon ?"
+    answer: "Non. Elle réduit certains arrêts mal placés, mais conserve une sélection de coups et des limites de calcul."
+  - question: "Le stand pat est-il une garantie mathématique ?"
+    answer: "C'est une hypothèse heuristique qui utilise l'évaluation immédiate comme référence. Le fait de ne pas être obligé de capturer ne permet pas de passer son tour ; le zugzwang en montre la limite. On ne l'utilise pas comme choix normal lorsque le roi est en échec."
+  - question: "Que sont les tables de cases ?"
+    answer: "Des bonus et malus choisis pour chaque pièce selon sa case. Ils restent des paramètres d'évaluation, qui peuvent varier avec la phase de la partie."
 ---
 
 Notre moteur [tient une pendule](/fr/blog/approfondissement-iteratif-gestion-du-temps/), cherche avec élagage, ordonne ses coups. Il lui reste un défaut qui fausse ses évaluations plus gravement que tout ce qu'on a corrigé jusqu'ici, et qui ne vient d'aucun bug.
@@ -87,6 +67,9 @@ def quiescence(echiquier, alpha, beta, ply, contexte, restant=QUIESCENCE_MAX):
     if not coups:
         return -(MAT - ply) if en_echec else 0
 
+    if ply >= 120:
+        return 0 if en_echec else evaluer(echiquier)
+
     if en_echec:
         candidats = coups
     else:
@@ -94,7 +77,7 @@ def quiescence(echiquier, alpha, beta, ply, contexte, restant=QUIESCENCE_MAX):
         if score >= beta:
             return beta
         alpha = max(alpha, score)
-        if restant == 0:
+        if restant <= 0:
             return alpha
         candidats = [coup for coup in coups if est_une_prise(echiquier, coup)]
         candidats.sort(key=lambda c: score_mvv_lva(echiquier, c), reverse=True)
@@ -122,9 +105,7 @@ alpha = max(alpha, score)
 
 On commence par évaluer la position **telle quelle**, et on s'en sert comme score plancher. Cela s'appelle le *stand pat*, en français « rester debout », par emprunt au poker.
 
-Pourquoi est-ce légitime ? Parce que le camp au trait n'est jamais **obligé** de capturer. Aux échecs, contrairement aux dames, la prise n'est pas contrainte. S'il a mieux à faire que toutes les prises disponibles, la valeur de la position est au moins celle qu'elle a maintenant. La quiescence n'explore donc les prises que pour voir si l'une d'elles **améliore** ce plancher.
-
-C'est aussi ce qui garantit que la récursion s'arrête : à chaque niveau, il faut qu'une prise fasse mieux que ne rien faire, ce qui devient rapidement impossible.
+Le stand pat utilise l'évaluation immédiate comme référence heuristique. Ne pas être obligé de capturer ne signifie pas que tu peux passer ton tour : en zugzwang, tout coup peut dégrader ta position. Ce plancher n'est donc pas une garantie universelle de la valeur réelle.
 
 ### L'échec fait exception
 
@@ -139,7 +120,7 @@ C'est l'oubli le plus fréquent dans les implémentations de quiescence, et il p
 
 ### La borne
 
-Le paramètre `restant` limite la descente à huit demi-coups. En théorie il est inutile : une suite de prises s'épuise forcément, puisqu'il y a un nombre fini de pièces. En pratique, une position très chargée peut engendrer un arbre de captures considérable, et un seul nœud peut alors coûter une seconde. C'est un garde-fou, pas une correction.
+Le paramètre `restant` limite les prolongements hors échec. Les parades peuvent dépasser cette limite, d'où un second garde-fou absolu à 120 demi-coups depuis la racine. À cette borne, on rend une estimation (ou zéro en échec), sans prétendre avoir prouvé une nulle. Le test `restant <= 0` reste valable après une extension qui a fait passer le compteur sous zéro.
 
 ## Les tables de cases
 
@@ -188,7 +169,7 @@ def _table_roi(case):
     # monter au centre : c'est la limite assumée d'une table unique.
 ```
 
-Un roi doit se cacher en milieu de partie et monter au centre en finale. Une table unique se trompe donc nécessairement dans l'une des deux phases. La solution correcte consiste à définir deux jeux de tables et à interpoler entre les deux selon le matériel restant, ce que font tous les moteurs sérieux. Notre moteur, lui, jouera ses finales avec un roi trop timide.
+Un roi doit se cacher en milieu de partie et monter au centre en finale. Une table unique se trompe donc nécessairement dans l'une des deux phases. La solution correcte consiste à définir deux jeux de tables et à interpoler entre les deux selon le matériel restant, une solution possible des moteurs à évaluation par tables. Notre moteur, lui, jouera ses finales avec un roi trop timide.
 
 C'est une limite connue, écrite dans le code, et pas une erreur cachée.
 
@@ -236,7 +217,7 @@ Trois lectures.
 
 **L'écart médian est nul.** La majorité des positions sont déjà calmes : aucune prise ne vaut la peine d'être jouée, la quiescence rend immédiatement la main sur son *stand pat*, et elle ne coûte donc presque rien. C'est ce qui rend la technique viable : on ne paie que là où il y a quelque chose à payer.
 
-**Plus d'une position sur quatre est trompeuse.** Sur 28,2 % d'entre elles, évaluer sans quiescence se trompe d'au moins un pion entier. Rappelle-toi qu'il ne s'agit pas de positions choisies : ce sont les positions ordinaires de parties ordinaires, celles que la recherche rencontre à ses feuilles des millions de fois.
+**Plus d'une position sur quatre est trompeuse.** Sur 28,2 % d'entre elles, les évaluations statique et de quiescence diffèrent d'au moins un pion de notre échelle. Rappelle-toi qu'il ne s'agit pas de positions choisies : ce sont les positions de notre corpus ; leur fréquence ne représente pas nécessairement celle des feuilles de recherche.
 
 **Le maximum de 98 825 n'est pas une aberration.** C'est un score de mat. Dans cette position, la suite de prises débouche sur un mat forcé que l'évaluation statique, elle, chiffrait à onze pions de retard. La quiescence ne corrige pas seulement des demi-pions : elle voit parfois des choses d'une tout autre nature.
 
@@ -249,3 +230,11 @@ Reprenons ce qui a été construit. Une représentation vérifiée par 41 millio
 Il ne manque qu'une chose, et c'est celle qui le rendra utilisable : il ne sait toujours parler à personne. Il vit dans un script Python et joue contre lui-même.
 
 **Prochain article, le dernier :** parler UCI, se brancher dans une vraie interface d'échecs, et surtout, mesurer honnêtement ce que tout cela vaut en points Elo.
+
+## Sources
+
+Le chapitre de Russell et Norvig décrit les limites de recherche ; le code de Stockfish montre une quiescence avec traitement des échecs et profondeur maximale, ce qui éclaire les garde-fous de ce prototype.
+
+- Russell, S. et Norvig, P. (s. d.), Adversarial Search, chapitre des auteurs, [texte](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
+
+- Équipe Stockfish (s. d.), search.cpp, code officiel, [texte](https://raw.githubusercontent.com/official-stockfish/Stockfish/master/src/search.cpp).

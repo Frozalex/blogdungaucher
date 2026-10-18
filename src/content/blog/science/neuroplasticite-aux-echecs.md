@@ -1,5 +1,5 @@
 ---
-title: "Non, les échecs ne « recâblent » pas ton cerveau"
+title: "Neuroplasticité et échecs : ce que l’imagerie ne prouve pas"
 excerpt: >-
   Les taxis de Londres, les jongleurs, la matière grise qui grossit : les deux études qu'on cite
   toujours pour prouver que les échecs transforment le cerveau disent en réalité l'inverse de ce qu'on
@@ -26,8 +26,8 @@ faq:
     answer: >-
       Probablement, comme toute pratique intensive et prolongée. Des différences de matière grise ont
       été observées entre joueurs experts et novices. Mais un changement structurel n'est pas un
-      bénéfice : il indique qu'une activité a été pratiquée, pas qu'elle a rendu meilleur en autre
-      chose. C'est la confusion centrale du mythe.
+      bénéfice : il ne suffit pas à établir la cause de la différence ni une amélioration dans un autre
+      domaine. C'est la confusion centrale du mythe.
   - question: "Que montre vraiment l'étude sur les taxis de Londres ?"
     answer: >-
       Maguire et ses collègues ont montré en 2000 que l'hippocampe postérieur des chauffeurs de taxi
@@ -39,13 +39,11 @@ faq:
       Pas nécessairement. Draganski et ses collègues ont suivi en 2004 des volontaires apprenant à
       jongler. La matière grise avait augmenté dans les aires du mouvement visuel après trois mois
       d'apprentissage. Un troisième scanner, trois mois après l'arrêt de la pratique, montrait que cette
-      expansion avait diminué. Le mot employé dans le titre même de leurs résultats est « transitoire ».
+      expansion avait diminué. Les auteurs qualifient ces changements de « transitoires » dans le texte ; ce mot ne figure pas dans le titre de l’article.
   - question: "Les échecs améliorent-ils les résultats scolaires ?"
     answer: >-
-      La méta-analyse de Sala et Gobet en 2016, portant sur 24 études et 5 221 participants, trouvait
-      un effet modéré de 0,34 en moyenne. Mais presque aucune de ces études ne comparait à un groupe
-      témoin faisant une autre activité aussi exigeante. Quand un tel groupe est ajouté, l'effet propre
-      aux échecs devient indistinguable de zéro.
+      Les travaux de Sala et Gobet (2017) soulignent les limites des protocoles et ne démontrent pas de bénéfice
+      spécifique dans les deux expériences sur la résolution de problèmes mathématiques. Cela ne signifie pas que tout effet possible a été exclu.
   - question: "Alors les échecs ne servent à rien pour le cerveau ?"
     answer: >-
       Ils servent à te rendre bon aux échecs, ce qui est déjà une transformation cognitive réelle et
@@ -82,9 +80,9 @@ Voilà ce que tout le monde retient. Maintenant, la suite de la phrase, dans le 
 
 **L'hippocampe antérieur, lui, était corrélé négativement à l'ancienneté.** Plus le chauffeur avait d'années de métier, plus sa partie postérieure était développée, et plus sa partie antérieure était réduite.
 
-Ce n'est pas un détail technique. Cela change la nature du résultat. Il ne s'agit pas d'un hippocampe qui grossit : il s'agit d'une **redistribution** à l'intérieur d'une structure. Une spécialisation, avec ce que ce mot implique de compensation ailleurs.
+Ce n'est pas un détail technique. Cela change la nature du résultat. Il ne s'agit pas d'un hippocampe qui grossit : il s'agit d'une **redistribution** à l'intérieur d'une structure. Cette observation ne prouve toutefois pas que la croissance d’une région aurait causé la réduction d’une autre.
 
-L'image populaire, celle d'un cerveau qu'on muscle comme un biceps, ne correspond pas à ce qu'a observé Maguire. L'image correcte est celle d'un budget qu'on réalloue.
+L'image populaire, celle d'un cerveau qu'on muscle comme un biceps, ne correspond pas à ce qu'a observé Maguire. L’étude observe des différences régionales ; l’image d’un budget qu’on réalloue reste une métaphore, pas un mécanisme démontré.
 
 ## Les jongleurs, et le troisième scanner
 
@@ -104,7 +102,7 @@ Et l'expansion de matière grise **avait diminué**.
 
 Le mot que Draganski et ses collègues emploient dans leurs propres résultats est *transient*, transitoire. Il figure dans le résumé de l'article, et l'ordre des mots est sans ambiguïté : un changement structurel « transitoire et sélectif ».
 
-L'étude la plus citée pour démontrer que l'apprentissage transforme durablement le cerveau démontre en réalité qu'il le transforme **tant qu'on pratique**.
+Cette régression partielle après l’arrêt ne signifie pas que toute transformation cérébrale disparaît dès qu’on cesse de pratiquer.
 
 ## Le saut logique
 
@@ -112,7 +110,7 @@ Admettons tout ce qui précède, et ajoutons les études conduites directement s
 
 Il reste un problème, et c'est le vrai sujet.
 
-Un changement structurel prouve qu'une activité a été pratiquée. Il ne prouve **rien** sur un bénéfice, et surtout rien sur un bénéfice ailleurs.
+Une différence structurelle ne démontre pas à elle seule un bénéfice. Dans une comparaison entre groupes, elle peut aussi refléter des différences antérieures à la pratique.
 
 Le raisonnement implicite du mythe est le suivant : les échecs modifient le cerveau, donc les échecs améliorent le cerveau, donc les échecs améliorent tout ce que le cerveau fait. Deux glissements en une phrase. « Modifier » n'est pas « améliorer ». Et une amélioration locale, dans les circuits que la tâche sollicite, n'est pas une amélioration générale.
 
@@ -122,21 +120,19 @@ Heureusement, cette question n'a pas besoin d'être tranchée par le raisonnemen
 
 La question s'appelle le **transfert**. Une compétence acquise dans un domaine se reporte-t-elle sur un autre ? Le transfert proche, entre tâches voisines, est bien documenté. Le transfert lointain, vers des domaines sans rapport, est le point de litige.
 
-En 2016, Giovanni Sala et Fernand Gobet publient dans *Educational Research Review* une méta-analyse de la question aux échecs : **24 études, 5 221 participants, 40 tailles d'effet**. Le résultat global est encourageant. Un effet moyen de **0,34**, modéré mais réel. En mathématiques, 0,38. En lecture, 0,25. Et 0,43 pour les programmes dépassant vingt-cinq heures d'instruction.
+Sala et Gobet (2017) reviennent sur les travaux de transfert : les résultats doivent être lus en tenant compte des groupes de comparaison. Une différence avec un groupe qui ne reçoit aucune activité supplémentaire n’isole pas l’effet propre des échecs.
 
-Si l'affaire s'arrêtait là, le mythe serait vrai.
+Mais les auteurs relèvent eux-mêmes le problème, et il est massif : **les groupes témoins actifs sont rares dans les travaux examinés**. Autrement dit, on comparait des enfants faisant des échecs à des enfants ne faisant rien de particulier. Or dans cette comparaison, tout compte : l'attention d'un adulte, la nouveauté, l'enthousiasme de l'enseignant, le fait d'apprendre une chose difficile. Rien de tout cela n'est spécifique aux échecs.
 
-Mais les auteurs relèvent eux-mêmes le problème, et il est massif : **presque aucune de ces études ne comportait un groupe témoin actif**. Autrement dit, on comparait des enfants faisant des échecs à des enfants ne faisant rien de particulier. Or dans cette comparaison, tout compte : l'attention d'un adulte, la nouveauté, l'enthousiasme de l'enseignant, le fait d'apprendre une chose difficile. Rien de tout cela n'est spécifique aux échecs.
+Sala et Gobet ont ensuite étudié cette question avec des groupes de comparaison actifs. En 2017, deux études expérimentales publiées dans *Learning & Behavior* comparent l'instruction aux échecs à une activité témoin **également exigeante et également encadrée**, sur la résolution de problèmes mathématiques.
 
-Sala et Gobet ont donc refait le travail correctement. En 2017, deux études expérimentales publiées dans *Learning & Behavior* comparent l'instruction aux échecs à une activité témoin **également exigeante et également encadrée**, sur la résolution de problèmes mathématiques.
-
-L'effet propre aux échecs devient indistinguable de zéro.
+Ces expériences n’apportent pas de preuve d’un bénéfice spécifique sur la résolution de problèmes mathématiques.
 
 La même année, dans *Current Directions in Psychological Science*, ils élargissent le constat aux échecs, à la musique et à l'entraînement de la mémoire de travail. Leur observation la plus dérangeante n'est pas l'absence d'effet, c'est sa **structure** : la taille de l'effet mesuré est inversement liée à la qualité méthodologique de l'étude. Plus le protocole est rigoureux, plus l'effet rétrécit.
 
-C'est la signature typique d'un effet qui n'existe pas. Quand un phénomène est réel, améliorer la mesure le rend plus net. Quand il disparaît à mesure qu'on regarde mieux, c'est qu'on regardait mal.
+Une absence de différence statistiquement significative ne démontre pas une absence absolue d’effet. Elle ne permet cependant pas de promettre le bénéfice annoncé.
 
-Notre article sur [les échecs rendent-ils plus intelligent](/fr/blog/les-echecs-rendent-ils-plus-intelligent/) développe ce dossier du côté des performances scolaires. Ici, le point est plus restreint et plus net : **l'argument neuroplastique ne survit pas au test comportemental**. Peu importe ce que montre l'imagerie si le bénéfice annoncé ne se mesure pas dans les faits.
+Notre article sur [les échecs rendent-ils plus intelligent](/fr/blog/les-echecs-rendent-ils-plus-intelligent/) développe ce dossier du côté des performances scolaires. Ici, le point est plus restreint et plus net : **l’imagerie ne remplace pas un test comportemental du bénéfice annoncé**. Peu importe ce que montre l'imagerie si le bénéfice annoncé ne se mesure pas dans les faits.
 
 ## Ce qui reste vrai
 
@@ -154,9 +150,9 @@ Trois raisons, et aucune n'a à voir avec la solidité des preuves.
 
 **Il rend une passion respectable.** Dire « je joue aux échecs parce que j'aime ça » expose à devoir défendre du temps passé. Dire « je développe mon cerveau » clôt la discussion. L'argument neuroplastique est une justification sociale avant d'être une affirmation scientifique.
 
-**Il se vend.** Programmes scolaires, applications, cours en ligne : la promesse d'un bénéfice cognitif général vaut infiniment plus cher que la promesse de bien jouer aux échecs. Le public visé par « votre enfant progressera en maths » est cent fois plus large que celui visé par « votre enfant jouera mieux ».
+**Il se vend.** Une promesse de réussite scolaire peut servir d’argument commercial ; elle doit être vérifiée indépendamment de l’intérêt du jeu.
 
-**L'imagerie est convaincante.** Une image de cerveau coloré emporte l'adhésion bien au-delà de ce qu'elle démontre. C'est un effet documenté : la simple présence d'une illustration cérébrale augmente la crédibilité perçue d'une explication, même quand cette explication est mauvaise.
+**L’imagerie peut donner une impression d’explication.** Devant une image colorée, demande-toi quelle différence a été mesurée et si elle répond réellement à la question posée.
 
 ## Quoi faire de tout ça
 
@@ -164,15 +160,15 @@ Trois raisons, et aucune n'a à voir avec la solidité des preuves.
 
 **Méfie-toi de « recâbler ».** Le verbe n'a pas de contenu vérifiable. Devant toute affirmation de bénéfice cognitif, pose les trois questions : quel changement précis, mesuré comment, et comparé à quel groupe témoin. La troisième est presque toujours celle qui manque.
 
-**Retiens le troisième scanner.** L'expansion de matière grise des jongleurs a diminué quand ils ont arrêté. C'est probablement la leçon la plus utile de tout cet article, et elle est encourageante à sa manière : ce qui se construit par la pratique se maintient par la pratique. Aucun capital n'est acquis.
+**Retiens le troisième scanner.** L’expansion mesurée chez les jongleurs a diminué lors du suivi. Sa durée dépend du changement étudié ; on ne peut pas en déduire une règle sur tous les apprentissages.
 
 **Sépare la vraie question de la fausse.** La fausse question est de savoir si les échecs améliorent le cerveau en général. La bonne est de savoir comment progresser à ce jeu précis, ce qui est difficile, mesurable, et bien plus intéressant.
 
 ## Ce qu'il faut retenir
 
-Les deux études invoquées pour prouver que les échecs transforment durablement le cerveau contiennent chacune un résultat qui contredit cet usage. Chez les taxis londoniens, l'hippocampe postérieur augmente mais l'antérieur diminue : c'est une redistribution, pas un gain. Chez les jongleurs, l'expansion de matière grise a régressé dès l'arrêt de la pratique, et les auteurs la qualifient eux-mêmes de transitoire.
+Les deux études invoquées pour prouver que les échecs transforment durablement le cerveau contiennent chacune un résultat qui contredit cet usage. Chez les taxis londoniens, l'hippocampe postérieur augmente mais l'antérieur diminue : c'est une redistribution, pas un gain. Chez les jongleurs, l’expansion de matière grise a diminué lors du troisième scanner, et les auteurs la qualifient eux-mêmes de transitoire.
 
-Quant au bénéfice annoncé, il a été testé directement. Avec un groupe témoin faisant autre chose d'aussi exigeant, l'effet propre aux échecs sur les compétences scolaires et cognitives devient indistinguable de zéro. Et la taille de l'effet diminue à mesure que la qualité des protocoles augmente.
+Quant au bénéfice annoncé, il a été testé directement. Avec un groupe témoin faisant autre chose d'aussi exigeant, les expériences citées ne démontrent pas de bénéfice spécifique sur la résolution de problèmes mathématiques. Et la taille de l'effet diminue à mesure que la qualité des protocoles augmente.
 
 Les échecs te rendent bon aux échecs. C'est déjà beaucoup, et c'était déjà la seule promesse honnête.
 
@@ -184,8 +180,7 @@ Les échecs te rendent bon aux échecs. C'est déjà beaucoup, et c'était déj�
 
 ## Sources
 
-- Maguire, E. A., Gadian, D. G., Johnsrude, I. S., Good, C. D., Ashburner, J., Frackowiak, R. S. J., & Frith, C. D. (2000). Navigation-related structural change in the hippocampi of taxi drivers. *Proceedings of the National Academy of Sciences*, 97(8), 4398–4403.
-- Draganski, B., Gaser, C., Busch, V., Schuierer, G., Bogdahn, U., & May, A. (2004). Neuroplasticity : Changes in grey matter induced by training. *Nature*, 427, 311–312.
-- Sala, G., & Gobet, F. (2016). Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis. *Educational Research Review*, 18, 46–57.
-- Sala, G., & Gobet, F. (2017). Does chess instruction improve mathematical problem-solving ability? Two experimental studies with an active control group. *Learning & Behavior*, 45, 414–421.
-- Sala, G., & Gobet, F. (2017). Does far transfer exist? Negative evidence from chess, music, and working memory training. *Current Directions in Psychological Science*, 26(6), 515–520.
+- Maguire, E. A., et al. (2000). *Navigation-related structural change in the hippocampi of taxi drivers*. PNAS, 97, 4398–4403. [Article](https://www.fil.ion.ucl.ac.uk/Maguire/Maguire_CORE_2000.pdf).
+- Draganski, B., et al. (2004). *Changes in grey matter induced by training*. Nature, 427, 311–312. [Article](https://dbm.neuro.uni-jena.de/pdf-files/Draganski-Nature.pdf).
+- Sala, G., & Gobet, F. (2017). *Does chess instruction improve mathematical problem-solving ability? Two experimental studies with an active control group*. Learning & Behavior, 45, 414–421. [Article](https://link.springer.com/article/10.3758/s13420-017-0280-3).
+- Sala, G., & Gobet, F. (2017). *Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training*. Current Directions in Psychological Science, 26, 515–520. [Revue](https://journals.sagepub.com/doi/full/10.1177/0963721417712760).

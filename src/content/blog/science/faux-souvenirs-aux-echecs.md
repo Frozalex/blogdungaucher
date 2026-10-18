@@ -1,9 +1,7 @@
 ---
 title: "Les faux souvenirs aux échecs : « j'avais vu ce coup »"
 excerpt: >-
-  L'analyse d'après-partie réunit toutes les conditions identifiées par Elizabeth Loftus pour implanter
-  un souvenir : une suggestion plausible, une source crédible, une répétition, et un sujet qui a envie
-  d'y croire. Les joueurs d'échecs s'y soumettent après chaque partie.
+  Une information apprise après la partie peut influencer ton souvenir du calcul. Les expériences sur la mémoire invitent à garder une trace de tes hésitations avant l'analyse, sans faire de chaque commentaire un faux souvenir.
 publishDate: "2026-12-01"
 category: science
 featured: false
@@ -21,43 +19,21 @@ tags:
 seoTitle: "Faux souvenirs aux échecs : pourquoi tu crois avoir vu le coup"
 seoDescription: "Loftus et Palmer, croyance et souvenir : comprendre les résultats sur les faux souvenirs et leurs limites pour l'analyse d'une partie d'échecs."
 faq:
-  - question: "Qu'est-ce qu'un faux souvenir ?"
-    answer: >-
-      C'est un souvenir subjectivement vécu comme authentique alors que l'événement rapporté ne s'est
-      pas produit, ou pas ainsi. Il ne s'agit pas d'un mensonge : la personne y croit. Elizabeth Loftus
-      a montré qu'une information reçue après un événement peut s'intégrer au souvenir de cet événement
-      sans que le sujet puisse distinguer les deux sources.
-  - question: "Que montre l'expérience de la voiture de Loftus et Palmer ?"
-    answer: >-
-      En 1974, des participants ont visionné un accident de voiture puis ont été interrogés. Quand la
-      question employait le verbe « percuter violemment » plutôt que « heurter », les vitesses estimées
-      montaient, et une semaine plus tard 32 % affirmaient avoir vu du verre brisé, contre 14 % dans
-      l'autre condition. Il n'y avait aucun verre brisé dans le film.
-  - question: "Est-il facile d'implanter un faux souvenir ?"
-    answer: >-
-      Moins qu'on ne le dit. La revue systématique de Brewin et Andrews publiée en 2017 conclut qu'environ
-      47 % des participants manifestent une forme d'impression de souvenir pour un événement suggéré,
-      mais que seulement 15 % environ produisent quelque chose évaluable comme un souvenir complet.
-      Leur conclusion est que l'implantation n'est ni facile ni fréquente.
-  - question: "Pourquoi l'analyse d'après-partie fabrique-t-elle des faux souvenirs ?"
-    answer: >-
-      Parce qu'elle réunit les conditions de l'effet de désinformation : une information nouvelle et
-      crédible sur un événement passé, présentée par une source faisant autorité, souvent sous forme
-      de question suggestive, et reçue par quelqu'un qui a intérêt à croire qu'il avait vu. Le souvenir
-      de ce que tu avais réellement calculé se recompose alors autour de ce que tu apprends.
-  - question: "Comment protéger ses souvenirs de partie ?"
-    answer: >-
-      En les fixant par écrit avant toute analyse. Une note prise juste après la partie, mentionnant
-      les coups envisagés et ton évaluation aux moments clés, constitue une trace extérieure à ta
-      mémoire. Sans elle, la comparaison entre ce que tu croyais et ce qui était n'est plus possible :
-      il ne reste qu'une version, celle d'après.
+  - question: "Que montre Loftus et Palmer (1974) ?"
+    answer: "La formulation d'une question sur un accident filmé modifie les réponses. Au second test, 16 participants sur 50 dans la condition smashed rapportent du verre brisé absent du film, contre 7 sur 50 dans la condition hit et 6 sur 50 dans le groupe témoin."
+  - question: "Est-il facile d’implanter un souvenir complet ?"
+    answer: "Brewin et Andrews (2017) distinguent croyance, impression de remémoration et souvenir complet. Leurs moyennes de 47 % et 15 % dépendent de ces critères et des protocoles ; ce ne sont pas des taux mesurés aux échecs."
+  - question: "Une analyse de partie crée-t-elle forcément un faux souvenir ?"
+    answer: "Non. Les expériences citées ne mesurent pas cette fréquence. Elles invitent à distinguer ce que tu te rappelles de ce que l'analyse vient de t'apprendre."
+  - question: "Comment conserver une trace de son raisonnement ?"
+    answer: "Après la partie, tu peux noter tes candidats et tes hésitations avant de regarder le moteur. Cette trace peut aider à comparer les versions, sans garantir que ton premier souvenir soit exact."
 ---
 
 Analyse d'après-partie. On arrive au coup 27, celui où tout a basculé. L'ordinateur affiche la réfutation : Txf7 gagnait sur-le-champ.
 
 Et tu dis : « ah oui, je l'avais vu, mais j'ai calculé que la dame était mal placée après. »
 
-Peut-être. C'est possible. Mais la recherche sur la mémoire suggère que dans une bonne partie des cas, cette phrase décrit un souvenir qui vient de se former, à l'instant, sous l'effet de l'information que tu viens de recevoir.
+Peut-être. C'est possible. Les recherches citées ne permettent pas de dire à quelle fréquence cette phrase serait un faux souvenir aux échecs. Elles invitent à garder une place au doute.
 
 ## L'effet de désinformation
 
@@ -75,47 +51,35 @@ Le verbe employé dans une question, une semaine plus tôt, a ajouté un détail
 
 Sa portée est considérable, parce qu'il implique que le souvenir n'est pas un enregistrement conservé puis relu. C'est une reconstruction, et une reconstruction accepte des matériaux qui ne viennent pas de l'événement.
 
-## Le centre commercial, et sa nuance
+## La nuance : croire, imaginer, se souvenir
 
-L'expérience la plus célèbre de Loftus va plus loin : elle ne modifie pas un souvenir, elle en crée un.
-
-En 1995, avec Jacqueline Pickrell, elle recrute des participants dont un proche fournit trois souvenirs d'enfance authentiques. Les chercheurs y ajoutent un quatrième, entièrement inventé : s'être perdu dans un centre commercial vers l'âge de cinq ans, avoir pleuré, puis avoir été ramené par une personne âgée.
-
-On présente les quatre récits comme provenant tous de la famille, et on demande au participant de développer ce dont il se souvient. Sur plusieurs entretiens.
-
-Environ **25 %** finissent par rapporter un souvenir, partiel ou complet, de l'épisode du centre commercial. Certains ajoutent des détails que personne ne leur a fournis : la couleur d'une chemise, le visage de la personne.
-
-Le résultat a eu un impact énorme, notamment sur le droit du témoignage.
-
-### Ce que la critique a apporté
-
-Il faut ici être honnête, parce que ce chiffre de 25 % circule beaucoup et qu'il est régulièrement arrondi vers le haut.
+Il faut ici être honnête, parce que les pourcentages dépendent de ce qu'on classe comme souvenir.
 
 En 2017, Chris Brewin et Bernice Andrews publient dans *Applied Cognitive Psychology* une revue systématique des études d'implantation. Leur travail consiste à examiner ce qui est réellement compté comme un faux souvenir dans ces protocoles, ce qui n'est pas une question triviale : entre « j'ai peut-être une vague impression » et « je revois la scène », l'écart est considérable.
 
 Leur résultat : en moyenne, environ **47 %** des participants manifestent une forme d'expérience de remémoration pour l'événement suggéré, mais seulement **15 %** environ produisent quelque chose évaluable comme un **souvenir complet**.
 
-Leur conclusion : implanter un souvenir autobiographique n'est ni facile ni fréquent. Le débat qui a suivi reste vif, et une réplication préenregistrée du protocole du centre commercial publiée en 2023 a apporté de nouveaux éléments.
+Ces moyennes portent sur les études d'implantation examinées et leurs critères. Elles ne permettent pas de remplacer un pourcentage issu d'une expérience particulière par un taux universel.
 
 La position raisonnable est donc intermédiaire, et c'est celle qu'on retiendra : **la mémoire est nettement plus malléable qu'on ne le croyait, et nettement moins malléable que la version populaire ne le raconte**. Modifier un détail est facile ; fabriquer un épisode entier l'est beaucoup moins.
 
 Or c'est précisément la modification de détail qui nous concerne ici.
 
-## Pourquoi le post-mortem est un protocole d'implantation
+## Pourquoi rester prudent pendant l'analyse
 
 Regarde maintenant ce qui se passe quand tu analyses une partie, et compare aux ingrédients identifiés par Loftus.
 
 **Une information nouvelle sur un événement passé.** L'analyse t'apprend ce qui était réellement dans la position. Cette information arrive après coup, exactement comme la question sur le verre brisé.
 
-**Une source qui fait autorité.** Le moteur ne se trompe pas. Un joueur plus fort non plus, à ton échelle. Il n'y a aucune raison de résister à ce qui est dit, ce qui est justement le problème : le souvenir n'a aucune défense à opposer.
+**Une source crédible.** Un moteur ou un joueur plus fort peut influencer ton jugement, sans être infaillible. Sa variante et ton souvenir de l'avoir envisagée restent deux informations différentes.
 
 **Des questions suggestives.** C'est le point le plus direct. « Tu avais vu Txf7 ? » n'est pas une question neutre : elle contient déjà le coup, et elle propose une réponse. C'est structurellement la même chose que le choix entre « heurtées » et « percutées violemment ».
 
 **Un intérêt à accepter la suggestion.** Chez Loftus, les participants n'avaient rien à gagner à se souvenir du verre brisé. Toi, si. « Je l'avais vu » préserve l'image que tu as de ton niveau, alors que « je ne l'ai pas vu » la met en cause. C'est le mécanisme décrit dans notre article sur [la dissonance cognitive aux échecs](/fr/blog/dissonance-cognitive-aux-echecs/).
 
-**La répétition.** Tu rejoues la position plusieurs fois, tu regardes la variante, tu la commentes. Chaque passage renforce la trace, et une trace renforcée devient indiscernable d'un souvenir d'origine.
+**La répétition.** Tu rejoues la position plusieurs fois, tu regardes la variante, tu la commentes. La répétition peut rendre une variante familière. Cette familiarité n'établit pas que tu l'avais calculée pendant la partie.
 
-Autrement dit, le post-mortem réunit **plus de conditions favorables que le protocole de laboratoire**, et les joueurs d'échecs s'y soumettent volontairement après chaque partie sérieuse.
+Ce rapprochement est une hypothèse d'application. Les études citées ne comparent pas directement l'analyse échiquéenne aux protocoles de laboratoire.
 
 ## Ce que ça coûte réellement
 
@@ -145,7 +109,7 @@ Juste après la partie, avant toute analyse, avant le moteur, avant la discussio
 - pour chacun, les coups que tu as réellement envisagés ;
 - ton évaluation de la position à ce moment.
 
-Cette note est une **trace extérieure à ta mémoire**. C'est la seule chose qui te permettra, une semaine plus tard, de savoir ce que tu avais vu, parce qu'à ce moment-là ta mémoire aura déjà intégré l'analyse.
+Cette note est une **trace extérieure à ta mémoire**. Elle conserve ce que tu avais rapporté avant l'analyse, même si ce premier compte rendu peut lui aussi comporter des erreurs.
 
 C'est la même règle que celle donnée dans notre article sur [l'obéissance à l'autorité aux échecs](/fr/blog/obeissance-a-l-autorite-aux-echecs/), et ce n'est pas une coïncidence : dans les deux cas, il s'agit d'enregistrer son propre jugement avant qu'une source plus fiable ne le remplace.
 
@@ -157,7 +121,7 @@ Ne demande pas : « tu avais vu Txf7 ? » Demande : « qu'est-ce que tu as regar
 
 La première contient la réponse et déclenche une reconnaissance qui peut être fausse. La seconde ouvre un rappel libre, dont on sait qu'il produit moins d'erreurs, même s'il produit moins de matière.
 
-Et si tu es celui qui répond, la meilleure phrase disponible est simplement : **« je ne sais plus. »** Elle est presque toujours vraie, elle ne coûte rien, et elle est infiniment plus utile qu'une reconstruction.
+Et si tu es celui qui répond, la meilleure phrase disponible est simplement : **« je ne sais plus. »** Elle est utile lorsque tu hésites réellement ; il ne faut pas la tenir pour vraie par principe.
 
 ### 3. Distingue les trois réponses possibles
 
@@ -171,21 +135,13 @@ La troisième est légitime et doit rester disponible. Un système qui ne l'auto
 
 ### 4. Compte tes catégories
 
-Au bout de trente parties analysées ainsi, compte. Le rapport entre « pas vu » et « vu mais mal évalué » est ton diagnostic, et il est fondé sur des notes prises avant contamination.
+Au bout de trente parties analysées ainsi, compte. Le rapport entre ces catégories décrit tes notes dans cet échantillon. Il ne constitue pas un diagnostic clinique ni une mesure exacte de chaque processus mental.
 
 C'est probablement l'information la plus utile que tu puisses produire sur ton propre jeu, et elle ne coûte que trois lignes par partie.
 
 ## Ce qu'il faut retenir
 
-Un mot dans une question, une semaine avant, suffit à faire apparaître du verre brisé dans le souvenir d'un film qui n'en contenait pas. C'est l'effet de désinformation, et il est solidement établi. L'implantation d'épisodes entiers, elle, est plus difficile que la version populaire ne le prétend : la revue de Brewin et Andrews conclut à environ 15 % de souvenirs complets, pas 25.
-
-Mais la modification de détail suffit largement à poser problème aux échecs, parce que le post-mortem réunit toutes les conditions favorables : information nouvelle, source faisant autorité, questions suggestives, répétition, et un sujet qui a un intérêt direct à croire qu'il avait vu.
-
-L'enjeu n'est pas l'exactitude du souvenir pour lui-même. C'est le diagnostic. « Je ne l'ai pas vu » et « je l'ai vu et mal évalué » désignent deux faiblesses différentes et deux entraînements différents. Si ta mémoire répond toujours la seconde, tu travailles pendant des années la mauvaise.
-
-Trois lignes écrites avant d'allumer le moteur suffisent à préserver la réponse.
-
-**Après lecture :** à ta prochaine partie, avant toute analyse, note les deux moments où tu as hésité et les coups que tu as envisagés. Analyse ensuite. Compare. L'écart est ce que l'analyse aurait effacé.
+Loftus et Palmer montrent un effet de formulation dans une expérience précise. Brewin et Andrews rappellent qu'une impression de souvenir n'est pas toujours un souvenir complet. Pour tes parties, conserve une trace après le jeu, avant l'analyse, puis distingue les faits vérifiables, tes souvenirs et les nouvelles variantes. Les pourcentages des expériences ne donnent pas le taux de faux souvenirs des joueurs.
 
 ---
 
@@ -193,7 +149,5 @@ Trois lignes écrites avant d'allumer le moteur suffisent à préserver la répo
 
 ## Sources
 
-- Loftus, E. F., & Palmer, J. C. (1974). Reconstruction of automobile destruction : An example of the interaction between language and memory. *Journal of Verbal Learning and Verbal Behavior*, 13(5), 585–589.
-- Loftus, E. F., & Pickrell, J. E. (1995). The formation of false memories. *Psychiatric Annals*, 25(12), 720–725.
-- Brewin, C. R., & Andrews, B. (2017). Creating memories for false autobiographical events in childhood : A systematic review. *Applied Cognitive Psychology*, 31(1), 2–23.
-- Murphy, G., et al. (2023). Lost in the mall again : A preregistered replication and extension of Loftus & Pickrell (1995). *Memory*, 31(6), 818–830.
+- Loftus, E. F. et Palmer, J. C. (1974), *Reconstruction of automobile destruction: An example of the interaction between language and memory*, Journal of Verbal Learning and Verbal Behavior, 13, 585–589, [original](https://gwern.net/doc/psychology/cognitive-bias/1974-loftus.pdf).
+- Brewin, C. R. et Andrews, B. (2017), *Creating Memories for False Autobiographical Events in Childhood: A Systematic Review*, Applied Cognitive Psychology, 31(1), 2–23, [article](https://onlinelibrary.wiley.com/doi/10.1002/acp.3220).

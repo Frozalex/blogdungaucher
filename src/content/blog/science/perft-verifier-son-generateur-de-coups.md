@@ -1,5 +1,5 @@
 ---
-title: "Perft : prouver que ton générateur de coups est juste"
+title: "Perft : vérifier ton générateur de coups"
 excerpt: >-
   Un générateur de coups peut être exact sur mille positions et faux sur la millionième. Perft est la
   réponse à ce problème : un comptage récursif dont les valeurs sont publiées depuis des décennies. Si
@@ -24,19 +24,18 @@ seoDescription: >-
   Perft, le test de référence des moteurs d'échecs : principe, code Python, six positions de référence,
   et la technique du divide pour localiser un bug de génération de coups en quelques minutes.
 keyTakeaways:
-  - Perft compte les positions atteignables en n demi-coups. Le nombre ne dépend d'aucun choix d'implémentation, ce qui en fait une empreinte comparable entre tous les moteurs.
+  - Perft compte les suites de n demi-coups légaux, sans dédupliquer les positions finales. Le nombre ne dépend d'aucun choix d'implémentation, ce qui en fait une empreinte comparable entre tous les moteurs.
   - "La position de départ est le pire test possible : un générateur qui oublie les sous-promotions la passe sans broncher jusqu'à la profondeur 5."
-  - Six positions de référence suffisent à couvrir les familles de bugs connues. Chacune piège autre chose.
+  - Six positions de référence couvrent plusieurs cas délicats ; elles ne prouvent pas l'absence de tout bug.
   - Divide compare les sous-totaux coup par coup, ce qui transforme la recherche d'un bug en descente dirigée dans l'arbre.
   - Perft ne teste que la génération des coups. La règle des cinquante coups et la nulle par répétition lui sont invisibles.
 faq:
   - question: "Que signifie perft exactement ?"
     answer: >-
-      <em>Performance test</em>. La fonction <code>perft(n)</code> compte le nombre de positions
-      atteignables en exactement n demi-coups depuis une position donnée, en n'empruntant que des coups
+      <em>Performance test</em>. La fonction <code>perft(n)</code> compte le nombre de suites de exactement n demi-coups depuis une position donnée, en n'empruntant que des coups
       légaux. Le nom est trompeur : on s'en sert bien plus souvent pour vérifier la
       <strong>correction</strong> d'un générateur de coups que pour mesurer sa vitesse.
-  - question: "Combien de positions y a-t-il après n coups aux échecs ?"
+  - question: "Combien de suites légales compte perft ?"
     answer: >-
       Depuis la position de départ : 20 après un demi-coup, 400 après deux, 8 902 après trois,
       197 281 après quatre, 4 865 609 après cinq et 119 060 324 après six. Ces valeurs sont publiées et
@@ -45,18 +44,16 @@ faq:
     answer: >-
       Parce qu'un bug de génération n'apparaît que dans les positions qui le déclenchent, et que
       celles-ci sont rares à faible profondeur. Un oubli de prise en passant, par exemple, exige qu'un
-      pion adverse ait avancé de deux cases juste à côté d'un de tes pions : il faut au moins trois ou
-      quatre demi-coups pour construire ce cas de figure.
+      pion adverse ait avancé de deux cases juste à côté d'un de tes pions : depuis la position initiale, une telle capture ne peut apparaître avant le cinquième demi-coup.
   - question: "Comment trouver un bug quand perft est faux ?"
     answer: >-
       Avec <code>divide</code>, qui donne le sous-total de chaque coup au lieu du seul total. On compare
-      ces sous-totaux à ceux d'un moteur de référence : un seul diffère en général. On joue ce coup, on
+      ces sous-totaux à ceux d'un moteur de référence : un ou plusieurs peuvent différer. On joue ce coup, on
       recommence à la profondeur inférieure, et on descend ainsi jusqu'à la position où un coup est
       produit en trop ou manque. Quelques secondes par étage.
   - question: "Un perft juste garantit-il que mon moteur jouera correctement ?"
     answer: >-
-      Non, il garantit seulement que la <strong>génération des coups</strong> est correcte, ce qui est
-      déjà l'essentiel. Perft ne regarde ni la règle des cinquante coups, ni la nulle par répétition, ni
+      Non, il contrôle les arbres explorés ; des erreurs peuvent même se compenser dans un total. Perft ne regarde ni la règle des cinquante coups, ni la nulle par répétition, ni
       la détection du mat et du pat, ni bien sûr la qualité du jeu. Ces points demandent leurs propres
       tests.
 ---
@@ -71,13 +68,13 @@ Il existe une réponse à ce problème, et elle est plus vieille que la plupart 
 
 ## Compter, plutôt que raisonner
 
-L'idée est d'une simplicité désarmante. À partir d'une position, on compte toutes les positions atteignables en `n` demi-coups en n'empruntant que des coups légaux. On appelle ça `perft`, pour *performance test*, un nom trompeur puisqu'on s'en sert surtout pour vérifier la correction.
+L'idée est d'une simplicité désarmante. À partir d'une position, on compte toutes les suites légales de `n` demi-coups, même si plusieurs atteignent la même position en n'empruntant que des coups légaux. On appelle ça `perft`, pour *performance test*, un nom trompeur puisqu'on s'en sert surtout pour vérifier la correction.
 
 Ce nombre a une propriété rare en informatique : **il ne dépend d'aucun choix d'implémentation**. Mailbox ou bitboards, Python ou C++, génération légale ou pseudo-légale filtrée, tout le monde doit trouver le même nombre. C'est une empreinte de la définition des règles du jeu, pas de ton programme.
 
 Depuis la position de départ :
 
-| Profondeur | Positions |
+| Profondeur | Suites légales |
 |---|---|
 | 1 | 20 |
 | 2 | 400 |
@@ -146,7 +143,7 @@ La deuxième, due à Peter McKenzie, est connue sous le nom de **Kiwipete**. Ell
 
 Savoir que `perft(4)` vaut 320 802 au lieu de 422 333 ne dit pas où est le bug. Cent mille positions manquent, réparties on ne sait où dans l'arbre.
 
-La solution s'appelle `divide`, et c'est une dichotomie déguisée. Au lieu du seul total, on donne le sous-total de **chaque coup** de la position :
+La solution s'appelle `divide`, et c'est une descente guidée dans les sous-arbres. Au lieu du seul total, on donne le sous-total de **chaque coup** de la position :
 
 ```python
 def divide(echiquier, profondeur):
@@ -240,3 +237,9 @@ Une phase 1 terminée, et un socle dont la correction n'est pas une opinion. Rep
 C'est le bon moment pour un aveu : rien de ce que tu as écrit jusqu'ici ne joue aux échecs. Ton programme sait ce qui est permis, pas ce qui est bon. La suite de la série ne fera plus que répondre à cette seconde question, et elle commence par la façon la plus bête d'y répondre.
 
 **Prochain article :** un moteur qui joue au hasard. Ridicule, indispensable, et déjà capable de perdre une partie complète sans jamais jouer un coup illégal.
+
+## Sources
+
+Le script officiel de Stockfish publie les positions et comptages utilisés pour contrôler perft. Un total juste reste un contrôle sur les cas parcourus, pas une preuve générale de correction.
+
+- Équipe Stockfish (s. d.), tests/perft.sh, code officiel, [texte de référence](https://github.com/official-stockfish/Stockfish/blob/master/tests/perft.sh).

@@ -12,94 +12,67 @@ tags: ["Go", "AlphaGo", "complexité combinatoire", "IA", "comparaison", "cognit
 seoTitle: "Échecs vs Go : comparaison complète (complexité, cognition, IA)"
 seoDescription: "Quel jeu entre échecs et Go demande le plus d'intelligence ? Complexité combinatoire, cognition humaine, IA : tout le comparatif en une analyse rigoureuse."
 keyTakeaways:
-  - "Le Go a une complexité combinatoire bien supérieure aux échecs, mais ce n'est pas la même grandeur que la complexité de jeu réelle."
-  - "Les échecs sont plus tactiques par coup, le Go plus stratégique par phase : les types d'intelligence sollicités diffèrent."
-  - "AlphaGo (2016) a marqué la fin de la supériorité humaine au Go avec 20 ans de retard sur Deep Blue (1997) aux échecs."
-  - "La culture du Go favorise une approche intuitive et esthétique ; celle des échecs, une approche analytique et calculatoire."
-  - "'Quel jeu est le plus intelligent' est une mauvaise question : ils sollicitent des modes cognitifs différents."
+  - "Les configurations d'un plateau et les suites de parties sont deux grandeurs distinctes."
+  - "La taille d'un espace de jeu ne mesure pas l'intelligence de ses pratiquants."
+  - "Les matchs Deep Blue–Kasparov (1997) et AlphaGo–Lee Sedol (2016) sont séparés de 19 ans."
+  - "AlphaZero emploie une architecture commune de recherche et d'apprentissage, avec des entraînements distincts pour chaque jeu."
+  - "Tactique, stratégie et reconnaissance de motifs existent dans les deux jeux."
 faq:
-  - question: "Le Go est-il vraiment plus complexe que les échecs ?"
-    answer: "Combinatoirement, oui : environ 10^170 positions légales contre 10^46 aux échecs. Mais la complexité d'un jeu pour un humain ne se réduit pas au nombre de positions. La recherche cognitive montre que les deux jeux sollicitent des mécanismes de haut niveau différents, et que ni l'un ni l'autre n'est 'plus dur' dans l'absolu."
+  - question: "Le Go compte-t-il davantage de positions ?"
+    answer: "Le comptage de Tromp donne environ $2,08\\times10^{170}$ configurations légales sur 19×19 selon sa définition. Il faut comparer des positions à des positions, et non cet espace à un arbre de parties d'échecs."
   - question: "AlphaGo a-t-il résolu le Go ?"
-    answer: "Non. AlphaGo et ses successeurs (AlphaZero, KataGo) jouent bien au-delà du niveau humain, mais le Go reste non résolu au sens mathématique : on ne connaît pas le résultat parfait avec jeu optimal des deux côtés."
-  - question: "Peut-on être fort aux deux ?"
-    answer: "Oui, mais c'est rare. Les compétences se chevauchent partiellement (pattern recognition, mémoire de situations), mais les heuristiques de chaque jeu interfèrent souvent. La plupart des très bons joueurs se spécialisent sur un seul jeu."
+    answer: "Gagner un match contre un champion ne constitue pas une preuve de l'issue sous jeu parfait depuis la position initiale."
+  - question: "Les résultats des IA classent-ils l’intelligence des joueurs ?"
+    answer: "Non. Ils mesurent des performances de programmes dans des protocoles précis. Ils ne comparent pas directement l'intelligence générale des joueurs humains."
 heroImage:
   src: "/images/og-default.png"
   alt: "Échiquier face à un goban : deux philosophies du jeu"
 ogImage: "/images/og-default.png"
 ---
 
-Il y a une question que les joueurs des deux camps ressortent à chaque rencontre : lequel des deux jeux est le plus complexe ? Les amateurs de Go montrent les chiffres astronomiques de leur espace de jeu. Les joueurs d'échecs répondent que leur jeu exige une précision tactique que le Go ne connaît pas. Les deux ont partiellement raison. Et la question elle-même est mal posée.
+Les amateurs de Go montrent les chiffres de leur espace de jeu. Les joueurs d'échecs répondent que leur jeu exige une grande précision tactique. Ces arguments parlent de choses différentes : compter des configurations n'est pas mesurer la difficulté ressentie ni l'intelligence d'une personne.
 
-Ce comparatif ne cherche pas à couronner un vainqueur. Il cherche à comprendre ce que chaque jeu demande vraiment au cerveau humain, et ce que leurs trajectoires respectives face à l'intelligence artificielle nous apprennent sur la nature de ces exigences.
+## Comparer les mêmes grandeurs
 
-## La complexité combinatoire : les chiffres et ce qu'ils ne disent pas
+Pour le Go 19×19, Tromp présente un comptage d'environ $2,08\times10^{170}$ configurations légales, avec une définition explicite fondée sur les groupes et leurs libertés. Ce nombre décrit des configurations du plateau, pas des parties complètes ni tout l'historique nécessaire à certaines règles.
 
-Le nombre de parties légalement jouables aux échecs est estimé entre 10^120 et 10^123, ce qu'on appelle le nombre de Shannon. L'espace des positions légales atteint environ 10^46. Ce sont des chiffres vertigineux.
+Aux échecs, l'ordre de grandeur de Shannon, $10^{120}$, concerne un arbre de parties estimé. Le comparer directement au nombre de positions du Go mélange deux mesures. Le nombre de positions d'échecs est une autre question, traitée dans [l'article sur la complexité](/fr/blog/echecs-et-complexite-algorithmique/).
 
-Au Go, sur un goban de 19x19, le nombre de positions légales dépasse 10^170. Le nombre de parties possibles est encore plus grand. Pour mettre ces chiffres en perspective : le nombre d'atomes dans l'univers observable est d'environ 10^80. Le Go surpasse les atomes de l'univers, pas les échecs.
+Même un décompte exact ne dit pas combien de positions un humain devra comprendre pour jouer à son niveau. Les joueurs ne parcourent pas exhaustivement tout cet espace.
 
-Mais qu'est-ce que cela signifie vraiment pour un joueur humain ?
+## Des tâches différentes, sans profils cérébraux exclusifs
 
-Rien de direct. Un joueur humain ne parcourt pas l'arbre des possibles de manière exhaustive. Il évalue des positions, reconnaît des structures, applique des heuristiques. La complexité combinatoire absolue dit peu de choses sur la complexité cognitive réelle de chaque jeu. Ce qui compte, c'est la granularité des décisions et la profondeur de l'horizon stratégique perçu par un joueur de haut niveau.
+Les pièces d'échecs ont des déplacements différents ; les pierres du Go participent à des groupes, captures et territoires. Les décisions concrètes ne se ressemblent donc pas toujours.
 
-Sur ce point, les deux jeux sont différents plutôt qu'inégaux.
+Il serait pourtant trompeur de réserver la tactique aux échecs et l'intuition globale au Go. Dans les deux jeux, tu peux devoir calculer une suite locale et apprécier une situation plus large. L'article ne dispose pas d'une comparaison expérimentale commune permettant de classer les régions cérébrales ou les « types d'intelligence » des deux populations.
 
-## Ce que les échecs demandent spécifiquement
+Le fait qu'un motif familier aide un expert ne prouve pas non plus un transfert automatique lorsqu'il commence l'autre jeu. Il devra en apprendre les règles et les structures propres.
 
-Les études cognitives sur les joueurs d'échecs sont nombreuses depuis les travaux fondateurs d'Adriaan de Groot dans les années 1940. Ses expériences ont montré que les grands maîtres ne calculent pas plus de coups que les joueurs amateurs : ils calculent mieux, en sélectionnant immédiatement les branches pertinentes.
+## Ce que les matchs contre les humains montrent
 
-Ce mécanisme repose sur ce qu'on appelle aujourd'hui la reconnaissance de motifs. Un grand maître a mémorisé entre 50 000 et 100 000 structures positionnelles, selon les estimations de Chase et Simon (1973). Face à une position, son cerveau effectue une correspondance rapide avec ces templates, ce qui oriente instantanément sa recherche vers les coups candidats utiles.
+IBM rapporte la victoire de Deep Blue sur Kasparov en 1997. DeepMind rapporte celle d'AlphaGo sur Lee Sedol en mars 2016, par quatre parties à une. Il y a 19 ans entre ces événements.
 
-Ce qui rend les échecs exigeants, c'est la précision tactique. Une séquence de 7 coups peut transformer une position légèrement meilleure en position gagnante ou perdante. L'évaluation d'une position aux échecs est souvent binaire à haute précision : il y a un meilleur coup ou une ligne principale, que l'on doit trouver. Cette exigence de précision est unique.
+Ils sont des jalons de performance. Ils ne constituent ni une résolution mathématique des jeux ni une expérience contrôlée permettant d'attribuer le délai à une seule différence cognitive entre eux. Algorithmes, puissance de calcul, données et moyens de développement ont aussi changé.
 
-Les fonctions cognitives les plus sollicitées aux échecs sont les fonctions exécutives (planification, inhibition, flexibilité), la mémoire de travail visuo-spatiale, et le raisonnement déductif séquentiel.
+L'histoire d'AlphaGo décrite par ses auteurs combine réseaux de politique et de valeur avec une recherche. L'apprentissage initial sur des parties humaines et l'auto-jeu ne doivent pas être confondus avec la procédure d'AlphaZero.
 
-## Ce que le Go demande différemment
+## AlphaZero : une méthode commune, pas un cerveau humain commun
 
-Le Go se joue sur un [goban](https://amzn.to/44EReyb) vierge. Les premiers coups n'ont pas de valeur tactique immédiate visible : ils établissent des influences, des territoires potentiels, des directions de jeu. Un débutant regarde un goban en cours de partie et ne comprend pas comment l'évaluer. Un maître voit des structures globales, des équilibres de territoire et de force.
+Silver et ses collègues (2017) présentent un algorithme général appliqué séparément aux échecs, au shogi et au Go. Les entraînements partent des règles et de l'auto-jeu, avec des réseaux distincts pour les jeux.
 
-Ce que les études cognitives montrent au Go, c'est que l'expertise repose davantage sur une évaluation holistique des positions globales, plutôt que sur le calcul de séquences précises. Les top joueurs de Go calculent des séquences tactiques dans les combats locaux (les "ladders", les captures en séquence), mais l'essentiel de leur supériorité réside dans l'évaluation stratégique globale, difficile à formaliser.
+Le réseau propose des probabilités de coups et une valeur ; la recherche MCTS explore les continuations. Les courbes et temps rapportés dépendent du matériel, des adversaires et des réglages de l'expérience. Ils ne donnent pas le nombre d'heures qu'il faudrait à un humain pour atteindre la même force.
 
-Michael Redmond, l'un des rares joueurs occidentaux à avoir atteint le niveau 9 dan professionnel, décrit la décision en Go comme une intuition raisonnée : on sent que telle zone est plus urgente, que tel coup crée une harmonie globale, sans pouvoir toujours le calculer explicitement.
+Le succès d'une architecture commune montre une possibilité informatique. Il ne démontre pas que les humains apprennent les trois jeux par les mêmes mécanismes, ni que le Go aurait nécessité une forme d'intuition inaccessible aux autres approches par principe.
 
-Cette dimension intuitive et globale est précisément ce qui a rendu le Go si difficile pour les algorithmes de type alpha-beta utilisés aux échecs. Ces algorithmes parcourent un arbre de recherche et évaluent des positions. Au Go, l'espace de branchement est beaucoup trop grand, et les positions trop difficiles à évaluer localement.
+## Comment choisir
 
-## La leçon de l'intelligence artificielle
+Si tu hésites, essaie de petites séances et observe ce qui t'intéresse : les règles, les positions, la communauté, le rythme des parties. Tu peux aussi apprécier les deux sans attendre une amélioration générale d'intelligence.
 
-La trajectoire des IA dans les deux jeux est instructive.
+Pour comparer ta propre progression, définis des objectifs dans chaque jeu. La compréhension d'une finale ou d'un problème de vie et mort vaut comme apprentissage du domaine, sans devoir établir une hiérarchie des personnes qui le pratiquent.
 
-Deep Blue bat Kasparov en 1997. L'approche est celle de la force brute guidée par des heuristiques : évaluation de position codée à la main, recherche alpha-beta massivement parallèle. Les échecs se révèlent relativement accessibles à cet algorithme parce que l'espace de branchement est gérable et les positions évaluables avec des critères matériels et positionnels clairs.
+## Sources
 
-AlphaGo bat Lee Sedol en 2016, vingt ans plus tard. Et l'approche est radicalement différente : réseaux de neurones entraînés sur des millions de parties humaines, puis perfectionnés par apprentissage par renforcement contre elle-même. AlphaGo n'évalue pas les positions avec des critères codés à la main : elle a développé une forme d'intuition positionnelle par exposition massive.
-
-Ce décalage de vingt ans n'est pas dû à la paresse des informaticiens. Il est dû à la nature de chaque jeu. Les échecs se prêtaient aux approches analytiques classiques. Le Go nécessitait une IA capable d'intuition holistique, ce qui n'a été possible qu'avec le deep learning.
-
-AlphaZero, publiée par DeepMind en 2017, joue aux deux jeux. En partant de zéro et en s'entraînant uniquement par auto-jeu, elle atteint un niveau surhumain aux échecs en 4 heures et au Go en 8 heures. Ce résultat suggère que les deux jeux demandent des formes d'apprentissage similaires dans leur architecture profonde, même si les stratégies de surface diffèrent.
-
-## Les profils cognitifs comparés
-
-Des études en neurosciences cognitives ont tenté de caractériser les joueurs experts dans les deux jeux. Les résultats sont convergents sur un point : les deux jeux recrutent fortement le cortex préfrontal et les régions liées à la mémoire de motifs (régions occipito-pariétales et temporales).
-
-Les différences émergent dans les détails. Les joueurs d'échecs montrent une activation plus marquée des régions liées au calcul séquentiel et au raisonnement déductif. Les joueurs de Go montrent une activation plus distribuée, avec une participation plus grande des régions liées à l'évaluation holistique et à l'intégration spatiale globale.
-
-Il ne faut pas sur-interpréter ces différences : elles reflètent les exigences de chaque jeu, pas des différences d'intelligence générale. Un grand joueur d'échecs et un grand joueur de Go ont tous deux des cerveaux qui traitent l'information de manière exceptionnelle. Ils l'ont simplement entraîné dans des directions partiellement différentes.
-
-## Pourquoi la question est mal posée
-
-"Quel jeu demande le plus d'intelligence ?" suppose qu'il existe un facteur général d'intelligence que les jeux mesurent et développent. La recherche cognitive invalide cette idée depuis plusieurs décennies.
-
-L'intelligence est multiple, contextualisée, dépendante des domaines. Les joueurs d'échecs sont exceptionnellement bons à évaluer des positions tactiques et à planifier des séquences. Les joueurs de Go sont exceptionnellement bons à évaluer des équilibres territoriaux et à prendre des décisions sous ambiguïté profonde. Ces deux formes d'excellence ne se comparent pas sur une échelle unique.
-
-Ce qui est certain : les deux jeux sont parmi les activités cognitives les plus exigeantes que l'être humain ait inventées. Dire que l'un est "plus difficile" que l'autre revient à demander si l'escalade est plus difficile que la natation. Ça dépend de qui vous êtes, de comment vous apprenez, et de ce que vous entendez par difficile.
-
-## Ce que chaque jeu enseigne à l'autre
-
-Les joueurs qui ont sérieusement pratiqué les deux rapportent des apprentissages croisés partiels mais réels.
-
-Les échecs enseignent au joueur de Go une rigueur tactique dans les combats locaux. Les séquences de capture, les menaces doubles, le calcul précis d'une séquence en ko : ces outils se transfèrent partiellement du joueur d'échecs vers le Go.
-
-Le Go enseigne au joueur d'échecs une lecture stratégique globale et une tolérance à l'ambiguïté. Un joueur d'échecs qui aborde le Go avec son instinct d'évaluation locale se perd rapidement. Apprendre à évaluer une situation globale sans certitude immédiate est une compétence que le Go développe mieux que les échecs.
-
-Les deux jeux partagent enfin quelque chose d'essentiel : ils exigent de leur pratiquant une honnêteté radicale face à ses propres erreurs. Une partie d'échecs ou de Go se conclut par une vérité sans appel. Pas de chance, pas d'excuse. Cette vertu épistémique est commune aux deux traditions, et c'est peut-être la plus précieuse de tout ce que ces jeux transmettent.
+- Tromp, J. (2016), *Counting Legal Positions in Go*, compte rendu de l'auteur, [texte et méthode](https://tromp.github.io/go/legal.html).
+- IBM (s. d.), *Deep Blue*, archives de l'entreprise, [histoire](https://www.ibm.com/history/deep-blue).
+- Google DeepMind (s. d.), *AlphaGo*, historique et méthode, [présentation officielle](https://deepmind.google/research/alphago/).
+- Silver, D. et al. (2017), *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*, arXiv, [article original](https://arxiv.org/html/1712.01815v1).
