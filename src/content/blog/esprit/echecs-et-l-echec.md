@@ -22,7 +22,7 @@ tags:
   - mindset
 keyTakeaways:
   - >-
-    Aux échecs, vous savez exactement quand vous avez perdu : la position est morte avant la reddition. Pas d'arbitre,
+    Aux échecs, tu sais exactement quand tu as perdu : la position est morte avant la reddition. Pas d'arbitre,
     pas de chance invocable, pas de coéquipier à responsabiliser. C'est une forme de défaite psychologiquement à part.
   - >-
     La loss aversion (Kahneman) s'applique mécaniquement à l'Elo : perdre des points fait statistiquement plus mal que
@@ -89,23 +89,23 @@ faq:
 
 Il y a une chose étrange qui se passe dans les clubs d'échecs que personne ne formule explicitement. À la fin de la partie, le perdant tend la main au gagnant. Pas dans un couloir, pas dans un vestiaire, pas après un moment de solitude pour récupérer. Immédiatement, sur la table, devant les autres joueurs qui peuvent encore regarder.
 
-Dans presque tous les sports, la défaite a un amortisseur : le vestiaire, le couloir, l'équipe qui absorbe. Aux échecs, vous tendez la main immédiatement à celui qui vient de vous battre. C'est un rituel de civilité que le règlement ne prescrit pas mais que la culture impose. Et c'est un rituel psychologiquement très particulier.
+Dans presque tous les sports, la défaite a un amortisseur : le vestiaire, le couloir, l'équipe qui absorbe. Aux échecs, tu tends la main immédiatement à celui qui vient de te battre. C'est un rituel de civilité que le règlement ne prescrit pas mais que la culture impose. Et c'est un rituel psychologiquement très particulier.
 
 ## Ce que la défaite aux échecs a de spécifique
 
 Perdre aux échecs n'est pas comme perdre dans d'autres contextes. La défaite y possède des propriétés qui la rendent psychologiquement à part.
 
-**Elle est objective.** Il n'y a pas d'arbitre qui aurait pu décider autrement. Pas de malchance sur un dé ou sur un rebond imprévisible. La position est perdante parce que les pièces sont là où elles sont, et vous savez pourquoi. Vous pouvez même souvent le calculer vous-même plusieurs coups à l'avance.
+**Elle est objective.** Il n'y a pas d'arbitre qui aurait pu décider autrement. Pas de malchance sur un dé ou sur un rebond imprévisible. La position est perdante parce que les pièces sont là où elles sont, et tu sais pourquoi. Tu peux même souvent le calculer toi-même plusieurs coups à l'avance.
 
-**Elle est anticipable.** Dans la plupart des positions perdantes, le joueur sait qu'il perd avant de renverser le roi. Parfois plusieurs coups avant. Vous pouvez jouer une fin de partie entière en sachant que vous allez perdre, en cherchant seulement le meilleur moyen de perdre le moins mal possible. C'est une expérience psychologique singulière : habiter consciemment une défaite en cours.
+**Elle est anticipable.** Dans la plupart des positions perdantes, le joueur sait qu'il perd avant de renverser le roi. Parfois plusieurs coups avant. Tu peux jouer une fin de partie entière en sachant que tu vas perdre, en cherchant seulement le meilleur moyen de perdre le moins mal possible. C'est une expérience psychologique singulière : habiter consciemment une défaite en cours.
 
-**Elle est solitaire.** Pas de coéquipier à responsabiliser même partiellement. Pas de coach à qui déléguer la responsabilité d'une mauvaise préparation. La défaite est entièrement la vôtre.
+**Elle est solitaire.** Pas de coéquipier à responsabiliser même partiellement. Pas de coach à qui déléguer la responsabilité d'une mauvaise préparation. La défaite est entièrement la tienne.
 
-**Elle est publique.** La notation de la partie est disponible. L'Elo chute et tout le monde peut voir où vous étiez et où vous êtes. Dans les tournois, vos adversaires futurs voient votre défaite avant de vous affronter.
+**Elle est publique.** La notation de la partie est disponible. L'Elo chute et tout le monde peut voir où tu étais et où tu es. Dans les tournois, tes adversaires futurs voient ta défaite avant de t’affronter.
 
 Cette combinaison (objective, anticipable, solitaire, publique) fait de la défaite aux échecs quelque chose que la plupart des adultes n'ont jamais expérimenté à ce degré dans aucun autre contexte de leur vie.
 
-## Ce que Kahneman explique sur votre rapport à l'Elo
+## Ce que Kahneman explique sur ton rapport à l'Elo
 
 [Daniel Kahneman](https://fr.wikipedia.org/wiki/Daniel_Kahneman) et Amos Tversky ont documenté en 1979 un biais cognitif fondamental : la **loss aversion**. Dans leur formalisation : les pertes font psychologiquement environ deux fois plus mal que les gains équivalents font plaisir.
 
@@ -143,7 +143,7 @@ Aux échecs, la défaite est immédiate, visible, et requiert un acte positif (t
 
 Ce rituel force quelque chose d'important : il oblige à accepter la réalité de la défaite sans délai. Psychologiquement, le délai est souvent ce qui permet la construction défensive : la réinterprétation, la minimisation, la projection sur des facteurs externes. La poignée de main immédiate coupe court à ce processus.
 
-C'est inconfortable. C'est aussi probablement la chose la plus formatrice que les échecs imposent : pas le jeu lui-même, mais ce moment précis, juste après la partie, quand vous n'avez pas encore eu le temps de construire votre histoire de la défaite.
+C'est inconfortable. C'est aussi probablement la chose la plus formatrice que les échecs imposent : pas le jeu lui-même, mais ce moment précis, juste après la partie, quand tu n’as pas encore eu le temps de construire ton histoire de la défaite.
 
 ## Ce que font réellement les grands maîtres
 
@@ -173,13 +173,13 @@ La différence est fine mais mesurable dans les résultats à long terme. Un jou
 
 La pratique qui concrétise le mieux la distinction n'est pas une attitude mentale. C'est une procédure.
 
-**1. Rejouer la partie sans moteur d'abord.** Identifier les moments où vous avez senti que quelque chose n'allait pas, les coups dont vous n'étiez pas sûr, les positions où vous avez perdu le fil.
+**1. Rejouer la partie sans moteur d'abord.** Identifier les moments où tu as senti que quelque chose n'allait pas, les coups dont tu n’étais pas sûr, les positions où tu as perdu le fil.
 
-**2. Formuler une hypothèse sur votre erreur principale.** Pas "j'ai mal joué le milieu de jeu" (trop vague). "J'ai sous-estimé la contre-attaque sur l'aile-roi à partir du coup 22 parce que je calculais uniquement les menaces directes sur mon roi."
+**2. Formuler une hypothèse sur ton erreur principale.** Pas "j'ai mal joué le milieu de jeu" (trop vague). "J'ai sous-estimé la contre-attaque sur l'aile-roi à partir du coup 22 parce que je calculais uniquement les menaces directes sur mon roi."
 
-**3. Vérifier l'hypothèse avec le moteur.** Pas pour savoir ce qu'il fallait jouer. Pour savoir si votre diagnostic est correct.
+**3. Vérifier l'hypothèse avec le moteur.** Pas pour savoir ce qu'il fallait jouer. Pour savoir si ton diagnostic est correct.
 
-**4. Formuler une conclusion transférable.** Quelque chose que vous pouvez appliquer à la prochaine partie. Pas "je dois mieux calculer" (non-actionnable). "Avant de jouer un coup d'attaque, vérifier systématiquement les contre-attaques de l'adversaire dans les deux ailes, pas seulement dans la direction de ma propre attaque."
+**4. Formuler une conclusion transférable.** Quelque chose que tu peux appliquer à la prochaine partie. Pas "je dois mieux calculer" (non-actionnable). "Avant de jouer un coup d'attaque, vérifier systématiquement les contre-attaques de l'adversaire dans les deux ailes, pas seulement dans la direction de ma propre attaque."
 
 Ce protocole transforme la défaite d'un événement émotionnel en un outil pédagogique. C'est ce que font les joueurs qui progressent, souvent intuitivement. Explicité, il devient enseignable.
 
@@ -210,5 +210,5 @@ Sans ce travail, les échecs ne forment pas plus à la défaite que n'importe qu
 ## Pour aller plus loin
 
 - [Résilience aux échecs : apprendre à rebondir après la défaite](/fr/blog/echecs-et-resilience/)
-- [Elo et estime de soi : quand votre classement devient votre identité](/fr/blog/echecs-estime-de-soi-elo/)
+- [Elo et estime de soi : quand ton classement devient ton identité](/fr/blog/echecs-estime-de-soi-elo/)
 - [Échecs et confiance en soi : ce que l'échiquier construit vraiment](/fr/blog/echecs-et-confiance-en-soi/)
