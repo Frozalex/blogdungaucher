@@ -591,6 +591,22 @@ Depuis la session 2024, l'orientation n'est plus une troisième partie chronomé
 - [ ] Eau dans la salle d'attente, **pas** de café à jeun
 - [ ] Phase de préparation : 20 minutes pour choisir et organiser. Ne perds **pas** plus de 2 minutes à choisir.
 
+## Deux fiches intégrées : minimax et alpha-bêta
+
+Les développements des sujets minimax et alpha-bêta sont regroupés ici. Les [fiches minimax](/fr/blog/sujet-grand-oral-nsi-minimax/) et [alpha-bêta](/fr/blog/sujet-grand-oral-nsi-alpha-beta/) restent disponibles pour une révision courte.
+
+### Remonter les scores sur un exemple autonome
+
+Avec deux nœuds MIN sous une racine MAX, prends les feuilles (3, 5) puis (2, 9). MIN retient 3 dans la première branche et 2 dans la seconde ; MAX choisit donc 3. Le code complet présenté plus haut produit ce résultat sur `Position(((3, 5), (2, 9)))`.
+
+Dans la version alpha-bêta, après avoir obtenu 3 sur la première branche, MAX n’a plus besoin d’explorer la feuille 9 : MIN a déjà rencontré 2 dans la seconde, qui ne pourra donc pas devenir préférable au 3 disponible ailleurs. C’est une coupure justifiée par les choix des deux joueurs, pas par l’idée qu’une feuille serait intrinsèquement sans intérêt.
+
+### Présenter la complexité avec ses conditions
+
+Pour b = 35 et d = 6, le rapport des puissances b^d et b^(d/2) vaut 35^3 = 42 875. C’est une comparaison d’ordres de grandeur dans le meilleur cas de tri, pas un gain mesuré ou un décompte exact. Sans bon ordre des coups, alpha-bêta peut retrouver le coût de minimax.
+
+Une feuille évaluée à profondeur limitée n’est pas nécessairement une fin de partie. Distingue donc la valeur exacte d’un arbre entièrement résolu et le score estimé par une fonction heuristique. Le code de démonstration et son évaluation sont définis ; un moteur jouable demanderait en plus les règles et la génération des coups.
+
 ## Sources et références
 
 - Ministère de l’Éducation nationale (2026). *Baccalauréat : comment se passe le Grand oral ?* [Règles officielles](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028) : préparation, deux temps de dix minutes et support autorisé.
