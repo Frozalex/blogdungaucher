@@ -1,6 +1,6 @@
 ---
-title: "Échecs vs Scrabble : deux types d'esprits, deux types de mémoire"
-excerpt: "Scrabble et échecs sont souvent présentés comme des jeux de l'intelligence pure. Mais les profils cognitifs qu'ils développent sont très différents, voire opposés. Exploration."
+title: "Échecs vs Scrabble : quelles compétences cognitives développent-ils ?"
+excerpt: "Comparer les informations disponibles, les connaissances et les choix dans les deux jeux, sans en déduire des profils cognitifs opposés."
 publishDate: "2026-12-31"
 category: "esprit"
 featured: false
@@ -12,7 +12,8 @@ tags: ["scrabble", "mémoire lexicale", "calcul combinatoire", "comparaison", "c
 seoTitle: "Échecs vs Scrabble : quelles compétences cognitives développent-ils ?"
 seoDescription: "Échecs ou Scrabble : quelles compétences mentales développent ces jeux ? Mémoire lexicale, calcul combinatoire, profils cognitifs : la comparaison complète."
 keyTakeaways:
-
+  - "Scrabble classique et duplicate ne présentent pas la même incertitude liée aux tirages."
+  - "Les différences de règles ne prouvent ni des profils cognitifs opposés ni un transfert général hors du jeu."
 faq:
   - question: "Le Scrabble comporte-t-il une part de hasard ?"
     answer: "En classique, les tirages diffèrent entre joueurs. En duplicate, tous reçoivent les mêmes lettres à chaque coup."

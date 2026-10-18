@@ -9,3 +9,5 @@ Réécriture de la comparaison cognitive : mot fictif AAAXYZ et distribution err
 - [Chase et Simon (1973)](https://gwern.net/doc/psychology/chess/1973-chase.pdf)
 
 SEO, date et slug conservés. Aucun marqueur « À VÉRIFIER PAR LUC » ajouté.
+
+Contrôle final : résumé vide remplacé par deux points alignés ; titre et extrait retirent l’affirmation de profils opposés.
