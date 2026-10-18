@@ -88,12 +88,12 @@ Le **Grand Oral** est l'épreuve la mieux notée du **bac** général, à **coef
 | Temps | Phase | Ce que tu fais | Ce que le **jury** observe |
 |---|---|---|---|
 | 20 min | Préparation | On te donne deux **questions** issues de ton **programme** de spécialité. Tu choisis l'une des deux. Brouillon autorisé. | Rien : tu es seul en salle |
-| 10 min | Exposé debout | Tu présentes ta **question** debout, sans notes (ou très peu). | **Posture**, voix, structure |
+| 10 min | Exposé debout | Tu présentes ta **question** debout, avec le support préparé pendant les 20 minutes de préparation. | **Posture**, voix, structure |
 | 10 min | Échange avec le **jury** | Le **jury** te questionne sur le **sujet**, ton plan, ton code. | Maîtrise, réactivité, ouverture |
 
 Attention aux guides encore en ligne qui décrivent un exposé de 5 minutes suivi d'une troisième partie de 5 minutes sur le projet d'orientation : c'était le format jusqu'à la session 2023. Depuis la session 2024, l'épreuve tient en deux temps de 10 minutes et la partie orientation a été supprimée.
 
-Sur les **10 minutes** d'exposé, tu joues 1 point coefficient par minute. C'est l'**épreuve** la plus rentable du **bac** au ratio temps de préparation / impact note.
+Les 10 minutes d’exposé et les 10 minutes d’échange sont évaluées ensemble. Le coefficient n’attribue pas un point par minute : travaille aussi ta capacité à répondre aux questions.
 
 ### Composition du jury et attendus
 
@@ -210,7 +210,33 @@ Si tu vises une école d'ingénieur, ta problématique doit pouvoir conduire au 
 
 ![Arbre de jeu minimax à trois niveaux avec alternance de nœuds MAX (Blancs) et MIN (Noirs) jusqu'aux feuilles où s'applique la fonction d'évaluation.](/images/guide-go-nsi-01-arbre-jeu.svg)
 
+Le code suivant est exécutable sur un petit arbre de scores. `Position` simule les transitions : pour jouer aux échecs, il faut la remplacer par une représentation du plateau et un générateur de coups légaux. Les scores restent toujours exprimés du point de vue des Blancs.
+
 ```python
+class Position:
+    def __init__(self, arbre):
+        self.arbre = arbre
+        self.historique = []
+
+    def est_terminee(self):
+        return isinstance(self.arbre, (int, float))
+
+    def coups_possibles(self):
+        return range(len(self.arbre))
+
+    def joue(self, coup):
+        self.historique.append(self.arbre)
+        self.arbre = self.arbre[coup]
+
+    def annule(self, coup):
+        self.arbre = self.historique.pop()
+
+
+def evaluer(position):
+    # À profondeur limitée, 0 est ici une évaluation illustrative.
+    return position.arbre if position.est_terminee() else 0
+
+
 def minimax(position, profondeur, maximise):
     # Cas de base : profondeur atteinte ou partie terminée
     if profondeur == 0 or position.est_terminee():
@@ -277,13 +303,13 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
         return meilleur
 ```
 
-> *« `alpha` = meilleur score garanti pour les Blancs. `beta` = meilleur score garanti pour les Noirs. Quand `beta ≤ alpha`, il est inutile d'explorer davantage : les deux joueurs ne choisiraient jamais cette branche.*
+> *« `alpha` = meilleur score garanti pour les Blancs. `beta` = meilleure borne supérieure déjà disponible pour le joueur MIN. Quand `beta ≤ alpha`, il est inutile d'explorer davantage : les deux joueurs ne choisiraient jamais cette branche.*
 
 ![Mécanisme des paramètres alpha et bêta dans l'élagage alpha-bêta : condition de coupure beta inférieur ou égal à alpha illustrée sur un arbre de décision.](/images/guide-go-nsi-03-alpha-beta-params.svg)
 
-> *Gain pratique : dans le meilleur cas (coups triés par ordre de qualité), alpha-bêta réduit le coût à O(b^(d/2)). Soit 35^2 = 1 225 positions pour d = 4 au lieu de 1,5 million. On passe de l'impossible au réalisable en quelques millisecondes. »*
+> *Gain pratique : dans le meilleur cas (coups triés par ordre de qualité), alpha-bêta réduit le coût à O(b^(d/2)). Pour d = 4, l’ordre de grandeur passe de 35^4 à 35^2. Ce sont des ordres de grandeur asymptotiques, pas un comptage exact des feuilles ni une garantie de durée. Le gain dépend de l’ordre des coups. »*
 
-![Comparaison minimax vs alpha-bêta pour b=35 d=4 : 1 500 000 positions contre 1 225, soit un gain supérieur à 1 000 dans le meilleur cas.](/images/guide-go-nsi-04-gain-complexite.svg)
+![Comparaison des ordres de grandeur asymptotiques de minimax et alpha-bêta : le bénéfice dépend de la profondeur et du tri des coups.](/images/guide-go-nsi-04-gain-complexite.svg)
 
 ### 7:00–9:00, Partie 3 : limites et rupture AlphaZero
 
@@ -347,7 +373,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 ### Niveau 2, Comprendre les mécanismes (questions intermédiaires)
 
 **Q6. Expliquez la condition `if beta <= alpha : break` dans le code alpha-bêta.**
-> *« Cette condition est la coupure alpha-bêta. `alpha` est le meilleur score que les Blancs peuvent garantir sur la branche actuelle. `beta` est le meilleur score que les Noirs peuvent garantir. Si `beta ≤ alpha`, les Noirs n'accepteront jamais ce résultat : ils ont déjà une meilleure option ailleurs. Il est donc inutile d'explorer les coups restants sur cette branche : elle sera ignorée par le joueur noir quoi qu'il arrive. »*
+> *« `alpha` est une borne inférieure pour MAX, `beta` une borne supérieure pour MIN, toutes deux dans la même échelle de scores. Quand `beta ≤ alpha`, une option déjà trouvée ailleurs suffit à rendre inutile la suite de cette branche. La coupure peut se produire aussi bien à un nœud MAX qu’à un nœud MIN. »*
 
 **Q7. Quelle est la différence entre le coût dans le meilleur cas et dans le pire cas pour alpha-bêta ?**
 > *« Dans le meilleur cas (coups triés du meilleur au pire), alpha-bêta atteint O(b^(d/2)) : il coupe environ la moitié des branches. Dans le pire cas (coups triés dans le mauvais ordre), il n'effectue aucune coupure et se réduit à minimax : O(b^d). En pratique, avec un tri heuristique des coups (par valeur de capture, par position connue), on est entre les deux : environ O(b^(3d/4)). »*
@@ -359,7 +385,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 > *« Minimax suppose que l'adversaire joue toujours le meilleur coup possible : il minimise toujours. Si l'adversaire fait une erreur, minimax reste correct : la position résultante est encore meilleure pour nous. En revanche, minimax ne cherche pas à exploiter les erreurs de l'adversaire de façon proactive : il suppose simplement qu'elles n'arrivent pas. Cette hypothèse de jeu optimal est pessimiste mais sûre. »*
 
 **Q10. Comment Deep Blue (1997) différait-il de l'algorithme minimax pur ?**
-> *« Deep Blue utilisait alpha-bêta avec des optimisations massives : une bibliothèque de débuts (ouvertures connues) pour ne pas chercher dans les 20 premiers coups, une bibliothèque de finales (positions résolues), et une extension de recherche sélective (explorer plus profondément les positions tactiquement complexes). Il évaluait 200 millions de positions par seconde sur hardware dédié. Ce n'était pas du minimax pur, mais alpha-bêta hautement optimisé avec expertise humaine encodée. »*
+> *« Deep Blue utilisait alpha-bêta avec des optimisations massives : une bibliothèque de débuts (ouvertures connues) pour ne pas chercher dans les 20 premiers coups, une bibliothèque de finales (positions résolues), et une extension de recherche sélective (explorer plus profondément les positions tactiquement complexes). Il évaluait 200 millions de positions par seconde sur matériel spécialisé. Ce n'était pas du minimax pur, mais alpha-bêta hautement optimisé avec expertise humaine encodée. »*
 
 **Q11. Qu'est-ce que l'apprentissage par renforcement qu'AlphaZero utilise ?**
 > *« L'apprentissage par renforcement est un paradigme où l'agent apprend en interagissant avec son environnement et en recevant des récompenses. AlphaZero joue contre lui-même (self-play) : il reçoit +1 s'il gagne, -1 s'il perd, 0 pour une nulle. Le réseau de neurones ajuste ses paramètres pour maximiser la récompense cumulée. Après des millions de parties contre lui-même, le réseau apprend des stratégies que personne ne lui a enseignées. »*
@@ -373,7 +399,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 > *« Un programme minimax est explicable : pour chaque coup choisi, on peut retracer l'arbre et voir les variations considérées. AlphaZero est une boîte noire : le réseau de neurones a des centaines de millions de paramètres, et on ne peut pas dire « pourquoi » il joue un coup en termes de règles. C'est le problème général de l'explicabilité des réseaux de neurones profonds : leur performance est remarquable mais leur raisonnement est opaque. »*
 
 **Q14. Peut-on appliquer l'algorithme minimax à d'autres jeux que les échecs ?**
-> *« Oui : à tout jeu à deux joueurs, information parfaite, sans hasard et à nombre fini de coups. Le morpion, les dames, le Go, le puissance 4, l'Othello. Le puissance 4 a été résolu par minimax en 1988 : les Blancs gagnent toujours avec un jeu parfait. Le morpion est trivial. Le Go a longtemps résisté (trop grand) jusqu'à AlphaGo. Les jeux avec hasard ou information cachée (poker) nécessitent des extensions du minimax. »*
+> *« Minimax s’applique aux jeux finis à deux joueurs, à information parfaite et à somme nulle. Le morpion en est un exemple simple. Puissance 4 a été résolu en 1988 : le premier joueur dispose d’une stratégie gagnante sur la grille standard. Le mémoire d’Allis utilise notamment des règles stratégiques et une recherche adaptée. Gagner au Go grâce à AlphaGo ne signifie pas avoir résolu le Go. »*
 
 **Q15. Comment le tri des coups améliore-t-il alpha-bêta en pratique ?**
 > *« En explorant d'abord les coups les plus prometteurs (captures, coups qui donnent un bel avantage), on maximise les chances de trouver rapidement un bon `alpha`. Plus `alpha` est élevé tôt, plus on peut couper de branches. Un bon tri transforme un alpha-bêta au pire cas en un alpha-bêta proche du meilleur cas. En pratique, les programmes modernes utilisent des heuristiques comme « coups de tueur » (killer heuristic) et la table de transposition pour trier efficacement. »*
@@ -391,7 +417,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 > *« AlphaZero combine le réseau de neurones avec MCTS. Le réseau guide quels nœuds explorer en priorité (la tête de politique donne des probabilités sur les coups). MCTS explore ces nœuds de façon stochastique, accumule des statistiques de victoire/défaite, et retourne le coup le plus visité. Le réseau est entraîné sur les résultats de ces recherches. C'est une boucle : le réseau guide MCTS, et MCTS produit des **données** pour améliorer le réseau. »*
 
 **Q20. Un algorithme parfait aux échecs est-il possible en principe ?**
-> *« En principe oui : le théorème de Zermelo (1913) garantit que les échecs ont un résultat optimal sous jeu parfait. Cet algorithme parfait serait un minimax à profondeur infinie : explorer tout l'arbre. En pratique, avec 10^120 feuilles, c'est physiquement impossible même pour toute la puissance de calcul de l'univers pendant toute son histoire. Les échecs ne seront jamais « résolus » comme les dames (2007) ou le morpion : leur taille les place hors de portée de la force brute. »*
+> *« Un jeu fini comme les échecs possède une valeur sous jeu parfait. Minimax pourrait la calculer en explorant l’arbre jusqu’aux positions terminales ; la profondeur serait finie, mais démesurée. Les estimations combinatoires expliquent pourquoi la force brute est impraticable aujourd’hui. Elles ne démontrent pas que toute résolution future est impossible. »*
 
 ### Niveau 4, Ouvertures et liens transversaux
 
@@ -567,6 +593,11 @@ Depuis la session 2024, l'orientation n'est plus une troisième partie chronomé
 
 ## Sources et références
 
+- Ministère de l’Éducation nationale (2026). *Baccalauréat : comment se passe le Grand oral ?* [Règles officielles](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028) : préparation, deux temps de dix minutes et support autorisé.
+- Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*, 4e édition, Pearson. [Chapitre sur la recherche adversariale](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf) : bornes alpha-bêta et ordres de grandeur cités ici.
+- Allis, V. (1988). *A Knowledge-based Approach of Connect-Four*. Vrije Universiteit Amsterdam. [Mémoire intégral](https://tromp.github.io/c4/connect4_thesis.pdf) : stratégie gagnante à Puissance 4.
+
+
 - **Bulletin officiel n° 36 du 28 septembre 2023.** [*Épreuve orale dite Grand oral de la classe de terminale des voies générale et technologique : modification.*](https://www.education.gouv.fr/bo/2023/Hebdo36/MENE2323117N) (C'est ce texte qui fixe le format en vigueur depuis la session 2024 : deux temps de 10 minutes, sans partie orientation. Il remplace la note de service 2020-014, qui décrivait l'ancien découpage 5/10/5 encore repris par beaucoup de guides.)
 - **Éduscol.** [*Présentation du Grand oral.*](https://eduscol.education.gouv.fr/5661/presentation-du-grand-oral) (Page de référence du ministère sur le déroulé et les attendus.)
 - **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf) *Philosophical Magazine*, Ser. 7, 41(314), 256-275. (Fondation de l'algorithme minimax. PDF intégral en accès libre.)
@@ -575,7 +606,6 @@ Depuis la session 2024, l'orientation n'est plus une troisième partie chronomé
 - **Documentation Stockfish.** [*Stockfish Chess Engine, Source code.*](https://github.com/official-stockfish/Stockfish) GitHub. (Référence pour l'implémentation réelle.)
 - **Lichess Open Database.** [*lichess.org/database*](https://database.lichess.org). (Base de **données** publique de parties d'échecs au format PGN.)
 - **Sadler, M. & Regan, N. (2019).** *Game Changer : AlphaZero's Groundbreaking Chess Strategies.* New In Chess. (Analyse du style d'AlphaZero, accessible aux lycéens.)
-- **Russell, S. & Norvig, P.** *Artificial Intelligence : A Modern Approach* (4e éd., 2020). Pearson. (Manuel de référence IA pour CPGE, chapitres 5-6 sur minimax.)
 
 ---
 
