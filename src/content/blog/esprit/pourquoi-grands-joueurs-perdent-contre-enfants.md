@@ -29,7 +29,7 @@ faq:
   - question: "L'âge a-t-il vraiment un effet sur les performances aux échecs ?"
     answer: "Les études montrent que la performance Elo de pointe se situe vers 30-40 ans, mais la précision tactique pure est très élevée chez les jeunes joueurs. Les adultes compensent par l'expérience stratégique."
   - question: "Comment éviter de sous-estimer un jeune adversaire ?"
-    answer: "En jouant chaque coup comme si l'adversaire était au même niveau que vous. Le piège, c'est de jouer plus vite ou de prendre des risques injustifiés par crainte du ridicule. La rigueur protège mieux que la prudence."
+    answer: "En jouant chaque coup comme si l'adversaire était au même niveau que toi. Le piège, c'est de jouer plus vite ou de prendre des risques injustifiés par crainte du ridicule. La rigueur protège mieux que la prudence."
 ---
 
 Le scénario revient régulièrement dans les tournois : un grand maître international, peut-être 2 600 Elo, s'assoit face à un enfant de 11 ans noté 2 100. Sur le papier, c'est une exécution annoncée. Et pourtant, deux heures plus tard, l'enfant a gagné.
