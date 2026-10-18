@@ -179,9 +179,9 @@ Pour un joueur d'échecs ou un parent d'un enfant qui apprend, la question "inn�
 
 **Pour les prédispositions :** Elles influencent probablement la *vitesse* de progression plus que le niveau final atteignable. Un joueur avec moins de prédispositions "naturelles" progresse plus lentement : pas nécessairement moins loin.
 
-**Pour l'environnement :** L'âge de début, la qualité de l'instruction, la présence d'une communauté d'échecs, le soutien parental : tous ces facteurs sont des amplificateurs du potentiel génétique. Les environnements enrichis permettent à un plus grand part du potentiel génétique de s'exprimer.
+**Pour l'environnement :** L'âge de début, la qualité de l'instruction, la présence d'une communauté d'échecs, le soutien parental : tous ces facteurs sont des amplificateurs du potentiel génétique. Les environnements enrichis permettent à une plus grande part du potentiel génétique de s'exprimer.
 
-**Pour les parents :** Exposez vos enfants tôt, sans pression, à des activités cognitives enrichissantes : dont les échecs. Vous ne savez pas quelles sont leurs prédispositions spécifiques, mais vous maximisez les conditions dans lesquelles elles peuvent s'exprimer.
+**Pour les parents :** Propose tôt à tes enfants, sans pression, des activités cognitives enrichissantes : dont les échecs. Tu ne sais pas quelles sont leurs prédispositions spécifiques, mais tu favorises les conditions dans lesquelles elles peuvent s'exprimer.
 
 ## Sources
 
