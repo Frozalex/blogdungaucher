@@ -8,3 +8,8 @@ Distinction entre modèle, critique et application échiquéenne non testée. Su
 - [Gal et Rucker 2018](https://statmodeling.stat.columbia.edu/wp-content/uploads/2018/06/Loss-of-Loss-Aversion.pdf)
 
 SEO, date et slug conservés. Aucun marqueur « À VÉRIFIER PAR LUC » ajouté.
+
+## Contrôle transversal final
+
+Promesse d’article futur remplacée par le lien vers l’article existant.
+

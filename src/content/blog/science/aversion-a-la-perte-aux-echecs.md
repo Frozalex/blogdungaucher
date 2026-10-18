@@ -157,7 +157,7 @@ La théorie des perspectives et sa critique aident à interroger tes préférenc
 
 ---
 
-*Cet article fait partie d'une série sur la psychologie appliquée aux échecs. Voir aussi [décision sous incertitude aux échecs](/fr/blog/decision-sous-incertitude-aux-echecs/) et [le biais de confirmation aux échecs](/fr/blog/biais-de-confirmation-aux-echecs/). Un article à venir traitera de la gratification différée.*
+*Cet article fait partie d'une série sur la psychologie appliquée aux échecs. Voir aussi [décision sous incertitude aux échecs](/fr/blog/decision-sous-incertitude-aux-echecs/) et [le biais de confirmation aux échecs](/fr/blog/biais-de-confirmation-aux-echecs/). Voir aussi [la gratification différée aux échecs](/fr/blog/gratification-differee-aux-echecs/).*
 
 ## Sources
 
