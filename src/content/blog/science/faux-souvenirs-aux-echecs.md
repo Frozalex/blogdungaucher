@@ -17,9 +17,7 @@ tags:
   - témoignage
   - échecs
 seoTitle: "Faux souvenirs aux échecs : pourquoi tu crois avoir vu le coup"
-seoDescription: >-
-  Ce que Loftus a démontré sur l'implantation de souvenirs, ce que la critique de 2017 a nuancé, et
-  pourquoi l'analyse d'après-partie réécrit ce que tu croyais avoir calculé.
+seoDescription: "Loftus et Palmer, croyance et souvenir : comprendre les résultats sur les faux souvenirs et leurs limites pour l'analyse d'une partie d'échecs."
 faq:
   - question: "Que montre Loftus et Palmer (1974) ?"
     answer: "La formulation d'une question sur un accident filmé modifie les réponses. Au second test, 16 participants sur 50 dans la condition smashed rapportent du verre brisé absent du film, contre 7 sur 50 dans la condition hit et 6 sur 50 dans le groupe témoin."

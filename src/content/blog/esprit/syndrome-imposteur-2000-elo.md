@@ -8,8 +8,8 @@ featuredRank: 99
 readingTime: "7 min"
 pillar: "Psychologie"
 tags: ["syndrome de l'imposteur", "2000 elo", "psychologie", "classement", "confiance", "perfectionnisme", "échecs"]
-seoTitle: "Pourquoi franchir 2000 Elo déclenche le syndrome de l'imposteur"
-seoDescription: "Atteindre 2000 Elo et se sentir illégitime : pourquoi le syndrome de l'imposteur frappe aux paliers. Psychologie du classement, perfectionnisme et confiance."
+seoTitle: "2000 Elo et sentiment d'imposture : vivre le passage de palier"
+seoDescription: "Atteindre 2000 Elo et craindre de perdre sa place : observer ses choix après le palier, relire les fluctuations du classement et distinguer résultat et légitimité."
 ogImage: /images/og/syndrome-imposteur-2000-elo-og.webp
 heroImage:
   src: /images/blog/syndrome-imposteur-2000-elo-hero.webp

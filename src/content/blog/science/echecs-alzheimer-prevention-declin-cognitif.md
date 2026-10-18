@@ -46,9 +46,8 @@ dataReveal:
   highlightSub: Associations observées, sans effet causal isolé des échecs
   source: Wu et al., JAMA Network Open, 2023
   takeaway: "Ces rapports de risques instantanés concernent des catégories d'activités dans une cohorte. Ils ne mesurent pas une protection individuelle propre aux échecs."
-seoTitle: "Échecs et Alzheimer : études, chiffres et prévention cognitive"
-seoDescription: >-
-  Échecs et Alzheimer : données chiffrées sur les jeux cognitifs et la démence. Méta-analyses MMSE, cohortes ALSOP, essais cliniques chez les personnes âgées.
+seoTitle: "Échecs et Alzheimer : ce que les études permettent de dire"
+seoDescription: "Loisirs cognitifs et démence : lire les associations observées, distinguer prévention et accompagnement et comprendre pourquoi un effet propre aux échecs reste incertain."
 ogImage: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.webp
 heroImage:
   src: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.webp

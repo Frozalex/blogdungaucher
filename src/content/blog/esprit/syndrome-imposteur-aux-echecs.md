@@ -9,8 +9,8 @@ affiliate: true
 readingTime: "7 min"
 pillar: "Psychologie"
 tags: ["syndrome de l'imposteur", "psychologie", "échecs", "confiance en soi", "performance", "mental"]
-seoTitle: "Syndrome de l'imposteur aux échecs : 4 patterns et comment en sortir"
-seoDescription: "Les 4 patterns du syndrome de l'imposteur aux échecs : mécanismes validés, stratégies concrètes (journal, attribution, exposition). Guide complet tous niveaux."
+seoTitle: "Syndrome de l'imposteur aux échecs : comprendre le doute"
+seoDescription: "Sentiment d'imposture aux échecs : attribution des succès et des échecs, comparaison et pistes de réflexion, sans traitement validé spécifiquement pour les joueurs."
 ogImage: /images/og/syndrome-imposteur-aux-echecs-og.webp
 heroImage:
   src: /images/blog/syndrome-imposteur-aux-echecs-hero.webp

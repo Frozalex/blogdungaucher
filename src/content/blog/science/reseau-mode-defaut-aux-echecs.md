@@ -8,8 +8,8 @@ featuredRank: 99
 readingTime: "16 min"
 pillar: "Neurosciences"
 tags: ["réseau mode par défaut", "DMN", "échecs", "neurosciences", "mind-wandering", "rumination", "incubation"]
-seoTitle: "Réseau du mode par défaut aux échecs : ce que ton cerveau fait quand tu ne calcules pas"
-seoDescription: "DMN, mind-wandering, incubation : pourquoi ton cerveau passe en mode par défaut entre les coups, ce que ça t'apporte et comment piloter ce système."
+seoTitle: "Réseau du mode par défaut et échecs : pensée et attention"
+seoDescription: "DMN, pensée spontanée et pauses aux échecs : distinguer vécu et activité cérébrale, comprendre les études citées et revenir à une question de jeu."
 ogImage: /images/og/reseau-mode-defaut-aux-echecs-og.webp
 heroImage:
   src: /images/blog/reseau-mode-defaut-aux-echecs-hero.webp

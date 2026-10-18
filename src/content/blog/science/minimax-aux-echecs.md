@@ -10,7 +10,7 @@ readingTime: "11 min"
 pillar: "Intelligence artificielle"
 tags: ["minimax", "alpha-bêta", "negamax", "null-move", "intelligence artificielle", "échecs", "informatique", "Stockfish", "calcul"]
 seoTitle: "Algorithme minimax aux échecs : alpha-bêta, negamax et calcul des moteurs"
-seoDescription: "L'algorithme minimax expliqué : élagage alpha-bêta, negamax, MCTS. Comment les moteurs d'échecs calculent le meilleur coup et ce que ton cerveau fait sans le savoir."
+seoDescription: "Minimax, négamax, alpha-bêta et MCTS : comprendre la recherche des moteurs, ses garanties et ses limites, sans en faire un modèle démontré du cerveau humain."
 faq:
   - question: Minimax donne-t-il toujours le meilleur coup ?
     answer: >-

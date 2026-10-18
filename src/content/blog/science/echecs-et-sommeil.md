@@ -26,10 +26,8 @@ keyTakeaways:
     Dinges et ses collègues (1997) étudient une semaine avec seulement 4–5 heures de sommeil par nuit, pas une simple perte de 1–2 heures dans toutes les situations.
   - >-
     Une sieste courte et une sieste longue sont des interventions différentes ; aucune durée optimale pour les échecs n’est démontrée ici.
-seoTitle: "Échecs et sommeil : comment la récupération cognitive booste ta progression"
-seoDescription: >-
-  Sommeil REM, consolidation mémorielle, privation de sommeil et performance aux échecs : ce que la neuroscience dit sur
-  la nuit comme entraînement invisible.
+seoTitle: "Sommeil et échecs : vigilance, apprentissage et récupération"
+seoDescription: "Sommeil et préparation aux échecs : études sur la vigilance, la décision et l'apprentissage, repères de repos et limites des promesses de progression."
 ogImage: /images/blog/echecs-et-sommeil-hero.png
 heroImage:
   src: /images/blog/echecs-et-sommeil-hero.png

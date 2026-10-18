@@ -28,9 +28,7 @@ keyTakeaways:
   - Tableau de correspondance problématique × spécialité pour choisir en 5 minutes.
   - "Erreurs à éviter au Grand Oral avec les échecs : les pièges classiques que le jury repère."
 seoTitle: "Guide Grand Oral Échecs toutes spécialités 2026 : kit universel + script 10 min"
-seoDescription: >-
-  Kit complet pour faire un Grand Oral brillant avec les échecs dans n'importe quelle spécialité (Philo, SVT, PC, HGG).
-  Script 10 min, 20 questions jury rédigées, erreurs à éviter.
+seoDescription: "Préparer un Grand Oral sur les échecs : pistes par spécialité, plans et scripts, exemples de questions de jury et repères pour construire ton propre exposé."
 ogImage: /images/og/guide-grand-oral-echecs-toutes-specialites-og.webp
 heroImage:
   src: /images/blog/guide-grand-oral-echecs-toutes-specialites-hero.webp

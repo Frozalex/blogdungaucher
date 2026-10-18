@@ -19,10 +19,8 @@ tags:
   - dénombrement
   - principe multiplicatif
   - nombre de Shannon
-seoTitle: "Sujet Grand Oral Maths combinatoire échecs : texte complet à réciter"
-seoDescription: >-
-  Sujet Grand Oral Maths sur la combinatoire et les échecs, entièrement rédigé pour 10 minutes d'exposé. Principe
-  multiplicatif, nombre de Shannon, arbres de dénombrement : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral Maths : fiche combinatoire et échecs"
+seoDescription: "Fiche de révision sur la combinatoire aux échecs : arbre uniforme, demi-coups, ordre de grandeur de Shannon et distinctions à expliquer au jury."
 ogImage: /images/og/sujet-grand-oral-maths-combinatoire-og.webp
 heroImage:
   src: /images/blog/sujet-grand-oral-maths-combinatoire-hero.webp

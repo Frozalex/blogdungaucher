@@ -19,10 +19,8 @@ tags:
   - récursivité
   - arbre de décision
   - Python
-seoTitle: "Sujet Grand Oral NSI minimax échecs : texte complet à réciter"
-seoDescription: >-
-  Sujet Grand Oral NSI sur les échecs et le minimax, entièrement rédigé pour 10 minutes d'exposé. Récursivité, arbre
-  de décision, fonction d'évaluation, code Python : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral NSI : fiche de révision minimax"
+seoDescription: "Fiche de révision minimax : exemple Python à deux niveaux, perspective des scores et limites de l'évaluation, avec renvoi au code complet du guide NSI."
 ogImage: /images/og/sujet-grand-oral-nsi-minimax-og.webp
 heroImage:
   src: /images/blog/sujet-grand-oral-nsi-minimax-hero.webp

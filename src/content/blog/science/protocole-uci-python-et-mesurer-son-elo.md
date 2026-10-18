@@ -19,10 +19,8 @@ tags:
   - programmation
   - tutoriel
   - informatique
-seoTitle: "Protocole UCI en Python et mesure de l'Elo d'un moteur d'échecs"
-seoDescription: >-
-  Implémenter le protocole UCI en Python pour brancher son moteur dans une interface d'échecs, puis
-  mesurer sa force réelle contre Stockfish bridé, avec intervalle de confiance.
+seoTitle: "UCI en Python : prototype et estimation de force d'un moteur"
+seoDescription: "Relier un moteur Python à une interface avec un prototype UCI partiel, puis examiner sa force face à Stockfish bridé et les limites d'un petit nombre de parties."
 keyTakeaways:
   - UCI est du texte sur l'entrée et la sortie standard. Six commandes suffisent à rendre un moteur utilisable dans une interface compatible avec ce sous-ensemble.
   - "Trois règles non négociables : vider le tampon, ne rien écrire hors protocole, toujours répondre bestmove."

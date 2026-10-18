@@ -17,9 +17,7 @@ tags:
   - analyse
   - échecs
 seoTitle: "Mémoire reconstructive aux échecs : le souvenir se refabrique"
-seoDescription: >-
-  Ce que Bartlett a montré sur la reconstruction du souvenir, ce que la reconsolidation a ajouté, et
-  pourquoi raconter ses parties les déforme dans une direction prévisible.
+seoDescription: "Souvenir d'une partie, coups joués et variantes d'analyse : distinguer les traces, comprendre les limites du rappel et essayer une routine de notes séparées."
 faq:
   - question: "Se souvenir déforme-t-il toujours une partie ?"
     answer: "Non. Le rappel peut être incomplet ou influencé, mais chaque récit ne devient pas automatiquement moins exact."

@@ -36,8 +36,7 @@ keyTakeaways:
     Les distractions et les doubles tâches peuvent gêner le maintien de l’information. Aucun pourcentage universel
     de perte de capacité ne s’applique à toutes les situations de jeu.
 seoTitle: "Mémoire de travail et échecs : le goulot d'étranglement cognitif"
-seoDescription: >-
-  Mémoire de travail aux échecs : modèle de Baddeley, chunks, capacité de 4 à 7 éléments. Comment ce goulot d'étranglement cognitif limite le calcul de variantes.
+seoDescription: "Mémoire de travail aux échecs : modèle de Baddeley, chunks et calcul de variantes. Une capacité dépendante de la tâche et des limites au transfert de l'entraînement."
 ogImage: /images/og/echecs-memoire-de-travail-og.webp
 heroImage:
   src: /images/blog/echecs-memoire-de-travail-hero.webp

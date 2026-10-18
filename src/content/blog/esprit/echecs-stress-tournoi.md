@@ -28,9 +28,7 @@ keyTakeaways:
   - >-
     Revenir aux menaces et aux coups candidats peut te donner une tâche précise même si tu te sens encore stressé.
 seoTitle: "Gérer le stress en tournoi d'échecs : psychologie et physiologie"
-seoDescription: >-
-  Cortisol, anxiété de performance, cohérence cardiaque : comment la science du stress explique les erreurs sous
-  pression aux échecs et comment mieux les gérer.
+seoDescription: "Stress en tournoi d'échecs : effets étudiés sur la cognition, respiration lente et pistes pour revenir à la position, sans promesse hormonale ni gain Elo garanti."
 ogImage: /images/blog/echecs-stress-tournoi-hero.png
 heroImage:
   src: /images/blog/echecs-stress-tournoi-hero.png

@@ -23,9 +23,8 @@ tags:
   - moteur d'échecs
   - IA
   - Stockfish
-seoTitle: "Échecs problème mathématique impossible : complexité, Shannon, IA"
-seoDescription: >-
-  10^120 parties possibles, complexité EXPTIME, Stockfish à 3500 Elo : pourquoi résoudre les échecs reste mathématiquement impossible et comment l'IA contourne le mur.
+seoTitle: "Résoudre les échecs : complexité, Shannon et limites de l'IA"
+seoDescription: "Nombre de Shannon, recherche exhaustive, évaluation et IA : pourquoi les échecs ne sont pas résolus, sans confondre difficulté pratique et impossibilité démontrée."
 ogImage: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.webp
 heroImage:
   src: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.webp

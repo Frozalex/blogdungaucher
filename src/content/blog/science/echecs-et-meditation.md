@@ -30,10 +30,8 @@ keyTakeaways:
     sans établir de gain Elo.
   - >-
     Goyal et al. (2014) trouvent des effets modestes sur certains symptômes ; cela ne prouve pas une équivalence avec un médicament.
-seoTitle: "Méditation et échecs : la pleine conscience pour mieux jouer"
-seoDescription: >-
-  MBSR, Default Mode Network, régulation émotionnelle : ce que la recherche sur la pleine conscience dit sur son apport
-  pour la performance et le mental aux échecs.
+seoTitle: "Méditation et échecs : études, pratique et limites"
+seoDescription: "Pleine conscience et échecs : découvrir un exercice, comprendre les études sur le MBSR, l'attention et le stress, sans en déduire un gain de performance au jeu."
 ogImage: /images/og/echecs-et-meditation-og.webp
 heroImage:
   src: /images/blog/echecs-et-meditation-hero.webp

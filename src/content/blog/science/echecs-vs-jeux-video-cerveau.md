@@ -9,7 +9,7 @@ readingTime: "7 min"
 pillar: "Cerveau"
 tags: ["jeux vidéo", "neurosciences", "cognition", "attention", "réflexes", "addiction"]
 seoTitle: "Échecs vs jeux vidéo : ce que dit la science sur le cerveau"
-seoDescription: "Quel impact sur le cerveau entre échecs et jeux vidéo ? Plasticité, attention, réflexes, mémoire : la comparaison honnête à partir des études IRM."
+seoDescription: "Échecs et jeux vidéo : comparer les études sur l'attention, la mémoire et la plasticité en tenant compte des tâches, des groupes et des limites du transfert."
 keyTakeaways:
   - "Les effets dépendent du type de jeu et de la tâche mesurée."
   - "Bediou et al. étudient les jeux d'action ; leurs résultats ne couvrent pas tous les jeux vidéo."

@@ -28,10 +28,8 @@ keyTakeaways:
     Kounios et Beeman (2014) est une revue sur la découverte soudaine d’une solution, pas une mesure de dopamine lors d’un mat.
   - >-
     Les sources citées ne permettent pas de classer blitz, Go, jeux vidéo et parties classiques selon un profil neurochimique.
-seoTitle: "Dopamine et échecs : comment la neurochimie explique l'engouement pour le jeu"
-seoDescription: >-
-  Circuit de récompense, anticipation, signal dopaminergique : ce que la neuroscience révèle sur pourquoi les échecs
-  sont si captivants et parfois compulsifs.
+seoTitle: "Dopamine et échecs : récompense, motivation et limites"
+seoDescription: "Dopamine, récompense et envie de rejouer aux échecs : distinguer les résultats de laboratoire, le plaisir ressenti et les mécanismes qui n'ont pas été mesurés."
 ogImage: /images/og/echecs-et-dopamine-og.webp
 heroImage:
   src: /images/blog/echecs-et-dopamine-hero.webp

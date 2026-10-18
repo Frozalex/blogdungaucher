@@ -21,9 +21,8 @@ keyTakeaways:
   - "Il n’existe pas de seuil universel de fatigue à 90–120 minutes."
   - "Les micro-pauses peuvent améliorer le ressenti sans garantir une meilleure performance."
   - "Une question précise peut t’aider à reprendre une analyse interrompue."
-seoTitle: "Concentration aux échecs : entraîner l'attention pour mieux jouer"
-seoDescription: >-
-  Entraîner sa concentration aux échecs : attention soutenue, réseau de contrôle, pleine conscience et micro-pauses. Ce que la neuroscience dit de l'attention au jeu.
+seoTitle: "Concentration aux échecs : retrouver le fil du raisonnement"
+seoDescription: "Distractions, fatigue et micro-pauses aux échecs : repérer les décrochages, reprendre une question de jeu et organiser une séance sans promettre de gain général."
 ogImage: /images/og/echecs-et-concentration-og.webp
 heroImage:
   src: /images/blog/echecs-et-concentration-hero.webp

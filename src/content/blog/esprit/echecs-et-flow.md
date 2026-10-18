@@ -32,10 +32,8 @@ keyTakeaways:
     Les interruptions peuvent gêner ta concentration ; les recherches citées ne donnent pas de délai de retour au flow aux échecs.
   - >-
     Bakker (2008) valide un questionnaire de flow au travail ; cette étude ne mesure pas le flow des joueurs d’échecs.
-seoTitle: "Échecs et flow : comment atteindre l'état de flux sur l'échiquier"
-seoDescription: >-
-  Flow de Csikszentmihalyi, conditions du flux, perte de conscience du temps aux échecs : comment entrer et maintenir
-  l'état optimal de performance au jeu.
+seoTitle: "Échecs et flow : comprendre l'état de flux sur l'échiquier"
+seoDescription: "Le flow de Csikszentmihalyi appliqué aux échecs : caractéristiques, conditions favorables et distractions, sans méthode garantie pour atteindre cet état."
 ogImage: /images/og/echecs-et-flow-og.webp
 heroImage:
   src: /images/blog/echecs-et-flow-hero.webp

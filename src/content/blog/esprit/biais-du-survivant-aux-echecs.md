@@ -17,9 +17,7 @@ tags:
   - statistiques
   - échecs
 seoTitle: "Biais du survivant aux échecs : ouvertures, conseils de GM et prodiges"
-seoDescription: >-
-  Le biais du survivant appliqué aux échecs : pourquoi la théorie des ouvertures, les conseils de grands
-  maîtres et les histoires de prodiges décrivent tous un échantillon dont les perdants ont disparu.
+seoDescription: "Biais du survivant aux échecs : examiner la sélection des parties, les témoignages de grands maîtres et les cas manquants avant de conclure sur une méthode."
 faq:
   - question: "Le biais rend-il tout conseil de grand maître inutile ?"
     answer: "Non. Un témoignage peut être instructif ; il ne suffit pas à estimer les chances de réussite de toute personne qui le suivrait."

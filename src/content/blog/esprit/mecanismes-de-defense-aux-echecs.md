@@ -17,10 +17,8 @@ tags:
   - tilt
   - maturité
   - échecs
-seoTitle: "Mécanismes de défense aux échecs : l'inventaire par niveau"
-seoDescription: >-
-  Déni, projection, rationalisation, intellectualisation, humour, sublimation : l'inventaire des
-  mécanismes de défense du joueur d'échecs, classés selon la hiérarchie de Vaillant, et ses limites.
+seoTitle: "Mécanismes de défense aux échecs : comprendre les réactions"
+seoDescription: "Déni, projection ou humour après une défaite : le cadre des mécanismes de défense, ses limites et des questions pour réfléchir sans diagnostiquer les joueurs."
 faq:
   - question: "Peux-tu identifier une défense après une seule partie ?"
     answer: "Tu peux formuler une hypothèse, mais une réaction isolée ne suffit pas à établir un style psychologique."

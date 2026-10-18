@@ -27,10 +27,8 @@ keyTakeaways:
     Une fréquence cardiaque élevée ne suffit pas à déterminer les calories dépensées : méthode et contexte comptent.
   - >-
     Une fatigue ressentie n’est pas une mesure de calories brûlées ni une preuve de perte de poids.
-seoTitle: "Échecs et corps : calories, cœur et fatigue physique du joueur"
-seoDescription: >-
-  Les échecs épuisent-ils physiquement ? Calories brûlées, fréquence cardiaque, perte de poids de Karpov, mythe des
-  6000 calories : ce que la physiologie révèle du corps du joueur d'échecs.
+seoTitle: "Échecs et physiologie : calories, rythme cardiaque et fatigue"
+seoDescription: "Que mesure-t-on pendant une partie d'échecs ? Fréquence cardiaque, dépense énergétique et fatigue : les résultats de Troubat et les limites des chiffres avancés."
 ogImage: /images/og/echecs-et-le-corps-og.webp
 heroImage:
   src: /images/blog/echecs-et-le-corps-hero.webp

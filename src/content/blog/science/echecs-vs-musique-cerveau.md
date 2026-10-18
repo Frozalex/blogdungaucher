@@ -10,7 +10,7 @@ readingTime: "6 min"
 pillar: "Plasticité cérébrale"
 tags: ["musique", "cerveau", "plasticité", "concentration", "comparaison", "neurosciences"]
 seoTitle: "Échecs vs musique : quel impact sur le cerveau ?"
-seoDescription: "Échecs ou musique : laquelle des deux activités est la plus formatrice pour le cerveau ? Plasticité, concentration, neurosciences : la comparaison complète."
+seoDescription: "Échecs et musique : comparer expertise, concentration et apprentissage, sans classer leur valeur cognitive ni confondre différences observées et effets démontrés."
 keyTakeaways:
   - "Une comparaison entre activités exige les mêmes mesures et des groupes comparables."
   - "Une différence en imagerie ne mesure pas directement l'intelligence générale."

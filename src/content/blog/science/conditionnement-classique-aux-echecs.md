@@ -19,9 +19,7 @@ tags:
   - exposition
   - échecs
 seoTitle: "Conditionnement classique aux échecs : positions et anxiété"
-seoDescription: >-
-  Comment une position, un adversaire ou un son de pendule deviennent des déclencheurs d'anxiété, et
-  pourquoi comprendre rationnellement la position ne suffit pas à désamorcer la réaction.
+seoDescription: "Pavlov, petit Albert et extinction : les repères du conditionnement classique, leurs limites et des questions pour observer tes réactions devant une position."
 faq:
   - question: "Qu’est-ce que le conditionnement classique ?"
     answer: "C'est une forme d'apprentissage d'associations entre événements. Pavlov a étudié comment un signal associé à la nourriture pouvait ensuite déclencher la salivation."

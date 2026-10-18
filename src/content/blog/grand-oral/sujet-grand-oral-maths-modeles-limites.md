@@ -18,10 +18,8 @@ tags:
   - modélisation
   - épistémologie
   - méta-analyse
-seoTitle: "Sujet Grand Oral Maths modèles et limites échecs : texte complet à réciter"
-seoDescription: >-
-  Sujet Grand Oral Maths sur la modélisation des échecs et ses limites, entièrement rédigé pour 10 minutes d'exposé.
-  Combinatoire, probabilités, complexité, apprentissage : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral Maths : fiche sur les modèles des échecs"
+seoDescription: "Fiche de révision sur les modèles des échecs : hypothèses du dénombrement, score attendu Elo et apprentissage, avec renvois aux guides Maths et NSI."
 ogImage: /images/og/sujet-grand-oral-maths-modeles-limites-og.webp
 heroImage:
   src: /images/blog/sujet-grand-oral-maths-modeles-limites-hero.webp
