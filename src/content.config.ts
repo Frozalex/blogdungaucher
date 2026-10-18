@@ -28,6 +28,7 @@ const blog = defineCollection({
     summaryVideo: z.string().optional(),
     /** Note libre sous le lecteur (durée, statut "version 1 : perfectible", etc.). */
     summaryVideoNote: z.string().optional(),
+    noindex: z.boolean().default(false),
     seoTitle: z.string().optional(),
     seoDescription: z.string().optional(),
     ogImage: z.string().optional(),

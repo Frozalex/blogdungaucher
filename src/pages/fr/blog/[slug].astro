@@ -109,6 +109,7 @@ const structuredData = [
 ];
 ---
 <BaseLayout
+  noindex={post.data.noindex}
   title={`${post.data.seoTitle ?? post.data.title} | Blog d'un Gaucher`}
   description={post.data.seoDescription ?? post.data.excerpt}
   canonicalPath={postUrl}
