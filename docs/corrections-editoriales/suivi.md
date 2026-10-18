@@ -72,3 +72,23 @@ Corrigé : possibilité d’une ligne ≠ stratégie gagnante ; alternance ∃/�
 ### effet-placebo-aux-echecs
 
 Révision de fond : aucune démonstration d’imperméabilité des échecs au placebo ; 3,1 % limité à la condition forte dose annoncée, avec intervalle incluant zéro ; effets cognitifs discutés avec le protocole de Foroughi. Retirés : verbatims non retrouvés, asymétrie universelle placebo/nocebo, mécanisme unique par la douleur, généralisation de Kaptchuk aux rituels de tournoi. Bibliographie resserrée sur les quatre travaux réellement discutés ; lien futur transformé en lien existant ; H1 aligné sur le SEO conservé. Deux SVG ajoutés. Sources ouvertes : [Cochrane 2010](https://www.dcscience.net/Hrobjartsson-Gotzsche-Cochrane-placebo.pdf), [Beedie](https://paulogentil.com/pdf/Placebo%20Effects%20of%20Caffeine%20on%20Cycling%20Performance.pdf), [Foroughi](https://www.pnas.org/doi/10.1073/pnas.1601243113), [Kaptchuk](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015591). Aucun marqueur ajouté.
+
+## Consolidation validée par Luc et appliquée
+
+- `sujet-grand-oral-maths-combinatoire` : fiche courte, calcul 80 log10(35) ≈ 123,53 et distinction positions/suites. Contenu développé dans le guide Maths ; `noindex, follow`. Sources : [Shannon](https://www.computerhistory.org/chess/doc-431614f453dde/), [Tromp](https://tromp.github.io/chess/chess.html).
+- `sujet-grand-oral-maths-modeles-limites` : hypothèses binomiales, score Elo, loi des grands nombres et coût matériel d’AlphaZero clarifiés ; contenu intégré au guide Maths ; `noindex, follow`. Sources : [FIDE](https://handbook.fide.com/chapter/B022024), [Silver](https://arxiv.org/html/1712.01815v1), [Shannon](https://www.computerhistory.org/chess/doc-431614f453dde/).
+- `sujet-grand-oral-nsi-minimax` : exemple autonome remplaçant le code au `bonus_position` non défini ; contenu intégré au guide NSI ; `noindex, follow`. Sources : [Russell–Norvig](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf), [Silver](https://arxiv.org/html/1712.01815v1).
+- `sujet-grand-oral-nsi-alpha-beta` : bornes précisées, 42 875 présenté comme rapport de puissances dans le meilleur cas, AlphaZero conserve MCTS ; contenu intégré au guide NSI ; `noindex, follow`. Mêmes sources ouvertes que la fiche minimax.
+
+Les quatre URL et leurs métadonnées SEO préexistantes sont conservées. Seul le champ `noindex` autorisé est ajouté ; les fiches sont retirées du sitemap. Les huit autres sujets ne reçoivent pas de noindex. Aucun marqueur ajouté dans ces quatre fiches.
+
+Les deux articles imposteur sont à conserver et différencier, conformément au choix de Luc ; application encore à effectuer.
+
+## Différenciation imposteur validée et appliquée
+
+- `syndrome-imposteur-aux-echecs` : angle général, peur d’être démasqué et interprétation des réussites ; comportements présentés comme pistes d’observation, pas diagnostic ; témoignages anonymes et prévalence échiquéenne non étayés retirés ; conseils non présentés comme traitements validés. [Clance–Imes](https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf), [Bravata](https://link.springer.com/article/10.1007/s11606-019-05364-1) réellement ouverts.
+- `syndrome-imposteur-2000-elo` : angle palier et lecture des fluctuations ; 2000 n’est pas un seuil clinique ni le titre FIDE « expert » ; retrait des 60–70 %, des catégories Elo psychologiques, de l’attribution Dweck sans référence et du « signal positif » présenté comme preuve de compétence. Mêmes sources psychologiques, plus [règlement Elo](https://handbook.fide.com/chapter/B022024) et [titres FIDE](https://handbook.fide.com/chapter/B012024), ouverts. Liens croisés ajoutés. Aucun marqueur, fusion ou redirection.
+
+### dissertation — echecs-et-investissement
+
+Corrigé : parenté présentée comme analogie plutôt que transfert prouvé ; biais réellement documentés par Kahneman–Tversky et Odean ; distinction étude financière/étude de transfert ; phrase d’avertissement ajoutée ; deux SVG originaux. Le H1 et le titre SEO emploient déjà « à l’investissement », aucun changement SEO nécessaire. Sources ouvertes : [Kahneman–Tversky](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf), [Odean](https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf), [Sala–Gobet](https://journals.sagepub.com/doi/10.1177/0963721417712760). Aucun marqueur ajouté.
