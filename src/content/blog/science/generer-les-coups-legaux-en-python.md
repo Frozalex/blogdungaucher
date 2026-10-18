@@ -25,10 +25,10 @@ seoDescription: >-
   prise en passant, promotions, et le filtre de légalité qui élimine les coups laissant le roi en échec.
 keyTakeaways:
   - Un coup pseudo-légal respecte le déplacement de la pièce. Un coup légal ne laisse pas son propre roi en échec. L'écart est de 10,5 % sur des positions réelles.
-  - La légalité paresseuse consiste à jouer le coup, regarder si le roi est pris, puis annuler. Elle est lente mais juste par construction.
+  - La légalité paresseuse consiste à jouer le coup, vérifier si son propre roi est en échec, puis annuler. Elle est simple à contrôler si les déplacements, les attaques et la restauration sont corrects.
   - Le pion concentre à lui seul quatre règles que ne partage aucune autre pièce, dont la promotion qui produit quatre coups et non un.
   - Pour savoir si une case est attaquée, on part de la case et on remonte les directions, au lieu d'énumérer tous les coups adverses.
-  - Une prise en passant peut mettre son propre roi en échec en dégageant deux cases d'un coup. Aucun test spécifique ne l'attrape, seul le filtre général y parvient.
+  - Une prise en passant peut mettre son propre roi en échec en dégageant deux cases d'un coup. Un générateur direct peut aussi traiter ce cas avec un contrôle spécifique.
 faq:
   - question: "Quelle est la différence entre un coup pseudo-légal et un coup légal ?"
     answer: >-
@@ -42,7 +42,7 @@ faq:
       C'est possible, et c'est ce que font les moteurs rapides : on calcule les pièces clouées une fois
       par position, puis on restreint leurs coups. Mais cette approche doit traiter à part le roi, les
       échecs multiples, et surtout la prise en passant qui dégage deux cases d'un coup. La légalité
-      paresseuse (jouer, regarder, annuler) est environ sept fois plus lente et juste par construction :
+      paresseuse (jouer, regarder, annuler) est environ plus coûteuse dans les mesures de cette série ; sa correction dépend des fonctions appelées :
       c'est le bon compromis tant que la justesse n'est pas acquise.
   - question: "Combien de coups légaux y a-t-il dans la position de départ ?"
     answer: >-
@@ -65,7 +65,7 @@ faq:
 
 À ce stade de la série, tu as un [échiquier qui tient une position et sait la restaurer](/fr/blog/representer-un-echiquier-en-python/). Il ne sait pas encore quels coups sont autorisés, ce qui en fait un moteur d'échecs aussi utile qu'une voiture sans roues.
 
-Cet article comble ce trou. C'est de très loin celui où se logent le plus de bugs : dans un moteur débutant, la génération des coups concentre à elle seule la majorité des erreurs. Pas parce que les règles sont difficiles, mais parce qu'elles sont **nombreuses, irrégulières, et que les oublis ne provoquent aucune erreur visible**.
+Cet article comble ce trou. C'est de très loin celui où se logent le plus de bugs : dans un moteur débutant, la génération des coups concentre à elle seule de nombreuses erreurs. Pas parce que les règles sont difficiles, mais parce qu'elles sont **nombreuses, irrégulières, et que les oublis ne provoquent aucune erreur visible**.
 
 La bonne nouvelle est qu'il existe une façon de séparer proprement le problème en deux, dont l'une est facile.
 
@@ -330,3 +330,9 @@ Vingt coups dans la position de départ, quarante-huit dans Kiwipete. Ce sont le
 Parce qu'un générateur juste à la profondeur 1 peut être faux à la profondeur 2 : il suffit qu'il produise une position légèrement fausse dont les coups, eux, sont correctement générés. Compter les coups d'une position ne prouve rien sur les millions de positions qui en descendent.
 
 **Prochain article :** `perft`, le comptage récursif qui prouve, position de référence par position de référence, que ton générateur de coups est exact. Et la technique qui permet, quand le compte est faux, de trouver le coup fautif en quelques minutes au lieu de quelques jours.
+
+## Sources
+
+Les règles FIDE définissent l’interdiction de laisser son roi attaqué, les promotions et les conditions du roque décrites ici. Le document original consulté est la version 2009 ; ces règles de déplacement y sont explicites.
+
+- FIDE (2009), Laws of Chess, articles 1 à 3, FIDE, [texte de référence](https://www.fide.com/FIDE/handbook/LawsOfChess.pdf).
