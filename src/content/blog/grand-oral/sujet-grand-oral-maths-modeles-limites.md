@@ -30,74 +30,33 @@ heroImage:
   credit: "Solomon203, CC BY-SA 4.0, via Wikimedia Commons"
   sourceUrl: https://commons.wikimedia.org/wiki/File:Sihwei_Hall,_Keelung_Pai_Fu_Junior_High_School_20181120.jpg
   license: CC BY-SA 4.0
+noindex: true
 ---
 
-> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+## Fiche de révision : les hypothèses d’un modèle
 
----
+Le développement de ce sujet est intégré au [guide Grand Oral Maths](/fr/blog/grand-oral-maths-spe-echecs/). Pour le pont vers l’informatique, utilise aussi le [sujet transversal Maths–NSI](/fr/blog/grand-oral-mathematiques-echecs/).
 
-Bonjour. Je vais vous parler d'une **question** qui me tient à cœur, et qui dépasse en réalité les échecs eux-mêmes : qu'est-ce que modéliser un objet en **mathématiques**, et comment savoir où s'arrête un modèle ?
+Un modèle répond à une question définie. Comparer un modèle combinatoire, un modèle de résultats et un algorithme de jeu demande de distinguer leurs objets : ils ne prédisent pas la même chose.
 
-Le **sujet** est précis : quels modèles **mathématiques** permettent de comprendre les échecs, et où sont leurs **limites** ? Cette **question** m'intéresse parce qu'elle adopte un point de vue méta sur le **programme** de spécialité **mathématiques** de **terminale**. Au lieu d'appliquer un modèle, je vais comparer plusieurs modèles et discuter ce que chacun capture, ce que chacun manque, et pourquoi aucun n'est complet.
+## Combinatoire : compter sous des hypothèses
 
-Les échecs ont été abordés par les **mathématiciens** sous au moins quatre angles différents au cours du vingtième siècle : combinatoire, théorie des jeux, probabilités, et apprentissage statistique. Chaque modèle a apporté quelque chose, et chacun a montré ses **limites**. C'est cette histoire que je vais raconter, parce qu'elle illustre une idée plus large : la modélisation n'est jamais neutre, elle est toujours un choix qui définit autant ce qu'on voit que ce qu'on rate.
+b^d compte les feuilles d’un arbre uniforme de profondeur d. Aux échecs, le branchement varie, les parties n’ont pas toutes la même longueur et des suites différentes peuvent mener à une même position. Le calcul 35^80 donne environ 10^123,53 ; le nombre de Shannon, 10^120, est un autre ordre de grandeur historique, pas une égalité avec ce calcul.
 
-Je procéderai en trois étapes. D'abord, je présenterai les modèles déterministes : combinatoire et théorie des jeux. Ensuite, j'analyserai le modèle probabiliste, incarné par le système Elo. Enfin, je discuterai l'approche moderne par apprentissage statistique, qui abandonne en partie l'idée même de modèle explicite.
+## Elo : prévoir une espérance
 
-## Les modèles déterministes : combinatoire et théorie des jeux
+Le modèle logistique donne une approximation du score attendu, avec 1 pour une victoire, 0,5 pour une nulle et 0 pour une défaite. Une espérance de 0,5 ne précise pas la probabilité de chaque issue.
 
-Le premier modèle, historiquement et logiquement, est combinatoire. On considère le jeu comme un objet fini : un nombre fini de positions, un nombre fini de coups, un nombre fini de parties. À partir de là, on peut tout compter.
+Une loi binomiale convient à un nombre de succès dans des essais indépendants de probabilité constante. Un tournoi réel avec des adversaires différents, des couleurs et des nulles ne remplit pas automatiquement ces hypothèses. La loi des grands nombres ne promet pas une victoire après une série de défaites et ne garantit pas que ta cote converge vers une valeur fixe si ton niveau évolue.
 
-Le résultat principal de cette approche est le **nombre de Shannon**, calculé en mille neuf cent cinquante : il y a environ dix puissance cent vingt parties d'échecs possibles. Ce calcul utilise le **principe multiplicatif** appris en **terminale** : facteur de branchement environ trente-cinq, profondeur moyenne quatre-vingts demi-coups, donc trente-cinq puissance quatre-vingts. C'est de la combinatoire élémentaire appliquée à un objet immense.
+## Apprentissage : mesurer une performance
 
-La **limite** de ce modèle est évidente : il compte sans évaluer. Toutes les parties sont mises sur un pied d'égalité, y compris celles où un joueur perd sa dame au coup deux. Le modèle combinatoire est exact mais aveugle : il décrit l'espace possible sans hiérarchiser ce qui est jouable.
+AlphaZero associe un réseau entraîné par autojeu à une recherche MCTS. Le préprint de Silver et collègues décrit un entraînement avec de nombreux TPUs. Son résultat ne se résume donc pas à « quelques heures sur un ordinateur personnel » ; la durée doit être lue avec le matériel et le protocole.
 
-Le deuxième modèle déterministe est la **théorie des jeux**. Avec le théorème de Zermelo, démontré en mille neuf cent treize, on prouve que les échecs ont un résultat déterminé sous jeu parfait : soit les Blancs gagnent, soit les Noirs gagnent, soit c'est nulle. Ce résultat est extraordinaire en **mathématiques** pures : il garantit l'existence d'une solution. Mais il ne nous dit pas quelle solution.
+Un meilleur score contre un moteur ne démontre ni une stratégie parfaite ni une compréhension humaine. Pour ton oral, choisis un modèle, montre ce qu’il calcule et donne une situation où ses hypothèses deviennent insuffisantes.
 
-La **limite** de ce modèle est sa non-constructivité. Zermelo prouve qu'une stratégie gagnante existe, mais il ne la fournit pas. C'est une **mathématique** d'existence sans construction, et cette nuance est essentielle : connaître l'existence d'un objet ne suffit pas à l'utiliser. C'est exactement comme le théorème des valeurs intermédiaires : il prouve qu'une équation a une solution, mais il faut d'autres outils pour la trouver.
+## Sources
 
-Ensemble, ces deux modèles déterministes nous disent : le jeu a un nombre fini de parties (dix puissance cent vingt), et il a un résultat déterminé (par Zermelo). Et pourtant, on ne sait pas quel est ce résultat, parce qu'on ne peut pas explorer l'arbre. Les modèles déterministes nous montrent à la fois la rigueur et l'impuissance des **mathématiques** classiques face à un objet trop grand.
-
-![Tableau comparatif des quatre modèles mathématiques des échecs : combinatoire, théorie des jeux Zermelo, probabiliste Elo et apprentissage AlphaZero, avec ce que chacun capture et ce qu'il manque.](/images/sujet-modeles-01-comparaison-quatre-modeles.svg)
-
-## Le modèle probabiliste : Elo et loi binomiale
-
-Face à l'impossibilité d'explorer l'arbre complet, les **mathématiciens** ont adopté un autre point de vue : modéliser non plus le jeu lui-même, mais la **performance** des joueurs. C'est l'approche probabiliste, dont le succès le plus visible est le système Elo.
-
-Le système Elo, créé par Arpad Elo dans les années mille neuf cent soixante, repose sur deux **fonctions** mathématiques. La première est une fonction logistique qui transforme un écart de cotes en probabilité de victoire : P(A bat B) égale un divisé par (un plus dix puissance (R_B moins R_A divisé par quatre cents)). C'est une **sigmoïde**, fonction étudiée au **programme** de **terminale**, qui prend toujours ses valeurs entre zéro et un.
-
-La seconde fonction est une mise à jour de cote, qui s'écrit comme une **suite récurrente** : R_{n+1} égale R_n plus K multiplié par (résultat moins P). Cette suite converge vers la vraie force du joueur sous l'hypothèse de stationnarité, par application de la **loi des grands nombres**. C'est un beau résultat **mathématique** : un objet inobservable, le vrai niveau d'un joueur, est estimé de mieux en mieux à mesure que les parties s'accumulent.
-
-Le modèle Elo a connu un succès énorme. Il est utilisé dans tous les sports compétitifs : tennis, football, esports. Il est devenu le standard de la modélisation de la performance individuelle. Mais ses **limites** sont réelles. Premièrement, l'hypothèse de stationnarité est fausse : les joueurs progressent ou déclinent. Deuxièmement, l'hypothèse d'indépendance des parties est fausse : une défaite peut entraîner un tilt. Troisièmement, la formule extrapole mal aux écarts extrêmes : la probabilité qu'un joueur de mille deux cents Elo batte Magnus Carlsen (deux mille huit cent cinquante) est calculée à un sur treize mille, mais cette précision est invérifiable empiriquement.
-
-![Suite récurrente Elo convergeant vers le vrai niveau E : les fluctuations de la cote diminuent au fil des parties jusqu'à se stabiliser autour de E, illustrant la loi des grands nombres.](/images/sujet-modeles-02-convergence-suite-elo.svg)
-
-Plus fondamentalement, le modèle Elo modélise la performance, pas le jeu. Il nous dit qui va gagner avec quelle probabilité, mais pas pourquoi. Il est utile pour classer les joueurs et organiser les compétitions, mais il ne nous aide pas à comprendre les échecs en tant que jeu. C'est une **limite** structurelle : changer d'angle revient à changer d'objet.
-
-## Le modèle par apprentissage statistique : AlphaZero et l'abandon des formules
-
-Le troisième modèle, le plus récent, abandonne en partie l'idée même de modèle explicite. C'est l'approche par **apprentissage statistique**, incarnée par AlphaZero en deux mille dix-sept.
-
-AlphaZero ne pose pas d'hypothèses sur les échecs. Il ne calcule pas le nombre de Shannon, il ne suppose pas Zermelo, il n'utilise pas la formule Elo. Il joue des millions de parties contre lui-même et ajuste un réseau de neurones pour prédire qui va gagner depuis chaque position. À la fin, le réseau a appris quelque chose qu'aucune formule humaine n'a pu capturer.
-
-Mathématiquement, AlphaZero est une fonction de l'espace des positions vers l'intervalle moins un, plus un. Cette fonction est paramétrée par des dizaines de millions de coefficients, ajustés par **descente de gradient** sur les **données** d'auto-jeu. L'idée centrale est que cette fonction n'est pas dérivée d'un raisonnement explicite : elle est apprise. C'est un changement de **paradigme** mathématique.
-
-Pour évaluer ses performances, AlphaZero a joué cent parties contre Stockfish en deux mille dix-sept : vingt-huit victoires, zéro défaite, soixante-douze nulles. Ce résultat suggère que le modèle par apprentissage capture quelque chose que les modèles classiques ratent. Mais à quel prix ? Les **limites** sont importantes.
-
-Première **limite** : l'opacité. On ne sait pas pourquoi AlphaZero joue tel coup. On peut voir le résultat, on ne peut pas raconter le raisonnement. C'est exactement le contraire de la **mathématique** classique, qui valorise la démonstration. Cette opacité pose un problème **philosophique** : peut-on accepter un savoir qu'on ne peut pas expliquer ?
-
-Deuxième **limite** : le coût. AlphaZero a nécessité cinq mille processeurs spécialisés pendant des **heures**, soit plusieurs millions d'euros d'infrastructure. Cette barrière à l'entrée concentre la recherche dans quelques grandes entreprises et soulève des **enjeux** d'accessibilité.
-
-Troisième **limite** : la non-généralité. Le modèle est spécifique : un AlphaZero entraîné aux échecs ne saura pas jouer aux dames sans réapprentissage complet. Il manque d'abstraction. Les modèles humains, malgré leurs **limites**, sont plus généraux : la formule du **principe multiplicatif** s'applique à n'importe quel jeu.
-
-## Conclusion
-
-Pour répondre à ma **question** initiale, plusieurs modèles **mathématiques** permettent de comprendre les échecs, et chacun a ses **limites** précises. Le modèle combinatoire compte mais n'évalue pas. Le modèle de la théorie des jeux prouve l'existence d'une solution mais ne la construit pas. Le modèle probabiliste évalue la performance mais pas le jeu. Le modèle par apprentissage évalue le jeu mais sans explication. Aucun modèle n'est complet.
-
-Cette observation me semble centrale en **mathématiques** appliquées : modéliser, c'est choisir ce qu'on regarde et ce qu'on néglige. Chaque modèle est une lentille avec ses angles morts. La pratique mathématique mûre consiste à comprendre les **limites** de son modèle autant que ses succès. C'est précisément cette discipline du doute qui distingue les **mathématiques** de la simple application de formules. Et c'est, à mon sens, ce que les échecs nous ont appris de plus profond : non pas comment gagner aux échecs, mais comment penser quand l'objet dépasse l'outil.
-
-Je vous remercie pour votre attention et je suis prêt à répondre à vos **questions**.
-
----
-
-> **Pour aller plus loin :** [Sujet Grand Oral Maths sur la combinatoire](/fr/blog/sujet-grand-oral-maths-combinatoire/) · [Sujet Grand Oral Maths sur Elo et probabilités](/fr/blog/sujet-grand-oral-maths-elo-probabilites/) · [Sujet Grand Oral Maths sur Zermelo et complexité](/fr/blog/sujet-grand-oral-maths-zermelo-complexite/) · [Hub méthodologie Grand Oral Maths](/fr/blog/grand-oral-maths-spe-echecs/)
+- Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. Philosophical Magazine. [Article original](https://www.computerhistory.org/chess/doc-431614f453dde/).
+- FIDE (2024). *FIDE Rating Regulations*. [Règlement](https://handbook.fide.com/chapter/B022024).
+- Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Préprint](https://arxiv.org/html/1712.01815v1).
