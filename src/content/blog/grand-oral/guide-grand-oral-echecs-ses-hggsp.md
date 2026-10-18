@@ -57,18 +57,16 @@ faq:
       accessible mais moins original.
   - question: Y a-t-il des données chiffrées à connaître pour convaincre le jury ?
     answer: >-
-      Oui. Quelques chiffres-clés : la FIDE recense 200 000 joueurs classés dans 200 pays (2024). Le marché des prix en
-      tournois d'élite représente plusieurs millions de dollars annuels. Le Candidates 2024 offrait 500 000 € de
-      dotation totale. Chess.com compte 150 millions d'inscrits (post-Queen's Gambit). En géopolitique : le match
-      Fischer-Spassky 1972 a été suivi par 80 millions de téléspectateurs américains à son apogée, selon les archives
-      NBC.
+      Choisis quelques données dont tu peux expliquer la date, le périmètre et la source. Un nombre de comptes
+      sur une plateforme n’est pas un nombre de joueurs actifs, et une audience annoncée exige une archive identifiable.
+      Mieux vaut retirer un chiffre que tu ne peux pas vérifier.
   - question: Comment mobiliser HGGSP avec les échecs ?
     answer: >-
       HGGSP permet plusieurs angles : (1) thème 'Puissance et faiblesse des États', Fischer-Spassky 1972 comme
       instrument d'influence américain pendant la guerre froide ; (2) thème 'Histoire et mémoire', comment le match de
       1972 est mémorisé différemment en URSS et aux USA ; (3) thème 'Mondialisation', les échecs comme lingua franca
-      internationale, homogénéisation et résistances culturelles ; (4) thème 'Patrimoine', l'inscription des échecs au
-      patrimoine immatériel de l'UNESCO.
+      internationale, homogénéisation et résistances culturelles ; (4) thème 'Patrimoine', la transmission de pratiques et la conservation de traces matérielles du jeu,
+      sans supposer une inscription à l’UNESCO.
   - question: Quelle est la durée idéale de chaque partie de l'exposé SES/HGGSP ?
     answer: >-
       Pour 10 minutes : introduction 1 minute (accroche + problématique + plan), partie 1 de 3 minutes (données
@@ -87,16 +85,15 @@ L'objectif : que tu n'aies plus à compiler des **fiches** dispersées, plus à 
 
 ### Coefficient, durée et structure
 
-Le **Grand Oral** est l'**épreuve** la mieux notée du **bac** général, à **coefficient 10**. Sa durée totale est de **40 minutes** :
+Le Grand Oral comprend 20 minutes de préparation, puis 20 minutes devant le jury : 10 minutes de présentation et 10 minutes d’échange.
 
-| Temps | Phase | Ce que tu fais | Ce que le **jury** évalue |
-|---|---|---|---|
-| 20 min | Préparation | Choix entre deux **questions** issues de ton **programme**. Brouillon autorisé. |, |
-| 5 min | Exposé debout | Présentation de ta **question** debout, sans notes ou très peu. | **Posture**, voix, structure de l'argumentation |
-| 10 min | Échange | Le **jury** te questionne sur le **sujet**, ton plan, tes sources. | Maîtrise, réactivité, ouverture critique |
-| 5 min | Projet d'**orientation** | Tu expliques comment ce **sujet** s'inscrit dans ton parcours post-bac. | Cohérence parcours et ambition |
+| Temps | Phase | Ce que tu fais |
+| --- | --- | --- |
+| 20 min | Préparation | Le jury choisit l’une de tes deux questions ; tu prépares ta présentation et, si tu le souhaites, un support papier. |
+| 10 min | Présentation | Tu expliques le choix de la question puis développes ta réponse. Tu peux utiliser le support préparé. |
+| 10 min | Échange | Tu précises tes arguments et réponds aux questions du jury. |
 
-C'est l'**épreuve** la plus rentable du **bac** au ratio temps de **préparation** / impact note. Trois minutes solides peuvent te faire gagner une mention.
+Ces modalités sont celles de la présentation officielle du ministère, actualisée le 15 octobre 2026. Il n’y a pas de troisième phase de cinq minutes consacrée à l’orientation.
 
 ### Composition du jury
 
@@ -162,7 +159,7 @@ Pour situer le **choix** des échecs par rapport aux autres **sujets Grand Oral*
 
 | **Sujet** | Spécialité | Forces | **Limites** | Difficulté |
 |---|---|---|---|---|
-| **Échecs et IA** *(notre choix)* | SES + HGGSP | Croise économie, sociologie, géopolitique | Risque du récit pur sans concepts | Faible avec ce **guide** |
+| **Échecs et société** | SES + HGGSP | Croise économie, sociologie, géopolitique | Risque du récit pur sans concepts | Faible avec ce **guide** |
 | **Crise économique de 2008** | SES | Sujet emblématique, riche en auteurs | Souvent traité, **jury** habitué | Moyenne |
 | **Bitcoin et finance décentralisée** | SES | Actualité, nouveauté | Sujet glissant, beaucoup de faux experts | Élevée |
 | **Inégalités scolaires et reproduction** | SES | Au cœur du **programme** Bourdieu | Sujet très exploré | Moyenne |
@@ -333,7 +330,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > *« Côté américain, l'**histoire** est racontée comme triomphe du génie individuel contre le système collectiviste : récit qui colle au « rêve américain ». Côté soviétique puis russe, on insiste sur l'instabilité psychologique de Fischer (refus de jouer, exigences absurdes) pour minimiser la portée symbolique. La **mémoire** est divisée : un même événement, deux récits nationaux. C'est un cas d'école de l'**histoire**-**mémoire** au sens de Pierre Nora. »*
 
 **Q14. Peut-on parler de patrimoine immatériel échiquéen ?**
-> *« Oui. Les échecs ne sont pas inscrits stricto sensu au **patrimoine** UNESCO, mais le jeu de Shôgi (Japon) et le Go (Chine) sont reconnus comme **patrimoine** culturel immatériel par leurs États. Les écoles soviétiques d'entraînement (Botvinnik School) constituent un **patrimoine** intellectuel transmis dans l'**histoire** de la pédagogie échiquéenne. Reykjavik conserve la salle du match 1972 comme lieu de **mémoire**. »*
+> Tu peux analyser la transmission des pratiques, les archives et les lieux de mémoire sans invoquer de label officiel. Une reconnaissance nationale, une liste UNESCO et une interprétation patrimoniale sont trois choses différentes. Pour ton exposé, pars d’un objet et d’une institution précisément identifiés.
 
 **Q15. Comment analyser les conflits internes à la FIDE avec les outils HGGSP ?**
 > *« La FIDE (Fédération internationale des échecs) a connu plusieurs **conflits** majeurs : guerre du titre 1993 (Kasparov vs FIDE), présidence Iliumzhinov 1995-2018 (accusée de proximité avec Kadhafi et la Russie de Poutine), arbitrage Hans Niemann-Carlsen 2022. Ces **conflits** illustrent les **enjeux** géopolitiques des institutions internationales : qui gouverne ? quels intérêts ? Une organisation transnationale n'échappe pas aux rapports de force étatiques. »*
@@ -356,10 +353,10 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 > *« Arguments en ce sens. Théorie du capital humain (Becker) : les compétences cognitives développées par les échecs améliorent la productivité et les revenus futurs. Des expériences pilotes (Bolivie, programme « Ajedrez en Escuelas ») ont montré des améliorations scolaires mesurables. Cependant, l'impact agrégé sur le développement reste difficile à mesurer causalement : les programmes touchent souvent des populations déjà favorisées. Chess in the Slums (Nigeria) est plus ciblée sur les populations défavorisées, mais l'évaluation d'impact reste limitée. »*
 
 **Q21. Quelle est la place des femmes dans le marché des échecs ?**
-> *« Les femmes représentent environ 15-20 % des joueurs classés FIDE et moins de 5 % du top 100. Sous-représentation explicable par plusieurs facteurs. Socialisation différentielle : jeux de stratégie compétitifs associés culturellement à la masculinité. Effet « menace du stéréotype » : les études de Maass et D'Ettole (2008) montrent que simplement savoir qu'elles affrontent un homme réduit les performances des joueuses. Structure du marché : la FIDE maintient des tournois féminins séparés avec des prix inférieurs, ce qui peut être vu soit comme un plafond de verre, soit comme protecteur (garantir de la visibilité). »*
+> *« Les femmes représentent environ 15-20 % des joueurs classés FIDE et moins de 5 % du top 100. Sous-représentation explicable par plusieurs facteurs. Socialisation différentielle : jeux de stratégie compétitifs associés culturellement à la masculinité. Effet « menace du stéréotype » : Maass, D’Ettole et Cadinu (2008) étudient expérimentalement l’effet d’informations sur le sexe de l’adversaire ; les résultats de ce protocole ne suffisent pas à expliquer toutes les inégalités de participation. Structure du marché : la FIDE maintient des tournois féminins séparés avec des prix inférieurs, ce qui peut être vu soit comme un plafond de verre, soit comme protecteur (garantir de la visibilité). »*
 
 **Q22. Les échecs peuvent-ils être vus comme un patrimoine commun de l'humanité ?**
-> *« Argument en ce sens : règles universelles, **histoire** millénaire (origines indiennes, transmission via la Perse et le monde arabe vers l'Europe), pratiqué dans 200 pays. Argument contre : reste associé à des cultures dominantes (Inde, monde arabe médiéval, Europe puis Russie), pas à toutes. Position contemporaine de l'UNESCO : pas d'inscription stricto sensu mais reconnaissance dans plusieurs programmes éducatifs. Comparaison utile : le jeu de Go inscrit au **patrimoine** culturel immatériel chinois en 2008. »*
+> « Patrimoine commun » peut être une question à discuter : qui transmet les règles, les œuvres et les souvenirs du jeu ? Cela ne constitue pas une inscription officielle. Je ne m’appuie donc pas sur une inscription du Go à l’UNESCO en 2008 pour défendre cette idée.
 
 **Q23. Comment les échecs illustrent-ils les conflits Nord-Sud ?**
 > *« L'**histoire** des échecs montre un déplacement Nord-Sud progressif. XXe siècle : domination URSS et États-Unis (Nord). Années 2000 : émergence de l'Inde et de la Chine. Années 2020 : Inde, Chine et bientôt Afrique du Sud, Nigeria. C'est un déplacement géopolitique typique des phénomènes culturels mondialisés. Les **conflits** Nord-Sud se rejouent : qui contrôle la FIDE ? Qui finance les tournois ? Quels pays accueillent les **épreuves** majeures ? »*
@@ -434,7 +431,7 @@ Si tu vises Sciences Po, ta problématique doit pouvoir conduire au passage « v
 
 ### Posture et présence
 
-Tu es debout pendant les **cinq minutes** d'exposé. Les détails comptent :
+Tu es debout pendant les **dix minutes** d’exposé. Les détails comptent :
 
 - **Pieds ancrés**, jamais croisés. Bassin stable.
 - **Mains visibles** : sur la table ou en mouvement, jamais dans les poches
@@ -452,13 +449,13 @@ Trois techniques avant d'entrer :
 ### Particularités SES/HGGSP
 
 - **Cite tes auteurs par leur nom complet** la première fois (« Pierre Bourdieu, dans *La Distinction* de 1979 »), puis seulement leur nom. Ça impressionne.
-- **Annonce tes chiffres en deux temps** : le chiffre brut, puis la source. « 80 millions de téléspectateurs, selon les archives NBC. » Précision = crédibilité.
+- **Annonce tes chiffres avec leur périmètre** : date, population étudiée et source précise. Retire les audiences que tu ne peux pas documenter.
 - **Nuance toujours** : après une affirmation forte, ajoute « mais on peut nuancer » ou « cependant ». Le **jury** SES/HGGSP attend la prudence intellectuelle.
 - **Pas de jugement de valeur** : tu décris, tu analyses, tu nuances. Tu ne dis pas si c'est « bien » ou « mal ».
 
 ### Le projet d'orientation
 
-Les **cinq dernières minutes** portent sur ton projet post-bac. Prépare une réponse courte et cohérente :
+Il n’y a plus de phase distincte sur ton projet post-bac. Tu peux toutefois expliquer sincèrement ce qui t’intéresse dans le sujet, sans inventer un projet d’orientation :
 - Sciences Po : pluridisciplinarité, sciences sociales
 - École de commerce : stratégie, marchés, économie des talents
 - Licence d'**histoire** : **mémoire** et historiographie
@@ -507,11 +504,13 @@ Les **cinq dernières minutes** portent sur ton projet post-bac. Prépare une r�
 - [ ] Manger normalement le matin (**pas** plus, **pas** moins)
 - [ ] Arriver 30 minutes en avance
 - [ ] Eau dans la salle d'attente, **pas** de café à jeun
-- [ ] Phase de préparation : 20 minutes pour choisir et organiser. Ne perds **pas** plus de 2 minutes à choisir.
+- [ ] Phase de préparation : 20 minutes pour organiser la réponse à la question choisie par le jury.
 
 ## Sources et références
 
-- **Bulletin officiel, Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
+- Maass, A., D’Ettole, C., & Cadinu, M. (2008). *Checkmate? The role of gender stereotypes in the ultimate intellectual sport*. European Journal of Social Psychology, 38, 231–245. [Article](https://mdmcalister.pbworks.com/f/Checkmate%2B-%2BThe%2Brole%2Bof%2Bgender%2Bstereotypes%2Bin%2Bthe%2Bultimate%2Bintellectual%2Bsport.pdf).
+
+- Ministère de l’Éducation nationale (2026). *Baccalauréat : comment se passe le Grand oral ?* [Présentation officielle](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).
 - **Bourdieu, P. (1979).** *La Distinction : critique sociale du jugement.* Éditions de Minuit. (Capital culturel, distinction, reproduction sociale.)
 - **Nye, J. (1990).** *Bound to Lead : The Changing Nature of American Power.* Basic Books. (Théorie du *soft power*.)
 - **Sen, A. (1999).** *Development as Freedom.* Knopf. (Approche par les capabilités.)
