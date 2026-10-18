@@ -27,44 +27,17 @@ keyTakeaways:
   - "Un moteur d'échecs est un programme sans interface : il lit des ordres texte sur son entrée standard et répond sur sa sortie standard."
   - "Il tient en quatre organes : représentation de la position, génération des coups légaux, évaluation, recherche."
   - Le protocole UCI est ce qui relie ces quatre organes à n'importe quelle interface graphique. C'est une trentaine de lignes à écrire.
-  - Python est un mauvais choix de performance (environ mille fois plus lent que Stockfish) et un excellent choix pédagogique.
+  - Python privilégie ici la lisibilité ; le rapport de vitesse avec Stockfish dépend des programmes et du matériel comparés.
   - "Aucune bibliothèque dans cette série : ni python-chess, ni rien. Stockfish sert uniquement d'étalon de mesure."
 faq:
   - question: "Faut-il être bon aux échecs pour programmer un moteur ?"
-    answer: >-
-      Non, et c'est même contre-intuitif : les compétences requises sont surtout algorithmiques. Il faut
-      connaître les <strong>règles complètes</strong> du jeu, y compris les cas rares (prise en passant,
-      roque interdit à travers une case attaquée, promotion sous-optimale, nulle par répétition), parce que
-      ce sont exactement ceux que ton code oubliera. En revanche, savoir jouer une Sicilienne ne sert à rien.
-      Beaucoup d'auteurs de moteurs sont des programmeurs classés autour de 1 500 Elo.
-  - question: "Pourquoi ne pas utiliser la bibliothèque python-chess ?"
-    answer: >-
-      Parce qu'elle fait déjà tout ce que la série apprend à faire. <code>python-chess</code> gère la
-      représentation de l'échiquier, la génération des coups légaux, la lecture de FEN et de PGN, et le
-      dialogue UCI. L'utiliser transformerait la série en tutoriel d'API : on apprendrait des noms de
-      méthodes, pas le fonctionnement d'un moteur. Elle reste un excellent outil pour un projet réel,
-      simplement pas pour celui-ci.
-  - question: "Un moteur écrit en Python peut-il être fort ?"
-    answer: >-
-      Fort pour un humain, oui. Fort face à Stockfish, non. Python est environ mille fois plus lent qu'un
-      moteur en C++ pour la tâche critique (générer et jouer des coups), ce qui coûte à peu près
-      <strong>quatre à cinq niveaux de profondeur</strong> de recherche à temps égal. Un moteur Python
-      soigné atteint le niveau d'un bon joueur de club. C'est très largement suffisant pour battre son
-      auteur, ce qui est le vrai objectif.
-  - question: "Combien de lignes de code fait un moteur d'échecs minimal ?"
-    answer: >-
-      Un moteur qui joue légalement, évalue une position et cherche à quelques coups tient en
-      <strong>400 à 600 lignes de Python</strong>. La génération des coups en occupe à elle seule près de
-      la moitié, et c'est là que se logent la quasi-totalité des bugs. À titre de comparaison, Stockfish
-      dépasse les 60 000 lignes de C++, mais l'essentiel de ce volume sert à gagner les derniers points
-      Elo, pas à jouer correctement.
-  - question: "Qu'est-ce que le protocole UCI exactement ?"
-    answer: >-
-      <em>Universal Chess Interface</em>, publié par Stefan Meyer-Kahlen en 2000. C'est une convention de
-      dialogue en texte brut entre un moteur et une interface graphique : l'interface envoie
-      <code>position</code> puis <code>go</code>, le moteur répond par des lignes <code>info</code> puis
-      une ligne <code>bestmove</code>. Comme c'est du texte sur l'entrée et la sortie standard, n'importe
-      quel langage capable d'écrire sur la console peut parler UCI, Python compris.
+    answer: "Il faut connaître les règles et savoir décomposer un problème en algorithmes. Aucun classement Elo minimal n'est nécessaire."
+  - question: "Pourquoi ne pas utiliser python-chess ?"
+    answer: "Cette série implémente elle-même la représentation et les règles pour les expliquer. python-chess reste une autre option pour construire un outil sans réécrire ces fonctions."
+  - question: "Un moteur Python peut-il être fort ?"
+    answer: "Sa force dépend de la recherche, de l'évaluation, du matériel et de la cadence. Aucun rapport de vitesse universel avec Stockfish ni niveau humain garanti ne découle du choix de langage."
+  - question: "Qu’est-ce que le protocole UCI ?"
+    answer: "Conçu en 2000 par Rudolf Huber et Stefan Meyer-Kahlen, il définit un dialogue texte entre moteur et interface. Le moteur reçoit des commandes et renvoie notamment bestmove."
 ---
 
 Tu as sans doute déjà ouvert le dépôt de Stockfish, un jour, par curiosité. Soixante mille lignes de C++, des fichiers qui s'appellent `bitboard.cpp` et `nnue_architecture.h`, des tableaux de constantes magiques sur lesquelles aucun commentaire ne t'explique d'où elles sortent. Et tu as refermé l'onglet.
@@ -97,7 +70,7 @@ info depth 20 seldepth 32 multipv 1 score cp 36 nodes 701669 nps 701669 time 100
 bestmove e2e4 ponder e7e5
 ```
 
-Voilà un moteur d'échecs dans son état naturel. Tu lui as dit « voici la position de départ, réfléchis une seconde », il a répondu « je joue e4, et je m'attends à e5 ». La barre d'évaluation que tu connais, c'est juste le `score cp 36` de cette ligne, dessiné joliment : 36 centièmes de pion d'avance pour les Blancs.
+Voilà un moteur d'échecs dans son état naturel. Tu lui as dit « voici la position de départ, réfléchis une seconde », il a répondu « je joue e4, et je m'attends à e5 ». La barre d'évaluation que tu connais, c'est juste le `score cp 36` de cette ligne, dessiné joliment : un score positif dans la convention du moteur.
 
 Cette séparation stricte est ce qui rend le projet réalisable. Tu n'as **aucune interface graphique à écrire**. Tu écris un programme qui parle ce dialecte, et toutes les interfaces existantes savent déjà l'utiliser.
 
@@ -107,7 +80,7 @@ Un moteur d'échecs, quel qu'il soit, fait quatre choses. Rien de plus.
 
 **1. Représenter la position.** Où sont les pièces, à qui le trait, quels roques restent possibles, une prise en passant est-elle disponible, combien de demi-coups depuis la dernière prise. C'est le squelette : tout le reste s'y appuie, et un choix médiocre ici plombe définitivement la vitesse du moteur.
 
-**2. Générer les coups légaux.** À partir d'une position, produire la liste exhaustive des coups autorisés. Exhaustive et exacte : ni un de trop, ni un de moins. C'est de très loin la partie la plus pénible, la moins spectaculaire, et celle qui contient 90 % des bugs d'un moteur débutant. Les règles bizarres des échecs sont toutes là : le roque qui ne peut pas traverser une case attaquée, la prise en passant qui n'est disponible qu'un seul coup, la promotion en cavalier, le clouage absolu qui interdit de bouger une pièce.
+**2. Générer les coups légaux.** À partir d'une position, produire la liste exhaustive des coups autorisés. Exhaustive et exacte : ni un de trop, ni un de moins. C'est de très loin la partie la plus pénible, la moins spectaculaire, et une source fréquente de bugs. Les règles bizarres des échecs sont toutes là : le roque qui ne peut pas traverser une case attaquée, la prise en passant qui n'est disponible qu'un seul coup, la promotion en cavalier, le clouage absolu qui interdit de bouger une pièce.
 
 **3. Évaluer une position.** Répondre à la question « qui est mieux, et de combien ? » sans jouer un seul coup de plus. C'est une heuristique, jamais une vérité : le moteur compte le matériel, regarde où sont les pièces, et rend un nombre.
 
@@ -119,28 +92,19 @@ Le découpage de la série suit exactement cet ordre.
 
 | Phase | Articles | Ce qu'on construit |
 |---|---|---|
-| 1 | 1 à 4 | La représentation et la génération des coups, prouvée juste |
+| 1 | 1 à 4 | La représentation et la génération des coups, vérifiées sur un jeu de cas |
 | 2 | 5 à 8 | L'évaluation et la recherche : le moteur joue vraiment |
 | 3 | 9 à 11 | La vitesse : chercher plus profond dans le même temps |
 | 4 | 12 | UCI, et la mesure honnête de la force obtenue |
 
 Le plan complet, article par article, est sur la [page de la série](/fr/series/moteur-python/).
 
-## Pourquoi Python est le pire choix, et pourquoi on le prend quand même
+## Pourquoi choisir Python ici ?
 
-Autant le dire tout de suite, avec des chiffres plutôt qu'avec des impressions.
+La série privilégie un code lisible et la bibliothèque standard. Les temps de calcul rapportés sont des mesures de cette implémentation sur une machine donnée ; ils ne mesurent pas un ralentissement universel de Python par rapport au C++.
 
-La tâche la plus fréquente d'un moteur est de générer les coups légaux d'une position et de les jouer. On mesure cette vitesse avec `perft`, un compteur qui énumère toutes les parties possibles jusqu'à une profondeur donnée. Depuis la position de départ, à six demi-coups, il y a exactement 119 060 324 positions. Stockfish les parcourt sur ma machine (un ordinateur portable, AMD Ryzen 7 5700U) en 1,60 seconde. Environ **74 millions de coups générés par seconde**.
+Un gain de vitesse peut permettre d'approfondir la recherche, mais sa traduction dépend de la position, de l'ordre des coups et de l'évaluation. Une profondeur donnée ne garantit pas un niveau Elo. Le but est de comprendre ce que chaque composant apporte, puis de le mesurer dans des conditions précisées.
 
-Un moteur Python soigné se situe autour de cent mille. Trois ordres de grandeur en dessous.
-
-Ce facteur mille se paie en profondeur de recherche. Le facteur de branchement moyen aux échecs est d'une trentaine de coups, ramené à environ 5 ou 6 après un bon élagage : chaque niveau de profondeur supplémentaire coûte donc grossièrement un facteur 5. Perdre un facteur 1 000, c'est perdre à peu près **quatre niveaux et demi**. Là où un moteur C++ voit à quinze coups, le tien verra à dix.
-
-Alors pourquoi Python ?
-
-Parce que l'objectif n'est pas de battre Stockfish. Personne ne bat Stockfish, y compris les gens qui écrivent des moteurs en C++ depuis quinze ans. L'objectif est de comprendre, et Python a une propriété que le C++ n'a pas : **le code ressemble à l'idée**. Une fonction de recherche alpha-bêta en Python tient en douze lignes qu'on peut lire à voix haute. La même en C++ optimisé est illisible pour qui n'a pas déjà compris l'algorithme.
-
-Et le seuil réel est plus bas que tu ne le crois. Un moteur qui voit à dix demi-coups avec une évaluation correcte joue déjà mieux que la quasi-totalité des joueurs de club. Il battra son auteur, ce qui est une expérience étrangement désagréable et le vrai but de l'exercice.
 
 ## L'atelier : trois choses à installer, dont deux que tu as déjà
 
@@ -156,7 +120,7 @@ Elle reste le bon choix pour un projet réel. Simplement pas pour celui-ci.
 
 Stockfish ne fera jamais partie de ton moteur. Il sert d'**appareil de mesure**, à trois titres :
 
-- il calcule les valeurs de référence de `perft`, avec lesquelles tu prouveras que ta génération de coups est juste (article 4) ;
+- il calcule les valeurs de référence de `perft`, avec lesquelles tu contrôleras la génération sur les cas examinés (article 4) ;
 - il donne une évaluation de référence, à laquelle comparer la tienne (article 6) ;
 - il sert d'adversaire calibré, qu'on peut brider par paliers, pour estimer l'Elo de ton moteur (article 12).
 
@@ -307,7 +271,7 @@ Deux détails valent qu'on s'y arrête, parce qu'ils causent l'essentiel des « 
 
 Le premier est `flush()`. Sans lui, ta commande reste dans le tampon de Python et n'atteint jamais le moteur, qui attend donc indéfiniment quelque chose que tu crois avoir envoyé.
 
-Le second est `lire_jusqu_a`. Le protocole UCI est **asynchrone**, et chaque ordre bloquant a une ligne de fin convenue : `uci` se termine par `uciok`, `isready` par `readyok`, `go` par `bestmove`. Si tu envoies la commande suivante sans avoir attendu cette ligne, tu parles dans le vide. Le cas le plus vicieux est celui du `quit` envoyé trop tôt : le moteur interrompt sa recherche et renvoie un coup au hasard, sans erreur, sans avertissement. Tu obtiens un résultat parfaitement faux et parfaitement silencieux.
+Le second est `lire_jusqu_a`. Le protocole UCI est **asynchrone**, et chaque ordre bloquant a une ligne de fin convenue : `uci` se termine par `uciok`, `isready` par `readyok`, `go` par `bestmove`. Dans ce client séquentiel, on attend ces réponses avant de poursuivre ; un client asynchrone peut les gérer autrement. Un `quit` trop tôt demande au moteur de s'arrêter ; il ne garantit ni une recherche complète ni le renvoi d'un coup aléatoire.
 
 Le dialogue complet ressemble à ceci :
 
@@ -347,7 +311,7 @@ $ python3 parler_a_stockfish.py
 >>> quit
 ```
 
-Vingt-cinq lignes en réponse à `uci` : deux d'identité, une de `uciok`, et vingt-deux options réglables. C'est là que se trouve `UCI_LimitStrength`, l'option qui permettra de brider Stockfish pour en faire un sparring-partner à 1 400 Elo au lieu de 3 600.
+Vingt-cinq lignes en réponse à `uci` : deux d'identité, une de `uciok`, et vingt-deux options réglables. C'est là que se trouve `UCI_LimitStrength`, l'option qui permettra de brider Stockfish pour en faire un adversaire à force réduite ; ce réglage ne constitue pas une cote FIDE mesurée.
 
 Si ce script affiche `bestmove e2e4`, ton atelier est prêt.
 
@@ -383,3 +347,9 @@ Le tout en Python pur, en quelques centaines de lignes que tu auras écrites et 
 Et une chose à laquelle on pense rarement avant d'y être : la première fois que ton propre programme trouve un mat en trois que tu n'avais pas vu, tu comprends d'un coup pourquoi les gens font ça.
 
 **Prochain article :** représenter un échiquier en Python, et pourquoi le tableau de 64 cases qui te semble évident est précisément celui qu'il ne faut pas utiliser.
+
+## Sources
+
+La page officielle de Shredder précise les auteurs et la fonction du protocole UCI utilisé ici.
+
+- Huber, R. et Meyer-Kahlen, S. (2000), Universal Chess Interface, Shredder, [texte de référence](https://www.shredderchess.com/de/schach-features/uci-universal-chess-interface.html).
