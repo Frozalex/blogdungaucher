@@ -33,7 +33,7 @@ faq:
       Maguire et ses collègues ont montré en 2000 que l'hippocampe postérieur des chauffeurs de taxi
       londoniens était plus volumineux que celui des témoins, et que ce volume augmentait avec les
       années de métier. Le détail presque jamais cité est que l'hippocampe antérieur, lui, diminuait
-      avec l'ancienneté. Ce n'est donc pas un gain, c'est une redistribution.
+      avec l'ancienneté. Les différences concernent plusieurs régions ; elles ne prouvent ni un gain global de volume ni un transfert de matière d'une région vers l'autre.
   - question: "Le changement de matière grise est-il permanent ?"
     answer: >-
       Pas nécessairement. Draganski et ses collègues ont suivi en 2004 des volontaires apprenant à
@@ -80,7 +80,7 @@ Voilà ce que tout le monde retient. Maintenant, la suite de la phrase, dans le 
 
 **L'hippocampe antérieur, lui, était corrélé négativement à l'ancienneté.** Plus le chauffeur avait d'années de métier, plus sa partie postérieure était développée, et plus sa partie antérieure était réduite.
 
-Ce n'est pas un détail technique. Cela change la nature du résultat. Il ne s'agit pas d'un hippocampe qui grossit : il s'agit d'une **redistribution** à l'intérieur d'une structure. Cette observation ne prouve toutefois pas que la croissance d’une région aurait causé la réduction d’une autre.
+Ce n'est pas un détail technique. Cela change la nature du résultat. Il s'agit de différences régionales de volume, et non d'une preuve que l'hippocampe entier grossit. Cette observation ne prouve toutefois pas que la croissance d’une région aurait causé la réduction d’une autre.
 
 L'image populaire, celle d'un cerveau qu'on muscle comme un biceps, ne correspond pas à ce qu'a observé Maguire. L’étude observe des différences régionales ; l’image d’un budget qu’on réalloue reste une métaphore, pas un mécanisme démontré.
 
@@ -166,7 +166,7 @@ Trois raisons, et aucune n'a à voir avec la solidité des preuves.
 
 ## Ce qu'il faut retenir
 
-Les deux études invoquées pour prouver que les échecs transforment durablement le cerveau contiennent chacune un résultat qui contredit cet usage. Chez les taxis londoniens, l'hippocampe postérieur augmente mais l'antérieur diminue : c'est une redistribution, pas un gain. Chez les jongleurs, l’expansion de matière grise a diminué lors du troisième scanner, et les auteurs la qualifient eux-mêmes de transitoire.
+Les deux études invoquées pour prouver que les échecs transforment durablement le cerveau contiennent chacune un résultat qui contredit cet usage. Chez les taxis londoniens, l'hippocampe postérieur augmente mais l'antérieur diminue : ces différences régionales ne démontrent pas un gain global. Chez les jongleurs, l’expansion de matière grise a diminué lors du troisième scanner, et les auteurs la qualifient eux-mêmes de transitoire.
 
 Quant au bénéfice annoncé, il a été testé directement. Avec un groupe témoin faisant autre chose d'aussi exigeant, les expériences citées ne démontrent pas de bénéfice spécifique sur la résolution de problèmes mathématiques. Et la taille de l'effet diminue à mesure que la qualité des protocoles augmente.
 

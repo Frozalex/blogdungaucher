@@ -10,3 +10,8 @@ FAQ « transitoire » alignée sur le texte de Draganski, pas le titre ; suivi �
 - [Sala–Gobet revue 2017](https://journals.sagepub.com/doi/full/10.1177/0963721417712760)
 
 SEO, date et slug conservés. Aucun marqueur « À VÉRIFIER PAR LUC » ajouté.
+
+## Contrôle transversal final
+
+FAQ, corps et conclusion alignés : différences régionales ne signifient pas transfert causal de matière ni gain global. Étude Maguire déjà ouverte.
+
