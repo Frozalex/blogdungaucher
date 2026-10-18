@@ -1,8 +1,7 @@
 ---
 title: "Sujet Grand Oral NSI : Pourquoi AlphaZero représente-t-il une rupture dans l'intelligence artificielle ?"
-excerpt: >-
-  Sujet entièrement rédigé pour le Grand Oral spécialité NSI : apprentissage par renforcement, réseaux de neurones,
-  Monte Carlo Tree Search, rupture épistémologique d'AlphaZero. Texte de 10 minutes prêt à réciter.
+excerpt:
+  "Réseau, recherche MCTS et auto-jeu : comprendre AlphaZero, son protocole de 2017 et ses différences avec MuZero et AlphaFold."
 publishDate: "2026-05-08"
 category: grand-oral
 featured: false
@@ -34,84 +33,52 @@ heroImage:
   license: CC0
 ---
 
-> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+Pourquoi AlphaZero représente-t-il une étape importante dans l'intelligence artificielle appliquée aux jeux ? Tu peux répondre en expliquant comment une recherche dans un arbre est associée à un apprentissage. L'enjeu n'est pas d'opposer une machine programmée à une machine qui n'aurait reçu aucune intervention humaine.
 
----
+## Partir de la recherche classique
 
-Bonjour. Je vais vous parler d'un événement qui a marqué l'histoire de l'**informatique** : la victoire d'AlphaZero contre Stockfish en deux mille dix-sept.
+Un minimax attribue des valeurs aux feuilles puis fait remonter les choix des deux joueurs. Avec une profondeur limitée, une fonction d'évaluation estime les positions qui ne sont pas des fins de partie.
 
-Le **sujet** est précis : pourquoi AlphaZero représente-t-il une rupture dans l'intelligence artificielle appliquée aux jeux de stratégie ? Cette **question** m'intéresse parce qu'elle se trouve à la frontière du **programme** de spécialité **NSI** en **terminale** : elle mobilise les notions d'apprentissage automatique, de réseaux de neurones, et plus largement la distinction entre **programmation impérative** et **apprentissage statistique**.
+L'élagage alpha-bêta peut éviter certaines branches sans changer le résultat de cette recherche sous les mêmes hypothèses. Les moteurs réels ajoutent des choix de recherche et des optimisations ; ils ne parcourent pas uniformément toutes les positions.
 
-Avant deux mille dix-sept, tous les **programmes** d'échecs reposaient sur le même paradigme : un algorithme de recherche arborescente comme alpha-bêta, guidé par une fonction d'évaluation écrite par des experts humains. Cette approche, héritée de Claude Shannon en 1950, avait connu cinquante ans d'améliorations progressives. AlphaZero, développé par DeepMind, a battu Stockfish, alors le meilleur **programme** au monde, en quatre **heures** d'entraînement, sans connaissance humaine initiale. C'est ce que je vais analyser ici.
+Il faut aussi dater la comparaison. Le Stockfish 8 affronté en 2017 diffère du Stockfish actuel. L'annonce officielle de Stockfish 12 en 2020 documente l'adoption d'une évaluation par réseau NNUE. « Stockfish sans apprentissage contre AlphaZero avec apprentissage » n'est donc pas une opposition intemporelle.
 
-Je procéderai en trois étapes. D'abord, je rappellerai brièvement l'approche classique pour mesurer ce qui change. Ensuite, je présenterai l'architecture d'AlphaZero et son fonctionnement. Enfin, je discuterai la nature de cette rupture et ses **limites**.
+## Un réseau qui guide la recherche
 
-## L'approche classique : minimax et fonctions d'évaluation
+Dans le préprint AlphaZero de 2017, un réseau produit une politique sur les actions et une estimation de valeur. Il guide une recherche MCTS, qui équilibre l'exploration et l'utilisation des informations accumulées.
 
-Pour comprendre ce qu'AlphaZero a changé, il faut d'abord comprendre ce qu'il a remplacé. Pendant cinquante ans, les **programmes** d'échecs ont fonctionné sur deux composants. D'un côté, un algorithme de recherche : minimax avec élagage alpha-bêta, qui explore un **arbre** de coups jusqu'à une profondeur donnée. De l'autre, une fonction d'évaluation : une formule qui donne un score à une position non terminale, fondée sur la valeur des pièces, le contrôle du centre, la sécurité du roi, et d'autres critères codés à la main.
+Le réseau évite d'avoir à jouer chaque simulation jusqu'à la fin avec des coups aléatoires : son estimation contribue à l'évaluation des feuilles. MCTS n'est donc pas ici un abandon de l'arbre, mais une autre manière d'en organiser l'exploration.
 
-Le meilleur **exemple** de cette approche est Stockfish, **programme** open source développé depuis deux mille huit. Il évalue environ deux cents millions de positions par seconde. Sa fonction d'évaluation est le fruit de quinze années de réglages fins par une communauté de centaines de développeurs. C'est un sommet de **programmation impérative** : chaque ligne de code dit explicitement à la machine ce qu'elle doit faire et pourquoi.
+AlphaZero apprend par auto-jeu. Les résultats des parties et les distributions issues de la recherche fournissent des cibles d'entraînement. Cette boucle dépend de choix humains : règles, représentation, architecture, objectif et procédure d'apprentissage.
 
-L'avantage de cette approche est l'**explicabilité** : on peut comprendre pourquoi le **programme** joue tel coup. La fonction d'évaluation est lisible, l'**arbre** exploré est traçable. C'est aussi sa **limite** principale : la fonction d'évaluation reflète les intuitions humaines, donc elle hérite des biais et des angles morts des experts qui l'ont écrite.
+## Lire correctement le résultat de 2017
 
-En deux mille dix-sept, le moteur Stockfish dépassait le niveau de tous les joueurs humains, y compris le champion du monde. On pouvait imaginer que le plafond avait été atteint, et que les progrès futurs seraient incrémentaux. C'est cette croyance qu'AlphaZero a brisée.
+Le préprint rapporte 28 victoires, 72 nulles et aucune défaite sur 100 parties contre Stockfish 8. Cela représente 64 points sur 100, donc 64 % des points possibles, mais 28 % de victoires.
 
-## AlphaZero : architecture et fonctionnement
+La comparaison utilise une minute par coup. La courbe d'apprentissage dépasse le niveau de Stockfish après environ quatre heures dans les conditions décrites ; ce repère n'est pas la durée totale de tous les entraînements ni une durée reproductible sur un ordinateur personnel.
 
-AlphaZero a été présenté par DeepMind, filiale de Google, dans un article publié dans Science en deux mille dix-huit. Le **programme** repose sur trois composants nouveaux par rapport à Stockfish.
+Le résultat appartient à un protocole avec des versions et du matériel précis. Il ne suffit pas à classer toutes les versions ultérieures des deux approches.
 
-Premièrement, un **réseau de neurones** profond. Ce réseau prend en entrée une position d'échecs (encodée sur un tenseur de dimensions 8×8×planes), et produit deux sorties. La première est un score de valeur, entre moins un et plus un, qui estime qui va gagner depuis cette position. La seconde est une distribution de probabilité sur les coups possibles, qui indique lesquels méritent d'être explorés en priorité.
+## Généralité et limites
 
-Deuxièmement, un algorithme de recherche appelé **Monte Carlo Tree Search**, ou MCTS. Contrairement au minimax, qui explore l'**arbre** de manière déterministe et exhaustive, MCTS explore de manière sélective et stochastique. Il visite préférentiellement les nœuds que le réseau de neurones juge prometteurs, accumule des statistiques de victoire et de défaite par simulation, et retourne le coup le plus visité.
+La même méthode est étudiée sur les échecs, le shogi et le go, avec des entraînements propres à chaque jeu. Un réseau entraîné aux échecs ne sait pas spontanément jouer aux autres.
 
-![Contraste entre minimax (exploration exhaustive de tous les nœuds à profondeur fixée) et MCTS d'AlphaZero (exploration sélective guidée par les probabilités du réseau de neurones).](/images/sujet-alphazero-02-mcts-vs-minimax.svg)
+MuZero est présenté dans un préprint de novembre 2019, environ deux ans après celui d'AlphaZero. Schrittwieser et ses collègues y associent la planification à un modèle appris des quantités utiles à la décision. Il ne s'agit pas d'une évolution publiée quelques mois après 2017.
 
-Troisièmement, un mécanisme d'**apprentissage par renforcement**. AlphaZero joue contre lui-même, des millions de parties. À chaque partie, il observe le résultat (victoire, défaite, nulle) et ajuste les poids de son réseau de neurones pour mieux prédire les positions gagnantes la prochaine fois. C'est une boucle d'auto-amélioration : le réseau guide MCTS, MCTS produit des **données**, ces **données** entraînent le réseau, et le cycle recommence.
+Il faut enfin distinguer AlphaFold. Le document scientifique du comité Nobel présente la prédiction de structures protéiques comme une tâche distincte, avec ses méthodes et ses données. Ce n'est pas AlphaZero transféré directement aux protéines, ni une simulation générale de toute leur dynamique de repliement.
 
-![Cycle d'auto-amélioration d'AlphaZero : le réseau de neurones oriente MCTS, qui joue des parties contre lui-même, dont les résultats entraînent le réseau à nouveau, sans aucune connaissance humaine injectée.](/images/sujet-alphazero-01-boucle-self-play.svg)
+Le Nobel de chimie 2024 récompense David Baker pour la conception computationnelle de protéines, et Demis Hassabis et John Jumper pour la prédiction de structures. Omettre Baker fausse le partage du prix.
 
-Le résultat est spectaculaire. En quatre **heures** d'entraînement sur du matériel spécialisé (5 000 TPUs), AlphaZero atteint un niveau supérieur à Stockfish. Lors du match officiel, sur cent parties, AlphaZero a gagné vingt-huit fois, n'a jamais perdu, et a fait soixante-douze nulles. Aucune connaissance humaine n'a été injectée : AlphaZero a redécouvert seul les principes des ouvertures, des structures de pions, des sacrifices positionnels. Mieux : il a inventé des stratégies que les commentateurs humains ont qualifiées de profondément originales.
+## Construire tes dix minutes
 
-Voici une représentation simplifiée du cœur de l'algorithme en pseudo-code Python.
+Présente une petite recherche à la main, explique les deux sorties du réseau puis la boucle d'auto-jeu. Termine par une limite : matériel, dépendance au domaine ou interprétation d'un protocole. Les prolongements vers MuZero et AlphaFold servent à comparer des tâches, pas à raconter une filiation technique unique.
 
-```python
-def alphazero_self_play():
-    reseau = ReseauNeurones()
-    for partie in range(millions):
-        position = position_initiale()
-        historique = []
-        while not position.est_terminee():
-            distribution = mcts(position, reseau, simulations=800)
-            coup = echantillonner(distribution)
-            historique.append((position, distribution))
-            position.joue(coup)
-        resultat = position.resultat()
-        for pos, dist in historique:
-            reseau.entrainer(pos, dist, resultat)
-```
+Pour le détail de minimax et alpha-bêta, utilise le [guide NSI](/fr/blog/guide-grand-oral-echecs-nsi/).
 
-Le cœur de ce code est la fonction MCTS, qui utilise le réseau pour orienter sa recherche, et la fonction d'entraînement, qui ajuste les poids du réseau à partir des résultats des parties. Aucune connaissance des échecs n'est codée explicitement : on fournit les règles du jeu et un signal de récompense, et le réseau découvre seul le reste.
+## Sources
 
-## La nature de la rupture et ses limites
-
-En quoi AlphaZero représente-t-il une rupture épistémologique, et pas seulement une amélioration ? La réponse tient en trois points.
-
-Premièrement, c'est un changement de **paradigme**. L'approche classique relève de la **programmation impérative** : le développeur dit à la machine comment résoudre le problème. AlphaZero relève de l'**apprentissage automatique** par renforcement : le développeur dit à la machine quoi atteindre, et la machine découvre seule comment. Ces deux paradigmes coexistent dans le **programme** de spécialité **NSI**, mais AlphaZero est l'un des **exemples** les plus spectaculaires du second.
-
-Deuxièmement, c'est une rupture sur la **généralité**. Stockfish ne sait jouer qu'aux échecs : sa fonction d'évaluation est spécifique à ce jeu. AlphaZero, avec exactement le même code, peut apprendre le Go, le Shogi, ou n'importe quel jeu à information complète. Il suffit de lui fournir les règles. C'est une généralisation impressionnante. Quelques mois plus tard, le **système** dérivé MuZero apprenait des jeux dont on ne lui donnait même pas les règles. La portée de cette **méthode** dépasse largement les échecs.
-
-Troisièmement, c'est une rupture sur l'**explicabilité**. Stockfish est explicable : pour chaque coup, on peut retracer l'**arbre** et identifier les variantes qui ont conduit au choix. AlphaZero est une boîte noire : son réseau de neurones a des dizaines de millions de paramètres, et personne ne peut dire en français pourquoi il joue tel coup. Cette opacité est l'un des grands **enjeux** philosophiques de l'**informatique** moderne. Elle pose la **question** : peut-on accepter des décisions très performantes mais non explicables ? Dans le contexte des échecs, c'est anecdotique. Dans le contexte médical ou judiciaire, c'est un problème majeur.
-
-Les **limites** d'AlphaZero sont également significatives. Premièrement, l'entraînement coûte cher : 5 000 TPUs pendant plusieurs **heures**, soit plusieurs millions de dollars d'infrastructure. Cette barrière à l'entrée concentre la recherche dans quelques grandes entreprises. Deuxièmement, AlphaZero reste lent en termes de positions évaluées : environ soixante mille par seconde, contre deux cents millions pour Stockfish. Sa supériorité vient de la qualité de l'évaluation, pas du volume de calcul. Troisièmement, le **système** ne sait pas généraliser hors de son domaine d'entraînement : un AlphaZero entraîné aux échecs ne saura pas spontanément jouer aux dames.
-
-## Conclusion
-
-Pour répondre à ma **question** initiale, AlphaZero représente une rupture dans l'intelligence artificielle parce qu'il abandonne la **programmation explicite** au profit de l'**apprentissage par renforcement**, et qu'il démontre que cette approche peut surpasser cinquante ans d'expertise humaine en quatre **heures**. Cette rupture n'est pas seulement quantitative : elle change la nature de ce que signifie « programmer » une intelligence artificielle.
-
-L'ouverture la plus profonde, c'est de constater que les principes d'AlphaZero ont été transposés ensuite à des problèmes scientifiques majeurs. AlphaFold, dérivé direct d'AlphaZero, a résolu en deux mille vingt le problème du repliement des protéines, qui était ouvert depuis cinquante ans. Cette percée a valu le prix Nobel de chimie deux mille vingt-quatre à ses auteurs. Les échecs ont donc été le laboratoire d'une révolution **informatique** dont l'impact dépasse de loin le cadre des jeux.
-
-Je vous remercie pour votre attention et je suis prêt à répondre à vos **questions**.
-
----
-
-> **Pour aller plus loin :** [Sujet Grand Oral NSI sur le minimax](/fr/blog/sujet-grand-oral-nsi-minimax/) · [Sujet Grand Oral NSI sur l'élagage alpha-bêta](/fr/blog/sujet-grand-oral-nsi-alpha-beta/) · [Hub méthodologie Grand Oral NSI](/fr/blog/guide-grand-oral-echecs-nsi/)
+- Silver, D. et al. (2017), *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*, préprint arXiv. [Article](https://arxiv.org/html/1712.01815v1).
+- Équipe Stockfish (2020), *Stockfish 12*, annonce officielle. [NNUE](https://stockfishchess.org/blog/2020/stockfish-12/).
+- Schrittwieser, J. et al. (2019), *Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model*, préprint arXiv. [Résumé original](https://arxiv.org/abs/1911.08265).
+- Académie royale des sciences de Suède (2024), *Scientific Background on the Nobel Prize in Chemistry 2024*. [Document officiel](https://www.kva.se/app/uploads/2024/10/sciback_ke_en_24_vi3ng84ao4.pdf).
+- Ministère de l'Éducation nationale (2026), *Baccalauréat : comment se passe le Grand oral ?* [Format](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).
