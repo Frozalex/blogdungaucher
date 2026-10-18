@@ -9,9 +9,9 @@ Périmètre : Science, Esprit, Grand Oral et dissertation. Aucun déploiement. L
 - Un seul bouton Notifications dans Footer. Les autres occurrences appartiennent à la fenêtre de préférences.
 - Build intermédiaire Astro : 305 pages, succès. Avertissements préexistants sur des traductions absentes ; contrôle final des liens encore à effectuer.
 
-## Validation en attente
+## Décisions validées
 
-Les propositions de fusion/noindex seront présentées avant application. Aucune fusion, redirection ou nouvelle directive noindex autorisée pour le moment.
+Luc a validé la différenciation des deux articles imposteur et la consolidation avec noindex des quatre fiches Grand Oral détaillées ci-dessous.
 
 ## Articles
 
@@ -82,7 +82,7 @@ Révision de fond : aucune démonstration d’imperméabilité des échecs au pl
 
 Les quatre URL et leurs métadonnées SEO préexistantes sont conservées. Seul le champ `noindex` autorisé est ajouté ; les fiches sont retirées du sitemap. Les huit autres sujets ne reçoivent pas de noindex. Aucun marqueur ajouté dans ces quatre fiches.
 
-Les deux articles imposteur sont à conserver et différencier, conformément au choix de Luc ; application encore à effectuer.
+Les deux articles imposteur sont conservés et différenciés, conformément au choix de Luc.
 
 ## Différenciation imposteur validée et appliquée
 
@@ -96,3 +96,7 @@ Corrigé : parenté présentée comme analogie plutôt que transfert prouvé ; b
 ### echecs-et-flow
 
 Corrigé : Bakker 2008 distingué des études sur les échecs ; aucun délai de reprise universel ; fenêtre 45–90 minutes et seuil Elo retirés ; verbatims non sourcés retirés ; entretiens initiaux distingués des bippers ; bibliographie limitée aux travaux utilisés. Sources réellement ouvertes : [Nakamura–Csikszentmihalyi 2002](https://nuovoeutile.it/wp-content/uploads/2015/12/2002-Flow.pdf), [Bakker 2008](https://www.isonderhouden.nl/doc/pdf/arnoldbakker/articles/articles_arnold_bakker_165.pdf), [Mark 2008](https://www.ics.uci.edu/~gmark/chi08-mark.pdf). Aucun marqueur ajouté.
+
+### regle-40-40-20-echecs
+
+Corrigé : formule clairement présentée comme heuristique sans validation scientifique ; seuils Elo contradictoires et délais de progression non établis retirés ; citations Nunn/Fine/Dvoretsky/Rowson sans source ouverte retirées ; faux facteur dix supprimé ; lien « illusion de compétence » vers Dunning–Kruger supprimé. Illustrations quantitatives non étayées retirées du contenu ; seul l’exemple arithmétique demeure. Sources ouvertes : [Chase–Simon](https://gwern.net/doc/psychology/chess/1973-chase.pdf), [Ericsson et al.](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf). Frontmatter SEO préservé : sa mention de « ce que la recherche recommande » demeure plus affirmative que le texte corrigé et est signalée ici. Aucun marqueur ajouté.
