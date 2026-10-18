@@ -13,9 +13,15 @@ export function getPostHeroSrc(post: BlogEntry): string | null {
   return isPublicAssetAvailable(src) ? src : null;
 }
 
-/** Doit rester aligné sur `scripts/normalize-reading-time.mjs`, qui écrit le champ du frontmatter. */
+/** Estimation à partir de la prose Markdown, sans modifier le frontmatter. */
 export function calculateReadingTime(body: string): string {
-  const words = body.trim().split(/\s+/).filter(Boolean).length;
+  const prose = body
+    .replace(/<!--[\s\S]*?-->/g, " ")
+    .replace(/```[\s\S]*?```|~~~[\s\S]*?~~~/g, " ")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/!?\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/https?:\/\/\S+/g, " ");
+  const words = prose.match(/[\p{L}\p{N}]+(?:[’'-][\p{L}\p{N}]+)*/gu)?.length ?? 0;
   const minutes = Math.max(1, Math.ceil(words / 220));
   return `${minutes} min`;
 }
@@ -55,6 +61,7 @@ export async function getAllPosts() {
 
   return posts
     .filter((post) => post.data.publishDate <= now)
+    .map((post) => ({ ...post, data: { ...post.data, readingTime: calculateReadingTime(post.body ?? "") } }))
     .sort(
       (left, right) =>
         right.data.publishDate.getTime() - left.data.publishDate.getTime(),

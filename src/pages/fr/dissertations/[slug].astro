@@ -9,7 +9,7 @@ import Breadcrumb from "../../../components/Breadcrumb.astro";
 import Comments from "../../../components/Comments.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
 import { siteConfig } from "../../../data/site";
-import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+import { buildBreadcrumbJsonLd, calculateReadingTime } from "../../../utils/blog";
 
 export async function getStaticPaths() {
   const entries = await getCollection("dissertations");
@@ -25,7 +25,7 @@ const { Content } = await render(entry);
 const postUrl = `/fr/dissertations/${entry.id}/`;
 const absoluteUrl = new URL(postUrl, siteConfig.siteUrl).toString();
 
-const readingTime = entry.data.readingTime ?? "10 min";
+const readingTime = calculateReadingTime(entry.body ?? "");
 
 const structuredData = [
   buildBreadcrumbJsonLd([

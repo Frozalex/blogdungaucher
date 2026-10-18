@@ -69,7 +69,7 @@ if (stripInlineFaq) {
   headings = r.headings;
 }
 
-const readingTime = post.data.readingTime ?? calculateReadingTime(post.body ?? "");
+const readingTime = calculateReadingTime(post.body ?? "");
 
 const allPosts = await getAllPosts();
 const related = getRelatedPosts(allPosts, post, "fr");
@@ -181,7 +181,7 @@ const structuredData = [
 
           <div class="hero-byline">
             <div class="hero-avatar">
-              <img src="/images/logo.svg" alt="" width="28" height="40" />
+              <img src="/images/logo.svg" alt="" role="presentation" width="28" height="40" />
             </div>
             <div class="hero-author-info">
               {/* Le nom vient de post.data.author, la même source que l'auteur du JSON-LD :
