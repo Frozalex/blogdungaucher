@@ -1,9 +1,9 @@
 ---
-title: "L'effet placebo aux échecs : pourquoi ton porte-bonheur ne marche pas"
+title: "Effet placebo aux échecs : ce que la croyance change vraiment"
 excerpt: >-
-  Croire qu'on a pris de la caféine augmente réellement la puissance d'un cycliste de 3,1 %. Mais la
-  recherche montre que le placebo agit très bien sur l'effort et la douleur, et très mal sur la
-  performance cognitive objective. Les échecs sont exactement le mauvais terrain.
+  Un rituel peut changer ton ressenti sans garantir un meilleur calcul. Les recherches sur le placebo demandent
+  de distinguer les tâches, les attentes et les résultats : un effet chez des cyclistes ne se transpose pas
+  automatiquement à une partie d’échecs.
 publishDate: "2026-10-06"
 category: science
 featured: false
@@ -24,171 +24,80 @@ seoDescription: >-
   Porte-bonheur, ouverture fétiche, compléments : l'effet placebo améliore-t-il le jeu ? Ce que dit la
   recherche sur le placebo cognitif, et pourquoi le nocebo est le vrai risque aux échecs.
 faq:
-  - question: "L'effet placebo peut-il améliorer mon jeu aux échecs ?"
+  - question: "Le placebo améliore-t-il le jeu aux échecs ?"
     answer: >-
-      Très peu, en tout cas directement. La recherche distingue nettement les effets sur les critères
-      subjectifs, comme la douleur ou la perception de l'effort, où le placebo agit réellement, et les
-      critères objectifs, où il agit peu ou pas. Trouver le bon coup est un critère objectif. Croire
-      que tu joues bien modifie surtout ton impression de bien jouer.
-  - question: "Pourquoi le placebo marche-t-il en sport mais pas aux échecs ?"
+      Les sources présentées ici ne permettent pas de conclure à un gain de performance échiquéenne,
+      ni à une absence totale d’effet. Il faut un essai adapté au jeu pour distinguer le ressenti du résultat.
+  - question: "Que signifie le chiffre de 3,1 % chez les cyclistes ?"
     answer: >-
-      Parce que la performance physique passe en grande partie par la tolérance à l'effort et à la
-      douleur, qui sont des perceptions modulables. Beedie et ses collègues ont montré en 2006 que des
-      cyclistes croyant avoir pris de la caféine augmentaient leur puissance de 3,1 %. Aux échecs, il
-      n'y a pas de barrière de douleur à repousser : la limite est la qualité du calcul.
-  - question: "Le placebo fonctionne-t-il même si on sait que c'est un placebo ?"
+      Dans l’étude de Beedie et collègues (2006), il s’agit d’une variation moyenne de puissance dans la
+      condition où une forte dose de caféine était annoncée alors qu’un placebo était donné. L’intervalle
+      d’incertitude inclut zéro. Ce n’est ni un effet garanti ni un résultat sur les échecs.
+  - question: "Un placebo peut-il fonctionner sans tromperie ?"
     answer: >-
-      Oui, dans certains contextes. Ted Kaptchuk et son équipe ont montré en 2010, sur le syndrome de
-      l'intestin irritable, qu'un placebo administré ouvertement, en disant explicitement au patient
-      qu'il s'agissait d'un placebo, produisait une amélioration supérieure à l'absence de traitement.
-      Cela suggère que le rituel et le cadre comptent autant que la croyance.
-  - question: "Qu'est-ce que l'effet nocebo et pourquoi est-il plus dangereux aux échecs ?"
+      Kaptchuk et collègues (2010) rapportent une amélioration de symptômes dans un essai ouvert sur
+      le syndrome de l’intestin irritable. Ce résultat ne démontre pas qu’un rituel améliore le calcul échiquéen.
+  - question: "Les attentes négatives sont-elles toujours plus puissantes ?"
     answer: >-
-      C'est le versant négatif : une attente défavorable produit une dégradation réelle. Les travaux
-      sur l'amélioration cognitive suggèrent une asymétrie gênante, avec des effets négatifs plus
-      nettement observés que les effets positifs. Aux échecs, cela veut dire que croire qu'on va mal
-      jouer dégrade probablement plus le jeu que croire qu'on va bien jouer ne l'améliore.
-  - question: "Faut-il abandonner ses rituels d'avant-partie ?"
+      Les sources retenues ne démontrent pas une asymétrie universelle entre placebo et nocebo aux échecs.
+      Évite de traiter une prédiction négative comme la certitude de jouer moins bien.
+  - question: "Puis-je garder mon rituel avant une partie ?"
     answer: >-
-      Non, mais pour une autre raison que celle qu'on croit. Un rituel stable ne rend pas meilleur par
-      magie. Il réduit le nombre de décisions à prendre avant la partie et stabilise l'état émotionnel
-      de départ. Ce bénéfice est réel et n'a rien de placebo : il relève de l'économie d'attention.
+      Tu peux conserver une routine simple si elle t’aide à t’organiser. Cela ne prouve pas qu’un objet
+      porte chance ; adapte la routine pour pouvoir jouer aussi lorsqu’un détail manque.
 ---
 
-Il y a le pull. Celui avec lequel tu as gagné ce tournoi il y a trois ans, et que tu remets à chaque ronde importante.
+Il y a le pull. Celui avec lequel tu as gagné un tournoi et que tu remets pour les rondes importantes. Il y a le café à heure fixe, l’ouverture qui te rassure, le geste que tu répètes avant de lancer la pendule.
 
-Il y a le café, exactement quarante minutes avant, jamais trente.
+Est-ce que croire que cela aide suffit à mieux jouer ? Les recherches disponibles ne permettent pas de répondre par un oui ou un non général. Elles invitent d’abord à préciser ce qui change : ton ressenti, ton comportement, un score à un test ou la qualité de tes décisions sur l’échiquier.
 
-Il y a l'ouverture « qui te réussit », dont tu sais parfaitement qu'elle est objectivement moins bonne que l'autre, mais qui te va mieux.
+## Aller mieux après ne signifie pas aller mieux grâce à
 
-Et peut-être, depuis quelque temps, il y a la gélule. Oméga-3, créatine, ou un mélange vendu comme améliorateur cognitif avec un nom en latin.
+Quand tu joues mieux après avoir adopté un rituel, plusieurs explications restent possibles. Tu as peut-être davantage étudié, rencontré une opposition différente ou retrouvé de meilleures conditions de sommeil. Une seule série de parties ne permet pas d’isoler la cause.
 
-La question de cet article est simple : est-ce que croire que ça marche suffit à ce que ça marche ? La réponse est intéressante, parce qu'elle est **oui pour les cyclistes et non pour toi**.
+La revue Cochrane de Hróbjartsson et Gøtzsche (2010) compare les interventions placebo à l’absence de traitement dans des contextes cliniques. Elle ne trouve pas d’effet clinique important en général, tout en relevant des résultats variables, notamment sur certains symptômes rapportés par les patients.
 
-## Le mythe fondateur, et sa démolition
+Ce constat n’établit pas que tous les critères objectifs seraient insensibles aux attentes. Il ne teste pas non plus le calcul de variantes ou le résultat de parties d’échecs. Le passage d’un contexte à l’autre exige une preuve supplémentaire.
 
-Commençons par l'histoire que tout le monde raconte, et qui est fausse.
+![Comparer les causes possibles d’un progrès : évolution spontanée, changement de pratique et effet de l’attente ; une observation isolée ne les départage pas.](/images/placebo-01-comparaisons.svg)
 
-En 1955, l'anesthésiste américain Henry Beecher publie dans le *JAMA* un article intitulé « The Powerful Placebo ». En compilant quinze essais cliniques portant sur 1 082 patients, il affirme que **35 %** d'entre eux ont été soulagés de façon satisfaisante par un traitement inerte. Le chiffre entre immédiatement dans la culture générale et n'en est jamais ressorti.
+## Les cyclistes : un résultat à lire avec son incertitude
 
-En 1997, deux chercheurs allemands, Gunver Kienle et Helmut Kiene, reprennent les quinze études citées par Beecher, une par une, dans le *Journal of Clinical Epidemiology*. Leur conclusion est sans détour : contrairement à ce qu'il affirmait, **aucune preuve d'effet placebo n'a été trouvée dans aucune des études qu'il cite**.
+Dans l’expérience de Beedie et collègues (2006), des cyclistes reçoivent un placebo alors que les informations données sur la caféine varient. La condition annonçant la dose la plus élevée est associée à une puissance moyenne supérieure de 3,1 % à la référence. L’intervalle rapporté va de −0,4 à 6,7 % : il inclut donc l’absence d’effet.
 
-Ce que Beecher avait mesuré, c'était autre chose. Principalement l'**amélioration spontanée**, facteur majeur dans dix de ses quinze essais : les gens guérissent souvent tout seuls, et si on leur a donné un comprimé entre-temps, le comprimé récolte le mérite. S'y ajoutent la régression vers la moyenne, la politesse des patients envers le médecin, et diverses erreurs de mesure.
+Ce résultat n’est pas une garantie d’amélioration chez tout sportif. Il ne permet pas non plus de déclarer que l’attente ne fonctionne que sur la douleur. Les propos de participants peuvent éclairer leur expérience, mais ne suffisent pas à démontrer un mécanisme unique.
 
-Le « pouvoir du placebo » reposait donc, à l'origine, sur une confusion entre « les gens vont mieux après » et « les gens vont mieux à cause de ».
+Pour les échecs, la conclusion reste modeste : cette étude ne dit pas combien de menaces tu verras, ni combien de points tu gagneras. Un pourcentage de puissance mécanique ne devient pas un pourcentage de performance cognitive.
 
-## Le grand tri de 2001
+## La cognition n’est pas un domaine fermé aux attentes
 
-La question est reprise sérieusement en 2001. Asbjørn Hróbjartsson et Peter Gøtzsche publient dans le *New England Journal of Medicine* une revue systématique avec une idée méthodologique décisive.
+Foroughi et collègues (2016) observent des différences à des tests après un entraînement cognitif bref, selon le mode de recrutement et les attentes suscitées. Les participants s’étant sélectionnés dans les groupes, le protocole demande lui aussi une lecture attentive.
 
-Le problème de toute la littérature antérieure était l'absence de bonne comparaison. On comparait placebo et traitement actif, jamais placebo et **rien du tout**. Sans ce troisième bras, impossible de distinguer l'effet du placebo de l'évolution naturelle.
+L’étude rappelle surtout qu’il faut contrôler les attentes avant d’attribuer un progrès à une méthode d’entraînement. Elle interdit de résumer la littérature par « le placebo ne change jamais une performance cognitive objective ». Elle ne prouve pas davantage qu’un porte-bonheur améliore les échecs.
 
-Hróbjartsson et Gøtzsche recensent donc les essais qui comportent les trois conditions. Ils en trouvent **130**, dont 32 à critère binaire portant sur 3 795 patients et 82 à critère continu portant sur 4 730 patients.
+Sur une partie, tu peux te sentir plus lucide et pourtant rater une menace. Tu peux aussi te sentir mal préparé et prendre de bonnes décisions. Si tu évalues une nouvelle routine, distingue ces observations au lieu de les réunir sous une impression générale.
 
-Le résultat a fait beaucoup de bruit, et il est nuancé :
+![Trois résultats distincts : ressenti de préparation, comportement pendant la partie et qualité des coups ; les mesurer séparément évite les conclusions hâtives.](/images/placebo-02-ressenti-resultat.svg)
 
-- **Aucun effet significatif sur les critères objectifs** : les mesures biologiques, les critères binaires, tout ce qui ne dépend pas du jugement du patient.
-- **De possibles petits effets sur les critères subjectifs continus**, en particulier la douleur.
+## Le placebo ouvert : une piste clinique, pas une recette de tournoi
 
-Autrement dit, le placebo agit là où c'est le patient qui rapporte, et pas là où c'est un appareil qui mesure.
+Kaptchuk et collègues (2010) étudient un placebo annoncé comme tel chez des personnes atteintes du syndrome de l’intestin irritable. Le groupe recevant ce placebo ouvert rapporte une amélioration supérieure au groupe sans traitement dans cet essai.
 
-Cette distinction est le cœur de tout ce qui suit.
+Ce résultat montre qu’une tromperie n’est pas toujours nécessaire pour observer un effet dans un protocole clinique. Il ne permet pas d’identifier à lui seul la part du rituel, des échanges avec les soignants ou des attentes. Il ne démontre pas qu’enfiler ton pull change la qualité de ton calcul.
 
-## Ce qui marche vraiment : le sport
+## Garder une routine sans lui donner un pouvoir magique
 
-Là où le placebo est réellement puissant, c'est dans le domaine de l'effort physique. Et il y a une bonne raison à cela.
+Tu peux choisir une organisation stable : préparer ton matériel, regarder le temps disponible, puis revenir à la position. C’est une proposition pratique, pas une méthode dont un effet Elo serait établi ici.
 
-En 2006, Christopher Beedie et ses collègues publient une expérience élégante. Des cyclistes entraînés effectuent des épreuves de contre-la-montre. On leur annonce qu'ils recevront, dans un ordre aléatoire, un placebo, une dose modérée de caféine ou une dose élevée. En réalité, **ils reçoivent un placebo dans tous les cas**.
+Rends cette routine assez souple pour ne pas dépendre d’un objet. Si le pull manque, le tournoi reste jouable. Une pensée comme « sans lui, je vais perdre » est une prédiction, pas un résultat acquis. Tu peux la confronter à tes parties plutôt que la traiter comme une règle.
 
-Résultat : la puissance moyenne développée augmente de **3,1 %** lorsqu'ils croient avoir pris de la caféine. Avec un effet dose-réponse : plus la dose annoncée est élevée, plus la puissance monte.
+Le même principe vaut pour les phrases « je perds toujours contre lui » ou « je suis nul en finales ». Vérifie ce que tes parties montrent réellement. Le lien avec les attentes est développé dans [la prophétie auto-réalisatrice aux échecs](/fr/blog/prophetie-auto-realisatrice-aux-echecs/).
 
-Les commentaires des participants indiquent le mécanisme. « La douleur a disparu. » « J'arrivais à me donner davantage avec moins de douleur. »
-
-Voilà l'explication. En endurance, la limite n'est pas la puissance maximale du muscle : c'est le moment où le cerveau décide que ça suffit. Cette décision repose sur une **perception**, celle de l'effort et de la douleur. Or une perception est modulable par l'attente. Le placebo ne rend pas le muscle plus fort, il déplace le seuil auquel on renonce.
-
-## Et aux échecs ? La mauvaise nouvelle
-
-Applique maintenant la même grille à ce que tu fais devant un échiquier.
-
-Où est ta barrière de douleur ? Il n'y en a pas. Où est ton seuil de renoncement à l'effort ? Il existe, à la marge, en fin de partie longue. Mais l'essentiel de ta performance ne dépend pas de ta tolérance à la souffrance. Elle dépend de la qualité de ton calcul, de ta reconnaissance de motifs, de ta capacité à ne pas rater une menace.
-
-Ce sont des **critères objectifs**. Exactement la catégorie où Hróbjartsson et Gøtzsche n'ont trouvé aucun effet.
-
-La littérature sur l'amélioration cognitive va dans le même sens, et de façon assez constante : les études peinent à démontrer une amélioration cognitive induite par la seule attente. Ce qui bouge le plus nettement, c'est la **perception subjective** de sa propre performance. Les mesures objectives, elles, ne suivent pas, ou seulement dans certains domaines très particuliers.
-
-Traduit à ton échelle : croire que ton pull porte chance te fera probablement **te sentir** mieux préparé, plus lucide, plus en confiance. Il n'y a pas de raison sérieuse de penser que ça te fera voir le coup que tu aurais raté.
-
-Et cette conclusion est cohérente avec ce qu'on sait par ailleurs de ce jeu. Les échecs sont l'un des rares domaines où la performance est mesurée avec une précision brutale, sans part de hasard ni d'interprétation. C'est ce qui en fait un si bon terrain d'observation, comme le montre notre article sur [l'effet Dunning-Kruger aux échecs](/fr/blog/effet-dunning-kruger-aux-echecs/). C'est aussi ce qui les rend imperméables aux effets d'attente.
-
-Il faut d'ailleurs distinguer ce dont on parle ici d'une autre question, traitée dans [les échecs rendent-ils plus intelligent](/fr/blog/les-echecs-rendent-ils-plus-intelligent/) : là-bas, l'effet d'attente concerne les **chercheurs et les enseignants** et fausse la mesure des bénéfices. Ici, il s'agit de toi, joueur, et de ta propre performance en partie.
-
-## Le nocebo, ou le vrai risque
-
-Voici maintenant le point le plus important de cet article, et le moins intuitif.
-
-Les travaux sur l'attente et la cognition font apparaître une **asymétrie**. Alors que l'attente positive produit peu d'amélioration objective mesurable, l'attente négative, elle, s'accompagne de performances dégradées de façon plus nette. Croire qu'on a reçu un placebo, dans certaines de ces expériences, était associé à de moins bons résultats cognitifs, quel que soit le produit réellement administré.
-
-C'est l'**effet nocebo**, le versant sombre. Et il a des conséquences très concrètes à l'échiquier.
-
-Ton porte-bonheur ne te fait probablement pas mieux jouer. Mais **oublier ton porte-bonheur pourrait te faire moins bien jouer**. Ce n'est pas une symétrie, c'est un piège : le rituel n'apporte rien, et son absence coûte quelque chose.
-
-De même pour ces convictions que tout joueur de club a formées à force de répétitions : « je suis nul en finales de tours », « je perds toujours contre lui », « je joue mal le matin ». Chacune est une attente négative, formulée avant même le premier coup. Elles fonctionnent probablement mieux que n'importe quel talisman, dans le mauvais sens. C'est le mécanisme décrit dans notre article à venir sur la prophétie auto-réalisatrice.
-
-## Ce qui marche quand même, et pourquoi
-
-Faut-il jeter le pull ? Non, et pour deux raisons qui n'ont rien de magique.
-
-### Le rituel réduit la charge, et ça se mesure
-
-Un protocole d'avant-partie stable produit un bénéfice réel qui n'est pas un effet placebo : il **supprime des décisions**.
-
-Quand tu arrives à une ronde, ton attention est une ressource limitée. Chaque micro-décision en consomme une part : où m'asseoir, quand manger, dois-je réviser ma ligne, ai-je le temps d'un café. Un rituel fixe répond à ces questions d'avance, et libère la ressource pour la partie.
-
-Ce n'est pas de la croyance, c'est de l'économie d'attention. Et ça, c'est bien documenté.
-
-### Le placebo ouvert, ou le rituel sans la croyance
-
-Le résultat le plus étrange du domaine, et il change la façon de penser la question.
-
-En 2010, Ted Kaptchuk et son équipe publient une expérience sur le syndrome de l'intestin irritable. Les patients reçoivent un placebo, mais on le leur dit. Explicitement. Les flacons portent la mention « placebo ». On leur explique qu'il s'agit de comprimés inertes, sans principe actif.
-
-Le groupe placebo ouvert présente une amélioration significativement supérieure au groupe sans traitement.
-
-Ce résultat démolit l'idée reçue selon laquelle le placebo exigerait la duperie. Il suggère que ce qui agit n'est pas seulement la croyance, mais **le rituel, le cadre et l'attention portée à soi**.
-
-Transposé : tu peux garder ton pull en sachant parfaitement qu'il n'a aucun pouvoir. Le geste de le mettre marque l'entrée dans un état de jeu. C'est une frontière, pas une amulette. Et une frontière fonctionne même quand on sait qu'on l'a tracée soi-même.
-
-## Quatre règles pratiques
-
-**Garde le rituel, abandonne la croyance.** Un protocole stable a une valeur d'organisation. Lui prêter un pouvoir causal transforme un outil en dépendance, et prépare le nocebo du jour où il manquera.
-
-**Rends tes rituels robustes.** Si ton rituel exige un objet précis, un lieu précis ou un horaire précis, tu as construit une fragilité. Un bon rituel doit survivre à un train en retard. Préfère des éléments toujours disponibles : une séquence respiratoire, un ordre de gestes, une phrase.
-
-**Traque tes nocebos, ils coûtent plus cher.** Fais la liste des phrases que tu prononces avant de jouer : « je déteste jouer contre ce type », « je suis nul dans cette structure ». Ce sont des attentes négatives explicites, et c'est le seul terrain où la croyance a une action bien documentée. Elles se corrigent par les faits : vérifie ton score réel contre cet adversaire, il est rarement celui que tu crois.
-
-**Méfie-toi des compléments vendus pour la cognition.** Sur des critères objectifs, la barre de preuve est haute et rarement franchie. Ton sommeil, lui, a un effet documenté sur la performance cognitive, et il est gratuit. Voir [échecs et sommeil](/fr/blog/echecs-et-sommeil/).
-
-## Ce qu'il faut retenir
-
-Le « pouvoir du placebo » né en 1955 reposait sur une confusion, démontée en 1997. La revue de 2001, qui a enfin comparé placebo et absence de traitement sur 130 essais, a tranché avec une distinction nette : effets réels sur les critères subjectifs, notamment la douleur ; rien de significatif sur les critères objectifs.
-
-Le sport est le domaine idéal du placebo, parce que la performance y passe par une perception de l'effort qu'on peut déplacer. C'est ainsi que des cyclistes gagnent 3,1 % de puissance en croyant avoir pris de la caféine.
-
-Les échecs sont l'inverse. Aucune barrière de douleur à repousser, une performance mesurée sur des critères entièrement objectifs, et une littérature qui ne trouve pas d'amélioration cognitive par la seule attente. Ce qui reste, c'est un effet sur ton **impression** de bien jouer.
-
-Le risque, en revanche, est réel et il est dans l'autre sens. L'attente négative, elle, semble bien mordre sur la performance. Ton porte-bonheur ne te fera pas gagner. Mais la phrase que tu te dis en t'asseyant peut te faire perdre.
-
-**Après lecture :** note les trois phrases que tu te dis le plus souvent avant une partie difficile. Si l'une d'elles est une prédiction négative sur toi-même, va vérifier dans ta base si elle est vraie. C'est le seul placebo qui compte vraiment, et il fonctionne à l'envers.
-
----
-
-*Cet article fait partie d'une série sur la psychologie appliquée aux échecs. Voir aussi [non, les échecs ne recâblent pas ton cerveau](/fr/blog/neuroplasticite-aux-echecs/) et [l'effet Dunning-Kruger aux échecs](/fr/blog/effet-dunning-kruger-aux-echecs/).*
+Les études citées ne démontrent pas que les attentes négatives auraient toujours plus de force que les positives aux échecs. Elles ne permettent pas non plus de promettre un bénéfice cognitif à un complément simplement parce qu’il est présenté comme tel. Pour juger une affirmation, demande quelle tâche a été mesurée, avec quel groupe de comparaison et quelle incertitude.
 
 ## Sources
 
-- Beecher, H. K. (1955). The powerful placebo. *Journal of the American Medical Association*, 159(17), 1602–1606.
-- Kienle, G. S., & Kiene, H. (1997). The powerful placebo effect : Fact or fiction? *Journal of Clinical Epidemiology*, 50(12), 1311–1318.
-- Hróbjartsson, A., & Gøtzsche, P. C. (2001). Is the placebo powerless? An analysis of clinical trials comparing placebo with no treatment. *New England Journal of Medicine*, 344(21), 1594–1602.
-- Hróbjartsson, A., & Gøtzsche, P. C. (2004). Is the placebo powerless? Update of a systematic review with 52 new randomized trials comparing placebo with no treatment. *Journal of Internal Medicine*, 256(2), 91–100.
-- Beedie, C. J., Stuart, E. M., Coleman, D. A., & Foad, A. J. (2006). Placebo effects of caffeine on cycling performance. *Medicine & Science in Sports & Exercise*, 38(12), 2159–2164.
-- Kaptchuk, T. J., et al. (2010). Placebos without deception : A randomized controlled trial in irritable bowel syndrome. *PLoS ONE*, 5(12), e15591.
+- Hróbjartsson, A., & Gøtzsche, P. C. (2010). *Placebo interventions for all clinical conditions*. Cochrane Database of Systematic Reviews, Wiley. [Revue intégrale](https://www.dcscience.net/Hrobjartsson-Gotzsche-Cochrane-placebo.pdf).
+- Beedie, C. J., Stuart, E. M., Coleman, D. A., & Foad, A. J. (2006). *Placebo Effects of Caffeine on Cycling Performance*. Medicine & Science in Sports & Exercise, 38(12), 2159–2164. [Article intégral](https://paulogentil.com/pdf/Placebo%20Effects%20of%20Caffeine%20on%20Cycling%20Performance.pdf).
+- Foroughi, C. K., Monfort, S. S., Paczynski, M., McKnight, P. E., & Greenwood, P. M. (2016). *Placebo effects in cognitive training*. PNAS, 113(27), 7470–7474. [Article](https://www.pnas.org/doi/10.1073/pnas.1601243113).
+- Kaptchuk, T. J., et al. (2010). *Placebos without Deception: A Randomized Controlled Trial in Irritable Bowel Syndrome*. PLOS ONE, 5(12), e15591. [Article](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015591).
