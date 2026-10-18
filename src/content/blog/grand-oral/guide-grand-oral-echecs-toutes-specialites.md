@@ -80,9 +80,9 @@ faq:
 
 ## Comprendre l'épreuve : Grand Oral, mode d'emploi
 
-Le **Grand Oral du bac** est l'**épreuve** la mieux notée du **bac** général, à **coefficient 10**. Sa durée totale est de **40 minutes** :
-- **20 minutes** de **préparation** où tu choisis entre **deux questions** issues de ton **programme**
-- **10 minutes** d'exposé debout, sans notes ou très peu
+Le **Grand Oral du bac** comprend 20 minutes de préparation et 20 minutes devant le jury. Consulte les règles officielles de ta session pour le coefficient applicable :
+- **20 minutes** de **préparation** après que le jury a choisi l’une de tes **deux questions**
+- **10 minutes** d’exposé, avec le support préparé pendant la préparation
 - **10 minutes** d'échange avec le **jury** sur ton **sujet**, ton plan, tes sources
 
 Beaucoup de guides en ligne décrivent encore un exposé de 5 minutes suivi d'une troisième partie de 5 minutes sur le projet d'**orientation**. C'était le format jusqu'à la session 2023. Depuis la session 2024, l'**épreuve** tient en deux temps de 10 minutes et la partie orientation a été supprimée en tant que telle : la question de ton projet est désormais posée pendant l'échange.
@@ -99,8 +99,8 @@ C'est l'**épreuve** la plus rentable du **bac** au ratio temps de **préparatio
 
 | Temps | Phase | Ce que tu fais |
 |---|---|---|
-| 20 min | Préparation | Tu choisis entre deux **questions**, tu prépares tes notes. Deux minutes maximum pour choisir. |
-| 10 min | Exposé debout | Sans notes, regard vers le **jury**, voix projetée. |
+| 20 min | Préparation | Le jury choisit une de tes deux questions ; tu prépares ton support. |
+| 10 min | Exposé debout | Support de préparation autorisé, regard vers le **jury**, voix audible. |
 | 10 min | Échange | Ton **sujet**, ton plan, tes sources, et ton projet post-bac. |
 
 ## Quelle problématique selon ta spécialité ?
@@ -189,7 +189,7 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 **Plan en 3 parties (10 min) :**
 
-**0:00–1:00, Intro :** le joueur d'échecs aveugle (jouer sans voir l'échiquier) comme cas-limite de la mémoire. 35-40 parties simultanées à l'aveugle pour les meilleurs.
+**0:00–1:00, Intro :** le joueur d'échecs aveugle (jouer sans voir l'échiquier) comme cas-limite de la mémoire. Le record de 48 parties de Gareyev est documenté par Guinness.
 
 **1:00–4:00, La mémoire de travail et les chunks :** l'expérience de Chase et Simon (1973) : les Grands Maîtres reconnaissent 50 000 à 100 000 patterns (chunks), pas des pièces isolées. La mémoire de travail traite des unités complexes, pas des données brutes. Lien au programme SVT : mémoire explicite (hippocampe) vs mémoire procédurale (cervelet, ganglions de la base).
 
@@ -237,80 +237,89 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 ---
 
-## 20 Questions de jury transversales, avec réponses rédigées
+## 20 questions de jury : exemples concrets et limites
 
-*Ces questions peuvent être posées quelle que soit la spécialité. Le jury cherche à savoir si tu maîtrises ton sujet au-delà du script préparé.*
+Ces pistes utilisent surtout un exemple NSI. Adapte les notions à ta spécialité et prépare tes propres réponses : elles ne constituent pas un témoignage personnel prêt à réciter.
 
-> **Mode d'emploi.** Les réponses ci-dessous sont des ossatures, pas des textes à réciter : le guide s'adresse à onze spécialités, aucune formulation ne peut convenir à toutes. Tout ce qui est **entre crochets** est à remplacer par ton contenu à toi. Un exemple entièrement rempli est donné en Q2 pour que tu voies à quoi doit ressembler le résultat. Si tu récites une phrase à trous sans l'avoir remplie, le jury l'entendra immédiatement.
+### 1. Pourquoi choisir les échecs ?
 
----
+En NSI, ils donnent un exemple concret de recherche dans un arbre. En SES, ils permettent de poser la question du marché des talents. Choisis l’angle qui correspond réellement à ta spécialité.
 
-**Q1. Pourquoi avoir choisi les échecs pour ton Grand Oral ?**
-> *"Les échecs permettent d'illustrer des notions de [ta spécialité] avec un objet concret, historiquement documenté et culturellement riche. Ils évitent les exemples trop scolaires : les données et les cas réels sont accessibles. Et personnellement, c'est un sujet que je peux défendre avec conviction, ce qui est essentiel pour un exposé oral."*
+### 2. Comment relier la problématique au programme ?
 
-**Q2. Ta problématique est-elle vraiment liée à ta spécialité ?**
+Exemple NSI : « Comment un programme choisit-il un coup sans explorer toutes les parties possibles ? » Le sujet mobilise récursivité, arbres et complexité ; l’échiquier fournit le cas concret.
 
-Ossature : *"[Ta problématique] mobilise directement [la notion centrale de ta spécialité]. Je pars des échecs comme terrain d'observation, mais la question finale revient à [la notion]. C'est la même démarche que d'utiliser un exemple concret pour illustrer un concept théorique : l'exemple n'est pas le sujet, il le révèle."*
+### 3. Que laisser de côté pour tenir dix minutes ?
 
-Le même, rempli, pour un candidat de spécialité SES :
+Pour cet exemple NSI, tu peux garder minimax et alpha-bêta, puis citer AlphaZero en ouverture. Expliquer aussi l’entraînement complet d’un réseau demanderait un autre exposé.
 
-> *"Ma question, « le marché des joueurs d'échecs illustre-t-il les mécanismes du marché des talents ? », mobilise directement la notion de marché du travail et de formation des salaires, au programme de terminale. Je pars des échecs comme terrain d'observation, mais la question finale revient à l'économie des superstars de Rosen et à la rente différentielle de Ricardo. C'est la même démarche que d'utiliser un exemple concret pour illustrer un concept théorique : l'exemple n'est pas le sujet, il le révèle."*
+### 4. Quelles limites reconnaître ?
 
-**Q3. Qu'est-ce que tu n'aurais pas eu le temps de développer dans les 10 minutes ?**
-> *"[Cite un point réel que tu as coupé]. J'aurais aimé développer [un aspect supplémentaire] : par exemple [exemple concret]. Mais pour respecter la durée et la cohérence de la progression, j'ai choisi de l'écarter. C'est un choix éditorial assumé."*
+Ton petit arbre ne reproduit pas toute la complexité d’un moteur. Une évaluation de position reste approximative si tu arrêtes le calcul avant les positions terminales.
 
-**Q4. Quelles sont les limites de ton exposé ?**
-> *"Deux limites principales. D'abord, j'ai utilisé les échecs comme terrain unique : on pourrait se demander si les conclusions sont généralisables à d'autres jeux ou domaines. Ensuite, les études que je cite sont parfois observationnelles, pas expérimentales : la causalité est difficile à établir. Un exposé plus développé prendrait le temps de nuancer ces points."*
+### 5. Quel exemple montrer ?
 
-**Q5. As-tu un exemple concret qui illustre ton argument principal ?**
-> *"Oui, [cite ton exemple central du script]. C'est un cas réel, documenté, qui illustre directement [la notion clé]. Je l'ai choisi parce qu'il est à la fois simple à expliquer en quelques phrases et suffisamment riche pour qu'on puisse y revenir depuis plusieurs angles."*
+Dessine une racine MAX avec deux enfants MIN : le premier a les feuilles 3 et 5, le second 2 et 9. Les valeurs remontées sont 3 et 2 ; MAX choisit donc 3.
 
-**Q6. Si ton argument est vrai, qu'est-ce que cela implique pour [un domaine adjacent] ?**
-> *"Si [l'argument central] est correct, alors [conséquence logique pour un domaine adjacent]. C'est une piste que je n'ai pas explorée dans l'exposé, mais qui me semble cohérente avec le raisonnement. On pourrait par exemple se demander si [exemple de généralisation]."*
+### 6. Peut-on généraliser à un autre jeu ?
 
-**Q7. Y a-t-il des contre-exemples à ton argument ?**
-> *"Oui, [cite un contre-exemple honnête]. Cela ne réfute pas l'argument mais le nuance : [explique comment le contre-exemple est compatible avec la thèse, ou où la thèse a ses limites]. Un bon argument prend ses limites en charge, il ne les ignore pas."*
+Le même raisonnement s’applique au morpion, jeu fini à deux joueurs et à information parfaite. Pour un jeu avec hasard ou information cachée, il faut adapter le modèle.
 
-**Q8. Comment ton sujet se rattache-t-il à l'actualité ?**
-> *"En [année], [événement actuel lié aux échecs ou à la notion centrale]. Cela illustre que la question que je pose n'est pas purement académique : elle a des résonances contemporaines dans [domaine]. Par exemple, [lien avec actualité]."*
+### 7. Quel contre-exemple met le raisonnement à l’épreuve ?
 
-**Q9. Qu'est-ce qui t'a surpris en préparant ce sujet ?**
-> *"Ce qui m'a le plus surpris, c'est [découverte authentique pendant la préparation]. Je m'attendais à [ce que tu pensais au début], et j'ai découvert que [ce que tu as appris]. Ça a changé ma perspective sur [la notion] : c'est d'ailleurs ce qui m'a poussé à [ajustement dans l'exposé]."*
+Au poker, une partie de l’information est cachée. L’arbre minimax déterministe présenté pour les échecs ne suffit pas à traiter ce problème tel quel.
 
-**Q10. Si tu refaisais cet exposé, qu'est-ce que tu changerais ?**
-> *"Je développerais davantage [un point spécifique] : j'ai senti que je l'avais traité trop rapidement. Et je commencerais par [l'accroche la plus forte], qui m'a semblé captiver davantage que l'introduction initiale. Mais dans l'ensemble, je maintiens la structure en trois parties : elle correspond à une progression logique."*
+### 8. Comment parler de l’actualité ?
 
-**Q11. Quelle est la différence entre un champion d'échecs et un expert dans ta spécialité ?**
-> *"Les deux formes d'expertise partagent [caractéristiques communes : pattern recognition, mémoire de long terme, délibération structurée]. Mais [une différence importante : l'expert en médecine/droit/etc. doit gérer des incertitudes différentes / l'expert en philosophie ne gagne pas au sens sportif, etc.]. Ce parallèle est utile pour penser ce qu'est l'expertise en général."*
+Choisis une publication datée que tu as lue et indique sa date. Un résultat historique comme AlphaZero en 2017 sert de repère ; ne le présente pas comme une annonce de l’année.
 
-**Q12. Y a-t-il des études scientifiques qui contredisent ta position ?**
-> *"La méta-analyse de [Sala et Gobet, 2016] sur le transfert cognitif des échecs montre que les bénéfices aux tests standardisés sont moins robustes que certaines études isolées le suggèrent. Ce n'est pas une contradiction directe de [ma thèse] : qui porte sur [angle précis], pas sur le transfert général. Mais cela m'impose d'être prudent sur les généralisations."*
+### 9. Comment décrire ce que tu as appris ?
 
-**Q13. Peut-on réduire [le concept central de ton exposé] à un algorithme ?**
-> *"C'est la question profonde. Pour [concept], la réduction algorithmique est [possible / impossible / partielle] parce que [raison précise]. AlphaZero joue aux échecs sans avoir de conscience, mais cela ne signifie pas que la conscience n'existe pas, seulement qu'elle n'est pas nécessaire à la performance. La réductibilité de la performance n'implique pas la réductibilité de l'expérience."*
+Réponds avec une observation réelle de ta préparation : une erreur de code corrigée, une hypothèse abandonnée ou un calcul refait. Ce bilan personnel ne peut pas être écrit à ta place.
 
-**Q14. Quels auteurs ou scientifiques as-tu lus pour préparer ce sujet ?**
-> *"[Cite les sources les plus accessibles que tu as vraiment lues / parcourues]. En [ta spécialité], j'ai consulté [auteur/texte de ton programme]. Pour les échecs, j'ai utilisé [sources : articles, ce blog, vidéos]. Je n'ai pas tout lu en entier : j'ai sélectionné les passages pertinents pour ma problématique, ce qui est une compétence en soi."*
+### 10. Comment réagir à une objection ?
 
-**Q15. Ton sujet est-il sérieux ? Les échecs ne sont-ils pas juste un jeu ?**
-> *"La frontière entre 'jeu' et 'objet sérieux d'étude' est moins nette qu'il n'y paraît. L'anthropologie (Huizinga, Homo Ludens, 1938) montre que le jeu est un fait culturel fondamental : il révèle les structures d'une société. Les économistes étudient le football, les politistes les Jeux Olympiques, les psychologues les jeux vidéo. Les échecs sont un jeu extraordinairement documenté : deux siècles de données, 200 pays, études publiées dans des revues de premier plan, par exemple celle de Verghese et al. dans le New England Journal of Medicine en 2003 sur les jeux de plateau et le risque de démence. C'est un terrain d'étude sérieux."*
+Reformule-la, précise ton hypothèse puis vérifie l’exemple. Si l’objection révèle une erreur, corrige-la. Tu peux distinguer ce que ton modèle démontre de ce qu’il laisse ouvert.
 
-**Q16. Quelle est la part de chance aux échecs ?**
-> *"Les échecs sont un jeu d'information parfaite et sans hasard au sens strict : pas de dé, pas de tirage. Mais il y a de l'incertitude : on ne connaît pas les intentions de l'adversaire, on ne peut pas calculer toutes les variantes. Cette incertitude n'est pas du hasard : c'est de la complexité. La différence est importante : le hasard est irréductible, la complexité est partiellement maîtrisable par l'expertise."*
+### 11. Quel lien avec l’expertise humaine ?
 
-**Q17. Les femmes jouent-elles aussi bien que les hommes aux échecs ?**
-> *"La biologie ne prédit pas de différence de capacité cognitive pertinente pour les échecs. Les différences observées dans les classements mondiaux (très peu de femmes dans le top 100) s'expliquent mieux par des facteurs sociaux : moindre pratique dès l'enfance, stéréotypes de menace (l'étude de Maass, D'Ettole et Cadinu (2008) montre que jouer contre un homme réduit les performances des joueuses), et structure des tournois. Judit Polgár, la meilleure joueuse de l'histoire, a battu onze champions du monde, en titre ou anciens. Elle a refusé de participer aux tournois féminins séparés."*
+Tu peux comparer la sélection de variantes, mais un réseau de neurones performant ne démontre pas qu’il fonctionne comme le cerveau d’un grand maître. Présente cette comparaison comme une analogie.
 
-**Q18. Que disent les échecs sur la créativité humaine ?**
-> *"Les échecs permettent de distinguer deux formes de créativité. La créativité combinatoire : trouver une séquence de coups non évidente dans un arbre de calcul. C'est une forme de créativité que les ordinateurs maîtrisent mieux que les humains. La créativité conceptuelle : inventer un nouveau plan stratégique, changer le paradigme d'une ouverture, proposer une idée nouvelle à la communauté. Cette forme-là est plus difficile à réduire à un algorithme, AlphaZero l'a partiellement accomplie en 'réinventant' des stratégies que les humains n'avaient pas explorées."*
+### 12. Les échecs rendent-ils meilleur dans toutes les matières ?
 
-**Q19. Si les échecs ont tant de bénéfices cognitifs, pourquoi ne sont-ils pas enseignés dans toutes les écoles ?**
-> *"Plusieurs raisons. D'abord, les preuves scientifiques du transfert cognitif sont plus mitigées que les partisans l'affirment : les bénéfices sont réels aux échecs eux-mêmes, moins certains dans d'autres domaines. Ensuite, l'opposition d'opportunité : chaque heure d'échecs est une heure de moins pour une autre discipline. Enfin, des raisons culturelles et institutionnelles : les programmeurs scolaires n'ont pas encore intégré les jeux comme supports pédagogiques. Des expériences pilotes en Arménie, en Belgique et en Italie montrent que c'est possible : la question est de savoir si c'est suffisamment prioritaire."*
+La synthèse de Sala et Gobet (2017) invite à la prudence sur le transfert lointain. Progresser aux échecs ne démontre pas automatiquement un gain général en mathématiques.
 
-**Q20. Qu'est-ce que tu as appris sur toi-même en préparant ce sujet ?**
-> *"[Réponse authentique et personnelle]. J'ai découvert que [quelque chose de vrai sur ta préparation]. Et cette préparation m'a aussi fait réaliser que [lien avec le fond du sujet]. Le Grand Oral est autant une exploration de soi qu'une démonstration de connaissances : c'est peut-être là sa vraie valeur."*
+### 13. Peut-on tout réduire à un algorithme ?
 
----
+Tu peux formaliser les règles et la recherche d’un coup sans prétendre avoir expliqué l’expérience vécue du joueur. Une performance mesurée n’établit pas une théorie de la conscience.
+
+### 14. Quelles sources présenter ?
+
+Pour l’exemple NSI : Shannon pour la recherche échiquéenne, le manuel de Russell et Norvig pour minimax et alpha-bêta, Silver et collègues pour AlphaZero. Ne dis avoir lu que les passages que tu as effectivement consultés.
+
+### 15. Un jeu peut-il constituer un sujet sérieux ?
+
+Oui, si la question est disciplinaire et la méthode rigoureuse. L’étude de Verghese et collègues (2003) porte par exemple sur loisirs et risque de démence ; c’est une étude observationnelle, pas la preuve que les échecs préviennent une maladie.
+
+### 16. Quelle place donner au hasard ?
+
+Les règles des échecs ne comportent pas de tirage aléatoire. L’incertitude du joueur vient de ce qu’il ne connaît pas toutes les conséquences de ses choix. Ne confonds pas cette incertitude avec un mécanisme de hasard dans les règles.
+
+### 17. Comment discuter la place des femmes ?
+
+L’expérience de Maass, D’Ettole et Cadinu (2008) étudie l’activation de stéréotypes dans un protocole précis. Elle ne démontre pas que toute joueuse joue moins bien contre tout homme. Le dossier officiel de Judit Polgár documente ses victoires contre onze champions du monde en titre ou anciens.
+
+### 18. AlphaZero a-t-il résolu les échecs ?
+
+Non. Le préprint de Silver et collègues rapporte une performance contre des moteurs dans des conditions expérimentales. Une série de victoires ne fournit pas une stratégie parfaite démontrée pour toutes les positions.
+
+### 19. Faut-il enseigner les échecs partout ?
+
+C’est une question de politique éducative. Il faut comparer leurs objectifs, leurs effets et leur coût à ceux d’autres activités. L’intérêt du jeu ne suffit pas à démontrer un transfert scolaire général.
+
+### 20. Comment conclure personnellement ?
+
+Reviens à ta problématique et à ce que tu peux défendre avec tes sources. Pour le bilan de préparation, décris une difficulté que tu as réellement rencontrée et la manière dont tu l’as traitée.
 
 ## Les 5 erreurs à éviter absolument
 
@@ -320,7 +329,7 @@ Le même, rempli, pour un candidat de spécialité SES :
 Le jury n'a pas besoin de savoir comment se déplace le fou. Si tu passes 2 minutes à expliquer les règles, tu perds 2 minutes de contenu disciplinaire. Mentionne le jeu comme connu, va directement au concept.
 
 **Erreur 2, Réciter sans conviction.**
-Le jury a entendu 40 exposés dans la journée. La récitation mécanique se repère immédiatement. Parle, ne lis pas. Regarde le jury, pas tes notes. L'authenticité prime sur la perfection.
+La récitation mécanique se repère immédiatement. Parle, ne lis pas. Regarde le jury, pas tes notes. L'authenticité prime sur la perfection.
 
 **Erreur 3, Pas de vraie problématique.**
 "Les échecs et la psychologie" n'est pas une problématique. "En quoi les échecs révèlent-ils les mécanismes de la mémoire de travail ?" en est une. La problématique pose une question à laquelle tu répondras : pas un thème que tu illustreras.
@@ -427,7 +436,16 @@ Trois techniques rapides :
 
 ## Sources et références
 
-- **Bulletin officiel - Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
+- Ministère de l’Éducation nationale (2026). *Baccalauréat : comment se passe le Grand oral ?* [Présentation officielle](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).
+- Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*, Pearson. [Chapitre sur la recherche adversariale](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf) : exemple minimax et hypothèses du modèle.
+- Sala, G., & Gobet, F. (2017). *Does Far Transfer Exist?* Current Directions in Psychological Science. [Article](https://journals.sagepub.com/doi/10.1177/0963721417712760).
+- Maass, A., D’Ettole, C., & Cadinu, M. (2008). *Checkmate? The role of gender stereotypes in the ultimate intellectual sport*. European Journal of Social Psychology, 38, 231–245. [Texte intégral](https://mdmcalister.pbworks.com/f/Checkmate%2B-%2BThe%2Brole%2Bof%2Bgender%2Bstereotypes%2Bin%2Bthe%2Bultimate%2Bintellectual%2Bsport.pdf).
+- Verghese, J., et al. (2003). *Leisure Activities and the Risk of Dementia in the Elderly*. New England Journal of Medicine, 348, 2508–2516. [Article intégral](https://www.activeminds.com/docs/NEJM%20030619.pdf).
+- Polgár, J. (2026). *Press Kit*. [Biographie officielle](https://juditpolgar.com/wp-content/uploads/2026/01/Judit-Polgar-PressKit4.pdf).
+- Guinness World Records (2016). *Most simultaneous blindfolded chess games*. [Fiche Gareyev](https://www.guinnessworldrecords.de/world-records/72345-most-simultaneous-blindfolded-chess-wins).
+
+
+
 - **Shannon, C. E. (1950).** *Programming a Computer for Playing Chess.* *Philosophical Magazine*. (Nombre de parties d'échecs possibles.)
 - **Bourdieu, P. (1979).** *La Distinction : critique sociale du jugement.* Éditions de Minuit. (Capital culturel, distinction, reproduction sociale.)
 - **Nye, J. (1990).** *Bound to Lead : The Changing Nature of American Power.* Basic Books. (Théorie du *soft power*.)
