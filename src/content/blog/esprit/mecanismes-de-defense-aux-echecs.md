@@ -1,5 +1,5 @@
 ---
-title: "Les mécanismes de défense aux échecs : l'inventaire complet"
+title: "Mécanismes de défense aux échecs : l'inventaire par niveau"
 excerpt: >-
   Cinq joueurs perdent la même partie. Le premier casse une pièce, le deuxième accuse la pendule, le
   troisième explique longuement la théorie, le quatrième en rit, le cinquième note ce qu'il a raté.
@@ -149,7 +149,7 @@ Attribuer à l'autre ce qu'on ne peut pas reconnaître chez soi.
 
 Aux échecs, elle a une forme spécifique et très coûteuse au calcul : prêter à l'adversaire ses propres intentions. Tu vois une idée, elle te plaît, tu supposes qu'il l'a vue aussi et qu'il joue en fonction. Ou l'inverse : tu ne vois pas de menace, donc tu supposes qu'il n'en prépare pas.
 
-Sa forme sociale est plus classique : le joueur convaincu que l'adversaire triche, méprise, se moque. Un article dédié suivra dans cette série.
+Sa forme sociale est plus classique : le joueur convaincu que l'adversaire triche, méprise, se moque. Pour approfondir ce point, lis [la projection aux échecs](/fr/blog/projection-aux-echecs/).
 
 ### L'agression passive
 
