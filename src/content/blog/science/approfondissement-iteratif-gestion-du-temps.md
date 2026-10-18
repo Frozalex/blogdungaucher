@@ -24,8 +24,8 @@ seoDescription: >-
   Pourquoi un moteur d'échecs cherche à profondeur 1, puis 2, puis 3, au lieu d'aller directement à la
   profondeur finale. Implémentation en Python, gestion du budget de temps et mesures.
 keyTakeaways:
-  - "Une recherche interrompue en cours de route ne renvoie rien d'exploitable : les coups non examinés pourraient être meilleurs."
-  - L'approfondissement itératif rend la recherche interruptible à tout instant, puisqu'une profondeur terminée est toujours disponible.
+  - "Une recherche partielle peut informer, mais ne compare pas nécessairement tous les coups à la même profondeur. On garde ici le dernier résultat complet."
+  - L'approfondissement itératif rend la recherche interruptible à tout instant, une fois qu'une première profondeur a été terminée.
   - "Le travail répété n'est pas gratuit : mesuré à faible profondeur, l'itératif coûte 25 % de plus que la recherche directe."
   - "Ce surcoût s'achète pour une raison qui n'a rien à voir avec la vitesse : sans lui, le moteur ne sait pas s'arrêter à l'heure."
   - Une itération interrompue doit être jetée en entier, y compris son meilleur coup partiel.
@@ -34,8 +34,7 @@ faq:
     answer: >-
       Chercher d'abord à profondeur 1, puis recommencer à profondeur 2, puis à 3, et ainsi de suite
       jusqu'à épuisement du temps disponible. On conserve le résultat de la dernière profondeur
-      entièrement terminée. C'est la façon standard dont tous les moteurs d'échecs gèrent leur temps de
-      réflexion.
+      entièrement terminée. C'est une méthode courante des moteurs à recherche en profondeur ; toutes les architectures ne fonctionnent pas ainsi.
   - question: "N'est-ce pas du gaspillage de tout recommencer ?"
     answer: >-
       C'est un coût réel, contrairement à ce qu'on lit souvent. Mesuré sur notre moteur à profondeur 4,
@@ -51,9 +50,8 @@ faq:
       partielle n'a aucune garantie.
   - question: "Combien de temps un moteur doit-il consacrer à un coup ?"
     answer: >-
-      La règle prudente la plus répandue est <strong>le temps restant divisé par trente</strong>, plus
-      une bonne part de l'incrément. Elle suppose qu'il reste une trentaine de coups à jouer, ce qui est
-      pessimiste en fin de partie et donc sans danger. Perdre au temps coûte la partie entière ; réfléchir
+      La règle choisie dans ce tutoriel est <strong>le temps restant divisé par trente</strong>, plus
+      une bonne part de l'incrément. C'est une heuristique ; elle ne garantit pas de respecter la pendule, surtout si le contrôle du temps est peu fréquent. Perdre au temps coûte la partie entière ; réfléchir
       un peu moins ne coûte que quelques points Elo.
   - question: "Comment interrompre proprement une recherche récursive en Python ?"
     answer: >-
@@ -73,9 +71,9 @@ La solution évidente serait de lancer une recherche profonde et de l'interrompr
 
 Elle ne marche pas, et il vaut la peine de comprendre pourquoi, parce que c'est ce qui justifie tout le reste de l'article.
 
-Une recherche examine les coups les uns après les autres. Si le temps tombe alors qu'elle en a examiné douze sur trente-cinq, elle connaît le meilleur de ces douze. Ce coup n'est pas le meilleur des trente-cinq. Il n'est même pas garanti correct : les vingt-trois coups non examinés pourraient tous être meilleurs, et le douzième pourrait être celui qui perd une pièce, simplement moins mauvais que les onze premiers.
+Une recherche examine les coups les uns après les autres. Si le temps tombe alors qu'elle en a examiné douze sur trente-cinq, elle connaît le meilleur de ces douze. Ce coup n'est pas le meilleur des trente-cinq. Il n'est même pas garanti correct : certains coups non examinés pourraient être meilleurs, et le douzième pourrait être celui qui perd une pièce, simplement moins mauvais que les onze premiers.
 
-**Une recherche partielle n'a aucune garantie.** Ce n'est pas une approximation, c'est un résultat sans valeur.
+**Une recherche partielle n'a aucune garantie.** Ce n'est pas une approximation, il ne possède pas la même garantie de comparaison entre tous les coups à cette profondeur.
 
 ## La solution qui a l'air absurde
 
@@ -94,7 +92,7 @@ for profondeur in range(1, profondeur_max + 1):
     contexte.coup_principal = coup
 ```
 
-Le bénéfice est immédiat : **à tout instant, on dispose d'un coup complet**, issu de la dernière profondeur entièrement terminée. Le temps peut tomber n'importe quand, on a toujours quelque chose de bon à jouer.
+Le bénéfice est immédiat : **à tout instant, on dispose d'un coup complet**, issu de la dernière profondeur entièrement terminée. Le temps peut tomber n'importe quand, on conserve un coup évalué selon la dernière itération complète, sans garantie de gain.
 
 Reste à savoir ce que coûte le travail répété. L'argument habituel est qu'il est négligeable : comme le nombre de positions est multiplié par le facteur de branchement à chaque profondeur, la somme de toutes les itérations précédentes est dominée par la dernière. Avec un facteur de branchement effectif de 5 après élagage, les profondeurs 1 à 5 réunies coûtent environ un quart de la profondeur 6.
 
@@ -224,7 +222,7 @@ La conclusion pratique n'est pas « notre moteur est précis », c'est **« la p
 
 Voilà qui mérite d'être dit clairement, parce que ce n'est pas ce qu'on lit d'habitude : **chez nous, l'approfondissement itératif est plus cher que la recherche directe.** De 25 % à profondeur 4, de 5 % à profondeur 5.
 
-Le renseignement du meilleur coup précédent n'annule donc pas le travail répété, il le réduit. Mais la tendance est sans ambiguïté : le surcoût est divisé par cinq quand on gagne une seule profondeur. Il est raisonnable de penser qu'il s'annule un ou deux demi-coups plus loin, et qu'il devient négatif ensuite, aux profondeurs où travaillent les vrais moteurs. Nous n'avons pas pu le vérifier : la profondeur 6 sur vingt positions dépasse l'heure en Python, et une affirmation non mesurée n'a pas sa place ici.
+Le renseignement du meilleur coup précédent n'annule donc pas le travail répété, il le réduit. Mais la tendance est sans ambiguïté : le surcoût est divisé par cinq quand on gagne une seule profondeur. Ces deux profondeurs ne suffisent pas à prédire si le surcoût s'annulera ensuite. Nous n'avons pas pu le vérifier : la profondeur 6 sur vingt positions dépasse l'heure en Python, et une affirmation non mesurée n'a pas sa place ici.
 
 Ce qu'on peut affirmer, c'est que la question du coût est **secondaire**. On ne prend pas l'approfondissement itératif pour aller plus vite. On le prend parce que sans lui, le moteur ne sait pas s'arrêter, et qu'un moteur qui ne sait pas s'arrêter perd toutes ses parties à la pendule quel que soit son niveau de jeu. Cinq pour cent de nœuds en plus est un prix dérisoire pour cela.
 
@@ -234,6 +232,14 @@ Notre moteur sait maintenant tenir une pendule. Il lui reste un défaut qui faus
 
 À profondeur 4, le moteur examine « je prends sa dame avec mon cavalier », arrive au bout de sa vision, compte +900 et se réjouit. Le cinquième demi-coup, celui qu'il ne cherche pas, est « il reprend mon cavalier ». Le score est faux, et il est faux dans le sens le plus dangereux : il rend le coup attirant.
 
-C'est l'effet d'horizon, et il ne se corrige ni en cherchant plus profond, ni en évaluant mieux. Il se corrige en refusant d'évaluer les positions où ça tape encore.
+C'est l'effet d'horizon, et chercher plus profond peut résoudre certains cas mais en laisser d'autres à l'horizon. La quiescence est une technique pour réduire ce problème, sans le supprimer entièrement.
 
 **Prochain article :** la recherche de quiescence, et les tables de cases. Le moteur cesse de croire aux cadeaux.
+
+## Sources
+
+Russell et Norvig exposent la recherche itérative ; Stockfish fournit une implémentation réelle avec limites de temps, réutilisation des résultats et garde-fous.
+
+- Russell, S. et Norvig, P. (s. d.), Adversarial Search, chapitre des auteurs, [texte](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
+
+- Équipe Stockfish (s. d.), search.cpp, code officiel, [texte](https://raw.githubusercontent.com/official-stockfish/Stockfish/master/src/search.cpp).
