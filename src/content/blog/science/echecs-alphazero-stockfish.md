@@ -28,9 +28,7 @@ keyTakeaways:
     AlphaZero a remporté 28 victoires, fait 72 nulles et perdu 0 partie contre Stockfish 8. Ce résultat a suscité des
     critiques légitimes sur les conditions du match.
   - >-
-    Le style de jeu d'AlphaZero est radicalement différent de Stockfish : dynamique, sacrificiel, avec une disposition à
-    maintenir des positions 'intuitivement gagnantes' que les moteurs classiques évalueraient comme neutres ou
-    légèrement inférieures.
+    Les parties publiées permettent d'étudier les sacrifices et l'activité des pièces, sans mesurer une intuition ou une confiance humaine du programme.
   - >-
     Dans le match de 2017, AlphaZero explorait 80 000 positions par seconde contre 70 millions pour Stockfish, soit un
     rapport de près de 1 à 1 000 : le réseau de neurones compense en concentrant la recherche sur les variantes
@@ -57,8 +55,7 @@ faq:
       actuel de tous les moteurs. Stockfish a ensuite intégré NNUE ; Lc0 est une implémentation publique inspirée d’AlphaZero.
   - question: Pourquoi les conditions du match AlphaZero-Stockfish sont-elles contestées ?
     answer: >-
-      Pour quatre raisons. Stockfish tournait sans base de finales ni bibliothèque d'ouvertures, deux ressources qu'il
-      utilise normalement. Son espace de hachage était plafonné à 1 Go, très peu pour 64 threads. La cadence était d'une
+      Pour plusieurs différences de protocole. Stockfish tournait sans base de finales ni bibliothèque d'ouvertures ; leur usage dépend de la configuration du moteur. Son espace de hachage était plafonné à 1 Go, très peu pour 64 threads. La cadence était d'une
       minute fixe par coup, ce qui annulait sa gestion du temps. Et le matériel d'AlphaZero (TPU Google) n'était pas
       comparable à celui de Stockfish. Les résultats publiés dans Science en décembre 2018, avec 3 heures par partie
       plus 15 secondes par coup et 44 cœurs, confirment la supériorité d'AlphaZero mais avec un écart beaucoup plus
@@ -96,7 +93,7 @@ AlphaZero est un système de **deep reinforcement learning** (apprentissage par 
 
 **La recherche arborescente Monte Carlo (MCTS)** qui utilise le réseau de neurones pour guider la recherche. Plutôt que d'explorer l'arbre de jeu de façon exhaustive avec élagage alpha-bêta, MCTS sélectionne des chemins jusqu’aux feuilles de l’arbre exploré ; le réseau y fournit une évaluation qui remonte vers la racine. Ces simulations ne sont pas toutes jouées jusqu’au mat.
 
-Ce qui est remarquable : AlphaZero n'avait reçu que **les règles du jeu**. Aucune partie humaine. Aucune heuristique de position. Aucune base de finales. Aucune connaissance sur ce qu'est une "bonne" position : seulement la règle que le mat est la victoire.
+Ce qui est remarquable : AlphaZero n'avait reçu que **les règles du jeu**. Aucune partie humaine. Aucune heuristique de position. Aucune base de finales. Aucune connaissance sur ce qu'est une "bonne" position : avec une représentation, une architecture et une procédure d'entraînement conçues par les chercheurs.
 
 Il a joué 44 millions de parties contre lui-même en neuf heures environ, ajustant ses poids de réseau au fil de l'entraînement. Le "en neuf heures" mérite une précision, parce qu'il est souvent cité comme s'il s'agissait d'un exploit frugal : pendant ces neuf heures, 5 000 TPU de première génération tournaient pour générer les parties et 16 TPU de deuxième génération pour entraîner le réseau dans le protocole de 2018 (64 dans le préprint de 2017). Ce n'est pas un ordinateur dans un garage. À la fin, il avait développé une compréhension du jeu d'une façon que personne n'avait programmée.
 
@@ -106,7 +103,7 @@ Il a joué 44 millions de parties contre lui-même en neuf heures environ, ajust
 
 Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8 (la meilleure version à l'époque). Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite. Dans le détail : avec les Blancs, 25 victoires et 25 nulles ; avec les Noirs, 3 victoires et 47 nulles.
 
-Un mot sur la cadence, parce que c'est l'erreur la plus répandue à propos de ce match, : **ce n'était pas une cadence classique**. Chaque programme disposait d'une minute de réflexion fixe par coup. Ça change la lecture du résultat, puisque Stockfish n'avait aucune latitude pour gérer son temps, répartir l'effort sur les coups critiques, ou réfléchir pendant le temps de l'adversaire. Sa fonction de gestion du temps, qui fait partie de sa force réelle, était tout simplement hors jeu.
+Un mot sur la cadence, parce que c'est l'erreur la plus répandue à propos de ce match : **ce n'était pas une cadence classique**. Chaque programme disposait d'une minute de réflexion fixe par coup. Ça change la lecture du résultat, puisque Stockfish n'avait aucune latitude pour gérer son temps, répartir l'effort sur les coups critiques, ou réfléchir pendant le temps de l'adversaire. Sa fonction de gestion du temps, qui fait partie de sa force réelle, était tout simplement hors jeu.
 
 Ce score est stupéfiant par plusieurs aspects. Un programme qui bat Stockfish *sans jamais perdre* est extraordinaire, Stockfish 8 était lui-même bien supérieur à n'importe quel humain. Et les victoires n'étaient pas des victoires techniques dans des finales compliquées : elles se construisaient sur des thèmes positionnels clairs.
 
@@ -124,17 +121,11 @@ Les chiffres de vitesse changent aussi d'un papier à l'autre, et il vaut la pei
 
 ![Les deux expériences de 2017 et 2018 ont des cadences distinctes.](/images/alphazero-02-protocoles.svg)
 
-## Le style de jeu : ce qui a fasciné les Grands Maîtres
+## Examiner les parties publiées
 
-Le score impressionnait. Le style stupéfiait.
+Les parties fournies avec les publications permettent d'étudier des sacrifices, l'activité des pièces et la pression sur le roi. Pour comprendre un choix, regarde la position et les défenses disponibles plutôt que d'attribuer au programme une confiance ou une intuition humaine.
 
-Les Grands Maîtres qui ont commenté ces parties utilisaient des termes inhabituels dans le contexte de l'analyse de moteurs : "créatif", "humain", "romantique", "vivant". Tu peux examiner les parties publiées pour discuter ces qualificatifs, qui ne remplacent pas l’analyse des variantes.
-
-**Les sacrifices positionnels**. AlphaZero était remarquablement disposé à sacrifier du matériel (typiquement un pion, parfois plus) pour obtenir une compensation dynamique. Stockfish, avec son évaluation matérielle précise, aurait souvent refusé ces sacrifices ou les aurait évalués comme négatifs. AlphaZero les jouait et maintenait la compensation pendant de nombreux coups, jusqu'à ce que le matériel se transforme en avantage de position.
-
-**La confiance dans les positions "intuitivement gagnantes"**. Des positions où l'évaluation numérique de Stockfish était ~+0,2 (légèrement favorable aux Blancs, presque nulle) mais où AlphaZero maintenait une pression continue, obligeant les Noirs à défendre des positions inconfortables coup après coup, jusqu'à l'erreur.
-
-**Le style "roi actif" dans les finales**. AlphaZero utilisait son roi de façon offensive plus tôt que les moteurs classiques : une pratique connue dans les finales (le roi est une pièce forte dans les finales) mais souvent différée par les moteurs qui évaluent le roi sûr comme une priorité absolue.
+Une évaluation proche de zéro ne prouve pas qu'un moteur ignore toute initiative : elle dépend de sa version, de sa profondeur et des ressources disponibles. Un exemple isolé ne mesure pas un style universel.
 
 ## Ce qu'AlphaZero a (re)découvert en théorie des ouvertures
 
@@ -146,11 +137,11 @@ Ce qui est réellement documenté est plus intéressant que l'anecdote :
 
 **AlphaZero a redécouvert les ouvertures humaines tout seul.** Les courbes du papier de *Science* montrent la fréquence de chaque ouverture dans ses parties d'auto-apprentissage au fil des heures d'entraînement. Sans avoir jamais vu une partie humaine, il a convergé vers des ouvertures que des générations de joueurs avaient trouvées, puis a progressivement resserré son répertoire. Certaines ouvertures populaires chez les humains, il les a essayées et abandonnées.
 
-**Il gagne depuis n'importe quelle ouverture.** C'est le test le plus parlant du papier de 2018 : pour vérifier que la force d'AlphaZero ne venait pas d'une spécialisation étroite, les auteurs lui ont imposé les 12 ouvertures humaines les plus jouées, des deux couleurs. Il a battu Stockfish depuis toutes.
+**Un test sur douze ouvertures imposées.** C'est le test le plus parlant du papier de 2018 : pour vérifier que la force d'AlphaZero ne venait pas d'une spécialisation étroite, les auteurs lui ont imposé les 12 ouvertures humaines les plus jouées, des deux couleurs. Il a battu Stockfish depuis toutes.
 
 **Les sacrifices positionnels et l'activité des pièces.** C'est là que l'influence sur la pratique humaine est la plus visible, dans les parties publiées : la disposition à rendre du matériel pour une pression durable, et l'usage des pions de l'aile du roi comme arme d'espace plutôt que comme bouclier.
 
-Certains Grands Maîtres utilisent Leela Chess Zero, l'équivalent open-source d'AlphaZero, précisément pour faire remonter des idées que Stockfish classe trop vite.
+Lc0 est un projet libre inspiré d'AlphaZero ; cette filiation ne garantit pas une supériorité pédagogique sur Stockfish.
 
 ## La convergence : Stockfish NNUE et la fin de la dichotomie
 
@@ -162,21 +153,11 @@ L'amélioration a été immédiate. Les tests de l'équipe créditaient le seul 
 
 La dichotomie "Stockfish (force brute) vs AlphaZero (deep learning)" est devenue obsolète. L’évaluation neuronale et la recherche alpha-bêta peuvent donc être combinées. Comparer deux moteurs exige de préciser leur version, le matériel et la cadence.
 
-## Implications pour la compréhension humaine des échecs
+## Ce que tu peux en tirer pour ton analyse
 
-La question la plus profonde soulevée par AlphaZero n'est pas "quel programme est le meilleur ?" : c'est "que nous apprend un programme qui joue comme ça sur la nature de la compréhension aux échecs ?"
+Une partie de moteur peut te donner une idée à vérifier : activité contre matériel, espace ou sécurité du roi. Il faut ensuite comprendre les variantes. Un sacrifice réussi dans le protocole publié n'est pas une autorisation générale de sacrifier dans une position qui lui ressemble.
 
-AlphaZero suggère qu'il existe une forme de compréhension positionnelle qui n'est pas réductible à l'évaluation matérielle précise + recherche profonde. Des positions que Stockfish évalue comme ~0 (nulle) contiennent des "gradients" subtils de pression et d'opportunité qu'AlphaZero détecte et exploite.
-
-Ces gradients : difficiles à quantifier numériquement, mais reconnaissables intuitivement par un Grand Maître expérimenté : ressemblent à ce que les joueurs humains appellent "l'initiative", "la dynamique", "les pièces actives". AlphaZero a développé une forme de mesure de ces qualités que les heuristiques classiques n'avaient pas.
-
-Pour les joueurs humains, l'enseignement est contre-intuitif : parfois, la position "objectivement" légèrement inférieure mais dynamiquement riche est meilleure que la position "objectivement" équivalente mais statique. Les évaluations numériques de moteurs, utiles mais imparfaites, ne capturent pas toujours cette dynamique.
-
-C'est peut-être la contribution la plus durable d'AlphaZero aux échecs : rappeler que la mesure du bon coup n'est pas seulement numérique. La beauté, la pression, le sacrifice, l'initiative (des concepts que les joueurs humains ont toujours utilisés) ont une réalité informatique, pas seulement poétique.
-
----
-
-*AlphaZero n'a jamais joué une partie contre un humain. Ses adversaires étaient des moteurs et ses propres copies antérieures. Il n'a jamais ressenti la pression d'un tournoi, l'inconfort d'une position perdante, la joie d'une belle combinaison trouvée. Et pourtant, les Grands Maîtres ont dit de son jeu qu'il était le plus 'humain' qu'ils aient jamais analysé. Il y a quelque chose dans cette ironie qui mérite réflexion.*
+Comparer plusieurs versions et conditions aide aussi à lire les évaluations avec prudence. La force d'un programme en match et l'explication d'un coup pour un joueur humain sont deux questions différentes.
 
 ## Sources
 

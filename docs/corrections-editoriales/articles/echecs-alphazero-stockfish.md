@@ -9,3 +9,10 @@ Corrigé : matériel d’entraînement 2017/2018 distingué ; valeur relative au
 - [Stockfish 2020](https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/)
 
 SEO, date et slug conservés. Aucun marqueur « À VÉRIFIER PAR LUC » ajouté.
+
+## Contrôle transversal final
+
+Passages sur +0,2, style humain universel, sécurité du roi et compréhension informatique non mesurée retirés ; test sur douze ouvertures non étendu à toutes. Sources Lc0 et annonces Stockfish 2020 effectivement rouvertes.
+- [Lc0](https://lczero.org/)
+- [Stockfish NNUE, 2020](https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/)
+- [Stockfish 12](https://stockfishchess.org/blog/2020/stockfish-12/)
