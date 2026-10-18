@@ -105,6 +105,10 @@ def quiescence(echiquier, alpha, beta, ply, contexte, restant=QUIESCENCE_MAX):
     if not coups:
         return -(MAT - ply) if en_echec else 0
 
+    # Borne de sécurité : estimation, pas preuve de nulle.
+    if ply >= 120:
+        return 0 if en_echec else evaluer(echiquier)
+
     if en_echec:
         # En échec, l'option « ne rien faire » n'existe pas : il faut parer.
         # On examine donc TOUS les coups, sinon on déclarerait calme une
@@ -118,7 +122,7 @@ def quiescence(echiquier, alpha, beta, ply, contexte, restant=QUIESCENCE_MAX):
         if score >= beta:
             return beta
         alpha = max(alpha, score)
-        if restant == 0:
+        if restant <= 0:
             return alpha
         candidats = [coup for coup in coups if est_une_prise(echiquier, coup)]
         candidats.sort(key=lambda c: score_mvv_lva(echiquier, c), reverse=True)

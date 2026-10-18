@@ -24,10 +24,10 @@ seoDescription: >-
   Implémenter le protocole UCI en Python pour brancher son moteur dans une interface d'échecs, puis
   mesurer sa force réelle contre Stockfish bridé, avec intervalle de confiance.
 keyTakeaways:
-  - UCI est du texte sur l'entrée et la sortie standard. Six commandes suffisent à rendre un moteur utilisable dans n'importe quelle interface.
+  - UCI est du texte sur l'entrée et la sortie standard. Six commandes suffisent à rendre un moteur utilisable dans une interface compatible avec ce sous-ensemble.
   - "Trois règles non négociables : vider le tampon, ne rien écrire hors protocole, toujours répondre bestmove."
-  - Un moteur UCI fait confiance à l'interface et ne vérifie pas la légalité des coups qu'on lui envoie.
-  - Stockfish sait s'affaiblir de façon calibrée entre 1320 et 3190 Elo, ce qui en fait un étalon de mesure accessible.
+  - Ce prototype fait confiance à l'interface et ne vérifie pas la légalité des coups qu'on lui envoie.
+  - Stockfish sait s'affaiblir de façon calibrée entre 1320 et 3190 Elo, une force nominale qui dépend de sa calibration et de la version.
   - "Un Elo annoncé sans intervalle de confiance ne veut rien dire : sur vingt parties, la marge dépasse facilement deux cents points."
 faq:
   - question: "Comment brancher un moteur Python dans une interface d'échecs ?"
@@ -41,8 +41,7 @@ faq:
     answer: >-
       Six : <code>uci</code> (se présenter), <code>isready</code> (se synchroniser),
       <code>ucinewgame</code> (repartir de zéro), <code>position</code> (recevoir la position),
-      <code>go</code> (réfléchir et répondre <code>bestmove</code>) et <code>quit</code>. Tout le reste
-      (options, <code>ponder</code>, <code>stop</code>) est facultatif pour un premier moteur.
+      <code>go</code> (réfléchir et répondre <code>bestmove</code>) et <code>quit</code>. Ce prototype est partiel : il ne traite pas stop pendant la recherche et n'est donc pas conforme à l'ensemble du protocole. Il convient à des essais bornés, pas à l'analyse infinie dans toute interface.
   - question: "Pourquoi mon moteur bloque-t-il l'interface ?"
     answer: >-
       Trois causes, dans l'ordre de fréquence. Un tampon non vidé : la réponse est écrite mais jamais
@@ -51,7 +50,7 @@ faq:
       n'appartient pas au protocole, souvent un <code>print</code> de débogage oublié.
   - question: "Comment mesurer l'Elo de son moteur ?"
     answer: >-
-      En le faisant jouer un nombre pair de parties contre un adversaire d'Elo connu, couleurs
+      En le faisant jouer un nombre pair de parties contre un adversaire réglé à une force nominale, couleurs
       alternées, à cadence identique. Le score se convertit en écart Elo par la formule logistique
       $-400 \log_{10}(1/p - 1)$, où $p$ est le score en proportion. Stockfish avec
       <code>UCI_LimitStrength</code> fournit cet adversaire calibré, de 1320 à 3190 Elo.
@@ -67,7 +66,7 @@ Le moteur de cette série sait tout faire, sauf parler à quelqu'un. Il vit dans
 
 ## UCI, ou pourquoi il n'y a pas d'interface à écrire
 
-*Universal Chess Interface*, publié par Stefan Meyer-Kahlen en 2000. Le protocole a une qualité qui explique son adoption universelle : il est **du texte**. L'interface écrit des lignes sur l'entrée standard du moteur, le moteur répond sur sa sortie standard. Rien d'autre.
+*Universal Chess Interface*, conçu par Rudolf Huber et Stefan Meyer-Kahlen en 2000. Le protocole a une qualité qui explique son adoption universelle : il est **du texte**. L'interface écrit des lignes sur l'entrée standard du moteur, le moteur répond sur sa sortie standard. Rien d'autre.
 
 Conséquence directe : n'importe quel langage capable d'écrire sur la console peut parler UCI. Et surtout, tu n'as **aucune interface graphique à écrire**. Arena, Cute Chess, Banksia, Nibbler et les autres savent déjà utiliser ton moteur, à condition qu'il respecte la convention.
 
@@ -96,12 +95,12 @@ def ecrire(ligne):
 
 **Ne rien écrire hors protocole.** Un `print` de débogage égaré, et l'interface reçoit une ligne qu'elle ne comprend pas. Les bonnes s'en remettent, les autres coupent la communication. Le protocole prévoit `info string` pour tout ce qu'on veut dire aux humains.
 
-**Toujours répondre `bestmove`.** À chaque `go`, quoi qu'il arrive. Y compris sur une position sans coup légal, où la réponse conventionnelle est `bestmove (none)`.
+**Toujours répondre `bestmove`.** À chaque `go`, quoi qu'il arrive. Y compris sur une position sans coup légal, où la réponse conventionnelle est `bestmove 0000`.
 
 ```python
 coup, _, _, _, _ = chercher(echiquier, budget, profondeur_max, rapporter=rapporter)
 # Même sans coup légal, l'interface DOIT recevoir une réponse.
-ecrire(f"bestmove {coup if coup else '(none)'}")
+ecrire(f"bestmove {coup if coup else '0000'}")
 ```
 
 Ce dernier cas est celui qu'on ne teste jamais, parce qu'une interface normale n'envoie pas `go` sur une position matée. Sauf en analyse, où l'utilisateur peut parfaitement remonter dans une partie jusqu'au mat final.
@@ -150,7 +149,7 @@ $ STOCKFISH=... python3 verifier_uci.py
   OK   bestmove même sans coup légal
   OK   aucune ligne parasite
 
-Protocole conforme.
+Scénarios ci-dessus vérifiés ; conformité UCI complète non établie.
 ```
 
 ### Ce que ce test m'a appris sur mon propre moteur
@@ -161,7 +160,7 @@ Le moteur a planté, avec une erreur inattendue : **« pas de roi blanc sur l'é
 
 Explication. Dans cette position, le pion b5 est cloué par la tour noire h5 sur le roi blanc a5. `b5b6` est donc illégal : il expose le roi. Notre implémentation d'UCI, elle, applique les coups reçus sans les vérifier ; la recherche a ensuite exploré une position où le roi blanc pouvait être capturé, l'a été, et la fonction qui cherche le roi a échoué.
 
-Est-ce un bug ? **Non, c'est une convention**, et elle est délibérée. Un moteur UCI fait confiance à l'interface : vérifier la légalité de chaque coup reçu coûterait une génération complète par coup au chargement d'une partie de cent coups, pour se prémunir contre un cas qui n'arrive jamais avec une interface correcte.
+Est-ce un bug ? C'est une limite de ce prototype, pas une obligation du protocole. Ce prototype fait confiance à l'interface : vérifier la légalité de chaque coup reçu coûterait une génération complète par coup au chargement d'une partie de cent coups, pour se prémunir contre un cas qui n'arrive jamais avec une interface correcte.
 
 Mais c'est une convention qu'il faut connaître, parce qu'elle transforme la moindre faute de frappe dans une commande tapée à la main en plantage incompréhensible. C'est aussi pour cela que le message d'erreur mérite d'être explicite : `case_du_roi` lève une exception nommée plutôt que de renvoyer `None` et de laisser le bug se propager cinq fonctions plus loin.
 
@@ -203,7 +202,7 @@ $ STOCKFISH=... python3 match_stockfish.py 1900 2 0.5
   en dessous de 241 points.
 ```
 
-Trop fort dans l'autre sens, et tout aussi inexploitable. Notre moteur est quelque part entre les deux. On vise le milieu.
+Trop fort dans l'autre sens, et tout aussi inexploitable. Ces quelques parties ne permettent pas de borner rigoureusement sa force. On vise le milieu.
 
 ### La mesure
 
@@ -222,7 +221,7 @@ cadence : 0.50 s par coup des deux côtés, 12 parties
   (intervalle à 95 % : 1182 à 1636)
 ```
 
-Voilà le chiffre, et voilà surtout sa marge.
+Ce chiffre est relatif au réglage nominal de Stockfish et à ce protocole. Il ne mesure pas une cote FIDE. La marge affichée est une approximation sur un petit échantillon, pas une garantie de couverture à 95 %.
 
 **Environ 1400 Elo**, à une demi-seconde par coup, sur une douzaine de parties. C'est le niveau d'un joueur de club qui connaît les règles, ne donne pas ses pièces bêtement, et se fait battre par n'importe qui d'entraîné. C'est aussi, très probablement, plus fort que l'auteur de ces lignes en blitz.
 
@@ -243,12 +242,12 @@ Un moteur dont l'auteur annonce « environ 2000 Elo » sans préciser ni l'adver
 Douze articles, quelques centaines de lignes de Python sans une seule dépendance, et un moteur d'échecs complet :
 
 - une représentation mailbox 10×12, dont l'aller-retour FEN est vérifié sur 1 498 positions ;
-- un générateur de coups légaux prouvé exact par `perft` sur six positions de référence, soit **41 812 668 positions énumérées sans un écart d'une unité** ;
+- un générateur de coups légaux contrôlé par `perft` sur six positions de référence, soit **41 812 668 positions énumérées sans un écart d'une unité** ;
 - une évaluation matérielle et positionnelle, symétrique par construction ;
 - une recherche négamax avec élagage alpha-bêta, ordonnancement MVV-LVA, killers et historique ;
 - un approfondissement itératif qui respecte un budget de temps ;
-- une recherche de quiescence qui supprime l'effet d'horizon ;
-- une interface UCI conforme, testée en pilotant le moteur comme le ferait une interface graphique.
+- une recherche de quiescence qui atténue certains effets d'horizon ;
+- une interface UCI partielle, testée en pilotant le moteur comme le ferait une interface graphique.
 
 Et surtout, à chaque étape, un moyen de savoir si c'était juste. C'est ce qui distingue un moteur d'échecs d'un programme qui a l'air de jouer aux échecs : les deux se ressemblent énormément, jusqu'au jour où l'on compte.
 
@@ -258,6 +257,16 @@ Trois directions, par ordre de rapport gain sur effort.
 
 **Les tables de transposition.** Une même position s'atteint par des ordres de coups différents ; les recalculer est un gâchis considérable. Une table de hachage de Zobrist, mémorisant le score déjà calculé pour chaque position, est de très loin le plus gros gain restant.
 
-**L'élagage nul (null move).** Laisser l'adversaire jouer deux fois de suite, et si la position reste bonne malgré ce cadeau, couper la branche. Quelques lignes, plusieurs centaines de points Elo, et un piège en zugzwang.
+**L'élagage nul (null move).** Laisser l'adversaire jouer deux fois de suite, et si la position reste bonne malgré ce cadeau, couper la branche. Une heuristique dont le gain doit être mesuré, avec un risque d'erreur en zugzwang.
 
-**Un autre langage.** À un moment, la vraie limite devient Python. Le moteur écrit ici tourne autour de 3 000 positions par seconde ; le même algorithme en C ou en Rust en ferait cent fois plus. Mais tu sauras alors exactement ce que tu réécris, et c'était tout l'objet de cette série.
+**Un autre langage.** À un moment, la vraie limite devient Python. Le moteur écrit ici tourne autour de 3 000 positions par seconde ; un portage en C ou Rust demanderait son propre banc de mesure. Mais tu sauras alors exactement ce que tu réécris, et c'était tout l'objet de cette série.
+
+## Sources
+
+Shredder identifie les auteurs du protocole ; la spécification UCI impose de pouvoir recevoir des commandes pendant la recherche et utilise 0000 pour un coup nul. Le code de Stockfish définit ses options de force, qui ne constituent pas une cote FIDE du prototype.
+
+- Huber, R. et Meyer-Kahlen, S. (2000), Universal Chess Interface, Shredder, [texte](https://www.shredderchess.com/de/schach-features/uci-universal-chess-interface.html).
+
+- Meyer-Kahlen, S. (2006), Description of the universal chess interface, reproduction du document original, [texte](https://www.axorion.com/uci).
+
+- Équipe Stockfish (s. d.), engine.cpp, code officiel, [texte](https://raw.githubusercontent.com/official-stockfish/Stockfish/master/src/engine.cpp).

@@ -122,7 +122,7 @@ def boucle():
             coup, _, _, _, _ = chercher(echiquier, budget, profondeur_max,
                                         rapporter=rapporter)
             # Même sans coup légal, l'interface DOIT recevoir une réponse.
-            ecrire(f"bestmove {coup if coup else '(none)'}")
+            ecrire(f"bestmove {coup if coup else '0000'}")
 
         elif commande == "quit":
             return

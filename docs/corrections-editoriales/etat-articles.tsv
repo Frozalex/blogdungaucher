@@ -68,7 +68,7 @@ sujet-grand-oral-nsi-alphazero	grand-oral	À traiter dans cette passe
 sujet-grand-oral-nsi-minimax	grand-oral	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
 sujet-grand-oral-ses-bourdieu-reproduction	grand-oral	À traiter dans cette passe
 sujet-grand-oral-ses-marche-superstars	grand-oral	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
-approfondissement-iteratif-gestion-du-temps	science	À traiter dans cette passe
+approfondissement-iteratif-gestion-du-temps	science	Revue et corrections consignées dans articles/approfondissement-iteratif-gestion-du-temps.md
 aversion-a-la-perte-aux-echecs	science	À traiter dans cette passe
 conditionnement-classique-aux-echecs	science	À traiter dans cette passe
 conditionnement-operant-aux-echecs	science	À traiter dans cette passe
@@ -106,12 +106,12 @@ moteur-echecs-python-par-ou-commencer	science	Revue et corrections consignées d
 negamax-et-elagage-alpha-beta-python	science	Revue et corrections consignées dans articles/negamax-et-elagage-alpha-beta-python.md
 neurones-miroirs-aux-echecs	science	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
 neuroplasticite-aux-echecs	science	Revue et corrections consignées dans articles/neuroplasticite-aux-echecs.md
-ordonnancement-des-coups-moteur-echecs	science	À traiter dans cette passe
+ordonnancement-des-coups-moteur-echecs	science	Revue et corrections consignées dans articles/ordonnancement-des-coups-moteur-echecs.md
 paradoxe-de-zermelo	science	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
 perft-verifier-son-generateur-de-coups	science	Revue et corrections consignées dans articles/perft-verifier-son-generateur-de-coups.md
 pourquoi-echecs-probleme-mathematique-impossible-et-ia	science	Revue et corrections consignées dans articles/pourquoi-echecs-probleme-mathematique-impossible-et-ia.md
-protocole-uci-python-et-mesurer-son-elo	science	À traiter dans cette passe
-quiescence-et-tables-de-cases-python	science	À traiter dans cette passe
+protocole-uci-python-et-mesurer-son-elo	science	Revue et corrections consignées dans articles/protocole-uci-python-et-mesurer-son-elo.md
+quiescence-et-tables-de-cases-python	science	Revue et corrections consignées dans articles/quiescence-et-tables-de-cases-python.md
 representer-un-echiquier-en-python	science	Revue et corrections consignées dans articles/representer-un-echiquier-en-python.md
 reseau-mode-defaut-aux-echecs	science	Revue et corrections consignées dans articles/reseau-mode-defaut-aux-echecs.md
 reseaux-bayesiens-predire-blunder	science	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
