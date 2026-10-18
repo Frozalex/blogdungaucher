@@ -92,7 +92,7 @@ Il ne faut pas sur-interpréter ces différences : elles reflètent les exigence
 
 L'intelligence est multiple, contextualisée, dépendante des domaines. Les joueurs d'échecs sont exceptionnellement bons à évaluer des positions tactiques et à planifier des séquences. Les joueurs de Go sont exceptionnellement bons à évaluer des équilibres territoriaux et à prendre des décisions sous ambiguïté profonde. Ces deux formes d'excellence ne se comparent pas sur une échelle unique.
 
-Ce qui est certain : les deux jeux sont parmi les activités cognitives les plus exigeantes que l'être humain ait inventées. Dire que l'un est "plus difficile" que l'autre revient à demander si l'escalade est plus difficile que la natation. Ça dépend de qui vous êtes, de comment vous apprenez, et de ce que vous entendez par difficile.
+Ce qui est certain : les deux jeux sont parmi les activités cognitives les plus exigeantes que l'être humain ait inventées. Dire que l'un est "plus difficile" que l'autre revient à demander si l'escalade est plus difficile que la natation. Ça dépend de qui tu es, de comment tu apprends, et de ce que tu entends par difficile.
 
 ## Ce que chaque jeu enseigne à l'autre
 
