@@ -120,7 +120,7 @@ restant = int(arguments[arguments.index(cle) + 1]) / 1000
 return max(0.05, restant / DIVISEUR_DE_TEMPS + increment * 0.8)
 ```
 
-Note le `max(0.05, ...)`. En fin de partie éclair, `restant / 30` peut valoir trois millisecondes, et une recherche qui n'a le temps de rien renvoie n'importe quoi. Le plancher garantit au moins une profondeur 1 complète.
+Note le `max(0.05, ...)`. En fin de partie éclair, `restant / 30` peut valoir trois millisecondes, et une recherche qui n'a le temps de rien renvoie n'importe quoi. Ce plancher ne garantit pas une profondeur 1 complète : cela dépend du matériel et de la position. Il peut aussi dépasser le temps réellement restant ; une gestion robuste doit prévoir une marge et conserver un coup légal de secours.
 
 ## Vérifier le protocole en jouant l'interface
 

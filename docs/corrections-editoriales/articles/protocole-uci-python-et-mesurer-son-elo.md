@@ -9,3 +9,8 @@ Prototype explicitement partiel (stop/isready pendant recherche), 0000 corrigé 
 - [Équipe Stockfish (s. d.), engine.cpp, code officiel](https://raw.githubusercontent.com/official-stockfish/Stockfish/master/src/engine.cpp)
 
 SEO, date et slug conservés. Aucun marqueur « À VÉRIFIER PAR LUC » ajouté.
+
+## Contrôle transversal final
+
+Promesse de profondeur garantie en 50 ms retirée ; limite du prototype et risque de dépassement du temps explicités.
+
