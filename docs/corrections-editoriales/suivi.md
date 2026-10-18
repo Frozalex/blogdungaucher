@@ -92,3 +92,7 @@ Les deux articles imposteur sont à conserver et différencier, conformément au
 ### dissertation — echecs-et-investissement
 
 Corrigé : parenté présentée comme analogie plutôt que transfert prouvé ; biais réellement documentés par Kahneman–Tversky et Odean ; distinction étude financière/étude de transfert ; phrase d’avertissement ajoutée ; deux SVG originaux. Le H1 et le titre SEO emploient déjà « à l’investissement », aucun changement SEO nécessaire. Sources ouvertes : [Kahneman–Tversky](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf), [Odean](https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf), [Sala–Gobet](https://journals.sagepub.com/doi/10.1177/0963721417712760). Aucun marqueur ajouté.
+
+### echecs-et-flow
+
+Corrigé : Bakker 2008 distingué des études sur les échecs ; aucun délai de reprise universel ; fenêtre 45–90 minutes et seuil Elo retirés ; verbatims non sourcés retirés ; entretiens initiaux distingués des bippers ; bibliographie limitée aux travaux utilisés. Sources réellement ouvertes : [Nakamura–Csikszentmihalyi 2002](https://nuovoeutile.it/wp-content/uploads/2015/12/2002-Flow.pdf), [Bakker 2008](https://www.isonderhouden.nl/doc/pdf/arnoldbakker/articles/articles_arnold_bakker_165.pdf), [Mark 2008](https://www.ics.uci.edu/~gmark/chi08-mark.pdf). Aucun marqueur ajouté.
