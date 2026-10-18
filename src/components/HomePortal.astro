@@ -14,11 +14,14 @@ import type { DossierBoxEntry } from "./DossierBox.astro";
 
 import { categoryMap, categorySlugs } from "../data/site";
 import { mostReadSlugs } from "../data/most-read";
+import { buildSrcset } from "../utils/image-variants";
 import { currentDossier } from "../data/dossier";
 import { t, type Lang } from "../i18n/translations";
 import { swapLangPrefix } from "../utils/lang-paths";
 import {
   getAllPosts,
+  getPostHeroSrc,
+  formatDateForLang,
   getFeaturedPosts,
   filterPostsForLang,
   getPostSlug,
@@ -117,6 +120,25 @@ for (const p of posts) {
 }
 const mostReadPosts = rankedSource.slice(0, 6);
 
+// Tirage au chargement de l’accueil FR : articles publiés avec vignette,
+// sans dupliquer les cartes des deux grilles. Le HTML initial reste utilisable sans JS.
+const displayedIds = new Set([...gridPosts, ...mostReadPosts].map((p) => p.id));
+const randomLeadCandidates = lang === "fr" ? posts
+  .filter((p) => !p.data.noindex && !displayedIds.has(p.id) && getPostHeroSrc(p))
+  .map((p) => ({
+    href: `/fr/blog/${getPostSlug(p)}/`,
+    title: p.data.title,
+    excerpt: p.data.excerpt,
+    image: getPostHeroSrc(p),
+    srcset: buildSrcset(getPostHeroSrc(p)),
+    alt: p.data.heroImage?.alt || p.data.title,
+    category: categoryMap[p.data.category].label,
+    accent: categoryMap[p.data.category].accent,
+    readingTime: p.data.readingTime,
+    date: p.data.publishDate.toISOString(),
+    formattedDate: formatDateForLang(p.data.publishDate, lang),
+  })) : [];
+
 // Panneau latéral « Les plus lus » : liste numérotée des 5 mêmes articles.
 const rankedItems: RankedItem[] = await Promise.all(
   mostReadPosts.slice(0, 5).map(async (p) => ({
@@ -178,7 +200,7 @@ const pageH1 = `${t(tLang, "nav.siteName")} : ${t(tLang, "nav.context")}`;
 
         {/* Article de tête (horizontal), sans titre de section */}
         {leadPost && (
-          <div class="portal__lead">
+          <div class="portal__lead" data-random-lead={randomLeadCandidates.length ? JSON.stringify(randomLeadCandidates) : undefined}>
             <ArticleCard post={leadPost} lead={true} eager={true} lang={lang} />
           </div>
         )}
@@ -236,6 +258,42 @@ const pageH1 = `${t(tLang, "nav.siteName")} : ${t(tLang, "nav.context")}`;
 
   </div>
 </div>
+
+<script>
+  function randomizeHomeLead() {
+    const host = document.querySelector<HTMLElement>("[data-random-lead]");
+    if (!host || host.dataset.randomized === "true") return;
+    try {
+      const candidates = JSON.parse(host.dataset.randomLead ?? "[]");
+      if (!Array.isArray(candidates) || !candidates.length) return;
+      const choice = candidates[Math.floor(Math.random() * candidates.length)];
+      const card = host.querySelector<HTMLElement>(".card");
+      const image = host.querySelector<HTMLImageElement>(".card-thumb");
+      const link = host.querySelector<HTMLAnchorElement>(".card-link");
+      if (!card || !image || !link) return;
+      link.href = choice.href;
+      card.style.setProperty("--accent", choice.accent);
+      for (const [selector, value] of [
+        [".card-title", choice.title], [".card-excerpt", choice.excerpt],
+        [".card-badge", choice.category], [".card-time", choice.readingTime],
+      ]) {
+        const element = host.querySelector(selector);
+        if (element) { element.textContent = value; element.removeAttribute("data-t"); }
+      }
+      const date = host.querySelector<HTMLTimeElement>("time");
+      if (date) { date.dateTime = choice.date; date.textContent = choice.formattedDate; }
+      image.alt = choice.alt;
+      if (choice.srcset) image.srcset = choice.srcset;
+      else image.removeAttribute("srcset");
+      image.src = choice.image;
+      host.dataset.randomized = "true";
+    } catch {
+      // Le contenu statique reste disponible si les données ne sont pas exploitables.
+    }
+  }
+  randomizeHomeLead();
+  document.addEventListener("astro:page-load", randomizeHomeLead);
+</script>
 
 <style>
   .portal {
