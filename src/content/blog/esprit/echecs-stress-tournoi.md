@@ -37,9 +37,7 @@ keyTakeaways:
     des marqueurs de stress identiques aux débutants pour les enjeux élevés, mais des mécanismes de régulation plus
     efficaces.
 seoTitle: "Gérer le stress en tournoi d'échecs : psychologie et physiologie"
-seoDescription: >-
-  Cortisol, anxiété de performance, cohérence cardiaque : comment la science du stress explique les erreurs sous
-  pression aux échecs et comment mieux les gérer.
+seoDescription: "Stress en tournoi d'échecs : effets étudiés sur la cognition, respiration lente et pistes pour revenir à la position, sans promesse hormonale ni gain Elo garanti."
 ogImage: /images/blog/echecs-stress-tournoi-hero.png
 heroImage:
   src: /images/blog/echecs-stress-tournoi-hero.png

@@ -20,9 +20,7 @@ tags:
   - tutoriel
   - informatique
 seoTitle: "Représenter un échiquier en Python : mailbox 10x12 et FEN"
-seoDescription: >-
-  Comment représenter un échiquier en Python pour un moteur : pourquoi le tableau de 64 cases échoue,
-  la structure mailbox 10x12, la lecture et l'écriture de FEN, et les fonctions jouer/annuler.
+seoDescription: "Échiquier en Python : limites des décalages naïfs sur 64 cases, choix d'une mailbox 10x12, lecture et écriture de FEN, fonctions jouer et annuler."
 keyTakeaways:
   - Un tableau de 64 cases laisse le cavalier sortir d'un bord et rentrer par l'autre, sans aucune erreur visible.
   - "La solution mailbox entoure l'échiquier d'une bordure de sentinelles : le test de débordement devient une simple lecture de case."

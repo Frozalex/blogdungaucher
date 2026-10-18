@@ -33,10 +33,8 @@ keyTakeaways:
   - >-
     20 minutes de sieste après une séance d'étude de positions améliorent la rétention de 34% vs groupe sans sieste
     (Mednick et al., 2003, *Nature Neuroscience*).
-seoTitle: "Échecs et sommeil : comment la récupération cognitive booste ta progression"
-seoDescription: >-
-  Sommeil REM, consolidation mémorielle, privation de sommeil et performance aux échecs : ce que la neuroscience dit sur
-  la nuit comme entraînement invisible.
+seoTitle: "Sommeil et échecs : vigilance, apprentissage et récupération"
+seoDescription: "Sommeil et préparation aux échecs : études sur la vigilance, la décision et l'apprentissage, repères de repos et limites des promesses de progression."
 ogImage: /images/blog/echecs-et-sommeil-hero.png
 heroImage:
   src: /images/blog/echecs-et-sommeil-hero.png

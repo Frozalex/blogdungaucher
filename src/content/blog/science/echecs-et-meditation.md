@@ -34,10 +34,8 @@ keyTakeaways:
   - >-
     L'effet est dose-dépendant : 8 semaines à 20 min/jour produisent des changements cérébraux visibles ; quelques
     séances isolées produisent des effets d'état mais pas de trait.
-seoTitle: "Méditation et échecs : la pleine conscience pour mieux jouer"
-seoDescription: >-
-  MBSR, Default Mode Network, régulation émotionnelle : ce que la recherche sur la pleine conscience dit sur son apport
-  pour la performance et le mental aux échecs.
+seoTitle: "Méditation et échecs : études, pratique et limites"
+seoDescription: "Pleine conscience et échecs : découvrir un exercice, comprendre les études sur le MBSR, l'attention et le stress, sans en déduire un gain de performance au jeu."
 ogImage: /images/og/echecs-et-meditation-og.webp
 heroImage:
   src: /images/blog/echecs-et-meditation-hero.webp

@@ -18,10 +18,8 @@ tags:
   - addiction
   - entraînement
   - échecs
-seoTitle: "Conditionnement opérant aux échecs : ratio variable et blitz"
-seoDescription: >-
-  Les programmes de renforcement de Skinner appliqués aux échecs en ligne : pourquoi le blitz est si
-  difficile à arrêter, et quel comportement il renforce réellement.
+seoTitle: "Conditionnement opérant et échecs : renforcement et blitz"
+seoDescription: "Les programmes de renforcement de Skinner et la relance du blitz : une analogie pour examiner les habitudes de jeu, sans assimiler une partie à une expérience."
 faq:
   - question: "Qu'est-ce que le conditionnement opérant ?"
     answer: >-

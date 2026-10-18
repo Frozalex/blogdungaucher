@@ -18,10 +18,8 @@ tags:
   - décision
   - point de référence
   - échecs
-seoTitle: "Aversion à la perte aux échecs : pourquoi tu refuses les sacrifices"
-seoDescription: >-
-  Ce que Kahneman et Tversky ont montré, ce que la critique de 2018 a remis en cause, et pourquoi le
-  matériel aux échecs n'est qu'un indicateur qu'on défend contre l'objectif réel.
+seoTitle: "Aversion à la perte et échecs : une analogie à examiner"
+seoDescription: "Kahneman et Tversky, critique de Gal et Rucker, sacrifices aux échecs : ce que l'aversion à la perte peut éclairer sans expliquer à elle seule tes décisions."
 faq:
   - question: "Qu'est-ce que l'aversion à la perte ?"
     answer: >-

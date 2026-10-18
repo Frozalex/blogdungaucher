@@ -19,9 +19,7 @@ tags:
   - témoignage
   - échecs
 seoTitle: "Faux souvenirs aux échecs : pourquoi tu crois avoir vu le coup"
-seoDescription: >-
-  Ce que Loftus a démontré sur l'implantation de souvenirs, ce que la critique de 2017 a nuancé, et
-  pourquoi l'analyse d'après-partie réécrit ce que tu croyais avoir calculé.
+seoDescription: "Loftus et Palmer, croyance et souvenir : comprendre les résultats sur les faux souvenirs et leurs limites pour l'analyse d'une partie d'échecs."
 faq:
   - question: "Qu'est-ce qu'un faux souvenir ?"
     answer: >-

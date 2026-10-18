@@ -9,7 +9,7 @@ readingTime: "22 min"
 pillar: "Cognition"
 tags: ["grand-oral", "mathématiques", "terminale", "spécialité maths", "combinatoire", "loi binomiale", "suites", "Elo", "algorithme", "baccalauréat"]
 seoTitle: "Grand oral spé Maths : échecs et programme de terminale, plan complet"
-seoDescription: "Grand Oral spé Maths bac 2025 : sujet échecs avec combinatoire, probabilités, suites Elo, loi binomiale. Plan détaillé, formules et questions jury pour réussir."
+seoDescription: "Préparer un Grand Oral de spécialité Maths sur les échecs : combinatoire, probabilités, score attendu Elo et minimax, avec exemples et questions de jury."
 ogImage: /images/og/grand-oral-maths-spe-echecs-og.webp
 heroImage:
   src: /images/blog/grand-oral-maths-spe-echecs-hero.webp

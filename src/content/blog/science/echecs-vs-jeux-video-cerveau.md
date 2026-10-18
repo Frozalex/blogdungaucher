@@ -9,7 +9,7 @@ readingTime: "7 min"
 pillar: "Cerveau"
 tags: ["jeux vidéo", "neurosciences", "cognition", "attention", "réflexes", "addiction"]
 seoTitle: "Échecs vs jeux vidéo : ce que dit la science sur le cerveau"
-seoDescription: "Quel impact sur le cerveau entre échecs et jeux vidéo ? Plasticité, attention, réflexes, mémoire : la comparaison honnête à partir des études IRM."
+seoDescription: "Échecs et jeux vidéo : comparer les études sur l'attention, la mémoire et la plasticité en tenant compte des tâches, des groupes et des limites du transfert."
 keyTakeaways:
   - "Les jeux vidéo développent l'attention divisée et les réflexes visuomoteurs. Les échecs développent l'attention soutenue et la planification."
   - "Les deux activités créent une plasticité cérébrale mesurable à l'IRM, dans des régions différentes."

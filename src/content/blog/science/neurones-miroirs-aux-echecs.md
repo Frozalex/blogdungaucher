@@ -8,8 +8,8 @@ featuredRank: 99
 readingTime: "7 min"
 pillar: "Neurosciences"
 tags: ["neurones miroirs", "échecs", "neurosciences", "cerveau", "anticipation", "empathie", "cognition"]
-seoTitle: "Neurones miroirs aux échecs : anticiper l'adversaire"
-seoDescription: "Comment les neurones miroirs permettent d'anticiper les intentions de l'adversaire aux échecs. Neurosciences, simulation mentale et lecture du jeu adverse."
+seoTitle: "Neurones miroirs et échecs : les limites de l'explication"
+seoDescription: "Les neurones miroirs expliquent-ils l'anticipation aux échecs ? Distinguer observation d'un geste, simulation mentale et raisonnement sur un plan adverse."
 ---
 
 Tu regardes une position et tu crois comprendre ce que l’adversaire prépare. Tu joues un coup préventif, puis son plan apparaît. L’expérience est familière : tu as envisagé la position depuis l’autre camp.

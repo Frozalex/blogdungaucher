@@ -35,10 +35,8 @@ keyTakeaways:
   - >-
     Les études de Bakker et al. (2007) montrent que le flow au travail prédit mieux la performance et la satisfaction
     que la motivation extrinsèque : le même mécanisme s'applique aux échecs.
-seoTitle: "Échecs et flow : comment atteindre l'état de flux sur l'échiquier"
-seoDescription: >-
-  Flow de Csikszentmihalyi, conditions du flux, perte de conscience du temps aux échecs : comment entrer et maintenir
-  l'état optimal de performance au jeu.
+seoTitle: "Échecs et flow : comprendre l'état de flux sur l'échiquier"
+seoDescription: "Le flow de Csikszentmihalyi appliqué aux échecs : caractéristiques, conditions favorables et distractions, sans méthode garantie pour atteindre cet état."
 ogImage: /images/og/echecs-et-flow-og.webp
 heroImage:
   src: /images/blog/echecs-et-flow-hero.webp

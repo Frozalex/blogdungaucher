@@ -8,8 +8,8 @@ featuredRank: 99
 readingTime: "8 min"
 pillar: "Psychologie"
 tags: ["burnout", "épuisement", "échecs", "psychologie", "motivation", "récupération", "santé mentale"]
-seoTitle: "Burnout aux échecs : reconnaître et surmonter l'épuisement"
-seoDescription: "Le burnout aux échecs expliqué : symptômes, causes et stratégies de récupération. Comment retrouver le plaisir de jouer après l'épuisement compétitif."
+seoTitle: "Burnout aux échecs : comprendre l'épuisement et la pression"
+seoDescription: "Épuisement sportif et burnout professionnel : les distinctions utiles aux joueurs d'échecs, des questions pour faire le point et des pistes pour réduire la pression."
 ---
 
 Tu ouvres Chess.com. Le bouton "Jouer" est là, comme hier. Comme avant-hier. Tu le regardes pendant trente secondes. Tu fermes l'onglet.

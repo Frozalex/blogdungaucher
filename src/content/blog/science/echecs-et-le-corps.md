@@ -34,10 +34,8 @@ keyTakeaways:
   - >-
     Les champions contemporains comme Magnus Carlsen ou Fabiano Caruana s'entraînent physiquement : une bonne condition
     cardiovasculaire amortit la réponse de stress et soutient la concentration sur cinq à six heures.
-seoTitle: "Échecs et corps : calories, cœur et fatigue physique du joueur"
-seoDescription: >-
-  Les échecs épuisent-ils physiquement ? Calories brûlées, fréquence cardiaque, perte de poids de Karpov, mythe des
-  6000 calories : ce que la physiologie révèle du corps du joueur d'échecs.
+seoTitle: "Échecs et physiologie : calories, rythme cardiaque et fatigue"
+seoDescription: "Que mesure-t-on pendant une partie d'échecs ? Fréquence cardiaque, dépense énergétique et fatigue : les résultats de Troubat et les limites des chiffres avancés."
 ogImage: /images/og/echecs-et-le-corps-og.webp
 heroImage:
   src: /images/blog/echecs-et-le-corps-hero.webp

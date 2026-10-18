@@ -60,9 +60,8 @@ dataReveal:
 
     Les échecs peuvent contribuer au plaisir et à la stimulation mentale comme d’autres activités régulières. Les travaux
     cités mesurent surtout des tendances agrégées, pas des promesses au cas par cas.
-seoTitle: "Échecs et Alzheimer : études, chiffres et prévention cognitive"
-seoDescription: >-
-  Échecs et Alzheimer : données chiffrées sur les jeux cognitifs et la démence. Méta-analyses MMSE, cohortes ALSOP, essais cliniques chez les personnes âgées.
+seoTitle: "Échecs et Alzheimer : ce que les études permettent de dire"
+seoDescription: "Loisirs cognitifs et démence : lire les associations observées, distinguer prévention et accompagnement et comprendre pourquoi un effet propre aux échecs reste incertain."
 ogImage: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.webp
 heroImage:
   src: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.webp

@@ -20,9 +20,7 @@ tags:
   - mythes
   - échecs
 seoTitle: "Neuroplasticité et échecs : ce que les études disent vraiment"
-seoDescription: >-
-  Les échecs recâblent-ils le cerveau ? Ce que les études sur les taxis de Londres et les jongleurs
-  montrent réellement, et pourquoi un changement de matière grise ne prouve aucun bénéfice.
+seoDescription: "Neuroplasticité et échecs : ce que les études sur l'imagerie, les taxis et les jongleurs permettent de dire, sans confondre changement observé et bénéfice démontré."
 faq:
   - question: "Les échecs modifient-ils physiquement le cerveau ?"
     answer: >-

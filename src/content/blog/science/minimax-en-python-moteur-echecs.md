@@ -20,9 +20,7 @@ tags:
   - tutoriel
   - informatique
 seoTitle: "Implémenter minimax en Python pour un moteur d'échecs"
-seoDescription: >-
-  Coder l'algorithme minimax en Python pour un moteur d'échecs : récursion, scores de mat, distance au
-  mat, ordre des tests, et pourquoi la profondeur 5 devient hors de portée sans élagage.
+seoDescription: "Implémenter minimax en Python pour un moteur d'échecs : récursion, scores de mat, ordre des tests et coût de la recherche selon la position et la profondeur."
 keyTakeaways:
   - Minimax suppose que l'adversaire joue son meilleur coup. C'est cette hypothèse, et non l'évaluation, qui fait disparaître les pats accidentels.
   - Un score de mat doit intégrer la distance à la racine, sinon le moteur voit le mat sans jamais le porter.

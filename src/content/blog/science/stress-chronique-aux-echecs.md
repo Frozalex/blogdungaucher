@@ -19,10 +19,8 @@ tags:
   - mémoire de travail
   - saison
   - échecs
-seoTitle: "Stress chronique aux échecs : ce que le cortisol prolongé abîme"
-seoDescription: >-
-  La différence entre stress aigu et stress chronique aux échecs : pourquoi l'un améliore la cognition
-  et l'autre la dégrade, et comment repérer le basculement.
+seoTitle: "Stress chronique aux échecs : fatigue, charge et récupération"
+seoDescription: "Stress aigu, stress chronique et charge allostatique : comprendre les distinctions, observer sa fatigue et ajuster les échecs sans diagnostic à partir des résultats."
 faq:
   - question: "Quelle est la différence entre stress aigu et stress chronique ?"
     answer: >-

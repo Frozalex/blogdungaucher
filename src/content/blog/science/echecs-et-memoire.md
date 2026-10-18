@@ -22,9 +22,7 @@ tags:
   - neurosciences
   - enfants
 seoTitle: "Échecs et mémoire : mémoire de travail, chunks et apprentissage"
-seoDescription: >-
-  Mémoire de travail, chunks de Chase & Simon, mémoire procédurale : comment les échecs transforment la mémoire et dans
-  quelles conditions ces gains se transfèrent réellement.
+seoDescription: "Mémoire et expertise aux échecs : chunks, templates, mémoire de travail et pistes d'apprentissage. Ce que ces modèles expliquent et les limites du transfert."
 ogImage: /images/blog/echecs-et-memoire-hero.webp
 heroImage:
   src: /images/blog/echecs-et-memoire-hero.webp

@@ -19,9 +19,7 @@ tags:
   - cognition sociale
   - échecs
 seoTitle: "Théorie de l'esprit aux échecs : modéliser ce que l'adversaire croit"
-seoDescription: >-
-  Ce qu'est la théorie de l'esprit, ce que la tâche de fausse croyance mesure, et pourquoi poser un
-  piège aux échecs est un acte cognitif qu'aucun moteur ne peut accomplir.
+seoDescription: "Théorie de l'esprit, fausse croyance et pièges aux échecs : distinguer l'hypothèse sur un adversaire, le calcul classique et la prédiction de coups humains par Maia."
 faq:
   - question: "Qu'est-ce que la théorie de l'esprit ?"
     answer: >-

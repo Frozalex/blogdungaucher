@@ -20,10 +20,8 @@ tags:
   - optimisation
   - complexité
   - Python
-seoTitle: "Sujet Grand Oral NSI alpha-bêta échecs : texte complet à réciter"
-seoDescription: >-
-  Sujet Grand Oral NSI sur l'élagage alpha-bêta aux échecs, entièrement rédigé pour 10 minutes d'exposé. Optimisation,
-  coupure, complexité, code Python : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral NSI : fiche sur l'élagage alpha-bêta"
+seoDescription: "Fiche de révision alpha-bêta : expliquer une coupure, comprendre la conservation du score minimax et nuancer le gain de calcul, avec renvoi au guide NSI."
 ogImage: /images/og/sujet-grand-oral-nsi-alpha-beta-og.webp
 heroImage:
   src: /images/blog/sujet-grand-oral-nsi-alpha-beta-hero.webp

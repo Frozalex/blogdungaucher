@@ -36,10 +36,8 @@ keyTakeaways:
   - >-
     Le **blitz en ligne** présente le profil neurochimique d'engagement le plus risqué : feedback ultra-rapide,
     comparaison sociale immédiate (Elo), disponibilité 24h/24.
-seoTitle: "Dopamine et échecs : comment la neurochimie explique l'engouement pour le jeu"
-seoDescription: >-
-  Circuit de récompense, anticipation, signal dopaminergique : ce que la neuroscience révèle sur pourquoi les échecs
-  sont si captivants et parfois compulsifs.
+seoTitle: "Dopamine et échecs : récompense, motivation et limites"
+seoDescription: "Dopamine, récompense et envie de rejouer aux échecs : distinguer les résultats de laboratoire, le plaisir ressenti et les mécanismes qui n'ont pas été mesurés."
 ogImage: /images/og/echecs-et-dopamine-og.webp
 heroImage:
   src: /images/blog/echecs-et-dopamine-hero.webp

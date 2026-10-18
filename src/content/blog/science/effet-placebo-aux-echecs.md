@@ -20,9 +20,7 @@ tags:
   - Kaptchuk
   - échecs
 seoTitle: "Effet placebo aux échecs : ce que la croyance change vraiment"
-seoDescription: >-
-  Porte-bonheur, ouverture fétiche, compléments : l'effet placebo améliore-t-il le jeu ? Ce que dit la
-  recherche sur le placebo cognitif, et pourquoi le nocebo est le vrai risque aux échecs.
+seoDescription: "Rituels, attentes et performance aux échecs : ce que les études cliniques, sportives et cognitives permettent de dire, sans attribuer chaque progrès au placebo."
 faq:
   - question: "L'effet placebo peut-il améliorer mon jeu aux échecs ?"
     answer: >-

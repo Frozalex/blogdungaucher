@@ -19,10 +19,8 @@ tags:
   - enfants
   - abandon
   - échecs
-seoTitle: "Théorie de l'attachement aux échecs : parents, coachs et abandon"
-seoDescription: >-
-  La théorie de l'attachement appliquée aux échecs : le rôle du parent en tournoi, l'entraîneur comme
-  base de sécurité, et pourquoi tant de jeunes joueurs arrêtent après une défaite.
+seoTitle: "Attachement et échecs : le soutien des parents et des coachs"
+seoDescription: "La théorie de l'attachement comme grille de lecture du soutien aux échecs : études sportives, accueil après une défaite et limites des interprétations."
 faq:
   - question: "Qu'est-ce que la théorie de l'attachement ?"
     answer: >-

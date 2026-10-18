@@ -9,8 +9,8 @@ affiliate: true
 readingTime: "11 min"
 pillar: "Neurosciences"
 tags: ["hyperfocus", "attention soutenue", "échecs", "neurosciences", "neurodivergence", "TDAH", "flow"]
-seoTitle: "Hyperfocus vs attention soutenue aux échecs : deux régimes neuroscientifiques distincts"
-seoDescription: "Hyperfocus et attention soutenue : ce que les neurosciences distinguent, pourquoi l'un est précieux en blitz et l'autre en classique, et comment les piloter."
+seoTitle: "Hyperfocus et attention soutenue aux échecs : définitions"
+seoDescription: "Hyperfocus, flow et attention soutenue aux échecs : définitions discutées et observations de séance, sans attribuer un profil cérébral à chaque cadence."
 ogImage: /images/og/hyperfocus-attention-soutenue-aux-echecs-og.webp
 heroImage:
   src: /images/blog/hyperfocus-attention-soutenue-aux-echecs-hero.webp

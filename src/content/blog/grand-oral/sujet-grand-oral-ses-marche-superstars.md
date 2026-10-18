@@ -20,9 +20,7 @@ tags:
   - rente différentielle
   - capital humain
 seoTitle: "Sujet Grand Oral SES marché superstars échecs : texte complet à réciter"
-seoDescription: >-
-  Sujet Grand Oral SES sur le marché des joueurs d'échecs et l'économie des superstars, entièrement rédigé pour 10
-  minutes. Rosen, Ricardo, Becker, données chiffrées : copie d'examen prête à utiliser.
+seoDescription: "Grand Oral SES sur les joueurs d'échecs et l'économie des superstars : modèles de Rosen, Ricardo et Becker, arguments rédigés et limites des comparaisons."
 ogImage: /images/og/sujet-grand-oral-ses-marche-superstars-og.webp
 heroImage:
   src: /images/blog/sujet-grand-oral-ses-marche-superstars-hero.webp
