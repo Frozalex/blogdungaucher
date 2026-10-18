@@ -1,8 +1,7 @@
 ---
 title: "Sujet Grand Oral HGGSP : Comment Fischer-Spassky 1972 est-il mémorialisé différemment dans le monde ?"
-excerpt: >-
-  Sujet entièrement rédigé pour le Grand Oral spécialité HGGSP : histoire-mémoire (Pierre Nora), patrimoine culturel
-  immatériel, mémoires divisées. Texte de 10 minutes prêt à réciter.
+excerpt:
+  "Un cas documenté pour étudier mémoire et patrimoine : comment une exposition sélectionne et présente les traces du match de 1972."
 publishDate: "2026-05-12"
 category: grand-oral
 featured: false
@@ -25,78 +24,54 @@ seoDescription: >-
   10 minutes. Pierre Nora, lieux de mémoire, UNESCO : copie d'examen prête à utiliser.
 ogImage: /images/og/sujet-grand-oral-hggsp-memoire-patrimoine-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-hggsp-memoire-patrimoine-hero.webp
-  alt: >-
-    La grande salle de lecture néogothique d'une bibliothèque universitaire.
-  credit: "Guywelch2000, CC BY 4.0, via Wikimedia Commons"
-  sourceUrl: https://commons.wikimedia.org/wiki/File:Suzzallo_Reading_Room_University_of_Washington_restoration_Seattle_Washington_2026.jpg
-  license: CC BY 4.0
+  src: /images/go-memoire.svg
+  alt: "Schéma reliant une trace historique à sa sélection et à sa présentation muséale."
+  credit: Blog d’un Gaucher
+  license: Création originale
 ---
 
-> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+Un même match peut être étudié comme une suite de parties, raconté comme un affrontement politique et présenté dans une exposition. Comment ces usages transforment-ils notre rapport à Fischer-Spassky 1972 ?
 
----
+Pour préparer tes dix minutes de présentation, pars d'un document précis plutôt que de supposer trois mémoires nationales homogènes. L'exposition du World Chess Hall of Fame organisée pour le cinquantenaire fournit un cas vérifiable.
 
-Bonjour. Je vais vous parler d'un événement vieux de plus de cinquante ans, et qui pourtant continue d'être raconté différemment dans différents pays : le match Fischer-Spassky à Reykjavik en mille neuf cent soixante-douze.
+## Histoire et mémoire : distinguer les démarches
 
-Le **sujet** est précis : comment le match Fischer-Spassky de mille neuf cent soixante-douze est-il mémorialisé différemment en Russie, aux États-Unis et dans le reste du monde, et que cela nous apprend-il sur les usages politiques du passé ? Cette **question** s'inscrit dans le **thème** **Histoire et mémoire** du **programme** de spécialité **HGGSP** en **terminale**. Elle mobilise les outils théoriques développés par Pierre Nora dans *Les Lieux de mémoire*, et plus largement la distinction fondamentale entre **histoire** comme reconstruction critique et **mémoire** comme construction identitaire.
+Dans son article de 1989, Pierre Nora oppose la mémoire vécue et changeante à la reconstruction critique du passé. Ses lieux de mémoire ne sont pas seulement des sites géographiques : ils associent des dimensions matérielles, symboliques et fonctionnelles.
 
-L'enjeu est concret. Un même événement, deux versions opposées dans deux pays différents. Pourquoi ? Comment les sociétés construisent-elles leurs récits ? Que reste-t-il du **patrimoine** échiquéen au-delà des récits nationaux ? C'est ce que je vais explorer.
+Ce cadre ne signifie pas que toute mémoire serait fausse et toute histoire parfaitement objective. Il t'invite à examiner les opérations de sélection et les usages présents d'un passé. Un récit commémoratif devient ainsi un objet d'étude, avec un auteur, une date et un public.
 
-Je procéderai en trois étapes. D'abord, je présenterai brièvement le cadre théorique de l'**histoire**-**mémoire** chez Pierre Nora. Ensuite, je détaillerai les trois récits concurrents du match Fischer-Spassky : américain, russe et international. Enfin, je discuterai la dimension **patrimoine** culturel immatériel des échecs et ses **enjeux** contemporains.
+## Un cas documenté : le cinquantenaire de 1972
 
-## Le cadre théorique : histoire-mémoire chez Pierre Nora
+Le communiqué du World Chess Hall of Fame du 4 août 2022 annonce à Saint Louis une exposition sur le match, ses origines et son influence. Il décrit des pièces utilisées lors de la troisième partie, une réplique de la table et des livres provenant de la bibliothèque de Fischer.
 
-Pour analyser des **mémoires** divisées, il faut un outil conceptuel précis. Pierre Nora, historien français, l'a fourni à partir de mille neuf cent quatre-vingt-quatre avec son projet collectif *Les Lieux de mémoire*. Sa distinction essentielle : il faut séparer l'**histoire** comme reconstruction critique du passé, fondée sur des sources et des méthodes universitaires, de la **mémoire** comme construction sélective au service des identités présentes.
+Ces catégories ne sont pas interchangeables. Une pièce de jeu utilisée en 1972 est une trace matérielle du match ; une réplique est une reconstitution ; un livre renseigne aussi sur la trajectoire du joueur. La présentation muséale leur donne une place dans un récit.
 
-L'**histoire** cherche l'objectivité, accepte la complexité, intègre les contradictions. La **mémoire** simplifie, dramatise, choisit ce qu'elle veut retenir. L'**histoire** est universaliste dans ses prétentions ; la **mémoire** est toujours nationale, communautaire, particulière. Nora insiste sur le fait qu'aucune des deux n'est supérieure : elles répondent à des besoins différents. Mais il faut savoir laquelle on manipule.
+Le communiqué met en avant la victoire américaine interrompant la domination soviétique. Cette formulation est un choix de cadrage observable dans ce document. Elle ne permet pas de conclure que tous les Américains se souviennent du match de la même manière.
 
-Un **lieu de mémoire**, chez Nora, n'est pas forcément un lieu géographique. C'est un point d'ancrage symbolique autour duquel une société construit son récit collectif. Le quatorze juillet est un lieu de **mémoire**, le Panthéon aussi, la *Marseillaise* également. Ces objets concentrent des significations identitaires fortes.
+![De la trace historique au récit exposé : provenance, sélection et présentation.](/images/go-memoire.svg)
 
-Fischer-Spassky mille neuf cent soixante-douze fonctionne exactement comme un lieu de **mémoire**, mais pour plusieurs nations en même temps. Le même événement est récupéré différemment selon les besoins identitaires de chacune. Cette concurrence des récits est précisément ce que je vais analyser.
+## Comparer des récits sans inventer des blocs
 
-![La distinction de Pierre Nora : l'histoire vise l'objectivité universelle tandis que la mémoire est sélective et identitaire — Fischer-Spassky 1972 illustre les deux à la fois.](/images/sujet-memoire-patrimoine-01-histoire-memoire-nora.svg)
+Pour construire une comparaison internationale, il faudrait réunir des documents de nature et de date comparables : deux expositions, deux manuels ou deux commémorations, par exemple. Demande ensuite ce qu'ils montrent, ce qu'ils omettent et à qui ils s'adressent.
 
-## Les trois récits concurrents
+L'origine nationale d'un auteur ne suffit pas à définir son interprétation. Une biographie britannique n'est pas automatiquement neutre ; une exposition américaine n'exprime pas toute la mémoire d'un pays. Décris d'abord les documents avant d'élargir la conclusion.
 
-Premier récit : la **mémoire américaine**. Aux États-Unis, Fischer-Spassky est raconté comme le triomphe du génie individuel sur le système collectiviste. Bobby Fischer, jeune homme issu de Brooklyn, élevé par une mère seule, autodidacte, brillant et instable, incarne le rêve américain. Sa victoire à Reykjavik est présentée comme l'illustration parfaite de la supériorité du modèle américain sur le modèle soviétique : un individu motivé peut battre toute une bureaucratie d'État. Cette **mémoire** est cohérente avec d'autres récits américains de la guerre froide, où l'individu héroïque (astronaute Neil Armstrong, dissident Aleksandr Soljenitsyne célébré aux USA) sert de symbole d'un système.
+## Patrimonialiser n'est pas seulement conserver
 
-Cette **mémoire** efface deux choses : d'abord, l'intervention discrète mais réelle du gouvernement américain dans le match, notamment via Kissinger ; ensuite, le caractère profondément difficile de la personnalité de Fischer, qui sera plus tard inculpé pour avoir violé les sanctions américaines en Yougoslavie. Le héros de mille neuf cent soixante-douze devient un paria dans les années mille neuf cent quatre-vingt-dix. La **mémoire** retient le héros, l'**histoire** retient les deux.
+Préserver un objet, en documenter la provenance et le rendre accessible sont des opérations concrètes de patrimonialisation. Le numérique permet aussi de transmettre des parties, à condition de distinguer leur contenu, les annotations et les droits attachés aux documents.
 
-Deuxième récit : la **mémoire russe**. En URSS d'abord, puis en Russie post-soviétique, la défaite de Spassky est présentée différemment selon les périodes. Immédiatement après le match, la presse soviétique tente de relativiser : on invoque les exigences excessives de Fischer (refus de jouer, mauvaise foi médiatique), on souligne que Spassky a tenu vingt-et-une parties contre un adversaire instable, on insiste sur la victoire collective des écoles d'échecs soviétiques qui ont produit Spassky et continueront de produire Karpov et Kasparov.
+Cette démarche ne vaut pas certification UNESCO. Il faut vérifier séparément une inscription officielle, son intitulé et sa date avant de l'affirmer. Il n'est pas nécessaire de prêter un tel statut aux échecs ou au go pour montrer l'intérêt culturel de leur conservation.
 
-Aujourd'hui, dans la Russie de Vladimir Poutine, cette **mémoire** est mobilisée différemment. Anatoly Karpov, devenu parlementaire pro-Kremlin, incarne la continuité du **patrimoine** échiquéen soviétique récupéré par l'État russe. Une exposition permanente du musée des échecs à Saint-Pétersbourg met en valeur l'**histoire** des écoles soviétiques. Le récit officiel insiste sur la profondeur **historique** de la **puissance** russe dans le jeu, où Fischer-Spassky n'est qu'un accident momentané dans une domination longue.
+La question juridique ne se résume pas non plus à « ce patrimoine appartient à l'humanité » : objets, photographies, textes et bases de données ont des situations différentes.
 
-Troisième récit : la **mémoire internationale**. Hors des États-Unis et de la Russie, Fischer-Spassky est souvent raconté comme un événement universel, transcendant les deux camps de la guerre froide. La biographie *Bobby Fischer Goes to War*, publiée en deux mille quatre par les Britanniques David Edmonds et John Eidinow, propose cette lecture neutre. Le match y est présenté comme une rencontre culturelle entre deux conceptions opposées du jeu, mais sans privilégier explicitement l'un ou l'autre. Reykjavik elle-même cultive cette **mémoire** internationale en conservant la salle du match comme lieu touristique et patrimonial.
+## Une conclusion délimitée
 
-Ces trois récits coexistent et ne s'éliminent pas mutuellement. Ils répondent à trois besoins identitaires différents : valorisation du modèle américain, continuité de la **puissance** russe, universalisme culturel européen. C'est exactement la situation que Nora décrit : un même fait, plusieurs **mémoires** parallèles.
+Le cinquantenaire montre comment des traces du jeu sont choisies et mises en scène pour transmettre un passé. Il ne démontre pas, à lui seul, une opposition exhaustive entre mémoires américaine, russe et internationale.
 
-![Les trois récits concurrents de Reykjavik 1972 : la mémoire américaine (génie individuel), la mémoire russe (continuité de puissance) et la mémoire internationale (universalisme culturel).](/images/sujet-memoire-patrimoine-02-trois-recits.svg)
+Pour l'échange, explique la différence entre original et réplique, entre commémoration et enquête historique. La précision de ton exemple rendra ta réponse plus solide qu'une collection de lieux non vérifiés.
 
-## Le patrimoine culturel immatériel et ses enjeux contemporains
+## Sources
 
-Au-delà des **mémoires** nationales, les échecs constituent-ils un **patrimoine** culturel immatériel partagé ? La **question** se pose précisément aujourd'hui, dans un contexte où l'UNESCO développe une politique active de reconnaissance des **patrimoines** immatériels.
-
-Les échecs ne sont pas inscrits stricto sensu sur la liste du **patrimoine** immatériel de l'UNESCO. Mais d'autres jeux de plateau le sont. Le Shôgi japonais et le Go chinois sont reconnus comme **patrimoines** culturels nationaux par leurs États respectifs depuis les années deux mille. Cette reconnaissance étatique sert souvent de tremplin vers une éventuelle inscription UNESCO. Les échecs pourraient logiquement suivre, mais aucun pays n'a porté la candidature pour l'instant, ce qui est révélateur : aucun État ne revendique exclusivement les échecs comme **patrimoine** national. C'est leur force et leur faiblesse.
-
-Quelques chiffres pour situer l'ampleur du **patrimoine** échiquéen contemporain. La Fédération internationale des échecs, la FIDE, recense deux cent mille joueurs classés dans deux cents pays en deux mille vingt-quatre. Chess.com revendique cent cinquante millions d'inscrits. Lichess publie en libre accès une base de plus de quatre milliards de parties. Cette masse de **données** constitue un **patrimoine** culturel vivant, en croissance permanente, sans équivalent historique pour aucun jeu.
-
-Plusieurs lieux et **fiches** patrimoniales mériteraient d'être identifiés. La salle du match à Reykjavik est partiellement conservée. Le musée des échecs de Saint-Pétersbourg expose l'**histoire** soviétique du jeu. La maison natale de Bobby Fischer à Brooklyn fait l'objet de demandes de classement. Aucune coordination internationale ne valorise ces **lieux de mémoire** comme un ensemble cohérent.
-
-Cette absence est significative. Elle pose la **question** : à qui appartient le **patrimoine** des échecs ? La réponse est juridiquement claire (à personne, ou plutôt à l'humanité comme bien commun), mais politiquement floue. Sans porteur étatique, ce **patrimoine** est exposé à deux risques opposés : la marchandisation totale par les plateformes privées (Chess.com, Lichess) et la captation nationaliste par certains États (Russie, Inde). Le débat ne fait que commencer.
-
-Pour ouvrir vers une autre dimension, on peut mentionner les **conflits** mémoriels contemporains autour des champions exilés ou contestés. Garry Kasparov, ex-champion du monde, opposant à Vladimir Poutine, exilé aux États-Unis depuis deux mille treize, est un objet de **mémoire** particulièrement complexe. Pour la Russie officielle, il est un traître. Pour les démocraties occidentales, c'est un héros de la liberté. Pour la **histoire**, c'est un grand maître dont l'œuvre échiquéenne devra être lue indépendamment des récits politiques contradictoires. Cette tension entre **histoire** et **mémoire** continue donc à opérer en temps réel.
-
-## Conclusion
-
-Pour répondre à ma **question** initiale, le match Fischer-Spassky de mille neuf cent soixante-douze est mémorialisé différemment selon les pays parce que la **mémoire** est toujours sélective au service des identités présentes. Le récit américain valorise le génie individuel, le récit russe la continuité de la **puissance**, le récit international la rencontre culturelle. Aucun n'est faux ; tous sont partiels.
-
-Cette observation, qui s'inscrit dans le cadre théorique de Pierre Nora, dépasse les échecs. Elle nous montre que les sociétés ne se souviennent pas simplement du passé : elles le reconstruisent en permanence en fonction de leurs besoins du moment. La **mémoire** n'est pas un magasin de stockage, c'est un atelier de fabrication identitaire. C'est exactement ce que l'**histoire** comme discipline académique cherche à mettre au jour : non pas pour disqualifier les **mémoires**, mais pour les comprendre comme objets d'étude.
-
-Pour ouvrir, on peut se demander si le numérique change radicalement cette dynamique. Les **données** massives produites par les plateformes constituent un **patrimoine** technique nouveau, théoriquement accessible à toutes les nations, qui pourrait fonder une **mémoire** historique commune dépassant les récits nationaux. C'est une hypothèse, à vérifier dans les décennies à venir.
-
-Je vous remercie pour votre attention et je suis prêt à répondre à vos **questions**.
-
----
-
-> **Pour aller plus loin :** [Sujet Grand Oral HGGSP sur Fischer-Spassky comme influence](/fr/blog/sujet-grand-oral-hggsp-fischer-spassky/) · [Sujet Grand Oral SES sur Bourdieu et reproduction](/fr/blog/sujet-grand-oral-ses-bourdieu-reproduction/) · [Hub méthodologie Grand Oral SES/HGGSP](/fr/blog/guide-grand-oral-echecs-ses-hggsp/)
+- Nora, P. (1989), *Between Memory and History: Les Lieux de Mémoire*, Representations, 26, 7–24. [Article](https://berlinarchaeology.wordpress.com/wp-content/uploads/2015/09/nora-1989-between-memory-and-history.pdf).
+- World Chess Hall of Fame (2022), *World Chess Hall of Fame Celebrates the 50th Anniversary of the Legendary 1972 World Chess Championship*, communiqué. [Document](https://worldchesshof.org/wp-content/uploads/2025/02/1972-Fischer-Spassky-Press-Release.pdf).
+- Ministère de l'Éducation nationale (2026), *Baccalauréat : comment se passe le Grand oral ?* [Épreuve](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).
