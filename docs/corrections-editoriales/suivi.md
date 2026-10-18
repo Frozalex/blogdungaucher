@@ -60,3 +60,7 @@ Corrigé : tutoiement, phrase d’ouverture, attribution Baddeley et Hitch, ajou
 ### reseaux-bayesiens-predire-blunder
 
 Corrigé : S dans la formule et les hypothèses du graphe ; événement B distingué de sa probabilité ; modèle pédagogique non présenté comme validé ; inférence non garantie tractable ; accents. Retirés : seuil Regan 2–3 minutes non retrouvé, loi de fatigue par rondes, équivalence automatique entre niveaux et attributions historiques non nécessaires. Source empirique réelle : [Anderson et al. 2016](https://arxiv.org/pdf/1606.04956). Cadre : [Friedman–Koller](https://ai.stanford.edu/~nir/Papers/FK1Full.pdf). Aucun marqueur ajouté.
+
+### neurones-miroirs-aux-echecs
+
+Réécriture autorisée : l’explication neuronale de l’anticipation échiquéenne n’est pas étayée. Retirés : étude attribuée à Susan Polgár, anecdote de la cacahuète, technique attribuée sans référence à Botvinnik, promesses d’entraînement des circuits miroirs et preuves d’imagerie non identifiées. Les exercices restent présentés comme pistes pratiques. Trois schémas remplacés pour retirer les mêmes affirmations. Sources ouvertes : [Di Pellegrino 1992](https://pubmed.ncbi.nlm.nih.gov/1301372/), [Casile 2011](https://pubmed.ncbi.nlm.nih.gov/21467305/). La seoDescription d’origine reste inchangée conformément à la contrainte SEO ; elle affirme encore un rôle des neurones miroirs plus fermement que le corps corrigé. Ce point nécessite une future décision sur le SEO, sans marqueur inséré dans l’article.
