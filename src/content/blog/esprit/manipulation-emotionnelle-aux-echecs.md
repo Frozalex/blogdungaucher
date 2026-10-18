@@ -24,205 +24,44 @@ seoDescription: >-
   Proposition de nulle piégeuse, tempo, langage corporel, trash talk : ce que la manipulation
   émotionnelle vise réellement pendant une partie d'échecs, et comment s'en protéger.
 faq:
-  - question: "Quelle est la différence entre jeu psychologique et manipulation aux échecs ?"
-    answer: >-
-      Le jeu psychologique légitime porte sur les coups : choisir une variante qui met l'adversaire mal
-      à l'aise, jouer une position qu'il déteste, accélérer quand il est en zeitnot. Tout se passe sur
-      l'échiquier. La manipulation vise l'état interne de l'adversaire par des moyens extérieurs à la
-      partie : gestes, commentaires, attitudes. La frontière est l'échiquier.
-  - question: "Une proposition de nulle peut-elle être une manipulation ?"
-    answer: >-
-      Oui, et c'est probablement l'outil le plus courant. Proposée dans une position perdante, elle sème
-      le doute : si l'adversaire propose la nulle, c'est peut-être que la position est moins claire que
-      tu ne le crois. Elle consomme du temps de réflexion et introduit une information fausse. Le
-      règlement encadre d'ailleurs les propositions répétées.
-  - question: "Le regard hypnotique de Mikhaïl Tal existait-il vraiment ?"
-    answer: >-
-      Non, au sens où aucun pouvoir de ce type n'existe. Ce qui existait, c'est la réputation. Un
-      adversaire convaincu d'être influencé consacre une part de son attention à cette pensée, et cette
-      part manque au calcul. L'effet est réel, sa cause ne l'est pas : il est produit par la croyance
-      de la cible, pas par une capacité du joueur.
-  - question: "Que s'est-il passé à Baguio en 1978 ?"
-    answer: >-
-      Le championnat du monde entre Karpov et Kortchnoï a été dominé par les conflits hors échiquier.
-      Kortchnoï accusait le parapsychologue soviétique Vladimir Zoukhar, assis dans la salle, de tenter
-      de le déconcentrer. Le camp Karpov reprochait à Kortchnoï ses lunettes à verres réfléchissants.
-      Un yaourt livré pendant une partie a fait l'objet d'une protestation écrite pour message codé.
-  - question: "Comment se protéger de la manipulation pendant une partie ?"
-    answer: >-
-      En décidant à l'avance plutôt qu'en réagissant sur le moment. Fixe avant la partie ta règle sur
-      les propositions de nulle, par exemple ne jamais répondre avant d'avoir évalué la position pendant
-      trois minutes. Le principe général est de rendre tes décisions indépendantes du comportement de
-      l'adversaire, puisque c'est précisément ce comportement qui est l'instrument.
+  - question: "Les offres de nulle répétées sont-elles autorisées ?"
+    answer: "Les offres déraisonnables peuvent enfreindre l'article 11.5. Les règles générales ne fixent pas un intervalle universel en nombre de coups."
+  - question: "Comment réagir à un adversaire qui me dérange ?"
+    answer: "Décris les faits à l'arbitre et laisse-le apprécier la situation. Un geste isolé ne suffit pas à établir une intention de manipulation."
 ---
 
-Tu es mieux. Nettement mieux. Tu as un pion de plus et une structure saine, et il te reste vingt minutes contre douze.
+Un soupir, un regard appuyé, une proposition de nulle au mauvais moment : ce qui se passe autour de l'échiquier peut te distraire. La difficulté est de réagir à un comportement observable sans prétendre lire les intentions de ton adversaire.
 
-Il propose la nulle.
+## Un geste ne donne pas accès à une intention
 
-Et pendant les quarante secondes qui suivent, tu ne calcules plus. Tu te demandes ce qu'il a vu. Un joueur ne propose pas la nulle sans raison. Il y a peut-être une ressource que tu n'as pas trouvée. Tu reviens sur la position avec un œil différent, tu commences à chercher ce qui pourrait mal tourner.
+Un joueur peut soupirer parce qu'il est déçu, fatigué ou préoccupé. Il peut aussi chercher à te déstabiliser. Le geste seul ne permet pas de trancher. Tu risques de perdre du temps en construisant une histoire que la position ne confirme pas.
 
-Il n'a rien vu. Il est perdu et il le sait. Mais il vient de t'acheter quarante secondes de doute pour le prix d'une phrase.
+Reviens aux questions auxquelles tu peux répondre : une menace existe-t-elle ? Combien de temps te reste-t-il ? Un comportement précis gêne-t-il le déroulement de la partie ? L'assurance affichée par l'autre joueur ne remplace pas le calcul d'une variante.
 
-## Où passe la frontière
+## Ce que les règles interdisent
 
-Il faut être précis d'entrée, parce que le sujet est glissant et que beaucoup de choses parfaitement légitimes ressemblent à de la manipulation. Les psychologues du sport distinguent d'ailleurs nettement ces deux registres : l'un porte sur des positions, l'autre sur un esprit.
+L'article 11.5 des règles FIDE applicables depuis 2023 interdit de distraire ou de déranger l'adversaire. Il mentionne les réclamations déraisonnables, les offres de nulle déraisonnables et les sources de bruit. L'arbitre apprécie la situation et les sanctions éventuelles.
 
-Le **jeu psychologique** fait partie des échecs depuis toujours et il est entièrement honorable. Choisir une variante fermée contre un joueur qui n'aime que les positions ouvertes est du jeu psychologique. Éviter une ligne théorique parce qu'on sait que l'adversaire l'a préparée en est aussi. Accélérer son rythme quand l'autre est en manque de temps également. Emanuel Lasker en avait fait un art.
+Tu n'as pas besoin de prouver un projet de manipulation pour signaler des paroles ou des bruits répétés. Décris les faits à l'arbitre : ce qui a été fait, sa répétition et la gêne occasionnée. Évite de régler le conflit par une provocation en retour.
 
-Le point commun de tous ces exemples : **tout se passe sur l'échiquier**. L'adversaire est mis en difficulté par des coups. Il a tous les moyens de répondre, et s'il joue mieux, il gagne.
+En cas de demande d'assistance, les règles précisent les conditions dans lesquelles tu peux mettre la pendule en pause. L'arbitre vérifie si le motif était valable ; ce n'est pas une pause libre de réflexion.
 
-La manipulation émotionnelle commence quand l'action porte sur **l'état interne** de l'adversaire par des moyens extérieurs à la position. Ce n'est plus son jeu qu'on attaque, c'est sa capacité à jouer.
+## Une proposition de nulle n'est pas une évaluation
 
-Deux précisions sur le cadre de cet article. Il traite uniquement de ce qui s'exerce **pendant** la partie. Ce qui se produit après, quand on réécrit ce qui s'est passé, relève d'un autre mécanisme, décrit dans notre article sur [le gaslighting aux échecs](/fr/blog/gaslighting-aux-echecs/). Et il ne s'agit pas de triche : personne ne consulte de moteur ici, ce qui est un tout autre sujet, traité dans [la triche aux échecs](/fr/blog/echecs-et-la-triche/).
+Selon l'article 9.1, le règlement d'une épreuve peut limiter les accords de nulle. Lorsqu'une offre est autorisée, elle se fait normalement après avoir joué et avant d'appuyer sur la pendule. Elle reste valable jusqu'à son acceptation, son rejet ou la fin de la partie, dans les conditions prévues par les règles.
 
-## Le cas d'école : Baguio, 1978
+Une offre ne prouve pas que la position est égale. Tu peux la refuser. Les règles générales ne fixent pas un nombre universel de coups à attendre entre deux offres : c'est leur caractère déraisonnable qui peut relever de l'article 11.5, avec les éventuelles dispositions propres à l'épreuve.
 
-Si tu veux voir jusqu'où le procédé peut aller, il existe un exemple que rien n'a jamais dépassé.
+Évalue la position et la situation du tournoi. Il n'existe pas de durée obligatoire de trois minutes pour examiner une proposition.
 
-Championnat du monde 1978, Baguio, aux Philippines. [Anatoli Karpov](https://fr.wikipedia.org/wiki/Anatoli_Karpov), champion en titre et représentant officiel de l'URSS, contre [Viktor Kortchnoï](https://fr.wikipedia.org/wiki/Viktor_Kortchno%C3%AF), qui a fui l'Union soviétique deux ans plus tôt et joue sans drapeau. Le contexte politique est explosif avant le premier coup.
+## Protéger ton attention
 
-Ce dont on se souvient n'est presque jamais une partie.
+Si un comportement attire ton regard, reprends une vérification simple : dernière modification de la position, menaces immédiates, coups candidats. Cette routine est un conseil pratique, pas une protection démontrée contre toute distraction.
 
-Kortchnoï accuse **Vladimir Zoukhar**, parapsychologue soviétique installé dans les premiers rangs de la salle, de chercher à le déstabiliser mentalement en le fixant pendant les parties. Il exige son déplacement. Le camp Karpov s'y oppose. La question occupe les organisateurs pendant des semaines.
+Après la partie, distingue l'incident de tes décisions. Une gêne réelle peut mériter un signalement même si tu as aussi commis une erreur. À l'inverse, une erreur ne démontre pas qu'un geste adverse l'a provoquée.
 
-Le camp Karpov, de son côté, proteste contre les **lunettes à verres réfléchissants** de Kortchnoï, qui empêchent de voir son regard.
-
-Et il y a le yaourt. Lors de la deuxième partie, on apporte à Karpov un yaourt aux myrtilles. Le camp Kortchnoï dépose une protestation écrite : la couleur et le moment de la livraison pourraient constituer un message codé.
-
-Karpov l'emporte finalement 6 à 5, au terme d'un match qui reste le sommet historique du genre.
-
-### Ce que l'affaire démontre vraiment
-
-Regarde bien ce qui s'est passé, parce que la leçon n'est pas celle qu'on croit.
-
-Zoukhar n'avait aucun pouvoir. La parapsychologie ne fonctionne pas. Un homme assis dans une salle et regardant un joueur ne peut pas altérer son calcul.
-
-Et pourtant l'effet a été considérable. Kortchnoï a consacré une part énorme de son énergie à cette affaire : protestations, négociations, surveillance de la salle, attention détournée à chaque partie.
-
-**L'effet n'a pas été produit par Zoukhar. Il a été produit par la conviction de Kortchnoï.** C'est exactement le mécanisme du nocebo, décrit dans notre article sur [l'effet placebo aux échecs](/fr/blog/effet-placebo-aux-echecs/) : l'attente négative agit là où l'attente positive n'agit pas. Aucune évaluation sérieuse de la parapsychologie n'a jamais confirmé qu'un regard puisse altérer une position sur l'échiquier.
-
-Ce qui livre le principe général de tout le sujet. **La manipulation ne fonctionne jamais directement.** Elle fonctionne en obtenant de toi que tu la traites.
-
-## Le répertoire réel
-
-Baguio est spectaculaire, mais ton club du mardi soir fonctionne autrement. Voici ce qui s'y pratique, du plus fréquent au plus rare.
-
-### La proposition de nulle comme arme
-
-L'outil numéro un, parce qu'il est gratuit, autorisé et efficace.
-
-Trois usages détournés. Dans une position perdante, elle **fabrique une information fausse** : ta position est peut-être moins bonne que tu ne le crois. Dans une position égale mais tendue, elle **teste ta fatigue** et t'offre une sortie honorable au moment où tu es le plus tenté. Répétée, elle devient purement **consommatrice** : chaque proposition impose une décision, et chaque décision coûte du temps et de l'attention.
-
-Le règlement encadre les propositions abusivement répétées, précisément parce que le problème est connu de longue date, et il fixe les conditions dans lesquelles une proposition peut être jugée dilatoire.
-
-### Le tempo comme message
-
-Celui-ci est presque invisible, et il est partout.
-
-Tu joues un coup au dixième coup d'une ouverture. Il répond en **deux secondes**. Le message est explicite sans être formulé : je connais cette position, c'est de la théorie pour moi, tu es déjà en terrain préparé.
-
-Souvent, c'est faux. Il a simplement joué vite. Mais tu viens de recevoir l'information, et tu vas passer les trois coups suivants à te demander jusqu'où va sa préparation, au lieu de regarder l'échiquier.
-
-La variante inverse existe : réfléchir très longuement sur un coup évident, pour te faire croire que la position contient quelque chose que tu n'as pas vu.
-
-### Le langage corporel
-
-Le soupir quand tu joues ton coup. Le sourire bref. Le fait de se lever immédiatement après avoir joué, comme si la suite était sans intérêt. Le regard appuyé.
-
-Chacun de ces gestes est nul en soi et ininterprétable. C'est justement ce qui les rend efficaces : ils ne transmettent aucune information, mais ils **déclenchent une recherche d'information**. Tu vas essayer de les lire, et cette lecture est du temps de calcul en moins.
-
-### Le commentaire en ligne
-
-Le chat des plateformes a industrialisé la chose. « nice blunder », le message d'après-défaite, la demande de revanche immédiate quand tu viens de perdre trois parties.
-
-La version la plus efficace n'est pas l'insulte, facile à ignorer, mais la **fausse bienveillance** : « t'inquiète, ça arrive », « tu joues bien pour ton niveau ». Elle ne se dénonce pas sans passer pour susceptible.
-
-### La préparation ostensible
-
-Arriver à la table avec un livre bien visible sur ton ouverture. Consulter des notes juste avant la ronde, à portée de vue. Rien n'est joué, rien n'est dit, et l'information est passée.
-
-## Ce qui distingue un joueur qui résiste d'un joueur qui subit
-
-Il y a une différence observable entre deux joueurs placés devant exactement le même comportement adverse, et elle ne tient pas au niveau échiquéen.
-
-Le premier joueur reçoit la proposition de nulle, le soupir, le coup joué en deux secondes, et il continue de calculer. Il enregistre l'événement, sans le traiter comme une information sur la position. Le second reçoit le même signal et son calcul s'interrompt : une partie de son attention part évaluer ce que l'adversaire vient de communiquer, plutôt que d'évaluer l'échiquier.
-
-Ce qui sépare les deux n'est pas un trait de caractère stable, une sorte de résistance mentale qu'on aurait ou pas. C'est une **habitude de traitement**, acquise ou non, qui consiste à trier systématiquement ce qui appartient à la position de ce qui appartient au comportement de l'adversaire. Un joueur expérimenté a souvent développé ce tri sans le nommer, à force de rencontrer des dizaines de propositions de nulle piégeuses ou de soupirs théâtraux : il a fini par apprendre, par la répétition, que ces signaux ne prédisent rien de fiable sur la qualité de sa propre position.
-
-Un débutant, ou un joueur qui n'a jamais identifié le mécanisme, n'a pas ce filtre. Chaque signal adverse lui arrive avec le même poids qu'une information sur l'échiquier, alors qu'aucun des deux n'a la même valeur. C'est précisément ce que cet article cherche à accélérer : construire consciemment, plutôt que par des années d'expérience accumulée, le tri qu'un joueur aguerri finit par faire automatiquement.
-
-## Ce que la manipulation n'est pas
-
-Il faut ajouter une précision qui manque souvent dans les discussions sur ce sujet, parce que la confusion inverse existe aussi et qu'elle est tout aussi coûteuse.
-
-Un adversaire qui joue vite parce qu'il connaît la position ne manipule pas. Un adversaire qui soupire parce qu'il est réellement fatigué ne manipule pas. Un adversaire qui propose la nulle parce qu'il évalue honnêtement que la position est égale ne manipule pas. La très grande majorité des comportements observés à l'échiquier n'ont aucune intention derrière eux : ce sont des réactions ordinaires, pas des tactiques.
-
-C'est un point important, parce qu'un joueur qui devient trop vigilant bascule dans un autre travers, symétrique du premier : il se met à interpréter chaque geste adverse comme une attaque, ce qui consomme exactement la même ressource d'attention que la manipulation elle-même. Voir de la manipulation partout est, du point de vue du coût cognitif, aussi néfaste que de s'y laisser prendre.
-
-La bonne posture n'est donc pas la suspicion permanente, mais l'indifférence méthodique : traiter systématiquement tout signal extérieur à la position comme non pertinent pour la décision, qu'il soit ou non intentionnel. Cette règle a l'avantage de fonctionner sans qu'il soit nécessaire de deviner les intentions de l'adversaire, ce qui est de toute façon impossible à faire de façon fiable en cours de partie.
-
-## Pourquoi ça marche
-
-Aucun de ces procédés ne rend une position meilleure. Aucun ne trouve un coup. Alors pourquoi sont-ils efficaces ?
-
-Parce qu'ils n'attaquent pas ton calcul. **Ils attaquent la ressource avec laquelle tu calcules.** La théorie qui décrit le mieux ce mécanisme n'est pas propre aux échecs : c'est celle de l'attention comme ressource limitée, partagée entre l'évaluation de la position et tout le reste.
-
-Une partie d'échecs consomme une quantité limitée d'attention, et cette limite est étroite. Chaque pensée non échiquéenne y prélève une part : « pourquoi il a soupiré », « est-ce qu'il a préparé ça », « il se moque de moi ». Ces pensées ne durent que quelques secondes, mais elles arrivent aux pires moments, ceux où la position est critique et où l'adversaire vient justement d'agir.
-
-C'est aussi pour cette raison que les défenses par la volonté ne marchent pas. Décider d'ignorer un comportement suppose d'abord de le remarquer, donc de le traiter. L'ignorer coûte déjà quelque chose. La seule défense efficace consiste à **rendre la décision indépendante du comportement**, ce qui suppose de l'avoir prise avant.
-
-## Le cas particulier des enfants et des jeunes joueurs
-
-Un mot à part sur les catégories jeunes, parce que le rapport à la manipulation y est fondamentalement différent, et parce que les parents et les entraîneurs qui suivent ce genre de compétitions ont un rôle spécifique à jouer.
-
-Un enfant dispose de beaucoup moins de ressources pour identifier ce qui relève de la position et ce qui relève du comportement de l'adversaire. Il n'a pas encore accumulé les centaines de parties nécessaires pour développer, comme évoqué plus haut, le tri automatique entre information utile et bruit. Un soupir, un sourire moqueur ou une proposition de nulle mal intentionnée ont donc, chez un jeune joueur, un effet proportionnellement plus important que chez un adulte expérimenté, alors même que l'enfant dispose de moins de moyens pour s'en défendre verbalement ou pour faire appel à un arbitre.
-
-C'est une des raisons pour lesquelles beaucoup de clubs et de fédérations insistent, dans la formation des jeunes joueurs, sur l'apprentissage explicite de cette distinction entre le jeu et le comportement. Plutôt que d'attendre que l'enfant développe ce filtre par la seule expérience, ce qui prend des années, certains entraîneurs choisissent de l'enseigner directement, sous une forme simple : ce qui se passe sur l'échiquier compte, ce qui se passe autour de l'échiquier ne compte pas. Une règle courte, répétée avant chaque tournoi, qui donne à l'enfant un repère concret au moment où il en a besoin.
-
-Les parents ont eux aussi un rôle à jouer, mais un rôle limité et parfois contre-intuitif : ne pas intervenir pendant la partie, ce qui est généralement interdit de toute façon par le règlement, mais surtout ne pas transformer chaque anecdote rapportée après coup en drame qui renforcerait, sans le vouloir, l'idée que l'adversaire a effectivement eu un pouvoir sur le déroulement de la partie. Relativiser l'incident, sans le nier, aide l'enfant à construire progressivement la même indifférence méthodique que celle recommandée plus haut pour les adultes.
-
-## Ce que révèlent les fédérations et les arbitres
-
-Le sujet n'est pas propre aux clubs amateurs. Les instances qui organisent les compétitions ont depuis longtemps identifié une partie de ces comportements comme suffisamment problématiques pour justifier des règles écrites, ce qui en dit long sur la fréquence du phénomène et sur le coût qu'il représente pour l'équité de la compétition.
-
-Le code de conduite qui encadre les tournois officiels interdit explicitement de perturber ou de distraire son adversaire, quelle que soit la méthode employée. Cette formulation volontairement large couvre aussi bien les gestes que les commentaires, et elle donne à l'arbitre une marge d'appréciation pour intervenir même quand aucune règle précise n'a été enfreinte au sens strict. Un joueur qui multiplie les soupirs ostentatoires, qui se lève et s'assoit sans nécessité, ou qui adresse des regards insistants à son adversaire peut être rappelé à l'ordre sur cette seule base, sans qu'il soit besoin de prouver une intention.
-
-Les propositions de nulle répétées sont encadrées séparément, avec des règles spécifiques sur le nombre de coups à attendre avant de renouveler une offre déjà refusée. Ce détail réglementaire, souvent ignoré des joueurs de club, existe précisément parce que le procédé a été identifié comme un outil de nuisance récurrent, utilisé pour fatiguer un adversaire plutôt que pour chercher une issue légitime à la partie.
-
-Ce que montre l'existence même de ces textes, c'est que la frontière entre jeu psychologique et manipulation n'est pas seulement une distinction théorique posée par cet article : elle est reconnue comme suffisamment réelle et suffisamment coûteuse pour mériter une réglementation. Un arbitre expérimenté sait généralement reconnaître un joueur qui utilise ces procédés de façon répétée, même si chaque incident pris isolément semble anodin.
-
-## Cinq défenses
-
-**Décide avant, pas pendant.** Fixe ta règle sur les propositions de nulle avant de t'asseoir. Par exemple : je ne réponds jamais avant d'avoir évalué la position pendant trois minutes, quelle que soit ma conviction. Une règle décidée à froid ne se négocie pas à chaud, et surtout elle ne dépend plus de qui propose, ni quand, ni dans quelles conditions.
-
-**Traite le tempo adverse comme du bruit.** La vitesse à laquelle il joue n'est pas une donnée sur la position. C'est une donnée sur lui. La seule source d'information fiable sur la position est la position.
-
-**Fais du temps d'attente un temps utile.** Le vide est ce qui rend vulnérable. Pendant que l'adversaire réfléchit, aie une tâche fixe : recenser tes pièces mal placées, chercher son meilleur plan, vérifier les cases faibles. Une attention occupée ne se laisse pas capter.
-
-**Coupe le canal quand il existe.** En ligne, désactive le chat. Ce n'est pas un aveu de fragilité, c'est de la gestion de ressource. Aucun message reçu pendant une partie ne t'aidera à mieux jouer.
-
-**Utilise les canaux prévus, sans en faire une affaire.** Si un comportement dépasse les limites, l'arbitre existe et le règlement prévoit ce cas. Le signaler et revenir à la partie coûte bien moins cher que de le gérer soi-même pendant deux heures. C'est précisément la leçon de Kortchnoï : il a essayé de traiter le problème lui-même, et le traitement lui a coûté plus que le problème.
-
-## Ce qu'il faut retenir
-
-La manipulation émotionnelle aux échecs ne cherche pas à te faire jouer un mauvais coup. Elle cherche à occuper la place dont tu as besoin pour trouver le bon. C'est une attaque sur la ressource, pas sur la position, et c'est pour ça qu'elle est si économique : une phrase de quatre mots peut coûter une minute de calcul à un moment critique.
-
-Son mécanisme suppose ta participation. Zoukhar n'avait aucun pouvoir, et le regard de Tal non plus. Ce qui a fonctionné, dans les deux cas, c'est la conviction de la cible. La manipulation est une proposition : elle n'a d'effet que si tu la traites.
-
-D'où la seule défense qui tienne. Non pas être plus fort mentalement, ce qui ne veut rien dire à trois heures de partie, mais **avoir décidé à l'avance** ce qui ne dépendra pas de lui.
-
-Un dernier point mérite d'être répété, parce qu'il change complètement la manière d'aborder une partie contre un adversaire réputé pour ce genre de pratiques. Le joueur qui a recours à la manipulation le fait presque toujours depuis une position de faiblesse, pas de force. Un joueur qui domine nettement la partie n'a aucun intérêt à multiplier les distractions : il préfère que tu restes concentré sur une position qu'il maîtrise déjà. C'est précisément quand la position se retourne contre lui, ou quand il sent le rapport de force basculer, que le répertoire des gestes, des soupirs et des propositions de nulle se met en marche. Reconnaître ce signal peut se retourner en ta faveur : une manipulation qui se déclenche est souvent, en elle-même, une information sur l'état réel de la partie.
-
-**Après lecture :** écris ta règle sur les propositions de nulle. Une phrase, applicable sans réfléchir, valable quelle que soit la position. Tu viens de retirer un outil du répertoire adverse.
-
----
-
-*Cet article fait partie d'une série sur la psychologie appliquée aux échecs. Voir aussi [le gaslighting aux échecs](/fr/blog/gaslighting-aux-echecs/), qui traite de ce qui se produit après la partie, et [les mécanismes de défense aux échecs](/fr/blog/mecanismes-de-defense-aux-echecs/).*
+Les anecdotes sur des pouvoirs hypnotiques ou les diagnostics à distance ajoutent peu à cette démarche. Tu peux défendre tes conditions de jeu en t'appuyant sur les faits et sur l'arbitrage.
 
 ## Sources
 
-- Fédération internationale des échecs. *Lois des échecs*, article 11 : conduite des joueurs.
-- Kortchnoï, V. (1981). *Chess Is My Life*. Arco.
-- Karpov, A., & Roshal, A. (1980). *Karpov on Karpov*. Atheneum.
-- Beedie, C. J., & Foad, A. J. (2009). The placebo effect in sports performance : A brief review. *Sports Medicine*, 39(4), 313–329.
+- FIDE (2023), *FIDE Laws of Chess*, règles 6.11, 9.1, 11.5 et 12.9, Fédération internationale des échecs. [Texte officiel](https://handbook.fide.com/chapter/e012023).
