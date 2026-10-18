@@ -258,7 +258,7 @@ Processus de **réduction de la taille** d'un fichier CSS ou JavaScript en suppr
 Voir **Extension `.mjs`**.
 
 ### Motion Canvas
-Outil permettant de **créer des vidéos d'animation à partir de code**. Utilisé pour les vidéos récap d'articles. Le projet vidéo est dans le dossier `motion-canvas/`. (Voir [chapitre 15](15-pdf-et-videos.md).)
+Ancien outil de création de vidéos d'animation à partir de code, **retiré du dépôt le 18 octobre 2026**. Le site conserve la lecture des MP4 produits en dehors du projet. (Voir [chapitre 15](15-pdf-et-videos.md).)
 
 ---
 

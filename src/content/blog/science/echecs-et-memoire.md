@@ -26,9 +26,6 @@ seoDescription: >-
   Mémoire de travail, chunks de Chase & Simon, mémoire procédurale : comment les échecs transforment la mémoire et dans
   quelles conditions ces gains se transfèrent réellement.
 ogImage: /images/blog/echecs-et-memoire-hero.webp
-summaryVideo: /videos/summary-echecs-et-memoire.mp4
-summaryVideoNote: >-
-  Version 1, résumé visuel de l'article (~2 min, sans son pour l'instant). Produite avec Motion Canvas, en itération.
 heroImage:
   src: /images/blog/echecs-et-memoire-hero.webp
   alt: >-

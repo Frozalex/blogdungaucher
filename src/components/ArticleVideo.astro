@@ -2,12 +2,11 @@
 /**
  * Lecteur vidéo intégré aux articles.
  *
- * Affiche un MP4 produit par Motion Canvas (cf. motion-canvas/README.md pour
- * le workflow de rendu). Le fichier vit dans `public/videos/` et est référencé
+ * Affiche un MP4 déposé dans `public/videos/` et référencé
  * via le champ frontmatter `summaryVideo` de l'article (chemin commençant par /).
  *
- * Si le fichier n'existe pas encore (asset absent), le composant ne rend rien.
- * Le `<noscript>` fallback garantit que la vidéo reste lisible sans JS.
+ * Les pages d'articles vérifient la présence du fichier avant d'afficher le lecteur.
+ * Les contrôles HTML natifs permettent la lecture sans JavaScript.
  */
 interface Props {
   src: string;

@@ -1,0 +1,95 @@
+{
+  "editorStatus": 200,
+  "pageErrors": [],
+  "scenes": [
+    {
+      "scene": "blog-teaser",
+      "duration": 1260,
+      "frames": [
+        {
+          "time": 1,
+          "canvasWidth": 480,
+          "boards": []
+        },
+        {
+          "time": 5,
+          "canvasWidth": 480,
+          "boards": []
+        },
+        {
+          "time": 125,
+          "canvasWidth": 480,
+          "boards": []
+        },
+        {
+          "time": 280,
+          "canvasWidth": 480,
+          "boards": []
+        },
+        {
+          "time": 450,
+          "canvasWidth": 480,
+          "boards": []
+        }
+      ],
+      "logs": [
+        {
+          "level": "debug",
+          "message": "render iterations: 2"
+        },
+        {
+          "level": "debug",
+          "message": "render iterations: 2"
+        }
+      ]
+    },
+    {
+      "scene": "summary-echecs-et-memoire",
+      "duration": 94,
+      "frames": [
+        {
+          "time": 1,
+          "canvasWidth": 480,
+          "boards": []
+        },
+        {
+          "time": 15,
+          "canvasWidth": 480,
+          "boards": [
+            {
+              "size": {
+                "x": 520,
+                "y": 520
+              },
+              "pieces": 31
+            }
+          ]
+        },
+        {
+          "time": 25,
+          "canvasWidth": 480,
+          "boards": [
+            {
+              "size": {
+                "x": 520,
+                "y": 520
+              },
+              "pieces": 31
+            }
+          ]
+        },
+        {
+          "time": 35,
+          "canvasWidth": 480,
+          "boards": []
+        },
+        {
+          "time": 45,
+          "canvasWidth": 480,
+          "boards": []
+        }
+      ],
+      "logs": []
+    }
+  ]
+}

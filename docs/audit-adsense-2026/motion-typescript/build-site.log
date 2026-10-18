@@ -1,0 +1,561 @@
+> blog-d-un-gaucher@1.0.0 build
+> node scripts/generate-og-png.mjs && node scripts/generate-image-variants.mjs && node scripts/check-publish-weekly.mjs && astro build && pagefind --site dist --glob "{fr,en,pt-br}/blog/**/*.html" && node scripts/strip-inline-script-comments.mjs && node scripts/add-image-srcset.mjs && node scripts/finalize-public-navigation.mjs && node scripts/verify-dist-urls.mjs && node scripts/check-dead-links.mjs
+
+Wrote /home/chacalcha/Bureau/Website project/blog-gaucher/public/images/og-default.png
+[image-variants] 3 variante(s) écrite(s), 213 à jour, 9 largeur(s) ignorée(s) (source plus petite), 75 largeur(s) au manifeste.
+OK : 88 billet(s) sur la grille (≥ 2026-08-31).
+  mardi   — séries     : 51 billet(s), jusqu'au 2027-08-17
+  lun/jeu — hors série : 37 billet(s) sur 19 semaine(s), jusqu'au 2027-01-04
+17:06:42 [content] Syncing content
+17:06:44 [content] Synced content
+17:06:44 [types] Generated 3.39s
+17:06:44 [build] output: "static"
+17:06:44 [build] mode: "static"
+17:06:44 [build] directory: /home/chacalcha/Bureau/Website project/blog-gaucher/dist/
+17:06:44 [build] Collecting build info...
+17:06:44 [build] ✓ Completed in 3.54s.
+17:06:44 [build] Building static entrypoints...
+17:06:47 [vite] ✓ built in 3.38s
+17:06:48 [vite] ✓ built in 565ms
+17:06:48 [build] Rearranging server assets...
+
+ generating static routes
+17:06:49   ├─ /404.html (+57ms)
+17:06:49   ├─ /blog/echecs-et-autisme/index.html (+4ms)
+17:06:49   ├─ /blog/echecs-et-femmes/index.html (+3ms)
+17:06:49   ├─ /blog/les-echecs-et-l-addiction/index.html (+2ms)
+17:06:49   ├─ /blog/les-echecs-et-le-cerveau/index.html (+3ms)
+17:06:49   ├─ /blog/les-echecs-et-les-mathematiques/index.html (+2ms)
+17:06:49   ├─ /blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/index.html (+2ms)
+17:06:49   ├─ /blog/psychologie-du-joueur-d-echecs/index.html (+3ms)
+17:06:49   ├─ /blog-index/en.json17:06:49 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+17:06:49 [WARN] [content] Entry enTranslations → echecs-et-le-corps was not found.
+17:06:49 [WARN] [content] Entry enTranslations → echecs-religion-et-interdit was not found.
+17:06:49 [WARN] [content] Entry enTranslations → echecs-vs-philosophie-pensee-strategique was not found.
+ (+131ms)
+17:06:49   ├─ /blog-index/fr.json (+119ms)
+17:06:50   ├─ /blog-index/nl.json (+122ms)
+17:06:50   ├─ /blog-index/pt-br.json (+120ms)
+17:06:50   ├─ /en/about/index.html (+10ms)
+17:06:50   ├─ /en/accessibility/index.html (+8ms)
+17:06:50   ├─ /en/blog/5-biais-cognitifs-blunder/index.html (+2ms)
+17:06:50   ├─ /en/blog/biais-du-survivant-aux-echecs/index.html (+2ms)
+17:06:50   ├─ /en/blog/bienfaits-des-echecs-sur-le-cerveau/index.html (+1ms)
+17:06:50   ├─ /en/blog/bienfaits-des-pauses-aux-echecs/index.html (+2ms)
+17:06:50   ├─ /en/blog/burnout-chess/index.html (+1ms)
+17:06:50   ├─ /en/blog/chess-and-cognitive-aging/index.html (+1ms)
+17:06:50   ├─ /en/blog/chess-and-seniors/index.html (+2ms)
+17:06:50   ├─ /en/blog/chess-benefits-for-the-brain/index.html (+2ms)
+17:06:50   ├─ /en/blog/chess-impostor-syndrome/index.html (+1ms)
+17:06:50   ├─ /en/blog/dissonance-cognitive-aux-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-alphazero-stockfish/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-alzheimer-prevention-declin-cognitif/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-en-prison/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-argent/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-autisme/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-colere-ragequit/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-complexite-algorithmique/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-concentration/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-confiance-en-soi/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-culture-populaire/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-diplomatie/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-dopamine/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-ecole/index.html (+2ms)
+17:06:50   ├─ /en/blog/echecs-et-enfants/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-femmes/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-flow/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-genetique/index.html (+2ms)
+17:06:50   ├─ /en/blog/echecs-et-handicap/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-hpi/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-meditation/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-memoire/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-perfectionnisme-toxique/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-resilience/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-seniors/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-sommeil/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-streaming/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-syndrome-imposteur/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-tdah/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-therapie/index.html (+2ms)
+17:06:50   ├─ /en/blog/echecs-et-vision-spatiale/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-et-visualisation/index.html (+2ms)
+17:06:50   ├─ /en/blog/echecs-gestion-du-temps/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-memoire-de-travail/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-peur-de-gagner/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-peur-de-perdre/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-stress-tournoi/index.html (+1ms)
+17:06:50   ├─ /en/blog/echecs-vieillissement-cognitif/index.html (+2ms)
+17:06:50   ├─ /en/blog/effet-dunning-kruger-aux-echecs/index.html (+2ms)
+17:06:50   ├─ /en/blog/effet-placebo-aux-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/gaslighting-aux-echecs/index.html (+2ms)
+17:06:50   ├─ /en/blog/graphes-de-nash-equilibre-ouvertures/index.html (+1ms)
+17:06:50   ├─ /en/blog/les-echecs-et-l-addiction/index.html (+1ms)
+17:06:50   ├─ /en/blog/les-echecs-et-le-cerveau/index.html (+2ms)
+17:06:50   ├─ /en/blog/les-echecs-et-les-mathematiques/index.html (+1ms)
+17:06:50   ├─ /en/blog/logique-modale-aux-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/loi-de-murphy-aux-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/manipulation-emotionnelle-aux-echecs/index.html (+2ms)
+17:06:50   ├─ /en/blog/mecanismes-de-defense-aux-echecs/index.html (+2ms)
+17:06:50   ├─ /en/blog/minimax-aux-echecs/index.html (+2ms)
+17:06:50   ├─ /en/blog/neurones-miroirs-aux-echecs/index.html (+2ms)
+17:06:50   ├─ /en/blog/neuroplasticite-aux-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/paradoxe-de-zermelo/index.html (+1ms)
+17:06:50   ├─ /en/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/index.html (+1ms)
+17:06:50   ├─ /en/blog/psychologie-du-joueur-d-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/regle-40-40-20-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/reseaux-bayesiens-predire-blunder/index.html (+1ms)
+17:06:50   ├─ /en/blog/syndrome-imposteur-2000-elo/index.html (+1ms)
+17:06:50   ├─ /en/blog/syndrome-imposteur-aux-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/theorie-de-l-attachement-aux-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/theorie-des-jeux-aux-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/theorie-du-chaos-aux-echecs/index.html (+1ms)
+17:06:50   ├─ /en/blog/reseau-mode-defaut-aux-echecs/index.html17:06:50 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+113ms)
+17:06:50   ├─ /en/blog/emotional-manipulation-in-chess/index.html (+228ms)
+17:06:50   ├─ /en/blog/chess-mental-visualization/index.html (+137ms)
+17:06:50   ├─ /en/blog/chess-tournament-stress/index.html (+132ms)
+17:06:51   ├─ /en/blog/placebo-effect-in-chess/index.html (+170ms)
+17:06:51   ├─ /en/blog/chess-and-disability/index.html (+134ms)
+17:06:51   ├─ /en/blog/alphazero-vs-stockfish/index.html (+133ms)
+17:06:51   ├─ /en/blog/attachment-theory-in-chess/index.html (+143ms)
+17:06:51   ├─ /en/blog/chess-and-concentration/index.html (+150ms)
+17:06:51   ├─ /en/blog/echecs-et-le-corps/index.html17:06:51 [WARN] [content] Entry enTranslations → echecs-et-le-corps was not found.
+ (+214ms)
+17:06:52   ├─ /en/blog/defense-mechanisms-in-chess/index.html (+149ms)
+17:06:52   ├─ /en/blog/chess-resilience/index.html (+140ms)
+17:06:52   ├─ /en/blog/chess-and-streaming/index.html (+129ms)
+17:06:52   ├─ /en/blog/neuroplasticity-and-chess/index.html (+138ms)
+17:06:52   ├─ /en/blog/chess-and-working-memory/index.html (+122ms)
+17:06:52   ├─ /en/blog/chess-time-management/index.html (+127ms)
+17:06:52   ├─ /en/blog/survivorship-bias-in-chess/index.html (+126ms)
+17:06:52   ├─ /en/blog/chess-and-popular-culture/index.html (+135ms)
+17:06:53   ├─ /en/blog/chess-and-diplomacy/index.html (+119ms)
+17:06:53   ├─ /en/blog/cognitive-dissonance-in-chess/index.html (+132ms)
+17:06:53   ├─ /en/blog/chess-and-flow/index.html (+131ms)
+17:06:53   ├─ /en/blog/gaslighting-in-chess/index.html (+131ms)
+17:06:53   ├─ /en/blog/chess-algorithmic-complexity/index.html (+156ms)
+17:06:53   ├─ /en/blog/chess-and-self-confidence/index.html (+127ms)
+17:06:53   ├─ /en/blog/dunning-kruger-effect-in-chess/index.html (+150ms)
+17:06:54   ├─ /en/blog/teaching-chess-to-children/index.html (+150ms)
+17:06:54   ├─ /en/blog/chess-and-meditation/index.html (+132ms)
+17:06:54   ├─ /en/blog/murphys-law-in-chess/index.html (+105ms)
+17:06:54   ├─ /en/blog/chess-burnout/index.html (+113ms)
+17:06:54   ├─ /en/blog/chess-as-therapy/index.html (+118ms)
+17:06:54   ├─ /en/blog/chess-and-genetics/index.html (+129ms)
+17:06:54   ├─ /en/blog/5-cognitive-biases-blunder/index.html (+108ms)
+17:06:54   ├─ /en/blog/chess-and-giftedness/index.html (+126ms)
+17:06:55   ├─ /en/blog/fear-of-losing-in-chess/index.html (+108ms)
+17:06:55   ├─ /en/blog/echecs-religion-et-interdit/index.html17:06:55 [WARN] [content] Entry enTranslations → echecs-religion-et-interdit was not found.
+ (+197ms)
+17:06:55   ├─ /en/blog/chess-and-spatial-vision/index.html (+134ms)
+17:06:55   ├─ /en/blog/fear-of-winning-in-chess/index.html (+119ms)
+17:06:55   ├─ /en/blog/chess-in-schools/index.html (+208ms)
+17:06:55   ├─ /en/blog/chess-toxic-perfectionism/index.html (+121ms)
+17:06:55   ├─ /en/blog/chess-and-dopamine/index.html (+233ms)
+17:06:56   ├─ /en/blog/impostor-syndrome-2000-elo/index.html (+171ms)
+17:06:56   ├─ /en/blog/chess-in-prison/index.html (+320ms)
+17:06:56   ├─ /en/blog/impostor-syndrome-in-chess/index.html (+155ms)
+17:06:56   ├─ /en/blog/chess-and-sleep/index.html (+218ms)
+17:06:56   ├─ /en/blog/chess-and-adhd/index.html (+242ms)
+17:06:57   ├─ /en/blog/chess-and-anger-ragequit/index.html (+128ms)
+17:06:57   ├─ /en/blog/bayesian-networks-predict-blunders/index.html (+164ms)
+17:06:57   ├─ /en/blog/echecs-vs-philosophie-pensee-strategique/index.html17:06:57 [WARN] [content] Entry enTranslations → echecs-vs-philosophie-pensee-strategique was not found.
+ (+176ms)
+17:06:57   ├─ /en/blog/mirror-neurons-in-chess/index.html (+117ms)
+17:06:57   ├─ /en/blog/modal-logic-in-chess/index.html (+151ms)
+17:06:57   ├─ /en/blog/chaos-theory-in-chess/index.html (+178ms)
+17:06:58   ├─ /en/blog/chess-and-memory/index.html (+174ms)
+17:06:58   ├─ /en/blog/benefits-of-breaks-in-chess/index.html (+126ms)
+17:06:58   ├─ /en/blog/minimax-in-chess/index.html (+160ms)
+17:06:58   ├─ /en/blog/chess-and-money/index.html (+245ms)
+17:06:58   ├─ /en/blog/nash-equilibrium-openings/index.html (+190ms)
+17:06:59   ├─ /en/blog/chess-and-alzheimer-prevention/index.html (+182ms)
+17:06:59   ├─ /en/blog/zermelo-paradox/index.html (+156ms)
+17:06:59   ├─ /en/blog/chess-40-40-20-rule/index.html (+190ms)
+17:06:59   ├─ /en/blog/game-theory-in-chess/index.html (+199ms)
+17:06:59   ├─ /en/blog/chess-mathematical-problem-and-ai/index.html (+173ms)
+17:06:59   ├─ /en/blog/chess-player-psychology/index.html (+154ms)
+17:07:00   ├─ /en/blog/chess-and-the-brain/index.html (+157ms)
+17:07:00   ├─ /en/blog/chess-and-women/index.html (+204ms)
+17:07:00   ├─ /en/blog/chess-and-addiction/index.html (+123ms)
+17:07:00   ├─ /en/blog/chess-and-mathematics/index.html (+156ms)
+17:07:00   ├─ /en/blog/chess-and-autism/index.html (+180ms)
+17:07:00   ├─ /en/blog/index.html17:07:01 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+17:07:01 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+124ms)
+17:07:01   ├─ /en/blog/2/index.html17:07:01 [WARN] [content] Entry enTranslations → echecs-et-le-corps was not found.
+17:07:01 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+120ms)
+17:07:01   ├─ /en/blog/3/index.html17:07:01 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+110ms)
+17:07:01   ├─ /en/blog/4/index.html17:07:01 [WARN] [content] Entry enTranslations → echecs-religion-et-interdit was not found.
+17:07:01 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+110ms)
+17:07:01   ├─ /en/blog/5/index.html17:07:01 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+109ms)
+17:07:01   ├─ /en/blog/6/index.html17:07:01 [WARN] [content] Entry enTranslations → echecs-vs-philosophie-pensee-strategique was not found.
+17:07:01 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+108ms)
+17:07:01   ├─ /en/blog/7/index.html17:07:01 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+106ms)
+17:07:01   ├─ /en/blog/8/index.html17:07:01 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+105ms)
+17:07:01   ├─ /en/contact/index.html (+9ms)
+17:07:01   ├─ /en/dissertations/index.html (+6ms)
+17:07:01   ├─ /en/esprit/index.html (+119ms)
+17:07:01   ├─ /en/essais/index.html (+2ms)
+17:07:01   ├─ /en/grand-oral/index.html (+4ms)
+17:07:01   ├─ /en/legal-notice/index.html (+7ms)
+17:07:01   ├─ /en/privacy-policy/index.html (+7ms)
+17:07:01   ├─ /en/recherche/index.html (+102ms)
+17:07:02   ├─ /en/rss.xml (+103ms)
+17:07:02   ├─ /en/science/index.html17:07:02 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+17:07:02 [WARN] [content] Entry enTranslations → echecs-et-le-corps was not found.
+ (+113ms)
+17:07:02   ├─ /en/series/psychologie/index.html (+108ms)
+17:07:02   ├─ /en/series/index.html (+104ms)
+17:07:02   ├─ /en/societe/index.html17:07:02 [WARN] [content] Entry enTranslations → echecs-religion-et-interdit was not found.
+17:07:02 [WARN] [content] Entry enTranslations → echecs-vs-philosophie-pensee-strategique was not found.
+ (+112ms)
+17:07:02   ├─ /en/terms-of-use/index.html (+7ms)
+17:07:02   ├─ /en/index.html17:07:02 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+17:07:02 [WARN] [content] Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+213ms)
+17:07:02   ├─ /fr/about/index.html (+7ms)
+17:07:02   ├─ /fr/accessibilite/index.html (+6ms)
+17:07:02   ├─ /fr/blog/bienfaits-des-echecs-sur-le-cerveau/index.html (+2ms)
+17:07:02   ├─ /fr/blog/echecs-et-seniors/index.html (+2ms)
+17:07:02   ├─ /fr/blog/echecs-et-syndrome-imposteur/index.html (+1ms)
+17:07:02   ├─ /fr/blog/echecs-vieillissement-cognitif/index.html (+1ms)
+17:07:02   ├─ /fr/blog/guide-grand-oral-echecs-maths/index.html (+2ms)
+17:07:02   ├─ /fr/blog/reseau-mode-defaut-aux-echecs/index.html (+108ms)
+17:07:02   ├─ /fr/blog/manipulation-emotionnelle-aux-echecs/index.html (+196ms)
+17:07:03   ├─ /fr/blog/echecs-et-visualisation/index.html (+142ms)
+17:07:03   ├─ /fr/blog/echecs-stress-tournoi/index.html (+150ms)
+17:07:03   ├─ /fr/blog/effet-placebo-aux-echecs/index.html (+166ms)
+17:07:03   ├─ /fr/blog/echecs-et-handicap/index.html (+141ms)
+17:07:03   ├─ /fr/blog/echecs-alphazero-stockfish/index.html (+176ms)
+17:07:03   ├─ /fr/blog/theorie-de-l-attachement-aux-echecs/index.html (+185ms)
+17:07:04   ├─ /fr/blog/echecs-et-concentration/index.html (+167ms)
+17:07:04   ├─ /fr/blog/echecs-et-le-corps/index.html (+147ms)
+17:07:04   ├─ /fr/blog/mecanismes-de-defense-aux-echecs/index.html (+197ms)
+17:07:04   ├─ /fr/blog/echecs-et-resilience/index.html (+155ms)
+17:07:04   ├─ /fr/blog/echecs-et-streaming/index.html (+137ms)
+17:07:04   ├─ /fr/blog/neuroplasticite-aux-echecs/index.html (+167ms)
+17:07:05   ├─ /fr/blog/echecs-memoire-de-travail/index.html (+145ms)
+17:07:05   ├─ /fr/blog/echecs-gestion-du-temps/index.html (+155ms)
+17:07:05   ├─ /fr/blog/biais-du-survivant-aux-echecs/index.html (+174ms)
+17:07:05   ├─ /fr/blog/echecs-et-culture-populaire/index.html (+144ms)
+17:07:05   ├─ /fr/blog/echecs-et-diplomatie/index.html (+152ms)
+17:07:05   ├─ /fr/blog/dissonance-cognitive-aux-echecs/index.html (+191ms)
+17:07:06   ├─ /fr/blog/echecs-et-flow/index.html (+166ms)
+17:07:06   ├─ /fr/blog/gaslighting-aux-echecs/index.html (+171ms)
+17:07:06   ├─ /fr/blog/echecs-et-complexite-algorithmique/index.html (+173ms)
+17:07:06   ├─ /fr/blog/echecs-et-confiance-en-soi/index.html (+193ms)
+17:07:06   ├─ /fr/blog/effet-dunning-kruger-aux-echecs/index.html (+216ms)
+17:07:06   ├─ /fr/blog/echecs-et-enfants/index.html (+178ms)
+17:07:07   ├─ /fr/blog/echecs-et-meditation/index.html (+164ms)
+17:07:07   ├─ /fr/blog/loi-de-murphy-aux-echecs/index.html (+106ms)
+17:07:07   ├─ /fr/blog/burnout-chess/index.html (+104ms)
+17:07:07   ├─ /fr/blog/echecs-et-therapie/index.html (+164ms)
+17:07:07   ├─ /fr/blog/echecs-et-genetique/index.html (+167ms)
+17:07:07   ├─ /fr/blog/5-biais-cognitifs-blunder/index.html (+108ms)
+17:07:07   ├─ /fr/blog/echecs-et-hpi/index.html (+170ms)
+17:07:08   ├─ /fr/blog/echecs-peur-de-perdre/index.html (+103ms)
+17:07:08   ├─ /fr/blog/echecs-religion-et-interdit/index.html (+163ms)
+17:07:08   ├─ /fr/blog/echecs-et-vision-spatiale/index.html (+160ms)
+17:07:08   ├─ /fr/blog/echecs-peur-de-gagner/index.html (+103ms)
+17:07:08   ├─ /fr/blog/echecs-et-ecole/index.html (+171ms)
+17:07:08   ├─ /fr/blog/echecs-et-perfectionnisme-toxique/index.html (+103ms)
+17:07:08   ├─ /fr/blog/echecs-et-dopamine/index.html (+157ms)
+17:07:09   ├─ /fr/blog/syndrome-imposteur-2000-elo/index.html (+105ms)
+17:07:09   ├─ /fr/blog/echecs-en-prison/index.html (+181ms)
+17:07:09   ├─ /fr/blog/syndrome-imposteur-aux-echecs/index.html (+102ms)
+17:07:09   ├─ /fr/blog/echecs-et-sommeil/index.html (+167ms)
+17:07:09   ├─ /fr/blog/echecs-et-tdah/index.html (+188ms)
+17:07:09   ├─ /fr/blog/echecs-et-colere-ragequit/index.html (+119ms)
+17:07:09   ├─ /fr/blog/reseaux-bayesiens-predire-blunder/index.html (+102ms)
+17:07:10   ├─ /fr/blog/echecs-vs-philosophie-pensee-strategique/index.html (+149ms)
+17:07:10   ├─ /fr/blog/neurones-miroirs-aux-echecs/index.html (+105ms)
+17:07:10   ├─ /fr/blog/logique-modale-aux-echecs/index.html (+106ms)
+17:07:10   ├─ /fr/blog/theorie-du-chaos-aux-echecs/index.html (+207ms)
+17:07:10   ├─ /fr/blog/echecs-et-memoire/index.html (+251ms)
+17:07:10   ├─ /fr/blog/guide-grand-oral-echecs-toutes-specialites/index.html (+360ms)
+17:07:11   ├─ /fr/blog/bienfaits-des-pauses-aux-echecs/index.html (+199ms)
+17:07:11   ├─ /fr/blog/minimax-aux-echecs/index.html (+241ms)
+17:07:11   ├─ /fr/blog/guide-grand-oral-echecs-ses-hggsp/index.html (+463ms)
+17:07:12   ├─ /fr/blog/sujet-grand-oral-hggsp-fischer-spassky/index.html (+139ms)
+17:07:12   ├─ /fr/blog/sujet-grand-oral-hggsp-memoire-patrimoine/index.html (+113ms)
+17:07:12   ├─ /fr/blog/sujet-grand-oral-hggsp-mondialisation-plateformes/index.html (+109ms)
+17:07:12   ├─ /fr/blog/sujet-grand-oral-ses-bourdieu-reproduction/index.html (+109ms)
+17:07:12   ├─ /fr/blog/sujet-grand-oral-ses-marche-superstars/index.html (+114ms)
+17:07:12   ├─ /fr/blog/echecs-et-argent/index.html (+255ms)
+17:07:12   ├─ /fr/blog/graphes-de-nash-equilibre-ouvertures/index.html (+211ms)
+17:07:13   ├─ /fr/blog/echecs-alzheimer-prevention-declin-cognitif/index.html (+249ms)
+17:07:13   ├─ /fr/blog/guide-grand-oral-echecs-nsi/index.html (+363ms)
+17:07:13   ├─ /fr/blog/sujet-grand-oral-nsi-alpha-beta/index.html (+105ms)
+17:07:13   ├─ /fr/blog/sujet-grand-oral-nsi-alphazero/index.html (+109ms)
+17:07:14   ├─ /fr/blog/sujet-grand-oral-nsi-minimax/index.html (+111ms)
+17:07:14   ├─ /fr/blog/paradoxe-de-zermelo/index.html (+203ms)
+17:07:14   ├─ /fr/blog/regle-40-40-20-echecs/index.html (+203ms)
+17:07:14   ├─ /fr/blog/sujet-grand-oral-maths-combinatoire/index.html (+108ms)
+17:07:14   ├─ /fr/blog/sujet-grand-oral-maths-elo-probabilites/index.html (+115ms)
+17:07:14   ├─ /fr/blog/sujet-grand-oral-maths-modeles-limites/index.html (+143ms)
+17:07:14   ├─ /fr/blog/sujet-grand-oral-maths-zermelo-complexite/index.html (+119ms)
+17:07:15   ├─ /fr/blog/theorie-des-jeux-aux-echecs/index.html (+247ms)
+17:07:15   ├─ /fr/blog/grand-oral-mathematiques-echecs/index.html (+377ms)
+17:07:15   ├─ /fr/blog/grand-oral-maths-spe-echecs/index.html (+430ms)
+17:07:16   ├─ /fr/blog/grand-oral-nsi-echecs/index.html (+397ms)
+17:07:16   ├─ /fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/index.html (+247ms)
+17:07:16   ├─ /fr/blog/psychologie-du-joueur-d-echecs/index.html (+179ms)
+17:07:16   ├─ /fr/blog/les-echecs-et-le-cerveau/index.html (+273ms)
+17:07:17   ├─ /fr/blog/echecs-et-femmes/index.html (+221ms)
+17:07:17   ├─ /fr/blog/les-echecs-et-l-addiction/index.html (+103ms)
+17:07:17   ├─ /fr/blog/les-echecs-et-les-mathematiques/index.html (+191ms)
+17:07:17   ├─ /fr/blog/echecs-et-autisme/index.html (+195ms)
+17:07:17   ├─ /fr/blog/index.html (+109ms)
+17:07:17   ├─ /fr/blog/2/index.html (+104ms)
+17:07:18   ├─ /fr/blog/3/index.html (+104ms)
+17:07:18   ├─ /fr/blog/4/index.html (+104ms)
+17:07:18   ├─ /fr/blog/5/index.html (+104ms)
+17:07:18   ├─ /fr/blog/6/index.html (+103ms)
+17:07:18   ├─ /fr/blog/7/index.html (+105ms)
+17:07:18   ├─ /fr/blog/8/index.html (+105ms)
+17:07:18   ├─ /fr/blog/9/index.html (+106ms)
+17:07:18   ├─ /fr/blog/10/index.html (+104ms)
+17:07:18   ├─ /fr/cgu/index.html (+6ms)
+17:07:18   ├─ /fr/contact/index.html (+6ms)
+17:07:18   ├─ /fr/dissertations/echecs-et-investissement/index.html (+7ms)
+17:07:18   ├─ /fr/dissertations/index.html (+8ms)
+17:07:18   ├─ /fr/esprit/index.html (+117ms)
+17:07:19   ├─ /fr/essais/index.html (+1ms)
+17:07:19   ├─ /fr/glossaire/index.html (+9ms)
+17:07:19   ├─ /fr/grand-oral/index.html (+110ms)
+17:07:19   ├─ /fr/infographie/index.html (+122ms)
+17:07:19   ├─ /fr/mentions-legales/index.html (+6ms)
+17:07:19   ├─ /fr/politique-confidentialite/index.html (+7ms)
+17:07:19   ├─ /fr/recherche/index.html (+103ms)
+17:07:19   ├─ /fr/science/index.html (+112ms)
+17:07:19   ├─ /fr/series/moteur-python/index.html (+108ms)
+17:07:19   ├─ /fr/series/psychologie/index.html (+106ms)
+17:07:19   ├─ /fr/series/index.html (+104ms)
+17:07:19   ├─ /fr/societe/index.html (+110ms)
+17:07:19   ├─ /fr/index.html (+206ms)
+17:07:20   ├─ /nl/about/index.html (+5ms)
+17:07:20   ├─ /nl/contact/index.html (+4ms)
+17:07:20   ├─ /nl/esprit/index.html (+5ms)
+17:07:20   ├─ /nl/gebruiksvoorwaarden/index.html (+7ms)
+17:07:20   ├─ /nl/juridische-vermeldingen/index.html (+6ms)
+17:07:20   ├─ /nl/privacybeleid/index.html (+7ms)
+17:07:20   ├─ /nl/recherche/index.html (+4ms)
+17:07:20   ├─ /nl/science/index.html (+4ms)
+17:07:20   ├─ /nl/societe/index.html (+4ms)
+17:07:20   ├─ /nl/toegankelijkheid/index.html (+7ms)
+17:07:20   ├─ /nl/index.html (+4ms)
+17:07:20   ├─ /pt-br/about/index.html (+7ms)
+17:07:20   ├─ /pt-br/acessibilidade/index.html (+6ms)
+17:07:20   ├─ /pt-br/aviso-legal/index.html (+7ms)
+17:07:20   ├─ /pt-br/blog/rede-modo-padrao-xadrez/index.html (+111ms)
+17:07:20   ├─ /pt-br/blog/manipulacao-emocional-no-xadrez/index.html (+130ms)
+17:07:20   ├─ /pt-br/blog/xadrez-e-visualizacao/index.html (+117ms)
+17:07:20   ├─ /pt-br/blog/xadrez-estresse-torneio/index.html (+121ms)
+17:07:20   ├─ /pt-br/blog/efeito-placebo-no-xadrez/index.html (+130ms)
+17:07:20   ├─ /pt-br/blog/xadrez-e-deficiencia/index.html (+117ms)
+17:07:20   ├─ /pt-br/blog/xadrez-alphazero-stockfish/index.html (+121ms)
+17:07:21   ├─ /pt-br/blog/teoria-do-apego-no-xadrez/index.html (+129ms)
+17:07:21   ├─ /pt-br/blog/xadrez-e-concentracao/index.html (+131ms)
+17:07:21   ├─ /pt-br/blog/xadrez-e-o-corpo/index.html (+123ms)
+17:07:21   ├─ /pt-br/blog/mecanismos-de-defesa-no-xadrez/index.html (+146ms)
+17:07:21   ├─ /pt-br/blog/xadrez-e-resiliencia/index.html (+129ms)
+17:07:21   ├─ /pt-br/blog/xadrez-e-streaming/index.html (+120ms)
+17:07:21   ├─ /pt-br/blog/neuroplasticidade-e-xadrez/index.html (+137ms)
+17:07:22   ├─ /pt-br/blog/xadrez-memoria-de-trabalho/index.html (+127ms)
+17:07:22   ├─ /pt-br/blog/xadrez-gestao-do-tempo/index.html (+129ms)
+17:07:22   ├─ /pt-br/blog/vies-do-sobrevivente-no-xadrez/index.html (+128ms)
+17:07:22   ├─ /pt-br/blog/xadrez-na-cultura-popular/index.html (+124ms)
+17:07:22   ├─ /pt-br/blog/xadrez-e-diplomacia/index.html (+124ms)
+17:07:22   ├─ /pt-br/blog/dissonancia-cognitiva-no-xadrez/index.html (+132ms)
+17:07:22   ├─ /pt-br/blog/flow-no-xadrez/index.html (+134ms)
+17:07:22   ├─ /pt-br/blog/gaslighting-no-xadrez/index.html (+131ms)
+17:07:23   ├─ /pt-br/blog/complexidade-algoritmica-xadrez/index.html (+139ms)
+17:07:23   ├─ /pt-br/blog/xadrez-e-autoconfianca/index.html (+135ms)
+17:07:23   ├─ /pt-br/blog/efeito-dunning-kruger-no-xadrez/index.html (+150ms)
+17:07:23   ├─ /pt-br/blog/xadrez-para-criancas/index.html (+129ms)
+17:07:23   ├─ /pt-br/blog/xadrez-e-meditacao/index.html (+132ms)
+17:07:23   ├─ /pt-br/blog/lei-de-murphy-no-xadrez/index.html (+104ms)
+17:07:23   ├─ /pt-br/blog/burnout-no-xadrez/index.html (+106ms)
+17:07:23   ├─ /pt-br/blog/xadrez-como-terapia/index.html (+128ms)
+17:07:24   ├─ /pt-br/blog/genetica-e-talento-xadrez/index.html (+139ms)
+17:07:24   ├─ /pt-br/blog/5-vieses-cognitivos-blunder/index.html (+105ms)
+17:07:24   ├─ /pt-br/blog/xadrez-e-superdotacao/index.html (+130ms)
+17:07:24   ├─ /pt-br/blog/xadrez-medo-de-perder/index.html (+104ms)
+17:07:24   ├─ /pt-br/blog/xadrez-religiao-e-proibicao/index.html (+128ms)
+17:07:24   ├─ /pt-br/blog/xadrez-e-visao-espacial/index.html (+128ms)
+17:07:24   ├─ /pt-br/blog/xadrez-medo-de-ganhar/index.html (+104ms)
+17:07:24   ├─ /pt-br/blog/xadrez-na-escola/index.html (+126ms)
+17:07:25   ├─ /pt-br/blog/xadrez-e-perfeccionismo-toxico/index.html (+105ms)
+17:07:25   ├─ /pt-br/blog/dopamina-e-xadrez/index.html (+129ms)
+17:07:25   ├─ /pt-br/blog/sindrome-impostora-2000-elo/index.html (+104ms)
+17:07:25   ├─ /pt-br/blog/xadrez-na-prisao/index.html (+128ms)
+17:07:25   ├─ /pt-br/blog/sindrome-do-impostor-no-xadrez/index.html (+105ms)
+17:07:25   ├─ /pt-br/blog/xadrez-e-sono/index.html (+131ms)
+17:07:25   ├─ /pt-br/blog/xadrez-e-tdah/index.html (+129ms)
+17:07:25   ├─ /pt-br/blog/xadrez-e-raiva-ragequit/index.html (+106ms)
+17:07:25   ├─ /pt-br/blog/redes-bayesianas-prever-blunder/index.html (+109ms)
+17:07:26   ├─ /pt-br/blog/echecs-vs-philosophie-pensee-strategique/index.html (+144ms)
+17:07:26   ├─ /pt-br/blog/neuronios-espelho-no-xadrez/index.html (+107ms)
+17:07:26   ├─ /pt-br/blog/logica-modal-no-xadrez/index.html (+130ms)
+17:07:26   ├─ /pt-br/blog/teoria-do-caos-no-xadrez/index.html (+137ms)
+17:07:26   ├─ /pt-br/blog/xadrez-e-memoria/index.html (+154ms)
+17:07:26   ├─ /pt-br/blog/beneficios-das-pausas-no-xadrez/index.html (+145ms)
+17:07:26   ├─ /pt-br/blog/minimax-no-xadrez/index.html (+147ms)
+17:07:27   ├─ /pt-br/blog/quanto-ganha-jogador-de-xadrez/index.html (+157ms)
+17:07:27   ├─ /pt-br/blog/grafos-de-nash-equilibrio-aberturas/index.html (+134ms)
+17:07:27   ├─ /pt-br/blog/xadrez-alzheimer-prevencao-declinio-cognitivo/index.html (+140ms)
+17:07:27   ├─ /pt-br/blog/paradoxo-de-zermelo/index.html (+143ms)
+17:07:27   ├─ /pt-br/blog/regra-40-40-20-xadrez/index.html (+138ms)
+17:07:27   ├─ /pt-br/blog/teoria-dos-jogos-no-xadrez/index.html (+153ms)
+17:07:27   ├─ /pt-br/blog/xadrez-problema-matematico-impossivel-e-ia/index.html (+147ms)
+17:07:28   ├─ /pt-br/blog/psicologia-do-jogador-de-xadrez/index.html (+136ms)
+17:07:28   ├─ /pt-br/blog/xadrez-e-o-cerebro/index.html (+195ms)
+17:07:28   ├─ /pt-br/blog/mulheres-no-xadrez/index.html (+151ms)
+17:07:28   ├─ /pt-br/blog/vicio-em-xadrez/index.html (+107ms)
+17:07:28   ├─ /pt-br/blog/xadrez-e-matematica/index.html (+146ms)
+17:07:28   ├─ /pt-br/blog/xadrez-e-autismo/index.html (+140ms)
+17:07:28   ├─ /pt-br/blog/index.html (+107ms)
+17:07:29   ├─ /pt-br/blog/2/index.html (+107ms)
+17:07:29   ├─ /pt-br/blog/3/index.html (+104ms)
+17:07:29   ├─ /pt-br/blog/4/index.html (+104ms)
+17:07:29   ├─ /pt-br/blog/5/index.html (+105ms)
+17:07:29   ├─ /pt-br/blog/6/index.html (+105ms)
+17:07:29   ├─ /pt-br/blog/7/index.html (+105ms)
+17:07:29   ├─ /pt-br/blog/8/index.html (+102ms)
+17:07:29   ├─ /pt-br/contact/index.html (+6ms)
+17:07:29   ├─ /pt-br/esprit/index.html (+113ms)
+17:07:29   ├─ /pt-br/politica-de-privacidade/index.html (+7ms)
+17:07:29   ├─ /pt-br/recherche/index.html (+103ms)
+17:07:30   ├─ /pt-br/rss.xml (+103ms)
+17:07:30   ├─ /pt-br/science/index.html (+113ms)
+17:07:30   ├─ /pt-br/series/psychologie/index.html (+107ms)
+17:07:30   ├─ /pt-br/series/index.html (+102ms)
+17:07:30   ├─ /pt-br/societe/index.html (+110ms)
+17:07:30   ├─ /pt-br/termos-de-uso/index.html (+6ms)
+17:07:30   ├─ /pt-br/index.html (+206ms)
+17:07:30   ├─ /rss.xml (+101ms)
+17:07:30   ├─ /sitemap.xml (+152ms)
+17:07:31   ├─ /index.html (+5ms)
+17:07:31 ✓ Completed in 42.56s.
+
+17:07:31 [build] ✓ Completed in 46.80s.
+17:07:31 [build] 305 page(s) built in 50.51s
+17:07:31 [build] Complete!
+
+Running Pagefind v1.3.0 (Extended)
+Running from: "/home/chacalcha/Bureau/Website project/blog-gaucher"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 321 files matching {fr,en,pt-br}/blog/**/*.html
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+76 pages found without an <html> element.
+Pages without an outer <html> element will not be processed by default.
+If adding this element is not possible, use the root selector config to target a different root element.
+  * "/en/blog/burnout-chess/" has no <html> element
+  * "/en/blog/effet-dunning-kruger-aux-echecs/" has no <html> element
+  * "/en/blog/loi-de-murphy-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-en-prison/" has no <html> element
+  * "/en/blog/echecs-et-argent/" has no <html> element
+  * "/en/blog/graphes-de-nash-equilibre-ouvertures/" has no <html> element
+  * "/en/blog/echecs-et-colere-ragequit/" has no <html> element
+  * "/en/blog/5-biais-cognitifs-blunder/" has no <html> element
+  * "/en/blog/mecanismes-de-defense-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-alzheimer-prevention-declin-cognitif/" has no <html> element
+  * "/en/blog/biais-du-survivant-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-et-sommeil/" has no <html> element
+  * "/en/blog/echecs-gestion-du-temps/" has no <html> element
+  * "/en/blog/neurones-miroirs-aux-echecs/" has no <html> element
+  * "/en/blog/chess-and-seniors/" has no <html> element
+  * "/en/blog/theorie-des-jeux-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-et-concentration/" has no <html> element
+  * "/en/blog/theorie-de-l-attachement-aux-echecs/" has no <html> element
+  * "/en/blog/chess-benefits-for-the-brain/" has no <html> element
+  * "/en/blog/echecs-et-autisme/" has no <html> element
+  * "/en/blog/echecs-et-dopamine/" has no <html> element
+  * "/en/blog/echecs-et-perfectionnisme-toxique/" has no <html> element
+  * "/en/blog/echecs-et-vision-spatiale/" has no <html> element
+  * "/en/blog/echecs-et-therapie/" has no <html> element
+  * "/en/blog/chess-and-cognitive-aging/" has no <html> element
+  * "/en/blog/echecs-et-ecole/" has no <html> element
+  * "/en/blog/reseaux-bayesiens-predire-blunder/" has no <html> element
+  * "/en/blog/echecs-et-memoire/" has no <html> element
+  * "/en/blog/echecs-et-femmes/" has no <html> element
+  * "/en/blog/effet-placebo-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-vieillissement-cognitif/" has no <html> element
+  * "/en/blog/echecs-peur-de-perdre/" has no <html> element
+  * "/en/blog/echecs-et-diplomatie/" has no <html> element
+  * "/en/blog/echecs-alphazero-stockfish/" has no <html> element
+  * "/en/blog/minimax-aux-echecs/" has no <html> element
+  * "/en/blog/syndrome-imposteur-aux-echecs/" has no <html> element
+  * "/en/blog/les-echecs-et-le-cerveau/" has no <html> element
+  * "/en/blog/neuroplasticite-aux-echecs/" has no <html> element
+  * "/en/blog/gaslighting-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-et-genetique/" has no <html> element
+  * "/en/blog/echecs-et-syndrome-imposteur/" has no <html> element
+  * "/en/blog/paradoxe-de-zermelo/" has no <html> element
+  * "/en/blog/logique-modale-aux-echecs/" has no <html> element
+  * "/en/blog/psychologie-du-joueur-d-echecs/" has no <html> element
+  * "/en/blog/echecs-et-hpi/" has no <html> element
+  * "/en/blog/echecs-et-tdah/" has no <html> element
+  * "/en/blog/echecs-et-handicap/" has no <html> element
+  * "/en/blog/echecs-et-meditation/" has no <html> element
+  * "/en/blog/echecs-et-enfants/" has no <html> element
+  * "/en/blog/syndrome-imposteur-2000-elo/" has no <html> element
+  * "/en/blog/les-echecs-et-l-addiction/" has no <html> element
+  * "/en/blog/bienfaits-des-pauses-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-stress-tournoi/" has no <html> element
+  * "/en/blog/echecs-et-culture-populaire/" has no <html> element
+  * "/en/blog/chess-impostor-syndrome/" has no <html> element
+  * "/en/blog/echecs-et-confiance-en-soi/" has no <html> element
+  * "/en/blog/echecs-et-flow/" has no <html> element
+  * "/en/blog/regle-40-40-20-echecs/" has no <html> element
+  * "/en/blog/echecs-et-seniors/" has no <html> element
+  * "/en/blog/echecs-peur-de-gagner/" has no <html> element
+  * "/en/blog/les-echecs-et-les-mathematiques/" has no <html> element
+  * "/en/blog/echecs-memoire-de-travail/" has no <html> element
+  * "/en/blog/echecs-et-resilience/" has no <html> element
+  * "/en/blog/dissonance-cognitive-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-et-complexite-algorithmique/" has no <html> element
+  * "/en/blog/manipulation-emotionnelle-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-et-visualisation/" has no <html> element
+  * "/en/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/" has no <html> element
+  * "/en/blog/bienfaits-des-echecs-sur-le-cerveau/" has no <html> element
+  * "/en/blog/echecs-et-streaming/" has no <html> element
+  * "/en/blog/theorie-du-chaos-aux-echecs/" has no <html> element
+  * "/fr/blog/echecs-vieillissement-cognitif/" has no <html> element
+  * "/fr/blog/echecs-et-syndrome-imposteur/" has no <html> element
+  * "/fr/blog/guide-grand-oral-echecs-maths/" has no <html> element
+  * "/fr/blog/echecs-et-seniors/" has no <html> element
+  * "/fr/blog/bienfaits-des-echecs-sur-le-cerveau/" has no <html> element
+
+[Reading languages]
+Discovered 3 languages: en, fr, pt-br
+
+[Building search indexes]
+Total:
+  Indexed 3 languages
+  Indexed 219 pages
+  Indexed 28962 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 8.539 seconds
+[strip-comments] 1355 scripts inline nettoyés dans 299 fichiers (-1880.8 Ko), 152 ignorés.
+[add-image-srcset] 6 image(s) déclinée(s) dans 3 fichier(s).
+[finalize-navigation] 280 edits; scheduled links restored automatically by future builds.
+verify-dist-urls: OK (pas de :8080 ni http sur blogdungaucher.com).
+389 pages, 17122 liens internes vérifiés.
+Aucun lien interne mort.

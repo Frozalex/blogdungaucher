@@ -1,0 +1,18 @@
+{
+  "pages": 391,
+  "languages": {
+    "fr": {
+      "articles": 85,
+      "homepage": true
+    },
+    "en": {
+      "articles": 67,
+      "homepage": true
+    },
+    "pt-br": {
+      "articles": 67,
+      "homepage": true
+    }
+  },
+  "baselineCompared": false
+}

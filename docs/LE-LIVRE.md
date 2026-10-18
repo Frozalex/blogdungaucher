@@ -219,6 +219,8 @@ La même semaine, l'infographie interactive des 10 premiers articles voit le jou
 
 ## Chapitre 12 — Motion Canvas remplace Remotion (20 → 21 mai)
 
+> Mise à jour du 18 octobre 2026 : Motion Canvas a depuis été retiré du dépôt. Ce chapitre conserve l'historique de son introduction.
+
 Les 20 et 21 mai apportent une décision technique majeure : **Remotion sort, Motion Canvas entre**.
 
 Remotion est puissant. Il rend la vidéo en React. Mais il a deux défauts pour un site comme celui-ci :

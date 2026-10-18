@@ -31,7 +31,6 @@ const SCAN_DIRS = [
   { dir: "src/data", ext: /\.ts$/i },
   { dir: "src/i18n", ext: /\.ts$/i },
   { dir: "src/styles", ext: /\.css$/i },
-  { dir: "motion-canvas/src", ext: /\.tsx?$/i },
 ];
 
 /** Fichiers à la racine de src/ (hors sous-dossiers scannés ci-dessus). */

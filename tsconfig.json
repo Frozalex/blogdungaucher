@@ -6,5 +6,5 @@
     "baseUrl": "."
   },
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "motion-canvas"]
+  "exclude": ["dist"]
 }

@@ -44,8 +44,6 @@ blog-gaucher/
 ├── deploy/                ← Fichiers de configuration du serveur
 │   └── nginx-redirects.conf  ← Les vraies redirections 301 pour nginx
 │
-├── motion-canvas/         ← Projet séparé pour fabriquer les vidéos récap
-│
 ├── docs/                  ← CETTE DOCUMENTATION
 │
 └── dist/                  ← LE SITE FINI (généré par le build, non sauvegardé dans Git)

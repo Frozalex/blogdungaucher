@@ -340,3 +340,35 @@ Le build et le chargement de l’éditeur vidéo fonctionnent. Son contrôle Typ
 **Construction désormais sous Node.js ≥ 22.22.0. Aucun commit ni déploiement.** Les limites de l’audit AdSense et les autres actions éditoriales/juridiques restent inchangées.
 
 [Détail des versions, adaptations, limites et preuves de vérification](docs/audit-adsense-2026/dependency-update/README.md).
+
+## 17. Suivi — TypeScript Motion Canvas corrigé le 18 octobre 2026
+
+**Les 63 diagnostics sont corrigés : `npm run check --prefix motion-canvas` réussit sans erreur**, avec `strict: true` conservé, sans suppression de diagnostic. Les helpers utilisent `View2D`, les imports de scènes utilisent les déclarations officielles du projet, et `ChessBoard` conserve le signal de dimensions et la méthode de rendu hérités de `Layout`. Les propriétés d’image non prises en charge et l’import inexistant sont retirés ; la recherche de texte possède un garde de type explicite.
+
+Le rendu réel a également révélé un dégradé CSS incompatible avec le moteur et un portrait Karpov absent : utilisation du dégradé natif et du fond de remplacement déjà prévu lorsque le portrait manque.
+
+| Vérification locale | Résultat |
+|---|---|
+| TypeScript Motion Canvas | **63 → 0 erreurs** ; [avant](docs/audit-adsense-2026/motion-typescript/typecheck-before.log), [après](docs/audit-adsense-2026/motion-typescript/typecheck-after.log) |
+| Build et tests Motion Canvas | Build réussi ; **2/2 tests réussis** ; [build](docs/audit-adsense-2026/motion-typescript/build-motion.log), [tests](docs/audit-adsense-2026/motion-typescript/tests-motion.log) |
+| Éditeur et scènes | HTTP 200, canevas chargé, zéro erreur JavaScript ; recalcul des deux scènes et rendu de dix instants à résolution réduite ; échiquier 520×520 et 31 pièces conservés ; [mesures](docs/audit-adsense-2026/motion-typescript/runtime.json) |
+| Build du site | Réussi, Pagefind : **219 articles, 3 langues** ; **17 122 liens internes, zéro cible absente** ; [journal](docs/audit-adsense-2026/motion-typescript/build-site.log) |
+| Astro et navigation | **0 erreur, 0 avertissement, 88 indications** ; **8/8 tests réussis** ; [résumé Astro](docs/audit-adsense-2026/motion-typescript/check-site-summary.log), [tests](docs/audit-adsense-2026/motion-typescript/tests-site.log) |
+| Langues et routes | **391 routes conservées**, accueils et articles FR/EN/PT-BR valides ; [langues](docs/audit-adsense-2026/motion-typescript/languages.json), [routes](docs/audit-adsense-2026/motion-typescript/routes.json) |
+| Navigateur mobile | **15 pages** en FR/EN/PT-BR, menus et Échap, recherche, formules et navigation Astro sans rechargement ; zéro erreur JavaScript capturée et aucun débordement horizontal ; [mesures](docs/audit-adsense-2026/motion-typescript/browser.json) |
+
+Un premier build du site a échoué sur un fragment de pré-rendu manquant ; la relance complète a réussi sans modification des sources du site par ce chantier. Des modifications éditoriales parallèles étaient présentes : la comparaison porte sur les routes, sans prétendre à une identité intégrale des textes. Les requêtes tierces sont bloquées pendant les essais du site. Aucun export vidéo complet ni contrôle publicitaire n’est revendiqué. L’avertissement de dépréciation `esbuild` du plugin vidéo reste présent et n’empêche pas son build.
+
+**Ce correctif Motion Canvas reste local : aucun commit, push ou déploiement effectué pour ce chantier.** Les preuves de la section 16 décrivent l’état antérieur à cette correction.
+
+## 18. Suivi — retrait de Motion Canvas le 18 octobre 2026
+
+À la demande du propriétaire, suppression complète du sous-projet `motion-canvas/` : sources, scènes, images réservées à ces scènes, configuration, dépendances et adaptateur Vite. Les références actives dans TypeScript et le script de nettoyage éditorial sont retirées ; la documentation d'utilisation est mise à jour. Aucune dépendance du site ou du proxy n'était liée à ce sous-projet.
+
+Le lecteur HTML des MP4 et le champ `summaryVideo` restent disponibles pour des vidéos produites en dehors du dépôt. La référence au résumé jamais généré de l'article « Échecs et mémoire » est supprimée. Les sections 16 et 17 ainsi que leurs journaux sont conservés comme historique des vérifications effectuées avant le retrait ; leurs commandes Motion Canvas ne s'appliquent plus au projet actuel.
+
+Après retrait : **build du site réussi**, 219 articles indexés dans trois langues, **391 pages générées**, 17 125 liens internes vérifiés sans cible absente. Le contrôle Astro réussit avec **0 erreur, 0 avertissement et 88 indications** ; les **8 tests de navigation réussissent**. Les accueils et articles FR/EN/PT-BR passent le contrôle de langues. [Build](docs/audit-adsense-2026/motion-removal/build-site.log), [résumé Astro](docs/audit-adsense-2026/motion-removal/check-site-summary.log), [tests](docs/audit-adsense-2026/motion-removal/tests-site.log), [langues](docs/audit-adsense-2026/motion-removal/languages.json).
+
+En navigateur mobile 390×844 : **15 pages** testées en FR/EN/PT-BR, réponses HTTP 200, menus et Échap, recherche, formules et navigation Astro sans rechargement réussis, aucun débordement horizontal ni erreur JavaScript capturée. [Mesures](docs/audit-adsense-2026/motion-removal/browser.json). Les requêtes tierces sont bloquées pendant ces essais ; aucun contrôle publicitaire n'est revendiqué.
+
+Le propriétaire autorise ensuite le commit et le push de ce retrait. Les modifications en cours sur d'autres sujets restent hors de ce commit ; aucun déploiement manuel n'est lancé.

@@ -20,10 +20,9 @@ const blog = defineCollection({
     readingTime: z.string().optional(),
     pillar: z.string(),
     tags: z.array(z.string()).optional(),
-    /** Jusqu’à 5 points "À retenir" affichés en bas d’article (composant KeyTakeaways).
-       Sert aussi de script source pour les scènes vidéo Motion Canvas. */
+    /** Jusqu’à 5 points "À retenir" affichés en bas d’article (composant KeyTakeaways). */
     keyTakeaways: z.array(z.string()).max(5).optional(),
-    /** Résumé vidéo produit par Motion Canvas (cf. motion-canvas/README.md).
+    /** Résumé vidéo au format MP4, déposé dans public/videos/.
        Chemin commençant par /, ex. "/videos/summary-echecs-et-memoire.mp4".
        Affiché sous le titre via ArticleVideo si le fichier existe. */
     summaryVideo: z.string().optional(),

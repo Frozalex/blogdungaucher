@@ -1,0 +1,176 @@
+[
+  {
+    "lang": "fr",
+    "viewport": "390x844",
+    "pages": [
+      {
+        "route": "/fr/",
+        "status": 200,
+        "lang": "fr",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/fr/",
+        "overflow": false,
+        "formulas": 0
+      },
+      {
+        "route": "/fr/blog/",
+        "status": 200,
+        "lang": "fr",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/fr/blog/",
+        "overflow": false,
+        "formulas": 0
+      },
+      {
+        "route": "/fr/science/",
+        "status": 200,
+        "lang": "fr",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/fr/science/",
+        "overflow": false,
+        "formulas": 0
+      },
+      {
+        "route": "/fr/blog/minimax-aux-echecs/",
+        "status": 200,
+        "lang": "fr",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/fr/blog/minimax-aux-echecs/",
+        "overflow": false,
+        "formulas": 26
+      },
+      {
+        "route": "/fr/recherche/",
+        "status": 200,
+        "lang": "fr",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/fr/recherche/",
+        "overflow": false,
+        "formulas": 0,
+        "searchResult": "/fr/blog/grand-oral-maths-spe-echecs/"
+      }
+    ],
+    "clientNavigation": {
+      "target": "/fr/blog/reseau-mode-defaut-aux-echecs/",
+      "withoutReload": true,
+      "menu": true
+    },
+    "pageErrors": []
+  },
+  {
+    "lang": "en",
+    "viewport": "390x844",
+    "pages": [
+      {
+        "route": "/en/",
+        "status": 200,
+        "lang": "en",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/en/",
+        "overflow": false,
+        "formulas": 0
+      },
+      {
+        "route": "/en/blog/",
+        "status": 200,
+        "lang": "en",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/en/blog/",
+        "overflow": false,
+        "formulas": 0
+      },
+      {
+        "route": "/en/science/",
+        "status": 200,
+        "lang": "en",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/en/science/",
+        "overflow": false,
+        "formulas": 0
+      },
+      {
+        "route": "/en/blog/minimax-in-chess/",
+        "status": 200,
+        "lang": "en",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/en/blog/minimax-in-chess/",
+        "overflow": false,
+        "formulas": 15
+      },
+      {
+        "route": "/en/recherche/",
+        "status": 200,
+        "lang": "en",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/en/recherche/",
+        "overflow": false,
+        "formulas": 0,
+        "searchResult": "/en/blog/minimax-in-chess/"
+      }
+    ],
+    "clientNavigation": {
+      "target": "/en/blog/reseau-mode-defaut-aux-echecs/",
+      "withoutReload": true,
+      "menu": true
+    },
+    "pageErrors": []
+  },
+  {
+    "lang": "pt-br",
+    "viewport": "390x844",
+    "pages": [
+      {
+        "route": "/pt-br/",
+        "status": 200,
+        "lang": "pt-br",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/pt-br/",
+        "overflow": false,
+        "formulas": 0
+      },
+      {
+        "route": "/pt-br/blog/",
+        "status": 200,
+        "lang": "pt-br",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/pt-br/blog/",
+        "overflow": false,
+        "formulas": 0
+      },
+      {
+        "route": "/pt-br/science/",
+        "status": 200,
+        "lang": "pt-br",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/pt-br/science/",
+        "overflow": false,
+        "formulas": 0
+      },
+      {
+        "route": "/pt-br/blog/minimax-no-xadrez/",
+        "status": 200,
+        "lang": "pt-br",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/pt-br/blog/minimax-no-xadrez/",
+        "overflow": false,
+        "formulas": 26
+      },
+      {
+        "route": "/pt-br/recherche/",
+        "status": 200,
+        "lang": "pt-br",
+        "h1": 1,
+        "canonical": "https://blogdungaucher.com/pt-br/recherche/",
+        "overflow": false,
+        "formulas": 0,
+        "searchResult": "/pt-br/blog/quanto-ganha-jogador-de-xadrez/"
+      }
+    ],
+    "clientNavigation": {
+      "target": "/pt-br/blog/rede-modo-padrao-xadrez/",
+      "withoutReload": true,
+      "menu": true
+    },
+    "pageErrors": []
+  }
+]
