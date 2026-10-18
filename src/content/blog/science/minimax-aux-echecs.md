@@ -12,44 +12,26 @@ tags: ["minimax", "alpha-bêta", "negamax", "null-move", "intelligence artificie
 seoTitle: "Algorithme minimax aux échecs : alpha-bêta, negamax et calcul des moteurs"
 seoDescription: "L'algorithme minimax expliqué : élagage alpha-bêta, negamax, MCTS. Comment les moteurs d'échecs calculent le meilleur coup et ce que ton cerveau fait sans le savoir."
 faq:
-  - question: "Minimax produit-il toujours le meilleur coup ?"
+  - question: Minimax donne-t-il toujours le meilleur coup ?
     answer: >-
-      Oui, <strong>si la recherche descend jusqu'aux positions terminales</strong> (mat ou pat). À profondeur
-      finie avec fonction d'évaluation heuristique, minimax produit le coup optimal <em>selon l'évaluation et
-      la profondeur</em> utilisées. C'est pourquoi un moteur évalué à 3500 Elo bat un humain : sa fonction
-      d'évaluation + sa profondeur sont plus proches de la vérité que celles d'un humain, pas parce qu'il
-      calcule "parfaitement".
-  - question: "Pourquoi parle-t-on de \"negamax\" plutôt que de \"minimax\" dans les codes ?"
+      Sur un arbre fini exploré jusqu’aux issues terminales correctement évaluées, il donne une décision optimale.
+      Avec une coupure heuristique, sa garantie porte seulement sur cet arbre évalué, pas sur la vérité complète de la position.
+  - question: Alpha-bêta change-t-il la valeur de minimax ?
     answer: >-
-      Parce que dans un jeu à somme nulle, $\min(a,b) = -\max(-a,-b)$. Negamax exploite cette symétrie pour
-      utiliser <strong>une seule fonction récursive</strong> au lieu de deux. C'est purement une
-      simplification du code, sans changement algorithmique. La quasi-totalité des moteurs modernes
-      (Stockfish, Komodo, Leela Chess Zero) utilisent negamax + alpha-bêta.
-  - question: "L'élagage alpha-bêta change-t-il le résultat de minimax ?"
+      À arbre, profondeur et évaluations identiques, l’algorithme exact conserve la valeur minimax. Plusieurs coups
+      peuvent partager cette valeur : leur départage peut varier. Les élagages sélectifs supplémentaires ont d’autres garanties.
+  - question: Tous les moteurs utilisent-ils negamax et alpha-bêta ?
     answer: >-
-      Non, <strong>jamais</strong>. C'est sa propriété fondamentale : alpha-bêta produit exactement le même
-      coup que minimax pur, mais en explorant beaucoup moins de noeuds. La force de l'élagage dépend de
-      l'<strong>ordre des coups</strong> : si tu testes le meilleur coup en premier, tu élagues massivement ;
-      si tu testes le pire en premier, tu n'élagues presque rien. C'est pourquoi les moteurs investissent
-      autant dans l'ordonnancement des coups (killer moves, historique des bons coups).
-  - question: "Pourquoi AlphaZero abandonne-t-il minimax ?"
+      Non. Negamax est une écriture de minimax adaptée aux jeux à somme nulle. Stockfish emploie une recherche alpha-bêta sélective,
+      tandis qu’AlphaZero emploie MCTS guidé par un réseau.
+  - question: Mon cerveau exécute-t-il minimax ?
     answer: >-
-      Pas vraiment : il garde une recherche arborescente (MCTS), mais remplace l'exploration exhaustive
-      d'alpha-bêta par une <strong>exploration probabiliste guidée</strong> par un réseau de neurones.
-      L'avantage : sur des positions où la fonction d'évaluation classique perd pied (sacrifices à long
-      terme, jeu positionnel subtil), le réseau de neurones donne une estimation plus juste. L'inconvénient :
-      il faut entraîner ce réseau sur des millions de parties, ce qui demande des ressources matérielles
-      considérables.
-  - question: "Mon cerveau exécute-t-il vraiment minimax quand je calcule ?"
-    answer: >-
-      Approximativement, oui. Tu fais une recherche arborescente avec un facteur de branchement très faible
-      (3-5 coups candidats au lieu de 35), une profondeur très limitée (3-8 demi-coups), et une fonction
-      d'évaluation intuitive (sens positionnel). Tu utilises aussi des heuristiques d'élagage très puissantes
-      : tu <strong>rejettes</strong> la plupart des coups en un coup d'œil sans les calculer. La différence
-      avec un moteur n'est pas qualitative, elle est quantitative.
+      C’est une analogie de raisonnement : tu compares des coups et des réponses. Les sources présentées ne démontrent
+      ni un algorithme cérébral identique ni une profondeur fixe associée à ton Elo.
+
 ---
 
-Il y a quelque chose d'étrange dans le fait que la stratégie aux échecs, ce jeu millénaire d'intuition et d'art, puisse être réduite à un algorithme de quelques lignes. L'algorithme minimax fait exactement cela : il formalise le coeur du raisonnement stratégique dans un jeu à somme nulle en une récurrence mathématique élégante. Et ce n'est pas seulement l'âme des moteurs d'échecs modernes : c'est aussi la description formelle de ce que tu fais dans ta tête quand tu calcules. (Pour le cadre théorique général dont minimax est l'algorithme central, voir [théorie des jeux aux échecs](/fr/blog/theorie-des-jeux-aux-echecs/) ; pour le théorème qui garantit l'existence d'une valeur à toute position, [le paradoxe de Zermelo](/fr/blog/paradoxe-de-zermelo/).)
+Il y a quelque chose d'étrange dans le fait que la stratégie aux échecs, ce jeu millénaire d'intuition et d'art, puisse être réduite à un algorithme de quelques lignes. L'algorithme minimax fait exactement cela : il formalise le coeur du raisonnement stratégique dans un jeu à somme nulle en une récurrence mathématique élégante. Et ce n'est pas seulement l'âme des moteurs d'échecs modernes : c’est aussi une analogie utile pour organiser ton calcul, sans constituer une description démontrée de ton cerveau. (Pour le cadre théorique général dont minimax est l'algorithme central, voir [théorie des jeux aux échecs](/fr/blog/theorie-des-jeux-aux-echecs/) ; pour le théorème qui garantit l'existence d'une valeur à toute position, [le paradoxe de Zermelo](/fr/blog/paradoxe-de-zermelo/).)
 
 ## L'intuition derrière minimax
 
@@ -65,27 +47,17 @@ Où $p$ est la position courante, $d$ est la profondeur de recherche restante, $
 
 ## La fonction d'évaluation : le coeur du moteur
 
-Minimax pur résoudrait les échecs parfaitement si tu pouvais explorer l'arbre complet jusqu'aux positions terminales. En pratique, c'est impossible en raison de la complexité combinatoire ($10^{120}$ feuilles selon Shannon). Il faut arrêter la recherche à une profondeur finie et évaluer les positions non-terminales avec une **fonction d'évaluation heuristique**.
+Minimax pur résoudrait les échecs parfaitement si tu pouvais explorer l'arbre complet jusqu'aux positions terminales. En pratique, c'est impossible en raison de la complexité combinatoire (l’ordre de grandeur de Shannon illustre l’explosion des suites de coups, pas un dénombrement exact des feuilles). Il faut arrêter la recherche à une profondeur finie et évaluer les positions non-terminales avec une **fonction d'évaluation heuristique**.
 
-Historiquement, les premières fonctions d'évaluation étaient simples : comptage du matériel (dame = 9 pions, tour = 5, fou/cavalier = 3). Les moteurs modernes comme [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(moteur_d%27%C3%A9checs)) utilisent des fonctions d'évaluation extrêmement sophistiquées qui intègrent :
+Une évaluation classique combine des caractéristiques telles que le matériel, la mobilité, la sécurité des rois et la structure de pions. Ces repères aident à lire une position ; ils ne constituent pas des valeurs absolues indépendantes du contexte.
 
-**La valeur du matériel** : avec des tables de valeurs contextuelles qui varient selon la phase de jeu. Un cavalier vaut davantage en milieu de jeu fermé que dans une fin de partie ouverte.
-
-**La mobilité des pièces** : le nombre de coups légaux disponibles pour chaque pièce. Une pièce avec plus de mobilité est généralement plus forte.
-
-**La sécurité du roi** : la solidité de la structure de pions autour du roi, les lignes ouvertes vers lui, les pièces adverses menaçantes.
-
-**La structure des pions** : les pions doublés (affaiblis), isolés (sans soutien), arriérés (ne pouvant plus avancer), passés (sans pions adverses sur leur chemin vers la promotion).
-
-**Le contrôle du centre** : l'occupation et le contrôle des cases centrales e4, d4, e5, d5 et leurs environs.
-
-Ces éléments sont pondérés et combinés dans une formule qui tente d'approximer la "vraie" valeur de la position.
+Stockfish a intégré l’évaluation neuronale NNUE en 2020. Il faut distinguer cette architecture des anciennes sommes de critères écrits à la main. Dans la récurrence présentée, « évaluation » doit retourner l’utilité exacte d’une issue terminale et une estimation pour une position simplement coupée à profondeur zéro.
 
 ## L'élagage alpha-bêta : l'intelligence de l'abandon
 
-L'algorithme minimax brut est d'une inefficacité spectaculaire. Pour une profondeur de recherche de $d$ coups et un facteur de branchement de $b$ (nombre moyen de coups légaux), il faut évaluer $b^d$ positions. À $b = 35$ et $d = 10$, c'est $35^{10} \approx 2{,}8 \times 10^{15}$ positions. Impossible en pratique.
+L'algorithme minimax brut est d'une inefficacité spectaculaire. Pour une profondeur de recherche de $d$ demi-coups et un facteur de branchement de $b$ (nombre moyen de coups légaux), le nombre de feuilles est de l’ordre de $b^d$ dans le modèle uniforme. À $b = 35$ et $d = 10$, c'est $35^{10} \approx 2{,}8 \times 10^{15}$ positions. Impossible en pratique.
 
-L'[élagage alpha-bêta](https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%AAta), développé indépendamment par plusieurs chercheurs dans les années 1950-1960 et formalisé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)), résout ce problème en élaguant les branches qui ne peuvent pas influencer la décision finale.
+L'[élagage alpha-bêta](https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%AAta), développé indépendamment par plusieurs chercheurs dans les années 1950-1960 et formalisé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)), réduit le coût en élaguant les branches qui ne peuvent pas influencer la décision finale.
 
 Le principe est le suivant : si tu as déjà trouvé une option pour Blanc qui garantit un résultat de valeur $\alpha$, et que tu explores une branche où Noir peut forcer un résultat inférieur à $\alpha$ pour Blanc, cette branche peut être abandonnée. Blanc ne la choisira jamais, car il a déjà mieux.
 
@@ -95,17 +67,17 @@ Formellement, tu maintiens deux bornes (dans le pseudo-code ou sur le tableau) :
 
 Quand $\alpha \geq \beta$, la branche courante est élagée : elle ne peut pas produire un résultat meilleur que ce qui est déjà connu.
 
-Dans le cas optimal (si les coups sont ordonnés par ordre de qualité décroissante), alpha-bêta réduit le nombre de noeuds de $b^d$ à $b^{d/2}$, doublant effectivement la profondeur de recherche possible pour un même budget de calcul.
+Dans le cas optimal (si les coups sont ordonnés par ordre de qualité décroissante), alpha-bêta ramène l’ordre de grandeur vers $O(b^{d/2})$. Il ne s’agit pas d’une égalité donnant le nombre exact de nœuds d’une position réelle.
 
 ![Arbre minimax à trois niveaux avec élagage alpha-bêta : les branches grisées sont abandonnées car alpha vaut déjà 3, rendant inutile l'exploration de toute branche où MIN peut forcer moins de 3.](/images/minimax-01-alpha-beta.svg)
 
 ### Negamax : la simplification qui change le code
 
-En pratique, presque aucun moteur n'implémente minimax dans sa forme à deux branches (max pour Blanc, min pour Noir). Tous utilisent la formulation **negamax**, qui exploite l'identité $\min(a,b) = -\max(-a,-b)$ dans un jeu à somme nulle. Le code passe de deux fonctions distinctes à une seule, avec un retournement de signe à chaque appel récursif. Conceptuellement identique, mais beaucoup plus court (15 lignes de code contre 40) et facile à maintenir. Quand un développeur dit "j'implémente minimax", il veut presque toujours dire "j'implémente negamax avec alpha-bêta".
+Negamax exploite l’identité $\min(a,b)=-\max(-a,-b)$ en évaluant la position du point de vue du joueur au trait. Le signe change lors d’un changement de camp. C’est une reformulation possible de minimax, pas une description de tous les moteurs ni une garantie de code plus court d’un nombre précis de lignes.
 
 ### Null-move pruning : faire passer son tour pour gagner du temps
 
-Une heuristique puissante : et si tu **passes ton tour** ? Si la position reste bonne pour toi malgré ce coup gratuit donné à l'adversaire, alors elle est probablement *très* bonne pour toi, et tu peux élaguer profondément le reste de l'analyse. C'est le **null-move pruning**, technique standard depuis les années 1990. Aux échecs, l'astuce a une limite connue (le *zugzwang* : situation où tout coup empire la position, typique des finales de pions), donc les moteurs désactivent l'heuristique en finale ou dans les positions identifiées comme zugzwang potentiel. Gain typique : encore un facteur 2 à 4 sur la vitesse effective.
+Une heuristique puissante : et si tu **passes ton tour** ? Si la position reste bonne pour toi malgré ce coup gratuit donné à l'adversaire, alors elle est probablement *très* bonne pour toi, et tu peux élaguer profondément le reste de l'analyse. C'est le **null-move pruning**, technique standard depuis les années 1990. Aux échecs, l'astuce a une limite connue (le *zugzwang* : situation où tout coup empire la position, typique des finales de pions), donc les implémentations ajoutent des conditions et des vérifications pour limiter ce risque. Un gain de vitesse universel de deux à quatre n’est pas établi ici.
 
 ![Null-move pruning : si la position reste positive après un coup nul (passer son tour), le moteur élague profondément l'arbre — avec la limite du zugzwang en finale où cette heuristique est désactivée.](/images/minimax-03-null-move.svg)
 
@@ -119,25 +91,17 @@ Les moteurs d'échecs modernes comme Stockfish ajoutent de nombreuses techniques
 
 **Approfondissement itératif** : au lieu d'effectuer directement une recherche à profondeur $d$, le moteur enchaîne des recherches successives à profondeur 1, 2, 3, ..., $d$. Chaque itération fournit un meilleur ordonnancement des coups pour l'itération suivante, améliorant l'efficacité de l'élagage.
 
-**Recherche de quiescence** : à la profondeur maximale, au lieu d'évaluer statiquement, la recherche se prolonge jusqu'à une position "quiescente" (stable), en n'explorant que les captures et promotions. Cela évite d'évaluer des positions où un échange de pièces non résolu fausserait l'évaluation.
+**Recherche de quiescence** : à la profondeur maximale, au lieu d'évaluer statiquement, la recherche se prolonge sur certains coups tactiques selon l’implémentation ; une position où le roi est en échec demande notamment des réponses légales, pas seulement des captures. Cela évite d'évaluer des positions où un échange de pièces non résolu fausserait l'évaluation.
 
 **Extensions de recherche** : dans certaines positions (mat en vue, pion passé avancé, position critique), la profondeur de recherche est automatiquement étendue au-delà de la limite nominale pour éviter l'effet d'horizon.
 
 **Réductions de recherche (LMR)** : inversement, pour les coups peu prometteurs (late move reduction), la profondeur est réduite pour économiser du temps. Si ces coups s'avèrent meilleurs que prévu, la profondeur est restaurée.
 
-## L'histoire des moteurs minimax : de Claude Shannon à Stockfish
+## Une recherche qui évolue
 
-L'histoire des moteurs d'échecs est l'histoire des améliorations successives de minimax.
+Le code publié de Stockfish combine recherche, tables de transposition, approfondissement itératif et plusieurs mécanismes sélectifs. Ils ne doivent pas être confondus avec l’alpha-bêta exact sur un arbre fixé.
 
-En 1950, [Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) a posé les bases théoriques dans son article "Programming a Computer for Playing Chess", identifiant les deux approches (force brute vs. sélection heuristique) et les défis fondamentaux.
-
-En 1957, [Alex Bernstein](https://fr.wikipedia.org/wiki/Alex_Bernstein) a créé le premier programme d'échecs fonctionnel sur IBM 704, utilisant une version simplifiée de minimax avec une évaluation rudimentaire.
-
-Les années 1970-1980 ont vu l'essor des puces dédiées aux échecs. [Belle](https://fr.wikipedia.org/wiki/Belle_(programme_d%27%C3%A9checs)) de Ken Thompson et Joe Condon fut le premier programme à atteindre le niveau maître. [Deep Thought](https://fr.wikipedia.org/wiki/Deep_Thought_(programme_d%27%C3%A9checs)) d'Hsu et Campbell atteignit le niveau Grand Maître.
-
-L'apogée du minimax classique fut [Deep Blue](https://fr.wikipedia.org/wiki/Deep_Blue), qui battit [Kasparov](https://fr.wikipedia.org/wiki/Garry_Kasparov) en 1997. Deep Blue évaluait 200 millions de positions par seconde avec une fonction d'évaluation développée en collaboration avec des Grand Maîtres.
-
-[Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(moteur_d%27%C3%A9checs)), développé depuis 2008, représente l'aboutissement de l'approche minimax classique avec une évaluation manuelle. Depuis 2020, il intègre [NNUE](https://fr.wikipedia.org/wiki/NNUE) (Efficiently Updatable Neural Network), un réseau de neurones intégré à la fonction d'évaluation.
+L’annonce NNUE de 2020 illustre une autre évolution : changer l’évaluation sans abandonner la famille de recherche alpha-bêta. Le moteur moderne ne se réduit donc pas à une formule matérielle suivie d’une exploration aveugle.
 
 ## AlphaZero et le dépassement de minimax
 
@@ -149,42 +113,17 @@ Ce qui a frappé la communauté des échecs n'est pas seulement la performance d
 
 AlphaZero a montré que minimax n'est pas la seule voie vers la maîtrise des échecs. L'apprentissage par renforcement peut produire une compréhension différente et parfois plus profonde du jeu. (Le match AlphaZero-Stockfish de 2017 reste l'épisode fondateur de cette révolution. Pour le mur combinatoire qui rend ces approches nécessaires, voir [pourquoi les échecs sont un problème presque impossible](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/) ; pour les zones où ces algorithmes sont les plus stressés, [la théorie du chaos aux échecs](/fr/blog/theorie-du-chaos-aux-echecs/).)
 
-## Minimax dans ta tête
+## Minimax comme outil pour ton calcul
 
-L'aspect le plus fascinant de minimax pour le joueur pratique est qu'il décrit ce que tu fais déjà quand tu calcules des variantes. Quand tu penses "si je joue là, il peut répondre ça ou ça. S'il répond ça, je joue ceci et il est forcé de...", tu exécutes mentalement un algorithme minimax tronqué.
+Quand tu penses « si je joue là, quelle est sa meilleure réponse ? », tu peux utiliser minimax comme grille de lecture. Cela ne démontre pas que ton cerveau exécute cette procédure et ne permet pas d’attribuer 3–8 ou 7–10 niveaux à une catégorie de joueurs.
 
-Tes limites humaines déterminent la "profondeur" de ta recherche. Un joueur à 1200 explore peut-être 2-3 niveaux de façon fiable. Un Grand Maître explore 7-10 niveaux dans des positions stratégiques et davantage dans les positions tactiques forcées.
+Sur une position d’entraînement, choisis deux coups candidats et examine une réponse adverse à chacun. Puis cherche une défense que tu n’avais pas envisagée. L’objectif est d’améliorer la vérification, pas de reproduire une mesure de profondeur humaine.
 
-La différence entre un joueur moyen et un Grand Maître n'est pas seulement la profondeur : c'est aussi la qualité de la fonction d'évaluation interne (l'intuition positionnelle) et l'efficacité de l'élagage (la capacité à identifier rapidement les coups pertinents et à ignorer les mauvais sans les calculer).
+![Même problème, deux démarches : un algorithme défini sur un arbre et un raisonnement humain dont les limites varient.](/images/minimax-02-profondeur-humain-moteur.svg)
 
-Entraîner ces deux aspects est au coeur du développement d'un joueur : enrichir son sens positionnel pour améliorer son évaluation, et affiner son instinct des "coups candidats" pour améliorer son élagage. Minimax est la description formelle de ce processus.
+## Sources
 
-![Comparaison de la profondeur de recherche minimax entre un humain (facteur b de 3 à 5, profondeur 3-8) et un moteur avec alpha-bêta (facteur b de 35, profondeur 10-20, 52 millions de nœuds au lieu de 35^10).](/images/minimax-02-profondeur-humain-moteur.svg)
-
-**Après lecture :** sur un problème tactique, impose une **profondeur fixe** (ex. trois demi-coups) avant de regarder la solution : tu calibres ton minimax interne.
-
----
-
-## Questions fréquentes
-
-### Minimax produit-il toujours le meilleur coup ?
-
-Oui, **si la recherche descend jusqu'aux positions terminales** (mat ou pat). À profondeur finie avec fonction d'évaluation heuristique, minimax produit le coup optimal *selon l'évaluation et la profondeur* utilisées. C'est pourquoi un moteur évalué à 3500 Elo bat un humain : sa fonction d'évaluation + sa profondeur sont plus proches de la vérité que celles d'un humain, pas parce qu'il calcule "parfaitement".
-
-### Pourquoi parle-t-on de "negamax" plutôt que de "minimax" dans les codes ?
-
-Parce que dans un jeu à somme nulle, $\min(a,b) = -\max(-a,-b)$. Negamax exploite cette symétrie pour utiliser **une seule fonction récursive** au lieu de deux. C'est purement une simplification du code, sans changement algorithmique. La quasi-totalité des moteurs modernes (Stockfish, Komodo, Leela Chess Zero) utilisent negamax + alpha-bêta.
-
-### L'élagage alpha-bêta change-t-il le résultat de minimax ?
-
-Non, **jamais**. C'est sa propriété fondamentale : alpha-bêta produit exactement le même coup que minimax pur, mais en explorant beaucoup moins de noeuds. La force de l'élagage dépend de l'**ordre des coups** : si tu testes le meilleur coup en premier, tu élagues massivement ; si tu testes le pire en premier, tu n'élagues presque rien. C'est pourquoi les moteurs investissent autant dans l'ordonnancement des coups (killer moves, historique des bons coups).
-
-### Pourquoi AlphaZero abandonne-t-il minimax ?
-
-Pas vraiment : il garde une recherche arborescente (MCTS), mais remplace l'exploration exhaustive d'alpha-bêta par une **exploration probabiliste guidée** par un réseau de neurones. L'avantage : sur des positions où la fonction d'évaluation classique perd pied (sacrifices à long terme, jeu positionnel subtil), le réseau de neurones donne une estimation plus juste. L'inconvénient : il faut entraîner ce réseau sur des millions de parties, ce qui demande des ressources matérielles considérables.
-
-### Mon cerveau exécute-t-il vraiment minimax quand je calcule ?
-
-Approximativement, oui. Tu fais une recherche arborescente avec un facteur de branchement très faible (3-5 coups candidats au lieu de 35), une profondeur très limitée (3-8 demi-coups), et une fonction d'évaluation intuitive (sens positionnel). Tu utilises aussi des heuristiques d'élagage très puissantes : tu **rejettes** la plupart des coups en un coup d'œil sans les calculer. La différence avec un moteur n'est pas qualitative, elle est quantitative.
-
----
+- Russell, S., & Norvig, P. (s. d., chapitre en ligne). *Adversarial Search*. Artificial Intelligence: A Modern Approach. [Chapitre](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
+- Équipe Stockfish (s. d.). *search.cpp*. Dépôt officiel Stockfish. [Code](https://github.com/official-stockfish/Stockfish/blob/master/src/search.cpp).
+- Équipe Stockfish (2020). *Introducing NNUE Evaluation*. [Annonce](https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/).
+- Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Article](https://arxiv.org/html/1712.01815v1).
