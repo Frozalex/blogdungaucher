@@ -11,115 +11,59 @@ tags: ["mémoire", "apprentissage", "parties classiques", "de Groot", "chunking"
 seoTitle: "Mémoriser des parties d'échecs : ce que dit la science cognitive"
 seoDescription: "Que retient-on vraiment d'une partie de grand maître étudiée ? Le mécanisme du chunking, les expériences de De Groot, et la bonne façon de mémoriser."
 keyTakeaways:
-  - "On ne mémorise pas des coups, on mémorise des structures (chunks), c'est le concept clé de la cognition aux échecs."
-  - "Étudier 10 parties en profondeur vaut mieux que parcourir 100 parties en surface."
-  - "La mémoire des positions est procédurale (squelette + plan), pas déclarative (séquence exacte de coups)."
-  - "Sans répétition espacée, 80 % d'une partie étudiée est oubliée en 2 semaines."
-  - "Le vrai bénéfice n'est pas de retenir LA partie, c'est d'enrichir ton vocabulaire de structures."
+  - "L'expertise s'appuie sur des connaissances qui organisent la perception des positions."
+  - "Retenir des motifs et retenir des séquences ne sont pas des capacités exclusives."
+  - "Aucun rapport universel dix parties profondes contre cent survolées n'est établi."
+  - "Le taux d'oubli et le calendrier de révision dépendent du contenu et de l'objectif."
 faq:
   - question: "Faut-il mémoriser des parties par cœur ?"
-    answer: "Non, et c'est impossible au-delà de quelques dizaines. Ce qu'il faut faire, c'est étudier des parties en profondeur : comprendre les décisions critiques, les structures de pions, les plans typiques. Ton cerveau retiendra des motifs (chunks) qui se transfèrent aux parties futures."
+    answer: "Cela peut servir un objectif précis, mais retenir les idées et vérifier les variantes compte aussi. Les études citées n'établissent pas une limite de quelques dizaines de parties mémorisables."
   - question: "Combien de parties faut-il étudier par semaine ?"
-    answer: "Mieux vaut 2-3 parties analysées profondément (1h chacune) que 20 parties parcourues en 5 minutes. La densité d'attention est ce qui consolide la mémoire procédurale."
-  - question: "Comment retenir les parties qu'on a étudiées ?"
-    answer: "Trois techniques validées : (1) rejouer la partie sans regarder, (2) résumer les 3-5 décisions critiques, (3) revoir la partie 1 semaine puis 1 mois plus tard (répétition espacée)."
-  - question: "Les grands maîtres mémorisent-ils des milliers de parties ?"
-    answer: "Plutôt des milliers de positions et de motifs, pas des séquences exactes. Les études (De Groot, Chase & Simon) montrent que leur avantage est dans la reconnaissance rapide de structures, pas dans la mémoire littérale des coups."
+    answer: "Aucun quota universel n'est établi. Choisis un volume qui te laisse expliquer les décisions et revenir sur ce qui t'échappe."
+  - question: "Combien oublie-t-on après deux semaines ?"
+    answer: "Les sources citées ne donnent pas un taux de 80 % pour une partie d'échecs. Le contenu, l'apprentissage initial, le délai et les révisions comptent."
+  - question: "Comment vérifier ce qu’on retient ?"
+    answer: "Essaie de retrouver une position ou une idée sans le support, puis compare et corrige. Les résultats sur le rappel de textes suggèrent une piste, sans valider un calendrier optimal propre aux échecs."
 ---
 
-Tu ouvres un livre. Une partie d'Alekhine de 1924. Tu la suis coup par coup, tu hoches la tête à la 17e finesse, tu admires le sacrifice du coup 28. Une heure plus tard, tu fermes le livre. Six mois plus tard, tu serais incapable de la rejouer.
+Tu ouvres un livre et tu suis une partie coup par coup. Tu comprends le commentaire, tu admires un sacrifice. Quelques mois plus tard, tu ne sais plus rejouer la partie entière. Cela ne prouve ni que tu n'as rien appris ni que le souvenir exact serait inutile.
 
-Ce constat, universel chez tous les joueurs d'échecs sérieux, pose une vraie question : si on oublie tout ce qu'on étudie, à quoi sert l'étude des parties classiques ? La réponse est plus subtile que « ça sert quand même » ou « c'est inutile ».
+## Retenir une partie ou reconnaître une idée
 
-Cet article fait le tour de ce que dit la psychologie cognitive sur la mémoire des positions d'échecs, et de ce qu'il faut vraiment faire pour que l'étude des parties produise de la progression réelle.
+Tu peux chercher plusieurs choses dans une partie commentée : retrouver une suite d'ouverture, comprendre une structure de pions, reconnaître un motif tactique ou apprendre une technique de finale. Ces objectifs n'exigent pas exactement la même restitution.
 
-## L'expérience fondatrice de De Groot
+Chase et Simon (1973) étudient le rappel et la perception de positions. Ils montrent le rôle de groupements significatifs pour comprendre l'avantage des joueurs expérimentés. Leur travail ne mesure pas la proportion d'une partie commentée oubliée deux semaines plus tard.
 
-Pour comprendre la mémoire d'un joueur d'échecs, il faut remonter aux années 1940-60 et aux travaux d'[Adriaan de Groot](https://fr.wikipedia.org/wiki/Adriaan_de_Groot), psychologue néerlandais.
+Un « chunk », ou groupement, ne doit pas être confondu avec un résumé verbal complet comme « structure, pression, plan ». C'est un élément d'un modèle de traitement de l'information, pas un objet que tu pourrais compter directement dans ta tête.
 
-De Groot a mené une expérience devenue iconique : il montrait pendant 5 secondes une position d'échecs à des sujets, grands maîtres, joueurs amateurs, débutants, puis leur demandait de la reconstituer.
+## Pourquoi l'expérience aide
 
-Les grands maîtres reconstituaient la position avec **93 % de précision**. Les débutants avec 33 %. L'écart était massif.
+Une configuration familière fournit des relations entre les pièces : défenses, attaques, structures. Les connaissances du domaine aident alors à organiser ce qui est perçu. Une position aléatoire offre moins de ces relations utiles, sans permettre de déclarer identiques toutes les performances d'experts et de débutants.
 
-Première hypothèse intuitive : les GM ont une mémoire de travail surdéveloppée. C'est ce qu'on croyait au départ.
+Gobet et Simon (1996) développent le modèle des templates : des structures plus riches qui associent des éléments relativement stables à des emplacements variables. Ce cadre aide à expliquer le rappel de plusieurs positions ; il ne fixe pas un stock universel de 100 000 à 300 000 motifs ni un nombre obligatoire d'heures pour chaque grand maître.
 
-Mais De Groot a fait une seconde expérience décisive : il a montré des positions *aléatoires* (pièces placées sans logique stratégique). Là, les performances des GM se sont effondrées à un niveau proche de celui des débutants : 50-60 % de précision.
+Retenir des structures n'interdit pas de mémoriser des séquences précises. Présenter toute mémoire des parties comme exclusivement procédurale serait trop restrictif.
 
-La conclusion est radicale : les GM ne mémorisent pas mieux *les pièces individuelles*. Ils mémorisent mieux les *structures*. Quand la structure existe, ils l'encodent en quelques chunks. Quand elle n'existe pas, leur mémoire redevient ordinaire.
+## Étudier selon une question
 
-## Le concept de « chunk »
+Avant de rejouer la partie, choisis ce que tu veux y chercher. Par exemple : pourquoi l'échange de dames est-il favorable ici ? Où le pion passé devient-il dangereux ? Arrête-toi avant la réponse et formule ton idée.
 
-Le **chunk**, ou regroupement, est le concept clé. Théorisé par [Herbert Simon](https://fr.wikipedia.org/wiki/Herbert_Simon) en 1973 (avec William Chase, dans la lignée des travaux de De Groot), il désigne une unité d'information regroupée en un seul item mémoire.
+Compare ensuite avec le commentaire et les variantes. Si tu avais raison, précise ce qui rend ton explication valide. Si tu avais tort, cherche la ressource oubliée. Le but n'est pas d'acquiescer à chaque annotation, mais de rendre ton raisonnement vérifiable.
 
-Pour un débutant, chaque pièce est un item séparé : « il y a un fou en c1, un cavalier en d2, un pion en e4, un pion en d4... ». 32 items. Trop pour la mémoire de travail (limitée à 4-7 items).
+Une séance courte peut convenir à un motif ; une partie complexe peut demander plusieurs séances. Aucun résultat cité ne permet de déclarer qu'une heure laisse forcément une trace durable et que cinq minutes ne servent presque à rien.
 
-Pour un GM, ce même tableau est encodé comme : « structure indo-bénonienne, pression sur d6, plan f4-f5 ». 3 chunks. La mémoire de travail tient sans peine.
+## Revenir sur ce qui reste difficile
 
-Les estimations actuelles donnent qu'un GM dispose d'environ **100 000 à 300 000 chunks** d'échecs stockés en mémoire à long terme. Construits sur 20 000+ heures d'étude et de jeu.
+Roediger et Karpicke (2006) observent, sur des textes, un avantage de tests de rappel pour la rétention différée par rapport à des relectures dans leurs expériences. Ce résultat suggère d'essayer une restitution avant vérification ; il ne définit pas un calendrier optimal pour les parties d'échecs.
 
-Cela change tout ce qu'on doit penser sur la mémorisation des parties.
+Tu peux reprendre une position après un délai, cacher la solution et expliquer le plan. Corrige immédiatement ce qui manque, puis choisis le prochain délai selon la difficulté à retrouver l'idée. Les intervalles d'un jour, d'une semaine ou d'un mois sont des choix à ajuster, pas une garantie de souvenir pendant des années.
 
-## Ce que ton cerveau retient vraiment
+Note aussi ce que tu voudrais réutiliser dans ton jeu. « Tour derrière le pion passé » est un repère à vérifier dans une position, pas une règle qui dispense de calculer.
 
-Quand tu étudies une partie d'Alekhine, ton cerveau ne stocke pas une séquence linéaire de 50 coups. Il stocke des **motifs** : structures de pions, transferts de pièces, idées tactiques récurrentes, plans stratégiques associés à des positions.
+L'étude des parties a ainsi une utilité possible même si tu n'en récites pas tous les coups. Sa qualité se juge à ce que tu comprends et retrouves ensuite, avec des objectifs explicites plutôt qu'un quota de parties.
 
-Ces motifs sont *réutilisables*. Quand tu joues ta propre partie et qu'une position similaire apparaît, ton cerveau active le motif. Pas la partie complète d'Alekhine, juste le bon chunk au bon moment.
+## Sources
 
-C'est exactement comme apprendre une langue. Tu ne mémorises pas des phrases entières en attendant qu'elles reviennent à l'identique. Tu mémorises des structures grammaticales, des collocations, des expressions, et tu les recombines au moment d'utilisation.
-
-Étudier des parties d'échecs, c'est enrichir ton vocabulaire de motifs. Pas ta mémoire littérale.
-
-## La conséquence pratique : profondeur > volume
-
-Cette compréhension renverse le conseil dominant.
-
-Beaucoup de joueurs croient bien faire en parcourant 50 parties par semaine, sans s'arrêter sur les positions critiques, sans analyser les choix stratégiques. C'est l'équivalent de feuilleter un dictionnaire bilingue en pensant apprendre une langue.
-
-Ce qui marche, c'est *la profondeur d'attention*. Une partie étudiée pendant 1h, avec arrêts répétés sur les coups critiques, en essayant de deviner le coup suivant, en analysant les structures, en formulant à voix haute les plans des deux camps, cette partie laisse des traces durables.
-
-Une partie parcourue en 5 minutes, même brillamment commentée, laisse peu de chose : tu auras vu le sacrifice, mais tu ne sauras pas comment l'identifier dans une position similaire.
-
-Les études cognitives sur l'effet de profondeur d'encodage ([Craik & Lockhart](https://en.wikipedia.org/wiki/Levels-of-processing_effect)) confirment ce mécanisme : ce qui est traité activement laisse une trace mnésique, ce qui est traité passivement disparaît dans les jours qui suivent.
-
-## La courbe d'oubli et la répétition espacée
-
-Même bien étudiée, une partie est oubliée si tu ne la revois pas.
-
-[Hermann Ebbinghaus](https://fr.wikipedia.org/wiki/Hermann_Ebbinghaus), à la fin du XIXe siècle, a mesuré la courbe de l'oubli sur des syllabes sans sens. Sans révision, environ 60 % de l'information est perdue en 24 heures, 80 % en 1 semaine. Pour des informations significatives, la pente est moins forte, mais le principe reste.
-
-Pour qu'une partie étudiée laisse une empreinte durable, il faut la *revoir*. Pas la réétudier en entier, juste la rejouer rapidement, mentalement ou sur l'échiquier.
-
-Le schéma optimal (validé en sciences cognitives) :
-- Étude initiale profonde (jour 0).
-- Première révision après 1-2 jours.
-- Deuxième révision après 1 semaine.
-- Troisième révision après 1 mois.
-- Quatrième révision après 3 mois.
-
-Avec ce schéma, la partie reste accessible des années. Sans ce schéma, elle s'efface.
-
-## L'illusion du « j'ai compris »
-
-Un piège classique : quand tu lis le commentaire de la partie, tu *comprends*. Tu vois pourquoi Alekhine joue ce coup-là. Tu approuves. Tu te dis « clair, évident ».
-
-Cette compréhension passive est trompeuse. Elle te donne l'illusion d'avoir intégré le motif. Mais tu n'as fait que reconnaître l'explication, pas générer toi-même la solution.
-
-Le test honnête : après avoir étudié la partie, ferme le livre. Reprends la position au coup 15. Demande-toi : « qu'est-ce que j'aurais joué ? Pourquoi ? ». Si tu ne peux pas reproduire l'analyse, c'est que tu n'as pas intégré le motif. Tu l'as juste consommé.
-
-Les meilleurs joueurs étudient les parties en s'arrêtant à chaque coup blanc, en essayant de deviner le coup suivant, en notant leurs erreurs. C'est lent. C'est exigeant. C'est ce qui marche.
-
-## Le rôle de l'émotion
-
-Une autre découverte des neurosciences : la mémoire est dopée par l'émotion. Une partie qui te touche émotionnellement, admiration, surprise, frustration, se grave bien mieux qu'une partie « tiède ».
-
-C'est pour ça que les parties iconiques (Fischer-Spassky 1972, Kasparov-Topalov 1999, Anand-Kasparov 1995) restent dans la mémoire collective. Pas seulement parce qu'elles sont brillantes, parce qu'elles ont un récit, un enjeu, une émotion.
-
-Quand tu étudies, cherche les parties qui te parlent émotionnellement. Pas celles qui sont objectivement « les meilleures ». Celles qui te font dire « waouh » ou « c'est cruel ». Ton cerveau retiendra mieux.
-
-## En résumé
-
-Mémoriser des parties d'échecs au sens littéral est inutile et impossible à grande échelle. Ce qu'il faut viser, c'est l'enrichissement de ton vocabulaire de motifs (chunks), via une étude profonde de quelques parties par semaine, avec répétition espacée.
-
-10 parties analysées en profondeur valent plus que 100 parties survolées. La profondeur d'attention crée des traces mnésiques durables, le survol crée une illusion de compréhension qui s'évapore en quelques jours.
-
-Le vrai bénéfice de l'étude des parties classiques n'est pas la mémoire littérale. C'est l'élargissement progressif de ta bibliothèque de structures, ce qui, au fil des années, fait la différence entre un joueur qui voit la position et un joueur qui la comprend.
+- Chase, W. G. et Simon, H. A. (1973), *Perception in chess*, Cognitive Psychology, 4, 55–81, [original](https://gwern.net/doc/psychology/chess/1973-chase.pdf).
+- Gobet, F. et Simon, H. A. (1996), *Templates in Chess Memory: A Mechanism for Recalling Several Boards*, Cognitive Psychology, 31, 1–40, [article](https://gwern.net/doc/psychology/chess/1996-gobet.pdf).
+- Roediger, H. L. et Karpicke, J. D. (2006), *Test-enhanced learning: Taking memory tests improves long-term retention*, Psychological Science, 17, 249–255, [résumé des auteurs et DOI](https://profiles.wustl.edu/en/publications/test-enhanced-learning-taking-memory-tests-improves-long-term-ret/).
