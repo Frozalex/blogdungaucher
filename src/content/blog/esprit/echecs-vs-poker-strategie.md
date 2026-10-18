@@ -46,9 +46,9 @@ Cette différence structurelle crée deux types de joueurs, deux types de raison
 
 ## La GTO : quand le poker rejoint la théorie des jeux
 
-La GTO (Game Theory Optimal) est le concept central du poker moderne de haut niveau. Une stratégie GTO est une stratégie d'équilibre de Nash : si vous jouez GTO, votre adversaire ne peut pas vous exploiter, quelle que soit sa stratégie.
+La GTO (Game Theory Optimal) est le concept central du poker moderne de haut niveau. Une stratégie GTO est une stratégie d'équilibre de Nash : si tu joues GTO, ton adversaire ne peut pas t’exploiter, quelle que soit sa stratégie.
 
-La GTO au poker est un mélange de décisions : vous ne faites pas toujours la même chose dans la même situation. Dans certaines situations, la GTO prescrit de bluffer avec une fréquence précise, disons 33% du temps. Pas toujours, pas jamais, mais exactement 33% pour rendre votre adversaire indifférent entre appeler et se coucher face à vos mises.
+La GTO au poker est un mélange de décisions : tu ne fais pas toujours la même chose dans la même situation. Dans certaines situations, la GTO prescrit de bluffer avec une fréquence précise, disons 33% du temps. Pas toujours, pas jamais, mais exactement 33% pour rendre ton adversaire indifférent entre appeler et se coucher face à tes mises.
 
 Cela signifie que la stratégie optimale au poker est intrinsèquement aléatoire. C'est paradoxal pour un esprit formé aux échecs, où chaque position a (théoriquement) un coup objectivement meilleur. Au poker (qu'un simple [set de cartes et jetons](https://amzn.to/4hlYy9s) suffit à pratiquer), l'optimalité exige de l'imprévisibilité.
 
@@ -72,7 +72,7 @@ Il y a un aspect du poker que les joueurs d'échecs transposés ont souvent du m
 
 En poker, même le joueur qui prend les meilleures décisions possibles sur le long terme peut perdre pendant des semaines ou des mois. Les mauvais beats, les bad runs, les séquences statistiquement défavorables sont inévitables dans un jeu probabiliste. La meilleure décision possible peut perdre de l'argent. La pire décision peut gagner. C'est la nature d'un jeu où des cartes aléatoires déterminent en partie le résultat à court terme.
 
-Cette réalité crée un problème psychologique spécifique : comment maintenir une discipline de prise de décision optimale quand les résultats ne valident pas vos décisions ?
+Cette réalité crée un problème psychologique spécifique : comment maintenir une discipline de prise de décision optimale quand les résultats ne valident pas tes décisions ?
 
 Les joueurs d'échecs habitués au fait que chaque erreur est punissable et chaque bon coup récompensable ont souvent du mal à accepter que la meilleure réponse à un résultat négatif est parfois "j'ai bien joué, j'ai eu de la malchance". Cette acceptation est indispensable pour éviter le tilt, le mécanisme par lequel la frustration d'une mauvaise sequence conduit à prendre des décisions progressivement plus mauvaises.
 
