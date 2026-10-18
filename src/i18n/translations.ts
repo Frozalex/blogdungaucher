@@ -30,7 +30,7 @@ export const translations = {
     home: {
       eyebrow: "Éditorial indépendant",
       titleHtml:
-        'Comprendre les <span class="hero__accent display-serif">échecs</span><br/>sans simplifier le jeu.',
+        'Pratique et <span class="hero__accent display-serif">simple</span>',
       lead: "Deux articles par semaine : des analyses claires sur la science du jeu, le mental compétitif et l'impact des échecs dans la société, avec une approche humaine et exigeante.",
       startReading: "Commencer la lecture",
       seeSections: "Voir les rubriques",
