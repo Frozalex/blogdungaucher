@@ -15,9 +15,7 @@ faq:
   - question: "Le théorème de Zermelo prouve-t-il que les Blancs gagnent ?"
     answer: >-
       Non. Il prouve qu'<strong>une</strong> réponse existe parmi trois possibles : victoire Blancs, victoire
-      Noirs, ou nulle. Il ne dit pas laquelle. L'hypothèse majoritaire est que c'est la nulle (consistance
-      avec le jeu d'élite et l'évaluation des moteurs autour de +0,2/+0,3), mais c'est une croyance basée sur
-      l'observation, pas une démonstration.
+      Noirs, ou nulle. Il ne dit pas laquelle. La position initiale n’est pas résolue ; une évaluation de moteur n’est pas une preuve de sa valeur.
   - question: "Pourquoi appelle-t-on cela un \"paradoxe\" ?"
     answer: >-
       Au sens mathématique, ce n'en est pas un : c'est un résultat parfaitement cohérent. Le "paradoxe" est
@@ -27,24 +25,20 @@ faq:
       <em>possibilité de l'accès</em>.
   - question: "Les tablebases ne contredisent-elles pas Zermelo ?"
     answer: >-
-      Au contraire, elles le <strong>confirment</strong> sur un sous-ensemble du problème. Pour toute
-      position avec ≤ 7 pièces, la valeur Zermelo est connue exactement (gain, perte ou nul, et profondeur
-      exacte). Les tablebases sont la preuve constructive que la démonstration de Zermelo n'est pas vide :
+      Au contraire, elles le <strong>confirment</strong> sur un sous-ensemble du problème. Sur les positions couvertes par une tablebase, le résultat est déterminé selon ses règles et ses métriques ; les exceptions comme les droits de roque doivent être prises en compte. Les tablebases sont la preuve constructive que la démonstration de Zermelo n'est pas vide :
       appliquée à un nombre fini accessible de positions, elle produit bien une vérité unique calculable.
   - question: "Pourquoi AlphaZero peut-il battre Stockfish s'il ne joue pas \"parfaitement\" ?"
     answer: >-
       Parce que ni l'un ni l'autre ne joue parfaitement au sens Zermelo. Tous deux sont des
       <strong>approximations</strong> de la stratégie optimale, simplement avec des architectures différentes
       (recherche + heuristiques pour Stockfish, réseau de neurones + Monte Carlo Tree Search pour AlphaZero).
-      Quand AlphaZero bat Stockfish, c'est qu'à ce niveau d'approximation, ses choix sont en moyenne plus
-      proches de la vérité Zermelo. Mais aucun des deux n'atteint cette vérité.
+      Un meilleur score dans un match n’est pas une mesure de distance à une stratégie optimale inconnue.
   - question: "Cette vérité mathématique pourrait-elle être un jour découverte ?"
     answer: >-
-      Probablement pas par force brute pure : l'arbre $10^{120}$ est définitivement hors d'atteinte physique.
-      Une <strong>preuve indirecte</strong> reste théoriquement possible (démonstration par symétrie, par
-      invariant, par stratégie miroir partielle), mais aucune piste sérieuse n'existe. Le calcul quantique
-      change la borne (Grover divise l'exposant par deux), mais $10^{60}$ reste astronomique. La résolution
-      des échecs au sens strict est plus probablement un horizon que jamais atteint.
+      La résolution exhaustive dépasse les moyens actuels. Cela ne démontre pas qu’aucune méthode future
+      ne pourra résoudre le jeu. L’algorithme de Grover concerne la recherche non structurée : on ne peut
+      pas simplement diviser par deux l’exposant de l’arbre minimax des échecs.
+
 ---
 
 En 1912, lors du cinquième Congrès International des Mathématiciens à Cambridge, le mathématicien allemand [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) a présenté un résultat qui allait changer la façon dont les mathématiciens, et plus tard les informaticiens, pensent aux jeux de stratégie. Son théorème est court. Sa démonstration est élégante. Et ses implications aux échecs sont à la fois rassurantes et vertigineuses.
@@ -63,7 +57,7 @@ Le théorème de Zermelo s'applique à une classe de jeux qui incluent les éche
 
 ![Les trois issues déterminées par Zermelo : victoire forcée des Blancs, victoire forcée des Noirs, ou nulle forcée — la nulle étant l'hypothèse dominante non prouvée à ce jour.](/images/zermelo-01-trois-issues.svg)
 
-La démonstration utilise une **induction rétrograde** (*backward induction*) sur la longueur maximale possible de la partie. C'est exactement le même mécanisme que la version moderne de [minimax aux échecs](/fr/blog/minimax-aux-echecs/), à 37 ans d'écart : Zermelo l'a formulé pour les mathématiciens, Shannon (1950) l'a réutilisé tel quel pour les premiers programmes.
+Pour un arbre fini, tu peux comprendre ce résultat par **induction rétrograde**, comme dans [minimax](/fr/blog/minimax-aux-echecs/). Cette présentation pédagogique n’est pas la preuve originale de Zermelo : Schwalbe et Walker soulignent précisément que son texte de 1913 ne procède pas ainsi. Shannon publie son article en 1950, soit 37 ans plus tard, sans que cela établisse une reprise « telle quelle » de la preuve.
 
 Imagine une fin de partie atteinte. Chaque position terminale est soit une victoire pour Blanc, soit une victoire pour Noir, soit une nulle. Maintenant, remontons d'un coup. Si c'est le tour de Blanc, il peut choisir parmi les positions terminales qui lui sont accessibles celle qui lui est la plus favorable. De même pour Noir. En remontant récursivement ainsi depuis toutes les positions terminales jusqu'à la position initiale, chaque position dans l'arbre du jeu reçoit une valeur définie : victoire Blanc, victoire Noir, ou nulle.
 
@@ -73,7 +67,9 @@ La valeur de la position initiale est donc déterminée. Le premier joueur à jo
 
 ### Une démonstration affinée après coup
 
-Détail historique souvent oublié : le texte original de Zermelo en 1913 contient une **subtilité non triviale** sur la finitude. Zermelo suppose implicitement que toute partie se termine en un nombre fini de coups, mais ne traite pas correctement le cas où le perdant peut indéfiniment retarder l'échec et mat. C'est [Dénes König](https://fr.wikipedia.org/wiki/D%C3%A9nes_K%C3%B6nig) (1927) puis [László Kalmár](https://fr.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Kalm%C3%A1r) (1928) qui complètent la preuve avec ce qu'on appelle aujourd'hui le **lemme de König** sur les arbres infinis à branchement fini. Aux échecs, ce détail est réglé en pratique par la règle des 50 coups et la règle de triple répétition, qui garantissent la finitude effective.
+Schwalbe et Walker distinguent le texte original de 1913 de ses formulations modernes. Zermelo admet des suites de coups infinies et s’intéresse notamment à la longueur nécessaire pour forcer un gain. König (1927) et Kalmár (1928/1929) prolongent cette analyse. Il faut donc séparer cette histoire de la démonstration élémentaire sur un arbre fini présentée ici.
+
+Pour traiter les échecs modernes comme un jeu fini, il faut inclure les règles d’arrêt. La triple répétition et les 50 coups ouvrent un droit à réclamer la nulle ; les règles automatiques de quintuple répétition et des 75 coups jouent un rôle distinct, comme le rappelle le manuel FIDE des arbitres.
 
 ### Pourquoi c'est paradoxal
 
@@ -99,15 +95,13 @@ Si résoudre les échecs en entier est impossible, il existe un domaine où la r
 
 Les [bases de données de fins de partie](https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_d%27%C3%A9checs) (tablebases) développées par Ken Thompson puis Marc Bourzutschky et d'autres ont résolu toutes les fins de partie jusqu'à sept pièces sur l'échiquier. Ce travail monumental a révélé des résultats surprenants.
 
-En mai 2006, Marc Bourzutschky et Yakov Konoval ont ainsi trouvé une position Roi-Dame-Cavalier contre Roi-Tour-Fou-Cavalier où la conversion forcée demande 517 coups. Le record est tombé depuis : en 2012, l'achèvement des tablebases Lomonosov à sept pièces a mis au jour un mat forcé en **549 coups**, règle des 50 coups ignorée. Aucun humain, même le meilleur Grand Maître du monde, ne pourrait trouver ce chemin par raisonnement propre, et aucun moteur ne le joue correctement sans accès à la tablebase. La profondeur de la vérité échiquéenne dans ces configurations dépasse largement les capacités humaines.
+Les tablebases montrent surtout pourquoi il faut préciser les règles et la métrique. La documentation de Ronald de Man présente, par exemple, une finale avec une valeur DTZ50 de 164 demi-coups et une « victoire maudite » : gagnante sans la limite des 50 coups, elle ne l’est pas forcément avec cette règle.
 
-Ce résultat est instructif. Il montre que ton intuition sur ce qui est « gagné » ou « nul » peut être profondément erronée quand tu t'éloignes des positions familières. Il renforce le mystère de Zermelo : la vérité existe, mais elle peut se cacher à des profondeurs qui défient l'entendement humain.
+### DTM et DTZ : deux distances différentes
 
-### Le saut DTM / DTZ : deux vérités pour une même position
+DTM mesure la distance au mat ; DTZ la distance à une prise ou à un mouvement de pion qui remet le compteur à zéro. Les optimiser peut conduire à choisir des coups différents. Cela ne crée pas deux vérités contradictoires : on pose deux questions distinctes, et il faut préciser si la règle des 50 coups est prise en compte. Les tables Syzygy usuelles fournissent WDL et DTZ, pas une distance DTM universelle.
 
-Les tablebases distinguent deux mesures de la "victoire forcée" : DTM (*Distance to Mate*, distance au mat) et DTZ (*Distance to Zero*, distance au prochain coup de pion ou prise qui remet à zéro le compteur des 50 coups). Les deux nombres n'ont rien à voir : une position dont le mat optimal est à plusieurs centaines de coups peut n'être qu'à quelques coups d'une prise ou d'une poussée de pion, c'est-à-dire d'une simplification qui remet le compteur à zéro. Suivre le DTZ, c'est accepter de renoncer au chemin mathématiquement optimal pour un chemin jouable. Cette dualité illustre quelque chose de profond sur Zermelo : la **vérité mathématique** d'une position dépend du critère choisi pour "gagner", et l'humanité joue presque toujours avec un critère pratique (gagner avant la pendule, avant la fatigue) très différent du critère théorique.
-
-![DTM vs DTZ dans les tablebases : le plus long mat forcé connu à sept pièces demande 549 coups, alors que la distance au prochain coup irréversible se compte en quelques coups. Deux vérités pour une même position, selon le critère choisi.](/images/zermelo-04-dtm-dtz.svg)
+![Deux distances à distinguer dans une tablebase : distance au mat et distance à une remise à zéro du compteur, avec prise en compte explicite des règles.](/images/zermelo-04-dtm-dtz.svg)
 
 ## L'imperfection structurelle du joueur humain
 
@@ -135,7 +129,7 @@ Ce paradoxe est profond : la beauté et la richesse des échecs reposent sur l'i
 
 La communauté informatique a progressivement résolu des jeux plus complexes les uns après les autres, suivant la logique de Zermelo.
 
-Le [morpion](https://fr.wikipedia.org/wiki/Morpion) est nul sous jeu parfait, et cette vérité est accessible à n'importe quel enfant qui apprend la stratégie correcte. Le [Puissance 4](https://fr.wikipedia.org/wiki/Puissance_4) a été résolu en 1988 : victoire du premier joueur. Les [dames](https://fr.wikipedia.org/wiki/Dames_(jeu)) ont été résolues en 2007 par [Jonathan Schaeffer](https://fr.wikipedia.org/wiki/Jonathan_Schaeffer) : nul sous jeu parfait, après 18 ans de calcul et un registre de $5 \times 10^{20}$ positions.
+Le [morpion](https://fr.wikipedia.org/wiki/Morpion) est nul sous jeu parfait, et cette vérité est accessible à n'importe quel enfant qui apprend la stratégie correcte. Le [Puissance 4](https://fr.wikipedia.org/wiki/Puissance_4) a été résolu en 1988 : victoire du premier joueur. Les dames anglaises sur 8×8 (*checkers*) ont été résolues en 2007 par [Jonathan Schaeffer](https://fr.wikipedia.org/wiki/Jonathan_Schaeffer) : nul sous jeu parfait, après 18 ans de calcul dans un jeu comptant environ $5 \times 10^{20}$ positions possibles ; toutes n’ont pas été parcourues individuellement.
 
 ![Hiérarchie des jeux résolus selon la logique de Zermelo : du morpion (trivial) au Puissance 4 (1988), aux dames (2007), jusqu'aux échecs et au Go qui restent ouverts bien que leur solution soit garantie d'exister.](/images/zermelo-03-jeux-resolus.svg)
 
@@ -159,7 +153,7 @@ Le génie de Zermelo n'est pas d'avoir résolu les échecs. C'est d'avoir prouv�
 
 ### Le théorème de Zermelo prouve-t-il que les Blancs gagnent ?
 
-Non. Il prouve qu'**une** réponse existe parmi trois possibles : victoire Blancs, victoire Noirs, ou nulle. Il ne dit pas laquelle. L'hypothèse majoritaire est que c'est la nulle (consistance avec le jeu d'élite et l'évaluation des moteurs autour de +0,2/+0,3), mais c'est une croyance basée sur l'observation, pas une démonstration.
+Non. Il prouve qu'**une** réponse existe parmi trois possibles : victoire Blancs, victoire Noirs, ou nulle. Il ne dit pas laquelle. La position initiale n’est pas résolue ; une évaluation de moteur n’est pas une preuve de sa valeur.
 
 ### Pourquoi appelle-t-on cela un "paradoxe" ?
 
@@ -167,22 +161,23 @@ Au sens mathématique, ce n'en est pas un : c'est un résultat parfaitement coh�
 
 ### Les tablebases ne contredisent-elles pas Zermelo ?
 
-Au contraire, elles le **confirment** sur un sous-ensemble du problème. Pour toute position avec ≤ 7 pièces, la valeur Zermelo est connue exactement (gain, perte ou nul, et profondeur exacte). Les tablebases sont la preuve constructive que la démonstration de Zermelo n'est pas vide : appliquée à un nombre fini accessible de positions, elle produit bien une vérité unique calculable.
+Au contraire, elles le **confirment** sur un sous-ensemble du problème. Sur les positions couvertes par une tablebase, le résultat est déterminé selon ses règles et ses métriques ; les exceptions comme les droits de roque doivent être prises en compte. Les tablebases sont la preuve constructive que la démonstration de Zermelo n'est pas vide : appliquée à un nombre fini accessible de positions, elle produit bien une vérité unique calculable.
 
 ### Pourquoi AlphaZero peut-il battre Stockfish s'il ne joue pas "parfaitement" ?
 
-Parce que ni l'un ni l'autre ne joue parfaitement au sens Zermelo. Tous deux sont des **approximations** de la stratégie optimale, simplement avec des architectures différentes (recherche + heuristiques pour Stockfish, réseau de neurones + Monte Carlo Tree Search pour AlphaZero). Quand AlphaZero bat Stockfish, c'est qu'à ce niveau d'approximation, ses choix sont en moyenne plus proches de la vérité Zermelo. Mais aucun des deux n'atteint cette vérité.
+Parce que ni l'un ni l'autre ne joue parfaitement au sens Zermelo. Tous deux sont des **approximations** de la stratégie optimale, simplement avec des architectures différentes (recherche + heuristiques pour Stockfish, réseau de neurones + Monte Carlo Tree Search pour AlphaZero). Un meilleur score dans un match n’est pas une mesure de distance à une stratégie optimale inconnue.
 
 ### Cette vérité mathématique pourrait-elle être un jour découverte ?
 
-Probablement pas par force brute pure : l'arbre $10^{120}$ est définitivement hors d'atteinte physique. Une **preuve indirecte** reste théoriquement possible (démonstration par symétrie, par invariant, par stratégie miroir partielle), mais aucune piste sérieuse n'existe. Le calcul quantique change la borne (Grover divise l'exposant par deux), mais $10^{60}$ reste astronomique. La résolution des échecs au sens strict est plus probablement un horizon que jamais atteint.
+La résolution exhaustive dépasse les moyens actuels. Cela ne démontre pas qu’aucune méthode future ne pourra résoudre le jeu. Invoquer Grover pour remplacer directement $10^{120}$ par $10^{60}$ est injustifié : un arbre adversarial n’est pas une simple liste de solutions à rechercher.
 
 ## Sources
 
-- Zermelo, E. (1913). *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels*. **Proceedings of the Fifth International Congress of Mathematicians**, Cambridge, vol. II, 501-504. Communication présentée au congrès en **1912**, publiée dans les actes en 1913 : c'est de là que vient la double datation qu'on croise partout.
-- Schwalbe, U., & Walker, P. (2001). *Zermelo and the Early History of Game Theory*. **Games and Economic Behavior**, 34(1), 123-137. DOI : [10.1006/game.2000.0794](https://doi.org/10.1006/game.2000.0794) — l'étude de référence sur ce que Zermelo a réellement démontré, et sur les compléments apportés par König (1927) et Kalmár (1928).
-- Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. **Philosophical Magazine**, Ser. 7, 41(314), 256-275. [PDF intégral](https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf).
-- **Tablebases de finales** : synthèse et records de profondeur sur [l'article Endgame tablebase de Wikipédia](https://en.wikipedia.org/wiki/Endgame_tablebase), qui documente la position à 517 coups de Bourzutschky et Konoval (2006) et le record Lomonosov à 549 coups (2012).
-- **Lichess tablebase**, [interrogation en ligne des finales à 7 pièces](https://syzygy-tables.info/) : pour vérifier soi-même DTM et DTZ sur une position donnée.
+- Zermelo, E. (1913). *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels*. Actes du cinquième Congrès international des mathématiciens, vol. II, 501–504. [Traduction en annexe du texte de Schwalbe et Walker](https://studylib.net/doc/28166551/zermelo-work).
+- Schwalbe, U., & Walker, P. (1999, version révisée du document de travail de 1997). *Zermelo and the Early History of Game Theory*. University of Mannheim / University of Canterbury. [Texte intégral consulté](https://studylib.net/doc/28166551/zermelo-work) : différence entre preuve originale et présentation moderne.
+- Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. Philosophical Magazine, 41, 256–275. [Article original](https://www.computerhistory.org/chess/doc-431614f453dde/).
+- De Man, R. (sans date). *Probetool*. GitHub. [Documentation des tables Syzygy](https://github.com/syzygy1/probetool) : WDL, DTZ50 et exemple de victoire maudite.
+- FIDE (2022). *Arbiters’ Manual*. [Manuel, règles des nulles](https://arbiters.fide.com/wp-content/uploads/Publications/Manual/ARBManual2022_1st_October.pdf).
+- Allis, V. (1988). *A Knowledge-based Approach of Connect-Four*. Vrije Universiteit Amsterdam. [Mémoire](https://tromp.github.io/c4/connect4_thesis.pdf) : exemple du Puissance 4 cité dans le corps.
 
----
+- Schaeffer, J., et al. (2007). *Checkers Is Solved*. Science, 317, 1518–1522. [Article intégral](https://www.cs.cornell.edu/courses/cs6700/2013sp/readings/06-b-Checkers-Solved-Science-2007.pdf).
