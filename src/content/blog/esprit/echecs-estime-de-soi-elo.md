@@ -1,8 +1,8 @@
 ---
-title: "Elo et estime de soi : quand votre classement devient votre identité"
+title: "Elo et estime de soi : quand ton classement devient ton identité"
 excerpt: >-
   Le classement Elo est une invention brillante pour mesurer le niveau de jeu. C'est aussi un piège psychologique
-  redoutable : quand votre Elo devient la mesure de votre valeur personnelle, chaque défaite est une blessure
+  redoutable : quand ton Elo devient la mesure de ta valeur personnelle, chaque défaite est une blessure
   identitaire. Comment découpler performance et identité.
 publishDate: "2026-11-09"
 category: esprit
@@ -52,8 +52,8 @@ faq:
   - question: Comment fonctionne le calcul du Elo ?
     answer: >-
       Le système Elo calcule la probabilité théorique qu'un joueur batte l'autre en fonction de l'écart de classement.
-      Si vous battez un adversaire de même Elo, vous gagnez environ 16 points (et lui en perd 16). Si vous battez un
-      adversaire 200 points au-dessus, vous gagnez plus (environ 24 points) et lui en perd plus. Si vous perdez contre
+      Si tu bats un adversaire de même Elo, tu gagnes environ 16 points (et lui en perd 16). Si tu bats un
+      adversaire 200 points au-dessus, tu gagnes plus (environ 24 points) et lui en perd plus. Si tu perds contre
       un adversaire 200 points en dessous, les points perdus sont importants (environ 24). La formule est
       statistiquement calibrée pour que, sur l'ensemble des parties, les classements convergent vers les vrais niveaux
       de jeu.
@@ -82,8 +82,8 @@ faq:
   - question: Faut-il continuer à jouer quand son Elo chute fortement ?
     answer: >-
       Dépend de la cause. Si la chute est due à un surentraînement ou à un état de fatigue cognitif, une pause de
-      quelques jours est appropriée. Si elle est due à des changements dans votre jeu (apprendre une nouvelle ouverture
-      qui déstabilise temporairement vos repères), continuer à jouer en acceptant la chute temporaire est souvent la
+      quelques jours est appropriée. Si elle est due à des changements dans ton jeu (apprendre une nouvelle ouverture
+      qui déstabilise temporairement tes repères), continuer à jouer en acceptant la chute temporaire est souvent la
       meilleure approche : la courbe de progression passe par une valley avant la montée. Si elle est due à une
       sous-estimation des adversaires ou à des erreurs récurrentes non analysées, stopper pour analyser avant de rejouer
       est plus productif.
@@ -113,9 +113,9 @@ Les nombres sont **comparatifs** : "1680 contre 1720", c'est immédiat. On sait 
 
 Les nombres sont **visibles** : dans les clubs, sur les sites, dans les applis. Le Elo est public, impossible à ignorer.
 
-Les nombres sont **dynamiques** : ils changent après chaque partie. Cette mise à jour permanente crée une boucle de feedback émotionnel continu : chaque partie a un impact mesurable sur "qui vous êtes" selon le nombre.
+Les nombres sont **dynamiques** : ils changent après chaque partie. Cette mise à jour permanente crée une boucle de feedback émotionnel continu : chaque partie a un impact mesurable sur "qui tu es" selon le nombre.
 
-Ces propriétés font du Elo un objet psychologique particulièrement actif. Dans d'autres domaines : votre compétence en cuisine, votre niveau de lecture, votre aptitude à résoudre des problèmes : il n'existe pas d'équivalent aussi précis, comparatif et dynamique.
+Ces propriétés font du Elo un objet psychologique particulièrement actif. Dans d'autres domaines : ta compétence en cuisine, ton niveau de lecture, ton aptitude à résoudre des problèmes : il n'existe pas d'équivalent aussi précis, comparatif et dynamique.
 
 ## Le Elo anxiety : un phénomène documenté
 
@@ -171,13 +171,13 @@ La solution n'est pas de ne pas se préoccuper du Elo. C'est d'en faire un indic
 
 **Célébrer des progrès de jeu indépendants du classement** : "j'ai trouvé la bonne défense dans cette finale difficile", "j'ai calculé une variante de 5 coups correctement", "j'ai compris pourquoi ma structure de pions était faible dans cette partie". Ces progrès réels existent même quand le Elo stagne ou baisse.
 
-**Fixer des objectifs de processus** : "je vais analyser chaque partie cette semaine", "je vais étudier les finales de tours 30 minutes par semaine", "je vais jouer un tournoi en face à face ce mois-ci". Ces objectifs sont sous votre contrôle, contrairement au Elo qui dépend aussi des adversaires, de la forme du jour, et du hasard des appariements.
+**Fixer des objectifs de processus** : "je vais analyser chaque partie cette semaine", "je vais étudier les finales de tours 30 minutes par semaine", "je vais jouer un tournoi en face à face ce mois-ci". Ces objectifs sont sous ton contrôle, contrairement au Elo qui dépend aussi des adversaires, de la forme du jour, et du hasard des appariements.
 
 **Accepter les phases de stagnation** comme normales. Les courbes d'apprentissage ne sont pas linéaires : des plateaux de plusieurs mois suivis de sauts sont le pattern habituel. Un Elo stable pendant 3 mois n'est pas signe d'échec ; c'est souvent le signe qu'une restructuration cognitive est en cours.
 
 ---
 
-*Le Elo est un outil de mesure. Il ne mesure pas votre valeur : seulement votre performance à un jeu, à un moment donné. Arpad Elo n'avait probablement pas prévu que son algorithme deviendrait pour certains une mesure d'existence. Il aurait probablement trouvé ça triste, et lui-même, joueur modeste, aurait peut-être souri.*
+*Le Elo est un outil de mesure. Il ne mesure pas ta valeur : seulement ta performance à un jeu, à un moment donné. Arpad Elo n'avait probablement pas prévu que son algorithme deviendrait pour certains une mesure d'existence. Il aurait probablement trouvé ça triste, et lui-même, joueur modeste, aurait peut-être souri.*
 
 ## Pour aller plus loin
 
