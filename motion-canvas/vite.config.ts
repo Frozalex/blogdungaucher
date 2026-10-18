@@ -12,6 +12,12 @@ export default defineConfig({
     motionCanvas({
       project: "./src/project.ts",
     }),
+    {
+      name: "motion-canvas-vite8-target",
+      // Motion Canvas 3 emits Vite's former "modules" target. Rolldown
+      // requires an explicit ECMAScript target instead.
+      config: () => ({ build: { target: "es2020" } }),
+    },
   ],
   server: {
     port: 9000,

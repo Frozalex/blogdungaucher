@@ -1,0 +1,8 @@
+npm warn deprecated mathjax-full@3.2.2: Version 4 replaces this package with the scoped package @mathjax/src
+
+added 59 packages, and audited 62 packages in 4s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities

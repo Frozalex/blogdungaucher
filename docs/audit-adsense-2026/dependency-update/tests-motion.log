@@ -1,0 +1,26 @@
+
+> blog-gaucher-motion-canvas@0.1.0 test
+> node vendor/motion-project-glob/index.test.cjs
+
+TAP version 13
+# Subtest: Motion Canvas discovers explicit files and wildcard project lists
+ok 1 - Motion Canvas discovers explicit files and wildcard project lists
+  ---
+  duration_ms: 10.822255
+  type: 'test'
+  ...
+# Subtest: the actual Motion Canvas plugin uses the installed compatibility package
+ok 2 - the actual Motion Canvas plugin uses the installed compatibility package
+  ---
+  duration_ms: 1.778158
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 17.833081

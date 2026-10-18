@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/generate-og-png.mjs && node scripts/generate-image-variants.mjs && node scripts/check-publish-weekly.mjs && astro build && pagefind --site dist --glob \"{fr,en,pt-br}/blog/**/*.html\" && node scripts/strip-inline-script-comments.mjs && node scripts/add-image-srcset.mjs && node scripts/verify-dist-urls.mjs",
+    "build": "node scripts/generate-og-png.mjs && node scripts/generate-image-variants.mjs && node scripts/check-publish-weekly.mjs && astro build && pagefind --site dist --glob \"{fr,en,pt-br}/blog/**/*.html\" && node scripts/strip-inline-script-comments.mjs && node scripts/add-image-srcset.mjs && node scripts/finalize-public-navigation.mjs && node scripts/verify-dist-urls.mjs && node scripts/check-dead-links.mjs",
     "build:clean": "node scripts/build-clean.mjs",
     "strip:em-dash": "node scripts/strip-em-dash.mjs",
     "strip:em-dash:dry": "node scripts/strip-em-dash.mjs --dry",
@@ -20,23 +20,26 @@
     "build:pdfs": "npm run build && npm run pdfs",
     "docx": "node scripts/generate-docx.mjs",
     "docx:en": "node scripts/generate-docx-en.mjs",
-    "notify": "node scripts/notify-ntfy.mjs"
+    "notify": "node scripts/notify-ntfy.mjs",
+    "check": "astro check",
+    "check:languages": "node scripts/check-language-regression.mjs",
+    "test": "node scripts/finalize-public-navigation.test.mjs"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.9",
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/markdown-remark": "^7.3.3",
     "@fontsource-variable/fraunces": "^5.2.9",
     "@fontsource-variable/outfit": "^5.2.8",
     "@fontsource-variable/space-grotesk": "^5.2.10",
-    "astro": "^6.1.9",
+    "astro": "^7.4.0",
     "cheerio": "^1.2.0",
     "chess.js": "^1.4.0",
     "chessboard-element": "^1.2.0",
     "docx": "^9.7.1",
     "github-slugger": "^2.0.0",
     "hast-util-to-html": "^9.0.5",
-    "html-to-docx": "^1.8.0",
     "html2pdf.js": "^0.14.0",
-    "katex": "^0.16.45",
+    "katex": "^0.19.0",
     "marked": "^18.0.2",
     "mdast-util-to-string": "^4.0.0",
     "react": "^19.0.0",
@@ -53,12 +56,19 @@
     "unified": "^11.0.5"
   },
   "devDependencies": {
-    "@astrojs/react": "^4.2.0",
+    "@astrojs/react": "^7.1.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "esbuild": "^0.27.7",
+    "esbuild": "^0.28.2",
     "pagefind": "^1.3.0",
     "puppeteer": "^25.0.4",
-    "sharp": "^0.34.5"
+    "sharp": "^0.35.5"
+  },
+  "overrides": {
+    "katex": "$katex"
+  },
+  "engines": {
+    "node": ">=22.22.0",
+    "npm": ">=9.6.5"
   }
 }

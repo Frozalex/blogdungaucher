@@ -1,0 +1,68 @@
+[
+  {
+    "lang": "fr",
+    "status": 200,
+    "url": "http://127.0.0.1:4330/fr/",
+    "initial": {
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "menuInert": true,
+      "canonical": "https://blogdungaucher.com/fr/"
+    },
+    "opened": {
+      "expanded": "true",
+      "menuInert": false,
+      "menuHidden": "false"
+    },
+    "closed": {
+      "expanded": "false",
+      "menuInert": true
+    },
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "status": null,
+    "url": "http://127.0.0.1:4330/en/",
+    "initial": {
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "menuInert": true,
+      "canonical": "https://blogdungaucher.com/en/"
+    },
+    "opened": {
+      "expanded": "true",
+      "menuInert": false,
+      "menuHidden": "false"
+    },
+    "closed": {
+      "expanded": "false",
+      "menuInert": true
+    },
+    "errors": []
+  },
+  {
+    "lang": "pt-br",
+    "status": null,
+    "url": "http://127.0.0.1:4330/pt-br/",
+    "initial": {
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "menuInert": true,
+      "canonical": "https://blogdungaucher.com/pt-br/"
+    },
+    "opened": {
+      "expanded": "true",
+      "menuInert": false,
+      "menuHidden": "false"
+    },
+    "closed": {
+      "expanded": "false",
+      "menuInert": true
+    },
+    "errors": []
+  }
+]

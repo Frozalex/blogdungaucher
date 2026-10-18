@@ -1,0 +1,6 @@
+
+> blog-d-un-gaucher@1.0.0 check:dead-links
+> node scripts/check-dead-links.mjs
+
+389 pages, 17122 liens internes vérifiés.
+Aucun lien interne mort.

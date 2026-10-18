@@ -7,7 +7,7 @@ Blog sur les échecs en FR/EN/PT-BR : psychologie, science, société, grand ora
 
 | Couche | Outil |
 |---|---|
-| Framework | Astro 6 (SSG, sortie statique) |
+| Framework | Astro 7 (SSG, sortie statique) |
 | Langues | FR (principale) + EN + PT-BR (lancement 01/07/2026) |
 | Styles | CSS pur, variables custom, dark mode toggle |
 | Recherche | Pagefind (index généré au build) + filtres catégorie |
@@ -19,12 +19,21 @@ Blog sur les échecs en FR/EN/PT-BR : psychologie, science, société, grand ora
 
 ## Démarrage rapide
 
+Prérequis : Node.js **22.22.0 minimum** et npm **9.6.5 minimum**.
+Le verrouillage est versionné ; utiliser `npm ci` pour reproduire l'installation.
+
 ```bash
-npm install
+npm ci
 npm run dev          # localhost:4321
 npm run build        # génère dist/ + index Pagefind
 npm run preview      # prévisualise dist/ en local
+npm run check        # diagnostics Astro / TypeScript
+npm test             # tests de navigation au build
+npm run check:languages # pages et articles FR/EN/PT-BR
 ```
+
+La migration de sécurité et ses résultats sont documentés dans
+[le suivi des dépendances](docs/audit-adsense-2026/dependency-update/README.md).
 
 ## Structure du projet
 

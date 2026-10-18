@@ -4,10 +4,22 @@ Vidéos longues format Vox / 3blue1brown qui étayent les articles du blog. Pure
 
 ## Installation
 
+Node.js **22.22.0 minimum** et npm **9.6.5 minimum**.
+
 ```bash
 cd motion-canvas
-npm install
+npm ci
 ```
+
+Le plugin Motion Canvas 3 est adapté à Vite 8 dans `vite.config.ts`.
+La dépendance locale `vendor/motion-project-glob` remplace les deux fonctions
+de `fast-glob` utilisées par ce plugin, via `tinyglobby`, pour retirer la chaîne
+vulnérable `micromatch` / `braces`. Conserver ce dossier avec le verrouillage.
+`npm test` vérifie la recherche de projets et son branchement au vrai plugin.
+Les exceptions de versions sont limitées et déclarées dans `package.json`.
+
+Voir [le suivi de sécurité et des vérifications](../docs/audit-adsense-2026/dependency-update/README.md),
+y compris les diagnostics TypeScript préexistants des scènes.
 
 ## Lancer l'éditeur
 

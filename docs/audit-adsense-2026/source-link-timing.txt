@@ -1,0 +1,33 @@
+
+> blog-d-un-gaucher@1.0.0 check:link-timing
+> node scripts/check-internal-link-timing.mjs
+
+12 lien(s) interne(s) en avance : article publié → article non encore publié (404 en prod aujourd'hui, 2026-10-18).
+
+  src/content/blog/esprit/biais-du-survivant-aux-echecs.md:163
+    biais-du-survivant-aux-echecs (2026-09-08) → analyser-ses-parties (2026-11-02, dans le futur)
+  src/content/blog/esprit/dissonance-cognitive-aux-echecs.md:127
+    dissonance-cognitive-aux-echecs (2026-09-01) → faut-il-vraiment-etudier-les-ouvertures (2026-12-07, dans le futur)
+  src/content/blog/esprit/dissonance-cognitive-aux-echecs.md:171
+    dissonance-cognitive-aux-echecs (2026-09-01) → analyser-ses-parties (2026-11-02, dans le futur)
+  src/content/blog/esprit/manipulation-emotionnelle-aux-echecs.md:77
+    manipulation-emotionnelle-aux-echecs (2026-10-13) → echecs-et-la-triche (2026-10-19, dans le futur)
+  src/content/blog/esprit/mecanismes-de-defense-aux-echecs.md:114
+    mecanismes-de-defense-aux-echecs (2026-09-22) → echecs-et-la-solitude (2026-11-16, dans le futur)
+  src/content/blog/esprit/mecanismes-de-defense-aux-echecs.md:224
+    mecanismes-de-defense-aux-echecs (2026-09-22) → analyser-ses-parties (2026-11-02, dans le futur)
+  src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md:112
+    theorie-de-l-attachement-aux-echecs (2026-09-29) → echecs-et-la-solitude (2026-11-16, dans le futur)
+  src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md:162
+    theorie-de-l-attachement-aux-echecs (2026-09-29) → analyser-ses-parties (2026-11-02, dans le futur)
+  src/content/blog/science/effet-placebo-aux-echecs.md:123
+    effet-placebo-aux-echecs (2026-10-06) → les-echecs-rendent-ils-plus-intelligent (2026-11-26, dans le futur)
+  src/content/blog/science/neuroplasticite-aux-echecs.md:141
+    neuroplasticite-aux-echecs (2026-09-15) → les-echecs-rendent-ils-plus-intelligent (2026-11-26, dans le futur)
+  src/content/blog/societe/gaslighting-aux-echecs.md:123
+    gaslighting-aux-echecs (2026-08-27) → echecs-et-la-triche (2026-10-19, dans le futur)
+  src/content/blog/societe/gaslighting-aux-echecs.md:178
+    gaslighting-aux-echecs (2026-08-27) → analyser-ses-parties (2026-11-02, dans le futur)
+
+Convention (PLAN.md, « Maillage des piliers ») : remplacer le lien actif par une
+mention texte « à venir » sans lien ; rétablir le lien à la publication de la cible.

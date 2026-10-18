@@ -1,0 +1,13 @@
+
+> blog-gaucher-motion-canvas@0.1.0 build
+> vite build
+
+5:01:14 AM [vite] warning: `esbuild` option was specified by "motion-canvas:project" plugin. This option is deprecated, please use `oxc` instead.
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 559 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/src/project-BX_eFG6t.js  182.30 kB │ gzip: 55.90 kB
+
+✓ built in 279ms

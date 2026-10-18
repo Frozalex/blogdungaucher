@@ -115,13 +115,12 @@ async function sendWelcomeEmail(email) {
       }),
     });
     if (!r.ok) {
-      const data = await r.json().catch(() => ({}));
-      console.warn(`[welcome] échec envoi à ${email} (${r.status}):`, data?.message ?? "");
+      console.warn(`[welcome] échec envoi (${r.status})`);
     } else {
-      console.log(`[welcome] email de bienvenue envoyé à ${email}`);
+      console.log("[welcome] email de bienvenue envoyé");
     }
   } catch (err) {
-    console.warn(`[welcome] erreur envoi à ${email}:`, err?.message ?? err);
+    console.warn("[welcome] erreur envoi");
   }
 }
 

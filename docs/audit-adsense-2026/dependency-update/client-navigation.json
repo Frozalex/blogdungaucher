@@ -1,0 +1,23 @@
+[
+  {
+    "lang": "fr",
+    "target": "/fr/blog/reseau-mode-defaut-aux-echecs/",
+    "clientNavigation": true,
+    "menuAfterNavigation": true,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "target": "/en/blog/reseau-mode-defaut-aux-echecs/",
+    "clientNavigation": true,
+    "menuAfterNavigation": true,
+    "errors": []
+  },
+  {
+    "lang": "pt-br",
+    "target": "/pt-br/blog/rede-modo-padrao-xadrez/",
+    "clientNavigation": true,
+    "menuAfterNavigation": true,
+    "errors": []
+  }
+]

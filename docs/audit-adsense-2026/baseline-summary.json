@@ -1,0 +1,1133 @@
+{
+  "localPages": 392,
+  "productionHtmlResponses": 262,
+  "productionUniqueFinalUrls": 260,
+  "localTypes": {
+    "page": 58,
+    "redirection": 94,
+    "article": 219,
+    "catégorie": 10,
+    "recherche": 3,
+    "série": 7,
+    "dissertation": 1
+  },
+  "sitemapEntries": 246,
+  "sitemapMissing": [],
+  "sitemapNoindex": [],
+  "localBadAlternates": [
+    {
+      "url": "https://blogdungaucher.com/en/accessibility/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/accessibilite/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/accessibility/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/acessibilidade/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/accessibilite/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/2/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/2/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/2/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/2/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/2/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/3/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/3/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/3/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/3/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/3/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/4/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/4/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/4/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/4/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/4/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/5/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/5/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/5/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/5/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/5/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/6/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/6/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/6/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/6/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/6/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/7/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/7/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/7/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/7/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/7/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/8/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/8/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/8/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/8/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/8/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/echecs-et-le-corps/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/echecs-et-le-corps/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/echecs-religion-et-interdit/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/echecs-religion-et-interdit/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/echecs-vs-philosophie-pensee-strategique/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/echecs-vs-philosophie-pensee-strategique/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/echecs-vs-philosophie-pensee-strategique/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/reseau-mode-defaut-aux-echecs/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/reseau-mode-defaut-aux-echecs/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/dissertations/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/dissertations/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/legal-notice/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/mentions-legales/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/legal-notice/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/aviso-legal/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/mentions-legales/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/privacy-policy/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/politique-confidentialite/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/privacy-policy/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/politica-de-privacidade/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/politique-confidentialite/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/recherche/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/recherche/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/recherche/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/terms-of-use/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/cgu/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/terms-of-use/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/termos-de-uso/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/cgu/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/accessibilite/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/accessibilite/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/accessibility/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/acessibilidade/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/accessibilite/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/10/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/10/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/10/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/2/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/2/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/2/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/2/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/2/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/3/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/3/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/3/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/3/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/3/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/4/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/4/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/4/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/4/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/4/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/5/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/5/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/5/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/5/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/5/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/6/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/6/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/6/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/6/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/6/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/7/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/7/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/7/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/7/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/7/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/8/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/8/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/8/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/8/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/8/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/9/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/9/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/9/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/echecs-et-le-corps/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/echecs-et-le-corps/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/echecs-religion-et-interdit/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/echecs-religion-et-interdit/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/echecs-vs-philosophie-pensee-strategique/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/echecs-vs-philosophie-pensee-strategique/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/echecs-vs-philosophie-pensee-strategique/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/reseau-mode-defaut-aux-echecs/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/reseau-mode-defaut-aux-echecs/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/cgu/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/cgu/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/terms-of-use/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/termos-de-uso/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/cgu/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/dissertations/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/dissertations/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/mentions-legales/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/mentions-legales/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/legal-notice/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/aviso-legal/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/mentions-legales/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/politique-confidentialite/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/politique-confidentialite/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/privacy-policy/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/politica-de-privacidade/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/politique-confidentialite/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/recherche/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/recherche/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/recherche/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/series/moteur-python/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/series/moteur-python/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/series/moteur-python/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/nl/gebruiksvoorwaarden/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/cgu/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/terms-of-use/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/termos-de-uso/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/cgu/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/nl/juridische-vermeldingen/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/mentions-legales/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/legal-notice/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/aviso-legal/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/mentions-legales/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/nl/privacybeleid/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/politique-confidentialite/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/privacy-policy/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/politica-de-privacidade/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/politique-confidentialite/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/nl/toegankelijkheid/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/accessibilite/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/accessibility/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/acessibilidade/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/accessibilite/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/acessibilidade/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/accessibilite/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/accessibility/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/acessibilidade/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/accessibilite/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/aviso-legal/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/mentions-legales/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/legal-notice/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/aviso-legal/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/mentions-legales/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/2/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/2/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/2/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/2/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/2/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/3/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/3/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/3/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/3/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/3/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/4/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/4/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/4/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/4/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/4/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/5/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/5/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/5/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/5/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/5/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/6/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/6/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/6/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/6/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/6/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/7/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/7/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/7/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/7/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/7/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/8/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/blog/8/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/8/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/8/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/blog/8/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/echecs-vs-philosophie-pensee-strategique/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/echecs-vs-philosophie-pensee-strategique/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/blog/echecs-vs-philosophie-pensee-strategique/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/rede-modo-padrao-xadrez/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/reseau-mode-defaut-aux-echecs/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/xadrez-e-o-corpo/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/echecs-et-le-corps/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/xadrez-religiao-e-proibicao/",
+      "alternates": [
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/blog/echecs-religion-et-interdit/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/politica-de-privacidade/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/politique-confidentialite/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/privacy-policy/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/politica-de-privacidade/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/politique-confidentialite/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/recherche/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/recherche/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/recherche/"
+        }
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/termos-de-uso/",
+      "alternates": [
+        {
+          "lang": "fr",
+          "url": "https://blogdungaucher.com/fr/cgu/"
+        },
+        {
+          "lang": "en",
+          "url": "https://blogdungaucher.com/en/terms-of-use/"
+        },
+        {
+          "lang": "pt-BR",
+          "url": "https://blogdungaucher.com/pt-br/termos-de-uso/"
+        },
+        {
+          "lang": "x-default",
+          "url": "https://blogdungaucher.com/fr/cgu/"
+        }
+      ]
+    }
+  ],
+  "liveProblems": [
+    {
+      "url": "https://blogdungaucher.com/fr/blog/",
+      "problems": [
+        "saut de niveau de titre"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/dissertations/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/",
+      "problems": [
+        "saut de niveau de titre"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/",
+      "problems": [
+        "saut de niveau de titre"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/",
+      "problems": [
+        "canonical différent de URL"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/recherche/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/recherche/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/recherche/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/mentions-legales/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/politique-confidentialite/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/cgu/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/dissertations/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/series/moteur-python/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/audit-adsense-page-inexistante/",
+      "problems": [
+        "canonical différent de URL"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/.env",
+      "problems": [
+        "canonical différent de URL"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/.git/HEAD",
+      "problems": [
+        "canonical différent de URL"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/privacy-policy/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/politica-de-privacidade/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/echecs-et-syndrome-imposteur/",
+      "problems": [
+        "canonical différent de URL"
+      ]
+    }
+  ],
+  "localShortArticles": [],
+  "statusCounts": {
+    "200": 261,
+    "404": 3
+  }
+}

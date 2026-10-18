@@ -1,5 +1,6 @@
 import react from "@astrojs/react";
 import { defineConfig } from "astro/config";
+import { unified } from "@astrojs/markdown-remark";
 
 import remarkMath from "remark-math";
 
@@ -81,8 +82,11 @@ export default defineConfig({
     defaultStrategy: "viewport",
   },
   markdown: {
-    remarkPlugins: [remarkMath],
-    rehypePlugins: [rehypeMathSingle, rehypeAffiliateLinks],
+    // Keep the existing remark/rehype rendering when upgrading Astro's defaults.
+    processor: unified({
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeMathSingle, rehypeAffiliateLinks],
+    }),
     shikiConfig: {
       // Thème clair lisible, contraste élevé sur fond blanc.
       theme: "github-light",

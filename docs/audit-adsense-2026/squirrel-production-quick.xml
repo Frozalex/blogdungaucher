@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<audit version="0.0.98">
+<site url="https://blogdungaucher.com" crawled="25" date="2026-10-18T08:37:20.019Z"/>
+<score overall="52" grade="F">
+ <group name="SEO" score="53" errors="26" warnings="91"/>
+ <group name="Performance" score="46" errors="1" warnings="114"/>
+ <group name="Security" score="51" errors="0" warnings="52"/>
+ <group name="Agents" score="50" errors="0" warnings="24"/>
+ <cat name="Accessibility" score="52"/>
+ <cat name="Performance" score="46"/>
+ <cat name="Security" score="50"/>
+ <cat name="Mobile" score="48"/>
+ <cat name="Agent Experience" score="50"/>
+ <cat name="Content" score="79"/>
+ <cat name="Core SEO" score="97"/>
+ <cat name="E-E-A-T" score="80"/>
+ <cat name="Links" score="95"/>
+ <cat name="Structured Data" score="94"/>
+ <cat name="Analytics" score="100"/>
+ <cat name="Crawlability" score="100"/>
+ <cat name="Internationalization" score="100"/>
+ <cat name="Images" score="100"/>
+ <cat name="Site Integrity" score="100"/>
+ <cat name="Legal Compliance" score="100"/>
+ <cat name="Local SEO" score="100"/>
+ <cat name="Social Media" score="100"/>
+ <cat name="URL Structure" score="100"/>
+</score>
+<summary passed="3151" warnings="313" failed="27"/>
+<scan-scope origin="cli" crawled="25" max-pages="25" capped="true"/>
+<rules-cache pages-replayed="0" pages-evaluated="25"/>
+<technologies first-scan="false" added="0" removed="0">
+ <tech name="Astro" cat="framework" version="6.1.9"/>
+ <tech name="nginx" cat="web-server"/>
+ <tech name="Google AdSense" cat="ad-network"/>
+ <tech name="Cookiebot" cat="widget"/>
+ <tech name="TrustArc" cat="security"/>
+</technologies>
+<issues>
+ <rule id="a11y/aria-hidden-focus" severity="error" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/aria-hidden-focus">
+  14 to 18 focusable element(s) inside aria-hidden
+  Pages (5/25): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (2):
+   - a (from: /en/, /en/about/, /en/blog/, /en/contact/, /en/esprit/; +5 more)
+   - button#dark-toggle-mobile (from: /en/, /en/about/, /en/blog/, /en/contact/, /en/esprit/; +5 more)
+ </rule>
+ <rule id="a11y/label-content-name-mismatch" severity="error" category="Accessibility" group="seo" status="fail" docs="https://docs.squirrelscan.com/rules/a11y/label-content-name-mismatch">
+  68 element(s) where visible text doesn&apos;t match accessible name
+  Pages (1): /fr/infographie/
+  Items (5/9):
+   - a: visible=&quot;2 avr. 2026 · 19 min&quot; vs aria-label=&quot;2 avr. 2026, les éch&quot; (from: /fr/infographie/)
+   - a: visible=&quot;2 avr. 2026 · 22 min&quot; vs aria-label=&quot;2 avr. 2026, échecs &quot; (from: /fr/infographie/)
+   - a: visible=&quot;3 avr. 2026 · 22 min&quot; vs aria-label=&quot;3 avr. 2026, les éch&quot; (from: /fr/infographie/)
+   - a: visible=&quot;3 avr. 2026 · 25 min&quot; vs aria-label=&quot;3 avr. 2026, échecs &quot; (from: /fr/infographie/)
+   - a: visible=&quot;5 avr. 2026 · 16 min&quot; vs aria-label=&quot;5 avr. 2026, la psyc&quot; (from: /fr/infographie/)
+ </rule>
+ <rule id="security/third-party-cookies" severity="info" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/third-party-cookies">
+  1 known tracking domain(s) detected
+  Pages (5/25): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (1):
+   - pagead2.googlesyndication.com (script) (from: /en/, /en/about/, /en/blog/, /en/contact/, /en/esprit/; +5 more)
+ </rule>
+ <rule id="perf/inp-hints" severity="info" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/inp-hints">
+  4 blocking scripts (consider async/defer)
+  Pages (3): /en/blog/, /fr/blog/, /pt-br/blog/
+  Items (3):
+   - /en/blog/ (4 blocking scripts (consider async/defer))
+   - /fr/blog/ (4 blocking scripts (consider async/defer))
+   - /pt-br/blog/ (4 blocking scripts (consider async/defer))
+ </rule>
+ <rule id="legal/subprocessor-disclosure" severity="info" category="Legal Compliance" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/legal/subprocessor-disclosure">
+  No sub-processor / data-processing (DPA) disclosure found
+ </rule>
+ <rule id="ax/agents-md" severity="info" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/agents-md">
+  No AGENTS.md found — this site publishes llms.txt, so consider an AGENTS.md for coding agents too
+ </rule>
+ <rule id="ax/llms-txt" severity="info" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/llms-txt">
+  llms.txt format notes: no Markdown links found
+ </rule>
+ <rule id="ax/markdown-response" severity="info" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/markdown-response">
+  No Markdown response — consider honoring Accept: text/markdown or publishing a .md variant so agents get clean content
+ </rule>
+ <rule id="core/meta-title" severity="warning" category="Core SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/core/meta-title">
+  Title too short
+  Pages (2): /pt-br/esprit/, /pt-br/science/
+  Items (2):
+   - /pt-br/esprit/ (Mente | Blog de um Canhoto (26 chars)) (from: /pt-br/esprit/)
+   - /pt-br/science/ (Ciência | Blog de um Canhoto (28 chars)) (from: /pt-br/science/)
+ </rule>
+ <rule id="core/meta-description" severity="warning" category="Core SEO" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/core/meta-description">
+  Description too long; Description too short
+  Pages (5/7): /fr/, /en/blog/, /fr/infographie/, /pt-br/blog/, /pt-br/esprit/
+  Items (5/7):
+   - /fr/ (Blog sur les échecs : neurosciences, psychologie d (162 chars)) (from: /fr/)
+   - /fr/infographie/ (L&apos;Observatoire : data viz interactive des 67 publi (165 chars)) (from: /fr/infographie/)
+   - /en/blog/ (The complete library: chess science, competitive m (95 chars)) (from: /en/blog/)
+   - /pt-br/blog/ (A biblioteca completa: ciência do xadrez, mentalid (86 chars)) (from: /pt-br/blog/)
+   - /pt-br/esprit/ (Uma seção sobre atenção, confiança, gestão da derr (87 chars)) (from: /pt-br/esprit/)
+ </rule>
+ <rule id="security/csp" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/csp">
+  CSP allows &apos;unsafe-inline&apos;; CSP script-src allows wildcard (*)
+ </rule>
+ <rule id="security/sri" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/sri">
+  1 cross-origin resource without Subresource Integrity
+  Pages (5/25): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (1):
+   - https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244325018333025 (script) (from: /en/, /en/about/, /en/blog/, /en/contact/, /en/esprit/; +5 more)
+ </rule>
+ <rule id="security/form-captcha" severity="warning" category="Security" group="security" status="warn" docs="https://docs.squirrelscan.com/rules/security/form-captcha">
+  1 to 2 public form(s) without CAPTCHA
+  Pages (5/25): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (2):
+   - form[0] (from: /en/, /en/about/, /en/contact/, /en/esprit/, /en/science/; +5 more)
+   - form[1] (from: /en/blog/, /en/contact/, /fr/blog/, /fr/contact/, /pt-br/blog/)
+ </rule>
+ <rule id="links/internal-links" severity="warning" category="Links" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/links/internal-links">
+  Too many internal links (117, max 100)
+  Pages (1): /fr/infographie/
+ </rule>
+ <rule id="links/no-contextual-inbound" severity="warning" category="Links" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/links/no-contextual-inbound">
+  12 page(s) are linked only from sitewide chrome
+  Pages (5/12): /en/, /fr/, /pt-br/, /en/about/, /en/contact/
+  Items (5/12):
+   - /en/
+   - /en/about/
+   - /en/contact/
+   - /en/series/
+   - /fr/
+ </rule>
+ <rule id="content/keyword-stuffing" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/keyword-stuffing">
+  1 to 3 word(s) may be overused
+  Pages (5/14): /en/, /fr/, /pt-br/, /en/societe/, /fr/about/
+  Items (5/9):
+   - checs (&quot;checs&quot; (4.1%)) [count: 40, density: 4.098360655737705] (from: /fr/, /fr/infographie/, /fr/science/, /fr/societe/)
+   - chess (&quot;chess&quot; (3.9%)) [count: 34, density: 3.9125431530494823] (from: /en/, /en/societe/)
+   - grand (&quot;grand&quot; (5.7%)) [count: 54, density: 5.738575982996812] (from: /fr/grand-oral/)
+   - les (&quot;les&quot; (3.6%)) [count: 23, density: 3.5937499999999996] (from: /fr/about/, /fr/glossaire/, /fr/societe/)
+   - min (&quot;min&quot; (6.4%)) [count: 79, density: 6.427990235964199] (from: /fr/infographie/)
+ </rule>
+ <rule id="content/article-links" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/article-links">
+  medium article has 0 external links (min 2)
+  Pages (3): /en/blog/, /fr/blog/, /pt-br/blog/
+  Items (3):
+   - /en/blog/ (medium article has 0 external links (min 2))
+   - /fr/blog/ (medium article has 0 external links (min 2))
+   - /pt-br/blog/ (medium article has 0 external links (min 2))
+ </rule>
+ <rule id="content/word-count" severity="warning" category="Content" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/content/word-count">
+  Thin content: 259 to 268 words (min 300)
+  Pages (2): /en/series/, /fr/dissertations/
+  Items (2):
+   - /en/series/ (Thin content: 259 words (min 300))
+   - /fr/dissertations/ (Thin content: 268 words (min 300))
+ </rule>
+ <rule id="schema/entity-conflicts" severity="warning" category="Structured Data" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/schema/entity-conflicts">
+  2 properties disagree across pages, on 1 entity
+  Pages (2): /en/about/, /fr/about/
+  Items (2):
+   - id:https://blogdungaucher.com/fr/about/#person description (Le Gaucher — description: Computer science student, chess player at 1,600 Elo, author of A Left-Hander&apos;s Blog. (1 pages) vs Étudiant en informatique, joueur d&apos;échecs à 1 600 Elo, auteur du Blog d&apos;un Gaucher. (1 pages)) [key: id:https://blogdungaucher.com/fr/about/#person, property: description, valueCount: 2] (from: /en/about/, /fr/about/)
+   - id:https://blogdungaucher.com/fr/about/#person url (Le Gaucher — url: https://blogdungaucher.com/en/about/ (1 pages) vs https://blogdungaucher.com/fr/about/ (1 pages)) [key: id:https://blogdungaucher.com/fr/about/#person, property: url, valueCount: 2] (from: /en/about/, /fr/about/)
+ </rule>
+ <rule id="perf/lcp-hints" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/lcp-hints">
+  1 likely-LCP image loaded without preload; 2 to 3 likely-LCP images loaded without preload
+  Pages (5/25): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (5/25):
+   - /en/contact/ (1 likely-LCP image loaded without preload)
+   - /en/series/ (1 likely-LCP image loaded without preload)
+   - /fr/contact/ (1 likely-LCP image loaded without preload)
+   - /fr/dissertations/ (1 likely-LCP image loaded without preload)
+   - /fr/glossaire/ (1 likely-LCP image loaded without preload)
+ </rule>
+ <rule id="perf/dom-size" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/dom-size">
+  Element with 61 to 80 children found
+  Pages (2): /fr/blog/, /fr/infographie/
+  Items (2):
+   - /fr/blog/ (Element with 61 children found)
+   - /fr/infographie/ (Element with 80 children found)
+ </rule>
+ <rule id="perf/render-blocking" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/render-blocking">
+  4 to 6 render-blocking resources
+  Pages (5/25): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (5/12):
+   - /_astro/ArticleCard.DeJufjcm.css (from: /en/, /en/blog/, /en/esprit/, /en/science/, /en/societe/; +5 more)
+   - /_astro/BaseLayout.Cig9JBSo.css (from: /en/, /en/about/, /en/blog/, /en/contact/, /en/esprit/; +5 more)
+   - /_astro/CategoryPage.D9QrqtyH.css (from: /en/esprit/, /en/science/, /en/societe/, /fr/esprit/, /fr/grand-oral/; +5 more)
+   - /_astro/ClientRouter.astro_astro_type_script_index_0_lang.BOHegxVA.js (from: /en/, /en/about/, /en/blog/, /en/contact/, /en/esprit/; +5 more)
+   - /_astro/ContactPage.BAEai3n3.css (from: /en/contact/, /fr/contact/)
+ </rule>
+ <rule id="perf/total-byte-weight" severity="warning" category="Performance" group="performance" status="fail" docs="https://docs.squirrelscan.com/rules/perf/total-byte-weight">
+  Total tracked resources: 6930KB (very heavy)
+ </rule>
+ <rule id="perf/critical-request-chains" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/critical-request-chains">
+  2 to 4 critical request chain(s) found
+  Pages (5/25): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (5/10):
+   - CSS: /_astro/ArticleCard.DeJufjcm.css (from: /en/, /en/blog/, /en/esprit/, /en/science/, /en/societe/; +5 more)
+   - CSS: /_astro/BaseLayout.Cig9JBSo.css (from: /en/, /en/about/, /en/blog/, /en/contact/, /en/esprit/; +5 more)
+   - CSS: /_astro/CategoryPage.D9QrqtyH.css (from: /en/esprit/, /en/science/, /en/societe/, /fr/esprit/, /fr/grand-oral/; +5 more)
+   - CSS: /_astro/ContactPage.BAEai3n3.css (from: /en/contact/, /fr/contact/)
+   - CSS: /_astro/HomePortal.C67DyU-U.css (from: /en/, /fr/, /pt-br/)
+ </rule>
+ <rule id="perf/lazy-above-fold" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/lazy-above-fold">
+  1 to 2 above-fold image(s) with lazy loading
+  Pages (5/12): /en/, /fr/, /pt-br/, /en/blog/, /en/esprit/
+  Items (5):
+   - /images/blog/echecs-et-concentration-hero.webp (from: /en/esprit/, /fr/esprit/, /pt-br/esprit/)
+   - /images/blog/echecs-et-handicap-hero.webp (from: /en/blog/, /fr/blog/, /pt-br/blog/)
+   - /images/blog/echecs-et-le-corps-hero.webp (from: /en/science/, /fr/science/, /pt-br/science/)
+   - /images/blog/echecs-et-visualisation-hero.webp (from: /en/, /fr/, /pt-br/)
+   - /images/blog/reseau-mode-defaut-aux-echecs-hero.webp (from: /en/, /fr/, /pt-br/)
+ </rule>
+ <rule id="perf/unminified-js" severity="warning" category="Performance" group="performance" status="warn" docs="https://docs.squirrelscan.com/rules/perf/unminified-js">
+  1 JavaScript file(s) appear unminified
+  Pages (5/25): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (1):
+   - inline script (3.2KB, ~0.1KB savings) [reason: long variable names] (from: /en/, /en/about/, /en/blog/, /en/contact/, /en/esprit/; +5 more)
+ </rule>
+ <rule id="a11y/color-contrast" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/color-contrast">
+  2 potential color contrast issue(s)
+  Pages (1): /fr/blog/
+  Items (2):
+   - Very light text color: 2 instance(s) (from: /fr/blog/)
+   - White text (verify background): 2 instance(s) (from: /fr/blog/)
+ </rule>
+ <rule id="a11y/focus-visible" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/focus-visible">
+  outline:none found - ensure alternative focus styles exist
+  Pages (2): /en/blog/, /pt-br/blog/
+ </rule>
+ <rule id="a11y/heading-order" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/heading-order">
+  1 heading level skip(s) detected
+  Pages (3): /en/blog/, /fr/blog/, /pt-br/blog/
+  Items (1):
+   - H3 after H1 (from: /en/blog/, /fr/blog/, /pt-br/blog/)
+ </rule>
+ <rule id="a11y/input-types" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/input-types">
+  1 multi-field form(s) set no enterkeyhint
+  Pages (2): /en/contact/, /fr/contact/
+  Items (1):
+   - form:nth-of-type(1) (4-field form, no field sets enterkeyhint) | &lt;form class=&quot;c-form&quot; data-contact-form=&quot;&quot; data-email=&quot;contact@blogdungaucher.com&quot; novalidate=&quot;&quot; data-astro-cid-gfpn2dzd=&quot;&quot;&gt; [reason: missing-enterkeyhint, fields: 4] (from: /en/contact/, /fr/contact/)
+ </rule>
+ <rule id="a11y/touch-targets" severity="warning" category="Accessibility" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/a11y/touch-targets">
+  2 element(s) with potentially small touch targets
+  Pages (5/25): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (5/25):
+   - /en/ (2 element(s) with potentially small touch targets)
+   - /en/about/ (2 element(s) with potentially small touch targets)
+   - /en/blog/ (2 element(s) with potentially small touch targets)
+   - /en/contact/ (2 element(s) with potentially small touch targets)
+   - /en/esprit/ (2 element(s) with potentially small touch targets)
+ </rule>
+ <rule id="mobile/tap-targets" severity="warning" category="Mobile" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/mobile/tap-targets">
+  1 element(s) may have small tap targets
+  Pages (5/25): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (5/25):
+   - /en/ (1 element(s) may have small tap targets)
+   - /en/about/ (1 element(s) may have small tap targets)
+   - /en/blog/ (1 element(s) may have small tap targets)
+   - /en/contact/ (1 element(s) may have small tap targets)
+   - /en/esprit/ (1 element(s) may have small tap targets)
+ </rule>
+ <rule id="eeat/author-byline" severity="warning" category="E-E-A-T" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/eeat/author-byline">
+  No content pages have author attribution
+ </rule>
+ <rule id="eeat/privacy-policy" severity="warning" category="E-E-A-T" group="seo" status="warn" docs="https://docs.squirrelscan.com/rules/eeat/privacy-policy">
+  No Privacy Policy page found
+ </rule>
+ <rule id="ax/token-weight" severity="warning" category="Agent Experience" group="ai" status="warn" docs="https://docs.squirrelscan.com/rules/ax/token-weight">
+  Visible text is under 15% of the page HTML — agents pay token cost mostly for markup, scripts, and styles
+  Pages (5/24): /en/, /fr/, /pt-br/, /en/about/, /en/blog/
+  Items (5/24):
+   - /en/ (~9% of HTML is visible text (~19,986 est. tokens)) (from: /en/)
+   - /en/about/ (~7% of HTML is visible text (~14,162 est. tokens)) (from: /en/about/)
+   - /en/blog/ (~7% of HTML is visible text (~19,694 est. tokens)) (from: /en/blog/)
+   - /en/contact/ (~4% of HTML is visible text (~13,643 est. tokens)) (from: /en/contact/)
+   - /en/esprit/ (~12% of HTML is visible text (~25,920 est. tokens)) (from: /en/esprit/)
+ </rule>
+</issues>
+<entities count="31" references="4" dangling="0" conflicts="1" without-id="1" stable-id-share="13" pages-without-entities="1">
+ <entity type="Blog" name="Blog d&apos;un Gaucher" occurrences="6" pages="6"/>
+ <entity type="Organization" name="Blog d&apos;un Gaucher" id="https://blogdungaucher.com/#publisher" occurrences="2" pages="2"/>
+ <entity type="Person" name="Le Gaucher" id="https://blogdungaucher.com/fr/about/#person" occurrences="2" pages="2"/>
+ <entity type="ItemList" name="(unnamed ItemList)" occurrences="1" pages="1"/>
+ <entity type="ItemList" name="(unnamed ItemList)" occurrences="1" pages="1"/>
+ <entity type="ContactPage" name="Contact" id="https://blogdungaucher.com/en/contact/#contactpage" occurrences="1" pages="1"/>
+ <entity type="ContactPage" name="Contact" id="https://blogdungaucher.com/fr/contact/#contactpage" occurrences="1" pages="1"/>
+ <entity type="CollectionPage" name="Les séries" occurrences="1" pages="1"/>
+ <entity type="CollectionPage" name="The series" occurrences="1" pages="1"/>
+ <entity type="DefinedTermSet" name="Glossaire des échecs, Blog d&apos;un Gaucher" occurrences="1" pages="1"/>
+ <conflict entity="Le Gaucher" property="url" values="2">
+  <value pages="1">https://blogdungaucher.com/en/about/</value>
+  <value pages="1">https://blogdungaucher.com/fr/about/</value>
+ </conflict>
+ <conflict entity="Le Gaucher" property="description" values="2">
+  <value pages="1">Computer science student, chess player at 1,600 Elo, author of A Left-Hander&apos;s Blog.</value>
+  <value pages="1">Étudiant en informatique, joueur d&apos;échecs à 1 600 Elo, auteur du Blog d&apos;un Gaucher.</value>
+ </conflict>
+ <without-id type="Blog" name="Blog d&apos;un Gaucher" pages="6"/>
+</entities>
+</audit>

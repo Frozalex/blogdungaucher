@@ -1,0 +1,157 @@
+{
+  "localPages": 391,
+  "productionHtmlResponses": 273,
+  "productionUniqueFinalUrls": 271,
+  "localTypes": {
+    "page": 57,
+    "redirection": 94,
+    "article": 219,
+    "catégorie": 10,
+    "recherche": 3,
+    "série": 7,
+    "dissertation": 1
+  },
+  "sitemapEntries": 246,
+  "sitemapMissing": [],
+  "sitemapNoindex": [],
+  "localBadAlternates": [],
+  "liveProblems": [
+    {
+      "url": "https://blogdungaucher.com/fr/blog/",
+      "problems": [
+        "saut de niveau de titre"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/dissertations/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/",
+      "problems": [
+        "saut de niveau de titre"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/",
+      "problems": [
+        "saut de niveau de titre"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/recherche/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/recherche/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/recherche/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/mentions-legales/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/politique-confidentialite/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/cgu/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/dissertations/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/series/moteur-python/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/privacy-policy/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/politica-de-privacidade/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/nl/gebruiksvoorwaarden/",
+      "problems": [
+        "hreflang vers page non indexable/redirigée"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/analyser-ses-parties/",
+      "problems": [
+        "texte court à examiner, pas un verdict thin content"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/echecs-et-la-solitude/",
+      "problems": [
+        "texte court à examiner, pas un verdict thin content"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/echecs-et-la-triche/",
+      "problems": [
+        "texte court à examiner, pas un verdict thin content"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/faut-il-vraiment-etudier-les-ouvertures/",
+      "problems": [
+        "texte court à examiner, pas un verdict thin content"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/fr/blog/les-echecs-rendent-ils-plus-intelligent/",
+      "problems": [
+        "texte court à examiner, pas un verdict thin content"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/en/blog/how-to-analyze-chess-games/",
+      "problems": [
+        "texte court à examiner, pas un verdict thin content"
+      ]
+    },
+    {
+      "url": "https://blogdungaucher.com/pt-br/blog/analisar-suas-partidas/",
+      "problems": [
+        "texte court à examiner, pas un verdict thin content"
+      ]
+    }
+  ],
+  "localShortArticles": [],
+  "statusCounts": {
+    "200": 262,
+    "404": 13
+  }
+}

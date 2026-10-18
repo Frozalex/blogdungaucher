@@ -1,0 +1,652 @@
+
+> blog-d-un-gaucher@1.0.0 build
+> node scripts/generate-og-png.mjs && node scripts/generate-image-variants.mjs && node scripts/check-publish-weekly.mjs && astro build && pagefind --site dist --glob "{fr,en,pt-br}/blog/**/*.html" && node scripts/strip-inline-script-comments.mjs && node scripts/add-image-srcset.mjs && node scripts/finalize-public-navigation.mjs && node scripts/verify-dist-urls.mjs && node scripts/check-dead-links.mjs
+
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 19: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 20: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 23: invalid constant used : monospace
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 42: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 43: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 46: invalid constant used : sans-serif
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 68: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 69: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 72: invalid constant used : serif
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 88: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 89: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 92: invalid constant used : emoji
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 108: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 109: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 112: invalid constant used : math
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 120: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 121: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 124: invalid constant used : system-ui
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 132: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 133: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 136: invalid constant used : cursive
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 144: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 145: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 148: invalid constant used : fantasy
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 156: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 157: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 160: invalid constant used : ui-sans-serif
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 168: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 169: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 172: invalid constant used : ui-serif
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 180: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 181: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 184: invalid constant used : ui-monospace
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 192: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 193: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 196: invalid constant used : ui-rounded
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 204: invalid attribute 'xsi:nil'
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 205: invalid constant used : 
+Fontconfig warning: "/etc/fonts/conf.d/48-guessfamily.conf", line 208: invalid constant used : fangsong
+Fontconfig warning: "/etc/fonts/conf.d/48-spacing.conf", line 14: invalid constant used : monospace
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 10: invalid constant used : serif
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 18: invalid constant used : sans-serif
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 26: invalid constant used : monospace
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 34: invalid constant used : emoji
+Fontconfig warning: "/etc/fonts/conf.d/49-sansserif.conf", line 42: invalid constant used : math
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 19: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 20: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 23: invalid constant used : monospace
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 42: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 43: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 46: invalid constant used : sans-serif
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 68: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 69: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 72: invalid constant used : serif
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 88: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 89: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 92: invalid constant used : emoji
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 108: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 109: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 112: invalid constant used : math
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 120: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 121: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 124: invalid constant used : system-ui
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 132: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 133: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 136: invalid constant used : cursive
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 144: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 145: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 148: invalid constant used : fantasy
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 156: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 157: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 160: invalid constant used : ui-sans-serif
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 168: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 169: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 172: invalid constant used : ui-serif
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 180: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 181: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 184: invalid constant used : ui-monospace
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 192: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 193: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 196: invalid constant used : ui-rounded
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 204: invalid attribute 'xsi:nil'
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 205: invalid constant used : 
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-guessfamily.conf", line 208: invalid constant used : fangsong
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/48-spacing.conf", line 14: invalid constant used : monospace
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/49-sansserif.conf", line 10: invalid constant used : serif
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/49-sansserif.conf", line 18: invalid constant used : sans-serif
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/49-sansserif.conf", line 26: invalid constant used : monospace
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/49-sansserif.conf", line 34: invalid constant used : emoji
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/49-sansserif.conf", line 42: invalid constant used : math
+Wrote /home/chacalcha/Bureau/Website project/blog-gaucher/public/images/og-default.png
+[image-variants] 3 variante(s) écrite(s), 213 à jour, 9 largeur(s) ignorée(s) (source plus petite), 75 largeur(s) au manifeste.
+OK : 88 billet(s) sur la grille (≥ 2026-08-31).
+  mardi   — séries     : 51 billet(s), jusqu'au 2027-08-17
+  lun/jeu — hors série : 37 billet(s) sur 19 semaine(s), jusqu'au 2027-01-04
+04:43:42 [content] Syncing content
+04:43:42 [content] Synced content
+04:43:42 [types] Generated 1.21s
+04:43:42 [build] output: "static"
+04:43:42 [build] mode: "static"
+04:43:42 [build] directory: /home/chacalcha/Bureau/Website project/blog-gaucher/dist/
+04:43:42 [build] Collecting build info...
+04:43:42 [build] ✓ Completed in 1.24s.
+04:43:43 [build] Building static entrypoints...
+04:43:47 [vite] ✓ built in 4.14s
+04:43:48 [vite] ✓ built in 847ms
+04:43:48 [build] Rearranging server assets...
+
+ generating static routes 
+04:43:48   ├─ /404.html (+14ms) 
+04:43:48   ├─ /blog/echecs-et-autisme/index.html (+2ms) 
+04:43:48   ├─ /blog/echecs-et-femmes/index.html (+1ms) 
+04:43:48   ├─ /blog/les-echecs-et-l-addiction/index.html (+1ms) 
+04:43:48   ├─ /blog/les-echecs-et-le-cerveau/index.html (+1ms) 
+04:43:48   ├─ /blog/les-echecs-et-les-mathematiques/index.html (+1ms) 
+04:43:48   ├─ /blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/index.html (+1ms) 
+04:43:48   ├─ /blog/psychologie-du-joueur-d-echecs/index.html (+1ms) 
+04:43:48   ├─ /blog-index/en.jsonEntry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+Entry enTranslations → echecs-et-le-corps was not found.
+Entry enTranslations → echecs-religion-et-interdit was not found.
+Entry enTranslations → echecs-vs-philosophie-pensee-strategique was not found.
+ (+15ms) 
+04:43:48   ├─ /blog-index/fr.json (+11ms) 
+04:43:48   ├─ /blog-index/nl.json (+151ms) 
+04:43:48   ├─ /blog-index/pt-br.json (+120ms) 
+04:43:48   ├─ /en/about/index.html (+5ms) 
+04:43:48   ├─ /en/accessibility/index.html (+3ms) 
+04:43:48   ├─ /en/blog/5-biais-cognitifs-blunder/index.html (+1ms) 
+04:43:48   ├─ /en/blog/biais-du-survivant-aux-echecs/index.html (+1ms) 
+04:43:48   ├─ /en/blog/bienfaits-des-echecs-sur-le-cerveau/index.html (+1ms) 
+04:43:48   ├─ /en/blog/bienfaits-des-pauses-aux-echecs/index.html (+1ms) 
+04:43:48   ├─ /en/blog/burnout-chess/index.html (+0ms) 
+04:43:48   ├─ /en/blog/chess-and-cognitive-aging/index.html (+1ms) 
+04:43:48   ├─ /en/blog/chess-and-seniors/index.html (+0ms) 
+04:43:48   ├─ /en/blog/chess-benefits-for-the-brain/index.html (+0ms) 
+04:43:48   ├─ /en/blog/chess-impostor-syndrome/index.html (+0ms) 
+04:43:48   ├─ /en/blog/dissonance-cognitive-aux-echecs/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-alphazero-stockfish/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-alzheimer-prevention-declin-cognitif/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-en-prison/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-et-argent/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-et-autisme/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-colere-ragequit/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-complexite-algorithmique/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-et-concentration/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-et-confiance-en-soi/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-et-culture-populaire/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-et-diplomatie/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-dopamine/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-et-ecole/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-enfants/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-femmes/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-flow/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-genetique/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-handicap/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-hpi/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-meditation/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-memoire/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-perfectionnisme-toxique/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-resilience/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-seniors/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-et-sommeil/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-et-streaming/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-syndrome-imposteur/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-tdah/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-therapie/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-vision-spatiale/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-et-visualisation/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-gestion-du-temps/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-memoire-de-travail/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-peur-de-gagner/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-peur-de-perdre/index.html (+1ms) 
+04:43:48   ├─ /en/blog/echecs-stress-tournoi/index.html (+0ms) 
+04:43:48   ├─ /en/blog/echecs-vieillissement-cognitif/index.html (+1ms) 
+04:43:48   ├─ /en/blog/effet-dunning-kruger-aux-echecs/index.html (+1ms) 
+04:43:48   ├─ /en/blog/effet-placebo-aux-echecs/index.html (+1ms) 
+04:43:48   ├─ /en/blog/gaslighting-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/graphes-de-nash-equilibre-ouvertures/index.html (+1ms) 
+04:43:48   ├─ /en/blog/les-echecs-et-l-addiction/index.html (+1ms) 
+04:43:48   ├─ /en/blog/les-echecs-et-le-cerveau/index.html (+1ms) 
+04:43:48   ├─ /en/blog/les-echecs-et-les-mathematiques/index.html (+0ms) 
+04:43:48   ├─ /en/blog/logique-modale-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/loi-de-murphy-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/manipulation-emotionnelle-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/mecanismes-de-defense-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/minimax-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/neurones-miroirs-aux-echecs/index.html (+1ms) 
+04:43:48   ├─ /en/blog/neuroplasticite-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/paradoxe-de-zermelo/index.html (+0ms) 
+04:43:48   ├─ /en/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/index.html (+0ms) 
+04:43:48   ├─ /en/blog/psychologie-du-joueur-d-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/regle-40-40-20-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/reseaux-bayesiens-predire-blunder/index.html (+0ms) 
+04:43:48   ├─ /en/blog/syndrome-imposteur-2000-elo/index.html (+0ms) 
+04:43:48   ├─ /en/blog/syndrome-imposteur-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/theorie-de-l-attachement-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/theorie-des-jeux-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/theorie-du-chaos-aux-echecs/index.html (+0ms) 
+04:43:48   ├─ /en/blog/reseau-mode-defaut-aux-echecs/index.htmlEntry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+14ms) 
+04:43:48   ├─ /en/blog/emotional-manipulation-in-chess/index.html (+53ms) 
+04:43:48   ├─ /en/blog/chess-mental-visualization/index.html (+29ms) 
+04:43:48   ├─ /en/blog/chess-tournament-stress/index.html (+19ms) 
+04:43:48   ├─ /en/blog/placebo-effect-in-chess/index.html (+30ms) 
+04:43:48   ├─ /en/blog/chess-and-disability/index.html (+20ms) 
+04:43:48   ├─ /en/blog/alphazero-vs-stockfish/index.html (+19ms) 
+04:43:49   ├─ /en/blog/attachment-theory-in-chess/index.html (+23ms) 
+04:43:49   ├─ /en/blog/chess-and-concentration/index.html (+25ms) 
+04:43:49   ├─ /en/blog/echecs-et-le-corps/index.htmlEntry enTranslations → echecs-et-le-corps was not found.
+ (+45ms) 
+04:43:49   ├─ /en/blog/defense-mechanisms-in-chess/index.html (+26ms) 
+04:43:49   ├─ /en/blog/chess-resilience/index.html (+20ms) 
+04:43:49   ├─ /en/blog/chess-and-streaming/index.html (+17ms) 
+04:43:49   ├─ /en/blog/neuroplasticity-and-chess/index.html (+22ms) 
+04:43:49   ├─ /en/blog/chess-and-working-memory/index.html (+16ms) 
+04:43:49   ├─ /en/blog/chess-time-management/index.html (+17ms) 
+04:43:49   ├─ /en/blog/survivorship-bias-in-chess/index.html (+19ms) 
+04:43:49   ├─ /en/blog/chess-and-popular-culture/index.html (+20ms) 
+04:43:49   ├─ /en/blog/chess-and-diplomacy/index.html (+17ms) 
+04:43:49   ├─ /en/blog/cognitive-dissonance-in-chess/index.html (+23ms) 
+04:43:49   ├─ /en/blog/chess-and-flow/index.html (+22ms) 
+04:43:49   ├─ /en/blog/gaslighting-in-chess/index.html (+18ms) 
+04:43:49   ├─ /en/blog/chess-algorithmic-complexity/index.html (+27ms) 
+04:43:49   ├─ /en/blog/chess-and-self-confidence/index.html (+17ms) 
+04:43:49   ├─ /en/blog/dunning-kruger-effect-in-chess/index.html (+28ms) 
+04:43:49   ├─ /en/blog/teaching-chess-to-children/index.html (+26ms) 
+04:43:49   ├─ /en/blog/chess-and-meditation/index.html (+21ms) 
+04:43:49   ├─ /en/blog/murphys-law-in-chess/index.html (+9ms) 
+04:43:49   ├─ /en/blog/chess-burnout/index.html (+11ms) 
+04:43:49   ├─ /en/blog/chess-as-therapy/index.html (+16ms) 
+04:43:49   ├─ /en/blog/chess-and-genetics/index.html (+18ms) 
+04:43:49   ├─ /en/blog/5-cognitive-biases-blunder/index.html (+11ms) 
+04:43:49   ├─ /en/blog/chess-and-giftedness/index.html (+16ms) 
+04:43:49   ├─ /en/blog/fear-of-losing-in-chess/index.html (+11ms) 
+04:43:49   ├─ /en/blog/echecs-religion-et-interdit/index.htmlEntry enTranslations → echecs-religion-et-interdit was not found.
+ (+42ms) 
+04:43:49   ├─ /en/blog/chess-and-spatial-vision/index.html (+17ms) 
+04:43:49   ├─ /en/blog/fear-of-winning-in-chess/index.html (+10ms) 
+04:43:49   ├─ /en/blog/chess-in-schools/index.html (+34ms) 
+04:43:49   ├─ /en/blog/chess-toxic-perfectionism/index.html (+10ms) 
+04:43:49   ├─ /en/blog/chess-and-dopamine/index.html (+27ms) 
+04:43:49   ├─ /en/blog/impostor-syndrome-2000-elo/index.html (+10ms) 
+04:43:49   ├─ /en/blog/chess-in-prison/index.html (+33ms) 
+04:43:49   ├─ /en/blog/impostor-syndrome-in-chess/index.html (+10ms) 
+04:43:49   ├─ /en/blog/chess-and-sleep/index.html (+20ms) 
+04:43:49   ├─ /en/blog/chess-and-adhd/index.html (+27ms) 
+04:43:49   ├─ /en/blog/chess-and-anger-ragequit/index.html (+12ms) 
+04:43:49   ├─ /en/blog/bayesian-networks-predict-blunders/index.html (+16ms) 
+04:43:49   ├─ /en/blog/echecs-vs-philosophie-pensee-strategique/index.htmlEntry enTranslations → echecs-vs-philosophie-pensee-strategique was not found.
+ (+29ms) 
+04:43:49   ├─ /en/blog/mirror-neurons-in-chess/index.html (+10ms) 
+04:43:49   ├─ /en/blog/modal-logic-in-chess/index.html (+12ms) 
+04:43:49   ├─ /en/blog/chaos-theory-in-chess/index.html (+17ms) 
+04:43:49   ├─ /en/blog/chess-and-memory/index.html (+28ms) 
+04:43:49   ├─ /en/blog/benefits-of-breaks-in-chess/index.html (+16ms) 
+04:43:49   ├─ /en/blog/minimax-in-chess/index.html (+21ms) 
+04:43:49   ├─ /en/blog/chess-and-money/index.html (+33ms) 
+04:43:49   ├─ /en/blog/nash-equilibrium-openings/index.html (+18ms) 
+04:43:50   ├─ /en/blog/chess-and-alzheimer-prevention/index.html (+20ms) 
+04:43:50   ├─ /en/blog/zermelo-paradox/index.html (+18ms) 
+04:43:50   ├─ /en/blog/chess-40-40-20-rule/index.html (+27ms) 
+04:43:50   ├─ /en/blog/game-theory-in-chess/index.html (+37ms) 
+04:43:50   ├─ /en/blog/chess-mathematical-problem-and-ai/index.html (+27ms) 
+04:43:50   ├─ /en/blog/chess-player-psychology/index.html (+25ms) 
+04:43:50   ├─ /en/blog/chess-and-the-brain/index.html (+22ms) 
+04:43:50   ├─ /en/blog/chess-and-women/index.html (+30ms) 
+04:43:50   ├─ /en/blog/chess-and-addiction/index.html (+10ms) 
+04:43:50   ├─ /en/blog/chess-and-mathematics/index.html (+21ms) 
+04:43:50   ├─ /en/blog/chess-and-autism/index.html (+32ms) 
+04:43:50   ├─ /en/blog/index.htmlEntry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+13ms) 
+04:43:50   ├─ /en/blog/2/index.htmlEntry enTranslations → echecs-et-le-corps was not found.
+Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+9ms) 
+04:43:50   ├─ /en/blog/3/index.htmlEntry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+10ms) 
+04:43:50   ├─ /en/blog/4/index.htmlEntry enTranslations → echecs-religion-et-interdit was not found.
+Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+10ms) 
+04:43:50   ├─ /en/blog/5/index.htmlEntry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+8ms) 
+04:43:50   ├─ /en/blog/6/index.htmlEntry enTranslations → echecs-vs-philosophie-pensee-strategique was not found.
+Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+10ms) 
+04:43:50   ├─ /en/blog/7/index.htmlEntry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+10ms) 
+04:43:50   ├─ /en/blog/8/index.htmlEntry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+8ms) 
+04:43:50   ├─ /en/contact/index.html (+4ms) 
+04:43:50   ├─ /en/dissertations/index.html (+3ms) 
+04:43:50   ├─ /en/esprit/index.html (+16ms) 
+04:43:50   ├─ /en/essais/index.html (+1ms) 
+04:43:50   ├─ /en/grand-oral/index.html (+2ms) 
+04:43:50   ├─ /en/legal-notice/index.html (+3ms) 
+04:43:50   ├─ /en/privacy-policy/index.html (+3ms) 
+04:43:50   ├─ /en/recherche/index.html (+8ms) 
+04:43:50   ├─ /en/rss.xml (+9ms) 
+04:43:50   ├─ /en/science/index.htmlEntry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+Entry enTranslations → echecs-et-le-corps was not found.
+ (+12ms) 
+04:43:50   ├─ /en/series/psychologie/index.html (+11ms) 
+04:43:50   ├─ /en/series/index.html (+8ms) 
+04:43:50   ├─ /en/societe/index.htmlEntry enTranslations → echecs-religion-et-interdit was not found.
+Entry enTranslations → echecs-vs-philosophie-pensee-strategique was not found.
+ (+10ms) 
+04:43:50   ├─ /en/terms-of-use/index.html (+3ms) 
+04:43:50   ├─ /en/index.htmlEntry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+Entry enTranslations → reseau-mode-defaut-aux-echecs was not found.
+ (+19ms) 
+04:43:50   ├─ /fr/about/index.html (+3ms) 
+04:43:50   ├─ /fr/accessibilite/index.html (+3ms) 
+04:43:50   ├─ /fr/blog/bienfaits-des-echecs-sur-le-cerveau/index.html (+1ms) 
+04:43:50   ├─ /fr/blog/echecs-et-seniors/index.html (+1ms) 
+04:43:50   ├─ /fr/blog/echecs-et-syndrome-imposteur/index.html (+1ms) 
+04:43:50   ├─ /fr/blog/echecs-vieillissement-cognitif/index.html (+1ms) 
+04:43:50   ├─ /fr/blog/guide-grand-oral-echecs-maths/index.html (+1ms) 
+04:43:50   ├─ /fr/blog/reseau-mode-defaut-aux-echecs/index.html (+8ms) 
+04:43:50   ├─ /fr/blog/manipulation-emotionnelle-aux-echecs/index.html (+45ms) 
+04:43:50   ├─ /fr/blog/echecs-et-visualisation/index.html (+23ms) 
+04:43:50   ├─ /fr/blog/echecs-stress-tournoi/index.html (+27ms) 
+04:43:50   ├─ /fr/blog/effet-placebo-aux-echecs/index.html (+33ms) 
+04:43:50   ├─ /fr/blog/echecs-et-handicap/index.html (+22ms) 
+04:43:50   ├─ /fr/blog/echecs-alphazero-stockfish/index.html (+33ms) 
+04:43:50   ├─ /fr/blog/theorie-de-l-attachement-aux-echecs/index.html (+32ms) 
+04:43:50   ├─ /fr/blog/echecs-et-concentration/index.html (+31ms) 
+04:43:50   ├─ /fr/blog/echecs-et-le-corps/index.html (+25ms) 
+04:43:50   ├─ /fr/blog/mecanismes-de-defense-aux-echecs/index.html (+41ms) 
+04:43:50   ├─ /fr/blog/echecs-et-resilience/index.html (+27ms) 
+04:43:50   ├─ /fr/blog/echecs-et-streaming/index.html (+21ms) 
+04:43:50   ├─ /fr/blog/neuroplasticite-aux-echecs/index.html (+31ms) 
+04:43:50   ├─ /fr/blog/echecs-memoire-de-travail/index.html (+23ms) 
+04:43:50   ├─ /fr/blog/echecs-gestion-du-temps/index.html (+28ms) 
+04:43:50   ├─ /fr/blog/biais-du-survivant-aux-echecs/index.html (+33ms) 
+04:43:50   ├─ /fr/blog/echecs-et-culture-populaire/index.html (+21ms) 
+04:43:50   ├─ /fr/blog/echecs-et-diplomatie/index.html (+23ms) 
+04:43:51   ├─ /fr/blog/dissonance-cognitive-aux-echecs/index.html (+34ms) 
+04:43:51   ├─ /fr/blog/echecs-et-flow/index.html (+29ms) 
+04:43:51   ├─ /fr/blog/gaslighting-aux-echecs/index.html (+31ms) 
+04:43:51   ├─ /fr/blog/echecs-et-complexite-algorithmique/index.html (+28ms) 
+04:43:51   ├─ /fr/blog/echecs-et-confiance-en-soi/index.html (+34ms) 
+04:43:51   ├─ /fr/blog/effet-dunning-kruger-aux-echecs/index.html (+48ms) 
+04:43:51   ├─ /fr/blog/echecs-et-enfants/index.html (+32ms) 
+04:43:51   ├─ /fr/blog/echecs-et-meditation/index.html (+31ms) 
+04:43:51   ├─ /fr/blog/loi-de-murphy-aux-echecs/index.html (+8ms) 
+04:43:51   ├─ /fr/blog/burnout-chess/index.html (+6ms) 
+04:43:51   ├─ /fr/blog/echecs-et-therapie/index.html (+30ms) 
+04:43:51   ├─ /fr/blog/echecs-et-genetique/index.html (+33ms) 
+04:43:51   ├─ /fr/blog/5-biais-cognitifs-blunder/index.html (+9ms) 
+04:43:51   ├─ /fr/blog/echecs-et-hpi/index.html (+29ms) 
+04:43:51   ├─ /fr/blog/echecs-peur-de-perdre/index.html (+6ms) 
+04:43:51   ├─ /fr/blog/echecs-religion-et-interdit/index.html (+30ms) 
+04:43:51   ├─ /fr/blog/echecs-et-vision-spatiale/index.html (+29ms) 
+04:43:51   ├─ /fr/blog/echecs-peur-de-gagner/index.html (+8ms) 
+04:43:51   ├─ /fr/blog/echecs-et-ecole/index.html (+32ms) 
+04:43:51   ├─ /fr/blog/echecs-et-perfectionnisme-toxique/index.html (+9ms) 
+04:43:51   ├─ /fr/blog/echecs-et-dopamine/index.html (+28ms) 
+04:43:51   ├─ /fr/blog/syndrome-imposteur-2000-elo/index.html (+6ms) 
+04:43:51   ├─ /fr/blog/echecs-en-prison/index.html (+37ms) 
+04:43:51   ├─ /fr/blog/syndrome-imposteur-aux-echecs/index.html (+8ms) 
+04:43:51   ├─ /fr/blog/echecs-et-sommeil/index.html (+31ms) 
+04:43:51   ├─ /fr/blog/echecs-et-tdah/index.html (+38ms) 
+04:43:51   ├─ /fr/blog/echecs-et-colere-ragequit/index.html (+9ms) 
+04:43:51   ├─ /fr/blog/reseaux-bayesiens-predire-blunder/index.html (+6ms) 
+04:43:51   ├─ /fr/blog/echecs-vs-philosophie-pensee-strategique/index.html (+25ms) 
+04:43:51   ├─ /fr/blog/neurones-miroirs-aux-echecs/index.html (+10ms) 
+04:43:51   ├─ /fr/blog/logique-modale-aux-echecs/index.html (+7ms) 
+04:43:51   ├─ /fr/blog/theorie-du-chaos-aux-echecs/index.html (+40ms) 
+04:43:51   ├─ /fr/blog/echecs-et-memoire/index.html (+54ms) 
+04:43:51   ├─ /fr/blog/guide-grand-oral-echecs-toutes-specialites/index.html (+89ms) 
+04:43:51   ├─ /fr/blog/bienfaits-des-pauses-aux-echecs/index.html (+37ms) 
+04:43:51   ├─ /fr/blog/minimax-aux-echecs/index.html (+48ms) 
+04:43:51   ├─ /fr/blog/guide-grand-oral-echecs-ses-hggsp/index.html (+121ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-hggsp-fischer-spassky/index.html (+7ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-hggsp-memoire-patrimoine/index.html (+10ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-hggsp-mondialisation-plateformes/index.html (+8ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-ses-bourdieu-reproduction/index.html (+6ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-ses-marche-superstars/index.html (+8ms) 
+04:43:52   ├─ /fr/blog/echecs-et-argent/index.html (+52ms) 
+04:43:52   ├─ /fr/blog/graphes-de-nash-equilibre-ouvertures/index.html (+35ms) 
+04:43:52   ├─ /fr/blog/echecs-alzheimer-prevention-declin-cognitif/index.html (+50ms) 
+04:43:52   ├─ /fr/blog/guide-grand-oral-echecs-nsi/index.html (+101ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-nsi-alpha-beta/index.html (+8ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-nsi-alphazero/index.html (+6ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-nsi-minimax/index.html (+9ms) 
+04:43:52   ├─ /fr/blog/paradoxe-de-zermelo/index.html (+41ms) 
+04:43:52   ├─ /fr/blog/regle-40-40-20-echecs/index.html (+41ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-maths-combinatoire/index.html (+7ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-maths-elo-probabilites/index.html (+8ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-maths-modeles-limites/index.html (+8ms) 
+04:43:52   ├─ /fr/blog/sujet-grand-oral-maths-zermelo-complexite/index.html (+6ms) 
+04:43:52   ├─ /fr/blog/theorie-des-jeux-aux-echecs/index.html (+46ms) 
+04:43:52   ├─ /fr/blog/grand-oral-mathematiques-echecs/index.html (+91ms) 
+04:43:52   ├─ /fr/blog/grand-oral-maths-spe-echecs/index.html (+129ms) 
+04:43:52   ├─ /fr/blog/grand-oral-nsi-echecs/index.html (+117ms) 
+04:43:52   ├─ /fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/index.html (+61ms) 
+04:43:52   ├─ /fr/blog/psychologie-du-joueur-d-echecs/index.html (+36ms) 
+04:43:52   ├─ /fr/blog/les-echecs-et-le-cerveau/index.html (+69ms) 
+04:43:53   ├─ /fr/blog/echecs-et-femmes/index.html (+52ms) 
+04:43:53   ├─ /fr/blog/les-echecs-et-l-addiction/index.html (+8ms) 
+04:43:53   ├─ /fr/blog/les-echecs-et-les-mathematiques/index.html (+38ms) 
+04:43:53   ├─ /fr/blog/echecs-et-autisme/index.html (+42ms) 
+04:43:53   ├─ /fr/blog/index.html (+11ms) 
+04:43:53   ├─ /fr/blog/2/index.html (+8ms) 
+04:43:53   ├─ /fr/blog/3/index.html (+9ms) 
+04:43:53   ├─ /fr/blog/4/index.html (+7ms) 
+04:43:53   ├─ /fr/blog/5/index.html (+9ms) 
+04:43:53   ├─ /fr/blog/6/index.html (+10ms) 
+04:43:53   ├─ /fr/blog/7/index.html (+7ms) 
+04:43:53   ├─ /fr/blog/8/index.html (+9ms) 
+04:43:53   ├─ /fr/blog/9/index.html (+9ms) 
+04:43:53   ├─ /fr/blog/10/index.html (+6ms) 
+04:43:53   ├─ /fr/cgu/index.html (+3ms) 
+04:43:53   ├─ /fr/contact/index.html (+3ms) 
+04:43:53   ├─ /fr/dissertations/echecs-et-investissement/index.html (+3ms) 
+04:43:53   ├─ /fr/dissertations/index.html (+3ms) 
+04:43:53   ├─ /fr/esprit/index.html (+12ms) 
+04:43:53   ├─ /fr/essais/index.html (+1ms) 
+04:43:53   ├─ /fr/glossaire/index.html (+5ms) 
+04:43:53   ├─ /fr/grand-oral/index.html (+11ms) 
+04:43:53   ├─ /fr/infographie/index.html (+14ms) 
+04:43:53   ├─ /fr/mentions-legales/index.html (+3ms) 
+04:43:53   ├─ /fr/politique-confidentialite/index.html (+3ms) 
+04:43:53   ├─ /fr/recherche/index.html (+9ms) 
+04:43:53   ├─ /fr/science/index.html (+13ms) 
+04:43:53   ├─ /fr/series/moteur-python/index.html (+13ms) 
+04:43:53   ├─ /fr/series/psychologie/index.html (+10ms) 
+04:43:53   ├─ /fr/series/index.html (+7ms) 
+04:43:53   ├─ /fr/societe/index.html (+11ms) 
+04:43:53   ├─ /fr/index.html (+15ms) 
+04:43:53   ├─ /nl/about/index.html (+3ms) 
+04:43:53   ├─ /nl/contact/index.html (+2ms) 
+04:43:53   ├─ /nl/esprit/index.html (+2ms) 
+04:43:53   ├─ /nl/gebruiksvoorwaarden/index.html (+3ms) 
+04:43:53   ├─ /nl/juridische-vermeldingen/index.html (+3ms) 
+04:43:53   ├─ /nl/privacybeleid/index.html (+3ms) 
+04:43:53   ├─ /nl/recherche/index.html (+2ms) 
+04:43:53   ├─ /nl/science/index.html (+2ms) 
+04:43:53   ├─ /nl/societe/index.html (+2ms) 
+04:43:53   ├─ /nl/toegankelijkheid/index.html (+3ms) 
+04:43:53   ├─ /nl/index.html (+2ms) 
+04:43:53   ├─ /pt-br/about/index.html (+3ms) 
+04:43:53   ├─ /pt-br/acessibilidade/index.html (+3ms) 
+04:43:53   ├─ /pt-br/aviso-legal/index.html (+5ms) 
+04:43:53   ├─ /pt-br/blog/rede-modo-padrao-xadrez/index.html (+14ms) 
+04:43:53   ├─ /pt-br/blog/manipulacao-emocional-no-xadrez/index.html (+21ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-e-visualizacao/index.html (+16ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-estresse-torneio/index.html (+19ms) 
+04:43:53   ├─ /pt-br/blog/efeito-placebo-no-xadrez/index.html (+20ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-e-deficiencia/index.html (+19ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-alphazero-stockfish/index.html (+17ms) 
+04:43:53   ├─ /pt-br/blog/teoria-do-apego-no-xadrez/index.html (+23ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-e-concentracao/index.html (+22ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-e-o-corpo/index.html (+20ms) 
+04:43:53   ├─ /pt-br/blog/mecanismos-de-defesa-no-xadrez/index.html (+27ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-e-resiliencia/index.html (+20ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-e-streaming/index.html (+19ms) 
+04:43:53   ├─ /pt-br/blog/neuroplasticidade-e-xadrez/index.html (+22ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-memoria-de-trabalho/index.html (+19ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-gestao-do-tempo/index.html (+22ms) 
+04:43:53   ├─ /pt-br/blog/vies-do-sobrevivente-no-xadrez/index.html (+22ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-na-cultura-popular/index.html (+18ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-e-diplomacia/index.html (+22ms) 
+04:43:53   ├─ /pt-br/blog/dissonancia-cognitiva-no-xadrez/index.html (+24ms) 
+04:43:53   ├─ /pt-br/blog/flow-no-xadrez/index.html (+24ms) 
+04:43:53   ├─ /pt-br/blog/gaslighting-no-xadrez/index.html (+20ms) 
+04:43:53   ├─ /pt-br/blog/complexidade-algoritmica-xadrez/index.html (+25ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-e-autoconfianca/index.html (+24ms) 
+04:43:53   ├─ /pt-br/blog/efeito-dunning-kruger-no-xadrez/index.html (+29ms) 
+04:43:53   ├─ /pt-br/blog/xadrez-para-criancas/index.html (+23ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-meditacao/index.html (+23ms) 
+04:43:54   ├─ /pt-br/blog/lei-de-murphy-no-xadrez/index.html (+12ms) 
+04:43:54   ├─ /pt-br/blog/burnout-no-xadrez/index.html (+12ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-como-terapia/index.html (+22ms) 
+04:43:54   ├─ /pt-br/blog/genetica-e-talento-xadrez/index.html (+25ms) 
+04:43:54   ├─ /pt-br/blog/5-vieses-cognitivos-blunder/index.html (+12ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-superdotacao/index.html (+23ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-medo-de-perder/index.html (+12ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-religiao-e-proibicao/index.html (+22ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-visao-espacial/index.html (+20ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-medo-de-ganhar/index.html (+12ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-na-escola/index.html (+23ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-perfeccionismo-toxico/index.html (+12ms) 
+04:43:54   ├─ /pt-br/blog/dopamina-e-xadrez/index.html (+21ms) 
+04:43:54   ├─ /pt-br/blog/sindrome-impostora-2000-elo/index.html (+11ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-na-prisao/index.html (+23ms) 
+04:43:54   ├─ /pt-br/blog/sindrome-do-impostor-no-xadrez/index.html (+12ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-sono/index.html (+23ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-tdah/index.html (+22ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-raiva-ragequit/index.html (+15ms) 
+04:43:54   ├─ /pt-br/blog/redes-bayesianas-prever-blunder/index.html (+14ms) 
+04:43:54   ├─ /pt-br/blog/echecs-vs-philosophie-pensee-strategique/index.html (+28ms) 
+04:43:54   ├─ /pt-br/blog/neuronios-espelho-no-xadrez/index.html (+12ms) 
+04:43:54   ├─ /pt-br/blog/logica-modal-no-xadrez/index.html (+19ms) 
+04:43:54   ├─ /pt-br/blog/teoria-do-caos-no-xadrez/index.html (+24ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-memoria/index.html (+30ms) 
+04:43:54   ├─ /pt-br/blog/beneficios-das-pausas-no-xadrez/index.html (+27ms) 
+04:43:54   ├─ /pt-br/blog/minimax-no-xadrez/index.html (+32ms) 
+04:43:54   ├─ /pt-br/blog/quanto-ganha-jogador-de-xadrez/index.html (+31ms) 
+04:43:54   ├─ /pt-br/blog/grafos-de-nash-equilibrio-aberturas/index.html (+23ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-alzheimer-prevencao-declinio-cognitivo/index.html (+26ms) 
+04:43:54   ├─ /pt-br/blog/paradoxo-de-zermelo/index.html (+25ms) 
+04:43:54   ├─ /pt-br/blog/regra-40-40-20-xadrez/index.html (+24ms) 
+04:43:54   ├─ /pt-br/blog/teoria-dos-jogos-no-xadrez/index.html (+29ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-problema-matematico-impossivel-e-ia/index.html (+28ms) 
+04:43:54   ├─ /pt-br/blog/psicologia-do-jogador-de-xadrez/index.html (+25ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-o-cerebro/index.html (+44ms) 
+04:43:54   ├─ /pt-br/blog/mulheres-no-xadrez/index.html (+28ms) 
+04:43:54   ├─ /pt-br/blog/vicio-em-xadrez/index.html (+12ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-matematica/index.html (+27ms) 
+04:43:54   ├─ /pt-br/blog/xadrez-e-autismo/index.html (+26ms) 
+04:43:54   ├─ /pt-br/blog/index.html (+32ms) 
+04:43:54   ├─ /pt-br/blog/2/index.html (+34ms) 
+04:43:54   ├─ /pt-br/blog/3/index.html (+31ms) 
+04:43:55   ├─ /pt-br/blog/4/index.html (+31ms) 
+04:43:55   ├─ /pt-br/blog/5/index.html (+33ms) 
+04:43:55   ├─ /pt-br/blog/6/index.html (+32ms) 
+04:43:55   ├─ /pt-br/blog/7/index.html (+31ms) 
+04:43:55   ├─ /pt-br/blog/8/index.html (+21ms) 
+04:43:55   ├─ /pt-br/contact/index.html (+3ms) 
+04:43:55   ├─ /pt-br/esprit/index.html (+65ms) 
+04:43:55   ├─ /pt-br/politica-de-privacidade/index.html (+3ms) 
+04:43:55   ├─ /pt-br/recherche/index.html (+8ms) 
+04:43:55   ├─ /pt-br/rss.xml (+9ms) 
+04:43:55   ├─ /pt-br/science/index.html (+64ms) 
+04:43:55   ├─ /pt-br/series/psychologie/index.html (+26ms) 
+04:43:55   ├─ /pt-br/series/index.html (+6ms) 
+04:43:55   ├─ /pt-br/societe/index.html (+47ms) 
+04:43:55   ├─ /pt-br/termos-de-uso/index.html (+3ms) 
+04:43:55   ├─ /pt-br/index.html (+59ms) 
+04:43:55   ├─ /rss.xml (+8ms) 
+04:43:55   ├─ /sitemap.xml (+35ms) 
+04:43:55   ├─ /index.html (+2ms) 
+04:43:55 ✓ Completed in 7.41s.
+
+04:43:55 [build] ✓ Completed in 12.46s.
+04:43:55 [build] 305 page(s) built in 13.77s
+04:43:55 [build] Complete!
+
+Running Pagefind v1.3.0 (Extended)
+Running from: "/home/chacalcha/Bureau/Website project/blog-gaucher"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 321 files matching {fr,en,pt-br}/blog/**/*.html
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+76 pages found without an <html> element. 
+Pages without an outer <html> element will not be processed by default. 
+If adding this element is not possible, use the root selector config to target a different root element.
+  * "/en/blog/burnout-chess/" has no <html> element
+  * "/en/blog/effet-dunning-kruger-aux-echecs/" has no <html> element
+  * "/en/blog/loi-de-murphy-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-en-prison/" has no <html> element
+  * "/en/blog/echecs-et-argent/" has no <html> element
+  * "/en/blog/graphes-de-nash-equilibre-ouvertures/" has no <html> element
+  * "/en/blog/echecs-et-colere-ragequit/" has no <html> element
+  * "/en/blog/5-biais-cognitifs-blunder/" has no <html> element
+  * "/en/blog/mecanismes-de-defense-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-alzheimer-prevention-declin-cognitif/" has no <html> element
+  * "/en/blog/biais-du-survivant-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-et-sommeil/" has no <html> element
+  * "/en/blog/echecs-gestion-du-temps/" has no <html> element
+  * "/en/blog/neurones-miroirs-aux-echecs/" has no <html> element
+  * "/en/blog/chess-and-seniors/" has no <html> element
+  * "/en/blog/theorie-des-jeux-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-et-concentration/" has no <html> element
+  * "/en/blog/theorie-de-l-attachement-aux-echecs/" has no <html> element
+  * "/en/blog/chess-benefits-for-the-brain/" has no <html> element
+  * "/en/blog/echecs-et-autisme/" has no <html> element
+  * "/en/blog/echecs-et-dopamine/" has no <html> element
+  * "/en/blog/echecs-et-perfectionnisme-toxique/" has no <html> element
+  * "/en/blog/echecs-et-vision-spatiale/" has no <html> element
+  * "/en/blog/echecs-et-therapie/" has no <html> element
+  * "/en/blog/chess-and-cognitive-aging/" has no <html> element
+  * "/en/blog/echecs-et-ecole/" has no <html> element
+  * "/en/blog/reseaux-bayesiens-predire-blunder/" has no <html> element
+  * "/en/blog/echecs-et-memoire/" has no <html> element
+  * "/en/blog/echecs-et-femmes/" has no <html> element
+  * "/en/blog/effet-placebo-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-vieillissement-cognitif/" has no <html> element
+  * "/en/blog/echecs-peur-de-perdre/" has no <html> element
+  * "/en/blog/echecs-et-diplomatie/" has no <html> element
+  * "/en/blog/echecs-alphazero-stockfish/" has no <html> element
+  * "/en/blog/minimax-aux-echecs/" has no <html> element
+  * "/en/blog/syndrome-imposteur-aux-echecs/" has no <html> element
+  * "/en/blog/les-echecs-et-le-cerveau/" has no <html> element
+  * "/en/blog/neuroplasticite-aux-echecs/" has no <html> element
+  * "/en/blog/gaslighting-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-et-genetique/" has no <html> element
+  * "/en/blog/echecs-et-syndrome-imposteur/" has no <html> element
+  * "/en/blog/paradoxe-de-zermelo/" has no <html> element
+  * "/en/blog/logique-modale-aux-echecs/" has no <html> element
+  * "/en/blog/psychologie-du-joueur-d-echecs/" has no <html> element
+  * "/en/blog/echecs-et-hpi/" has no <html> element
+  * "/en/blog/echecs-et-tdah/" has no <html> element
+  * "/en/blog/echecs-et-handicap/" has no <html> element
+  * "/en/blog/echecs-et-meditation/" has no <html> element
+  * "/en/blog/echecs-et-enfants/" has no <html> element
+  * "/en/blog/syndrome-imposteur-2000-elo/" has no <html> element
+  * "/en/blog/les-echecs-et-l-addiction/" has no <html> element
+  * "/en/blog/bienfaits-des-pauses-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-stress-tournoi/" has no <html> element
+  * "/en/blog/echecs-et-culture-populaire/" has no <html> element
+  * "/en/blog/chess-impostor-syndrome/" has no <html> element
+  * "/en/blog/echecs-et-confiance-en-soi/" has no <html> element
+  * "/en/blog/echecs-et-flow/" has no <html> element
+  * "/en/blog/regle-40-40-20-echecs/" has no <html> element
+  * "/en/blog/echecs-et-seniors/" has no <html> element
+  * "/en/blog/echecs-peur-de-gagner/" has no <html> element
+  * "/en/blog/les-echecs-et-les-mathematiques/" has no <html> element
+  * "/en/blog/echecs-memoire-de-travail/" has no <html> element
+  * "/en/blog/echecs-et-resilience/" has no <html> element
+  * "/en/blog/dissonance-cognitive-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-et-complexite-algorithmique/" has no <html> element
+  * "/en/blog/manipulation-emotionnelle-aux-echecs/" has no <html> element
+  * "/en/blog/echecs-et-visualisation/" has no <html> element
+  * "/en/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/" has no <html> element
+  * "/en/blog/bienfaits-des-echecs-sur-le-cerveau/" has no <html> element
+  * "/en/blog/echecs-et-streaming/" has no <html> element
+  * "/en/blog/theorie-du-chaos-aux-echecs/" has no <html> element
+  * "/fr/blog/echecs-vieillissement-cognitif/" has no <html> element
+  * "/fr/blog/echecs-et-syndrome-imposteur/" has no <html> element
+  * "/fr/blog/guide-grand-oral-echecs-maths/" has no <html> element
+  * "/fr/blog/echecs-et-seniors/" has no <html> element
+  * "/fr/blog/bienfaits-des-echecs-sur-le-cerveau/" has no <html> element
+
+[Reading languages]
+Discovered 3 languages: pt-br, fr, en
+
+[Building search indexes]
+Total: 
+  Indexed 3 languages
+  Indexed 219 pages
+  Indexed 28962 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 2.792 seconds
+[strip-comments] 1355 scripts inline nettoyés dans 299 fichiers (-1880.8 Ko), 152 ignorés.
+[add-image-srcset] 6 image(s) déclinée(s) dans 3 fichier(s).
+[finalize-navigation] 280 edits; scheduled links restored automatically by future builds.
+verify-dist-urls: OK (pas de :8080 ni http sur blogdungaucher.com).
+389 pages, 17122 liens internes vérifiés.
+Aucun lien interne mort.

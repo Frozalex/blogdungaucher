@@ -13,7 +13,7 @@ import { buildBreadcrumbJsonLd } from "../../../utils/blog";
 
 export async function getStaticPaths() {
   const entries = await getCollection("dissertations");
-  return entries.map((entry) => ({
+  return entries.filter((entry) => entry.data.publishDate <= new Date()).map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
   }));

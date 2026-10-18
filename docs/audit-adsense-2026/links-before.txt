@@ -1,0 +1,23 @@
+
+> blog-d-un-gaucher@1.0.0 check:dead-links
+> node scripts/check-dead-links.mjs
+
+389 pages, 17158 liens internes vérifiés.
+
+16 cible(s) morte(s) :
+   /en/blog/cheating-in-chess/  <- /en/blog/emotional-manipulation-in-chess/ (+1)
+   /en/blog/faut-il-vraiment-etudier-les-ouvertures/  <- /en/blog/cognitive-dissonance-in-chess/
+   /en/blog/how-to-analyze-chess-games/  <- /en/blog/attachment-theory-in-chess/ (+4)
+   /en/blog/les-echecs-rendent-ils-plus-intelligent/  <- /en/blog/neuroplasticity-and-chess/ (+1)
+   /en/blog/solitude-in-chess/  <- /en/blog/attachment-theory-in-chess/ (+1)
+   /fr/blog/analyser-ses-parties/  <- /fr/blog/biais-du-survivant-aux-echecs/ (+4)
+   /fr/blog/echecs-et-la-solitude/  <- /fr/blog/mecanismes-de-defense-aux-echecs/ (+1)
+   /fr/blog/echecs-et-la-triche/  <- /fr/blog/gaslighting-aux-echecs/ (+1)
+   /fr/blog/faut-il-vraiment-etudier-les-ouvertures/  <- /fr/blog/dissonance-cognitive-aux-echecs/
+   /fr/blog/les-echecs-rendent-ils-plus-intelligent/  <- /fr/blog/effet-placebo-aux-echecs/ (+1)
+   /nl/blog/  <- /nl/gebruiksvoorwaarden/ (+3)
+   /pt-br/blog/analisar-suas-partidas/  <- /pt-br/blog/dissonancia-cognitiva-no-xadrez/ (+4)
+   /pt-br/blog/faut-il-vraiment-etudier-les-ouvertures/  <- /pt-br/blog/dissonancia-cognitiva-no-xadrez/
+   /pt-br/blog/les-echecs-rendent-ils-plus-intelligent/  <- /pt-br/blog/efeito-placebo-no-xadrez/ (+1)
+   /pt-br/blog/xadrez-e-solidao/  <- /pt-br/blog/mecanismos-de-defesa-no-xadrez/ (+1)
+   /pt-br/blog/xadrez-e-trapaca/  <- /pt-br/blog/gaslighting-no-xadrez/ (+1)

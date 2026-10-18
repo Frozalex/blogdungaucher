@@ -1,0 +1,103 @@
+
+> blog-gaucher-motion-canvas@0.1.0 check
+> tsc --noEmit
+
+src/components/ChessBoard.tsx(100,19): error TS2416: Property 'size' in type 'ChessBoard' is not assignable to the same property in base type 'Layout'.
+  Type 'SimpleSignal<number, this>' is not assignable to type 'Vector2LengthSignal<this>'.
+    Type 'Signal<number, number, this, SignalContext<number, number, this>>' is not assignable to type 'Signal<PossibleVector2<Length>, Vector2, this, SignalContext<PossibleVector2<Length>, Vector2, this>>'.
+      The types of 'context.parser' are incompatible between these types.
+        Type '(value: number) => number' is not assignable to type '(value: PossibleVector2<Length>) => Vector2'.
+          Types of parameters 'value' and 'value' are incompatible.
+            Type 'PossibleVector2<Length>' is not assignable to type 'number'.
+              Type 'undefined' is not assignable to type 'number'.
+src/components/ChessBoard.tsx(118,11): error TS2416: Property 'draw' in type 'ChessBoard' is not assignable to the same property in base type 'Layout'.
+  Type '(showCoordinates: boolean, startHidden: boolean) => void' is not assignable to type '(context: CanvasRenderingContext2D) => void'.
+    Target signature provides too few arguments. Expected 2 or more, but got 1.
+src/project.ts(3,24): error TS2307: Cannot find module './scenes/blog-teaser?scene' or its corresponding type declarations.
+src/project.ts(4,36): error TS2307: Cannot find module './scenes/summary-echecs-et-memoire?scene' or its corresponding type declarations.
+src/scenes/blog-teaser.tsx(12,3): error TS2305: Module '"@motion-canvas/core"' has no exported member 'interpolate'.
+src/scenes/blog-teaser.tsx(55,18): error TS2345: Argument of type 'View2D' is not assignable to parameter of type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+  Type 'View2D' is missing the following properties from type 'SceneDescription<ThreadGeneratorFactory<View2D>>': klass, config, meta
+src/scenes/blog-teaser.tsx(56,19): error TS2345: Argument of type 'View2D' is not assignable to parameter of type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+  Type 'View2D' is missing the following properties from type 'SceneDescription<ThreadGeneratorFactory<View2D>>': klass, config, meta
+src/scenes/blog-teaser.tsx(57,19): error TS2345: Argument of type 'View2D' is not assignable to parameter of type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+  Type 'View2D' is missing the following properties from type 'SceneDescription<ThreadGeneratorFactory<View2D>>': klass, config, meta
+src/scenes/blog-teaser.tsx(58,19): error TS2345: Argument of type 'View2D' is not assignable to parameter of type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+  Type 'View2D' is missing the following properties from type 'SceneDescription<ThreadGeneratorFactory<View2D>>': klass, config, meta
+src/scenes/blog-teaser.tsx(69,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(72,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(78,7): error TS2322: Type '{ ref: Reference<Img>; src: string; width: number; height: number; objectFit: string; scale: number; x: number; y: number; }' is not assignable to type 'ImgProps'.
+  Property 'objectFit' does not exist on type 'ImgProps'.
+src/scenes/blog-teaser.tsx(94,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(114,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(120,7): error TS2322: Type '{ ref: Reference<Img>; src: string; width: number; height: number; objectFit: string; scale: number; opacity: number; }' is not assignable to type 'ImgProps'.
+  Property 'objectFit' does not exist on type 'ImgProps'.
+src/scenes/blog-teaser.tsx(127,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(138,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(166,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(184,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(190,7): error TS2322: Type '{ ref: Reference<Img>; src: string; width: number; height: number; objectFit: string; scale: number; opacity: number; }' is not assignable to type 'ImgProps'.
+  Property 'objectFit' does not exist on type 'ImgProps'.
+src/scenes/blog-teaser.tsx(196,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(231,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(251,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(257,7): error TS2322: Type '{ ref: Reference<Img>; src: string; width: number; height: number; objectFit: string; scale: number; opacity: number; }' is not assignable to type 'ImgProps'.
+  Property 'objectFit' does not exist on type 'ImgProps'.
+src/scenes/blog-teaser.tsx(264,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(289,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/blog-teaser.tsx(304,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(51,24): error TS2345: Argument of type 'View2D' is not assignable to parameter of type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+  Type 'View2D' is missing the following properties from type 'SceneDescription<ThreadGeneratorFactory<View2D>>': klass, config, meta
+src/scenes/summary-echecs-et-memoire.tsx(52,27): error TS2345: Argument of type 'View2D' is not assignable to parameter of type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+  Type 'View2D' is missing the following properties from type 'SceneDescription<ThreadGeneratorFactory<View2D>>': klass, config, meta
+src/scenes/summary-echecs-et-memoire.tsx(53,23): error TS2345: Argument of type 'View2D' is not assignable to parameter of type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+  Type 'View2D' is missing the following properties from type 'SceneDescription<ThreadGeneratorFactory<View2D>>': klass, config, meta
+src/scenes/summary-echecs-et-memoire.tsx(54,23): error TS2345: Argument of type 'View2D' is not assignable to parameter of type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+  Type 'View2D' is missing the following properties from type 'SceneDescription<ThreadGeneratorFactory<View2D>>': klass, config, meta
+src/scenes/summary-echecs-et-memoire.tsx(55,25): error TS2345: Argument of type 'View2D' is not assignable to parameter of type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+  Type 'View2D' is missing the following properties from type 'SceneDescription<ThreadGeneratorFactory<View2D>>': klass, config, meta
+src/scenes/summary-echecs-et-memoire.tsx(65,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(69,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(103,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(164,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(192,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(200,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(208,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(209,6): error TS2786: 'ChessBoard' cannot be used as a JSX component.
+  Its instance type 'ChessBoard' is not a valid JSX element.
+    Types of property 'position' are incompatible.
+      Type 'Vector2Signal<ChessBoard>' is not assignable to type 'Vector2Signal<Node>'.
+        Type 'Vector2Signal<ChessBoard>' is not assignable to type 'Signal<PossibleVector2, Vector2, Node, Vector2SignalContext<Node>>'.
+          The types returned by 'reset()' are incompatible between these types.
+            Type 'ChessBoard' is not assignable to type 'Node'.
+              Property 'draw' is private in type 'ChessBoard' but not in type 'Node'.
+src/scenes/summary-echecs-et-memoire.tsx(217,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(230,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(243,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(293,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(327,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(336,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(345,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(346,6): error TS2786: 'ChessBoard' cannot be used as a JSX component.
+  Its instance type 'ChessBoard' is not a valid JSX element.
+    Types of property 'position' are incompatible.
+      Type 'Vector2Signal<ChessBoard>' is not assignable to type 'Vector2Signal<Node>'.
+        Type 'Vector2Signal<ChessBoard>' is not assignable to type 'Signal<PossibleVector2, Vector2, Node, Vector2SignalContext<Node>>'.
+          The types returned by 'reset()' are incompatible between these types.
+            Type 'ChessBoard' is not assignable to type 'Node'.
+              Property 'draw' is private in type 'ChessBoard' but not in type 'Node'.
+src/scenes/summary-echecs-et-memoire.tsx(354,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(367,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(380,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(429,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(454,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(458,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(466,84): error TS2339: Property 'fill' does not exist on type 'Node'.
+src/scenes/summary-echecs-et-memoire.tsx(472,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(502,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(573,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(585,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(671,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(724,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(737,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.
+src/scenes/summary-echecs-et-memoire.tsx(750,8): error TS2339: Property 'add' does not exist on type 'SceneDescription<ThreadGeneratorFactory<View2D>>'.

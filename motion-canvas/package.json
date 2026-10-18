@@ -6,7 +6,9 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "render": "vite build && node scripts/render.mjs"
+    "render": "vite build && node scripts/render.mjs",
+    "test": "node vendor/motion-project-glob/index.test.cjs",
+    "check": "tsc --noEmit"
   },
   "dependencies": {
     "@motion-canvas/2d": "^3.17.2",
@@ -16,6 +18,18 @@
     "@motion-canvas/ui": "^3.17.2",
     "@motion-canvas/vite-plugin": "^3.17.2",
     "typescript": "^5.7.0",
-    "vite": "^5.4.10"
+    "vite": "^8.3.4",
+    "fast-glob": "file:vendor/motion-project-glob"
+  },
+  "overrides": {
+    "@motion-canvas/vite-plugin": {
+      "vite": "$vite"
+    },
+    "@xmldom/xmldom": "^0.9.12",
+    "fast-glob": "$fast-glob"
+  },
+  "engines": {
+    "node": ">=22.22.0",
+    "npm": ">=9.6.5"
   }
 }

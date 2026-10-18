@@ -5,7 +5,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { buildBreadcrumbJsonLd } from "../../../utils/blog";
 
 const entries = await getCollection("dissertations");
-const sorted = entries.sort(
+const sorted = entries.filter((entry) => entry.data.publishDate <= new Date()).sort(
   (a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime()
 );
 
