@@ -1,8 +1,7 @@
 ---
-title: "Sujet Grand Oral Maths : Pourquoi les mathématiques prouvent-elles que les échecs ne seront jamais résolus par la force brute ?"
-excerpt: >-
-  Sujet entièrement rédigé pour le Grand Oral spécialité Maths : théorème de Zermelo, complexité algorithmique, force
-  brute, limites physiques du calcul. Texte de 10 minutes prêt à réciter.
+title: "Sujet Grand Oral Maths : pourquoi la recherche exhaustive aux échecs est-elle hors de portée pratique ?"
+excerpt:
+  "Valeur sous jeu parfait, explosion combinatoire et limites des preuves d'impossibilité : trois notions à distinguer."
 publishDate: "2026-05-05"
 category: grand-oral
 featured: false
@@ -33,66 +32,54 @@ heroImage:
   license: CC0
 ---
 
-> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+Les échecs ont-ils une valeur théorique que nous pourrions calculer ? La question relie une démonstration d'existence à une difficulté de calcul. Elle ne permet pas d'affirmer que les mathématiques auraient prouvé l'impossibilité de toute résolution future.
 
----
+## Un résultat sous jeu parfait
 
-Bonjour. Je vais vous présenter un paradoxe qui m'a intrigué : on sait que les échecs ont un résultat mathématiquement déterminé, et pourtant on ne le connaîtra probablement jamais. C'est un paradoxe qui relève des **mathématiques** pures et qui touche aux **limites** physiques du calcul.
+Dans un jeu fini à deux joueurs, à information parfaite et sans hasard, on peut attribuer une valeur aux issues puis la faire remonter dans l'arbre. À chaque nœud, le joueur choisit la continuation qui lui est la plus favorable. Cette induction rétrograde donne la formulation moderne d'une stratégie optimale.
 
-Le **sujet** est précis : pourquoi les **mathématiques** prouvent-elles que les échecs ne seront jamais résolus par la force brute ? Cette **question** m'intéresse parce qu'elle mobilise plusieurs notions du **programme** de spécialité **mathématiques** de **terminale** : la **complexité** algorithmique, la croissance exponentielle, et plus profondément l'idée qu'un objet mathématique peut être théoriquement défini mais pratiquement inaccessible.
+Le travail de Zermelo paraît en 1913 dans les actes du congrès de Cambridge de 1912. La traduction et l'étude de Schwalbe et Walker permettent de distinguer son argument original de cette présentation pédagogique moderne.
 
-Je procéderai en trois étapes. D'abord, je présenterai le théorème de Zermelo, qui prouve que les échecs ont un résultat déterminé sous jeu parfait. Ensuite, je discuterai la **complexité** combinatoire du jeu et le calcul du nombre de Shannon. Enfin, je confronterai ce nombre aux **limites** physiques du calcul pour conclure que la force brute est non seulement impraticable, mais physiquement impossible.
+Pour les échecs avec les règles d'arrêt automatique modernes, les parties sont finies. Les cinq répétitions et les 75 coups de chaque joueur sans mouvement de pion ni capture jouent ici un rôle différent des réclamations de nulle pour triple répétition ou 50 coups. Le mat au dernier coup a priorité dans le cas prévu par la règle des 75 coups.
 
-## Le théorème de Zermelo : un résultat existe
+L'existence d'une valeur ne dit pas laquelle vaut la position initiale : victoire des Blancs, victoire des Noirs ou nulle. Elle ne fournit pas immédiatement une méthode praticable pour la déterminer.
 
-Commençons par un résultat de **mathématiques** pures, démontré par Ernst Zermelo en mille neuf cent treize, à l'occasion du cinquième Congrès international des mathématiciens. Le théorème s'énonce ainsi : tout jeu fini à deux joueurs, à information complète et sans hasard, admet un résultat déterminé sous jeu parfait.
+## Un ordre de grandeur de l'arbre
 
-Précisons les hypothèses. **Jeu fini** : la partie se termine en un nombre fini de coups. C'est vrai aux échecs, grâce à la règle des cinquante coups et à la répétition triple. **Deux joueurs** : un Blanc et un Noir, alternant. **Information complète** : chaque joueur voit la position entière ; il n'y a pas de carte cachée comme au poker. **Sans hasard** : pas de dé, pas de tirage aléatoire.
+Shannon (1950) estime un ordre de grandeur d'environ $10^{120}$ pour les suites de jeu dans son raisonnement. Ce n'est pas un dénombrement exact de toutes les parties légales, ni le nombre de positions distinctes.
 
-Sous ces hypothèses, Zermelo démontre par récurrence sur la profondeur de l'arbre de jeu que l'un de ces trois cas est inévitable : soit les Blancs ont une stratégie gagnante, soit les Noirs ont une stratégie gagnante, soit les deux ont une stratégie de nulle. Ce résultat est extrêmement fort. Il signifie qu'aux échecs, le résultat est déterministe : avec jeu parfait des deux côtés, la partie se finit toujours de la même manière, quel que soit le scénario suivi.
+Si tu prends à titre de modèle 35 choix à chacun de 80 demi-coups, tu obtiens :
 
-La beauté du théorème, c'est qu'il s'agit d'un résultat d'existence. Zermelo ne nous dit pas quel est ce résultat. Il prouve seulement qu'il existe. Pour les échecs, on ne sait pas si la position de départ est gagnante pour les Blancs, gagnante pour les Noirs, ou nulle. La conjecture la plus partagée est que c'est nulle, mais ce n'est pas démontré.
+$$35^{80}\approx 3,39\times 10^{123}.$$
 
-Ce résultat est analogue à beaucoup de théorèmes d'existence en **mathématiques** : on prouve qu'un objet existe sans pouvoir le construire. C'est par **exemple** le cas du théorème des valeurs intermédiaires, qui prouve l'existence d'une solution à une équation continue sans donner la solution. Zermelo ne nous donne pas la solution des échecs, il nous dit seulement qu'elle existe.
+Les hypothèses diffèrent : il ne faut pas écrire que ce calcul est exactement égal au nombre de Shannon. Un demi-coup est le déplacement d'un seul joueur ; un coup complet comprend un coup blanc et un coup noir.
 
-![Arbre de jeu illustrant le théorème de Zermelo : par récurrence depuis les feuilles, MAX choisit le résultat maximal et MIN le minimal, garantissant qu'un résultat déterminé remonte jusqu'à la racine.](/images/sujet-zermelo-complexite-01-theoreme-zermelo.svg)
+Le modèle régulier donne un nombre de feuilles $b^d$ à profondeur d. Les branchements réels varient, certaines parties se terminent plus tôt et des suites différentes peuvent atteindre une même position.
 
-## La complexité combinatoire : un calcul qui explose
+## Recherche, réutilisation et complexité
 
-Si on sait que la solution existe, pourquoi ne la calcule-t-on pas ? La réponse tient en un mot : la **complexité**.
+L'élagage évite des branches inutiles pour le résultat recherché. Les tables de transposition réutilisent des informations sur des états déjà rencontrés. Ces méthodes montrent pourquoi compter toutes les suites n'équivaut pas à démontrer le coût minimal de toute méthode possible.
 
-Pour résoudre les échecs par la force brute, il faudrait construire l'arbre complet du jeu et l'analyser par minimax. À chaque tour, chaque joueur dispose en moyenne de trente-cinq coups. Une partie dure environ quatre-vingts demi-coups. Par le **principe multiplicatif**, le nombre de parties possibles est de l'ordre de trente-cinq puissance quatre-vingts. Le calcul donne environ dix puissance cent vingt. C'est le **nombre de Shannon**, calculé par Claude Shannon en mille neuf cent cinquante.
+Fraenkel et Lichtenstein (1981) établissent un résultat EXPTIME-complet pour une généralisation appropriée des échecs sur des échiquiers de taille variable. Ce résultat asymptotique ne s'applique pas comme une preuve d'impossibilité à l'unique échiquier fixé de 8 × 8 cases.
 
-Pour comparer, le nombre d'atomes dans l'univers observable est estimé à dix puissance quatre-vingts. Le nombre de Shannon est donc dix puissance quarante fois plus grand. Si on associait chaque partie d'échecs à un atome, il faudrait dix puissance quarante univers pour les contenir tous.
+Les classes de complexité comparent des familles de problèmes. Elles ne classent pas le nombre fixe de positions d'une seule instance comme s'il s'agissait d'une variable tendant vers l'infini.
 
-En notation grand O, la **complexité** de la force brute est O(b puissance d), où b est le facteur de branchement et d la profondeur. C'est une **complexité exponentielle**. Cette classe de **complexité**, au **programme** de **terminale**, est la pire qu'on puisse rencontrer dans l'analyse d'un algorithme : elle bat largement la complexité polynomiale, et elle rend le calcul impraticable dès que la taille du problème dépasse quelques dizaines.
+## Ce que les limites pratiques permettent de conclure
 
-Pour mettre cela en perspective, comparons avec d'autres jeux résolus. Le morpion a un arbre d'environ cinq mille positions, résolu trivialement. Le puissance quatre a sept mille milliards de positions, résolu en mille neuf cent quatre-vingt-huit : les Blancs gagnent toujours avec un jeu parfait. Les dames ont environ dix puissance vingt positions, résolu en deux mille sept par Jonathan Schaeffer après dix-huit ans de calcul : c'est une nulle sous jeu parfait. Les échecs, à dix puissance cent vingt, sont cinquante ordres de grandeur au-dessus des dames. Aucune extrapolation raisonnable ne permet d'imaginer leur résolution.
+L'ordre de grandeur de Shannon suffit à montrer pourquoi une exploration naïve de suites jusqu'au bout est hors de portée pratique. Il ne prouve pas qu'aucun raisonnement, aucune réduction ou aucune organisation différente du calcul ne pourrait un jour établir la valeur initiale.
 
-## Les limites physiques du calcul
+Les comparaisons avec des limites physiques exigent des hypothèses sur les opérations, le matériel et les ressources. Un grand nombre seul n'est pas un théorème d'impossibilité universelle. Il n'est pas nécessaire d'invoquer une borne de Bremermann mal chiffrée pour expliquer la difficulté.
 
-Mais peut-être que dans le futur, avec des ordinateurs beaucoup plus puissants, on pourrait calculer ? La réponse mathématique est non, pour des raisons physiques.
+## Conclusion pour ta présentation
 
-Le physicien Hans Bremermann, dans les années mille neuf cent soixante, a calculé une **limite** théorique fondamentale appelée **limite de Bremermann**. Elle s'énonce ainsi : aucun ordinateur classique ne peut effectuer plus que mc² divisé par h opérations par seconde par kilogramme, où m est la masse, c la vitesse de la lumière, et h la constante de Planck. Le calcul donne environ deux puissance soixante-quatre opérations par gramme par seconde.
+Tu peux répondre : une valeur théorique existe dans le modèle fini, tandis que la recherche exhaustive naïve présente une explosion combinatoire. L'existence, le coût d'un algorithme donné et l'impossibilité de toute solution sont trois affirmations distinctes.
 
-À partir de cette borne, on peut estimer combien d'opérations pourraient être effectuées par un ordinateur de la taille de la Terre, fonctionnant pendant l'âge de l'univers. Le résultat est de l'ordre de dix puissance quatre-vingt-treize opérations. C'est-à-dire vingt-sept ordres de grandeur en dessous du nombre de Shannon.
+Développe cet enchaînement sur tes dix minutes de présentation, avec un petit arbre calculé à la main et le modèle $35^{80}$. Pour approfondir les exemples, consulte le [guide Maths](/fr/blog/grand-oral-maths-spe-echecs/).
 
-Autrement dit, même si on transformait toute la Terre en ordinateur, et qu'on le faisait fonctionner depuis le big bang jusqu'à aujourd'hui, on n'aurait pas effectué assez d'opérations pour explorer l'arbre des échecs par force brute. C'est une **limite** physique, pas une **limite** technologique : aucun progrès n'y changera quoi que ce soit.
+## Sources
 
-![Comparaison logarithmique : atomes dans l'univers (10^80), opérations maximales selon Bremermann (10^93) et nombre de Shannon (10^120) — l'écart de 27 ordres de grandeur rend la force brute physiquement impossible.](/images/sujet-zermelo-complexite-02-limite-bremermann.svg)
-
-Cette **limite** est ce qui rend les **mathématiques** d'AlphaZero si frappantes. Au lieu d'explorer l'arbre exhaustivement, AlphaZero apprend à reconnaître les bonnes positions par un réseau de neurones. Il joue au niveau humain non pas en calculant plus, mais en calculant différemment. C'est une réponse pragmatique au théorème de Zermelo : la solution existe en théorie, mais elle est inaccessible en pratique ; donc on construit des approximations qui marchent suffisamment bien.
-
-Cette idée se retrouve dans toutes les **mathématiques** appliquées. En cryptographie, on protège les **données** en utilisant des problèmes dont la solution existe mais nécessiterait des milliards d'années. En optimisation, on accepte des solutions sous-optimales parce que la solution optimale est inaccessible. En statistique, on travaille avec des estimateurs approximatifs parce que la vraie valeur est inconnue. Les **mathématiques** de la **complexité** ne nous disent pas seulement ce qu'on peut calculer : elles nous disent ce qu'on ne pourra jamais calculer.
-
-## Conclusion
-
-Pour répondre à ma **question** initiale, les **mathématiques** prouvent que les échecs ne seront jamais résolus par la force brute pour trois raisons combinées. D'abord, le théorème de Zermelo nous dit que le résultat existe, mais ne nous le donne pas. Ensuite, le nombre de Shannon, dix puissance cent vingt, dépasse toute capacité de stockage et de calcul concevable. Enfin, la **limite** de Bremermann fixe une borne physique au-delà de laquelle aucun ordinateur classique ne peut aller, et cette borne est largement insuffisante pour les échecs.
-
-L'ouverture la plus profonde, c'est que cette impossibilité n'est pas un échec des **mathématiques** : c'est leur réussite. Les **mathématiques** ne nous protègent pas des problèmes difficiles, elles nous disent précisément ce qu'on peut faire et ce qu'on ne peut pas faire. Connaître la **limite** est en soi une forme de victoire intellectuelle. Et c'est précisément parce qu'on connaît cette **limite** qu'on a inventé les approches alternatives, des moteurs symboliques aux réseaux de neurones. Les échecs, par leur résistance à la résolution, ont été un moteur des **mathématiques** appliquées du vingtième siècle.
-
-Je vous remercie pour votre attention et je suis prêt à répondre à vos **questions**.
-
----
-
-> **Pour aller plus loin :** [Sujet Grand Oral Maths sur la combinatoire](/fr/blog/sujet-grand-oral-maths-combinatoire/) · [Sujet Grand Oral Maths sur Elo et probabilités](/fr/blog/sujet-grand-oral-maths-elo-probabilites/) · [Hub méthodologie Grand Oral Maths](/fr/blog/grand-oral-maths-spe-echecs/)
+- Zermelo, E. (1913), *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels*, actes du congrès de 1912, traduction et étude dans Schwalbe, U. et Walker, P. (2001), *Zermelo and the Early History of Game Theory*, Games and Economic Behavior, 34, 123–137. [Texte et traduction](https://studylib.net/doc/28166551/zermelo-work).
+- Shannon, C. E. (1950), *Programming a Computer for Playing Chess*, Philosophical Magazine, 41, 256–275. [Article](https://d1yx3ys82bpsa0.cloudfront.net/chess/programming-a-computer-for-playing-chess.shannon.062303002.pdf).
+- Fraenkel, A. S. et Lichtenstein, D. (1981), *Computing a perfect strategy for n×n chess requires time exponential in n*, Journal of Combinatorial Theory A, 31, 199–214. [Article](https://kubokovac.eu/zlozitost/mat/chessExptime.pdf).
+- FIDE (2023), *FIDE Laws of Chess*, article 9.6. [Règles officielles](https://handbook.fide.com/chapter/e012023).
+- Ministère de l'Éducation nationale (2026), *Baccalauréat : comment se passe le Grand oral ?* [Format](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).
