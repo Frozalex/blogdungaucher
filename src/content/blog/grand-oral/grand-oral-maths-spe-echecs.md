@@ -61,7 +61,7 @@ Les quatre dimensions évaluées selon le Bulletin officiel :
 
 ### Le nombre de Shannon, argument d'ouverture idéal
 
-[Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon), mathématicien et père de la théorie de l'information, a calculé en 1950 le nombre de parties d'échecs distinctes. Son estimation : $10^{120}$. Pour l'ancrer dans le cours de terminale, voici le raisonnement de dénombrement que tu peux développer devant le jury.
+[Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon), mathématicien et père de la théorie de l'information, a proposé en 1950 une estimation de la taille de l’arbre des parties. Son ordre de grandeur : $10^{120}$. Pour l'ancrer dans le cours de terminale, voici le raisonnement de dénombrement que tu peux développer devant le jury.
 
 Au premier coup des Blancs : **20 coups possibles** (16 déplacements de pions + 4 sauts de cavaliers). Au premier coup des Noirs : **20 réponses**. Après un coup de chaque côté : $20 \times 20 = 400$ positions. Ce calcul utilise le **principe multiplicatif** vu en début de chapitre combinatoire.
 
@@ -97,10 +97,10 @@ Ce point peut être développé en 3 minutes devant le jury avec des exemples su
 
 Le [classement Elo](https://fr.wikipedia.org/wiki/Classement_Elo), inventé par le physicien [Arpad Elo](https://fr.wikipedia.org/wiki/Arpad_Elo), repose sur la **fonction logistique**, que l'on rencontre dans le programme de terminale sous le nom de fonction sigmoïde dans les cours sur les suites et les fonctions.
 
-La probabilité que le joueur A batte le joueur B est :
+Une approximation logistique du score attendu de A contre B est :
 
 $$
-\mathbb{P}(\text{A bat B}) = \frac{1}{1 + 10^{(R_B - R_A)/400}}
+\mathbb{E}(S_A) = \frac{1}{1 + 10^{(R_B - R_A)/400}}
 $$
 
 où $R_A$ et $R_B$ sont les cotes Elo respectives. Deux cas particuliers que le jury appréciera :
@@ -111,11 +111,11 @@ où $R_A$ et $R_B$ sont les cotes Elo respectives. Deux cas particuliers que le 
 
 Ces calculs sont exactement dans le registre de terminale : exposants, valeurs numériques, interprétation probabiliste. Tu peux les faire en direct au tableau.
 
-La fonction logistique est également visible dans le programme comme fonction d'activation des réseaux de neurones (AlphaZero) et comme modèle de croissance limitée en épidémiologie. Signaler ces ponts montre que tu as compris la **portée générale** du modèle.
+Ici, le score vaut 1 pour une victoire, 0,5 pour une nulle et 0 pour une défaite. Une espérance de 0,5 ne signifie donc pas 50 % de chances de victoire. La formule logistique est une approximation pédagogique ; le calcul FIDE utilise ses tables réglementaires.
 
 ### La loi binomiale appliquée aux tournois
 
-Un match de championnat du monde d'échecs se joue en **14 parties** (format actuel FIDE). Supposons que les deux joueurs soient d'égale force : $p = \mathbb{P}(\text{victoire à chaque partie}) = \tfrac{1}{2}$.
+Pour un exemple de cours, imagine **14 parties indépendantes**, sans nulles et entre deux joueurs de force constante. Ce modèle ne décrit pas exactement un championnat réel. Supposons que $p = \mathbb{P}(\text{victoire à chaque partie}) = \tfrac{1}{2}$.
 
 Le nombre de victoires de l'un des joueurs sur 14 parties suit une **loi binomiale** $\mathcal{B}(14,\tfrac{1}{2})$.
 
@@ -128,14 +128,14 @@ $$
 Quelques valeurs calculables en terminale :
 
 - $\mathbb{P}(X = 7) = \binom{14}{7} / 2^{14} \approx$ **21 %** (égalité parfaite)
-- $\mathbb{P}(X \geq 8) = \sum_{k=8}^{14} \binom{14}{k} / 2^{14} \approx$ **39,5 %** (remporter le match ou gagner au moins 8 parties)
+- $\mathbb{P}(X \geq 8) = \sum_{k=8}^{14} \binom{14}{k} / 2^{14} \approx$ **39,5 %** (gagner au moins 8 parties dans ce modèle)
 - $\mathbb{P}(X = 10) = \binom{14}{10} / 2^{14} \approx$ **6,1 %**
 
 L'**espérance** de cette variable aléatoire est $\mathbb{E}(X) = np = 7$. L'**écart-type** est $\sigma = \sqrt{npq} = \sqrt{14 \times \tfrac{1}{4}} = \sqrt{3{,}5} \approx 1{,}87$.
 
 Ces valeurs ont une interprétation concrète : un match équilibré finit en moyenne à 7-7, et environ 95 % des résultats se trouvent dans l'intervalle $7 \pm 2\sigma$, soit entre **3,3** et **10,7** parties gagnées. C'est l'**intervalle de fluctuation** vu en terminale.
 
-Pour aller plus loin, tu peux modéliser un match avec des joueurs d'égale force mais tenir compte des nulles (qui représentent environ 40 % des parties à haut niveau). Dans ce cas, $p_{\text{victoire}} \approx 0{,}30$ et $p_{\text{nulle}} \approx 0{,}40$, et on parle de **variable aléatoire à trois issues**, que tu peux décrire avec son espérance : $\mathbb{E} = 1 \times 0{,}30 + \tfrac{1}{2} \times 0{,}40 + 0 = 0{,}50$ (résultat attendu d'une partie entre égaux, quelle que soit la distribution victoire/nulle/défaite).
+Pour aller plus loin, tu peux modéliser un match avec des joueurs d'égale force mais tenir compte des nulles (en choisissant, pour l’exemple, 40 % de nulles). Dans ce cas, $p_{\text{victoire}} \approx 0{,}30$ et $p_{\text{nulle}} \approx 0{,}40$, et on parle de **variable aléatoire à trois issues**, que tu peux décrire avec son espérance : $\mathbb{E} = 1 \times 0{,}30 + \tfrac{1}{2} \times 0{,}40 + 0 = 0{,}50$ (résultat attendu d'une partie entre égaux, quelle que soit la distribution victoire/nulle/défaite).
 
 ### Espérance et écart-type dans la gestion d'une carrière
 
@@ -163,7 +163,7 @@ $$
 
 où :
 - $u_n$ est la cote après $n$ parties
-- $K$ est le **coefficient d'ajustement** ($K = 32$ pour les débutants, $K = 16$ pour les joueurs établis, $K = 10$ pour les joueurs de plus de 2400)
+- $K$ est le **coefficient d'ajustement** ($K = 40$ pour un nouveau joueur jusqu’à 30 parties, $K = 20$ pour les autres joueurs sous 2400, $K = 10$ après avoir atteint 2400 ; des dispositions particulières s’appliquent aux jeunes et au nombre de parties)
 - $r_n$ est le **résultat réel** de la $(n+1)$-ième partie : $1$ (victoire), $\tfrac{1}{2}$ (nulle), $0$ (défaite)
 - $p_n$ est la **probabilité de victoire prédite** par la formule logistique avant la partie
 
@@ -445,6 +445,11 @@ Chaque sujet a son propre bouton PDF en haut de page.
 
 ### Sources et références
 
+- FIDE (2024). *FIDE Rating Regulations effective from 1 March 2024*. [Règlement, § 8](https://handbook.fide.com/chapter/B022024) : score attendu et coefficients K utilisés dans cet exemple.
+- Ministère de l’Éducation nationale (2026). *Baccalauréat : comment se passe le Grand oral ?* [Présentation officielle](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028) : dix minutes d’exposé et dix minutes d’échange.
+- Fraenkel, A. S., & Lichtenstein, D. (1981). *Computing a perfect strategy for n×n chess requires time exponential in n*. Journal of Combinatorial Theory, Series A. [Texte intégral](https://kubokovac.eu/zlozitost/mat/chessExptime.pdf) : résultat EXPTIME cité dans la partie algorithmique.
+
+
 - **Bulletin officiel - Note de service 2020-014.** [Modalités du Grand Oral au baccalauréat général.](https://www.education.gouv.fr/bo/) (Cadre réglementaire de l'**épreuve**.)
 - **Shannon, C. E. (1950).** *Programming a Computer for Playing Chess.* *Philosophical Magazine*, 41(314). (Calcul du nombre de parties possibles, fondement du dénombrement.)
 - **Zermelo, E. (1913).** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* Congrès international des mathématiciens. (Théorème fondamental.)
@@ -455,4 +460,4 @@ Chaque sujet a son propre bouton PDF en haut de page.
 - **Schaeffer, J., et al. (2007).** *Checkers Is Solved.* *Science*, 317(5844). (Résolution complète des dames, **exemple** de jeu résolvable.)
 - **Silver, D., et al. (2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero, ouverture NSI.)
 - **Lichess Open Database.** [lichess.org/database](https://database.lichess.org). (Base de plus de 4 milliards de parties pour applications statistiques.)
-- **FIDE - Handbook (2024).** [fide.com/regulations](https://www.fide.com/regulations). (Règlement officiel du calcul de la cote Elo.)
+
