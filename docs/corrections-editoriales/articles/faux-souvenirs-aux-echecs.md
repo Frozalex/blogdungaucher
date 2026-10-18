@@ -8,3 +8,8 @@
 - [Brewin et Andrews 2017](https://onlinelibrary.wiley.com/doi/10.1002/acp.3220)
 
 SEO, date et slug conservés. Aucun marqueur « À VÉRIFIER PAR LUC » ajouté.
+
+## Contrôle transversal final
+
+Promesse future remplacée par lien existant ; faux souvenir non assimilé à une pathologie, conformément aux études citées.
+

@@ -145,7 +145,7 @@ Loftus et Palmer montrent un effet de formulation dans une expérience précise.
 
 ---
 
-*Cet article fait partie d'une série sur la psychologie appliquée aux échecs. Un article à venir traitera de la mémoire reconstructive, c'est-à-dire du mécanisme normal dont les faux souvenirs sont la pathologie. Voir aussi [analyser ses parties](/fr/blog/analyser-ses-parties/) et [le biais de confirmation aux échecs](/fr/blog/biais-de-confirmation-aux-echecs/).*
+*Cet article fait partie d'une série sur la psychologie appliquée aux échecs. [La mémoire reconstructive](/fr/blog/memoire-reconstructive-aux-echecs/) décrit aussi comment un souvenir peut se modifier ; un faux souvenir n'est pas nécessairement le signe d'une pathologie. Voir aussi [analyser ses parties](/fr/blog/analyser-ses-parties/) et [le biais de confirmation aux échecs](/fr/blog/biais-de-confirmation-aux-echecs/).*
 
 ## Sources
 
