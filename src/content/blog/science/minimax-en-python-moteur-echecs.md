@@ -2,7 +2,7 @@
 title: "Minimax en Python : le moteur commence à voir venir les coups"
 excerpt: >-
   Le moteur glouton mettait son adversaire pat deux fois sur trois. Minimax corrige cela en supposant
-  que l'adversaire joue bien. Vingt lignes suffisent, et le moteur trouve alors tous les mats en deux.
+  que l'adversaire joue bien. Vingt lignes suffisent, et le moteur trouve les mats en deux du jeu d'essai.
   Au prix d'une explosion combinatoire qui l'arrête net à la profondeur suivante.
 publishDate: "2027-07-13"
 category: science
@@ -24,7 +24,7 @@ seoDescription: >-
   Coder l'algorithme minimax en Python pour un moteur d'échecs : récursion, scores de mat, distance au
   mat, ordre des tests, et pourquoi la profondeur 5 devient hors de portée sans élagage.
 keyTakeaways:
-  - Minimax suppose que l'adversaire joue son meilleur coup. C'est cette hypothèse, et non l'évaluation, qui fait disparaître les pats accidentels.
+  - Minimax compare les réponses adverses ; il doit aussi reconnaître le pat et lui attribuer sa valeur de nulle.
   - Un score de mat doit intégrer la distance à la racine, sinon le moteur voit le mat sans jamais le porter.
   - Le test « aucun coup légal » doit précéder la coupure de profondeur, sans quoi les mats à l'horizon sont évalués comme des positions ordinaires.
   - Sur 34 mats forcés en un et deux coups, le moteur les trouve tous.
@@ -39,7 +39,7 @@ faq:
   - question: "Pourquoi faut-il intégrer la distance dans le score de mat ?"
     answer: >-
       Sans elle, tous les mats valent la même chose, et le moteur n'a aucune raison de préférer mater en
-      un coup plutôt qu'en trois. En pratique il tourne en rond : il voit le mat, joue un coup qui le
+      un coup plutôt qu'en trois. Il risque alors de retarder le mat : il voit le mat, joue un coup qui le
       conserve sans s'en rapprocher, et recommence indéfiniment. Compter <code>MAT - distance</code>
       rend le mat proche strictement préférable.
   - question: "À quelle profondeur faut-il chercher pour trouver un mat en 2 ?"
@@ -75,7 +75,7 @@ Formellement, c'est une récurrence sur la profondeur restante :
 
 $$\text{minimax}(p, d) = \begin{cases} \text{éval}(p) & \text{si } d = 0 \\ \max_{c} \text{minimax}(\text{succ}(p,c), d-1) & \text{si Blanc joue} \\ \min_{c} \text{minimax}(\text{succ}(p,c), d-1) & \text{si Noir joue} \end{cases}$$
 
-Et le pat disparaît tout seul, sans qu'on ait à en parler. Quand le glouton envisageait de rafler la dernière pièce noire, il évaluait la position à +2800 et s'arrêtait là. Minimax pousse un demi-coup plus loin, constate que l'adversaire n'a alors aucun coup légal, reconnaît un pat, et lui attribue un score de **zéro**. Le coup qui menait au pat devient soudain le pire de tous.
+Le pat peut alors être évité si une meilleure issue est visible dans l'arbre. Quand le glouton envisageait de rafler la dernière pièce noire, il évaluait la position à +2800 et s'arrêtait là. Minimax pousse un demi-coup plus loin, constate que l'adversaire n'a alors aucun coup légal, reconnaît un pat, et lui attribue un score de **zéro**. Le coup qui mène au pat vaut zéro : il est moins bon qu'une victoire reconnue, mais peut être meilleur qu'une défaite.
 
 ## Le code
 
@@ -131,7 +131,7 @@ Cent mille centièmes de pion, soit mille pions. Il faut que le score d'un mat �
 
 C'est le paramètre `ply`, et c'est le plus subtil des trois. Le score n'est pas `MAT` mais `MAT - ply`, où `ply` est la distance à la racine.
 
-Sans lui, tous les mats valent exactement la même chose, et le moteur n'a **aucune raison de préférer mater en un coup plutôt qu'en trois**. En pratique, il tourne en rond : il voit le mat, joue un coup qui le conserve sans s'en rapprocher, voit à nouveau le mat, et recommence. C'est le comportement qui rend fou, parce que le moteur annonce fièrement un mat pendant cinquante coups sans jamais le porter, jusqu'à la nulle par répétition.
+Sans lui, tous les mats valent exactement la même chose, et le moteur n'a **aucune raison de préférer mater en un coup plutôt qu'en trois**. Il risque alors de retarder le mat : il voit le mat, joue un coup qui le conserve sans s'en rapprocher, voit à nouveau le mat, et recommence. C'est le comportement qui rend fou, parce que le moteur annonce fièrement un mat pendant cinquante coups sans jamais le porter, jusqu'à la nulle par répétition.
 
 ## Ce que le moteur voit maintenant
 
@@ -200,7 +200,7 @@ Tu auras remarqué que le test s'arrête aux mats en deux coups, alors que le je
 
 Un mat en trois demande une recherche à profondeur 5. J'ai lancé la mesure sur **une seule** de ces neuf positions, et je l'ai interrompue au bout de plusieurs minutes sans qu'elle ait abouti. L'ordre de grandeur se déduit de la ligne précédente : deux demi-coups de profondeur en plus multiplient le travail par environ 300, donc les 78 secondes du lot des mats en deux deviennent plusieurs heures. Pour neuf positions. Sur un moteur qui ne fait rien d'autre.
 
-Les mats en trois ne sont donc pas hors de portée du programme : ils sont hors de portée de **cet algorithme**. Ils reviendront à l'article suivant, où ils passeront en quelques secondes.
+Les mats en trois demandent trop de temps dans ces mesures ; cela ne signifie pas que tout mat en trois soit hors de portée de minimax. Ils reviendront à l'article suivant, où ils passeront en quelques secondes.
 
 C'est la limite structurelle de minimax, et elle n'a rien à voir avec Python. Le facteur de branchement aux échecs est d'une trentaine de coups en moyenne : chaque demi-coup supplémentaire multiplie l'arbre par trente. Un moteur qui cherche à profondeur $d$ visite de l'ordre de $30^d$ positions.
 
@@ -211,8 +211,14 @@ C'est la limite structurelle de minimax, et elle n'a rien à voir avec Python. L
 | 3 | 9 322 |
 | 4 | 206 603 |
 
-Et pourtant, les moteurs cherchent couramment à vingt demi-coups. $30^{20}$ est un nombre à trente chiffres ; l'univers n'a pas assez d'atomes. Ils ne visitent donc évidemment pas tout l'arbre.
+Et pourtant, les moteurs cherchent couramment à vingt demi-coups. $30^{20}$ vaut environ $3,49\times10^{29}$ : parcourir naïvement un tel arbre reste hors de portée de ce tutoriel. Ils ne visitent donc évidemment pas tout l'arbre.
 
 La clé n'est pas de chercher plus vite. Elle est de **ne pas chercher** l'écrasante majorité des branches, en démontrant qu'elles ne peuvent pas contenir le meilleur coup. Et le plus beau est que cette démonstration ne coûte presque rien, et qu'elle ne change **jamais** le résultat.
 
-**Prochain article :** négamax et l'élagage alpha-bêta. Le même coup joué, les mêmes scores, un arbre dix fois plus petit.
+**Prochain article :** négamax et l'élagage alpha-bêta. Un coup optimal selon le même arbre, les mêmes scores, un arbre dix fois plus petit.
+
+## Sources
+
+Russell et Norvig exposent minimax, ses valeurs terminales et la coupure heuristique utilisés dans cette implémentation.
+
+- Russell, S. et Norvig, P. (s. d.), Adversarial Search, chapitre des auteurs, [texte](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
