@@ -84,13 +84,13 @@ En pratique, commence par une liste de coups candidats, puis cherche une répons
 
 ## La logique épistémique et ce que tu ne sais pas
 
-Une extension importante de la logique modale est la [logique épistémique](https://fr.wikipedia.org/wiki/Logique_%C3%A9pist%C3%A9mique), qui s'occupe non pas du possible et du nécessaire en général, mais de ce que les agents savent ou ignorent. Aux échecs, cette dimension est pertinente dans le cadre de la préparation d'ouverture.
+La logique épistémique étudie ce que des agents savent ou croient. Comme l’explique la Stanford Encyclopedia of Philosophy, son accessibilité représente les situations compatibles avec l’information d’un agent ; ce n’est pas la même relation que « jouer un coup légal ».
 
-Quand tu prépares une nouveauté théorique, tu crées une asymétrie épistémique : tu peux connaître une suite que l’adversaire n’a peut-être pas étudiée. Dans les termes de la logique épistémique, tu as accès à des mondes possibles (les suites de ta préparation) que l'adversaire ne peut pas évaluer au même rythme. Cette asymétrie d'accès aux mondes possibles est une arme stratégique.
+Une nouveauté d’ouverture peut te donner un avantage de préparation : tu as étudié une suite que ton adversaire doit découvrir à la pendule. Les coups restent pourtant légaux pour les deux joueurs. Ne pas avoir analysé une variante ne la rend pas inaccessible sur l’échiquier.
 
-![Asymétrie épistémique en logique modale : le joueur préparé accède à W₄ (nouveauté) inaccessible à l'adversaire — K_A(nouveauté)=✓ vs K_B(nouveauté)=✗.](/images/logique-modale-03-epistemique-preparation.svg)
+![Distinction entre les coups légaux, identiques pour une même position, et la préparation personnelle de chaque joueur.](/images/logique-modale-03-epistemique-preparation.svg)
 
-La surprise tactique repose sur la même logique : jouer un coup que l'adversaire ne croit pas possible ($\neg \Diamond_{adversaire} \text{coup}$), mais qui est légal et fort. Souvent, les sacrifices de pièces créent exactement cette situation : l'adversaire n'avait pas calculé cette possibilité comme viable.
+L’analogie a aussi une limite : les modèles classiques de connaissance supposent souvent une clôture par conséquence logique, alors qu’un joueur humain ne calcule pas toutes les conséquences des règles. La surprise tactique relève ici d’une limite d’analyse, sans qu’une formule modale simple en décrive automatiquement le mécanisme.
 
 ## Raisonnement modal et niveaux de jeu
 
@@ -103,6 +103,8 @@ La profondeur utile dépend de la position. Il n’existe pas ici de nombre de c
 ---
 
 ## Sources
+
+- Rendsvig, R., Symons, J., & Wang, Y. (2025, édition). *Epistemic Logic*. Stanford Encyclopedia of Philosophy. [Texte](https://plato.stanford.edu/entries/logic-epistemic/).
 
 - Garson, J. (2023, révision). *Modal Logic*. Stanford Encyclopedia of Philosophy. [Texte](https://plato.stanford.edu/entries/logic-modal/) : opérateurs, dualité et sémantique relationnelle.
 - Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*. Pearson. [Recherche adversariale](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf) : alternance des choix MAX/MIN utilisée pour l’exemple.
