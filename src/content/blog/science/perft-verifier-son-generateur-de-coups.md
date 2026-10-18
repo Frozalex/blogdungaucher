@@ -60,7 +60,7 @@ faq:
 
 Ton générateur de coups produit exactement les bons coups sur 1 498 positions réelles. C'est ce que [l'article précédent](/fr/blog/generer-les-coups-legaux-en-python/) a établi, sur 41 648 coups comparés un par un à Stockfish.
 
-Ça ne prouve presque rien.
+Ce contrôle apporte une information utile, mais ne couvre pas toutes les positions ni toutes les profondeurs.
 
 Un générateur peut être exact sur toutes les positions qu'on lui soumet et faux sur celles qu'on ne lui soumet pas. Pire : il peut être exact à la profondeur 1 et faux à la profondeur 2, s'il produit une **position** légèrement fausse dont les coups, eux, sont correctement générés. Un droit de roque oublié, un compteur mal remis, et l'erreur ne se manifeste qu'un étage plus bas.
 
@@ -101,7 +101,7 @@ def perft(echiquier, profondeur):
     return total
 ```
 
-Une seule finesse, le cas `profondeur == 1`. On pourrait jouer chaque coup pour compter 1 à chaque fois, mais le dernier étage de l'arbre est de très loin le plus peuplé : à `perft(5)` depuis la position de départ, il contient 4,8 millions de positions sur 5 millions au total. Renvoyer directement `len(coups)` économise donc l'essentiel des `jouer` / `annuler`. Cette astuce s'appelle le comptage en gros, *bulk counting*, et elle divise le temps par deux environ.
+Une seule finesse, le cas `profondeur == 1`. On pourrait jouer chaque coup pour compter 1 à chaque fois, mais le dernier étage de l'arbre est de très loin le plus peuplé : à `perft(5)` depuis la position de départ, il contient 4,8 millions de positions sur 5 millions au total. Renvoyer directement `len(coups)` économise donc l'essentiel des `jouer` / `annuler`. Cette astuce s'appelle le comptage en gros, *bulk counting*, et son gain dépend de l'implémentation et de la position.
 
 ## La position de départ est le pire des tests
 
@@ -204,7 +204,7 @@ Quarante et un millions huit cent douze mille six cent soixante-huit positions �
 
 Chaque nombre de la colonne « attendu » a été demandé à Stockfish au moment du test, pas recopié dans le script. Une valeur de référence recopiée à la main est une valeur qu'on peut recopier de travers, et un test qui valide une erreur est pire que pas de test du tout.
 
-Les profondeurs ne sont pas les mêmes partout, et c'est un aveu de faiblesse assumé. À 60 000 positions par seconde, `perft(5)` sur Kiwipete demanderait 193 millions de positions, soit près d'une heure ; `perft(6)` depuis la position de départ, une demi-heure. On choisit donc pour chaque position la profondeur la plus grande qui garde le total sous les onze minutes. Le jeu de positions couvre les familles de bugs, ce qui compte davantage que la profondeur brute : c'est ce que la démonstration du bug de sous-promotion vient de montrer, puisqu'il passait inaperçu à toutes les profondeurs de la position de départ.
+Les profondeurs ne sont pas les mêmes partout, et c'est un aveu de faiblesse assumé. À 60 000 positions par seconde, `perft(5)` sur Kiwipete demanderait 193 millions de positions, soit près d'une heure ; `perft(6)` depuis la position de départ, une demi-heure. On choisit donc pour chaque position la profondeur la plus grande qui garde le total sous les onze minutes. Le jeu de positions couvre les familles de bugs, ce qui compte davantage que la profondeur brute : c'est ce que la démonstration du bug de sous-promotion vient de montrer, puisqu'il passait inaperçu aux faibles profondeurs vérifiées depuis la position de départ.
 
 L'option `--rapide` retire une profondeur à chaque position et ramène l'ensemble à une vingtaine de secondes. C'est celle qu'on lance après chaque modification ; la version complète, une fois de temps en temps.
 
@@ -212,13 +212,13 @@ L'option `--rapide` retire une profondeur à chaque position et ramène l'ensemb
 
 Un test qui prétend tout prouver ne prouve rien. Voici précisément ce que celui-ci laisse de côté.
 
-**La règle des cinquante coups et la nulle par répétition.** Perft compte des positions, il ne s'arrête jamais sur une nulle. Notre compteur de demi-coups pourrait être complètement faux sans qu'aucun `perft` ne bronche. C'est pour cela que la deuxième épreuve de l'article 2, l'aller-retour `jouer` / `annuler` sur la FEN complète, reste nécessaire : elle, elle regarde ce compteur.
+**La règle des cinquante coups et la nulle par répétition.** Perft compte des suites de coups légaux et ignore les règles de nulle par compteur ou répétition. Notre compteur de demi-coups pourrait être complètement faux sans qu'aucun `perft` ne bronche. C'est pour cela que la deuxième épreuve de l'article 2, l'aller-retour `jouer` / `annuler` sur la FEN complète, reste nécessaire : elle, elle regarde ce compteur.
 
 **La détection du mat et du pat.** Perft s'en accommode naturellement, puisqu'une position sans coup légal contribue simplement zéro. Savoir si c'est un mat ou un pat est un autre problème, et c'est celui du prochain article.
 
 **Tout ce qui touche à la qualité du jeu.** Évaluation, recherche, gestion du temps : perft n'en sait rien et n'en saura jamais rien.
 
-Ce que perft prouve, en revanche, il le prouve complètement : à ces profondeurs, sur ces six positions, ton générateur produit exactement l'ensemble des coups légaux, ni un de plus, ni un de moins. C'est la seule brique du moteur dont on peut affirmer cela.
+Un total correct indique un accord de comptage sur les cas vérifiés. Il ne garantit pas l'égalité des ensembles de coups : des omissions et des ajouts peuvent se compenser. Pour renforcer le contrôle, compare les listes de coups et les états obtenus, en plus des sous-totaux de divide.
 
 ## La vitesse, maintenant qu'on peut la mesurer
 
@@ -226,7 +226,7 @@ Un mot sur le chiffre annoncé au premier article, qu'on peut enfin vérifier.
 
 Notre moteur tourne entre 60 000 et 90 000 positions par seconde. Stockfish, sur la même machine, fait `perft(6)` depuis la position de départ, soit 119 060 324 positions, en 1,60 seconde : environ 74 millions par seconde.
 
-Un facteur mille, comme annoncé. Il se répartit à peu près en trois tiers : Python contre C++, la mailbox contre les bitboards, et notre filtre de légalité paresseux qui joue puis annule chaque coup candidat pour vérifier qu'il est légal. Ce dernier tiers est le seul sur lequel on peut agir sans changer de langage, et l'article 9 s'y attaquera.
+Ce rapport décrit les mesures rapportées dans cet exemple. Il ne permet pas de répartir causalement l'écart entre langage, représentation et filtre de légalité : il faudrait mesurer chaque modification séparément. Le [travail sur l'ordonnancement des coups](/fr/blog/ordonnancement-des-coups-moteur-echecs/) aborde d'autres choix d'implémentation.
 
 Pour l'instant, la vitesse n'a aucune importance. Un générateur rapide et faux est un générateur faux.
 
