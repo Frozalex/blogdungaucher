@@ -21,20 +21,19 @@ tags:
   - informatique théorique
 keyTakeaways:
   - >-
-    Le nombre de positions légales d'échecs vaut environ 4,8×10^44 (dénombrement de John Tromp). Le "nombre de Shannon",
+    Le nombre de positions légales d'échecs vaut environ 4,8×10^44 (estimation de John Tromp). Le "nombre de Shannon",
     lui, désigne autre chose : les ~10^120 parties possibles. L'univers observable contient environ 10^80 atomes.
-    L'espace de recherche exhaustif est impossible par définition.
+    Une exploration exhaustive est hors de portée des moyens de calcul actuels.
   - >-
     Deep Blue battait Kasparov en 1997 par force brute augmentée : évaluation de 200 millions de positions par seconde +
     heuristiques d'élagage (alpha-beta pruning). Un programme basé sur des règles humaines explicites, poussé à
     l'extrême.
   - >-
-    AlphaZero (2017) n'a reçu que les règles du jeu et a joué contre lui-même 44 millions de parties en 9 heures. Il a
-    développé des concepts de jeu inconnus des théoriciens, sans jamais avoir vu une base de données de parties
-    humaines.
+    AlphaZero (2017) n'a reçu que les règles du jeu et a appris par autojeu, sans base de parties humaines. Le préprint de Silver et collègues
+    (2017) rapporte un dépassement de Stockfish après quatre heures dans son protocole d’évaluation. Ce résultat
+    dépend du matériel et des conditions du match.
   - >-
-    La complexité des échecs est EXPTIME-complète dans la version généralisée (échiquier n×n) : une classe de complexité
-    supérieure à NP, ce qui signifie qu'aucun algorithme polynomial ne peut résoudre les échecs de façon générale.
+    La complexité des échecs est EXPTIME-complète dans la version généralisée (échiquier n×n) : un problème dont la difficulté exclut un algorithme polynomial général, ce qui signifie qu'aucun algorithme polynomial ne peut résoudre les échecs de façon générale.
   - >-
     La compréhension humaine des échecs n'est pas une version dégradée de la recherche arborescente : c'est un type de
     cognition radicalement différent, basé sur la reconnaissance de patterns et l'intuition, que les IA basées sur le
@@ -53,26 +52,24 @@ faq:
     answer: >-
       C'est la borne basse que Claude Shannon a donnée en 1950 au nombre de parties d'échecs possibles : environ
       10^120. Attention à ne pas le confondre avec le nombre de <em>positions</em> légales, bien plus petit, que
-      Shannon estimait dans le même article autour de 10^43 et que le dénombrement de John Tromp place depuis
+      Shannon estimait dans le même article autour de 10^43 et que le estimation de John Tromp place depuis
       autour de 4,8×10^44. Pour donner une échelle : l'univers observable contient environ 10^80 atomes, soit un nombre
       négligeable devant 10^120. Le nombre de Shannon illustre pourquoi une recherche exhaustive de l'arbre de jeu
-      est physiquement impossible, même avec des ordinateurs infiniment rapides.
+      est hors de portée des ordinateurs actuels. Ce constat pratique ne prouve pas une impossibilité mathématique de résoudre le jeu.
   - question: Comment Deep Blue battait-il Kasparov s'il ne pouvait pas tout calculer ?
     answer: >-
       Par deux techniques combinées. L'alpha-beta pruning (élagage alpha-bêta) élague intelligemment l'arbre de
       recherche : si une branche ne peut pas mener à un résultat meilleur que ce qu'on a déjà trouvé, elle est
       abandonnée. Cela réduit exponentiellement l'espace de recherche. Combiné à une fonction d'évaluation de position
       très élaborée (développée avec des Grands Maîtres), Deep Blue évaluait environ 200 millions de positions par
-      seconde et cherchait typiquement entre 6 et 12 demi-coups de profondeur, jusqu'à une quarantaine dans
+      seconde et utilisait une recherche sélective approfondie dans
       certaines lignes forcées. C'est impressionnant, mais ce n'est pas une
       résolution complète, c'est une heuristique très puissante.
-  - question: AlphaZero a-t-il vraiment appris les échecs en 9 heures ?
+  - question: À quelle vitesse AlphaZero a-t-il dépassé Stockfish ?
     answer: >-
-      Oui, dans un sens précis : à partir de zéro connaissance humaine (seulement les règles), en jouant contre lui-même
-      avec de l'apprentissage par renforcement et des réseaux de neurones profonds, AlphaZero a atteint un niveau
-      dépassant Stockfish (le meilleur moteur 'classique') après 9 heures d'entraînement sur du matériel spécialisé
-      (TPUs Google). Ce qui est remarquable n'est pas seulement la vitesse mais le style de jeu développé : dynamique,
-      sacrificiel, avec des intuitions positionnelles que les théoriciens n'avaient pas codifiées.
+      Dans le protocole de Silver et collègues (2017), la courbe d’évaluation dépasse Stockfish après quatre heures.
+      L’entraînement utilise de nombreux TPUs et des parties d’autojeu. Ce délai ne se transpose pas à un ordinateur
+      personnel et ne mesure pas une compréhension humaine du jeu.
   - question: Les échecs sont-ils 'résolus' mathématiquement ?
     answer: >-
       Non. Un jeu est 'résolu' quand on peut calculer la décision optimale depuis n'importe quelle position. Les dames
@@ -81,19 +78,17 @@ faq:
       peut jouer aux échecs mieux que n'importe quel humain, mais pas de façon prouvablement parfaite.
   - question: Pourquoi les joueurs humains arrivent-ils encore à jouer aux échecs malgré cette complexité ?
     answer: >-
-      Parce que les humains ne cherchent pas dans l'espace de toutes les positions. Ils reconnaissent des patterns,
-      élaguent intuitivement les coups mauvais, et raisonnent principalement à partir de concepts (pression, structure
-      de pions, activité des pièces) plutôt que de calcul brut. Un Grand Maître calcule rarement plus de 3-5 coups en
-      profondeur dans une position normale : il en élimine 95% par intuition avant même de commencer à calculer. C'est
-      un type de traitement radicalement différent de la recherche arborescente, et il a ses propres forces (créativité,
-      intuition positionnelle) et faiblesses (calcul moins précis sous pression).
+      Tu n’as pas besoin de résoudre le jeu pour choisir un coup. Tu peux comparer quelques variantes,
+      reconnaître une structure familière et évaluer les conséquences de tes choix. Cela permet de jouer,
+      sans garantir une décision optimale.
+
 ---
 
 En 1950, Claude Shannon (le fondateur de la théorie de l'information) publiait un article intitulé "Programming a Computer for Playing Chess". Il n'avait pas encore écrit les programmes. Il calculait si c'était seulement *possible*.
 
 Sa conclusion : le nombre de positions légales d'échecs tourne autour de 10^43, et le nombre de parties distinctes possibles est bien plus grand encore, au moins 10^120. C'est ce second nombre qu'on appelle aujourd'hui le nombre de Shannon. Une recherche exhaustive de l'arbre de jeu complet dépasserait les capacités de n'importe quel ordinateur physiquement réalisable : pas par manque de vitesse, mais parce que le temps nécessaire dépasserait l'âge de l'univers.
 
-Son estimation des positions était une approximation grossière, qui incluait des configurations illégales. Elle a depuis été resserrée : le travail de dénombrement de John Tromp place le nombre de positions légales autour de 4,8×10^44.
+Son estimation des positions était une approximation grossière, qui incluait des configurations illégales. Elle a depuis été resserrée : le travail de estimation de John Tromp place le nombre de positions légales autour de 4,8×10^44.
 
 Il fallait donc trouver autre chose.
 
@@ -105,20 +100,20 @@ Les classes les plus connues :
 - **P** : problèmes solubles en temps polynomial (rapides)
 - **NP** : problèmes dont les solutions peuvent être *vérifiées* en temps polynomial (potentiellement lents à résoudre, rapides à vérifier)
 - **PSPACE** : problèmes solubles avec de la mémoire polynomiale (même si le temps est exponentiel)
-- **EXPTIME** : problèmes qui nécessitent un temps exponentiel dans le pire cas
+- **EXPTIME** : problèmes décidables en temps au plus exponentiel, pour un polynôme de la taille de l’entrée
 - **EXPSPACE** : problèmes nécessitant une mémoire exponentielle, la plus redoutable des cinq (elle contient EXPTIME)
 
-Les échecs généralisés (sur un échiquier n×n au lieu de 8×8) appartiennent à la classe **EXPTIME-complets** selon les résultats de Fraenkel et Lichtenstein (1981). Cela signifie que la résolution exacte des échecs sur un échiquier arbitraire est, au sens formel, aussi difficile que les problèmes les plus durs de sa classe, et qu'aucun algorithme polynomial ne peut espérer les résoudre.
+Les échecs généralisés (sur un échiquier n×n au lieu de 8×8) constituent un problème **EXPTIME-complet** selon les résultats de Fraenkel et Lichtenstein (1981). Cela signifie que la résolution exacte des échecs sur un échiquier arbitraire est, au sens formel, aussi difficile que les problèmes les plus durs de sa classe, et qu'aucun algorithme polynomial ne peut espérer les résoudre.
 
 Pour les échecs sur échiquier 8×8 standard, la question est légèrement différente : la partie se termine toujours (règle des 50 coups, répétition), donc le problème est fini. Mais l'espace de recherche reste astronomique.
 
 ## L'arbre de jeu et la malédiction de l'explosion combinatoire
 
-Imagine l'arbre de jeu d'une partie d'échecs. À la racine, la position de départ. Après le premier coup des Blancs (20 possibles), 20 nœuds. Après le premier coup des Noirs (20 possibles), 400 nœuds. Après deux coups de chaque côté : environ 8 902 positions. Après cinq coups de chaque côté : environ 69 milliards.
+Imagine l'arbre de jeu d'une partie d'échecs. À la racine, la position de départ. Après le premier coup des Blancs (20 possibles), 20 nœuds. Après le premier coup des Noirs (20 possibles), 400 nœuds. Après deux coups de chaque côté, 197 281 suites légales de quatre demi-coups aboutissent aux feuilles de l’arbre. Il faut distinguer les suites de coups des positions distinctes : plusieurs suites peuvent mener à la même position. Le test de génération de coups de Stockfish vérifie, par exemple, 3 195 901 860 suites à sept demi-coups.
 
-Le facteur de branchement moyen d'une partie d'échecs est d'environ 35 (le nombre de coups légaux dans une position typique). La longueur moyenne d'une partie est d'environ 40 coups par joueur. L'arbre complet a donc approximativement 35^80 ≈ 10^123 nœuds.
+Le facteur de branchement moyen d'une partie d'échecs est d'environ 35 (le nombre de coups légaux dans une position typique). Si tu prends une partie hypothétique de 40 coups par joueur, ce modèle uniforme donne 35^80 ≈ 10^123,5 suites de 80 demi-coups. C’est un calcul illustratif, pas un dénombrement de l’arbre complet.
 
-C'est le **nombre de parties distinctes possibles**. Il dépasse de loin le nombre d'atomes dans l'univers observable (10^80). Même si chaque atome de l'univers était un ordinateur analysant un milliard de positions par seconde depuis le Big Bang, on n'aurait exploré qu'une fraction infinitésimale de cet espace.
+Ce modèle illustre l’explosion du **nombre de suites de coups**. Il dépasse de loin le nombre d'atomes dans l'univers observable (10^80). Même si chaque atome de l'univers était un ordinateur analysant un milliard de positions par seconde depuis le Big Bang, on n'aurait exploré qu'une fraction infinitésimale de cet espace.
 
 Cette explosion combinatoire explique pourquoi les premiers programmes d'échecs, dans les années 1950-1970, étaient si faibles malgré des ordinateurs de plus en plus puissants. La force brute seule ne pouvait pas fonctionner. Il fallait des heuristiques : des raccourcis intelligents qui sacrifient la garantie d'optimalité pour la praticabilité.
 
@@ -136,7 +131,7 @@ Combiné à une **fonction d'évaluation**, c'est-à-dire une formule qui estime
 
 Deep Blue n'était pas un programme subtil. C'était un chef-d'œuvre d'ingénierie brute appliqué aux heuristiques d'échecs.
 
-IBM avait construit des **puces spécialisées** (ASICs) conçues uniquement pour évaluer des positions d'échecs : des centaines en parallèle. Deep Blue évaluait entre 100 et 200 millions de positions par seconde selon le type de position. Avec un élagage alpha-bêta bien optimisé et des heuristiques d'ordonnancement sophistiquées, il cherchait typiquement entre 6 et 12 demi-coups de profondeur, et jusqu'à une quarantaine dans les lignes forcées ("recherche d'extension").
+IBM avait construit des **puces spécialisées** (ASICs) conçues uniquement pour évaluer des positions d'échecs : des centaines en parallèle. Deep Blue évaluait entre 100 et 200 millions de positions par seconde selon le type de position. Avec un élagage alpha-bêta bien optimisé et des heuristiques d'ordonnancement sophistiquées, il approfondissait sélectivement les variantes prometteuses.
 
 La fonction d'évaluation avait été développée avec l'aide de Grands Maîtres : elle codifiait explicitement des concepts comme la structure de pions, la sécurité du roi, l'activité des pièces, les cases faibles. Chaque concept était traduit en termes numériques, avec des poids ajustés par les ingénieurs.
 
@@ -148,37 +143,26 @@ Vingt ans plus tard, DeepMind présentait AlphaZero. La différence n'était pas
 
 AlphaZero n'avait reçu que les **règles du jeu** : quelles pièces existent, comment elles bougent, quand une partie se termine. Aucune base de données de parties humaines. Aucune heuristique explicitée. Aucun concept codifié par des Grands Maîtres.
 
-Il jouait contre lui-même : des millions de parties. À chaque partie, un réseau de neurones profond apprenait : quelles positions tendent à être gagnantes, quels coups tendent à être bons depuis quelles positions. Après **9 heures** d'entraînement sur des TPUs (processeurs spécialisés de Google), AlphaZero avait atteint un niveau qui dépassait Stockfish, le meilleur moteur "classique" de l'époque.
+Il jouait contre lui-même : des millions de parties. À chaque partie, un réseau de neurones profond apprenait : quelles positions tendent à être gagnantes, quels coups tendent à être bons depuis quelles positions. Après **quatre heures** d'entraînement sur des TPUs (processeurs spécialisés de Google), AlphaZero avait atteint un niveau qui dépassait Stockfish, le meilleur moteur "classique" de l'époque.
 
-Le style de jeu qu'AlphaZero avait développé fascinait les Grands Maîtres : dynamique, volontiers sacrificiel, avec des intuitions positionnelles que les théoriciens n'avaient jamais codifiées explicitement. AlphaZero cherchait nettement moins de positions que Stockfish (environ 80 000 par seconde contre 60 millions), mais chacune était évaluée par un réseau de neurones qui encodait une "intuition" apprise par l'expérience plutôt que par des règles explicites.
+Le style de jeu qu'AlphaZero avait développé fascinait les Grands Maîtres : dynamique, volontiers sacrificiel, avec des intuitions positionnelles que les théoriciens n'avaient jamais codifiées explicitement. AlphaZero cherchait nettement moins de positions que Stockfish (environ 80 000 par seconde contre 70 millions), mais chacune était évaluée par un réseau de neurones qui encodait une "intuition" apprise par l'expérience plutôt que par des règles explicites.
 
 Ce n'était plus de la recherche exhaustive améliorée. C'était quelque chose de structurellement différent : une approximation de l'intuition par apprentissage profond.
 
-## Ce que l'IA révèle sur la cognition humaine aux échecs
+## Ce que cette histoire change dans ta façon de regarder un moteur
 
-La trajectoire Deep Blue → AlphaZero révèle quelque chose d'important sur la nature de la cognition humaine aux échecs.
+Deep Blue et AlphaZero montrent deux façons de sélectionner les variantes et d’évaluer les positions. Leur succès ne signifie pas qu’ils ont résolu les échecs. Il ne prouve pas davantage qu’un réseau de neurones reproduit le fonctionnement du cerveau d’un grand maître.
 
-Deep Blue battait les humains en faisant *différemment* : plus de calcul brut, plus vite, plus profond. AlphaZero bat les humains en faisant quelque chose de *plus similaire* à ce que les humains font : de la reconnaissance de patterns, de l'évaluation intuitive, une recherche très élaguée dans l'arbre de jeu.
-
-Les études IRMf sur les joueurs d'échecs experts montrent que leur cerveau n'est pas un calculateur brut. Face à une position, un Grand Maître ne "calcule" pas d'abord toutes les variantes. Il **reconnaît** la position comme appartenant à une famille, identifie les thèmes clés, et n'explore en profondeur que 3 à 5 coups candidats maximum. La plupart des 35 coups légaux disponibles sont rejetés en quelques centièmes de secondes par un processus intuitif, avant même la réflexion consciente.
-
-Ce traitement (rapide, pattern-based, économique) est ce qu'AlphaZero reproduit mieux que Deep Blue. Et c'est probablement pourquoi AlphaZero a développé des concepts de jeu que les humains reconnaissent comme "beaux" ou "audacieux" : contrairement au jeu solide mais mécanique de Stockfish.
-
-La complexité algorithmique des échecs était si grande qu'il a fallu attendre non pas un ordinateur assez rapide pour la résoudre de force, mais un nouveau paradigme computationnel (l'apprentissage profond) pour approximer la cognition qui, depuis toujours, permettait aux humains de jouer malgré cette complexité.
-
-Shannon avait vu juste en 1950. La recherche exhaustive était impossible. La solution n'était pas de chercher plus vite. C'était d'apprendre à ne pas chercher.
-
----
-
-*Claude Shannon jouait lui-même aux échecs, avec un niveau "raisonnable" selon ses contemporains. Il aurait probablement trouvé ironique que la meilleure solution à son problème soit d'imiter non pas l'ordinateur, mais l'humain.*
+Pour toi, la distinction est utile : une analyse moteur propose des coups dans un budget de calcul donné. Elle ne fournit pas une preuve de la valeur exacte de la position initiale. L’explosion combinatoire explique la nécessité de sélectionner ; elle ne dit pas que toute méthode future de résolution est impossible.
 
 ## Sources
 
-- Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. **Philosophical Magazine**, Ser. 7, 41(314), 256-275. [PDF intégral](https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf) — l'article d'origine, où figurent les deux nombres : « there will be 10^120 variations to be calculated from the initial position » et « the number of possible positions […] roughly 10^43 ».
-- Tromp, J. (2021). *Chess Position Ranking* : dénombrement des positions légales. [tromp.github.io/chess/chess.html](https://tromp.github.io/chess/chess.html) — environ 4,8×10^44.
-- Fraenkel, A. S., & Lichtenstein, D. (1981). *Computing a perfect strategy for n×n chess requires time exponential in n*. **Journal of Combinatorial Theory, Series A**, 31(2), 199-214. DOI : [10.1016/0097-3165(81)90016-9](https://doi.org/10.1016/0097-3165(81)90016-9) — la preuve de l'EXPTIME-complétude. Référence bibliographique : le texte intégral n'est pas en accès libre.
-- Campbell, M., Hoane, A. J., & Hsu, F. (2002). *Deep Blue*. **Artificial Intelligence**, 134(1-2), 57-83. DOI : [10.1016/S0004-3702(01)00129-1](https://doi.org/10.1016/S0004-3702(01)00129-1) — les chiffres de vitesse et de profondeur de recherche viennent de là. Texte intégral non ouvert.
-- Silver, D., et al. (2018). *A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play*. **Science**, 362(6419), 1140-1144. DOI : [10.1126/science.aar6404](https://doi.org/10.1126/science.aar6404). Préprint en accès libre : [arXiv:1712.01815](https://arxiv.org/abs/1712.01815).
+- Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. Philosophical Magazine, 41, 256–275. [Article original, Computer History Museum](https://www.computerhistory.org/chess/doc-431614f453dde/) : estimation de l’arbre et recherche sélective.
+- Tromp, J. (2021). *Number of legal chess positions*. [Page de l’auteur](https://tromp.github.io/chess/chess.html) : estimation d’environ 4,8 × 10^44 positions légales.
+- Fraenkel, A. S., & Lichtenstein, D. (1981). *Computing a perfect strategy for n×n chess requires time exponential in n*. Journal of Combinatorial Theory, Series A. [Texte intégral des auteurs](https://kubokovac.eu/zlozitost/mat/chessExptime.pdf) : variante généralisée EXPTIME-complète.
+- IBM (sans date). *Deep Blue*. [Histoire du projet](https://www.ibm.com/history/deep-blue) : matériel, vitesse d’évaluation et matchs contre Kasparov.
+- Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Préprint intégral](https://arxiv.org/html/1712.01815v1) : autojeu, comparaison avec Stockfish et conditions expérimentales.
+- Équipe Stockfish (sans date). *tests/perft.sh*. GitHub. [Tests du générateur de coups](https://github.com/official-stockfish/Stockfish/blob/master/tests/perft.sh).
 
 ## Pour aller plus loin
 
