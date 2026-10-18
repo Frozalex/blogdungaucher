@@ -91,7 +91,7 @@ echecs-vs-musique-cerveau	science	À traiter dans cette passe
 effet-placebo-aux-echecs	science	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
 faux-souvenirs-aux-echecs	science	À traiter dans cette passe
 fonction-evaluation-materiel-python	science	À traiter dans cette passe
-generer-les-coups-legaux-en-python	science	À traiter dans cette passe
+generer-les-coups-legaux-en-python	science	Revue et corrections consignées dans articles/generer-les-coups-legaux-en-python.md
 graphes-de-nash-equilibre-ouvertures	science	Revue et corrections consignées dans articles/graphes-de-nash-equilibre-ouvertures.md
 hyperfocus-attention-soutenue-aux-echecs	science	À traiter dans cette passe
 les-echecs-et-le-cerveau	science	Revue et corrections consignées dans articles/les-echecs-et-le-cerveau.md
@@ -102,17 +102,17 @@ memoire-reconstructive-aux-echecs	science	À traiter dans cette passe
 memoriser-parties-aux-echecs	science	À traiter dans cette passe
 minimax-aux-echecs	science	Revue et corrections consignées dans articles/minimax-aux-echecs.md
 minimax-en-python-moteur-echecs	science	À traiter dans cette passe
-moteur-echecs-python-par-ou-commencer	science	À traiter dans cette passe
+moteur-echecs-python-par-ou-commencer	science	Revue et corrections consignées dans articles/moteur-echecs-python-par-ou-commencer.md
 negamax-et-elagage-alpha-beta-python	science	À traiter dans cette passe
 neurones-miroirs-aux-echecs	science	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
 neuroplasticite-aux-echecs	science	Revue et corrections consignées dans articles/neuroplasticite-aux-echecs.md
 ordonnancement-des-coups-moteur-echecs	science	À traiter dans cette passe
 paradoxe-de-zermelo	science	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
-perft-verifier-son-generateur-de-coups	science	À traiter dans cette passe
+perft-verifier-son-generateur-de-coups	science	Revue et corrections consignées dans articles/perft-verifier-son-generateur-de-coups.md
 pourquoi-echecs-probleme-mathematique-impossible-et-ia	science	Revue et corrections consignées dans articles/pourquoi-echecs-probleme-mathematique-impossible-et-ia.md
 protocole-uci-python-et-mesurer-son-elo	science	À traiter dans cette passe
 quiescence-et-tables-de-cases-python	science	À traiter dans cette passe
-representer-un-echiquier-en-python	science	À traiter dans cette passe
+representer-un-echiquier-en-python	science	Revue et corrections consignées dans articles/representer-un-echiquier-en-python.md
 reseau-mode-defaut-aux-echecs	science	Revue et corrections consignées dans articles/reseau-mode-defaut-aux-echecs.md
 reseaux-bayesiens-predire-blunder	science	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
 stress-chronique-aux-echecs	science	À traiter dans cette passe
