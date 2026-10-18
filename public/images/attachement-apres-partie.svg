@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" role="img" aria-labelledby="titre"><title id="titre">Proposer un échange après la partie</title><rect width="900" height="320" rx="20" fill="#faf8ef"/><text x="40" y="48" font-family="Georgia,serif" font-size="25" fill="#252820">Proposer un échange après la partie</text>
+<rect x="40" y="85" width="250" height="155" rx="12" fill="#edf2e7" stroke="#64734b"/><text x="58" y="119" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#33432c">Demander</text>
+<text x="58" y="151" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Parler maintenant ?</text>
+<text x="58" y="177" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Ou souffler un moment ?</text>
+<rect x="325" y="85" width="250" height="155" rx="12" fill="#edf2e7" stroke="#64734b"/><text x="343" y="119" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#33432c">Écouter</text>
+<text x="343" y="151" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Le vécu du joueur</text>
+<text x="343" y="177" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Sans conclure trop vite</text>
+<rect x="610" y="85" width="250" height="155" rx="12" fill="#edf2e7" stroke="#64734b"/><text x="628" y="119" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#33432c">Convenir</text>
+<text x="628" y="151" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Quand analyser ?</text>
+<text x="628" y="177" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Quelle aide est souhaitée ?</text>
+<text x="40" y="285" font-family="system-ui,sans-serif" font-size="16" fill="#5d6555">Exemple d’accueil à adapter à la personne et au contexte.</text></svg>
