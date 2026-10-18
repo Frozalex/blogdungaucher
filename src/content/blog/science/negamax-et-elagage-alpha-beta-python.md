@@ -1,7 +1,7 @@
 ---
 title: "Négamax et élagage alpha-bêta en Python : le même coup, dix fois moins de travail"
 excerpt: >-
-  Alpha-bêta est la seule optimisation d'un moteur d'échecs qui ne coûte rien. Elle ne change jamais le
+  Alpha-bêta est une optimisation qui conserve la valeur minimax sur le même arbre. Elle ne change jamais le
   résultat : à profondeur égale, elle renvoie exactement le score de minimax. Elle se contente de ne
   pas explorer ce dont elle peut démontrer que ça ne servira à rien.
 publishDate: "2027-07-20"
@@ -64,7 +64,7 @@ faq:
 
 À la fin de [l'article précédent](/fr/blog/minimax-en-python-moteur-echecs/), notre moteur trouve tous les mats en deux coups et se heurte à un mur : chaque demi-coup de profondeur supplémentaire multiplie le travail par une vingtaine. Trouver un mat en trois, à profondeur 5, devient une affaire de minutes par position.
 
-Cet article franchit ce mur, avec une technique qui a la particularité rare de **ne rien coûter**. Pas un compromis, pas une approximation : à profondeur égale, elle renvoie exactement le même score que minimax, en explorant une fraction de l'arbre.
+Cet article franchit ce mur, avec une technique qui a la propriété de conserver la valeur minimax du même arbre. Pas un compromis, pas une approximation : à profondeur égale, elle renvoie exactement le même score que minimax, en explorant une fraction de l'arbre.
 
 Mais commençons par un nettoyage.
 
@@ -202,10 +202,16 @@ Le gain mesuré ci-dessus est réel et il est très en dessous de ce que la thé
 
 Reprends la situation du début de section. La coupure n'a été possible que parce qu'un premier coup avait déjà établi une garantie de +1,00. Si les coups sont examinés dans le pire ordre possible, le meilleur en dernier, aucune garantie n'est disponible au moment où elle serait utile, et alpha-bêta explore exactement le même arbre que minimax, en plus lent.
 
-Le calcul de référence est dû à Knuth et Moore. Dans le meilleur cas, celui où le meilleur coup est toujours examiné en premier, le nombre de positions visitées passe de $b^d$ à environ $b^{d/2}$. Pour un facteur de branchement de 30 et une profondeur de 6, cela fait passer de 729 millions à 27 000. Autrement dit : **à temps égal, on double la profondeur**.
+Le calcul de référence est dû à Knuth et Moore. Dans le meilleur cas, celui où le meilleur coup est toujours examiné en premier, le nombre de feuilles est de l'ordre de $b^{d/2}$ dans le cas favorable, contre $b^d$ sans élagage. Pour un facteur de branchement de 30 et une profondeur de 6, cela donne des ordres de grandeur de 729 millions et 27 000, sans constituer un comptage exact des feuilles ni des nœuds. Autrement dit : le cas idéal permet approximativement de doubler la profondeur à budget comparable.
 
 Nous sommes loin de ce cas idéal, parce que nos coups sont examinés dans l'ordre où le générateur les produit, c'est à dire par case de départ, de a8 vers h1. Cet ordre n'a aucun rapport avec la qualité des coups.
 
 C'est une excellente nouvelle. Cela signifie qu'il reste, gratuitement, un facteur considérable à récupérer, sans toucher ni à l'évaluation ni à l'algorithme : il suffit d'examiner les coups dans un ordre plus intelligent.
 
 **Prochain article :** l'ordonnancement des coups. Comment deviner, avant de les avoir cherchés, lesquels sont les meilleurs, et pourquoi une heuristique aussi grossière que « les prises d'abord » suffit à changer l'ordre de grandeur.
+
+## Sources
+
+Russell et Norvig présentent la garantie de valeur minimax d’alpha-bêta, sa dépendance à l’ordre des coups et les bornes asymptotiques citées ici.
+
+- Russell, S. et Norvig, P. (s. d.), Adversarial Search, chapitre des auteurs, [texte](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).

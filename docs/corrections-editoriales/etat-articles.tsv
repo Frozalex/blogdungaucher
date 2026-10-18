@@ -90,7 +90,7 @@ echecs-vs-mathematiques-logique	science	À traiter dans cette passe
 echecs-vs-musique-cerveau	science	À traiter dans cette passe
 effet-placebo-aux-echecs	science	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
 faux-souvenirs-aux-echecs	science	À traiter dans cette passe
-fonction-evaluation-materiel-python	science	À traiter dans cette passe
+fonction-evaluation-materiel-python	science	Revue et corrections consignées dans articles/fonction-evaluation-materiel-python.md
 generer-les-coups-legaux-en-python	science	Revue et corrections consignées dans articles/generer-les-coups-legaux-en-python.md
 graphes-de-nash-equilibre-ouvertures	science	Revue et corrections consignées dans articles/graphes-de-nash-equilibre-ouvertures.md
 hyperfocus-attention-soutenue-aux-echecs	science	À traiter dans cette passe
@@ -101,9 +101,9 @@ logique-modale-aux-echecs	science	Corrections de fond consignées dans suivi.md 
 memoire-reconstructive-aux-echecs	science	À traiter dans cette passe
 memoriser-parties-aux-echecs	science	À traiter dans cette passe
 minimax-aux-echecs	science	Revue et corrections consignées dans articles/minimax-aux-echecs.md
-minimax-en-python-moteur-echecs	science	À traiter dans cette passe
+minimax-en-python-moteur-echecs	science	Revue et corrections consignées dans articles/minimax-en-python-moteur-echecs.md
 moteur-echecs-python-par-ou-commencer	science	Revue et corrections consignées dans articles/moteur-echecs-python-par-ou-commencer.md
-negamax-et-elagage-alpha-beta-python	science	À traiter dans cette passe
+negamax-et-elagage-alpha-beta-python	science	Revue et corrections consignées dans articles/negamax-et-elagage-alpha-beta-python.md
 neurones-miroirs-aux-echecs	science	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
 neuroplasticite-aux-echecs	science	Revue et corrections consignées dans articles/neuroplasticite-aux-echecs.md
 ordonnancement-des-coups-moteur-echecs	science	À traiter dans cette passe
@@ -119,5 +119,5 @@ stress-chronique-aux-echecs	science	À traiter dans cette passe
 theorie-de-l-esprit-aux-echecs	science	À traiter dans cette passe
 theorie-des-jeux-aux-echecs	science	Revue et corrections consignées dans articles/theorie-des-jeux-aux-echecs.md
 theorie-du-chaos-aux-echecs	science	Revue et corrections consignées dans articles/theorie-du-chaos-aux-echecs.md
-un-moteur-qui-joue-au-hasard	science	À traiter dans cette passe
+un-moteur-qui-joue-au-hasard	science	Revue et corrections consignées dans articles/un-moteur-qui-joue-au-hasard.md
 echecs-et-investissement	dissertations	Corrections de fond consignées dans suivi.md ; revue exhaustive non attestée
