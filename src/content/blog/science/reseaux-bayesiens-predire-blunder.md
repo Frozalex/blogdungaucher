@@ -18,7 +18,7 @@ heroImage:
 
 ---
 
-Un blunder est rarement totalement imprévisible. Avant qu'il se produise, des signaux existent : la pendule qui s'affole, une position complexe que l'adversaire n'a pas l'habitude de gérer, une suite forcée longue que son niveau de jeu rend difficile à calculer intégralement. Ces signaux, pris ensemble, forment un portrait probabiliste du risque d'erreur. Les [réseaux bayésiens](https://fr.wikipedia.org/wiki/R%C3%A9seau_bay%C3%A9sien) formalisent précisément ce type de raisonnement.
+Une gaffe peut être étudiée comme un événement dont le risque varie avec le contexte. Avant qu'il se produise, des signaux existent : la pendule qui s'affole, une position complexe que l'adversaire n'a pas l'habitude de gérer, une suite forcée longue que son niveau de jeu rend difficile à calculer intégralement. Ces signaux, pris ensemble, forment un portrait probabiliste du risque d'erreur. Un réseau bayésien fournit un cadre possible pour ce raisonnement. Le réseau proposé ici est pédagogique : il n’a pas été entraîné ni validé pour prédire une erreur en partie.
 
 ## Le théorème de Bayes et la mise à jour des croyances
 
@@ -35,15 +35,15 @@ L'intuition centrale est que nos croyances doivent être mises à jour de façon
 
 ## Qu'est-ce qu'un réseau bayésien ?
 
-Un [réseau bayésien](https://fr.wikipedia.org/wiki/R%C3%A9seau_bay%C3%A9sien) est un graphe acyclique dirigé où chaque noeud représente une variable aléatoire et chaque arête représente une dépendance probabiliste entre variables. A chaque noeud est associée une table de probabilités conditionnelles décrivant la distribution de cette variable étant donné l'état de ses "parents" dans le graphe.
+Un [réseau bayésien](https://fr.wikipedia.org/wiki/R%C3%A9seau_bay%C3%A9sien) est un graphe acyclique dirigé où chaque nœud représente une variable aléatoire et chaque arête représente une dépendance probabiliste entre variables. À chaque nœud est associée une table de probabilités conditionnelles décrivant la distribution de cette variable étant donné l'état de ses "parents" dans le graphe.
 
-Le réseau bayésien permet de modéliser des situations complexes avec plusieurs variables interdépendantes, sans avoir à spécifier exhaustivement toutes les interactions possibles. La structure du graphe encode les indépendances conditionnelles, ce qui rend le calcul tractable même pour des systèmes complexes.
+Le réseau bayésien permet de modéliser des situations complexes avec plusieurs variables interdépendantes, sans avoir à spécifier exhaustivement toutes les interactions possibles. La structure du graphe encode les indépendances conditionnelles, ce qui permet une représentation compacte. Cela ne garantit pas une inférence rapide pour toute structure de réseau.
 
 ## Modéliser le risque de blunder comme réseau bayésien
 
 Construisons un réseau bayésien simplifié pour modéliser la probabilité qu'un adversaire blunde dans les prochains coups. Les variables pertinentes peuvent être organisées ainsi :
 
-**Variables observables (noeuds parents) :**
+**Variables observables (nœuds parents) :**
 - Temps restant sur la pendule adverse (T)
 - Complexité tactique de la position (C) : évaluée par la dispersion des évaluations des coups légaux
 - Niveau Elo de l'adversaire (E) : observable avant la partie
@@ -54,25 +54,23 @@ Construisons un réseau bayésien simplifié pour modéliser la probabilité qu'
 - État cognitif actuel de l'adversaire (K) : fatigue, concentration, stress (non directement observable)
 
 **Variable cible :**
-- Probabilité de blunder dans les 5 prochains coups (B)
+- Événement « gaffe dans les cinq prochains coups » (B), défini par un critère d’évaluation explicite
 
-Le réseau encode les dépendances suivantes : T, P et C influencent K (un temps faible, une haute pression et une position complexe dégradent l'état cognitif). K et E déterminent ensemble B (un joueur fort en mauvais état cognitif blundera avec une probabilité similaire à un joueur moins fort en bon état).
+Pour cet exemple, supposons que T, C, S et P influencent K, puis que K et E influencent B. Ces flèches constituent des hypothèses de modèle, pas des relations causales démontrées. Un même risque peut résulter de combinaisons différentes ; rien n’impose qu’un joueur fort fatigué ait le même risque qu’un joueur moins fort reposé.
 
-$$P(B | T, C, E, S, P) = \sum_{k} P(B | K=k, E) \cdot P(K=k | T, C, P)$$
+Sous ces hypothèses d’indépendance conditionnelle, la marginalisation de K s’écrit :
+
+$$P(B \mid T,C,E,S,P)=\sum_k P(B \mid K=k,E)\,P(K=k \mid T,C,S,P).$$
+
+Le style S figure maintenant aussi dans le facteur de droite. Les paramètres demanderaient des données et une validation séparée avant de donner une probabilité utilisable.
 
 ![Réseau bayésien du risque de blunder : temps, complexité, pression et Elo influencent l'état cognitif, qui détermine la probabilité de gaffe.](/images/reseaux-bayesiens-01-graphe-blunder.svg)
 
 ## Les facteurs réels du blunder : ce que la recherche dit
 
-Des études empiriques sur les bases de données de parties ont quantifié les facteurs de risque de blunder. Ces résultats permettent de calibrer les probabilités conditionnelles du réseau.
+Anderson, Kleinberg et Mullainathan (2016) analysent les erreurs à partir de parties et de finales dont la valeur peut être contrôlée par tablebases. Ils étudient le niveau du joueur, le temps disponible et la difficulté de la décision. Dans ce cadre, les caractéristiques de la position sont particulièrement informatives.
 
-**Le temps restant** est le facteur le mieux documenté. [Kenneth Regan](https://fr.wikipedia.org/wiki/Kenneth_Regan) et ses collaborateurs ont analysé des millions de parties et montré que la qualité de jeu (mesurée par l'écart par rapport aux coups optimaux du moteur) se dégrade significativement quand le temps restant est inférieur à 2-3 minutes, même pour des joueurs d'élite.
-
-**La complexité de la position** est le deuxième facteur majeur. Les positions avec un grand nombre de pièces actives, des menaces mutuelles et des calculs profonds forcés génèrent beaucoup plus d'erreurs que les positions fermées et structurelles. Cette complexité peut être quantifiée par la variance de l'évaluation du moteur sur les coups légaux disponibles.
-
-**Le niveau Elo** module la résistance au blunder. Un joueur à 2700 dans les mêmes conditions de temps et de complexité blundera moins fréquemment qu'un joueur à 1500. Mais la dégradation due au temps et à la complexité est proportionnellement similaire.
-
-**La fatigue sur plusieurs rounds** est souvent sous-estimée. Des analyses de grands tournois montrent que la fréquence de blunders augmente dans les derniers rounds, particulièrement pour les joueurs ayant disputé des parties longues les jours précédents.
+Cela donne une base empirique à la question de la prédiction des erreurs. Leur travail ne valide pas le réseau latent proposé ici, ni un seuil universel de deux ou trois minutes, ni une loi de fatigue identique pour tous les tournois. Il faut aussi distinguer une perte de valeur exacte dans une tablebase d’une variation d’évaluation produite par un moteur dans une position non résolue.
 
 ## Compliquer pour créer un risque bayésien
 
@@ -82,7 +80,7 @@ C'est une décision sous incertitude : comparer l'espérance de gain dans la lig
 
 En termes bayésiens, si $P(\text{blunder} | \text{complication}) > \text{seuil}$ est suffisamment élevé pour compenser le désavantage objectif de la complication, la complication est correcte. Ce "seuil" dépend du contexte : dans un tournoi où tu as besoin d'une victoire, la pondération est différente d'une partie où le nul suffit.
 
-[Bobby Fischer](https://fr.wikipedia.org/wiki/Bobby_Fischer) avait une réputation de fuir les complications sauf quand son analyse lui donnait un avantage clair. [Tal](https://fr.wikipedia.org/wiki/Mikha%C3%AFl_Tal), au contraire, cherchait systématiquement les complications, pariant implicitement sur une probabilité élevée d'erreur adverse dans les positions chaotiques qu'il créait. Ces deux approches sont cohérentes avec des estimations bayésiennes du risque d'erreur adverse différentes.
+Cette décision doit aussi tenir compte de ton propre risque d’erreur. Une complication ne devient pas bonne simplement parce qu’elle semble difficile pour l’adversaire. Sans probabilités calibrées et sans valeur attribuée aux issues, le « seuil » reste un outil de réflexion, pas une règle de choix automatique.
 
 ![Arbre de décision bayésien compliquer vs simplifier : la ligne compliquée est objectivement inférieure mais justifiée si P(blunder adverse) × gain dépasse le seuil d'espérance de la ligne simple.](/images/reseaux-bayesiens-03-compliquer-vs-simplifier.svg)
 
@@ -92,7 +90,7 @@ Dans une partie, l'adversaire te fournit de l'information à chaque coup. Du tem
 
 Si l'adversaire a utilisé 15 minutes sur un coup que tu avais vu rapidement, deux interprétations sont possibles : soit la position est plus complexe que tu ne le pensais (mise à jour de ta propre analyse), soit l'adversaire est en difficulté (mise à jour de ton estimation de son état). La bonne réponse bayésienne est de peser les deux interprétations selon leur vraisemblance.
 
-Si l'adversaire a joué rapidement une série de coups précis dans une position complexe, son état cognitif est manifestement bon : il voit clairement. Ta probabilité estimée de le faire blunder dans les prochains coups doit baisser. Si au contraire il joue lentement des coups sous-optimaux mais pas encore catastrophiques, c'est un signal que sa compréhension de la position est imparfaite : le risque de blunder dans les prochains coups monte.
+Si l'adversaire a joué rapidement une série de coups précis dans une position complexe, plusieurs interprétations restent possibles : bonne lecture de la position, préparation connue ou calcul bref suffisant. Ta probabilité estimée de le faire blunder dans les prochains coups doit baisser. Si au contraire il joue lentement des coups sous-optimaux mais pas encore catastrophiques, c'est un signal que sa compréhension de la position est imparfaite : le risque de blunder dans les prochains coups monte.
 
 ![Mise à jour bayésienne de P(blunder) au fil de la partie : la courbe monte lors d'un long temps de réflexion ou d'un zeitnot, et redescend après une série de coups rapides et précis.](/images/reseaux-bayesiens-02-mise-a-jour-partie.svg)
 
@@ -114,8 +112,13 @@ Même sans construire formellement un réseau bayésien, les principes bayésien
 
 **Reconnaître les positions hors du confort adverse.** Si tu sais que l'adversaire joue habituellement en positions fermées, l'emmener dans une position ouverte et tactique augmente le risque d'erreur même si sa préparation est bonne.
 
-**Résister à la symétrie.** Le fait que tu sois en bonne forme ne signifie pas que l'adversaire l'est aussi. La mise à jour bayésienne sur son état est indépendante de la tienne.
+**Tenir compte des différences de niveau** Le fait que tu sois en bonne forme ne signifie pas que l'adversaire l'est aussi. La mise à jour bayésienne sur son état est indépendante de la tienne.
 
 **Après lecture :** pendant une partie en ligne, note **trois indices** (pendule adverse, complexité, hors zone de confort) ; à la fin, vérifie si le blunder adverse coïncide avec ce tableau, sans « confirmer » n'importe quoi.
 
 ---
+
+## Sources
+
+- Friedman, N., & Koller, D. (2001, version du document consulté). *Being Bayesian About Network Structure: A Bayesian Approach to Structure Discovery in Bayesian Networks*. [Manuscrit des auteurs, Stanford](https://ai.stanford.edu/~nir/Papers/FK1Full.pdf) : dépendances, indépendances conditionnelles et apprentissage de structure.
+- Anderson, A., Kleinberg, J., & Mullainathan, S. (2016). *Assessing Human Error Against a Benchmark of Perfection*. KDD, ACM. [Article intégral](https://arxiv.org/pdf/1606.04956) : étude des erreurs échiquéennes et de leurs facteurs prédictifs.

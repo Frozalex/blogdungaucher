@@ -56,3 +56,7 @@ Corrigé : environ 10^8 suites à six demi-coups ; score attendu Elo ; coefficie
 ### echecs-memoire-de-travail
 
 Corrigé : tutoiement, phrase d’ouverture, attribution Baddeley et Hitch, ajout du tampon en 2000, capacité dépendante des tâches, transfert proche/lointain aligné dans la FAQ et le corps. Retirés faute de preuve : gains 15–20 %, pertes 15–25/20–40 %, erreurs exponentielles, transfert en 20 séances, effacement des gains en 4–6 semaines, anecdote Baddeley. Sources ouvertes : [Baddeley 2012](https://jontalle.web.engr.illinois.edu/MISC/ReadingGroup.11/Papers/Baddeley-WorkingMemory.12.pdf), [Cowan](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/44023F1147D4A1D44BDC0AD226838496/S0140525X01003922a.pdf/div-class-title-the-magical-number-4-in-short-term-memory-a-reconsideration-of-mental-storage-capacity-div.pdf), [Sala–Gobet](https://journals.sagepub.com/doi/10.1177/0963721417712760). Aucun marqueur ajouté.
+
+### reseaux-bayesiens-predire-blunder
+
+Corrigé : S dans la formule et les hypothèses du graphe ; événement B distingué de sa probabilité ; modèle pédagogique non présenté comme validé ; inférence non garantie tractable ; accents. Retirés : seuil Regan 2–3 minutes non retrouvé, loi de fatigue par rondes, équivalence automatique entre niveaux et attributions historiques non nécessaires. Source empirique réelle : [Anderson et al. 2016](https://arxiv.org/pdf/1606.04956). Cadre : [Friedman–Koller](https://ai.stanford.edu/~nir/Papers/FK1Full.pdf). Aucun marqueur ajouté.
