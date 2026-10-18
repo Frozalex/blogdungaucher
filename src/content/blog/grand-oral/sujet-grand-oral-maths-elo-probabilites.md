@@ -1,8 +1,7 @@
 ---
 title: "Sujet Grand Oral Maths : Dans quelle mesure les probabilités permettent-elles de modéliser la performance aux échecs ?"
-excerpt: >-
-  Sujet entièrement rédigé pour le Grand Oral spécialité Maths : loi binomiale, formule Elo, suites récurrentes,
-  convergence et loi des grands nombres. Texte de 10 minutes prêt à réciter.
+excerpt:
+  "Modèle binomial, score attendu Elo et limites de convergence : des calculs à expliquer avec leurs hypothèses pour ton Grand Oral."
 publishDate: "2026-05-05"
 category: grand-oral
 featured: false
@@ -34,74 +33,65 @@ heroImage:
   license: CC BY-SA 4.0
 ---
 
-> **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.
+Dans quelle mesure les probabilités permettent-elles de modéliser la performance aux échecs ? Tu peux partir d'un match fictif, puis montrer pourquoi le classement Elo demande un modèle différent. Cette distinction évite de confondre probabilité de victoire et score attendu.
 
----
+## Un modèle binomial volontairement simplifié
 
-Bonjour. Je vais vous parler d'un cas où les **mathématiques** abstraites du **programme** de **terminale** rencontrent un objet concret : le classement des joueurs d'échecs.
+Suppose dix parties indépendantes, sans nulle, avec une probabilité de victoire constante p. Si X compte les victoires, alors X suit une loi binomiale de paramètres 10 et p :
 
-Le **sujet** est précis : dans quelle mesure les probabilités permettent-elles de modéliser la performance aux échecs ? Cette **question** me semble parfaite pour le Grand Oral parce qu'elle mobilise plusieurs chapitres du **programme** : la **loi binomiale**, les **suites récurrentes**, les **fonctions** logistiques, et la **loi des grands nombres**.
+$$P(X=k)=\binom{10}{k}p^k(1-p)^{10-k}.$$
 
-L'enjeu est concret. Quand un grand maître joue contre un débutant, on s'attend à ce qu'il gagne. Mais quelle est exactement la probabilité de victoire ? Comment la calculer ? Comment la mettre à jour après chaque partie ? Le classement Elo, créé par le physicien Arpad Elo dans les années mille neuf cent soixante, répond à ces **questions** avec un modèle élégant. Je vais l'analyser ici sous l'angle mathématique.
+Avec p = 0,5, un calcul direct donne :
 
-Je procéderai en trois étapes. D'abord, j'appliquerai la **loi binomiale** à un match entre joueurs supposés de même niveau. Ensuite, je présenterai la formule Elo et je montrerai qu'elle correspond à une **suite récurrente** convergente. Enfin, je discuterai les **limites** du modèle et ses approches alternatives.
+| Événement | Probabilité dans ce modèle |
+|---|---:|
+| Exactement cinq victoires | 252/1024 ≈ 24,61 % |
+| Au moins six victoires | 386/1024 ≈ 37,70 % |
+| Au plus quatre victoires | 386/1024 ≈ 37,70 % |
 
-## La loi binomiale appliquée à un match
+Les deux joueurs sont symétriques : chacun a la même probabilité de remporter le match. Comparer « au moins six » à « exactement cinq » oppose un ensemble de cinq résultats possibles à un seul. Cela ne révèle aucun avantage caché d'un joueur.
 
-Commençons par la modélisation la plus directe. Imaginons deux joueurs de niveau identique qui jouent dix parties consécutives. Aux échecs, il y a trois résultats possibles : victoire, nulle, défaite. Pour simplifier, on compte une nulle comme une demi-victoire. Sur dix parties, le nombre de victoires (ou demi-victoires comptées) suit, sous hypothèses, une **loi binomiale**.
+La probabilité de ne pas finir à cinq-cinq est 772/1024, soit environ 75,39 %. C'est une propriété du modèle choisi, pas une fréquence vérifiée des matchs réels.
 
-Plus précisément, si on note X la variable aléatoire qui compte le nombre de victoires du joueur A sur n parties, et si chaque partie est une expérience de Bernoulli de paramètre p (probabilité de victoire de A à chaque partie), alors X suit la loi B(n, p). La probabilité d'obtenir exactement k victoires est donnée par la formule au **programme** de **terminale** : P(X = k) égale combinaison de n parmi k, multiplié par p puissance k, multiplié par (1 - p) puissance (n - k).
+## Pourquoi les nulles changent la question
 
-Calculons un **exemple** numérique. Pour n égal à dix et p égal à zéro virgule cinq (joueurs supposés de même niveau), la probabilité de gagner exactement six parties sur dix vaut combinaison de dix parmi six, soit deux cent dix, multiplié par zéro virgule cinq puissance dix, soit un sur mille vingt-quatre. Le calcul donne environ zéro virgule deux zéro cinq, soit vingt virgule cinq pour cent.
+Une partie d'échecs peut rapporter 1, 0,5 ou 0 point. Le score attendu E vérifie donc :
 
-Plus intéressant encore : la probabilité de remporter le match, c'est-à-dire de gagner au moins six parties sur dix, s'obtient en sommant P(X = 6) + P(X = 7) + ... + P(X = 10). Le calcul donne environ zéro virgule trois sept sept, soit trente-sept virgule sept pour cent.
+$$E=P(\text{victoire})+\frac12P(\text{nulle}).$$
 
-C'est un résultat contre-intuitif. Même entre joueurs parfaitement égaux, le résultat parfaitement équitable de cinq-cinq n'a que vingt-cinq pour cent de probabilité. Autrement dit, un score « inégal » est plus probable qu'un score « égal ». La **loi binomiale** explique pourquoi tant de matchs paraissent déséquilibrés alors que les joueurs sont au même niveau : c'est le hasard de la distribution, pas une différence de force.
+Connaître E ne suffit pas à retrouver les trois probabilités. Par exemple, E = 0,5 est compatible avec 50 % de victoires et 50 % de défaites sans nulle, mais aussi avec 100 % de nulles. Ces situations n'ont pas la même variabilité.
 
-![Distribution binomiale B(10 ; 0,5) : P(X = 5) ≈ 24,6 % seulement, et la probabilité de gagner au moins 6 parties sur 10 est ≈ 37,7 %, plus élevée qu'un score parfaitement égal.](/images/sujet-elo-02-loi-binomiale.svg)
+Pour modéliser les points d'un match réel, il faut donc prévoir les nulles. Une loi binomiale des seules victoires ne décrit pas directement le score total.
 
-La principale **limite** de cette modélisation est l'hypothèse p égal à zéro virgule cinq. En pratique, deux joueurs ne sont jamais exactement au même niveau. Il faut donc une méthode pour estimer p à partir des cotes des deux joueurs. C'est ce que fait la formule Elo.
+## Une courbe pédagogique pour le score attendu
 
-## La formule Elo et la suite récurrente de mise à jour
+On utilise souvent l'approximation logistique :
 
-Le système Elo est composé de deux **fonctions** mathématiques essentielles. La première estime la probabilité de victoire à partir des cotes. La seconde met à jour les cotes après chaque partie.
+$$E_A=\frac{1}{1+10^{(R_B-R_A)/400}}.$$
 
-La **formule de probabilité** s'écrit : P(A bat B) égale un divisé par (un plus dix puissance (R_B moins R_A divisé par quatre cents)), où R_A et R_B sont les cotes des deux joueurs. Cette fonction est une **sigmoïde** : elle vaut toujours entre zéro et un, elle est croissante en (R_A moins R_B), et elle prend la valeur zéro virgule cinq quand les cotes sont égales.
+Pour R_A = 1600 et R_B = 1800, elle donne environ 0,2403. Lis « score attendu proche de 0,24 point », sans annoncer 24 % de chances de gagner. Le règlement FIDE fournit ses propres tables et modalités de calcul ; la courbe sert ici à expliquer la relation.
 
-Calculons un **exemple**. Si R_A vaut mille six cents et R_B vaut mille huit cents, l'écart est de deux cents points en faveur de B. On calcule P égale un divisé par (un plus dix puissance zéro virgule cinq), soit un divisé par environ quatre virgule un six, soit environ zéro virgule deux quatre. Donc le joueur A, plus faible, a environ vingt-quatre pour cent de chances de battre B. Ce chiffre, vingt-quatre pour cent, est précieux : il quantifie une intuition qualitative (« A est plus faible mais peut gagner »).
+La mise à jour pédagogique s'écrit :
 
-![Courbe sigmoïde de la formule Elo : P(A bat B) vaut 0,5 quand les cotes sont égales, monte à 0,76 pour un écart de +200 points et descend à 0,24 pour −200 points, toujours comprise entre 0 et 1.](/images/sujet-elo-01-sigmoide-probabilite.svg)
+$$R'_A=R_A+K(S_A-E_A),$$
 
-La **mise à jour de cote**, après une partie, suit la formule R'_A égale R_A plus K multiplié par (résultat moins P), où le résultat vaut un en cas de victoire, zéro virgule cinq en cas de nulle, zéro en cas de défaite, et où K est un coefficient typiquement entre seize et trente-deux.
+où S_A vaut 1, 0,5 ou 0. Avec K = 20 et une victoire, cet exemple donne une hausse théorique proche de 15,19 points avant les modalités officielles de calcul. K = 20 est une hypothèse de l'exemple, pas le coefficient de tous les joueurs.
 
-Si A bat B contre toute attente, alors R'_A vaut mille six cents plus seize multiplié par (un moins zéro virgule deux quatre), soit mille six cents plus seize multiplié par zéro virgule sept six, soit mille six cents plus douze, soit mille six cent douze. A gagne douze points. Symétriquement, B perd douze points : c'est un système à somme nulle.
+Les coefficients FIDE peuvent notamment valoir 40, 20 ou 10 selon la situation. Les deux adversaires n'ayant pas nécessairement le même K, leurs variations ne sont pas toujours exactement opposées.
 
-Si en revanche A perd, ce qui était attendu, alors R'_A vaut mille six cents plus seize multiplié par (zéro moins zéro virgule deux quatre), soit mille six cents moins quatre, soit mille cinq cent quatre-vingt-seize. A perd seulement quatre points : sa cote bouge peu parce que la défaite est conforme au pronostic.
+## Une suite récurrente n'est pas forcément convergente
 
-Du point de vue du **programme** de **terminale**, ce mécanisme est une **suite récurrente**. Si on note u_n la cote du joueur A après la n-ième partie, on a la relation u_{n+1} égale u_n plus K multiplié par (r_n moins p_n), où r_n est le résultat de la n-ième partie et p_n la probabilité prédite par la formule Elo. Cette suite est-elle convergente ?
+Tu peux écrire la succession des cotes comme une suite récurrente aléatoire. Mais un coefficient K constant laisse les nouveaux résultats faire fluctuer la cote. Dire que l'espérance d'un écart est nulle ne prouve pas que chaque trajectoire converge vers une constante.
 
-Sous l'hypothèse que le joueur A a un **vrai niveau** E constant, on peut montrer que u_n converge vers E. L'idée intuitive : à chaque partie, l'espérance de (r_n moins p_n) est nulle si la probabilité prédite est exacte. Donc en moyenne, la cote ne dérive pas de E. C'est une application directe de la **loi des grands nombres** : la moyenne empirique des résultats converge vers l'espérance théorique, et la cote s'ajuste autour de E.
+La loi des grands nombres concerne des moyennes sous des hypothèses précises ; elle ne démontre pas à elle seule la convergence de cette mise à jour non linéaire. La force peut aussi évoluer, les adversaires changer et les parties dépendre du contexte.
 
-## Limites du modèle et approches alternatives
+## Ta conclusion pour l'oral
 
-Le système Elo est un modèle élégant, mais il repose sur trois hypothèses qu'il faut discuter honnêtement.
+Les probabilités rendent explicites les hypothèses et les limites d'une prévision. Elles ne transforment pas le classement en vérité exacte sur chaque résultat futur.
 
-Première hypothèse : la **stationnarité**. La cote suppose que le niveau du joueur reste constant entre les parties. C'est faux en pratique : un joueur progresse, un autre fatigue, un troisième vieillit. Le coefficient K, plus élevé pour les débutants et plus bas pour les joueurs établis, est un palliatif partiel. C'est le compromis biais-variance classique en statistique : plus K est grand, plus la cote suit les changements de niveau, mais plus elle fluctue à cause du bruit.
+Pour tes dix minutes de présentation, montre le calcul binomial, puis la distinction entre victoire et score attendu, avant de discuter la suite récurrente. Prépare aussi un exemple où une hypothèse — indépendance, absence de nulle ou niveau constant — devient discutable.
 
-Deuxième hypothèse : l'**indépendance** des parties. La **loi binomiale** suppose que chaque partie est indépendante des précédentes. Or une victoire renforce psychologiquement, une défaite peut entraîner une cascade d'erreurs. Les corrélations sont réelles mais difficiles à modéliser.
+## Sources
 
-Troisième hypothèse : la **validité de la sigmoïde**. La formule Elo a été calibrée sur des populations de joueurs occidentaux dans les années mille neuf cent soixante. Aux extrêmes (écarts de plus de quatre cents points), la formule extrapole hors de son domaine de calibration. Pour quantifier : la probabilité qu'un joueur de mille deux cents Elo batte Magnus Carlsen, à deux mille huit cent cinquante, vaut un divisé par (un plus dix puissance quatre virgule un deux cinq), soit environ zéro virgule zéro zéro zéro zéro sept cinq, c'est-à-dire à peu près une chance sur treize mille. Cette précision est suspecte : en réalité, le débutant n'a jamais battu Carlsen, et la formule ne peut pas être validée empiriquement à ces écarts.
-
-Une approche alternative, plus moderne, est celle d'AlphaZero. Ce **programme** n'utilise pas de modèle probabiliste explicite. Son réseau de neurones estime directement une valeur de position et une distribution de probabilité sur les coups, mais ces probabilités sont implicites, issues d'un apprentissage. AlphaZero remet en cause l'idée que les probabilités doivent être modélisées par des formules : elles peuvent être apprises par expérience. C'est un changement de **paradigme**, qui montre les **limites** de l'approche paramétrique.
-
-## Conclusion
-
-Pour répondre à ma **question** initiale, les probabilités permettent de modéliser la performance aux échecs avec une précision remarquable mais bornée. La **loi binomiale** explique pourquoi des matchs déséquilibrés peuvent émerger de joueurs égaux. La formule Elo, à travers une **suite récurrente** convergente, permet d'estimer la probabilité de victoire entre deux joueurs quelconques et de mettre à jour leurs cotes au fil des parties. La **loi des grands nombres** assure que cette estimation converge vers la vraie force des joueurs, sous des hypothèses de stationnarité.
-
-Les **limites** sont précises : stationnarité, indépendance, calibration aux extrêmes. Les modèles modernes par apprentissage automatique offrent une alternative non paramétrique mais opaque. À mon sens, cette discussion entre modélisation explicite et apprentissage statistique est l'un des grands **enjeux** des **mathématiques** appliquées contemporaines, et les échecs en sont l'un des **exemples** les plus pédagogiques.
-
-Je vous remercie pour votre attention et je suis prêt à répondre à vos **questions**.
-
----
-
-> **Pour aller plus loin :** [Sujet Grand Oral Maths sur la combinatoire](/fr/blog/sujet-grand-oral-maths-combinatoire/) · [Sujet Grand Oral Maths sur Zermelo et complexité](/fr/blog/sujet-grand-oral-maths-zermelo-complexite/) · [Hub méthodologie Grand Oral Maths](/fr/blog/grand-oral-maths-spe-echecs/)
+- FIDE (2024), *FIDE Rating Regulations effective from 1 March 2024*, section 8. [Tables et calcul officiels](https://handbook.fide.com/chapter/B022024). Les exemples numériques ci-dessus sont des calculs explicitement effectués sous les hypothèses indiquées.
+- Ministère de l'Éducation nationale (2026), *Baccalauréat : comment se passe le Grand oral ?* [Format de l'épreuve](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).
