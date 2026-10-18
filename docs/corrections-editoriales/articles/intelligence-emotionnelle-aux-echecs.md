@@ -8,3 +8,8 @@ Réécriture des affirmations contradictoires : définition de 1990 distinguée 
 - [Gross (1998), résumé original](https://pubmed.ncbi.nlm.nih.gov/9457784/?dopt=Abstract)
 
 SEO, date et slug conservés. Aucun marqueur « À VÉRIFIER PAR LUC » ajouté.
+
+## Contrôle transversal final
+
+Lien interne vers l’article colère remis au format réel du site.
+

@@ -49,7 +49,7 @@ Tu peux essayer de remplacer « j'ai tout gâché » par une question de jeu : q
 
 Une baisse du temps de réflexion, davantage d'erreurs ou des parties relancées à la chaîne peuvent t'inciter à faire une pause. Ce ne sont pas des mesures directes de ton état émotionnel. La cadence, les positions et la force des adversaires peuvent aussi expliquer ces variations.
 
-Après la session, rapproche ces indices de ce que tu as ressenti. Cherche des situations répétées plutôt qu'un diagnostic dans une seule défaite. Pour un problème de colère récurrent, l'article sur [la colère et les abandons impulsifs](/blog/esprit/echecs-et-colere-ragequit/) développe cette observation.
+Après la session, rapproche ces indices de ce que tu as ressenti. Cherche des situations répétées plutôt qu'un diagnostic dans une seule défaite. Pour un problème de colère récurrent, l'article sur [la colère et les abandons impulsifs](/fr/blog/echecs-et-colere-ragequit/) développe cette observation.
 
 ## Une règle personnelle, révisable
 
