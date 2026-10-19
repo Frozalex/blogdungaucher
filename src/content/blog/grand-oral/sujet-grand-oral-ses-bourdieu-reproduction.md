@@ -18,10 +18,8 @@ tags:
   - capital culturel
   - reproduction sociale
   - inégalités
-seoTitle: "Sujet Grand Oral SES Bourdieu reproduction échecs : texte complet"
-seoDescription: >-
-  Sujet Grand Oral SES sur Bourdieu, capital culturel et reproduction sociale, entièrement rédigé pour 10 minutes
-  d'exposé. La Distinction, habitus, capabilités : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral SES : Bourdieu, échecs et inégalités d’accès"
+seoDescription: "Capital culturel et accès aux échecs : applique le cadre de Bourdieu en distinguant hypothèses, exemples et données nécessaires pour ton Grand Oral SES."
 ogImage: /images/og/sujet-grand-oral-ses-bourdieu-reproduction-og.webp
 heroImage:
   src: /images/go-bourdieu.svg
