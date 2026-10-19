@@ -10,8 +10,8 @@ featuredRank: 99
 readingTime: "11 min"
 pillar: "Psychologie"
 tags: ["pauses", "récupération", "psychologie", "performance", "fatigue cognitive", "consolidation", "sommeil", "rage-queue", "entraînement"]
-seoTitle: "Pauses aux échecs : pourquoi t'arrêter te rend meilleur"
-seoDescription: "Pourquoi les pauses rendent meilleur aux échecs : consolidation mémorielle, fatigue cognitive et sommeil. Protocoles concrets pour tournoi et entraînement."
+seoTitle: "Pauses aux échecs : fatigue, récupération et rythme de jeu"
+seoDescription: "Que montrent les études sur les micro-pauses ? Fatigue, récupération et organisation des séances : des repères pour adapter ton rythme aux échecs."
 ogImage: /images/og/bienfaits-des-pauses-aux-echecs-og.webp
 heroImage:
   src: /images/blog/bienfaits-des-pauses-aux-echecs-hero.webp
