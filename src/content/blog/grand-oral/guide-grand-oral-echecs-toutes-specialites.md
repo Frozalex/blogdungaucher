@@ -83,7 +83,7 @@ Le **Grand Oral du bac** comprend 20 minutes de préparation et 20 minutes devan
 - **10 minutes** d’exposé, avec le support préparé pendant la préparation
 - **10 minutes** d'échange avec le **jury** sur ton **sujet**, ton plan, tes sources
 
-Beaucoup de guides en ligne décrivent encore un exposé de 5 minutes suivi d'une troisième partie de 5 minutes sur le projet d'**orientation**. C'était le format jusqu'à la session 2023. Depuis la session 2024, l'**épreuve** tient en deux temps de 10 minutes et la partie orientation a été supprimée en tant que telle : la question de ton projet est désormais posée pendant l'échange.
+Beaucoup de guides en ligne décrivent encore un exposé de 5 minutes suivi d'une troisième partie de 5 minutes sur le projet d'**orientation**. C'était le format jusqu'à la session 2023. Depuis la session 2024, l'**épreuve** tient en deux temps de 10 minutes et la partie orientation a été supprimée en tant que telle : le lien éventuel avec ton parcours ne constitue pas une troisième phase imposée.
 
 Le **jury** est composé de **deux** professeurs : l'un de ta spécialité, l'autre d'une discipline différente. Le second n'est **pas** spécialiste de ton **sujet**. Ton **oral** doit donc être compréhensible par un non-spécialiste, quelle que soit ta spécialité.
 
@@ -205,7 +205,7 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 **Plan en 3 parties (10 min) :**
 
-**0:00–1:00, Intro :** le nombre de Shannon (10^120 parties possibles) versus la puissance de calcul de l'univers (10^80 atomes, ~10^90 opérations par seconde sur 14 milliards d'années). La limite n'est pas technologique : elle est fondamentale.
+**0:00–1:00, Intro :** le modèle de Shannon pour illustrer une exploration naïve considérable. Ce calcul ne démontre pas une impossibilité pour toute méthode future.
 
 **1:00–4:00, La notion de complexité :** la différence entre un problème résoluble en temps polynomial et un problème exponentiel. Les échecs comme exemple de problème PSPACE-complet. Lien au programme PC : ordres de grandeur, puissances de 10, estimation par ordre de grandeur. Exercice : calculer 35^6 pour estimer le nombre de positions à 6 coups (≈ 1,8 milliard).
 
@@ -430,12 +430,12 @@ Trois techniques rapides :
 - [ ] Manger normalement (**pas** plus, **pas** moins ; le ventre vide accentue le **stress**)
 - [ ] Arriver 30 **minutes** en avance
 - [ ] Eau dans la salle d'attente, **pas** de café à jeun
-- [ ] Phase de **préparation** : 20 **minutes** pour choisir et organiser. Ne perds pas plus de 2 **minutes** à choisir.
+- [ ] Phase de préparation : 20 minutes pour organiser la réponse à la question choisie par le jury.
 
 ## Sources et références
 
 - Ministère de l’Éducation nationale (2026). *Baccalauréat : comment se passe le Grand oral ?* [Présentation officielle](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).
-- Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*, Pearson. [Chapitre sur la recherche adversariale](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf) : exemple minimax et hypothèses du modèle.
+- Russell, S., & Norvig, P. (s. d.). *Adversarial Search*, projet de chapitre d’Artificial Intelligence: A Modern Approach, Berkeley. [Chapitre sur la recherche adversariale](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf) : exemple minimax et hypothèses du modèle.
 - Sala, G., & Gobet, F. (2017). *Does Far Transfer Exist?* Current Directions in Psychological Science. [Article](https://journals.sagepub.com/doi/10.1177/0963721417712760).
 - Maass, A., D’Ettole, C., & Cadinu, M. (2008). *Checkmate? The role of gender stereotypes in the ultimate intellectual sport*. European Journal of Social Psychology, 38, 231–245. [Texte intégral](https://mdmcalister.pbworks.com/f/Checkmate%2B-%2BThe%2Brole%2Bof%2Bgender%2Bstereotypes%2Bin%2Bthe%2Bultimate%2Bintellectual%2Bsport.pdf).
 - Verghese, J., et al. (2003). *Leisure Activities and the Risk of Dementia in the Elderly*. New England Journal of Medicine, 348, 2508–2516. [Article intégral](https://www.activeminds.com/docs/NEJM%20030619.pdf).
@@ -444,14 +444,10 @@ Trois techniques rapides :
 
 
 
-- **Shannon, C. E. (1950).** *Programming a Computer for Playing Chess.* *Philosophical Magazine*. (Nombre de parties d'échecs possibles.)
-- **Bourdieu, P. (1979).** *La Distinction : critique sociale du jugement.* Éditions de Minuit. (Capital culturel, distinction, reproduction sociale.)
-- **Nye, J. (1990).** *Bound to Lead : The Changing Nature of American Power.* Basic Books. (Théorie du *soft power*.)
-- **Nora, P. (1984-1992).** *Les Lieux de mémoire.* Gallimard. (Distinction histoire / mémoire, **patrimoine** culturel.)
-- **Silver, D., et al. (2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero, apprentissage par renforcement.)
-- **Zermelo, E. (1913).** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* (Théorème fondamental sur les jeux à somme nulle.)
-- **FIDE - Handbook (2024).** [fide.com/regulations](https://www.fide.com/regulations). (Règles officielles, classement Elo, dotations.)
-- **Lichess Open Database.** [lichess.org/database](https://database.lichess.org). (Base de 4 milliards de parties pour applications statistiques.)
+- Shannon, C. E. (1950), *Programming a Computer for Playing Chess*, Philosophical Magazine, 41, 256–275. [Article](https://d1yx3ys82bpsa0.cloudfront.net/chess/programming-a-computer-for-playing-chess.shannon.062303002.pdf).
+- Silver, D. et al. (2018), *A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play*, Science, 362, 1140–1144. [Article et supplément](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphazero-shedding-new-light-on-chess-shogi-and-go/alphazero_preprint.pdf).
+- Zermelo, E. (1913), *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels*, actes du congrès de 1912, traduction dans Schwalbe et Walker (2001), *Zermelo and the Early History of Game Theory*, Games and Economic Behavior. [Texte et traduction](https://studylib.net/doc/28166551/zermelo-work).
+- IBM (s. d.), *Deep Blue*, histoire du projet. [Présentation](https://www.ibm.com/history/deep-blue).
 
 ---
 
