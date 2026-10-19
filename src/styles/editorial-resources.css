@@ -38,3 +38,9 @@
 }
 
 .resource-sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+/* Deux rangées stables : le chargement de la police ne déplace plus le dernier lien. */
+@media(max-width:480px) {
+ .resource-nav--locale { display:grid; grid-template-columns:repeat(3,max-content); }
+ .resource-nav--locale a { white-space:nowrap; }
+}

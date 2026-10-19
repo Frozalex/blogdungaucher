@@ -1,0 +1,104 @@
+---
+// Les zones courtes restent dans le flux de lecture, sans arrêt de tabulation.
+---
+<script>
+  let dispose: (() => void) | undefined;
+
+  function enhanceScrollableContent() {
+    dispose?.();
+    const article = document.querySelector("main");
+    if (!article) return;
+
+    const lang = document.documentElement.lang.toLowerCase();
+    const labels = lang.startsWith("en")
+      ? { code: "Code block, scroll with the left and right arrow keys", math: "Formula, scroll with the left and right arrow keys" }
+      : lang.startsWith("pt")
+        ? { code: "Bloco de código, use as setas esquerda e direita para rolar", math: "Fórmula, use as setas esquerda e direita para rolar" }
+        : { code: "Bloc de code, défilement avec les flèches gauche et droite", math: "Formule, défilement avec les flèches gauche et droite" };
+
+    // Le nom LaTeX et role="math" restent sur leur élément d'origine. Le
+    // conteneur voisin porte le nom de la commande, sans focuser aria-hidden.
+    article.querySelectorAll<HTMLElement>(".math-render, .katex-display, .katex").forEach((math) => {
+      if (math.closest(".math-scroll-region, [aria-hidden='true'], [inert]")) return;
+      if (math.parentElement?.closest(".math-render, .katex-display, .katex")) return;
+      const wrapper = document.createElement(math.matches(".math-render--display, .katex-display") ? "div" : "span");
+      wrapper.className = "math-scroll-region";
+      if (math.matches(".math-render--display, .katex-display")) wrapper.classList.add("math-scroll-region--display");
+      math.before(wrapper);
+      wrapper.append(math);
+    });
+
+    const regions = Array.from(article.querySelectorAll<HTMLElement>("pre, .math-scroll-region"))
+      .filter((region) => !region.closest("[aria-hidden='true'], [inert]"));
+    const original = new Map(regions.map((region) => [region, {
+      tabindex: region.getAttribute("tabindex"),
+      role: region.getAttribute("role"),
+      label: region.getAttribute("aria-label"),
+    }]));
+    let frame = 0;
+    let active = true;
+
+    function restore(region: HTMLElement) {
+      const attributes = original.get(region)!;
+      for (const [name, value] of [["tabindex", attributes.tabindex], ["role", attributes.role], ["aria-label", attributes.label]] as const) {
+        if (value === null) region.removeAttribute(name);
+        else region.setAttribute(name, value);
+      }
+      region.removeAttribute("data-keyboard-scroll");
+    }
+
+    function measure() {
+      frame = 0;
+      regions.forEach((region) => {
+        const collapsedAnswer = region.closest('.faq-a[data-open="false"]');
+        if (!collapsedAnswer && region.clientWidth > 0 && region.scrollWidth > region.clientWidth + 1) {
+          region.dataset.keyboardScroll = "true";
+          region.tabIndex = 0;
+          if (!original.get(region)!.role) region.setAttribute("role", "region");
+          if (!original.get(region)!.label) region.setAttribute("aria-label", region.matches("pre") ? labels.code : labels.math);
+        } else restore(region);
+      });
+    }
+
+    function schedule() {
+      if (active && !frame) frame = requestAnimationFrame(measure);
+    }
+
+    function onKeydown(event: KeyboardEvent) {
+      const region = event.target;
+      if (!(region instanceof HTMLElement) || region.dataset.keyboardScroll !== "true") return;
+      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      // Même comportement sur les navigateurs qui ne font pas défiler les
+      // conteneurs génériques focalisés. Les commandes des descendants restent libres.
+      region.scrollLeft += event.key === "ArrowRight" ? 40 : -40;
+      event.preventDefault();
+    }
+
+    const observer = new ResizeObserver(schedule);
+    observer.observe(article);
+    regions.forEach((region) => observer.observe(region));
+    article.addEventListener("keydown", onKeydown);
+    article.addEventListener("toggle", schedule, true);
+    window.addEventListener("resize", schedule);
+    document.fonts.addEventListener("loadingdone", schedule);
+    document.fonts.ready.then(schedule);
+    measure();
+
+    dispose = () => {
+      active = false;
+      observer.disconnect();
+      cancelAnimationFrame(frame);
+      article.removeEventListener("keydown", onKeydown);
+      article.removeEventListener("toggle", schedule, true);
+      window.removeEventListener("resize", schedule);
+      document.fonts.removeEventListener("loadingdone", schedule);
+      regions.forEach(restore);
+    };
+  }
+
+  document.addEventListener("astro:before-swap", () => dispose?.());
+  document.addEventListener("astro:page-load", enhanceScrollableContent);
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", enhanceScrollableContent, { once: true });
+  else enhanceScrollableContent();
+</script>
