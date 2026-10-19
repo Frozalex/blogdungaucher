@@ -6,7 +6,7 @@ publishDate: "2027-05-25"
 category: esprit
 featured: true
 featuredRank: 2
-readingTime: 15 min
+readingTime: "6 min"
 pillar: Psychologie
 tags:
   - biais cognitifs
@@ -62,6 +62,44 @@ Elle ne conserve pas l’ensemble de ton raisonnement et ne neutralise pas tous 
 
 Ne prends pas de notes d’analyse pendant une partie officielle. Utilise ces exercices dans un cadre d’entraînement ou une fois la partie terminée.
 
+## Séparer le coup, la décision et son explication
+
+Trois objets se croisent dans une analyse. Le coup joué a des conséquences sur l'échiquier. Ta décision dépendait des informations et des idées que tu avais à ce moment-là. Ton récit après coup essaie de reconstruire ce processus. Une bonne analyse les relie sans les confondre.
+
+**Situation fictive.** Tu gagnes une partie grâce à un sacrifice qui pouvait être réfuté. Le résultat est favorable, le coup est peut-être incorrect, et ton raisonnement peut avoir contenu une idée juste suivie d'une vérification insuffisante. Dire seulement « j'ai bien joué » efface cette différence. Dire « tout était mauvais » l'efface aussi.
+
+À l'inverse, une bonne décision peut être suivie d'une faute indépendante. L'évaluation de la partie entière ne doit pas se rabattre sur son dernier événement. Choisis un moment précis, reconstruis les options disponibles et garde ce qui était effectivement connu au moment de décider.
+
+## Une étude concrète de la recherche de réfutations
+
+Dans le travail de [Cowley et Byrne](https://gwern.net/doc/psychology/chess/2004-cowley.pdf), les joueurs verbalisent leur réflexion sur des positions puis évaluent les suites examinées. Les auteurs comparent des protocoles de maîtres et de joueurs moins expérimentés. Leur dispositif étudie la recherche de suites qui invalident un plan, avec une partie de l'évaluation recueillie rétrospectivement.
+
+Cela rapproche l'observation du raisonnement, sans enregistrer toute la pensée ni reproduire chaque condition d'un tournoi. Une verbalisation et un souvenir immédiat restent des mesures. Le résultat ne démontre pas qu'un maître serait immunisé contre toute défense de son image.
+
+Pour toi, l'idée utile est de rechercher une information susceptible de changer la décision. « Mon attaque marche si l'adversaire échange les Dames » est incomplet s'il peut les garder. La question suivante n'est pas « suis-je trop orgueilleux ? », mais « qu'arrive-t-il dans la branche où il refuse ? »
+
+## Une fiche d'analyse qui produit une correction exploitable
+
+Voici un outil proposé pour l'entraînement, sans validation scientifique propre revendiquée. Note une position, un candidat et la raison pour laquelle tu le préférais. Ajoute la réponse adverse que tu considères maintenant comme critique. Termine par la différence entre ta première conclusion et ta conclusion vérifiée.
+
+La dernière ligne doit déboucher sur un apprentissage. « Je suis trop confiant » est difficile à entraîner directement. « Je n'ai pas examiné un échec intermédiaire avant de reprendre » permet de rechercher des positions où cet échec change l'ordre des opérations. Tu peux alors vérifier si tu reconnais ce motif ailleurs.
+
+Conserve aussi un exemple où ta première idée était bonne. Sinon, ton dossier sélectionne uniquement les erreurs et t'encourage à ne plus te fier à aucun jugement. L'objectif est une confiance mieux informée, pas un doute permanent.
+
+## Quand une explication psychologique reste une hypothèse
+
+Deux récits peuvent être compatibles avec le même coup. Tu as pu ignorer une défense parce que le motif était inconnu, parce que tu manquais de temps ou parce que tu recherchais surtout les réponses favorables. Sans autre information, le coup ne départage pas ces causes.
+
+Les cadres psychologiques aident à poser des questions supplémentaires : avais-tu déjà rencontré le motif ? Combien de temps restait-il ? Quelles réponses avais-tu notées à l'entraînement ? Ils deviennent moins utiles lorsqu'ils apportent immédiatement une cause invisible que rien ne pourrait contredire.
+
+La [notice de l'étude de Heck et collègues](https://discovery.geisinger.org/esploro/outputs/journalArticle/Overconfidence-Persists-Despite-Years-of-Accurate/9921404409631) rapporte une surestimation moyenne dans les échantillons étudiés. Elle ne permet pas d'identifier la cause de ta dernière défaite, ni d'affirmer que toute assurance personnelle relève du même phénomène.
+
+## Savoir quand terminer l'enquête
+
+Tu n'as pas besoin de comprendre toute ta personnalité pour tirer une leçon technique. Si une variante vérifiée montre exactement la ressource oubliée, transforme-la en exercice et reviens-y sur une autre position. Si l'explication reste incertaine, tu peux l'écrire comme telle.
+
+Une analyse achevée peut donc laisser une question ouverte. Elle a réussi si elle distingue les faits établis, les souvenirs disponibles, les hypothèses et le travail suivant. Cette méthode laisse une place à l'exigence comme au plaisir de jouer : chaque partie apporte des informations, sans devenir un jugement définitif sur toi.
+
 ## Choisir une suite praticable
 
 Une analyse n’a pas à devenir un après-midi douloureux pour être utile. Choisis une question, vérifie les variantes, puis décide si elle mérite un exercice ou une nouvelle discussion.
@@ -69,6 +107,7 @@ Une analyse n’a pas à devenir un après-midi douloureux pour être utile. Cho
 Tu peux apprendre dans une victoire, une défaite ou une partie nulle. Tu peux aussi jouer pour le plaisir sans transformer chaque résultat en programme de correction. La [comparaison sociale](/fr/blog/comparaison-sociale-aux-echecs/) et la [motivation intrinsèque](/fr/blog/motivation-intrinseque-aux-echecs/) prolongent cette réflexion.
 
 Garde les cadres psychologiques comme des questions ouvertes. Une explication devient utile quand elle éclaire ce que tu peux examiner, sans décider à ta place de ce que tu ressentais.
+
 
 ## Sources
 

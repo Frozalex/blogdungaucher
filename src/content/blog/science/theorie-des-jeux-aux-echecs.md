@@ -1,13 +1,13 @@
 ---
 title: "Théorie des jeux aux échecs : pourquoi chaque coup est une décision stratégique"
-excerpt: "Les échecs sont le terrain d'origine de la théorie des jeux. Minimax, équilibre de Nash, information parfaite : décryptage mathématique de ce qui se passe vraiment quand tu joues."
+excerpt: "Les échecs sont un terrain d'application de la théorie des jeux. Minimax, équilibre de Nash, information parfaite : décryptage mathématique de ce qui se passe vraiment quand tu joues."
 publishDate: "2026-05-05"
 updatedDate: "2026-05-21"
 category: "science"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "13 min"
+readingTime: "8 min"
 pillar: "Mathématiques"
 tags: ["théorie des jeux", "échecs", "mathématiques", "Nash", "minimax", "Zermelo", "stratégie dominante", "stratégie mixte", "science"]
 seoTitle: "Théorie des jeux aux échecs : Nash, minimax, Zermelo expliqués"
@@ -51,9 +51,9 @@ Il serait excessif d'affirmer qu'il faut nécessairement parcourir chaque partie
 
 Pour une position où les Blancs jouent, minimax prend le maximum des valeurs de ses continuations. Pour une position où les Noirs jouent, il prend leur minimum, avec une évaluation exprimée du point de vue des Blancs.
 
-$$v(p)=\max_{c\in C(p)}v(\operatorname{résultat}(p,c))$$
+$$v(p)=\max_{c\in C(p)}v(\text{résultat}(p,c))$$
 
-$$v(p)=\min_{c\in C(p)}v(\operatorname{résultat}(p,c))$$
+$$v(p)=\min_{c\in C(p)}v(\text{résultat}(p,c))$$
 
 Aux feuilles terminales, la valeur vient du résultat de la partie. Si tu arrêtes plus tôt, elle vient d'une estimation : le calcul ne prouve alors que la valeur de cet arbre tronqué avec cette évaluation.
 
@@ -76,6 +76,40 @@ Dans un jeu fini à information parfaite, la remontée de l'arbre permet de choi
 En pratique, varier ton répertoire peut compliquer la préparation adverse. Tu peux aussi préférer une ligne connue en profondeur à une surprise que tu maîtrises mal. Ce sont des choix d'entraînement et d'adaptation ; aucune répartition universelle entre 1.e4, 1.d4 et 1.Cf3 ne découle du théorème de Nash.
 
 Avant une partie, distingue ainsi deux questions : « Quelle suite semble la plus solide ? » et « Quelle suite suis-je capable de jouer correctement aujourd'hui ? » Après la partie, vérifie tes hypothèses sur l'adversaire avec les coups réellement joués.
+
+## Un arbre que tu peux résoudre toi-même
+
+Voici un **exemple pédagogique fictif**, sans prétendre représenter une position réelle. Les Blancs hésitent entre deux plans A et B. Après A, les Noirs disposent de deux réponses conduisant à des valeurs de +4 et −1 pour les Blancs. Après B, leurs réponses donnent +1 et +2. Toutes les suites s'arrêtent ici par construction.
+
+Si tu regardes seulement la meilleure feuille, A semble attirant : +4 dépasse +2. Mais les Noirs ne sont pas obligés de coopérer. Ils choisissent −1 après A, et +1 après B. Les Blancs comparent donc −1 et +1, puis choisissent B. La valeur de cet arbre est +1. Ce calcul explique ce qui manque à la phrase « j'avais vu une belle combinaison » : il faut aussi examiner ce qui se passe si l'autre refuse la continuation souhaitée.
+
+Change maintenant une hypothèse. Supposons que ces nombres soient des évaluations approximatives à trois demi-coups, et non des résultats terminaux. La remontée reste exacte **pour ces nombres** ; la conclusion sur la position réelle devient une estimation. Une capture intermédiaire située au quatrième demi-coup peut modifier l'évaluation. La rigueur consiste à garder la méthode et sa portée ensemble.
+
+Tu peux refaire l'exercice avec des issues victoire, nulle et défaite. Une branche où toutes les réponses adverses mènent à une nulle garantit la nulle. Une autre contenant neuf victoires et une défaite ne garantit aucune victoire. Le nombre de bonnes feuilles ne remplace pas le choix de l'adversaire. Pour parler de probabilité, il faut ajouter un modèle de sa conduite.
+
+## Piège, meilleure défense et espérance pratique
+
+Un piège peut gagner souvent sans être théoriquement bon. Prenons un **modèle fictif de préparation** : une ligne risquée donne la victoire si l'adversaire tombe dans le piège, mais la défaite s'il trouve la réfutation. Si sa probabilité de tomber dedans est supposée égale à 70 %, le score attendu vaut 0,70, avec la notation de tournoi. Une autre ligne garantit hypothétiquement la nulle, soit 0,50. La première maximise l'espérance dans ce modèle ; la seconde garantit davantage contre une défense exacte.
+
+Mais d'où vient 70 % ? Ce chiffre est inventé pour l'exercice. Une fréquence dans une base peut être trompeuse : adversaires moins expérimentés, parties rapides, anciennes versions de la théorie, piège connu des seuls joueurs qui y entrent. Si ton prochain adversaire a préparé la réfutation, la fréquence historique n'est pas sa probabilité de se tromper. Une stratégie dite « pratique » doit expliciter les connaissances sur lesquelles elle parie.
+
+C'est aussi pourquoi une surprise ne se juge pas uniquement à son score immédiat. Une ligne peut être efficace une fois, puis devenir mauvaise quand les adversaires adaptent leur préparation. La [présentation de la théorie des jeux par la Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/game-theory/) aide à séparer stratégies, utilités et croyances. Elle ne fournit aucune fréquence optimale universelle pour ton répertoire.
+
+## Le résultat de la partie et l'objectif du tournoi
+
+Une nulle peut suffire à remporter un tournoi ; elle peut aussi laisser un joueur éliminé. Les règles et les points de la partie sont les mêmes, mais l'objectif pratique change. Maximiser le score moyen de la partie et maximiser la probabilité de finir premier ne sont pas deux formulations automatiquement équivalentes.
+
+**Situation fictive :** à la dernière ronde, seule une victoire permet de te qualifier. Tu peux préférer une position avec davantage de déséquilibres à une répétition de coups disponible. Cela ne rend pas la répétition moins correcte dans le jeu abstrait. Tu changes la fonction d'utilité pertinente pour ta décision. Il faut encore vérifier que la complication conserve des chances raisonnables, au lieu de confondre obligation de gagner et obligation de sacrifier.
+
+Une analyse utile peut donc garder deux colonnes : valeur échiquéenne estimée et intérêt pour ton objectif réel. Cette séparation permet de discuter une décision sans réécrire après coup les règles mathématiques pour justifier un pari.
+
+## Comment utiliser cette théorie dans ton entraînement
+
+Choisis une partie récente et reconstruis un seul moment décisif. Écris tes deux candidats, la réponse adverse que tu attendais et celle que tu redoutais. Puis cherche une troisième réponse que tu avais négligée. Le but n'est pas de calculer tout l'arbre, mais de vérifier si ton choix reposait sur la coopération de l'adversaire.
+
+Lors de la correction, sépare trois erreurs possibles : une réponse légale oubliée, une position finale mal évaluée, ou une hypothèse fragile sur le comportement adverse. Elles appellent des travaux différents. La première demande de mieux générer les candidats ; la deuxième de comprendre les positions obtenues ; la troisième de mieux distinguer préparation et spéculation.
+
+Ce protocole est une proposition d'entraînement, pas une intervention validée expérimentalement. Il donne néanmoins une traduction concrète à la théorie : tu ne cherches plus seulement une suite brillante, tu précises ce que ton choix garantit et ce qu'il suppose.
 
 ## Sources
 

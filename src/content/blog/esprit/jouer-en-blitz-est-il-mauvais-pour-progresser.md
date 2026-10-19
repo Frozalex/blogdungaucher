@@ -63,6 +63,46 @@ Dans les formats très courts, l’exécution et la gestion de quelques secondes
 
 Si tu n’arrives plus à arrêter alors que tu souhaitais le faire, prévois une fin de séance et regarde ce qui déclenche la relance. Le volume seul ne suffit pas à diagnostiquer une addiction. L’article sur les [pauses](/fr/blog/bienfaits-des-pauses-aux-echecs/) propose une organisation adaptable.
 
+## La bonne question est aussi : progresser dans quoi ?
+
+Améliorer son classement blitz, mieux jouer une finale classique et gagner en vitesse d'exécution sont des objectifs différents. Une séance peut servir l'un sans suffire pour les autres. Avant de juger le format, précise la compétence et le contexte dans lesquels tu souhaites la retrouver.
+
+Le blitz impose une contrainte de temps qui favorise des décisions rapides, mais il contient encore de vrais choix de développement, de calcul et de défense. La question n'est pas de lui retirer toute valeur stratégique. Elle est de savoir si le temps disponible te permet de travailler le problème visé.
+
+**Exemple fictif :** tu connais le principe d'une finale mais tu n'arrives pas à l'appliquer avec dix secondes. Une partie d'entraînement plus lente peut permettre d'expliciter la méthode. Si tu comprends déjà la méthode et veux l'exécuter dans ton format habituel, une contrainte plus courte peut poser une autre question utile. Aucune de ces propositions ne définit une progression garantie.
+
+## Ce qu'une enquête sur la pratique ne compare pas
+
+L'[article de Charness et ses collègues](https://onlinelibrary.wiley.com/doi/10.1002/acp.1106) rapporte des associations entre activités déclarées et niveau. Il ne compare pas deux groupes identiques assignés à une dose précise de blitz ou d'étude. La pratique passée peut être liée à l'expérience, aux possibilités d'entraînement et à plusieurs différences entre joueurs.
+
+Cela n'empêche pas de prendre au sérieux le travail délibéré. Mais une association ne donne pas la proportion optimale de ton prochain mois. Elle ne démontre pas non plus que le loisir sans objectif de performance soit du temps « perdu ». Une question de recherche sur l'expertise et un choix personnel d'activité n'ont pas le même critère.
+
+Il faut aussi se méfier des comparaisons de champions : un très fort joueur peut retrouver rapidement des motifs qu'un débutant n'a pas encore appris. Leur même durée de réflexion ne correspond pas au même ensemble de connaissances. Copier le volume visible d'un champion sans son parcours ne reproduit pas son entraînement.
+
+## Faire d'une petite série une source de positions
+
+Voici une **proposition de séance**, sans nombre universel de parties. Choisis un thème : une structure du répertoire, une vérification de tactique ou la gestion d'une finale. Joue dans une durée décidée à l'avance, puis garde une position qui pose une question compréhensible.
+
+Note ce que tu avais vu avant de consulter la correction. Si la solution dépend d'un motif que tu ne connaissais pas, étudie ce motif. Si tu l'avais reconnu mais mal calculé, reconstitue la réponse adverse. Le format rapide produit alors du matériel à examiner ; le simple fait d'accumuler des parties ne garantit pas cette étape.
+
+Tu peux choisir une victoire ou une nulle. Ne garder que les défaites spectaculaires ferait disparaître les erreurs sauvées par l'autre et les bonnes décisions dont tu ne comprenais pas la raison. Le résultat ne doit pas sélectionner à lui seul le contenu de ton apprentissage.
+
+## Comparer des formats sans tirer trop vite une conclusion
+
+Si tu veux savoir ce qu'une cadence plus longue change pour toi, observe des positions et des adversaires aussi comparables que possible. Note les questions que le temps supplémentaire t'a permis de résoudre. Un meilleur score sur une seule soirée ne suffit pas : les appariements et les positions peuvent expliquer la différence.
+
+Regarde aussi le coût total. Une partie plus longue peut mieux convenir au calcul approfondi, mais elle demande davantage de disponibilité et laisse moins de temps pour d'autres activités. Un format réaliste que tu peux pratiquer sérieusement peut être plus utile à ton projet qu'un programme idéal que tu ne peux pas suivre.
+
+L'incrément mérite une distinction. Il ajoute du temps après les coups, mais ne supprime pas le risque de tomber au temps. Il peut rendre certaines exécutions moins précipitées ; il ne garantit ni la précision ni un transfert vers le classique. Choisis-le en comprenant ce qu'il change réellement.
+
+## Reconnaître quand le format ne sert plus ton objectif
+
+Tu peux continuer à jouer alors que tu n'essaies plus le thème prévu, que tu ne souhaites plus vraiment une nouvelle partie ou que la séance dépasse largement sa place dans ta journée. Ces observations peuvent justifier une adaptation sans poser de diagnostic d'addiction.
+
+Si la seule raison de relancer est de récupérer immédiatement des points, rappelle-toi que le résultat suivant n'est pas contrôlable. Une fin de séance décidée à l'avance peut t'aider à retrouver un choix. Sa durée doit rester personnelle et révisable, sans protocole imaginaire de récupération de dopamine.
+
+Le blitz peut donc être un loisir, un terrain d'essai ou une partie d'un entraînement plus varié. Pour le juger, examine ce que tu apprends, ce que tu peux vérifier ensuite et ce que le volume remplace. La recherche citée ne donne ni interdiction générale ni pourcentage magique.
+
 ## Sources
 
 - Charness, N., Tuffiash, M., Krampe, R., Reingold, E. et Vasyukova, E. (2005), « The role of deliberate practice in chess expertise », *Applied Cognitive Psychology*, 19(2), 151–165. [Résumé original](https://onlinelibrary.wiley.com/doi/10.1002/acp.1106), DOI : 10.1002/acp.1106.

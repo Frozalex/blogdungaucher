@@ -7,7 +7,7 @@ publishDate: "2026-07-13"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 9 min
+readingTime: "10 min"
 pillar: Neurosciences
 tags:
   - vision spatiale
@@ -155,6 +155,46 @@ La synthèse de Sala et Gobet (2017) invite précisément à distinguer cette hy
 **3. La dictée de notation.** Fais lire à un partenaire les 15-20 premiers coups d'une célèbre partie (notation algébrique), tente de visualiser la position finale, puis compare avec l'échiquier réel.
 
 **4. L'analyse sans moteur.** Analyser une partie sans moteur d'abord, en notant tes variantes sur papier, force la visualisation de positions qui n'ont jamais existé physiquement. C'est un exercice de visualisation spatiale déguisé en analyse.
+
+## Visualiser une transformation plutôt qu'une photographie
+
+Lorsque tu suis une variante, chaque coup modifie plusieurs informations : la case de départ se vide, la case d'arrivée change, une ligne peut s'ouvrir et une pièce capturée disparaît. Une image initiale très vive peut devenir trompeuse si tu ne mets pas à jour ces changements.
+
+**Exercice construit.** Pars de la position initiale et suis 1.e4 d5 2.exd5 Dxd5 3.Cc3 Da5. Sans déplacer les pièces, réponds : où se trouve la Dame noire ? Quels pions ont disparu ? Quel Cavalier blanc a bougé ? La correction est a5 ; les pions blanc e et noir d ; le Cavalier b1, maintenant en c3. Les autres pièces n'ont pas quitté leurs cases initiales.
+
+Cet exercice ne demande pas d'évaluer toute la position. Il sépare la représentation des pièces et le jugement stratégique. Si ta position reconstruite est fausse, une mauvaise évaluation ultérieure ne doit pas être attribuée immédiatement à une compréhension insuffisante de l'ouverture.
+
+Refais ensuite avec une ligne différente : mémoriser la réponse de cet exemple ne suffit pas à vérifier une compétence plus générale. Tu peux augmenter un élément à la fois, longueur de la variante, nombre de captures ou diversité des pièces déplacées.
+
+## Une case vide peut porter l'information importante
+
+Dans le [suivi du regard de Charness et collègues](https://pubmed.ncbi.nlm.nih.gov/11913751/), la sélection visuelle ne se réduit pas au comptage des pièces regardées. Les relations entre éléments et les cases pertinentes font partie du problème échiquéen. Cela ne donne pas pour autant une photographie de toute la représentation mentale de chaque participant.
+
+Pour comprendre l'enjeu sur le plateau, reprends l'exercice précédent. Le départ du pion d noir libère une colonne ; le déplacement du Cavalier b1 libère une case ; la Dame noire sur a5 entretient de nouvelles relations de lignes et de diagonales. Une bonne description ne se limite donc pas à six coordonnées : elle doit suivre ce que ces déplacements rendent possible.
+
+Tu peux travailler cette dimension en ajoutant, après chaque coup, une seule question : quelle ligne vient de changer ? Elle aide à prendre en compte l'espace vide. Ce n'est pas une consigne de reproduire les mouvements oculaires des experts : le trajet des yeux observé est un résultat, pas un exercice prêt à copier.
+
+## Deux exercices de géométrie avec leur correction
+
+**Couleur des cases.** Fixe a1 comme case sombre. En numérotant les colonnes a=1, b=2 et ainsi de suite, une somme colonne + rangée paire correspond à une case sombre ; une somme impaire à une case claire. Ainsi e5 donne 5+5=10, donc sombre ; c4 donne 3+4=7, donc claire. Cette règle est un repère de coordonnées, pas une preuve d'amélioration cognitive hors du jeu.
+
+**Trajet de Cavalier sur échiquier vide.** Pour aller de b1 à c3, un seul saut suffit : deux rangées et une colonne. Pour aller de b1 à b3, deux sauts suffisent : b1-d2-b3. Un seul saut b1-b3 est impossible car il ne change pas de colonne. L'exemple montre l'intérêt de contrôler l'arrivée et la légalité, pas seulement d'imaginer un mouvement fluide.
+
+Dans les deux exercices, vérifie ensuite sur un plateau. Si la correction contredit ton image, cherche l'étape précise. Une erreur de coordonnées n'appelle pas la même correction qu'un oubli d'une pièce capturée.
+
+## Adapter l'exercice à la nature de l'erreur
+
+Si tu connais les cases mais mélanges les branches, reviens toujours à la position de départ entre deux variantes. Si tu oublies ce qui a été capturé, commence avec peu de pièces et annonce explicitement les disparitions. Si tu suis correctement les coups sans comprendre les menaces, ajoute une question d'attaque ou de défense au lieu d'allonger la variante.
+
+La durée du travail et sa difficulté restent à adapter. Une séance courte avec des corrections comprises peut être plus exploitable qu'une partie à l'aveugle qui devient rapidement impossible à reconstruire. L'objectif est de repérer ce qui tient et ce qui cède, pas de prouver ta force par une longueur maximale.
+
+Le calcul à l'aveugle n'est d'ailleurs pas une obligation pour apprécier les échecs ou progresser. Tu peux analyser sur plateau, puis réduire progressivement les manipulations lorsque l'exercice devient clair. Les recherches citées n'imposent aucun parcours unique.
+
+## Où s'arrête ce que l'on peut conclure ?
+
+Réussir davantage de variantes nouvelles permet de constater un progrès dans cette tâche échiquéenne. Pour annoncer une amélioration de la rotation mentale, de la géométrie scolaire ou de l'orientation dans un bâtiment, il faudrait mesurer chacune de ces capacités avec une comparaison appropriée.
+
+L'étude [IRMf d'Atherton et collègues](https://experts.umn.edu/en/publications/a-functional-mri-study-of-high-level-cognition-i-the-game-of-ches/) renseigne sur des activations pendant la tâche étudiée. Une région engagée dans plusieurs activités ne suffit pas à établir que l'entraînement à l'une améliore l'autre. Ton travail de visualisation a déjà une utilité précise lorsqu'il rend ton calcul échiquéen plus contrôlable ; il n'a pas besoin d'une promesse plus large pour valoir la peine.
 
 ## Sources
 

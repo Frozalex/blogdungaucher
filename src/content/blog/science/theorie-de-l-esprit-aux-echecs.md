@@ -1,14 +1,13 @@
 ---
 title: "La théorie de l'esprit aux échecs : le piège est une croyance fausse"
 excerpt: >-
-  Poser un piège suppose de se représenter ce que l'adversaire croit, et de savoir que cette croyance
-  est fausse. C'est exactement la compétence que les psychologues testent chez l'enfant de quatre ans.
-  C'est aussi la seule chose que les moteurs ne savent pas faire.
+  Anticiper une erreur suppose une hypothèse sur l’adversaire, pas un accès direct à ses pensées.
+  Théorie de l’esprit, pièges et modèles comme Maia : distinguer le calcul, la prédiction et les croyances.
 publishDate: "2027-03-23"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 9 min
+readingTime: "7 min"
 pillar: Cognition
 tags:
   - théorie de l'esprit
@@ -33,6 +32,7 @@ heroImage:
   src: /images/blog/theorie-de-l-esprit-aux-echecs-hero.webp
   alt: Deux profils séparés par un écran regardent des objets différents.
 ogImage: /images/og/theorie-de-l-esprit-aux-echecs-og.webp
+
 ---
 
 Tu vois une prise tentante que ton adversaire pourrait jouer. Si elle perd, tu peux espérer qu'il tombe dans le piège. Mais tu ne sais pas directement ce qu'il a vu : tu fais une hypothèse à partir de la position et de ce que tu connais de lui.
@@ -57,7 +57,7 @@ Pour travailler ce point, écris la réponse que tu attends et la ressource adve
 
 La recherche minimax évalue les meilleures réponses dans l'arbre exploré, selon sa profondeur et ses valeurs. Elle ne fournit pas automatiquement un modèle personnel de l'adversaire. Cela n'implique pas que tous les programmes possibles soient incapables d'en utiliser un.
 
-L'ancienne version passait de cette propriété d'un algorithme à une impossibilité générale des machines : « aucun moteur ne peut poser de piège ». Cette conclusion ne tient pas.
+La propriété d'un algorithme ne devient pas une impossibilité générale des machines : un programme peut aussi être conçu pour prédire ou exploiter des erreurs humaines.
 
 ## Maia : prédire des coups humains
 
@@ -74,6 +74,44 @@ Une habitude observée dans quelques parties n'est pas une règle permanente. To
 Sépare les observations (« il a joué vite dans ces positions ») des interprétations (« il refuse tout risque »). Évite aussi d'assimiler les neurones miroirs à une explication complète de la compréhension des intentions ; [l'article dédié](/fr/blog/neurones-miroirs-aux-echecs/) distingue ces questions.
 
 Pour ta préparation, un modèle adverse reste une aide à tester. Il doit laisser une place aux meilleures défenses, surtout lorsque ton idée ne marche que sur une erreur.
+
+## Distinguer information publique et analyse privée
+
+Les pièces et les coups sont visibles dans une partie classique. En revanche, tu ne vois pas directement les variantes que l'adversaire a calculées, ses intentions ni ses hésitations. Le jeu peut donc être à information parfaite au sens des règles tout en comportant une incertitude sur le raisonnement de l'autre.
+
+Une nouveauté d'ouverture illustre cette différence : les deux joueurs peuvent lire la même position, mais l'un l'a étudiée et l'autre la découvre. Le coup reste légal pour les deux. Ce qui diffère est la préparation, pas l'accès visuel à une pièce cachée.
+
+Tu peux utiliser cette asymétrie pour choisir une position pratique. Mais tu dois garder deux évaluations distinctes : la qualité du coup contre une bonne défense et ta prédiction de ce que l'adversaire jouera. La seconde ne doit pas faire disparaître la première.
+
+## Un piège comporte toujours une branche où l'autre ne coopère pas
+
+Voici un exemple d'ouverture légal, utilisé comme exercice pédagogique : **1.e4 e5 2.Dh5 Cc6 3.Fc4**. Les Blancs menacent **Dxf7#** si les Noirs ne répondent pas à la menace. Après **3...Cf6??**, **4.Dxf7#** fonctionne ; après **3...g6**, la dame blanche est attaquée et doit réagir.
+
+Ce contraste ne recommande pas la sortie précoce de la dame comme répertoire universel. Il montre que prédire une faute et vérifier une menace sont deux opérations différentes. Si tu ne regardes que Cf6, tu analyses une coopération ; si tu examines aussi g6, tu demandes ce que ton idée vaut lorsque l'adversaire voit le problème.
+
+Même si le piège réussit, plusieurs explications restent possibles : l'adversaire a oublié la menace, mal suivi la diagonale du fou, joué trop vite ou cru disposer d'une défense. Sans autre information, le résultat ne dit pas laquelle est vraie. L'analyse de la position est certaine sur le mat ; l'interprétation de l'état mental reste une hypothèse.
+
+## Ce que Maia prédit, et ce qu'il ne lit pas
+
+Le travail de McIlroy-Young et ses collègues compare des modèles sur leur capacité à prédire des coups humains. La réussite consiste à retrouver le coup effectivement joué dans les données, avec une adaptation au niveau. Ce critère diffère de la qualité du coup sous meilleure défense.
+
+Une prédiction juste n'établit pas que le modèle représente explicitement la croyance particulière de la personne. Une prédiction fausse ne prouve pas davantage que le joueur est irrationnel : le modèle représente des régularités et peut manquer des informations de contexte.
+
+Pour évaluer une telle approche, demande sur quelles parties elle a été entraînée et sur quelles parties elle est testée. Un bon résultat sur une population ne devient pas automatiquement une prédiction fiable d'un adversaire précis lors d'une ronde décisive. Le protocole permet une comparaison utile sans résoudre toute la psychologie humaine.
+
+## Le raisonnement sur l'autre peut aider et tromper
+
+« Il aime attaquer » peut te pousser à examiner une menace pertinente ; cela peut aussi te faire oublier une simplification raisonnable. Un style décrit une tendance observée dans certaines positions, pas une obligation permanente.
+
+À l'entraînement, écris deux réponses : celle que tu attends et celle qui gêne le plus ton coup. Si elles diffèrent, examine les deux. Cette consigne proposée permet de garder une place au calcul objectif tout en utilisant ton expérience de l'adversaire.
+
+Après la partie, pose une question ouverte plutôt qu'une accusation : « Qu'avais-tu envisagé après ce coup ? » Le témoignage peut corriger ton modèle, tout en restant un souvenir imparfait. Il ne fournit pas une mesure directe de toutes les croyances présentes pendant la ronde.
+
+## Une théorie psychologique n'est pas une supériorité morale
+
+Piéger ne signifie pas forcément tromper une personne sur les règles ou se moquer de son niveau. Une ressource tactique fait partie du jeu. Tu peux exploiter une erreur tout en respectant ton adversaire et le règlement.
+
+Inversement, appeler un coup « psychologique » ne le rend pas bon. Lorsque la meilleure défense réfute ton idée, tu dois décider si le risque pratique est acceptable ; aucun mot de cognition ne transforme cette réfutation en avantage. La qualité de ton modèle adverse se juge sur des prédictions et des corrections, sans prétendre accéder directement à l'esprit de l'autre.
 
 ## Sources
 

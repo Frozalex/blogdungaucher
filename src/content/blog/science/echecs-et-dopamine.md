@@ -8,7 +8,7 @@ category: science
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 9 min
+readingTime: "6 min"
 pillar: Neurosciences
 tags:
   - dopamine
@@ -86,6 +86,38 @@ Garde aussi la possibilité d’apprécier une séance sans victoire finale. Com
 Si le jeu déborde régulièrement sur tes obligations ou te fait souffrir, cherche du soutien pour la situation que tu vis. Une explication neurochimique supposée ne remplace pas cette discussion.
 
 Pour poursuivre : [l’épuisement dans la pratique](/fr/blog/burnout-chess/) et [le stress en tournoi](/fr/blog/echecs-stress-tournoi/).
+
+## D'où vient exactement le modèle de prédiction ?
+
+Dans l'[article de Schultz, Dayan et Montague](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf), des travaux chez le primate sont rapprochés de modèles d'apprentissage. Les expériences décrites emploient notamment un signal sensoriel, une action et une récompense alimentaire. Des enregistrements suivent l'activité de neurones, ce qui est différent d'une mesure du plaisir déclaré ou d'un dosage global de dopamine dans tout le cerveau.
+
+Après apprentissage, l'activation transitoire peut se déplacer de la récompense au signal qui l'annonce. L'omission d'une récompense attendue modifie aussi la réponse. Le point central concerne l'écart avec une prédiction, pas une équivalence universelle entre satisfaction et quantité de dopamine. Ce protocole ne contient ni pendule d'échecs ni mesure de points Elo.
+
+Une mesure localisée et un modèle mathématique peuvent éclairer un mécanisme sans suffire à expliquer toute une conduite humaine. Tu peux décrire un soulagement après une nulle sauvée, une fierté après une combinaison ou une frustration après un gain manqué. Ces expériences ont des contextes différents ; leur attribuer une signature neurochimique identique supprimerait précisément ce qu'il faut expliquer.
+
+## Un exemple chiffré d'apprentissage, sans dosage imaginaire
+
+Voici une **analogie pédagogique fictive**. Tu prévois de réussir un exercice avec une valeur d'attente de 0,4. Le résultat vaut 1 si tu trouves la solution et 0 sinon. Dans un modèle simplifié, l'erreur est le résultat moins l'attente : 1 − 0,4 = 0,6 après une réussite, ou 0 − 0,4 = −0,4 après un échec.
+
+Avec un taux d'apprentissage arbitraire de 0,2, une mise à jour de la forme « nouvelle attente = ancienne attente + 0,2 × erreur » donne 0,52 après la réussite. Ce calcul illustre comment une expérience inattendue change une prévision. Les valeurs sont des nombres du modèle, **pas des concentrations de neurotransmetteur**. Il ne prédit pas l'intensité de ton plaisir ni ton envie de continuer.
+
+L'analogie a d'autres limites. Une partie fournit des informations à chaque coup, la difficulté varie et le résultat dépend d'un adversaire. Tu peux apprendre malgré une défaite, ou gagner sans avoir compris une position. Réduire tout l'apprentissage au seul résultat final fait perdre la richesse de ce retour.
+
+## Vouloir rejouer et aimer jouer : deux observations distinctes
+
+La [revue de Berridge et Robinson](https://sites.lsa.umich.edu/berridge-lab/wp-content/uploads/sites/743/2019/10/BerridgeRobinsonBrResRev1998.pdf) examine différentes fonctions attribuées à la dopamine, dont l'apprentissage et la saillance incitative. Elle distingue notamment l'attraction motivationnelle d'une récompense et son impact hédonique. Elle ne teste pas un programme de « détox » pour joueurs d'échecs.
+
+**Situation fictive :** après trois défaites, tu n'apprécies plus les parties, mais tu veux revenir au classement de départ avant de fermer l'application. Le constat utile est la divergence entre envie de relancer et plaisir de jouer. Tu peux aussi continuer par habitude, parce qu'un ami est encore connecté, ou parce que tu as du mal à laisser une tâche inachevée. Une description comportementale ne permet pas de trancher entre toutes ces explications au niveau cérébral.
+
+Tu peux noter, avant et après une séance, ce que tu avais décidé de faire, ce que tu as effectivement fait et ce que tu en as retiré. Cette observation personnelle ne constitue ni un diagnostic d'addiction ni une expérience de neurosciences. Elle peut néanmoins révéler un problème d'organisation sur lequel tu peux agir.
+
+## Organiser les retours d'apprentissage plutôt que chercher un pic
+
+Si tu veux progresser, choisis un retour lié à la compétence travaillée. Pour une finale de pions, explique la case clé avant de déplacer le roi. Pour une tactique, écris la meilleure défense adverse. Pour une ouverture, retrouve le plan derrière un coup. Une victoire rapide n'est pas le seul retour informatif.
+
+Une proposition pratique consiste à finir une séance par une question comprise et une question à revoir, sans obligation de réussir un dernier puzzle. Tu peux conserver une difficulté non résolue pour la prochaine fois. Cela évite de transformer la fin de séance en recherche interminable d'un résultat rassurant.
+
+Le critère à examiner est concret : comprends-tu mieux la position, respectes-tu le temps choisi et gardes-tu du plaisir ? Ces repères sont observables. Les appeler « optimisation de dopamine » n'ajouterait aucune mesure et pourrait donner une autorité trompeuse à un simple conseil d'entraînement.
 
 ## Sources
 

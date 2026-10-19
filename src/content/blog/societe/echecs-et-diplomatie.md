@@ -6,7 +6,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 8 min
+readingTime: "11 min"
 pillar: Échecs et société
 tags:
   - diplomatie
@@ -115,6 +115,46 @@ Les décisions sportives peuvent aussi manifester une rupture. **En mars 2022**,
 L’échiquier peut donc servir un projet de rencontre comme un récit d’affrontement. Sa présence ne détermine pas le sens politique de l’événement. Les conditions de participation et l’usage public qui en est fait comptent davantage qu’une neutralité supposée du jeu.
 
 **Après lecture :** devant un projet présenté comme un outil de paix, distingue l’activité documentée, l’objectif annoncé et le résultat effectivement évalué. Cette distinction permet de prendre les initiatives au sérieux sans leur attribuer un effet non démontré.
+
+## Quatre usages à distinguer dans un même événement
+
+Un tournoi international peut cumuler plusieurs fonctions. Il rassemble d'abord des joueurs autour d'une compétition. Il peut ensuite offrir une image publique à une ville ou un État. Des personnes peuvent profiter de l'événement pour se rencontrer. Enfin, une organisation peut lui attribuer une mission sociale ou de paix. La présence de ces fonctions ne signifie pas qu'elles ont toutes été réalisées avec le même succès.
+
+Pour les distinguer, demande quel est le résultat observé. Un nombre de parties atteste une activité. La présence de délégations atteste une représentation. Un communiqué atteste une prise de parole. Un accord ou une transformation des relations demande d'autres éléments. Cette graduation évite de transformer chaque photographie autour d'un échiquier en preuve de rapprochement politique.
+
+Elle permet aussi de lire une source sans la disqualifier entièrement. Un organisateur connaît le programme et les partenaires ; il peut être bien placé pour attester qu'une séance a eu lieu. Son intérêt à présenter positivement le projet oblige toutefois à chercher d'autres mesures quand il annonce un effet durable.
+
+## Lire un bilan de paix comme un document situé
+
+Le [document FIDE–Peace and Sport](https://www.fide.com/images/stories/NEWS_2013/FIDE/FIDE_-_Peace_and_Sport.pdf) présente des projets, des partenaires et des photographies. Il donne accès au discours des organisations concernées. Dans le cas palestinien, il évoque une évaluation menée par les acteurs locaux impliqués ; cela ne correspond pas à une comparaison indépendante randomisée.
+
+On peut donc en tirer des questions précises : que comprenait l'activité, qui l'encadrait, quelles personnes ont été rejointes ? Pour affirmer un effet, il faudrait encore connaître les indicateurs, les personnes interrogées, les absences et le suivi. Le témoignage des participants a une valeur descriptive, mais il ne suffit pas à isoler l'effet des échecs parmi l'ensemble de l'accompagnement.
+
+Il faut enfin regarder le document lui-même. Les formulations promotionnelles et une chronologie parfois peu claire ne doivent pas devenir des faits enrichis de mémoire. Quand une date ou une relation entre partenaires importe au raisonnement, elle mérite une vérification croisée. Le titre « Chess for Peace » ne constitue pas une évaluation en soi.
+
+## Un cas récent de diplomatie publique, sans lui attribuer des résultats inconnus
+
+La [FIDE relate un événement organisé à l'ONU à Genève le 8 juillet 2026](https://www.fide.com/chess-for-humanity-armenia-and-fide-champion-social-change-at-un-geneva-side-event/), avec la mission permanente de l'Arménie et plusieurs partenaires. Le compte rendu décrit des prises de parole et une mise en avant des projets sociaux d'échecs. Il documente une scène institutionnelle où le jeu sert de support de représentation et de communication.
+
+Cette publication permet de parler de diplomatie publique dans un sens limité : des acteurs présentent leurs valeurs, leurs partenaires et leurs projets devant un public international. Elle ne prouve pas qu'un conflit a été résolu ni que les participants ont durablement changé d'attitudes. Le lieu prestigieux n'ajoute pas automatiquement une preuve d'efficacité au programme présenté.
+
+Comparer ce cas aux projets de terrain évite une confusion : une conférence institutionnelle et un atelier régulier ne poursuivent pas nécessairement les mêmes objectifs. Leur réussite doit être évaluée avec des critères adaptés, plutôt qu'avec le seul mot « paix ».
+
+## Une rencontre bien conçue peut-elle produire autre chose qu'une image ?
+
+Voici un **scénario fictif d'organisation**, pas le récit d'un projet existant. Deux associations proposent des tables mêlant des participants qui se connaissent peu. Les organisateurs souhaitent faciliter une première rencontre. Ils prévoient des règles accessibles, une participation volontaire et un moment de discussion après le jeu. Une telle description permet déjà de regarder ce que l'échiquier apporte : une activité partagée et un sujet concret de conversation.
+
+Pour apprécier le résultat, on peut demander si les personnes souhaitent revenir et si de nouveaux contacts ont effectivement eu lieu. Il faut aussi entendre celles qui ont quitté la séance ou ne se sont pas senties à l'aise. Si l'on ne recueille que les témoignages des participants les plus satisfaits, l'image du projet sera sélectionnée.
+
+Une évaluation plus ambitieuse pourrait comparer des activités offrant un contact social similaire, avec ou sans échecs, puis examiner la durée des effets. Cela ne retire rien à l'intérêt immédiat d'une rencontre. Cela situe simplement la question : le jeu crée-t-il quelque chose de particulier, ou est-ce surtout le cadre, le partenaire et l'accompagnement ?
+
+La possibilité de perdre doit également être pensée. La compétition peut donner un objectif partagé, mais elle peut reproduire des tensions si les différences de niveau, de langue ou de statut ne sont pas considérées. Une activité coopérative d'analyse peut parfois mieux répondre au projet qu'un classement final. C'est un choix d'organisation à discuter, pas une supériorité démontrée universellement.
+
+## Ce que la métaphore échiquéenne laisse hors du jeu
+
+Aux échecs, les joueurs acceptent les règles d'une même partie et son résultat. Dans une négociation, les parties peuvent contester les règles, agir à plusieurs niveaux et chercher un bénéfice commun. Une concession n'est pas forcément une pièce perdue ; elle peut rendre un accord possible. Le cadre de somme nulle peut donc appauvrir une discussion réelle.
+
+Tu peux garder une question inspirée du jeu, « quelles réponses mon choix rend-il possibles ? », tout en abandonnant une autre image, « l'autre doit perdre pour que je gagne ». Cette utilisation limitée est plus utile que la prétention d'apprendre la diplomatie entière sur 64 cases. Les échecs peuvent ouvrir une conversation ; les preuves de ses conséquences doivent venir du monde où elle se poursuit.
 
 ## Pour aller plus loin
 

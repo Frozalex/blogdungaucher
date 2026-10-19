@@ -8,7 +8,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 15 min
+readingTime: "15 min"
 pillar: Culture
 tags:
   - échecs et argent
@@ -210,6 +210,46 @@ Non. La FIDE documente ses [relations avec le mouvement olympique](https://www.f
 ---
 
 Pour envisager une activité semi-professionnelle, sépare **cours, contenu et compétition**, puis ajoute les coûts, les heures non facturées et un scénario prudent sans prix exceptionnel. Cette méthode ne promet pas une carrière ; elle permet d’examiner un projet concret plutôt que de copier le revenu d’une vedette.
+
+## Lire un palmarès financier sans confondre trois comptes
+
+Un classement de prix de tournoi répond à une question étroite : quelles sommes les compétitions retenues ont-elles attribuées à certains joueurs ? Le chiffre d'affaires d'une activité professionnelle répond à une autre question : quelles recettes proviennent des cours, des contrats, des contenus et des compétitions ? Le revenu disponible suppose encore de connaître les charges et le régime applicable.
+
+Le [relevé de Chess.com pour 2025](https://www.chess.com/article/view/biggest-chess-prizewinners-2025) annonce son périmètre et ses exclusions. C'est un travail original de collecte utile, pas une base exhaustive de tous les revenus privés des joueurs. L'addition des prix recensés ne permet donc pas de reconstruire un patrimoine ni un revenu mensuel stable.
+
+Cette distinction compte aussi pour les comparaisons entre années. Un tournoi exceptionnel, une invitation ou un changement de calendrier peut déplacer fortement un total. Avant de parler de croissance du métier, il faudrait suivre un ensemble comparable de joueurs, préciser les compétitions retenues et tenir compte de la période d'observation.
+
+## Un budget fictif pour voir ce que le montant brut cache
+
+Construisons une saison imaginaire, en euros, sans prétendre représenter la moyenne des professionnels. Un joueur reçoit 12 000 € de prix, 18 000 € de cours et 6 000 € de contrats liés à son activité. Ses recettes sont de 36 000 €.
+
+Supposons ensuite 8 000 € de déplacements et d'hébergement, 2 000 € d'inscriptions et de matériel, puis 3 000 € de frais professionnels divers. Il reste 23 000 € avant les autres prélèvements éventuellement applicables à sa situation. Ce solde arithmétique n'est ni un salaire net ni un calcul fiscal.
+
+L'exemple fait apparaître une autre contrainte : le temps. Des semaines de déplacement limitent les créneaux de cours ; préparer des contenus prend des heures qui ne sont pas immédiatement facturées. Deux activités peuvent diversifier les recettes tout en se disputant la même disponibilité.
+
+Si les prix tombent à 6 000 € alors que les autres recettes et les frais restent identiques, le même calcul donne 17 000 €. L'écart montre une sensibilité du budget aux résultats, sans fournir une probabilité de gain ni une prévision. Tous ces montants sont inventés pour rendre le raisonnement transparent.
+
+## Le travail invisible derrière les cours et les contenus
+
+Vendre une heure de cours ne signifie pas travailler exactement une heure. Il faut parfois préparer la séance, corriger des parties, planifier, gérer les annulations et trouver des élèves. Un tarif affiché doit donc être rapporté au temps total et aux frais avant de parler de rentabilité.
+
+Pour les contenus, une audience n'est pas une recette identique sur toutes les plateformes. Le mode de financement, les contrats et les droits peuvent varier. Un public important peut donner une capacité de négociation sans que l'observateur connaisse le montant obtenu. Il est plus honnête d'identifier les activités visibles que de chiffrer des contrats privés par vraisemblance.
+
+Le niveau échiquéen aide certaines activités, mais ne remplace pas leurs compétences propres : enseigner à un débutant, présenter une analyse clairement et organiser une prestation demandent aussi un savoir-faire. Un titre ne décrit donc pas à lui seul un modèle économique.
+
+## Pour un club ou un organisateur : quelle valeur finance-t-on ?
+
+Proposition de réflexion pour un projet local : sépare le budget sportif, le budget pédagogique et le budget de diffusion. Inviter un joueur pour renforcer une équipe, animer une formation ou commenter un événement ne correspond pas à la même prestation. Définir le service attendu rend les comparaisons plus utiles qu'un tarif isolé.
+
+Il faut aussi distinguer l'annonce d'une dotation de son partage. Une compétition peut mettre en avant un fonds total alors que chaque joueur n'en reçoit qu'une fraction. Une somme exceptionnelle pour le vainqueur ne renseigne pas sur les remboursements, les invitations ni les recettes des participants moins bien classés.
+
+Ces distinctions expliquent pourquoi le prestige sportif et la viabilité professionnelle ne progressent pas automatiquement ensemble. Les échecs peuvent attirer davantage d'attention sans que toutes les activités locales disposent de recettes nouvelles. Pour vérifier une amélioration, regarde des indicateurs effectivement reliés à l'activité étudiée : inscriptions payantes, contrats obtenus, cours tenus ou frais couverts.
+
+## Avant de transformer une passion en activité principale
+
+La démarche proposée ici consiste à décrire tes recettes observées, tes dépenses réelles et tes engagements en temps sur une période donnée. Garde séparément les prix déjà reçus, les prestations confirmées et les possibilités incertaines. Cette séparation ne prédit pas l'avenir ; elle t'évite de traiter une invitation espérée comme une recette acquise.
+
+Tu peux aussi tester une activité à petite échelle, puis vérifier si les élèves reviennent, si la préparation reste soutenable et si les frais sont correctement compris. Le résultat sportif demeure un objectif à part entière, mais un budget solide demande ses propres informations. L'exemple chiffré ci-dessus sert à apprendre à poser ces questions, pas à recommander un statut ni un choix financier personnel.
 
 ### Sources et références
 

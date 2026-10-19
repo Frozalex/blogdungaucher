@@ -6,7 +6,7 @@ publishDate: "2026-05-12"
 category: grand-oral
 featured: false
 featuredRank: 99
-readingTime: 8 min
+readingTime: "7 min"
 pillar: Grand Oral
 tags:
   - grand-oral
@@ -66,11 +66,50 @@ Le *smart power* désigne une combinaison de ressources de puissance dure et dou
 
 De même, attribuer un style tactique ou stratégique à une nationalité entière demanderait une enquête. Les parcours individuels ne se déduisent pas d'une « école nationale » supposée homogène.
 
+## Qu'est-ce qui circule dans la mondialisation échiquéenne ?
+
+Ne réduis pas la mondialisation au fait de jouer contre quelqu'un situé loin. Plusieurs flux se croisent : joueurs et entraîneurs se déplacent ; parties et cours circulent ; des paiements financent des services ; les retransmissions attirent l'attention ; les règlements rendent certaines compétitions comparables. Ces flux n'ont ni les mêmes acteurs ni les mêmes obstacles.
+
+Une problématique possible serait : **les plateformes rendent-elles la pratique échiquéenne plus accessible tout en concentrant certains pouvoirs d'organisation et de visibilité ?** Elle évite d'opposer mécaniquement un Internet libérateur à des institutions forcément dépassées. Un club local peut utiliser une plateforme mondiale ; une compétition en ligne peut rester liée à des conditions matérielles très locales.
+
+## Accessibilité ne signifie pas égalité des conditions
+
+**Comparaison fictive.** Deux adolescents peuvent créer gratuitement un compte. Le premier dispose d'une connexion stable, d'un espace calme et d'un entraîneur qui analyse ses parties. Le second joue sur un téléphone partagé, avec des interruptions et sans partenaire pour lui expliquer ses erreurs. L'accès au même bouton « jouer » ne crée pas la même occasion d'apprendre.
+
+Cette situation construite illustre plusieurs dimensions à examiner : coût d'accès, équipement, langue des contenus, temps disponible et accompagnement. Elle ne prétend pas mesurer l'ampleur mondiale de chacune de ces inégalités. Pour cette mesure, il faudrait des données définissant les populations comparées, pas quelques profils de joueurs célèbres.
+
+Un autre obstacle est institutionnel : une performance sur une plateforme ne donne pas automatiquement le même statut qu'un résultat homologué dans une compétition fédérale. Les règles d'inscription, de contrôle et de classement appartiennent à des systèmes précis. Une interface commune ne suffit pas à les fusionner.
+
+## Comparer des organisations plutôt que deux couleurs d'interface
+
+Les pages de présentation de [Chess.com](https://www.chess.com/about) et de [Lichess](https://lichess.org/about) documentent les modèles qu'elles revendiquent. La seconde présente un projet gratuit, sans publicité et à code ouvert ; la première présente une entreprise de services échiquéens. Ce sont des sources directes sur leur présentation publique, pas une expertise indépendante de leurs comptes ou de toutes leurs pratiques.
+
+À partir de là, tu peux construire une comparaison sans chiffres fragiles : qui finance le service ? Qui décide des fonctionnalités ? Quelle place occupent les abonnements, les dons ou le bénévolat ? Quelles données et quels logiciels sont publiés ? Quelles conditions s'appliquent à un organisateur ? Vérifier les réponses demande de consulter chaque document pertinent, pas de déduire toute l'organisation de son slogan.
+
+« Gratuit » ne signifie pas sans coût de fonctionnement. « Commercial » ne signifie pas sans utilité pédagogique. Le sujet de HGGSP porte ici sur des choix de gouvernance, des dépendances et des capacités d'action, au-delà de ta préférence de joueur.
+
+## Le pouvoir d'une plateforme : trois mécanismes à distinguer
+
+Le premier est **l'intermédiation** : mettre en relation des partenaires, un public et des créateurs de contenus. Le deuxième est **l'organisation** : définir les formats accessibles sur le service, attribuer des espaces de visibilité, faire respecter des conditions d'utilisation. Le troisième est **la connaissance des usages** : disposer de données sur ce qui est joué ou regardé.
+
+Ces mécanismes donnent des questions d'enquête ; ils ne prouvent pas que toutes les plateformes exercent exactement le même pouvoir. Il faut distinguer une capacité technique, une décision effectivement documentée et ses conséquences. Un changement de page d'accueil peut modifier une visibilité, mais son effet doit être observé avant d'être affirmé.
+
+De même, l'influence culturelle n'est pas automatiquement du soft power national. Si une entreprise attire un public international, il faut encore démontrer les liens entre cette attraction, un État et un effet politique pour appliquer le concept dans ce sens. Sinon, tu peux parler plus précisément d'audience, de notoriété ou de pouvoir d'intermédiation.
+
+## Démontrer avec une grille plutôt qu'avec une course aux utilisateurs
+
+Pour ton oral, présente une grille à trois colonnes : accès à la pratique, organisation de la compétition et contrôle de la visibilité. Prends un exemple vérifiable dans chaque colonne. Les [règles de la FIDE](https://handbook.fide.com/chapter/e012023) établissent un cadre du jeu sur échiquier ; les pages des plateformes décrivent leurs services ; un projet international documenté permet d'aborder un objectif social. Ne leur demande pas de prouver la même chose.
+
+Évite de comparer des « comptes enregistrés », des « joueurs actifs » et des « visiteurs » comme s'il s'agissait de la même unité. Ces chiffres peuvent compter plusieurs comptes d'une personne, varier selon la période ou exclure certaines utilisations. Si la méthode n'est pas disponible, une comparaison qualitative honnête est préférable.
+
+Ta conclusion peut alors répondre clairement : les plateformes abaissent certains obstacles et élargissent la circulation des parties, mais les conditions de participation et les pouvoirs restent différenciés. Le jury doit entendre le mécanisme et ses limites, pas seulement une liste de marques mondialisées.
+
 ## Construire une réponse nuancée
 
 Tu peux défendre l'idée qu'un même jeu circule dans des institutions et des contextes différents. Les règles communes rendent les rencontres possibles ; les modèles économiques et les usages demandent une analyse supplémentaire.
 
 Pour tes dix minutes de présentation, choisis un contraste précis entre deux modèles de plateforme et un cas local. Prépare la distinction entre objectif annoncé et résultat démontré pour les dix minutes d'échange.
+
 
 ## Sources
 

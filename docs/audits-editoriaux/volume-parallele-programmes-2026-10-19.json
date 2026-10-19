@@ -1,0 +1,247 @@
+{
+  "articles": 40,
+  "before": 23058,
+  "current": 51044,
+  "rows": [
+    {
+      "path": "src/content/blog/esprit/pourquoi-ton-cerveau-prefere-avoir-raison.md",
+      "before": 584,
+      "current": 1239,
+      "gain": 655
+    },
+    {
+      "path": "src/content/blog/esprit/effet-barnum-aux-echecs.md",
+      "before": 492,
+      "current": 1137,
+      "gain": 645
+    },
+    {
+      "path": "src/content/blog/esprit/effet-de-halo-aux-echecs.md",
+      "before": 510,
+      "current": 1127,
+      "gain": 617
+    },
+    {
+      "path": "src/content/blog/esprit/prophetie-auto-realisatrice-aux-echecs.md",
+      "before": 499,
+      "current": 1135,
+      "gain": 636
+    },
+    {
+      "path": "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
+      "before": 483,
+      "current": 1171,
+      "gain": 688
+    },
+    {
+      "path": "src/content/blog/science/stress-chronique-aux-echecs.md",
+      "before": 611,
+      "current": 1290,
+      "gain": 679
+    },
+    {
+      "path": "src/content/blog/esprit/theorie-auto-determination-aux-echecs.md",
+      "before": 501,
+      "current": 1175,
+      "gain": 674
+    },
+    {
+      "path": "src/content/blog/esprit/motivation-intrinseque-aux-echecs.md",
+      "before": 537,
+      "current": 1222,
+      "gain": 685
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-la-solitude.md",
+      "before": 515,
+      "current": 1168,
+      "gain": 653
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-jeux-video-cerveau.md",
+      "before": 561,
+      "current": 1211,
+      "gain": 650
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-go-complexite-intelligence.md",
+      "before": 653,
+      "current": 1303,
+      "gain": 650
+    },
+    {
+      "path": "src/content/blog/esprit/pourquoi-grands-joueurs-perdent-contre-enfants.md",
+      "before": 511,
+      "current": 1201,
+      "gain": 690
+    },
+    {
+      "path": "src/content/blog/science/memoriser-parties-aux-echecs.md",
+      "before": 651,
+      "current": 1339,
+      "gain": 688
+    },
+    {
+      "path": "src/content/blog/science/conditionnement-operant-aux-echecs.md",
+      "before": 1113,
+      "current": 1667,
+      "gain": 554
+    },
+    {
+      "path": "src/content/blog/esprit/formation-des-habitudes-aux-echecs.md",
+      "before": 533,
+      "current": 1279,
+      "gain": 746
+    },
+    {
+      "path": "src/content/blog/esprit/impuissance-apprise-aux-echecs.md",
+      "before": 495,
+      "current": 1248,
+      "gain": 753
+    },
+    {
+      "path": "src/content/blog/science/hyperfocus-attention-soutenue-aux-echecs.md",
+      "before": 601,
+      "current": 1301,
+      "gain": 700
+    },
+    {
+      "path": "src/content/blog/esprit/comparaison-sociale-aux-echecs.md",
+      "before": 495,
+      "current": 1218,
+      "gain": 723
+    },
+    {
+      "path": "src/content/blog/esprit/biais-d-ancrage-aux-echecs.md",
+      "before": 473,
+      "current": 1139,
+      "gain": 666
+    },
+    {
+      "path": "src/content/blog/esprit/gratification-differee-aux-echecs.md",
+      "before": 493,
+      "current": 1160,
+      "gain": 667
+    },
+    {
+      "path": "src/content/blog/science/theorie-de-l-esprit-aux-echecs.md",
+      "before": 650,
+      "current": 1333,
+      "gain": 683
+    },
+    {
+      "path": "src/content/blog/science/memoire-reconstructive-aux-echecs.md",
+      "before": 622,
+      "current": 1304,
+      "gain": 682
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-vs-scrabble-cognition.md",
+      "before": 536,
+      "current": 1301,
+      "gain": 765
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-procrastination.md",
+      "before": 489,
+      "current": 1245,
+      "gain": 756
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-musique-cerveau.md",
+      "before": 506,
+      "current": 1232,
+      "gain": 726
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-mathematiques-logique.md",
+      "before": 522,
+      "current": 1213,
+      "gain": 691
+    },
+    {
+      "path": "src/content/blog/esprit/faut-il-vraiment-etudier-les-ouvertures.md",
+      "before": 514,
+      "current": 1274,
+      "gain": 760
+    },
+    {
+      "path": "src/content/blog/esprit/projection-aux-echecs.md",
+      "before": 496,
+      "current": 1148,
+      "gain": 652
+    },
+    {
+      "path": "src/content/blog/science/decision-sous-incertitude-aux-echecs.md",
+      "before": 764,
+      "current": 1433,
+      "gain": 669
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-l-echec.md",
+      "before": 547,
+      "current": 1308,
+      "gain": 761
+    },
+    {
+      "path": "src/content/blog/esprit/intelligence-emotionnelle-aux-echecs.md",
+      "before": 527,
+      "current": 1246,
+      "gain": 719
+    },
+    {
+      "path": "src/content/blog/esprit/rationalisation-aux-echecs.md",
+      "before": 491,
+      "current": 1213,
+      "gain": 722
+    },
+    {
+      "path": "src/content/blog/esprit/paradoxe-du-choix-aux-echecs.md",
+      "before": 489,
+      "current": 1199,
+      "gain": 710
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-vs-poker-strategie.md",
+      "before": 544,
+      "current": 1242,
+      "gain": 698
+    },
+    {
+      "path": "src/content/blog/science/conditionnement-classique-aux-echecs.md",
+      "before": 567,
+      "current": 1278,
+      "gain": 711
+    },
+    {
+      "path": "src/content/blog/esprit/analyser-ses-parties.md",
+      "before": 507,
+      "current": 1359,
+      "gain": 852
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-estime-de-soi-elo.md",
+      "before": 504,
+      "current": 1248,
+      "gain": 744
+    },
+    {
+      "path": "src/content/blog/esprit/jouer-en-blitz-est-il-mauvais-pour-progresser.md",
+      "before": 519,
+      "current": 1306,
+      "gain": 787
+    },
+    {
+      "path": "src/content/blog/science/les-echecs-rendent-ils-plus-intelligent.md",
+      "before": 523,
+      "current": 1422,
+      "gain": 899
+    },
+    {
+      "path": "src/content/blog/science/faux-souvenirs-aux-echecs.md",
+      "before": 1430,
+      "current": 2010,
+      "gain": 580
+    }
+  ]
+}

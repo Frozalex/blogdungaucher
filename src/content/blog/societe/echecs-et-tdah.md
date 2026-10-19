@@ -3,7 +3,7 @@ publishDate: "2026-06-11"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 11 min
+readingTime: "11 min"
 pillar: Inclusion
 tags:
   - échecs TDAH
@@ -78,11 +78,11 @@ Les signaux favorables sur certains autres indicateurs restent exploratoires : r
 
 ## Commencer sans transformer le loisir en épreuve
 
-Demandez d'abord si la personne a envie d'essayer. Il n'existe pas, dans ces études, d'âge universel ni de durée optimale établie pour tous les joueurs avec un TDAH. Un jeu de captures avec quelques pièces peut suffire à découvrir le plateau ; le jeu complet peut venir ensuite, si l'intérêt demeure.
+Demande d'abord si la personne a envie d'essayer. Il n'existe pas, dans ces études, d'âge universel ni de durée optimale établie pour tous les joueurs avec un TDAH. Un jeu de captures avec quelques pièces peut suffire à découvrir le plateau ; le jeu complet peut venir ensuite, si l'intérêt demeure.
 
 Voici un exemple de séance à adapter, et non un protocole thérapeutique : choisir ensemble une petite tâche, essayer une position, discuter d'un coup intéressant, puis décider de continuer ou de faire une pause. Le but peut être simplement d'avoir passé un moment agréable, sans objectif de classement.
 
-Enlevez une difficulté à la fois : trop de pièces, trop de bruit, une consigne longue, un adversaire trop expérimenté. Laissez la possibilité de se lever ou de reprendre plus tard. Une séance qui s'arrête n'est pas un échec moral et n'a pas besoin d'être prolongée jusqu'à une victoire.
+Enlève une difficulté à la fois : trop de pièces, trop de bruit, une consigne longue, un adversaire trop expérimenté. Laisse la possibilité de se lever ou de reprendre plus tard. Une séance qui s'arrête n'est pas un échec moral et n'a pas besoin d'être prolongée jusqu'à une victoire.
 
 ## Plateau, écran et activité physique
 
@@ -90,13 +90,13 @@ Un plateau physique permet de manipuler les pièces et de jouer avec quelqu'un s
 
 Sur écran, on peut désactiver les notifications, choisir une seule activité et convenir d'un moment d'arrêt. Si les parties rapides s'enchaînent au détriment du sommeil, des obligations ou du plaisir, revoir le cadre compte davantage que gagner des points. Ces précautions ne démontrent pas que le jeu en ligne cause un trouble particulier.
 
-Les échecs n'ont pas non plus à remplacer le sport. Les deux activités posent des défis différents ; leur classement selon une supposée efficacité contre le TDAH n'est pas établi ici. Choisissez en fonction des envies, de l'accès et des besoins, en gardant une place au mouvement.
+Les échecs n'ont pas non plus à remplacer le sport. Les deux activités posent des défis différents ; leur classement selon une supposée efficacité contre le TDAH n'est pas établi ici. Choisis en fonction des envies, de l'accès et des besoins, en gardant une place au mouvement.
 
 ![Une pause avant le coup est une consigne possible pendant une partie ; elle ne démontre pas un transfert à la vie quotidienne ni une supériorité des échecs sur le sport.](/images/echecs-tdah-04-inhibition-sport-echecs.svg)
 
 ## Observer le vécu plutôt que promettre un transfert
 
-Pour savoir si le cadre convient, posez des questions simples : le joueur veut-il revenir ? Comprend-il les consignes ? Peut-il demander une pause ? Les rencontres restent-elles agréables ? Ces observations aident à ajuster le loisir, sans constituer un bilan clinique.
+Pour savoir si le cadre convient, pose des questions simples : le joueur veut-il revenir ? Comprend-il les consignes ? Peut-il demander une pause ? Les rencontres restent-elles agréables ? Ces observations aident à ajuster le loisir, sans constituer un bilan clinique.
 
 Si une famille remarque un changement à l'école ou à la maison, elle peut le signaler au professionnel qui suit l'enfant. Il faut aussi tenir compte des autres changements : traitement, soutien scolaire, sommeil, contexte familial. Une hausse du classement Elo ne mesure pas une diminution des symptômes du TDAH.
 
@@ -110,7 +110,41 @@ Le droit de ne pas aimer les échecs vaut également pour les adultes. Une activ
 
 Les [recommandations NICE NG87](https://www.nice.org.uk/guidance/ng87/chapter/recommendations) organisent une prise en charge individualisée : information, adaptations de l'environnement, accompagnements et traitements selon l'âge, les difficultés et la situation clinique. Elles ne permettent pas de présenter les échecs comme un substitut validé à ces soins.
 
-En cas de difficultés persistantes qui perturbent l'école, le travail ou les relations, demandez une évaluation professionnelle. Ne modifiez pas un traitement sur la base d'une bonne ou d'une mauvaise période de jeu. Un club peut accueillir, adapter et partager le plaisir d'apprendre ; il n'a pas besoin de promettre une guérison pour être utile.
+En cas de difficultés persistantes qui perturbent l'école, le travail ou les relations, demande une évaluation professionnelle. Ne modifie pas un traitement sur la base d'une bonne ou d'une mauvaise période de jeu. Un club peut accueillir, adapter et partager le plaisir d'apprendre ; il n'a pas besoin de promettre une guérison pour être utile.
+
+## Comprendre ce qui est comparé dans l'essai randomisé
+
+Dans l'[essai JMIR de 2023](https://games.jmir.org/2023/1/e39874/), l'activité échiquéenne n'est pas une simple inscription en club : elle appartient à un entraînement défini, ajouté à un traitement déjà stabilisé. Les participants sont répartis entre trois conditions. L'analyse principale porte sur l'évolution d'un questionnaire parental de fonctions exécutives ; ce n'est ni un test de classement Elo ni une observation de plaisir en séance.
+
+Une absence de différence significative sur ce critère ne prouve pas que personne n'a aimé ou appris le jeu. Elle signifie que l'hypothèse d'amélioration clinique mesurée n'est pas confirmée de façon convaincante par ce résultat. Inversement, un signal sur une sous-échelle ne permet pas de déclarer l'ensemble du traitement efficace. La distinction entre critère principal et résultats exploratoires protège contre la sélection des seules conclusions favorables.
+
+L'article mentionne un enregistrement rétrospectif de l'essai et les limites que cela impose à l'interprétation. C'est une information méthodologique importante, pas une accusation de résultats inventés. Une étude peut être réelle et utile tout en restant insuffisante pour une prescription générale.
+
+## Une aide de jeu peut être utile sans effet thérapeutique prouvé
+
+Proposer un repère visuel, simplifier une consigne ou réduire les notifications peut améliorer l'accessibilité d'une activité. On peut décider de ces adaptations parce qu'elles répondent à une demande concrète, sans attendre une preuve de guérison. L'objectif est alors de permettre de jouer dans de meilleures conditions.
+
+Voici un **scénario fictif d'atelier**, à adapter avec le participant. La tâche consiste à repérer un échec, puis à nommer les trois familles de réponses possibles : déplacer le roi, capturer la pièce qui attaque ou interposer une pièce quand la nature de l'échec le permet. On ne demande pas de retenir toute une ouverture. Le support peut afficher ces options et servir de rappel.
+
+Il faut ensuite vérifier la position : un échec de cavalier ne se pare pas par interposition, et un double échec exige un déplacement légal du roi. Le rappel ne remplace donc pas l'apprentissage des règles. Une personne peut savoir énoncer la liste et manquer une réponse particulière ; cela ne permet pas de mesurer son impulsivité clinique.
+
+Ce petit exercice donne un objectif précis : comprendre les réponses à un échec. Tu peux le réussir avec une aide, puis essayer une autre position. Si l'aide reste nécessaire, on peut la conserver dans l'atelier. Il n'y a pas d'obligation à retirer un support utile pour montrer que la personne a « fait des progrès ».
+
+## Accorder le cadre entre joueur, famille et animateur
+
+Un enfant peut avoir envie de jouer tandis qu'un adulte espère surtout une amélioration des devoirs. Il vaut mieux mettre ces attentes à plat. L'animateur peut promettre un accueil et un enseignement adaptés ; il ne peut pas garantir un changement clinique ou scolaire qui n'a pas été démontré.
+
+Choisis avec la personne une façon de demander une pause ou de signaler qu'une consigne est trop longue. Prévois ce qui se passe alors : attendre, reformuler, changer de tâche ou terminer. Il est difficile d'utiliser une possibilité de pause si elle est ensuite traitée comme un manque de volonté.
+
+Pour un tournoi, anticipe les règles et les demandes d'aménagement avec les organisateurs. Une adaptation d'atelier ne s'applique pas automatiquement en compétition. Cette clarification évite de placer le joueur dans une situation où il découvre les contraintes au moment de jouer.
+
+## Que noter pour ajuster le loisir ?
+
+Un suivi simple peut porter sur le format choisi, les aides utiles, l'envie de revenir et les obstacles rencontrés. Écris des observations concrètes : « a demandé une consigne écrite », « a préféré une partie sans pendule ». Elles permettent de préparer la séance suivante sans produire un dossier clinique informel.
+
+Ne compare pas automatiquement un enfant à un autre, ni une séance calme à une séance plus agitée. Les partenaires, la difficulté et la fatigue peuvent changer. Si l'entourage observe une évolution plus générale, c'est au cadre de suivi approprié d'en discuter, avec ses propres mesures.
+
+Une adaptation réussie peut finalement permettre de partager un loisir, même si aucun effet sur les symptômes n'est établi. Cette valeur est réelle et n'a pas besoin d'être transformée en promesse médicale. Le joueur conserve aussi le droit de choisir un autre loisir.
 
 ## Sources et limites
 

@@ -1,0 +1,70 @@
+{
+  "status": "terminé ; contrôles structurels réussis",
+  "articles": 48,
+  "lots": {
+    "lot1": [
+      "src/content/blog/science/reseau-mode-defaut-aux-echecs.md",
+      "src/content/blog/science/graphes-de-nash-equilibre-ouvertures.md",
+      "src/content/blog/science/les-echecs-et-le-cerveau.md",
+      "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
+      "src/content/blog/esprit/echecs-et-concentration.md",
+      "src/content/blog/grand-oral/sujet-grand-oral-hggsp-fischer-spassky.md",
+      "src/content/blog/science/echecs-et-genetique.md",
+      "src/content/blog/grand-oral/sujet-grand-oral-hggsp-memoire-patrimoine.md",
+      "src/content/blog/grand-oral/sujet-grand-oral-hggsp-mondialisation-plateformes.md",
+      "src/content/blog/science/echecs-et-meditation.md",
+      "src/content/blog/societe/echecs-en-prison.md",
+      "src/content/blog/grand-oral/sujet-grand-oral-nsi-alphazero.md",
+      "src/content/blog/societe/echecs-et-argent.md",
+      "src/content/blog/science/pourquoi-echecs-probleme-mathematique-impossible-et-ia.md",
+      "src/content/blog/esprit/echecs-et-flow.md",
+      "src/content/blog/science/echecs-et-vision-spatiale.md"
+    ],
+    "lot2": [
+      "src/content/blog/esprit/regle-40-40-20-echecs.md",
+      "src/content/blog/esprit/bienfaits-des-pauses-aux-echecs.md",
+      "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
+      "src/content/blog/science/effet-placebo-aux-echecs.md",
+      "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
+      "src/content/blog/esprit/burnout-chess.md",
+      "src/content/blog/grand-oral/sujet-grand-oral-ses-bourdieu-reproduction.md",
+      "src/content/blog/science/echecs-et-sommeil.md",
+      "src/content/blog/esprit/echecs-stress-tournoi.md",
+      "src/content/blog/societe/echecs-et-femmes.md",
+      "src/content/blog/esprit/echecs-et-visualisation.md",
+      "src/content/blog/esprit/loi-de-murphy-aux-echecs.md",
+      "src/content/blog/grand-oral/sujet-grand-oral-maths-zermelo-complexite.md",
+      "src/content/blog/science/neurones-miroirs-aux-echecs.md",
+      "src/content/blog/grand-oral/sujet-grand-oral-ses-marche-superstars.md",
+      "src/content/blog/science/logique-modale-aux-echecs.md"
+    ],
+    "lot3": [
+      "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
+      "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
+      "src/content/blog/science/echecs-alzheimer-prevention-declin-cognitif.md",
+      "src/content/blog/societe/echecs-et-autisme.md",
+      "src/content/blog/science/echecs-et-dopamine.md",
+      "src/content/blog/esprit/echecs-et-colere-ragequit.md",
+      "src/content/blog/grand-oral/sujet-grand-oral-maths-elo-probabilites.md",
+      "src/content/blog/esprit/echecs-gestion-du-temps.md",
+      "src/content/blog/science/echecs-et-le-corps.md",
+      "src/content/blog/esprit/echecs-peur-de-perdre.md",
+      "src/content/blog/societe/echecs-et-tdah.md",
+      "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
+      "src/content/blog/science/minimax-aux-echecs.md",
+      "src/content/blog/esprit/echecs-peur-de-gagner.md",
+      "src/content/blog/societe/echecs-et-diplomatie.md",
+      "src/content/blog/esprit/syndrome-imposteur-2000-elo.md"
+    ]
+  },
+  "priority": "publiés avant programmés",
+  "metadataCorrections": {
+    "src/content/blog/science/logique-modale-aux-echecs.md": {
+      "seoDescription": {
+        "from": "Comment la logique modale formelle structure le raisonnement aux échecs. Nécessité, possibilité, mondes possibles : la logique appliquée à l'échiquier.",
+        "to": "Logique modale et échecs : modéliser les coups légaux, distinguer possibilité et stratégie forcée, puis comprendre les limites de cette représentation.",
+        "reason": "Ne pas présenter une formalisation pédagogique comme un mécanisme cognitif démontré."
+      }
+    }
+  }
+}

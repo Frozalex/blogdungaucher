@@ -7,7 +7,7 @@ category: societe
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: 20 min
+readingTime: "18 min"
 pillar: Genre
 tags:
   - échecs femmes
@@ -235,7 +235,35 @@ Le débat sur les **sections féminines** partage souvent le terrain entre **vis
 - Des associations observées en tournoi ne prouvent pas une cause psychologique unique.
 - GM et IM sont des titres ouverts aux femmes et aux hommes.
 
+## Mesurer la participation sans confondre trois populations
+
+Un indicateur utile doit préciser qui est compté. Les personnes qui connaissent les règles, les personnes inscrites dans un club et les joueurs actifs sur une liste FIDE ne forment pas la même population. Une hausse des licences peut coexister avec un faible maintien dans la compétition ; une hausse des comptes en ligne ne mesure pas directement la présence dans les tournois.
+
+Le **Gender Equality in Chess Index** de la commission féminine de la FIDE distingue notamment participation, progression et performance. Sa documentation précise que la participation repose sur les joueurs actifs de la liste de classement FIDE et reconnaît les limites de l'indice. Cet outil décrit des dimensions choisies ; il ne mesure pas toutes les initiatives locales ni toute l'expérience des joueuses.
+
+Si tu compares deux pays, garde la même date, la même cadence et le même statut d'activité. Un classement agrégé peut aussi cacher des générations très différentes. Un pays où beaucoup de filles débutent aujourd'hui ne verra pas immédiatement cette cohorte apparaître parmi les meilleures adultes.
+
+## Un modèle d'effectif n'explique pas pourquoi l'effectif diffère
+
+Le modèle de participation répond à une question conditionnelle : quel écart entre les meilleurs résultats attendrait-on si deux groupes provenaient d'une distribution comparable mais avaient des tailles différentes ? Il n'explique pas, à lui seul, pourquoi davantage de personnes ont commencé, poursuivi ou quitté le jeu dans un groupe.
+
+C'est là que les parcours deviennent essentiels : accès à un partenaire, encouragement, temps d'entraînement, environnement du club, sécurité des déplacements et décisions de carrière. Ces pistes doivent être étudiées, pas additionnées comme si leurs contributions étaient déjà connues. Un résultat compatible avec l'échantillonnage ne rend pas inutile l'enquête sociale sur le vivier.
+
+L'inverse est également vrai : un écart que le modèle ne reproduirait pas entièrement n'identifie pas automatiquement une cause biologique. Le résidu dépend des hypothèses, des données et des variables prises en compte. Entre une explication partielle et une cause démontrée, il reste du travail empirique.
+
+## Passer de l'intention d'accueil à une observation utile
+
+Voici une proposition pour un club, pas un programme dont l'efficacité serait démontrée ici. Examine le parcours d'entrée : première séance, partenaires proposés, information sur les compétitions, possibilité de signaler un comportement déplacé. Demande ensuite aux personnes qui arrêtent ce qui a pesé, sans supposer d'avance que leur motif est le même.
+
+Un bilan peut distinguer inscription, retour après quelques séances et maintien d'une saison à l'autre. Il doit éviter les conclusions sur de très petits nombres qui rendraient les personnes identifiables. Si deux nouvelles joueuses quittent le club, leur témoignage mérite d'être entendu ; il ne permet pas d'estimer un taux universel d'abandon féminin.
+
+Prends aussi en compte le souhait des personnes : certaines veulent un cadre féminin pour commencer, d'autres préfèrent immédiatement un groupe ouvert, d'autres souhaitent les deux. L'accueil gagne à proposer des possibilités plutôt qu'à décider à leur place de ce qui devrait les rassurer.
+
+Pour toi qui débutes, aucun indicateur de population ne détermine ton plafond individuel. Cherche un cadre où tu peux apprendre, poser une question et choisir tes objectifs. Les statistiques éclairent les conditions collectives ; elles ne sont pas une consigne sur la carrière que tu as le droit d'envisager.
+
 ### Sources et références
+
+- **FIDE Commission for Women’s Chess**, [GECI : méthode et limites](https://wom.fide.com/geci/). Indicateurs de participation, progression et performance fondés sur un périmètre défini.
 
 - **Backus, P. et al. (2023)**, [Gender, competition, and performance: Evidence from chess players](https://doi.org/10.3982/QE1404), *Quantitative Economics*, 14(1), 349-380. Associations observées en tournoi, sans cause psychologique unique démontrée.
 - **Bilalić, M. et al. (2009)**, [Why are (the best) women so good at chess?](https://doi.org/10.1098/rspb.2008.1576), *Proceedings of the Royal Society B*. Modèle de participation appliqué aux données allemandes.
