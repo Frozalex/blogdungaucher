@@ -16,10 +16,8 @@ tags:
   - esprit critique
   - statistiques
   - échecs
-seoTitle: "Effet Barnum aux échecs : les profils de style ne disent rien"
-seoDescription: >-
-  Pourquoi les descriptions de style de jeu semblent si justes alors qu'elles s'appliquent à tout le
-  monde, et comment remplacer un profil vague par tes statistiques réelles.
+seoTitle: "Effet Barnum aux échecs : reconnaître les profils trop vagues"
+seoDescription: "« Joueur intuitif » ou « attaquant prudent » : repère les descriptions trop vagues et confronte les étiquettes de style à tes parties et à tes observations."
 faq:
   - question: "Toute description de style est-elle vide ?"
     answer: "Non. Une description qualitative peut être utile si elle s’appuie sur des observations précises et reste discutable."
