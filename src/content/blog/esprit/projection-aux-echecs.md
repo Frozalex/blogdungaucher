@@ -17,9 +17,7 @@ tags:
   - biais cognitifs
   - échecs
 seoTitle: "Projection aux échecs : prêter à l'adversaire ses propres idées"
-seoDescription: >-
-  Pourquoi la projection freudienne tient mal, ce que le faux consensus démontre, et comment ce
-  mécanisme produit des erreurs de calcul identifiables à l'échiquier.
+seoDescription: "Aux échecs, tu peux prêter tes idées à l’adversaire. Distingue projection et faux consensus, puis confronte tes hypothèses aux coups réellement joués."
 faq:
   - question: "Le faux consensus signifie-t-il que chacun se croit majoritaire ?"
     answer: "Non. Le résultat central est une différence relative entre groupes dans l’estimation de la fréquence de leur propre réponse."
