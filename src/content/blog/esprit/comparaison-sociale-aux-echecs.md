@@ -1,12 +1,12 @@
 ---
-title: "La comparaison sociale aux échecs : le seul loisir qui te classe"
+title: "La comparaison sociale aux échecs : apprendre sans se réduire au classement"
 excerpt:
   "Comment utiliser une comparaison de classement sans en faire un jugement sur toi, et ce que la théorie de Festinger propose réellement."
 publishDate: "2027-02-16"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: 9 min
+readingTime: "6 min"
 pillar: Psychologie
 tags:
   - comparaison sociale
@@ -29,6 +29,7 @@ heroImage:
   src: /images/blog/comparaison-sociale-aux-echecs-hero.webp
   alt: Deux échelles identiques posées sur des sols de hauteurs différentes.
 ogImage: /images/og/comparaison-sociale-aux-echecs-og.webp
+
 ---
 
 Tu ouvres ton profil, puis celui d’un joueur qui a commencé en même temps que toi. Son classement monte plus vite. La comparaison peut te donner une question à travailler ou simplement gâcher le plaisir de la soirée.
@@ -65,6 +66,44 @@ Tu peux suivre en parallèle une compétence précise, comme la compréhension d
 
 Pour approfondir ce rapport au chiffre, lis [Elo et estime de soi](/fr/blog/echecs-estime-de-soi-elo/). Tu peux aimer la compétition sans demander à chaque variation de dire ce que tu vaux.
 
+## Ce que deux classements permettent vraiment de comparer
+
+Deux nombres ne sont comparables qu'avec un périmètre cohérent : même système, même cadence et période pertinente. Un classement en ligne rapide, un classement blitz et un classement fédéral ne sont pas des unités interchangeables. L'historique d'activité et l'incertitude d'un classement peuvent aussi différer.
+
+Même dans le même système, un classement résume des résultats relatifs. Il ne dit pas combien d'heures une personne travaille, quelles positions elle comprend ni ce qu'elle a appris pendant la dernière semaine. Deux joueurs de niveau voisin peuvent avoir des forces très différentes : l'un calcule mieux les attaques, l'autre convertit mieux les finales.
+
+Si tu cherches une idée d'entraînement, compare donc aussi les pratiques et les décisions. Demande à ton partenaire de montrer une analyse, pas seulement sa courbe. Un exemple de travail compréhensible peut t'aider à choisir un exercice ; le nombre affiché ne te donne pas la recette de sa progression.
+
+## Une comparaison utile commence par une question
+
+Tu peux te comparer pour choisir un adversaire, comprendre une technique ou situer une performance. Ces objectifs ne demandent pas le même modèle. Un champion peut montrer une idée profonde, tandis qu'un partenaire proche de ton niveau peut offrir une opposition plus adaptée à une séance.
+
+Exemple fictif : tu regardes une partie de grand maître pour comprendre l'activité d'une tour. Tu n'as pas besoin de reproduire son répertoire entier. Choisis une position, explique la fonction de la tour puis cherche une situation comparable dans tes parties. Le modèle devient un support d'apprentissage, au lieu d'un rappel permanent de la distance entre vos classements.
+
+Autre situation : un ami progresse plus vite. Avant de comparer vos efforts, regarde ce que tu sais réellement de son activité. Tu vois peut-être ses résultats publics et non ses cours, son passé dans un club ou sa disponibilité. Le récit « nous sommes partis du même point » peut cacher des expériences très différentes.
+
+## La proximité sociale peut rendre l'écart plus sensible
+
+La théorie de Festinger propose une tendance à comparer ses capacités et ses opinions à celles d'autrui, notamment lorsque les repères sont insuffisants. Elle développe des hypothèses sur la proximité et la recherche de comparaisons. Ce cadre n'affirme pas que tout joueur réagira de la même manière au succès d'un proche.
+
+Tu peux être heureux pour un ami et déçu par ta propre progression. Reconnaître ces deux réactions ne t'oblige pas à conclure que l'une annule l'autre. Pour agir, distingue l'émotion du jugement : « je suis déçu » décrit ton ressenti ; « je ne pourrai jamais apprendre » prédit beaucoup plus que ce que montre une courbe.
+
+Une comparaison descendante n'est pas automatiquement protectrice non plus. Chercher seulement un profil inférieur peut apporter un soulagement bref sans répondre à une difficulté d'entraînement. L'utilité dépend de ce que tu fais ensuite avec l'information.
+
+## Construire un tableau de progression qui te renseigne
+
+Voici un outil personnel proposé. Choisis une compétence locale et trois types de traces : une position que tu ne comprenais pas, l'explication retrouvée, puis une position nouvelle où tu essaies de réutiliser l'idée. Le tableau peut comporter une date et le temps disponible, sans note globale de valeur personnelle.
+
+Par exemple : « j'ai appris à activer le roi avant de pousser un pion passé ; je dois encore vérifier la course du pion adverse ». Cette phrase est plus informative que « je suis en retard de cent points ». Elle n'établit pas une progression causale à elle seule, mais elle indique la question suivante.
+
+Le classement reste utile pour l'appariement et le suivi des résultats. Tu n'as pas besoin de le supprimer pour ajouter d'autres repères. Tu peux choisir quand le consulter et quand travailler sur une position sans ouvrir les profils des autres.
+
+## Faire de la comparaison une coopération
+
+Un partenaire peut expliquer ce qu'il a vu et demander ce que tu aurais joué. Vous pouvez comparer les variantes, échanger les rôles et reconnaître des compétences différentes. L'écart de classement devient une information parmi d'autres, pas la structure de toute la relation.
+
+Si les discussions se réduisent toujours à celui qui monte le plus vite, propose un autre sujet concret : une belle défense, un problème intéressant, une partie que vous ne comprenez pas encore. Ce choix ne promet pas de supprimer toute frustration. Il permet simplement de rendre au jeu une dimension partagée, au-delà du tableau des résultats.
+
 ## Sources
 
-- Festinger, L. (1954), « A Theory of Social Comparison Processes », *Human Relations*, 7(2), 117–140. [Texte original reproduit](https://www.decodedscience.org/files/docs/festinger%20%281954%29%20a%20theory%20of%20social%20comparison%20processes.pdf), DOI : 10.1177/001872675400700202.
+- Festinger, L. (1954), « A Theory of Social Comparison Processes », *Human Relations*, 7(2), 117–140. [Texte original reproduit](https://www.humanscience.org/docs/Festinger%20(1954)%20A%20Theory%20of%20Social%20Comparison%20Processes.pdf), DOI : 10.1177/001872675400700202.

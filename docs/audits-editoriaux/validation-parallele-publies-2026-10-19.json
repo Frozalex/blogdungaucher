@@ -1,0 +1,824 @@
+{
+  "manifest": "docs/audits-editoriaux/repartition-publies-2026-10-19.json",
+  "checkedAsOf": "2026-10-19",
+  "planned": 48,
+  "checked": 48,
+  "pending": [],
+  "issues": [],
+  "articles": [
+    {
+      "path": "src/content/blog/science/reseau-mode-defaut-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/reseau-mode-defaut-aux-echecs.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 3,
+      "externalSourceLinks": [
+        "https://www.upaya.org/wp-content/uploads/2020/04/Christoff-et-al.-NRN-2016.pdf",
+        "https://greatergood.berkeley.edu/images/uploads/A_Wandering_Mind_Is_an_Unhappy_Mind.pdf",
+        "https://gwern.net/doc/psychology/writing/2009-sio.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/graphes-de-nash-equilibre-ouvertures.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/graphes-de-nash-equilibre-ouvertures.md",
+      "changed": true,
+      "headings": 12,
+      "internalLinks": 3,
+      "externalSourceLinks": [
+        "https://irving.vassar.edu/faculty/gj/FTU/io/literature/Nash51.pdf",
+        "https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf",
+        "https://github.com/syzygy1/probetool"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/les-echecs-et-le-cerveau.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/les-echecs-et-le-cerveau.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://www.nature.com/articles/sdata201544",
+        "https://pubmed.ncbi.nlm.nih.gov/11913751/",
+        "https://www.cs.umb.edu/~marc/lab/publications/charness_et_al_memory%26cognition_2001.pdf",
+        "https://revistas.unisimon.edu.co/index.php/psicogente/article/view/2794",
+        "https://journals.sagepub.com/doi/full/10.1177/0963721417712760",
+        "https://www.who.int/news-room/fact-sheets/detail/dementia"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-confiance-en-soi.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://dradamvolungis.com/wp-content/uploads/2011/06/self-efficacy-unifying-theory-of-behavioral-change-bandura-1977.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-concentration.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-concentration.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0272460"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-fischer-spassky.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/sujet-grand-oral-hggsp-fischer-spassky.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://appext.hks.harvard.edu/publications/getFile.aspx?Id=1503",
+        "https://worldchesshof.org/wp-content/uploads/2025/02/1972-Fischer-Spassky-Press-Release.pdf",
+        "https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-genetique.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-genetique.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://gwern.net/doc/psychology/chess/2014-hambrick.pdf",
+        "https://eprints.lse.ac.uk/86751/1/Von%20Stumm_New%20Genetics%20of%20Intelligence_Accepted.pdf",
+        "https://gwern.net/doc/psychology/writing/1993-ericsson.pdf",
+        "https://juditpolgar.com/wp-content/uploads/2026/01/Judit-Polgar-PressKit4.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-memoire-patrimoine.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/sujet-grand-oral-hggsp-memoire-patrimoine.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://berlinarchaeology.wordpress.com/wp-content/uploads/2015/09/nora-1989-between-memory-and-history.pdf",
+        "https://worldchesshof.org/wp-content/uploads/2025/02/1972-Fischer-Spassky-Press-Release.pdf",
+        "https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-mondialisation-plateformes.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/sujet-grand-oral-hggsp-mondialisation-plateformes.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://www.chess.com/about",
+        "https://lichess.org/about",
+        "https://handbook.fide.com/chapter/e012023",
+        "https://www.fide.com/chess-for-protection-fide-and-unhcr-introduce-a-chess-project-for-refugees/",
+        "https://appext.hks.harvard.edu/publications/getFile.aspx?Id=1503",
+        "https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-meditation.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-meditation.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2018.00315/full",
+        "https://greatergood.berkeley.edu/images/uploads/Holzel-Mindfulness_and_Brain_Gray_Matter_Density.pdf",
+        "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2018.00342/full",
+        "https://library.scottbarrykaufman.com/uploads/2019/08/goyal2014.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/societe/echecs-en-prison.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-en-prison.md",
+      "changed": true,
+      "headings": 16,
+      "internalLinks": 3,
+      "externalSourceLinks": [
+        "https://chessforfreedom.fide.com/2021/04/13/chess-for-freedom-program-launched/",
+        "https://www.fide.com/2nd-continental-championships-for-prisoners-conclude-with-a-record-number-of-countries-teams-participating/",
+        "https://www.fide.com/first-continental-online-chess-championships-for-prisoners-announced/",
+        "https://www.echecs.asso.fr/Actu.aspx?Ref=11278",
+        "https://www.echecs.asso.fr/Actu.aspx?Ref=14284",
+        "https://www.rand.org/content/dam/rand/pubs/research_reports/RR200/RR266/RAND_RR266.pdf",
+        "https://soc.fide.com/chess-for-freedom"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-nsi-alphazero.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/sujet-grand-oral-nsi-alphazero.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://arxiv.org/html/1712.01815v1",
+        "https://stockfishchess.org/blog/2020/stockfish-12/",
+        "https://arxiv.org/abs/1911.08265",
+        "https://www.kva.se/app/uploads/2024/10/sciback_ke_en_24_vi3ng84ao4.pdf",
+        "https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-argent.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-argent.md",
+      "changed": true,
+      "headings": 25,
+      "internalLinks": 3,
+      "externalSourceLinks": [
+        "https://www.chess.com/article/view/biggest-chess-prizewinners-2025",
+        "https://handbook.fide.com/files/handbook/FWCM2023.pdf",
+        "https://www.wsop.com/tournaments/result/10253/",
+        "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2023-record-prize-money",
+        "https://www.chess.com/news/view/chesscom-acquires-pmg",
+        "https://live.euronext.com/sites/default/files/company_press_releases/attachments_oslo/2022/12/16/578408_en_Download%20announcement%20as%20PDF.pdf",
+        "https://www.chess.com/news/view/chess-makes-historic-debut-at-esports-world-cup-2025-with-1-5-million-prize-pool",
+        "https://museum.fide.com/champions/gukesh-dommaraju",
+        "https://www.fide.com/fide-strengthens-ties-with-ioc-uefa-and-arisf/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/pourquoi-echecs-probleme-mathematique-impossible-et-ia.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/pourquoi-echecs-probleme-mathematique-impossible-et-ia.md",
+      "changed": true,
+      "headings": 18,
+      "internalLinks": 8,
+      "externalSourceLinks": [
+        "https://fr.wikipedia.org/wiki/%C3%89checs",
+        "https://fr.wikipedia.org/wiki/Jeu_d%27%C3%A9checs",
+        "https://fr.wikipedia.org/wiki/Cavalier_(jeu_d%27%C3%A9checs",
+        "https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9",
+        "https://fr.wikipedia.org/wiki/Claude_Shannon",
+        "https://fr.wikipedia.org/wiki/Nombre_de_Shannon",
+        "https://fr.wikipedia.org/wiki/Jeu_r%C3%A9solu",
+        "https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux",
+        "https://fr.wikipedia.org/wiki/John_von_Neumann",
+        "https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash",
+        "https://fr.wikipedia.org/wiki/Morpion",
+        "https://fr.wikipedia.org/wiki/Dames_anglaises",
+        "https://fr.wikipedia.org/wiki/Go_%28jeu%29",
+        "https://fr.wikipedia.org/wiki/AlphaGo",
+        "https://fr.wikipedia.org/wiki/Stockfish",
+        "https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%AAta",
+        "https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels",
+        "https://fr.wikipedia.org/wiki/Apprentissage_automatique",
+        "https://fr.wikipedia.org/wiki/Deep_Blue",
+        "https://fr.wikipedia.org/wiki/Garry_Kasparov",
+        "https://fr.wikipedia.org/wiki/Champion_du_monde_d%27%C3%A9checs",
+        "https://fr.wikipedia.org/wiki/IBM",
+        "https://fr.wikipedia.org/wiki/D%C3%A9cidabilit%C3%A9",
+        "https://fr.wikipedia.org/wiki/Complexit%C3%A9_des_algorithmes",
+        "https://fr.wikipedia.org/wiki/S%C3%A9curit%C3%A9_informatique",
+        "https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf",
+        "https://d1yx3ys82bpsa0.cloudfront.net/chess/programming-a-computer-for-playing-chess.shannon.062303002.pdf",
+        "https://www.chessprogramming.org/Main_Page",
+        "https://www.icga.org/",
+        "https://arxiv.org/",
+        "https://kubokovac.eu/zlozitost/mat/chessExptime.pdf",
+        "https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/",
+        "https://www.ibm.com/history/deep-blue"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-flow.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-flow.md",
+      "changed": true,
+      "headings": 16,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://nuovoeutile.it/wp-content/uploads/2015/12/2002-Flow.pdf",
+        "https://www.isonderhouden.nl/doc/pdf/arnoldbakker/articles/articles_arnold_bakker_165.pdf",
+        "https://www.ics.uci.edu/~gmark/chi08-mark.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-vision-spatiale.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-vision-spatiale.md",
+      "changed": true,
+      "headings": 15,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://pubmed.ncbi.nlm.nih.gov/11913751/",
+        "https://experts.umn.edu/en/publications/a-functional-mri-study-of-high-level-cognition-i-the-game-of-ches/",
+        "https://journals.sagepub.com/doi/10.1177/0963721417712760",
+        "https://www.guinnessworldrecords.de/world-records/72345-most-simultaneous-blindfolded-chess-wins"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/regle-40-40-20-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/regle-40-40-20-echecs.md",
+      "changed": true,
+      "headings": 12,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://gwern.net/doc/psychology/chess/1973-chase.pdf",
+        "https://gwern.net/doc/psychology/writing/1993-ericsson.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/bienfaits-des-pauses-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/bienfaits-des-pauses-aux-echecs.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://arbiters.fide.com/wp-content/uploads/Publications/Manual/Arbiters_Manual_2025.pdf",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0272460"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/theorie-de-l-attachement-aux-echecs.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://researchportal.northumbria.ac.uk/en/publications/investigating-the-interpersonal-dynamics-between-coaches-and-athl/",
+        "https://researchportal.northumbria.ac.uk/en/publications/coach-athlete-attachment-and-the-quality-of-the-coach-athlete-rel/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/effet-placebo-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/effet-placebo-aux-echecs.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://www.dcscience.net/Hrobjartsson-Gotzsche-Cochrane-placebo.pdf",
+        "https://paulogentil.com/pdf/Placebo%20Effects%20of%20Caffeine%20on%20Cycling%20Performance.pdf",
+        "https://www.pnas.org/doi/10.1073/pnas.1601243113",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015591"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/5-biais-cognitifs-blunder.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://neuroscienceofexpertise.com/Publications/papers/Bilalic_2008_GoodThoughts_Einstellung.pdf",
+        "https://gwern.net/doc/psychology/chess/2004-cowley.pdf",
+        "https://fbaum.unc.edu/teaching/articles/Science_1973_JudgmentUnderUncertainty.pdf",
+        "https://discovery.geisinger.org/esploro/outputs/journalArticle/Overconfidence-Persists-Despite-Years-of-Accurate/9921404409631"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/burnout-chess.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/burnout-chess.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
+        "https://ray.yorksj.ac.uk/id/eprint/2245/1/Gustafsson%2C%20DeFreese%2C%20%26%20Madigan%20%28in%20press%29.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-ses-bourdieu-reproduction.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/sujet-grand-oral-ses-bourdieu-reproduction.md",
+      "changed": true,
+      "headings": 12,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://www.persee.fr/doc/arss_0335-5322_1979_num_30_1_2654",
+        "https://lichess.org/about",
+        "https://www.fide.com/chess-for-protection-fide-and-unhcr-introduce-a-chess-project-for-refugees/",
+        "https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-sommeil.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-sommeil.md",
+      "changed": true,
+      "headings": 12,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.01855/full",
+        "https://gwern.net/doc/zeo/2000-harrison.pdf",
+        "https://fatiguemanagersnetwork.org/wp-content/uploads/Dinges-et-al.1997_Cumulative-Sleepiness-Mood-Disturbance-and-Psychomotor-Vigilance-Performance-Decrements-Due-to-Sleep-Restriction.pdf",
+        "https://www.cdc.gov/sleep/about/index.html"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-stress-tournoi.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-stress-tournoi.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 3,
+      "externalSourceLinks": [
+        "https://www.grantsshields.com/wp-content/uploads/2016/08/Stress_and_EF_meta-analysis.pdf",
+        "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2018.00353/full",
+        "https://static1.squarespace.com/static/59a5d96b8dd041d469d4304e/t/59b2d37ac027d84ada0a67d5/1504891771275/Jamieson2010GRE.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-femmes.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-femmes.md",
+      "changed": true,
+      "headings": 28,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://fr.wikipedia.org/wiki/Judit_Polg%C3%A1r",
+        "https://fr.wikipedia.org/wiki/Garry_Kasparov",
+        "https://www.jta.org/archive/a-hungarian-jewish-woman-who-is-considered-the",
+        "https://ratings.fide.com/",
+        "https://fr.wikipedia.org/wiki/Bobby_Fischer",
+        "https://doi.org/10.1098/rspb.2008.1576",
+        "https://doi.org/10.1017/S0021932013000205",
+        "https://doi.org/10.3982/QE1404",
+        "https://fr.wikipedia.org/wiki/Vera_Menchik",
+        "https://worldchesshof.org/wp-content/uploads/2025/02/learn-more-chess-players-wwii-updated.pdf",
+        "https://fr.wikipedia.org/wiki/Lyudmila_Rudenko",
+        "https://fr.wikipedia.org/wiki/Elizaveta_Bykova",
+        "https://fr.wikipedia.org/wiki/Olga_Rubtsova",
+        "https://fr.wikipedia.org/wiki/Nona_Gaprindachvili",
+        "https://www.bsg.ox.ac.uk/people/yifan-hou",
+        "https://fr.wikipedia.org/wiki/Koneru_Humpy",
+        "https://fr.wikipedia.org/wiki/Harika_Dronavalli",
+        "https://fr.wikipedia.org/wiki/Almira_Skripchenko",
+        "https://fr.wikipedia.org/wiki/Anna_Muzychuk",
+        "https://handbook.fide.com/chapter/B012024",
+        "https://www.chess.com",
+        "https://lichess.org",
+        "https://fr.wikipedia.org/wiki/Alexandra_Botez",
+        "https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_internationale_des_%C3%A9checs",
+        "https://wom.fide.com/geci/",
+        "https://doi.org/10.1037/0022-3514.69.5.797"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-visualisation.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-visualisation.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://gwern.net/doc/psychology/chess/1973-chase.pdf",
+        "https://gwern.net/doc/psychology/chess/1996-gobet.pdf",
+        "https://handbook.fide.com/chapter/e012023"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/loi-de-murphy-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/loi-de-murphy-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://noorsiddiqui.com/papers/TverskyKahneman.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-maths-zermelo-complexite.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/sujet-grand-oral-maths-zermelo-complexite.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://people.math.harvard.edu/~elkies/FS23j.03/zermelo.pdf",
+        "https://d1yx3ys82bpsa0.cloudfront.net/chess/programming-a-computer-for-playing-chess.shannon.062303002.pdf",
+        "https://kubokovac.eu/zlozitost/mat/chessExptime.pdf",
+        "https://handbook.fide.com/chapter/e012023",
+        "https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/neurones-miroirs-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/neurones-miroirs-aux-echecs.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://pubmed.ncbi.nlm.nih.gov/1301372/",
+        "https://pubmed.ncbi.nlm.nih.gov/21467305/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-ses-marche-superstars.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/sujet-grand-oral-ses-marche-superstars.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 3,
+      "externalSourceLinks": [
+        "https://milescorak.com/wp-content/uploads/2018/09/rosen-1981-aer-economics-superstars.pdf",
+        "https://www.gutenberg.org/ebooks/33310",
+        "https://press.uchicago.edu/ucp/books/book/chicago/H/bo3684031.html",
+        "https://database.lichess.org/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/logique-modale-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/logique-modale-aux-echecs.md",
+      "changed": true,
+      "headings": 15,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://fr.wikipedia.org/wiki/Logique_modale",
+        "https://fr.wikipedia.org/wiki/Aristote",
+        "https://fr.wikipedia.org/wiki/Saul_Kripke",
+        "https://fr.wikipedia.org/wiki/S%C3%A9mantique_des_mondes_possibles",
+        "https://plato.stanford.edu/entries/logic-epistemic/",
+        "https://plato.stanford.edu/entries/logic-modal/",
+        "https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf",
+        "https://www.arves.org/arves/images/PDF/JohnBeasley/zug3456readme.pdf"
+      ],
+      "protectedMetadataPreserved": false,
+      "acceptedMetadataCorrections": [
+        {
+          "key": "seoDescription",
+          "reason": "Ne pas présenter une formalisation pédagogique comme un mécanisme cognitif démontré."
+        }
+      ],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/theorie-des-jeux-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 3,
+      "externalSourceLinks": [
+        "https://plato.stanford.edu/entries/game-theory/",
+        "https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf",
+        "https://irving.vassar.edu/faculty/gj/FTU/io/literature/Nash51.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/psychologie-du-joueur-d-echecs.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 3,
+      "externalSourceLinks": [
+        "https://doi.org/10.1016/0010-0285(73",
+        "https://www.grantsshields.com/wp-content/uploads/2016/08/Stress_and_EF_meta-analysis.pdf",
+        "https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf",
+        "https://link.springer.com/article/10.1007/s00426-019-01245-8"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-alzheimer-prevention-declin-cognitif.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-alzheimer-prevention-declin-cognitif.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://www.who.int/news-room/fact-sheets/detail/dementia",
+        "https://pubmed.ncbi.nlm.nih.gov/37450299/",
+        "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2807256"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-autisme.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-autisme.md",
+      "changed": true,
+      "headings": 19,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://www.who.int/news-room/fact-sheets/detail/autism-spectrum-disorders",
+        "https://www.cdc.gov/mmwr/volumes/74/ss/ss7402a1.htm",
+        "https://docs.autismresearchcentre.com/papers/2003_BCetal_sysquoAS.pdf",
+        "https://www.fide.com/chess-for-children-with-asd-practical-materials-for-teachers-and-parents/",
+        "https://www.fide.com/breaking-the-limits-how-fides-infinite-chess-project-helps-people-with-autism/",
+        "https://www.chessinschools.co.uk/join-our-programme",
+        "https://www.nice.org.uk/guidance/cg170/chapter/key-priorities-for-implementation",
+        "https://www.nice.org.uk/guidance/CG142/chapter/Recommendations",
+        "https://infinitechess.fide.com/wp-content/uploads/2024/09/Infinite-Chess-Handbook-EN.pdf",
+        "https://infinitechess.fide.com/program/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-dopamine.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-dopamine.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf",
+        "https://sites.lsa.umich.edu/berridge-lab/wp-content/uploads/sites/743/2019/10/BerridgeRobinsonBrResRev1998.pdf",
+        "https://psychology.northwestern.edu/people/faculty/core/profiles/ann_rvw_psy_2014.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-colere-ragequit.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-colere-ragequit.md",
+      "changed": true,
+      "headings": 9,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://sanlab.psych.ucla.edu/wp-content/uploads/sites/31/2016/03/Gross_JPSP_1998.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/9457784/?dopt=Abstract"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-maths-elo-probabilites.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/sujet-grand-oral-maths-elo-probabilites.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://www.fide.com/new-fide-rating-and-title-regulations-come-into-effect/",
+        "https://handbook.fide.com/chapter/B022024",
+        "https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-gestion-du-temps.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-gestion-du-temps.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://www.econstor.eu/bitstream/10419/256784/1/1801405433.pdf",
+        "https://en.chessbase.com/news/2006/world_champions2006.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-le-corps.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-le-corps.md",
+      "changed": true,
+      "headings": 12,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://gwern.net/doc/psychology/chess/2009-troubat.pdf",
+        "https://brendans-island.com/blogsource/20151212ff-Documents/PNAS-2002-Raichle-10237-9.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-peur-de-perdre.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-peur-de-perdre.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-tdah.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-tdah.md",
+      "changed": true,
+      "headings": 16,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+        "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+        "https://games.jmir.org/2023/1/e39874/",
+        "https://adhd-chess.com/Content/docs/Efficacy-chess-treatment-ADHD-Blasco.pdf",
+        "https://doi.org/10.2196/39874"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-perfectionnisme-toxique.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://ray.yorksj.ac.uk/id/eprint/701/1/Hill%20%26%20Curran%20%28in%20press%29.pdf",
+        "https://cooperative-individualism.org/simon-herbert_a-behavioral-model-of-rational-choice-1955-feb.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/minimax-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/minimax-aux-echecs.md",
+      "changed": true,
+      "headings": 14,
+      "internalLinks": 5,
+      "externalSourceLinks": [
+        "https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%AAta",
+        "https://fr.wikipedia.org/wiki/Google_DeepMind",
+        "https://fr.wikipedia.org/wiki/AlphaZero",
+        "https://fr.wikipedia.org/wiki/Recherche_arborescente_Monte-Carlo",
+        "https://github.com/official-stockfish/Stockfish/blob/master/src/search.cpp",
+        "https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf",
+        "https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/",
+        "https://arxiv.org/html/1712.01815v1"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-peur-de-gagner.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-peur-de-gagner.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-diplomatie.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-diplomatie.md",
+      "changed": true,
+      "headings": 16,
+      "internalLinks": 3,
+      "externalSourceLinks": [
+        "https://www.fide.com/boris-spassky-1937-2025/",
+        "https://amzn.to/4fndWQb",
+        "https://www.kasparov.com/biography/",
+        "https://www.fide.com/images/stories/NEWS_2013/FIDE/FIDE_-_Peace_and_Sport.pdf",
+        "https://www.un.org/en/observances/world-chess-day",
+        "https://www.fide.com/refugee-team-ready-to-compete-on-global-stage-at-chess-olympiad/",
+        "https://www.fide.com/russia-and-belarus-teams-suspended-from-fide-competitions/",
+        "https://www.fide.com/chess-for-humanity-armenia-and-fide-champion-social-change-at-un-geneva-side-event/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/syndrome-imposteur-2000-elo.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/syndrome-imposteur-2000-elo.md",
+      "changed": true,
+      "headings": 14,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf",
+        "https://link.springer.com/article/10.1007/s11606-019-05364-1",
+        "https://handbook.fide.com/chapter/B022024",
+        "https://handbook.fide.com/chapter/B012024"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    }
+  ],
+  "scope": "Structure Markdown, formules, liens internes, fichiers image et métadonnées ; la validité scientifique est relue séparément dans les fiches et les sources."
+}

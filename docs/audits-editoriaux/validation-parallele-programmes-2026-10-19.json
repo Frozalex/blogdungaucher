@@ -1,0 +1,593 @@
+{
+  "manifest": "docs/audits-editoriaux/repartition-programmes-2026-10-19.json",
+  "checkedAsOf": "2026-10-19",
+  "planned": 40,
+  "checked": 40,
+  "pending": [],
+  "issues": [],
+  "articles": [
+    {
+      "path": "src/content/blog/esprit/pourquoi-ton-cerveau-prefere-avoir-raison.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/pourquoi-ton-cerveau-prefere-avoir-raison.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 8,
+      "externalSourceLinks": [
+        "https://gwern.net/doc/psychology/chess/2004-cowley.pdf",
+        "https://discovery.geisinger.org/esploro/outputs/journalArticle/Overconfidence-Persists-Despite-Years-of-Accurate/9921404409631"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/effet-barnum-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/effet-barnum-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://openurl.ebsco.com/contentitem/pdh%3A1949-03749-001?crl=c&id=ebsco%3Apdh%3A1949-03749-001&sid=ebsco%3Aplink%3Ascholar"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/effet-de-halo-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/effet-de-halo-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://www.researchgate.net/profile/Timothy-Wilson-19/publication/232501672_The_halo_effect_Evidence_for_unconscious_alteration_of_judgments/links/57d6bbb108ae6399a395950e/The-halo-effect-Evidence-for-unconscious-alteration-of-judgments.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/prophetie-auto-realisatrice-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/prophetie-auto-realisatrice-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://gwern.net/doc/statistics/bias/1984-raudenbush.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/biais-de-confirmation-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://gwern.net/doc/psychology/chess/2004-cowley.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/stress-chronique-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/stress-chronique-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 3,
+      "externalSourceLinks": [
+        "https://www.overcominghateportal.org/uploads/5/4/1/5/5415260/bruce_mcewen_brain_and_stress.pdf",
+        "https://www.grantsshields.com/wp-content/uploads/2016/08/Stress_and_EF_meta-analysis.pdf",
+        "https://www.who.int/news-room/questions-and-answers/item/stress"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/theorie-auto-determination-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/theorie-auto-determination-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/18089893/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/motivation-intrinseque-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/motivation-intrinseque-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+        "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Motivation/Lepper_et_al_Undermining_Childrens_Intrinsic_Interest.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/18089893/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-la-solitude.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-la-solitude.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+        "https://handbook.fide.com/chapter/E012023"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-jeux-video-cerveau.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-vs-jeux-video-cerveau.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://access.archive-ouverte.unige.ch/access/metadata/477d322a-8d9b-41b9-be0c-12152c424642/download",
+        "https://www.who.int/standards/classifications/frequently-asked-questions/gaming-disorder",
+        "https://journals.sagepub.com/doi/full/10.1177/0963721417712760"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-go-complexite-intelligence.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-vs-go-complexite-intelligence.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://tromp.github.io/go/legal.html",
+        "https://www.ibm.com/history/deep-blue",
+        "https://deepmind.google/research/alphago/",
+        "https://arxiv.org/html/1712.01815v1"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/pourquoi-grands-joueurs-perdent-contre-enfants.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/pourquoi-grands-joueurs-perdent-contre-enfants.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://handbook.fide.com/chapter/B02RBRegulations2024",
+        "https://handbook.fide.com/chapter/B022024"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/memoriser-parties-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/memoriser-parties-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://gwern.net/doc/psychology/chess/1973-chase.pdf",
+        "https://gwern.net/doc/psychology/chess/1996-gobet.pdf",
+        "https://profiles.wustl.edu/en/publications/test-enhanced-learning-taking-memory-tests-improves-long-term-ret/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/conditionnement-operant-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/conditionnement-operant-aux-echecs.md",
+      "changed": true,
+      "headings": 15,
+      "internalLinks": 4,
+      "externalSourceLinks": [
+        "https://fr.wikipedia.org/wiki/Conditionnement_op%C3%A9rant",
+        "https://www.bfskinner.org/wp-content/uploads/2014/02/ScienceHumanBehavior.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/formation-des-habitudes-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/formation-des-habitudes-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://bpb-us-e1.wpmucdn.com/wp.nyu.edu/dist/c/6235/files/2019/02/gollwitzer-1999-implementation-intentions.pdf",
+        "https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674"
+      ],
+      "protectedMetadataPreserved": false,
+      "acceptedMetadataCorrections": [
+        {
+          "key": "seoDescription",
+          "reason": "Retirer une exclusivité et une efficacité universelle non établies."
+        }
+      ],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/impuissance-apprise-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/impuissance-apprise-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://link.springer.com/article/10.1007/BF01359222",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/hyperfocus-attention-soutenue-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/hyperfocus-attention-soutenue-aux-echecs.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://link.springer.com/article/10.1007/s00426-019-01245-8"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/comparaison-sociale-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/comparaison-sociale-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://www.humanscience.org/docs/Festinger%20(1954"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/biais-d-ancrage-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/biais-d-ancrage-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://official-stockfish.github.io/docs/stockfish-wiki/Stockfish-FAQ.html",
+        "https://fbaum.unc.edu/teaching/articles/Science_1973_JudgmentUnderUncertainty.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/gratification-differee-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/gratification-differee-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://www.psychologicalscience.org/journals/psychological-science/0956797618761661/"
+      ],
+      "protectedMetadataPreserved": false,
+      "acceptedMetadataCorrections": [
+        {
+          "key": "seoDescription",
+          "reason": "Ne pas présenter la fiabilité de l’environnement comme une explication unique de la gratification différée."
+        }
+      ],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/theorie-de-l-esprit-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/theorie-de-l-esprit-aux-echecs.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/doesthe-chimpanzee-havea-theory-of-mind/1E96B02CD9850016B7C93BC6D2FEF1D0",
+        "https://www.cs.toronto.edu/~ashton/pubs/maia-kdd2020.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/memoire-reconstructive-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/memoire-reconstructive-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://gwern.net/doc/psychology/cognitive-bias/1974-loftus.pdf",
+        "https://profiles.wustl.edu/en/publications/test-enhanced-learning-taking-memory-tests-improves-long-term-ret/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-vs-scrabble-cognition.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-vs-scrabble-cognition.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://cdn2.psychologytoday.com/assets/attachments/56143/the-world-competitive-scrabble.pdf",
+        "https://www.ffsc.fr/files/public/fichiers/reglements/classique/Reglement.international.du.Scrabble.classique.pdf",
+        "https://www.ffsc.fr/initiation.php?page=duplicate",
+        "https://gwern.net/doc/psychology/chess/1973-chase.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-procrastination.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-procrastination.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://eprints.whiterose.ac.uk/91793/1/Compass%20Paper%20revision%20FINAL.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-musique-cerveau.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-vs-musique-cerveau.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://sites.utm.utoronto.ca/sites/sites.utm.utoronto.ca.glenn_website/files/download/SchellenbergPS2004.pdf",
+        "https://journals.sagepub.com/doi/full/10.1177/0963721417712760"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-mathematiques-logique.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-vs-mathematiques-logique.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://journals.sagepub.com/doi/full/10.1177/0963721417712760",
+        "https://link.springer.com/article/10.3758/s13420-017-0280-3"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/faut-il-vraiment-etudier-les-ouvertures.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/faut-il-vraiment-etudier-les-ouvertures.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://onlinelibrary.wiley.com/doi/10.1002/acp.1106"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/projection-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/projection-aux-echecs.md",
+      "changed": true,
+      "headings": 9,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://www.bulidomics.com/w/images/d/d8/4705-Ross-et-al-False-Consensus-Effect.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/decision-sous-incertitude-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/decision-sous-incertitude-aux-echecs.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf",
+        "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-l-echec.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-et-l-echec.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://journals.sagepub.com/doi/10.1177/0963721417712760",
+        "https://handbook.fide.com/chapter/e012023",
+        "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf",
+        "https://journals.sagepub.com/doi/full/10.1177/0963721417712760"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/intelligence-emotionnelle-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/intelligence-emotionnelle-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://scholars.unh.edu/psych_facpub/450/",
+        "https://sanlab.psych.ucla.edu/wp-content/uploads/sites/31/2016/03/Gross_JPSP_1998.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/9457784/?dopt=Abstract"
+      ],
+      "protectedMetadataPreserved": false,
+      "acceptedMetadataCorrections": [
+        {
+          "key": "seoDescription",
+          "reason": "Ne pas présenter les échecs comme un instrument établi de mesure de l’état émotionnel."
+        }
+      ],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/rationalisation-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/rationalisation-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 2,
+      "externalSourceLinks": [
+        "https://www.researchgate.net/publication/7554338_Failure_to_Detect_Mismatches_Between_Intention_and_Outcome_in_a_Simple_Decision_Task"
+      ],
+      "protectedMetadataPreserved": false,
+      "acceptedMetadataCorrections": [
+        {
+          "key": "seoDescription",
+          "reason": "Ne pas attribuer systématiquement les explications à une fabrication après la décision."
+        }
+      ],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/paradoxe-du-choix-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/paradoxe-du-choix-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://scheibehenne.de/ScheibehenneGreifenederTodd2010.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-vs-poker-strategie.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-vs-poker-strategie.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://noambrown.com/papers/17-IJCAI-Libratus.pdf",
+        "https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/conditionnement-classique-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/conditionnement-classique-aux-echecs.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://psychclassics.yorku.ca/Pavlov/lecture2.htm",
+        "https://psychclassics.yorku.ca/Watson/emotion.htm",
+        "https://pubmed.ncbi.nlm.nih.gov/15466298/"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/analyser-ses-parties.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/analyser-ses-parties.md",
+      "changed": true,
+      "headings": 11,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://www.researchgate.net/publication/6598587_The_role_of_domain-specific_practice_handedness_and_starting_age_in_chess",
+        "https://www.researchgate.net/profile/Guillermo-Campitelli/publication/6598587_The_role_of_domain-specific_practice_handedness_and_starting_age_in_chess/links/0912f508f2ea567491000000/The-role-of-domain-specific-practice-handedness-and-starting-age-in-chess.pdf"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-estime-de-soi-elo.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/echecs-estime-de-soi-elo.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf",
+        "https://handbook.fide.com/chapter/B022024"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/esprit/jouer-en-blitz-est-il-mauvais-pour-progresser.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/jouer-en-blitz-est-il-mauvais-pour-progresser.md",
+      "changed": true,
+      "headings": 10,
+      "internalLinks": 1,
+      "externalSourceLinks": [
+        "https://onlinelibrary.wiley.com/doi/10.1002/acp.1106"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/les-echecs-rendent-ils-plus-intelligent.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/les-echecs-rendent-ils-plus-intelligent.md",
+      "changed": true,
+      "headings": 12,
+      "internalLinks": 0,
+      "externalSourceLinks": [
+        "https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/chess-in-primary-schools",
+        "https://journals.sagepub.com/doi/10.1177/0963721417712760",
+        "https://gwern.net/doc/psychology/chess/1973-chase.pdf",
+        "https://journals.sagepub.com/doi/full/10.1177/0963721417712760"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    },
+    {
+      "path": "src/content/blog/science/faux-souvenirs-aux-echecs.md",
+      "note": "docs/audits-editoriaux/fiches-reprise/faux-souvenirs-aux-echecs.md",
+      "changed": true,
+      "headings": 14,
+      "internalLinks": 4,
+      "externalSourceLinks": [
+        "https://discovery.ucl.ac.uk/id/eprint/1495935/1/Brewin_et_al-2016-Applied_Cognitive_Psychology.pdf",
+        "https://gwern.net/doc/psychology/cognitive-bias/1974-loftus.pdf",
+        "https://onlinelibrary.wiley.com/doi/10.1002/acp.3220"
+      ],
+      "protectedMetadataPreserved": true,
+      "acceptedMetadataCorrections": [],
+      "issues": []
+    }
+  ],
+  "scope": "Structure Markdown, formules, liens internes, fichiers image et métadonnées ; la validité scientifique est relue séparément dans les fiches et les sources."
+}

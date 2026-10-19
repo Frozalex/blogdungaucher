@@ -55,6 +55,44 @@ La fatigue et l'inquiétude peuvent faire partie du contexte d'une partie. Mais 
 
 Une explication sérieuse distingue les propos des joueurs, les observations et l'interprétation. Sans ces éléments, mieux vaut laisser une cause ouverte que remplir le vide par un récit séduisant.
 
+## Score attendu ne signifie pas invincibilité
+
+Si un joueur possède un score attendu élevé, il reste une place pour les autres résultats. Surtout, le score attendu combine victoire, nulle et défaite. Il ne révèle pas à lui seul leur répartition.
+
+**Deux modèles fictifs.** Dans le premier, un favori gagne 80 % des parties et perd 20 %, sans nulle. Dans le second, il gagne 60 % et fait nulle 40 %, sans défaite. Les deux modèles donnent le même score attendu : 0,80 point par partie. Pourtant, la probabilité d'une défaite est différente.
+
+Ces nombres inventés ne décrivent ni les enfants ni les grands maîtres. Ils expliquent pourquoi un tableau de score attendu ne suffit pas à annoncer combien de défaites un champion devrait subir. Il faut un modèle supplémentaire pour séparer les issues.
+
+Les règlements FIDE présentent les conversions entre différences de classement et scores attendus. Ce sont des outils de cotation, pas une loi psychologique sur l'âge des adversaires. Une cote résume un historique selon les règles du système ; elle ne garantit pas l'issue de la rencontre suivante.
+
+## Pourquoi les surprises très visibles ne décrivent pas toutes les rencontres
+
+Une victoire d'un enfant contre un champion attire facilement l'attention. Les victoires attendues du champion deviennent moins souvent des récits marquants. Si tu ne regardes que les surprises publiées, tu sélectionnes les rencontres à partir de leur résultat.
+
+Pour estimer une fréquence, il faudrait définir les participants, la période, les cadences et toutes les parties retenues, puis compter aussi celles où le favori gagne. Une vidéo isolée ne fournit pas ce dénominateur. Cette question de sélection est indépendante de la qualité de la partie montrée, qui peut être remarquable.
+
+La même prudence vaut pour « les enfants sont sous-classés ». Certains progressent rapidement et leur cote peut retarder sur leur force actuelle. Mais l'affirmation concernant un joueur doit s'appuyer sur son activité et ses résultats, pas sur son âge seul.
+
+## Chercher le tournant de la partie plutôt qu'une explication générationnelle
+
+**Scénario fictif.** Un adulte obtient une position favorable, puis omet une menace tactique face à un jeune adversaire. La première question est : quelle défense aurait maintenu la position ? Ensuite seulement viennent les circonstances : temps restant, ligne calculée, fatigue ressentie ou surprise.
+
+Si le motif était inconnu, il y a un apprentissage technique. Si le joueur le connaissait mais n'a pas regardé la menace, une routine d'attention mérite d'être examinée. Si le temps manquait, il faut revenir aux décisions antérieures. Aucun de ces constats n'établit que les jeunes possèdent un avantage cognitif général.
+
+Ne transforme pas non plus toute victoire junior en réussite de moteur ou de préparation. Une bonne idée peut être trouvée pendant la partie. Attribuer son origine demande des informations, par exemple une explication du joueur, dont on indiquera la nature.
+
+## Une préparation qui respecte l'adversaire réel
+
+Prépare les positions que tu comprends et les variantes plausibles de ton répertoire. Si tu disposes de parties de l'adversaire, examine ses décisions concrètes. Sa date de naissance ne remplace pas cette analyse.
+
+Pendant la partie, respecte ses coups sans leur prêter une profondeur obligatoire. Cherche les menaces, vérifie les captures et conserve la même exigence que face à un adulte. Vouloir punir un coup parce qu'il paraît enfantin peut conduire à prendre un risque injustifié ; le craindre parce qu'il vient d'un prodige peut faire manquer une réponse simple.
+
+## Pour les parents et les entraîneurs
+
+Une victoire prestigieuse peut être célébrée sans devenir une nouvelle obligation. L'enfant n'a pas à confirmer immédiatement une étiquette de prodige ; l'adulte battu n'a pas à tirer de la rencontre un verdict sur sa valeur.
+
+Proposition pédagogique : dans l'analyse, demande aux deux joueurs de choisir une décision qu'ils comprennent mieux après la rencontre. Cela rend visible le travail du gagnant comme les ressources du perdant. Une surprise peut alors rester un événement sportif intéressant et une occasion d'apprendre, sans servir de preuve à un récit biologique sur toute une génération.
+
 ## Comment aborder la rencontre
 
 Prépare ton jeu avec le même soin que pour un autre adversaire. Choisis une ouverture que tu comprends ; aucune Italienne ou Caro-Kann ne garantit une partie tranquille. Vérifie les menaces, adapte ton temps aux difficultés et évite de tirer une conclusion du seul âge.
@@ -63,6 +101,9 @@ Après la partie, analyse les décisions avant de chercher une morale sur les g�
 
 Une surprise devient alors une partie à comprendre, sans devoir prouver que l'expérience ne sert plus ou que l'enfant possède un avantage cognitif général.
 
+
 ## Sources
+
+- FIDE (2024), *FIDE Rapid and Blitz Rating Regulations effective from 1 March 2024*, section 7, [tableaux et définition du score attendu](https://handbook.fide.com/chapter/B02RBRegulations2024). Cette source normative accessible illustre la même distinction entre score et issues, sans remplacer les règles propres à chaque cadence.
 
 - FIDE (2024), *FIDE Rating Regulations effective from 1 March 2024*, section 8, Fédération internationale des échecs. [Calcul du score attendu](https://handbook.fide.com/chapter/B022024).

@@ -1,0 +1,1968 @@
+{
+  "baseline": "c17879b58c5582cd4c06e02baecbc60001b83618",
+  "asOf": "2026-10-19",
+  "articles": [
+    {
+      "path": "src/content/blog/science/reseau-mode-defaut-aux-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-10-15",
+      "heroImage": {
+        "src": "/images/blog/reseau-mode-defaut-aux-echecs-hero.webp",
+        "alt": "Une pièce entièrement vide dont toutes les lampes brûlent à pleine intensité."
+      },
+      "ogImage": "/images/og/reseau-mode-defaut-aux-echecs-og.webp",
+      "sourceSHA256": "3c939bc2eb2df43affaee61a2d23e871308c23d0e59a4267f3e5f545699dcfba",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/reseau-mode-defaut-aux-echecs-hero.webp",
+          "sha256": "d542a313bfb6f7da1616c4ba0e6b67d1def5dbe7c037459246f6598a769afa5f"
+        },
+        {
+          "url": "/images/og/reseau-mode-defaut-aux-echecs-og.webp",
+          "sha256": "6cf1baa3c3da6fb99d12c97f2f3c4568c9fe7faea1832dbeecdffd30a3a6bbdc"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/graphes-de-nash-equilibre-ouvertures.md",
+      "phase": "publies",
+      "publishDate": "2026-05-11",
+      "heroImage": {
+        "src": "/images/blog/graphes-de-nash-equilibre-ouvertures-hero.webp",
+        "alt": "Deux pièces d'échecs adossées l'une à l'autre, en équilibre mutuel, prêtes à tomber ensemble."
+      },
+      "ogImage": "/images/og/graphes-de-nash-equilibre-ouvertures-og.webp",
+      "sourceSHA256": "55fc66870fe43da5ca1eeccd3f8acfbb4d4edc3ffe715dc30314468fe2c5c71f",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/graphes-de-nash-equilibre-ouvertures-hero.webp",
+          "sha256": "912e37bd21235b0e23236dcca560b9c4313a22c04c97a3d132e247e6ca7cdf20"
+        },
+        {
+          "url": "/images/og/graphes-de-nash-equilibre-ouvertures-og.webp",
+          "sha256": "4da0b4c27bf257373d9521b9a7b8d76c56949257ae6e525a2fabacd17b006657"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/les-echecs-et-le-cerveau.md",
+      "phase": "publies",
+      "publishDate": "2026-04-03",
+      "heroImage": {
+        "src": "/images/blog/les-echecs-et-le-cerveau-v2-hero.webp",
+        "alt": "Un profil humain en couches de papier bleues et sombres près d’un pion."
+      },
+      "ogImage": "/images/og/les-echecs-et-le-cerveau-v2-og.webp",
+      "sourceSHA256": "0e407d6cabfeb944eb612465faa92d234b7cb20422eb02618d62da5a5c4ce2e9",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/les-echecs-et-le-cerveau-v2-hero.webp",
+          "sha256": "d06ee5ce7b3a3ebd82a0009228e08f54ce2521f434fac97d7152f0169525951a"
+        },
+        {
+          "url": "/images/og/les-echecs-et-le-cerveau-v2-og.webp",
+          "sha256": "95dc4c8121eb68d82f47fde27c6ba7ab154e5b6647adb8ee91e1a803a771789f"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
+      "phase": "publies",
+      "publishDate": "2026-08-20",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-confiance-en-soi-hero.webp",
+        "alt": "Deux empilements côte à côte, l'un maçonné rang par rang, l'autre en équilibre instable."
+      },
+      "ogImage": "/images/og/echecs-et-confiance-en-soi-og.webp",
+      "sourceSHA256": "034b2cde9deec1263603384e6b93a4209a32edf6f234e8032865907b2a16149c",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-confiance-en-soi-hero.webp",
+          "sha256": "1e06abfecc6be60be848fc7b51c33f1c07dabe80f55ccaeb877dbc2d9ec79bf8"
+        },
+        {
+          "url": "/images/og/echecs-et-confiance-en-soi-og.webp",
+          "sha256": "df8de982c4047806a3f135b221bbb334abc20e7781cf8dcba8d16e36647095bd"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-concentration.md",
+      "phase": "publies",
+      "publishDate": "2026-09-28",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-concentration-hero.webp",
+        "alt": "Un cône lumineux large qui se resserre en un mince faisceau au fond d'une salle vide."
+      },
+      "ogImage": "/images/og/echecs-et-concentration-og.webp",
+      "sourceSHA256": "39a504b17a71094f9ab590ad4b65a8a915c2a2337a2fced700c5a3d708145c8d",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-concentration-hero.webp",
+          "sha256": "177fa8fead0aa90dbe703a46b04d92b6e8c6d17b0ef45eea6b873d700ff1cd40"
+        },
+        {
+          "url": "/images/og/echecs-et-concentration-og.webp",
+          "sha256": "ca13dbcaa28c29aeb61e21017c3e061626c00bef3a125ec28d8aeaa12cb07342"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-fischer-spassky.md",
+      "phase": "publies",
+      "publishDate": "2026-05-12",
+      "heroImage": {
+        "src": "/images/blog/sujet-grand-oral-hggsp-fischer-spassky-watermarked-hero.webp",
+        "alt": "Schéma distinguant résultat sportif, récit de prestige et influence politique à démontrer.",
+        "credit": "Blog d’un Gaucher",
+        "license": "Création originale"
+      },
+      "ogImage": "/images/og/sujet-grand-oral-hggsp-fischer-spassky-watermarked-og.webp",
+      "sourceSHA256": "0bfd7125f29e4a22153cf7b9c0772cb7121448e2654b1c24937faab721095a43",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/sujet-grand-oral-hggsp-fischer-spassky-watermarked-hero.webp",
+          "sha256": "0667f0425d0a1abc93dc40c3afabb6fc0da43676d12535f1a750e2f5e6851a24"
+        },
+        {
+          "url": "/images/og/sujet-grand-oral-hggsp-fischer-spassky-watermarked-og.webp",
+          "sha256": "0d49a6ea0a8a624715514441bcb415d6355cf339dfd5352b2ba23a15007e686e"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-genetique.md",
+      "phase": "publies",
+      "publishDate": "2026-07-30",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-genetique-hero.webp",
+        "alt": "Un champ de graines semées vu de dessus, quelques pousses seulement dépassant des autres."
+      },
+      "ogImage": "/images/og/echecs-et-genetique-og.webp",
+      "sourceSHA256": "ba7cadca294ab647f869ffb9af0313288cc0e61ed3aad74c0bcc9f1cd6021747",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-genetique-hero.webp",
+          "sha256": "782d552838903a74fe44b058a1787262c32a9fb772110a8ad5b17d1d55b8d0f4"
+        },
+        {
+          "url": "/images/og/echecs-et-genetique-og.webp",
+          "sha256": "124efa2f2369290c69e66267a94122e82e176919cc8845baa17e48d2f657a3e3"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-memoire-patrimoine.md",
+      "phase": "publies",
+      "publishDate": "2026-05-12",
+      "heroImage": {
+        "src": "/images/blog/sujet-grand-oral-hggsp-memoire-patrimoine-watermarked-hero.webp",
+        "alt": "Schéma reliant une trace historique à sa sélection et à sa présentation muséale.",
+        "credit": "Blog d’un Gaucher",
+        "license": "Création originale"
+      },
+      "ogImage": "/images/og/sujet-grand-oral-hggsp-memoire-patrimoine-watermarked-og.webp",
+      "sourceSHA256": "8d9647afa7141aab820bd454caf836d1cad295c75a6071ed991da2d35480b9fd",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/sujet-grand-oral-hggsp-memoire-patrimoine-watermarked-hero.webp",
+          "sha256": "fbbc23db638334b225a9eea9a227524c2ece80ae8255930ee1028926be511f5b"
+        },
+        {
+          "url": "/images/og/sujet-grand-oral-hggsp-memoire-patrimoine-watermarked-og.webp",
+          "sha256": "b4ba905f4f2bb8c6f03fd957555a8186b2045700ae8580b428200b59f68ce9b4"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-mondialisation-plateformes.md",
+      "phase": "publies",
+      "publishDate": "2026-05-12",
+      "heroImage": {
+        "src": "/images/blog/sujet-grand-oral-hggsp-mondialisation-plateformes-watermarked-hero.webp",
+        "alt": "Schéma des règles communes, des plateformes et des pratiques locales aux échecs.",
+        "credit": "Blog d’un Gaucher",
+        "license": "Création originale"
+      },
+      "ogImage": "/images/og/sujet-grand-oral-hggsp-mondialisation-plateformes-watermarked-og.webp",
+      "sourceSHA256": "25225231023c77e265a9b08df6c2b4b027891c77a948e5e4f35403491cfe5b9d",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/sujet-grand-oral-hggsp-mondialisation-plateformes-watermarked-hero.webp",
+          "sha256": "bdf0e27e2d9b740b9b4b5f5d61a352976f09f667278c353312b5c8a5a66474a4"
+        },
+        {
+          "url": "/images/og/sujet-grand-oral-hggsp-mondialisation-plateformes-watermarked-og.webp",
+          "sha256": "4b53f6f7c24345c42f0eae4edec48aafd0018deeb4f3966c1ebb6df5e9cbad4e"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-meditation.md",
+      "phase": "publies",
+      "publishDate": "2026-08-13",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-meditation-hero.webp",
+        "alt": "Un bol d'eau vu de près dont la surface vient de redevenir parfaitement immobile."
+      },
+      "ogImage": "/images/og/echecs-et-meditation-og.webp",
+      "sourceSHA256": "7f4003dba6b68e8eb97f3c360a8fc5e7fe42ca3609e7e0ef82eeebaab46613bd",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-meditation-hero.webp",
+          "sha256": "b24c0e9808ecb6d6fdb9e945909d80fe8b8e6a81b2b9285306c85d9797aa37b6"
+        },
+        {
+          "url": "/images/og/echecs-et-meditation-og.webp",
+          "sha256": "0dcae1a67089fbc6e5e34f4f92c89f45a6dd34ad63828d44242fdbc29a7ad129"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/societe/echecs-en-prison.md",
+      "phase": "publies",
+      "publishDate": "2026-06-22",
+      "heroImage": {
+        "src": "/images/blog/echecs-en-prison-watermarked-hero.webp",
+        "alt": "Illustration pixel art : cellule aux murs de pierre sombres, lumière à barreaux dessinant un damier au sol, roi noir au centre, porte ouverte sur un couloir éclairé ; titre « Les échecs en prison : quand l'échiquier devient un outil de réhabilitation » en surimpression.",
+        "credit": "Blog d'un Gaucher",
+        "license": "Création originale"
+      },
+      "ogImage": "/images/og/echecs-en-prison-watermarked-og.webp",
+      "sourceSHA256": "fb0151936fcaabb29531bb2d796d63479291fa722c583cacb143e9398cac644b",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-en-prison-watermarked-hero.webp",
+          "sha256": "421d4bf8a0d0153e13642a03a22be0e4d360c700c059cf7412727c1bb54e39e7"
+        },
+        {
+          "url": "/images/og/echecs-en-prison-watermarked-og.webp",
+          "sha256": "6c024f79d3d314b7aec6329ceb4a6b2c3726ed39b7cd63fb17a60d4781f3df58"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-nsi-alphazero.md",
+      "phase": "publies",
+      "publishDate": "2026-05-08",
+      "heroImage": {
+        "src": "/images/blog/sujet-grand-oral-nsi-alphazero-watermarked-hero.webp",
+        "alt": "Un espace de travail contemporain dans une bibliothèque, sous un plafond lumineux.",
+        "credit": "Szalax, CC0, via Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:University_of_Miskolc_Library_Reading_Room_2025_01.jpg",
+        "license": "CC0"
+      },
+      "ogImage": "/images/og/sujet-grand-oral-nsi-alphazero-watermarked-og.webp",
+      "sourceSHA256": "e835a002bb53de76fb7a78330cfe58e34fdf1f41bbf5c4a3264eefdc1beac730",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/sujet-grand-oral-nsi-alphazero-watermarked-hero.webp",
+          "sha256": "bf6f66a156eec0072331fe14acfe4aa3897cb83c8d7d154cfd027b1088b91bd2"
+        },
+        {
+          "url": "/images/og/sujet-grand-oral-nsi-alphazero-watermarked-og.webp",
+          "sha256": "2a254f9aaa3881a5c2bf7e42b6bd2dcd2c0348d52b6b1ca9c078dae5f4081a3f"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-argent.md",
+      "phase": "publies",
+      "publishDate": "2026-05-12",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-argent-hero.webp",
+        "alt": "Une balance où un grand trophée est soulevé par trois petites pièces de monnaie."
+      },
+      "ogImage": "/images/og/echecs-et-argent-og.webp",
+      "sourceSHA256": "fcf269e308338bd01d69f6abe8764298ad4c4ec879e72b6f36ed6f8bbe3dd80d",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-argent-hero.webp",
+          "sha256": "8cb526ddfcc99b181bfc4a9011f8cb55eb6e549b61f7f38bea12af62942ca072"
+        },
+        {
+          "url": "/images/og/echecs-et-argent-og.webp",
+          "sha256": "e3756f0ad15a5f0cb14afcf5056816a5878a7f80021b7cb91d4bd2bfc0ad71b8"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/pourquoi-echecs-probleme-mathematique-impossible-et-ia.md",
+      "phase": "publies",
+      "publishDate": "2026-04-09",
+      "heroImage": {
+        "src": "/images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-watermarked-hero.webp",
+        "alt": "Vignette pixel art : ordinateur rétro, écran avec arbre de décision lumineux, titre sur la complexité mathématique des échecs et l’IA",
+        "credit": "Blog d'un Gaucher",
+        "license": "Création originale"
+      },
+      "ogImage": "/images/og/pourquoi-echecs-probleme-mathematique-impossible-et-ia-watermarked-og.webp",
+      "sourceSHA256": "39a80bbab331a0e7532b1d3726fb389dcadc2aee4930df12217ae129ab514955",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-watermarked-hero.webp",
+          "sha256": "d860e98c3012870c76cb15194f346f26fbf03a821496512797cfe73c2b9110d1"
+        },
+        {
+          "url": "/images/og/pourquoi-echecs-probleme-mathematique-impossible-et-ia-watermarked-og.webp",
+          "sha256": "df75307e06f6489c732377ad03d6069c235ebd0e2fa31b66192538e60728e81f"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-flow.md",
+      "phase": "publies",
+      "publishDate": "2026-08-31",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-flow-hero.webp",
+        "alt": "Une silhouette assise de dos, au centre d'un couloir de lumière qui s'ouvre droit devant elle."
+      },
+      "ogImage": "/images/og/echecs-et-flow-og.webp",
+      "sourceSHA256": "7ad1f86a444dd29f9bfa873cf46bc4694663576cfa2bdf2099ab61d8bab88f7d",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-flow-hero.webp",
+          "sha256": "b73dfb1051aa49d58d16167647aa72b12bb945b440204207449e46372c8632ae"
+        },
+        {
+          "url": "/images/og/echecs-et-flow-og.webp",
+          "sha256": "8d647b4d1175058486d65732e2924df05d1f9f360b6d137d77effbbc6e1b46bb"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-vision-spatiale.md",
+      "phase": "publies",
+      "publishDate": "2026-07-13",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-vision-spatiale-hero.webp",
+        "alt": "Une maquette flottante réduite à quelques poutres porteuses, le reste du bâtiment absent."
+      },
+      "ogImage": "/images/og/echecs-et-vision-spatiale-og.webp",
+      "sourceSHA256": "0460f50c42de9c1af62a481bd0f9d9334b33a3a3264ea493986d9e4e2aa43727",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-vision-spatiale-hero.webp",
+          "sha256": "7d662abd83655cb9f105d32d40d8e2eddf1a58ed6ab01890444284f9ff2e3c75"
+        },
+        {
+          "url": "/images/og/echecs-et-vision-spatiale-og.webp",
+          "sha256": "2f9b706ca3c48f63b7bef36bdf55108f7cfbffa2c2bdf77a5e0d6977517f7017"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/regle-40-40-20-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-05-05",
+      "heroImage": {
+        "src": "/images/blog/regle-40-40-20-echecs-hero.webp",
+        "alt": "Trois piles de pions d'échecs de hauteurs très inégales alignées en contre-plongée."
+      },
+      "ogImage": "/images/og/regle-40-40-20-echecs-og.webp",
+      "sourceSHA256": "ef4031e73d738b28baf2a3071769445dd5b53ca902c9d12dc1dd6638dc4a8853",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/regle-40-40-20-echecs-hero.webp",
+          "sha256": "531835b1af336e99ecebde176329301fc2df753f7e7b16277022c720069064b9"
+        },
+        {
+          "url": "/images/og/regle-40-40-20-echecs-og.webp",
+          "sha256": "4b7911581e8e3c32c70de60bdcb8fec69b095c2010deca804ecb546acf123335"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/bienfaits-des-pauses-aux-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-05-14",
+      "heroImage": {
+        "src": "/images/blog/bienfaits-des-pauses-aux-echecs-hero.webp",
+        "alt": "Un champ labouré dont seule la bande laissée intacte porte une repousse végétale."
+      },
+      "ogImage": "/images/og/bienfaits-des-pauses-aux-echecs-og.webp",
+      "sourceSHA256": "fa9bdb2b19bafaa48cab33bf35c12781d28fcd153387a22bfb7fb922882a4df6",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/bienfaits-des-pauses-aux-echecs-hero.webp",
+          "sha256": "f8bd45e5ee5be3e001813db850b6e257385665bf08a466516d73efe3995f4e7f"
+        },
+        {
+          "url": "/images/og/bienfaits-des-pauses-aux-echecs-og.webp",
+          "sha256": "225569e25971c29a0af380bb988dd65c62f6b5314d2f7c7df679b6eaa41a58c1"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-09-29",
+      "heroImage": {
+        "src": "/images/blog/theorie-de-l-attachement-aux-echecs-hero.webp",
+        "alt": "Une petite barque reste reliée au quai par une longue corde souple."
+      },
+      "ogImage": "/images/og/theorie-de-l-attachement-aux-echecs-og.webp",
+      "sourceSHA256": "ff75b48b526ce9d6cc5d422c26357d8b5619f38c2bd885ada1edf81d284da3d6",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/theorie-de-l-attachement-aux-echecs-hero.webp",
+          "sha256": "ef4ba8fbfa43100d8e3286cc467e9d68fa2e42f934de3bbd4ec928e139a79e3a"
+        },
+        {
+          "url": "/images/og/theorie-de-l-attachement-aux-echecs-og.webp",
+          "sha256": "db7534c37ef827ad160bcc763c6a3903067449bf5821c190a69b82ccd16a1c55"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/effet-placebo-aux-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-10-06",
+      "heroImage": {
+        "src": "/images/blog/effet-placebo-aux-echecs-hero.webp",
+        "alt": "Deux tasses identiques voisinent avec une ombre prenant la forme d’une porte."
+      },
+      "ogImage": "/images/og/effet-placebo-aux-echecs-og.webp",
+      "sourceSHA256": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/effet-placebo-aux-echecs-hero.webp",
+          "sha256": "2a40abf3aaafe149430bbaa2575a333360f40e92d50abde3fe4b7cca68a5a772"
+        },
+        {
+          "url": "/images/og/effet-placebo-aux-echecs-og.webp",
+          "sha256": "9e73f6975b15d6c02346420ede016169d051d60c147e120724031b8ccc58401a"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
+      "phase": "publies",
+      "publishDate": "2026-07-27",
+      "heroImage": {
+        "src": "/images/blog/5-biais-cognitifs-blunder-hero.webp",
+        "alt": "Cinq rails parallèles s'infléchissant brusquement pour converger vers une seule voie déviée."
+      },
+      "ogImage": "/images/og/5-biais-cognitifs-blunder-og.webp",
+      "sourceSHA256": "b54d22eb6eace85f7098e3ffeedabe4a5cb720f2f869a59c42645c4ed46a10a8",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/5-biais-cognitifs-blunder-hero.webp",
+          "sha256": "1e6f7917eef00803eb9cb791e696df40b7fbffc8e62e9700a4920d1fe85d5861"
+        },
+        {
+          "url": "/images/og/5-biais-cognitifs-blunder-og.webp",
+          "sha256": "e7d27a30a8dc7ca2020f4fad9331deabea00749909d4466494d8007826b37be8"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/burnout-chess.md",
+      "phase": "publies",
+      "publishDate": "2026-08-06",
+      "heroImage": {
+        "src": "/images/blog/burnout-chess-hero.webp",
+        "alt": "Une silhouette de dos assise devant un foyer réduit à des braises qui s'éteignent."
+      },
+      "ogImage": "/images/og/burnout-chess-og.webp",
+      "sourceSHA256": "d5fb9f016c2d476fe092272dc44db2dfe66ca6041d8300ba8c2b9a5faeace375",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/burnout-chess-hero.webp",
+          "sha256": "78ba5f9a030792e81d0e2e9608b0e3356df361eed8a56f4ceedf9ca49b5da683"
+        },
+        {
+          "url": "/images/og/burnout-chess-og.webp",
+          "sha256": "1074e0d45f2fee2a5f12be88474f83987ce616252ec01b47356faefebe0a1139"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-ses-bourdieu-reproduction.md",
+      "phase": "publies",
+      "publishDate": "2026-05-12",
+      "heroImage": {
+        "src": "/images/blog/sujet-grand-oral-ses-bourdieu-reproduction-watermarked-hero.webp",
+        "alt": "Schéma distinguant savoirs appris, biens culturels et reconnaissance institutionnelle.",
+        "credit": "Blog d’un Gaucher",
+        "license": "Création originale"
+      },
+      "ogImage": "/images/og/sujet-grand-oral-ses-bourdieu-reproduction-watermarked-og.webp",
+      "sourceSHA256": "c1551326240e9f713d54a8fcc5e26df2dec43c4d0836ff95cc342d941f6cdbf3",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/sujet-grand-oral-ses-bourdieu-reproduction-watermarked-hero.webp",
+          "sha256": "7be52691d49de40d25698e0e189fe655a3b74ad965c7548ce42e9df1bc3c2f38"
+        },
+        {
+          "url": "/images/og/sujet-grand-oral-ses-bourdieu-reproduction-watermarked-og.webp",
+          "sha256": "451d532ecf62a36a1ab0f1c9b032813d86543ab8cc131d4c4cfb8fa001b5ba94"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-sommeil.md",
+      "phase": "publies",
+      "publishDate": "2026-06-15",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-sommeil-hero.webp",
+        "alt": "Un atelier vide la nuit, avec des outils et des piles de papier."
+      },
+      "ogImage": "/images/og/echecs-et-sommeil-og.webp",
+      "sourceSHA256": "8e0afd4cfc0ac73445761d677595d76fd6dc9877f928135c07a5b61012f3239e",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-sommeil-hero.webp",
+          "sha256": "dd659097807e84236efed937cebfe67ac7fc8858f6fa6e42b5a300c6a110e2f5"
+        },
+        {
+          "url": "/images/og/echecs-et-sommeil-og.webp",
+          "sha256": "7f09f4ba7a8a85d33b8381913af7f64286a3bbd4f17fdc07cf012dfe9f28fa68"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-stress-tournoi.md",
+      "phase": "publies",
+      "publishDate": "2026-10-08",
+      "heroImage": {
+        "src": "/images/blog/echecs-stress-tournoi-hero.webp",
+        "alt": "Une corde tendue à l'extrême en diagonale, la cheville d'accord sur le point de céder."
+      },
+      "ogImage": "/images/og/echecs-stress-tournoi-og.webp",
+      "sourceSHA256": "35043eeede042af847fbc3e2a5535fdaddb0edb24cf08b0130c78b0e09174aff",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-stress-tournoi-hero.webp",
+          "sha256": "8f18e05f711e4f090a05898b4a617bf8b15795f724d920bee37a2e29b48492ca"
+        },
+        {
+          "url": "/images/og/echecs-stress-tournoi-og.webp",
+          "sha256": "b1696de4958b390b1187a4cc7b3d09877377d5972d91e79272fd6300ebbdf37a"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-femmes.md",
+      "phase": "publies",
+      "publishDate": "2026-04-03",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-femmes-v2-hero.webp",
+        "alt": "Une joueuse stylisée est assise à une table d’échecs face à une chaise libre."
+      },
+      "ogImage": "/images/og/echecs-et-femmes-v2-og.webp",
+      "sourceSHA256": "2c00a5a9083356f65eb9e89d7d72805e2af09491698e5acf8ac2d4ec6e2017fa",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-femmes-v2-hero.webp",
+          "sha256": "8f1d28c6e9191afd13b5d31f5971e9f873cc9bab349d22e27330749ffcd1bdd0"
+        },
+        {
+          "url": "/images/og/echecs-et-femmes-v2-og.webp",
+          "sha256": "c8186de74c4f6a7f7146b8cf303927d25118d711c13d2b9baf459777d6795db6"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-visualisation.md",
+      "phase": "publies",
+      "publishDate": "2026-10-12",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-visualisation-hero.webp",
+        "alt": "Une grille d'échiquier dont les cases fusionnent en cinq grands blocs cohérents."
+      },
+      "ogImage": "/images/og/echecs-et-visualisation-og.webp",
+      "sourceSHA256": "e4a1bdcf2df80a84109a9f743796a096009566718723ce81d54518a316574a5e",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-visualisation-hero.webp",
+          "sha256": "317a280adfe67de13236cf92247b4c121a7951f09813beea260400fb3d034775"
+        },
+        {
+          "url": "/images/og/echecs-et-visualisation-og.webp",
+          "sha256": "b20b08bf9330c89e99380016a4efabc3b79f39318409e62c4d382c55fc723e7e"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/loi-de-murphy-aux-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-08-10",
+      "heroImage": {
+        "src": "/images/blog/loi-de-murphy-aux-echecs-hero.webp",
+        "alt": "Des rangées de punaises sombres dont certaines sont entourées d’un cercle clair."
+      },
+      "ogImage": "/images/og/loi-de-murphy-aux-echecs-og.webp",
+      "sourceSHA256": "4663c053fa54bac5f107a18d7227625dec617bd2f1e1ec2a1b085517122f30e3",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/loi-de-murphy-aux-echecs-hero.webp",
+          "sha256": "1cdcd2a02bac9316e82791890158f84909682181261bf8c09acd0272c8cb41ea"
+        },
+        {
+          "url": "/images/og/loi-de-murphy-aux-echecs-og.webp",
+          "sha256": "284ec64fc55243c9be4fef85b52b5b070d3d1dfe8d3ac771de30df61325e3795"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-maths-zermelo-complexite.md",
+      "phase": "publies",
+      "publishDate": "2026-05-05",
+      "heroImage": {
+        "src": "/images/blog/sujet-grand-oral-maths-zermelo-complexite-watermarked-hero.webp",
+        "alt": "Des rangées de pupitres vides dans un amphithéâtre de cours.",
+        "credit": "Paul The Writer, CC0, via Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rows_of_Desks_in_Lecture_Theatre.jpg",
+        "license": "CC0"
+      },
+      "ogImage": "/images/og/sujet-grand-oral-maths-zermelo-complexite-watermarked-og.webp",
+      "sourceSHA256": "bc64c2d51dc8235805b5e32082085955be747a5b9eb66921e737b9cc6fec86d3",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/sujet-grand-oral-maths-zermelo-complexite-watermarked-hero.webp",
+          "sha256": "496c2cb09edbe46e0cf1a7d65efa9c6e9d1e4fba8e391be485348595fdc0dc0a"
+        },
+        {
+          "url": "/images/og/sujet-grand-oral-maths-zermelo-complexite-watermarked-og.webp",
+          "sha256": "9b0c035102c9a73e9fdc841069c89ada7e890025690ede5336974a5df326d9fa"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/neurones-miroirs-aux-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-06-01",
+      "heroImage": {
+        "src": "/images/blog/neurones-miroirs-aux-echecs-hero.webp",
+        "alt": "Une main approche une pièce d’échecs à côté de son reflet."
+      },
+      "ogImage": "/images/og/neurones-miroirs-aux-echecs-og.webp",
+      "sourceSHA256": "66fb25ab65758501d862b38d57cf7b428f337cbe367ce546aa0d3a0c5f73c32f",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/neurones-miroirs-aux-echecs-hero.webp",
+          "sha256": "5d6e48d7a5284126c8ec0652e21f1880e4b71b6d64d4d158e3d696091c91ee64"
+        },
+        {
+          "url": "/images/og/neurones-miroirs-aux-echecs-og.webp",
+          "sha256": "2a73b2fa69b068533ceed442960f9f6c420e8993d406fde5ef500292e3c263f4"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-ses-marche-superstars.md",
+      "phase": "publies",
+      "publishDate": "2026-05-12",
+      "heroImage": {
+        "src": "/images/blog/sujet-grand-oral-ses-marche-superstars-watermarked-hero.webp",
+        "alt": "Une cage d'escalier ornée vue en plongée depuis le dernier étage.",
+        "credit": "Globetrotter19, CC BY-SA 3.0, via Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jelky_School._Staircase_from_top._-_Budapest.JPG",
+        "license": "CC BY-SA 3.0"
+      },
+      "ogImage": "/images/og/sujet-grand-oral-ses-marche-superstars-watermarked-og.webp",
+      "sourceSHA256": "c340b107d697636a2e5a607e438441a130c2f9ab7373ef8c311341f2b5aca812",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/sujet-grand-oral-ses-marche-superstars-watermarked-hero.webp",
+          "sha256": "1338ce207349a2f3b2691450b9bc303ff9e30633f15d52fc121aa7a2b9e8d1d2"
+        },
+        {
+          "url": "/images/og/sujet-grand-oral-ses-marche-superstars-watermarked-og.webp",
+          "sha256": "8c38db006904058884b8141dc86ae854821a73b19f3306f43eec5d786275c3f7"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/logique-modale-aux-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-05-25",
+      "heroImage": {
+        "src": "/images/blog/logique-modale-aux-echecs-hero.webp",
+        "alt": "Un pion face à des portes, certaines murées et d’autres ouvertes."
+      },
+      "ogImage": "/images/og/logique-modale-aux-echecs-og.webp",
+      "sourceSHA256": "bff47fd27cffd412bf4c5f7d86cd15c01dbf71de49c59079b49c5c9d64bd6a10",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/logique-modale-aux-echecs-hero.webp",
+          "sha256": "35dd2b1484202a80e3253ff1c0b04d85140aa4525a2928d31d7976f49dfa1a38"
+        },
+        {
+          "url": "/images/og/logique-modale-aux-echecs-og.webp",
+          "sha256": "0f2dbbfa17e7d28124528c189d9180332f067ff05fb065ac1092e60a24868f41"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-05-05",
+      "heroImage": {
+        "src": "/images/blog/theorie-des-jeux-aux-echecs-hero.webp",
+        "alt": "Un sablier dont le sable est fait de minuscules pièces d'échecs qui passent d'une ampoule à l'autre."
+      },
+      "ogImage": "/images/og/theorie-des-jeux-aux-echecs-og.webp",
+      "sourceSHA256": "6ecfd1ba32733cd1816eb175a7c502f834930bda9f1f08926be6101cc54b0541",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/theorie-des-jeux-aux-echecs-hero.webp",
+          "sha256": "98011ee20cd157e972840213d04407e2ac450004d4f7a852629c3e9e9b0e2a40"
+        },
+        {
+          "url": "/images/og/theorie-des-jeux-aux-echecs-og.webp",
+          "sha256": "9ed3509938518fb55b6e49dac4c0646fe3e72c8525741b066fd0ffb4775a792e"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-04-05",
+      "heroImage": {
+        "src": "/images/blog/psychologie-du-joueur-d-echecs-hero.webp",
+        "alt": "Une silhouette assise de profil faisant face à son ombre redressée comme un adversaire."
+      },
+      "ogImage": "/images/og/psychologie-du-joueur-d-echecs-og.webp",
+      "sourceSHA256": "1b1a8eba3fb4777adcfc56193531bfa303211d67cba93f89c658b70489538663",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/psychologie-du-joueur-d-echecs-hero.webp",
+          "sha256": "a8befe3d37f8b4cb14015ed7464cb25840ac1da1b0ddd7740793da193d713c45"
+        },
+        {
+          "url": "/images/og/psychologie-du-joueur-d-echecs-og.webp",
+          "sha256": "989be762f2146c57a321213fd2ae96ae887870f2f7170756782bf7f628c2a6fb"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-alzheimer-prevention-declin-cognitif.md",
+      "phase": "publies",
+      "publishDate": "2026-05-10",
+      "heroImage": {
+        "src": "/images/blog/echecs-alzheimer-prevention-declin-cognitif-watermarked-hero.webp",
+        "alt": "Vignette pixel art : cerveau en pixels dont une partie se dissipe, titre sur les échecs et la prévention du déclin cognitif",
+        "credit": "Blog d'un Gaucher",
+        "license": "Création originale"
+      },
+      "ogImage": "/images/og/echecs-alzheimer-prevention-declin-cognitif-watermarked-og.webp",
+      "sourceSHA256": "5b0e3f6278b6508bbcb5aced1c8c995c0b26ad08ba71128565c21d047ca85794",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-alzheimer-prevention-declin-cognitif-watermarked-hero.webp",
+          "sha256": "1939ca34e63c8a107983f7a19ffde4f60f706db2bf8f50ee6cdaedd33ae5d574"
+        },
+        {
+          "url": "/images/og/echecs-alzheimer-prevention-declin-cognitif-watermarked-og.webp",
+          "sha256": "86ef76484b4531551d5116cf88bf1ecd794f3d75aed0e45ec39dee863a3ca347"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-autisme.md",
+      "phase": "publies",
+      "publishDate": "2026-04-02",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-autisme-v2-hero.webp",
+        "alt": "Un chemin de pierres claires mène d’une alcôve abritée vers un jardin."
+      },
+      "ogImage": "/images/og/echecs-et-autisme-v2-og.webp",
+      "sourceSHA256": "612a365df8540e352e6c927892cb8674f7be88d8b7ef90763ac8ac5caeb760ae",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-autisme-v2-hero.webp",
+          "sha256": "dac671bdc6f72fedafb6ce66368fcc54ebb6d4a13a47a2374a2c39c7a8d4ad41"
+        },
+        {
+          "url": "/images/og/echecs-et-autisme-v2-og.webp",
+          "sha256": "b13d8c6d4546e0c010728d7f46b81647a01e41b3a61f421509fe99f35f89e5c3"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-dopamine.md",
+      "phase": "publies",
+      "publishDate": "2026-06-29",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-dopamine-hero.webp",
+        "alt": "Une main en suspension au-dessus d'une pièce d'échecs, d'où partent de larges ondes concentriques."
+      },
+      "ogImage": "/images/og/echecs-et-dopamine-og.webp",
+      "sourceSHA256": "e1e6ca21bd9c312067e3afc3388775fc9e77c4f4c25dc045fdcb844cc8bbbd4a",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-dopamine-hero.webp",
+          "sha256": "e7625fd307ca2fd098adeabf17a765f5d15ac528765e8daf55b6b15234df0481"
+        },
+        {
+          "url": "/images/og/echecs-et-dopamine-og.webp",
+          "sha256": "c00e938d44f780812bf856532f8f5cdec5cd2fc0fe59169860eb3d6075dbad85"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-colere-ragequit.md",
+      "phase": "publies",
+      "publishDate": "2026-06-08",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-colere-ragequit-hero.webp",
+        "alt": "Un arc électrique jaillit entre deux conducteurs sombres sur fond ambre."
+      },
+      "ogImage": "/images/og/echecs-et-colere-ragequit-og.webp",
+      "sourceSHA256": "ae9c84cd0e0e92e237a5e08d89c05b331929d2e3a22e0177c8064d6ab29621bf",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-colere-ragequit-hero.webp",
+          "sha256": "20e9ea5476da99fd40b0b93e12423a4e20b7ee01affaabd178d1c78b667d7ec5"
+        },
+        {
+          "url": "/images/og/echecs-et-colere-ragequit-og.webp",
+          "sha256": "7d983bd2eadfac158c96d96e67f5c28e202518d5719188e7de2b09b25e1f74b7"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-maths-elo-probabilites.md",
+      "phase": "publies",
+      "publishDate": "2026-05-05",
+      "heroImage": {
+        "src": "/images/blog/sujet-grand-oral-maths-elo-probabilites-watermarked-hero.webp",
+        "alt": "Une salle de classe vide, tables et chaises groupées, murs couverts d'affiches.",
+        "credit": "Escuela16de17, CC BY-SA 4.0, via Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:3A_665.jpg",
+        "license": "CC BY-SA 4.0"
+      },
+      "ogImage": "/images/og/sujet-grand-oral-maths-elo-probabilites-watermarked-og.webp",
+      "sourceSHA256": "3013ea5c9b9970c0be80e66db2b7f63a3b0d963d3d828c8cad3f00f3c3d4bb2b",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/sujet-grand-oral-maths-elo-probabilites-watermarked-hero.webp",
+          "sha256": "1f996feda494f4bb8c00241147c025f6a9f256cdd6c481e20bfae34088671559"
+        },
+        {
+          "url": "/images/og/sujet-grand-oral-maths-elo-probabilites-watermarked-og.webp",
+          "sha256": "9ac48f8619e7908d1e47f4c0748371c3307b70a3e432fbda6def232f3c31ad96"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-gestion-du-temps.md",
+      "phase": "publies",
+      "publishDate": "2026-09-10",
+      "heroImage": {
+        "src": "/images/blog/echecs-gestion-du-temps-hero.webp",
+        "alt": "Une rangée de récipients de verre de largeurs très inégales où un liquide s'écoule."
+      },
+      "ogImage": "/images/og/echecs-gestion-du-temps-og.webp",
+      "sourceSHA256": "5f088a9f9b3aa10504793d2bbdf7d9c7933b181afa6b783038753e0fe236eaa2",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-gestion-du-temps-hero.webp",
+          "sha256": "70dbf32acf5d8d058e09a78e08763ccb715ce79df714120cd511c061e519949c"
+        },
+        {
+          "url": "/images/og/echecs-gestion-du-temps-og.webp",
+          "sha256": "d3b5e96fda9396f5d43c27c705991fd673b043708f52d0256ae0b03197bb04bc"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-le-corps.md",
+      "phase": "publies",
+      "publishDate": "2026-09-24",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-le-corps-hero.webp",
+        "alt": "Une chaise vide de profil, le sol usé et marqué juste en dessous d'elle."
+      },
+      "ogImage": "/images/og/echecs-et-le-corps-og.webp",
+      "sourceSHA256": "9fdb668e3682353033c34c79e203491718fb94b08183ac7ce7b8e2c66ab08342",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-le-corps-hero.webp",
+          "sha256": "e44f60260af89782d2700a64f90a4df4c04aaab7f83258fc4108ef1f585a2f46"
+        },
+        {
+          "url": "/images/og/echecs-et-le-corps-og.webp",
+          "sha256": "3c871d0c1ccc0621e490df3ac2cc4ab880c1b6c7200d9307602d022feb84416e"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-peur-de-perdre.md",
+      "phase": "publies",
+      "publishDate": "2026-07-20",
+      "heroImage": {
+        "src": "/images/blog/echecs-peur-de-perdre-hero.webp",
+        "alt": "Un pont-levis relevé fermant l'unique passage au-dessus d'une douve à sec."
+      },
+      "ogImage": "/images/og/echecs-peur-de-perdre-og.webp",
+      "sourceSHA256": "4b4a8107026075be28205640b62289b5596d4b58224ab323238048dcddda1080",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-peur-de-perdre-hero.webp",
+          "sha256": "cb9a61a0cdbcb614bfe7d9360dd369ad4cc67133b5f1612c3856ecf6d8c4a005"
+        },
+        {
+          "url": "/images/og/echecs-peur-de-perdre-og.webp",
+          "sha256": "abdee399b46af9169d60b629af9d5bf97b52c20bfb900543208aeef580db9f74"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-tdah.md",
+      "phase": "publies",
+      "publishDate": "2026-06-11",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-tdah-hero.webp",
+        "alt": "Une aiguille de boussole démultipliée en flou se stabilisant sur un point unique."
+      },
+      "ogImage": "/images/og/echecs-et-tdah-og.webp",
+      "sourceSHA256": "9855cf567bb6ea844abae45d9bd670a9162149209f87c1e786e5065e975a835f",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-tdah-hero.webp",
+          "sha256": "b7c492c38544ec2561d25fd71a717d90ed76a7426f354382b9876edf204d9341"
+        },
+        {
+          "url": "/images/og/echecs-et-tdah-og.webp",
+          "sha256": "4c37bca36ca1aaf837be4a4a7ec42d2286272af9dd020fdb0f9a388085fc2066"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
+      "phase": "publies",
+      "publishDate": "2026-07-02",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-perfectionnisme-toxique-hero.webp",
+        "alt": "Une main polissant un point d'une surface lisse jusqu'à y creuser un trou."
+      },
+      "ogImage": "/images/og/echecs-et-perfectionnisme-toxique-og.webp",
+      "sourceSHA256": "30ef953f587790bab219c98e0a53a7ed9d64fe45ef86d643a46e1f48376e6544",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-perfectionnisme-toxique-hero.webp",
+          "sha256": "491717c9cc3e7ea83a3b0125332ad78d11fffa12116454c4c370e5e4f374ea55"
+        },
+        {
+          "url": "/images/og/echecs-et-perfectionnisme-toxique-og.webp",
+          "sha256": "e77c79058e03fc98c521ba183c4de44aa53f841aadaaaad5ed06b3e024dc0ca5"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/minimax-aux-echecs.md",
+      "phase": "publies",
+      "publishDate": "2026-05-13",
+      "heroImage": {
+        "src": "/images/blog/minimax-aux-echecs-hero.webp",
+        "alt": "Un arbre élagué au-dessus d'une pièce d'échecs, la plupart des branches coupées net."
+      },
+      "ogImage": "/images/og/minimax-aux-echecs-og.webp",
+      "sourceSHA256": "08bf6642b5dfb2680c9da12001b1b85e086865af3a35782d6ca2a9966d1f23d5",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/minimax-aux-echecs-hero.webp",
+          "sha256": "07ad208e85ef7da218d6ea2137b4fc4a6116ab6a2f8b2a06719ba5957b1df125"
+        },
+        {
+          "url": "/images/og/minimax-aux-echecs-og.webp",
+          "sha256": "7e0f0daa4df45b945c232eb986823b7eb41b407df7d67f1986cc376b9a48320a"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-peur-de-gagner.md",
+      "phase": "publies",
+      "publishDate": "2026-07-09",
+      "heroImage": {
+        "src": "/images/blog/echecs-peur-de-gagner-hero.webp",
+        "alt": "Un pion se tient devant les dernières cases d’un chemin en damier."
+      },
+      "ogImage": "/images/og/echecs-peur-de-gagner-og.webp",
+      "sourceSHA256": "1dbd692f55a82a2724cf89e7a4dc06017acbaae1295aa9ef1a4fb92485796236",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-peur-de-gagner-hero.webp",
+          "sha256": "182706de7166ae8f4ccedc2f6ad962886e7dbe8d53795d11164e6d07ff7fb3f7"
+        },
+        {
+          "url": "/images/og/echecs-peur-de-gagner-og.webp",
+          "sha256": "38efa26e95369304115c1fafc0ec03c7ecf3c6b757bc901a8f70dc72ee7525d2"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-diplomatie.md",
+      "phase": "publies",
+      "publishDate": "2026-09-03",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-diplomatie-hero.webp",
+        "alt": "Une longue table de négociation vue de dessus dont le plateau est un damier."
+      },
+      "ogImage": "/images/og/echecs-et-diplomatie-og.webp",
+      "sourceSHA256": "878cdb98494e0fb58325f0379342d9407596fbb0de9f3bc391e29a9726da276d",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-diplomatie-hero.webp",
+          "sha256": "75fea383609875dff07370c9c83389efcc8b6133d8809feab0c30faa0d8468ad"
+        },
+        {
+          "url": "/images/og/echecs-et-diplomatie-og.webp",
+          "sha256": "8819def460230a993763eecd45060ede6057b6fa6576bb33f2b25918f4f41b55"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/syndrome-imposteur-2000-elo.md",
+      "phase": "publies",
+      "publishDate": "2026-06-25",
+      "heroImage": {
+        "src": "/images/blog/syndrome-imposteur-2000-elo-hero.webp",
+        "alt": "Une pièce d'échecs posée dans l'empreinte d'un socle taillée pour une pièce plus grande."
+      },
+      "ogImage": "/images/og/syndrome-imposteur-2000-elo-og.webp",
+      "sourceSHA256": "fbd63f60ad5e50fc6e2a6df235448acc6816a2fd2bd21a6d9fc1866574df0575",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/syndrome-imposteur-2000-elo-hero.webp",
+          "sha256": "4980acb7f20a3d41d8fbf76e07902fd2e21e329ec37a26cb7b1eb5f66c337537"
+        },
+        {
+          "url": "/images/og/syndrome-imposteur-2000-elo-og.webp",
+          "sha256": "fe7178afb96a6e136585e982928e602a23497f9e20690956b8ef166a4ab2873e"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/pourquoi-ton-cerveau-prefere-avoir-raison.md",
+      "phase": "programmes",
+      "publishDate": "2027-05-25",
+      "heroImage": {
+        "src": "/images/blog/pourquoi-ton-cerveau-prefere-avoir-raison-hero.webp",
+        "alt": "Une main présente une pièce de puzzle devant l’ouverture d’un mur circulaire."
+      },
+      "ogImage": "/images/og/pourquoi-ton-cerveau-prefere-avoir-raison-og.webp",
+      "sourceSHA256": "4972aa39d6b12853fa6f6c2b1f0302d7bfbd4e8188a3507d148fd24be93d4f25",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/pourquoi-ton-cerveau-prefere-avoir-raison-hero.webp",
+          "sha256": "e7415eb1658af786fc6a35a3ffb87b8e77ed836696fa1b4fd7a33c58c71ff178"
+        },
+        {
+          "url": "/images/og/pourquoi-ton-cerveau-prefere-avoir-raison-og.webp",
+          "sha256": "e02170200a84233d583ed7bf750cafd90412cce83cc4c6970cbc28f1a30094c4"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/effet-barnum-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-22",
+      "heroImage": {
+        "src": "/images/blog/effet-barnum-aux-echecs-hero.webp",
+        "alt": "Trois silhouettes différentes tiennent chacune le même masque anonyme."
+      },
+      "ogImage": "/images/og/effet-barnum-aux-echecs-og.webp",
+      "sourceSHA256": "c228c2aec6b9793ed7045e65501e4c34e99dc359fee1819547c7c1c735ba56b7",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/effet-barnum-aux-echecs-hero.webp",
+          "sha256": "d5572463bbabbe6f64f5526138267a402303989ccada2d5a12fd90f9f7832b5f"
+        },
+        {
+          "url": "/images/og/effet-barnum-aux-echecs-og.webp",
+          "sha256": "0218a9d87663994c9d5904c9d38a498bab4f8e2bd3a9862ba2110e42cf37cdfa"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/effet-de-halo-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2026-11-24",
+      "heroImage": {
+        "src": "/images/blog/effet-de-halo-aux-echecs-hero.webp",
+        "alt": "Deux objets identiques sont éclairés différemment, l’un entouré d’un halo ambre."
+      },
+      "ogImage": "/images/og/effet-de-halo-aux-echecs-og.webp",
+      "sourceSHA256": "8ecd7b042de9352819c053842927c3a6d81f9f48ffac9f998800e0e73553cdce",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/effet-de-halo-aux-echecs-hero.webp",
+          "sha256": "d1f6afe37d8bf52e610b3575dff0b51aa6bfa5c231a4c7b25bb7c46238e9445c"
+        },
+        {
+          "url": "/images/og/effet-de-halo-aux-echecs-og.webp",
+          "sha256": "3e797a8e7d2da6cd750d28bae1fe11f73e3f98f3882eac16171783afb68405fc"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/prophetie-auto-realisatrice-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-02-02",
+      "heroImage": {
+        "src": "/images/blog/prophetie-auto-realisatrice-aux-echecs-hero.webp",
+        "alt": "Une silhouette trace elle-même une barrière devant ses pieds."
+      },
+      "ogImage": "/images/og/prophetie-auto-realisatrice-aux-echecs-og.webp",
+      "sourceSHA256": "2d319b0aae79e2ae7f2623de1ada72a5d9f50049c641f0307d07da027ad5e7f3",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/prophetie-auto-realisatrice-aux-echecs-hero.webp",
+          "sha256": "2106c4f4bec5f05c86045d8d95dfe8cbfd2a55e426c4d8ca940b0e47ca813c82"
+        },
+        {
+          "url": "/images/og/prophetie-auto-realisatrice-aux-echecs-og.webp",
+          "sha256": "a2479da52aa19b8733cabea75a34cea8f22f82695760264e19851794291bc88b"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2026-10-20",
+      "heroImage": {
+        "src": "/images/blog/biais-de-confirmation-aux-echecs-hero.webp",
+        "alt": "Une lampe éclaire une seule branche d’un chemin qui se divise."
+      },
+      "ogImage": "/images/og/biais-de-confirmation-aux-echecs-og.webp",
+      "sourceSHA256": "2cc0ec574c4320bcf4f1ae4f55f3235aefb714a4b4fc0b0e32048c5441c60015",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/biais-de-confirmation-aux-echecs-hero.webp",
+          "sha256": "a63eb1290e44082c6e163eda6cba3a968b2ad9cbe926cb59bd657e1c0c89841d"
+        },
+        {
+          "url": "/images/og/biais-de-confirmation-aux-echecs-og.webp",
+          "sha256": "63b9d77f4ceb31e5501b22ee9deab2fa205826bf7cd7130bbd292034cd4c3c09"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/stress-chronique-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-03-09",
+      "heroImage": {
+        "src": "/images/blog/stress-chronique-aux-echecs-hero.webp",
+        "alt": "Un élastique tendu déforme progressivement un cadre de bois."
+      },
+      "ogImage": "/images/og/stress-chronique-aux-echecs-og.webp",
+      "sourceSHA256": "f87967a751f7d9d89d2fc771e24ebb07bb71a9cffd24a6d01207327d9fbb731e",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/stress-chronique-aux-echecs-hero.webp",
+          "sha256": "f189179423533228616feb0ee6e60573463f873fb28408a48f2840b3ba3e7436"
+        },
+        {
+          "url": "/images/og/stress-chronique-aux-echecs-og.webp",
+          "sha256": "92ee76f5bcf844c80975fd7683985c3a40b5384112d904784655603973f37c66"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/theorie-auto-determination-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-05-04",
+      "heroImage": {
+        "src": "/images/blog/theorie-auto-determination-aux-echecs-hero.webp",
+        "alt": "Trois racines distinctes soutiennent un jeune arbre sur fond crème."
+      },
+      "ogImage": "/images/og/theorie-auto-determination-aux-echecs-og.webp",
+      "sourceSHA256": "1801296331c5025296ef88b53b21b7938417b72b99bbf6e2994f082b8b067ed8",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/theorie-auto-determination-aux-echecs-hero.webp",
+          "sha256": "a137d9c946e318354d364ba830ef5e6d8781e609064daff9e3210b21147ce30e"
+        },
+        {
+          "url": "/images/og/theorie-auto-determination-aux-echecs-og.webp",
+          "sha256": "84d6c99f9a205a0fe693420c2c3e981f0322f463b2a94e440de403630548c041"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/motivation-intrinseque-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-03-16",
+      "heroImage": {
+        "src": "/images/blog/motivation-intrinseque-aux-echecs-hero.webp",
+        "alt": "Une lanterne contenant une petite flamme se trouve près d’un grand trophée sombre."
+      },
+      "ogImage": "/images/og/motivation-intrinseque-aux-echecs-og.webp",
+      "sourceSHA256": "eb83243d78ce598cc621fa5919e696e6c49c10aeda9c0a2624a3b23250faa4be",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/motivation-intrinseque-aux-echecs-hero.webp",
+          "sha256": "de3077168ae2f74d3c7822f2ef4311f946f3f89a4b023f7edfbfe32304a1307f"
+        },
+        {
+          "url": "/images/og/motivation-intrinseque-aux-echecs-og.webp",
+          "sha256": "570f8ec9e97cb9968fb361fa9e56387fde12b097ace372df1af904eb74d986a4"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-la-solitude.md",
+      "phase": "programmes",
+      "publishDate": "2026-11-16",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-la-solitude-hero.webp",
+        "alt": "Deux sièges se faisant face autour d'une table, séparés par une cloison verticale nette."
+      },
+      "ogImage": "/images/og/echecs-et-la-solitude-og.webp",
+      "sourceSHA256": "e2745e204eb6304931d742ee1e4bd896b0c8063d2eed0bd2e33999389134178a",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-la-solitude-hero.webp",
+          "sha256": "41bf2d1a9c8cc092e4d6a3e3bc15c51e76026c8a4ff3264ab18949a7f0260523"
+        },
+        {
+          "url": "/images/og/echecs-et-la-solitude-og.webp",
+          "sha256": "d4a218d3a77535cb46c273f5498dd08222c4c2f538b25a24502295218ce5bff6"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-jeux-video-cerveau.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-21",
+      "heroImage": {
+        "src": "/images/blog/echecs-vs-jeux-video-cerveau-hero.webp",
+        "alt": "Une manette et une tour d’échecs partagent le même cercle de lumière."
+      },
+      "ogImage": "/images/og/echecs-vs-jeux-video-cerveau-og.webp",
+      "sourceSHA256": "15d23685a953d7fc7e700959326d0b880895f1814cddbb444f9e70359dc0b263",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-vs-jeux-video-cerveau-hero.webp",
+          "sha256": "4a4537844a941168eb7c5ffcb834d93a4c951a02dc4ad242b0b83a9c8e488451"
+        },
+        {
+          "url": "/images/og/echecs-vs-jeux-video-cerveau-og.webp",
+          "sha256": "828d5c1d54025cec2644cbba42f0dd5b0ddffdae643f1d08afff891d43c2e941"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-go-complexite-intelligence.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-17",
+      "heroImage": {
+        "src": "/images/blog/echecs-vs-go-complexite-intelligence-hero.webp",
+        "alt": "Un cavalier et une pierre de go séparés par un pli ramifié."
+      },
+      "ogImage": "/images/og/echecs-vs-go-complexite-intelligence-og.webp",
+      "sourceSHA256": "72cfaa6ccf9d16ba156150ea19f8894225f50b6bebd48f793139ec652991f858",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-vs-go-complexite-intelligence-hero.webp",
+          "sha256": "d0f3c8bb929e811f74a8460eec33bc3d71cab0578f1bd12d89dab21e82bc4f35"
+        },
+        {
+          "url": "/images/og/echecs-vs-go-complexite-intelligence-og.webp",
+          "sha256": "fb93983e523017092d966b786fc4fbe7cfe0e7d3ccadda679604e5b27a2ceaf6"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/pourquoi-grands-joueurs-perdent-contre-enfants.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-03",
+      "heroImage": {
+        "src": "/images/blog/pourquoi-grands-joueurs-perdent-contre-enfants-hero.webp",
+        "alt": "Une clé ouvragée présentée devant une serrure dont le profil ne lui correspond pas."
+      },
+      "ogImage": "/images/og/pourquoi-grands-joueurs-perdent-contre-enfants-og.webp",
+      "sourceSHA256": "c6e9a0110179b51db2daab76bbd51d5761196cb0c60276103edbd69301ef498e",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/pourquoi-grands-joueurs-perdent-contre-enfants-hero.webp",
+          "sha256": "77cdd2ba5e2e2c2efbdca8902f5cf7bc0f4e5072280f86d5076b1984447f1d82"
+        },
+        {
+          "url": "/images/og/pourquoi-grands-joueurs-perdent-contre-enfants-og.webp",
+          "sha256": "82a3da7ab7c2fc1d8d5777ba5222fbbecb596dac8ece76106aab520e737f56bb"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/memoriser-parties-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-10",
+      "heroImage": {
+        "src": "/images/blog/memoriser-parties-aux-echecs-hero.webp",
+        "alt": "Une position d'échecs presque effacée dont seuls trois groupes de pièces restent nets."
+      },
+      "ogImage": "/images/og/memoriser-parties-aux-echecs-og.webp",
+      "sourceSHA256": "e5591a5c271cc861178accdef23395a2cb74f5c87c335afa5c00a79ceb2b6ef2",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/memoriser-parties-aux-echecs-hero.webp",
+          "sha256": "74e47d12edf92eeddb76e6a7abc2690593448f167ed787ecb00e7fb6ec741d78"
+        },
+        {
+          "url": "/images/og/memoriser-parties-aux-echecs-og.webp",
+          "sha256": "5923dbe5b01b13777fa531c7424a21df770acf221abe55de6c6505e714e19b1a"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/conditionnement-operant-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-01-26",
+      "heroImage": {
+        "src": "/images/blog/conditionnement-operant-aux-echecs-hero.webp",
+        "alt": "Un doigt approche un bouton mécanique placé près d’une coupelle."
+      },
+      "ogImage": "/images/og/conditionnement-operant-aux-echecs-og.webp",
+      "sourceSHA256": "49b6f9d484756e16b1c22ce837425e206d684643361a29031a3732b10c321ee1",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/conditionnement-operant-aux-echecs-hero.webp",
+          "sha256": "7caf241a6f16ecdb71d1f881a82fb54c30c75bbec782a361245ebeae71dc677f"
+        },
+        {
+          "url": "/images/og/conditionnement-operant-aux-echecs-og.webp",
+          "sha256": "14d95a37f90524d874c68ad46504e1739927e41a3d4a92cf6731dfc79f9e2c42"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/formation-des-habitudes-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2026-10-27",
+      "heroImage": {
+        "src": "/images/blog/formation-des-habitudes-aux-echecs-hero.webp",
+        "alt": "Une piste circulaire creusée dans le papier possède une nouvelle sortie."
+      },
+      "ogImage": "/images/og/formation-des-habitudes-aux-echecs-og.webp",
+      "sourceSHA256": "066caf776d0254c68ae831d3a904c4f8f00d0a36f7acd526d9de13cd8706df32",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/formation-des-habitudes-aux-echecs-hero.webp",
+          "sha256": "b81d42f9be047f382741f96a00f448eba423de217e4c3bd6ced9b950f1ee6bfd"
+        },
+        {
+          "url": "/images/og/formation-des-habitudes-aux-echecs-og.webp",
+          "sha256": "f84e69587402d556b98944c29c423999fbc5ad490875e3822b0bc8b25b4324b7"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/impuissance-apprise-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-15",
+      "heroImage": {
+        "src": "/images/blog/impuissance-apprise-aux-echecs-hero.webp",
+        "alt": "Un oiseau reste dans une cage dont la porte est grande ouverte."
+      },
+      "ogImage": "/images/og/impuissance-apprise-aux-echecs-og.webp",
+      "sourceSHA256": "e85549dd66fad22ffdd5cfbb0c52998f20e86c6b77c38bc98696da330c3fd5d4",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/impuissance-apprise-aux-echecs-hero.webp",
+          "sha256": "afb5817a3d950a4c22092a6cf70159b659fbe2c02fb3fdb2250db28a8e73c98d"
+        },
+        {
+          "url": "/images/og/impuissance-apprise-aux-echecs-og.webp",
+          "sha256": "92a2d5f10c1a1ba653637a5fe1db92ef8b09c087f6e9cd44fcdae0a0b872e9e9"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/hyperfocus-attention-soutenue-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2026-10-26",
+      "heroImage": {
+        "src": "/images/blog/hyperfocus-attention-soutenue-aux-echecs-hero.webp",
+        "alt": "Deux bougies identiques côte à côte, l'une presque consumée, l'autre à peine entamée."
+      },
+      "ogImage": "/images/og/hyperfocus-attention-soutenue-aux-echecs-og.webp",
+      "sourceSHA256": "3dd89f770f2d21257a3f9f16c008fef4016165fa5571a99a33e1ebfcbb29c1d3",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/hyperfocus-attention-soutenue-aux-echecs-hero.webp",
+          "sha256": "7ff9f1f652aba06efcbcc4291c92f52891b7f2dec7f658fd9b74629550553e1a"
+        },
+        {
+          "url": "/images/og/hyperfocus-attention-soutenue-aux-echecs-og.webp",
+          "sha256": "b5a5df3ded04101d6b00324362771b959ff3fc6eb8ee5e5a4f1b05b1c154dafc"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/comparaison-sociale-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-02-16",
+      "heroImage": {
+        "src": "/images/blog/comparaison-sociale-aux-echecs-hero.webp",
+        "alt": "Deux échelles identiques posées sur des sols de hauteurs différentes."
+      },
+      "ogImage": "/images/og/comparaison-sociale-aux-echecs-og.webp",
+      "sourceSHA256": "ba4668fc0e4c9408f8a7abdef0fcab5fc15be5e63d7bfead4224d56ee76950fe",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/comparaison-sociale-aux-echecs-hero.webp",
+          "sha256": "3428b11cd53804120cc01a19d0808d3de5488e6da60969c329640aa08ba57e44"
+        },
+        {
+          "url": "/images/og/comparaison-sociale-aux-echecs-og.webp",
+          "sha256": "6c549cfe4e1d8046083706f1074928be3e0cd065ae8f7d1739fe17409bfd8a74"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/biais-d-ancrage-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-01-05",
+      "heroImage": {
+        "src": "/images/blog/biais-d-ancrage-aux-echecs-hero.webp",
+        "alt": "Une petite ancre retient près du sol un ballon de forme abstraite."
+      },
+      "ogImage": "/images/og/biais-d-ancrage-aux-echecs-og.webp",
+      "sourceSHA256": "7441f4d82d3f4823634826899d99f6fcb48ca0f7c597f5a6fbb069849a27f41e",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/biais-d-ancrage-aux-echecs-hero.webp",
+          "sha256": "02733975aa6ed85bf3ea7df1114c2929b60edac20bb714100bbaf4f9b7eab6a2"
+        },
+        {
+          "url": "/images/og/biais-d-ancrage-aux-echecs-og.webp",
+          "sha256": "46de3c5a9dc76cf67dbc6afafd44acdba33c51dac859aedb49a6ee9d40bd83ee"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/gratification-differee-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-03-02",
+      "heroImage": {
+        "src": "/images/blog/gratification-differee-aux-echecs-hero.webp",
+        "alt": "Une graine fermée côtoie une plante en croissance derrière une paroi."
+      },
+      "ogImage": "/images/og/gratification-differee-aux-echecs-og.webp",
+      "sourceSHA256": "37da0da1cd65d5a056382b8abdce0094c716557033340b0f9c468e1ccdeb1cc4",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/gratification-differee-aux-echecs-hero.webp",
+          "sha256": "bce89d9fe82fc8d8cb4375bd95323d15b80eb0d5ccf95d3aecc9b17a82286d91"
+        },
+        {
+          "url": "/images/og/gratification-differee-aux-echecs-og.webp",
+          "sha256": "86c2057f02a0d0ac1439ea3a76786506d28f95b444f595500c12f817d41014c3"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/theorie-de-l-esprit-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-03-23",
+      "heroImage": {
+        "src": "/images/blog/theorie-de-l-esprit-aux-echecs-hero.webp",
+        "alt": "Deux profils séparés par un écran regardent des objets différents."
+      },
+      "ogImage": "/images/og/theorie-de-l-esprit-aux-echecs-og.webp",
+      "sourceSHA256": "6bbde984b1be9390bfa2ec2bdcd7c17edb1ee54ccd51bc3c0c9b3f4cb12b4e51",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/theorie-de-l-esprit-aux-echecs-hero.webp",
+          "sha256": "f9e01e961df142763805693f2ae15c936cd0932ecf98881490eac9e4fc8b8b51"
+        },
+        {
+          "url": "/images/og/theorie-de-l-esprit-aux-echecs-og.webp",
+          "sha256": "ad73083259238eea9787035b9fd16a05323ad90da83cea7b5ad2171d2ab0b2a7"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/memoire-reconstructive-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-04-06",
+      "heroImage": {
+        "src": "/images/blog/memoire-reconstructive-aux-echecs-hero.webp",
+        "alt": "Des mains réassemblent des fragments de papier en une mosaïque décalée."
+      },
+      "ogImage": "/images/og/memoire-reconstructive-aux-echecs-og.webp",
+      "sourceSHA256": "0251116cf9c96f9a0098d5667bbd3321bfd2ed5c4967c63323794ff2b64cabe3",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/memoire-reconstructive-aux-echecs-hero.webp",
+          "sha256": "7f1263c50b88d63f09558647f4b0d9c0c5de84dfe36f2ff443cf0759ccbe1d19"
+        },
+        {
+          "url": "/images/og/memoire-reconstructive-aux-echecs-og.webp",
+          "sha256": "e06996091a24b98ef5e1b59f7393a8e643ff4ddb251a8dde80d4f6269e04f040"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-vs-scrabble-cognition.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-31",
+      "heroImage": {
+        "src": "/images/blog/echecs-vs-scrabble-cognition-hero.webp",
+        "alt": "Des carreaux de bois sans lettres forment un chemin près d’un pion."
+      },
+      "ogImage": "/images/og/echecs-vs-scrabble-cognition-og.webp",
+      "sourceSHA256": "8ca5a89d4de6a5badeca3e79fb3bf22965dba2f94686b3b2770a84b72e7937ac",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-vs-scrabble-cognition-hero.webp",
+          "sha256": "288facee334b5b3f46248b88251c2da79d1d8261359b6f88ab0c63e35f32dbe7"
+        },
+        {
+          "url": "/images/og/echecs-vs-scrabble-cognition-og.webp",
+          "sha256": "788fc9e2f1a79368df589418d3b9015a5365689fabbbdb3721bece92cd38b2f0"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-procrastination.md",
+      "phase": "programmes",
+      "publishDate": "2026-10-22",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-procrastination-hero.webp",
+        "alt": "Un sablier presque écoulé posé près d'une pièce d'échecs restée immobile."
+      },
+      "ogImage": "/images/og/echecs-et-procrastination-og.webp",
+      "sourceSHA256": "98fb12f6f30f5a4252befc71070eaf5de70546bd051909795d60aa4120e2987e",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-procrastination-hero.webp",
+          "sha256": "f6f12f4f35989f78c067b60d96b34452fcf06f7a8db6b7f94f65a6b0fe141b87"
+        },
+        {
+          "url": "/images/og/echecs-et-procrastination-og.webp",
+          "sha256": "f708a0b318c235938d98e072bff0cf02bae59e21e49e0536901d40ed07f3829e"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-musique-cerveau.md",
+      "phase": "programmes",
+      "publishDate": "2027-01-04",
+      "heroImage": {
+        "src": "/images/blog/echecs-vs-musique-cerveau-hero.webp",
+        "alt": "Un diapason et un cavalier projettent des ombres qui se rejoignent."
+      },
+      "ogImage": "/images/og/echecs-vs-musique-cerveau-og.webp",
+      "sourceSHA256": "c77dee935cb4c0b3c8a98bce7267a5daedd0eea831f14e58c16682fab8a3705b",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-vs-musique-cerveau-hero.webp",
+          "sha256": "98b2cbd056ac4e0006a8c4dda138fce6d305151c56013c47a83f124279b002ed"
+        },
+        {
+          "url": "/images/og/echecs-vs-musique-cerveau-og.webp",
+          "sha256": "3955d8a122c71cc2228b5e96935deabed63a709596d1b31591692c5a4f2eeba3"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/echecs-vs-mathematiques-logique.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-28",
+      "heroImage": {
+        "src": "/images/blog/echecs-vs-mathematiques-logique-hero.webp",
+        "alt": "Un fou d’échecs relié par un pont à des formes géométriques emboîtées."
+      },
+      "ogImage": "/images/og/echecs-vs-mathematiques-logique-og.webp",
+      "sourceSHA256": "5bd8b2b2c42d3d3383c0e74bda2c7e61694dc204c8c7a9026b31bcc66b82bb8a",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-vs-mathematiques-logique-hero.webp",
+          "sha256": "7fdeabc9f888cffe896bb09cadfa3268045a073dad826fdfc35c9353496462e8"
+        },
+        {
+          "url": "/images/og/echecs-vs-mathematiques-logique-og.webp",
+          "sha256": "177cf190dcfcb8cb5e13f12cef72d90e3ceab009055dc476e386590e668bde92"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/faut-il-vraiment-etudier-les-ouvertures.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-07",
+      "heroImage": {
+        "src": "/images/blog/faut-il-vraiment-etudier-les-ouvertures-hero.webp",
+        "alt": "Un escalier dont les marches basses sont aplaties et les marches hautes bien formées."
+      },
+      "ogImage": "/images/og/faut-il-vraiment-etudier-les-ouvertures-og.webp",
+      "sourceSHA256": "cf3a5a51c40192048a2db9543e4e5fa4eee65b3a6a6a0240e3553e03fe02c19c",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/faut-il-vraiment-etudier-les-ouvertures-hero.webp",
+          "sha256": "8a9a865d6e20dc1080eaf805dedbf10b900c5895ac033de2b9a134236808e3ec"
+        },
+        {
+          "url": "/images/og/faut-il-vraiment-etudier-les-ouvertures-og.webp",
+          "sha256": "3f776a03efca409c699e4f9401803c546fb99c8f8f3b98dbcb20eb95ed786aaf"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/projection-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-03-30",
+      "heroImage": {
+        "src": "/images/blog/projection-aux-echecs-hero.webp",
+        "alt": "Deux figures assises se font face dans des zones d’ombre et de lumière."
+      },
+      "ogImage": "/images/og/projection-aux-echecs-og.webp",
+      "sourceSHA256": "3bc1f4bbfe4d3e1af2247fef60bb56980e8cf9615034692e5ef44a4746b980d0",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/projection-aux-echecs-hero.webp",
+          "sha256": "6cd10d82a714ad45f4a36d7c28a8e956f4d5ccbd96be9cdd06e824b12055dc34"
+        },
+        {
+          "url": "/images/og/projection-aux-echecs-og.webp",
+          "sha256": "6d1608406235535eca8ba584ebdf0d41215c4d6cf2f95400e89331af834a010d"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/decision-sous-incertitude-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2026-11-05",
+      "heroImage": {
+        "src": "/images/blog/decision-sous-incertitude-aux-echecs-hero.webp",
+        "alt": "Des chemins partent d’un seuil de pierre et disparaissent dans la brume."
+      },
+      "ogImage": "/images/og/decision-sous-incertitude-aux-echecs-og.webp",
+      "sourceSHA256": "abf600071c7c1f6c08e09efd945694eda0a6ede72fb354b91a8a14cbabbb68e8",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/decision-sous-incertitude-aux-echecs-hero.webp",
+          "sha256": "27daad8d559689aeae66870c15c236cd2afa2fc77335601b832cd23bd5e5bd0f"
+        },
+        {
+          "url": "/images/og/decision-sous-incertitude-aux-echecs-og.webp",
+          "sha256": "ed6b072732b84fdd78d5894f0aeebc1bf4366fa95edafd888b74f1d903337908"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-l-echec.md",
+      "phase": "programmes",
+      "publishDate": "2026-11-23",
+      "heroImage": {
+        "src": "/images/blog/echecs-et-l-echec-hero.webp",
+        "alt": "Une pièce d’échecs couchée projette une longue ombre au sol."
+      },
+      "ogImage": "/images/og/echecs-et-l-echec-og.webp",
+      "sourceSHA256": "867da5e8dfa164ea5becfde2ad8d33d6bec9425ae038c7dcbd489949866a8d04",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-et-l-echec-hero.webp",
+          "sha256": "90b52c1cf463cc1da78cdc114ba2e7f5578a3ec766c89e43fa4506e8218b327e"
+        },
+        {
+          "url": "/images/og/echecs-et-l-echec-og.webp",
+          "sha256": "221d73f3c5e74315ba21c4538352497534594efa44fdb04b5fe18ef9760455c5"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/intelligence-emotionnelle-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2026-11-10",
+      "heroImage": {
+        "src": "/images/blog/intelligence-emotionnelle-aux-echecs-hero.webp",
+        "alt": "Une main maintient un bol dont les ondulations s’apaisent."
+      },
+      "ogImage": "/images/og/intelligence-emotionnelle-aux-echecs-og.webp",
+      "sourceSHA256": "dece3a071a4841e574e114c5cd2c31d4fc96e5a50a859fc22f07a378e521750b",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/intelligence-emotionnelle-aux-echecs-hero.webp",
+          "sha256": "e531bab132447aa6916ae3fc18cdd5c32bf0cdc949c0d179087b63cebc79a2a7"
+        },
+        {
+          "url": "/images/og/intelligence-emotionnelle-aux-echecs-og.webp",
+          "sha256": "142f9733716aa68951ea7c75bafc68e292d35b1801de3fd0ec091cc526fe4538"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/rationalisation-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-04-20",
+      "heroImage": {
+        "src": "/images/blog/rationalisation-aux-echecs-hero.webp",
+        "alt": "Une façade de papier droite recouvre une structure de bois de travers."
+      },
+      "ogImage": "/images/og/rationalisation-aux-echecs-og.webp",
+      "sourceSHA256": "9b019f80c5a391b6dc3bd4cec111206544f8d5ce44ae522255ced245cfba7838",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/rationalisation-aux-echecs-hero.webp",
+          "sha256": "d5ec20a2cd03c8426e19883a31f8773e23a9c48e80431d419168c3a4f6910074"
+        },
+        {
+          "url": "/images/og/rationalisation-aux-echecs-og.webp",
+          "sha256": "ee94d3793115ac985117cf476c2de894c2a0cead05a487aa0d7e1965de584b74"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/paradoxe-du-choix-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-01-19",
+      "heroImage": {
+        "src": "/images/blog/paradoxe-du-choix-aux-echecs-hero.webp",
+        "alt": "Une silhouette fait face à un demi-cercle de tiroirs identiques fermés."
+      },
+      "ogImage": "/images/og/paradoxe-du-choix-aux-echecs-og.webp",
+      "sourceSHA256": "737f9bef131c826bb1523d556db43545eb0fcc3d3458a82a1814209d00289760",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/paradoxe-du-choix-aux-echecs-hero.webp",
+          "sha256": "e04ef1653774fcd717d6d9c17d8d502999f4cd9b1f3bf02509b7b04247ec10d1"
+        },
+        {
+          "url": "/images/og/paradoxe-du-choix-aux-echecs-og.webp",
+          "sha256": "266df22ccafd3036946f2eac6f8662a9744fcc8a7a3d55a45f977cf4a5cdb152"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-vs-poker-strategie.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-24",
+      "heroImage": {
+        "src": "/images/blog/echecs-vs-poker-strategie-hero.webp",
+        "alt": "Une carte retournée projette une ombre de pion près d’un pion visible."
+      },
+      "ogImage": "/images/og/echecs-vs-poker-strategie-og.webp",
+      "sourceSHA256": "5622379d1c31c0ece34c16ede3969265416b21f11de243a290513ecfb2ed7a40",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-vs-poker-strategie-hero.webp",
+          "sha256": "02d65e7ad5dd65c75b34a1204fd0aacbbb1bc70f946a787dd8e22835d633c679"
+        },
+        {
+          "url": "/images/og/echecs-vs-poker-strategie-og.webp",
+          "sha256": "d2bd4fbed547c2047ba10e5aa8d788f16281fdc04531e1f4c38ed002019e79e8"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/conditionnement-classique-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2027-02-09",
+      "heroImage": {
+        "src": "/images/blog/conditionnement-classique-aux-echecs-hero.webp",
+        "alt": "Une clochette projette l’ombre d’une main fermée sur le papier."
+      },
+      "ogImage": "/images/og/conditionnement-classique-aux-echecs-og.webp",
+      "sourceSHA256": "0704cf115e6d18c76a44a0d0ef25278f4b99583f8cf116abc9fa67d6b3e374ca",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/conditionnement-classique-aux-echecs-hero.webp",
+          "sha256": "19f02badb94568b9d44b39fd0c9b57a5ea5aa797fdf3966039b2d5062dfe1a44"
+        },
+        {
+          "url": "/images/og/conditionnement-classique-aux-echecs-og.webp",
+          "sha256": "e28e2d89e8228686d8dcc35326060c9d11204a71e6b07aa8c0fb5eba1d4d45a7"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/analyser-ses-parties.md",
+      "phase": "programmes",
+      "publishDate": "2026-11-02",
+      "heroImage": {
+        "src": "/images/blog/analyser-ses-parties-hero.webp",
+        "alt": "Une traînée d'empreintes rectiligne dont une seule marque bifurque nettement sur le côté."
+      },
+      "ogImage": "/images/og/analyser-ses-parties-og.webp",
+      "sourceSHA256": "ddfe8a6dda5bf8592538dfb372a525a7f543b0e77c6b18ccc1c37009b261233f",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/analyser-ses-parties-hero.webp",
+          "sha256": "70990d6de7a8d98d26073adc214b7b03f7dbb4e075ab3d0a7740be82135dfd57"
+        },
+        {
+          "url": "/images/og/analyser-ses-parties-og.webp",
+          "sha256": "e8bacf61cff1f8867446fd3a27d84e39d287dbd8d7010b44d72dbc2730151903"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-estime-de-soi-elo.md",
+      "phase": "programmes",
+      "publishDate": "2026-11-09",
+      "heroImage": {
+        "src": "/images/blog/echecs-estime-de-soi-elo-hero.webp",
+        "alt": "Une aiguille de mesure massive vissée sur un panneau mince qu'elle fissure sous son poids."
+      },
+      "ogImage": "/images/og/echecs-estime-de-soi-elo-og.webp",
+      "sourceSHA256": "33db04d002308ab03c23547e88429502335eb130433d2476cdd8994b47c14c5a",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/echecs-estime-de-soi-elo-hero.webp",
+          "sha256": "af18872663fe48a86fcc78002910a9b374cce1ae4be19fdd1339d417f44e43f8"
+        },
+        {
+          "url": "/images/og/echecs-estime-de-soi-elo-og.webp",
+          "sha256": "804df2624f5faf6012a49396cbe9c2e0d5630bd278abe3997056dcdf0c026cfa"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/esprit/jouer-en-blitz-est-il-mauvais-pour-progresser.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-14",
+      "heroImage": {
+        "src": "/images/blog/jouer-en-blitz-est-il-mauvais-pour-progresser-hero.webp",
+        "alt": "Une flaque très large et peu profonde à côté d'un puits étroit qui plonge loin."
+      },
+      "ogImage": "/images/og/jouer-en-blitz-est-il-mauvais-pour-progresser-og.webp",
+      "sourceSHA256": "93cbfe9b18c9c3351d1c4e3f989436b630da6a64f0fb9e305122f187838d21db",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/jouer-en-blitz-est-il-mauvais-pour-progresser-hero.webp",
+          "sha256": "5774bc73d8eeb1eb9bde9ce55feddcafc3afa9dd975291f38ca8c21e9c356675"
+        },
+        {
+          "url": "/images/og/jouer-en-blitz-est-il-mauvais-pour-progresser-og.webp",
+          "sha256": "85e1af456b9292b9dea37e769b63465d16a6d83947368bf43dc2b21890fe7fdf"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/les-echecs-rendent-ils-plus-intelligent.md",
+      "phase": "programmes",
+      "publishDate": "2026-11-26",
+      "heroImage": {
+        "src": "/images/blog/les-echecs-rendent-ils-plus-intelligent-hero.webp",
+        "alt": "Une clé ouvragée engagée dans une serrure, sur un mur où toutes les autres serrures diffèrent."
+      },
+      "ogImage": "/images/og/les-echecs-rendent-ils-plus-intelligent-og.webp",
+      "sourceSHA256": "b70bb8ec98f0ba98a08ef706092840c3793fd11ca71f92c7a30a43f055946d3e",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/les-echecs-rendent-ils-plus-intelligent-hero.webp",
+          "sha256": "f1d305508c756ee37417ec2c61c4468d5c74fc8e48f0ef4766f982aff695cca7"
+        },
+        {
+          "url": "/images/og/les-echecs-rendent-ils-plus-intelligent-og.webp",
+          "sha256": "cf887f3a2864a5677f5a3eea292572b26c874ce7dcb9e34d6fef48bd9eecd18c"
+        }
+      ]
+    },
+    {
+      "path": "src/content/blog/science/faux-souvenirs-aux-echecs.md",
+      "phase": "programmes",
+      "publishDate": "2026-12-01",
+      "heroImage": {
+        "src": "/images/blog/faux-souvenirs-aux-echecs-hero.webp",
+        "alt": "Un cadre vide projette une ombre contenant la silhouette d’un vase absent."
+      },
+      "ogImage": "/images/og/faux-souvenirs-aux-echecs-og.webp",
+      "sourceSHA256": "bf4880669c63f5589670903fde34f07ac952956aca48f676f3fc4075b09bece2",
+      "bodyChanged": true,
+      "assets": [
+        {
+          "url": "/images/blog/faux-souvenirs-aux-echecs-hero.webp",
+          "sha256": "b45da1cc658abdb0652d4d25632b053a0d3610deb2b28b17bbdbcc6249216eb9"
+        },
+        {
+          "url": "/images/og/faux-souvenirs-aux-echecs-og.webp",
+          "sha256": "e3234aee3d7610e9e0ad49232bd07a295caf5c01087edbd7da2415d88c71d6c2"
+        }
+      ]
+    }
+  ]
+}

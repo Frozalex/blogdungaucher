@@ -59,7 +59,45 @@ Reviens à la position avec une contrainte de temps réaliste. Cet exercice peut
 
 Si tu constates un malaise répété au moment de conclure, note les situations et discute-les avec une personne de confiance. Évite de chercher une preuve dans les biographies de champions : les interprétations rétrospectives de Morphy ou de Kortchnoi ne permettent pas de diagnostiquer ton propre jeu.
 
-L’article sur la [peur de perdre](/fr/blog/echecs-peur-de-perdre/) aborde les conséquences imaginées d’une défaite ; le [guide d’analyse](/fr/blog/analyser-ses-parties/) aide à revenir aux décisions. Tu peux examiner les deux dimensions sans réduire chaque erreur à l’une d’elles.
+L’article sur la [peur de perdre](/fr/blog/echecs-peur-de-perdre/) aborde les conséquences imaginées d’une défaite ; un guide d’analyse à venir approfondira le travail sur les décisions. Tu peux examiner les deux dimensions sans réduire chaque erreur à l’une d’elles.
+
+## Trois explications à tester avant le mot « sabotage »
+
+**Une lacune de conversion.** Tu sais gagner du matériel, mais tu ne connais pas le plan de la finale obtenue. Le problème est alors un savoir-faire à apprendre. Une bonne position au moteur peut rester difficile à jouer pour un humain qui n'a jamais étudié la méthode.
+
+**Une modification de la conduite.** Tu accélères parce que tu penses que le travail est terminé, ou tu cherches une conclusion brillante au lieu de vérifier la défense. C'est observable dans le temps et les variantes, mais il reste à comprendre pourquoi cela s'est produit. Fatigue, confiance excessive et pression peuvent conduire à des comportements voisins.
+
+**Une conséquence de la victoire qui te pèse.** Tu crains une attente nouvelle, un changement de groupe ou la réaction d'un proche. Cette possibilité mérite une discussion si tu la reconnais dans ton vécu. Elle ne se déduit pas du seul fait que tu as perdu l'avantage.
+
+Ces pistes peuvent se combiner. Pour les départager, reconstitue d'abord ton calcul sans moteur, puis compare avec la position réelle. Une explication psychologique ne doit pas dispenser de trouver le coup qui tenait.
+
+## Un exercice de conversion : gagner ou pat en un coup
+
+Voici une **position pédagogique construite**, et non une partie attribuée à un champion. Les Blancs ont le roi en f6 et la dame en g6 ; les Noirs ont seulement le roi en h8. Trait aux Blancs. En notation FEN : `7k/8/5KQ1/8/8/8/8/8 w - - 0 1`.
+
+Le coup **Dg7#** gagne immédiatement. La dame en g7 attaque h8 ; le roi blanc protège g7, donc le roi noir ne peut pas la capturer. Les cases g8 et h7 sont également contrôlées par la dame. Il n'existe pas d'autre pièce noire pour capturer ou interposer : c'est un mat.
+
+En revanche, **Df7? fait pat**. Le roi noir n'est pas en échec : la dame f7 n'attaque pas h8. Mais il ne dispose d'aucun coup légal : g8 est sur la diagonale de la dame, h7 sur sa rangée et g7 est aussi contrôlée. Avec le seul roi noir immobilisé et sans échec, la partie est nulle.
+
+La différence tient à une règle et à une vérification concrète, pas à un diagnostic. Un joueur qui choisit Df7 peut avoir oublié le pat. Lui expliquer qu'il « ne supporte pas de gagner » ajouterait une histoire sans corriger le mécanisme de l'erreur.
+
+L'exercice se prolonge utilement : invente une autre case de dame et vérifie d'abord si le roi adverse est en échec, puis s'il conserve une case légale. Tu apprends à distinguer la domination du roi et le mat, ce qui sert directement à convertir certaines positions.
+
+## Réduire le contre-jeu sans appliquer une recette aveugle
+
+Quand tu as un avantage, demande ce que l'autre peut encore obtenir : échec perpétuel, pat, attaque, pion passé ou activité des pièces. Échanger les dames peut supprimer une attaque ; cela peut aussi conduire à une finale de pions nulle ou perdue. L'échange n'est donc pas une conclusion automatique tirée du matériel.
+
+Une proposition d'entraînement consiste à reprendre une position favorable et à jouer d'abord le camp qui défend. Cherche les ressources que tu avais sous-estimées. Reviens ensuite au camp avantagé avec un plan plus précis. Le bénéfice attendu est de mieux comprendre les difficultés techniques ; aucune suppression garantie d'une peur n'est affirmée.
+
+Quand tu ajoutes une pendule, choisis une contrainte proche de tes parties. Tu peux alors observer si l'erreur vient d'une règle oubliée, d'un calcul insuffisant ou du temps. Le sentiment d'être près de gagner peut être noté séparément, sans être considéré comme l'explication par défaut.
+
+## Remettre la victoire attendue à sa place
+
+La [théorie des perspectives](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf) offre un cadre pour discuter des résultats envisagés par rapport à une référence. Dans cet article, son usage reste une analogie : tu peux commencer à traiter une victoire probable comme déjà acquise. Le texte original n'établit pas une mesure d'anxiété chez les joueurs avantagés.
+
+Une formulation pratique peut être : « j'ai des ressources favorables, mais je dois encore décider ». Elle ne nie pas l'avantage et ne t'oblige pas à faire semblant d'être perdant. Elle te ramène au problème actuel. Le résultat final n'existe pas encore comme point à protéger.
+
+Si une hésitation répétée concerne surtout les conséquences sociales d'une victoire, en parler peut aider à clarifier ce que tu souhaites. Tu n'as pas à rester bloqué au même classement pour préserver une image ou une relation. Mais ce travail de compréhension ne doit pas devenir une nouvelle injonction à gagner pour prouver que tu es désormais « guéri ».
 
 ## Sources
 

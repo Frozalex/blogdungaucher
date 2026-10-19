@@ -6,7 +6,7 @@ publishDate: "2026-12-01"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 9 min
+readingTime: "10 min"
 pillar: Psychologie
 tags:
   - faux souvenirs
@@ -31,9 +31,10 @@ heroImage:
   src: /images/blog/faux-souvenirs-aux-echecs-hero.webp
   alt: Un cadre vide projette une ombre contenant la silhouette d’un vase absent.
 ogImage: /images/og/faux-souvenirs-aux-echecs-og.webp
+
 ---
 
-Analyse d'après-partie. On arrive au coup 27, celui où tout a basculé. L'ordinateur affiche la réfutation : Txf7 gagnait sur-le-champ.
+Analyse d'après-partie. On arrive au coup 27, celui où tout a basculé. Dans ce scénario fictif, l'ordinateur propose une ressource : Txf7 paraît gagner. Sans position fournie, ce coup illustre seulement le type de commentaire, pas une combinaison vérifiée.
 
 Et tu dis : « ah oui, je l'avais vu, mais j'ai calculé que la dame était mal placée après. »
 
@@ -41,19 +42,19 @@ Peut-être. C'est possible. Les recherches citées ne permettent pas de dire à 
 
 ## L'effet de désinformation
 
-Le champ commence avec une psychologue américaine, [Elizabeth Loftus](https://fr.wikipedia.org/wiki/Elizabeth_Loftus), et une expérience de 1974 menée avec John Palmer.
+Une expérience classique sur l'effet de formulation est publiée en 1974 par Elizabeth Loftus et John Palmer.
 
 Des participants visionnent un film d'accident de voiture. On leur pose ensuite des questions, dont une seule varie : « à quelle vitesse allaient les voitures quand elles se sont **heurtées** ? » ou « quand elles se sont **percutées violemment** ? »
 
 Premier résultat : les estimations de vitesse sont plus élevées avec le verbe le plus fort. On pourrait n'y voir qu'un effet de formulation sur une estimation incertaine.
 
-Le second résultat est d'une autre nature. Une semaine plus tard, on redemande aux participants s'ils ont vu du verre brisé sur les lieux. Dans la condition « percutées violemment », **32 %** affirment en avoir vu. Dans la condition « heurtées », **14 %**.
+Le second résultat provient d'une expérience distincte, menée auprès de 150 étudiants répartis en trois groupes de 50. Une semaine après le film et la première question, on demande s'ils ont vu du verre brisé. Les réponses affirmatives sont de **16 sur 50 (32 %)** dans la condition « percutées violemment », **7 sur 50 (14 %)** dans la condition « heurtées » et **6 sur 50 (12 %)** dans le groupe témoin, qui n'avait pas reçu la question sur la vitesse.
 
 Il n'y avait aucun verre brisé dans le film.
 
-Le verbe employé dans une question, une semaine plus tôt, a ajouté un détail visuel à un souvenir. Les participants ne mentent pas : ils rapportent ce dont ils se souviennent. C'est ce qu'on appelle l'**effet de désinformation**, et il est l'un des résultats les mieux établis de la psychologie de la mémoire.
+La formulation précédente modifie ici la proportion de réponses affirmatives à un détail absent. Ce résultat contribue à l'étude de l'**effet de désinformation**. Il ne permet pas d'établir directement, pour chaque participant, la présence d'une image visuelle ni de connaître son intention au moment de répondre.
 
-Sa portée est considérable, parce qu'il implique que le souvenir n'est pas un enregistrement conservé puis relu. C'est une reconstruction, et une reconstruction accepte des matériaux qui ne viennent pas de l'événement.
+L'expérience invite ainsi à distinguer l'événement observé et le récit produit après une information nouvelle. Une modification de réponse ne donne pas un accès complet à tous les mécanismes de mémoire qui l'ont produite.
 
 ## La nuance : croire, imaginer, se souvenir
 
@@ -65,7 +66,7 @@ Leur résultat : en moyenne, environ **47 %** des participants manifestent une f
 
 Ces moyennes portent sur les études d'implantation examinées et leurs critères. Elles ne permettent pas de remplacer un pourcentage issu d'une expérience particulière par un taux universel.
 
-La position raisonnable est donc intermédiaire, et c'est celle qu'on retiendra : **la mémoire est nettement plus malléable qu'on ne le croyait, et nettement moins malléable que la version populaire ne le raconte**. Modifier un détail est facile ; fabriquer un épisode entier l'est beaucoup moins.
+La distinction utile concerne les critères : une croyance, une impression de remémoration et un souvenir complet ne sont pas interchangeables. Les protocoles et leurs définitions doivent accompagner les chiffres, sans conclusion générale sur la facilité à modifier toute mémoire.
 
 Or c'est précisément la modification de détail qui nous concerne ici.
 
@@ -73,13 +74,13 @@ Or c'est précisément la modification de détail qui nous concerne ici.
 
 Regarde maintenant ce qui se passe quand tu analyses une partie, et compare aux ingrédients identifiés par Loftus.
 
-**Une information nouvelle sur un événement passé.** L'analyse t'apprend ce qui était réellement dans la position. Cette information arrive après coup, exactement comme la question sur le verre brisé.
+**Une information nouvelle sur un événement passé.** L'analyse t'apprend ce qui était réellement dans la position. Cette information arrive après coup, ce qui fournit une analogie à examiner avec l'information postérieure au film.
 
 **Une source crédible.** Un moteur ou un joueur plus fort peut influencer ton jugement, sans être infaillible. Sa variante et ton souvenir de l'avoir envisagée restent deux informations différentes.
 
-**Des questions suggestives.** C'est le point le plus direct. « Tu avais vu Txf7 ? » n'est pas une question neutre : elle contient déjà le coup, et elle propose une réponse. C'est structurellement la même chose que le choix entre « heurtées » et « percutées violemment ».
+**Des questions suggestives.** C'est le point le plus direct. « Tu avais vu Txf7 ? » n'est pas une question neutre : elle contient déjà le coup, et elle propose une réponse. L'analogie concerne la suggestion contenue dans la question ; elle ne démontre pas un effet identique dans l'analyse d'échecs.
 
-**Un intérêt à accepter la suggestion.** Chez Loftus, les participants n'avaient rien à gagner à se souvenir du verre brisé. Toi, si. « Je l'avais vu » préserve l'image que tu as de ton niveau, alors que « je ne l'ai pas vu » la met en cause. C'est le mécanisme décrit dans notre article sur [la dissonance cognitive aux échecs](/fr/blog/dissonance-cognitive-aux-echecs/).
+**Un intérêt à accepter la suggestion.** Dans une analyse, reconnaître un coup déjà vu peut parfois préserver une image de compétence. Cette possibilité n'établit pas l'intention du joueur ni la cause de son récit. L'article sur [la dissonance cognitive aux échecs](/fr/blog/dissonance-cognitive-aux-echecs/) examine une autre hypothèse à distinguer du souvenir lui-même.
 
 **La répétition.** Tu rejoues la position plusieurs fois, tu regardes la variante, tu la commentes. La répétition peut rendre une variante familière. Cette familiarité n'établit pas que tu l'avais calculée pendant la partie.
 
@@ -89,21 +90,21 @@ Ce rapprochement est une hypothèse d'application. Les études citées ne compar
 
 On pourrait juger l'affaire anodine. Elle ne l'est pas, pour une raison précise.
 
-L'analyse a un objectif : identifier ce que tu dois travailler. Or cet objectif dépend entièrement d'une question à laquelle seule ta mémoire peut répondre : **est-ce que tu n'as pas vu le coup, ou est-ce que tu l'as vu et mal évalué ?**
+L'analyse a un objectif : identifier ce que tu dois travailler. Une question utile, à éclairer par tes souvenirs et les traces disponibles, est : **est-ce que tu n'as pas vu le coup, ou est-ce que tu l'as vu et mal évalué ?**
 
-Ce sont deux diagnostics complètement différents, qui appellent deux entraînements différents.
+Ces situations peuvent suggérer des travaux différents, sans former un diagnostic exhaustif de ton jeu.
 
-Ne pas voir Txf7 est un déficit de **reconnaissance de motifs**. Le remède est l'exercice tactique, en volume, pour installer le motif.
+Ne pas envisager un candidat peut refléter un motif inconnu, un balayage incomplet des réponses ou le manque de temps. Des exercices tactiques peuvent être pertinents si l'analyse identifie ce besoin ; leur volume ne constitue pas à lui seul une correction garantie.
 
-Le voir et mal l'évaluer est un déficit de **calcul ou d'évaluation**. Le remède est tout autre : travail sur des positions calculées à fond, discipline de vérification, entraînement à l'évaluation de positions finales de variante.
+Envisager le coup puis l'écarter peut conduire à examiner le **calcul ou l'évaluation**. Tu peux alors vérifier où la variante a été arrêtée et quelle position finale a été jugée. La réponse adaptée dépend de l'erreur précise, pas d'une catégorie unique.
 
-Si ta mémoire te dit systématiquement « je l'avais vu », tu diagnostiques toujours le second cas. Tu travailles donc pendant des années une compétence qui n'est pas celle qui te manque, sur la base d'un souvenir fabriqué par l'analyse elle-même.
+Si ton récit classe systématiquement les erreurs comme des candidats vus puis mal évalués, tu risques de négliger d'autres difficultés. Il faut conserver l'hypothèse d'une reconstruction, mais aussi celle d'un souvenir réel ou incomplet. Le contenu de la variante ne prouve pas à lui seul laquelle est vraie.
 
-Et cette erreur est invisible, puisqu'elle ne se manifeste que par une absence de progrès, qu'on attribuera à autre chose.
+Une absence de progrès n'établit pas non plus la cause du problème : choix d'exercices, pratique, conditions et mesures peuvent compter.
 
 ## Le protocole de protection
 
-La solution est connue depuis longtemps par les juristes, et elle est étonnamment simple : **fixer le témoignage avant l'exposition à l'information**.
+Une proposition pratique consiste à **conserver un premier compte rendu après la partie, avant la correction**. Elle préserve une trace de tes souvenirs à ce moment, sans certifier leur exactitude.
 
 ### 1. Note avant d'analyser
 
@@ -117,13 +118,13 @@ Cette note est une **trace extérieure à ta mémoire**. Elle conserve ce que tu
 
 C'est la même règle que celle donnée dans notre article sur [l'obéissance à l'autorité aux échecs](/fr/blog/obeissance-a-l-autorite-aux-echecs/), et ce n'est pas une coïncidence : dans les deux cas, il s'agit d'enregistrer son propre jugement avant qu'une source plus fiable ne le remplace.
 
-### 2. Interdis les questions suggestives
+### 2. Évite de donner d'abord le coup dans la question
 
 Si tu analyses avec quelqu'un, la formulation compte autant que le contenu.
 
 Ne demande pas : « tu avais vu Txf7 ? » Demande : « qu'est-ce que tu as regardé ici ? »
 
-La première contient la réponse et déclenche une reconnaissance qui peut être fausse. La seconde ouvre un rappel libre, dont on sait qu'il produit moins d'erreurs, même s'il produit moins de matière.
+La première fournit déjà un candidat qui peut devenir familier. La seconde ne le fournit pas ; elle laisse davantage de place à ton propre récit. Cela ne garantit pas que ce rappel soit exact, complet ou supérieur dans tous les contextes.
 
 Et si tu es celui qui répond, la meilleure phrase disponible est simplement : **« je ne sais plus. »** Elle est utile lorsque tu hésites réellement ; il ne faut pas la tenir pour vraie par principe.
 
@@ -135,13 +136,37 @@ Et si tu es celui qui répond, la meilleure phrase disponible est simplement : *
 - je l'ai vu et je l'ai écarté pour telle raison ;
 - **je ne me souviens pas**.
 
-La troisième est légitime et doit rester disponible. Un système qui ne l'autorise pas force la mémoire à choisir entre les deux autres, et elle choisira celle qui te met en valeur.
+La troisième est légitime et doit rester disponible. Un système qui ne l'autorise pas peut pousser à une réponse plus assurée que ne le permet le souvenir. Il n'est pas possible de prédire quel récit chacun choisira.
 
 ### 4. Compte tes catégories
 
 Au bout de trente parties analysées ainsi, compte. Le rapport entre ces catégories décrit tes notes dans cet échantillon. Il ne constitue pas un diagnostic clinique ni une mesure exacte de chaque processus mental.
 
-C'est probablement l'information la plus utile que tu puisses produire sur ton propre jeu, et elle ne coûte que trois lignes par partie.
+Ce relevé peut compléter les variantes et les temps disponibles. Il n'a pas à devenir une mesure parfaite de tout ton jeu.
+
+## Faire une place à la source du souvenir
+
+Après une analyse, trois informations peuvent se ressembler : le souvenir d'avoir envisagé un coup, la reconnaissance du coup maintenant familier et la conviction qu'il aurait été logique de le regarder. Elles peuvent coexister sans être identiques. Le caractère évident d'une variante après correction ne date pas le moment où tu l'as découverte.
+
+**Exemple fictif :** tu notes après la partie « j'ai regardé une attaque sur f7, sans me rappeler le premier coup ». Le moteur propose ensuite une capture précise. Tu peux conserver les deux phrases : le thème général figurait dans ta note ; l'ordre exact est connu grâce à l'analyse. Tu n'as besoin ni de nier tout souvenir ni de transformer le thème vague en calcul complet.
+
+Cette distinction améliore le choix du travail. Tu avais peut-être reconnu une zone sensible, sans savoir générer le candidat ou vérifier la défense. Ce cas intermédiaire disparaîtrait si l'on t'obligeait à choisir seulement entre « tout vu » et « rien vu ».
+
+## Une question ouverte n'est pas une garantie d'exactitude
+
+Demander « qu'avais-tu regardé ? » évite de fournir immédiatement un coup précis. Mais un rappel libre peut aussi omettre ou reconstruire. Il faut donc garder le contexte, la certitude exprimée et la provenance des informations, au lieu de traiter la première version comme un enregistrement parfait.
+
+Un partenaire peut procéder en deux temps : écouter le récit, puis introduire la variante à vérifier. Il est ensuite possible de dire « cette idée vient de notre analyse ». C'est une convention proposée pour le travail, pas un protocole dont on aurait mesuré une réduction chiffrée des faux souvenirs chez les joueurs.
+
+Le doute ne doit pas devenir une arme dans la discussion. Dire à quelqu'un « tu crois t'en souvenir, donc c'est faux » serait aussi injustifié que croire tout récit assuré. Les positions servent à vérifier les possibilités du jeu ; elles ne donnent pas seules accès à l'histoire intérieure d'une personne.
+
+## Vérifier un détail ne suffit pas à authentifier tout un épisode
+
+La [revue de Brewin et Andrews](https://discovery.ucl.ac.uk/id/eprint/1495935/1/Brewin_et_al-2016-Applied_Cognitive_Psychology.pdf) distingue plusieurs dimensions des souvenirs autobiographiques suggérés. Une croyance dans l'événement et une expérience de remémoration ne sont pas automatiquement un souvenir complet. Les critères de classement influencent les moyennes rapportées.
+
+Dans ton carnet, tu peux appliquer une prudence analogue sans importer un taux expérimental : conserver le degré de certitude et éviter de compléter les blancs. Le fait d'avoir correctement retrouvé un coup ne prouve pas que chaque raison donnée ensuite était présente en partie. L'inverse reste vrai : une hésitation sur un détail ne rend pas tout le récit faux.
+
+Une analyse rigoureuse peut ainsi conclure : « la variante fonctionne, je comprends maintenant sa condition, mais je ne sais pas si je l'avais calculée ». Tu disposes alors d'une connaissance nouvelle utilisable, sans forcer une histoire de compétence passée. C'est suffisant pour apprendre de la partie.
 
 ## Ce qu'il faut retenir
 
@@ -149,7 +174,7 @@ Loftus et Palmer montrent un effet de formulation dans une expérience précise.
 
 ---
 
-*Cet article fait partie d'une série sur la psychologie appliquée aux échecs. [La mémoire reconstructive](/fr/blog/memoire-reconstructive-aux-echecs/) décrit aussi comment un souvenir peut se modifier ; un faux souvenir n'est pas nécessairement le signe d'une pathologie. Voir aussi [analyser ses parties](/fr/blog/analyser-ses-parties/) et [le biais de confirmation aux échecs](/fr/blog/biais-de-confirmation-aux-echecs/).*
+*Cet article fait partie d'une série sur la psychologie appliquée aux échecs. La mémoire reconstructive (article à venir) décrit aussi comment un souvenir peut se modifier ; un faux souvenir n'est pas nécessairement le signe d'une pathologie. Voir aussi [analyser ses parties](/fr/blog/analyser-ses-parties/) et [le biais de confirmation aux échecs](/fr/blog/biais-de-confirmation-aux-echecs/).*
 
 ## Sources
 

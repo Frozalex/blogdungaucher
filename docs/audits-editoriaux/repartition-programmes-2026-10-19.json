@@ -1,0 +1,83 @@
+{
+  "status": "terminé ; contrôles structurels réussis",
+  "articles": 40,
+  "lots": {
+    "lot1": [
+      "src/content/blog/esprit/pourquoi-ton-cerveau-prefere-avoir-raison.md",
+      "src/content/blog/esprit/effet-barnum-aux-echecs.md",
+      "src/content/blog/esprit/effet-de-halo-aux-echecs.md",
+      "src/content/blog/esprit/prophetie-auto-realisatrice-aux-echecs.md",
+      "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
+      "src/content/blog/science/stress-chronique-aux-echecs.md",
+      "src/content/blog/esprit/theorie-auto-determination-aux-echecs.md",
+      "src/content/blog/esprit/motivation-intrinseque-aux-echecs.md",
+      "src/content/blog/esprit/echecs-et-la-solitude.md",
+      "src/content/blog/science/echecs-vs-jeux-video-cerveau.md",
+      "src/content/blog/science/echecs-vs-go-complexite-intelligence.md",
+      "src/content/blog/esprit/pourquoi-grands-joueurs-perdent-contre-enfants.md",
+      "src/content/blog/science/memoriser-parties-aux-echecs.md",
+      "src/content/blog/science/conditionnement-operant-aux-echecs.md"
+    ],
+    "lot2": [
+      "src/content/blog/esprit/formation-des-habitudes-aux-echecs.md",
+      "src/content/blog/esprit/impuissance-apprise-aux-echecs.md",
+      "src/content/blog/science/hyperfocus-attention-soutenue-aux-echecs.md",
+      "src/content/blog/esprit/comparaison-sociale-aux-echecs.md",
+      "src/content/blog/esprit/biais-d-ancrage-aux-echecs.md",
+      "src/content/blog/esprit/gratification-differee-aux-echecs.md",
+      "src/content/blog/science/theorie-de-l-esprit-aux-echecs.md",
+      "src/content/blog/science/memoire-reconstructive-aux-echecs.md",
+      "src/content/blog/esprit/echecs-vs-scrabble-cognition.md",
+      "src/content/blog/esprit/echecs-et-procrastination.md",
+      "src/content/blog/science/echecs-vs-musique-cerveau.md",
+      "src/content/blog/science/echecs-vs-mathematiques-logique.md",
+      "src/content/blog/esprit/faut-il-vraiment-etudier-les-ouvertures.md"
+    ],
+    "lot3": [
+      "src/content/blog/esprit/projection-aux-echecs.md",
+      "src/content/blog/science/decision-sous-incertitude-aux-echecs.md",
+      "src/content/blog/esprit/echecs-et-l-echec.md",
+      "src/content/blog/esprit/intelligence-emotionnelle-aux-echecs.md",
+      "src/content/blog/esprit/rationalisation-aux-echecs.md",
+      "src/content/blog/esprit/paradoxe-du-choix-aux-echecs.md",
+      "src/content/blog/esprit/echecs-vs-poker-strategie.md",
+      "src/content/blog/science/conditionnement-classique-aux-echecs.md",
+      "src/content/blog/esprit/analyser-ses-parties.md",
+      "src/content/blog/esprit/echecs-estime-de-soi-elo.md",
+      "src/content/blog/esprit/jouer-en-blitz-est-il-mauvais-pour-progresser.md",
+      "src/content/blog/science/les-echecs-rendent-ils-plus-intelligent.md",
+      "src/content/blog/science/faux-souvenirs-aux-echecs.md"
+    ]
+  },
+  "priority": "après les publiés",
+  "metadataCorrections": {
+    "src/content/blog/esprit/formation-des-habitudes-aux-echecs.md": {
+      "seoDescription": {
+        "from": "Pourquoi les plans d'entraînement aux échecs échouent : le mythe des 21 jours, les 66 jours de Lally, et les intentions de mise en œuvre, la seule technique à l'efficacité solidement mesurée.",
+        "to": "Pourquoi les plans d'entraînement aux échecs échouent : le mythe des 21 jours, les 66 jours de Lally, et les intentions de mise en œuvre, avec les limites de leur application à ton entraînement.",
+        "reason": "Retirer une exclusivité et une efficacité universelle non établies."
+      }
+    },
+    "src/content/blog/esprit/gratification-differee-aux-echecs.md": {
+      "seoDescription": {
+        "from": "Ce que la réplication de 2018 a fait au test du marshmallow, et pourquoi la patience aux échecs dépend moins de la volonté que de la fiabilité du lien entre attente et récompense.",
+        "to": "Ce que la réplication de 2018 montre sur l’attente, les limites des prédictions individuelles et les précautions nécessaires pour appliquer ces résultats à l’entraînement aux échecs.",
+        "reason": "Ne pas présenter la fiabilité de l’environnement comme une explication unique de la gratification différée."
+      }
+    },
+    "src/content/blog/esprit/intelligence-emotionnelle-aux-echecs.md": {
+      "seoDescription": {
+        "from": "L'intelligence émotionnelle est un concept contesté. Ce qu'il en reste de solide, et comment les échecs permettent de mesurer son propre état émotionnel au lieu de l'estimer.",
+        "to": "Intelligence émotionnelle et échecs : distingue concept, mesures et comportements, interprète tes réactions avec leur contexte et construis des règles personnelles révisables.",
+        "reason": "Ne pas présenter les échecs comme un instrument établi de mesure de l’état émotionnel."
+      }
+    },
+    "src/content/blog/esprit/rationalisation-aux-echecs.md": {
+      "seoDescription": {
+        "from": "Ce que la cécité au choix démontre sur nos justifications, et pourquoi les explications que tu donnes à tes coups et à tes défaites sont fabriquées après la décision.",
+        "to": "Cécité au choix et analyse des parties : distingue les souvenirs, les raisons reconstruites et les variantes vérifiables, sans considérer tout récit après coup comme inventé.",
+        "reason": "Ne pas attribuer systématiquement les explications à une fabrication après la décision."
+      }
+    }
+  }
+}

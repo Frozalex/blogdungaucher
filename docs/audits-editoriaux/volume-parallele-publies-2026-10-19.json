@@ -1,0 +1,295 @@
+{
+  "articles": 48,
+  "before": 44672,
+  "current": 80956,
+  "rows": [
+    {
+      "path": "src/content/blog/science/reseau-mode-defaut-aux-echecs.md",
+      "before": 717,
+      "current": 1428,
+      "gain": 711
+    },
+    {
+      "path": "src/content/blog/science/graphes-de-nash-equilibre-ouvertures.md",
+      "before": 717,
+      "current": 1519,
+      "gain": 802
+    },
+    {
+      "path": "src/content/blog/science/les-echecs-et-le-cerveau.md",
+      "before": 826,
+      "current": 1698,
+      "gain": 872
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
+      "before": 583,
+      "current": 1410,
+      "gain": 827
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-concentration.md",
+      "before": 645,
+      "current": 1436,
+      "gain": 791
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-fischer-spassky.md",
+      "before": 606,
+      "current": 1358,
+      "gain": 752
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-genetique.md",
+      "before": 647,
+      "current": 1415,
+      "gain": 768
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-memoire-patrimoine.md",
+      "before": 609,
+      "current": 1410,
+      "gain": 801
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-mondialisation-plateformes.md",
+      "before": 638,
+      "current": 1399,
+      "gain": 761
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-meditation.md",
+      "before": 696,
+      "current": 1417,
+      "gain": 721
+    },
+    {
+      "path": "src/content/blog/societe/echecs-en-prison.md",
+      "before": 1431,
+      "current": 2159,
+      "gain": 728
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-nsi-alphazero.md",
+      "before": 673,
+      "current": 1468,
+      "gain": 795
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-argent.md",
+      "before": 2293,
+      "current": 3085,
+      "gain": 792
+    },
+    {
+      "path": "src/content/blog/science/pourquoi-echecs-probleme-mathematique-impossible-et-ia.md",
+      "before": 2470,
+      "current": 3183,
+      "gain": 713
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-flow.md",
+      "before": 1395,
+      "current": 2174,
+      "gain": 779
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-vision-spatiale.md",
+      "before": 1285,
+      "current": 2078,
+      "gain": 793
+    },
+    {
+      "path": "src/content/blog/esprit/regle-40-40-20-echecs.md",
+      "before": 708,
+      "current": 1503,
+      "gain": 795
+    },
+    {
+      "path": "src/content/blog/esprit/bienfaits-des-pauses-aux-echecs.md",
+      "before": 580,
+      "current": 1408,
+      "gain": 828
+    },
+    {
+      "path": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
+      "before": 639,
+      "current": 1392,
+      "gain": 753
+    },
+    {
+      "path": "src/content/blog/science/effet-placebo-aux-echecs.md",
+      "before": 887,
+      "current": 1637,
+      "gain": 750
+    },
+    {
+      "path": "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
+      "before": 549,
+      "current": 1234,
+      "gain": 685
+    },
+    {
+      "path": "src/content/blog/esprit/burnout-chess.md",
+      "before": 706,
+      "current": 1463,
+      "gain": 757
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-ses-bourdieu-reproduction.md",
+      "before": 644,
+      "current": 1393,
+      "gain": 749
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-sommeil.md",
+      "before": 718,
+      "current": 1499,
+      "gain": 781
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-stress-tournoi.md",
+      "before": 701,
+      "current": 1421,
+      "gain": 720
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-femmes.md",
+      "before": 3219,
+      "current": 3770,
+      "gain": 551
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-visualisation.md",
+      "before": 514,
+      "current": 1250,
+      "gain": 736
+    },
+    {
+      "path": "src/content/blog/esprit/loi-de-murphy-aux-echecs.md",
+      "before": 495,
+      "current": 1195,
+      "gain": 700
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-maths-zermelo-complexite.md",
+      "before": 741,
+      "current": 1491,
+      "gain": 750
+    },
+    {
+      "path": "src/content/blog/science/neurones-miroirs-aux-echecs.md",
+      "before": 789,
+      "current": 1503,
+      "gain": 714
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-ses-marche-superstars.md",
+      "before": 1163,
+      "current": 1894,
+      "gain": 731
+    },
+    {
+      "path": "src/content/blog/science/logique-modale-aux-echecs.md",
+      "before": 1285,
+      "current": 2056,
+      "gain": 771
+    },
+    {
+      "path": "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
+      "before": 801,
+      "current": 1588,
+      "gain": 787
+    },
+    {
+      "path": "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
+      "before": 977,
+      "current": 1611,
+      "gain": 634
+    },
+    {
+      "path": "src/content/blog/science/echecs-alzheimer-prevention-declin-cognitif.md",
+      "before": 598,
+      "current": 1523,
+      "gain": 925
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-autisme.md",
+      "before": 1653,
+      "current": 2262,
+      "gain": 609
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-dopamine.md",
+      "before": 604,
+      "current": 1281,
+      "gain": 677
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-colere-ragequit.md",
+      "before": 574,
+      "current": 1265,
+      "gain": 691
+    },
+    {
+      "path": "src/content/blog/grand-oral/sujet-grand-oral-maths-elo-probabilites.md",
+      "before": 628,
+      "current": 1508,
+      "gain": 880
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-gestion-du-temps.md",
+      "before": 575,
+      "current": 1363,
+      "gain": 788
+    },
+    {
+      "path": "src/content/blog/science/echecs-et-le-corps.md",
+      "before": 699,
+      "current": 1463,
+      "gain": 764
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-peur-de-perdre.md",
+      "before": 540,
+      "current": 1311,
+      "gain": 771
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-tdah.md",
+      "before": 1450,
+      "current": 2143,
+      "gain": 693
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
+      "before": 561,
+      "current": 1298,
+      "gain": 737
+    },
+    {
+      "path": "src/content/blog/science/minimax-aux-echecs.md",
+      "before": 1489,
+      "current": 2195,
+      "gain": 706
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-peur-de-gagner.md",
+      "before": 561,
+      "current": 1318,
+      "gain": 757
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-diplomatie.md",
+      "before": 1347,
+      "current": 2224,
+      "gain": 877
+    },
+    {
+      "path": "src/content/blog/esprit/syndrome-imposteur-2000-elo.md",
+      "before": 1046,
+      "current": 1857,
+      "gain": 811
+    }
+  ]
+}

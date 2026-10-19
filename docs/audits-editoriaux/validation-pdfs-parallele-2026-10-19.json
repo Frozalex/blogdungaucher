@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-19",
+  "count": 8,
+  "pages": 33,
+  "articles": [
+    {
+      "article": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-fischer-spassky.md",
+      "pdf": "public/pdfs/sujet-grand-oral-hggsp-fischer-spassky.pdf",
+      "pages": 4,
+      "sha256": "b9bd3a1111fc2b72ee909d734f1fa61a7e8ede9aebca6dc154a955f091e878fc",
+      "renderedAllPages": true,
+      "visualInspection": "Toutes les pages inspectées en planches ; aucune coupure, superposition ou formule illisible détectée."
+    },
+    {
+      "article": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-memoire-patrimoine.md",
+      "pdf": "public/pdfs/sujet-grand-oral-hggsp-memoire-patrimoine.pdf",
+      "pages": 4,
+      "sha256": "b0bb1b71f60e6b740a22f321b15338ace007f3adff757cd20b0c9b1e26636962",
+      "renderedAllPages": true,
+      "visualInspection": "Toutes les pages inspectées en planches ; aucune coupure, superposition ou formule illisible détectée."
+    },
+    {
+      "article": "src/content/blog/grand-oral/sujet-grand-oral-hggsp-mondialisation-plateformes.md",
+      "pdf": "public/pdfs/sujet-grand-oral-hggsp-mondialisation-plateformes.pdf",
+      "pages": 4,
+      "sha256": "dba016dbc80a018be194a65ab47ad00305c27465ae1e4cc56d31f3a8c6dbe130",
+      "renderedAllPages": true,
+      "visualInspection": "Toutes les pages inspectées en planches ; aucune coupure, superposition ou formule illisible détectée."
+    },
+    {
+      "article": "src/content/blog/grand-oral/sujet-grand-oral-nsi-alphazero.md",
+      "pdf": "public/pdfs/sujet-grand-oral-nsi-alphazero.pdf",
+      "pages": 4,
+      "sha256": "bc7d960adc3f47bc4af3c7b166f2406ca3a399a039bf514cd9596bf0c1210e3d",
+      "renderedAllPages": true,
+      "visualInspection": "Toutes les pages inspectées en planches ; aucune coupure, superposition ou formule illisible détectée."
+    },
+    {
+      "article": "src/content/blog/grand-oral/sujet-grand-oral-ses-bourdieu-reproduction.md",
+      "pdf": "public/pdfs/sujet-grand-oral-ses-bourdieu-reproduction.pdf",
+      "pages": 4,
+      "sha256": "5fe80fae53ef55441710378afeb8b0691c2dae2daf2888509e2fd5d43e4e8335",
+      "renderedAllPages": true,
+      "visualInspection": "Toutes les pages inspectées en planches ; aucune coupure, superposition ou formule illisible détectée."
+    },
+    {
+      "article": "src/content/blog/grand-oral/sujet-grand-oral-maths-zermelo-complexite.md",
+      "pdf": "public/pdfs/sujet-grand-oral-maths-zermelo-complexite.pdf",
+      "pages": 4,
+      "sha256": "ab302d84aee001622c7775cf50125a191a2e0dcfccf7d26b17d1a53029511883",
+      "renderedAllPages": true,
+      "visualInspection": "Toutes les pages inspectées en planches ; aucune coupure, superposition ou formule illisible détectée."
+    },
+    {
+      "article": "src/content/blog/grand-oral/sujet-grand-oral-ses-marche-superstars.md",
+      "pdf": "public/pdfs/sujet-grand-oral-ses-marche-superstars.pdf",
+      "pages": 5,
+      "sha256": "3fec56763fdf7971cf3b7c1383336999da7b74f80b06ac8ea4372e91ab7c9205",
+      "renderedAllPages": true,
+      "visualInspection": "Toutes les pages inspectées en planches ; aucune coupure, superposition ou formule illisible détectée."
+    },
+    {
+      "article": "src/content/blog/grand-oral/sujet-grand-oral-maths-elo-probabilites.md",
+      "pdf": "public/pdfs/sujet-grand-oral-maths-elo-probabilites.pdf",
+      "pages": 4,
+      "sha256": "ce94ebf15a8c1349d233d3afe1c2496294eda98894578910c868ffa0e5e193ad",
+      "renderedAllPages": true,
+      "visualInspection": "Toutes les pages inspectées en planches ; aucune coupure, superposition ou formule illisible détectée."
+    }
+  ]
+}

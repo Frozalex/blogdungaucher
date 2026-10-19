@@ -9,7 +9,7 @@ updatedDate: "2026-05-21"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 16 min
+readingTime: "15 min"
 pillar: Informatique
 tags:
   - échecs
@@ -201,6 +201,40 @@ Le message le plus important n'est pas "l'IA est magique" : c'est que la puissan
 
 À ton échelle de joueur, c'est la même leçon : tu ne peux pas tout voir ; tu peux apprendre à mieux choisir ce que tu regardes. L'échiquier amplifie ce que tu es : si tu cherches le contrôle partout, il te le renverra ; si tu acceptes de progresser sans te définir par un seul chiffre, tu pourras transformer chaque partie en terrain d'expérience.
 
+## Une démonstration d'élagage que tu peux contrôler
+
+**Arbre pédagogique fictif.** Les Blancs choisissent entre A et B. Après chaque choix, les Noirs peuvent choisir l'une de deux feuilles. Les valeurs, toujours du point de vue des Blancs, sont : A mène à 3 ou 5 ; B mène à 2 ou à une valeur encore inconnue.
+
+Les Noirs minimisent le gain blanc. La valeur de A est donc min(3,5) = 3. En explorant B, tu découvres que les Noirs peuvent obtenir une feuille évaluée à 2. Quelle que soit l'autre feuille, le minimum de B ne dépassera pas 2. Puisque les Blancs disposent déjà de A à 3, B ne peut améliorer leur décision : tu peux laisser sa dernière feuille inexplorée.
+
+Le résultat est le même que celui du minimax complet sur cet arbre, pour les mêmes valeurs de feuilles. C'est le sens précis de la coupure alpha-bêta, exposée dans le [chapitre de Russell et Norvig](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf). Cela ne prouve pas que 3 corresponde à la vraie valeur d'une position d'échecs : les feuilles ont peut-être été évaluées avant la fin de la partie.
+
+Tu peux vérifier le raisonnement en remplaçant la dernière feuille de B par 100, puis par -100. Dans le premier cas, B vaut min(2,100) = 2 ; dans le second, -100. Dans les deux cas, A reste préférable. La branche écartée était sans influence sur ce choix, pas nécessairement dépourvue de bons coups dans un autre contexte.
+
+## Pourquoi une profondeur affichée ne constitue pas une preuve
+
+Un moteur explore jusqu'à des limites et emploie des méthodes qui répartissent inégalement l'effort. Une valeur affichée dépend de son évaluation, de la recherche et de ses conventions. Lire « profondeur 30 » comme « toutes les suites de trente demi-coups ont été examinées » serait une mauvaise description d'une recherche sélective.
+
+La question à poser est : quel résultat serait nécessaire pour prouver la proposition ? Montrer qu'un coup gagne demande de couvrir toutes les défenses adverses pertinentes. Montrer qu'un coup ne perd pas peut demander de fournir une réponse à chacune des tentatives de gain. Une variante spectaculaire ne suffit pas si une défense importante reste ignorée.
+
+C'est aussi pourquoi les parties de machines, même très fortes, n'établissent pas à elles seules la valeur théorique de la position initiale. Elles montrent ce que les programmes ont effectivement choisi dans les conditions de la rencontre. Une solution mathématique doit porter sur les réponses qu'ils n'ont pas jouées aussi.
+
+## Partie finie et problème de taille variable
+
+Le jeu standard sur 64 cases constitue un objet fixé. Les résultats de complexité étudient généralement une famille d'instances dont la taille peut augmenter. Dire qu'une famille de jeux généralisés est difficile n'est pas donner le temps exact nécessaire pour résoudre une instance particulière de taille fixe.
+
+Une autre distinction concerne la finitude. Si tu représentes seulement les pièces et le trait, certaines séquences peuvent revenir au même diagramme. Pour modéliser le jeu réglementaire complet, il faut intégrer les droits et l'historique nécessaires aux règles de fin. La répétition d'une configuration n'autorise pas à effacer ces informations.
+
+Le nombre de Shannon illustre le problème d'une exploration naïve. L'article de [Shannon (1950)](https://d1yx3ys82bpsa0.cloudfront.net/chess/programming-a-computer-for-playing-chess.shannon.062303002.pdf) travaille avec des estimations et des choix de méthode. Ce nombre n'est pas une borne inférieure prouvant que toute démonstration imaginable devrait effectuer exactement autant d'opérations.
+
+## Un test simple pour comprendre l'écart entre jouer et prouver
+
+Imagine un petit jeu où A gagne contre neuf réponses et perd contre une dixième. Un programme qui rencontre rarement la dixième peut afficher un excellent score pratique. Pourtant A n'est pas une stratégie gagnante contre toute défense. Le nombre de victoires observées et l'existence d'une garantie répondent à deux questions différentes.
+
+Aux échecs, tu peux reprendre ce principe dans ton analyse : lorsqu'une attaque semble gagner, cherche la réponse qui refuse ta combinaison. Tu n'as pas besoin de résoudre le jeu entier pour améliorer cette recherche. L'exigence est locale et réaliste : annoncer ce que la variante vérifie, quelle défense reste à examiner et à quel moment l'évaluation devient une estimation.
+
+Le titre de cet article doit ainsi être lu comme une question sur les limites du calcul, pas comme un théorème d'impossibilité définitive. L'avantage actuel des moteurs montre qu'on peut prendre des décisions remarquables avec une connaissance partielle ; il ne dispense pas de distinguer cette réussite d'une preuve exhaustive.
+
 ## Ce que ça change pour toi, joueur
 
 **À tester.** Si tu veux voir ce que fait un moteur sur une configuration, ouvre-la dans ton outil d'analyse (Stockfish, en local ou dans le navigateur) : profondeur, score et variantes en direct.
@@ -217,6 +251,7 @@ L’exploration exhaustive naïve dépasse les ressources actuelles. La sélecti
 **Après lecture :** ouvre ton outil d'analyse, repère le **premier coup** où ta variante et la ligne du moteur divergent de plus d'un demi-pion, puis rejoue **cette position seule** trois fois dans la journée (sans nouvelle partie).
 
 ---
+
 
 ## Sources
 

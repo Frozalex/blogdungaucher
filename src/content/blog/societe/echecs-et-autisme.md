@@ -5,7 +5,7 @@ publishDate: "2026-04-02"
 category: societe
 featured: false
 featuredRank: 99
-readingTime: 14 min
+readingTime: "11 min"
 pillar: Inclusion
 tags:
   - échecs autisme
@@ -128,6 +128,38 @@ Il n’existe ici ni dose de trois séances par semaine ni durée minimale à re
 Un carnet peut noter des faits : format choisi, aide demandée, pause utilisée, envie de revenir exprimée. Il faut distinguer « a terminé ce problème avec une aide » de « a amélioré sa flexibilité cognitive ». Évite aussi de transformer le loisir en évaluation permanente.
 
 Si une difficulté importante apparaît, la priorité est de comprendre le besoin et d’ajuster le cadre avec les personnes concernées. Le classement ou la fin de la partie ne passent pas avant le bien-être du participant.
+
+## Trois activités concrètes à proposer sans présumer du profil
+
+Le [manuel méthodologique Infinite Chess](https://infinitechess.fide.com/wp-content/uploads/2024/09/Infinite-Chess-Handbook-EN.pdf), présenté sur la [page du programme](https://infinitechess.fide.com/program/), distingue un guide méthodologique et un plan de seize leçons. C'est un matériel produit par les organisateurs. Cette structure donne des idées d'enseignement ; elle ne suffit pas à établir l'efficacité thérapeutique de l'ensemble.
+
+Les activités ci-dessous sont **des propositions originales d'atelier**, à choisir avec la personne. Elles ne reproduisent pas un protocole validé du manuel et ne doivent pas devenir des étapes obligatoires.
+
+### Découvrir une règle avec un objectif visible
+
+Pose un cavalier en d4 sur un échiquier vide. Propose de montrer les cases qu'il pourrait atteindre : b3, b5, c2, c6, e2, e6, f3 et f5. On peut répondre en déplaçant une pièce, en montrant une case ou avec un autre support convenu. Les huit destinations résultent de la règle du cavalier, pas d'une compétence sociale cachée.
+
+La personne peut vouloir comparer avec le cavalier en a1, qui ne dispose alors que de b3 et c2. Elle peut aussi s'arrêter après une seule case. Le but choisi est de comprendre un déplacement ; on ne conclut pas à une amélioration générale de l'attention parce que l'exercice est terminé. Une erreur peut venir d'une consigne peu claire ou d'un support peu lisible, pas seulement de l'apprentissage.
+
+### Chercher ensemble au lieu de noter la vitesse
+
+Propose un parcours de cavalier allant de a1 à d4 en deux coups. Il existe ici deux chemins : a1-b3-d4 et a1-c2-d4. Tu peux montrer le premier saut et laisser chercher le second, ou travailler à deux. Précise qu'il s'agit d'un problème coopératif, sans classement ni obligation de répondre rapidement.
+
+Cet exemple rend visible une distinction pédagogique : donner une aide ne fait pas « échouer le test », puisque tu n'organises pas un examen clinique. Note simplement l'aide utilisée si cela sert à préparer la prochaine séance. Évite d'enregistrer des détails personnels inutiles ou d'interpréter chaque hésitation comme un symptôme.
+
+### Préparer une partie à deux avec des choix explicites
+
+Avant une partie de loisir, explique les options : avec ou sans pendule, possibilité de demander une explication, pause et manière d'indiquer la fin. Si l'on utilise une règle simplifiée ou autorise de reprendre un coup, annonce-le aux deux joueurs. Une règle accessible reste une règle partagée ; personne ne doit découvrir après coup qu'il jouait selon des attentes différentes.
+
+Un partenaire n'a pas à jouer systématiquement moins bien. Il peut plutôt expliquer son niveau d'aide, proposer une position équilibrée ou commenter après la partie si c'est souhaité. L'intérêt et la dignité de chacun comptent autant que le nombre de victoires.
+
+## Quand l'adaptation ne suffit pas : examiner l'environnement
+
+Si une séance devient difficile, on peut se demander ce qui a changé : davantage de bruit, une consigne différente, un partenaire nouveau, une fatigue exprimée. Ce sont des hypothèses d'organisation à vérifier avec la personne ; elles ne permettent pas de déduire une cause médicale. La réponse peut être une pause, une salle plus calme ou une autre activité.
+
+Il faut aussi prévoir l'accès ordinaire au club. Qui accueille les nouveaux ? À qui signaler une difficulté ? Les règles sont-elles disponibles par écrit ? Ces questions profitent à plusieurs publics sans effacer les demandes individuelles. L'inclusion ne consiste pas à créer un parcours spécial figé à partir du diagnostic, mais à rendre possible une participation choisie et révisable.
+
+Enfin, une famille ou un animateur peut souhaiter mesurer des progrès. Il faut alors nommer ce qui est réellement observé : reconnaître le cavalier, exprimer une préférence, vouloir revenir. Pour parler d'effet clinique ou de transfert durable hors du jeu, une autre méthode est nécessaire. Un loisir réussi n'a pas besoin d'emprunter le vocabulaire d'un traitement pour avoir de la valeur.
 
 ## Un loisir possible, sans diagnostic ni traitement improvisé
 
