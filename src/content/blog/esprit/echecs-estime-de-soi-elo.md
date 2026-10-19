@@ -21,7 +21,7 @@ keyTakeaways:
   - "Le score attendu inclut les nulles ; une variation dépend notamment du coefficient K."
   - "Ton classement ne résume ni tes compétences ni ta valeur personnelle."
   - "Une baisse de cote ne permet pas à elle seule d'en diagnostiquer la cause."
-seoTitle: "Elo et estime de soi : quand votre classement devient votre identité"
+seoTitle: "Elo et estime de soi : quand ton classement devient ton identité"
 seoDescription: >-
   Elo anxiety, orientation ego vs maîtrise, identité et performance : la psychologie du classement Elo et comment
   découpler son estime de soi de son Elo.
