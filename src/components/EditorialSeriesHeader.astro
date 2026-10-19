@@ -1,0 +1,23 @@
+---
+interface Props { title: string; active: "psychologie" | "moteur-python"; published: number; total: number; }
+const { title, active, published, total } = Astro.props;
+const links = [
+  { label: "Toutes les séries", href: "/fr/series/", key: "all" },
+  { label: "Psychologie", href: "/fr/series/psychologie/", key: "psychologie" },
+  { label: "Moteur Python", href: "/fr/series/moteur-python/", key: "moteur-python" },
+  { label: "Dissertations", href: "/fr/dissertations/", key: "dissertations" },
+];
+---
+<header>
+  <div class="resource-masthead"><a href="/fr/"><img src="/images/logo.svg" alt="" width="22" height="31" />Blog d’un Gaucher<span>.</span></a><span>Un autre regard sur les échecs</span></div>
+  <nav class="resource-nav" aria-label="Les séries du Gaucher">{links.map(link => <a href={link.href} aria-current={active === link.key ? "page" : undefined}>{link.label}</a>)}</nav>
+  <div class="series-hero">
+    <div class="resource-heading"><span class="resource-kicker">Les séries du Gaucher · {active === "psychologie" ? "Esprit" : "Science"}</span><h1>{title}</h1><div class="series-intro"><slot /></div></div>
+    <aside class="series-status" aria-label="Publication de la série"><span class="resource-kicker">{published === 0 ? "Le parcours à venir" : published >= total ? "Le parcours complet" : "Le parcours en cours"}</span><div class="series-status__number"><strong>{published}</strong><span>/ {total}</span></div><p>article{published > 1 ? "s" : ""} publié{published > 1 ? "s" : ""}</p><progress value={published} max={total} aria-label={`${published} articles publiés sur ${total}`}></progress><slot name="status" /></aside>
+  </div>
+</header>
+<style>
+.series-hero{display:grid;grid-template-columns:minmax(0,1fr) 17rem;gap:3.5rem;align-items:start;padding:2.75rem 0;}.series-hero .resource-heading{padding:0;}.series-hero h1{font-size:clamp(2.1rem,4.2vw,3.6rem);margin-top:.85rem;}.series-intro :global(p){font-size:1rem;line-height:1.75;color:var(--text-muted);margin:1rem 0 0;}.series-status{border-left:1px solid var(--border-strong);padding-left:2rem;margin-top:.25rem;}.series-status__number{display:flex;align-items:baseline;gap:.6rem;margin:.6rem 0;}.series-status__number strong{font:500 4.5rem/1 var(--font-serif);letter-spacing:-.06em;color:var(--text-main);}.series-status__number>span{font:400 1.6rem var(--font-serif);color:var(--text-dim);}.series-status>p{margin:0;font-size:.85rem;color:var(--text-muted);}.series-status progress{display:block;appearance:none;width:100%;height:3px;border:0;margin:1.25rem 0;background:var(--border-strong);color:var(--green);}.series-status progress::-webkit-progress-bar{background:var(--border-strong);}.series-status progress::-webkit-progress-value{background:var(--green);}.series-status progress::-moz-progress-bar{background:var(--green);}.series-status :global(.series-cadence){font-size:.8rem;line-height:1.65;color:var(--text-muted);margin:0 0 1rem;}.series-status :global(.resource-button){width:100%;}.series-status :global(.series-status-link){display:inline-block;margin-top:1rem;}
+@media(max-width:899px){.series-hero{grid-template-columns:1fr;gap:1.5rem;}.series-status{padding:1.25rem 0 0;border-left:0;border-top:1px solid var(--border-strong);max-width:36rem;}.series-status__number{display:inline-flex;margin:.7rem .8rem .7rem 0;}.series-status__number strong{font-size:3rem;}.series-status>p{display:inline;}.series-status :global(.resource-button){width:auto;}.series-status :global(.series-status-link){margin-left:1rem;}}
+@media(max-width:640px){.series-hero{padding:2rem 0;}.series-intro :global(p){font-size:.96rem;}.series-status :global(.series-status-link){margin-left:0;display:block;}}
+</style>
