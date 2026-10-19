@@ -24,6 +24,7 @@
     "echecs-et-genetique",
     "echecs-et-handicap",
     "echecs-et-hpi",
+    "echecs-et-la-triche",
     "echecs-et-le-corps",
     "echecs-et-meditation",
     "echecs-et-memoire",
@@ -86,5 +87,5 @@
     "theorie-des-jeux-aux-echecs",
     "theorie-du-chaos-aux-echecs"
   ],
-  "updatedAt": "2026-10-15T11:29:30.266Z"
+  "updatedAt": "2026-10-19T14:38:21.104Z"
 }
