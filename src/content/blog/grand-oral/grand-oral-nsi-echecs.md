@@ -10,7 +10,7 @@ readingTime: "28 min"
 pillar: "Informatique"
 tags: ["grand-oral", "NSI", "terminale", "algorithmique", "minimax", "Python", "AlphaZero", "intelligence artificielle", "structures de données", "baccalauréat"]
 seoTitle: "Grand oral NSI : les échecs, de l'algorithmique à l'IA, plan complet"
-seoDescription: "Grand Oral spé NSI bac 2025 : minimax Python, arbres de décision, PGN, bitboard, AlphaZero. Plan détaillé, code commenté et questions jury pour réussir."
+seoDescription: "Prépare ton Grand Oral NSI avec les échecs : minimax et alpha-bêta en Python, arbres de recherche, PGN et AlphaZero, avec plan et questions de jury."
 ogImage: /images/og/grand-oral-nsi-echecs-og.webp
 heroImage:
   src: /images/blog/grand-oral-nsi-echecs-hero.webp
