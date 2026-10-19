@@ -17,9 +17,7 @@ tags:
   - entraînement
   - échecs
 seoTitle: "Paradoxe du choix aux échecs : répertoire et surcharge d'options"
-seoDescription: >-
-  Ce que la méta-analyse de 2010 a fait à la théorie de la surcharge de choix, et pourquoi le vrai
-  problème du joueur d'échecs n'est pas le nombre d'options mais la fréquence des changements.
+seoDescription: "Répertoire, choix d’ouverture et changements fréquents : comprends les limites de la surcharge de choix et organise tes essais sans multiplier les règles rigides."
 faq:
   - question: "La méta-analyse prouve-t-elle que la surcharge n’existe pas ?"
     answer: "Non. Elle trouve une moyenne proche de zéro et une forte variabilité entre études."
