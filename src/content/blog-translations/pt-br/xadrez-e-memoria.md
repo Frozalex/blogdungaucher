@@ -1,7 +1,6 @@
 ---
-heroImageAlt: "Ilustração em pixel art: perfil de uma cabeça preenchido por
-  peças de xadrez e estrelas sobre fundo azul-escuro, com uma chamada sobre
-  memória à esquerda."
+heroImageAlt: Peças de xadrez agrupadas nas gavetas abertas de um arquivo azul,
+  sobre papel creme.
 title: "Xadrez e memória: memória de trabalho, chunks e aprendizagem"
 excerpt: "Memória de trabalho, chunks e posições familiares: o que a pesquisa sobre experiência no xadrez ajuda a explicar e como verificar um aprendizado específico sem prometer uma memória geral superior."
 seoTitle: "Xadrez e memória: memória de trabalho, chunks e aprendizagem"

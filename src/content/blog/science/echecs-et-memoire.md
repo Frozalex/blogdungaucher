@@ -23,13 +23,11 @@ tags:
   - enfants
 seoTitle: "Échecs et mémoire : mémoire de travail, chunks et apprentissage"
 seoDescription: "Mémoire et expertise aux échecs : chunks, templates, mémoire de travail et pistes d'apprentissage. Ce que ces modèles expliquent et les limites du transfert."
-ogImage: /images/og/echecs-et-memoire-watermarked-og.webp
+ogImage: /images/og/echecs-et-memoire-v2-og.webp
 heroImage:
-  src: /images/blog/echecs-et-memoire-watermarked-hero.webp
-  alt: "Illustration pixel art : profil de tête rempli de pièces d’échecs et
-    d’étoiles sur fond bleu nuit, avec une accroche sur la mémoire à gauche."
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-memoire-v2-hero.webp
+  alt: Des pièces d’échecs regroupées dans les tiroirs ouverts d’un meuble bleu,
+    sur papier crème.
 faq:
   - question: "Les échecs améliorent-ils la mémoire en général ?"
     answer: "L'expertise est associée à un meilleur traitement de nombreuses positions d'échecs. Cela ne prouve pas une amélioration générale de toutes les formes de mémoire."

@@ -38,6 +38,8 @@ faq:
       De populatiegegevens wijzen eerder op associaties tussen diverse intellectuele activiteiten en het
       risico op dementie in bepaalde cohorten; dit is geen individuele garantie. Schaken kan deel uitmaken
       van een stimulerende levensstijl (sociaal + planning).
+heroImageAlt: Schaakstukken gegroepeerd in de open laden van een blauwe kast op
+  crèmekleurig papier.
 ---
 
 Anatoli Karpov speelde partijen uit het geheugen na, zonder bord, gespeeld twintig jaar eerder. Zet voor zet. Variant voor variant. Journalisten testten hem meermaals: hij vergiste zich nooit.

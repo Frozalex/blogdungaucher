@@ -1,6 +1,5 @@
 ---
-heroImageAlt: "Pixel art illustration: a head profile filled with chess pieces
-  and stars on a midnight-blue background, with text about memory on the left."
+heroImageAlt: Chess pieces grouped in the open drawers of a blue cabinet on cream paper.
 title: "Chess and Memory: Working Memory, Chunks and Learning"
 excerpt: "Working memory, chunks and long-term knowledge help explain chess expertise. What the models show, how to check what you learn and why general transfer remains uncertain."
 seoTitle: "Chess and Memory: Working Memory, Chunks and Learning"

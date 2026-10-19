@@ -1,0 +1,15 @@
+{
+  "slug": "echecs-et-memoire",
+  "assetSlug": "echecs-et-memoire-v2",
+  "tool": "built-in imagegen",
+  "prompt": "Create a NEW editorial cover illustration for a serious science article about chess and memory: experts remember meaningful groups of pieces rather than isolated objects. Use the attached two images ONLY as visual style references: match their tactile cream paper, dense charcoal ink, dusty accent, simplified sculptural shapes and coarse silkscreen grain; do not copy their scenes. Composition: a compact, slightly open archival cabinet with three broad shallow drawers, viewed in simple three-quarter perspective, each open drawer holding one small clear grouping of two or three recognizable chess-piece silhouettes. The drawers and broad flat surfaces are dusty cornflower blue (#5b9fd4), pieces and cabinet shadows deep charcoal (#1c1a16). One group of a knight and two pawns is most prominent in the upper drawer. The metaphor is organized remembered patterns, not a photographic brain. Keep only a few large readable shapes, generous warm cream (#faf8ef) negative space surrounding the cabinet, calm lower-left corner reserved for the site's watermark added separately. Wide landscape 3:2, flat printed shapes, assertive dark shadows and visibly imperfect screenprint grain like the references, no gradients, no realistic photo or 3D rendering. Blue is 40 percent of colored surfaces. No words, numbers, labels, lettering, logos, watermark, frame or border. No brain, circuits, glowing effects, chessboard, arrows or infographic.",
+  "references": [
+    "public/images/blog/echecs-et-dopamine-hero.webp",
+    "public/images/blog/echecs-et-handicap-hero.webp"
+  ],
+  "source": "/home/chacalcha/.codex/generated_images/01a153c7-2525-7ac1-9020-4379f8190763/exec-cf9c961a-1aff-42ab-9c69-908ded2cd005.png",
+  "hero": "public/images/blog/echecs-et-memoire-v2-hero.webp",
+  "og": "public/images/og/echecs-et-memoire-v2-og.webp",
+  "visualReview": "Compared side-by-side at 400px: cream paper, charcoal, blue, silkscreen grain, simplified silhouettes, no text, lower-left watermark verified.",
+  "status": "prepared"
+}
