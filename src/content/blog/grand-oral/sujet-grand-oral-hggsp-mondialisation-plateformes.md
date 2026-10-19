@@ -18,10 +18,8 @@ tags:
   - glocalisation
   - Robertson
   - plateformes
-seoTitle: "Sujet Grand Oral HGGSP mondialisation échecs : texte complet à réciter"
-seoDescription: >-
-  Sujet Grand Oral HGGSP sur les échecs et la mondialisation, entièrement rédigé pour 10 minutes d'exposé.
-  Glocalisation, plateformes Chess.com, acteurs non étatiques : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral HGGSP : échecs, mondialisation et plateformes"
+seoDescription: "Règles communes, plateformes et projet de Kakuma : des exemples documentés pour interroger la mondialisation des échecs au Grand Oral HGGSP."
 ogImage: /images/og/sujet-grand-oral-hggsp-mondialisation-plateformes-og.webp
 heroImage:
   src: /images/go-mondialisation.svg
