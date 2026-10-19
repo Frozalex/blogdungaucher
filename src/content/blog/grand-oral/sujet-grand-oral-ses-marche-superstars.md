@@ -19,7 +19,7 @@ tags:
   - Rosen
   - rente différentielle
   - capital humain
-seoTitle: "Sujet Grand Oral SES marché superstars échecs : texte complet à réciter"
+seoTitle: "Grand Oral SES : les échecs et l’économie des superstars"
 seoDescription: "Grand Oral SES sur les joueurs d'échecs et l'économie des superstars : modèles de Rosen, Ricardo et Becker, arguments rédigés et limites des comparaisons."
 ogImage: /images/og/sujet-grand-oral-ses-marche-superstars-og.webp
 heroImage:
