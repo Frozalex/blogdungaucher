@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import GrandOralGenerator from "../../../../components/GrandOralGenerator.astro";
+import { buildBreadcrumbJsonLd } from "../../../../utils/blog";
+import "../../../../styles/editorial-resources.css";
+---
+
+<BaseLayout title="Générateur de problématiques de Grand oral : sujets et plans" description="Choisis ta spécialité et un thème : compare des problématiques préparées, puis personnalise ton plan, ta mini introduction et ta mini conclusion." canonicalPath="/fr/grand-oral/generateur/" lang="fr" omitEnDeAlternateLinks={true} structuredData={buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: "Grand oral", path: "/fr/grand-oral/" }, { name: "Générateur de problématiques", path: "/fr/grand-oral/generateur/" }])}>
+  <div class="resource-page"><div class="container">
+    <header class="resource-header oral-generator-page-header">
+      <div class="resource-masthead"><a href="/fr/"><img src="/images/logo.svg" alt="" width="22" height="31" />Blog d’un Gaucher<span>.</span></a><span>Les outils pour construire ton oral</span></div>
+      <nav class="resource-nav" aria-label="Préparer ton Grand oral"><a href="/fr/grand-oral/">Le dossier Grand oral</a><a href="/fr/grand-oral/generateur/" aria-current="page">Le générateur</a><a href="/fr/grand-oral/#guides">Les guides autour des échecs</a></nav>
+      <div class="resource-heading"><span class="resource-kicker">Spécialités générales & séries technologiques</span><h1>Trouve ta problématique.<br />Construis ta réponse.</h1><p>Un point de départ pour ton oral, autour des sciences, des arts, des langues et des questions de société. Explore les thèmes du catalogue, compare les angles et repars avec une fiche que tu peux t’approprier.</p></div>
+    </header>
+    <GrandOralGenerator />
+  </div></div>
+</BaseLayout>

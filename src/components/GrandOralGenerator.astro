@@ -1,0 +1,287 @@
+---
+import { oralTopics, specialties, officialResources, buildIntroduction, buildConclusion } from "../data/oral-generator";
+import { getAllPosts, getPostSlug } from "../utils/blog";
+const published = new Set((await getAllPosts()).map(getPostSlug));
+const topics = oralTopics.map(topic => ({ ...topic, articles: (topic.articles ?? []).filter(slug => published.has(slug)) }));
+const themes = [...new Set(topics.flatMap(topic => topic.themes))].sort((a, b) => a.localeCompare(b, "fr"));
+const initial = topics[0];
+const payload = JSON.stringify({ topics, specialties, officialResources }).replace(/</g, "\\u003c");
+---
+
+<section class="oral-builder" data-oral-generator aria-label="Atelier de préparation du Grand oral">
+  <div class="oral-builder__intro">
+    <div><span class="resource-kicker">L’atelier du Gaucher</span><h2>Une question.<br />Ton chemin pour y répondre.</h2></div>
+    <p>Explore {topics.length} thèmes et {topics.length * 2} problématiques préparées. Choisis un angle, puis reprends le plan et les textes avec tes exemples et tes mots.</p>
+  </div>
+  <noscript><p class="oral-builder__notice">Active JavaScript pour chercher et choisir une autre problématique. L’exemple ci-dessous reste lisible et modifiable.</p></noscript>
+  <form class="oral-builder__filters" data-builder-form hidden>
+    <div class="oral-builder__field"><label for="oral-specialty">Ta spécialité ou ta série</label><select id="oral-specialty" name="specialty" class="resource-field"><option value="">Toutes les spécialités et séries</option><optgroup label="Voie générale — spécialités">{specialties.filter(s => s.track === "general").map(s => <option value={s.id}>{s.label}</option>)}</optgroup><optgroup label="Voie technologique — séries">{specialties.filter(s => s.track === "techno").map(s => <option value={s.id}>{s.label}</option>)}</optgroup></select></div>
+    <div class="oral-builder__field" data-second-field><label for="oral-second">Une spécialité à croiser <span>facultatif</span></label><select id="oral-second" name="second" class="resource-field"><option value="">Sans croisement imposé</option>{specialties.filter(s => s.track === "general").map(s => <option value={s.id}>{s.label}</option>)}</select></div>
+    <div class="oral-builder__field"><label for="oral-theme">Un thème</label><select id="oral-theme" name="theme" class="resource-field"><option value="">Tous les thèmes du catalogue</option>{themes.map(theme => <option value={theme}>{theme}</option>)}</select></div>
+    <div class="oral-builder__field"><label for="oral-query">Un mot-clé <span>facultatif</span></label><input id="oral-query" name="query" class="resource-field" type="search" maxlength="120" placeholder="Climat, musique, IA, échecs…" autocomplete="off" aria-describedby="oral-search-help" /></div>
+    <p id="oral-search-help" class="oral-builder__help">La recherche explore le catalogue existant. En arts, cherche aussi ta discipline ; en LLCER, adapte le corpus à ta langue et à ton parcours.</p>
+    <div class="oral-builder__actions"><button class="resource-button" type="submit">Trouver mes problématiques <span aria-hidden="true">→</span></button><button class="oral-builder__text-button" type="reset">Effacer les filtres</button></div>
+  </form>
+  <p class="oral-builder__notice" data-track-note hidden></p>
+  <div class="oral-builder__suggestions" data-suggestions hidden>
+    <div class="oral-builder__results-heading"><h3>Les pistes qui te correspondent</h3><p role="status" aria-live="polite" data-results-count></p></div>
+    <div class="oral-builder__cards" data-results></div>
+    <p class="oral-builder__empty" data-empty hidden>Aucune problématique préparée ne correspond à ces critères pour l’instant. Essaie un thème plus large ou retire un filtre. Pour un croisement, les deux spécialités doivent être présentes dans le sujet.</p>
+    <div class="oral-builder__pagination"><span data-results-range></span><button type="button" class="oral-builder__text-button" data-previous>← Précédentes</button><button type="button" class="oral-builder__text-button" data-next>Autres propositions →</button></div>
+  </div>
+
+  <section class="oral-builder__sheet" data-sheet aria-labelledby="oral-sheet-heading">
+    <div class="oral-builder__sheet-top"><span class="resource-kicker">Ta fiche de préparation</span><span data-sheet-specialties>{initial.specialties.map(id => specialties.find(s => s.id === id)?.short).join(" · ")}</span></div>
+    <h3 id="oral-sheet-heading" tabindex="-1">{initial.title}</h3>
+    <p class="oral-builder__help">Tout le texte de la fiche est modifiable. Tes modifications restent disponibles quand tu changes d’angle. Copie ou télécharge ta fiche avant de quitter ou de recharger cette page.</p>
+    <div class="oral-builder__angles" role="group" aria-label="Choisir un angle pour ce thème" data-angle-controls hidden>{initial.variants.map((v, i) => <button type="button" data-angle={i} aria-pressed={i === 0}>{v.angle}</button>)}</div>
+    <div class="oral-builder__notions" data-notions>{initial.notions.map(notion => <span>{notion}</span>)}</div>
+    <label class="oral-builder__label" for="oral-question">Ta problématique</label>
+    <textarea id="oral-question" class="oral-builder__question" rows="3" data-draft="question">{initial.variants[0].question}</textarea>
+    <div class="oral-builder__block"><label class="oral-builder__label" for="oral-introduction">Mini introduction</label><textarea id="oral-introduction" rows="5" data-draft="introduction">{buildIntroduction(initial, 0)}</textarea></div>
+    <div class="oral-builder__block"><h4 class="oral-builder__label">Le plan proposé</h4><p class="oral-builder__help">Trois étapes pour cet angle. Tu peux en changer les titres, les arguments et les exemples.</p><ol class="oral-builder__plan">{initial.variants[0].parts.map((part, i) => <li><label class="oral-builder__part-label" for={`oral-part-${i}`}>Partie {i + 1}</label><textarea id={`oral-part-${i}`} class="oral-builder__part-title" rows="2" aria-label={`Titre de la partie ${i + 1}`} data-draft={`part-${i}`}>{part.title}</textarea><label class="oral-builder__visually-hidden" for={`oral-points-${i}`}>Arguments et exemples de la partie {i + 1}</label><textarea id={`oral-points-${i}`} rows="3" data-draft={`points-${i}`}>{part.points.join("\n")}</textarea></li>)}</ol></div>
+    <div class="oral-builder__block"><label class="oral-builder__label" for="oral-conclusion">Mini conclusion</label><textarea id="oral-conclusion" rows="4" data-draft="conclusion">{buildConclusion(initial, 0)}</textarea></div>
+    <aside class="oral-builder__personalize"><h4>Pour en faire ton sujet</h4><p data-personalize>{initial.personalize}</p><label for="oral-notes">Tes exemples, tes sources et ton lien avec le cours</label><textarea id="oral-notes" rows="4" data-draft="notes" placeholder="Note ici le cas que tu étudieras et les références que tu as consultées."></textarea></aside>
+    <div class="oral-builder__export" data-export hidden><button class="resource-button" type="button" data-copy>Copier ma fiche</button><button type="button" class="oral-builder__secondary" data-download>Télécharger le texte ↓</button><button type="button" class="oral-builder__secondary" data-print>Imprimer / PDF</button><p role="status" aria-live="polite" data-export-status></p></div>
+    <div class="oral-builder__copy-fallback" data-copy-fallback hidden><label for="oral-copy-text">La copie automatique n’est pas disponible. Sélectionne ce texte pour le copier.</label><textarea id="oral-copy-text" rows="8" readonly></textarea></div>
+    <div class="oral-builder__reading" data-reading hidden><h4>Pour approfondir cet angle</h4><ul data-reading-list></ul></div>
+    <div class="oral-builder__sources"><h4>Les repères officiels</h4><p>Les liens ci-dessous cadrent l’épreuve et les programmes. Les problématiques sont des propositions du catalogue, à relier à ton cours et à discuter avec tes enseignants.</p><ul data-official-resources>{officialResources.slice(0, 3).map(resource => <li><a href={resource.url} target="_blank" rel="noopener noreferrer">{resource.label} <span class="oral-builder__visually-hidden">(nouvel onglet)</span>↗</a></li>)}</ul></div>
+    <p class="oral-builder__print-credit">Fiche préparée avec l’atelier Grand oral du Blog d’un Gaucher · blogdungaucher.com/fr/grand-oral/generateur/</p>
+  </section>
+  <script type="application/json" data-oral-catalog set:html={payload} />
+</section>
+
+<script>
+  import { buildIntroduction, buildConclusion, matchesOralTopic } from "../utils/oral-generator";
+  import type { OralTopic, SpecialtyId } from "../data/oral-generator/types";
+
+  function initOralGenerator() {
+    const candidate = document.querySelector<HTMLElement>("[data-oral-generator]");
+    if (!candidate || candidate.dataset.bound) return;
+    const root = candidate;
+    const payload = root.querySelector("[data-oral-catalog]")?.textContent;
+    if (!payload) return;
+    const { topics, specialties, officialResources } = JSON.parse(payload) as {
+      topics: OralTopic[];
+      specialties: { id: SpecialtyId; short: string; track: string }[];
+      officialResources: { label: string; url: string }[];
+    };
+    root.dataset.bound = "true";
+    const find = <T extends HTMLElement>(selector: string) => root.querySelector<T>(selector)!;
+    const form = find<HTMLFormElement>("[data-builder-form]");
+    const primary = find<HTMLSelectElement>("#oral-specialty");
+    const second = find<HTMLSelectElement>("#oral-second");
+    const theme = find<HTMLSelectElement>("#oral-theme");
+    const query = find<HTMLInputElement>("#oral-query");
+    const fields = [...root.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>("[data-draft]")];
+    const printValues = new Map<string, HTMLElement>();
+    fields.forEach(field => {
+      const mirror = document.createElement("p"); mirror.className = "oral-builder__print-value";
+      mirror.dataset.printFor = field.dataset.draft!; mirror.setAttribute("aria-hidden", "true");
+      field.after(mirror); printValues.set(field.dataset.draft!, mirror);
+    });
+    const drafts = new Map<string, Record<string, string>>();
+    let selected = topics[0];
+    let angle = 0;
+    let matches: { topic: OralTopic; index: number }[] = [];
+    let offset = 0;
+    const pageSize = 3;
+    const key = () => `${selected.id}:${angle}`;
+    const label = (topic: OralTopic) => topic.specialties.map(id => specialties.find(s => s.id === id)?.short ?? id).join(" · ");
+    function resize(field: HTMLTextAreaElement) {
+      field.style.height = "auto";
+      field.style.height = `${field.scrollHeight + 3}px`;
+    }
+    function saveDraft() {
+      drafts.set(key(), Object.fromEntries(fields.map(field => [field.dataset.draft!, field.value])));
+      fields.forEach(field => { printValues.get(field.dataset.draft!)!.textContent = field.value; });
+    }
+    function defaults(topic: OralTopic, index: number): Record<string, string> {
+      const variant = topic.variants[index];
+      return { question: variant.question, introduction: buildIntroduction(topic, index), conclusion: buildConclusion(topic, index), notes: "", ...Object.fromEntries(variant.parts.flatMap((part, i) => [[`part-${i}`, part.title], [`points-${i}`, part.points.join("\n")]])) };
+    }
+    function addLink(list: HTMLElement, href: string, text: string) {
+      const item = document.createElement("li");
+      const link = document.createElement("a");
+      link.href = href; link.textContent = `${text} ↗`; link.target = "_blank"; link.rel = "noopener noreferrer";
+      link.setAttribute("aria-label", `${text} (nouvel onglet)`);
+      item.append(link); list.append(item);
+    }
+    function choose(topic: OralTopic, index: number, moveFocus = true) {
+      saveDraft(); selected = topic; angle = index;
+      const draft = drafts.get(key()) ?? defaults(topic, index);
+      fields.forEach(field => { field.value = draft[field.dataset.draft!] ?? ""; if (field instanceof HTMLTextAreaElement) resize(field); });
+      fields.forEach(field => { printValues.get(field.dataset.draft!)!.textContent = field.value; });
+      find("#oral-sheet-heading").textContent = topic.title;
+      find("[data-sheet-specialties]").textContent = label(topic);
+      find("[data-personalize]").textContent = topic.personalize;
+      const notions = find("[data-notions]"); notions.replaceChildren();
+      topic.notions.forEach(notion => { const span = document.createElement("span"); span.textContent = notion; notions.append(span); });
+      root.querySelectorAll<HTMLButtonElement>("[data-angle]").forEach((button, i) => { button.textContent = topic.variants[i].angle; button.setAttribute("aria-pressed", String(index === i)); });
+      const resources = find("[data-official-resources]"); resources.replaceChildren();
+      const isStav = topic.specialties.includes("stav");
+      officialResources.filter((_, i) => isStav ? i === 3 : i < 3).forEach(r => addLink(resources, r.url, r.label));
+      const reading = find("[data-reading-list]"); reading.replaceChildren();
+      (topic.articles ?? []).forEach(slug => addLink(reading, `/fr/blog/${slug}/`, slug.startsWith("guide-") ? "Ouvrir le guide pour travailler cet exemple" : "Explorer le sujet sur le blog"));
+      find("[data-reading]").hidden = !reading.children.length;
+      find("[data-export-status]").textContent = "";
+      find("[data-copy-fallback]").hidden = true;
+      renderCards();
+      if (moveFocus) { find("#oral-sheet-heading").focus(); find("[data-sheet]").scrollIntoView({ block: "start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" }); }
+    }
+    function renderCards() {
+      const results = find("[data-results]"); results.replaceChildren();
+      const subset = matches.slice(offset, offset + pageSize);
+      for (const { topic, index } of subset) {
+        const card = document.createElement("button"); card.type = "button"; card.className = "oral-builder__card";
+        card.setAttribute("aria-pressed", String(topic.id === selected.id && index === angle));
+        const meta = document.createElement("span"); meta.className = "oral-builder__card-meta"; meta.textContent = `${label(topic)} · ${topic.variants[index].angle}`;
+        const title = document.createElement("span"); title.className = "oral-builder__card-title"; title.textContent = topic.variants[index].question;
+        const action = document.createElement("span"); action.className = "oral-builder__card-action"; action.textContent = "Construire ma fiche →";
+        card.append(meta, title, action); card.addEventListener("click", () => choose(topic, index)); results.append(card);
+      }
+      find("[data-empty]").hidden = matches.length > 0;
+      find("[data-results-count]").textContent = `${matches.length} problématique${matches.length === 1 ? "" : "s"} dans le catalogue pour ces critères`;
+      find("[data-results-range]").textContent = matches.length ? `${offset + 1}–${offset + subset.length} sur ${matches.length}` : "";
+      find<HTMLButtonElement>("[data-previous]").disabled = offset === 0;
+      find<HTMLButtonElement>("[data-next]").disabled = offset + pageSize >= matches.length;
+    }
+    function syncSpecialties() {
+      const tech = specialties.find(s => s.id === primary.value)?.track === "techno";
+      find("[data-second-field]").hidden = tech;
+      second.disabled = tech || !primary.value;
+      for (const option of second.options) option.disabled = option.value !== "" && option.value === primary.value;
+      if (tech || !primary.value || second.value === primary.value) second.value = "";
+      const note = find("[data-track-note]");
+      note.hidden = !tech;
+      note.textContent = primary.value === "stav" ? "STAV : ces pistes concernent l’oral terminal agricole. Relie-les à ton parcours et aux modalités de ton épreuve, accessibles dans la fiche." : "Voie technologique : pars de ton projet et précise les enseignements de spécialité mobilisés. Le filtre porte ici sur ta série.";
+    }
+    function search() {
+      syncSpecialties();
+      const filtered = topics.filter(topic => matchesOralTopic(topic, { specialty: primary.value, second: second.value, theme: theme.value, query: query.value }));
+      matches = [0, 1].flatMap(index => filtered.map(topic => ({ topic, index })));
+      offset = 0;
+      find("[data-sheet]").hidden = matches.length === 0;
+      if (matches.length && !matches.some(m => m.topic.id === selected.id && m.index === angle)) choose(matches[0].topic, matches[0].index, false);
+      else renderCards();
+    }
+    form.addEventListener("submit", event => { event.preventDefault(); search(); });
+    primary.addEventListener("change", search); second.addEventListener("change", search); theme.addEventListener("change", search);
+    query.addEventListener("input", search);
+    // Attendre la remise à zéro native avant de recalculer les résultats.
+    form.addEventListener("reset", () => { setTimeout(() => { search(); query.focus(); }, 0); });
+    find("[data-previous]").addEventListener("click", () => { offset = Math.max(0, offset - pageSize); renderCards(); });
+    find("[data-next]").addEventListener("click", () => { offset = Math.min(Math.max(0, matches.length - 1), offset + pageSize); renderCards(); });
+    root.querySelectorAll<HTMLButtonElement>("[data-angle]").forEach(button => button.addEventListener("click", () => choose(selected, Number(button.dataset.angle), false)));
+    fields.forEach(field => field.addEventListener("input", () => { if (field instanceof HTMLTextAreaElement) resize(field); saveDraft(); }));
+    const text = () => {
+      saveDraft(); const d = drafts.get(key())!;
+      return [selected.specialties.includes("stav") ? "MA FICHE D’ORAL TERMINAL STAV" : "MA FICHE DE GRAND ORAL", label(selected), "", "PROBLÉMATIQUE", d.question, "", "MINI INTRODUCTION", d.introduction, "", "PLAN", ...[0, 1, 2].flatMap(i => [`${i + 1}. ${d[`part-${i}`]}`, d[`points-${i}`], ""]), "MINI CONCLUSION", d.conclusion, "", "POUR EN FAIRE MON SUJET", selected.personalize, "", "MES EXEMPLES ET MES SOURCES", d.notes, "", "REPÈRES OFFICIELS", ...[...find("[data-official-resources]").querySelectorAll<HTMLAnchorElement>("a")].map(a => `${a.textContent} : ${a.href}`), "", "Préparé avec le Blog d’un Gaucher — https://blogdungaucher.com/fr/grand-oral/generateur/"].join("\n");
+    };
+    find("[data-copy]").addEventListener("click", async () => {
+      const value = text();
+      try { await navigator.clipboard.writeText(value); find("[data-export-status]").textContent = "Ta fiche a été copiée."; }
+      catch { const field = find<HTMLTextAreaElement>("#oral-copy-text"); field.value = value; find("[data-copy-fallback]").hidden = false; field.focus(); field.select(); find("[data-export-status]").textContent = "Sélectionne et copie le texte ci-dessous."; }
+    });
+    find("[data-download]").addEventListener("click", () => {
+      const url = URL.createObjectURL(new Blob([text()], { type: "text/plain;charset=utf-8" }));
+      const link = document.createElement("a"); link.href = url; link.download = `grand-oral-${selected.id}-${angle + 1}.txt`; link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      find("[data-export-status]").textContent = "Le téléchargement de ta fiche a été lancé.";
+    });
+    find("[data-print]").addEventListener("click", () => { fields.forEach(field => { if (field instanceof HTMLTextAreaElement) resize(field); }); window.print(); });
+    form.hidden = false; find("[data-suggestions]").hidden = false; find("[data-angle-controls]").hidden = false; find("[data-export]").hidden = false;
+    search(); choose(selected, 0, false);
+  }
+  initOralGenerator();
+  document.addEventListener("astro:page-load", initOralGenerator);
+</script>
+
+<style is:global>
+  .oral-builder { --oral-ink: #6940a3; --oral-wash: color-mix(in srgb, var(--oral-ink) 6%, var(--bg)); margin: 1rem 0 3rem; }
+  .oral-builder__intro { display:grid; grid-template-columns:1fr 1fr; align-items:end; gap:2rem; padding:1.5rem 0 2rem; border-top:3px solid var(--oral-ink); }
+  .oral-builder .resource-kicker { color:var(--oral-ink); }
+  .oral-builder__intro h2 { font:550 clamp(1.8rem,3vw,2.8rem)/1.13 var(--font-serif); letter-spacing:-.035em; margin:.65rem 0 0; }
+  .oral-builder__intro>p { font-size:.95rem; line-height:1.8; color:var(--text-muted); margin:0; max-width:55ch; }
+  .oral-builder__filters { display:grid; grid-template-columns:1fr 1fr; gap:1.1rem 1.5rem; padding:1.5rem; background:var(--oral-wash); border:1px solid var(--border-strong); }
+  .oral-builder__field { display:flex; flex-direction:column; gap:.45rem; min-width:0; }
+  .oral-builder__field label { font-size:.8rem; font-weight:600; }
+  .oral-builder__field label span { font-size:.7rem; font-weight:400; color:var(--text-dim); }
+  .oral-builder__field select,.oral-builder__field input { width:100%; }
+  .oral-builder__filters>.oral-builder__help,.oral-builder__actions { grid-column:1/-1; }
+  .oral-builder__help { margin:0; font-size:.78rem; line-height:1.7; color:var(--text-muted); }
+  .oral-builder__actions { display:flex; flex-wrap:wrap; align-items:center; gap:.8rem 1.5rem; }
+  .oral-builder__text-button { border:0; padding:.55rem 0; background:none; color:var(--oral-ink); font:inherit; font-size:.8rem; text-decoration:underline; text-underline-offset:.25em; cursor:pointer; }
+  .oral-builder button:disabled { opacity:.45; cursor:default; text-decoration:none; }
+  .oral-builder .resource-button { background:var(--oral-ink); border-color:var(--oral-ink); color:#fff; }
+  .oral-builder .resource-button:hover { background:color-mix(in srgb,var(--oral-ink) 80%,#000); }
+  .oral-builder__notice { border-left:3px solid var(--oral-ink); padding:.7rem 1rem; background:var(--oral-wash); font-size:.85rem; line-height:1.75; margin:1rem 0; }
+  .oral-builder__suggestions { margin:2rem 0; }
+  .oral-builder__results-heading { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; flex-wrap:wrap; margin-bottom:1rem; }
+  .oral-builder__results-heading h3 { font:550 1.4rem/1.2 var(--font-serif); margin:0; }
+  .oral-builder__results-heading p { margin:0; color:var(--text-dim); font-size:.75rem; }
+  .oral-builder__cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+  .oral-builder__card { display:flex; flex-direction:column; align-items:start; text-align:left; padding:1.25rem; border:1px solid var(--border-strong); border-top:3px solid var(--oral-ink); background:var(--bg); color:var(--text-main); font:inherit; cursor:pointer; min-width:0; }
+  .oral-builder__card:hover,.oral-builder__card[aria-pressed="true"] { background:var(--oral-wash); border-color:var(--oral-ink); }
+  .oral-builder__card-meta { font-size:.65rem; color:var(--oral-ink); letter-spacing:.035em; line-height:1.6; }
+  .oral-builder__card-title { font:550 1.2rem/1.3 var(--font-serif); margin:.75rem 0 1.25rem; }
+  .oral-builder__card-action { font-size:.75rem; color:var(--oral-ink); margin-top:auto; }
+  .oral-builder__pagination { display:flex; justify-content:flex-end; align-items:center; gap:1.5rem; margin-top:.75rem; }
+  .oral-builder__pagination>span { margin-right:auto; font-size:.75rem; color:var(--text-dim); }
+  .oral-builder__empty { padding:1.5rem; background:var(--oral-wash); font-size:.95rem; line-height:1.8; }
+  .oral-builder__sheet { border:1px solid var(--border-strong); border-top:4px solid var(--oral-ink); padding:clamp(1rem,4vw,3rem); scroll-margin-top:calc(var(--navbar-h) + 1rem); }
+  .oral-builder__sheet-top { display:flex; justify-content:space-between; flex-wrap:wrap; gap:.5rem; font-size:.72rem; color:var(--text-dim); }
+  .oral-builder__sheet>h3 { font:550 clamp(1.5rem,3vw,2.2rem)/1.2 var(--font-serif); margin:.75rem 0; }
+  .oral-builder__angles { display:flex; flex-wrap:wrap; gap:.5rem; margin:1.25rem 0; }
+  .oral-builder__angles button { font:inherit; font-size:.8rem; border:1px solid var(--border-strong); background:transparent; color:var(--text-main); padding:.6rem 1rem; cursor:pointer; border-radius:2px; }
+  .oral-builder__angles button[aria-pressed="true"] { background:var(--oral-ink); color:#fff; border-color:var(--oral-ink); }
+  .oral-builder__notions { display:flex; flex-wrap:wrap; gap:.5rem 1rem; color:var(--text-dim); font-size:.72rem; margin:1rem 0 1.5rem; }
+  .oral-builder__label { display:block; font:650 .72rem/1.4 var(--font-body); letter-spacing:.09em; text-transform:uppercase; color:var(--oral-ink); margin:0 0 .6rem; }
+  .oral-builder textarea,.oral-builder__plan input { display:block; width:100%; border:1px solid var(--border-strong); border-radius:2px; background:var(--bg); color:var(--text-main); padding:.85rem; font:400 .95rem/1.8 var(--font-body); resize:vertical; min-width:0; box-sizing:border-box; }
+  .oral-builder .oral-builder__question { font:550 clamp(1.2rem,2.5vw,1.65rem)/1.4 var(--font-serif); }
+  .oral-builder :is(textarea,input,select,button,a):focus-visible { outline:2px solid var(--oral-ink); outline-offset:3px; }
+  .oral-builder__block { margin:1.75rem 0; }
+  .oral-builder__plan { list-style:none; counter-reset:none; padding:0; margin:1rem 0; }
+  .oral-builder__plan li { border-left:2px solid var(--oral-ink); padding-left:1rem; margin:1.5rem 0; }
+  .oral-builder__part-label { display:block; margin-bottom:.45rem; font-size:.7rem; color:var(--oral-ink); font-weight:650; }
+  .oral-builder .oral-builder__part-title { font-weight:600; margin-bottom:.5rem; }
+  .oral-builder__personalize { padding:1.25rem; background:var(--oral-wash); margin:2rem 0; }
+  .oral-builder__personalize h4,.oral-builder__sources h4,.oral-builder__reading h4 { margin:0 0 .6rem; font:550 1.15rem/1.3 var(--font-serif); }
+  .oral-builder__personalize p { font-size:.88rem; line-height:1.75; margin:0 0 1rem; }
+  .oral-builder__personalize label { display:block; font-size:.75rem; margin-bottom:.5rem; }
+  .oral-builder__export { display:flex; flex-wrap:wrap; align-items:center; gap:.75rem; }
+  .oral-builder__export p { width:100%; color:var(--oral-ink); font-size:.8rem; min-height:1.5em; margin:0; }
+  .oral-builder__secondary { background:var(--bg); color:var(--oral-ink); border:1px solid var(--oral-ink); padding:.8rem 1.1rem; border-radius:3px; font:inherit; font-size:.82rem; cursor:pointer; }
+  .oral-builder__copy-fallback label { display:block; font-size:.8rem; margin:.5rem 0; }
+  .oral-builder__sources,.oral-builder__reading { margin-top:1.5rem; padding-top:1.25rem; border-top:1px solid var(--border-strong); }
+  .oral-builder__sources p { font-size:.8rem; color:var(--text-muted); line-height:1.7; }
+  .oral-builder__sources ul,.oral-builder__reading ul { padding-left:1rem; font-size:.8rem; line-height:1.9; }
+  .oral-builder__sources a,.oral-builder__reading a { color:var(--oral-ink); text-decoration:underline; text-underline-offset:.2em; }
+  .oral-builder__print-credit { display:none; }
+  .oral-builder__visually-hidden { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }
+  .oral-builder [hidden] { display:none!important; }
+  @media(prefers-color-scheme:dark) { html:not([data-theme="light"]) .oral-builder { --oral-ink:#c7a5ef; } html:not([data-theme="light"]) .oral-builder :is(.resource-button,.oral-builder__angles button[aria-pressed="true"]) { color:#1a1025; } }
+  [data-theme="dark"] .oral-builder { --oral-ink:#c7a5ef; }
+  [data-theme="dark"] .oral-builder :is(.resource-button,.oral-builder__angles button[aria-pressed="true"]) { color:#1a1025; }
+  .oral-builder__print-value { display:none; }
+  @media(max-width:800px) { .oral-builder__cards { grid-template-columns:1fr; } .oral-builder__card { padding:1rem; } .oral-builder__card-title { margin:.5rem 0 .8rem; } .oral-builder__intro { grid-template-columns:1fr; gap:1rem; } }
+  @media(max-width:600px) { .oral-builder__filters { grid-template-columns:1fr; padding:1rem; } .oral-builder__pagination { gap:1rem; flex-wrap:wrap; } .oral-builder__plan li { padding-left:.65rem; } .oral-builder__export>* { width:100%; justify-content:center; text-align:center; } }
+  @media print {
+    body:has([data-oral-generator])> :not(main) { display:none!important; }
+    body:has([data-oral-generator]) main { padding:0!important; margin:0!important; }
+    body:has([data-oral-generator]) .oral-generator-page-header { display:none!important; }
+    .oral-builder { margin:0; --oral-ink:#40215f; }
+    .oral-builder>:not(.oral-builder__sheet) { display:none!important; }
+    .oral-builder__sheet { border:0; padding:0; color:#000; background:#fff; }
+    .oral-builder__angles,.oral-builder__export,.oral-builder__copy-fallback,.oral-builder__sheet>.oral-builder__help { display:none!important; }
+    .oral-builder textarea,.oral-builder__plan input { border:0; padding:0; resize:none; overflow:visible; background:#fff; color:#000; }
+    .oral-builder[data-bound="true"] :is(textarea,.oral-builder__plan input) { display:none; }
+    .oral-builder__print-value { display:block; white-space:pre-wrap; overflow-wrap:anywhere; color:#000; font-size:11pt; line-height:1.6; margin:.5rem 0; }
+    .oral-builder__print-value[data-print-for="question"] { font:600 16pt/1.35 var(--font-serif); }
+    .oral-builder__print-value[data-print-for^="part-"] { font-weight:650; }
+    .oral-builder__plan li,.oral-builder__block,.oral-builder__personalize { break-inside:avoid; }
+    .oral-builder__personalize { background:#fff; border-top:1px solid #bbb; padding:1rem 0; }
+    .oral-builder__print-credit { display:block; font-size:9pt; margin-top:1rem; }
+    .oral-builder__sheet a { color:#000; }
+  }
+</style>
