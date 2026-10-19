@@ -1,4 +1,7 @@
 ---
+import EditorialLocaleMasthead from "./EditorialLocaleMasthead.astro";
+import "../styles/editorial-resources.css";
+import "../styles/editorial-translations.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import AdBanner from "./AdBanner.astro";
 import ArticleCard from "./ArticleCard.astro";
@@ -31,10 +34,7 @@ const homeLabel =
 
 // Libellé localisé côté serveur pour pt-br/nl : meta.label reste en français sinon
 // (le dict runtime ne couvre que fr/en, voir catTagline/catDescription plus bas).
-const catLabel =
-  lang === "pt-br" || lang === "nl"
-    ? t(lang as Lang, `categories.${category}.label`)
-    : meta.label;
+const catLabel = t(lang as Lang, `categories.${category}.label`);
 
 const structuredData = buildBreadcrumbJsonLd([
   { name : homeLabel, path : swapLangPrefix("/", lang) },
@@ -65,10 +65,7 @@ const pageDesc =
       ? catDescription
       : (meta.seoDescription ?? `${meta.description} ${meta.audiencePromise}`);
 // Tagline localisée côté serveur pour pt-br/nl (le dict runtime ne couvre que fr/en).
-const catTagline =
-  lang === "pt-br" || lang === "nl"
-    ? t(lang as Lang, `categories.${category}.tagline`)
-    : meta.tagline;
+const catTagline = t(lang as Lang, `categories.${category}.tagline`);
 
 const blogHref = swapLangPrefix("/fr/blog/", lang);
 
@@ -128,6 +125,7 @@ const seeAllLabel =
   structuredData={structuredData}
   omitEnDeAlternateLinks={category === "grand-oral"}
 >
+  <div class="translated-media"><div class="resource-page"><div class="container"><EditorialLocaleMasthead lang={lang} /></div></div>
   {/* ─────────────── HERO ─────────────── */}
   <section
     class:list={["cat-hero", landingRich && "cat-hero--accent"]}
@@ -141,7 +139,7 @@ const seeAllLabel =
       {!landingRich && <p class="cat-desc reveal">{catDescription}</p>}
 
       {posts.length > 0 && (
-        <dl class="cat-stats reveal" aria-label="Statistiques de la rubrique">
+        <dl class="cat-stats reveal" aria-label={{fr:"Statistiques de la rubrique",en:"Section statistics","pt-br":"Estatísticas da seção",nl:"Rubriekstatistieken"}[lang]}>
           <div class="cat-stats__item">
             <dt>{statsLabels.articles}</dt>
             <dd>{posts.length}</dd>
@@ -266,6 +264,7 @@ const seeAllLabel =
       </div>
     </section>
   )}
+  </div>
 </BaseLayout>
 
 <style>

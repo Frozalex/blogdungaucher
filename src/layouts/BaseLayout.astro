@@ -614,8 +614,8 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         if (btn) {
           btn.setAttribute("aria-pressed", String(isDark));
           btn.setAttribute("aria-label", isDark
-            ? (dict["nav.darkOff"] || "Disable dark mode")
-            : (dict["nav.darkOn"] || "Enable dark mode")
+            ? (document.getElementById("navbar")?.dataset.darkOff || dict["nav.darkOff"] || "Disable dark mode")
+            : (document.getElementById("navbar")?.dataset.darkOn || dict["nav.darkOn"] || "Enable dark mode")
           );
         }
 

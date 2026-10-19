@@ -1,19 +1,24 @@
 ---
-interface Props { title: string; active: "psychologie" | "moteur-python"; published: number; total: number; }
-const { title, active, published, total } = Astro.props;
+import { editorialUi } from "../data/editorial-ui";
+import { t } from "../i18n/translations";
+import type { SiteLang } from "../utils/lang-paths";
+interface Props { lang?:SiteLang; title: string; active: "psychologie" | "moteur-python"; published: number; total: number; }
+const { title, active, published, total,lang="fr" } = Astro.props;
+const L=editorialUi(lang);
+const labels={fr:{all:"Toutes les séries",psychology:"Psychologie",python:"Moteur Python",next:"Le parcours à venir",complete:"Le parcours complet",current:"Le parcours en cours",published:"articles publiés"},en:{all:"All series",psychology:"Psychology",python:"Python engine",next:"Coming next",complete:"The complete series",current:"The series in progress",published:"published articles"},"pt-br":{all:"Todas as séries",psychology:"Psicologia",python:"Motor em Python",next:"O próximo percurso",complete:"A série completa",current:"A série em andamento",published:"artigos publicados"},nl:{all:"Alle reeksen",psychology:"Psychologie",python:"Python-engine",next:"Binnenkort",complete:"De volledige reeks",current:"De reeks in opbouw",published:"gepubliceerde artikelen"}}[lang];
 const links = [
-  { label: "Toutes les séries", href: "/fr/series/", key: "all" },
-  { label: "Psychologie", href: "/fr/series/psychologie/", key: "psychologie" },
-  { label: "Moteur Python", href: "/fr/series/moteur-python/", key: "moteur-python" },
-  { label: "Dissertations", href: "/fr/dissertations/", key: "dissertations" },
-];
+  { label: labels.all, href: `/${lang}/series/`, key: "all" },
+  { label: labels.psychology, href: `/${lang}/series/psychologie/`, key: "psychologie" },
+  { label: labels.python, href: "/fr/series/moteur-python/", key: "moteur-python" },
+  { label: L.essays, href: `/${lang}/dissertations/`, key: "dissertations" },
+].filter(link=>lang==="fr"||!(link.key==="moteur-python"||(link.key==="dissertations"&&lang!=="en")));
 ---
 <header>
-  <div class="resource-masthead"><a href="/fr/"><img src="/images/logo.svg" alt="" width="22" height="31" />Blog d’un Gaucher<span>.</span></a><span>Un autre regard sur les échecs</span></div>
-  <nav class="resource-nav" aria-label="Les séries du Gaucher">{links.map(link => <a href={link.href} aria-current={active === link.key ? "page" : undefined}>{link.label}</a>)}</nav>
+  <div class="resource-masthead"><a href={`/${lang}/`}><img src="/images/logo.svg" alt="" width="22" height="31" />{L.brand}<span>.</span></a><span>{L.strap}</span></div>
+  <nav class="resource-nav" aria-label={L.series}>{links.map(link => <a href={link.href} aria-current={active === link.key ? "page" : undefined}>{link.label}</a>)}</nav>
   <div class="series-hero">
-    <div class="resource-heading"><span class="resource-kicker">Les séries du Gaucher · {active === "psychologie" ? "Esprit" : "Science"}</span><h1>{title}</h1><div class="series-intro"><slot /></div></div>
-    <aside class="series-status" aria-label="Publication de la série"><span class="resource-kicker">{published === 0 ? "Le parcours à venir" : published >= total ? "Le parcours complet" : "Le parcours en cours"}</span><div class="series-status__number"><strong>{published}</strong><span>/ {total}</span></div><p>article{published > 1 ? "s" : ""} publié{published > 1 ? "s" : ""}</p><progress value={published} max={total} aria-label={`${published} articles publiés sur ${total}`}></progress><slot name="status" /></aside>
+    <div class="resource-heading"><span class="resource-kicker">{L.series} · {t(lang,`categories.${active === "psychologie" ? "esprit" : "science"}.label`)}</span><h1>{title}</h1><div class="series-intro"><slot /></div></div>
+    <aside class="series-status" aria-label={labels.published}><span class="resource-kicker">{published === 0 ? labels.next : published >= total ? labels.complete : labels.current}</span><div class="series-status__number"><strong>{published}</strong><span>/ {total}</span></div><p>{labels.published}</p><progress value={published} max={total} aria-label={`${published} / ${total} ${labels.published}`}></progress><slot name="status" /></aside>
   </div>
 </header>
 <style>

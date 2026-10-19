@@ -1,5 +1,6 @@
 ---
-import { navigationLinks, enNavigationLinks, ptBrNavigationLinks, nlNavigationLinks, categoryMap, categorySlugs } from "../data/site";
+import { editorialUi } from "../data/editorial-ui";
+import { categoryMap, categorySlugs } from "../data/site";
 import { swapLangPrefix } from "../utils/lang-paths";
 import { t, type Lang } from "../i18n/translations";
 
@@ -12,19 +13,11 @@ const { frHref, enHref, ptBrHref, nlHref, lang = "fr" } = Astro.props as {
 };
 
 const pathname = Astro.url.pathname;
-const links =
-  lang === "en"
-    ? enNavigationLinks
-    : lang === "pt-br"
-      ? ptBrNavigationLinks
-      : lang === "nl"
-        ? nlNavigationLinks
-        : navigationLinks;
-
+const E=editorialUi(lang);
 const homeHref = lang === "en" ? "/en/" : lang === "pt-br" ? "/pt-br/" : lang === "nl" ? "/nl/" : "/fr/";
 
 /** Langues proposées dans le sélecteur : uniquement celles réellement en ligne
- *  (NL lancé au 1er sept., donc exclu pour l'instant). Les href sont déjà résolus
+ *  (NL lancé au 1er novembre, donc exclu pour l'instant). Les href sont déjà résolus
  *  par BaseLayout vers la traduction de la page courante — ou l'accueil de la
  *  langue en repli — ce qui évite tout lien mort. Libellés = endonymes (non traduits). */
 const switchLanguages = [
@@ -109,44 +102,13 @@ const rubriques = categorySlugs
     href: lang === "fr" ? categoryMap[slug].href : swapLangPrefix(categoryMap[slug].href, lang),
     accent: categoryMap[slug].accent,
   }));
-/** Menu « Articles » : regroupe l'index du blog, les rubriques éditoriales et les séries,
- *  qui occupaient auparavant trois entrées de premier niveau. « Tous les articles » reste
- *  en tête, sinon /blog/ ne serait plus atteignable depuis la navbar. Les séries ont une
- *  page d'index en fr/en/pt-br (cf. staticRoutes / enStaticRoutes / ptBrStaticRoutes) ;
- *  le NL en est exclu tant qu'il n'a pas sa propre page (lancement 2026-11-01). */
-const articlesLabel = lang === "pt-br" ? "Artigos" : lang === "nl" ? "Artikelen" : "Articles";
-const blogHref = swapLangPrefix("/fr/blog/", lang);
-const seriesHref = lang === "fr" ? "/fr/series/" : lang === "en" ? "/en/series/" : "/pt-br/series/";
-const legacyArticlesMenu = [
-  {
-    label: (t(tLang, "navLinks.blog") as string) || "Tous les articles",
-    href: blogHref,
-    accent: "var(--green)",
-    key: "navLinks.blog",
-  },
-  ...rubriques.map((r) => ({ label: r.label, href: r.href, accent: r.accent, key: "" })),
-  ...(lang === "fr" ? [{ label: "Explorer l’Atlas", href: "/fr/infographie/", accent: "var(--green)", key: "" }, { label: "Glossaire", href: "/fr/glossaire/", accent: "var(--green)", key: "" }] : []),
-  ...(lang === "fr" || lang === "en" || lang === "pt-br"
-    ? [{ label: (t(tLang, "navLinks.series") as string) || "Séries", href: seriesHref, accent: "var(--green)", key: "navLinks.series" }]
-    : []),
-];
 const menuGroups = [
-  { label: "Lire", items: [
-    { label: "Tous les articles", href: "/fr/blog/", accent: "var(--green)", key: "navLinks.blog" },
-    { label: "Séries", href: "/fr/series/", accent: "var(--green)", key: "navLinks.series" },
-    { label: "Dissertations", href: "/fr/dissertations/", accent: "var(--green)", key: "navLinks.dissertations" },
-  ] },
-  { label: "Comprendre", items: [
-    { label: "L’Atlas du Gaucher", href: "/fr/infographie/", accent: "var(--green)", key: "" },
-    { label: "Glossaire", href: "/fr/glossaire/", accent: "var(--green)", key: "" },
-  ] },
-  { label: "Le média", items: [
-    { label: "À propos", href: "/fr/about/", accent: "var(--green)", key: "navLinks.about" },
-    { label: "Contact", href: "/fr/contact/", accent: "var(--green)", key: "navLinks.contact" },
-  ] },
+  {label:E.read,items:[{label:E.all,href:`/${lang}/blog/`,accent:"var(--green)",key:"navLinks.blog"},...(lang!=="nl"?[{label:E.series,href:`/${lang}/series/`,accent:"var(--green)",key:"navLinks.series"}]:[]),...((lang==="fr"||lang==="en")?[{label:E.essays,href:`/${lang}/dissertations/`,accent:"var(--green)",key:"navLinks.dissertations"}]:[])]},
+  {label:E.understand,items:[{label:E.search,href:`/${lang}/recherche/`,accent:"var(--green)",key:""},...(lang==="fr"?[{label:"L’Atlas du Gaucher",href:"/fr/infographie/",accent:"var(--green)",key:""},{label:"Glossaire",href:"/fr/glossaire/",accent:"var(--green)",key:""}]:[])]},
+  {label:E.media,items:[{label:E.about,href:`/${lang}/about/`,accent:"var(--green)",key:"navLinks.about"},{label:E.contact,href:`/${lang}/contact/`,accent:"var(--green)",key:"navLinks.contact"}]},
 ];
-const articlesMenu = lang === "fr" ? menuGroups.flatMap(group => group.items) : legacyArticlesMenu;
-const exploreLabel = lang === "fr" ? "Explorer" : articlesLabel;
+const articlesMenu=menuGroups.flatMap(group=>group.items);
+const exploreLabel=E.explore;
 const articlesActive = articlesMenu.some((item) => pathname.startsWith(item.href));
 
 /** En français, les quatre rubriques sont directement visibles. Explorer rassemble
@@ -154,13 +116,9 @@ const articlesActive = articlesMenu.some((item) => pathname.startsWith(item.href
 type NavEntry =
   | { kind: "link"; label: string; href: string }
   | { kind: "articles" };
-const navEntries: NavEntry[] = lang === "fr" ? [...rubriques.map(r => ({ kind: "link" as const, label: r.label, href: r.href })), { kind: "articles" as const }] : links.flatMap((link, i) =>
-  i === 0
-    ? [{ kind: "link" as const, label: link.label, href: link.href }, { kind: "articles" as const }]
-    : [{ kind: "link" as const, label: link.label, href: link.href }],
-);
+const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, label: r.label, href: r.href })), { kind: "articles" as const }];
 ---
-<header class:list={["navbar", { "navbar--editorial": lang === "fr" }]} id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"} data-lang-nl-href={nlHref ?? "/nl/"}>
+<header class="navbar navbar--editorial" id="navbar" data-dark-on={t(tLang,"nav.darkOn")} data-dark-off={t(tLang,"nav.darkOff")} data-menu-open={t(tLang,"nav.openMenu")} data-menu-close={t(tLang,"nav.closeMenu")} data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"} data-lang-nl-href={nlHref ?? "/nl/"}>
   <div class="container nav-inner">
 
     <a href={homeHref} class="nav-logo" aria-label={lang === "en" ? "Home - A Left-Hander's Blog" : lang === "pt-br" ? "Início - Blog de um Canhoto" : lang === "nl" ? "Home - Blog van een Linkshandige" : "Accueil Blog d'un Gaucher"}>
@@ -195,8 +153,8 @@ const navEntries: NavEntry[] = lang === "fr" ? [...rubriques.map(r => ({ kind: "
               {exploreLabel}
               <svg class="nav-dropdown__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
-            <div class:list={["nav-dropdown__menu", {"nav-dropdown__menu--grouped":lang === "fr"}]} id="nav-explore-menu">
-              {lang === "fr" ? menuGroups.map(group => <div class="nav-dropdown__group"><span class="nav-dropdown__label">{group.label}</span><ul>{group.items.map(item => <li><a href={item.href} class:list={["nav-dropdown__item",{active:isActive(item.href)}]} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}>{item.label}</a></li>)}</ul></div>) : <ul>{articlesMenu.map(item => <li><a href={item.href} class:list={["nav-dropdown__item",{active:isActive(item.href)}]} style={`--fc:${item.accent}`} data-t={item.key} aria-current={isActive(item.href) ? "page" : undefined}><span class="nav-dropdown__dot" aria-hidden="true"></span>{item.label}</a></li>)}</ul>}
+            <div class:list={["nav-dropdown__menu", {"nav-dropdown__menu--grouped":true}]} id="nav-explore-menu">
+              {menuGroups.map(group => <div class="nav-dropdown__group"><span class="nav-dropdown__label">{group.label}</span><ul>{group.items.map(item => <li><a href={item.href} class:list={["nav-dropdown__item",{active:isActive(item.href)}]} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}>{item.label}</a></li>)}</ul></div>)}
             </div>
           </li>
         ))}
@@ -287,17 +245,11 @@ const navEntries: NavEntry[] = lang === "fr" ? [...rubriques.map(r => ({ kind: "
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true" inert>
     <div class="mobile-menu__inner">
       <nav class="container mobile-menu__content" aria-label={ui.mainNav}>
-        {lang === "fr" ? <>
-          <span class="mobile-eyebrow">Les rubriques</span>
+        <>
+          <span class="mobile-eyebrow">{E.sections}</span>
           <div class="mobile-rubriques mobile-rubriques--primary">{rubriques.map(item => <a href={item.href} class:list={["mobile-rubrique",{active:isActive(item.href)}]} style={`--fc:${item.accent}`} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}><span class="nav-dropdown__dot" aria-hidden="true"></span>{item.label}</a>)}</div>
           <div class="mobile-browse-groups">{menuGroups.map(group => <section><h2 class="mobile-sublabel">{group.label}</h2><ul>{group.items.map(item => <li><a href={item.href} class:list={["mobile-link",{active:isActive(item.href)}]} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}>{item.label}</a></li>)}</ul></section>)}</div>
-        </> : <>
-          <span class="mobile-eyebrow" data-t="nav.navigation">{(t(tLang,"nav.navigation") as string) || "Navigation"}</span>
-          {links.map(link => <a href={link.href} class:list={["mobile-link",{active:isActive(link.href)}]} aria-current={isActive(link.href)?"page":undefined} data-t={linkKey[link.href] ?? ""}>{link.label}</a>)}
-          <span class="mobile-sublabel">{articlesLabel}</span>
-          <div class="mobile-rubriques">{articlesMenu.map(item => <a href={item.href} class:list={["mobile-rubrique",{active:isActive(item.href)}]} style={`--fc:${item.accent}`} data-t={item.key} aria-current={isActive(item.href)?"page":undefined}><span class="nav-dropdown__dot" aria-hidden="true"></span>{item.label}</a>)}</div>
-          <a href={swapLangPrefix("/fr/recherche/",lang)} class="mobile-link mobile-search-link">{ui.search}</a>
-        </>}
+        </>
         <div class="mobile-utils">
           <button
             id="dark-toggle-mobile"
@@ -1035,12 +987,10 @@ const navEntries: NavEntry[] = lang === "fr" ? [...rubriques.map(r => ({ kind: "
         closeLangMenu();
         applyState(window.scrollY >= HIDE_AFTER ? "scrolled" : "top");
       }
-      const lang = window.__lang || "fr";
-      const dict = window.__i18n?.[lang] || {};
       burger?.setAttribute("aria-expanded", isOpen ? "true" : "false");
       burger?.setAttribute("aria-label", isOpen
-        ? (dict["nav.closeMenu"] || "Fermer le menu")
-        : (dict["nav.openMenu"]  || "Ouvrir le menu"));
+        ? navbar.dataset.menuClose!
+        : navbar.dataset.menuOpen!);
       menu?.setAttribute("aria-hidden", isOpen ? "false" : "true");
       // `inert` quand fermé : retire les liens du menu du tab order ET de l'arbre
       // d'accessibilité (sinon des <a> focusables restent dans un conteneur
@@ -1101,11 +1051,9 @@ const navEntries: NavEntry[] = lang === "fr" ? [...rubriques.map(r => ({ kind: "
 
     /* ── Dark mode toggle ── */
     function syncDarkBtn(isDark : boolean) {
-      const lang = window.__lang || "fr";
-      const dict = (window.__i18n as Record<string, Record<string, string>> | undefined)?.[lang] || {};
       const label = isDark
-        ? (dict["nav.darkOff"] || "Disable dark mode")
-        : (dict["nav.darkOn"]  || "Enable dark mode");
+        ? navbar.dataset.darkOff!
+        : navbar.dataset.darkOn!;
 
       [document.getElementById("dark-toggle"), document.getElementById("dark-toggle-mobile")]
         .filter(Boolean)

@@ -118,10 +118,10 @@ export function initBlogFilter() {
 
     setText(node, ".card-title", post.title);
     setText(node, ".card-excerpt", post.excerpt);
-    setText(node, ".card-time", card?.classList.contains("archive-card") ? `${post.readingTime} de lecture` : post.readingTime);
+    setText(node, ".card-time", card?.classList.contains("archive-card") ? `${post.readingTime} ${card.dataset.readingSuffix || "de lecture"}` : post.readingTime);
     const credit = node.querySelector<HTMLElement>(".card-credit");
     if (credit) {
-      setText(credit, "[data-image-credit]", post.imageCredit ? `Crédit : ${post.imageCredit}` : "");
+      setText(credit, "[data-image-credit]", post.imageCredit ? `${credit.dataset.creditLabel || "Crédit"} : ${post.imageCredit}` : "");
       setText(credit, "[data-image-license]", post.imageLicense ?? "");
       const source = credit.querySelector<HTMLAnchorElement>("[data-image-source]");
       if (source) {
@@ -197,7 +197,7 @@ export function initBlogFilter() {
       count.hidden = matches.length === 0 && !count.dataset.defaultCount;
     }
     if (listingTitle?.dataset.defaultTitle) {
-      listingTitle.textContent = `Les articles · ${index.categories[category]?.label ?? category}`;
+      listingTitle.textContent = `${listingTitle.dataset.filteredTitle || "Les articles"} · ${index.categories[category]?.label ?? category}`;
     }
   }
 

@@ -1,4 +1,9 @@
 ---
+import EditorialLocaleMasthead from "../../../components/EditorialLocaleMasthead.astro";
+import { getPostHeroSrc, getLocalizedPostText } from "../../../utils/blog";
+import { buildSrcset } from "../../../utils/image-variants";
+import "../../../styles/editorial-resources.css";
+import "../../../styles/editorial-translations.css";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { seriePsychologieSlugs, seriePsychologieTotal } from "../../../data/serie-psychologie";
 import {
@@ -17,6 +22,9 @@ import {
  * entrée quand une autre série le sera.
  */
 const published = filterPostsForLang(await getAllPosts(), "en");
+const coverPost=published.find(post=>seriePsychologieSlugs.includes(post.id.split("/").pop()??post.id)&&getPostHeroSrc(post));
+const cover=coverPost?getPostHeroSrc(coverPost):null;
+const coverText=coverPost?await getLocalizedPostText(coverPost,"en"):null;
 const publishedSlugs = new Set(published.map((post) => post.id.split("/").pop() ?? post.id));
 
 const items = [
@@ -68,7 +76,7 @@ const structuredData = [
   structuredData={structuredData}
   lang="en"
 >
-  <div class="series">
+  <div class="translated-media"><div class="series container"><EditorialLocaleMasthead lang="en" active="series" />
     <header class="series__hero">
       <p class="series__eyebrow">Long-form reading</p>
       <h1>The series</h1>
@@ -85,7 +93,7 @@ const structuredData = [
         const progress = Math.round((serie.published / serie.total) * 100);
         return (
           <li class="serie-card">
-            <a href={serie.href}>
+            <a href={serie.href}><div class="serie-card__body">
               <h2 class="serie-card__title">{serie.title}</h2>
               <p class="serie-card__lede">{serie.lede}</p>
               <div class="serie-card__foot">
@@ -97,13 +105,14 @@ const structuredData = [
                   {!complete && <span> · in progress</span>}
                 </p>
               </div>
-              <span class="serie-card__cta">View the series</span>
+              <span class="serie-card__cta">View the series</span></div>{cover&&<figure class="series-index-cover"><img src={cover} srcset={buildSrcset(cover)} sizes="(min-width:900px) 520px, 100vw" alt={coverText?.heroImageAlt||""} width="1200" height="800" />{coverPost?.data.heroImage?.credit&&<figcaption>{coverPost.data.heroImage.credit}</figcaption>}</figure>}
             </a>
           </li>
         );
       })}
     </ul>
   </div>
+</div>
 </BaseLayout>
 
 <style>

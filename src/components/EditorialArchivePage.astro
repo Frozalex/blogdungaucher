@@ -1,0 +1,76 @@
+---
+import type { Page } from "astro";
+import type { BlogEntry } from "../utils/blog";
+import {filterPostsForLang,getAllPosts,getPostHeroSrc,getBlogIndexPagePath} from "../utils/blog";
+import type { SiteLang } from "../utils/lang-paths";
+import { editorialUi } from "../data/editorial-ui";
+import { categoryMap, categorySlugs } from "../data/site";
+import { t } from "../i18n/translations";
+import AdBanner from "./AdBanner.astro";
+import EditorialArchiveCard from "./EditorialArchiveCard.astro";
+import EditorialLocaleMasthead from "./EditorialLocaleMasthead.astro";
+import Pagination from "./Pagination.astro";
+import "../styles/editorial-resources.css";
+interface Props {page:Page<BlogEntry>;lang:SiteLang;}
+const {page,lang}=Astro.props;
+const L=editorialUi(lang),isFirstPage=page.currentPage===1;
+const allPosts=filterPostsForLang(await getAllPosts(),lang);
+const categories=categorySlugs.filter(slug=>lang==="fr"||slug!=="grand-oral");
+const counts=Object.fromEntries(categories.map(slug=>[slug,allPosts.filter(post=>post.data.category===slug).length]));
+const heroTemplatePost=allPosts.find(post=>getPostHeroSrc(post)),plainTemplatePost=allPosts.find(post=>!getPostHeroSrc(post));
+const range=`${page.start+1}–${page.end+1} ${L.of} ${allPosts.length} ${L.articles}`;
+const listingTitle=isFirstPage?L.latest:`${L.archives} · ${L.page} ${page.currentPage}`;
+const MAX_PAGINATION_LINKS = 7;
+function buildPageLinks(current: number, total: number) {
+  if (total <= MAX_PAGINATION_LINKS) {
+    return Array.from({ length: total }, (_, index) => index + 1);
+  }
+
+  const pages = new Set<number>([1, total, current, current - 1, current + 1]);
+  if (current <= 3) [2, 3, 4].forEach((n) => pages.add(n));
+  if (current >= total - 2) [total - 1, total - 2, total - 3].forEach((n) => pages.add(n));
+
+  return [...pages]
+    .filter((n) => n >= 1 && n <= total)
+    .sort((a, b) => a - b);
+}
+
+const paginationPages = buildPageLinks(page.currentPage, page.lastPage);
+
+const prevPageHref =
+  page.currentPage > 1
+    ? getBlogIndexPagePath(lang, page.currentPage - 1)
+    : undefined;
+const nextPageHref =
+  page.currentPage < page.lastPage
+    ? getBlogIndexPagePath(lang, page.currentPage + 1)
+    : undefined;
+
+---
+  <div class="resource-page archive-page"><div class="container">
+    <header><EditorialLocaleMasthead lang={lang} active="all" /><div class="archive-heading"><div class="resource-heading"><span class="resource-kicker">{L.archiveKicker}</span><h1>{L.all}</h1><p>{L.archiveIntro}</p></div><p class="archive-total"><strong>{allPosts.length}</strong><span>{L.archiveTotal}<br />{categories.length} {L.archiveSections}</span></p></div></header>
+    <section class="archive-tools" aria-labelledby="archive-tools-title">
+      <h2 id="archive-tools-title" class="resource-kicker">{L.find}</h2>
+      <div class="archive-toolbar"><div class="resource-filter" id="category-chips" role="group" aria-label={L.filters}><button class="is-active" type="button" data-filter-category="all" aria-pressed="true">{L.everything} <span>{allPosts.length}</span></button>{categories.map(slug => <button type="button" data-filter-category={slug} aria-pressed="false" style={`--c:${categoryMap[slug].accent}`}><i aria-hidden="true"></i>{t(lang,`categories.${slug}.label`)} <span>{counts[slug]}</span></button>)}</div>
+        <form class="archive-search" action={`/${lang}/recherche/`} method="get" role="search"><label class="resource-sr-only" for="blog-search">{L.searchLabel}</label><input class="resource-field" id="blog-search" type="search" name="q" placeholder={L.keyword} autocomplete="off" /><button class="resource-button" type="submit">{L.search}</button></form>
+      </div>
+      <noscript><p class="archive-feedback">{categories.map(slug=><a href={`/${lang}/${slug}/`}>{t(lang,`categories.${slug}.label`)} → </a>)}</p></noscript>
+      <p id="filter-error" class="archive-feedback" hidden role="status">{L.archiveError}</p>
+    </section>
+    <AdBanner format="leaderboard" />
+    <section class="archive-listing" aria-labelledby="listing-title">
+      <div class="resource-section-head"><h2 id="listing-title" data-default-title={listingTitle} data-filtered-title={L.filtered}>{listingTitle}</h2><p id="filter-count" class="archive-count" aria-live="polite" aria-atomic="true" data-count-template={`{count} ${L.inCategory}`} data-default-count={range}>{range}</p></div>
+      <div class="post-grid" id="post-grid" data-blog-index={`/blog-index/${lang}.json`}>{page.data.map((post,i)=><div class="post-item" data-category={post.data.category}><EditorialArchiveCard post={post} lang={lang} eager={i<3} /></div>)}</div>
+      <p id="listing-empty" class="archive-empty" hidden>{L.noFilter}</p>
+      <div id="listing-pagination"><Pagination currentPage={page.currentPage} lastPage={page.lastPage} pages={paginationPages} getHref={(n:number)=>getBlogIndexPagePath(lang,n)} prevHref={prevPageHref} nextHref={nextPageHref} lang={lang} /></div>
+    </section>
+    <div class="resource-end"><span>{L.follow}</span>{lang!=="nl"&&<a class="resource-link" href={`/${lang}/series/`}>{L.exploreSeries} →</a>}<a class="resource-link" href={`/${lang}/recherche/`}>{L.search} →</a></div>
+    <div id="card-templates" hidden aria-hidden="true" data-pagefind-ignore>{heroTemplatePost && <div class="post-item" data-template="hero"><EditorialArchiveCard post={heroTemplatePost} lang={lang} /></div>}{plainTemplatePost && <div class="post-item" data-template="plain"><EditorialArchiveCard post={plainTemplatePost} lang={lang} /></div>}</div>
+  </div></div>
+<style>
+.archive-heading{display:grid;grid-template-columns:minmax(0,1fr) 15rem;gap:3rem;align-items:center;}.archive-heading .resource-heading{max-width:49rem;}.archive-heading h1{font-size:clamp(2.4rem,5vw,4rem);}.archive-total{display:flex;align-items:center;gap:1rem;border-left:1px solid var(--border-strong);padding-left:2rem;}.archive-total strong{font:500 3.5rem/1 var(--font-serif);letter-spacing:-.05em;}.archive-total span{font-size:.72rem;line-height:1.7;color:var(--text-dim);}.archive-tools{padding:1.1rem 0 1.5rem;border-top:2px solid var(--text-main);}.archive-tools h2{margin:0 0 1rem;font-family:var(--font-body);}.archive-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;}.resource-filter{gap:.4rem;}.resource-filter button{display:inline-flex;align-items:center;gap:.4rem;min-height:2.75rem;padding:.5rem .65rem;}.resource-filter button>span{font-size:.68rem;opacity:.8;}.resource-filter i{width:6px;height:6px;border-radius:50%;background:var(--c);}.resource-filter button[aria-pressed="true"] i{background:var(--on-green);}.archive-search{display:flex;gap:.4rem;flex:1;min-width:16rem;max-width:23rem;}.archive-search input{width:100%;flex:1;min-width:0;}.archive-search button{padding:.7rem .8rem;}.archive-feedback{font-size:.82rem;color:var(--text-muted);margin:1rem 0 0;}.archive-feedback a{text-decoration:underline;color:var(--green);}.archive-listing{border-top:1px solid var(--border-strong);padding-top:1.25rem;margin:0 0 2.5rem;}.archive-count{font-size:.75rem;color:var(--text-dim);margin:0;}.post-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.25rem 2rem;}.post-item{min-width:0;}.archive-empty{padding:2rem 0;color:var(--text-muted);}.archive-page :global(.pagination){border-top:1px solid var(--border-strong);gap:.4rem;margin-top:2.5rem;}.archive-page :global(.pag-btn){min-width:2.75rem;height:2.75rem;border-radius:3px;font-family:var(--font-body);background:transparent;box-shadow:none;}.archive-page :global(.pag-btn--current){background:var(--green);color:var(--on-green);}.archive-page :global(.pag-btn:hover){transform:none;}
+@media(max-width:1000px){.archive-toolbar{align-items:stretch;}.archive-search{max-width:none;flex-basis:100%;}.archive-heading{grid-template-columns:minmax(0,1fr) 12rem;gap:1.5rem;}.archive-total{padding-left:1.25rem;flex-direction:column;align-items:start;gap:.5rem;}}
+@media(max-width:899px){.post-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 1.5rem;}}
+@media(max-width:639px){.archive-heading{display:block;}.archive-total{display:none;}.post-grid{grid-template-columns:1fr;}.post-item+.post-item{border-top:1px solid var(--border-strong);padding-top:1.5rem;}.archive-listing .resource-section-head{align-items:start;flex-direction:column;gap:.65rem;}.resource-filter{gap:.4rem;}.resource-filter button{font-size:.76rem;}.archive-search{min-width:0;}.archive-search input{font-size:.85rem;}.archive-search button{font-size:.8rem;}.archive-page :global(.pag-numbers){gap:.2rem;}.archive-page :global(.pag-btn){min-width:2.35rem;height:2.75rem;}.archive-page :global(.pag-ellipsis){min-width:.8rem;}}
+</style>
+<script>import "../scripts/blog-filter";</script>

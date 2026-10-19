@@ -1,4 +1,5 @@
 ---
+import { editorialUi } from "../data/editorial-ui";
 import NewsletterForm from "./NewsletterForm.astro";
 import PushSubscribe from "./PushSubscribe.astro";
 import { t, type Lang } from "../i18n/translations";
@@ -7,7 +8,8 @@ interface Props {
   lang?: "fr" | "en" | "pt-br" | "nl";
 }
 const { lang = "fr" } = Astro.props;
-const editorialHome = lang === "fr" && ["/fr/", "/fr/about/", "/fr/infographie/", "/fr/glossaire/", "/fr/science/", "/fr/esprit/", "/fr/societe/", "/fr/grand-oral/", "/fr/series/", "/fr/dissertations/"].includes(Astro.url.pathname) || (lang === "fr" && (Astro.url.pathname.startsWith("/fr/series/") || /^\/fr\/blog\/(?:\d+\/)?$/.test(Astro.url.pathname)));
+const editorialHome = true;
+const E=editorialUi(lang);
 
 const aboutHref =
   lang === "en" ? "/en/about/" : lang === "pt-br" ? "/pt-br/about/" : lang === "nl" ? "/nl/about/" : "/fr/about/";
@@ -74,7 +76,7 @@ const requiredNote = lang === "en"
         <span class="divider-line" aria-hidden="true"></span>
       </div>
 
-      {editorialHome && <h2 class="footer-letter-title">La lettre du Gaucher</h2>}
+      {editorialHome && <h2 class="footer-letter-title">{E.letter}</h2>}
       <p class="footer-signup-headline">{signupHeadline}</p>
       <p class="footer-signup-required">{requiredNote}</p>
 
@@ -101,7 +103,7 @@ const requiredNote = lang === "en"
 
     <div class="footer-vertical-divider" aria-hidden="true"></div>
 
-    <nav class:list={["footer-nav-col", { "fade-up": !editorialHome }]} style="--motion-delay: 120ms;" aria-label="Navigation du pied de page">
+    <nav class:list={["footer-nav-col", { "fade-up": !editorialHome }]} style="--motion-delay: 120ms;" aria-label={{fr:"Navigation du pied de page",en:"Footer navigation","pt-br":"Navegação do rodapé",nl:"Voettekstnavigatie"}[lang]}>
 
       <div class="footer-col-group">
         <h2 class="footer-col-label" data-t="footer.exploreTitle">{tt("footer.exploreTitle", "Explorer")}</h2>

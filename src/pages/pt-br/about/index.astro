@@ -1,4 +1,7 @@
 ---
+import EditorialLocaleMasthead from "../../../components/EditorialLocaleMasthead.astro";
+import "../../../styles/editorial-resources.css";
+import "../../../styles/editorial-translations.css";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
 import { PT_BR_LAUNCH_DATE } from "../../../data/site";
@@ -20,7 +23,7 @@ if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/about/", 302);
     buildPersonJsonLd("pt-br"),
   ]}
 >
-  <article class="about-page">
+  <article class="about-page translated-media"><div class="container"><EditorialLocaleMasthead lang="pt-br" active="about" /></div>
     <img class="about-page__glyph" src="/images/logo.svg" alt="" aria-hidden="true" width="56" height="80" />
 
     <section class="about-hero">

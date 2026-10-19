@@ -1,10 +1,14 @@
 ---
 import { categoryMap } from "../data/site";
-import { formatDateForLang, getPostHeroSrc, getPostSlug, type BlogEntry } from "../utils/blog";
+import { formatDateForLang, getPostHeroSrc, getPostUrlLang, getLocalizedPostText, type BlogEntry } from "../utils/blog";
+import type { SiteLang } from "../utils/lang-paths";
+import { editorialUi } from "../data/editorial-ui";
+import { t } from "../i18n/translations";
 import { buildSrcset } from "../utils/image-variants";
 
 interface Props {
   post: BlogEntry;
+  lang?: SiteLang;
   variant?: "lead" | "secondary" | "compact" | "feature";
   titleTag?: "h3" | "h4";
   showKicker?: boolean;
@@ -13,29 +17,31 @@ interface Props {
   summary?: string;
   kicker?: string;
 }
-const { post, variant = "compact", titleTag: Title = "h3", showKicker = true, showImageCredit = false, title = post.data.title, summary = post.data.excerpt, kicker = categoryMap[post.data.category].label } = Astro.props;
+const { post, lang="fr", variant = "compact", titleTag: Title = "h3", showKicker = true, showImageCredit = false } = Astro.props;
+const text=await getLocalizedPostText(post,lang),L=editorialUi(lang);
+const title=Astro.props.title??text.title,summary=Astro.props.summary??text.excerpt,kicker=Astro.props.kicker??t(lang,`categories.${post.data.category}.label`);
 const image = getPostHeroSrc(post);
 const srcset = image ? buildSrcset(image) : undefined;
-const href = `/fr/blog/${getPostSlug(post)}/`;
+const href = await getPostUrlLang(post,lang);
 ---
 <article class:list={["editorial-article", `editorial-article--${variant}`, { "editorial-article--no-image": !image }]}>
   <a class="editorial-article__link" href={href}>
     {image && <div class="editorial-article__visual">
-      <img src={image} srcset={srcset} sizes={variant === "lead" ? "(min-width: 900px) 730px, 100vw" : variant === "compact" ? "112px" : "(min-width: 900px) 360px, (min-width: 600px) 45vw, 100vw"} alt={post.data.heroImage?.alt || ""} width="900" height="600" loading={variant === "lead" ? "eager" : "lazy"} fetchpriority={variant === "lead" ? "high" : "auto"} />
+      <img src={image} srcset={srcset} sizes={variant === "lead" ? "(min-width: 900px) 730px, 100vw" : variant === "compact" ? "112px" : "(min-width: 900px) 360px, (min-width: 600px) 45vw, 100vw"} alt={text.heroImageAlt || ""} width="900" height="600" loading={variant === "lead" ? "eager" : "lazy"} fetchpriority={variant === "lead" ? "high" : "auto"} />
     </div>}
     <div class="editorial-article__body">
       {showKicker && <span class="editorial-article__kicker">{kicker}</span>}
       <Title class="editorial-article__title">{title}</Title>
       {variant !== "compact" && <p class="editorial-article__summary">{summary}</p>}
       <div class="editorial-article__meta">
-        <time datetime={post.data.publishDate.toISOString()}>{formatDateForLang(post.data.publishDate, "fr")}</time>
-        <span aria-hidden="true">·</span><span>{post.data.readingTime} de lecture</span>
+        <time datetime={post.data.publishDate.toISOString()}>{formatDateForLang(post.data.publishDate, lang)}</time>
+        <span aria-hidden="true">·</span><span>{post.data.readingTime} {L.reading}</span>
       </div>
     </div>
   </a>
   {image && showImageCredit && (post.data.heroImage?.credit || post.data.heroImage?.sourceUrl || post.data.heroImage?.license) && <p class="editorial-article__credit">
-    {post.data.heroImage.credit && <span>Crédit : {post.data.heroImage.credit}</span>}
-    {post.data.heroImage.sourceUrl && <a href={post.data.heroImage.sourceUrl} target="_blank" rel="noopener noreferrer">Source de l’image ↗</a>}
+    {post.data.heroImage.credit && <span>{L.credit} : {post.data.heroImage.credit}</span>}
+    {post.data.heroImage.sourceUrl && <a href={post.data.heroImage.sourceUrl} target="_blank" rel="noopener noreferrer">{L.source} ↗</a>}
     {post.data.heroImage.license && <span>{post.data.heroImage.license}</span>}
   </p>}
 </article>

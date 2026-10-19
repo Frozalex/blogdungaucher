@@ -1,41 +1,46 @@
 ---
 import EditorialArticle from "./EditorialArticle.astro";
-import { categoryMap, categorySlugs } from "../data/site";
+import { editorialUi } from "../data/editorial-ui";
+import { t } from "../i18n/translations";
+import type { SiteLang } from "../utils/lang-paths";
+import { categorySlugs } from "../data/site";
 import { homeEditorial, getHomeEditorialPosts } from "../data/home-editorial";
 import { getPostSlug, type BlogEntry } from "../utils/blog";
 
-interface Props { posts: BlogEntry[]; }
-const { posts } = Astro.props;
+interface Props { posts: BlogEntry[]; lang?: SiteLang; }
+const { posts,lang="fr" } = Astro.props;
 const { lead, secondary, latest } = getHomeEditorialPosts(posts);
-const curatedLead = lead && getPostSlug(lead) === homeEditorial.leadSlug;
+const L=editorialUi(lang);
+const path=(suffix:string)=>`/${lang}/${suffix}`;
+const curatedLead = lang==="fr" && lead && getPostSlug(lead) === homeEditorial.leadSlug;
 ---
 <header class="edition-header">
-  <div class="edition-header__eyebrow"><span>Un autre regard sur les échecs</span><span>Science · Psychologie · Société</span></div>
+  <div class="edition-header__eyebrow"><span>{L.strap}</span><span>{t(lang,"categories.science.label")} · {t(lang,"categories.esprit.label")} · {t(lang,"categories.societe.label")}</span></div>
   <div class="edition-header__brand">
     <img src="/images/logo.svg" alt="" width="52" height="72" />
-    <div><h1>Blog d’un Gaucher<span class="edition-header__period">.</span></h1><p>Les échecs pour comprendre le jeu, l’esprit et la société.</p></div>
+    <div><h1>{L.brand}<span class="edition-header__period">.</span></h1><p>{L.homepageLead}</p></div>
   </div>
-  <nav class="edition-nav" aria-label="Rubriques du média">
-    <a class="edition-nav__home" href="/fr/" aria-current="page">La une</a>
-    {categorySlugs.map(slug => <a href={categoryMap[slug].href}>{categoryMap[slug].label}</a>)}
-    <a href="/fr/series/">Dossiers & séries</a>
-    <a href="/fr/blog/" class="edition-nav__all">Tous les articles <span aria-hidden="true">↗</span></a>
+  <nav class="edition-nav" aria-label={L.sections}>
+    <a class="edition-nav__home" href={path("")} aria-current="page">{L.home}</a>
+    {categorySlugs.filter(slug=>lang==="fr"||slug!=="grand-oral").map(slug => <a href={path(`${slug}/`)}>{t(lang,`categories.${slug}.label`)}</a>)}
+    {lang!=="nl"&&<a href={path("series/")}>{L.dossierSeries}</a>}
+    <a href={path("blog/")} class="edition-nav__all">{L.all} <span aria-hidden="true">↗</span></a>
   </nav>
 </header>
 
 {lead && <section class="front-page" aria-labelledby="front-page-heading">
-  <div class="edition-heading"><h2 id="front-page-heading">À la une</h2><span>Comprendre au-delà de l’échiquier</span></div>
+  <div class="edition-heading"><h2 id="front-page-heading">{L.front}</h2><span>{L.beyond}</span></div>
   <div class="front-page__grid">
-    <EditorialArticle post={lead} variant="lead" title={curatedLead ? homeEditorial.leadTitle : undefined} summary={curatedLead ? homeEditorial.leadSummary : undefined} kicker={curatedLead ? homeEditorial.leadKicker : undefined} />
-    <div class="front-page__secondary" aria-label="À lire aussi">
-      {secondary.map(post => <EditorialArticle post={post} variant="secondary" />)}
+    <EditorialArticle lang={lang} post={lead} variant="lead" title={curatedLead ? homeEditorial.leadTitle : undefined} summary={curatedLead ? homeEditorial.leadSummary : undefined} kicker={curatedLead ? homeEditorial.leadKicker : undefined} />
+    <div class="front-page__secondary" aria-label={L.also}>
+      {secondary.map(post => <EditorialArticle lang={lang} post={post} variant="secondary" />)}
     </div>
   </div>
 </section>}
 
 {latest.length > 0 && <section class="latest-edition" aria-labelledby="derniers-articles">
-  <div class="edition-heading"><h2 id="derniers-articles">Dernières publications</h2><a href="/fr/blog/">Tous les articles <span aria-hidden="true">→</span></a></div>
-  <div class="latest-edition__grid">{latest.map(post => <EditorialArticle post={post} variant="compact" />)}</div>
+  <div class="edition-heading"><h2 id="derniers-articles">{L.latest}</h2><a href={path("blog/")}>{L.all} <span aria-hidden="true">→</span></a></div>
+  <div class="latest-edition__grid">{latest.map(post => <EditorialArticle lang={lang} post={post} variant="compact" />)}</div>
 </section>}
 
 <style>

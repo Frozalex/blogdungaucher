@@ -1,13 +1,18 @@
 ---
 import EditorialArticle from "./EditorialArticle.astro";
+import { editorialUi } from "../data/editorial-ui";
+import { t } from "../i18n/translations";
+import type { SiteLang } from "../utils/lang-paths";
 import { categoryMap } from "../data/site";
 import { currentDossier } from "../data/dossier";
 import { getHomeEditorialPosts } from "../data/home-editorial";
 import { mostReadSlugs } from "../data/most-read";
-import { getPostHeroSrc, getPostSlug, type BlogEntry } from "../utils/blog";
+import { getPostHeroSrc, getPostSlug, getPostUrlLang, getLocalizedPostText, type BlogEntry } from "../utils/blog";
 
-interface Props { posts: BlogEntry[]; }
-const { posts } = Astro.props;
+interface Props { posts: BlogEntry[]; lang?: SiteLang; }
+const { posts,lang="fr" } = Astro.props;
+const L=editorialUi(lang);
+const localized=new Map(await Promise.all(posts.map(async post=>[post.id,{...(await getLocalizedPostText(post,lang)),href:await getPostUrlLang(post,lang)}] as const)));
 const eligible = posts.filter(post => !post.data.noindex);
 const bySlug = new Map(eligible.map(post => [getPostSlug(post), post]));
 const { lead, secondary, latest } = getHomeEditorialPosts(eligible);
@@ -22,31 +27,31 @@ const rubrics = (["science", "esprit", "societe"] as const).map(slug => {
   const feature = candidates.find(post => getPostHeroSrc(post)) ?? candidates[0];
   const articles = feature ? [feature, ...candidates.filter(post => post.id !== feature.id).slice(0, 2)] : [];
   articles.forEach(post => used.add(post.id));
-  return { slug, ...categoryMap[slug], articles };
+  return { slug, ...categoryMap[slug], href:`/${lang}/${slug}/`,shortLabel:t(lang,`categories.${slug}.shortLabel`),tagline:t(lang,`categories.${slug}.tagline`),articles };
 });
 // Seuls les articles réellement publiés alimentent le dossier de l’accueil.
-const dossier = currentDossier.entries.flatMap(entry => {
+const dossier = (lang==="fr"?currentDossier.entries:[]).flatMap(entry => {
   const post = bySlug.get(entry.slug);
   return post ? [{ ...entry, post, href: `/fr/blog/${getPostSlug(post)}/` }] : [];
 });
 ---
 
 {selection.length > 0 && <section class="editorial-section" aria-labelledby="selection-heading">
-  <div class="section-heading"><h2 id="selection-heading">Pour aller plus loin</h2><span>La sélection du Gaucher</span></div>
-  <div class="selection-grid">{selection.map(post => <div class="selection-item"><EditorialArticle post={post} variant="feature" /></div>)}</div>
+  <div class="section-heading"><h2 id="selection-heading">{L.further}</h2><span>{L.selection}</span></div>
+  <div class="selection-grid">{selection.map(post => <div class="selection-item"><EditorialArticle lang={lang} post={post} variant="feature" /></div>)}</div>
 </section>}
 
 <section class="editorial-section" aria-labelledby="rubriques">
-  <div class="section-heading"><h2 id="rubriques">Les rubriques</h2><span>Trois façons de regarder le jeu</span></div>
+  <div class="section-heading"><h2 id="rubriques">{L.sections}</h2><span>{L.lenses}</span></div>
   <div class="rubric-grid">
     {rubrics.map(rubric => <section class="rubric" aria-labelledby={`rubric-${rubric.slug}`}>
       <header class="rubric__header">
         <h3 id={`rubric-${rubric.slug}`}><a href={rubric.href}>{rubric.shortLabel} <span aria-hidden="true">↗</span></a></h3>
         <p>{rubric.tagline}</p>
       </header>
-      {rubric.articles[0] && <EditorialArticle post={rubric.articles[0]} variant="feature" titleTag="h4" showKicker={false} />}
-      {rubric.articles.length > 1 && <ul class="rubric__links">{rubric.articles.slice(1).map(post => <li><a href={`/fr/blog/${getPostSlug(post)}/`}>{post.data.title}<span aria-hidden="true">↗</span></a></li>)}</ul>}
-      <a class="text-link rubric__all" href={rubric.href}>Explorer la rubrique <span aria-hidden="true">→</span></a>
+      {rubric.articles[0] && <EditorialArticle lang={lang} post={rubric.articles[0]} variant="feature" titleTag="h4" showKicker={false} />}
+      {rubric.articles.length > 1 && <ul class="rubric__links">{rubric.articles.slice(1).map(post => <li><a href={localized.get(post.id)?.href}>{localized.get(post.id)?.title}<span aria-hidden="true">↗</span></a></li>)}</ul>}
+      <a class="text-link rubric__all" href={rubric.href}>{L.sectionExplore} <span aria-hidden="true">→</span></a>
     </section>)}
   </div>
 </section>
@@ -75,8 +80,8 @@ const dossier = currentDossier.entries.flatMap(entry => {
 </section>}
 
 <div class="edition-end">
-  <div><span class="rest-eyebrow">Le carnet continue</span><p>D’autres lectures, d’autres perspectives.</p></div>
-  <a class="text-link" href="/fr/blog/">Parcourir tous les articles <span aria-hidden="true">→</span></a>
+  <div><span class="rest-eyebrow">{L.media}</span><p>{L.note}</p></div>
+  <a class="text-link" href={`/${lang}/blog/`}>{L.all} <span aria-hidden="true">→</span></a>
 </div>
 
 <style>

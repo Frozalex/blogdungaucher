@@ -1,4 +1,7 @@
 ---
+import EditorialLocaleMasthead from "./EditorialLocaleMasthead.astro";
+import "../styles/editorial-resources.css";
+import "../styles/editorial-translations.css";
 type Lang = "fr" | "en";
 const { lang = "fr" } = Astro.props as { lang?: Lang };
 
@@ -27,6 +30,7 @@ const copy : Record<
 const t = copy[lang];
 ---
 
+<div class="translated-media"><div class="resource-page"><div class="container"><EditorialLocaleMasthead lang={lang} /></div></div>
 <section class="page-hero essais-hero">
   <div class="container">
     <span class="eyebrow reveal">{t.eyebrow}</span>
@@ -47,6 +51,7 @@ const t = copy[lang];
   </div>
 </div>
 
+</div>
 <style>
   .essais-hero.page-hero {
     padding: 4.5rem 0 2rem;

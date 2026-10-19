@@ -199,6 +199,8 @@ const searchPageHref = `/${lang}/recherche/`;
 </style>
 
 <script>
+  import { loadPagefind } from "../utils/pagefind-client";
+  import type { SiteLang } from "../utils/lang-paths";
   // Messages dynamiques par langue (le placeholder + le message initial sont rendus côté serveur).
   const MESSAGES: Record<string, { searching: string; empty: string; min: string; start: string; unavailable: string; count: (n: number) => string }> = {
     fr:      { searching: "Recherche…",  empty: "Aucun résultat pour",  min: "Continuez à taper…", start: "Ex. Alzheimer, TDAH, Elo, minimax, dopamine…",   unavailable: "Recherche indisponible (build requis).", count: (n) => `${n} résultat${n > 1 ? "s" : ""}` },
@@ -209,7 +211,6 @@ const searchPageHref = `/${lang}/recherche/`;
 
   type PfResult = { url: string; excerpt: string; meta: Record<string, string> };
 
-  let pfPromise: Promise<any> | null = null;
   let overlayCtrl: AbortController | null = null;
 
   function initSearchOverlay() {
@@ -221,7 +222,7 @@ const searchPageHref = `/${lang}/recherche/`;
     const allLink = overlay.querySelector<HTMLElement>("[data-search-all]");
     if (!input || !stateEl || !listEl) return;
 
-    const lang = overlay.dataset.lang || "fr";
+    const lang = (overlay.dataset.lang || "fr") as SiteLang;
     const M = MESSAGES[lang] || MESSAGES.fr;
 
     if (overlayCtrl) overlayCtrl.abort();
@@ -232,21 +233,7 @@ const searchPageHref = `/${lang}/recherche/`;
 
     async function getPagefind() {
       try {
-        if (!pfPromise) {
-          pfPromise = (async () => {
-            const url = window.location.origin + "/pagefind/pagefind.js";
-            const mod = await import(/* @vite-ignore */ url);
-            await mod.init();
-            return mod;
-          })();
-        }
-        const mod = await pfPromise;
-        // Scoping par langue ré-appliqué à chaque appel : la nav SPA peut avoir
-        // changé la langue depuis l'init (module mis en cache globalement).
-        if (mod && typeof mod.options === "function") {
-          await mod.options({ language: lang });
-        }
-        return mod;
+        return await loadPagefind(lang);
       } catch {
         return null;
       }

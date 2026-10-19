@@ -1,0 +1,10 @@
+---
+import { editorialUi } from "../data/editorial-ui";
+import type { SiteLang } from "../utils/lang-paths";
+interface Props { lang: SiteLang; active?: string; }
+const { lang, active = "" } = Astro.props;
+const L = editorialUi(lang);
+const links = [{key:"home",label:L.home,path:""},{key:"all",label:L.all,path:"blog/"},...(lang!=="nl"?[{key:"series",label:L.series,path:"series/"}]:[]),{key:"search",label:L.search,path:"recherche/"},{key:"about",label:L.about,path:"about/"}];
+---
+<div class="resource-masthead"><a href={`/${lang}/`}><img src="/images/logo.svg" alt="" width="22" height="31" />{L.brand}<span>.</span></a><span>{L.strap}</span></div>
+<nav class="resource-nav" aria-label={L.media}>{links.map(link=><a href={`/${lang}/${link.path}`} aria-current={active===link.key?"page":undefined}>{link.label}</a>)}</nav>
