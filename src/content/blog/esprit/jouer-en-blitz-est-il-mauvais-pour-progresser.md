@@ -9,8 +9,8 @@ featuredRank: 99
 readingTime: "6 min"
 pillar: "Apprentissage"
 tags: ["blitz", "bullet", "progression", "Elo", "coaching", "Chess.com"]
-seoTitle: "Le blitz est-il mauvais pour progresser aux échecs ? La vérité"
-seoDescription: "Tous les coachs disent que le blitz nuit à la progression. Mais Carlsen et Nakamura font des milliers de blitz. Que dit vraiment la recherche ?"
+seoTitle: "Le blitz freine-t-il ta progression aux échecs ?"
+seoDescription: "Blitz et progression aux échecs : ce que les études sur la pratique permettent de dire, leurs limites et des pistes pour organiser tes séances."
 keyTakeaways:
   - "Aucune dose universelle 30/70 n’est établie par la source citée."
   - "Les associations entre pratique et niveau ne prouvent pas une causalité."
