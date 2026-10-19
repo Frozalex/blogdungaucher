@@ -19,10 +19,8 @@ tags:
   - apprentissage par renforcement
   - réseaux de neurones
   - MCTS
-seoTitle: "Sujet Grand Oral NSI AlphaZero échecs : texte complet à réciter"
-seoDescription: >-
-  Sujet Grand Oral NSI sur AlphaZero et l'apprentissage par renforcement, entièrement rédigé pour 10 minutes d'exposé.
-  Réseaux de neurones, MCTS, rupture épistémologique : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral NSI : comprendre AlphaZero et ses limites"
+seoDescription: "Réseau de neurones, recherche MCTS et auto-jeu : comprends AlphaZero, son protocole de 2017 et ses différences avec MuZero et AlphaFold pour ton Grand Oral NSI."
 ogImage: /images/og/sujet-grand-oral-nsi-alphazero-og.webp
 heroImage:
   src: /images/blog/sujet-grand-oral-nsi-alphazero-hero.webp
