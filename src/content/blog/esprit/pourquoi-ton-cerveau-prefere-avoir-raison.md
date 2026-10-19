@@ -16,10 +16,8 @@ tags:
   - psychologie
   - progression
   - échecs
-seoTitle: "Pourquoi ton cerveau préfère avoir raison au lieu d'apprendre"
-seoDescription: >-
-  La synthèse d'une série de 41 articles sur la psychologie aux échecs : la chaîne des six mécanismes
-  qui protègent ton image de toi, et la seule parade qui fonctionne.
+seoTitle: "Psychologie aux échecs : remettre ton jugement en question"
+seoDescription: "Quand l’analyse contredit ton jugement : examine la position, confronte tes souvenirs aux variantes et choisis une difficulté précise à travailler."
 faq:
   - question: "Six mécanismes s’enchaînent-ils après chaque défaite ?"
     answer: "Cette chaîne universelle n’est pas établie par les études citées. Les cadres de la série posent des questions distinctes."
