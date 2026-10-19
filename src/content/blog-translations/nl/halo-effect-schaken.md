@@ -41,6 +41,7 @@ faq:
       De bruikbare regel is nauwer: de rating van de tegenstander mag geen rol spelen in de evaluatie van een
       stelling. Je voorbereiden tegen een speler is legitiem, een zet beter achten omdat hij beter geklasseerd
       is, is dat niet.
+heroImageAlt: Twee identieke voorwerpen, één omgeven door een amberkleurige halo.
 ---
 
 Ingewikkelde stelling, middenspel. Je tegenstander speelt een zet die je niet verwachtte. Een vreemde zet: hij zet zijn toren op een veld dat ogenschijnlijk geen toekomst heeft.

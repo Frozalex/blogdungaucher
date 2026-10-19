@@ -29,12 +29,12 @@ keyTakeaways:
   - "Erreurs à éviter au Grand Oral avec les échecs : les pièges classiques que le jury repère."
 seoTitle: "Guide Grand Oral Échecs toutes spécialités 2026 : kit universel + script 10 min"
 seoDescription: "Préparer un Grand Oral sur les échecs : pistes par spécialité, plans et scripts, exemples de questions de jury et repères pour construire ton propre exposé."
-ogImage: /images/og/guide-grand-oral-echecs-toutes-specialites-og.webp
+ogImage: /images/og/guide-grand-oral-echecs-toutes-specialites-watermarked-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-toutes-specialites-hero.webp
-  alt: >-
-    Le plafond décoré et le lustre d'une salle solennelle d'établissement scolaire.
-  credit: "Filip Popovic, CC BY-SA 4.0, via Wikimedia Commons"
+  src: /images/blog/guide-grand-oral-echecs-toutes-specialites-watermarked-hero.webp
+  alt: Le plafond décoré et le lustre d'une salle solennelle d'établissement
+    scolaire.
+  credit: Filip Popovic, CC BY-SA 4.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Congress_hall_of_the_Grammar_school_in_Sremski_Karlovci_08.jpg
   license: CC BY-SA 4.0
 faq:

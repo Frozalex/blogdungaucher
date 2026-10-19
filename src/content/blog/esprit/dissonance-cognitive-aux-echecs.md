@@ -27,6 +27,10 @@ faq:
     answer: "Non. Elle ne retrouve pas la différence centrale attendue entre deux conditions d’un paradigme particulier. Elle questionne la robustesse de cette preuve expérimentale."
   - question: "Faut-il attendre vingt-quatre heures pour analyser ?"
     answer: "Tu peux attendre de retrouver le calme, mais aucun délai universel de vingt-quatre heures n’est établi ici."
+heroImage:
+  src: /images/blog/dissonance-cognitive-aux-echecs-hero.webp
+  alt: Deux cadres montrent un roi debout et un roi couché sur fond ambre.
+ogImage: /images/og/dissonance-cognitive-aux-echecs-og.webp
 ---
 
 « J’étais gagnant. » La phrase peut être exacte et utile. Elle peut aussi arrêter la discussion juste avant la question intéressante : qu’est-il arrivé à cet avantage ?

@@ -45,6 +45,7 @@ faq:
       Mantendo um espaço de jogo em que nenhum rating esteja em jogo, e prestando atenção ao que te
       agradava antes. O ponto crítico não é o número em si, mas a onipresença dele: uma recompensa vira
       nociva quando se torna a única razão visível para praticar.
+heroImageAlt: Uma lanterna com uma pequena chama ao lado de um grande troféu escuro.
 ---
 
 Lembre das suas primeiras partidas. Antes dos aplicativos, antes do rating, antes das estatísticas.

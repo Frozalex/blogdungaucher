@@ -1,5 +1,6 @@
 ---
-heroImageAlt: "An unfinished chalk footbridge connecting two platforms, with a checkerboard square."
+heroImageAlt: An unfinished chalk footbridge connecting two platforms, with a
+  checkerboard square.
 title: "Chess in Schools: What Research Really Says About Learning"
 excerpt: "Armenia made chess compulsory in primary schools. Venezuela launched the largest national program in history. But what does scientific research actually say about the effects of chess on academic results? The answer is more nuanced than the slogans."
 seoTitle: "Chess in Schools: Real Benefits for Learning According to Science"

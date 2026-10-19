@@ -49,6 +49,7 @@ faq:
       In de studie van 2025 zijn de best geklasseerde spelers gekalibreerd, dat wil zeggen juist, eerder
       dan onderschatters. Onderschatting bij sterke spelers valt onder een ander fenomeen, het
       bedriegerssyndroom, dat het gevoel van legitimiteit betreft en niet de niveaubeoordeling.
+heroImageAlt: Een lage zuil werpt een veel hogere schaduw.
 ---
 
 Hij staat op 1150. Hij heeft net verloren, en hij legt je uit waarom deze rating niets betekent. Hij speelde blitz terwijl hij "een speler van lange partijen" is. Hij heeft zijn openingen zes maanden niet bijgewerkt. Zijn tegenstander won "op tijd, niet op spel". En eerlijk gezegd wint hij tegen de man van 1600 in de club "toch één op twee".

@@ -47,6 +47,7 @@ faq:
       em termos verificáveis antes de decidir: qual casa foi obtida, qual coluna foi aberta, quanto
       tempo foi ganho, qual peça adversária ficou imobilizada. Uma compensação nomeada resiste muito
       melhor que uma compensação sentida.
+heroImageAlt: Uma mão perde uma pedra na sombra enquanto outra recebe uma na luz.
 ---
 
 Posição equilibrada, meio-jogo. Você enxerga uma ideia: abrir mão de um peão para abrir a coluna b e imobilizar o bispo de casas brancas dele. A avaliação diz que é bom. Sua intuição diz que é bom.

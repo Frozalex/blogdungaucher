@@ -49,6 +49,7 @@ faq:
       wel werkt, is indirect: de verdediging achteraf opsporen door een dagboek bij te houden, de analyse
       vierentwintig uur uitstellen om de urgentie te laten zakken, en jezelf na-partij-rituelen geven die
       de ruimte innemen. Vaillant heeft waargenomen dat de defensieve stijl evolueert met de leeftijd.
+heroImageAlt: Een zittende figuur beschut door gebogen schermen.
 ---
 
 Einde van de ronde. Vijf spelers verlaten de zaal, allen verslagen in het afgelopen uur.

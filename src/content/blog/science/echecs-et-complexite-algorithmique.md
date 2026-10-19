@@ -45,8 +45,7 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-complexite-algorithmique-og.webp
 heroImage:
   src: /images/blog/echecs-et-complexite-algorithmique-hero.webp
-  alt: >-
-    Une main minuscule tenant un dé à coudre au pied d'une immense dune de sable.
+  alt: Une main minuscule tenant un dé à coudre au pied d'une immense dune de sable.
 faq:
   - question: Qu'est-ce que le 'nombre de Shannon' ?
     answer: >-

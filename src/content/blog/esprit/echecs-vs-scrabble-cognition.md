@@ -20,9 +20,10 @@ faq:
   - question: "Quel jeu rend le plus intelligent ?"
     answer: "Les différences de règles ne permettent pas de conclure à un gain général d'intelligence ni à un transfert automatique hors du jeu."
 heroImage:
-  src: "/images/og-default.png"
-  alt: "Échiquier et plateau de Scrabble : deux jeux de stratégie différents"
-ogImage: "/images/og-default.png"
+  src: /images/blog/echecs-vs-scrabble-cognition-hero.webp
+  alt: Des carreaux de bois sans lettres forment un chemin près d’un pion.
+ogImage: /images/og/echecs-vs-scrabble-cognition-og.webp
+
 ---
 
 Aux échecs, tu déplaces des pièces ; au Scrabble, tu formes des mots. La différence paraît simple, mais elle ne suffit pas à répartir les joueurs entre « cerveaux logiques » et « cerveaux verbaux ». Les deux jeux demandent des connaissances et des choix propres à leur domaine.

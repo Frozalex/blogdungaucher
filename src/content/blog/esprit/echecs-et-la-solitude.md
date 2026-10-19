@@ -25,8 +25,8 @@ seoDescription: "Décider sans aide pendant une partie ne signifie pas être iso
 ogImage: /images/og/echecs-et-la-solitude-og.webp
 heroImage:
   src: /images/blog/echecs-et-la-solitude-hero.webp
-  alt: >-
-    Deux sièges se faisant face autour d'une table, séparés par une cloison verticale nette.
+  alt: Deux sièges se faisant face autour d'une table, séparés par une cloison
+    verticale nette.
 faq:
   - question: "Le règlement interdit-il toute communication ?"
     answer: "Non. Il interdit notamment les conseils sur la partie et les distractions ; il prévoit les offres de nulle et les échanges avec l'arbitre."

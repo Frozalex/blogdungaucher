@@ -18,6 +18,11 @@ faq:
     answer: "Aucune proportion vérifiée n’est établie ici. Une erreur doit aussi être examinée sur le plan technique et dans son contexte."
   - question: "L’étude sur l’Einstellung utilise-t-elle une IRM ?"
     answer: "L’article de 2008 cité ici utilise les mouvements des yeux pour suivre l’attention dans les problèmes étudiés."
+heroImage:
+  src: /images/blog/5-biais-cognitifs-blunder-hero.webp
+  alt: Cinq rails parallèles s'infléchissant brusquement pour converger vers une
+    seule voie déviée.
+ogImage: /images/og/5-biais-cognitifs-blunder-og.webp
 ---
 
 « Comment ai-je pu rater ça ? » Une erreur peut venir d’un calcul incomplet, d’une position mal comprise, de la fatigue ou d’une idée qui a accaparé ton attention. Aucun chiffre vérifié ne permet ici d’attribuer la plupart des erreurs à cinq biais.

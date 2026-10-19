@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Ilustração em pixel art: um enxadrista em competição, relógio em primeiro plano, uma onda de estresse visível ao seu redor, « Estresse em torneio de xadrez »"
+heroImageAlt: Uma corda muito esticada presa a uma tarraxa.
 title: "Gerenciar o estresse no torneio de xadrez: o que dizem a psicologia e a fisiologia"
 excerpt: >-
   O relógio avança, sua posição está difícil, e você sente o coração acelerar. O estresse de torneio não é uma

@@ -45,6 +45,7 @@ faq:
       By making the question of source explicit. For every assumption about what your opponent sees or
       is preparing, ask where that information comes from: from something in the position, or from
       what's in your own head. Without evidence drawn from the position, it's a projection.
+heroImageAlt: Two seated figures facing each other across areas of shadow and light.
 ---
 
 You see an idea. An exchange sacrifice that opens the file. You calculate, you find it doesn't quite work, you drop the idea.

@@ -21,14 +21,15 @@ tags:
   - convergence
 seoTitle: "Grand Oral Maths : Elo, probabilités et limites du modèle"
 seoDescription: "Loi binomiale, score attendu Elo et suites récurrentes : refais les calculs, précise les hypothèses et explique les limites du modèle au Grand Oral Maths."
-ogImage: /images/og/sujet-grand-oral-maths-elo-probabilites-og.webp
+ogImage: /images/og/sujet-grand-oral-maths-elo-probabilites-watermarked-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-maths-elo-probabilites-hero.webp
-  alt: >-
-    Une salle de classe vide, tables et chaises groupées, murs couverts d'affiches.
-  credit: "Escuela16de17, CC BY-SA 4.0, via Wikimedia Commons"
+  src: /images/blog/sujet-grand-oral-maths-elo-probabilites-watermarked-hero.webp
+  alt: Une salle de classe vide, tables et chaises groupées, murs couverts
+    d'affiches.
+  credit: Escuela16de17, CC BY-SA 4.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:3A_665.jpg
   license: CC BY-SA 4.0
+
 ---
 
 Dans quelle mesure les probabilités permettent-elles de modéliser la performance aux échecs ? Tu peux partir d'un match fictif, puis montrer pourquoi le classement Elo demande un modèle différent. Cette distinction évite de confondre probabilité de victoire et score attendu.

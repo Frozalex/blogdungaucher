@@ -23,6 +23,11 @@ faq:
     answer: "Pour mieux séparer l'effet spécifique de l'activité des attentes, de l'encadrement ou de la nouveauté."
   - question: "Qu’apprend-on certainement en travaillant les échecs ?"
     answer: "On peut acquérir des connaissances et méthodes propres au jeu. Leur transfert vers d'autres domaines doit être évalué séparément."
+heroImage:
+  src: /images/blog/les-echecs-rendent-ils-plus-intelligent-hero.webp
+  alt: Une clé ouvragée engagée dans une serrure, sur un mur où toutes les autres
+    serrures diffèrent.
+ogImage: /images/og/les-echecs-rendent-ils-plus-intelligent-og.webp
 ---
 
 On lit partout que les échecs développent l'intelligence. Pour savoir ce que cette phrase vaut, il faut préciser ce qu'elle promet : mieux jouer, mieux réussir une tâche proche, ou améliorer des capacités générales en dehors du jeu ?

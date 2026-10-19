@@ -26,6 +26,10 @@ faq:
     answer: "Aucun protocole de ce type n’est établi par la revue citée. Le contexte de la position et ton état restent importants."
   - question: "L’article de 2016 décrit-il des joueurs d’échecs ?"
     answer: "Non. La revue porte notamment sur des modèles animaux de contrôle et de passivité. Sa transposition aux plateaux échiquéens est limitée."
+heroImage:
+  src: /images/blog/impuissance-apprise-aux-echecs-hero.webp
+  alt: Un oiseau reste dans une cage dont la porte est grande ouverte.
+ogImage: /images/og/impuissance-apprise-aux-echecs-og.webp
 ---
 
 Tu as l’impression que ton travail ne change plus rien. Le classement stagne et tu hésites à continuer. Ce découragement mérite d’être écouté, mais il ne suffit pas à établir une impuissance apprise ni un mécanisme cérébral particulier.

@@ -6,6 +6,7 @@ excerpt: >-
 seoTitle: "Neurônios-espelho no xadrez: antecipar o adversário"
 seoDescription: "Como os neurônios-espelho permitem antecipar as intenções do adversário no xadrez. Neurociência, simulação mental e leitura do jogo adversário."
 frSlug: neurones-miroirs-aux-echecs
+heroImageAlt: Uma mão se aproxima de uma peça de xadrez ao lado de seu reflexo.
 ---
 
 Você olha para uma posição complexa. De repente, "vê" o que o adversário quer fazer. Sem cálculo longo, sem raciocínio explícito : uma intuição direta da intenção dele. Você joga um lance preventivo. Ele fica surpreso. Como você sabia?

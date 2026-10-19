@@ -16,6 +16,10 @@ faq:
     answer: "Aucun délai universel n’est établi ici. Une pause peut aider sans garantir que l’émotion disparaîtra au bout d’un minuteur."
   - question: "Un abandon prouve-t-il un ragequit ?"
     answer: "Non. Il peut s’agir d’un choix technique ou d’un problème de connexion. Le résultat ne révèle pas à lui seul l’état émotionnel du joueur."
+heroImage:
+  src: /images/blog/echecs-et-colere-ragequit-hero.webp
+  alt: Un arc électrique jaillit entre deux conducteurs sombres sur fond ambre.
+ogImage: /images/og/echecs-et-colere-ragequit-og.webp
 ---
 
 Tu viens de laisser une pièce. La main part vers le bouton de revanche ou vers la messagerie. Ce qui compte maintenant est très concret : éviter qu’une déception devienne une insulte, un geste violent ou une nouvelle partie que tu ne souhaitais pas jouer.

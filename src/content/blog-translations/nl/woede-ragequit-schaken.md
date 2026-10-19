@@ -9,6 +9,7 @@ seoDescription: >-
   van de amygdala, en hoe je de controle terugkrijgt.
 frSlug: echecs-et-colere-ragequit
 draft: false
+heroImageAlt: Een elektrische vonk springt tussen twee donkere geleiders.
 ---
 
 Je hebt een stuk verloren door een domme blunder. Of de tegenstander weigerde remise. Of hij speelde een zet met hoog winstpercentage die "niemand in het echt zou spelen". En dan breekt er iets. De hand balt zich. De tanden klemmen samen. Je sluit het tabblad hardhandig, of erger, je blijft verbonden om iets te zeggen dat je zult betreuren. Dit is de ragequit, en het is geen karakterzwakte: het is biologie.

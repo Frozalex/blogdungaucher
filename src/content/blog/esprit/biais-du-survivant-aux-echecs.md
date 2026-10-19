@@ -25,6 +25,10 @@ faq:
     answer: "Regarde l’effectif, la période, la cadence, les classements et la sélection des parties. Le score pratique ne démontre pas une valeur théorique."
   - question: "Les succès des sœurs Polgár prouvent-ils que l’entraînement suffit ?"
     answer: "Une trajectoire familiale ne permet pas, à elle seule, de séparer toutes les influences sur le niveau. Cela ne diminue pas leurs réussites."
+heroImage:
+  src: /images/blog/biais-du-survivant-aux-echecs-hero.webp
+  alt: Un bateau en papier flotte au-dessus de nombreux bateaux coulés.
+ogImage: /images/og/biais-du-survivant-aux-echecs-og.webp
 ---
 
 Un joueur du club défend son gambit avec trois parties magnifiques. Elles sont réelles. Mais pour savoir ce qu’elles montrent, il manque une question : combien de parties moins réussies n’a-t-il pas sorties de son classeur ?

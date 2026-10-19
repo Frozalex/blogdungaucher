@@ -33,8 +33,8 @@ seoDescription: "Dopamine, récompense et envie de rejouer aux échecs : disting
 ogImage: /images/og/echecs-et-dopamine-og.webp
 heroImage:
   src: /images/blog/echecs-et-dopamine-hero.webp
-  alt: >-
-    Une main en suspension au-dessus d'une pièce d'échecs, d'où partent de larges ondes concentriques.
+  alt: Une main en suspension au-dessus d'une pièce d'échecs, d'où partent de
+    larges ondes concentriques.
 faq:
   - question: Peut-on mesurer la dopamine à partir de mon plaisir de jouer ?
     answer: >-

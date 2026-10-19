@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Vinheta em pixel art: um padrão neural luminoso sobre fundo roxo, título sobre xadrez e matemática"
+heroImageAlt: Um cavalo de xadrez encara formas geométricas do outro lado de uma
+  ponte inacabada.
 title: "O xadrez deixa você melhor em matemática? A verdade científica"
 excerpt: >-
   Jogar xadrez deixa você bom em matemática? A resposta não é a que você espera, e ela muda radicalmente o que

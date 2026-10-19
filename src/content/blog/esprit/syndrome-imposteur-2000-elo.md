@@ -13,8 +13,8 @@ seoDescription: "Atteindre 2000 Elo et craindre de perdre sa place : observer se
 ogImage: /images/og/syndrome-imposteur-2000-elo-og.webp
 heroImage:
   src: /images/blog/syndrome-imposteur-2000-elo-hero.webp
-  alt: >-
-    Une pièce d'échecs posée dans l'empreinte d'un socle taillée pour une pièce plus grande.
+  alt: Une pièce d'échecs posée dans l'empreinte d'un socle taillée pour une pièce
+    plus grande.
 
 ---
 

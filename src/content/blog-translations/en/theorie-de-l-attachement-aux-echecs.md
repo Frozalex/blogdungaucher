@@ -51,6 +51,7 @@ faq:
       the child checks whether the bond depends on what just happened. A question about how it went,
       about a moment in the game, or simply about being hungry, separates performance from
       relationship. The result will come anyway, it doesn't need to be the first thing said.
+heroImageAlt: A small boat connected to a quay by a loose rope.
 ---
 
 Tournament hall, round 2, under-twelve section. The door is closed. In the corridor, twenty or so adults are waiting, some for two hours, holding cold coffees.

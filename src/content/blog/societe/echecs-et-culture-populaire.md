@@ -45,8 +45,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-culture-populaire-og.webp
 heroImage:
   src: /images/blog/echecs-et-culture-populaire-hero.webp
-  alt: >-
-    Un projecteur de cinéma transformant un objet détaillé en silhouette plate sur un écran.
+  alt: Un projecteur de cinéma transformant un objet détaillé en silhouette plate
+    sur un écran.
 faq:
   - question: Pourquoi The Queen's Gambit a-t-il eu un tel impact sur la pratique des échecs ?
     answer: >-

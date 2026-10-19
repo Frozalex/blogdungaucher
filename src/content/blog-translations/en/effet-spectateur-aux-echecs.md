@@ -49,6 +49,7 @@ faq:
       public accusation: it's passing information to a body that has the means to investigate. That
       distinction is decisive, legally and ethically, and it's exactly what those procedures exist to
       make possible.
+heroImageAlt: A dropped glove surrounded by a circle of motionless shoes.
 ---
 
 A player strings together fifteen games with engine-grade accuracy, in an open tournament, in front of two hundred spectators. The chat comments. Some laugh. A few write that it's obvious.

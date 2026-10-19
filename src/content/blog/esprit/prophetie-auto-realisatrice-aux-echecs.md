@@ -27,6 +27,10 @@ faq:
     answer: "Pas directement. La phase réelle, la position de départ et la force adverse doivent être examinées."
   - question: "Une attente cesse-t-elle nécessairement d’agir après deux semaines ?"
     answer: "Cette règle universelle ne découle pas de la méta-analyse. Le degré de connaissance des élèves est un modérateur dans les études retenues."
+heroImage:
+  src: /images/blog/prophetie-auto-realisatrice-aux-echecs-hero.webp
+  alt: Une silhouette trace elle-même une barrière devant ses pieds.
+ogImage: /images/og/prophetie-auto-realisatrice-aux-echecs-og.webp
 ---
 
 « Je suis nul en finales. » La phrase peut désigner une difficulté réelle. Elle peut aussi devenir une raison d’éviter le travail qui permettrait de la préciser. La boucle est possible ; elle ne se produit pas obligatoirement chez tout joueur qui doute.

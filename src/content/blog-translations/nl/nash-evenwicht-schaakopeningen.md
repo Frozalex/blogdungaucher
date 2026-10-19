@@ -47,6 +47,7 @@ faq:
       opleveren. Een boom veronderstelt een uniek pad naar elk blad; een gerichte acyclische graaf
       laat meerdere paden toe. Professionele openingsdatabases (ChessBase, Lichess Masters) zijn in
       werkelijkheid gecomprimeerde grafen met miljoenen voorberekende transpositie.
+heroImageAlt: Twee schaakstukken die tegen elkaar leunen en elkaar in evenwicht houden.
 ---
 
 Waarom wordt de Siciliaanse verdediging op elk niveau al honderd jaar gespeeld? Waarom is de Ruy Lopez ondanks eeuwen van analyse niet "weerlegd"? Waarom storten sommige theoretische varianten in enkele jaren in, terwijl andere onverwoestbaar lijken? Het antwoord ligt in een wiskundig begrip dat [John Nash](https://nl.wikipedia.org/wiki/John_Forbes_Nash) in 1950 ontwikkelde: het Nash-evenwicht.

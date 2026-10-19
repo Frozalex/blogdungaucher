@@ -19,8 +19,8 @@ keyTakeaways:
 ogImage: /images/og/faut-il-vraiment-etudier-les-ouvertures-og.webp
 heroImage:
   src: /images/blog/faut-il-vraiment-etudier-les-ouvertures-hero.webp
-  alt: >-
-    Un escalier dont les marches basses sont aplaties et les marches hautes bien formées.
+  alt: Un escalier dont les marches basses sont aplaties et les marches hautes
+    bien formées.
 faq:
   - question: "Faut-il attendre 1 800 Elo pour étudier les ouvertures ?"
     answer: "Non. Les principes et des réponses concrètes peuvent être utiles avant. L’étendue du travail dépend de tes besoins."

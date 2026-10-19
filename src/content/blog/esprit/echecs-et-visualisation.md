@@ -27,8 +27,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-visualisation-og.webp
 heroImage:
   src: /images/blog/echecs-et-visualisation-hero.webp
-  alt: >-
-    Une grille d'échiquier dont les cases fusionnent en cinq grands blocs cohérents.
+  alt: Une grille d'échiquier dont les cases fusionnent en cinq grands blocs
+    cohérents.
 faq:
   - question: "Faut-il voir une image photographique ?"
     answer: "Non. Les connaissances et les relations entre pièces peuvent soutenir la représentation, sans exclure une expérience d'imagerie mentale."

@@ -5,6 +5,7 @@ seoTitle: "Mirror Neurons in Chess: Anticipating the Opponent"
 seoDescription: "How mirror neurons allow anticipating opponent intentions in chess. Neuroscience, mental simulation, and reading opponent play."
 enSlug: "mirror-neurons-in-chess"
 draft: false
+heroImageAlt: A hand reaching toward a chess piece beside its reflection.
 ---
 
 You look at a complex position. Suddenly, you "see" what the opponent wants to do. No long calculation, no explicit reasoning: a direct intuition of their intention. You play a preventive move. They are surprised. How did you know?

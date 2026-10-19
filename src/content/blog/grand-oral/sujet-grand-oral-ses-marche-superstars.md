@@ -21,14 +21,14 @@ tags:
   - capital humain
 seoTitle: "Grand Oral SES : les échecs et l’économie des superstars"
 seoDescription: "Grand Oral SES sur les joueurs d'échecs et l'économie des superstars : modèles de Rosen, Ricardo et Becker, arguments rédigés et limites des comparaisons."
-ogImage: /images/og/sujet-grand-oral-ses-marche-superstars-og.webp
+ogImage: /images/og/sujet-grand-oral-ses-marche-superstars-watermarked-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-ses-marche-superstars-hero.webp
-  alt: >-
-    Une cage d'escalier ornée vue en plongée depuis le dernier étage.
-  credit: "Globetrotter19, CC BY-SA 3.0, via Wikimedia Commons"
+  src: /images/blog/sujet-grand-oral-ses-marche-superstars-watermarked-hero.webp
+  alt: Une cage d'escalier ornée vue en plongée depuis le dernier étage.
+  credit: Globetrotter19, CC BY-SA 3.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Jelky_School._Staircase_from_top._-_Budapest.JPG
   license: CC BY-SA 3.0
+
 ---
 
 > **Télécharger ce sujet en PDF** pour le réviser hors-ligne. Texte rédigé pour **dix minutes** d'exposé continu, prêt à utiliser tel quel.

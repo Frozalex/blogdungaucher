@@ -50,6 +50,7 @@ faq:
       brein associeert de reeks met de modus 'gekalibreerd voor competitie'. Geïsoleerde bijgelovigheden
       daarentegen (altijd dezelfde trui dragen, enz.) zonder bredere routine hebben weinig meetbaar
       effect op de werkelijke prestatie.
+heroImageAlt: Een strak gespannen snaar aan een stemknop.
 ---
 
 Je hartslag is versneld. Je handen zijn licht vochtig. De klok telt de seconden af en de stelling op het bord is moeilijk: niet verloren, maar moeilijk. Je moet berekenen, en je brein lijkt precies nu besloten te hebben te vertragen.

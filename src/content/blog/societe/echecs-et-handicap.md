@@ -46,8 +46,7 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-handicap-og.webp
 heroImage:
   src: /images/blog/echecs-et-handicap-hero.webp
-  alt: >-
-    Une marche de pierre se fondant en une rampe continue qui aplanit le sol.
+  alt: Une marche de pierre se fondant en une rampe continue qui aplanit le sol.
 faq:
   - question: Comment jouent les personnes aveugles aux échecs ?
     answer: >-

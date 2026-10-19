@@ -30,8 +30,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-gestion-du-temps-og.webp
 heroImage:
   src: /images/blog/echecs-gestion-du-temps-hero.webp
-  alt: >-
-    Une rangée de récipients de verre de largeurs très inégales où un liquide s'écoule.
+  alt: Une rangée de récipients de verre de largeurs très inégales où un liquide
+    s'écoule.
 faq:
   - question: "Faut-il réfléchir trois ou quinze fois plus sur un coup critique ?"
     answer: "Aucun multiplicateur universel n’est établi ici. Consacre du temps à une question précise tout en gardant une réserve pour la suite."

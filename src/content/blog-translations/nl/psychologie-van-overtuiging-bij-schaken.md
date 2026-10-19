@@ -43,6 +43,7 @@ faq:
       dingen, en het autoriteitsprincipe zorgt ervoor dat men spontaan de geloofwaardigheid van de eerste
       overdraagt naar de tweede. De goede vraag is niet wat zijn rating is, maar welke vooruitgang zijn
       leerlingen hebben geboekt die vanaf jouw niveau begonnen.
+heroImageAlt: Een grote versierde doos naast een klein eenvoudig werktuig.
 ---
 
 "Van 1.200 naar 2.000 in zes maanden."

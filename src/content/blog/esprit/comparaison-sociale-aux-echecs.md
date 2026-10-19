@@ -25,6 +25,10 @@ faq:
     answer: "Non. Ils rendent un classement particulièrement visible, mais cette propriété n’est pas exclusive."
   - question: "À quelle fréquence consulter ton classement ?"
     answer: "Choisis un rythme utile et supportable. Aucun seuil mensuel universel n’est établi par la théorie de Festinger."
+heroImage:
+  src: /images/blog/comparaison-sociale-aux-echecs-hero.webp
+  alt: Deux échelles identiques posées sur des sols de hauteurs différentes.
+ogImage: /images/og/comparaison-sociale-aux-echecs-og.webp
 ---
 
 Tu ouvres ton profil, puis celui d’un joueur qui a commencé en même temps que toi. Son classement monte plus vite. La comparaison peut te donner une question à travailler ou simplement gâcher le plaisir de la soirée.

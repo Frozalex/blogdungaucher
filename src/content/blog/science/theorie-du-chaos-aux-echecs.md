@@ -14,8 +14,8 @@ seoDescription: "Positions tendues et coups qui changent tout : distinguer l'ana
 ogImage: /images/og/theorie-du-chaos-aux-echecs-og.webp
 heroImage:
   src: /images/blog/theorie-du-chaos-aux-echecs-hero.webp
-  alt: >-
-    Deux billes lâchées presque au même point sur un plan incliné, arrivant à des coins opposés.
+  alt: Deux billes lâchées presque au même point sur un plan incliné, arrivant à
+    des coins opposés.
 faq:
   - question: "Les échecs sont-ils chaotiques au sens mathématique ?"
     answer: "Une position tactique instable ne suffit pas à le démontrer. Ici, le chaos est une analogie : aucun exposant de Lyapunov des échecs n'est établi."

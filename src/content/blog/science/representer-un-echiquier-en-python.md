@@ -63,6 +63,10 @@ faq:
       passant est <strong>réellement jouable</strong> par le camp au trait. Les deux positions sont
       identiques sur l'échiquier, mais les chaînes diffèrent. Adopter la seconde convention suppose de
       savoir générer les coups, ce qui vient à l'article suivant.
+heroImage:
+  src: /images/blog/representer-un-echiquier-en-python-hero.webp
+  alt: Une feuille pliée relie un quadrillage à des compartiments ordonnés.
+ogImage: /images/og/representer-un-echiquier-en-python-og.webp
 ---
 
 Un échiquier a soixante-quatre cases. Python a des listes. La conclusion semble s'imposer toute seule, et c'est exactement pour cela qu'elle est piégeuse.

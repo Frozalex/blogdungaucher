@@ -38,6 +38,11 @@ faq:
       ne pourra résoudre le jeu. L’algorithme de Grover concerne la recherche non structurée : on ne peut
       pas simplement diviser par deux l’exposant de l’arbre minimax des échecs.
 
+heroImage:
+  src: /images/blog/paradoxe-de-zermelo-hero.webp
+  alt: Un labyrinthe circulaire sombre traversé par un chemin bleu vers son centre
+    vide.
+ogImage: /images/og/paradoxe-de-zermelo-og.webp
 ---
 
 En 1912, lors du cinquième Congrès International des Mathématiciens à Cambridge, le mathématicien allemand [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) a présenté un résultat qui allait changer la façon dont les mathématiciens, et plus tard les informaticiens, pensent aux jeux de stratégie. Son théorème est court. Sa démonstration est élégante. Et ses implications aux échecs sont à la fois rassurantes et vertigineuses.

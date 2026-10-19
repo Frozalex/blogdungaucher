@@ -22,12 +22,11 @@ tags:
   - Python
 seoTitle: "Grand Oral NSI : fiche sur l'élagage alpha-bêta"
 seoDescription: "Fiche de révision alpha-bêta : expliquer une coupure, comprendre la conservation du score minimax et nuancer le gain de calcul, avec renvoi au guide NSI."
-ogImage: /images/og/sujet-grand-oral-nsi-alpha-beta-og.webp
+ogImage: /images/og/sujet-grand-oral-nsi-alpha-beta-watermarked-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-nsi-alpha-beta-hero.webp
-  alt: >-
-    Les rayonnages ordonnés d'une bibliothèque universitaire moderne.
-  credit: "Szalax, CC0, via Wikimedia Commons"
+  src: /images/blog/sujet-grand-oral-nsi-alpha-beta-watermarked-hero.webp
+  alt: Les rayonnages ordonnés d'une bibliothèque universitaire moderne.
+  credit: Szalax, CC0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:University_of_Miskolc_Library_Reading_Room_2025_03.jpg
   license: CC0
 noindex: true

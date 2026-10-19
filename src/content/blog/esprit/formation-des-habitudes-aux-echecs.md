@@ -28,6 +28,10 @@ faq:
     answer: "Non. Le suivi dure douze semaines ; les durées allant jusqu’à 254 jours sont estimées par le modèle."
   - question: "Une routine garantit-elle de progresser ?"
     answer: "Non. La régularité et la qualité du travail sont deux questions distinctes à examiner."
+heroImage:
+  src: /images/blog/formation-des-habitudes-aux-echecs-hero.webp
+  alt: Une piste circulaire creusée dans le papier possède une nouvelle sortie.
+ogImage: /images/og/formation-des-habitudes-aux-echecs-og.webp
 ---
 
 Tu avais prévu une séance de finales, puis tu as lancé plusieurs blitz. Ce contraste ne démontre pas un manque de volonté. Il peut simplement inviter à regarder ce qui rend chaque activité facile à commencer.

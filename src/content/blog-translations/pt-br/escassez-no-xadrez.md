@@ -46,6 +46,7 @@ faq:
       Pelo prazo, no caso das compras, já que a escassez fabricada não resiste à espera. E, no caso do
       relógio, por uma regra de distribuição decidida antes da partida, que substitui uma avaliação feita
       no momento em que ela está mais distorcida.
+heroImageAlt: Um carretel quase vazio retém um pequeno pedaço de fita.
 ---
 
 Restam oito minutos para você. Para o seu adversário, vinte e cinco.

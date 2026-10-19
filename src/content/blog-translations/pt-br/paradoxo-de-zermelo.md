@@ -38,6 +38,7 @@ faq:
       invariante, por estratégia espelho parcial), mas não existe nenhuma pista séria. A computação quântica
       muda o limite (Grover divide o expoente por dois), mas $10^{60}$ continua astronômico. A resolução
       do xadrez em sentido estrito é mais provavelmente um horizonte que nunca será alcançado.
+heroImageAlt: Um labirinto circular escuro com um caminho azul até o centro vazio.
 ---
 
 Em 1913, durante o quinto Congresso Internacional de Matemáticos em Cambridge, o matemático alemão [Ernst Zermelo](https://pt.wikipedia.org/wiki/Ernst_Zermelo) apresentou um resultado que mudaria a forma como os matemáticos, e mais tarde os cientistas da computação, pensam os jogos de estratégia. Seu teorema é curto. Sua demonstração é elegante. E suas implicações no xadrez são ao mesmo tempo tranquilizadoras e vertiginosas.

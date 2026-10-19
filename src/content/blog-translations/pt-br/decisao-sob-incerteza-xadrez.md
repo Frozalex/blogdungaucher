@@ -7,6 +7,7 @@ excerpt: >-
 seoTitle: "Decisão sob incerteza no xadrez: utilidade esperada, Bayes e racionalidade limitada"
 seoDescription: "Utilidade esperada, critério bayesiano, aversão à perda, racionalidade limitada: as ferramentas da teoria da decisão aplicadas ao momento em que você escolhe um lance sem saber tudo."
 frSlug: decision-sous-incertitude-aux-echecs
+heroImageAlt: Caminhos partem de uma soleira de pedra e desaparecem na névoa.
 ---
 
 Você tem quatro lances candidatos. Não tem tempo para calcular cada um até o fim. Sabe que sua avaliação é aproximada. Sabe que o adversário não vai necessariamente jogar a melhor resposta teórica. Precisa escolher mesmo assim.

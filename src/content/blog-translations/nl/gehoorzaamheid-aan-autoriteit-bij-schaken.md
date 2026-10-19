@@ -41,6 +41,7 @@ faq:
       je de engine aanzet. De nuttige informatie is niet haar evaluatie, het is het verschil tussen de
       hare en de jouwe. Zonder voorafgaand geschreven oordeel bestaat dat verschil niet en leer je niets
       over jezelf.
+heroImageAlt: Kleine lampen wijzen naar één grote hanglamp.
 ---
 
 Je trainer zegt je h3 te spelen in deze structuur. Je begrijpt niet waarom. Je speelt het.

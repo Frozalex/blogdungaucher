@@ -47,6 +47,7 @@ faq:
       By producing the independent information that's missing. A belief like "I'm hopeless in endgames"
       is a testable hypothesis: your actual percentage in games that reach an endgame is sitting in your
       statistics. Measuring gives you the counter-signal the belief had eliminated.
+heroImageAlt: A figure drawing a barrier directly in front of its own feet.
 ---
 
 You don't work on endgames.

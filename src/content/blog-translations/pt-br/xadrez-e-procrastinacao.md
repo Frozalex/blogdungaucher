@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Uma ampulheta quase esgotada, pousada perto de uma peça de xadrez que permaneceu imóvel."
+heroImageAlt: Uma ampulheta quase esgotada, pousada perto de uma peça de xadrez
+  que permaneceu imóvel.
 title: "Procrastinação e xadrez: o que o tabuleiro ensina sobre a fuga"
 excerpt: >-
   A procrastinação não é um problema de gestão do tempo. É um problema de regulação emocional. E o tabuleiro : com

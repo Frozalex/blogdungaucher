@@ -46,6 +46,7 @@ faq:
       To yourself, over a long stretch, and secondarily to slightly stronger players whose method you
       can observe rather than just their results. A comparison is only useful if it delivers information
       about what to do; otherwise all it produces is a feeling.
+heroImageAlt: Two identical ladders placed on ground at different heights.
 ---
 
 You open the app. Before you've played a single move, you've received four pieces of information: your rating, how it's changed since yesterday, where you sit among your friends, and the rating of the opponent you've been offered.

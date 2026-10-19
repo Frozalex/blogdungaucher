@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Pixel art illustration: a silhouette at the edge of a path, sky with pastel clouds and a colorful sphere; title \"Chess and autism: why the board becomes a refuge\" overlaid."
+heroImageAlt: A pale stone path leads from a sheltered alcove into a garden.
 title: "Chess and Autism: Why the Chessboard Becomes a Refuge"
 excerpt: >-
   For a brain that struggles with social ambiguity, the chessboard is one of the few spaces where rules truly hold. What

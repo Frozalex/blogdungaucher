@@ -13,8 +13,7 @@ seoDescription: "DMN, pensée spontanée et pauses aux échecs : distinguer véc
 ogImage: /images/og/reseau-mode-defaut-aux-echecs-og.webp
 heroImage:
   src: /images/blog/reseau-mode-defaut-aux-echecs-hero.webp
-  alt: >-
-    Une pièce entièrement vide dont toutes les lampes brûlent à pleine intensité.
+  alt: Une pièce entièrement vide dont toutes les lampes brûlent à pleine intensité.
 
 ---
 

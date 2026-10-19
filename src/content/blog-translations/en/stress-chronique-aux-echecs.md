@@ -48,6 +48,7 @@ faq:
       Not necessarily stop, but reduce the competitive load and restore your sleep as a priority.
       Sleep is the lever whose effect on cortisol regulation and on cognition is best established, and
       it's also the first thing to degrade in a heavy season.
+heroImageAlt: A taut elastic band bending a wooden frame.
 ---
 
 You've been playing tournaments back to back for four months. Your rating stalls, then drops. You start making mistakes that don't look like you: not subtle strategic errors, but hanging pieces, elementary tactical patterns you'd have solved without thinking a year ago.

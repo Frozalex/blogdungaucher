@@ -28,6 +28,10 @@ faq:
     answer: "Les offres déraisonnables peuvent enfreindre l'article 11.5. Les règles générales ne fixent pas un intervalle universel en nombre de coups."
   - question: "Comment réagir à un adversaire qui me dérange ?"
     answer: "Décris les faits à l'arbitre et laisse-le apprécier la situation. Un geste isolé ne suffit pas à établir une intention de manipulation."
+heroImage:
+  src: /images/blog/manipulation-emotionnelle-aux-echecs-hero.webp
+  alt: Un fil tendu dévie latéralement un pendule sombre suspendu.
+ogImage: /images/og/manipulation-emotionnelle-aux-echecs-og.webp
 ---
 
 Un soupir, un regard appuyé, une proposition de nulle au mauvais moment : ce qui se passe autour de l'échiquier peut te distraire. La difficulté est de réagir à un comportement observable sans prétendre lire les intentions de ton adversaire.

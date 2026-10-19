@@ -31,14 +31,11 @@ seoTitle: "Génétique et talent aux échecs : ce que la science dit sur l'inné
 seoDescription: >-
   Héritabilité, études de jumeaux, pratique délibérée et QI : ce que la recherche dit vraiment sur le rôle des gènes
   dans le talent et la performance aux échecs.
-ogImage: /images/blog/echecs-et-genetique-hero.png
+ogImage: /images/og/echecs-et-genetique-og.webp
 heroImage:
-  src: /images/blog/echecs-et-genetique-hero.png
-  alt: >-
-    Illustration pixel art : double hélice ADN transformée en pièces d'échecs, échiquier en arrière-plan, « Génétique et
-    talent aux échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-genetique-hero.webp
+  alt: Un champ de graines semées vu de dessus, quelques pousses seulement
+    dépassant des autres.
 faq:
   - question: Peut-on donner un pourcentage génétique du talent aux échecs ?
     answer: >-

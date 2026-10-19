@@ -27,6 +27,10 @@ faq:
     answer: "Non. Les expériences citées ne mesurent pas cette fréquence. Elles invitent à distinguer ce que tu te rappelles de ce que l'analyse vient de t'apprendre."
   - question: "Comment conserver une trace de son raisonnement ?"
     answer: "Après la partie, tu peux noter tes candidats et tes hésitations avant de regarder le moteur. Cette trace peut aider à comparer les versions, sans garantir que ton premier souvenir soit exact."
+heroImage:
+  src: /images/blog/faux-souvenirs-aux-echecs-hero.webp
+  alt: Un cadre vide projette une ombre contenant la silhouette d’un vase absent.
+ogImage: /images/og/faux-souvenirs-aux-echecs-og.webp
 ---
 
 Analyse d'après-partie. On arrive au coup 27, celui où tout a basculé. L'ordinateur affiche la réfutation : Txf7 gagnait sur-le-champ.

@@ -19,14 +19,10 @@ tags:
 seoTitle: "Échecs et autisme : les bienfaits pour les TSA"
 seoDescription: >-
   Autisme et échecs : règles invariantes, structure visuelle, pas de verbal. Pourquoi l'échiquier convient aux cerveaux autistes, et ce que les études TSA montrent.
-ogImage: /images/blog/echecs-et-autisme-hero.webp
+ogImage: /images/og/echecs-et-autisme-v2-og.webp
 heroImage:
-  src: /images/blog/echecs-et-autisme-hero.webp
-  alt: >-
-    Illustration pixel art : silhouette au bord d’un chemin, ciel aux nuages pastel et sphère colorée ; titre « Échecs
-    et autisme : pourquoi l'échiquier devient un refuge » en surimpression.
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-autisme-v2-hero.webp
+  alt: Un chemin de pierres claires mène d’une alcôve abritée vers un jardin.
 faq:
   - question: "Les échecs sont-ils bénéfiques pour tous les enfants autistes ?"
     answer: >-

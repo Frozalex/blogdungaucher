@@ -51,6 +51,7 @@ faq:
       claims against the archived facts rather than against your memory. Have your games analysed by an
       independent third party. And if the matter involves a formal accusation, use the official
       channels, which exist precisely to take the case off the terrain of rumour.
+heroImageAlt: A hand erasing footprints behind a figure looking back.
 ---
 
 The game is over. You lost, and you're going through it together. Except the game he's describing isn't the one you played.

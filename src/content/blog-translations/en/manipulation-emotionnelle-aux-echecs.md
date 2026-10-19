@@ -49,6 +49,7 @@ faq:
       the game, for example never answering before you've evaluated the position for three minutes. The
       general principle is to make your decisions independent of your opponent's behaviour, since that
       behaviour is precisely the instrument.
+heroImageAlt: A taut thread pulling a suspended pendulum sideways.
 ---
 
 You're better. Clearly better. You have an extra pawn and a healthy structure, and you have twenty minutes to his twelve.

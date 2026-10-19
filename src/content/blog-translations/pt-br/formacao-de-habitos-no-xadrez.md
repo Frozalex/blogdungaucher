@@ -49,6 +49,7 @@ faq:
       O mais rentável é a verificação sistemática antes de jogar um lance, porque ele tem um gatilho
       perfeitamente nítido: a mão que vai tocar a peça. "Treinar mais" não é um hábito, é um projeto.
       Um hábito precisa caber numa ação única presa a um sinal único.
+heroImageAlt: Uma pista circular desgastada com um novo caminho de saída.
 ---
 
 Todo ano, a mesma cena.

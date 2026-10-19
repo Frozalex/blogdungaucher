@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Uma grade de tabuleiro de xadrez cujas casas se fundem em cinco grandes blocos coerentes."
+heroImageAlt: Uma grade de tabuleiro de xadrez cujas casas se agrupam em cinco
+  grandes blocos coerentes.
 title: "Visualização mental no xadrez: ver sem olhar"
 excerpt: >-
   Os Grandes Mestres jogam às cegas dezenas de partidas simultâneas. Não é mágica : é visualização espacial treinada ao

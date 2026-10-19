@@ -58,6 +58,7 @@ faq:
       No estudo de 2025, os jogadores de rating mais alto estão calibrados, ou seja, são precisos, em vez de
       se subestimarem. A subestimação entre jogadores fortes é um fenômeno diferente, a
       síndrome do impostor, que mexe com o sentimento de legitimidade e não com a avaliação do nível.
+heroImageAlt: Uma coluna baixa projeta uma sombra muito mais alta.
 ---
 
 Ele tem rating 1 150. Acabou de perder, e está te explicando por que esse rating não quer dizer nada. Ele jogou blitz sendo que é "um jogador de partidas longas". Não estuda as aberturas dele há seis meses. O adversário ganhou "no tempo, não no jogo". E, sinceramente, contra o cara de 1 600 do clube, ele ganha "uma em cada duas".

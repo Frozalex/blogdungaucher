@@ -43,8 +43,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-therapie-og.webp
 heroImage:
   src: /images/blog/echecs-et-therapie-hero.webp
-  alt: >-
-    Une pelote de fil emmêlée d'où sort un unique brin parfaitement tendu et droit.
+  alt: Une pelote de fil emmêlée d'où sort un unique brin parfaitement tendu et
+    droit.
 faq:
   - question: Les échecs peuvent-ils traiter la dépression ?
     answer: >-

@@ -24,6 +24,7 @@ faq:
       Niet specifiek. Enkele vaardigheden overlappen (aanhoudende concentratie, patroongeheugen),
       maar de directe overdracht is zwak. De meeste grote muzikanten spelen niet op hoog niveau
       schaken, en omgekeerd.
+heroImageAlt: Een stemvork en een schaakpaard waarvan de schaduwen samenkomen.
 ---
 
 In de populaire cultuur bestaat een diepgewortelde overtuiging: muziek zou het beste zijn wat je voor je brein kunt doen. Het Mozart-effect, de studies over professionele muzikanten, de metaforen over de "universele taal" en emotionele intelligentie: muziek geniet een wetenschappelijke aura die maar weinig andere activiteiten bezitten.

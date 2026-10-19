@@ -6,6 +6,7 @@ excerpt: >-
 seoTitle: "Burnout no xadrez: reconhecer e superar o esgotamento"
 seoDescription: "O burnout no xadrez explicado: sintomas, causas e estratégias de recuperação. Como reencontrar o prazer de jogar após o esgotamento competitivo."
 frSlug: burnout-chess
+heroImageAlt: Uma figura sentada diante das últimas brasas de uma fogueira.
 ---
 
 Você abre o Chess.com. O botão "Jogar" está lá, como ontem. Como anteontem. Você o olha durante trinta segundos. Fecha a aba.

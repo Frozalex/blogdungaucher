@@ -52,6 +52,7 @@ faq:
       consultar a porcentagem real numa base de dados em vez de confiar na impressão, manter um
       registro de todas as partidas e não só das marcantes, e se perguntar diante de cada conselho
       de jogador forte quantas pessoas o aplicaram sem que funcionasse.
+heroImageAlt: Um barco de papel flutua acima de vários barcos afundados.
 ---
 
 Sempre tem alguém no clube que joga o mesmo gambito há quinze anos. Ele o defende com uma convicção tranquila: "objetivamente é duvidoso, mas em nível de clube funciona sempre".

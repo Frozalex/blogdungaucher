@@ -38,6 +38,7 @@ faq:
       van kwaliteit, zoals jezelf beoordelen op het naleven van je controleprotocol onafhankelijk van het
       resultaat, vormt het beoogde gedrag. Het vormen door opeenvolgende benaderingen, beschreven door
       Skinner, is ook het principe van elk goed trainingsplan.
+heroImageAlt: Een vinger nadert een mechanische knop naast een klein bakje.
 ---
 
 Je had één partij gezegd. Het is een uur 's nachts en je hebt er zeventien gespeeld.

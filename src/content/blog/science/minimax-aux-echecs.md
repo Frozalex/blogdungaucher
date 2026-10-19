@@ -29,6 +29,11 @@ faq:
       C’est une analogie de raisonnement : tu compares des coups et des réponses. Les sources présentées ne démontrent
       ni un algorithme cérébral identique ni une profondeur fixe associée à ton Elo.
 
+heroImage:
+  src: /images/blog/minimax-aux-echecs-hero.webp
+  alt: Un arbre élagué au-dessus d'une pièce d'échecs, la plupart des branches
+    coupées net.
+ogImage: /images/og/minimax-aux-echecs-og.webp
 ---
 
 Il y a quelque chose d'étrange dans le fait que la stratégie aux échecs, ce jeu millénaire d'intuition et d'art, puisse être réduite à un algorithme de quelques lignes. L'algorithme minimax fait exactement cela : il formalise le coeur du raisonnement stratégique dans un jeu à somme nulle en une récurrence mathématique élégante. Et ce n'est pas seulement l'âme des moteurs d'échecs modernes : c’est aussi une analogie utile pour organiser ton calcul, sans constituer une description démontrée de ton cerveau. (Pour le cadre théorique général dont minimax est l'algorithme central, voir [théorie des jeux aux échecs](/fr/blog/theorie-des-jeux-aux-echecs/) ; pour le théorème qui garantit l'existence d'une valeur à toute position, [le paradoxe de Zermelo](/fr/blog/paradoxe-de-zermelo/).)

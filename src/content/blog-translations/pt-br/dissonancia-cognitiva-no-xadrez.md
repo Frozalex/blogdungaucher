@@ -49,6 +49,7 @@ faq:
       mais eficaz é separar no tempo o momento da derrota e o momento da análise: anote a posição e os
       fatos no calor da hora, sem conclusão, e analise a frio vinte e quatro horas depois. A redução de
       dissonância opera principalmente nos minutos seguintes.
+heroImageAlt: Duas molduras mostram um rei em pé e um rei caído sobre formas âmbar.
 ---
 
 Saída da sala, torneio de clube, rodada 3. Três jogadores acabaram de perder. Escute só.

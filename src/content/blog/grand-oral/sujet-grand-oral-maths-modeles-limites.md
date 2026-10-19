@@ -20,12 +20,11 @@ tags:
   - méta-analyse
 seoTitle: "Grand Oral Maths : fiche sur les modèles des échecs"
 seoDescription: "Fiche de révision sur les modèles des échecs : hypothèses du dénombrement, score attendu Elo et apprentissage, avec renvois aux guides Maths et NSI."
-ogImage: /images/og/sujet-grand-oral-maths-modeles-limites-og.webp
+ogImage: /images/og/sujet-grand-oral-maths-modeles-limites-watermarked-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-maths-modeles-limites-hero.webp
-  alt: >-
-    La façade d'un hall scolaire, avec son estrade couverte au premier plan.
-  credit: "Solomon203, CC BY-SA 4.0, via Wikimedia Commons"
+  src: /images/blog/sujet-grand-oral-maths-modeles-limites-watermarked-hero.webp
+  alt: La façade d'un hall scolaire, avec son estrade couverte au premier plan.
+  credit: Solomon203, CC BY-SA 4.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Sihwei_Hall,_Keelung_Pai_Fu_Junior_High_School_20181120.jpg
   license: CC BY-SA 4.0
 noindex: true

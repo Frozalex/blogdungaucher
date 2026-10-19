@@ -49,6 +49,7 @@ faq:
       os lances considerados e a sua avaliação nos momentos-chave, é um registro externo à sua memória.
       Sem ela, a comparação entre o que você achava e o que era deixa de ser possível: sobra só uma
       versão, a de depois.
+heroImageAlt: Uma moldura vazia projeta uma sombra com a silhueta de um vaso.
 ---
 
 Análise pós-partida. Chega-se ao lance 27, aquele em que tudo virou. O computador mostra a refutação: Txf7 ganhava na hora.

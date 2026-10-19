@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Um degrau de pedra se fundindo numa rampa contínua que aplaina o solo."
+heroImageAlt: Um degrau de pedra se fundindo numa rampa contínua que aplaina o solo.
 title: "Xadrez e deficiência: quando o tabuleiro apaga as fronteiras"
 excerpt: >-
   Jogadores cegos calculam variantes profundas apoiando-se no tato. Jogadores com tetraplegia movem as peças com o

@@ -32,8 +32,7 @@ seoDescription: "Que mesure-t-on pendant une partie d'échecs ? Fréquence cardi
 ogImage: /images/og/echecs-et-le-corps-og.webp
 heroImage:
   src: /images/blog/echecs-et-le-corps-hero.webp
-  alt: >-
-    Une chaise vide de profil, le sol usé et marqué juste en dessous d'elle.
+  alt: Une chaise vide de profil, le sol usé et marqué juste en dessous d'elle.
 faq:
   - question: Une partie d’échecs fait-elle maigrir ?
     answer: >-

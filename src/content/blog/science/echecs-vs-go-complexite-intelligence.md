@@ -25,9 +25,10 @@ faq:
   - question: "Les résultats des IA classent-ils l’intelligence des joueurs ?"
     answer: "Non. Ils mesurent des performances de programmes dans des protocoles précis. Ils ne comparent pas directement l'intelligence générale des joueurs humains."
 heroImage:
-  src: "/images/og-default.png"
-  alt: "Échiquier face à un goban : deux philosophies du jeu"
-ogImage: "/images/og-default.png"
+  src: /images/blog/echecs-vs-go-complexite-intelligence-hero.webp
+  alt: Un cavalier et une pierre de go séparés par un pli ramifié.
+ogImage: /images/og/echecs-vs-go-complexite-intelligence-og.webp
+
 ---
 
 Les amateurs de Go montrent les chiffres de leur espace de jeu. Les joueurs d'échecs répondent que leur jeu exige une grande précision tactique. Ces arguments parlent de choses différentes : compter des configurations n'est pas mesurer la difficulté ressentie ni l'intelligence d'une personne.

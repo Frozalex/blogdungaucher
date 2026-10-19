@@ -44,6 +44,7 @@ faq:
       epigenetische sporen na die de hersenontwikkeling beïnvloeden. Voor schaken specifiek is de vroege
       stimulatieperiode (5 tot 12 jaar) kritisch: schaakbeoefening in dit venster kan duurzamere
       neurobiologische aanpassingen produceren dan dezelfde training die op volwassen leeftijd begon.
+heroImageAlt: Verspreide zaden met enkele blauwe scheuten ertussen.
 ---
 
 In 1965 publiceerde de Hongaarse psycholoog László Polgar een essay getiteld "Genie kan worden aangeleerd." Zijn stelling: elke persoon kan expert worden in elk domein met aangepaste training die vroeg genoeg begint. Om dit te bewijzen, besloot hij zijn drie dochters (Susan, Sofia en Judit) op te voeden als professionele schaakspeelsters vanaf hun vroegste kinderjaren.

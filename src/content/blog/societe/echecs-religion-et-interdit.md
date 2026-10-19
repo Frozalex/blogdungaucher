@@ -38,14 +38,11 @@ seoTitle: "Échecs et religion : l'histoire des interdits religieux du jeu"
 seoDescription: >-
   Pourquoi l'Église, l'islam et l'orthodoxie ont-ils interdit les échecs ? Pierre Damien, Saint Louis, la fatwa de 2016 :
   mille ans de méfiance religieuse envers le jeu, et sa réhabilitation.
-ogImage: /images/blog/echecs-religion-et-interdit-hero.png
+ogImage: /images/og/echecs-religion-et-interdit-og.webp
 heroImage:
-  src: /images/blog/echecs-religion-et-interdit-hero.png
-  alt: >-
-    Illustration pixel art : un échiquier posé sur un autel de pierre baigné d'une lumière de vitrail, pièces projetant de
-    longues ombres, atmosphère médiévale, « Échecs et religion »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-religion-et-interdit-hero.webp
+  alt: Une main d'ombre survolant une dalle en damier intacte pour saisir des dés
+    à côté.
 faq:
   - question: Les échecs ont-ils vraiment été interdits par l'Église catholique ?
     answer: >-

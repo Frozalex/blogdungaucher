@@ -28,6 +28,10 @@ faq:
     answer: "Il aide à formuler des questions sur la motivation. Il ne suffit pas à expliquer ou prévoir la décision d’une personne."
   - question: "Autonomie signifie-t-elle absence de règles ?"
     answer: "Non. Tu peux adhérer volontairement à une activité structurée. L’autonomie vécue et la quantité de choix proposés ne sont pas identiques."
+heroImage:
+  src: /images/blog/theorie-auto-determination-aux-echecs-hero.webp
+  alt: Trois racines distinctes soutiennent un jeune arbre sur fond crème.
+ogImage: /images/og/theorie-auto-determination-aux-echecs-og.webp
 ---
 
 Tu peux disposer de temps et d’un programme sérieux sans avoir envie de jouer. Avant d’ajouter une séance, demande-toi ce que tu souhaites retrouver dans cette activité.

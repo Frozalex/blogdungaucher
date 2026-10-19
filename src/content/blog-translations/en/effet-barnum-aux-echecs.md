@@ -48,6 +48,7 @@ faq:
       spent per move, results by structure type. Those are facts. The problem starts when those
       regularities get converted into an identity, because an identity resists change while a statistic
       invites you to work on what's missing.
+heroImageAlt: Different figures each holding an identical anonymous mask.
 ---
 
 "You're an intuitive player. You spot tactical possibilities quickly, but you sometimes play too fast in positions that require patience. You're most comfortable when you have the initiative. Under pressure, you occasionally tend to rush."

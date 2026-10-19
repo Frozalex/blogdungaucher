@@ -29,14 +29,11 @@ keyTakeaways:
     Revenir aux menaces et aux coups candidats peut te donner une tâche précise même si tu te sens encore stressé.
 seoTitle: "Gérer le stress en tournoi d'échecs : psychologie et physiologie"
 seoDescription: "Stress en tournoi d'échecs : effets étudiés sur la cognition, respiration lente et pistes pour revenir à la position, sans promesse hormonale ni gain Elo garanti."
-ogImage: /images/blog/echecs-stress-tournoi-hero.png
+ogImage: /images/og/echecs-stress-tournoi-og.webp
 heroImage:
-  src: /images/blog/echecs-stress-tournoi-hero.png
-  alt: >-
-    Illustration pixel art : joueur d'échecs en compétition, pendule en gros plan, onde de stress visible autour de lui,
-    « Stress en tournoi d'échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-stress-tournoi-hero.webp
+  alt: Une corde tendue à l'extrême en diagonale, la cheville d'accord sur le
+    point de céder.
 faq:
   - question: Pourquoi peux-tu avoir du mal à calculer sous pression ?
     answer: >-

@@ -41,6 +41,7 @@ faq:
       makkelijk tweehonderd Elo-punten, wat nauwelijks toelaat een clubengine van een beginner te
       onderscheiden. De serieuze tests van Stockfish tellen tienduizenden partijen, omdat ze verschillen
       van twee of drie punten proberen te detecteren.
+heroImageAlt: Een laptop via een kabel verbonden met een kastje naast een kleine schaakpion.
 ---
 
 De engine van deze serie kan alles, behalve met iemand praten. Hij leeft in een script, speelt tegen zichzelf, en toont zijn resultaten in een terminal. Dit laatste artikel haalt hem daaruit, en beantwoordt dan de enige overgebleven vraag: **hoeveel is hij waard?**

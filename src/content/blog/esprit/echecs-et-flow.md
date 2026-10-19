@@ -37,8 +37,8 @@ seoDescription: "Le flow de Csikszentmihalyi appliqué aux échecs : caractéris
 ogImage: /images/og/echecs-et-flow-og.webp
 heroImage:
   src: /images/blog/echecs-et-flow-hero.webp
-  alt: >-
-    Une silhouette assise de dos, au centre d'un couloir de lumière qui s'ouvre droit devant elle.
+  alt: Une silhouette assise de dos, au centre d'un couloir de lumière qui s'ouvre
+    droit devant elle.
 faq:
   - question: Qu'est-ce que le flow aux échecs concrètement ?
     answer: >-

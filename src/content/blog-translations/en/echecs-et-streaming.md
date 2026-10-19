@@ -1,5 +1,6 @@
 ---
-heroImageAlt: "A small microphone whose sound wave opens into a vast field of identical shapes."
+heroImageAlt: A small microphone whose sound wave opens into a vast field of
+  identical shapes.
 title: "Chess and Streaming: How Twitch and YouTube Revolutionized the Game"
 excerpt: "In 2012, Twitch didn't exist. In 2024, Hikaru Nakamura is one of the most followed gaming streamers in the world, and he's a chess Grandmaster. Between the two: a cultural and economic revolution that transformed a millennial game into viral content."
 seoTitle: "Chess and Streaming: How Twitch and YouTube Revolutionized the Game"

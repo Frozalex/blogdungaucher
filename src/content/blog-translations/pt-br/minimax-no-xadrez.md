@@ -39,6 +39,7 @@ faq:
       intuitiva (senso posicional). Você também usa heurísticas de poda muito potentes: você <strong>rejeita</strong>
       a maioria dos lances num relance, sem calculá-los. A diferença em relação a um engine não é qualitativa, é
       quantitativa.
+heroImageAlt: Uma árvore podada se ergue sobre uma peça de xadrez.
 ---
 
 Há algo de estranho no fato de a estratégia no xadrez, esse jogo milenar de intuição e arte, poder ser reduzida a um algoritmo de algumas linhas. O algoritmo minimax faz exatamente isso: formaliza o coração do raciocínio estratégico num jogo de soma zero numa recorrência matemática elegante. E ele não é só a alma dos engines de xadrez modernos: é também a descrição formal do que você faz na sua cabeça quando calcula. (Para o quadro teórico geral do qual o minimax é o algoritmo central, veja [teoria dos jogos no xadrez](/pt-br/blog/teoria-dos-jogos-no-xadrez/); para o teorema que garante a existência de um valor para toda posição, [o paradoxo de Zermelo](/pt-br/blog/paradoxo-de-zermelo/).)

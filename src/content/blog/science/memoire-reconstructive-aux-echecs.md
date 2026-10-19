@@ -27,6 +27,10 @@ faq:
     answer: "Le relevé des coups, tes notes prises après la partie et l'analyse ultérieure. Chaque trace renseigne sur un aspect différent et peut avoir ses limites."
   - question: "Un faux souvenir est-il forcément pathologique ?"
     answer: "Non. Une erreur de mémoire ou une réponse influencée par une suggestion ne constitue pas à elle seule un trouble médical."
+heroImage:
+  src: /images/blog/memoire-reconstructive-aux-echecs-hero.webp
+  alt: Des mains réassemblent des fragments de papier en une mosaïque décalée.
+ogImage: /images/og/memoire-reconstructive-aux-echecs-og.webp
 ---
 
 Raconte une partie ancienne dont tu es fier. Tu vas peut-être décrire un plan clair, des coups qui s'enchaînent et un moment décisif. Le récit peut être fidèle sur certains points et réorganisé sur d'autres. On ne peut pas déclarer qu'il est faux simplement parce qu'il paraît cohérent.

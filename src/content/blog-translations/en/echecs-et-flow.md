@@ -1,5 +1,6 @@
 ---
-heroImageAlt: "A seated figure seen from behind, centered in a corridor of light opening straight ahead."
+heroImageAlt: A seated figure seen from behind, centred in a corridor of light
+  opening straight ahead.
 title: "Chess and Flow State: How to Reach the Zone on the Board"
 excerpt: "When a chess player enters flow state, time stops, distractions vanish, and the game becomes the only reality. This is not an accident or a myth: it is a documented psychological experience you can cultivate deliberately."
 seoTitle: "Chess and Flow: How to Reach the Optimal Performance Zone"

@@ -6,6 +6,7 @@ excerpt: >-
 seoTitle: "Medo de ganhar no xadrez: por que nos sabotamos"
 seoDescription: "O medo de ganhar no xadrez explicado: mecanismos psicológicos da sabotagem inconsciente em posição ganhadora. Causas, padrões e soluções concretas."
 frSlug: echecs-peur-de-gagner
+heroImageAlt: Um peão parado antes do fim de um caminho quadriculado.
 ---
 
 A posição está claramente ganhadora. O motor confirmaria em um segundo. Seu adversário está em zeitnot, ficou sem ideias, sua posição desmorona. E então, no momento exato em que a vitória se concretiza, algo estranho acontece. Você joga um lance hesitante, deixa uma contra-chance, complica desnecessariamente. A vitória se evapora. E você não sabe exatamente por que fez isso.

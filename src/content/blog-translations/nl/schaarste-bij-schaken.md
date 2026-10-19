@@ -38,6 +38,7 @@ faq:
       Door uitstel, bij aankopen, aangezien gefabriceerde schaarste niet bestand is tegen wachten. En
       voor de klok, door een verdelingsregel die je vóór de partij vastlegt, en die een beoordeling
       vervangt die genomen wordt op het moment waarop deze het meest vertekend is.
+heroImageAlt: Een bijna leeg klosje met een kort stukje lint.
 ---
 
 Je hebt nog acht minuten. Je tegenstander, vijfentwintig.

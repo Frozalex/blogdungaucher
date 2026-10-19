@@ -38,6 +38,7 @@ faq:
       proefles is informatie over de pedagogiek van de trainer, wat nuttig is. Het is geen reden om te
       kopen. De vraag die je moet stellen, blijft dezelfde: is deze content zijn prijs waard, onafhankelijk
       van wat ik al ontvangen heb.
+heroImageAlt: Twee open handen wisselen houten puzzelstukken uit.
 ---
 
 Je verliest je partij in de club. Een sterkere speler gaat tegenover je zitten en stelt voor er samen naar te kijken.

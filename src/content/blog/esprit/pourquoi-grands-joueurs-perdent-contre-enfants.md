@@ -18,8 +18,8 @@ keyTakeaways:
 ogImage: /images/og/pourquoi-grands-joueurs-perdent-contre-enfants-og.webp
 heroImage:
   src: /images/blog/pourquoi-grands-joueurs-perdent-contre-enfants-hero.webp
-  alt: >-
-    Une clé ouvragée présentée devant une serrure dont le profil ne lui correspond pas.
+  alt: Une clé ouvragée présentée devant une serrure dont le profil ne lui
+    correspond pas.
 faq:
   - question: "Un grand maître peut-il perdre face à un jeune joueur ?"
     answer: "Son titre et son classement ne garantissent pas chaque résultat. Il faut examiner la partie et la force actuelle des deux joueurs."

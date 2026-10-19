@@ -23,6 +23,10 @@ faq:
     answer: "Non. Une description qualitative peut être utile si elle s’appuie sur des observations précises et reste discutable."
   - question: "Les statistiques suffisent-elles à définir ton style ?"
     answer: "Non. Elles dépendent des positions, des adversaires et de l’échantillon. Un pourcentage exact demande encore une interprétation."
+heroImage:
+  src: /images/blog/effet-barnum-aux-echecs-hero.webp
+  alt: Trois silhouettes différentes tiennent chacune le même masque anonyme.
+ogImage: /images/og/effet-barnum-aux-echecs-og.webp
 ---
 
 « Tu es intuitif, mais tu joues parfois trop vite quand la position demande de la patience. » Tu peux te reconnaître dans cette phrase et retrouver un exemple. Reste à savoir ce qu’elle distingue réellement dans ton jeu.

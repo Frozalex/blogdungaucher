@@ -37,6 +37,7 @@ faq:
       invariant, by partial mirror strategy), but no serious path exists. Quantum computing changes the bound
       (Grover halves the exponent), but $10^{60}$ remains astronomical. Solving chess in the strict sense is
       more likely a horizon than ever reached.
+heroImageAlt: A circular dark maze with a blue path leading toward its empty center.
 ---
 
 In 1913, at the fifth International Congress of Mathematicians in Cambridge, German mathematician [Ernst Zermelo](https://en.wikipedia.org/wiki/Ernst_Zermelo) presented a result that would change how mathematicians, and later computer scientists, think about strategy games. His theorem is short. Its demonstration is elegant. And its implications for chess are both reassuring and dizzying.

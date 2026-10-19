@@ -48,12 +48,11 @@ dataReveal:
   takeaway: "Ces rapports de risques instantanés concernent des catégories d'activités dans une cohorte. Ils ne mesurent pas une protection individuelle propre aux échecs."
 seoTitle: "Échecs et Alzheimer : ce que les études permettent de dire"
 seoDescription: "Loisirs cognitifs et démence : lire les associations observées, distinguer prévention et accompagnement et comprendre pourquoi un effet propre aux échecs reste incertain."
-ogImage: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.webp
+ogImage: /images/og/echecs-alzheimer-prevention-declin-cognitif-watermarked-og.webp
 heroImage:
-  src: /images/blog/echecs-alzheimer-prevention-declin-cognitif-hero.webp
-  alt: >-
-    Vignette pixel art : cerveau en pixels dont une partie se dissipe, titre sur les échecs et la prévention du déclin
-    cognitif
+  src: /images/blog/echecs-alzheimer-prevention-declin-cognitif-watermarked-hero.webp
+  alt: "Vignette pixel art : cerveau en pixels dont une partie se dissipe, titre
+    sur les échecs et la prévention du déclin cognitif"
   credit: Blog d'un Gaucher
   license: Création originale
 faq:

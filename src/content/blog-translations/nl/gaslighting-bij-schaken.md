@@ -46,6 +46,7 @@ faq:
       partijen analyseren door een onafhankelijke derde. En als de feiten een formele beschuldiging
       betreffen, gebruik dan de daarvoor bestemde kanalen, die precies bestaan om de zaak uit het
       domein van de roddel te halen.
+heroImageAlt: Een hand wist voetstappen achter een figuur die omkijkt.
 ---
 
 De partij is afgelopen. Je hebt verloren, en jullie spelen ze samen na. Alleen: de partij die hij je vertelt, is niet degene die jij hebt gespeeld.

@@ -40,6 +40,7 @@ faq:
       Het garandeert de beste zet <em>volgens de gebruikte evaluatie en diepte</em>, wat niet hetzelfde
       is. Bij eindige diepte met een heuristische evaluatie is minimax optimaal ten opzichte van zijn
       eigen aannames. Zijn fouten komen altijd van de evaluatie of de horizon, nooit van het algoritme.
+heroImageAlt: Een vertakte houten mobiel met afwisselend donkere en blauwe lagen.
 ---
 
 Het vorige artikel eindigde met een beschamend cijfer: onze hebzuchtige engine, die altijd de zet speelt die het meeste materiaal oplevert, sluit partijen af met **achtentwintig pionnen voorsprong** en wint er maar één op vier. Twee derde van zijn partijen eindigt in pat, omdat hij alles opeet wat beweegt totdat de tegenstander geen enkele legale zet meer heeft.

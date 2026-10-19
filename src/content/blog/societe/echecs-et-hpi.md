@@ -39,12 +39,11 @@ seoTitle: "Échecs et haut potentiel intellectuel (HPI) : bénéfices et précau
 seoDescription: >-
   L'échiquier est-il idéal pour les enfants HPI ? Stimulation, perfectionnisme, gestion de l'échec : ce que la recherche
   sur la précocité intellectuelle dit des échecs.
-ogImage: /images/blog/echecs-et-hpi-hero.png
+ogImage: /images/og/echecs-et-hpi-og.webp
 heroImage:
-  src: /images/blog/echecs-et-hpi-hero.png
-  alt: "Illustration pixel art : enfant pensif face à un échiquier lumineux, étoiles et engrenages autour, « Échecs et HPI »"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-hpi-hero.webp
+  alt: Un escalier en colimaçon montant hors du cadre, une pièce d'échecs sur la
+    première marche.
 faq:
   - question: Les enfants HPI sont-ils naturellement meilleurs aux échecs ?
     answer: >-

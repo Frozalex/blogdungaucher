@@ -25,6 +25,10 @@ faq:
     answer: "Non. Une erreur de calcul ou une connaissance technique manquante peuvent suffire à l’expliquer."
   - question: "Faut-il noter les pensées supposées de l’adversaire en partie ?"
     answer: "Ne prends pas de notes d’analyse pendant une partie officielle. Compare plutôt les récits après la partie, si chacun le souhaite."
+heroImage:
+  src: /images/blog/projection-aux-echecs-hero.webp
+  alt: Deux figures assises se font face dans des zones d’ombre et de lumière.
+ogImage: /images/og/projection-aux-echecs-og.webp
 ---
 
 Tu as écarté une idée parce que tu pensais avoir trouvé sa réfutation. L’adversaire la joue quelques coups plus tard. Il peut avoir manqué ta défense, en avoir trouvé une autre, ou avoir calculé plus loin que toi.

@@ -53,6 +53,7 @@ faq:
       análises. Confronte as afirmações com os fatos arquivados em vez de com a sua memória. Peça a
       análise das suas partidas a um terceiro independente. E se os fatos envolverem uma acusação
       formal, use os canais previstos, que existem justamente para tirar o caso do terreno do boato.
+heroImageAlt: Uma mão apaga pegadas atrás de uma figura que olha para trás.
 ---
 
 A partida acabou. Você perdeu, e vocês a rejogam juntos. Só que a partida que ele conta não é a que você jogou.

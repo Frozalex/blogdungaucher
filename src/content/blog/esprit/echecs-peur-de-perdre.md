@@ -14,9 +14,7 @@ seoDescription: "Peur de perdre aux échecs : mécanismes psychologiques, loss a
 ogImage: /images/og/echecs-peur-de-perdre-og.webp
 heroImage:
   src: /images/blog/echecs-peur-de-perdre-hero.webp
-  alt: >-
-    Un pont-levis relevé fermant l'unique passage au-dessus d'une douve à sec.
-
+  alt: Un pont-levis relevé fermant l'unique passage au-dessus d'une douve à sec.
 faq:
   - question: "Jouer prudemment prouve-t-il une peur de perdre ?"
     answer: "Non. La prudence peut répondre à la position et au tournoi. Examine les alternatives avant d’interpréter l’état du joueur."

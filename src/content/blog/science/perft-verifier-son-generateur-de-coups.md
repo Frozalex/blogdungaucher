@@ -56,6 +56,10 @@ faq:
       Non, il contrôle les arbres explorés ; des erreurs peuvent même se compenser dans un total. Perft ne regarde ni la règle des cinquante coups, ni la nulle par répétition, ni
       la détection du mat et du pat, ni bien sûr la qualité du jeu. Ces points demandent leurs propres
       tests.
+heroImage:
+  src: /images/blog/perft-verifier-son-generateur-de-coups-hero.webp
+  alt: Une main vérifie les perles situées aux extrémités de branches.
+ogImage: /images/og/perft-verifier-son-generateur-de-coups-og.webp
 ---
 
 Ton générateur de coups produit exactement les bons coups sur 1 498 positions réelles. C'est ce que [l'article précédent](/fr/blog/generer-les-coups-legaux-en-python/) a établi, sur 41 648 coups comparés un par un à Stockfish.

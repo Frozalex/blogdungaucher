@@ -50,6 +50,7 @@ faq:
       que a criança verifica se o vínculo depende do que acabou de acontecer. Uma pergunta sobre o
       andamento, sobre um momento da partida ou simplesmente sobre fome separa o desempenho da relação.
       O resultado vem de qualquer jeito, não precisa ser a primeira coisa dita.
+heroImageAlt: Um pequeno barco ligado ao cais por uma corda frouxa.
 ---
 
 Sala de torneio, rodada 2, categoria sub-12. A porta está fechada. No corredor, uns vinte adultos esperam, alguns há duas horas, com cafés frios.

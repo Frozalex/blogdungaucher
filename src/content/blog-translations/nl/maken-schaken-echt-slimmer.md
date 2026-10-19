@@ -28,6 +28,7 @@ faq:
     answer: >-
       Nee, maar wel het verhaal veranderen: niet om de intelligentie te verhogen, maar voor wat schaken écht
       biedt, een kader om te leren verliezen, om lang te concentreren, en om eigen fouten te analyseren.
+heroImageAlt: Een sleutel in één slot op een muur met verschillende sloten.
 ---
 
 Je hebt deze zin al duizend keer gehoord: "schaken ontwikkelt de intelligentie." Op de websites van bonden, in onderwijsprogramma's, uit de mond van ouders die hun kind bij de club inschrijven. Het is een culturele vanzelfsprekendheid geworden.

@@ -29,6 +29,10 @@ faq:
     answer: "Oui. Maia est entraîné sur des parties humaines pour prédire des coups selon le niveau. Cela ne démontre pas qu'il possède une expérience mentale humaine, mais réfute l'idée que toute modélisation d'un adversaire serait impossible pour un programme."
   - question: "Minimax cherche-t-il à exploiter une erreur particulière ?"
     answer: "Le minimax classique choisit selon les meilleures réponses dans l'arbre étudié. Un modèle probabiliste de l'adversaire poursuit une autre fonction de choix ; les deux approches peuvent être comparées."
+heroImage:
+  src: /images/blog/theorie-de-l-esprit-aux-echecs-hero.webp
+  alt: Deux profils séparés par un écran regardent des objets différents.
+ogImage: /images/og/theorie-de-l-esprit-aux-echecs-og.webp
 ---
 
 Tu vois une prise tentante que ton adversaire pourrait jouer. Si elle perd, tu peux espérer qu'il tombe dans le piège. Mais tu ne sais pas directement ce qu'il a vu : tu fais une hypothèse à partir de la position et de ce que tu connais de lui.

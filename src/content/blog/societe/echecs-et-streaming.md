@@ -46,8 +46,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-streaming-og.webp
 heroImage:
   src: /images/blog/echecs-et-streaming-hero.webp
-  alt: >-
-    Un petit micro dont l'onde sonore s'ouvre en un vaste champ de formes identiques.
+  alt: Un petit micro dont l'onde sonore s'ouvre en un vaste champ de formes
+    identiques.
 faq:
   - question: Combien gagne un Grand Maître qui streame sur Twitch ?
     answer: >-

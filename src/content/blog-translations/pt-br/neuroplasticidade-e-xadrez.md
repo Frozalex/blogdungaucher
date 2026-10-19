@@ -51,6 +51,7 @@ faq:
       considerável: reconhecimento de padrões, memória especializada, cálculo de variantes. O que não
       está demonstrado é a transferência para domínios distantes. O bom motivo para jogar nunca foi a
       promessa de um cérebro turbinado.
+heroImageAlt: Uma corda trançada se divide em novas ramificações.
 ---
 
 Digite "xadrez cérebro" num buscador. Você vai cair, em looping, na mesma frase: o xadrez **reprograma** o seu cérebro. Às vezes com uma palavra difícil de reforço, neuroplasticidade, e dois estudos como fiança: os taxistas londrinos e os malabaristas.

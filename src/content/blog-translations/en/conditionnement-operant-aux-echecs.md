@@ -48,6 +48,7 @@ faq:
       quality, such as scoring yourself on how well you followed your checking protocol regardless of the
       result, shapes the behavior you're aiming for. Shaping by successive approximations, described by
       Skinner, is also the principle behind every good training plan.
+heroImageAlt: A finger approaching a mechanical button beside a small tray.
 ---
 
 You said one game. It's one in the morning and you've played seventeen.

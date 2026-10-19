@@ -45,6 +45,7 @@ faq:
       By keeping a space to play where no rating is at stake, and by paying attention to what you
       used to enjoy. The critical point isn't the number itself but how omnipresent it is: a reward
       turns harmful when it becomes the only visible reason to practice.
+heroImageAlt: A lantern with a small flame beside a large dark trophy.
 ---
 
 Think back to your first games. Before the apps, before the rating, before the statistics.

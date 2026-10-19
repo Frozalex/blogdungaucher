@@ -59,6 +59,11 @@ faq:
       propager un retour anticipé ; une exception levée au fond remonte d'un coup jusqu'à la racine, où
       elle est attrapée. Il faut seulement veiller à ne consulter l'horloge qu'une fois tous les quelques
       centaines de nœuds, sinon la mesure du temps coûte plus cher que la recherche.
+heroImage:
+  src: /images/blog/approfondissement-iteratif-gestion-du-temps-hero.webp
+  alt: Des terrasses de papier concentriques s’élargissent jusqu’à un anneau
+    inachevé.
+ogImage: /images/og/approfondissement-iteratif-gestion-du-temps-og.webp
 ---
 
 Notre moteur a un défaut qu'aucune interface d'échecs ne tolérerait. On lui donne une profondeur, il rend un coup quand il a fini, et il peut avoir fini en une seconde comme en dix minutes.

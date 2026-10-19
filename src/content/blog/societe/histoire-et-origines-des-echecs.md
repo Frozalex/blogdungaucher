@@ -39,14 +39,10 @@ seoTitle: "Histoire des échecs : origines, du chaturanga à la dame moderne"
 seoDescription: >-
   L'histoire complète des échecs : naissance en Inde (chaturanga), passage par la Perse et l'islam, arrivée en Europe,
   révolution de la dame vers 1475 et standardisation moderne (Staunton, FIDE).
-ogImage: /images/blog/histoire-et-origines-des-echecs-hero.png
+ogImage: /images/og/histoire-et-origines-des-echecs-og.webp
 heroImage:
-  src: /images/blog/histoire-et-origines-des-echecs-hero.png
-  alt: >-
-    Illustration pixel art : frise de pièces d'échecs évoluant de l'éléphant indien stylisé à la tour moderne, sur un
-    fond de carte ancienne reliant l'Inde à l'Europe, « Histoire des échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/histoire-et-origines-des-echecs-hero.webp
+  alt: Des silhouettes de pièces d’échecs sont disposées par hauteur croissante.
 faq:
   - question: Où et quand les échecs ont-ils été inventés ?
     answer: >-

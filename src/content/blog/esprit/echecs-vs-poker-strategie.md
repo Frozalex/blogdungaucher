@@ -21,9 +21,10 @@ faq:
   - question: "Gagner aux échecs prouve-t-il qu’on a mieux joué chaque coup ?"
     answer: "Non. Le résultat final ne valide pas toutes les décisions de la partie."
 heroImage:
-  src: "/images/og-default.png"
-  alt: "Échiquier et table de poker : deux stratégies face à l'incertitude"
-ogImage: "/images/og-default.png"
+  src: /images/blog/echecs-vs-poker-strategie-hero.webp
+  alt: Une carte retournée projette une ombre de pion près d’un pion visible.
+ogImage: /images/og/echecs-vs-poker-strategie-og.webp
+
 ---
 
 Les échecs et le poker demandent de choisir une action en anticipant celles des autres. Mais les informations disponibles diffèrent. Pour comprendre leurs stratégies, il faut préciser le jeu et le modèle étudiés.

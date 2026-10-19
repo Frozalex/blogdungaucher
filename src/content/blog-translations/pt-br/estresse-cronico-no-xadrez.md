@@ -48,6 +48,7 @@ faq:
       Não necessariamente parar, mas reduzir a carga competitiva e restabelecer o sono como
       prioridade. O sono é a alavanca cujo efeito sobre a regulação do cortisol e sobre a cognição está
       mais bem estabelecido, e é também a primeira coisa a se degradar numa temporada cheia.
+heroImageAlt: Um elástico esticado deforma uma moldura de madeira.
 ---
 
 Você emenda torneios há quatro meses. Seu rating estaciona, depois cai. Você começa a cometer erros que não são a sua cara: não erros estratégicos sutis, mas peças penduradas, padrões táticos elementares que você resolvia sem pensar um ano atrás.

@@ -43,8 +43,7 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-diplomatie-og.webp
 heroImage:
   src: /images/blog/echecs-et-diplomatie-hero.webp
-  alt: >-
-    Une longue table de négociation vue de dessus dont le plateau est un damier.
+  alt: Une longue table de négociation vue de dessus dont le plateau est un damier.
 faq:
   - question: Pourquoi le match Fischer-Spassky de 1972 est-il considéré comme un événement diplomatique ?
     answer: >-

@@ -28,14 +28,10 @@ keyTakeaways:
     Une sieste courte et une sieste longue sont des interventions différentes ; aucune durée optimale pour les échecs n’est démontrée ici.
 seoTitle: "Sommeil et échecs : vigilance, apprentissage et récupération"
 seoDescription: "Sommeil et préparation aux échecs : études sur la vigilance, la décision et l'apprentissage, repères de repos et limites des promesses de progression."
-ogImage: /images/blog/echecs-et-sommeil-hero.png
+ogImage: /images/og/echecs-et-sommeil-og.webp
 heroImage:
-  src: /images/blog/echecs-et-sommeil-hero.png
-  alt: >-
-    Illustration pixel art : échiquier flottant dans un ciel nocturne étoilé, pièces endormies sous une lune, « Échecs
-    et sommeil »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-sommeil-hero.webp
+  alt: Un atelier vide la nuit, avec des outils et des piles de papier.
 faq:
   - question: Combien de sommeil faut-il prévoir pour un tournoi ?
     answer: >-

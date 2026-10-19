@@ -11,6 +11,7 @@ seoDescription: >-
   toegepast op het moment dat je een zet kiest onder onzekerheid.
 frSlug: decision-sous-incertitude-aux-echecs
 draft: false
+heroImageAlt: Paden vanaf een stenen drempel die in de mist verdwijnen.
 ---
 
 Je hebt vier kandidaatzetten. Je hebt geen tijd om elk tot het einde te berekenen. Je weet dat je evaluatie bij benadering is. Je weet dat de tegenstander niet noodzakelijk het theoretisch beste antwoord zal spelen. Je moet toch kiezen.

@@ -38,6 +38,10 @@ faq:
     answer: "Sa force dépend de la recherche, de l'évaluation, du matériel et de la cadence. Aucun rapport de vitesse universel avec Stockfish ni niveau humain garanti ne découle du choix de langage."
   - question: "Qu’est-ce que le protocole UCI ?"
     answer: "Conçu en 2000 par Rudolf Huber et Stefan Meyer-Kahlen, il définit un dialogue texte entre moteur et interface. Le moteur reçoit des commandes et renvoie notamment bestmove."
+heroImage:
+  src: /images/blog/moteur-echecs-python-par-ou-commencer-hero.webp
+  alt: Quelques engrenages et un pion attendent sur un établi de bois.
+ogImage: /images/og/moteur-echecs-python-par-ou-commencer-og.webp
 ---
 
 Tu as sans doute déjà ouvert le dépôt de Stockfish, un jour, par curiosité. Soixante mille lignes de C++, des fichiers qui s'appellent `bitboard.cpp` et `nnue_architecture.h`, des tableaux de constantes magiques sur lesquelles aucun commentaire ne t'explique d'où elles sortent. Et tu as refermé l'onglet.

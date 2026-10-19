@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Uma agulha de bússola multiplicada em um borrão, estabilizando-se num único ponto."
+heroImageAlt: Uma agulha de bússola multiplicada em um borrão, estabilizando-se
+  num único ponto.
 title: "Xadrez e TDAH: por que o tabuleiro captura a atenção onde tudo mais falha"
 excerpt: >-
   O TDAH não é um déficit de atenção : é uma atenção inconsistente. O tabuleiro cria as condições raras em que esse

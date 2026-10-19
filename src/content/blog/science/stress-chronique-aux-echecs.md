@@ -27,6 +27,10 @@ faq:
     answer: "Non. Les erreurs, la fatigue ou le classement ne sont pas des dosages hormonaux ni des marqueurs spécifiques de stress chronique."
   - question: "Que faire si les difficultés persistent ?"
     answer: "Observe les conséquences sur ton sommeil et ta vie quotidienne, ajuste les contraintes quand c'est possible et demande de l'aide si les symptômes persistent ou deviennent difficiles à gérer. Aucun calendrier universel de tournois ne constitue un traitement."
+heroImage:
+  src: /images/blog/stress-chronique-aux-echecs-hero.webp
+  alt: Un élastique tendu déforme progressivement un cadre de bois.
+ogImage: /images/og/stress-chronique-aux-echecs-og.webp
 ---
 
 Tu enchaînes les tournois depuis plusieurs mois. Ton classement stagne, puis baisse. Tu commets des erreurs qui ne te ressemblent pas. Tu conclus peut-être que tu régresses et qu'il faut travailler davantage.

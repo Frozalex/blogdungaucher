@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Uma mão suspensa sobre uma peça de xadrez, de onde partem amplas ondas concêntricas."
+heroImageAlt: Uma mão suspensa acima de uma peça de xadrez, de onde partem
+  grandes ondas concêntricas.
 title: "Dopamina e xadrez: a neuroquímica do jogo"
 excerpt: >-
   Cada lance tenso, cada combinação encontrada, cada vitória arrancada dispara uma onda neuroquímica precisa. O que a

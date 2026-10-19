@@ -47,6 +47,7 @@ faq:
       refutation. And that's the information that counts. To retrieve it, you have to write down before
       the analysis what you actually calculated, otherwise memory will reconstruct a version where you
       saw everything.
+heroImageAlt: A lamp illuminating only one branch of a divided path.
 ---
 
 You spot it on move 24. A combination. Knight sacrifice, discovered check, the queen falls.

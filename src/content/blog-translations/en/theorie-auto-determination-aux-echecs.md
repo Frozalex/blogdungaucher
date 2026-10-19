@@ -46,6 +46,7 @@ faq:
       It's broadly supported by empirical data, especially on the link between autonomy support and
       persistence. Its most contested part is the claim that these three needs are fundamental and
       universal, which is hard to falsify and has been debated in its cross-cultural reach.
+heroImageAlt: Three distinct roots supporting a young tree.
 ---
 
 You know someone who quit chess.

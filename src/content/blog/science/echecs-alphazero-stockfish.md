@@ -40,14 +40,11 @@ keyTakeaways:
 seoTitle: "AlphaZero contre Stockfish : la révolution de l'IA aux échecs"
 seoDescription: >-
   AlphaZero vs Stockfish 2017 : apprentissage par renforcement, réseau de neurones, style de jeu révolutionnaire. Comment l'IA a changé la compréhension des échecs.
-ogImage: /images/blog/echecs-alphazero-stockfish-hero.png
+ogImage: /images/og/echecs-alphazero-stockfish-og.webp
 heroImage:
-  src: /images/blog/echecs-alphazero-stockfish-hero.png
-  alt: >-
-    Illustration pixel art : réseau de neurones d'un côté, arbre de recherche algorithmique de l'autre, échiquier au
-    centre, « AlphaZero vs Stockfish »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-alphazero-stockfish-hero.webp
+  alt: Des milliers de fils tendus posés un à un, à côté d'une seule courbe tracée
+    d'un trait.
 faq:
   - question: AlphaZero est-il toujours le meilleur programme d'échecs ?
     answer: >-

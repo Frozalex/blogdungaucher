@@ -20,12 +20,14 @@ tags:
   - Nye
 seoTitle: "Grand Oral HGGSP : Fischer-Spassky et la guerre froide"
 seoDescription: "Fischer-Spassky 1972 et le soft power : distingue résultat sportif, prestige et influence politique pour construire ton Grand Oral HGGSP."
-ogImage: /images/og/sujet-grand-oral-hggsp-fischer-spassky-og.webp
+ogImage: /images/og/sujet-grand-oral-hggsp-fischer-spassky-watermarked-og.webp
 heroImage:
-  src: /images/go-fischer.svg
-  alt: "Schéma distinguant résultat sportif, récit de prestige et influence politique à démontrer."
+  src: /images/blog/sujet-grand-oral-hggsp-fischer-spassky-watermarked-hero.webp
+  alt: Schéma distinguant résultat sportif, récit de prestige et influence
+    politique à démontrer.
   credit: Blog d’un Gaucher
   license: Création originale
+
 ---
 
 Le match Fischer-Spassky de 1972 peut-il être analysé comme un instrument d'influence pendant la guerre froide ? Pour préparer ta réponse, distingue trois niveaux : le résultat sportif, le prestige qui lui est associé et les effets politiques effectivement démontrables.

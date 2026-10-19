@@ -26,8 +26,8 @@ seoDescription: "Distractions, fatigue et micro-pauses aux échecs : repérer le
 ogImage: /images/og/echecs-et-concentration-og.webp
 heroImage:
   src: /images/blog/echecs-et-concentration-hero.webp
-  alt: >-
-    Un cône lumineux large qui se resserre en un mince faisceau au fond d'une salle vide.
+  alt: Un cône lumineux large qui se resserre en un mince faisceau au fond d'une
+    salle vide.
 faq:
   - question: "À quelle fréquence faut-il faire une pause ?"
     answer: "Il n’existe pas d’intervalle validé pour tous les joueurs. Adapte les pauses à la tâche, à ton état et au temps disponible."

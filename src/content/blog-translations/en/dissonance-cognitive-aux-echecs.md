@@ -50,6 +50,7 @@ faq:
       separate the moment of the loss from the moment of the analysis: note the position and the facts
       while it's raw, without any conclusion, and analyse cold twenty-four hours later. Dissonance
       reduction does most of its work in the minutes right after the game.
+heroImageAlt: Two frames showing an upright king and a fallen king against amber shapes.
 ---
 
 Outside the playing hall, club tournament, round 3. Three players have just lost. Listen to them.

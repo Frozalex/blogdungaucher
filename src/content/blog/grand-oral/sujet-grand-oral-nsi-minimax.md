@@ -21,12 +21,11 @@ tags:
   - Python
 seoTitle: "Grand Oral NSI : fiche de révision minimax"
 seoDescription: "Fiche de révision minimax : exemple Python à deux niveaux, perspective des scores et limites de l'évaluation, avec renvoi au code complet du guide NSI."
-ogImage: /images/og/sujet-grand-oral-nsi-minimax-og.webp
+ogImage: /images/og/sujet-grand-oral-nsi-minimax-watermarked-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-nsi-minimax-hero.webp
-  alt: >-
-    Un couloir d'établissement scolaire bordé de casiers métalliques.
-  credit: "Htetrasme, CC BY-SA 4.0, via Wikimedia Commons"
+  src: /images/blog/sujet-grand-oral-nsi-minimax-watermarked-hero.webp
+  alt: Un couloir d'établissement scolaire bordé de casiers métalliques.
+  credit: Htetrasme, CC BY-SA 4.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Corridor_in_Robert_E._Bell_school,_1990s.jpg
   license: CC BY-SA 4.0
 noindex: true

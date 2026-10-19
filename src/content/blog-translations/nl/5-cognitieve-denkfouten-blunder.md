@@ -10,6 +10,7 @@ seoDescription: >-
   fout, Kahneman en hoe je je brein traint om ze te vermijden.
 frSlug: 5-biais-cognitifs-blunder
 draft: false
+heroImageAlt: Verschillende spoorlijnen komen samen in één spoor.
 ---
 
 Je had alles berekend, tenminste, dat dacht je. Dan de blunder: "hoe heb ik dat kunnen missen?" Zelden door tijdgebrek bij het rekenen; bijna altijd omdat **het brein besliste met een denkfout**, niet met een variantfout. De cognitieve wetenschap heeft deze afwijkingen in kaart gebracht; vijf daarvan kleven bijzonder hardnekkig aan het schaakbord.

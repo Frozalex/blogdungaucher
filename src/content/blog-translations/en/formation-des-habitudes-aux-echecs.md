@@ -49,6 +49,7 @@ faq:
       The highest-return one is the systematic check before playing a move, because its cue is
       perfectly sharp: the hand reaching for the piece. "Train more" isn't a habit, it's a project. A
       habit has to fit into a single action attached to a single signal.
+heroImageAlt: A worn circular track with a fresh path leading out.
 ---
 
 Every year, the same scene.

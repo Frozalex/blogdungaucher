@@ -57,6 +57,10 @@ faq:
       pas la même chose. À profondeur finie avec une évaluation heuristique, minimax est optimal par
       rapport à ses propres hypothèses. Ses erreurs viennent toujours de l'évaluation ou de l'horizon,
       jamais de l'algorithme.
+heroImage:
+  src: /images/blog/minimax-en-python-moteur-echecs-hero.webp
+  alt: Un mobile de bois ramifié alterne des niveaux sombres et bleus.
+ogImage: /images/og/minimax-en-python-moteur-echecs-og.webp
 ---
 
 L'article précédent s'est terminé sur un chiffre embarrassant : notre moteur glouton, celui qui joue toujours le coup rapportant le plus de matériel, finit ses parties avec **vingt-huit pions d'avance** et n'en gagne qu'une sur quatre. Deux tiers de ses parties s'achèvent sur un pat, parce qu'il mange tout ce qui bouge jusqu'à ce que l'adversaire n'ait plus un seul coup légal.

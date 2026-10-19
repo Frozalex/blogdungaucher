@@ -11,6 +11,10 @@ pillar: "Logique"
 tags: ["logique modale", "échecs", "raisonnement", "possibilité", "nécessité", "stratégie", "philosophie"]
 seoTitle: "Logique modale aux échecs : penser par possibilités et nécessités sur l'échiquier"
 seoDescription: "Comment la logique modale formelle structure le raisonnement aux échecs. Nécessité, possibilité, mondes possibles : la logique appliquée à l'échiquier."
+heroImage:
+  src: /images/blog/logique-modale-aux-echecs-hero.webp
+  alt: Un pion face à des portes, certaines murées et d’autres ouvertes.
+ogImage: /images/og/logique-modale-aux-echecs-og.webp
 ---
 
 Quand tu analyses une position, tu ne penses pas en termes de certitudes. Tu penses en termes de possibilités et de nécessités. "Il peut jouer là." "Je dois protéger cette pièce." "Si j'avance ce pion, il est forcé de répondre ainsi." Ce langage modal, celui du possible et du nécessaire, est au cœur de la réflexion échiquéenne. Et il correspond exactement à une branche formelle de la logique : la [logique modale](https://fr.wikipedia.org/wiki/Logique_modale).

@@ -29,12 +29,10 @@ keyTakeaways:
 seoTitle: "Échecs et cerveau : ce que l'IRMf révèle sur les joueurs experts"
 seoDescription: >-
   Échecs et cerveau : IRM structurelle, fonctions exécutives, neuroplasticité. Comment le cerveau d'un joueur expert diffère neurologiquement, avec les études clés.
-ogImage: /images/blog/les-echecs-et-le-cerveau-hero.webp
+ogImage: /images/og/les-echecs-et-le-cerveau-v2-og.webp
 heroImage:
-  src: /images/blog/les-echecs-et-le-cerveau-hero.webp
-  alt: "Vignette pixel art : cerveau lumineux sur fond étoilé violet-bleu, titre « Les échecs et le cerveau »"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/les-echecs-et-le-cerveau-v2-hero.webp
+  alt: Un profil humain en couches de papier bleues et sombres près d’un pion.
 summarySequence: classic
 faq:
   - question: "Les échecs modifient-ils physiquement le cerveau ?"

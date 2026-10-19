@@ -26,6 +26,10 @@ faq:
     answer: "Demande-lui s’il souhaite parler ou souffler. Vous pouvez convenir ensemble du moment de l’analyse, sans interpréter une réaction isolée comme un diagnostic."
   - question: "Un entraîneur peut-il être une figure de soutien ?"
     answer: "Les enquêtes de Davis et Jowett montrent que des athlètes peuvent percevoir leur entraîneur comme une base de sécurité. Elles ne prouvent pas que cette relation cause, à elle seule, une meilleure performance."
+heroImage:
+  src: /images/blog/theorie-de-l-attachement-aux-echecs-hero.webp
+  alt: Une petite barque reste reliée au quai par une longue corde souple.
+ogImage: /images/og/theorie-de-l-attachement-aux-echecs-og.webp
 ---
 
 Fin de ronde. Un enfant sort de la salle et cherche son parent du regard. Il a perdu. Tu voudrais comprendre la partie ; lui a peut-être surtout besoin de souffler.

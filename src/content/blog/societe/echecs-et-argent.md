@@ -26,8 +26,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-argent-og.webp
 heroImage:
   src: /images/blog/echecs-et-argent-hero.webp
-  alt: >-
-    Une balance où un grand trophée est soulevé par trois petites pièces de monnaie.
+  alt: Une balance où un grand trophée est soulevé par trois petites pièces de
+    monnaie.
 faq:
   - question: "Comment gagne sa vie un Grand Maître \"ordinaire\" ?"
     answer: >-

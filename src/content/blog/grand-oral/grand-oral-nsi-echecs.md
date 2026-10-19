@@ -11,12 +11,11 @@ pillar: "Informatique"
 tags: ["grand-oral", "NSI", "terminale", "algorithmique", "minimax", "Python", "AlphaZero", "intelligence artificielle", "structures de données", "baccalauréat"]
 seoTitle: "Grand oral NSI : les échecs, de l'algorithmique à l'IA, plan complet"
 seoDescription: "Prépare ton Grand Oral NSI avec les échecs : minimax et alpha-bêta en Python, arbres de recherche, PGN et AlphaZero, avec plan et questions de jury."
-ogImage: /images/og/grand-oral-nsi-echecs-og.webp
+ogImage: /images/og/grand-oral-nsi-echecs-watermarked-og.webp
 heroImage:
-  src: /images/blog/grand-oral-nsi-echecs-hero.webp
-  alt: >-
-    Une salle de sciences avec paillasses et tableau noir, vue depuis l'entrée.
-  credit: "Douglas P. Perkins, CC BY 3.0, via Wikimedia Commons"
+  src: /images/blog/grand-oral-nsi-echecs-watermarked-hero.webp
+  alt: Une salle de sciences avec paillasses et tableau noir, vue depuis l'entrée.
+  credit: Douglas P. Perkins, CC BY 3.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Jinego_Elementary_School_science_room_front.jpg
   license: CC BY 3.0
 faq:

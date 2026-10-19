@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "A chessboard grid whose squares merge into five large, coherent blocks."
+heroImageAlt: A chessboard grid whose squares merge into five large, coherent blocks.
 title: "Mental Visualization in Chess: Seeing Without Looking"
 excerpt: "Grandmasters play dozens of simultaneous blindfold games. It's not magic: it's spatial visualization trained to the extreme. How the mental representation of the chessboard works, and how to improve it."
 seoTitle: "Chess Mental Visualization: Seeing Without Looking"

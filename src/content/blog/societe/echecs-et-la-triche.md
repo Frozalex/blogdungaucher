@@ -41,8 +41,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-la-triche-og.webp
 heroImage:
   src: /images/blog/echecs-et-la-triche-hero.webp
-  alt: >-
-    Un pion projetant une ombre longue dont la silhouette géométrique ne correspond pas à l'objet.
+  alt: Un pion projetant une ombre longue dont la silhouette géométrique ne
+    correspond pas à l'objet.
 faq:
   - question: Hans Niemann a-t-il vraiment triché contre Magnus Carlsen ?
     answer: >-

@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "A stone step blending into a continuous ramp that flattens the ground."
+heroImageAlt: A stone step blending into a continuous ramp that flattens the ground.
 title: "Chess and Disability: When the Board Erases Boundaries"
 excerpt: "Blind players calculate deep variations through touch. Players with quadriplegia move pieces with their gaze. People with autism find a structure in chess that the social world doesn't offer them. The board is one of the rare spaces where disability ceases to be a barrier."
 seoTitle: "Chess and Disability: The Board as an Inclusion Space"

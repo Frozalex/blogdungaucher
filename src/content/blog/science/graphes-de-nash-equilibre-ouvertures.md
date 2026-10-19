@@ -26,6 +26,11 @@ faq:
   - question: Une évaluation égale prouve-t-elle la nulle ?
     answer: >-
       Une estimation de moteur à profondeur limitée ne suffit pas. Une preuve doit couvrir les réponses légales pertinentes et les règles de fin de partie.
+heroImage:
+  src: /images/blog/graphes-de-nash-equilibre-ouvertures-hero.webp
+  alt: Deux pièces d'échecs adossées l'une à l'autre, en équilibre mutuel, prêtes
+    à tomber ensemble.
+ogImage: /images/og/graphes-de-nash-equilibre-ouvertures-og.webp
 ---
 
 Pourquoi certaines ouvertures restent-elles jouées malgré des décennies d’analyse ? L’équilibre de Nash donne un langage pour réfléchir aux stratégies, mais il ne transforme pas une variante populaire en théorème.

@@ -50,6 +50,10 @@ faq:
       considérable : reconnaissance de motifs, mémoire spécialisée, calcul de variantes. Ce qui n'est
       pas démontré, c'est le transfert vers des domaines éloignés. La bonne raison de jouer n'a jamais
       été la promesse d'un cerveau amélioré.
+heroImage:
+  src: /images/blog/neuroplasticite-aux-echecs-hero.webp
+  alt: Une corde tressée se défait puis se recompose en nouvelles ramifications.
+ogImage: /images/og/neuroplasticite-aux-echecs-og.webp
 ---
 
 Tape « échecs cerveau » dans un moteur de recherche. Tu vas tomber, en boucle, sur la même phrase : les échecs **recâblent** ton cerveau. Parfois avec un mot savant en renfort, neuroplasticité, et deux études en caution : les chauffeurs de taxi londoniens et les jongleurs.

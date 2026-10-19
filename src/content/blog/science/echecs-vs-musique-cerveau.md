@@ -24,9 +24,10 @@ faq:
   - question: "Comment choisir ?"
     answer: "Choisis selon ce que tu souhaites apprendre, ton plaisir et les conditions de pratique. Aucun gain général d'intelligence n'est garanti."
 heroImage:
-  src: "/images/og-default.png"
-  alt: "Partition musicale et échiquier : deux disciplines de la concentration"
-ogImage: "/images/og-default.png"
+  src: /images/blog/echecs-vs-musique-cerveau-hero.webp
+  alt: Un diapason et un cavalier projettent des ombres qui se rejoignent.
+ogImage: /images/og/echecs-vs-musique-cerveau-og.webp
+
 ---
 
 Il y a une conviction bien installée : la musique serait la meilleure chose qu'on puisse faire pour son cerveau. Les joueurs d'échecs avancent aussi leurs arguments. Comparer les deux activités exige de préciser ce qu'on veut mesurer.

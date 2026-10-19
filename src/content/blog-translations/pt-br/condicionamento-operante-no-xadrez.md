@@ -48,6 +48,7 @@ faq:
       qualidade, como se dar uma nota pelo cumprimento do seu protocolo de verificação
       independentemente do resultado, molda o comportamento pretendido. A modelagem por aproximações
       sucessivas, descrita por Skinner, também é o princípio de qualquer bom plano de treino.
+heroImageAlt: Um dedo se aproxima de um botão mecânico ao lado de uma bandeja.
 ---
 
 Você tinha dito uma partida. É uma da manhã e você já jogou dezessete.

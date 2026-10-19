@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Duas cadeiras de frente uma para a outra em volta de uma mesa, separadas por uma divisória vertical nítida."
+heroImageAlt: Duas cadeiras de frente uma para a outra em volta de uma mesa,
+  separadas por uma divisória vertical nítida.
 title: "A solidão no xadrez: o esporte onde você é regulamentarmente sozinho"
 excerpt: >-
   O xadrez é talvez o único esporte de competição onde a solidão não é um estado d'alma, mas uma regra. Nenhum

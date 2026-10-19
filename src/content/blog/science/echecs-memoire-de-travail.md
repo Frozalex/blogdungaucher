@@ -40,8 +40,8 @@ seoDescription: "Mémoire de travail aux échecs : modèle de Baddeley, chunks e
 ogImage: /images/og/echecs-memoire-de-travail-og.webp
 heroImage:
   src: /images/blog/echecs-memoire-de-travail-hero.webp
-  alt: >-
-    Un entonnoir de verre étroit laissant passer cinq pièces d'échecs, les autres s'accumulant au-dessus.
+  alt: Un entonnoir de verre étroit laissant passer cinq pièces d'échecs, les
+    autres s'accumulant au-dessus.
 faq:
   - question: Qu'est-ce que la mémoire de travail et en quoi diffère-t-elle de la mémoire à court terme ?
     answer: >-

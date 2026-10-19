@@ -50,6 +50,10 @@ faq:
       information sur la pédagogie du formateur, ce qui est utile. Elle n'est pas une raison d'acheter.
       La question à se poser reste la même : ce contenu vaut-il ce prix, indépendamment de ce que j'ai
       déjà reçu.
+heroImage:
+  src: /images/blog/reciprocite-aux-echecs-hero.webp
+  alt: Deux mains ouvertes échangent deux pièces de puzzle en bois.
+ogImage: /images/og/reciprocite-aux-echecs-og.webp
 ---
 
 Tu perds ta partie au club. Un joueur plus fort s'assoit en face de toi et te propose de regarder ça ensemble.

@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "A straight trail of footprints where a single mark veers sharply off to the side."
+heroImageAlt: A straight trail of footprints where a single mark veers sharply
+  off to the side.
 title: "Analyzing Your Chess Games: The Practical Guide to Real Progress"
 excerpt: "Playing many games without analyzing them is training to repeat your errors. Post-game analysis is the most profitable task for chess progress, and the most poorly done. Method, tools, traps to avoid."
 seoTitle: "Analyzing Your Chess Games: Practical Method to Progress"

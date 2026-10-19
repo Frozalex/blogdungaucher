@@ -20,12 +20,14 @@ tags:
   - inégalités
 seoTitle: "Grand Oral SES : Bourdieu, échecs et inégalités d’accès"
 seoDescription: "Capital culturel et accès aux échecs : applique le cadre de Bourdieu en distinguant hypothèses, exemples et données nécessaires pour ton Grand Oral SES."
-ogImage: /images/og/sujet-grand-oral-ses-bourdieu-reproduction-og.webp
+ogImage: /images/og/sujet-grand-oral-ses-bourdieu-reproduction-watermarked-og.webp
 heroImage:
-  src: /images/go-bourdieu.svg
-  alt: "Schéma distinguant savoirs appris, biens culturels et reconnaissance institutionnelle."
+  src: /images/blog/sujet-grand-oral-ses-bourdieu-reproduction-watermarked-hero.webp
+  alt: Schéma distinguant savoirs appris, biens culturels et reconnaissance
+    institutionnelle.
   credit: Blog d’un Gaucher
   license: Création originale
+
 ---
 
 Les échecs peuvent-ils servir à étudier la reproduction des inégalités culturelles ? La question est intéressante à condition de ne pas confondre une grille théorique, une hypothèse sur le jeu et une enquête qui l'aurait vérifiée.

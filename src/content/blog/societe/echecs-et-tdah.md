@@ -23,8 +23,8 @@ seoDescription: >-
   TDAH et échecs : pourquoi l'échiquier crée les conditions où le cerveau TDAH s'ancre naturellement. Recherche, adaptations pratiques et bénéfices mesurés.
 heroImage:
   src: /images/blog/echecs-et-tdah-hero.webp
-  alt: >-
-    Une aiguille de boussole démultipliée en flou se stabilisant sur un point unique.
+  alt: Une aiguille de boussole démultipliée en flou se stabilisant sur un point
+    unique.
 faq:
   - question: "À quel âge un enfant TDAH peut-il commencer les échecs ?"
     answer: >-
@@ -50,6 +50,7 @@ faq:
       cliniques officielles. Mais de nombreux psychiatres et psychologues spécialisés les mentionnent comme
       complément pertinent, notamment pour les enfants chez qui la médication seule ne suffit pas ou est
       refusée par les parents.
+ogImage: /images/og/echecs-et-tdah-og.webp
 ---
 
 Luca a 10 ans. Son enseignante dit qu'il est incapable de rester concentré plus de deux minutes. Il n'écoute pas, il dérange, il finit rarement un exercice. Ses parents ont essayé les cours de soutien, les activités sportives, la lecture à voix haute. Rien ne tient.

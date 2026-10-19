@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Ilustração em pixel art: uma criança jogando xadrez numa rua da cidade, tabuleiro improvisado sobre uma caixa de madeira, « Xadrez e precariedade »"
+heroImageAlt: Peças idênticas avançam do piso liso para a areia solta.
 title: "Xadrez e precariedade: quando o tabuleiro transcende as desigualdades sociais"
 excerpt: >-
   O xadrez produziu campeões nascidos na pobreza extrema, Grandes Mestres saídos de bairros desfavorecidos,

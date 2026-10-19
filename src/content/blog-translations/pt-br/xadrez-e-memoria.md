@@ -1,5 +1,7 @@
 ﻿---
-heroImageAlt: "Ilustração em pixel art: perfil de uma cabeça preenchido com peças de xadrez e estrelas sobre fundo azul-noite; texto « Descubra o poder do xadrez sobre a sua memória » à esquerda."
+heroImageAlt: "Ilustração em pixel art: perfil de uma cabeça preenchido por
+  peças de xadrez e estrelas sobre fundo azul-escuro, com uma chamada sobre
+  memória à esquerda."
 title: "Descubra o poder do xadrez sobre a sua memória"
 excerpt: >-
   Memória de trabalho, chunks, aberturas, partidas esquecidas ou gravadas: o que a psicologia cognitiva e a

@@ -14,8 +14,8 @@ seoDescription: "Sentiment d'imposture aux échecs : attribution des succès et 
 ogImage: /images/og/syndrome-imposteur-aux-echecs-og.webp
 heroImage:
   src: /images/blog/syndrome-imposteur-aux-echecs-hero.webp
-  alt: >-
-    Coupe souterraine montrant un vaste réseau de racines sous une pousse minuscule.
+  alt: Coupe souterraine montrant un vaste réseau de racines sous une pousse
+    minuscule.
 
 ---
 

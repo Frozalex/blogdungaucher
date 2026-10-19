@@ -41,6 +41,7 @@ faq:
       transformatie is: patroonherkenning, gespecialiseerd geheugen, variantberekening. Wat niet is
       aangetoond, is de overdracht naar verre domeinen. De goede reden om te spelen is nooit de belofte
       van een verbeterd brein geweest.
+heroImageAlt: Een gevlochten touw dat zich in nieuwe vertakkingen splitst.
 ---
 
 Typ "schaken brein" in een zoekmachine. Je komt keer op keer dezelfde zin tegen: schaken **herbedraadt** je brein. Soms met een geleerd woord als steun, neuroplasticiteit, en twee studies als borg: de Londense taxichauffeurs en de jongleurs.

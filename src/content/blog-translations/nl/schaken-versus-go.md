@@ -23,6 +23,7 @@ faq:
       Ja, maar dat is zeldzaam. De vaardigheden overlappen gedeeltelijk (patroonherkenning, situatiegeheugen),
       maar de heuristieken van elk spel interfereren vaak. De meeste zeer goede spelers specialiseren zich
       in slechts één spel.
+heroImageAlt: Een schaakpaard en een gosteen gescheiden door gevouwen papier.
 ---
 
 Er is een vraag die spelers van beide kampen bij elke ontmoeting terugnemen: welk van beide spelen is het meest complex? Go-liefhebbers tonen de astronomische cijfers van hun spelruimte. Schaakspelers antwoorden dat hun spel een tactische nauwkeurigheid vereist die Go niet kent. Beide hebben gedeeltelijk gelijk. En de vraag zelf is verkeerd gesteld.

@@ -15,8 +15,8 @@ seoDescription: "Minimax, équilibre de Nash, stratégies mixtes, théorème de 
 ogImage: /images/og/theorie-des-jeux-aux-echecs-og.webp
 heroImage:
   src: /images/blog/theorie-des-jeux-aux-echecs-hero.webp
-  alt: >-
-    Un sablier dont le sable est fait de minuscules pièces d'échecs qui passent d'une ampoule à l'autre.
+  alt: Un sablier dont le sable est fait de minuscules pièces d'échecs qui passent
+    d'une ampoule à l'autre.
 faq:
   - question: "Les échecs sont-ils à somme nulle ?"
     answer: "Oui, en attribuant +1 au gagnant, −1 au perdant et 0 à chacun pour une nulle. La notation habituelle 1–0 ou ½–½ est à somme constante et se transforme en somme nulle."

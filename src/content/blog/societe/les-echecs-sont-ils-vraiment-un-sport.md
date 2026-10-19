@@ -25,6 +25,11 @@ faq:
     answer: "Plusieurs raisons : pas de spectacle visuel pour la télévision, durée des parties incompatible avec les formats olympiques, et résistance de fait du CIO à élargir aux sports cérébraux. Le bridge a connu le même refus."
   - question: "Les échecs préparent-ils physiquement les joueurs ?"
     answer: "Les pros le font, oui. Magnus Carlsen, Levon Aronian, Fabiano Caruana font tous du sport intense (course, foot, yoga) pour tenir physiquement les longues parties. La fatigue physique se traduit directement en erreurs."
+heroImage:
+  src: /images/blog/les-echecs-sont-ils-vraiment-un-sport-hero.webp
+  alt: Une pièce d'échecs posée à cheval sur la ligne séparant un sol de gymnase
+    d'un parquet.
+ogImage: /images/og/les-echecs-sont-ils-vraiment-un-sport-og.webp
 ---
 
 Tu poses la question à dix personnes au hasard : « les échecs sont-ils un sport ? ». Tu obtiens dix réponses différentes, souvent très tranchées. Pour certains, c'est évident : un sport demande de la sueur, des muscles, un essoufflement. Pour d'autres, c'est tout aussi évident dans l'autre sens : le CIO les a reconnus, point.

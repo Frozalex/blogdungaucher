@@ -25,6 +25,10 @@ faq:
     answer: "Elles donnent des indices à interpréter avec ton ressenti et le contexte, sans constituer un diagnostic."
   - question: "Faut-il arrêter après deux défaites ?"
     answer: "Tu peux choisir cette limite personnelle, mais ce seuil ne constitue pas un protocole scientifique universel."
+heroImage:
+  src: /images/blog/intelligence-emotionnelle-aux-echecs-hero.webp
+  alt: Une main maintient un bol dont les ondulations s’apaisent.
+ogImage: /images/og/intelligence-emotionnelle-aux-echecs-og.webp
 ---
 
 Tu sais que tu es agacé, mais tu relances une partie. Reconnaître une émotion et choisir ce que tu en fais sont deux difficultés différentes. L'expression « intelligence émotionnelle » peut aider à les distinguer, à condition de préciser ce qu'elle désigne.

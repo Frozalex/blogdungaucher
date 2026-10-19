@@ -27,8 +27,7 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-procrastination-og.webp
 heroImage:
   src: /images/blog/echecs-et-procrastination-hero.webp
-  alt: >-
-    Un sablier presque écoulé posé près d'une pièce d'échecs restée immobile.
+  alt: Un sablier presque écoulé posé près d'une pièce d'échecs restée immobile.
 faq:
   - question: "Réfléchir longtemps signifie-t-il procrastiner ?"
     answer: "Non. Une position peut demander un calcul long. Examine ce que la réflexion apporte et la question qu’elle traite."

@@ -24,6 +24,11 @@ faq:
     answer: "Les sources citées ne donnent pas un taux de 80 % pour une partie d'échecs. Le contenu, l'apprentissage initial, le délai et les révisions comptent."
   - question: "Comment vérifier ce qu’on retient ?"
     answer: "Essaie de retrouver une position ou une idée sans le support, puis compare et corrige. Les résultats sur le rappel de textes suggèrent une piste, sans valider un calendrier optimal propre aux échecs."
+heroImage:
+  src: /images/blog/memoriser-parties-aux-echecs-hero.webp
+  alt: Une position d'échecs presque effacée dont seuls trois groupes de pièces
+    restent nets.
+ogImage: /images/og/memoriser-parties-aux-echecs-og.webp
 ---
 
 Tu ouvres un livre et tu suis une partie coup par coup. Tu comprends le commentaire, tu admires un sacrifice. Quelques mois plus tard, tu ne sais plus rejouer la partie entière. Cela ne prouve ni que tu n'as rien appris ni que le souvenir exact serait inutile.

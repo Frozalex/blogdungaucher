@@ -41,6 +41,7 @@ faq:
       vermindert het aantal beslissingen dat je voor de partij moet nemen en stabiliseert je emotionele
       uitgangstoestand. Dat voordeel is reëel en heeft niets met placebo te maken: het gaat om
       aandachtseconomie.
+heroImageAlt: Twee identieke kopjes naast een schaduw in de vorm van een deur.
 ---
 
 Er is de trui. Die waarmee je dat toernooi drie jaar geleden won, en die je bij elke belangrijke ronde weer aantrekt.

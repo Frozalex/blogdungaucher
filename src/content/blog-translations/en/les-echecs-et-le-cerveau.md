@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "Pixel art thumbnail: a glowing brain on a purple-blue starry background, title \"Chess and the brain\""
+heroImageAlt: A human profile made of blue and dark paper layers beside a pawn.
 title: "Chess and the Brain: What Science Really Reveals"
 excerpt: >-
   A grandmaster isn't a born genius: they have a trained brain. Structural MRI, functional connectivity, chronnectome,

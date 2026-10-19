@@ -48,6 +48,7 @@ faq:
       With a simple test: can you explain what the move does, without citing a source? If the only
       justification available is that it's the main line or that the engine approves, you've adopted a
       conclusion without the reasoning, which makes it useless in the position next door.
+heroImageAlt: Paper arrows following the same curve, one slightly offset.
 ---
 
 You're looking at your database. In this position, 82% of games continue with the same move. The evaluation is good. The players who played it are strong.

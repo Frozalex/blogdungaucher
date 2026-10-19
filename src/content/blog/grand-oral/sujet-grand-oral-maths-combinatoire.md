@@ -21,12 +21,12 @@ tags:
   - nombre de Shannon
 seoTitle: "Grand Oral Maths : fiche combinatoire et échecs"
 seoDescription: "Fiche de révision sur la combinatoire aux échecs : arbre uniforme, demi-coups, ordre de grandeur de Shannon et distinctions à expliquer au jury."
-ogImage: /images/og/sujet-grand-oral-maths-combinatoire-og.webp
+ogImage: /images/og/sujet-grand-oral-maths-combinatoire-watermarked-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-maths-combinatoire-hero.webp
-  alt: >-
-    L'entrée en bois d'un ancien bâtiment scolaire, avec un tableau noir posé sur un chevalet.
-  credit: "Tokumeigakarinoaoshima, CC BY-SA 4.0, via Wikimedia Commons"
+  src: /images/blog/sujet-grand-oral-maths-combinatoire-watermarked-hero.webp
+  alt: L'entrée en bois d'un ancien bâtiment scolaire, avec un tableau noir posé
+    sur un chevalet.
+  credit: Tokumeigakarinoaoshima, CC BY-SA 4.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Toyosato_Elementary_School_Old_Building_Conference_Room_Entrance_on_21st_July_2019.jpg
   license: CC BY-SA 4.0
 noindex: true

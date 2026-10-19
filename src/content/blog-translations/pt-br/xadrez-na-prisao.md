@@ -1,5 +1,8 @@
 ﻿---
-heroImageAlt: "Ilustração em pixel art: uma cela de paredes de pedra escuras, luz entre as grades desenhando um tabuleiro no chão, um rei negro no centro, uma porta aberta para um corredor iluminado; título « O xadrez na prisão: quando o tabuleiro se torna uma ferramenta de reabilitação » sobreposto."
+heroImageAlt: "Ilustração em pixel art: uma cela de paredes de pedra escuras,
+  luz entre as grades desenhando um tabuleiro no chão, um rei negro no centro,
+  uma porta aberta para um corredor iluminado; título « O xadrez na prisão:
+  quando o tabuleiro se torna uma ferramenta de reabilitação » sobreposto."
 title: "Xadrez na prisão: quando o tabuleiro se torna uma ferramenta de reabilitação"
 excerpt: >-
   Detentos que aprendem a antecipar as consequências a três lances de distância, a gerenciar a frustração de uma peça

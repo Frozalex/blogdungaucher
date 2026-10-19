@@ -42,6 +42,7 @@ faq:
       tegenstander in twee derde van de gevallen <strong>pat</strong>, omdat hij niet weet dat een
       stelling zonder legale zet en zonder schaak remise is. Ver vooruit kijken is belangrijker dan goed
       tellen.
+heroImageAlt: Silhouetten van schaakstukken naast een meetgoot zonder markeringen.
 ---
 
 Je engine [speelt volledige partijen](/nl/blog/un-moteur-qui-joue-au-hasard/) en heeft geen enkele reden om de ene zet boven de andere te verkiezen. Tijd om hem die te geven.

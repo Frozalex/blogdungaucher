@@ -42,6 +42,8 @@ faq:
       effectieve regel is om het moment van de nederlaag en het moment van de analyse in de tijd te
       scheiden: noteer de stelling en de feiten meteen, zonder conclusie, en analyseer vierentwintig uur
       later, met koel hoofd. Dissonantievermindering werkt vooral in de minuten erna.
+heroImageAlt: Twee kaders tonen een staande koning en een omgevallen koning bij
+  amberkleurige vormen.
 ---
 
 Uitgang van de zaal, clubtoernooi, ronde 3. Drie spelers hebben net verloren. Luister naar hen.

@@ -49,6 +49,7 @@ faq:
       empate, por exemplo nunca responder sem antes ter avaliado a posição por três minutos. O princípio
       geral é tornar as suas decisões independentes do comportamento do adversário, já que é justamente
       esse comportamento que serve de instrumento.
+heroImageAlt: Um fio tenso puxa lateralmente um pêndulo suspenso.
 ---
 
 Você está melhor. Bem melhor. Tem um peão a mais e uma estrutura sadia, e ainda restam vinte minutos contra doze.

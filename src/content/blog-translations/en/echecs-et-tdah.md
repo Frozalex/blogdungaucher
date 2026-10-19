@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "A compass needle multiplied into a blur, settling back onto a single point."
+heroImageAlt: A compass needle multiplied into a blur, settling back onto a single point.
 title: "Chess and ADHD: Why the Chessboard Captures the Attention Everything Else Fails to Hold"
 excerpt: >-
   ADHD isn't an attention deficit - it's inconsistent attention. The chessboard creates the rare conditions where this

@@ -27,6 +27,10 @@ faq:
     answer: "Non. Le moment du récit ne suffit pas à établir sa vérité ou sa fausseté. Compare les souvenirs aux traces et aux variantes."
   - question: "Une note préalable prouve-t-elle tout ton raisonnement ?"
     answer: "Elle conserve ce que tu as écrit, pas tous les facteurs qui ont influencé la décision. Réserve les notes d’analyse à l’entraînement et à l’après-partie."
+heroImage:
+  src: /images/blog/rationalisation-aux-echecs-hero.webp
+  alt: Une façade de papier droite recouvre une structure de bois de travers.
+ogImage: /images/og/rationalisation-aux-echecs-og.webp
 ---
 
 Tu expliques ton coup par une case faible ou une colonne ouverte. Cette explication peut correspondre à ta réflexion pendant la partie. Elle peut aussi avoir changé après l’analyse. Il faut examiner cette possibilité sans déclarer d’avance que ton récit est faux.

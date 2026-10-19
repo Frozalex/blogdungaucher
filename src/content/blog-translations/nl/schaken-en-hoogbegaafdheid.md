@@ -46,6 +46,7 @@ faq:
       zich afgestemd voelt van zijn klasgenoten. Maar schaakclubs zijn niet automatisch inclusieve
       ruimtes: hoogbegaafden met extra sociale moeilijkheden (lichte ASS, sociale angst) kunnen specifieke
       begeleiding nodig hebben.
+heroImageAlt: Een schaakstuk onder aan een hoge wenteltrap.
 ---
 
 "Mijn zoon is hoogbegaafd en verveelt zich op school. Zouden schaken hem passen?"

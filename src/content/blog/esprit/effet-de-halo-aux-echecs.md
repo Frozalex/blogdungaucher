@@ -27,6 +27,11 @@ faq:
     answer: "Non. Il peut informer la préparation et le score attendu. Il ne prouve pas que chaque coup joué soit correct."
   - question: "Trente parties masquées mesurent-elles ton halo ?"
     answer: "Non. Une comparaison avant/après ne contrôle pas toutes les différences entre les séances. Le nombre trente n’a pas ici de justification universelle."
+heroImage:
+  src: /images/blog/effet-de-halo-aux-echecs-hero.webp
+  alt: Deux objets identiques sont éclairés différemment, l’un entouré d’un halo
+    ambre.
+ogImage: /images/og/effet-de-halo-aux-echecs-og.webp
 ---
 
 Un coup surprenant te paraît peut-être profond quand il vient d’un champion, douteux quand il vient d’un débutant. Cette différence mérite d’être examinée. Le nom de l’auteur apporte un contexte ; il ne remplace pas la variante qui rend le coup bon ou mauvais.

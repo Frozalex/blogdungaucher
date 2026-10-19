@@ -54,6 +54,10 @@ faq:
       pas une accusation publique : c'est une transmission d'information à une instance qui dispose des
       moyens d'enquêter. La distinction est décisive, juridiquement comme éthiquement, et c'est
       précisément ce que les procédures existent pour permettre.
+heroImage:
+  src: /images/blog/effet-spectateur-aux-echecs-hero.webp
+  alt: Un gant tombé au centre d’un cercle de chaussures immobiles.
+ogImage: /images/og/effet-spectateur-aux-echecs-og.webp
 ---
 
 Un joueur enchaîne quinze parties avec une précision de moteur, dans un tournoi ouvert, sous les yeux de deux cents spectateurs. Le chat commente. Certains rient. Quelques-uns écrivent que c'est évident.

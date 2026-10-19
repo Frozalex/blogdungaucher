@@ -43,6 +43,10 @@ faq:
     answer: >-
       Tu peux conserver une routine simple si elle t’aide à t’organiser. Cela ne prouve pas qu’un objet
       porte chance ; adapte la routine pour pouvoir jouer aussi lorsqu’un détail manque.
+heroImage:
+  src: /images/blog/effet-placebo-aux-echecs-hero.webp
+  alt: Deux tasses identiques voisinent avec une ombre prenant la forme d’une porte.
+ogImage: /images/og/effet-placebo-aux-echecs-og.webp
 ---
 
 Il y a le pull. Celui avec lequel tu as gagné un tournoi et que tu remets pour les rondes importantes. Il y a le café à heure fixe, l’ouverture qui te rassure, le geste que tu répètes avant de lancer la pendule.

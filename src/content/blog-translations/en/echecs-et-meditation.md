@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "A close-up bowl of water whose surface has just settled back to perfect stillness."
+heroImageAlt: A close-up of a bowl of water whose surface has just become still again.
 title: "Meditation and Chess: Mindfulness in Service of the Slow Game"
 excerpt: "Meditation won't make you a better calculator. But it changes what you do when you calculate: less mental agitation, more presence with the position. What mindfulness studies say when applied to the chessboard."
 seoTitle: "Meditation and Chess: Mindfulness for Better Play"

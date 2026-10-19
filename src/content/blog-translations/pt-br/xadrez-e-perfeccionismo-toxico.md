@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Uma mão polindo um ponto de uma superfície lisa até abrir um buraco nela."
+heroImageAlt: Uma mão polindo um ponto de uma superfície lisa até abrir um buraco nela.
 title: "Xadrez e perfeccionismo tóxico: quando o melhor se torna inimigo do bom"
 excerpt: >-
   O perfeccionismo parece uma qualidade no xadrez : buscar o melhor lance, analisar profundamente, não deixar nada ao

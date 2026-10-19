@@ -20,14 +20,14 @@ tags:
   - force brute
 seoTitle: "Grand Oral Maths : Zermelo et la complexité des échecs"
 seoDescription: "Valeur sous jeu parfait, nombre de Shannon et recherche exhaustive : distingue existence d’une solution et difficulté de calcul pour ton Grand Oral Maths."
-ogImage: /images/og/sujet-grand-oral-maths-zermelo-complexite-og.webp
+ogImage: /images/og/sujet-grand-oral-maths-zermelo-complexite-watermarked-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-maths-zermelo-complexite-hero.webp
-  alt: >-
-    Des rangées de pupitres vides dans un amphithéâtre de cours.
-  credit: "Paul The Writer, CC0, via Wikimedia Commons"
+  src: /images/blog/sujet-grand-oral-maths-zermelo-complexite-watermarked-hero.webp
+  alt: Des rangées de pupitres vides dans un amphithéâtre de cours.
+  credit: Paul The Writer, CC0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Rows_of_Desks_in_Lecture_Theatre.jpg
   license: CC0
+
 ---
 
 Les échecs ont-ils une valeur théorique que nous pourrions calculer ? La question relie une démonstration d'existence à une difficulté de calcul. Elle ne permet pas d'affirmer que les mathématiques auraient prouvé l'impossibilité de toute résolution future.

@@ -25,6 +25,11 @@ faq:
     answer: "Non. L’étude de 1973 concerne une activité et des conditions particulières ; ses auteurs refusent eux-mêmes cette généralisation."
   - question: "Ton motif de départ décide-t-il de tout ?"
     answer: "Non. Tes raisons de jouer peuvent évoluer et coexister. Commencer par le classement ne te rend pas immunisé contre une baisse ultérieure de plaisir."
+heroImage:
+  src: /images/blog/motivation-intrinseque-aux-echecs-hero.webp
+  alt: Une lanterne contenant une petite flamme se trouve près d’un grand trophée
+    sombre.
+ogImage: /images/og/motivation-intrinseque-aux-echecs-og.webp
 ---
 
 Le classement peut te donner envie de jouer. Il peut aussi prendre une place qui te pèse. Pour comprendre ce qui se passe, regarde ce que tu apprécies aujourd’hui : résoudre une position, gagner, retrouver des partenaires, apprendre ou relever un défi.

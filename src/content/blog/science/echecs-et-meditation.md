@@ -35,8 +35,8 @@ seoDescription: "Pleine conscience et échecs : découvrir un exercice, comprend
 ogImage: /images/og/echecs-et-meditation-og.webp
 heroImage:
   src: /images/blog/echecs-et-meditation-hero.webp
-  alt: >-
-    Un bol d'eau vu de près dont la surface vient de redevenir parfaitement immobile.
+  alt: Un bol d'eau vu de près dont la surface vient de redevenir parfaitement
+    immobile.
 faq:
   - question: La méditation rend-elle meilleur aux échecs ?
     answer: >-

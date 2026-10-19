@@ -6,6 +6,7 @@ excerpt: >-
 seoTitle: "Raiva no xadrez e ragequit: os circuitos do cérebro"
 seoDescription: "Por que a derrota no xadrez desencadeia uma raiva intensa. Os circuitos neurológicos do ragequit, o papel da amígdala, e como retomar o controle."
 frSlug: echecs-et-colere-ragequit
+heroImageAlt: Um arco elétrico salta entre dois condutores escuros.
 ---
 
 Você perdeu uma peça num blunder estúpido. Ou o adversário recusou o empate. Ou ele jogou um lance de alto percentual que "ninguém jogaria de verdade". E de repente, algo se quebra. A mão fecha. Os dentes se cerram. Você fecha a aba com violência, ou pior, continua conectado para dizer algo que vai se arrepender. É o ragequit, e não é uma fraqueza de caráter : é biologia.

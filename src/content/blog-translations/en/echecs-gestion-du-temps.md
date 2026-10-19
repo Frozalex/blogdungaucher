@@ -1,5 +1,6 @@
 ---
-heroImageAlt: "A row of glass containers of very unequal widths, each with liquid flowing through."
+heroImageAlt: A row of glass containers of very unequal widths, each with liquid
+  flowing through.
 title: "Time Management in Chess: The Clock as a Mirror of Your Decisions"
 excerpt: "The clock doesn't lie. It reveals your relationship with uncertainty, decision-making under pressure, and confidence in your own judgment. What decision psychology and tournament data say about time management, and how to concretely improve it."
 seoTitle: "Chess Time Management: Mastering the Clock and Decision-Making Under Pressure"

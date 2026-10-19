@@ -46,6 +46,7 @@ faq:
       stuurt <code>position</code> en dan <code>go</code>, de engine antwoordt met <code>info</code>-
       regels en dan een <code>bestmove</code>-regel. Omdat het tekst is op de standaardinvoer en -uitvoer,
       kan elke taal die op de console kan schrijven UCI spreken, Python inbegrepen.
+heroImageAlt: Losse tandwielen en een schaakpion op een houten werkbank.
 ---
 
 Je hebt waarschijnlijk ooit uit nieuwsgierigheid de repository van Stockfish geopend. Zestigduizend regels C++, bestanden met namen als `bitboard.cpp` en `nnue_architecture.h`, tabellen met magische constanten waar geen enkel commentaar uitlegt waar ze vandaan komen. En je hebt het tabblad weer gesloten.

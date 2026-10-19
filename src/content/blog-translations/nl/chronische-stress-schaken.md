@@ -42,6 +42,7 @@ faq:
       herstel van de slaap. Slaap is de hefboom waarvan het effect op de cortisolregulatie en de
       cognitie het best is vastgesteld, en het is ook degene die als eerste verslechtert in een drukke
       seizoenskalender.
+heroImageAlt: Een strak elastiek vervormt een houten kader.
 ---
 
 Je speelt al vier maanden achter elkaar toernooien. Je rating stagneert, en daalt dan. Je begint fouten te maken die niet bij je passen: geen subtiele strategische vergissingen, maar stukken die in slag staan, elementaire tactische motieven die je vroeger zonder nadenken oploste.

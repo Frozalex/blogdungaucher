@@ -6,6 +6,7 @@ excerpt: >-
 seoTitle: "Lei de Murphy no xadrez: por que os blunders caem sempre no pior momento"
 seoDescription: "A lei de Murphy aplicada ao xadrez: memória seletiva, estresse, zeitnot e vieses cognitivos. Por que os erros parecem sempre cruelmente bem colocados."
 frSlug: loi-de-murphy-aux-echecs
+heroImageAlt: Fileiras de tachinhas escuras, algumas cercadas por círculos claros.
 ---
 
 O enxadrista conduz uma partida correta. Domina o tempo no relógio. E então, no momento em que tudo parece resolvido, joga o lance que destrói tudo. Ou mantém uma igualdade honrosa num final técnico, cansa, e a derrota chega exatamente onde havia medo que chegasse. Nesse momento, a frase retorna em loop: "Claro. Estava escrito."

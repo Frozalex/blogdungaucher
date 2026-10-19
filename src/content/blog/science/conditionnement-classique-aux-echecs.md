@@ -29,6 +29,10 @@ faq:
     answer: "Les sources citées ne fixent aucun nombre de parties pour une peur échiquéenne. Une difficulté persistante ne se traite pas avec un quota universel de vingt ou trente expositions."
   - question: "Pourquoi une réaction peut-elle revenir ?"
     answer: "La revue de Bouton décrit l'extinction comme un nouvel apprentissage dépendant du contexte, plutôt qu'un effacement garanti de l'association initiale."
+heroImage:
+  src: /images/blog/conditionnement-classique-aux-echecs-hero.webp
+  alt: Une clochette projette l’ombre d’une main fermée sur le papier.
+ogImage: /images/og/conditionnement-classique-aux-echecs-og.webp
 ---
 
 Ton adversaire joue le coup qui mène à cette structure. Tu la connais et tu l'as analysée. Pourtant, quelque chose se contracte. Tu accélères, ou tu évites une suite que tu pensais savoir jouer.

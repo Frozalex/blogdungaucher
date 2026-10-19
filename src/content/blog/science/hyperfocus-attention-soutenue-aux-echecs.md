@@ -14,8 +14,8 @@ seoDescription: "Hyperfocus, flow et attention soutenue aux échecs : définitio
 ogImage: /images/og/hyperfocus-attention-soutenue-aux-echecs-og.webp
 heroImage:
   src: /images/blog/hyperfocus-attention-soutenue-aux-echecs-hero.webp
-  alt: >-
-    Deux bougies identiques côte à côte, l'une presque consumée, l'autre à peine entamée.
+  alt: Deux bougies identiques côte à côte, l'une presque consumée, l'autre à
+    peine entamée.
 
 ---
 

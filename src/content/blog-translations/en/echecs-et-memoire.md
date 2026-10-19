@@ -1,5 +1,6 @@
 ---
-heroImageAlt: "Pixel art illustration: a head profile filled with chess pieces and stars on a midnight-blue background; text \"Discover the power of chess on your memory\" on the left."
+heroImageAlt: "Pixel art illustration: a head profile filled with chess pieces
+  and stars on a midnight-blue background, with text about memory on the left."
 title: "Chess and Memory: How the Game Stimulates Your Cognitive Skills"
 excerpt: >-
   Working memory, chunks, openings, games forgotten or etched in mind: what cognitive psychology and neuroscience really

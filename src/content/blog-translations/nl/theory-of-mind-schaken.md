@@ -41,6 +41,7 @@ faq:
       De expliciete kant is redelijk stabiel: de verbale valse-overtuigingstaken geven al veertig jaar
       consistente resultaten. De impliciete kant, verondersteld dezelfde vaardigheid bij de zuigeling
       te tonen, kent daarentegen ernstige replicatieproblemen, en er bestaat vandaag geen consensus.
+heroImageAlt: Twee profielen gescheiden door een scherm kijken naar verschillende voorwerpen.
 ---
 
 Clubpositie, je tegenstander is 200 punten lager gerangschikt dan jij. Je kunt de objectief beste zet spelen, die leidt naar een winnend maar lang en technisch eindspel.

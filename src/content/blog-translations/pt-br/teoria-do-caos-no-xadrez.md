@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Duas bolinhas soltas quase no mesmo ponto de um plano inclinado, chegando a cantos opostos."
+heroImageAlt: Duas bolinhas soltas em pontos quase iguais de um plano inclinado
+  chegam a cantos opostos.
 title: "Teoria do caos no xadrez: a ordem na tempestade"
 excerpt: "O xadrez parece um jogo de ordem e lógica pura. No entanto, a teoria do caos revela que as posições complexas têm propriedades caóticas reais. Um pequeno erro pode ter consequências catastróficas."
 seoTitle: "Teoria do caos no xadrez: Lyapunov, bifurcações e lances críticos"

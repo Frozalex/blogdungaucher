@@ -6,6 +6,7 @@ excerpt: >-
 seoTitle: "5 vieses cognitivos que causam blunders no xadrez"
 seoDescription: "Os 5 vieses cognitivos mais frequentes que provocam blunders no xadrez. Psicologia do erro, Kahneman e como treinar o cérebro para evitá-los."
 frSlug: 5-biais-cognitifs-blunder
+heroImageAlt: Vários trilhos ferroviários convergem para uma única via.
 ---
 
 Você calculou tudo, ou pelo menos acreditava. Então vem o blunder : "como pude perder isso?" Raramente por falta de tempo no cálculo; quase sempre porque **o cérebro decidiu com um viés**, não com um erro de variante. A ciência cognitiva mapeou essas derivas; cinco delas colam particularmente ao tabuleiro.

@@ -8,6 +8,7 @@ seoTitle: "De wet van Murphy in het schaken: waarom blunders altijd op het slech
 seoDescription: "De wet van Murphy toegepast op schaken: selectief geheugen, stress, tijdnood en cognitieve biases. Waarom fouten altijd op het ergste moment lijken te vallen."
 frSlug: loi-de-murphy-aux-echecs
 draft: false
+heroImageAlt: Rijen donkere punaises waarvan enkele met lichte cirkels zijn omgeven.
 ---
 
 Je staat goed in de partij. Je domineert op de klok. En dan, op het moment dat alles geregeld lijkt, speel je de zet die alles vernietigt. Of je houdt een eervol remise in een technisch eindspel, je raakt vermoeid, en de nederlaag valt precies waar je bang voor was. Op dat moment herhaalt de zin zich: "Logisch. Het was voorbestemd."

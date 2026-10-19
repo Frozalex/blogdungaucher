@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Ilustração em pixel art: uma criança sorridente diante de um tabuleiro de xadrez colorido com peças estilizadas grandes, « Ensinar xadrez às crianças »"
+heroImageAlt: Uma semente sobre uma faixa de terra com texturas diferentes.
 title: "Ensinar xadrez às crianças: idade ideal, métodos e benefícios reais"
 excerpt: >-
   Com que idade uma criança está pronta para o xadrez? Quais métodos funcionam segundo a pesquisa? E quais são os

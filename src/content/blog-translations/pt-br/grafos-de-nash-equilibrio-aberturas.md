@@ -43,6 +43,7 @@ faq:
       linhas. Uma árvore supõe um caminho único até cada folha ; um grafo acíclico dirigido autoriza
       vários caminhos. As bases de aberturas profissionais (ChessBase, Lichess Masters) são na verdade
       grafos comprimidos, com milhões de transposições pré-calculadas.
+heroImageAlt: Duas peças de xadrez apoiadas uma na outra em equilíbrio.
 ---
 
 Por que a Defesa Siciliana é jogada em todos os níveis há cem anos? Por que a Partida Espanhola não foi "refutada" apesar de séculos de análise? Por que certas variantes teóricas desmoronam em poucos anos enquanto outras parecem indestrutíveis? A resposta a essas questões se encontra num conceito matemático elaborado por [John Nash](https://pt.wikipedia.org/wiki/John_Forbes_Nash) em 1950: o equilíbrio de Nash.

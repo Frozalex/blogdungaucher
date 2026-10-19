@@ -45,8 +45,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-immigration-og.webp
 heroImage:
   src: /images/blog/echecs-et-immigration-hero.webp
-  alt: >-
-    Deux bulles de dialogue vides venues de côtés opposés se recouvrant en leur centre.
+  alt: Deux bulles de dialogue vides venues de côtés opposés se recouvrant en leur
+    centre.
 faq:
   - question: Comment les échecs facilitent-ils l'intégration des réfugiés ?
     answer: >-

@@ -51,6 +51,7 @@ faq:
       the real percentage in a database rather than trusting your impression, keep a log of all your
       games and not just the striking ones, and ask of every piece of advice from a strong player how
       many people applied it without it working.
+heroImageAlt: One paper boat floating above several sunken paper boats.
 ---
 
 There's always someone at the club who's been playing the same gambit for fifteen years. He defends it with quiet conviction: "objectively it's dubious, but at club level it works every time."

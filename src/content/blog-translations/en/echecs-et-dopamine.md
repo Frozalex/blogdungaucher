@@ -1,5 +1,6 @@
 ---
-heroImageAlt: "A hand hovering above a chess piece, sending out wide concentric ripples."
+heroImageAlt: A hand hovering above a chess piece, with wide concentric ripples
+  spreading from it.
 title: "Dopamine and Chess: The Neurochemistry of the Game"
 excerpt: "Every tense move, every combination found, every hard-won victory triggers a precise neurochemical wave. What the neuroscience of reward circuits reveals about why chess is so engaging, and why some players can't stop."
 seoTitle: "Dopamine and Chess: How Neurochemistry Explains the Fascination"

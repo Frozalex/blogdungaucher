@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "Pixel art illustration: a thoughtful child facing a glowing chessboard, stars and gears around, \"Chess and giftedness\""
+heroImageAlt: A chess piece at the foot of a tall spiral staircase.
 title: "Chess and Giftedness: The Board as a Space for High-Ability Children"
 excerpt: "Gifted children are often described as made for chess. The reality is more subtle: the board can be a refuge, a development accelerator, or a new source of toxic perfectionism. What research says about giftedness and chess."
 seoTitle: "Chess and Giftedness (HPI): Benefits and Precautions"

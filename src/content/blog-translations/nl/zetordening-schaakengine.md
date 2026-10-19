@@ -42,6 +42,7 @@ faq:
       dezelfde garantie als in het vorige artikel. Ze kan een andere zet teruggeven bij gelijkspel.
       Ze verandert echter wel degelijk het praktische spel van de engine, omdat ze bij gelijke tijd
       dieper laat zoeken.
+heroImageAlt: Sleutels voor een slot, met de passende sleutel vooraan.
 ---
 
 Het [vorige artikel](/fr/blog/negamax-et-elagage-alpha-beta-python/) eindigde met een frustrerende vaststelling. Het alfa-bèta snoeien leverde ons een factor 22 winst op op een positie, terwijl de theorie veel meer toestaat. De berekening van Knuth en Moore zegt dat met een perfecte zetvolgorde het aantal bezochte posities daalt van $b^d$ naar ongeveer $b^{d/2}$, wat neerkomt op het verdubbelen van de bereikbare diepte.

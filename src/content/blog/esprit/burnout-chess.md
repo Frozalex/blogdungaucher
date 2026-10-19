@@ -10,6 +10,11 @@ pillar: "Psychologie"
 tags: ["burnout", "épuisement", "échecs", "psychologie", "motivation", "récupération", "santé mentale"]
 seoTitle: "Burnout aux échecs : comprendre l'épuisement et la pression"
 seoDescription: "Épuisement sportif et burnout professionnel : les distinctions utiles aux joueurs d'échecs, des questions pour faire le point et des pistes pour réduire la pression."
+heroImage:
+  src: /images/blog/burnout-chess-hero.webp
+  alt: Une silhouette de dos assise devant un foyer réduit à des braises qui
+    s'éteignent.
+ogImage: /images/og/burnout-chess-og.webp
 ---
 
 Tu ouvres ta plateforme d’échecs. Le bouton « Jouer » est là, comme hier. Tu le regardes, puis tu fermes l’onglet.

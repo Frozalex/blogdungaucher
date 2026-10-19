@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Pequenos pesos colocados um a um sobre uma balança que acaba se inclinando por completo."
+heroImageAlt: Pequenos pesos colocados um a um em uma bandeja que acaba se inclinando.
 title: "Redes bayesianas no xadrez: prever o blunder do adversário"
 excerpt: "Dá para prever matematicamente quando um adversário vai cometer um blunder? As redes bayesianas oferecem um modelo formal para estimar essa probabilidade a partir dos indícios disponíveis na posição."
 seoTitle: "Prever blunders com redes bayesianas: estimar o erro do adversário"

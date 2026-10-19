@@ -8,6 +8,7 @@ seoTitle: "Modale logica bij schaken: denken in mogelijkheden en noodzakelijkhed
 seoDescription: "Hoe formele modale logica het schaakdenken structureert. Noodzakelijkheid, mogelijkheid, mogelijke werelden: de instrumenten van de logica op het schaakbord."
 frSlug: logique-modale-aux-echecs
 draft: false
+heroImageAlt: Een pion voor een rij deuropeningen, sommige dichtgemetseld en andere open.
 ---
 
 Wanneer je een stelling analyseert, denk je niet in termen van zekerheden. Je denkt in termen van mogelijkheden en noodzakelijkheden. "Hij kan daar spelen." "Ik moet dit stuk beschermen." "Als ik deze pion opschuif, is hij gedwongen zo te antwoorden." Deze modale taal, die van het mogelijke en het noodzakelijke, staat centraal in het schaakdenken. En ze correspondeert precies met een formele tak van de logica: de [modale logica](https://nl.wikipedia.org/wiki/Modale_logica).

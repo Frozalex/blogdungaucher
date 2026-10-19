@@ -30,6 +30,10 @@ faq:
     answer: "Non. C’est un écart moyen dans l’échantillon, pas une estimation individuelle ni un nombre garanti de victoires."
   - question: "Le suivi prouve-t-il que tu as huit chances sur neuf de te tromper ?"
     answer: "Non. Le taux de 11,3 % décrit les joueurs surconfiants suivis dans l’étude. Il ne donne pas une probabilité personnelle pour chaque lecteur."
+heroImage:
+  src: /images/blog/effet-dunning-kruger-aux-echecs-hero.webp
+  alt: Une petite colonne projette une ombre beaucoup plus haute sur un mur.
+ogImage: /images/og/effet-dunning-kruger-aux-echecs-og.webp
 ---
 
 Tu connais ton classement, mais tu estimes peut-être qu’il ne reflète pas tout à fait ton niveau. Cette impression peut avoir des raisons concrètes. Elle mérite aussi d’être confrontée à autre chose qu’à tes meilleures parties.

@@ -47,6 +47,7 @@ faq:
       keeps being judged equal long after precise moves have created a real imbalance. The theoretical
       anchor resists updating, all the more so because it's perceived as an established fact rather than
       as a dated evaluation.
+heroImageAlt: A small anchor holding an abstract balloon close to the ground.
 ---
 
 You're analyzing your game. Move 22, complicated position. You want to know what you should have played.

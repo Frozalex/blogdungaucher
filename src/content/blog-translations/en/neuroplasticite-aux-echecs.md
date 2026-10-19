@@ -50,6 +50,7 @@ faq:
       transformation: pattern recognition, specialized memory, calculating variations. What hasn't been
       demonstrated is transfer to distant domains. The good reason to play was never the promise of an
       upgraded brain.
+heroImageAlt: A braided rope separating into new branches.
 ---
 
 Type "chess brain" into a search engine. You'll hit the same sentence over and over: chess **rewires** your brain. Sometimes with a technical word for backup, neuroplasticity, and two studies as collateral: London taxi drivers and jugglers.

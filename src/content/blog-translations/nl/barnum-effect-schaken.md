@@ -42,6 +42,7 @@ faq:
       besteed per zet, resultaten per structuurtype. Dat zijn feiten. Het probleem begint wanneer deze
       regelmatigheden worden omgezet in identiteit, want een identiteit verzet zich tegen verandering
       terwijl een statistiek uitnodigt om te werken aan wat ontbreekt.
+heroImageAlt: Verschillende figuren houden identieke anonieme maskers vast.
 ---
 
 "Je bent een intuïtieve speler. Je ziet snel tactische mogelijkheden, maar het gebeurt dat je te snel speelt in stellingen die geduld vereisen. Je voelt je beter wanneer je het initiatief hebt. Onder druk heb je soms de neiging je te overhaasten."

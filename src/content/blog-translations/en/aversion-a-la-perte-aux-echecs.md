@@ -47,6 +47,7 @@ faq:
       counterpart in verifiable terms before deciding: which square you obtain, which file opens, how
       many tempi you gain, which enemy piece gets tied down. A named compensation holds up far better
       than a felt one.
+heroImageAlt: One hand losing a pebble in shadow while another receives one in light.
 ---
 
 Balanced position, middlegame. You see an idea: give up a pawn to open the b-file and tie down his light-squared bishop. The evaluation says it's good. Your intuition says it's good.

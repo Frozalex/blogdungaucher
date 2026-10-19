@@ -54,6 +54,7 @@ faq:
       gebed en de plicht werd afgenomen, en de hartstochten die het opwekt (woede bij verlies, hoogmoed bij winst).
       Wanneer deze elementen werden verwijderd (spelen zonder inzet, gepresenteerd als een school van deugd) ebde het
       wantrouwen weg.
+heroImageAlt: Een donkere hand reikt naar dobbelstenen naast een schaakbord.
 ---
 
 In januari 2016 verklaart de grootmufti van Saoedi-Arabië schaken ongeoorloofd. Enkele dagen later vindt er in het koninkrijk toch een toernooi plaats.

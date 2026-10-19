@@ -50,6 +50,7 @@ faq:
       better by magic. It reduces the number of decisions you have to make before the game and
       stabilises your emotional starting state. That benefit is real and has nothing to do with
       placebo: it's a matter of conserving attention.
+heroImageAlt: Two identical cups beside a doorway-shaped shadow.
 ---
 
 There's the sweater. The one you won that tournament in three years ago, and that you put back on for every important round.

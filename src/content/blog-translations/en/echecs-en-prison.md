@@ -1,5 +1,8 @@
 ---
-heroImageAlt: "Pixel art illustration: a dark stone-walled cell, barred light casting a checkerboard pattern on the floor, a black king at the center, a door open onto a lit corridor; title \"Chess in prison: when the board becomes a tool for rehabilitation\" overlaid."
+heroImageAlt: 'Pixel art illustration: a dark stone-walled cell, barred light
+  casting a checkerboard pattern on the floor, a black king at the center, a
+  door open onto a lit corridor; title "Chess in prison: when the board becomes
+  a tool for rehabilitation" overlaid.'
 title: "Chess in Prison: When the Chessboard Becomes a Rehabilitation Tool"
 excerpt: >-
   Inmates learning to anticipate three moves ahead, manage the frustration of a lost piece, respect an opponent. What

@@ -20,12 +20,14 @@ tags:
   - plateformes
 seoTitle: "Grand Oral HGGSP : échecs, mondialisation et plateformes"
 seoDescription: "Règles communes, plateformes et projet de Kakuma : des exemples documentés pour interroger la mondialisation des échecs au Grand Oral HGGSP."
-ogImage: /images/og/sujet-grand-oral-hggsp-mondialisation-plateformes-og.webp
+ogImage: /images/og/sujet-grand-oral-hggsp-mondialisation-plateformes-watermarked-og.webp
 heroImage:
-  src: /images/go-mondialisation.svg
-  alt: "Schéma des règles communes, des plateformes et des pratiques locales aux échecs."
+  src: /images/blog/sujet-grand-oral-hggsp-mondialisation-plateformes-watermarked-hero.webp
+  alt: Schéma des règles communes, des plateformes et des pratiques locales aux
+    échecs.
   credit: Blog d’un Gaucher
   license: Création originale
+
 ---
 
 Les échecs permettent à des joueurs éloignés de se comprendre autour de règles communes. Cela suffit-il à rendre leurs pratiques identiques ? Tu peux construire ton exposé autour de cette tension entre circulation mondiale, choix des plateformes et usages locaux.

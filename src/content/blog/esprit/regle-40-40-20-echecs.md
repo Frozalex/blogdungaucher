@@ -22,8 +22,8 @@ seoDescription: "40 % de tactique, 40 % de finales, 20 % d'ouvertures : une rép
 ogImage: /images/og/regle-40-40-20-echecs-og.webp
 heroImage:
   src: /images/blog/regle-40-40-20-echecs-hero.webp
-  alt: >-
-    Trois piles de pions d'échecs de hauteurs très inégales alignées en contre-plongée.
+  alt: Trois piles de pions d'échecs de hauteurs très inégales alignées en
+    contre-plongée.
 faq:
   - question: À quel niveau faut-il travailler les ouvertures ?
     answer: >-

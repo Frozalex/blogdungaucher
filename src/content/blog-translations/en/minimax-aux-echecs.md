@@ -38,6 +38,7 @@ faq:
       instead of 35), very limited depth (3-8 half-moves), and an intuitive evaluation function (positional
       sense). You also use very powerful pruning heuristics: you <strong>reject</strong> most moves at a
       glance without calculating them. The difference with an engine isn't qualitative, it's quantitative.
+heroImageAlt: A pruned tree rising above a chess piece.
 ---
 
 There's something strange about chess strategy, this millennial game of intuition and art, being reducible to an algorithm of a few lines. The minimax algorithm does exactly that: it formalizes the heart of strategic reasoning in a zero-sum game into an elegant mathematical recursion.

@@ -38,6 +38,8 @@ faq:
       tegenprestatie te formuleren in verifieerbare termen voordat je beslist: welk veld verkregen, welke
       kolom geopend, hoeveel tijd gewonnen, welk vijandelijk stuk verlamd. Een benoemde compensatie houdt
       veel beter stand dan een gevoelde compensatie.
+heroImageAlt: Eén hand verliest een steentje in de schaduw, een andere ontvangt
+  er één in het licht.
 ---
 
 Een evenwichtige stelling, middenspel. Je ziet een idee: een pion opgeven om de b-lijn te openen en zijn loper op witte velden te verlammen. De evaluatie zegt dat het goed is. Je intuïtie zegt dat het goed is.

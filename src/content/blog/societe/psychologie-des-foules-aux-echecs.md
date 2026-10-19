@@ -54,6 +54,11 @@ faq:
       montre que l'anonymat et l'immersion dans un groupe renforcent au contraire l'adhésion aux normes
       de ce groupe. Un chat agressif ne révèle pas la disparition des règles, il révèle quelles règles
       ont cours dans ce groupe.
+heroImage:
+  src: /images/blog/psychologie-des-foules-aux-echecs-hero.webp
+  alt: Des silhouettes assises dans des cercles de lumière séparés au sein d’une
+    salle.
+ogImage: /images/og/psychologie-des-foules-aux-echecs-og.webp
 ---
 
 Salle de tournoi, ronde 5. Cent quarante joueurs, quatre-vingts tables, et un silence absolu. Personne ne parle. Personne ne se déplace. Personne ne regarde ailleurs que sa propre position.

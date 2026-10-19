@@ -48,6 +48,7 @@ faq:
       verificável. O rating é um péssimo retorno de informação para isso: é lento, ruidoso e depende do
       adversário. Já os exercícios táticos, as posições de treino e os finais teóricos dão um veredito
       imediato e atribuível.
+heroImageAlt: Um pássaro permanece numa gaiola com a porta aberta.
 ---
 
 Você está em 1550 há quatorze meses. Você tentou algumas coisas. Comprou um livro, fez exercícios durante algumas semanas, mudou de abertura.

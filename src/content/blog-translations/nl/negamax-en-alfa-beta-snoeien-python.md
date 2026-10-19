@@ -41,6 +41,7 @@ faq:
       waarmee je controleert dat alfa-bèta de scores niet heeft veranderd. Een verkeerd begrensde
       snoeiing geeft eens op de vijftig keer een fout resultaat, wat onopgemerkt blijft tijdens het
       spelen en onmiddellijk zichtbaar is bij vergelijking.
+heroImageAlt: Een vertakte plant en haar spiegelbeeld met gesnoeide zijtakken.
 ---
 
 Aan het einde van [het vorige artikel](/fr/blog/minimax-en-python-moteur-echecs/) vindt onze engine alle matten in twee zetten, maar botst tegen een muur: elke halve zet extra diepte vermenigvuldigt het werk met een twintigtal. Een mat in drie vinden, op diepte 5, wordt een zaak van minuten per positie.

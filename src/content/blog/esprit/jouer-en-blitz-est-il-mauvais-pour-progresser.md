@@ -18,8 +18,8 @@ keyTakeaways:
 ogImage: /images/og/jouer-en-blitz-est-il-mauvais-pour-progresser-og.webp
 heroImage:
   src: /images/blog/jouer-en-blitz-est-il-mauvais-pour-progresser-hero.webp
-  alt: >-
-    Une flaque très large et peu profonde à côté d'un puits étroit qui plonge loin.
+  alt: Une flaque très large et peu profonde à côté d'un puits étroit qui plonge
+    loin.
 faq:
   - question: "Combien de blitz faut-il jouer par jour ?"
     answer: "Aucune durée universelle n’est démontrée ici. Adapte le volume à ton objectif et à ce qu’il remplace dans ton emploi du temps."

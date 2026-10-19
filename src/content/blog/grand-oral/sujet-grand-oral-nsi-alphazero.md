@@ -21,14 +21,15 @@ tags:
   - MCTS
 seoTitle: "Grand Oral NSI : comprendre AlphaZero et ses limites"
 seoDescription: "Réseau de neurones, recherche MCTS et auto-jeu : comprends AlphaZero, son protocole de 2017 et ses différences avec MuZero et AlphaFold pour ton Grand Oral NSI."
-ogImage: /images/og/sujet-grand-oral-nsi-alphazero-og.webp
+ogImage: /images/og/sujet-grand-oral-nsi-alphazero-watermarked-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-nsi-alphazero-hero.webp
-  alt: >-
-    Un espace de travail contemporain dans une bibliothèque, sous un plafond lumineux.
-  credit: "Szalax, CC0, via Wikimedia Commons"
+  src: /images/blog/sujet-grand-oral-nsi-alphazero-watermarked-hero.webp
+  alt: Un espace de travail contemporain dans une bibliothèque, sous un plafond
+    lumineux.
+  credit: Szalax, CC0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:University_of_Miskolc_Library_Reading_Room_2025_01.jpg
   license: CC0
+
 ---
 
 Pourquoi AlphaZero représente-t-il une étape importante dans l'intelligence artificielle appliquée aux jeux ? Tu peux répondre en expliquant comment une recherche dans un arbre est associée à un apprentissage. L'enjeu n'est pas d'opposer une machine programmée à une machine qui n'aurait reçu aucune intervention humaine.

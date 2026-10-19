@@ -51,6 +51,10 @@ faq:
       Parce qu'il est légitime. Contrairement à une hiérarchie héritée ou arbitraire, il est mérité,
       transparent et révisable, ce qui interdit de l'attribuer à l'injustice. Un rang qu'on ne peut pas
       contester renvoie entièrement à soi, ce qui est une charge d'un autre type.
+heroImage:
+  src: /images/blog/psychologie-du-statut-aux-echecs-hero.webp
+  alt: Une silhouette quitte une série de socles pour rejoindre le sol libre.
+ogImage: /images/og/psychologie-du-statut-aux-echecs-og.webp
 ---
 
 Un club, un mardi soir. Personne ne porte d'uniforme, personne n'a de titre professionnel affiché, personne ne sait qui gagne combien.

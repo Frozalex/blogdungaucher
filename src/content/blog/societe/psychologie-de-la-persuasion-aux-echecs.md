@@ -54,6 +54,10 @@ faq:
       différentes, et le principe d'autorité fait qu'on transfère spontanément la crédibilité de la
       première à la seconde. La bonne question n'est pas quel est son classement, mais quels progrès
       ont réalisés ses élèves partis du niveau où tu es.
+heroImage:
+  src: /images/blog/psychologie-de-la-persuasion-aux-echecs-hero.webp
+  alt: Une grande boîte décorative ouverte côtoie un petit outil sobre.
+ogImage: /images/og/psychologie-de-la-persuasion-aux-echecs-og.webp
 ---
 
 « De 1 200 à 2 000 en six mois. »

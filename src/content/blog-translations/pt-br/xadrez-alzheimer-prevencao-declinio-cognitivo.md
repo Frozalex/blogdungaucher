@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Vinheta em pixel art: um cérebro em pixels cuja parte se dissipa, título sobre xadrez e prevenção do declínio cognitivo"
+heroImageAlt: "Vinheta em pixel art: cérebro cujos pixels se dispersam
+  parcialmente, com título sobre xadrez e declínio cognitivo."
 title: "Xadrez e Alzheimer: como estimular o cérebro para prevenir o declínio cognitivo"
 excerpt: >-
   Dados extraídos da literatura recente: meta-análises, coortes e ensaios sobre jogos de tabuleiro, estimulação

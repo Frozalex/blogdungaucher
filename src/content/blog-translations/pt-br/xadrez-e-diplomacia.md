@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Uma longa mesa de negociação vista de cima, cuja superfície é um tabuleiro de xadrez."
+heroImageAlt: Uma longa mesa de negociação vista de cima, cuja superfície é um
+  tabuleiro de xadrez.
 title: "Xadrez e diplomacia: quando o tabuleiro vira mesa de negociação"
 excerpt: >-
   Fischer contra Spassky em 1972, Kasparov diante de chefes de Estado, clubes de xadrez como vetores de reconciliação em

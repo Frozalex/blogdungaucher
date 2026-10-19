@@ -16,6 +16,10 @@ faq:
     answer: "Non. Une difficulté technique, une défense manquée ou le manque de temps peuvent expliquer l’erreur. La pression ressentie mérite un examen distinct."
   - question: "La théorie des perspectives démontre-t-elle un sabotage ?"
     answer: "Non. Son utilisation ici est une analogie sur les points de référence, pas une mesure de mécanismes cérébraux chez le joueur."
+heroImage:
+  src: /images/blog/echecs-peur-de-gagner-hero.webp
+  alt: Un pion se tient devant les dernières cases d’un chemin en damier.
+ogImage: /images/og/echecs-peur-de-gagner-og.webp
 ---
 
 Tu as obtenu une position favorable et tu viens de laisser échapper l’avantage. L’idée de « peur de gagner » arrive vite. Avant de l’adopter, il reste à comprendre le coup : une défense oubliée, une finale mal connue ou un manque de temps peuvent suffire à expliquer l’erreur.

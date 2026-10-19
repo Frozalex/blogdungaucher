@@ -49,6 +49,7 @@ faq:
       you turn the engine on. The useful information isn't its evaluation, it's the gap between its
       answer and yours. Without a verdict written down first, that gap doesn't exist and you learn
       nothing about yourself.
+heroImageAlt: Small lamps pointing toward one large overhead lamp.
 ---
 
 Your coach tells you to play h3 in this structure. You don't understand why. You play it.

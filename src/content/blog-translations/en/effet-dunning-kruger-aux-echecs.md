@@ -57,6 +57,7 @@ faq:
       In the 2025 study, the highest-rated players are calibrated, meaning accurate, rather than
       self-underestimating. Underestimation among strong players is a different phenomenon, impostor
       syndrome, which affects the sense of legitimacy rather than the assessment of skill.
+heroImageAlt: A short column casting a much taller shadow.
 ---
 
 He's rated 1150. He's just lost, and he's explaining to you why that rating means nothing. He played blitz when he's really "a classical player." He hasn't worked on his openings in six months. His opponent won "on the clock, not on the board." And honestly, against the 1600 guy at the club, he wins "one in two anyway."

@@ -13,8 +13,7 @@ seoDescription: "Bayes et risque de gaffe aux échecs : construire un raisonneme
 ogImage: /images/og/reseaux-bayesiens-predire-blunder-og.webp
 heroImage:
   src: /images/blog/reseaux-bayesiens-predire-blunder-hero.webp
-  alt: >-
-    De petits poids déposés un à un sur un plateau qui finit par basculer.
+  alt: De petits poids déposés un à un sur un plateau qui finit par basculer.
 
 ---
 

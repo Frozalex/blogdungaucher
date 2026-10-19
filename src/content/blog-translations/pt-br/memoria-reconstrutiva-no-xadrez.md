@@ -47,6 +47,7 @@ faq:
       Não, e é isso que torna o assunto interessante. O fato de a evocação deixar a lembrança
       modificável é também o que dá tanta força à recordação ativa como método de aprendizado.
       Reconstituir uma partida de memória não é uma simples conferência: é a operação que a fixa.
+heroImageAlt: Mãos remontam papéis rasgados em um mosaico levemente desalinhado.
 ---
 
 Conte uma partida que você jogou três anos atrás e da qual você se orgulha.

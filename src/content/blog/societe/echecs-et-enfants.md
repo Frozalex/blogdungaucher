@@ -40,14 +40,10 @@ seoTitle: "Enseigner les échecs aux enfants : âge idéal, méthodes et bénéf
 seoDescription: >-
   Quel âge pour commencer les échecs ? Méthodes pédagogiques adaptées, développement cognitif, bénéfices réels sur les
   fonctions exécutives : guide complet pour parents.
-ogImage: /images/blog/echecs-et-enfants-hero.png
+ogImage: /images/og/echecs-et-enfants-og.webp
 heroImage:
-  src: /images/blog/echecs-et-enfants-hero.png
-  alt: >-
-    Illustration pixel art : enfant souriant face à un échiquier coloré avec de grandes pièces stylisées, « Enseigner
-    les échecs aux enfants »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-enfants-hero.webp
+  alt: Une graine posée sur une bande de terre aux textures contrastées.
 faq:
   - question: À quel âge mon enfant est-il prêt pour les échecs ?
     answer: >-

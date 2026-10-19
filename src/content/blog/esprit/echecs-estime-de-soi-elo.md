@@ -28,8 +28,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-estime-de-soi-elo-og.webp
 heroImage:
   src: /images/blog/echecs-estime-de-soi-elo-hero.webp
-  alt: >-
-    Une aiguille de mesure massive vissée sur un panneau mince qu'elle fissure sous son poids.
+  alt: Une aiguille de mesure massive vissée sur un panneau mince qu'elle fissure
+    sous son poids.
 faq:
   - question: "Une victoire rapporte-t-elle toujours 16 points ?"
     answer: "Non. La variation dépend du score attendu et du coefficient K applicable."

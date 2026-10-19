@@ -47,6 +47,7 @@ faq:
       By when it was formulated. A reason written down before you play the move, or before you know
       the result, is a reason. The same sentence produced afterwards is a reconstruction, and its
       apparent accuracy proves nothing, since it was built with knowledge of the outcome.
+heroImageAlt: A straight paper facade covering a crooked wooden structure.
 ---
 
 Ask a club player why he played move 19. He'll answer. He'll talk about the d5 square, the rook's activity, the timing of the push.

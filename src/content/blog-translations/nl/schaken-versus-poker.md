@@ -21,6 +21,7 @@ faq:
     answer: >-
       Enkelen wel, maar niet de meerderheid. Stu Ungar had een achtergrond in gin rummy. De meeste grote
       moderne spelers komen rechtstreeks uit het online poker. De bruggen bestaan maar zijn niet massaal.
+heroImageAlt: Een omgekeerde kaart werpt een pionvormige schaduw naast een pion.
 ---
 
 Er bestaat een romantisch beeld van de pokerspeler als strateeg met de reflexen van een grootmeester, die zijn outs berekent met de precisie van een schaker. En daar zit wat in: beide activiteiten beroepen zich op vormen van strategisch redeneren, het vermogen om complexe situaties te beoordelen en een bijzondere psychologie onder druk.

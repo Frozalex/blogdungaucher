@@ -1,5 +1,6 @@
 ---
-heroImageAlt: "An hourglass whose sand is made of tiny chess pieces passing from one bulb to the other."
+heroImageAlt: An hourglass whose sand consists of tiny chess pieces passing from
+  one bulb to the other.
 title: "Game Theory in Chess: Why Every Move is a Strategic Decision"
 excerpt: "Chess is the founding ground of game theory. Minimax, Nash equilibrium, perfect information: a mathematical breakdown of what is really happening when you play."
 seoTitle: "Game Theory in Chess: Nash, Minimax, Zermelo Explained"

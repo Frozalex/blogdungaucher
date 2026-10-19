@@ -38,6 +38,7 @@ faq:
       Nee, en dat maakt het onderwerp interessant. Het feit dat oproepen de herinnering veranderbaar maakt,
       is ook wat actief terughalen zo krachtig maakt als leermethode. Een partij uit het geheugen reconstrueren
       is geen simpele controle: het is de handeling die haar vastzet.
+heroImageAlt: Handen leggen gescheurd papier opnieuw samen tot een verschoven mozaïek.
 ---
 
 Vertel een partij die je drie jaar geleden hebt gespeeld en waar je trots op bent.

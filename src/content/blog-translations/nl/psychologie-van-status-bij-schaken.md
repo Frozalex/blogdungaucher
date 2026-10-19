@@ -38,6 +38,7 @@ faq:
       verdiend, transparant en herzienbaar, wat het onmogelijk maakt hem toe te schrijven aan
       onrechtvaardigheid. Een rang die je niet kunt betwisten, wijst volledig naar jezelf terug, wat een
       andere soort last is.
+heroImageAlt: Een figuur stapt weg van een reeks verhoogde sokkels.
 ---
 
 Een club, een dinsdagavond. Niemand draagt een uniform, niemand heeft een zichtbare beroepstitel, niemand weet wie hoeveel verdient.

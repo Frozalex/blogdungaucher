@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Uma fileira de recipientes de vidro com larguras muito desiguais, por onde escorre um líquido."
+heroImageAlt: Uma fileira de recipientes de vidro com larguras muito diferentes,
+  por onde um líquido escoa.
 title: "Gestão do tempo no xadrez: o relógio como espelho das suas decisões"
 excerpt: >-
   O relógio não mente. Ele revela sua relação com a incerteza, a tomada de decisão sob pressão e a confiança em seu

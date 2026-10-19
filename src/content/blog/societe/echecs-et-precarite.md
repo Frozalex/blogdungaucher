@@ -42,14 +42,10 @@ seoTitle: "Échecs et précarité : l'échiquier peut-il transcender les inégal
 seoDescription: >-
   Chess in the Slums, capital culturel, accès aux ressources : les échecs face aux inégalités sociales : promesse
   d'émancipation et réalités structurelles.
-ogImage: /images/blog/echecs-et-precarite-hero.png
+ogImage: /images/og/echecs-et-precarite-og.webp
 heroImage:
-  src: /images/blog/echecs-et-precarite-hero.png
-  alt: >-
-    Illustration pixel art : enfant jouant aux échecs dans une rue de ville, échiquier improvisé sur une caisse en bois,
-    « Échecs et précarité »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-precarite-hero.webp
+  alt: Une file de pièces identiques avançant du pavé lisse vers du sable meuble.
 faq:
   - question: Les échecs sont-ils réellement accessibles aux familles précaires ?
     answer: >-

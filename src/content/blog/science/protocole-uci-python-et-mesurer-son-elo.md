@@ -58,6 +58,10 @@ faq:
       facilement deux cents points Elo, ce qui autorise à peine à distinguer un moteur de club d'un
       débutant. Les tests sérieux de Stockfish se comptent en dizaines de milliers de parties, parce
       qu'ils cherchent à détecter des écarts de deux ou trois points.
+heroImage:
+  src: /images/blog/protocole-uci-python-et-mesurer-son-elo-hero.webp
+  alt: Un ordinateur est relié par un câble à un boîtier près d’un pion.
+ogImage: /images/og/protocole-uci-python-et-mesurer-son-elo-og.webp
 ---
 
 Le moteur de cette série sait tout faire, sauf parler à quelqu'un. Il vit dans un script, joue contre lui-même, et affiche ses résultats dans un terminal. Ce dernier article le sort de là, puis répond à la seule question qui reste : **combien vaut-il ?**

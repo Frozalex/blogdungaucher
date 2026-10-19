@@ -58,6 +58,10 @@ faq:
       analyses. Confronte les affirmations aux faits archivés plutôt qu'à ta mémoire. Fais analyser tes
       parties par un tiers indépendant. Et si les faits concernent une accusation formelle, utilise les
       canaux prévus, qui existent précisément pour retirer l'affaire du terrain de la rumeur.
+heroImage:
+  src: /images/blog/gaslighting-aux-echecs-hero.webp
+  alt: Une main efface des empreintes derrière une silhouette qui se retourne.
+ogImage: /images/og/gaslighting-aux-echecs-og.webp
 ---
 
 La partie est finie. Tu as perdu, et vous la rejouez ensemble. Sauf que la partie qu'il te raconte n'est pas celle que tu as jouée.

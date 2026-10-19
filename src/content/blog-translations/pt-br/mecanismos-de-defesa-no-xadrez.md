@@ -57,6 +57,7 @@ faq:
       funciona é indireto: identificar a defesa depois do fato mantendo um diário, adiar a análise por
       vinte e quatro horas para deixar a urgência baixar, e criar rituais de pós-partida que ocupem o
       espaço. Vaillant observou que o estilo defensivo evolui com a idade.
+heroImageAlt: Uma figura sentada se abriga atrás de biombos curvos.
 ---
 
 Fim de rodada. Cinco jogadores saem da sala, todos derrotados na hora que acabou de passar.

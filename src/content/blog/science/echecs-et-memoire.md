@@ -23,12 +23,11 @@ tags:
   - enfants
 seoTitle: "Échecs et mémoire : mémoire de travail, chunks et apprentissage"
 seoDescription: "Mémoire et expertise aux échecs : chunks, templates, mémoire de travail et pistes d'apprentissage. Ce que ces modèles expliquent et les limites du transfert."
-ogImage: /images/blog/echecs-et-memoire-hero.webp
+ogImage: /images/og/echecs-et-memoire-watermarked-og.webp
 heroImage:
-  src: /images/blog/echecs-et-memoire-hero.webp
-  alt: >-
-    Illustration pixel art : profil de tête rempli de pièces d’échecs et d’étoiles sur fond bleu nuit,
-    avec une accroche sur la mémoire à gauche.
+  src: /images/blog/echecs-et-memoire-watermarked-hero.webp
+  alt: "Illustration pixel art : profil de tête rempli de pièces d’échecs et
+    d’étoiles sur fond bleu nuit, avec une accroche sur la mémoire à gauche."
   credit: Blog d'un Gaucher
   license: Création originale
 faq:

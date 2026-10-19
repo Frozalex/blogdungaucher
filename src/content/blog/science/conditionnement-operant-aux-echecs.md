@@ -28,6 +28,10 @@ faq:
     answer: "Pas par elle-même. Dans un modèle à essais indépendants avec probabilité constante, une série de défaites ne rend pas la victoire suivante plus probable."
   - question: "Comment suivre son entraînement ?"
     answer: "Tu peux noter un critère de processus, par exemple la recherche d'une défense adverse, en plus du résultat. C'est une proposition pratique à adapter, sans promesse d'efficacité universelle."
+heroImage:
+  src: /images/blog/conditionnement-operant-aux-echecs-hero.webp
+  alt: Un doigt approche un bouton mécanique placé près d’une coupelle.
+ogImage: /images/og/conditionnement-operant-aux-echecs-og.webp
 ---
 
 Tu avais dit une partie. Il est une heure du matin et tu en as joué dix-sept.

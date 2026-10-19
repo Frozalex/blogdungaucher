@@ -48,6 +48,7 @@ faq:
       Invertendo a ordem das operações: avalie a posição e escreva o seu veredicto antes de ligar a
       engine. A informação útil não é a avaliação dela, é a distância entre a dela e a sua. Sem um
       veredicto escrito antes, essa distância não existe e você não aprende nada sobre si mesmo.
+heroImageAlt: Pequenas lâmpadas apontam para uma grande luminária suspensa.
 ---
 
 Seu treinador manda jogar h3 nessa estrutura. Você não entende por quê. Você joga.

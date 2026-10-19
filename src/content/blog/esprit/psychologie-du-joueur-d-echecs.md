@@ -24,8 +24,8 @@ seoDescription: "Ego, tilt, flow, peur de perdre et colère : comprends tes réa
 ogImage: /images/og/psychologie-du-joueur-d-echecs-og.webp
 heroImage:
   src: /images/blog/psychologie-du-joueur-d-echecs-hero.webp
-  alt: >-
-    Une silhouette assise de profil faisant face à son ombre redressée comme un adversaire.
+  alt: Une silhouette assise de profil faisant face à son ombre redressée comme un
+    adversaire.
 faq:
   - question: "Comment gérer le tilt aux échecs ?"
     answer: "Si tu remarques que tu relances sous le coup de la colère, tu peux interrompre la session et analyser plus tard. C'est une proposition pratique, pas une méthode universellement supérieure attribuable sans référence à Dvoretsky."

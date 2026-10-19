@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Corte subterrâneo mostrando uma vasta rede de raízes sob um broto minúsculo."
+heroImageAlt: Um corte do subsolo mostra uma ampla rede de raízes sob um broto minúsculo.
 title: "A síndrome do impostor no xadrez: jogar sob o peso da dúvida"
 excerpt: "Você joga bem, você ganha e, mesmo assim, está convencido de que foi sorte. De que os outros vão 'te desmascarar'. A síndrome do impostor no xadrez atinge milhares de jogadores em todos os níveis. Veja como reconhecê-la e superá-la."
 seoTitle: "Síndrome do impostor no xadrez: 4 padrões e como sair deles"

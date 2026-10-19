@@ -25,12 +25,11 @@ tags:
   - Stockfish
 seoTitle: "Résoudre les échecs : complexité, Shannon et limites de l'IA"
 seoDescription: "Nombre de Shannon, recherche exhaustive, évaluation et IA : pourquoi les échecs ne sont pas résolus, sans confondre difficulté pratique et impossibilité démontrée."
-ogImage: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.webp
+ogImage: /images/og/pourquoi-echecs-probleme-mathematique-impossible-et-ia-watermarked-og.webp
 heroImage:
-  src: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-hero.webp
-  alt: >-
-    Vignette pixel art : ordinateur rétro, écran avec arbre de décision lumineux, titre sur la complexité mathématique
-    des échecs et l’IA
+  src: /images/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia-watermarked-hero.webp
+  alt: "Vignette pixel art : ordinateur rétro, écran avec arbre de décision
+    lumineux, titre sur la complexité mathématique des échecs et l’IA"
   credit: Blog d'un Gaucher
   license: Création originale
 faq:

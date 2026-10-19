@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "Pixel art thumbnail: a desk at night, a screen showing a chessboard, title about chess addiction"
+heroImageAlt: A teal ribbon loops around a chair and an hourglass.
 title: "Chess and Addiction: When the Game Becomes a Drug"
 excerpt: >-
   It's 3am. You promised yourself it was the last game, but you're launching another one. Can you really be addicted to

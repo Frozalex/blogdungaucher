@@ -29,12 +29,11 @@ seoTitle: "Guide Grand Oral SES HGGSP Échecs 2026 : script 10 min + Bourdieu + 
 seoDescription: >-
   Méthodologie, script 10 min, données économiques et géopolitiques, Bourdieu et capital culturel, 25 questions jury
   rédigées. Le guide complet imprimable pour ton Grand Oral SES ou HGGSP avec les échecs.
-ogImage: /images/og/guide-grand-oral-echecs-ses-hggsp-og.webp
+ogImage: /images/og/guide-grand-oral-echecs-ses-hggsp-watermarked-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-ses-hggsp-hero.webp
-  alt: >-
-    Une bibliothèque scolaire, tables de travail entre les rayonnages.
-  credit: "State Government Photographer, CC0, via Wikimedia Commons"
+  src: /images/blog/guide-grand-oral-echecs-ses-hggsp-watermarked-hero.webp
+  alt: Une bibliothèque scolaire, tables de travail entre les rayonnages.
+  credit: State Government Photographer, CC0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Students_Reading_at_Tables_in_School_Library(GN08836).jpg
   license: CC0
 faq:

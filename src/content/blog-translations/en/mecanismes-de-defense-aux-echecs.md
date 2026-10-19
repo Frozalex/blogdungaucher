@@ -58,6 +58,7 @@ faq:
       is indirect: spotting the defense after the fact by keeping a journal, postponing analysis by
       twenty-four hours to let the urgency drain away, and building post-game rituals that occupy the
       space. Vaillant observed that defensive style shifts with age.
+heroImageAlt: A seated figure sheltered by nested curved screens.
 ---
 
 End of round. Five players walk out of the hall, all of them beaten in the hour that just passed.

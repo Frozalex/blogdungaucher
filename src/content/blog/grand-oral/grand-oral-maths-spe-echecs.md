@@ -11,12 +11,12 @@ pillar: "Cognition"
 tags: ["grand-oral", "mathématiques", "terminale", "spécialité maths", "combinatoire", "loi binomiale", "suites", "Elo", "algorithme", "baccalauréat"]
 seoTitle: "Grand oral spé Maths : échecs et programme de terminale, plan complet"
 seoDescription: "Préparer un Grand Oral de spécialité Maths sur les échecs : combinatoire, probabilités, score attendu Elo et minimax, avec exemples et questions de jury."
-ogImage: /images/og/grand-oral-maths-spe-echecs-og.webp
+ogImage: /images/og/grand-oral-maths-spe-echecs-watermarked-og.webp
 heroImage:
-  src: /images/blog/grand-oral-maths-spe-echecs-hero.webp
-  alt: >-
-    Une salle de cours dont les murs sont couverts de tableaux noirs remplis de calculs.
-  credit: "Anthony J. Bentley, Public domain, via Wikimedia Commons"
+  src: /images/blog/grand-oral-maths-spe-echecs-watermarked-hero.webp
+  alt: Une salle de cours dont les murs sont couverts de tableaux noirs remplis de
+    calculs.
+  credit: Anthony J. Bentley, Public domain, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Blackboards_%E2%80%93_UNM_Astrophysics.JPG
   license: Public domain
 faq:

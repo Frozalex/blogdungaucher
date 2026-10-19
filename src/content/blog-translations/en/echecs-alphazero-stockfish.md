@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "Pixel art illustration: a neural network on one side, an algorithmic search tree on the other, a chessboard in the center, \"AlphaZero vs Stockfish\""
+heroImageAlt: Many parallel threads beside one continuous sweeping curve.
 title: "AlphaZero vs Stockfish: the Artificial Intelligence Revolution in Chess"
 excerpt: >-
   In December 2017, DeepMind published the results of a match that changed the way we think about both artificial

@@ -31,12 +31,11 @@ seoTitle: "Guide Grand Oral NSI Échecs 2026 : script 10 min + Python minimax + 
 seoDescription: >-
   Script 10 min, code Python minimax et alpha-bêta commenté ligne par ligne, 25 questions de jury rédigées. Le guide
   imprimable pour ton Grand Oral NSI avec les échecs.
-ogImage: /images/og/guide-grand-oral-echecs-nsi-og.webp
+ogImage: /images/og/guide-grand-oral-echecs-nsi-watermarked-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-nsi-hero.webp
-  alt: >-
-    Les paillasses et les armoires vitrées d'une salle de travaux pratiques.
-  credit: "Douglas P. Perkins, CC BY 3.0, via Wikimedia Commons"
+  src: /images/blog/guide-grand-oral-echecs-nsi-watermarked-hero.webp
+  alt: Les paillasses et les armoires vitrées d'une salle de travaux pratiques.
+  credit: Douglas P. Perkins, CC BY 3.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Jinego_Elementary_School_science_room_side.jpg
   license: CC BY 3.0
 faq:

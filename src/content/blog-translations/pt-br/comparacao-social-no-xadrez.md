@@ -45,6 +45,7 @@ faq:
       Com você mesmo, num período longo, e secundariamente com jogadores um pouco mais fortes de quem
       você consiga observar o método, e não só o resultado. Uma comparação só é útil se entregar uma
       informação sobre o que fazer; caso contrário, ela produz apenas um afeto.
+heroImageAlt: Duas escadas idênticas sobre superfícies de alturas diferentes.
 ---
 
 Você abre o aplicativo. Antes mesmo de ter jogado um lance, já recebeu quatro informações: o seu rating, a variação dele desde ontem, a sua posição no ranking dos seus amigos, e o rating do adversário proposto.

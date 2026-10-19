@@ -43,8 +43,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-ecole-og.webp
 heroImage:
   src: /images/blog/echecs-et-ecole-hero.webp
-  alt: >-
-    Une passerelle de craie inachevée reliant deux estrades, avec une case damier.
+  alt: Une passerelle de craie inachevée reliant deux estrades, avec une case
+    damier.
 faq:
   - question: Les échecs améliorent-ils les résultats en mathématiques ?
     answer: >-

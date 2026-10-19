@@ -46,6 +46,7 @@ faq:
       A vertente explícita é razoavelmente estável: as tarefas verbais de crença falsa dão resultados
       constantes há quarenta anos. Já a vertente implícita, que supostamente mostraria a mesma habilidade
       no bebê, tem sérios problemas de replicação, e hoje não existe consenso.
+heroImageAlt: Dois perfis separados por uma divisória olham para objetos diferentes.
 ---
 
 Posição de clube, seu adversário está classificado 200 pontos abaixo de você. Você pode jogar o lance objetivamente melhor, que leva a um final ganho mas longo e técnico.

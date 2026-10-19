@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Uma peça de xadrez colocada no encaixe de uma base talhada para uma peça maior."
+heroImageAlt: Uma peça de xadrez colocada na marca de uma base talhada para uma peça maior.
 title: "A síndrome da impostora nos 2000 Elo: por que você não se sente no seu lugar"
 excerpt: >-
   Você chegou a 2000 Elo. Uma vitória incrível. E ainda assim, algo não está certo. Você se sente um impostora. Como se

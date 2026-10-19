@@ -40,6 +40,7 @@ faq:
       Aan het moment waarop ze geformuleerd wordt. Een reden geschreven vóór je de zet speelt, of vóór je
       het resultaat kent, is een reden. Dezelfde zin geproduceerd erna is een reconstructie, en de
       schijnbare juistheid ervan bewijst niets omdat ze is gefabriceerd met kennis van de uitkomst.
+heroImageAlt: Een rechte papieren gevel bedekt een scheve houten constructie.
 ---
 
 Vraag een clubspeler waarom hij zet 19 speelde. Hij zal antwoorden. Hij zal het hebben over het veld d5, de activiteit van de toren, de timing van de opmars.

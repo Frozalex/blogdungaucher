@@ -27,8 +27,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-confiance-en-soi-og.webp
 heroImage:
   src: /images/blog/echecs-et-confiance-en-soi-hero.webp
-  alt: >-
-    Deux empilements côte à côte, l'un maçonné rang par rang, l'autre en équilibre instable.
+  alt: Deux empilements côte à côte, l'un maçonné rang par rang, l'autre en
+    équilibre instable.
 faq:
   - question: "La confiance garantit-elle de mieux jouer ?"
     answer: "Non. Une croyance confiante peut être inexacte. Cherche des repères concrets dans ton travail et tes parties."

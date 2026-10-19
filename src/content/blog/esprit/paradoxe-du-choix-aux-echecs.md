@@ -25,6 +25,10 @@ faq:
     answer: "Non. Certains apprentissages restent utiles. Le changement peut disperser le travail ou répondre à un besoin pertinent."
   - question: "Faut-il garder une ouverture cent parties ?"
     answer: "Ce nombre n’est pas un seuil validé ici. Tu peux prévoir un bilan sans interdire une adaptation justifiée."
+heroImage:
+  src: /images/blog/paradoxe-du-choix-aux-echecs-hero.webp
+  alt: Une silhouette fait face à un demi-cercle de tiroirs identiques fermés.
+ogImage: /images/og/paradoxe-du-choix-aux-echecs-og.webp
 ---
 
 Tu compares des répertoires depuis trois semaines et tu n’as encore étudié aucune position. Tu peux être gêné par le nombre d’options, par leur difficulté ou par l’absence d’un critère de choix clair.

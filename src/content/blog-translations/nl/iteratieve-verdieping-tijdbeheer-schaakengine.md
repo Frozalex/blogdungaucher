@@ -40,6 +40,7 @@ faq:
       vroegtijdige terugkeer door te geven; een exception die diep opgeworpen wordt, stijgt in één keer op tot
       de wortel, waar hij wordt opgevangen. Men moet alleen erop letten de klok slechts eens per paar honderd
       knopen te raadplegen, anders kost de tijdmeting zelf meer dan de zoektocht.
+heroImageAlt: Concentrische papieren terrassen lopen naar een onvoltooide buitenring.
 ---
 
 Onze engine heeft een gebrek dat geen enkele schaakinterface zou tolereren. Je geeft hem een diepte, hij levert een zet op wanneer hij klaar is, en hij kan zowel in een seconde als in tien minuten klaar zijn.

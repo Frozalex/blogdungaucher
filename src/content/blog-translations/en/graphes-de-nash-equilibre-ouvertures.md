@@ -42,6 +42,7 @@ faq:
       path to each leaf; a directed acyclic graph allows multiple paths. Professional opening databases
       (ChessBase, Lichess Masters) are actually compressed graphs, with millions of pre-calculated
       transpositions.
+heroImageAlt: Two chess pieces leaning against each other in mutual balance.
 ---
 
 Why is the Sicilian Defense played at every level for a hundred years? Why hasn't the Ruy Lopez been "refuted" despite centuries of analysis? Why do some theoretical variations collapse in a few years while others seem indestructible? The answer lies in a mathematical concept developed by [John Nash](https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.) in 1950: the Nash equilibrium.

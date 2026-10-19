@@ -40,8 +40,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-vision-spatiale-og.webp
 heroImage:
   src: /images/blog/echecs-et-vision-spatiale-hero.webp
-  alt: >-
-    Une maquette flottante réduite à quelques poutres porteuses, le reste du bâtiment absent.
+  alt: Une maquette flottante réduite à quelques poutres porteuses, le reste du
+    bâtiment absent.
 faq:
   - question: Les échecs améliorent-ils vraiment la vision spatiale ?
     answer: >-

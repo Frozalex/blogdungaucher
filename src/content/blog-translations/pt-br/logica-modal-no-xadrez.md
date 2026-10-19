@@ -4,6 +4,7 @@ excerpt: "Cada jogador raciocina em termos de possibilidades e necessidades: 'el
 seoTitle: "Lógica modal no xadrez: pensar por possibilidades e necessidades no tabuleiro"
 seoDescription: "Como a lógica modal formal estrutura o raciocínio no xadrez. Necessidade, possibilidade, mundos possíveis: as ferramentas da lógica aplicadas ao tabuleiro."
 frSlug: logique-modale-aux-echecs
+heroImageAlt: Um peão diante de portas, algumas bloqueadas e outras abertas.
 ---
 
 Quando você analisa uma posição, não pensa em termos de certezas. Você pensa em termos de possibilidades e necessidades. "Ele pode jogar ali." "Preciso proteger essa peça." "Se eu avançar esse peão, ele é forçado a responder assim." Essa linguagem modal, a do possível e do necessário, está no cerne da reflexão enxadrística. E corresponde exatamente a um ramo formal da lógica: a [lógica modal](https://pt.wikipedia.org/wiki/L%C3%B3gica_modal).

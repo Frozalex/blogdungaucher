@@ -58,6 +58,10 @@ faq:
       longue (<code>e2e4</code>, <code>e7e8q</code>), qui est sans ambiguïté. La notation algébrique
       abrégée n'existe que pour produire des PGN lisibles par un humain, et son seul coût réel est la
       désambiguïsation quand deux pièces identiques peuvent atteindre la même case.
+heroImage:
+  src: /images/blog/un-moteur-qui-joue-au-hasard-hero.webp
+  alt: Une pince mécanique choisit un jeton parmi plusieurs jetons dans un bol.
+ogImage: /images/og/un-moteur-qui-joue-au-hasard-og.webp
 ---
 
 La [phase 1 de cette série](/fr/blog/perft-verifier-son-generateur-de-coups/) s'est terminée sur un programme qui connaît parfaitement les règles des échecs et qui ne joue pas. Il sait ce qui est permis. Il n'a aucune idée de ce qui est bon.

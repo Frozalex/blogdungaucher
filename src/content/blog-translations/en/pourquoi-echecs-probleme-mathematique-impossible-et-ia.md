@@ -1,5 +1,6 @@
 ---
-heroImageAlt: "Pixel art thumbnail: a retro computer, screen showing a glowing decision tree, title about the mathematical complexity of chess and AI"
+heroImageAlt: "Pixel art thumbnail: a retro computer with a glowing decision
+  tree on screen and a title about chess complexity and AI."
 title: Why Chess is a (Nearly) Impossible Mathematical Problem - and How AI Solves it Anyway
 excerpt: >-
   The game tree explodes, Shannon's number is staggering, yet an engine corrects you in seconds. Is chess really

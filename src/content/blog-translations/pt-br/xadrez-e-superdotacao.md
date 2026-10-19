@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Ilustração em pixel art: uma criança pensativa diante de um tabuleiro de xadrez luminoso, estrelas e engrenagens ao redor, « Xadrez e superdotação »"
+heroImageAlt: Uma peça de xadrez ao pé de uma escada em espiral.
 title: "Xadrez e superdotação intelectual: o tabuleiro como espaço para o aluno superdotado"
 excerpt: >-
   As crianças superdotadas são frequentemente descritas como feitas para o xadrez. A realidade é mais sutil : o tabuleiro

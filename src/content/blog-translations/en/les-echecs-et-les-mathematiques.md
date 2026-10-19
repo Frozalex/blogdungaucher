@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "Pixel art thumbnail: a glowing neural pattern on a purple background, title about chess and mathematics"
+heroImageAlt: A chess knight faces geometric solids across an unfinished bridge.
 title: Does Chess Make You Better at Maths? The Scientific Truth
 excerpt: >-
   Playing chess makes you good at maths? The answer isn't what you'd expect - and it radically changes what you should

@@ -23,14 +23,10 @@ tags:
 seoTitle: "Échecs et Femmes : pourquoi si peu de joueuses aujourd'hui ?"
 seoDescription: >-
   Femmes et échecs : 40 femmes parmi 1700 Grands Maîtres. Est-ce biologique, culturel ou structurel ? Les données qui démontent les idées reçues sur l'écart de genre.
-ogImage: /images/blog/echecs-et-femmes-hero.webp
+ogImage: /images/og/echecs-et-femmes-v2-og.webp
 heroImage:
-  src: /images/blog/echecs-et-femmes-hero.webp
-  alt: >-
-    Illustration pixel art : cinq femmes assises à une longue table sous un projecteur, fond sombre ; titre « Échecs et
-    Femmes : pourquoi si peu de joueuses aujourd'hui ? » en surimpression.
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-femmes-v2-hero.webp
+  alt: Une joueuse stylisée est assise à une table d’échecs face à une chaise libre.
 faq:
   - question: Pourquoi y a-t-il si peu de joueuses d'échecs dans les compétitions ?
     answer: >-

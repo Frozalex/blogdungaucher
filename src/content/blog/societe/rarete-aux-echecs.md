@@ -50,6 +50,10 @@ faq:
       Par le délai, pour les achats, puisque la rareté fabriquée ne résiste pas à l'attente. Et pour la
       pendule, par une règle de répartition décidée avant la partie, qui remplace une évaluation prise
       au moment où elle est le plus faussée.
+heroImage:
+  src: /images/blog/rarete-aux-echecs-hero.webp
+  alt: Une bobine presque vide retient une courte longueur de ruban.
+ogImage: /images/og/rarete-aux-echecs-og.webp
 ---
 
 Il te reste huit minutes. À ton adversaire, vingt-cinq.

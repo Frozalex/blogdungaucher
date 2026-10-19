@@ -45,6 +45,8 @@ faq:
       wetenschappelijke opleiding). Omgekeerd spelen erkende wiskundigen op amateurniveau terwijl ze een
       uitstekende methodologische overdracht hebben. Beide disciplines delen een houding, niet dezelfde
       kennisbasis.
+heroImageAlt: Een schaakpaard kijkt naar geometrische vormen aan de overkant van
+  een onvoltooide brug.
 ---
 
 Er staat geen enkel cijfer op een schaakbord. Geen vergelijking om op te lossen. Een grootmeester is niet noodzakelijk in staat om sneller dan jij een integraal te berekenen. En toch wordt het idee dat "schaken je goed maakt in wiskunde" al decennia herhaald op scholen, in naschoolse clubs en in toelatingsargumenten, alsof de 64 velden algebraïsche formules in het brein zouden implanteren door simpel contact.

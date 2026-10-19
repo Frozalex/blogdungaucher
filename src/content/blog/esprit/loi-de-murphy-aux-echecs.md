@@ -15,6 +15,11 @@ faq:
     answer: "Non. Elle est utilisée ici comme une métaphore de la déception, pas comme une loi probabiliste."
   - question: "Comment vérifier que tu rates toujours au même moment ?"
     answer: "Définis le moment avant de compter, puis examine les parties concernées et les contre-exemples. Un souvenir marquant ne suffit pas."
+heroImage:
+  src: /images/blog/loi-de-murphy-aux-echecs-hero.webp
+  alt: Des rangées de punaises sombres dont certaines sont entourées d’un cercle
+    clair.
+ogImage: /images/og/loi-de-murphy-aux-echecs-og.webp
 ---
 
 Tu as joué une partie correcte, puis une erreur a tout changé. « Évidemment, au pire moment. » La formule rend bien la déception. Elle ne démontre pas que les événements se sont ligués contre toi.

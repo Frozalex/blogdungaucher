@@ -26,6 +26,10 @@ faq:
     answer: "Non. Elle étudie 307 hommes dans un suivi longitudinal. Son application aux réactions des joueurs reste une grille de réflexion."
   - question: "Quand analyser une défaite ?"
     answer: "Quand tu peux examiner la partie utilement. Aucun délai d’une heure ou de vingt-quatre heures n’est établi ici comme protocole universel."
+heroImage:
+  src: /images/blog/mecanismes-de-defense-aux-echecs-hero.webp
+  alt: Une silhouette assise s’abrite derrière plusieurs paravents courbes emboîtés.
+ogImage: /images/og/mecanismes-de-defense-aux-echecs-og.webp
 ---
 
 Cinq joueurs perdent une partie. L’un accuse le bruit, un autre plaisante, un troisième veut immédiatement analyser. Ces réactions invitent à poser des questions. Elles ne suffisent pas à ranger cinq personnes dans une hiérarchie de maturité.

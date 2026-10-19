@@ -27,6 +27,10 @@ faq:
     answer: "Non. Elle étudie des associations et leur évolution après ajustement. Elle n’isole pas ce mécanisme comme cause unique."
   - question: "Un test de dix positions suffit-il à prouver ton progrès ?"
     answer: "Il donne un repère local. La difficulté, la familiarité et le souvenir des réponses limitent son interprétation."
+heroImage:
+  src: /images/blog/gratification-differee-aux-echecs-hero.webp
+  alt: Une graine fermée côtoie une plante en croissance derrière une paroi.
+ogImage: /images/og/gratification-differee-aux-echecs-og.webp
 ---
 
 Tu hésites entre une attaque immédiate et une amélioration plus lente de ta position. Ce choix n’est pas un test de patience : l’attaque peut être meilleure, et le coup calme peut être une erreur.

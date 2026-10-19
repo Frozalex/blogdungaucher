@@ -23,9 +23,10 @@ faq:
   - question: "Les maths utilisent-elles l’intuition ?"
     answer: "Oui, notamment pour chercher des pistes ; une intuition reste distincte d'une démonstration."
 heroImage:
-  src: "/images/og-default.png"
-  alt: "Échiquier et tableau noir avec formules mathématiques"
-ogImage: "/images/og-default.png"
+  src: /images/blog/echecs-vs-mathematiques-logique-hero.webp
+  alt: Un fou d’échecs relié par un pont à des formes géométriques emboîtées.
+ogImage: /images/og/echecs-vs-mathematiques-logique-og.webp
+
 ---
 
 Calculer une variante et chercher une démonstration peuvent se ressembler : tu pars de règles, tu explores une piste, puis tu vérifies ce qui tient. Cette ressemblance explique qu'on rapproche souvent les échecs des mathématiques. Elle ne prouve pas qu'une compétence se transfère automatiquement à l'autre.

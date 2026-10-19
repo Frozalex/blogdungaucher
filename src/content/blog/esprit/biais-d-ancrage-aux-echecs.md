@@ -27,6 +27,10 @@ faq:
     answer: "Non. Son analyse apporte une information pertinente. La question est de comprendre son rôle dans ton jugement et les limites du calcul affiché."
   - question: "Faut-il une évaluation chiffrée avant le moteur ?"
     answer: "Une appréciation qualitative accompagnée de variantes peut aussi être utile. Un chiffre précis sans justification ne mesure pas à lui seul ta compréhension."
+heroImage:
+  src: /images/blog/biais-d-ancrage-aux-echecs-hero.webp
+  alt: Une petite ancre retient près du sol un ballon de forme abstraite.
+ogImage: /images/og/biais-d-ancrage-aux-echecs-og.webp
 ---
 
 Tu ouvres l’analyse : +1,4 apparaît avant que tu aies regardé la position. Tu peux encore apprendre, calculer et contester la ligne. En revanche, tu ne peux plus observer exactement le jugement que tu aurais porté sans connaître cette information.

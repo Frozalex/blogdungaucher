@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Uma silhueta sentada de perfil, encarando sua própria sombra erguida como um adversário."
+heroImageAlt: Uma silhueta sentada de perfil encara sua própria sombra, erguida
+  como um adversário.
 title: "A psicologia do jogador de xadrez: o que realmente acontece na sua cabeça"
 excerpt: >-
   O xadrez não se joga só no tabuleiro. Joga-se primeiro na sua cabeça, antes mesmo de a mão tocar uma peça.

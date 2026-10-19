@@ -7,6 +7,7 @@ seoTitle: "Angst om te winnen bij schaken: waarom spelers winnende standen verpe
 seoDescription: "De angst om te winnen bij schaken uitgelegd: psychologische mechanismen van onbewuste zelfondermijning in winnende standen. Prospecttheorie, patronen en praktische oplossingen."
 frSlug: echecs-peur-de-gagner
 draft: false
+heroImageAlt: Een pion die stilstaat voor het einde van een geblokt pad.
 ---
 
 De stand is duidelijk winnend. De engine zou het in een seconde bevestigen. Je tegenstander zit in tijdnood, heeft geen ideeën meer, zijn stelling stort in elkaar. En dan, op het precieze moment dat de overwinning werkelijkheid wordt, gebeurt er iets vreemds. Je speelt een aarzelende zet, laat een tegenkans liggen, compliceert onnodig. De overwinning verdampt. En je begrijpt niet goed waarom je dat deed.

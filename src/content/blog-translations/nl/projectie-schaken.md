@@ -38,6 +38,7 @@ faq:
       Door de vraag naar de bron expliciet te maken. Vraag jezelf bij elke veronderstelling over wat de
       tegenstander ziet of voorbereidt af waar deze informatie vandaan komt: van een element in de
       stelling, of van wat jij in gedachten hebt. Zonder bewijs uit de stelling gaat het om projectie.
+heroImageAlt: Twee zittende figuren tegenover elkaar in vlakken van schaduw en licht.
 ---
 
 Je ziet een idee. Een kwaliteitsoffer dat de kolom voor de vijandige koning opent. Je rekent, je vindt dat het niet helemaal werkt, je laat het idee vallen en speelt iets anders op het bord.

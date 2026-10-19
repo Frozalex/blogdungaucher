@@ -37,6 +37,7 @@ faq:
       komt bijna perfect overeen met dit cognitieve profiel. <strong>Na het lezen:</strong> mik voor een
       eerste opzet op <strong>drie</strong> korte sessies per week, een fysiek bord, <strong>zonder</strong>
       ratingdoel gedurende een maand; noteer wat vermoeit (geluid, duur, groep).
+heroImageAlt: Een licht stenen pad loopt vanuit een beschutte nis naar een tuin.
 ---
 
 Stel je een schoolplein voor op een donderdagochtend. Het lawaai is oorverdovend: stoelen die schrapen, onvoorspelbare uitroepen, tl-lampen die licht zoemen boven de hoofden. Voor de meesten van ons is het slechts een lichte achtergrondruis. Maar voor Théo, 9 jaar, gediagnosticeerd met [autismespectrumstoornis](https://nl.wikipedia.org/wiki/Autismespectrumstoornis) (ASS) niveau 2, verandert deze stroom ongefilterde zintuiglijke informatie elke ochtend in een verlammende innerlijke storm. Sociale codes vliegen alle kanten op, impliciet, ondoorgrondelijk. Je moet tussen de regels van een gesprek kunnen lezen, een grimas interpreteren, de dubbele bodem van een grap begrijpen. Dat is uitputtend op een niveau dat weinig neurotypische mensen zich kunnen voorstellen.

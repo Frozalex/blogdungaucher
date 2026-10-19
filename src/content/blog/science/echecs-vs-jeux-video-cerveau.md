@@ -23,9 +23,10 @@ faq:
   - question: "Jouer beaucoup suffit-il à définir une addiction ?"
     answer: "Non. L'OMS retient notamment une perte de contrôle et une altération importante du fonctionnement."
 heroImage:
-  src: "/images/og-default.png"
-  alt: "Échiquier et manette de jeu vidéo : deux rapport au cerveau"
-ogImage: "/images/og-default.png"
+  src: /images/blog/echecs-vs-jeux-video-cerveau-hero.webp
+  alt: Une manette et une tour d’échecs partagent le même cercle de lumière.
+ogImage: /images/og/echecs-vs-jeux-video-cerveau-og.webp
+
 ---
 
 Les échecs ont l'image du jeu sérieux ; les jeux vidéo, celle du divertissement parfois excessif. Ces images ne remplacent pas une comparaison. Un jeu d'action, une aventure narrative et une partie d'échecs ne demandent pas exactement la même chose.

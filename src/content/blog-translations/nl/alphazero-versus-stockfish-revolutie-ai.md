@@ -48,6 +48,7 @@ faq:
       beste Stockfish-versies. Het is de manier voor gewone spelers om toegang te krijgen tot een
       "AlphaZero-achtige" analysestijl, die leerzamer kan zijn dan Stockfish om posities met intuïtieve compensatie
       te begrijpen.
+heroImageAlt: Veel parallelle draden naast één doorlopende gebogen lijn.
 ---
 
 December 2017. Het team van DeepMind publiceert een onderzoekspaper en, als bijlage, 10 becommentarieerde partijen. Deze 10 partijen hebben de schaakgemeenschap geëlektriseerd op een manier die sinds de Fischer-Spassky-match van 1972 niet meer was voorgekomen.

@@ -1,5 +1,5 @@
 ﻿---
-heroImageAlt: "Duas velas idênticas lado a lado, uma quase consumida, a outra apenas começada."
+heroImageAlt: Duas velas idênticas lado a lado, uma quase consumida, a outra apenas começada.
 title: "Hiperfoco e atenção sustentada no xadrez: dois regimes que tudo opõe"
 excerpt: >-
   Você fica absorto durante duas horas numa combinação sem ver o relógio passar : é o hiperfoco. Você sustenta cinco

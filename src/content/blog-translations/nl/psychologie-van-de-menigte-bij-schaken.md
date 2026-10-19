@@ -42,6 +42,7 @@ faq:
       Postmes, toont daarentegen dat anonimiteit en onderdompeling in een groep de aanhankelijkheid aan
       de normen van die groep juist versterken. Een agressieve chat onthult niet het verdwijnen van
       regels, hij onthult welke regels in die groep gelden.
+heroImageAlt: Zittende figuren in afzonderlijke lichtkringen binnen één zaal.
 ---
 
 Toernooizaal, ronde 5. Honderdveertig spelers, tachtig tafels, en een absolute stilte. Niemand praat. Niemand beweegt zich. Niemand kijkt ergens anders dan naar zijn eigen stelling.

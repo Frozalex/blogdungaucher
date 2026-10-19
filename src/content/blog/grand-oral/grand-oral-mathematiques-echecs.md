@@ -10,12 +10,12 @@ pillar: "Cognition"
 tags: ["grand-oral", "mathématiques", "NSI", "terminale", "combinatoire", "théorie des jeux", "IA", "Elo", "minimax", "baccalauréat", "transversal"]
 seoTitle: "Grand oral Maths + NSI : les échecs, pont entre les deux spécialités"
 seoDescription: "Grand Oral Maths et NSI échecs : combinatoire, minimax, probabilités Elo, graphes et structures de données. Plan, formules et code Python prêts."
-ogImage: /images/og/grand-oral-mathematiques-echecs-og.webp
+ogImage: /images/og/grand-oral-mathematiques-echecs-watermarked-og.webp
 heroImage:
-  src: /images/blog/grand-oral-mathematiques-echecs-hero.webp
-  alt: >-
-    Une salle de lecture symétrique, alignement de lampes sur les tables de travail.
-  credit: "Dr. Marcus Gossler, CC BY-SA 3.0, via Wikimedia Commons"
+  src: /images/blog/grand-oral-mathematiques-echecs-watermarked-hero.webp
+  alt: Une salle de lecture symétrique, alignement de lampes sur les tables de
+    travail.
+  credit: Dr. Marcus Gossler, CC BY-SA 3.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Graz_University-Library_reading-room.jpg
   license: CC BY-SA 3.0
 faq:

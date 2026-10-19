@@ -1,5 +1,6 @@
 ﻿---
-heroImageAlt: "Uma passarela de giz inacabada ligando dois estrados, com uma casa em formato de tabuleiro."
+heroImageAlt: Uma passarela de giz inacabada ligando dois estrados, com uma casa
+  em formato de tabuleiro.
 title: "Xadrez na escola: o que a pesquisa realmente diz sobre o aprendizado"
 excerpt: >-
   A Armênia tornou o xadrez obrigatório no ensino fundamental. A Venezuela lançou o maior programa nacional da história.

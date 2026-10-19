@@ -21,12 +21,11 @@ tags:
 seoTitle: "Addiction aux échecs : comprendre et surmonter la dépendance"
 seoDescription: >-
   Addiction aux échecs : 47 parties dans la nuit, rating obsessionnel, boucle dopaminergique. Les échecs créent-ils une vraie dépendance ? Signes et solutions.
-ogImage: /images/blog/les-echecs-et-l-addiction-hero.webp
+ogImage: /images/og/les-echecs-et-l-addiction-v2-og.webp
 heroImage:
-  src: /images/blog/les-echecs-et-l-addiction-hero.webp
-  alt: "Vignette pixel art : bureau la nuit, écran montrant un échiquier, titre sur l’addiction aux échecs"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/les-echecs-et-l-addiction-v2-hero.webp
+  alt: Un ruban vert d’eau forme des boucles autour d’une chaise et d’un sablier.
+
 ---
 
 Il est 3 h du matin. L’écran bleuté te crame les paupières ; le compteur du **jour** affiche **47 parties jouées**. Ton rating vient de passer sous le palier que tu t’étais juré de ne plus lâcher. Tu te dis : *« Juste une dernière, celle qui remet tout d’aplomb »*. Parce qu’il n’est pas question de finir sur une défaite.

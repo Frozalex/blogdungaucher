@@ -47,6 +47,7 @@ faq:
       You should ask of them exactly what you ask of yourself: an earlier trace. Many of the classics
       presented in this series have not survived rigorous replication. What held up best were
       preregistered protocols and measures independent of the subject's own judgment.
+heroImageAlt: A hand offering a puzzle piece at an opening in a circular wall.
 ---
 
 An engine displays an evaluation that contradicts yours. You have two seconds to decide what you're going to do with that information.

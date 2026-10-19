@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "A seated figure in profile, facing its own shadow standing up like an opponent."
+heroImageAlt: A seated figure in profile, facing its own shadow standing up like an opponent.
 title: "The Psychology of the Chess Player: What's Really Happening Inside Your Head"
 excerpt: >-
   Chess isn't just played on the board. It's played first in your head, before your hand ever touches a piece. A

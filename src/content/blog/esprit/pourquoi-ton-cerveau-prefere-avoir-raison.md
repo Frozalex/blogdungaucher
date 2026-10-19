@@ -25,6 +25,10 @@ faq:
     answer: "Non. Une trace peut aider à comparer des jugements, mais elle ne conserve pas toute la pensée et ne neutralise pas tous les biais."
   - question: "Faut-il toujours remettre tout son jeu en cause ?"
     answer: "Non. Une question technique précise peut suffire. Le volume de travail doit aussi rester compatible avec tes objectifs et ton plaisir."
+heroImage:
+  src: /images/blog/pourquoi-ton-cerveau-prefere-avoir-raison-hero.webp
+  alt: Une main présente une pièce de puzzle devant l’ouverture d’un mur circulaire.
+ogImage: /images/og/pourquoi-ton-cerveau-prefere-avoir-raison-og.webp
 ---
 
 Une analyse contredit ton jugement. Tu peux être curieux, agacé, surpris, ou ressentir plusieurs choses à la fois. Aucune de ces réactions ne prouve que ton cerveau aurait choisi de protéger ton image plutôt que d’apprendre.

@@ -20,12 +20,14 @@ tags:
   - Pierre Nora
 seoTitle: "Grand Oral HGGSP : mémoire et patrimoine des échecs"
 seoDescription: "Mémoire, histoire et patrimoine : analyse une exposition sur Fischer-Spassky avec le cadre de Pierre Nora et prépare les arguments de ton Grand Oral HGGSP."
-ogImage: /images/og/sujet-grand-oral-hggsp-memoire-patrimoine-og.webp
+ogImage: /images/og/sujet-grand-oral-hggsp-memoire-patrimoine-watermarked-og.webp
 heroImage:
-  src: /images/go-memoire.svg
-  alt: "Schéma reliant une trace historique à sa sélection et à sa présentation muséale."
+  src: /images/blog/sujet-grand-oral-hggsp-memoire-patrimoine-watermarked-hero.webp
+  alt: Schéma reliant une trace historique à sa sélection et à sa présentation
+    muséale.
   credit: Blog d’un Gaucher
   license: Création originale
+
 ---
 
 Un même match peut être étudié comme une suite de parties, raconté comme un affrontement politique et présenté dans une exposition. Comment ces usages transforment-ils notre rapport à Fischer-Spassky 1972 ?

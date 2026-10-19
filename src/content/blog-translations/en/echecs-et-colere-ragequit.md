@@ -5,6 +5,7 @@ seoTitle: "Chess Rage and Ragequit: The Brain Circuits Behind Tilt"
 seoDescription: "Why chess defeats trigger intense anger. The neurological circuits of ragequit, the role of the amygdala, and the 90-second window to regain control."
 enSlug: "chess-and-anger-ragequit"
 draft: false
+heroImageAlt: An electrical arc jumping between two dark conductors.
 ---
 
 You lost a piece to a stupid blunder. Or your opponent refused a draw. Or they played some dubious move that "no one would play in real life." And then something breaks. Your fist clenches. Your jaw tightens. You slam the tab closed, or worse, you stay connected to type something you'll regret. This is ragequit, and it's not a character flaw: it's biology.

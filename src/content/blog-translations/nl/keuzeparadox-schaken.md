@@ -40,6 +40,7 @@ faq:
       dat twee jaar wordt aangehouden, levert meer bruikbare ervaring op dan een ideaal repertoire dat drie
       keer per jaar wordt veranderd. Leg het opgeefcriterium vast voordat je begint, op basis van een
       aantal partijen en een score, in plaats van het in het heetst van de strijd te beslissen na een nederlaag.
+heroImageAlt: Een figuur voor een halve cirkel identieke gesloten laden.
 ---
 
 Je wilt een repertoire opbouwen met zwart tegen 1.e4.

@@ -10,6 +10,10 @@ pillar: "Neurosciences"
 tags: ["neurones miroirs", "échecs", "neurosciences", "cerveau", "anticipation", "empathie", "cognition"]
 seoTitle: "Neurones miroirs et échecs : les limites de l'explication"
 seoDescription: "Les neurones miroirs expliquent-ils l'anticipation aux échecs ? Distinguer observation d'un geste, simulation mentale et raisonnement sur un plan adverse."
+heroImage:
+  src: /images/blog/neurones-miroirs-aux-echecs-hero.webp
+  alt: Une main approche une pièce d’échecs à côté de son reflet.
+ogImage: /images/og/neurones-miroirs-aux-echecs-og.webp
 ---
 
 Tu regardes une position et tu crois comprendre ce que l’adversaire prépare. Tu joues un coup préventif, puis son plan apparaît. L’expérience est familière : tu as envisagé la position depuis l’autre camp.

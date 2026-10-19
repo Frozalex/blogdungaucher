@@ -26,14 +26,10 @@ seoTitle: "Apprendre à perdre aux échecs : ce que personne ne dit vraiment"
 seoDescription: >-
   Les échecs apprennent-ils vraiment à perdre ? Loss aversion, Elo, défaite publique, grands maîtres : analyse honnête
   d'une idée reçue sur le monde des échecs.
-ogImage: /images/blog/echecs-et-l-echec-hero.png
+ogImage: /images/og/echecs-et-l-echec-og.webp
 heroImage:
-  src: /images/blog/echecs-et-l-echec-hero.png
-  alt: >-
-    Illustration pixel art : roi aux échecs couché sur l'échiquier après une partie, lumière douce et mélancolique,
-    atmosphère de dignité dans la défaite, « Apprendre à perdre »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-l-echec-hero.webp
+  alt: Une pièce d’échecs couchée projette une longue ombre au sol.
 faq:
   - question: "Faut-il analyser immédiatement une défaite ?"
     answer: "Choisis un moment où tu peux examiner tes décisions. Aucun délai universel ni rituel de champion n'est prescrit ici."

@@ -29,6 +29,10 @@ faq:
     answer: "Non. Cela peut aussi venir d'un calcul incomplet, d'une compensation insuffisante ou d'une préférence pratique. Les études citées ne diagnostiquent pas tes décisions échiquéennes."
   - question: "Comment travailler un sacrifice ?"
     answer: "Explique la compensation envisagée et cherche la meilleure défense. Aucun nombre fixe de trois éléments ne garantit que le sacrifice soit bon."
+heroImage:
+  src: /images/blog/aversion-a-la-perte-aux-echecs-hero.webp
+  alt: Deux mains, l’une perdant un caillou dans l’ombre, l’autre en recevant un.
+ogImage: /images/og/aversion-a-la-perte-aux-echecs-og.webp
 ---
 
 Position équilibrée, milieu de partie. Tu vois une idée : abandonner un pion pour ouvrir la colonne b et immobiliser son fou de cases blanches. L'évaluation dit que c'est bon. Ton intuition dit que c'est bon.

@@ -41,8 +41,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-resilience-og.webp
 heroImage:
   src: /images/blog/echecs-et-resilience-hero.webp
-  alt: >-
-    Une silhouette de profil avançant courbée contre un vent de face, sur une plaine vide.
+  alt: Une silhouette de profil avançant courbée contre un vent de face, sur une
+    plaine vide.
 faq:
   - question: Comment accepter une défaite aux échecs sans se décourager ?
     answer: >-

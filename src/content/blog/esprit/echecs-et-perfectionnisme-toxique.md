@@ -13,9 +13,7 @@ seoDescription: "Comment le perfectionnisme devient toxique aux échecs. Paralys
 ogImage: /images/og/echecs-et-perfectionnisme-toxique-og.webp
 heroImage:
   src: /images/blog/echecs-et-perfectionnisme-toxique-hero.webp
-  alt: >-
-    Une main polissant un point d'une surface lisse jusqu'à y creuser un trou.
-
+  alt: Une main polissant un point d'une surface lisse jusqu'à y creuser un trou.
 faq:
   - question: "Satisficing signifie-t-il jouer sans vérifier ?"
     answer: "Non. Il s’agit de chercher une option satisfaisante sous contrainte. Le seuil doit être adapté à la position ; une défense forcée peut exiger un calcul précis."

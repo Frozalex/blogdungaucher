@@ -51,6 +51,10 @@ faq:
       En filtrant sur une tranche de classement proche de la tienne avant de lire quoi que ce soit. Le
       pourcentage global mêle des parties de grands maîtres et des parties de club, et les difficultés
       pratiques d'une ligne ne sont pas les mêmes selon le niveau.
+heroImage:
+  src: /images/blog/preuve-sociale-aux-echecs-hero.webp
+  alt: Une loupe examine des empreintes à l’endroit où le chemin bifurque.
+ogImage: /images/og/preuve-sociale-aux-echecs-og.webp
 ---
 
 Tu ouvres ta base sur une position d'ouverture. Trois coups jouables apparaissent.

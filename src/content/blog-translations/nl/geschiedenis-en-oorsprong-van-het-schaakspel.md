@@ -47,6 +47,7 @@ faq:
       Vóór hem verschilden de vormen van de stukken enorm van land tot land, wat internationale toernooien
       bemoeilijkte. Het sobere en direct herkenbare Staunton-ontwerp werd de officiële norm en blijft die
       van elke serieuze competitie.
+heroImageAlt: Een rij silhouetten van schaakstukken die steeds hoger worden.
 ---
 
 Op een modern schaakbord is de dame koningin. Ze veegt over lijnen, kolommen en diagonalen; haar verliezen zonder compensatie betekent bijna altijd de partij verliezen. Ze is, verreweg, het krachtigste stuk.

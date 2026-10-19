@@ -49,6 +49,7 @@ faq:
       Não, mas por um motivo diferente do que se imagina. Um ritual estável não deixa ninguém melhor
       por mágica. Ele reduz o número de decisões a tomar antes da partida e estabiliza o estado
       emocional inicial. Esse benefício é real e não tem nada de placebo: é economia de atenção.
+heroImageAlt: Duas xícaras idênticas ao lado de uma sombra em forma de porta.
 ---
 
 Tem o moletom. Aquele com que você ganhou aquele torneio três anos atrás, e que você veste em toda rodada importante.

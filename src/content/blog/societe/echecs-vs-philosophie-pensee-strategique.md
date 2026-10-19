@@ -24,9 +24,10 @@ faq:
   - question: "Les échecs enseignent-ils à mieux penser ?"
     answer: "Ils entraînent certaines formes de pensée rigoureuse et séquentielle. Mais la pensée philosophique exige en plus une capacité à remettre en question les règles elles-mêmes, pas seulement à jouer à l'intérieur de celles-ci. C'est une différence fondamentale."
 heroImage:
-  src: "/images/og-default.png"
-  alt: "Échiquier et livres de philosophie : le jeu comme outil de pensée"
-ogImage: "/images/og-default.png"
+  src: /images/blog/echecs-vs-philosophie-pensee-strategique-hero.webp
+  alt: Un livre ouvert dont les pages forment un escalier vers une porte.
+ogImage: /images/og/echecs-vs-philosophie-pensee-strategique-og.webp
+
 ---
 
 Les philosophes ont un rapport particulier aux jeux. Platon discutait des dés, Pascal calculait les probabilités au jeu de hasard pour méditer sur Dieu, et Wittgenstein a consacré des pages importantes de ses Investigations philosophiques aux échecs. Ce n'est pas un hasard : les jeux offrent des microcosmes dans lesquels certaines questions philosophiques apparaissent dans toute leur netteté.

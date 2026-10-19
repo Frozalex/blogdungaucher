@@ -1,5 +1,5 @@
 ---
-heroImageAlt: "A plowed field where only the untouched strip shows any regrowth."
+heroImageAlt: A ploughed field where only the untouched strip shows regrowth.
 title: "The Benefits of Breaks in Chess: Why Stopping Playing Makes You Better"
 excerpt: "Playing less to progress more: it sounds absurd, and yet cognitive recovery science explains why regular breaks are one of the most underestimated practices of the serious chess player."
 seoTitle: "Breaks in Chess: Why Stopping Makes You Better"

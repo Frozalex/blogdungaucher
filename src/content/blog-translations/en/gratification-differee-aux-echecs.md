@@ -48,6 +48,7 @@ faq:
       because it's objectively better or because its reward is immediate. A combination is satisfying
       before it's even been verified, which skews how you examine it: that imbalance is what needs
       fixing, not your taste for beautiful chess.
+heroImageAlt: A closed seed pod beside a growing plant behind a screen.
 ---
 
 Quiet position. Two options.

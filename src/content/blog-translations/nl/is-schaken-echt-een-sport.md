@@ -30,6 +30,7 @@ faq:
       De profs doen dat wel, ja. Magnus Carlsen, Levon Aronian, Fabiano Caruana doen allemaal intensief
       aan sport (hardlopen, voetbal, yoga) om fysiek stand te houden tijdens lange partijen. Fysieke
       vermoeidheid vertaalt zich rechtstreeks in fouten.
+heroImageAlt: Een schaakstuk op de grens tussen twee soorten vloer.
 ---
 
 Je stelt de vraag aan tien willekeurige mensen: "is schaken een sport?" Je krijgt tien verschillende antwoorden, vaak zeer stellig. Voor sommigen is het duidelijk: een sport vraagt zweet, spieren, buiten adem raken. Voor anderen is het net zo duidelijk in de andere richting: het IOC heeft het erkend, punt uit.

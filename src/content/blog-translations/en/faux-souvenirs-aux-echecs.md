@@ -49,6 +49,7 @@ faq:
       the moves you considered and your evaluation at the key moments is a record that lives outside
       your memory. Without it, comparing what you believed with what was there is no longer
       possible: only one version survives, the later one.
+heroImageAlt: An empty frame casting a shadow containing a vase silhouette.
 ---
 
 Post mortem. You reach move 27, the one where everything turned. The engine shows the refutation: Rxf7 was winning on the spot.

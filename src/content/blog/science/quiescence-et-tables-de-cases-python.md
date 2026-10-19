@@ -37,6 +37,10 @@ faq:
     answer: "C'est une hypothèse heuristique qui utilise l'évaluation immédiate comme référence. Le fait de ne pas être obligé de capturer ne permet pas de passer son tour ; le zugzwang en montre la limite. On ne l'utilise pas comme choix normal lorsque le roi est en échec."
   - question: "Que sont les tables de cases ?"
     answer: "Des bonus et malus choisis pour chaque pièce selon sa case. Ils restent des paramètres d'évaluation, qui peuvent varier avec la phase de la partie."
+heroImage:
+  src: /images/blog/quiescence-et-tables-de-cases-python-hero.webp
+  alt: Des ondulations s’apaisent autour de pierres sombres disposées dans l’eau.
+ogImage: /images/og/quiescence-et-tables-de-cases-python-og.webp
 ---
 
 Notre moteur [tient une pendule](/fr/blog/approfondissement-iteratif-gestion-du-temps/), cherche avec élagage, ordonne ses coups. Il lui reste un défaut qui fausse ses évaluations plus gravement que tout ce qu'on a corrigé jusqu'ici, et qui ne vient d'aucun bug.

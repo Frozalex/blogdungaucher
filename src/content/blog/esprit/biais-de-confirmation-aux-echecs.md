@@ -27,6 +27,10 @@ faq:
     answer: "Non. Les résultats décrivent une différence dans les tâches étudiées, pas une immunité générale à toute erreur de raisonnement."
   - question: "Faut-il toujours trois candidats et une minute de réfutation ?"
     answer: "Non. Ces quotas ne sont pas établis par l’étude. Adapte la recherche aux coups légaux, aux menaces et à la pendule."
+heroImage:
+  src: /images/blog/biais-de-confirmation-aux-echecs-hero.webp
+  alt: Une lampe éclaire une seule branche d’un chemin qui se divise.
+ogImage: /images/og/biais-de-confirmation-aux-echecs-og.webp
 ---
 
 Tu as longuement calculé une combinaison. L’adversaire répond par une défense que tu n’avais pas examinée. Le problème peut être la direction de ta recherche, mais il peut aussi s’agir d’une difficulté technique : tu ne connaissais peut-être pas le motif qui rendait cette défense possible.

@@ -15,8 +15,8 @@ seoDescription: "Que montrent les études sur les micro-pauses ? Fatigue, récup
 ogImage: /images/og/bienfaits-des-pauses-aux-echecs-og.webp
 heroImage:
   src: /images/blog/bienfaits-des-pauses-aux-echecs-hero.webp
-  alt: >-
-    Un champ labouré dont seule la bande laissée intacte porte une repousse végétale.
+  alt: Un champ labouré dont seule la bande laissée intacte porte une repousse
+    végétale.
 faq:
   - question: "Quelle durée de pause choisir ?"
     answer: "La méta-analyse porte sur des interruptions allant jusqu’à dix minutes ; elle ne fixe pas une durée optimale pour les échecs. Adapte le repos à ton activité et au programme."

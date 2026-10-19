@@ -27,8 +27,8 @@ seoDescription: >-
 ogImage: /images/og/analyser-ses-parties-og.webp
 heroImage:
   src: /images/blog/analyser-ses-parties-hero.webp
-  alt: >-
-    Une traînée d'empreintes rectiligne dont une seule marque bifurque nettement sur le côté.
+  alt: Une traînée d'empreintes rectiligne dont une seule marque bifurque
+    nettement sur le côté.
 faq:
   - question: "Faut-il toujours commencer sans moteur ?"
     answer: "C'est une méthode utile pour conserver tes hypothèses, mais un accompagnement peut être nécessaire dès le départ."
