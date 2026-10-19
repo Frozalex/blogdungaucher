@@ -18,10 +18,8 @@ tags:
   - guerre froide
   - soft power
   - Nye
-seoTitle: "Sujet Grand Oral HGGSP Fischer-Spassky échecs : texte complet à réciter"
-seoDescription: >-
-  Sujet Grand Oral HGGSP sur Fischer-Spassky 1972 et le soft power pendant la guerre froide, entièrement rédigé pour
-  10 minutes. Nye, conflit culturel, données chiffrées : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral HGGSP : Fischer-Spassky et la guerre froide"
+seoDescription: "Fischer-Spassky 1972 et le soft power : distingue résultat sportif, prestige et influence politique pour construire ton Grand Oral HGGSP."
 ogImage: /images/og/sujet-grand-oral-hggsp-fischer-spassky-og.webp
 heroImage:
   src: /images/go-fischer.svg
