@@ -173,7 +173,7 @@ La mise à jour des cotes après chaque partie obéit à une règle simple :
 
 $$\text{Nouvelle cote de } A = R_A + K\,(\text{résultat réel} - \text{résultat attendu})$$
 
-où $K$ est un coefficient (40, 20 ou 10 selon les conditions du règlement FIDE), le résultat réel vaut $1$, $\tfrac{1}{2}$ ou $0$, et le résultat attendu est la probabilité $\mathbb{P}$ ci-dessus.
+où $K$ est un coefficient (40, 20 ou 10 selon les conditions du règlement FIDE), le résultat réel vaut $1$, $\tfrac{1}{2}$ ou $0$, et le résultat attendu est l'espérance de score définie ci-dessus.
 
 C'est un **estimateur bayésien** : chaque partie apporte de l'information sur la vraie force d'un joueur, et la cote converge vers cette vraie valeur au fil du temps. Ce mécanisme est directement lié aux notions de statistiques inférentielles du programme de terminale.
 
@@ -194,13 +194,11 @@ ORDER BY nb_parties DESC
 LIMIT 10;
 ```
 
-Par exemple, après 1.e4 e5 2.Nf3 Nc6 (ouverture italienne), les bases contemporaines donnent une victoire des Blancs dans environ 40 % des cas, une nulle dans 30 %, une victoire des Noirs dans 30 %. Ce sont des **fréquences relatives** qui convergent vers des probabilités théoriques à mesure que la taille de l'échantillon grandit.
+Par exemple, si une base sélectionnée contient 40 % de victoires blanches, 30 % de nulles et 30 % de victoires noires après une ouverture, ces fréquences décrivent cet échantillon. Ce sont ici des proportions fictives pour expliquer le calcul, pas des statistiques vérifiées d'une ouverture réelle.
 
-Cette approche statistique est à la base de la préparation des joueurs professionnels : ils choisissent leurs ouvertures en optimisant leur espérance de gain mathématique. Un joueur de 2700 Elo qui joue une ouverture avec un taux de victoire moyen de 42 % au lieu de 38 % gagne 4 points d'espérance sur chaque partie, un avantage décisif sur un tournoi de 10 parties.
+Un échantillon plus grand ne supprime pas les biais de sélection. Le niveau, la cadence et la période peuvent modifier les fréquences ; elles ne convergent pas automatiquement vers une probabilité universelle de l'ouverture. Après 1.e4 e5 2.Cf3 Cc6, plusieurs ouvertures restent possibles : l'Italienne se précise avec 3.Fc4.
 
-Pour un Grand Oral, c'est l'exemple parfait de l'**espérance mathématique appliquée** : $\mathbb{E}(\text{gain}) = \mathbb{P}(\text{victoire}) + \tfrac{1}{2}\mathbb{P}(\text{nulle})$.
 
-![Courbe logistique Elo : probabilité de victoire selon l'écart de cotes, 50 % à égalité, 91 % à +400 points, 9 % à −400.](/images/go-maths-02-courbe-elo.svg)
 
 ![Le problème du cavalier comme chemin hamiltonien dans un graphe : visiter chaque case une seule fois.](/images/go-maths-04-cavalier-hamiltonien.svg)
 
@@ -290,11 +288,11 @@ Pour un Grand Oral, tu peux montrer les 3 ou 4 premiers coups d'un tour du caval
 
 Les moteurs d'échecs modernes comme Stockfish produisent, pour chaque position, une **évaluation en centièmes de pion** : +0.30 signifie un léger avantage pour les Blancs, +2.50 un avantage décisif, −1.20 un avantage pour les Noirs. Cette évaluation est une approximation continue d'une valeur théoriquement discrète (victoire / nulle / défaite).
 
-L'**analyse de partie** avec un moteur permet de mesurer précisément la qualité d'un joueur : on compare, pour chaque coup joué, l'évaluation avant et après. La somme des pertes d'évaluation divisée par le nombre de coups donne un **taux d'erreur moyen**, utilisé dans des études scientifiques pour comparer le niveau des joueurs à travers les époques (était [Kasparov](https://fr.wikipedia.org/wiki/Garry_Kasparov) meilleur que [Capablanca](https://fr.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca) ?) ou pour détecter la triche (un joueur qui joue systématiquement le coup optimal, comme le moteur, sur de nombreuses parties successives devient suspect).
+L'analyse de partie peut comparer des choix à des évaluations obtenues avec un moteur et un protocole donnés. Ce n'est ni une mesure exhaustive de la qualité d'un joueur ni, à elle seule, une preuve de triche. Version du moteur, profondeur, difficulté des positions et taille de l'échantillon comptent dans l'interprétation.
 
-Cette mesure est une application directe de la **statistique descriptive** : calcul de moyenne, de variance, comparaison d'échantillons.
+La courbe logistique présentée ici modélise un score attendu. Elle ne garantit pas une transitivité des résultats : A peut battre B, qui bat C, sans que A batte C. Elle ne démontre pas non plus une calibration parfaite sur toutes les populations.
 
-### Comment les mathématiques aident à classer les joueurs d'échecs
+## Comment les mathématiques aident à classer les joueurs d'échecs
 
 Pour boucler la boucle sur le classement Elo, il est utile d'expliquer sa construction historique. [Arpad Elo](https://fr.wikipedia.org/wiki/Arpad_Elo) était professeur de physique. Il a observé que la distribution des performances d'un joueur sur une longue période suivait approximativement une **loi normale** (gaussienne). Il a ensuite posé que la différence de performance entre deux joueurs déterminait la probabilité de victoire selon la formule logistique décrite plus haut.
 
@@ -356,13 +354,13 @@ La règle d'or est simple : **ne mets dans ton exposé que ce que tu peux expliq
 
 Cela ne signifie pas que tu dois tout savoir. Cela signifie que tu dois savoir exactement où s'arrêtent tes connaissances. Un candidat qui dit *« AlphaZero utilise des réseaux de neurones, dont la structure interne dépasse le cadre de ce Grand Oral, mais dont le principe général est... »* montre sa lucidité. C'est plus valorisant que de broder.
 
-Pour les notions du programme directement mobilisées (combinatoire, formule de probabilité, représentation graphique), l'exactitude est attendue. Revois les chapitres correspondants et prépare un ou deux calculs numériques que tu peux exécuter de tête ou rapidement au tableau.
+Pour les notions du programme directement mobilisées (combinatoire, formule de score attendu, représentation graphique), l'exactitude est attendue. Revois les chapitres correspondants et prépare un ou deux calculs numériques que tu peux exécuter de tête ou rapidement au tableau.
 
 ### Anticiper les questions du jury
 
 Les cinq angles de question les plus probables sur ce sujet sont :
 
-1. **« Pouvez-vous calculer numériquement la probabilité Elo pour des cotes données ? »** → Prépare le calcul pour Ra=1800, Rb=2000, et pour Ra=2000, Rb=2000.
+1. **« Pouvez-vous calculer numériquement le score attendu pour des cotes données ? »** → Prépare le calcul pour Ra=1800, Rb=2000, et pour Ra=2000, Rb=2000.
 
 2. **« Quelle est la différence entre l'arbre minimax et l'apprentissage par renforcement ? »** → Minimax explore un arbre fixe avec une évaluation codée ; l'apprentissage par renforcement apprend la fonction d'évaluation par l'expérience.
 
@@ -382,7 +380,7 @@ Ton tableau (blanc ou noir) doit avoir deux ou trois éléments préparés à l'
 
 Ce sujet existe en trois versions adaptées à chaque profil :
 
-- **Tu as uniquement la spécialité Maths** → [Guide Grand oral spé Maths : script 10 min, formules et 25 questions de jury](/fr/blog/grand-oral-maths-spe-echecs/) : script minuté, formules détaillées, calculs numériques, loi binomiale pour les tournois, suite récurrente Elo.
+- **Tu as uniquement la spécialité Maths** → [Guide Grand oral spé Maths : modèles, calculs et questions](/fr/blog/grand-oral-maths-spe-echecs/) : script minuté, formules détaillées, calculs numériques, loi binomiale pour les tournois, suite récurrente Elo.
 
 - **Tu as uniquement la spécialité NSI** → [Grand oral spé NSI : minimax Python, bitboard et AlphaZero](/fr/blog/grand-oral-nsi-echecs/) : code Python commenté, structures de données, format PGN, SQL, progression Stockfish → AlphaZero.
 
@@ -396,13 +394,13 @@ Premièrement, qu'il sait **lier abstraction et concret** : la formule Elo n'est
 
 Deuxièmement, qu'il a **une curiosité qui dépasse le programme** : AlphaZero n'est pas au programme de terminale, mais sa présentation montre que le candidat a lu au-delà des manuels. Le jury voit quelqu'un qui a cherché, pas quelqu'un qui a révisé.
 
-Troisièmement, qu'il sait **structurer un raisonnement en public** : vingt minutes, trois parties, un fil rouge qui part du dénombrement pour finir sur l'apprentissage automatique. Ce fil n'est pas accidentel : il suit la logique des mathématiques du plus fondamental (compter) au plus contemporain (apprendre).
+Troisièmement, qu'il sait **structurer un raisonnement en public** : dix minutes de présentation, trois parties, un fil rouge qui part du dénombrement pour finir sur l'apprentissage automatique. Ce fil n'est pas accidentel : il suit la logique des mathématiques du plus fondamental (compter) au plus contemporain (apprendre).
 
 Les meilleurs Grands Oraux ne sont pas ceux où le candidat en sait le plus. Ce sont ceux où le jury comprend **pourquoi ce candidat a choisi ce sujet, et ce que ce sujet lui a appris sur lui-même**.
 
 Et si l'on te demande pourquoi tu as choisi les échecs, la réponse honnête et la plus forte est aussi la plus simple : parce que c'est un jeu où l'on pense à voix haute. Et les mathématiques aussi.
 
-**Après lecture :** fais une **répétition hybride** : cinq minutes maths au tableau (Elo ou combinatoire), cinq minutes oral sur le lien avec une idée NSI (minimax ou données), sans support, comme au jury.
+**Après lecture :** fais une **répétition hybride** : cinq minutes maths au tableau (Elo ou combinatoire), cinq minutes oral sur le lien avec une idée NSI (minimax ou données), avec le support que tu comptes utiliser.
 
 ---
 
@@ -411,7 +409,7 @@ Et si l'on te demande pourquoi tu as choisi les échecs, la réponse honnête et
 - Ministère de l’Éducation nationale (2026). *Baccalauréat : comment se passe le Grand oral ?* [Présentation officielle](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).
 - Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. Philosophical Magazine. [Article original](https://www.computerhistory.org/chess/doc-431614f453dde/).
 - FIDE (2024). *FIDE Rating Regulations*. [Score attendu et coefficients K](https://handbook.fide.com/chapter/B022024).
-- Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*. Pearson. [Recherche adversariale](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
+- Russell, S., & Norvig, P. (s. d.). *Adversarial Search*, projet de chapitre d’Artificial Intelligence: A Modern Approach, Berkeley. [Recherche adversariale](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
 - Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Préprint](https://arxiv.org/html/1712.01815v1).
 - Équipe Stockfish (sans date). *Stockfish*. [Projet officiel et description NNUE](https://github.com/official-stockfish/Stockfish).
 - Edwards, S., et contributeurs (sans date). *Perft Results*. Chess Programming Wiki. [Décompte des suites légales](https://www.chessprogramming.org/Perft_Results).
