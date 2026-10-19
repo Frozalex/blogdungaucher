@@ -9,8 +9,8 @@ featuredRank: 99
 readingTime: "6 min"
 pillar: "Psychologie"
 tags: ["peur de gagner", "psychologie", "échecs", "sabotage", "performance", "anxiété", "victoire"]
-seoTitle: "Peur de gagner aux échecs : pourquoi on se sabote"
-seoDescription: "La peur de gagner aux échecs expliquée : mécanismes psychologiques du sabotage inconscient en position gagnante. Causes, patterns et solutions concrètes."
+seoTitle: "Peur de gagner aux échecs : comprendre les erreurs sous pression"
+seoDescription: "Pourquoi laisser échapper une position favorable ? Examine le calcul, le temps et la pression avant de conclure à une peur de gagner ou à un sabotage."
 faq:
   - question: "Rater un avantage prouve-t-il une peur de gagner ?"
     answer: "Non. Une difficulté technique, une défense manquée ou le manque de temps peuvent expliquer l’erreur. La pression ressentie mérite un examen distinct."
