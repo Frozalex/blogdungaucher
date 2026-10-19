@@ -11,8 +11,8 @@ affiliate: true
 readingTime: "8 min"
 pillar: "Psychologie"
 tags: ["biais cognitifs", "blunder", "psychologie", "erreurs", "raisonnement", "Kahneman", "échecs"]
-seoTitle: "5 biais cognitifs qui causent des blunders aux échecs"
-seoDescription: "Les 5 biais cognitifs qui causent le plus de blunders aux échecs. Psychologie de l'erreur, Kahneman et comment entraîner son cerveau à les éviter."
+seoTitle: "5 biais cognitifs aux échecs : comprendre tes erreurs"
+seoDescription: "Confirmation, ancrage, surconfiance, disponibilité et Einstellung : cinq pistes pour analyser tes erreurs aux échecs, avec leurs limites scientifiques."
 faq:
   - question: "Ces biais expliquent-ils la plupart des erreurs ?"
     answer: "Aucune proportion vérifiée n’est établie ici. Une erreur doit aussi être examinée sur le plan technique et dans son contexte."
