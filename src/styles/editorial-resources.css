@@ -32,7 +32,7 @@
  .resource-heading { padding:2rem 0; }
  .resource-heading>p { font-size:.96rem; }
  .resource-masthead>span { display:none; }
- .resource-nav { gap:1.25rem; }
+ .resource-nav { column-gap:1.25rem; row-gap:0; }
  .resource-section-head>span { display:none; }
  .resource-section { margin-bottom:2.25rem; }
 }

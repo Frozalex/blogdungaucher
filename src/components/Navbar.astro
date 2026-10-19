@@ -145,7 +145,7 @@ const navEntries: NavEntry[] = links.flatMap((link, i) =>
     : [{ kind: "link" as const, label: link.label, href: link.href }],
 );
 ---
-<header class:list={["navbar", { "navbar--editorial": lang === "fr" && ["/fr/", "/fr/about/", "/fr/infographie/", "/fr/glossaire/", "/fr/science/", "/fr/esprit/", "/fr/societe/", "/fr/grand-oral/"].includes(pathname) }]} id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"} data-lang-nl-href={nlHref ?? "/nl/"}>
+<header class:list={["navbar", { "navbar--editorial": lang === "fr" && ["/fr/", "/fr/about/", "/fr/infographie/", "/fr/glossaire/", "/fr/science/", "/fr/esprit/", "/fr/societe/", "/fr/grand-oral/", "/fr/series/", "/fr/dissertations/"].includes(pathname) }]} id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"} data-lang-nl-href={nlHref ?? "/nl/"}>
   <div class="container nav-inner">
 
     <a href={homeHref} class="nav-logo" aria-label={lang === "en" ? "Home - A Left-Hander's Blog" : lang === "pt-br" ? "Início - Blog de um Canhoto" : lang === "nl" ? "Home - Blog van een Linkshandige" : "Accueil Blog d'un Gaucher"}>
@@ -534,6 +534,14 @@ const navEntries: NavEntry[] = links.flatMap((link, i) =>
     visibility: visible;
     transform: translateY(0);
   }
+  /* Un menu ouvert dépasse la hauteur de la barre masquée au défilement. */
+  .navbar.nav-hidden .nav-dropdown__menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: none;
+  }
+
   .nav-dropdown__item {
     display: flex;
     align-items: center;
@@ -863,6 +871,14 @@ const navEntries: NavEntry[] = links.flatMap((link, i) =>
     const navbar = document.getElementById("navbar") as HTMLElement;
     if (!navbar) return;
 
+    const rubDropdown = navbar.querySelector("[data-nav-dropdown]");
+    const rubBtn = rubDropdown?.querySelector(".nav-dropdown__btn") as HTMLButtonElement | null;
+
+    function closeRubMenu() {
+      rubDropdown?.classList.remove("is-open");
+      rubBtn?.setAttribute("aria-expanded", "false");
+    }
+
     // Nettoyer les anciens listeners pour éviter les doublons
     if (_onScroll) { window.removeEventListener("scroll",    _onScroll); }
     if (_onMouse)  { document.removeEventListener("mousemove", _onMouse); }
@@ -891,7 +907,10 @@ const navEntries: NavEntry[] = links.flatMap((link, i) =>
     function applyState(state : string) {
       navbar.classList.remove("scrolled", "nav-hidden", "nav-peek");
       if (state === "scrolled") navbar.classList.add("scrolled");
-      if (state === "hidden")   navbar.classList.add("nav-hidden");
+      if (state === "hidden") {
+        closeRubMenu();
+        navbar.classList.add("nav-hidden");
+      }
       if (state === "peek")     navbar.classList.add("nav-peek");
     }
 
@@ -1060,14 +1079,6 @@ const navEntries: NavEntry[] = links.flatMap((link, i) =>
     }, { signal });
 
     /* ── Menu déroulant « Rubriques » (clic + clavier + clic-extérieur) ── */
-    const rubDropdown = navbar.querySelector("[data-nav-dropdown]");
-    const rubBtn = rubDropdown?.querySelector(".nav-dropdown__btn") as HTMLButtonElement | null;
-
-    function closeRubMenu() {
-      rubDropdown?.classList.remove("is-open");
-      rubBtn?.setAttribute("aria-expanded", "false");
-    }
-
     rubBtn?.addEventListener("click", (e) => {
       e.stopPropagation();
       const isOpen = rubDropdown!.classList.toggle("is-open");

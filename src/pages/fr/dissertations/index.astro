@@ -1,177 +1,56 @@
 ---
-import { getCollection } from "astro:content";
-
+import { getCollection, render } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+import EditorialPageHeader from "../../../components/EditorialPageHeader.astro";
+import { absoluteUrl, buildBreadcrumbJsonLd, calculateReadingTime, formatDate } from "../../../utils/blog";
+import "../../../styles/editorial-resources.css";
 
-const entries = await getCollection("dissertations");
-const sorted = entries.filter((entry) => entry.data.publishDate <= new Date()).sort(
-  (a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime()
-);
-
-function formatDate(d: Date) {
-  return d.toLocaleDateString("fr-FR", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    timeZone: "UTC",
-  });
-}
+const entries = (await getCollection("dissertations")).filter(entry => entry.data.publishDate <= new Date()).sort((a,b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+const lead = entries[0];
+const headings = lead ? (await render(lead)).headings.filter(heading => heading.depth === 2 && /^[IVX]+\./.test(heading.text)) : [];
+const canonPath = "/fr/dissertations/";
+const description = "Les dissertations du Gaucher : une question, des arguments et leurs limites. Des textes longs pour penser les échecs et ce qu’ils nous apprennent hors de l’échiquier.";
+const structuredData = [buildBreadcrumbJsonLd([{name:"Accueil",path:"/fr/"},{name:"Dissertations",path:canonPath}]), {
+  "@context":"https://schema.org", "@type":"CollectionPage", name:"Dissertations", description, url:absoluteUrl(canonPath), inLanguage:"fr-FR",
+  mainEntity:{"@type":"ItemList",numberOfItems:entries.length,itemListElement:entries.map((entry,i)=>({"@type":"ListItem",position:i+1,name:entry.data.title,url:absoluteUrl(`/fr/dissertations/${entry.id}/`)}))},
+}];
 ---
-
-<BaseLayout
-  title="Dissertations | textes longs et argumentés | Blog d'un Gaucher"
-  description="Dissertations sur les échecs : réflexions longues et argumentées sur la stratégie, l'investissement, la compétition et la vie de joueur. Par Le_Gaucher."
-  canonicalPath="/fr/dissertations/"
-  lang="fr"
-  enPath="/en/dissertations/"
-  omitPtBrNlAlternates={true}
-  structuredData={buildBreadcrumbJsonLd([
-    { name: "Accueil", path: "/fr/" },
-    { name: "Dissertations", path: "/fr/dissertations/" },
-  ])}
->
-  <section class="page-hero dissertations-hero">
-    <div class="container">
-      <span class="eyebrow reveal">Carnet éditorial</span>
-      <h1 class="reveal">Dissertations</h1>
-      <p class="page-lead reveal">
-        Textes longs et argumentés, pas des analyses. Ce que les rubriques ne disent pas, et pourquoi je continue à jouer.
-      </p>
-      <p class="dissertations-count reveal" aria-hidden="true">
-        {sorted.length} {sorted.length > 1 ? "textes publiés" : "texte publié"}
-      </p>
-    </div>
-  </section>
-
-  <div class="dissertations-list">
-    <div class="container">
-      <ol class="dissertations-ol">
-        {sorted.map((entry, i) => (
-          <li>
-            <a href={`/fr/dissertations/${entry.id}/`} class="dissertation-item reveal">
-              <article>
-                <div class="dissertation-meta">
-                  <span class="dissertation-num">N°&nbsp;{String(sorted.length - i).padStart(2, "0")}</span>
-                  <time datetime={entry.data.publishDate.toISOString()}>
-                    {formatDate(entry.data.publishDate)}
-                  </time>
-                </div>
-                <h2>{entry.data.title}</h2>
-                <p>{entry.data.excerpt}</p>
-                <span class="read-more">Lire la dissertation →</span>
-              </article>
-            </a>
-          </li>
-        ))}
-      </ol>
-    </div>
-  </div>
+<BaseLayout title="Dissertations | textes longs et argumentés | Blog d’un Gaucher" description={description} canonicalPath={canonPath} lang="fr" enPath="/en/dissertations/" omitPtBrNlAlternates={true} structuredData={structuredData}>
+  <div class="resource-page"><div class="container">
+    <EditorialPageHeader active="dissertations" label="Les idées à l’épreuve" title={"Dissertations.\nPrendre le temps d’argumenter."} intro="Une question me suit parfois bien après la partie. Ici, je lui laisse de la place : je pose les arguments, je cherche ce qui leur résiste et j’essaie d’aller au bout. Avec mes doutes, et sans forcer la conclusion." />
+    <section class="resource-section" aria-labelledby="dissertations-latest">
+      <div class="resource-section-head"><h2 id="dissertations-latest">La dissertation à lire</h2><span>{entries.length} {entries.length > 1 ? "textes publiés" : "texte publié"}</span></div>
+      {lead ? <div class="dissertation-lead">
+        <article class="dissertation-feature">
+          <div class="dissertation-meta"><span>N° {String(entries.length).padStart(2,"0")}</span><time datetime={lead.data.publishDate.toISOString()}>{formatDate(lead.data.publishDate)}</time><span>{calculateReadingTime(lead.body ?? "")} de lecture</span></div>
+          <h2><a href={`/fr/dissertations/${lead.id}/`}>{lead.data.title}</a></h2>
+          <p class="dissertation-excerpt">{lead.data.excerpt}</p>
+          <a class="resource-button" href={`/fr/dissertations/${lead.id}/`}>Lire la dissertation <span aria-hidden="true">→</span></a>
+          {headings.length > 0 && <nav class="dissertation-outline" aria-label="Les étapes de cette dissertation"><span class="resource-kicker">Le fil de l’argumentation</span><ol>{headings.map(heading=><li><a href={`/fr/dissertations/${lead.id}/#${heading.slug}`}>{heading.text}</a></li>)}</ol></nav>}
+        </article>
+        <aside class="dissertation-note" aria-labelledby="dissertation-method">
+          <img src="/images/logo.svg" alt="" width="32" height="45" />
+          <span class="resource-kicker">Le mot du Gaucher</span><h2 id="dissertation-method">Suivre une idée.<br />Accepter ses limites.</h2>
+          <p>Le parallèle avec les échecs est tentant. Mais une ressemblance ne fait pas une preuve. C’est ce qui m’intéresse dans ce format : voir jusqu’où une idée tient.</p>
+          <ol class="dissertation-method"><li><strong>Poser la question</strong><span>Dire précisément ce que l’on cherche.</span></li><li><strong>Examiner les arguments</strong><span>Appuyer le raisonnement sur des faits et des sources.</span></li><li><strong>Discuter les limites</strong><span>Faire une place aux objections et à ce qui reste incertain.</span></li></ol>
+          <p class="dissertation-signature">Le Gaucher</p>
+        </aside>
+      </div> : <p>La première dissertation est en préparation. En attendant, retrouve mes articles dans les rubriques.</p>}
+    </section>
+    {entries.length > 1 && <section class="resource-section" aria-labelledby="dissertation-archives"><div class="resource-section-head"><h2 id="dissertation-archives">Les autres dissertations</h2><span>À lire à ton rythme</span></div><ol class="dissertation-archives">{entries.slice(1).map((entry,i)=><li><article><div class="dissertation-meta"><span>N° {String(entries.length-i-1).padStart(2,"0")}</span><time datetime={entry.data.publishDate.toISOString()}>{formatDate(entry.data.publishDate)}</time><span>{calculateReadingTime(entry.body ?? "")} de lecture</span></div><h3><a href={`/fr/dissertations/${entry.id}/`}>{entry.data.title}</a></h3><p>{entry.data.excerpt}</p><a class="resource-link" href={`/fr/dissertations/${entry.id}/`}>Lire la dissertation →</a></article></li>)}</ol></section>}
+    <div class="resource-end"><span>Une autre façon d’aller au fond d’un sujet.</span><a class="resource-link" href="/fr/series/">Suivre les séries →</a><a class="resource-link" href="/fr/about/">Ma ligne éditoriale →</a></div>
+  </div></div>
 </BaseLayout>
-
 <style>
-  .dissertations-hero.page-hero {
-    padding: 4.5rem 0 2rem;
-  }
-
-  .dissertations-hero h1 {
-    font-family: var(--font-serif, Georgia, serif);
-    font-style: italic;
-    font-weight: 500;
-    font-size: clamp(2.4rem, 6vw, 4rem);
-    margin: 0.5rem 0 0.75rem;
-    letter-spacing: -0.015em;
-  }
-
-  .page-lead {
-    max-width: 42rem;
-    margin: 0;
-    font-size: 1.125rem;
-    line-height: 1.65;
-    color: var(--text-muted, inherit);
-    opacity: 0.92;
-  }
-
-  .dissertations-count {
-    margin: 1.25rem 0 0;
-    font-size: 0.8rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    opacity: 0.75;
-  }
-
-  .dissertations-list {
-    padding: 2rem 0 4rem;
-  }
-
-  .dissertations-ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .dissertation-item {
-    display: block;
-    padding: 2.25rem 0;
-    border-bottom: 1px solid var(--border-soft, rgba(0, 0, 0, 0.08));
-    text-decoration: none;
-    color: inherit;
-    transition: opacity 0.2s ease, transform 0.25s ease;
-  }
-
-  .dissertations-ol > li:first-child .dissertation-item {
-    border-top: 1px solid var(--border-soft, rgba(0, 0, 0, 0.08));
-  }
-
-  .dissertation-item:hover {
-    opacity: 0.85;
-    transform: translateX(2px);
-  }
-
-  .dissertation-meta {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-    flex-wrap: wrap;
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-muted);
-  }
-
-  .dissertation-num {
-    font-family: var(--font-serif, Georgia, serif);
-    font-style: italic;
-    font-weight: 600;
-    color: var(--green);
-    letter-spacing: 0.02em;
-    text-transform: none;
-    font-size: 0.9rem;
-  }
-
-  .dissertation-item h2 {
-    margin: 0.6rem 0 0.5rem;
-    font-family: var(--font-serif, Georgia, serif);
-    font-size: clamp(1.35rem, 3.2vw, 1.75rem);
-    font-weight: 500;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-  }
-
-  .dissertation-item p {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.65;
-    color: var(--text-muted);
-    max-width: 48rem;
-  }
-
-  .read-more {
-    display: inline-block;
-    margin-top: 0.85rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--green);
-  }
+.dissertation-lead{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:3rem;}
+.dissertation-feature{padding:.5rem 0;min-width:0;}.dissertation-meta{display:flex;align-items:baseline;flex-wrap:wrap;gap:.6rem 1rem;font-size:.72rem;color:var(--text-dim);}.dissertation-meta>span:first-child{color:var(--green);font-weight:650;}
+.dissertation-feature h2{font:600 clamp(1.9rem,3.3vw,2.9rem)/1.15 var(--font-serif);letter-spacing:-.035em;margin:1.25rem 0;}.dissertation-feature h2 a:hover,.dissertation-archives h3 a:hover{color:var(--green);}
+.dissertation-excerpt{font-size:1.05rem;line-height:1.8;color:var(--text-muted);margin:0 0 1.7rem;max-width:62ch;}
+.dissertation-outline{border-top:1px solid var(--border-strong);margin-top:2.25rem;padding-top:1.2rem;}.dissertation-outline ol{list-style:none;margin:1rem 0 0;padding:0;}.dissertation-outline li{padding:.8rem 0;border-bottom:1px solid var(--border-soft);}.dissertation-outline a{font:500 1rem/1.5 var(--font-serif);}.dissertation-outline a:hover{color:var(--green);text-decoration:underline;text-underline-offset:.2em;}
+.dissertation-note{border-left:1px solid var(--border-strong);padding:.5rem 0 0 2rem;}.dissertation-note>img{margin-bottom:1.5rem;}.dissertation-note h2{font:600 1.85rem/1.2 var(--font-serif);letter-spacing:-.025em;margin:.8rem 0 1rem;}.dissertation-note>p{font-size:.9rem;color:var(--text-muted);line-height:1.7;}
+.dissertation-method{list-style:none;counter-reset:method;margin:1.5rem 0;padding:0;}.dissertation-method li{counter-increment:method;position:relative;padding:1rem 0 1rem 1.8rem;border-top:1px solid var(--border-strong);}.dissertation-method li:before{content:counter(method,decimal-leading-zero);position:absolute;left:0;top:1.1rem;font-size:.7rem;color:var(--green);}.dissertation-method strong{display:block;font-size:.85rem;font-weight:600;}.dissertation-method span{display:block;margin-top:.35rem;font-size:.8rem;line-height:1.65;color:var(--text-muted);}.dissertation-note .dissertation-signature{font:500 italic 1.2rem var(--font-serif);color:var(--green);}
+.dissertation-archives{list-style:none;margin:0;padding:0;}.dissertation-archives li{padding:1.5rem 0;border-bottom:1px solid var(--border-strong);}.dissertation-archives h3{font:600 1.7rem/1.25 var(--font-serif);margin:.75rem 0;}.dissertation-archives p{font-size:.95rem;line-height:1.7;color:var(--text-muted);max-width:70ch;}
+:global([data-theme="dark"]) .dissertation-note>img{filter:invert(1);}
+@media(max-width:899px){.dissertation-lead{grid-template-columns:1fr;gap:2rem;}.dissertation-note{padding:1.5rem 0 0;border-left:0;border-top:1px solid var(--border-strong);}.dissertation-note>p{max-width:65ch;}}
+@media(max-width:640px){.dissertation-feature h2{font-size:1.95rem;}.dissertation-excerpt{font-size:.98rem;}.dissertation-meta{gap:.5rem .8rem;}.dissertation-note h2{font-size:1.65rem;}}
 </style>

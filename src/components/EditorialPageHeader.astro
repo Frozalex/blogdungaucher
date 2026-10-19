@@ -1,7 +1,13 @@
 ---
-interface Props { label: string; title: string; intro: string; active: "about" | "atlas" | "glossary"; }
+interface Props { label: string; title: string; intro: string; active: "about" | "atlas" | "glossary" | "series" | "dissertations"; }
 const { label, title, intro, active } = Astro.props;
-const links = [
+const links = active === "series" || active === "dissertations" ? [
+  { label: "La une", href: "/fr/", key: "home" },
+  { label: "Séries", href: "/fr/series/", key: "series" },
+  { label: "Dissertations", href: "/fr/dissertations/", key: "dissertations" },
+  { label: "Explorer", href: "/fr/infographie/", key: "atlas" },
+  { label: "Glossaire", href: "/fr/glossaire/", key: "glossary" },
+] : [
   { label: "La une", href: "/fr/", key: "home" },
   { label: "À propos", href: "/fr/about/", key: "about" },
   { label: "Explorer", href: "/fr/infographie/", key: "atlas" },

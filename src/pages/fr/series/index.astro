@@ -1,217 +1,91 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import EditorialPageHeader from "../../../components/EditorialPageHeader.astro";
+import EditorialArticle from "../../../components/EditorialArticle.astro";
 import { series } from "../../../data/series";
-import { absoluteUrl, buildBreadcrumbJsonLd, getAllPosts } from "../../../utils/blog";
+import { absoluteUrl, buildBreadcrumbJsonLd, getAllPosts, getPostSlug, getPostHeroSrc } from "../../../utils/blog";
+import { buildSrcset } from "../../../utils/image-variants";
+import "../../../styles/editorial-resources.css";
 
-// Chaque série se dévoile au fil des semaines : on compte les articles réellement publiés.
-const published = await getAllPosts();
-const publishedSlugs = new Set(published.map((post) => post.id.split("/").pop() ?? post.id));
-
-const items = series
-  .slice()
-  .sort((a, b) => a.rank - b.rank)
-  .map((serie) => ({
-    ...serie,
-    published : (serie.slugs ?? []).filter((slug) => publishedSlugs.has(slug)).length,
-    /** Une série sans page d'index est annoncée mais pas encore ouverte. */
-    ouverte : Boolean(serie.href),
-  }));
-
+const posts = await getAllPosts();
+const bySlug = new Map(posts.map(post => [getPostSlug(post), post]));
+const items = series.slice().sort((a, b) => a.rank - b.rank).map(serie => ({
+  ...serie,
+  posts: (serie.slugs ?? []).map(slug => bySlug.get(slug)).filter(post => post !== undefined),
+}));
+const available = items.filter(serie => serie.href && serie.posts.length > 0);
+const scheduled = items.filter(serie => serie.href && serie.posts.length === 0);
+const ideas = items.filter(serie => !serie.href);
+const lead = available[0];
+const coverPost = lead?.posts.find(post => getPostHeroSrc(post));
+const cover = coverPost ? getPostHeroSrc(coverPost) : null;
 const canonPath = "/fr/series/";
-const title = "Les séries";
-const description =
-  "Les séries du blog : des ensembles d'articles conçus ensemble, publiés dans un ordre voulu, et pensés pour être lus comme un tout plutôt qu'un par un.";
-
-const structuredData = [
-  buildBreadcrumbJsonLd([
-    { name : "Accueil", path : "/fr/" },
-    { name : "Séries", path : canonPath },
-  ]),
-  {
-    "@context" : "https://schema.org",
-    "@type" : "CollectionPage",
-    name : title,
-    description,
-    url : absoluteUrl(canonPath),
-    inLanguage : "fr-FR",
-    // Seules les séries réellement ouvertes entrent dans l'ItemList : une entrée
-    // sans URL n'a pas de sens pour un moteur.
-    mainEntity : {
-      "@type" : "ItemList",
-      numberOfItems : items.filter((serie) => serie.ouverte).length,
-      itemListElement : items
-        .filter((serie) => serie.ouverte)
-        .map((serie, index) => ({
-          "@type" : "ListItem",
-          position : index + 1,
-          url : absoluteUrl(serie.href as string),
-          name : serie.title,
-        })),
-    },
-  },
-];
+const description = "Les séries du Gaucher : des parcours de lecture pour explorer la psychologie, les moteurs et la culture des échecs, un article après l’autre.";
+const structuredData = [buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: "Séries", path: canonPath }]), {
+  "@context": "https://schema.org", "@type": "CollectionPage", name: "Les séries", description,
+  url: absoluteUrl(canonPath), inLanguage: "fr-FR",
+  mainEntity: { "@type": "ItemList", numberOfItems: available.length, itemListElement: available.map((serie, i) => ({
+    "@type": "ListItem", position: i + 1, url: absoluteUrl(serie.href!), name: serie.title,
+  })) },
+}];
 ---
-
-<BaseLayout
-  title={`${title} | Blog d’un Gaucher`}
-  description={description}
-  canonicalPath={canonPath}
-  structuredData={structuredData}
->
-  <div class="series">
-    <header class="series__hero">
-      <p class="series__eyebrow">Lectures au long cours</p>
-      <h1>Les séries</h1>
-      <p class="series__lede">
-        La plupart des articles de ce blog se lisent seuls. Certains sujets, eux, demandent un
-        ensemble : plusieurs textes conçus ensemble, publiés dans un ordre voulu, qui se répondent
-        et se complètent. C’est ce que rassemble cette page.
-      </p>
-    </header>
-
-    <ul class="series__list">
-      {items.filter((serie) => serie.ouverte).map((serie) => {
-        const complete = serie.published >= serie.total;
-        const progress = Math.round((serie.published / serie.total) * 100);
-        return (
-          <li class="serie-card">
-            <a href={serie.href}>
-              <h2 class="serie-card__title">{serie.title}</h2>
-              <p class="serie-card__lede">{serie.lede}</p>
-              <div class="serie-card__foot">
-                <div class="serie-card__bar" role="presentation">
-                  <span class="serie-card__fill" style={`width:${progress}%`}></span>
-                </div>
-                <p class="serie-card__count">
-                  <strong>{serie.published}</strong> sur {serie.total}
-                  {!complete && serie.cadence && <span> · {serie.cadence}</span>}
-                </p>
-              </div>
-              <span class="serie-card__cta">Voir la série</span>
-            </a>
-          </li>
-        );
-      })}
-    </ul>
-
-  </div>
+<BaseLayout title="Les séries | Blog d’un Gaucher" description={description} canonicalPath={canonPath} structuredData={structuredData}>
+  <div class="resource-page"><div class="container">
+    <EditorialPageHeader active="series" label="Les lectures au long cours" title={"Les séries.\nUn sujet, plusieurs étapes."} intro="Certains sujets me résistent trop pour tenir dans un seul article. Alors je prends le temps : je déroule une question, je reviens sur une idée, je confronte les réponses. Voici les parcours que je construis, texte après texte." />
+    {lead && <section class="resource-section" aria-labelledby="series-live">
+      <div class="resource-section-head"><h2 id="series-live">La série à suivre</h2><span>{available.length} {available.length > 1 ? "séries en lecture" : "série en lecture"}</span></div>
+      <div class="series-lead">
+        <article>
+          <p class="series-meta">{lead.posts.length >= lead.total ? "Série complète" : "En cours"} <span>· {lead.posts.length} articles disponibles sur {lead.total}</span></p>
+          <h2 class="series-title"><a href={lead.href}>{lead.title}</a></h2>
+          <p class="series-lede">{lead.lede}</p>
+          {cover && <figure class="series-cover"><a href={lead.href} aria-label={`Découvrir la série : ${lead.title}`}><img src={cover} srcset={buildSrcset(cover)} sizes="(min-width: 900px) 700px, 100vw" alt={coverPost?.data.heroImage?.alt || ""} width="1200" height="800" fetchpriority="high" /></a>
+            {coverPost?.data.heroImage && (coverPost.data.heroImage.credit || coverPost.data.heroImage.sourceUrl || coverPost.data.heroImage.license) && <figcaption>
+              {coverPost.data.heroImage.credit && <span>Crédit : {coverPost.data.heroImage.credit} </span>}
+              {coverPost.data.heroImage.sourceUrl && <a href={coverPost.data.heroImage.sourceUrl} target="_blank" rel="noopener noreferrer">Source de l’image ↗ </a>}
+              {coverPost.data.heroImage.license && <span>{coverPost.data.heroImage.license}</span>}
+            </figcaption>}
+          </figure>}
+          <div class="series-progress"><span style={`width:${Math.min(100, lead.posts.length / lead.total * 100)}%`}></span></div>
+          <div class="series-foot"><a class="resource-button" href={lead.href}>Explorer la série <span aria-hidden="true">→</span></a>{lead.posts.length < lead.total && <span>{lead.cadence}</span>}</div>
+        </article>
+        <aside class="series-entry" aria-labelledby="series-entry-title">
+          <span class="resource-kicker">Les premières lectures</span><h2 id="series-entry-title">Par où entrer ?</h2>
+          <p>Je te propose de commencer ici. Chaque texte peut aussi se lire seul.</p>
+          <div class="series-entry-list">{lead.posts.slice(0, 3).map(post => <EditorialArticle post={post} variant="compact" showKicker={false} />)}</div>
+          <a class="resource-link" href={lead.href}>Tous les articles du parcours →</a>
+        </aside>
+      </div>
+      {available.slice(1).map(serie => <article class="series-next"><div><span class="resource-kicker">{serie.posts.length} articles disponibles sur {serie.total}</span><h2><a href={serie.href}>{serie.title}</a></h2><p>{serie.lede}</p></div><a class="resource-link" href={serie.href}>Explorer la série →</a></article>)}
+    </section>}
+    {scheduled.length > 0 && <section class="resource-section" aria-labelledby="series-next-title">
+      <div class="resource-section-head"><h2 id="series-next-title">Le prochain parcours</h2><span>Le programme se prépare</span></div>
+      {scheduled.map(serie => <article class="series-next"><div><span class="resource-kicker">À venir · {serie.total} étapes prévues</span><h2><a href={serie.href}>{serie.title}</a></h2><p>{serie.lede}</p><p class="series-schedule">{serie.cadence} · Aucun article publié pour le moment.</p></div><a class="resource-link" href={serie.href}>Voir le programme →</a></article>)}
+    </section>}
+    {ideas.length > 0 && <section class="resource-section" aria-labelledby="series-notebook-title">
+      <div class="resource-section-head"><h2 id="series-notebook-title">Dans mon carnet</h2><span>Des pistes, pas encore des séries ouvertes</span></div>
+      <p class="series-note">Les questions que j’ai envie de creuser ensuite. Elles prennent forme ; je préfère ne pas leur promettre de date.</p>
+      <div class="series-ideas">{ideas.map((serie, i) => <article><span class="series-idea-number" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span><div><h3>{serie.title}</h3><p>{serie.lede}</p></div></article>)}</div>
+    </section>}
+    <div class="resource-end"><span>Envie de changer de format ?</span><a class="resource-link" href="/fr/dissertations/">Lire les dissertations →</a><a class="resource-link" href="/fr/infographie/">Explorer l’Atlas →</a></div>
+  </div></div>
 </BaseLayout>
-
 <style>
-  .series {
-    max-width: var(--container);
-    margin: 0 auto;
-    padding: 3rem 1.25rem 5rem;
-  }
-
-  .series__hero {
-    max-width: 44rem;
-    margin-bottom: 3rem;
-  }
-
-  .series__eyebrow {
-    font-family: var(--font-display);
-    font-size: 0.8rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--green);
-    margin-bottom: 0.75rem;
-  }
-
-  .series__hero h1 {
-    font-family: var(--font-display);
-    font-size: clamp(2.2rem, 6vw, 3.2rem);
-    line-height: 1.1;
-    margin-bottom: 1.25rem;
-  }
-
-  .series__lede {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: var(--text-muted);
-  }
-
-  .series__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: 1rem;
-  }
-
-  .serie-card > a {
-    display: block;
-    padding: 1.75rem 1.9rem;
-    border: 1px solid var(--border-soft);
-    border-radius: var(--radius-lg);
-    background: var(--surface);
-    text-decoration: none;
-    color: inherit;
-    transition:
-      border-color var(--motion-fast) var(--ease-out),
-      box-shadow var(--motion-fast) var(--ease-out);
-  }
-
-  .serie-card > a:hover,
-  .serie-card > a:focus-visible {
-    border-color: var(--green-border);
-    box-shadow: var(--shadow-sm);
-  }
-
-  .serie-card__title {
-    font-family: var(--font-display);
-    font-size: clamp(1.3rem, 3.5vw, 1.7rem);
-    line-height: 1.25;
-    margin: 0 0 0.6rem;
-  }
-
-  .serie-card__lede {
-    font-size: 0.98rem;
-    line-height: 1.65;
-    color: var(--text-muted);
-    margin: 0 0 1.15rem;
-    max-width: 44rem;
-  }
-
-  .serie-card__foot {
-    display: flex;
-    align-items: center;
-    gap: 0.85rem;
-    flex-wrap: wrap;
-    margin-bottom: 0.9rem;
-  }
-
-  .serie-card__bar {
-    flex: 1 1 8rem;
-    max-width: 14rem;
-    height: 4px;
-    border-radius: var(--radius-pill);
-    background: var(--border-soft);
-    overflow: hidden;
-  }
-
-  .serie-card__fill {
-    display: block;
-    height: 100%;
-    background: var(--green);
-    border-radius: var(--radius-pill);
-  }
-
-  .serie-card__count {
-    margin: 0;
-    font-size: 0.85rem;
-    color: var(--text-dim);
-  }
-
-  .serie-card__cta {
-    display: inline-block;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--green);
-  }
-
-  .serie-card > a:hover .serie-card__cta {
-    text-decoration: underline;
-  }
-
+.series-lead {display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:2rem;}
+.series-meta {color:var(--green);font-size:.72rem;font-weight:600;letter-spacing:.04em;margin:0 0 .8rem;}
+.series-meta span {color:var(--text-dim);font-weight:400;}
+.series-title {font-family:var(--font-serif);font-size:clamp(1.9rem,3.2vw,2.8rem);line-height:1.12;font-weight:600;letter-spacing:-.03em;margin:0 0 1rem;}
+.series-title a:hover,.series-next h2 a:hover {color:var(--green);}
+.series-lede {font-size:1rem;line-height:1.7;color:var(--text-muted);margin:0 0 1.3rem;}
+.series-cover {margin:0;}.series-cover img {display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:3px;}
+.series-cover figcaption {font-size:.65rem;color:var(--text-dim);margin:.5rem 0;}.series-cover figcaption a {text-decoration:underline;}
+.series-progress {height:3px;background:var(--border-strong);margin:1.2rem 0;}.series-progress>span {height:100%;display:block;background:var(--green);}
+.series-foot {display:flex;align-items:center;flex-wrap:wrap;gap:1rem;}.series-foot>span {font-size:.75rem;color:var(--text-dim);}
+.series-entry {border-left:1px solid var(--border-strong);padding-left:2rem;}.series-entry h2 {font-family:var(--font-serif);font-size:1.8rem;line-height:1.2;margin:.75rem 0;letter-spacing:-.025em;}
+.series-entry>p,.series-note {font-size:.9rem;line-height:1.65;color:var(--text-muted);}.series-entry-list {margin:1.5rem 0;}.series-entry-list :global(article) {padding:1.25rem 0;border-top:1px solid var(--border-strong);}
+.series-next {display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:.5rem 0 1rem;}.series-next>div {max-width:48rem;}.series-next>.resource-link {flex-shrink:0;}
+.series-next h2 {font:600 clamp(1.5rem,2.5vw,2rem)/1.2 var(--font-serif);letter-spacing:-.025em;margin:.8rem 0;}.series-next p {color:var(--text-muted);font-size:.95rem;line-height:1.7;}.series-next .series-schedule {font-size:.75rem;color:var(--text-dim);}
+.series-note {margin:-.25rem 0 1.5rem;}.series-ideas {display:grid;grid-template-columns:1fr 1fr;gap:0 2rem;}.series-ideas article {display:flex;gap:1rem;border-top:1px solid var(--border-strong);padding:1.3rem 0;}.series-idea-number {font:500 1.4rem var(--font-serif);color:var(--green);}.series-ideas h3 {font:600 1.3rem/1.25 var(--font-serif);margin:0 0 .6rem;letter-spacing:-.02em;}.series-ideas p {font-size:.85rem;line-height:1.65;color:var(--text-muted);margin:0;}
+@media(max-width:899px){.series-lead{grid-template-columns:1fr;}.series-entry{border-left:0;padding:1.5rem 0 0;border-top:1px solid var(--border-strong);}.series-next{align-items:start;flex-direction:column;gap:.5rem;}}
+@media(max-width:640px){.series-ideas{grid-template-columns:1fr;}.series-title{font-size:1.95rem;}.series-meta span{display:block;margin-top:.4rem;}}
 </style>

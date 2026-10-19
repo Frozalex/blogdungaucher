@@ -7,7 +7,7 @@ interface Props {
   lang?: "fr" | "en" | "pt-br" | "nl";
 }
 const { lang = "fr" } = Astro.props;
-const editorialHome = lang === "fr" && ["/fr/", "/fr/about/", "/fr/infographie/", "/fr/glossaire/", "/fr/science/", "/fr/esprit/", "/fr/societe/", "/fr/grand-oral/"].includes(Astro.url.pathname);
+const editorialHome = lang === "fr" && ["/fr/", "/fr/about/", "/fr/infographie/", "/fr/glossaire/", "/fr/science/", "/fr/esprit/", "/fr/societe/", "/fr/grand-oral/", "/fr/series/", "/fr/dissertations/"].includes(Astro.url.pathname);
 
 const aboutHref =
   lang === "en" ? "/en/about/" : lang === "pt-br" ? "/pt-br/about/" : lang === "nl" ? "/nl/about/" : "/fr/about/";
