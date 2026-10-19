@@ -1,162 +1,214 @@
-# Corrections éditoriales FR — suivi du 18 octobre 2026
+# Rapport final — corrections éditoriales FR
 
-Périmètre : Science, Esprit, Grand Oral et dissertation. Aucun déploiement. Les modifications locales de Motion Canvas sont préexistantes et exclues des commits de cette passe. Frontmatter SEO, dates et slugs conservés. Les corrections antérieures sont réexaminées, leur existence ne vaut pas validation.
+## Travail effectué
 
-## Lot technique complémentaire
+Les 82 articles initialement restants ont été repris dans l’ordre Science, Esprit puis Grand Oral. Les pages de la première passe ont reçu des compléments lorsqu’une FAQ, un résumé, une illustration ou un ancien paragraphe conservait une contradiction. Ce rapport rassemble **122 fiches par article**, avec corrections, retraits faute de source et références consultées.
 
-- `78a69ee` : durée calculée automatiquement à 220 mots/min depuis la prose, hors balises et blocs de code ; logo de signature explicitement décoratif. Aucun frontmatter réécrit.
-- Contrôle HTML sur minimax, graphes-de-nash, paradoxe-de-zermelo, theorie-des-jeux et reseaux-bayesiens : aucun MathML doublonné, aucune entité numérique doublement échappée, aucune meta parasite, aucun bloc Commentaires sans configuration. Formules présentes avec alternative accessible.
-- Un seul bouton Notifications dans Footer. Les autres occurrences appartiennent à la fenêtre de préférences.
-- Build intermédiaire Astro : 305 pages, succès. Avertissements préexistants sur des traductions absentes ; contrôle final des liens encore à effectuer.
+L’[archive de la première passe](archive-premiere-passe.md) conserve l’historique ; ses mentions de travail restant sont remplacées par les fiches présentes.
 
-## Décisions validées
+- Corrections éditoriales enregistrées séparément par article ; compléments finaux également séparés.
+- Tutoiement dans les explications au lecteur. Les citations adressées au jury et les pluriels réels sont conservés.
+- Sources primaires privilégiées ; les fiches précisent quand seul un résumé original a été accessible.
+- Résultats expérimentaux distingués des conseils pratiques et des analogies. Chiffres, citations ou mécanismes non confirmés retirés.
+- **Aucun marqueur [À VÉRIFIER PAR LUC] restant** dans les 122 fichiers au contrôle final ; aucun placeholder interne identifié.
+- Pas de modification des versions EN/PT ni du contenu Société dans cette passe. Aucun déploiement exécuté.
 
-Luc a validé la différenciation des deux articles imposteur et la consolidation avec noindex des quatre fiches Grand Oral détaillées ci-dessous.
+## Accueil aléatoire
 
-## Articles
-
-Les entrées ci-dessous décrivent seulement les corrections effectivement effectuées et les sources ouvertes pendant cette passe.
-
-### echecs-et-complexite-algorithmique
-
-Corrigé : EXPTIME définie par une borne supérieure ; estimation de Tromp distinguée d’un dénombrement ; suites de coups distinguées des positions ; 197 281 après quatre demi-coups ; entraînement AlphaZero et vitesse Stockfish alignés sur le préprint 2017. Retiré faute de source ouverte suffisante : profondeur Deep Blue 6–12/40, 95 % des coups éliminés par intuition, assimilation de l’IA au cerveau et anecdote finale Shannon. Sources ouvertes : [Shannon](https://www.computerhistory.org/chess/doc-431614f453dde/), [Tromp](https://tromp.github.io/chess/chess.html), [Fraenkel–Lichtenstein](https://kubokovac.eu/zlozitost/mat/chessExptime.pdf), [IBM](https://www.ibm.com/history/deep-blue), [Silver 2017](https://arxiv.org/html/1712.01815v1), [Stockfish](https://github.com/official-stockfish/Stockfish/blob/master/tests/perft.sh). Aucun marqueur ajouté.
-
-### guide-grand-oral-echecs-nsi
-
-Corrigé : support de préparation autorisé ; faux calcul « un point coefficient par minute » retiré ; code complété par une classe Position et une fonction evaluer pour une démonstration autonome ; ordres de grandeur distingués des nombres exacts de feuilles ; bornes alpha/bêta ; Go non résolu ; profondeur finie et absence de preuve d’impossibilité future. Sources ouvertes : [Ministère](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028), [Russell–Norvig](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf), [Allis](https://tromp.github.io/c4/connect4_thesis.pdf). Schéma de comparaison harmonisé avec la nuance asymptotique ; noms d’assets conservés. Code exécuté : minimax et alpha-bêta renvoient 3 sur le même arbre et restaurent la position. Aucun marqueur ajouté.
-
-### grand-oral-maths-spe-echecs
-
-Corrections antérieures 40 ordres de grandeur, environ 10^84 âges de l’univers et EXPTIME conservées après contrôle. Corrigé pendant cette passe : espérance Elo distinguée de la probabilité de victoire ; K=40/20/10 ; exemple binomial explicitement fictif et indépendant, 40 % de nulles présenté comme hypothèse. Retirée : attribution de la sigmoïde aux couches internes d’AlphaZero et intervalle de fluctuation présenté comme garanti. Sources ouvertes ajoutées : [FIDE](https://handbook.fide.com/chapter/B022024), [Ministère](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028), [Fraenkel–Lichtenstein](https://kubokovac.eu/zlozitost/mat/chessExptime.pdf). Aucun marqueur ajouté.
-
-### sujet-grand-oral-ses-marche-superstars
-
-Révision de fond : retrait des revenus personnels, des « 300 professionnels », des effectifs FIDE et des parts de revenu sans données comparables ; retrait du Gini supposé élevé, des statistiques d’audience et des généralisations historiques non sourcées. Les modèles sont présentés comme hypothèses et analogies ; Becker est effectivement mobilisé dans le corps. Deux SVG remplacés pour retirer les mêmes chiffres des images et des alt. Sources ouvertes : [Rosen](https://milescorak.com/wp-content/uploads/2018/09/rosen-1981-aer-economics-superstars.pdf), [Ricardo](https://www.gutenberg.org/ebooks/33310), [Becker, éditeur](https://press.uchicago.edu/ucp/books/book/chicago/H/bo3684031.html), [Lichess](https://database.lichess.org/). Aucun marqueur ajouté. Fusion/noindex non appliqués.
-
-### echecs-et-vision-spatiale
-
-Corrigé : 0,05 ne concerne pas les échecs mais l’entraînement de la mémoire de travail ; la synthèse 2017 signale une seule étude échiquéenne avec contrôle actif (0,10). Retirés : transfert géométrique affirmé comme acquis, méta-analyse Friedman non identifiée, anecdote Anand non confirmée, détails historiques Morphy/Pillsbury non contrôlés, opposition experts/novices attribuée à tort à Atherton. Schémas présentés comme illustrations. Sources ouvertes : [Sala–Gobet 2017](https://journals.sagepub.com/doi/10.1177/0963721417712760), [Charness](https://pubmed.ncbi.nlm.nih.gov/11913751/), [Atherton](https://experts.umn.edu/en/publications/a-functional-mri-study-of-high-level-cognition-i-the-game-of-ches/), [Guinness](https://www.guinnessworldrecords.de/world-records/72345-most-simultaneous-blindfolded-chess-wins). Aucun marqueur ajouté.
-
-### paradoxe-de-zermelo
-
-Corrigé : preuve originale distinguée de l’induction rétrograde moderne ; 50 coups/triple répétition distingués des règles d’arrêt automatiques ; DTM et DTZ distingués ; score d’un moteur non interprété comme distance mesurée au jeu parfait ; exceptions de couverture des tablebases. Retirés faute de source primaire accessible : records 517/549 et affirmations sur l’incapacité de tout humain/moteur ; raccourci quantique 10^120 → 10^60. SVG DTM/DTZ remplacé. Sources ouvertes : [Zermelo traduit et Schwalbe–Walker](https://studylib.net/doc/28166551/zermelo-work), [Syzygy](https://github.com/syzygy1/probetool), [FIDE](https://arbiters.fide.com/wp-content/uploads/Publications/Manual/ARBManual2022_1st_October.pdf), [Shannon](https://www.computerhistory.org/chess/doc-431614f453dde/), [Allis](https://tromp.github.io/c4/connect4_thesis.pdf). Aucun marqueur ajouté.
-
-### echecs-et-resilience
-
-Corrigé : distinction résilience/récupération de Bonanno ; étude Kross 2014 et portée limitée au stress social ; exemple Camille cohérent ; onze champions de Polgár vérifiés sur son dossier officiel. Retirés : profil neurochimique présenté comme mesuré après une défaite, délai optimal 24–48 h, citations non retrouvées de Kasparov et Korchnoi, stratégie personnelle attribuée sans référence à Carlsen. Routine explicitement proposée comme conseil à adapter. Sources ouvertes : [Seligman](https://ppc.sas.upenn.edu/research/attributional-style-adults), [Bonanno](https://gwern.net/doc/psychology/2004-bonanno.pdf), [Kross](https://blognutritionsante.com/wp-content/uploads/2017/12/krossj_pers_soc_psychol2014self-talk_as_a_regulatory_mechanism_how_you_do_it_matters.pdf), [Polgár](https://juditpolgar.com/wp-content/uploads/2026/01/Judit-Polgar-PressKit4.pdf). Aucun marqueur ajouté.
-
-### guide-grand-oral-echecs-toutes-specialites
-
-Corrigé : choix de la question par le jury, support autorisé, durée préparation/exposé/échange ; retrait du superlatif « épreuve la mieux notée ». Les réponses à trous sont remplacées par vingt pistes concrètes, principalement NSI, sans récit personnel inventé. Maass et collègues nuancés ; Verghese distingué d’une preuve de prévention ; victoires de Polgár et record Gareyev sourcés. Sources ouvertes ajoutées : [Ministère](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028), [Russell–Norvig](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf), [Sala–Gobet](https://journals.sagepub.com/doi/10.1177/0963721417712760), [Maass](https://mdmcalister.pbworks.com/f/Checkmate%2B-%2BThe%2Brole%2Bof%2Bgender%2Bstereotypes%2Bin%2Bthe%2Bultimate%2Bintellectual%2Bsport.pdf), [Verghese](https://www.activeminds.com/docs/NEJM%20030619.pdf), [Polgár](https://juditpolgar.com/wp-content/uploads/2026/01/Judit-Polgar-PressKit4.pdf), [Guinness](https://www.guinnessworldrecords.de/world-records/72345-most-simultaneous-blindfolded-chess-wins). Bibliographie des autres angles du guide à contrôler dans la suite de la passe. Aucun marqueur ajouté.
-
-### grand-oral-mathematiques-echecs
-
-Corrigé : environ 10^8 suites à six demi-coups ; score attendu Elo ; coefficients K ; ReLU/softmax/tanh et distinction historique Stockfish 8/NNUE actuel. Plan de 22 minutes remplacé par un plan de 10 minutes ; les conseils généraux renvoient aux guides existants sans fusion. Sources ouvertes ajoutées : [Ministère](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028), [Shannon](https://www.computerhistory.org/chess/doc-431614f453dde/), [FIDE](https://handbook.fide.com/chapter/B022024), [Russell–Norvig](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf), [Silver](https://arxiv.org/html/1712.01815v1), [Stockfish](https://github.com/official-stockfish/Stockfish), [Perft](https://www.chessprogramming.org/Perft_Results). Aucun marqueur ajouté.
-
-### echecs-memoire-de-travail
-
-Corrigé : tutoiement, phrase d’ouverture, attribution Baddeley et Hitch, ajout du tampon en 2000, capacité dépendante des tâches, transfert proche/lointain aligné dans la FAQ et le corps. Retirés faute de preuve : gains 15–20 %, pertes 15–25/20–40 %, erreurs exponentielles, transfert en 20 séances, effacement des gains en 4–6 semaines, anecdote Baddeley. Sources ouvertes : [Baddeley 2012](https://jontalle.web.engr.illinois.edu/MISC/ReadingGroup.11/Papers/Baddeley-WorkingMemory.12.pdf), [Cowan](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/44023F1147D4A1D44BDC0AD226838496/S0140525X01003922a.pdf/div-class-title-the-magical-number-4-in-short-term-memory-a-reconsideration-of-mental-storage-capacity-div.pdf), [Sala–Gobet](https://journals.sagepub.com/doi/10.1177/0963721417712760). Aucun marqueur ajouté.
-
-### reseaux-bayesiens-predire-blunder
-
-Corrigé : S dans la formule et les hypothèses du graphe ; événement B distingué de sa probabilité ; modèle pédagogique non présenté comme validé ; inférence non garantie tractable ; accents. Retirés : seuil Regan 2–3 minutes non retrouvé, loi de fatigue par rondes, équivalence automatique entre niveaux et attributions historiques non nécessaires. Source empirique réelle : [Anderson et al. 2016](https://arxiv.org/pdf/1606.04956). Cadre : [Friedman–Koller](https://ai.stanford.edu/~nir/Papers/FK1Full.pdf). Aucun marqueur ajouté.
-
-### neurones-miroirs-aux-echecs
-
-Réécriture autorisée : l’explication neuronale de l’anticipation échiquéenne n’est pas étayée. Retirés : étude attribuée à Susan Polgár, anecdote de la cacahuète, technique attribuée sans référence à Botvinnik, promesses d’entraînement des circuits miroirs et preuves d’imagerie non identifiées. Les exercices restent présentés comme pistes pratiques. Trois schémas remplacés pour retirer les mêmes affirmations. Sources ouvertes : [Di Pellegrino 1992](https://pubmed.ncbi.nlm.nih.gov/1301372/), [Casile 2011](https://pubmed.ncbi.nlm.nih.gov/21467305/). La seoDescription d’origine reste inchangée conformément à la contrainte SEO ; elle affirme encore un rôle des neurones miroirs plus fermement que le corps corrigé. Ce point nécessite une future décision sur le SEO, sans marqueur inséré dans l’article.
-
-### logique-modale-aux-echecs
-
-Corrigé : possibilité d’une ligne ≠ stratégie gagnante ; alternance ∃/∀ explicite ; « raisonnable » distingué de « légal » ; zugzwang pouvant perdre un gain ou une nulle ; mutuel/réciproque non synonyme de distant ; cœur/croît. Retirés : profondeur imposée par niveau et attributions Botvinnik/Nimzovitch non étayées ici. Schéma zugzwang remplacé. Sources ouvertes : [Garson](https://plato.stanford.edu/entries/logic-modal/), [Russell–Norvig](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf), [Beasley](https://www.arves.org/arves/images/PDF/JohnBeasley/zug3456readme.pdf). Aucun marqueur ajouté.
-
-### effet-placebo-aux-echecs
-
-Révision de fond : aucune démonstration d’imperméabilité des échecs au placebo ; 3,1 % limité à la condition forte dose annoncée, avec intervalle incluant zéro ; effets cognitifs discutés avec le protocole de Foroughi. Retirés : verbatims non retrouvés, asymétrie universelle placebo/nocebo, mécanisme unique par la douleur, généralisation de Kaptchuk aux rituels de tournoi. Bibliographie resserrée sur les quatre travaux réellement discutés ; lien futur transformé en lien existant ; H1 aligné sur le SEO conservé. Deux SVG ajoutés. Sources ouvertes : [Cochrane 2010](https://www.dcscience.net/Hrobjartsson-Gotzsche-Cochrane-placebo.pdf), [Beedie](https://paulogentil.com/pdf/Placebo%20Effects%20of%20Caffeine%20on%20Cycling%20Performance.pdf), [Foroughi](https://www.pnas.org/doi/10.1073/pnas.1601243113), [Kaptchuk](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015591). Aucun marqueur ajouté.
-
-## Consolidation validée par Luc et appliquée
-
-- `sujet-grand-oral-maths-combinatoire` : fiche courte, calcul 80 log10(35) ≈ 123,53 et distinction positions/suites. Contenu développé dans le guide Maths ; `noindex, follow`. Sources : [Shannon](https://www.computerhistory.org/chess/doc-431614f453dde/), [Tromp](https://tromp.github.io/chess/chess.html).
-- `sujet-grand-oral-maths-modeles-limites` : hypothèses binomiales, score Elo, loi des grands nombres et coût matériel d’AlphaZero clarifiés ; contenu intégré au guide Maths ; `noindex, follow`. Sources : [FIDE](https://handbook.fide.com/chapter/B022024), [Silver](https://arxiv.org/html/1712.01815v1), [Shannon](https://www.computerhistory.org/chess/doc-431614f453dde/).
-- `sujet-grand-oral-nsi-minimax` : exemple autonome remplaçant le code au `bonus_position` non défini ; contenu intégré au guide NSI ; `noindex, follow`. Sources : [Russell–Norvig](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf), [Silver](https://arxiv.org/html/1712.01815v1).
-- `sujet-grand-oral-nsi-alpha-beta` : bornes précisées, 42 875 présenté comme rapport de puissances dans le meilleur cas, AlphaZero conserve MCTS ; contenu intégré au guide NSI ; `noindex, follow`. Mêmes sources ouvertes que la fiche minimax.
-
-Les quatre URL et leurs métadonnées SEO préexistantes sont conservées. Seul le champ `noindex` autorisé est ajouté ; les fiches sont retirées du sitemap. Les huit autres sujets ne reçoivent pas de noindex. Aucun marqueur ajouté dans ces quatre fiches.
-
-Les deux articles imposteur sont conservés et différenciés, conformément au choix de Luc.
-
-## Différenciation imposteur validée et appliquée
-
-- `syndrome-imposteur-aux-echecs` : angle général, peur d’être démasqué et interprétation des réussites ; comportements présentés comme pistes d’observation, pas diagnostic ; témoignages anonymes et prévalence échiquéenne non étayés retirés ; conseils non présentés comme traitements validés. [Clance–Imes](https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf), [Bravata](https://link.springer.com/article/10.1007/s11606-019-05364-1) réellement ouverts.
-- `syndrome-imposteur-2000-elo` : angle palier et lecture des fluctuations ; 2000 n’est pas un seuil clinique ni le titre FIDE « expert » ; retrait des 60–70 %, des catégories Elo psychologiques, de l’attribution Dweck sans référence et du « signal positif » présenté comme preuve de compétence. Mêmes sources psychologiques, plus [règlement Elo](https://handbook.fide.com/chapter/B022024) et [titres FIDE](https://handbook.fide.com/chapter/B012024), ouverts. Liens croisés ajoutés. Aucun marqueur, fusion ou redirection.
-
-### dissertation — echecs-et-investissement
-
-Corrigé : parenté présentée comme analogie plutôt que transfert prouvé ; biais réellement documentés par Kahneman–Tversky et Odean ; distinction étude financière/étude de transfert ; phrase d’avertissement ajoutée ; deux SVG originaux. Le H1 et le titre SEO emploient déjà « à l’investissement », aucun changement SEO nécessaire. Sources ouvertes : [Kahneman–Tversky](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf), [Odean](https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf), [Sala–Gobet](https://journals.sagepub.com/doi/10.1177/0963721417712760). Aucun marqueur ajouté.
-
-### echecs-et-flow
-
-Corrigé : Bakker 2008 distingué des études sur les échecs ; aucun délai de reprise universel ; fenêtre 45–90 minutes et seuil Elo retirés ; verbatims non sourcés retirés ; entretiens initiaux distingués des bippers ; bibliographie limitée aux travaux utilisés. Sources réellement ouvertes : [Nakamura–Csikszentmihalyi 2002](https://nuovoeutile.it/wp-content/uploads/2015/12/2002-Flow.pdf), [Bakker 2008](https://www.isonderhouden.nl/doc/pdf/arnoldbakker/articles/articles_arnold_bakker_165.pdf), [Mark 2008](https://www.ics.uci.edu/~gmark/chi08-mark.pdf). Aucun marqueur ajouté.
-
-### regle-40-40-20-echecs
-
-Corrigé : formule clairement présentée comme heuristique sans validation scientifique ; seuils Elo contradictoires et délais de progression non établis retirés ; citations Nunn/Fine/Dvoretsky/Rowson sans source ouverte retirées ; faux facteur dix supprimé ; lien « illusion de compétence » vers Dunning–Kruger supprimé. Illustrations quantitatives non étayées retirées du contenu ; seul l’exemple arithmétique demeure. Sources ouvertes : [Chase–Simon](https://gwern.net/doc/psychology/chess/1973-chase.pdf), [Ericsson et al.](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf). Frontmatter SEO préservé : sa mention de « ce que la recherche recommande » demeure plus affirmative que le texte corrigé et est signalée ici. Aucun marqueur ajouté.
-
-### echecs-et-meditation
-
-Corrigé : protocole MBSR avec exercices guidés de 45 minutes ; régions Hölzel alignées entre corps et essentiel ; résultats d’imagerie distingués des performances ; Norris ajouté et cité ; comparaison aux médicaments nuancée. Retirés : 22 % non établi, calcul de 1 h 53 de distraction en tournoi, promesse de gain Elo, témoignages Carlsen/Caruana, dose optimale et horaire idéal, absence d’effets secondaires. Sources ouvertes : [Hölzel](https://greatergood.berkeley.edu/images/uploads/Holzel-Mindfulness_and_Brain_Gray_Matter_Density.pdf), [Norris](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2018.00315/full) et corrigendum, [Goyal](https://library.scottbarrykaufman.com/uploads/2019/08/goyal2014.pdf). Aucun marqueur ajouté.
-
-### echecs-stress-tournoi
-
-Corrigé : tutoiement intégral ; sources réelles ajoutées ; stress distingué du cortisol ; aucune promesse physiologique à 3 minutes ; expérience de tournoi sans comparaison hormonale inventée ; deux SVG. Retirés faute de source vérifiée : étude 2019/287 joueurs, méta-analyse 2017/38 études, 8–12 battements, témoignages Carlsen/Kasparov/Anand, citation militaire. Sources ouvertes : [Shields 2016](https://www.grantsshields.com/wp-content/uploads/2016/08/Stress_and_EF_meta-analysis.pdf), [Zaccaro 2018](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2018.00353/full), [Jamieson 2010](https://static1.squarespace.com/static/59a5d96b8dd041d469d4304e/t/59b2d37ac027d84ada0a67d5/1504891771275/Jamieson2010GRE.pdf). Aucun marqueur ajouté.
-
-### guide-grand-oral-echecs-ses-hggsp — correction ciblée, revue de fond non terminée
-
-Corrigé : format 20 minutes de préparation + 10 d’exposé + 10 d’échange ; choix par le jury et support autorisé ; ancienne phase orientation retirée ; FAQ chiffrée sans archives retirée ; contradiction patrimoine/UNESCO supprimée sans nouvelle attribution ; auteurs Maass, D’Ettole et Cadinu rétablis et résultat nuancé. Sources ouvertes : [Ministère, actualisé en octobre 2026](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028), [Maass et al.](https://mdmcalister.pbworks.com/f/Checkmate%2B-%2BThe%2Brole%2Bof%2Bgender%2Bstereotypes%2Bin%2Bthe%2Bultimate%2Bintellectual%2Bsport.pdf). Les autres développements historiques, statistiques et entrées bibliographiques restent à contrôler ; cet article n’est pas déclaré entièrement validé. Aucun marqueur ajouté.
-
-Complément `grand-oral-mathematiques-echecs` : FAQ Elo alignée sur le score attendu et non la probabilité de victoire ; phrase logistique réparée ; puissances alpha-bêta distinguées d’un comptage exact de nœuds. Sources FIDE et Russell–Norvig déjà ouvertes, citées dans l’article.
-
-Complément `logique-modale-aux-echecs` : accessibilité épistémique distinguée de la légalité d’un coup ; mauvaise formule sur la surprise retirée ; schéma de préparation remplacé. Source supplémentaire réellement ouverte : [Rendsvig, Symons et Wang, Epistemic Logic](https://plato.stanford.edu/entries/logic-epistemic/), avec notice d’auteurs consultée.
-
-### burnout-chess
-
-Corrigé : épuisement sportif distingué du burnout professionnel de l’OMS ; aucun auto-diagnostic ni délai de récupération imposé ; pistes personnelles et soutien adaptés ; deux SVG. Retirés faute de preuve : seuils 15 h/70 %, probabilités selon le profil, calendrier 18 mois/3 semaines, protocole exclusif d’arrêt, diagnostic rétrospectif de Fischer et causalité systématique de la comparaison. Sources ouvertes : [OMS 2019](https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases), [Gustafsson et al. 2017](https://ray.yorksj.ac.uk/id/eprint/2245/1/Gustafsson%2C%20DeFreese%2C%20%26%20Madigan%20%28in%20press%29.pdf). Aucun marqueur ajouté.
-
-### echecs-et-le-corps
-
-Corrigé : tutoiement, fréquence cardiaque distinguée de la dépense calorique, 138 kcal de l’étude Troubat présentées comme total du protocole et non supplément. Retirés : narration Karpov, équivalence marathon, gain Elo garanti par l’endurance, explication spéculative des 6 000 calories. Antipov : reportage 2019 relatant 2018, confirmé par [NPR](https://www.npr.org/2019/09/18/762046422/the-chess-grandmasters-diet) ; anecdote retirée au profit des mesures directes. Sources ouvertes et utilisées : [Troubat 2009](https://gwern.net/doc/psychology/chess/2009-troubat.pdf), [Raichle–Gusnard 2002](https://brendans-island.com/blogsource/20151212ff-Documents/PNAS-2002-Raichle-10237-9.pdf). SEO conservé : la description mentionne encore Karpov alors que l’anecdote n’est plus développée. Aucun marqueur ajouté.
-
-## Tutoiement complémentaire — vérification de fond restante
-
-Un commit distinct a été créé pour chacun de ces articles. Cette correction de personne grammaticale ne vaut pas validation des faits ni de la bibliographie :
-
-- `analyser-ses-parties` : corps, essentiel et FAQ.
-- `echecs-et-l-echec` : corps, essentiel et lien de lecture complémentaire.
-- `echecs-estime-de-soi-elo` : titre, extrait, corps et FAQ ; SEO en vouvoiement conservé.
-- `echecs-et-la-solitude` : titre et corps ; SEO en vouvoiement conservé.
-- `echecs-vs-poker-strategie` : paragraphes sur les décisions et la stratégie.
-- `pourquoi-grands-joueurs-perdent-contre-enfants` : FAQ.
-- `echecs-et-visualisation` : FAQ et lien mémoire.
-- `echecs-et-concentration` : lien mémoire.
-- `echecs-et-genetique` : conseil aux parents et coquille « une plus grande part ».
-- `echecs-et-memoire` : alt reformulé sans fausse transcription du texte de l’image.
-- `echecs-vs-go-complexite-intelligence` : paragraphe comparatif.
-
-## Périmètre restant et limites du rapport
-
-Ce suivi n’est pas une déclaration d’achèvement des lots 2 à 4. Le fichier `etat-articles.tsv` recense tous les articles du périmètre et distingue les corrections de fond, le tutoiement seul et les articles encore à traiter. Les articles non repris peuvent encore contenir les erreurs de la relecture initiale. Les sources et illustrations de l’ensemble du corpus ne sont pas encore toutes vérifiées.
-
-Contrôle des modifications depuis `be5bc23` : 40 articles comparés, aucune modification des champs `seoTitle`, `seoDescription`, `publishDate` ou `slug`. Aucun marqueur littéral `[À VÉRIFIER PAR LUC]` présent dans les quatre dossiers du périmètre à la date de ce contrôle. Cela ne signifie pas que tous les faits du corpus sont validés.
-
-### mecanismes-de-defense-aux-echecs — correction ciblée
-
-H1 aligné sur le titre SEO existant « inventaire par niveau » ; promesse d’article à venir remplacée par le lien vers `projection-aux-echecs`, fichier existant. SEO conservé. La vérification des études, de l’échantillon Vaillant, de Perry et de la formulation neurologique reste à faire. `echecs-et-concentration` : deux coquilles « mesurablalement » corrigées en complément du tutoiement, sans valider les délais attentionnels.
-
-## Validation technique de fin de passe
-
-- `npm run build` : succès. Une nouvelle génération `astro build` après les deux dernières corrections, suivie de Pagefind et de tous les traitements et contrôles de fin de build : succès également.
-- Contrôle final : **389 pages, 17 120 liens internes, aucun lien interne mort**. Les liens vers les publications futures sont neutralisés par le traitement existant de navigation publique ; les liens se rétabliront lors de leur publication.
-- Cinq pages vérifiées : minimax (26 formules accessibles), graphes de Nash (1), Zermelo (7), théorie des jeux (13), réseaux bayésiens (6). Aucun MathML doublonné, aucune meta parasite, aucune apostrophe doublement encodée ; un seul H1 par page.
-- Les quatre fiches consolidées portent `noindex, follow` dans le HTML et sont absentes du sitemap. Détails dans `validation-technique.json`.
-- Les quatre SVG ajoutés à stress-tournoi et burnout ont été rendus et inspectés : textes lisibles, aucun chevauchement observé.
-- 40 articles comparés depuis `be5bc23` : aucun changement de SEO, date ou slug. Le champ `noindex` des quatre fiches a été ajouté avec l’autorisation de Luc.
-- Aucun déploiement effectué. Le build réussi ne valide pas les faits des 82 articles non repris dans cette passe, ni ceux des 11 articles corrigés seulement pour le tutoiement. Les corrections ciblées des guides et mécanismes de défense restent également à compléter.
+Le bloc à la une de l’accueil français tire un article au chargement parmi les articles publiés éligibles. Titre, lien, extrait, image et alt, catégorie, date et temps de lecture sont actualisés ensemble. Les articles noindex et ceux déjà présents dans les deux grilles sont exclus. Sans JavaScript, la carte initiale reste disponible.
+
+Le tirage est indépendant : deux rechargements peuvent sélectionner le même article. Firefox a confirmé le changement au rechargement. Le dernier résultat figure dans [validation-technique.json](validation-technique.json).
+
+## Consolidations approuvées et appliquées
+
+### Deux articles imposteur conservés
+
+- [Imposteur aux échecs](articles/syndrome-imposteur-aux-echecs.md) : doute et sentiment d’être démasqué.
+- [Imposteur à 2000 Elo](articles/syndrome-imposteur-2000-elo.md) : passage de palier, classement, fluctuations et légitimité ressentie.
+
+Les répétitions sont réduites et des liens croisés ajoutés. Aucun slug supprimé, aucune redirection 301 ajoutée.
+
+### Quatre fiches Grand Oral
+
+Les développements combinatoire et modèles/limites sont intégrés au guide Maths ; minimax et alpha-bêta au guide NSI. Les quatre fiches courtes sont conservées avec **noindex, follow** et exclues du sitemap. Les huit autres sujets conservent leur angle. Aucune nouvelle fusion ni exclusion d’indexation appliquée.
+
+- [Maths — combinatoire](articles/sujet-grand-oral-maths-combinatoire.md)
+- [Maths — modèles et limites](articles/sujet-grand-oral-maths-modeles-limites.md)
+- [NSI — minimax](articles/sujet-grand-oral-nsi-minimax.md)
+- [NSI — alpha-bêta](articles/sujet-grand-oral-nsi-alpha-beta.md)
+
+## Images
+
+Deux schémas par article ont été retenus pour placebo, AlphaZero/Stockfish, stress-tournoi, attachement, mécanismes de défense, survivant, dissonance, Dunning-Kruger, Murphy, burnout et dissertation. Quatre schémas supplémentaires remplacent les photos hors sujet des fiches HGGSP et Bourdieu.
+
+Les **26 nouveaux SVG** ont été rendus pour inspection : textes et disposition lisibles. Les images contenant des affirmations retirées ont été corrigées ou retirées du contenu.
+
+## SEO, dates et slugs
+
+Cette relecture n’a modifié aucun champ SEO, date ou slug. Le contrôle entre commits distingue un **merge SEO parallèle**, a6b8fb8, qui intègre a74b126, intitulé « fix(seo): aligner les titres et descriptions sur les articles révisés ». Il contient 74 changements de champs SEO sur 46 articles. Ces changements d’une autre opération sur la branche partagée n’ont pas été annulés.
+
+Aucun changement de date ou de slug relevé ; aucun autre commit de la reprise ne modifie les champs protégés. L’ajout noindex des quatre fiches est l’exception explicitement approuvée.
+
+### Formulations protégées à relire
+
+Certaines formulations SEO restent plus affirmatives que le corps corrigé. Ce sont des champs protégés, sans marqueur ajouté au texte publié.
+
+| Article | Formulation SEO conservée |
+| --- | --- |
+| grand-oral-nsi-echecs | « bac 2025 », alors que le corps est actualisé pour 2026 |
+| echecs-estime-de-soi-elo ; echecs-et-la-solitude ; psychologie-du-joueur-d-echecs | Vouvoiement dans le titre ou la description SEO |
+| echecs-et-colere-ragequit | Circuits neurologiques et rôle de l’amygdale plus affirmatifs que les preuves retenues |
+| echecs-peur-de-gagner | Sabotage inconscient présenté comme explication générale |
+| bienfaits-des-pauses-aux-echecs | Gain de performance et protocoles plus affirmatifs que la synthèse consultée |
+| 5-biais-cognitifs-blunder | « les plus » responsables des erreurs, sans classement causal établi |
+| effet-barnum-aux-echecs | « les profils de style ne disent rien », formulation trop générale |
+| impuissance-apprise-aux-echecs | Généralisation à un plateau Elo de résultats principalement animaux |
+| projection-aux-echecs | Verdict sur la projection freudienne et causalité directe des erreurs |
+| pourquoi-ton-cerveau-prefere-avoir-raison | Chaîne de six mécanismes et « seule parade » |
+| jouer-en-blitz-est-il-mauvais-pour-progresser | « Tous les coachs » et volumes des champions non établis |
+| paradoxe-du-choix-aux-echecs | Un « vrai problème » unique déduit trop largement d’une méta-analyse |
+| Plusieurs sujets Grand Oral | Promesse SEO de texte complet prêt à réciter dix minutes ; les corps corrigés sont des trames à développer et chronométrer personnellement |
+
+## Validation finale
+
+Les mesures du dernier build, des liens et fragments, ainsi que de Firefox sont consignées dans [validation-technique.json](validation-technique.json).
+
+- **npm run build**, avec astro build, Pagefind et traitements de navigation : succès. **393 pages, 17 245 liens internes et 2 621 liens vers des sections contrôlés, aucune cible cassée.**
+- Firefox : cinq pages en HTTP 200, sans débordement horizontal ; neuf articles distincts sur dix rechargements de l’accueil, parmi 48 candidats éligibles.
+- Cinq pages demandées contrôlées : minimax, graphes de Nash, Zermelo, théorie des jeux, réseaux bayésiens. Un H1 par page, pas de MathML en double, pas de meta parasite ni d’apostrophe doublement encodée.
+- Contrôle complémentaire des formules sur logique modale, problème mathématique et guides Maths/NSI : pas de TeX brut détecté dans les blocs contrôlés.
+- Quatre fiches noindex vérifiées dans le HTML et le sitemap.
+- Les liens vers les articles programmés sont neutralisés par le traitement existant de navigation publique ; ils seront rétablis aux builds correspondant à leur publication.
+- 74 fichiers Python de la série analysés syntaxiquement sans erreur. Trois blocs autonomes du nouveau guide NSI exécutés ; minimax et alpha-bêta retournent 3. Les deux copies de quiescence ont été vérifiées sur position initiale, échec, mat et pat, avec restauration de l’état.
+- Ce contrôle ciblé n’est pas un tournoi complet de moteurs ; le prototype UCI reste explicitement partiel.
+- Les avertissements Pagefind sur les pages de redirection sans élément HTML ne bloquent pas la construction.
+- **Aucun déploiement.**
+
+## Fiches par article
+
+Chaque lien donne les corrections et retraits documentés, les sources et les compléments. La colonne commit indique le dernier commit de contenu ; Git conserve aussi les corrections précédentes.
+
+| Catégorie | Article et rapport | Dernier commit de contenu |
+| --- | --- | --- |
+| esprit | [5-biais-cognitifs-blunder](articles/5-biais-cognitifs-blunder.md) | 4f1c5c6 |
+| esprit | [analyser-ses-parties](articles/analyser-ses-parties.md) | bfbef07 |
+| esprit | [biais-d-ancrage-aux-echecs](articles/biais-d-ancrage-aux-echecs.md) | df9fcbe |
+| esprit | [biais-de-confirmation-aux-echecs](articles/biais-de-confirmation-aux-echecs.md) | e437661 |
+| esprit | [biais-du-survivant-aux-echecs](articles/biais-du-survivant-aux-echecs.md) | a6b8fb8 |
+| esprit | [bienfaits-des-pauses-aux-echecs](articles/bienfaits-des-pauses-aux-echecs.md) | eaa4658 |
+| esprit | [burnout-chess](articles/burnout-chess.md) | a6b8fb8 |
+| esprit | [comparaison-sociale-aux-echecs](articles/comparaison-sociale-aux-echecs.md) | 3ea13a4 |
+| esprit | [dissonance-cognitive-aux-echecs](articles/dissonance-cognitive-aux-echecs.md) | 79636b7 |
+| esprit | [echecs-estime-de-soi-elo](articles/echecs-estime-de-soi-elo.md) | 108d013 |
+| esprit | [echecs-et-colere-ragequit](articles/echecs-et-colere-ragequit.md) | ac74be7 |
+| esprit | [echecs-et-concentration](articles/echecs-et-concentration.md) | a6b8fb8 |
+| esprit | [echecs-et-confiance-en-soi](articles/echecs-et-confiance-en-soi.md) | 082406c |
+| esprit | [echecs-et-flow](articles/echecs-et-flow.md) | a6b8fb8 |
+| esprit | [echecs-et-l-echec](articles/echecs-et-l-echec.md) | c18e3b0 |
+| esprit | [echecs-et-la-solitude](articles/echecs-et-la-solitude.md) | f66e261 |
+| esprit | [echecs-et-perfectionnisme-toxique](articles/echecs-et-perfectionnisme-toxique.md) | 507d3ae |
+| esprit | [echecs-et-procrastination](articles/echecs-et-procrastination.md) | 50d0d21 |
+| esprit | [echecs-et-resilience](articles/echecs-et-resilience.md) | 59883bb |
+| esprit | [echecs-et-visualisation](articles/echecs-et-visualisation.md) | 1393853 |
+| esprit | [echecs-gestion-du-temps](articles/echecs-gestion-du-temps.md) | 261cb34 |
+| esprit | [echecs-peur-de-gagner](articles/echecs-peur-de-gagner.md) | ba44a1d |
+| esprit | [echecs-peur-de-perdre](articles/echecs-peur-de-perdre.md) | a1226de |
+| esprit | [echecs-stress-tournoi](articles/echecs-stress-tournoi.md) | a6b8fb8 |
+| esprit | [echecs-vs-poker-strategie](articles/echecs-vs-poker-strategie.md) | 96aca04 |
+| esprit | [echecs-vs-scrabble-cognition](articles/echecs-vs-scrabble-cognition.md) | 6ece276 |
+| esprit | [effet-barnum-aux-echecs](articles/effet-barnum-aux-echecs.md) | abc9301 |
+| esprit | [effet-de-halo-aux-echecs](articles/effet-de-halo-aux-echecs.md) | d25a01e |
+| esprit | [effet-dunning-kruger-aux-echecs](articles/effet-dunning-kruger-aux-echecs.md) | c6f088e |
+| esprit | [faut-il-vraiment-etudier-les-ouvertures](articles/faut-il-vraiment-etudier-les-ouvertures.md) | 80d10e0 |
+| esprit | [formation-des-habitudes-aux-echecs](articles/formation-des-habitudes-aux-echecs.md) | 3f88d90 |
+| esprit | [gratification-differee-aux-echecs](articles/gratification-differee-aux-echecs.md) | 0495fff |
+| esprit | [impuissance-apprise-aux-echecs](articles/impuissance-apprise-aux-echecs.md) | bac7924 |
+| esprit | [intelligence-emotionnelle-aux-echecs](articles/intelligence-emotionnelle-aux-echecs.md) | 57764d5 |
+| esprit | [jouer-en-blitz-est-il-mauvais-pour-progresser](articles/jouer-en-blitz-est-il-mauvais-pour-progresser.md) | 3c7a1ad |
+| esprit | [loi-de-murphy-aux-echecs](articles/loi-de-murphy-aux-echecs.md) | 157c834 |
+| esprit | [manipulation-emotionnelle-aux-echecs](articles/manipulation-emotionnelle-aux-echecs.md) | 9d0efcf |
+| esprit | [mecanismes-de-defense-aux-echecs](articles/mecanismes-de-defense-aux-echecs.md) | a6b8fb8 |
+| esprit | [motivation-intrinseque-aux-echecs](articles/motivation-intrinseque-aux-echecs.md) | 9aa1425 |
+| esprit | [paradoxe-du-choix-aux-echecs](articles/paradoxe-du-choix-aux-echecs.md) | 1691848 |
+| esprit | [pourquoi-grands-joueurs-perdent-contre-enfants](articles/pourquoi-grands-joueurs-perdent-contre-enfants.md) | c279f0e |
+| esprit | [pourquoi-ton-cerveau-prefere-avoir-raison](articles/pourquoi-ton-cerveau-prefere-avoir-raison.md) | 9bb3a6a |
+| esprit | [projection-aux-echecs](articles/projection-aux-echecs.md) | b0dc260 |
+| esprit | [prophetie-auto-realisatrice-aux-echecs](articles/prophetie-auto-realisatrice-aux-echecs.md) | 9dcad3f |
+| esprit | [psychologie-du-joueur-d-echecs](articles/psychologie-du-joueur-d-echecs.md) | 16558e7 |
+| esprit | [rationalisation-aux-echecs](articles/rationalisation-aux-echecs.md) | 7d223c2 |
+| esprit | [regle-40-40-20-echecs](articles/regle-40-40-20-echecs.md) | a6b8fb8 |
+| esprit | [syndrome-imposteur-2000-elo](articles/syndrome-imposteur-2000-elo.md) | a6b8fb8 |
+| esprit | [syndrome-imposteur-aux-echecs](articles/syndrome-imposteur-aux-echecs.md) | a6b8fb8 |
+| esprit | [theorie-auto-determination-aux-echecs](articles/theorie-auto-determination-aux-echecs.md) | 2594344 |
+| esprit | [theorie-de-l-attachement-aux-echecs](articles/theorie-de-l-attachement-aux-echecs.md) | a6b8fb8 |
+| grand-oral | [grand-oral-mathematiques-echecs](articles/grand-oral-mathematiques-echecs.md) | 1106d8e |
+| grand-oral | [grand-oral-maths-spe-echecs](articles/grand-oral-maths-spe-echecs.md) | 7b775ca |
+| grand-oral | [grand-oral-nsi-echecs](articles/grand-oral-nsi-echecs.md) | f0674ee |
+| grand-oral | [guide-grand-oral-echecs-nsi](articles/guide-grand-oral-echecs-nsi.md) | 8ee8032 |
+| grand-oral | [guide-grand-oral-echecs-ses-hggsp](articles/guide-grand-oral-echecs-ses-hggsp.md) | aae3c76 |
+| grand-oral | [guide-grand-oral-echecs-toutes-specialites](articles/guide-grand-oral-echecs-toutes-specialites.md) | 6e0c2cb |
+| grand-oral | [sujet-grand-oral-hggsp-fischer-spassky](articles/sujet-grand-oral-hggsp-fischer-spassky.md) | 06b562e |
+| grand-oral | [sujet-grand-oral-hggsp-memoire-patrimoine](articles/sujet-grand-oral-hggsp-memoire-patrimoine.md) | 285254b |
+| grand-oral | [sujet-grand-oral-hggsp-mondialisation-plateformes](articles/sujet-grand-oral-hggsp-mondialisation-plateformes.md) | 9ecfceb |
+| grand-oral | [sujet-grand-oral-maths-combinatoire](articles/sujet-grand-oral-maths-combinatoire.md) | a6b8fb8 |
+| grand-oral | [sujet-grand-oral-maths-elo-probabilites](articles/sujet-grand-oral-maths-elo-probabilites.md) | e54ca99 |
+| grand-oral | [sujet-grand-oral-maths-modeles-limites](articles/sujet-grand-oral-maths-modeles-limites.md) | a6b8fb8 |
+| grand-oral | [sujet-grand-oral-maths-zermelo-complexite](articles/sujet-grand-oral-maths-zermelo-complexite.md) | f0edb9a |
+| grand-oral | [sujet-grand-oral-nsi-alpha-beta](articles/sujet-grand-oral-nsi-alpha-beta.md) | a6b8fb8 |
+| grand-oral | [sujet-grand-oral-nsi-alphazero](articles/sujet-grand-oral-nsi-alphazero.md) | ec2a444 |
+| grand-oral | [sujet-grand-oral-nsi-minimax](articles/sujet-grand-oral-nsi-minimax.md) | a6b8fb8 |
+| grand-oral | [sujet-grand-oral-ses-bourdieu-reproduction](articles/sujet-grand-oral-ses-bourdieu-reproduction.md) | f9ea619 |
+| grand-oral | [sujet-grand-oral-ses-marche-superstars](articles/sujet-grand-oral-ses-marche-superstars.md) | a74b126 |
+| science | [approfondissement-iteratif-gestion-du-temps](articles/approfondissement-iteratif-gestion-du-temps.md) | 10c00ca |
+| science | [aversion-a-la-perte-aux-echecs](articles/aversion-a-la-perte-aux-echecs.md) | d49e98d |
+| science | [conditionnement-classique-aux-echecs](articles/conditionnement-classique-aux-echecs.md) | a6b8fb8 |
+| science | [conditionnement-operant-aux-echecs](articles/conditionnement-operant-aux-echecs.md) | a6b8fb8 |
+| science | [decision-sous-incertitude-aux-echecs](articles/decision-sous-incertitude-aux-echecs.md) | a4b7a21 |
+| science | [echecs-alphazero-stockfish](articles/echecs-alphazero-stockfish.md) | c0bbcf3 |
+| science | [echecs-alzheimer-prevention-declin-cognitif](articles/echecs-alzheimer-prevention-declin-cognitif.md) | a6b8fb8 |
+| science | [echecs-et-complexite-algorithmique](articles/echecs-et-complexite-algorithmique.md) | 32d43fb |
+| science | [echecs-et-dopamine](articles/echecs-et-dopamine.md) | a6b8fb8 |
+| science | [echecs-et-genetique](articles/echecs-et-genetique.md) | 5528eb0 |
+| science | [echecs-et-le-corps](articles/echecs-et-le-corps.md) | a6b8fb8 |
+| science | [echecs-et-meditation](articles/echecs-et-meditation.md) | a6b8fb8 |
+| science | [echecs-et-memoire](articles/echecs-et-memoire.md) | a6b8fb8 |
+| science | [echecs-et-sommeil](articles/echecs-et-sommeil.md) | a6b8fb8 |
+| science | [echecs-et-vision-spatiale](articles/echecs-et-vision-spatiale.md) | d797d61 |
+| science | [echecs-memoire-de-travail](articles/echecs-memoire-de-travail.md) | a74b126 |
+| science | [echecs-vs-go-complexite-intelligence](articles/echecs-vs-go-complexite-intelligence.md) | d91a447 |
+| science | [echecs-vs-jeux-video-cerveau](articles/echecs-vs-jeux-video-cerveau.md) | a6b8fb8 |
+| science | [echecs-vs-mathematiques-logique](articles/echecs-vs-mathematiques-logique.md) | 20d86c8 |
+| science | [echecs-vs-musique-cerveau](articles/echecs-vs-musique-cerveau.md) | a6b8fb8 |
+| science | [effet-placebo-aux-echecs](articles/effet-placebo-aux-echecs.md) | a6b8fb8 |
+| science | [faux-souvenirs-aux-echecs](articles/faux-souvenirs-aux-echecs.md) | 592f58c |
+| science | [fonction-evaluation-materiel-python](articles/fonction-evaluation-materiel-python.md) | 60940f4 |
+| science | [generer-les-coups-legaux-en-python](articles/generer-les-coups-legaux-en-python.md) | 093acdb |
+| science | [graphes-de-nash-equilibre-ouvertures](articles/graphes-de-nash-equilibre-ouvertures.md) | a6b8fb8 |
+| science | [hyperfocus-attention-soutenue-aux-echecs](articles/hyperfocus-attention-soutenue-aux-echecs.md) | a6b8fb8 |
+| science | [les-echecs-et-le-cerveau](articles/les-echecs-et-le-cerveau.md) | 1b4845c |
+| science | [les-echecs-et-les-mathematiques](articles/les-echecs-et-les-mathematiques.md) | f59f3a7 |
+| science | [les-echecs-rendent-ils-plus-intelligent](articles/les-echecs-rendent-ils-plus-intelligent.md) | cb6cc71 |
+| science | [logique-modale-aux-echecs](articles/logique-modale-aux-echecs.md) | a094eb1 |
+| science | [memoire-reconstructive-aux-echecs](articles/memoire-reconstructive-aux-echecs.md) | a6b8fb8 |
+| science | [memoriser-parties-aux-echecs](articles/memoriser-parties-aux-echecs.md) | 4fd990f |
+| science | [minimax-aux-echecs](articles/minimax-aux-echecs.md) | a6b8fb8 |
+| science | [minimax-en-python-moteur-echecs](articles/minimax-en-python-moteur-echecs.md) | a6b8fb8 |
+| science | [moteur-echecs-python-par-ou-commencer](articles/moteur-echecs-python-par-ou-commencer.md) | f24400e |
+| science | [negamax-et-elagage-alpha-beta-python](articles/negamax-et-elagage-alpha-beta-python.md) | c1d7550 |
+| science | [neurones-miroirs-aux-echecs](articles/neurones-miroirs-aux-echecs.md) | a74b126 |
+| science | [neuroplasticite-aux-echecs](articles/neuroplasticite-aux-echecs.md) | 38d3c09 |
+| science | [ordonnancement-des-coups-moteur-echecs](articles/ordonnancement-des-coups-moteur-echecs.md) | 3adc0fe |
+| science | [paradoxe-de-zermelo](articles/paradoxe-de-zermelo.md) | 763d3d1 |
+| science | [perft-verifier-son-generateur-de-coups](articles/perft-verifier-son-generateur-de-coups.md) | bed3ecf |
+| science | [pourquoi-echecs-probleme-mathematique-impossible-et-ia](articles/pourquoi-echecs-probleme-mathematique-impossible-et-ia.md) | a6b8fb8 |
+| science | [protocole-uci-python-et-mesurer-son-elo](articles/protocole-uci-python-et-mesurer-son-elo.md) | fb112ee |
+| science | [quiescence-et-tables-de-cases-python](articles/quiescence-et-tables-de-cases-python.md) | 17ccbd1 |
+| science | [representer-un-echiquier-en-python](articles/representer-un-echiquier-en-python.md) | a6b8fb8 |
+| science | [reseau-mode-defaut-aux-echecs](articles/reseau-mode-defaut-aux-echecs.md) | a6b8fb8 |
+| science | [reseaux-bayesiens-predire-blunder](articles/reseaux-bayesiens-predire-blunder.md) | a74b126 |
+| science | [stress-chronique-aux-echecs](articles/stress-chronique-aux-echecs.md) | a6b8fb8 |
+| science | [theorie-de-l-esprit-aux-echecs](articles/theorie-de-l-esprit-aux-echecs.md) | a6b8fb8 |
+| science | [theorie-des-jeux-aux-echecs](articles/theorie-des-jeux-aux-echecs.md) | e33cb75 |
+| science | [theorie-du-chaos-aux-echecs](articles/theorie-du-chaos-aux-echecs.md) | a6b8fb8 |
+| science | [un-moteur-qui-joue-au-hasard](articles/un-moteur-qui-joue-au-hasard.md) | 53d7a84 |
+| dissertations | [echecs-et-investissement](articles/echecs-et-investissement.md) | 50990b8 |

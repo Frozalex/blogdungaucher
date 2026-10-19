@@ -1,65 +1,205 @@
 {
-  "results": [
-    {
-      "slug": "minimax-aux-echecs",
-      "maths": 26,
-      "mathml": 0,
-      "metaParasite": false,
-      "doubleEncodage": false,
-      "h1": 1
-    },
-    {
-      "slug": "graphes-de-nash-equilibre-ouvertures",
-      "maths": 1,
-      "mathml": 0,
-      "metaParasite": false,
-      "doubleEncodage": false,
-      "h1": 1
-    },
-    {
-      "slug": "paradoxe-de-zermelo",
-      "maths": 7,
-      "mathml": 0,
-      "metaParasite": false,
-      "doubleEncodage": false,
-      "h1": 1
-    },
-    {
-      "slug": "theorie-des-jeux-aux-echecs",
-      "maths": 13,
-      "mathml": 0,
-      "metaParasite": false,
-      "doubleEncodage": false,
-      "h1": 1
-    },
-    {
-      "slug": "reseaux-bayesiens-predire-blunder",
-      "maths": 6,
-      "mathml": 0,
-      "metaParasite": false,
-      "doubleEncodage": false,
-      "h1": 1
-    },
-    {
-      "slug": "sujet-grand-oral-maths-combinatoire",
-      "robots": "noindex, follow",
-      "inSitemap": false
-    },
-    {
-      "slug": "sujet-grand-oral-maths-modeles-limites",
-      "robots": "noindex, follow",
-      "inSitemap": false
-    },
-    {
-      "slug": "sujet-grand-oral-nsi-minimax",
-      "robots": "noindex, follow",
-      "inSitemap": false
-    },
-    {
-      "slug": "sujet-grand-oral-nsi-alpha-beta",
-      "robots": "noindex, follow",
-      "inSitemap": false
-    }
-  ],
-  "errors": []
+  "date": "2026-10-19",
+  "build": {
+    "command": "npm run build",
+    "astroBuild": "success",
+    "exitCode": 0,
+    "pages": 393,
+    "internalLinksChecked": 17245,
+    "brokenInternalTargets": 0,
+    "searchLanguages": 3,
+    "searchPages": 222
+  },
+  "fragments": {
+    "checked": 2621,
+    "broken": []
+  },
+  "html": {
+    "results": [
+      {
+        "slug": "minimax-aux-echecs",
+        "maths": 23,
+        "mathml": 0,
+        "metaParasite": false,
+        "doubleEncodage": false,
+        "h1": 1
+      },
+      {
+        "slug": "graphes-de-nash-equilibre-ouvertures",
+        "maths": 0,
+        "mathml": 0,
+        "metaParasite": false,
+        "doubleEncodage": false,
+        "h1": 1
+      },
+      {
+        "slug": "paradoxe-de-zermelo",
+        "maths": 5,
+        "mathml": 0,
+        "metaParasite": false,
+        "doubleEncodage": false,
+        "h1": 1
+      },
+      {
+        "slug": "theorie-des-jeux-aux-echecs",
+        "maths": 3,
+        "mathml": 0,
+        "metaParasite": false,
+        "doubleEncodage": false,
+        "h1": 1
+      },
+      {
+        "slug": "reseaux-bayesiens-predire-blunder",
+        "maths": 6,
+        "mathml": 0,
+        "metaParasite": false,
+        "doubleEncodage": false,
+        "h1": 1
+      },
+      {
+        "slug": "sujet-grand-oral-maths-combinatoire",
+        "robots": "noindex, follow",
+        "inSitemap": false
+      },
+      {
+        "slug": "sujet-grand-oral-maths-modeles-limites",
+        "robots": "noindex, follow",
+        "inSitemap": false
+      },
+      {
+        "slug": "sujet-grand-oral-nsi-minimax",
+        "robots": "noindex, follow",
+        "inSitemap": false
+      },
+      {
+        "slug": "sujet-grand-oral-nsi-alpha-beta",
+        "robots": "noindex, follow",
+        "inSitemap": false
+      }
+    ],
+    "errors": []
+  },
+  "browser": {
+    "pages": [
+      {
+        "slug": "minimax-aux-echecs",
+        "status": 200,
+        "h1": 1,
+        "mathml": 0,
+        "math": 23,
+        "overflow": false
+      },
+      {
+        "slug": "graphes-de-nash-equilibre-ouvertures",
+        "status": 200,
+        "h1": 1,
+        "mathml": 0,
+        "math": 0,
+        "overflow": false
+      },
+      {
+        "slug": "paradoxe-de-zermelo",
+        "status": 200,
+        "h1": 1,
+        "mathml": 0,
+        "math": 5,
+        "overflow": false
+      },
+      {
+        "slug": "theorie-des-jeux-aux-echecs",
+        "status": 200,
+        "h1": 1,
+        "mathml": 0,
+        "math": 3,
+        "overflow": false
+      },
+      {
+        "slug": "reseaux-bayesiens-predire-blunder",
+        "status": 200,
+        "h1": 1,
+        "mathml": 0,
+        "math": 6,
+        "overflow": false
+      }
+    ],
+    "home": [
+      {
+        "href": "/fr/blog/sujet-grand-oral-hggsp-fischer-spassky/",
+        "candidates": 48
+      },
+      {
+        "href": "/fr/blog/echecs-et-streaming/",
+        "candidates": 48
+      },
+      {
+        "href": "/fr/blog/theorie-du-chaos-aux-echecs/",
+        "candidates": 48
+      },
+      {
+        "href": "/fr/blog/echecs-et-flow/",
+        "candidates": 48
+      },
+      {
+        "href": "/fr/blog/echecs-peur-de-perdre/",
+        "candidates": 48
+      },
+      {
+        "href": "/fr/blog/echecs-et-therapie/",
+        "candidates": 48
+      },
+      {
+        "href": "/fr/blog/echecs-et-ecole/",
+        "candidates": 48
+      },
+      {
+        "href": "/fr/blog/sujet-grand-oral-hggsp-fischer-spassky/",
+        "candidates": 48
+      },
+      {
+        "href": "/fr/blog/echecs-en-prison/",
+        "candidates": 48
+      },
+      {
+        "href": "/fr/blog/guide-grand-oral-echecs-ses-hggsp/",
+        "candidates": 48
+      }
+    ],
+    "distinct": 9
+  },
+  "illustrations": {
+    "newSVGsRenderedAndInspected": 26,
+    "textOverflowObserved": false
+  },
+  "python": {
+    "syntaxFiles": 74,
+    "syntaxErrors": 0,
+    "autonomousGuideBlocksExecuted": 3,
+    "minimaxResult": 3,
+    "alphaBetaResult": 3,
+    "quiescenceCopiesChecked": [
+      "11-quiescence",
+      "12-uci"
+    ],
+    "quiescenceCases": [
+      "initial position",
+      "in check with remaining depth zero",
+      "checkmate",
+      "stalemate"
+    ],
+    "stateRestoredAllCases": true,
+    "uciPrototypeIsPartial": true
+  },
+  "metadata": {
+    "articlesCompared": 122,
+    "dateOrSlugChanges": 0,
+    "protectedFieldsChangedByEditorialCommits": 0,
+    "separateParallelMerge": "a6b8fb8",
+    "parallelSEOCommit": "a74b126",
+    "parallelSEOFields": 74,
+    "parallelSEOArticles": 46,
+    "parallelChangesReverted": false
+  },
+  "markersRemaining": [],
+  "frontmatterPlaceholdersRemaining": [],
+  "deploymentExecuted": false
 }
