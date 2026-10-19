@@ -1,0 +1,148 @@
+---
+import EditorialArticle from "./EditorialArticle.astro";
+import { categoryMap } from "../data/site";
+import { currentDossier } from "../data/dossier";
+import { getHomeEditorialPosts } from "../data/home-editorial";
+import { mostReadSlugs } from "../data/most-read";
+import { getPostHeroSrc, getPostSlug, type BlogEntry } from "../utils/blog";
+
+interface Props { posts: BlogEntry[]; }
+const { posts } = Astro.props;
+const eligible = posts.filter(post => !post.data.noindex);
+const bySlug = new Map(eligible.map(post => [getPostSlug(post), post]));
+const { lead, secondary, latest } = getHomeEditorialPosts(eligible);
+const used = new Set([...(lead ? [lead] : []), ...secondary, ...latest].map(post => post.id));
+const selection: BlogEntry[] = [];
+for (const post of [...mostReadSlugs.map(slug => bySlug.get(slug)), ...eligible]) {
+  if (selection.length === 3) break;
+  if (post && post.data.category !== "grand-oral" && !used.has(post.id)) { selection.push(post); used.add(post.id); }
+}
+const rubrics = (["science", "esprit", "societe"] as const).map(slug => {
+  const candidates = eligible.filter(post => post.data.category === slug && !used.has(post.id));
+  const feature = candidates.find(post => getPostHeroSrc(post)) ?? candidates[0];
+  const articles = feature ? [feature, ...candidates.filter(post => post.id !== feature.id).slice(0, 2)] : [];
+  articles.forEach(post => used.add(post.id));
+  return { slug, ...categoryMap[slug], articles };
+});
+// Seuls les articles réellement publiés alimentent le dossier de l’accueil.
+const dossier = currentDossier.entries.flatMap(entry => {
+  const post = bySlug.get(entry.slug);
+  return post ? [{ ...entry, post, href: `/fr/blog/${getPostSlug(post)}/` }] : [];
+});
+---
+
+{selection.length > 0 && <section class="editorial-section" aria-labelledby="selection-heading">
+  <div class="section-heading"><h2 id="selection-heading">Pour aller plus loin</h2><span>La sélection du Gaucher</span></div>
+  <div class="selection-grid">{selection.map(post => <div class="selection-item"><EditorialArticle post={post} variant="feature" /></div>)}</div>
+</section>}
+
+<section class="editorial-section" aria-labelledby="rubriques">
+  <div class="section-heading"><h2 id="rubriques">Les rubriques</h2><span>Trois façons de regarder le jeu</span></div>
+  <div class="rubric-grid">
+    {rubrics.map(rubric => <section class="rubric" aria-labelledby={`rubric-${rubric.slug}`}>
+      <header class="rubric__header">
+        <h3 id={`rubric-${rubric.slug}`}><a href={rubric.href}>{rubric.shortLabel} <span aria-hidden="true">↗</span></a></h3>
+        <p>{rubric.tagline}</p>
+      </header>
+      {rubric.articles[0] && <EditorialArticle post={rubric.articles[0]} variant="feature" titleTag="h4" showKicker={false} />}
+      {rubric.articles.length > 1 && <ul class="rubric__links">{rubric.articles.slice(1).map(post => <li><a href={`/fr/blog/${getPostSlug(post)}/`}>{post.data.title}<span aria-hidden="true">↗</span></a></li>)}</ul>}
+      <a class="text-link rubric__all" href={rubric.href}>Explorer la rubrique <span aria-hidden="true">→</span></a>
+    </section>)}
+  </div>
+</section>
+
+{dossier.length > 0 && <section class="editorial-section" aria-labelledby="dossier-heading">
+  <div class="section-heading"><h2 id="dossier-heading">Le dossier</h2><a class="text-link" href={currentDossier.href}>Tous les sujets <span aria-hidden="true">→</span></a></div>
+  <div class="oral-dossier">
+    <div class="oral-dossier__intro">
+      <span class="rest-eyebrow">Baccalauréat · Grand oral</span>
+      <h3>Les échecs,<br />un sujet à défendre.</h3>
+      <p>Des idées aux arguments : prépare ton Grand oral avec des sujets de Maths et de NSI, des plans et des repères pour le jury.</p>
+      <a class="oral-dossier__button" href={currentDossier.href}>Préparer mon Grand oral <span aria-hidden="true">→</span></a>
+      <div class="oral-dossier__signature" aria-hidden="true"><img src="/images/logo.svg" alt="" width="30" height="42" /><span>Comprendre.<br />Construire. Convaincre.</span></div>
+    </div>
+    <div class="oral-dossier__articles">
+      {dossier.map(entry => <article class="oral-dossier__article">
+        <a href={entry.href}>
+          <span class="rest-eyebrow">{entry.kicker}</span>
+          <h4>{entry.post.data.title}</h4>
+          <p>{entry.summary}</p>
+          <span class="text-link oral-dossier__read">Lire le guide <span aria-hidden="true">↗</span></span>
+        </a>
+      </article>)}
+    </div>
+  </div>
+</section>}
+
+<div class="edition-end">
+  <div><span class="rest-eyebrow">Le carnet continue</span><p>D’autres lectures, d’autres perspectives.</p></div>
+  <a class="text-link" href="/fr/blog/">Parcourir tous les articles <span aria-hidden="true">→</span></a>
+</div>
+
+<style>
+  .editorial-section { padding-top: 1rem; margin: 0 0 3rem; border-top: 2px solid var(--text-main); }
+  .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem; }
+  .section-heading h2, .rest-eyebrow { margin: 0; color: var(--green); font-family: var(--font-body); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 650; }
+  .section-heading > span, .section-heading > a { font-size: .75rem; color: var(--text-dim); }
+  .text-link { color: var(--green); font-size: .78rem; font-weight: 550; }
+  .text-link span { margin-left: .4rem; }
+  a:hover { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
+  .selection-grid, .rubric-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+  .selection-item, .rubric { position: relative; }
+  .selection-item + .selection-item::before, .rubric + .rubric::before { content: ""; position: absolute; top: 0; bottom: 0; left: -1rem; width: 1px; background: var(--border-strong); }
+  .rubric { min-width: 0; display: flex; flex-direction: column; }
+  .rubric__header { min-height: 8rem; }
+  .rubric__header h3 { font-family: var(--font-serif); font-weight: 600; font-size: 1.65rem; line-height: 1.15; letter-spacing: -.03em; margin: 0 0 .65rem; }
+  .rubric__header h3 span { font-family: var(--font-body); font-size: .9rem; color: var(--green); margin-left: .2rem; }
+  .rubric__header p { color: var(--text-muted); font-size: .86rem; line-height: 1.55; margin: 0 0 1.25rem; }
+  .rubric__links { list-style: none; padding: 0; margin: 1.2rem 0; }
+  .rubric__links li { padding: .85rem 0; border-top: 1px solid var(--border-strong); }
+  .rubric__links li:last-child { border-bottom: 1px solid var(--border-strong); }
+  .rubric__links a { display: flex; gap: .8rem; justify-content: space-between; font-family: var(--font-serif); font-weight: 500; font-size: 1rem; line-height: 1.4; }
+  .rubric__links a span { color: var(--green); font-family: var(--font-body); flex-shrink: 0; }
+  .rubric__all { margin-top: auto; padding-top: .3rem; }
+  .oral-dossier { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); background: var(--bg-warm); border-top: 3px solid var(--green); }
+  .oral-dossier__intro { padding: 2rem; border-right: 1px solid var(--border-strong); }
+  .oral-dossier__intro h3 { font-family: var(--font-serif); font-weight: 600; font-size: clamp(1.8rem, 2.7vw, 2.6rem); line-height: 1.1; letter-spacing: -.035em; margin: 1rem 0; }
+  .oral-dossier__intro > p { color: var(--text-muted); font-size: .9rem; line-height: 1.65; margin: 0 0 1.5rem; }
+  .oral-dossier__button { display: inline-flex; justify-content: space-between; align-items: center; gap: 1rem; background: var(--green); color: var(--on-green); padding: .8rem 1rem; border-radius: 3px; font-size: .8rem; font-weight: 550; }
+  .oral-dossier__button:hover { background: var(--green-hover); color: var(--on-green); }
+  .oral-dossier__signature { display: flex; align-items: center; gap: .8rem; margin-top: 2rem; }
+  .oral-dossier__signature img { width: 26px; height: 36px; opacity: .75; }
+  :global([data-theme="dark"]) .oral-dossier__signature img { filter: invert(1); }
+  .oral-dossier__signature span { font-size: .72rem; line-height: 1.5; color: var(--text-dim); }
+  .oral-dossier__articles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .oral-dossier__article { padding: 1.6rem; min-width: 0; }
+  .oral-dossier__article:nth-child(even) { border-left: 1px solid var(--border-strong); }
+  .oral-dossier__article:nth-child(n + 3) { border-top: 1px solid var(--border-strong); }
+  .oral-dossier__article > a { display: flex; flex-direction: column; height: 100%; }
+  .oral-dossier__article h4 { font-family: var(--font-serif); font-weight: 550; font-size: 1.2rem; line-height: 1.25; letter-spacing: -.02em; margin: .7rem 0; }
+  .oral-dossier__article p { font-size: .84rem; line-height: 1.6; color: var(--text-muted); margin: 0 0 1rem; }
+  .oral-dossier__read { margin-top: auto; }
+  .edition-end { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.5rem 0; border-top: 1px solid var(--border-strong); }
+  .edition-end p { margin: .4rem 0 0; font-family: var(--font-serif); font-size: 1.35rem; line-height: 1.3; }
+  @media (max-width: 899px) {
+    .selection-grid, .rubric-grid { gap: 1.25rem; }
+    .selection-item + .selection-item::before, .rubric + .rubric::before { left: -.625rem; }
+    .rubric__header { min-height: 10rem; }
+    .rubric__header h3 { font-size: 1.4rem; }
+    .oral-dossier { grid-template-columns: 1fr; }
+    .oral-dossier__intro { border-right: 0; border-bottom: 1px solid var(--border-strong); }
+    .oral-dossier__signature { display: none; }
+  }
+  @media (max-width: 639px) {
+    .editorial-section { margin-bottom: 2.25rem; }
+    .section-heading > span { display: none; }
+    .selection-grid, .rubric-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .selection-item + .selection-item, .rubric + .rubric { padding-top: 1.5rem; border-top: 1px solid var(--border-strong); }
+    .selection-item + .selection-item::before, .rubric + .rubric::before { display: none; }
+    .rubric__header { min-height: 0; }
+    .rubric__header h3 { font-size: 1.65rem; }
+    .oral-dossier__intro { padding: 1.5rem; }
+    .oral-dossier__articles { grid-template-columns: 1fr; }
+    .oral-dossier__article { padding: 1.5rem; }
+    .oral-dossier__article + .oral-dossier__article { border-left: 0; border-top: 1px solid var(--border-strong); }
+    .edition-end { flex-direction: column; align-items: start; }
+  }
+</style>

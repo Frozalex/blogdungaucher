@@ -1,0 +1,81 @@
+---
+import { categoryMap } from "../data/site";
+import { formatDateForLang, getPostHeroSrc, getPostSlug, type BlogEntry } from "../utils/blog";
+import { buildSrcset } from "../utils/image-variants";
+
+interface Props {
+  post: BlogEntry;
+  variant?: "lead" | "secondary" | "compact" | "feature";
+  titleTag?: "h3" | "h4";
+  showKicker?: boolean;
+  showImageCredit?: boolean;
+  title?: string;
+  summary?: string;
+  kicker?: string;
+}
+const { post, variant = "compact", titleTag: Title = "h3", showKicker = true, showImageCredit = false, title = post.data.title, summary = post.data.excerpt, kicker = categoryMap[post.data.category].label } = Astro.props;
+const image = getPostHeroSrc(post);
+const srcset = image ? buildSrcset(image) : undefined;
+const href = `/fr/blog/${getPostSlug(post)}/`;
+---
+<article class:list={["editorial-article", `editorial-article--${variant}`, { "editorial-article--no-image": !image }]}>
+  <a class="editorial-article__link" href={href}>
+    {image && <div class="editorial-article__visual">
+      <img src={image} srcset={srcset} sizes={variant === "lead" ? "(min-width: 900px) 730px, 100vw" : variant === "compact" ? "112px" : "(min-width: 900px) 360px, (min-width: 600px) 45vw, 100vw"} alt={post.data.heroImage?.alt || ""} width="900" height="600" loading={variant === "lead" ? "eager" : "lazy"} fetchpriority={variant === "lead" ? "high" : "auto"} />
+    </div>}
+    <div class="editorial-article__body">
+      {showKicker && <span class="editorial-article__kicker">{kicker}</span>}
+      <Title class="editorial-article__title">{title}</Title>
+      {variant !== "compact" && <p class="editorial-article__summary">{summary}</p>}
+      <div class="editorial-article__meta">
+        <time datetime={post.data.publishDate.toISOString()}>{formatDateForLang(post.data.publishDate, "fr")}</time>
+        <span aria-hidden="true">·</span><span>{post.data.readingTime} de lecture</span>
+      </div>
+    </div>
+  </a>
+  {image && showImageCredit && (post.data.heroImage?.credit || post.data.heroImage?.sourceUrl || post.data.heroImage?.license) && <p class="editorial-article__credit">
+    {post.data.heroImage.credit && <span>Crédit : {post.data.heroImage.credit}</span>}
+    {post.data.heroImage.sourceUrl && <a href={post.data.heroImage.sourceUrl} target="_blank" rel="noopener noreferrer">Source de l’image ↗</a>}
+    {post.data.heroImage.license && <span>{post.data.heroImage.license}</span>}
+  </p>}
+</article>
+
+<style>
+  .editorial-article { min-width: 0; }
+  .editorial-article__credit { display: flex; flex-wrap: wrap; gap: .3rem .7rem; margin: .5rem 0 0; color: var(--text-dim); font-size: .65rem; line-height: 1.5; }
+  .editorial-article__credit a { text-decoration: underline; text-underline-offset: .2em; }
+  .editorial-article__link { display: block; color: var(--text-main); }
+  .editorial-article__visual { overflow: hidden; border-radius: 4px; background: var(--bg-warm); aspect-ratio: 3 / 2; }
+  .editorial-article__visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .editorial-article__body { padding-top: 1rem; }
+  .editorial-article__kicker { display: block; margin-bottom: .55rem; font-family: var(--font-body); color: var(--green); font-size: .7rem; font-weight: 650; letter-spacing: .11em; text-transform: uppercase; }
+  .editorial-article__title { margin: 0; font-family: var(--font-serif); font-style: normal; font-weight: 600; font-size: 1.35rem; line-height: 1.2; letter-spacing: -.025em; text-wrap: pretty; transition: color 150ms ease; }
+  .editorial-article__link:hover .editorial-article__title { color: var(--green); }
+  .editorial-article__link:focus-visible { outline: 2px solid var(--green); outline-offset: 6px; border-radius: 2px; }
+  .editorial-article__summary { margin: .75rem 0 0; font-size: .94rem; line-height: 1.6; color: var(--text-muted); }
+  .editorial-article__meta { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .85rem; font-size: .72rem; line-height: 1.5; color: var(--text-dim); }
+  .editorial-article--lead .editorial-article__title { font-size: clamp(1.9rem, 3.2vw, 2.8rem); line-height: 1.1; }
+  .editorial-article--lead .editorial-article__link { display: flex; flex-direction: column; }
+  .editorial-article--lead .editorial-article__body { order: -1; padding: 0 0 1.25rem; }
+  .editorial-article--lead .editorial-article__summary { max-width: 64ch; font-size: 1.04rem; }
+  .editorial-article--secondary .editorial-article__visual { aspect-ratio: 3 / 2; }
+  .editorial-article--secondary .editorial-article__summary { font-size: .85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .editorial-article--secondary .editorial-article__body { padding-top: .8rem; }
+  .editorial-article--compact .editorial-article__link { display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: start; gap: 1rem; }
+  .editorial-article--compact .editorial-article__visual { flex: 0 0 112px; width: 112px; margin-top: .15rem; }
+  .editorial-article--compact .editorial-article__body { padding-top: 0; flex: 1; min-width: 0; }
+  .editorial-article--compact .editorial-article__title { font-size: 1.2rem; line-height: 1.25; }
+  .editorial-article--compact .editorial-article__kicker { font-size: .65rem; }
+  .editorial-article--feature .editorial-article__title { font-size: 1.4rem; }
+  .editorial-article--feature .editorial-article__summary { font-size: .88rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  @media (max-width: 599px) {
+    .editorial-article--lead .editorial-article__title { font-size: 1.9rem; }
+    .editorial-article--secondary .editorial-article__link { display: flex; flex-direction: row-reverse; gap: 1rem; align-items: start; }
+    .editorial-article--secondary .editorial-article__visual { flex: 0 0 96px; width: 96px; }
+    .editorial-article--secondary .editorial-article__body { padding: 0; flex: 1; min-width: 0; }
+    .editorial-article--secondary .editorial-article__title { font-size: 1.15rem; }
+    .editorial-article--secondary .editorial-article__summary { display: none; }
+    .editorial-article--compact .editorial-article__visual { flex-basis: 80px; width: 80px; }
+    .editorial-article__meta { font-size: .68rem; }
+  }
+</style>

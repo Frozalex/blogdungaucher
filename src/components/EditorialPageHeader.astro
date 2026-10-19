@@ -1,0 +1,15 @@
+---
+interface Props { label: string; title: string; intro: string; active: "about" | "atlas" | "glossary"; }
+const { label, title, intro, active } = Astro.props;
+const links = [
+  { label: "La une", href: "/fr/", key: "home" },
+  { label: "À propos", href: "/fr/about/", key: "about" },
+  { label: "Explorer", href: "/fr/infographie/", key: "atlas" },
+  { label: "Glossaire", href: "/fr/glossaire/", key: "glossary" },
+];
+---
+<header class="resource-header">
+  <div class="resource-masthead"><a href="/fr/"><img src="/images/logo.svg" alt="" width="22" height="31" />Blog d’un Gaucher<span>.</span></a><span>Un autre regard sur les échecs</span></div>
+  <nav class="resource-nav" aria-label="Le média et ses ressources">{links.map(link => <a href={link.href} aria-current={link.key === active ? "page" : undefined}>{link.label}</a>)}</nav>
+  <div class="resource-heading"><span class="resource-kicker">{label}</span><h1>{title}</h1><p>{intro}</p></div>
+</header>

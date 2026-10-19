@@ -1,0 +1,233 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import EditorialArticle from "./EditorialArticle.astro";
+import { categoryMap } from "../data/site";
+import { hubEditorial, type HubCategory } from "../data/hub-editorial";
+import { glossaryTerms } from "../data/glossary";
+import { getPostsByCategory, getPostSlug, formatDate, buildBreadcrumbJsonLd } from "../utils/blog";
+import { selectHubPosts } from "../utils/hub-selection";
+import "../styles/editorial-resources.css";
+
+interface Props { category: HubCategory; }
+const { category } = Astro.props;
+const meta = categoryMap[category];
+const editorial = hubEditorial[category];
+const selection = selectHubPosts(await getPostsByCategory(category), editorial, getPostSlug);
+const { eligible, lead, essentials, latest, themes, archive, themeOf } = selection;
+const isEditorialLead = lead && getPostSlug(lead) === editorial.lead;
+const words = editorial.glossary.flatMap(slug => {
+  const term = glossaryTerms.find(term => term.slug === slug);
+  return term ? [term] : [];
+});
+const minutes = (post: typeof eligible[number]) => Number.parseInt(post.data.readingTime ?? "1", 10) || 1;
+const archiveThemes = [...editorial.themes.filter(theme => archive.some(post => themeOf(post) === theme.id)).map(theme => ({ id: theme.id, title: theme.title })), ...(archive.some(post => themeOf(post) === "other") ? [{ id: "other", title: "Autres sujets" }] : [])];
+---
+
+<BaseLayout
+  title={`${meta.shortLabel} : articles et repères | Blog d’un Gaucher`}
+  description={meta.seoDescription ?? meta.description}
+  canonicalPath={meta.href}
+  lang="fr"
+  structuredData={buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: meta.label, path: meta.href }])}
+>
+  <div class="resource-page hub-page" style={`--hub-accent:${meta.accent}`}>
+    <div class="container" data-category-hub={category}>
+      <header class="hub-header">
+        <div class="resource-masthead">
+          <a href="/fr/"><img src="/images/logo.svg" alt="" width="22" height="31" />Blog d’un Gaucher<span>.</span></a>
+          <span>Un autre regard sur les échecs</span>
+        </div>
+        <nav class="resource-nav hub-nav" aria-label="Rubriques du média">
+          <a href="/fr/">La une</a>
+          {(["science", "esprit", "societe"] as const).map(slug => <a href={categoryMap[slug].href} aria-current={slug === category ? "page" : undefined}>{categoryMap[slug].label}</a>)}
+          <a href="/fr/infographie/" class="hub-nav__atlas">Explorer l’Atlas ↗</a>
+        </nav>
+        <div class="resource-heading hub-heading">
+          <span class="resource-kicker hub-label">La rubrique · {meta.label}</span>
+          <h1>{editorial.title}</h1>
+          <p>{editorial.intro}</p>
+          <div class="hub-heading__byline"><span>Le_Gaucher</span><span aria-hidden="true">·</span><span>{eligible.length} articles à explorer</span></div>
+        </div>
+        <nav class="hub-topics" aria-label={`Explorer ${meta.label} par thème`}>
+          {editorial.themes.map(theme => <a href={`#theme-${theme.id}`}>{theme.title}<span aria-hidden="true">↓</span></a>)}
+        </nav>
+      </header>
+
+      {lead && <section class="resource-section hub-choice" aria-labelledby="hub-choice-title">
+        <div class="resource-section-head"><h2 id="hub-choice-title">Le choix du Gaucher</h2><span>Une lecture pour entrer dans la rubrique</span></div>
+        <div class="hub-choice__grid">
+          <EditorialArticle post={lead} variant="lead" summary={isEditorialLead ? editorial.leadSummary : undefined} kicker={editorial.themes.find(theme => theme.slugs.includes(getPostSlug(lead)))?.title ?? meta.label} showImageCredit={true} />
+          {essentials.length > 0 && <aside class="hub-essentials" aria-labelledby="hub-essentials-title">
+            <span class="resource-kicker">Mes repères</span>
+            <h3 id="hub-essentials-title">Pour commencer.</h3>
+            <p>Deux autres lectures que je te conseille pour poser les premières questions.</p>
+            <div class="hub-essentials__articles">{essentials.map(post => <EditorialArticle post={post} variant="secondary" titleTag="h4" showKicker={false} showImageCredit={true} />)}</div>
+            <a class="resource-link hub-essentials__next" href="#explorer-questions">Trouver mon angle de lecture ↓</a>
+          </aside>}
+        </div>
+      </section>}
+
+      <section class="resource-section" id="explorer-questions" aria-labelledby="hub-themes-title">
+        <div class="resource-section-head"><h2 id="hub-themes-title">Explorer par question</h2><span>Trois entrées, à ton rythme</span></div>
+        <div class="hub-theme-grid">{themes.map((theme, index) => <section class="hub-theme" id={`theme-${theme.id}`} aria-labelledby={`title-${theme.id}`}>
+          <span class="resource-kicker">{String(index + 1).padStart(2, "0")}</span>
+          <h3 id={`title-${theme.id}`}>{theme.title}</h3>
+          <p class="hub-theme__question">{theme.question}</p>
+          <p class="hub-theme__intro">{theme.intro}</p>
+          {theme.posts.length > 0 && <ul>{theme.posts.map(post => <li><a href={`/fr/blog/${getPostSlug(post)}/`}><span>{post.data.title}</span><span aria-hidden="true">↗</span></a><span class="hub-theme__minutes">{post.data.readingTime} de lecture</span></li>)}</ul>}
+        </section>)}</div>
+      </section>
+
+      {latest.length > 0 && <section class="resource-section" aria-labelledby="hub-latest-title">
+        <div class="resource-section-head"><h2 id="hub-latest-title">Dernières publications</h2><span>Quatre lectures récentes à découvrir</span></div>
+        <div class="hub-latest-grid">{latest.map(post => <EditorialArticle post={post} variant="compact" showKicker={false} showImageCredit={true} />)}</div>
+      </section>}
+
+      {archive.length > 0 && <section class="resource-section hub-archive" id="autres-lectures" aria-labelledby="hub-archive-title" data-hub-archive>
+        <div class="resource-section-head"><h2 id="hub-archive-title">Poursuivre la lecture</h2><span>Les autres articles de la rubrique</span></div>
+        <p class="hub-archive__intro">Encore {archive.length} lectures à découvrir. Choisis un thème ou le temps que tu as devant toi.</p>
+        <div class="hub-controls" data-hub-controls hidden>
+          <div class="resource-filter" role="group" aria-label="Filtrer les autres lectures par thème">
+            <button type="button" data-hub-filter="all" aria-pressed="true">Tout</button>
+            {archiveThemes.map(theme => <button type="button" data-hub-filter={theme.id} aria-pressed="false">{theme.title}</button>)}
+          </div>
+          <div class="hub-controls__duration"><label for={`hub-duration-${category}`}>Temps de lecture</label><select class="resource-field" id={`hub-duration-${category}`} data-hub-duration><option value="all">Toutes les durées</option><option value="short">5 min ou moins</option><option value="medium">6 à 10 min</option><option value="long">Plus de 10 min</option></select><button class="resource-link hub-reset" type="button" data-hub-reset>Réinitialiser ↺</button></div>
+        </div>
+        <p class="resource-feedback hub-archive__count" data-hub-count role="status">{archive.length} articles</p>
+        <ul class="hub-archive-list">{archive.map(post => <li data-hub-result data-theme={themeOf(post)} data-minutes={minutes(post)}>
+          <a href={`/fr/blog/${getPostSlug(post)}/`}>
+            <span class="resource-kicker">{archiveThemes.find(theme => theme.id === themeOf(post))?.title ?? meta.label} · {post.data.readingTime}</span>
+            <h3>{post.data.title}</h3>
+            <time datetime={post.data.publishDate.toISOString()}>{formatDate(post.data.publishDate)}</time>
+          </a>
+        </li>)}</ul>
+        <div class="hub-empty" data-hub-empty hidden><p>Aucune autre lecture ne correspond à ces filtres.</p><a class="resource-link" data-hub-theme-link hidden>Retrouver les premières lectures de ce thème ↑</a><button type="button" class="resource-button" data-hub-reset>Afficher toutes les autres lectures</button></div>
+        <button type="button" class="resource-button" data-hub-more hidden>Afficher plus d’articles ↓</button>
+      </section>}
+
+      {words.length > 0 && <section class="resource-section" aria-labelledby="hub-words-title">
+        <div class="resource-section-head"><h2 id="hub-words-title">Les mots de la rubrique</h2><a class="resource-link" href="/fr/glossaire/">Tout le glossaire ↗</a></div>
+        <div class="hub-words">{words.map(term => <a href={`/fr/glossaire/#${term.slug}`}><h3>{term.title}<span aria-hidden="true">↗</span></h3><p>{term.def}</p></a>)}</div>
+      </section>}
+      <div class="resource-end"><div><span class="resource-kicker">Continuer à explorer</span><p>Une question en mène souvent à une autre.</p></div><a class="resource-link" href="/fr/infographie/">Suivre un parcours dans l’Atlas →</a></div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  function initHubArchive() {
+    const root = document.querySelector<HTMLElement>("[data-hub-archive]");
+    if (!root || root.dataset.bound) return;
+    root.dataset.bound = "true";
+    const controls = root.querySelector<HTMLElement>("[data-hub-controls]")!;
+    const buttons = [...root.querySelectorAll<HTMLButtonElement>("[data-hub-filter]")];
+    const duration = root.querySelector<HTMLSelectElement>("[data-hub-duration]")!;
+    const items = [...root.querySelectorAll<HTMLElement>("[data-hub-result]")];
+    const more = root.querySelector<HTMLButtonElement>("[data-hub-more]")!;
+    const empty = root.querySelector<HTMLElement>("[data-hub-empty]")!;
+    const themeLink = root.querySelector<HTMLAnchorElement>("[data-hub-theme-link]")!;
+    let theme = "all";
+    let limit = 8;
+
+    function render() {
+      const matches = items.filter(item => {
+        const time = Number(item.dataset.minutes);
+        const matchesTime = duration.value === "all" || (duration.value === "short" && time <= 5) || (duration.value === "medium" && time > 5 && time <= 10) || (duration.value === "long" && time > 10);
+        return (theme === "all" || item.dataset.theme === theme) && matchesTime;
+      });
+      items.forEach(item => item.hidden = true);
+      matches.slice(0, limit).forEach(item => item.hidden = false);
+      buttons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.hubFilter === theme)));
+      root!.querySelector("[data-hub-count]")!.textContent = `${Math.min(limit, matches.length)} article${Math.min(limit, matches.length) === 1 ? "" : "s"} affiché${Math.min(limit, matches.length) === 1 ? "" : "s"} sur ${matches.length}`;
+      more.hidden = matches.length <= limit;
+      empty.hidden = matches.length > 0;
+      const topic = document.getElementById(`theme-${theme}`);
+      themeLink.hidden = !topic;
+      if (topic) themeLink.href = `#theme-${theme}`;
+      else themeLink.removeAttribute("href");
+    }
+    buttons.forEach(button => button.addEventListener("click", () => { theme = button.dataset.hubFilter!; limit = 8; render(); }));
+    duration.addEventListener("change", () => { limit = 8; render(); });
+    root.querySelectorAll<HTMLButtonElement>("[data-hub-reset]").forEach(button => button.addEventListener("click", () => { theme = "all"; duration.value = "all"; limit = 8; render(); }));
+    more.addEventListener("click", () => { limit += 8; render(); });
+    controls.hidden = false;
+    render();
+  }
+  initHubArchive();
+  document.addEventListener("astro:page-load", initHubArchive);
+</script>
+
+<style>
+  .hub-header { margin-bottom: 2.5rem; }
+  .hub-page :global(.editorial-article__visual img) { object-fit: contain; }
+  .hub-nav { border-top-color: var(--hub-accent); }
+  .hub-nav__atlas { margin-left: auto; color: var(--text-muted); }
+  .hub-heading { padding-bottom: 1.5rem; }
+  .hub-label { display: flex; align-items: center; gap: .5rem; }
+  .hub-label::before { content: ""; width: .5rem; height: .5rem; background: var(--hub-accent); border-radius: 50%; border: 1px solid var(--border-strong); }
+  .hub-heading__byline { display: flex; flex-wrap: wrap; gap: .5rem; font-size: .74rem; color: var(--text-dim); margin-top: 1rem; }
+  .hub-heading__byline > span:first-child { color: var(--text-main); }
+  .hub-topics { display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; padding: .85rem 0; border-block: 1px solid var(--border-strong); }
+  .hub-topics a { display: flex; align-items: center; gap: .6rem; color: var(--text-muted); font-size: .78rem; padding: .25rem 0; }
+  .hub-topics a span { color: var(--green); }
+  .hub-topics a:hover { color: var(--green); }
+  .hub-choice__grid { display: grid; grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr); gap: 2.25rem; align-items: start; }
+  .hub-essentials { padding-left: 2rem; border-left: 1px solid var(--border-strong); min-width: 0; }
+  .hub-essentials > h3 { font-family: var(--font-serif); font-weight: 550; font-size: 1.8rem; letter-spacing: -.03em; margin: .65rem 0; }
+  .hub-essentials > p { font-size: .86rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 1.5rem; }
+  .hub-essentials__articles { display: grid; gap: 1.5rem; }
+  .hub-essentials__articles > :global(article + article) { border-top: 1px solid var(--border-strong); padding-top: 1.5rem; }
+  .hub-essentials__next { display: inline-block; margin-top: 1.5rem; }
+  .hub-theme-grid, .hub-words { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+  .hub-theme { min-width: 0; scroll-margin-top: calc(var(--navbar-h) + 1rem); }
+  .hub-theme > h3 { font-family: var(--font-serif); font-size: 1.65rem; line-height: 1.15; font-weight: 600; letter-spacing: -.025em; margin: .6rem 0 .85rem; }
+  .hub-theme__question { font-size: .96rem; font-weight: 550; line-height: 1.5; margin-bottom: .65rem; }
+  .hub-theme__intro { font-size: .86rem; line-height: 1.65; color: var(--text-muted); margin-bottom: 1.25rem; }
+  .hub-theme ul { list-style: none; padding: 0; margin: 0; }
+  .hub-theme li { padding: 1rem 0; border-top: 1px solid var(--border-strong); }
+  .hub-theme li a { display: flex; justify-content: space-between; gap: .75rem; font-family: var(--font-serif); font-size: 1.1rem; font-weight: 500; line-height: 1.35; }
+  .hub-theme li a > span:last-child { color: var(--green); font-family: var(--font-body); font-size: .85rem; flex-shrink: 0; }
+  .hub-theme li a:hover { color: var(--green); }
+  .hub-theme__minutes { display: block; font-size: .7rem; color: var(--text-dim); margin-top: .5rem; }
+  .hub-latest-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2.5rem; }
+  .hub-latest-grid > :global(article) { padding: 1.15rem 0; border-bottom: 1px solid var(--border-strong); }
+  #explorer-questions, .hub-archive { scroll-margin-top: calc(var(--navbar-h) + 1rem); }
+  .hub-archive__intro { color: var(--text-muted); font-size: .9rem; line-height: 1.6; margin-bottom: 1rem; }
+  .hub-controls { display: flex; flex-direction: column; gap: 1rem; padding: .5rem 0 1rem; }
+  .hub-controls__duration { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; }
+  .hub-controls__duration label { font-size: .75rem; color: var(--text-muted); }
+  .hub-controls__duration select { padding: .5rem .7rem; font-size: .8rem; }
+  .hub-reset { border: 0; background: transparent; font-family: inherit; cursor: pointer; padding: .5rem 0; }
+  .hub-archive__count { margin: .5rem 0; }
+  .hub-archive-list { list-style: none; padding: 0; margin: 0 0 1.5rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2.5rem; }
+  .hub-archive-list li { border-bottom: 1px solid var(--border-strong); }
+  .hub-archive-list a { display: block; padding: 1rem 0; }
+  .hub-archive-list h3 { font-family: var(--font-serif); font-weight: 550; font-size: 1.15rem; line-height: 1.3; letter-spacing: -.015em; margin: .5rem 0; }
+  .hub-archive-list a:hover h3 { color: var(--green); }
+  .hub-archive-list time { font-size: .7rem; color: var(--text-dim); }
+  .hub-empty { display: flex; align-items: start; flex-direction: column; gap: 1rem; padding: 1rem 0; }
+  .hub-empty p { color: var(--text-muted); font-size: .9rem; }
+  .hub-words > a { display: block; padding-top: 1rem; border-top: 1px solid var(--border-strong); }
+  .hub-words h3 { display: flex; justify-content: space-between; gap: .7rem; font-family: var(--font-serif); font-size: 1.4rem; font-weight: 550; line-height: 1.2; margin-bottom: .75rem; }
+  .hub-words h3 span { color: var(--green); font-family: var(--font-body); font-size: .9rem; }
+  .hub-words a:hover h3 { color: var(--green); }
+  .hub-words p { font-size: .85rem; color: var(--text-muted); line-height: 1.65; }
+  @media (max-width: 899px) {
+    .hub-choice__grid { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 1.5rem; }
+    .hub-essentials { padding-left: 1.25rem; }
+    .hub-theme-grid, .hub-words { gap: 1.25rem; }
+    .hub-theme > h3 { font-size: 1.4rem; }
+  }
+  @media (max-width: 639px) {
+    .hub-nav__atlas { display: none; }
+    .hub-choice__grid, .hub-theme-grid, .hub-latest-grid, .hub-archive-list, .hub-words { grid-template-columns: 1fr; }
+    .hub-essentials { padding: 1.5rem 0 0; border-left: 0; border-top: 1px solid var(--border-strong); }
+    .hub-essentials > p { margin-bottom: 1.25rem; }
+    .hub-theme-grid { gap: 1.75rem; }
+    .hub-theme + .hub-theme { border-top: 1px solid var(--border-strong); padding-top: 1.5rem; }
+    .hub-theme > h3 { font-size: 1.6rem; }
+    .hub-topics { gap: .35rem 1rem; }
+    .hub-topics a { font-size: .72rem; }
+    .hub-controls__duration { gap: .5rem; }
+  }
+</style>

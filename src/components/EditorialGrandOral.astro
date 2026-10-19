@@ -1,0 +1,179 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import EditorialArticle from "./EditorialArticle.astro";
+import { oralLead, oralSpecialties, oralSubjects, oralGuides, oralRevisionSheets } from "../data/grand-oral-editorial";
+import { getPostsByCategory, getPostSlug, buildBreadcrumbJsonLd } from "../utils/blog";
+import { isPublicAssetAvailable } from "../utils/public-asset";
+import "../styles/editorial-resources.css";
+
+const posts = await getPostsByCategory("grand-oral");
+const bySlug = new Map(posts.map(post => [getPostSlug(post), post]));
+const lead = bySlug.get(oralLead);
+const subjects = oralSubjects.flatMap(entry => { const post = bySlug.get(entry.slug); return post ? [{ ...entry, post }] : []; });
+const guides = oralGuides.flatMap(entry => { const post = bySlug.get(entry.slug); return post ? [{ ...entry, post }] : []; });
+const sheets = oralRevisionSheets.flatMap(entry => { const post = bySlug.get(entry.slug); return post ? [{ ...entry, post }] : []; });
+const used = new Set([oralLead, ...subjects.map(e => e.slug), ...guides.map(e => e.slug), ...sheets.map(e => e.slug)]);
+const others = posts.filter(post => !used.has(getPostSlug(post)));
+const href = (slug: string) => `/fr/blog/${slug}/`;
+const pdf = (slug: string) => isPublicAssetAvailable(`/pdfs/${slug}.pdf`) ? `/pdfs/${slug}.pdf` : null;
+---
+
+<BaseLayout title="Grand oral : sujets, guides et fiches autour des échecs | Blog d’un Gaucher" description="Trouve une problématique de Grand oral autour des échecs en Maths, NSI, SES ou HGGSP. Sujets, guides de préparation, fiches de révision et PDF à télécharger." canonicalPath="/fr/grand-oral/" lang="fr" omitEnDeAlternateLinks={true} structuredData={buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: "Grand oral", path: "/fr/grand-oral/" }])}>
+  <div class="resource-page oral-page">
+    <div class="container">
+      <header class="oral-header">
+        <div class="resource-masthead"><a href="/fr/"><img src="/images/logo.svg" alt="" width="22" height="31" />Blog d’un Gaucher<span>.</span></a><span>Un autre regard sur les échecs</span></div>
+        <nav class="resource-nav" aria-label="Rubriques du média"><a href="/fr/">La une</a><a href="/fr/science/">Science</a><a href="/fr/esprit/">Esprit</a><a href="/fr/societe/">Société</a><a href="/fr/grand-oral/" aria-current="page">Grand oral</a></nav>
+        <div class="resource-heading oral-heading">
+          <span class="resource-kicker oral-label">Le dossier · Lycée & baccalauréat</span>
+          <h1>Ton Grand oral.<br />Un sujet qui se défend.</h1>
+          <p>Les échecs peuvent être un point de départ. Je te propose des questions, des notions et des ressources pour construire un raisonnement que tu comprends — et que tu peux défendre avec tes mots.</p>
+          <div class="oral-byline">Le_Gaucher <span aria-hidden="true">·</span> {subjects.length} sujets <span aria-hidden="true">·</span> {guides.length + (lead ? 1 : 0)} guides <span aria-hidden="true">·</span> {sheets.length} fiches de révision</div>
+        </div>
+        <nav class="oral-shortcuts" aria-label="Dans ce dossier"><a href="#sujets">Trouver mon sujet ↓</a><a href="#guides">Choisir mon guide ↓</a><a href="#ressources">Réviser & m’entraîner ↓</a></nav>
+      </header>
+
+      <section class="resource-section" aria-labelledby="oral-start-title">
+        <div class="resource-section-head"><h2 id="oral-start-title">Le point de départ</h2><span>Une question, puis un chemin pour la travailler</span></div>
+        <div class="oral-start">
+          {lead && <div><EditorialArticle post={lead} variant="lead" kicker="Le guide du Gaucher · Toutes spécialités" title="Des échecs à ta problématique : par où commencer ?" summary="Je t’accompagne du choix d’un angle à la préparation de l’échange : des exemples, une méthode et des questions pour construire ton propre oral." showImageCredit={true} /><div class="oral-start__actions"><a class="resource-button" href={href(oralLead)}>Lire le guide de départ →</a>{pdf(oralLead) && <a class="resource-link" href={pdf(oralLead)!} download>Télécharger le guide · PDF ↓</a>}</div></div>}
+          <aside class="oral-orientation" aria-labelledby="oral-orientation-title">
+            <span class="resource-kicker">À ton rythme</span><h3 id="oral-orientation-title">Tu en es où ?</h3>
+            <a href="#sujets"><span class="oral-step">01</span><div><h4>Je cherche une idée.</h4><p>Parcours les questions par spécialité et repère ce que tu as envie d’expliquer.</p></div><span aria-hidden="true">↓</span></a>
+            <a href="#guides"><span class="oral-step">02</span><div><h4>J’ai une question.</h4><p>Choisis un guide pour poser tes notions, construire ton plan et travailler tes exemples.</p></div><span aria-hidden="true">↓</span></a>
+            <a href="#ressources"><span class="oral-step">03</span><div><h4>Je prépare l’échange.</h4><p>Reviens aux fiches et entraîne-toi à justifier tes choix à voix haute.</p></div><span aria-hidden="true">↓</span></a>
+            <p class="oral-note">Mon conseil : garde une question assez précise pour pouvoir expliquer chaque étape de ta réponse.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="resource-section oral-subjects" id="sujets" aria-labelledby="oral-subjects-title" data-oral-subjects>
+        <div class="resource-section-head"><h2 id="oral-subjects-title">Trouver ton sujet</h2><span>Maths · NSI · SES · HGGSP</span></div>
+        <p class="oral-section-intro">Une problématique est une question à discuter. Je te propose ces angles de départ ; à toi de les relier à ton cours et de choisir les exemples que tu maîtrises.</p>
+        <div class="resource-filter oral-filters" role="group" aria-label="Filtrer les sujets par spécialité" data-oral-filters hidden><button type="button" data-oral-filter="all" aria-pressed="true">Tous les sujets</button>{oralSpecialties.map(specialty => <button type="button" data-oral-filter={specialty} aria-pressed="false">{specialty} <span>({subjects.filter(s => s.specialty === specialty).length})</span></button>)}</div>
+        <p class="resource-feedback" data-oral-count role="status">{subjects.length} sujets à explorer</p>
+        <div class="oral-subject-grid">{subjects.map(entry => <div class="oral-subject" data-oral-subject data-specialty={entry.specialty}>
+          <EditorialArticle post={entry.post} variant="feature" title={entry.question} summary={entry.summary} kicker={`${entry.specialty} · Sujet`} showImageCredit={true} />
+          <div class="oral-subject__footer"><p>{entry.notions}</p>{pdf(entry.slug) && <a class="resource-link" href={pdf(entry.slug)!} download aria-label={`Le sujet en PDF : ${entry.question}`}>Le sujet en PDF ↓</a>}</div>
+        </div>)}</div>
+      </section>
+
+      <section class="resource-section" id="guides" aria-labelledby="oral-guides-title">
+        <div class="resource-section-head"><h2 id="oral-guides-title">Construire ta réponse</h2><span>Les guides par spécialité</span></div>
+        <p class="oral-section-intro">Un plan, des notions, des exemples et des questions possibles : ces guides servent de matière à travailler. Je te conseille de reformuler chaque argument avant de le garder.</p>
+        <div class="oral-guide-grid">{guides.map(entry => <div class="oral-guide">
+          <EditorialArticle post={entry.post} variant="secondary" title={entry.title} summary={entry.summary} kicker={entry.label} showImageCredit={true} />
+          <div class="oral-guide__actions"><a class="resource-link" href={href(entry.slug)}>Ouvrir le guide ↗</a>{pdf(entry.slug) && <a class="resource-link" href={pdf(entry.slug)!} download aria-label={`PDF : télécharger le guide ${entry.label}`}>PDF ↓</a>}</div>
+        </div>)}</div>
+      </section>
+
+      <section class="resource-section" id="ressources" aria-labelledby="oral-resources-title">
+        <div class="resource-section-head"><h2 id="oral-resources-title">Ta table de travail</h2><span>Réviser, vérifier, s’entraîner</span></div>
+        <div class="oral-workbench">
+          <div class="oral-sheets"><span class="resource-kicker">Les fiches de révision</span><h3>Revenir à une notion.</h3><p class="oral-section-intro">Des fiches courtes pour reprendre un exemple ou vérifier une distinction avant de retourner au guide.</p>
+            <div class="oral-sheet-grid">{sheets.map(entry => <div class="oral-sheet"><a href={href(entry.slug)}><span class="resource-kicker">{entry.label}</span><h4>{entry.title} <span aria-hidden="true">↗</span></h4><p>{entry.detail}</p></a>{pdf(entry.slug) && <a class="resource-link" href={pdf(entry.slug)!} download aria-label={`Télécharger la fiche · PDF : ${entry.title}`}>Télécharger la fiche · PDF ↓</a>}</div>)}</div>
+          </div>
+          <aside class="oral-practice"><span class="resource-kicker">Avant de te lancer</span><h3>Faire vivre ton raisonnement.</h3><ol><li><strong>Explique sans lire.</strong><p>Reprends ton exemple avec tes mots. Si une étape bloque, reviens à la notion.</p></li><li><strong>Fais jouer le jury.</strong><p>Demande à quelqu’un de questionner tes hypothèses, tes sources et les limites de ta réponse.</p></li><li><strong>Reprends ce qui résiste.</strong><p>Note les questions difficiles et retravaille les passages qui restent flous.</p></li></ol><a class="resource-link" href={`${href(oralLead)}#check-list-de-préparation`}>Ouvrir la check-list du guide ↗</a></aside>
+        </div>
+      </section>
+      {others.length > 0 && <section class="resource-section" aria-labelledby="oral-more-title"><div class="resource-section-head"><h2 id="oral-more-title">Pour aller plus loin</h2></div><div class="oral-guide-grid">{others.map(post => <EditorialArticle post={post} variant="compact" showImageCredit={true} />)}</div></section>}
+      <div class="resource-end"><div><span class="resource-kicker">Le regard du Gaucher</span><p>Une notion à éclaircir, un angle à prolonger ?</p></div><div class="oral-end-links"><a class="resource-link" href="/fr/glossaire/">Consulter le glossaire ↗</a><a class="resource-link" href="/fr/infographie/">Explorer l’Atlas ↗</a></div></div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  function initOralSubjects() {
+    const root = document.querySelector<HTMLElement>("[data-oral-subjects]");
+    if (!root || root.dataset.bound) return;
+    root.dataset.bound = "true";
+    const buttons = [...root.querySelectorAll<HTMLButtonElement>("[data-oral-filter]")];
+    const subjects = [...root.querySelectorAll<HTMLElement>("[data-oral-subject]")];
+    buttons.forEach(button => button.addEventListener("click", () => {
+      const specialty = button.dataset.oralFilter;
+      let count = 0;
+      subjects.forEach(subject => { subject.hidden = specialty !== "all" && subject.dataset.specialty !== specialty; if (!subject.hidden) count++; });
+      buttons.forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+      root.querySelector("[data-oral-count]")!.textContent = `${count} sujet${count === 1 ? "" : "s"}${specialty === "all" ? " à explorer" : ` en ${specialty}`}`;
+    }));
+    root.querySelector<HTMLElement>("[data-oral-filters]")!.hidden = false;
+  }
+  initOralSubjects();
+  document.addEventListener("astro:page-load", initOralSubjects);
+</script>
+
+<style>
+  .oral-page { --oral-accent: #8b5cf6; }
+  .oral-header { margin-bottom: 2.5rem; }
+  .oral-header .resource-nav { border-top-color: var(--oral-accent); }
+  .oral-label { display: flex; align-items: center; gap: .5rem; }
+  .oral-label::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--oral-accent); }
+  .oral-heading { padding-bottom: 1.5rem; }
+  .oral-byline { display: flex; flex-wrap: wrap; gap: .5rem; color: var(--text-dim); font-size: .74rem; margin-top: 1rem; }
+  .oral-shortcuts { display: flex; flex-wrap: wrap; gap: .75rem 2rem; padding: 1rem 0; border-block: 1px solid var(--border-strong); }
+  .oral-shortcuts a { font-size: .8rem; color: var(--green); }
+  .oral-shortcuts a:hover { text-decoration: underline; text-underline-offset: .25em; }
+  .oral-start { display: grid; grid-template-columns: minmax(0,2.1fr) minmax(0,1fr); gap: 2.25rem; align-items: start; }
+  .oral-page :global(.editorial-article__visual img) { object-fit: contain; }
+  .oral-start__actions, .oral-guide__actions, .oral-end-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+  .oral-start__actions { margin-top: 1.25rem; }
+  .oral-orientation { border-left: 1px solid var(--border-strong); padding-left: 2rem; }
+  .oral-orientation > h3, .oral-workbench h3 { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 550; line-height: 1.15; letter-spacing: -.03em; margin: .65rem 0 1.25rem; }
+  .oral-orientation > a { display: flex; align-items: start; gap: .8rem; border-top: 1px solid var(--border-strong); padding: 1.25rem 0; }
+  .oral-step { color: var(--green); font-size: .7rem; padding-top: .25rem; }
+  .oral-orientation h4 { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 550; line-height: 1.2; margin: 0 0 .5rem; }
+  .oral-orientation a > span:last-child { color: var(--green); margin-left: auto; }
+  .oral-orientation a:hover h4 { color: var(--green); }
+  .oral-orientation p { font-size: .85rem; line-height: 1.65; color: var(--text-muted); margin: 0; }
+  .oral-orientation .oral-note { border-top: 1px solid var(--border-strong); padding-top: 1rem; font-style: italic; }
+  .oral-section-intro { max-width: 78ch; font-size: .94rem; line-height: 1.7; color: var(--text-muted); margin: 0 0 1.5rem; }
+  #sujets, #guides, #ressources { scroll-margin-top: calc(var(--navbar-h) + 1rem); }
+  .oral-filters { margin-bottom: 1rem; }
+  .oral-filters button span { opacity: .8; }
+  .oral-subject-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 2.5rem; }
+  .oral-subject { padding: 1.5rem 0; border-bottom: 1px solid var(--border-strong); min-width: 0; }
+  .oral-subject :global(.editorial-article__link) { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.65fr); align-items: start; gap: 1rem; }
+  .oral-subject :global(.editorial-article__body) { padding-top: 0; }
+  .oral-subject :global(.editorial-article__title) { font-size: 1.3rem; }
+  .oral-subject :global(.editorial-article__summary) { display: block; overflow: visible; font-size: .84rem; }
+  .oral-subject__footer { margin-top: .85rem; }
+  .oral-subject__footer p { color: var(--text-dim); font-size: .7rem; line-height: 1.5; margin: 0 0 .6rem; }
+  .oral-guide-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2rem; }
+  .oral-guide { min-width: 0; display: flex; flex-direction: column; }
+  .oral-guide :global(.editorial-article__summary) { display: block; overflow: visible; }
+  .oral-guide__actions { margin-top: auto; padding-top: 1rem; }
+  .oral-workbench { display: grid; grid-template-columns: minmax(0,2fr) minmax(0,1fr); gap: 2.5rem; }
+  .oral-sheet-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.5rem; }
+  .oral-sheet { border-top: 1px solid var(--border-strong); padding-top: 1rem; min-width: 0; }
+  .oral-sheet h4 { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 550; line-height: 1.2; margin: .7rem 0; }
+  .oral-sheet h4 span { color: var(--green); font-size: .9rem; }
+  .oral-sheet a:hover h4 { color: var(--green); }
+  .oral-sheet p { font-size: .85rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 1rem; }
+  .oral-practice { background: var(--bg-warm); border-top: 3px solid var(--oral-accent); padding: 1.5rem; }
+  .oral-practice ol { padding-left: 1.2rem; margin-bottom: 1.5rem; }
+  .oral-practice li { padding-left: .25rem; margin-bottom: 1rem; font-size: .85rem; line-height: 1.6; }
+  .oral-practice li::marker { color: var(--green); }
+  .oral-practice li p { color: var(--text-muted); margin: .35rem 0 0; }
+  @media(max-width:899px) {
+    .oral-start { grid-template-columns: minmax(0,1.7fr) minmax(0,1fr); gap: 1.5rem; }
+    .oral-orientation { padding-left: 1.25rem; }
+    .oral-subject-grid { gap: 0 1.5rem; }
+    .oral-subject :global(.editorial-article__link) { grid-template-columns: 1fr; }
+    .oral-guide-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.5rem; }
+    .oral-workbench { grid-template-columns: 1fr; }
+  }
+  @media(max-width:639px) {
+    .oral-header .resource-nav { gap: 1.05rem; }
+    .oral-header .resource-nav a { font-size: .75rem; }
+    .oral-start, .oral-subject-grid, .oral-guide-grid { grid-template-columns: 1fr; }
+    .oral-orientation { border-left: 0; border-top: 1px solid var(--border-strong); padding: 1.5rem 0 0; }
+    .oral-shortcuts { gap: .75rem 1rem; }
+    .oral-shortcuts a { font-size: .75rem; }
+    .oral-subject :global(.editorial-article__title) { font-size: 1.45rem; }
+    .oral-subject :global(.editorial-article__link) { gap: 1rem; }
+    .oral-guide + .oral-guide { border-top: 1px solid var(--border-strong); padding-top: 1.5rem; }
+    .oral-guide-grid { gap: 1.5rem; }
+    .oral-workbench { gap: 2rem; }
+  }
+  @media(max-width:399px) { .oral-sheet-grid { grid-template-columns: 1fr; } }
+</style>

@@ -125,6 +125,7 @@ const articlesMenu = [
     key: "navLinks.blog",
   },
   ...rubriques.map((r) => ({ label: r.label, href: r.href, accent: r.accent, key: "" })),
+  ...(lang === "fr" ? [{ label: "Explorer l’Atlas", href: "/fr/infographie/", accent: "var(--green)", key: "" }, { label: "Glossaire", href: "/fr/glossaire/", accent: "var(--green)", key: "" }] : []),
   ...(lang === "fr" || lang === "en" || lang === "pt-br"
     ? [{ label: (t(tLang, "navLinks.series") as string) || "Séries", href: seriesHref, accent: "var(--green)", key: "navLinks.series" }]
     : []),
@@ -144,7 +145,7 @@ const navEntries: NavEntry[] = links.flatMap((link, i) =>
     : [{ kind: "link" as const, label: link.label, href: link.href }],
 );
 ---
-<header class="navbar" id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"} data-lang-nl-href={nlHref ?? "/nl/"}>
+<header class:list={["navbar", { "navbar--editorial": lang === "fr" && ["/fr/", "/fr/about/", "/fr/infographie/", "/fr/glossaire/", "/fr/science/", "/fr/esprit/", "/fr/societe/", "/fr/grand-oral/"].includes(pathname) }]} id="navbar" data-pagefind-ignore data-lang-fr-href={frHref ?? "/fr/"} data-lang-en-href={enHref ?? "/en/"} data-lang-pt-br-href={ptBrHref ?? "/pt-br/"} data-lang-nl-href={nlHref ?? "/nl/"}>
   <div class="container nav-inner">
 
     <a href={homeHref} class="nav-logo" aria-label={lang === "en" ? "Home - A Left-Hander's Blog" : lang === "pt-br" ? "Início - Blog de um Canhoto" : lang === "nl" ? "Home - Blog van een Linkshandige" : "Accueil Blog d'un Gaucher"}>
@@ -369,6 +370,11 @@ const navEntries: NavEntry[] = links.flatMap((link, i) =>
       border-color 260ms ease,
       box-shadow   260ms ease;
   }
+
+  .navbar--editorial { background: var(--bg); border-bottom-color: var(--border-strong); }
+  .navbar--editorial .logo-text { font-size: .83rem; }
+  .navbar--editorial .logo-img { width: 19px; height: 27px; }
+  .navbar--editorial .nav-link { font-size: .78rem; }
 
   /* ── scrolled : glassmorphism ── */
   .navbar.scrolled {

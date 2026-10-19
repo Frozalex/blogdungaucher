@@ -7,6 +7,7 @@ interface Props {
   lang?: "fr" | "en" | "pt-br" | "nl";
 }
 const { lang = "fr" } = Astro.props;
+const editorialHome = lang === "fr" && ["/fr/", "/fr/about/", "/fr/infographie/", "/fr/glossaire/", "/fr/science/", "/fr/esprit/", "/fr/societe/", "/fr/grand-oral/"].includes(Astro.url.pathname);
 
 const aboutHref =
   lang === "en" ? "/en/about/" : lang === "pt-br" ? "/pt-br/about/" : lang === "nl" ? "/nl/about/" : "/fr/about/";
@@ -51,7 +52,7 @@ const requiredNote = lang === "en"
   : "(* champ obligatoire)";
 ---
 
-<footer class="footer" data-pagefind-ignore>
+<footer class:list={["footer", { "footer--editorial": editorialHome }]} data-pagefind-ignore>
 
   {/* ── Zone newsletter centrée avec logo + traits ── */}
   <div class="footer-signup-zone">
@@ -73,6 +74,7 @@ const requiredNote = lang === "en"
         <span class="divider-line" aria-hidden="true"></span>
       </div>
 
+      {editorialHome && <h2 class="footer-letter-title">La lettre du Gaucher</h2>}
       <p class="footer-signup-headline">{signupHeadline}</p>
       <p class="footer-signup-required">{requiredNote}</p>
 
@@ -86,7 +88,7 @@ const requiredNote = lang === "en"
   {/* ── Corps : brand à gauche | nav à droite séparés par un trait vertical ── */}
   <div class="container footer-body">
 
-    <div class="footer-brand-col fade-up" style="--motion-delay: 60ms;">
+    <div class:list={["footer-brand-col", { "fade-up": !editorialHome }]} style="--motion-delay: 60ms;">
       <p class="footer-brand-name-text" data-t="nav.siteName">{tt("nav.siteName", "Blog d'un Gaucher")}</p>
       <p class="footer-tagline" data-t="footer.tagline">
         {tt("footer.tagline", "Un espace éditorial indépendant pour explorer les échecs en profondeur, avec des contenus utiles et actionnables.")}
@@ -99,13 +101,13 @@ const requiredNote = lang === "en"
 
     <div class="footer-vertical-divider" aria-hidden="true"></div>
 
-    <nav class="footer-nav-col fade-up" style="--motion-delay: 120ms;" aria-label="Navigation du pied de page">
+    <nav class:list={["footer-nav-col", { "fade-up": !editorialHome }]} style="--motion-delay: 120ms;" aria-label="Navigation du pied de page">
 
       <div class="footer-col-group">
         <h2 class="footer-col-label" data-t="footer.exploreTitle">{tt("footer.exploreTitle", "Explorer")}</h2>
         <a href={aboutHref} data-t="footer.editorial">{tt("footer.editorial", "Ligne éditoriale")}</a>
         {lang === "fr" && <a href="/fr/glossaire/">Glossaire</a>}
-        {lang === "fr" && <a href="/fr/infographie/">Infographies</a>}
+        {lang === "fr" && <a href="/fr/infographie/">Explorer l’Atlas</a>}
       </div>
 
       <div class="footer-col-group">
@@ -179,7 +181,6 @@ const requiredNote = lang === "en"
 <style>
   .footer-privacy-button { border: 0; padding: 0; color: inherit; background: transparent; font: inherit; cursor: pointer; text-decoration: underline; }
   .footer-privacy-button[hidden] { display: none !important; }
-
   .footer {
     margin-top: 4rem;
     border-top: 1px solid var(--border-soft);
@@ -434,4 +435,21 @@ const requiredNote = lang === "en"
       padding: 2rem 0 1.75rem;
     }
   }
+  /* Accueil FR : même vocabulaire éditorial que la une et les rubriques. */
+  .footer--editorial { margin-top: 1.5rem; background: var(--bg); border-top: 2px solid var(--text-main); }
+  .footer--editorial .footer-signup-zone { background: var(--bg-warm); padding: 2.25rem 0; border-bottom-color: var(--border-strong); }
+  .footer--editorial .footer-logo-divider { margin-bottom: .75rem; }
+  .footer--editorial .divider-line { background: var(--border-strong); }
+  .footer--editorial .footer-logo-circle { width: 42px; height: 48px; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+  .footer--editorial .footer-logo-img { width: 27px; height: 38px; }
+  .footer-letter-title { margin: 0 0 .65rem; font-family: var(--font-serif); font-size: clamp(1.8rem, 3vw, 2.4rem); font-style: normal; font-weight: 600; letter-spacing: -.035em; line-height: 1.15; }
+  .footer--editorial .footer-signup-headline { font-family: var(--font-body); font-size: .92rem; color: var(--text-muted); }
+  .footer--editorial .footer-signup-required { font-size: .72rem; margin-top: .5rem; }
+  .footer--editorial :global(.nl-input), .footer--editorial :global(.nl-btn) { border-radius: 3px; }
+  .footer--editorial .footer-brand-name-text { font-family: var(--font-serif); font-size: 1.45rem; font-weight: 600; letter-spacing: -.025em; }
+  .footer--editorial .footer-col-label { font-family: var(--font-body); }
+  .footer--editorial .footer-contact { border: 0; border-radius: 0; background: none; padding: 0; color: var(--green); font-size: .78rem; }
+  .footer--editorial .footer-contact:hover { transform: none; text-decoration: underline; }
+  .footer--editorial .footer-body { padding-block: 2rem; }
+  .footer--editorial .footer-bottom-bar { background: var(--bg); border-top-color: var(--border-strong); }
 </style>
