@@ -282,7 +282,7 @@ Un programme qui joue des parties d'échecs complètes, du premier coup au verdi
 
 C'est l'objet du prochain article, et le premier moment de la série où le moteur commence à ressembler à quelque chose.
 
-**Prochain article :** évaluer une position, en commençant par ce que tout le monde sait faire, compter le matériel. Avec une surprise à la clé : un moteur qui ne fait que ça, sans chercher plus loin qu'un demi-coup, est déjà infiniment meilleur que le hasard, et reste très mauvais.
+**Pour continuer :** [évaluer une position en comptant le matériel](/fr/blog/fonction-evaluation-materiel-python/). Cet exemple permet de comparer les choix du moteur à ceux d'un jeu aléatoire dans le protocole présenté.
 
 ## Sources
 

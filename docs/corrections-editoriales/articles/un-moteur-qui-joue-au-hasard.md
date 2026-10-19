@@ -8,3 +8,7 @@ Correction de la règle 50/75 coups et des nulles réclamables/automatiques ; co
 - [Edwards, S. J. (1994), Portable Game Notation Specification and Implementation Guide, spécification](https://www.saremba.de/chessgml/standards/pgn/pgn-complete.htm)
 
 SEO, date et slug conservés. Aucun marqueur « À VÉRIFIER PAR LUC » ajouté.
+
+## Contradictions finales
+
+Annonce future remplacée par le lien vers l’article d’évaluation existant, sans gain infini affirmé.
