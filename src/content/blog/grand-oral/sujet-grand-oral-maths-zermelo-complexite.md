@@ -18,10 +18,8 @@ tags:
   - complexité
   - théorie des jeux
   - force brute
-seoTitle: "Sujet Grand Oral Maths Zermelo complexité échecs : texte complet à réciter"
-seoDescription: >-
-  Sujet Grand Oral Maths sur le théorème de Zermelo et la complexité, entièrement rédigé pour 10 minutes d'exposé.
-  Force brute, jeu parfait, limites physiques : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral Maths : Zermelo et la complexité des échecs"
+seoDescription: "Valeur sous jeu parfait, nombre de Shannon et recherche exhaustive : distingue existence d’une solution et difficulté de calcul pour ton Grand Oral Maths."
 ogImage: /images/og/sujet-grand-oral-maths-zermelo-complexite-og.webp
 heroImage:
   src: /images/blog/sujet-grand-oral-maths-zermelo-complexite-hero.webp
