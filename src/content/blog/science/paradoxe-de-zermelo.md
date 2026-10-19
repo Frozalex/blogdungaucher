@@ -19,8 +19,7 @@ faq:
   - question: "Pourquoi appelle-t-on cela un \"paradoxe\" ?"
     answer: >-
       Au sens mathématique, ce n'en est pas un : c'est un résultat parfaitement cohérent. Le "paradoxe" est
-      <strong>épistémique</strong> : on sait qu'il existe une réponse unique, mais on ne peut pas la
-      connaître ni en pratique ni dans aucune extrapolation raisonnable des capacités de calcul. Rares sont
+      <strong>épistémique</strong> : on sait qu'il existe une réponse unique, mais sa valeur depuis la position initiale reste inconnue. Rares sont
       les propositions où la <em>certitude de l'existence</em> est aussi proprement séparée de la
       <em>possibilité de l'accès</em>.
   - question: "Les tablebases ne contredisent-elles pas Zermelo ?"
@@ -75,9 +74,9 @@ Pour traiter les échecs modernes comme un jeu fini, il faut inclure les règles
 
 Le paradoxe de Zermelo n'est pas logique. C'est un paradoxe pratique. Le théorème te garantit que la réponse existe et est unique. Mais il ne te dit pas laquelle c'est. Et surtout, il ne te dit pas comment la trouver.
 
-Pour trouver la valeur réelle de la position initiale des échecs, il faudrait parcourir l'intégralité de l'arbre du jeu. Cet arbre contient environ $10^{120}$ feuilles selon l'estimation de Shannon. Pour référence, l'âge de l'univers est d'environ $4 \times 10^{17}$ secondes, et le nombre d'atomes dans l'univers observable est d'environ $10^{80}$.
+Une exploration exhaustive naïve envisagerait un nombre considérable de suites. Shannon propose l'ordre de grandeur $10^{120}$ sous ses hypothèses : il ne s'agit pas d'un dénombrement exact de toutes les parties légales.
 
-Un ordinateur qui pourrait évaluer $10^{20}$ positions par seconde (soit environ $10^{11}$ fois plus vite que les meilleurs ordinateurs actuels) mettrait environ $10^{100}$ secondes pour résoudre les échecs par force brute. C'est infiniment plus long que l'âge de l'univers. La résolution complète des échecs par exploration exhaustive est physiquement impossible avec toute technologie concevable. (La démonstration détaillée de cette impossibilité, avec les notions de complexité EXPTIME et de facteur de branchement, est dans [pourquoi les échecs sont un problème mathématique presque impossible](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
+À titre de calcul hypothétique, examiner $10^{120}$ éléments à raison de $10^{20}$ par seconde demanderait $10^{100}$ secondes. Cela illustre un coût sous des hypothèses données ; ce n'est pas une preuve qu'aucune autre méthode ne pourrait établir la valeur du jeu. L'article sur [les limites du calcul aux échecs](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/) développe cette distinction.
 
 ## La vérité inconnue des échecs
 
@@ -91,7 +90,7 @@ Quelques travaux récents en informatique tentent d'aborder la question de faço
 
 ## Les fins de parties résolues : une fenêtre sur la vérité
 
-Si résoudre les échecs en entier est impossible, il existe un domaine où la résolution complète a été accomplie : les fins de parties avec peu de pièces.
+Si la position initiale des échecs reste non résolue, il existe un domaine où la résolution complète a été accomplie : les fins de parties avec peu de pièces.
 
 Les [bases de données de fins de partie](https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_d%27%C3%A9checs) (tablebases) développées par Ken Thompson puis Marc Bourzutschky et d'autres ont résolu toutes les fins de partie jusqu'à sept pièces sur l'échiquier. Ce travail monumental a révélé des résultats surprenants.
 
@@ -105,21 +104,17 @@ DTM mesure la distance au mat ; DTZ la distance à une prise ou à un mouvement 
 
 ## L'imperfection structurelle du joueur humain
 
-Le paradoxe de Zermelo révèle quelque chose de fondamental sur la condition du joueur humain. Il joue un jeu dont la "perfection" est mathématiquement définie, mais physiquement inaccessible.
+Le paradoxe de Zermelo révèle quelque chose de fondamental sur la condition du joueur humain. Il joue un jeu dont la "perfection" est mathématiquement définie, mais encore inconnue depuis la position initiale.
 
 Un joueur humain, même le meilleur du monde, joue une approximation de la stratégie optimale. Son niveau de jeu est déterminé par la qualité de cette approximation : à quelle profondeur il peut calculer, combien de patterns tactiques il reconnaît, à quel point son évaluation positionnelle est fidèle à la réalité.
 
-![Tous les joueurs sont des approximations de la vérité Zermelo : amateur, Grand Maître et moteur se rapprochent progressivement de la stratégie parfaite sans jamais l'atteindre — la différence est quantitative (profondeur de calcul), pas qualitative.](/images/zermelo-05-approximation-humain.svg)
-
-[Magnus Carlsen](https://fr.wikipedia.org/wiki/Magnus_Carlsen), considéré par beaucoup comme le meilleur joueur de l'histoire, commet encore des erreurs. [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(moteur_d%27%C3%A9checs)), le meilleur moteur d'échecs actuel, commet aussi des erreurs par rapport au jeu parfait théorique, des erreurs bien plus rares et bien plus petites, mais des erreurs tout de même.
-
-La différence entre Carlsen et Stockfish n'est pas qualitative (l'un joue parfaitement et l'autre non), elle est quantitative (l'un est une approximation plus fine que l'autre). Ce point de vue change profondément ta façon de penser le progrès aux échecs : tu ne tends pas vers la perfection, tu tentes de t'en approcher.
+Les performances de joueurs et de moteurs peuvent être comparées dans des parties. Elles ne donnent pas une distance mesurée à la stratégie parfaite, puisque celle-ci reste inconnue dans l'ensemble du jeu. Certaines positions couvertes par des tablebases permettent en revanche de vérifier une décision selon leurs règles.
 
 ## Le jeu parfait n'est pas le jeu idéal
 
 Une autre dimension du paradoxe de Zermelo est philosophique. Même si la stratégie parfaite était écrite noir sur blanc, la jouerais-tu vraiment ?
 
-Imagine que Blanc ait une victoire forcée en 80 coups depuis la position initiale. Jouer cette victoire forcée signifierait que toute partie serait, en réalité, déjà terminée au coup 1. L'adversaire pourrait jouer n'importe quoi, le résultat serait le même. Les échecs, en tant que jeu, cesseraient d'exister. La compétition disparaîtrait. L'art stratégique s'effondrerait.
+Imagine que Blanc ait une victoire forcée en 80 coups depuis la position initiale. Jouer cette victoire forcée signifierait que toute partie serait, en réalité, déjà terminée au coup 1. L'adversaire pourrait jouer n'importe quoi, le résultat serait le même. Cela changerait l'enjeu théorique. La pratique humaine pourrait pourtant subsister : connaître l'existence d'une stratégie et savoir l'appliquer dans chaque position sont deux choses différentes.
 
 Le fait que les échecs soient si complexes qu'aucune stratégie parfaite n'est connue est précisément ce qui les rend vivants. L'imperfection des joueurs humains est la condition nécessaire à l'existence du jeu en tant que discipline artistique et sportive.
 
