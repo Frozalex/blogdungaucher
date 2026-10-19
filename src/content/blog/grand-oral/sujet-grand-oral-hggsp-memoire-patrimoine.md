@@ -18,10 +18,8 @@ tags:
   - patrimoine
   - histoire-mémoire
   - Pierre Nora
-seoTitle: "Sujet Grand Oral HGGSP mémoire patrimoine échecs : texte complet"
-seoDescription: >-
-  Sujet Grand Oral HGGSP sur la mémoire divisée de Fischer-Spassky et le patrimoine échiquéen, entièrement rédigé pour
-  10 minutes. Pierre Nora, lieux de mémoire, UNESCO : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral HGGSP : mémoire et patrimoine des échecs"
+seoDescription: "Mémoire, histoire et patrimoine : analyse une exposition sur Fischer-Spassky avec le cadre de Pierre Nora et prépare les arguments de ton Grand Oral HGGSP."
 ogImage: /images/og/sujet-grand-oral-hggsp-memoire-patrimoine-og.webp
 heroImage:
   src: /images/go-memoire.svg
