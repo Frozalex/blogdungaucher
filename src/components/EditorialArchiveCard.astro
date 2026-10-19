@@ -1,0 +1,30 @@
+---
+import { getPostHeroSrc, getPostSlug, formatDate, type BlogEntry } from "../utils/blog";
+import { categoryMap } from "../data/site";
+import { buildSrcset } from "../utils/image-variants";
+interface Props { post: BlogEntry; eager?: boolean; }
+const { post, eager = false } = Astro.props;
+const category = categoryMap[post.data.category];
+const hero = post.data.heroImage;
+const image = getPostHeroSrc(post);
+const hasCredit = Boolean(image && (hero?.credit || hero?.sourceUrl || hero?.license));
+---
+<article class="card archive-card" style={`--accent:${category.accent}`}>
+  <a class="card-link" href={`/fr/blog/${getPostSlug(post)}/`}>
+    <div class="card-thumb-wrap">
+      {image ? <img class="card-thumb" src={image} srcset={buildSrcset(image)} sizes="(min-width: 1100px) 360px, (min-width: 640px) 45vw, 92vw" alt={hero?.alt || post.data.title} width="1200" height="800" loading={eager ? "eager" : "lazy"} fetchpriority={eager ? "high" : "auto"} /> : <div class="card-thumb-fallback"><img src="/images/logo.svg" alt="" width="30" height="42" /><span class="card-thumb-fallback__kicker">{category.label}</span></div>}
+    </div>
+    <div class="card-body">
+      <div class="card-top"><span class="card-badge">{category.label}</span><span class="card-time">{post.data.readingTime} de lecture</span></div>
+      <h3 class="card-title">{post.data.title}</h3>
+      <p class="card-excerpt">{post.data.excerpt}</p>
+      <div class="card-bottom"><time class="card-date" datetime={post.data.publishDate.toISOString()}>{formatDate(post.data.publishDate)}</time><span class="card-cta" aria-hidden="true">Lire →</span></div>
+    </div>
+  </a>
+  <p class="card-credit" hidden={!hasCredit}><span data-image-credit>{hero?.credit ? `Crédit : ${hero.credit}` : ""}</span><a data-image-source href={hero?.sourceUrl} target="_blank" rel="noopener noreferrer" hidden={!hero?.sourceUrl}>Source de l’image ↗</a><span data-image-license>{hero?.license || ""}</span></p>
+</article>
+<style>
+.archive-card{min-width:0;background:transparent;}.card-link{display:block;color:var(--text-main);}.card-thumb-wrap{aspect-ratio:3/2;overflow:hidden;background:var(--bg-warm);border-radius:3px;}.card-thumb{display:block;width:100%;height:100%;object-fit:cover;}.card-thumb-fallback{display:flex;align-items:center;justify-content:center;gap:1rem;height:100%;font-size:.8rem;color:var(--text-dim);}.card-body{padding:1rem 0 0;}.card-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.5rem;}.card-badge{display:inline-flex;align-items:center;gap:.45rem;font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;font-weight:650;color:var(--green);}.card-badge:before{content:"";width:6px;height:6px;background:var(--accent);border-radius:50%;}.card-time{font-size:.69rem;color:var(--text-dim);}.card-title{font:600 1.45rem/1.22 var(--font-serif);letter-spacing:-.025em;margin:.75rem 0 0;text-wrap:pretty;}.card-link:hover .card-title{color:var(--green);}.card-excerpt{font-size:.88rem;line-height:1.7;color:var(--text-muted);margin:.8rem 0 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}.card-bottom{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-top:1rem;font-size:.72rem;}.card-date{color:var(--text-dim);}.card-cta{color:var(--green);font-size:.78rem;}.card-credit{display:flex;flex-wrap:wrap;gap:.25rem .6rem;color:var(--text-dim);font-size:.63rem;line-height:1.5;margin:.65rem 0 0;}.card-credit a{text-decoration:underline;text-underline-offset:.2em;}.archive-card [hidden]{display:none!important;}
+:global([data-theme="dark"]) .card-thumb-fallback img{filter:invert(1);}
+@media(max-width:639px){.card-title{font-size:1.4rem;}}
+</style>
