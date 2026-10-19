@@ -1,9 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="170" viewBox="0 0 400 170" role="img" aria-labelledby="t7"><title id="t7">Fonction d'évaluation : estimer une position sans tout calculer</title>
-<rect fill="#fff5f5" width="400" height="170"/>
-<text x="200" y="22" text-anchor="middle" font-size="13" font-weight="600" fill="#c92a2a" font-family="system-ui,sans-serif">Évaluation heuristique</text>
-<rect x="40" y="45" width="320" height="50" rx="6" fill="#ffe3e3" stroke="#fa5252" stroke-width="2"/>
-<text x="200" y="68" text-anchor="middle" font-size="11" fill="#495057" font-family="system-ui,sans-serif">Matériel + structure de pions + roi + mobilité + …</text>
-<text x="200" y="88" text-anchor="middle" font-size="11" fill="#495057" font-family="system-ui,sans-serif">→ un score approché quand l'arbre s'arrête trop tôt</text>
-<text x="200" y="130" text-anchor="middle" font-size="10" fill="#212529" font-family="system-ui,sans-serif">Le moteur remplace la vérité finale par une forme compressée du « bon sens »</text>
-<text x="200" y="155" text-anchor="middle" font-size="10" fill="#868e96" font-family="system-ui,sans-serif">Catégories de features : savoir les pondérer fait la différence de niveau</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="titre"><title id="titre">Évaluer une position à une profondeur limitée</title><rect width="900" height="360" rx="20" fill="#faf8ef"/>
+<text x="40" y="38" font-family="Georgia,serif" font-size="23" fill="#252820">Évaluer une position à une profondeur limitée</text>
+<rect x="40" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b"/>
+<text x="56" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Recherche</text>
+<text x="56" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Explorer des variantes</text>
+<text x="56" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Fixer une limite de calcul</text>
+<rect x="325" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b"/>
+<text x="341" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Évaluation</text>
+<text x="341" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Estimer les feuilles</text>
+<text x="341" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Valeur exacte si connue</text>
+<rect x="610" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b"/>
+<text x="626" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Décision</text>
+<text x="626" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Remonter les scores</text>
+<text x="626" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Comparer les candidats</text>
+<text x="40" y="310" font-family="system-ui,sans-serif" font-size="15" fill="#5d6555">Une évaluation heuristique n’est pas une preuve de la valeur théorique du jeu.</text>
 </svg>

@@ -1,9 +1,6 @@
 ---
 title: "Mémoire de travail et échecs : le goulot d'étranglement cognitif"
-excerpt: >-
-  On peut connaître toutes les ouvertures, toutes les finales, et rester limité par une contrainte fondamentale : la
-  mémoire de travail. Ce système cognitif, capable de maintenir 4 à 7 éléments simultanément, est le vrai goulot
-  d'étranglement du jeu d'échecs.
+excerpt: "Conserver une position et mettre à jour une variante : le rôle de la mémoire de travail, des connaissances et des distractions, sans capacité universelle en nombre de pièces."
 publishDate: "2026-09-14"
 category: science
 featured: false
@@ -26,7 +23,7 @@ keyTakeaways:
     Aux échecs, la mémoire de travail est sollicitée pour maintenir simultanément : la position de départ, les variantes
     calculées, les menaces adverses, et les plans stratégiques à long terme. Quand la charge dépasse sa capacité, tu peux perdre le fil d’une variante, sans loi exponentielle établie ici.
   - >-
-    Les joueurs d'échecs experts ont une mémoire de travail d'échecs apparemment 'étendue', mais c'est une illusion :
+    Les performances des experts ne mesurent pas directement une capacité générale de mémoire de travail :
     ils utilisent la mémoire à long terme (chunks stockés) pour compresser l'information, libérant de la capacité de
     travail pour les calculs nouveaux.
   - >-
@@ -105,7 +102,7 @@ Chacune de ces demandes consomme de la capacité de mémoire de travail. Dans un
 
 Le résultat : des erreurs de surveillance. On oublie une pièce qu'on avait notée menacée trois coups plus tôt. On perd de vue une contre-menace adversaire qu'on avait vue pendant le calcul. On joue une ligne qu'on avait partiellement calculée mais pas jusqu'au bout, faute de capacité pour aller plus loin.
 
-## L'illusion de la mémoire "étendue" des experts
+## Interpréter les performances de mémoire des experts
 
 Pourquoi les Grands Maîtres semblent-ils avoir une mémoire de travail bien supérieure aux novices ?
 
@@ -125,7 +122,7 @@ Travailler le calcul te permet de pratiquer des opérations utiles aux échecs. 
 
 *Calcul sans toucher* : s'imposer de calculer toute variante mentalement jusqu'au bout avant de jouer. Augmenter progressivement la profondeur visée (2 coups → 3 coups → 4 coups).
 
-*Problèmes tactiques à l'aveugle* : regarder une position 30 secondes, fermer les yeux, calculer la solution. La fermeture des yeux force l'utilisation exclusive de la mémoire de travail visuospatiale.
+*Problèmes tactiques à l’aveugle* : regarde une position pendant 30 secondes, ferme les yeux puis essaie de calculer une courte suite. C’est une proposition d’exercice à adapter. Elle sollicite le maintien d’une représentation sans isoler expérimentalement la mémoire de travail visuospatiale ni prouver un bénéfice général.
 
 *Rejouer de mémoire* : choisir une partie célèbre (connue jusqu'au coup 15-20) et la rejouer de mémoire sans regarder le livre, en vérifiant après.
 

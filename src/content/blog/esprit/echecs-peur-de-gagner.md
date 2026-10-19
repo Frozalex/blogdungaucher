@@ -1,5 +1,5 @@
 ---
-title: "Échecs et peur de gagner : le sabotage inconscient au bord de la victoire"
+title: "Peur de gagner aux échecs : comprendre une position favorable ratée"
 excerpt:
   "Quand tu rates une position favorable, distingue la technique, le temps et la pression ressentie avant de conclure à une peur de gagner."
 publishDate: "2026-07-09"
@@ -20,6 +20,7 @@ heroImage:
   src: /images/blog/echecs-peur-de-gagner-hero.webp
   alt: Un pion se tient devant les dernières cases d’un chemin en damier.
 ogImage: /images/og/echecs-peur-de-gagner-og.webp
+
 ---
 
 Tu as obtenu une position favorable et tu viens de laisser échapper l’avantage. L’idée de « peur de gagner » arrive vite. Avant de l’adopter, il reste à comprendre le coup : une défense oubliée, une finale mal connue ou un manque de temps peuvent suffire à expliquer l’erreur.

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" role="img" aria-labelledby="titre" xml:lang="pt-BR"><title id="titre">Bases de finais: definir a pergunta e as regras</title><rect width="900" height="320" rx="20" fill="#faf8ef" /><text x="40" y="48" font-family="Georgia,serif" font-size="25" fill="#252820">Bases de finais: definir a pergunta e as regras</text>
+<rect x="40" y="85" width="250" height="155" rx="12" fill="#edf2e7" stroke="#64734b" /><text x="58" y="119" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#33432c">DTM</text>
+<text x="58" y="151" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Distância até o mate</text>
+<text x="58" y="177" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Otimização do caminho</text>
+<rect x="325" y="85" width="250" height="155" rx="12" fill="#edf2e7" stroke="#64734b" /><text x="343" y="119" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#33432c">DTZ</text>
+<text x="343" y="151" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Distância a uma captura</text>
+<text x="343" y="177" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">ou movimento de peão</text>
+<rect x="610" y="85" width="250" height="155" rx="12" fill="#edf2e7" stroke="#64734b" /><text x="628" y="119" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#33432c">Regras</text>
+<text x="628" y="151" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Com ou sem limite</text>
+<text x="628" y="177" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">dos 50 lances?</text>
+<text x="40" y="285" font-family="system-ui,sans-serif" font-size="16" fill="#5d6555">Duas métricas não respondem à mesma pergunta.</text></svg>

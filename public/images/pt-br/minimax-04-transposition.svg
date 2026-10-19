@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="titre" xml:lang="pt-BR"><title id="titre">Dois caminhos podem chegar à mesma posição</title><rect width="900" height="360" rx="20" fill="#faf8ef" />
+<text x="40" y="38" font-family="Georgia,serif" font-size="23" fill="#252820">Dois caminhos podem chegar à mesma posição</text>
+<rect x="40" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="56" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Caminho A</text>
+<text x="56" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">1.d4 Cf6 2.c4</text>
+<text x="56" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Uma posição alcançada</text>
+<rect x="325" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="341" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Caminho B</text>
+<text x="341" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">1.c4 Cf6 2.d4</text>
+<text x="341" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Mesma vez e direitos</text>
+<rect x="610" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="626" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Tabela</text>
+<text x="626" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Valor ou limite armazenado</text>
+<text x="626" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Profundidade a verificar</text>
+<text x="40" y="310" font-family="system-ui,sans-serif" font-size="15" fill="#5d6555">A reutilização depende das regras de empate e das informações guardadas.</text>
+</svg>

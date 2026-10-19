@@ -1,5 +1,5 @@
 ---
-title: "Les bienfaits des pauses aux échecs : pourquoi arrêter de jouer te rend meilleur"
+title: "Les pauses aux échecs : organiser le repos et la reprise"
 excerpt:
   "Comment organiser le repos pendant et entre tes séances : ce que les études sur les micro-pauses montrent, et les limites des protocoles universels."
 publishDate: "2026-05-14"

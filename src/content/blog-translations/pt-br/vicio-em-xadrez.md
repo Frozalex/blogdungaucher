@@ -1,145 +1,175 @@
-﻿---
+---
 heroImageAlt: Uma fita verde-água forma voltas ao redor de uma cadeira e de uma ampulheta.
-title: "Xadrez e vício: quando o jogo vira uma droga"
+title: "Xadrez e dependência: quando o jogo ocupa espaço demais"
 excerpt: >-
-  São 3h da manhã. Você prometeu que era a última partida, mas começa outra. Dá pra ser viciado em xadrez de
-  verdade? Anatomia de uma dependência silenciosa.
-seoTitle: "Vício em xadrez: entender e superar a dependência"
+  Jogar apesar do cansaço, perder sono e ter dificuldade de parar: como distinguir paixão pelo xadrez de uso
+  problemático, sem diagnósticos automáticos nem atalhos sobre dopamina.
+seoTitle: "Xadrez e dependência: reconhecer o uso problemático"
 seoDescription: >-
-  Vício em xadrez: 47 partidas na madrugada, rating virando obsessão, ciclo de dopamina. O xadrez cria dependência real? Sinais e soluções.
+  Xadrez online: diferencie paixão, perda de controle e transtorno clínico. Gaming disorder, limites das explicações
+  pela dopamina e caminhos para buscar apoio.
 frSlug: les-echecs-et-l-addiction
+faq:
+  - question: É possível desenvolver dependência de xadrez?
+    answer: >-
+      A prática pode estar associada à perda de controle e a consequências importantes. Isso não se deduz do rating
+      nem da quantidade de partidas. O gaming disorder da CID-11 envolve jogos digitais ou videogames; aplicar uma
+      categoria clínica a uma pessoa exige avaliação, não um rótulo automático.
+  - question: Quantas horas de jogo indicam dependência?
+    answer: >-
+      Nenhum limite universal de horas basta para um diagnóstico. É preciso avaliar controle, prioridade e
+      consequências. Perguntas de reflexão podem preparar uma consulta, mas três respostas sim em uma lista de blog
+      não são um teste validado.
+  - question: O blitz provoca picos de dopamina comparáveis aos de uma droga?
+    answer: >-
+      As fontes apresentadas não demonstram essa comparação. Pesquisas sobre sinais de recompensa não permitem medir
+      a dopamina de um jogador após cada vitória nem explicar, sozinhas, uma dificuldade de parar.
+  - question: É preciso esperar doze meses para procurar ajuda?
+    answer: >-
+      Não. A duração habitual mencionada na definição da OMS não exige esperar antes de buscar apoio. Sofrimento,
+      perda de controle repetida ou consequências para sono, estudos, trabalho ou relações justificam conversar com
+      um profissional de saúde.
+  - question: Jogar mais devagar ou limitar as partidas basta para se tratar?
+    answer: >-
+      São ajustes pessoais possíveis, não tratamentos validados para dependência de xadrez. Uma partida lenta também
+      pode prolongar o jogo. Quando os limites não funcionam ou os prejuízos são importantes, o apoio profissional é
+      mais adequado do que uma regra universal.
 ---
 
-São 3h da manhã. A tela azulada queima suas pálpebras; o contador do dia marca **47 partidas jogadas**. Seu rating acabou de cair abaixo do patamar que você tinha jurado nunca mais largar. Você pensa: *"Só mais uma, aquela que coloca tudo nos eixos."* Porque terminar numa derrota está fora de cogitação.
+São 3h da manhã. O contador marca **47 partidas jogadas**. Seu rating caiu abaixo do patamar que você queria manter. Você pensa: *“Só mais uma, a partida que vai colocar tudo nos eixos.”* Terminar com uma derrota parece, de repente, impossível.
 
-Essa cena te soa familiar? Esse filme, milhares de jogadores repetem toda noite no [Chess.com](https://www.chess.com), no [Lichess](https://lichess.org) e nos outros servidores dedicados ao xadrez online.
+Essa cena é um **exemplo fictício**, não uma estatística sobre jogadores do [Chess.com](https://www.chess.com) ou do [Lichess](https://lichess.org). Ela levanta uma questão concreta: o que fazer quando uma atividade escolhida começa a ocupar o espaço do sono, dos relacionamentos ou do trabalho?
 
-O xadrez, esse "nobre jogo dos reis", famoso pela disciplina e pela frieza do cálculo... **Será que dá pra ser viciado em xadrez de verdade?** Não no sentido de que uma partida entre amigos no domingo vai destruir sua vida, mas no sentido de que o online competitivo pode instalar um ciclo que seu cérebro nem sempre distingue de outros reforços extremos. Vamos colocar os fatos na mesa sem te dar sermão, com o que a ciência diz.
+O xadrez pode ser uma paixão exigente, uma vida social e um prazer duradouro. Uma prática intensa, por si só, não comprova dependência. Por outro lado, a reputação de jogo intelectual não torna inofensiva uma perda de controle persistente. Para conversar sobre isso de forma útil, é preciso distinguir **envolvimento, uso problemático e diagnóstico clínico**, sem transformar toda vontade de revanche em doença.
 
-## O mito derrubado: não, a dependência não é "exclusividade" das drogas
+## A dependência não se limita às substâncias
 
-Durante muito tempo, achou-se que dependência era sobretudo a garrafa ou o pó. Um jogo na tela? Um passatempo intelectual? Isso "não conta". Talvez por esnobismo, certamente por desconhecimento.
+A [Organização Mundial da Saúde](https://www.who.int/standards/classifications/frequently-asked-questions/gaming-disorder) descreve na CID-11 o transtorno por jogos digitais ou videogames, chamado *gaming disorder*. Seus elementos centrais são a dificuldade de controlar o jogo, a prioridade crescente dada a ele e a continuidade apesar das consequências negativas. O prejuízo ao funcionamento cotidiano precisa ser significativo; o padrão normalmente está presente por pelo menos doze meses.
 
-A psiquiatria moderna diz outra coisa: comportamentos imateriais podem produzir **disfunções neurológicas e de vida** comparáveis às das drogas clássicas; não idênticas em gravidade social ou sanitária, mas reais no plano dos circuitos cerebrais e do controle.
+Isso não significa esperar um ano para pedir ajuda. Também não significa que toda sessão longa corresponda ao transtorno. A duração, as circunstâncias e as consequências exigem avaliação clínica. A categoria não é, por si só, um estudo sobre a frequência de uma “dependência de xadrez”.
 
-A [Organização Mundial da Saúde](https://pt.wikipedia.org/wiki/Organiza%C3%A7%C3%A3o_Mundial_da_Sa%C3%BAde) (OMS) incluiu oficialmente o transtorno de jogo (*Gaming Disorder*) na [CID-11](https://www.who.int/news/item/25-09-2018-who-releases-new-international-classification-of-diseases-(icd-11)) em **2019**, ao lado dos transtornos ligados a substâncias. Na prática: o enquadramento clínico reconhece que dá pra perder o controle, priorizar a prática em detrimento de tudo, e continuar apesar dos prejuízos mesmo sem seringa nem copo.
+Outra distinção: a [American Psychiatric Association](https://www.psychiatry.org/patients-families/internet-gaming) apresenta o *Internet Gaming Disorder* no DSM-5-TR como uma condição que exige mais pesquisas. Portanto, seu status e seus critérios não se confundem com os da CID-11. Um artigo de blog não permite fazer esse diagnóstico nem aplicar automaticamente essas categorias a um jogador de xadrez.
 
-O cérebro não "moraliza" nada no circuito de recompensa: uma série de picos disparados por partidas em formatos relâmpago, por rankings, por revanches, pode entrar em ressonância com outros ciclos de reforço intenso. Não é dizer que as cadências curtas e a cocaína são "a mesma coisa" social ou legalmente; é dizer que o mecanismo de aprendizagem pode rimar no sentido do circuito de recompensa, não no sentido moral.
+O ponto de partida é mais simples: **você ainda consegue escolher quando jogar e quando parar, e qual é o custo dessa prática na sua vida?** Essa pergunta também importa quando as dificuldades não atingem um limiar diagnóstico.
 
-O xadrez online acrescenta uma camada: cadências infernais (Bullet, Blitz), **Elo ao vivo**, badges, comunidade o tempo todo. Resumindo: um fast-food neuronal. O tabuleiro de madeira da quarta-feira à noite não tem nada a ver.
+## Recompensa e hábitos: explicar sem inventar um exame do cérebro
 
-## A neurobiologia: por que seu cérebro te sabota (sem te julgar)
+### A dopamina não é um contador de vitórias
 
-### O ciclo dopaminérgico
+O atalho “vitória → pico de dopamina → dependência” parece convincente, mas vai longe demais. Os trabalhos de [Schultz, Dayan e Montague (1997)](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf) relacionam sinais dopaminérgicos à aprendizagem de previsões de recompensa, inclusive em experimentos com primatas. Eles não medem uma dose de dopamina depois de cada xeque-mate em um aplicativo.
 
-Vitória → [dopamina](/pt-br/blog/dopamina-e-xadrez/) → sensação de progresso → vontade de recomeçar → nova partida → novo pico (ou nova frustração a "apagar"). Seu [corpo estriado](https://pt.wikipedia.org/wiki/Corpo_estriado), o hub do circuito de recompensa, é acionado quando o mate cai, quando você ganha tempo no relógio, quando clica no instante exato.
+No xadrez, o prazer de uma bela jogada, a surpresa e a vontade de recuperar o rating podem contribuir para a motivação. Isso não permite deduzir o estado do corpo estriado de um leitor, a intensidade de um “pico” nem uma equivalência com o efeito de uma substância. **Uma explicação geral da aprendizagem não é uma medição neurológica do blitz.**
 
-Não é que você seja "fraco". É que seu cérebro faz exatamente o que a evolução ensinou a ele: perseguir os sinais que se parecem com sucesso.
+O modelo [I-PACE de Brand e colegas (2019)](https://pubmed.ncbi.nlm.nih.gov/31247240/) propõe estudar as interações entre características pessoais, emoções, expectativas, reatividade a estímulos e controle do comportamento. Esse quadro teórico ajuda a formular hipóteses; não estabelece que toda notificação de uma plataforma desencadeia dependência de xadrez.
 
-O pesquisador [Matthias Brand](https://en.wikipedia.org/wiki/Matthias_Brand) (Universidade de [Duisburg-Essen](https://en.wikipedia.org/wiki/University_of_Duisburg-Essen)) insiste: boa parte da dependência não vem do prazer durante a partida, mas da antecipação: ver o ícone do app, ouvir a notificação, *cue reactivity*, a reatividade aos estímulos. É aí que costuma começar a fissura.
+![Sequência pedagógica possível entre resultado, vontade de revanche e nova partida; ela não representa medições de dopamina.](/images/pt-br/echecs-addiction-01-boucle-dopamine.svg)
 
-### A recompensa variável: a armadilha é a incerteza
+### A incerteza pode aumentar a vontade de jogar outra
 
-O mecanismo do *variable reward schedule*, teorizado por [Burrhus Frederic Skinner](https://pt.wikipedia.org/wiki/B._F._Skinner), é o cassino: você não sabe se o próximo confronto vai ser um atropelo, uma derrota ridícula, ou um jogo apertado contra um desconhecido com rating mais alto que o seu.
+Você não sabe o resultado da próxima partida. Depois de uma derrota frustrante, a perspectiva de “recuperar o que perdeu” pode se tornar mais atraente do que estudar a posição. O acesso imediato a outro adversário deixa pouco tempo para perguntar se você realmente quer continuar.
 
-No [Lichess](https://lichess.org) ou no Chess.com, você não controla o pareamento: a imprevisibilidade mantém seu cérebro em alerta. O [NIDA](https://nida.nih.gov) documentou como esse tipo de incerteza reforça a aprendizagem compulsiva em outros contextos; o princípio é transponível para o ritmo das partidas online.
+Essa é uma interpretação possível da experiência do jogador, não a prova de que o xadrez reproduz um protocolo de cassino ou um esquema experimental de reforço de razão variável. Uma partida envolve decisões, habilidades e um adversário. Transferir diretamente resultados sobre jogos de aposta ou substâncias para o xadrez exigiria estudos adequados.
 
-### Fissura: já não pelo prazer, mas para calar o vazio
+![Exemplo de resultados incertos de uma partida e da vontade de jogar novamente; a ilustração não estabelece um mecanismo clínico específico do xadrez.](/images/pt-br/echecs-addiction-02-recompense-variable.svg)
 
-A diferença entre vontade e necessidade você conhece: você abre uma partida mesmo morto de cansaço, não pela curtição, mas para não sentir mais o incômodo de não estar jogando. Seu [córtex pré-frontal](https://pt.wikipedia.org/wiki/C%C3%B3rtex_pr%C3%A9-frontal), que deveria frear, às vezes é curto-circuitado pela urgência do "preciso começar outra".
+### Quando a vontade fica difícil de interromper
 
-## Três armadilhas bem específicas do xadrez online
+Querer jogar depois de um dia cheio não é, por si só, preocupante. Outra situação é começar uma nova partida apesar do esgotamento, arrepender-se regularmente da sessão ou não conseguir respeitar repetidamente os limites que você tinha definido.
 
-O Dr. [George Imataka](https://pubmed.ncbi.nlm.nih.gov/?term=Imataka+G) et al. (2024, *Journal of Clinical Medicine*) descrevem os fatores que afundam as pessoas nos ciclos dos videogames. As partidas online marcam todos eles, com uma precisão quase ofensiva.
+É possível descrever essa dificuldade sem afirmar que o córtex pré-frontal sofreu um “curto-circuito”. A experiência, os hábitos e as consequências observáveis já fornecem informações úteis para entender o problema e conversar sobre ele.
 
-### O número que te define: quando o Elo vira uma jaula
+## Três situações para observar no xadrez online
 
-O [rating Elo](https://pt.wikipedia.org/wiki/Sistema_de_pontua%C3%A7%C3%A3o_Elo) era uma ferramenta estatística. No online, vira um espelho do ego: "Eu sou um 1600". (A psicologia por trás desse mecanismo é desenvolvida em [A psicologia do jogador de xadrez](/pt-br/blog/psicologia-do-jogador-de-xadrez/).)
+Estes exemplos não são sintomas específicos nem uma lista validada de fatores causais. São convites para examinar o que a prática representa para você.
 
-No contexto da dependência, a virada é precisa: você não joga mais para aprender, joga para proteger o rótulo. A fixação no ponto de Elo substituiu o jogo.
+### O número que define você: quando o rating ocupa espaço demais
 
-### A comunidade como âncora, a saída como ruptura
+O rating serve para situar resultados esportivos. Ele não mede seu valor pessoal nem sua inteligência. Ainda assim, passar de “meu rating é 1600” para “eu sou um 1600” pode tornar cada variação muito difícil de viver.
 
-O Chess.com não é só um motor de pareamento: clubes, torneios, amigos, fóruns, um pequeno mundo onde você existe. Parar pode soar como se desconectar de um mundo no qual você se reconhecia. O medo de ficar de fora (*FOMO*) gruda na parede.
+Se você começa uma partida para apagar uma queda em vez de jogar por vontade, anote essa motivação. Depois, compare com uma sessão dedicada a uma posição ou à análise de uma partida. O artigo [Psicologia do jogador de xadrez](/pt-br/blog/psicologia-do-jogador-de-xadrez/) desenvolve essa relação com o resultado. A proposta não é proibir o rating, mas observar o lugar que ele ocupa.
 
-### Jogar para não estar ali: a fuga cognitiva
+### A comunidade como vínculo
 
-O pesquisador Saket Singh, em seus trabalhos sobre o cérebro dos enxadristas, explora como o xadrez modula fortemente a [rede de modo padrão](https://pt.wikipedia.org/wiki/Rede_de_modo_padr%C3%A3o): durante uma partida, o barulho do mundo diminui. O estresse do trabalho, a ansiedade, as ruminações desaparecem atrás dos 64 quadrados.
+Clubes online, amigos e torneios podem ser uma fonte real de relações. Também podem tornar uma pausa difícil quando existe medo de perder um encontro ou decepcionar o grupo.
 
-Ótimo... até o dia em que o tabuleiro vira anestésico: você não joga mais para evoluir, joga para não estar ali.
+Avisar aos parceiros o horário de encerramento ou propor uma atividade fora da plataforma ajuda a perceber essa tensão. Ter uma comunidade não é sinal de doença; o possível problema é não conseguir mais preservar os outros compromissos.
 
-Quando o Chess.com vira muleta, já não é o hobby que te relaxa, é o ciclo que te prende.
+### Jogar para colocar o resto à distância
 
-## O tilt: humor negro e uma espiral bem documentada
+Uma partida pode oferecer uma pausa bem-vinda em um dia difícil. Se ela se torna a única forma de suportar uma preocupação, a solidão ou um conflito, vale examinar também esse contexto.
 
-Você perde uma partida boba. Recomeça na hora. Joga pior. Recomeça. Perde de forma ainda mais feia.
+Não podemos deduzir de um estudo de imagem que a “rede de modo padrão” desliga as preocupações do jogador. O alívio sentido e as dificuldades que voltam depois da sessão merecem ser descritos por si mesmos. Uma ansiedade ou um humor deprimido associado também não prova qual dificuldade veio primeiro.
 
-O estresse sobe, o cortisol dispara; a [Dra. Elke van der Meer](https://www.researchgate.net/profile/Elke-Van-der-Meer) ([Humboldt de Berlim](https://pt.wikipedia.org/wiki/Universidade_Humboldt_de_Berlim)) mediu níveis de estresse em cadências curtas comparáveis aos de... um paraquedista antes do primeiro salto. Sob pressão, o [córtex pré-frontal](https://pt.wikipedia.org/wiki/C%C3%B3rtex_pr%C3%A9-frontal) larga o controle; a [amígdala](https://pt.wikipedia.org/wiki/Corpo_amigdaloide) assume o volante. Você joga rápido e mal. [Matthias Brand](https://en.wikipedia.org/wiki/Matthias_Brand) liga isso às funções executivas nos usos problemáticos.
+## Tilt: descrever a espiral sem inventar uma dosagem de cortisol
 
-**Paradoxo cruel:** quanto mais você quer recuperar o último ponto perdido, mais afunda, e mais as derrotas se emendam.
+Você perde uma partida, começa outra imediatamente e fica ainda mais irritado. No vocabulário dos jogadores, *tilt* descreve o momento em que a frustração pesa sobre as decisões e sobre a vontade de continuar.
 
-Para se aprofundar no mecanismo psicológico do tilt, do ego, do impostor e do flow: o artigo [A psicologia do jogador de xadrez](/pt-br/blog/psicologia-do-jogador-de-xadrez/) dedica uma seção inteira ao tema.
+Não é preciso dizer que “a amígdala assume o volante”. Não temos aqui nenhuma medição que permita comparar o cortisol de uma sessão de blitz ao de um primeiro salto de paraquedas. Essa comparação não deve servir como evidência médica.
 
-## Você está mesmo na zona vermelha? (autoteste sem culpa)
+O sinal prático é uma mudança de comportamento: acelerar sem pensar, insultar o adversário, adiar novamente a hora de dormir ou continuar apenas para recuperar pontos. Uma pausa oferece tempo para se afastar da situação; não garante uma vitória na volta e não substitui apoio quando as dificuldades persistem.
 
-A dependência não é "X horas" no contador. É a relação com o jogo. Faça a si mesmo estas perguntas sem se julgar, só para ver:
+![Exemplo de espiral de frustração e novas partidas após uma derrota; o esquema não mede cortisol nem atividade de uma região cerebral.](/images/pt-br/echecs-addiction-03-tilt-spiral.svg)
 
-1. Você joga mesmo quando não está com vontade nenhuma?
-2. Você falha com obrigações (aula, trabalho, sono) por causa do xadrez?
-3. Você fica irritado quando não pode separar uma hora pra jogar?
-4. Você já tentou reduzir e não conseguiu?
-5. Você joga sobretudo para acalmar uma tensão, e não pelo prazer?
+## Fazer um balanço sem se atribuir um diagnóstico
 
-**Três "sim" ou mais** → o que você lê aqui te diz respeito diretamente. Não é um rótulo vergonhoso: é um sinal para ajustar os limites e, talvez, conversar com um profissional.
+Estas são perguntas para reflexão, **não um teste de triagem validado**:
 
-Os critérios do [DSM-5](https://pt.wikipedia.org/wiki/DSM-5) ([APA](https://pt.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Americana_de_Psiquiatria)) e da CID-11 convergem na ideia: perda de controle, prioridade ao jogo, **continuação apesar das consequências**. Mentiras sobre o tempo gasto, sono sacrificado, irritabilidade na abstinência: alertas.
+1. Você joga regularmente por mais tempo do que pretendia?
+2. O sono, os estudos, o trabalho ou os relacionamentos são prejudicados?
+3. Suas tentativas de reduzir falham repetidamente?
+4. Você continua apesar de consequências que identifica claramente?
+5. O xadrez se tornou sua única forma de aliviar uma tensão?
 
-**Perfis mais vulneráveis**: [Daria Kuss](https://www.dariakuss.com) ([Nottingham Trent](https://en.wikipedia.org/wiki/Nottingham_Trent_University)) mostra como ansiedade, depressão ou [TDAH](https://pt.wikipedia.org/wiki/Transtorno_do_d%C3%A9ficit_de_aten%C3%A7%C3%A3o_com_hiperatividade) podem empurrar para a hiperestimulação das cadências mais curtas do online; não é "fraqueza", é contexto.
+Não existe a regra “três respostas sim = dependência”. Uma dificuldade importante pode justificar uma consulta sem atingir uma pontuação arbitrária. Por outro lado, reconhecer-se em uma pergunta não basta para estabelecer um transtorno.
 
-## Contexto em números: você não está inventando um problema "pessoal"
+Para preparar uma conversa com um profissional, registre situações concretas: horário de início e fim, limite planejado, sono, compromissos perdidos e estado antes e depois. Um médico ou profissional de saúde mental poderá avaliar a situação como um todo, incluindo eventuais dificuldades associadas. **O objetivo é receber apoio adequado, não um rótulo.**
 
-Depois de *O Gambito da Rainha* (2020), o Chess.com divulgou uma explosão de cadastros frequentemente citada em torno de **+200%** em 2020. Tradução: milhões de novas contas, muitas sem cultura de jogo lento, indo direto para o **Bullet** ou cadências curtas, ou seja, para o ciclo mais nervoso.
+## Os números disponíveis não fornecem uma taxa de dependência de xadrez
 
-Os estudos nacionais sobre o *gaming disorder* dão faixas muito variáveis (ferramentas, países, definições). O importante não é uma porcentagem "mágica" universal: é que o uso problemático existe, é medido na literatura, e a OMS deu um enquadramento clínico. Você não é louco nem está sozinho diante da máquina.
+Um aumento de inscrições depois de uma série de televisão ou o número de contas de uma plataforma não mede uma doença. Uma conta não é necessariamente uma pessoa ativa; uma pessoa ativa não tem necessariamente um uso problemático.
 
-O [ICC](https://en.wikipedia.org/wiki/Internet_Chess_Club) e as plataformas começaram a criar ferramentas de moderação; a [FIDE](https://pt.wikipedia.org/wiki/Federa%C3%A7%C3%A3o_Internacional_de_Xadrez) ainda tem dificuldade de estruturar a prevenção na internet: o terreno é real, e cada jogador fica um pouco sozinho diante dos próprios sinais de alarme.
+Pesquisas sobre videogames usam populações e instrumentos diferentes. Seus resultados não podem ser apresentados como a porcentagem de jogadores de xadrez com dependência. As fontes deste artigo não fornecem uma estimativa específica desse tipo.
 
-## Plano de saída em três etapas: conselhos concretos, hoje
+Essa limitação não torna sua experiência imaginária. Para decidir se deve buscar apoio, as consequências que você observa importam mais do que um número impressionante sobre a popularidade do jogo.
 
-### Etapa 1: Cortar o Bullet e as cadências curtas (sem largar o xadrez)
+## Três ajustes para experimentar, sem apresentá-los como tratamento
 
-Não é "parar de jogar xadrez": é desacelerar o formato. Passe para **10+0 / 15+10** no mínimo durante uma fase de desintoxicação. Por exemplo, duas partidas de 15+10 por dia, ponto-final. Seu cérebro precisa de tempo para pensar, não só para reagir: é aí que o tilt perde parte do combustível.
+### Etapa 1: escolher um ritmo compatível com sua vida
 
-### Etapa 2: Dessacralizar o Elo
+Se as revanches rápidas prolongam suas sessões, tente uma atividade que as limite: uma partida marcada, uma análise, um problema no papel ou um encontro no clube. Um ritmo mais lento pode mudar a experiência, mas também pode alongar a sessão.
 
-Uma semana sem ranqueada, ou sem olhar o gráfico: recoloque a motivação intrínseca no centro. [Deci](https://en.wikipedia.org/wiki/Edward_L._Deci) & [Ryan](https://en.wikipedia.org/wiki/Richard_M._Ryan) ([Rochester](https://en.wikipedia.org/wiki/University_of_Rochester)), [teoria da autodeterminação](https://pt.wikipedia.org/wiki/Teoria_da_autodetermina%C3%A7%C3%A3o): quando o extrínseco (o número) devora o intrínseco (a beleza do lance), espreita a nova dependência do placar.
+Escolha primeiro um horário que respeite seus compromissos e seu sono. Não existe aqui um “mínimo de 10+0” nem uma quantidade diária prescrita para tratar dependência. Se você não consegue respeitar esse limite, isso merece uma conversa, não deve ser vivido como uma falha moral.
 
-### Etapa 3: A regra das três partidas
+### Etapa 2: recolocar o rating no seu lugar
 
-**No máximo três partidas por sessão**, ganhando ou perdendo. Se der tilt, você para. Isso é mais forte que a força de vontade do "eu prometo": é uma regra de design.
+Uma sessão sem rating ou um objetivo de aprendizagem pode ajudar a perceber o que você aprecia além da pontuação. Observe o que muda sem prometer a si mesmo que uma semana será suficiente.
 
-**Ambiente** ([ciências do comportamento](https://en.wikipedia.org/wiki/Behavioral_science)): nada de xadrez na cama; apps de bloqueio ([Cold Turkey](https://getcoldturkey.com), [Freedom](https://freedom.to)); se persistir → um profissional. No Brasil, o [CAPS](https://pt.wikipedia.org/wiki/Centro_de_Aten%C3%A7%C3%A3o_Psicossocial) da rede pública ou o [CVV](https://www.cvv.org.br) (apoio emocional, 188) são bons pontos de partida.
+A [teoria da autodeterminação de Ryan e Deci](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf) distingue formas de motivação e examina autonomia, competência e relações. Esse quadro ajuda a refletir sobre a prática; não demonstra que esconder um gráfico trata dependência de xadrez.
 
-## Além dos 64 quadrados: o que o jogo revela
+### Etapa 3: decidir o fim antes de começar
 
-A dependência do xadrez raramente é "só" xadrez. Muitas vezes é uma fuga, uma necessidade de controle, ou uma relação torta com a derrota: o tabuleiro amplifica o que já está rolando no mundo interior.
+Você pode definir um horário para encerrar, prever uma pausa ou combinar um limite com alguém de confiança. “No máximo três partidas” é um exemplo de regra pessoal, **não um limiar clínico nem um método validado de abstinência**. Se a própria regra se tornar uma fonte de tensão, reveja-a com apoio.
 
-*O tabuleiro amplifica quem você é. Se você foge de alguma coisa na vida, pode fugir dela também nos 64 quadrados.*
+![Três ideias de organização: adaptar o ritmo, relativizar o rating e planejar o fim da sessão; elas não constituem um tratamento validado.](/images/pt-br/echecs-addiction-04-plan-sortie.svg)
 
-## Voltar a ser jogador: jogar porque se quer, não porque não dá pra parar
+Reduzir notificações e deixar o celular longe da cama pode facilitar o respeito aos limites. Em caso de perda de controle persistente, sofrimento ou prejuízo importante, procure um profissional de saúde. Na França, a [associação Addictions France](https://addictions-france.org/) também apresenta possibilidades de acompanhamento. Menores de idade podem conversar com um adulto de confiança ou um profissional de saúde da escola.
 
-O xadrez é magnífico. Merece mais do que ser uma muleta ou um castigo.
+## Além das 64 casas: entender o que o jogo oferece
 
-**Voltar a ser jogador** é fácil de dizer: jogue quando tiver vontade, não quando não conseguir se segurar. A linha vermelha não é um número de horas: é a perda de controle e os danos reais.
+Para algumas pessoas, o jogo oferece vínculos; para outras, competição, curiosidade ou uma pausa. Não existe uma única causa psicológica por trás de todos os usos difíceis. Procurar automaticamente uma “fuga” ou um defeito de caráter pode afastar a atenção da situação real.
 
-O verdadeiro "mestre", às vezes, é aquele que fecha o app e reencontra o sorriso fora do ranking.
+Uma pergunta útil é: o que essa atividade me oferece, e quais outras formas de atender a essa necessidade continuam disponíveis? Você pode amar profundamente o xadrez e precisar mudar a maneira como ele ocupa seu dia.
 
-**Depois da leitura:** se o ciclo do *"só mais uma"* fala com você, programe um **alarme antes** de abrir a plataforma **e** uma sessão semanal **sem tela** (um problema no livro ou uma partida no clube) durante quatro semanas para medir o ganho de sono.
+## Recuperar a liberdade de jogar e de parar
+
+O objetivo não é merecer o título de “jogador de verdade” por controlar sozinho todos os hábitos. É recuperar uma prática compatível com o resto da vida, com apoio se necessário.
+
+**Depois da leitura:** escolha uma mudança observável e registre o que realmente acontece. O sono e o respeito ao horário planejado são referências mais úteis do que uma promessa de “reiniciar a dopamina”. Se as consequências já forem importantes, peça ajuda sem esperar o fim de uma experiência pessoal.
 
 ### Fontes e referências
 
-- **Brand, M., et al.** - [*Gaming Disorder Is a Disorder due to Addictive Behaviors*](https://link.springer.com/article/10.1007/s40429-019-00258-y) - *Current Addiction Reports* (mecanismos neurobiológicos da dependência de jogos e o fenômeno do "craving").
-- **Imataka, G., Izumi, S., Miyamoto, Y. & Maehashi, A.** - [*Gaming Disorders: Navigating the Fine Line between Entertainment and Addiction*](https://www.mdpi.com/2077-0383/13/17/5122) - *Journal of Clinical Medicine*, 2024.
-- **Kuss, D.J. & Griffiths, M.D.** - [*Internet Gaming Addiction: A Systematic Review of Empirical Research*](https://www.mdpi.com/1660-4601/9/10/3367) - *International Journal of Environmental Research and Public Health* (perfis vulneráveis e dependência digital).
-- **Deci, E.L. & Ryan, R.M.** - [*Self-Determination Theory and the Facilitation of Intrinsic Motivation*](https://doi.org/10.1037/0003-066X.55.1.68) - *American Psychologist* (distinção entre motivação intrínseca e extrínseca).
-- **Organização Mundial da Saúde (OMS)** - [*CID-11: Gaming Disorder*](https://www.who.int/news/item/25-09-2018-who-releases-new-international-classification-of-diseases-(icd-11)) (reconhecimento oficial do transtorno de jogo em 2019).
+- **OMS**, *Gaming disorder*, perguntas e respostas sobre a CID-11: definição, prejuízos e duração habitual. [Página institucional](https://www.who.int/standards/classifications/frequently-asked-questions/gaming-disorder).
+- **American Psychiatric Association**, *Internet Gaming*: status do IGD no DSM-5-TR e distinção entre envolvimento e transtorno. [Página institucional](https://www.psychiatry.org/patients-families/internet-gaming).
+- **Brand, M. et al. (2019)**, *The Interaction of Person-Affect-Cognition-Execution (I-PACE) model for addictive behaviors: Update…*, *Neuroscience & Biobehavioral Reviews*, 104, 1-10. Quadro teórico, não estudo clínico sobre xadrez. [Registro e resumo](https://pubmed.ncbi.nlm.nih.gov/31247240/).
+- **Schultz, W., Dayan, P. e Montague, P. R. (1997)**, *A Neural Substrate of Prediction and Reward*, *Science*, 275, 1593-1599. [Texto dos autores](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf).
+- **Ryan, R. M. e Deci, E. L. (2000)**, *Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being*, *American Psychologist*, 55, 68-78. [Texto dos autores](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf).

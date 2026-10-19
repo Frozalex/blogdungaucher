@@ -1,8 +1,6 @@
 ---
 title: "Sujet Grand Oral NSI : Comment un programme informatique peut-il jouer aux échecs ?"
-excerpt: >-
-  Sujet entièrement rédigé pour le Grand Oral spécialité NSI : récursivité, arbre de décision, fonction d'évaluation
-  et minimax expliqués en 10 minutes prêtes à réciter, code Python commenté inclus.
+excerpt: "Une fiche de révision minimax avec un exemple Python à deux niveaux, la perspective des scores et les limites de l’évaluation, avec renvoi au guide NSI."
 publishDate: "2026-05-08"
 category: grand-oral
 featured: false

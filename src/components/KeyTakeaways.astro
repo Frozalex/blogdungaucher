@@ -1,5 +1,5 @@
 ---
-import { renderInlineMath } from "../utils/inline-math";
+import { renderFrontmatterText } from "../utils/frontmatter-text";
 
 interface Props {
   items: string[];
@@ -21,7 +21,7 @@ const { items, accentColor } = Astro.props;
   </header>
   <ul class="kt-list">
     {items.map((item) => (
-      <li class="kt-item" set:html={renderInlineMath(item)} />
+      <li class="kt-item" set:html={renderFrontmatterText(item)} />
     ))}
   </ul>
 </aside>

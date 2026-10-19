@@ -866,6 +866,12 @@ main[tabindex="-1"]:focus {
 }
 
 /* ─── SELECTION ───────────────────────────────────────────────── */
+.article-body pre {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
 ::selection { background : rgba(61, 139, 55, 0.18); }
 
 /* ============================================================

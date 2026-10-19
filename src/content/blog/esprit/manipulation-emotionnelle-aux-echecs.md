@@ -1,9 +1,6 @@
 ---
 title: "La manipulation émotionnelle aux échecs : ce qui se joue pendant la partie"
-excerpt: >-
-  Une proposition de nulle au bon moment, un coup joué en deux secondes, un soupir. Aucun de ces gestes
-  ne touche à la position. Tous visent la ressource qui te sert à la calculer. Inventaire de ce qui
-  s'exerce pendant la partie, et de ce qui n'est qu'une légende.
+excerpt: "Un soupir, un regard ou une proposition de nulle peuvent distraire. Distinguer le comportement observable, les intentions supposées et les recours prévus par les règles."
 publishDate: "2026-10-13"
 category: esprit
 featured: false
@@ -20,9 +17,7 @@ tags:
   - concentration
   - échecs
 seoTitle: "Manipulation émotionnelle aux échecs : le jeu hors de l'échiquier"
-seoDescription: >-
-  Proposition de nulle piégeuse, tempo, langage corporel, trash talk : ce que la manipulation
-  émotionnelle vise réellement pendant une partie d'échecs, et comment s'en protéger.
+seoDescription: "Distractions, propositions de nulle et langage corporel aux échecs : réagir aux comportements observables sans prétendre connaître les intentions adverses."
 faq:
   - question: "Les offres de nulle répétées sont-elles autorisées ?"
     answer: "Les offres déraisonnables peuvent enfreindre l'article 11.5. Les règles générales ne fixent pas un intervalle universel en nombre de coups."
@@ -32,6 +27,7 @@ heroImage:
   src: /images/blog/manipulation-emotionnelle-aux-echecs-hero.webp
   alt: Un fil tendu dévie latéralement un pendule sombre suspendu.
 ogImage: /images/og/manipulation-emotionnelle-aux-echecs-og.webp
+
 ---
 
 Un soupir, un regard appuyé, une proposition de nulle au mauvais moment : ce qui se passe autour de l'échiquier peut te distraire. La difficulté est de réagir à un comportement observable sans prétendre lire les intentions de ton adversaire.

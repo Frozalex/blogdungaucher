@@ -1,178 +1,61 @@
-﻿---
+---
 heroImageAlt: A wide cone of light narrowing into a thin beam at the back of an empty room.
-title: "Concentration in Chess: Training Attention Like a Muscle"
-excerpt: "Concentration is not a state that happens when you're lucky. It is a skill that degrades when neglected and improves when trained. What the neuroscience of attention says about concentration in chess, and how to concretely develop this ability."
-seoTitle: "Chess and Concentration: Train Your Attention to Play Better"
-seoDescription: "Train concentration for chess: sustained attention, control network, mindfulness and micro-breaks. What neuroscience says about attention at the board."
+title: "Concentration in Chess: Recovering Your Train of Thought"
+excerpt: "How to resume an analysis, limit distractions and adapt breaks without turning a training method into a neuroscience promise."
+seoTitle: "Concentration in Chess: Recovering Your Train of Thought"
+seoDescription: "Distractions, fatigue and micro-breaks in chess: notice lapses, return to a specific question and organise a session without promising general attention gains."
 enSlug: "chess-and-concentration"
-draft: false
 faq:
-  - question: "Why is it so hard to maintain concentration during a long game?"
-    answer: >-
-      Sustained attention is a limited resource: the prefrontal cortex, which manages it, consumes a lot of
-      glucose and neurotransmitters. After 90-120 minutes of intense cognitive effort, attention quality
-      begins to degrade measurably. Studies show an increase in detection errors and a decrease in processing
-      speed beyond that threshold. Classical games of 4-5 hours push well past this natural threshold: hence
-      the importance of attention management strategies.
-  - question: "Does chess practice improve concentration off the board?"
-    answer: >-
-      Studies show moderate transfer effects. Chess practice improves selective attention (capacity to filter
-      distractions) and sustained attention specifically in structured cognitive tasks similar to chess.
-      Transfer to very different tasks (attention in meetings, passive reading) is weaker. Mindfulness
-      meditation shows broader transfer effects on general attention.
-  - question: "Can people with ADHD develop concentration in chess?"
-    answer: >-
-      Yes, with the right adaptations. People with ADHD often have a hyperfocus capacity: in highly engaging
-      contexts (video games, stimulating activities), their attention can be exceptionally sustained. Chess,
-      with its mix of challenge and cognitive stimulation, can trigger that state. The difficulty is
-      generalization: concentration developed in chess doesn't automatically transfer to less engaging tasks.
-  - question: "What to do when the mind wanders during a game?"
-    answer: >-
-      A 3-step technique: (1) Notice the drift without judgment ('I just thought about something else'). (2)
-      Sensory anchoring: lay both hands flat on the table, feel the texture, take a full breath. (3) Return
-      to the position with a simple question: 'What's the main feature of this position?' This active return
-      to the base question is more effective than 'forcing' concentration.
-  - question: "Do blitz players have better concentration than classical players?"
-    answer: >-
-      No: they have a different form of attention. Blitz develops rapid attention and intuitive
-      decision-making. Classical games develop sustained attention and planned reflection. Both are attention
-      skills, but distinct. Studies on players who practice blitz exclusively show degradation in their
-      capacity to maintain deep reflection on complex positions: precisely because that sustained-attention
-      muscle isn't exercised.
+  - question: "How often should I take a break?"
+    answer: "There is no interval validated for every player. Adapt breaks to the task, how you feel and the available time."
+  - question: "Does blitz damage concentration?"
+    answer: "The sources retained here do not establish such a general effect. Instead, observe what you work on and what you neglect in your own practice."
+  - question: "What should I do when I lose the thread?"
+    answer: "Return to a specific question about the position, then resume comparing candidate moves. Try this routine in training before changing it."
 ---
 
-There is an illusion about concentration: we think we either have it or we don't, that it happens when conditions are good and disappears when they aren't. This view is comfortable because it absolves us of all responsibility.
+You reread the same variation and no longer know what you were looking for. Then you check the clock: several minutes have passed. The difficulty is not always calculating more. Sometimes it is finding a clear question again.
 
-It is also false.
+Concentration depends on the task, fatigue and distractions. The muscle metaphor can help organise training, but it does not describe a brain reservoir that empties at a precise time.
 
-Concentration is a cognitive skill, with identified neural mechanisms, a documented development trajectory, and training practices that work. Like a muscle, it strengthens with targeted exercise and atrophies with neglect.
+## Noticing when you lose focus
 
-Chess is one of the best training grounds for sustained attention that exists. But only if you understand what you are training, and how.
+You can look for concrete signs: repeatedly revisiting the same line, forgetting the opponent’s threat, looking at ratings instead of the position. None is enough to diagnose an attention disorder. They mainly indicate that a change of method is worth trying.
 
-## Types of Attention: A Map to Navigate
+There is no universal threshold of 90 to 120 minutes after which the cortex runs out of glucose or neurotransmitters. A long game can be demanding without every mistake coming from fatigue.
 
-Neuroscience distinguishes several forms of attention, each relevant at different moments of a chess game:
+## Returning to a useful question
 
-**Selective attention.** The ability to filter out irrelevant information and focus on what matters. In chess: ignoring pieces that play no role in the current variation, filtering out room noise, staying on the main threat rather than getting distracted by peripheral ideas.
+When you notice a distraction, reformulate the decision you need to make: which threat needs addressing? Which candidate moves still need comparing? What has changed since the last move?
 
-**Sustained attention (vigilance).** The ability to maintain a high level of cognitive processing over an extended duration. In chess: staying as alert and precise on move 50 as on move 15. This is the most difficult aspect to maintain, and the most likely to degrade in the late game.
+A short question can provide a starting point for resuming. If you have already calculated a line, recall its conclusion before starting over. The aim is to avoid a loop that produces no new information.
 
-**Divided attention.** The ability to process multiple sources of information simultaneously. In chess: monitoring remaining time, immediate threats, and long-term plans all at once. Paradoxically, expert players *seem* to divide their attention efficiently: in reality, they "switch" rapidly between distinct foci of attention, not simultaneously.
+You can test this routine in training on a few positions, then note after the session whether it helped. This review of your practice does not measure a general gain in attention, but it can show where you lose the thread.
 
-**Executive attention.** The ability to manage conflicts between competing responses: inhibiting the obvious "wrong" answer to look for the right one. In chess: not playing the first move that looks good, but checking whether there is a refutation.
+## Taking a break without expecting a miracle
 
-## The Neuroscience of Chess Concentration
+Albulescu and colleagues (2022) bring together 22 samples concerning micro-breaks. Their meta-analysis finds favourable effects on perceived vigour and fatigue. The overall performance effect is not statistically significant. It therefore does not establish that taking a break every twenty or thirty minutes prevents chess mistakes.
 
-Brain imaging studies on chess players illuminate the mechanisms of expert concentration.
+In a long game, you can use an appropriate moment to relax your shoulders or briefly look away. If you leave the board, follow tournament rules and keep the clock in mind. A badly timed break can also cost time.
 
-### The Attention Control Network
+For organising rest between sessions, see [the benefits of breaks](/en/blog/benefits-of-breaks-in-chess/). Here, the main issue is resuming the reasoning where it was interrupted.
 
-The **attention control network** primarily involves the dorsolateral prefrontal cortex (DLPFC) and the posterior parietal cortex. The DLPFC manages active representations in working memory and inhibits automatic responses. The parietal cortex guides the spatial deployment of attention.
+## Building a session that lets you observe your attention
 
-Studies comparing expert and novice players on chess problem-solving tasks (Atherton et al., 2003; Guida et al., 2013) show more efficient and targeted activation of this network in experts. Their attention is "surgical": it deploys precisely on relevant areas without parasitic activation.
+Choose an identifiable task: analysing an endgame, solving an exercise, reviewing a game. Remove notifications and tabs that do not serve it. Plan an end to the session rather than extending it through inertia.
 
-This efficiency is not innate. It develops with practice: thousands of games have trained the network to recognize which information deserves attention and which can be ignored.
+Duration can vary. Start with a block you can complete, then adjust it based on your experience. There is no validated progression requiring twenty-five, then thirty-five, then fifty minutes to train concentration in chess.
 
-### The Default Mode Network and Mind Wandering
+Record an observable result: did you find candidates, check defences or understand why your solution fails? Spending a long time at the board does not answer those questions.
 
-One of the most counterintuitive discoveries in neuroscience over the past 20 years is the **Default Mode Network (DMN)**. This network, involving the medial prefrontal cortex, the posterior cingulate cortex, and the lateral parietal cortices, activates when the brain is "at rest": daydreaming, self-referential thoughts, projections into the future or the past.
+## Do not confuse engagement with general benefit
 
-The DMN and attentional networks are in competition: when one is active, the other tends to deactivate. Concentrating on a difficult task suppresses the DMN; releasing attention reactivates the DMN and produces "mind wandering."
+A deeply absorbing session does not prove that your attention is improving in every activity. Likewise, playing blitz does not, by itself, establish deterioration in deep thinking.
 
-[Matthew Killingsworth](https://killingsworth.me) and [Daniel Gilbert](https://wjh.harvard.edu/~dtg/gilbert.htm) (Harvard) measured in 2010, in a landmark study (*Science*) using an iPhone app with 2,250 adults, that the mind wanders **46.9% of waking time**, regardless of the current activity. And when the mind wanders, people are systematically less happy than when in focused attention.
+If your difficulties persist across several contexts, do not explain them only as a lack of training. You can adapt your practice without expecting it to replace an assessment of those difficulties.
 
-For chess players, the implication is direct: **almost half the playing time, your brain naturally tends to drift**. Concentration is not a natural state: it is a state actively maintained against the brain's spontaneous tendency.
-
-## Sustained Attention and Its Natural Limits
-
-Research on vigilance (maintaining sustained attention over a prolonged period) has a long history in psychology, initially linked to military needs (radar surveillance for hours).
-
-The results are unambiguous: **vigilance degrades over time**. Classic studies by [Mackworth (1948)](https://psycnet.apa.org/record/1948-06021-001) on radar surveillance show significant degradation after 30 minutes for low-engagement tasks. For highly engaging cognitive tasks (like chess), the threshold is higher: about **90-120 minutes** before measurable degradation.
-
-Beyond this threshold, attention quality does not decline catastrophically and suddenly: it degrades progressively. The symptoms: more parasitic thoughts, diminished vigilance for tactical details, increased processing time per move, tendency to underestimate the opponent's threats.
-
-These data explain a phenomenon well known to tournament players: errors tend to concentrate **in the last quarter** of long games: not because players "know" less theory at that point, but because their sustained attention is depleted.
-
-## Reducing Mind Wandering: Mindfulness Applied to Chess
-
-**Mindfulness** meditation is the most documented intervention for reducing mind wandering and improving sustained attention.
-
-[Sara Lazar](https://www.nmr.mgh.harvard.edu/~lazar/Site/about.html) and colleagues (2005, *NeuroReport*) showed that regular meditators have a thicker insular and sensory cortex: regions associated with present-moment awareness. [Richard Davidson](https://richardjdavidson.com) (University of Wisconsin) showed that 8 weeks of MBSR (Mindfulness-Based Stress Reduction) meditation increase left prefrontal cortex activation, associated with positive attention and emotional regulation.
-
-Applied to chess, mindfulness translates into two distinct practices:
-
-**Outside the game:** 10-15 minutes of focused attention meditation per day (concentration on breathing, returning attention at each dispersion). This practice strengthens the attentional "muscle" in general.
-
-**During the game:** Recognizing moments of dispersion ("I just thought about what I'm going to eat afterward") and actively returning to the position. The rule: don't resist the dispersion, recognize it and return. Resisting creates tension; recognizing and returning creates fluidity.
-
-## Micro-Breaks: Managing Attention Over 4-5 Hours
-
-For long classical games, it is impossible to maintain maximum attention for 4-5 hours. The solution is not to "hold on" at all costs: it is to **actively manage the alternation between concentration and recovery**.
-
-Micro-breaks of 30-60 seconds, practiced regularly (every 20-30 minutes), slow down the degradation of sustained attention without disrupting the continuity of thought.
-
-Protocol for a micro-break during a game:
-1. Place hands on knees, straighten up slightly
-2. Look into the distance (horizon or neutral wall), not at the board
-3. 3-5 deep breaths (4-second inhale, 6-second exhale)
-4. Return to the board with the question: "What is the main characteristic of this position right now?"
-
-This practice is similar to what some grandmasters do: moments where they stand up, walk briefly, then return. This is not distraction: it is deliberate attention management.
-
-## Training Concentration: Progressive Protocol
-
-Like any muscle, sustained attention is trained progressively: not by trying to concentrate "as long as possible" from the start.
-
-**Concentration block technique** (inspired by Francesco Cirillo's Pomodoro technique):
-
-- **Weeks 1-2:** 25-minute sessions of tactical puzzles, 100% focused, with 5-minute breaks between blocks. 2-3 blocks per session.
-- **Weeks 3-4:** Extend blocks to 35-40 minutes. Maintain breaks.
-- **Month 2:** 50-minute blocks. Introduce full games with conscious micro-break management.
-- **Month 3+:** Classical games with micro-break protocol every 30 minutes.
-
-The goal is not to eliminate breaks: it is to progressively increase the duration and quality of concentration blocks.
-
-## What Sabotages Concentration Without You Realizing
-
-**The digital environment.** Regular phone-checking between training sessions fragments background attention. Even when the phone is put away during a game, the brain remains in "scanning" mode that fragments sustained attention. Studies by [Larry Rosen](https://drlarryrosen.com) (California State University) show that the mere visible presence of a smartphone reduces working memory.
-
-**Decision fatigue.** [Roy Baumeister](https://psy.fsu.edu/faculty/baumeister/baumfram.dp.html) documented "ego depletion": making many decisions (even trivial ones) reduces the quality of subsequent decisions. Before an important game, avoid decision overload: restaurant choices, planning discussions, administrative choices, to preserve your attentional resources.
-
-**Insufficient sleep.** Sustained attention is one of the first cognitive capacities affected by sleep deprivation. Playing a classical game after a night of less than 6 hours of sleep is one of the surest ways to produce late-game blunders.
-
-**Overheating.** Studies on cognition and temperature (Simonsohn, 2014) show that a room that is too warm (>25°C / 77°F) degrades sustained attention. Players who control their physical environment (room temperature, water available, ventilation breaks) make fewer late-game errors.
-
-## How Chess Helps You Focus Better: Practical Application
-
-Chess is one of the best games available to actively train your ability to focus. Every time you sit down to play, you practice directing and sustaining mental attention in a way that few other activities can match. But to truly improve your concentration through chess, you need to understand how to play deliberately rather than just playing more games.
-
-**Why chess players need to think differently about focus.** When you play chess, every good move requires you to think through multiple candidate lines, feel the weight of the position, and try different approaches mentally before committing. This deliberate thinking process is exactly what helps build better concentration. The mistake most chess players make is to play too fast, not giving themselves time to truly focus on the position at hand.
-
-**Try to focus on process, not result.** Good concentration in chess games comes from learning to stay in the present position rather than thinking about the game outcome. Players who try to win too quickly often miss better moves because their focus drifts from what the board is actually showing. If you want to improve your chess concentration, learn to slow down and think about each position as if it were the most important of the game.
-
-**Develop a pre-move mental routine.** Before playing any move, try a brief mental check: "What does my opponent threaten? What is the best way to respond? Am I able to calculate this line fully?" This simple routine helps focus attention precisely where it needs to go. Over time, this mental habit becomes automatic and your ability to concentrate during games will improve significantly.
-
-**Chess concentration and general focus.** One of the most documented benefits of regular chess play is that the mental discipline transfers to other activities. Chess players who practice this kind of focused attention during games often feel more able to concentrate in work and study contexts. The game teaches you to recognize when your mind wanders and to actively return focus to the task at hand, a skill with value far beyond the chess board.
-
-**How to help yourself concentrate better during a long game.** If you feel your concentration fading during a long game, try these approaches: step away from the board briefly, take a few deep breaths, and return with a fresh perspective. Ask yourself what the key feature of the current position is. This active mental reset helps restore focus better than forcing yourself to keep staring at the board. Many strong chess players develop personal pre-move rituals specifically because these rituals help anchor attention when mental fatigue sets in.
-
-**Join a chess club to improve faster.** Playing against other chess players in a club setting helps concentration develop faster than playing alone online. The social commitment of a real game, the presence of another player across the board, and the formality of a chess club game all help create conditions where deep focus comes more naturally. Many chess players find that club games help them concentrate better than online games precisely because the environment demands it.
-
-**The good news about concentration and chess.** Concentration is not a fixed trait. Every chess game you play with deliberate attention is a training session for your focus. If you try to play better chess by thinking more carefully, you are simultaneously developing a mental skill that improves with practice. The way chess players think, deeply, patiently, calmly, is a way of focusing that anyone can learn and develop.
+The best routine for you makes your work clearer and remains practical. Start with one change, observe what it adds, then adjust.
 
 ## Sources
 
-- Killingsworth, M. A., & Gilbert, D. T. (2010). A wandering mind is an unhappy mind. *Science*, 330(6006), 932.
-- Lazar, S. W., et al. (2005). Meditation experience is associated with increased cortical thickness. *NeuroReport*, 16(17), 1893-1897.
-- Davidson, R. J., et al. (2003). Alterations in brain and immune function produced by mindfulness meditation. *Psychosomatic Medicine*, 65(4), 564-570.
-- Mackworth, N. H. (1948). The breakdown of vigilance during prolonged visual search. *Quarterly Journal of Experimental Psychology*, 1(1), 6-21.
-- Atherton, M., et al. (2003). A functional MRI study of high-level cognition. *Cognitive Brain Research*, 16(1), 26-31.
-- Baumeister, R. F., et al. (1998). Ego depletion: Is the active self a limited resource? *Journal of Personality and Social Psychology*, 74(5), 1252-1265.
-
-## Key Takeaways
-
-- Sustained attention **naturally degrades** after 90-120 minutes of intense effort: long games require active management
-- Expert players activate the **attention control network** (prefrontal + parietal cortex) more efficiently, even off the board
-- The mind wanders **46.9% of waking time** on average (Killingsworth & Gilbert, 2010): in chess, reducing this percentage is a trainable skill
-- **Micro-breaks** (30-60 seconds, looking into the distance) during long games slow degradation without disrupting continuity
-- Training in **25-50 minute blocks** (adapted Pomodoro technique) develops sustained attention more effectively than long uninterrupted sessions
+- Albulescu, P., Macsinga, I., Rusu, A., Sulea, C., Bodnaru, A. and Tulbure, B. T. (2022), “Give me a break! A systematic review and meta-analysis on the efficacy of micro-breaks for increasing well-being and performance”, *PLOS ONE*, 17(8), e0272460. [Full text](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0272460).

@@ -72,15 +72,15 @@ $$
 N(b,d) \approx b^d
 $$
 
-En milieu de partie, \(b\) tourne souvent autour de 30-40. Si tu prends \(b=35\), alors à \(d=6\) c'est déjà énorme, à \(d=10\) c'est astronomique, à \(d=16\) c'est une autre planète. Le cerveau humain n'a pas été conçu pour parcourir des millions de branches : il a été conçu pour survivre, reconnaître des motifs, économiser de l'énergie, et c'est une excellente nouvelle, parce que c'est exactement ce que font aussi les moteurs modernes, en combinant algorithme et heuristique.
+Dans un modèle simplifié, prends un facteur de branchement constant \(b=35\). Le nombre de feuilles croît alors comme \(b^d\) : augmenter la profondeur coûte rapidement cher. Dans une partie réelle, le nombre de coups légaux varie avec la position. La sélection humaine de candidats et la recherche d’un moteur peuvent être comparées comme analogie pratique ; elles ne constituent pas pour autant le même mécanisme.
 
 Pour endiguer cette explosion, il n'y a pas de magie : il faut couper, estimer, ordonner les coups ; autant de méthodes que cet article détaille ensuite.
 
-![Arbre d'exploration : explosion combinatoire b^d dans ce jeu](/images/echecs-ia-03-arbre.svg)
+![Croissance d’un arbre : un modèle à préciser](/images/echecs-ia-03-arbre.svg)
 
 ## Le nombre de Shannon : un ordre de grandeur
 
-[Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon), professeur au [MIT](https://fr.wikipedia.org/wiki/Massachusetts_Institute_of_Technology) et père de la [théorie de l'information](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_l%27information), a posé au milieu du XXe siècle une question de mathématiques : combien de parties d'échecs sont possibles ? Son estimation, devenue célèbre, aboutit à \(10^{120}\), le [nombre de Shannon](https://fr.wikipedia.org/wiki/Nombre_de_Shannon). Attention : ce chiffre n'est pas une vérité gravée dans le marbre ; c'est une mesure pour saisir l'échelle, pas une liste exhaustive de configurations atteignables. Ce qui rend ça fascinant, c'est que cette impossibilité ne vient pas d'un détail technique mais d'une loi profonde : l'espace des possibles est si vaste que "tout explorer" est hors de portée, même pour les algorithmes les plus avancés.
+[Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) propose en 1950 un ordre de grandeur de \(10^{120}\) sous les hypothèses de son modèle, devenu le [nombre de Shannon](https://fr.wikipedia.org/wiki/Nombre_de_Shannon). Il ne s’agit pas d’un dénombrement exact des parties légales ni des configurations atteignables. Cette estimation illustre le coût d’une exploration exhaustive naïve ; elle ne prouve pas qu’aucune méthode différente ne pourra un jour résoudre le jeu.
 
 ![Ordre de grandeur 10^120, nombre de Shannon et information](/images/echecs-ia-04-shannon.svg)
 
@@ -93,11 +93,11 @@ Le tableau suivant résume la différence entre quelques jeux célèbres et les 
 | Jeu | Résolu ? | Commentaire rapide |
 | --- | --- | --- |
 | [Morpion](https://fr.wikipedia.org/wiki/Morpion) | Oui | Espace petit : stratégie optimale connue |
-| [Dames](https://fr.wikipedia.org/wiki/Dames) | Oui | Jeu parfait = nul, preuve massive par le calcul |
+| [Dames anglaises](https://fr.wikipedia.org/wiki/Dames_anglaises) | Faiblement résolues | Position initiale nulle sous jeu parfait ; ne concerne pas toutes les variantes |
 | **Échecs** | Non | Espace trop vaste ; aucune preuve complète d'issue |
 | [Go](https://fr.wikipedia.org/wiki/Go_%28jeu%29) | Partiellement exploré | IA ([AlphaGo](https://fr.wikipedia.org/wiki/AlphaGo)) a changé le niveau du débat |
 
-Une confusion fréquente : "Si ce n'est pas résolu, un moteur ne peut pas être sûr." C'est exact au sens formel, mais ce n'est pas le but. En usage réel, un moteur n'a pas besoin de résoudre la position initiale pour te battre : il doit jouer suffisamment proche de l'optimal dans les situations réelles. Le théorème qui garantit qu'une réponse *existe* (sans qu'on puisse la trouver) est analysé en détail dans [le paradoxe de Zermelo](/fr/blog/paradoxe-de-zermelo/).
+Ne pas connaître la valeur de la position initiale n’empêche pas des certitudes locales : un mat forcé démontré ou une table de finales applicable peut fournir un résultat exact dans son cadre. Une évaluation heuristique, en revanche, ne possède pas cette garantie. Un moteur peut donc être très performant sans résoudre le jeu entier. Cette différence est développée dans [le paradoxe de Zermelo](/fr/blog/paradoxe-de-zermelo/).
 
 ### EXPTIME-complet : attention à la généralisation
 
@@ -114,7 +114,7 @@ Tu peux résumer l'ossature des moteurs traditionnels (type [Stockfish](https://
 - évaluation : estimer qui est mieux sur le diagramme ;
 - optimisations : pour ne pas se noyer dans les branches.
 
-L'idée derrière [minimax](https://fr.wikipedia.org/wiki/Mini-max) est presque philosophique : toi, tu cherches à maximiser ton avantage ; ton adversaire cherche à minimiser ton avantage ; tu choisis le coup qui maximise le minimum garanti face au meilleur jeu adverse. La version ultra simplifiée ressemble à une récurrence sur les nœuds du graphe :
+L'idée derrière minimax est presque philosophique : toi, tu cherches à maximiser ton avantage ; ton adversaire cherche à minimiser ton avantage ; tu choisis le coup qui maximise le minimum garanti face au meilleur jeu adverse. La version ultra simplifiée ressemble à une récurrence sur les nœuds du graphe :
 
 $$
 f(x) = \max_{m \in M} \min_{r \in R} f(x_{m,r})
@@ -146,7 +146,7 @@ Même avec alpha-bêta, tu ne peux pas aller au bout de l'arbre : tu arrives sur
 
 Ce n'est pas qu'une addition naïve de points : les moteurs traditionnels combinent des heuristiques et des paramètres optimisés. Stockfish a annoncé en 2020 l'intégration de NNUE, une évaluation par réseau de neurones, tout en conservant une recherche alpha-bêta. Ces approches combinent donc recherche et apprentissage pour obtenir une évaluation corrélée au résultat final sans atteindre ce résultat final. Dans la vraie vie, c'est comme juger une position "prometteuse" sans calculer le mat en vingt-huit coups : tu sais reconnaître un schéma où l'initiative et la paire de fous "sentent bon", même si nulle ligne ne tient lieu de preuve complète. Le moteur formalise ce savoir technique et le fait sans fatigue, pour des milliers de joueurs. (L'article sur [la théorie du chaos aux échecs](/fr/blog/theorie-du-chaos-aux-echecs/) distingue l'analogie d'une instabilité tactique d'une preuve de chaos mathématique.)
 
-![Fonction d'évaluation heuristique sur l'échiquier](/images/echecs-ia-07-evaluation.svg)
+![Évaluer une position à une profondeur limitée](/images/echecs-ia-07-evaluation.svg)
 
 ## L'IA : quand la machine apprend à évaluer et à choisir, au lieu que tout soit écrit à la main
 
@@ -166,7 +166,7 @@ Le point spectaculaire de certaines approches, c'est l'auto-jeu : une machine s'
 
 Ce qui est fascinant, c'est qu'en partant d'un jeu aux règles strictes, tu peux faire émerger des préférences stratégiques sans les écrire en français ligne par ligne.
 
-![Réseau de neurones : IA moderne et exploration sur le plateau](/images/echecs-ia-08-reseau.svg)
+![Réseaux et recherche : des fonctions distinctes](/images/echecs-ia-08-reseau.svg)
 
 ## IBM face à Kasparov : un jour historique pour le logiciel (sans "résoudre" le jeu)
 
@@ -186,7 +186,7 @@ Pour un joueur de club, l'intuition à retenir est simple : tu navigues dans un 
 
 Les notions de [décidabilité](https://fr.wikipedia.org/wiki/D%C3%A9cidabilit%C3%A9) et de [complexité algorithmique](https://fr.wikipedia.org/wiki/Complexit%C3%A9_des_algorithmes) expliquent pourquoi "tout tester" n'est pas réaliste. Cette limite n'appauvrit pas le jeu : elle y mêle rigueur et intuition.
 
-![Modèles de conflit stratégique et équilibre](/images/echecs-ia-10-theorie.svg)
+![Le cadre mathématique des échecs](/images/echecs-ia-10-theorie.svg)
 
 ## "Impossible" ne veut pas dire "inutilisable" : la leçon au-delà du plateau
 
@@ -210,7 +210,7 @@ Le message le plus important n'est pas "l'IA est magique" : c'est que la puissan
 - [Psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/)
 - [Les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/)
 
-Les échecs sont "impossibles" si tu imagines une solution brute : tout explorer, tout prouver, tout résoudre d'un seul tenant. Ils deviennent "possibles" dès que tu acceptes la réalité : tu gagnes en sélectionnant, en évaluant et en élaguant. Ce n'est pas la quantité de coups calculés qui fait la force, c'est la qualité du tri. Un joueur lucide le sait déjà.
+L’exploration exhaustive naïve dépasse les ressources actuelles. La sélection, l’évaluation et l’élagage permettent pourtant de jouer à un très haut niveau avec un budget limité. Leur efficacité dépend de la position, des algorithmes et des ressources ; elle ne démontre ni une impossibilité mathématique de résoudre le jeu ni une équivalence avec le raisonnement humain.
 
 **Pour aller plus loin :** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/), [arXiv](https://arxiv.org/).
 

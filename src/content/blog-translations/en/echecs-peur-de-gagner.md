@@ -1,82 +1,56 @@
 ---
-title: "Fear of Winning in Chess: Unconscious Self-Sabotage at the Brink of Victory"
-excerpt: "You've had a winning position for 10 moves. Victory is within reach. And suddenly, without really understanding why, you play a strange move that ruins everything. This is not an accident. This is the fear of winning."
-seoTitle: "Fear of Winning in Chess: Why Players Sabotage Winning Positions"
-seoDescription: "The fear of winning in chess explained: psychological mechanisms of unconscious sabotage in winning positions. Prospect theory, patterns, and practical solutions."
+title: "Fear of Winning in Chess: Understanding a Missed Advantage"
+excerpt: "When you miss a favourable position, distinguish technique, time and perceived pressure before concluding that you are afraid to win."
+seoTitle: "Fear of Winning in Chess: Pressure, Technique and Mistakes"
+seoDescription: "Missing a favourable position does not prove unconscious sabotage. Examine calculation, time and perceived pressure before choosing an explanation."
 enSlug: "fear-of-winning-in-chess"
-draft: false
+faq:
+  - question: "Does losing an advantage prove a fear of winning?"
+    answer: "No. A technical difficulty, a missed defence or time trouble may explain the mistake. Perceived pressure deserves separate examination."
+  - question: "Does prospect theory demonstrate sabotage?"
+    answer: "No. Its use here is an analogy about reference points, not a measurement of brain mechanisms in the player."
 heroImageAlt: A pawn stopped before the end of a checkered path.
+
 ---
 
-The position is clearly winning. The engine would confirm it in a second. Your opponent is in time trouble, out of ideas, their position crumbling. And then, at the precise moment when victory materializes, something strange happens. You play a hesitant move, leave a counter-chance, unnecessarily complicate. The victory evaporates. And you don't quite know why you did that.
+You reached a favourable position and have just let the advantage slip. The idea of a “fear of winning” arrives quickly. Before adopting it, you still need to understand the move: an overlooked defence, an unfamiliar endgame or time trouble may be enough to explain the mistake.
 
-The fear of winning is one of the least discussed but most real psychological phenomena in competitive play. It exists. It affects players at all levels. And it has an internal logic that modern psychology explains clearly.
+You may also feel particular pressure when trying to finish. Recognising it does not require calling it unconscious sabotage.
 
-## The Fear of Winning: An Apparent Paradox
+## A winning position is not a win already secured
 
-At first glance, the fear of winning seems absurd. Everyone wants to win. That's the point of the game. How could someone be afraid of achieving their goal?
+An engine evaluation indicates the position’s possibilities under particular search conditions. It does not mean conversion is obvious to you. A large advantage may still require many precise choices.
 
-The answer lies in the distinction between **wanting the victory** and **wanting the consequences of the victory**. These two things are not identical. You can want to win and simultaneously dread what winning implies.
+When analysing, look for the defence you missed and the way to retain the advantage. If you did not know the technique, there is concrete work to do. A mistake in a favourable position does not prove you wanted to lose.
 
-The potentially anxiety-inducing consequences of a victory can include:
+## Which consequences of winning may weigh on you?
 
-**Increased expectations.** If you beat a strong player, others (and yourself) will expect more from you in the future. The pressure to confirm is higher. The perceived margin for error is narrower.
+You may worry about new expectations, a club rivalry or the need to confirm a good result. These are possibilities to examine if they match your experience, not causes to attribute from outside to every hesitant player.
 
-**Loss of the comfortable "challenger" status.** As a "challenger" or "underdog," defeats are acceptable and victories are pleasant surprises. As a "favorite" or "frontrunner," defeats become humiliations.
+Ask what you were thinking at the critical moment. If you mainly remember a variation, start there. If you were thinking about ratings or someone close to you reacting, you can discuss it without claiming that the thought alone caused the bad move.
 
-**The responsibility of victory.** Winning means owning the victory. Some personalities find success anxiety-inducing because it creates an obligation: justify the result, live up to it next time.
+## The reference point: a potentially useful hypothesis
 
-**Disruption of relational balance.** In a chess club, regularly beating the same people can create social tensions. Some players (unconsciously) self-regulate to maintain a comfortable relational equilibrium.
+Kahneman and Tversky’s prospect theory (1979) describes risky choices relative to a reference point. It invites the possibility that an expected win may already be treated as secured in your account, making its loss particularly painful.
 
-## Unconscious Sabotage in Winning Positions
+The publication does not establish a chess “winner’s anxiety” circuit. It measures neither your cortisol nor your amygdala, and does not demonstrate that losing an advantage is always twice as painful as an equivalent gain.
 
-Unconscious sabotage differs from ordinary technical blunders in its logic. In an ordinary blunder, the player simply didn't see the refutation. In sabotage linked to the fear of winning, something more subtle happens: the player plays a move that "opens counter-chances" in a position where it's unnecessary, or unnecessarily complicates in a position that was winning simply, or offers a draw in a clearly winning position.
+The framework can inspire a question about expectations; it does not replace observing what happened.
 
-These behaviors are not always conscious. The player may tell themselves stories: "I wasn't sure about the technique," "I wanted to play it safe," "The draw was reasonable." But an outside observer, or the engine, clearly sees that these explanations don't hold up.
+## Working on conversion
 
-### Winning Positions as a Specific Source of Anxiety
+Choose a favourable position from your own games. Replay it with a partner or an engine suited to your work. First look for the opponent’s counterplay: checks, threats against your king, activity and drawing chances.
 
-Performance psychology research has shown that winning positions can generate a specific form of anxiety different from the anxiety of defeat. This "winner's anxiety" is linked to the pressure to convert, to the risk of "wasting" a deserved victory.
+Then ask what makes the continuation easier or harder. A useful exchange may reduce problems; an automatic exchange may erase the advantage. Simplification therefore deserves checking.
 
-This anxiety activates the same neurological circuits as other forms of performance anxiety: amygdala activation, cortisol elevation, reduced prefrontal cortex performance. In other words: exactly the conditions that increase the risk of error.
+Return to the position with a realistic time constraint. This exercise may help you understand the technique and notice your hesitations. It does not guarantee eliminating anxiety or creating “desensitisation to winning”.
 
-The winning position paradoxically creates a less performant cognitive state than the balanced position, in certain players.
+## Keeping the question open
 
-## Prospect Theory and the Pain of Losing a Won Game
+If you notice repeated discomfort when trying to finish, record the situations and discuss them with someone you trust. Avoid looking for proof in champions’ biographies: retrospective interpretations of Morphy or Korchnoi do not diagnose your own play.
 
-[Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman) and [Amos Tversky](https://en.wikipedia.org/wiki/Amos_Tversky)'s [prospect theory](https://en.wikipedia.org/wiki/Prospect_theory) partially explains why. According to this theory, losses are psychologically felt as approximately twice as painful as equivalent gains are pleasant. When you have a winning position, you psychologically "own" the victory. Losing it is perceived as a loss, not as a return to the starting point, which makes it doubly painful.
-
-This logic creates a paradox: obtaining a winning position can increase the risk of error because the fear of losing this "owned" victory generates additional anxiety.
-
-## Differentiating the Fear of Winning from Technical Gaps
-
-A practical question: how do you distinguish the fear of winning from a lack of technique in winning positions?
-
-The distinction lies in the pattern. A player with technical gaps in endgames misses the same types of winning positions for identifiable, correctable reasons (poor rook technique, errors in pawn endgames, etc.). The error pattern is consistent with a specific lack of know-how.
-
-The player with a fear of winning misses winning positions in a less technically consistent but emotionally consistent way: errors concentrate in moments of high emotional pressure (important games, symbolically significant opponents, positions where victory is very close).
-
-## How to Work on the Fear of Winning
-
-The first step is honest recognition of the pattern. Analyze your games while explicitly asking: "At what point did I leave the path of optimal play?" and "What was my emotional state at that moment?"
-
-**Victory visualization.** Sports psychology techniques consisting of mentally visualizing winning scenarios in detail, the converting moves, the won endgames. Familiarization with victory through visualization reduces its anxiety-inducing character.
-
-**Play out won endgames.** Deliberately practice converting winning endgames from theoretically decided positions. Repeated exposure to these conversions, in a training context without stakes, creates procedural memory of conversion.
-
-**Accept that winning can be scary.** Many players ashamed of this reaction hide it and therefore cannot work on it. Recognizing it, without judgment, is the first condition for change.
+The article on [fear of losing](/en/blog/fear-of-losing-in-chess/) addresses imagined consequences of defeat; the [analysis guide](/en/blog/how-to-analyze-chess-games/) helps return to decisions. You can examine both dimensions without reducing every mistake to one of them.
 
 ## Sources
 
-- Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis of decision under risk. *Econometrica*, 47(2), 263-291.
-- Atkinson, J. W. (1958). *Motives in Fantasy, Action, and Society*. Van Nostrand.
-- Horner, M. S. (1972). Toward an understanding of achievement-related conflicts in women. *Journal of Social Issues*, 28(2), 157-175.
-- Weinberg, R. S., & Gould, D. (2015). *Foundations of Sport and Exercise Psychology*. Human Kinetics.
-
-## Key Takeaways
-
-- The fear of winning is not an irrational paradox: it is a logical response to **anxiety-inducing consequences** of victory
-- Mechanisms include fear of increased expectations, fear of responsibility, and fear of **losing "challenger" status**
-- It manifests through **unconscious sabotage** behaviors in winning positions
-- **Prospect theory** (Kahneman & Tversky) explains why losing a won game hurts twice as much as a normal loss
-- Awareness and specific **behavioral techniques** allow players to overcome it
+- Kahneman, D. and Tversky, A. (1979), “Prospect Theory: An Analysis of Decision under Risk”, *Econometrica*, 47(2), 263–291. [Original text](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf).

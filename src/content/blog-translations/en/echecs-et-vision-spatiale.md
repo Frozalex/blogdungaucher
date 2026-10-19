@@ -1,147 +1,115 @@
 ---
 heroImageAlt: A floating model reduced to a few load-bearing beams, with the
   rest of the building absent.
-title: "Chess and Spatial Vision: The Brain That Sees in 3D"
-excerpt: "Visualizing 8 moves ahead without touching the pieces. Mentally calculating variations on a board that exists only in your head. Chess engages spatial visualization capacities that neuroscience is beginning to measure with precision."
-seoTitle: "Chess and Spatial Vision: How the Board Trains the Visuospatial Brain"
-seoDescription: "Chess and spatial vision: mental rotation, visualization, blindfold chess. How the game develops visuospatial abilities according to neuroscience."
+title: "Chess and Spatial Cognition: Expertise and the Limits of Transfer"
+excerpt: "Representing a board, updating relationships and playing blindfold: what perception and imaging research describes without proving general spatial gains from chess."
+seoTitle: "Chess and Spatial Cognition: Expertise and Transfer Limits"
+seoDescription: "Visualisation, blindfold chess and fMRI: what research on chess expertise shows, without confusing brain activation with demonstrated broader transfer."
 enSlug: "chess-and-spatial-vision"
-draft: false
 faq:
-  - question: "Do chess really improve spatial vision?"
-    answer: >-
-      Studies suggest yes. The Tejada-Gallardo et al. (2021) meta-analysis on 17 studies finds a significant
-      positive effect (ES = 0.54) of chess practice on spatial reasoning. Effects are more marked in children
-      (6-12 years) than in adults, suggesting an optimal developmental window. However, like other cognitive
-      benefits of chess, transfer depends on instruction quality.
-  - question: "How do grandmasters visualize variations?"
-    answer: >-
-      Not photographically: that's a popular myth. Eye-tracking and verbal protocol studies (de Groot, 1946;
-      Charness, 1992) show that grandmasters maintain a schematic representation of pieces *important* to the
-      current variation, not a complete board image. They use 'spatial anchors' (key pieces whose position is
-      precisely maintained) while the rest is processed more schematically.
-  - question: "What is mental rotation and why does it matter in chess?"
-    answer: >-
-      Mental rotation is the capacity to mentally rotate a three-dimensional object to examine it from a
-      different angle. In chess, it applies differently: calculating what the opponent sees from their side
-      of the board (mentally inverting perspective), or visualizing how a position evolves after several
-      moves (temporal transformation of the position). Both operations activate similar regions to classical
-      mental rotation.
-  - question: "Is blindfold play beneficial for visualization?"
-    answer: >-
-      Yes, it's the most direct exercise to develop visualization. Starting with simple blindfold games
-      against yourself (playing a known opening from memory, then reopening the board to check) is accessible
-      from intermediate level. Full blindfold games against an opponent are reserved for strong players (from
-      around 1600-1700 Elo), but partial exercises (the first 5-10 moves blindfold) can be practiced well
-      below.
-  - question: "Do chess help children in spatial mathematics?"
-    answer: >-
-      Probably, through spatial reasoning. Spatial mathematics (geometry, trigonometry, certain aspects of
-      algebra) requires mental representation of shapes and their transformations. Studies show that children
-      who practice chess improve their geometry scores more than pure arithmetic. The link is spatial
-      reasoning, which is a shared component.
+  - question: "Does chess really improve spatial ability?"
+    answer: "Practice develops chess skills. That does not prove a general spatial improvement. Sala and Gobet (2017) note that estimated effects decrease with better study controls and that active controls were particularly rare in chess studies."
+  - question: "How do grandmasters visualise variations?"
+    answer: "Charness and colleagues (2001) observe more selective attention in experts: they fixate relevant pieces and some empty squares more. This concerns information selection, not a complete photograph of their mental representation during calculation."
+  - question: "What is mental rotation, and how does it relate to chess?"
+    answer: "Mental rotation means imagining an object rotated in a plane or space. Calculating a variation instead requires updating piece positions and relationships. The tasks may share some spatial demands but are not interchangeable, and transfer requires testing."
+  - question: "Can blindfold play help visualisation?"
+    answer: "You can use it to practise position representation, starting with a few moves of a known opening and checking the board afterwards. No validated Elo threshold or guarantee of progress is established here. Adapt difficulty to what you can actually follow."
+  - question: "Does chess help children with spatial mathematics?"
+    answer: "That cannot be promised from the cited studies. Sala and Gobet’s review highlights control limitations and does not establish general spatial transfer. Learning chess can be a goal itself; geometry benefits need specific evidence."
 ---
 
-[Viswanathan Anand](https://en.wikipedia.org/wiki/Viswanathan_Anand) played 8 chess games simultaneously, blindfolded, without seeing a single board, beating all his opponents. In his head: 8 different positions, each with dozens of pieces, distinct game histories, plans and counter-plans, all maintained simultaneously for hours.
+Look at a position, then imagine a few half-moves without touching the pieces. A bishop changes diagonal, a square becomes free, a rook comes under attack: you must update relationships, not merely retain a board photograph.
 
-This isn't magic. It's spatial visualization pushed to its limits, a capacity that chess develops in documented ways, and that neuroscience is beginning to understand in depth.
+Blindfold games take this skill a long way. Perception and imaging studies help describe the work; they do not establish that chess practice automatically improves every spatial ability.
 
-## Spatial Cognition: What Are We Talking About?
+## Spatial cognition: what are we discussing?
 
-Spatial cognition refers to the set of mental capacities that allow representing, transforming, and navigating in space, whether physical (finding your way in a building) or abstract (visualizing a molecular structure in chemistry, reading an architectural blueprint).
+Spatial cognition covers mental abilities for representing, transforming and navigating space, whether physical, such as finding your way through a building, or abstract, such as visualising a molecular structure or reading an architect’s plan.
 
 Researchers generally distinguish several components:
 
-**Spatial visualization:** The capacity to mentally manipulate two-dimensional or three-dimensional objects, rotate them, assemble them, imagine their appearance from different angles.
+**Spatial visualisation:** mentally manipulating two- or three-dimensional objects, rotating or assembling them and imagining different views. The blog has a dedicated article on [visualisation in chess](/en/blog/chess-mental-visualization/).
 
-**Spatial memory:** The capacity to memorize and recall positions and configurations, where the pieces were at the end of the middlegame, what the pawn structure looked like 10 moves ago.
+**Spatial memory:** remembering and recalling locations and configurations, such as where pieces stood at the end of the middlegame or the pawn structure ten moves earlier.
 
-**Spatial reasoning:** The capacity to use space to solve problems, inferring that a piece on c5 controls certain squares, predicting piece trajectories, understanding geometric relationships between squares.
+**Spatial reasoning:** using spatial relationships to solve problems, such as determining which squares a piece on c5 controls, following piece trajectories and understanding board geometry.
 
-All three components are engaged in chess, to different degrees depending on the game phase.
+These components are relevant to chess in different ways depending on the task and phase.
 
-## The Tejada-Gallardo Meta-Analysis (2021)
+![Distinguishing spatial tasks](/images/en/echecs-vision-01-trois-composantes.svg)
 
-The most rigorous study on the link between chess and spatial cognition is the meta-analysis by [Tejada-Gallardo et al.](https://link.springer.com/article/10.1007/s10648-020-09556-6) (2021), published in *Educational Psychology Review*.
+## What the meta-analyses actually say
 
-The authors selected 17 studies meeting minimum methodological quality criteria, covering children and adults at varying levels. The overall effect on spatial reasoning is **ES = 0.54**: a medium-to-strong effect, significant and robust across studies.
+This is where the literature requires more care than an attractive promise.
 
-Key points from this meta-analysis:
+In their 2017 review, Giovanni Sala and Fernand Gobet revisit a meta-analysis of chess interventions: the overall effect is 0.34 standard deviations. That number combines protocols whose controls are often insufficient.
 
-- The effect is **stronger for children** (6-12 years) than for adults, suggesting that developmental period influences spatial plasticity
-- The effect is **stronger for intervention studies** (chess courses) than for cross-sectional studies (comparing players vs non-players), suggesting causality rather than mere selection
-- **Instruction duration** modulates the effect: programs exceeding 30 hours produce larger effects
+The same review notes only one chess study with an active control group, with an effect of 0.10 standard deviations. The 0.05 figure sometimes quoted in this context concerns working-memory training, not chess. It therefore cannot be presented as a demonstrated spatial effect of the game.
 
-## What Grandmasters Actually See
+The distinction matters: learning to represent a chessboard does not establish transfer to geometry or reading plans. The examined literature does not justify that promise.
 
-The popular idea that grandmasters have photographic memory of the board is a myth, documented as such since [Adriaan de Groot](https://en.wikipedia.org/wiki/Adriaan_de_Groot)'s work in the 1940s and refined since.
+## What grandmasters actually see
 
-The reality is more interesting.
+The image of a grandmaster keeping a perfect board photograph poorly captures the information selection observed in the laboratory. Still, measurements must be distinguished from metaphors used to explain them.
 
-### Schematic, Not Photographic Representation
+### Schematic rather than photographic representation
 
-Studies of verbal protocols and eye-tracking show that experts don't uniformly scan all squares, they **saccade** toward zones relevant to their current variation.
+In Charness and colleagues’ study (2001), experts choose faster and more accurately than intermediate players. Eye tracking shows more fixation on relevant elements of the position.
 
-[Neil Charness](https://psy.fsu.edu/faculty/charness/charness.dp.html) (Florida State University) showed that grandmasters build a "stripped-down" representation: pieces important for the current variation are maintained with precision, the rest is processed more schematically and can even be recalled inaccurately if questioned about peripheral pieces mid-calculation.
+This concerns visual selection. It does not establish that peripheral pieces disappear from memory or that every grandmaster visualises variations identically. The diagram below illustrates a selection strategy; it does not represent a brain measurement.
 
-This isn't a limitation: it's an efficient adaptation. Maintaining a complete, precise representation of all 32 pieces would consume cognitive resources uselessly. The expert brain makes intelligent selection based on relevance.
+![Board memory: beyond a mental photo](/images/en/echecs-vision-02-schematique-vs-photographique.svg)
 
-### Spatial Chunks
+### Spatial chunks
 
-[Gobet and Simon](https://en.wikipedia.org/wiki/Fernand_Gobet)'s chunking theory also applies to the spatial dimension. Experts don't see 16 black pieces separately: they see "structures", "queenside castle with intact pawns," "Carlsbad structure with double open file," "R+P vs R endgame." These spatial chunks are recognized as blocks, not reconstructed piece by piece.
+The chunking framework discussed by Sala and Gobet (2017) also has a spatial dimension. Familiar elements may be grouped into meaningful configurations: a castled setup, pawn structure or endgame arrangement. These illustrate recognition, without claiming every expert processes identical groups.
 
-This explains why grandmasters can analyze a position blindfolded: they don't need to memorize each piece separately. They memorize meaningful configurations, each having internal logic they can reconstruct.
+This framework helps explain how chess knowledge supports position memory. It does not remove the need to follow pieces and square changes, or measure by itself the representation used in blindfold play.
 
-## Brain Activation: The Parietal Cortex in Action
+## Brain activation: the parietal cortex and beyond
 
-fMRI studies on spatial cognition consistently show involvement of the **superior parietal cortex**, the **pre-motor cortex**, and the **visuospatial working memory** space.
+The **visuospatial sketchpad** is a functional component of a working-memory model, not an anatomical region. It concerns visual and spatial information, distinct from verbal processing.
 
-[Giorgio Cattaneo](https://scholar.google.com/citations?user=HhD6e9QAAAAJ) and colleagues (2009) studied the brain correlates of chess variation calculation. Their results show bilateral activation of the superior parietal cortex, the same region activated during classic mental rotation tasks.
+Atherton and colleagues’ fMRI study (2003) compares position analysis with a spatial task using similar visual stimuli. It reports frontal, parietal and occipital activations.
 
-This result is important: it suggests that chess variation calculation (visualizing pieces moving) uses the same circuits as general spatial tasks. Chess practice therefore trains these circuits in a targeted way.
+That identifies regions active in this comparison. It does not measure improvement produced by chess lessons. Nor does it demonstrate expert superiority over beginners or transfer to mental rotation: those are separate questions requiring different protocols.
 
-## Blindfold Chess: The Ultimate Exercise
+## Blindfold chess: a demanding exercise
 
-Blindfold chess, playing without seeing the board, dictating moves orally or by notation, represents the most direct exercise of spatial visualization in chess.
+Blindfold chess means playing without seeing the board and announcing moves. It requires mentally following positions and their transformations.
 
-Historically, blindfold feats have fascinated audiences: [Paul Morphy](https://en.wikipedia.org/wiki/Paul_Morphy) played 8 simultaneous blindfold games in 1858. The current record, set by [Timur Gareyev](https://en.wikipedia.org/wiki/Timur_Gareyev) in 2016, is 48 simultaneous blindfold games.
+![Trying visualisation progressively](/images/en/echecs-vision-03-niveaux-aveugle.svg)
 
-But blindfold games aren't reserved for grandmasters. They're a scalable training tool:
+Guinness documents Timur Gareyev’s record of 48 simultaneous blindfold games on 3–4 December 2016. That achievement describes a chess performance; it does not measure transfer to other spatial tasks.
 
-**Beginner/intermediate level:** Play the first 5-10 moves of a known opening without looking at the board, then check the position. An exercise in anchoring theoretical structures in spatial memory.
+Blindfold exercises are not reserved for grandmasters. Here is a possible progression to adapt to your errors rather than an allegedly scientific rating threshold:
 
-**Intermediate level:** Solve simple tactical problems without seeing the board (the problem is described verbally or in notation). Forces spatial reconstruction from notation.
+**Beginner/intermediate:** play the first five to ten moves of a familiar opening without seeing the board, then check the position. This practises representing known structures.
 
-**Advanced level:** Play complete blindfold games against a weaker opponent. The level reduction compensates for the additional difficulty of visualization.
+**Intermediate:** solve simple tactical problems without seeing the board, with the position described verbally or through notation. Reconstruct the position and check it afterwards.
 
-## Spatial Vision and Mathematics: The Link
+**Advanced:** try complete blindfold games against a willing, less experienced partner. Adjust opposition and complexity to the extra representation demand; a rating difference does not guarantee a suitable exercise.
 
-A benefit often mentioned for school chess programs is improved math performance. Studies show this benefit is more marked for **spatial mathematics** (geometry, trigonometry, certain aspects of physics) than for arithmetic or abstract algebra.
+## Spatial cognition and mathematics: the proposed link
 
-This result makes sense: geometry and physics require exactly the same operations of mental rotation, spatial decomposition, and transformation as chess variation calculation. The transfer is real because both domains share the same brain circuits.
+Geometry offers an interesting hypothesis because both activities involve spatial relationships. A controlled experiment is still needed to establish that learning chess improves geometry results. Shared brain regions are not enough to prove it.
 
-## Practical Exercises to Develop Visualization
+Sala and Gobet’s review (2017) specifically encourages separating that hypothesis from effects on trained tasks. The following exercises therefore practise chess visualisation without promising general school gains.
 
-**1. Mental maps of the board.** Without a board in front of you, mentally visualize square h8. Then c4. Then mentally trace the path of a Bishop from a1 to h8. What color is square e5? These simple exercises train the cognitive map of the chessboard.
+## Practical visualisation exercises
 
-**2. Short blindfold variations.** Take a simple tactical position. Close your eyes. Visualize the first attacking move, then the defensive response, then the next move. Open your eyes and check. Progressively increase depth.
+**1. Mental maps of the board.** Without a board, imagine h8, then c4, then a bishop’s path from a1 to h8. What colour is e5? These exercises practise coordinates and piece paths.
 
-**3. Notation dictation.** Have a partner read you the first 15-20 moves of a famous game (algebraic notation), try to visualize the final position, then compare with the real board.
+**2. Short blindfold variations.** Take a simple tactical position. Close your eyes and imagine the first attacking move, the defensive reply and the continuation. Open your eyes and check. Increase depth gradually as accuracy allows.
 
-**4. Engine-free analysis.** Analyzing a game without an engine first, noting your variations on paper, forces visualization of positions that never physically existed. It's a spatial visualization exercise disguised as analysis.
+**3. Notation dictation.** Have a partner read the first fifteen to twenty moves of a famous game in algebraic notation. Try representing the final position, then compare with the board.
+
+**4. Analysis without an engine.** Review a game first without an engine, writing variations during training or post-game analysis. This asks you to represent positions not physically played out. Such notes are not permitted as analysis aids during an official game.
 
 ## Sources
 
-- Tejada-Gallardo, C., et al. (2021). Effects on spatial reasoning. *Educational Psychology Review*, 33, 1689-1720.
-- Cattaneo, Z., Postma, A., & Vecchi, T. (2006). Gender differences for spatial memory. *British Journal of Psychology*, 97(3), 339-352.
-- Charness, N., et al. (2001). The perceptual aspect of skilled performance in chess. *Memory & Cognition*, 29(8), 1146-1152.
-- Gobet, F., & Simon, H. A. (1996). Templates in chess memory. *Cognitive Psychology*, 31(1), 1-40.
-- Ferguson, R. (1995). Chess in education research summary. Paper presented at the Chess in Education, A Wise Move Conference.
-
-## Key Takeaways
-
-- Chess practice improves **spatial reasoning** with a significant effect (ES = 0.54, Tejada-Gallardo 2021, 17 studies)
-- Variation calculation activates the same regions as **mental rotation** tasks (superior parietal cortex)
-- GM visualization is not **photographic** but **schematic**: a representation of critical pieces, not a complete snapshot
-- **Blindfold chess** is the most direct exercise of spatial visualization, accessible in tiers from intermediate level
-- Children aged **5-10** show the most marked improvements: optimal developmental window for visuospatial processing
+- Sala, G., & Gobet, F. (2017). *Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training*. Current Directions in Psychological Science, 26(6), 515–520. [Full text](https://journals.sagepub.com/doi/10.1177/0963721417712760): effects, control limitations and pattern recognition.
+- Charness, N., Reingold, E. M., Pomplun, M., & Stampe, D. M. (2001). *The perceptual aspect of skilled performance in chess: Evidence from eye movements*. Memory & Cognition, 29(8), 1146–1152. [Abstract and DOI](https://pubmed.ncbi.nlm.nih.gov/11913751/).
+- Atherton, M., Zhuang, J., Bart, W. M., Hu, X., & He, S. (2003). *A functional MRI study of high-level cognition. I. The game of chess*. Cognitive Brain Research, 16(1), 26–31. [Authors’ university record and abstract](https://experts.umn.edu/en/publications/a-functional-mri-study-of-high-level-cognition-i-the-game-of-ches/).
+- Guinness World Records (2016). *Most simultaneous blindfolded chess games (total games)*. [Gareyev’s record](https://www.guinnessworldrecords.de/world-records/72345-most-simultaneous-blindfolded-chess-wins).

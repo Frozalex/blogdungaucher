@@ -1,154 +1,64 @@
-﻿---
+---
 title: "Grafos de Nash: equilíbrio e aberturas no xadrez"
-excerpt: "Por que certas aberturas duram décadas sem serem refutadas? O equilíbrio de Nash explica a estabilidade das variantes teóricas e a lógica profunda das aberturas de xadrez."
-seoTitle: "Equilíbrio de Nash e aberturas: por que o Espanhol dura 200 anos"
-seoDescription: "Siciliana, defesa berlinesa, refinamentos de Selten: como o equilíbrio de Nash explica a estabilidade das aberturas de xadrez e suas rupturas mais célebres."
-frSlug: graphes-de-nash-equilibre-ouvertures
-faq:
-  - question: "Uma abertura \"refutada\" deixa de existir ?"
-    answer: >-
-      Não exatamente. Uma refutação local prova que <strong>um</strong> caminho na variante leva a uma
-      vantagem clara para um dos lados. O resto do grafo (ordens de lances, transposições, linhas laterais) pode
-      conservar equilíbrios locais jogáveis. É por isso que as "refutações" históricas são muitas vezes
-      parciais : a variante sobrevive com uma ordem de lances diferente ou com um lance intermediário. A
-      Siciliana Sveshnikov, "refutada" no fim dos anos 1990, voltou com força nos anos 2010 sobre novos
-      equilíbrios.
-  - question: "Por que os motores não \"resolvem\" todas as aberturas ?"
-    answer: >-
-      Porque resolver = atingir o <strong>valor de Zermelo</strong> (ganho, perda, empate sob jogo perfeito
-      até o mate). Os motores produzem uma <strong>avaliação heurística</strong> a profundidade finita
-      (40-60 meios-lances, tipicamente) ; isso lhes permite <strong>classificar</strong> as aberturas,
-      <strong>encontrar equilíbrios locais</strong> e <strong>quebrar</strong> equilíbrios fracos,
-      mas não provar uma verdade absoluta. A distinção é fundamental : o Stockfish diz "esta variante
-      parece +0,2" ; ele nunca diz "esta variante é empate no sentido de Zermelo".
-  - question: "Um equilíbrio de Nash garante o melhor resultado coletivo ?"
-    answer: >-
-      Não, e isso é central. O exemplo do dilema do prisioneiro mostra bem : o equilíbrio pode ser
-      Pareto-dominado (os dois poderiam ir melhor se coordenassem, mas nenhum tem interesse em desviar sozinho).
-      No xadrez, o "Nash coletivo" seria o acordo de empate mútuo ; o "Nash competitivo" empurra para
-      posições desequilibradas, em que cada um procura explorar um erro. O formato de torneio (must-win,
-      classificação, premiação) deforma a função de utilidade e, portanto, o equilíbrio escolhido.
-  - question: "O que é um \"equilíbrio misto\" na prática, para um jogador amador ?"
-    answer: >-
-      Para um amador, é jogar <strong>duas ou três aberturas</strong> diferentes com probabilidades
-      estáveis (por exemplo 50 % Italiana, 30 % Espanhola, 20 % Escocesa). A vantagem é defensiva :
-      impede que o adversário frequente se prepare especificamente contra você. A desvantagem é ofensiva : você
-      conhece cada linha com menos profundidade. O tamanho adequado do repertório depende do seu tempo de estudo
-      semanal ; abaixo de 5 h/semana, um repertório puro costuma ser mais eficaz que um repertório misto mal
-      mantido.
-  - question: "Por que falar de \"grafos\" e não de \"árvores\" de aberturas ?"
-    answer: >-
-      Porque as aberturas <strong>transpõem</strong> : sequências de lances diferentes levam à
-      mesma posição. O peão em c4 no lance 1 ou no lance 3 pode dar a mesma posição de Réti em certas
-      linhas. Uma árvore supõe um caminho único até cada folha ; um grafo acíclico dirigido autoriza
-      vários caminhos. As bases de aberturas profissionais (ChessBase, Lichess Masters) são na verdade
-      grafos comprimidos, com milhões de transposições pré-calculadas.
+excerpt: "O equilíbrio de Nash oferece uma linguagem para pensar estratégias, mas não transforma uma abertura popular em teorema. Entenda a diferença entre modelo, avaliação e preparação prática."
+seoTitle: "Equilíbrio de Nash e aberturas: modelo e limites"
+seoDescription: "Nash, minimax e aberturas de xadrez: distinga equilíbrio matemático, avaliação de motor e preparação prática, sem confundir popularidade com prova."
+frSlug: "graphes-de-nash-equilibre-ouvertures"
+faq: [{"question": "Uma abertura popular é um equilíbrio de Nash demonstrado?", "answer": "Não. Popularidade, avaliação de motor ou empate entre campeões não provam uma estratégia ótima contra todas as respostas."}, {"question": "Por que representar posições por um grafo?", "answer": "Ordens de lances podem levar à mesma posição. O grafo das configurações também pode conter ciclos; é preciso especificar direitos de roque, captura en passant e o histórico necessário às regras de empate."}, {"question": "Variar minhas aberturas basta para formar um equilíbrio misto?", "answer": "Não. Uma distribuição de escolhas é uma estratégia mista em um modelo definido. Para demonstrar um equilíbrio, também é preciso estabelecer que ninguém ganha ao desviar sozinho, conforme os ganhos do modelo."}, {"question": "Uma avaliação igual prova o empate?", "answer": "Uma estimativa de motor em profundidade limitada não basta. Uma prova precisa abranger as respostas legais relevantes e as regras de término da partida."}]
 heroImageAlt: Duas peças de xadrez apoiadas uma na outra em equilíbrio.
----
-
-Por que a Defesa Siciliana é jogada em todos os níveis há cem anos? Por que a Partida Espanhola não foi "refutada" apesar de séculos de análise? Por que certas variantes teóricas desmoronam em poucos anos enquanto outras parecem indestrutíveis? A resposta a essas questões se encontra num conceito matemático elaborado por [John Nash](https://pt.wikipedia.org/wiki/John_Forbes_Nash) em 1950: o equilíbrio de Nash.
-
-## John Nash e o equilíbrio que leva seu nome
-
-[John Forbes Nash Jr.](https://pt.wikipedia.org/wiki/John_Forbes_Nash) recebeu o Prêmio Nobel de Economia em 1994 por suas contribuições à teoria dos jogos não cooperativos. Sua noção de equilíbrio, publicada num artigo de duas páginas em 1951, é uma das ideias mais influentes do século XX.
-
-Um equilíbrio de Nash é um perfil de estratégias (uma estratégia por jogador) tal que nenhum jogador pode melhorar seu resultado modificando unilateralmente sua própria estratégia, supondo que os outros mantenham as suas. É um estado de estabilidade mútua.
-
-Para compreender a intuição, pensemos no dilema do prisioneiro. Dois cúmplices são interrogados separadamente. Se os dois ficam calados, cada um recebe um ano. Se um fala e o outro não, o primeiro é libertado e o outro pega dez anos. Se os dois falam, cada um pega cinco anos. O equilíbrio de Nash é que os dois falem: mesmo sendo globalmente subótimo, nenhum pode melhorar sua situação mudando de comportamento se o outro mantém sua estratégia.
-
-## As aberturas como equilíbrios dinâmicos
-
-No xadrez, as aberturas teóricas podem ser analisadas como equilíbrios de Nash locais. Quando uma variante é qualificada de "teoricamente igual", isso significa que nem Brancas nem Pretas encontraram um desvio que melhore seu resultado de forma provada. Os dois lados podem manter o equilíbrio jogando os lances teoricamente corretos.
-
-Consideremos a [Defesa Siciliana](https://pt.wikipedia.org/wiki/Defesa_Siciliana), a resposta mais popular a 1.e4. Após 1.e4 c5, Brancas e Pretas entram num território de riqueza estratégica considerável. Por que essa abertura dura séculos?
-
-Porque ela corresponde a um equilíbrio profundo. As Pretas aceitam uma estrutura de peões ligeiramente assimétrica para obter contra-chances no jogo. Se as Brancas tentam explorar agressivamente a estrutura, as Pretas têm recursos defensivos sólidos. Se as Brancas jogam passivamente demais, as Pretas podem desenvolver um contra-jogo ativo. Nenhum dos dois pode melhorar seu resultado de forma unilateral permanecendo no quadro teórico: é um equilíbrio de Nash.
-
-### Quando o equilíbrio se rompe
-
-Um equilíbrio de Nash de abertura se rompe quando um jogador ou pesquisador encontra um desvio que realmente melhora seu resultado. Pode ser uma novidade teórica, uma ordem de lances diferente, ou uma ideia conceitual nova.
-
-A história do xadrez está pontuada dessas rupturas de equilíbrio. Nos anos 1970, [Viktor Korchnoi](https://pt.wikipedia.org/wiki/Viktor_Korchnoi) e outros desenvolveram novas ideias em variantes consideradas "claras" por décadas, forçando uma reavaliação completa de certas estruturas. Mais recentemente, os motores de análise romperam vários equilíbrios teóricos ao identificar lances contraintuitivos que se revelam superiores à prática humana estabelecida.
-
-### Estudo de caso: a defesa berlinesa após Kramnik 2000
-
-A ilustração mais célebre de um equilíbrio de Nash redescoberto é a **defesa berlinesa** (1.e4 e5 2.Cf3 Cc6 3.Fb5 Cf6) do López. Durante quase um século, a berlinesa era considerada ligeiramente inferior à 3...a6 clássica: a posição resultante após a troca da dama no lance 8 parecia monótona, a vantagem das Brancas sólida. [Vladimir Kramnik](https://pt.wikipedia.org/wiki/Vladimir_Kramnik) a ressuscitou contra [Garry Kasparov](https://pt.wikipedia.org/wiki/Garry_Kasparov) durante o match do campeonato mundial 2000 em Londres: ele segurou **todas as Pretas** sem concessão, contribuindo diretamente para arrancar o título.
-
-Do ponto de vista Nash, o que aconteceu: Kramnik demonstrou que um equilíbrio alternativo existia numa variante que a teoria havia classificado como "Pareto-dominada" pela 3...a6. Uma vez feita a demonstração no alto nível, dezenas de Grandes Mestres adotaram a berlinesa nos anos seguintes, e **o mapa dos equilíbrios** no Espanhol foi redesenhado duravelmente. É o arquétipo de uma ruptura de equilíbrio por mudança de crença: nenhum novo lance mágico, apenas a prova empírica de que outro equilíbrio se sustentava.
-
-## A representação em grafo das posições de xadrez
-
-O conceito de grafo é natural para o xadrez. Um [grafo dirigido](https://pt.wikipedia.org/wiki/Grafo_dirigido) (ou grafo orientado) é um conjunto de nós (vértices) ligados por arestas dirigidas (flechas). Para o xadrez, os nós são as posições legais e as arestas são os lances legais.
-
-Esse grafo é imenso: ele contém cerca de $10^{44}$ nós (estimativas do número de posições legais distintas) e um número de arestas ainda maior. Mas sua estrutura é reveladora.
-
-A partir da posição inicial, a árvore das partidas se ramifica exponencialmente. Mas muitas variantes diferentes convergem para as mesmas posições (transposições). A estrutura não é portanto uma árvore pura mas um grafo acíclico dirigido: alguns nós podem ser alcançados por múltiplos caminhos.
-
-### Os atratores no grafo
-
-Nesse grafo gigante, as posições de equilíbrio correspondem a atratores. São nós para os quais muitos caminhos convergem e a partir dos quais os dois jogadores preferem manter suas estratégias. As aberturas teóricas populares correspondem a regiões densas do grafo, zonas que muitas partidas visitam.
-
-As posições "nulas por repetição" são um exemplo extremo de atrator: são nós onde o jogo se estabiliza num ciclo. A regra da tripla repetição é precisamente a codificação formal do reconhecimento de que certos equilíbrios de Nash são ciclos.
-
-## Os equilíbrios de Nash nos finais
-
-Os finais oferecem um terreno de análise mais preciso para o equilíbrio de Nash, pois o número de posições é suficientemente pequeno para uma análise exaustiva.
-
-Num final de Rei e Peão contra Rei, sob jogo perfeito dos dois lados, a posição é ou ganhadora para o lado com o peão, ou nula. Esse estado "sob jogo perfeito" é precisamente o equilíbrio de Nash do final: os dois jogadores jogam suas estratégias ótimas mútuas, e nenhum pode melhorar seu resultado desviando.
-
-As [tablebases](https://pt.wikipedia.org/wiki/Tablebase) são a documentação completa desses equilíbrios para os finais com poucas peças. Cada posição tem um valor definido: vitória em n lances ou nula. Esses valores são os equilíbrios de Nash exatos desses subjogos.
-
-## A preparação de abertura como jogo de Nash repetido
-
-Na competição de xadrez ao mais alto nível, a preparação de abertura não é um simples aprendizado de teoria. É um jogo estratégico em si mesmo, um meta-jogo de Nash repetido.
-
-Dois jogadores que se encontram regularmente em torneio se adaptam mutuamente. Se A sempre joga a Siciliana e B prepara uma linha agressiva contra a Siciliana, A pode se adaptar mudando de abertura. Mas se A muda muito frequentemente, perde em profundidade de preparação. Se B prepara linhas demais diferentes, falta profundidade em cada uma.
-
-O equilíbrio de Nash desse meta-jogo é uma distribuição sobre as aberturas: jogar cada variante com uma certa frequência para tornar sua estratégia global imprevisível mantendo uma preparação suficiente. Os grandes jogadores modernos, frequentemente com a ajuda de equipes de analistas e motores, gerenciam explicitamente essa dimensão estratégica.
-
-[Magnus Carlsen](https://pt.wikipedia.org/wiki/Magnus_Carlsen) é conhecido por uma abordagem particularmente sofisticada desse meta-jogo. Ele joga um amplo repertório de aberturas, incluindo variantes incomuns ou consideradas inferiores, precisamente para perturbar a preparação do adversário e levá-lo a terrenos menos familiares. É uma estratégia mista no sentido de Nash: diversificar para evitar ser explorado.
-
-### O refinamento de Selten: o equilíbrio de "mão tremida"
-
-O equilíbrio de Nash padrão supõe jogadores racionais perfeitos. Mas e se o adversário cometer um erro **com probabilidade ε**? [Reinhard Selten](https://pt.wikipedia.org/wiki/Reinhard_Selten) (Prêmio Nobel 1994 com Nash) propôs o conceito de **equilíbrio de mão tremida** (*trembling-hand perfect equilibrium*): um lance é "robusto" se permanece ótimo mesmo quando o adversário se desvia ligeiramente da estratégia pura.
-
-Isso tem uma tradução direta no xadrez. Um lance pode ser teoricamente *perfeito sob Nash estrito* e ao mesmo tempo **frágil**: ele depende da precisão do adversário até o último lance. Outro lance, ligeiramente abaixo do ótimo em avaliação, pode ser **mais robusto** porque mantém a vantagem mesmo que o adversário jogue três ou quatro lances inexatos. Os bons preparadores (Carlsen, Caruana) otimizam menos a avaliação absoluta do que a *robustez à mão tremida*: eles visam posições onde **permanecer no bom caminho** é mais fácil para eles do que para o adversário.
-
-## As variantes recusadas: equilíbrios subótimos
-
-Um resultado contraintuitivo da teoria dos jogos é que podem existir equilíbrios de Nash que não são os melhores resultados possíveis para os dois jogadores. Esses equilíbrios subótimos (ou equilíbrios Pareto-dominados) existem também no xadrez.
-
-Certas variantes de abertura levam a posições "nulas mas entediantes" que os dois jogadores preferem evitar por razões esportivas. Num match de campeonato mundial onde um empate é insuficiente, os dois jogadores têm interesse em escolher variantes mais desequilibradas, mesmo que essas variantes sejam teoricamente menos sólidas. O contexto esportivo modifica as funções de utilidade e portanto os equilíbrios.
-
-É por isso que frequentemente se observa, nos matches importantes, variantes incomuns em relação à prática padrão. Os jogadores saem deliberadamente dos equilíbrios "teoricamente corretos" para buscar posições onde um jogo impreciso do adversário pode ser mais explorado.
-
-## O que Nash revela sobre a natureza do progresso no xadrez
-
-A perspectiva de Nash oferece uma forma de compreender o progresso no xadrez diferente da progressão Elo ou do número de táticas memorizadas.
-
-Progredir no xadrez é progredir na capacidade de manter e explorar os equilíbrios estratégicos. Um jogador forte não é simplesmente um jogador que calcula mais rápido ou que conhece mais teoria. É um jogador que percebe mais finamente o equilíbrio de cada posição, que reconhece quando o adversário se afasta dele e sabe como explorá-lo.
-
-O lance "equilibrante" de uma posição não é sempre o lance mais visível ou mais espetacular. É frequentemente um lance calmo, profilático, que consolida a estrutura estratégica. É Nash mais do que Tal: o equilíbrio silencioso mais do que o sacrifício espetacular.
-
-**Após a leitura:** para **uma** abertura que você joga frequentemente, note se você busca sobretudo a armadilha ou o equilíbrio estável; ajuste segundo o formato (vitória necessária vs empate aceitável).
 
 ---
 
-## O que guardar
+Por que certas aberturas continuam sendo jogadas apesar de décadas de análise? O equilíbrio de Nash oferece uma linguagem para pensar estratégias, mas não transforma uma variante popular em teorema.
 
-- Um equilíbrio de Nash é uma situação onde nenhum jogador pode melhorar seu resultado mudando unilateralmente de estratégia
-- As aberturas consideradas "teoricamente iguais" são equilíbrios de Nash locais
-- Uma variante que dá uma vantagem real rompe o equilíbrio e força uma correção teórica (exemplo: defesa berlinesa após Kramnik 2000)
-- O **refinamento de Selten** (mão tremida) explica por que um lance "robusto" pode bater um lance "teoricamente ótimo" na partida real
-- Os grafos de posições permitem visualizar esses equilíbrios como atratores no espaço das partidas possíveis
-- Um repertório misto é uma **estratégia mista no sentido de Nash**: ele diversifica para evitar ser explorado
+O título “grafos de Nash” serve aqui como aproximação didática. Não designa uma teoria padrão que teria demonstrado a correção da Siciliana ou da Berlinesa.
 
-### Fontes e referências
+## O que Nash define
 
-- **Nash, J. F.** *Non-Cooperative Games.* Annals of Mathematics, 54(2), 286-295, 1951.
-- **Nash, J. F.** *Equilibrium Points in n-Person Games.* Proceedings of the National Academy of Sciences, 36(1), 48-49, 1950.
-- **Selten, R.** *Reexamination of the Perfectness Concept for Equilibrium Points in Extensive Games.* International Journal of Game Theory, 4(1), 25-55, 1975.
-- **Osborne, M. J., & Rubinstein, A.** *A Course in Game Theory.* MIT Press, 1994.
-- **Kramnik, V., & Damsky, I.** *My Life and Games.* Everyman Chess, 2000.
-- **de Groot, A. D.** *Thought and Choice in Chess.* Mouton, 1965.
-- **Lasker, E.** *Manual of Chess.* Dover Publications, 1947.
+Em *Non-Cooperative Games* (1951), John Nash descreve um perfil de estratégias em que nenhum jogador pode melhorar seu ganho mudando sozinho de estratégia, enquanto os demais mantêm as suas. O artigo ocupa as páginas 286 a 295, dez páginas; não deve ser confundido com sua breve nota de 1950.
+
+Uma estratégia é uma maneira de escolher nas situações do jogo, não apenas o nome do primeiro lance. O teorema de existência para jogos finitos admite estratégias mistas; não fornece automaticamente os lances ótimos de uma partida de xadrez.
+
+## O que isso significa no tabuleiro
+
+No modelo usual de soma zero, cada lado prefere ganhar a empatar e empatar a perder. A análise minimax apresentada por Russell e Norvig busca uma estratégia contra as melhores respostas adversárias.
+
+Uma linha julgada “igual” por um motor expressa outra coisa: uma estimativa com um método e um orçamento de busca. Um empate entre dois campeões é ainda outra informação. Nenhuma delas prova, sozinha, que todos os desvios possíveis foram cobertos.
+
+Você pode, portanto, falar de um equilíbrio prático de preparação, desde que sinalize que é uma imagem. Se uma novidade muda a avaliação de uma linha, nosso conhecimento mudou; um equilíbrio matematicamente provado não é refutado por uma simples tendência teórica.
+
+## Árvore das partidas e grafo das posições
+
+Uma árvore mantém separadas as sequências de lances. Um grafo pode reunir sequências que chegam à mesma posição: são as transposições. Também precisa especificar o que chama de posição.
+
+A disposição das peças nem sempre basta. O lado com a vez e os direitos de roque ou de captura en passant podem mudar os lances legais. Para aplicar todas as regras de empate, ainda é preciso guardar informações de histórico.
+
+O grafo das configurações pode ter ciclos. Cavalos podem sair e voltar às casas iniciais. Uma árvore que mantém todo o histórico não confunde essas ocorrências. Seria, portanto, enganoso chamar sem explicação todo grafo de aberturas de “acíclico”.
+
+![Qual informação você representa?](/images/pt-br/nash-03-graphe-transpositions.svg)
+
+## Finais e valores calculados
+
+As bases de finais podem fornecer um valor exato no seu domínio e segundo suas convenções. É preciso distinguir vitória, empate ou derrota, distância ao mate e distância a uma reinicialização do contador de lances. A documentação Syzygy destaca as regras de empate: uma distância da base nem sempre é uma quantidade de lances vencedores em toda situação de torneio.
+
+Essa precisão torna os finais interessantes para discutir modelos: qual informação descreve o estado, qual regra encerra a partida e qual grandeza é calculada?
+
+## Variar seu repertório: uma decisão prática
+
+Se enfrenta frequentemente a mesma pessoa, variar suas aberturas pode tornar a preparação dela menos direcionada. Isso não prova que uma mistura de 50%, 30% e 20% seja um equilíbrio de Nash nem que exista um limite universal de cinco horas semanais de estudo para escolher um repertório.
+
+Você pode olhar o custo de cada mudança: conhece os planos seguintes? Consegue explicar as posições a que chega? Ganha uma surpresa ao custo de uma posição que não entende? Essas perguntas bastam para organizar uma escolha de prática.
+
+## Resultado esportivo e modelo
+
+Um empate pode ser conveniente ou não conforme a classificação do torneio. Isso pode mudar as preferências que você deseja representar em um modelo. É preciso defini-las antes de anunciar um novo equilíbrio.
+
+No modelo estritamente de soma zero, os dois jogadores não podem aumentar simultaneamente seu ganho. Importar sem cuidado o dilema do prisioneiro ou uma melhora coletiva de Pareto, portanto, confunde a análise.
+
+Para aprofundar: [teoria dos jogos](/pt-br/blog/teoria-dos-jogos-no-xadrez/), [minimax](/pt-br/blog/minimax-no-xadrez/) e [Zermelo](/pt-br/blog/paradoxo-de-zermelo/).
+
+## Fontes
+
+- Nash, J. (1951). *Non-Cooperative Games*. Annals of Mathematics, 54(2), 286–295. [Artigo](https://irving.vassar.edu/faculty/gj/FTU/io/literature/Nash51.pdf).
+- Russell, S., & Norvig, P. (sem data, capítulo on-line). *Adversarial Search*. Artificial Intelligence: A Modern Approach. [Capítulo](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
+- Projeto Syzygy (sem data). *probetool: documentação das métricas de finais*. GitHub. [Documentação](https://github.com/syzygy1/probetool).

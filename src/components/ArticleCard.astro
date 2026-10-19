@@ -4,7 +4,7 @@ import { formatDateForLang, getCategoryMeta, getLocalizedPostText, getPostHeroSr
 import { buildSrcset } from "../utils/image-variants";
 import { t, type Lang } from "../i18n/translations";
 
-const { post, featured = false, lead = false, eager = false, lang = "fr" } = Astro.props as {
+const { post, featured = false, lead = false, eager = false, lang = "fr", headingLevel } = Astro.props as {
   post: BlogEntry;
   featured?: boolean;
   /** Variante « article de tête » : disposition horizontale image/texte (portail éditorial). */
@@ -12,12 +12,13 @@ const { post, featured = false, lead = false, eager = false, lang = "fr" } = Ast
   /** Charge la vignette en priorité (image above-the-fold / LCP) : désactive le lazy-loading. */
   eager?: boolean;
   lang?: Lang | "pt-br" | "nl";
+  headingLevel?: 2 | 3;
 };
 
 // `lead`/`featured` placent la carte juste après le H1 de la page, sans H2 intercalé
 // (portail éditorial, en-tête de rubrique) : le titre doit alors être un H2, pas un H3,
 // pour ne pas sauter de niveau dans la hiérarchie de titres.
-const TitleTag = lead || featured ? "h2" : "h3";
+const TitleTag = headingLevel === 2 || (headingLevel === undefined && (lead || featured)) ? "h2" : "h3";
 
 const category = getCategoryMeta(post.data.category);
 

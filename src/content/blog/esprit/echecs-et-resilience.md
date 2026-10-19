@@ -45,32 +45,27 @@ heroImage:
     plaine vide.
 faq:
   - question: Comment accepter une défaite aux échecs sans se décourager ?
-    answer: >-
-      La clé est de séparer l'évaluation de la partie et l'évaluation de soi. Une défaite dit quelque chose sur ta
-      préparation ou ta forme du jour : pas sur ta valeur en tant que personne. Concrètement : accorde-toi un temps
-      pour ressentir la déception, adapté à ton état, puis déplace l'attention vers l'analyse factuelle. 'Qu'est-ce
-      qui s'est passé ?' est une question utile ; 'Pourquoi suis-je aussi nul ?' ne l'est pas.
+    answer: "La clé est de séparer l'évaluation de la partie et l'évaluation de soi. Une défaite dit quelque chose
+      sur ta préparation ou ta forme du jour : pas sur ta valeur en tant que personne. Concrètement :
+      accorde-toi un temps pour ressentir la déception, adapté à ton état, puis déplace l'attention vers
+      l'analyse factuelle. 'Qu'est-ce qui s'est passé ?' est une question utile ; 'Pourquoi suis-je aussi nul
+      ?' ne l'est pas."
   - question: Les grands maîtres sont-ils vraiment résilients après une défaite ?
-    answer: >-
-      Un palmarès ne permet pas de mesurer une réaction émotionnelle. Tu peux observer la reprise de compétition,
-      mais il faut une source personnelle précise pour attribuer une stratégie psychologique à un champion.
+    answer: Un palmarès ne permet pas de mesurer une réaction émotionnelle. Tu peux observer la reprise de
+      compétition, mais il faut une source personnelle précise pour attribuer une stratégie psychologique à un
+      champion.
   - question: Faut-il analyser la partie immédiatement après ou attendre ?
-    answer: >-
-      Il n’existe pas de délai optimal démontré ici. Note les moments clés pendant que tu t’en souviens,
-      puis reprends l’analyse quand tu peux distinguer tes décisions du jugement que tu portes sur toi.
-      Si tu rumines encore, fais une pause plutôt que de forcer une analyse exhaustive.
+    answer: Il n’existe pas de délai optimal démontré ici. Note les moments clés pendant que tu t’en souviens,
+      puis reprends l’analyse quand tu peux distinguer tes décisions du jugement que tu portes sur toi. Si tu
+      rumines encore, fais une pause plutôt que de forcer une analyse exhaustive.
   - question: La résilience s'entraîne-t-elle ou est-elle une disposition innée ?
-    answer: >-
-      Les deux. Il existe une composante tempéramentale à la résilience : certaines personnes rebondissent naturellement
-      plus vite. Bonanno (2004) distingue plusieurs trajectoires après une épreuve. Cela ne démontre pas qu’un
-      protocole particulier améliore la résilience aux échecs ; les pistes proposées ici restent des adaptations pratiques.
+    answer: Bonanno distingue plusieurs trajectoires après une épreuve. Ces travaux ne permettent pas d’attribuer
+      une réaction à une cause innée chez un joueur ni de garantir qu’un protocole améliore sa résilience aux
+      échecs.
   - question: Comment éviter de refaire les mêmes erreurs après une défaite ?
-    answer: >-
-      Le protocole en trois étapes : (1) Identifier la cause précise de la défaite : pas 'j'ai mal joué le milieu de
-      jeu' mais 'j'ai sous-évalué la force de son Cavalier en c5 parce que je ne calculais que les menaces directes' ;
-      (2) Travailler spécifiquement cette faiblesse (exercices tactiques sur les Cavaliers centraux, par exemple) ; (3)
-      Rejouer mentalement la position clé avec la correction. Ce cycle transforme chaque défaite en programme
-      d'entraînement ciblé.
+    answer: Une piste consiste à identifier une erreur précise, à travailler la difficulté correspondante, puis à
+      rejouer la position avec la correction. C’est une proposition d’entraînement, sans garantie qu’elle
+      empêche la même erreur ou explique toutes les défaites.
 ---
 
 Une partie perdue peut te suivre longtemps après la poignée de main. Tu revois le coup, puis tu passes du constat « j’ai raté cette menace » au jugement « je suis nul ». C’est ce passage qui mérite d’être interrogé.
@@ -123,13 +118,13 @@ Si tu relis la partie en répétant seulement que tu aurais dû gagner, fais une
 
 ## La distanciation de soi : une technique contre-intuitive
 
-[Ethan Kross](https://ethan.kross.com) (University of Michigan) a développé une technique de régulation émotionnelle qu'il appelle la **distanciation de soi** (*self-distancing*). Son principe : au lieu de s'immerger dans ses émotions à la première personne ("je suis tellement en colère"), se désigner par son prénom, à la troisième personne ("Camille est en colère : pourquoi ?").
+[Ethan Kross](https://www.ethankross.com/about) (University of Michigan) a développé une technique de régulation émotionnelle qu'il appelle la **distanciation de soi** (*self-distancing*). Son principe : au lieu de s'immerger dans ses émotions à la première personne ("je suis tellement en colère"), se désigner par son prénom, à la troisième personne ("Camille est en colère : pourquoi ?").
 
 Kross et collègues (2014) étudient notamment la prise de parole et les premières impressions sous stress. L’usage du prénom et de pronoms autres que « je » favorise la prise de distance dans ces tâches. L’article ne teste pas l’analyse d’une partie d’échecs.
 
 Appliqué aux échecs après une défaite : plutôt que "je suis nul, j'aurais dû voir ça", reprends la partie en te nommant, comme si tu commentais celle d'un autre. "Vu de l'extérieur, Camille a bien géré les 25 premiers coups et a raté le moment de simplification au coup 26. Qu'est-ce qu'elle peut faire différemment la prochaine fois ?" Tu peux remplacer Camille par ton prénom et voir si cette formulation t’aide à décrire les faits plus calmement.
 
-Cette technique semble artificielle au premier abord. Elle l'est, et c'est son intérêt : elle crée délibérément un écart entre toi et ton état émotionnel, qui permet une réflexion de meilleure qualité.
+Cette formulation peut sembler artificielle. Tu peux l’essayer et observer si elle t’aide à décrire les faits avec davantage de recul ; l’étude citée ne garantit pas une analyse échiquéenne de meilleure qualité.
 
 ## Le protocole de rebond en 5 étapes
 

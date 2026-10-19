@@ -1,5 +1,5 @@
 ---
-title: "Pourquoi ton cerveau préfère avoir raison plutôt qu'apprendre"
+title: "Apprendre de ses décisions aux échecs : questionner ses explications"
 excerpt:
   "Une synthèse des questions utiles pour examiner tes décisions aux échecs, sans chaîne psychologique universelle ni méthode unique garantie."
 publishDate: "2027-05-25"
@@ -29,6 +29,7 @@ heroImage:
   src: /images/blog/pourquoi-ton-cerveau-prefere-avoir-raison-hero.webp
   alt: Une main présente une pièce de puzzle devant l’ouverture d’un mur circulaire.
 ogImage: /images/og/pourquoi-ton-cerveau-prefere-avoir-raison-og.webp
+
 ---
 
 Une analyse contredit ton jugement. Tu peux être curieux, agacé, surpris, ou ressentir plusieurs choses à la fois. Aucune de ces réactions ne prouve que ton cerveau aurait choisi de protéger ton image plutôt que d’apprendre.

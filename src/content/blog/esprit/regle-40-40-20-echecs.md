@@ -67,7 +67,7 @@ Voici l’application arithmétique de la formule, à titre d’exemple :
 | Finales | 24 minutes | Jouer une finale élémentaire des deux côtés |
 | Ouvertures | 12 minutes | Revoir le premier moment où tu as hésité dans une partie |
 
-![Exemple d’une heure répartie en 24 minutes de tactique, 24 minutes de finales et 12 minutes d’ouvertures.](/images/regle-40-40-20-02-session-type.svg)
+![Exemple de répartition pour une heure](/images/regle-40-40-20-02-session-type.svg)
 
 Cette séance est une proposition. Si tu disposes de moins de temps, tu peux répartir les thèmes sur la semaine au lieu de les aborder tous chaque jour.
 

@@ -26,9 +26,7 @@ keyTakeaways:
   - "Distingue théorie, hypothèse, exemple et résultat d'enquête."
   - "Les vingt-cinq questions t'aident à expliquer la portée et les limites de tes documents."
 seoTitle: "Guide Grand Oral SES HGGSP Échecs 2026 : script 10 min + Bourdieu + jury"
-seoDescription: >-
-  Méthodologie, script 10 min, données économiques et géopolitiques, Bourdieu et capital culturel, 25 questions jury
-  rédigées. Le guide complet imprimable pour ton Grand Oral SES ou HGGSP avec les échecs.
+seoDescription: "Préparer un Grand Oral SES ou HGGSP avec les échecs : quatre angles, un plan de dix minutes, des documents vérifiables et vingt-cinq questions pour l’échange."
 ogImage: /images/og/guide-grand-oral-echecs-ses-hggsp-watermarked-og.webp
 heroImage:
   src: /images/blog/guide-grand-oral-echecs-ses-hggsp-watermarked-hero.webp

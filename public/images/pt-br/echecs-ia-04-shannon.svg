@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="160" viewBox="0 0 380 160" role="img" aria-labelledby="t4" xml:lang="pt-BR"><title id="t4">Ordem de grandeza do número de partidas de xadrez de Shannon</title>
+<rect fill="#fff" width="380" height="160" />
+<text x="190" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a2e" font-family="system-ui,sans-serif">Número de Shannon (ordem de grandeza)</text>
+<text x="190" y="70" text-anchor="middle" font-size="28" font-weight="700" fill="#e94560" font-family="Consolas,monospace">≈ 10^120</text>
+<text x="190" y="100" text-anchor="middle" font-size="11" fill="#444" font-family="system-ui,sans-serif">Partidas distintas possíveis (estimativa dependente do modelo)</text>
+<text x="190" y="130" text-anchor="middle" font-size="10" fill="#666" font-family="system-ui,sans-serif">Claude Shannon - teoria da informação e jogos</text>
+<text x="190" y="150" text-anchor="middle" font-size="10" fill="#666" font-family="system-ui,sans-serif">Uma referência de escala, não uma lista exaustiva</text>
+</svg>

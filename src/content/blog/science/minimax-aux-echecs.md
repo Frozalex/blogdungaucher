@@ -34,6 +34,7 @@ heroImage:
   alt: Un arbre élagué au-dessus d'une pièce d'échecs, la plupart des branches
     coupées net.
 ogImage: /images/og/minimax-aux-echecs-og.webp
+
 ---
 
 Il y a quelque chose d'étrange dans le fait que la stratégie aux échecs, ce jeu millénaire d'intuition et d'art, puisse être réduite à un algorithme de quelques lignes. L'algorithme minimax fait exactement cela : il formalise le coeur du raisonnement stratégique dans un jeu à somme nulle en une récurrence mathématique élégante. Et ce n'est pas seulement l'âme des moteurs d'échecs modernes : c’est aussi une analogie utile pour organiser ton calcul, sans constituer une description démontrée de ton cerveau. (Pour le cadre théorique général dont minimax est l'algorithme central, voir [théorie des jeux aux échecs](/fr/blog/theorie-des-jeux-aux-echecs/) ; pour le théorème qui garantit l'existence d'une valeur à toute position, [le paradoxe de Zermelo](/fr/blog/paradoxe-de-zermelo/).)
@@ -62,7 +63,7 @@ Stockfish a intégré l’évaluation neuronale NNUE en 2020. Il faut distinguer
 
 L'algorithme minimax brut est d'une inefficacité spectaculaire. Pour une profondeur de recherche de $d$ demi-coups et un facteur de branchement de $b$ (nombre moyen de coups légaux), le nombre de feuilles est de l’ordre de $b^d$ dans le modèle uniforme. À $b = 35$ et $d = 10$, c'est $35^{10} \approx 2{,}8 \times 10^{15}$ positions. Impossible en pratique.
 
-L'[élagage alpha-bêta](https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%AAta), développé indépendamment par plusieurs chercheurs dans les années 1950-1960 et formalisé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)), réduit le coût en élaguant les branches qui ne peuvent pas influencer la décision finale.
+L'[élagage alpha-bêta](https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%AAta), développé indépendamment par plusieurs chercheurs dans les années 1950-1960 et formalisé par John McCarthy, réduit le coût en élaguant les branches qui ne peuvent pas influencer la décision finale.
 
 Le principe est le suivant : si tu as déjà trouvé une option pour Blanc qui garantit un résultat de valeur $\alpha$, et que tu explores une branche où Noir peut forcer un résultat inférieur à $\alpha$ pour Blanc, cette branche peut être abandonnée. Blanc ne la choisira jamais, car il a déjà mieux.
 
@@ -92,7 +93,7 @@ Les moteurs d'échecs modernes comme Stockfish ajoutent de nombreuses techniques
 
 **Tables de transposition** : un cache de positions déjà analysées. Si la même position est atteinte par des ordres de coups différents (transposition), le moteur réutilise l'analyse précédente au lieu de la recalculer. Les tables de transposition peuvent économiser des ordres de grandeur en temps de calcul.
 
-![Tables de transposition : deux ordres de coups différents mènent à la même position — sans table le moteur l'analyse deux fois, avec table (hachage Zobrist) le second chemin reçoit le résultat instantanément depuis le cache.](/images/minimax-04-transposition.svg)
+![Deux chemins peuvent rejoindre une même position](/images/minimax-04-transposition.svg)
 
 **Approfondissement itératif** : au lieu d'effectuer directement une recherche à profondeur $d$, le moteur enchaîne des recherches successives à profondeur 1, 2, 3, ..., $d$. Chaque itération fournit un meilleur ordonnancement des coups pour l'itération suivante, améliorant l'efficacité de l'élagage.
 
@@ -116,7 +117,7 @@ AlphaZero n'utilise pas minimax classique mais une [Monte Carlo Tree Search](htt
 
 Ce qui a frappé la communauté des échecs n'est pas seulement la performance d'AlphaZero, mais son style de jeu. AlphaZero joue de façon audacieuse et créative, avec des sacrifices de matériel à long terme et une préférence pour l'activité des pièces sur les avantages matériels immédiats. Ce style ressemble plus à un joueur humain intuitif qu'à un moteur de force brute.
 
-AlphaZero a montré que minimax n'est pas la seule voie vers la maîtrise des échecs. L'apprentissage par renforcement peut produire une compréhension différente et parfois plus profonde du jeu. (Le match AlphaZero-Stockfish de 2017 reste l'épisode fondateur de cette révolution. Pour le mur combinatoire qui rend ces approches nécessaires, voir [pourquoi les échecs sont un problème presque impossible](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/) ; pour les zones où ces algorithmes sont les plus stressés, [la théorie du chaos aux échecs](/fr/blog/theorie-du-chaos-aux-echecs/).)
+AlphaZero associe apprentissage par renforcement et recherche MCTS, une autre architecture que la recherche alpha-bêta classique. Son score dans un match ne mesure pas une « compréhension plus profonde » ni une distance à la stratégie optimale. Les protocoles sont présentés dans [AlphaZero et Stockfish](/fr/blog/echecs-alphazero-stockfish/), les coûts de recherche dans [les limites du calcul](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/) et les limites de l’analogie du chaos dans [la théorie du chaos aux échecs](/fr/blog/theorie-du-chaos-aux-echecs/).
 
 ## Minimax comme outil pour ton calcul
 

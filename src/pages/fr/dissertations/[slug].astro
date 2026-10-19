@@ -26,6 +26,7 @@ const postUrl = `/fr/dissertations/${entry.id}/`;
 const absoluteUrl = new URL(postUrl, siteConfig.siteUrl).toString();
 
 const readingTime = calculateReadingTime(entry.body ?? "");
+const illustration = (entry.body ?? "").match(/!\[[^\]]*\]\((\/images\/[^)\s]+)\)/)?.[1];
 
 const structuredData = [
   buildBreadcrumbJsonLd([
@@ -38,7 +39,14 @@ const structuredData = [
     "@type": "Article",
     headline: entry.data.title,
     description: entry.data.seoDescription ?? entry.data.excerpt,
-    author: { "@type": "Person", name: entry.data.author },
+    author: {
+      "@type": "Person",
+      name: entry.data.author,
+      ...(entry.data.author === "Le Gaucher"
+        ? { "@id": `${siteConfig.siteUrl}/fr/about/#person`, url: `${siteConfig.siteUrl}/fr/about/` }
+        : {}),
+    },
+    ...(illustration ? { image: new URL(illustration, siteConfig.siteUrl).toString() } : {}),
     datePublished: entry.data.publishDate.toISOString(),
     ...(entry.data.updatedDate
       ? { dateModified: entry.data.updatedDate.toISOString() }

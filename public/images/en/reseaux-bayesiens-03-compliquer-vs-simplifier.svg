@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="titre" lang="en"><title id="titre">Comparing choices with explicit assumptions</title><rect width="900" height="360" rx="20" fill="#faf8ef" />
+<text x="40" y="38" font-family="Georgia,serif" font-size="23" fill="#252820">Comparing choices with explicit assumptions</text>
+<rect x="40" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="56" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Define</text>
+<text x="56" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Complicate or exchange</text>
+<text x="56" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Which possible outcomes?</text>
+<rect x="325" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="341" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Estimate</text>
+<text x="341" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Hypothetical probabilities</text>
+<text x="341" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Risks for both sides</text>
+<rect x="610" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="626" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Check</text>
+<text x="626" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Data and calibration</text>
+<text x="626" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Sensitivity to assumptions</text>
+<text x="40" y="310" font-family="system-ui,sans-serif" font-size="15" fill="#5d6555">An opponent’s blunder does not automatically mean you win.</text>
+</svg>

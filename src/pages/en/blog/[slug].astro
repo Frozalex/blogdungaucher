@@ -149,7 +149,7 @@ const HERO_SIZES = "100vw";
    760 px. Sans `sizes`, six cartes tiraient six originaux 1200 px (~680 Ko). */
 const RC_SIZES = "(max-width: 760px) 46vw, 280px";
 
-const summaryVideoSrc = post.data.summaryVideo?.trim();
+const summaryVideoSrc = enEntry?.data.summaryVideo?.trim();
 const showSummaryVideo =
   !!summaryVideoSrc && isPublicAssetAvailable(summaryVideoSrc);
 
@@ -298,7 +298,7 @@ const structuredData = [
             title={`Video summary: ${displayTitle}`}
             eyebrow="Video summary of the article"
             accentColor={category.accent}
-            note={post.data.summaryVideoNote}
+            note={enEntry?.data.summaryVideoNote}
           />
         )}
 

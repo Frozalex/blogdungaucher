@@ -1,190 +1,195 @@
-﻿---
+---
 heroImageAlt: "Vinheta em pixel art: computador retrô com uma árvore de decisão
   luminosa na tela e título sobre complexidade matemática do xadrez e IA."
-title: "Por que o xadrez é um problema matemático (quase) impossível e como a IA consegue mesmo assim"
-excerpt: >-
-  A árvore de lances explode, o número de Shannon dá vertigem, e ainda assim um motor te corrige em alguns segundos.
-  O xadrez é "impossível" de resolver? Veja o que a matemática, a informática e a IA realmente fazem por baixo do capô.
-seoTitle: "Xadrez problema matemático impossível: complexidade, Shannon, IA"
-seoDescription: "10^120 partidas possíveis, complexidade EXPTIME, Stockfish a 3500 Elo: por que resolver o xadrez permanece matematicamente impossível e como a IA contorna o muro."
-frSlug: pourquoi-echecs-probleme-mathematique-impossible-et-ia
-faq:
-  - question: "O xadrez será \"resolvido\" algum dia ?"
-    answer: >-
-      No sentido forte (resultado provado a partir da posição inicial, como nas damas desde 2007),
-      <strong>provavelmente nunca</strong>. O limite de $10^{120}$ + o resultado EXPTIME-completo tornam a
-      resolução fisicamente inatingível por força bruta. Uma prova <strong>indireta</strong> (por
-      simetria, invariante, argumentação teórica) continua teoricamente possível, mas sem nenhuma pista séria. A
-      computação quântica reduz o limite à metade (Grover) : $10^{60}$ continua astronômico.
-  - question: "Qual é a diferença entre \"resolver\" e \"vencer o humano\" ?"
-    answer: >-
-      "Resolver" = provar o resultado matemático exato sob jogo perfeito. "Vencer o humano" = estar em média
-      mais próximo da estratégia ótima que um cérebro humano. O Stockfish vence qualquer humano com ~3500
-      de Elo sem nunca resolver. Inversamente, um programa que resolvesse o xadrez não seria necessariamente
-      mais forte que o Stockfish <em>por lance</em> : a resolução é uma verdade global, não uma superioridade
-      local.
-  - question: "Por que o AlphaZero \"venceu\" o Stockfish se os dois são aproximações ?"
-    answer: >-
-      Porque, num dado momento, a aproximação por rede neural + MCTS do AlphaZero estava mais
-      próxima da verdade de Zermelo que a aproximação por alfa-beta + avaliação manual do Stockfish
-      (versão 8 da época). Desde 2020, o Stockfish incorporou o NNUE (rede neural eficiente na
-      avaliação) e retomou a vantagem nos torneios TCEC. A corrida continua.
-  - question: "O número de Shannon é uma medida exata ?"
-    answer: >-
-      Não. É uma <strong>estimativa de ordem de grandeza</strong> do número de partidas possíveis ($\sim
-      10^{120}$), não do número de posições legais distintas ($\sim 10^{43}$ segundo estimativas mais
-      recentes, ainda em debate). A confusão entre as duas é muito frequente. A distinção importa :
-      para resolver o xadrez, é o número de posições que conta (para armazenar), mas é a árvore
-      das partidas que limita o tempo de exploração.
-  - question: "Se um humano não pode calcular tudo, para que serve progredir ?"
-    answer: >-
-      Para duas coisas : (1) melhorar a sua <strong>função de avaliação interna</strong> (senso posicional), (2)
-      melhorar a sua <strong>poda intuitiva</strong> (descartar rapidamente os candidatos ruins). É
-      exatamente a estratégia dos motores. A diferença entre 1200 e 2400 de Elo não é uma explosão de
-      cálculo bruto : é uma aproximação muito mais fina da verdade com praticamente o mesmo número de
-      posições efetivamente examinadas.
+title: "Por que resolver o xadrez é tão difícil e como a IA consegue jogar"
+excerpt: "A árvore dos lances cresce rapidamente, mas um motor encontra boas decisões em segundos. Entenda o que busca, avaliação e aprendizado permitem fazer sem resolver todo o jogo."
+seoTitle: "Resolver o xadrez: complexidade, Shannon e limites da IA"
+seoDescription: "Número de Shannon, busca exaustiva, avaliação e IA: por que o xadrez não está resolvido, sem confundir dificuldade prática com impossibilidade demonstrada."
+frSlug: "pourquoi-echecs-probleme-mathematique-impossible-et-ia"
+faq: [{"question": "O xadrez será resolvido algum dia?", "answer": "Não sabemos. A exploração exaustiva está fora do alcance dos métodos atuais, mas isso não exclui outra forma de prova. O resultado EXPTIME trata de uma generalização do jogo, não de uma impossibilidade demonstrada para o tabuleiro 8×8."}, {"question": "Qual a diferença entre resolver o jogo e vencer um humano?", "answer": "Resolver exige uma prova do resultado com jogo perfeito. Ganhar partidas contra humanos mede desempenho em certas condições, sem estabelecer essa prova. Classificações de motores e de humanos não são diretamente intercambiáveis."}, {"question": "O número de Shannon é exato?", "answer": "Não. A ordem de grandeza 10^120 descreve o tamanho estimado de uma árvore de partidas, não uma contagem exata de posições legais distintas."}]
 ---
 
-Você já viveu esse paradoxo : os aplicativos e a mídia vendem o [xadrez](https://pt.wikipedia.org/wiki/Xadrez) como um objeto de complexidade cósmica, um jogo onde cada jogador traça uma estratégia a longo prazo; depois você abre um aplicativo, joga um lance razoável, e o motor te corrige e te explica uma linha que você sozinho jamais encontraria.
+Você já viveu esse paradoxo: aplicativos e mídia apresentam o [xadrez, em francês](https://fr.wikipedia.org/wiki/%C3%89checs) como um objeto de complexidade imensa, no qual cada jogador traça uma estratégia de longo prazo; depois você abre um aplicativo, faz um lance razoável e o motor corrige, mostrando uma linha que não encontraria sozinho.
 
-Então o quê? Pode-se realmente reduzir tudo a fórmulas? Esse jogo é um problema matemático ao qual a matemática e a informática trazem respostas parciais, ou é uma lenda que se repete para parecer profundo? A resposta se dá em duas etapas : essa disciplina é impossível de tratar por força bruta em todo o espaço das partidas, mas se torna jogável num nível sobre-humano assim que você aceita medir a realidade graças a programas que combinam exploração, avaliação, poda e, hoje, aprendizado em máquinas muito potentes.
+Então é possível reduzir tudo a fórmulas? É um problema matemático ao qual matemática e computação oferecem respostas parciais ou uma lenda repetida para parecer profundo? A resposta tem duas etapas: explorar por força bruta todo o espaço das partidas está fora do alcance dos recursos atuais, mas é possível jogar em nível sobre-humano com programas que combinam exploração, avaliação, poda e, hoje, aprendizado em máquinas poderosas.
 
-A verdade é mais interessante do que o mito : nenhuma lista finita de lances "fecha" o jogo como um enunciado formal fechado e, ainda assim, programas batem regularmente os melhores jogadores humanos porque não buscam a perfeição absoluta, apenas uma decisão boa o suficiente frente a um adversário real.
+![Esquema de um tabuleiro de xadrez 8 por 8](/images/pt-br/echecs-ia-01-plateau.svg)
 
-## O tabuleiro visto por dentro : um grafo de estados, não um caos
+A realidade é mais interessante que o mito: não se conhece uma solução completa desde a posição inicial e, ainda assim, programas vencem regularmente os melhores humanos, sem demonstrar perfeição absoluta, encontrando decisões suficientemente fortes contra adversários reais.
 
-Para um matemático ou um cientista da computação, o [xadrez](https://pt.wikipedia.org/wiki/Xadrez) oferece uma qualidade rara : as regras são exatas, públicas, e o jogo é determinístico. Um [Cavalo](https://pt.wikipedia.org/wiki/Cavalo_(xadrez)) sempre salta em L, um Bispo permanece em sua cor : cada lance legal é reproduzível, sem acaso nem surpresa de regra.
+## O tabuleiro por dentro: um grafo de estados, não um caos
 
-- uma posição completa (peças, vez, roque, en passant…) = um estado do jogo;
-- um lance legal = uma transição para outro estado;
-- uma partida = uma trajetória, ou seja, uma sequência de estados num espaço gigantesco.
+Para a matemática ou a computação, o [xadrez, em francês](https://fr.wikipedia.org/wiki/Jeu_d%27%C3%A9checs) tem uma qualidade valiosa: regras exatas, públicas e determinísticas. Um [cavalo, em francês](https://fr.wikipedia.org/wiki/Cavalier_(jeu_d%27%C3%A9checs)) sempre salta em L, um bispo fica na sua cor: cada lance legal é reproduzível, sem acaso nem surpresa de regra, mesmo que um humano imprevisível provoque incerteza.
 
-Isso pode ser visto como um [grafo orientado](https://pt.wikipedia.org/wiki/Grafo_dirigido): cada nó é um estado, cada aresta é um lance legal; a partir de um estado fixado, pode-se imaginar uma árvore de exploração onde os jogadores alternam os ramos.
+- Uma posição completa, com peças, vez, roque e en passant, é um estado do jogo.
+- Um lance legal é uma transição para outro estado.
+- Uma partida é uma trajetória, uma sequência de estados em um espaço gigantesco.
 
-## A árvore de lances : por que "eu calculo tudo" é um mito
+Formalmente, pode ser visto como um [grafo dirigido, em francês](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9): cada nó é um estado e cada aresta um lance legal. A partir de um estado fixo, também é possível imaginar uma árvore de exploração em que os jogadores alternam os ramos. Esse modelo é detalhado em [teoria dos jogos no xadrez](/pt-br/blog/teoria-dos-jogos-no-xadrez/), com outra perspectiva nos [equilíbrios das aberturas](/pt-br/blog/grafos-de-nash-equilibrio-aberturas/).
 
-Em seu nível de clube, você talvez já tenha ouvido um jogador dizer : "Calculei tudo." É uma frase que soa bem, mas é quase sempre falsa : mesmo os grandes mestres e campeões não percorrem nenhuma fração completa da árvore; do jogador de clube ao grande mestre, cada um mal toca uma ínfima parte dos ramos. Eles calculam uma pequena parte, e fazem isso bem.
+![Grafo dirigido dos lances possíveis no xadrez](/images/pt-br/echecs-ia-02-graphe.svg)
 
-A literatura costuma notar $b$ o número médio de lances possíveis (fator de ramificação), $d$ a profundidade explorada em semilances (*plies*), e $N(b,d)$ o número aproximado de nós a explorar:
+## A árvore dos lances: por que “calculei tudo” costuma ser exagero
 
-$$N(b,d) \approx b^d$$
+No clube, talvez você já tenha ouvido “calculei tudo”. A frase soa bem, mas em uma posição ampla quase nunca é literal: grandes mestres e campeões também percorrem apenas parte da árvore. Selecionam uma parte pequena e a calculam bem.
 
-No meio-jogo, $b$ gira frequentemente em torno de 30-40. Se você toma $b=35$, então a $d=6$ já é enorme, a $d=10$ é astronômico, a $d=16$ é outro planeta. O cérebro humano não foi concebido para percorrer milhões de ramos : foi concebido para sobreviver, reconhecer padrões, economizar energia : e isso é excelente, porque é exatamente o que fazem também os motores modernos, combinando algoritmo e heurística.
+Os livros costumam representar por \(b\) a quantidade média de lances possíveis, o fator de ramificação, por \(d\) a profundidade em meios-lances, *plies*, e por \(N(b,d)\) a quantidade aproximada de nós a explorar. Uma aproximação ingênua fornece \(N(b,d) \approx b^d\). Ao acrescentar profundidade, não se soma apenas um pouco de trabalho: o crescimento é exponencial. Isso explica por que até máquinas rápidas ficam limitadas pelo tempo e pela memória disponíveis.
 
-Para deter essa explosão, não há magia : é preciso cortar, estimar, ordenar os lances.
+$$
+N(b,d) \approx b^d
+$$
 
-## O número de Shannon : o "uau" que não é apenas um gimmick
+Em um modelo simplificado, considere um fator de ramificação constante \(b=35\). O número de folhas cresce como \(b^d\), e aumentar a profundidade rapidamente custa caro. Em uma partida real, a quantidade de lances legais varia com a posição. Selecionar candidatos como humano e buscar com um motor podem ser comparados como analogia prática; não são, por isso, o mesmo mecanismo.
 
-[Claude Shannon](https://pt.wikipedia.org/wiki/Claude_Shannon), professor no [MIT](https://pt.wikipedia.org/wiki/Instituto_de_Tecnologia_de_Massachusetts) e pai da [teoria da informação](https://pt.wikipedia.org/wiki/Teoria_da_informa%C3%A7%C3%A3o), colocou no meio do século XX uma questão matemática : quantas partidas de xadrez são possíveis? Sua estimativa, tornada famosa, chega a $10^{120}$, o [número de Shannon](https://en.wikipedia.org/wiki/Shannon_number). Atenção : esse número não é uma verdade gravada em mármore; é uma medida para captar a escala, não uma lista exaustiva de configurações alcançáveis. O que torna isso fascinante é que essa impossibilidade não vem de um detalhe técnico mas de uma lei profunda : o espaço dos possíveis é tão vasto que "explorar tudo" está fora de alcance, mesmo para os algoritmos mais avançados.
+Para conter a explosão, não há mágica: é preciso cortar, estimar e ordenar os lances, métodos detalhados a seguir.
 
-## Por que esse jogo não está "resolvido" (e por que isso não impede de ganhar)
+![Crescimento de uma árvore: definir o modelo](/images/pt-br/echecs-ia-03-arbre.svg)
 
-Um jogo é "[resolvido](https://en.wikipedia.org/wiki/Solved_game)" no sentido da matemática quando o resultado do jogo perfeito (vitória, derrota, empate) é conhecido desde a posição inicial e/ou quando uma estratégia ótima está inteiramente descrita.
+## O número de Shannon: uma ordem de grandeza
 
-A tabela a seguir resume a diferença entre alguns jogos célebres e o xadrez:
+[Claude Shannon, em francês](https://fr.wikipedia.org/wiki/Claude_Shannon) propõe em 1950 uma ordem de grandeza de \(10^{120}\) sob as hipóteses do seu modelo, conhecida como [número de Shannon, em francês](https://fr.wikipedia.org/wiki/Nombre_de_Shannon). Não é uma contagem exata das partidas legais nem das configurações alcançáveis. A estimativa ilustra o custo de uma exploração exaustiva ingênua; não prova que nenhum método diferente possa resolver o jogo no futuro.
 
-| Jogo | Resolvido? | Comentário rápido |
+![Ordem de grandeza do número de partidas de xadrez de Shannon](/images/pt-br/echecs-ia-04-shannon.svg)
+
+## Por que o jogo não está resolvido e isso não impede vencer
+
+Um jogo está [resolvido, em francês](https://fr.wikipedia.org/wiki/Jeu_r%C3%A9solu), no sentido matemático, quando o resultado do jogo perfeito, vitória, derrota ou empate, é conhecido a partir da posição inicial e/ou uma estratégia ótima é inteiramente descrita. A [teoria dos jogos, em francês](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux), associada a [John von Neumann, em francês](https://fr.wikipedia.org/wiki/John_von_Neumann), oferece ferramentas para falar de jogadores racionais e [equilíbrio de Nash, em francês](https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash); aqui, a estrutura é principalmente a de um duelo de informação perfeita.
+
+A tabela resume a diferença entre alguns jogos conhecidos e o xadrez, a única tabela deste artigo.
+
+| Jogo | Resolvido? | Comentário |
 | --- | --- | --- |
-| [Jogo da velha](https://pt.wikipedia.org/wiki/Jogo_da_velha) | Sim | Espaço pequeno : estratégia ótima conhecida |
-| [Damas](https://pt.wikipedia.org/wiki/Damas) | Sim | Jogo perfeito = empate, prova massiva por cálculo |
-| **Xadrez** | Não | Espaço vasto demais; nenhuma prova completa de resultado |
-| [Go](https://pt.wikipedia.org/wiki/Go_(jogo)) | Parcialmente explorado | IA ([AlphaGo](https://pt.wikipedia.org/wiki/AlphaGo)) mudou o nível do debate |
+| [Jogo da velha, em francês](https://fr.wikipedia.org/wiki/Morpion) | Sim | Espaço pequeno e estratégia ótima conhecida |
+| [Damas inglesas, em francês](https://fr.wikipedia.org/wiki/Dames_anglaises) | Fracamente resolvidas | Posição inicial empatada com jogo perfeito; não abrange todas as variantes de damas |
+| **Xadrez** | Não | Espaço muito amplo; nenhuma prova completa do resultado |
+| [Go, em francês](https://fr.wikipedia.org/wiki/Go_%28jeu%29) | Parcialmente explorado | A IA [AlphaGo, em francês](https://fr.wikipedia.org/wiki/AlphaGo) mudou o nível de desempenho |
 
-Uma confusão frequente : "Se não está resolvido, um motor não pode ter certeza." Isso é correto no sentido formal, mas não é o objetivo. Na utilização real, um motor não precisa resolver a posição inicial para te bater : ele deve jogar suficientemente perto do ótimo nas situações reais. O teorema que garante que uma resposta *existe* (sem que se possa encontrá-la) é o paradoxo de Zermelo.
+Desconhecer o valor inicial não impede certezas locais: um mate forçado demonstrado ou uma base de finais aplicável pode oferecer um resultado exato no seu contexto. Uma avaliação heurística não tem essa garantia. Assim, um motor pode ter alto desempenho sem resolver o jogo inteiro. A diferença é aprofundada no [paradoxo de Zermelo](/pt-br/blog/paradoxo-de-zermelo/).
 
-### EXPTIME-completo : o resultado de complexidade que ninguém vai contornar
+### EXPTIME-completo: cuidado com a generalização
 
-No plano estrito da complexidade algorítmica, **o xadrez generalizado** (num tabuleiro $n \times n$) pertence à classe **EXPTIME-completo**: todo algoritmo correto para resolver a posição inicial exige um tempo exponencial em $n$. É o resultado de [Fraenkel e Lichtenstein (1981)](https://doi.org/10.1016/0097-3165(81)90016-9). EXPTIME-completo significa algo muito forte: **nenhum progresso algorítmico** tornará a resolução numa classe polinomial, salvo para quebrar uma hierarquia fundamental da teoria da complexidade. É um dos raros resultados onde se tem uma **prova de impossibilidade** em vez de uma simples ausência de solução.
+Fraenkel e Lichtenstein (1981) estudam o problema de decidir quem pode ganhar de uma posição arbitrária em uma generalização do xadrez no tabuleiro $n\times n$. O problema é EXPTIME-completo. Os autores esclarecem que o resultado diz pouco diretamente sobre o xadrez 8×8.
 
-Para o xadrez 8×8 especificamente (tamanho fixo, não generalizado), o estatuto formal é mais sutil : tecnicamente é um problema *finito*, portanto *decidível*. Mas o limite prático permanece $10^{120}$: decidível no sentido lógico, indecidível no sentido físico.
+É uma dificuldade no pior caso para uma família de problemas de tamanho variável. Não é um tempo de cálculo imposto a cada posição nem uma prova de impossibilidade física de resolver a posição inicial comum. O xadrez de tamanho fixo continua sendo um problema finito; “indecidível” não é a palavra adequada para um cálculo caro demais na prática.
 
-## O que faz um motor "clássico" : minimax, mas não ingênuo
 
-Pode-se resumir a estrutura dos motores tradicionais (tipo [Stockfish](https://pt.wikipedia.org/wiki/Stockfish)) em três blocos:
+## O que faz um motor clássico: minimax, mas não ingênuo
 
-- exploração : percurso da árvore de lances;
-- avaliação : estimar quem está melhor na posição;
-- otimizações : para não se afogar nos ramos.
+É possível resumir a estrutura dos motores tradicionais, como [Stockfish, em francês](https://fr.wikipedia.org/wiki/Stockfish), em três partes:
 
-A ideia por trás do [minimax](https://pt.wikipedia.org/wiki/Minimax) é quase filosófica : você busca maximizar sua vantagem; seu adversário busca minimizar sua vantagem; você escolhe o lance que maximiza o mínimo garantido frente ao melhor jogo do adversário:
+- Exploração: percorrer a árvore dos lances.
+- Avaliação: estimar quem está melhor na posição.
+- Otimizações: evitar se perder na quantidade de ramos.
 
-$$f(x) = \max_{m \in M} \min_{r \in R} f(x_{m,r})$$
+A ideia do minimax, em francês é quase filosófica: você busca maximizar sua vantagem; o adversário busca minimizá-la; você escolhe o lance que maximiza o mínimo garantido diante da melhor resposta. Uma versão simplificada lembra uma recorrência nos nós do grafo:
 
-Se você quiser uma tradução para o clube : minimax é "eu não jogo um lance que funciona apenas se o outro estiver dormindo." É uma lógica clara de prudência racional, não uma garantia contra o tilt, mas um modelo do "pior caso".
+$$
+f(x) = \max_{m \in M} \min_{r \in R} f(x_{m,r})
+$$
 
-## Alfa-beta : a arte de cortar sem arrependimento
+Na linguagem do clube, minimax é “não jogo um lance que só funciona se o outro estiver dormindo”. É uma lógica de prudência racional, não garantia contra o tilt, mas um modelo do pior caso.
 
-O [poda alfa-beta](https://pt.wikipedia.org/wiki/Poda_alfa-beta) é uma otimização do percurso minimax : seu objetivo não é encontrar outra verdade, mas não calcular o que não pode mais mudar a decisão. **Alfa** é o melhor valor já garantido para o jogador que maximiza; beta é o melhor valor já garantido para o jogador que minimiza; se um ramo não poderá jamais superar o que você já encontrou em outro lugar, você o corta.
+Minimax bruto leva a uma árvore grande demais: sem otimizações, o custo rapidamente fica proibitivo. A boa notícia é que muitos ramos são desnecessários quando se sabe cortá-los sem alterar o resultado. O algoritmo, os refinamentos, como negamax, null-move e tabelas de transposição, e as alternativas neurais são detalhados em [minimax no xadrez](/pt-br/blog/minimax-no-xadrez/).
 
-É o mesmo gesto que você faz quando calcula uma tática : você explora uma linha, vê que mesmo que tudo funcione, não obtém melhor do que outro plano, então para de se preocupar com ela. A consequência é enorme : com uma boa ordem dos lances, a poda alfa-beta pode reduzir drasticamente o número de nós explorados; o motor ganha profundidades "gratuitas" para a qualidade exibida na tela.
+![Minimax: maximizar o resultado contra a melhor resposta adversária](/images/pt-br/echecs-ia-05-minimax.svg)
 
-## A avaliação : o verdadeiro cerne, porque tudo é impossível de calcular
+## Alfa-beta: cortar sem mudar o valor
 
-Mesmo com a poda alfa-beta, você não pode ir até o fim da árvore : você chega em folhas de profundidade limitada, e deve responder a uma pergunta que parece mágica : "esta configuração, quanto vale?" Os motores "clássicos" usam uma função de avaliação feita de critérios como:
+A [poda alfa-beta, em francês](https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%AAta) otimiza a exploração minimax: não busca outra verdade, mas evita calcular o que já não pode mudar a decisão. **Alfa** é o melhor valor já garantido ao jogador que maximiza; beta, o melhor valor já garantido ao que minimiza. Se um ramo já não puder melhorar a escolha disponível, ele é cortado.
 
-- material;
-- estrutura de peões;
-- atividade das peças;
-- segurança do rei;
-- controle de casas (e muitos outros nos motores de ponta).
+É uma analogia com seu cálculo de uma tática: você explora uma linha, percebe que, mesmo funcionando, ela não oferece mais que outro plano e deixa de insistir. Com boa ordenação de lances, alfa-beta pode reduzir muito os nós explorados, permitindo ao motor aumentar a profundidade com o mesmo orçamento.
 
-Não é uma adição ingênua de pontos : os bons motores combinam heurísticas, ajustes e parâmetros otimizados para obter uma avaliação correlacionada ao resultado final sem atingir esse resultado final. Na vida real, é como julgar uma posição "promissora" sem calcular o mate em vinte e oito lances : você sabe reconhecer um esquema onde a iniciativa e o par de bispos "cheiram bem", mesmo que nenhuma linha sirva de prova completa.
+![Poda alfa-beta: cortar ramos sem mudar a decisão](/images/pt-br/echecs-ia-06-alphabeta.svg)
 
-## A IA : quando a máquina aprende a avaliar e a escolher, em vez de tudo ser escrito à mão
+## A avaliação: estimar sem calcular tudo
 
-Há alguns anos, uma ideia ganhou enorme espaço : em vez de codificar "à mão" uma avaliação sofisticada, torna-se possível *aprender* uma avaliação a partir de dados ou por auto-jogo. As [redes de neurônios](https://pt.wikipedia.org/wiki/Rede_neural_artificial) e o [aprendizado de máquina](https://pt.wikipedia.org/wiki/Aprendizado_de_m%C3%A1quina) estão no cerne dessa onda. A IA moderna brilha sobretudo em duas tarefas:
+Mesmo com alfa-beta, em geral você não chega ao fim da árvore: encontra folhas em profundidade limitada e precisa responder “quanto vale esta posição?”. Motores clássicos usam uma função de avaliação com critérios como:
 
-- avaliar uma posição de forma muito rica (representação comprimida);
-- propor bons lances candidatos para orientar a exploração.
+- Material.
+- Estrutura de peões.
+- Atividade das peças.
+- Segurança do rei.
+- Controle de casas e outros critérios dos motores avançados.
 
-Resultado: o motor não precisa explorar "tudo": ele explora melhor. Você pode vê-lo como uma versão industrializada do que fazem os jogadores fortes: eles não olham trinta e cinco lances ao acaso; selecionam alguns "sérios", depois calculam. A IA faz o mesmo com uma consistência e uma profundidade de treinamento que ultrapassam a intuição.
+Não é apenas uma soma ingênua de pontos: motores tradicionais combinam heurísticas e parâmetros otimizados. Stockfish anunciou em 2020 a integração de NNUE, avaliação neural, mantendo a busca alfa-beta. Essas abordagens combinam busca e aprendizado para avaliar sem chegar ao resultado final. É comparável, como analogia, a julgar uma posição promissora sem calcular um mate em 28 lances: iniciativa e par de bispos podem parecer bons mesmo sem uma prova completa. O motor formaliza critérios de avaliação e os aplica repetidamente. O artigo sobre [a teoria do caos no xadrez](/pt-br/blog/teoria-do-caos-no-xadrez/) distingue a analogia de uma instabilidade tática de uma prova de caos matemático.
 
-O ponto espetacular de certas abordagens é o auto-jogo : uma máquina se enfrenta a si mesma, aprende das posições que gera, melhora suas avaliações, e recomeça. Não é um milagre, é um ciclo simples:
+![Avaliar uma posição em profundidade limitada](/images/pt-br/echecs-ia-07-evaluation.svg)
 
-1. gerar experiências;
-2. aprender a prever o que leva a bons resultados;
-3. reforçar as escolhas ganhadoras;
-4. iterar.
+## IA: aprender a avaliar e escolher em vez de escrever tudo à mão
 
-O que é fascinante é que a partir de um jogo com regras estritas, pode-se fazer emergir preferências estratégicas sem escrevê-las em português linha por linha.
+Nos últimos anos, ganhou espaço a ideia de *aprender* uma avaliação a partir de dados ou autojogo, em vez de escrever toda a função à mão. [Redes neurais, em francês](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) e [aprendizado de máquina, em francês](https://fr.wikipedia.org/wiki/Apprentissage_automatique) estão no centro dessa mudança. IA não significa apenas “calcular mais”: essas abordagens ajudam em duas tarefas:
 
-## IBM face a Kasparov : um dia histórico para o software (sem "resolver" o jogo)
+- Avaliar uma posição com uma representação aprendida.
+- Propor lances candidatos para orientar a exploração.
 
-Em 1997, o [Deep Blue](https://pt.wikipedia.org/wiki/Deep_Blue) bate [Garry Kasparov](https://pt.wikipedia.org/wiki/Garry_Kasparov), então [campeão mundial](https://pt.wikipedia.org/wiki/Campe%C3%A3o_mundial_de_xadrez) de xadrez, contra uma máquina [IBM](https://pt.wikipedia.org/wiki/IBM) concebida especificamente para o jogo. Esse sucesso marca o século XX : o mundo inteiro descobre o poder do cálculo especializado.
+O motor não precisa explorar tudo: seleciona a busca. A seleção pode lembrar a de um jogador forte que escolhe candidatos antes de calcular, mas essa comparação não demonstra uma equivalência entre a rede e a intuição humana.
 
-No entanto, esse sucesso não resolve o xadrez no sentido teórico : uma máquina pode ganhar partidas contra o melhor jogador humano sem possuir uma estratégia perfeita desde a posição inicial. Os programadores modernos extraem muito mais do jogo do que em 1997, sem abolir por isso a base matemática subjacente.
+Um aspecto importante de algumas abordagens é o autojogo: a máquina enfrenta a si mesma, aprende com as posições geradas, melhora as avaliações e recomeça. É um ciclo:
 
-## "Impossível" não significa "inutilizável" : a lição além do tabuleiro
+1. Gerar experiências.
+2. Aprender a prever o que conduz a bons resultados.
+3. Reforçar escolhas vencedoras.
+4. Repetir.
 
-O xadrez é um excelente modelo mental para problemas modernos, por exemplo:
+Partindo de regras estritas, podem surgir preferências estratégicas sem escrevê-las explicitamente em linguagem humana.
 
-- a [segurança informática](https://pt.wikipedia.org/wiki/Seguran%C3%A7a_da_informa%C3%A7%C3%A3o) (ataque / defesa);
-- a estratégia (antecipação de um adversário);
-- a otimização (onde investir o esforço da máquina);
-- a decisão quando você não pode saber tudo de uma vez.
+![Redes e busca: funções distintas](/images/pt-br/echecs-ia-08-reseau.svg)
 
-A mensagem mais importante não é "a IA é mágica" : é que o poder vem menos do fato de calcular tudo do que de calcular o que importa.
+## IBM contra Kasparov: um marco sem resolver o jogo
 
-Na sua escala de jogador, é a mesma lição : você não pode ver tudo; pode aprender a escolher melhor o que você olha. O tabuleiro amplifica o que você é : se você busca o controle em todo lugar, ele lhe devolverá isso; se você aceita progredir sem se definir por um único número, poderá transformar cada partida em terreno de experiência.
+Em 1997, [Deep Blue, em francês](https://fr.wikipedia.org/wiki/Deep_Blue) vence [Garry Kasparov, em francês](https://fr.wikipedia.org/wiki/Garry_Kasparov), então [campeão mundial, em francês](https://fr.wikipedia.org/wiki/Champion_du_monde_d%27%C3%A9checs), com uma máquina da [IBM, em francês](https://fr.wikipedia.org/wiki/IBM) projetada especificamente para xadrez. O sucesso marcou o século XX e mostrou a força do cálculo especializado.
 
-**Após a leitura:** abra o motor numa partida recente, repare o **primeiro lance** onde sua variante e a linha do motor divergem em mais de meio peão, depois rejoguei **essa posição sozinha** três vezes durante o dia (sem nova partida).
+Mesmo assim, não resolveu o xadrez no sentido teórico: uma máquina pode ganhar partidas do melhor humano sem ter uma estratégia perfeita desde o início. Programas modernos extraem mais do jogo que em 1997, sem eliminar suas questões matemáticas fundamentais.
+
+![Deep Blue contra Kasparov: um marco dos anos 1990](/images/pt-br/echecs-ia-09-deepblue.svg)
+
+## Modelos estratégicos e matemática: o que oferece a teoria dos jogos
+
+A [teoria dos jogos, em francês](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux) liga o xadrez a uma família de modelos em que participantes escolhem ações em resposta uns aos outros. O formalismo cruza economia, apoio à decisão e cálculo automatizado.
+
+Para o jogador de clube, a ideia central é simples: as regras não incluem um sorteio aleatório, mas existe incerteza sobre as escolhas adversárias. É uma estrutura próxima dos duelos estudados pela teoria dos jogos, com características próprias.
+
+**Provas.** Existem trabalhos sobre subproblemas, como finais, aberturas e tabelas de posições, mas nenhuma prova fixa o resultado do jogo perfeito desde a posição inicial: a exploração exaustiva continua impraticável.
+
+Os conceitos de [decidibilidade, em francês](https://fr.wikipedia.org/wiki/D%C3%A9cidabilit%C3%A9) e [complexidade algorítmica, em francês](https://fr.wikipedia.org/wiki/Complexit%C3%A9_des_algorithmes) ajudam a distinguir o que pode ser decidido do custo de fazê-lo. A limitação prática não empobrece o jogo: combina rigor e intuição.
+
+![O modelo matemático do xadrez](/images/pt-br/echecs-ia-10-theorie.svg)
+
+## “Impossível” não quer dizer inutilizável: além do tabuleiro
+
+O xadrez oferece analogias para problemas modernos, como:
+
+- [Segurança da informação, em francês](https://fr.wikipedia.org/wiki/S%C3%A9curit%C3%A9_informatique), ataque e defesa.
+- Estratégia e antecipação de um adversário.
+- Otimização, escolhendo onde investir esforço computacional.
+- Decisão quando não é possível saber tudo de uma vez.
+
+A ideia central não é “IA é mágica”: a força vem menos de calcular tudo que de selecionar o que importa.
+
+Na sua escala de jogador, a lição é semelhante: você não consegue ver tudo, mas pode aprender a escolher melhor o que examina. Aceitar o progresso sem se definir por um número permite usar cada partida como experiência.
+
+## O que isso muda para o jogador
+
+**Para experimentar.** Abra uma posição no seu programa de análise, com Stockfish local ou no navegador, e observe profundidade, avaliação e variantes.
+
+**No blog.**
+- [O xadrez melhora a matemática?](/pt-br/blog/xadrez-e-matematica/)
+- [Psicologia do enxadrista](/pt-br/blog/psicologia-do-jogador-de-xadrez/)
+- [Xadrez e cérebro](/pt-br/blog/xadrez-e-o-cerebro/)
+
+A exploração exaustiva ingênua ultrapassa os recursos atuais. Seleção, avaliação e poda permitem jogar em nível alto com orçamento limitado. A eficácia depende da posição, dos algoritmos e dos recursos; não demonstra impossibilidade matemática de resolver o jogo nem equivalência com o raciocínio humano.
+
+**Para aprofundar:** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/) e [arXiv](https://arxiv.org/).
+
+**Depois da leitura:** abra seu programa de análise, identifique o **primeiro lance** em que sua variante e a linha do motor divergem em mais de meio peão e jogue novamente **apenas essa posição** três vezes ao longo do dia, sem começar outra partida.
 
 ---
 
-## O que guardar
+## Fontes
 
-- A árvore das partidas é delimitada pelo **número de Shannon ($10^{120}$)**: nenhum algoritmo por força bruta chegará a percorrê-la
-- O xadrez generalizado é **EXPTIME-completo**: existe uma **prova de impossibilidade** de algoritmo polinomial
-- Os motores não *resolvem*, eles *aproximam*: minimax + alfa-beta + avaliação heurística + aprendizado
-- Bater o humano e resolver o jogo são dois problemas diferentes; Stockfish/AlphaZero fazem o primeiro, ninguém faz o segundo
-- Progredir como jogador é melhorar **sua função de avaliação interna** e **sua poda intuitiva**, exatamente como um motor
-- "Impossível" no sentido formal não significa "inutilizável" : a qualidade da triagem conta mais do que a quantidade de cálculo
+- Shannon, C. E. (1950), *Programming a Computer for Playing Chess*, Philosophical Magazine, 41, 256–275, [artigo original](https://d1yx3ys82bpsa0.cloudfront.net/chess/programming-a-computer-for-playing-chess.shannon.062303002.pdf), para a estimativa combinatória discutida.
 
-### Fontes e referências
-
-- **Shannon, C. E.** *Programming a Computer for Playing Chess.* Philosophical Magazine, Series 7, 41(314), 256-275, 1950.
-- **Fraenkel, A. S., & Lichtenstein, D.** *Computing a Perfect Strategy for n×n Chess Requires Time Exponential in n.* Journal of Combinatorial Theory, Series A, 31(2), 199-214, 1981.
-- **Knuth, D. E., & Moore, R. W.** *An Analysis of Alpha-Beta Pruning.* Artificial Intelligence, 6(4), 293-326, 1975.
-- **Silver, D., et al.** *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm.* arXiv, 2017.
-- **Campbell, M., Hoane, A. J., & Hsu, F.** *Deep Blue.* Artificial Intelligence, 134(1-2), 57-83, 2002.
-- **Allis, L. V.** *Searching for Solutions in Games and Artificial Intelligence.* PhD Thesis, University of Limburg, 1994.
+- Fraenkel, A. S. e Lichtenstein, D. (1981), *Computing a Perfect Strategy for n×n Chess Requires Time Exponential in n*, Journal of Combinatorial Theory, série A, 31, 199–214, [texto dos autores](https://kubokovac.eu/zlozitost/mat/chessExptime.pdf).
+- Russell, S. e Norvig, P. (sem data), *Adversarial Search*, capítulo de manual, [texto](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf), para minimax, alfa-beta e limites da busca.
+- Equipe Stockfish (2020), *Introducing NNUE Evaluation*, site oficial, [anúncio](https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/).
+- IBM (sem data), *Deep Blue*, arquivo da empresa, [história do match de 1997](https://www.ibm.com/history/deep-blue).

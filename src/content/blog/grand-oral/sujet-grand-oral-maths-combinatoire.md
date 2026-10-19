@@ -1,8 +1,6 @@
 ---
 title: "Sujet Grand Oral Maths : En quoi le jeu d'échecs constitue-t-il un modèle de la pensée combinatoire ?"
-excerpt: >-
-  Sujet entièrement rédigé pour le Grand Oral spécialité Maths : principe multiplicatif, nombre de Shannon, arbres
-  de dénombrement, croissance exponentielle. Texte de 10 minutes prêt à réciter.
+excerpt: "Une fiche de révision sur les arbres de coups, les hypothèses de dénombrement et l’ordre de grandeur de Shannon, avec renvoi au guide Maths complet."
 publishDate: "2026-05-05"
 category: grand-oral
 featured: false

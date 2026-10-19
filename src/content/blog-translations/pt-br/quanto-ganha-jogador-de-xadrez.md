@@ -1,237 +1,208 @@
-﻿---
+---
 heroImageAlt: Uma balança em que um grande troféu é levantado por três pequenas moedas.
-title: "Xadrez e dinheiro: por que os melhores jogadores do mundo não são ricos"
-excerpt: >-
-  Magnus Carlsen é o melhor jogador da história. Ganhou cerca de 2 milhões de dólares em premiação ao longo de
-  toda a carreira. Um tenista mediano do Top 100 fatura isso em um ano. O que será que acontece de verdade na
-  economia do xadrez?
-seoTitle: "Quanto ganha um jogador de xadrez? Salários, premiações e fortuna dos pros"
-seoDescription: >-
-  Quanto Magnus Carlsen ganha de verdade? Salário de um jogador de xadrez profissional, premiações e fortuna dos campeões, e por que os melhores do mundo não são tão ricos.
+
+
+
+
 frSlug: echecs-et-argent
+title: "Xadrez e dinheiro: premiações, renda e patrimônio dos jogadores"
+excerpt: >-
+  Premiações, renda líquida, valor de uma empresa e patrimônio privado não contam a mesma história. Uma leitura
+  dos ganhos de 2025 e dos limites dos dados públicos sobre a economia do xadrez.
+seoTitle: "Dinheiro no xadrez: prêmios de 2025 e patrimônio de Carlsen"
+seoDescription: >-
+  Premiações de 2025, renda dos Grandes Mestres e aquisição do Play Magnus: fontes datadas para distinguir prêmios,
+  salários, renda líquida e patrimônio privado, sem estimativas inventadas.
 faq:
-  - question: "Como ganha a vida um Grande Mestre \"comum\"?"
+  - question: Como um Grande Mestre pode ganhar a vida?
     answer: >-
-      A combinação mais comum: aulas particulares (50 a 200 €/h), trabalho como treinador num clube ou numa
-      federação nacional, alguns torneios por ano e, cada vez mais, criação de conteúdo ou venda de cursos no
-      Chessable. Poucos vivem de streaming: o mercado está saturado e é dominado por algumas grandes personalidades.
-  - question: "As jogadoras são remuneradas de forma diferente?"
+      Com competição, ensino, conteúdo ou contratos, conforme a situação. Nenhum preço por hora ou rating garante
+      renda líquida. Um orçamento precisa incluir despesas e tempo de trabalho não faturado.
+  - question: As jogadoras recebem de forma diferente?
     answer: >-
-      Sim, e a diferença é documentada. Os torneios femininos têm premiações bem menores que os torneios "open"
-      (mistos). A lógica econômica alegada é a de público: os torneios femininos atraem menos espectadores. É um
-      argumento circular: o público não cresce porque os investimentos não acontecem, e os investimentos não
-      acontecem porque o público é pequeno.
-  - question: "O Chess.com é realmente lucrativo?"
+      É preciso comparar eventos e acordos identificados. Uma dotação feminina, uma dotação aberta e o valor recebido
+      por uma jogadora são dados diferentes. As fontes não oferecem pesquisa de renda por trabalho comparável nem
+      causa única para as diferenças; a audiência, sozinha, não basta para explicá-las.
+  - question: O Chess.com é rentável?
     answer: >-
-      O Chess.com é uma empresa privada e não publica seus números. Mas a compra da Play Magnus por 83 milhões
-      de dólares e as aquisições do Chessable e de outras plataformas sugerem um valor de mercado de várias
-      centenas de milhões de dólares. A assinatura Premium (cerca de 15 €/mês) sobre 100 milhões de membros,
-      mesmo com uma taxa de conversão de 5%, representa uma receita considerável.
-  - question: "O xadrez poderia entrar nos Jogos Olímpicos?"
+      Os documentos citados não estabelecem sua rentabilidade atual. Uma aquisição, um preço de assinatura e um número
+      de contas não revelam faturamento real nem lucro. Uma taxa de conversão inventada não preenche essa lacuna.
+  - question: Os Jogos Olímpicos garantiriam mais dinheiro aos jogadores?
     answer: >-
-      A pergunta é feita com frequência. O Comitê Olímpico Internacional reconheceu a FIDE como federação
-      internacional em 1999. O xadrez já apareceu nos Jogos como modalidade de demonstração. A principal
-      objeção continua sendo o formato: uma competição olímpica de xadrez clássico é difícil de encaixar no
-      calendário, e os formatos curtos (rápido ou blitz) são vistos como menos legítimos. Entrar nos Jogos
-      aumentaria a visibilidade e provavelmente as premiações, mas o caminho ainda é longo.
+      Não. Reconhecimento de uma federação, inclusão no programa e remuneração de participantes são questões
+      diferentes. Não se deve orçar receita adicional com base em uma hipótese de inclusão futura.
 ---
 
-Em 2023, o Campeonato Mundial de xadrez colocou frente a frente Ding Liren e Ian Nepomniachtchi. A premiação total: 2 milhões de dólares. O vencedor embolsou 1,1 milhão.
+Em 2025, as premiações de torneios registradas pelo Chess.com para Magnus Carlsen ultrapassaram **US$ 1,45 milhão**. É um valor importante. Mesmo assim, ele não mostra quanto um Grande Mestre pode esperar ganhar, quanto Carlsen conserva depois das despesas nem qual é seu patrimônio.
 
-No mesmo ano, o Campeonato Mundial de Fórmula 1 distribuiu cerca de 1,2 bilhão de dólares entre as equipes. O Campeonato Mundial de tênis masculino (ATP Finals) ofereceu 15 milhões de dólares no total. O vencedor do Super Bowl recebeu um bônus pessoal de 150 mil dólares, mas o quarterback estrela ganhava 50 milhões por ano.
+A economia do xadrez fica mais clara quando separamos quatro coisas: **o fundo de prêmios de um evento, os prêmios de um jogador, sua renda líquida e seu patrimônio**. Misturá-las produz comparações impressionantes, mas enganosas.
 
-Magnus Carlsen, o melhor jogador da história do xadrez segundo praticamente todos os indicadores, acumulou cerca de 2,4 milhões de dólares em premiação ao longo de toda a sua carreira de torneios. Não por temporada. Na carreira inteira.
+Este artigo usa os dados de **2025** como um retrato datado. Explica o que mostram, o que deixam desconhecido e quais perguntas fazer antes de considerar uma atividade profissional. Sobre participação e representação, veja também [Xadrez e mulheres](/pt-br/blog/mulheres-no-xadrez/).
 
-Não é um problema de popularidade: o xadrez tem de 600 a 800 milhões de jogadores no mundo, segundo as estimativas. É um problema de estrutura econômica. E essa estrutura é mais interessante de destrinchar do que os números deixam supor. (Para o contexto sociológico em que esse problema se encaixa, em especial a sub-representação das mulheres nos circuitos pagos, veja [xadrez e mulheres](/pt-br/blog/mulheres-no-xadrez/).)
+## Os números: o que sabemos e o que ignoramos
 
-## Os números que chocam
+### Quanto ganha um jogador profissional
 
-### Quanto realmente ganha um jogador profissional
+O título de Grande Mestre reconhece um desempenho esportivo; não dá direito a um salário universal. Jogadores podem obter receitas de diferentes atividades:
 
-Comecemos por uma distinção essencial: existem cerca de 1.800 [Grandes Mestres](https://en.wikipedia.org/wiki/Grandmaster_(chess)) no mundo. A imensa maioria deles não vive de torneios. Viver de torneios no xadrez é privilégio de um grupo extremamente restrito, talvez uns cinquenta jogadores no mundo inteiro.
+- **Competição**: premiações, eventuais cachês de participação e contratos de equipe, conforme os eventos e acordos.
+- **Ensino**: aulas individuais ou coletivas, cursos intensivos e trabalho para clubes ou federações.
+- **Conteúdo**: livros, vídeos, cursos digitais, comentários ou transmissões ao vivo.
+- **Parcerias e eventos**: patrocínios, simultâneas e apresentações remuneradas.
 
-Para os demais, a realidade econômica é mais ou menos assim:
+Essas possibilidades não provam que a maioria vive de uma fonte específica. O preço anunciado por um treinador é o valor de um serviço, não sua renda líquida por hora: preparação, busca de alunos, cancelamentos e encargos também entram na conta.
 
-- **Aulas particulares**: um Grande Mestre pode cobrar entre 50 e 200 euros por hora, dependendo da fama e do mercado geográfico. É a principal fonte de renda da esmagadora maioria dos GMs.
-- **Treinador de seleção nacional**: alguns postos bem pagos, em geral em países onde o xadrez é prioridade nacional: Índia, China, Rússia, Azerbaijão.
-- **Streaming e conteúdo**: uma categoria de renda recente, ainda concentrada em poucas personalidades.
-- **Simultâneas e eventos corporativos**: aparições pagas em empresas ou festivais, de algumas centenas a alguns milhares de euros.
+As fontes usadas aqui não são uma pesquisa representativa da renda de todos os Grandes Mestres. Portanto, não permitem anunciar um salário de 20 mil a 40 mil euros para uma faixa de rating nem uma premiação anual “típica” de US$ 40 mil fora do Top 50.
 
-Um jogador na faixa de 2400-2500 de Elo, o que já representa uma elite mundial minúscula, pode esperar ganhar entre 20.000 e 40.000 euros por ano combinando essas fontes. É um salário razoável em certos países do Leste Europeu. É insuficiente nas grandes cidades da Europa Ocidental ou nos Estados Unidos.
+### Premiações de 2025: uma janela para as grandes competições
 
-### Comparação com outros jogos de competição
+O [balanço original do Chess.com](https://www.chess.com/article/view/biggest-chess-prizewinners-2025), publicado depois do fim do ano, acompanha principalmente grandes torneios internacionais individuais, em geral com primeiro prêmio de pelo menos US$ 10 mil. Estas são três linhas do levantamento:
 
-A desproporção fica gritante quando se compara com outros universos competitivos:
-
-| Competição | Premiação (edição recente) |
-| --- | --- |
-| Campeonato Mundial de xadrez 2023 | US$ 2.000.000 |
-| The International (Dota 2) 2023 | US$ 3.800.000 |
-| Worlds (League of Legends) 2023 | US$ 2.225.000 |
-| Mundial de Pôquer (WSOP Main Event) | ~US$ 12.000.000 |
-| ATP Finals (tênis) | US$ 15.000.000 |
-| Wimbledon (premiação total) | ~£ 50.000.000 |
-
-[Dota 2](https://pt.wikipedia.org/wiki/Dota_2), um videogame de estratégia lançado em 2013, oferece uma premiação maior que a do jogo com 1.500 anos de história da humanidade. O pôquer, que legalmente é um jogo de azar e não um esporte, distribui seis vezes mais em nível mundial.
-
-## Por que esse desequilíbrio existe
-
-### Uma estrutura organizacional fragmentada
-
-O xadrez não tem uma liga profissional unificada comparável à NFL, à NBA ou mesmo às grandes ligas de futebol. A [FIDE](https://pt.wikipedia.org/wiki/Federa%C3%A7%C3%A3o_Internacional_de_Xadrez) organiza os campeonatos oficiais, mas não é uma liga comercial. Não vende direitos de transmissão relevantes. Não administra os contratos dos jogadores. Não construiu um produto de espetáculo.
-
-Os grandes torneios, Tata Steel, Norway Chess, Grand Chess Tour, são organizados separadamente, por patrocinadores privados ou mecenas. Não existe calendário unificado, nem divisão de receita entre torneios, nem sistema de redistribuição que elevasse o padrão de vida do conjunto dos profissionais.
-
-Essa fragmentação tem uma consequência direta: cada torneio precisa encontrar o próprio financiamento, em geral com um único patrocinador. Quando esse patrocinador se retira, o torneio desaparece. A história do xadrez é marcada por torneios importantes que deixaram de existir por motivos puramente financeiros.
-
-### Um problema de público
-
-O esporte profissional vive de direitos de transmissão e de bilheteria. Os dois são estruturalmente difíceis no xadrez.
-
-**A bilheteria** é irrisória: uma partida de xadrez de alto nível se joga no silêncio, com duas pessoas sentadas diante de um tabuleiro por cinco a sete horas. O espetáculo presencial é limitado. Alguns torneios atraem público de verdade, o Norway Chess soube criar um clima próprio, mas é a exceção.
-
-**Os direitos de transmissão** pressupõem um produto transmissível com audiência suficiente. As tentativas de transmissão pela TV tradicional do xadrez fracassaram quase todas. O jogo é visualmente estático e exige conhecimento para ser apreciado. A TV de massa não sabe vendê-lo.
-
-É em parte por isso que as plataformas digitais mudaram o jogo, mas com efeitos ambíguos sobre a renda dos jogadores.
-
-### A herança da Guerra Fria
-
-Durante décadas, o xadrez foi financiado por Estados, em especial a URSS, que via nele um terreno de prestígio ideológico. [Bobby Fischer](https://pt.wikipedia.org/wiki/Bobby_Fischer) contra [Boris Spassky](https://pt.wikipedia.org/wiki/Boris_Spassky) em 1972 chamou a atenção do mundo justamente por se inscrever nesse contexto geopolítico. O Estado soviético subsidiava dezenas de jogadores profissionais, oferecia apartamentos, salários, treinadores.
-
-A queda da URSS derrubou esse modelo de subsídio estatal sem que nada comercial o substituísse. Os jogadores dos anos 1990 e 2000 se viram num vácuo econômico. Muitos Grandes Mestres dessa geração abandonaram o xadrez profissional pela informática ou pelas finanças, dois campos em que a sua capacidade de análise valia dinheiro.
-
-## A revolução digital: uma chance incompleta
-
-### Chess.com e Lichess: a explosão de jogadores
-
-A chegada do Chess.com primeiro, e do Lichess depois, transformou o xadrez num fenômeno de massa digital. O Chess.com diz ter hoje mais de 100 milhões de membros. [O Gambito da Rainha](https://pt.wikipedia.org/wiki/O_Gambito_da_Rainha) na Netflix em 2020 acrescentou uma onda enorme de novos jogadores: a plataforma registrou 2 milhões de novos cadastros na semana seguinte à estreia da série.
-
-Essa explosão de público teve um efeito concreto: o Chess.com virou uma plataforma comercial lucrativa, capaz de pagar streamers, organizar torneios online com premiações relevantes e assinar contratos com jogadores de alto nível.
-
-Mas eis a pergunta econômica que se impõe: **quem captura o valor criado por essa popularidade?** Em grande parte, o Chess.com. A plataforma é avaliada em várias centenas de milhões de dólares. Os jogadores que geram o conteúdo, jogando, analisando, comentando, recebem rendas variáveis e muitas vezes pouco transparentes.
-
-### O streaming como novo modelo
-
-[Hikaru Nakamura](https://pt.wikipedia.org/wiki/Hikaru_Nakamura), quinto do mundo em certo momento da carreira, construiu na Twitch uma audiência de vários milhões de seguidores. Sua renda de streaming hoje supera de longe a renda de torneios. É o exemplo mais visível de um modelo que começa a se espalhar: o jogador-criador de conteúdo.
-
-Esse modelo tem um limite: funciona para as personalidades carismáticas e para os jogadores já no topo, que se beneficiam de uma fama preexistente. Não resolve o problema econômico dos 1.750 Grandes Mestres que não são o Hikaru Nakamura.
-
-Ele também cria uma nova hierarquia no mundo do xadrez: a da audiência, não a do nível de jogo. Um jogador de 2600 de Elo pouco carismático vai ganhar menos que um jogador de 2450 que sabe animar uma comunidade. É uma transformação profunda dos incentivos no meio, que, aliás, se conecta ao debate mais amplo sobre [a psicologia competitiva do jogador](/pt-br/blog/psicologia-do-jogador-de-xadrez/): quando a renda depende mais do público do que do resultado, a pressão e as motivações mudam de natureza.
-
-### Os torneios online: mais dinheiro, menos prestígio
-
-O Chess.com e outras plataformas criaram torneios online com premiações às vezes maiores que as dos torneios presenciais. O [Speed Chess Championship](https://www.chess.com/article/view/speed-chess-championship) ou os eventos Champions Showdown oferecem quantias relevantes em formatos rápidos e transmissíveis.
-
-Esses torneios tornaram o xadrez mais acessível e mais espetacular, os formatos blitz e bullet são infinitamente mais fáceis de acompanhar para um leigo do que uma partida clássica de seis horas. Mas também reforçaram o status dos formatos curtos em detrimento dos clássicos, o que levanta uma questão de fundo sobre o que "ser o melhor" significa nesse novo contexto.
-
-## Magnus Carlsen: estudo de caso de um jogador que entendeu o problema
-
-Magnus Carlsen é o jogador que melhor navegou nesse cenário econômico apertado. O caso dele mostra como um jogador de alto nível pode construir uma resiliência financeira que vai além dos torneios.
-
-A **Play Magnus AS**, empresa que fundou em 2013, desenvolveu aplicativos de jogo e treino que foram comprados pelo Chess.com em 2022 por 83 milhões de dólares. É esse número, e não os ganhos de torneios, que faz dele um jogador economicamente tranquilo.
-
-O **Chessable**, plataforma de aprendizado comprada pelo Chess.com, permitiu que vários Grandes Mestres monetizassem em escala a sua didática. Os cursos de alguns GMs no Chessable geram uma renda passiva relevante.
-
-O que Carlsen entendeu, e que poucos jogadores tiveram condições de pôr em prática, é que era preciso sair do modelo "jogar torneios para ganhar premiações" e entrar num modelo "construir valor em torno do próprio jogo". É um modelo de empreendedor, não de atleta tradicional.
-
-## O que está mudando
-
-### A Arábia Saudita entra em campo
-
-Nos últimos anos, investimentos pesados vindos da Arábia Saudita começaram a irrigar o xadrez. A [Federação Saudita de Xadrez](https://en.wikipedia.org/wiki/Saudi_Chess_Federation) organiza torneios com premiações inéditas. O Grand Prix FIDE 2023 contou com apoios financeiros que teriam sido impensáveis uma década antes.
-
-Esse fenômeno de *sportwashing*, usar o esporte para melhorar a imagem internacional de um Estado, que já conhecemos no futebol, no golfe ou no boxe, agora chega ao xadrez. Os efeitos são ambíguos: as premiações aumentam, mas surgem perguntas legítimas sobre as condições políticas atreladas a essas parcerias.
-
-### A Índia como novo motor
-
-A ascensão de [Pragg](https://pt.wikipedia.org/wiki/Rameshbabu_Praggnanandhaa), [Gukesh](https://en.wikipedia.org/wiki/Gukesh_Dommaraju) e de toda uma geração de jogadores indianos de altíssimo nível tem um efeito econômico: cria um mercado interno imenso. A Índia é o país mais populoso do mundo, com uma tradição enxadrística sólida e um investimento crescente das famílias na formação. Os patrocinadores indianos começam a aparecer.
-
-O Campeonato Mundial de 2024 colocou Gukesh contra Ding Liren. Pela primeira vez, um jogador indiano se tornava Campeão Mundial em título. O impacto sobre a audiência indiana, e potencialmente sobre a renda dos torneios que virão, ainda é difícil de medir, mas é real.
-
-### Os esports como modelo a imitar?
-
-Alguns agentes do meio olham para os esports em busca de um modelo viável. As ligas de esports desenvolveram estruturas de franquia, divisão de receita e contratos de jogadores que ainda não existem no xadrez.
-
-A [PRO Chess League](https://www.chess.com/article/view/pro-chess-league) do Chess.com é uma tentativa nessa direção: uma competição por equipes, com franquias, transmitida online. Os resultados são animadores em termos de audiência, mas o modelo econômico ainda é frágil.
-
----
-
-### Resumo em uma tabela
-
-| Aspecto | Situação atual | Tendência |
+| Posição neste levantamento de 2025 | Jogador | Prêmios registrados em 2025 |
 | --- | --- | --- |
-| Premiações dos grandes torneios | Baixas (Campeonato Mundial: US$ 2 mi) | Em alta graças aos patrocinadores do Golfo |
-| Renda dos jogadores do Top 20 | Boa, mas longe de outros esportes | Sustentada por conteúdo e contratos de plataformas |
-| Renda dos Grandes Mestres fora do Top 50 | Muitas vezes insuficiente, complementada com aulas | Pouca evolução |
-| Plataformas digitais (Chess.com) | Valor de mercado alto, receita captada pela plataforma | Em crescimento, repasse limitado aos jogadores |
-| Mercados emergentes (Índia) | Forte potencial de crescimento econômico | Aceleração provável após o título mundial de Gukesh |
+| 1 | Magnus Carlsen | US$ 1.455.276 |
+| 5 | Alireza Firouzja | US$ 455.047 |
+| 10 | Javokhir Sindarov | US$ 349.955 |
 
----
+Nesse recorte, **26 jogadores atingiram US$ 100 mil**. Apenas Carlsen ultrapassou US$ 1 milhão. O levantamento exclui, entre outros itens, torneios pequenos, campeonatos nacionais, eventos por equipes e receitas que não sejam prêmios.
+
+Não podemos dividir esses 26 jogadores por uma contagem mundial de Grandes Mestres para concluir que “98% ganham menos de US$ 100 mil”. Numerador e denominador não cobrem a mesma população nem todas as receitas de competição. A fonte descreve uma concentração no topo dos eventos registrados; não é uma declaração de renda mundial.
+
+![Exemplo de concentração dos prêmios registrados nas grandes competições individuais em 2025; o levantamento não mede a renda de todos os Grandes Mestres.](/images/pt-br/echecs-argent-03-concentration-gains-2025.svg)
+
+As despesas exigem outro cuidado. Prêmios brutos não são dinheiro disponível para viver: viagens, hospedagem, inscrições, treinamento e tributos podem entrar na conta. A cobertura desses custos varia conforme os contratos. Comparar duas carreiras de forma séria exigiria conhecer esses detalhes.
+
+### Comparar competições sem misturar categorias
+
+Um primeiro prêmio não é um fundo total. Estes são valores anunciados para edições de **2023**, com moeda e abrangência:
+
+| Evento de 2023 | Fundo total informado | O que o valor abrange |
+| --- | --- | --- |
+| Match do Campeonato Mundial de Xadrez | € 2.000.000 | Fundo dividido entre dois jogadores, conforme o regulamento FIDE |
+| Nitto ATP Finals | US$ 15.000.000 | Fundo anunciado para o evento de tênis |
+| WSOP Main Event | US$ 93.399.900 | Fundo do Main Event de pôquer, segundo os resultados oficiais |
+
+O [regulamento da FIDE](https://handbook.fide.com/files/handbook/FWCM2023.pdf) prevê divisão de 55% para o vencedor e 45% para o vice em caso de desempate: a parte de Ding nesse fundo é, portanto, de **€ 1,1 milhão**, não de dólares. O [WSOP Main Event](https://www.wsop.com/tournaments/result/10253/) pagou **US$ 12,1 milhões ao vencedor**; esse valor não deve ser apresentado como o fundo completo. A [ATP](https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2023-record-prize-money) também distingue a dotação total do ganho do campeão conforme sua campanha.
+
+As competições não têm o mesmo número de participantes, as mesmas inscrições nem a mesma distribuição. As moedas não foram convertidas. A tabela oferece ordens de grandeza datadas; não demonstra qual profissão paga mais a um participante médio.
+
+![Comparação de fundos totais de eventos identificados, preservando as moedas e distinguindo o prêmio do vencedor do total a dividir.](/images/pt-br/echecs-argent-02-comparaison-prize-pools.svg)
+
+## Por que a popularidade não basta para garantir renda
+
+### Organizadores e contratos diferentes
+
+Um campeonato FIDE, um torneio privado, uma liga por equipes e uma série online não são um único empregador. Acesso, prêmios e eventuais contratos precisam ser examinados separadamente.
+
+Essa organização levanta perguntas econômicas: quem financia o evento, quem assume o risco de cancelamento, quais despesas são cobertas e qual compromisso existe além daquela edição? A publicidade de um grande torneio não basta para estabelecer a estabilidade de uma carreira.
+
+Isso não significa que nunca existam redistribuição ou direitos de transmissão. Significa ler os acordos aplicáveis em vez de imaginar um salário comum a todo o circuito.
+
+### Uma audiência não é receita disponível para cada jogador
+
+A atenção pode gerar receita com ingressos, publicidade, assinaturas ou patrocinadores. Mas uma visualização gratuita, uma conta criada e uma assinatura paga são três unidades diferentes. Uma grande audiência, sozinha, não revela a parcela que chega ao jogador.
+
+As escolhas de produção também importam: comentários acessíveis, ritmo, horários e idioma podem mudar a experiência do público. Ainda é necessário medir receitas e custos. Afirmar que a televisão “não sabe vender xadrez” ou que o digital resolve tudo seria simples demais.
+
+### A história não substitui as contas atuais
+
+A dimensão política do xadrez, particularmente visível no [match Fischer-Spassky de 1972](/pt-br/blog/xadrez-e-diplomacia/), lembra que o financiamento esportivo não depende apenas de ingressos vendidos. Prestígio, instituições e mecenato podem participar.
+
+Isso não permite afirmar que todos os profissionais de uma época eram assalariados nem que uma geração inteira abandonou o xadrez para trabalhar com finanças. Entender uma carreira atual exige identificar seus apoios reais, a duração e as condições.
+
+![Fontes possíveis de receita de um jogador: competição, ensino, conteúdo e parcerias; sua distribuição entre todos os Grandes Mestres não é estimada.](/images/pt-br/echecs-argent-01-pyramide-revenus.svg)
+
+## A revolução digital: possibilidades e incógnitas
+
+### Plataformas: atividade visível, rentabilidade privada
+
+Uma plataforma pode vender assinaturas, cursos ou publicidade e organizar competições. O anúncio da [aquisição do Play Magnus Group pelo Chess.com em 2022](https://www.chess.com/news/view/chesscom-acquires-pmg) documenta uma operação e as marcas envolvidas. Não é uma demonstração de resultados do Chess.com.
+
+Multiplicar um número de contas por um preço Premium e uma taxa presumida de conversão de 5% não estabelece o faturamento. Faltam, entre outros dados, assinantes realmente pagantes, preços por país e oferta, descontos, custos e períodos. **Não estabelecemos aqui sua margem nem sua avaliação atual.**
+
+“Quem fica com o valor?” continua sendo uma pergunta pertinente, mas a resposta exige contratos e contas. Professor, autor, jogador e plataforma podem receber fluxos diferentes de uma mesma atividade.
+
+### Streaming: outra atividade profissional
+
+Hikaru Nakamura ilustra a visibilidade que um jogador pode conquistar como criador de conteúdo. Isso não revela sua receita líquida com assinaturas, contratos ou despesas de produção.
+
+Produzir uma transmissão exige trabalho próprio: programação, apresentação, edição, moderação e relações comerciais. Um rating elevado pode atrair atenção; não substitui essas competências. Por outro lado, uma audiência não permite prever a renda de todo jogador com o mesmo Elo.
+
+O modelo pode diversificar uma atividade sem ser uma solução automática para todos os profissionais. A [psicologia competitiva do jogador](/pt-br/blog/psicologia-do-jogador-de-xadrez/) também ajuda a pensar na motivação quando, além de jogar, é preciso satisfazer um público.
+
+### Eventos online: especificar o formato e o acordo
+
+Uma competição rápida transmitida ao vivo pode ser planejada para horários curtos e um público online. A comparação com um torneio clássico não envolve apenas prestígio: premiação, acesso, direitos e restrições também importam.
+
+Um formato atrair patrocinadores não significa que todos os jogadores ganharão mais nem que substituirá os outros. Uma série anunciada para uma temporada não é um compromisso permanente.
+
+## Magnus Carlsen: prêmios, empresa e patrimônio
+
+O mesmo balanço do Chess.com situa os prêmios de carreira registrados de Carlsen em **cerca de US$ 12,23 milhões até 31 de dezembro de 2025**, sem correção pela inflação. Apresentar US$ 2,4 milhões como total de carreira é, portanto, errado nesse recorte. Mesmo o valor corrigido não estima seu patrimônio líquido.
+
+O Play Magnus Group era uma empresa com vários acionistas e atividades. O [comunicado de conclusão da oferta de 16 de dezembro de 2022](https://live.euronext.com/sites/default/files/company_press_releases/attachments_oslo/2022/12/16/578408_en_Download%20announcement%20as%20PDF.pdf) informa um preço de **13 coroas norueguesas por ação**. O preço de aquisição do grupo não pode ser atribuído integralmente à pessoa cujo nome ele carrega.
+
+Para calcular o que Carlsen recebeu e conservou, seriam necessárias as participações pertinentes, as condições das estruturas envolvidas e a tributação. Para conhecer seu patrimônio, também seriam necessários outros ativos e dívidas. Não temos esse balanço privado.
+
+Chessable está entre as marcas citadas na operação. Vender um curso pode permitir ao autor valorizar sua experiência, mas a receita depende do contrato e das vendas; não é automaticamente elevada nem inteiramente “passiva”.
+
+O caso Carlsen mostra sobretudo por que separar atividade esportiva, direitos comerciais e participação no capital. Ele não permite anunciar o patrimônio de Alireza Firouzja, Nakamura ou outro jogador com base em um levantamento parcial de prêmios.
+
+## O que muda: eventos concretos, não renda garantida
+
+### A Arábia Saudita e a Esports World Cup de 2025
+
+Um exemplo verificável é o [anúncio do xadrez na Esports World Cup de 2025](https://www.chess.com/news/view/chess-makes-historic-debut-at-esports-world-cup-2025-with-1-5-million-prize-pool), em Riad, com fundo anunciado de US$ 1,5 milhão. Não se trata de um suposto “Grand Prix FIDE 2023”.
+
+Esse tipo de parceria levanta questões legítimas sobre dependência financeira, governança e imagem. Examiná-las exige identificar financiador, evento e contrato; o aumento de um fundo, sozinho, não prova o motivo político preciso de um parceiro nem uma melhoria para todo o circuito.
+
+### A Índia e a visibilidade de seus campeões
+
+Gukesh conquistou o título mundial em 2024. Ele não foi o primeiro campeão indiano: [Viswanathan Anand o precedeu](https://museum.fide.com/champions/gukesh-dommaraju). A visibilidade de uma nova geração pode interessar a organizadores, alunos e parceiros comerciais.
+
+Porém, passar de um título para uma estimativa de mercado exige medir inscrições, contratos ou receitas. Uma história esportiva marcante não é, por si só, uma previsão numérica de crescimento da renda.
+
+### O esport como comparação organizacional
+
+Equipes, eventos transmitidos e parcerias com plataformas oferecem modelos para estudar. Também levantam perguntas conhecidas: duração do financiamento, direitos de imagem, calendário, exclusividade e divisão de receitas.
+
+Em vez de apresentar um modelo como já viável para todos, perguntemos o que está efetivamente garantido ao jogador e o que depende de resultados ou audiência futuros.
+
+### Síntese: os indicadores úteis
+
+| Pergunta | Informação útil | O que ela não substitui |
+| --- | --- | --- |
+| Quanto paga um torneio? | Regulamento e distribuição dos prêmios | Renda anual de um jogador |
+| Quanto rende uma carreira? | Receitas, custos e duração | Um rating Elo |
+| Quanto vale uma empresa? | Condições de uma transação datada | Patrimônio pessoal de um sócio |
+| Uma atividade de conteúdo é viável? | Contrato, vendas, custos e tempo de trabalho | Número bruto de seguidores |
+| Uma plataforma é rentável? | Contas e perímetro contábil | Preço de uma aquisição |
 
 ## Perguntas frequentes
 
-**Como ganha a vida um Grande Mestre "comum"?**
-A combinação mais comum: aulas particulares (50 a 200 €/h), treinador num clube ou numa federação nacional, alguns torneios por ano e, cada vez mais, criação de conteúdo ou venda de cursos no Chessable. Poucos vivem de streaming: o mercado está saturado e é dominado por algumas grandes personalidades.
+**Como um Grande Mestre pode ganhar a vida?**
+Com competição, ensino, conteúdo ou contratos, conforme a situação. Nenhum preço por hora ou rating garante renda líquida. Um orçamento precisa incluir despesas e tempo de trabalho não faturado.
 
-**As jogadoras são remuneradas de forma diferente?**
-Sim, e a diferença é documentada. Os torneios femininos têm premiações bem menores que os torneios "open" (mistos). A lógica econômica alegada é a de público: os torneios femininos atraem menos espectadores. É um argumento circular: o público não cresce porque os investimentos não acontecem, e os investimentos não acontecem porque o público é pequeno.
+**As jogadoras recebem de forma diferente?**
+É preciso comparar eventos e acordos identificados. Uma dotação feminina, uma dotação aberta e o valor recebido por uma jogadora não são o mesmo dado. As fontes deste artigo não oferecem uma pesquisa de renda por trabalho comparável nem uma causa única para as diferenças. A audiência, sozinha, não basta para explicá-las.
 
-**O Chess.com é realmente lucrativo?**
-O Chess.com é uma empresa privada e não publica seus números. Mas a compra da Play Magnus por 83 milhões de dólares e as aquisições do Chessable e de outras plataformas sugerem um valor de mercado de várias centenas de milhões de dólares. A assinatura Premium (cerca de 15 €/mês) sobre 100 milhões de membros, mesmo com uma taxa de conversão de 5%, representa uma receita considerável.
+**O Chess.com é rentável?**
+Os documentos citados não permitem estabelecer sua rentabilidade atual. Uma aquisição, um preço de assinatura e um número de contas não revelam faturamento real nem lucro. Uma taxa de conversão inventada não preenche essa lacuna.
 
-**O xadrez poderia entrar nos Jogos Olímpicos?**
-A pergunta é feita com frequência. O Comitê Olímpico Internacional reconheceu a FIDE como federação internacional em 1999. O xadrez já apareceu nos Jogos como modalidade de demonstração. A principal objeção continua sendo o formato: uma competição olímpica de xadrez clássico é difícil de encaixar no calendário, e os formatos curtos (rápido ou blitz) são vistos como menos legítimos. Entrar nos Jogos aumentaria a visibilidade e provavelmente as premiações, mas o caminho ainda é longo.
-
----
-
-O xadrez produziu algumas das mentes mais fascinantes da história esportiva e intelectual; o **modelo econômico** dos jogadores fora da elite continua frágil. As alavancas realistas do lado do jogador: **ensino** estruturado, **conteúdo** com valor agregado (cursos, livros, vídeo), **contratos com plataformas** para uma minoria. Uma "indústria" única que sustentasse todo o mundo do jogo continua sendo um cenário de longo prazo, não uma virada iminente.
-
-**Depois da leitura:** se você mira uma carreira semipro, **modele três fontes de renda** (aulas, conteúdo, torneios) numa planilha, não só a premiação do mestre que você acompanha na live.
+**Os Jogos Olímpicos garantiriam mais dinheiro aos jogadores?**
+Não. A FIDE documenta suas [relações com o movimento olímpico](https://www.fide.com/fide-strengthens-ties-with-ioc-uefa-and-arisf/), mas reconhecimento de uma federação, inclusão no programa e remuneração de participantes são questões diferentes. Não se deve orçar receita adicional com base em uma hipótese de inclusão futura.
 
 ---
 
-## Os maiores GMs do mundo e seus ganhos estimados
-
-Para entender a escala do problema econômico, vale comparar os ganhos estimados dos principais GMs do mundo. Os dados abaixo combinam premiações de torneios, contratos com plataformas e fontes de renda conhecidas publicamente.
-
-| Jogador | Elo FIDE | Renda em torneios (carreira) | Fontes adicionais |
-|---|---|---|---|
-| GM Magnus Carlsen | 2830+ | ~$2,4 mi (carreira completa) | Play Magnus, contratos, streaming |
-| GM Hikaru Nakamura | 2790 | Moderada por torneio | Twitch (principal renda), Chess.com |
-| GM Fabiano Caruana | 2800 | ~$500k–$1 mi | Contratos de plataformas, aulas |
-| GM Ian Nepomniachtchi | 2780 | ~$300k–$600k | Torneios FIDE, apoio da federação |
-| GM Pragg | 2760 | Em crescimento | Patrocinios indianos |
-| GM Gukesh | 2750+ | ~$1 mi (2024) | Campeonato mundial 2024 |
-| GM Alireza Firouzja | 2750 | Moderada | Federação francesa, conteúdo |
-| GM Wesley So | 2760 | Moderada | Torneios USA, streaming esporádico |
-| GM Levon Aronian | 2740 | Moderada | Torneios, comentários |
-| GM Viswanathan Anand | 2750+ (no auge) | Histórico significativo | Patrocinios indianos, lendária carreira |
-
-Um GM situado entre os melhores do mundo pode esperar ganhar entre $50.000 e $200.000 por ano em premiações, dependendo dos torneios que disputa e dos resultados obtidos. Um GM do Top 5 nos anos mais fortes pode ultrapassar $300.000 apenas em premiações, mas isso representa menos de dez jogadores no mundo inteiro.
-
-Para um GM situado entre o Top 50 e o Top 100, a realidade é bem diferente: premiações de $5.000 a $30.000 por ano, sendo necessário complementar com outras fontes de renda.
-
-## GMs além do Top 10: o que ganha a maioria dos profissionais
-
-Entre os GMs notáveis fora do Top 10, há exemplos como GM Duda Foroni (do Brasil), GM Nodirbek Abdusattorov, GM Vincent Keymer, GM Arjun Erigaisi, GM Vidit Gujarathi, GM Alexei Shirov, GM Sergey Karjakin, GM Richard Rapport, GM Veselin Topalov e GM Leinier Dominguez, cada um com trajetórias econômicas distintas e fontes de renda complementares. Um GM de nível intermediário também pode construir uma carreira sustentável: as aulas também representam a principal fonte de renda, os patrocinios de academias também aparecem com o tempo, e o conteúdo online também cria uma renda passiva relevante. O jogador de xadrez que também investe em competicoes regionais, além de competicoes internacionais, também constrói a reputação que atrai alunos e pode também gerar patrocinios locais. Para um enxadrista profissional no Brasil, a situação também é de oportunidades: esse enxadrista que domina o português também tem acesso a um mercado amplo. No entanto, os patrocinios individuais continuam raros; no entanto, a situação também melhora a cada ano com o crescimento do xadrez. O jogador de xadrez brasileiro que também participa de competicoes e também produz conteúdo digital constrói a base mais sólida possível para uma carreira de longo prazo.
-
-## O jogador de xadrez profissional no Brasil: carreira e perspectivas
-
-No Brasil, vários GMs construíram carreiras respeitáveis combinando competicoes internacionais com ensino e treinamento. O Brasil conta com cerca de 20 GMs ativos, sendo que a maioria complementa a renda do xadrez com aulas. O jogador de xadrez profissional brasileiro enfrenta a mesma realidade econômica descrita acima: patrocinios individuais são raros, sendo o xadrez um esporte de nicho no mercado publicitário. Entanto, o enxadrista que investe em conteúdo em português tem uma vantagem real, pois há poucos GMs criando material de qualidade nessa língua. O jogador de xadrez que combina aulas, torneios e conteúdo digital constrói uma carreira mais sólida do que quem depende apenas de premiações, no Brasil como em qualquer lugar do mundo.
-
-## O essencial
-
-- As premiações do xadrez são irrisórias se comparadas a outros esportes e jogos de estratégia, inclusive alguns esports
-- A grande maioria dos jogadores profissionais não vive de torneios, mas de aulas, conteúdo online e contratos de streaming
-- Chess.com e Lichess transformaram a economia do jogo, criando novas fontes de renda, mas capturando também boa parte do valor
-- O modelo econômico do xadrez está em mutação: a questão não é se a renda vai aumentar, mas quem vai se beneficiar
+Para considerar uma atividade semiprofissional, separe **aulas, conteúdo e competição**, depois inclua custos, horas não faturadas e um cenário prudente sem prêmios excepcionais. Isso não promete uma carreira; permite avaliar um projeto concreto em vez de copiar os ganhos de uma celebridade.
 
 ### Fontes e referências
 
-- **FIDE (2023).** - [*World Chess Championship 2023 - Official Prize Fund.*](https://fide.com) Astana, Cazaquistão. (Premiação oficial e divisão entre os jogadores.)
-- **Nakamura, H. (2022-2024).** - Twitch e YouTube [@GMHikaru](https://www.twitch.tv/gmhikaru). (Modelo econômico do streaming no xadrez: receita de publicidade, assinaturas, parcerias com o Chess.com.)
-- **Chess.com Press (2022).** - [*Chess.com Acquires Play Magnus Group.*](https://www.chess.com/article/view/chess-com-acquires-play-magnus-group) (Aquisição por 83 milhões de dólares; valor de mercado do Chess.com e modelo econômico das plataformas.)
-- **Statista (2023).** - *Esports prize pool comparison by game, 2023.* (Comparação das premiações entre esports, pôquer e xadrez.)
-- **Elo, A. E. (1978).** - *The Rating of Chessplayers, Past and Present.* Arco Publishing. (Sistema de rating da FIDE e base da hierarquia profissional no xadrez.)
-- **Shenk, D. (2006).** - *The Immortal Game: A History of Chess.* Doubleday. (História econômica e cultural do xadrez, incluindo o impacto da Guerra Fria no financiamento do jogo profissional.)
-- **Byrne, R. (1972).** - *Fischer-Spassky Match Reports.* New York Times. (Contexto geopolítico e econômico do match do século; primeira grande midiatização internacional do xadrez.)
+- **Chess.com**, *The Top Chess Prizewinners In 2025, And How Much They Won* (atualização de março de 2026). Método, exclusões e registros datados. [Balanço](https://www.chess.com/article/view/biggest-chess-prizewinners-2025).
+- **FIDE**, *Regulations for the World Championship Match 2023*. Moeda e divisão do fundo. [Regulamento](https://handbook.fide.com/files/handbook/FWCM2023.pdf).
+- **ATP**, *Nitto ATP Finals: Record $15 Million Prize Money For 2023 Event*. [Anúncio oficial](https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2023-record-prize-money).
+- **WSOP**, resultados oficiais do Main Event de 2023. [Fundo e resultados](https://www.wsop.com/tournaments/result/10253/).
+- **Chess.com (2022)**, *Officially Acquires Play Magnus, Carlsen Signs As Ambassador*. [Anúncio do comprador](https://www.chess.com/news/view/chesscom-acquires-pmg).
+- **Play Magnus AS (16 de dezembro de 2022)**, conclusão da oferta da Chess Growthco LLC. [Comunicado regulado distribuído pela Euronext](https://live.euronext.com/sites/default/files/company_press_releases/attachments_oslo/2022/12/16/578408_en_Download%20announcement%20as%20PDF.pdf).
+- **Chess.com**, anúncio da parceria para a Esports World Cup de 2025. [Anúncio](https://www.chess.com/news/view/chess-makes-historic-debut-at-esports-world-cup-2025-with-1-5-million-prize-pool).
+- **FIDE**, biografia de Gukesh Dommaraju no museu e relações com o movimento olímpico. [Biografia](https://museum.fide.com/champions/gukesh-dommaraju), [comunicação institucional de 2025](https://www.fide.com/fide-strengthens-ties-with-ioc-uefa-and-arisf/).

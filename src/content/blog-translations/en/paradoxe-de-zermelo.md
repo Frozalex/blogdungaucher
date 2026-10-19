@@ -1,141 +1,154 @@
 ---
-title: "Zermelo's Paradox: The Imperfection of Perfect Play"
-excerpt: "Chess has a mathematical truth no one knows. Zermelo proved it in 1913: the result under perfect play is determined in advance. But this theoretical certainty hides a fascinating practical vertigo."
-seoTitle: "Zermelo's Paradox in Chess: Determined But Inaccessible Truth"
-seoDescription: "Ernst Zermelo (1913) proved chess has a result under perfect play: White wins, Black wins, or draws. Why this certainty remains out of reach."
+title: "Zermelo’s Paradox: The Unknown Value of Perfect Chess"
+excerpt: "Chess’s value from the initial position under perfect play remains unknown. Determinacy, Zermelo’s historical work and tablebases distinguish existence of an answer, calculation and practical performance."
+seoTitle: "Zermelo and Chess: A Determined but Still Unknown Result"
+seoDescription: "Perfect-play value, game-ending rules and tablebases: what the Zermelo framework guarantees without claiming to know the initial position’s value."
 enSlug: "zermelo-paradox"
-draft: false
 faq:
-  - question: "Does Zermelo's theorem prove that White wins?"
-    answer: >-
-      No. It proves that <strong>one</strong> answer exists among three possibilities: White win, Black win,
-      or draw. It doesn't say which. The majority hypothesis is a draw (consistent with elite play and engine
-      evaluation around +0.2/+0.3), but that's a belief based on observation, not a demonstration.
-  - question: "Why is it called a 'paradox'?"
-    answer: >-
-      In the mathematical sense it isn't one: it's a perfectly coherent result. The 'paradox' is
-      <strong>epistemic</strong>: we know a unique answer exists, but we can't know it in practice or in any
-      reasonable extrapolation of computational capacities. Rare are propositions where <em>certainty of
-      existence</em> is so cleanly separated from <em>possibility of access</em>.
-  - question: "Don't tablebases contradict Zermelo?"
-    answer: >-
-      On the contrary, they <strong>confirm</strong> it on a subset of the problem. For any position with ≤ 7
-      pieces, the Zermelo value is known exactly (win, loss, or draw, and exact depth). Tablebases are the
-      constructive proof that Zermelo's demonstration isn't empty: applied to a finite accessible number of
-      positions, it does produce a unique computable truth.
-  - question: "Why can AlphaZero beat Stockfish if it doesn't play 'perfectly'?"
-    answer: >-
-      Because neither plays perfectly in the Zermelo sense. Both are <strong>approximations</strong> of the
-      optimal strategy, simply with different architectures (search + heuristics for Stockfish, neural
-      network + Monte Carlo Tree Search for AlphaZero). When AlphaZero beats Stockfish, it's that at this
-      approximation level, its choices are on average closer to the Zermelo truth. But neither reaches that
-      truth.
-  - question: "Could this mathematical truth ever be discovered?"
-    answer: >-
-      Probably not by pure brute force: the $10^{120}$ tree is definitely physically out of reach. An
-      <strong>indirect proof</strong> remains theoretically possible (demonstration by symmetry, by
-      invariant, by partial mirror strategy), but no serious path exists. Quantum computing changes the bound
-      (Grover halves the exponent), but $10^{60}$ remains astronomical. Solving chess in the strict sense is
-      more likely a horizon than ever reached.
+  - question: "Does Zermelo’s theorem prove White wins?"
+    answer: "No. In the finite-game framework, one of three values exists: White wins, Black wins or a draw. It does not identify which applies to the initial chess position. An engine evaluation is not proof of that value."
+  - question: "Why call this a paradox?"
+    answer: "It is not a mathematical contradiction. The tension is epistemic: a value exists under specified rules, while the initial position’s value remains unknown. Existence and calculating the answer are separate questions."
+  - question: "Do tablebases contradict Zermelo?"
+    answer: "No. They calculate values for covered subsets under specified rules and metrics. Coverage limits, including castling rights, matter. They provide constructive results for accessible finite sets of positions."
+  - question: "How can AlphaZero beat Stockfish without perfect play?"
+    answer: "Neither has demonstrated a perfect strategy from the initial position. In the 2017 match, Stockfish 8 combines alpha-beta search with hand-written evaluation; AlphaZero combines a learned network and MCTS. A better match score is not a measured distance to an unknown optimal strategy."
+  - question: "Could the answer one day be discovered?"
+    answer: "Exhaustive solution exceeds current resources. That does not prove every future method impossible. Grover concerns unstructured search; we cannot simply halve the exponent of a chess minimax tree."
 heroImageAlt: A circular dark maze with a blue path leading toward its empty center.
+
 ---
 
-In 1913, at the fifth International Congress of Mathematicians in Cambridge, German mathematician [Ernst Zermelo](https://en.wikipedia.org/wiki/Ernst_Zermelo) presented a result that would change how mathematicians, and later computer scientists, think about strategy games. His theorem is short. Its demonstration is elegant. And its implications for chess are both reassuring and dizzying.
+At the fifth International Congress of Mathematicians in Cambridge in 1912, German mathematician [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) presented work that would influence mathematical and later computational thinking about strategy games. Its implications for chess separate a reassuring existence result from the difficult question of calculating the answer.
 
-## Ernst Zermelo and Set Theory
+## Ernst Zermelo and set theory
 
-Before talking about chess, you need to understand who Zermelo was. He's mainly known for his fundamental contributions to set theory, in particular the [axiom of choice](https://en.wikipedia.org/wiki/Axiom_of_choice) and the [Zermelo-Fraenkel axioms](https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory) that still constitute today's standard foundations of mathematics.
+Zermelo is best known for foundational contributions to set theory, notably the [axiom of choice](https://fr.wikipedia.org/wiki/Axiome_du_choix) and Zermelo–Fraenkel axioms, part of mathematics’ standard foundations.
 
-In 1913, his interest in chess wasn't insignificant. Mathematicians of the era sought to formalize logical reasoning in systems as rigorous as possible. Perfect strategy games represented ideal terrain.
+Strategy games offer precise rules, no hidden information and no chance. They make a natural setting for asking whether a theoretically perfect way to play exists. The exact game rules and termination assumptions remain essential.
 
-## Zermelo's Theorem: Statement and Demonstration
+## Zermelo’s theorem: statement and explanation
 
-Zermelo's theorem applies to a class of games including chess: two-player games with direct confrontation, perfect information, no chance, where both players play alternately, and which always end in a finite number of moves.
+Consider two-player games of perfect information, without chance, with alternating moves and a finite game tree.
 
-**Statement:** In any game of this type, one of three situations is necessarily true: player 1 has a winning strategy, or player 2 has a winning strategy, or both players can force a draw.
+**Modern statement in this finite setting:** either one player can force a win, or each has a strategy guaranteeing at least a draw. In the latter case, optimal opposition produces a draw. Distinguish this from the exact content of Zermelo’s historical text, discussed below.
 
-The demonstration uses **backward induction** on the maximum possible game length. It's exactly the same mechanism as the modern minimax version, 35 years apart.
+![Three possible perfect-play values, without a known solution from the initial position](/images/en/zermelo-01-trois-issues.svg)
 
-Imagine an endgame position reached. Each terminal position is either a White win, Black win, or draw. Now go back one move. If it's White's turn, they can choose among accessible terminal positions the one most favorable to them. By recursively going back from all terminal positions to the initial position, each position in the game tree receives a defined value.
+For a finite tree, **backward induction**, as in [minimax](/en/blog/minimax-in-chess/), explains the result. This teaching presentation is not Zermelo’s original proof: Schwalbe and Walker explicitly note that his 1913 text does not proceed this way. Shannon’s 1950 article appears 37 years later; that interval does not establish direct reuse of the proof unchanged.
 
-The value of the initial position is therefore determined. The first player to move either has a strategy to force victory, or both players can force a draw, or the second player has a strategy to force victory.
+Imagine reaching terminal positions, each a White win, Black win or draw. Move one step back. If White is to move, White chooses the most favourable accessible result; Black similarly chooses from Black’s perspective. Continue recursively from terminal nodes to the root, and every node receives a value.
 
-### A Refined Demonstration Afterward
+The initial position is therefore determined. White can force a win, or both sides can guarantee at least a draw, or Black can force a win. The statement does not identify which alternative holds in chess.
 
-Historical detail often forgotten: Zermelo's original 1913 text contains a **non-trivial subtlety** about finiteness. Zermelo implicitly assumes every game ends in a finite number of moves but doesn't correctly handle the case where the losing party can indefinitely delay checkmate. [Dénes König](https://en.wikipedia.org/wiki/D%C3%A9nes_K%C3%B6nig) (1927) then [László Kalmár](https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Kalm%C3%A1r) (1928) completed the proof with what's now called König's lemma. In chess, this detail is settled practically by the 50-move rule and threefold repetition rule.
+![A modern backward-induction example on a fictional tree](/images/en/zermelo-02-backward-induction.svg)
 
-### Why It's Paradoxical
+### A proof refined historically
 
-Zermelo's paradox isn't logical. It's a practical paradox. The theorem guarantees the answer exists and is unique. But it doesn't tell you what it is. And especially, it doesn't tell you how to find it.
+Schwalbe and Walker distinguish the original 1913 text from modern formulations. Zermelo allows infinite move sequences and studies, among other things, lengths needed to force a win. König (1927) and Kalmár (1928/1929) extend the analysis. That history differs from the elementary finite-tree explanation here.
 
-To find the real value of chess's initial position, you'd need to traverse the entire game tree. This tree contains about $10^{120}$ leaves according to Shannon's estimate. For reference, the age of the universe is about $4 \times 10^{17}$ seconds, and the number of atoms in the observable universe is about $10^{80}$.
+To treat modern chess as finite, include termination rules. Threefold repetition and fifty moves create rights to claim a draw; automatic fivefold repetition and seventy-five moves play a separate role, as the FIDE arbiters’ manual explains.
 
-The complete resolution of chess by exhaustive exploration is **physically impossible** with any conceivable technology.
+### Why it feels paradoxical
 
-## The Unknown Truth of Chess
+The paradox is practical, not logical. A value exists under the fixed rules, but the existence result does not identify it or provide a practical calculation of it.
 
-The great question Zermelo's theorem leaves open: what is the value of chess under perfect play?
+Naive exhaustive search considers an enormous number of sequences. Shannon’s $10^{120}$ order of magnitude rests on assumptions; it is not an exact count of all legal games.
 
-The majority of grandmasters and theorists think the answer is a draw. The empirical argument is strong: at the highest level, draws are very frequent, and the initial position is considered slightly favorable to White but not enough to force victory against optimal defense.
+As a hypothetical calculation, examining $10^{120}$ items at $10^{20}$ per second takes $10^{100}$ seconds. That illustrates a cost under stated assumptions, not proof that no other method could establish the game’s value. See [the limits of chess calculation](/en/blog/chess-mathematical-problem-and-ai/) for the distinction.
 
-But this is just intuition based on observation of human play. It's not a proof. It's mathematically possible that White has a forced win hidden in depths no human has ever explored.
+## Chess’s unknown truth
 
-## Resolved Endgames: A Window on the Truth
+The open question is the value of the starting position under perfect play. The theoretical setting is also discussed in [game theory applied to chess](/en/blog/game-theory-in-chess/).
 
-If solving chess in its entirety is impossible, there's a domain where complete resolution has been accomplished: endgames with few pieces.
+A draw can be conjectured, but neither draws among strong players nor engine evaluations prove it. Those observations concern particular opponents and computing budgets, not every possible reply to a strategy.
 
-[Endgame tablebases](https://en.wikipedia.org/wiki/Endgame_tablebase) developed by Ken Thompson then Marc Bourzutschky and others have solved all endgames up to seven pieces on the board. This monumental work has revealed surprising results.
+A Stockfish evaluation depends on version, depth and time. A small numerical advantage means neither a forced win nor a measured distance to perfect solution. All three initial-position values remain open.
 
-The Rook-Queen vs Rook-Queen endgame, for example, had long been considered drawn. Tablebases revealed that in certain configurations, one side can force victory in... 517 moves. No human, even the world's best Grandmaster, could find this path by their own reasoning.
+## Solved endgames: a window on exact results
 
-### The DTM/DTZ Jump: Two Truths for the Same Position
+Although the starting position remains unsolved, many low-material endgames have been calculated.
 
-Tablebases distinguish two measures of "forced win": DTM (*Distance to Mate*) and DTZ (*Distance to Zero*, distance to the next pawn move or capture resetting the 50-move counter). The same winning endgame can have DTM = 517 and DTZ = 7. This duality illustrates something deep about Zermelo: the **mathematical truth** of a position depends on the chosen "winning" criterion.
+Endgame tablebases, developed through work by Ken Thompson, Marc Bourzutschky and others, cover large endgame sets, including seven-piece positions. Coverage and result meaning depend on the table set: castling rights and the fifty-move rule, for example, require particular care.
 
-## The Structural Imperfection of the Human Player
+Ronald de Man’s documentation illustrates why metrics and rules matter with a DTZ50 value of 164 half-moves and a “cursed win”: winning without the fifty-move limit does not necessarily mean winning with it.
 
-Zermelo's paradox reveals something fundamental about the human player's condition. They play a game whose "perfection" is mathematically defined but physically inaccessible.
+### DTM and DTZ: different distances
 
-A human player, even the world's best, plays an approximation of the optimal strategy. Their playing level is determined by the quality of this approximation.
+DTM measures distance to mate. DTZ measures distance to a capture or pawn move resetting the counter. Optimising them can select different moves. That creates no contradictory truths: the questions differ, and fifty-move-rule treatment must be specified. Usual Syzygy tables provide WDL and DTZ, not a universal DTM distance.
 
-[Magnus Carlsen](https://en.wikipedia.org/wiki/Magnus_Carlsen), considered by many the best player in history, still commits errors. Stockfish, the best chess engine currently, also commits errors relative to theoretical perfect play.
+![Tablebases: specify the question and rules](/images/en/zermelo-04-dtm-dtz.svg)
 
-The difference between Carlsen and Stockfish isn't qualitative (one plays perfectly and the other doesn't), it's quantitative (one is a finer approximation than the other).
+## The human player’s structural limits
 
-## Perfect Play Isn't Ideal Play
+Chess has a mathematically defined notion of perfect play while its value from the initial position remains unknown.
 
-Another dimension of Zermelo's paradox is philosophical. Even if the perfect strategy were written in black and white, would you really play it?
+A player uses calculation, pattern recognition and positional evaluation. We can observe decisions and compare results with opponents; that does not give a general measurement of distance from an unknown optimal strategy.
 
-Imagine White had a forced win in 80 moves from the initial position. Playing this forced win would mean every game would, in reality, already be over at move 1. The opponent could play anything, the result would be the same. Chess as a game would cease to exist.
+Human and engine match performances can be compared. They still do not provide a measured distance to perfect strategy across the game. Positions covered by tablebases, by contrast, allow decisions to be checked under their rules.
 
-The fact that chess is so complex that no perfect strategy is known is precisely what makes it alive.
+## Perfect play and the ideal game
 
-## Zermelo and the Hierarchy of Solved Games
+Even if a perfect strategy were written down, what would that change about playing?
 
-The computer science community has progressively solved more complex games. [Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) is drawn under perfect play. [Connect Four](https://en.wikipedia.org/wiki/Connect_Four) was solved in 1988: first player wins. [Checkers](https://en.wikipedia.org/wiki/Checkers) were solved in 2007 by [Jonathan Schaeffer](https://en.wikipedia.org/wiki/Jonathan_Schaeffer): drawn under perfect play, after 18 years of computation.
+Imagine, hypothetically, White had a forced win within eighty moves from the initial position. Following that strategy would fix the result regardless of Black’s choices. That would change the theoretical stakes. Human practice could nevertheless continue: knowing a strategy exists differs from applying it in every position.
 
-Chess remains open. So does Go.
+The unknown solution leaves room for discovery, sporting competition and aesthetic judgement. The idea that solving chess would “kill” it is a philosophical interpretation, not a theorem about how people would respond.
 
-## What Zermelo Changes for You at the Board
+Its present uncertainty contributes to the experience of exploring a game whose possibilities exceed our calculation. That does not require declaring future solution impossible.
 
-Knowing chess has an inaccessible mathematical truth, does that change anything for the practical player? Not directly on the board. But it changes how to think about the game.
+## Zermelo and solved games
 
-Each move you play is an approximation. Each position evaluation is an estimate. Each plan you build is a heuristic. There's no certainty, even for the most solid Grandmaster.
+Computing research has solved several games, with the meaning of “solved” tied to the starting position, strategy coverage and rules.
 
-This mathematical humility is healthy. It means that even facing an opponent much stronger than you, the truth of the position isn't known to them either.
+[Tic-tac-toe](https://fr.wikipedia.org/wiki/Morpion) is a draw under perfect play. [Connect Four](https://fr.wikipedia.org/wiki/Puissance_4) was solved in 1988 as a first-player win. English draughts on 8×8, *checkers*, was solved in 2007 by [Jonathan Schaeffer](https://fr.wikipedia.org/wiki/Jonathan_Schaeffer) and colleagues as a draw under perfect play, after eighteen years of work in a game with roughly $5\times10^{20}$ possible positions; not every position was individually traversed.
+
+![The status of selected games, without incompatible size comparisons](/images/en/zermelo-03-jeux-resolus.svg)
+
+[Chess](https://fr.wikipedia.org/wiki/%C3%89checs) and [Go](https://fr.wikipedia.org/wiki/Go_(jeu)) remain open from their initial positions. Combinatorial growth hinders current exhaustive methods; it does not prove every future proof impossible. Exact rules must also be specified for each game.
+
+## What Zermelo changes for you at the board
+
+Knowing the starting value is unknown does not directly choose your next move. It does change how a claim about a position should be interpreted.
+
+In complex positions, your variations and evaluation are generally partial. Local certainties still exist: a correctly established forced mate or a tablebase-covered position may be solved under precise rules. Distinguish these from uncertainty remaining at the game’s starting point.
+
+Against a stronger opponent, better performance does not guarantee exact solution of every position. Nor does it imply they do not know a particular endgame or forced mate. Compare concrete variations, available time and a move’s justification rather than an assumed closeness to perfection.
+
+Zermelo’s contribution is not a winning strategy from the initial chess position. His text grounds mathematical analysis of game values; modern formulations separate existence under fixed rules from methods of calculation.
+
+**After reading:** keep one reminder of **mathematical humility** in a long game: a partial evaluation is not automatically a tablebase result. It can help you decide what still needs checking without demanding impossible certainty everywhere.
+
+---
+
+## Frequently asked questions
+
+### Does Zermelo’s theorem prove White wins?
+
+No. In the finite setting, **one** value exists among White win, Black win and draw. The theorem does not identify which applies. The starting position remains unsolved; an engine evaluation is not proof.
+
+### Why call this a paradox?
+
+There is no mathematical contradiction. The tension is **epistemic**: a value exists under fixed rules while the starting value remains unknown. This does not prove that no future method can calculate it. Existence and access are separate questions.
+
+### Do tablebases contradict Zermelo?
+
+No. They provide calculated results for covered subsets according to their rules and metrics. Coverage limits, such as castling rights, matter. They are constructive examples of exact values for accessible finite sets.
+
+### How can AlphaZero beat Stockfish without perfect play?
+
+Neither has demonstrated a perfect strategy from the starting position. In 2017, Stockfish 8 combined alpha-beta search and hand-written evaluation, while AlphaZero combined a learned network and MCTS. A better match score is not a measured distance to an unknown optimal strategy.
+
+### Could this mathematical value one day be discovered?
+
+Exhaustive solution exceeds current resources, not necessarily every future method. Replacing $10^{120}$ with $10^{60}$ by invoking Grover is unjustified: an adversarial game tree is not a simple unstructured list of solutions.
 
 ## Sources
 
-- Zermelo, E. (1913). Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels. *Proceedings of the Fifth International Congress of Mathematicians*.
-- Schwalbe, U., & Walker, P. (2001). Zermelo and the early history of game theory. *Games and Economic Behavior*, 34(1), 123-137.
-- Schaeffer, J., et al. (2007). Checkers is solved. *Science*, 317(5844), 1518-1522.
-- Fraenkel, A. S., & Lichtenstein, D. (1981). Computing a perfect strategy for n×n chess. *Journal of Combinatorial Theory*.
-
-## Key Takeaways
-
-- Zermelo proves that in any finite two-player perfect-information game, the result under perfect play is **determined in advance**
-- For chess, this means either White wins, Black wins, or the game is drawn under perfect play on both sides
-- No one yet knows which of these three options is true; the majority hypothesis is **draw**
-- The demonstration was refined by **König (1927) and Kalmár (1928)** to rigorously handle finiteness
-- **Tablebases up to 7 pieces** are the constructive confirmation of the theorem on an accessible subset
-- This paradox reveals that "perfection" in chess is a **mathematically defined but physically inaccessible** ideal
+- Zermelo, E. (1913). *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels*. Proceedings of the fifth International Congress of Mathematicians, vol. II, 501–504. [Translation in the appendix to Schwalbe and Walker](https://studylib.net/doc/28166551/zermelo-work).
+- Schwalbe, U., & Walker, P. (1999, revised version of the 1997 working paper). *Zermelo and the Early History of Game Theory*. University of Mannheim / University of Canterbury. [Full text consulted](https://studylib.net/doc/28166551/zermelo-work): original proof versus modern presentation.
+- Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. Philosophical Magazine, 41, 256–275. [Original article](https://www.computerhistory.org/chess/doc-431614f453dde/).
+- De Man, R. (undated). *Probetool*. GitHub. [Syzygy documentation](https://github.com/syzygy1/probetool): WDL, DTZ50 and a cursed-win example.
+- FIDE (2022). *Arbiters’ Manual*. [Manual and draw rules](https://arbiters.fide.com/wp-content/uploads/Publications/Manual/ARBManual2022_1st_October.pdf).
+- Allis, V. (1988). *A Knowledge-based Approach of Connect-Four*. Vrije Universiteit Amsterdam. [Thesis](https://tromp.github.io/c4/connect4_thesis.pdf).
+- Schaeffer, J., et al. (2007). *Checkers Is Solved*. Science, 317, 1518–1522. [Full article](https://www.cs.cornell.edu/courses/cs6700/2013sp/readings/06-b-Checkers-Solved-Science-2007.pdf).

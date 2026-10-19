@@ -1,8 +1,6 @@
 ---
-title: "Les échecs en prison : quand l'échiquier devient un outil de réhabilitation"
-excerpt: >-
-  Des détenus qui apprennent à anticiper les conséquences à trois coups de distance, à gérer la frustration d'une pièce
-  perdue, à respecter un adversaire. Ce que les programmes de chess therapy en prison révèlent vraiment.
+title: "Les échecs en prison : des ateliers éducatifs, des effets à évaluer"
+excerpt: "Des ateliers et des tournois existent en détention. Ce qu’ils permettent d’organiser, ce que les sources documentent et pourquoi leur existence ne démontre pas une baisse de la récidive."
 publishDate: "2026-06-22"
 category: societe
 featured: false
@@ -12,14 +10,13 @@ pillar: Inclusion
 tags:
   - échecs prison
   - réhabilitation
-  - Change Through Chess
+  - Chess for Freedom
   - criminologie
   - fonctions exécutives
   - récidive
   - inclusion sociale
-seoTitle: "Les échecs en prison : réhabilitation, fonctions exécutives et récidive"
-seoDescription: >-
-  Échecs en prison : Change Through Chess, San Quentin, Rikers Island. Effets mesurables sur l'impulsivité et la récidive. La chess therapy comme outil de réhabilitation.
+seoTitle: "Échecs en prison : programmes, éducation et limites des preuves"
+seoDescription: "Chess for Freedom, initiatives françaises et éducation en détention : distinguer activités documentées, objectifs pédagogiques et effets non établis des échecs."
 ogImage: /images/og/echecs-en-prison-watermarked-og.webp
 heroImage:
   src: /images/blog/echecs-en-prison-watermarked-hero.webp
@@ -30,176 +27,116 @@ heroImage:
   credit: Blog d'un Gaucher
   license: Création originale
 faq:
-  - question: "Les programmes d'échecs en prison existent-ils en France ?"
-    answer: >-
-      Des initiatives ponctuelles existent, portées par des clubs locaux et des bénévoles, parfois avec le
-      soutien de la Fédération Française des Échecs. Il n'existe pas à ce jour de programme national
-      structuré. Si tu es éducateur pénitentiaire ou bénévole et que tu veux lancer quelque chose, la FFE
-      peut être un point de contact utile.
-  - question: "Les détenus peuvent-ils participer à des tournois ?"
-    answer: >-
-      Certains établissements organisent des tournois internes. Dans quelques cas documentés au Royaume-Uni
-      et aux États-Unis, des détenus ont participé à des compétitions contre des joueurs extérieurs, parfois
-      à distance via des systèmes sécurisés. Change Through Chess a organisé plusieurs de ces rencontres, et
-      les participants les décrivent souvent comme une expérience marquante : être traité comme un joueur,
-      pas comme un numéro.
-  - question: "Est-ce que ça marche aussi avec des jeunes en difficulté hors milieu carcéral ?"
-    answer: >-
-      Oui. Des programmes similaires existent dans des quartiers défavorisés, des établissements scolaires en
-      éducation prioritaire et des centres de placement pour mineurs. Les mécanismes cognitifs ciblés sont
-      identiques. Les résultats observés sont comparables, avec souvent une réception plus facile,
-      l'environnement carcéral ajoutant une couche de méfiance envers toute initiative éducative.
-  - question: "Peut-on utiliser les échecs pour travailler sur l'empathie ?"
-    answer: >-
-      C'est une des dimensions les plus intéressantes. Anticiper le coup de son adversaire implique de se
-      mettre à sa place, de modéliser sa vision de l'échiquier, ses craintes, ses intentions. C'est une forme
-      concrète, mesurable, et répétée d'exercice de la théorie de l'esprit, que les sciences comportementales
-      considèrent comme l'un des fondements de l'empathie.
+  - question: "Existe-t-il des initiatives françaises ?"
+    answer: "La FFE documente des échanges avec l’administration pénitentiaire en 2018 et mentionne Chess for Freedom en 2023. Ces sources ne recensent pas tous les ateliers actuels ; elles ne justifient pas d’affirmer qu’aucune démarche nationale n’existe."
+  - question: "Les personnes détenues peuvent-elles participer à des tournois ?"
+    answer: "Oui, dans des dispositifs autorisés par les établissements. Les compétitions Chess for Freedom en donnent des exemples documentés. L’accès à une plateforme et les conditions de participation restent encadrés."
+  - question: "Les échecs réduisent-ils la récidive ?"
+    answer: "Les documents examinés ici ne permettent pas d’établir cet effet propre au jeu. Les résultats d’études sur l’éducation en prison au sens large ne constituent pas une mesure de l’efficacité d’un atelier d’échecs."
+  - question: "Anticiper un adversaire développe-t-il l’empathie ?"
+    answer: "Calculer une réponse adverse est une tâche de jeu. Cela ne démontre pas une amélioration générale de l’empathie, de la théorie de l’esprit ou des relations hors de l’atelier."
 ---
 
-Il est 14h dans un établissement pénitentiaire de la périphérie de Londres. La salle est petite, le mobilier cabossé. Deux détenus sont assis face à un échiquier posé sur une table en formica. Il n'y a pas de surveillance rapprochée : le gardien est dans le couloir.
+Une table, un échiquier, une partie menée jusqu’au bout : un atelier en détention peut proposer un temps consacré au jeu et à l’apprentissage. Son intérêt n’exige pas d’imaginer une scène de prison ni de promettre qu’une combinaison transforme un parcours de vie.
 
-Pas de téléphone. Pas de télévision. Le silence s'est installé naturellement, ce qui est suffisamment rare dans cet établissement pour que d'autres détenus qui passent devant la porte s'arrêtent un instant, intrigués.
+Les programmes existent. Pour en parler, il faut distinguer trois questions : une activité a-t-elle été organisée ? Que rapportent ses participants et ses intervenants ? Une évaluation permet-elle d’attribuer au jeu un changement durable ? Une annonce de tournoi répond à la première, pas automatiquement aux deux autres.
 
-L'un avance un Cavalier. L'autre réfléchit deux minutes avant de répondre.
+## Des objectifs pédagogiques, pas un profil des personnes détenues
 
-Ce qui se passe dans cette pièce n'est pas symbolique. Ce n'est pas de la récréation. C'est calculé. Depuis 2014, l'organisation britannique [Change Through Chess](https://www.changethroughchess.com/) intervient dans les établissements pénitentiaires du Royaume-Uni avec un objectif précis : utiliser les échecs non pas comme un passe-temps, mais comme un outil de développement des fonctions cognitives directement liées à la récidive.
+Tu peux proposer à un joueur d’expliquer son choix, de vérifier une menace et de reprendre une position après une erreur. Ce sont des tâches concrètes à observer dans l’atelier. Elles ne permettent pas de diagnostiquer une impulsivité, un manque d’empathie ou un déficit cérébral.
 
-Un détenu qui apprend à voir trois coups à l'avance sur un échiquier apprend aussi, peut-être, quelque chose sur les conséquences de ses décisions hors de la prison. Cette hypothèse n'est plus seulement intuitive. Elle a une base dans la criminologie moderne.
+Le fait d’être incarcéré ne suffit pas à décrire une manière de penser. La récidive ne se résume pas à une décision mal calculée : une partie ne renseigne pas à elle seule sur les conditions de logement, les possibilités de travail, les liens sociaux ou les besoins d’accompagnement après la sortie.
 
-## Pourquoi la récidive commence dans la tête
+Comparer une décision échiquéenne à une décision quotidienne peut ouvrir une discussion. Le passage de l’une à l’autre reste une hypothèse de transfert, pas un acquis mesuré simplement parce que le joueur a appris à voir une fourchette.
 
-La criminologie contemporaine a progressivement déplacé son regard. Derrière les facteurs sociaux bien documentés, pauvreté, exclusion, trajectoires familiales fracturées, un profil cognitif spécifique apparaît dans les études sur la récidive.
+![Distinguer une tâche observée dans l’atelier, un objectif pédagogique et un effet général qui demanderait une évaluation.](/images/echecs-prison-01-deficits-cognitifs.svg)
 
-[Ross et Fabiano](https://www.researchgate.net/publication/284684876_Time_to_Think_A_Cognitive_Model_of_Delinquency_Prevention_and_Offender_Rehabilitation) ont formalisé ce lien dès les années 1980 avec leur programme *Reasoning and Rehabilitation* : une grande partie des comportements délinquants récurrents est associée à des déficits dans trois domaines cognitifs précis.
+## Des programmes et des compétitions vérifiables
 
-**La pensée à court terme.** Difficulté à anticiper les conséquences lointaines d'une action. L'acte immédiat compte. Ce qui se passe dans trois semaines ou dans trois ans est difficile à intégrer comme variable réelle dans la décision. Ce n'est pas de l'inconscience morale : c'est une limite cognitive dans la projection temporelle.
+### Chess for Freedom : une initiative identifiée
 
-**L'impulsivité.** Réponse rapide aux stimuli sans période d'inhibition suffisante. L'espace entre l'émotion et l'action est trop court ou absent. La colère devient une décision en quelques secondes, avant que le cortex préfrontal n'ait eu le temps de calculer les conséquences.
+La FIDE et le Cook County Sheriff’s Office ont annoncé le lancement de **Chess for Freedom en avril 2021**. C’est une référence identifiable pour les échecs en détention. Les objectifs de réinsertion avancés par les organisateurs restent à distinguer d’une évaluation indépendante. [Annonce de lancement](https://chessforfreedom.fide.com/2021/04/13/chess-for-freedom-program-launched/)
 
-**La difficulté à adopter le point de vue d'autrui.** Faible [théorie de l'esprit](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_l%27esprit) : difficulté à modéliser ce que l'autre pense, ressent, anticipe. Les actes qui nuisent à autrui sont souvent facilités par une incapacité à se représenter vraiment cet "autrui" comme un sujet avec une vie intérieure.
+Une fédération peut documenter ce qu’elle organise. Sa présentation d’un projet ne remplace pas un protocole décrivant qui a été évalué, à quel moment et par rapport à quel groupe. Un témoignage peut être précieux sans devenir une mesure de baisse de la récidive.
 
-Ces trois déficits sont précisément les trois axes qu'une partie d'échecs exige de travailler, coup après coup, pendant chaque séance. Quand des éducateurs cherchent des activités pour travailler l'inhibition, la planification et la théorie de l'esprit, ils finissent par poser un échiquier. La convergence est trop précise pour être ignorée.
+### Jouer avec d’autres établissements
 
-![Schéma des trois déficits cognitifs liés à la récidive selon Ross et Fabiano : pensée court-termiste, impulsivité, faible théorie de l'esprit.](/images/echecs-prison-01-deficits-cognitifs.svg)
+En mai 2026, la FIDE rend compte de championnats continentaux effectivement disputés par des équipes de personnes détenues. Cela documente une compétition organisée, sans mesurer un effet après la libération. [Compte rendu des organisateurs](https://www.fide.com/2nd-continental-championships-for-prisoners-conclude-with-a-record-number-of-countries-teams-participating/)
 
-## Les programmes qui documentent leurs résultats
+L’annonce des épreuves de 2025 précisait des équipes de quatre joueurs, la plateforme Chess.com et une cadence de dix minutes plus cinq secondes par coup. Ce sont les conditions de cette édition, pas une autorisation générale d’accès à Internet en prison. [Présentation du format](https://www.fide.com/first-continental-online-chess-championships-for-prisoners-announced/)
 
-### Change Through Chess (Royaume-Uni, depuis 2014)
+Pour préparer un atelier, il faut donc examiner les conditions de l’établissement : salle, matériel, présence des intervenants, accès autorisés et calendrier. Le niveau compétitif n’est pas le seul objectif possible ; une séance d’initiation peut être choisie pour elle-même.
 
-Fondée par des éducateurs et un ancien joueur de tournoi, Change Through Chess intervient dans des prisons, des unités pour jeunes délinquants et des centres de réinsertion sociale au Royaume-Uni.
+![Un atelier repose sur des objectifs explicites, des conditions de participation et des observations ; aucun effet extérieur n’en découle automatiquement.](/images/echecs-prison-02-objectifs-ctc.svg)
 
-Leur approche est explicitement cognitive, pas ludique. Elle structure les sessions autour de trois objectifs reliés directement aux déficits identifiés par Ross et Fabiano :
+### En France : vérifier les démarches au lieu d’annoncer leur absence
 
-**Planification à long terme** : apprendre à voir la position dans trois ou quatre coups, pas seulement le coup suivant. Comprendre que chaque action crée une réalité nouvelle avec ses propres contraintes.
+La FFE rapporte une réunion avec la Direction de l’administration pénitentiaire en septembre 2018 autour de la convention d’objectifs 2019. Elle mentionne aussi Chess for Freedom dans une annonce de sa commission Santé Social Handicap en janvier 2023. [Réunion FFE–DAP](https://www.echecs.asso.fr/Actu.aspx?Ref=11278), [annonce de la commission](https://www.echecs.asso.fr/Actu.aspx?Ref=14284)
 
-**Gestion de la frustration** : perdre une pièce, se retrouver dans une position difficile, rester assis et réfléchir au lieu de se lever. L'échiquier oblige à traverser l'adversité dans le calme et à chercher une issue plutôt qu'à fuir ou à s'emporter.
+Ces traces ne constituent ni un inventaire actuel de chaque établissement ni la preuve que tous disposent du même programme. Elles empêchent en revanche de présenter l’absence d’une démarche nationale comme un fait établi. Pour un projet concret, vérifie la situation auprès de l’établissement et des interlocuteurs fédéraux concernés.
 
-**Modélisation de l'adversaire** : anticiper ce que l'autre va jouer, c'est-à-dire entrer mentalement dans sa perspective. *Que voit-il sur l'échiquier ? Que veut-il ? Que craint-il ?* C'est exactement l'exercice de théorie de l'esprit que les programmes de réhabilitation cherchent à développer.
+## Le chiffre de RAND : de l’éducation aux échecs, un saut injustifié
 
-![Les trois objectifs cognitifs de Change Through Chess mis en correspondance avec les trois déficits de Ross et Fabiano.](/images/echecs-prison-02-objectifs-ctc.svg)
+Davis et collègues (RAND, 2013, tableau 3.1) rapportent, pour les études de qualité méthodologique 4–5, un rapport de cotes de récidive de **0,57**, avec un intervalle de confiance à 95 % de **0,47 à 0,70**, associé à l’éducation en détention. Cette synthèse ne mesure pas un effet propre aux échecs. [Rapport intégral](https://www.rand.org/content/dam/rand/pubs/research_reports/RR200/RR266/RAND_RR266.pdf)
 
-Les rapports publiés entre 2017 et 2023 font état d'effets observés par les éducateurs pénitentiaires : réduction des incidents disciplinaires dans les semaines suivant les sessions, amélioration du comportement en classe carcérale, et dans certains cas, réduction de l'isolement social des participants.
+Une cote et une probabilité ne sont pas la même quantité : pour une probabilité p, la cote vaut p/(1−p). Le chiffre de 43 % souvent cité ne signifie donc pas une baisse de 43 points de pourcentage ni une garantie individuelle. Il serait encore moins justifié de l’attribuer à un club d’échecs sans étude correspondante.
 
-Ces données sont des rapports internes, pas des études randomisées avec groupe contrôle. Il faut en tenir compte dans l'interprétation. Mais leur cohérence avec les prédictions des modèles cognitifs de la récidive est frappante.
+Une recherche sur l’enseignement général ou professionnel n’établit pas quelle composante produit le résultat dans un autre programme. Pour les échecs, il faut une question, des mesures et un groupe de comparaison adaptés.
 
-### De Rikers Island à San Quentin
+![Ne pas confondre résultat d’une étude sur l’éducation, rapport de cotes et effet spécifique d’un atelier d’échecs.](/images/echecs-prison-03-rand-recidive.svg)
 
-Aux États-Unis, les programmes d'échecs en milieu carcéral ont une histoire plus ancienne. Le club d'échecs de [San Quentin State Prison](https://fr.wikipedia.org/wiki/Prison_%C3%A9tatique_de_San_Quentin) en Californie est l'un des plus documentés. Actif depuis plusieurs décennies, il a produit plusieurs joueurs de niveau régional compétitif et fait l'objet de reportages dans des médias nationaux américains.
+## Ce que l’échiquier permet de proposer
 
-Ce qui est notable dans les témoignages recueillis auprès des participants n'est pas leur niveau de jeu. C'est la récurrence de certaines formulations : *"J'ai appris à réfléchir avant d'agir." "J'ai compris qu'une mauvaise décision a des conséquences qu'on ne peut pas effacer." "Jouer aux échecs m'a appris à me mettre à la place de quelqu'un d'autre."*
+**Revenir sur une décision.** Une position enregistrée permet de rejouer un choix et ses alternatives. Elle montre les coups, pas l’intégralité de la pensée du joueur. Lui demander ce qu’il avait envisagé est plus précis que de supposer que le plateau « révèle tout ».
 
-Ces formulations ne sont pas des anecdotes. Elles cartographient exactement les trois déficits identifiés par Ross et Fabiano.
+**Rencontrer un adversaire dans des règles communes.** Un atelier peut prévoir l’explication des règles, les manières de demander de l’aide et une discussion après la partie. Le respect n’est pas produit automatiquement par la présence d’un échiquier ; l’animation compte dans l’expérience proposée.
 
-À [Rikers Island](https://fr.wikipedia.org/wiki/Rikers_Island), la prison de New York, des programmes similaires s'inscrivent dans des initiatives éducatives plus larges. Les études sur l'impact global de l'éducation en milieu carcéral, dont les programmes cognitifs sont une composante, montrent régulièrement des taux de récidive inférieurs chez les participants. La RAND Corporation a publié en 2013 une méta-analyse de référence.
+**Adapter la difficulté.** Une personne qui débute peut travailler un mat élémentaire, une autre analyser une partie. Les participants n’arrivent pas avec les mêmes connaissances, expériences ou contraintes. Une règle commune ne signifie pas une égalité préalable des ressources.
 
-> **Davis LM, et al.** (2013). *Evaluating the Effectiveness of Correctional Education.* RAND Corporation.
+**Faire une place au plaisir.** Apprendre un jeu, réussir un exercice ou partager une séance peut constituer un objectif explicite. Il n’est pas nécessaire de rebaptiser ce loisir « thérapie » pour lui reconnaître un intérêt.
 
-Cette étude, portant sur des dizaines de programmes éducatifs dans les prisons américaines, a estimé que les détenus ayant participé à des programmes éducatifs avaient **43 % moins de risques d'être réincarcérés** dans les trois ans suivant leur libération. Elle porte sur l'éducation au sens large, pas les échecs spécifiquement. Mais elle situe les programmes cognitifs dans un cadre où l'effet de la stimulation intellectuelle sur la récidive est maintenant bien documenté.
+![Des possibilités pédagogiques : revoir une décision, partager des règles et adapter les exercices ; pas une garantie de transformation personnelle.](/images/echecs-prison-04-specificite-echecs.svg)
 
-![Comparaison visuelle du risque de réincarcération dans les trois ans : groupe sans programme éducatif versus groupe avec programme, méta-analyse RAND 2013.](/images/echecs-prison-03-rand-recidive.svg)
+## Empathie, attention et autres contextes
 
-### La France : des initiatives locales, pas de programme national
+Calculer la meilleure réponse de l’autre camp ne démontre pas que tu comprends mieux les émotions d’une personne. Une analyse stratégique, une conversation respectueuse et un changement d’empathie sont des résultats différents.
 
-La question qui revient souvent en France : existe-t-il des programmes équivalents ? La réponse est nuancée.
+De même, une séance qui retient l’attention ne constitue pas un traitement du TDAH. L’incarcération ne permet pas de poser ce diagnostic ni d’en annoncer un taux non vérifié. Les besoins individuels et les décisions de soin ne se déduisent pas d’un score de puzzle.
 
-Des initiatives ponctuelles existent, portées par des clubs locaux, des bénévoles et dans certains cas avec le soutien de la [Fédération Française des Échecs](https://www.echecs.asso.fr/). Des parties ont été organisées dans des établissements pénitentiaires à Paris, Lyon, Marseille, souvent à l'initiative d'un éducateur ou d'un détenu joueur qui a convaincu l'administration.
+Pour les limites des effets cognitifs généraux, vois [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/). Les projets destinés aux jeunes hors détention demandent leur propre évaluation ; leurs effets ne sont pas nécessairement identiques à ceux d’un atelier en prison.
 
-Il n'existe pas, à ce jour, de programme national structuré comparable à Change Through Chess au Royaume-Uni. L'administration pénitentiaire française n'a pas de protocole établi autour des échecs. C'est un chantier ouvert.
+## Évaluer un atelier sans lui promettre toute la réinsertion
 
-## Ce que les échecs apportent que d'autres activités n'apportent pas
+Choisis d’abord ce que tu souhaites observer : présence, accès au matériel, compréhension d’une règle, capacité à expliquer une variante ou satisfaction déclarée. Ces indicateurs répondent à des questions différentes. Aucun ne mesure à lui seul la récidive.
 
-La question mérite d'être posée directement : pourquoi les échecs plutôt que les arts plastiques, le sport, la musique ou le théâtre, d'autres activités également présentes dans les programmes de réhabilitation ?
+Note aussi qui pouvait participer, qui a accepté, les séances annulées et les personnes qui ont arrêté. Si les participants sont volontaires, leur comparaison avec tous les autres peut mélanger motivation initiale et effet de l’activité. Un résultat avant–après ne supprime pas toutes les autres explications.
 
-Chaque activité travaille des dimensions différentes. Ce qui est spécifique aux échecs :
+Une évaluation après la sortie demanderait encore de définir l’événement étudié, la durée de suivi, les données disponibles et la comparaison. Réarrestation, nouvelle condamnation et réincarcération ne sont pas des synonymes. Le suivi doit respecter les conditions d’accès aux données et la confidentialité.
 
-**L'échec est immédiat, visible et irréversible.** Au football, un mauvais tir peut être suivi d'une récupération défensive. Aux échecs, un coup joué reste joué. La position qui en résulte est la conséquence directe et irréversible de ta décision. C'est un apprentissage de la causalité, de la responsabilité personnelle de chaque action, avec une clarté que peu d'activités offrent.
-
-**L'adversaire est toujours respecté, jamais dominé physiquement.** Dans un contexte carcéral où les rapports de force physique sont une réalité quotidienne, l'échiquier impose un protocole inverse : on gagne en pensant mieux, pas en étant plus fort. La domination intellectuelle est non seulement autorisée : elle est le seul chemin possible. Cette inversion est symboliquement puissante dans des environnements où la hiérarchie physique structure tout.
-
-**Le jeu est universel et ne respecte pas les hiérarchies préexistantes.** Un détenu sans diplôme peut battre quelqu'un de diplômé. Cette équité du point de départ est un signal fort pour des personnes dont l'expérience sociale a souvent été marquée par des hiérarchies perçues comme inaccessibles ou injustes. Sur un échiquier, personne n'a d'avantage de départ. Tout se construit coup par coup.
-
-**La pensée devient visible.** Aux échecs, on ne peut pas tricher sur la qualité de sa réflexion : la position sur l'échiquier dit tout. Ce caractère transparent de la pensée, ce que j'ai joué révèle comment j'ai raisonné, peut être un levier pédagogique puissant pour amener quelqu'un à observer ses propres patterns de décision.
-
-![Les quatre propriétés spécifiques des échecs en réhabilitation : irréversibilité des coups, domination intellectuelle, équité du départ, pensée rendue visible.](/images/echecs-prison-04-specificite-echecs.svg)
-
-## Les mêmes mécanismes, d'autres contextes
-
-Les déficits cognitifs que les échecs travaillent dans le contexte carcéral, impulsivité, planification déficiente, difficulté à modéliser l'autre, se retrouvent dans d'autres profils souvent associés à des trajectoires de vulnérabilité sociale. L'article sur [les échecs et le TDAH](/fr/blog/echecs-et-tdah/) explore ces mêmes mécanismes pour un profil neurodéveloppemental particulièrement représenté dans les populations carcérales : on estime que 25 à 40 % des personnes incarcérées présentent un TDAH non diagnostiqué.
-
-Ce n'est pas un détail. Si une part significative des comportements impulsifs qui mènent à l'incarcération est d'origine neurologique plutôt que morale, l'approche par l'entraînement des fonctions cognitives, dont les échecs sont un outil, prend une dimension encore plus claire.
-
-## Les limites : ni romanticisme ni naïveté
-
-Plusieurs précautions s'imposent avant de conclure que les échecs "sauvent" des détenus.
-
-**La sélection des participants biaise les résultats.** Les détenus qui rejoignent volontairement un programme d'échecs présentent probablement déjà une motivation à changer, ou à se distinguer, à occuper leur temps différemment, que n'ont pas ceux qui n'y participent pas. Mesurer uniquement l'impact sur les participants revient à mesurer en partie l'effet de la motivation, pas nécessairement des échecs.
-
-**Les effets disparaissent sans suivi.** Les programmes les plus efficaces combinent l'activité échecs avec un accompagnement éducatif plus large et un suivi post-incarcération. L'échiquier seul, sans contexte ni suivi, produit peu d'effets durables. Ce n'est pas un vaccin : c'est un entraînement. L'entraînement doit continuer.
-
-**Les études robustes manquent encore.** La plupart des données disponibles sont observationnelles, issues de rapports d'organisations qui ont un intérêt à valoriser leurs propres résultats. Les essais randomisés contrôlés sur ce sujet précis sont rares. Le champ mérite davantage de recherche rigoureuse et indépendante.
-
-**Certains profils carcéraux ne sont pas adaptés à cette approche.** Les personnes avec des troubles de la personnalité sévères, des troubles dissociatifs ou des antécédents de violence grave dans des contextes de compétition ne sont pas nécessairement de bons candidats à un programme d'échecs en groupe. L'évaluation préalable par un professionnel est importante.
-
-Ces limites ne disqualifient pas l'approche. Elles fixent le cadre honnête dans lequel l'interpréter.
-
----
+L’organisation et les aménagements relèvent des responsables de l’établissement et des professionnels concernés. Une liste de diagnostics ne permet pas de décider ici qui serait « inadapté » au jeu. L’objectif est de décrire une activité accessible dans son cadre réel, sans faire porter à un animateur une promesse médicale ou criminologique.
 
 ### Synthèse en un tableau
 
-| Aspect | Ce que les données disent |
+| Question | Ce que tu peux retenir |
 | --- | --- |
-| Déficits cognitifs et récidive | Ross & Fabiano : impulsivité, pensée court-termiste et faible théorie de l'esprit sont des prédicteurs mesurables de récidive. |
-| Ce que les échecs travaillent | Planification à 3-4 coups, inhibition de l'impulsivité, modélisation de l'adversaire : les trois déficits ciblés, coup après coup. |
-| Preuves disponibles | Rapports de Change Through Chess (2017-2023), témoignages de San Quentin, méta-analyse RAND sur l'éducation carcérale (2013). Peu d'essais randomisés directs. |
-| Limite principale | Biais de sélection : les participants sont souvent déjà motivés. Les effets nécessitent un suivi pour durer. |
-| Situation en France | Initiatives ponctuelles mais pas de programme national structuré comparable au modèle britannique. |
+| Des programmes existent-ils ? | Des sources FIDE et FFE identifient des initiatives et des événements. |
+| Que peut viser un atelier ? | Apprendre le jeu, expliquer des choix et partager une activité encadrée. |
+| La récidive est-elle mesurée ici pour les échecs ? | Non ; le résultat de RAND concerne un autre ensemble d’interventions. |
+| L’empathie est-elle garantie ? | Non ; anticiper un coup ne mesure pas un transfert général. |
+| Que vérifier avant de lancer une action ? | Conditions locales, objectifs, participation et modalités d’évaluation. |
 
----
-
-## Questions fréquentes
-
-**Les programmes d'échecs en prison existent-ils en France ?**
-Des initiatives ponctuelles existent, portées par des clubs locaux et des bénévoles, parfois avec le soutien de la Fédération Française des Échecs. Il n'existe pas à ce jour de programme national structuré. Si tu es éducateur pénitentiaire ou bénévole et que tu veux lancer quelque chose, la FFE peut être un point de contact utile.
-
-**Les détenus peuvent-ils participer à des tournois ?**
-Certains établissements organisent des tournois internes. Dans quelques cas documentés au Royaume-Uni et aux États-Unis, des détenus ont participé à des compétitions contre des joueurs extérieurs, parfois à distance via des systèmes sécurisés. Change Through Chess a organisé plusieurs de ces rencontres, et les participants les décrivent souvent comme une expérience marquante : être traité comme un joueur, pas comme un numéro.
-
-**Est-ce que ça marche aussi avec des jeunes en difficulté hors milieu carcéral ?**
-Oui. Des programmes similaires existent dans des quartiers défavorisés, des établissements scolaires en éducation prioritaire et des centres de placement pour mineurs. Les mécanismes cognitifs ciblés sont identiques. Les résultats observés sont comparables, avec souvent une réception plus facile, l'environnement carcéral ajoutant une couche de méfiance envers toute initiative éducative.
-
-**Peut-on utiliser les échecs pour travailler sur l'empathie ?**
-C'est une des dimensions les plus intéressantes. Anticiper le coup de son adversaire implique de se mettre à sa place, de modéliser sa vision de l'échiquier, ses craintes, ses intentions. C'est une forme concrète, mesurable, et répétée d'exercice de la théorie de l'esprit, que les sciences comportementales considèrent comme l'un des fondements de l'empathie.
-
----
-
-L'échiquier enseigne quelque chose que peu d'activités enseignent aussi clairement : chaque décision a une conséquence visible et irréversible, et l'adversaire en face de toi a une perspective que tu as intérêt à comprendre. Les programmes qui **durent** combinent jeu, **accompagnement humain stable** et **suite après la sortie** ; l’échiquier seul ne réécrit pas un parcours. Pour les effets cognitifs mesurés hors milieu carcéral, voir [les échecs et le cerveau](/fr/blog/les-echecs-et-le-cerveau/).
-
-**Après lecture :** si tu pilotes ou soutiens un atelier, trace **un** objectif mesurable en établissement (respect du temps, formulation du coup joué) pendant six séances avant d’évaluer quoi que ce soit sur la récidive.
-
----
+**Après lecture :** si tu soutiens un atelier, choisis un objectif limité et précise comment tu l’observeras. « Comprendre l’opposition dans une finale » est plus vérifiable que « changer le comportement hors de prison ». Révise ensuite le projet à partir des observations, y compris les difficultés.
 
 ## Pour aller plus loin
 
-- [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
-- [Les échecs et le cerveau : ce que la science révèle vraiment](/fr/blog/les-echecs-et-le-cerveau/)
+- [Échecs et TDAH : distinguer pratique et prise en charge](/fr/blog/echecs-et-tdah/)
+- [Les échecs et le cerveau : ce que les études mesurent](/fr/blog/les-echecs-et-le-cerveau/)
+
+## Sources
+
+- FIDE et Cook County Sheriff’s Office (2021), *Chess for Freedom program launched*, [présentation du lancement](https://chessforfreedom.fide.com/2021/04/13/chess-for-freedom-program-launched/).
+- FIDE (2025), *First Continental Online Chess Championships for Prisoners announced*, [conditions de compétition](https://www.fide.com/first-continental-online-chess-championships-for-prisoners-announced/).
+- FIDE (2026), *2nd Continental Championships for Prisoners conclude*, [compte rendu](https://www.fide.com/2nd-continental-championships-for-prisoners-conclude-with-a-record-number-of-countries-teams-participating/).
+- Fédération française des échecs (2018), *Réunion de travail à la Direction de l’administration pénitentiaire*, [publication](https://www.echecs.asso.fr/Actu.aspx?Ref=11278).
+- Fédération française des échecs (2023), *Découvrez le site web de la Commission Santé Social Handicap*, [publication](https://www.echecs.asso.fr/Actu.aspx?Ref=14284).
+- Davis, L. M., Bozick, R., Steele, J. L., Saunders, J. et Miles, J. N. V. (2013), *Evaluating the Effectiveness of Correctional Education*, RAND, RR-266-BJA, [rapport et tableau 3.1](https://www.rand.org/content/dam/rand/pubs/research_reports/RR200/RR266/RAND_RR266.pdf).

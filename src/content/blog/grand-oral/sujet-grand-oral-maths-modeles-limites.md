@@ -1,8 +1,6 @@
 ---
 title: "Sujet Grand Oral Maths : Quels modèles mathématiques permettent de comprendre les échecs, et où sont leurs limites ?"
-excerpt: >-
-  Sujet entièrement rédigé pour le Grand Oral spécialité Maths : comparaison combinatoire, probabiliste, algorithmique
-  et apprentissage statistique. Méta-analyse de la modélisation. Texte de 10 minutes prêt à réciter.
+excerpt: "Une fiche de révision pour distinguer les modèles combinatoires, le score attendu Elo et l’apprentissage, avec renvois aux guides Maths et NSI."
 publishDate: "2026-05-05"
 category: grand-oral
 featured: false

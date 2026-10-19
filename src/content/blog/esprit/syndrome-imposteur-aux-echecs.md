@@ -25,11 +25,11 @@ Ces exemples illustrent un sentiment de doute. Clance et Imes (1978) décrivent 
 
 ## La mécanique du syndrome de l'imposteur
 
-La psychologie du syndrome de l'imposteur repose sur un mécanisme d'attribution asymétrique. Quand les succès arrivent, ils sont attribués à des facteurs externes et instables : la chance, la faiblesse des adversaires, une bonne journée exceptionnelle. Quand les échecs arrivent, ils sont attribués à des facteurs internes et stables : le manque de talent, la "vraie" incompétence qui était là depuis le début.
+Une manière de décrire ce vécu est l’attribution asymétrique : minimiser ses succès en les rapportant à la chance ou à une opposition favorable, puis interpréter ses échecs comme une preuve d’incompétence stable. C’est une grille de lecture possible, pas un mécanisme qui décrirait chaque personne.
 
-Cette asymétrie crée une comptabilité émotionnelle faussée. Les preuves de compétence s'accumulent dans la colonne "facteurs externes non fiables". Les preuves d'incompétence s'accumulent dans la colonne "facteurs internes permanents". La conclusion est inévitable et toujours la même : "Je ne suis pas vraiment bon."
+Dans cet exemple, les réussites sont écartées comme peu fiables tandis que les erreurs prennent une valeur générale. Cette lecture peut nourrir la conclusion « je ne suis pas vraiment bon », sans que cette conclusion soit inévitable ni partagée par tous.
 
-![Schéma de l'attribution asymétrique du syndrome de l'imposteur : succès attribués à des facteurs externes instables (chance, faiblesse adverse) et échecs à des facteurs internes stables (manque de talent), aboutissant toujours à la même conclusion négative.](/images/imposteur-01-attribution.svg)
+![Examiner l’explication donnée à un résultat](/images/imposteur-01-attribution.svg)
 
 La revue de Bravata et collègues (2020) montre que les estimations de fréquence varient fortement selon les populations, les échelles et les seuils employés. Elle ne permet pas d’annoncer que 60 à 70 % des joueurs d’échecs en souffrent. Les pistes proposées plus bas ne sont pas des traitements dont l’efficacité aurait été démontrée dans ce jeu.
 
@@ -39,15 +39,15 @@ Certaines situations échiquéennes peuvent nourrir ce doute. Les points suivant
 
 ### L'impossibilité de cacher les erreurs
 
-Aux échecs, chaque erreur est inscrite dans la notation de la partie. Le moteur peut l'analyser, l'adversaire peut l'identifier, tu ne peux pas le nier. Cette transparence totale des erreurs rend extrêmement difficile de maintenir l'attribution externe des échecs.
+La notation conserve la suite de coups, que tu peux revoir avec un partenaire ou un moteur. Elle ne rend pas tout raisonnement transparent et ne détermine pas à elle seule quelles décisions étaient erronées. L’analyse porte sur des positions et des choix, pas sur la valeur de la personne.
 
 Une analyse peut identifier une erreur et te donner une piste de travail. Elle ne permet pas de conclure à ton incompétence générale. Le score d’un moteur porte sur une décision dans une position, pas sur ta légitimité à participer.
 
 ### La communauté de comparaison permanente
 
-Les classements Elo et les résultats de tournoi créent une hiérarchie de performance visible par tous. À tout moment, n'importe qui peut voir ton classement, tes résultats récents, tes performances en tournois. Cette transparence sociale nourrit le mécanisme de comparaison vers le haut (regarder ceux qui sont "meilleurs" que soi) plutôt que vers le bas, ce qui est caractéristique des personnes souffrant du syndrome de l'imposteur.
+Les classements et certains résultats de tournoi sont publics. Selon les usages du joueur et de sa communauté, ils peuvent fournir des occasions de comparaison. Regarder surtout les joueurs mieux classés est une possibilité à observer, sans en déduire un trait universel ou un diagnostic.
 
-![Le classement Elo public amplifie le syndrome de l'imposteur : la pyramide des niveaux est visible en permanence, orientant systématiquement le regard vers le haut et ignorant les joueurs en dessous.](/images/imposteur-03-comparaison-elo.svg)
+![Comparer des classements avec leur contexte](/images/imposteur-03-comparaison-elo.svg)
 
 ### La profondeur des connaissances requises
 
@@ -55,7 +55,7 @@ Il reste toujours des positions et des thèmes que tu maîtrises mal. Les lacune
 
 ## Les comportements possibles identifiables
 
-Le syndrome de l'imposteur aux échecs se manifeste par des comportements possibles reconnaissables.
+Les situations suivantes peuvent servir de points de discussion. Elles ne forment pas un test permettant d’identifier le phénomène chez un joueur.
 
 **Le discours négatif constant après les victoires.** Les commentaires minimisant systématiquement ses propres performances : "J'ai eu de la chance", "Il était en mauvaise forme", "C'était une ouverture pourrie de sa part".
 
@@ -63,11 +63,11 @@ Le syndrome de l'imposteur aux échecs se manifeste par des comportements possib
 
 **La préparation excessive comme anxiolytique.** Passer des dizaines d'heures à mémoriser des variantes d'ouverture pour éviter d'être "exposé" dans la théorie, non pas pour s'améliorer mais pour avoir l'impression de contrôler la situation.
 
-**Le refus des compliments.** "Tu as bien joué ce coup !" / "Je ne savais pas pourquoi je le jouais vraiment, j'ai eu de la chance." Ce refus n'est pas de la modestie : c'est de l'incapacité à internaliser les preuves de compétence.
+**Le refus des compliments.** « Tu as bien joué ce coup ! » / « J’ai eu de la chance. » Cette réponse peut minimiser un succès, mais elle peut aussi avoir d’autres raisons. Demander comment la personne a vécu la partie vaut mieux que conclure automatiquement à une incapacité à reconnaître sa compétence.
 
 **Éviter les situations où le "vrai niveau" pourrait être révélé.** Fuir les tournois officiels, refuser de jouer contre des joueurs plus forts, rester dans des parties en ligne "informelles".
 
-![Les cinq comportements possibles du syndrome de l'imposteur aux échecs : discours négatif post-victoire, acceptation asymétrique, préparation anxiolytique, refus des compliments, évitement des situations d'évaluation.](/images/imposteur-02-patterns-comportementaux.svg)
+![Décrire une difficulté avant de la nommer](/images/imposteur-02-patterns-comportementaux.svg)
 
 ## Syndrome de l'imposteur et niveau de jeu : à qui ça touche ?
 

@@ -1,5 +1,5 @@
 ---
-title: "La solitude aux échecs : le sport où tu es réglementairement seul"
+title: "La solitude aux échecs : décider seul sans être isolé"
 excerpt:
   "Décider sans aide pendant la partie ne signifie pas être isolé : règles, pratique solitaire et choix de relations autour du jeu."
 publishDate: "2026-11-16"

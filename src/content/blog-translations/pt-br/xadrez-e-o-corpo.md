@@ -1,137 +1,58 @@
-﻿---
+---
 heroImageAlt: Uma cadeira vazia vista de perfil, com o piso desgastado e marcado logo abaixo.
-title: "Xadrez e corpo: o que um jogo imóvel faz de verdade ao seu organismo"
-excerpt: >-
-  Um jogador fica sentado durante horas sem se mover, e termina esgotado, com o coração acelerado, às vezes vários
-  quilos a menos. Por trás da imagem de um jogo cerebral e sedentário esconde-se uma carga fisiológica real, durante
-  muito tempo caricaturada pelo mito das "6.000 calorias".
-seoTitle: "Xadrez e corpo: calorias, coração e fadiga física do jogador"
-seoDescription: "O xadrez esgota fisicamente? Calorias queimadas, frequência cardíaca, perda de peso de Karpov, mito das 6000 calorias: o que a fisiologia revela sobre o corpo do jogador de xadrez."
-frSlug: echecs-et-le-corps
-faq:
-  - question: O xadrez realmente faz perder peso ?
-    answer: >-
-      No mais alto nível e em competições longas, sim, a perda de peso é documentada. Mas ela não vem
-      de um esforço muscular. Explica-se por um conjunto de mecanismos : frequência cardíaca elevada durante
-      horas, hormônios do estresse (cortisol, adrenalina), sono degradado em torneio e apetite cortado pela tensão. O
-      jogador come menos, dorme mal e fica sob tensão fisiológica por dias. Para uma partida amigável de
-      domingo, o efeito é evidentemente desprezível.
-  - question: Um jogador de xadrez queima 6 000 calorias por dia ?
-    answer: >-
-      É um número célebre, avançado notadamente pelo neuroendocrinologista Robert Sapolsky para grandes mestres em
-      plena competição, mas deve ser lido com cautela. O cérebro consome cerca de 20 % da energia em repouso, e
-      pensar intensamente aumenta esse gasto apenas em alguns pontos percentuais. As milhares de calorias adicionais,
-      quando existem, vêm da reação de estresse de todo o corpo ao longo de um dia inteiro, não apenas do
-      « trabalho » dos neurônios. Pensar nisso como gasto cerebral puro é enganoso.
-  - question: Por que o coração acelera durante uma partida de xadrez ?
-    answer: >-
-      Porque o cérebro não distingue bem um perigo físico de um perigo simbólico. Uma posição crítica, um
-      relógio que desce, o medo de passar vergonha disparam a mesma cascata que diante de uma ameaça real :
-      adrenalina, aceleração cardíaca, respiração curta, tensão muscular. Medições mostram frequências
-      cardíacas de jogadores subindo a níveis dignos de um esforço esportivo moderado nos momentos decisivos, enquanto
-      eles não se movem.
-  - question: Os grandes mestres praticam esporte ?
-    answer: >-
-      Cada vez mais, sim, e é uma ruptura cultural. Magnus Carlsen pratica futebol, basquete, tênis e esqui e
-      cuida do condicionamento físico ; Fabiano Caruana incorporou trabalho de resistência à preparação. A lógica é
-      simples : uma partida clássica dura cinco a seis horas, às vezes ao longo de duas semanas de torneio. Um corpo resistente
-      suporta melhor a fadiga, absorve a resposta ao estresse e mantém a mente clara quando o adversário fraqueja.
-  - question: O xadrez é oficialmente um esporte ?
-    answer: >-
-      No plano institucional, sim : o Comitê Olímpico Internacional reconhece a federação internacional de
-      xadrez (FIDE) desde 1999, o que coloca o xadrez entre os esportes reconhecidos, sem fazer dele uma disciplina
-      olímpica. O debate « esporte ou jogo » continua vivo, mas a carga fisiológica real de uma partida de competição é
-      um dos argumentos mais sérios a favor do status de esporte.
+title: "Xadrez e corpo: o que um jogo parado realmente faz ao organismo"
+excerpt: "Você fica sentado durante a partida e ainda assim pode terminar cansado. O que as medidas de frequência cardíaca e gasto energético permitem dizer, sem confundir estresse, esforço cerebral e emagrecimento."
+seoTitle: "Xadrez e fisiologia: calorias, frequência cardíaca e fadiga"
+seoDescription: "O que se mede durante uma partida de xadrez? Frequência cardíaca, gasto energético e fadiga: os resultados de Troubat e os limites dos números divulgados."
+frSlug: "echecs-et-le-corps"
+faq: [{"question": "Uma partida de xadrez emagrece?", "answer": "Os estudos citados não permitem apresentar o jogo como método de perda de peso. Fadiga, frequência cardíaca e balanço energético são medidas diferentes."}, {"question": "Um jogador queima 6.000 calorias por dia em torneios?", "answer": "Esse número não é estabelecido pelas medidas diretas apresentadas aqui. Não se deve atribuí-lo ao cálculo cerebral nem explicar depois um gasto cuja medição não foi verificada."}, {"question": "O que mostra o estudo de Troubat?", "answer": "Em 20 homens jogando contra um programa, os autores observam frequência cardíaca aumentada e gasto total médio de 138 kcal durante a partida. Isso inclui a energia que o corpo teria usado de qualquer maneira."}, {"question": "O que você pode fazer para ficar confortável?", "answer": "Prepare um ambiente confortável e momentos para mudar de posição entre as partidas. Essas propostas não garantem ganho Elo nem substituem a atividade física."}]
 ---
 
-No inverno de 1984, o Campeonato Mundial opõe Anatoli Karpov a um Garry Kasparov de 21 anos. A regra diz que o match continua até seis vitórias. Ele se prolonga: 48 partidas, quase cinco meses. E ao longo das semanas, o campeão defensor definha. Karpov, já magro, teria perdido cerca de dez quilos. Em fevereiro de 1985, a FIDE interrompe a disputa, alegando o esgotamento dos jogadores. Algo inédito.
+A partida terminou. Você ficou sentado e, mesmo assim, sente-se esgotado. O coração às vezes acelerou, os ombros ficaram tensos e você passou um bom tempo guardando variantes na cabeça.
 
-Um jogador de xadrez não corre, não salta, não levanta nada. Ele está sentado. Como um homem imóvel pode entrar em colapso físico?
+Essa sensação merece ser levada a sério. Ainda assim, não informa quantas calorias você queimou. É justamente nesse ponto que os relatos espetaculares sobre xadrez costumam tomar um atalho.
 
-## O paradoxo do esporte sentado
+## O que os pesquisadores medem
 
-A imagem do xadrez é a de um jogo puramente cerebral, a antítese do esporte. Vemos duas pessoas à mesa em silêncio, queixo apoiado nos punhos. Nada evoca o esforço.
+Troubat, Fargeas-Gluck, Tulppo e Dugué (2009) acompanham 20 homens jogando contra um programa. Registram, entre outras medidas, a frequência cardíaca e as trocas respiratórias, usadas para estimar o gasto energético por calorimetria indireta.
 
-No entanto, no plano institucional, o xadrez é reconhecido como esporte : o Comitê Olímpico Internacional reconheceu a federação internacional (FIDE) em 1999. A justificativa não é anedótica. Ela repousa numa ideia contraintuitiva mas sólida : a competição de xadrez solicita o organismo muito além do que a imobilidade faz crer.
+O coração acelera durante o jogo. O gasto total médio relatado é de 138 kcal ao longo da partida, com valores entre 102 e 198 kcal. Esse total inclui o metabolismo basal; não são calorias adicionais atribuíveis apenas ao cálculo. Os autores não encontram uma variação significativa do gasto energético entre os momentos comparados.
 
-O corpo de um jogador numa partida clássica não está em repouso. Está em alerta. E esse alerta, mantido durante horas, tem um custo mensurável.
+Esse protocolo fornece uma medida em um contexto específico. Não descreve todos os jogadores nem um dia inteiro de campeonato mundial. Portanto, não permite extrapolar diretamente para uma semana de torneio.
 
-## O que dizem os sensores : coração, pressão, calorias
+## Frequência cardíaca e calorias: duas informações diferentes
 
-Desde que se equipou os jogadores com monitores cardíacos, o quadro se precisou. Nos momentos decisivos de uma partida, a frequência cardíaca sobe a níveis associados ao exercício físico moderado, enquanto o jogador não faz nada além de ficar sentado. A respiração se encurta, a pressão arterial sobe, os músculos se contraem imperceptivelmente.
+Um monitor cardíaco mede, antes de tudo, o ritmo do coração. Uma estimativa calórica calculada a partir desse sinal também depende do modelo utilizado. Não deve ser automaticamente equiparada a uma medição de trocas gasosas.
 
-Uma medição frequentemente citada, reportada em 2018, diz respeito ao Grande Mestre Mikhaïl Antipov : cerca de 560 calorias queimadas em duas horas de jogo. Para um esforço em que nada se move, o número surpreende. Ele não se explica pelos músculos, mas pela **resposta de estresse** de todo o organismo.
+Assim, você pode observar uma aceleração cardíaca sem conseguir deduzir dela um gasto comparável ao de uma corrida. A presença de estresse não basta para validar qualquer número de calorias.
 
-O mecanismo é conhecido dos fisiologistas. Uma posição crítica, um relógio que avança, a perspectiva de uma derrota humilhante : o cérebro trata essas ameaças simbólicas quase como ameaças físicas. Ele desencadeia a mesma cascata : adrenalina, cortisol, aceleração cardíaca, mobilização da glicose. É a velha reação de "luta ou fuga", exceto que não há nada a combater nem a fugir. A energia é liberada e queimada no local, num corpo que permanece preso à cadeira.
+## O cérebro já consome energia em repouso
 
-## O mito das 6.000 calorias
+Raichle e Gusnard (2002) lembram que o cérebro mobiliza uma parcela importante da energia do organismo mesmo em repouso. As variações locais relacionadas a uma tarefa se inserem nessa atividade de fundo. Uma impressão de esforço intenso não implica um aumento equivalente do consumo global.
 
-É aqui que é preciso ser rigoroso, pois uma lenda circula. Lê-se regularmente que um Grande Mestre queimaria até 6.000 calorias por dia em torneio, só por pensar. O neuroendocrinologista [Robert Sapolsky](https://pt.wikipedia.org/wiki/Robert_Sapolsky) é frequentemente citado em apoio. O número é espetacular. É também enganoso se mal compreendido.
+O erro seria raciocinar assim: estou exausto depois da partida, portanto meu cérebro gastou milhares de calorias adicionais. Para demonstrar esse gasto, seria necessário medi-lo com um método apropriado e especificar a duração, as condições e o ponto de comparação.
 
-O cérebro é um órgão voraz : representa cerca de 2% da massa do corpo mas consome perto de 20% da energia em repouso. Poderíamos pensar que um esforço de cálculo intenso faz explodir essa conta. É falso, ou quase. Pensar muito intensamente só aumenta o gasto cerebral em **alguns por cento**. O cérebro de um Grande Mestre em plena combinação não consome radicalmente mais do que o de uma pessoa assistindo televisão. O gasto energético do tecido nervoso é notavelmente estável.
+## O número das 6.000 calorias
 
-De onde vêm então as calorias perdidas, já que a perda de peso, ela, é bem real? Não do cálculo, mas de tudo que o rodeia:
+Ele não é estabelecido pelo estudo de Troubat. Não se pode salvar uma estimativa não verificada explicando-a depois pelo coração, pelo cortisol ou pelo sono. Esses mecanismos não substituem uma medição.
 
-- o **coração acelerado** durante horas, dia após dia, que por si só aumenta o gasto;
-- os **hormônios de estresse** que mantêm o organismo em sobrerotação;
-- o **sono degradado** em torneio, que desregula o metabolismo e o apetite;
-- o **apetite cortado** pela tensão, que faz o jogador comer menos enquanto gasta mais.
+Da mesma forma, uma variação de peso relatada durante uma competição não basta para isolar a causa: sozinha, não fornece um balanço energético nem uma medida do esforço cerebral. O jogo não deve ser apresentado como método de emagrecimento.
 
-Em outras palavras, o emagrecimento do jogador não é a prova de que "pensar queima calorias". É a assinatura de um corpo submetido a um estresse prolongado, que dorme mal, come pouco e permanece em tensão nervosa. A nuance não é um detalhe : ela desloca a causa do cérebro para o conjunto da fisiologia do estresse.
+## O cansaço continua sendo uma experiência real
 
-## Karpov, ou o corpo que cede
+Retirar os números espetaculares não torna sua sensação imaginária. Você pode ter dificuldade para manter a atenção, sentir tensão ou querer sair do tabuleiro. Anote em que momento isso acontece e o que acompanha a sensação: tempo restante, posição difícil, falta de pausa, desconforto.
 
-O campeonato de 1984-1985 permanece o caso exemplar. O formato sem limite de partidas transformou um duelo intelectual em prova de resistência. À medida que Kasparov recusava ceder, Karpov se desgastava. A perda de peso do campeão, estimada em torno de dez quilos, tornou-se o símbolo do que a competição de xadrez pode infligir ao corpo.
+Esse registro pessoal não mede um hormônio. Pode, porém, ajudar a organizar as condições de jogo que você controla.
 
-A interrupção do encontro pelo presidente da FIDE, Florencio Campomanes, fez escândalo e alimentou incontáveis teorias. Mas o argumento oficial (o esgotamento dos dois jogadores) não era absurdo à luz do que se compreende hoje. Um organismo não pode ficar meses em estado de alerta sem pagar um tributo. O sistema nervoso se esgota, as defesas imunológicas baixam, o sono se fragmenta.
+## Preparar o corpo sem prometer pontos Elo
 
-Karpov não foi um caso isolado, apenas o mais visível. Muitos profissionais relatam terminar um torneio importante emagrecidos, exaustos, às vezes doentes. O jogo imóvel deixa marcas muito materiais.
+No próximo torneio, pense também na estrutura: uma cadeira adequada, o material pronto e um ritmo que deixe espaço para a recuperação. Entre duas partidas, você pode mudar de posição e caminhar um pouco, se isso for confortável.
 
-## A fadiga de decisão : quando o esgotamento se inscreve no tabuleiro
+Você não precisa copiar o programa físico de um campeão. O interesse de uma atividade fora do tabuleiro não depende de quantos pontos Elo você ganhou. O xadrez pode ocupar um lugar importante na sua vida sem substituir outras formas de movimento.
 
-A carga fisiológica não fica confinada ao corpo. Ela sobe de volta para o jogo em si.
-
-Observa-se que a qualidade dos lances tende a se degradar no final das partidas e ao final dos torneios, quando a fadiga se acumula. A pressão do tempo (esses últimos minutos em que é preciso jogar rápido sob pena de perder) amplifica o fenômeno : os erros grosseiros se concentram estatisticamente nessas janelas de máxima tensão. Não é um acaso de temperamento; é uma fisiologia que falha.
-
-A concentração sustentada tem um custo que se acumula. Manter uma atenção de alto nível durante cinco horas esgota recursos que o corpo precisa depois reconstituir. É precisamente o que visa a gestão do tempo no relógio : economizar não apenas minutos, mas também energia mental para os momentos em que ela mais vai contar. O jogador cansado não vê menos lances por preguiça; vê menos porque a máquina biológica que os calcula está em déficit.
-
-## Por que os campeões treinam fisicamente agora
-
-Compreender isso mudou a preparação da elite. Lá onde se imaginava o mestre de xadrez como um espírito puro, os melhores jogadores atuais cuidam do corpo como atletas.
-
-[Magnus Carlsen](https://pt.wikipedia.org/wiki/Magnus_Carlsen) é o exemplo mais evidente : futebol, basquete, tênis, esqui, e uma atenção constante à sua condição física. Fabiano Caruana, seu rival, integrou o trabalho aeróbico ao seu treinamento. Essa virada não é uma coqueteria. Ela responde a uma lógica implacável : se a fadiga fisiológica degrada o jogo no final da partida, então melhorar sua resistência é melhorar diretamente seus resultados.
-
-Uma boa condição cardiovascular amortece a resposta de estresse, estabiliza a frequência cardíaca, retarda o esgotamento. O jogador treinado mantém a mente clara na quinta hora, quando o adversário começa a ver tudo turvo. Num esporte em que um único erro pode virar uma partida, esse excedente de resistência vale pontos Elo. O corpo tornou-se uma variável de performance por direito próprio.
-
-## E para o jogador de domingo?
-
-Tudo que precede descreve a elite em competição. Para a imensa maioria dos jogadores, uma partida entre amigos ou alguns blitz online não desencadeiam nada comparável. A resposta de estresse existe, mas é modesta, breve e sem consequência metabólica notável. Ninguém emagrece jogando uma partida tranquila num domingo à tarde.
-
-O paradoxo é que, para o amador, o verdadeiro risco corporal é exatamente o inverso : não o excesso de tensão, mas o **excesso de imobilidade**. Horas passadas curvado sobre uma tela encadeando partidas rápidas é sedentarismo puro, com seu cortejo ordinário : costas tensas, nuca rígida, olhos fatigados, circulação lenta. O perigo não é queimar muitas calorias : é não queimar nenhuma, postura engessada e olhos pregados na tela.
-
-A lição prática é, portanto, simétrica à dos profissionais. O campeão adiciona esporte para encaixar o estresse; o amador, por sua vez, ganharia sobretudo se levantasse, caminhasse entre duas partidas e cuidasse da postura. Nos dois casos, o corpo não é o inimigo do jogo : é seu suporte, que é preciso manter por razões opostas.
-
-## O que o corpo nos ensina sobre o jogo
-
-A história do jogador de xadrez que emagrece não é, portanto, uma curiosidade. Ela diz algo profundo sobre a natureza do jogo.
-
-O xadrez não é um exercício puramente abstrato, suspenso acima da carne. Ele mobiliza o organismo inteiro pelo canal do estresse, da atenção prolongada, da emoção competitiva. O cérebro não queima milhares de calorias pensando, mas o corpo paga o preço da angústia, da vigilância e da duração.
-
-É por isso que tratar a preparação física como um componente sério do treinamento não tem nada de gadget. É o reconhecimento de que a mente nunca joga sozinha : ela joga com, e às vezes contra, o corpo que a carrega. O esporte mais imóvel do mundo é também, à sua maneira, uma prova de resistência.
+Para continuar: [a gestão do tempo no relógio](/pt-br/blog/xadrez-gestao-do-tempo/) e [o estresse em torneios](/pt-br/blog/xadrez-estresse-torneio/).
 
 ## Fontes
 
-- Kumar, A. (2019). Why grandmasters like Magnus Carlsen lose weight playing chess. *ESPN*.
-- Sapolsky, R. (2004). *Why Zebras Don't Get Ulcers* (3ª ed.). Henry Holt.
-- Raichle, M. E., & Gusnard, D. A. (2002). Appraising the brain's energy budget. *PNAS*, 99(16).
-- Kasparov, G. (2008). *Modern Chess, Part Two : Kasparov vs Karpov 1975-1985*. Everyman Chess.
-
----
-
-## O que guardar
-
-- Uma partida de competição não é um descanso: **coração, pressão e hormônios de estresse** sobem durante horas, chegando a queimar centenas de calorias sem se mover
-- O número de **6.000 calorias** é um semimito : pensar só aumenta o gasto cerebral alguns por cento; o emagrecimento vem do estresse, do sono ruim e do apetite cortado
-- A **perda de peso de Karpov** (cerca de 10 kg) durante o match-maratona de 1984-1985, interrompido pela FIDE, permanece o símbolo do tributo físico do jogo
-- A **fadiga degrada os lances**: os erros se concentram no final da partida e sob pressão de tempo, quando a fisiologia falha
-- Os campeões **treinam fisicamente** (Carlsen, Caruana): a resistência amortece o estresse e vale, concretamente, pontos Elo
+- Troubat, N., Fargeas-Gluck, M.-A., Tulppo, M., & Dugué, B. (2009). *The stress of chess players as a model to study the effects of psychological stimuli on physiological responses: an example of substrate oxidation and heart rate variability in man*. European Journal of Applied Physiology, 105, 343–349. [Artigo](https://gwern.net/doc/psychology/chess/2009-troubat.pdf).
+- Raichle, M. E., & Gusnard, D. A. (2002). *Appraising the brain’s energy budget*. PNAS, 99(16), 10237–10239. [Artigo](https://brendans-island.com/blogsource/20151212ff-Documents/PNAS-2002-Raichle-10237-9.pdf).

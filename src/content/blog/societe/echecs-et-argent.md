@@ -1,9 +1,8 @@
 ---
-title: "Les échecs et l'argent : pourquoi les meilleurs joueurs du monde ne sont pas riches"
+title: "Les échecs et l'argent : gains, revenus et fortune des joueurs"
 excerpt: >-
-  Magnus Carlsen est le meilleur joueur de l'histoire. Il a gagné environ 2 millions de dollars en prize money sur toute
-  sa carrière. Un joueur de tennis moyen du Top 100 gagne ça en un an. Que se passe-t-il vraiment dans l'économie des
-  échecs ?
+  Prix de tournoi, revenu net, valeur d'entreprise et fortune privée : les chiffres ne racontent pas la même chose.
+  Lecture des gains 2025 et des limites des données publiques sur l'économie des échecs.
 publishDate: "2026-05-12"
 category: societe
 featured: false
@@ -19,229 +18,206 @@ tags:
   - économie des échecs
   - chess.com
   - professionnalisme
-seoTitle: "Combien gagne Magnus Carlsen ? Fortune, salaire et prize money aux échecs"
+seoTitle: "Argent aux échecs : gains 2025 et fortune de Carlsen"
 seoDescription: >-
-  Fortune de Magnus Carlsen : 83 M$ via la vente de Play Magnus, mais seulement 2,4 M$ de prize money en carrière.
-  Salaire réel des joueurs d'échecs pros et pourquoi les meilleurs du monde ne sont pas si riches.
+  Gains de tournoi 2025, revenus des Grands Maîtres et acquisition de Play Magnus : des sources datées pour distinguer
+  prix, salaire, revenu net et fortune privée, sans estimation inventée.
 ogImage: /images/og/echecs-et-argent-og.webp
 heroImage:
   src: /images/blog/echecs-et-argent-hero.webp
   alt: Une balance où un grand trophée est soulevé par trois petites pièces de
     monnaie.
 faq:
-  - question: "Comment gagne sa vie un Grand Maître \"ordinaire\" ?"
+  - question: Comment un Grand Maître peut-il gagner sa vie ?
     answer: >-
-      La combinaison la plus courante : cours particuliers (50-200€/h), entraîneur dans un club ou une
-      fédération nationale, quelques tournois annuels, et de plus en plus, création de contenu ou vente de
-      cours sur Chessable. Peu passent par le streaming : le marché est saturé et dominé par quelques grandes
-      personnalités.
-  - question: "Les femmes joueurs sont-elles rémunérées différemment ?"
+      Par la compétition, l'enseignement, le contenu ou des contrats, selon sa situation. Aucun tarif horaire ou
+      classement ne garantit un revenu net. Un budget doit compter les frais et le temps de travail non facturé.
+  - question: Les joueuses sont-elles rémunérées différemment ?
     answer: >-
-      Oui, et l'écart est documenté. Les tournois féminins ont des prize pools significativement inférieurs
-      aux tournois "open" (mixtes). La logique économique invoquée est celle de l'audience : les tournois
-      féminins attirent moins de spectateurs. C'est un argument circulaire - l'audience ne se développe pas
-      parce que les investissements ne se font pas, et les investissements ne se font pas parce que
-      l'audience est faible.
-  - question: "Chess.com est-il vraiment rentable ?"
+      Il faut comparer des événements et contrats identifiés. Une dotation féminine, une dotation open et la somme reçue
+      par une joueuse ne sont pas la même donnée. Les sources présentées ne donnent pas une enquête de revenus à
+      travail comparable ni une cause unique des écarts ; l'audience seule ne suffit pas à les expliquer.
+  - question: Chess.com est-il rentable ?
     answer: >-
-      Chess.com est une société privée et ne publie pas ses comptes. Mais son rachat de Play Magnus pour 83
-      millions de dollars et ses acquisitions de Chessable et d'autres plateformes suggèrent une valorisation
-      de plusieurs centaines de millions de dollars. L'abonnement Premium (environ 15€/mois) sur 100 millions
-      de membres, même avec un taux de conversion de 5 %, représente des revenus considérables.
-  - question: "Les échecs pourraient-ils rejoindre les Jeux Olympiques ?"
+      Les documents cités ne permettent pas d'établir sa rentabilité actuelle. Une acquisition, un prix d'abonnement
+      et un nombre de comptes ne donnent ni le chiffre d'affaires réel ni le bénéfice. Un taux de conversion inventé
+      ne comble pas cette absence.
+  - question: Les Jeux olympiques garantiraient-ils plus d'argent aux joueurs ?
     answer: >-
-      La question est régulièrement posée. Le Comité International Olympique a reconnu la FIDE comme
-      fédération internationale en 1999. Des échecs aux JO ont existé en démonstration. La principale
-      objection reste le format : une compétition olympique aux échecs classique est difficile à intégrer
-      dans le calendrier, et les formats courts (rapide ou blitz) sont perçus comme moins légitimes.
-      L'intégration aux JO augmenterait la visibilité et probablement les prize pools, mais le chemin reste
-      long.
+      Non. Reconnaissance d'une fédération, inscription au programme et rémunération des participants sont des
+      questions distinctes. Aucun revenu supplémentaire ne devrait être budgété sur une hypothèse d'intégration future.
 ---
 
-En 2023, le Championnat du Monde d'échecs opposait Ding Liren à Ian Nepomniachtchi. Le prize pool total : 2 millions de dollars. Le gagnant a empoché 1,1 million.
+En 2025, les gains en tournoi recensés par Chess.com pour Magnus Carlsen dépassent **1,45 million de dollars**. C’est un montant important. Pourtant, il ne dit ni combien un Grand Maître peut espérer gagner, ni combien Carlsen conserve après ses frais, ni quelle est sa fortune.
 
-La même année, le Championnat du Monde de Formule 1 distribuait environ 1,2 milliard de dollars entre les écuries. Le Championnat du Monde de tennis masculin (ATP Finals) offrait 15 millions de dollars au total. Le vainqueur du Super Bowl touchait une prime de 150 000 dollars personnellement - mais le quarterback star gagnait 50 millions à l'année.
+L’économie des échecs devient plus lisible dès que l’on sépare quatre choses : **la dotation d’un événement, les prix remportés par un joueur, son revenu net et son patrimoine**. Mélanger ces catégories produit des comparaisons spectaculaires, mais trompeuses.
 
-Magnus Carlsen, meilleur joueur de l'histoire des échecs selon pratiquement tous les indicateurs, a cumulé environ 2,4 millions de dollars en prize money sur l'ensemble de sa carrière de tournoi. Pas par saison. Sur toute sa carrière.
+Cet article prend les données de **2025** comme photographie datée. Il explique ce qu’elles montrent, ce qu’elles laissent dans l’ombre et les questions concrètes à poser avant d’envisager une activité professionnelle. Pour le contexte de participation et de représentation, voir aussi [Échecs et femmes](/fr/blog/echecs-et-femmes/).
 
-Ce n'est pas un problème de popularité : les échecs comptent 600 à 800 millions de joueurs dans le monde selon les estimations. C'est un problème de structure économique. Et cette structure est plus intéressante à démontrer que les chiffres ne le laissent supposer. (Pour le contexte sociologique sur lequel se greffe ce problème (notamment la sous-représentation des femmes dans les circuits payants) voir [échecs et femmes](/fr/blog/echecs-et-femmes/).)
+## Les chiffres : ce que l’on connaît et ce que l’on ignore
 
-## Les chiffres qui choquent
+### Ce que gagne un joueur professionnel
 
-### Ce que gagne vraiment un joueur professionnel
+Le titre de Grand Maître atteste une performance sportive ; il ne donne droit à aucun salaire universel. Des joueurs peuvent tirer des recettes de plusieurs activités :
 
-Commençons par une distinction essentielle : il y a environ 1 800 [Grand Maîtres](https://fr.wikipedia.org/wiki/Grand_ma%C3%AEtre_international_des_%C3%A9checs) dans le monde. La grande majorité d'entre eux ne vivent pas des tournois. Vivre des tournois aux échecs est réservé à un groupe extrêmement restreint - peut-être une cinquantaine de joueurs dans le monde entier.
+- **Compétition** : prix, éventuels cachets et contrats d’équipe, selon les événements et les accords.
+- **Enseignement** : cours individuels ou collectifs, stages, travail pour un club ou une fédération.
+- **Contenu** : livres, vidéos, cours numériques, commentaires ou diffusion en direct.
+- **Partenariats et événements** : sponsoring, simultanées et interventions rémunérées.
 
-Pour les autres, la réalité économique ressemble à ceci :
+Ces possibilités ne prouvent pas qu’une majorité de joueurs vit d’une source particulière. Les tarifs affichés par un entraîneur sont un prix de prestation, pas son revenu horaire net : il faut compter la préparation, la recherche d’élèves, les annulations et les charges.
 
-- **Cours particuliers** : un Grand Maître peut facturer entre 50 et 200 euros de l'heure selon sa notoriété et son marché géographique. C'est le revenu principal de l'écrasante majorité des GMs.
-- **Entraîneur d'équipe nationale** : quelques postes bien rémunérés, souvent dans des pays où les échecs sont une priorité nationale - Inde, Chine, Russie, Azerbaïdjan.
-- **Streaming et contenu** : une catégorie de revenus récente, encore concentrée sur quelques personnalités.
-- **Simuls et événements corporate** : apparitions payées dans des entreprises ou des festivals, de quelques centaines à quelques milliers d'euros.
+Les sources utilisées ici ne constituent pas une enquête représentative des revenus de tous les Grands Maîtres. Elles ne permettent donc pas d’annoncer un salaire de 20 000 à 40 000 euros pour une tranche de classement, ni un revenu de tournoi « typique » de 40 000 dollars hors du Top 50.
 
-Un joueur autour de 2400-2500 Elo - ce qui représente déjà une élite mondiale infime - peut espérer gagner entre 20 000 et 40 000 euros par an en combinant ces sources. C'est un salaire convenable dans certains pays d'Europe de l'Est. C'est insuffisant dans les métropoles d'Europe occidentale ou aux États-Unis.
+### Les gains 2025 : une fenêtre sur les grandes compétitions
 
-### Combien gagne un Grand Maître ? Un raisonnement à partir des données publiques
+Le [bilan original de Chess.com](https://www.chess.com/article/view/biggest-chess-prizewinners-2025), publié après la fin de l’année, recense surtout les grands tournois internationaux individuels, généralement avec un premier prix d’au moins 10 000 dollars. Voici trois lignes de ce classement :
 
-Les revenus réels des joueurs sont rarement divulgués, et les sites de *net worth* recopient des estimations invérifiables. Plutôt que d'avancer un chiffre inventé, essayons un raisonnement personnel à partir des seules données solides et publiques : le prize money, qui lui est documenté tournoi par tournoi.
-
-En 2025, le classement annuel des gains en tournoi établi par [Chess.com](https://www.chess.com/article/view/biggest-chess-prizewinners-2025) donne une photographie nette de la distribution au sommet :
-
-| Rang (gains 2025) | Joueur | Prize money 2025 |
+| Rang dans ce relevé 2025 | Joueur | Prix recensés en 2025 |
 | --- | --- | --- |
-| 1 | Magnus Carlsen | ~1 455 000 $ |
-| 5 | Alireza Firouzja | ~455 000 $ |
-| 10 | Javokhir Sindarov | ~350 000 $ |
+| 1 | Magnus Carlsen | 1 455 276 $ |
+| 5 | Alireza Firouzja | 455 047 $ |
+| 10 | Javokhir Sindarov | 349 955 $ |
 
-Trois faits ressortent de ce classement :
+Dans ce périmètre, **26 joueurs atteignent 100 000 dollars**. Carlsen est le seul à dépasser un million. Le relevé exclut notamment les petits tournois, championnats nationaux, épreuves par équipes et revenus hors prix.
 
-1. **Un seul joueur au monde** a dépassé le million de dollars de gains en tournoi en 2025 : Magnus Carlsen. Quatre joueurs seulement ont franchi les 500 000 $, et il faut descendre jusqu'au 26e joueur pour trouver la limite des 100 000 $ de gains annuels.
-2. La concentration est brutale : le premier gagne environ quatre fois plus que le dixième, et la courbe s'effondre encore plus vite au-delà du top 30.
-3. Ces montants ne comptent que le prize money : ni les cachets d'apparition, ni le streaming, ni le sponsoring, ni les cours n'y figurent.
+On ne peut pas diviser ces 26 joueurs par un décompte mondial des Grands Maîtres pour conclure que « 98 % gagnent moins de 100 000 dollars ». Le numérateur et le dénominateur ne couvrent pas la même population ni tous les revenus de compétition. La source décrit une concentration au sommet d’un circuit recensé ; elle n’est pas une déclaration fiscale mondiale.
 
-Vient alors la déduction. Il existe environ 1 800 Grand Maîtres dans le monde. Si seuls 26 d'entre eux atteignent six chiffres de gains en tournoi, alors **plus de 98 % des Grand Maîtres gagnent moins de 100 000 $ par an en prize money** - et l'immense majorité, bien moins. Un GM solide mais hors du top 50 tire typiquement de l'ordre de 40 000 $ par an des tournois, desquels il faut encore retrancher des frais de voyage, d'hébergement et d'inscription qui amputent lourdement le net.
+![Exemple de concentration des gains recensés dans les grandes compétitions individuelles en 2025 ; ce relevé ne mesure pas les revenus de tous les Grands Maîtres.](/images/echecs-argent-03-concentration-gains-2025.svg)
 
-La conclusion logique est que, pour la quasi-totalité des GMs, **le prize money n'est pas un revenu mais un complément.** Le revenu réel vient d'ailleurs, l'enseignement avant tout. À 30 à 80 $ de l'heure (au-delà de 100 $ pour les entraîneurs les plus réputés), un GM qui donne une vingtaine d'heures de cours par semaine s'approche davantage d'un revenu vivable que ce que la plupart tirent de la compétition. L'inversion est frappante : pour un GM ordinaire, le meilleur moyen de vivre des échecs n'est pas de jouer, mais d'enseigner à ceux qui jouent.
+Une autre précaution concerne les frais. Des prix bruts ne sont pas de l’argent disponible pour vivre : déplacements, hébergement, inscriptions, entraînement et fiscalité peuvent intervenir. Leur prise en charge varie selon les contrats. Il faudrait connaître ces éléments pour comparer sérieusement deux carrières.
 
-![Concentration des gains en tournoi 2025 : Carlsen domine avec 1 455 k$, la courbe s'effondre rapidement — 98 % des 1 800 GMs restent sous les 100 000 $ de prize money annuel.](/images/echecs-argent-03-concentration-gains-2025.svg)
+### Comparer les compétitions sans mélanger les catégories
 
-Un mot de prudence sur les fortunes affichées en ligne. Quand un site annonce la « fortune » d'[Alireza Firouzja](https://www.esportsearnings.com/players/76174-firouzja2003-alireza-firouzja), il faut distinguer deux choses : ses gains en tournoi vérifiables (de l'ordre de 600 000 $ cumulés sur sa carrière selon les bases publiques) d'une part, et son patrimoine réel d'autre part - lequel dépend de sponsors, de contrats et d'actifs privés non divulgués qu'aucune source publique ne permet d'établir sérieusement. Les chiffres de patrimoine des joueurs d'échecs relèvent presque tous de l'estimation invérifiable ; ce raisonnement s'en tient volontairement à ce qui est documenté.
+Un premier prix n’est pas un fonds total. Voici des montants annoncés pour des éditions **2023**, avec leur unité et leur périmètre :
 
-Le cas de Magnus Carlsen résume tout : même en 2025, sa meilleure année en gains, il n'a pas dépassé 1,5 million de dollars en tournoi, soit une fraction du salaire annuel d'un joueur de tennis du top 100. Sa fortune, elle, ne vient pas de l'échiquier mais de l'entreprise qu'il a bâtie autour, comme on le verra plus loin.
-
-### Comparaison avec d'autres jeux de compétition
-
-La disproportion devient frappante quand on compare avec d'autres univers compétitifs :
-
-| Compétition | Prize pool (édition récente) |
-| --- | --- |
-| Championnat du Monde d'échecs 2023 | 2 000 000 $ |
-| The International (Dota 2) 2023 | 3 800 000 $ |
-| Worlds (League of Legends) 2023 | 2 225 000 $ |
-| Championnats du Monde de Poker (WSOP Main Event) | ~12 000 000 $ |
-| ATP Finals (tennis) | 15 000 000 $ |
-| Wimbledon (total prize money) | ~50 000 000 £ |
-
-[Dota 2](https://fr.wikipedia.org/wiki/Dota_2), un jeu vidéo de stratégie sorti en 2013, offre un prize pool plus élevé que le jeu de 1500 ans d'histoire de l'humanité. Le poker, qui est légalement un jeu d'argent et non un sport, distribue six fois plus au niveau mondial.
-
-![Prize pools des championnats du monde 2023 : les échecs (2 M$) loin derrière tennis, poker, Dota 2 et Wimbledon.](/images/echecs-argent-02-comparaison-prize-pools.svg)
-
-## Pourquoi ce déséquilibre existe
-
-### Une structure organisationnelle fragmentée
-
-Les échecs n'ont pas de ligue professionnelle unifiée comparable à la NFL, la NBA ou même les principales ligues de football. La [FIDE](https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_internationale_des_%C3%A9checs) organise les championnats officiels, mais elle n'est pas une ligue commerciale. Elle ne vend pas de droits télévisés significatifs. Elle ne gère pas les contrats des joueurs. Elle n'a pas construit de produit spectatoriel.
-
-Les tournois majeurs - Tata Steel, Norway Chess, Grand Chess Tour - sont organisés séparément, par des sponsors privés ou des mécènes. Il n'existe pas de calendrier unifié, pas de partage de revenus entre tournois, pas de système de redistribution qui ferait monter le niveau de vie de l'ensemble des professionnels.
-
-Cette fragmentation a une conséquence directe : chaque tournoi doit trouver son propre financement, souvent auprès d'un sponsor unique. Quand ce sponsor se retire, le tournoi disparaît. L'histoire des échecs est jalonnée de tournois importants qui ont cessé d'exister pour des raisons purement financières.
-
-### Un problème de spectateurs
-
-Le sport professionnel vit des droits télévisés et de la billetterie. Les deux sont structurellement difficiles aux échecs.
-
-**La billetterie** est anecdotique : une partie d'échecs de haut niveau se joue dans le silence, avec deux personnes assises face à un échiquier pendant cinq à sept heures. Le spectacle en salle est limité. Quelques tournois attirent des publics réels - Norway Chess a su créer une ambiance - mais c'est l'exception.
-
-**Les droits télévisés** supposent un produit diffusable avec une audience suffisante. Les tentatives de diffusion télévisée traditionnelle des échecs ont presque toutes échoué. Le jeu est visuellement statique et nécessite une expertise pour être apprécié. La télévision de masse ne sait pas le vendre.
-
-C'est en partie pour cette raison que les plateformes numériques ont transformé la donne - mais avec des effets ambivalents sur les revenus des joueurs.
-
-### L'héritage de la Guerre froide
-
-Pendant des décennies, les échecs ont été financés par des États, notamment l'URSS, qui y voyait un terrain de prestige idéologique. [Bobby Fischer](https://fr.wikipedia.org/wiki/Bobby_Fischer) contre [Boris Spassky](https://fr.wikipedia.org/wiki/Boris_Spassky) en 1972 a attiré l'attention mondiale précisément parce qu'il s'inscrivait dans ce contexte géopolitique. L'État soviétique subventionnait des dizaines de joueurs professionnels, leur offrait des appartements, des salaires, des entraîneurs. Ce duel de 1972, sommet de la guerre froide échiquéenne, est raconté coup par coup dans [*Fischer–Spassky 1972*](https://amzn.to/4fndWQb).
-
-La chute de l'URSS a effondré ce modèle de subvention étatique sans que rien de commercial ne le remplace. Les joueurs des années 1990 et 2000 se sont retrouvés dans un vide économique. Beaucoup de Grand Maîtres de cette génération ont quitté le jeu professionnel pour l'informatique ou la finance - deux domaines où leurs capacités d'analyse étaient monnayables.
-
-![Pyramide économique des Grands Maîtres : une poignée vit du prize money, la majorité vit de l'enseignement.](/images/echecs-argent-01-pyramide-revenus.svg)
-
-## La révolution numérique : une chance incomplète
-
-### Chess.com et Lichess : l'explosion des joueurs
-
-L'arrivée de Chess.com d'abord, de Lichess ensuite, a transformé les échecs en phénomène de masse numérique. Chess.com revendique aujourd'hui plus de 100 millions de membres. [Le Jeu de la Dame](https://fr.wikipedia.org/wiki/Le_Jeu_de_la_dame_(mini-s%C3%A9rie)) sur Netflix en 2020 a ajouté une vague de nouveaux joueurs considérable : la plateforme a enregistré 2 millions de nouvelles inscriptions dans la semaine suivant la diffusion de la série.
-
-Cette explosion d'audience a eu un effet concret : Chess.com est devenu une plateforme commerciale rentable, capable de payer des streamers, d'organiser des tournois en ligne avec des prize pools significatifs et de signer des contrats avec des joueurs de haut niveau.
-
-Mais voici la question économique qui se pose : **qui capte la valeur créée par cette popularité ?** En grande partie, Chess.com. La plateforme est valorisée à plusieurs centaines de millions de dollars. Les joueurs qui génèrent le contenu - en jouant, en analysant, en commentant - touchent des revenus variables et souvent peu transparents.
-
-### Le streaming comme nouveau modèle
-
-[Hikaru Nakamura](https://fr.wikipedia.org/wiki/Hikaru_Nakamura), cinquième joueur mondial à un moment de sa carrière, a construit sur Twitch une audience de plusieurs millions d'abonnés. Ses revenus de streaming dépassent aujourd'hui largement ses revenus de tournois. Il est l'exemple le plus visible d'un modèle qui commence à se répandre : le joueur-créateur de contenu.
-
-Ce modèle a une limite : il fonctionne pour les personnalités charismatiques et les joueurs déjà au sommet qui bénéficient d'une notoriété préexistante. Il ne résout pas le problème économique des 1 750 Grand Maîtres qui ne sont pas Hikaru Nakamura.
-
-Il crée aussi une nouvelle hiérarchie dans le monde des échecs : celle de l'audience, pas celle du niveau de jeu. Un joueur de 2600 Elo peu charismatique gagnera moins qu'un joueur de 2450 Elo qui sait animer une communauté. C'est une transformation profonde des incitations dans le milieu, qui rejoint d'ailleurs le débat plus large sur [la psychologie compétitive du joueur](/fr/blog/psychologie-du-joueur-d-echecs/) : quand le revenu dépend de l'audience plus que du résultat, la pression et les motivations changent de nature.
-
-### Les tournois en ligne : plus d'argent mais moins de prestige
-
-Chess.com et d'autres plateformes ont créé des tournois en ligne avec des prize pools parfois supérieurs aux tournois physiques. Le Speed Chess Championship ou les événements Champions Showdown offrent des sommes significatives dans des formats rapides et diffusables.
-
-Ces tournois ont rendu les échecs plus accessibles et plus spectaculaires - les formats en blitz et en bullet sont infiniment plus faciles à suivre pour un néophyte qu'une partie classique de six heures. Mais ils ont aussi renforcé le statut des formats courts au détriment des formats classiques, ce qui pose une question de fond sur ce que "être le meilleur" signifie dans ce nouveau contexte.
-
-## Fortune de Magnus Carlsen : salaire, prize money et patrimoine réel
-
-**La fortune de Magnus Carlsen ne vient presque pas des échecs eux-mêmes.** Sur toute sa carrière de tournoi, il a cumulé environ 2,4 millions de dollars de prize money. L'essentiel de son patrimoine, estimé à plusieurs dizaines de millions de dollars, provient de **Play Magnus** : sa société, revendue à Chess.com en 2022 pour 83 millions de dollars. Le reste vient de ses contrats de sponsoring, de ses apparitions et de son activité de créateur de contenu, pas de ses gains à l'échiquier.
-
-Magnus Carlsen est le joueur qui a le mieux navigué dans ce paysage économique contraint. Son cas illustre comment un joueur de haut niveau peut construire une résilience financière au-delà des tournois.
-
-**Play Magnus AS**, sa société fondée en 2013, a développé des applications de jeu et d'entraînement qui ont été rachetées par Chess.com en 2022 pour 83 millions de dollars. C'est ce chiffre - pas ses gains de tournois - qui fait de lui un joueur économiquement à l'aise.
-
-**Chessable**, plateforme d'apprentissage rachetée par Chess.com, a permis à plusieurs Grand Maîtres de monétiser leur expertise pédagogique à grande échelle. Les cours de certains GMs sur Chessable génèrent des revenus passifs significatifs.
-
-Ce que Carlsen a compris, et que peu de joueurs ont eu les moyens de mettre en œuvre, c'est qu'il fallait sortir du modèle "jouer des tournois pour gagner des prize pools" et entrer dans un modèle "construire de la valeur autour du jeu lui-même." C'est un modèle d'entrepreneur, pas de sportif traditionnel.
-
-## Ce qui est en train de changer
-
-### L'Arabie Saoudite entre dans le jeu
-
-Ces dernières années, des investissements massifs en provenance d'Arabie Saoudite ont commencé à irriguer les échecs. Le [Saudi Chess Federation](https://fr.wikipedia.org/wiki/Saudi_Chess_Federation) organise des tournois avec des prize pools inédits. Le Grand Prix FIDE 2023 a bénéficié de soutiens financiers qui auraient été inconcevables une décennie plus tôt.
-
-Ce phénomène de *sportwashing* - utiliser le sport pour améliorer l'image internationale d'un État - que l'on connaît dans le football, le golf ou la boxe, touche maintenant les échecs. Les effets sont ambivalents : les prize pools augmentent, mais des questions légitimes se posent sur les conditions politiques attachées à ces partenariats.
-
-### L'Inde comme nouveau moteur
-
-L'émergence de [Pragg](https://fr.wikipedia.org/wiki/Rameshbabu_Praggnanandhaa), [Gukesh](https://fr.wikipedia.org/wiki/D._Gukesh) et d'une génération entière de joueurs indiens de très haut niveau a un effet économique : elle crée un marché domestique immense. L'Inde est le pays le plus peuplé du monde, avec une tradition d'échecs solide et un investissement croissant des familles dans la formation. Les sponsors indiens commencent à suivre.
-
-Le Championnat du Monde 2024 a opposé Gukesh à Ding Liren. Pour la première fois, un joueur indien devenait Champion du Monde en titre. L'impact sur l'audience indienne - et potentiellement sur les revenus des tournois qui suivront - est encore difficile à mesurer mais réel.
-
-### L'esport comme modèle à imiter ?
-
-Certains acteurs du milieu regardent vers les esports pour trouver un modèle viable. Les ligues d'esport ont développé des structures de franchise, de partage de revenus et de contrats de joueurs qui n'existent pas encore aux échecs.
-
-La PRO Chess League de Chess.com est une tentative dans cette direction : une compétition par équipes, avec des franchises, diffusée en ligne. Les résultats sont encourageants en termes d'audience, mais le modèle économique reste fragile.
-
----
-
-### Synthèse en un tableau
-
-| Aspect | État actuel | Tendance |
+| Événement 2023 | Fonds total indiqué | Ce que couvre ce montant |
 | --- | --- | --- |
-| Prize pools des tournois majeurs | Faibles (Championnat du Monde : 2M$) | En hausse grâce aux sponsors du Golfe |
-| Revenus des joueurs du Top 20 | Corrects mais pas comparables aux autres sports | Portés par le contenu et les contrats de plateformes |
-| Revenus des Grand Maîtres hors Top 50 | Souvent insuffisants, complétés par l'enseignement | Peu en évolution |
-| Plateformes numériques (Chess.com) | Valorisation élevée, revenus captés par la plateforme | En croissance, redistribution limitée vers les joueurs |
-| Marchés émergents (Inde) | Fort potentiel de croissance économique | Accélération probable après le titre mondial de Gukesh |
+| Match du Championnat du monde d’échecs | 2 000 000 € | Fonds du match entre deux joueurs, selon le règlement FIDE |
+| Nitto ATP Finals | 15 000 000 $ | Dotation annoncée pour l’événement de tennis |
+| WSOP Main Event | 93 399 900 $ | Fonds du Main Event de poker, selon ses résultats officiels |
 
----
+Le [règlement FIDE](https://handbook.fide.com/files/handbook/FWCM2023.pdf) prévoit une répartition de 55 % au vainqueur et 45 % au finaliste en cas de départage : sur ce fonds, la part de Ding est donc de **1,1 million d’euros**, pas de dollars. Le [Main Event WSOP](https://www.wsop.com/tournaments/result/10253/) attribue **12,1 millions de dollars à son vainqueur** ; ce montant ne doit pas être présenté comme le fonds complet. L’[ATP](https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2023-record-prize-money) distingue aussi dotation totale et rémunération du champion selon son parcours.
+
+Ces compétitions n’ont ni le même nombre de participants, ni les mêmes droits d’entrée, ni la même répartition. Les devises n’ont pas été converties. Le tableau donne des ordres de grandeur datés ; il ne démontre pas quel métier rapporte le plus à un participant moyen.
+
+![Comparaison de fonds totaux d’événements identifiés, en conservant les devises et en distinguant le prix du vainqueur du total à partager.](/images/echecs-argent-02-comparaison-prize-pools.svg)
+
+## Pourquoi la popularité ne suffit pas à garantir un revenu
+
+### Des organisateurs et des contrats différents
+
+Un championnat FIDE, un tournoi privé, une ligue par équipes et une série d’événements en ligne ne sont pas un seul employeur. Les conditions d’accès, les prix et les éventuels contrats doivent être examinés séparément.
+
+Cette organisation pose des questions économiques : qui finance l’épreuve, qui porte le risque d’annulation, quelles dépenses sont couvertes et quel engagement existe au-delà de cette édition ? On ne peut pas déduire la stabilité d’une carrière de la seule affiche d’un grand tournoi.
+
+Dire cela ne signifie pas qu’aucune redistribution ni aucun droit de diffusion n’existent. Cela signifie qu’il faut lire les accords applicables plutôt qu’imaginer un salaire commun à l’ensemble du circuit.
+
+### Une audience n’est pas une recette disponible pour chaque joueur
+
+L’attention peut être monétisée par la billetterie, la publicité, les abonnements ou les sponsors. Mais une vue gratuite, un compte créé et un abonnement payant sont trois unités différentes. Un grand nombre de spectateurs ne donne pas, à lui seul, la part qui revient à un joueur.
+
+Les choix de réalisation comptent aussi : commentaires accessibles, rythme, horaires et langue peuvent changer l’expérience du public. Il reste à mesurer les recettes et les coûts. Affirmer que la télévision « ne sait pas vendre les échecs » ou que le numérique résout tout serait trop simple.
+
+### L’histoire ne remplace pas les comptes actuels
+
+La dimension politique des échecs, particulièrement visible lors du match [Fischer-Spassky de 1972](/fr/blog/echecs-et-diplomatie/), rappelle que le financement sportif ne dépend pas seulement de billets vendus. Prestige, institutions et mécénat peuvent entrer en jeu.
+
+Cela ne permet pas d’affirmer que tous les professionnels d’une époque étaient salariés, ni que l’ensemble des joueurs d’une autre génération a quitté les échecs pour la finance. Pour comprendre une carrière actuelle, il faut identifier ses soutiens réels, leur durée et leurs conditions.
+
+![Différentes sources possibles de recettes d’un joueur : compétition, enseignement, contenu et partenariats ; leur répartition n’est pas estimée pour l’ensemble des Grands Maîtres.](/images/echecs-argent-01-pyramide-revenus.svg)
+
+## La révolution numérique : des possibilités et des inconnues
+
+### Plateformes : activité visible, rentabilité privée
+
+Une plateforme peut vendre des abonnements, des cours ou de la publicité et organiser des compétitions. L’annonce par Chess.com de l’[acquisition de Play Magnus Group en 2022](https://www.chess.com/news/view/chesscom-acquires-pmg) documente une opération et les marques concernées. Elle ne constitue pas un compte de résultat de Chess.com.
+
+Multiplier un nombre de comptes par un prix Premium et un taux supposé de conversion de 5 % ne donne pas son chiffre d’affaires. Il manque notamment les abonnés réellement payants, les tarifs selon pays et offre, les réductions, les coûts et les périodes concernées. **Nous n’établissons ici ni sa marge ni sa valorisation actuelle.**
+
+La question « qui capte la valeur ? » reste pertinente, mais sa réponse demande les contrats et les comptes. L’enseignant, l’auteur, le joueur et la plateforme peuvent percevoir des flux différents sur une même activité.
+
+### Le streaming : une autre activité professionnelle
+
+Hikaru Nakamura illustre la visibilité qu’un joueur peut acquérir comme créateur de contenu. Cela ne nous donne pas le montant net de ses abonnements, de ses contrats ou de ses dépenses de production.
+
+Produire une émission demande un travail distinct : programmation, animation, montage, modération et relations commerciales. Un classement élevé peut attirer l’attention ; il ne remplace pas ces compétences. À l’inverse, une audience ne permet pas de prédire le revenu de chaque joueur ayant le même Elo.
+
+Le modèle peut donc diversifier une activité, sans être une solution automatique pour tous les professionnels. La [psychologie compétitive du joueur](/fr/blog/psychologie-du-joueur-d-echecs/) aide aussi à réfléchir à ce que devient la motivation quand il faut, en plus de jouer, satisfaire un public.
+
+### Les événements en ligne : préciser le format et le contrat
+
+Une compétition rapide diffusée en direct peut être pensée pour des horaires courts et un public en ligne. Elle ne se compare pas uniquement par le prestige à un tournoi classique : il faut aussi regarder sa dotation, son accès, ses droits et ses contraintes.
+
+Le fait qu’un format attire un sponsor ne signifie pas que tous les joueurs y gagneront davantage, ni qu’il remplacera les autres. Une série annoncée pour une saison n’est pas un engagement perpétuel.
+
+## Magnus Carlsen : prix de tournoi, entreprise et patrimoine
+
+Le même bilan Chess.com situe les gains de carrière recensés de Carlsen à **environ 12,23 millions de dollars au 31 décembre 2025**, sans correction de l’inflation. Présenter 2,4 millions comme son total de carrière est donc erroné dans ce périmètre. Même ce cumul corrigé n’est pas une estimation de sa fortune.
+
+Play Magnus Group était une entreprise avec plusieurs actionnaires et activités. Le [communiqué de réalisation de l’offre du 16 décembre 2022](https://live.euronext.com/sites/default/files/company_press_releases/attachments_oslo/2022/12/16/578408_en_Download%20announcement%20as%20PDF.pdf) indique un prix de **13 couronnes norvégiennes par action**. Le prix d’acquisition du groupe ne peut pas être attribué intégralement à une personne portant son nom.
+
+Pour calculer ce que Carlsen aurait reçu puis conservé, il faudrait connaître ses participations pertinentes, les modalités des structures concernées et la fiscalité. Pour connaître son patrimoine, il faudrait en plus ses autres actifs et dettes. Nous ne disposons pas de ce bilan privé.
+
+Chessable fait partie des marques citées dans l’opération. Vendre un cours peut permettre à un auteur de valoriser son expertise, mais le revenu dépend de son contrat et de ses ventes ; il n’est ni automatiquement important ni entièrement « passif ».
+
+Le cas Carlsen montre surtout pourquoi il faut séparer activité sportive, droits commerciaux et participation au capital. Il ne permet pas d’annoncer la fortune d’Alireza Firouzja, de Nakamura ou d’un autre joueur à partir d’une base partielle de prix.
+
+## Ce qui change : des événements concrets, pas des revenus garantis
+
+### L’Arabie saoudite et l’Esports World Cup 2025
+
+Un exemple vérifiable est l’[annonce des échecs à l’Esports World Cup 2025](https://www.chess.com/news/view/chess-makes-historic-debut-at-esports-world-cup-2025-with-1-5-million-prize-pool), à Riyad, avec un fonds annoncé de 1,5 million de dollars. Il ne s’agit pas d’un prétendu « Grand Prix FIDE 2023 ».
+
+Ce type de partenariat pose des questions légitimes de dépendance financière, de gouvernance et d’image. Les examiner demande de nommer le financeur, l’événement et le contrat ; la hausse d’une dotation ne prouve pas, à elle seule, le motif politique précis d’un partenaire ni une amélioration pour tout le circuit.
+
+### L’Inde et la visibilité de ses champions
+
+Gukesh a remporté le titre mondial en 2024. Il n’est pas le premier champion indien : [Viswanathan Anand l’a précédé](https://museum.fide.com/champions/gukesh-dommaraju). La visibilité d’une nouvelle génération peut intéresser des organisateurs, des élèves et des partenaires commerciaux.
+
+Mais passer d’un titre à une estimation du marché suppose de mesurer des inscriptions, des contrats ou des recettes. Une histoire sportive marquante n’est pas, à elle seule, une prévision chiffrée de croissance des revenus.
+
+### L’esport comme comparaison organisationnelle
+
+Des équipes, des événements diffusés et des partenariats avec des plateformes offrent des modèles à étudier. Ils soulèvent aussi des questions classiques : durée du financement, droits à l’image, calendrier, exclusivité et partage des recettes.
+
+Plutôt que de présenter un modèle comme déjà viable pour tous, demandons ce qui est effectivement garanti au joueur et ce qui dépend de résultats ou d’audience futurs.
+
+### Synthèse : les bons indicateurs
+
+| Question | Donnée utile | Ce qu’elle ne remplace pas |
+| --- | --- | --- |
+| Combien paie un tournoi ? | Règlement et répartition des prix | Revenu annuel d’un joueur |
+| Combien rapporte une carrière ? | Recettes, coûts et durée | Un classement Elo |
+| Combien vaut une entreprise ? | Conditions d’une transaction datée | Fortune personnelle d’un associé |
+| Une activité de contenu est-elle viable ? | Contrat, ventes, coûts et temps de travail | Nombre brut d’abonnés |
+| Une plateforme est-elle rentable ? | Comptes et périmètre comptable | Prix d’une acquisition |
 
 ## Questions fréquentes
 
-**Comment gagne sa vie un Grand Maître "ordinaire" ?**
-La combinaison la plus courante : cours particuliers (50-200€/h), entraîneur dans un club ou une fédération nationale, quelques tournois annuels, et de plus en plus, création de contenu ou vente de cours sur Chessable. Peu passent par le streaming : le marché est saturé et dominé par quelques grandes personnalités.
+**Comment un Grand Maître peut-il gagner sa vie ?**
+Par la compétition, l’enseignement, le contenu ou des contrats, selon sa situation. Aucun tarif horaire ou classement ne garantit un revenu net. Un budget doit compter les frais et le temps de travail non facturé.
 
-**Les femmes joueurs sont-elles rémunérées différemment ?**
-Oui, et l'écart est documenté. Les tournois féminins ont des prize pools significativement inférieurs aux tournois "open" (mixtes). La logique économique invoquée est celle de l'audience : les tournois féminins attirent moins de spectateurs. C'est un argument circulaire - l'audience ne se développe pas parce que les investissements ne se font pas, et les investissements ne se font pas parce que l'audience est faible.
+**Les joueuses sont-elles rémunérées différemment ?**
+Il faut comparer des événements et contrats identifiés. Une dotation féminine, une dotation open et la somme reçue par une joueuse ne sont pas la même donnée. Les sources de cet article ne fournissent pas une enquête de revenus à travail comparable ni une cause unique des écarts. L’audience seule ne suffit pas à les expliquer.
 
-**Chess.com est-il vraiment rentable ?**
-Chess.com est une société privée et ne publie pas ses comptes. Mais son rachat de Play Magnus pour 83 millions de dollars et ses acquisitions de Chessable et d'autres plateformes suggèrent une valorisation de plusieurs centaines de millions de dollars. L'abonnement Premium (environ 15€/mois) sur 100 millions de membres, même avec un taux de conversion de 5 %, représente des revenus considérables.
+**Chess.com est-il rentable ?**
+Les documents cités ne permettent pas d’établir sa rentabilité actuelle. Une acquisition, un prix d’abonnement et un nombre de comptes ne donnent ni le chiffre d’affaires réel ni le bénéfice. Un taux de conversion inventé ne comble pas cette absence.
 
-**Les échecs pourraient-ils rejoindre les Jeux Olympiques ?**
-La question est régulièrement posée. Le Comité International Olympique a reconnu la FIDE comme fédération internationale en 1999. Des échecs aux JO ont existé en démonstration. La principale objection reste le format : une compétition olympique aux échecs classique est difficile à intégrer dans le calendrier, et les formats courts (rapide ou blitz) sont perçus comme moins légitimes. L'intégration aux JO augmenterait la visibilité et probablement les prize pools, mais le chemin reste long.
-
----
-
-Les échecs ont produit certains des esprits les plus fascinants de l'histoire sportive et intellectuelle ; le **modèle économique** des joueurs hors tête de classe reste fragile. Les leviers réalistes côté joueur : **enseignement** structuré, **contenu** à valeur ajoutée (cours, livres, vidéo), **contrats plateforme** pour une minorité. Une « industrie » unique qui vivrait tout le monde du jeu reste un scénario long terme, pas une bascule imminente.
-
-**Après lecture :** si tu vises une carrière semi-pro, **modélise trois flux** (cours, contenu, tournois) sur une feuille, pas seulement le prize money du maître que tu suis en stream.
+**Les Jeux olympiques garantiraient-ils plus d’argent aux joueurs ?**
+Non. La FIDE documente ses [relations avec le mouvement olympique](https://www.fide.com/fide-strengthens-ties-with-ioc-uefa-and-arisf/), mais reconnaissance d’une fédération, inscription au programme et rémunération des participants sont des questions distinctes. Aucun revenu supplémentaire ne devrait être budgété sur une hypothèse d’intégration future.
 
 ---
+
+Pour envisager une activité semi-professionnelle, sépare **cours, contenu et compétition**, puis ajoute les coûts, les heures non facturées et un scénario prudent sans prix exceptionnel. Cette méthode ne promet pas une carrière ; elle permet d’examiner un projet concret plutôt que de copier le revenu d’une vedette.
+
+### Sources et références
+
+- **Chess.com**, *The Top Chess Prizewinners In 2025, And How Much They Won* (mise à jour mars 2026). Méthode, exclusions et relevés datés. [Bilan](https://www.chess.com/article/view/biggest-chess-prizewinners-2025).
+- **FIDE**, *Regulations for the World Championship Match 2023*. Devise et partage du fonds. [Règlement](https://handbook.fide.com/files/handbook/FWCM2023.pdf).
+- **ATP**, *Nitto ATP Finals: Record $15 Million Prize Money For 2023 Event*. [Annonce officielle](https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2023-record-prize-money).
+- **WSOP**, résultats officiels du Main Event 2023. [Fonds et résultats](https://www.wsop.com/tournaments/result/10253/).
+- **Chess.com (2022)**, *Officially Acquires Play Magnus, Carlsen Signs As Ambassador*. [Annonce de l’acquéreur](https://www.chess.com/news/view/chesscom-acquires-pmg).
+- **Play Magnus AS (16 décembre 2022)**, réalisation de l’offre de Chess Growthco LLC. [Communiqué réglementé diffusé sur Euronext](https://live.euronext.com/sites/default/files/company_press_releases/attachments_oslo/2022/12/16/578408_en_Download%20announcement%20as%20PDF.pdf).
+- **Chess.com**, annonce de son partenariat pour l’Esports World Cup 2025. [Annonce](https://www.chess.com/news/view/chess-makes-historic-debut-at-esports-world-cup-2025-with-1-5-million-prize-pool).
+- **FIDE**, musée : Gukesh Dommaraju ; relations avec le mouvement olympique. [Biographie](https://museum.fide.com/champions/gukesh-dommaraju), [communication institutionnelle de 2025](https://www.fide.com/fide-strengthens-ties-with-ioc-uefa-and-arisf/).

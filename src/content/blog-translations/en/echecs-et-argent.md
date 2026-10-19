@@ -1,216 +1,208 @@
 ---
 heroImageAlt: A scale where a large trophy is lifted by three small coins.
-title: "Chess and Money: Why the World's Best Players Aren't Rich"
-excerpt: >-
-  Magnus Carlsen is the greatest player in history. He's earned around $2 million in prize money over his entire career.
-  An average Top 100 tennis player earns that in a single year. What's really going on in chess economics?
-seoTitle: "Chess and Money: Prize Pools, Economic Model and Pro Earnings"
-seoDescription: >-
-  Why aren't the world's best chess players rich? Prize pools, FIDE, sponsorship, streaming: anatomy of a struggling
-  economic model.
+
+
+
+
 enSlug: "chess-and-money"
+title: "Chess and Money: Players' Prizes, Income and Wealth"
+excerpt: >-
+  Tournament prizes, net income, business value and personal wealth tell different stories. A reading of 2025
+  winnings and the limits of public information about chess economics.
+seoTitle: "Chess Money: 2025 Prizes and Carlsen's Wealth"
+seoDescription: >-
+  Tournament prizes in 2025, Grandmasters' income and the Play Magnus acquisition: dated sources to distinguish
+  prizes, salaries, net income and private wealth without invented estimates.
 faq:
-  - question: "How does an 'ordinary' Grandmaster make a living?"
+  - question: How can a Grandmaster make a living?
     answer: >-
-      The most common combination: private lessons (€50-200/h), coaching at a club or national federation, a
-      few annual tournaments, and increasingly, content creation or selling courses on Chessable. Few go
-      through streaming: the market is concentrated on a handful of star streamers. The hard reality is that
-      below the world top 100, chess alone doesn't sustain a comfortable life in Europe.
-  - question: "Are women players paid differently?"
+      Through competition, teaching, content or contracts, depending on circumstances. No hourly rate or rating
+      guarantees net income. A budget must include expenses and unpaid working time.
+  - question: Are women players paid differently?
     answer: >-
-      Yes, and the gap is documented. Women's tournaments have significantly smaller prize pools than 'open'
-      (mixed) tournaments. The invoked economic logic is audience: women's tournaments draw fewer spectators.
-      It's a circular argument that maintains the inequality. Some federations work to align prize money, but
-      the global trend remains a marked gap.
-  - question: "Is Chess.com really profitable?"
+      Identified events and agreements need comparison. A women's fund, an open fund and an individual's winnings are
+      different data. These sources provide neither an equal-work income survey nor a single cause for disparities;
+      audience alone cannot explain them.
+  - question: Is Chess.com profitable?
     answer: >-
-      Chess.com is a private company and doesn't publish its accounts. But its purchase of Play Magnus for
-      $83 million and acquisitions of Chessable and other platforms suggest a valuation in the hundreds of
-      millions of dollars. Premium subscription, partnerships with content creators, and live event
-      organization are its main revenue streams. The chess economic ecosystem is consolidating around this
-      dominant actor.
-  - question: "Could chess join the Olympic Games?"
+      The cited documents do not establish its current profitability. An acquisition, subscription price and account
+      count reveal neither actual revenue nor profit. An invented conversion rate cannot fill that gap.
+  - question: Would the Olympic Games guarantee players more money?
     answer: >-
-      The question is regularly raised. The International Olympic Committee recognized FIDE as an
-      international federation in 1999. Olympic chess existed as demonstrations. The main objection remains
-      the format: classical Olympic chess competition would require several days per game, incompatible with
-      the Olympic schedule. Rapid or blitz formats are debated. A 2024 official position from the IOC kept
-      the door open without firm commitment.
+      No. Recognizing a federation, selecting an event and paying participants are distinct matters. Additional
+      income should not be budgeted on a hypothetical future inclusion.
 ---
 
-In 2023 the World Chess Championship matched Ding Liren against Ian Nepomniachtchi. Total prize pool: two million dollars. The winner took 1.1 million.
+In 2025, the tournament prizes recorded by Chess.com for Magnus Carlsen exceeded **$1.45 million**. That is a substantial amount. It still does not tell us what a Grandmaster can expect to earn, how much Carlsen keeps after expenses, or his net worth.
 
-That same year Formula 1 distributed about 1.2 billion dollars across teams. The ATP Finals offered fifteen million dollars total. The Super Bowl winner received a 150,000 dollar bonus personally, but the star quarterback earned fifty million a year.
+Chess economics becomes clearer when we separate four things: **an event's prize fund, a player's prizes, net income and personal wealth**. Mixing them produces dramatic but misleading comparisons.
 
-Magnus Carlsen, arguably the strongest player in chess history by almost every measure, has earned about 2.4 million dollars in tournament prize money over his entire career. Not per season. Over his whole career.
+This article uses **2025** data as a dated snapshot. It explains what they show, what remains unknown and the practical questions to ask before considering professional activity. For participation and representation, see also [Chess and women](/en/blog/chess-and-women/).
 
-This is not a popularity problem: chess has an estimated 600 to 800 million players worldwide. It is a structural economic problem. And that structure is more interesting to unpack than the headline numbers suggest.
+## The figures: what we know and what we do not
 
-## The shocking numbers
+### What a professional player earns
 
-### What a professional player actually earns
+The Grandmaster title recognizes sporting achievement; it does not entitle someone to a universal salary. Players may receive revenue from several activities:
 
-Start with a key distinction: there are about 1,800 [Grandmasters](https://en.wikipedia.org/wiki/Grandmaster_(chess)) worldwide. The vast majority do not live from tournaments. Living from tournament chess is reserved for an extremely small group, perhaps fifty players planet-wide.
+- **Competition**: prizes, possible appearance fees and team contracts, depending on events and agreements.
+- **Teaching**: individual or group lessons, training camps, work for a club or federation.
+- **Content**: books, videos, digital courses, commentary or livestreaming.
+- **Partnerships and events**: sponsorships, simultaneous exhibitions and paid appearances.
 
-For everyone else the economic reality looks like this:
+These possibilities do not establish that most players live from any particular source. A coach's advertised rate is a price for a service, not net hourly income: preparation, finding students, cancellations and expenses must be considered.
 
-- **Private lessons**: a GM may charge between 50 and 200 euros per hour depending on reputation and region. That is the main income source for the overwhelming majority of GMs.
-- **National team coach**: a few well-paid posts, often in countries where chess is a national priority (India, China, Russia, Azerbaijan).
-- **Streaming and content**: a newer income category, still concentrated on a few personalities.
-- **Simuls and corporate events**: paid appearances at companies or festivals, from a few hundred to a few thousand euros.
+The sources used here are not a representative survey of all Grandmasters' earnings. They therefore cannot establish a €20,000-40,000 salary for a rating band, or “typical” tournament income of $40,000 outside the Top 50.
 
-A player around 2400-2500 Elo (already in a tiny global elite) might hope for 20,000 to 40,000 euros a year combining those sources. That is a decent salary in parts of Eastern Europe. It is insufficient in major Western cities or the United States.
+### 2025 prizes: a window onto major competitions
 
-### Comparison with other competitive games
+[Chess.com's original recap](https://www.chess.com/article/view/biggest-chess-prizewinners-2025), published after the year ended, mainly tracks major individual international events, generally with a first prize of at least $10,000. Here are three entries:
 
-The gap becomes stark next to other competitive worlds:
-
-| Competition | Prize pool (recent edition) |
-| --- | --- |
-| World Chess Championship 2023 | $2,000,000 |
-| The International (Dota 2) 2023 | $3,800,000 |
-| Worlds (League of Legends) 2023 | $2,225,000 |
-| WSOP Main Event | ~$12,000,000 |
-| ATP Finals (tennis) | $15,000,000 |
-| Wimbledon (total prize money) | ~£50,000,000 |
-
-[Dota 2](https://en.wikipedia.org/wiki/Dota_2), a strategy video game released in 2013, offers a higher prize pool than humanity's 1,500-year-old game. Poker, legally gambling rather than sport, distributes about six times as much at world level.
-
-## Why the imbalance exists
-
-### Fragmented organisation
-
-Chess has no unified professional league comparable to the NFL, NBA, or major football leagues. [FIDE](https://en.wikipedia.org/wiki/FIDE) runs official championships but it is not a commercial league. It does not sell meaningful broadcast rights. It does not manage player contracts. It has not built a spectator product.
-
-Major tournaments (Tata Steel, Norway Chess, Grand Chess Tour) are run separately by private sponsors or patrons. There is no unified calendar, no revenue sharing across events, no redistribution system that lifts living standards for professionals as a whole.
-
-That fragmentation has a direct consequence: each event must fund itself, often from a single sponsor. When that sponsor walks away, the event dies. Chess history is littered with important tournaments that vanished for purely financial reasons.
-
-### A spectator problem
-
-Professional sport lives on broadcast rights and ticket sales. Both are structurally hard for chess.
-
-**Tickets** are marginal: a top classical game unfolds in silence with two people at a board for five to seven hours. The live-room spectacle is limited. A few tournaments draw real crowds (Norway Chess has built atmosphere), but that is the exception.
-
-**Broadcast rights** need a product with enough audience. Traditional TV chess attempts have mostly failed. The game is visually static and needs expertise to appreciate. Mass-market television does not know how to sell it.
-
-That is partly why digital platforms changed the picture, with mixed effects on player incomes.
-
-### The Cold War legacy
-
-For decades chess was funded by states, especially the USSR, as ideological prestige terrain. [Bobby Fischer](https://en.wikipedia.org/wiki/Bobby_Fischer) versus [Boris Spassky](https://en.wikipedia.org/wiki/Boris_Spassky) in 1972 drew global attention precisely in that geopolitical frame. The Soviet state subsidised dozens of professionals with flats, salaries, coaches.
-
-The collapse of the USSR destroyed that state-funding model without a commercial replacement. Players of the 1990s and 2000s landed in an economic vacuum. Many GMs of that generation left professional chess for computing or finance, two fields where analytical skill pays.
-
-## The digital revolution: an incomplete opportunity
-
-### Chess.com and Lichess: player explosion
-
-Chess.com first, then Lichess, turned chess into a mass digital phenomenon. Chess.com now claims over 100 million members. [*The Queen's Gambit*](https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_(miniseries)) on Netflix in 2020 added a huge wave: the platform reportedly logged two million new sign-ups in the week after the series aired.
-
-That audience surge had a concrete effect: Chess.com became a profitable commercial platform able to pay streamers, run online events with meaningful prize pools, and sign contracts with elite players.
-
-Here is the economic question: **who captures the value created by that popularity?** Largely Chess.com. The platform is valued in the hundreds of millions of dollars. Players who generate content by playing, analysing, and commenting earn variable and often opaque incomes.
-
-### Streaming as a new model
-
-[Hikaru Nakamura](https://en.wikipedia.org/wiki/Hikaru_Nakamura), world top-five at one point, built a Twitch audience of several million. His streaming income now far exceeds tournament income. He is the most visible example of a spreading model: the player as content creator.
-
-That model has limits: it works for charismatic personalities and players already at the top with existing fame. It does not fix the economics for the 1,750 GMs who are not Hikaru Nakamura.
-
-It also creates a new hierarchy in chess: audience size, not playing strength. A 2600 Elo player with little charisma may earn less than a 2450 who can host a community. That is a deep shift in incentives.
-
-### Online events: more money, less prestige
-
-Chess.com and other platforms run online tournaments whose prize pools sometimes beat over-the-board events. The [Speed Chess Championship](https://www.chess.com/article/view/speed-chess-championship) or Champions Showdown-style events put serious money on fast, broadcast-friendly formats.
-
-Those events make chess more accessible and more watchable: blitz and bullet are far easier for newcomers than a six-hour classical game. They also elevate short formats over classical chess, which raises a fundamental question about what "being the best" means in this new landscape.
-
-## Magnus Carlsen: learning the economic game
-
-Magnus Carlsen has navigated this constrained landscape better than anyone. His case shows how an elite player can build financial resilience beyond tournaments.
-
-**Play Magnus AS**, founded in 2013, built training and play apps that Chess.com acquired in 2022 for 83 million dollars. That number, not tournament winnings, is what makes him economically comfortable.
-
-**Chessable**, the learning platform Chess.com bought, lets several GMs monetise teaching at scale. Some GM courses on Chessable generate significant passive income.
-
-What Carlsen grasped, and few players could operationalise, is the need to leave the model of "play tournaments for prize pools" and enter "build value around the game itself." That is an entrepreneur model, not a traditional athlete model.
-
-## What is changing
-
-### Saudi Arabia enters the game
-
-In recent years massive investment from Saudi Arabia has begun to flow into chess. The [Saudi Chess Federation](https://en.wikipedia.org/wiki/Saudi_Chess_Federation) runs tournaments with unprecedented prize pools. FIDE Grand Prix 2023 benefited from financial backing that would have been unthinkable a decade earlier.
-
-The *sportswashing* pattern (using sport to polish a state's global image) familiar from football, golf, or boxing now touches chess too. Effects are mixed: prize pools rise, but legitimate questions attach to the political conditions of those partnerships.
-
-### India as a new engine
-
-The rise of [Praggnanandhaa](https://en.wikipedia.org/wiki/Rameshbabu_Praggnanandhaa), [Gukesh](https://en.wikipedia.org/wiki/Gukesh_Dommaraju), and a wave of strong Indian juniors has economic ripple effects: it creates a huge domestic market. India is the world's most populous country with a solid chess tradition and growing family investment in training. Indian sponsors are starting to follow.
-
-The 2024 World Championship matched Gukesh against Ding Liren. For the first time an Indian player became reigning World Champion. Impact on Indian audiences (and potentially future tournament revenues) is hard to quantify but real.
-
-### Esports as a template?
-
-Some insiders look to esports for a viable model. Esports leagues have developed franchise structures, revenue sharing, and player contracts that chess still lacks.
-
-Chess.com's [PRO Chess League](https://www.chess.com/article/view/pro-chess-league) moves in that direction: a team competition with franchises, streamed online. Audience results are encouraging; the economic model remains fragile.
-
----
-
-### Summary in one table
-
-| Aspect | Current state | Trend |
+| Rank in this 2025 record | Player | Recorded prizes in 2025 |
 | --- | --- | --- |
-| Major tournament prize pools | Low (World Championship ~$2M) | Rising thanks to Gulf sponsors |
-| Top 20 player incomes | Decent but not comparable to other sports | Driven by content and platform deals |
-| GMs outside the top 50 | Often insufficient, topped up by teaching | Little change |
-| Digital platforms (Chess.com) | High valuation, value captured by platform | Growing; limited redistribution to players |
-| Emerging markets (India) | Strong growth potential | Likely acceleration after Gukesh's title |
+| 1 | Magnus Carlsen | $1,455,276 |
+| 5 | Alireza Firouzja | $455,047 |
+| 10 | Javokhir Sindarov | $349,955 |
 
----
+Within this scope, **26 players reached $100,000**. Carlsen alone exceeded $1 million. The record excludes, among other things, small tournaments, national championships, team events and revenue other than prizes.
+
+We cannot divide these 26 players by a worldwide Grandmaster count to conclude that “98% earn less than $100,000”. The numerator and denominator do not cover the same population or all competitive earnings. The source describes concentration at the top of the events recorded; it is not a worldwide tax return.
+
+![An example of concentrated prizes recorded in major individual competitions in 2025; the record does not measure every Grandmaster's income.](/images/en/echecs-argent-03-concentration-gains-2025.svg)
+
+Expenses require another precaution. Gross prizes are not money available for living: travel, accommodation, entry fees, training and taxes may apply. Which costs are covered varies by contract. Comparing two careers properly would require knowing these details.
+
+### Comparing competitions without mixing categories
+
+A first prize is not a total fund. These figures were announced for **2023** editions, with their currency and scope:
+
+| 2023 event | Stated total fund | What the figure covers |
+| --- | --- | --- |
+| World Chess Championship match | €2,000,000 | Fund shared by two players under FIDE regulations |
+| Nitto ATP Finals | $15,000,000 | Announced fund for the tennis event |
+| WSOP Main Event | $93,399,900 | Main Event poker prize fund, according to official results |
+
+[FIDE regulations](https://handbook.fide.com/files/handbook/FWCM2023.pdf) provide a 55%-45% split between winner and runner-up if tiebreaks decide the title: Ding's share of that fund is therefore **€1.1 million**, not dollars. The [WSOP Main Event](https://www.wsop.com/tournaments/result/10253/) paid **$12.1 million to its winner**; this must not be presented as the whole fund. The [ATP](https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2023-record-prize-money) also distinguishes the total allocation from the champion's earnings depending on results.
+
+These competitions differ in participant counts, entry fees and distribution. Currencies have not been converted. The table provides dated scales of magnitude; it does not establish which profession pays an average participant most.
+
+![Comparison of identified events' total funds, preserving currencies and distinguishing the winner's prize from the amount shared.](/images/en/echecs-argent-02-comparaison-prize-pools.svg)
+
+## Why popularity alone cannot guarantee income
+
+### Different organizers and contracts
+
+A FIDE championship, a private tournament, a team league and an online series do not constitute a single employer. Access, prizes and any contracts must be examined separately.
+
+This organization raises economic questions: who finances an event, who bears cancellation risk, which expenses are covered and what commitment extends beyond that edition? A major tournament's publicity alone cannot establish career stability.
+
+This does not mean that revenue sharing or broadcasting rights never exist. It means reading the applicable agreements rather than imagining one salary shared across the circuit.
+
+### An audience is not revenue available to every player
+
+Attention may be monetized through tickets, advertising, subscriptions or sponsors. But a free view, a registered account and a paid subscription are three different units. A large audience alone does not reveal the share reaching a player.
+
+Production choices matter too: accessible commentary, pace, schedules and language can change the audience's experience. Revenue and costs still require measurement. Claiming that television “cannot sell chess”, or that digital distribution solves everything, would be too simple.
+
+### History cannot replace current accounts
+
+The political dimension of chess, particularly visible in the [1972 Fischer-Spassky match](/en/blog/chess-and-diplomacy/), reminds us that sports funding is not only about ticket sales. Prestige, institutions and patronage may play a role.
+
+That does not establish that every professional of one era had a salary, or that an entire later generation left chess for finance. Understanding a current career requires identifying actual supporters, the duration of support and its conditions.
+
+![Possible revenue sources for a player: competition, teaching, content and partnerships; their distribution across all Grandmasters is not estimated.](/images/en/echecs-argent-01-pyramide-revenus.svg)
+
+## The digital revolution: opportunities and unknowns
+
+### Platforms: visible activity, private profitability
+
+A platform can sell subscriptions, courses or advertising and organize competitions. Chess.com's announcement of its [2022 acquisition of Play Magnus Group](https://www.chess.com/news/view/chesscom-acquires-pmg) documents a transaction and the brands involved. It is not an income statement for Chess.com.
+
+Multiplying an account count by a Premium price and an assumed 5% conversion rate does not establish revenue. Missing information includes actual paying subscribers, prices by country and offer, discounts, costs and the relevant periods. **We establish neither its margin nor its current valuation here.**
+
+“Who captures the value?” remains a valid question, but answering it requires contracts and accounts. A teacher, author, player and platform may receive different cash flows from the same activity.
+
+### Streaming: a different professional activity
+
+Hikaru Nakamura illustrates the visibility a player can acquire as a content creator. That does not reveal his net subscription income, contracts or production costs.
+
+Producing a show involves distinct work: scheduling, presenting, editing, moderation and commercial relationships. A high rating may attract attention; it does not replace those skills. Conversely, an audience does not predict the income of every player with the same Elo.
+
+The model can diversify an activity without automatically solving every professional's situation. [Chess-player psychology](/en/blog/chess-player-psychology/) also provides a way to consider motivation when playing must be combined with satisfying an audience.
+
+### Online events: specify the format and agreement
+
+A rapid competition broadcast live can be designed around shorter schedules and an online audience. Comparing it with a classical tournament involves more than prestige: prizes, access, rights and constraints also matter.
+
+A format attracting a sponsor does not mean all players will earn more or that it will replace other formats. A series announced for one season is not a permanent commitment.
+
+## Magnus Carlsen: tournament prizes, business and wealth
+
+The same Chess.com recap places Carlsen's recorded career prizes at **about $12.23 million through December 31, 2025**, without inflation adjustment. Presenting $2.4 million as his lifetime total is therefore wrong within that scope. Even the corrected total is not an estimate of his net worth.
+
+Play Magnus Group was a business with multiple shareholders and activities. The [December 16, 2022 offer-completion announcement](https://live.euronext.com/sites/default/files/company_press_releases/attachments_oslo/2022/12/16/578408_en_Download%20announcement%20as%20PDF.pdf) states a price of **NOK 13 per share**. The group's acquisition price cannot be attributed in full to the individual whose name it carries.
+
+To calculate what Carlsen received and retained, we would need relevant shareholdings, the arrangements of the structures involved and taxation. Calculating wealth would also require other assets and liabilities. We do not possess that private balance sheet.
+
+Chessable was among the brands mentioned in the transaction. Selling a course may allow an author to monetize expertise, but income depends on contract terms and sales; it is neither automatically substantial nor entirely “passive”.
+
+Carlsen's case mainly shows why sporting activity, commercial rights and equity ownership must be separated. It cannot establish the net worth of Alireza Firouzja, Nakamura or another player from a partial prize database.
+
+## What is changing: actual events, not guaranteed earnings
+
+### Saudi Arabia and the 2025 Esports World Cup
+
+A verifiable example is the [announcement of chess at the 2025 Esports World Cup](https://www.chess.com/news/view/chess-makes-historic-debut-at-esports-world-cup-2025-with-1-5-million-prize-pool) in Riyadh, with an announced $1.5 million fund. It was not a supposed “2023 FIDE Grand Prix”.
+
+Such partnerships raise legitimate questions about financial dependence, governance and image. Examining them requires naming the funder, event and contract; a bigger prize fund alone does not establish a partner's precise political motive or an improvement across the whole circuit.
+
+### India and its champions' visibility
+
+Gukesh won the world title in 2024. He was not the first Indian champion: [Viswanathan Anand preceded him](https://museum.fide.com/champions/gukesh-dommaraju). A new generation's visibility may interest organizers, students and commercial partners.
+
+Moving from a title to a market estimate, however, requires measuring registrations, contracts or revenue. A compelling sporting story is not, by itself, a quantified income-growth forecast.
+
+### Esports as an organizational comparison
+
+Teams, broadcast events and platform partnerships offer models to study. They also raise familiar questions: funding duration, image rights, schedules, exclusivity and revenue sharing.
+
+Rather than presenting one model as already viable for everyone, ask what is actually guaranteed to a player and what depends on future results or audience size.
+
+### Summary: useful indicators
+
+| Question | Useful information | What it cannot replace |
+| --- | --- | --- |
+| How much does a tournament pay? | Rules and prize distribution | A player's annual income |
+| How much does a career earn? | Revenue, costs and duration | An Elo rating |
+| How much is a business worth? | Terms of a dated transaction | A shareholder's personal wealth |
+| Is content creation viable? | Contract, sales, costs and working time | Raw follower counts |
+| Is a platform profitable? | Accounts and accounting scope | An acquisition price |
 
 ## Frequently asked questions
 
-**How does an "ordinary" GM make a living?**
-
-The common mix: private lessons (50-200€/h), coaching in a club or federation, a few annual tournaments, and increasingly content creation or Chessable courses. Few rely on streaming: the market is saturated and dominated by a few stars.
+**How can a Grandmaster make a living?**
+Through competition, teaching, content or contracts, depending on circumstances. No hourly rate or rating guarantees net income. A budget must include expenses and unpaid working time.
 
 **Are women players paid differently?**
+We need to compare identified events and agreements. A women's fund, an open fund and the amount received by a player are not the same data. These sources do not provide an equal-work income survey or one cause for disparities. Audience alone cannot explain them.
 
-Yes, and the gap is documented. Women's tournaments have significantly lower prize pools than open events. The economic logic cited is audience: women's events draw fewer viewers. That is circular: audience does not grow because investment is low, and investment stays low because audience is small.
+**Is Chess.com profitable?**
+The cited documents do not establish its current profitability. An acquisition, subscription price and account count reveal neither actual revenue nor profit. An invented conversion rate cannot fill that gap.
 
-**Is Chess.com actually profitable?**
-
-Chess.com is private and does not publish accounts. But its Play Magnus acquisition for 83 million dollars and buys like Chessable imply a valuation in the hundreds of millions. Premium membership (about 15€/month) across 100 million members, even at a 5% conversion rate, implies serious revenue.
-
-**Could chess join the Olympics?**
-
-The question comes up regularly. The IOC recognised FIDE in 1999. Chess has appeared as a demonstration sport. The main sticking point is format: fitting classical chess into the Olympic calendar is hard, and fast or blitz formats are seen as less legitimate. Olympic inclusion would boost visibility and probably prize pools, but the path remains long.
+**Would the Olympic Games guarantee players more money?**
+No. FIDE documents its [relations with the Olympic movement](https://www.fide.com/fide-strengthens-ties-with-ioc-uefa-and-arisf/), but recognizing a federation, selecting an event and paying participants are distinct matters. Additional income should not be budgeted on a hypothetical future inclusion.
 
 ---
 
-Chess has produced some of the most fascinating minds in sport and intellectual history; the **economic model** outside the very top remains fragile. Realistic levers on the player side: structured **teaching**, value-added **content** (courses, books, video), **platform deals** for a small minority. A single "industry" that supports everyone in the game is a long-term scenario, not an imminent shift.
-
-**After reading:** if you aim for a semi-pro path, **model three income streams** (lessons, content, tournaments) on a single sheet, not just the prize money of the master you watch on stream.
-
----
-
-## Key takeaways
-
-- Chess prize pools are tiny compared with other sports and strategy games, including some esports
-- Most professional players do not live from tournaments but from teaching, online content, and streaming contracts
-- Chess.com and Lichess reshaped the game's economy, creating new income streams while also capturing much of the value
-- Chess economics are shifting: the question is not whether incomes will rise, but who will capture them
-
----
+If you are considering semi-professional activity, separate **teaching, content and competition**, then include costs, unbilled hours and a conservative scenario without exceptional prizes. This does not promise a career; it makes a concrete project assessable rather than copying a star's earnings.
 
 ### Sources and references
 
-- **FIDE (2023).** - [*World Chess Championship 2023 - Official Prize Fund.*](https://fide.com) Astana, Kazakhstan. (Official prize pool and player split.)
-- **Nakamura, H. (2022-2024).** - Twitch & YouTube [@GMHikaru](https://www.twitch.tv/gmhikaru). (Streaming economics in chess: ads, subscriptions, Chess.com partnerships.)
-- **Chess.com Press (2022).** - [*Chess.com Acquires Play Magnus Group.*](https://www.chess.com/article/view/chess-com-acquires-play-magnus-group) ($83 million acquisition; Chess.com valuation and platform economics.)
-- **Statista (2023).** - *Esports prize pool comparison by game, 2023.* (Prize pool comparison across esports, poker, and chess.)
-- **Elo, A. E. (1978).** - *The Rating of Chessplayers, Past and Present.* Arco Publishing. (FIDE rating system and professional hierarchy in chess.)
-- **Shenk, D. (2006).** - *The Immortal Game: A History of Chess.* Doubleday. (Economic and cultural history of chess, including Cold War funding of professionals.)
-- **Byrne, R. (1972).** - *Fischer-Spassky Match Reports.* *New York Times.* (Geopolitical and economic context of the match of the century; first major international chess media moment.)
+- **Chess.com**, *The Top Chess Prizewinners In 2025, And How Much They Won* (updated March 2026). Method, exclusions and dated records. [Recap](https://www.chess.com/article/view/biggest-chess-prizewinners-2025).
+- **FIDE**, *Regulations for the World Championship Match 2023*. Currency and allocation. [Regulations](https://handbook.fide.com/files/handbook/FWCM2023.pdf).
+- **ATP**, *Nitto ATP Finals: Record $15 Million Prize Money For 2023 Event*. [Official announcement](https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2023-record-prize-money).
+- **WSOP**, official 2023 Main Event results. [Fund and results](https://www.wsop.com/tournaments/result/10253/).
+- **Chess.com (2022)**, *Officially Acquires Play Magnus, Carlsen Signs As Ambassador*. [Buyer's announcement](https://www.chess.com/news/view/chesscom-acquires-pmg).
+- **Play Magnus AS (December 16, 2022)**, completion of Chess Growthco LLC's offer. [Regulated announcement distributed through Euronext](https://live.euronext.com/sites/default/files/company_press_releases/attachments_oslo/2022/12/16/578408_en_Download%20announcement%20as%20PDF.pdf).
+- **Chess.com**, announcement of the 2025 Esports World Cup partnership. [Announcement](https://www.chess.com/news/view/chess-makes-historic-debut-at-esports-world-cup-2025-with-1-5-million-prize-pool).
+- **FIDE**, Gukesh Dommaraju museum biography and Olympic-movement relations. [Biography](https://museum.fide.com/champions/gukesh-dommaraju), [2025 institutional communication](https://www.fide.com/fide-strengthens-ties-with-ioc-uefa-and-arisf/).

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" role="img" aria-labelledby="titre" lang="en"><title id="titre">What becomes visible may have been selected</title><rect width="900" height="320" rx="20" fill="#faf8ef" /><text x="40" y="48" font-family="Georgia,serif" font-size="25" fill="#252820">What becomes visible may have been selected</text>
+<rect x="40" y="85" width="250" height="155" rx="12" fill="#edf2e7" stroke="#64734b" /><text x="58" y="119" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#33432c">Initial set</text>
+<text x="58" y="151" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Successes and failures</text>
+<text x="58" y="177" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Different situations</text>
+<rect x="325" y="85" width="250" height="155" rx="12" fill="#edf2e7" stroke="#64734b" /><text x="343" y="119" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#33432c">Filter</text>
+<text x="343" y="151" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Publication, selection</text>
+<text x="343" y="177" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Or remaining active</text>
+<rect x="610" y="85" width="250" height="155" rx="12" fill="#edf2e7" stroke="#64734b" /><text x="628" y="119" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#33432c">Visible cases</text>
+<text x="628" y="151" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Available sample</text>
+<text x="628" y="177" font-family="system-ui,sans-serif" font-size="16" fill="#33382e">Look for missing cases</text>
+<text x="40" y="285" font-family="system-ui,sans-serif" font-size="16" fill="#5d6555">Describing the filter helps identify who a conclusion applies to.</text></svg>

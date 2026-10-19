@@ -1,124 +1,109 @@
-﻿---
+---
 heroImageAlt: Um degrau de pedra se fundindo numa rampa contínua que aplaina o solo.
-title: "Xadrez e deficiência: quando o tabuleiro apaga as fronteiras"
-excerpt: >-
-  Jogadores cegos calculam variantes profundas apoiando-se no tato. Jogadores com tetraplegia movem as peças com o
-  olhar. Pessoas com autismo encontram no xadrez uma estrutura que o mundo social não lhes oferece. O tabuleiro é um
-  dos raros espaços onde a deficiência deixa de ser uma barreira.
-seoTitle: "Xadrez e deficiência: o tabuleiro como espaço de inclusão"
-seoDescription: "Xadrez e deficiência: jogadores cegos, autismo, tetraplegia, deficiência motora. Como o jogo se adapta e cria espaços de inclusão e igualdade cognitiva."
+title: "Xadrez e deficiência: adaptações concretas para participar"
+excerpt: "Tabuleiro tátil, assistência, comunicação acessível e acesso à sala: adaptações que permitem jogar, suas condições e as barreiras a verificar com cada pessoa."
+seoTitle: "Xadrez e deficiência: regras, materiais e acessibilidade"
+seoDescription: "Tabuleiros táteis, assistentes, IBCA, IPCA e ICCD: entender as adaptações do xadrez sem prometer acesso universal nem efeito terapêutico."
 frSlug: echecs-et-handicap
 faq:
-  - question: Como as pessoas cegas jogam xadrez ?
-    answer: >-
-      Em tabuleiros especiais : as casas negras são ligeiramente mais altas que as casas brancas, e as
-      peças negras têm um encaixe ou um pino no topo para distingui-las das brancas. Os jogadores podem tocar
-      as peças para verificar a posição : a regra 'peça tocada, peça jogada' é adaptada : eles devem anunciar a intenção
-      antes de tocar ('quero verificar a posição do cavalo'). Os lances são muitas vezes anunciados verbalmente
-      (notação algébrica). Alguns jogadores com deficiência visual atingem níveis de Mestre Nacional e até Internacional.
-  - question: O xadrez ajuda realmente pessoas com autismo ?
-    answer: >-
-      Os relatos e os estudos de caso convergem para sim, para uma fração significativa das pessoas com
-      autismo : não todas. Os aspectos que ajudam : a estrutura explícita das regras (sem ambiguidade), a objetividade do
-      resultado (não se pode 'interpretar mal' uma posição), a ausência de linguagem não verbal a decodificar (não é preciso
-      adivinhar o que o adversário 'quer realmente dizer') e a valorização da lógica e do cálculo, que muitas vezes
-      são forças naturais. O aspecto competitivo pode ser estressante para algumas pessoas.
-  - question: As plataformas online são acessíveis a pessoas com deficiência ?
-    answer: >-
-      Chess.com e Lichess fizeram esforços significativos de acessibilidade. As duas plataformas são compatíveis
-      com leitores de tela para pessoas com deficiência visual. O Lichess (open-source) tem uma interface acessível por
-      texto e permite jogar anunciando os lances pelo teclado. Existem interfaces voice-to-play para deficiências
-      motoras. As interfaces comerciais de eye-tracking (Tobii etc.) funcionam com interfaces web padrão.
-      O jogo online abriu o xadrez a jogadores que não podiam participar de torneios físicos.
-  - question: Existem campeões de xadrez com deficiências importantes ?
-    answer: >-
-      Vários. O Mestre Internacional Dariusz Świercz (Polônia) jogou partidas de alto nível apesar de uma
-      paralisia parcial. Na França, jogadores com deficiência visual atingiram níveis de Mestre Nacional. Num nível
-      menos competitivo, mas igualmente significativo, muitos jogadores com paralisias motoras severas participam de
-      torneios online com tecnologias assistivas. Isso não é anedótico : as organizações de xadrez
-      para deficientes visuais organizam Campeonatos do Mundo há mais de 60 anos.
-  - question: Como funcionam os programas de xadrez na educação especial ?
-    answer: >-
-      Tipicamente integrando o xadrez como ferramenta pedagógica transversal : não para formar jogadores
-      competitivos, mas para desenvolver competências gerais : atenção sustentada, gestão da frustração
-      (perder uma peça), planejamento sequencial (antecipar o próximo lance), respeito às regras. Os programas
-      adaptam as restrições : partidas mais curtas, regras simplificadas no início, foco em aspectos específicos
-      em vez do jogo completo. Estudos em escolas especializadas americanas e alemãs mostram
-      melhoras mensuráveis nos comportamentos de autorregulação em 3 a 6 meses.
+  - question: "Como uma pessoa cega pode jogar xadrez?"
+    answer: "Um tabuleiro tátil e uma transmissão acessível dos lances tornam a posição consultável. O apêndice D das regras da FIDE detalha os procedimentos; a organização deve ser preparada com o jogador e o árbitro."
+  - question: "É preciso anunciar uma intenção antes de tocar qualquer peça?"
+    answer: "No tabuleiro adaptado tratado pelo apêndice D, uma peça é considerada tocada quando é retirada do seu encaixe. Não existe aí uma obrigação geral de anunciar “vou conferir” antes de todo contato. O árbitro explica as regras aplicáveis."
+  - question: "Outra pessoa pode ajudar a mover as peças?"
+    answer: "As regras da FIDE preveem um assistente aceito pelo árbitro quando o jogador não consegue mover as peças. A ajuda material, o relógio e a anotação devem ser definidos antes da partida; a escolha dos lances continua sendo do jogador."
+  - question: "O xadrez online é acessível para todos?"
+    answer: "Não. O Lichess documenta um modo para leitores de tela, mas é preciso verificar o percurso real com o equipamento, o navegador e as configurações do jogador. Comandos por voz ou pelo olhar não garantem compatibilidade universal."
+  - question: "O xadrez é uma forma de reabilitação?"
+    answer: "Seu uso como lazer ou atividade educativa não demonstra melhora clínica nem transferência para o cotidiano. Um programa que afirma produzir efeitos de reabilitação precisa de uma avaliação adequada; não substitui os apoios necessários."
 ---
 
-Timur Gareyev é Grande Mestre. Em 2016, ele jogou 48 partidas simultâneas às cegas : um recorde mundial. Usava uma máscara nos olhos, pedalando uma bicicleta estacionária, e calculava 48 posições simultaneamente durante 19 horas.
+Tornar uma partida acessível pode exigir outro tabuleiro, ajuda para mover as peças, um aviso escrito ou uma mesa ao alcance da pessoa. São condições de participação a preparar com o jogador. Dizer que “o tabuleiro apaga a deficiência” pode ocultar esse trabalho.
 
-Timur não é cego. Ele escolheu sê-lo, temporariamente, para um recorde.
+O jogo pode ser uma paixão, um lazer ou uma competição. Seu valor não exige um relato extraordinário nem uma promessa de compensação cerebral. A pergunta útil é concreta: de que esta pessoa precisa para escolher e jogar seus lances em boas condições?
 
-Mas milhares de jogadores de xadrez no mundo jogam às cegas em cada partida : não por escolha, mas porque não podem ver o tabuleiro. E jogam com um nível e uma paixão que o próprio Timur admira.
+## Jogar com um tabuleiro tátil
 
-## Os jogadores cegos e com baixa visão
+A [International Braille Chess Association, IBCA](https://ibca-info.org/), descreve tabuleiros com casas pretas elevadas e peças fixadas em encaixes. O relevo permite consultar a posição pelo tato. O material dá acesso à informação; não torna o cálculo automaticamente mais fácil.
 
-O xadrez para jogadores com deficiência visual tem uma história tão longa quanto o xadrez competitivo moderno. A FIDE reconhece oficialmente as competições para jogadores com deficiência visual desde 1961. O primeiro Campeonato Mundial de Xadrez para Cegos data de 1961, em Lublin, Polônia.
+O [apêndice D das regras da FIDE](https://handbook.fide.com/chapter/E012023) trata de partidas com jogadores cegos ou com deficiência visual. No tabuleiro adaptado, uma peça é considerada tocada quando sai do seu encaixe. Os lances devem ser anunciados claramente, repetidos pelo adversário e realizados no tabuleiro dele. Os detalhes devem ser combinados com o árbitro.
 
-A adaptação material é elegante em sua simplicidade. O tabuleiro especial para cegos diferencia as casas brancas e pretas pela altura : as casas pretas são ligeiramente mais altas, permitindo ao tato distinguir imediatamente onde se está no tabuleiro. As peças brancas e pretas são idênticas na forma, mas distinguidas por uma marca : as peças pretas têm um ponto ou uma saliência no topo. As peças são também ligeiramente mais estáveis do que num tabuleiro padrão, para resistir ao toque.
+Não se deve, portanto, aplicar sem verificação a instrução de “avisar que vai conferir antes de todo contato”. Consultar as peças pelo tato e comprometer-se com um lance são operações diferentes. Um teste antes da primeira rodada permite conferir a comunicação e identificar divergências entre as posições.
 
-A regra "peça tocada, peça jogada" é adaptada : um jogador com deficiência visual pode tocar as peças para verificar a posição, desde que anuncie verbalmente sua intenção antes de tocar ("vou verificar onde está o cavalo"). Os lances são anunciados em notação algébrica ("cavalo f3", "peão d4"), o que torna a arbitragem precisa e sem ambiguidade.
+### Jogar sem enxergar não é uma demonstração neurológica
 
-Jogadores com deficiência visual atingem níveis que impressionam seus adversários videntes. [Anatoli Karpov](https://pt.wikipedia.org/wiki/Anatoli_Karpov) disputou uma partida de exibição contra o campeão mundial de xadrez para cegos, e perdeu. Não era condescendência : o campeão jogava em seu nível real.
+Um jogador vidente que joga às cegas e um jogador cego que usa um tabuleiro tátil não estão em situações equivalentes. Nenhuma delas permite concluir que todas as pessoas cegas têm memória ou habilidades espaciais superiores.
 
-## Como o cérebro compensa
+Descrever um lance recebido pela fala ou pelo tato basta para explicar a adaptação. Não é preciso invocar um recrutamento garantido do córtex visual, compensação universal ou um estudo de memória não identificável. As trajetórias de aprendizagem e as necessidades continuam sendo individuais.
 
-O caso dos jogadores de xadrez cegos ilustra um fenômeno neurológico fascinante : a plasticidade cerebral e a compensação sensorial.
+## Deficiência motora: ajudar a executar sem decidir
 
-As pessoas cegas de nascença (ou que ficaram cegas muito cedo) desenvolvem capacidades espaciais notáveis por meio de outras modalidades sensoriais. O córtex visual, privado de input visual, é "recrutado" pelos sistemas tátil e auditivo : um fenômeno de plasticidade crossmodal bem documentado.
+Os [artigos 4.9 e 6.2.6 das regras da FIDE](https://handbook.fide.com/chapter/E012023) preveem um assistente aceito pelo árbitro quando um jogador não consegue mover as peças ou operar o relógio. A assistência diz respeito à execução material. Escolher um lance ou sugerir uma variante mudaria a natureza dessa ajuda.
 
-Para o xadrez, isso significa que a representação mental do tabuleiro repousa sobre informações táteis (posição das peças ao toque) e verbais (lances anunciados) em vez de visuais, mas a estrutura cognitiva subjacente é similar. Os chunks de posição que os jogadores experts visuais armazenam na memória de longo prazo têm seu equivalente na memória espacial dos jogadores cegos.
+Antes da partida, é preciso definir quem realiza cada operação, como o jogador comunica sua decisão e como informar um erro de manipulação. A solução adequada depende das possibilidades e preferências da pessoa, não apenas do nome de sua deficiência.
 
-Um estudo de 2019 comparou jogadores de xadrez cegos e videntes de nível equivalente em tarefas de memória de posição. Os dois grupos mostraram performances comparáveis : confirmando que a representação mental do tabuleiro pode ser construída por diferentes modalidades sensoriais sem perda significativa de eficiência.
+Uma mesa acessível, uma posição confortável e comandos ao alcance podem importar tanto quanto o tabuleiro. Uma adaptação não é validada pela suposição de que funcionará: é preciso testá-la com o jogador.
 
-## Autismo e o tabuleiro como espaço seguro
+## Surdez: tornar as informações efetivamente acessíveis
 
-A relação entre autismo e xadrez é documentada há muito tempo, mas mal compreendida.
+O silêncio da sala não significa que as informações sejam acessíveis às pessoas surdas ou com deficiência auditiva. Chamar um árbitro, mudar um horário e dar uma instrução antes da rodada ainda podem depender apenas de avisos orais.
 
-Não se trata de um estereótipo (o "autista gênio do xadrez"), mas de uma afinidade funcional real entre as características cognitivas frequentemente associadas ao autismo e as exigências específicas do jogo.
+É útil combinar uma forma visível ou escrita de transmitir essas informações e perguntar qual comunicação a pessoa prefere. Falar mais alto não substitui essa conversa. Língua de sinais, leitura labial e escrita não são soluções intercambiáveis a impor a todos.
 
-As regras do xadrez são **explícitas e exaustivas**: cada peça tem movimentos definidos, cada situação tem uma regra aplicável. Não há ambiguidade implícita, nenhum "é óbvio, não?" As situações de impasse têm regras precisas (afogamento, repetição tripla, regra dos 50 lances). Essa transparência é frequentemente repousante para pessoas habituadas a navegar num mundo social repleto de implícitos não ditos.
+O [International Chess Committee of the Deaf, ICCD](https://chessdeaf.org/), oferece uma estrutura associativa e competições identificáveis. Suas publicações ajudam a encontrar interlocutores e regulamentos; não dispensam um organizador local de preparar seu próprio acolhimento.
 
-O tabuleiro é também um espaço sem **comunicação não verbal a decodificar**. O adversário pode pensar o que quiser, mas isso não muda a posição. Não há subtexto a interpretar, nenhum tom de voz a analisar, nenhuma expressão facial a decodificar. A comunicação se limita aos lances jogados : uma linguagem puramente formal.
+## IBCA, IPCA e ICCD: interlocutores distintos
 
-O **mérito é objetivo**. Vence-se ou perde-se em função dos lances jogados, não em função da popularidade, da aparência, da capacidade de gerenciar dinâmicas de grupo. Para pessoas que frequentemente viveram experiências de exclusão social arbitrária, essa objetividade pode ser uma revelação.
+Essas organizações não correspondem a um único perfil de jogador:
 
-Depoimentos de jogadores autistas (ou de seus pais) descrevem o tabuleiro como "o primeiro lugar onde me senti certo, não diferente" : uma frase que se repete com uma regularidade impressionante.
+| Organização | Área indicada pela organização | Ponto prático |
+| --- | --- | --- |
+| [IBCA](https://ibca-info.org/) | Jogadores cegos ou com deficiência visual | Consultar os recursos e as competições anunciadas. |
+| [IPCA](https://ipcachess.org/about-us/ipca-statutes/) | Jogadores com deficiência física | Os estatutos preveem filiação e condições de participação. |
+| [ICCD](https://chessdeaf.org/) | Xadrez de pessoas surdas | Consultar o calendário e o regulamento da prova específica. |
 
-## Os programas de xadrez na educação especial
+A existência de uma organização ou campeonato não significa inscrição automática, que o mesmo documento sirva em toda parte ou que todas as adaptações sejam fornecidas sem solicitação. Confira as condições do evento com o organizador e, quando necessário, com a federação responsável.
 
-Nos Estados Unidos, na Alemanha e no Reino Unido, programas estruturados de xadrez na educação especial foram avaliados desde os anos 1990.
+Participar de competições específicas e de torneios abertos são possibilidades que podem coexistir. A escolha pertence ao jogador; nenhum relato de campeão é necessário para justificar seu direito de jogar.
 
-O objetivo desses programas não é a competição. É o uso do jogo como ferramenta de desenvolvimento de competências generalizáveis : atenção sustentada, sequenciamento, planejamento, gestão da frustração, respeito às regras, aceitação da derrota.
+## Autismo, aprendizagem e educação especializada
 
-Um estudo alemão de 2015 acompanhou 156 alunos em classes de educação adaptada (transtornos de comportamento, deficiências intelectuais leves) participando de sessões semanais de xadrez durante 6 meses. Os resultados : melhora significativa das pontuações de autorregulação comportamental, redução dos comportamentos impulsivos durante as sessões e melhora parcial da atenção sustentada em tarefas escolares.
+Um diagnóstico de autismo não permite deduzir interesse por sistemas de regras, memória excepcional ou conforto garantido no clube. Algumas pessoas gostam do jogo; outras preferem outra atividade. Costumes sociais, ruído, relógio e competição podem exigir adaptações.
 
-O mecanismo não é misterioso : o xadrez cria um contexto estruturado com regras claras, consequências previsíveis e feedback imediato : exatamente as condições que favorecem o aprendizado da autorregulação em crianças para as quais os contextos ambíguos são difíceis.
+O artigo [xadrez e autismo](/pt-br/blog/xadrez-e-autismo/) distingue essas possibilidades de acolhimento das promessas de benefício clínico. Preparar o andamento da sessão, oferecer um material compreensível e aceitar uma pausa são escolhas organizacionais a discutir, não um tratamento.
 
-## Tecnologias assistivas e jogo online
+### Descrever objetivos sem anunciar transferência
 
-A revolução do jogo online abriu o xadrez a jogadores que não podiam participar dos torneios físicos.
+Uma oficina educativa pode explicar uma regra, resolver um problema ou convidar alguém a contar seu raciocínio. O instrutor pode observar o que acontece durante a sessão. Isso não comprova uma melhora geral da atenção, da autorregulação ou da vida cotidiana.
 
-Jogadores com tetraplegia grave usam sistemas de eye-tracking (rastreamento do olhar) para mover as peças em plataformas online. O Chess.com e o [Lichess](https://lichess.org) são acessíveis por essas interfaces : um movimento dos olhos basta para selecionar uma peça e movê-la. Interfaces vocais permitem também ditar os lances em notação algébrica.
+Uma afirmação de benefício na educação especializada deve definir a população estudada, as medidas, a comparação e os limites. Um estudo não identificável ou relato sem fonte não basta para prometer progressos mensuráveis em três a seis meses. O prazer de participar continua sendo um objetivo válido sem promessa de reabilitação.
 
-Essas tecnologias não são específicas ao xadrez : foram desenvolvidas para a acessibilidade informática geral. Mas o xadrez, com sua interface relativamente simples (um tabuleiro, peças, um botão de lance), é particularmente bem adaptado a essas tecnologias.
+## Jogo online: verificar as funções no uso real
 
-O resultado : jogadores que teriam sido completamente excluídos das competições em torneio físico podem agora jogar regularmente, melhorar seu nível e participar de torneios online de nível competitivo.
+O Lichess publica um [tutorial do modo para leitores de tela](https://lichess.org/page/blind-mode-tutorial), com orientações de navegação e entrada de lances. É uma função documentada, não uma garantia para todas as combinações de computador, navegador e tecnologia assistiva.
 
-## O paradoxo da inclusão
+Comandos por voz ou pelo olhar podem ser considerados conforme o equipamento disponível. Antes de prometer que permitem jogar em uma plataforma, é preciso testar o percurso completo: entrar na conta, iniciar uma partida, selecionar e confirmar um lance, consultar o relógio e pedir ajuda. Uma demonstração de seleção de casa não valida tudo isso.
 
-Há um paradoxo na relação entre xadrez e deficiência.
+O mesmo vale para Chess.com ou qualquer outra plataforma: não declarar acessibilidade total sem verificar a função e o dispositivo realmente utilizados. Em competições, esclareça também as condições de uso das ajudas e as regras de controle. O acesso a uma partida amistosa não garante a admissão ao mesmo formato em um torneio.
 
-Por um lado, o xadrez é um dos esportes mais *inclusivos*: as regras são as mesmas para todos, o tabuleiro pode ser adaptado para todos os tipos de deficiência, e o mérito cognitivo não depende da condição física. Um jogador em cadeira de rodas pode bater um jogador sem deficiência : e batê-lo *de forma evidente*, sem ajuste de regras nem classificação separada.
+## Antes do torneio: verificar o local e as responsabilidades
 
-Por outro lado, os torneios físicos de xadrez apresentam barreiras reais de acessibilidade : salas nem sempre acessíveis, duração das partidas longa para pessoas com fadiga crônica, estresse sensorial para pessoas hipersensíveis, restrições sociais para pessoas com autismo severo.
+As [diretrizes da FIDE para acolher jogadores com deficiência](https://handbook.fide.com/chapter/D0412) preveem um local acessível ou uma alternativa supervisionada. Também tratam da preparação das necessidades específicas. Esse quadro não prova que toda sala seja acessível na prática: continua sendo necessária uma confirmação concreta.
 
-A solução híbrida : competições físicas acessíveis para quem pode, jogo online para os outros, com reconhecimento das performances em ambos os contextos : começa a emergir. A FIDE adaptou seus regulamentos para reconhecer performances online em certas categorias. Os clubes locais mais progressistas organizam torneios mistos (presenciais + online simultaneamente).
+Para preparar a visita, jogador e organizador podem verificar:
 
-O tabuleiro permanece um dos raros espaços onde a performance cognitiva pode se expressar independentemente do corpo que a carrega. É uma propriedade rara, preciosa, e ainda subexplorada.
+- **O trajeto necessário:** entrada, mesa de jogo, sanitários, espaço de descanso e saída, incluindo eventuais obstáculos.
+- **A instalação:** espaço para equipamento e assistência, altura da mesa, iluminação e comandos ao alcance.
+- **A informação:** horários, emparceiramentos e anúncios em formato utilizável.
+- **As funções:** pessoa de contato, árbitro, ajuda material e procedimento em caso de dificuldade.
+- **O andamento:** ritmo de jogo, duração prevista, necessidades de descanso e possibilidades realmente compatíveis com o regulamento.
 
----
+É preciso pedir as informações necessárias à organização sem exigir um relato médico público. Eventuais documentos seguem as condições aplicáveis à prova; suposições sobre a aparência do jogador não os substituem.
 
-*"No xadrez, não sou autista, não sou deficiente, não sou diferente. Sou um jogador. E as 64 casas, são as mesmas para todo mundo.", Depoimento de um jogador autista num programa Chess for Inclusion, Barcelona, 2021.*
+## Inclusão significa possibilitar a participação
+
+Um tabuleiro adaptado não elimina uma escada na entrada. Uma interface vocal não apaga a fadiga nem o custo do equipamento. Reconhecer esses limites ajuda a construir uma solução, em vez de atribuir as dificuldades à falta de motivação do jogador.
+
+O objetivo é que a pessoa possa decidir, jogar, aprender e comunicar suas necessidades. Um clube não precisa anunciar igualdade cognitiva perfeita ou efeitos de saúde para tornar esse projeto útil. Precisa sobretudo transformar suas intenções em condições verificáveis de acolhimento.
+
+**Depois da leitura:** escolha um obstáculo concreto para resolver com o participante e confirme a solução antes da sessão. Para continuar, leia [xadrez e TDAH](/pt-br/blog/xadrez-e-tdah/) ou [xadrez e streaming](/pt-br/blog/xadrez-e-streaming/).

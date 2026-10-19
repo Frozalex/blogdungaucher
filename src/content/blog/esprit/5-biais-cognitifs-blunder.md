@@ -1,5 +1,5 @@
 ---
-title: "5 biais cognitifs qui te font blunder aux échecs"
+title: "Cinq biais cognitifs à examiner après une erreur aux échecs"
 excerpt:
   "Cinq pistes pour examiner une erreur : première idée, confirmation, ancrage, surconfiance et disponibilité. Ce que les recherches permettent de dire, avec leurs limites."
 publishDate: "2026-07-27"
@@ -23,6 +23,7 @@ heroImage:
   alt: Cinq rails parallèles s'infléchissant brusquement pour converger vers une
     seule voie déviée.
 ogImage: /images/og/5-biais-cognitifs-blunder-og.webp
+
 ---
 
 « Comment ai-je pu rater ça ? » Une erreur peut venir d’un calcul incomplet, d’une position mal comprise, de la fatigue ou d’une idée qui a accaparé ton attention. Aucun chiffre vérifié ne permet ici d’attribuer la plupart des erreurs à cinq biais.

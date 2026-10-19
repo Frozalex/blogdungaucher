@@ -4,6 +4,7 @@ import AdBanner from "./AdBanner.astro";
 import ArticleCard from "./ArticleCard.astro";
 
 import { categoryLandingRich } from "../data/category-landing-rich";
+import { categoryLandingPtBr } from "../data/category-landing-pt-br";
 import { categoryMap, type CategorySlug } from "../data/site";
 import {
   buildBreadcrumbJsonLd,
@@ -15,7 +16,7 @@ import { t, type Lang } from "../i18n/translations";
 
 const { category, lang = "fr" } = Astro.props as { category : CategorySlug; lang?: SiteLang };
 const meta = categoryMap[category];
-const landingRich = (lang === "fr" || lang === "en") ? categoryLandingRich[category]?.[lang] : undefined;
+const landingRich = lang === "pt-br" ? categoryLandingPtBr[category] : (lang === "fr" || lang === "en") ? categoryLandingRich[category]?.[lang] : undefined;
 const posts = filterPostsForLang(
   await getPostsByCategory(category),
   lang,

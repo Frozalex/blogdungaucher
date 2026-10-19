@@ -130,6 +130,9 @@ const requiredNote = lang === "en"
         <a href={legalHref} data-t="footer.legal">{tt("footer.legal", "Mentions légales")}</a>
         <a href={termsHref}>{termsLabel}</a>
         <a href={privacyHref} data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
+        <button type="button" id="footer-ad-privacy" class="footer-privacy-button" hidden>
+          {lang === "en" ? "Advertising privacy choices" : lang === "pt-br" ? "Privacidade dos anúncios" : lang === "nl" ? "Privacykeuzes voor advertenties" : "Choix de confidentialité publicitaire"}
+        </button>
         <a href={aboutHref}>{lang === "en" ? "About" : lang === "pt-br" ? "Sobre" : lang === "nl" ? "Over" : "À propos"}</a>
         <a href={contactHref}>{contactLabel}</a>
       </div>
@@ -150,7 +153,33 @@ const requiredNote = lang === "en"
   });
 </script>
 
+<script is:inline>
+  function bindAdvertisingPrivacy() {
+    var button = document.getElementById("footer-ad-privacy");
+    if (!button || button.dataset.bound === "1" || document.documentElement.dataset.adsEligible !== "true") return;
+    button.dataset.bound = "1";
+    window.googlefc = window.googlefc || {};
+    window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+    window.googlefc.callbackQueue.push({ CONSENT_API_READY: function () {
+      if (typeof window.__tcfapi !== "function") return;
+      window.__tcfapi("addEventListener", 2, function (data, success) {
+        var current = document.getElementById("footer-ad-privacy");
+        if (current) current.hidden = !(success && data && data.gdprApplies && document.documentElement.dataset.adsEligible === "true");
+      });
+    }});
+    button.addEventListener("click", function () {
+      window.googlefc.callbackQueue.push({ CONSENT_API_READY: function () {
+        if (typeof window.googlefc.showRevocationMessage === "function") window.googlefc.showRevocationMessage();
+      }});
+    });
+  }
+  document.addEventListener("astro:page-load", bindAdvertisingPrivacy);
+</script>
+
 <style>
+  .footer-privacy-button { border: 0; padding: 0; color: inherit; background: transparent; font: inherit; cursor: pointer; text-decoration: underline; }
+  .footer-privacy-button[hidden] { display: none !important; }
+
   .footer {
     margin-top: 4rem;
     border-top: 1px solid var(--border-soft);

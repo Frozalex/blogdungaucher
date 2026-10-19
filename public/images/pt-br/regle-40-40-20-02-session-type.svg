@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="titre" xml:lang="pt-BR"><title id="titre">Exemplo de divisão de uma hora</title><rect width="900" height="360" rx="20" fill="#faf8ef" />
+<text x="40" y="38" font-family="Georgia,serif" font-size="23" fill="#252820">Exemplo de divisão de uma hora</text>
+<rect x="40" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="56" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Tática: 24 min</text>
+<text x="56" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Resolver e conferir</text>
+<text x="56" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Anotar o raciocínio</text>
+<rect x="325" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="341" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Finais: 24 min</text>
+<text x="341" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Estudar uma posição</text>
+<text x="341" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Tentar jogá-la</text>
+<rect x="610" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="626" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Aberturas: 12 min</text>
+<text x="626" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Rever uma ideia</text>
+<text x="626" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Examinar suas partidas</text>
+<text x="40" y="310" font-family="system-ui,sans-serif" font-size="15" fill="#5d6555">A divisão 40–40–20 é uma proposta para adaptar, não uma fórmula validada.</text>
+</svg>

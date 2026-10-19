@@ -1,232 +1,77 @@
 ---
 heroImageAlt: Three stacks of chess pawns of very uneven heights, lined up in a
   low-angle shot.
-title: "The 40-40-20 Rule: How to Really Structure Your Chess Training"
-excerpt: >-
-  Most players spend 80% of their time on openings. The 40-40-20 rule says the opposite: 40% tactics, 40% endgames, 20%
-  openings. Why? And does it actually work?
-seoTitle: "The 40-40-20 Rule in Chess: Tactics, Endgames, Openings"
-seoDescription: >-
-  The 40-40-20 rule recommends 40% tactics, 40% endgames and 20% openings. Why most players do the opposite, and what
-  expertise research says about this training breakdown.
+title: "The 40-40-20 Rule: How to Structure Your Chess Training"
+excerpt: "40% tactics, 40% endgames, 20% openings: a proposal for organising your training, to adapt to your games rather than treat as a scientific rule."
+seoTitle: "The 40-40-20 Chess Rule: A Guideline to Adapt"
+seoDescription: "40% tactics, 40% endgames, 20% openings: a training split to adapt to your games, without scientific validation of these proportions."
 enSlug: "chess-40-40-20-rule"
 faq:
-  - question: "Where does the 40-40-20 rule come from?"
-    answer: >-
-      It's a commonly cited heuristic in coaching literature without an identifiable foundational source. It
-      synthesizes a recurring observation: club players spend too much time on openings (the most studied
-      phase) and not enough on tactics and endgames (which decide most games). The exact percentages are
-      indicative, what matters is the rebalancing principle.
-  - question: "Does the rule work for all levels?"
-    answer: >-
-      No. Below 1200 Elo, basic tactical patterns (forks, pins, mate in 1-2) absorb most of the budget:
-      openings are secondary. Between 1200 and 1800, the 40-40-20 distribution becomes relevant. Above 1900,
-      openings reclaim importance because the depth of theoretical preparation actually decides games at this
-      level.
-  - question: "Why does the rule devote only 20% to openings?"
-    answer: >-
-      Because most amateur games are decided in the middlegame or endgame, not by an opening advantage.
-      Memorizing 20 moves of theory doesn't help if you don't know how to handle the resulting middlegame.
-      Studies show that excessive opening preparation in low and intermediate levels produces marginal
-      results in real games.
-  - question: "How to apply it concretely each week?"
-    answer: >-
-      On a 5-hour weekly budget: 2 hours of tactics (puzzles + game review for missed patterns), 2 hours of
-      endgames (technical endgames + practical endgame analysis), 1 hour of openings (limited repertoire,
-      deep understanding rather than broad memorization). The proportions matter more than the absolute
-      durations.
-  - question: "Is endgame study really useful for amateurs?"
-    answer: >-
-      Yes, possibly more than other phases. Endgames teach principles of piece coordination, king activity,
-      and concrete calculation that are reused throughout the game. A solid endgame technique also gives
-      confidence in the middlegame: knowing you can convert a slight advantage in the endgame, you don't seek
-      decisive tactical advantages too early.
+  - question: "At what level should I study openings?"
+    answer: "There is no universal Elo threshold. Work on their principles from the start and explore the positions that actually cause problems in your games."
+  - question: "When does this split produce results?"
+    answer: "No reliable timescale is established for this formula. Observe your mistakes across several games and adjust your programme without expecting a guaranteed Elo gain after a fixed number of weeks."
+  - question: "Is it a scientific rule?"
+    answer: "No. It is a training heuristic: a proposed split to help you choose priorities. The cited studies do not experimentally compare 40-40-20 with other allocations."
+  - question: "How should I adapt it for blitz?"
+    answer: "First analyse your fast games: tactical mistakes, clock management, openings or endgames. The name of the time control is not enough to determine your programme."
 ---
 
-You have just lost a game. You open your repertoire, you rerun the line that troubled you, you spend forty minutes memorising moves you may never play again. It feels useful. It feels like work.
+You have just lost a game. You open your library, revisit the variation that caused you trouble, and spend forty minutes memorising moves you may never play again. It feels useful. It feels like work.
 
-It is probably the worst way to spend your chess study time.
+Before starting again, ask yourself one question: was the opening really what cost you the game?
 
-The 40-40-20 rule is a heuristic popular among coaches and improving players: **40% of training time on tactics, 40% on endgames, 20% on openings**. It inverts the spontaneous split most club players use: they spend most of their time on openings, then tactics, and barely touch endgames.
+The 40-40-20 rule proposes spending 40% of your time on tactics, 40% on endgames and 20% on openings. It is a training heuristic, not a scientific rule. I do not have a primary source establishing its origin or demonstrating that these proportions are optimal. You can use it as a starting point, then adapt it.
 
-It is not dogma. It is a strong hypothesis. To see why it holds, you need what expertise research took decades to unpack.
+## What research can tell us
 
-## Why the default split backfires
+Chase and Simon (1973) study position reconstruction in three players of different strengths. Their analysis highlights the organisation of pieces into familiar groups in experienced players’ memory. It does not determine how many minutes you should spend on openings or endgames.
 
-### Opening bias
+Ericsson, Krampe and Tesch-Römer (1993) examine deliberate practice: demanding activities designed to improve performance. Their work supports the value of targeted training; it validates neither the 40-40-20 proportions nor the promise that one attentive exercise is worth exactly ten rushed ones.
 
-There is a simple psychological reason club players spend so much time on openings: openings are **concrete, memorisable, and reassuring**. Whole books exist for each variation. Moves are listed, ordered, annotated. You can feel as if you truly control something precise.
+You can retain a practical question: which specific difficulty are you working on, and how will you check whether you handle it better?
 
-The problem is that control rarely survives three moves after theory ends. Opponents do not play the book. Even when they do, understanding the ideas behind the moves rarely comes from memorising the moves themselves.
+## A one-hour session
 
-[John Nunn](https://en.wikipedia.org/wiki/John_Nunn), British grandmaster and author of *Secrets of Practical Chess*, states this limit clearly: below about 2000 Elo, games are almost never lost in the opening. They are lost on missed tactics, mishandled endgames, and middlegame inaccuracies. Openings are not where decisive mistakes happen at that level.
+Here is the arithmetic application of the formula, as an example:
 
-### The misleading intuition about progress
-
-A cognitive bias is also at work. When you memorise an opening you see the payoff immediately: a few games later you emerge from theory in a good position. Feedback is fast and satisfying.
-
-When you study endgames the loop is long. The payoff from learning rook vs king technique only appears the next time you reach that structure, which may take weeks. The reward is often silent: half a point clawed back somewhere obscure on the cross-table.
-
-What learning research calls the [illusion of competence](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) hits hard here: activities that produce an immediate sense of mastery are overweighted; activities that produce real but invisible short-term progress get dropped.
-
-## The foundation: why 40% tactics
-
-### Tactics as the base language
-
-At amateur level chess is not primarily a strategic game. It is first a tactical game. Strategy builds advantages: weak squares, connected pawns, superior piece activity. Tactical combinations convert those advantages into points. And an unseen tactic can erase thirty moves of build-up in one blow.
-
-[Adrian de Groot](https://en.wikipedia.org/wiki/Adriaan_de_Groot), Dutch psychologist, ran the first serious studies of chess thinking in the 1940s. His work was extended by [Chase and Simon](https://doi.org/10.1016/0010-0285(73)90004-2) in 1973 in a landmark study on memory and pattern recognition. Their central conclusion: what separates an expert from a beginner is not raw calculating ability but the number of **patterns**, recurring piece setups, stored in long-term memory.
-
-A grandmaster recognises a mating layout or a knight fork instantly because they have seen thousands. An amateur recalculates from scratch each time. Much of the rating gap comes from that recognition gap.
-
-Tactical patterns are acquired only through repeated practice. Not by reading descriptions. Not only by watching commented games. By solving puzzles, hundreds then thousands of times, until recognition becomes automatic.
-
-### Transfer effects
-
-What tactical work often undervalues: it improves **every phase**. A player with strong tactical vision calculates better in the middlegame, handles active pieces better in endgames, and avoids traps in the opening. Tactics are a meta-tool: the benefit goes far beyond pure combinations.
-
-[Mark Dvoretsky](https://en.wikipedia.org/wiki/Mark_Dvoretsky), one of the twentieth century's most influential trainers, structured training around intensive tactical solving even for already strong players. His argument: calculating discipline decays without practice, like an unused muscle.
-
-## The neglected sibling: why 40% endgames
-
-### Endgames decide results
-
-Every club player knows this script: a well-played game, a material edge after exchanges, and then... uncertainty. How do you convert an extra rook? How do you handle a passed pawn? How do you avoid stalemate in a king-and-pawn ending?
-
-Endgames are the least glamorous and most decisive phase. Training literature agrees: technical errors in endgames cost more points than opening mistakes because they turn winning positions into draws and drawn positions into losses.
-
-[Reuben Fine](https://en.wikipedia.org/wiki/Reuben_Fine), elite American player of the 1940s, wrote: *"To become a good chess player, study the endgame first."* Provocative wording, but it reflects a widespread coaching belief: endgame understanding gives a strategic compass that carries through the rest of the game.
-
-### Endgames teach core principles
-
-What endgame study develops is not only a list of techniques to memorise. It is deep understanding of what pieces do alone: king opposition, rook activity, triangulation, key squares. Once internalised, those mechanisms infuse every phase.
-
-A player who truly understands pawn endgames understands better why certain pawns must be pushed or blocked already in the middlegame. They start playing "toward" a favourable endgame rather than stumbling into one by accident.
-
-Endgame study also teaches something pure tactics do not: **precision in simplicity**. In a four-piece endgame there is nowhere to hide. Every move must be justified. That precision demand, trained in endgames, lifts overall game quality.
-
-## The 20%: openings still have a place
-
-### A foundation, not an encyclopaedia
-
-Cutting openings to 20% does not mean ignoring them. It means studying them **differently**: not as a list of moves to memorise but as grasp of guiding ideas: why this plan? Which piece are we trying to activate? Which weakness are we trying to provoke in the opponent's camp?
-
-That idea-based approach lasts longer, transfers better, and costs less time than line-by-line cramming. It also lets you adapt when your opponent deviates: if you understand your opening's idea you find a reasonable reply. If you only memorised moves you are lost once theory stops.
-
-### At what level do openings really start to matter?
-
-The honest question. Coach consensus: **from about 1800-2000 Elo**, openings begin to measurably affect results because opponents also know theory and can pose problems from move one.
-
-Below that threshold games hardly ever hinge on the opening. They hinge on tactical mistakes and botched endgames. That is where energy should go.
-
-That is not an insult: it is actionable information. It frees time to work where real gains live.
-
-## Applying the rule in practice
-
-### A sample session
-
-If you train one hour per day, 40-40-20 might look like this:
-
-| Block | Time | Suggested activity |
+| Work | Time | Example |
 | --- | --- | --- |
-| Tactics (40%) | 24 min | Puzzle solving (Lichess Puzzles, Chess Tempo) |
-| Endgames (40%) | 24 min | Study one concrete technique plus practical exercises |
-| Openings (20%) | 12 min | Review ideas in one variation, analyse a game you played |
+| Tactics | 24 minutes | Solve a position, then explain the opponent’s defence |
+| Endgames | 24 minutes | Play a basic endgame from both sides |
+| Openings | 12 minutes | Review the first moment you hesitated in a game |
 
-Consistency beats duration. Thirty structured minutes daily beats three unstructured hours on the weekend.
+![An example split for one hour](/images/en/regle-40-40-20-02-session-type.svg)
 
-### Adjust to your profile
+This session is a suggestion. If you have less time, you can spread the subjects across the week rather than tackle all of them every day.
 
-The 40-40-20 split is a starting point, not a rigid prescription. Tune it to weaknesses you have identified. Examples:
+## Openings: no magic threshold
 
-**You often lose material to blunders** → raise tactics to 50-55%, temporarily cut endgames.
+Thresholds of 1600, 1800 or 2000 Elo are not established here by a study. You do not need to wait for a particular rating to understand development, king safety or the plans associated with a pawn structure.
 
-**You reach endgames ahead but fail to convert** → endgames deserve 50% for a defined period.
+Base your decision to explore a variation more deeply on your games. Do you regularly leave the opening without a plan? Do you repeat a mistake you do not understand? Targeted review may then deserve a place. If the position remains playable and you lose a piece later, memorising ten more moves does not directly address that mistake.
 
-**You leave theory after move five and are lost** → raise openings to 30% until you have a solid base on two or three systems.
+## Endgames: learning an identifiable technique
 
-**You mostly play blitz and rapid** → endgames matter less at fast time controls; tactics deserve even more weight.
+Choose a concrete objective: mating with a rook, using the opposition or stopping a passed pawn. Replay the position to check that you can carry out the technique without following the solution.
 
-The goal is a conscious split backed by reasoning, not a default split.
+Half a point saved in an endgame counts just as much towards your score as elsewhere. That does not prove that all endgames deserve exactly 40% of your time, or that they are always more decisive than the opening.
 
-## Criticisms of the rule
+## Tactics: explain before moving on
 
-### No rule fits every level
+In an exercise, look for the opponent’s best defence and explain why other candidate moves fail. After a mistake, identify what you missed: an undefended piece, an open line, a defensive resource?
 
-40-40-20 is a heuristic, not a law. It fits improving players roughly between 800 and 1800 Elo. For master or grandmaster level the split changes radically: openings take a much larger share of work because opponents can punish preparation at a precision amateurs never reach.
+Familiarity can create an impression of mastery. To test it, try solving the position without looking at the answer, then return to it later. This way of working does not constitute a measure of your potential.
 
-[Jonathan Rowson](https://en.wikipedia.org/wiki/Jonathan_Rowson), British grandmaster and author of *Chess for Zebras*, stresses this limit: generic training advice often ignores differences between players. What helps a positional player may be suboptimal for a tactical one. The best split is personalised from real analysis of your own games.
+## Making room for your own games
 
-### Missing game review
+The formula leaves out an essential part of reviewing your own progress: examining what you actually played. You can reserve a slot for that analysis and reduce the other three allocations accordingly. No fourth percentage is imposed here.
 
-A blind spot of the rule: it does not mention analysing your own games, which many coaches see as the strongest lever of all. Analysing real mistakes, understanding not only *which* move was wrong but *why* you played it, does not fit neatly into the three boxes.
+Note a recurring difficulty, choose an exercise that addresses it, and reassess your choice after several games. If your results fluctuate, also consider the time control and your opponents: an Elo change does not measure the quality of the programme in isolation.
 
-An improved version might look like: 30% tactics, 30% endgames, 15% openings, 25% analysis of your own games. At that point you leave the catchy slogan for a personalised approach that needs regular review.
+To organise recovery between sessions, see [the benefits of breaks](/en/blog/benefits-of-breaks-in-chess/). For your relationship with results, see [the psychology of the chess player](/en/blog/chess-player-psychology/).
 
-### Quantity is not quality
+## Sources
 
-Spending 40% of your time on tactics while half-solving puzzles for thirty minutes in the background of a stream produces nothing. Expertise research, especially [Anders Ericsson](https://doi.org/10.1037/0033-295X.100.3.363) on deliberate practice, is clear: **attention quality during training drives improvement, not raw duration.**
-
-One puzzle solved with full attention, genuinely asking why the combination works, beats ten puzzles solved by trial and error without reflection.
-
----
-
-### Summary in one table
-
-| Aspect | What the rule says | Takeaway |
-| --- | --- | --- |
-| Tactics (40%) | Top priority at amateur levels | Daily puzzles; attention quality beats quantity |
-| Endgames (40%) | Chronically neglected; decisive for converting edges | Start with basics: king and pawn, rooks, queen endgames |
-| Openings (20%) | Overrated at low level; matter from ~1800 Elo | Study ideas, not lines; two or three solid systems enough |
-| Limits | Heuristic for improvers, not a universal formula | Adapt to real weaknesses; analyse your own games |
-
----
-
-## Frequently asked questions
-
-**At what level should you take openings seriously?**
-
-Context matters, but most coaches place the threshold around 1600-1800 standard rating. Below that, games are won and lost elsewhere. Exception: if you often face the same opponents who know your habits, minimal prep can still surprise at lower levels.
-
-**How long before results show with this kind of work?**
-
-Tactics tend to show effects relatively fast: many players report fewer gross blunders after four to six weeks of consistent daily work. Endgames take longer to appear in results because endgame positions are rarer. Three months of structured work is usually enough to see a measurable rating difference.
-
-**Lichess Puzzles or Chess Tempo for tactics?**
-
-Both work. Chess Tempo is often preferred for serious work because you can filter tactics (forced mate, material win, defence) and level. Lichess Puzzles is more approachable with a smoother UI. Consistency matters more than platform.
-
-**Should you really study endgames before you can play the middlegame properly?**
-
-That is Fine's classical stance, and it is defensible. Endgames teach real piece values, key squares, and precision in stripped-down positions. Those lessons carry into the middlegame. In practice it is better to advance both in parallel rather than wait until endgames are "finished" before working on the rest.
-
-**Does the rule apply to blitz?**
-
-In pure blitz endgames matter far less (games rarely reach technical endings) and tactics weigh even more. If your long-term goal is improvement, blitz alone is not enough. Blitz trains reflexes; structured training builds understanding.
-
----
-
-**After reading:** for **one week**, time your real tactics / endgames / openings split; compare to the "typical session" table mid-article and adjust **one** lever only.
-
----
-
-## Key takeaways
-
-- Most club players massively overweight openings, where impact on results is weakest at their level
-- Tactics are the best-documented, most immediate lever for improvement: they sharpen calculation, pattern recognition, and accuracy across all phases
-- Endgames are chronically neglected yet they are the phase where technical errors cost the most: won or drawn games slip away in the endgame
-- The 40-40-20 rule is not universal: adjust it for level, style, and your identified weaknesses
-
----
-
-### Sources and references
-
-To go deeper on the ideas in this article:
-
-- **Chase, W. G., & Simon, H. A. (1973).** - [*Perception in chess.*](https://doi.org/10.1016/0010-0285(73)90004-2) *Cognitive Psychology*, 4(1), 55-81. (Foundational study on pattern recognition: grandmasters do not calculate better, they recognise meaningful configurations faster.)
-- **Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993).** - [*The role of deliberate practice in the acquisition of expert performance.*](https://doi.org/10.1037/0033-295X.100.3.363) *Psychological Review*, 100(3), 363-406. (Deliberate practice framework: attention quality during training, not raw hours, drives expertise.)
-- **de Groot, A. D. (1965).** - *Thought and Choice in Chess.* Mouton. (First systematic study of chess thinking; foundation for later cognitive work on the game.)
-- **Nunn, J. (1998).** - *Secrets of Practical Chess.* Gambit Publications. (Practical training and error management; undervaluing openings at lower levels.)
-- **Dvoretsky, M., & Yusupov, A. (1991).** - *Technique for the Tournament Player.* Batsford. (Intensive training centred on tactics and endgames; reference for structured improver coaching.)
-- **Rowson, J. (2005).** - *Chess for Zebras: Thinking Differently about Black and White.* Gambit Publications. (Cognitive biases in chess learning and limits of generic training advice.)
-- **Fine, R. (1941).** - *Basic Chess Endings.* McKay. (Classic endgame reference; opening lines of the introduction on endgames as the foundation of improvement.)
+- Chase, W. G., & Simon, H. A. (1973). *Perception in Chess*. Cognitive Psychology, 4, 55–81. [Article](https://gwern.net/doc/psychology/chess/1973-chase.pdf).
+- Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). *The Role of Deliberate Practice in the Acquisition of Expert Performance*. Psychological Review, 100(3), 363–406. [Article](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf).

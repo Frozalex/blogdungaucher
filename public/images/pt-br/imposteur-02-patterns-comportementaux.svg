@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="titre" xml:lang="pt-BR"><title id="titre">Descrever uma dificuldade antes de nomeá-la</title><rect width="900" height="360" rx="20" fill="#faf8ef" />
+<text x="40" y="38" font-family="Georgia,serif" font-size="23" fill="#252820">Descrever uma dificuldade antes de nomeá-la</text>
+<rect x="40" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="56" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Observação</text>
+<text x="56" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Uma frase dita</text>
+<text x="56" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Uma situação específica</text>
+<rect x="325" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="341" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Interpretação</text>
+<text x="341" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Várias hipóteses</text>
+<text x="341" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Sem teste de cinco sinais</text>
+<rect x="610" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="626" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Conversa</text>
+<text x="626" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Perguntar pela experiência</text>
+<text x="626" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Respeitar as diferenças</text>
+<text x="40" y="310" font-family="system-ui,sans-serif" font-size="15" fill="#5d6555">Os exemplos para reflexão não são um instrumento diagnóstico validado.</text>
+</svg>

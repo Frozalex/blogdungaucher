@@ -14,8 +14,10 @@ const t =
 <div
   id="highlight-popover"
   class="hl-popover"
-  role="tooltip"
+  role="toolbar"
+  aria-label={lang === "en" ? "Selected text actions" : lang === "pt-br" ? "Ações do texto selecionado" : lang === "nl" ? "Acties voor geselecteerde tekst" : "Actions sur le texte sélectionné"}
   aria-hidden="true"
+  inert
   data-share={t.share}
   data-copy={t.copy}
   data-copied={t.copied}
@@ -106,12 +108,14 @@ const t =
       popover.style.top  = `${y}px`;
       popover.classList.add("visible");
       popover.setAttribute("aria-hidden", "false");
+      popover.inert = false;
       if (hideTimer) clearTimeout(hideTimer);
     };
 
     const hide = () => {
       popover.classList.remove("visible");
       popover.setAttribute("aria-hidden", "true");
+      popover.inert = true;
       currentText = "";
     };
 

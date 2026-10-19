@@ -1,166 +1,59 @@
 ---
 heroImageAlt: A close-up of a bowl of water whose surface has just become still again.
-title: "Meditation and Chess: Mindfulness in Service of the Slow Game"
-excerpt: "Meditation won't make you a better calculator. But it changes what you do when you calculate: less mental agitation, more presence with the position. What mindfulness studies say when applied to the chessboard."
-seoTitle: "Meditation and Chess: Mindfulness for Better Play"
-seoDescription: "MBSR, Default Mode Network, emotional regulation: what mindfulness research says about its contribution to chess performance and mental toughness."
+title: "Meditation and Chess: Mindfulness, Studies and Practical Limits"
+excerpt: "Notice where your attention goes and try a short practice if it suits you. MBSR and attention research do not establish better chess calculation or an Elo gain."
+seoTitle: "Meditation and Chess: Studies, Practice and Limits"
+seoDescription: "Mindfulness and chess: try an exercise, understand MBSR, attention and stress studies, and distinguish their findings from improved playing performance."
 enSlug: "chess-and-meditation"
-draft: false
 faq:
-  - question: "Does meditation really make you better at chess?"
-    answer: >-
-      Not directly: it doesn't make you calculate faster or memorize more variations. But it acts on factors
-      that limit performance: mind wandering during the game, post-error rumination, anxiety in critical
-      positions. Goleman and Davidson (2017) show that 8 weeks of regular practice (20 min/day) produce
-      measurable changes in attention and emotional regulation, two pillars of chess performance.
-  - question: "How much meditation per day to see an effect?"
-    answer: >-
-      Effective intervention studies generally use 20 minutes per day for 8 weeks (standard MBSR protocol).
-      Below 10 minutes daily, lasting (trait) effects are weakly documented. State effects (in-session
-      calming) work from 5 minutes, but they're transient. For a chess player, a realistic compromise is
-      15-20 minutes 5-6 days per week.
-  - question: "What type of meditation is most useful for chess?"
-    answer: >-
-      Two complementary approaches: (1) Focused attention meditation (focus on breath, return at each drift):
-      directly trains the sustained concentration muscle. (2) Open monitoring meditation (observe thoughts
-      without engaging): develops metacognitive awareness useful for spotting one's own emotional drifts
-      during a game (anxiety, frustration). The combination of both, alternated, is generally more effective
-      than a single approach.
-  - question: "When to meditate relative to a game?"
-    answer: >-
-      A short session of 5-10 minutes 30-60 minutes before the game seems most useful. It reduces excessive
-      sympathetic activation (anticipatory stress), improves attentional readiness, and creates a 'reset'
-      state before competitive engagement. Meditating immediately before is less effective: too short to
-      install the parasympathetic state, and risks creating a relaxation that doesn't match the needed
-      mobilization.
-  - question: "Do grandmasters meditate?"
-    answer: >-
-      More and more. Magnus Carlsen has mentioned mindfulness practice in several interviews. Fabiano Caruana
-      works with a mental coach who integrates mindfulness elements. The chess movement is following the
-      broader trend in elite sports, where meditation has become a standard component of mental preparation
-      since the 2010s.
+  - question: "Does meditation make you better at chess?"
+    answer: "The studies presented do not predict rating improvement. You can try a short practice to observe attention alongside chess training."
+  - question: "How many minutes a day should I practise?"
+    answer: "No optimal dose for chess is demonstrated. In Hölzel’s MBSR study, guided home exercises lasted 45 minutes and accompanied an eight-week group programme."
+  - question: "Can a ten-minute session be useful?"
+    answer: "Norris and colleagues study effects on attention tasks after a ten-minute session. That finding guarantees neither a lasting effect nor a better game."
+  - question: "When should I try it before a game?"
+    answer: "First try it outside competition at a convenient moment. The cited studies do not establish an ideal interval between meditation and chess."
 ---
 
-The idea that meditating improves cognitive performance is one of those that meet the most skepticism, and the most misplaced enthusiasm. The reality is more precise than either camp: meditation won't make you a faster calculator, but it profoundly changes what you do with the cognitive resources you already have.
+You may know the moment: you calculate a variation, then realise you are replaying your last defeat. Returning to the position becomes a task of its own.
 
-For a chess player, this is a distinction that can be worth dozens of Elo points.
+Mindfulness includes noticing what occupies attention and returning to present experience without judging yourself. That may interest you in its own right. The cited research does not, however, demonstrate Elo gains.
 
-## What Meditation Actually Trains
+## What you can try
 
-Before examining the effects on chess, we need to understand what meditation trains. The word covers several distinct practices that engage different brain circuits:
+Sit comfortably and attend to your breathing without trying to control it. When a thought arrives, notice it, then return to the sensations of breathing. The aim is not to eliminate every thought.
 
-**Focused attention** (*focused attention meditation*). Concentration practice on a single object: usually the breath. Each time attention drifts, you bring it back, without judgment, to the object. This is direct training of the attentional "muscle."
+You can begin with a few minutes outside competition. This is an introductory suggestion, not a programme with validated chess benefits. Simply observe how you experience it. You can stop if it makes you uncomfortable.
 
-**Open monitoring** (*open monitoring*). Practice of observing thoughts, emotions, and bodily sensations as they arise, without identifying with them or judging them. Trains metacognition: awareness of one's own mental states.
+After a mistake in a game, one adaptation is to notice your reaction, then reformulate the task: which threat needs addressing now? Nothing guarantees immediate disappearance of frustration. You may still make a useful decision while disappointed.
 
-**Loving-kindness meditation** (*loving-kindness*). Deliberate cultivation of positive emotions toward oneself and others. Different effects, more useful for emotional regulation and interpersonal relationships.
+## MBSR: more demanding than a short session
 
-For chess, the first two are the most directly relevant.
+Hölzel and colleagues (2011) follow 16 participants before and after eight weeks of MBSR, with a waiting-list group of 17 people. The programme includes group sessions and 45-minute recordings for daily home practice. Reducing it to “20 minutes, six days a week” would misdescribe this study.
 
-## The Neuroscientific Evidence: What Meditation Changes in the Brain
+The authors observe increased grey-matter concentration in the left hippocampus, as well as the posterior cingulate cortex, temporoparietal junction and cerebellum. The insula does not show the expected change in this study. These imaging findings in a small sample are neither a chess-calculation test nor proof of playing improvement.
 
-### Lazar (2005): Thicker Gray Matter
+## Ten minutes and attention: a laboratory finding
 
-[Sara Lazar](https://www.nmr.mgh.harvard.edu/~lazar/Site/about.html) (Harvard Medical School) published in 2005 in *NeuroReport* the first structural MRI study comparing regular meditators (>9 years of practice) and non-meditators. Results: meditators have a **thicker prefrontal cortex and right insular cortex**.
+Norris, Creem, Hendler and Kober (2018) compare ten minutes of guided meditation with a control activity in two studies involving beginners. They report differences on certain attention-task measures. The article also examines how these effects vary between participants.
 
-This is not an intervention study (so no proven causality), but it is the first solid signal that regular meditation practice is associated with measurable structural changes: not just a temporary mental state.
+This warrants distinguishing a measurement immediately after a session from lasting change. It does not establish an identical gain in all players or an ideal time to meditate before a round.
 
-### Holzel (2011): 8 Weeks Is Enough
+## Stress: keeping conclusions proportionate
 
-The most methodologically convincing study is by [Britta Holzel](https://www.hoelzel-britta.de) and colleagues (2011, *Psychiatry Research*). Intervention design: 16 participants followed an 8-week MBSR program (20 min/day), with MRI before and after. Matched control group.
+Goyal and colleagues’ review (2014) finds modest improvements in anxiety, depression and pain in some clinical populations. It does not demonstrate that a session before a game is equivalent to medication. The included studies provide limited examination of adverse effects: “no side effects” would be an unjustified promise.
 
-Results: significant increase in **gray matter density** in the left hippocampus (memory), posterior cingulate cortex, temporoparietal junction, and cerebellum. Reduction in the right amygdala (emotional reactivity) among participants who reported the greatest stress reduction.
+Nor do these findings calculate how long you would be distracted in a game. A percentage of mind-wandering observed in everyday life cannot mechanically be applied to four hours of chess.
 
-This is an important result: 8 weeks is short. The brain plasticity observed in healthy adults in such a short time is exceptional.
+## Making room for practice without making it compulsory
 
-### Brewer (2011): Less Mind Wandering
+If you want to try it, choose an easily repeatable moment and record your experience briefly. Were you restless? Did you notice a thought without following it? Did you dislike the session? These observations belong to you; they are not a ranking of good and bad meditators.
 
-[Judson Brewer](https://drjud.com) (Yale) published in 2011 in *PNAS* an fMRI study comparing expert meditators (>10,000 hours of practice) and novices. Results: expert meditators show a **22% reduction** in Default Mode Network (DMN) activations: precisely the network involved in daydreaming, rumination, and mental wandering.
-
-For a chess player, this is the most directly actionable effect. If the mind wanders 46.9% of the time on average (Killingsworth & Gilbert, 2010), reducing this percentage during a 4-hour classical game represents an enormous attentional gain: potentially more important than any short-term technical improvement.
-
-## Mind Wandering in Chess: A Hidden Cost
-
-Consider a 4-hour classical game. At 47% mind wandering, your brain spends approximately **1 hour and 53 minutes in a distracted state**, even if you are physically present at the board. These moments include:
-
-- Thinking about what you'll eat after the game
-- Mentally replaying the last blunder
-- Anticipating the disappointment of a loss
-- Mentally checking the standings and their implications
-- Revisiting conversations or situations from the day before
-
-None of these moments help you find the right move. Most actively harm you by consuming cognitive resources without contributing to the position in front of you.
-
-Meditation does not eliminate these thoughts: it develops the **ability to notice them quickly** and return to the task. The difference is not quantitative (having fewer parasitic thoughts) but qualitative (returning quickly when they occur).
-
-## Emotional Regulation After a Blunder
-
-One of the most useful effects of meditation for chess players is **post-error emotional recovery**.
-
-Studies by [Richard Davidson](https://richardjdavidson.com) (University of Wisconsin) on left/right prefrontal asymmetry show that meditators have an activation ratio favoring the left prefrontal cortex: associated with positive affect and emotional flexibility. Concretely: after a stressful event (social stress test, exposure to negative images), meditators return to their baseline state faster than non-meditators.
-
-In chess, the blunder is the typical stressful event. The ability to process it quickly and return to the objective position (without rumination) is a skill directly trainable through meditation.
-
-[Daniel Goleman](https://www.danielgoleman.info) and Richard Davidson synthesized these results in *Altered Traits* (2017), distinguishing:
-
-- **State effects**: temporary changes during or immediately after a meditation session
-- **Trait effects**: lasting changes that persist beyond the practice, after several months of training
-
-For chess, state effects are useful (10 minutes before a game) but trait effects are decisive: they transform the player's overall relationship to competitive pressure.
-
-## How to Integrate a Meditation Practice
-
-The standard MBSR protocol (Kabat-Zinn, 1990) is scientifically validated and accessible: **20 minutes per day, 6 days per week, for 8 weeks**.
-
-For a chess player just starting, a gentler progression is possible:
-
-**Weeks 1-2:** 5-10 minutes per day of focused attention meditation. Focus on the breath. When attention drifts, gently return to the breath. No judgment, no goal other than noticing the drift and returning.
-
-**Weeks 3-4:** 10-15 minutes per day. Introduce 5 minutes of open monitoring (observing passing thoughts without attaching to them).
-
-**Weeks 5-8:** 15-20 minutes per day. Combine both practices according to the day's feel.
-
-**Before an important game:** 5-10 minutes of focused meditation, about 30-60 minutes before the start. Not right before: allow time for the transition.
-
-**Useful apps:** [Calm](https://www.calm.com), [Headspace](https://www.headspace.com), [Waking Up](https://wakingup.com) (Sam Harris, more academic). Guided voice helps enormously at the beginning.
-
-## What Meditation Will Not Do
-
-Important honesty: meditation is not a magic potion for chess. Here is what it **will not do**:
-
-**It will not make you calculate more variations.** Raw calculation capacity depends on working memory, tactical experience, and familiarity with the position type. Meditation does not directly affect these variables.
-
-**It will not replace chess training.** A regular meditator who does not work on openings and tactics will not improve their Elo.
-
-**It will not eliminate the disappointment of a defeat.** The goal is not the absence of emotion: it is better management of emotion. You will still feel frustration; you will spend less time stuck in it.
-
-**It will not be immediate.** The first weeks are often uncomfortable: the mind rebels, the urge to "do something useful" during the 20 minutes, persistent skepticism. These resistances are normal and part of the practice.
-
-## The Scientific Verdict
-
-Meditation is one of the most solidly documented performance psychology interventions. Meta-analyses (Goyal et al., 2014, *JAMA Internal Medicine*) show clinically significant effects on anxiety, depression, and pain, with effect sizes comparable to certain psychotropic medications for moderate conditions.
-
-For cognitive performance (attention, working memory, emotional regulation), effects are also documented, moderate but robust (Sedlmeier et al., 2012, *Psychological Bulletin*, meta-analysis of 163 studies).
-
-For chess specifically, few studies exist yet. But the mechanisms: DMN reduction, improved sustained attention, better emotional regulation: are precisely the factors that limit chess performance beyond technical knowledge.
-
-It is one of the rare interventions where the cost-benefit ratio is extremely favorable: 20 minutes per day for 8 weeks, free, with no side effects, and potentially transformative for a player who plateaus for mental rather than technical reasons.
+Keep other reference points too: [sleep](/en/blog/chess-and-sleep/), breaks and reviewing your own games. You do not have to turn every activity into a performance tool. Something you enjoy can have a place without a promised result at the next tournament.
 
 ## Sources
 
-- Holzel, B. K., et al. (2011). Mindfulness practice leads to increases in regional brain gray matter density. *Psychiatry Research: Neuroimaging*, 191(1), 36-43.
-- Brewer, J. A., et al. (2011). Meditation experience is associated with differences in default mode network activity and connectivity. *PNAS*, 108(50), 20254-20259.
-- Lazar, S. W., et al. (2005). Meditation experience is associated with increased cortical thickness. *NeuroReport*, 16(17), 1893-1897.
-- Goleman, D., & Davidson, R. J. (2017). *Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body*. Avery.
-- Kabat-Zinn, J. (1990). *Full Catastrophe Living*. Delacorte.
-- Goyal, M., et al. (2014). Meditation programs for psychological stress and well-being: A systematic review and meta-analysis. *JAMA Internal Medicine*, 174(3), 357-368.
-- Sedlmeier, P., et al. (2012). The psychological effects of meditation: A meta-analysis. *Psychological Bulletin*, 138(6), 1139-1171.
-- Norris, C. J., et al. (2018). Brief mindfulness meditation improves attention in novices. *Frontiers in Human Neuroscience*, 12, 315.
-
-## Key Takeaways
-
-- Meditation modifies the **Default Mode Network** (-22% activation) → less rumination, more presence
-- 8 weeks at 20 min/day produce **measurable brain changes** on structural MRI (Holzel 2011)
-- Mindfulness improves **emotional regulation** post-error: invaluable after a blunder
-- **A single 10-minute session** before a task improves attention (state effect): relevant for pre-game preparation
-- Meditation **does not replace** chess training: it amplifies its yield by removing mental brakes
+- Hölzel, B. K., et al. (2011). *Mindfulness practice leads to increases in regional brain gray matter density*. Psychiatry Research: Neuroimaging, 191(1), 36–43. [Article](https://greatergood.berkeley.edu/images/uploads/Holzel-Mindfulness_and_Brain_Gray_Matter_Density.pdf).
+- Norris, C. J., Creem, D., Hendler, R., & Kober, H. (2018). *Brief Mindfulness Meditation Improves Attention in Novices: Evidence From ERPs and Moderation by Neuroticism*. Frontiers in Human Neuroscience, 12, 315. [Article](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2018.00315/full), with its [corrigendum](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2018.00342/full).
+- Goyal, M., et al. (2014). *Meditation Programs for Psychological Stress and Well-being: A Systematic Review and Meta-analysis*. JAMA Internal Medicine, 174(3), 357–368. [Article](https://library.scottbarrykaufman.com/uploads/2019/08/goyal2014.pdf).

@@ -11,7 +11,7 @@ import Footer from "../components/Footer.astro";
 import BackToTop from "../components/BackToTop.astro";
 import CookieConsent from "../components/CookieConsent.astro";
 
-import { siteConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, enStaticRoutes, ptBrStaticRoutes, isIndexedLang } from "../data/site";
+import { siteConfig, adsenseConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, enStaticRoutes, ptBrStaticRoutes, isIndexedLang } from "../data/site";
 import { swapLangPrefix, withTrailingSlash } from "../utils/lang-paths";
 
 // Préchargement de la police de titre (Space Grotesk, subset latin) : présente dans le H1/LCP de
@@ -136,8 +136,11 @@ const inLanguage = lang === "en" ? "en-US" : lang === "pt-br" ? "pt-BR" : lang =
 
 /** Politique d'indexation : une page est noindex si elle le demande explicitement,
  *  ou si sa langue n'est pas dans `INDEXED_LANGS` (voir `src/data/site.ts` —
- *  seul le FR est exposé le temps de la demande AdSense). */
+ *  FR, EN et PT-BR sont exposés ; NL reste en attente). */
 const effectiveNoindex = noindex || !isIndexedLang(lang);
+// Les pages utilitaires, légales, incomplètes et les replis sans traduction
+// ne chargent pas le SDK susceptible d'afficher des annonces automatiques.
+const allowAds = adsenseConfig.enabled && !effectiveNoindex;
 
 // Fallback: si une page "article" oublie de fournir structuredData,
 // on injecte un BlogPosting minimal pour ne jamais "perdre" le schema.org.
@@ -212,7 +215,7 @@ const umamiId      = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID ?? "";
 const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.blogdungaucher.com";
 ---
 <!DOCTYPE html>
-<html lang={lang} data-server-lang={lang}>
+<html lang={lang} data-server-lang={lang} data-ads-eligible={allowAds ? "true" : "false"}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -237,13 +240,10 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
       });
     </script>
 
-    {/* ── AdSense : chargement inconditionnel du SDK, sur toutes les pages et toutes
-         les langues, pages légales comprises (exigé par Google pour la revue de site).
-         Aucune condition de consentement en amont : c'est le Consent Mode ci-dessus,
-         puis le CMP Google, qui gouvernent cookies et personnalisation.
-         Aucune unité `ins.adsbygoogle` n'est posée et les auto ads ne sont pas
-         activées tant que `adsenseConfig.live` vaut false (cf. src/data/site.ts). */}
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244325018333025" crossorigin="anonymous"></script>
+    {/* Le code de vérification du compte reste présent sur toutes les pages.
+        Le SDK publicitaire est limité aux pages indexables. `live` gouverne
+        seulement nos emplacements ; les annonces automatiques dépendent du compte. */}
+    {allowAds && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseConfig.client}`} crossorigin="anonymous"></script>}
 
     <meta name="description" content={description} />
     <meta name="author" content="Le Gaucher" />
@@ -363,7 +363,13 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     )}
 
     <title>{title}</title>
-    <ClientRouter />
+    {/* Une navigation complète isole le SDK publicitaire des pages exclues. */}
+    {!allowAds && <ClientRouter />}
+    {allowAds && <script is:inline>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.dispatchEvent(new Event("astro:page-load"));
+      }, { once: true });
+    </script>}
     <link rel="canonical" href={canonicalUrl} />
     {omitEnDeAlternateLinks ? (
       <>

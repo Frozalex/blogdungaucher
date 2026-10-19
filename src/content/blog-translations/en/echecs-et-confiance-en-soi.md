@@ -1,148 +1,62 @@
-﻿---
+---
 heroImageAlt: Two stacks side by side, one built course by course, the other
   wobbling off balance.
-title: "Chess and Self-Confidence: What the Board Actually Builds"
-excerpt: "Confidence in chess doesn't come from a good result, it's built move by move. What performance psychology says about self-efficacy, mindset, and the difference between solid confidence and fragile arrogance."
-seoTitle: "Chess and Self-Confidence: Building Solid Self-Esteem on the Board"
-seoDescription: "How chess builds self-confidence. Self-efficacy (Bandura), growth mindset (Dweck), post-game analysis: performance psychology applied to the chess player."
+title: "Chess and Self-Confidence: Building Specific, Testable Expectations"
+excerpt: "Confidence and skill are different. How self-efficacy can help you frame specific expectations, examine your practice and keep ratings separate from personal worth."
+seoTitle: "Chess and Self-Confidence: Specific Beliefs You Can Check"
+seoDescription: "Self-efficacy, game analysis and ratings: practical ways to examine confidence in chess without promising general self-esteem or guaranteed improvement."
 enSlug: "chess-and-self-confidence"
-draft: false
 faq:
-  - question: "Do chess really help develop self-confidence?"
-    answer: >-
-      Yes, but conditionally. Practice alone isn't enough: it's how you handle defeats and post-game analysis
-      that builds lasting confidence. Studies on self-efficacy (Bandura, 1997) show that progressive mastery
-      experiences (not easy wins) are the primary driver of confidence.
-  - question: "What's the difference between self-confidence and arrogance in chess?"
-    answer: >-
-      Confidence rests on knowledge of your own processes (preparation, calculation, time management) and
-      stays stable in the face of defeat. Arrogance is confidence built on comparison with others: it
-      collapses at the first stronger opponent. Grandmasters describe a process-oriented confidence: 'I
-      prepared this opening well', not 'I'm better than him'.
-  - question: "How do I rebuild confidence after a losing streak?"
-    answer: >-
-      Three documented steps: (1) analyze each game to identify factual errors rather than generalize ('I
-      missed that pin' vs 'I'm useless'); (2) return to positions of strength: work on mastered endgames or
-      tactics for positive mastery experiences; (3) separate identity from performance. Sport psychologist
-      Kenneth Kaufman distinguishes the result-oriented ego (fragile) from the competence-oriented ego
-      (resilient).
-  - question: "Does Elo impact self-confidence?"
-    answer: >-
-      Heavily, and not always positively. The Elo rating is visible, public, and quantified: which makes it
-      an intense social comparison tool. Social comparison research (Festinger, 1954) shows it fuels anxiety
-      when ascending (looking at those above). Good use of Elo is longitudinal: comparing your own
-      progression over time, not against a particular opponent.
-  - question: "Does growth mindset really apply to chess?"
-    answer: >-
-      Yes. Carol Dweck's (Stanford) research on mindset has been tested in many competitive contexts. Players
-      with a fixed mindset ('I'm a good player') avoid stronger opponents to protect their image. Players
-      with a growth mindset ('this game teaches me something') deliberately choose stronger opponents. The
-      second profile progresses significantly faster long-term.
+  - question: "Does confidence guarantee better play?"
+    answer: "No. A confident belief can be inaccurate. Look for concrete evidence in your work and games."
+  - question: "How can I return after several losses?"
+    answer: "Choose a few games to analyse and a specific difficulty to work on. This practical approach does not guarantee a result in the next round."
+  - question: "Did Bandura study this method in chess?"
+    answer: "The 1977 text presents a general framework for self-efficacy and behavioural change. Its applications to chess are proposed ways of working."
 ---
 
-There's a persistent misconception in chess clubs: confidence comes from victories. You win, you feel good, you play better. It's logical, even seductive. It's also largely false.
+You can feel confident before a game and miss a simple tactic. You can also doubt yourself and find an excellent defence. Confidence and competence interact, but they are not interchangeable.
 
-Players who build lasting confidence do exactly the opposite: they cultivate a healthy relationship with defeat, and that's what makes them solid. Fragile confidence, the kind that relies on results, collapses at the first difficult tournament. Robust confidence, the kind that relies on process, endures.
+To work usefully, ask a more precise question than “Am I a good player?”: what do I think I can do in this position?
 
-## Self-Efficacy: The Right Definition of Confidence
+## Self-efficacy: a belief tied to a situation
 
-Psychologist [Albert Bandura](https://en.wikipedia.org/wiki/Albert_Bandura) (Stanford) spent his career disentangling what we vaguely call "confidence." His central concept, **self-efficacy**, is more precise: it's the belief in one's ability to *execute a specific behavior in a given context* to achieve a result.
+Bandura (1977) proposes the concept of self-efficacy: expectations about one’s ability to carry out an action. His framework distinguishes mastery experiences, observing others, verbal persuasion and physiological states as sources of information.
 
-It's not "I'm confident" in general. It's "I'm capable of correctly calculating a 6-move variation in a closed middlegame." The distinction is fundamental.
+This theoretical text draws on work concerning behavioural change. It is not a study showing that expert athletes’ confidence predicts performance better than talent, nor a validation of a chess protocol.
 
-Bandura showed that self-efficacy predicts performance better than general confidence or even objective talent. Why? Because it's calibrated on real skills. A player who overestimates their self-efficacy (arrogance) under-prepares. A player who underestimates it (anxiety) over-prepares or gives up.
+In chess, you can use this distinction to formulate a testable expectation: “I can explain the defence in this endgame” is more precise than “I should beat them”. You still need to check the endgame: a specific belief can also be poorly calibrated.
 
-### The Four Sources of Self-Efficacy
+## Building concrete reference points
 
-Bandura identifies four mechanisms that feed or destroy self-efficacy:
+Choose a problem you want to handle better: recognising a tactical pattern, calculating a forcing line or understanding a pawn structure. After a session, note what you can explain without looking at the solution.
 
-**1. Mastery experiences.** The most powerful source. Every time you solve a tactical problem you couldn't have solved three months ago, your brain registers proof of competence. It's not a victory against an opponent (which depends on external factors), it's a victory against an objective problem.
+A success can provide a reference point. A mistake can identify a current limitation. Neither sums up your ability in every area.
 
-**2. Vicarious learning.** Observing a player of similar level succeed at something difficult increases your sense of being able to do it too. That's why clubs with mixed levels are often more formative than homogeneous groups.
+If an exercise becomes too easy because you know the answer, change the position or ask for a justification. Recognising a solution is not necessarily the ability to find it in a new situation.
 
-**3. Social persuasion.** What a coach or partner tells you has a real impact on your self-efficacy, but the effect is asymmetric: a negative comment damages more than a positive one builds.
+## After a losing streak
 
-**4. Physiological state.** Your anxiety level at the time of playing modulates your self-efficacy. A player who interprets pre-tournament nervousness as danger uses it against themselves. A player who interprets it as activation uses it for themselves.
+Start with a few games rather than a global conclusion. Did you miss similar threats? Spend time without a precise question? Misunderstand the transition into an endgame?
 
-## Fixed Mindset vs Growth Mindset
+You can ask a partner to help distinguish a technical mistake from an interpretation about yourself. “I missed that intermediate check” suggests something to work on. “I cannot calculate” goes beyond what the game demonstrates.
 
-[Carol Dweck](https://en.wikipedia.org/wiki/Carol_Dweck) (Stanford) spent decades studying how beliefs about intelligence influence performance. Her conclusion: the belief that abilities are fixed creates a protective behavior that sabotages progression.
+[Post-game analysis](/en/blog/how-to-analyze-chess-games/) is a proposed way of working. It is not established here as the best scientific method for building confidence, nor as a guarantee of improvement.
 
-People with a **fixed mindset**:
-- Avoid challenges that risk revealing their limits
-- Interpret effort as a sign of weakness
-- Give up in the face of obstacles
-- Feel threatened by others' success
+## Using ratings with perspective
 
-People with a **growth mindset**:
-- Deliberately choose stronger opponents to learn
-- See effort as the normal path to mastery
-- Persist through obstacles
-- Draw inspiration from others' success
+A rating summarises results within a system and time control. It measures neither your personal worth nor every skill you have. A rise or fall deserves to be viewed in context: activity, opponents, period and number of games.
 
-In chess, the fixed mindset produces a very recognizable phenomenon: the player who avoids rated games to not lose Elo points. Elo, in this logic, has become an indicator of personal value, something to protect rather than a measurement tool.
+Comparing yourself with your past can help, but comparison with an opponent can also inform preparation. There is no need to condemn one interpretation to keep the other.
 
-## Elo: Thermometer or Judge?
+Doubts about belonging are discussed separately in the article on [impostor syndrome](/en/blog/impostor-syndrome-in-chess/). Knowing your technical difficulties and feeling that you belong are different questions.
 
-The [Elo system](https://en.wikipedia.org/wiki/Elo_rating_system) is a remarkable invention of applied statistics. What it isn't: a measure of personal value, intelligence, effort invested, or potential. It's a probabilistic snapshot of your relative performance.
+## Before the next game
 
-The problem is that the human brain is wired for social comparison. [Leon Festinger](https://en.wikipedia.org/wiki/Leon_Festinger) documented in 1954 that humans constantly evaluate their worth relative to others, and that this comparison is particularly acute when it's quantified, public, and continuous. Elo checks all these boxes.
+Choose a goal you can put into practice: examine the opponent’s threat, compare your candidates, keep some time in reserve. A result goal can remain motivating, but you do not control its achievement alone.
 
-**An Elo that rises through good game decisions**: robust confidence, rooted in competence.
-
-**An Elo that rises because you avoid difficult opponents**: artificial confidence, which collapses at the next serious tournament.
-
-## Post-Game Analysis: The Best Documented Tool
-
-If you had to choose a single practice to build lasting chess confidence, systematic post-game analysis would be the strongest candidate.
-
-Why? Because it transforms an emotionally charged experience (a game, especially a loss) into factual data. And that's exactly what players with a growth mindset do naturally, and what others avoid.
-
-Effective post-game analysis follows a precise protocol:
-
-**1. Analyze without engine first.** Replay the game mentally, note your reasoning at key moves. The goal is to understand *your* logic, not just what was "objectively" correct.
-
-**2. Identify decision moments, not just errors.** A blunder is often the symptom of a reasoning error earlier in the game. Look for where your thinking diverged.
-
-**3. Formulate specific conclusions, not general ones.** "I underestimated the strength of his Knight on c5 because I was only calculating direct threats" is a useful conclusion. "I'm bad at middlegames" is not.
-
-**4. Use the engine last.** Stockfish to verify your variations, not to replace your thinking.
-
-## Chess as Your Confidence Laboratory
-
-Chess is one of the best games for building real, lasting confidence, because chess provides direct feedback on every decision you make. Unlike many areas of life, chess shows you clearly after each game whether your play improved and where your chess skills are developing.
-
-### Play Chess to Build Genuine Skills
-
-The best way to help yourself grow as a player is to play chess consistently over years. Playing chess games regularly, good games, bad games, easy games, and hard games, builds your chess pattern recognition step by step. Good chess players spend years playing chess against opponents at every level: beginners who help you practice techniques, peers who challenge you at your level, and stronger players who expose the gaps in your chess skills.
-
-When you play chess games, focus on learning rather than on results. Chess helps you practice this attitude because chess is so concrete: every chess game gives you specific moves to review, specific mistakes to understand, specific improvements to make. Good chess training is not about playing perfect chess, it's about playing games, making mistakes, and learning from those mistakes step by step.
-
-### Chess Mistakes Are Data, Not Failures
-
-Confident chess players feel differently about mistakes than anxious players do. When you make mistakes in chess games, and every chess player makes mistakes, even the best players in the world, the confident response is to treat those mistakes as data. Going through your chess games move by move, asking yourself why you played each move, helps you learn faster than any other method. This is the best way to help yourself improve.
-
-Chess improvement requires honest work on your mistakes. When you study your chess mistakes, you learn to focus on the specific chess skills that need development rather than making general judgments about your ability. "I underestimated the strength of his knight" is a useful chess observation. "I'm bad at chess" is not. This focused approach to chess mistakes builds the step-by-step improvement that creates lasting confidence.
-
-### The Chess Confidence Loop
-
-Playing chess regularly creates a self-reinforcing confidence loop. You play chess games, you study what went wrong, you improve specific chess skills, you feel your chess getting better, and that feeling helps you play more confidently in the next chess tournament. Over years of playing chess this way, the chess confidence loop compounds: players who commit to chess training consistently feel genuinely confident at the board, not because they win every chess game, but because they know their chess improvement is in their own hands.
-
-The best chess players in the world are confident not because chess is easy for them, but because they have spent years building chess skills through dedicated training and honest work. Play chess, study chess, learn from your chess mistakes, and focus on the process. That is the best way to help yourself feel genuinely confident over a chess board.
+You can feel nervous without concluding that everything will go badly. Try a simple routine and see whether it helps you begin. Confidence does not require the absence of doubt; it can leave room for verification.
 
 ## Sources
 
-- Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. *Psychological Review*, 84(2), 191-215.
-- Bandura, A. (1997). *Self-Efficacy: The Exercise of Control*. W.H. Freeman.
-- Dweck, C. S. (2006). *Mindset: The New Psychology of Success*. Random House.
-- Festinger, L. (1954). A theory of social comparison processes. *Human Relations*, 7(2), 117-140.
-- Kross, E., & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. *Advances in Experimental Social Psychology*, 55, 81-136.
-- Kasparov, G. (2007). *How Life Imitates Chess*. Bloomsbury.
-
-## Key Takeaways
-
-- Lasting confidence rests on **self-efficacy** (believing in your ability to execute *this* specific process), not on general self-esteem
-- The **growth mindset** (Dweck, 2006) transforms every defeat into information: measurable and trainable
-- **Elo is a thermometer**, not a judge: confusing it with your personal value is the central mechanism of chess impostor syndrome
-- **Progressive mastery experiences** (not easy wins) are the primary driver of lasting confidence (Bandura, 1997)
-- Rigorous **post-game analysis** is the best-documented practice for building pressure-resistant confidence
+- Bandura, A. (1977), “Self-efficacy: Toward a Unifying Theory of Behavioral Change”, *Psychological Review*, 84(2), 191–215. [Full text](https://dradamvolungis.com/wp-content/uploads/2011/06/self-efficacy-unifying-theory-of-behavioral-change-bandura-1977.pdf), DOI: 10.1037/0033-295X.84.2.191.

@@ -1,8 +1,6 @@
 ---
 title: "Sujet Grand Oral NSI : En quoi l'élagage alpha-bêta illustre-t-il l'optimisation d'une recherche arborescente ?"
-excerpt: >-
-  Sujet entièrement rédigé pour le Grand Oral spécialité NSI : optimisation algorithmique, élagage alpha-bêta,
-  réduction de complexité O(b^d) à O(b^(d/2)), code Python commenté. Texte de 10 minutes prêt à réciter.
+excerpt: "Une fiche de révision pour expliquer une coupure alpha-bêta, sa garantie à profondeur fixée et les limites du gain de calcul, avec renvoi au guide NSI."
 publishDate: "2026-05-08"
 category: grand-oral
 featured: false

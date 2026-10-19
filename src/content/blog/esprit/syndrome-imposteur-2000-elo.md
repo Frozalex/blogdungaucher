@@ -38,9 +38,9 @@ La difficulté pratique apparaît lorsque tu transformes ton objectif en obligat
 
 Un autre facteur spécifique aux échecs est la nature fluctuante du classement Elo. Contrairement à un diplôme ou une promotion, l'Elo peut monter et descendre. La semaine où tu as franchi 2000, tu as peut-être joué les meilleures parties de ta vie. Mais tu sais que dans deux semaines, après une série de mauvaises parties, tu pourrais redescendre à 1950.
 
-Ce caractère volatile renforce l'impression que le chiffre "ne t'appartient pas vraiment". Si c'était une compétence stable, elle ne fluctuerait pas autant. En réalité, les fluctuations de classement sont la norme statistique, pas une preuve d'imposteur. Mais le cerveau en mode syndrome de l'imposteur interprète chaque descente comme une "révélation de la vérité" et chaque montée comme de la chance.
+Une variation peut donner l’impression que le chiffre ne t’appartient pas vraiment. Le classement reste une estimation actualisée par des résultats, distincte d’une mesure directe de toutes tes compétences. Lire une baisse comme une révélation et une hausse comme de la chance est une interprétation possible, pas une réaction cérébrale universelle.
 
-![Fluctuations normales de l'Elo vs. interprétation de l'imposteur : chaque montée est vue comme de la chance, chaque descente comme la révélation du vrai niveau, alors que les oscillations sont statistiquement prévues par le système.](/images/imposteur-2000-02-decalage-subjectif.svg)
+![Classement et expérience : deux informations](/images/imposteur-2000-02-decalage-subjectif.svg)
 
 ## Ce que tu peux observer après le franchissement
 
@@ -58,19 +58,19 @@ Pour interpréter l’évolution, garde le même classement de référence et re
 
 Une confusion centrale dans le syndrome de l'imposteur aux échecs est la notion de "mériter" son classement. Beaucoup de joueurs pensent qu'il faudrait pouvoir reproduire à la demande, de façon parfaitement consistante, leur niveau maximum.
 
-En réalité, le système Elo est une estimation statistique. Un joueur à 2000 Elo est un joueur dont l'espérance de résultat contre d'autres joueurs de 2000 est de 50%. Pas 100%. Pas même 70%. Les variations de performance, les "mauvais jours", les parties jouées sous optimales font partie intégrante de ce que signifie être à 2000 Elo.
+Dans le modèle Elo, deux joueurs de même classement ont un score attendu de 50 % l’un contre l’autre, en comptant les nulles pour un demi-point. C’est une attente du modèle, pas la garantie qu’un joueur donné obtiendra exactement ce score. Les résultats et le classement peuvent varier.
 
-Autrement dit : perdre contre un joueur à 1900 à un moment de forme basse ne prouve pas que tu "n'es pas vraiment" à 2000. C'est exactement ce que le système Elo prédit.
+Perdre une partie contre un joueur classé 1900 ne suffit donc pas à invalider un classement de 2000. Le modèle autorise ce résultat ; il ne permet pas d’en déduire seul la forme ou le niveau exact des deux personnes.
 
 ## Comment consolider psychologiquement un nouveau niveau
 
-La consolidation psychologique d'un nouveau niveau de jeu prend du temps et nécessite des stratégies spécifiques.
+Les pistes qui suivent sont des propositions de réflexion personnelle, sans délai de consolidation ni efficacité démontrée ici pour ce palier.
 
-**L'exposition répétée.** Jouer dans des conditions qui correspondent à ton niveau, y compris les tournois officiels, même si c'est inconfortable. Chaque expérience réussie à ce niveau contribue à la mise à jour interne du modèle de soi.
+**Des expériences à ton niveau.** Tu peux choisir des parties et des tournois adaptés à ton projet, puis noter ce que tu y apprends. Cela ne garantit pas une modification particulière de ton regard sur toi-même.
 
-**Le journal de performances.** Documenter les parties bien jouées, les décisions correctes, les analyses solides. Le syndrome de l'imposteur bénéficie d'une mémoire sélective (les erreurs sont mémorisées, les succès minimisés). Le journal crée une archive objective qui contrebalance ce biais.
+**Le journal de performances.** Note des décisions réussies et des erreurs, avec leurs positions et leurs circonstances. Ce relevé donne des exemples à revisiter ; il n’est ni une archive parfaitement objective ni un traitement dont l’effet serait établi ici.
 
-**Séparer l'identité du classement.** "Je joue aux échecs à un niveau de 2000 Elo" est différent de "Je suis un joueur de 2000 Elo". La première formulation est une description de performance. La seconde est une identité. Garder la première posture réduit les enjeux psychologiques de chaque partie.
+**Séparer l’identité du classement.** Tu peux essayer de décrire un classement comme un repère de performance plutôt que comme une définition de toi-même. Observe si cette formulation te convient, sans lui attribuer une réduction garantie de la pression.
 
 **Accepter la variance.** Comprendre viscéralement (pas seulement intellectuellement) que les fluctuations de classement sont normales et prévues par le système, pas des révélations de ta "vraie" valeur.
 

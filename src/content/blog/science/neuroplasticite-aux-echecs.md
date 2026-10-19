@@ -54,6 +54,7 @@ heroImage:
   src: /images/blog/neuroplasticite-aux-echecs-hero.webp
   alt: Une corde tressée se défait puis se recompose en nouvelles ramifications.
 ogImage: /images/og/neuroplasticite-aux-echecs-og.webp
+
 ---
 
 Tape « échecs cerveau » dans un moteur de recherche. Tu vas tomber, en boucle, sur la même phrase : les échecs **recâblent** ton cerveau. Parfois avec un mot savant en renfort, neuroplasticité, et deux études en caution : les chauffeurs de taxi londoniens et les jongleurs.
@@ -160,7 +161,7 @@ Trois raisons, et aucune n'a à voir avec la solidité des preuves.
 
 ## Quoi faire de tout ça
 
-**Ne choisis pas les échecs pour ton cerveau.** Choisis-les parce que le jeu est beau, difficile et sans fin. C'est une raison suffisante, et c'est la seule qui tienne dix ans.
+**Choisir le jeu pour lui-même.** Tu peux aimer les échecs pour leur beauté, leur difficulté ou les rencontres qu’ils permettent. Ces raisons n’ont pas besoin d’une promesse de bénéfice cérébral ; leur importance reste personnelle.
 
 **Méfie-toi de « recâbler ».** Le verbe n'a pas de contenu vérifiable. Devant toute affirmation de bénéfice cognitif, pose les trois questions : quel changement précis, mesuré comment, et comparé à quel groupe témoin. La troisième est presque toujours celle qui manque.
 

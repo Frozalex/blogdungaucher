@@ -18,9 +18,9 @@ const copy : Record<
     eyebrow: "Editorial notebook",
     h1: "Dissertations",
     lead: "Long-form argumentative writing, not analyses. What the sections do not say, and why I keep playing.",
-    curtainTitle: "The first dissertation is here",
+    curtainTitle: "The first essay is available in French",
     curtainText:
-      "Dissertations will not follow a regular schedule: each piece will appear when it can stand on its own.",
+      "An English translation is not available yet. You can read the original French essay; this page will list English essays when they are ready.",
   },
 };
 
@@ -41,6 +41,7 @@ const t = copy[lang];
     <article class="essais-card reveal">
       <p class="essais-card__title">{t.curtainTitle}</p>
       <p class="essais-card__text">{t.curtainText}</p>
+      {lang === "en" && <a href="/fr/dissertations/echecs-et-investissement/" hreflang="fr">Read the French essay on chess and investment</a>}
       <div class="essais-card__rule" aria-hidden="true"></div>
     </article>
   </div>

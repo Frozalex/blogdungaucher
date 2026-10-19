@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="160" viewBox="0 0 380 160" role="img" aria-labelledby="t4" lang="en"><title id="t4">Order of magnitude of chess game sequences (Shannon)</title>
+<rect fill="#fff" width="380" height="160" />
+<text x="190" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a2e" font-family="system-ui,sans-serif">Shannon’s number (order of magnitude)</text>
+<text x="190" y="70" text-anchor="middle" font-size="28" font-weight="700" fill="#e94560" font-family="Consolas,monospace">≈ 10^120</text>
+<text x="190" y="100" text-anchor="middle" font-size="11" fill="#444" font-family="system-ui,sans-serif">Possible game sequences (estimate, model-dependent)</text>
+<text x="190" y="130" text-anchor="middle" font-size="10" fill="#666" font-family="system-ui,sans-serif">Claude Shannon  -  information theory and games</text>
+<text x="190" y="150" text-anchor="middle" font-size="10" fill="#666" font-family="system-ui,sans-serif">A sense of scale, not an exhaustive list</text>
+</svg>

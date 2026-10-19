@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-labelledby="titre" xml:lang="pt-BR"><title id="titre">Redes e busca: funções distintas</title><rect width="900" height="360" rx="20" fill="#faf8ef" />
+<text x="40" y="38" font-family="Georgia,serif" font-size="23" fill="#252820">Redes e busca: funções distintas</text>
+<rect x="40" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="56" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Stockfish NNUE</text>
+<text x="56" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Avaliação aprendida</text>
+<text x="56" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Busca alfa-beta</text>
+<rect x="325" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="341" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">AlphaZero</text>
+<text x="341" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Política e valor</text>
+<text x="341" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Busca MCTS</text>
+<rect x="610" y="100" width="250" height="170" rx="12" fill="#edf2e7" stroke="#64734b" />
+<text x="626" y="130" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#33432c">Comparação</text>
+<text x="626" y="190" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Especificar as versões</text>
+<text x="626" y="211" font-family="system-ui,sans-serif" font-size="15" fill="#33382e">Tempo e hardware</text>
+<text x="40" y="310" font-family="system-ui,sans-serif" font-size="15" fill="#5d6555">O resultado de um match depende do protocolo e não resolve o jogo.</text>
+</svg>

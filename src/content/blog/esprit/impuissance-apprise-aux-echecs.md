@@ -1,5 +1,5 @@
 ---
-title: "L'impuissance apprise aux échecs : Seligman s'était trompé de sens"
+title: "Impuissance apprise et échecs : contrôle, découragement et limites"
 excerpt:
   "Ce que la révision de Maier et Seligman en 2016 dit du contrôle, et pourquoi un plateau de classement ne suffit pas à expliquer ton découragement."
 publishDate: "2026-12-15"
@@ -17,7 +17,7 @@ tags:
   - neurosciences
   - progression
   - échecs
-seoTitle: "Impuissance apprise aux échecs : le renversement de 2016"
+seoTitle: "Impuissance apprise et échecs : comprendre la révision de 2016"
 seoDescription: "Maier et Seligman revisitent l’impuissance apprise en 2016. Comprends les limites de son application aux échecs et examine ton découragement sans te diagnostiquer."
 faq:
   - question: "Un plateau Elo prouve-t-il une impuissance apprise ?"
@@ -30,6 +30,7 @@ heroImage:
   src: /images/blog/impuissance-apprise-aux-echecs-hero.webp
   alt: Un oiseau reste dans une cage dont la porte est grande ouverte.
 ogImage: /images/og/impuissance-apprise-aux-echecs-og.webp
+
 ---
 
 Tu as l’impression que ton travail ne change plus rien. Le classement stagne et tu hésites à continuer. Ce découragement mérite d’être écouté, mais il ne suffit pas à établir une impuissance apprise ni un mécanisme cérébral particulier.

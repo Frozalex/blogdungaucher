@@ -65,6 +65,9 @@ const translationSchema = z.object({
   excerpt: z.string(),
   seoTitle: z.string().optional(),
   seoDescription: z.string().optional(),
+  /** Une vidéo doit être traduite explicitement ; aucun repli sur la vidéo FR. */
+  summaryVideo: z.string().optional(),
+  summaryVideoNote: z.string().optional(),
   draft: z.boolean().default(false),
   /** Slug localisé utilisé dans l'URL EN (ex. "learning-to-lose-at-chess").
    *  Si absent, l'URL reprend le slug FR du fichier source. */

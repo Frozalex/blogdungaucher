@@ -1,6 +1,6 @@
 ---
 title: "Grand oral Maths + NSI : les échecs comme pont entre les deux spécialités"
-excerpt: "Le sujet transversal le plus puissant pour les élèves Maths+NSI : comment la combinatoire (Maths) explique pourquoi le minimax (NSI) est nécessaire, et comment les probabilités (Maths) fondent l'IA (NSI) qui a révolutionné les échecs."
+excerpt: "Un sujet transversal Maths+NSI pour relier le dénombrement des variantes, minimax, le score attendu Elo et les représentations informatiques. Des calculs et du code à expliquer, avec les hypothèses et limites de chaque modèle."
 publishDate: "2026-04-28"
 category: "grand-oral"
 featured: false
@@ -22,20 +22,20 @@ faq:
   - question: "Pourquoi le lien entre les mathématiques et les échecs est-il un bon sujet de Grand Oral ?"
     answer: "Ce sujet mêle des notions du programme de terminale (combinatoire, probabilités, théorie des graphes, algorithmique) à un objet culturel concret et connu du jury. Il permet une démonstration visuelle sur l'échiquier, une ouverture vers l'intelligence artificielle et une conclusion philosophique sur la pensée formelle, ce qui facilite la structuration en trois parties et anticipe naturellement les questions du jury."
   - question: "Quelle est la part des mathématiques dans le jeu d'échecs ?"
-    answer: "Les échecs s'appuient sur plusieurs domaines mathématiques : la combinatoire (le nombre de Shannon évalue à 10^120 le nombre de parties possibles), la théorie des jeux (l'algorithme minimax, formalisé par John von Neumann), la théorie des graphes (problème du cavalier, graphe des déplacements de pièces), les probabilités (évaluation statistique des ouvertures), et l'algèbre linéaire (apprentissage par renforcement dans AlphaZero). Chaque pièce, chaque coup, chaque classement a un substrat mathématique précis."
+    answer: "La combinatoire modélise les suites de coups ; le repère de Shannon de 10^120 n’est pas un décompte exact. La théorie des jeux définit la valeur sous jeu optimal et minimax calcule une valeur dans un arbre. Les graphes représentent par exemple les trajets du cavalier ; les probabilités modélisent des résultats de joueurs. Ces objets demandent des hypothèses différentes."
   - question: "Comment expliquer le classement Elo lors d'un Grand Oral ?"
     answer: "L’approximation logistique 1/(1+10^((Rb-Ra)/400)) représente le score attendu : une victoire vaut 1, une nulle 0,5 et une défaite 0. Ce n’est pas directement la probabilité de gagner. La cote évolue selon l’écart entre score obtenu et score attendu ; la FIDE applique ses tables réglementaires."
   - question: "Qu'est-ce que le problème du cavalier et pourquoi est-il utile au Grand Oral ?"
     answer: "Le problème du cavalier consiste à trouver un chemin sur un échiquier 8×8 où le cavalier visite exactement une fois chacune des 64 cases. Il appartient à la théorie des graphes (chercher un chemin hamiltonien dans le graphe de déplacements du cavalier) et peut être résolu par des algorithmes de backtracking ou la règle de Warnsdorff. C'est un exemple parfait pour illustrer comment la mathématique formelle s'applique à un objet physique posé devant le jury."
   - question: "Comment utiliser AlphaZero comme argument dans un Grand Oral sur les maths et les échecs ?"
-    answer: "AlphaZero (DeepMind, 2017) est un programme d'apprentissage par renforcement qui n'a utilisé aucune partie humaine : il a appris uniquement en jouant contre lui-même. En moins de 24 heures, il atteignait un niveau supérieur à Stockfish. Pour un Grand Oral, il illustre le passage de l'approche algorithmique classique (minimax, élagage alpha-bêta) à l'apprentissage automatique par réseaux de neurones, ancrant les maths dans l'actualité de l'IA."
+    answer: "Le préprint de 2017 décrit un réseau appris par autojeu, sans base de parties humaines, associé à une recherche MCTS. Le dépassement de Stockfish après quatre heures appartient à un protocole et à un matériel particuliers. Cela illustre une autre façon de guider un arbre de recherche, sans démontrer une résolution du jeu ni une intelligence humaine."
   - question: "Quelles questions peut poser le jury sur les maths et les échecs au Grand Oral ?"
-    answer: "Les questions fréquentes du jury portent sur : le calcul explicite du nombre de parties possibles, la démonstration du problème du cavalier (graphe hamiltonien), la formule Elo et son interprétation probabiliste, la différence entre arbre minimax et apprentissage par renforcement, et les limites de la modélisation (la résolution complète des échecs reste hors de portée). Préparer ces cinq angles couvre la majorité des questions possibles."
+    answer: "Les questions fréquentes du jury portent sur : le calcul explicite du nombre de parties possibles, la démonstration du problème du cavalier (graphe hamiltonien), la formule Elo et son interprétation probabiliste, la différence entre arbre minimax et apprentissage par renforcement, et les limites de la modélisation (la résolution complète des échecs reste hors de portée). Prépare ces angles comme entraînement ; ils ne prédisent pas les questions qui seront posées."
 ---
 
 Tu as Maths **et** NSI en terminale. Et tu veux un sujet de Grand Oral qui exploite **les deux** : pas un sujet Maths avec un saupoudrage informatique, ni un sujet NSI avec une formule mathématique décorative.
 
-Les échecs sont ce sujet transversal. La combinatoire (Maths) explique *pourquoi* l'algorithme minimax (NSI) est indispensable. Les probabilités (Maths) fondent le classement Elo que les bases de données (NSI) stockent et interrogent. Les graphes (Maths) sont la structure de données (NSI) sur laquelle le problème du cavalier est défini. AlphaZero repose sur l'algèbre linéaire (Maths) implémentée sous forme de réseau de neurones (NSI).
+Les échecs sont ce sujet transversal. La combinatoire (Maths) explique la croissance du nombre de variantes ; minimax (NSI) permet d’en propager les scores sous une hypothèse de jeu adverse optimal. Les probabilités (Maths) fondent le classement Elo que les bases de données (NSI) stockent et interrogent. Les graphes (Maths) sont la structure de données (NSI) sur laquelle le problème du cavalier est défini. AlphaZero repose sur l'algèbre linéaire (Maths) implémentée sous forme de réseau de neurones (NSI).
 
 Ce n'est pas un sujet où Maths et NSI se côtoient par hasard. C'est un sujet où chaque notion mathématique *engendre* un besoin informatique, et chaque implémentation informatique *suppose* un fondement mathématique. C'est le pont réel entre les deux disciplines.
 
@@ -52,7 +52,7 @@ Avant d'entrer dans le contenu, la structure de pensée est essentielle. Un jury
 
 | Côté Maths | Pont | Côté NSI |
 |---|---|---|
-| Combinatoire : $\sim 10^{120}$ parties | → nécessite → | Algorithme minimax (pas de force brute possible) |
+| Combinatoire : croissance des suites de coups | → motive une sélection des variantes → | Minimax à profondeur limitée, évaluation et élagage |
 | Probabilités : formule Elo | → est stockée et calculée via → | Bases de données SQL, requêtes statistiques |
 | Théorie des graphes : chemin hamiltonien | → est implémenté comme → | Arbre de décision, DFS récursif |
 | Algèbre linéaire : matrices, fonctions | → est la structure de → | Réseaux de neurones d'AlphaZero |
@@ -73,14 +73,14 @@ Les examinateurs ont vu passer des milliers de sujets. Ce qui les marque, c'est 
 
 ### Les notions du programme directement concernées
 
-Ce sujet est taillé pour la terminale car il mobilise des notions explicitement au programme :
+Ce sujet mobilise des notions du cycle terminal et des prolongements à distinguer avec tes professeurs :
 
 - **Combinatoire** (dénombrement, factorielles, arrangements) : nombre de parties, arbre des coups
 - **Probabilités** : évaluation statistique des ouvertures, formule Elo, espérance de gain
 - **Théorie des graphes** (algorithmique, première et terminale NSI) : problème du cavalier, chemin hamiltonien
 - **Algorithmique** : minimax, élagage alpha-bêta, ordre de complexité
 - **Statistiques** : régression, analyse de données de parties
-- **Algèbre linéaire** (spécialité maths) : réseaux de neurones, AlphaZero
+- **Prolongement au-delà des notions de base** : matrices et réseaux de neurones d’AlphaZero, à présenter seulement si tu peux en expliquer le rôle
 
 Un sujet qui couvre autant du programme en un seul objet se structure naturellement en trois parties et génère des questions du jury ancrées dans des notions précises, ce qui est prévisible et préparable.
 
@@ -101,7 +101,7 @@ Les échecs sont ce qu'on appelle un **jeu à somme nulle, à deux joueurs, à i
 - **Stratégie pure** : une stratégie est un ensemble de règles de décision qui associe à chaque état de jeu un coup précis. En théorie des jeux, on peut décrire formellement l'ensemble des stratégies pures possibles pour chaque joueur.
 - **Jeu déterministe** : le résultat d'une séquence de coups est entièrement déterminé par les coups eux-mêmes, sans hasard.
 
-Ce cadre formel a une conséquence importante, connue sous le nom de **théorème de Zermelo** (1913) : dans tout jeu à deux joueurs, à information parfaite, fini et à somme nulle, l'un des deux joueurs a une stratégie gagnante, ou les deux peuvent forcer la nulle. Les échecs ont donc **une issue théoriquement déterminée** : soit les Blancs gagnent avec le jeu parfait, soit les Noirs gagnent, soit c'est nulle. Personne ne le sait encore. Mais on sait que l'une de ces trois issues est la « vraie » réponse aux échecs.
+Ce cadre formel a une conséquence importante, connue sous le nom de **énoncé de détermination des jeux finis**, souvent rattaché à Zermelo (1913) mais distinct de sa démonstration historique : dans tout jeu à deux joueurs, à information parfaite, fini et à somme nulle, l'un des deux joueurs a une stratégie gagnante, ou les deux peuvent forcer la nulle. Les échecs ont donc **une issue théoriquement déterminée** : soit les Blancs gagnent avec le jeu parfait, soit les Noirs gagnent, soit c'est nulle. Personne ne le sait encore. Mais on sait que l'une de ces trois issues est la « vraie » réponse aux échecs.
 
 Ce théorème est souvent le moment-choc d'une introduction : « On ne sait toujours pas si les Blancs gagnent avec le jeu parfait. Et les mathématiques disent que la réponse existe. »
 
@@ -109,23 +109,23 @@ Ce théorème est souvent le moment-choc d'une introduction : « On ne sait touj
 
 La combinatoire est probablement la branche mathématique la plus directement visible aux échecs.
 
-[Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon), père de la théorie de l'information, a calculé en 1950 le nombre de parties d'échecs distinctes. Son estimation, appelée le **nombre de Shannon**, est de l'ordre de $10^{120}$. Pour donner une échelle : le nombre d'atomes dans l'univers observable est estimé à environ $10^{80}$. Le nombre de parties d'échecs possibles dépasse donc de **quarante ordres de grandeur** le nombre de particules connues dans l'univers.
+[Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon) propose en 1950 un ordre de grandeur de $10^{120}$ pour l’arbre des parties, sous des hypothèses simplificatrices. Ce **nombre de Shannon** illustre la difficulté d’une exploration exhaustive ; ce n’est pas un dénombrement exact de toutes les parties légales.
 
-Comment arrive-t-on à ce chiffre ? Voici l'argument de dénombrement que tu peux dérouler devant le jury :
+Pour distinguer un calcul exact d’un modèle illustratif, commence devant le jury par les premiers niveaux :
 
 1. Au premier coup des Blancs, il y a **20 coups possibles** (16 coups de pions + 4 coups de cavaliers).
 2. Au premier coup des Noirs, il y a également **20 réponses possibles**.
 3. Après un coup de chaque côté, on a donc **20 × 20 = 400 positions**.
-4. Au deuxième coup, il y a environ **29 coups possibles en moyenne** pour chaque joueur.
-5. L'arbre des coups grandit exponentiellement : après 3 coups de chaque côté, on dépasse **119 060 324 suites de six demi-coups**, soit environ 10^8 feuilles.
+4. Plus loin, le nombre de coups légaux dépend de la position ; on ne peut pas conserver les 20 choix initiaux à tous les niveaux.
+5. Pour illustrer la croissance, suppose ensuite un arbre uniforme avec b choix par demi-coup et une profondeur d : il possède b^d feuilles. Cette hypothèse simplifie l’arbre réel.
 
-La formule générale est $N \approx b^d$, où $b$ est le facteur de branchement moyen ($\approx 35$ aux échecs) et $d$ la profondeur ($\approx 80$ demi-coups). On obtient $35^{80} \approx 10^{124}$, dans le même ordre de grandeur que l'estimation de Shannon.
+Avec les hypothèses pédagogiques b = 35 et d = 80 demi-coups, $\log_{10}(35^{80}) = 80\log_{10}(35) \approx 123{,}53$, donc $35^{80} \approx 3{,}35 \times 10^{123}$. Ce calcul diffère du repère historique $10^{120}$ de Shannon : ne les présente pas comme deux écritures d’un même résultat.
 
 Ce calcul est parfait pour un Grand Oral : il repose uniquement sur la multiplication et la notion de puissance, des outils de première. Le jury peut suivre chaque étape, et le résultat est spectaculaire.
 
 #### L'arbre des coups comme objet mathématique
 
-Formellement, cet arbre est un **arbre enraciné orienté** : la racine est la position initiale, chaque nœud est une position, chaque arc est un coup légal, et les feuilles sont les positions finales (mat, nulle, abandon). Le nombre de nœuds de cet arbre est le nombre total de positions légales, estimé à environ $10^{44}$ (positions légales distinctes ; différent du nombre de parties car une même position peut être atteinte par des séquences différentes).
+Formellement, cet arbre est un **arbre enraciné orienté** : la racine est la position initiale, chaque nœud est une position, chaque arc est un coup légal, et les feuilles sont les positions finales (mat, nulle, abandon). Plusieurs nœuds peuvent représenter la même position atteinte par des séquences différentes. Compter les nœuds d’un arbre n’est donc pas compter les positions distinctes. La page de John Tromp donne une estimation d’environ $4{,}8 \times 10^{44}$ positions légales, un autre objet que les suites de coups.
 
 Cette distinction entre *nombre de parties* et *nombre de positions* est un bon point de précision que le jury peut creuser.
 
@@ -153,7 +153,7 @@ $$
 \mathbb{E}(S_A) = \frac{1}{1 + 10^{(R_B - R_A)/400}}
 $$
 
-où $R_A$ et $R_B$ sont les cotes Elo respectives. Si $R_A = R_B$, on obtient $\mathbb{P} = \tfrac{1}{2}$. Si $R_A = 2000$ et $R_B = 1600$, on obtient $\mathbb{P} \approx 91\,\%$.
+où $R_A$ et $R_B$ sont les cotes Elo respectives. Si $R_A = R_B$, on obtient $\mathbb{E}(S_A) = \tfrac{1}{2}$. Si $R_A = 2000$ et $R_B = 1600$, on obtient $\mathbb{E}(S_A) \approx 0{,}909$.
 
 Le score vaut 1, 0,5 ou 0 selon le résultat. Une espérance de 0,5 n’est donc pas une probabilité de victoire de 50 %. Cette formule est une approximation logistique pédagogique ; la FIDE utilise ses tables réglementaires. Cette **fonction logistique** a une forme en S que l’on rencontre aussi en modélisation démographique, en médecine (probabilité d'un événement clinique) et dans les réseaux de neurones (fonction d'activation sigmoïde). Le faire remarquer au jury montre que tu places l'exemple dans une famille mathématique plus large.
 
@@ -175,11 +175,11 @@ $$\text{Nouvelle cote de } A = R_A + K\,(\text{résultat réel} - \text{résulta
 
 où $K$ est un coefficient (40, 20 ou 10 selon les conditions du règlement FIDE), le résultat réel vaut $1$, $\tfrac{1}{2}$ ou $0$, et le résultat attendu est l'espérance de score définie ci-dessus.
 
-C'est un **estimateur bayésien** : chaque partie apporte de l'information sur la vraie force d'un joueur, et la cote converge vers cette vraie valeur au fil du temps. Ce mécanisme est directement lié aux notions de statistiques inférentielles du programme de terminale.
+Cette récurrence ajuste la cote à partir de l’écart entre score obtenu et score attendu. Elle ne constitue pas, à elle seule, un modèle bayésien complet et ne garantit pas la convergence vers un niveau fixe : adversaires, résultats et niveau du joueur peuvent évoluer. Pour un calcul réglementaire, utilise les tables et modalités FIDE plutôt que cette seule approximation.
 
 ### L'impact des probabilités sur les ouvertures et les stratégies
 
-Les bases de données de parties (Lichess dispose d'une base publique de plus de **3 milliards de parties**) permettent de calculer la fréquence de chaque ouverture et le taux de victoire associé pour les Blancs et les Noirs.
+Les bases de données de parties, comme les téléchargements publics de Lichess, permettent de calculer la fréquence de chaque ouverture et le taux de victoire associé pour les Blancs et les Noirs.
 
 #### Code (NSI)  -  requête SQL simple sur une base de parties
 
@@ -206,11 +206,11 @@ Un échantillon plus grand ne supprime pas les biais de sélection. Le niveau, l
 
 ### Algorithmes de recherche : minimax et élagage alpha-bêta
 
-La question naturelle après le calcul du nombre de Shannon est : comment un ordinateur peut-il jouer aux échecs si l'arbre complet des parties est inexplorable ? La réponse est l'**algorithme minimax**, formalisé par John von Neumann dans sa théorie des jeux.
+La question naturelle après le calcul du nombre de Shannon est : comment un ordinateur peut-il jouer aux échecs si l'arbre complet des parties est inexplorable ? Une réponse est la recherche **minimax à profondeur limitée**, associée à une évaluation. Il faut distinguer cet algorithme sur un arbre du théorème minimax de von Neumann pour les jeux à somme nulle : le nom commun ne rend pas leurs énoncés interchangeables.
 
 Le principe est simple : à chaque nœud de l'arbre, le joueur dont c'est le tour cherche à **maximiser** son évaluation (si c'est lui) ou à **minimiser** celle de l'adversaire (si c'est l'adversaire). L'algorithme explore l'arbre en alternant ces deux opérations, d'où le nom « min-max ».
 
-En pratique, on ne peut pas aller jusqu'aux feuilles de l'arbre (le mat). On s'arrête à une profondeur fixe et on applique une **fonction d'évaluation** qui donne une valeur numérique à chaque position intermédiaire (matériel restant, contrôle de l'espace, sécurité du roi...). Cette fonction est l'intelligence du programme : deux moteurs avec le même minimax mais des fonctions d'évaluation différentes auront des forces très différentes.
+Dans une position complexe, on n’atteint généralement pas toutes les positions terminales dans le temps disponible. Une feuille à profondeur limitée n’est pas nécessairement un mat ni une fin de partie. On s'arrête à une profondeur fixe et on applique une **fonction d'évaluation** qui donne une valeur numérique à chaque position intermédiaire (matériel restant, contrôle de l'espace, sécurité du roi...). Cette fonction est l'intelligence du programme : deux moteurs avec le même minimax mais des fonctions d'évaluation différentes auront des forces très différentes.
 
 #### Code (NSI)  -  minimax (récursivité en Python)
 
@@ -233,7 +233,7 @@ def minimax(position, profondeur, est_max):
         return meilleur
 ```
 
-L'**élagage alpha-bêta**, développé par [John McCarthy](https://fr.wikipedia.org/wiki/John_McCarthy_(informaticien)) et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer. Dans le meilleur cas, avec un tri idéal des coups, il réduit l’ordre de grandeur de $O(b^d)$ à environ $O(b^{d/2})$ ; pour $b = 35$ et $d = 10$, les puissances indicatives passent d’environ $2{,}7 \times 10^{15}$ à $\sim 5{,}2 \times 10^7$. C'est un résultat d'algorithmique accessible en terminale NSI.
+L'**élagage alpha-bêta**, développé par John McCarthy et ses collaborateurs dans les années 1950-60, est une optimisation du minimax qui permet d'éliminer des branches entières de l'arbre sans les explorer. Dans le meilleur cas, avec un tri idéal des coups, il réduit l’ordre de grandeur de $O(b^d)$ à environ $O(b^{d/2})$ ; pour $b = 35$ et $d = 10$, les puissances indicatives passent d’environ $2{,}7 \times 10^{15}$ à $\sim 5{,}2 \times 10^7$. C'est un résultat d'algorithmique accessible en terminale NSI.
 
 #### Code (NSI)  -  alpha-bêta (l'optimisation "visible")
 
@@ -260,11 +260,11 @@ def alpha_beta(position, profondeur, alpha, beta, est_max):
 
 ### L'apprentissage automatique et les supercalculateurs d'échecs
 
-En 2017, [DeepMind](https://fr.wikipedia.org/wiki/DeepMind) a publié [AlphaZero](https://fr.wikipedia.org/wiki/AlphaZero), un programme d'apprentissage par renforcement qui a bouleversé le monde des échecs. Contrairement à [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(logiciel)), qui utilise une fonction d'évaluation codée à la main par des experts, AlphaZero **n'a reçu que les règles du jeu**. Il a ensuite joué contre lui-même en boucle, pendant moins de 24 heures, et a atteint un niveau supérieur à Stockfish (le meilleur programme classique) en 100 parties de test.
+En 2017, [DeepMind](https://fr.wikipedia.org/wiki/DeepMind) a publié [AlphaZero](https://fr.wikipedia.org/wiki/AlphaZero), un programme d'apprentissage par renforcement qui a bouleversé le monde des échecs. Le contraste du préprint de 2017 porte sur Stockfish 8, avec évaluation conçue à la main, et AlphaZero, avec un réseau appris par autojeu sans parties humaines. AlphaZero conserve un cadre conçu par les chercheurs : règles, représentation, architecture et procédure de recherche. Le dépassement après quatre heures concerne sa courbe d’évaluation avec un matériel spécifique ; le match à une minute par coup relève d’un autre protocole de la même étude.
 
 AlphaZero utilise un **réseau de neurones convolutif** (une architecture mathématique inspirée du traitement visuel biologique) pour évaluer les positions, et une méthode de **Monte Carlo Tree Search (MCTS)** pour guider son exploration de l'arbre des coups. La MCTS ajoute une dimension probabiliste à la recherche : au lieu d'explorer l'arbre de manière uniforme, elle concentre les ressources de calcul sur les branches qui ont produit des résultats positifs lors des simulations précédentes.
 
-Ce résultat est l'un des arguments les plus frappants pour la conclusion d'un Grand Oral : **l'intelligence artificielle aux échecs est passée de la programmation explicite (dire à la machine quelles positions sont bonnes) à l'apprentissage implicite (laisser la machine découvrir par elle-même ce qui est bon)**. Ce glissement mathématique correspond au passage de l'optimisation combinatoire à l'apprentissage statistique, deux piliers des mathématiques contemporaines.
+Ce résultat est l'un des arguments les plus frappants pour la conclusion d'un Grand Oral : **l'intelligence artificielle aux échecs est passée de la programmation explicite (dire à la machine quelles positions sont bonnes) à l'apprentissage implicite (laisser la machine découvrir par elle-même ce qui est bon)**. L’apprentissage statistique et la recherche combinatoire sont ici associés, plutôt que deux étapes dont l’une aurait supprimé l’autre. Stockfish a lui aussi adopté une évaluation neuronale NNUE à partir de sa version 12, annoncée en 2020.
 
 Pour aller plus loin sur la complexité mathématique sous-jacente, l'article [Pourquoi les échecs sont un problème mathématique (presque) impossible](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/) décortique en détail l'arbre des coups, minimax et alpha-bêta.
 
@@ -286,7 +286,7 @@ Pour un Grand Oral, tu peux montrer les 3 ou 4 premiers coups d'un tour du caval
 
 ### L'analyse des coups et l'optimisation des stratégies
 
-Les moteurs d'échecs modernes comme Stockfish produisent, pour chaque position, une **évaluation en centièmes de pion** : +0.30 signifie un léger avantage pour les Blancs, +2.50 un avantage décisif, −1.20 un avantage pour les Noirs. Cette évaluation est une approximation continue d'une valeur théoriquement discrète (victoire / nulle / défaite).
+Un moteur peut produire un score numérique dont la perspective et l’échelle dépendent de son interface et de sa version. Un score positif dans la perspective des Blancs indique une préférence pour leur position ; il ne garantit pas un gain forcé. Distingue ce score estimé d’un mat démontré ou d’une valeur de tablebase sous des règles précisées.
 
 L'analyse de partie peut comparer des choix à des évaluations obtenues avec un moteur et un protocole donnés. Ce n'est ni une mesure exhaustive de la qualité d'un joueur ni, à elle seule, une preuve de triche. Version du moteur, profondeur, difficulté des positions et taille de l'échantillon comptent dans l'interprétation.
 
@@ -294,9 +294,9 @@ La courbe logistique présentée ici modélise un score attendu. Elle ne garanti
 
 ## Comment les mathématiques aident à classer les joueurs d'échecs
 
-Pour boucler la boucle sur le classement Elo, il est utile d'expliquer sa construction historique. [Arpad Elo](https://fr.wikipedia.org/wiki/Arpad_Elo) était professeur de physique. Il a observé que la distribution des performances d'un joueur sur une longue période suivait approximativement une **loi normale** (gaussienne). Il a ensuite posé que la différence de performance entre deux joueurs déterminait la probabilité de victoire selon la formule logistique décrite plus haut.
+Pour boucler la boucle sur le classement Elo, il est utile d'expliquer sa construction historique. [Arpad Elo](https://fr.wikipedia.org/wiki/Arpad_Elo) était professeur de physique. Pour cet exposé, retiens surtout le modèle présenté : une différence de cotes sert à estimer un score attendu. Ne confonds pas ce score avec la probabilité de victoire et ne présente pas la logistique pédagogique comme une description exacte du règlement FIDE.
 
-Ce modèle a une élégance mathématique réelle : il est **cohérent** (si A bat B et B bat C, la cote de A est systématiquement plus haute que celle de C), **adaptatif** (une série de victoires contre des adversaires forts fait monter la cote plus vite que des victoires contre des adversaires faibles), et **calibré** (la probabilité prédite par la formule correspond à la fréquence observée sur les grandes bases de données).
+Le modèle est **ordonné** : une cote plus élevée donne un score attendu plus élevé contre un même adversaire. Il est **adaptatif** : à coefficient identique, un résultat supérieur à l’attente augmente la cote. Cela ne rend pas les résultats transitifs et ne prouve pas une calibration parfaite pour toute population ; cette dernière se mesure sur des données définies.
 
 Le classement Elo a depuis été repris dans de nombreux autres domaines : jeux vidéo compétitifs (League of Legends, échecs en ligne), matchs de football (FIFA World Rankings), évaluation de modèles d'IA, et même systèmes de vote par comparaisons par paires en psychologie sociale. Signaler cela au jury montre que tu as compris la **portée générale** du modèle, pas seulement son application aux échecs.
 
@@ -329,7 +329,7 @@ Ce découpage totalise dix minutes. Le ministère prévoit ensuite dix minutes d
 Un jury transversal peut interroger dans les deux directions. Voici les cinq questions les plus probables et leurs réponses synthétiques :
 
 **1. « Vous dites que la combinatoire explique le minimax : pouvez-vous préciser ce lien ? »**
-La croissance b^d (Maths, combinatoire) rend l'exploration complète impossible. Le minimax (NSI) est la réponse algorithmique : explorer jusqu'à une profondeur d limitée, évaluer les feuilles avec une heuristique, et propager les scores par récursivité. Sans la borne combinatoire, le minimax ne serait pas nécessaire.
+La croissance b^d rend une exploration exhaustive impraticable dans les budgets actuels pour de nombreuses positions. Minimax définit la remontée des scores sous l’hypothèse d’un adversaire optimal ; on l’utilise aussi sur de petits arbres faciles à résoudre. Pour jouer avec peu de temps, on limite la profondeur, on évalue les feuilles et on élague. La combinatoire motive ces adaptations sans prouver que minimax serait l’unique méthode possible.
 
 **2. « Quel est le lien entre la fonction logistique Elo et la sigmoïde des réseaux de neurones ? »**
 Une logistique peut transformer un réel en valeur entre 0 et 1. Ce rapprochement mathématique ne décrit pas les couches internes d’AlphaZero : sa publication décrit notamment des activations ReLU, une sortie de politique softmax et une sortie de valeur tanh. Le modèle Elo et ce réseau ont des fonctions différentes.
@@ -362,19 +362,19 @@ Les cinq angles de question les plus probables sur ce sujet sont :
 
 1. **« Pouvez-vous calculer numériquement le score attendu pour des cotes données ? »** → Prépare le calcul pour Ra=1800, Rb=2000, et pour Ra=2000, Rb=2000.
 
-2. **« Quelle est la différence entre l'arbre minimax et l'apprentissage par renforcement ? »** → Minimax explore un arbre fixe avec une évaluation codée ; l'apprentissage par renforcement apprend la fonction d'évaluation par l'expérience.
+2. **« Quelle est la différence entre l'arbre minimax et l'apprentissage par renforcement ? »** → Minimax propage des valeurs dans un arbre ; l’évaluation utilisée à profondeur limitée peut être écrite à la main ou apprise. L’apprentissage par renforcement produit notamment une évaluation et une politique à partir d’interactions.
 
 3. **« Le problème du cavalier a-t-il toujours une solution ? »** → Sur un échiquier 8×8, oui. Sur un échiquier n×n, non systématiquement (les petits échiquiers comme 2×2 ou 3×3 n'ont pas de tour du cavalier).
 
-4. **« Qu'est-ce que le théorème de Zermelo implique concrètement pour les échecs ? »** → Que l'une des trois issues (victoire des Blancs, victoire des Noirs, nulle) est « vraie » avec le jeu parfait. Mais que trouver cette stratégie parfaite reste hors de portée de toute machine actuelle.
+4. **« Qu'est-ce que le théorème de Zermelo implique concrètement pour les échecs ? »** → Que l'une des trois issues (victoire des Blancs, victoire des Noirs, nulle) est « vraie » avec le jeu parfait. Mais la valeur de la position initiale reste inconnue ; une performance de moteur ne la prouve pas.
 
-5. **« Pourquoi dit-on que la formule Elo est probabiliste si les échecs sont un jeu déterministe ? »** → Les échecs sont déterministes dans leur structure (pas de hasard), mais les performances humaines varient selon la forme, la fatigue, la préparation. La loi normale modélise cette variabilité humaine, pas le jeu lui-même.
+5. **« Pourquoi dit-on que la formule Elo est probabiliste si les échecs sont un jeu déterministe ? »** → Les échecs sont déterministes dans leur structure (pas de hasard), mais les performances humaines varient selon la forme, la fatigue, la préparation. Le modèle statistique porte sur des résultats entre joueurs, pas sur du hasard ajouté aux règles du jeu.
 
 ### Un mot sur la présentation physique
 
-Si tu apportes l'échiquier, prépare une **position de départ d'un exemple précis** (les 4 premiers coups d'une ouverture classique, ou la position de départ du problème du cavalier). Ne laisse pas l'échiquier vide sur la table : le jury doit toujours savoir à quoi il sert à chaque moment de l'exposé.
+À l’entraînement, utilise un échiquier pour fixer une **position de départ précise**. Pour l’épreuve, prépare un schéma simple à reproduire sur le support réalisé pendant les vingt minutes prévues ; ne compte pas sur un échiquier personnel ou des documents imprimés à l’avance.
 
-Ton tableau (blanc ou noir) doit avoir deux ou trois éléments préparés à l'avance : le plan en trois parties, la formule Elo, et l'arbre des deux premiers coups. Tout le reste peut être ajouté en direct, mais ces trois éléments ancrent visuellement ton exposé dès le départ.
+Entraîne-toi à construire le plan, la formule et le petit arbre sur ce support. Selon le ministère, le tableau peut être utilisé pendant l’échange si la salle en dispose ; il ne faut pas fonder l’exposé initial sur sa présence.
 
 ## Les trois articles de la série : choisir le bon
 
@@ -412,4 +412,5 @@ Et si l'on te demande pourquoi tu as choisi les échecs, la réponse honnête et
 - Russell, S., & Norvig, P. (s. d.). *Adversarial Search*, projet de chapitre d’Artificial Intelligence: A Modern Approach, Berkeley. [Recherche adversariale](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
 - Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Préprint](https://arxiv.org/html/1712.01815v1).
 - Équipe Stockfish (sans date). *Stockfish*. [Projet officiel et description NNUE](https://github.com/official-stockfish/Stockfish).
-- Edwards, S., et contributeurs (sans date). *Perft Results*. Chess Programming Wiki. [Décompte des suites légales](https://www.chessprogramming.org/Perft_Results).
+- Tromp, J. (2021). *Number of legal chess positions*. [Estimation de l’auteur](https://tromp.github.io/chess/chess.html).
+- Équipe Stockfish (2020). *Stockfish 12*. [Annonce officielle de NNUE](https://stockfishchess.org/blog/2020/stockfish-12/).

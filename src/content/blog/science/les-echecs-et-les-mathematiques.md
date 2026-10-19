@@ -51,7 +51,7 @@ Tu peux rapprocher cette démarche de la résolution d'un problème : comprendre
 
 Le tour du cavalier consiste à visiter chaque case exactement une fois par les déplacements légaux du cavalier. Si tu représentes les cases par des sommets et les sauts par des arêtes, tu cherches un chemin hamiltonien dans ce graphe. Cette traduction permet de travailler une notion mathématique à partir d'un objet familier, sans affirmer que le problème a fondé à lui seul toute une branche des mathématiques.
 
-![Un cavalier parcourt les 64 cases sans en visiter une deux fois.](/images/echecs-maths-01-tour-cavalier.svg)
+![Tour du cavalier : un parcours qui visite les 64 cases de l’échiquier une seule fois chacune, calculé par l’heuristique de Warnsdorff.](/images/echecs-maths-01-tour-cavalier.svg)
 
 Le problème des huit dames demande de placer huit dames sans qu'elles s'attaquent. La suite A000170 de l'OEIS recense 92 solutions pour huit dames. Les symétries les regroupent en 12 classes ; on ne peut pas simplement multiplier toutes ces classes par huit, car certaines solutions ont elles-mêmes des symétries.
 

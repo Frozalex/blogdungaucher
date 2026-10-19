@@ -1,84 +1,97 @@
 ---
 heroImageAlt: An underground cross-section showing a vast root network beneath a tiny sprout.
-title: "Impostor Syndrome in Chess: Playing Under the Weight of Doubt"
-excerpt: "You play well, you win, and yet you're convinced it's luck. That others will 'see through you.' Impostor syndrome in chess affects thousands of players at all levels. Here's how to recognize and overcome it."
-seoTitle: "Impostor Syndrome in Chess: 4 Patterns and How to Escape Them"
-seoDescription: "The 4 patterns of chess impostor syndrome: validated mechanisms, concrete strategies (journal, attribution, exposure). Complete guide for all levels."
+title: "Impostor Feelings in Chess: Playing Under the Weight of Doubt"
+excerpt: "Winning yet attributing success to luck, fearing exposure and discounting your own decisions: examine these experiences without diagnosing yourself from one game."
+seoTitle: "Impostor Feelings in Chess: Understanding Doubt"
+seoDescription: "Impostor feelings in chess: explanations of success and failure, comparison and questions for reflection, without a treatment validated specifically in players."
 enSlug: "impostor-syndrome-in-chess"
-draft: false
 ---
 
-You won your club tournament. Congratulations and handshakes. And in your head, a voice: "They played badly this weekend. Next week, they'll see my real level." You represent your country in a regional competition. In your head: "If only they knew how much I struggled with basic positions this week." You analyze a position brilliantly and a strong player nods. In your head: "He's just being polite."
+You won your club tournament. Congratulations and handshakes follow. In your head, a voice says: “They played badly this weekend. Next week they will see my real level.” You represent your club in a regional competition: “If only they knew how much I struggled with basic positions this week.” You analyse a position well and a strong player nods: “They are just being polite.”
 
-This negative inner dialogue has a name. And it affects chess particularly intensely.
+These examples illustrate doubt. Clance and Imes (1978) describe the impostor phenomenon in high-achieving women; that does not demonstrate a particular intensity in chess. This article concerns the general experience. For fear of losing a newly reached rating, see [the article about the 2000-Elo milestone](/en/blog/impostor-syndrome-2000-elo/).
 
-## The Mechanics of Impostor Syndrome
+## How impostor feelings can work
 
-Impostor syndrome psychology rests on a mechanism of asymmetric attribution. When successes arrive, they are attributed to external, unstable factors: luck, opponent weakness, an exceptionally good day. When failures arrive, they are attributed to internal, stable factors: lack of talent, "real" incompetence that was there all along.
+One way to examine these feelings is through asymmetric attribution. Successes may be assigned to external, unstable factors: luck, weak opponents or an unusually good day. Failures may be assigned to internal, stable factors: lack of talent or “real” incompetence supposedly present all along.
 
-This asymmetry creates a distorted emotional accounting. Evidence of competence accumulates in the "unreliable external factors" column. Evidence of incompetence accumulates in the "permanent internal factors" column. The conclusion is inevitable and always the same: "I'm not really good."
+That pattern can produce a distorted account: signs of competence go into the “unreliable external factors” column, while mistakes go into “permanent internal factors”. It can repeatedly lead back to “I am not really good”. This is a framework for reflection, not a mechanism diagnosed in every reader.
 
-In cognitive terms, this is what [Aaron Beck](https://en.wikipedia.org/wiki/Aaron_T._Beck), founder of cognitive therapy, calls a cognitive distortion: a systematically biased way of processing information that maintains negative beliefs about oneself.
+![Examining an explanation of a result](/images/en/imposteur-01-attribution.svg)
 
-## Chess as Amplifier of the Syndrome
+Bravata and colleagues’ review (2020) shows that frequency estimates vary greatly by population, scale and cutoff. It does not establish that 60–70% of chess players experience the phenomenon. The suggestions below are not treatments demonstrated effective in this game.
 
-### The Impossibility of Hiding Errors
+## Chess situations that may amplify doubt
 
-In chess, every error is inscribed in the game notation. The engine can analyze it, the opponent can identify it, you can't deny it. This total transparency of errors makes it extremely difficult to maintain external attribution of failures.
+Some chess situations may feed these feelings. The following are possible applications of the psychological framework, not findings from an experimental comparison between activities.
 
-### The Permanent Comparison Community
+### Errors that can be examined
 
-Elo ratings and tournament results create a performance hierarchy visible to all. This social transparency feeds the upward comparison mechanism (looking at those "better" than oneself) characteristic of people suffering from impostor syndrome.
+Recorded games preserve moves. An engine or opponent can help identify an error, which may make the mistake feel particularly visible. Not every game is public or recorded, and no engine evaluation measures your whole competence.
 
-### The Depth of Required Knowledge
+Analysis can identify an error and suggest work. It does not establish general incompetence. An engine score concerns a decision in a position, not your legitimacy as a participant.
 
-The more you progress, the more you realize the extent of what you don't know. This progressive discovery of one's ignorance, normal and even healthy, can feed impostor syndrome: "If I don't know that, I don't deserve my rating."
+### A community with visible comparisons
 
-## Identifiable Behavioral Patterns
+Public ratings and tournament results make some performance comparisons easy. You can see other players’ ratings and recent results, which may direct attention towards those stronger than you.
 
-**Constant negative discourse after victories.** Comments systematically minimizing one's own performance.
+That can become part of your experience of doubt, but comparison is not identical for everyone and a public number does not dictate what you must think about yourself.
 
-**Immediate acceptance of defeats as "normal" and rejection of victories as "abnormal."**
+![Compare ratings in their context](/images/en/imposteur-03-comparaison-elo.svg)
 
-**Excessive preparation as anxiolytic.** Spending dozens of hours memorizing opening variations to avoid being "exposed."
+### The depth of the knowledge involved
 
-**Refusal of compliments.** "You played that move well!" / "I didn't really know why I was playing it, I got lucky."
+There are always positions and themes you handle less well. Gaps do not follow uniform Elo thresholds: a player may know certain endgames well yet mishandle a familiar opening. Describing the gap precisely helps more than concluding “I do not deserve my rating”.
 
-**Avoiding situations where the "real level" could be revealed.** Fleeing official tournaments, refusing to play stronger players.
+## Possible behaviours to observe
 
-## Impostor Syndrome and Playing Level: Who Does It Affect?
+The following behaviours can provide questions for reflection. None establishes a diagnosis by itself.
 
-Contrary to what one might think, impostor syndrome isn't reserved for modest players. Research has shown it's often more intense in the most competent and accomplished individuals.
+**Repeated negative accounts after wins.** Consistently minimising your own contribution: “I was lucky”, “They were out of form”, “Their opening was terrible”.
 
-Testimonies from high-level players (some in the national elite) describe precisely this feeling. They regularly win against solid players, but continue to think their opponents "didn't see something" or their next result will "reveal" their true value.
+**Treating losses as normal and wins as abnormal.** If you expect to lose to everyone and every win surprises you, examine that asymmetry rather than assuming it proves your true level.
 
-## Differentiating Impostor Syndrome from Realistic Self-Evaluation
+**Preparation used to manage fear.** Spending many hours memorising lines may be about learning, trying to control a situation or avoiding exposure. The time spent alone does not establish the function.
 
-A legitimate question: how to distinguish impostor syndrome from an honest evaluation of one's own limits?
+**Rejecting compliments.** “You played that move well!” may receive “I did not really know why I played it; I was lucky.” Ask whether you can also recognise a specific good decision without treating every modest response as evidence of a problem.
 
-The difference is in systematicity and resistance to evidence. A realistic evaluation also recognizes strengths and adjusts when evidence accumulates. Impostor syndrome maintains its negative beliefs regardless of contrary evidence.
+**Avoiding situations where your level might be exposed.** Declining tournaments or stronger opponents may sometimes relate to fear, but can also reflect other preferences or constraints.
 
-If you have a stable Elo rating for several months at a certain level, with hundreds of games played, this rating is a statistically solid estimate of your level. It's not luck.
+![Describe a difficulty before naming it](/images/en/imposteur-02-patterns-comportementaux.svg)
 
-## Transformation Strategies
+## Who experiences it at different playing strengths?
 
-**Keep a competence journal.** Document regularly, after each game or session, what you did well. Specifically: "I correctly evaluated the pawn structure in the endgame," "I found the tactical sequence at move 23 under time pressure."
+The studies reviewed by Bravata and colleagues concern several populations. They do not show that the strongest players are necessarily most affected. No anonymous testimony is used here as evidence of prevalence in the elite.
 
-**Practice correct attribution.** When a victory arrives, train yourself to identify the specific decisions that contributed. "I won because I managed my time correctly."
+A persistent fear of exposure also differs from temporary disappointment or recognition of a technical weakness. You can describe your experience without labelling yourself from one poor game.
 
-**Expose your fears.** Deliberately play in situations generating syndrome anxiety (official tournaments, stronger opponents).
+## Distinguishing impostor feelings from a realistic assessment
 
-**Seek objective feedback.** Ask a coach or stronger player for an honest evaluation. Not to be reassured (impostor syndrome resists reassurance), but to confront your beliefs with a structured external evaluation.
+How do you distinguish these feelings from an honest assessment of your limits?
+
+One question is whether your account recognises strengths as well as weaknesses and changes with evidence. If wins are always minimised and losses amplified, that pattern deserves examination. It is not a self-diagnostic test, and one response does not determine a psychological category.
+
+Your rating provides information about results within a particular system. It measures neither your personal worth nor all your skills. Its fluctuations are discussed in [the milestone article](/en/blog/impostor-syndrome-2000-elo/).
+
+## Approaches to try
+
+These are suggestions for reflection to adapt, without a promise that doubt will disappear.
+
+**Keep a record of competence.** After a game or session, record what you did well in specific terms: “I correctly evaluated the endgame pawn structure”, or “I found the tactical line on move 23 under time pressure”. This creates examples to compare with your account. Working through [a collection of tactical exercises](https://amzn.to/4wdx8HC) can provide additional concrete tasks; solving one problem still does not measure your entire ability.
+
+**Examine what contributed to a win.** Identify specific decisions: managing time or recognising a positional structure, for example. Check those explanations against the game rather than merely replacing every external explanation with a flattering internal one.
+
+**Return at a manageable difficulty.** Choose a playing situation you want to regain and progress gradually, without forcing a confrontation that overwhelms you.
+
+**Seek precise feedback.** Ask a coach or stronger player for an honest, structured assessment. Concrete variations and identified strengths or weaknesses let you compare your beliefs with something more specific than reassurance alone.
+
+**After reading:** after three games, try identifying one decision within your control for each win: time use, a plan or a tactic, rather than only “I was lucky”. Treat this as an exercise, not a compulsory test.
+
+---
+
+If doubt causes lasting distress or stops you playing as you wish, you can discuss it with a professional. A coach’s observations and a game journal do not replace appropriate support.
 
 ## Sources
 
-- Clance, P. R. (1985). *The Impostor Phenomenon: Overcoming the Fear That Haunts Your Success*. Peachtree Publishers.
-- Beck, A. T. (1979). *Cognitive Therapy of Depression*. Guilford Press.
-- Weiner, B. (1986). *An Attributional Theory of Motivation and Emotion*. Springer.
-
-## Key Takeaways
-
-- Chess impostor syndrome translates as **systematic attribution** of successes to luck and failures to competence
-- The characteristics of the game (transparency of errors, absence of chance) **amplify this mechanism**
-- There are **identifiable behavioral patterns** that allow self-diagnosis
-- Cognitive-behavioral therapy and specific techniques allow real transformation
+- Clance, P. R., & Imes, S. A. (1978). *The Impostor Phenomenon in High Achieving Women: Dynamics and Therapeutic Intervention*. Psychotherapy: Theory, Research & Practice, 15(3), 241–247. [Full article](https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf).
+- Bravata, D. M., et al. (2020). *Prevalence, Predictors, and Treatment of Impostor Syndrome: a Systematic Review*. Journal of General Internal Medicine, 35, 1252–1275. [Review](https://link.springer.com/article/10.1007/s11606-019-05364-1).
