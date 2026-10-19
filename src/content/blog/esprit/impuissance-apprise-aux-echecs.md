@@ -18,9 +18,7 @@ tags:
   - progression
   - échecs
 seoTitle: "Impuissance apprise aux échecs : le renversement de 2016"
-seoDescription: >-
-  Seligman a révisé sa propre théorie en 2016 : la passivité est le comportement par défaut, c'est le
-  contrôle qui s'apprend. Ce que ça change pour sortir d'un plateau aux échecs.
+seoDescription: "Maier et Seligman revisitent l’impuissance apprise en 2016. Comprends les limites de son application aux échecs et examine ton découragement sans te diagnostiquer."
 faq:
   - question: "Un plateau Elo prouve-t-il une impuissance apprise ?"
     answer: "Non. Il décrit des résultats stables, pas un diagnostic psychologique ou neurologique."
