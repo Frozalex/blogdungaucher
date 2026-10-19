@@ -19,10 +19,8 @@ tags:
   - Elo
   - suite récurrente
   - convergence
-seoTitle: "Sujet Grand Oral Maths probabilités Elo échecs : texte complet à réciter"
-seoDescription: >-
-  Sujet Grand Oral Maths sur les probabilités et le classement Elo aux échecs, entièrement rédigé pour 10 minutes.
-  Loi binomiale, suites récurrentes, convergence : copie d'examen prête à utiliser.
+seoTitle: "Grand Oral Maths : Elo, probabilités et limites du modèle"
+seoDescription: "Loi binomiale, score attendu Elo et suites récurrentes : refais les calculs, précise les hypothèses et explique les limites du modèle au Grand Oral Maths."
 ogImage: /images/og/sujet-grand-oral-maths-elo-probabilites-og.webp
 heroImage:
   src: /images/blog/sujet-grand-oral-maths-elo-probabilites-hero.webp
