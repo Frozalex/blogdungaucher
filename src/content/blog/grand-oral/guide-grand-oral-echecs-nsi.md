@@ -83,7 +83,7 @@ L'objectif : que tu n'aies plus à chercher d'**exemples**, plus à compiler des
 
 ### Coefficient, durée et déroulé minute par minute
 
-Le **Grand Oral** est l'épreuve la mieux notée du **bac** général, à **coefficient 10**. Sa durée totale est de **40 minutes** :
+Le Grand Oral demande une présentation argumentée et un échange ; vérifie le coefficient applicable à ta session dans les informations officielles. Sa durée totale est de **40 minutes** :
 
 | Temps | Phase | Ce que tu fais | Ce que le **jury** observe |
 |---|---|---|---|
@@ -319,7 +319,7 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
 > 
 > ***Limite 2 : la profondeur.** Même avec alpha-bêta, la profondeur reste limitée à 20-30 coups sur les machines les plus puissantes. Au-delà, c'est impossible.*
 > 
-> ***La rupture d'AlphaZero (2017) :** AlphaZero n'a pas de fonction d'évaluation écrite par des humains. Il apprend à jouer en jouant contre lui-même (apprentissage par renforcement) et développe sa propre évaluation à travers un réseau de neurones. En 4 heures d'entraînement autonome, AlphaZero a battu Stockfish, le meilleur programme minimax au monde.*
+> ***La rupture d'AlphaZero (2017) :** AlphaZero n'a pas de fonction d'évaluation écrite par des humains. Il apprend à jouer en jouant contre lui-même (apprentissage par renforcement) et développe sa propre évaluation à travers un réseau de neurones. Le préprint de 2017 compare AlphaZero à Stockfish 8 à une minute par coup ; les quatre heures sont un repère sur la courbe d'apprentissage, pas la durée totale de tous les entraînements.*
 > 
 > *Ce n'est plus une optimisation : c'est un paradigme différent. Au lieu de chercher dans un arbre, il apprend à reconnaître des positions. »*
 
@@ -385,7 +385,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 > *« Minimax suppose que l'adversaire joue toujours le meilleur coup possible : il minimise toujours. Si l'adversaire fait une erreur, minimax reste correct : la position résultante est encore meilleure pour nous. En revanche, minimax ne cherche pas à exploiter les erreurs de l'adversaire de façon proactive : il suppose simplement qu'elles n'arrivent pas. Cette hypothèse de jeu optimal est pessimiste mais sûre. »*
 
 **Q10. Comment Deep Blue (1997) différait-il de l'algorithme minimax pur ?**
-> *« Deep Blue utilisait alpha-bêta avec des optimisations massives : une bibliothèque de débuts (ouvertures connues) pour ne pas chercher dans les 20 premiers coups, une bibliothèque de finales (positions résolues), et une extension de recherche sélective (explorer plus profondément les positions tactiquement complexes). Il évaluait 200 millions de positions par seconde sur matériel spécialisé. Ce n'était pas du minimax pur, mais alpha-bêta hautement optimisé avec expertise humaine encodée. »*
+Deep Blue combine une recherche optimisée, une évaluation et des ressources spécialisées. IBM documente sa victoire contre Kasparov en 1997 ; une bibliothèque d'ouvertures n'impose pas un nombre universel de vingt coups joués sans recherche.
 
 **Q11. Qu'est-ce que l'apprentissage par renforcement qu'AlphaZero utilise ?**
 > *« L'apprentissage par renforcement est un paradigme où l'agent apprend en interagissant avec son environnement et en recevant des récompenses. AlphaZero joue contre lui-même (self-play) : il reçoit +1 s'il gagne, -1 s'il perd, 0 pour une nulle. Le réseau de neurones ajuste ses paramètres pour maximiser la récompense cumulée. Après des millions de parties contre lui-même, le réseau apprend des stratégies que personne ne lui a enseignées. »*
@@ -428,7 +428,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 > *« La principale **question** est la détection de triche. Les moteurs étant plus forts que tout humain, leur usage en compétition en ligne ou en présentiel est interdit. Cela soulève des **systèmes** de détection : analyse statistique de la précision (combien de fois le joueur a joué le coup que l'engin recommande), test sur des positions atypiques, **fonctionnement** des serveurs comme Chess.com qui ont des équipes anti-triche. C'est un cas concret de **sécurité informatique** appliquée. »*
 
 **Q23. Quel rôle jouent les bases de données dans les programmes d'échecs ?**
-> *« Plusieurs **systèmes** de bases sont utilisés : (1) Les bibliothèques d'ouvertures (Encyclopaedia of Chess Openings, ECO) qui stockent des millions de parties humaines pour les 20 premiers coups. (2) Les bases de finales (Syzygy tablebase) qui résolvent toutes les positions à 7 pièces ou moins (1,5 To de **données**). (3) Les bases de parties (Lichess publie sa base ouverte de 4 milliards de parties au format PGN). C'est un **exemple** de big data appliqué à un domaine bien défini. »*
+Distingue les bibliothèques d'ouvertures, les bases de parties PGN et les tablebases de finales. La couverture des tablebases dépend notamment des droits de roque et des métriques ; un nombre de pièces ne supprime pas toutes les exceptions. Lichess publie des parties en téléchargement : date et périmètre doivent accompagner un éventuel décompte.
 
 **Q24. Comment les échecs illustrent-ils le débat sur les limites de l'IA ?**
 > *« Les échecs ont nourri trois grandes étapes du débat. (1) Deep Blue 1997 : « les machines peuvent battre les humains aux tâches calculatoires ». (2) AlphaZero 2017 : « les machines peuvent apprendre sans connaissance humaine ». (3) GPT-4 (2024) jouant aux échecs mal mais avec un raisonnement linguistique : « la généralité n'implique pas l'expertise ». Les échecs sont un fil rouge pour mesurer ce que l'IA peut et ne peut pas faire. »*
@@ -452,7 +452,6 @@ Voici une fiche mémo concentrée que tu peux imprimer ou recopier sur une feuil
 - **1997** : Deep Blue bat Kasparov (symbolique, force brute)
 - **2017** : AlphaZero bat Stockfish en 4 h (connexionniste, apprentissage)
 
-![Frise chronologique de l'IA aux échecs : 1950 Shannon et Turing, 1997 Deep Blue bat Kasparov, 2017 AlphaZero bat Stockfish en 4 heures par apprentissage par renforcement.](/images/guide-go-nsi-06-chronologie-ia.svg)
 
 ### Les trois notations de coût à manier
 
@@ -589,7 +588,7 @@ Depuis la session 2024, l'orientation n'est plus une troisième partie chronomé
 - [ ] Manger normalement le matin (**pas** plus, **pas** moins ; ventre vide accentue le stress)
 - [ ] Arriver 30 minutes en avance
 - [ ] Eau dans la salle d'attente, **pas** de café à jeun
-- [ ] Phase de préparation : 20 minutes pour choisir et organiser. Ne perds **pas** plus de 2 minutes à choisir.
+- [ ] Phase de préparation : 20 minutes pour organiser la réponse à la question choisie par le jury.
 
 ## Deux fiches intégrées : minimax et alpha-bêta
 
@@ -609,19 +608,14 @@ Une feuille évaluée à profondeur limitée n’est pas nécessairement une fin
 
 ## Sources et références
 
-- Ministère de l’Éducation nationale (2026). *Baccalauréat : comment se passe le Grand oral ?* [Règles officielles](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028) : préparation, deux temps de dix minutes et support autorisé.
-- Russell, S., & Norvig, P. (2020). *Artificial Intelligence: A Modern Approach*, 4e édition, Pearson. [Chapitre sur la recherche adversariale](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf) : bornes alpha-bêta et ordres de grandeur cités ici.
-- Allis, V. (1988). *A Knowledge-based Approach of Connect-Four*. Vrije Universiteit Amsterdam. [Mémoire intégral](https://tromp.github.io/c4/connect4_thesis.pdf) : stratégie gagnante à Puissance 4.
-
-
-- **Bulletin officiel n° 36 du 28 septembre 2023.** [*Épreuve orale dite Grand oral de la classe de terminale des voies générale et technologique : modification.*](https://www.education.gouv.fr/bo/2023/Hebdo36/MENE2323117N) (C'est ce texte qui fixe le format en vigueur depuis la session 2024 : deux temps de 10 minutes, sans partie orientation. Il remplace la note de service 2020-014, qui décrivait l'ancien découpage 5/10/5 encore repris par beaucoup de guides.)
-- **Éduscol.** [*Présentation du Grand oral.*](https://eduscol.education.gouv.fr/5661/presentation-du-grand-oral) (Page de référence du ministère sur le déroulé et les attendus.)
-- **Shannon, C. E. (1950).** [*Programming a Computer for Playing Chess.*](https://vision.unipv.it/IA1/ProgrammingaComputerforPlayingChess.pdf) *Philosophical Magazine*, Ser. 7, 41(314), 256-275. (Fondation de l'algorithme minimax. PDF intégral en accès libre.)
-- **Silver, D., et al. (DeepMind, 2018).** [*A general reinforcement learning algorithm that masters chess, shogi, and Go.*](https://www.science.org/doi/10.1126/science.aar6404) *Science*, 362(6419). (AlphaZero : apprentissage par renforcement et MCTS.)
-- **Knuth, D. & Moore, R. (1975).** [*An Analysis of Alpha-Beta Pruning.*](https://www.sciencedirect.com/science/article/pii/0004370275900193) *Artificial Intelligence*. (Analyse formelle de la coupure alpha-bêta.)
-- **Documentation Stockfish.** [*Stockfish Chess Engine, Source code.*](https://github.com/official-stockfish/Stockfish) GitHub. (Référence pour l'implémentation réelle.)
-- **Lichess Open Database.** [*lichess.org/database*](https://database.lichess.org). (Base de **données** publique de parties d'échecs au format PGN.)
-- **Sadler, M. & Regan, N. (2019).** *Game Changer : AlphaZero's Groundbreaking Chess Strategies.* New In Chess. (Analyse du style d'AlphaZero, accessible aux lycéens.)
+- Ministère de l'Éducation nationale (2026), *Baccalauréat : comment se passe le Grand oral ?* [Présentation officielle](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).
+- Russell, S. et Norvig, P. (s. d.), *Adversarial Search*, projet de chapitre d'Artificial Intelligence: A Modern Approach, Berkeley. [Texte](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
+- Allis, V. (1988), *A Knowledge-based Approach of Connect-Four*, Vrije Universiteit Amsterdam. [Mémoire](https://tromp.github.io/c4/connect4_thesis.pdf).
+- Shannon, C. E. (1950), *Programming a Computer for Playing Chess*, Philosophical Magazine, 41, 256–275. [Article](https://d1yx3ys82bpsa0.cloudfront.net/chess/programming-a-computer-for-playing-chess.shannon.062303002.pdf).
+- Silver, D. et al. (2017), *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*, préprint arXiv. [Article](https://arxiv.org/html/1712.01815v1).
+- IBM (s. d.), *Deep Blue*, histoire du projet. [Présentation](https://www.ibm.com/history/deep-blue).
+- Projet Syzygy (s. d.), *probetool*, documentation des tablebases. [Documentation](https://github.com/syzygy1/probetool).
+- Lichess (s. d.), *Lichess Open Database*. [Données](https://database.lichess.org/).
 
 ---
 
