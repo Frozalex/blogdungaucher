@@ -9,8 +9,8 @@ featuredRank: 99
 readingTime: "8 min"
 pillar: "Psychologie"
 tags: ["colère", "ragequit", "échecs", "psychologie", "neurosciences", "émotions", "amygdale", "tilt"]
-seoTitle: "Colère aux échecs et ragequit : les circuits du cerveau"
-seoDescription: "Pourquoi la défaite aux échecs déclenche une colère intense. Les circuits neurologiques du ragequit, le rôle de l'amygdale, et comment reprendre le contrôle."
+seoTitle: "Colère aux échecs et ragequit : comprendre tes réactions"
+seoDescription: "Colère après une défaite, abandon impulsif et parties relancées : observe tes réactions et essaie des pistes de régulation adaptées à ta pratique."
 faq:
   - question: "La colère dure-t-elle exactement quatre-vingt-dix secondes ?"
     answer: "Aucun délai universel n’est établi ici. Une pause peut aider sans garantir que l’émotion disparaîtra au bout d’un minuteur."
