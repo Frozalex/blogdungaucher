@@ -20,9 +20,8 @@ keyTakeaways:
   - "Le règlement interdit l'aide au jeu, pas toute communication."
   - "Pratique solitaire et sentiment de solitude sont deux choses différentes."
   - "Club et jeu en ligne peuvent tous deux accueillir des relations."
-seoTitle: "La solitude aux échecs : quand le règlement vous isole"
-seoDescription: >-
-  Les échecs imposent une solitude réglementaire unique dans le sport. Effets psychologiques, paradoxe des clubs, impact du jeu en ligne sur l'isolement du joueur.
+seoTitle: "Solitude aux échecs : autonomie de jeu et liens sociaux"
+seoDescription: "Décider sans aide pendant une partie ne signifie pas être isolé. Règles, pratique en ligne et relations en club : trouve les échanges qui te conviennent."
 ogImage: /images/og/echecs-et-la-solitude-og.webp
 heroImage:
   src: /images/blog/echecs-et-la-solitude-hero.webp
