@@ -898,7 +898,11 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
     let lastMouseY   = -1;
     let lastMouseAt  = 0;
 
+    // Une navigation locale fixe doit rester stable sous le menu, même au clic.
+    const keepVisible = Boolean(document.querySelector('[data-navbar-persistent]'));
+
     function applyState(state : string) {
+      if (keepVisible && state === "hidden") state = "scrolled";
       navbar.classList.remove("scrolled", "nav-hidden", "nav-peek");
       if (state === "scrolled") navbar.classList.add("scrolled");
       if (state === "hidden") {
