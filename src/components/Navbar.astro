@@ -316,6 +316,13 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
     box-shadow: 0 1px 0 var(--border-soft);
   }
 
+  /* Les outils fixes du glossaire demandent un fond opaque pendant la lecture. */
+  :global(body:has([data-navbar-persistent])) .navbar.scrolled {
+    background: var(--bg);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   /* ── caché ── */
   .navbar.nav-hidden {
     transform: translateY(-110%);
