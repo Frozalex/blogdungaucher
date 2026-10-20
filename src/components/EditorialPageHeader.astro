@@ -1,5 +1,5 @@
 ---
-interface Props { label: string; title: string; intro: string; active: "about" | "atlas" | "glossary" | "series" | "dissertations"; }
+interface Props { label: string; title: string; intro?: string; active: "about" | "atlas" | "glossary" | "series" | "dissertations"; }
 const { label, title, intro, active } = Astro.props;
 const links = active === "series" || active === "dissertations" ? [
   { label: "La une", href: "/fr/", key: "home" },
@@ -17,5 +17,5 @@ const links = active === "series" || active === "dissertations" ? [
 <header class="resource-header">
   <div class="resource-masthead"><a href="/fr/"><img src="/images/logo.svg" alt="" width="22" height="31" />Blog d’un Gaucher<span>.</span></a><span>Un autre regard sur les échecs</span></div>
   <nav class="resource-nav" aria-label="Le média et ses ressources">{links.map(link => <a href={link.href} aria-current={link.key === active ? "page" : undefined}>{link.label}</a>)}</nav>
-  <div class="resource-heading"><span class="resource-kicker">{label}</span><h1>{title}</h1><p>{intro}</p></div>
+  <div class="resource-heading"><span class="resource-kicker">{label}</span><h1>{title}</h1>{intro && <p>{intro}</p>}</div>
 </header>
