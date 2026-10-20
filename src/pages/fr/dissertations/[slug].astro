@@ -147,6 +147,36 @@ function formatDate(d: Date) {
     text-rendering: optimizeLegibility;
   }
 
+  .dissertation-page :global(.article-body .academic-dissertation) {
+    max-width: 70ch;
+    margin-inline: auto;
+    line-height: 1.85;
+    overflow-wrap: break-word;
+  }
+
+  .dissertation-page :global(.academic-dissertation .dissertation-movement + .dissertation-movement) {
+    margin-top: 2.5rem;
+  }
+
+  .dissertation-page :global(.academic-dissertation p) {
+    text-indent: 0;
+    margin: 0 0 1.15em;
+  }
+
+  .dissertation-page :global(.academic-dissertation p.dissertation-movement-start) {
+    text-indent: 2em;
+  }
+
+  /* La copie académique utilise des alinéas, sans les lettrines des articles. */
+  :global(:root article.dissertation-page .article-body .academic-dissertation p::first-letter) {
+    float: none;
+    initial-letter: normal;
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
   .dissertation-page :global(.article-body h2) {
     font-family: var(--font-serif, Georgia, serif);
     font-style: italic;

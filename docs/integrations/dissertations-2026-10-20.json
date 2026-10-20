@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-20",
+  "scope": "Intégration fidèle des trois textes validés ; aucune réécriture ni bibliographie publique. Commit et déploiement autorisés par l’utilisateur le 20 octobre 2026.",
+  "validation": [
+    {
+      "slug": "faut-il-apprendre-a-perdre-pour-devenir-meilleur-aux-echecs",
+      "paragraphs": 24,
+      "movements": 5,
+      "indented_paragraphs": 5,
+      "text_identical": true
+    },
+    {
+      "slug": "la-victoire-aux-echecs-justifie-t-elle-tous-les-moyens",
+      "paragraphs": 21,
+      "movements": 5,
+      "indented_paragraphs": 5,
+      "text_identical": true
+    },
+    {
+      "slug": "les-echecs-sont-ils-reellement-un-jeu-egalitaire",
+      "paragraphs": 28,
+      "movements": 5,
+      "indented_paragraphs": 5,
+      "text_identical": true
+    }
+  ],
+  "sources_checked": [
+    {
+      "url": "https://www.gutenberg.org/cache/epub/37423/pg37423-images.html",
+      "access": "Texte intégral accessible ; passage du chapitre VI consulté."
+    },
+    {
+      "url": "https://mathedseminar.pbworks.com/f/Dweck%2B%26%2BLeggett%2B%281988%29%2BA%2Bsocial-cognitive%2Bapproach%2Bto%2Bmotivation%2Band%2Bpersonality.pdf",
+      "access": "Texte intégral accessible ; passages sur les conceptions implicites consultés."
+    },
+    {
+      "url": "https://eric.ed.gov/?id=EJ386538",
+      "access": "Notice retrouvée dans la recherche ; ouverture directe échouée."
+    },
+    {
+      "url": "https://catalog.library.tamu.edu/Record/in00001433009/Details",
+      "access": "Notice bibliographique uniquement ; livre de Bandura non relu intégralement."
+    },
+    {
+      "url": "https://blogs.ischool.berkeley.edu/i225s14/files/2014/04/Ericsson-1993-article.pdf",
+      "access": "Texte intégral accessible ; résumé consulté. Aucune nouvelle donnée chiffrée ajoutée."
+    },
+    {
+      "url": "https://broadviewpress.com/product/the-grasshopper-third-edition/",
+      "access": "Présentation de l’éditeur uniquement ; ouvrage non relu intégralement."
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Groundwork_of_the_Metaphysics_of_Morals",
+      "access": "Texte intégral accessible ; formulation de l’humanité comme fin consultée."
+    },
+    {
+      "url": "https://handbook.fide.com/chapter/e012023",
+      "access": "Règlement intégral accessible ; articles 1.4.1, 6.9, 11.3 et 11.5 consultés."
+    },
+    {
+      "url": "https://www.chabris.com/Chabris2006b.pdf",
+      "access": "Texte intégral accessible sur le site de l’auteur ; discussion sur les différences de participation consultée."
+    },
+    {
+      "url": "https://www.leseditionsdeminuit.fr/livre-La_Reproduction-1952-1-1-0-1.html",
+      "access": "Notice de l’éditeur consultée ; texte du livre non relu intégralement."
+    },
+    {
+      "url": "https://pressbooks.bccampus.ca/philosophyreader102/chapter/rawls-a-theory-of-justice/",
+      "access": "Extrait de A Theory of Justice accessible ; ne couvre pas toutes les formulations de l’égalité équitable des chances."
+    },
+    {
+      "url": "https://ratings.fide.com/profile/700070/top",
+      "access": "Profil officiel de Judit Polgár consulté."
+    },
+    {
+      "url": "https://wom.fide.com/judit-polgar/",
+      "access": "Extrait de recherche consulté ; date du rang maximal indiquée 2004, différente des classements de 2005. Pas de correction du texte validé sur cette seule notice."
+    },
+    {
+      "url": "https://en.chessbase.com/post/fide-october-2005-rating-lists",
+      "access": "Tableau de classement d’octobre 2005 retrouvé en recherche : Polgár huitième. Source de contrôle complémentaire ; aucune citation ajoutée."
+    },
+    {
+      "url": "https://handbook.fide.com/chapter/e012023",
+      "access": "Annexe D consultée pour les aménagements de jeu des personnes malvoyantes."
+    }
+  ],
+  "editorial_notes": [
+    "Texte et paragraphes conservés à l’identique ; seules les marques Markdown d’emphase et les espaces idéographiques sont convertis en balises et alinéas CSS.",
+    "Le retrait provient exclusivement de la classe dissertation-movement-start. Les cinq mouvements ont une étiquette accessible sans titre visible.",
+    "La consigne finale de fidélité exclut une réécriture de référence ou une comparaison concurrentielle dans cette intégration.",
+    "Les conclusions sont conservées malgré leur nombre de lignes variable selon la largeur d’écran.",
+    "La troisième pièce jointe était tronquée dans la conclusion ; la conclusion complète fournie séparément par l’utilisateur le même jour la remplace. Aucun autre changement de texte."
+  ],
+  "browser_validation": [
+    {
+      "width": 390,
+      "slug": "faut-il-apprendre-a-perdre-pour-devenir-meilleur-aux-echecs",
+      "title": "Faut-il apprendre à perdre pour devenir meilleur aux échecs ?",
+      "sections": 5,
+      "marked": 5,
+      "indented": 5,
+      "conclusionMarked": true,
+      "headings": 0,
+      "paragraphs": 24,
+      "overflow": false,
+      "firstLetterSize": "16px",
+      "fontSize": "16px",
+      "seo": true,
+      "textIdentical": true
+    },
+    {
+      "width": 390,
+      "slug": "la-victoire-aux-echecs-justifie-t-elle-tous-les-moyens",
+      "title": "La victoire aux échecs justifie-t-elle tous les moyens ?",
+      "sections": 5,
+      "marked": 5,
+      "indented": 5,
+      "conclusionMarked": true,
+      "headings": 0,
+      "paragraphs": 21,
+      "overflow": false,
+      "firstLetterSize": "16px",
+      "fontSize": "16px",
+      "seo": true,
+      "textIdentical": true
+    },
+    {
+      "width": 390,
+      "slug": "les-echecs-sont-ils-reellement-un-jeu-egalitaire",
+      "title": "Les échecs sont-ils réellement un jeu égalitaire ?",
+      "sections": 5,
+      "marked": 5,
+      "indented": 5,
+      "conclusionMarked": true,
+      "headings": 0,
+      "paragraphs": 28,
+      "overflow": false,
+      "firstLetterSize": "16px",
+      "fontSize": "16px",
+      "seo": true,
+      "textIdentical": true
+    },
+    {
+      "width": 1440,
+      "slug": "faut-il-apprendre-a-perdre-pour-devenir-meilleur-aux-echecs",
+      "title": "Faut-il apprendre à perdre pour devenir meilleur aux échecs ?",
+      "sections": 5,
+      "marked": 5,
+      "indented": 5,
+      "conclusionMarked": true,
+      "headings": 0,
+      "paragraphs": 24,
+      "overflow": false,
+      "firstLetterSize": "18px",
+      "fontSize": "18px",
+      "seo": true,
+      "textIdentical": true
+    },
+    {
+      "width": 1440,
+      "slug": "la-victoire-aux-echecs-justifie-t-elle-tous-les-moyens",
+      "title": "La victoire aux échecs justifie-t-elle tous les moyens ?",
+      "sections": 5,
+      "marked": 5,
+      "indented": 5,
+      "conclusionMarked": true,
+      "headings": 0,
+      "paragraphs": 21,
+      "overflow": false,
+      "firstLetterSize": "18px",
+      "fontSize": "18px",
+      "seo": true,
+      "textIdentical": true
+    },
+    {
+      "width": 1440,
+      "slug": "les-echecs-sont-ils-reellement-un-jeu-egalitaire",
+      "title": "Les échecs sont-ils réellement un jeu égalitaire ?",
+      "sections": 5,
+      "marked": 5,
+      "indented": 5,
+      "conclusionMarked": true,
+      "headings": 0,
+      "paragraphs": 28,
+      "overflow": false,
+      "firstLetterSize": "18px",
+      "fontSize": "18px",
+      "seo": true,
+      "textIdentical": true
+    }
+  ],
+  "hub_links_checked": true,
+  "build_validation": {
+    "log": "/tmp/dissertations-three-build.log",
+    "result": "npm run build réussi ; 400 pages et 19 176 liens internes vérifiés, aucun lien interne mort."
+  }
+}
