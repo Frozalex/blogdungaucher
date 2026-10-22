@@ -118,7 +118,6 @@ function initAnalysisPage() {
     }
 
     const diff = whiteMat - blackMat;
-    const diffStr = diff > 0 ? ` +${diff}` : diff < 0 ? ` ${diff}` : "";
 
     if (orientation === "white") {
       capturedBlack.innerHTML = `<span class="captured-pieces">${whiteCaptures}</span>${diff > 0 ? `<span class="mat-diff">+${diff}</span>` : ""}`;
@@ -131,7 +130,6 @@ function initAnalysisPage() {
 
   // --- Move list with clickable moves (chess.com style: pairs on same row) ---
   const updateMoves = () => {
-    const totalMoves = replayMoves.length ? replayMoves.length : chess.history().length;
     const allMoves = replayMoves.length ? replayMoves : chess.history({ verbose: true });
     movesList.innerHTML = "";
 

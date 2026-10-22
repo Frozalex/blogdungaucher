@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import EditorialLegalPage from "../../components/EditorialLegalPage.astro";
 import { buildBreadcrumbJsonLd } from "../../utils/blog";
 ---
 <BaseLayout
@@ -16,187 +17,123 @@ import { buildBreadcrumbJsonLd } from "../../utils/blog";
     { name: "Politique de confidentialité", path: "/fr/politique-confidentialite/" },
   ])}
 >
-  <section class="legal">
-    <div class="container">
-      <header class="legal-header">
-        <h1>Politique de confidentialité</h1>
-        <p class="legal-lead">
-          Blog d'un Gaucher accorde une grande importance à la protection de vos données personnelles. L'objectif est de limiter les traitements inutiles et de garantir une expérience de lecture sécurisée et transparente.
-        </p>
-        <p class="legal-lead">Dernière mise à jour : 18 octobre 2026.</p>
-      </header>
+  <EditorialLegalPage lang="fr" kind="privacy" title="Politique de confidentialité"
+    headings={[
+      "1. Collecte et utilisation des données",
+      "2. Newsletter (Brevo)",
+      "3. Mesure d'audience auto-hébergée (Umami)",
+      "4. Publicités tierces",
+      "5. Notifications du navigateur (Web Push et ntfy)",
+      "6. Commentaires (remark42, auto-hébergé)",
+      "7. Vos droits et les destinataires des données",
+    ]}
+  >
+    <p slot="intro" class="legal-lead">
+      Blog d'un Gaucher accorde une grande importance à la protection de vos données personnelles. L'objectif est de limiter les traitements inutiles et de garantir une expérience de lecture sécurisée et transparente.
+    </p>
+    <p slot="updated" class="legal-lead">Dernière mise à jour : 18 octobre 2026.</p>
 
-      <div class="legal-body">
+    <section id="legal-section-1">
+      <h2>1. Collecte et utilisation des données</h2>
+      <p>
+        blogdungaucher.com limite la collecte de données et distingue les traitements strictement nécessaires des traitements optionnels.
+      </p>
+      <ul>
+        <li><strong>Navigation simple :</strong> aucune création de compte n'est demandée pour consulter les articles.</li>
+        <li><strong>Données de connexion :</strong> l'hébergeur Hostinger collecte des données techniques (adresse IP, navigateur, système, horodatage) à des fins de sécurité et de maintenance. Base légale : intérêt légitime.</li>
+        <li><strong>Contact :</strong> si vous nous écrivez à <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>, votre adresse est utilisée uniquement pour vous répondre.</li>
+      </ul>
+      <p>
+        Durée de conservation : les emails de contact sont conservés le temps nécessaire à l'échange, puis supprimés ou archivés de manière raisonnable.
+      </p>
+    </section>
 
-        <section>
-          <h2>1. Collecte et utilisation des données</h2>
-          <p>
-            blogdungaucher.com limite la collecte de données et distingue les traitements strictement nécessaires des traitements optionnels.
-          </p>
-          <ul>
-            <li><strong>Navigation simple :</strong> aucune création de compte n'est demandée pour consulter les articles.</li>
-            <li><strong>Données de connexion :</strong> l'hébergeur Hostinger collecte des données techniques (adresse IP, navigateur, système, horodatage) à des fins de sécurité et de maintenance. Base légale : intérêt légitime.</li>
-            <li><strong>Contact :</strong> si vous nous écrivez à <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>, votre adresse est utilisée uniquement pour vous répondre.</li>
-          </ul>
-          <p>
-            Durée de conservation : les emails de contact sont conservés le temps nécessaire à l'échange, puis supprimés ou archivés de manière raisonnable.
-          </p>
-        </section>
+    <section id="legal-section-2">
+      <h2>2. Newsletter (Brevo)</h2>
+      <p>
+        L'inscription à la newsletter est facultative et repose sur votre consentement. Elle permet de recevoir les nouveaux articles par email et, lors d'une première inscription, un message de bienvenue. Elle est indépendante des notifications du navigateur et des préférences publicitaires ; elle n'est pas nécessaire pour lire le blog.
+      </p>
+      <p>
+        Votre adresse email est nécessaire à l'inscription. Un prénom peut être associé à votre contact si vous l'avez communiqué. Ces informations sont transmises à Brevo, notre prestataire de gestion des contacts et d'envoi des emails. Brevo peut également traiter des informations de livraison et, selon les réglages des envois, d'interaction avec les messages, notamment les ouvertures et les clics. Pour en savoir plus : <a href="https://www.brevo.com/fr/legal/privacypolicy/" target="_blank" rel="noopener noreferrer">politique de confidentialité de Brevo</a>.
+      </p>
+      <p>
+        Les données du formulaire et des informations techniques de connexion, dont l'adresse IP et le temps de remplissage, sont aussi traitées par notre serveur pour vérifier les demandes et limiter les inscriptions abusives. Cette protection repose sur notre intérêt légitime à sécuriser le service.
+      </p>
+      <p>
+        Vous pouvez retirer votre consentement par le lien de désinscription des emails ou en écrivant à <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>. Les données sont conservées pour gérer votre inscription tant qu'elle est active. Après une désinscription, un contact peut rester enregistré chez Brevo avec un statut d'exclusion pour éviter de nouveaux envois : la désinscription n'entraîne pas nécessairement l'effacement immédiat de toutes les données. Vous pouvez demander leur suppression ou des précisions sur leur conservation à cette même adresse.
+      </p>
+    </section>
 
-        <section>
-          <h2>2. Newsletter (Brevo)</h2>
-          <p>
-            L'inscription à la newsletter est facultative et repose sur votre consentement. Elle permet de recevoir les nouveaux articles par email et, lors d'une première inscription, un message de bienvenue. Elle est indépendante des notifications du navigateur et des préférences publicitaires ; elle n'est pas nécessaire pour lire le blog.
-          </p>
-          <p>
-            Votre adresse email est nécessaire à l'inscription. Un prénom peut être associé à votre contact si vous l'avez communiqué. Ces informations sont transmises à Brevo, notre prestataire de gestion des contacts et d'envoi des emails. Brevo peut également traiter des informations de livraison et, selon les réglages des envois, d'interaction avec les messages, notamment les ouvertures et les clics. Pour en savoir plus : <a href="https://www.brevo.com/fr/legal/privacypolicy/" target="_blank" rel="noopener noreferrer">politique de confidentialité de Brevo</a>.
-          </p>
-          <p>
-            Les données du formulaire et des informations techniques de connexion, dont l'adresse IP et le temps de remplissage, sont aussi traitées par notre serveur pour vérifier les demandes et limiter les inscriptions abusives. Cette protection repose sur notre intérêt légitime à sécuriser le service.
-          </p>
-          <p>
-            Vous pouvez retirer votre consentement par le lien de désinscription des emails ou en écrivant à <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>. Les données sont conservées pour gérer votre inscription tant qu'elle est active. Après une désinscription, un contact peut rester enregistré chez Brevo avec un statut d'exclusion pour éviter de nouveaux envois : la désinscription n'entraîne pas nécessairement l'effacement immédiat de toutes les données. Vous pouvez demander leur suppression ou des précisions sur leur conservation à cette même adresse.
-          </p>
-        </section>
+    <section id="legal-section-3">
+      <h2>3. Mesure d'audience auto-hébergée (Umami)</h2>
+      <p>
+        Lorsqu'elle est activée, la mesure d'audience du site utilise Umami, hébergé sur notre infrastructure à l'adresse <code>stats.blogdungaucher.com</code>. Elle sert à comprendre la fréquentation, les contenus consultés et les difficultés de navigation, afin d'améliorer le blog, sur le fondement de notre intérêt légitime.
+      </p>
+      <p>
+        Umami fonctionne sans cookie de mesure d'audience. Les informations traitées peuvent comprendre les pages consultées, le site de provenance, le navigateur, le système d'exploitation, le type d'appareil et le pays estimé à partir de la connexion. Des informations techniques, dont l'adresse IP, sont nécessaires à l'acheminement des requêtes ; l'outil présente à l'éditeur des statistiques de fréquentation. Le formulaire de newsletter ne transmet pas votre adresse email à Umami.
+      </p>
+      <p>
+        Cette mesure, lorsqu'elle est activée, fonctionne indépendamment du choix de notifications : le panneau « Notifications » ne la commande pas. L'absence de cookie ne constitue pas à elle seule une certification ou une exemption générale de consentement.
+      </p>
+      <p>
+        La conservation des statistiques répond aux besoins d'analyse de la fréquentation et de comparaison entre périodes. Pour connaître la conservation appliquée, poser une question ou exercer votre droit d'opposition, contactez <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>.
+      </p>
+    </section>
 
-        <section>
-          <h2>3. Mesure d'audience auto-hébergée (Umami)</h2>
-          <p>
-            Lorsqu'elle est activée, la mesure d'audience du site utilise Umami, hébergé sur notre infrastructure à l'adresse <code>stats.blogdungaucher.com</code>. Elle sert à comprendre la fréquentation, les contenus consultés et les difficultés de navigation, afin d'améliorer le blog, sur le fondement de notre intérêt légitime.
-          </p>
-          <p>
-            Umami fonctionne sans cookie de mesure d'audience. Les informations traitées peuvent comprendre les pages consultées, le site de provenance, le navigateur, le système d'exploitation, le type d'appareil et le pays estimé à partir de la connexion. Des informations techniques, dont l'adresse IP, sont nécessaires à l'acheminement des requêtes ; l'outil présente à l'éditeur des statistiques de fréquentation. Le formulaire de newsletter ne transmet pas votre adresse email à Umami.
-          </p>
-          <p>
-            Cette mesure, lorsqu'elle est activée, fonctionne indépendamment du choix de notifications : le panneau « Notifications » ne la commande pas. L'absence de cookie ne constitue pas à elle seule une certification ou une exemption générale de consentement.
-          </p>
-          <p>
-            La conservation des statistiques répond aux besoins d'analyse de la fréquentation et de comparaison entre périodes. Pour connaître la conservation appliquée, poser une question ou exercer votre droit d'opposition, contactez <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>.
-          </p>
-        </section>
+    <section id="legal-section-4">
+      <h2>4. Publicités tierces</h2>
+      <p>
+        Le site peut utiliser Google AdSense pour financer son hébergement et son développement. Sa bibliothèque peut être chargée sur les pages du site. Google et ses partenaires peuvent utiliser des cookies et d'autres traceurs pour diffuser des annonces en fonction de vos visites sur ce site ou sur d'autres sites.
+      </p>
+      <p>
+        Le site initialise les signaux Google Consent Mode à « refusé ». Les choix publicitaires relèvent de l'outil de gestion du consentement publicitaire lorsqu'il vous est présenté ; le panneau « Notifications » ne recueille ni ne modifie ces choix. L'inscription à la newsletter ne vaut pas consentement à la publicité personnalisée.
+      </p>
+      <p>
+        Les informations de Google sont disponibles dans ses <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">règles relatives à la publicité</a>. Vous pouvez également gérer la personnalisation dans <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Mes préférences publicitaires Google</a>.
+      </p>
+    </section>
 
-        <section>
-          <h2>4. Publicités tierces</h2>
-          <p>
-            Le site peut utiliser Google AdSense pour financer son hébergement et son développement. Sa bibliothèque peut être chargée sur les pages du site. Google et ses partenaires peuvent utiliser des cookies et d'autres traceurs pour diffuser des annonces en fonction de vos visites sur ce site ou sur d'autres sites.
-          </p>
-          <p>
-            Le site initialise les signaux Google Consent Mode à « refusé ». Les choix publicitaires relèvent de l'outil de gestion du consentement publicitaire lorsqu'il vous est présenté ; le panneau « Notifications » ne recueille ni ne modifie ces choix. L'inscription à la newsletter ne vaut pas consentement à la publicité personnalisée.
-          </p>
-          <p>
-            Les informations de Google sont disponibles dans ses <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">règles relatives à la publicité</a>. Vous pouvez également gérer la personnalisation dans <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Mes préférences publicitaires Google</a>.
-          </p>
-        </section>
+    <section id="legal-section-5">
+      <h2>5. Notifications du navigateur (Web Push et ntfy)</h2>
+      <p>
+        Les notifications de nouveaux articles sont facultatives et reposent sur votre consentement ainsi que sur l'autorisation de votre navigateur. Elles sont distinctes de la newsletter et de la publicité. Selon le bouton et la configuration utilisés, l'abonnement est enregistré par le service Web Push du site ou par notre instance ntfy à l'adresse <code>ntfy.blogdungaucher.com</code>.
+      </p>
+      <p>
+        Les données nécessaires comprennent l'adresse technique de livraison de l'abonnement, ses clés de chiffrement et, lorsqu'elle est fournie, une information d'expiration. La livraison passe aussi par le service push du fournisseur de votre navigateur ou de votre système d'exploitation : elle ne transite donc pas exclusivement par nos serveurs. Votre adresse email n'est pas nécessaire pour ces notifications.
+      </p>
+      <p>
+        Le site mémorise votre préférence de notifications et, selon le bouton utilisé, un indicateur d'abonnement dans le stockage local de votre navigateur. Ces réglages restent propres à l'appareil et au navigateur utilisés, jusqu'à leur modification ou à l'effacement des données du site. Le panneau de préférences conserve également la date de votre choix.
+      </p>
+      <p>
+        Pour arrêter les alertes, utilisez le bouton d'abonnement du pied de page, désactivez l'option dans le panneau « Notifications », ou retirez l'autorisation dans les réglages de votre navigateur. Le bouton d'abonnement demande aussi le retrait de l'abonnement au service Web Push du site. Un blocage dans le navigateur ou une désactivation dans le panneau n'efface pas nécessairement immédiatement l'enregistrement côté serveur.
+      </p>
+      <p>
+        Les données d'abonnement sont conservées pour acheminer les alertes tant que l'abonnement est utilisé. Selon le circuit, les inscriptions devenues invalides sont retirées lorsque le service les signale comme expirées, notamment lors d'un envoi. Pour demander la suppression d'un enregistrement restant ou obtenir des informations sur sa conservation, écrivez à <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>.
+      </p>
+    </section>
 
-        <section>
-          <h2>5. Notifications du navigateur (Web Push et ntfy)</h2>
-          <p>
-            Les notifications de nouveaux articles sont facultatives et reposent sur votre consentement ainsi que sur l'autorisation de votre navigateur. Elles sont distinctes de la newsletter et de la publicité. Selon le bouton et la configuration utilisés, l'abonnement est enregistré par le service Web Push du site ou par notre instance ntfy à l'adresse <code>ntfy.blogdungaucher.com</code>.
-          </p>
-          <p>
-            Les données nécessaires comprennent l'adresse technique de livraison de l'abonnement, ses clés de chiffrement et, lorsqu'elle est fournie, une information d'expiration. La livraison passe aussi par le service push du fournisseur de votre navigateur ou de votre système d'exploitation : elle ne transite donc pas exclusivement par nos serveurs. Votre adresse email n'est pas nécessaire pour ces notifications.
-          </p>
-          <p>
-            Le site mémorise votre préférence de notifications et, selon le bouton utilisé, un indicateur d'abonnement dans le stockage local de votre navigateur. Ces réglages restent propres à l'appareil et au navigateur utilisés, jusqu'à leur modification ou à l'effacement des données du site. Le panneau de préférences conserve également la date de votre choix.
-          </p>
-          <p>
-            Pour arrêter les alertes, utilisez le bouton d'abonnement du pied de page, désactivez l'option dans le panneau « Notifications », ou retirez l'autorisation dans les réglages de votre navigateur. Le bouton d'abonnement demande aussi le retrait de l'abonnement au service Web Push du site. Un blocage dans le navigateur ou une désactivation dans le panneau n'efface pas nécessairement immédiatement l'enregistrement côté serveur.
-          </p>
-          <p>
-            Les données d'abonnement sont conservées pour acheminer les alertes tant que l'abonnement est utilisé. Selon le circuit, les inscriptions devenues invalides sont retirées lorsque le service les signale comme expirées, notamment lors d'un envoi. Pour demander la suppression d'un enregistrement restant ou obtenir des informations sur sa conservation, écrivez à <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a>.
-          </p>
-        </section>
+    <section id="legal-section-6">
+      <h2>6. Commentaires (remark42, auto-hébergé)</h2>
+      <p>
+        Le système de commentaires est géré par remark42, hébergé sur notre propre infrastructure (<code>remark42.blogdungaucher.com</code>). Une connexion optionnelle via GitHub fait intervenir ce fournisseur pour l'authentification.
+      </p>
+      <p>
+        Vous pouvez commenter de façon anonyme ou vous authentifier via GitHub OAuth (optionnel). En cas d'authentification GitHub, les informations publiques de votre profil (nom, avatar) sont transmises à notre serveur remark42 pour afficher votre identité à côté de vos messages. Ces données sont stockées dans notre base de données locale (fichier Bolt DB sur nos serveurs) et supprimées sur demande. Vous pouvez contacter <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a> pour supprimer vos commentaires.
+      </p>
+    </section>
 
-        <section>
-          <h2>6. Commentaires (remark42, auto-hébergé)</h2>
-          <p>
-            Le système de commentaires est géré par remark42, hébergé sur notre propre infrastructure (<code>remark42.blogdungaucher.com</code>). Une connexion optionnelle via GitHub fait intervenir ce fournisseur pour l'authentification.
-          </p>
-          <p>
-            Vous pouvez commenter de façon anonyme ou vous authentifier via GitHub OAuth (optionnel). En cas d'authentification GitHub, les informations publiques de votre profil (nom, avatar) sont transmises à notre serveur remark42 pour afficher votre identité à côté de vos messages. Ces données sont stockées dans notre base de données locale (fichier Bolt DB sur nos serveurs) et supprimées sur demande. Vous pouvez contacter <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a> pour supprimer vos commentaires.
-          </p>
-        </section>
-
-        <section>
-          <h2>7. Vos droits et les destinataires des données</h2>
-          <p>
-            L'éditeur du Blog d'un Gaucher, présenté dans les <a href="/fr/mentions-legales/">mentions légales</a>, est responsable des traitements décrits ici. Conformément au RGPD et à la loi Informatique et Libertés, vous disposez, selon les conditions applicables, des droits d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité. Vous pouvez retirer votre consentement aux traitements facultatifs sans remettre en cause les traitements antérieurs au retrait.
-          </p>
-          <ul>
-            <li><strong>Contact :</strong> <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a> pour exercer vos droits ou demander des informations sur les données et leur conservation.</li>
-            <li><strong>Destinataires :</strong> l'éditeur et son hébergeur Hostinger ; Brevo pour les contacts et les emails de la newsletter ; notre instance Umami lorsque la mesure d'audience est activée ; nos services Web Push et ntfy ainsi que les services push des navigateurs pour les notifications ; Google et ses partenaires pour les services publicitaires ; remark42 et, si vous choisissez cette connexion, GitHub pour les commentaires.</li>
-            <li><strong>Transferts :</strong> certains de ces fournisseurs et leurs sous-traitants peuvent traiter des données hors de l'Espace économique européen. Leurs politiques décrivent les lieux de traitement et les garanties annoncées. Vous pouvez nous demander des précisions sur les destinataires et les garanties applicables à vos données.</li>
-            <li><strong>Choix séparés :</strong> le désabonnement à la newsletter, les notifications du navigateur et les préférences publicitaires se gèrent séparément ; le panneau « Notifications » n'est pas un outil général de gestion des cookies.</li>
-            <li><strong>Réclamation :</strong> vous pouvez saisir la <a href="https://www.cnil.fr/" target="_blank" rel="noopener noreferrer">CNIL</a>, sans que cela vous oblige à nous contacter au préalable.</li>
-          </ul>
-        </section>
-
-      </div>
-    </div>
-  </section>
+    <section id="legal-section-7">
+      <h2>7. Vos droits et les destinataires des données</h2>
+      <p>
+        L'éditeur du Blog d'un Gaucher, présenté dans les <a href="/fr/mentions-legales/">mentions légales</a>, est responsable des traitements décrits ici. Conformément au RGPD et à la loi Informatique et Libertés, vous disposez, selon les conditions applicables, des droits d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité. Vous pouvez retirer votre consentement aux traitements facultatifs sans remettre en cause les traitements antérieurs au retrait.
+      </p>
+      <ul>
+        <li><strong>Contact :</strong> <a href="mailto:contact@blogdungaucher.com">contact@blogdungaucher.com</a> pour exercer vos droits ou demander des informations sur les données et leur conservation.</li>
+        <li><strong>Destinataires :</strong> l'éditeur et son hébergeur Hostinger ; Brevo pour les contacts et les emails de la newsletter ; notre instance Umami lorsque la mesure d'audience est activée ; nos services Web Push et ntfy ainsi que les services push des navigateurs pour les notifications ; Google et ses partenaires pour les services publicitaires ; remark42 et, si vous choisissez cette connexion, GitHub pour les commentaires.</li>
+        <li><strong>Transferts :</strong> certains de ces fournisseurs et leurs sous-traitants peuvent traiter des données hors de l'Espace économique européen. Leurs politiques décrivent les lieux de traitement et les garanties annoncées. Vous pouvez nous demander des précisions sur les destinataires et les garanties applicables à vos données.</li>
+        <li><strong>Choix séparés :</strong> le désabonnement à la newsletter, les notifications du navigateur et les préférences publicitaires se gèrent séparément ; le panneau « Notifications » n'est pas un outil général de gestion des cookies.</li>
+        <li><strong>Réclamation :</strong> vous pouvez saisir la <a href="https://www.cnil.fr/" target="_blank" rel="noopener noreferrer">CNIL</a>, sans que cela vous oblige à nous contacter au préalable.</li>
+      </ul>
+    </section>
+  </EditorialLegalPage>
 </BaseLayout>
-
-<style>
-  .legal {
-    padding: 4rem 0 5rem;
-  }
-
-  .legal .container {
-    max-width: 46rem;
-  }
-
-  .legal-header {
-    margin-bottom: 2.5rem;
-  }
-
-  .legal-header h1 {
-    font-size: clamp(1.9rem, 4vw, 2.6rem);
-    margin: 0 0 1rem;
-  }
-
-  .legal-lead {
-    color: var(--text-muted);
-    font-size: 1rem;
-    line-height: 1.65;
-    margin: 0;
-  }
-
-  .legal-body section {
-    margin-bottom: 2.5rem;
-  }
-
-  .legal-body h2 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-main);
-    margin: 0 0 0.85rem;
-  }
-
-  .legal-body p {
-    color: var(--text-main);
-    line-height: 1.65;
-    margin: 0 0 0.75rem;
-  }
-
-  .legal-body strong {
-    font-weight: 600;
-  }
-
-  .legal-body a {
-    color: var(--text-main);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
-  }
-
-  .legal-body ul {
-    margin: 0.5rem 0 0;
-    padding-left: 1.2rem;
-    list-style: disc;
-  }
-
-  .legal-body li {
-    color: var(--text-main);
-    line-height: 1.65;
-    margin-bottom: 0.4rem;
-  }
-</style>

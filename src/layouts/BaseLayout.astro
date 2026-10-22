@@ -15,11 +15,8 @@ import ScrollableContent from "../components/ScrollableContent.astro";
 import { siteConfig, adsenseConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, enStaticRoutes, ptBrStaticRoutes, isIndexedLang } from "../data/site";
 import { swapLangPrefix, withTrailingSlash } from "../utils/lang-paths";
 
-// Préchargement de la police de titre (Space Grotesk, subset latin) : présente dans le H1/LCP de
-// toutes les pages, légère (~22 ko), donc gaspillage négligeable. `?url` renvoie l'URL hashée émise
-// par Astro → même fichier que le @font-face, aucun double téléchargement. On NE précharge PAS Fraunces
-// (accent du hero, 80 ko, spécifique à l'accueil) : sur Slow-4G le tuyau est le goulot, pas la découverte.
-import spaceGroteskWoff2 from "@fontsource-variable/space-grotesk/files/space-grotesk-latin-wght-normal.woff2?url";
+// `?url` réutilise le fichier haché de @font-face pour le préchargement.
+import frauncesWoff2 from "@fontsource-variable/fraunces/files/fraunces-latin-opsz-normal.woff2?url";
 
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
@@ -259,9 +256,8 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <meta name="apple-mobile-web-app-title" content="Blog Gaucher" />
     <link rel="manifest" href="/manifest.json" />
 
-    {/* ── Préchargement de la police de titre (Space Grotesk) présente dans le H1/LCP de chaque page.
-         crossorigin obligatoire : les woff2 sont chargés en mode CORS anonyme même en same-origin. */}
-    <link rel="preload" as="font" type="font/woff2" href={spaceGroteskWoff2} crossorigin />
+    {/* Les polices utilisent le mode CORS anonyme, même depuis la même origine. */}
+    <link rel="preload" as="font" type="font/woff2" href={frauncesWoff2} crossorigin />
 
     {/* Préchargement de l'image LCP (hero d'article) : le navigateur la découvre
         sinon tard, après le CSS. `fetchpriority=high` la hisse en tête de file. */}
@@ -276,9 +272,9 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
       />
     )}
 
-    {/* ── i18n : dictionnaire runtime externalisé (bloquant + caché), AVANT le script anti-flash ──
-         pour qu'il soit disponible synchronement (swap EN + aria-labels FR de la navbar). */}
-    <script is:inline src={`/i18n-dict.js?v=${i18nDictHash}`}></script>
+    {/* Les traductions sont déjà rendues côté serveur : le dictionnaire reste
+        disponible pour les interactions sans bloquer le parsing du HTML. */}
+    <script is:inline src={`/i18n-dict.js?v=${i18nDictHash}`} defer></script>
 
     {/* ── Anti-flash : dark mode + i18n appliqués avant render ── */}
     <script is:inline>
@@ -290,11 +286,9 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         document.documentElement.dataset.theme = theme;
 
         // ── I18N runtime ──
-        var T = window.__I18N_DICT__ || { fr: {}, en: {} };
-
-        window.__i18n = T;
-
         function applyLang(lang) {
+          var T = window.__I18N_DICT__ || { fr: {}, en: {} };
+          window.__i18n = T;
           // Update <html lang> attribute
           document.documentElement.lang = lang === "en" ? "en" : "fr";
           var dict = T[lang] || T.fr;
@@ -348,7 +342,15 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         window.__lang = pageLang;
         // Le rendu serveur fait déjà foi dans chaque langue ; applyLang ne couvre que le
         // runtime fr/en, on ne l'invoque donc que pour EN (parité des nœuds [data-t]).
-        if (pageLang === "en") applyLang("en");
+        function initLang() {
+          window.__i18n = window.__I18N_DICT__ || { fr: {}, en: {} };
+          if (window.__lang === "en") applyLang("en");
+        }
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initLang, { once: true });
+        } else {
+          initLang();
+        }
       })();
     </script>
     <meta name="google-adsense-account" content="ca-pub-1244325018333025" />
@@ -552,13 +554,8 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
 
   </head>
   <body style={accentColor ? `--page-accent:${accentColor}` : ""}>
-    {/* Skip-link "Aller au contenu" retiré (réintroduction : remettre
-        <a class="skip-link" href="#main-content">Aller au contenu</a> ici ;
-        le CSS .skip-link reste dormant dans global.css). */}
     <Navbar frHref={resolvedFrPath} enHref={enSwitchHref} ptBrHref={ptBrSwitchHref} nlHref={resolvedNlPath} lang={lang} />
-    {/* tabindex="-1" : permet au skip-link de poser le focus programmatiquement
-       sur <main>, garantissant que les lecteurs d'écran annoncent bien le landmark
-       et que les navigateurs ne se contentent pas de scroller sans focuser. */}
+    {/* Le contenu principal peut recevoir le focus après une navigation. */}
     <main id="main-content" tabindex="-1">
       <slot />
     </main>
@@ -573,9 +570,15 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
 
     {/* ── Service Worker + réapplication préférences après View Transitions ── */}
     <script>
-      // Enregistrement du service worker (PWA)
+      // Le précache hors ligne démarre après les ressources de la page courante.
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js").catch(() => {});
+        const registerOffline = () => {
+          const register = () => { navigator.serviceWorker.register("/sw.js").catch(() => {}); };
+          if ("requestIdleCallback" in window) window.requestIdleCallback(register, { timeout: 3000 });
+          else setTimeout(register, 0);
+        };
+        if (document.readyState === "complete") registerOffline();
+        else window.addEventListener("load", registerOffline, { once: true });
       }
 
       // Langue courante dérivée de l'URL (repli si le helper anti-flash manque).

@@ -835,12 +835,12 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
   .mobile-lang { border-radius:3px; }
   @media(min-width:961px) { .mobile-menu { display:none; } }
   @media(max-width:960px) {
-    .nav-actions { display:flex; margin-left:auto; }
+    .nav-actions { display:flex; margin-left:auto; flex-shrink:0; }
     .nav-actions>:not(.search-btn) { display:none; }
-    .burger { display:flex; margin-left:0; border-radius:3px; background:transparent; }
+    .burger { display:flex; margin-left:0; flex-shrink:0; border-radius:3px; background:transparent; }
     .nav-inner { gap:.35rem; }
-    .nav-logo { min-width:0; }
-    .navbar--editorial .logo-text { font-size:1rem; }
+    .nav-logo { min-width:0; flex-shrink:1; }
+    .navbar--editorial .logo-text { min-width:0; overflow:hidden; text-overflow:ellipsis; font-size:1rem; }
   }
   @media(prefers-reduced-motion:reduce) { .navbar,.navbar * { transition:none!important; } }
 </style>

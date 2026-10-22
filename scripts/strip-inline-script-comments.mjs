@@ -7,21 +7,23 @@
  * nettoie dans `dist/` uniquement — les sources gardent leur documentation.
  *
  * L'analyse est déléguée à esbuild (parseur JS réel) : les `//` présents dans
- * une chaîne, une expression régulière ou un gabarit sont conservés.
+ * une chaîne, une expression régulière ou un gabarit sont conservés, ainsi
+ * que les mentions de licence.
  */
 
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { load } from "cheerio";
 import * as esbuild from "esbuild";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const DIST = path.join(ROOT, "dist");
+const DIST = path.resolve(process.argv[2] ?? path.join(ROOT, "dist"));
 
 /** Scripts à ne pas toucher : ressources externes et données non-JS (JSON-LD). */
 function isProcessable(attrs) {
-  if (/\bsrc\s*=/i.test(attrs)) return false;
-  const type = attrs.match(/\btype\s*=\s*["']([^"']*)["']/i)?.[1]?.trim().toLowerCase();
+  if (attrs.src !== undefined) return false;
+  const type = attrs.type?.trim().toLowerCase();
   if (!type) return true;
   return type === "module" || type === "text/javascript" || type === "application/javascript";
 }
@@ -31,10 +33,10 @@ function mayHoldComment(code) {
   return code.includes("//") || code.includes("/*");
 }
 
-async function stripComments(code, loader) {
+async function stripComments(code) {
   const { code: out } = await esbuild.transform(code, {
-    loader,
-    legalComments: "none",
+    loader: "js",
+    legalComments: "inline",
     // Sans cette option esbuild conserve les commentaires placés devant une
     // expression (il les suppose annotations `/* @__PURE__ */`). On se limite
     // au blanc : la syntaxe et les identifiants restent inchangés.
@@ -59,17 +61,20 @@ async function processHtml(file) {
   let cursor = 0;
   let touched = false;
 
-  // Le contenu d'un <script> se termine au premier `</script` (spec HTML),
-  // ce qui rend ce découpage fiable sur une sortie générée.
-  const re = /(<script\b([^>]*)>)([\s\S]*?)(<\/script\s*>)/gi;
-
-  for (let m; (m = re.exec(original)); ) {
-    const [full, open, attrs, body, close] = m;
-    if (!isProcessable(attrs) || !body.trim() || !mayHoldComment(body)) continue;
+  // Les positions du parseur permettent de ne réécrire que le JS : ni les
+  // attributs, ni les exemples HTML dans <textarea> ou <code> ne sont sérialisés.
+  const $ = load(original, { sourceCodeLocationInfo: true });
+  for (const script of $("script").toArray()) {
+    const location = script.sourceCodeLocation;
+    if (!isProcessable(script.attribs) || !location?.startTag || !location.endTag) continue;
+    const start = location.startTag.endOffset;
+    const end = location.endTag.startOffset;
+    const body = original.slice(start, end);
+    if (!body.trim() || !mayHoldComment(body)) continue;
 
     let cleaned;
     try {
-      cleaned = await stripComments(body, "js");
+      cleaned = await stripComments(body);
     } catch (err) {
       console.warn(`[strip-comments] ${path.relative(DIST, file)} : script ignoré (${err.message.split("\n")[0]})`);
       stats.skipped++;
@@ -81,14 +86,10 @@ async function processHtml(file) {
       stats.skipped++;
       continue;
     }
-    // esbuild réindente : sur un script déjà minifié le résultat gonflerait.
-    if (cleaned.length >= body.length) {
-      stats.skipped++;
-      continue;
-    }
+    if (cleaned === body) continue;
 
-    chunks.push(original.slice(cursor, m.index), open, "\n", cleaned, close);
-    cursor = m.index + full.length;
+    chunks.push(original.slice(cursor, start), cleaned);
+    cursor = end;
     stats.scripts++;
     stats.bytes += body.length - cleaned.length;
     touched = true;
@@ -106,13 +107,13 @@ async function processJs(file) {
 
   let cleaned;
   try {
-    cleaned = await stripComments(original, "js");
+    cleaned = await stripComments(original);
   } catch (err) {
     console.warn(`[strip-comments] ${path.relative(DIST, file)} : ignoré (${err.message.split("\n")[0]})`);
     stats.skipped++;
     return;
   }
-  if (cleaned.length >= original.length) return;
+  if (cleaned === original) return;
 
   await fs.writeFile(file, cleaned, "utf8");
   stats.files++;

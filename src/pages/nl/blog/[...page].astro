@@ -2,12 +2,9 @@
 import EditorialArchivePage from "../../../components/EditorialArchivePage.astro";
 import type { GetStaticPathsOptions, Page } from "astro";
 import type { BlogEntry } from "../../../utils/blog";
-
-
-
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 
-import { categoryMap, categorySlugs, NL_LAUNCH_DATE } from "../../../data/site";
+import { NL_LAUNCH_DATE } from "../../../data/site";
 import {
   buildBreadcrumbJsonLd,
   buildWebsiteJsonLd,

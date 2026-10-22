@@ -7,7 +7,7 @@
  * téléphone de 380 px payait le plein tarif.
  *
  * Pour chaque source `public/images/blog/<nom>.<ext>`, on écrit à côté
- * `<nom>-480w.webp`, `<nom>-640w.webp` et `<nom>-960w.webp`. Le `srcset` est
+ * `<nom>-240w.webp`, `<nom>-480w.webp`, `<nom>-640w.webp` et `<nom>-960w.webp`. Le `srcset` est
  * construit côté template par `buildSrcset()` (src/utils/image-variants.ts) :
  * les deux fichiers doivent rester d'accord sur WIDTHS et sur le suffixe.
  *
@@ -30,7 +30,7 @@ const MANIFEST = "src/data/image-widths.json";
 const widths = {};
 
 /** Doit rester synchronisé avec WIDTHS dans src/utils/image-variants.ts. */
-const WIDTHS = [480, 640, 960];
+const WIDTHS = [240, 480, 640, 960];
 const QUALITY = 74;
 
 /**

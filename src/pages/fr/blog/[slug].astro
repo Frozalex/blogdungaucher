@@ -5,9 +5,7 @@ import { render } from "astro:content";
 import "katex/dist/katex.min.css";
 import "../../../styles/editorial-articles.css";
 
-import ArticleCard from "../../../components/ArticleCard.astro";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import Breadcrumb from "../../../components/Breadcrumb.astro";
 import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
 import DownloadPdfButton from "../../../components/DownloadPdfButton.astro";
@@ -21,7 +19,7 @@ import PyodideTrace from "../../../components/PyodideTrace.astro";
 import FocusMode from "../../../components/FocusMode.astro";
 import TextHighlight from "../../../components/TextHighlight.astro";
 
-import { categoryMap, categorySlugs, siteConfig } from "../../../data/site";
+import { categoryMap, siteConfig } from "../../../data/site";
 import {
   absoluteUrl,
   buildArticleJsonLd,
@@ -86,10 +84,9 @@ const absolutePostUrl = absoluteUrl(postUrl);
 
 const heroSrc = getPostHeroSrc(post);
 const heroImage = heroSrc ? post.data.heroImage : undefined;
-/* Hero full-bleed → sizes="100vw". Sans srcset un mobile de 380 px payait
-   l'original 1200 px (~150-190 Ko) pour l'afficher à 380 px. */
+/* Le panneau occupe 56 % sur ordinateur, 50 % sur tablette, puis toute la largeur. */
 const heroSrcset = buildSrcset(heroSrc);
-const HERO_SIZES = "100vw";
+const HERO_SIZES = "(max-width: 820px) 100vw, (max-width: 1100px) 50vw, 56vw";
 /* Vignettes du carrousel "Pour vous" : 17,5 rem (280 px) en desktop, 46vw sous
    760 px. Sans `sizes`, six cartes tiraient six originaux 1200 px (~680 Ko). */
 const RC_SIZES = "(max-width: 760px) 46vw, 280px";
@@ -141,7 +138,7 @@ const structuredData = [
       </nav>
     </div>
 
-    {/* ── Hero PT's Coffee : titre superposé sur photo pleine hauteur ── */}
+    {/* En-tête de l’article : titre et illustration. */}
     <div class={`article-hero${(!showSummaryVideo && heroSrc && heroImage) ? " article-hero--has-image" : " article-hero--placeholder"}`}>
 
       {!showSummaryVideo && heroSrc && heroImage ? (
@@ -450,7 +447,7 @@ const structuredData = [
     padding-left: 0.2rem;
   }
 
-  /* Titre géant en boîtes blanches (signature PT's Coffee) */
+  /* Style de base du titre, complété par editorial-articles.css. */
   .hero-title {
     margin: 0 0 2rem;
     font-size: clamp(2.6rem, 6.5vw, 6rem);

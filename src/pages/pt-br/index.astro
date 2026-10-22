@@ -2,10 +2,15 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HomePortal from "../../components/HomePortal.astro";
 
-import { buildWebsiteJsonLd } from "../../utils/blog";
+import { buildWebsiteJsonLd, getAllPosts, filterPostsForLang, getPostHeroSrc } from "../../utils/blog";
+import { getHomeEditorialPosts } from "../../data/home-editorial";
+import { buildSrcset } from "../../utils/image-variants";
 import { PT_BR_LAUNCH_DATE } from "../../data/site";
 
 if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/", 302);
+const { lead } = getHomeEditorialPosts(filterPostsForLang(await getAllPosts(), "pt-br"));
+const leadImage = lead ? getPostHeroSrc(lead) : null;
+
 ---
 <BaseLayout
   title="Blog de um Canhoto - Xadrez sem simplificação"
@@ -14,6 +19,9 @@ if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/", 302);
   lang="pt-br"
   frPath="/fr/"
   enPath="/en/"
+  preloadImage={leadImage ?? undefined}
+  preloadImageSrcset={buildSrcset(leadImage)}
+  preloadImageSizes="(min-width: 900px) 730px, 100vw"
   structuredData={buildWebsiteJsonLd()}
 >
   <HomePortal lang="pt-br" />

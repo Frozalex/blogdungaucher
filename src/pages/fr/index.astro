@@ -2,12 +2,20 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HomePortal from "../../components/HomePortal.astro";
 
-import { buildWebsiteJsonLd } from "../../utils/blog";
+import { buildWebsiteJsonLd, getAllPosts, filterPostsForLang, getPostHeroSrc } from "../../utils/blog";
+import { getHomeEditorialPosts } from "../../data/home-editorial";
+import { buildSrcset } from "../../utils/image-variants";
+const { lead } = getHomeEditorialPosts(filterPostsForLang(await getAllPosts(), "fr"));
+const leadImage = lead ? getPostHeroSrc(lead) : null;
+
 ---
 <BaseLayout
   title="Blog d'un Gaucher - Pratique et simple"
   description="Blog sur les échecs : neurosciences, psychologie du joueur, stratégie et société. Articles approfondis deux fois par semaine pour progresser et comprendre le jeu."
   canonicalPath="/fr/"
+  preloadImage={leadImage ?? undefined}
+  preloadImageSrcset={buildSrcset(leadImage)}
+  preloadImageSizes="(min-width: 900px) 730px, 100vw"
   structuredData={buildWebsiteJsonLd()}
 >
   <HomePortal lang="fr" />

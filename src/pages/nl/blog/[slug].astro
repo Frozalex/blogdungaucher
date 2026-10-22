@@ -132,7 +132,6 @@ const nlDesc      = nlEntry?.data?.seoDescription ?? nlEntry?.data?.excerpt ?? p
 const displayTitle  = nlEntry?.data?.title ?? post.data.title;
 // Tags : uniquement ceux de la traduction nl (pas les tags FR de la source).
 const displayTags = nlEntry?.data?.tags ?? [];
-const displayExcerpt = nlEntry?.data?.excerpt ?? post.data.excerpt;
 const hasNlTranslation = !!nlEntry;
 
 const heroSrc = getPostHeroSrc(post);
@@ -145,7 +144,7 @@ const heroImage = heroSrc && post.data.heroImage
 /* Hero full-bleed → sizes="100vw". Sans srcset un mobile de 380 px payait
    l'original 1200 px (~150-190 Ko) pour l'afficher à 380 px. */
 const heroSrcset = buildSrcset(heroSrc);
-const HERO_SIZES = "100vw";
+const HERO_SIZES = "(max-width: 820px) 100vw, (max-width: 1100px) 50vw, 56vw";
 /* Vignettes du carrousel "Pour vous" : 17,5 rem (280 px) en desktop, 46vw sous
    760 px. Sans `sizes`, six cartes tiraient six originaux 1200 px (~680 Ko). */
 const RC_SIZES = "(max-width: 760px) 46vw, 280px";

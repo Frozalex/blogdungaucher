@@ -1,5 +1,4 @@
 ---
-import { categoryMap } from "../data/site";
 import { formatDateForLang, getPostHeroSrc, getPostUrlLang, getLocalizedPostText, type BlogEntry } from "../utils/blog";
 import type { SiteLang } from "../utils/lang-paths";
 import { editorialUi } from "../data/editorial-ui";
@@ -27,7 +26,7 @@ const href = await getPostUrlLang(post,lang);
 <article class:list={["editorial-article", `editorial-article--${variant}`, { "editorial-article--no-image": !image }]}>
   <a class="editorial-article__link" href={href}>
     {image && <div class="editorial-article__visual">
-      <img src={image} srcset={srcset} sizes={variant === "lead" ? "(min-width: 900px) 730px, 100vw" : variant === "compact" ? "112px" : "(min-width: 900px) 360px, (min-width: 600px) 45vw, 100vw"} alt={text.heroImageAlt || ""} width="900" height="600" loading={variant === "lead" ? "eager" : "lazy"} fetchpriority={variant === "lead" ? "high" : "auto"} />
+      <img src={image} srcset={srcset} sizes={variant === "lead" ? "(min-width: 900px) 730px, 100vw" : variant === "compact" ? "(max-width: 599px) 80px, 112px" : variant === "secondary" ? "(max-width: 599px) 96px, (min-width: 900px) 360px, 45vw" : "(min-width: 900px) 360px, (min-width: 600px) 45vw, 100vw"} alt={text.heroImageAlt || ""} width="900" height="600" loading={variant === "lead" ? "eager" : "lazy"} fetchpriority={variant === "lead" ? "high" : "auto"} />
     </div>}
     <div class="editorial-article__body">
       {showKicker && <span class="editorial-article__kicker">{kicker}</span>}

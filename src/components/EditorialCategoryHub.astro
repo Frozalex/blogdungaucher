@@ -4,7 +4,8 @@ import EditorialArticle from "./EditorialArticle.astro";
 import { categoryMap } from "../data/site";
 import { hubEditorial, type HubCategory } from "../data/hub-editorial";
 import { glossaryTerms } from "../data/glossary";
-import { getPostsByCategory, getPostSlug, formatDate, buildBreadcrumbJsonLd } from "../utils/blog";
+import { getPostsByCategory, getPostSlug, getPostHeroSrc, formatDate, buildBreadcrumbJsonLd } from "../utils/blog";
+import { buildSrcset } from "../utils/image-variants";
 import { selectHubPosts } from "../utils/hub-selection";
 import "../styles/editorial-resources.css";
 
@@ -15,6 +16,7 @@ const editorial = hubEditorial[category];
 const selection = selectHubPosts(await getPostsByCategory(category), editorial, getPostSlug);
 const { eligible, lead, essentials, latest, themes, archive, themeOf } = selection;
 const isEditorialLead = lead && getPostSlug(lead) === editorial.lead;
+const leadImage = lead ? getPostHeroSrc(lead) : null;
 const words = editorial.glossary.flatMap(slug => {
   const term = glossaryTerms.find(term => term.slug === slug);
   return term ? [term] : [];
@@ -28,6 +30,9 @@ const archiveThemes = [...editorial.themes.filter(theme => archive.some(post => 
   description={meta.seoDescription ?? meta.description}
   canonicalPath={meta.href}
   lang="fr"
+  preloadImage={leadImage ?? undefined}
+  preloadImageSrcset={buildSrcset(leadImage)}
+  preloadImageSizes="(min-width: 900px) 730px, 100vw"
   structuredData={buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: meta.label, path: meta.href }])}
 >
   <div class="resource-page hub-page" style={`--hub-accent:${meta.accent}`}>

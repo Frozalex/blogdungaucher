@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-22",
+  "baselineCommit": "346045773771f875a97e6aa8d9c817f9f715f81f",
+  "measurement": "Comparaison des fichiers compilés, gzip local et choix effectif des images à une largeur de 390 px. Ce ne sont pas des mesures Lighthouse ou des Core Web Vitals.",
+  "changes": [
+    "Dictionnaire i18n différé sans bloquer le HTML ; rendu serveur et thème conservés.",
+    "Préchargement de Fraunces et des illustrations principales de la une et des hubs FR.",
+    "Préchargement des liens au survol/focus plutôt que dans le viewport ; précache hors ligne après load et idle.",
+    "Variantes de 240 px pour les petites cartes ; sizes des cartes et des couvertures adaptés à leur largeur.",
+    "Chargement des modules minimax et Python uniquement sur les pages portant leurs marqueurs.",
+    "Habillage partagé des 12 pages légales, sans modification des textes ; nettoyage ciblé des sources."
+  ],
+  "payloads": {
+    "en/index.html": {
+      "before": {
+        "html": 68406,
+        "gzip": 15904,
+        "inline": 18179
+      },
+      "after": {
+        "html": 70103,
+        "gzip": 16151,
+        "inline": 18570
+      },
+      "scripts": [
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244325018333025",
+        "/i18n-dict.js?v=b545e25319",
+        "/_astro/page.Bx2KSkeL.js",
+        "/_astro/Navbar.astro_astro_type_script_index_0_lang.DeTilxzU.js",
+        "/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.D-biJyTj.js"
+      ],
+      "preload": [
+        {
+          "rel": "preload",
+          "as": "font",
+          "type": "font/woff2",
+          "href": "/_astro/fraunces-latin-opsz-normal.DihXLNYH.woff2",
+          "crossorigin": ""
+        },
+        {
+          "rel": "preload",
+          "as": "image",
+          "href": "/images/blog/echecs-et-la-triche-hero.webp",
+          "imagesrcset": "/images/blog/echecs-et-la-triche-hero-240w.webp 240w, /images/blog/echecs-et-la-triche-hero-480w.webp 480w, /images/blog/echecs-et-la-triche-hero-640w.webp 640w, /images/blog/echecs-et-la-triche-hero-960w.webp 960w, /images/blog/echecs-et-la-triche-hero.webp 1200w",
+          "imagesizes": "(min-width: 900px) 730px, 100vw",
+          "fetchpriority": "high"
+        }
+      ],
+      "dictionaryDeferred": true
+    },
+    "fr/blog/echecs-et-concentration/index.html": {
+      "before": {
+        "html": 109343,
+        "gzip": 29639,
+        "inline": 41243
+      },
+      "after": {
+        "html": 96703,
+        "gzip": 25280,
+        "inline": 27950
+      },
+      "scripts": [
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244325018333025",
+        "/i18n-dict.js?v=b545e25319",
+        "/_astro/page.Bx2KSkeL.js",
+        "/_astro/Navbar.astro_astro_type_script_index_0_lang.DeTilxzU.js",
+        "/_astro/InteractiveWidgets.astro_astro_type_script_index_0_lang.BvBt40pa.js",
+        "/_astro/PyodideTrace.astro_astro_type_script_index_0_lang.B2J6HbWO.js",
+        "/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.D-biJyTj.js"
+      ],
+      "preload": [
+        {
+          "rel": "preload",
+          "as": "font",
+          "type": "font/woff2",
+          "href": "/_astro/fraunces-latin-opsz-normal.DihXLNYH.woff2",
+          "crossorigin": ""
+        },
+        {
+          "rel": "preload",
+          "as": "image",
+          "href": "/images/blog/echecs-et-concentration-hero.webp",
+          "imagesrcset": "/images/blog/echecs-et-concentration-hero-240w.webp 240w, /images/blog/echecs-et-concentration-hero-480w.webp 480w, /images/blog/echecs-et-concentration-hero-640w.webp 640w, /images/blog/echecs-et-concentration-hero-960w.webp 960w, /images/blog/echecs-et-concentration-hero.webp 1200w",
+          "imagesizes": "(max-width: 820px) 100vw, (max-width: 1100px) 50vw, 56vw",
+          "fetchpriority": "high"
+        }
+      ],
+      "dictionaryDeferred": true
+    },
+    "fr/blog/grand-oral-mathematiques-echecs/index.html": {
+      "before": {
+        "html": 185291,
+        "gzip": 45331,
+        "inline": 41243
+      },
+      "after": {
+        "html": 172818,
+        "gzip": 41287,
+        "inline": 27950
+      },
+      "scripts": [
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244325018333025",
+        "/i18n-dict.js?v=b545e25319",
+        "/_astro/page.Bx2KSkeL.js",
+        "/_astro/Navbar.astro_astro_type_script_index_0_lang.DeTilxzU.js",
+        "/_astro/InteractiveWidgets.astro_astro_type_script_index_0_lang.BvBt40pa.js",
+        "/_astro/PyodideTrace.astro_astro_type_script_index_0_lang.B2J6HbWO.js",
+        "/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.D-biJyTj.js"
+      ],
+      "preload": [
+        {
+          "rel": "preload",
+          "as": "font",
+          "type": "font/woff2",
+          "href": "/_astro/fraunces-latin-opsz-normal.DihXLNYH.woff2",
+          "crossorigin": ""
+        },
+        {
+          "rel": "preload",
+          "as": "image",
+          "href": "/images/blog/grand-oral-mathematiques-echecs-watermarked-hero.webp",
+          "imagesrcset": "/images/blog/grand-oral-mathematiques-echecs-watermarked-hero-240w.webp 240w, /images/blog/grand-oral-mathematiques-echecs-watermarked-hero-480w.webp 480w, /images/blog/grand-oral-mathematiques-echecs-watermarked-hero-640w.webp 640w, /images/blog/grand-oral-mathematiques-echecs-watermarked-hero-960w.webp 960w, /images/blog/grand-oral-mathematiques-echecs-watermarked-hero.webp 1200w",
+          "imagesizes": "(max-width: 820px) 100vw, (max-width: 1100px) 50vw, 56vw",
+          "fetchpriority": "high"
+        }
+      ],
+      "dictionaryDeferred": true
+    },
+    "fr/index.html": {
+      "before": {
+        "html": 74471,
+        "gzip": 16986,
+        "inline": 18179
+      },
+      "after": {
+        "html": 76168,
+        "gzip": 17240,
+        "inline": 18570
+      },
+      "scripts": [
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244325018333025",
+        "/i18n-dict.js?v=b545e25319",
+        "/_astro/page.Bx2KSkeL.js",
+        "/_astro/Navbar.astro_astro_type_script_index_0_lang.DeTilxzU.js",
+        "/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.D-biJyTj.js"
+      ],
+      "preload": [
+        {
+          "rel": "preload",
+          "as": "font",
+          "type": "font/woff2",
+          "href": "/_astro/fraunces-latin-opsz-normal.DihXLNYH.woff2",
+          "crossorigin": ""
+        },
+        {
+          "rel": "preload",
+          "as": "image",
+          "href": "/images/blog/echecs-et-la-triche-hero.webp",
+          "imagesrcset": "/images/blog/echecs-et-la-triche-hero-240w.webp 240w, /images/blog/echecs-et-la-triche-hero-480w.webp 480w, /images/blog/echecs-et-la-triche-hero-640w.webp 640w, /images/blog/echecs-et-la-triche-hero-960w.webp 960w, /images/blog/echecs-et-la-triche-hero.webp 1200w",
+          "imagesizes": "(min-width: 900px) 730px, 100vw",
+          "fetchpriority": "high"
+        }
+      ],
+      "dictionaryDeferred": true
+    }
+  },
+  "mobileSecondaryImages": [
+    {
+      "name": "reseau-mode-defaut-aux-echecs-hero",
+      "before": 9626,
+      "after": 3608
+    },
+    {
+      "name": "manipulation-emotionnelle-aux-echecs-hero",
+      "before": 13678,
+      "after": 3176
+    }
+  ],
+  "validation": {
+    "articlePageBodiesUnchanged": 232,
+    "articleButtonsUnchanged": true,
+    "legalPagesTextAndMetadataPreserved": 12,
+    "buildPages": 404,
+    "internalLinks": 19547,
+    "deadInternalLinks": 0,
+    "runtimeTestCases": 23,
+    "uiChecks": [
+      "Sommaire mobile des pages légales",
+      "Vignettes de la une : 240w sélectionné pour les deux cartes de 96 px",
+      "Recherche anglaise Pagefind et fermeture du dialogue",
+      "Rendu FR / EN / PT-BR",
+      "Arbre minimax : bouton Pas à pas, dans une fixture locale supprimée après vérification",
+      "Bouton Python présent dans son article ; module initialisé après chargement différé"
+    ]
+  },
+  "auditBefore": {
+    "tool": "squirrel 0.0.117",
+    "scope": "25 pages ; catégories Performance et Images ; HTTP uniquement ; sans service cloud",
+    "performanceScore": 47,
+    "performanceWarnings": 98,
+    "note": "Score technique partiel, distinct d’un score Lighthouse."
+  }
+}

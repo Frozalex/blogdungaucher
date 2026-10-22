@@ -80,7 +80,7 @@ export default defineConfig({
   },
   prefetch: {
     prefetchAll: true,
-    defaultStrategy: "viewport",
+    defaultStrategy: "hover",
   },
   markdown: {
     // Keep the existing remark/rehype rendering when upgrading Astro's defaults.

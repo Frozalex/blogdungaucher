@@ -23,7 +23,7 @@
     "notify": "node scripts/notify-ntfy.mjs",
     "check": "astro check",
     "check:languages": "node scripts/check-language-regression.mjs",
-    "test": "node scripts/finalize-public-navigation.test.mjs"
+    "test": "node --test scripts/finalize-public-navigation.test.mjs scripts/strip-inline-script-comments.test.mjs scripts/performance-runtime.test.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
