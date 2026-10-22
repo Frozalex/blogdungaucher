@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-22",
+  "demande": "Rédiger et publier les cinq dissertations complètes choisies par l’utilisateur ; les annonces seules ne répondaient pas à la demande.",
+  "textes": [
+    {
+      "slug": "le-classement-mesure-t-il-la-valeur-d-un-joueur",
+      "title": "Le classement mesure-t-il la valeur d’un joueur ?",
+      "mots": 1970,
+      "paragraphes": 21,
+      "mouvements": 5,
+      "alineas": 5,
+      "sources": [
+        "https://handbook.fide.com/chapter/B022024",
+        "https://en.wikisource.org/wiki/Groundwork_of_the_Metaphysics_of_Morals"
+      ],
+      "mots_conclusion": 58
+    },
+    {
+      "slug": "peut-on-bien-jouer-aux-echecs-sans-chercher-a-gagner",
+      "title": "Peut-on bien jouer aux échecs sans chercher à gagner ?",
+      "mots": 1979,
+      "paragraphes": 21,
+      "mouvements": 5,
+      "alineas": 5,
+      "sources": [
+        "https://handbook.fide.com/chapter/e012023",
+        "https://broadviewpress.com/product/the-grasshopper-third-edition/",
+        "https://classics.mit.edu/Aristotle/nicomachaen.1.i.html"
+      ],
+      "mots_conclusion": 60
+    },
+    {
+      "slug": "peut-on-meriter-une-victoire-obtenue-grace-a-l-erreur-de-l-adversaire",
+      "title": "Peut-on mériter une victoire obtenue grâce à l’erreur de l’adversaire ?",
+      "mots": 1933,
+      "paragraphes": 21,
+      "mouvements": 5,
+      "alineas": 5,
+      "sources": [
+        "https://harjitbhogal.com/Flukes2024/Williams%20and%20Nagel%201976%20-%20Moral%20Luck.pdf",
+        "https://handbook.fide.com/chapter/e012023",
+        "https://classics.mit.edu/Aristotle/nicomachaen.3.iii.html"
+      ],
+      "mots_conclusion": 56
+    },
+    {
+      "slug": "peut-on-admirer-une-partie-que-l-on-ne-comprend-pas",
+      "title": "Peut-on admirer une partie que l’on ne comprend pas ?",
+      "mots": 1966,
+      "paragraphes": 22,
+      "mouvements": 5,
+      "alineas": 5,
+      "sources": [
+        "https://users.rowan.edu/~clowney/Aesthetics/philos_artists_onart/hume_standard.htm",
+        "https://www.gutenberg.org/files/48433/48433-h/48433-h.htm"
+      ],
+      "mots_conclusion": 55
+    },
+    {
+      "slug": "faut-il-toujours-faire-confiance-a-la-raison-pour-bien-jouer-aux-echecs",
+      "title": "Faut-il toujours faire confiance à la raison pour bien jouer aux échecs ?",
+      "mots": 2037,
+      "paragraphes": 22,
+      "mouvements": 5,
+      "alineas": 5,
+      "sources": [
+        "https://www.gutenberg.org/files/59/59-h/59-h.htm",
+        "https://gwern.net/doc/psychology/chess/1973-chase.pdf",
+        "https://bear.warrington.ufl.edu/brenner/mar7588/Papers/kahneman-klein-2009.pdf"
+      ],
+      "mots_conclusion": 55
+    }
+  ],
+  "total_mots": 9885,
+  "regles": {
+    "mouvements": 5,
+    "alineas": 5,
+    "titres_parties_visibles": false,
+    "bibliographie_finale": false,
+    "references": "Intégrées au raisonnement ; aucun passage cité littéralement.",
+    "textes_existants": "Aucune des quatre dissertations précédentes réécrite dans cette livraison.",
+    "ordre_hub": "Ordre choisi conservé pour les cinq publications de même date."
+  },
+  "verification_echecs": [
+    {
+      "example": "Fourchette, dissertation sur le mérite",
+      "fen": "3q3k/8/3N4/8/8/8/8/6K1 w - - 0 1",
+      "moves": [
+        "Nf7+",
+        "Kg8",
+        "Nxd8"
+      ],
+      "legal": true,
+      "note": "Le texte établit un gain matériel, sans affirmer le gain de cette position réduite."
+    },
+    {
+      "example": "Sous-promotion, dissertation sur l’admiration",
+      "fen": "8/k1P5/2K5/8/8/8/8/8 w - - 0 1",
+      "queenPromotion": "c8=Q pat",
+      "rookPromotion": [
+        "c8=R",
+        "Ka6"
+      ],
+      "legal": true
+    },
+    {
+      "example": "Reconnaissance et contrôle, dissertation sur la raison",
+      "openDiagonalFen": "7k/6pp/7Q/8/8/3B4/8/6K1 w - - 0 1",
+      "openDiagonal": "Qxh7#",
+      "blockedDiagonalFen": "7k/6pp/7Q/8/4P3/3B4/8/6K1 w - - 0 1",
+      "blockedDiagonal": [
+        "Qxh7+",
+        "Kxh7"
+      ],
+      "legal": true
+    }
+  ],
+  "sources_verifiees": [
+    {
+      "url": "https://handbook.fide.com/chapter/B022024",
+      "acces": "Règlement intégral accessible ; principes de calcul et de classement consultés."
+    },
+    {
+      "url": "https://handbook.fide.com/chapter/e012023",
+      "acces": "Texte intégral récupéré et passages consultés dans la même session ; définition du but et conditions de résultat contrôlées."
+    },
+    {
+      "url": "https://en.wikisource.org/wiki/Groundwork_of_the_Metaphysics_of_Morals",
+      "acces": "Texte intégral en traduction anglaise accessible ; distinction valeur relative/dignité, deuxième section, consultée. Application au classement annoncée comme telle."
+    },
+    {
+      "url": "https://classics.mit.edu/Aristotle/nicomachaen.1.i.html",
+      "acces": "Livre I intégral accessible en traduction anglaise ; distinction fins/activités consultée. Aucune théorie des échecs modernes attribuée à Aristote."
+    },
+    {
+      "url": "https://classics.mit.edu/Aristotle/nicomachaen.3.iii.html",
+      "acces": "Livre III intégral accessible en traduction anglaise ; passages sur volontaire et choix consultés."
+    },
+    {
+      "url": "https://broadviewpress.com/product/the-grasshopper-third-edition/",
+      "acces": "Présentation de l’éditeur consultée, avec définition du jeu. Ouvrage non lu intégralement ; aucune autre thèse détaillée ne lui est attribuée."
+    },
+    {
+      "url": "https://harjitbhogal.com/Flukes2024/Williams%20and%20Nagel%201976%20-%20Moral%20Luck.pdf",
+      "acces": "Texte intégral accessible du débat de 1976 ; partie II de Thomas Nagel, sur le contrôle et les conséquences, consultée. Pas de confusion avec une expérience sportive."
+    },
+    {
+      "url": "https://users.rowan.edu/~clowney/Aesthetics/philos_artists_onart/hume_standard.htm",
+      "acces": "Essai intégral accessible ; paragraphes sur la pratique et la comparaison consultés."
+    },
+    {
+      "url": "https://www.gutenberg.org/files/48433/48433-h/48433-h.htm",
+      "acces": "Texte intégral de Kant en traduction anglaise accessible ; jugement esthétique et paragraphe 16 consultés. Le PDF davidbardschwarz.com, trouvé auparavant, n’est pas retenu comme preuve de lecture de l’ouvrage."
+    },
+    {
+      "url": "https://www.gutenberg.org/files/59/59-h/59-h.htm",
+      "acces": "Texte intégral de Descartes en traduction anglaise accessible ; deuxième partie et règles de méthode consultées."
+    },
+    {
+      "url": "https://gwern.net/doc/psychology/chess/1973-chase.pdf",
+      "acces": "Article intégral accessible ; protocole, trois participants, présentation de cinq secondes et contraste positions de jeu/aléatoires vérifiés. Limites de taille et de tâche indiquées dans la dissertation."
+    },
+    {
+      "url": "https://bear.warrington.ufl.edu/brenner/mar7588/Papers/kahneman-klein-2009.pdf",
+      "acces": "Article intégral accessible ; résumé et conditions d’apprentissage des régularités consultés. Présenté comme discussion de deux approches, sans effectif expérimental inventé."
+    }
+  ],
+  "comparaisons": [
+    {
+      "url": "https://www.chess.com/fr/terms/le-classement-aux-echecs",
+      "acces": "Article consulté.",
+      "couverture": "Présentation du classement et de ses limites comme estimation de niveau.",
+      "apport_cherche": "Distinguer force sportive, diagnostic des compétences et valeur personnelle ; discuter l’autorité légitime d’un indicateur."
+    },
+    {
+      "url": "https://yakamedia.cemea.asso.fr/univers/comprendre/pedagogues-et-pedagogies/pratiques-pedagogiques/pourquoi-et-comment-jouer-la-competition",
+      "acces": "Article consulté.",
+      "couverture": "Pluralité des motifs du jeu et critique de l’assimilation réussite/domination.",
+      "apport_cherche": "Distinguer but des règles, objectif d’une position et motivation personnelle, en traitant le contrat compétitif."
+    },
+    {
+      "url": "https://www.fqechecs.qc.ca/webzine/webzine/258/%C3%89chec%2B258.pdf",
+      "acces": "PDF accessible ; passages sur la chance et le mérite, pages 22–23, consultés.",
+      "couverture": "Place des erreurs adverses et de l’incertitude humaine dans la victoire.",
+      "apport_cherche": "Distinguer légitimité du résultat, mérite de l’exploitation et excellence de la partie entière ; ne reprendre aucune citation historique non vérifiée."
+    },
+    {
+      "url": "https://www.europe-echecs.com/art/philosophie-et-echecs-9364.html",
+      "acces": "Article consulté.",
+      "couverture": "Émotion esthétique, compréhension, surprise et distinction joueur/spectateur.",
+      "apport_cherche": "Traiter le problème précis de l’admiration partielle ; distinguer sincérité de l’émotion et justification technique avec une sous-promotion contrôlée."
+    },
+    {
+      "url": "https://www.chess.com/fr/article/view/comment-calculer-aux-echecs",
+      "acces": "Article consulté.",
+      "couverture": "Méthode et exercices de calcul.",
+      "apport_cherche": "Définir la raison au-delà du calcul ; confronter intuition experte et vérification à deux positions ne différant que d’un pion."
+    }
+  ],
+  "statut": "Compilation complète et contrôles de rendu réussis ; prêt à publier.",
+  "validation": {
+    "compilation": "npm run build réussi ; 409 pages et 19 914 liens internes vérifiés, aucun lien mort.",
+    "navigateurs": "Les cinq textes contrôlés à 390 et 1440 pixels : H1 unique, cinq mouvements et cinq retraits calculés, aucun retrait supplémentaire, aucun titre de partie, aucune troncature, aucun débordement horizontal.",
+    "hub": "Neuf textes publiés, cinq nouveaux dans l’ordre choisi ; annonces remplacées par les textes complets ; tous les liens répondent.",
+    "seo": "Description et URL canonique présentes pour chaque texte ; cinq nouvelles URL présentes dans le sitemap.",
+    "captures": "Première dissertation et conclusion contrôlées visuellement aux deux largeurs."
+  }
+}

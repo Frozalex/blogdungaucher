@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "statut": "Annonce des cinq sujets autorisée par l’utilisateur sur le hub Dissertations, dans la section Les sujets à venir. Les textes complets restent à fournir ou à rédiger sur demande.",
+  "statut": "Les cinq dissertations complètes sont rédigées et intégrées ; publication demandée par l’utilisateur le 22 octobre 2026. Leur annonce À venir disparaît automatiquement à la publication.",
   "ordre": [
     {
       "numero_proposition": 7,
@@ -35,5 +35,12 @@
     "nombre_alineas": 5,
     "references": "Intégrées au raisonnement ; aucune bibliographie finale.",
     "textes_valides": "Conserver à l’identique, sauf correction typographique manifeste."
-  }
+  },
+  "textes_complets": [
+    "le-classement-mesure-t-il-la-valeur-d-un-joueur",
+    "peut-on-bien-jouer-aux-echecs-sans-chercher-a-gagner",
+    "peut-on-meriter-une-victoire-obtenue-grace-a-l-erreur-de-l-adversaire",
+    "peut-on-admirer-une-partie-que-l-on-ne-comprend-pas",
+    "faut-il-toujours-faire-confiance-a-la-raison-pour-bien-jouer-aux-echecs"
+  ]
 }

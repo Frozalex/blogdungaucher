@@ -6,7 +6,8 @@ import { dissertationTopics } from "../../../data/dissertation-topics";
 import { absoluteUrl, buildBreadcrumbJsonLd, calculateReadingTime, formatDate } from "../../../utils/blog";
 import "../../../styles/editorial-resources.css";
 
-const entries = (await getCollection("dissertations")).filter(entry => entry.data.publishDate <= new Date()).sort((a,b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+const topicOrder = new Map<string, number>(dissertationTopics.map((topic, index) => [topic.slug, index]));
+const entries = (await getCollection("dissertations")).filter(entry => entry.data.publishDate <= new Date()).sort((a,b) => b.data.publishDate.getTime() - a.data.publishDate.getTime() || (topicOrder.get(a.id) ?? 99) - (topicOrder.get(b.id) ?? 99));
 const lead = entries[0];
 const upcomingTopics = dissertationTopics.filter(topic => !entries.some(entry => entry.id === topic.slug));
 const headings = lead ? (await render(lead)).headings.filter(heading => heading.depth === 2 && /^[IVX]+\./.test(heading.text)) : [];
