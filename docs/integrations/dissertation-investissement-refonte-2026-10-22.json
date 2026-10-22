@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-22",
+  "article": "src/content/dissertations/echecs-et-investissement.md",
+  "demande": "Refonte selon le format académique des dissertations ; choix de cinq nouveaux sujets.",
+  "avant_mots": 1329,
+  "apres_mots": 2175,
+  "variation_pourcent": 63.7,
+  "mouvements": 5,
+  "alineas": 5,
+  "titres_dans_le_corps": false,
+  "bibliographie_finale": false,
+  "illustrations_preservees": [
+    "/images/investissement-01-transfert.svg",
+    "/images/investissement-02-biais.svg"
+  ],
+  "apports": [
+    "Introduction problématisée sans anecdote personnelle.",
+    "Thèse défendue avant sa critique ; critères de transposition formulés dans la prise de position.",
+    "Prudence distinguée de l’immobilisme ; information parfaite distinguée de l’omniscience.",
+    "Analogie, préparation pédagogique et amélioration financière mesurée distinguées.",
+    "Références intégrées dans les paragraphes ; exemples pédagogiques explicitement identifiés.",
+    "Conclusion unique et courte ; suppression des formules affirmant un transfert général non démontré."
+  ],
+  "sources": [
+    {
+      "url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf",
+      "acces": "Texte intégral accessible ; passages sur choix hypothétiques et modèle descriptif consultés."
+    },
+    {
+      "url": "https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf",
+      "acces": "Texte intégral accessible ; résumé, données et limites de l’échantillon consultés ; 10 000 comptes, 1987–1993 vérifiés."
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/0963721417712760",
+      "acces": "Texte intégral HTML accessible ; sections sur transfert et limites des inférences causales consultées."
+    }
+  ],
+  "comparaison": [
+    {
+      "url": "https://www.abcbourse.com/analyses/chronique-bourse_et_strategie_du_jeu_d_echec-1107",
+      "acces": "Article consulté.",
+      "points_traites": "Rapprochement entre reconnaissance de configurations aux échecs et stratégies boursières.",
+      "lacune_comblee": "Distinguer les ressemblances de démarches d’une démonstration de transfert ; ne pas reprendre ses assertions numériques sur le cerveau."
+    },
+    {
+      "url": "https://www.ii.co.uk/analysis-commentary/five-ways-chess-can-help-you-buy-and-sell-shares-better-ii514465",
+      "acces": "Article consulté.",
+      "points_traites": "Stratégie, anticipation, équilibre émotionnel, adaptation, apprentissage.",
+      "lacune_comblee": "Identifier les conditions et limites du transfert plutôt que déduire un avantage financier de qualités communes."
+    }
+  ],
+  "publication": "Refonte incluse dans le commit et le déploiement du glossaire, autorisés par l’utilisateur le 22 octobre 2026.",
+  "verification_rendu": {
+    "results": [
+      {
+        "width": 390,
+        "sections": 5,
+        "marked": 5,
+        "indented": 5,
+        "headings": 0,
+        "paragraphs": 22,
+        "images": [
+          {
+            "src": "/images/investissement-01-transfert.svg",
+            "loaded": true
+          },
+          {
+            "src": "/images/investissement-02-biais.svg",
+            "loaded": true
+          }
+        ],
+        "links": 3,
+        "overflow": false,
+        "conclusionParagraphs": 1,
+        "textComplete": true
+      },
+      {
+        "width": 1440,
+        "sections": 5,
+        "marked": 5,
+        "indented": 5,
+        "headings": 0,
+        "paragraphs": 22,
+        "images": [
+          {
+            "src": "/images/investissement-01-transfert.svg",
+            "loaded": true
+          },
+          {
+            "src": "/images/investissement-02-biais.svg",
+            "loaded": true
+          }
+        ],
+        "links": 3,
+        "overflow": false,
+        "conclusionParagraphs": 1,
+        "textComplete": true
+      }
+    ],
+    "hubLink": true
+  },
+  "verification_compilation": "npm run build réussi ; 404 pages et 19 549 liens internes contrôlés, aucun lien interne mort."
+}

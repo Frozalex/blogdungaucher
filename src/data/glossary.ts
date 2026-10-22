@@ -1,5 +1,5 @@
 export type GlossaryCategory = "echecs" | "neuro" | "psycho" | "compet";
-export interface GlossaryTerm { letter:string; slug:string; title:string; cat:GlossaryCategory; def:string; example:string; related:string[]; articles:string[]; source?:{label:string;href:string}; }
+export interface GlossaryTerm { letter:string; slug:string; title:string; cat:GlossaryCategory; def:string; example:string; related:string[]; articles:string[]; dissertations?:string[]; source?:{label:string;href:string}; }
 /** Les identifiants historiques sont conservés pour les liens entrants. */
 export const glossaryTerms: GlossaryTerm[] = [
   {
@@ -80,7 +80,10 @@ export const glossaryTerms: GlossaryTerm[] = [
     "related": [
       "etat-de-flow",
       "fatigue-decisionnelle",
-      "resilience"
+      "resilience",
+      "biais-confirmation",
+      "biais-ancrage",
+      "aversion-perte"
     ],
     "articles": [
       "5-biais-cognitifs-blunder"
@@ -112,7 +115,9 @@ export const glossaryTerms: GlossaryTerm[] = [
     "related": [
       "memoire-de-travail",
       "chunking",
-      "memoire-procedurale"
+      "memoire-procedurale",
+      "coup-candidat",
+      "intuition"
     ],
     "articles": [
       "minimax-aux-echecs"
@@ -326,7 +331,9 @@ export const glossaryTerms: GlossaryTerm[] = [
     "def": "Système de classement fondé sur les résultats et la force relative des adversaires, nommé d’après Arpad Elo. Les classements en ligne dépendent de leur système, de la cadence et du groupe de joueurs.",
     "example": "Un classement situe tes résultats dans un groupe de joueurs ; deux plateformes ne sont pas directement comparables.",
     "related": [
-      "grand-maitre"
+      "grand-maitre",
+      "performance-elo",
+      "departage"
     ],
     "articles": [
       "syndrome-imposteur-aux-echecs"
@@ -624,7 +631,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     "related": [
       "echec",
       "mat",
-      "pat"
+      "pat",
+      "repetition-position"
     ],
     "articles": [
       "theorie-des-jeux-aux-echecs"
@@ -796,7 +804,8 @@ export const glossaryTerms: GlossaryTerm[] = [
     "related": [
       "echec",
       "mat",
-      "pat"
+      "pat",
+      "repetition-position"
     ],
     "articles": [
       "theorie-des-jeux-aux-echecs"
@@ -960,7 +969,9 @@ export const glossaryTerms: GlossaryTerm[] = [
     "related": [
       "biais-cognitif",
       "etat-de-flow",
-      "fatigue-decisionnelle"
+      "fatigue-decisionnelle",
+      "cadence",
+      "increment"
     ],
     "articles": [
       "echecs-gestion-du-temps"
@@ -980,6 +991,563 @@ export const glossaryTerms: GlossaryTerm[] = [
     ],
     "articles": [
       "theorie-des-jeux-aux-echecs"
+    ]
+  },
+  {
+    "letter": "A",
+    "slug": "avantage-materiel",
+    "title": "Avantage matériel",
+    "cat": "echecs",
+    "def": "Supériorité dans la quantité ou la valeur des pièces et pions disponibles. Elle se distingue de l’activité des pièces et ne garantit pas la victoire.",
+    "example": "Exemple pédagogique : une tour contre un fou, à matériel identique par ailleurs, constitue généralement un avantage matériel.",
+    "related": [
+      "avantage-positionnel",
+      "sacrifice",
+      "finale"
+    ],
+    "articles": [
+      "theorie-des-jeux-aux-echecs"
+    ]
+  },
+  {
+    "letter": "C",
+    "slug": "coup-candidat",
+    "title": "Coup candidat",
+    "cat": "echecs",
+    "def": "Coup retenu pour être examiné avant de choisir. Comparer plusieurs candidats évite de confondre la première idée plausible avec la meilleure décision.",
+    "example": "Conseil proposé : compare une menace directe, un coup défensif et une amélioration de pièce avant de calculer plus loin.",
+    "related": [
+      "calcul-variantes",
+      "intuition",
+      "plan"
+    ],
+    "articles": [
+      "analyser-ses-parties",
+      "minimax-aux-echecs"
+    ],
+    "source": {
+      "label": "Kahneman et Klein, 2009",
+      "href": "https://bear.warrington.ufl.edu/brenner/mar7588/Papers/kahneman-klein-2009.pdf"
+    }
+  },
+  {
+    "letter": "C",
+    "slug": "coup-intermediaire",
+    "title": "Coup intermédiaire (Zwischenzug)",
+    "cat": "echecs",
+    "def": "Coup inséré avant la réponse attendue, souvent une reprise, afin de créer une menace qui change la suite de la variante.",
+    "example": "Exemple pédagogique : avant de reprendre une pièce, tu donnes un échec qui oblige l’adversaire à répondre.",
+    "related": [
+      "combinaison",
+      "calcul-variantes",
+      "enfilade"
+    ],
+    "articles": [
+      "theorie-des-jeux-aux-echecs"
+    ],
+    "source": {
+      "label": "Thèmes tactiques · Lichess",
+      "href": "https://lichess.org/practice"
+    }
+  },
+  {
+    "letter": "E",
+    "slug": "enfilade",
+    "title": "Enfilade",
+    "cat": "echecs",
+    "def": "Attaque alignant deux cibles : le déplacement de celle située devant permet d’atteindre celle placée derrière. À distinguer du clouage, qui gêne le déplacement de la première pièce.",
+    "example": "Exemple pédagogique : une tour attaque un roi placé devant sa dame sur une colonne ; le départ du roi peut permettre la capture de la dame.",
+    "related": [
+      "cloue",
+      "echec-decouverte",
+      "tactique"
+    ],
+    "articles": [
+      "theorie-des-jeux-aux-echecs"
+    ],
+    "source": {
+      "label": "Thèmes tactiques · Lichess",
+      "href": "https://lichess.org/practice"
+    }
+  },
+  {
+    "letter": "E",
+    "slug": "echec-decouverte",
+    "title": "Échec à la découverte",
+    "cat": "echecs",
+    "def": "Échec produit par une pièce à longue portée lorsque le déplacement d’une autre pièce libère sa ligne d’attaque sur le roi.",
+    "example": "Exemple pédagogique : un fou quitte la colonne e et découvre l’attaque d’une tour sur le roi adverse.",
+    "related": [
+      "echec",
+      "combinaison",
+      "enfilade"
+    ],
+    "articles": [
+      "theorie-des-jeux-aux-echecs"
+    ],
+    "source": {
+      "label": "Thèmes tactiques · Lichess",
+      "href": "https://lichess.org/practice"
+    }
+  },
+  {
+    "letter": "P",
+    "slug": "prise-en-passant",
+    "title": "Prise en passant",
+    "cat": "echecs",
+    "def": "Prise spéciale d’un pion venant d’avancer de deux cases, comme s’il n’en avait avancé qu’une. Elle n’est possible qu’au coup suivant et doit laisser son roi en sécurité.",
+    "example": "Exemple pédagogique : après ...d7-d5, un pion blanc en e5 peut jouer exd6 en passant si cette prise est légale.",
+    "related": [
+      "promotion",
+      "structure-de-pions",
+      "notation-algebrique"
+    ],
+    "articles": [
+      "theorie-des-jeux-aux-echecs"
+    ],
+    "source": {
+      "label": "Lois des échecs · FIDE",
+      "href": "https://handbook.fide.com/chapter/e012023"
+    }
+  },
+  {
+    "letter": "R",
+    "slug": "repetition-position",
+    "title": "Répétition de position",
+    "cat": "echecs",
+    "def": "Retour d’une même position, avec le même joueur au trait et les mêmes possibilités de jeu. La troisième occurrence permet une réclamation de nulle ; la cinquième rend la partie nulle.",
+    "example": "Exemple pédagogique : répéter les mêmes déplacements ne suffit pas si le droit de roquer a changé entre les positions.",
+    "related": [
+      "nul",
+      "roque",
+      "prise-en-passant"
+    ],
+    "articles": [
+      "theorie-des-jeux-aux-echecs"
+    ],
+    "source": {
+      "label": "Lois des échecs · FIDE",
+      "href": "https://handbook.fide.com/chapter/e012023"
+    }
+  },
+  {
+    "letter": "I",
+    "slug": "increment",
+    "title": "Incrément",
+    "cat": "compet",
+    "def": "Temps ajouté à la pendule à chaque coup selon la cadence prévue. Il se distingue du délai, pendant lequel le temps principal ne commence pas encore à diminuer.",
+    "example": "Exemple pédagogique : dans une cadence 3 min + 2 s, chaque joueur reçoit deux secondes supplémentaires par coup.",
+    "related": [
+      "cadence",
+      "zeitnot",
+      "tempo"
+    ],
+    "articles": [
+      "echecs-gestion-du-temps"
+    ],
+    "source": {
+      "label": "Lois des échecs · FIDE",
+      "href": "https://handbook.fide.com/chapter/e012023"
+    },
+    "dissertations": [
+      "la-victoire-aux-echecs-justifie-t-elle-tous-les-moyens"
+    ]
+  },
+  {
+    "letter": "I",
+    "slug": "information-parfaite",
+    "title": "Information parfaite",
+    "cat": "echecs",
+    "def": "Propriété d’un jeu où, au moment de décider, les actions antérieures ne sont pas cachées. Elle ne signifie ni connaître les intentions adverses ni pouvoir calculer toutes les conséquences.",
+    "example": "Aux échecs, tu vois la position et les coups joués sans savoir quelle variante ton adversaire prépare.",
+    "related": [
+      "calcul-variantes",
+      "intuition",
+      "strategie"
+    ],
+    "articles": [
+      "theorie-des-jeux-aux-echecs"
+    ],
+    "source": {
+      "label": "Théorie des jeux · Stanford Encyclopedia",
+      "href": "https://plato.stanford.edu/entries/game-theory/"
+    },
+    "dissertations": [
+      "echecs-et-investissement",
+      "la-victoire-aux-echecs-justifie-t-elle-tous-les-moyens"
+    ]
+  },
+  {
+    "letter": "C",
+    "slug": "cadence",
+    "title": "Cadence de jeu",
+    "cat": "compet",
+    "def": "Organisation du temps de réflexion : durée initiale, éventuels contrôles de temps et ajout par coup. Elle fait partie des conditions de la partie.",
+    "example": "Exemple pédagogique : 10 min sans ajout et 10 min + 5 s sont deux cadences différentes.",
+    "related": [
+      "increment",
+      "zeitnot",
+      "fatigue-decisionnelle"
+    ],
+    "articles": [
+      "echecs-gestion-du-temps"
+    ],
+    "source": {
+      "label": "Lois des échecs · FIDE",
+      "href": "https://handbook.fide.com/chapter/e012023"
+    },
+    "dissertations": [
+      "la-victoire-aux-echecs-justifie-t-elle-tous-les-moyens"
+    ]
+  },
+  {
+    "letter": "D",
+    "slug": "departage",
+    "title": "Départage",
+    "cat": "compet",
+    "def": "Critère prévu pour classer des participants ayant le même score. Son choix et son ordre d’application dépendent du règlement de la compétition.",
+    "example": "Exemple pédagogique : deux joueurs à 5 points peuvent être départagés par un critère tenant compte des scores de leurs adversaires.",
+    "related": [
+      "elo",
+      "performance-elo",
+      "cadence"
+    ],
+    "articles": [
+      "echecs-et-argent"
+    ],
+    "source": {
+      "label": "Départages et performance · FIDE, 2026",
+      "href": "https://handbook.fide.com/chapter/TieBreakRegulations032026"
+    }
+  },
+  {
+    "letter": "P",
+    "slug": "performance-elo",
+    "title": "Performance Elo",
+    "cat": "compet",
+    "def": "Estimation associée aux résultats d’un ensemble de parties et au classement des adversaires, selon la méthode retenue. Elle ne se confond pas avec le classement personnel du joueur.",
+    "example": "Exemple pédagogique : une bonne performance sur un tournoi ne remplace pas immédiatement ton classement Elo.",
+    "related": [
+      "elo",
+      "grand-maitre",
+      "departage"
+    ],
+    "articles": [
+      "comparaison-sociale-aux-echecs"
+    ],
+    "source": {
+      "label": "Départages et performance · FIDE, 2026",
+      "href": "https://handbook.fide.com/chapter/TieBreakRegulations032026"
+    }
+  },
+  {
+    "letter": "L",
+    "slug": "loyaute",
+    "title": "Loyauté sportive",
+    "cat": "compet",
+    "def": "Respect des règles communes et des conditions de l’affrontement. Exploiter une erreur adverse est compatible avec la loyauté ; recevoir une aide interdite ne l’est pas.",
+    "example": "Exemple pédagogique : une préparation mémorisée avant la partie se distingue d’une recommandation reçue clandestinement pendant celle-ci.",
+    "related": [
+      "information-parfaite",
+      "cadence",
+      "egalite-formelle"
+    ],
+    "articles": [
+      "theorie-des-jeux-aux-echecs"
+    ],
+    "source": {
+      "label": "Lois des échecs · FIDE",
+      "href": "https://handbook.fide.com/chapter/e012023"
+    },
+    "dissertations": [
+      "la-victoire-aux-echecs-justifie-t-elle-tous-les-moyens"
+    ]
+  },
+  {
+    "letter": "E",
+    "slug": "egalite-formelle",
+    "title": "Égalité formelle",
+    "cat": "compet",
+    "def": "Application de règles communes et de critères identiques aux situations comparables. Elle n’implique pas que tous disposent des mêmes ressources pour apprendre ou s’entraîner.",
+    "example": "Exemple pédagogique : deux joueurs respectent les mêmes règles de déplacement, même si un seul bénéficie de cours réguliers.",
+    "related": [
+      "egalite-chances",
+      "equite",
+      "loyaute"
+    ],
+    "articles": [],
+    "source": {
+      "label": "Égalité · Stanford Encyclopedia",
+      "href": "https://plato.stanford.edu/entries/equality/"
+    },
+    "dissertations": [
+      "les-echecs-sont-ils-reellement-un-jeu-egalitaire"
+    ]
+  },
+  {
+    "letter": "E",
+    "slug": "egalite-chances",
+    "title": "Égalité des chances",
+    "cat": "compet",
+    "def": "Exigence portant sur les possibilités réelles d’accéder à une activité et d’y progresser. Elle se distingue de l’identité des résultats et de la seule ouverture réglementaire.",
+    "example": "Exemple pédagogique : une aide au déplacement peut faciliter l’accès à un tournoi sans garantir de victoire.",
+    "related": [
+      "egalite-formelle",
+      "equite",
+      "elo"
+    ],
+    "articles": [],
+    "source": {
+      "label": "Égalité · Stanford Encyclopedia",
+      "href": "https://plato.stanford.edu/entries/equality/"
+    },
+    "dissertations": [
+      "les-echecs-sont-ils-reellement-un-jeu-egalitaire"
+    ]
+  },
+  {
+    "letter": "E",
+    "slug": "equite",
+    "title": "Équité",
+    "cat": "compet",
+    "def": "Recherche de conditions de participation justes, pouvant tenir compte de différences de situation. Un aménagement compensant un obstacle ne constitue pas nécessairement un avantage injuste.",
+    "example": "Exemple pédagogique : un échiquier adapté peut permettre à une personne malvoyante de participer à la compétition.",
+    "related": [
+      "egalite-formelle",
+      "egalite-chances",
+      "loyaute"
+    ],
+    "articles": [],
+    "source": {
+      "label": "Accessibilité du jeu · FIDE, annexe D",
+      "href": "https://handbook.fide.com/chapter/e012023"
+    },
+    "dissertations": [
+      "les-echecs-sont-ils-reellement-un-jeu-egalitaire"
+    ]
+  },
+  {
+    "letter": "A",
+    "slug": "aversion-perte",
+    "title": "Aversion à la perte",
+    "cat": "psycho",
+    "def": "Tendance à accorder plus de poids à une perte qu’à un gain comparable, relativement à un point de référence. Elle ne se confond pas avec toute prudence face au risque.",
+    "example": "Exemple pédagogique : la perte d’un point Elo peut peser davantage dans ton jugement qu’un gain de même taille.",
+    "related": [
+      "biais-cognitif",
+      "effet-disposition",
+      "couts-irrecuperables"
+    ],
+    "articles": [
+      "aversion-a-la-perte-aux-echecs"
+    ],
+    "source": {
+      "label": "Kahneman et Tversky, 1979",
+      "href": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf"
+    },
+    "dissertations": [
+      "echecs-et-investissement",
+      "faut-il-apprendre-a-perdre-pour-devenir-meilleur-aux-echecs"
+    ]
+  },
+  {
+    "letter": "B",
+    "slug": "biais-confirmation",
+    "title": "Biais de confirmation",
+    "cat": "psycho",
+    "def": "Tendance à chercher ou interpréter les informations de manière favorable à une croyance déjà présente. Elle peut concerner le choix des variantes que l’on examine.",
+    "example": "Exemple pédagogique : tu calcules les réponses qui favorisent ton attaque et laisses de côté une défense qui la contredit.",
+    "related": [
+      "biais-cognitif",
+      "biais-ancrage",
+      "coup-candidat"
+    ],
+    "articles": [
+      "biais-de-confirmation-aux-echecs"
+    ],
+    "source": {
+      "label": "Nickerson, 1998 · résumé",
+      "href": "https://journals.sagepub.com/doi/abs/10.1037/1089-2680.2.2.175"
+    },
+    "dissertations": [
+      "faut-il-apprendre-a-perdre-pour-devenir-meilleur-aux-echecs"
+    ]
+  },
+  {
+    "letter": "B",
+    "slug": "biais-ancrage",
+    "title": "Biais d’ancrage",
+    "cat": "psycho",
+    "def": "Influence excessive d’une valeur ou d’une information initiale sur une estimation ultérieure, lorsque l’ajustement reste insuffisant. Toute persistance d’une opinion n’est pas nécessairement un ancrage.",
+    "example": "Exemple pédagogique : une première estimation très favorable continue d’orienter ton jugement après une réponse adverse qui exige de réévaluer la position.",
+    "related": [
+      "biais-cognitif",
+      "biais-confirmation",
+      "metacognition"
+    ],
+    "articles": [
+      "biais-d-ancrage-aux-echecs"
+    ],
+    "source": {
+      "label": "Tversky et Kahneman, 1974 · résumé",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/17835457/"
+    }
+  },
+  {
+    "letter": "E",
+    "slug": "effet-disposition",
+    "title": "Effet de disposition",
+    "cat": "psycho",
+    "def": "Tendance observée en finance à réaliser les gains plus volontiers que les pertes. Son étude ne démontre pas que la pratique des échecs en protège.",
+    "example": "Exemple fictif en finance : céder un placement gagnant tout en conservant un placement perdant uniquement pour éviter de reconnaître sa perte.",
+    "related": [
+      "aversion-perte",
+      "couts-irrecuperables",
+      "transfert-apprentissage"
+    ],
+    "articles": [],
+    "source": {
+      "label": "Odean, 1998",
+      "href": "https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf"
+    },
+    "dissertations": [
+      "echecs-et-investissement"
+    ]
+  },
+  {
+    "letter": "C",
+    "slug": "couts-irrecuperables",
+    "title": "Coûts irrécupérables",
+    "cat": "psycho",
+    "def": "Temps, effort ou ressources déjà engagés qui ne peuvent être récupérés. Le biais consiste à poursuivre surtout pour justifier ces dépenses passées, au lieu d’examiner les perspectives actuelles.",
+    "example": "Exemple pédagogique : maintenir une attaque devenue inefficace uniquement parce que tu as déjà consacré plusieurs coups à sa préparation.",
+    "related": [
+      "effet-disposition",
+      "biais-confirmation",
+      "plan"
+    ],
+    "articles": [
+      "pourquoi-ton-cerveau-prefere-avoir-raison"
+    ],
+    "source": {
+      "label": "Arkes et Blumer, 1985",
+      "href": "https://cognition.aau.at/bg/BA/Arkes%20%26%20Blumer%201985.pdf"
+    },
+    "dissertations": [
+      "echecs-et-investissement"
+    ]
+  },
+  {
+    "letter": "I",
+    "slug": "intuition",
+    "title": "Intuition",
+    "cat": "psycho",
+    "def": "Jugement qui apparaît sans déroulement conscient de toutes les étapes du raisonnement. L’expérience peut nourrir une intuition pertinente, mais le sentiment de certitude ne garantit pas sa justesse.",
+    "example": "Exemple pédagogique : un motif familier te suggère un sacrifice ; tu vérifies ensuite si les défenses concrètes le réfutent.",
+    "related": [
+      "chunking",
+      "calcul-variantes",
+      "coup-candidat"
+    ],
+    "articles": [
+      "echecs-vs-philosophie-pensee-strategique"
+    ],
+    "source": {
+      "label": "Kahneman et Klein, 2009",
+      "href": "https://bear.warrington.ufl.edu/brenner/mar7588/Papers/kahneman-klein-2009.pdf"
+    }
+  },
+  {
+    "letter": "M",
+    "slug": "metacognition",
+    "title": "Métacognition",
+    "cat": "psycho",
+    "def": "Connaissance et suivi de ses propres processus de pensée : repérer ce que l’on comprend, ce qui manque et les stratégies que l’on utilise. Elle peut elle-même être imparfaite.",
+    "example": "Conseil proposé : après une erreur, distingue une menace non repérée d’une variante repérée mais mal calculée.",
+    "related": [
+      "memoire-de-travail",
+      "biais-confirmation",
+      "intuition"
+    ],
+    "articles": [
+      "analyser-ses-parties"
+    ],
+    "source": {
+      "label": "Flavell, 1979",
+      "href": "https://www.neurodyspaca.org/IMG/pdf/flavell_-_1979_-_metacognition_and_cognitive_monitoring.pdf"
+    },
+    "dissertations": [
+      "faut-il-apprendre-a-perdre-pour-devenir-meilleur-aux-echecs"
+    ]
+  },
+  {
+    "letter": "T",
+    "slug": "transfert-apprentissage",
+    "title": "Transfert d’apprentissage",
+    "cat": "psycho",
+    "def": "Utilisation d’un acquis dans une autre tâche ou un autre domaine. Une ressemblance entre activités ne suffit pas à démontrer un transfert, surtout lorsqu’elles sont éloignées.",
+    "example": "Exemple pédagogique : mieux calculer aux échecs ne prouve pas, à lui seul, une meilleure capacité à évaluer un investissement.",
+    "related": [
+      "correlation",
+      "causalite",
+      "metacognition"
+    ],
+    "articles": [
+      "les-echecs-rendent-ils-plus-intelligent"
+    ],
+    "source": {
+      "label": "Sala et Gobet, 2017",
+      "href": "https://journals.sagepub.com/doi/10.1177/0963721417712760"
+    },
+    "dissertations": [
+      "echecs-et-investissement",
+      "faut-il-apprendre-a-perdre-pour-devenir-meilleur-aux-echecs"
+    ]
+  },
+  {
+    "letter": "C",
+    "slug": "correlation",
+    "title": "Corrélation",
+    "cat": "psycho",
+    "def": "Association statistique entre des variables. Elle ne suffit pas à établir que l’une provoque l’autre : d’autres facteurs ou une causalité inverse peuvent expliquer l’association.",
+    "example": "Exemple fictif : si des joueurs plus expérimentés ont de meilleurs scores à un test, cette observation seule ne prouve pas un effet de l’entraînement.",
+    "related": [
+      "causalite",
+      "transfert-apprentissage",
+      "biais-cognitif"
+    ],
+    "articles": [
+      "les-echecs-rendent-ils-plus-intelligent"
+    ],
+    "source": {
+      "label": "Hernán et Robins · Causal Inference: What If",
+      "href": "https://miguelhernan.org/whatifbook"
+    },
+    "dissertations": [
+      "echecs-et-investissement"
+    ]
+  },
+  {
+    "letter": "C",
+    "slug": "causalite",
+    "title": "Causalité",
+    "cat": "psycho",
+    "def": "Relation dans laquelle une modification d’un facteur contribue à produire une modification d’un résultat. Identifier un effet causal demande de comparer des situations de façon à écarter les explications concurrentes.",
+    "example": "Exemple pédagogique : comparer un entraînement échiquéen à une activité témoin aide à distinguer son effet de celui du temps consacré à apprendre.",
+    "related": [
+      "correlation",
+      "transfert-apprentissage",
+      "metacognition"
+    ],
+    "articles": [
+      "les-echecs-rendent-ils-plus-intelligent"
+    ],
+    "source": {
+      "label": "Hernán et Robins · Causal Inference: What If",
+      "href": "https://miguelhernan.org/whatifbook"
+    },
+    "dissertations": [
+      "echecs-et-investissement"
     ]
   }
 ];

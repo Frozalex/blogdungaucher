@@ -1,9 +1,9 @@
 ---
 title: "Dans quelle mesure la pratique des échecs prépare-t-elle à l'investissement ?"
-excerpt: "Un ami m'a posé la question : existe-t-il un lien entre la pratique des échecs et l'aptitude à investir ? L'intuition est séduisante, mais elle mérite un examen rigoureux. Dissertation complète."
+excerpt: "Les échecs exercent-ils des qualités utiles à l’investisseur, ou l’analogie masque-t-elle deux apprentissages distincts ? Une réflexion sur le calcul, la perte et les limites du transfert."
 publishDate: "2026-05-26"
+updatedDate: "2026-10-22"
 author: "Le Gaucher"
-readingTime: "6 min"
 tags: ["échecs", "investissement", "finance", "stratégie", "biais cognitifs", "dissertation"]
 seoTitle: "Échecs et investissement : la pratique des échecs prépare-t-elle à l'investissement ?"
 seoDescription: "Dissertation : dans quelle mesure les échecs préparent-ils à l'investissement ? Patience, calcul, gestion du risque. Parentés réelles et limites du transfert."
@@ -11,98 +11,70 @@ seoDescription: "Dissertation : dans quelle mesure les échecs préparent-ils à
 
 > Ceci n’est pas un conseil en investissement.
 
-## Introduction
+<div class="academic-dissertation">
 
-Un ami m'a récemment soumis une question qui, en apparence, semblait appeler une réponse évidente : existe-t-il un lien entre la pratique des échecs et l'aptitude à investir ? La question n'est pas anodine. Elle circule dans les milieux financiers, dans les ouvrages de développement personnel, dans les interviews de traders qui posent volontiers devant un échiquier. Elle repose sur une intuition largement partagée : celui qui sait jouer aux échecs aurait naturellement les qualités d'un bon investisseur.
+<section class="dissertation-movement" aria-label="Introduction">
 
-Mais une intuition partagée n'est pas une vérité établie.
+<p class="dissertation-movement-start">Les échecs et l'investissement semblent exiger des qualités voisines : anticiper, comparer plusieurs décisions, résister à la précipitation et accepter une perte lorsqu'elle ne peut être évitée. Cette parenté nourrit une hypothèse séduisante : pratiquer les échecs préparerait à investir. Mais préparer ne signifie pas nécessairement former, et une ressemblance entre deux activités ne prouve pas que les compétences acquises dans l'une deviennent efficaces dans l'autre. Les échecs consistent à prendre des décisions dans un affrontement régi par des règles communes ; l'investissement engage des ressources dans l'attente d'un bénéfice futur, avec un risque de perte et des informations incomplètes. La difficulté est donc de déterminer si l'expérience échiquéenne fournit une préparation réelle à la décision financière ou seulement une comparaison éclairante. Dans quelle mesure la pratique des échecs prépare-t-elle à l'investissement ? Nous montrerons d'abord qu'elle peut offrir un exercice pertinent du jugement stratégique, avant d'examiner les limites de cette parenté. Nous défendrons enfin l'idée que son apport éventuel dépend d'un travail explicite de transposition, subordonné à l'apprentissage du domaine financier.</p>
 
-Les échecs désignent ici une discipline cognitive et stratégique millénaire, fondée sur le calcul, l'anticipation et la gestion des ressources dans un environnement contraint. L'investissement, quant à lui, renvoie à l'engagement de capitaux dans un système économique ouvert, incertain, gouverné autant par la psychologie collective que par les fondamentaux rationnels.
+</section>
 
-Dans quelle mesure la pratique des échecs prépare-t-elle à l'investissement ?
+<section class="dissertation-movement" aria-label="Thèse">
 
-Si les deux disciplines partagent indéniablement un certain nombre de vertus communes, ce lien s'avère à l'examen moins spécifique et moins décisif qu'il n'y paraît, ce qui invite à reconsidérer ce que les échecs forment vraiment, et ce qu'ils ne sauraient remplacer.
+<p class="dissertation-movement-start">Il semble d'abord raisonnable de considérer la pratique des échecs comme une préparation à l'investissement, parce qu'elle confronte régulièrement le joueur à des exigences que l'on retrouve dans la décision financière. Sur l'échiquier, une action ne vaut pas seulement par son attrait immédiat : elle doit être appréciée au regard de ses conséquences, des réponses adverses et des ressources qu'elle mobilise. Le joueur doit ainsi apprendre à différer une satisfaction présente lorsqu'elle compromet un objectif plus important. Cette exigence paraît proche de celle d'un investissement, qui suppose d'engager des moyens aujourd'hui pour un résultat futur. La parenté concerne ici une structure de décision, avant de concerner un savoir spécialisé.</p>
 
----
+<p>La patience peut illustrer cette première proximité. Aux échecs, une attaque prématurée peut échouer parce que les pièces ne sont pas suffisamment coordonnées. Attendre consiste alors à améliorer sa position jusqu'à réunir les conditions de l'action. Cette attente n'a rien d'une passivité : elle s'appuie sur une évaluation et demeure révisable si la position change. De même, réfléchir à un investissement implique de distinguer l'existence d'une occasion de la simple envie d'agir. Nous pouvons donc soutenir que les échecs fournissent un terrain d'exercice pour apprendre à justifier une décision plutôt qu'à satisfaire une impatience. Cela ne démontre pas encore que cette habitude se retrouve spontanément hors du jeu, mais cela explique pourquoi le rapprochement mérite d'être examiné.</p>
 
-## I. Les échecs et l'investissement : une parenté réelle
+<p>Le calcul offre un deuxième argument. Dans un exemple pédagogique, un joueur envisage de sacrifier une pièce pour ouvrir des lignes contre le roi adverse. Il ne suffit pas de constater que l'attaque semble prometteuse : il faut examiner les défenses possibles et déterminer ce qui subsistera si l'adversaire refuse la suite espérée. L'exemple ne décrit aucune partie historique ; il met en évidence une exigence de raisonnement. Une décision engageant des ressources doit être confrontée à des scénarios défavorables, et non évaluée seulement à partir de celui que l'on souhaite voir se réaliser. Cette manière d'interroger ses propres attentes peut servir de modèle pour aborder une décision financière, sans fournir les données nécessaires à son évaluation.</p>
 
-### 1. Des vertus communes au cœur des deux disciplines
+<p>La gestion de la perte renforce cette analogie. Dans une partie, une pièce déjà perdue ne revient pas parce que le joueur refuse d'en tenir compte. La décision suivante doit partir de la position présente. Il est possible de chercher des compensations, mais celles-ci doivent exister sur l'échiquier ; le désir de réparer une erreur ne les crée pas. Une pratique réfléchie des échecs peut ainsi donner un sens concret à la distinction entre reconnaître une perte et renoncer à toute action. L'intérêt formateur de cette distinction tient à la possibilité de poursuivre un raisonnement malgré une déception, plutôt qu'à une supposée insensibilité aux résultats.</p>
 
-Il serait inexact de nier toute parenté entre les échecs et l'investissement. On peut rapprocher les exigences des deux activités sans conclure qu’une compétence acquise dans l’une se transfère automatiquement à l’autre.
+<p>Enfin, le joueur peut revenir sur ses choix après la partie, comparer ses intentions aux variantes disponibles et identifier une erreur de méthode. Cette possibilité d'analyse fait des échecs un exercice exigeant de justification. L'affirmation selon laquelle ils préparent à l'investissement possède donc une première force : ils permettent de travailler des démarches que l'on peut juger pertinentes pour décider dans un autre contexte. Pourtant, une question demeure. Pratiquer ces démarches sur un échiquier suffit-il à les reconnaître et à les appliquer dans un environnement dont les objets, les informations et les critères de réussite sont différents ?</p>
 
-La patience, d'abord. Aux échecs, précipiter une attaque sans en avoir les moyens peut compromettre la position. L'investisseur qui cède à l'immédiateté, qui achète dans l'euphorie et vend dans la panique, dilapide ses positions. Dans les deux cas, la maîtrise du temps est une condition de la performance.
-
-La rigueur ensuite. Le joueur d'échecs apprend à ne pas s'appuyer sur l'intuition seule : il calcule, vérifie, anticipe les réponses adverses. Cette discipline du calcul n'est pas étrangère à l'analyse fondamentale qu'exige une décision d'investissement éclairée.
-
-La gestion de la perte, enfin. Aux échecs, perdre une pièce, concéder un avantage, abandonner une partie fait partie intégrante de la progression. L'investisseur qui ne sait pas encaisser une moins-value sans paniquer compromet sa stratégie de long terme. Les deux domaines exigent une forme de détachement affectif face à l'adversité.
-
-### 2. Une structure de pensée stratégique partagée
-
-Au-delà des vertus, les échecs et l'investissement partagent une structure de pensée commune : la capacité à envisager plusieurs scénarios simultanément, à évaluer des positions complexes, à arbitrer entre le court terme et le long terme.
-
-Le joueur d'échecs qui calcule des variantes à plusieurs coups de profondeur met en œuvre une démarche que l’on peut comparer à celle de l'investisseur qui modélise les conséquences d'une décision dans un environnement incertain. Cette pensée arborescente, cette aptitude à raisonner en termes de probabilités et de conséquences, constitue un pont intellectuel réel entre les deux disciplines.
-
----
+</section>
 
 ![Comparaison des environnements : règles et position visibles aux échecs, informations et évolutions économiques incertaines en investissement ; l’analogie ne démontre pas le transfert.](/images/investissement-01-transfert.svg)
 
-## II. Un lien insuffisant et non spécifique
+<section class="dissertation-movement" aria-label="Antithèse">
 
-### 1. Un argument qui prouve trop
+<p class="dissertation-movement-start">À cette première position s'oppose une objection décisive : une compétence efficace dans un domaine peut rester dépendante des connaissances propres à celui-ci. Le joueur expérimenté ne calcule pas dans le vide. Il reconnaît des structures de pions, connaît des motifs tactiques et sait quelles menaces méritent son attention. Ces acquis orientent sa recherche et lui permettent d'écarter de nombreuses possibilités. Or, connaître une structure de pions n'apprend pas à interpréter les comptes d'une entreprise ni à comprendre les caractéristiques d'un produit financier. L'analogie entre les démarches ne fournit donc pas les connaissances qui rendent chacune d'elles opérante.</p>
 
-Si l'on accepte que les échecs forgent un état d'esprit transférable à la finance, ce même raisonnement s'applique à la musique, aux arts martiaux, à l'athlétisme de haut niveau, à la programmation. Toutes ces disciplines exigent patience, rigueur, capacité à encaisser l'échec et à recommencer.
+<p>Cette difficulté rejoint la question du transfert lointain. Dans leur synthèse <em><a href="https://journals.sagepub.com/doi/10.1177/0963721417712760">Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training</a></em>, publiée en 2017, Giovanni Sala et Fernand Gobet examinent les effets d'entraînements cognitifs sur des compétences éloignées des tâches pratiquées. Leur analyse ne permet pas de présumer une amélioration générale à partir des progrès réalisés dans l'activité entraînée. Elle n'étudie pas directement le rendement des investisseurs : elle ne prouve donc pas l'impossibilité de tout apport des échecs à la finance. Elle retire toutefois à l'analogie sa valeur de démonstration. Pour établir un bénéfice financier, il faudrait une étude qui mesure précisément ce bénéfice et distingue l'effet de la pratique échiquéenne de celui d'autres caractéristiques des participants.</p>
 
-Faut-il en conclure que le pianiste chevronné est un investisseur en puissance ? Que le judoka ceinture noire n'attend qu'un compte-titres pour révéler son génie financier ?
+<p>Une autre objection porte sur la spécificité du rapprochement. La musique, les mathématiques ou la programmation peuvent également exiger rigueur, patience et révision des erreurs. Cette observation n'annule pas tout intérêt des échecs : plusieurs activités peuvent contribuer à une formation. Elle interdit cependant de présenter ces qualités comme la preuve d'une préparation financière particulière. De même, le parcours d'un bon joueur devenu investisseur ne suffirait pas à établir un effet causal. Il faudrait distinguer ce que sa pratique lui a apporté de ce qui relève de sa formation, de ses ressources et de son expérience financière.</p>
 
-Quand un argument prouve tout, il ne prouve rien. Le rapprochement reste donc une analogie. La synthèse de Sala et Gobet (2017) rappelle que les effets d’un entraînement dans une activité cognitive ne se généralisent pas automatiquement à des tâches éloignées. Elle n’étudie pas directement la performance des investisseurs : elle invite à demander une preuve spécifique de ce transfert.
+<p>Les environnements de décision diffèrent également. Dans une partie régulière, les pièces et leurs positions sont visibles, les règles déterminent les coups légaux et les déplacements ne dépendent pas d'un tirage aléatoire. Les intentions adverses et les conséquences lointaines restent difficiles à connaître : l'incertitude du joueur est réelle, même dans un jeu à information parfaite. En investissement, une partie des informations peut manquer, les données peuvent être interprétées de plusieurs façons et des événements extérieurs peuvent modifier les perspectives. Les marchés ne sont pas pour autant dépourvus de règles ni entièrement chaotiques. La différence pertinente tient aux informations disponibles et à la possibilité de vérifier les conséquences d'une décision, plutôt qu'à une opposition absolue entre un jeu rationnel et un monde irrationnel.</p>
 
-### 2. Deux mondes de nature fondamentalement différente
+<p>Cette différence transforme le sens même de la patience. Sur l'échiquier comme dans une décision financière, attendre peut être justifié ou devenir une manière de refuser de réexaminer son jugement. Dans <em><a href="https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf">Are Investors Reluctant to Realize Their Losses?</a></em>, publié en 1998, Terrance Odean étudie les transactions de 10 000 comptes auprès d'un courtier américain entre 1987 et 1993. Il observe une préférence pour la réalisation des gains plutôt que des pertes, caractéristique de l'effet de disposition. Cette étude porte sur un échantillon situé et ne compare pas joueurs d'échecs et non-joueurs. Elle montre pourquoi une attitude apparemment patiente doit être examinée dans son contexte, sans démontrer que la pratique du jeu protège de ce comportement.</p>
 
-Il existe une raison plus profonde pour laquelle le transfert achoppe, et elle tient à la nature même des deux environnements.
+<p>Il serait donc insuffisant de conclure qu'un joueur sachant abandonner une partie saura nécessairement réévaluer une décision financière. Les critères qui permettent de reconnaître une position perdante ne se retrouvent pas tels quels dans un autre domaine. La pratique échiquéenne ne constitue ni une formation financière ni une garantie de maîtrise émotionnelle. Mais faut-il, pour autant, lui refuser toute portée dès lors que son efficacité hors du jeu n'est pas démontrée ? Une absence de preuve d'amélioration ne suffit pas à rendre toute comparaison intellectuellement stérile. Il faut préciser quel apport nous pouvons raisonnablement lui reconnaître.</p>
 
-Les échecs sont un monde fermé. Trente-deux pièces, soixante-quatre cases, des règles immuables connues des deux joueurs avant même que la première pièce ne bouge. La complexité y est vertigineuse (personne ne le conteste), mais la structure est absolue. Personne ne ment. Aucune force extérieure ne vient modifier les règles en cours de partie.
+</section>
 
-L'investissement n'est pas ce monde-là. C'est un système ouvert, vivant, parfois irrationnel. Les règles changent. Les acteurs peuvent mentir. Une décision prise à l'autre bout du monde un dimanche soir peut effacer en quelques heures ce que des années de calcul avaient bâti.
+<section class="dissertation-movement" aria-label="Prise de position personnelle">
 
-La patience aux échecs, c'est attendre le bon moment dans une position que l'on comprend. La patience en investissement, c'est tenir une position dans un brouillard parfois total, sans certitude que le bon moment viendra jamais. Ce ne sont pas les mêmes vertus. Ce sont deux muscles distincts qui portent le même nom.
+<p class="dissertation-movement-start">Nous défendrons une position conditionnelle : les échecs peuvent préparer une réflexion sur l'investissement, mais ils ne préparent à investir qu'à la condition de soumettre leurs enseignements supposés aux exigences du nouveau domaine. Cette distinction permet de reconnaître leur valeur pédagogique sans transformer une familiarité avec le raisonnement stratégique en compétence financière. Le joueur peut emprunter à son expérience des questions, des méthodes de comparaison et des occasions de vigilance. Il ne peut tenir les réponses pour acquises au motif qu'il maîtrise déjà un autre jeu de décisions. Ce qui peut être transposé est une démarche à reconstruire, non une supériorité à revendiquer.</p>
 
----
+<p>Cette position répond d'abord à une objection : si le transfert n'est pas automatique, en quoi reste-t-il une préparation ? Parce qu'une expérience peut fournir un point de départ pour apprendre sans garantir le résultat de cet apprentissage. Reconnaître aux échecs la nécessité d'examiner une défense adverse peut aider à comprendre pourquoi une hypothèse doit être confrontée à ce qui pourrait la réfuter. Mais l'usage de cette comparaison doit rester explicite. Dans l'analyse d'un investissement, il faut encore déterminer quelles informations sont pertinentes et quels événements conduiraient à réviser l'hypothèse. La préparation devient alors un travail de mise en relation et de vérification, au lieu d'une transmission supposée des compétences.</p>
 
-## III. Ce que les échecs forment vraiment, et ce qu'ils ne remplacent pas
+<p>Un second exemple pédagogique permet de préciser cette exigence. Un joueur a longtemps préparé une attaque, puis constate que son adversaire a consolidé sa défense. Poursuivre le plan initial pour justifier les efforts déjà consacrés serait confondre l'histoire de son projet avec sa valeur présente. Cette situation peut éclairer une difficulté plus générale : distinguer ce qu'une décision a coûté de ce qu'elle permet encore d'attendre. Pourtant, la comparaison ne décide pas du sort d'un placement. Elle ne dit pas s'il faut le conserver ou le céder. Elle invite seulement à rechercher des raisons actuelles, adaptées au domaine étudié, plutôt qu'à demander au passé de justifier à lui seul l'action future.</p>
 
-### 1. Un outil de pensée général, non une formation financière
+<p>Les travaux de Daniel Kahneman et Amos Tversky permettent de donner à cette vigilance un contenu plus précis. Dans <em><a href="https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf">Prospect Theory: An Analysis of Decision under Risk</a></em>, publié en 1979, ils proposent un modèle descriptif de choix risqués où comptent notamment le point de référence et la manière dont gains et pertes sont évalués. L'article s'appuie notamment sur des choix hypothétiques, dont les auteurs discutent les limites de généralisation. Il ne démontre aucune immunité acquise par les échecs. Son intérêt pour notre problème est précisément de rappeler que le fait de calculer ne dispense pas d'examiner la manière dont une décision a été formulée.</p>
 
-Les échecs permettent de pratiquer le calcul et la planification dans un domaine précis. Tu peux t’en inspirer pour examiner une décision, sans disposer pour autant des connaissances nécessaires à son analyse financière. Une ressemblance entre deux démarches ne mesure pas un bénéfice de l’entraînement sur le rendement d’un portefeuille.
+<p>On pourrait encore objecter que cette préparation est trop modeste pour mériter ce nom. Mais l'exigence de modestie ne la rend pas inutile : elle en fixe les conditions de validité. Une comparaison devient féconde lorsqu'elle fait apparaître une question que l'on peut ensuite étudier ; elle devient trompeuse lorsqu'elle dispense de cette étude. Le joueur qui reconnaît un motif tactique sait qu'une ressemblance entre deux positions ne garantit pas qu'une combinaison fonctionne dans les deux. Une pièce supplémentaire, une case de fuite ou un ordre de coups différent peuvent changer la conclusion. Nous proposons d'appliquer la même exigence à l'analogie financière : vérifier les différences avant d'emprunter les conclusions.</p>
 
-Les biais comportementaux documentés montrent pourquoi cette distinction compte. Kahneman et Tversky (1979) proposent la théorie des perspectives pour décrire des choix risqués, notamment leur dépendance au point de référence et au cadrage des gains et des pertes. Leur article ne démontre pas que jouer aux échecs protège de ces effets.
+<p>Il faut enfin distinguer la formation du jugement et la mesure de la performance. Une personne peut juger utile une comparaison tirée des échecs sans que l'on dispose d'une preuve qu'elle améliore ses résultats financiers. Inversement, un résultat favorable isolé ne suffit pas à valider sa méthode. Prétendre davantage exigerait des données adaptées. La position que nous défendons n'est donc pas que les échecs seraient sans effet possible, mais que leur apport doit rester proportionné à ce que l'on peut justifier. Cette exigence protège la valeur du jeu lui-même : il n'a pas besoin de promettre une réussite financière pour constituer une pratique intellectuellement riche.</p>
 
-Odean (1998) examine des transactions d’investisseurs et documente une tendance à réaliser les gains plus volontiers que les pertes, l’effet de disposition. C’est un résultat empirique sur les comportements financiers dans l’échantillon étudié, pas une preuve qu’un bon joueur d’échecs y échappe. Apprendre le vocabulaire du risque et examiner des données financières restent des apprentissages propres au domaine.
+<p>Ainsi, la pratique échiquéenne peut devenir un appui pour celui qui accepte de réapprendre. Elle offre des situations concrètes pour interroger une attente, un plan ou une réaction à la perte ; l'étude financière doit ensuite leur donner un sens dans un environnement différent. La meilleure leçon à transposer serait alors une exigence plutôt qu'une recette : ne pas confondre la cohérence d'un raisonnement avec la validité de ses prémisses. Celui qui sait calculer sur un échiquier ne dispose pas encore des connaissances nécessaires pour décider ailleurs. Reconnaître cette limite ne renonce pas à la rigueur ; c'est commencer à l'exercer.</p>
+
+</section>
 
 ![Deux observations à distinguer : le modèle de décision sous risque de Kahneman et Tversky, et l’effet de disposition étudié par Odean ; aucun ne prouve une protection acquise par les échecs.](/images/investissement-02-biais.svg)
 
-### 2. Confondre les deux, une erreur que les échecs devraient prévenir
+<section class="dissertation-movement" aria-label="Conclusion">
 
-Il y a une ironie dans cette confusion. Croire que maîtriser les échecs suffit à maîtriser l'investissement, c'est précisément le type de raisonnement paresseux que la pratique sérieuse des échecs devrait apprendre à éviter : celui qui généralise trop vite, qui prend le raccourci séduisant plutôt que l'analyse rigoureuse, qui confond la ressemblance de surface avec l'identité profonde.
+<p class="dissertation-movement-start">Les échecs exercent le calcul et la révision des décisions, mais cette parenté ne prouve aucun bénéfice financier. Les différences entre les domaines limitent le transfert. Nous concluons que <strong>leur pratique peut préparer une réflexion sur l'investissement, sans remplacer l'apprentissage nécessaire pour investir</strong>. Cet apport dépend d'une transposition explicite et vérifiée.</p>
 
-Le bon joueur d'échecs sait qu'une position qui paraît gagnante peut cacher une réfutation. Le bon investisseur sait qu'une analogie qui paraît évidente peut masquer une différence fondamentale.
+</section>
 
-Confondre les deux disciplines, c'est commettre exactement l'erreur que chacune d'elles enseigne à ne pas commettre.
-
----
-
-## Conclusion
-
-La pratique des échecs offre des analogies pour réfléchir au calcul, à l’attente et à la perte. Les sources mobilisées ne démontrent toutefois pas qu’elle améliore la performance financière. Affirmer un tel effet demanderait une étude spécifique.
-
-Toutefois, ce lien est moins spécifique qu'on ne le prétend : il est partagé par de nombreuses disciplines exigeantes et ne distingue pas les échecs comme une préparation financière particulière. Plus fondamentalement, les deux domaines sont de nature différente (l'un fermé et structuré, l'autre ouvert et chaotique), ce qui limite considérablement la portée du transfert.
-
-Les échecs apprennent à penser. Ils n'apprennent pas à investir. Ce sont deux apprentissages distincts, et les confondre, aussi séduisant que soit le raccourci, c'est précisément le genre d'erreur qu'un esprit formé aux échecs devrait savoir éviter.
-
-En réponse à la question de mon ami : oui, joue aux échecs. Mais apprends aussi la finance.
-
-## Sources
-
-- Kahneman, D., & Tversky, A. (1979). *Prospect Theory: An Analysis of Decision under Risk*. Econometrica, 47(2), 263–292. [Article intégral](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf).
-- Odean, T. (1998). *Are Investors Reluctant to Realize Their Losses?* The Journal of Finance, 53(5), 1775–1798. [Article sur le site de l’auteur](https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf).
-- Sala, G., & Gobet, F. (2017). *Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training*. Current Directions in Psychological Science, 26(6), 515–520. [Synthèse](https://journals.sagepub.com/doi/10.1177/0963721417712760).
+</div>

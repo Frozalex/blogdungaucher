@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-22",
+  "avant": 59,
+  "apres": 85,
+  "ajouts": 26,
+  "categories": [
+    "echecs",
+    "neuro",
+    "psycho",
+    "compet"
+  ],
+  "consigne": "Aucun nouveau thème Philosophie ; catégories historiques conservées.",
+  "definitions_preexistantes_conservees": true,
+  "ancres_preexistantes_conservees": true,
+  "nouveaux_termes": [
+    {
+      "slug": "avantage-materiel",
+      "titre": "Avantage matériel",
+      "categorie": "echecs"
+    },
+    {
+      "slug": "coup-candidat",
+      "titre": "Coup candidat",
+      "categorie": "echecs"
+    },
+    {
+      "slug": "coup-intermediaire",
+      "titre": "Coup intermédiaire (Zwischenzug)",
+      "categorie": "echecs"
+    },
+    {
+      "slug": "enfilade",
+      "titre": "Enfilade",
+      "categorie": "echecs"
+    },
+    {
+      "slug": "echec-decouverte",
+      "titre": "Échec à la découverte",
+      "categorie": "echecs"
+    },
+    {
+      "slug": "prise-en-passant",
+      "titre": "Prise en passant",
+      "categorie": "echecs"
+    },
+    {
+      "slug": "repetition-position",
+      "titre": "Répétition de position",
+      "categorie": "echecs"
+    },
+    {
+      "slug": "increment",
+      "titre": "Incrément",
+      "categorie": "compet"
+    },
+    {
+      "slug": "information-parfaite",
+      "titre": "Information parfaite",
+      "categorie": "echecs"
+    },
+    {
+      "slug": "cadence",
+      "titre": "Cadence de jeu",
+      "categorie": "compet"
+    },
+    {
+      "slug": "departage",
+      "titre": "Départage",
+      "categorie": "compet"
+    },
+    {
+      "slug": "performance-elo",
+      "titre": "Performance Elo",
+      "categorie": "compet"
+    },
+    {
+      "slug": "loyaute",
+      "titre": "Loyauté sportive",
+      "categorie": "compet"
+    },
+    {
+      "slug": "egalite-formelle",
+      "titre": "Égalité formelle",
+      "categorie": "compet"
+    },
+    {
+      "slug": "egalite-chances",
+      "titre": "Égalité des chances",
+      "categorie": "compet"
+    },
+    {
+      "slug": "equite",
+      "titre": "Équité",
+      "categorie": "compet"
+    },
+    {
+      "slug": "aversion-perte",
+      "titre": "Aversion à la perte",
+      "categorie": "psycho"
+    },
+    {
+      "slug": "biais-confirmation",
+      "titre": "Biais de confirmation",
+      "categorie": "psycho"
+    },
+    {
+      "slug": "biais-ancrage",
+      "titre": "Biais d’ancrage",
+      "categorie": "psycho"
+    },
+    {
+      "slug": "effet-disposition",
+      "titre": "Effet de disposition",
+      "categorie": "psycho"
+    },
+    {
+      "slug": "couts-irrecuperables",
+      "titre": "Coûts irrécupérables",
+      "categorie": "psycho"
+    },
+    {
+      "slug": "intuition",
+      "titre": "Intuition",
+      "categorie": "psycho"
+    },
+    {
+      "slug": "metacognition",
+      "titre": "Métacognition",
+      "categorie": "psycho"
+    },
+    {
+      "slug": "transfert-apprentissage",
+      "titre": "Transfert d’apprentissage",
+      "categorie": "psycho"
+    },
+    {
+      "slug": "correlation",
+      "titre": "Corrélation",
+      "categorie": "psycho"
+    },
+    {
+      "slug": "causalite",
+      "titre": "Causalité",
+      "categorie": "psycho"
+    }
+  ],
+  "exemples": "Exemples pédagogiques originaux ou situations fictives explicitement signalés ; conseils identifiés.",
+  "sources": [
+    {
+      "url": "https://handbook.fide.com/chapter/e012023",
+      "acces": "Texte intégral récupéré en HTTP 200 et passages consultés ; ouverture web initiale en échec par délai dépassé. Articles 3.7.3, 6.3, 9.2, 9.6, 11.3 et annexe D."
+    },
+    {
+      "url": "https://handbook.fide.com/chapter/TieBreakRegulations032026",
+      "acces": "Règlement intégral accessible ; classement des ex æquo et performance consultés."
+    },
+    {
+      "url": "https://lichess.org/practice",
+      "acces": "Catalogue des thèmes tactiques consulté ; pages Enfilade, Découverte et Zwischenzug accessibles, exercices interactifs non exécutés."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17835457/",
+      "acces": "Notice et résumé consultés ; article intégral inaccessible chez Science (403) et miroirs UBC/CEBMa en échec par délai dépassé. Aucune nouvelle donnée numérique attribuée."
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/abs/10.1037/1089-2680.2.2.175",
+      "acces": "Résumé consulté ; accès au texte intégral restreint."
+    },
+    {
+      "url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf",
+      "acces": "Texte intégral accessible ; résumé et fonction de valeur consultés."
+    },
+    {
+      "url": "https://faculty.haas.berkeley.edu/odean/papers%20current%20versions/areinvestorsreluctant.pdf",
+      "acces": "Texte intégral accessible ; définition de l’effet de disposition consultée. Application au jeu non présentée comme preuve expérimentale."
+    },
+    {
+      "url": "https://cognition.aau.at/bg/BA/Arkes%20%26%20Blumer%201985.pdf",
+      "acces": "Texte intégral accessible ; définition et résumé consultés."
+    },
+    {
+      "url": "https://bear.warrington.ufl.edu/brenner/mar7588/Papers/kahneman-klein-2009.pdf",
+      "acces": "Texte intégral accessible ; résumé et discussion des échecs consultés."
+    },
+    {
+      "url": "https://www.neurodyspaca.org/IMG/pdf/flavell_-_1979_-_metacognition_and_cognitive_monitoring.pdf",
+      "acces": "Texte intégral accessible ; modèle de suivi cognitif consulté. Miroir UGA initial en échec par délai dépassé."
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/0963721417712760",
+      "acces": "Texte intégral accessible ; distinction corrélation/transfert et limites consultées."
+    },
+    {
+      "url": "https://miguelhernan.org/whatifbook",
+      "acces": "Page des auteurs consultée ; PDF de la version du 19 août 2026 téléchargé en HTTP 200 ; chapitres initiaux sur causalité et association consultés."
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/equality/",
+      "acces": "Article de référence intégral accessible ; distinctions égalité formelle/égalité des chances consultées."
+    },
+    {
+      "url": "https://plato.stanford.edu/entries/game-theory/",
+      "acces": "Article de référence intégral accessible ; distinction information parfaite/incomplète consultée."
+    }
+  ],
+  "liens": "Articles filtrés selon publication et indexation ; dissertations filtrées selon publication ; aucune URL vers les cinq sujets encore non rédigés.",
+  "verification_locale": {
+    "base": "http://127.0.0.1:38047",
+    "results": [
+      {
+        "width": 390,
+        "count": 85,
+        "categories": [
+          "all",
+          "echecs",
+          "neuro",
+          "psycho",
+          "compet"
+        ],
+        "dissertationLinks": 18,
+        "relatedValid": true,
+        "schemaCount": 85,
+        "overflow": false,
+        "accentSearch": true,
+        "combinedFilters": true,
+        "emptyState": true,
+        "reset": true,
+        "multiWordSearch": true,
+        "crossCategoryAnchor": true
+      },
+      {
+        "width": 1440,
+        "count": 85,
+        "categories": [
+          "all",
+          "echecs",
+          "neuro",
+          "psycho",
+          "compet"
+        ],
+        "dissertationLinks": 18,
+        "relatedValid": true,
+        "schemaCount": 85,
+        "overflow": false,
+        "accentSearch": true,
+        "combinedFilters": true,
+        "emptyState": true,
+        "reset": true,
+        "multiWordSearch": true,
+        "crossCategoryAnchor": true
+      }
+    ],
+    "investment": {
+      "movements": 5,
+      "indents": 5,
+      "headings": 0,
+      "conclusion": "Les échecs exercent le calcul et la révision des décisions, mais cette parenté ne prouve aucun bénéfice financier. Les différences entre les domaines limitent le transfert. Nous concluons que leur pratique peut préparer une réflexion sur l'investissement, sans remplacer l'apprentissage nécessaire pour investir. Cet apport dépend d'une transposition explicite et vérifiée."
+    }
+  },
+  "verification_version_a_publier": {
+    "base": "http://127.0.0.1:34609",
+    "results": [
+      {
+        "width": 390,
+        "count": 85,
+        "categories": [
+          "all",
+          "echecs",
+          "neuro",
+          "psycho",
+          "compet"
+        ],
+        "dissertationLinks": 18,
+        "relatedValid": true,
+        "schemaCount": 85,
+        "overflow": false,
+        "accentSearch": true,
+        "combinedFilters": true,
+        "emptyState": true,
+        "reset": true,
+        "multiWordSearch": true,
+        "crossCategoryAnchor": true
+      },
+      {
+        "width": 1440,
+        "count": 85,
+        "categories": [
+          "all",
+          "echecs",
+          "neuro",
+          "psycho",
+          "compet"
+        ],
+        "dissertationLinks": 18,
+        "relatedValid": true,
+        "schemaCount": 85,
+        "overflow": false,
+        "accentSearch": true,
+        "combinedFilters": true,
+        "emptyState": true,
+        "reset": true,
+        "multiWordSearch": true,
+        "crossCategoryAnchor": true
+      }
+    ],
+    "investment": {
+      "movements": 5,
+      "indents": 5,
+      "headings": 0,
+      "conclusion": "Les échecs exercent le calcul et la révision des décisions, mais cette parenté ne prouve aucun bénéfice financier. Les différences entre les domaines limitent le transfert. Nous concluons que leur pratique peut préparer une réflexion sur l'investissement, sans remplacer l'apprentissage nécessaire pour investir. Cet apport dépend d'une transposition explicite et vérifiée."
+    }
+  },
+  "compilation_version_a_publier": "npm run build réussi ; 404 pages, 19 579 liens internes contrôlés, aucun lien interne mort.",
+  "publication": "Commit, push et déploiement explicitement autorisés par l’utilisateur le 22 octobre 2026."
+}

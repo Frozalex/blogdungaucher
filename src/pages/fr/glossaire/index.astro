@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import EditorialPageHeader from "../../../components/EditorialPageHeader.astro";
 import { glossaryTerms, type GlossaryCategory } from "../../../data/glossary";
@@ -11,6 +12,7 @@ const letters=[...new Set(terms.map(term=>normalize(term.title).charAt(0).toUppe
 const byLetter=letters.map(letter=>({letter,terms:terms.filter(term=>normalize(term.title).charAt(0).toUpperCase()===letter)}));
 const posts=(await getAllPosts()).filter(post=>!post.data.noindex);
 const bySlug=new Map(posts.map(post=>[getPostSlug(post),post]));
+const dissertationsBySlug=new Map((await getCollection("dissertations")).filter(entry=>entry.data.publishDate<=new Date()).map(entry=>[entry.id,entry]));
 const termBySlug=new Map(terms.map(term=>[term.slug,term]));
 const structuredData={"@context":"https://schema.org","@type":"DefinedTermSet",name:"Glossaire du Gaucher",url:"https://blogdungaucher.com/fr/glossaire/",hasDefinedTerm:terms.map(term=>({"@type":"DefinedTerm","@id":`https://blogdungaucher.com/fr/glossaire/#${term.slug}`,name:term.title,description:term.def,termCode:term.slug,url:`https://blogdungaucher.com/fr/glossaire/#${term.slug}`}))};
 ---
@@ -26,9 +28,10 @@ const structuredData={"@context":"https://schema.org","@type":"DefinedTermSet",n
   <div class="glossary-empty" hidden data-glossary-empty><h2>Aucune notion trouvée.</h2><p>Essaie un autre mot ou enlève le filtre de thème.</p><button class="resource-button" type="button" data-glossary-reset>Afficher toutes les notions</button></div>
   <div class="glossary-definitions">{byLetter.map(group=><section class="glossary-letter" id={`lettre-${group.letter}`} data-glossary-group data-letter={group.letter} aria-labelledby={`heading-${group.letter}`}><h2 id={`heading-${group.letter}`}>{group.letter}</h2><dl>{group.terms.map(term=><div class="glossary-entry" id={term.slug} data-glossary-term data-category={term.cat} data-search={normalize(`${term.title} ${term.def} ${term.example}`)}>
     <dt><span class="glossary-title">{term.title}</span><a class="glossary-anchor" href={`#${term.slug}`} aria-label={`Lien vers la définition : ${term.title}`}>#</a><span class="glossary-category">{categories[term.cat]}</span></dt>
-    <dd><p>{term.def}</p><p class="glossary-example"><span>Sur l’échiquier</span>{term.example}</p>
+    <dd><p>{term.def}</p><p class="glossary-example"><span>Exemple</span>{term.example}</p>
       {term.related.length>0&&<div class="glossary-related"><span>À rapprocher de</span>{term.related.map(slug=>{const related=termBySlug.get(slug);return related&&<a href={`#${slug}`}>{related.title}</a>})}</div>}
       {term.articles.map(slug=>{const post=bySlug.get(slug);return post&&<a class="resource-link glossary-reading" href={`/fr/blog/${slug}/`}>Pour approfondir : {post.data.title} <span aria-hidden="true">↗</span></a>})}
+      {(term.dissertations??[]).map(slug=>{const entry=dissertationsBySlug.get(slug);return entry&&<a class="resource-link glossary-reading" href={`/fr/dissertations/${slug}/`}>Dissertation : {entry.data.title} <span aria-hidden="true">↗</span></a>})}
       {term.source&&<a class="glossary-source" href={term.source.href} target="_blank" rel="noopener noreferrer">Source : {term.source.label} ↗<span class="resource-sr-only"> (nouvel onglet)</span></a>}
     </dd>
   </div>)}</dl></section>)}</div>

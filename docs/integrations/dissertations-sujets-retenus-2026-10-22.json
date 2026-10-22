@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-22",
+  "statut": "Sujets retenus par l’utilisateur ; textes à fournir ou à rédiger sur demande, sans publication automatique.",
+  "ordre": [
+    {
+      "numero_proposition": 7,
+      "titre": "Le classement mesure-t-il la valeur d’un joueur ?"
+    },
+    {
+      "numero_proposition": 1,
+      "titre": "Peut-on bien jouer aux échecs sans chercher à gagner ?"
+    },
+    {
+      "numero_proposition": 3,
+      "titre": "Peut-on mériter une victoire obtenue grâce à l’erreur de l’adversaire ?"
+    },
+    {
+      "numero_proposition": 8,
+      "titre": "Peut-on admirer une partie que l’on ne comprend pas ?"
+    },
+    {
+      "numero_proposition": 5,
+      "titre": "Faut-il toujours faire confiance à la raison pour bien jouer aux échecs ?"
+    }
+  ],
+  "format": {
+    "mouvements": [
+      "Introduction",
+      "Thèse",
+      "Antithèse",
+      "Prise de position personnelle",
+      "Conclusion"
+    ],
+    "titres_visibles": false,
+    "nombre_alineas": 5,
+    "references": "Intégrées au raisonnement ; aucune bibliographie finale.",
+    "textes_valides": "Conserver à l’identique, sauf correction typographique manifeste."
+  }
+}
