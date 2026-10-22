@@ -8,7 +8,8 @@
     "Préchargement des liens au survol/focus plutôt que dans le viewport ; précache hors ligne après load et idle.",
     "Variantes de 240 px pour les petites cartes ; sizes des cartes et des couvertures adaptés à leur largeur.",
     "Chargement des modules minimax et Python uniquement sur les pages portant leurs marqueurs.",
-    "Habillage partagé des 12 pages légales, sans modification des textes ; nettoyage ciblé des sources."
+    "Habillage partagé des 12 pages légales, sans modification des textes ; nettoyage ciblé des sources.",
+    "325 illustrations de lecture sur 108 pages différées avec loading=lazy et decoding=async, après réservation de leurs dimensions ; couvertures et priorités explicites conservées."
   ],
   "payloads": {
     "en/index.html": {
@@ -56,7 +57,7 @@
       },
       "after": {
         "html": 96703,
-        "gzip": 25280,
+        "gzip": 25279,
         "inline": 27950
       },
       "scripts": [
@@ -94,8 +95,8 @@
         "inline": 41243
       },
       "after": {
-        "html": 172818,
-        "gzip": 41287,
+        "html": 172978,
+        "gzip": 41296,
         "inline": 27950
       },
       "scripts": [
@@ -183,7 +184,7 @@
     "buildPages": 404,
     "internalLinks": 19547,
     "deadInternalLinks": 0,
-    "runtimeTestCases": 23,
+    "runtimeTestCases": 29,
     "uiChecks": [
       "Sommaire mobile des pages légales",
       "Vignettes de la une : 240w sélectionné pour les deux cartes de 96 px",
@@ -191,7 +192,9 @@
       "Rendu FR / EN / PT-BR",
       "Arbre minimax : bouton Pas à pas, dans une fixture locale supprimée après vérification",
       "Bouton Python présent dans son article ; module initialisé après chargement différé"
-    ]
+    ],
+    "deferredReadingImages": 325,
+    "pagesWithDeferredIllustrations": 108
   },
   "auditBefore": {
     "tool": "squirrel 0.0.117",
@@ -199,5 +202,23 @@
     "performanceScore": 47,
     "performanceWarnings": 98,
     "note": "Score technique partiel, distinct d’un score Lighthouse."
-  }
+  },
+  "auditAfterFirstDeployment": {
+    "scope": "25 mêmes pages publiques, mêmes règles et HTTP seulement",
+    "performanceScore": 49,
+    "performanceWarnings": 76,
+    "failedRules": 0
+  },
+  "fullAuditAfterFirstDeployment": {
+    "crawled": 323,
+    "failedRules": 0,
+    "note": "Audit de ressources HTTP, sans rendu ou mesure Core Web Vitals. A conduit à différer les illustrations de lecture."
+  },
+  "remainingAuditFindings": [
+    "Les CSS nécessaires à l’identité du site et les polices mathématiques restent des dépendances de rendu.",
+    "Les longs dossiers et les arbres de rendu des formules sont conservés intégralement.",
+    "Les heuristiques de placement des images sans navigateur ne déterminent pas leur position réelle dans chaque viewport.",
+    "Les photographies documentaires et leurs crédits sont conservés ; la version source de religion-libro-juegos.webp reste à 237 Kio.",
+    "La minification des espaces des scripts est déjà active ; l’alerte restante se fonde sur la longueur des noms de variables pour un gain estimé de 0,1 Kio."
+  ]
 }
