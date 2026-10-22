@@ -2,11 +2,13 @@
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import EditorialPageHeader from "../../../components/EditorialPageHeader.astro";
+import { dissertationTopics } from "../../../data/dissertation-topics";
 import { absoluteUrl, buildBreadcrumbJsonLd, calculateReadingTime, formatDate } from "../../../utils/blog";
 import "../../../styles/editorial-resources.css";
 
 const entries = (await getCollection("dissertations")).filter(entry => entry.data.publishDate <= new Date()).sort((a,b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
 const lead = entries[0];
+const upcomingTopics = dissertationTopics.filter(topic => !entries.some(entry => entry.id === topic.slug));
 const headings = lead ? (await render(lead)).headings.filter(heading => heading.depth === 2 && /^[IVX]+\./.test(heading.text)) : [];
 const canonPath = "/fr/dissertations/";
 const description = "Les dissertations du Gaucher : une question, des arguments et leurs limites. Des textes longs pour penser les échecs et ce qu’ils nous apprennent hors de l’échiquier.";
@@ -31,6 +33,11 @@ const structuredData = [buildBreadcrumbJsonLd([{name:"Accueil",path:"/fr/"},{nam
       </div> : <p>La première dissertation est en préparation. En attendant, retrouve mes articles dans les rubriques.</p>}
     </section>
     {entries.length > 1 && <section class="resource-section" aria-labelledby="dissertation-archives"><div class="resource-section-head"><h2 id="dissertation-archives">Les autres dissertations</h2><span>À lire à ton rythme</span></div><ol class="dissertation-archives">{entries.slice(1).map((entry,i)=><li><article><div class="dissertation-meta"><span>N° {String(entries.length-i-1).padStart(2,"0")}</span><time datetime={entry.data.publishDate.toISOString()}>{formatDate(entry.data.publishDate)}</time><span>{calculateReadingTime(entry.body ?? "")} de lecture</span></div><h3><a href={`/fr/dissertations/${entry.id}/`}>{entry.data.title}</a></h3><p>{entry.data.excerpt}</p><a class="resource-link" href={`/fr/dissertations/${entry.id}/`}>Lire la dissertation →</a></article></li>)}</ol></section>}
+    {upcomingTopics.length > 0 && <section class="resource-section" aria-labelledby="dissertation-upcoming">
+      <div class="resource-section-head"><h2 id="dissertation-upcoming">Les sujets à venir</h2><span>{upcomingTopics.length} sujets retenus</span></div>
+      <p class="dissertation-upcoming-intro">Les prochaines questions que nous explorerons dans la rubrique.</p>
+      <ol class="dissertation-topics">{upcomingTopics.map(topic => <li><h3>{topic.title}</h3></li>)}</ol>
+    </section>}
     <div class="resource-end"><span>Une autre façon d’aller au fond d’un sujet.</span><a class="resource-link" href="/fr/series/">Suivre les séries →</a><a class="resource-link" href="/fr/about/">Ma ligne éditoriale →</a></div>
   </div></div>
 </BaseLayout>
@@ -41,5 +48,7 @@ const structuredData = [buildBreadcrumbJsonLd([{name:"Accueil",path:"/fr/"},{nam
 .dissertation-excerpt{font-size:1.05rem;line-height:1.8;color:var(--text-muted);margin:0 0 1.7rem;max-width:62ch;}
 .dissertation-outline{border-top:1px solid var(--border-strong);margin-top:2.25rem;padding-top:1.2rem;}.dissertation-outline ol{list-style:none;margin:1rem 0 0;padding:0;}.dissertation-outline li{padding:.8rem 0;border-bottom:1px solid var(--border-soft);}.dissertation-outline a{font:500 1rem/1.5 var(--font-serif);}.dissertation-outline a:hover{color:var(--green);text-decoration:underline;text-underline-offset:.2em;}
 .dissertation-archives{list-style:none;margin:0;padding:0;}.dissertation-archives li{padding:1.5rem 0;border-bottom:1px solid var(--border-strong);}.dissertation-archives h3{font:600 1.7rem/1.25 var(--font-serif);margin:.75rem 0;}.dissertation-archives p{font-size:.95rem;line-height:1.7;color:var(--text-muted);max-width:70ch;}
+.dissertation-upcoming-intro{color:var(--text-muted);font-size:.95rem;line-height:1.7;margin:0 0 1rem;}
+.dissertation-topics{margin:0;padding-left:1.6rem;max-width:52rem;}.dissertation-topics li{padding:1.1rem 0 1.1rem .5rem;border-bottom:1px solid var(--border-strong);}.dissertation-topics li::marker{color:var(--green);font-size:.8rem;}.dissertation-topics h3{font:500 clamp(1.15rem,2.5vw,1.5rem)/1.4 var(--font-serif);margin:0;}
 @media(max-width:640px){.dissertation-feature h2{font-size:1.95rem;}.dissertation-excerpt{font-size:.98rem;}.dissertation-meta{gap:.5rem .8rem;}}
 </style>
