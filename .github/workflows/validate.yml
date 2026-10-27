@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        clock: [current, '2026-11-01T05:59:59Z', '2026-11-01T06:00:00Z']
+        clock: [current, '2026-11-01T05:59:59Z', '2026-11-01T06:00:00Z', '2026-11-08T15:00:00Z']
     env:
       ASTRO_TELEMETRY_DISABLED: '1'
       PUPPETEER_SKIP_DOWNLOAD: 'true'
@@ -35,6 +35,9 @@ jobs:
       - run: npm ci --prefix proxy
       - run: npm test
       - run: npm run check
+      - name: Vérifier les flux et visuels Pinterest après lancement
+        if: matrix.clock == 'current'
+        run: npm run check:pinterest-preview
       - name: Compiler et vérifier pages, liens et langues
         env:
           TEST_CLOCK: ${{ matrix.clock }}
