@@ -39,9 +39,9 @@ try {
     console.log(`[pinterest] ${category}: ${selected.length} éléments (${selected.filter(p=>p.kind==='archive').length} anciens)`);
   }
   const status = {
-    generatedAt:now.toISOString(), startsAt:config.startsAt, feedWindowDays:config.feedWindowDays,
+    generatedAt:now.toISOString(), initialReleaseAt:config.initialReleaseAt, startsAt:config.startsAt, feedWindowDays:config.feedWindowDays,
     note:'Exposition dans le flux, pas confirmation de publication Pinterest.',
-    items:items.map(post=>({slug:post.slug,category:post.category,kind:post.kind,releaseAt:post.releaseAt,url:articleUrl(post,config)})),
+    items:items.map(post=>({slug:post.slug,category:post.category,kind:post.kind,initial:post.initial,releaseAt:post.releaseAt,url:articleUrl(post,config)})),
     archivePlanned:archive.length,
     archiveSlotsElapsed:archive.filter(entry=>new Date(entry.releaseAt)<=now).length,
     unplannedOldArticles:posts.filter(post=>isEligible(post,config,now) && new Date(post.publishedAt)<new Date(config.archiveCutoff) && !archive.some(entry=>entry.slug===post.slug)).map(post=>post.slug),
