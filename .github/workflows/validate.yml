@@ -1,0 +1,48 @@
+name: Validation du site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        clock: [current, '2026-11-01T05:59:59Z', '2026-11-01T06:00:00Z']
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+      PUPPETEER_SKIP_DOWNLOAD: 'true'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.22.0'
+          cache: npm
+      - run: npm ci
+      - run: npm ci --prefix proxy
+      - run: npm test
+      - run: npm run check
+      - name: Compiler et vérifier pages, liens et langues
+        env:
+          TEST_CLOCK: ${{ matrix.clock }}
+        run: |
+          set -euo pipefail
+          if [ "$TEST_CLOCK" != current ]; then
+            export SITE_BUILD_DATE="$TEST_CLOCK"
+            export NODE_OPTIONS="--import=$PWD/scripts/test-build-clock.mjs"
+          fi
+          npm run build
+          npm run check:languages

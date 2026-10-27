@@ -95,7 +95,7 @@ En terwijl het onderzoek gericht is, vult [projectie](/nl/blog/projectie-schaken
 
 De partij is verloren. Twee onverenigbare cognities dienen zich aan: ik ben een correcte speler, ik heb net een gewonnen stelling verloren.
 
-Dit is [cognitieve dissonantie](/nl/blog/cognitieve-dissonantie-schaken/), en Festinger heeft vastgesteld dat ze een eigen motivationele kracht bezit. Ze vraagt niet begrepen te worden: ze vraagt te stoppen.
+Dit is [cognitieve dissonantie](/nl/blog/dissonantie-schaken/), en Festinger heeft vastgesteld dat ze een eigen motivationele kracht bezit. Ze vraagt niet begrepen te worden: ze vraagt te stoppen.
 
 Drie uitwegen zijn beschikbaar. De eerste cognitie veranderen kost veel, het raakt wie je bent. De tweede veranderen is onmogelijk, het resultaat staat vast. Blijft de derde weg over, die van een cognitie toevoegen die beide verzoent.
 
@@ -251,7 +251,7 @@ Een gedateerde tekst is het enige element in deze hele zaak dat je brein niet ka
 
 ---
 
-*Dit artikel is de hub van een reeks van 41 teksten over toegepaste psychologie bij schaken. Het sluit de zes kernartikelen af: [Dunning-Kruger](/nl/blog/dunning-kruger-effect-schaken/), [cognitieve dissonantie](/nl/blog/cognitieve-dissonantie-schaken/), [bevestigingsvooroordeel](/nl/blog/bevestigingsvooroordeel-schaken/), [verdedigingsmechanismen](/nl/blog/verdedigingsmechanismen-schaken/), [rationalisatie](/nl/blog/rationalisatie-schaken/) en [projectie](/nl/blog/projectie-schaken/).*
+*Dit artikel is de hub van een reeks van 41 teksten over toegepaste psychologie bij schaken. Het sluit de zes kernartikelen af: [Dunning-Kruger](/nl/blog/dunning-kruger-effect-schaken/), [cognitieve dissonantie](/nl/blog/dissonantie-schaken/), [bevestigingsvooroordeel](/nl/blog/bevestigingsvooroordeel-schaken/), [verdedigingsmechanismen](/nl/blog/verdedigingsmechanismen-schaken/), [rationalisatie](/nl/blog/rationalisatie-schaken/) en [projectie](/nl/blog/projectie-schaken/).*
 
 ## Bronnen en referenties
 

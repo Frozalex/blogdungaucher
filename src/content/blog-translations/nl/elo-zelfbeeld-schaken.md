@@ -144,6 +144,6 @@ De oplossing is niet om je niet met de Elo bezig te houden. Het is om er een ind
 
 ## Om verder te gaan
 
-- [Echecs en flow: hoe je flow bereikt op het schaakbord](/nl/blog/echecs-en-flow/)
+- [Echecs en flow: hoe je flow bereikt op het schaakbord](/nl/blog/schaken-en-flow/)
 - [Veerkracht bij schaken: leren terugveren na een nederlaag](/nl/blog/veerkracht-schaken/)
 - [Schaken en zelfvertrouwen: wat het bord echt opbouwt](/nl/blog/zelfvertrouwen-schaken/)

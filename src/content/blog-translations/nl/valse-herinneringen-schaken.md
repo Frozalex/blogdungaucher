@@ -103,7 +103,7 @@ Kijk nu naar wat er gebeurt als je een partij analyseert, en vergelijk met de in
 
 **Suggestieve vragen.** Dit is het meest directe punt. "Had je Txf7 gezien?" is geen neutrale vraag: ze bevat de zet al, en stelt een antwoord voor. Dit is structureel hetzelfde als de keuze tussen "raakten" en "hevig botsten".
 
-**Een belang bij het accepteren van de suggestie.** Bij Loftus hadden de deelnemers niets te winnen bij het herinneren van gebroken glas. Jij wel. "Ik had het gezien" behoudt het beeld dat je van je eigen niveau hebt, terwijl "ik heb het niet gezien" dit in twijfel trekt. Dit is het mechanisme beschreven in ons artikel over [cognitieve dissonantie bij schaken](/nl/blog/dissonance-cognitive-aux-echecs/).
+**Een belang bij het accepteren van de suggestie.** Bij Loftus hadden de deelnemers niets te winnen bij het herinneren van gebroken glas. Jij wel. "Ik had het gezien" behoudt het beeld dat je van je eigen niveau hebt, terwijl "ik heb het niet gezien" dit in twijfel trekt. Dit is het mechanisme beschreven in ons artikel over [cognitieve dissonantie bij schaken](/nl/blog/dissonantie-schaken/).
 
 **Herhaling.** Je speelt de stelling meerdere keren opnieuw, je bekijkt de variant, je becommentarieert die. Elke doorgang versterkt het spoor, en een versterkt spoor wordt niet meer te onderscheiden van een oorspronkelijke herinnering.
 
@@ -139,7 +139,7 @@ Direct na de partij, voor elke analyse, voor de engine, voor het gesprek met de 
 
 Deze notitie is een **spoor buiten je geheugen**. Het is het enige dat je een week later zal laten weten wat je had gezien, want op dat moment zal je geheugen de analyse al hebben geïntegreerd.
 
-Dit is dezelfde regel als die gegeven in ons artikel over [gehoorzaamheid aan autoriteit bij schaken](/nl/blog/obeissance-a-l-autorite-aux-echecs/), en dat is geen toeval: in beide gevallen gaat het erom je eigen oordeel vast te leggen voordat een betrouwbaardere bron het vervangt.
+Dit is dezelfde regel als die gegeven in ons artikel over [gehoorzaamheid aan autoriteit bij schaken](/nl/blog/gehoorzaamheid-aan-autoriteit-bij-schaken/), en dat is geen toeval: in beide gevallen gaat het erom je eigen oordeel vast te leggen voordat een betrouwbaardere bron het vervangt.
 
 ### 2. Verbied suggestieve vragen
 
@@ -181,7 +181,7 @@ Drie regels geschreven voordat je de engine aanzet, volstaan om het antwoord te 
 
 ---
 
-*Dit artikel maakt deel uit van een serie over toegepaste psychologie bij schaken. Een komend artikel behandelt reconstructief geheugen, het normale mechanisme waarvan valse herinneringen de pathologie zijn. Zie ook [je partijen analyseren](/nl/blog/analyser-ses-parties/) en [bevestigingsbias bij schaken](/nl/blog/biais-de-confirmation-aux-echecs/).*
+*Dit artikel maakt deel uit van een serie over toegepaste psychologie bij schaken. Een komend artikel behandelt reconstructief geheugen, het normale mechanisme waarvan valse herinneringen de pathologie zijn. Zie ook [je partijen analyseren](/nl/blog/schaakpartijen-analyseren/) en [bevestigingsbias bij schaken](/nl/blog/bevestigingsvooroordeel-schaken/).*
 
 ## Bronnen
 

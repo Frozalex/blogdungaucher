@@ -47,7 +47,6 @@ jobs:
           node-version: "22"
 
       - name: Dispatch newsletter (Brevo, H+1)
-        continue-on-error: true   # un échec Brevo ne doit pas casser le run — réessai au prochain cron
         env:
           BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
           BREVO_LIST_ID:      ${{ secrets.BREVO_LIST_ID }}
@@ -58,13 +57,15 @@ jobs:
         run: |
           set -euo pipefail
           if [ -z "${BREVO_API_KEY:-}" ] || [ -z "${BREVO_SENDER_EMAIL:-}" ]; then
-            echo "BREVO_API_KEY ou BREVO_SENDER_EMAIL absent ; dispatch ignoré."
-            exit 0
+            echo "BREVO_API_KEY ou BREVO_SENDER_EMAIL absent ; dispatch impossible."
+            exit 1
           fi
           node scripts/newsletter-dispatch.mjs
 
       - name: Commiter l'état (si changé)
+        if: ${{ !cancelled() }}
         run: |
+          set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add deploy/newsletter-sent.json
@@ -73,4 +74,18 @@ jobs:
             exit 0
           fi
           git commit -m "chore(newsletter): maj état d'envoi $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci-notify]"
-          git push origin main
+          for i in 1 2 3 4 5; do
+            if git push origin HEAD:main; then exit 0; fi
+            git pull --rebase origin main
+            sleep $(( i * 5 ))
+          done
+          echo "::error::Impossible de persister l'état newsletter."
+          exit 1
+
+      - name: Conserver l'état pour reprise manuelle en cas d'échec
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newsletter-delivery-state
+          path: deploy/newsletter-sent.json
+          retention-days: 14

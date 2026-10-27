@@ -116,9 +116,9 @@ De echte revolutionair was misschien niet Beth Harmon. Het was de camera die haa
 
 ## Verder lezen
 
-- [Schaken en streaming: hoe Twitch en YouTube het spel revolutioneerden](/nl/blog/echecs-et-streaming/)
-- [Schaken en handicap: wanneer het bord grenzen wegwist](/nl/blog/echecs-et-handicap/)
-- [Schaken en valsspelen: wat de Niemann-affaire echt onthulde](/nl/blog/echecs-et-la-triche/)
+- [Schaken en streaming: hoe Twitch en YouTube het spel revolutioneerden](/nl/blog/schaken-en-streaming/)
+- [Schaken en handicap: wanneer het bord grenzen wegwist](/nl/blog/schaken-en-handicap/)
+- [Schaken en valsspelen: wat de Niemann-affaire echt onthulde](/nl/blog/valsspelen-schaken/)
 
 ---
 

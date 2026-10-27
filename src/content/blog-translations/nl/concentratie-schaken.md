@@ -161,6 +161,6 @@ Het doel is niet om de pauzes te elimineren: het is om de duur en kwaliteit van 
 
 ## Om verder te gaan
 
-- [Echecs en flow: hoe je flow bereikt op het schaakbord](/nl/blog/echecs-en-flow/)
-- [Meditatie en schaken: mindfulness ten dienste van het trage spel](/nl/blog/echecs-et-meditation/)
-- [Ontdek de kracht van schaken op je geheugen](/nl/blog/echecs-et-memoire/)
+- [Echecs en flow: hoe je flow bereikt op het schaakbord](/nl/blog/schaken-en-flow/)
+- [Meditatie en schaken: mindfulness ten dienste van het trage spel](/nl/blog/meditatie-en-schaken/)
+- [Ontdek de kracht van schaken op je geheugen](/nl/blog/schaken-en-geheugen/)

@@ -41,7 +41,7 @@ Vier eigenschappen maken schaken tot een zeldzaam object in de speltheorie. Ze l
 
 ## De 110 jaar oude stelling die zegt dat een schaakpartij al een resultaat heeft
 
-In 1913 bewees wiskundige [Ernst Zermelo](https://nl.wikipedia.org/wiki/Ernst_Zermelo) een resultaat dat je moet duizelen. (De stelling, de reikwijdte ervan, de beperkingen en de combinatorische subtiliteit worden uitgewerkt in het speciale artikel over [de paradox van Zermelo](/nl/blog/paradoxe-de-zermelo/).)
+In 1913 bewees wiskundige [Ernst Zermelo](https://nl.wikipedia.org/wiki/Ernst_Zermelo) een resultaat dat je moet duizelen. (De stelling, de reikwijdte ervan, de beperkingen en de combinatorische subtiliteit worden uitgewerkt in het speciale artikel over [de paradox van Zermelo](/nl/blog/stelling-van-zermelo/).)
 
 In elk spel met twee spelers, met perfecte informatie, zonder toeval, en eindig, is *noodzakelijkerwijs* één van de drie stellingen waar:
 1. De eerste speler heeft een winnende strategie.
@@ -73,7 +73,7 @@ $C(p)$ is de verzameling legale zetten in positie $p$.
 
 Wat deze formule je bespaart opnieuw te berekenen: op elke diepte gaat ze ervan uit dat de tegenstander *zijn* beste zet speelt, wat je bespaart zijn waarschijnlijke fouten in te beelden (die berekening zouden kosten zonder veiligheidswinst).
 
-Precies dit voeren Stockfish, Leela en alle moderne motoren uit. Het verschil met jou: zij doen het op miljoenen knooppunten per seconde, terwijl jouw brein er misschien drie of vier verwerkt. De details van het algoritme, zijn verfijningen (transpositietabellen, *iterative deepening*) en zijn moderne neurale-netwerkversie worden behandeld in het artikel [minimax bij schaken](/nl/blog/minimax-aux-echecs/).
+Precies dit voeren Stockfish, Leela en alle moderne motoren uit. Het verschil met jou: zij doen het op miljoenen knooppunten per seconde, terwijl jouw brein er misschien drie of vier verwerkt. De details van het algoritme, zijn verfijningen (transpositietabellen, *iterative deepening*) en zijn moderne neurale-netwerkversie worden behandeld in het artikel [minimax bij schaken](/nl/blog/minimax-schaken/).
 
 ### Waarom een motor niet $35^{10}$ posities verkent
 
@@ -95,7 +95,7 @@ Bij schaken vertaalt dit zich naar de openingen.
 
 Als men zegt dat een variant *"theoretisch gelijk"* is, betekent dat precies dit: beide partijen hebben middelen die het evenwicht handhaven, en de eerste die eenzijdig afwijkt, riskeert bestraft te worden. Dat is waarom de Spaanse opening (1.e4 e5 2.Pf3 Pc6 3.Lb5) eeuwen overleeft: het is een stabiel evenwicht dat niemand heeft weten te doorbreken.
 
-Onder perfect spel van beide kanten zou *de hele partij* één gigantisch Nash-evenwicht zijn. En als de waarheid van het schaken remise is, dan is dat evenwicht remise. De volledige kartering van deze evenwichten in de huidige openingen is het onderwerp van [Nash-grafen en het evenwicht van openingen](/nl/blog/graphes-de-nash-equilibre-ouvertures/); een enkel repertoire kan meerdere evenwichten bevatten, en de keuze daartussen maakt al deel uit van het meta-spel.
+Onder perfect spel van beide kanten zou *de hele partij* één gigantisch Nash-evenwicht zijn. En als de waarheid van het schaken remise is, dan is dat evenwicht remise. De volledige kartering van deze evenwichten in de huidige openingen is het onderwerp van [Nash-grafen en het evenwicht van openingen](/nl/blog/nash-evenwicht-schaakopeningen/); een enkel repertoire kan meerdere evenwichten bevatten, en de keuze daartussen maakt al deel uit van het meta-spel.
 
 ### Dominante strategieën en gedomineerde strategieën
 
@@ -111,7 +111,7 @@ De ontbrekende informatie is niet op het bord. Ze zit in de schedel van je tegen
 
 Je weet niet hoe diep hij heeft berekend. Je weet niet of hij de variant kent die je gisteravond hebt voorbereid. Je weet niet of zijn ogenschijnlijke kalmte een stelling verbergt die hij als verloren ziet, of een verwoestende combinatie die hij wacht op zet 27 te laten vallen.
 
-Deze subjectieve asymmetrie maakt schaken in de praktijk tot een spel met onvolmaakte informatie. Dat is waar de [psychologie van de schaakspeler](/nl/blog/psychologie-du-joueur-d-echecs/) om de hoek komt kijken. Dat is waar de pure speltheorie stopt het menselijk gedrag correct te voorspellen.
+Deze subjectieve asymmetrie maakt schaken in de praktijk tot een spel met onvolmaakte informatie. Dat is waar de [psychologie van de schaakspeler](/nl/blog/psychologie-schaker/) om de hoek komt kijken. Dat is waar de pure speltheorie stopt het menselijk gedrag correct te voorspellen.
 
 ## De Bobby Fischer-paradox: waarom de meest voorspelbare speler van de 20e eeuw won
 
@@ -148,7 +148,7 @@ Ter vergelijking:
 - **Nim**: analytisch opgelost (stelling van Sprague-Grundy).
 - **Schaken**: blijft open. Voor zeer lange tijd.
 
-Dit is geen beperking van de discipline. De theorie bevestigt dat het antwoord bestaat. Het is gewoon dat de benodigde rekenresources fysiek onbereikbaar zijn. (Voor de gedetailleerde uiteenzetting van deze praktische onmogelijkheid en de manier waarop AI deze muur omzeilt, zie [waarom schaken een bijna onmogelijk wiskundig probleem is](/nl/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/).)
+Dit is geen beperking van de discipline. De theorie bevestigt dat het antwoord bestaat. Het is gewoon dat de benodigde rekenresources fysiek onbereikbaar zijn. (Voor de gedetailleerde uiteenzetting van deze praktische onmogelijkheid en de manier waarop AI deze muur omzeilt, zie [waarom schaken een bijna onmogelijk wiskundig probleem is](/nl/blog/schaken-onoplosbaar-wiskunde-ai/).)
 
 ## De les die in één zin past
 

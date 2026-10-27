@@ -36,138 +36,44 @@ const p = pushCopy[lang] ?? pushCopy.fr;
 )}
 
 <script>
+import { getPushActive, setPushEnabled } from '../scripts/push-preferences.mjs';
 function initPushSubscribe() {
-  // Cast non-null : le guard ci-dessous protège au runtime, mais le type non-null
-  // permet aux fonctions hoistées (setState) de voir btn/label sans ts(18047).
   const btn = document.getElementById("push-subscribe-btn") as HTMLButtonElement;
-  const label = document.getElementById("push-label") as HTMLElement;
+  const label = document.getElementById("push-label");
   if (!btn || !label || btn.dataset.bound === "1") return;
   btn.dataset.bound = "1";
-
-  if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
-    document.getElementById("push-subscribe-wrap")?.remove();
-    return;
+  if (!("serviceWorker" in navigator) || !("PushManager" in window) || !("Notification" in window)) {
+    document.getElementById("push-subscribe-wrap")?.remove(); return;
   }
-
-  const VAPID = (btn.dataset.vapid ?? "").trim();
-  const PROXY = "/push";
-  const LS_KEY = "push_subscribed";
-
-  if (!VAPID) {
-    document.getElementById("push-subscribe-wrap")?.remove();
-    return;
-  }
-
-  function urlBase64ToUint8Array(base64String: string) {
-    try {
-      const clean = base64String.replace(/[^A-Za-z0-9+/=_-]/g, "");
-      const padding = "=".repeat((4 - (clean.length % 4)) % 4);
-      const base64 = (clean + padding).replace(/-/g, "+").replace(/_/g, "/");
-      const raw = atob(base64);
-      return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
-    } catch (_) {
-      return null;
-    }
-  }
-
-  // Libellés localisés injectés côté serveur (data-*), repli FR si absents.
-  const T = {
-    on:       btn.dataset.labelOn    || "Notifié ✓",
-    off:      btn.dataset.labelOff   || "Notifications",
-    error:    btn.dataset.labelError || "Erreur",
-    titleOn:  btn.dataset.titleOn    || "Cliquer pour se désabonner",
-    titleOff: btn.dataset.titleOff   || "Recevoir une notification à chaque nouvel article",
-  };
-
-  function setState(state: string) {
+  const key = btn.dataset.vapid || "";
+  let active = false;
+  let busy = false;
+  function display(state: string) {
     btn.disabled = state === "loading";
     btn.classList.toggle("push-btn--active", state === "on");
     btn.classList.toggle("push-btn--error", state === "error");
-    if (state === "on")      label.textContent = T.on;
-    else if (state === "off") label.textContent = T.off;
-    else if (state === "loading") label.textContent = "…";
-    else if (state === "error")   label.textContent = T.error;
-    btn.title = state === "on" ? T.titleOn : T.titleOff;
+    btn.setAttribute("aria-pressed", String(state === "on"));
+    label!.textContent = state === "loading" ? "…" : btn.dataset[state === "on" ? "labelOn" : state === "error" ? "labelError" : "labelOff"] || "Notifications";
+    btn.title = btn.dataset[state === "on" ? "titleOn" : "titleOff"] || "";
   }
-
-  function usesCurrentKey(subscription: PushSubscription) {
-    const current = subscription.options.applicationServerKey;
-    const expected = urlBase64ToUint8Array(VAPID);
-    if (!current || !expected) return true;
-    const bytes = new Uint8Array(current);
-    return bytes.length === expected.length && bytes.every((value, index) => value === expected[index]);
+  async function refresh() {
+    if (busy) return;
+    try { const current = await getPushActive(key); if (!busy) { active = current; display(active ? "on" : "off"); } }
+    catch { display("error"); }
   }
-
-  // Un abonnement antérieur à une rotation ne doit pas être affiché comme actif.
-  setState(localStorage.getItem(LS_KEY) === "1" ? "on" : "off");
-  navigator.serviceWorker.ready
-    .then((reg) => reg.pushManager.getSubscription())
-    .then((subscription) => {
-      if (btn.disabled) return;
-      const active = !!subscription && usesCurrentKey(subscription);
-      if (!active) localStorage.removeItem(LS_KEY);
-      setState(active ? "on" : "off");
-    }).catch(() => {});
-
+  display("off");
+  void refresh();
+  const onUpdate = () => { void refresh(); };
+  document.addEventListener("push:updated", onUpdate);
+  document.addEventListener("astro:before-swap", () => document.removeEventListener("push:updated", onUpdate), { once: true });
   btn.addEventListener("click", async () => {
-    setState("loading");
-    try {
-      const reg = await navigator.serviceWorker.ready;
-      const existing = await reg.pushManager.getSubscription();
-
-      if (existing) {
-        const renewing = !usesCurrentKey(existing);
-        await existing.unsubscribe();
-        await fetch(`${PROXY}/unsubscribe`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ endpoint: existing.endpoint }),
-        }).catch(() => {});
-        localStorage.removeItem(LS_KEY);
-        if (!renewing) {
-          setState("off");
-          return;
-        }
-      }
-
-      const permission = await Notification.requestPermission();
-      if (permission !== "granted") {
-        setState("off");
-        return;
-      }
-
-      const serverKey = urlBase64ToUint8Array(VAPID);
-      if (!serverKey) {
-        document.getElementById("push-subscribe-wrap")?.remove();
-        return;
-      }
-      const subscription = await reg.pushManager.subscribe({
-        userVisibleOnly: true,
-        applicationServerKey: serverKey,
-      });
-
-      const res = await fetch(`${PROXY}/subscribe`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(subscription.toJSON()),
-      });
-
-      if (res.ok) {
-        localStorage.setItem(LS_KEY, "1");
-        setState("on");
-      } else {
-        console.error("[push] proxy error", res.status);
-        setState("error");
-        setTimeout(() => setState("off"), 3000);
-      }
-    } catch (err) {
-      console.error("[push]", err);
-      setState("error");
-      setTimeout(() => setState("off"), 3000);
-    }
+    busy = true;
+    display("loading");
+    try { active = await setPushEnabled(!active, key); display(active ? "on" : "off"); }
+    catch { display("error"); }
+    finally { busy = false; }
   });
 }
-
 document.addEventListener("astro:page-load", initPushSubscribe);
 initPushSubscribe();
 </script>

@@ -100,7 +100,7 @@ De nederlaag bij schaken heeft vijf zeldzame en gecombineerde eigenschappen:
 
 **Ze is ondubbelzinnig.** De koning is schaakmat of niet. Geen enkele interpretatie is mogelijk over het resultaat zelf.
 
-**Ze is aan niemand anders toe te schrijven.** Geen teamgenoot, geen blessure, geen scheidsrechterbeslissing. Dit is het onderwerp van ons artikel over [eenzaamheid bij schaken](/nl/blog/eenzaamheid-schaken/): je bent reglementair alleen.
+**Ze is aan niemand anders toe te schrijven.** Geen teamgenoot, geen blessure, geen scheidsrechterbeslissing. Dit is het onderwerp van ons artikel over [eenzaamheid bij schaken](/nl/blog/schaken-en-eenzaamheid/): je bent reglementair alleen.
 
 **Ze bevat geen enkel toevalselement.** Geen dobbelsteen, geen kaartverdeling, geen geluk om eerlijk aan te voeren. De informatie is volledig aan beide kanten.
 
@@ -128,7 +128,7 @@ De meest effectieve versie is het vermijden van het terrein zelf: stoppen met to
 
 De emotie wordt afgereageerd in gedrag in plaats van gevoeld en gedacht.
 
-Dit is het stuk dat vliegt, het toetsenbord dat wordt geslagen, de abrupte verbreking van de verbinding midden in een verloren stelling. Ragequit is de moderne vorm ervan, en heeft een identificeerbare neurologie, beschreven in ons artikel over [woede bij schaken](/nl/blog/woede-schaken-ragequit/).
+Dit is het stuk dat vliegt, het toetsenbord dat wordt geslagen, de abrupte verbreking van de verbinding midden in een verloren stelling. Ragequit is de moderne vorm ervan, en heeft een identificeerbare neurologie, beschreven in ons artikel over [woede bij schaken](/nl/blog/woede-ragequit-schaken/).
 
 Wat acting-out kenmerkt, is dat het de emotie **kortsluit**. De speler die de deur dichtslaat, heeft zijn nederlaag niet gevoeld: hij heeft haar geëvacueerd voordat hij haar voelde. Daarom haalt hij er niets uit, en zal hij het opnieuw doen.
 
@@ -162,7 +162,7 @@ De achteraf gefabriceerde aanvaardbare uitleg.
 
 Dit is de koningin van de verdedigingen van de schaker, zozeer dat ze haar eigen artikel krijgt in deze reeks. Haar principe: een plausibele, vaak ware reden produceren die de nederlaag verenigbaar maakt met het zelfbeeld dat men heeft. Vermoeidheid, tempo, voorbereiding, dagvorm.
 
-Haar effectiviteit komt van haar exactheid. Je was misschien echt moe. Het probleem is niet de waarheidsgetrouwheid van de uitleg, het is **het moment waarop ze arriveert** en de vraag die ze toestaat niet te stellen. Het mechanisme wordt beschreven in ons artikel over [cognitieve dissonantie bij schaken](/nl/blog/cognitieve-dissonantie-schaken/).
+Haar effectiviteit komt van haar exactheid. Je was misschien echt moe. Het probleem is niet de waarheidsgetrouwheid van de uitleg, het is **het moment waarop ze arriveert** en de vraag die ze toestaat niet te stellen. Het mechanisme wordt beschreven in ons artikel over [cognitieve dissonantie bij schaken](/nl/blog/dissonantie-schaken/).
 
 ### Intellectualisering
 
@@ -210,7 +210,7 @@ Het vrijwillige en bewuste uitstel. "Ik bekijk deze partij nu niet, ik ben te bo
 
 Dit is de volwassen tegenhanger van isolatie, en het verschil zit in één woord: **vrijwillig**. De speler weet dat hij uitstelt, weet waarom, en komt erop terug. Vaillant beschouwt onderdrukking als een van de meest adaptieve verdedigingen die er zijn, en ze is direct aanleerbaar, wat zeldzaam is op dit gebied.
 
-Het is ook precies het praktische advies dat in meerdere artikelen van deze blog wordt gegeven: koel analyseren, niet in het heetst van de strijd. Zie [je partijen analyseren](/nl/blog/partijen-analyseren/).
+Het is ook precies het praktische advies dat in meerdere artikelen van deze blog wordt gegeven: koel analyseren, niet in het heetst van de strijd. Zie [je partijen analyseren](/nl/blog/schaakpartijen-analyseren/).
 
 ### Anticipatie
 
@@ -268,7 +268,7 @@ De theorie die dit alles ordent is fragieler dan ze lijkt, en de DSM-5 heeft daa
 
 ---
 
-*Dit artikel maakt deel uit van een reeks gewijd aan toegepaste psychologie bij schaken. Twee hier geïnventariseerde mechanismen krijgen een eigen artikel: rationalisatie en projectie. Zie ook [cognitieve dissonantie bij schaken](/nl/blog/cognitieve-dissonantie-schaken/) en [het Dunning-Kruger-effect bij schaken](/nl/blog/dunning-kruger-effect-schaken/).*
+*Dit artikel maakt deel uit van een reeks gewijd aan toegepaste psychologie bij schaken. Twee hier geïnventariseerde mechanismen krijgen een eigen artikel: rationalisatie en projectie. Zie ook [cognitieve dissonantie bij schaken](/nl/blog/dissonantie-schaken/) en [het Dunning-Kruger-effect bij schaken](/nl/blog/dunning-kruger-effect-schaken/).*
 
 ## Bronnen en referenties
 

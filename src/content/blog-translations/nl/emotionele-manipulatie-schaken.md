@@ -63,7 +63,7 @@ Het gemeenschappelijke punt van al deze voorbeelden: **alles speelt zich af op h
 
 Emotionele manipulatie begint wanneer de actie zich richt op de **interne toestand** van de tegenstander via middelen buiten de stelling. Niet langer zijn spel wordt aangevallen, maar zijn vermogen om te spelen.
 
-Twee precisies over het kader van dit artikel. Het behandelt alleen wat er **tijdens** de partij gebeurt. Wat erna gebeurt, wanneer men herschrijft wat er is gebeurd, valt onder een ander mechanisme, beschreven in ons artikel over [gaslighting bij schaken](/nl/blog/gaslighting-schaken/). En het gaat niet om vals spelen: niemand raadpleegt hier een engine, dat is een heel ander onderwerp, behandeld in [valsspelen bij schaken](/nl/blog/valsspelen-schaken/).
+Twee precisies over het kader van dit artikel. Het behandelt alleen wat er **tijdens** de partij gebeurt. Wat erna gebeurt, wanneer men herschrijft wat er is gebeurd, valt onder een ander mechanisme, beschreven in ons artikel over [gaslighting bij schaken](/nl/blog/gaslighting-bij-schaken/). En het gaat niet om vals spelen: niemand raadpleegt hier een engine, dat is een heel ander onderwerp, behandeld in [valsspelen bij schaken](/nl/blog/valsspelen-schaken/).
 
 ## Het schoolvoorbeeld: Baguio, 1978
 
@@ -207,7 +207,7 @@ Een laatste punt verdient herhaling, want het verandert compleet de manier waaro
 
 ---
 
-*Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Zie ook [gaslighting bij schaken](/nl/blog/gaslighting-schaken/), dat behandelt wat er na de partij gebeurt, en [verdedigingsmechanismen bij schaken](/nl/blog/verdedigingsmechanismen-schaken/).*
+*Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Zie ook [gaslighting bij schaken](/nl/blog/gaslighting-bij-schaken/), dat behandelt wat er na de partij gebeurt, en [verdedigingsmechanismen bij schaken](/nl/blog/verdedigingsmechanismen-schaken/).*
 
 ## Bronnen en referenties
 

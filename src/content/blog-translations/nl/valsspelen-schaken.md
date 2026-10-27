@@ -129,9 +129,9 @@ Bij gebrek aan een biomarker zal valsspelen bij schaken altijd een grijze zone b
 
 ## Verder lezen
 
-- [Schaken en geld: waarom de beste spelers ter wereld niet rijk zijn](/nl/blog/echecs-et-argent/)
-- [Schaken en handicap: wanneer het bord grenzen wegwist](/nl/blog/echecs-et-handicap/)
-- [Stress bij schaaktoernooien: wat de psychologie en fysiologie zeggen](/nl/blog/echecs-stress-tournoi/)
+- [Schaken en geld: waarom de beste spelers ter wereld niet rijk zijn](/nl/blog/schaken-en-geld/)
+- [Schaken en handicap: wanneer het bord grenzen wegwist](/nl/blog/schaken-en-handicap/)
+- [Stress bij schaaktoernooien: wat de psychologie en fysiologie zeggen](/nl/blog/stress-toernooi-schaken/)
 
 ---
 

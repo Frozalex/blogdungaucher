@@ -45,9 +45,9 @@ faq:
 heroImageAlt: Silhouetten van schaakstukken naast een meetgoot zonder markeringen.
 ---
 
-Je engine [speelt volledige partijen](/nl/blog/un-moteur-qui-joue-au-hasard/) en heeft geen enkele reden om de ene zet boven de andere te verkiezen. Tijd om hem die te geven.
+Je engine [speelt volledige partijen](/nl/blog/moteur-schaak-toeval/) en heeft geen enkele reden om de ene zet boven de andere te verkiezen. Tijd om hem die te geven.
 
-Dat is de rol van de **evaluatiefunctie**: antwoord geven op "wie staat beter, en hoeveel?" door alleen naar de stelling te kijken, zonder ook maar één zet extra te spelen. Ze geeft een getal terug, en dat getal is een mening. De enige exacte evaluatie zou zijn "gewonnen, remise of verloren", en [niemand weet hoe hij dat bij schaken moet berekenen](/nl/blog/paradoxe-de-zermelo/).
+Dat is de rol van de **evaluatiefunctie**: antwoord geven op "wie staat beter, en hoeveel?" door alleen naar de stelling te kijken, zonder ook maar één zet extra te spelen. Ze geeft een getal terug, en dat getal is een mening. De enige exacte evaluatie zou zijn "gewonnen, remise of verloren", en [niemand weet hoe hij dat bij schaken moet berekenen](/nl/blog/stelling-van-zermelo/).
 
 Dit artikel codeert de eenvoudigste van alle evaluaties, degene die iedereen kent: de stukken tellen. En het eindigt met een resultaat dat ik niet had verwacht zo scherp te meten.
 

@@ -135,7 +135,7 @@ html = html
 const scheduledAt = new Date(Date.now() + delayMin * 60 * 1000).toISOString();
 
 const payload = {
-  name: `Nouvel article — ${title}`.slice(0, 200),
+  name: `article:${slug}`,
   subject: title,
   sender: { name: senderName, email: senderEmail },
   htmlContent: html,
@@ -156,8 +156,30 @@ if (dryRun) {
   process.exit(0);
 }
 
+// Reconcile before creating: a lost HTTP response or failed state push must not
+// create another scheduled campaign. Stable names are independent of title edits.
+const campaignUrl = "https://api.brevo.com/v3/emailCampaigns";
+let reconciled = false;
+for (let offset = 0; offset < 50_000; offset += 100) {
+  const response = await fetch(`${campaignUrl}?limit=100&offset=${offset}&excludeHtmlContent=true`, {
+    headers: { "api-key": apiKey, accept: "application/json" }, signal: AbortSignal.timeout(15_000),
+  });
+  if (!response.ok) throw new Error(`Brevo reconciliation: HTTP ${response.status}`);
+  const data = await response.json();
+  if (!Array.isArray(data.campaigns)) throw new Error("Invalid Brevo campaign list");
+  const existing = data.campaigns.find(campaign => campaign.name === payload.name);
+  if (existing) {
+    if (!["queued", "sent"].includes(existing.status)) throw new Error(`Campagne #${existing.id} déjà présente (${existing.status}) : vérifier sa programmation dans Brevo avant toute reprise.`);
+    console.log(`✓ Campagne Brevo #${existing.id} déjà programmée/envoyée, aucune création.`);
+    process.exit(0);
+  }
+  if (data.campaigns.length < 100) { reconciled = true; break; }
+}
+if (!reconciled) throw new Error("Campaign reconciliation limit exceeded");
+
 const r = await fetch("https://api.brevo.com/v3/emailCampaigns", {
   method: "POST",
+  signal: AbortSignal.timeout(30_000),
   headers: {
     "api-key": apiKey,
     "Content-Type": "application/json",
@@ -173,6 +195,7 @@ if (!r.ok) {
 }
 
 const data = await r.json();
+if (!Number.isInteger(data.id)) throw new Error("Missing Brevo campaign id");
 console.log(`✓ Campagne Brevo #${data.id} programmée pour ${scheduledAt}`);
 console.log(`  Article : ${title}`);
 console.log(`  URL     : ${url}`);

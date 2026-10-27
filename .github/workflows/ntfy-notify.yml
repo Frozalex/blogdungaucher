@@ -81,7 +81,7 @@ jobs:
       # l'état des 3 est déjà écrit sur disque et DOIT être persisté, sinon ils
       # seraient re-notifiés au prochain run.
       - name: Commiter l'état (si changé)
-        if: always()
+        if: ${{ !cancelled() }}
         run: |
           set -euo pipefail
           git config user.name  "github-actions[bot]"
@@ -96,13 +96,21 @@ jobs:
           # newsletter.yml pousse sur main dans la même fenêtre horaire : un push
           # rejeté perdrait l'état et provoquerait des notifications en double.
           for i in 1 2 3 4 5; do
-            if git push origin main; then
+            if git push origin HEAD:main; then
               echo "État poussé (tentative $i)."
               exit 0
             fi
             echo "Push rejeté (tentative $i) — rebase sur origin/main puis nouvel essai."
-            git pull --rebase --autostash origin main || true   # set -e ne doit pas avorter la boucle
+            git pull --rebase origin main
             sleep $(( i * 5 ))
           done
           echo "::error title=Push impossible::Impossible de pousser deploy/ntfy-sent.json après 5 tentatives ; risque de notifications en double au prochain run."
           exit 1
+
+      - name: Conserver l'état pour reprise manuelle en cas d'échec
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: notification-delivery-state
+          path: deploy/ntfy-sent.json
+          retention-days: 14

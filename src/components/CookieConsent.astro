@@ -121,6 +121,8 @@ const privacyHref =
     </label>
   </fieldset>
 
+  <p id="consent-error" role="alert" hidden></p>
+
   <div class="consent-quick">
     <button type="button" class="consent-btn consent-btn--primary" id="consent-accept">
       {c.enable}
@@ -155,47 +157,33 @@ const privacyHref =
   style="position:absolute;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none"
 ></button>
 
-<script is:inline>
+<script>
+  import { readPushPreference, setPushEnabled } from "../scripts/push-preferences.mjs";
   (function () {
-    var KEY = "blogdungaucher.cookieConsent.v1";
-    var _prevFocus = null;
+    var _prevFocus: HTMLElement | null = null;
 
     /* ── Persistance ──────────────────────────────────────── */
-    function readConsent() {
+    function readConsent() { return { notifications: readPushPreference() }; }
+    async function writeConsent(payload: { notifications: boolean }) {
+      var error = document.getElementById("consent-error");
+      var buttons = [...document.querySelectorAll<HTMLButtonElement>("#consent-panel button")];
+      buttons.forEach(button => { button.disabled = true; });
+      if (error) error.hidden = true;
       try {
-        var raw = localStorage.getItem(KEY);
-        if (!raw) return null;
-        var p = JSON.parse(raw);
-        // Migration : les anciens enregistrements portaient `analytics` et
-        // `marketing`, devenus sans objet (CMP Google côté pub, Umami sans cookie
-        // côté audience). On ne conserve que le réglage notifications.
-        if (p && typeof p === "object" && ("analytics" in p || "marketing" in p)) {
-          var migrated = {
-            notifications: Boolean(p.notifications),
-            updatedAt: p.updatedAt || new Date().toISOString(),
-          };
-          localStorage.setItem(KEY, JSON.stringify(migrated));
-          return migrated;
-        }
-        return p;
+        await setPushEnabled(Boolean(payload.notifications), import.meta.env.PUBLIC_NTFY_VAPID_KEY || "");
+        syncForm(readConsent());
+        hideModal();
       } catch (_) {
-        return null;
-      }
-    }
-
-    function writeConsent(payload) {
-      var normalized = {
-        notifications: Boolean(payload.notifications),
-        updatedAt: new Date().toISOString(),
-      };
-      localStorage.setItem(KEY, JSON.stringify(normalized));
-      document.dispatchEvent(new CustomEvent("cookie:updated", { detail : normalized }));
-      return normalized;
+        if (error) {
+          error.textContent = ({fr: "Impossible d’enregistrer ce choix. Vérifiez l’autorisation du navigateur puis réessayez.", en: "Unable to save. Check browser permission and try again.", "pt-BR": "Não foi possível salvar. Verifique a permissão e tente novamente.", nl: "Opslaan mislukt. Controleer de browsertoestemming en probeer opnieuw."} as Record<string, string>)[document.documentElement.lang] || "Unable to save. Please try again.";
+          error.hidden = false;
+        }
+      } finally { buttons.forEach(button => { button.disabled = false; }); }
     }
 
     /* ── Formulaire ───────────────────────────────────────── */
-    function syncForm(consent) {
-      var n = document.getElementById("cookie-notifications");
+    function syncForm(consent: { notifications: boolean }) {
+      var n = document.getElementById("cookie-notifications") as HTMLInputElement | null;
       if (!n) return;
       n.checked = Boolean(consent && consent.notifications);
     }
@@ -210,7 +198,7 @@ const privacyHref =
       panel.hidden    = false;
       document.body.style.setProperty("overflow", "hidden");
       requestAnimationFrame(function () {
-        var btn = panel.querySelector("button");
+        var btn = panel!.querySelector("button");
         if (btn) btn.focus();
       });
     }
@@ -226,7 +214,7 @@ const privacyHref =
     }
 
     /* ── Init (appelé à chaque transition Astro) ─────────── */
-    function bindClick(el, handler) {
+    function bindClick(el: HTMLElement | null, handler: () => void) {
       if (!el || el.dataset.consentBound === "1") return;
       el.dataset.consentBound = "1";
       el.addEventListener("click", handler);
@@ -241,7 +229,7 @@ const privacyHref =
       var rejectBtn  = document.getElementById("consent-reject");
       var saveBtn    = document.getElementById("consent-save");
       var manageBtn  = document.getElementById("cookie-manage");
-      var notifI     = document.getElementById("cookie-notifications");
+      var notifI     = document.getElementById("cookie-notifications") as HTMLInputElement | null;
 
       // Plus d'ouverture automatique : le panneau ne porte qu'un réglage optionnel
       // (notifications), et la fenêtre de première visite appartient au CMP Google.
@@ -251,17 +239,14 @@ const privacyHref =
 
       bindClick(acceptBtn, function () {
         writeConsent({ notifications : true });
-        hideModal();
       });
 
       bindClick(rejectBtn, function () {
         writeConsent({ notifications : false });
-        hideModal();
       });
 
       bindClick(saveBtn, function () {
         writeConsent({ notifications: notifI ? notifI.checked : false });
-        hideModal();
       });
 
       // Ouverture depuis le footer (« Notifications »)
@@ -288,7 +273,7 @@ const privacyHref =
         var focusable = panel.querySelectorAll(
           'button:not([disabled]), input[type="checkbox"], a[href]'
         );
-        var arr = Array.prototype.slice.call(focusable);
+        var arr = Array.from(focusable) as HTMLElement[];
         if (!arr.length) return;
         var first = arr[0];
         var last  = arr[arr.length - 1];
@@ -308,6 +293,7 @@ const privacyHref =
     });
 
     document.addEventListener("astro:page-load", initCookieConsent);
+    initCookieConsent();
   })();
 </script>
 

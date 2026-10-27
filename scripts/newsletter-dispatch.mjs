@@ -25,6 +25,7 @@ import { execFileSync } from "node:child_process";
 const STATE_FILE = process.env.NEWSLETTER_STATE_FILE ?? "deploy/newsletter-sent.json";
 const CONTENT_DIR = process.env.BLOG_CONTENT_DIR ?? "src/content/blog";
 const SEND_SCRIPT = "scripts/send-new-article-email.mjs";
+const dryRun = process.env.DRY_RUN === "1";
 const seed = process.env.SEED === "1";
 
 // Cohérent avec send-new-article-email.mjs : le Grand oral n'est pas diffusé.
@@ -59,15 +60,18 @@ async function listArticles(dir) {
 async function loadState() {
   try {
     const raw = JSON.parse(await fs.readFile(STATE_FILE, "utf8"));
-    return Array.isArray(raw?.sent) ? raw : { sent: [], updatedAt: null };
-  } catch {
+    if (!Array.isArray(raw?.sent) || !raw.sent.every(s => typeof s === "string")) throw new Error("État newsletter invalide");
+    return raw;
+  } catch (err) {
+    if (err.code !== "ENOENT") throw err;
     return { sent: [], updatedAt: null };
   }
 }
 async function saveState(state) {
   state.updatedAt = new Date().toISOString();
   await fs.mkdir(path.dirname(STATE_FILE), { recursive: true });
-  await fs.writeFile(STATE_FILE, JSON.stringify(state, null, 2) + "\n");
+  await fs.writeFile(`${STATE_FILE}.tmp`, JSON.stringify(state, null, 2) + "\n");
+  await fs.rename(`${STATE_FILE}.tmp`, STATE_FILE);
 }
 
 // ── Main ─────────────────────────────────────────────────────────────────────
@@ -82,6 +86,7 @@ for (const file of files) {
   const md = await fs.readFile(file, "utf8");
   const dateStr = readFrontmatterField(md, "publishDate");
   const category = readFrontmatterField(md, "category");
+  if (readFrontmatterField(md, "draft") === "true") continue;
   if (!dateStr) continue;
   const publishDate = new Date(dateStr);
   if (Number.isNaN(publishDate.getTime()) || publishDate > now) continue;
@@ -95,9 +100,9 @@ const pending = published.filter((p) => !sent.has(p.slug));
 if (seed) {
   for (const p of published) sent.add(p.slug);
   state.sent = [...sent].sort();
-  await saveState(state);
+  if (!dryRun) await saveState(state);
   console.log(`SEED : ${published.length} articles déjà publiés marqués comme envoyés.`);
-  console.log(`État écrit → ${STATE_FILE}`);
+  console.log(dryRun ? "Simulation : état inchangé." : `État écrit → ${STATE_FILE}`);
   process.exit(0);
 }
 
@@ -109,17 +114,22 @@ if (pending.length === 0) {
 console.log(`${pending.length} article(s) à notifier : ${pending.map((p) => p.slug).join(", ")}`);
 
 let ok = 0;
+let failed = 0;
 for (const p of pending) {
   try {
-    execFileSync("node", [SEND_SCRIPT, p.file], { stdio: "inherit" });
-    sent.add(p.slug);
+    execFileSync(process.execPath, [SEND_SCRIPT, p.file], { stdio: "inherit", timeout: 180_000 });
+    if (!dryRun) {
+      sent.add(p.slug);
+      state.sent = [...sent].sort();
+      await saveState(state);
+    }
     ok++;
   } catch (err) {
+    failed++;
     // Échec Brevo : on n'enregistre PAS le slug → réessai au prochain run.
     console.error(`✗ Échec de l'envoi pour ${p.slug} — sera réessayé. (${err.message})`);
   }
 }
 
-state.sent = [...sent].sort();
-await saveState(state);
-console.log(`Terminé : ${ok}/${pending.length} programmé(s). État écrit → ${STATE_FILE}`);
+console.log(`Terminé : ${ok}/${pending.length} ${dryRun ? "simulé(s), état inchangé" : "programmé(s)"}.`);
+if (failed) process.exitCode = 1;

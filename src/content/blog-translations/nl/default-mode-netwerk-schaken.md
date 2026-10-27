@@ -83,13 +83,13 @@ Gedragsstudies (Sio & Ormerod, 2009) bevestigden dat voor complexe, slecht gestr
 
 Het DMN speelt een sleutelrol in dit proces omdat het vrij geheugenelementen herverbindt die in de focusmodus niet samen worden geactiveerd. Het maakt associaties die de uitvoerende aandacht niet tolereert, omdat ze absurd of irrelevant lijken. Maar sommige van deze associaties zijn precies de oplossingen die je zocht.
 
-Zie ook het artikel over [schaken en slaap](/nl/blog/echecs-et-sommeil/): de geheugenconsolidatie in de REM-slaap deelt mechanismen met het wakende DMN.
+Zie ook het artikel over [schaken en slaap](/nl/blog/schaken-en-slaap/): de geheugenconsolidatie in de REM-slaap deelt mechanismen met het wakende DMN.
 
 ## Het DMN werkt het concrete calcul tegen
 
 Maar het DMN is niet alleen je bondgenoot. Het staat in directe competitie met de uitvoerende aandachtsnetwerken die nodig zijn om een precieze variant te berekenen.
 
-Het **uitvoerende aandachtsnetwerk** (dorsolaterale prefrontale cortex, superieure pariëtale cortex) en het DMN zijn **anti-gecorreleerd**: als de een stijgt, daalt de ander. Dit is zelfs een indicator van goed cognitief functioneren: mensen die hun DMN niet kunnen uitschakelen als een moeilijke taak begint (zoals bij ADHD, zie ook [schaken en ADHD](/nl/blog/echecs-et-tdah/)) presteren slechter op gefocuste taken.
+Het **uitvoerende aandachtsnetwerk** (dorsolaterale prefrontale cortex, superieure pariëtale cortex) en het DMN zijn **anti-gecorreleerd**: als de een stijgt, daalt de ander. Dit is zelfs een indicator van goed cognitief functioneren: mensen die hun DMN niet kunnen uitschakelen als een moeilijke taak begint (zoals bij ADHD, zie ook [schaken en ADHD](/nl/blog/schaken-en-adhd/)) presteren slechter op gefocuste taken.
 
 Bij schaken heeft deze anti-correlatie twee praktische gevolgen:
 
@@ -118,7 +118,7 @@ Bij schaken neemt ruminatie typische vormen aan:
 
 - "Hoe heb ik die zet kunnen spelen?" herhaald gedurende de vijf volgende zetten.
 - "Ik ga dit toernooi verliezen" terwijl er nog meerdere rondes te spelen zijn.
-- "Ik ben niet echt van dit niveau" dat het vertrouwen en de besluitvorming verstoort (zie ook [impostorsyndroom bij schaken](/nl/blog/syndrome-imposteur-aux-echecs/)).
+- "Ik ben niet echt van dit niveau" dat het vertrouwen en de besluitvorming verstoort (zie ook [impostorsyndroom bij schaken](/nl/blog/impostersyndroom-bij-schaken/)).
 
 Beeldvormingsstudies (Hamilton et al., 2015) toonden bij mensen die vatbaar zijn voor ruminatie een **hyperconnectiviteit van het DMN**: de gebieden communiceren te veel en te sterk vergeleken met een controlegroep. Het ruminerende DMN is op zichzelf gericht en deactiveert niet meer correct als de taak hervat.
 
@@ -148,7 +148,7 @@ Het DMN is geen vijand om te elimineren. Het is een systeem om te orkestreren. E
 
 ## Meditatie, mindfulness en het DMN: wat studies laten zien
 
-Meditatietechnieken (al besproken in [meditatie en schaken](/nl/blog/echecs-et-meditation/)) hebben een gedocumenteerd effect op het DMN. Beeldvormingsstudies (Brewer et al., 2011) toonden bij ervaren mediteerders een **sterkere deactivatie van het DMN** tijdens gefocuste taken, en een **sneller herstel** naar een niet-ruminatieve toestand na inspanning.
+Meditatietechnieken (al besproken in [meditatie en schaken](/nl/blog/meditatie-en-schaken/)) hebben een gedocumenteerd effect op het DMN. Beeldvormingsstudies (Brewer et al., 2011) toonden bij ervaren mediteerders een **sterkere deactivatie van het DMN** tijdens gefocuste taken, en een **sneller herstel** naar een niet-ruminatieve toestand na inspanning.
 
 Dit maakt meditatie niet tot een wondermiddel, maar tot een oefening die specifiek de schakelflexibiliteit tussen DMN en uitvoerende netwerken traint. Voor een schaker die zijn vermogen wil verbeteren om snel te wisselen tussen gefocuste analyse en actieve rust (en omgekeerd), is dit waarschijnlijk de meest direct nuttige cognitieve training.
 
