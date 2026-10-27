@@ -82,3 +82,8 @@ public/_svglist.json
 
 # Scripts d'analyse jetables (mesure de poids de page, inspection d'un article)
 scripts/_tmp-*.mjs
+
+# Flux et cartes Pinterest régénérés avant Astro
+/public/pinterest/
+/public/pinterest.tmp/
+/work/pinterest-preview*/

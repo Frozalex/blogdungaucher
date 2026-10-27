@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "origin": "https://blogdungaucher.com",
+  "archiveCutoff": "2026-10-28T00:00:00Z",
+  "startsAt": "2026-11-03T14:00:00Z",
+  "feedWindowDays": 14,
+  "archiveWeekdaysUtc": [2, 5, 0],
+  "archiveHourUtc": 14,
+  "categories": {
+    "science": { "label": "Science", "accent": "#5b9fd4", "board": "Science des échecs" },
+    "esprit": { "label": "Esprit", "accent": "#f0a050", "board": "Psychologie et esprit du joueur d’échecs" },
+    "societe": { "label": "Société", "accent": "#5cc4b0", "board": "Les échecs dans la société" }
+  }
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "slug": "echecs-et-memoire",
+    "category": "science",
+    "releaseAt": "2026-11-03T14:00:00.000Z"
+  },
+  {
+    "slug": "psychologie-du-joueur-d-echecs",
+    "category": "esprit",
+    "releaseAt": "2026-11-06T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-argent",
+    "category": "societe",
+    "releaseAt": "2026-11-08T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-alzheimer-prevention-declin-cognitif",
+    "category": "science",
+    "releaseAt": "2026-11-10T14:00:00.000Z"
+  },
+  {
+    "slug": "formation-des-habitudes-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2026-11-13T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-la-triche",
+    "category": "societe",
+    "releaseAt": "2026-11-15T14:00:00.000Z"
+  },
+  {
+    "slug": "hyperfocus-attention-soutenue-aux-echecs",
+    "category": "science",
+    "releaseAt": "2026-11-17T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-procrastination",
+    "category": "esprit",
+    "releaseAt": "2026-11-20T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-handicap",
+    "category": "societe",
+    "releaseAt": "2026-11-22T14:00:00.000Z"
+  },
+  {
+    "slug": "reseau-mode-defaut-aux-echecs",
+    "category": "science",
+    "releaseAt": "2026-11-24T14:00:00.000Z"
+  },
+  {
+    "slug": "biais-de-confirmation-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2026-11-27T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-streaming",
+    "category": "societe",
+    "releaseAt": "2026-11-29T14:00:00.000Z"
+  },
+  {
+    "slug": "effet-placebo-aux-echecs",
+    "category": "science",
+    "releaseAt": "2026-12-01T14:00:00.000Z"
+  },
+  {
+    "slug": "manipulation-emotionnelle-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2026-12-04T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-culture-populaire",
+    "category": "societe",
+    "releaseAt": "2026-12-06T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-alphazero-stockfish",
+    "category": "science",
+    "releaseAt": "2026-12-08T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-visualisation",
+    "category": "esprit",
+    "releaseAt": "2026-12-11T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-diplomatie",
+    "category": "societe",
+    "releaseAt": "2026-12-13T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-le-corps",
+    "category": "science",
+    "releaseAt": "2026-12-15T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-stress-tournoi",
+    "category": "esprit",
+    "releaseAt": "2026-12-18T14:00:00.000Z"
+  },
+  {
+    "slug": "gaslighting-aux-echecs",
+    "category": "societe",
+    "releaseAt": "2026-12-20T14:00:00.000Z"
+  },
+  {
+    "slug": "neuroplasticite-aux-echecs",
+    "category": "science",
+    "releaseAt": "2026-12-22T14:00:00.000Z"
+  },
+  {
+    "slug": "theorie-de-l-attachement-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2026-12-25T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-enfants",
+    "category": "societe",
+    "releaseAt": "2026-12-27T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-memoire-de-travail",
+    "category": "science",
+    "releaseAt": "2026-12-29T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-concentration",
+    "category": "esprit",
+    "releaseAt": "2027-01-01T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-therapie",
+    "category": "societe",
+    "releaseAt": "2027-01-03T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-complexite-algorithmique",
+    "category": "science",
+    "releaseAt": "2027-01-05T14:00:00.000Z"
+  },
+  {
+    "slug": "mecanismes-de-defense-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2027-01-08T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-hpi",
+    "category": "societe",
+    "releaseAt": "2027-01-10T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-meditation",
+    "category": "science",
+    "releaseAt": "2027-01-12T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-resilience",
+    "category": "esprit",
+    "releaseAt": "2027-01-15T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-religion-et-interdit",
+    "category": "societe",
+    "releaseAt": "2027-01-17T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-genetique",
+    "category": "science",
+    "releaseAt": "2027-01-19T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-gestion-du-temps",
+    "category": "esprit",
+    "releaseAt": "2027-01-22T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-ecole",
+    "category": "societe",
+    "releaseAt": "2027-01-24T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-vision-spatiale",
+    "category": "science",
+    "releaseAt": "2027-01-26T14:00:00.000Z"
+  },
+  {
+    "slug": "biais-du-survivant-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2027-01-29T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-en-prison",
+    "category": "societe",
+    "releaseAt": "2027-01-31T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-dopamine",
+    "category": "science",
+    "releaseAt": "2027-02-02T14:00:00.000Z"
+  },
+  {
+    "slug": "dissonance-cognitive-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2027-02-05T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-tdah",
+    "category": "societe",
+    "releaseAt": "2027-02-07T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-sommeil",
+    "category": "science",
+    "releaseAt": "2027-02-09T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-flow",
+    "category": "esprit",
+    "releaseAt": "2027-02-12T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-vs-philosophie-pensee-strategique",
+    "category": "societe",
+    "releaseAt": "2027-02-14T14:00:00.000Z"
+  },
+  {
+    "slug": "reseaux-bayesiens-predire-blunder",
+    "category": "science",
+    "releaseAt": "2027-02-16T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-confiance-en-soi",
+    "category": "esprit",
+    "releaseAt": "2027-02-19T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-femmes",
+    "category": "societe",
+    "releaseAt": "2027-02-21T14:00:00.000Z"
+  },
+  {
+    "slug": "neurones-miroirs-aux-echecs",
+    "category": "science",
+    "releaseAt": "2027-02-23T14:00:00.000Z"
+  },
+  {
+    "slug": "effet-dunning-kruger-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2027-02-26T14:00:00.000Z"
+  },
+  {
+    "slug": "les-echecs-et-l-addiction",
+    "category": "societe",
+    "releaseAt": "2027-02-28T14:00:00.000Z"
+  },
+  {
+    "slug": "logique-modale-aux-echecs",
+    "category": "science",
+    "releaseAt": "2027-03-02T14:00:00.000Z"
+  },
+  {
+    "slug": "loi-de-murphy-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2027-03-05T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-autisme",
+    "category": "societe",
+    "releaseAt": "2027-03-07T14:00:00.000Z"
+  },
+  {
+    "slug": "theorie-du-chaos-aux-echecs",
+    "category": "science",
+    "releaseAt": "2027-03-09T14:00:00.000Z"
+  },
+  {
+    "slug": "burnout-chess",
+    "category": "esprit",
+    "releaseAt": "2027-03-12T14:00:00.000Z"
+  },
+  {
+    "slug": "minimax-aux-echecs",
+    "category": "science",
+    "releaseAt": "2027-03-14T14:00:00.000Z"
+  },
+  {
+    "slug": "graphes-de-nash-equilibre-ouvertures",
+    "category": "science",
+    "releaseAt": "2027-03-16T14:00:00.000Z"
+  },
+  {
+    "slug": "5-biais-cognitifs-blunder",
+    "category": "esprit",
+    "releaseAt": "2027-03-19T14:00:00.000Z"
+  },
+  {
+    "slug": "paradoxe-de-zermelo",
+    "category": "science",
+    "releaseAt": "2027-03-21T14:00:00.000Z"
+  },
+  {
+    "slug": "theorie-des-jeux-aux-echecs",
+    "category": "science",
+    "releaseAt": "2027-03-23T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-peur-de-perdre",
+    "category": "esprit",
+    "releaseAt": "2027-03-26T14:00:00.000Z"
+  },
+  {
+    "slug": "pourquoi-echecs-probleme-mathematique-impossible-et-ia",
+    "category": "science",
+    "releaseAt": "2027-03-28T14:00:00.000Z"
+  },
+  {
+    "slug": "les-echecs-et-le-cerveau",
+    "category": "science",
+    "releaseAt": "2027-03-30T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-peur-de-gagner",
+    "category": "esprit",
+    "releaseAt": "2027-04-02T14:00:00.000Z"
+  },
+  {
+    "slug": "les-echecs-et-les-mathematiques",
+    "category": "science",
+    "releaseAt": "2027-04-04T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-perfectionnisme-toxique",
+    "category": "esprit",
+    "releaseAt": "2027-04-06T14:00:00.000Z"
+  },
+  {
+    "slug": "syndrome-imposteur-2000-elo",
+    "category": "esprit",
+    "releaseAt": "2027-04-09T14:00:00.000Z"
+  },
+  {
+    "slug": "syndrome-imposteur-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2027-04-11T14:00:00.000Z"
+  },
+  {
+    "slug": "echecs-et-colere-ragequit",
+    "category": "esprit",
+    "releaseAt": "2027-04-13T14:00:00.000Z"
+  },
+  {
+    "slug": "bienfaits-des-pauses-aux-echecs",
+    "category": "esprit",
+    "releaseAt": "2027-04-16T14:00:00.000Z"
+  },
+  {
+    "slug": "regle-40-40-20-echecs",
+    "category": "esprit",
+    "releaseAt": "2027-04-18T14:00:00.000Z"
+  }
+]
