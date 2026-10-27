@@ -23,7 +23,9 @@ function sub(id = '1') {
 test('push rejects local, arbitrary, misleading and malformed destinations and keys', () => {
   const good = sub();
   assert.equal(normalizeSubscription(good).endpoint, good.endpoint);
-  for (const endpoint of ['https://127.0.0.1/internal','https://[::1]/x','https://localhost/x','https://fcm.googleapis.com.evil.test/x','https://user@fcm.googleapis.com/x','https://fcm.googleapis.com:8443/x','http://fcm.googleapis.com/x']) assert.throws(() => normalizeSubscription({ ...good, endpoint }));
+  const edge = 'https://wns2-bl2p.notify.windows.com/?token=opaque';
+  assert.equal(normalizeSubscription({...good,endpoint:edge}).endpoint,edge);
+  for (const endpoint of ['https://127.0.0.1/internal','https://[::1]/x','https://localhost/x','https://fcm.googleapis.com.evil.test/x','https://notify.windows.com.evil.test/x','https://evilnotify.windows.com/x','https://user@fcm.googleapis.com/x','https://fcm.googleapis.com:8443/x','http://fcm.googleapis.com/x']) assert.throws(() => normalizeSubscription({ ...good, endpoint }));
   assert.throws(() => normalizeSubscription({ ...good, keys: { ...good.keys, auth: 'abc' } }));
   assert.throws(() => normalizeSubscription({ ...good, keys: { ...good.keys, p256dh: Buffer.alloc(65).toString('base64url') } }));
 });

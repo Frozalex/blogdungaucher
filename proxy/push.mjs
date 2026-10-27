@@ -4,11 +4,12 @@ import { BlockList, isIP } from 'node:net';
 import { ECDH } from 'node:crypto';
 
 // Only browser push services; no arbitrary HTTPS destinations or custom ports.
-const PUSH_HOSTS = new Set(['fcm.googleapis.com', 'updates.push.services.mozilla.com', 'web.push.apple.com']);
+const PUSH_HOSTS = new Set(['fcm.googleapis.com', 'updates.push.services.mozilla.com', 'web.push.apple.com', 'notify.windows.com']);
+const allowedHost = hostname => PUSH_HOSTS.has(hostname) || hostname.endsWith('.notify.windows.com');
 export function normalizeSubscription(value) {
   if (!value || typeof value.endpoint !== 'string' || value.endpoint.length > 4096) throw new Error('invalid endpoint');
   const url = new URL(value.endpoint);
-  if (url.protocol !== 'https:' || !PUSH_HOSTS.has(url.hostname) || url.port || url.username || url.password || url.hash || url.pathname === '/') throw new Error('unsupported push service');
+  if (url.protocol !== 'https:' || !allowedHost(url.hostname) || url.port || url.username || url.password || url.hash || (url.pathname === '/' && !url.search)) throw new Error('unsupported push service');
   const key = (name, length) => {
     const text = value.keys?.[name];
     if (typeof text !== 'string' || !/^[A-Za-z0-9_-]+={0,2}$/.test(text)) throw new Error('invalid push key');
@@ -36,7 +37,7 @@ export function isPublicAddress(address) {
 // Validate DNS on the actual socket lookup, preventing a second unchecked lookup.
 export function createPushAgent(resolve = lookup) {
   return new Agent({ lookup(hostname, options, callback) {
-    if (!PUSH_HOSTS.has(hostname)) return callback(new Error('unsupported push host'));
+    if (!allowedHost(hostname)) return callback(new Error('unsupported push host'));
     resolve(hostname, { all: true, family: options.family || 0 }, (error, addresses) => {
       if (error) return callback(error);
       if (!addresses?.length || addresses.some(a => !isPublicAddress(a.address))) return callback(new Error('non-public push address'));
