@@ -38,12 +38,13 @@ test('archive rejects duplicates, unknown slugs, category changes, wrong days an
  const p=fixture('old'),good=schedule('old');
  for(const plan of [[good,good],[schedule('missing')],[{...good,category:'esprit'}],[schedule('old','2026-11-04T14:00:00Z')],[schedule('old','2026-11-03T13:00:00Z')],[schedule('old','2026-10-27T14:00:00Z')]])assert.throws(()=>validateArchive(plan,[p],config));
  assert.throws(()=>validateArchive([good],[fixture('old','science','2026-11-04T00:00:00Z')],config));
+ assert.throws(()=>validateArchive([good,{...schedule('another'),releaseAt:'2026-11-03T14:00:00Z'}],[p,fixture('another')],config));
 });
 test('launch and slot boundaries are inclusive without exposing the archive early',()=>{
  const p=fixture('old'),plan=[schedule('old')];
  assert.deepEqual(selectFeedItems([p],plan,config,new Date('2026-11-03T13:59:59.999Z')),[]);
  assert.equal(selectFeedItems([p],plan,config,new Date('2026-11-03T14:00:00Z')).length,1);
- assert.deepEqual(selectFeedItems(posts,archive,config,new Date('2026-10-27T15:00:00Z')),[]);
+ assert.deepEqual(selectFeedItems(posts,archive,config,new Date('2026-10-27T15:00:00Z')).filter(p=>!p.initial),[]);
 });
 test('new posts wait for their real publication date and are not consumed from the old queue',()=>{
  const p=fixture('new','societe','2026-11-09T06:00:00Z');
@@ -56,7 +57,7 @@ test('drafts, noindex, foreign/Grand oral categories and unplanned old content s
  assert.deepEqual(selectFeedItems([hidden[0]],[schedule('draft')],config,new Date('2026-11-08T15:00:00Z')),[]);
 });
 test('late connection exposes at most six archive articles, not the full backlog',()=>{
- for(const date of ['2026-11-08T15:00:00Z','2026-12-20T23:00:00Z','2027-04-18T23:00:00Z']){
+ for(const date of ['2026-10-27T15:00:00Z','2026-11-08T15:00:00Z','2026-11-10T14:00:00Z','2026-12-20T23:00:00Z','2027-04-18T23:00:00Z']){
  const items=selectFeedItems(posts,archive,config,new Date(date)).filter(p=>p.kind==='archive');
  assert.ok(items.length<=6 && items.length>0,date);
  }
@@ -110,4 +111,31 @@ test('frontmatter parser preserves folded descriptions and correctly reads a rea
 test('future-date preview cannot overwrite the production feed directory',()=>{
  const result=spawnSync(process.execPath,['scripts/generate-pinterest.mjs','--at=2026-11-08T15:00:00Z'],{encoding:'utf8'});
  assert.equal(result.status,1);assert.match(result.stderr,/requires a separate preview/);
+});
+
+test('initial feeds contain one real article per category as soon as the initial date is reached',()=>{
+ assert.deepEqual(selectFeedItems(posts,archive,config,new Date('2026-10-27T13:59:59.999Z')),[]);
+ const items=selectFeedItems(posts,archive,config,new Date('2026-10-27T14:00:00Z'));
+ assert.equal(items.length,3);
+ for(const category of Object.keys(config.categories)) {
+  const selected=items.filter(p=>p.category===category);
+  assert.equal(selected.length,1);assert.equal(selected[0].initial,true);
+  assert.ok(selected[0].heroImage.src);
+ }
+});
+test('initial articles are never scheduled a second time on the following week',()=>{
+ const initial=archive.filter(p=>p.initial).map(p=>p.slug);
+ assert.equal(archive.filter(p=>!p.initial).length,69);
+ assert.ok(archive.filter(p=>!p.initial).every(p=>!initial.includes(p.slug)));
+ const items=selectFeedItems(posts,archive,config,new Date('2026-11-08T15:00:00Z'));
+ for(const slug of initial)assert.equal(items.filter(p=>p.slug===slug).length,1);
+ assert.equal(items.filter(p=>p.kind==='archive'&&!p.initial).length,3);
+});
+test('initial release validates all three categories and rejects duplicate categories or arbitrary dates',()=>{
+ const initial=archive.filter(p=>p.initial);
+ assert.throws(()=>validateArchive(initial.slice(0,2),posts,config),/one article per category/);
+ assert.throws(()=>validateArchive([{...initial[0],releaseAt:'2026-10-28T14:00:00Z'},...initial.slice(1)],posts,config),/initial/);
+ assert.throws(()=>validateArchive([{...initial[0],initial:'true'},...initial.slice(1)],posts,config),/initial/);
+ const fixtures=[fixture('a'),fixture('b')];
+ assert.throws(()=>validateArchive(fixtures.map(p=>({...schedule(p.slug,config.initialReleaseAt),initial:true})),fixtures,config),/initial category/);
 });

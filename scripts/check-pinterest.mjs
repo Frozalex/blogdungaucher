@@ -22,6 +22,7 @@ for (const category of Object.keys(config.categories)) {
   assert.equal($('channel > language').text(),'fr-FR');
   const items = $('channel > item').toArray();
   assert.equal(items.length,expected.filter(item=>item.category===category).length,category);
+  if (now >= new Date(config.initialReleaseAt) && now < new Date(config.startsAt)) assert.ok(items.length > 0, `Empty initial feed: ${category}`);
   for (const item of items) {
     const element = $(item);
     const guid = element.find('guid').text();

@@ -1,9 +1,10 @@
 # Publication Pinterest en français
 
 Trois flux RSS 2.0 indépendants alimentent les tableaux Science, Esprit et Société.
-Les articles français de ces rubriques sont repris une seule fois dans le calendrier :
-les nouveautés après leur publication réelle, et le stock initial à raison de
-**trois anciens articles au total par semaine**, toutes rubriques confondues.
+Les flux contiennent immédiatement **un article réel par rubrique** pour permettre
+leur enregistrement dans Pinterest. Les trois articles d’initialisation comptent
+pour la semaine du 27 octobre. Les nouveautés et le reste du stock suivent ensuite
+le calendrier de publication.
 
 ## Connexion dans Pinterest après fusion et déploiement
 
@@ -29,18 +30,23 @@ Documentation : https://help.pinterest.com/en/business/article/auto-publish-pins
 
 ## Calendrier de départ
 
-- Démarrage : **3 novembre 2026 à 10 h, heure de Guadeloupe** (14 h UTC).
+- Initialisation : **27 octobre 2026 à 10 h, heure de Guadeloupe** (14 h UTC),
+  avec mémoire (Science), psychologie du joueur (Esprit) et argent (Société).
+  Chaque flux contient donc un élément dès le déploiement de cette correction.
+- Reprise régulière : **3 novembre 2026 à 10 h en Guadeloupe** (14 h UTC).
 - Anciens articles : mardi, vendredi et dimanche à la même heure.
-- Stock initial : **72 articles**, figés dans `scripts/pinterest/archive.json`,
-  soit 24 semaines jusqu’au 18 avril 2027. Le seuil séparant stock et nouveautés
-  est `2026-10-28T00:00:00Z`.
-- Première semaine : mémoire le 3 novembre, psychologie du joueur le 6 novembre,
-  argent le 8 novembre. La rotation commence par Science, Esprit et Société ;
+- Stock initial : **72 articles**, figés dans `scripts/pinterest/archive.json` :
+  trois à l’initialisation, puis 69 sur 23 semaines jusqu’au 11 avril 2027.
+  Le seuil séparant stock et nouveautés est `2026-10-28T00:00:00Z`.
+- Première semaine régulière : Alzheimer le 3 novembre, habitudes le 6 novembre,
+  triche le 8 novembre. Les articles d’initialisation ne sont pas replanifiés.
+  La rotation commence par Science, Esprit et Société ;
   lorsqu’une rubrique épuise son stock, les autres utilisent les créneaux restants.
 - Les nouveaux articles admissibles parus entre le seuil et le lancement entrent
   au lancement ; les suivants entrent après leur date de publication réelle.
-- Avant le lancement, les trois flux sont valides mais **vides**. Si le raccordement
-  d’un flux vide n’aboutit pas dans Pinterest, le reconnecter après sa première entrée.
+- Pinterest refuse l’enregistrement d’un flux vide. Les trois articles
+  d’initialisation servent précisément à rendre les flux connectables avant
+  le début du calendrier régulier, avec leurs vrais liens et visuels.
 
 Le workflow de publication existant reçoit les trois déclenchements de rebuild
 à 14 h UTC. Son mécanisme reste le même : commit de trigger, détection par le VPS,
