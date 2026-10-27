@@ -83,7 +83,7 @@ Je variantenboom was niet te kort. Hij was **onevenwichtig**. Diep, precies en z
 
 Twee mechanismen maken dit bijzonder hardnekkig bij het schaken.
 
-**De investering.** Hoe meer je een idee hebt berekend, hoe duurder het je kost om het op te geven. Na zes minuten aan een combinatie zoekt het brein niet meer of ze goed is: het zoekt hoe ze te laten werken. Dat is het rechtvaardigingsmechanisme beschreven in ons artikel over [cognitieve dissonantie bij het schaken](/nl/blog/cognitieve-dissonantie-schaken/).
+**De investering.** Hoe meer je een idee hebt berekend, hoe duurder het je kost om het op te geven. Na zes minuten aan een combinatie zoekt het brein niet meer of ze goed is: het zoekt hoe ze te laten werken. Dat is het rechtvaardigingsmechanisme beschreven in ons artikel over [cognitieve dissonantie bij het schaken](/nl/blog/dissonantie-schaken/).
 
 **De schoonheid.** Een combinatie is esthetisch bevredigend. Het genoegen dat ze verschaft, is een beloning die je ontvangt **voordat** je weet of ze werkt, en die beloning vertekent het daaropvolgende onderzoek. Lelijke ideeën worden eerlijker onderzocht dan mooie.
 
@@ -157,7 +157,7 @@ Met andere woorden: de vraag "wat zou me laten zien dat ik het mis heb" heeft al
 
 ---
 
-*Dit artikel maakt deel uit van een serie over toegepaste psychologie bij het schaken. Zie ook [het Dunning-Kruger-effect bij het schaken](/nl/blog/dunning-kruger-effect-schaken/), [cognitieve dissonantie bij het schaken](/nl/blog/cognitieve-dissonantie-schaken/) en [het overlevendenvooroordeel bij het schaken](/nl/blog/overlevendenvooroordeel-schaken/).*
+*Dit artikel maakt deel uit van een serie over toegepaste psychologie bij het schaken. Zie ook [het Dunning-Kruger-effect bij het schaken](/nl/blog/dunning-kruger-effect-schaken/), [cognitieve dissonantie bij het schaken](/nl/blog/dissonantie-schaken/) en [het overlevendenvooroordeel bij het schaken](/nl/blog/overlevendenvooroordeel-schaken/).*
 
 ## Bronnen
 

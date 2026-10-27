@@ -122,7 +122,7 @@ Het eerste is statistisch. Een protocol met drie proefpersonen, zonder controleg
 
 Het tweede probleem is interessanter, omdat het het resultaat zelf betreft. In 2011 publiceerde onderzoeker Robert Howard in *Cognitive Development* een analyse van deze zaak die aantoont dat **de drie zussen, ondanks vergelijkbare training, niet hetzelfde niveau bereikten**. Judit was nummer 8 van de wereld; Sofia, een sterke speelster, volgde niet hetzelfde traject. Bij gelijk protocol lopen de resultaten uiteen. Zijn conclusie: schaakexpertise hangt niet alleen af van oefening.
 
-Het diepere debat tussen aangeboren en aangeleerd wordt behandeld in ons artikel over [genetica en talent bij het schaken](/nl/blog/genetica-schaaktalent.md). Wat ons hier bezighoudt, is beperkter: zelfs het voorbeeld dat wordt aangehaald om de stelling te bewijzen, bewijst haar niet, en de steekproef die het zou kunnen beslechten, is per definitie onzichtbaar.
+Het diepere debat tussen aangeboren en aangeleerd wordt behandeld in ons artikel over [genetica en talent bij het schaken](/nl/blog/genetica-schaaktalent/). Wat ons hier bezighoudt, is beperkter: zelfs het voorbeeld dat wordt aangehaald om de stelling te bewijzen, bewijst haar niet, en de steekproef die het zou kunnen beslechten, is per definitie onzichtbaar.
 
 ### 4. Jouw eigen gambiet
 
@@ -168,7 +168,7 @@ De club waar je speelt, heeft waarschijnlijk ook zijn eigen overlevenden: die sp
 
 ---
 
-*Dit artikel maakt deel uit van een serie over toegepaste psychologie bij het schaken. Zie ook [het Dunning-Kruger-effect bij het schaken](/nl/blog/dunning-kruger-effect-schaken/) en [cognitieve dissonantie bij het schaken](/nl/blog/cognitieve-dissonantie-schaken/).*
+*Dit artikel maakt deel uit van een serie over toegepaste psychologie bij het schaken. Zie ook [het Dunning-Kruger-effect bij het schaken](/nl/blog/dunning-kruger-effect-schaken/) en [cognitieve dissonantie bij het schaken](/nl/blog/dissonantie-schaken/).*
 
 ## Bronnen
 

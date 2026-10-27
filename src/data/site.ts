@@ -218,12 +218,7 @@ export const navigationLinks = [
   { label: "Contact", href: "/fr/contact/" },
 ] as const;
 
-/** Date de lancement de la section PT-BR. Avant cette date, aucune page /pt-br/ n'est générée. */
-export const PT_BR_LAUNCH_DATE = new Date("2026-07-01T06:00:00Z");
-
-/** Date de lancement de la section NL. Avant cette date, aucune page /nl/ n'est générée.
- *  Repoussée du 2026-09-01 au 2026-11-01 (décidé le 2026-08-21). */
-export const NL_LAUNCH_DATE = new Date("2026-11-01T06:00:00Z");
+export { PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE } from "./language-launch.mjs";
 
 /** Langues dont les pages sont exposées à l'indexation Google.
  *

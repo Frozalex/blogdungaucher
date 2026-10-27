@@ -206,9 +206,6 @@ function safeJsonLd(item: unknown): string {
     );
 }
 
-const ntfyUrl      = import.meta.env.PUBLIC_NTFY_URL       ?? "";
-const ntfyTopic    = import.meta.env.PUBLIC_NTFY_TOPIC     ?? "blog-gaucher";
-const ntfyVapidKey = import.meta.env.PUBLIC_NTFY_VAPID_KEY ?? "";
 const umamiId      = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID ?? "";
 const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.blogdungaucher.com";
 ---
@@ -449,107 +446,6 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
       </script>
     )}
 
-    <script is:inline define:vars={{ ntfyUrl, ntfyTopic, ntfyVapidKey }}>
-      globalThis.__NTFY_URL__       = ntfyUrl;
-      globalThis.__NTFY_TOPIC__     = ntfyTopic;
-      globalThis.__NTFY_VAPID_KEY__ = ntfyVapidKey;
-    </script>
-
-    <script is:inline>
-      (() => {
-        /** Ce bloc ne gère plus qu'un seul réglage : l'abonnement aux notifications
-         *  ntfy. Google Analytics a été retiré du site (2026-10-13) — la mesure
-         *  d'audience passe par Umami, auto-hébergé et sans cookie. Les signaux de
-         *  consentement publicitaire relèvent du CMP Google, pas de ce code. */
-        const CONSENT_KEY = "blogdungaucher.cookieConsent.v1";
-
-        function readConsent() {
-          try {
-            const raw = localStorage.getItem(CONSENT_KEY);
-            if (!raw) return null;
-            const p = JSON.parse(raw);
-            if (p && typeof p === "object" && !("notifications" in p)) {
-              return {
-                ...p,
-                notifications: false,
-              };
-            }
-            return p;
-          } catch {
-            return null;
-          }
-        }
-
-        function urlBase64ToUint8Array(base64String) {
-          try {
-            const clean = base64String.replace(/[^A-Za-z0-9+/=_-]/g, "");
-            const padding = "=".repeat((4 - (clean.length % 4)) % 4);
-            const base64 = (clean + padding).replace(/-/g, "+").replace(/_/g, "/");
-            const raw = atob(base64);
-            return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
-          } catch (_) {
-            return null;
-          }
-        }
-
-        /** ntfy Web Push : abonne le navigateur au topic ntfy via PushManager (VAPID). */
-        async function enableNtfyPush() {
-          if (!("PushManager" in window) || !("serviceWorker" in navigator)) return;
-          const vapidKey = (globalThis.__NTFY_VAPID_KEY__ || "").trim();
-          if (!vapidKey) return;
-          try {
-            const reg = await navigator.serviceWorker.ready;
-            if (await reg.pushManager.getSubscription()) return; // déjà abonné
-            const serverKey = urlBase64ToUint8Array(vapidKey);
-            if (!serverKey) return;
-            const sub = await reg.pushManager.subscribe({
-              userVisibleOnly: true,
-              applicationServerKey: serverKey,
-            });
-            const url   = (globalThis.__NTFY_URL__   || "").replace(/\/$/, "");
-            const topic = (globalThis.__NTFY_TOPIC__ || "blog-gaucher").trim();
-            if (!url) return;
-            const j = sub.toJSON();
-            await fetch(`${url}/v1/account/subscription`, {
-              method: "PATCH",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                web_push_subscription: { endpoint: j.endpoint, keys: j.keys },
-                url,
-                topics: [topic],
-              }),
-            }).catch(() => {});
-          } catch (_) {}
-        }
-
-        async function disableNtfyPush() {
-          if (!("serviceWorker" in navigator)) return;
-          try {
-            const reg = await navigator.serviceWorker.ready;
-            const sub = await reg.pushManager.getSubscription();
-            if (sub) await sub.unsubscribe();
-          } catch (_) {}
-        }
-
-        function applyConsent(consent) {
-          if (!consent) return;
-          if (consent.notifications) {
-            enableNtfyPush();
-          } else {
-            disableNtfyPush();
-          }
-        }
-
-        function bootConsentScripts() {
-          applyConsent(readConsent());
-        }
-
-        document.addEventListener("astro:page-load", bootConsentScripts);
-        document.addEventListener("cookie:updated", (event) => {
-          applyConsent(event.detail);
-        });
-      })();
-    </script>
     {/* KaTeX CSS : importé seulement par les templates d'article (cf. en-tête de ce fichier). */}
 
   </head>

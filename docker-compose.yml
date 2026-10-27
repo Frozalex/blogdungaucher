@@ -99,6 +99,7 @@ services:
       PUSH_DATA_DIR: "/app/data"
     volumes:
       - ./proxy/newsletter.mjs:/app/newsletter.mjs:ro
+      - ./proxy/push.mjs:/app/push.mjs:ro
       - push_data:/app/data
     ports:
       - "127.0.0.1:3030:3030"

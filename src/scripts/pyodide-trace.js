@@ -1,24 +1,7 @@
-const PYODIDE_VERSION = "0.26.4";
+import { createPyodideLoader } from "./pyodide-loader.mjs";
 
 (() => {
-    const PYO_BASE = `https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/`;
-
-    // ── Chargement paresseux et partagé de Pyodide ────────────────────────
-    function loadPyodideOnce() {
-      if (window.__pyodideReady) return window.__pyodideReady;
-      window.__pyodideReady = (async () => {
-        await new Promise((resolve, reject) => {
-          const s = document.createElement("script");
-          s.src = `${PYO_BASE}pyodide.js`;
-          s.onload = resolve;
-          s.onerror = () => reject(new Error("Échec du chargement de Pyodide"));
-          document.head.appendChild(s);
-        });
-        // eslint-disable-next-line no-undef
-        return await loadPyodide({ indexURL: PYO_BASE });
-      })();
-      return window.__pyodideReady;
-    }
+    const loadPyodideOnce = createPyodideLoader({ window, document });
 
     // Harnais Python : trace l'exécution du code utilisateur et renvoie un JSON
     // { steps:[{event,line,func,depth,stack,locals,ret,out}], stdout, error }.

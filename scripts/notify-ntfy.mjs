@@ -15,8 +15,8 @@
  *
  * Les deux canaux sont INDÉPENDANTS : chacun n'est tenté que s'il est
  * configuré, et la panne de l'un n'empêche pas l'autre de partir. Un article
- * n'est marqué « notifié » que si au moins un canal a réussi ; sinon il sera
- * réessayé au prochain run. Auparavant le Web Push était placé derrière un
+ * conserve un état indépendant pour chaque canal ; seuls les canaux en échec
+ * seront réessayés au prochain run. Auparavant le Web Push était placé derrière un
  * `continue` conditionné au succès de ntfy : une panne ntfy (ou son simple
  * défaut de configuration) coupait aussi les notifications des lecteurs.
  *
@@ -36,7 +36,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname    = path.dirname(fileURLToPath(import.meta.url));
-const CONTENT_DIR  = path.join(__dirname, "..", "src", "content", "blog");
+const CONTENT_DIR  = process.env.BLOG_CONTENT_DIR ?? path.join(__dirname, "..", "src", "content", "blog");
 const SITE_URL     = "https://blogdungaucher.com";
 // resolve (et non join) : un NTFY_STATE_FILE absolu doit être respecté tel quel,
 // sinon il est recollé sous la racine du dépôt.
@@ -44,7 +44,7 @@ const STATE_FILE   = path.resolve(__dirname, "..", process.env.NTFY_STATE_FILE ?
 const seed         = process.env.SEED === "1";
 
 const NTFY_URL        = process.env.NTFY_URL?.replace(/\/$/, "");
-const NTFY_TOPIC      = process.env.NTFY_TOPIC ?? "blog-gaucher";
+const NTFY_TOPIC      = process.env.NTFY_TOPIC?.trim() || "blog-gaucher";
 const NTFY_TOKEN      = process.env.NTFY_TOKEN;
 const PUSH_PROXY_URL  = process.env.PUSH_PROXY_URL?.replace(/\/$/, "");
 const PUSH_SEND_TOKEN = process.env.PUSH_SEND_TOKEN;
@@ -72,15 +72,24 @@ if (!seed) {
 function loadState() {
   try {
     const raw = JSON.parse(fs.readFileSync(STATE_FILE, "utf8"));
-    return Array.isArray(raw?.sent) ? raw : { sent: [], updatedAt: null };
-  } catch {
-    return { sent: [], updatedAt: null };
+    if (!Array.isArray(raw?.sent) || !raw.sent.every(s => typeof s === "string")) throw new Error("Invalid notification state");
+    if (raw.version === 2) {
+      if (![raw.channels?.ntfy, raw.channels?.push].every(a => Array.isArray(a) && a.every(s => typeof s === "string"))) throw new Error("Invalid channel state");
+      return raw;
+    }
+    // Historical sent entries cannot be reconstructed per channel. Preserve them
+    // in both channels to avoid replaying the entire backlog on migration.
+    return { ...raw, version: 2, channels: { ntfy: [...raw.sent], push: [...raw.sent] } };
+  } catch (err) {
+    if (err.code !== "ENOENT") throw err;
+    return { version: 2, sent: [], channels: { ntfy: [], push: [] }, updatedAt: null };
   }
 }
 function saveState(state) {
   state.updatedAt = new Date().toISOString();
   fs.mkdirSync(path.dirname(STATE_FILE), { recursive: true });
-  fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + "\n");
+  fs.writeFileSync(`${STATE_FILE}.tmp`, JSON.stringify(state, null, 2) + "\n");
+  fs.renameSync(`${STATE_FILE}.tmp`, STATE_FILE);
 }
 
 const now = new Date();
@@ -112,9 +121,9 @@ function findPublishedArticles() {
       // Ignorer les brouillons
       if (/^draft:\s*true/m.test(raw)) continue;
 
-      const dateMatch = raw.match(/^publishDate:\s*["']?(\d{4}-\d{2}-\d{2})["']?/m);
-      if (!dateMatch) continue;
-      const publishDate = new Date(dateMatch[1]);
+      const dateValue = readScalar(raw, "publishDate");
+      if (!dateValue) continue;
+      const publishDate = new Date(dateValue);
       if (Number.isNaN(publishDate.getTime()) || publishDate > now) continue;
 
       const title = readScalar(raw, "title") ?? file.replace(/\.md$/, "");
@@ -136,109 +145,64 @@ function findPublishedArticles() {
 
 const published = findPublishedArticles();
 const state = loadState();
-const sent = new Set(state.sent);
-
-// ── Mode SEED : marquer tout le backlog publié comme déjà notifié ───────────
-if (seed) {
-  for (const p of published) sent.add(p.slug);
-  state.sent = [...sent].sort();
+const channels = { ntfy: new Set(state.channels.ntfy), push: new Set(state.channels.push) };
+const enabled = Object.keys(channels).filter(c => c === "ntfy" ? ntfyEnabled : pushEnabled);
+function persist() {
+  state.channels = Object.fromEntries(Object.entries(channels).map(([key, values]) => [key, [...values].sort()]));
+  state.sent = [...new Set([...channels.ntfy, ...channels.push])].filter(slug => channels.ntfy.has(slug) && channels.push.has(slug)).sort();
   saveState(state);
-  console.log(`[ntfy] SEED : ${published.length} article(s) déjà publiés marqués comme notifiés.`);
+}
+if (seed) {
+  for (const p of published) for (const values of Object.values(channels)) values.add(p.slug);
+  persist();
+  console.log(`[notify] SEED: ${published.length} articles.`);
   process.exit(0);
 }
 
-const articles = published.filter((p) => !sent.has(p.slug));
-
-if (articles.length === 0) {
-  console.log("[ntfy] Aucun nouvel article publié à notifier.");
-  process.exit(0);
+// Automatic retries are limited to explicit temporary HTTP errors. An ambiguous
+// ntfy network failure is left for the next run (at-least-once delivery).
+async function post(url, body, token) {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const response = await fetch(url, {
+      method: "POST", signal: AbortSignal.timeout(45_000),
+      headers: { "Content-Type": "application/json", ...(token ? { Authorization: `Bearer ${token}` } : {}) },
+      body: JSON.stringify(body),
+    });
+    if (attempt < 2 && (response.status === 429 || response.status >= 500)) {
+      await response.body?.cancel();
+      await new Promise(resolve => setTimeout(resolve, 1000 * (attempt + 1)));
+      continue;
+    }
+    return response;
+  }
 }
 
-let ok = 0;
+const articles = published.filter(p => enabled.some(channel => !channels[channel].has(p.slug)));
 let failed = 0;
 for (const article of articles) {
-  const url = `${SITE_URL}/fr/blog/${article.slug}/`;
-
-  // Les deux canaux sont tentés séparément : aucun n'est la condition de
-  // l'autre. `delivered` retient si au moins un abonné a pu être touché.
-  let delivered = false;
-
-  // ── ntfy (mobile app + ntfy web app) ──
-  // Publication au format JSON plutôt que par en-têtes : un en-tête HTTP est
-  // une ByteString (Latin-1), donc un titre contenant un tiret demi-cadratin
-  // « – » (U+2013) ou toute autre ponctuation typographique faisait planter
-  // fetch — ces articles n'étaient jamais notifiés, à chaque run.
-  if (ntfyEnabled) {
-    const ntfyRes = await fetch(NTFY_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        ...(NTFY_TOKEN ? { "Authorization": `Bearer ${NTFY_TOKEN}` } : {}),
-      },
-      body: JSON.stringify({
-        topic:   NTFY_TOPIC,
-        title:   article.title,
-        message: article.excerpt || article.title,
-        click:   url,
-        tags:    ["chess", "left_fist"],
-      }),
-    }).catch((e) => { console.warn("[ntfy] fetch échoué :", e.message); return null; });
-
-    if (ntfyRes?.ok) {
-      console.log(`[ntfy] Notifié : ${article.title}`);
-      delivered = true;
-    } else {
-      const detail = ntfyRes ? await ntfyRes.text().catch(() => ntfyRes.statusText) : "réseau";
-      console.error(`[ntfy] Erreur pour "${article.title}" : ${detail}`);
+  const message = {
+    title: article.title, message: article.excerpt || article.title,
+    click: `${SITE_URL}/fr/blog/${article.slug}/`,
+  };
+  for (const channel of enabled) {
+    if (channels[channel].has(article.slug)) continue;
+    try {
+      const response = channel === "ntfy"
+        ? await post(NTFY_URL, { ...message, topic: NTFY_TOPIC, tags: ["chess", "left_fist"] }, NTFY_TOKEN)
+        : await post(`${PUSH_PROXY_URL}/send`, { ...message, notificationId: `article:${article.slug}` }, PUSH_SEND_TOKEN);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      if (channel === "push") {
+        const result = await response.json();
+        if (![result.sent, result.expired, result.failed].every(n => Number.isInteger(n) && n >= 0) || result.failed > 0) throw new Error("Incomplete push delivery");
+      }
+      channels[channel].add(article.slug);
+      persist();
+      console.log(`[${channel}] Notifié : ${article.title}`);
+    } catch (error) {
+      failed++;
+      console.error(`[${channel}] ${article.slug} : ${error.message} — sera réessayé.`);
     }
   }
-
-  // ── Web Push (abonnés navigateur via le proxy) ──
-  if (pushEnabled) {
-    const pushRes = await fetch(`${PUSH_PROXY_URL}/send`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${PUSH_SEND_TOKEN}`,
-      },
-      body: JSON.stringify({
-        title: article.title,
-        message: article.excerpt || article.title,
-        click: url,
-      }),
-    }).catch((e) => { console.warn("[push] fetch échoué :", e.message); return null; });
-
-    if (pushRes?.ok) {
-      const d = await pushRes.json().catch(() => ({}));
-      console.log(`[push] Envoyé à ${d.sent ?? "?"} abonné(s) (${d.expired ?? 0} expirés nettoyés)`);
-      delivered = true;
-    } else {
-      const detail = pushRes ? `HTTP ${pushRes.status}` : "réseau";
-      console.error(`[push] Erreur pour "${article.title}" : ${detail}`);
-    }
-  }
-
-  // Aucun canal n'a abouti : ne pas marquer comme envoyé, l'article repassera
-  // au prochain run plutôt que d'être silencieusement perdu.
-  if (!delivered) {
-    console.error(`[notify] "${article.title}" non notifié — sera réessayé au prochain run.`);
-    failed++;
-    continue;
-  }
-
-  // Écriture immédiate : si le run casse sur l'article suivant, celui-ci ne
-  // sera pas re-notifié au prochain passage.
-  sent.add(article.slug);
-  state.sent = [...sent].sort();
-  saveState(state);
-  ok++;
 }
-
-console.log(`[notify] Terminé : ${ok}/${articles.length} notifié(s). État écrit → ${STATE_FILE}`);
-
-// Un article resté sur le carreau doit rendre le run rouge : c'est
-// précisément le silence vert qui avait laissé passer 7 articles.
-if (failed > 0) {
-  console.error(`[notify] ${failed} article(s) n'ont atteint aucun canal.`);
-  process.exit(1);
-}
+console.log(`[notify] ${articles.length} article(s) traité(s), ${failed} canal/article en échec.`);
+if (failed) process.exitCode = 1;

@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { runInNewContext } from "node:vm";
+import { createPyodideLoader } from "../src/scripts/pyodide-loader.mjs";
 
 const layout = readFileSync(new URL("../src/layouts/BaseLayout.astro", import.meta.url), "utf8");
 const scripts = [...layout.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(match => match[1]);
@@ -73,6 +74,7 @@ test("offline precaching waits for page load and an idle opportunity", () => {
 
 test("the Python module initializes even when loaded after astro:page-load", () => {
   const code = readFileSync(new URL("../src/scripts/pyodide-trace.js", import.meta.url), "utf8")
+    .replace(/^import[^\n]+\n/, "")
     .replace(/export\s*\{\s*\};?\s*$/, "");
   const events = new Map();
   let scans = 0;
@@ -80,7 +82,7 @@ test("the Python module initializes even when loaded after astro:page-load", () 
     querySelectorAll: () => { scans++; return []; },
     addEventListener: (name, callback) => events.set(name, callback),
   };
-  runInNewContext(code, { document, window: {} });
+  runInNewContext(code, { document, window: {}, createPyodideLoader });
   assert.equal(scans, 1);
   events.get("astro:page-load")();
   assert.equal(scans, 2);

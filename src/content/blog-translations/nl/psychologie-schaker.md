@@ -69,7 +69,7 @@ Wat fascinerend is aan tilt bij schaken, is wat het over jouw psychologische zwa
 
 [Mark Dvoretsky](https://en.wikipedia.org/wiki/Mark_Dvoretsky), een van de grootste trainers uit de schaakgeschiedenis, benadrukte dit punt bij zijn leerlingen. De analyse na de partij zou niet alleen naar de technische fout moeten zoeken. Ze zou moeten zoeken naar de emotionele toestand waarin deze fout is gemaakt. Daar ligt de echte informatie.
 
-Wanneer tilt een herhaalde lus wordt, dwangmatig nieuwe partijen starten na elke nederlaag, is dat het teken dat er iets anders speelt. Het artikel [Schaken en verslaving](/nl/blog/schaken-en-verslaving/) behandelt dit specifieke geval.
+Wanneer tilt een herhaalde lus wordt, dwangmatig nieuwe partijen starten na elke nederlaag, is dat het teken dat er iets anders speelt. Het artikel [Schaken en verslaving](/nl/blog/verslaving-aan-schaken/) behandelt dit specifieke geval.
 
 ## Zeitnot: niet de tijd doodt je, je angst voor de tijd doet dat
 

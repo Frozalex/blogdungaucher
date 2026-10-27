@@ -115,9 +115,9 @@ Het schaakbord blijft een onderhandelingstafel. De spelregels erboven veranderen
 
 ## Verder lezen
 
-- [Schaken en valsspelen: wat de Niemann-affaire echt onthulde](/nl/blog/echecs-et-la-triche/)
-- [Schaken en migratie: het schaakbord als gemeenschappelijke taal](/nl/blog/echecs-et-immigration/)
-- [De psychologie van de schaker: wat er echt in je hoofd gebeurt](/nl/blog/psychologie-du-joueur-d-echecs/)
+- [Schaken en valsspelen: wat de Niemann-affaire echt onthulde](/nl/blog/valsspelen-schaken/)
+- [Schaken en migratie: het schaakbord als gemeenschappelijke taal](/nl/blog/schaken-en-migratie/)
+- [De psychologie van de schaker: wat er echt in je hoofd gebeurt](/nl/blog/psychologie-schaker/)
 
 ---
 

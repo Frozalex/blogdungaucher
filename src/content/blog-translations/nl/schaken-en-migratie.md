@@ -105,9 +105,9 @@ In het winterse Berlijn van 2015 is de partij die begint tussen de Syrische vluc
 
 ## Verder lezen
 
-- [Schaken en handicap: wanneer het bord grenzen wegwist](/nl/blog/echecs-et-handicap/)
-- [Schaken en streaming: hoe Twitch en YouTube het spel revolutioneerden](/nl/blog/echecs-et-streaming/)
-- [Schaken en diplomatie: wanneer het bord een onderhandelingstafel wordt](/nl/blog/echecs-et-diplomatie/)
+- [Schaken en handicap: wanneer het bord grenzen wegwist](/nl/blog/schaken-en-handicap/)
+- [Schaken en streaming: hoe Twitch en YouTube het spel revolutioneerden](/nl/blog/schaken-en-streaming/)
+- [Schaken en diplomatie: wanneer het bord een onderhandelingstafel wordt](/nl/blog/schaken-en-diplomatie/)
 
 ---
 

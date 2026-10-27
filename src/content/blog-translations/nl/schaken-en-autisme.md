@@ -106,7 +106,7 @@ Een veelvoorkomend en vaak verkeerd begrepen kenmerk van autisme is het vermogen
 
 ### De flowstaat: wanneer al het andere verdwijnt
 
-[Flow](https://nl.wikipedia.org/wiki/Flow_(psychologie)), die staat van totale onderdompeling getheoretiseerd door Csikszentmihalyi, is opmerkelijk toegankelijk voor autistische mensen tijdens een schaakpartij, precies omdat hun brein van nature meer geneigd is tot intense monofocale concentratie. (Het volledige mechanisme wordt uitgelegd in het artikel [Psychologie van de schaker](/nl/blog/psychologie-van-de-schaker/).)
+[Flow](https://nl.wikipedia.org/wiki/Flow_(psychologie)), die staat van totale onderdompeling getheoretiseerd door Csikszentmihalyi, is opmerkelijk toegankelijk voor autistische mensen tijdens een schaakpartij, precies omdat hun brein van nature meer geneigd is tot intense monofocale concentratie. (Het volledige mechanisme wordt uitgelegd in het artikel [Psychologie van de schaker](/nl/blog/psychologie-schaker/).)
 
 Voor mensen die vaak negatieve boodschappen ontvangen over hun sociale onaangepastheid, is de onbetwiste clubexpert worden op het gebied van de Siciliaanse verdediging of torenneindspelen een onbetaalbare motor voor zelfvertrouwen.
 

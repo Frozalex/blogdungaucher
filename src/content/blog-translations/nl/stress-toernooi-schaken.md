@@ -145,4 +145,4 @@ De klok tikt. De stelling is moeilijk. Maar je brein kent de weg, als je het de 
 
 - [Veerkracht bij schaken: leren terugveren na een nederlaag](/nl/blog/veerkracht-schaken/)
 - [Concentratie bij schaken: de aandacht trainen als een spier](/nl/blog/concentratie-schaken/)
-- [Echecs en flow: hoe je flow bereikt op het schaakbord](/nl/blog/echecs-en-flow/)
+- [Echecs en flow: hoe je flow bereikt op het schaakbord](/nl/blog/schaken-en-flow/)

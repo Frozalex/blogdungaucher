@@ -31,13 +31,14 @@ flock -n 9 || exit 0
 
 cd "$REPO"
 git fetch --quiet origin "$BRANCH"
-LOCAL="$(git rev-parse HEAD)"
+STATE="${DEPLOY_STATE_FILE:-$(git rev-parse --absolute-git-dir)/blog-last-deployed}"
+DEPLOYED="$(cat "$STATE" 2>/dev/null || true)"
 REMOTE="$(git rev-parse "origin/${BRANCH}")"
 
 # Rien de neuf : on sort sans bruit (cas le plus fréquent).
-[ "$LOCAL" = "$REMOTE" ] && exit 0
+[ "$DEPLOYED" = "$REMOTE" ] && exit 0
 
-log "nouveau commit ${REMOTE} (local ${LOCAL}) → déploiement"
+log "nouveau commit ${REMOTE} (déployé ${DEPLOYED:-inconnu}) → déploiement"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # SYNCHRONISATION FORCÉE de l'arbre de travail sur origin/main AVANT le build.
@@ -55,6 +56,9 @@ git reset --hard "origin/${BRANCH}" >> "$LOG" 2>&1
 git clean -fd >> "$LOG" 2>&1
 
 if "$DEPLOY_CMD" >> "$LOG" 2>&1; then
+  mkdir -p "$(dirname "$STATE")"
+  printf '%s\n' "$REMOTE" > "${STATE}.tmp"
+  mv "${STATE}.tmp" "$STATE"
   log "déploiement OK (${REMOTE})"
 else
   log "ÉCHEC déploiement (code $?) — voir ci-dessus"

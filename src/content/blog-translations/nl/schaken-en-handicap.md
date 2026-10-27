@@ -131,9 +131,9 @@ Het schaakbord blijft een van de weinige ruimten waar cognitieve prestaties zich
 
 ## Verder lezen
 
-- [Schaken en streaming: hoe Twitch en YouTube het spel revolutioneerden](/nl/blog/echecs-et-streaming/)
-- [Schaken en autisme: waarom het schaakbord een toevluchtsoord wordt](/nl/blog/echecs-et-autisme/)
-- [Schaken en ADHD: waarom het schaakbord de aandacht trekt waar al het andere faalt](/nl/blog/echecs-et-tdah/)
+- [Schaken en streaming: hoe Twitch en YouTube het spel revolutioneerden](/nl/blog/schaken-en-streaming/)
+- [Schaken en autisme: waarom het schaakbord een toevluchtsoord wordt](/nl/blog/schaken-en-autisme/)
+- [Schaken en ADHD: waarom het schaakbord de aandacht trekt waar al het andere faalt](/nl/blog/schaken-en-adhd/)
 
 ---
 

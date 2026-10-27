@@ -190,6 +190,6 @@ Dat is de paradox van vertrouwen bij schaken: het wordt opgebouwd in ongemak, ni
 
 ## Om verder te gaan
 
-- [De psychologie van de schaker: wat er echt in je hoofd omgaat](/nl/blog/psychologie-van-de-schaker/)
+- [De psychologie van de schaker: wat er echt in je hoofd omgaat](/nl/blog/psychologie-schaker/)
 - [Maakt schaken je beter in wiskunde? De wetenschappelijke waarheid](/nl/blog/schaken-en-wiskunde/)
-- [Schaken en verslaving: wanneer het spel een drug wordt](/nl/blog/schaken-en-verslaving/)
+- [Schaken en verslaving: wanneer het spel een drug wordt](/nl/blog/verslaving-aan-schaken/)

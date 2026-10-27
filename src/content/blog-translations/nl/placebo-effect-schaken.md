@@ -107,9 +107,9 @@ De literatuur over cognitieve verbetering wijst in dezelfde richting, en vrij co
 
 Vertaald naar jouw niveau: geloven dat je trui geluk brengt zal je waarschijnlijk **je** beter voorbereid, helderder, zelfverzekerder laten **voelen**. Er is geen serieuze reden om te denken dat het je de zet zal laten zien die je anders had gemist.
 
-En deze conclusie is consistent met wat we verder weten over dit spel. Schaken is een van de weinige gebieden waar prestatie met brute precisie wordt gemeten, zonder toeval of interpretatie. Dat maakt het zo'n goed observatieterrein, zoals ons artikel over [het Dunning-Kruger-effect bij schaken](/nl/blog/effet-dunning-kruger-aux-echecs/) laat zien. Het is ook wat schaken ondoordringbaar maakt voor verwachtingseffecten.
+En deze conclusie is consistent met wat we verder weten over dit spel. Schaken is een van de weinige gebieden waar prestatie met brute precisie wordt gemeten, zonder toeval of interpretatie. Dat maakt het zo'n goed observatieterrein, zoals ons artikel over [het Dunning-Kruger-effect bij schaken](/nl/blog/dunning-kruger-effect-schaken/) laat zien. Het is ook wat schaken ondoordringbaar maakt voor verwachtingseffecten.
 
-Het is trouwens belangrijk om dit te onderscheiden van een andere vraag, behandeld in [maken schaken je slimmer](/nl/blog/les-echecs-rendent-ils-plus-intelligent/): daar betreft het verwachtingseffect **onderzoekers en leerkrachten** en vertekent het de meting van de voordelen. Hier gaat het om jou, speler, en om jouw eigen prestatie tijdens de partij.
+Het is trouwens belangrijk om dit te onderscheiden van een andere vraag, behandeld in [maken schaken je slimmer](/nl/blog/maken-schaken-echt-slimmer/): daar betreft het verwachtingseffect **onderzoekers en leerkrachten** en vertekent het de meting van de voordelen. Hier gaat het om jou, speler, en om jouw eigen prestatie tijdens de partij.
 
 ## Nocebo, of het echte risico
 
@@ -155,7 +155,7 @@ Overgezet: je kunt je trui houden terwijl je heel goed weet dat hij geen enkele 
 
 **Spoor je nocebo's op, ze kosten meer.** Maak een lijst van de zinnen die je uitspreekt voor het spelen: "ik haat het om tegen die man te spelen", "ik ben slecht in deze structuur". Dit zijn expliciete negatieve verwachtingen, en dit is het enige terrein waar geloof een goed gedocumenteerde werking heeft. Ze worden gecorrigeerd door feiten: check je werkelijke score tegen deze tegenstander, hij is zelden wat je denkt.
 
-**Wees op je hoede voor supplementen die voor cognitie worden verkocht.** Op objectieve criteria ligt de bewijslast hoog en wordt zelden gehaald. Je slaap heeft daarentegen een gedocumenteerd effect op cognitieve prestaties, en die is gratis. Zie [schaken en slaap](/nl/blog/echecs-et-sommeil/).
+**Wees op je hoede voor supplementen die voor cognitie worden verkocht.** Op objectieve criteria ligt de bewijslast hoog en wordt zelden gehaald. Je slaap heeft daarentegen een gedocumenteerd effect op cognitieve prestaties, en die is gratis. Zie [schaken en slaap](/nl/blog/schaken-en-slaap/).
 
 ## Wat je moet onthouden
 
@@ -171,7 +171,7 @@ Het risico daarentegen is reëel, en het gaat de andere kant op. Negatieve verwa
 
 ---
 
-*Dit artikel maakt deel uit van een serie over toegepaste psychologie bij schaken. Zie ook [nee, schaken herbedraadt je hersenen niet](/nl/blog/neuroplasticite-aux-echecs/) en [het Dunning-Kruger-effect bij schaken](/nl/blog/effet-dunning-kruger-aux-echecs/).*
+*Dit artikel maakt deel uit van een serie over toegepaste psychologie bij schaken. Zie ook [nee, schaken herbedraadt je hersenen niet](/nl/blog/neuroplasticiteit-en-schaken/) en [het Dunning-Kruger-effect bij schaken](/nl/blog/dunning-kruger-effect-schaken/).*
 
 ## Bronnen
 

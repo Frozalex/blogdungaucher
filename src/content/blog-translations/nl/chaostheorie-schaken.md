@@ -101,7 +101,7 @@ Maar het effect is asymmetrisch. De speler die de nieuwigheid introduceert, kent
 
 ## "Chaotische" stellingen als strategie
 
-Het begrijpen van de chaostheorie heeft een directe strategische toepassing. Tegenover een sterkere tegenstander is de optimale strategie niet altijd "de beste zet" spelen in evenwichtige stellingen. Het is vaak het creëren van chaotische stellingen waarbij het technische voordeel van de sterkere gedeeltelijk geneutraliseerd wordt door de complexiteit. Dit is ook een van de assen van de [speltheorie toegepast op schaken](/nl/blog/theorie-des-jeux-aux-echecs/): niet de absolute evaluatie optimaliseren maar de kans op fouten van de tegenstander.
+Het begrijpen van de chaostheorie heeft een directe strategische toepassing. Tegenover een sterkere tegenstander is de optimale strategie niet altijd "de beste zet" spelen in evenwichtige stellingen. Het is vaak het creëren van chaotische stellingen waarbij het technische voordeel van de sterkere gedeeltelijk geneutraliseerd wordt door de complexiteit. Dit is ook een van de assen van de [speltheorie toegepast op schaken](/nl/blog/speltheorie-schaken/): niet de absolute evaluatie optimaliseren maar de kans op fouten van de tegenstander.
 
 Dat is waarom schaakspelers in een zwakke positie (zwakkere speler, speler met een slechte stelling) vaak proberen te compliceren. Complicaties creëren meerdere bifurcaties, vergroten het oppervlak van mogelijke fouten, en verminderen het relatieve belang van het technische voordeel ten opzichte van intuïtie en kalmte.
 
@@ -109,7 +109,7 @@ De beslissing om te compliceren is zelf een chaotische kwestie: op welk moment z
 
 ### Gecompliceerd is niet chaotisch
 
-Het onderscheid is cruciaal. Een **gecompliceerde** stelling heeft veel kandidaatzetten maar kleine evaluatieverschillen ertussen; je kunt tijd verspillen zonder de partij te verliezen. Een **chaotische** stelling heeft weinig levensvatbare kandidaten maar enorme verschillen; een seconde onoplettendheid kost het punt. Grootmeesters doen beide bewust: ze compliceren om te vermoeien, en kantelen pas naar chaos als de klok of de vermoeidheid van de tegenstander hun eigen speelruimte vergroot. De [psychologie van de speler onder druk](/nl/blog/psychologie-du-joueur-d-echecs/) verklaart waarom het tweede register zo verwoestend is in een echte partij, veel meer dan bij koude analyse.
+Het onderscheid is cruciaal. Een **gecompliceerde** stelling heeft veel kandidaatzetten maar kleine evaluatieverschillen ertussen; je kunt tijd verspillen zonder de partij te verliezen. Een **chaotische** stelling heeft weinig levensvatbare kandidaten maar enorme verschillen; een seconde onoplettendheid kost het punt. Grootmeesters doen beide bewust: ze compliceren om te vermoeien, en kantelen pas naar chaos als de klok of de vermoeidheid van de tegenstander hun eigen speelruimte vergroot. De [psychologie van de speler onder druk](/nl/blog/psychologie-schaker/) verklaart waarom het tweede register zo verwoestend is in een echte partij, veel meer dan bij koude analyse.
 
 ## Voor jouw spel: chaos benutten of vermijden
 

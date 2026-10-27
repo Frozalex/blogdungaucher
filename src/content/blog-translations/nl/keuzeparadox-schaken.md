@@ -119,7 +119,7 @@ Er moet worden toegevoegd dat een repertoirewisseling bijna altijd wordt getrigg
 
 Van opening veranderen is een concrete, zichtbare, aangename actie, die het gevoel geeft iets te doen. Aan eindspelen werken levert dat gevoel niet op. En vooral, van opening veranderen levert een **achteraf-verklaring** op voor de nederlaag die de speler niet ter discussie stelt: het lag niet aan mij, het lag aan de opening.
 
-We herkennen hier het mechanisme beschreven in ons artikel over [cognitieve dissonantie bij schaken](/nl/blog/cognitieve-dissonantie-schaken/). Met dit verschil dat hier de dissonantie geen excuus produceert: ze produceert een kostbare beslissing.
+We herkennen hier het mechanisme beschreven in ons artikel over [cognitieve dissonantie bij schaken](/nl/blog/dissonantie-schaken/). Met dit verschil dat hier de dissonantie geen excuus produceert: ze produceert een kostbare beslissing.
 
 ## Het protocol
 
@@ -161,7 +161,7 @@ Vandaar een weinig intuïtieve conclusie. De juiste vraag is niet welke opening 
 
 ---
 
-*Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Zie ook [gewoontevorming bij schaken](/nl/blog/gewoontevorming-schaken/) en [cognitieve dissonantie bij schaken](/nl/blog/cognitieve-dissonantie-schaken/).*
+*Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Zie ook [gewoontevorming bij schaken](/nl/blog/gewoontevorming-schaken/) en [cognitieve dissonantie bij schaken](/nl/blog/dissonantie-schaken/).*
 
 ## Bronnen en referenties
 

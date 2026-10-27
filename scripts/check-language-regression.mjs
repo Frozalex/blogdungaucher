@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { load } from 'cheerio';
+import { NL_LAUNCH_DATE } from '../src/data/language-launch.mjs';
 
 const walk = d => fs.readdirSync(d, {withFileTypes:true}).flatMap(e => e.isDirectory() ? walk(path.join(d,e.name)) : [path.join(d,e.name)]);
 const pages = walk('dist').filter(f => f.endsWith('.html')).map(f => {
@@ -17,7 +18,10 @@ const pages = walk('dist').filter(f => f.endsWith('.html')).map(f => {
   };
 });
 const summary = {pages:pages.length,languages:{},baselineCompared:false};
-for (const [lang,htmlLang] of [['fr','fr'],['en','en'],['pt-br','pt-BR']]) {
+const launchedNl = new Date() >= NL_LAUNCH_DATE;
+const languages = [['fr','fr'],['en','en'],['pt-br','pt-BR'], ...(launchedNl ? [['nl','nl']] : [])];
+if (!launchedNl) assert.equal(pages.filter(p => p.path.startsWith('/nl/blog/') && p.body).length, 0, 'NL articles exposed before launch');
+for (const [lang,htmlLang] of languages) {
   const home=pages.find(p=>p.path===`/${lang}/`);
   assert.ok(home, `Missing ${lang} homepage`);
   assert.equal(home.lang.toLowerCase(),htmlLang.toLowerCase());
@@ -25,6 +29,8 @@ for (const [lang,htmlLang] of [['fr','fr'],['en','en'],['pt-br','pt-BR']]) {
   const articles=pages.filter(p=>p.path.startsWith(`/${lang}/blog/`)&&p.body);
   assert.ok(articles.length>0, `Missing ${lang} articles`);
   for(const p of articles){assert.equal(p.lang.toLowerCase(),htmlLang.toLowerCase(),p.path);assert.equal(p.h1.length,1,p.path);assert.ok(p.title&&p.description&&p.canonical,p.path);}
+  const pagefind = fs.readdirSync('dist/pagefind');
+  assert.ok(pagefind.some(file => file.startsWith(`pagefind.${lang}_`) && file.endsWith('.pf_meta')), `Missing ${lang} search index`);
   summary.languages[lang]={articles:articles.length,homepage:true};
 }
 if(process.argv[2]){

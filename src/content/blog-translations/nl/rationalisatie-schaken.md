@@ -107,7 +107,7 @@ Deze verklaringen hebben twee opmerkelijke kenmerken.
 
 Een verklaring die binnen drie minuten wordt geproduceerd zonder de feiten te raadplegen, is niet het resultaat van een onderzoek. Het is een **uitgang**. De juistheid ervan is een gelukkig toeval, geen bewijs van relevantie.
 
-Dit is het mechanisme beschreven in ons artikel over [cognitieve dissonantie bij schaken](/nl/blog/cognitieve-dissonantie-schaken/): de verklaring heeft een functie, het ongemak doven, en die functie wordt vervuld ongeacht of de verklaring juist is.
+Dit is het mechanisme beschreven in ons artikel over [cognitieve dissonantie bij schaken](/nl/blog/dissonantie-schaken/): de verklaring heeft een functie, het ongemak doven, en die functie wordt vervuld ongeacht of de verklaring juist is.
 
 ## De asymmetrie die het mechanisme verraadt
 
@@ -181,7 +181,7 @@ De kosten ervan zijn niet de leugen, het is het voortijdig stoppen van het onder
 
 ---
 
-*Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Het verdiept een mechanisme dat geïnventariseerd is in [verdedigingsmechanismen bij schaken](/nl/blog/verdedigingsmechanismen-schaken/). Zie ook [cognitieve dissonantie bij schaken](/nl/blog/cognitieve-dissonantie-schaken/) en [bevestigingsvooroordeel bij schaken](/nl/blog/bevestigingsvooroordeel-schaken/).*
+*Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Het verdiept een mechanisme dat geïnventariseerd is in [verdedigingsmechanismen bij schaken](/nl/blog/verdedigingsmechanismen-schaken/). Zie ook [cognitieve dissonantie bij schaken](/nl/blog/dissonantie-schaken/) en [bevestigingsvooroordeel bij schaken](/nl/blog/bevestigingsvooroordeel-schaken/).*
 
 ## Bronnen en referenties
 

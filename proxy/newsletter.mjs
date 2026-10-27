@@ -1,6 +1,7 @@
 import http from "node:http";
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, renameSync } from "node:fs";
 import webpush from "web-push";
+import { normalizeSubscription, createPushAgent, deliverPush, sendPush } from "./push.mjs";
 
 const PORT = parseInt(process.env.PORT ?? "3030", 10);
 const API_KEY = process.env.BREVO_API_KEY ?? "";
@@ -129,6 +130,9 @@ const VAPID_PUBLIC_KEY  = process.env.VAPID_PUBLIC_KEY ?? "";
 const VAPID_PRIVATE_KEY = process.env.VAPID_PRIVATE_KEY ?? "";
 const PUSH_SEND_TOKEN   = process.env.PUSH_SEND_TOKEN ?? "";
 const PUSH_DATA_DIR     = process.env.PUSH_DATA_DIR ?? "/app/data";
+const pushAgent = createPushAgent();
+let sending = false;
+const RECEIPTS_FILE = `${PUSH_DATA_DIR}/push-receipts.json`;
 const SUBS_FILE         = `${PUSH_DATA_DIR}/push-subscriptions.json`;
 
 if (VAPID_PUBLIC_KEY && VAPID_PRIVATE_KEY) {
@@ -145,10 +149,24 @@ if (VAPID_PUBLIC_KEY && VAPID_PRIVATE_KEY) {
 
 function loadSubs() {
   try { return JSON.parse(readFileSync(SUBS_FILE, "utf-8")); }
-  catch { return []; }
+  catch (err) { if (err.code === "ENOENT") return []; throw err; }
 }
 function saveSubs(subs) {
-  writeFileSync(SUBS_FILE, JSON.stringify(subs, null, 2));
+  atomicWrite(SUBS_FILE, subs);
+}
+
+function atomicWrite(file, data) {
+  writeFileSync(`${file}.tmp`, JSON.stringify(data, null, 2));
+  // Same filesystem: readers see the previous or the complete new document.
+  renameSync(`${file}.tmp`, file);
+}
+function loadReceipts() {
+  try {
+    const receipts = JSON.parse(readFileSync(RECEIPTS_FILE, "utf8"));
+    if (!receipts || Array.isArray(receipts) || typeof receipts !== "object" || !Object.values(receipts).every(v => Array.isArray(v) && v.every(s => typeof s === "string"))) throw new Error("Invalid push receipts");
+    return Object.assign(Object.create(null), receipts);
+  }
+  catch (err) { if (err.code === "ENOENT") return Object.create(null); throw err; }
 }
 
 // ── HTTP helpers ────────────────────────────────────────────────────
@@ -370,11 +388,9 @@ http.createServer(async (req, res) => {
       return;
     }
     try {
-      const subscription = JSON.parse(await readBody(req));
-      if (typeof subscription?.endpoint !== "string" || !/^https:\/\//.test(subscription.endpoint)) {
-        json(res, 400, { error: "invalid subscription" });
-        return;
-      }
+      let subscription;
+      try { subscription = normalizeSubscription(JSON.parse(await readBody(req))); }
+      catch { json(res, 400, { error: "invalid subscription" }); return; }
       const subs = loadSubs();
       // Le fichier d'abonnés est relu et réécrit à chaque diffusion : on refuse de
       // le laisser croître sans limite.
@@ -383,10 +399,10 @@ http.createServer(async (req, res) => {
         json(res, 503, { error: "subscription list full" });
         return;
       }
-      if (!subs.some((s) => s.endpoint === subscription.endpoint)) {
-        subs.push(subscription);
-        saveSubs(subs);
-      }
+      const index = subs.findIndex(s => s.endpoint === subscription.endpoint);
+      if (index < 0) subs.push(subscription);
+      else subs[index] = subscription;
+      saveSubs(subs);
       json(res, 200, { ok: true, count: subs.length });
     } catch {
       json(res, 500, { error: "Server error" });
@@ -426,31 +442,36 @@ http.createServer(async (req, res) => {
       json(res, throttled ? 429 : 401, { error: throttled ? "too many requests" : "unauthorized" });
       return;
     }
+    if (sending) { json(res, 409, { error: "broadcast in progress" }); return; }
+    sending = true;
     try {
       const payload = JSON.parse(await readBody(req));
-      const subs = loadSubs();
-      if (subs.length === 0) { json(res, 200, { sent: 0, expired: 0 }); return; }
-
-      const results = await Promise.allSettled(
-        subs.map((sub) =>
-          webpush.sendNotification(sub, JSON.stringify(payload), { TTL: 86400 }),
-        ),
-      );
-
-      const expired = [];
-      results.forEach((r, i) => {
-        if (r.status === "rejected") {
-          const code = r.reason?.statusCode;
-          if (code === 410 || code === 404) expired.push(subs[i].endpoint);
-        }
-      });
-      if (expired.length > 0) {
-        saveSubs(subs.filter((s) => !expired.includes(s.endpoint)));
+      if (!payload || typeof payload.notificationId !== "string" || !/^[a-zA-Z0-9:_-]{1,200}$/.test(payload.notificationId)) {
+        json(res, 400, { error: "notificationId required" }); return;
       }
-
-      json(res, 200, { sent: subs.length - expired.length, expired: expired.length });
-    } catch {
+      const receipts = loadReceipts();
+      const delivered = new Set(receipts[payload.notificationId] ?? []);
+      const checkpoint = () => {
+        delete receipts[payload.notificationId];
+        receipts[payload.notificationId] = [...delivered];
+        // Keep the last 200 broadcasts; the dispatcher retains the long-term state.
+        while (Object.keys(receipts).length > 200) delete receipts[Object.keys(receipts)[0]];
+        atomicWrite(RECEIPTS_FILE, receipts);
+      };
+      const subs = loadSubs();
+      const { remove, ...counts } = await deliverPush(subs, payload,
+        (sub, body) => sendPush(webpush, sub, body, pushAgent),
+        { delivered, checkpoint });
+      if (remove.size) {
+        // Merge with the live file: subscriptions may change during network I/O.
+        saveSubs(loadSubs().filter(s => !remove.has(s.endpoint)));
+      }
+      json(res, counts.failed ? 503 : 200, counts);
+    } catch (err) {
+      console.error("[push] broadcast failed:", err.message);
       json(res, 500, { error: "Server error" });
+    } finally {
+      sending = false;
     }
     return;
   }
