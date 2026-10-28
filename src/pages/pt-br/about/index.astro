@@ -1,525 +1,186 @@
 ---
-import EditorialLocaleMasthead from "../../../components/EditorialLocaleMasthead.astro";
-import "../../../styles/editorial-resources.css";
-import "../../../styles/editorial-translations.css";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import { buildBreadcrumbJsonLd, buildPersonJsonLd } from "../../../utils/blog";
+import EditorialLocaleMasthead from "../../../components/EditorialLocaleMasthead.astro";
+import EditorialArticle from "../../../components/EditorialArticle.astro";
+import { buildBreadcrumbJsonLd, buildPersonJsonLd, filterPostsForLang, getAllPosts, getPostSlug } from "../../../utils/blog";
+import "../../../styles/editorial-resources.css";
 import { PT_BR_LAUNCH_DATE } from "../../../data/site";
-
 if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/about/", 302);
+const lang = "pt-br";
+const posts = filterPostsForLang(await getAllPosts(), lang).filter(post => !post.data.noindex);
+const starts = ["echecs-et-memoire", "echecs-et-concentration", "echecs-et-la-triche"].flatMap(slug => {
+  const post = posts.find(p => getPostSlug(p) === slug);
+  return post ? [post] : [];
+});
+const sections = [{"id": "trajetoria", "label": "Minha trajetória"}, {"id": "olhar", "label": "Proposta editorial"}, {"id": "leituras", "label": "Leituras e recursos"}, {"id": "metodo", "label": "Pesquisa e escrita"}, {"id": "correcoes", "label": "Diálogo e correções"}, {"id": "independencia", "label": "Independência e financiamento"}];
 ---
 <BaseLayout
-  title="Sobre | Le_Gaucher, Blog de um Canhoto"
-  description="Quem é Le_Gaucher? Um estudante de ciência da computação de 19 anos, enxadrista com 1.600 de Elo, e autor de um blog que cruza neurociência, psicologia e estratégia de xadrez."
+  title="Sobre: o projeto e a abordagem | Blog de um Canhoto"
+  description="Conheça Le_Gaucher e a proposta editorial do blog: explorar o xadrez pela ciência, pela psicologia e pela sociedade, a partir de Guadalupe."
   canonicalPath="/pt-br/about/"
-  lang="pt-br"
+  lang={lang}
   frPath="/fr/about/"
   enPath="/en/about/"
+  ptBrPath="/pt-br/about/"
   structuredData={[
-    buildBreadcrumbJsonLd([
-      { name: "Início", path: "/pt-br/" },
-      { name: "Sobre", path: "/pt-br/about/" },
-    ]),
-    buildPersonJsonLd("pt-br"),
+    buildBreadcrumbJsonLd([{name:"Início",path:"/pt-br/"},{name:"Sobre",path:"/pt-br/about/"}]),
+    buildPersonJsonLd(lang),
   ]}
 >
-  <article class="about-page translated-media"><div class="container"><EditorialLocaleMasthead lang="pt-br" active="about" /></div>
-    <img class="about-page__glyph" src="/images/logo.svg" alt="" aria-hidden="true" width="56" height="80" />
-
-    <section class="about-hero">
-      <div class="container">
-        <div class="about-hero__grid">
-          <div class="about-hero__avatar-block">
-            <img
-              src="/images/logo.svg"
-              alt="Logo Blog de um Canhoto"
-              class="about-hero__avatar"
-              width="160"
-              height="160"
-              loading="eager"
-            />
-            <a
-              class="about-hero__avatar-tag about-hero__avatar-tag--link"
-              href="https://www.chess.com/member/le_gaucher"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Perfil de Le_Gaucher no Chess.com (abre em nova aba)"
-            >
-              Le_Gaucher
-              <svg
-                class="about-hero__avatar-arrow"
-                aria-hidden="true"
-                width="10"
-                height="10"
-                viewBox="0 0 12 12"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M3 9L9 3M9 3H4M9 3V8" />
-              </svg>
-            </a>
-          </div>
-          <div class="about-hero__text">
-            <span class="eyebrow about-hero__eyebrow">Sobre</span>
-            <h1 class="about-hero__title">
-              Um cara, um <span class="about-hero__title-em">blog</span>,
-              <br />e uma obsessão metódica pelo&nbsp;xadrez.
-            </h1>
-            <p class="about-hero__lead">
-              Tenho <strong>19 anos</strong>. Sou canhoto, não metaforicamente, de verdade. É daí que vem o nome do site.
-            </p>
-          </div>
-        </div>
-
-        <dl class="about-stats">
-          <div class="about-stats__item">
-            <dt>idade</dt>
-            <dd>19</dd>
-          </div>
-          <div class="about-stats__item">
-            <dt>Elo Rápido</dt>
-            <dd>1&thinsp;600</dd>
-          </div>
-          <div class="about-stats__item">
-            <dt>jogando xadrez</dt>
-            <dd>3 anos</dd>
-          </div>
-          <div class="about-stats__item">
-            <dt>escrevendo</dt>
-            <dd class="about-stats__place">solo</dd>
-          </div>
-          <div class="about-stats__item about-stats__item--wide">
-            <dt>baseado em</dt>
-            <dd class="about-stats__place">Gosier, Guadalupe</dd>
-          </div>
+  <article class="resource-page"><div class="container">
+    <header class="resource-header">
+      <EditorialLocaleMasthead lang={lang} active="about" />
+      <div class="resource-heading"><span class="resource-kicker">Sobre · O projeto e seu autor</span><h1>{"Entender o xadrez.\nAmpliar o olhar."}</h1><p>O xadrez é um jogo, um objeto de pesquisa e uma prática cultural. O Blog de um Canhoto explora o que conecta essas dimensões: a forma como aprendemos, tomamos decisões e jogamos juntos.</p></div>
+    </header>
+    <div class="about-layout">
+      <div class="about-prose">
+        <section id="trajetoria" aria-labelledby="trajetoria-title">
+          <span class="resource-kicker">01 · Minha trajetória</span>
+          <h2 id="trajetoria-title">Um jogador, muitas perguntas, um blog.</h2>
+          <p>Assino como <strong>Le_Gaucher</strong>. Sou jogador de xadrez e estudante de ciência da computação, e moro em Le Gosier, em Guadalupe. Este blog é um projeto pessoal: sou responsável pela redação, pelas escolhas editoriais e pelo desenvolvimento do site.</p>
+<p>Aos 16 anos, fui convidado a dirigir um clube de xadrez. Eu tinha muito a aprender. Comecei a pesquisar, ler e tentar entender o que fazia um jogador evoluir. Como explicar uma ideia? Como passar de uma posição que reconhecemos para uma posição que compreendemos?</p>
+<p>Essas perguntas logo foram além das aberturas e combinações. Por que certas posições ficam na memória? O que acontece com nosso julgamento sob pressão? Como um jogo pode revelar algo sobre uma época, uma cultura ou uma maneira de pensar?</p>
+<p>Comecei escrevendo no Chess.com antes de construir um espaço próprio. O Blog de um Canhoto nasceu dessa vontade de aprofundar as perguntas, com liberdade para aproximar disciplinas e dedicar tempo às explicações.</p>
+<p class="about-personal"><strong>Por que “Canhoto”?</strong> Porque eu sou, simplesmente. “Gaucher” significa canhoto em francês. O nome é pessoal; o olhar se constrói nas leituras, no jogo e nas conversas.</p>
+        </section>
+        <section id="olhar" aria-labelledby="olhar-title">
+          <span class="resource-kicker">02 · Proposta editorial</span>
+          <h2 id="olhar-title">Três olhares sobre o mesmo tabuleiro.</h2>
+          <p>Uma partida envolve cálculo, memória e emoções. Ela também acontece em um contexto social: um clube, uma escola, uma plataforma ou uma competição. É essa diversidade que procuro tornar acessível por meio de três seções complementares.</p>
+<div class="about-lenses">
+<div><h3><a href="/pt-br/science/">Ciência <span aria-hidden="true">↗</span></a></h3><p>Entender os mecanismos do jogo: memória, aprendizagem, matemática, algoritmos e inteligência artificial. O objetivo é explicar como um resultado foi obtido e o que ele realmente permite concluir sobre o xadrez.</p></div>
+<div><h3><a href="/pt-br/esprit/">Mente <span aria-hidden="true">↗</span></a></h3><p>Examinar a psicologia de quem joga: atenção, confiança, vieses de julgamento, motivação e relação com a derrota. São conceitos para analisar a própria prática e refletir sobre a evolução no jogo, deixando claros os limites de suas aplicações.</p></div>
+<div><h3><a href="/pt-br/societe/">Sociedade <span aria-hidden="true">↗</span></a></h3><p>Situar o xadrez no mundo: história, educação, desigualdades, dinheiro, cultura e confiança nas competições. O jogo oferece um ponto de partida para compreender as instituições e as representações que o cercam.</p></div>
+</div>
+<p>O fio condutor é sempre o mesmo: partir de uma pergunta precisa, definir os conceitos necessários, desenvolver um raciocínio e confrontá-lo com exemplos. Minha ambição é oferecer artigos aprofundados aos quais você possa voltar para compreender um assunto e continuar suas próprias pesquisas.</p>
+        </section>
+        <section id="leituras" aria-labelledby="leituras-title">
+          <span class="resource-kicker">03 · Leituras e recursos</span>
+          <h2 id="leituras-title">Várias formas de se aprofundar.</h2>
+          <p>Você pode ler este site por curiosidade, para refletir sobre sua prática de xadrez ou para preparar um trabalho escolar. Os formatos atendem a esses usos diferentes, sem pressupor o domínio prévio de todos os conceitos.</p>
+<dl class="about-formats">
+<div><dt><a href="/pt-br/series/">As séries</a></dt><dd>Um percurso de leitura para compreender um assunto por etapas. A edição em português inclui a série sobre a psicologia do xadrez, que aborda memória, motivação, julgamento e influência social.</dd></div>
+<div><dt><a href="/pt-br/blog/">O arquivo de artigos</a></dt><dd>Explore os textos publicados ou use a <a href="/pt-br/recherche/">busca</a> para encontrar um conceito, uma pergunta ou um tema que atravesse as três seções do blog.</dd></div>
+<div><dt><a href="/fr/dissertations/" hreflang="fr">Os ensaios em francês</a></dt><dd>Questões de fundo sobre a vitória, o valor de um jogador e a igualdade no jogo, desenvolvidas por meio de argumentos, objeções e distinções conceituais. Esses textos estão disponíveis em francês.</dd></div>
+<div><dt><a href="/fr/grand-oral/" hreflang="fr">Os guias do Grand oral em francês</a></dt><dd>Temas e recursos para relacionar o xadrez às disciplinas do exame oral do baccalauréat, ao final do ensino médio francês. Quando preparei minha própria prova, procurei essas conexões. Os guias ajudam a construir uma reflexão pessoal e a se preparar para as perguntas da banca; estão disponíveis em francês.</dd></div>
+<div><dt><a href="/fr/glossaire/" hreflang="fr">O glossário</a> e <a href="/fr/infographie/" hreflang="fr">o Atlas</a> <span class="about-language-note">(em francês)</span></dt><dd>Pontos de referência para consultar um conceito, explorar os temas do site e escolher a próxima leitura. Para encontrar textos em português, o ponto de partida é o arquivo de artigos desta edição.</dd></div>
+</dl>
+        </section>
+        <section id="metodo" aria-labelledby="metodo-title">
+          <span class="resource-kicker">04 · Pesquisa e escrita</span>
+          <h2 id="metodo-title">Das fontes ao raciocínio.</h2>
+          <p>Escrevo a partir da minha experiência como jogador e estudante de ciência da computação. A credibilidade de um artigo deve poder ser discutida com base nas fontes, nas explicações e na consistência dos exemplos. Estes são os princípios que orientam meu trabalho.</p>
+<ol class="about-method">
+<li><strong>Definir o problema.</strong><span>Uma experiência no jogo, uma afirmação repetida ou um resultado de pesquisa podem abrir um assunto. Primeiro, procuro identificar a pergunta a responder e os conceitos necessários para compreendê-la.</span></li>
+<li><strong>Voltar às publicações.</strong><span>Busco os estudos e documentos que deram origem a uma afirmação. Ferramentas de pesquisa, como o Consensus AI, ajudam a encontrar pistas; elas não substituem o exame das fontes. Um resumo ou um registro de catálogo não oferece o mesmo acesso aos resultados que o texto integral.</span></li>
+<li><strong>Explicar o alcance dos resultados.</strong><span>Uma correlação, um experimento e um depoimento respondem a perguntas diferentes. Procuro esclarecer a população estudada, o contexto e as limitações relevantes para o argumento. A passagem de um resultado geral para uma orientação sobre xadrez também exige justificativa.</span></li>
+<li><strong>Confrontar as ideias com o jogo.</strong><span>Exemplos, posições e variantes servem para explicar um mecanismo ou examinar uma ideia. Um exemplo didático criado para o artigo deve ser identificado como tal. Uma recomendação pessoal deve ser distinguível de um resultado estabelecido.</span></li>
+<li><strong>Permitir a verificação do raciocínio.</strong><span>As referências devem permitir que você encontre os trabalhos discutidos. O objetivo é ajudar a acompanhar a explicação, examinar seus limites e consultar as fontes para formar seu próprio julgamento.</span></li>
+</ol>
+        </section>
+        <section id="correcoes" aria-labelledby="correcoes-title">
+          <span class="resource-kicker">05 · Diálogo e correções</span>
+          <h2 id="correcoes-title">Um texto sempre pode melhorar.</h2>
+          <p>Este site é construído ao longo do tempo. Uma fonte mais consistente, um contraexemplo ou um erro de cálculo podem levar à revisão de uma explicação. Procuro corrigir erros e aprofundar os artigos, preservando o que ajuda a compreender o assunto.</p>
+<p>Para apontar um problema, envie o link do artigo, o trecho em questão e, se tiver, uma fonte ou variante que permita verificar o ponto. Uma objeção fundamentada também é uma contribuição útil: ela ajuda a esclarecer o que o texto precisa demonstrar.</p>
+<p>Você também pode sugerir uma pergunta a explorar, compartilhar um recurso ou conversar sobre um projeto educativo pela <a href="/pt-br/contact/">página de contato</a>.</p>
+        </section>
+        <section id="independencia" aria-labelledby="independencia-title">
+          <span class="resource-kicker">06 · Independência e financiamento</span>
+          <h2 id="independencia-title">Um projeto pessoal, de acesso livre.</h2>
+          <p>Financio este site com meus próprios recursos. Os artigos são gratuitos e não exigem cadastro. Escolho os temas e continuo responsável pelos textos publicados.</p>
+<p>O site prevê a possibilidade de exibir publicidade. Alguns artigos contêm links de afiliados, identificados onde aparecem: uma compra feita por um desses links pode gerar uma comissão para mim, sem custo adicional para você. Nenhum artigo é encomendado, revisado ou remunerado por um anunciante.</p>
+<p class="about-legal">O <a href="/pt-br/aviso-legal/">aviso legal</a> detalha essas condições. A <a href="/pt-br/politica-de-privacidade/">política de privacidade</a> explica os dados e serviços utilizados pelo site.</p>
+        </section>
+        <div class="about-signature"><strong>Le_Gaucher</strong><span>Le Gosier, Guadalupe</span></div>
+      </div>
+      <aside class="author-note" aria-labelledby="author-title">
+        <img src="/images/logo.svg" alt="" width="66" height="92" />
+        <span class="resource-kicker">O autor</span>
+        <h2 id="author-title">Le_Gaucher<span>.</span></h2>
+        <p>Jogador de xadrez.<br />Estudante de ciência da computação.<br />Autor do Blog de um Canhoto.</p>
+        <dl>
+          <div><dt>De onde escrevo</dt><dd>Le Gosier, Guadalupe</dd></div>
+          <div><dt>O projeto</dt><dd>Um blog pessoal dedicado ao xadrez.</dd></div>
+          <div><dt>O fio condutor</dt><dd>Ciência, mente e sociedade.</dd></div>
         </dl>
-      </div>
-    </section>
-
-    <section class="about-section">
-      <div class="container">
-        <header class="about-section__head">
-          <span class="about-section__num">01</span>
-          <h2 class="about-section__title">Por que este blog existe</h2>
-        </header>
-        <div class="about-section__body">
-          <p>
-            Aos 16 anos, fui convidado a liderar um clube de xadrez. Problema: eu não tinha o nível para isso. Então aprendi rápido (muito rápido), absorvendo tudo o que pude sobre o jogo, as estratégias, a psicologia por trás dele.
-          </p>
-          <p>
-            Esse aprendizado por padrões, eu passei a encontrar em toda a minha vida desde então. Resolvo equações mentalmente. Leio situações rapidamente. O xadrez não me tornou mais inteligente, <em>ele me deu um método</em>.
-          </p>
-          <p>
-            Mais tarde, escrevi artigos no Chess.com. Pelo menos 1.000 visualizações por artigo, sem nunca aparecer nas recomendações oficiais. O melhor blogueiro de língua francesa não classificado da plataforma, de certa forma. Acabei deletando tudo para evitar plágio e construir algo que fosse verdadeiramente meu.
-          </p>
-          <p class="about-section__close">Este site é isso.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section about-section--quote">
-      <div class="container">
-        <blockquote class="about-quote">
-          <p>
-            Quem sou eu para falar de técnica a pessoas que jogam há trinta anos? Por outro lado, cruzar o xadrez com o que a pesquisa realmente diz: sobre memória, o cérebro, a psicologia do jogador, isso eu consigo fazer com rigor.
-          </p>
-        </blockquote>
-      </div>
-    </section>
-
-    <section class="about-section">
-      <div class="container">
-        <header class="about-section__head">
-          <span class="about-section__num">02</span>
-          <h2 class="about-section__title">O que você encontrará aqui</h2>
-        </header>
-        <div class="about-section__body">
-          <p>
-            Não sou um grande mestre. Não sou um pesquisador em neurociência. Sou um cara que lê os estudos, verifica as fontes e os torna acessíveis a todos.
-          </p>
-          <p>
-            Os artigos aqui são longos. Os resumos são detalhados. As fontes são citadas. Não é por acidente: é uma linha editorial.
-            <strong>Você vem aqui com uma pergunta, sai com uma resposta.</strong>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section">
-      <div class="container">
-        <header class="about-section__head">
-          <span class="about-section__num">03</span>
-          <h2 class="about-section__title">Como eu trabalho</h2>
-        </header>
-        <div class="about-section__body">
-          <p>
-            Cada artigo começa com uma pesquisa séria:
-          </p>
-          <ul class="about-method">
-            <li>
-              <span class="about-method__tag">pesquisa</span>
-              <span>Google Scholar, bases de dados científicas acessíveis via licença universitária.</span>
-            </li>
-            <li>
-              <span class="about-method__tag">filtragem</span>
-              <span>Consensus AI para identificar estudos robustos e descartar conclusões isoladas.</span>
-            </li>
-            <li>
-              <span class="about-method__tag">escrita</span>
-              <span>Reviso meu próprio trabalho. Corrijo. Cito as fontes no final de cada artigo.</span>
-            </li>
-            <li>
-              <span class="about-method__tag">equipe</span>
-              <span>Uma pessoa, do início ao fim. Sem freelance, sem ghostwriting.</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section about-section--neg">
-      <div class="container">
-        <header class="about-section__head">
-          <span class="about-section__num">04</span>
-          <h2 class="about-section__title">O que este blog <em>não é</em></h2>
-        </header>
-        <ul class="about-not">
-          <li>
-            <span class="about-not__mark">×</span>
-            Um site clássico de aulas de xadrez.
-          </li>
-          <li>
-            <span class="about-not__mark">×</span>
-            Um blog de notícias do chess.com / chess24.
-          </li>
-          <li>
-            <span class="about-not__mark">×</span>
-            Um lugar onde direi o que você quer ouvir — se um estudo é nuançado, eu digo isso.
-          </li>
-          <li>
-            <span class="about-not__mark">×</span>
-            Um agregador de ângulos já cobertos cem vezes. Procuro o que ninguém abordou seriamente.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="about-signoff">
-      <div class="container">
-        <div class="about-signoff__inner">
-          <p class="about-signoff__signature">
-            <span class="about-signoff__name">Le_Gaucher</span>
-            <span class="about-signoff__city">Gosier, Guadalupe</span>
-          </p>
-          <p class="about-signoff__contact">
-            Para perguntas, trocas ou para discordar:
-            <a href="mailto:contact@blogdungaucher.com" class="about-signoff__mail">
-              contact@blogdungaucher.com
-            </a>
-          </p>
-          <p class="about-signoff__contact about-signoff__contact--chess">
-            E se quiser jogar ou ver como eu jogo:
-            <a
-              href="https://www.chess.com/member/le_gaucher"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="about-signoff__mail"
-            >
-              chess.com/member/le_gaucher
-              <svg
-                class="about-signoff__ext"
-                aria-hidden="true"
-                width="11"
-                height="11"
-                viewBox="0 0 12 12"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M3 9L9 3M9 3H4M9 3V8" />
-              </svg>
-            </a>
-          </p>
-        </div>
-      </div>
-    </section>
-  </article>
+        <a class="resource-link" href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">Meu perfil no Chess.com ↗<span class="resource-sr-only"> (abre em nova aba)</span></a>
+        <nav aria-label="Nesta página">
+          <span class="resource-kicker">Nesta página</span>
+          {sections.map((section, index) => <a href={`#${section.id}`}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{section.label}</a>)}
+        </nav>
+        <a class="author-contact" href="/pt-br/contact/">Entre em contato <span aria-hidden="true">↗</span></a>
+      </aside>
+    </div>
+    {starts.length > 0 && <section class="resource-section" aria-labelledby="starts-title">
+      <div class="resource-section-head"><h2 id="starts-title">Para conhecer o blog</h2><span>Três artigos, três olhares</span></div>
+      <p class="about-starts-intro">A memória para entender a aprendizagem, a concentração para refletir sobre sua prática e a trapaça para examinar a confiança: três portas de entrada para conhecer o projeto.</p>
+      <div class="about-starts">{starts.map(post => <EditorialArticle post={post} lang={lang} variant="feature" showImageCredit={true} />)}</div>
+    </section>}
+    <div class="resource-end"><div><span class="resource-kicker">A conversa continua</span><p>Uma pergunta, uma correção ou uma ideia para explorar?</p></div><a class="resource-button" href="mailto:contact@blogdungaucher.com">Escreva para mim <span aria-hidden="true">↗</span></a></div>
+  </div></article>
 </BaseLayout>
 
 <style>
-  .about-page {
-    position: relative;
-    overflow: hidden;
-    padding: 0 0 5rem;
-    background:
-      radial-gradient(ellipse 70% 50% at 90% -5%, color-mix(in srgb, var(--green) 8%, transparent), transparent 55%),
-      radial-gradient(ellipse 60% 40% at -10% 60%, color-mix(in srgb, var(--green) 5%, transparent), transparent 55%),
-      var(--bg);
-  }
-
-  .about-page__glyph {
-    position: absolute;
-    top: 8rem;
-    right: -3rem;
-    width: clamp(20rem, 38vw, 36rem);
-    height: auto;
-    opacity: 0.07;
-    pointer-events: none;
-    user-select: none;
-    transform: rotate(-4deg);
-    z-index: 0;
-  }
-
-  :global([data-theme="dark"]) .about-page__glyph {
-    opacity: 0.1;
-    filter: invert(1);
-  }
-
-  .about-page > section { position: relative; z-index: 1; }
-
-  .about-hero { padding: calc(var(--navbar-h) + 2.5rem) 0 1.5rem; }
-
-  .about-hero__grid {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: clamp(1.5rem, 4vw, 3rem);
-    align-items: center;
-    margin-bottom: 2.5rem;
-  }
-
-  @media (max-width: 720px) {
-    .about-hero__grid { grid-template-columns: 1fr; gap: 1.25rem; text-align: left; }
-  }
-
-  .about-hero__avatar-block { display: flex; flex-direction: column; align-items: center; gap: 0.55rem; }
-
-  .about-hero__avatar {
-    width: clamp(112px, 14vw, 160px);
-    height: clamp(112px, 14vw, 160px);
-    object-fit: contain;
-    flex-shrink: 0;
-    transition: filter 260ms ease;
-  }
-  :global([data-theme="dark"]) .about-hero__avatar { filter: invert(1); }
-
-  .about-hero__avatar-tag {
-    font-family: var(--font-display); font-size: 0.72rem; font-weight: 600;
-    letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dim);
-    padding: 0.22rem 0.55rem; border: 1px solid var(--border-soft);
-    border-radius: var(--radius-pill); background: var(--surface);
-    display: inline-flex; align-items: center; gap: 0.32rem;
-  }
-
-  .about-hero__avatar-tag--link {
-    text-decoration: none; color: var(--text-main);
-    transition: color 160ms ease, border-color 160ms ease, transform 200ms var(--ease-spring), box-shadow 200ms ease;
-  }
-  .about-hero__avatar-tag--link:hover,
-  .about-hero__avatar-tag--link:focus-visible {
-    color: var(--green); border-color: var(--green-border);
-    transform: translateY(-1px); box-shadow: var(--shadow-xs);
-  }
-
-  .about-hero__avatar-arrow {
-    color: var(--text-dim); transition: transform 200ms var(--ease-spring), color 160ms ease;
-    flex-shrink: 0; display: block;
-  }
-  .about-hero__avatar-tag--link:hover .about-hero__avatar-arrow,
-  .about-hero__avatar-tag--link:focus-visible .about-hero__avatar-arrow {
-    color: var(--green); transform: translate(2px, -2px);
-  }
-
-  .about-hero__eyebrow { margin-bottom: 0.95rem; color: var(--green); }
-
-  .about-hero__title {
-    font-family: var(--font-display); font-weight: 700;
-    font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05;
-    letter-spacing: -0.035em; margin: 0 0 1rem; color: var(--text-main);
-  }
-  .about-hero__title-em {
-    font-family: var(--font-serif); font-style: italic; font-weight: 500; color: var(--green);
-  }
-
-  .about-hero__lead {
-    margin: 0; font-size: clamp(1.02rem, 1.8vw, 1.15rem);
-    color: var(--text-muted); line-height: 1.7; max-width: 36rem;
-  }
-  .about-hero__lead strong { color: var(--text-main); font-weight: 600; }
-
-  .about-stats {
-    margin: 0; padding: 1.35rem 0 0;
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-    gap: clamp(1rem, 2.5vw, 1.75rem) clamp(1.25rem, 3.5vw, 2.5rem);
-    align-items: flex-end;
-    border-top: 1px solid color-mix(in srgb, var(--green) 22%, var(--border-soft));
-    max-width: 54rem;
-  }
-  .about-stats__item--wide { grid-column: span 2; }
-  @media (max-width: 480px) {
-    .about-stats { grid-template-columns: 1fr 1fr; }
-    .about-stats__item--wide { grid-column: span 2; }
-  }
-  .about-stats__item { display: flex; flex-direction: column-reverse; gap: 0.15rem; margin: 0; }
-  .about-stats__item dt {
-    font-family: var(--font-display); font-size: 0.66rem; font-weight: 600;
-    letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim);
-  }
-  .about-stats__item dd {
-    margin: 0; font-family: var(--font-serif); font-style: italic; font-weight: 500;
-    font-size: clamp(1.85rem, 4vw, 2.5rem); line-height: 0.95;
-    color: var(--green); letter-spacing: -0.02em;
-  }
-  .about-stats__place { font-size: clamp(1.1rem, 2.2vw, 1.4rem) !important; color: var(--text-main) !important; line-height: 1.2; }
-
-  .about-section { padding: clamp(2.25rem, 5vw, 3.5rem) 0; }
-
-  .about-section__head {
-    display: flex; align-items: baseline; gap: 0.85rem; margin-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border-soft); padding-bottom: 0.65rem; max-width: 54rem;
-  }
-  .about-section__num {
-    font-family: var(--font-serif); font-style: italic; font-weight: 500;
-    font-size: clamp(1.45rem, 3vw, 1.8rem); color: var(--green);
-    letter-spacing: -0.02em; line-height: 1;
-  }
-  .about-section__title {
-    margin: 0; font-family: var(--font-display); font-weight: 700;
-    font-size: clamp(1.55rem, 3.5vw, 2.1rem); letter-spacing: -0.03em;
-    line-height: 1.15; color: var(--text-main);
-  }
-  .about-section__title em { font-family: var(--font-serif); font-style: italic; font-weight: 500; color: var(--green); }
-
-  .about-section__body { max-width: 38rem; display: grid; gap: 1rem; }
-  .about-section__body p { margin: 0; font-size: 1.02rem; line-height: 1.78; color: var(--text-main); }
-  .about-section__body p em { font-family: var(--font-serif); font-style: italic; color: var(--green); }
-  .about-section__close {
-    font-family: var(--font-serif); font-style: italic; font-size: 1.18rem !important;
-    color: var(--green) !important; line-height: 1.4 !important;
-    padding-left: 0.85rem; border-left: 3px solid var(--green); margin-top: 0.5rem !important;
-  }
-
-  .about-section--quote { padding: clamp(2rem, 4vw, 3rem) 0; }
-  .about-quote {
-    margin: 0; padding: 1.75rem 1.5rem 1.75rem 2.5rem;
-    border-left: 4px solid var(--green);
-    background: color-mix(in srgb, var(--green) 5%, var(--surface));
-    border-radius: 0 6px 6px 0; max-width: 44rem; position: relative;
-  }
-  .about-quote::before {
-    content: "\201C"; position: absolute; top: -0.4rem; left: 0.6rem;
-    font-family: var(--font-serif); font-style: italic; font-size: 4rem; line-height: 1;
-    color: color-mix(in srgb, var(--green) 45%, transparent); pointer-events: none;
-  }
-  .about-quote p {
-    margin: 0; font-family: var(--font-serif); font-style: italic; font-weight: 400;
-    font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.55; color: var(--text-main);
-  }
-
-  .about-method {
-    list-style: none; padding: 0; margin: 0.5rem 0 0;
-    display: grid; gap: 0.7rem; max-width: 40rem;
-  }
-  .about-method li {
-    display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; align-items: baseline;
-    padding: 0.85rem 1rem; border: 1px solid var(--border-soft); border-radius: 6px;
-    background: var(--surface);
-    transition: border-color 180ms ease, transform 180ms var(--ease-spring);
-  }
-  .about-method li:hover { border-color: color-mix(in srgb, var(--green) 35%, var(--border-soft)); transform: translateY(-1px); }
-  .about-method__tag {
-    font-family: var(--font-display); font-size: 0.66rem; font-weight: 600;
-    letter-spacing: 0.14em; text-transform: uppercase; color: var(--green);
-    padding: 0.18rem 0.45rem; background: color-mix(in srgb, var(--green) 10%, var(--surface));
-    border-radius: var(--radius-pill); border: 1px solid var(--green-border);
-    text-align: center; width: fit-content;
-  }
-  .about-method li > span:last-child { font-size: 0.95rem; line-height: 1.6; color: var(--text-main); }
-  @media (max-width: 600px) { .about-method li { grid-template-columns: 1fr; gap: 0.45rem; } }
-
-  .about-section--neg {
-    background: color-mix(in srgb, var(--bg-warm) 60%, var(--bg));
-    margin: 1.25rem 0; border-block: 1px solid var(--border-soft);
-  }
-  .about-not { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; max-width: 42rem; }
-  .about-not li {
-    display: flex; align-items: baseline; gap: 0.7rem;
-    font-size: 1rem; line-height: 1.6; color: var(--text-main); padding: 0.4rem 0;
-  }
-  .about-not__mark {
-    flex-shrink: 0; font-family: var(--font-serif); font-style: italic;
-    font-weight: 500; font-size: 1.3rem; color: var(--green); line-height: 1;
-  }
-
-  .about-signoff { padding: 2.5rem 0 0; }
-  .about-signoff__inner { padding-top: 1.5rem; border-top: 1px solid var(--border-soft); max-width: 38rem; }
-  .about-signoff__signature { margin: 0 0 0.85rem; display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; }
-  .about-signoff__name {
-    font-family: var(--font-serif); font-style: italic; font-weight: 600;
-    font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--text-main); letter-spacing: -0.02em; line-height: 1;
-  }
-  .about-signoff__name::after { content: "*"; color: var(--green); margin-left: 0.05em; }
-  .about-signoff__city {
-    font-family: var(--font-display); font-size: 0.78rem; font-weight: 600;
-    letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim);
-  }
-  .about-signoff__contact { margin: 0; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
-  .about-signoff__contact--chess { margin-top: 0.5rem; }
-  .about-signoff__mail {
-    color: var(--green); font-weight: 600; text-decoration: none;
-    border-bottom: 1px solid color-mix(in srgb, var(--green) 35%, transparent);
-    transition: border-color 160ms ease; display: inline-flex; align-items: baseline; gap: 0.25rem;
-  }
-  .about-signoff__mail:hover { border-bottom-color: var(--green); }
-  .about-signoff__ext { transition: transform 200ms var(--ease-spring); flex-shrink: 0; transform: translateY(1px); }
-  .about-signoff__mail:hover .about-signoff__ext { transform: translate(1px, 0); }
-
-  .about-page.js-anim .about-hero__grid,
-  .about-page.js-anim .about-stats,
-  .about-page.js-anim .about-section__head,
-  .about-page.js-anim .about-section__body,
-  .about-page.js-anim .about-quote,
-  .about-page.js-anim .about-not,
-  .about-page.js-anim .about-signoff__inner {
-    opacity: 0; transform: translateY(14px);
-    transition: opacity 720ms var(--ease-out), transform 720ms var(--ease-out);
-  }
-  .about-page.js-anim.is-loaded .about-hero__grid { transition-delay: 0ms; opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-stats { transition-delay: 120ms; opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-section__head { opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-section__body { opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-quote { opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-not { opacity: 1; transform: none; }
-  .about-page.js-anim.is-loaded .about-signoff__inner { opacity: 1; transform: none; }
-
-  @media (prefers-reduced-motion: reduce) {
-    .about-page.js-anim .about-hero__grid,
-    .about-page.js-anim .about-stats,
-    .about-page.js-anim .about-section__head,
-    .about-page.js-anim .about-section__body,
-    .about-page.js-anim .about-quote,
-    .about-page.js-anim .about-not,
-    .about-page.js-anim .about-signoff__inner {
-      opacity: 1; transform: none; transition: none;
-    }
+  .about-layout { display:grid; grid-template-columns:minmax(0,2.1fr) minmax(0,1fr); gap:5rem; align-items:start; border-top:2px solid var(--text-main); padding-top:2rem; margin-bottom:3.5rem; }
+  .about-prose { max-width:47rem; min-width:0; }
+  .about-prose section { padding-bottom:2.5rem; scroll-margin-top:6rem; }
+  .about-prose section+section { border-top:1px solid var(--border-strong); padding-top:2rem; }
+  .about-prose h2 { font:600 1.85rem/1.2 var(--font-serif); letter-spacing:-.025em; margin:.7rem 0 1.2rem; text-wrap:pretty; }
+  .about-prose p { font-size:1rem; line-height:1.85; color:var(--text-muted); margin:0 0 1rem; }
+  .about-prose strong { color:var(--text-main); font-weight:600; }
+  .about-prose a { color:var(--green); text-decoration:underline; text-underline-offset:.2em; }
+  .about-prose a:hover { text-decoration-thickness:2px; }
+  .about-prose .about-personal { background:var(--bg-warm); border-left:3px solid var(--green); padding:1rem 1.25rem; margin:1.5rem 0 0; font-size:.92rem; }
+  .about-lenses { margin:1.5rem 0; border-top:1px solid var(--border-strong); }
+  .about-lenses>div { padding:1.1rem 0; border-bottom:1px solid var(--border-strong); }
+  .about-lenses h3 { margin:0 0 .5rem; font:600 1.35rem/1.3 var(--font-serif); }
+  .about-lenses h3 a { display:flex; justify-content:space-between; align-items:center; text-decoration:none; }
+  .about-lenses h3 span { font-family:var(--font-body); font-size:.9rem; }
+  .about-lenses p { margin:0; font-size:.94rem; line-height:1.75; }
+  .about-formats { margin:1.5rem 0 0; }
+  .about-formats>div { padding:1.1rem 0; border-top:1px solid var(--border-strong); }
+  .about-language-note { font-weight:400; color:var(--text-dim); }
+  .about-formats dt { font-size:.96rem; font-weight:600; }
+  .about-formats dd { margin:.55rem 0 0; color:var(--text-muted); font-size:.94rem; line-height:1.75; }
+  .about-method { padding:0; list-style:none; counter-reset:method; margin:1.5rem 0 0; }
+  .about-method li { display:grid; grid-template-columns:1.4rem 1fr; gap:.4rem 1rem; padding:1.15rem 0; border-top:1px solid var(--border-strong); counter-increment:method; }
+  .about-method li::before { content:counter(method,decimal-leading-zero); font-size:.75rem; color:var(--green); grid-row:span 2; padding-top:.15rem; }
+  .about-method strong { font-size:.96rem; }
+  .about-method span { font-size:.94rem; line-height:1.75; color:var(--text-muted); }
+  .about-prose .about-legal { font-size:.87rem; }
+  .about-signature { display:flex; flex-direction:column; gap:.35rem; }
+  .about-signature strong { font:500 1.55rem var(--font-serif); }
+  .about-signature span { font-size:.78rem; color:var(--text-dim); }
+  .author-note { background:var(--bg-warm); padding:2rem; border-top:3px solid var(--green); }
+  .author-note>img { display:block; margin-bottom:1.5rem; width:56px; height:78px; }
+  :global([data-theme="dark"]) .author-note>img { filter:invert(1); }
+  .author-note h2 { font:600 1.8rem var(--font-serif); letter-spacing:-.035em; margin:.6rem 0 1rem; }
+  .author-note h2 span { color:var(--green); }
+  .author-note p { font-size:.93rem; line-height:1.8; color:var(--text-muted); margin:0 0 1.5rem; }
+  .author-note dl { margin:0 0 1.25rem; }
+  .author-note dl>div { padding:.75rem 0; border-top:1px solid var(--border-strong); }
+  .author-note dt { font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--text-dim); }
+  .author-note dd { margin:.3rem 0 0; font-size:.86rem; line-height:1.6; }
+  .author-note nav { display:flex; flex-direction:column; gap:.9rem; border-top:1px solid var(--border-strong); margin-top:1.5rem; padding-top:1.25rem; }
+  .author-note nav a { display:flex; gap:.75rem; font-size:.8rem; color:var(--text-muted); }
+  .author-note nav a>span { color:var(--green); font-size:.68rem; padding-top:.12rem; }
+  .author-note nav a:hover { color:var(--green); }
+  .author-contact { display:flex; justify-content:space-between; border-top:1px solid var(--border-strong); margin-top:1.5rem; padding-top:1rem; color:var(--green); font-size:.85rem; font-weight:600; }
+  .about-starts-intro { max-width:65ch; color:var(--text-muted); font-size:.95rem; line-height:1.75; margin:0 0 1.75rem; }
+  .about-starts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2rem; }
+  .about-starts>:global(article) { min-width:0; }
+  @media(min-width:900px) and (min-height:1000px) { .author-note { position:sticky; top:5rem; } }
+  @media(max-width:899px) { .about-layout { gap:2rem; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); } .author-note { padding:1.25rem; } }
+  @media(max-width:639px) {
+    .about-layout { grid-template-columns:1fr; gap:2rem; }
+    .author-note { grid-row:1; }
+    .author-note>img { float:right; width:40px; height:56px; margin:0 0 1rem 1rem; }
+    .author-note p { margin-bottom:1rem; }
+    .author-note dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 1rem; }
+    .author-note dl>div:last-child { grid-column:1 / -1; }
+    .author-note nav { gap:.8rem; }
+    .about-starts { grid-template-columns:1fr; gap:1.75rem; }
+    .about-prose h2 { font-size:1.65rem; }
   }
 </style>
-
-<script>
-  function activateAbout() {
-    const el = document.querySelector(".about-page");
-    if (!el) return;
-    el.classList.add("js-anim");
-    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("is-loaded")));
-  }
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", activateAbout, { once: true });
-  } else {
-    activateAbout();
-  }
-  document.addEventListener("astro:page-load", activateAbout);
-</script>
