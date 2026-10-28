@@ -4,43 +4,192 @@ import EditorialPageHeader from "../../../components/EditorialPageHeader.astro";
 import EditorialArticle from "../../../components/EditorialArticle.astro";
 import { buildBreadcrumbJsonLd, buildPersonJsonLd, getAllPosts, getPostSlug } from "../../../utils/blog";
 import "../../../styles/editorial-resources.css";
+
 const posts = (await getAllPosts()).filter(post => !post.data.noindex);
 const starts = ["echecs-et-memoire", "echecs-et-concentration", "echecs-et-la-triche"].flatMap(slug => {
   const post = posts.find(p => getPostSlug(p) === slug);
   return post ? [post] : [];
 });
+const sections = [
+  { id: "origine", label: "Le parcours" },
+  { id: "regard", label: "La ligne éditoriale" },
+  { id: "lectures", label: "Les ressources" },
+  { id: "methode", label: "La méthode" },
+  { id: "corrections", label: "Les échanges et corrections" },
+  { id: "independance", label: "L’indépendance" },
+];
 ---
-<BaseLayout title="À propos : le regard du Gaucher | Blog d'un Gaucher" description="Le Gaucher, joueur d’échecs et étudiant en informatique en Guadeloupe. L’histoire, les sources et la ligne éditoriale d’un média personnel sur les échecs." canonicalPath="/fr/about/" structuredData={[buildBreadcrumbJsonLd([{name:"Accueil",path:"/fr/"},{name:"À propos",path:"/fr/about/"}]),buildPersonJsonLd("fr")] }>
+<BaseLayout
+  title="À propos : le projet et la méthode | Blog d'un Gaucher"
+  description="Le parcours du Gaucher, la ligne éditoriale et la méthode du blog : explorer les échecs à travers la science, la psychologie et la société, depuis la Guadeloupe."
+  canonicalPath="/fr/about/"
+  structuredData={[
+    buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: "À propos", path: "/fr/about/" }]),
+    buildPersonJsonLd("fr"),
+  ]}
+>
   <article class="resource-page"><div class="container">
-    <EditorialPageHeader active="about" label="À propos · La signature du média" title={"Un média d’échecs.\nUn regard personnel."} intro="Derrière le Blog d’un Gaucher, il y a une personne : un joueur curieux qui cherche ce que les échecs racontent du jeu, de l’esprit et de la société." />
+    <EditorialPageHeader
+      active="about"
+      label="À propos · Le projet et son auteur"
+      title={"Comprendre les échecs.\nÉlargir le regard."}
+      intro="Les échecs sont un jeu, un objet de recherche et une pratique culturelle. Le Blog d’un Gaucher explore ce qui les relie : la façon dont nous apprenons, décidons et jouons ensemble."
+    />
+
     <div class="about-layout">
       <div class="about-prose">
-        <section id="origine"><span class="resource-kicker">D’où je pars</span><h2>Le jeu comme point de départ.</h2>
-          <p>À 16 ans, on m’a demandé de diriger un club d’échecs. J’avais beaucoup à apprendre. J’ai commencé à chercher, à lire et à essayer de comprendre ce qui faisait progresser un joueur.</p>
-          <p>Les questions ont vite dépassé les ouvertures et les combinaisons. Pourquoi certaines positions restent-elles en mémoire ? Que devient notre jugement sous pression ? Comment un jeu peut-il raconter une époque, une culture ou une manière de penser ?</p>
-          <p>J’ai d’abord écrit sur Chess.com, avant de construire un espace qui m’appartient. Ce média est né de cette curiosité.</p>
+        <section id="origine" aria-labelledby="origine-title">
+          <span class="resource-kicker">01 · Le parcours</span>
+          <h2 id="origine-title">Un joueur, des questions, un média.</h2>
+          <p>Je signe <strong>Le_Gaucher</strong>. Je suis joueur d’échecs et étudiant en informatique, installé au Gosier, en Guadeloupe. Ce blog est un projet personnel : j’en porte la rédaction, les choix éditoriaux et le développement.</p>
+          <p>À 16 ans, on m’a demandé de diriger un club d’échecs. J’avais beaucoup à apprendre. J’ai commencé à chercher, à lire et à essayer de comprendre ce qui faisait progresser un joueur. Comment expliquer une idée ? Comment passer d’une position que l’on reconnaît à une position que l’on comprend ?</p>
+          <p>Ces questions ont vite dépassé les ouvertures et les combinaisons. Pourquoi certaines positions restent-elles en mémoire ? Que devient notre jugement sous pression ? Comment un jeu peut-il raconter une époque, une culture ou une manière de penser ?</p>
+          <p>J’ai d’abord écrit sur Chess.com, avant de construire un espace qui m’appartient. Le Blog d’un Gaucher est né de cette envie de suivre les questions jusqu’au bout, avec la liberté de croiser les disciplines et de prendre le temps d’expliquer.</p>
+          <p class="about-personal"><strong>Pourquoi « Gaucher » ?</strong> Parce que je le suis, tout simplement. Le nom est personnel ; le regard se construit dans les lectures, le jeu et la discussion.</p>
         </section>
-        <blockquote>Et oui, je suis vraiment gaucher.<br />Le nom vient de là.</blockquote>
-        <section id="regard"><span class="resource-kicker">La ligne éditoriale</span><h2>Une question en appelle une autre.</h2>
-          <p>J’explore les échecs à travers trois regards : <a href="/fr/science/">la science du jeu</a>, <a href="/fr/esprit/">la psychologie du joueur</a> et <a href="/fr/societe/">leur place dans la société</a>. Je pars d’une question et je cherche une explication accessible, en laissant une place aux limites et aux incertitudes.</p>
-          <p>Les <a href="/fr/grand-oral/">guides Grand oral</a> prolongent cette démarche. Quand je préparais mon épreuve, je cherchais comment relier les échecs à ma spécialité. J’ai voulu construire les ressources qui m’avaient manqué.</p>
+
+        <section id="regard" aria-labelledby="regard-title">
+          <span class="resource-kicker">02 · La ligne éditoriale</span>
+          <h2 id="regard-title">Trois regards sur un même échiquier.</h2>
+          <p>Une partie mobilise du calcul, de la mémoire et des émotions. Elle se joue aussi dans un cadre social : un club, une école, une plateforme ou une compétition. C’est cette richesse que je cherche à rendre accessible, à travers trois rubriques complémentaires.</p>
+          <div class="about-lenses">
+            <div><h3><a href="/fr/science/">Science <span aria-hidden="true">↗</span></a></h3><p>Comprendre les mécanismes du jeu : mémoire, apprentissage, mathématiques, algorithmes et intelligence artificielle. L’enjeu est d’expliquer comment un résultat est obtenu et ce qu’il permet réellement de conclure sur les échecs.</p></div>
+            <div><h3><a href="/fr/esprit/">Esprit <span aria-hidden="true">↗</span></a></h3><p>Examiner la psychologie du joueur : attention, confiance, biais de jugement, motivation et rapport à la défaite. Des notions pour analyser sa pratique et réfléchir à sa progression, avec des applications dont les limites restent explicites.</p></div>
+            <div><h3><a href="/fr/societe/">Société <span aria-hidden="true">↗</span></a></h3><p>Replacer les échecs dans le monde : histoire, éducation, inégalités, argent, culture et confiance dans la compétition. Le jeu offre un point d’entrée pour comprendre les institutions et les représentations qui l’entourent.</p></div>
+          </div>
+          <p>Le fil conducteur reste le même : partir d’une question précise, définir les notions utiles, développer un raisonnement et le confronter à des exemples. Mon ambition est de proposer des dossiers auxquels tu peux revenir pour comprendre un sujet et poursuivre tes propres recherches.</p>
         </section>
-        <section id="methode"><span class="resource-kicker">Comment je travaille</span><h2>Chercher, confronter, expliquer.</h2>
-          <ol class="about-method"><li><strong>Partir d’une vraie question.</strong><span>Une expérience de joueur, une affirmation entendue partout, un résultat qui mérite d’être compris.</span></li><li><strong>Remonter aux sources.</strong><span>Je consulte les publications disponibles. Les outils de recherche, dont Consensus AI, m’aident à repérer des travaux ; ils ne remplacent pas leur lecture.</span></li><li><strong>Distinguer les niveaux de preuve.</strong><span>Un témoignage, une corrélation et une expérience ne répondent pas aux mêmes questions. Je cherche ce qu’une source permet de dire, et où elle s’arrête.</span></li><li><strong>Rendre la lecture utile.</strong><span>Je relis, je cite mes sources et je corrige. Si tu repères une erreur ou une référence plus solide, tu peux m’écrire.</span></li></ol>
+
+        <section id="lectures" aria-labelledby="lectures-title">
+          <span class="resource-kicker">03 · Les ressources</span>
+          <h2 id="lectures-title">Plusieurs façons d’approfondir.</h2>
+          <p>Tu peux lire ce site par curiosité, pour interroger ta pratique de joueur ou pour préparer un travail scolaire. Les formats répondent à ces usages différents, sans supposer une maîtrise préalable de toutes les notions.</p>
+          <dl class="about-formats">
+            <div><dt><a href="/fr/series/">Les séries</a></dt><dd>Un parcours en plusieurs articles pour aborder progressivement un sujet, de la psychologie du joueur à la construction d’un moteur d’échecs.</dd></div>
+            <div><dt><a href="/fr/dissertations/">Les dissertations</a></dt><dd>Des questions de fond sur la victoire, la valeur d’un joueur ou l’égalité dans le jeu, développées par l’argumentation, les objections et les distinctions.</dd></div>
+            <div><dt><a href="/fr/grand-oral/">Le Grand oral</a></dt><dd>Des pistes de sujets et des guides pour relier les échecs aux spécialités du lycée. Quand je préparais mon épreuve, je cherchais ces liens : j’ai voulu construire les ressources qui m’avaient manqué. Elles servent à élaborer une réflexion personnelle et à préparer les questions du jury.</dd></div>
+            <div><dt><a href="/fr/glossaire/">Le glossaire</a> et <a href="/fr/infographie/">l’Atlas</a></dt><dd>Des repères pour retrouver une notion, explorer les thèmes du site et choisir la prochaine lecture.</dd></div>
+          </dl>
         </section>
-        <section id="independance"><span class="resource-kicker">Indépendance & financement</span><h2>Un projet que je porte moi-même.</h2>
-          <p>Je rédige et finance ce site avec mes propres moyens. Les articles sont accessibles gratuitement, sans inscription obligatoire.</p>
-          <p>Le projet prévoit de la publicité et certains articles comportent des liens affiliés, signalés comme tels. Une commission éventuelle ne change pas le prix que tu paies. Aucun annonceur ne détermine les conclusions de mes articles.</p>
-          <p class="about-legal">Les détails figurent dans les <a href="/fr/mentions-legales/">mentions légales</a> et la <a href="/fr/politique-confidentialite/">politique de confidentialité</a>.</p>
+
+        <section id="methode" aria-labelledby="methode-title">
+          <span class="resource-kicker">04 · La méthode</span>
+          <h2 id="methode-title">Des sources au raisonnement.</h2>
+          <p>J’écris depuis ma place de joueur et d’étudiant en informatique. La crédibilité d’un article doit pouvoir se discuter à partir de ses sources, de ses explications et de la solidité de ses exemples. Voici les principes qui guident ce travail.</p>
+          <ol class="about-method">
+            <li><strong>Poser le problème.</strong><span>Une expérience de joueur, une affirmation répétée ou un résultat de recherche peuvent ouvrir un sujet. Je cherche d’abord la question à résoudre et les notions nécessaires pour la comprendre.</span></li>
+            <li><strong>Revenir aux publications.</strong><span>Je recherche les travaux et documents à l’origine d’une affirmation. Les outils de recherche, dont Consensus AI, m’aident à repérer des pistes ; ils ne remplacent pas l’examen des sources. Un résumé ou une notice ne donne pas le même accès aux résultats qu’un texte intégral.</span></li>
+            <li><strong>Expliquer la portée des résultats.</strong><span>Une corrélation, une expérience et un témoignage n’apportent pas les mêmes réponses. Je m’attache à préciser la population étudiée, le contexte et les limites qui comptent pour l’argument. Le passage d’un résultat général à un conseil échiquéen demande lui aussi une justification.</span></li>
+            <li><strong>Mettre les idées à l’épreuve du jeu.</strong><span>Les exemples, positions et variantes servent à expliquer un mécanisme ou à tester une idée. Un exemple pédagogique construit pour l’article doit être identifiable comme tel. Une recommandation personnelle doit pouvoir être distinguée d’un résultat établi.</span></li>
+            <li><strong>Rendre le raisonnement vérifiable.</strong><span>Les références doivent permettre de retrouver les travaux discutés. L’objectif est que tu puisses suivre l’explication, examiner ses limites et revenir aux sources pour te faire ton propre jugement.</span></li>
+          </ol>
         </section>
-        <div class="about-signature"><strong>Le_Gaucher</strong><span>Gosier, Guadeloupe</span></div>
+
+        <section id="corrections" aria-labelledby="corrections-title">
+          <span class="resource-kicker">05 · Les échanges et corrections</span>
+          <h2 id="corrections-title">Un texte peut toujours être amélioré.</h2>
+          <p>Ce site se construit dans la durée. Une référence plus solide, un contre-exemple ou une erreur de calcul peuvent conduire à reprendre une explication. Je cherche à corriger les erreurs et à enrichir les dossiers en conservant ce qui aide à comprendre.</p>
+          <p>Pour signaler un problème, envoie-moi le lien de l’article, le passage concerné et, si tu en disposes, une source ou une variante permettant de vérifier le point. Une objection argumentée est aussi une contribution utile : elle aide à préciser ce que le texte doit démontrer.</p>
+          <p>Tu peux également proposer une question à explorer, partager une ressource ou m’écrire au sujet d’un projet pédagogique via la <a href="/fr/contact/">page de contact</a>.</p>
+        </section>
+
+        <section id="independance" aria-labelledby="independance-title">
+          <span class="resource-kicker">06 · Indépendance et financement</span>
+          <h2 id="independance-title">Un projet personnel, en accès libre.</h2>
+          <p>Je finance ce site avec mes propres moyens. Les articles sont accessibles gratuitement, sans inscription obligatoire. Je choisis les sujets et reste responsable des textes publiés.</p>
+          <p>Le site prévoit la possibilité d’afficher de la publicité. Certains articles comportent des liens affiliés, signalés à l’endroit où ils apparaissent : un achat effectué par leur intermédiaire peut me rapporter une commission, sans surcoût pour toi. Aucun article n’est commandé, relu ni rémunéré par un annonceur.</p>
+          <p class="about-legal">Les <a href="/fr/mentions-legales/">mentions légales</a> détaillent ces dispositions. La <a href="/fr/politique-confidentialite/">politique de confidentialité</a> explique les données et services utilisés par le site.</p>
+        </section>
+        <div class="about-signature"><strong>Le_Gaucher</strong><span>Le Gosier, Guadeloupe</span></div>
       </div>
-      <aside class="author-note" aria-label="Le Gaucher en quelques mots"><img src="/images/logo.svg" alt="" width="66" height="92" /><span class="resource-kicker">Celui qui écrit</span><h2>Le_Gaucher<span>.</span></h2><p>Joueur d’échecs.<br />Étudiant en informatique.<br />Curieux, avant tout.</p><dl><div><dt>Depuis</dt><dd>Gosier, Guadeloupe</dd></div><div><dt>La rédaction</dt><dd>Une personne : moi.</dd></div></dl><a class="resource-link" href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">Mon profil Chess.com ↗<span class="resource-sr-only"> (nouvel onglet)</span></a><nav aria-label="Dans cette page"><a href="#origine">L’origine du projet</a><a href="#regard">Le regard du média</a><a href="#methode">Ma méthode</a><a href="#independance">Indépendance</a></nav></aside>
+
+      <aside class="author-note" aria-labelledby="author-title">
+        <img src="/images/logo.svg" alt="" width="66" height="92" />
+        <span class="resource-kicker">L’auteur</span>
+        <h2 id="author-title">Le_Gaucher<span>.</span></h2>
+        <p>Joueur d’échecs.<br />Étudiant en informatique.<br />Auteur du Blog d’un Gaucher.</p>
+        <dl>
+          <div><dt>Depuis</dt><dd>Le Gosier, Guadeloupe</dd></div>
+          <div><dt>Le projet</dt><dd>Un média personnel consacré aux échecs.</dd></div>
+          <div><dt>Le fil conducteur</dt><dd>Science, esprit et société.</dd></div>
+        </dl>
+        <a class="resource-link" href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">Mon profil Chess.com ↗<span class="resource-sr-only"> (nouvel onglet)</span></a>
+        <nav aria-label="Dans cette page">
+          <span class="resource-kicker">Dans cette page</span>
+          {sections.map((section, index) => <a href={`#${section.id}`}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{section.label}</a>)}
+        </nav>
+        <a class="author-contact" href="/fr/contact/">Prendre contact <span aria-hidden="true">↗</span></a>
+      </aside>
     </div>
-    {starts.length > 0 && <section class="resource-section"><div class="resource-section-head"><h2>Pour faire connaissance</h2><span>Trois articles, trois regards</span></div><div class="about-starts">{starts.map(post => <EditorialArticle post={post} variant="feature" />)}</div></section>}
-    <div class="resource-end"><div><span class="resource-kicker">La conversation continue</span><p>Pour échanger, proposer un sujet ou me contredire.</p></div><a class="resource-button" href="mailto:contact@blogdungaucher.com">Écris-moi <span aria-hidden="true">↗</span></a></div>
+
+    {starts.length > 0 && <section class="resource-section" aria-labelledby="starts-title">
+      <div class="resource-section-head"><h2 id="starts-title">Pour faire connaissance</h2><span>Trois articles, trois regards</span></div>
+      <p class="about-starts-intro">La mémoire pour comprendre l’apprentissage, la concentration pour réfléchir à sa pratique, la triche pour interroger la confiance : trois portes d’entrée dans le projet.</p>
+      <div class="about-starts">{starts.map(post => <EditorialArticle post={post} variant="feature" showImageCredit={true} />)}</div>
+    </section>}
+    <div class="resource-end"><div><span class="resource-kicker">La conversation continue</span><p>Une question, une correction, une idée à creuser ?</p></div><a class="resource-button" href="mailto:contact@blogdungaucher.com">Écris-moi <span aria-hidden="true">↗</span></a></div>
   </div></article>
 </BaseLayout>
+
 <style>
-.about-layout{display:grid;grid-template-columns:minmax(0,2.1fr) minmax(0,1fr);gap:5rem;align-items:start;border-top:2px solid var(--text-main);padding-top:2rem;margin-bottom:3.5rem}.about-prose{max-width:47rem}.about-prose section{padding-bottom:2.25rem;scroll-margin-top:6rem}.about-prose section+section{border-top:1px solid var(--border-strong);padding-top:1.75rem}.about-prose h2{font-family:var(--font-serif);font-size:1.8rem;font-weight:600;letter-spacing:-.025em;line-height:1.2;margin:.7rem 0 1rem}.about-prose p{font-size:1rem;line-height:1.85;color:var(--text-muted);margin:0 0 1rem}.about-prose p a{color:var(--green);text-decoration:underline;text-underline-offset:.2em}.about-prose blockquote{margin:0 0 2.5rem;padding:1.6rem 0 1.6rem 1.5rem;border-left:3px solid var(--green);font-family:var(--font-serif);font-size:1.7rem;font-weight:500;line-height:1.35}.about-method{padding:0;list-style:none;counter-reset:method;margin:0}.about-method li{display:grid;grid-template-columns:1.4rem 1fr;gap:.35rem 1rem;padding:1rem 0;border-bottom:1px solid var(--border-strong);counter-increment:method}.about-method li::before{content:counter(method,decimal-leading-zero);font-size:.75rem;color:var(--green);grid-row:span 2;padding-top:.15rem}.about-method strong{font-size:.95rem;font-weight:600}.about-method span{font-size:.9rem;line-height:1.7;color:var(--text-muted)}.about-prose .about-legal{font-size:.84rem}.about-signature{display:flex;flex-direction:column;gap:.35rem}.about-signature strong{font-family:var(--font-serif);font-size:1.55rem;font-weight:500}.about-signature span{font-size:.78rem;color:var(--text-dim)}.author-note{background:var(--bg-warm);padding:2rem;border-top:3px solid var(--green);position:sticky;top:5rem}.author-note>img{display:block;margin-bottom:1.5rem;width:56px;height:78px}:global([data-theme="dark"]) .author-note>img{filter:invert(1)}.author-note h2{font-family:var(--font-serif);font-weight:600;font-size:1.8rem;letter-spacing:-.035em;margin:.6rem 0 1rem}.author-note h2 span{color:var(--green)}.author-note p{font-size:.93rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.5rem}.author-note dl{margin:0 0 1.25rem}.author-note dl>div{padding:.75rem 0;border-top:1px solid var(--border-strong)}.author-note dt{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim)}.author-note dd{margin:.3rem 0 0;font-size:.86rem}.author-note nav{display:flex;flex-direction:column;gap:.75rem;border-top:1px solid var(--border-strong);margin-top:1.5rem;padding-top:1.25rem;font-size:.8rem;color:var(--text-muted)}.author-note nav a:hover{color:var(--green)}.about-starts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}.about-starts>:global(article){min-width:0}@media(max-width:899px){.about-layout{gap:2rem;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr)}.author-note{padding:1.25rem}}@media(max-width:639px){.about-layout{grid-template-columns:1fr;gap:2rem}.author-note{position:static;grid-row:1;display:block}.author-note>img{float:right;width:40px;height:56px}.author-note p{margin-bottom:1rem}.author-note nav{display:none}.about-starts{grid-template-columns:1fr;gap:1.75rem}.about-prose h2{font-size:1.6rem}}
+  .about-layout { display:grid; grid-template-columns:minmax(0,2.1fr) minmax(0,1fr); gap:5rem; align-items:start; border-top:2px solid var(--text-main); padding-top:2rem; margin-bottom:3.5rem; }
+  .about-prose { max-width:47rem; min-width:0; }
+  .about-prose section { padding-bottom:2.5rem; scroll-margin-top:6rem; }
+  .about-prose section+section { border-top:1px solid var(--border-strong); padding-top:2rem; }
+  .about-prose h2 { font:600 1.85rem/1.2 var(--font-serif); letter-spacing:-.025em; margin:.7rem 0 1.2rem; text-wrap:pretty; }
+  .about-prose p { font-size:1rem; line-height:1.85; color:var(--text-muted); margin:0 0 1rem; }
+  .about-prose strong { color:var(--text-main); font-weight:600; }
+  .about-prose a { color:var(--green); text-decoration:underline; text-underline-offset:.2em; }
+  .about-prose a:hover { text-decoration-thickness:2px; }
+  .about-prose .about-personal { background:var(--bg-warm); border-left:3px solid var(--green); padding:1rem 1.25rem; margin:1.5rem 0 0; font-size:.92rem; }
+  .about-lenses { margin:1.5rem 0; border-top:1px solid var(--border-strong); }
+  .about-lenses>div { padding:1.1rem 0; border-bottom:1px solid var(--border-strong); }
+  .about-lenses h3 { margin:0 0 .5rem; font:600 1.35rem/1.3 var(--font-serif); }
+  .about-lenses h3 a { display:flex; justify-content:space-between; align-items:center; text-decoration:none; }
+  .about-lenses h3 span { font-family:var(--font-body); font-size:.9rem; }
+  .about-lenses p { margin:0; font-size:.94rem; line-height:1.75; }
+  .about-formats { margin:1.5rem 0 0; }
+  .about-formats>div { padding:1.1rem 0; border-top:1px solid var(--border-strong); }
+  .about-formats dt { font-size:.96rem; font-weight:600; }
+  .about-formats dd { margin:.55rem 0 0; color:var(--text-muted); font-size:.94rem; line-height:1.75; }
+  .about-method { padding:0; list-style:none; counter-reset:method; margin:1.5rem 0 0; }
+  .about-method li { display:grid; grid-template-columns:1.4rem 1fr; gap:.4rem 1rem; padding:1.15rem 0; border-top:1px solid var(--border-strong); counter-increment:method; }
+  .about-method li::before { content:counter(method,decimal-leading-zero); font-size:.75rem; color:var(--green); grid-row:span 2; padding-top:.15rem; }
+  .about-method strong { font-size:.96rem; }
+  .about-method span { font-size:.94rem; line-height:1.75; color:var(--text-muted); }
+  .about-prose .about-legal { font-size:.87rem; }
+  .about-signature { display:flex; flex-direction:column; gap:.35rem; }
+  .about-signature strong { font:500 1.55rem var(--font-serif); }
+  .about-signature span { font-size:.78rem; color:var(--text-dim); }
+  .author-note { background:var(--bg-warm); padding:2rem; border-top:3px solid var(--green); }
+  .author-note>img { display:block; margin-bottom:1.5rem; width:56px; height:78px; }
+  :global([data-theme="dark"]) .author-note>img { filter:invert(1); }
+  .author-note h2 { font:600 1.8rem var(--font-serif); letter-spacing:-.035em; margin:.6rem 0 1rem; }
+  .author-note h2 span { color:var(--green); }
+  .author-note p { font-size:.93rem; line-height:1.8; color:var(--text-muted); margin:0 0 1.5rem; }
+  .author-note dl { margin:0 0 1.25rem; }
+  .author-note dl>div { padding:.75rem 0; border-top:1px solid var(--border-strong); }
+  .author-note dt { font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--text-dim); }
+  .author-note dd { margin:.3rem 0 0; font-size:.86rem; line-height:1.6; }
+  .author-note nav { display:flex; flex-direction:column; gap:.9rem; border-top:1px solid var(--border-strong); margin-top:1.5rem; padding-top:1.25rem; }
+  .author-note nav a { display:flex; gap:.75rem; font-size:.8rem; color:var(--text-muted); }
+  .author-note nav a>span { color:var(--green); font-size:.68rem; padding-top:.12rem; }
+  .author-note nav a:hover { color:var(--green); }
+  .author-contact { display:flex; justify-content:space-between; border-top:1px solid var(--border-strong); margin-top:1.5rem; padding-top:1rem; color:var(--green); font-size:.85rem; font-weight:600; }
+  .about-starts-intro { max-width:65ch; color:var(--text-muted); font-size:.95rem; line-height:1.75; margin:0 0 1.75rem; }
+  .about-starts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2rem; }
+  .about-starts>:global(article) { min-width:0; }
+  @media(min-width:900px) and (min-height:1000px) { .author-note { position:sticky; top:5rem; } }
+  @media(max-width:899px) { .about-layout { gap:2rem; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); } .author-note { padding:1.25rem; } }
+  @media(max-width:639px) {
+    .about-layout { grid-template-columns:1fr; gap:2rem; }
+    .author-note { grid-row:1; }
+    .author-note>img { float:right; width:40px; height:56px; margin:0 0 1rem 1rem; }
+    .author-note p { margin-bottom:1rem; }
+    .author-note dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 1rem; }
+    .author-note dl>div:last-child { grid-column:1 / -1; }
+    .author-note nav { gap:.8rem; }
+    .about-starts { grid-template-columns:1fr; gap:1.75rem; }
+    .about-prose h2 { font-size:1.65rem; }
+  }
 </style>
