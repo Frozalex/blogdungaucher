@@ -5,15 +5,21 @@ import sharp from 'sharp';
 import { load } from 'cheerio';
 import { readPosts, isEligible } from './pinterest/content.mjs';
 import { selectFeedItems } from './pinterest/calendar.mjs';
-import { articleUrl } from './pinterest/feed.mjs';
+import { releasedVariants, validateVariants } from './pinterest/campaign.mjs';
+import { articleUrl, imageName, pinGuid } from './pinterest/feed.mjs';
 
 const preview = process.argv.includes('--preview');
-const directory = preview ? 'work/pinterest-preview' : 'dist/pinterest';
-const now = preview ? new Date('2026-11-08T15:00:00Z') : new Date();
+const directory = process.argv.find(arg=>arg.startsWith('--dir='))?.slice(6) || (preview ? 'work/pinterest-preview' : 'dist/pinterest');
+const status = JSON.parse(fs.readFileSync(path.join(directory,'status.json')));
+const now = new Date(status.generatedAt);
 const config = JSON.parse(fs.readFileSync('scripts/pinterest/config.json'));
 const archive = JSON.parse(fs.readFileSync('scripts/pinterest/archive.json'));
+const variants = JSON.parse(fs.readFileSync('scripts/pinterest/variants.json'));
 const posts = readPosts('src/content/blog');
-const expected = selectFeedItems(posts,archive,config,now);
+validateVariants(variants,archive,posts,config,process.cwd());
+assert.equal(status.campaignPlanned,730);
+assert.equal(status.variantsPlanned,658);
+const expected = selectFeedItems(posts,archive,config,now,variants);
 const seen = new Set();
 for (const category of Object.keys(config.categories)) {
   const xml = fs.readFileSync(path.join(directory,`${category}.xml`),'utf8');
@@ -27,7 +33,7 @@ for (const category of Object.keys(config.categories)) {
     const element = $(item);
     const guid = element.find('guid').text();
     assert.ok(!seen.has(guid),'Duplicate GUID'); seen.add(guid);
-    const post = expected.find(post=>articleUrl(post,config,false)===guid);
+    const post = expected.find(post=>pinGuid(post,config)===guid);
     assert.ok(post,`Unexpected item: ${guid}`);
     assert.equal(post.category,category);
     assert.ok(isEligible(post,config,now));
@@ -39,9 +45,9 @@ for (const category of Object.keys(config.categories)) {
     assert.equal(element.find('enclosure, img').length,0);
     const url = new URL(media.attr('url'));
     assert.equal(url.origin,config.origin);
-    assert.equal(url.pathname,`/pinterest/images/${post.slug}.jpg`);
+    assert.equal(url.pathname,`/pinterest/images/${imageName(post)}.jpg`);
     assert.equal(media.attr('type'),'image/jpeg');
-    const info = await sharp(path.join(directory,'images',`${post.slug}.jpg`)).metadata();
+    const info = await sharp(path.join(directory,'images',`${imageName(post)}.jpg`)).metadata();
     assert.deepEqual([info.width,info.height,info.format],[1000,1500,'jpeg']);
     if (!preview) {
       const html = fs.readFileSync(path.join('dist/fr/blog',post.slug,'index.html'),'utf8');
@@ -53,9 +59,9 @@ for (const category of Object.keys(config.categories)) {
   }
 }
 const images = fs.readdirSync(path.join(directory,'images'));
-assert.equal(images.length,posts.filter(post=>isEligible(post,config,now)).length);
+assert.equal(images.length,posts.filter(post=>isEligible(post,config,now)).length + releasedVariants(posts,variants,config,now,false).length);
 for (const image of images) {
   const info = await sharp(path.join(directory,'images',image)).metadata();
   assert.deepEqual([info.width,info.height,info.format],[1000,1500,'jpeg'],image);
 }
-console.log(`[pinterest-check] 3 flux valides, ${seen.size} éléments uniques et ${images.length} visuels 1000×1500 (${preview ? 'aperçu au 8 novembre' : 'build courant'}).`);
+console.log(`[pinterest-check] 3 flux valides, ${seen.size} éléments uniques et ${images.length} visuels 1000×1500 (${preview ? `aperçu au ${now.toISOString()}` : 'build courant'}).`);

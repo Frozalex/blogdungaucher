@@ -28,6 +28,44 @@ heure de publication précise. Vérifier les premières épingles dans chaque ta
 
 Documentation : https://help.pinterest.com/en/business/article/auto-publish-pins-from-your-rss-feed
 
+## Programme de 730 épingles
+
+Le programme comprend **72 cartes d’article existantes et 658 variantes**, soit
+exactement **730 épingles** sur 72 articles français déjà publiés. Les nouveaux
+articles continuent à entrer automatiquement dans les flux en supplément :
+730 est la taille de cette campagne, pas un plafond définitif pour le compte.
+
+Les variantes ont des titres distincts, un passage de description extrait de
+l’article et une composition verticale parmi six modèles. Chaque passage est
+référencé dans `scripts/pinterest/variants.json` par son fichier et son titre de
+section ou sa question de FAQ. Les extraits ne créent pas de résultats scientifiques
+ou de citations supplémentaires. Un changement du passage source bloque la
+validation et exige de revoir les épingles concernées avant publication.
+
+Les 72 dates initiales sont conservées. Les 658 variantes prennent la suite le
+**13 avril 2027**, à raison de trois par semaine au total, jusqu’au
+**24 juin 2031 à 10 h en Guadeloupe**. Un même article revient après au moins
+28 jours ; la campagne actuelle espace les tours de plusieurs mois. Le calendrier
+est figé, pas recalculé à chaque déploiement.
+
+Chaque variante possède un identifiant RSS stable et une URL de visuel distincte.
+Les GUID et images des 72 cartes originales restent inchangés. Les liens vont
+vers le vrai article du domaine revendiqué, avec son ancre de section si disponible.
+Il ne s’agit pas de 730 entrées déjà enregistrées dans le planificateur Pinterest :
+le site expose chaque entrée à sa date et Pinterest importe le flux. Le statut
+public distingue `campaignPlanned: 730` des créneaux échus ; il ne confirme pas
+l’importation effective par Pinterest.
+
+`npm run pinterest:campaign` prépare **tous les 730 JPEG**, vérifie les dimensions
+et l’unicité des fichiers, puis exporte le calendrier CSV, un manifeste JSON avec
+les sources et une galerie HTML dans `work/pinterest-preview-campaign/`. Ce dossier
+est privé au travail local et ne modifie jamais les flux de production.
+
+En production, seules les images des variantes déjà libérées sont générées ; elles
+restent disponibles après leur sortie de la fenêtre RSS, tant que l’article reste
+public. Un article retiré, en brouillon ou marqué `noindex` disparaît aussi des
+variantes. Les couvertures et le texte des articles ne sont pas modifiés.
+
 ## Calendrier de départ
 
 - Initialisation : **27 octobre 2026 à 10 h, heure de Guadeloupe** (14 h UTC),
@@ -57,8 +95,9 @@ Aucun email ni notification n’est envoyé par le générateur Pinterest.
 
 Les flux ne contiennent que les entrées des **14 derniers jours**. Cela limite
 une première connexion tardive à six anciens articles au maximum, plutôt qu’à
-tout le catalogue. Une même URL d’article conserve son GUID et ne reçoit jamais
-un nouvel identifiant simplement parce qu’un build ou un titre change.
+tout le catalogue. Une même carte conserve son GUID et ne reçoit jamais un nouvel identifiant
+simplement parce qu’un build ou un titre change. Les variantes éditoriales ont
+chacune leur propre GUID, attribué une seule fois dans le programme.
 
 Cette fenêtre implique un compromis explicite : une absence de consultation de
 plus de 14 jours peut laisser passer des articles. Une connexion tardive ne
@@ -82,7 +121,7 @@ Les cartes sont des JPEG **1 000 × 1 500**, construits automatiquement avec Sha
 Chaque article conserve sa couverture, ses métadonnées, son URL et son texte.
 La carte Pinterest est un dérivé séparé : titre français, accent de rubrique,
 illustration entière sans recadrage, filigrane existant conservé et signature du blog.
-Les titres de carte et d’épingle reprennent le titre de l’article, limité à 100
+Les titres des cartes originales reprennent le titre de l’article, limité à 100
 caractères à une frontière de mot ; les descriptions utilisent le descriptif SEO
 ou l’extrait existant. Aucun argument ou résultat scientifique n’est inventé.
 
@@ -113,6 +152,8 @@ npm test
 npm run check
 npm run build
 npm run check:pinterest-preview
+npm run check:pinterest-variants
+npm run pinterest:campaign
 ```
 
 L’aperçu daté du 8 novembre est isolé dans `work/pinterest-preview/`, jamais dans

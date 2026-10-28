@@ -3,7 +3,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readPosts, isEligible } from './pinterest/content.mjs';
 import { selectFeedItems, validateArchive } from './pinterest/calendar.mjs';
-import { renderFeed, articleUrl } from './pinterest/feed.mjs';
+import { validateVariants, releasedVariants } from './pinterest/campaign.mjs';
+import { renderFeed, articleUrl, imageName } from './pinterest/feed.mjs';
 import { renderVisual } from './pinterest/visual.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -19,19 +20,21 @@ if (output !== liveOutput && !output.startsWith(path.join(root,'work/pinterest-p
 const now = args.at ? new Date(args.at) : new Date();
 const config = JSON.parse(await fs.readFile(path.join(root,'scripts/pinterest/config.json'),'utf8'));
 const archive = JSON.parse(await fs.readFile(path.join(root,'scripts/pinterest/archive.json'),'utf8'));
+const variants = JSON.parse(await fs.readFile(path.join(root,'scripts/pinterest/variants.json'),'utf8'));
 const posts = readPosts(path.join(root,'src/content/blog'));
 validateArchive(archive,posts,config);
-const items = selectFeedItems(posts,archive,config,now);
+validateVariants(variants,archive,posts,config,root);
+const items = selectFeedItems(posts,archive,config,now,variants);
 const temporary = `${output}.tmp`;
 await fs.rm(temporary,{recursive:true,force:true});
 await fs.mkdir(path.join(temporary,'images'),{recursive:true});
 try {
   // Keep previously released image URLs available after they leave the RSS window.
   // Generate only published, eligible articles; no scheduled title is exposed early.
-  const images = posts.filter(post => isEligible(post,config,now));
+  const images = posts.filter(post => isEligible(post,config,now)).concat(releasedVariants(posts,variants,config,now,false));
   for (const post of images) {
     const jpg = await renderVisual(post,config.categories[post.category],path.join(root,'public'));
-    await fs.writeFile(path.join(temporary,'images',`${post.slug}.jpg`),jpg);
+    await fs.writeFile(path.join(temporary,'images',`${imageName(post)}.jpg`),jpg);
   }
   for (const category of Object.keys(config.categories)) {
     const selected = items.filter(post => post.category === category);
@@ -41,8 +44,11 @@ try {
   const status = {
     generatedAt:now.toISOString(), initialReleaseAt:config.initialReleaseAt, startsAt:config.startsAt, feedWindowDays:config.feedWindowDays,
     note:'Exposition dans le flux, pas confirmation de publication Pinterest.',
-    items:items.map(post=>({slug:post.slug,category:post.category,kind:post.kind,initial:post.initial,releaseAt:post.releaseAt,url:articleUrl(post,config)})),
+    items:items.map(post=>({slug:post.slug,pinId:post.pinId,category:post.category,kind:post.kind,initial:post.initial,releaseAt:post.releaseAt,url:articleUrl(post,config)})),
     archivePlanned:archive.length,
+    variantsPlanned:variants.length, campaignPlanned:archive.length+variants.length,
+    campaignLastReleaseAt:variants.at(-1)?.releaseAt,
+    variantSlotsElapsed:variants.filter(entry=>new Date(entry.releaseAt)<=now).length,
     archiveSlotsElapsed:archive.filter(entry=>new Date(entry.releaseAt)<=now).length,
     unplannedOldArticles:posts.filter(post=>isEligible(post,config,now) && new Date(post.publishedAt)<new Date(config.archiveCutoff) && !archive.some(entry=>entry.slug===post.slug)).map(post=>post.slug),
   };

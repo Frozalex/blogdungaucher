@@ -1,3 +1,4 @@
+import { releasedVariants } from './campaign.mjs';
 import { isEligible } from './content.mjs';
 
 const DAY = 86_400_000;
@@ -73,7 +74,7 @@ export function validateArchive(archive, posts, config) {
 }
 
 /** Exposure to RSS is not a receipt of publication on Pinterest. */
-export function selectFeedItems(posts, archive, config, now = new Date()) {
+export function selectFeedItems(posts, archive, config, now = new Date(), variants = []) {
   validateArchive(archive, posts, config);
   if (!Number.isFinite(now.getTime())) throw new Error('Invalid build date');
   const releases = new Map(archive.map(entry => [entry.slug, entry]));
@@ -86,5 +87,5 @@ export function selectFeedItems(posts, archive, config, now = new Date()) {
     if (!releaseAt) return [];
     const release = new Date(releaseAt).getTime();
     return (entry?.initial === true || release >= start) && release <= now.getTime() && release > lower ? [{...post, releaseAt, initial:entry?.initial === true, kind: isArchive ? 'archive' : 'new'}] : [];
-  }).sort((a,b) => a.releaseAt.localeCompare(b.releaseAt) || a.slug.localeCompare(b.slug));
+  }).concat(releasedVariants(posts,variants,config,now)).sort((a,b) => a.releaseAt.localeCompare(b.releaseAt) || a.slug.localeCompare(b.slug));
 }
