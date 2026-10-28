@@ -37,7 +37,9 @@ jobs:
       - run: npm run check
       - name: Vérifier les flux et visuels Pinterest après lancement
         if: matrix.clock == 'current'
-        run: npm run check:pinterest-preview
+        run: |
+          npm run check:pinterest-preview
+          npm run check:pinterest-variants
       - name: Compiler et vérifier pages, liens et langues
         env:
           TEST_CLOCK: ${{ matrix.clock }}

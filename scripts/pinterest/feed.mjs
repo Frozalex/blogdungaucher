@@ -8,13 +8,17 @@ export function pinTitle(post) {
   return text.slice(0, 99).replace(/\s+\S*$/, '').trim() + '…';
 }
 
+export const imageName = post => post.pinId || post.slug;
+export const pinGuid = (post, config) => post.pinId ? `urn:blogdungaucher:pinterest:${post.pinId}` : articleUrl(post,config,false);
+
 export function articleUrl(post, config, tracking = true) {
   const url = new URL(`/fr/blog/${post.slug}/`,config.origin);
   if (tracking) {
     url.searchParams.set('utm_source','pinterest');
     url.searchParams.set('utm_medium','organic_social');
     url.searchParams.set('utm_campaign',`rss_${post.category}`);
-    url.searchParams.set('utm_content',post.slug);
+    url.searchParams.set('utm_content',imageName(post));
+    if (post.pinSource?.anchor) url.hash = post.pinSource.anchor;
   }
   return url.href;
 }
@@ -25,11 +29,11 @@ export function renderFeed(category, items, config, now) {
     const title = pinTitle(post);
     const description = plain(post.seoDescription || post.excerpt);
     const credit = post.heroImage.sourceUrl ? ` Crédit : ${post.heroImage.credit} (${post.heroImage.license}). Source : ${post.heroImage.sourceUrl}` : '';
-    const imageUrl = new URL(`/pinterest/images/${post.slug}.jpg`,config.origin).href;
+    const imageUrl = new URL(`/pinterest/images/${imageName(post)}.jpg`,config.origin).href;
     return `    <item>
       <title>${escapeXml(title)}</title>
       <link>${escapeXml(articleUrl(post,config))}</link>
-      <guid isPermaLink="true">${escapeXml(articleUrl(post,config,false))}</guid>
+      <guid isPermaLink="${post.pinId ? 'false' : 'true'}">${escapeXml(pinGuid(post,config))}</guid>
       <pubDate>${new Date(post.releaseAt).toUTCString()}</pubDate>
       <description>${escapeXml(description + credit)}</description>
       <media:content url="${escapeXml(imageUrl)}" type="image/jpeg" medium="image" width="1000" height="1500" />

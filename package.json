@@ -26,7 +26,9 @@
     "test": "node --test scripts/*.test.mjs",
     "pinterest:preview": "node scripts/generate-pinterest.mjs --at=2026-11-08T15:00:00Z --out=work/pinterest-preview",
     "check:pinterest": "node scripts/check-pinterest.mjs",
-    "check:pinterest-preview": "npm run pinterest:preview && node scripts/check-pinterest.mjs --preview"
+    "check:pinterest-preview": "npm run pinterest:preview && node scripts/check-pinterest.mjs --preview",
+    "pinterest:campaign": "node scripts/prepare-pinterest-campaign.mjs",
+    "check:pinterest-variants": "node scripts/generate-pinterest.mjs --at=2027-04-20T15:00:00Z --out=work/pinterest-preview-variants && node scripts/check-pinterest.mjs --preview --dir=work/pinterest-preview-variants"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
