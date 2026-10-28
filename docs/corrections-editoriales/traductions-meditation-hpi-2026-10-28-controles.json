@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-28",
+  "sources": "Même corpus vérifié que les dossiers FR ; aucun nouveau résultat ni nouvel accès intégral revendiqué. Sala/Gobet reste résumé seulement.",
+  "articles": [
+    {
+      "path": "src/content/blog-translations/en/echecs-et-meditation.md",
+      "before": 607,
+      "after": 2207,
+      "variation_pct": 263.6,
+      "lossAlert": false,
+      "french": 2306,
+      "sourceUrlParity": true,
+      "fenParity": true,
+      "headings": 10,
+      "remoteBaselineUnchanged": true,
+      "imagePaths": "inchangés"
+    },
+    {
+      "path": "src/content/blog-translations/en/echecs-et-hpi.md",
+      "before": 1548,
+      "after": 2900,
+      "variation_pct": 87.3,
+      "lossAlert": false,
+      "french": 3178,
+      "sourceUrlParity": true,
+      "fenParity": true,
+      "headings": 13,
+      "remoteBaselineUnchanged": true,
+      "imagePaths": "inchangés"
+    },
+    {
+      "path": "src/content/blog-translations/pt-br/xadrez-e-meditacao.md",
+      "before": 639,
+      "after": 2297,
+      "variation_pct": 259.5,
+      "lossAlert": false,
+      "french": 2306,
+      "sourceUrlParity": true,
+      "fenParity": true,
+      "headings": 10,
+      "remoteBaselineUnchanged": true,
+      "imagePaths": "inchangés"
+    },
+    {
+      "path": "src/content/blog-translations/pt-br/xadrez-e-superdotacao.md",
+      "before": 1631,
+      "after": 3001,
+      "variation_pct": 84.0,
+      "lossAlert": false,
+      "french": 3178,
+      "sourceUrlParity": true,
+      "fenParity": true,
+      "headings": 13,
+      "remoteBaselineUnchanged": true,
+      "imagePaths": "inchangés"
+    },
+    {
+      "path": "src/content/blog-translations/nl/meditatie-en-schaken.md",
+      "before": 1420,
+      "after": 2180,
+      "variation_pct": 53.5,
+      "lossAlert": false,
+      "french": 2306,
+      "sourceUrlParity": true,
+      "fenParity": true,
+      "headings": 10,
+      "remoteBaselineUnchanged": true,
+      "imagePaths": "inchangés"
+    },
+    {
+      "path": "src/content/blog-translations/nl/schaken-en-hoogbegaafdheid.md",
+      "before": 1538,
+      "after": 2963,
+      "variation_pct": 92.7,
+      "lossAlert": false,
+      "french": 3178,
+      "sourceUrlParity": true,
+      "fenParity": true,
+      "headings": 13,
+      "remoteBaselineUnchanged": true,
+      "imagePaths": "4 schémas nouvellement localisés en NL"
+    }
+  ],
+  "controls": {
+    "check": "0 erreurs, 0 avertissements, 86 indications existantes",
+    "productionBuild": "réussi : 416 pages et 20370 liens contrôlés, aucun lien interne mort",
+    "languageRegression": "réussi pour FR/EN/PT-BR ; NL masqué avant le 1er novembre à 06:00 UTC",
+    "calendar": "réussi, Wittgenstein conservé au 7 janvier 2027",
+    "chess": "positions identiques et variantes normalisées contrôlées par chess.js",
+    "diagrams": "4 SVG NL créés par localisation du texte EN uniquement ; contrôle visuel de la planche 1280×720 effectué",
+    "previewFuture": "Compilation au 2 novembre 2026 réussie : 420 pages ; les deux dossiers NL sont complets ; Wittgenstein reste absent.",
+    "render": "EN/PT-BR/NL : 10 sections méditation, 13 HPI, respectivement 2 et 1 tableaux ; FEN présents ; sources et images présentes.",
+    "visual": "Six pages contrôlées à 390 px : aucun débordement horizontal global, tableaux de 360 px ; HPI NL relu sur bureau ; schémas NL relus sur planche."
+  }
+}
