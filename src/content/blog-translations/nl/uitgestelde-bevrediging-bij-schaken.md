@@ -41,6 +41,7 @@ faq:
       beter is, of omdat zijn beloning onmiddellijk is. Een combinatie geeft voldoening nog voordat ze
       geverifieerd is, wat het onderzoek ervan vertekent: dat is de onbalans die je moet corrigeren,
       niet de smaak voor mooi spel.
+heroImageAlt: Een gesloten zaaddoos naast een groeiende plant achter een scherm.
 ---
 
 Rustige stelling. Twee opties.

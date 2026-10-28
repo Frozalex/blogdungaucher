@@ -7,11 +7,11 @@ import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
-import remarkStringify from "remark-stringify";
 import { unified } from "unified";
 
 import { rehypeAffiliateLinks } from "./rehype-affiliate-links";
 import { rehypeMathSingle } from "./rehype-math-single";
+import { rehypeTaskListLabels } from "./rehype-task-list-labels";
 import { stripInlineMath } from "./inline-math";
 
 export type ArticleHeading = { depth: number; slug: string; text: string };
@@ -66,19 +66,12 @@ export function stripFaqH2Section(markdown: string): string {
     }
   }
 
-  const nextChildren = [...tree.children.slice(0, cutStart), ...tree.children.slice(cutEnd)];
-  const newRoot: MdastRoot = {
-    type: "root",
-    children: nextChildren as MdastRoot["children"],
-  };
-
-  /* remark-gfm + remark-math : nécessaire pour sérialiser tableaux, maths, etc. */
-  const out = unified()
-    .use(remarkStringify)
-    .use(remarkGfm)
-    .use(remarkMath)
-    .stringify(newRoot);
-  return typeof out === "string" ? out : String(out);
+  // Retirer uniquement la section, sans réécrire le Markdown conservé.
+  // Une sérialisation avec remark-math pouvait traiter deux montants en dollars
+  // comme une formule, puis échapper leurs marqueurs de gras dans les traductions.
+  const start = tree.children[cutStart].position?.start.offset;
+  const end = tree.children[cutEnd]?.position?.start.offset ?? markdown.length;
+  return start == null ? markdown : markdown.slice(0, start) + markdown.slice(end);
 }
 
 function extractHeadingsFromMdast(tree: MdastRoot): ArticleHeading[] {
@@ -113,6 +106,7 @@ export async function renderMarkdownToArticleHtml(markdown: string): Promise<{
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeMathSingle)
     .use(rehypeAffiliateLinks)
+    .use(rehypeTaskListLabels)
     .run(tree);
 
   // allowDangerousHtml : laisse passer le HTML brut auteur (ex. <div data-pytrace>,

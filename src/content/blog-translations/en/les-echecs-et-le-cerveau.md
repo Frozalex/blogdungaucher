@@ -1,142 +1,72 @@
 ---
-heroImageAlt: "Pixel art thumbnail: a glowing brain on a purple-blue starry background, title \"Chess and the brain\""
+heroImageAlt: A human profile made of blue and dark paper layers beside a pawn.
 title: "Chess and the Brain: What Science Really Reveals"
-excerpt: >-
-  A grandmaster isn't a born genius: they have a trained brain. Structural MRI, functional connectivity, chronnectome,
-  executive functions: here is what neuroscience research actually measures about chess players' brains.
-seoTitle: "Chess and the Brain: Benefits According to Science"
-seoDescription: >-
-  fMRI, neuroplasticity, chronnectome, executive functions: what research actually measures about the effects of chess
-  on the brain, with the numbers.
+excerpt: "Brain imaging and executive-function studies reveal differences between experts and beginners. What these findings tell us, and why they do not establish that chess caused those differences."
+seoTitle: "Chess and the Brain: What Studies of Experts Can Tell Us"
+seoDescription: "Brain imaging, executive functions and chess expertise: what studies measure, why correlation does not establish causation, and the limits of broader benefits."
 enSlug: "chess-and-the-brain"
 faq:
-  - question: "Do chess physically modify the brain?"
-    answer: >-
-      Yes: several structural MRI studies show differences in gray and white matter density between experts
-      and novices in fronto-parieto-temporal regions (Hänggi 2014; Trevisan 2022, 29 vs 29). These changes
-      correlate with age of practice start (ρ = −0.54, p < 0.01), suggesting a cumulative long-term effect
-      rather than an innate predisposition.
-  - question: "Do chess improve executive functions?"
-    answer: >-
-      Data suggest yes, with moderate effects. An RCT on 26 athletes (Dania 2021, 10 weeks) showed
-      improvement in working memory and selective attention. A study on 65 schoolchildren (Ramos 2017, 30
-      practitioners vs 35 controls) showed significant differences across all measured executive functions
-      (MANOVA). The Sala & Gobet (2017) meta-analysis tempers this: effects are small to moderate and depend
-      on design quality.
-  - question: "How long to see effects on the brain?"
-    answer: >-
-      Intervention studies use 10-12 weeks of regular practice to measure behavioral effects. Structural
-      changes (MRI) require years of intensive practice. Trevisan 2022 shows that fractal dimension of the
-      left frontal operculum correlates with start age (ρ = −0.54), suggesting that starting young amplifies
-      structural effects.
-  - question: "Do chess protect against Alzheimer's?"
-    answer: >-
-      No proven causality. Verghese et al. (NEJM 2003, n=469, 5-year follow-up) find an association between
-      board games and −74% dementia risk. It's an adjusted correlation in a cohort, not a controlled trial.
-      The Williams et al. (2025) systematic review confirms structural and functional associations but
-      emphasizes the limits of observational designs.
-  - question: "Do benefits transfer to other skills?"
-    answer: >-
-      Little. Sala & Gobet (2017, meta-analysis, 259 citations, Q1 Current Directions in Psychological
-      Science) show that effects on non-chess academic or cognitive skills are small to moderate, and
-      decrease when experimental controls are more rigorous. Transfer is due more to metacognitive habits
-      (planning, analysis) than direct skill transfer.
+  - question: "Does chess physically change the brain?"
+    answer: "Learning can be accompanied by brain changes, but comparing experts and beginners is not enough to identify their cause. Observed differences must be distinguished from demonstrated effects of practice."
+  - question: "How long does it take to see an effect?"
+    answer: "The sources presented do not establish a universal timescale. Comparing groups does not measure changes in the same brain during training."
+  - question: "Does chess protect against Alzheimer’s disease?"
+    answer: "No preventive effect specific to chess is established here. You can play for enjoyment and social contact without treating it as a medical guarantee."
+  - question: "Do the benefits transfer to other skills?"
+    answer: "Far transfer to school performance or general cognitive abilities is not firmly established. Findings depend in particular on the control groups used."
 ---
 
-It is not an exceptional brain that lets you play chess brilliantly. Relentless chess practice builds an exceptional brain. The image of the grandmaster born with a divine gift is exactly backwards.
+A grandmaster recognises a position you still need to work through. It is tempting to imagine that a brain scan would immediately show what makes them strong. Research on players’ brains exists, but it cannot explain the origins of their expertise quite so simply.
 
-Our brain is not a machine fixed at birth: it is modeling clay that rewires, repairs, and optimizes itself based on the challenges we throw at it. After this, you will not look at your post-game fatigue the same way.
+## Observing a difference and understanding its cause
 
-## The illusion of innate intelligence: it is not what you think
+A study may compare experts with beginners and find a difference in brain structure or activity. It is then measuring an association with expertise. The groups may also differ in their histories, selection, starting ages, environments or other activities.
 
-For a long time, popular belief (and even part of the scientific community) held that chess champions possessed globally above-average intelligence, a sort of natural "chess IQ." The idea was simple: if you shine at chess, you must be a little genius at mathematics, logic, and spatial reasoning.
+Establishing an effect of training would require, among other things, following changes over time and using an appropriate comparison. A correlation between a brain measurement and years of practice is not enough, by itself, to distinguish all the possible explanations.
 
-Yet when researchers began giving international masters general cognitive test batteries, the results were at least puzzling. Away from the board, on tasks like memorizing random words or solving everyday problems, most of these champions scored perfectly normal. They did not have absolute super-memory. If you asked them to remember a shopping list or strings of meaningless digits, they did no better than you or me.
+This does not make imaging useless. It clarifies the question it answers: “Do these groups differ on this measure?” is a different question from “Did chess produce this difference?”
 
-The real scientific breakthrough came when the impact of neuroplasticity became clear. Your brain runs on a very strict economic principle: "Use it or lose it." Every time you learn to spot a pin, a fork, or a mating net, you force neurons to create new synapses, new communication routes. With repetition, those little neural dirt paths turn into real information highways. Chess intelligence is not a gift from above; it is the result of a huge, ongoing construction site in the brain. It is not that these players are smarter by nature; it is that their brain has allocated colossal resources to excel in this specific environment.
+## The xiangqi case: check which game was studied
 
-## The grandmasters' secret: "chunking" theory
+Li and colleagues (2015) published a multimodal MRI dataset involving 29 professional xiangqi players and 29 beginners. Xiangqi is the game often called Chinese chess; these participants should not be presented as a sample of experts in Western chess.
 
-If grandmasters do not have extraordinary general memory, how can they play blindfold against ten opponents or remember a game from twenty years ago? The answer comes from major work by [Fernand Gobet](https://en.wikipedia.org/wiki/Fernand_Gobet), researcher at the University of Liverpool and a world specialist in the psychology of expertise.
+The work makes structural, diffusion and resting-state images available, alongside participant characteristics. It is a resource for studying expertise, not a trial in which beginners were randomly assigned to different training programmes.
 
-Fernand Gobet built on foundational research to develop and refine "chunking" theory (roughly "grouping" or "blocking" information). The idea is brilliantly simple. When you look at a chess position, you see 32 individual pieces scattered across 64 squares. A beginner's or amateur's brain is saturated by that huge amount of isolated information.
+Another precaution: several publications may use the same dataset. They do not then represent as many independent replications. Before counting “studies that confirm” a finding, check the participants, the game and whether data have been reused.
 
-The grandmaster does not see individual pieces at all. Their brain automatically groups pieces into "chunks," blocks of meaning. They do not see a pawn on f2, a pawn on g2, a pawn on h2, and a King on g1. They see "intact white kingside castling." They perceive patterns, visual motifs, constellations of pieces they have already encountered tens of thousands of times.
+## Executive functions: what Ramos actually shows
 
-Gobet's studies show that a professional player holds between 50,000 and 300,000 such "chunks" (or "templates," more complex models) in long-term memory. It is exactly like learning to read. A child spells letter by letter ("M-A-I-S-O-N"), which costs enormous cognitive effort. You read the word "HOUSE" instantly, as a single block. Grandmasters "read" the board. That massive visual library lets them play at lightning speed, not through superhuman depth calculation of fifty moves. Their brain has optimized visual storage to get around the natural limits of human working memory.
+Ramos, Arán Filippetti and Krumm (2018) compare 65 children aged 8 to 12: 30 play chess and 35 have no experience of it. The authors report better performance in the chess group on the executive functions assessed.
 
-That same ability to recognize patterns, and why it comes naturally to some cognitive profiles, is central to the article [Chess and autism](/en/blog/chess-and-autism/).
+The design is cross-sectional and *ex post facto*: the groups existed before measurement. This is neither a ten-week training intervention nor random assignment. We therefore cannot conclude that chess alone created the observed difference.
 
-## What really lights up under a scanner
+The reference year to retain is 2018, the year of the journal issue and publication indicated by the journal, even though the manuscript circulated in 2017. The coauthor’s name is Arán Filippetti, not “Ar”.
 
-Cognitive psychology explains behavior, but modern neuroscience lets us see the brain literally in action. Researchers placed players of different levels in functional MRI scanners to see which areas activated while they solved tactical problems. The results, published notably in prestigious journals like the *Journal of Neuroscience*, are fascinating because they show that a novice's brain and an expert's brain do not work the same way physiologically on the same problem.
+## From improving at chess to improving elsewhere
 
-When a beginner analyzes a position, the medial temporal lobe lights up dramatically. This brain region is heavily involved in forming new memories and consciously processing unfamiliar information. The beginner sweats; their brain burns huge energy trying to understand what is going on, because every position is terra incognita they must painfully decode.
+You can learn to spot a fork without becoming better at every attention task. This distinction between specialised learning and far transfer is central to the review by Sala and Gobet (2017).
 
-By contrast, for the grandmaster facing the same position, the medial temporal lobe stays surprisingly calm. The frontal and parietal cortices take over. These areas are tied to retrieving long-stored memories and pattern recognition. Physiologically, the expert is not "searching" for the solution through brute effort; they are "retrieving" the solution from their neural database.
+Their review examines findings from chess, music and working-memory training. Conclusions about transfer become less favourable when experiments better control expectations and the activities offered to other groups.
 
-The chessboard thus reshapes the geography of mental effort. With years of practice, the brain shifts workload: it moves from slow, conscious, energy-hungry calculation (psychologist [Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman)'s System 2) to fast, economical visual recognition (System 1). Playing chess is literally teaching your brain to save energy by automating excellence.
+A group receiving chess lessons also benefits from an adult, a structured setting and a new activity. Comparing it only with a group receiving no additional activity leaves those explanations open. An active control helps distinguish them.
 
-## Why playing chess your whole life protects the aging brain
+It would therefore be premature to promise a general increase in intelligence, better emotional control or a “stronger prefrontal cortex”. For links with school learning, see [the article on chess and mathematics](/en/blog/chess-and-mathematics/).
 
-If chess changes how our brain processes visual and spatial information, does it affect the overall health of our gray matter long term? Here we touch one of the most crucial chess benefits for the brain: "cognitive reserve."
+## Ageing: an activity, not a guarantee
 
-We know today that our brain ages naturally. Synaptic connections tend to weaken, and neurodegenerative diseases can set in. But science has found that people who engage their brain in intellectually demanding, complex, regular activities throughout life develop a form of neurological shield.
+Playing can give you a stimulating activity and an opportunity to meet other people. That does not prove that chess prevents Alzheimer’s disease.
 
-By forcing your brain to analyze, calculate, memorize openings, and solve problems under time pressure, you encourage the growth of new dendrites (the branches of neurons). That increased neural density creates what we call cognitive reserve. Picture it like a road network: if you only have one road from town A to town B and it is blocked, you are stuck. If, thanks to chess, you have built a dense network of small side roads, your brain will always find a detour after injury or aging.
+The WHO dementia fact sheet presents several modifiable risk factors and notes that there is no cure for dementia. It does not allow us to attribute a quantified reduction in an individual’s risk to chess. Confusing an association between leisure activities and health with a preventive prescription would be misleading.
 
-The Verghese et al. study (*New England Journal of Medicine*, 2003), following 469 older adults for five years, showed that regular board-game play, including chess, was associated with a 74% reduction in dementia risk. Like musicians or bilingual people, dedicated chess players seem to benefit from greater cognitive reserve. Careful: chess does not cure disease, but it is first-class brain gymnastics for keeping the brain elastic and robust as we age.
+## How to read the next study
 
-## Beyond memory: managing uncertainty and emotions
+Before remembering a spectacular number, ask four questions: which game do the participants play? How were the groups formed? Does the measurement concern a task, a brain image or everyday life? Has the finding been replicated in other people?
 
-The brain is not just a calculator; it is also the center of our emotions. Reducing chess benefits to memory and spatial geometry misses its most underestimated dimension. And the chessboard is an emotional theater of rare brutality.
+For your training, keep observable goals: explaining a position better, remembering a pattern, checking a threat before moving. You can appreciate those improvements without making them carry a promise of general brain transformation.
 
-Science is increasingly interested in how chess trains the prefrontal cortex, the brain region responsible for executive functions: decision-making, planning, but above all inhibitory control. When you desperately want to capture an opponent's Queen served on a silver platter, instinct screams at you to go for it. Your prefrontal cortex, strengthened by years of practice, activates to brake that primal impulse and whisper: "Wait, calculate first. Is it a trap?"
+## Sources
 
-This repeated training in mastering impulsivity has fascinating ripple effects. Chess players learn to manage extreme uncertainty. They habituate their brain to working under time pressure, to accepting that the opponent destroys their plans, and to coldly reassessing without letting cortisol (the stress hormone) paralyze their thinking.
-
-The chessboard then becomes a school of neurological resilience. You teach your brain to separate emotion (fear of losing, thrill of winning) from the logical, mathematical analysis of the position. Maybe that is the real superpower of chess players.
-
-Long-term chess practice literally reorganizes the brain: geography of effort, cognitive reserves, impulse control. Not an opinion: fMRI, scanners, and decades of cognitive studies back it up.
-
-### The Magnus Carlsen case: what MRIs do not show
-
-[Magnus Carlsen](https://en.wikipedia.org/wiki/Magnus_Carlsen) had a scan in 2015 for a Norwegian documentary project. Result: a normal brain, no special architecture. Nothing that distinguishes a World Champion from an accountant in Bergen. What the scanner misses is functional geography: which areas light up, how fast, with what degree of automation. Carlsen started playing seriously at age eight. Thirty years of intensive practice shifted positional work toward fast-recognition zones, exactly the medial temporal to frontal transfer described above. His brain no longer "calculates" elementary positions. It reads them. The apparent speed of his decisions is not genius: it is accumulated neuroplasticity, move after move, since childhood.
-
-**After reading:** the next time you leave a long game drained, ask which areas just worked hard, then favour one **slow analysed game** weekly over five blitz games to consolidate the gains.
-
----
-
-## Frequently asked questions about chess and the brain
-
-
-### Can chess prevent Alzheimer's?
-
-Not cure, but potentially delay. The Verghese et al. study (*NEJM*, 2003) showed that regular board-game play, including chess, was associated with a 74% reduction in dementia risk over 5 years of follow-up. The hypothesis: practice builds cognitive reserve, a denser neural network that compensates for aging-related damage.
-
-### How many hours do you need to play to see an effect on the brain?
-
-Research does not set a universal threshold. What matters in neuroplasticity studies is regularity and progressive difficulty. Playing 3 to 4 hours per week over several years, with serious game analysis, produces structural effects measurable on functional MRI.
-
-### Is rapid chess (Blitz) as beneficial as slow chess?
-
-No. Studies on brain activation show that slow chess (games of 30 minutes or more) engages planning and metacognition areas. Blitz relies mainly on stored pattern recognition, useful for tactical training, but less formative for long-term cognitive benefits.
-
----
-
-## Key takeaways
-
-- Grandmasters do not have higher IQs: they carry a library of 50,000 to 300,000 memorized "chunks" (Gobet)
-- Chess practice shifts cognitive work toward fast visual recognition, measurable on MRI (Atherton, 2003)
-- Studies suggest that dedicated players develop protective cognitive reserve against aging (Verghese, NEJM 2003)
-- The chessboard trains the prefrontal cortex: inhibitory control, decision-making under pressure
-
----
-
-### Sources and references
-
-- **Gobet, F., & Charness, N.** *Expertise in Chess*, In *The Cambridge Handbook of Expertise and Expert Performance*, Cambridge University Press, 2006. ("Chunking" theory and grandmaster memory.)
-- **Atherton, M., Zhuang, J., et al.** [*A functional MRI study of high-level cognition. I. The game of chess.*](https://pubmed.ncbi.nlm.nih.gov/12643306/) *Cognitive Brain Research*, 2003. (Differential novice vs. expert brain activation.)
-- **Kahneman, D.** *Thinking, Fast and Slow*, Farrar, Straus and Giroux, 2011. (Brain energy savings and automation of expertise.)
-- **Frith, U. & Blakemore, S.** *The Learning Brain: Lessons for Education*, Blackwell, 2005. (Neuroplasticity and long-term learning.)
-- **Verghese, J., Lipton, R. B., Katz, M. J., et al.** - [*Leisure Activities and the Risk of Dementia in the Elderly.*](https://www.nejm.org/doi/full/10.1056/NEJMoa022252) *New England Journal of Medicine*, 348(25), 2508-2516, 2003. (469 older adults followed for 5 years: board games associated with a 74% reduction in dementia risk.)
+- Li, K., Jiang, J., Qiu, L. et al. (2015), *A multimodal MRI dataset of professional chess players*, Scientific Data, 2, 150044, [article](https://www.nature.com/articles/sdata201544).
+- Ramos, L., Arán Filippetti, V. and Krumm, G. (2018), *Funciones ejecutivas y práctica de ajedrez: un estudio en niños escolarizados*, Psicogente, 21(39), 25–34, [journal article](https://revistas.unisimon.edu.co/index.php/psicogente/article/view/2794).
+- Sala, G. and Gobet, F. (2017), *Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training*, Current Directions in Psychological Science, [article](https://journals.sagepub.com/doi/full/10.1177/0963721417712760).
+- World Health Organization (2025), *Dementia*, fact sheet, [text](https://www.who.int/news-room/fact-sheets/detail/dementia).

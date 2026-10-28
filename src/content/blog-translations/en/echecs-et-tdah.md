@@ -1,188 +1,102 @@
 ---
 heroImageAlt: "A compass needle multiplied into a blur, settling back onto a single point."
-title: "Chess and ADHD: Why the Chessboard Captures the Attention Everything Else Fails to Hold"
-excerpt: >-
-  ADHD isn't an attention deficit - it's inconsistent attention. The chessboard creates the rare conditions where this
-  brain naturally finds its anchor point.
-seoTitle: "Chess and ADHD: The Chessboard Captures the Attention School Cannot Hold"
-seoDescription: >-
-  ADHD isn't a lack of attention - it's irregular attention. Why the chessboard creates exactly the right conditions for
-  the ADHD brain to anchor itself. What research says and how to adapt the practice.
 enSlug: "chess-and-adhd"
-faq:
-  - question: "At what age can an ADHD child start chess?"
-    answer: >-
-      Most clubs welcome children from 6-7 years old. For ADHD profiles, starting with simplified piece games
-      at 5-6 is often more suitable than the full game right away. The essential thing is that each session
-      ends on a success, not on overflow. Short sessions (15-20 minutes) repeated often are better than long
-      sessions that exhaust attention.
-  - question: "Is online chess suited to ADHD?"
-    answer: >-
-      Physical play, with a present opponent and tangible pieces, engages more senses and often anchors
-      attention better than the screen. The screen adds interface distraction, notifications, real-time
-      statistics, all elements that compete for attention. Online chess can be useful but as a complement to
-      physical play, not a replacement, especially for younger ADHD profiles.
-  - question: "Can ADHD adults also benefit?"
-    answer: >-
-      Yes. ADHD doesn't disappear in adulthood: studies show 60-80% of diagnosed children continue to present
-      significant symptoms in adulthood. The neurobiological mechanisms described here apply at any age. ADHD
-      adults practicing chess regularly report improvements in sustained attention and frustration management
-      at work.
-  - question: "Do doctors recommend chess for ADHD?"
-    answer: >-
-      Not systematically, for lack of robust enough evidence to integrate chess into official clinical
-      recommendations. But many specialized psychiatrists and psychologists mention it as a relevant
-      complement, notably for children whose treatment includes a behavioral component. The trend is to
-      recommend cognitively demanding structured activities (chess, music, programming) rather than passive
-      screens.
+title: "Chess and ADHD: Adapting a Leisure Activity, Examining the Clinical Evidence"
+excerpt: "Chess can interest some people with ADHD. What the studies actually show, their limitations and how to adapt play without promising a treatment."
+seoTitle: "Chess and ADHD: Research, Limits and Adapted Play"
+seoDescription: "What do studies of chess and ADHD establish? Preliminary findings, clinical limitations and ways to adapt a leisure activity that does not replace care."
+faq: [{"question": "Is chess a validated treatment for ADHD?", "answer": "No. The available evidence does not support presenting it as a standalone treatment or a replacement for care. The open pilot published in 2016 is preliminary, and the randomized trial published in 2023 did not show a significant benefit on its global primary executive-function outcome."}, {"question": "At what age should someone start, and how long should they play?", "answer": "There is no established universal age or session length for players with ADHD. A few pieces and a simple task can be offered if a child is interested, then adapted to understanding, fatigue and enjoyment without imposing a therapeutic dose."}, {"question": "Is a physical board preferable to online chess?", "answer": "Either format may suit the individual and the setting. The studies presented do not demonstrate a general advantage of physical boards. On a screen, notifications can be reduced and a stopping point agreed."}, {"question": "Can a child who concentrates intensely on chess have ADHD?", "answer": "Yes. Interest in an activity does not rule out ADHD. Diagnosis requires a clinical assessment of persistent symptoms and their impact across settings, rather than the length of a game."}, {"question": "Can adults play to live better with ADHD?", "answer": "They may enjoy chess as a leisure activity and an opportunity to meet people. Reduced symptoms or transfer to work cannot be guaranteed. Persistent difficulties and treatment decisions belong with a health professional."}]
 ---
 
-Luca is 10. His teacher says he cannot stay focused for more than two minutes. He does not listen, disrupts class, rarely finishes an exercise. His parents tried tutoring, sports, reading aloud. Nothing sticks.
+A child may struggle to finish a school exercise yet remain interested in a chess position for a long time. That difference deserves curiosity without becoming a medical demonstration. It proves neither the absence of ADHD nor a therapeutic effect of the game.
 
-Since he started playing chess Wednesday evenings at the neighborhood club, something changed. He can sit 45 minutes facing a board without anyone reminding him why he is there. His parents, skeptical at first, began observing those sessions: no phone, no noise, silence he himself produces, focused on the 64 squares ahead.
+Chess can be an enjoyable leisure activity and a place to meet others for some people with ADHD. It can also be difficult, tiring or unappealing for others. Here is what the research actually supports and how to offer an activity that respects those differences.
 
-When they mentioned it, the teacher shrugged: *"It is because it is a game. Lessons should be as stimulating."* She is not entirely wrong. But that answer misses something more precise.
+## Variable attention does not cancel out difficulties
 
-It is not magic. It is neurobiology.
+Attention-deficit/hyperactivity disorder is a developmental disorder that can involve inattention, hyperactivity and impulsivity. According to the [NIMH](https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know), diagnosis requires persistent symptoms that interfere with functioning in more than one setting, assessed through an appropriate evaluation.
 
-## What ADHD really does to attention (and why it is systematically misunderstood)
+Being absorbed in a game therefore does not rule out ADHD. Conversely, fidgeting, playing quickly or overlooking a piece cannot diagnose it. A coach can describe observations; they do not replace a clinical assessment.
 
-The first misunderstanding is in the name. [Attention deficit hyperactivity disorder](https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder) (ADHD) is called an "attention deficit," but that is not what people with ADHD experience.
+Chess calls on working memory, planning and the ability to interrupt an action to examine a threat. But using a function during a game does not demonstrate lasting improvement or show that progress transfers to homework, employment or everyday life.
 
-Luca can spend an hour building an entire Lego city. He can loop a YouTube video for two hours without drifting. He does not lack attention: he cannot steer it toward what school asks of him.
+![Functions used in play: inhibition, working memory, flexibility and planning; using them proves neither an individual deficit nor a therapeutic effect.](/images/en/echecs-tdah-01-fonctions-executives.svg)
 
-[Russell Barkley](https://en.wikipedia.org/wiki/Russell_Barkley), among the most cited researchers in ADHD literature, reframed the disorder as early as 1997. For him, ADHD is not an attention problem: it is an executive-function deficit.
+## Neither magic fuel nor a test of willpower
 
-> **Barkley RA.** (1997). *Behavioral inhibition, sustained attention, and executive functions: Constructing a unifying theory of ADHD.* Psychological Bulletin, 121(1), 65-94.
+Describing ADHD as a simple dopamine shortage that the chessboard fills gives an explanation that is too certain and too simple. Interest in a task does not measure a person's neurotransmitters, and the studies cited here do not demonstrate a dopamine correction through chess.
 
-Executive functions include inhibiting impulsive responses (resisting an immediate urge), working memory (holding several pieces of information at once), mental flexibility (changing plans when context shifts), and long-range planning (seeing consequences several moves ahead).
+We can observe that a concrete position, an understandable goal or a supportive opponent makes a session more engaging. These are possibilities for adapting the setting, rather than proof of a particular biological mechanism. Our article on [dopamine and chess](/en/blog/chess-and-dopamine/) also distinguishes general hypotheses from measured findings.
 
-Those four functions are precisely what chess demands on every move, in every game, throughout the session. The parallel is direct.
+It would be unfair to conclude: “You concentrate at chess, so you could do the same everywhere if you wanted to.” Demands, surroundings and fatigue change between activities. Enjoying a game does not turn school difficulties into a lack of effort.
 
-## The biology behind inconsistency
+![Engagement may vary with the task and its context; this variation does not measure dopamine or demonstrate that playing corrects ADHD.](/images/en/echecs-tdah-02-dopamine-stimulation.svg)
 
-Why does the ADHD brain function so differently depending on activity? [Xavier Castellanos](https://en.wikipedia.org/wiki/Xavier_Castellanos) and Rosemary Tannock published in 2002 a landmark review on ADHD neurobiology that gives a precise explanation.
+## What studies of chess and ADHD show
 
-> **Castellanos FX & Tannock R.** (2002). *Neuroscience of attention-deficit/hyperactivity disorder: The search for endophenotypes.* Nature Reviews Neuroscience, 3, 617-628.
+### The open pilot study published in 2016
 
-Dopamine and norepinephrine deficits in the ADHD brain hit reward and inhibition circuits specifically. Those circuits respond differently depending on stimulation type. An abstract task with distant reward (learn a lesson for an exam in three weeks) activates them weakly. An activity with immediate reward (every move visibly and irreversibly changes the position), perfectly stable rules, and tangible stakes (win or lose this game, now) activates them much more strongly.
+Blasco-Fontecilla and colleagues enrolled 44 children aged 6 to 17 in an 11-week programme. Parent ratings improved after the programme. However, the study was open and had no comparison group; some children were already taking medication. It cannot attribute the changes to chess rather than expectations, support or other changes. The authors themselves call for better-controlled research.
 
-It is not that Luca is lazy. His brain needs fuel that school, in its current form, often does not supply.
+### The randomized trial published in 2023
 
-**The phrase Luca's parents remembered:** *The ADHD brain does not lack fuel. It needs the right fuel at the right time.*
+A later trial allocated 104 participants aged 12 to 22 to a cognitive video game, electronic chess exercises or a control group. These activities were added to established medication treatment. The primary outcome, the BRIEF-2 global executive-function score, did not show a significant benefit between groups; neither did the parent-rated SNAP-IV and Conners scales.
 
-## Why the chessboard creates favorable conditions (and not just any conditions)
+Favourable signals on some other measures remain exploratory: mixed findings, many tests, dropouts and a lack of blinding. The journal also warns that the trial was registered retrospectively. These findings validate neither chess as a standalone treatment nor a prescription for ordinary club sessions.
 
-Dozens of activities could in theory help children with ADHD. Video games also give immediate feedback. Sport also has rules and stakes. Why does chess occupy a special place?
+## What a chessboard can offer as a setting
 
-**1. Immediate feedback and visible consequences.** Every move changes the position in a concrete, visible, irreversible way. There is no ambiguity about "did I do something?" The brain gets a clear signal with every action.
+**A visible goal.** “Find a way to protect this piece” can be more concrete than “improve your concentration.” A short task need not require completing an entire game.
 
-**2. Perfectly stable rules.** The [Knight](https://en.wikipedia.org/wiki/Knight_(chess)) moves in an L. Always. Without exception. Without nuance. The social and school worlds are full of implicit, shifting, unannounced rules: a major source of stress and confusion for ADHD brains. The chessboard is the opposite: rules are complete, public, stable, and depend on no social interpretation.
+**Explicit instructions.** Demonstrating one piece's movement, then checking understanding, avoids piling up explanations. The game still has social conventions to explain: waiting for a turn, requesting a break and commenting without humiliation.
 
-**3. Bounded temporal structure.** A game has a clear beginning and end. The task is not "open" like homework with no visible finish. It ends naturally, which helps brains that struggle with distant deadlines.
+**An agreed beginning and end.** A position to solve, a few moves or a small game can make up a session. A clock is optional; for some people it mainly adds pressure.
 
-**4. Bounded social engagement.** Playing against someone creates social attention, the drive not to "let go" of the opponent, a powerful motor for people who struggle to sustain effort in solitary tasks. Unlike usual social interaction, this one is fully framed: no need to read facial expressions, subtext, implicit rules. Only the position.
+**A chosen relationship.** A patient partner can share an investigation instead of constantly testing ability. Competition suits some players, while others prefer cooperative puzzles.
 
-**5. Inhibition as a core skill.** In chess, resisting capture of a seemingly free piece to calculate whether it is a trap is direct training in inhibition. That executive function is precisely what ADHD most lacks. The chessboard solicits it dozens of times per game in a context where stakes feel real but consequences stay benign.
+**Room to try.** A player can be invited to check threats before touching a piece. This reminder supports play; it does not prove that impulsivity is being rehabilitated away from the board.
 
-## What research says (and what it does not yet)
+![Adaptation options: a visible goal, explicit instructions, an agreed duration, a patient partner and permission to pause, adjusted to the individual.](/images/en/echecs-tdah-03-echiquier-conditions.svg)
 
-We must be honest about the scientific literature: large studies with control groups and rigorous diagnostic criteria, specifically on chess-ADHD crossover, are still rare. That precise intersection does not yet have the same evidence base as other interventions.
+## Starting without turning leisure into a test
 
-What is documented:
+First ask whether the person wants to try. These studies establish neither a universal starting age nor an optimal duration for every player with ADHD. A capture game with a few pieces may be enough to explore the board; the full game can follow if interest remains.
 
-School intervention programs, notably in India, Armenia, and Argentina, integrated chess into classes including children with ADHD profiles. Teachers regularly report observed improvements in attention and impulse control in the game context. These observations are not controlled trials, but they are consistent and recurring.
+Here is an adaptable session example, rather than a therapeutic protocol: choose a small task together, try a position, discuss an interesting move, then decide whether to continue or pause. The goal can simply be an enjoyable shared moment, without a rating target.
 
-[Sala and Gobet](https://www.frontiersin.org/articles/10.3389/fpsyg.2016.00745/full) (2016) published a meta-analysis on chess effects on school and cognitive outcomes in general. Their conclusion is nuanced: benefits are moderate but real on skills directly targeted by practice. Gains in math and reading are more limited than hoped, but planning and inhibitory control improve.
+Remove one difficulty at a time: too many pieces, too much noise, lengthy instructions or an opponent who is too experienced. Allow players to stand up or return later. Ending a session is not a moral failure, and play need not continue until someone wins.
 
-> **Sala G & Gobet F.** (2016). *Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis.* Frontiers in Psychology, 7, 645.
+## Physical boards, screens and physical activity
 
-The reasonable conclusion: neurobiological mechanisms strongly argue for benefit in ADHD profiles. Direct evidence is promising but still building. That is no reason to wait before trying.
+A physical board allows players to handle pieces and meet someone in person. A digital interface may offer convenient access or an available opponent. None of the research presented establishes a general advantage of physical boards over screens for everyone with ADHD.
 
-## The link to impulsivity: what the chessboard teaches that sport does not
+On a screen, notifications can be disabled, a single activity selected and a stopping point agreed. If fast games keep going at the expense of sleep, responsibilities or enjoyment, reviewing the setting matters more than gaining rating points. These precautions do not demonstrate that online play causes a particular disorder.
 
-A fair question: does sport not do the same thing? It has clear rules, immediate stakes, bounded structure.
+Chess need not replace sport either. The activities pose different challenges; a ranking of their supposed effectiveness against ADHD is not established here. Choose according to preferences, access and needs, while keeping room for movement.
 
-The difference lies in the nature of inhibition demanded. In football, the good decision is often the fast one: see, decide, shoot. Inhibiting impulse in football sometimes means dribbling when you should pass, real learning, but of another nature.
+![Pausing before a move is one possible instruction during a game; it does not demonstrate transfer to daily life or an advantage of chess over sport.](/images/en/echecs-tdah-04-inhibition-sport-echecs.svg)
 
-In chess, the good decision is almost always the slow one: see, brake the impulse of the first obvious move, calculate, then decide. Every game is a long series of moments where impulse must yield so reflection can work.
+## Observe the experience instead of promising transfer
 
-For a child whose central issue is impulsivity, that difference is fundamental.
+To see whether the setting suits someone, ask simple questions: do they want to return? Do they understand the instructions? Can they ask for a break? Are the meetings enjoyable? These observations help adapt leisure without becoming a clinical assessment.
 
-That same cognitive profile, difficulty inhibiting, need for stable structure, sensitivity to immediate rewards, appears in other contexts where chess has documented effects, notably in prisons. The article on [chess in prison](/en/blog/chess-in-prison/) explores the same mechanisms applied to rehabilitation.
+If a family notices changes at school or home, they can discuss them with the professional following the child. Other changes also matter: medication, educational support, sleep and family circumstances. A higher Elo rating does not measure a reduction in ADHD symptoms.
 
-## Limits: what chess cannot do
+## What about adults?
 
-It would be dishonest to present the chessboard as an ADHD cure. Important caveats:
+ADHD can persist into adulthood. An adult may enjoy a club, a daily puzzle or a game with friends without any guaranteed benefit to workplace organization or symptoms. Findings from a small trial in young people do not automatically apply to every age.
 
-**Hyperfocus is not healing.** If Luca stays 45 minutes on the board, it is not because his ADHD "disappeared." It is because the task hits every condition for his engagement. Returning to other contexts, math class the next morning, can be just as hard as before. The chessboard does not deeply retrain the brain; it creates favorable conditions where the brain can function differently.
+Adults also have the right to dislike chess. A suitable activity fits into the person's life rather than being imposed by others as a corrective exercise. Our advice on [concentration](/en/blog/chess-and-concentration/) concerns playing the game, rather than treating ADHD.
 
-**Not all ADHD profiles respond the same.** ADHD covers varied profiles: predominantly inattentive, predominantly hyperactive-impulsive, and combined. Highly hyperactive children may find the slowness of a full game frustrating early on. Adaptation (shorter games, simplified format, learning with isolated pieces) is often necessary.
+## Where does chess fit alongside care?
 
-**Chess does not replace specialized care.** Medication (among the best-documented interventions for executive functions), cognitive-behavioral therapy, and school accommodations remain the treatments with the strongest evidence base. Chess can be a valuable complement and a positive space, not a substitute.
+The [NICE NG87 recommendations](https://www.nice.org.uk/guidance/ng87/chapter/recommendations) set out individualized care: information, environmental adjustments, support and treatments depending on age, difficulties and clinical circumstances. They do not justify presenting chess as a validated substitute for that care.
 
-**Daria Kuss** ([Nottingham Trent University](https://en.wikipedia.org/wiki/Nottingham_Trent_University)) showed how anxiety, depression, or ADHD can push people toward hyper-stimulating activities, which partly explains particular vulnerability of ADHD profiles to certain forms of excessive online play. An angle explored in the article on [chess and addiction](/en/blog/chess-and-addiction/).
+For persistent difficulties affecting school, work or relationships, seek a professional assessment. Do not change treatment because of a good or bad period of play. A club can welcome people, adapt activities and share the pleasure of learning; it does not need to promise a cure to be worthwhile.
 
-## Practical tips to adapt chess to the ADHD brain
+## Sources and limitations
 
-If you are a parent, teacher, or ADHD player, a few adjustments change everything:
-
-**Start with isolated piece games**, not a full game. "King vs. pawns," "deliver corridor mate": one rule, one goal, 10 minutes maximum. Full-game complexity can overwhelm a child without basic templates yet.
-
-**Use a clock from the start**: time pressure creates an external urgency signal that helps sustain attention. A 5-minute-per-player clock imposes rhythm and makes time visible; ADHD brains often struggle to sense passing time.
-
-**Value process, not outcome**: "You did well to pause and check for a trap before capturing" beats "you won." Successful inhibition deserves to be named and rewarded explicitly.
-
-**Short, regular sessions**: 20 minutes three times a week probably beats one hour once a week. Regularity consolidates cognitive patterns; excessive length exhausts.
-
-**Avoid big tournament halls at first**: ambient noise, movement, tournament social pressure can undermine expected benefits. A calm setting with one trusted opponent is a better starting point.
-
----
-
-### Summary in one table
-
-| Aspect | What research says |
-| --- | --- |
-| ADHD and executive functions | Barkley (1997): ADHD is inhibition and planning deficit, not simple lack of attention. |
-| Neurobiology | Castellanos & Tannock (2002): dopamine deficits in reward circuits, activated more efficiently by immediate-feedback, stable-rule activities. |
-| Why chess "hooks" | Immediate feedback, stable rules, clear stakes, inhibition demanded every move: exact conditions for ADHD brain engagement. |
-| Direct chess-ADHD evidence | Promising but limited. School programs report observed benefits; controlled studies still lacking. |
-| What chess cannot do | It does not "cure" ADHD or replace medical or psychological care. Hyperfocus on the board is not proof of healing. |
-
----
-
-## Frequently asked questions
-
-**At what age can an ADHD child start chess?**
-Most clubs welcome children from 6-7. For ADHD profiles, starting with simplified piece games at 5-6 is often better than full games immediately. The key is ending each session on success, not frustration.
-
-**Is online chess suitable for ADHD?**
-Physical play with a present opponent and tangible pieces often mobilizes more senses and anchors attention better than a screen. Screens add interface distraction, notifications, live stats, all of which can undermine expected benefits. For beginners, a physical board is preferable.
-
-**Can adults with ADHD benefit too?**
-Yes. ADHD does not vanish in adulthood: studies show 60 to 80% of diagnosed children still show significant symptoms as adults. The neurobiological mechanisms described here apply at any age. Adult ADHD players often report the same attentional anchoring effects, plus intellectual challenge and socialization in a structured setting.
-
-**Do doctors recommend chess for ADHD?**
-Not systematically, for lack of robust enough evidence to put chess in official clinical guidelines. But many psychiatrists and psychologists mention it as a relevant complement, especially for children where medication alone is insufficient or refused by parents.
-
----
-
-**After reading:** **short sessions** (20 minutes), **same weekly slot**, **physical board** as a priority; avoid large noisy rooms at the start. A complement to medical or psychological care, not a substitute.
-
----
-
-## Key takeaways
-
-- ADHD is not literally an attention deficit: it is an executive-function deficit, especially inhibition and planning (Barkley, 1997)
-- The ADHD brain responds better to immediate feedback, stable rules, and tangible stakes, exactly what the chessboard offers
-- Direct chess-ADHD studies are still limited but neurobiological mechanisms are well documented (Castellanos & Tannock, 2002)
-- Chess is a valuable complement to specialized care, not a substitute
-
----
-
-### Sources and references
-
-- **Barkley, R. A. (1997).** - *Behavioral inhibition, sustained attention, and executive functions: Constructing a unifying theory of ADHD.* *Psychological Bulletin*, 121(1), 65-94. (Reframing ADHD as executive-function deficit, inhibition, planning, working memory, rather than simple lack of attention.)
-- **Castellanos, F. X., & Tannock, R. (2002).** - [*Neuroscience of attention-deficit/hyperactivity disorder: The search for endophenotypes.*](https://doi.org/10.1038/nrn894) *Nature Reviews Neuroscience*, 3(9), 617-628. (ADHD neurobiology: dopamine deficits in reward and inhibition circuits, responding better to immediate-feedback, stable-rule activities.)
-- **Sala, G., & Gobet, F. (2016).** - [*Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis.*](https://doi.org/10.3389/fpsyg.2016.00645) *Frontiers in Psychology*, 7, 645. (Meta-analysis: moderate but real chess benefits on skills targeted by practice. Limited transfer to general school subjects.)
-- **Faraone, S. V., et al. (2021).** - [*The World Federation of ADHD International Consensus Statement: 208 evidence-based conclusions about the disorder.*](https://doi.org/10.1016/j.neubiorev.2021.01.022) *Neuroscience & Biobehavioral Reviews*, 128, 789-818. (State of the art on ADHD persistence into adulthood and comparative intervention efficacy.)
+- **NIMH**, [Attention-Deficit/Hyperactivity Disorder: What You Need to Know](https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know): institutional information about symptoms, assessment and care.
+- **NICE**, [Attention deficit hyperactivity disorder: diagnosis and management, NG87](https://www.nice.org.uk/guidance/ng87/chapter/recommendations): clinical guidance, distinct from a suggested leisure activity.
+- **Blasco-Fontecilla H. et al. (2016)**, [Efficacy of chess training for the treatment of ADHD: A prospective, open label study](https://adhd-chess.com/Content/docs/Efficacy-chess-treatment-ADHD-Blasco.pdf), *Revista de Psiquiatría y Salud Mental*, 9(1), 13-21: open pilot study without a randomized comparison.
+- **Rodrigo-Yanguas M. et al. (2023)**, [randomized trial of a cognitive video game and electronic chess exercises](https://games.jmir.org/2023/1/e39874/), *JMIR Serious Games*, 11, e39874, [doi:10.2196/39874](https://doi.org/10.2196/39874): add-on intervention, negative global primary outcome, with methodological limitations detailed in the article.

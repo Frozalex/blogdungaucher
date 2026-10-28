@@ -27,6 +27,8 @@ faq:
       Eerder duizenden stellingen en patronen, geen exacte zettenreeksen. Studies (De Groot, Chase
       & Simon) tonen aan dat hun voordeel ligt in de snelle herkenning van structuren, niet in
       letterlijk zettengeheugen.
+heroImageAlt: Een vervagende schaakstelling met enkele nog duidelijke groepen stukken.
+
 ---
 
 Je opent een boek. Een partij van Aljechin uit 1924. Je volgt hem zet voor zet, je knikt bij de zevententiende finesse, je bewondert het offer op zet 28. Een uur later sluit je het boek. Zes maanden later zou je het niet meer kunnen naspelen.

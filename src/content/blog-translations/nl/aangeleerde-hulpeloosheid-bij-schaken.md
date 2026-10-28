@@ -40,6 +40,8 @@ faq:
       verifieerbaar is. De rating is hiervoor een zeer slechte feedback: traag, ruizig en afhankelijk van
       de tegenstander. Tactische oefeningen, trainingsstellingen en theoretische eindspelen leveren
       daarentegen een direct en toewijsbaar oordeel.
+heroImageAlt: Een vogel blijft in een kooi waarvan de deur wijd openstaat.
+
 ---
 
 Je zit al veertien maanden op 1550. Je hebt dingen geprobeerd. Je hebt een boek gekocht, je hebt een paar weken oefeningen gedaan, je bent van opening veranderd.

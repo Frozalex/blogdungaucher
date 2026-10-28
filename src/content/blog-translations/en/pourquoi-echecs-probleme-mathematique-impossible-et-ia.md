@@ -1,214 +1,203 @@
 ---
-heroImageAlt: "Pixel art thumbnail: a retro computer, screen showing a glowing decision tree, title about the mathematical complexity of chess and AI"
-title: Why Chess is a (Nearly) Impossible Mathematical Problem - and How AI Solves it Anyway
-excerpt: >-
-  The game tree explodes, Shannon's number is staggering, yet an engine corrects you in seconds. Is chess really
-  'unsolvable'? Here's what maths, computer science and AI actually do under the hood.
-seoTitle: "Chess and AI: Solving the Mathematical Impossible"
-seoDescription: >-
-  Is chess mathematically solvable? Discover how AI has revolutionised the game and why engines now beat humans at every
-  single turn.
+heroImageAlt: "Pixel art thumbnail: a retro computer with a glowing decision tree on screen and a title about chess complexity and AI."
+title: "Why Chess Is So Hard to Solve, and How AI Plays Anyway"
+excerpt: "The move tree grows rapidly, yet an engine can suggest a strong reply in seconds. Explore what mathematics, search and learned evaluation actually do, without confusing practical difficulty with impossibility."
+seoTitle: "Solving Chess: Complexity, Shannon and the Limits of AI"
+seoDescription: "Shannon’s estimate, exhaustive search, evaluation and AI: why chess remains unsolved without confusing practical difficulty with demonstrated impossibility."
 enSlug: "chess-mathematical-problem-and-ai"
 faq:
-  - question: "Will chess ever be 'solved'?"
-    answer: >-
-      In the strong sense (outcome proven from the starting position, like checkers since 2007),
-      <strong>probably never</strong>. The $10^{120}$ bound plus the EXPTIME-complete result make brute-force
-      resolution physically unreachable. An <strong>indirect proof</strong> (symmetry, invariant, partial
-      mirror strategy) remains theoretically possible but no serious path exists. Quantum computing changes
-      the bound by halving the exponent, but $10^{60}$ is still astronomical.
-  - question: "What's the difference between 'solving' and 'beating humans'?"
-    answer: >-
-      'Solving' = proving the exact mathematical outcome under perfect play. 'Beating humans' = being on
-      average closer to the optimal strategy than a human brain. Stockfish beats any human at ~3500 Elo
-      without ever solving. Conversely, a program that solved chess would beat any opponent by definition, 
-      that's why no such program exists.
-  - question: "Why did AlphaZero 'beat' Stockfish if both are approximations?"
-    answer: >-
-      Because at that moment, AlphaZero's neural-network + MCTS approximation was closer to Zermelo truth
-      than Stockfish's alpha-beta + manual evaluation (version 8 at the time). Since 2020, Stockfish has
-      integrated NNUE (Efficiently Updatable Neural Network) and dominates again. Hardware advances and
-      neural network refinements continuously shift the leader.
-  - question: "Is the Shannon number an exact measure?"
-    answer: >-
-      No. It's an <strong>order-of-magnitude estimate</strong> of possible games ($\sim 10^{120}$), not of
-      distinct legal positions ($\sim 10^{43}$ by more recent estimates, still debated). The confusion
-      between the two is very common but important: the legal-positions number measures the state space, the
-      games number measures the trajectory space.
-  - question: "If a human can't calculate everything, why progress?"
-    answer: >-
-      For two reasons: (1) improve your <strong>internal evaluation function</strong> (positional sense), (2)
-      improve your <strong>intuitive pruning</strong> (quickly reject bad candidates). It's exactly the
-      engine strategy. The difference between a 1200 and a 2000 player isn't raw calculation speed but
-      evaluation function quality and pruning efficiency. That's the human path: not searching more, but
-      searching better.
+  - question: "Will chess ever be solved?"
+    answer: "We do not know. Exhaustive exploration is beyond current methods, but another form of proof is not ruled out. EXPTIME concerns a generalisation of chess, not a demonstrated impossibility for the 8×8 board."
+  - question: "How does solving differ from beating a human?"
+    answer: "Solving requires proof of the perfect-play result. Winning games against humans measures performance under specific conditions without establishing that proof. Engine and human rating lists are not directly interchangeable."
+  - question: "Is Shannon’s number exact?"
+    answer: "No. The order of magnitude 10^120 describes an estimated game tree, not an exact count of distinct legal positions."
 ---
 
-You have already lived this paradox: people sell you [chess](https://en.wikipedia.org/wiki/Chess) as cosmically complex, a game where each player traces long-term strategy; then you open an app, play a reasonable move, and the engine corrects you and explains a line you could never find alone.
+You may know the apparent paradox: apps and media present [chess](https://fr.wikipedia.org/wiki/%C3%89checs) as enormously complex, then you open an app, play a reasonable move and receive an engine correction with a line you could not find alone.
 
-So what? Can everything really be reduced to formulas? Is this game a mathematical problem that maths and computing only partly answer, or a story we tell ourselves to sound deep? The answer has two parts: this discipline cannot be handled by brute force over the entire space of games, yet it becomes playable at a superhuman level once you accept measuring reality with programs that combine search, evaluation, pruning, and today learning on very powerful machines.
+Can this really be reduced to formulas? Do mathematics and computing offer partial answers, or is complexity merely a story we tell? There are two distinct points: exhaustive exploration of the full game space is beyond current practical resources, while selective search, evaluation, pruning and learning can produce performance exceeding human match results.
 
-![Diagram of an 8×8 board, chess and discrete configurations](/images/echecs-ia-01-plateau.svg)
+![Diagram of an 8 by 8 chessboard](/images/en/echecs-ia-01-plateau.svg)
 
-The truth is more interesting than the myth: no finite list of moves "closes" the game like a sealed formal statement, yet programs regularly beat the strongest human players because they do not seek absolute perfection, only a good enough decision against a real opponent.
+No complete solution from the initial position is known. Nevertheless, programs can beat leading humans without possessing a proof of perfect play: choosing strong moves against an actual opponent is a different task.
 
-## The board from the inside: a state graph, not chaos
+## The board from within: a state graph
 
-For a mathematician or computer scientist [chess](https://en.wikipedia.org/wiki/Chess) offers a rare quality: the rules are exact, public, and the game is deterministic. A [knight](https://en.wikipedia.org/wiki/Knight_(chess)) always moves in an L, a bishop stays on its colour: every legal move in this chess game is reproducible, with no random rule surprises, even if facing an unpredictable human can feel uncertain.
+For mathematics and computing, [chess](https://fr.wikipedia.org/wiki/Jeu_d%27%C3%A9checs) has precise, public and deterministic rules. A [knight](https://fr.wikipedia.org/wiki/Cavalier_(jeu_d%27%C3%A9checs)) follows its defined jump; a bishop remains on its colour. Human choices may be uncertain to you, but the rules themselves contain no random draw deciding whether a move works.
 
-- a complete position (pieces, side to move, castling rights, en passant…) = a game state;
-- a legal move = a transition to another state;
-- a game = a trajectory, a sequence of states in a gigantic space.
+- A sufficiently specified position, including pieces, side to move, castling, en passant and relevant history, is a state.
+- A legal move transitions to another state.
+- A game is a trajectory through states.
 
-If you want to be a bit formal, you can view it as a [directed graph](https://en.wikipedia.org/wiki/Directed_graph): each node is a state, each edge is a legal move; from a fixed state you can picture a search tree where players alternate branches. That framework is close to [game theory](https://en.wikipedia.org/wiki/Game_theory), a real bridge between mathematics and computing.
+Represent this as a [directed graph](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9): nodes are states and edges legal moves. From a fixed state, an exploration tree keeps different move sequences separate. [Game theory in chess](/en/blog/game-theory-in-chess/) explores the framework, while [opening equilibria](/en/blog/nash-equilibrium-openings/) distinguishes formal results from preparation.
 
-![Directed graph: positions and legal moves on the board](/images/echecs-ia-02-graphe.svg)
+![Directed graph of possible chess moves](/images/en/echecs-ia-02-graphe.svg)
 
-## The move tree: why "I calculated everything" is a myth
+## The move tree: what “I calculated everything” leaves out
 
-At club level you may have heard a player say: "I calculated everything." It sounds good but it is almost never strictly true: even grandmasters and champions traverse no complete fraction of the tree; from club player to grandmaster we only skim branches. They calculate a small part, and they do it well.
+At a club, you may hear “I calculated everything”. Sometimes a local forced sequence can be checked completely. Across a complex position’s full game tree, however, players normally examine a selected subset of continuations.
 
-People often denote \(b\) the average number of legal moves (branching factor), \(d\) the search depth in half-moves (*plies*), and \(N(b,d)\) the approximate number of nodes to explore; a naive approximation gives \(N(b,d) \approx b^d\). As soon as depth grows you do not add "a little" work: you multiply work; it is a law of mathematics: the exponential. It explains why even the fastest machines remain bounded by available time and memory, even with the best known algorithms.
+Let \(b\) be a branching factor, \(d\) depth in half-moves, or *plies*, and \(N(b,d)\) an approximate leaf count in a uniform model. The simple model gives exponential growth:
 
-$$
-N(b,d) \approx b^d
-$$
+$$N(b,d)\approx b^d.$$
 
-In the middlegame \(b\) often sits around 30-40. If you take \(b=35\), then at \(d=6\) it is already huge, at \(d=10\) astronomical, at \(d=16\) another planet. The human brain was not built to traverse millions of branches: it was built to survive, recognise patterns, save energy, and that is good news because modern engines do the same, combining algorithm and heuristic.
+Adding depth multiplies work rather than adding a small fixed amount. That is why finite time and memory matter even on fast machines. Real branching varies, and a search can merge transpositions, prune or use other methods; the formula is not an exact count of every engine’s work.
 
-To curb this explosion there is no magic: you must cut, estimate, order moves; methods this article unpacks next.
+A middlegame illustration often uses 30–40 legal moves. With \(b=35\), depths six, ten and sixteen already differ enormously. Human players and programs select possibilities, though that shared description does not establish identical cognitive and computational mechanisms.
 
-![Search tree: combinatorial explosion \(b^d\) in this game](/images/echecs-ia-03-arbre.svg)
+The methods below cut, estimate and order moves to make useful search practical.
 
-## Shannon's number: the "wow" that is not just a gimmick
+![Tree growth: specify the model](/images/en/echecs-ia-03-arbre.svg)
 
-[Claude Shannon](https://en.wikipedia.org/wiki/Claude_Shannon), professor at [MIT](https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology) and father of [information theory](https://en.wikipedia.org/wiki/Information_theory), posed a mathematics question in the mid-twentieth century: how many chess games are possible? His famous estimate lands around \(10^{120}\), the [Shannon number](https://en.wikipedia.org/wiki/Shannon_number). Careful: this figure is not eternal truth carved in stone; it is a scale grasp, not an exhaustive list of reachable configurations. What makes it fascinating is that the impossibility does not come from a technical detail but from a deep law: the space of possibilities is so vast that "exploring everything" stays out of reach even for the most advanced algorithms.
+## Shannon’s number: an order of magnitude
 
-![Order of magnitude \(10^{120}\), Shannon number and information](/images/echecs-ia-04-shannon.svg)
+[Claude Shannon](https://fr.wikipedia.org/wiki/Claude_Shannon), a founder of information theory, considered computer chess in his 1950 article. His famous \(10^{120}\) estimate, the [Shannon number](https://fr.wikipedia.org/wiki/Nombre_de_Shannon), conveys the scale of a game tree under simplifying assumptions.
 
-## Why this game is not "solved" (and why that does not stop you winning)
+It is not an exact list or count of distinct reachable positions. The large estimate helps explain the impracticality of naive exhaustive traversal; it does not prove that no other method could determine the game’s value.
 
-A game is "[solved](https://en.wikipedia.org/wiki/Solved_game)" in the mathematical sense when, from the initial position, you know the outcome of perfect play (win, loss, draw) and/or possess an optimal strategy. [Game theory](https://en.wikipedia.org/wiki/Game_theory), inherited from [John von Neumann](https://en.wikipedia.org/wiki/John_von_Neumann), gives tools to discuss rational players and [Nash equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium); here the structure is mostly a duel with almost perfect information.
+![Order of magnitude of chess game sequences (Shannon)](/images/en/echecs-ia-04-shannon.svg)
 
-The following table summarises the difference between a few famous games and chess (the only table in this article).
+## Why chess is not solved, and why an engine can still win
 
-| Game | Solved? | Quick comment |
+“[Solved](https://fr.wikipedia.org/wiki/Jeu_r%C3%A9solu)” can mean different levels of result. A weak solution determines the initial position’s outcome under perfect play and supplies the necessary strategy; a strong solution covers all relevant positions. [Game theory](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux), including work associated with [John von Neumann](https://fr.wikipedia.org/wiki/John_von_Neumann), provides tools for reasoning about rational choices and [Nash equilibrium](https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash). Chess’s perfect-information structure is central here.
+
+| Game | Solved? | Comment |
 | --- | --- | --- |
-| [Tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) | Yes | Small space: optimal strategy known |
-| [Checkers](https://en.wikipedia.org/wiki/English_draughts) | Yes | Perfect play is a draw; massive computer proof |
-| **Chess** | No | Space too vast; no complete proof of outcome |
-| [Go](https://en.wikipedia.org/wiki/Go_(game)) | Partially explored | AI ([AlphaGo](https://en.wikipedia.org/wiki/AlphaGo)) shifted the debate |
+| [Tic-tac-toe](https://fr.wikipedia.org/wiki/Morpion) | Yes | A small game with a known optimal strategy |
+| [English draughts, or checkers](https://fr.wikipedia.org/wiki/Dames_anglaises) | Yes | Its initial position is a draw under perfect play |
+| **Chess** | No | No complete proof of the initial perfect-play outcome |
+| [Go](https://fr.wikipedia.org/wiki/Go_%28jeu%29) | No from the standard initial position | [AlphaGo](https://fr.wikipedia.org/wiki/AlphaGo) demonstrated strong match performance, a separate achievement |
 
-A common confusion: "If it is not solved, an engine cannot be sure." That is formally true, but it is not the goal. In real use an engine does not need to solve the starting position to beat you: it must play close enough to optimal in actual situations.
+“Unsolved” does not mean an engine can never be certain about any local position. A forced mate or tablebase-covered endgame can supply exact information under its rules. To beat a human, the engine does not need to solve the starting position. The existence framework is discussed in [Zermelo’s paradox](/en/blog/zermelo-paradox/).
 
-Solving a game and playing it very well are not the same thing. You can be unbeatable for the vast majority of players without a complete formal proof of perfect-play outcome. Machines impress because they excel at search and evaluation, not at "closing" the game by exhaustive proof.
+### EXPTIME-complete: be careful with generalisation
 
-## What a "classical" engine does: minimax, but not naive
+Fraenkel and Lichtenstein (1981) study deciding who can win from an arbitrary position in a generalisation of chess on an $n\times n$ board. That problem is EXPTIME-complete. The authors note that the result says little directly about 8×8 chess.
 
-Traditional engines (such as [Stockfish](https://en.wikipedia.org/wiki/Stockfish_(chess))) boil down to three blocks:
+It is worst-case complexity for a family whose input size varies. It gives neither an imposed computing time for every position nor proof that solving the usual initial position is physically impossible. Fixed-size chess under termination rules remains finite; “undecidable” does not mean merely too expensive in practice.
 
-- search: traversing the move tree;
-- evaluation: estimating who stands better on the diagram;
-- optimisations: avoiding drowning in branches.
+## What a traditional engine does: minimax without naivety
 
-The idea behind [minimax](https://en.wikipedia.org/wiki/Minimax) is almost philosophical: you seek to maximise your advantage; your opponent seeks to minimise your advantage; you pick the move that maximises the minimum guaranteed against best defence. A highly simplified version looks like recursion on the graph's nodes:
+The architecture of traditional engines such as [Stockfish](https://fr.wikipedia.org/wiki/Stockfish) can be introduced through three functions:
 
-$$
-f(x) = \max_{m \in M} \min_{r \in R} f(x_{m,r})
-$$
+- Search: explore a tree of moves.
+- Evaluation: estimate which side is better.
+- Optimisations: avoid spending the budget on unhelpful branches.
 
-In club terms: minimax means "I do not play a move that only works if the opponent sleeps." It is a clear logic of rational caution, not a guarantee against tilt, but a worst-case model.
+Minimax chooses the best guaranteed outcome against the opponent’s best replies. In a simplified two-ply recurrence:
 
-Raw minimax alone explores far too large a tree: without optimisation you die before you finish thinking; the good news is that a huge part of the tree is useless if you know how to prune it without regret.
+$$f(x)=\max_{m\in M}\min_{r\in R}f(x_{m,r}).$$
 
-![Minimax: maximise gain against the worst opponent](/images/echecs-ia-05-minimax.svg)
+In club terms: do not choose a move that works only if the opponent fails to respond well. This is a worst-case model, not a guarantee against tilt or a measured description of your mind.
 
-## Alpha-beta: the art of pruning without regret
+Unoptimised minimax grows quickly. Fortunately, branches can sometimes be skipped while preserving the result of a fixed evaluated tree. [Minimax in chess](/en/blog/minimax-in-chess/) develops negamax, null-move pruning and transposition tables while distinguishing exact reformulations from selective heuristics.
 
-[Alpha-beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) optimises minimax traversal: its goal is not to find a different truth but to avoid computing what can no longer change the decision. **Alpha** is the best value already guaranteed for the maximising player; beta is the best value already guaranteed for the minimising player; if a branch can never beat what you already found elsewhere, you cut it.
+![Minimax  -  maximise your result against the best replies](/images/en/echecs-ia-05-minimax.svg)
 
-It is the same gesture as when you calculate tactics: you explore a line, see that even if everything works you do not beat another plan, so you stop dwelling on it. The consequence is huge: with good move ordering alpha-beta can drastically cut explored nodes; the engine gains "free" depth for what appears on screen.
+## Alpha-beta: cutting without changing the fixed-tree value
 
-![Alpha-beta pruning: branches cut without changing the decision](/images/echecs-ia-06-alphabeta.svg)
+[Alpha-beta pruning](https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%AAta) optimises minimax traversal. It skips work that cannot affect a choice already available to an ancestor.
 
-## Evaluation: the real heart, because everything cannot be calculated
+Using one score perspective, alpha is an available lower bound for MAX and beta an available upper bound through MIN. When alpha is at least beta, the branch can be cut. At identical tree, depth and evaluations, exact alpha-beta preserves the minimax value. Tied moves may still be selected differently.
 
-Even with alpha-beta you cannot reach the end of the tree: you hit leaves at limited depth and must answer a question that feels like magic: "what is this configuration worth?" Classical engines use evaluation functions built from criteria such as:
+As an analogy, you may stop exploring a tactical line once you establish it cannot improve on another available plan. Good move ordering can substantially reduce explored nodes and allow deeper search within the budget. Extra selective pruning has different guarantees from exact alpha-beta.
 
-- material;
-- pawn structure;
-- piece activity;
-- king safety;
-- square control (and many more in top engines).
+![Alpha-beta pruning  -  skip branches without changing the value](/images/en/echecs-ia-06-alphabeta.svg)
 
-It is not naive point addition: strong engines combine heuristics, tweaks, and optimised parameters to correlate evaluation with final outcomes without reaching those outcomes. In real life it is like judging a position "promising" without calculating mate in twenty-eight moves: you recognise a schema where initiative and the bishop pair "feel right", even though no single line is complete proof. The engine formalises that know-how tirelessly for thousands of players.
+## Evaluation: estimating without calculating everything
 
-![Heuristic evaluation function on the board](/images/echecs-ia-07-evaluation.svg)
+At a depth cutoff, a nonterminal position still needs a value estimate. Traditional hand-written evaluations use criteria such as:
 
-## AI: learning to evaluate and choose instead of handwriting everything
+- Material.
+- Pawn structure.
+- Piece activity.
+- King safety.
+- Controlled squares and other features.
 
-In recent years one idea has gained huge traction: instead of hand-coding sophisticated evaluation, you can *learn* evaluation from data or self-play. [Neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) and [machine learning](https://en.wikipedia.org/wiki/Machine_learning) sit at the centre of this wave. People often confuse "AI" with "it calculates more": in reality modern AI shines mainly on two tasks:
+This is not merely adding fixed piece points. Engines combine tuned features and search. Stockfish announced NNUE neural evaluation in 2020 while retaining alpha-beta search, showing that learning and this search family can be combined.
 
-- evaluating a position richly (compressed representation);
-- proposing good candidate moves to steer search.
+Estimating a promising position without calculating mate resembles a familiar practical task. That analogy does not prove a human mechanism in the engine. [Chaos theory in chess](/en/blog/chaos-theory-in-chess/) similarly distinguishes tactical instability as an analogy from mathematical chaos.
 
-Result: the engine does not need to explore "everything": it explores better. You can see it as industrialised strong-player behaviour: they do not look at thirty-five random moves; they pick a few "serious" ones, then calculate. AI does the same with coherence and training depth beyond intuition.
+![Evaluating a position at limited depth](/images/en/echecs-ia-07-evaluation.svg)
 
-The spectacular side of some approaches is self-play: a machine plays itself, learns from positions it generates, improves evaluations, repeats. It is not a miracle; it is a simple loop:
+## AI: learning to evaluate and select
 
-1. generate experience;
-2. learn to predict what leads to good outcomes;
-3. reinforce winning choices;
-4. iterate.
+Rather than write every evaluation feature by hand, a system can learn from data or self-play. [Neural networks](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) and [machine learning](https://fr.wikipedia.org/wiki/Apprentissage_automatique) can support two tasks:
 
-What is fascinating is that starting from a game with strict rules you can surface strategic preferences without writing them line by line in English.
+- Evaluating a position through a learned representation.
+- Proposing promising candidates to guide exploration.
 
-![Neural network: modern AI and search on the board](/images/echecs-ia-08-reseau.svg)
+That does not mean every learned system follows one architecture or always searches less. It means selection and evaluation can change how a computing budget is used.
 
-## IBM versus Kasparov: a historic day for software (without "solving" the game)
+Strong human players also select candidates before calculating, but this is an analogy at the level of the task, not proof that network training reproduces human intuition.
 
-In 1997 [Deep Blue](https://en.wikipedia.org/wiki/Deep_Blue) defeated [Garry Kasparov](https://en.wikipedia.org/wiki/Garry_Kasparov), then [world chess champion](https://en.wikipedia.org/wiki/World_Chess_Championship), against an [IBM](https://en.wikipedia.org/wiki/IBM) machine built specifically for chess. That success marks its era: the world discovered the power of specialised computing.
+Self-play provides a training loop:
 
-Yet that success does not solve chess in the theoretical sense: you can win games against the strongest human without holding a perfect strategy from the initial position. Programmers today, in France and worldwide, extract far more from the game than in 1997 without abolishing the underlying mathematical substrate.
+1. Generate experience through games.
+2. Learn predictions about outcomes and promising moves.
+3. Update selection and evaluation using those results.
+4. Repeat.
 
-![1997: IBM's machine versus Kasparov, world champion](/images/echecs-ia-09-deepblue.svg)
+Researchers still define representations, architectures, training objectives and procedures. Learned preferences can emerge without manually specifying each strategic concept; the process is not free of engineering.
 
-## Strategic models and mathematics: what game science contributes
+![Networks and search: distinct functions](/images/en/echecs-ia-08-reseau.svg)
 
-[Game theory](https://en.wikipedia.org/wiki/Game_theory) connects chess, through mathematics, to a whole family of models where players choose actions in response to others. The formalism crosses economics, decision support, and automated computation.
+## IBM and Kasparov: a historic match without solving chess
 
-For a club player the takeaway is simple: you navigate a game where pure chance is low but uncertainty about opponent choices is real, a structure close to duels studied by game science, even if the game keeps its own flavour.
+In 1997, [Deep Blue](https://fr.wikipedia.org/wiki/Deep_Blue) beat [Garry Kasparov](https://fr.wikipedia.org/wiki/Garry_Kasparov), then [world chess champion](https://fr.wikipedia.org/wiki/Champion_du_monde_d%27%C3%A9checs), using an [IBM](https://fr.wikipedia.org/wiki/IBM) system designed specifically for chess. It demonstrated the power of specialised hardware, search and evaluation.
 
-**Proof attempts.** The community has published masses of work on sub-problems (endgames, openings, tablebases), but no proof fixes perfect-play outcome from the starting position: the space of games resists exhaustive exploration.
+Winning that match did not solve chess. A machine can outperform the leading human in a match without a perfect strategy from the initial position. Subsequent engine advances do not abolish that mathematical distinction.
 
-Notions of [decidability](https://en.wikipedia.org/wiki/Decidability_(logic)) and [computational complexity](https://en.wikipedia.org/wiki/Computational_complexity) explain why "test everything" is unrealistic. That limit does not impoverish the game: it mixes rigour and intuition.
+![Deep Blue against Kasparov  -  a 1990s milestone](/images/en/echecs-ia-09-deepblue.svg)
 
-![Strategic conflict models and equilibrium](/images/echecs-ia-10-theorie.svg)
+## Strategic models: what game theory contributes
 
-## "Impossible" does not mean "unusable": the lesson beyond the board
+[Game theory](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux) connects chess to models in economics, decision support and automated calculation where choices respond to other agents.
 
-Chess is an excellent mental model for modern problems, for example:
+For a club player, distinguish deterministic rules from uncertainty about another person’s choices. A game can have no random rule and still leave you unsure how the opponent will reply.
 
-- [cybersecurity](https://en.wikipedia.org/wiki/Computer_security) (attack / defence);
-- strategy (anticipating an opponent);
-- optimisation (where to invest machine effort);
-- deciding when you cannot know everything at once.
+**Proofs and subproblems.** Work on endgames and other restricted settings yields exact results within stated coverage. No proof currently fixes the initial perfect-play outcome of full chess. Naive exhaustive exploration is impractical with current methods.
 
-The most important message is not "AI is magic": power comes less from calculating everything than from calculating what matters.
+[Decidability](https://fr.wikipedia.org/wiki/D%C3%A9cidabilit%C3%A9) and [algorithmic complexity](https://fr.wikipedia.org/wiki/Complexit%C3%A9_des_algorithmes) address different questions. A finite problem can be theoretically decidable without a practical exhaustive solution. That distinction makes claims about impossibility more precise.
 
-At your level as a player the lesson is the same: you cannot see everything; you can learn to choose better what you watch. The board amplifies who you are: if you seek control everywhere it throws it back at you; if you accept improving without defining yourself by a single number, you can turn every game into a training ground.
+![The mathematical framework of chess](/images/en/echecs-ia-10-theorie.svg)
 
-## What this means for you as a player
+## “Hard to solve” does not mean unusable
 
-**Try this.** If you want to see what an engine does on a position, open it in your own analysis tool (Stockfish, locally or in the browser): depth, score, and variations live.
+Chess offers analogies for modern problems such as:
+
+- [Computer security](https://fr.wikipedia.org/wiki/S%C3%A9curit%C3%A9_informatique): interacting attack and defence.
+- Strategy: anticipating another agent.
+- Optimisation: deciding where to spend computing effort.
+- Decisions when not everything can be examined at once.
+
+The lesson is not that AI is magic. Strong performance comes from how search, evaluation and resources interact, rather than an exhaustive view of every possibility.
+
+For your own play, you can learn to choose what to examine more carefully. This is a practical idea, not evidence that the board reveals your whole personality or that each result measures your worth.
+
+## What changes for you as a player
+
+**Try it.** Open a position in an analysis tool with Stockfish locally or in the browser. Observe depth, score and lines. Changing resources may change a non-proven evaluation; follow the variation rather than treating every number as a theorem.
 
 **On the blog:**
-- [Do chess players get better at maths?](/en/blog/chess-and-mathematics/)
-- [Psychology of the chess player](/en/blog/chess-player-psychology/)
+
+- [Does chess make you better at maths?](/en/blog/chess-and-mathematics/)
+- [The psychology of the chess player](/en/blog/chess-player-psychology/)
 - [Chess and the brain](/en/blog/chess-and-the-brain/)
 
-Chess is "impossible" if you imagine a brute solution: explore everything, prove everything, solve everything at once. It becomes "possible" once you accept reality: you win by selecting, evaluating, and pruning. Strength is not how many moves you calculate but how well you sort. A lucid player already knows that.
+Chess is beyond current naive full traversal, yet useful decisions are possible through selection, evaluation and pruning. Match strength does not prove complete solution, and a large estimated tree does not exclude every future proof method.
 
-**To go further:** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/), [arXiv](https://arxiv.org/).
+**Further reading:** [chessprogramming.org](https://www.chessprogramming.org/Main_Page), [ICGA](https://www.icga.org/) and [arXiv](https://arxiv.org/).
 
-**After reading:** open your analysis tool, spot the **first move** where your line and the engine's diverge by more than half a pawn, then replay **that position alone** three times in the day (without starting a new game).
+**After reading:** in a training review, find the **first move** where your idea and the engine’s differ by more than half a pawn under stated analysis settings. Revisit **that position** three times if useful, examining the concrete line. The threshold and repetition count are exercise choices, not a validated universal prescription.
+
+---
+
+## Sources
+
+- Shannon, C. E. (1950), *Programming a Computer for Playing Chess*, Philosophical Magazine, 41, 256–275, [original article](https://d1yx3ys82bpsa0.cloudfront.net/chess/programming-a-computer-for-playing-chess.shannon.062303002.pdf): the combinatorial estimate discussed above.
+- Fraenkel, A. S. and Lichtenstein, D. (1981), *Computing a Perfect Strategy for n×n Chess Requires Time Exponential in n*, Journal of Combinatorial Theory, Series A, 31, 199–214, [authors’ text](https://kubokovac.eu/zlozitost/mat/chessExptime.pdf).
+- Russell, S. and Norvig, P. (undated), *Adversarial Search*, textbook chapter, [text](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf): minimax, alpha-beta and search limits.
+- Stockfish team (2020), *Introducing NNUE Evaluation*, [official announcement](https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/).
+- IBM (undated), *Deep Blue*, company archives, [1997 match history](https://www.ibm.com/history/deep-blue).

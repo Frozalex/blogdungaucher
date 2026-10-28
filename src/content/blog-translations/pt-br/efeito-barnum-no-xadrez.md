@@ -49,6 +49,8 @@ faq:
       cedo, tempo gasto por lance, resultados por tipo de estrutura. Isso são fatos. O problema
       começa quando essas regularidades são convertidas em identidade, porque uma identidade resiste à
       mudança enquanto uma estatística convida a trabalhar o que falta.
+heroImageAlt: Figuras diferentes seguram máscaras anônimas idênticas.
+
 ---
 
 "Você é um jogador intuitivo. Enxerga rápido as possibilidades táticas, mas às vezes joga rápido demais nas posições que pedem paciência. Se sente mais à vontade quando tem a iniciativa. Sob pressão, às vezes tende a se precipitar."

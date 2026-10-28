@@ -19,6 +19,8 @@ faq:
     answer: "Een motor als Stockfish berekent miljoenen posities per seconde maar 'voelt' de stelling niet vanuit het kamp van de tegenstander. Mensen gebruiken mentale simulatie via het spiegelsysteem, wat sommige psychologische elementen en valkuilen kan opmerken die pure berekening mist."
   - question: "Wat is de grootste valkuil van het spiegelsysteem bij schaken?"
     answer: "Projectie: de intenties van de tegenstander simuleren op basis van je eigen voorkeuren. Een aanvallend ingestelde speler neigt ertoe de aanvallende intenties van de tegenstander te overschatten, omdat zijn spiegelsysteem sterk gekalibreerd is op dat type spel. Dit creëert 'blinde vlekken' voor tegenspelpatronen die je zelf niet speelt."
+heroImageAlt: Een hand reikt naar een schaakstuk naast haar spiegelbeeld.
+
 ---
 
 Je kijkt naar een complexe stelling. Plotseling "zie" je wat de tegenstander wil doen. Geen lange berekening, geen expliciete redenering: een directe intuïtie van zijn intentie. Je speelt een preventieve zet. Hij is verrast. Hoe wist je dat?

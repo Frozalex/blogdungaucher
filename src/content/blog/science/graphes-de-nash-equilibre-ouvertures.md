@@ -1,12 +1,12 @@
 ---
 title: "Graphes de Nash : équilibre et ouvertures aux échecs"
-excerpt: "Pourquoi certaines ouvertures durent des décennies sans être réfutées ? L'équilibre de Nash explique la stabilité des variantes théoriques et la logique profonde des ouvertures d'échecs."
+excerpt: "Nash, stratégies mixtes et transpositions : comprendre un modèle calculé, puis distinguer équilibre mathématique, popularité des ouvertures et préparation pratique."
 publishDate: "2026-05-11"
 updatedDate: "2026-05-21"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "12 min"
+readingTime: "7 min"
 pillar: "Mathématiques"
 tags: ["Nash", "équilibre", "ouvertures", "théorie des jeux", "échecs", "défense berlinoise", "Kramnik 2000", "trembling-hand", "mathématiques"]
 seoTitle: "Équilibre de Nash et ouvertures : modèle et limites"
@@ -26,6 +26,12 @@ faq:
   - question: Une évaluation égale prouve-t-elle la nulle ?
     answer: >-
       Une estimation de moteur à profondeur limitée ne suffit pas. Une preuve doit couvrir les réponses légales pertinentes et les règles de fin de partie.
+heroImage:
+  src: /images/blog/graphes-de-nash-equilibre-ouvertures-hero.webp
+  alt: Deux pièces d'échecs adossées l'une à l'autre, en équilibre mutuel, prêtes
+    à tomber ensemble.
+ogImage: /images/og/graphes-de-nash-equilibre-ouvertures-og.webp
+
 ---
 
 Pourquoi certaines ouvertures restent-elles jouées malgré des décennies d’analyse ? L’équilibre de Nash donne un langage pour réfléchir aux stratégies, mais il ne transforme pas une variante populaire en théorème.
@@ -76,8 +82,53 @@ Dans le modèle strictement à somme nulle, les deux joueurs ne peuvent pas augm
 
 Pour approfondir : [la théorie des jeux](/fr/blog/theorie-des-jeux-aux-echecs/), [minimax](/fr/blog/minimax-aux-echecs/) et [Zermelo](/fr/blog/paradoxe-de-zermelo/).
 
+## Une petite matrice pour comprendre une meilleure réponse
+
+Construisons un modèle pédagogique qui ne représente aucune ouverture réelle. Les Blancs choisissent un répertoire A ou B ; les Noirs choisissent une préparation X ou Y. Les valeurs suivantes sont les gains fictifs des Blancs, ceux des Noirs étant leurs opposés.
+
+| Répertoire des Blancs | Préparation X | Préparation Y |
+| --- | ---: | ---: |
+| A | 1 | -1 |
+| B | -1 | 1 |
+
+Si les Noirs choisissent toujours X, les Blancs préfèrent A. Si les Blancs choisissent toujours A, les Noirs préfèrent Y. Chaque choix fixe appelle donc une déviation profitable de l'autre camp : aucune case n'est un équilibre en stratégies pures.
+
+Supposons maintenant que les deux camps tirent chacun leurs options avec une probabilité de moitié. Pour les Blancs, A rapporte en moyenne (1 - 1)/2 = 0, et B également. Choisir une autre fréquence ne peut améliorer leur espérance tant que les Noirs maintiennent leur mélange. Le raisonnement symétrique vaut pour les Noirs : ce couple de mélanges constitue un équilibre du modèle.
+
+Ce calcul illustre la définition de [Nash](https://irving.vassar.edu/faculty/gj/FTU/io/literature/Nash51.pdf). Il ne détermine aucune fréquence de Sicilienne ni de Caro-Kann : les gains ont été inventés pour rendre le calcul contrôlable. Pour une recommandation réelle, il faudrait justifier les options, les préférences et les valeurs retenues.
+
+## Pourquoi cette matrice n'est pas le jeu d'échecs entier
+
+Dans une partie, tu observes les coups joués avant de répondre. Une stratégie complète doit donc prévoir une conduite pour chaque histoire pertinente, y compris celles qui ne se produisent pas dans ta ligne favorite. Réduire cette stratégie à « jouer 1.e4 » perd presque toute l'information.
+
+Cette différence explique aussi pourquoi l'imprévisibilité ne suffit pas à rendre un coup bon. Dans un duel à information parfaite analysé par minimax, une action inférieure ne gagne pas une valeur objective parce qu'on la joue rarement. Elle peut surprendre un humain, ce qui appartient à un autre modèle, intégrant une préparation limitée ou des erreurs.
+
+Il est légitime d'étudier ce second modèle. Il faut seulement annoncer ce qu'on optimise : résultat contre un adversaire connu, probabilité de gagner lorsque la nulle ne suffit pas, charge de mémorisation, ou performance contre une population donnée. Deux objectifs différents peuvent recommander des répertoires différents sans contradiction mathématique.
+
+## Une transposition vérifiable sur le plateau
+
+**Exemple pédagogique.** Compare les suites 1.Cf3 Cf6 2.Cc3 Cc6 et 1.Cc3 Cc6 2.Cf3 Cf6. Les mêmes pièces occupent les mêmes cases, les Blancs ont le trait, aucun droit de roque n'a changé et aucune prise en passant n'est possible. Le compteur depuis le dernier mouvement de pion ou la dernière prise est de quatre demi-coups dans les deux cas. Les six champs FEN sont identiques ; cela ne signifie pas que tous les historiques de répétition possibles sont interchangeables.
+
+Dans un arbre, les deux chemins demeurent distincts. Dans un graphe de positions, tu peux les réunir et éviter de refaire la même analyse. Pour vérifier des règles dépendant de répétitions, il faut toutefois conserver l'information pertinente sur les chemins : l'identité du diagramme ne remplace pas tout l'historique.
+
+L'intérêt pratique est immédiat. Un répertoire organisé seulement comme une liste de suites devient fragile si l'adversaire inverse deux coups. Un répertoire organisé autour de positions repères te permet de reconnaître que tu connais déjà la structure, même si l'ordre a changé.
+
+## Popularité, score et évaluation : trois indicateurs à lire séparément
+
+Une base peut te montrer qu'une variante marque beaucoup de points avec les Blancs. Avant d'en déduire un avantage, regarde qui la joue et contre qui. Une ligne employée par les favoris contre des joueurs moins forts peut afficher un excellent score sans être objectivement supérieure à ses alternatives. Les parties rapides et classiques n'imposent pas non plus les mêmes contraintes.
+
+Une évaluation de moteur apporte un autre renseignement : ce programme, dans cette position et avec ce budget, préfère un coup. Pour approfondir une nouveauté, vérifie les réponses critiques et la stabilité de l'analyse quand tu augmentes les moyens de recherche. Une préférence stable est plus exploitable qu'une variation brève de quelques centièmes ; elle ne constitue toujours pas une preuve exhaustive de la valeur initiale du jeu.
+
+Enfin, la popularité mesure l'usage. Elle peut refléter une mode, un gain de préparation, la disponibilité de cours ou une préférence stratégique. Aucun de ces indicateurs ne permet à lui seul de déduire les deux autres.
+
+## Transformer le modèle en méthode de préparation
+
+Proposition de travail : prends une position repère de ton répertoire et écris trois choses. Quel plan voudrais-tu jouer si l'adversaire coopérait ? Quelle réponse adverse gêne le plus ce plan ? Quelle transition vers un autre type de position serais-tu prêt à accepter ?
+
+Analyse ensuite cette réponse gênante en premier. Tu passes d'une préparation qui confirme tes préférences à une préparation qui affronte les meilleures objections disponibles. C'est l'apport utile du langage des meilleures réponses, même lorsque tu ne disposes pas d'un équilibre démontré.
+
 ## Sources
 
 - Nash, J. (1951). *Non-Cooperative Games*. Annals of Mathematics, 54(2), 286–295. [Article](https://irving.vassar.edu/faculty/gj/FTU/io/literature/Nash51.pdf).
 - Russell, S., & Norvig, P. (s. d., chapitre en ligne). *Adversarial Search*. Artificial Intelligence: A Modern Approach. [Chapitre](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
-- Projet Syzygy (s. d.). *probetool — documentation des métriques de finales*. GitHub. [Documentation](https://github.com/syzygy1/probetool).
+- Projet Syzygy (s. d.). *probetool : documentation des métriques de finales*. GitHub. [Documentation](https://github.com/syzygy1/probetool).

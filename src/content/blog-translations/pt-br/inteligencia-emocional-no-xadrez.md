@@ -49,6 +49,8 @@ faq:
       dificuldade não é saber disso, é aplicar no momento em que o estado altera justamente a capacidade
       de decidir. Daí a utilidade de uma regra numérica, decidida a frio, do tipo: depois de duas
       derrotas seguidas, eu paro, seja qual for a minha impressão do momento.
+heroImageAlt: Uma mão segura uma tigela com água levemente ondulada.
+
 ---
 
 Você acabou de perder três partidas seguidas. Você sabe disso, sabe perfeitamente o que isso quer dizer, já leu artigos sobre o assunto.

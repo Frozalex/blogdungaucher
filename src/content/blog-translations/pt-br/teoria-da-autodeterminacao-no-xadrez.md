@@ -47,6 +47,7 @@ faq:
       Ela é amplamente sustentada pelos dados empíricos, sobretudo quanto à ligação entre apoio à
       autonomia e persistência. A parte mais discutida dela é a afirmação de que essas três necessidades
       são fundamentais e universais, difícil de falsear e debatida no seu alcance intercultural.
+heroImageAlt: Três raízes distintas sustentam uma árvore jovem.
 ---
 
 Você conhece alguém que parou de jogar xadrez.

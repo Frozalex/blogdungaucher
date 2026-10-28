@@ -42,6 +42,8 @@ faq:
       partij is gemaakt, met de overwogen zetten en je evaluatie op cruciale momenten, vormt een spoor
       buiten je geheugen. Zonder dat is een vergelijking tussen wat je dacht en wat er werkelijk was niet
       meer mogelijk: er blijft slechts één versie over, die van achteraf.
+heroImageAlt: Een leeg kader werpt een schaduw met het silhouet van een vaas.
+
 ---
 
 Analyse na afloop. We komen bij zet 27, degene waarbij alles kantelde. De computer toont de weerlegging: Txf7 won op slag.

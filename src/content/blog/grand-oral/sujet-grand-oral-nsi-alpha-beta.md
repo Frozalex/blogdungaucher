@@ -1,8 +1,6 @@
 ---
 title: "Sujet Grand Oral NSI : En quoi l'élagage alpha-bêta illustre-t-il l'optimisation d'une recherche arborescente ?"
-excerpt: >-
-  Sujet entièrement rédigé pour le Grand Oral spécialité NSI : optimisation algorithmique, élagage alpha-bêta,
-  réduction de complexité O(b^d) à O(b^(d/2)), code Python commenté. Texte de 10 minutes prêt à réciter.
+excerpt: "Une fiche de révision pour expliquer une coupure alpha-bêta, sa garantie à profondeur fixée et les limites du gain de calcul, avec renvoi au guide NSI."
 publishDate: "2026-05-08"
 category: grand-oral
 featured: false
@@ -22,12 +20,11 @@ tags:
   - Python
 seoTitle: "Grand Oral NSI : fiche sur l'élagage alpha-bêta"
 seoDescription: "Fiche de révision alpha-bêta : expliquer une coupure, comprendre la conservation du score minimax et nuancer le gain de calcul, avec renvoi au guide NSI."
-ogImage: /images/og/sujet-grand-oral-nsi-alpha-beta-og.webp
+ogImage: /images/og/sujet-grand-oral-nsi-alpha-beta-watermarked-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-nsi-alpha-beta-hero.webp
-  alt: >-
-    Les rayonnages ordonnés d'une bibliothèque universitaire moderne.
-  credit: "Szalax, CC0, via Wikimedia Commons"
+  src: /images/blog/sujet-grand-oral-nsi-alpha-beta-watermarked-hero.webp
+  alt: Les rayonnages ordonnés d'une bibliothèque universitaire moderne.
+  credit: Szalax, CC0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:University_of_Miskolc_Library_Reading_Room_2025_03.jpg
   license: CC0
 noindex: true

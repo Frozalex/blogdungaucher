@@ -1,135 +1,118 @@
 ---
-title: "Minimax in Chess: The Algorithm That Thinks for You"
-excerpt: "Minimax is the fundamental algorithm of strategic reflection in chess. From modern engines to your own thinking at the board, here's how this mathematical tool structures every decision."
-seoTitle: "Minimax Algorithm in Chess: Alpha-Beta, Negamax, and How Engines Calculate"
-seoDescription: "What is minimax in chess? Alpha-beta pruning, negamax, null-move, MCTS: how engines calculate the best move and what your brain does without knowing it."
+title: "Minimax in Chess: Search, Evaluation and the Limits of the Analogy"
+excerpt: "Minimax formalises a choice against the opponent’s best replies. Explore alpha-beta, negamax, selective search and MCTS without treating the algorithm as a proven model of your brain."
+seoTitle: "Minimax in Chess: Alpha-Beta, Negamax and Engine Search"
+seoDescription: "Minimax, negamax, alpha-beta and MCTS: understand engine search, its guarantees and limits, without presenting it as a demonstrated model of human cognition."
 enSlug: "minimax-in-chess"
-draft: false
 faq:
-  - question: "Does minimax always produce the best move?"
-    answer: >-
-      Yes, <strong>if the search reaches terminal positions</strong> (mate or stalemate). At finite depth
-      with a heuristic evaluation function, minimax produces the optimal move <em>according to the evaluation
-      and depth</em> used. That's why an engine rated 3500 Elo beats a human: its evaluation function + depth
-      are closer to the truth than a human's, not because it calculates 'perfectly'.
-  - question: "Why is it called 'negamax' rather than 'minimax' in code?"
-    answer: >-
-      Because in a zero-sum game, $\min(a,b) = -\max(-a,-b)$. Negamax exploits this symmetry to use <strong>a
-      single recursive function</strong> instead of two. It's purely a code simplification, with no
-      algorithmic change. Nearly all modern engines (Stockfish, Komodo, Leela Chess Zero) use negamax +
-      alpha-beta.
-  - question: "Does alpha-beta pruning change minimax's result?"
-    answer: >-
-      No, <strong>never</strong>. That's its fundamental property: alpha-beta produces exactly the same move
-      as pure minimax, but exploring far fewer nodes. Pruning strength depends on <strong>move
-      ordering</strong>: if you test the best move first, you prune massively; if you test the worst first,
-      you barely prune anything. That's why engines invest so much in move ordering (killer moves, history of
-      good moves).
-  - question: "Why does AlphaZero abandon minimax?"
-    answer: >-
-      Not really: it keeps a tree search (MCTS), but replaces alpha-beta's exhaustive exploration with a
-      <strong>probabilistic exploration guided</strong> by a neural network. The advantage: in positions
-      where the classical evaluation function struggles (long-term sacrifices, subtle positional play), the
-      neural network gives a more accurate estimate. The disadvantage: that network must be trained on
-      millions of games, requiring considerable hardware resources.
-  - question: "Does my brain really execute minimax when calculating?"
-    answer: >-
-      Approximately, yes. You perform a tree search with a very low branching factor (3-5 candidate moves
-      instead of 35), very limited depth (3-8 half-moves), and an intuitive evaluation function (positional
-      sense). You also use very powerful pruning heuristics: you <strong>reject</strong> most moves at a
-      glance without calculating them. The difference with an engine isn't qualitative, it's quantitative.
+  - question: "Does minimax always return the best move?"
+    answer: "On a finite tree searched to correctly valued terminal outcomes, it gives an optimal decision. With heuristic cutoffs, its guarantee concerns only that evaluated tree, not the position’s complete truth."
+  - question: "Does alpha-beta change the minimax value?"
+    answer: "With the same tree, depth and evaluations, exact alpha-beta preserves the minimax value. Several moves may share that value, so tie-breaking can vary. Additional selective pruning has different guarantees."
+  - question: "Do all engines use negamax and alpha-beta?"
+    answer: "No. Negamax is a formulation of minimax suited to zero-sum games. Stockfish uses selective alpha-beta search, while AlphaZero uses network-guided MCTS."
+  - question: "Does my brain execute minimax?"
+    answer: "It is a reasoning analogy: you compare moves and replies. The sources presented demonstrate neither an identical brain algorithm nor a fixed depth associated with Elo."
+heroImageAlt: A pruned tree rising above a chess piece.
+
 ---
 
-There's something strange about chess strategy, this millennial game of intuition and art, being reducible to an algorithm of a few lines. The minimax algorithm does exactly that: it formalizes the heart of strategic reasoning in a zero-sum game into an elegant mathematical recursion.
+There is something striking about expressing strategy in an old game of intuition and art through a short algorithm. Minimax formalises strategic choice in a zero-sum game as a mathematical recurrence. It also provides a useful analogy for organising calculation, without being a demonstrated description of your brain. For the theoretical framework, see [game theory in chess](/en/blog/game-theory-in-chess/); for existence of a game value under specified rules, see [Zermelo](/en/blog/zermelo-paradox/).
 
-## The Intuition Behind Minimax
+## The intuition behind minimax
 
-Imagine you play White and want to choose the best possible move. How to define it? The best move is the one that, assuming your opponent also plays perfectly, gives you the best final result.
+Imagine playing White and wanting the best move. Define it as the move yielding the best final result when the opponent also chooses optimally.
 
-This recursive definition is the essence of minimax. White wants to maximize the result (from White's viewpoint). Black wants to minimize the result. Both players alternate, and at each tree level, it's one or the other playing.
+That recursive definition is minimax’s core. White maximises the outcome from White’s perspective; Black minimises it from that same perspective, equivalently maximising from Black’s. The players alternate at successive tree levels.
 
-The mathematical formalization is direct:
+A mathematical formulation is:
 
-$$\text{minimax}(p, d) = \begin{cases} \text{eval}(p) & \text{if } d = 0 \text{ or terminal} \\ \max_{c \in C(p)} \text{minimax}(\text{succ}(p,c), d-1) & \text{White's turn} \\ \min_{c \in C(p)} \text{minimax}(\text{succ}(p,c), d-1) & \text{Black's turn} \end{cases}$$
+$$\text{minimax}(p,d)=\begin{cases}\text{evaluation}(p)&\text{if }d=0\text{ or }p\text{ is terminal}\\\max_{c\in C(p)}\text{minimax}(\text{succ}(p,c),d-1)&\text{if White is to move}\\\min_{c\in C(p)}\text{minimax}(\text{succ}(p,c),d-1)&\text{if Black is to move}\end{cases}$$
 
-## The Evaluation Function: The Heart of the Engine
+Here $p$ is the current position, $d$ remaining depth, $C(p)$ the legal moves and $\text{succ}(p,c)$ the position after move $c$.
 
-Pure minimax would solve chess perfectly if you could explore the complete tree to terminal positions. In practice, this is impossible due to combinatorial complexity ($10^{120}$ leaves according to Shannon). You must stop search at finite depth and evaluate non-terminal positions with a **heuristic evaluation function**.
+## The evaluation function: the engine’s assessment
 
-Modern engines like [Stockfish](https://en.wikipedia.org/wiki/Stockfish_(chess)) use extremely sophisticated evaluation functions that integrate:
+Minimax would solve a finite chess tree if the complete tree could be explored to terminal positions. That is not practical with current resources because of combinatorial growth. Shannon’s order of magnitude illustrates move-sequence explosion, not an exact leaf count. Search is stopped at finite depth, and nonterminal positions receive a **heuristic evaluation**.
 
-- **Material value** with context-dependent value tables
-- **Piece mobility**: the number of legal moves available
-- **King safety**: pawn structure solidity around the king
-- **Pawn structure**: doubled, isolated, backward, passed pawns
-- **Center control**: occupation of e4, d4, e5, d5 squares
+A traditional evaluation combines material, mobility, king safety and pawn structure. These help interpret a position but are not context-independent absolute values.
 
-## Alpha-Beta Pruning: The Intelligence of Giving Up
+Stockfish integrated NNUE neural evaluation in 2020. Distinguish that architecture from older hand-written sums of features. In the recurrence, “evaluation” must return exact utility for a terminal outcome and an estimate for a position cut off only because depth reached zero.
 
-Raw minimax is spectacularly inefficient. For search depth $d$ and branching factor $b$, you need to evaluate $b^d$ positions. At $b = 35$ and $d = 10$, that's $2.8 \times 10^{15}$. Impossible.
+## Alpha-beta pruning: avoiding unnecessary work
 
-[Alpha-beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) solves this by pruning branches that cannot influence the final decision.
+Unpruned minimax grows rapidly. With depth $d$ half-moves and uniform branching $b$, leaf count is on the order of $b^d$. For $b=35$ and $d=10$, $35^{10}\approx2.8\times10^{15}$ leaves in that illustrative model.
 
-The principle: if you've already found an option for White guaranteeing value $\alpha$, and you explore a branch where Black can force a result inferior to $\alpha$ for White, this branch can be abandoned.
+[Alpha-beta pruning](https://fr.wikipedia.org/wiki/%C3%89lagage_alpha-b%C3%AAta), associated with work by several researchers including John McCarthy, reduces work by skipping branches that cannot influence the final decision.
 
-In the optimal case (with well-ordered moves), alpha-beta reduces nodes from $b^d$ to $b^{d/2}$, effectively doubling the possible search depth.
+If White already has an option guaranteeing value $\alpha$, and a branch lets Black force a value below $\alpha$ for White, White need not choose that branch. A better option is already available.
 
-### Negamax: The Simplification That Changes the Code
+Maintain two bounds in the same score perspective:
 
-In practice, almost no engine implements minimax in its two-branch form (max for White, min for Black). All use **negamax**, exploiting $\min(a,b) = -\max(-a,-b)$ in a zero-sum game. Conceptually identical, but much shorter (15 lines of code vs 40).
+- $\alpha$: a lower bound available to the maximising player, White here.
+- $\beta$: an upper bound available through the minimising player, Black here.
 
-### Null-Move Pruning: Passing Your Turn to Gain Time
+When $\alpha\geq\beta$, the current branch can be cut because it cannot change an already available ancestor choice.
 
-A powerful heuristic: what if you **pass your turn**? If the position remains good for you despite this free move given to the opponent, then it's probably *very* good for you. The technique is standard since the 1990s.
+With ideal move ordering, cost approaches $O(b^{d/2})$. This is an asymptotic order, not an equation yielding an exact real-position node count.
 
-## Advanced Techniques in Modern Engines
+![Alpha-beta pruning on a three-level minimax tree: grey branches cannot influence the final choice. Alpha is already 3 for MAX, so a branch where MIN can force less than 3 need not be fully explored.](/images/en/minimax-01-alpha-beta.svg)
 
-**Transposition tables**: a cache of already-analyzed positions. If the same position is reached by different move orders, the engine reuses the previous analysis.
+### Negamax: simplifying the formulation
 
-**Iterative deepening**: instead of directly searching to depth $d$, the engine chains successive searches at depths 1, 2, 3, ..., $d$.
+Negamax uses $\min(a,b)=-\max(-a,-b)$ and evaluates from the side-to-move perspective. The sign changes when the side changes. It reformulates minimax; it does not describe every engine or guarantee a precise reduction in code length.
 
-**Quiescence search**: at maximum depth, instead of statically evaluating, search continues until a "quiescent" (stable) position.
+### Null-move pruning: testing a hypothetical pass
 
-**Search extensions**: in certain positions, search depth is automatically extended.
+A useful heuristic asks what happens if you **pass your turn**. If the position remains favourable despite giving the opponent a move, the engine may cut further analysis under specified conditions. This is **null-move pruning**.
 
-**Late move reduction (LMR)**: for less promising moves, depth is reduced.
+The hypothetical pass is not a legal chess move. Zugzwang is a known risk: having to move can worsen the result, particularly in some endgames. Implementations add conditions and checks to limit that risk. No universal two-to-fourfold speed gain is established here.
 
-## The History of Minimax Engines
+![Null-move pruning: a hypothetical pass may support cutting search when the position remains favourable. Zugzwang, where having to move worsens the result, is a known risk requiring safeguards.](/images/en/minimax-03-null-move.svg)
 
-In 1950, [Claude Shannon](https://en.wikipedia.org/wiki/Claude_Shannon) laid the theoretical foundations.
+## Advanced techniques in modern engines
 
-The apex of classical minimax was [Deep Blue](https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)), which beat [Kasparov](https://en.wikipedia.org/wiki/Garry_Kasparov) in 1997. Deep Blue evaluated 200 million positions per second.
+Engines such as Stockfish add techniques beyond basic alpha-beta:
 
-[Stockfish](https://en.wikipedia.org/wiki/Stockfish_(chess)), developed since 2008, represents the culmination of classical minimax with manual evaluation. Since 2020, it integrates NNUE (Efficiently Updatable Neural Network).
+**Transposition tables:** cache information about previously searched positions. When another move order reaches a matching state, the engine may reuse suitable information instead of repeating all the work. Reuse depends on stored depth, bound type and relevant state.
 
-## AlphaZero and Surpassing Minimax
+![Two paths can reach the same position](/images/en/minimax-04-transposition.svg)
 
-In 2017, DeepMind published [AlphaZero](https://en.wikipedia.org/wiki/AlphaZero), a program that learned to play chess by self-play in hours and convincingly beat Stockfish.
+**Iterative deepening:** search depths 1, 2, 3 and onward rather than start immediately at $d$. Earlier iterations help order moves for later searches and improve pruning efficiency.
 
-AlphaZero doesn't use classical minimax but a Monte Carlo Tree Search (MCTS) guided by a deep neural network. Instead of exhaustively exploring the tree with pruning, MCTS stochastically explores the most promising branches according to a learned policy.
+**Quiescence search:** at the nominal cutoff, continue selected tactical moves according to the implementation rather than always evaluate statically. A checked king requires legal responses, not captures alone. This helps address unresolved tactical sequences that would distort a static score.
 
-What struck the chess community wasn't just AlphaZero's performance, but its playing style. AlphaZero plays audaciously and creatively, with long-term material sacrifices and a preference for piece activity over immediate material advantages.
+**Search extensions:** some lines receive additional depth, such as those involving checks, advanced passed pawns or other critical conditions, according to the engine’s design.
 
-## Minimax in Your Head
+**Late move reductions, LMR:** less promising later moves may be searched at reduced depth to save time. A better-than-expected result may trigger further search.
 
-The most fascinating aspect of minimax for the practical player is that it describes what you already do when calculating variations. When you think "if I play there, he can respond this or that. If he responds this, I play this and he's forced to...", you mentally execute a truncated minimax algorithm.
+## Search that evolves
 
-Your human limits determine the "depth" of your search. A 1200 player perhaps explores 2-3 levels reliably. A Grandmaster explores 7-10 levels in strategic positions.
+Stockfish’s published code combines search, transposition tables, iterative deepening and selective mechanisms. Those should not be confused with exact alpha-beta on a fixed tree.
 
-The difference between an average player and a Grandmaster isn't just depth: it's also the quality of the internal evaluation function (positional intuition) and the effectiveness of pruning (the capacity to quickly identify relevant moves).
+The 2020 NNUE announcement illustrates another change: replacing evaluation without abandoning the alpha-beta search family. A modern engine is not merely a material formula followed by blind exploration.
+
+## AlphaZero and alternatives to classical minimax search
+
+In 2017, [DeepMind](https://fr.wikipedia.org/wiki/Google_DeepMind) published [AlphaZero](https://fr.wikipedia.org/wiki/AlphaZero) results: learned self-play evaluation and search beat Stockfish in a particular experimental setup. Training hours need the accompanying hardware and protocol context.
+
+AlphaZero uses neural-network-guided [Monte Carlo tree search](https://fr.wikipedia.org/wiki/Recherche_arborescente_Monte-Carlo), MCTS, rather than the conventional minimax search described above. Search selects paths using its learned policy and evaluates explored leaves with the network; simulations do not all run to checkmate.
+
+Published games attracted attention through long-term material sacrifices and piece activity. Calling the style intuitive or creative describes an interpretation of moves, not a measured human cognitive process in the program.
+
+AlphaZero demonstrates that conventional alpha-beta is not the only route to strong chess performance. It does not establish a “deeper human understanding” or solve the game. For the combinatorial problem, see [why chess is an almost impossible mathematical problem](/en/blog/chess-mathematical-problem-and-ai/); for another framework requiring careful distinction, see [chaos theory in chess](/en/blog/chaos-theory-in-chess/).
+
+## Minimax as a tool for your calculation
+
+When asking “If I play there, what is their best reply?”, minimax can organise your reasoning. That does not show your brain executes it or assign three-to-eight or seven-to-ten levels to a player category.
+
+In a training position, choose two candidates and examine a reply to each. Then look for a defence you had not considered. The goal is better checking, not reproducing a measured human search depth.
+
+![Calculation: an analogy to clarify](/images/en/minimax-02-profondeur-humain-moteur.svg)
 
 ## Sources
 
-- Shannon, C. E. (1950). Programming a computer for playing chess. *Philosophical Magazine*, 41(314), 256-275.
-- Silver, D., et al. (2017). Mastering chess and shogi by self-play. arXiv:1712.01815.
-- Knuth, D. E., & Moore, R. W. (1975). An analysis of alpha-beta pruning. *Artificial Intelligence*, 6(4), 293-326.
-- Campbell, M., Hoane, A. J., & Hsu, F. (2002). Deep Blue. *Artificial Intelligence*, 134(1-2), 57-83.
-
-## Key Takeaways
-
-- Minimax is the algorithm that explores the game tree alternating maximization (White) and minimization (Black)
-- **Negamax** is the modern, shorter formulation, mathematically equivalent
-- **Alpha-beta pruning** dramatically reduces the number of nodes to explore without changing the result
-- Modern engines add heuristic evaluation functions, **transposition tables**, null-move pruning, iterative deepening, and quiescence
-- **AlphaZero** showed that an MCTS + neural network approach can surpass pure minimax for complex games
-- Your brain mentally executes a simplified version of minimax (low branching + strong intuitive pruning)
+- Russell, S., & Norvig, P. (undated online chapter). *Adversarial Search*. Artificial Intelligence: A Modern Approach. [Chapter](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).
+- Stockfish team (undated). *search.cpp*. Official repository. [Code](https://github.com/official-stockfish/Stockfish/blob/master/src/search.cpp).
+- Stockfish team (2020). *Introducing NNUE Evaluation*. [Announcement](https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/).
+- Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Article](https://arxiv.org/html/1712.01815v1).

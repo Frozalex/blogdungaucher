@@ -7,6 +7,8 @@ excerpt: >-
 seoTitle: "Decisão sob incerteza no xadrez: utilidade esperada, Bayes e racionalidade limitada"
 seoDescription: "Utilidade esperada, critério bayesiano, aversão à perda, racionalidade limitada: as ferramentas da teoria da decisão aplicadas ao momento em que você escolhe um lance sem saber tudo."
 frSlug: decision-sous-incertitude-aux-echecs
+heroImageAlt: Caminhos partem de uma soleira de pedra e desaparecem na névoa.
+
 ---
 
 Você tem quatro lances candidatos. Não tem tempo para calcular cada um até o fim. Sabe que sua avaliação é aproximada. Sabe que o adversário não vai necessariamente jogar a melhor resposta teórica. Precisa escolher mesmo assim.
@@ -52,7 +54,7 @@ O **critério maximin** diz: escolha a ação cujo pior resultado possível é o
 
 Matematicamente: escolha a ação $a$ que maximiza $\min_s U(s, a)$.
 
-No xadrez, esse critério corresponde ao jogo **sólido**: você escolhe o lance cujo pior resposta adversária possível ainda te deixa em posição jogável. Jogadores como [Tigran Petrossian](https://pt.wikipedia.org/wiki/Tigran_Petrossian) ou [Anatoli Karpov](https://pt.wikipedia.org/wiki/Anatoli_Karpov) fundaram grande parte do seu jogo em critérios próximos do maximin.
+No xadrez, esse critério corresponde ao jogo **sólido**: você escolhe o lance cujo pior resposta adversária possível ainda te deixa em posição jogável. Jogadores como [Tigran Petrossian](https://pt.wikipedia.org/wiki/Tigran_Petrossian) ou Anatoli Karpov fundaram grande parte do seu jogo em critérios próximos do maximin.
 
 A vantagem: você se protege dos erros de estimativa. Pode se enganar sobre as probabilidades e ainda conservar um resultado aceitável.
 

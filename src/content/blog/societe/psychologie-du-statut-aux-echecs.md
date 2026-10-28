@@ -51,13 +51,16 @@ faq:
       Parce qu'il est légitime. Contrairement à une hiérarchie héritée ou arbitraire, il est mérité,
       transparent et révisable, ce qui interdit de l'attribuer à l'injustice. Un rang qu'on ne peut pas
       contester renvoie entièrement à soi, ce qui est une charge d'un autre type.
+heroImage:
+  src: /images/blog/psychologie-du-statut-aux-echecs-hero.webp
+  alt: Une silhouette quitte une série de socles pour rejoindre le sol libre.
+ogImage: /images/og/psychologie-du-statut-aux-echecs-og.webp
+
 ---
 
-Un club, un mardi soir. Personne ne porte d'uniforme, personne n'a de titre professionnel affiché, personne ne sait qui gagne combien.
+Le statut social aux échecs peut s'appuyer sur des titres, un classement et une réputation au sein d'un groupe. Ces signes rendent certaines différences de niveau visibles, sans résumer toutes les positions occupées dans la vie d'un club.
 
-Et pourtant, tout le monde connaît le classement exact de tout le monde. À l'unité près.
-
-Il existe peu d'espaces sociaux où la hiérarchie est aussi explicite, aussi précise et aussi publique. Ce qui en fait un objet remarquable pour comprendre ce que le statut fait réellement aux gens.
+L'enjeu est de comprendre comment une hiérarchie sportive intervient dans les relations, la reconnaissance et la prise de parole. Il faut distinguer la performance mesurée, le prestige attribué et les comportements envers les autres, plutôt que déduire l'un de l'autre.
 
 ## Les fonctionnaires de Whitehall
 

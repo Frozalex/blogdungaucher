@@ -1,191 +1,121 @@
 ---
 heroImageAlt: "Pixel art illustration: a dark stone-walled cell, barred light casting a checkerboard pattern on the floor, a black king at the center, a door open onto a lit corridor; title \"Chess in prison: when the board becomes a tool for rehabilitation\" overlaid."
-title: "Chess in Prison: When the Chessboard Becomes a Rehabilitation Tool"
-excerpt: >-
-  Inmates learning to anticipate three moves ahead, manage the frustration of a lost piece, respect an opponent. What
-  chess therapy programmes in prison really reveal about rehabilitation.
-seoTitle: "Chess in Prison: Rehabilitation, Executive Functions and Recidivism"
-seoDescription: >-
-  Change Through Chess, San Quentin, Rikers Island: prison chess programmes show measurable effects on impulsivity and
-  recidivism. What criminology really says about the chessboard as a rehabilitation tool.
+title: "Chess in Prison: Educational Workshops and Effects to Evaluate"
+excerpt: "Chess workshops and tournaments exist in custody. What they can offer, what sources document and why their existence does not establish reduced reoffending."
+seoTitle: "Chess in Prison: Programmes, Education and Evidence Limits"
+seoDescription: "Chess for Freedom, French initiatives and correctional education: distinguish documented activities, educational aims and effects not established for chess."
 enSlug: "chess-in-prison"
 faq:
-  - question: "Do chess-in-prison programs exist in France?"
-    answer: >-
-      Occasional initiatives exist, driven by local clubs and volunteers, sometimes with support from the
-      French Chess Federation. There is no structured national program to date. If you're a prison educator
-      or volunteer wanting to launch something, the FFE can be a useful contact point.
-  - question: "Can inmates participate in tournaments?"
-    answer: >-
-      Some facilities organize internal tournaments. In a few documented cases in the UK and US, inmates have
-      participated in competitions against outside players, sometimes remotely via secure systems. Change
-      Through Chess has organized several such matches, and participants often describe them as a notable
-      experience: being treated as a player, not as a number.
-  - question: "Does this also work with at-risk youth outside the prison context?"
-    answer: >-
-      Yes. Similar programs exist in disadvantaged neighborhoods, priority-education schools, and juvenile
-      placement centers. The targeted cognitive mechanisms are identical. Observed results are comparable,
-      with often an easier reception, the prison environment adding a layer of distrust toward any
-      educational initiative.
-  - question: "Can chess be used to work on empathy?"
-    answer: >-
-      It's one of the most interesting dimensions. Anticipating the opponent's move implies putting yourself
-      in their place, modeling their board vision, their fears, their intentions. It's a concrete,
-      measurable, and repeated form of theory-of-mind practice, which behavioral sciences consider one of the
-      foundations of empathy.
+  - question: "Are there French initiatives?"
+    answer: "The French Chess Federation documents discussions with prison authorities in 2018 and mentions Chess for Freedom in 2023. These sources are not a complete current register and do not justify claiming that no national initiative exists."
+  - question: "Can incarcerated people compete in tournaments?"
+    answer: "Yes, within arrangements authorised by institutions. Chess for Freedom competitions provide documented examples. Platform access and participation conditions remain controlled."
+  - question: "Does chess reduce reoffending?"
+    answer: "The documents examined here do not establish that effect specifically for chess. Findings about correctional education more broadly do not measure the effectiveness of a chess workshop."
+  - question: "Does anticipating an opponent develop empathy?"
+    answer: "Calculating an opponent’s reply is a game task. It does not demonstrate general improvement in empathy, theory of mind or relationships outside the workshop."
 ---
 
-It is 2 p.m. in a prison on the outskirts of London. The room is small, the furniture battered. Two inmates sit facing a chessboard on a formica table. There is no close watch: the officer is in the corridor.
+A table, a board, a game played to its conclusion: a workshop in custody can offer time for play and learning. Its value does not require an imagined prison scene or a promise that a combination transforms someone’s life.
 
-No phone. No television. Silence has settled naturally, rare enough here that other inmates pause at the door, curious.
+Programmes exist. Discussing them requires separating three questions: was an activity organised? What do participants and facilitators report? Does evaluation attribute a lasting change to chess? A tournament announcement answers the first, not automatically the others.
 
-One pushes a knight. The other thinks two minutes before replying.
+## Educational aims, not a profile of incarcerated people
 
-What happens in that room is not symbolic. It is not recreation. It is deliberate. Since 2014 the British organisation [Change Through Chess](https://www.changethroughchess.com/) has worked in UK prisons with a clear aim: use chess not as a pastime but as a tool to develop cognitive functions tied directly to recidivism.
+You can ask a player to explain a choice, check a threat and revisit a position after an error. These are concrete workshop tasks to observe. They do not diagnose impulsivity, lack of empathy or a brain deficit.
 
-An inmate who learns to see three moves ahead on a board may also learn something about the consequences of decisions off the board. That hypothesis is no longer purely intuitive. It has grounding in modern criminology.
+Being incarcerated does not describe a way of thinking. Reoffending cannot be reduced to a miscalculated decision: a game alone tells us nothing about housing, employment opportunities, social connections or support needs after release.
 
-## Why recidivism starts in the head
+Comparing a chess decision with an everyday decision may open a discussion. Transfer between them remains a hypothesis, not an effect measured merely because someone learned to spot a fork.
 
-Contemporary criminology has gradually shifted focus. Behind well-documented social factors (poverty, exclusion, fractured families), specific cognitive profiles appear in recidivism research.
+![Distinguish a workshop task, an educational objective and a broader effect requiring evaluation.](/images/en/echecs-prison-01-deficits-cognitifs.svg)
 
-[Ross and Fabiano](https://www.researchgate.net/publication/284684876_Time_to_Think_A_Cognitive_Model_of_Delinquency_Prevention_and_Offender_Rehabilitation) formalised this link in the 1980s with their *Reasoning and Rehabilitation* programme: much repeat offending correlates with deficits in three precise cognitive domains.
+## Verifiable programmes and competitions
 
-**Short-term thinking.** Difficulty projecting distant consequences of an action. The immediate act weighs; what happens in three weeks or three years is hard to treat as a real decision variable. That is not moral blindness; it is a cognitive limit on temporal projection.
+### Chess for Freedom: an identifiable initiative
 
-**Impulsivity.** Fast reactions to stimuli without enough inhibition time. The gap between emotion and action is too short or absent. Anger becomes a decision in seconds before the prefrontal cortex can weigh consequences.
+FIDE and the Cook County Sheriff’s Office announced **Chess for Freedom in April 2021**. This is an identifiable prison-chess initiative. Organisers’ reintegration objectives must still be distinguished from independent evaluation. [Launch announcement](https://chessforfreedom.fide.com/2021/04/13/chess-for-freedom-program-launched/)
 
-**Difficulty taking another's perspective.** Weak [theory of mind](https://en.wikipedia.org/wiki/Theory_of_mind): trouble modelling what someone else thinks, feels, anticipates. Harmful acts toward others are often eased by failing to represent that other as a subject with an inner life.
+A federation can document what it organises. Its project description does not replace a protocol identifying who was assessed, when and against which comparison group. A personal account can matter without measuring reduced reoffending.
 
-Those three deficits are precisely the three axes a chess game trains, move after move, every session. When educators look for activities targeting inhibition, planning, and theory of mind, they often end up putting down a board. The fit is too tight to ignore.
+### Playing with other institutions
 
-## Programmes that document outcomes
+In May 2026, FIDE reported continental championships actually played by teams of incarcerated people. This documents organised competition, not an effect after release. [Organisers’ report](https://www.fide.com/2nd-continental-championships-for-prisoners-conclude-with-a-record-number-of-countries-teams-participating/)
 
-### Change Through Chess (UK, since 2014)
+The 2025 announcement specified four-player teams, Chess.com and ten minutes plus five seconds per move. These were conditions for that edition, not general permission for Internet access in prison. [Competition format](https://www.fide.com/first-continental-online-chess-championships-for-prisoners-announced/)
 
-Founded by educators and a former tournament player, Change Through Chess works in prisons, young-offender units, and resettlement centres across the UK.
+Preparing a workshop therefore requires examining the institution’s arrangements: room, equipment, facilitators, authorised access and schedule. Competitive strength is not the only possible objective; an introductory session can be chosen for its own sake.
 
-Its approach is explicitly cognitive, not merely recreational. Sessions structure around three objectives tied to Ross and Fabiano's deficits:
+![A workshop needs explicit aims, participation conditions and observations; external effects do not follow automatically.](/images/en/echecs-prison-02-objectifs-ctc.svg)
 
-**Long-term planning**: learn to see the position three or four moves ahead, not only the next move. Understand that each action creates a new reality with its own constraints.
+### France: investigate initiatives rather than announce their absence
 
-**Frustration management**: lose a piece, land in a bad position, stay seated and think instead of walking away. The board forces you to face adversity calmly and look for a way out rather than flee or explode.
+The French Chess Federation reports a September 2018 meeting with prison authorities about the 2019 objectives agreement. It also mentions Chess for Freedom in a January 2023 announcement by its Health, Social and Disability commission. [Federation–prison authority meeting](https://www.echecs.asso.fr/Actu.aspx?Ref=11278), [commission announcement](https://www.echecs.asso.fr/Actu.aspx?Ref=14284)
 
-**Opponent modelling**: anticipating what the other will play means entering their perspective mentally. *What do they see on the board? What do they want? What do they fear?* That is the theory-of-mind exercise rehabilitation programmes try to build.
+These records are neither a current register of every institution nor proof that all have the same programme. They do prevent presenting absence of a national initiative as established fact. For a concrete project, check with the institution and relevant federation contacts.
 
-Reports published between 2017 and 2023 describe effects observed by prison educators: fewer disciplinary incidents in the weeks after sessions, better behaviour in prison classrooms, and in some cases reduced social isolation among participants.
+## RAND’s figure: an unjustified jump from education to chess
 
-These are internal reports, not randomised controlled trials. Interpret with caution. Their consistency with cognitive models of recidivism is striking.
+Davis and colleagues (RAND, 2013, Table 3.1) report a recidivism odds ratio of **0.57**, with a 95% confidence interval of **0.47–0.70**, associated with correctional education in studies rated methodological levels 4–5. This synthesis does not measure a chess-specific effect. [Full report](https://www.rand.org/content/dam/rand/pubs/research_reports/RR200/RR266/RAND_RR266.pdf)
 
-### From Rikers Island to San Quentin
+Odds and probability differ: for probability p, odds equal p/(1−p). The often-quoted 43% therefore means neither a fall of 43 percentage points nor an individual guarantee. Attributing it to a chess club without corresponding research would be even less justified.
 
-In the United States prison chess programmes have a longer history. The chess club at [San Quentin State Prison](https://en.wikipedia.org/wiki/San_Quentin_State_Prison) in California is among the best documented. Active for decades, it has produced several regionally competitive players and national media coverage.
+Research on general or vocational education does not establish which component produces an outcome in another programme. Chess requires a suitable question, measures and comparison group.
 
-What stands out in participant interviews is not playing strength. It is recurring phrases: *"I learned to think before I acted." "I understood a bad decision has consequences you cannot erase." "Chess taught me to put myself in someone else's place."*
+![Do not confuse correctional-education findings, odds ratios and an effect specific to a chess workshop.](/images/en/echecs-prison-03-rand-recidive.svg)
 
-Those phrases are not random anecdotes. They map exactly onto Ross and Fabiano's three deficits.
+## What the board lets you offer
 
-At [Rikers Island](https://en.wikipedia.org/wiki/Rikers_Island), New York's jail complex, similar programmes sit inside broader education initiatives. Studies on the overall impact of prison education, of which cognitive programmes are one part, regularly show lower recidivism among participants. The RAND Corporation published a landmark meta-analysis in 2013.
+**Revisit a decision.** A recorded position allows replaying a choice and alternatives. It shows moves, not the player’s entire thought process. Asking what they considered is more precise than assuming the board “reveals everything”.
 
-> **Davis LM, et al.** (2013). *Evaluating the Effectiveness of Correctional Education.* RAND Corporation.
+**Meet an opponent within shared rules.** A workshop can explain rules, ways to request help and post-game discussion. Respect is not automatically produced by a board; facilitation is part of the experience offered.
 
-That study, covering dozens of educational programmes in US prisons, estimated that inmates who participated in education had **43% lower odds of reincarceration** within three years of release. It addresses education broadly, not chess specifically. But it places cognitive stimulation in a framework where impact on recidivism is now well documented.
+**Adapt difficulty.** A beginner might work on a basic mate while someone else analyses a game. Participants do not arrive with identical knowledge, experiences or constraints. Shared rules do not imply equal prior resources.
 
-### France: local initiatives, no national programme
+**Make room for enjoyment.** Learning a game, solving an exercise or sharing a session can be explicit objectives. An activity does not need relabelling as “therapy” to have value.
 
-A frequent question in France: are there equivalent programmes? The answer is nuanced.
+![Educational possibilities: revisit decisions, share rules and adapt exercises, without guaranteeing personal transformation.](/images/en/echecs-prison-04-specificite-echecs.svg)
 
-Punctual initiatives exist, run by local clubs, volunteers, and sometimes with support from the [French Chess Federation](https://www.echecs.asso.fr/). Games have been organised in prisons in Paris, Lyon, Marseille, often started by an educator or an inmate player who convinced administration.
+## Empathy, attention and other contexts
 
-There is still no structured national programme comparable to Change Through Chess in the UK. The French prison administration has no established chess protocol. It remains an open field.
+Calculating the best reply from the other side does not demonstrate better understanding of someone’s emotions. Strategic analysis, respectful conversation and changed empathy are different outcomes.
 
-## What chess offers that other activities do not
+Likewise, an engaging session is not ADHD treatment. Incarceration neither diagnoses ADHD nor justifies an unverified prevalence estimate. Individual needs and care decisions cannot be inferred from a puzzle score.
 
-The question deserves a direct answer: why chess rather than visual arts, sport, music, or theatre, all common in rehabilitation programmes?
+For general cognitive-effect limits, see [chess and the brain](/en/blog/chess-and-the-brain/). Projects for young people outside custody need their own evaluation; outcomes are not necessarily identical to a prison workshop’s.
 
-Each activity trains different dimensions. What is specific to chess:
+## Evaluating a workshop without promising all of reintegration
 
-**Failure is immediate, visible, and irreversible.** In football a bad shot can be followed by a defensive recovery. In chess a played move stays played. The resulting position is the direct, irreversible consequence of your decision. That is learning about causality and personal responsibility with a clarity few activities provide.
+First choose what to observe: attendance, equipment access, understanding a rule, explaining a variation or reported satisfaction. These indicators answer different questions. None measures reoffending alone.
 
-**The opponent is always respected, never physically dominated.** In a prison where physical power dynamics are daily reality, the board imposes the opposite protocol: you win by thinking better, not by being stronger. Intellectual dominance is not only allowed; it is the only path. That inversion is symbolically powerful where physical hierarchy structures everything.
+Also note who could participate, who agreed, cancelled sessions and people who stopped. Comparing volunteers with everyone else may mix initial motivation with activity effects. A before-and-after result does not remove every competing explanation.
 
-**The game is universal and ignores pre-existing hierarchies.** An inmate without formal education can beat someone with degrees. That fairness of starting position matters for people whose social experience often involves hierarchies felt as inaccessible or unjust. On the board nobody has a head start. Everything is built move by move.
+Evaluation after release would also require defining the event, follow-up period, available data and comparison. Rearrest, reconviction and reincarceration are not synonyms. Follow-up must respect data-access conditions and confidentiality.
 
-**Thinking becomes visible.** In chess you cannot fake the quality of your reflection: the position shows everything. That transparency of thought (what I played reveals how I reasoned) can be a strong lever to help someone observe their own decision patterns.
+Organisation and adaptations belong with institutional staff and relevant professionals. A list of diagnoses does not determine here who would be “unsuitable” for chess. Describe an accessible activity within its real setting without placing a medical or criminological promise on its facilitator.
 
-## The same mechanisms, other contexts
+### A summary table
 
-The cognitive deficits chess targets in prison (impulsivity, weak planning, difficulty modelling others) also appear in other profiles linked to social vulnerability. The article on [chess and ADHD](/en/blog/chess-and-adhd/) explores the same mechanisms for a neurodevelopmental profile common in custody: an estimated 25 to 40% of incarcerated people have undiagnosed ADHD.
-
-That matters. If a large share of impulsive behaviour leading to incarceration is neurological rather than purely "moral," training executive functions (with chess among the tools) takes on added clarity.
-
-## Limits: neither romance nor naivety
-
-Several cautions apply before claiming chess "saves" inmates.
-
-**Participant selection biases results.** Inmates who volunteer for chess programmes likely already differ in motivation, desire to stand out, or how they use time, from those who do not. Measuring impact only on participants partly captures motivation effects, not necessarily chess effects.
-
-**Effects fade without follow-up.** The strongest programmes combine chess with broader education and post-release support. The board alone, without context or follow-up, produces little lasting change. It is not a vaccine; it is training. Training must continue.
-
-**Rigorous studies are still scarce.** Most data are observational, from organisations with incentives to highlight positive outcomes. Randomised controlled trials on this exact topic are rare. The field needs more independent, rigorous research.
-
-**Some custody profiles are poor fits.** People with severe personality disorders, dissociative disorders, or histories of serious violence in competitive settings are not necessarily good candidates for group chess. Prior professional assessment matters.
-
-These limits do not disqualify the approach. They frame honest interpretation.
-
----
-
-### Summary in one table
-
-| Aspect | What the data suggest |
+| Question | What to retain |
 | --- | --- |
-| Cognitive deficits and recidivism | Ross & Fabiano: impulsivity, short-term thinking, and weak theory of mind predict recidivism measurably. |
-| What chess trains | Planning three to four moves ahead, inhibiting impulsivity, modelling the opponent: the three targeted deficits, move after move. |
-| Available evidence | Change Through Chess reports (2017-2023), San Quentin testimonies, RAND meta-analysis on prison education (2013). Few direct randomised trials. |
-| Main limitation | Selection bias: participants are often already motivated. Effects need follow-up to last. |
-| Situation in France | Punctual initiatives but no structured national programme like the UK model. |
+| Do programmes exist? | FIDE and French federation sources identify initiatives and events. |
+| What can a workshop aim for? | Learning chess, explaining choices and sharing a supported activity. |
+| Is chess-specific reoffending measured here? | No; RAND concerns a different set of interventions. |
+| Is empathy guaranteed? | No; anticipating a move does not measure general transfer. |
+| What should be checked before starting? | Local conditions, objectives, participation and evaluation arrangements. |
 
----
+**After reading:** if you support a workshop, choose a limited objective and say how you will observe it. “Understand opposition in an endgame” is easier to check than “change behaviour outside prison”. Then revise the project from observations, including difficulties.
 
-## Frequently asked questions
+## Further reading
 
-**Do prison chess programmes exist in France?**
+- [Chess and ADHD: distinguish practice from care](/en/blog/chess-and-adhd/)
+- [Chess and the brain: what studies measure](/en/blog/chess-and-the-brain/)
 
-Punctual initiatives exist through local clubs and volunteers, sometimes with French Chess Federation support. There is no structured national programme yet. If you work in corrections or volunteer and want to start something, the federation can be a useful contact point.
+## Sources
 
-**Can inmates play in tournaments?**
-
-Some facilities run internal tournaments. In documented UK and US cases inmates have competed against outside players, sometimes remotely via secure systems. Change Through Chess has organised several such meetings; participants often describe them as formative: treated as players, not numbers.
-
-**Does this work with at-risk youth outside prison?**
-
-Yes. Similar programmes exist in disadvantaged neighbourhoods, priority-education schools, and youth placement centres. The cognitive targets are the same. Observed outcomes are comparable, often easier to achieve because custody adds an extra layer of mistrust toward educational initiatives.
-
-**Can chess train empathy?**
-
-That is one of the most interesting dimensions. Anticipating your opponent's move requires taking their place, modelling their view of the board, their fears, their intentions. That is a concrete, repeated, measurable exercise in theory of mind, which behavioural science treats as foundational to empathy.
-
----
-
-The board teaches something few activities teach as clearly: every decision has a visible, irreversible consequence, and the person across from you has a perspective worth understanding. Programmes that **last** combine play, **stable human support**, and **continuity after release**; the board alone does not rewrite a life. For cognitive effects measured outside prison settings, see [chess and the brain](/en/blog/chess-and-the-brain/).
-
-**After reading:** if you run or support a workshop, define **one** measurable in-custody goal (respecting the clock, articulating the move played) over six sessions before evaluating anything about recidivism.
-
----
-
-## Key takeaways
-
-- Contemporary criminology links three cognitive deficits to recidivism: short-term thinking, impulsivity, weak theory of mind (Ross & Fabiano, 1985)
-- Those three deficits map onto three demands every chess game trains move after move
-- Documented programmes (Change Through Chess, San Quentin) report observed effects on behaviour in custody, but randomised trials remain rare
-- The main limitation of all such programmes: selection bias; participants are often already motivated to change
-
----
-
-### Sources and references
-
-- **Davis, L. M., Bozick, R., Steele, J. L., Saunders, J., & Miles, J. N. V. (2013).** - [*Evaluating the Effectiveness of Correctional Education: A Meta-Analysis of Programs That Provide Education to Incarcerated Adults.*](https://www.rand.org/pubs/research_reports/RR266.html) RAND Corporation, RR-266-BJA. (Inmates in education programmes had 43% lower odds of reincarceration within three years of release.)
-- **Ross, R. R., & Fabiano, E. A. (1985).** - *Time to Think: A Cognitive Model of Delinquency Prevention and Offender Rehabilitation.* Johnson City, TN: Institute of Social Sciences and Arts. (Links cognitive deficits, short-term thinking, impulsivity, weak theory of mind, to repeat offending.)
-- **Change Through Chess (2017-2023).** - *Programme Reports.* [changethroughchess.com](https://www.changethroughchess.com/). (Annual reports on observed effects for incarcerated participants in the UK: emotion regulation, behaviour in custody, engagement in education.)
-- **Fazel, S., Doll, H., & Långström, N. (2008).** - [*Mental disorders among adolescents in juvenile detention and correctional facilities: A systematic review and metaregression analysis of 25 surveys.*](https://doi.org/10.1097/01.chi.0000290670.27678.2a) *Journal of the American Academy of Child & Adolescent Psychiatry*, 47(9), 1010-1019. (High prevalence of ADHD and neuropsychiatric conditions in custody populations, supporting cognitive interventions.)
-- **Hare, R. D. (2006).** - *Psychopathy: A clinical and forensic overview.* *Psychiatric Clinics of North America*, 29(3), 709-724. (Framework for custody profiles and limits of cognitive interventions by profile.)
+- FIDE and Cook County Sheriff’s Office (2021), *Chess for Freedom program launched*, [launch presentation](https://chessforfreedom.fide.com/2021/04/13/chess-for-freedom-program-launched/).
+- FIDE (2025), *First Continental Online Chess Championships for Prisoners announced*, [competition conditions](https://www.fide.com/first-continental-online-chess-championships-for-prisoners-announced/).
+- FIDE (2026), *2nd Continental Championships for Prisoners conclude*, [report](https://www.fide.com/2nd-continental-championships-for-prisoners-conclude-with-a-record-number-of-countries-teams-participating/).
+- French Chess Federation (2018), *Réunion de travail à la Direction de l’administration pénitentiaire*, [publication](https://www.echecs.asso.fr/Actu.aspx?Ref=11278).
+- French Chess Federation (2023), *Découvrez le site web de la Commission Santé Social Handicap*, [publication](https://www.echecs.asso.fr/Actu.aspx?Ref=14284).
+- Davis, L. M., Bozick, R., Steele, J. L., Saunders, J. and Miles, J. N. V. (2013), *Evaluating the Effectiveness of Correctional Education*, RAND, RR-266-BJA, [report and Table 3.1](https://www.rand.org/content/dam/rand/pubs/research_reports/RR200/RR266/RAND_RR266.pdf).

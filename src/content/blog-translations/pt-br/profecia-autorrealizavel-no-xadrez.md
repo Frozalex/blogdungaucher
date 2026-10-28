@@ -45,6 +45,8 @@ faq:
       Produzindo a informação independente que está faltando. Uma crença do tipo "eu sou péssimo em
       finais" é uma hipótese testável: o seu percentual real nas partidas que chegam ao final existe nas
       suas estatísticas. A medição fornece o contrassinal que a crença tinha eliminado.
+heroImageAlt: Uma figura desenha uma barreira diante dos próprios pés.
+
 ---
 
 Você não treina finais.

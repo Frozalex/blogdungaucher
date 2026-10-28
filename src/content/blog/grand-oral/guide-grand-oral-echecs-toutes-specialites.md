@@ -1,9 +1,9 @@
 ---
 title: "Guide Grand Oral toutes spécialités – Échecs : le kit universel pour lycéens"
 excerpt: >-
-  Tu n'as pas Maths, NSI ou SES ? Ce guide te permet quand même de faire un Grand Oral brillant avec les échecs, quelle
-  que soit ta spécialité : Philosophie, SVT, PC, HGG, Littérature, STMG. Script 10 min, 20 questions jury, argumentaire
-  universel. Adapte, défends, convaincs.
+  Des pistes autour des échecs pour construire une question liée à tes enseignements : HLP, SVT, Physique-Chimie,
+  HGGSP ou voie technologique. Plans indicatifs, questions d’entraînement et sources à discuter avec tes enseignants,
+  sans exposé prêt à réciter ni garantie de note.
 publishDate: "2026-05-15"
 category: grand-oral
 featured: false
@@ -22,29 +22,27 @@ tags:
   - script
   - questions jury
 keyTakeaways:
-  - Les échecs peuvent être traités dans n'importe quelle spécialité avec le bon angle disciplinaire.
-  - "Script universel 10 minutes adaptable selon ta spécialité : Philosophie, SVT, PC, HGG, Littérature."
+  - Une question sur les échecs doit être reliée aux programmes de tes enseignements ; fais valider cet ancrage avec tes enseignants.
+  - "Plans indicatifs pour construire dix minutes de présentation : HLP, SVT, PC, HGGSP et autres enseignements à vérifier avec tes professeurs."
   - "20 questions de jury transversales avec réponses : plus les angles spécifiques à chaque spécialité."
   - Tableau de correspondance problématique × spécialité pour choisir en 5 minutes.
   - "Erreurs à éviter au Grand Oral avec les échecs : les pièges classiques que le jury repère."
 seoTitle: "Guide Grand Oral Échecs toutes spécialités 2026 : kit universel + script 10 min"
 seoDescription: "Préparer un Grand Oral sur les échecs : pistes par spécialité, plans et scripts, exemples de questions de jury et repères pour construire ton propre exposé."
-ogImage: /images/og/guide-grand-oral-echecs-toutes-specialites-og.webp
+ogImage: /images/og/guide-grand-oral-echecs-toutes-specialites-watermarked-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-toutes-specialites-hero.webp
-  alt: >-
-    Le plafond décoré et le lustre d'une salle solennelle d'établissement scolaire.
-  credit: "Filip Popovic, CC BY-SA 4.0, via Wikimedia Commons"
+  src: /images/blog/guide-grand-oral-echecs-toutes-specialites-watermarked-hero.webp
+  alt: Le plafond décoré et le lustre d'une salle solennelle d'établissement
+    scolaire.
+  credit: Filip Popovic, CC BY-SA 4.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Congress_hall_of_the_Grammar_school_in_Sremski_Karlovci_08.jpg
   license: CC BY-SA 4.0
 faq:
   - question: Peut-on vraiment faire son Grand Oral sur les échecs sans avoir Maths ou NSI ?
     answer: >-
-      Oui, et c'est même une force. La plupart des sujets Grand Oral sur les échecs sont présentés par des élèves de
-      Maths/NSI, si tu as Philosophie, SVT ou autre chose, tu te démarques immédiatement. Le jury a vu 50 exposés sur la
-      formule Elo ou le minimax ; il n'a peut-être jamais entendu parler des échecs à travers la conscience et la
-      délibération (Philosophie), ou de la cognition et de la mémoire (SVT). Le sujet inattendu + maîtrisé = combinaison
-      gagnante.
+      Une question peut porter sur un autre enseignement, à condition d’être réellement liée à son programme.
+      L’expertise cognitive ou l’histoire peuvent fournir des pistes. Un thème original ne garantit pas une bonne
+      note : précise la notion étudiée, les documents utilisés et la limite de ta réponse avec tes enseignants.
   - question: Comment relier les échecs à ma spécialité si ce n'est pas une spécialité scientifique ?
     answer: >-
       C'est la question centrale. La règle : ancre ton exposé dans les notions de ton programme, pas dans les échecs
@@ -53,16 +51,14 @@ faq:
       terrain d'observation, pas le sujet final. Cette distinction est ce que le jury vérifie.
   - question: Combien de temps faut-il pour préparer un Grand Oral avec les échecs ?
     answer: >-
-      Minimum 3 semaines sérieuses. Semaine 1 : comprendre les notions de base (Elo, Shannon, quelques exemples
-      historiques). Semaine 2 : choisir la problématique, construire le script, mémoriser les données clés. Semaine 3 :
-      entraînements chronométrés (au moins 5 passes de 10 minutes) et simulation des questions jury avec un proche. Ne
-      démarre pas à J-3: le jury repère immédiatement le manque de profondeur.
+      Il n’existe pas ici de délai minimal validé. Le calendrier plus bas est une proposition : lire les sources,
+      fixer une question, vérifier un exemple, puis répéter avec un chronomètre et un interlocuteur. Adapte-le
+      à tes connaissances et au temps nécessaire pour corriger ce que tu ne maîtrises pas encore.
   - question: Peut-on apporter un échiquier physique au Grand Oral ?
     answer: >-
-      Oui, c'est autorisé et recommandé pour n'importe quelle spécialité. Un échiquier posé sur la table matérialise le
-      sujet, donne une présence concrète à l'exposé, et te donne un objet à montrer pendant les démonstrations. Préfère
-      un échiquier compact (20×20 cm) pour ne pas encombrer. Pose-le dès l'installation: c'est un signal immédiat au
-      jury que tu es préparé.
+      Ne prévois pas un échiquier personnel comme matériel autorisé. Les règles ministérielles décrivent le support
+      réalisé sur papier pendant les vingt minutes de préparation. Utilise un échiquier pour t’entraîner, puis
+      apprends à représenter l’exemple simplement sur ce support ; vérifie tout aménagement avec ton établissement.
   - question: Quelles sont les erreurs les plus fréquentes au Grand Oral sur les échecs ?
     answer: >-
       Cinq erreurs classiques : (1) Parler des règles du jeu au lieu des concepts: le jury n'a pas besoin de savoir
@@ -85,21 +81,17 @@ Le **Grand Oral du bac** comprend 20 minutes de préparation et 20 minutes devan
 
 Beaucoup de guides en ligne décrivent encore un exposé de 5 minutes suivi d'une troisième partie de 5 minutes sur le projet d'**orientation**. C'était le format jusqu'à la session 2023. Depuis la session 2024, l'**épreuve** tient en deux temps de 10 minutes et la partie orientation a été supprimée en tant que telle : le lien éventuel avec ton parcours ne constitue pas une troisième phase imposée.
 
-Le **jury** est composé de **deux** professeurs : l'un de ta spécialité, l'autre d'une discipline différente. Le second n'est **pas** spécialiste de ton **sujet**. Ton **oral** doit donc être compréhensible par un non-spécialiste, quelle que soit ta spécialité.
+Le **jury** comprend deux examinateurs, dont au moins un enseigne la spécialité d’appui. L’autre peut enseigner toute discipline, sans être nécessairement non-spécialiste. Prépare une explication accessible sans supposer leurs connaissances précises.
 
-Quatre dimensions sont évaluées selon le Bulletin officiel :
-1. **Qualité orale** : élocution claire, **parole** posée, ton convaincu, gestes ouverts
-2. **Maîtrise du sujet** : capacité à expliquer, justifier, nuancer, citer des sources
-3. **Construction de l'argumentation** : problématique nette, plan annoncé, transitions, conclusion
-4. **Cohérence avec ton orientation** : pourquoi ce **sujet** te prépare à tes études supérieures
+Les attendus ministériels portent sur la qualité orale, la prise de parole en continu, les connaissances, l’interaction et la construction de l’argumentation. Les deux temps contribuent à l’évaluation ; aucune répartition automatique de 50 % chacun n’est annoncée ici.
 
-C'est l'**épreuve** la plus rentable du **bac** au ratio temps de **préparation** / impact note. Trois **minutes** solides peuvent te faire gagner une mention.
+Le calendrier de ce guide sert à organiser ton travail. Il ne permet pas de prédire une note ou le nombre d’heures qu’il te faudra pour maîtriser ton sujet.
 
 | Temps | Phase | Ce que tu fais |
 |---|---|---|
 | 20 min | Préparation | Le jury choisit une de tes deux questions ; tu prépares ton support. |
 | 10 min | Exposé debout | Support de préparation autorisé, regard vers le **jury**, voix audible. |
-| 10 min | Échange | Ton **sujet**, ton plan, tes sources, et ton projet post-bac. |
+| 10 min | Échange | Ton **sujet**, ton raisonnement et les points à approfondir. |
 
 ## Quelle problématique selon ta spécialité ?
 
@@ -115,7 +107,7 @@ Avant tout script, trouve ta problématique en croisant ton angle disciplinaire 
 | **STMG / Éco-Droit** | *"Le marché des joueurs d'échecs professionnels illustre-t-il les mécanismes de l'économie des talents ?"* | Marché, inégalités, économie des superstars |
 | **Toutes** *(généraliste)* | *"En quoi les échecs constituent-ils un objet d'étude privilégié des sciences humaines ?"* | Transversalité, interdisciplinarité |
 
-→ **Si tu hésites entre deux spécialités**, choisis celle où tu es le plus à l'aise avec les questions-réponses : les 10 minutes de questions jury comptent autant que l'exposé.
+→ **Si tu hésites entre deux spécialités**, choisis celle où tu es le plus à l'aise avec les questions-réponses : prépare aussi les dix minutes d’échange : elles font partie de l’évaluation.
 
 ![Tableau de correspondance spécialité × problématique recommandée pour le Grand Oral sur les échecs, de Philosophie à STMG, avec la notion-clé à mobiliser dans chaque cas.](/images/guide-go-toutes-02-tableau-specialites.svg)
 
@@ -123,13 +115,13 @@ Avant tout script, trouve ta problématique en croisant ton angle disciplinaire 
 
 ## Script universel, Philosophie (liberté et déterminisme)
 
-*Ce script est le plus transversal : il fonctionne aussi bien en Philosophie pure qu'en HLP. Il évite tout calcul mathématique. Les transitions rédigées sont en italique.*
+*Cette trame propose une lecture philosophique à relier à tes enseignements, notamment HLP, avec tes professeurs. Développe les passages et chronomètre ta version : les durées indiquées sont un plan, pas la mesure de lecture de ce texte.*
 
 ---
 
 ### 0:00–1:00, Introduction et problématique
 
-*"Bonjour. Garry Kasparov, champion du monde d'échecs, décrit chaque partie comme 'une lutte entre deux êtres libres'. Mais en 1997, il perd contre Deep Blue : un programme informatique. Ce programme ne délibère pas : il calcule. Est-ce que Kasparov était vraiment libre ?*
+*"Bonjour. En 1997, Kasparov perd un match contre Deep Blue, un système informatique. Cette performance ouvre une question philosophique : choisir un coup se réduit-il au calcul, ou faut-il distinguer le résultat obtenu de l’expérience de décider ?*
 
 *Ma problématique : les échecs révèlent-ils la structure de la décision libre ou celle d'un déterminisme calculé ?*
 
@@ -149,13 +141,13 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 ### 4:00–7:00 (Partie 2 : le défi du déterminisme) Deep Blue et Zermelo
 
-*"L'informatique pose cette question en termes radicaux. Le théorème de Zermelo (1913) prouve que les échecs ont un résultat déterminé sous jeu parfait : soit les Blancs gagnent, soit les Noirs, soit c'est nulle, mais l'un des trois est inévitable avec deux joueurs parfaits. Les échecs sont donc déterministes en théorie.*
+*"L'informatique pose cette question en termes radicaux. Dans un jeu fini à information parfaite, la valeur sous jeu optimal est définie. Cet énoncé moderne est souvent rattaché à Zermelo, dont le texte historique de 1913 pose une question plus précise. Il faut distinguer la valeur du jeu, le caractère déterministe de ses règles et le débat philosophique sur la liberté humaine.*
 
-**Deep Blue (1997)** incarne ce déterminisme : il calcule 200 millions de positions par seconde, sans états d'âme, sans fatigue, sans ego blessé. Il 'joue' aux échecs sans sujet joueur. Et il bat Kasparov.*
+**Deep Blue (1997)** associe recherche et évaluation sur du matériel spécialisé ; IBM rapporte 200 millions de positions évaluées par seconde. Son match contre Kasparov est un résultat sportif documenté. Ce nombre ne décide pas, à lui seul, si calculer équivaut à délibérer.*
 
 **Deux lectures sont possibles.** Lecture déterministe : si un programme sans conscience peut battre le meilleur humain, alors l'intelligence aux échecs est réductible à du calcul, et la 'liberté' du joueur n'est qu'une illusion de complexité computationnelle. Lecture libertaire : Deep Blue ne joue pas : il exécute. Kasparov joue, avec tout ce que cela implique de délibération, d'incertitude, d'intention. La performance peut être réductible ; l'expérience ne l'est pas."*
 
-![Kasparov face à Deep Blue en 1997 : d'un côté le joueur humain qui délibère avec intention, de l'autre le programme IBM qui calcule 200 millions de positions par seconde sans conscience, avec le théorème de Zermelo (1913) comme toile de fond.](/images/guide-go-toutes-03-liberte-determinisme.svg)
+![Illustration du contraste entre performance informatique et expérience de décision humaine, sans démonstration sur la conscience.](/images/guide-go-toutes-03-liberte-determinisme.svg)
 
 ---
 
@@ -175,7 +167,7 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 *Deep Blue montre que la performance peut être déterministe. Mais il ne montre pas que l'expérience de jouer l'est. Et c'est peut-être là la vraie frontière : non pas entre libre et déterminé, mais entre expérience et calcul.*
 
-*Pour aller plus loin : si AlphaZero apprend à jouer sans règles préétablies, est-il plus proche d'un être libre que Deep Blue ? Ou la liberté suppose-t-elle nécessairement une conscience : ce qu'aucun programme n'a encore démontré avoir ?*"
+*Pour aller plus loin : si AlphaZero apprend une évaluation et une politique par autojeu dans un cadre de règles fourni par les chercheurs, est-il plus proche d'un être libre que Deep Blue ? Ou la liberté suppose-t-elle nécessairement une conscience : ce qu'aucun programme n'a encore démontré avoir ?*"
 
 ---
 
@@ -187,13 +179,13 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 **Plan en 3 parties (10 min) :**
 
-**0:00–1:00, Intro :** le joueur d'échecs aveugle (jouer sans voir l'échiquier) comme cas-limite de la mémoire. Le record de 48 parties de Gareyev est documenté par Guinness.
+**0:00–1:00, Intro :** le joueur à l’aveugle (qui joue sans voir l’échiquier, sans être nécessairement aveugle) comme exemple de représentation mentale. Le record de 48 parties de Gareyev est documenté par Guinness.
 
-**1:00–4:00, La mémoire de travail et les chunks :** l'expérience de Chase et Simon (1973) : les Grands Maîtres reconnaissent 50 000 à 100 000 patterns (chunks), pas des pièces isolées. La mémoire de travail traite des unités complexes, pas des données brutes. Lien au programme SVT : mémoire explicite (hippocampe) vs mémoire procédurale (cervelet, ganglions de la base).
+**1:00–4:00, Perception et configurations :** Charness et collègues (2001) comparent experts et intermédiaires sur cinq positions. Les experts choisissent plus vite et plus précisément, avec davantage de fixations sur des pièces pertinentes ou certaines cases vides. Cela soutient l’étude de la sélection de l’information ; ce suivi du regard ne compte pas les souvenirs ni les configurations présentes dans le cerveau.
 
-**4:00–7:00 (Neuroplasticité et IRM :** l'étude de Hänggi (2014)) le précunéus et le lobe temporal supérieur ont un volume de matière grise plus important chez les Grands Maîtres. La pratique intense modifie la structure cérébrale. Lien au programme SVT : synaptogenèse, plasticité synaptique, LTP (long-term potentiation).
+**4:00–7:00, Ce que mesure l’imagerie :** Atherton et collègues (2003) comparent l’analyse de positions à une tâche spatiale avec des stimuli visuels similaires. Des activations frontales, pariétales et occipitales sont rapportées. Une activation pendant une tâche n’est pas un volume cérébral plus grand, une mesure de plasticité synaptique, ni la preuve qu’un entraînement a causé une transformation.
 
-**7:00–9:00, Limites :** la neuroplasticité est-elle spécifique aux échecs ou transfert vers d'autres domaines ? Les études montrent un effet limité au domaine : un expert échecs n'est pas meilleur en mémoire en général. Discussion : expertise = spécialisation vs généralisation.
+**7:00–9:00, Limites :** distingue expertise dans le jeu et transfert vers d’autres tâches. Sala et Gobet (2017) soulignent la rareté des contrôles actifs dans les interventions échiquéennes. Ni l’imagerie ni la performance sur l’échiquier ne prouvent ici un gain de mémoire générale ; une étude d’entraînement contrôlée serait nécessaire.
 
 **9:00–10:00, Conclusion :** les échecs comme modèle d'étude de l'expertise ; ce qu'ils révèlent sur la plasticité cérébrale et les limites du transfert d'apprentissage.
 
@@ -207,11 +199,11 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 **0:00–1:00, Intro :** le modèle de Shannon pour illustrer une exploration naïve considérable. Ce calcul ne démontre pas une impossibilité pour toute méthode future.
 
-**1:00–4:00, La notion de complexité :** la différence entre un problème résoluble en temps polynomial et un problème exponentiel. Les échecs comme exemple de problème PSPACE-complet. Lien au programme PC : ordres de grandeur, puissances de 10, estimation par ordre de grandeur. Exercice : calculer 35^6 pour estimer le nombre de positions à 6 coups (≈ 1,8 milliard).
+**1:00–4:00, La notion de complexité :** distingue un calcul illustratif d’un résultat asymptotique. Fraenkel et Lichtenstein (1981) étudient une variante généralisée sur n×n, EXPTIME-complète ; ce n’est pas une impossibilité démontrée pour la seule position initiale 8×8. Calcule 35^6 = 1 838 265 625 feuilles dans un arbre uniforme hypothétique de six demi-coups. Ce nombre ne compte pas les positions distinctes ni toutes les parties légales.
 
-**4:00–7:00, La modélisation et ses limites :** la mécanique newtonienne permet de modéliser exactement des systèmes simples. Le chaos (sensibilité aux conditions initiales) limite les prévisions même pour des systèmes déterministes. Les échecs sont le cas extrême : déterministe en théorie, incalculable en pratique. Analogie avec la météorologie : déterministe (équations de Navier-Stokes) mais imprévisible au-delà de quelques jours.
+**4:00–7:00, La modélisation et ses limites :** un modèle physique dépend d’hypothèses et de mesures ; une simulation dépend aussi de ressources de calcul. Aux échecs, les règles sont connues mais l’exploration exhaustive est impraticable dans les moyens actuels. La comparaison avec une prévision physique est une analogie : incertitude des mesures et explosion d’un arbre de décisions ne sont pas le même obstacle.
 
-**7:00–9:00, Ce qu'AlphaZero révèle :** l'apprentissage automatique comme nouvelle forme de modélisation : non plus par des règles explicites, mais par des patterns statistiques. Mais le modèle appris reste une boîte noire. Lien : en sciences expérimentales aussi, un modèle utile n'est pas nécessairement explicable.
+**7:00–9:00, Ce qu’AlphaZero révèle :** le réseau apprend une politique et une évaluation par autojeu, qui guident MCTS. Les règles, la représentation et la procédure sont fournies par les chercheurs. Une performance de match n’est pas une preuve de jeu parfait ; une trace de recherche et une explication du réseau sont aussi deux questions différentes.
 
 **9:00–10:00, Conclusion :** les limites du calcul aux échecs sont une fenêtre sur les limites de la modélisation en physique : l'arène où la complexité rend inutile la puissance brute, et force à développer des heuristiques.
 
@@ -225,7 +217,7 @@ Mais Spinoza objecterait : la pierre lancée, si elle avait conscience, croirait
 
 **0:00–1:00, Intro :** de Stefan Zweig (*Le Joueur d'échecs*, 1942) à Lewis Carroll (*De l'autre côté du miroir*, 1871), les échecs traversent la littérature mondiale comme topos récurrent. Pourquoi ce jeu fascine-t-il autant les écrivains ?
 
-**1:00–4:00, L'échiquier comme métaphore du destin :** dans le *Livre des rois* (Ferdowsi), les pièces d'échecs illustrent la prédestination divine : les êtres humains sont des pièces déplacées par Dieu. Dans la poésie persane classique et chez Borges (*Échecs*, 1960), l'échiquier est une mise en abyme du cosmos : le joueur déplace les pièces, mais qui déplace le joueur ? La métaphore révèle l'angoisse du déterminisme.
+**1:00–4:00, L’échiquier comme métaphore du destin :** pars d’un passage identifié, par exemple le poème *Échecs* de Borges, pour interroger les relations entre pièce, joueur et instance qui les dépasse. Lis le texte dans ton édition avant d’en proposer une interprétation. Le déplacement des pièces peut servir de métaphore de la contrainte ; ce n’est pas une preuve philosophique du déterminisme.
 
 **4:00–7:00, Le joueur d'échecs comme figure de l'intelligence solitaire :** Zweig, *Le Joueur d'échecs* : le personnage de Dr. B. apprend les échecs par cœur pour survivre à l'isolement nazi. L'intelligence aux échecs comme refuge de l'humanité contre la brutalité. Mais aussi folie : l'enfermement dans le jeu mène à la dissociation. La littérature montre que la maîtrise absolue du calcul coûte quelque chose d'humain.
 
@@ -336,13 +328,13 @@ La récitation mécanique se repère immédiatement. Parle, ne lis pas. Regarde 
 Un exposé sans limites semble non réfléchi. Citer une limite de ta propre argumentation montre que tu as une vraie maîtrise du sujet, et que tu ne te contentes pas d'un résumé.
 
 **Erreur 5, Ne pas avoir préparé les questions.**
-L'exposé compte pour 50% de la note ; les questions jury comptent pour 50%. Entraîne-toi avec quelqu'un qui joue le jury hostile : "Mais c'est juste un jeu, non ?", "Comment tu sais que c'est vrai ?", "Et si ton exemple était faux ?"
+Les deux temps sont évalués ensemble ; leur durée identique ne prouve pas une pondération de 50 % chacun. Entraîne-toi avec quelqu'un qui joue le jury hostile : "Mais c'est juste un jeu, non ?", "Comment tu sais que c'est vrai ?", "Et si ton exemple était faux ?"
 
 ---
 
-## Sujets entièrement développés par spécialité
+## Guides, sujets et fiches de révision par spécialité
 
-Pour chaque spécialité, plusieurs **sujets entièrement rédigés** à 10 minutes d'exposé, prêts à réciter ou à adapter (chaque page a son propre bouton PDF) :
+Les ressources ont des formats différents : guides développés, sujets ciblés et fiches courtes. Les quatre fiches minimax, alpha-bêta, combinatoire et modèles renvoient aux guides pour le développement. Vérifie chaque page et construis une réponse personnelle plutôt que réciter un texte téléchargé :
 
 ### Spécialité NSI
 - [Sujet Grand Oral NSI : minimax et arbre de décision](/fr/blog/sujet-grand-oral-nsi-minimax/)
@@ -366,7 +358,7 @@ Pour chaque spécialité, plusieurs **sujets entièrement rédigés** à 10 minu
 
 ### Posture et présence
 
-Tu es debout pendant les **cinq minutes** d'exposé. Les détails comptent :
+Tu présentes debout pendant les **dix minutes** d’exposé, sauf aménagement spécifique. Les détails comptent :
 
 - **Pieds ancrés** à largeur d'épaules, jamais croisés
 - **Mains visibles** : sur la table ou en mouvement, jamais dans les poches
@@ -422,7 +414,7 @@ Trois techniques rapides :
 
 - [ ] Relire l'anti-sèche (cinq minutes max, **pas** plus)
 - [ ] Vérifier l'heure et l'adresse de la convocation
-- [ ] Préparer l'échiquier de démonstration si tu en apportes un
+- [ ] Répéter le schéma simple que tu pourras réaliser sur le support de préparation
 - [ ] Se coucher tôt : le **Grand Oral** est une performance cognitive
 
 ### Jour J
@@ -440,6 +432,9 @@ Trois techniques rapides :
 - Maass, A., D’Ettole, C., & Cadinu, M. (2008). *Checkmate? The role of gender stereotypes in the ultimate intellectual sport*. European Journal of Social Psychology, 38, 231–245. [Texte intégral](https://mdmcalister.pbworks.com/f/Checkmate%2B-%2BThe%2Brole%2Bof%2Bgender%2Bstereotypes%2Bin%2Bthe%2Bultimate%2Bintellectual%2Bsport.pdf).
 - Verghese, J., et al. (2003). *Leisure Activities and the Risk of Dementia in the Elderly*. New England Journal of Medicine, 348, 2508–2516. [Article intégral](https://www.activeminds.com/docs/NEJM%20030619.pdf).
 - Polgár, J. (2026). *Press Kit*. [Biographie officielle](https://juditpolgar.com/wp-content/uploads/2026/01/Judit-Polgar-PressKit4.pdf).
+- Charness, N., et al. (2001). *The perceptual aspect of skilled performance in chess: Evidence from eye movements*. [Résumé et DOI](https://pubmed.ncbi.nlm.nih.gov/11913751/).
+- Atherton, M., et al. (2003). *A functional MRI study of high-level cognition. I. The game of chess*. [Notice et résumé des auteurs](https://experts.umn.edu/en/publications/a-functional-mri-study-of-high-level-cognition-i-the-game-of-ches/).
+- Fraenkel, A. S., & Lichtenstein, D. (1981). *Computing a perfect strategy for n×n chess requires time exponential in n*. [Article](https://kubokovac.eu/zlozitost/mat/chessExptime.pdf).
 - Guinness World Records (2016). *Most simultaneous blindfolded chess games*. [Fiche Gareyev](https://www.guinnessworldrecords.de/world-records/72345-most-simultaneous-blindfolded-chess-wins).
 
 

@@ -45,8 +45,8 @@ seoDescription: >-
 ogImage: /images/og/echecs-et-immigration-og.webp
 heroImage:
   src: /images/blog/echecs-et-immigration-hero.webp
-  alt: >-
-    Deux bulles de dialogue vides venues de côtés opposés se recouvrant en leur centre.
+  alt: Deux bulles de dialogue vides venues de côtés opposés se recouvrant en leur
+    centre.
 faq:
   - question: Comment les échecs facilitent-ils l'intégration des réfugiés ?
     answer: >-
@@ -87,9 +87,9 @@ faq:
       Sud-Est) peuvent trouver le jeu moins accessible comme outil d'intégration.
 ---
 
-Berlin, hiver 2015. Des centaines de milliers de réfugiés arrivent en Allemagne. Les associations cherchent des activités qui ne nécessitent pas de maîtriser l'allemand : l'apprentissage de la langue prend des mois, et la communauté a besoin de points de contact maintenant.
+Les échecs peuvent servir de support à des rencontres entre personnes de langues et de parcours différents. Des règles communes rendent la partie possible, mais elles ne suffisent pas à établir une intégration sociale durable.
 
-Un club d'échecs local propose ses locaux. Des joueurs allemands s'assoient en face de nouveaux arrivants syriens, afghans, érythréens. Personne ne partage la même langue. Mais les règles des échecs sont identiques à Berlin, à Alep et à Kaboul. La partie commence.
+Pour discuter leur place dans l'accueil des personnes migrantes, il faut examiner les conditions d'accès aux clubs, les relations construites et les objectifs des initiatives. La question est de distinguer la possibilité de jouer ensemble et les effets sociaux qu'un projet peut réellement documenter.
 
 ## L'échiquier comme lingua franca
 

@@ -1,132 +1,110 @@
 ---
 heroImageAlt: "A stone step blending into a continuous ramp that flattens the ground."
-title: "Chess and Disability: When the Board Erases Boundaries"
-excerpt: "Blind players calculate deep variations through touch. Players with quadriplegia move pieces with their gaze. People with autism find a structure in chess that the social world doesn't offer them. The board is one of the rare spaces where disability ceases to be a barrier."
-seoTitle: "Chess and Disability: The Board as an Inclusion Space"
-seoDescription: "Chess and disability: blind players, autism, quadriplegia, motor impairment. How the game adapts and creates spaces of inclusion and cognitive equality."
+title: "Chess and Disability: Practical Adaptations for Participation"
+excerpt: "Tactile boards, assistance, accessible communication and venue access: adaptations that support play, their conditions and the barriers to check with each person."
+seoTitle: "Chess and Disability: Rules, Equipment and Accessibility"
+seoDescription: "Tactile boards, assistants, IBCA, IPCA and ICCD: understand chess adaptations without promising universal access or therapeutic effects."
 enSlug: "chess-and-disability"
 draft: false
 faq:
-  - question: "How do blind people play chess?"
-    answer: >-
-      On special boards: black squares are slightly raised compared to white squares, and black pieces have a
-      notch or stud on top to distinguish them from whites. Players can touch the pieces to verify position:
-      the 'touch-move' rule is adapted, they must announce their intention before touching ('I want to
-      verify the knight's position'). Moves are often announced verbally (algebraic notation). Some visually
-      impaired players reach National or even International Master levels.
-  - question: "Do chess really help autistic people?"
-    answer: >-
-      Testimonies and case studies converge on yes, for a significant fraction of autistic people, not all.
-      Helpful aspects: explicit rule structure (no ambiguity), result objectivity (you can't 'misinterpret' a
-      position), absence of non-verbal language to decode (you don't have to guess what the opponent 'really
-      means'), and valuing logic and calculation, which are often natural strengths. The competitive aspect
-      can be stressful for some.
-  - question: "Are online platforms accessible to disabled people?"
-    answer: >-
-      Chess.com and Lichess have made significant accessibility efforts. Both platforms are compatible with
-      screen readers for visually impaired people. Lichess (open-source) has a text-accessible interface and
-      lets you play by announcing moves via keyboard. Voice-to-play interfaces exist for motor disabilities.
-      Commercial eye-tracking interfaces (Tobii, etc.) work with standard web interfaces. Online play has
-      opened chess to players who couldn't participate in physical tournaments.
-  - question: "Are there chess champions with significant disabilities?"
-    answer: >-
-      Several. International Master Dariusz Świercz (Poland) played at high level despite partial paralysis.
-      In France, visually impaired players have reached National Master level. At a less competitive but
-      equally significant level, many players with severe motor paralyses participate in online tournaments
-      via assistive technology. This isn't anecdotal: organizations for visually impaired chess have
-      organized World Championships for over 60 years.
-  - question: "How do chess in special education programs work?"
-    answer: >-
-      Typically by integrating chess as a transversal pedagogical tool: not to make competitive players, but
-      to develop general skills, sustained attention, frustration management (losing a piece), sequential
-      planning (anticipating the next move), respect for rules. Programs adapt constraints: shorter games,
-      simplified rules initially, focus on specific aspects rather than the full game. Studies in American
-      and German special education schools show measurable improvements in self-regulation behaviors in 3-6
-      months.
+  - question: "How can a blind person play chess?"
+    answer: "A tactile board and accessible communication of moves make the position available. Appendix D of the FIDE Laws specifies playing procedures; arrangements should be prepared with the player and arbiter."
+  - question: "Must players announce an intention before touching any piece?"
+    answer: "On the adapted board covered by Appendix D, a piece counts as touched when it is removed from its securing aperture. This is not a general requirement to announce “I am checking” before every contact. The arbiter explains the applicable rules."
+  - question: "Can someone help move the pieces?"
+    answer: "FIDE rules provide for an assistant acceptable to the arbiter if a player cannot move the pieces. Physical assistance, clock operation and notation should be agreed before play; choosing the moves remains the player’s responsibility."
+  - question: "Is online chess accessible to everyone?"
+    answer: "No. Lichess documents a screen-reader mode, but the actual playing process must be checked with the player’s equipment, browser and settings. Voice or gaze control does not guarantee universal compatibility."
+  - question: "Is chess a form of rehabilitation?"
+    answer: "Using chess as recreation or education does not establish clinical improvement or transfer to everyday life. A programme claiming rehabilitation effects needs an appropriate evaluation; it does not replace necessary support."
 ---
 
-Timur Gareyev is a Grandmaster. In 2016, he played 48 simultaneous blindfold games, a world record. He wore a blindfold, sat astride a stationary bicycle, and calculated 48 positions simultaneously for 19 hours.
+Making a game accessible may require another board, help moving pieces, a written announcement or a table someone can reach. These are participation arrangements to prepare with the player. Saying that “the board erases disability” can obscure that work.
 
-Timur isn't blind. He chose to be, temporarily, for a record.
+Chess can be a passion, recreation or competition. Its value requires neither a story of extraordinary achievement nor a promise of brain compensation. The useful question is practical: what does this person need to choose and play their moves in suitable conditions?
 
-But thousands of chess players worldwide play blindfolded every game, not by choice, but because they cannot see the board. And they play with a level and passion Timur himself admires.
+## Playing with a tactile board
 
-## Blind and Visually Impaired Players
+The [International Braille Chess Association, IBCA](https://ibca-info.org/), describes boards with raised black squares and pieces secured in apertures. The relief makes the position available through touch. This equipment provides access to information; it does not automatically make calculation easier.
 
-Chess for visually impaired players has a history as long as modern competitive chess. FIDE has officially recognized competitions for visually impaired players since 1961. The first World Chess Championship for the blind dates to 1961 in Lublin, Poland.
+[Appendix D of the FIDE Laws](https://handbook.fide.com/chapter/E012023) covers games involving blind and visually impaired players. On the adapted board, a piece counts as touched when removed from its securing aperture. Moves must be clearly announced, repeated by the opponent and made on their board. Discuss the details with the arbiter.
 
-The material adaptation is elegant in its simplicity. The special chessboard for the blind differentiates white and black squares by height: black squares are slightly raised, allowing touch to immediately distinguish where one is on the board. Black and white pieces are identical in form but distinguished by a notch, black pieces have a point or protrusion on top. Pieces are also slightly more stable than on a standard board to withstand touch.
+Do not simply apply an instruction to “announce that you are checking before every contact”. Consulting pieces through touch and committing to a move are different actions. A trial before the first round can check communication and identify discrepancies between positions.
 
-The "touch-move" rule is adapted: a visually impaired player can touch pieces to verify the position, provided they verbally announce their intention before touching ("I'm checking where the knight is"). Moves are announced in algebraic notation ("knight f3," "pawn d4"), making arbitration precise and unambiguous.
+### Playing without sight is not a neurological demonstration
 
-Visually impaired players reach levels that impress their sighted opponents. Anatoly Karpov played an exhibition game against the world champion of blind chess and lost. It wasn't complacency: the champion was playing at his real level.
+A sighted player playing blindfold and a blind player using a tactile board are not interchangeable situations. Neither establishes that all blind people have superior memory or spatial abilities.
 
-## How the Brain Compensates
+Describing a move received through speech or touch explains the adaptation. There is no need to invoke guaranteed recruitment of visual cortex, universal compensation or an unidentifiable memory study. Learning histories and needs remain individual.
 
-The case of blind chess players illustrates a fascinating neurological phenomenon: brain plasticity and sensory compensation.
+## Motor disabilities: assist execution without making decisions
 
-People who are blind from birth (or early blindness) develop remarkable spatial capacities through other sensory modalities. The visual cortex, deprived of visual input, is "recruited" by tactile and auditory systems, a well-documented crossmodal plasticity phenomenon.
+[FIDE Laws articles 4.9 and 6.2.6](https://handbook.fide.com/chapter/E012023) provide for an assistant acceptable to the arbiter when a player cannot move pieces or operate the clock. Assistance concerns physical execution. Choosing a move or suggesting a variation would change its nature.
 
-For chess, this means that mental representation of the board rests on tactile information (position of pieces by touch) and verbal information (announced moves) rather than visual, but the underlying cognitive structure is similar. The position chunks that visual expert players store in long-term memory have their equivalent in the spatial memory of blind players.
+Before play, agree who performs each operation, how the player communicates a decision and how a handling error is reported. The right solution depends on the person’s abilities and preferences, not just the name of a disability.
 
-A 2019 study compared blind and sighted chess players of equivalent level on position memory tasks. Both groups showed comparable performance, confirming that the mental representation of the board can be built via different sensory modalities without significant efficiency loss.
+An accessible table, comfortable position and reachable controls may matter as much as the board. An adaptation is not validated by assuming it works: try it with the player.
 
-## Autism and the Board as Safe Space
+## Deafness: make information accessible in practice
 
-The relationship between autism and chess is documented for a long time, but poorly understood.
+A quiet playing hall does not mean information is accessible to deaf or hard-of-hearing people. Calling an arbiter, changing the schedule and giving instructions before a round may still rely entirely on spoken announcements.
 
-It's not a stereotype (the "autistic chess genius") but a real functional affinity between cognitive characteristics often associated with autism and chess's specific demands.
+Agree on a visible or written way of sharing that information and ask which communication method the person prefers. Speaking louder does not replace that discussion. Sign language, lip-reading and writing are not interchangeable solutions to impose on everyone.
 
-Chess rules are **explicit and exhaustive**: each piece has defined movements, each situation has an applicable rule. There's no implicit ambiguity, no "it's obvious, right?" Impasse situations have precise rules (stalemate, threefold repetition, fifty-move rule). This transparency is often restful for people accustomed to navigating a social world full of unspoken implicits.
+The [International Chess Committee of the Deaf, ICCD](https://chessdeaf.org/), provides an identifiable organisational and competitive framework. Its publications help locate contacts and regulations; they do not relieve local organisers of preparing their own welcome.
 
-The board is also a space without **non-verbal communication to decode**. The opponent can think what they want, but it doesn't change the position. There's no subtext to interpret, no tone of voice to analyze, no facial expression to decode. Communication is limited to moves played, a purely formal language.
+## IBCA, IPCA and ICCD: distinct points of contact
 
-**Merit is objective**. You win or lose based on moves played, not on popularity, looks, or capacity to manage group dynamics. For people who have often experienced arbitrary social exclusion, this objectivity can be a revelation.
+These organisations do not correspond to one player profile:
 
-Testimonies from autistic players (or their parents) describe the board as "the first place I felt right, not different", a phrase recurring with striking regularity.
+| Organisation | Area described by the organisation | Practical point |
+| --- | --- | --- |
+| [IBCA](https://ibca-info.org/) | Blind and visually impaired players | Consult resources and announced competitions. |
+| [IPCA](https://ipcachess.org/about-us/ipca-statutes/) | Players with physical disabilities | Its statutes specify membership and participation conditions. |
+| [ICCD](https://chessdeaf.org/) | Deaf chess | Consult the relevant event’s calendar and regulations. |
 
-## Chess in Special Education Programs
+An organisation or championship does not mean entry is automatic, that the same evidence suffices everywhere or that every adaptation is supplied without a request. Check event conditions with the organiser and, where needed, the relevant federation.
 
-In the United States, Germany, and the United Kingdom, structured chess programs in special education have been evaluated since the 1990s.
+Specific disability competitions and open tournaments can coexist in a player’s activities. The choice belongs to the player; no champion’s story is needed to justify their right to play.
 
-The goal of these programs isn't competition. It's using the game as a tool for developing generalizable skills: sustained attention, sequencing, planning, frustration management, respecting rules, accepting defeat.
+## Autism, learning and special education
 
-A 2015 German study followed 156 students in adapted education classes (behavioral disorders, mild intellectual disabilities) participating in weekly chess sessions over 6 months. Results: significant improvement in behavioral self-regulation scores, reduction in impulsive behaviors during sessions, and partial improvement in sustained attention on academic tasks.
+An autism diagnosis does not establish an interest in rule systems, exceptional memory or guaranteed comfort at a club. Some people enjoy chess; others prefer another activity. Social customs, noise, clocks and competition may require adaptations.
 
-The mechanism isn't mysterious: chess creates a structured context with clear rules, predictable consequences, and immediate feedback, exactly the conditions that favor learning self-regulation in children for whom ambiguous contexts are difficult.
+[Chess and autism](/en/blog/chess-and-autism/) distinguishes these welcoming possibilities from promises of clinical benefits. Preparing the schedule, offering understandable materials and accepting a break are organisational choices to discuss, not treatment.
 
-## Assistive Technology and Online Play
+### Describe aims without claiming transfer
 
-The online play revolution has opened chess to players who couldn't participate in physical tournaments.
+An educational workshop can explain a rule, solve a puzzle or invite someone to describe their reasoning. A facilitator can observe what happens within the session. This does not establish general improvements in attention, self-regulation or everyday life.
 
-Players with severe quadriplegia use eye-tracking systems to move pieces on online platforms. Chess.com and Lichess are accessible via these interfaces: an eye movement is enough to select a piece and move it. Voice interfaces also allow dictating moves in algebraic notation.
+A benefit claim in special education needs a defined study population, measures, comparison and limitations. An unidentifiable study or unsourced account does not justify promising measurable gains in three to six months. Enjoying participation remains a valid aim without a rehabilitation promise.
 
-These technologies aren't chess-specific: they were developed for general computer accessibility. But chess, with its relatively simple interface, is particularly well-adapted to these technologies.
+## Online play: check features in actual use
 
-The result: players who would have been completely excluded from physical tournament competitions can now play regularly, improve their level, and participate in competitive-level online tournaments.
+Lichess publishes a [screen-reader mode tutorial](https://lichess.org/page/blind-mode-tutorial), including guidance on navigation and entering moves. This is a documented feature, not a guarantee for every combination of computer, browser and assistive technology.
 
-## The Inclusion Paradox
+Voice or gaze control may be considered depending on available equipment. Before promising that it enables play on a platform, test the whole process: logging in, starting a game, selecting and confirming a move, checking the clock and asking for help. A demonstration of square selection does not validate all of that.
 
-There's a paradox in the relationship between chess and disability.
+The same applies to Chess.com or any other platform: do not claim complete accessibility without checking the actual feature and setup. For competitions, also clarify permitted assistance and control procedures. Access to a casual game does not guarantee admission to the same format in a tournament.
 
-On one hand, chess is one of the most *inclusive* sports: rules are the same for everyone, the board can be adapted for all types of disabilities, and cognitive merit doesn't depend on physical condition. A player in a wheelchair can beat an able-bodied player, and beat them *obviously*, without rule adjustments or separate classification.
+## Before a tournament: check the venue and responsibilities
 
-On the other hand, physical chess tournaments present real accessibility barriers: rooms not always accessible, long game duration for people with chronic fatigue, sensory stress for hypersensitive people, social constraints for people with severe autism.
+[FIDE’s guidelines on accommodating disabled players](https://handbook.fide.com/chapter/D0412) provide for an accessible venue or a supervised alternative. They also address preparation for particular needs. This framework does not prove that every hall is accessible in practice: concrete confirmation remains necessary.
 
-The hybrid solution, accessible physical competitions for those who can, online play for others, with recognition of performance in both contexts, is beginning to emerge.
+To prepare a visit, the player and organiser can review:
 
-The board remains one of the rare spaces where cognitive performance can express itself independently of the body carrying it. It's a rare, precious, and still under-exploited property.
+- **The relevant route:** entrance, playing table, toilets, rest area and exit, including possible obstacles.
+- **The setup:** room for equipment and assistance, table height, lighting and reachable controls.
+- **Information:** schedules, pairings and announcements in a usable format.
+- **Roles:** contact person, arbiter, physical assistance and procedure if a difficulty arises.
+- **The session:** time control, expected duration, rest needs and arrangements genuinely compatible with the regulations.
 
-## Sources
+Request information needed for organisation without requiring a public medical account. Any documentation belongs to the event’s applicable conditions; assumptions about a player’s appearance cannot replace them.
 
-- FIDE. (2023). *Regulations for the Blind*. World Chess Federation.
-- IBCA (International Braille Chess Association). (2023). *History and Statistics*. IBCA.
-- Sadato, N., et al. (1996). Activation of the primary visual cortex by Braille reading in blind subjects. *Nature*, 380, 526-528.
+## Inclusion means making participation possible
 
-## Key Takeaways
+An adapted board does not remove an entrance staircase. A voice interface does not erase fatigue or equipment costs. Acknowledging these limits helps build a solution instead of blaming difficulties on a player’s motivation.
 
-- Blind chess players use **special boards** (raised squares, marked pieces) and reach National Master levels
-- FIDE has officially recognized competitions for visually impaired players since **1961**
-- People with autism often find chess **more comfortable than ordinary social interactions**: explicit rules, no ambiguity, objective merit
-- **Assistive technologies** (eye-tracking, voice interfaces) now allow players with severe quadriplegia to compete online
-- Chess in special education programs show significant improvements in **concentration, frustration management, and self-regulation behaviors**
+The aim is for someone to make decisions, play, learn and communicate their needs. A club need not promise perfect cognitive equality or a health effect to make this worthwhile. It needs to turn its intentions into verifiable participation arrangements.
+
+**After reading:** choose one concrete obstacle to resolve with the participant and confirm the solution before the session. Continue with [chess and ADHD](/en/blog/chess-and-adhd/) or [chess and streaming](/en/blog/chess-and-streaming/).

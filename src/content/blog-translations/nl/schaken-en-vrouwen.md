@@ -60,6 +60,7 @@ faq:
       wereldkampioenen kunnen verslaan en tot de beste schakers van hun tijd kunnen behoren. Hou Yifan
       behaalde ook uitstekende resultaten in gemengde toernooien van hoog niveau, en klasseerde zich
       meermaals bij de 100 beste schakers ter wereld.
+heroImageAlt: Een gestileerde schaakster zit aan een schaaktafel tegenover een lege stoel.
 ---
 
 In 2002, tijdens het toernooi van Moskou, verslaat [Judit Polgár](https://en.wikipedia.org/wiki/Judit_Polg%C3%A1r) [Garri Kasparov](https://nl.wikipedia.org/wiki/Garri_Kasparov). De man die publiekelijk had verklaard dat vrouwen structureel minderwaardig waren aan mannen bij schaken, verliest van een vrouw. Er viel niets tegenin te brengen.

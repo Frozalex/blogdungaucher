@@ -54,13 +54,16 @@ faq:
       pas une accusation publique : c'est une transmission d'information à une instance qui dispose des
       moyens d'enquêter. La distinction est décisive, juridiquement comme éthiquement, et c'est
       précisément ce que les procédures existent pour permettre.
+heroImage:
+  src: /images/blog/effet-spectateur-aux-echecs-hero.webp
+  alt: Un gant tombé au centre d’un cercle de chaussures immobiles.
+ogImage: /images/og/effet-spectateur-aux-echecs-og.webp
+
 ---
 
-Un joueur enchaîne quinze parties avec une précision de moteur, dans un tournoi ouvert, sous les yeux de deux cents spectateurs. Le chat commente. Certains rient. Quelques-uns écrivent que c'est évident.
+L'effet spectateur est un cadre pour interroger l'intervention en présence d'autres personnes. Son application aux soupçons de triche aux échecs exige cependant de distinguer une anomalie perçue, une preuve disponible et la possibilité concrète de signaler un problème.
 
-Personne ne signale.
-
-L'explication qui vient immédiatement à l'esprit s'appelle l'effet spectateur, et elle est enseignée partout depuis cinquante ans. Elle est aussi, dans ce cas précis, probablement fausse. Ce qui rend l'affaire plus intéressante.
+Une absence de signalement ne suffit pas à identifier sa cause. La question est de comparer ce que les recherches étudient et les conditions d'un tournoi ou d'une diffusion en ligne, sans supposer que tous les témoins disposent des mêmes informations ni qu'ils interprètent la situation de la même manière.
 
 ## La parabole, et ce qu'elle cache
 

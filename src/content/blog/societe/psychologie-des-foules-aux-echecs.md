@@ -54,17 +54,17 @@ faq:
       montre que l'anonymat et l'immersion dans un groupe renforcent au contraire l'adhésion aux normes
       de ce groupe. Un chat agressif ne révèle pas la disparition des règles, il révèle quelles règles
       ont cours dans ce groupe.
+heroImage:
+  src: /images/blog/psychologie-des-foules-aux-echecs-hero.webp
+  alt: Des silhouettes assises dans des cercles de lumière séparés au sein d’une
+    salle.
+ogImage: /images/og/psychologie-des-foules-aux-echecs-og.webp
+
 ---
 
-Salle de tournoi, ronde 5. Cent quarante joueurs, quatre-vingts tables, et un silence absolu. Personne ne parle. Personne ne se déplace. Personne ne regarde ailleurs que sa propre position.
+La présence de nombreux joueurs dans une salle ne suffit pas à former une foule au sens des théories de l'action collective. Une compétition rassemble des personnes autour de règles communes tout en organisant des décisions individuelles et des oppositions entre adversaires.
 
-C'est une foule. Cent quarante personnes dans une même pièce, engagées dans la même activité, au même moment.
-
-Et c'est très exactement l'inverse de tout ce que la psychologie des foules a décrit pendant un siècle. Aucune communication, aucune action collective, aucun objectif partagé, aucune émotion contagieuse autorisée.
-
-Une anti-foule. Qui agit pourtant sur toi, et de façon mesurable.
-
-Trois articles de cette série en ont déjà exploré des aspects : [le conformisme](/fr/blog/conformisme-aux-echecs/), [l'obéissance à l'autorité](/fr/blog/obeissance-a-l-autorite-aux-echecs/) et [l'effet spectateur](/fr/blog/effet-spectateur-aux-echecs/). Il s'agit ici de poser le cadre général, et de montrer que le cadre le plus célèbre est le mauvais.
+Pour analyser cette situation, il faut distinguer le rassemblement, les normes du groupe, les échanges d'information et les émotions partagées. Les articles sur [le conformisme](/fr/blog/conformisme-aux-echecs/), [l'obéissance à l'autorité](/fr/blog/obeissance-a-l-autorite-aux-echecs/) et [l'effet spectateur](/fr/blog/effet-spectateur-aux-echecs/) en abordent des aspects particuliers. Il s'agit ici de préciser le cadre général et ses limites d'application.
 
 ## Le Bon, 1895
 

@@ -22,6 +22,8 @@ faq:
       Meer dan gemiddeld, maar geen meerderheid. Enkele grote namen zoals Emanuel Lasker (wereldkampioen en
       doctor in de wiskunde) of Max Euwe hebben in beide domeinen uitgeblonken. Maar de meerderheid van de
       grote wiskundigen speelt geen schaken op hoog niveau.
+heroImageAlt: Een schaakloper via een brug verbonden met passende geometrische vormen.
+
 ---
 
 Emanuel Lasker was 27 jaar lang wereldkampioen schaken, een record dat nog steeds intact is. Hij bezat ook een doctoraat in de wiskunde en publiceerde werken in algebra en topologie. John von Neumann, een van de belangrijkste wiskundigen van de twintigste eeuw, speelde schaken. Max Euwe, wereldkampioen van 1935 tot 1937, was wiskundeprofessor aan de Universiteit van Amsterdam.

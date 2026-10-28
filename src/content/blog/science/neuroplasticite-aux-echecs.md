@@ -50,13 +50,16 @@ faq:
       considérable : reconnaissance de motifs, mémoire spécialisée, calcul de variantes. Ce qui n'est
       pas démontré, c'est le transfert vers des domaines éloignés. La bonne raison de jouer n'a jamais
       été la promesse d'un cerveau amélioré.
+heroImage:
+  src: /images/blog/neuroplasticite-aux-echecs-hero.webp
+  alt: Une corde tressée se défait puis se recompose en nouvelles ramifications.
+ogImage: /images/og/neuroplasticite-aux-echecs-og.webp
+
 ---
 
-Tape « échecs cerveau » dans un moteur de recherche. Tu vas tomber, en boucle, sur la même phrase : les échecs **recâblent** ton cerveau. Parfois avec un mot savant en renfort, neuroplasticité, et deux études en caution : les chauffeurs de taxi londoniens et les jongleurs.
+La neuroplasticité désigne la possibilité de modifications du système nerveux en relation avec l'expérience. Appliquer cette notion aux échecs exige de distinguer les effets directement étudiés chez les joueurs et les analogies tirées d'autres apprentissages.
 
-Ces deux études existent. Elles sont excellentes. Elles ont été publiées dans des revues de premier plan.
-
-Et elles ne disent pas ce qu'on leur fait dire. Dans les deux cas, le résultat le plus intéressant est celui qui n'est jamais rapporté.
+Les recherches sur les chauffeurs de taxi londoniens et les jongleurs permettent de discuter certaines modifications associées à une activité. Elles ne démontrent pas, par leur seule existence, les effets d'un entraînement échiquéen. L'enjeu est d'examiner leurs méthodes, leurs résultats et les limites du transfert de leurs conclusions à un autre domaine.
 
 ## Ce que le mot veut dire, et ce qu'il ne dit pas
 
@@ -132,7 +135,7 @@ La même année, dans *Current Directions in Psychological Science*, ils élargi
 
 Une absence de différence statistiquement significative ne démontre pas une absence absolue d’effet. Elle ne permet cependant pas de promettre le bénéfice annoncé.
 
-Notre article sur [les échecs rendent-ils plus intelligent](/fr/blog/les-echecs-rendent-ils-plus-intelligent/) développe ce dossier du côté des performances scolaires. Ici, le point est plus restreint et plus net : **l’imagerie ne remplace pas un test comportemental du bénéfice annoncé**. Peu importe ce que montre l'imagerie si le bénéfice annoncé ne se mesure pas dans les faits.
+Notre article sur les échecs rendent-ils plus intelligent (article à venir) développe ce dossier du côté des performances scolaires. Ici, le point est plus restreint et plus net : **l’imagerie ne remplace pas un test comportemental du bénéfice annoncé**. Peu importe ce que montre l'imagerie si le bénéfice annoncé ne se mesure pas dans les faits.
 
 ## Ce qui reste vrai
 
@@ -156,7 +159,7 @@ Trois raisons, et aucune n'a à voir avec la solidité des preuves.
 
 ## Quoi faire de tout ça
 
-**Ne choisis pas les échecs pour ton cerveau.** Choisis-les parce que le jeu est beau, difficile et sans fin. C'est une raison suffisante, et c'est la seule qui tienne dix ans.
+**Choisir le jeu pour lui-même.** Tu peux aimer les échecs pour leur beauté, leur difficulté ou les rencontres qu’ils permettent. Ces raisons n’ont pas besoin d’une promesse de bénéfice cérébral ; leur importance reste personnelle.
 
 **Méfie-toi de « recâbler ».** Le verbe n'a pas de contenu vérifiable. Devant toute affirmation de bénéfice cognitif, pose les trois questions : quel changement précis, mesuré comment, et comparé à quel groupe témoin. La troisième est presque toujours celle qui manque.
 

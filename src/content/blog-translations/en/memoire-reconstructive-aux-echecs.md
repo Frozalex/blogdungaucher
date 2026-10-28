@@ -47,6 +47,7 @@ faq:
       No, and that's what makes the topic interesting. The fact that recall makes a memory editable
       is also what gives active recall its power as a learning method. Rebuilding a game from memory
       isn't a simple check: it's the operation that fixes it in place.
+heroImageAlt: Hands reassembling torn paper into a slightly shifted mosaic.
 ---
 
 Tell me about a game you played three years ago that you're proud of.

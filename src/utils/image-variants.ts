@@ -6,7 +6,7 @@ import imageWidths from "../data/image-widths.json";
  * Les deux fichiers doivent rester d'accord : ici on ne fait que déclarer dans
  * le `srcset` les fichiers que le script a écrits.
  */
-const WIDTHS = [480, 640, 960] as const;
+const WIDTHS = [240, 480, 640, 960] as const;
 
 const SOURCE_RE = /\.(?:webp|jpe?g|png)$/i;
 

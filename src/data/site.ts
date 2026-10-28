@@ -34,7 +34,7 @@ export const ADSENSE_SLOT_OVERRIDE = "7361631253";
 /** Google AdSense - script chargé dans BaseLayout ; ici les IDs d’unités d’annonce (créées dans AdSense > Annonces).
  *
  * Deux flags séparés :
- *   - `enabled` : autorise le chargement du SDK AdSense (sur consentement). Laisser true
+ *   - `enabled` : autorise le SDK AdSense sur les pages éligibles. Laisser true
  *     pendant la phase de demande/validation pour que Google puisse crawler le site
  *     avec le tag adsbygoogle présent.
  *   - `live`    : affiche réellement les emplacements `<ins class="adsbygoogle">` dans la
@@ -43,15 +43,14 @@ export const ADSENSE_SLOT_OVERRIDE = "7361631253";
  *
  * Workflow demande AdSense :
  *   1. live: false (état actuel) → soumettre la demande sur adsense.google.com
- *   2. attendre l'approbation (revue manuelle Google, 1-14 jours typiquement)
+ *   2. attendre la décision de Google (délai variable)
  *   3. créer les unités d'annonce dans AdSense (leaderboard / inline / rectangle)
  *   4. coller les slot IDs dans ADSENSE_SLOT_OVERRIDE / PUBLIC_ADSENSE_SLOT_* (.env)
  *   5. passer live: true → les emplacements deviennent visibles
  */
 export const adsenseConfig = {
-  /** Active les emplacements `AdBanner` dans les templates. Ne gouverne PAS le
-   *  chargement du SDK adsbygoogle.js : celui-ci est inconditionnel, en dur dans
-   *  le `<head>` de BaseLayout, sur toutes les pages et toutes les langues. */
+  /** Autorise le SDK et les emplacements sur les pages éligibles. Les pages
+   * noindex restent exclues du SDK, indépendamment de ce réglage. */
   enabled: true,
   /** Affiche les emplacements publicitaires. Mettre à true APRÈS approbation AdSense. */
   live: false,

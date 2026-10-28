@@ -1,8 +1,8 @@
 ---
-title: "Les échecs et l'addiction : quand le jeu devient une drogue"
+title: "Échecs et addiction : quand le jeu prend trop de place"
 excerpt: >-
-  Il est 3h du matin. Tu as promis que c'était la dernière partie, mais tu en lances une autre. Peut-on vraiment être
-  accro aux échecs ? Décryptage d'une dépendance silencieuse.
+  Relancer malgré la fatigue, sacrifier son sommeil, perdre le contrôle : comment distinguer passion et usage
+  problématique des échecs, sans diagnostic automatique ni raccourcis sur la dopamine.
 publishDate: "2026-04-03"
 category: societe
 featured: false
@@ -18,155 +18,175 @@ tags:
   - jeu en ligne
   - santé mentale
   - psychologie
-seoTitle: "Addiction aux échecs : comprendre et surmonter la dépendance"
+seoTitle: "Échecs et addiction : repérer un usage problématique"
 seoDescription: >-
-  Addiction aux échecs : 47 parties dans la nuit, rating obsessionnel, boucle dopaminergique. Les échecs créent-ils une vraie dépendance ? Signes et solutions.
-ogImage: /images/blog/les-echecs-et-l-addiction-hero.webp
+  Échecs en ligne : distinguer passion, perte de contrôle et trouble clinique. Repères sur le gaming disorder,
+  limites des explications par la dopamine et pistes pour demander de l'aide.
+ogImage: /images/og/les-echecs-et-l-addiction-v2-og.webp
 heroImage:
-  src: /images/blog/les-echecs-et-l-addiction-hero.webp
-  alt: "Vignette pixel art : bureau la nuit, écran montrant un échiquier, titre sur l’addiction aux échecs"
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/les-echecs-et-l-addiction-v2-hero.webp
+  alt: Un ruban vert d’eau forme des boucles autour d’une chaise et d’un sablier.
+
+faq:
+  - question: Peut-on être dépendant aux échecs ?
+    answer: >-
+      Une pratique des échecs peut s'accompagner d'une perte de contrôle et de conséquences importantes. Cela ne se
+      déduit ni du classement ni du nombre de parties. Le gaming disorder de la CIM-11 concerne le jeu numérique
+      ou vidéo ; son application à une personne demande une évaluation clinique, pas une étiquette automatique.
+  - question: Combien d'heures de jeu indiquent une addiction ?
+    answer: >-
+      Aucun seuil horaire universel ne suffit au diagnostic. Il faut examiner le contrôle de la pratique, sa priorité
+      et ses conséquences. Des questions de réflexion peuvent aider à préparer une consultation, mais « trois oui »
+      dans une liste de blog n'est pas un test validé.
+  - question: Le blitz provoque-t-il des pics de dopamine comparables à une drogue ?
+    answer: >-
+      Les sources présentées ne démontrent pas cette comparaison. Les recherches sur les signaux de récompense ne
+      permettent pas de mesurer la dopamine d'un joueur après chaque victoire ni d'expliquer à elles seules une
+      difficulté à s'arrêter.
+  - question: Faut-il attendre douze mois pour consulter ?
+    answer: >-
+      Non. La durée habituelle mentionnée dans la définition OMS ne demande pas d'attendre avant de chercher de
+      l'aide. Une souffrance, une perte de contrôle répétée ou des conséquences sur le sommeil, les études, le travail
+      ou les relations justifient d'en parler à un professionnel de santé.
+  - question: Jouer plus lentement ou limiter les parties suffit-il à se soigner ?
+    answer: >-
+      Ce sont des ajustements personnels possibles, pas des traitements validés de l'addiction aux échecs. Une cadence
+      lente peut aussi prolonger le jeu. Si les limites ne tiennent pas ou si les conséquences sont importantes,
+      l'accompagnement d'un professionnel est préférable à une règle universelle.
 ---
 
-Il est 3 h du matin. L’écran bleuté te crame les paupières ; le compteur du **jour** affiche **47 parties jouées**. Ton rating vient de passer sous le palier que tu t’étais juré de ne plus lâcher. Tu te dis : *« Juste une dernière, celle qui remet tout d’aplomb »*. Parce qu’il n’est pas question de finir sur une défaite.
+Une pratique intense des échecs ne suffit pas à caractériser une addiction. La question devient différente lorsqu'une perte de contrôle persistante empiète sur le sommeil, les relations ou le travail, malgré le souhait de modifier la pratique.
 
-Cette scène te semble familière ? Ce film-là, des milliers de **joueurs** le rejouent chaque nuit sur [Chess.com](https://www.chess.com), [Lichess](https://lichess.org) et les autres serveurs **Internet** dédiés au **jeu d'échecs**.
+Il faut donc distinguer **engagement, usage problématique et diagnostic clinique**. Le jeu peut être une passion exigeante, une vie sociale et un plaisir durable ; sa réputation intellectuelle ne rend pas pour autant anodines les difficultés qu'il peut accompagner. L'enjeu est de préciser les signes à examiner et les possibilités d'aide sans transformer chaque envie de revanche en maladie.
 
-Les échecs, ce « noble jeu de rois », réputé pour la discipline et la froideur du calcul… **Peut-être** que **trop** de **temps** sur 64 cases peut basculer dans une vraie compulsion ? Pas au sens où une partie entre amis le dimanche te détruirait la vie, mais au sens où l’online compétitif peut installer une boucle que ton cerveau ne distingue pas toujours d’autres renforcements extrêmes. On va poser les faits sans te faire la morale, avec ce que dit la science.
+## La dépendance n’est pas réservée aux substances
 
-## Le mythe brisé : non, la dépendance n’est pas « réservée » aux drogues
+L’[Organisation mondiale de la santé](https://www.who.int/standards/classifications/frequently-asked-questions/gaming-disorder) décrit dans la CIM-11 un trouble lié à la pratique des jeux numériques ou vidéo, le *gaming disorder*. Les éléments centraux sont une difficulté à contrôler le jeu, une priorité croissante donnée à cette activité et sa poursuite malgré des conséquences négatives. Le retentissement sur la vie doit être important ; le tableau est normalement présent pendant au moins douze mois.
 
-Longtemps, on a cru que la dépendance, c’était surtout la bouteille ou la poudre. Un **jeu** sur écran ? Un passe-temps intellectuel ? Ça ne « compte » pas. **Peut-être** par snobisme, sans doute par méconnaissance.
+Cela ne signifie pas qu’il faut attendre un an pour demander de l’aide. Cela ne signifie pas non plus que toute longue session relève de ce trouble. La durée, les circonstances et les conséquences demandent une appréciation clinique. La catégorie ne constitue pas, à elle seule, une étude de la fréquence d’une « addiction aux échecs ».
 
-La psychiatrie moderne dit autre chose : des comportements immatériels peuvent produire des dysfonctionnements neurologiques et de la vie comparables à ceux des drogues classiques ; pas identiques en gravité sociale ou sanitaire, mais réels sur le plan des circuits cérébraux et du contrôle.
+Autre distinction : l’[American Psychiatric Association](https://www.psychiatry.org/patients-families/internet-gaming) présente l’*Internet Gaming Disorder* dans le DSM-5-TR comme une condition nécessitant davantage de recherches. Son statut et ses critères ne se confondent donc pas avec ceux de la CIM-11. Un article de blog ne permet ni de poser ce diagnostic ni d’appliquer automatiquement ces catégories à un joueur d’échecs.
 
-L’[Organisation mondiale de la santé](https://fr.wikipedia.org/wiki/Organisation_mondiale_de_la_sant%C3%A9) (OMS) a officiellement inclus le trouble du jeu vidéo (*Gaming Disorder*) dans la [CIM-11](https://www.who.int/news/item/25-09-2018-who-releases-new-international-classification-of-diseases-(icd-11)) en **2019**, aux côtés des troubles liés aux substances. Concrètement : le cadre clinique reconnaît qu’on peut perdre le contrôle, prioriser la pratique au détriment du reste, et continuer malgré les dégâts même sans seringue ni verre.
+Le bon point de départ est plus simple : **peux-tu encore choisir quand jouer et quand t’arrêter, et que coûte cette pratique dans ta vie ?** Cette question concerne aussi les joueurs dont la situation n’atteint pas un seuil diagnostique.
 
-Le cerveau ne « moralise » **rien** sur le circuit de la récompense : une série de pics déclenchés par des **parties** en formats expéditifs, par des classements, des revanches, peut entrer en résonance avec d’autres boucles de renforcement intenses. Ce n’est pas dire que les cadences courtes et la cocaïne sont « la même chose » socialement ou légalement ; c’est dire que la mécanique d’apprentissage peut rimer au sens du circuit de récompense, pas au sens moral.
+## Récompense et habitudes : ce que l’on peut expliquer sans inventer un cerveau
 
-Les échecs en **ligne** ajoutent une couche : cadences infernales (Bullet, **Blitz**), **Elo en direct**, badges, communauté permanente. Bref : un fast-food neuronal. Le plateau en bois du mercredi soir n’a **rien** à voir.
+### La dopamine n’est pas un compteur de victoires
 
-## La neurobiologie : pourquoi ton cerveau te piège (sans te juger)
+Le raccourci « victoire → pic de dopamine → addiction » paraît parlant, mais il va trop loin. Les travaux de [Schultz, Dayan et Montague (1997)](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf) relient des signaux dopaminergiques à l’apprentissage des prédictions de récompense, notamment dans des expériences chez le primate. Ils ne mesurent pas une dose de dopamine après chaque mat sur une application.
 
-### La boucle dopaminergique
+Aux échecs, le plaisir d’un beau coup, la surprise et l’envie de retrouver un classement peuvent participer à la motivation. Nous ne pouvons pas en déduire l’état du striatum d’un lecteur, l’intensité d’un « pic », ou une équivalence avec l’effet d’une substance. **Une explication générale de l’apprentissage n’est pas une mesure neurologique du blitz.**
 
-Victoire → dopamine → sensation de progression → envie de recommencer → **nouvelle** partie → nouveau pic (ou nouvelle frustration à « effacer »). Ton [striatum](https://fr.wikipedia.org/wiki/Striatum), hub du circuit de la récompense, est sollicité quand le mat tombe, quand tu gagnes du **temps** à la pendule, quand tu cliques juste au **moment** précis.
+Le modèle [I-PACE de Brand et ses collègues (2019)](https://pubmed.ncbi.nlm.nih.gov/31247240/) propose d’étudier les interactions entre caractéristiques personnelles, émotions, attentes, réactivité aux signaux et contrôle du comportement. Ce cadre théorique aide à formuler des hypothèses ; il n’établit pas que toute notification d’une plateforme déclenche une dépendance aux échecs.
 
-Ce n’est pas que tu es « faible ». C’est que ton cerveau fait exactement ce que l’évolution lui a appris : poursuivre les signaux qui ressemblent à de la réussite.
+![Schéma pédagogique d’un enchaînement possible entre résultat, envie de revanche et nouvelle partie ; il ne représente pas des mesures de dopamine.](/images/echecs-addiction-01-boucle-dopamine.svg)
 
-Le chercheur [Matthias Brand](https://fr.wikipedia.org/wiki/Matthias_Brand) (Université de [Duisbourg-Essen](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Duisbourg-Essen)) insiste : une grande **partie** de la dépendance ne vient **pas** du plaisir pendant la **partie**, mais de l’anticipation : voir l’icône de l’appli, entendre la notif, *cue reactivity*, réactivité aux signaux. Là commence souvent le craving.
+### L’incertitude peut donner envie de relancer
 
-![La boucle dopaminergique de l’addiction aux échecs en ligne : victoire, pic de dopamine, envie de recommencer, nouvelle partie, nouveau pic ou frustration à effacer — cycle auto-entretenu.](/images/echecs-addiction-01-boucle-dopamine.svg)
+Tu ne connais pas le résultat de la prochaine partie. Après une défaite frustrante, la perspective de « se refaire » peut devenir plus attirante que l’envie d’étudier la position. L’accès immédiat à une nouvelle rencontre laisse peu de temps pour se demander si l’on souhaite vraiment continuer.
 
-### La récompense variable : le piège, c’est l’incertitude
+C’est une lecture possible de l’expérience du joueur, pas la preuve que les échecs reproduisent un protocole de casino ou un programme expérimental de renforcement à ratio variable. Une partie implique des décisions, des compétences et un adversaire. Transposer directement des résultats sur le jeu d’argent ou les substances aux échecs demanderait des études adaptées.
 
-Le mécanisme du *variable reward schedule*, théorisé par [Burrhus Frederic Skinner](https://fr.wikipedia.org/wiki/Burrhus_Frederic_Skinner), c’est le casino : tu ne sais pas si la prochaine rencontre sera un smash, une **défaite** ridicule, ou un match serré contre un inconnu plus **haut** que ton rating.
+![Exemple d’issues incertaines d’une partie et de l’envie de rejouer ; cette illustration n’établit pas un mécanisme clinique propre aux échecs.](/images/echecs-addiction-02-recompense-variable.svg)
 
-Sur [Lichess](https://lichess.org) ou Chess.com, tu ne maîtrises pas le pairing : l’imprévisibilité maintient ton cerveau en alerte. Le [NIDA](https://nida.nih.gov) a documenté comment ce type d’incertitude renforce l’apprentissage compulsif dans d’autres contextes ; le principe est transposable au rythme des **parties** en **ligne**.
+### Quand l’envie devient difficile à interrompre
 
-![Le mécanisme de récompense variable de Skinner aux échecs en ligne : victoire, défaite, match serré, smash — l’imprévisibilité du résultat maintient le cerveau en alerte et renforce l’apprentissage compulsif.](/images/echecs-addiction-02-recompense-variable.svg)
+Avoir envie de jouer après une journée chargée n’est pas en soi inquiétant. Une autre situation est de relancer malgré l’épuisement, de regretter systématiquement la session ou de ne plus parvenir à respecter les limites que l’on s’était fixées.
 
-### Craving : plus pour le plaisir, pour faire taire le vide
+On peut décrire cette difficulté sans affirmer que le cortex préfrontal a été « court-circuité ». Le vécu, les habitudes et les conséquences observables sont déjà des informations utiles pour comprendre le problème et en parler.
 
-La différence entre envie et besoin, tu la connais : tu lances une partie alors que tu es mort de fatigue, pas pour le kiff, mais pour ne plus ressentir l’inconfort de ne pas **jouer**. Ton [cortex préfrontal](https://fr.wikipedia.org/wiki/Cortex_pr%C3%A9frontal), censé freiner, se fait parfois court-circuiter par l’urgence du « il faut que je relance ».
+## Trois situations à observer aux échecs en ligne
 
-## Trois pièges très spécifiques aux échecs en ligne
+Ces exemples ne sont ni des symptômes spécifiques ni une liste validée de facteurs causaux. Ils invitent à examiner ce que la pratique représente pour toi.
 
-Le Dr [George Imataka](https://pubmed.ncbi.nlm.nih.gov/?term=Imataka+G) et al. (2024, *Journal of Clinical Medicine*) décrivent les facteurs qui enfoncent dans les boucles vidéoludiques. Les **parties** en **ligne** les cochent tous, avec une précision presque insultante.
+### Le chiffre qui te définit : quand le classement prend trop de place
 
-### Le chiffre qui te définit : quand l’Elo devient une cage
+Un classement sert à situer des résultats sportifs. Il ne mesure ni ta valeur personnelle ni ton intelligence. Pourtant, passer de « mon classement est de 1600 » à « je suis un 1600 » peut rendre chaque variation très lourde à vivre.
 
-Le [classement Elo](https://fr.wikipedia.org/wiki/Classement_Elo) était un outil statistique. En **ligne**, il devient un miroir d’ego : « Je suis un 1600 ». (La psychologie derrière ce mécanisme est développée dans [La psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/).)
+Si tu lances une partie pour effacer une baisse plutôt que par envie de jouer, note cette motivation. Compare ensuite avec une séance consacrée à une position ou à une partie analysée. L’article [Psychologie du joueur d’échecs](/fr/blog/psychologie-du-joueur-d-echecs/) développe ce rapport au résultat. Il ne s’agit pas de rendre le classement interdit, mais de vérifier la place qu’il occupe.
 
-Dans le contexte de la dépendance, la bascule est précise : tu ne joues plus pour **apprendre**, tu joues pour protéger l’étiquette. La fixation sur le **point** Elo a remplacé le **jeu**.
+### La communauté comme attache
 
-### La communauté comme ancre, le départ comme rupture
+Les clubs en ligne, les amis et les tournois peuvent être une vraie source de liens. Ils peuvent aussi rendre une pause difficile si l’on craint de manquer une rencontre ou de décevoir son groupe.
 
-Chess.com, ce n’est pas qu’un moteur de pairing : clubs, tournois, amis, forums, un petit **monde** où tu existes. Arrêter peut sentir la disconnection d’un **monde** où tu te reconnaissais. La peur de rater quelque chose (*FOMO*) colle à la paroi.
+Prévenir ses partenaires d’un horaire de fin ou proposer une activité hors plateforme permet d’observer cette tension. Avoir une communauté n’est pas un signe de maladie ; le problème éventuel est de ne plus pouvoir préserver ses autres engagements.
 
-### Jouer pour ne pas être là : l’évasion cognitive
+### Jouer pour mettre le reste à distance
 
-Le chercheur Saket Singh, dans ses travaux sur le cerveau des joueurs d’échecs, explore comment ce **jeu d'échecs** module fortement le [réseau du mode par défaut](https://fr.wikipedia.org/wiki/R%C3%A9seau_du_mode_par_d%C3%A9faut) : pendant une partie, le bruit du **monde** baisse. Stress du boulot, anxiété, ruminations disparaissent derrière 64 cases.
+Une partie peut offrir une pause bienvenue dans une journée pénible. Si elle devient le seul moyen de supporter une inquiétude, une solitude ou un conflit, il est utile d’examiner aussi ce contexte.
 
-Super… jusqu’au **jour** où l’échiquier devient anesthésiant : tu ne joues plus pour progresser, tu joues pour ne pas être là.
+Nous ne déduisons pas d’une étude d’imagerie que le « réseau du mode par défaut » éteint les soucis du joueur. Le soulagement ressenti et les difficultés qui reviennent après la session méritent d’être décrits pour eux-mêmes. Une anxiété ou une humeur dépressive associée ne prouve pas non plus quelle difficulté a précédé l’autre.
 
-Quand Chess.com devient une béquille, ce n’est plus le hobby qui te détend, c’est la boucle qui te retient.
+## Le tilt : décrire la spirale sans faux dosage de cortisol
 
-## Le tilt : humour noir et spirale bien documentée
+Tu perds une partie, tu relances immédiatement et tu t’agaces encore. Dans le vocabulaire des joueurs, le *tilt* décrit ce moment où la frustration pèse sur les décisions et sur l’envie de continuer.
 
-Tu perds une **partie** bête. Tu relances tout de suite. Tu perds moins bien. Tu relances. Tu perds encore plus mal.
+Il n’est pas nécessaire de raconter que « l’amygdale prend le volant ». Nous ne disposons ici d’aucune mesure permettant de comparer le cortisol d’une session de blitz à celui d’un premier saut en parachute. La comparaison ne doit pas servir de preuve médicale.
 
-Le stress monte, le cortisol grimpe ; le [Dr Elke van der Meer](https://www.researchgate.net/profile/Elke-Van-der-Meer) ([Humboldt Berlin](https://fr.wikipedia.org/wiki/Universit%C3%A9_Humboldt_de_Berlin)) a mesuré des niveaux de stress en **cadences courtes** comparables à… un parachutiste avant le premier saut. Sous pression, le [cortex préfrontal](https://fr.wikipedia.org/wiki/Cortex_pr%C3%A9frontal) lâche prise ; l’[amygdale](https://fr.wikipedia.org/wiki/Amygdale_(cerveau)) pilote. Tu **joues** vite et mal. [Matthias Brand](https://fr.wikipedia.org/wiki/Matthias_Brand) relie ça aux fonctions exécutives dans les usages problématiques.
+Le signe pratique à repérer est un changement dans ton comportement : accélérer sans réfléchir, insulter l’adversaire, repousser encore l’heure du coucher ou continuer uniquement pour récupérer des points. Une pause offre un temps de recul ; elle ne garantit pas la victoire à la reprise et ne remplace pas une aide si les difficultés persistent.
 
-**Paradoxe cruel :** plus tu veux rattraper le **dernier** **point** perdu, plus tu t’enfonces, et plus les **défaites** s’enchaînent.
+![Exemple de spirale de frustration et de relance après une défaite ; ni le cortisol ni une région cérébrale ne sont mesurés dans ce schéma.](/images/echecs-addiction-03-tilt-spiral.svg)
 
-![La spirale du tilt aux échecs en ligne : défaite, cortisol en hausse, relance immédiate, cortex préfrontal débordé, jeu dégradé — chaque défaite alimente la suivante.](/images/echecs-addiction-03-tilt-spiral.svg)
+## Faire le point sans s’attribuer un diagnostic
 
-Pour aller plus loin sur le mécanisme psychologique du tilt, ego, imposteur et flow : l’article [Psychologie du joueur d'échecs](/fr/blog/psychologie-du-joueur-d-echecs/) y consacre une section entière.
+Voici des questions de réflexion, **pas un test de dépistage validé** :
 
-## Es-tu vraiment dans la zone rouge ? (auto-check bienveillant)
+1. Est-ce que tu joues régulièrement plus longtemps que prévu ?
+2. Est-ce que le sommeil, les cours, le travail ou des relations en souffrent ?
+3. Est-ce que tes tentatives de réduction échouent de façon répétée ?
+4. Est-ce que tu continues malgré des conséquences que tu identifies clairement ?
+5. Est-ce que les échecs sont devenus ton seul moyen de calmer une tension ?
 
-La dépendance, ce n’est pas « X **heures** » sur le compteur. C’est la relation au **jeu**. Pose-toi ces questions sans te juger, juste pour voir :
+Il n’y a pas de règle « trois oui = addiction ». Une difficulté importante peut justifier une consultation sans atteindre un score arbitraire. À l’inverse, se reconnaître dans une question ne suffit pas à établir un trouble.
 
-1. Tu **joues** même quand tu n’as **rien** envie ?
-2. Tu rates des obligations (**cours**, boulot, sommeil) à cause des échecs ?
-3. Tu es irritable quand tu ne peux pas **prendre** une **heure** pour jouer ?
-4. Tu as essayé de **réduire** et tu n’y arrives pas ?
-5. Tu joues surtout pour calmer une tension plutôt que pour le plaisir ?
+Pour préparer un échange avec un professionnel, note quelques situations précises : heure de début et de fin, limite prévue, sommeil, obligations manquées, état avant et après. Un médecin ou un professionnel de santé mentale pourra examiner la situation dans son ensemble, y compris d’éventuelles difficultés associées. **Le but est de recevoir une aide adaptée, pas de se coller une étiquette.**
 
-**Trois oui ou plus** → ce que tu lis ici te concerne directement. Ce n’est pas une étiquette honteuse : c’est un signal pour ajuster le cadre et **peut-être** parler à un pro.
+## Les chiffres disponibles ne donnent pas un taux d’addiction aux échecs
 
-Les critères du [DSM-5](https://fr.wikipedia.org/wiki/Manuel_diagnostique_et_statistique_des_troubles_mentaux) ([APA](https://fr.wikipedia.org/wiki/Association_am%C3%A9ricaine_de_psychiatrie)) et de la CIM-11 convergent sur l’idée : perte de contrôle, priorité au **jeu**, **poursuite malgré les conséquences**. Mensonges sur le **temps** passé, sommeil sacrifié, irritabilité au sevrage : alertes.
+Une hausse des inscriptions après une série télévisée ou le nombre de comptes d’une plateforme ne mesure pas une maladie. Un compte n’est pas forcément une personne active ; une personne active n’a pas nécessairement un usage problématique.
 
-**Profils plus vulnérables** : [Daria Kuss](https://www.dariakuss.com) ([Nottingham Trent](https://fr.wikipedia.org/wiki/Nottingham_Trent_University)) montre comment anxiété, dépression ou [TDAH](https://fr.wikipedia.org/wiki/Trouble_du_d%C3%A9ficit_de_l%27attention_avec_hyperactivit%C3%A9) peuvent pousser vers l’hyperstimulation des cadences les plus courtes en **ligne** ; ce n’est **pas** de la « faiblesse », c’est du contexte.
+Les enquêtes sur le jeu vidéo utilisent des populations et des outils différents. Leurs résultats ne peuvent pas être présentés comme le pourcentage de joueurs d’échecs dépendants. Les sources de cet article ne fournissent pas une telle estimation spécifique.
 
-## Contexte chiffré : tu n’inventes pas un problème « perso »
+Cette limite ne rend pas ton vécu imaginaire. Pour décider de chercher du soutien, les conséquences que tu observes comptent davantage qu’un chiffre spectaculaire sur la popularité du jeu.
 
-Après [*Le Jeu de la Dame*](https://amzn.to/3TdPuti) (2020), Chess.com a publié une explosion des inscriptions souvent citée autour de **+200 %** en 2020. Traduction : des millions de nouveaux comptes, dont beaucoup sans culture du **jeu** lent, direction **Bullet** ou cadences courtes, donc vers la boucle la plus nerveuse.
+## Trois ajustements à essayer, sans les présenter comme un traitement
 
-Les travaux nationaux sur le *gaming disorder* donnent des fourchettes très variables (outils, pays, définitions). L’important n’est **pas** un pourcentage « magique » universel : c’est que l’usage problématique existe, qu’il est mesuré dans la littérature, et que l’OMS a donné un cadre clinique. Tu n’es ni fou ni seul **face** à la machine.
+### Étape 1 : choisir un rythme compatible avec ta vie
 
-[L’ICC](https://fr.wikipedia.org/wiki/Internet_Chess_Club) et les plateformes ont commencé à outiller la modération ; la [FIDE](https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_internationale_des_%C3%A9checs) peine encore à cadrer la prévention sur **Internet** : le terrain reste réel, et chaque **joueur** est laissé un peu seul **face** à ses propres signaux d’alarme.
+Si les relances rapides prolongent tes sessions, essaie une activité qui les limite : une partie programmée, une analyse, un problème sur papier ou une rencontre au club. Une cadence plus lente peut changer l’expérience, mais elle peut aussi allonger une session.
 
-## Plan de sortie en trois étapes : conseils concrets, aujourd’hui
+Choisis donc d’abord un créneau qui respecte tes obligations et ton sommeil. Il n’existe pas ici de cadence « 10+0 minimum » ni de nombre quotidien prescrit pour traiter une dépendance. Si tu n’arrives pas à respecter ce cadre, cela mérite d’être discuté plutôt que d’être vécu comme une faute morale.
 
-### Étape 1 : Couper le Bullet et les cadences courtes (sans quitter les échecs)
+### Étape 2 : remettre le classement à sa place
 
-Ce n’est **pas** « arrêter les échecs » : c’est ralentir le format. Passe à du **10+0 / 15+10** minimum pendant une phase de sevrage. Par **exemple**, deux **parties** de 15+10 par **jour**, **point**. Ton cerveau a besoin de **temps** pour penser, **pas** seulement pour réagir : c’est là que le tilt perd une **partie** de son carburant.
+Une séance non classée ou un objectif d’apprentissage peut aider à voir ce que tu apprécies en dehors du score. Observe ce qui change, sans te promettre qu’une semaine suffira.
 
-### Étape 2 : Désacraliser l’Elo
+La [théorie de l’autodétermination de Ryan et Deci](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf) distingue des formes de motivation et s’intéresse à l’autonomie, à la compétence et aux relations. Ce cadre aide à réfléchir à la pratique ; il ne démontre pas que masquer un graphique soigne une addiction aux échecs.
 
-Une semaine en non classé, ou sans regarder le graphique : remets la motivation intrinsèque au centre. [Deci](https://fr.wikipedia.org/wiki/Edward_Deci) & [Ryan](https://fr.wikipedia.org/wiki/Richard_Ryan) ([Rochester](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Rochester)), [théorie de l’autodétermination](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_l%27autodermination) : quand l’extrinsèque (le chiffre) mange l’intrinsèque (la beauté du coup), la **nouvelle** dépendance au score guette.
+### Étape 3 : décider de la fin avant le début
 
-### Étape 3 : La règle des trois parties
+Tu peux fixer une heure de fin, prévoir une pause ou convenir d’une limite avec une personne de confiance. « Trois parties maximum » est un exemple de règle personnelle, **pas un seuil clinique ni une méthode validée de sevrage**. Si cette règle devient elle-même une source de tension, revois-la avec de l’aide.
 
-**Maximum trois parties jouées par session**, que tu gagnes ou que tu perdes. Si tu tilt, tu t’arrêtes. C’est plus fort que la volonté « je promets » : c’est une règle de design.
+![Trois pistes d’organisation : adapter le rythme, prendre du recul sur le classement et prévoir la fin d’une session ; elles ne constituent pas un traitement validé.](/images/echecs-addiction-04-plan-sortie.svg)
 
-![Plan de sortie en trois étapes contre l’addiction aux échecs en ligne : ralentir vers les cadences longues, désacraliser l’Elo, et appliquer la règle des trois parties maximum par session.](/images/echecs-addiction-04-plan-sortie.svg)
+Réduire les notifications et éloigner le téléphone du lit peut rendre le cadre plus facile à tenir. En cas de perte de contrôle persistante, de souffrance ou de retentissement important, contacte un professionnel de santé. En France, l’[association Addictions France](https://addictions-france.org/) présente aussi des possibilités d’accompagnement. Un mineur peut en parler à un adulte de confiance ou à un professionnel de santé scolaire.
 
-**Environnement** ([sciences du comportement](https://fr.wikipedia.org/wiki/Sciences_du_comportement)) : pas d’échecs au lit ; apps de blocage ([Cold Turkey](https://getcoldturkey.com), [Freedom](https://freedom.to)) ; si ça persiste → professionnel, par **exemple** [Addiction France](https://www.addictionfrance.fr).
+## Au-delà des 64 cases : comprendre ce que le jeu apporte
 
-## Au-delà des 64 cases : ce que le jeu révèle
+Pour certaines personnes, le jeu offre du lien ; pour d’autres, de la compétition, de la curiosité ou une pause. Il n’y a pas une cause psychologique unique derrière tous les usages difficiles. Chercher automatiquement une « fuite » ou un défaut de caractère risque de passer à côté de la situation réelle.
 
-La dépendance aux échecs, c’est rarement « juste » les échecs. Souvent, c’est une fuite, un besoin de contrôle, ou un rapport tordu à la **défaite** : le plateau amplifie ce qui traîne déjà dans le **monde** intérieur.
+Une question utile est : qu’est-ce que cette activité m’apporte, et quelles autres façons de répondre à ce besoin restent disponibles ? Tu peux aimer profondément les échecs et avoir besoin de changer la manière dont ils occupent ta journée.
 
-*L’échiquier amplifie ce que tu es. Si tu fuis quelque chose dans ta vie, tu peux le fuir aussi sur 64 cases.*
+## Redevenir libre de jouer et de s’arrêter
 
-## Redevenir joueur : jouer parce qu’on veut, pas parce qu’on ne peut pas s’arrêter
+L’objectif n’est pas de mériter le titre de « vrai joueur » en maîtrisant tout seul ses habitudes. C’est de retrouver une pratique compatible avec le reste de ta vie, avec du soutien si nécessaire.
 
-Les échecs sont magnifiques. Ils méritent mieux qu’être une béquille ou une punition.
-
-**Redevenir joueur**, c’est simple à dire : **joue** quand tu en as envie, **pas** quand tu ne peux pas t’en empêcher. La ligne rouge, ce n’est pas un nombre d’**heures** : c’est la perte de contrôle et les dégâts réels.
-
-Le vrai « maître », parfois, c’est celui qui ferme l’appli et retrouve le sourire en dehors du classement.
-
-**Après lecture :** si la boucle *« juste une partie »* te parle, programme une **alarme avant** d’ouvrir la plateforme **et** une session hebdo **sans écran** (un problème sur livre ou une **partie** au club) pendant quatre semaines pour mesurer le gain de sommeil.
+**Après lecture :** choisis un changement observable, puis note ce qui se passe réellement. Le sommeil et le respect de l’horaire prévu sont des repères plus utiles qu’une promesse de « réinitialiser la dopamine ». Si les conséquences sont déjà importantes, demande de l’aide sans attendre la fin d’une expérience personnelle.
 
 ### Sources et références
 
-- **Brand, M., et al.** - [*Gaming Disorder Is a Disorder due to Addictive Behaviors*](https://link.springer.com/article/10.1007/s40429-019-00258-y) - *Current Addiction Reports* (mécanismes neurobiologiques de la dépendance aux jeux et le phénomène de "craving").
-- **Imataka, G., Izumi, S., Miyamoto, Y. & Maehashi, A.** - [*Gaming Disorders: Navigating the Fine Line between Entertainment and Addiction*](https://www.mdpi.com/2077-0383/13/17/5122) - *Journal of Clinical Medicine*, 2024.
-- **Kuss, D.J. & Griffiths, M.D.** - [*Internet Gaming Addiction: A Systematic Review of Empirical Research*](https://www.mdpi.com/1660-4601/9/10/3367) - *International Journal of Environmental Research and Public Health* (profils vulnérables et dépendance numérique).
-- **Deci, E.L. & Ryan, R.M.** - [*Self-Determination Theory and the Facilitation of Intrinsic Motivation*](https://doi.org/10.1037/0003-066X.55.1.68) - *American Psychologist* (distinction motivation intrinsèque/extrinsèque).
-- **Organisation mondiale de la santé (OMS)** - [*ICD-11 : Gaming Disorder*](https://www.who.int/news/item/25-09-2018-who-releases-new-international-classification-of-diseases-(icd-11)) (reconnaissance officielle du trouble du jeu en 2019).
+- **OMS**, *Gaming disorder*, questions-réponses sur la CIM-11 : définition, retentissement et durée habituelle. [Page institutionnelle](https://www.who.int/standards/classifications/frequently-asked-questions/gaming-disorder).
+- **American Psychiatric Association**, *Internet Gaming* : statut de l’IGD dans le DSM-5-TR et distinction entre engagement et trouble. [Page institutionnelle](https://www.psychiatry.org/patients-families/internet-gaming).
+- **Brand, M. et al. (2019)**, *The Interaction of Person-Affect-Cognition-Execution (I-PACE) model for addictive behaviors: Update…*, *Neuroscience & Biobehavioral Reviews*, 104, 1-10. Cadre théorique, pas étude clinique des échecs. [Notice et résumé](https://pubmed.ncbi.nlm.nih.gov/31247240/).
+- **Schultz, W., Dayan, P. et Montague, P. R. (1997)**, *A Neural Substrate of Prediction and Reward*, *Science*, 275, 1593-1599. [Texte des auteurs](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf).
+- **Ryan, R. M. et Deci, E. L. (2000)**, *Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being*, *American Psychologist*, 55, 68-78. [Texte des auteurs](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf).

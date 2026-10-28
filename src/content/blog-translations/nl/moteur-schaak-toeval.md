@@ -41,6 +41,7 @@ faq:
       (<code>e2e4</code>, <code>e7e8q</code>), die ondubbelzinnig is. De verkorte algebraïsche notatie
       bestaat alleen om leesbare PGN's voor een mens te produceren, en de enige echte kost ervan is de
       desambiguatie wanneer twee identieke stukken hetzelfde vak kunnen bereiken.
+heroImageAlt: Een mechanische grijper kiest een houten schijfje uit een kom.
 ---
 
 [Fase 1 van deze serie](/fr/blog/perft-verifier-son-generateur-de-coups/) eindigde met een programma dat de schaakregels perfect kent en niet speelt. Het weet wat toegestaan is. Het heeft geen idee wat goed is.

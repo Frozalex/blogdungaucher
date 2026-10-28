@@ -49,6 +49,7 @@ faq:
       objetivamente melhor ou porque a recompensa dele é imediata. Uma combinação dá satisfação antes
       mesmo de ser verificada, e isso enviesa o exame dela: é esse desequilíbrio que precisa ser
       corrigido, não o gosto pelo jogo bonito.
+heroImageAlt: Uma vagem fechada ao lado de uma planta crescendo atrás de uma divisória.
 ---
 
 Posição calma. Duas opções.

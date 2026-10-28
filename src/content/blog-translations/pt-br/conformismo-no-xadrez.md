@@ -48,6 +48,8 @@ faq:
       Por um teste simples: você consegue explicar o que o lance faz, sem citar uma fonte? Se a única
       justificativa disponível é que aquela é a linha principal ou que o motor aprova, você adotou uma
       conclusão sem o raciocínio, o que a deixa inútil na posição vizinha.
+heroImageAlt: Setas de papel seguem a mesma curva, uma ligeiramente deslocada.
+
 ---
 
 Você olha a sua base de dados. Nesta posição, 82% das partidas continuam com o mesmo lance. A avaliação é boa. Os jogadores que jogaram isso são fortes.

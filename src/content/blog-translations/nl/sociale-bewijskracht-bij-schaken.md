@@ -37,6 +37,7 @@ faq:
       Door te filteren op een ratingcategorie dicht bij de jouwe voordat je iets leest. Het algemene
       percentage vermengt partijen van grootmeesters en clubpartijen, en de praktische moeilijkheden van
       een lijn zijn niet dezelfde per niveau.
+heroImageAlt: Een vergrootglas onderzoekt voetstappen bij een splitsing in een pad.
 ---
 
 Je opent je database bij een openingspositie. Drie speelbare zetten verschijnen.

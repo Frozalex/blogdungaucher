@@ -48,6 +48,8 @@ faq:
       olhou a refutação. E é justamente essa informação que importa. Para recuperá-la, é preciso
       anotar antes da análise o que você tinha calculado de verdade, senão a memória vai reconstruir uma
       versão em que você tinha visto tudo.
+heroImageAlt: Uma lâmpada ilumina apenas um dos caminhos de uma bifurcação.
+
 ---
 
 Você vê no lance 24. Uma combinação. Sacrifício de cavalo, xeque à descoberta, a dama cai.

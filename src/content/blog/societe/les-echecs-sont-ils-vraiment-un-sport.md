@@ -25,13 +25,17 @@ faq:
     answer: "Plusieurs raisons : pas de spectacle visuel pour la télévision, durée des parties incompatible avec les formats olympiques, et résistance de fait du CIO à élargir aux sports cérébraux. Le bridge a connu le même refus."
   - question: "Les échecs préparent-ils physiquement les joueurs ?"
     answer: "Les pros le font, oui. Magnus Carlsen, Levon Aronian, Fabiano Caruana font tous du sport intense (course, foot, yoga) pour tenir physiquement les longues parties. La fatigue physique se traduit directement en erreurs."
+heroImage:
+  src: /images/blog/les-echecs-sont-ils-vraiment-un-sport-hero.webp
+  alt: Une pièce d'échecs posée à cheval sur la ligne séparant un sol de gymnase
+    d'un parquet.
+ogImage: /images/og/les-echecs-sont-ils-vraiment-un-sport-og.webp
+
 ---
 
-Tu poses la question à dix personnes au hasard : « les échecs sont-ils un sport ? ». Tu obtiens dix réponses différentes, souvent très tranchées. Pour certains, c'est évident : un sport demande de la sueur, des muscles, un essoufflement. Pour d'autres, c'est tout aussi évident dans l'autre sens : le CIO les a reconnus, point.
+Déterminer si les échecs sont un sport demande de préciser le critère retenu : effort physique, organisation de la compétition, reconnaissance institutionnelle ou qualification juridique. Ces approches ne répondent pas toutes à la même question.
 
-Le débat n'est pas qu'une querelle de mots. Il a des conséquences concrètes : subventions, statut fiscal, accès aux infrastructures sportives, droit à la diffusion télévisée, place dans l'éducation nationale. Derrière la question « est-ce un sport ? » se cache une question politique et identitaire.
-
-Cet article fait le tour de ce que disent vraiment la physiologie, le droit et la sociologie sur le statut sportif des échecs.
+Le débat a des conséquences sur l'encadrement des pratiques et leur place dans les politiques sportives et éducatives. Il faut donc examiner séparément ce que la physiologie, le droit et la sociologie permettent d'établir, plutôt que de faire d'un argument unique une réponse valable dans tous les contextes.
 
 ## Le point de vue physiologique
 

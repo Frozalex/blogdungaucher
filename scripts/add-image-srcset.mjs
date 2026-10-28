@@ -23,7 +23,7 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = path.join(root, "dist");
 
 /** Doit rester synchronisé avec WIDTHS dans src/utils/image-variants.ts. */
-const WIDTHS = [480, 640, 960];
+const WIDTHS = [240, 480, 640, 960];
 
 /**
  * Largeur de la colonne de lecture : `.article-layout` fait 68rem, moins la

@@ -46,6 +46,7 @@ faq:
       clássicos apresentados nesta série não sobreviveram a replicações rigorosas. O que melhor se
       sustentou foram os protocolos pré-registrados e as medidas independentes do julgamento do
       participante.
+heroImageAlt: Uma mão oferece uma peça de quebra-cabeça na abertura de um muro circular.
 ---
 
 Um engine mostra uma avaliação que contradiz a sua. Você tem dois segundos para decidir o que vai fazer com essa informação.

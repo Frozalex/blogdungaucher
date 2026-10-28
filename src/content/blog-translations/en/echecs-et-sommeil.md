@@ -1,143 +1,63 @@
 ---
-heroImageAlt: "Pixel art illustration: a chessboard floating in a starry night sky, pieces asleep under a moon, \"Chess and sleep\""
-title: "Chess and Sleep: Why the Night Also Plays Your Game"
-excerpt: "A grandmaster who sleeps poorly plays about 10% worse by the second hour of play. What sleep neuroscience research says about memory consolidation, cognitive recovery, and chess performance."
-seoTitle: "Chess and Sleep: How Cognitive Recovery Boosts Your Progress"
-seoDescription: "REM sleep, memory consolidation and sleep deprivation in chess: how the night trains you, and whether playing chess before bed helps or wrecks your sleep."
+heroImageAlt: An empty workshop at night with tools and stacks of paper.
+title: "Sleep and Chess: Alertness, Learning and Recovery"
+excerpt: "Sleep belongs in tournament preparation. What studies of alertness and decision-making show, without turning laboratory results into Elo points or a universal loss of chess skill."
+seoTitle: "Sleep and Chess: Alertness, Learning and Recovery"
+seoDescription: "Sleep and chess preparation: research on alertness, decisions and learning, practical room for rest and limits of promises about improvement."
 enSlug: "chess-and-sleep"
-draft: false
 faq:
-  - question: "How many hours of sleep do you need to perform at chess?"
-    answer: >-
-      Cognitive performance data converge on 7 to 9 hours for an adult (Walker, 2017; NSF Sleep Foundation).
-      Below 6 hours, executive functions (calculation, error inhibition, sustained attention) degrade
-      measurably. Above 9 hours, marginal returns become weak. The 8-hour window is the standard target, with
-      individual variations of ±1 hour.
-  - question: "Does napping really improve chess performance?"
-    answer: >-
-      Yes, for position recognition memory and sustained vigilance. A 20-30 minute nap ('power nap') improves
-      attention and reduces sleepiness without creating sleep inertia. A longer nap (60-90 min) including REM
-      sleep specifically improves tactical pattern consolidation, useful between two training sessions but
-      risks disrupting nighttime sleep if taken too late.
-  - question: "Is chess preparation before sleep effective?"
-    answer: >-
-      Yes: it's one of the most documented uses of memory consolidation. Studying endgames or tactical themes
-      in the 30-60 minutes before bedtime exposes the brain to the material right before consolidation phases
-      (slow-wave sleep, then REM). Improvements observed the next day on similar tasks are robust. Caveat:
-      avoid the screen light from chess platforms, which delays falling asleep.
-  - question: "What happens cognitively after a long evening game?"
-    answer: >-
-      A 5-hour evening game induces a cognitive fatigue level equivalent to 20 hours of wakefulness for
-      calculation functions (estimate based on Harrison & Horne data). The brain enters a degraded state
-      where analysis quality drops, error rate increases, and decisions become more impulsive. Hence the
-      importance of separating game and post-game analysis: trying to analyze in this state produces biased
-      and unproductive analysis.
-  - question: "Do grandmasters have particular sleep routines?"
-    answer: >-
-      Several testimonies converge: most high-level players protect their sleep during tournaments as
-      scrupulously as their opening preparation. Magnus Carlsen avoids late evening games before important
-      rounds. Fabiano Caruana has described post-round routines including light reading and screen-free time
-      to facilitate falling asleep. These practices reflect an implicit recognition that sleep is part of
-      preparation, not a luxury.
+  - question: "How much sleep should I plan for a tournament?"
+    answer: "The CDC indicates at least seven hours for adults aged 18 to 60; needs vary, including with age. This general-health guidance does not guarantee chess performance."
+  - question: "Should I choose a twenty- or ninety-minute nap?"
+    answer: "These durations concern different practices, not two versions of one rule. The sources presented neither promise better position recall nor identify an ideal duration for every player."
+  - question: "Does a five-hour game equal twenty hours without sleep?"
+    answer: "No: that equivalence is not established by the cited work. Time awake, perceived fatigue and game difficulty are separate variables."
 ---
 
-Imagine you have an invisible coach who consolidates your opening repertoire while you sleep, who connects the tactical patterns you studied today to those you've known for years, and who erases the interference between the variations you just learned and the old ones. This coach exists. It is your sleep.
+You finish a game late. You could sleep, but a position keeps turning over in your mind. You open the analysis, then another game. The next day you struggle to keep variations in mind.
 
-Sleep neuroscience has made spectacular progress since the 2000s, and its conclusions are particularly relevant for chess players: few cognitive activities engage as many memory systems simultaneously: declarative memory for variations, procedural memory for pattern recognition, spatial memory for board geometry.
+Sleep has a place in tournament preparation. Discussing it accurately means avoiding conversion of every laboratory finding into Elo points or a percentage of combinations found.
 
-## Sleep Architecture: What Your Brain Actually Does at Night
+## Alertness and decisions: what studies examine
 
-A night of sleep is not a uniform block. It organizes into **cycles of approximately 90 minutes**, each comprising several stages:
+Yvonne Harrison and James Horne (2000) review the effects of sleep deprivation on decision-making. They discuss demands of complex tasks and limitations of the tests used. Their article does not concern a 20–25% decline in chess players’ calculation.
 
-**Light slow-wave sleep (N1-N2)**: wake-sleep transition and first processing stage. Recent memories are "reactivated": the brain replays the day's experiences at high speed.
+For your practice, the distinction matters: difficulty staying alert and difficulty understanding an endgame are not measured in the same way. One fatigue coefficient cannot be applied to both.
 
-**Deep slow-wave sleep (N3: delta waves)**: consolidation of declarative memories (facts, variations, theory). This is where studied openings anchor themselves in long-term memory. This stage predominates in the first part of the night.
+## Repeated restriction: specify the protocol
 
-**REM sleep (Rapid Eye Movement)**: consolidation of procedural memories and connections between patterns. This is the integration stage: the brain links what it just learned to what it already knows. REM predominates in the last part of the night (final 2 hours), which explains why cutting your wake-up short with an alarm deprives you of a particularly valuable phase.
+Dinges and colleagues (1997) study a week of sleep restricted to four or five hours per night. They observe deteriorating vigilance and increased sleepiness. That protocol is much more specific than “losing an hour or two over several days”.
 
-For a chess player, the implications are concrete: **the first 6 hours of sleep consolidate theory** (variations, characteristic plans for a pawn structure); **the last 2 hours of REM sleep integrate pattern recognition**: exactly what distinguishes an intuitive player from a purely calculating one.
+It also does not establish a curve of errors by tournament round. Graphs showing a sudden rise in round four would turn extrapolation into observed data.
 
-## What Sleep Deprivation Does to Calculation
+## Making real room for sleep
 
-[John Harrison](https://www.birmingham.ac.uk) and [Jim Horne](https://www.lboro.ac.uk/departments/psychology/staff/jim-horne/) (Loughborough Sleep Research Centre) conducted a foundational study in 2000 (*Neuropsychologia*) on the effects of sleep deprivation on executive functions. Their results directly concern chess players:
+The CDC recommends at least seven hours for adults aged 18 to 60 and offers different guidance for other ages. Quality and regularity matter too. This is general-health advice, not a protocol guaranteeing a win.
 
-- **Cognitive flexibility** (ability to switch from one plan to another): significantly degraded after one night without sleep
-- **Inhibition** (ability to reject an obvious bad answer in favor of a better one): among the first functions affected
-- **Working memory** (maintaining a variation in mind during calculation): reduced after 24 hours of wakefulness
+Before a tournament, examine schedules: travel, meals, the likely end of the last round and the next morning’s start. If late analysis reduces available sleeping time, record the position and return to it later. You do not need to understand the whole game before switching off the screen.
 
-This last point is particularly important. Working memory is the bottleneck of chess calculation: it is what allows you to hold the arrival position of a variation in mind while exploring its branches. Degraded working memory means shortened variations, poorly evaluated positions, blunders on threats you calculated but didn't maintain.
+## A nap is not an interchangeable short night
 
-[Matthew Walker](https://www.humansleepscience.com), in *Why We Sleep* (2017), synthesizes decades of research: after 17-19 hours of wakefulness, cognitive performance is equivalent to a blood alcohol level of 0.05%. After 24 hours, it equals 0.10%: above the legal driving limit in most countries. Playing an important game after an all-nighter is playing in a state of mild intoxication.
+An awake break, a short nap and a longer period of sleep are different. Their effects also depend on timing, previous sleep and the task studied. This article therefore establishes no twenty- or ninety-minute rule for every player.
 
-### The Case of 5-Day Tournaments
+Nor does it promise 34% better position memory after a nap: the evidence presented does not support that chess figure. Allow time to wake up and reach the next round; avoid trying an unfamiliar arrangement on the day of an important competition.
 
-Classical open tournaments (5 to 9 rounds over as many days, often with evening games) create a particularly insidious situation of **cumulative sleep debt**.
+## Learning: avoid shortcuts about sleep stages
 
-Research by [David Dinges](https://www.med.upenn.edu/sleeplab/) (University of Pennsylvania) on chronic sleep restriction shows that a loss of only 1-2 hours per night over several days creates cognitive degradation as severe as a total night's deprivation, but subjects systematically underestimate their degradation. They believe they are less tired than they actually are.
+You cannot assign every variation to deep sleep and every tactical pattern to REM sleep as if they were independent compartments. General sleep-and-memory research does not demonstrate that studying a pin in the evening guarantees recognising it faster tomorrow.
 
-In a tournament, this translates to a player who feels "a bit tired" in round 7, but whose calculation errors have doubled compared to rounds 1-3. Subjective fatigue is a poor judge of cognitive fatigue.
+Keep a simple training method: record what you studied and return to the positions after an interval. Examine the answers you actually find rather than treating a night’s sleep as proof of learning.
 
-## REM Sleep and Chess Pattern Recognition
+## Between rounds
 
-The study by [Robert Stickgold](https://stickgoldlab.hms.harvard.edu) (Harvard) and Matthew Walker on procedural memory revealed a counterintuitive phenomenon: participants who slept between two training sessions on a sequence recognition task improved their performance by 20% in the following session, even though they had not practiced in between. Sleep alone produced an improvement.
+Brief recovery may suit you, but does not automatically replace a shortened night. Identify what you need: quiet, food, movement, conversation or rest. Avoid adding an obligation to analyse to every available interval.
 
-The mechanism: during REM, the brain **replays sequences in fast-forward**, consolidates the most efficient representations, and prunes parasitic connections. For a chess player, this is exactly what tactical pattern recognition needs: clean structures, without interference from secondary variations.
+If sleep difficulties recur or disrupt your days, discuss them with a health professional. A tournament schedule does not necessarily explain the whole problem.
 
-A concrete example: if you study 20 tactical positions on the "pin" theme in the afternoon, then sleep normally, the next day you will recognize pins faster in new positions, even without replaying the exercises. This is REM consolidation in action.
-
-[Sara Mednick](https://www.saramednick.com) (UC Riverside) quantified this effect in a 2003 study published in *Nature Neuroscience*: a group with a 90-minute nap (including a REM phase) after a visual learning session improved performance by 34% compared to the no-nap group, and even outperformed the group that had benefited from a full night's sleep.
-
-## Sleep and Chess Intuition
-
-The notion of chess intuition: the grandmaster's "feel" who plays a "natural" move without explicit calculation: is often presented as mysterious. It is not: it is ultrafast pattern recognition, anchored in tens of thousands of hours of practice.
-
-What is less known is that sleep is a central player in building this intuition. [Ullrich Wagner](https://www.uni-marburg.de) and colleagues (2004, *Nature*) showed that sleep facilitates the discovery of **hidden rules** in recognition tasks: regularities that participants had not explicitly identified but that the brain had integrated during sleep.
-
-Applied to chess: players who sleep sufficiently after long and complex games develop a finer positional intuition than those who chain games without recovery. Conscious post-game analysis is necessary, but sleep does part of the synthesis work for you.
-
-## The Sleep Protocol for Tournaments
-
-Here is a practical protocol, based on available data, to optimize cognitive recovery in tournaments:
-
-### Before the Tournament (D-7 to D-1)
-- **Regularize schedules**: get up and go to bed at the same time each day. Circadian rhythm regularity is more important than raw sleep duration.
-- **Avoid late-night blitz games** in the week before the tournament: they disrupt falling asleep through cognitive excitement and screen light.
-- **Study the repertoire in the early evening** (before 10 PM) to allow slow-wave sleep time to consolidate.
-
-### During the Tournament
-- **Nap strategy**: if rounds allow, a 20-30 minute nap after lunch improves vigilance for an afternoon game. Don't exceed 30 minutes to avoid sleep inertia (feeling of confusion upon waking).
-- **Room hygiene**: complete darkness, cool temperature (64-66°F / 18-19°C is optimal for deep sleep), earplugs if necessary. The investment in sleep far outweighs any additional preparation work done at the expense of rest.
-- **Managing post-game**: after a long or emotionally charged game, it's hard to fall asleep immediately. Plan a decompression routine: short walk, light reading, jotting down the main ideas from the game to "empty" working memory before sleeping.
-
-### The 8-Hour Rule on the Road
-For overseas tournaments with time zone changes: progressively adjust bedtime by 1 hour per day in the 3 days before departure. Melatonin (0.5 mg, taken 30 minutes before target bedtime, under medical advice) can facilitate circadian rhythm resynchronization.
-
-## What the Pros Do That Amateurs Ignore
-
-High-level players treat sleep as a full-fledged training component: not as a luxury or a waste of time.
-
-**Magnus Carlsen** has described in several interviews his absolute priority for sleep in tournaments. He systematically arrives several days before the start to acclimate to the time zone and refuses social obligations that encroach on his rest.
-
-**Viswanathan Anand**, known for his longevity at the highest level (World Champion from 2007 to 2013), described in his autobiography *Mind Master* (2019) how sleep management and recovery became increasingly central to his preparation over the years.
-
-**Garry Kasparov**, in *How Life Imitates Chess*, describes tournament fatigue as "the invisible enemy": it degrades performance insidiously, well before the player is aware of it.
-
-These testimonies converge with the scientific data: at the level where technical preparation is maximal, sleep management becomes a major competitive differentiator.
+The article on [breaks](/en/blog/benefits-of-breaks-in-chess/) covers organising awake sessions; this one concerns sleep and the limits of findings transferable to chess.
 
 ## Sources
 
-- Harrison, Y., & Horne, J. A. (2000). The impact of sleep deprivation on decision making: A review. *Journal of Experimental Psychology: Applied*, 6(3), 236-249.
-- Mednick, S., Nakayama, K., & Stickgold, R. (2003). Sleep-dependent learning: A nap is as good as a night. *Nature Neuroscience*, 6(7), 697-698.
-- Stickgold, R., & Walker, M. P. (2013). Sleep-dependent memory triage: Evolving generalization through selective processing. *Nature Neuroscience*, 16(2), 139-145.
-- Wagner, U., et al. (2004). Sleep inspires insight. *Nature*, 427(6972), 352-355.
-- Walker, M. (2017). *Why We Sleep: Unlocking the Power of Sleep and Dreams*. Scribner.
-- Dinges, D. F., et al. (1997). Cumulative sleepiness, mood disturbance, and psychomotor vigilance performance decrements during a week of sleep restricted to 4-5 hours per night. *Sleep*, 20(4), 267-277.
-- Anand, V., & Gautham, S. (2019). *Mind Master: Winning Lessons from a Champion's Life*. Hachette India.
-
-## Key Takeaways
-
-- **REM sleep** transforms studied positions into durable patterns by connecting new information to existing networks
-- One night of deprivation degrades **combinatorial calculation by 20-25%** the next day (Harrison & Horne, 2000)
-- **Deep slow-wave sleep** consolidates facts (variations, theory); **REM** integrates patterns and intuition
-- A **20-90 minute nap** post-study improves retention by 34% vs. no-nap group (Mednick et al., 2003)
-- **Sleep debt is cumulative**: 5 tournament days with evening games without sufficient recovery significantly degrade the quality of the last rounds
+- Harrison, Y., & Horne, J. A. (2000). *The Impact of Sleep Deprivation on Decision Making: A Review*. Journal of Experimental Psychology: Applied, 6, 236–249. [Review](https://gwern.net/doc/zeo/2000-harrison.pdf).
+- Dinges, D. F., et al. (1997). *Cumulative Sleepiness, Mood Disturbance, and Psychomotor Vigilance Performance Decrements During a Week of Sleep Restricted to 4–5 Hours per Night*. Sleep, 20, 267–277. [Article](https://fatiguemanagersnetwork.org/wp-content/uploads/Dinges-et-al.1997_Cumulative-Sleepiness-Mood-Disturbance-and-Psychomotor-Vigilance-Performance-Decrements-Due-to-Sleep-Restriction.pdf).
+- Centers for Disease Control and Prevention (2024). *About Sleep*. [Age-based guidance](https://www.cdc.gov/sleep/about/index.html).

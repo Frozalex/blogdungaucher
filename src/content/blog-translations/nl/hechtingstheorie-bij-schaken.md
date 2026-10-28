@@ -45,6 +45,8 @@ faq:
       Een vraag over het verloop, over een moment van de partij of gewoon over honger, scheidt de
       prestatie van de relatie. Het resultaat komt toch wel, het hoeft niet het eerste te zijn wat gezegd
       wordt.
+heroImageAlt: Een bootje dat met een los touw aan een kade verbonden is.
+
 ---
 
 Toernooizaal, ronde 2, categorie onder twaalf jaar. De deur is dicht. In de gang wachten een twintigtal volwassenen, sommigen al twee uur, met koude koffie.

@@ -51,17 +51,16 @@ faq:
       En filtrant sur une tranche de classement proche de la tienne avant de lire quoi que ce soit. Le
       pourcentage global mêle des parties de grands maîtres et des parties de club, et les difficultés
       pratiques d'une ligne ne sont pas les mêmes selon le niveau.
+heroImage:
+  src: /images/blog/preuve-sociale-aux-echecs-hero.webp
+  alt: Une loupe examine des empreintes à l’endroit où le chemin bifurque.
+ogImage: /images/og/preuve-sociale-aux-echecs-og.webp
+
 ---
 
-Tu ouvres ta base sur une position d'ouverture. Trois coups jouables apparaissent.
+La preuve sociale consiste à utiliser le comportement d'autrui comme indication pour orienter un choix. Dans une base d'ouvertures, la fréquence d'un coup renseigne sur son usage ; elle ne fournit pas directement son rendement ni les raisons de le préférer.
 
-Le premier a été joué dans 74 % des parties. Le deuxième dans 19 %. Le troisième dans 4 %.
-
-Tu prends le premier.
-
-Et à aucun moment tu n'as regardé la colonne juste à côté, celle qui indique ce que chacun de ces coups a **rapporté**.
-
-Cet article prolonge notre article sur [la psychologie de la persuasion aux échecs](/fr/blog/psychologie-de-la-persuasion-aux-echecs/), qui présente les sept leviers. Il porte sur le levier le plus discuté du domaine, et sur le seul terrain au monde où l'on peut le mettre à l'épreuve en trois secondes.
+Il faut donc comparer la popularité, les résultats et les conditions de sélection des parties. Cet article prolonge [la psychologie de la persuasion aux échecs](/fr/blog/psychologie-de-la-persuasion-aux-echecs/) en examinant ce que l'information collective apporte à la décision et les limites de son interprétation.
 
 ## Le principe, et sa logique
 

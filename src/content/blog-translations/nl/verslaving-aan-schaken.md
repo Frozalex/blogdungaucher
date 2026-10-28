@@ -9,6 +9,7 @@ seoDescription: >-
   echt een verslaving? Signalen en oplossingen.
 frSlug: les-echecs-et-l-addiction
 draft: false
+heroImageAlt: Een zeegroene band vormt lussen rond een stoel en een zandloper.
 ---
 
 Het is 3 uur 's nachts. Het blauwige scherm brandt in je oogleden; de teller van **vandaag** toont **47 gespeelde partijen**. Je rating is net onder de drempel gezakt die je jezelf had gezworen nooit meer los te laten. Je zegt tegen jezelf: *"Nog eentje maar, die alles weer rechtzet."* Want er is geen sprake van eindigen op een nederlaag.

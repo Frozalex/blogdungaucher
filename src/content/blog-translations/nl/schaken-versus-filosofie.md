@@ -47,6 +47,8 @@ faq:
       schaakspeler begint met een aanname, toetst die aan de realiteit (het antwoord van de tegenstander,
       de consequenties van een redenering) en past zijn plan aan. Het fundamentele verschil: de filosoof kan
       de regels zelf in twijfel trekken. De schaakspeler niet, tenminste niet tijdens de partij.
+heroImageAlt: Een open boek waarvan de bladzijden een trap naar een deur vormen.
+
 ---
 
 Filosofen hebben een bijzondere verhouding tot spelen. Plato discussieerde over dobbelstenen, Pascal berekende kansen bij geluksspelen om na te denken over God, en Wittgenstein wijdde belangrijke passages van zijn Filosofische Onderzoekingen aan schaken. Dat is geen toeval: spelen bieden microkosmos-werelden waarin bepaalde filosofische vragen in al hun scherpte verschijnen.

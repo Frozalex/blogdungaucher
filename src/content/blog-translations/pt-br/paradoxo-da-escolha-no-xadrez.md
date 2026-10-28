@@ -48,6 +48,8 @@ faq:
       dois anos produz mais experiência aproveitável que um repertório ideal trocado três vezes por ano.
       Defina o critério de abandono antes de começar, com base num número de partidas e numa pontuação,
       em vez de decidir no calor do momento depois de uma derrota.
+heroImageAlt: Uma figura diante de um semicírculo de gavetas idênticas fechadas.
+
 ---
 
 Você quer montar um repertório de pretas contra 1.e4.

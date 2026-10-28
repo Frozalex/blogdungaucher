@@ -43,6 +43,8 @@ faq:
       intuïtieve evaluatiefunctie (positioneel gevoel). Je gebruikt ook zeer krachtige snoei-heuristieken:
       je <strong>verwerpt</strong> de meeste zetten op het eerste gezicht zonder ze te berekenen. Het
       verschil met een engine is niet kwalitatief, maar kwantitatief.
+heroImageAlt: Een gesnoeide boom boven een schaakstuk.
+
 ---
 
 Er is iets merkwaardigs aan het feit dat de strategie bij schaken, dit millenniumspel van intuïtie en kunst, herleidbaar is tot een algoritme van enkele regels. Het minimax-algoritme doet precies dat: het formaliseert de kern van strategisch redeneren in een nulsomspel tot een elegante wiskundige recursie. En het is niet alleen de ziel van moderne schaakengines: het is ook de formele beschrijving van wat je in je hoofd doet wanneer je varianten berekent.

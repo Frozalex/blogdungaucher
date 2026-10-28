@@ -1,98 +1,119 @@
 ---
-heroImageAlt: "Small weights placed one by one on a scale that eventually tips over."
-title: "Bayesian Networks in Chess: Predicting the Opponent's Blunder"
-excerpt: "Can we mathematically predict when an opponent will blunder? Bayesian networks offer a formal framework for estimating this probability from the clues available in the position."
-seoTitle: "Predicting Blunders with Bayesian Networks: Estimating Opponent Error"
-seoDescription: "How Bayesian networks and Bayesian statistics estimate the probability of an opponent's blunder in chess. Methods and practical applications."
+heroImageAlt: "Small weights placed one by one on a scale until it tips."
+title: "Bayesian Networks in Chess: Modelling Blunder Risk"
+excerpt: "A Bayesian network can organise hypotheses about error risk. This teaching model has not been trained or validated to predict an opponent’s next blunder."
+seoTitle: "Bayesian Networks and Chess Errors: A Teaching Model"
+seoDescription: "Bayes and chess blunder risk: probabilistic reasoning, studied factors and the limits of an illustrative model without calibrated predictions."
 enSlug: "bayesian-networks-predict-blunders"
-draft: false
 ---
 
-A blunder is rarely totally unpredictable. Before it occurs, signals exist: the clock running wild, a complex position the opponent isn't used to handling, a long forcing sequence that their level makes difficult to calculate entirely. These signals, taken together, form a probabilistic portrait of error risk. [Bayesian networks](https://en.wikipedia.org/wiki/Bayesian_network) formalize precisely this type of reasoning.
+A blunder can be studied as an event whose risk varies with context. Time remaining, a complex position or a difficult forcing line may provide information worth examining. A Bayesian network offers one possible way to organise such reasoning. The network proposed here is educational: it has not been trained or validated to predict mistakes during a game.
 
-## Bayes' Theorem and Belief Updating
+## Bayes’ theorem and updating beliefs
 
-[Bayesian statistics](https://en.wikipedia.org/wiki/Bayesian_statistics) rests on [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem), formulated by Reverend Thomas Bayes in the 18th century. This theorem describes how to update a probability in light of new information:
+[Bayesian statistics](https://fr.wikipedia.org/wiki/Statistique_bay%C3%A9sienne) uses [Bayes’ theorem](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes), associated with the eighteenth-century work of [Thomas Bayes](https://fr.wikipedia.org/wiki/Thomas_Bayes). It describes updating a probability with new information:
 
-$$P(H | E) = \frac{P(E | H) \cdot P(H)}{P(E)}$$
+$$P(H\mid E)=\frac{P(E\mid H)\cdot P(H)}{P(E)}.$$
 
-Where:
-- $P(H)$ is the prior probability of hypothesis H (before observation)
-- $P(E | H)$ is the likelihood: the probability of observing E if H is true
-- $P(H | E)$ is the posterior probability of H after observing E
+Here:
 
-The central intuition is that our beliefs must be updated rationally as new evidence arrives. This isn't a revolution, it's a formalization of what good chess players do naturally: "Initially, I thought this position was equal. After seeing him take 8 minutes on a simple move, I revised my estimate: he may already be in mental zeitnot."
+- $P(H)$ is the prior probability of hypothesis H, before observing E.
+- $P(E\mid H)$ is the likelihood: the probability of E if H holds.
+- $P(H\mid E)$ is the posterior probability after observing E.
 
-## What Is a Bayesian Network?
+The central idea is revising beliefs when evidence changes. A chess player might think, “I considered the position straightforward, but they spent eight minutes; perhaps I missed a difficulty.” Time used alone does not identify the opponent’s mental state, and numerical updating requires a specified model.
 
-A Bayesian network is a directed acyclic graph where each node represents a random variable and each edge represents a probabilistic dependence between variables. Each node has an associated table of conditional probabilities describing the distribution of that variable given the state of its "parents" in the graph.
+## What is a Bayesian network?
 
-## Modeling Blunder Risk as a Bayesian Network
+A [Bayesian network](https://fr.wikipedia.org/wiki/R%C3%A9seau_bay%C3%A9sien) is a directed acyclic graph whose nodes represent random variables. Its factorisation describes each variable’s distribution conditional on its parents. The structure encodes conditional-independence assumptions; arrows need not establish causation.
 
-Let's build a simplified Bayesian network to model the probability that an opponent will blunder in the next few moves.
+This may represent multiple interdependent variables compactly without listing every full combination independently. It does not guarantee fast inference for every network structure.
 
-**Observable variables:**
-- Time remaining on opponent's clock (T)
-- Tactical complexity of the position (C)
-- Opponent's Elo (E)
-- Style of play (S)
-- Psychological pressure (P)
+## Modelling blunder risk with a Bayesian network
+
+Consider a simplified network for a mistake within the next few moves. Proposed variables are:
+
+**Candidate observed or estimated inputs:**
+
+- Opponent’s remaining clock time, T.
+- Tactical complexity, C, for example operationalised through dispersion of legal-move evaluations; this is a modelling choice, not a complete definition of difficulty.
+- Opponent’s Elo rating, E, observed before the game.
+- Playing style, S, estimated from previous games, such as preferences for open or closed positions.
+- Psychological pressure, P, approximated through match score, stakes or tournament position; internal pressure is not directly observed from those facts alone.
 
 **Latent variable:**
-- Current cognitive state of opponent (K): fatigue, concentration, stress
 
-**Target variable:**
-- Probability of blunder in next 5 moves (B)
+- Current cognitive state, K: proposed aspects such as fatigue, concentration or stress, not directly observable.
 
-The network encodes: T, P, and C influence K (low time, high pressure, and complex position degrade cognitive state). K and E together determine B (a strong player in poor cognitive state will blunder with probability similar to a weaker player in good state).
+**Target:**
 
-## Real Blunder Factors: What Research Says
+- Event B, “a blunder within the next five moves”, defined by an explicit evaluation criterion.
 
-**Remaining time** is the best-documented factor. [Kenneth Regan](https://en.wikipedia.org/wiki/Kenneth_Regan_(computer_scientist)) and collaborators analyzed millions of games and showed that play quality degrades significantly when remaining time is below 2-3 minutes, even for elite players.
+For illustration, suppose T, C, S and P influence K, then K and E influence B. These arrows are model assumptions, not demonstrated causal relationships. Different combinations can produce similar or different risks; a tired strong player need not have the same risk as a rested weaker player.
 
-**Position complexity** is the second major factor. Positions with many active pieces, mutual threats, and forced deep calculations generate many more errors than closed structural positions.
+Under those conditional-independence assumptions, marginalising K gives:
 
-**Elo level** modulates blunder resistance. A 2700 player in the same time and complexity conditions will blunder less frequently than a 1500. But the degradation due to time and complexity is proportionally similar.
+$$P(B\mid T,C,E,S,P)=\sum_k P(B\mid K=k,E)\,P(K=k\mid T,C,S,P).$$
 
-**Fatigue over multiple rounds** is often underestimated. Analysis of major tournaments shows that blunder frequency increases in later rounds.
+S appears in the factor on the right as well. Parameters would require data and separate validation before the network supplied a usable probability.
 
-## Complicating to Create Bayesian Risk
+![A hypothetical teaching Bayesian network with style, context and a latent state](/images/en/reseaux-bayesiens-01-graphe-blunder.svg)
 
-The Bayesian perspective on blunders has a direct strategic consequence. If you can estimate that your complications create a high probability of opponent error, even in an objectively slightly inferior position, complicating can be the best strategy.
+## Actual blunder factors: what research studies
 
-In Bayesian terms, if $P(\text{blunder} | \text{complication}) > \text{threshold}$ is high enough to compensate for the objective disadvantage of complication, complicating is correct.
+Anderson, Kleinberg and Mullainathan (2016) analyse errors using games and endgames whose value can be checked with tablebases. They study playing strength, available time and decision difficulty. In this setting, positional characteristics are particularly informative.
 
-[Bobby Fischer](https://en.wikipedia.org/wiki/Bobby_Fischer) had a reputation for avoiding complications except when his analysis gave him a clear advantage. [Tal](https://en.wikipedia.org/wiki/Mikhail_Tal), conversely, systematically sought complications, implicitly betting on high probability of opponent error in the chaotic positions he created.
+This provides an empirical basis for investigating error prediction. It does not validate the latent network proposed here, a universal two- or three-minute threshold or one fatigue law for every tournament. Also distinguish a tablebase-verified loss of exact value from an engine-evaluation change in an unsolved position.
 
-## The Opponent as Continuous Information Source
+## Complicating as a decision under uncertainty
 
-In a game, the opponent provides information at every move. Time used, style of play revealed, reactions to complications. The formal Bayesian perspective says: use all this information to continuously update your estimate of their cognitive state and resources.
+If you could estimate how complications change both players’ error risks, that information might affect a practical choice, including from a position judged slightly worse.
 
-If the opponent used 15 minutes on a move you saw quickly, two interpretations are possible: either the position is more complex than you thought (update your own analysis), or the opponent is struggling (update your estimate of their state).
+The decision compares expected outcomes: a complicated line with greater error opportunities against a simpler line with different risks. “Objectively” here must be qualified when only a limited engine estimate is available.
 
-## Limits of Bayesian Reasoning in Chess
+A notation such as $P(\text{blunder}\mid\text{complication})\gt\text{threshold}$ can illustrate the idea, but a probability alone is insufficient. You also need the value of resulting outcomes and other possibilities. Tournament circumstances matter: needing a win differs from being content with a draw.
 
-The principal limit is the absence of personalized training data. The conditional probabilities of the Bayesian network should ideally be calibrated on data specific to the opponent: their past games, their blunder statistics by time conditions, their problem positions. This precise calibration is only available at the professional level with teams of analysts.
+Include your own error risk. A complication does not become good merely because it looks hard for the opponent. Without calibrated probabilities and defined utilities, the threshold remains a reasoning aid, not an automatic rule.
 
-For the amateur player, reasoning remains useful but less precise.
+![Comparing choices with explicit assumptions](/images/en/reseaux-bayesiens-03-compliquer-vs-simplifier.svg)
 
-## Practical Applications for the Practical Player
+## The opponent as a continuing source of information
 
-**Actively observe the opponent's clock.** Time used is the most reliable signal of degraded cognitive state.
+Moves, time use and reactions provide observations that may lead you to reconsider hypotheses. Updating does not require claiming direct access to cognition.
 
-**Create difficult positions at key moments.** If the opponent's clock is low, even an objectively equal position becomes interesting to slightly "complicate."
+If an opponent spends fifteen minutes on a move you saw quickly, alternatives include greater position difficulty than you recognised, uncertainty or deliberate verification. Weigh competing explanations instead of assuming mental deterioration.
 
-**Recognize positions outside the opponent's comfort zone.** If you know the opponent usually plays closed positions, taking them into an open, tactical position increases error risk.
+A series of quick accurate moves may reflect preparation, good calculation or a suitable position. Slow suboptimal moves may suggest a difficulty, but no universal numerical increase or decrease follows without a validated model. Keep evidence against your initial hypothesis too.
+
+![A Bayesian updating process without invented probabilities](/images/en/reseaux-bayesiens-02-mise-a-jour-partie.svg)
+
+## Limits of Bayesian reasoning in chess
+
+A major limitation is data. Conditional probabilities would need calibration on suitable games, clock conditions and explicitly defined errors. Personalised prediction also needs sufficient relevant observations of that opponent and validation outside training data.
+
+Professional analytical resources do not automatically guarantee this calibration, while amateurs may sometimes have extensive public game histories. The issue is data quality and model validity rather than title alone.
+
+Generic priors may be a starting point, but an uncalibrated judgement should not be presented as a precise measured probability.
+
+Confirmation bias is another risk: looking for signs of an opponent’s impending mistake can make you interpret every hesitation as support. Consider contrary evidence and competing explanations.
+
+## Practical applications
+
+Even without constructing a network, use the framework to ask more explicit questions.
+
+**Observe the opponent’s clock.** Remaining time is visible; cognitive state is not. Treat time as one relevant condition rather than a definitive diagnostic signal.
+
+**Evaluate complications at critical moments.** A low clock may create practical opportunities, but check your own resources and the position before assuming complexity favours you.
+
+**Question presumed preferences.** Previous games may suggest comfort with certain structures. They do not guarantee that an unfamiliar-looking position increases error risk or that preparation is absent.
+
+**Consider both players’ conditions.** Feeling fresh yourself does not establish the opponent’s state. Nor should you assume your risks are independent: both face the same position and interact through moves.
+
+**After reading:** during an online training game, identify **three observations**, such as clock time, complexity and a possible unfamiliar structure. Afterward, compare them with errors and counterexamples. Any written analysis notes belong in training or post-game review, not an official game.
+
+---
 
 ## Sources
 
-- Regan, K. W., & Haworth, G. (2011). Intrinsic chess ratings. *AAAI Workshop on Computers and Games*.
-- Pearl, J. (1988). *Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference*. Morgan Kaufmann.
-- Guid, M., & Bratko, I. (2007). Computer analysis of world chess champions. *ICGA Journal*, 30(1), 3-18.
-
-## Key Takeaways
-
-- Bayesian reasoning allows **updating a probability estimate** as new information arrives
-- A Bayesian network models **causal dependencies** between several variables to estimate a composite probability
-- The probability of an opponent blunder depends on **several correlated factors**: remaining time, complexity, style, psychological pressure
-- This approach provides a framework for **strategic decisions based on opponent error risk**
+- Friedman, N., & Koller, D. (2001, consulted manuscript version). *Being Bayesian About Network Structure: A Bayesian Approach to Structure Discovery in Bayesian Networks*. [Authors’ manuscript, Stanford](https://ai.stanford.edu/~nir/Papers/FK1Full.pdf): dependencies, conditional independences and structure learning.
+- Anderson, A., Kleinberg, J., & Mullainathan, S. (2016). *Assessing Human Error Against a Benchmark of Perfection*. KDD, ACM. [Full article](https://arxiv.org/pdf/1606.04956): chess errors and predictive factors.

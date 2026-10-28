@@ -46,6 +46,7 @@ faq:
       informação sobre a didática do instrutor, o que é útil. Ela não é um motivo para comprar.
       A pergunta a se fazer continua a mesma: este conteúdo vale este preço, independentemente do que eu já
       recebi.
+heroImageAlt: Duas mãos abertas trocam peças de quebra-cabeça de madeira.
 ---
 
 Você perde a sua partida no clube. Um jogador mais forte senta na sua frente e propõe olhar aquilo junto com você.

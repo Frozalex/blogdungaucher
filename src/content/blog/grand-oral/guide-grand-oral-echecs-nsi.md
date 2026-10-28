@@ -31,12 +31,11 @@ seoTitle: "Guide Grand Oral NSI Échecs 2026 : script 10 min + Python minimax + 
 seoDescription: >-
   Script 10 min, code Python minimax et alpha-bêta commenté ligne par ligne, 25 questions de jury rédigées. Le guide
   imprimable pour ton Grand Oral NSI avec les échecs.
-ogImage: /images/og/guide-grand-oral-echecs-nsi-og.webp
+ogImage: /images/og/guide-grand-oral-echecs-nsi-watermarked-og.webp
 heroImage:
-  src: /images/blog/guide-grand-oral-echecs-nsi-hero.webp
-  alt: >-
-    Les paillasses et les armoires vitrées d'une salle de travaux pratiques.
-  credit: "Douglas P. Perkins, CC BY 3.0, via Wikimedia Commons"
+  src: /images/blog/guide-grand-oral-echecs-nsi-watermarked-hero.webp
+  alt: Les paillasses et les armoires vitrées d'une salle de travaux pratiques.
+  credit: Douglas P. Perkins, CC BY 3.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Jinego_Elementary_School_science_room_side.jpg
   license: CC BY 3.0
 faq:
@@ -44,27 +43,25 @@ faq:
     answer: >-
       Trois angles solides : (1) 'Comment un programme informatique peut-il jouer aux échecs ?' : idéal pour explorer
       l'arbre minimax, la récursivité et la fonction d'évaluation. (2) 'En quoi l'élagage alpha-bêta illustre-t-il
-      l'optimisation d'une recherche arborescente ?' : plus technique, montre une réduction de O(b^d) à O(b^(d/2)).
+      l'optimisation d'une recherche arborescente ?' : plus technique, compare O(b^d) au meilleur cas O(b^(d/2)).
       (3) 'Pourquoi AlphaZero représente-t-il une rupture dans l'histoire de l'intelligence artificielle appliquée aux
       jeux ?' : angle épistémologique, idéal avec une spécialité complémentaire Maths ou Philosophie.
   - question: Peut-on montrer du code Python au jury du Grand Oral ?
     answer: >-
-      Oui : c'est même recommandé en NSI. Tu peux avoir des feuilles imprimées avec ton code. Le jury peut te demander
-      d'expliquer une ligne précise, de tracer l'exécution, ou d'identifier un bug hypothétique. Le code doit être
-      commenté (une ligne de commentaire pour chaque bloc logique) et tu dois être capable d'en parler sans le lire mot à
-      mot.
+      Tu peux expliquer un court code et t’appuyer sur le support réalisé pendant les vingt minutes de préparation.
+      Les feuilles imprimées à l’avance servent à tes révisions, pas de document personnel à apporter à l’épreuve.
+      Entraîne-toi à raconter les étapes et à montrer une exécution sur un petit arbre.
   - question: Comment expliquer le coût d'un algorithme au jury sans perdre le fil ?
     answer: >-
-      Utilise toujours un exemple numérique avant la notation O. 'Le minimax explore 35 coups possibles à chaque niveau.
-      Sur 4 niveaux de profondeur, ça fait 35^4 = 1,5 million de positions. C'est une croissance exponentielle,
-      O(b^d) avec b=35 et d=4.' Ensuite seulement tu montres comment alpha-bêta réduit ça. Le jury apprécie le
-      raisonnement, pas la récitation.
+      Présente un arbre uniforme hypothétique avec b=35 et d=4 : il possède exactement 35^4 = 1 500 625 feuilles.
+      Les nœuds internes s’ajoutent à ce nombre. La notation O(b^d) décrit la croissance du coût, pas un compte exact
+      des appels. Le gain d’alpha-bêta dépend ensuite de l’ordre des coups.
   - question: AlphaZero est-il au programme de Terminale NSI ?
     answer: >-
-      Pas directement, mais l'apprentissage par renforcement et les réseaux de neurones sont des thèmes cohérents avec
-      le programme. AlphaZero est un exemple spectaculaire d'apprentissage : il illustre concrètement la différence
-      entre une IA par règles explicites (minimax) et une IA par apprentissage (deep reinforcement learning). Le jury
-      de Grand Oral valorise les exemples concrets et bien maîtrisés, même s'ils dépassent légèrement le programme.
+      AlphaZero est une ouverture, pas une connaissance à réciter comme une exigence du programme. Ancre d'abord
+      ta question dans la récursivité, les arbres ou l'algorithmique étudiés en NSI, puis valide cet angle avec ton
+      enseignant. Le réseau apprend une politique et une évaluation ; une recherche MCTS les utilise pour choisir
+      les coups. L'apprentissage ne supprime donc ni les règles du jeu ni la recherche.
   - question: Quelle est la durée idéale de chaque partie de l'exposé NSI ?
     answer: >-
       Pour 10 minutes : introduction 1 minute (problématique + plan), partie 1 de 3 minutes (algo minimax + code),
@@ -87,7 +84,7 @@ Le Grand Oral demande une présentation argumentée et un échange ; vérifie le
 
 | Temps | Phase | Ce que tu fais | Ce que le **jury** observe |
 |---|---|---|---|
-| 20 min | Préparation | On te donne deux **questions** issues de ton **programme** de spécialité. Tu choisis l'une des deux. Brouillon autorisé. | Rien : tu es seul en salle |
+| 20 min | Préparation | Tu présentes deux **questions** préparées avec tes enseignants ; le **jury** en choisit une. Brouillon autorisé. | Rien : tu es seul en salle |
 | 10 min | Exposé debout | Tu présentes ta **question** debout, avec le support préparé pendant les 20 minutes de préparation. | **Posture**, voix, structure |
 | 10 min | Échange avec le **jury** | Le **jury** te questionne sur le **sujet**, ton plan, ton code. | Maîtrise, réactivité, ouverture |
 
@@ -99,25 +96,21 @@ Les 10 minutes d’exposé et les 10 minutes d’échange sont évaluées ensemb
 
 Le **jury** est composé de **deux** professeurs :
 - L'un est issu de ta spécialité (typiquement **NSI** ou **mathématiques**)
-- L'autre vient d'une discipline différente (lettres, histoire, philosophie, SVT…)
+- L’autre peut enseigner toute discipline, y compris la documentation ; il n’est pas nécessairement non-spécialiste
 
-Le second n'est **pas** expert en **informatique**. Ton **oral** doit être compréhensible par un non-spécialiste : le code Python ne suffit pas, il faut le raconter en français clair. C'est le piège dans lequel tombent les candidats trop techniques.
+Ne suppose pas que le second est expert en **informatique**. Ton **oral** doit être compréhensible par un non-spécialiste : le code Python ne suffit pas, il faut le raconter en français clair. C'est le piège dans lequel tombent les candidats trop techniques.
 
-Le rapport officiel du Bulletin officiel précise que le **jury** évalue quatre dimensions :
-1. **Qualité orale** : élocution, **parole** posée, ton convaincu, gestes maîtrisés
-2. **Maîtrise du sujet** : capacité à expliquer, justifier, nuancer
-3. **Construction de l'argumentation** : problématique nette, plan annoncé, conclusion
-4. **Cohérence avec ton orientation** : pourquoi ce **sujet** te prépare à tes études
+Le ministère indique cinq dimensions : qualité orale, prise de parole en continu, connaissances, interaction avec le jury et construction de l’argumentation. Travaille chacune ; le projet d’orientation n’est pas une troisième partie chronométrée.
 
 ### Trois pièges à éviter absolument
 
 - **Réciter par cœur** : le **jury** entend la mémorisation. Préfère un canevas que tu adaptes au moment.
-- **Lire ses notes** : disqualifiant. Tu peux avoir un papier mais ne le regarde que pour vérifier une **donnée** chiffrée.
+- **Lire tout son support** : cela peut gêner la prise de parole. Les notes préparées pendant les vingt minutes sont autorisées ; utilise-les comme appui.
 - **Dépasser le temps** : à 10 minutes pile, le **jury** coupe. Mieux vaut conclure 30 secondes en avance que d'être interrompu.
 
 ## Choisir ta problématique
 
-La problématique est ta colonne vertébrale. En **NSI**, elle doit montrer que tu maîtrises une notion ancrée dans le **programme** de **terminale** : récursivité, coût d'un calcul, arbres, ou intelligence artificielle.
+La problématique est ta colonne vertébrale. En **NSI**, elle doit montrer que tu maîtrises une notion ancrée dans le **programme** de **terminale** : récursivité, coût d'un calcul ou arbres ; l'intelligence artificielle peut servir d'ouverture à valider avec ton enseignant.
 
 ### Les trois angles recommandés
 
@@ -131,7 +124,7 @@ Cet angle te fait raconter l'arbre des coups, la fonction d'évaluation, le **fo
 
 > *« En quoi l'élagage alpha-bêta illustre-t-il l'optimisation d'une recherche arborescente ? »*
 
-Plus technique, cet angle montre que tu sais analyser un coût en O(b^d) puis en O(b^(d/2)). C'est le **choix** privilégié quand tu maîtrises bien les **mathématiques** et que tu veux marquer des points sur le raisonnement.
+Plus technique, cet angle compare un coût en O(b^d) au meilleur cas de tri en O(b^(d/2)). C'est le **choix** privilégié quand tu maîtrises bien les **mathématiques** et que tu veux marquer des points sur le raisonnement.
 
 **Angle C, Intelligence artificielle et rupture épistémologique** *(niveau avancé)*
 
@@ -155,7 +148,7 @@ Pour situer le **choix** des échecs par rapport aux autres **sujets Grand Oral*
 | **Sécurité informatique** (RSA, chiffrement) | Actualité forte, liée à l'**internet** moderne | Niveau math élevé pour RSA, souvent traité | Moyenne |
 | **Cryptographie** quantique | Sujet de pointe, impressionnant | Très exigeant, peu de candidats tiennent | Élevée |
 | **Réseaux sociaux** et **algorithmes** de recommandation | Forte dimension de société | Peu de code à montrer, vite hors-programme | Moyenne |
-| **Systèmes** embarqués (Raspberry Pi, IoT) | Très concret si projet matériel | Demande un projet à montrer le **jour** J | Moyenne |
+| **Systèmes** embarqués (Raspberry Pi, IoT) | Très concret si projet matériel | Décrire le projet à l'oral ; préparer un schéma pendant les 20 minutes | Moyenne |
 | **Échecs et IA** *(notre choix)* | Combine algo + structures + IA, imaginaire culturel | Risque du récit pur si mal préparé | Faible avec ce guide |
 | **Bases de données** massives (Lichess, GitHub) | Cas concret de big data, SQL réel | Demande de manier statistiques | Moyenne |
 | **Compression** d'images / sons (PNG, MP3) | Math + structure | Sujet technique exigeant | Moyenne |
@@ -198,7 +191,7 @@ Si tu vises une école d'ingénieur, ta problématique doit pouvoir conduire au 
 
 > *« Bonjour. Je vais vous parler de la façon dont un ordinateur joue aux échecs, et plus précisément, comment il choisit son coup en un **temps** raisonnable.*
 > 
-> *Les échecs ont environ 10^120 parties possibles : plus que d'atomes dans l'univers observable. Un programme qui explore tout est impossible. Ma problématique : en quoi l'élagage alpha-bêta illustre-t-il l'optimisation d'une recherche arborescente ?*
+> *Shannon propose un ordre de grandeur historique de 10^120 pour l’arbre des parties, sous des hypothèses simplifiées. Ce n’est pas un dénombrement exact. Explorer naïvement toutes les suites est impraticable avec les moyens actuels. Ma problématique : en quoi l'élagage alpha-bêta illustre-t-il l'optimisation d'une recherche arborescente ?*
 > 
 > *Je développerai en trois étapes : l'algorithme minimax de base, l'élagage alpha-bêta qui le rend efficace, puis les **limites** de cette approche et ce qu'AlphaZero a changé. »*
 
@@ -263,7 +256,7 @@ def minimax(position, profondeur, maximise):
 
 > *« Trois points clés : la récursivité (la fonction s'appelle elle-même), l'alternance maximise/minimise (les deux joueurs alternent), et la fonction `evaluer()` qui attribue un score à chaque position.*
 > 
-> *Quel coût ? Avec b ≈ 35 coups possibles par position et d = 4 niveaux de profondeur, le minimax explore 35^4 ≈ 1,5 million de positions. Sur 6 niveaux : 35^6 ≈ 1,8 milliard. La croissance est exponentielle, O(b^d). »*
+> *Quel coût ? Dans un arbre uniforme hypothétique avec b = 35 et d = 4, il y a 35^4 = 1 500 625 feuilles ; avec d = 6, 35^6 = 1 838 265 625 feuilles. Les nœuds internes s’ajoutent. La notation O(b^d) décrit la croissance asymptotique du coût, pas un nombre exact d’appels. »*
 
 ![Croissance exponentielle du coût minimax O(b^d) : de 35 positions à profondeur 1 jusqu'à 1,8 milliard à profondeur 6 avec b=35.](/images/guide-go-nsi-02-cout-minimax.svg)
 
@@ -303,7 +296,7 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
         return meilleur
 ```
 
-> *« `alpha` = meilleur score garanti pour les Blancs. `beta` = meilleure borne supérieure déjà disponible pour le joueur MIN. Quand `beta ≤ alpha`, il est inutile d'explorer davantage : les deux joueurs ne choisiraient jamais cette branche.*
+> *« `alpha` est une borne inférieure disponible pour MAX ; `beta` une borne supérieure disponible pour MIN, dans la même échelle de scores. Ici MAX correspond aux Blancs. Quand `beta ≤ alpha`, une option déjà trouvée ailleurs rend inutile la suite de cette branche pour le choix d’un ancêtre. »*
 
 ![Mécanisme des paramètres alpha et bêta dans l'élagage alpha-bêta : condition de coupure beta inférieur ou égal à alpha illustrée sur un arbre de décision.](/images/guide-go-nsi-03-alpha-beta-params.svg)
 
@@ -317,11 +310,11 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
 > 
 > ***Limite 1 : la fonction d'évaluation.** `evaluer()` est écrite par des humains. Elle encode les intuitions d'experts (valeur des pièces, contrôle du centre, sécurité du roi). Ces règles peuvent être incorrectes ou incomplètes.*
 > 
-> ***Limite 2 : la profondeur.** Même avec alpha-bêta, la profondeur reste limitée à 20-30 coups sur les machines les plus puissantes. Au-delà, c'est impossible.*
+> ***Limite 2 : la profondeur.** La profondeur accessible dépend de la position, du temps, du matériel et de la sélection des variantes. Une profondeur annoncée par un moteur ne signifie pas que toutes les branches ont été développées uniformément aussi loin.*
 > 
 > ***La rupture d'AlphaZero (2017) :** AlphaZero n'a pas de fonction d'évaluation écrite par des humains. Il apprend à jouer en jouant contre lui-même (apprentissage par renforcement) et développe sa propre évaluation à travers un réseau de neurones. Le préprint de 2017 compare AlphaZero à Stockfish 8 à une minute par coup ; les quatre heures sont un repère sur la courbe d'apprentissage, pas la durée totale de tous les entraînements.*
 > 
-> *Ce n'est plus une optimisation : c'est un paradigme différent. Au lieu de chercher dans un arbre, il apprend à reconnaître des positions. »*
+> *AlphaZero apprend une politique et une évaluation qui guident MCTS. Il continue donc à explorer un arbre ; l’apprentissage change la sélection et l’évaluation, sans supprimer la recherche. »*
 
 ![Opposition entre IA symbolique minimax à règles explicites humaines et IA connexionniste AlphaZero apprenant par auto-jeu et réseaux de neurones.](/images/guide-go-nsi-05-alphazero-paradigme.svg)
 
@@ -329,9 +322,9 @@ def alpha_beta(position, profondeur, alpha, beta, maximise):
 
 > *« L'élagage alpha-bêta illustre un principe fondamental de l'**informatique** : optimiser ne consiste pas à chercher toutes les solutions, mais à éliminer intelligemment les mauvaises.*
 > 
-> *Le coût passe de O(b^d) à O(b^(d/2)) : une différence qui transforme l'impossible en instantané. Mais AlphaZero montre que même cette optimisation a ses **limites** quand la connaissance est encodée par des humains.*
+> *Dans le meilleur cas de tri, l’ordre de grandeur passe de O(b^d) à O(b^(d/2)). Cela ne promet ni un temps instantané ni un gain fixe dans une partie. La profondeur limitée et l’évaluation restent des choix importants.*
 > 
-> *Pour aller plus loin : si les réseaux de neurones apprennent à jouer sans règles explicites, que signifie « comprendre » un jeu ? C'est peut-être la vraie frontière entre intelligence artificielle et intelligence humaine. »*
+> *Pour aller plus loin : si un réseau apprend une évaluation sans qu’on lui fournisse une liste de critères stratégiques, que signifie « comprendre » un jeu ? C'est peut-être la vraie frontière entre intelligence artificielle et intelligence humaine. »*
 
 ## Pour les autres angles : variantes de script
 
@@ -347,7 +340,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 
 - Inverse la balance : 2 minutes sur minimax/alpha-bêta (rapidement), puis 5 minutes sur AlphaZero.
 - Insiste sur les **systèmes** de réseaux résiduels, MCTS guidé par politique, apprentissage par renforcement (auto-jeu).
-- Termine sur l'**ouverture** : AlphaZero → AlphaFold (médecine), MuZero (jeux sans règles).
+- Termine par une **ouverture** sur d’autres problèmes de décision : quelles connaissances, données et règles faudrait-il fournir ? Un succès aux échecs ne prouve pas un transfert automatique vers un autre domaine.
 
 ## Anticiper l'épreuve : 25 questions de jury rédigées
 
@@ -356,7 +349,7 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 ### Niveau 1, Comprendre le vocabulaire (questions de base)
 
 **Q1. Pourquoi avoir choisi les échecs pour votre Grand Oral NSI ?**
-> *« Les échecs concentrent plusieurs notions clés du **programme** de spé : la récursivité avec minimax, les arbres de décision, le coût algorithmique, et plus récemment l'apprentissage automatique avec AlphaZero. C'est un cas d'étude historiquement documenté (de Deep Blue en 1997 à AlphaZero en 2017) qui permet de voir l'évolution des paradigmes en intelligence artificielle. »*
+> *« Les échecs concentrent plusieurs notions clés du **programme** de spé : la récursivité avec minimax, les arbres de décision et le coût algorithmique. AlphaZero permet ensuite une ouverture vers l'apprentissage automatique. C'est un cas d'étude historiquement documenté (de Deep Blue en 1997 à AlphaZero en 2017) qui permet de voir l'évolution des paradigmes en intelligence artificielle. »*
 
 **Q2. Expliquez la récursivité dans minimax en une phrase.**
 > *« Minimax est récursif parce qu'il définit la valeur d'une position à partir des valeurs de ses positions enfants, et chaque position enfant est évaluée par le même minimax, jusqu'à atteindre une profondeur limite ou une position terminale. »*
@@ -367,8 +360,8 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 **Q4. Quelle est la différence entre un nœud MAX et un nœud MIN dans minimax ?**
 > *« Un nœud MAX correspond au tour du joueur qui veut maximiser son score : typiquement les Blancs. On y choisit le coup qui donne le score le plus élevé parmi les enfants. Un nœud MIN correspond au tour du joueur qui veut minimiser le score : les Noirs. L'alternance des nœuds MAX et MIN simule les deux joueurs qui prennent des décisions optimales à tour de rôle. »*
 
-**Q5. Calculez le coût de minimax pour b=30 coups et d=3 niveaux.**
-> *« O(b^d) = 30^3 = 27 000 positions à explorer. Avec alpha-bêta dans le meilleur cas : O(b^(d/2)) = 30^1,5 = 30 × √30 ≈ 30 × 5,5 ≈ 165 positions. Le gain est d'un facteur 163 : on passe de 27 000 à 165 évaluations. »*
+**Q5. Illustrez le coût de minimax pour b=30 et d=4 niveaux.**
+> *« L’arbre uniforme possède 30^4 = 810 000 feuilles, sans compter les nœuds internes. Dans le meilleur cas, O(b^(d/2)) conduit à comparer cette puissance à 30^2 = 900. Leur rapport vaut 900 ; ce n’est ni le compte exact des feuilles visitées par alpha-bêta ni un gain mesuré de durée. »*
 
 ### Niveau 2, Comprendre les mécanismes (questions intermédiaires)
 
@@ -376,45 +369,45 @@ Si tu choisis l'**angle A (arbre de décision)** ou l'**angle C (rupture AlphaZe
 > *« `alpha` est une borne inférieure pour MAX, `beta` une borne supérieure pour MIN, toutes deux dans la même échelle de scores. Quand `beta ≤ alpha`, une option déjà trouvée ailleurs suffit à rendre inutile la suite de cette branche. La coupure peut se produire aussi bien à un nœud MAX qu’à un nœud MIN. »*
 
 **Q7. Quelle est la différence entre le coût dans le meilleur cas et dans le pire cas pour alpha-bêta ?**
-> *« Dans le meilleur cas (coups triés du meilleur au pire), alpha-bêta atteint O(b^(d/2)) : il coupe environ la moitié des branches. Dans le pire cas (coups triés dans le mauvais ordre), il n'effectue aucune coupure et se réduit à minimax : O(b^d). En pratique, avec un tri heuristique des coups (par valeur de capture, par position connue), on est entre les deux : environ O(b^(3d/4)). »*
+> *« Avec un ordre idéal, le coût usuel est O(b^(d/2)) ; dans le pire cas, il peut rester O(b^d). Cela ne signifie pas qu’on coupe la moitié des branches à chaque niveau. Pour un tri heuristique réel, le gain doit être mesuré sur les arbres, positions et budgets étudiés ; aucun exposant intermédiaire universel n’est garanti. »*
 
 **Q8. Qu'est-ce que la fonction d'évaluation et pourquoi est-elle cruciale ?**
-> *« La fonction d'évaluation attribue un score numérique à chaque position non terminale atteinte à la profondeur limite. Elle encode la connaissance humaine du jeu : valeur des pièces (dame = 9 points, tour = 5…), contrôle du centre, sécurité du roi, structure de pions. C'est le « jugement » du programme sur la qualité d'une position. Une mauvaise fonction d'évaluation produit un joueur faible même avec un algorithme parfait : c'est la **limite** principale de l'approche. »*
+> *« La fonction d'évaluation attribue un score numérique à chaque position non terminale atteinte à la profondeur limite. Dans une version écrite à la main, elle peut combiner des critères comme le matériel, le contrôle du centre ou la sécurité du roi ; une autre version peut être apprise par un réseau. Ce score est une estimation, pas une preuve. Sa qualité et la profondeur de recherche influencent ensemble les décisions. »*
 
 **Q9. Pourquoi dit-on que l'algorithme minimax suppose un adversaire optimal ?**
-> *« Minimax suppose que l'adversaire joue toujours le meilleur coup possible : il minimise toujours. Si l'adversaire fait une erreur, minimax reste correct : la position résultante est encore meilleure pour nous. En revanche, minimax ne cherche pas à exploiter les erreurs de l'adversaire de façon proactive : il suppose simplement qu'elles n'arrivent pas. Cette hypothèse de jeu optimal est pessimiste mais sûre. »*
+> *« Dans notre convention de scores, MAX choisit le maximum et son adversaire MIN le minimum. Sur un arbre entièrement résolu, cette stratégie garantit à MAX sa valeur minimax, même si MIN peut se tromper. Elle ne cherche pas à deviner les erreurs d'un adversaire particulier. À profondeur limitée, cette garantie porte seulement sur l'arbre et les évaluations utilisés, pas sur l'issue réelle de la partie. »*
 
 **Q10. Comment Deep Blue (1997) différait-il de l'algorithme minimax pur ?**
 Deep Blue combine une recherche optimisée, une évaluation et des ressources spécialisées. IBM documente sa victoire contre Kasparov en 1997 ; une bibliothèque d'ouvertures n'impose pas un nombre universel de vingt coups joués sans recherche.
 
 **Q11. Qu'est-ce que l'apprentissage par renforcement qu'AlphaZero utilise ?**
-> *« L'apprentissage par renforcement est un paradigme où l'agent apprend en interagissant avec son environnement et en recevant des récompenses. AlphaZero joue contre lui-même (self-play) : il reçoit +1 s'il gagne, -1 s'il perd, 0 pour une nulle. Le réseau de neurones ajuste ses paramètres pour maximiser la récompense cumulée. Après des millions de parties contre lui-même, le réseau apprend des stratégies que personne ne lui a enseignées. »*
+> *« L'apprentissage par renforcement est un paradigme où l'agent apprend en interagissant avec son environnement et en recevant des récompenses. AlphaZero joue contre lui-même (self-play) : il reçoit +1 s'il gagne, -1 s'il perd, 0 pour une nulle. Le réseau ajuste ses paramètres pour rapprocher sa valeur du résultat final et sa politique des probabilités produites par la recherche. Il apprend sans exemples de parties humaines ni liste de critères stratégiques fournie à la main. Les règles, l'architecture et la procédure d'entraînement restent définies par des humains. »*
 
 **Q12. Quelle est la structure du réseau de neurones dans AlphaZero ?**
-> *« AlphaZero utilise un réseau résiduel profond (ResNet) avec deux têtes de sortie. La tête de valeur retourne un nombre entre -1 et 1 : l'estimation de qui va gagner depuis cette position. La tête de politique retourne une distribution de probabilité sur les coups possibles : lesquels méritent d'être explorés. Ces deux sorties guident une recherche Monte Carlo Tree Search (MCTS) qui remplace le minimax classique. »*
+> *« AlphaZero utilise un réseau résiduel profond (ResNet) avec deux têtes de sortie. La tête de valeur retourne un nombre entre -1 et 1 : une estimation du résultat attendu depuis cette position, en tenant compte des nulles. La tête de politique retourne une distribution de probabilité sur les coups possibles : lesquels méritent d'être explorés. Ces deux sorties guident une recherche Monte Carlo Tree Search (MCTS) qui remplace le minimax classique. »*
 
 ### Niveau 3, Nuances et limites (questions avancées)
 
 **Q13. Pourquoi AlphaZero est-il plus difficile à analyser qu'un programme minimax ?**
-> *« Un programme minimax est explicable : pour chaque coup choisi, on peut retracer l'arbre et voir les variations considérées. AlphaZero est une boîte noire : le réseau de neurones a des centaines de millions de paramètres, et on ne peut pas dire « pourquoi » il joue un coup en termes de règles. C'est le problème général de l'explicabilité des réseaux de neurones profonds : leur performance est remarquable mais leur raisonnement est opaque. »*
+> *« On peut suivre la remontée des scores et les coupures de notre petit programme. Mais une évaluation, même écrite à la main, demande encore une justification. Avec un réseau appris, relier les paramètres à une explication stratégique simple est plus difficile ; on peut toutefois examiner ses sorties et sa recherche. Il faut distinguer trace de calcul, interprétation et preuve, sans conclure qu’aucune analyse du réseau n’est possible. »*
 
 **Q14. Peut-on appliquer l'algorithme minimax à d'autres jeux que les échecs ?**
 > *« Minimax s’applique aux jeux finis à deux joueurs, à information parfaite et à somme nulle. Le morpion en est un exemple simple. Puissance 4 a été résolu en 1988 : le premier joueur dispose d’une stratégie gagnante sur la grille standard. Le mémoire d’Allis utilise notamment des règles stratégiques et une recherche adaptée. Gagner au Go grâce à AlphaGo ne signifie pas avoir résolu le Go. »*
 
 **Q15. Comment le tri des coups améliore-t-il alpha-bêta en pratique ?**
-> *« En explorant d'abord les coups les plus prometteurs (captures, coups qui donnent un bel avantage), on maximise les chances de trouver rapidement un bon `alpha`. Plus `alpha` est élevé tôt, plus on peut couper de branches. Un bon tri transforme un alpha-bêta au pire cas en un alpha-bêta proche du meilleur cas. En pratique, les programmes modernes utilisent des heuristiques comme « coups de tueur » (killer heuristic) et la table de transposition pour trier efficacement. »*
+> *« Le tri cherche à examiner d'abord les coups les plus prometteurs pour le joueur au trait. À MAX, une valeur élevée peut relever `alpha` ; à MIN, une valeur basse peut abaisser `beta`. Des bornes resserrées tôt peuvent permettre davantage de coupures dans la suite de la recherche. Les coups conservés dans une table de transposition et les heuristiques d'historique peuvent guider ce tri. Ils ne garantissent ni l'ordre idéal ni le meilleur cas O(b^(d/2)) : leur gain dépend des positions et doit être mesuré. »*
 
 **Q16. Qu'est-ce qu'une table de transposition en algorithmique des jeux ?**
-> *« Une table de transposition est une table de hachage qui mémorise les positions déjà évaluées avec leur score. Aux échecs, la même position peut être atteinte par des séquences de coups différentes ; sans table de transposition, on l'évalue plusieurs fois. La table évite ce recalcul : si la position est en mémoire, on retourne directement son score. C'est une application du principe de mémoïsation (ou programmation dynamique) à la recherche arborescente. »*
+> *« Une table de transposition est une table de hachage qui mémorise les positions déjà évaluées avec leur score. Aux échecs, la même position peut être atteinte par des séquences de coups différentes ; sans table de transposition, on l'évalue plusieurs fois. Une entrée peut aussi préciser la profondeur explorée, un coup et la nature du score : valeur exacte pour cette recherche, borne inférieure ou borne supérieure. On vérifie ces conditions avant de réutiliser le résultat ; retrouver une position ne suffit pas à retourner n'importe quel ancien score. C'est une forme de mémoïsation adaptée à la recherche arborescente. »*
 
 **Q17. Pourquoi les bitboards accélèrent-ils les programmes d'échecs ?**
-> *« Un bitboard représente l'échiquier comme un entier de 64 bits, où chaque bit correspond à une case. Les opérations sur les bits (AND, OR, XOR, décalage) sont extrêmement rapides sur les processeurs modernes : une seule instruction CPU peut tester 64 cases simultanément. La génération des coups légaux, qui doit être faite des millions de fois par seconde, bénéficie massivement de cette représentation. C'est un **exemple** d'optimisation bas-niveau qui change l'ordre de grandeur des performances. »*
+> *« Un bitboard représente l'échiquier comme un entier de 64 bits, où chaque bit correspond à une case. Un masque peut représenter, par exemple, les cases occupées par les pions blancs. AND, OR et les décalages permettent de combiner ces ensembles de cases avec peu d'opérations. Cela ne vérifie pas tous les coups légaux en une instruction : les règles, les bords du plateau et les échecs au roi demandent d'autres calculs. Le gain dépend du matériel et de l'implémentation ; on le mesure plutôt que d'annoncer un facteur universel. »*
 
 **Q18. Stockfish est-il toujours de type alpha-bêta ou a-t-il adopté des réseaux de neurones ?**
-> *« Depuis Stockfish 12 (2020), Stockfish intègre NNUE (Efficiently Updatable Neural Network). C'est un réseau de neurones utilisé comme fonction d'évaluation, mais l'algorithme de recherche reste alpha-bêta. C'est une approche hybride : la structure de recherche classique avec une évaluation apprise par réseau de neurones. Résultat : Stockfish a gagné 100 à 150 points Elo d'un coup. Aujourd'hui, les deux approches (minimax+NNUE et pure NN comme Lc0) se disputent la première place. »*
+> *« Depuis Stockfish 12 (2020), Stockfish intègre NNUE (Efficiently Updatable Neural Network). C'est un réseau de neurones utilisé comme fonction d'évaluation, mais l'algorithme de recherche reste alpha-bêta. C'est une approche hybride : la structure de recherche classique avec une évaluation apprise par réseau de neurones. L’annonce officielle de Stockfish 12 documente cette intégration. Un gain Elo exige un protocole de test précis ; l’adoption de NNUE ne transforme pas le moteur en jeu résolu et ne permet pas de prédire le classement actuel des moteurs. »*
 
 **Q19. Comment AlphaZero utilise-t-il Monte Carlo Tree Search ?**
-> *« AlphaZero combine le réseau de neurones avec MCTS. Le réseau guide quels nœuds explorer en priorité (la tête de politique donne des probabilités sur les coups). MCTS explore ces nœuds de façon stochastique, accumule des statistiques de victoire/défaite, et retourne le coup le plus visité. Le réseau est entraîné sur les résultats de ces recherches. C'est une boucle : le réseau guide MCTS, et MCTS produit des **données** pour améliorer le réseau. »*
+> *« AlphaZero combine le réseau de neurones avec MCTS. Le réseau guide quels nœuds explorer en priorité (la tête de politique donne des probabilités sur les coups). La recherche accumule des visites et des estimations de valeur, en combinant ce qu’elle a déjà observé avec les priorités de la politique. Le choix final dépend du protocole et du réglage de température ; ce n’est pas simplement tirer des parties au hasard. Le réseau est entraîné sur les résultats de ces recherches. C'est une boucle : le réseau guide MCTS, et MCTS produit des **données** pour améliorer le réseau. »*
 
 **Q20. Un algorithme parfait aux échecs est-il possible en principe ?**
 > *« Un jeu fini comme les échecs possède une valeur sous jeu parfait. Minimax pourrait la calculer en explorant l’arbre jusqu’aux positions terminales ; la profondeur serait finie, mais démesurée. Les estimations combinatoires expliquent pourquoi la force brute est impraticable aujourd’hui. Elles ne démontrent pas que toute résolution future est impossible. »*
@@ -422,16 +415,16 @@ Deep Blue combine une recherche optimisée, une évaluation et des ressources sp
 ### Niveau 4, Ouvertures et liens transversaux
 
 **Q21. Les techniques d'IA des échecs s'appliquent-elles à d'autres domaines ?**
-> *« Oui, c'est l'un des intérêts majeurs. DeepMind a appliqué les principes d'AlphaZero à AlphaFold (repliement de protéines, prix Nobel de chimie 2024) et à MuZero (jeux dont on ne connaît même pas les règles). Les **mathématiques** de l'apprentissage par renforcement viennent aussi des recherches sur les jeux. C'est un domaine de recherche où les échecs sont le banc d'essai historique. »*
+> *« Des idées de recherche et d’apprentissage peuvent être réutilisées, mais chaque domaine demande de définir ses données, actions, objectifs et critères d’évaluation. La réussite d’AlphaZero aux échecs ne démontre pas qu’un système médical ou un autre modèle en dérive directement, ni qu’il aura la même performance. Pour ton ouverture, explique une méthode transférable plutôt qu’une filiation non établie. »*
 
 **Q22. Quels enjeux de sécurité informatique soulève l'IA dans les échecs en ligne ?**
-> *« La principale **question** est la détection de triche. Les moteurs étant plus forts que tout humain, leur usage en compétition en ligne ou en présentiel est interdit. Cela soulève des **systèmes** de détection : analyse statistique de la précision (combien de fois le joueur a joué le coup que l'engin recommande), test sur des positions atypiques, **fonctionnement** des serveurs comme Chess.com qui ont des équipes anti-triche. C'est un cas concret de **sécurité informatique** appliquée. »*
+> *« L'aide extérieure non autorisée pose un problème de triche. Il faut lire le règlement applicable : Lichess interdit les moteurs dans les parties humaines en temps réel et distingue d'autres usages, comme les parties contre son IA ou l'API des bots. Pour parler de détection, distingue un indice statistique d'une preuve : jouer plusieurs coups recommandés par un moteur ne suffit pas, isolément, à démontrer une assistance. C'est un cas de sécurité où les données, les faux positifs et la procédure de décision comptent. »*
 
 **Q23. Quel rôle jouent les bases de données dans les programmes d'échecs ?**
 Distingue les bibliothèques d'ouvertures, les bases de parties PGN et les tablebases de finales. La couverture des tablebases dépend notamment des droits de roque et des métriques ; un nombre de pièces ne supprime pas toutes les exceptions. Lichess publie des parties en téléchargement : date et périmètre doivent accompagner un éventuel décompte.
 
 **Q24. Comment les échecs illustrent-ils le débat sur les limites de l'IA ?**
-> *« Les échecs ont nourri trois grandes étapes du débat. (1) Deep Blue 1997 : « les machines peuvent battre les humains aux tâches calculatoires ». (2) AlphaZero 2017 : « les machines peuvent apprendre sans connaissance humaine ». (3) GPT-4 (2024) jouant aux échecs mal mais avec un raisonnement linguistique : « la généralité n'implique pas l'expertise ». Les échecs sont un fil rouge pour mesurer ce que l'IA peut et ne peut pas faire. »*
+> *« Deep Blue en 1997 et AlphaZero en 2017 illustrent deux démarches techniques et des performances dans des protocoles déterminés. AlphaZero apprend par autojeu dans un cadre construit par des humains. Un résultat de match n’établit ni une intelligence générale ni une stratégie parfaite. Pour comparer un modèle de langage, il faudrait préciser sa version et un test reproductible, pas lui attribuer un niveau par anecdote. »*
 
 **Q25. Si tu devais reprendre ton **sujet** dans dix ans, qu'y changerais-tu ?**
 > *« En dix ans, l'IA aura probablement intégré encore plus le quotidien. Je m'attendrais à ce que les programmes d'échecs soient utilisés pour comprendre les **réseaux** de neurones eux-mêmes : pourquoi un coup est-il jugé meilleur qu'un autre ? Les chercheurs commencent à « interpréter » AlphaZero, à extraire des principes stratégiques que le réseau a découverts. Dans dix ans, ce sera peut-être la principale leçon : utiliser les IA pour comprendre les IA. »*
@@ -442,22 +435,22 @@ Voici une fiche mémo concentrée que tu peux imprimer ou recopier sur une feuil
 
 ### Les trois chiffres à connaître par cœur
 
-- **35** : facteur de branchement moyen aux échecs (b)
-- **10^120** : nombre de Shannon (parties possibles)
+- **35** : branchement uniforme choisi pour les exemples (b), pas le nombre de coups légaux dans toute position
+- **10^120** : ordre de grandeur historique de Shannon sous ses hypothèses, pas dénombrement exact
 - **28-0-72** : score d'AlphaZero vs Stockfish en 2017 (100 parties)
 
 ### Les trois dates pivots
 
-- **1950** : Turing et Shannon, fondations algorithmiques
+- **1950** : Shannon publie son article sur la programmation des échecs
 - **1997** : Deep Blue bat Kasparov (symbolique, force brute)
-- **2017** : AlphaZero bat Stockfish en 4 h (connexionniste, apprentissage)
+- **2017** : préprint AlphaZero ; quatre heures comme repère de sa courbe d’évaluation, pas durée universelle d’apprentissage
 
 
 ### Les trois notations de coût à manier
 
 - **O(b^d)** : minimax pur (exponentielle)
 - **O(b^(d/2))** : alpha-bêta meilleur cas (racine)
-- **O(1)** : accès table de transposition (constante)
+- **O(1)** : coût moyen usuel d’accès à une table de hachage sous des hypothèses ; pas une garantie universelle
 
 ### Les trois mots-clés à placer
 
@@ -468,37 +461,37 @@ Voici une fiche mémo concentrée que tu peux imprimer ou recopier sur une feuil
 ### Fiche mémo NSI complète
 
 ```
-╔══════════════════════════════════════════════════════════════╗
+╔═════════════════════════════════════════════════════════════╗
 ║          COÛTS ALGORITHMIQUES, GRAND ORAL NSI               ║
-╠══════════════════════════════════════════════════════════════╣
-║ MINIMAX (sans optimisation)                                  ║
-║   Coût temporel : O(b^d)                                     ║
-║   b = facteur de branchement (≈35 aux échecs)                ║
-║   d = profondeur de recherche                                ║
-║   Exemple : b=35, d=4 → 35^4 ≈ 1 500 000 positions           ║
-╠══════════════════════════════════════════════════════════════╣
-║ ALPHA-BÊTA (meilleur cas : coups bien triés)                 ║
-║   Coût temporel : O(b^(d/2))                                 ║
-║   Exemple : b=35, d=4 → 35^2 = 1 225 positions               ║
-║   Gain facteur b^(d/2) : 1 225x sur d=4, 42 875x sur d=6     ║
-╠══════════════════════════════════════════════════════════════╣
-║ PARAMÈTRES ALPHA-BÊTA                                        ║
-║   alpha : meilleur score garanti pour le maximiseur          ║
-║   beta  : meilleur score garanti pour le minimiseur          ║
-║   Coupure : si beta ≤ alpha → branche ignorée                ║
-╠══════════════════════════════════════════════════════════════╣
-║ VOCABULAIRE CLÉ                                              ║
-║   Récursivité   : fonction qui s'appelle elle-même           ║
-║   Élagage       : suppression de branches inutiles           ║
-║   Heuristique   : règle approchée pour guider la recherche   ║
-║   Mémoïsation   : stocker pour éviter recalcul               ║
-║   Transposition : même position via chemins différents       ║
-╠══════════════════════════════════════════════════════════════╣
-║ COMPARAISON DES APPROCHES                                    ║
-║   Minimax / Alpha-bêta : règles explicites, explicable       ║
-║   AlphaZero / MCTS+NN  : apprentissage, boîte noire          ║
-║   Stockfish NNUE       : hybride (alpha-bêta + réseau)       ║
-╚══════════════════════════════════════════════════════════════╝
+╠═════════════════════════════════════════════════════════════╣
+║ MINIMAX (sans optimisation)                                 ║
+║   Coût temporel : O(b^d)                                    ║
+║   b = branchement choisi pour l'exemple (35)                ║
+║   d = profondeur de recherche                               ║
+║   Arbre uniforme : 35^4 = 1 500 625 feuilles                ║
+╠═════════════════════════════════════════════════════════════╣
+║ ALPHA-BÊTA (meilleur cas : coups bien triés)                ║
+║   Coût temporel : O(b^(d/2))                                ║
+║   Puissance indicative : 35^2 = 1 225 (pas un compte exact) ║
+║   Rapports des puissances : 1 225 et 42 875, non gains réels║
+╠═════════════════════════════════════════════════════════════╣
+║ PARAMÈTRES ALPHA-BÊTA                                       ║
+║   alpha : borne inférieure disponible pour MAX              ║
+║   beta  : borne supérieure disponible pour MIN              ║
+║   Coupure : si beta ≤ alpha → branche ignorée               ║
+╠═════════════════════════════════════════════════════════════╣
+║ VOCABULAIRE CLÉ                                             ║
+║   Récursivité   : fonction qui s'appelle elle-même          ║
+║   Élagage       : suppression de branches inutiles          ║
+║   Heuristique   : règle approchée pour guider la recherche  ║
+║   Mémoïsation   : stocker pour éviter recalcul              ║
+║   Transposition : même position via chemins différents      ║
+╠═════════════════════════════════════════════════════════════╣
+║ COMPARAISON DES APPROCHES                                   ║
+║   Minimax / Alpha-bêta : règles explicites, explicable      ║
+║   AlphaZero / MCTS+NN  : évaluation et politique apprises   ║
+║   Stockfish NNUE       : hybride (alpha-bêta + réseau)      ║
+╚═════════════════════════════════════════════════════════════╝
 ```
 
 ## Conseils pour réussir le jour J
@@ -509,17 +502,17 @@ Tu es debout pendant les **dix minutes** d'exposé. Les détails comptent :
 
 - **Pieds ancrés** à largeur d'épaules, **jamais** croisés
 - **Mains visibles** : sur la table, en mouvement, jamais dans les poches
-- **Regard distribué** entre les deux membres du **jury** : 60% pour celui de ta spécialité, 40% pour l'autre
+- **Regard distribué** entre les deux membres du **jury**, sans quota chiffré à respecter
 - **Voix** : projetée, posée, **pas** monotone. Marque les pauses après les chiffres clés
 - **Sourire** au moins une fois pendant l'introduction et une fois en conclusion
 
 ### Gestion du stress avant l'épreuve
 
-Le **stress** d'avant **oral** est normal et même utile (il booste la concentration). Trois techniques rapides :
+Le **stress** d'avant **oral** est fréquent ; son effet varie selon les personnes et son intensité. Voici trois exercices à essayer pendant les répétitions, sans résultat garanti :
 
 1. **Respiration carrée** (4-4-4-4) : inspire 4 s, retiens 4 s, expire 4 s, pause 4 s. Trois cycles juste avant d'entrer dans la salle.
 2. **Ancrage corporel** : pieds bien à plat dans le sol, poings serrés 5 secondes puis relâche. Reconnecte au corps.
-3. **Premier mot automatique** : ta première phrase doit être prête par cœur. Si tu démarres sans hésiter, le reste suit.
+3. **Premier mot automatique** : ta première phrase doit être prête par cœur. Cela peut t'aider à démarrer sans chercher tes mots.
 
 ### Gestion du temps pendant l'exposé
 
@@ -538,7 +531,7 @@ Le **jury** te questionne. Quelques règles :
 
 ### Ton projet d'orientation pendant l'échange
 
-Depuis la session 2024, l'orientation n'est plus une troisième partie chronométrée : elle est absorbée par les 10 minutes d'échange, où le **jury** cherche à savoir pourquoi ce **sujet** te mène quelque part. La question tombe presque toujours. Prépare une réponse courte et cohérente :
+Depuis la session 2024, l’orientation n’est plus une troisième partie chronométrée. L’échange approfondit la présentation ; il peut conduire à expliquer ton choix de sujet, sans promettre qu’une question d’orientation sera posée. Prépare une réponse courte et cohérente :
 
 - Si tu vises une **CPGE** : « Ce **sujet** m'a fait découvrir le raisonnement formel, c'est ce que je veux approfondir en maths-info ou MPI. »
 - Si tu vises une **école d'ingénieur** post-bac : « L'algorithmique appliquée à un cas concret m'a passionné, je veux continuer dans un cursus pratique comme l'INSA ou l'UTC. »
@@ -561,7 +554,7 @@ Depuis la session 2024, l'orientation n'est plus une troisième partie chronomé
 
 - [ ] Premier entraînement chrono : 10 minutes exposé complet, seul, devant miroir
 - [ ] Lister les **mathématiques** spécifiques à maîtriser (b^d, racine carrée, logarithme)
-- [ ] Préparer les feuilles de code imprimées (à pouvoir poser sur la table le jour J)
+- [ ] Utiliser les feuilles de code imprimées pour réviser ; s'entraîner à préparer un court support sur papier pendant les 20 minutes
 - [ ] Identifier deux ou trois **exemples** numériques à connaître par cœur (35^4, 30^3, etc.)
 
 ### J-7 (une semaine avant)
@@ -614,6 +607,9 @@ Une feuille évaluée à profondeur limitée n’est pas nécessairement une fin
 - Shannon, C. E. (1950), *Programming a Computer for Playing Chess*, Philosophical Magazine, 41, 256–275. [Article](https://d1yx3ys82bpsa0.cloudfront.net/chess/programming-a-computer-for-playing-chess.shannon.062303002.pdf).
 - Silver, D. et al. (2017), *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*, préprint arXiv. [Article](https://arxiv.org/html/1712.01815v1).
 - IBM (s. d.), *Deep Blue*, histoire du projet. [Présentation](https://www.ibm.com/history/deep-blue).
+- Équipe Stockfish (2020), *Stockfish 12*. [Annonce de NNUE](https://stockfishchess.org/blog/2020/stockfish-12/).
+- Équipe Stockfish (s. d.), code source des [entrées de table de transposition](https://github.com/official-stockfish/Stockfish/blob/master/src/tt.h) et des [opérations sur les bitboards](https://github.com/official-stockfish/Stockfish/blob/master/src/bitboard.h).
+- Lichess (s. d.), *Fair Play*, règles selon le mode de jeu. [Règlement](https://lichess.org/page/fair-play).
 - Projet Syzygy (s. d.), *probetool*, documentation des tablebases. [Documentation](https://github.com/syzygy1/probetool).
 - Lichess (s. d.), *Lichess Open Database*. [Données](https://database.lichess.org/).
 

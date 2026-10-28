@@ -47,6 +47,8 @@ faq:
       Porque a extinção não apaga a associação original: ela instala uma nova por cima. Os fenômenos de
       recuperação espontânea e de renovação ligada ao contexto são bem documentados. É por isso que uma
       ansiedade trabalhada online pode reaparecer num salão de torneio.
+heroImageAlt: Uma pequena campainha projeta a sombra de uma mão fechada.
+
 ---
 
 Seu adversário joga o lance que leva a essa estrutura. Você a conhece. Você já analisou. Você conferiu no motor que ela é perfeitamente jogável, e até levemente favorável a você.

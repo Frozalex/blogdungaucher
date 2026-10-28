@@ -38,6 +38,7 @@ faq:
       Men moet hen hetzelfde vragen als zichzelf: een eerder spoor. Veel klassiekers gepresenteerd in
       deze reeks hebben rigoureuze replicaties niet overleefd. Wat het beste standhield, waren de
       vooraf geregistreerde protocollen en de van het oordeel van het proefpersoon onafhankelijke metingen.
+heroImageAlt: Een hand biedt een puzzelstuk aan bij een opening in een ronde muur.
 ---
 
 Een engine toont een evaluatie die de jouwe tegenspreekt. Je hebt twee seconden om te beslissen wat je met deze informatie gaat doen.

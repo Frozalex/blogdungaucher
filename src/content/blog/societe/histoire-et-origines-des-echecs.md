@@ -39,14 +39,10 @@ seoTitle: "Histoire des échecs : origines, du chaturanga à la dame moderne"
 seoDescription: >-
   L'histoire complète des échecs : naissance en Inde (chaturanga), passage par la Perse et l'islam, arrivée en Europe,
   révolution de la dame vers 1475 et standardisation moderne (Staunton, FIDE).
-ogImage: /images/blog/histoire-et-origines-des-echecs-hero.png
+ogImage: /images/og/histoire-et-origines-des-echecs-og.webp
 heroImage:
-  src: /images/blog/histoire-et-origines-des-echecs-hero.png
-  alt: >-
-    Illustration pixel art : frise de pièces d'échecs évoluant de l'éléphant indien stylisé à la tour moderne, sur un
-    fond de carte ancienne reliant l'Inde à l'Europe, « Histoire des échecs »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/histoire-et-origines-des-echecs-hero.webp
+  alt: Des silhouettes de pièces d’échecs sont disposées par hauteur croissante.
 faq:
   - question: Où et quand les échecs ont-ils été inventés ?
     answer: >-
@@ -82,9 +78,9 @@ faq:
       immédiatement lisible, s'est imposé comme la norme officielle et reste celui de toute compétition sérieuse.
 ---
 
-Sur un échiquier moderne, la dame est reine. Elle balaie les lignes, les colonnes et les diagonales ; perdre la sienne sans compensation, c'est presque toujours perdre la partie. Elle est, et de loin, la pièce la plus puissante.
+L'histoire des échecs est celle de transformations des règles, des pièces et des usages au fil de leur circulation. Le jeu moderne ne peut donc pas être projeté tel quel sur toutes les pratiques qui l'ont précédé.
 
-Pourtant, pendant près de mille ans, cette même pièce fut la plus faible de l'échiquier après le pion. Elle ne se traînait que d'une case, en diagonale. Cette spectaculaire inversion n'est pas une anecdote : c'est l'histoire des échecs en miniature. Car ce jeu n'a jamais cessé d'être réécrit par les civilisations qu'il traversait.
+Pour en comprendre les origines, il faut distinguer les témoignages disponibles, les étapes de diffusion et les changements attestés. L'évolution de la dame et des autres pièces permet notamment d'examiner comment un jeu conserve des traits communs tout en modifiant les possibilités offertes aux joueurs.
 
 ## L'Inde, le berceau : le chaturanga
 

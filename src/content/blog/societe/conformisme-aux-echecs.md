@@ -53,15 +53,16 @@ faq:
       la seule justification disponible est que c'est la ligne principale ou que le moteur l'approuve,
       tu as adopté une conclusion sans le raisonnement, ce qui la rend inutilisable dans la position
       voisine.
+heroImage:
+  src: /images/blog/conformisme-aux-echecs-hero.webp
+  alt: Des flèches de papier suivent une courbe, l’une légèrement décalée.
+ogImage: /images/og/conformisme-aux-echecs-og.webp
+
 ---
 
-Tu regardes ta base de données. Dans cette position, 82 % des parties continuent par le même coup. L'évaluation est bonne. Les joueurs qui l'ont joué sont forts.
+Le conformisme pose la question de l'influence du groupe sur les jugements et les décisions. Dans le choix d'une ouverture, la fréquence d'un coup, le niveau de ceux qui le jouent et son évaluation apportent des informations différentes.
 
-Tu joues ce coup.
-
-Question : est-ce que tu l'as choisi, ou est-ce que tu l'as suivi ?
-
-La différence ne se voit pas sur l'échiquier, puisque le coup est le même. Elle se voit trois coups plus tard, quand ton adversaire sort du livre et que tu dois comprendre la position par toi-même.
+Suivre une pratique majoritaire peut être raisonnable sans constituer une preuve de sa supériorité. L'enjeu est de distinguer l'utilisation d'une information collective, la compréhension de ses raisons et l'adoption d'un choix pour se conformer au groupe.
 
 ## Trois lignes, et une réponse évidente
 

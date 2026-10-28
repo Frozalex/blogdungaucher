@@ -41,6 +41,8 @@ faq:
       in eindspelen' is een toetsbare hypothese: je werkelijke scorepercentage in partijen die het
       eindspel bereiken bestaat al in je statistieken. De meting levert het tegensignaal dat de
       overtuiging had geëlimineerd.
+heroImageAlt: Een figuur tekent een hindernis vlak voor de eigen voeten.
+
 ---
 
 Je werkt je eindspelen niet uit.

@@ -1,168 +1,145 @@
-﻿---
+---
 title: "Paradoxo de Zermelo: a imperfeição do jogo perfeito"
-excerpt: "O xadrez tem uma verdade matemática que ninguém conhece. Zermelo a demonstrou em 1913: o resultado sob jogo perfeito está determinado de antemão. Mas essa certeza teórica esconde uma vertigem prática fascinante."
-seoTitle: "Paradoxo de Zermelo no xadrez: verdade determinada mas inacessível"
-seoDescription: "Ernst Zermelo (1913) provou que o xadrez tem um resultado sob jogo perfeito: Brancas ganham, Pretas ganham ou empate. Por que essa certeza permanece fora de alcance, e o que isso muda no seu jogo."
-frSlug: paradoxe-de-zermelo
-faq:
-  - question: "O teorema de Zermelo prova que as Brancas ganham ?"
-    answer: >-
-      Não. Ele prova que <strong>uma</strong> resposta existe entre três possíveis : vitória das Brancas, vitória
-      das Negras ou empate. Não diz qual. A hipótese majoritária é que seja o empate (coerente
-      com o jogo de elite e com a avaliação dos motores em torno de +0,2/+0,3), mas é uma crença baseada na
-      observação, não uma demonstração.
-  - question: "Por que chamar isso de \"paradoxo\" ?"
-    answer: >-
-      No sentido matemático, não é um : é um resultado perfeitamente coerente. O "paradoxo" é
-      <strong>epistêmico</strong> : sabe-se que existe uma resposta única, mas não é possível
-      conhecê-la, nem na prática nem em qualquer extrapolação razoável da capacidade de cálculo. São raras
-      as proposições em que a <em>certeza da existência</em> está tão nitidamente separada da
-      <em>possibilidade de acesso</em>.
-  - question: "As tablebases não contradizem Zermelo ?"
-    answer: >-
-      Ao contrário, elas o <strong>confirmam</strong> sobre um subconjunto do problema. Para qualquer
-      posição com ≤ 7 peças, o valor de Zermelo é conhecido exatamente (ganho, perda ou empate, e profundidade
-      exata). As tablebases são a prova construtiva de que a demonstração de Zermelo não é vazia :
-      aplicada a um número finito acessível de posições, ela produz de fato uma verdade única calculável.
-  - question: "Por que o AlphaZero pode vencer o Stockfish se não joga \"perfeitamente\" ?"
-    answer: >-
-      Porque nem um nem outro joga perfeitamente no sentido de Zermelo. Ambos são
-      <strong>aproximações</strong> da estratégia ótima, apenas com arquiteturas diferentes
-      (busca + heurísticas no Stockfish, rede neural + Monte Carlo Tree Search no AlphaZero).
-      Quando o AlphaZero vence o Stockfish, é porque nesse nível de aproximação as suas escolhas estão em média mais
-      próximas da verdade de Zermelo. Mas nenhum dos dois atinge essa verdade.
-  - question: "Essa verdade matemática poderia ser descoberta algum dia ?"
-    answer: >-
-      Provavelmente não por força bruta pura : a árvore de $10^{120}$ está definitivamente fora de alcance físico.
-      Uma <strong>prova indireta</strong> continua teoricamente possível (demonstração por simetria, por
-      invariante, por estratégia espelho parcial), mas não existe nenhuma pista séria. A computação quântica
-      muda o limite (Grover divide o expoente por dois), mas $10^{60}$ continua astronômico. A resolução
-      do xadrez em sentido estrito é mais provavelmente um horizonte que nunca será alcançado.
+excerpt: "O valor do xadrez com jogo perfeito a partir da posição inicial continua desconhecido. Determinação do jogo, prova histórica e bases de finais ajudam a distinguir existência de uma resposta, cálculo e desempenho."
+seoTitle: "Zermelo e xadrez: valor teórico e resultado desconhecido"
+seoDescription: "Resultado sob jogo perfeito, regras de término e bases de finais: o que o modelo de Zermelo garante, sem afirmar conhecer o valor da posição inicial."
+frSlug: "paradoxe-de-zermelo"
+faq: [{"question": "O teorema de Zermelo prova que as brancas ganham?", "answer": "Não. Prova que existe uma resposta entre três possibilidades: vitória das brancas, vitória das pretas ou empate. Não diz qual. A posição inicial não está resolvida; uma avaliação de motor não prova seu valor."}, {"question": "Por que isso é chamado de paradoxo?", "answer": "Não é um paradoxo matemático, mas uma separação entre saber que existe um valor sob as regras fixadas e conhecer esse valor a partir da posição inicial. A existência está estabelecida, enquanto o resultado permanece desconhecido."}, {"question": "As bases de finais contradizem Zermelo?", "answer": "Não. Nas posições cobertas por uma base, o resultado é determinado segundo suas regras e métricas; exceções como direitos de roque precisam ser consideradas. As bases oferecem resultados calculados em um subconjunto acessível de posições."}, {"question": "Por que AlphaZero pode vencer Stockfish sem jogar perfeitamente?", "answer": "Nenhum dos dois demonstrou uma estratégia perfeita desde a posição inicial. No match de 2017, Stockfish 8 associa busca alfa-beta e avaliação escrita à mão; AlphaZero associa uma rede aprendida e busca em árvore Monte Carlo. Um resultado melhor em um match não mede a distância de uma estratégia ótima desconhecida."}, {"question": "Essa verdade matemática poderá ser descoberta?", "answer": "A solução exaustiva ultrapassa os meios atuais. Isso não prova que nenhum método futuro possa resolver o jogo. O algoritmo de Grover trata de busca não estruturada: não se pode simplesmente dividir por dois o expoente da árvore minimax do xadrez."}]
+heroImageAlt: Um labirinto circular escuro com um caminho azul até o centro vazio.
+
 ---
 
-Em 1913, durante o quinto Congresso Internacional de Matemáticos em Cambridge, o matemático alemão [Ernst Zermelo](https://pt.wikipedia.org/wiki/Ernst_Zermelo) apresentou um resultado que mudaria a forma como os matemáticos, e mais tarde os cientistas da computação, pensam os jogos de estratégia. Seu teorema é curto. Sua demonstração é elegante. E suas implicações no xadrez são ao mesmo tempo tranquilizadoras e vertiginosas.
+Em 1912, no quinto Congresso Internacional de Matemáticos em Cambridge, o alemão [Ernst Zermelo, em francês](https://fr.wikipedia.org/wiki/Ernst_Zermelo) apresentou um resultado que mudaria a maneira de matemáticos e, depois, cientistas da computação pensarem os jogos de estratégia. Seu teorema é curto. Sua prova é elegante. As implicações para o xadrez são ao mesmo tempo tranquilizadoras e vertiginosas.
 
 ## Ernst Zermelo e a teoria dos conjuntos
 
-Antes de falar de xadrez, é preciso compreender quem era Zermelo. Ele é principalmente conhecido por suas contribuições fundamentais à teoria dos conjuntos, em particular o [axioma da escolha](https://pt.wikipedia.org/wiki/Axioma_da_escolha) e os [axiomas de Zermelo-Fraenkel](https://pt.wikipedia.org/wiki/Axiomas_de_Zermelo-Fraenkel), que ainda hoje constituem os fundamentos padrão da matemática.
+Antes do xadrez, é preciso entender quem foi Zermelo. É conhecido sobretudo por contribuições fundamentais à teoria dos conjuntos, especialmente o [axioma da escolha, em francês](https://fr.wikipedia.org/wiki/Axiome_du_choix) e os axiomas de Zermelo–Fraenkel, em francês, que continuam entre os fundamentos usuais da matemática.
 
-Em 1913, seu interesse pelo xadrez não era fortuito. Os matemáticos da época buscavam formalizar o raciocínio lógico em sistemas tão rigorosos quanto possível. Os jogos de estratégia perfeita representavam um terreno ideal: regras precisas, número finito de estados, sem acaso. A questão natural era: existe, em teoria, uma forma "perfeita" de jogar?
+Seu interesse pelo xadrez não era casual. Matemáticos da época buscavam formalizar o raciocínio lógico em sistemas rigorosos. Jogos de estratégia com informação perfeita ofereciam um campo adequado: regras precisas, quantidade finita de estados e ausência de acaso. A pergunta natural era: existe, em teoria, uma maneira “perfeita” de jogar?
 
-## O teorema de Zermelo: enunciado e demonstração
+## O teorema de Zermelo: enunciado e prova
 
-O teorema de Zermelo se aplica a uma classe de jogos que inclui o xadrez: jogos de dois jogadores que se enfrentam diretamente (sem coalizão), com informação perfeita (nada está escondido), sem acaso, onde os dois jogadores jogam alternadamente, e que terminam sempre num número finito de lances.
+O teorema se aplica a uma classe que inclui o xadrez: jogos de dois participantes em confronto direto, sem coalizão, com informação perfeita, sem nada escondido, sem acaso, com turnos alternados e que sempre terminam em uma quantidade finita de lances.
 
-**Enunciado:** Em todo jogo desse tipo, uma das três situações seguintes é necessariamente verdadeira: o jogador 1 tem uma estratégia ganhadora, ou o jogador 2 tem uma estratégia ganhadora, ou os dois jogadores podem forçar o empate.
+**Enunciado moderno nesse contexto finito:** um dos jogadores pode forçar a vitória, ou cada um tem uma estratégia que garante pelo menos o empate. Nesse último caso, a oposição ótima leva ao empate. Esse enunciado deve ser distinguido do conteúdo exato do texto histórico de Zermelo, discutido mais adiante.
 
-A demonstração usa uma **indução retroativa** (*backward induction*) sobre o comprimento máximo possível da partida. Imagine um final de partida alcançado. Cada posição terminal é ou uma vitória para Brancas, ou uma vitória para Pretas, ou um empate. Agora, vamos remontar um lance. Se é a vez de Brancas, elas podem escolher entre as posições terminais acessíveis aquela que lhes é mais favorável. Da mesma forma para Pretas. Remontando recursivamente assim desde todas as posições terminais até a posição inicial, cada posição na árvore do jogo recebe um valor definido: vitória Brancas, vitória Pretas, ou empate.
+![Três valores possíveis com jogo perfeito, sem solução conhecida desde a posição inicial](/images/pt-br/zermelo-01-trois-issues.svg)
 
-O valor da posição inicial está portanto determinado. O primeiro jogador a jogar tem ou uma estratégia para forçar a vitória, ou os dois jogadores podem forçar o empate, ou o segundo jogador tem uma estratégia para forçar a vitória.
+Em uma árvore finita, é possível compreender o resultado por **indução retroativa**, como no [minimax](/pt-br/blog/minimax-no-xadrez/). Essa apresentação didática não é a prova original de Zermelo: Schwalbe e Walker destacam justamente que o texto de 1913 não segue esse procedimento. Shannon publica seu artigo em 1950, 37 anos depois, sem que isso estabeleça uma reprodução “tal e qual” da prova.
 
-### Uma demonstração refinada depois
+Imagine um fim de partida alcançado. Cada posição terminal é uma vitória das brancas, uma vitória das pretas ou um empate. Agora retroceda um lance. Se é a vez das brancas, elas podem escolher a posição terminal acessível mais favorável. O mesmo vale para as pretas. Repetindo o processo desde todas as posições terminais até a inicial, cada posição na árvore recebe um valor definido: vitória das brancas, vitória das pretas ou empate.
 
-Detalhe histórico frequentemente esquecido: o texto original de Zermelo em 1913 contém uma **sutileza não trivial** sobre a finitude. Zermelo supõe implicitamente que toda partida termina num número finito de lances, mas não trata corretamente o caso onde o perdedor pode indefinidamente atrasar o xeque-mate. É [Dénes König](https://pt.wikipedia.org/wiki/D%C3%A9nes_K%C5%91nig) (1927) e depois [László Kalmár](https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Kalm%C3%A1r) (1928) que completam a prova com o que se chama hoje de **lema de König** sobre as árvores infinitas com ramificação finita. No xadrez, esse detalhe é resolvido na prática pela regra dos 50 lances e pela regra da tripla repetição, que garantem a finitude efetiva.
+O valor da posição inicial está, portanto, determinado. Ou o primeiro jogador tem estratégia para forçar a vitória, ou ambos podem garantir o empate, ou o segundo jogador tem estratégia para forçar a vitória.
 
-### Por que é paradoxal
+![Exemplo moderno de indução retroativa em uma árvore fictícia](/images/pt-br/zermelo-02-backward-induction.svg)
 
-O paradoxo de Zermelo não é lógico. É um paradoxo prático. O teorema garante que a resposta existe e é única. Mas não diz qual é. E sobretudo, não diz como encontrá-la.
+### Uma prova aperfeiçoada posteriormente
 
-Para encontrar o valor real da posição inicial do xadrez, seria necessário percorrer a totalidade da árvore do jogo. Essa árvore contém cerca de $10^{120}$ folhas segundo a estimativa de Shannon. Para referência, a idade do universo é de cerca de $4 \times 10^{17}$ segundos, e o número de átomos no universo observável é de cerca de $10^{80}$.
+Schwalbe e Walker distinguem o original de 1913 de suas formulações modernas. Zermelo admite sequências infinitas de lances e se interessa especialmente pela duração necessária para forçar uma vitória. König (1927) e Kalmár (1928/1929) prolongam a análise. É preciso separar essa história da demonstração elementar em árvore finita apresentada aqui.
 
-Um computador que pudesse avaliar $10^{20}$ posições por segundo (ou seja, cerca de $10^{11}$ vezes mais rápido do que os melhores computadores atuais) levaria cerca de $10^{100}$ segundos para resolver o xadrez por força bruta. É infinitamente mais longo do que a idade do universo. A resolução completa do xadrez por exploração exaustiva é fisicamente impossível com qualquer tecnologia concebível.
+Para tratar o xadrez moderno como jogo finito, é necessário incluir as regras de término. Repetição tripla e cinquenta lances abrem o direito de reivindicar empate; as regras automáticas de repetição quíntupla e 75 lances têm um papel distinto, como lembra o manual FIDE dos árbitros.
+
+### Por que parece paradoxal
+
+O paradoxo de Zermelo não é lógico. É prático. O teorema garante que a resposta existe e é única, mas não diz qual é. Sobretudo, não fornece por si um método praticável para encontrá-la.
+
+Uma exploração exaustiva ingênua consideraria uma quantidade enorme de sequências. Shannon propõe a ordem de grandeza $10^{120}$ sob suas hipóteses: não é uma contagem exata de todas as partidas legais.
+
+Como cálculo hipotético, examinar $10^{120}$ elementos a uma taxa de $10^{20}$ por segundo exigiria $10^{100}$ segundos. Isso ilustra um custo sob hipóteses específicas; não prova que nenhum outro método possa estabelecer o valor do jogo. O artigo sobre [os limites do cálculo no xadrez](/pt-br/blog/xadrez-problema-matematico-impossivel-e-ia/) desenvolve essa distinção.
 
 ## A verdade desconhecida do xadrez
 
-A grande questão que o teorema de Zermelo deixa em suspense é: qual é o valor do xadrez sob jogo perfeito?
+A grande pergunta em aberto é: qual é o valor do xadrez com jogo perfeito? O teorema é um dos cinco conceitos fundadores da [teoria dos jogos aplicada ao xadrez](/pt-br/blog/teoria-dos-jogos-no-xadrez/).
 
-A maioria dos grandes mestres e dos teóricos acha que a resposta é o empate. O argumento empírico é forte: no mais alto nível de jogo, os empates são muito frequentes, e a posição inicial é considerada ligeiramente favorável às Brancas (que têm o primeiro movimento) mas não o suficiente para forçar a vitória contra uma defesa ótima.
+Pode-se conjecturar um empate, mas nem a frequência de empates entre jogadores fortes nem uma avaliação de motor constituem prova. Essas observações envolvem adversários e orçamentos de cálculo específicos, não todas as respostas possíveis a uma estratégia.
 
-Mas isso é apenas uma intuição baseada na observação do jogo humano. Não é uma prova. É matematicamente possível que as Brancas tenham uma vitória forçada escondida em profundidades que nenhum humano jamais explorou. É improvável segundo os especialistas, mas não demonstrado como impossível.
+Uma avaliação de Stockfish, em francês depende da versão, profundidade e tempo concedido. Uma pequena vantagem numérica não significa vitória forçada nem distância medida até a solução perfeita. O teorema mantém abertas as três possibilidades desde a posição inicial.
 
-Alguns trabalhos recentes em informática tentam abordar a questão de forma assintótica. [Komodo](https://en.wikipedia.org/wiki/Komodo_(chess)), [Stockfish](https://pt.wikipedia.org/wiki/Stockfish) e seus sucessores avaliam a posição inicial como ligeiramente favorável às Brancas (na ordem de +0,2 a +0,3 peão de vantagem), mas essa avaliação é ela mesma baseada em funções heurísticas, não num cálculo exaustivo.
+## Finais resolvidos: uma janela para o valor exato
 
-## Os finais resolvidos: uma janela sobre a verdade
+Se a posição inicial do xadrez permanece sem solução, existe uma área em que foi possível resolver conjuntos completos de posições: finais com poucas peças.
 
-Se resolver o xadrez inteiro é impossível, existe um domínio onde a resolução completa foi realizada: os finais com poucas peças.
+As bases de finais, em francês, desenvolvidas por Ken Thompson e depois Marc Bourzutschky e outros, permitem tratar grandes conjuntos de finais, inclusive posições com sete peças. A cobertura e o significado de um resultado dependem da base: direitos de roque e regra dos cinquenta lances, por exemplo, exigem atenção.
 
-As [tablebases](https://pt.wikipedia.org/wiki/Tablebase) desenvolvidas por Ken Thompson e depois Marc Bourzutschky e outros resolveram todos os finais até sete peças no tabuleiro. Esse trabalho monumental revelou resultados surpreendentes.
+As bases mostram principalmente por que é preciso especificar regras e métricas. A documentação de Ronald de Man apresenta, por exemplo, um final com valor DTZ50 de 164 meios-lances e uma “vitória amaldiçoada”: vencedora sem o limite dos cinquenta lances, mas não necessariamente com essa regra.
 
-O final Rei-Dama-Torre contra Rei-Dama, por exemplo, havia sido considerado nulo por muito tempo. As tablebases revelaram que em certas configurações, um lado pode forçar a vitória em... 517 lances. Nenhum humano, mesmo o melhor Grande Mestre do mundo, poderia encontrar esse caminho por raciocínio próprio. A profundidade da verdade enxadrística nessas configurações ultrapassa largamente as capacidades humanas.
+### DTM e DTZ: duas distâncias diferentes
 
-Esse resultado é instrutivo. Ele mostra que sua intuição sobre o que é "ganho" ou "nulo" pode ser profundamente errada quando você se afasta das posições familiares. Ele reforça o mistério de Zermelo: a verdade existe, mas pode se esconder em profundidades que desafiam a compreensão humana.
+DTM mede a distância até o mate; DTZ, a distância até uma captura ou movimento de peão que zera o contador. Otimizar cada uma pode levar a lances diferentes. Não são duas verdades contraditórias: são perguntas distintas, e é preciso dizer se a regra dos cinquenta lances é considerada. As bases Syzygy usuais fornecem WDL e DTZ, não uma distância DTM universal.
 
-### O salto DTM / DTZ: duas verdades para uma mesma posição
-
-As tablebases distinguem duas medidas da "vitória forçada": DTM (*Distance to Mate*, distância ao mate) e DTZ (*Distance to Zero*, distância ao próximo lance de peão ou captura que reinicia o contador dos 50 lances). Um mesmo final ganho pode ter DTM = 517 e DTZ = 7: existe um lance que simplifica a vitória em sete semilances se aceitar "perder" a vitória matemática em benefício de uma vitória mais curta mas acessível. Essa dualidade ilustra algo profundo sobre Zermelo: a **verdade matemática** de uma posição depende do critério escolhido para "ganhar", e a humanidade joga quase sempre com um critério prático (ganhar antes do relógio, antes da fadiga) muito diferente do critério teórico.
+![Bases de finais: definir a pergunta e as regras](/images/pt-br/zermelo-04-dtm-dtz.svg)
 
 ## A imperfeição estrutural do jogador humano
 
-O paradoxo de Zermelo revela algo fundamental sobre a condição do jogador humano. Ele joga um jogo cuja "perfeição" está matematicamente definida, mas fisicamente inacessível.
+O paradoxo revela algo fundamental sobre o humano: joga um jogo cuja “perfeição” é definida matematicamente, mas cujo valor desde a posição inicial ainda é desconhecido.
 
-Um jogador humano, mesmo o melhor do mundo, joga uma aproximação da estratégia ótima. Seu nível de jogo é determinado pela qualidade dessa aproximação: a que profundidade ele pode calcular, quantos padrões táticos ele reconhece, quão fiel é sua avaliação posicional à realidade.
+Um jogador se apoia no cálculo, no reconhecimento de padrões e na avaliação posicional. Podemos observar suas decisões e comparar resultados com os adversários; isso não fornece uma medida geral da distância até uma estratégia ótima desconhecida.
 
-[Magnus Carlsen](https://pt.wikipedia.org/wiki/Magnus_Carlsen), considerado por muitos o melhor jogador da história, ainda comete erros. [Stockfish](https://pt.wikipedia.org/wiki/Stockfish), o melhor motor de xadrez atual, também comete erros em relação ao jogo perfeito teórico, erros bem mais raros e bem menores, mas erros ainda assim.
-
-A diferença entre Carlsen e Stockfish não é qualitativa (um joga perfeitamente e o outro não), ela é quantitativa (um é uma aproximação mais fina do que o outro). Esse ponto de vista muda profundamente sua forma de pensar o progresso no xadrez: você não tende à perfeição, você tenta se aproximar dela.
+Os desempenhos de jogadores e motores podem ser comparados em partidas. Não oferecem uma distância medida até a estratégia perfeita, pois ela permanece desconhecida no conjunto do jogo. Algumas posições cobertas por bases de finais permitem, porém, verificar uma decisão segundo suas regras.
 
 ## O jogo perfeito não é o jogo ideal
 
-Outra dimensão do paradoxo de Zermelo é filosófica. Mesmo que a estratégia perfeita fosse escrita em preto e branco, você a jogaria realmente?
+Outra dimensão do paradoxo é filosófica. Mesmo se a estratégia perfeita estivesse escrita, você realmente a jogaria?
 
-Imagine que Brancas têm uma vitória forçada em 80 lances a partir da posição inicial. Jogar essa vitória forçada significaria que toda partida já estaria, na realidade, terminada no lance 1. O adversário poderia jogar qualquer coisa, o resultado seria o mesmo. O xadrez, como jogo, cessaria de existir. A competição desapareceria. A arte estratégica desmoronaria.
+Imagine que as brancas tenham vitória forçada em oitenta lances desde a posição inicial. Seguir essa estratégia significaria que o resultado teórico já estaria determinado no primeiro lance. O adversário poderia escolher qualquer resposta e a estratégia manteria o ganho. Isso mudaria a questão teórica. A prática humana, porém, poderia continuar: saber que uma estratégia existe e conseguir aplicá-la em cada posição são coisas diferentes.
 
-O fato de o xadrez ser tão complexo que nenhuma estratégia perfeita é conhecida é precisamente o que o torna vivo. A imperfeição dos jogadores humanos é a condição necessária à existência do jogo como disciplina artística e esportiva.
+O fato de o xadrez ser complexo a ponto de não conhecermos uma estratégia perfeita contribui para sua vitalidade. A imperfeição humana sustenta parte de seu interesse como disciplina artística e esportiva.
 
-Esse paradoxo é profundo: a beleza e a riqueza do xadrez repousam na ignorância coletiva de sua verdade matemática. Se todos soubessem tudo de antemão, o jogo morreria. O mistério é seu combustível.
+Esse é o paradoxo filosófico: a beleza e a riqueza do jogo também se alimentam do desconhecimento coletivo do seu valor matemático. Se todos soubessem tudo de antemão, a experiência mudaria. O mistério é parte do seu combustível.
 
-## Zermelo e a hierarquia dos jogos resolvidos
+## Zermelo e os jogos resolvidos
 
-A comunidade de informática resolveu progressivamente jogos mais complexos uns após os outros, seguindo a lógica de Zermelo.
+A comunidade de computação resolveu progressivamente jogos de complexidade crescente, seguindo a lógica da determinação do resultado.
 
-O [jogo da velha](https://pt.wikipedia.org/wiki/Jogo_da_velha) é nulo sob jogo perfeito, e essa verdade é acessível a qualquer criança que aprende a estratégia correta. O [Conecta-4](https://pt.wikipedia.org/wiki/Conecta-4) foi resolvido em 1988: vitória do primeiro jogador. As [damas](https://pt.wikipedia.org/wiki/Damas) foram resolvidas em 2007 por [Jonathan Schaeffer](https://en.wikipedia.org/wiki/Jonathan_Schaeffer_(computer_scientist)): nulo sob jogo perfeito, após 18 anos de cálculo e um registro de $5 \times 10^{20}$ posições.
+O [jogo da velha, em francês](https://fr.wikipedia.org/wiki/Morpion) termina em empate com jogo perfeito, uma estratégia acessível a quem a aprende. O [Lig-4, em francês](https://fr.wikipedia.org/wiki/Puissance_4) foi resolvido em 1988: vitória do primeiro jogador. As damas inglesas 8×8, *checkers*, foram resolvidas em 2007 por [Jonathan Schaeffer, em francês](https://fr.wikipedia.org/wiki/Jonathan_Schaeffer): empate com jogo perfeito, após dezoito anos de cálculo em um jogo com cerca de $5 × 10^{20}$ posições possíveis; nem todas foram percorridas individualmente.
 
-O [xadrez](https://pt.wikipedia.org/wiki/Xadrez) permanece em aberto. O [Go](https://pt.wikipedia.org/wiki/Go_(jogo)) também. A resolução completa desses jogos permanece fora de alcance, não em princípio (Zermelo garante que uma resposta existe), mas na prática (a complexidade combinatória é demasiado elevada).
+![Situação de alguns jogos, sem comparar tamanhos incompatíveis](/images/pt-br/zermelo-03-jeux-resolus.svg)
 
-## O contexto axiomático: teoria dos conjuntos e teoria dos jogos
-
-O teorema de Zermelo sobre o xadrez não é isolado, ele emerge do projeto científico mais amplo de Zermelo na teoria dos conjuntos. Zermelo é principalmente conhecido pelos axiomas de Zermelo-Fraenkel, que são também chamados os axiomas ZF. Esses axiomas representam hoje o fundamento padrão de quase toda a matemática.
-
-Um axioma, na lógica matemática, é uma afirmação aceita como ponto de partida sem demonstração. Um sistema axiomático reúne axiomas a partir dos quais todos os teoremas são derivados por regras de inferência. Os axiomas de Zermelo incluem o axioma da extensionalidade, o axioma do par, o axioma da união, o axioma do conjunto das partes, e, o mais famoso, o axioma da escolha. Existem também axiomas de infinito e de regularidade. A teoria axiomática de Zermelo foi depois completada por Abraham Fraenkel, dando os axiomas de Zermelo-Fraenkel (ZF). Quando o axioma da escolha é incluído, obtém-se o sistema ZFC.
-
-Os axiomas de Zermelo-Fraenkel são também a fundação sobre a qual a teoria dos conjuntos repousa. A teoria dos conjuntos, por sua vez, é o quadro formal em que a teoria dos jogos se desenvolve. Existem portanto ligações profundas entre os axiomas de Zermelo e o seu teorema sobre os jogos: ambos são manifestações do mesmo projeto de rigor axiomático.
-
-Para o jogador que lê este artigo, esses fundamentos axiomáticos têm um significado prático. Eles garantem que existem exatamente três situações possíveis para o xadrez sob jogo perfeito: vitória das Brancas, vitória das Pretas, ou empate. Não existem mais alternativas. O sistema axiomático garante a completude dessa conclusão, é então um resultado que transcende a intuição empírica.
-
-A teoria dos jogos também é relevante neste artigo: ela é a disciplina que formaliza os jogos de estratégia. Existem teoremas gerais na teoria dos jogos que são, em parte, generalizações do resultado de Zermelo. A teoria dos jogos moderna, desenvolvida por John von Neumann e John Nash, entre outros, parte dos mesmos axiomas de finitude, racionalidade e informação perfeita que Zermelo usou em 1913. O lema de König, que também foi mobilizado para completar a prova de Zermelo, é também um resultado fundamental da teoria dos grafos. Teoria e axiomas são então inseparáveis nesse domínio.
-
-Para quem quer aprofundar o tema, este artigo é uma introdução. Os textos de referência sobre o assunto, Zermelo (1913), Schwalbe & Walker (2001), e os artigos de história da teoria dos jogos, estão também disponíveis em bases de dados acadêmicas. A Wikipédia também oferece uma boa introdução ao teorema de Zermelo e aos axiomas de Zermelo-Fraenkel para quem quer então explorar o contexto matemático mais amplo.
+O [xadrez, em francês](https://fr.wikipedia.org/wiki/%C3%89checs) continua em aberto. O [Go, em francês](https://fr.wikipedia.org/wiki/Go_(jeu)) também. O valor a partir da posição inicial não está estabelecido. A explosão combinatória atrapalha os métodos exaustivos atuais; não demonstra a impossibilidade de toda prova futura, e as regras exatas precisam ser especificadas para cada jogo.
 
 ## O que Zermelo muda para você no tabuleiro
 
-Saber que o xadrez tem uma verdade matemática inacessível muda algo para o jogador prático? Não diretamente no tabuleiro. Mas muda a forma de pensar o jogo.
+Saber que o valor inicial continua desconhecido muda algo para o jogador prático? Não diretamente no tabuleiro. Mas muda a maneira de pensar o jogo.
 
-Cada lance que você joga é uma aproximação. Cada avaliação de posição que você faz é uma estimativa. Cada plano que você constrói é uma heurística. Não há certeza, mesmo para o Grande Mestre mais sólido. Há aproximações mais ou menos finas da verdade.
+Em uma posição complexa, suas variantes e sua avaliação geralmente são parciais. Existem, porém, certezas locais: um mate forçado corretamente estabelecido ou uma posição coberta por base de finais pode ser resolvida sob regras precisas. É preciso distinguir esses casos do desconhecido que permanece desde a posição inicial.
 
-Essa humildade matemática é saudável. Ela significa que mesmo frente a um adversário muito mais forte do que você, a verdade da posição não é conhecida por ele. Ele joga, ele também, uma aproximação. Seu relógio gira. Seus recursos cognitivos são limitados. Nas complicações que ele não conhece, sua verdade prática pode se afastar significativamente da verdade teórica.
+A distinção ajuda diante de um adversário mais forte: um desempenho melhor não garante uma solução exata de cada posição. Mas também não diz que ele desconheça um final conhecido ou um mate forçado. Compare variantes concretas, tempo disponível e justificativa do lance, em vez de um suposto grau de proximidade com a perfeição.
 
-O gênio de Zermelo não é ter resolvido o xadrez. É ter provado que a solução existe, de forma definitiva, sem poder encontrá-la. Um exemplo raro onde a certeza da existência está separada da possibilidade do acesso.
+A contribuição de Zermelo não é uma estratégia para ganhar desde o início. Seu texto funda uma análise matemática do valor das posições; as formulações modernas separam a existência de um valor sob regras fixadas dos meios de calculá-lo.
 
-**Após a leitura:** guarde em mente uma **frase de humildade matemática** numa partida longa: você joga aproximações, não a verdade da tablebase; isso pode dissolver o perfeccionismo no momento errado.
+**Depois da leitura:** lembre uma **frase de humildade matemática** em partidas longas: muitas decisões são aproximações, distintas de uma solução verificada por base de finais. Isso pode ajudar a relativizar a exigência de perfeição.
 
 ---
 
-## O que guardar
+## Perguntas frequentes
 
-- Zermelo prova que em todo jogo finito de dois jogadores com informação perfeita, o resultado sob jogo perfeito está determinado de antemão
-- Para o xadrez, isso significa que ou Brancas ganham, ou Pretas ganham, ou a partida é nula sob jogo perfeito dos dois lados
-- Ninguém sabe ainda qual dessas três opções é verdadeira; a hipótese majoritária é o empate
-- A demonstração foi refinada por **König (1927) e Kalmár (1928)** para tratar rigorosamente a finitude
-- As **tablebases ≤ 7 peças** são a confirmação construtiva do teorema sobre um subconjunto acessível
-- Esse paradoxo revela que a "perfeição" no xadrez é um ideal matematicamente definido mas fisicamente inacessível
+### O teorema de Zermelo prova que as brancas ganham?
 
-### Fontes e referências
+Não. Prova que existe **uma** resposta entre três possíveis: vitória das brancas, vitória das pretas ou empate. Não diz qual. A posição inicial não está resolvida; uma avaliação de motor não prova seu valor.
 
-- **Zermelo, E.** *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels.* Proceedings of the Fifth International Congress of Mathematicians, Cambridge, 1913.
-- **Schwalbe, U., & Walker, P.** *Zermelo and the Early History of Game Theory.* Games and Economic Behavior, 34(1), 123-137, 2001.
-- **Schaeffer, J., et al.** *Checkers Is Solved.* Science, 317(5844), 1518-1522, 2007.
-- **Fraenkel, A. S., & Lichtenstein, D.** *Computing a Perfect Strategy for n×n Chess Requires Time Exponential in n.* Journal of Combinatorial Theory, Series A, 31(2), 199-214, 1981.
-- **Shannon, C. E.** *Programming a Computer for Playing Chess.* Philosophical Magazine, Series 7, 41(314), 1950.
+### Por que isso é chamado de paradoxo?
+
+Matematicamente, não é um paradoxo: é um resultado coerente. O “paradoxo” é **epistêmico**: sabemos que existe um valor sob as regras fixadas, mas o da posição inicial continua desconhecido. Isso não prova que nenhum método futuro possa determiná-lo. É uma separação clara entre *certeza da existência* e *possibilidade de acesso*.
+
+### As bases de finais contradizem Zermelo?
+
+Ao contrário, **confirmam** a determinação em um subconjunto do problema. Nas posições cobertas, o resultado é determinado segundo suas regras e métricas; exceções como direitos de roque precisam ser consideradas. São resultados calculados em um conjunto finito e acessível de posições.
+
+### Por que AlphaZero pode vencer Stockfish sem jogar perfeitamente?
+
+Nenhum demonstrou uma estratégia perfeita desde a posição inicial. Ambos associam busca e avaliação, com **arquiteturas diferentes** no match de 2017: Stockfish 8 usa alfa-beta e avaliação escrita à mão; AlphaZero associa rede aprendida e MCTS. Um resultado melhor no match não mede a distância até uma estratégia ótima desconhecida.
+
+### Essa verdade matemática poderá ser descoberta?
+
+A solução exaustiva ultrapassa os meios atuais. Isso não demonstra que nenhum método futuro possa resolver o jogo. Invocar Grover para trocar diretamente $10^{120}$ por $10^{60}$ é injustificado: uma árvore adversarial não é uma simples lista de soluções para buscar.
+
+## Fontes
+
+- Zermelo, E. (1913). *Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels*. Atas do quinto Congresso Internacional de Matemáticos, vol. II, 501–504. [Tradução no apêndice do texto de Schwalbe e Walker](https://studylib.net/doc/28166551/zermelo-work).
+- Schwalbe, U., & Walker, P. (1999, versão revista do documento de trabalho de 1997). *Zermelo and the Early History of Game Theory*. University of Mannheim / University of Canterbury. [Texto integral consultado](https://studylib.net/doc/28166551/zermelo-work): diferença entre prova original e apresentação moderna.
+- Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. Philosophical Magazine, 41, 256–275. [Artigo original](https://www.computerhistory.org/chess/doc-431614f453dde/).
+- De Man, R. (sem data). *Probetool*. GitHub. [Documentação das bases Syzygy](https://github.com/syzygy1/probetool): WDL, DTZ50 e exemplo de vitória amaldiçoada.
+- FIDE (2022). *Arbiters’ Manual*. [Manual e regras de empate](https://arbiters.fide.com/wp-content/uploads/Publications/Manual/ARBManual2022_1st_October.pdf).
+- Allis, V. (1988). *A Knowledge-based Approach of Connect-Four*. Vrije Universiteit Amsterdam. [Dissertação](https://tromp.github.io/c4/connect4_thesis.pdf): exemplo do Lig-4 citado no texto.
+
+- Schaeffer, J., et al. (2007). *Checkers Is Solved*. Science, 317, 1518–1522. [Artigo integral](https://www.cs.cornell.edu/courses/cs6700/2013sp/readings/06-b-Checkers-Solved-Science-2007.pdf).

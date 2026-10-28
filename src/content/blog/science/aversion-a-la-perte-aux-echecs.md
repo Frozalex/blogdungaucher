@@ -29,15 +29,16 @@ faq:
     answer: "Non. Cela peut aussi venir d'un calcul incomplet, d'une compensation insuffisante ou d'une préférence pratique. Les études citées ne diagnostiquent pas tes décisions échiquéennes."
   - question: "Comment travailler un sacrifice ?"
     answer: "Explique la compensation envisagée et cherche la meilleure défense. Aucun nombre fixe de trois éléments ne garantit que le sacrifice soit bon."
+heroImage:
+  src: /images/blog/aversion-a-la-perte-aux-echecs-hero.webp
+  alt: Deux mains, l’une perdant un caillou dans l’ombre, l’autre en recevant un.
+ogImage: /images/og/aversion-a-la-perte-aux-echecs-og.webp
+
 ---
 
-Position équilibrée, milieu de partie. Tu vois une idée : abandonner un pion pour ouvrir la colonne b et immobiliser son fou de cases blanches. L'évaluation dit que c'est bon. Ton intuition dit que c'est bon.
+L'aversion à la perte propose un cadre pour examiner des choix où les pertes et les gains ne sont pas évalués de manière symétrique. Aux échecs, son rapprochement avec le sacrifice matériel demande de distinguer la valeur de la position et la réticence à céder une ressource.
 
-Tu ne le joues pas.
-
-Tu joues le coup solide, tu gardes ton pion, et cinquante coups plus tard tu perds une finale légèrement inférieure.
-
-L'aversion à la perte est une hypothèse pour comprendre cette hésitation. Sans examiner ton calcul et la position, on ne peut pas conclure que c'est sa cause.
+Refuser d'abandonner un pion peut être justifié si la compensation est insuffisante. Pour discuter une éventuelle aversion à la perte, il faut donc établir les possibilités du sacrifice, le calcul effectué et les raisons du refus. L'hypothèse psychologique ne dispense pas de cette analyse technique.
 
 ## Ce que Kahneman et Tversky ont proposé
 

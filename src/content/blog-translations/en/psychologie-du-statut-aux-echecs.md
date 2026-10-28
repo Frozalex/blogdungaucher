@@ -45,6 +45,7 @@ faq:
       Because it's legitimate. Unlike an inherited or arbitrary hierarchy, it's earned, transparent and
       revisable, which rules out blaming it on injustice. A rank you can't contest points entirely back
       at you, and that's a burden of a different kind.
+heroImageAlt: A figure stepping away from a series of raised plinths.
 ---
 
 A club, on a Tuesday evening. Nobody's wearing a uniform, nobody has a job title on display, nobody knows who earns what.

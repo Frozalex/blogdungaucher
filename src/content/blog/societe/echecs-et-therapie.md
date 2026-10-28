@@ -1,9 +1,4 @@
 ---
-title: "Échecs comme thérapie : ce que la recherche dit sur le jeu et la santé mentale"
-excerpt: >-
-  Des prisons italiennes aux hôpitaux psychiatriques anglais, des programmes de réhabilitation américains aux centres de
-  traitement du PTSD : l'échiquier est utilisé comme outil thérapeutique dans des contextes variés. Ce que les études
-  disent réellement sur ces applications.
 publishDate: "2026-08-03"
 category: societe
 featured: false
@@ -20,182 +15,109 @@ tags:
   - anxiété
   - jeu thérapeutique
   - inclusion
-keyTakeaways:
-  - >-
-    Une étude randomisée contrôlée (Marín et al., 2017) sur des enfants mexicains montre que 20 séances de jeu d'échecs
-    réduisent significativement les symptômes d'anxiété (STAI-C) par rapport au groupe contrôle.
-  - >-
-    Les programmes d'échecs en milieu carcéral réduisent les incidents disciplinaires de 20-30% selon les rapports du
-    programme britannique 'Chess in Prisons' (2014-2019).
-  - >-
-    L'échiquier offre un espace de relation sociale structuré : particulièrement utile pour les personnes avec des
-    difficultés relationnelles (dépression, PTSD, TSA, schizophrénie).
-  - >-
-    La régulation émotionnelle par les échecs fonctionne via l'absorption cognitive : l'attention totale requise par la
-    position laisse peu de ressources pour les pensées intrusives.
-  - >-
-    Les études sur les échecs comme traitement de la dépression sont encore peu nombreuses et méthodologiquement
-    limitées : des essais contrôlés de plus grande envergure sont nécessaires.
-seoTitle: "Échecs comme thérapie : PTSD, dépression, anxiété : ce que la recherche dit"
-seoDescription: >-
-  Échecs et santé mentale : études sur l'anxiété, la dépression, le PTSD, la réhabilitation en prison. Ce que la
-  recherche dit sur l'échiquier comme outil thérapeutique.
 ogImage: /images/og/echecs-et-therapie-og.webp
 heroImage:
   src: /images/blog/echecs-et-therapie-hero.webp
-  alt: >-
-    Une pelote de fil emmêlée d'où sort un unique brin parfaitement tendu et droit.
-faq:
-  - question: Les échecs peuvent-ils traiter la dépression ?
-    answer: >-
-      Les données sont prometteuses mais préliminaires. Les mécanismes théoriques sont solides : les échecs offrent des
-      objectifs clairs, un sentiment de compétence et de maîtrise, et une absorption cognitive qui peut interrompre les
-      ruminations dépressives. Des études de cas et quelques études pilotes montrent des bénéfices. Mais les essais
-      randomisés contrôlés de grande envergure manquent encore. Les échecs peuvent être un complément utile au
-      traitement de la dépression, pas un remplacement des thérapies validées.
-  - question: Les échecs sont-ils utilisés en thérapie PTSD ?
-    answer: >-
-      Dans certains programmes, oui, notamment aux États-Unis pour les vétérans militaires. Le mécanisme principal est
-      l'absorption cognitive : une partie exigeante occupe suffisamment l'attention pour réduire les ruminations et les
-      intrusions de pensées traumatiques. Des centres de l'armée américaine (VA) ont intégré les échecs dans leurs
-      programmes d'activités thérapeutiques. La recherche rigoureuse sur cette application spécifique est encore
-      limitée.
-  - question: Comment les échecs sont-ils utilisés en psychiatrie ?
-    answer: >-
-      Historiquement, les échecs ont été intégrés dans les hôpitaux psychiatriques depuis le 18e siècle : les aliénistes
-      les prescrivaient pour occuper et structurer le temps des patients. Dans la psychiatrie moderne, ils sont utilisés
-      principalement comme outil de socialisation et d'évaluation cognitive (planification, flexibilité) dans les
-      services d'admission, pas comme traitement principal.
-  - question: Les échecs aident-ils les enfants en difficulté émotionnelle ?
-    answer: >-
-      Oui, selon plusieurs études. L'étude Marín et al. (2017, Mexique) montre une réduction des symptômes d'anxiété
-      chez des enfants de 8-12 ans après 20 séances. Les mécanismes : les règles claires de l'échiquier sont rassurantes
-      pour des enfants en insécurité, le sentiment de compétence progresse rapidement, et la relation avec l'adulte qui
-      enseigne est structurée et prévisible.
-  - question: Peut-on utiliser les échecs dans sa propre thérapie sans programme formel ?
-    answer: >-
-      Oui, comme complément. Les bénéfices les plus documentés (absorption cognitive, sentiment de compétence, connexion
-      sociale) sont accessibles dans n'importe quel contexte de jeu. L'idéal est de jouer avec d'autres personnes
-      (contre un entraîneur, en club, en ligne avec un partenaire régulier) plutôt que seul contre ordinateur. La
-      dimension relationnelle amplifie les bénéfices thérapeutiques.
+  alt: Une pelote de fil emmêlée d'où sort un unique brin parfaitement tendu et
+    droit.
+title: "Échecs et santé mentale : activité de soutien ou traitement ?"
+excerpt: "Le jeu peut offrir un rendez-vous, un apprentissage et une rencontre. Distinguer ces usages d’un traitement de l’anxiété, de la dépression ou du stress post-traumatique exige des preuves adaptées."
+seoTitle: "Échecs et santé mentale : usages, études et limites"
+seoDescription: "Échecs, loisirs et santé mentale : ce qu’une étude clinique et des programmes documentent, sans promettre de traiter anxiété, dépression ou traumatisme."
+keyTakeaways: ["Un atelier apprécié ou une amélioration à un test ne démontre pas le traitement d’un trouble psychique.", "Demily et al. (2009) étudient la cognition chez 26 patients vivant avec une schizophrénie, sous traitement ; ce n’est pas un essai sur la dépression ou le PTSD.", "Un programme en prison atteste un usage du jeu, sans établir une baisse chiffrée des incidents ou de la récidive.", "L’intérêt et le ressenti de la personne comptent ; aucun mécanisme anti-rumination automatique n’est démontré ici.", "Les soins se choisissent avec un professionnel ; les échecs peuvent rester un loisir sans promesse thérapeutique."]
+faq: [{"question": "Les échecs peuvent-ils traiter la dépression ?", "answer": "Les sources présentées ne démontrent pas qu’un programme d’échecs traite la dépression. Apprécier une partie ou retrouver une activité ne revient pas à établir un effet clinique. Les recommandations NICE décrivent des prises en charge adaptées, à discuter avec un professionnel."}, {"question": "Les échecs soignent-ils le stress post-traumatique ?", "answer": "Aucune efficacité propre aux échecs n’est établie ici pour le PTSD. Le National Center for PTSD présente notamment l’exposition prolongée, la thérapie de traitement cognitif et l’EMDR comme psychothérapies soutenues par les recommandations VA/DoD."}, {"question": "Une étude en psychiatrie existe-t-elle réellement ?", "answer": "Oui. Demily et ses collègues publient en 2009 une petite étude ouverte, non aveugle, sur des tests cognitifs chez des patients stables vivant avec une schizophrénie. Elle ne permet pas de généraliser à tous les troubles ni de retirer un traitement."}, {"question": "Une partie interrompt-elle forcément les ruminations ?", "answer": "Non. L’absorption peut décrire ton ressenti, mais elle ne prouve pas que toute pensée intrusive disparaît. Tu peux aussi rester préoccupé pendant une partie. Observe ce qui te convient sans transformer l’exercice en obligation."}, {"question": "Comment proposer le jeu sans promesse de soin ?", "answer": "Demande si la personne souhaite jouer, adapte la difficulté et laisse la possibilité de refuser ou d’arrêter. Vous pouvez choisir un objectif de loisir ou de rencontre, distinct d’un objectif clinique qui relève d’un cadre professionnel."}]
 ---
 
-En 1795, le médecin [Philippe Pinel](https://fr.wikipedia.org/wiki/Philippe_Pinel), réformateur de la psychiatrie à Paris, recommandait les échecs aux patients de la Salpêtrière comme activité structurante et stimulante. Deux siècles plus tard, des psychiatres et des éducateurs sur quatre continents utilisent l'échiquier dans des contextes thérapeutiques très différents : prisons, hôpitaux, centres pour réfugiés, programmes pour anciens combattants.
+Une partie peut être un rendez-vous attendu dans une semaine difficile. Elle peut aussi devenir une source de pression. Entre « j’ai passé un bon moment » et « ce jeu traite un trouble psychique », il existe une différence que le mot thérapie ne doit pas effacer.
 
-L'intuition est ancienne. Mais qu'est-ce que la recherche contemporaine dit réellement sur les mécanismes et les effets mesurables ?
+L’échiquier peut servir de support à une rencontre ou à un atelier. Pour juger un bénéfice de santé, il faut préciser la population, l’intervention, la comparaison et le résultat mesuré. Le plaisir de jouer a une valeur personnelle ; il n’a pas besoin de devenir une preuve médicale.
 
-## Une histoire longue comme la psychiatrie
+## Un atelier n’est pas automatiquement un traitement
 
-L'utilisation des échecs dans les soins psychiatriques est aussi vieille que la psychiatrie elle-même. Les asiles du 18e siècle les utilisaient pour "occuper utilement" les patients et prévenir l'oisiveté : considérée comme aggravante pour la santé mentale.
+Un animateur peut enseigner les règles, organiser un groupe ou proposer une activité dans un établissement. Un professionnel de santé peut intégrer des activités dans un accompagnement. Ces situations ne sont pas interchangeables, et la présence d’un échiquier dans un lieu de soins ne valide pas, à elle seule, une « thérapie par les échecs ».
 
-[Benjamin Rush](https://fr.wikipedia.org/wiki/Benjamin_Rush), père de la psychiatrie américaine, recommandait les jeux d'habileté (dont les échecs) comme "exercices moraux" pour les personnes en souffrance psychologique. [Samuel Tuke](https://en.wikipedia.org/wiki/Samuel_Tuke), fondateur du York Retreat en Angleterre (1796), intégrait systématiquement des activités structurées, dont les jeux de stratégie, dans sa "thérapie morale".
+Avant de présenter un programme, demande ce qu’il vise : occuper un moment choisi, créer un contact, travailler une tâche précise ou réduire des symptômes ? Une mesure de participation ne répond pas à la même question qu’une évolution clinique. Une histoire ancienne ou le nom d’un médecin célèbre ne remplace pas cette distinction.
 
-Plus récemment, dans les années 1970-1980, des thérapeutes psychanalytiques ont utilisé les échecs comme "outil projectif" : la façon dont un patient joue (impulsif, paranoïaque, abandonniste) révélant des dynamiques inconscientes. Cette approche, plus clinique qu'éducative, reste en usage dans certaines écoles psychodynamiques.
+## Des raisons d’essayer, pas des mécanismes garantis
 
-## Les mécanismes thérapeutiques : ce qui est plausible
+### Être absorbé sans promettre la fin des ruminations
 
-Avant de regarder les données, il est utile de comprendre les mécanismes par lesquels les échecs pourraient avoir des effets thérapeutiques. Plusieurs sont théoriquement solides :
+Tu peux te sentir engagé dans une position et penser moins à autre chose pendant un moment. Tu peux aussi continuer à ruminer en regardant le plateau. L’idée que les deux seraient cognitivement incompatibles n’est pas établie ici. Le jeu ne garantit ni l’arrêt des pensées intrusives ni une régulation du traumatisme.
 
-### L'absorption cognitive et l'interruption des ruminations
+Pour décrire l’expérience, garde des observations simples : avais-tu envie de poursuivre ? Le temps passé était-il agréable ? Te sentais-tu davantage tendu ensuite ? Ces questions ne constituent ni un test diagnostique ni une mesure d’activité cérébrale.
 
-La rumination : rejouer mentalement des événements négatifs, imaginer des scénarios catastrophiques : est un mécanisme central dans la dépression et l'anxiété. Elle consomme des ressources cognitives et perpétue la souffrance.
+### Apprendre quelque chose à son rythme
 
-Une partie d'échecs exigeante est l'une des activités qui requiert le plus d'absorption cognitive : analyser une position complexe ne laisse que peu de ressources disponibles pour ruminer. C'est un mécanisme d'**interruption cognitive** similaire à certaines techniques de pleine conscience : non pas en vidant l'esprit, mais en le remplissant d'une tâche bien définie.
+Ryan et Deci (2000) présentent l’autonomie, la compétence et le lien social dans leur théorie de l’autodétermination. Ce cadre général n’est pas une démonstration d’efficacité clinique des échecs.
 
-### Le sentiment de compétence et de maîtrise
+Dans un atelier, tu peux t’en inspirer pour proposer des choix : résoudre un petit problème, jouer une finale ou simplement regarder. Un Elo qui monte n’est pas une mesure de santé mentale. Un exercice raté n’est pas non plus un échec du soin ou de la personne.
 
-La [théorie de l'autodétermination](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_l%27auto-d%C3%A9termination) (Deci & Ryan, 1985) identifie le **sentiment de compétence** comme l'un des trois besoins psychologiques fondamentaux. Les personnes en dépression ont souvent une faible perception de leur efficacité : elles ont l'impression de ne pas contrôler leur vie.
+### Un cadre prévisible, à adapter
 
-Les échecs offrent une progression visible et objective. Résoudre un problème tactique que tu n'aurais pas résolu il y a deux semaines est une preuve concrète de compétence. Améliorer son classement Elo est un indicateur de progrès difficile à nier. Ces "victoires" objectivables peuvent progressivement reconstruire le sentiment d'efficacité.
+Les règles donnent des repères communs, mais les conditions de pratique comptent aussi : bruit, rythme, fatigue, accessibilité et relation avec l’intervenant. Un cadre très compétitif peut ne pas correspondre à ce que recherche un participant. La possibilité de changer de format mérite sa place.
 
-### La structure et la prévisibilité
+### Une rencontre qui laisse le choix
 
-Pour des personnes vivant dans un environnement chaotique ou imprévisible (prison, camp de réfugiés, contexte de violence domestique), l'échiquier offre un espace où les règles sont absolues et équitables. Le Cavalier saute toujours en L. Le résultat de la partie dépend des coups, pas de facteurs externes. Cette prévisibilité peut être profondément rassurante.
+Jouer à deux peut offrir un sujet partagé sans obliger à raconter sa vie. Cela reste une proposition, pas la preuve d’un bénéfice particulier pour toute personne ayant un diagnostic donné. Certains préfèrent observer, jouer en coopération ou choisir une autre activité. Le refus doit pouvoir être entendu.
 
-### La connexion sociale structurée
+![Choix, apprentissage et rencontre : des pistes pour proposer une activité, sans mécanisme clinique démontré.](/images/echecs-therapie-01-mecanismes.svg)
 
-De nombreuses personnes en difficulté psychologique ont des relations sociales appauvries : soit par retrait volontaire, soit par difficultés relationnelles. L'échiquier offre un format de rencontre sociale avec un **niveau de structure élevé** : on sait exactement ce qu'on est censé faire (jouer), le niveau d'intimité verbale requis est minimal, et le jeu lui-même fournit un langage commun.
+## Une étude clinique réelle, avec une portée limitée
 
-Cette structure peut être particulièrement utile pour des personnes avec de l'anxiété sociale, de la schizophrénie en phase stable, ou des séquelles de traumatisme qui rendent les interactions informelles difficiles.
+Demily et ses collègues (2009) répartissent 26 patients stables sous traitement, vivant avec une schizophrénie, entre pratique des échecs et soins habituels. L’étude est ouverte et non aveugle ; elle examine des tests cognitifs. Les résultats varient selon le test, sans différence significative intergroupe au Trail Making Test.
 
-![Les quatre mécanismes thérapeutiques des échecs : absorption cognitive, sentiment de compétence, structure et prévisibilité, connexion sociale structurée.](/images/echecs-therapie-01-mecanismes.svg)
+Une recherche de ce type mérite d’être distinguée d’une promesse de guérison. Améliorer une mesure cognitive ne démontre pas automatiquement une réduction des symptômes, une meilleure vie quotidienne ou un effet durable. Le résultat ne se transpose pas à l’anxiété de l’enfant, à la dépression ou au PTSD sans études appropriées.
 
-## Les données sur l'anxiété : l'étude Marín
+Le nombre de séances d’un protocole décrit ce qui a été testé. Il ne devient pas une dose universelle à appliquer en club ou à la maison. Une comparaison avec les soins habituels ne permet pas non plus d’isoler chaque contribution du jeu, du contact social et de l’encadrement.
 
-L'étude la plus rigoureuse sur les effets des échecs sur l'anxiété chez les enfants est celle de [Marín et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28282259/) publiée dans le *Journal of Educational Psychology*.
+![Demily et al. (2009) : 26 patients stables sous traitement, vivant avec une schizophrénie ; tests cognitifs dans une étude ouverte non aveugle, sans preuve de guérison ni généralisation à l’anxiété ou au PTSD.](/images/echecs-therapie-02-marin-anxiete.svg)
 
-**Méthodologie :** 170 enfants mexicains de 8-12 ans, assignés aléatoirement à un groupe d'intervention (20 séances d'échecs, 1h/semaine) ou à un groupe contrôle (activités habituelles). Mesure de l'anxiété par le STAI-C (State-Trait Anxiety Inventory for Children) avant et après.
+## L’anxiété de l’enfant : ne pas transformer un atelier en prescription
 
-**Résultats :** le groupe échecs montre une réduction significative de l'anxiété-état et de l'anxiété-trait par rapport au groupe contrôle. L'effet est modéré mais robuste à l'analyse statistique.
+Les sources retenues ici ne permettent pas d’annoncer qu’une série de vingt séances traite l’anxiété d’enfants de huit à douze ans. Observer un enfant plus à l’aise dans un club est intéressant, mais cela ne suffit pas à mesurer une amélioration clinique ni à identifier sa cause.
 
-**Mécanisme suggéré par les auteurs :** les échecs offrent un environnement d'apprentissage avec erreurs valorisées (chaque défaite est analysée), ce qui réduit la peur de l'échec : un composant central de l'anxiété chez les enfants.
+Si tu accompagnes un jeune joueur, demande ce qu’il aime et ce qui lui pèse. Tu peux adapter les horaires, supprimer le classement de la séance ou proposer de regarder une partie ensemble. Ce sont des options éducatives à discuter, pas un traitement de trouble anxieux validé par cet article.
 
-Cette étude ne dit pas que les échecs traitent l'anxiété au sens clinique : elle dit qu'un programme structuré d'échecs réduit le niveau d'anxiété trait chez des enfants en population générale.
+## En prison : documenter le programme et son évaluation séparément
 
-![Résultats de l'étude Marín 2017 : après 20 séances d'échecs, le groupe intervention réduit significativement son score d'anxiété STAI-C tandis que le groupe contrôle reste stable.](/images/echecs-therapie-02-marin-anxiete.svg)
+L’organisme britannique Chess in Schools and Communities décrit un programme d’échecs en prison sur son site. Cela permet d’établir qu’une telle activité est organisée. La page ne fournit pas un essai contrôlé démontrant une baisse de 20 à 30 % des incidents disciplinaires.
 
-## Les programmes de prison : des résultats encourageants
+Pour lire une évaluation, regarde quels incidents sont comptés, sur quelle période, avec quelle population de comparaison et quelles autres évolutions de l’établissement. Participation volontaire, transfert de détenus ou changement d’encadrement peuvent modifier ce que les données représentent. Une baisse de récidive observée dans l’éducation carcérale en général ne peut pas être attribuée automatiquement aux échecs.
 
-L'utilisation des échecs en milieu carcéral est l'une des applications thérapeutiques les mieux documentées en pratique, même si la recherche rigoureuse est encore limitée.
+Le témoignage d’un participant peut éclairer ce qu’il a apprécié. Il ne permet pas, seul, de calculer l’efficacité moyenne d’un programme. Il faut aussi pouvoir entendre les personnes qui ont arrêté ou n’ont pas souhaité participer.
 
-### Le programme britannique "Chess in Prisons"
+## Dépression et stress post-traumatique : garder la distinction avec les soins
 
-Le programme [Chess in Prisons](https://www.chessforchange.co.uk/chess-in-prisons) (UK), lancé en 2014 et documenté par des rapports annuels jusqu'en 2019, a été mis en place dans plusieurs établissements pénitentiaires anglais. Les données rapportées incluent :
+Les recommandations NICE sur la dépression décrivent plusieurs options de prise en charge selon la situation. Une activité de loisir choisie n’équivaut pas à une activation comportementale structurée ni à une psychothérapie.
 
-- Réduction de 20-30% des incidents disciplinaires dans les ailes participantes
-- Amélioration du comportement en détention rapportée par les surveillants
-- Maintien de l'engagement dans le programme par les détenus sur la durée (faible abandon)
+Pour le PTSD, le National Center for PTSD présente notamment l’exposition prolongée, la thérapie de traitement cognitif et l’EMDR parmi les approches recommandées par le VA/DoD. Un atelier d’échecs ne devient pas l’une de ces interventions parce qu’il mobilise l’attention. Les sources consultées ne justifient pas une prescription d’échecs contre les intrusions traumatiques.
 
-Le programme note également des effets non mesurés directement mais observés : amélioration des relations entre détenus (les parties créent des occasions de rencontre respectueuses), meilleure gestion de la frustration, développement du respect des règles.
+Si tu es déjà accompagné, tu peux parler de la place que le jeu prend dans ta semaine : envie, pression, sommeil ou isolement. Cette discussion permet de décrire ta situation sans demander au classement de mesurer ton état. Un intervenant échiquéen ne décide pas de modifier un traitement.
 
-### L'expérience française
+![Un atelier choisi et un suivi de santé ont des objectifs différents ; le jeu ne remplace pas un traitement adapté.](/images/echecs-therapie-03-limites-complement.svg)
 
-En France, des associations comme [Echecs et Mat](https://echecs-et-mat.fr) interviennent dans certains établissements pénitentiaires. Les témoignages des intervenants convergent : les échecs créent un espace de relation horizontale (détenus d'unités différentes qui jouent ensemble), réduisent les tensions, et offrent aux détenus un domaine d'excellence qui ne dépend pas de leur passé.
+## Proposer une activité sans ajouter une obligation de performance
 
-Un point soulevé par plusieurs intervenants : l'échiquier est particulièrement efficace dans les établissements à longue durée, où l'ennui chronique est un facteur majeur d'incidents. Les parties longues et l'entraînement structuré occupent le temps de façon productive.
+Commence par un accord concret : quel format, quelle durée disponible et quelle possibilité d’arrêter ? Une séance peut consister à apprendre un motif ou à échanger autour d’une position, sans noter de résultat. L’objectif de loisir doit rester compréhensible par la personne.
 
-### L'expérience américaine pour les vétérans
+Après la séance, demande ce qui lui a convenu. Évite d’interpréter un abandon, une défaite ou un style de jeu comme la révélation d’une personnalité. Si la pratique augmente la détresse ou prend une place que la personne ne souhaite plus, le format mérite d’être revu avec elle et, dans un cadre de soins, avec l’équipe concernée.
 
-Plusieurs centres VA (Veterans Affairs) aux États-Unis ont intégré les échecs dans leurs programmes d'activités thérapeutiques pour anciens combattants, notamment ceux traités pour PTSD ou dépression liée au combat.
+## La recherche nécessaire avant une promesse thérapeutique
 
-Les rapports informels signalent des bénéfices similaires à ceux observés en prison : engagement dans une activité structurée, connexion sociale non verbale, sentiment d'accomplissement. Les échecs ne traitent pas le PTSD, mais peuvent être un complément aux thérapies validées (EMDR, thérapie cognitive prolongée) en offrant un espace de récupération et de connexion.
+Une étude utile doit définir son objectif avant de compter les résultats : symptômes, fonctionnement quotidien, expérience vécue ou performance à une tâche ? Elle doit préciser les comparaisons, les abandons, les effets indésirables et le suivi. Un groupe recevant une autre activité accompagnée aide à examiner ce qui est spécifique au jeu.
 
-## Ce que les échecs ne peuvent pas faire
-
-Une note de prudence importante : les bénéfices documentés des échecs en contexte thérapeutique sont réels mais limités.
-
-**Les échecs ne remplacent pas les traitements validés.** Pour la dépression clinique, l'anxiété généralisée, le PTSD, ou tout autre trouble psychiatrique, les traitements de première ligne (thérapies cognitivo-comportementales, médicaments sur prescription médicale) restent incontournables. Les échecs peuvent être un complément, jamais un remplacement.
-
-**Le contexte compte autant que le jeu.** Les bénéfices observés dans les programmes de prison ou les centres de soin ne viennent pas seulement du jeu : ils viennent aussi de l'encadrement, de la relation avec l'intervenant, et de la structure de groupe. Un détenus jouant seul contre un ordinateur dans sa cellule ne bénéficiera pas des mêmes effets.
-
-**Les profils à risque doivent être identifiés.** Pour des personnes avec une forte anxiété de performance, les tournois et la compétition peuvent aggraver la souffrance. L'introduction des échecs en contexte thérapeutique doit être accompagnée d'une vigilance sur la relation au résultat et à la défaite.
-
-![Les échecs en thérapie : bénéfices documentés à gauche (absorption cognitive, compétence, lien social, prison), ce qu'ils ne remplacent pas à droite (TCC, EMDR, médicaments). Complément, jamais substitut.](/images/echecs-therapie-03-limites-complement.svg)
-
-## L'avenir : la recherche à faire
-
-La littérature sur les échecs et la santé mentale est encore majoritairement faite d'études de cas, de rapports de programmes, et d'études pilotes avec des échantillons limités.
-
-Ce qui manque :
-- Des essais randomisés contrôlés sur des populations cliniques (dépression caractérisée, PTSD, schizophrénie stable)
-- Des études avec suivi à long terme (6 mois, 1 an après la fin du programme)
-- Des études démêlant l'effet spécifique des échecs de l'effet de l'encadrement social
-
-Des équipes en Italie, en Espagne et aux États-Unis ont des protocoles en cours. Dans 5-10 ans, nous aurons probablement une image beaucoup plus précise de ce que les échecs peuvent et ne peuvent pas faire en contexte thérapeutique.
-
-En attendant, la pratique en avance sur la recherche, comme c'est souvent le cas dans les thérapies complémentaires.
+Il n’est pas nécessaire d’annoncer une date à laquelle toutes les réponses arriveront. La conclusion actuelle de cet article est plus limitée : des usages existent et des questions sont étudiées. Cela ne permet pas de présenter les échecs comme traitement démontré des troubles abordés. Tu peux apprécier ce loisir, partager une partie et chercher des soins adaptés sans lui attribuer une mission qu’il n’a pas prouvée.
 
 ## Sources
 
-- Marín, M. D., Nuñez, J. L., García-Mas, A., & Morales-Sánchez, V. (2017). Effects of chess instruction on academic and cognitive outcomes in school-age children : A systematic review. *Journal of Educational Psychology Research*, 2017.
-- Deci, E. L., & Ryan, R. M. (1985). *Intrinsic Motivation and Self-Determination in Human Behavior*. Plenum Press.
-- Chess in Prisons UK. (2019). *Annual Report 2018-2019*. Chess for Change Foundation.
-- Pinel, P. (1801). *Traité médico-philosophique sur l'aliénation mentale*. Brosson.
-- Ruiz, J. D. (2011). Chess as an educational tool for violent youth offenders in Spanish prisons. *Physical Culture and Sport. Studies and Research*, 52, 71–79.
-- Gobet, F., & Campitelli, G. (2002). Intelligence and chess. In J. Retschitzki & R. Haddad-Zubel (Eds.), *Step by Step : Proceedings of the 4th Colloquium on Board Games in Education* (pp. 103–112).
+- Demily, C., Cavézian, C., Desmurget, M., Berquand-Merle, M., Chambon, V. et Franck, N. (2009). *The game of chess enhances cognitive abilities in schizophrenia*. Schizophrenia Research, 107(1), 112–113. [Notice](https://pubmed.ncbi.nlm.nih.gov/18995990/) et [texte des auteurs consulté](https://www.researchgate.net/publication/23460530_The_game_of_chess_enhances_cognitive_abilities_in_schizophrenia), DOI : 10.1016/j.schres.2008.09.024.
+- Ryan, R. M. et Deci, E. L. (2000). *Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being*. American Psychologist, 55(1), 68–78. [Texte des auteurs](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf).
+- Chess in Schools and Communities (s. d.). *Prisons*. [Présentation du programme](https://www.chessinschools.co.uk/join-our-prison-programme).
+- NICE (2022). *Depression in adults: treatment and management*, NG222. [Recommandations](https://www.nice.org.uk/guidance/ng222/chapter/Recommendations).
+- National Center for PTSD (s. d.). *Overview of Psychotherapy for PTSD*, présentation des recommandations VA/DoD de 2023. [Texte officiel](https://www.ptsd.va.gov/professional/treat/txessentials/overview_therapy.asp).
 
 ## Pour aller plus loin
 
-- [Les échecs en prison : quand l'échiquier devient un outil de réhabilitation](/fr/blog/echecs-en-prison/)
-- [Échecs et autisme : pourquoi l'échiquier devient un refuge](/fr/blog/echecs-et-autisme/)
-- [Échecs et TDAH : pourquoi l'échiquier capte l'attention là où tout le reste échoue](/fr/blog/echecs-et-tdah/)
+- [Les échecs en prison](/fr/blog/echecs-en-prison/)
+- [Échecs et autisme](/fr/blog/echecs-et-autisme/)
+- [Échecs et TDAH](/fr/blog/echecs-et-tdah/)

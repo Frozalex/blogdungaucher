@@ -38,6 +38,8 @@ faq:
       Omdat extinctie de oorspronkelijke associatie niet wist: ze installeert er een nieuwe die haar bedekt.
       De fenomenen van spontaan herstel en contextgebonden hernieuwing zijn goed gedocumenteerd. Daarom kan
       een online geoefende angst opnieuw verschijnen in een toernooizaal.
+heroImageAlt: Een belletje werpt de schaduw van een gesloten hand.
+
 ---
 
 Je tegenstander speelt de zet die naar deze structuur leidt. Je kent haar. Je hebt haar geanalyseerd. Je hebt met de engine gecontroleerd dat ze perfect speelbaar is, en zelfs licht in je voordeel.

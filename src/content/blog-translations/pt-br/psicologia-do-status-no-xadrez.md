@@ -46,6 +46,7 @@ faq:
       Porque ele é legítimo. Ao contrário de uma hierarquia herdada ou arbitrária, ele é merecido,
       transparente e revisável, o que impede atribuí-lo à injustiça. Uma posição que não dá para
       contestar remete inteiramente a você, e isso é uma carga de outro tipo.
+heroImageAlt: Uma figura se afasta de uma sequência de pedestais elevados.
 ---
 
 Um clube, numa terça à noite. Ninguém usa uniforme, ninguém tem cargo profissional estampado, ninguém sabe quem ganha quanto.

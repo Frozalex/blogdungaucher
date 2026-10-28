@@ -76,9 +76,10 @@ export const GET: APIRoute = async () => {
     ]),
   );
 
-  function lastmodFor(frPath: string): string {
+  function lastmodFor(frPath: string): string | undefined {
     const post = posts.find((p) => getPostUrl(p) === frPath);
-    const date = post ? (post.data.updatedDate ?? post.data.publishDate) : (extraDates.get(frPath) ?? buildTime);
+    const date = post ? (post.data.updatedDate ?? post.data.publishDate) : extraDates.get(frPath);
+    if (!date) return undefined;
     if (date > buildTime) {
       throw new Error(
         `sitemap: lastmod futur (${date.toISOString()}) pour ${frPath} — vérifier updatedDate/publishDate.`,
@@ -178,7 +179,7 @@ export const GET: APIRoute = async () => {
     return `
       <url>
         <loc>${loc}</loc>
-        <lastmod>${lastmod}</lastmod>
+        ${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}
         ${alternates}
       </url>`;
   });
@@ -232,7 +233,7 @@ export const GET: APIRoute = async () => {
     return `
       <url>
         <loc>${enHref}</loc>
-        <lastmod>${lastmod}</lastmod>
+        ${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}
         <xhtml:link rel="alternate" hreflang="fr" href="${frHref}"/>
         <xhtml:link rel="alternate" hreflang="en" href="${enHref}"/>${ptBrPart}${nlEnPart}
         <xhtml:link rel="alternate" hreflang="x-default" href="${frHref}"/>
@@ -274,7 +275,7 @@ export const GET: APIRoute = async () => {
       nlEntries.push(`
       <url>
         <loc>${nlHref}</loc>
-        <lastmod>${lastmod}</lastmod>
+        ${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}
         <xhtml:link rel="alternate" hreflang="fr" href="${frHref}"/>${enPart}
         <xhtml:link rel="alternate" hreflang="nl" href="${nlHref}"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="${frHref}"/>
@@ -317,7 +318,7 @@ export const GET: APIRoute = async () => {
       ptBrEntries.push(`
       <url>
         <loc>${ptBrHref}</loc>
-        <lastmod>${lastmod}</lastmod>
+        ${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}
         <xhtml:link rel="alternate" hreflang="fr" href="${frHref}"/>${enPart}
         <xhtml:link rel="alternate" hreflang="pt-BR" href="${ptBrHref}"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="${frHref}"/>

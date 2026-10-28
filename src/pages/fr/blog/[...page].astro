@@ -1,19 +1,17 @@
-﻿---
+---
+import EditorialArchivePage from "../../../components/EditorialArchivePage.astro";
 import type { GetStaticPathsOptions, Page } from "astro";
 import type { BlogEntry } from "../../../utils/blog";
 
-import AdBanner from "../../../components/AdBanner.astro";
-import ArticleCard from "../../../components/ArticleCard.astro";
-import BaseLayout from "../../../layouts/BaseLayout.astro";
-import Pagination from "../../../components/Pagination.astro";
 
-import { categoryMap, categorySlugs } from "../../../data/site";
+import "../../../styles/editorial-resources.css";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
 import {
   buildBreadcrumbJsonLd,
   buildWebsiteJsonLd,
   getAllPosts,
   getBlogIndexPagePath,
-  getPostHeroSrc,
 } from "../../../utils/blog";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
@@ -24,210 +22,15 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 const { page } = Astro.props as { page: Page<BlogEntry> };
 const isFirstPage = page.currentPage === 1;
 
-// Gabarits clonés par le filtre client pour rendre les articles des autres pages
-// (voir src/scripts/blog-filter.ts). Rendus par ArticleCard pour hériter du CSS scopé.
-const allPosts = await getAllPosts();
-const heroTemplatePost = allPosts.find((p) => getPostHeroSrc(p));
-const plainTemplatePost = allPosts.find((p) => !getPostHeroSrc(p));
-
-const MAX_PAGINATION_LINKS = 7;
-function buildPageLinks(current: number, total: number) {
-  if (total <= MAX_PAGINATION_LINKS) {
-    return Array.from({ length: total }, (_, index) => index + 1);
-  }
-
-  const pages = new Set<number>([1, total, current, current - 1, current + 1]);
-  if (current <= 3) [2, 3, 4].forEach((n) => pages.add(n));
-  if (current >= total - 2) [total - 1, total - 2, total - 3].forEach((n) => pages.add(n));
-
-  return [...pages]
-    .filter((n) => n >= 1 && n <= total)
-    .sort((a, b) => a - b);
-}
-
-const paginationPages = buildPageLinks(page.currentPage, page.lastPage);
-
-const prevPageHref =
-  page.currentPage > 1
-    ? getBlogIndexPagePath("fr", page.currentPage - 1)
-    : undefined;
-const nextPageHref =
-  page.currentPage < page.lastPage
-    ? getBlogIndexPagePath("fr", page.currentPage + 1)
-    : undefined;
-
 const structuredData = isFirstPage
   ? [buildWebsiteJsonLd(), buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: "Articles", path: "/fr/blog/" }])]
   : undefined;
 ---
 <BaseLayout
-  title={isFirstPage ? "Tous les articles | Blog d'un Gaucher" : `Articles - page ${page.currentPage} | Blog d'un Gaucher`}
-  description="Tous les articles sur les échecs : cerveau, mémoire, Elo, burnout, Grand Oral, IA, société. Plus de 80 analyses approfondies pour joueurs curieux."
-  canonicalPath={isFirstPage ? "/fr/blog/" : `/fr/blog/${page.currentPage}/`}
-  noindex={!isFirstPage}
-  structuredData={structuredData}
-  prevHref={prevPageHref}
-  nextHref={nextPageHref}
+  title={isFirstPage ? "Tous les articles | Blog d’un Gaucher" : `Articles · page ${page.currentPage} | Blog d’un Gaucher`}
+  description="Tous les articles du Gaucher sur les échecs : science, psychologie, société et Grand oral."
+  canonicalPath={getBlogIndexPagePath("fr",page.currentPage)}
+  noindex={!isFirstPage} structuredData={structuredData} prevHref={page.currentPage>1?getBlogIndexPagePath("fr",page.currentPage-1):undefined} nextHref={page.currentPage<page.lastPage?getBlogIndexPagePath("fr",page.currentPage+1):undefined}
 >
-  <section class="page-hero">
-    <div class="container">
-      <span class="eyebrow reveal" data-t="blog.eyebrow">Bibliothèque</span>
-      <h1 class="reveal" data-t="blog.title">Tous les articles</h1>
-      <p class="page-lead reveal" data-t="blog.lead">
-        Science du jeu, esprit compétitif, échecs et société, analyses personnelles.
-      </p>
-      <div class="chips reveal" id="category-chips">
-        <button class="chip is-active" type="button" data-filter-category="all" data-t="blog.filterAll">
-          Tout
-        </button>
-        {categorySlugs.map((slug) => (
-          <button type="button" class="chip" data-filter-category={slug} style={`--c:${categoryMap[slug].accent}`} data-t={`categories.${slug}.label`}>
-            {categoryMap[slug].label}
-          </button>
-        ))}
-      </div>
-      <form class="search-wrap reveal" action="/fr/recherche/" method="get" role="search">
-        <label for="blog-search" class="search-label" data-t="blog.searchLabel">Rechercher un article</label>
-        <input id="blog-search" class="search-input" type="search" name="q" placeholder="Titre, extrait ou étiquette…" data-t-placeholder="blog.searchPlaceholder" autocomplete="off" />
-      </form>
-    </div>
-  </section>
-
-  <div class="container">
-    <AdBanner format="leaderboard" />
-  </div>
-
-  <section class="listing">
-    <div class="container">
-      <p id="filter-count" class="filter-count" hidden aria-live="polite" data-count-template="{count} articles dans cette rubrique"></p>
-
-      <div class="post-grid reveal-group" id="post-grid" data-blog-index="/blog-index/fr.json">
-        {page.data.map((post, i) => (
-          <article
-            class="post-item"
-            data-category={post.data.category}
-          >
-            <ArticleCard post={post} eager={i < 3} />
-          </article>
-        ))}
-      </div>
-      <p id="listing-empty" class="listing-empty" hidden data-t="blog.noResults">
-        Aucun article ne correspond à ce filtre.
-      </p>
-
-      <div id="listing-pagination">
-        <Pagination
-          currentPage={page.currentPage}
-          lastPage={page.lastPage}
-          pages={paginationPages}
-          getHref={(n: number) => getBlogIndexPagePath("fr", n)}
-          prevHref={prevPageHref}
-          nextHref={nextPageHref}
-          ariaLabel="Navigation entre les pages"
-        />
-      </div>
-    </div>
-  </section>
-
-  <div id="card-templates" hidden aria-hidden="true" data-pagefind-ignore>
-    {heroTemplatePost && (
-      <article class="post-item" data-template="hero">
-        <ArticleCard post={heroTemplatePost} />
-      </article>
-    )}
-    {plainTemplatePost && (
-      <article class="post-item" data-template="plain">
-        <ArticleCard post={plainTemplatePost} />
-      </article>
-    )}
-  </div>
+  <EditorialArchivePage page={page} lang="fr" />
 </BaseLayout>
-
-<style>
-  .page-hero { padding: 4.5rem 0 2rem; }
-  .page-hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 0.5rem 0 0.75rem; }
-  .page-lead { color: var(--text-muted); font-size: 1.05rem; max-width: 32rem; }
-
-  .chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1.25rem;
-  }
-  .search-wrap {
-    margin-top: 0.9rem;
-    max-width: 28rem;
-  }
-  .search-label {
-    display: block;
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    margin-bottom: 0.35rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-weight: 600;
-  }
-  .search-input {
-    width: 100%;
-    border: 1px solid var(--border-soft);
-    border-radius: var(--radius-md);
-    background: var(--surface);
-    color: var(--text-main);
-    min-height: 2.5rem;
-    padding: 0 0.75rem;
-  }
-  .chip {
-    display: inline-flex;
-    align-items: center;
-    min-height: 1.8rem;
-    padding: 0 0.75rem;
-    border-radius: var(--radius-pill);
-    border: 1.5px solid var(--c);
-    color: var(--c);
-    font-size: 0.8rem;
-    font-weight: 600;
-    transition: background 160ms ease, color 160ms ease, transform 200ms var(--ease-spring);
-    cursor: pointer;
-    background: transparent;
-  }
-  .chip:hover {
-    background: var(--c);
-    color: #fff;
-    transform: translateY(-2px);
-  }
-  .chip.is-active {
-    background: var(--c, var(--text-main));
-    color: #fff;
-    border-color: var(--c, var(--text-main));
-  }
-
-  .listing { padding: 1.5rem 0 5rem; }
-
-  .post-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-    gap: 0.85rem;
-  }
-  .post-item[hidden] {
-    display: none;
-  }
-  .listing-empty {
-    margin-top: 1rem;
-    color: var(--text-muted);
-    font-size: 0.95rem;
-  }
-  .filter-count {
-    margin-bottom: 0.9rem;
-    color: var(--text-muted);
-    font-size: 0.85rem;
-  }
-  .filter-count[hidden] {
-    display: none;
-  }
-
-  /* Pagination gérée par Pagination.astro */
-</style>
-
-<script>
-  import "../../../scripts/blog-filter";
-</script>

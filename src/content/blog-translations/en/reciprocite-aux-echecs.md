@@ -46,6 +46,7 @@ faq:
       lesson is information about the coach's teaching, which is genuinely useful. It isn't a reason
       to buy. The question stays the same: is this content worth this price, independently of what
       I've already received.
+heroImageAlt: Two open hands exchanging wooden puzzle pieces.
 ---
 
 You lose your game at the club. A stronger player sits down across from you and offers to go over it together.

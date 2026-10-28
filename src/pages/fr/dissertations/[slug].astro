@@ -3,6 +3,9 @@ import { getCollection, render } from "astro:content";
 
 // KaTeX CSS chargé ici (et non dans BaseLayout) : une dissertation peut contenir des formules.
 import "katex/dist/katex.min.css";
+import "../../../styles/editorial-resources.css";
+import "../../../styles/editorial-articles.css";
+import "../../../styles/editorial-dissertations.css";
 
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
@@ -20,12 +23,17 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+const otherEntries = (await getCollection("dissertations"))
+  .filter(other => other.id !== entry.id && other.data.publishDate <= new Date())
+  .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime() || a.id.localeCompare(b.id, "fr"))
+  .slice(0, 2);
 const { Content } = await render(entry);
 
 const postUrl = `/fr/dissertations/${entry.id}/`;
 const absoluteUrl = new URL(postUrl, siteConfig.siteUrl).toString();
 
 const readingTime = calculateReadingTime(entry.body ?? "");
+const illustration = (entry.body ?? "").match(/!\[[^\]]*\]\((\/images\/[^)\s]+)\)/)?.[1];
 
 const structuredData = [
   buildBreadcrumbJsonLd([
@@ -38,7 +46,14 @@ const structuredData = [
     "@type": "Article",
     headline: entry.data.title,
     description: entry.data.seoDescription ?? entry.data.excerpt,
-    author: { "@type": "Person", name: entry.data.author },
+    author: {
+      "@type": "Person",
+      name: entry.data.author,
+      ...(entry.data.author === "Le Gaucher"
+        ? { "@id": `${siteConfig.siteUrl}/fr/about/#person`, url: `${siteConfig.siteUrl}/fr/about/` }
+        : {}),
+    },
+    ...(illustration ? { image: new URL(illustration, siteConfig.siteUrl).toString() } : {}),
     datePublished: entry.data.publishDate.toISOString(),
     ...(entry.data.updatedDate
       ? { dateModified: entry.data.updatedDate.toISOString() }
@@ -68,103 +83,64 @@ function formatDate(d: Date) {
   omitEnDeAlternateLinks={true}
 >
   <article class="article-page dissertation-page">
-    <div class="reading-progress" aria-hidden="true">
-      <span id="reading-progress-fill"></span>
-    </div>
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress-fill"></span></div>
     <div class="container article-layout">
+      <div class="dissertation-masthead" data-no-print>
+        <div class="resource-masthead"><a href="/fr/"><img src="/images/logo.svg" alt="" width="22" height="31" />Blog d’un Gaucher<span>.</span></a><span>Un autre regard sur les échecs</span></div>
+        <nav class="resource-nav" aria-label="Les formats du média">
+          <a href="/fr/">La une</a>
+          <a href="/fr/dissertations/" aria-current="location">Dissertations</a>
+          <a href="/fr/series/">Séries</a>
+          <a href="/fr/blog/">Tous les articles</a>
+        </nav>
+      </div>
       <div class="article-main">
-
-        <Breadcrumb items={[
-          { label: "Accueil", href: "/fr/" },
-          { label: "Dissertations", href: "/fr/dissertations/" },
-          { label: entry.data.title },
-        ]} />
-
-        <header class="article-header fade-up" style="--motion-delay: 40ms;">
-          <div class="article-meta">
-            <span class="meta-cat" style="--c: var(--green)">Dissertation</span>
-            <span>{readingTime}</span>
-            <time datetime={entry.data.publishDate.toISOString()}>
-              {formatDate(entry.data.publishDate)}
-            </time>
-          </div>
+        <div class="dissertation-breadcrumb" data-no-print>
+          <Breadcrumb items={[
+            { label: "Accueil", href: "/fr/" },
+            { label: "Dissertations", href: "/fr/dissertations/" },
+            { label: entry.data.title },
+          ]} />
+        </div>
+        <header class="article-header">
+          <p class="dissertation-kicker">Les idées à l’épreuve <span aria-hidden="true">·</span> Dissertation</p>
           <h1>{entry.data.title}</h1>
           <p class="article-excerpt">{entry.data.excerpt}</p>
+          <div class="dissertation-byline">
+            <div class="dissertation-author">
+              <img src="/images/logo.svg" alt="" width="23" height="32" />
+              <span>Par {entry.data.author === "Le Gaucher" ? <a href="/fr/about/" rel="author">{entry.data.author}</a> : <strong>{entry.data.author}</strong>}</span>
+            </div>
+            <div class="article-meta">
+              <span>Publié le <time datetime={entry.data.publishDate.toISOString()}>{formatDate(entry.data.publishDate)}</time></span>
+              {entry.data.updatedDate && entry.data.updatedDate > entry.data.publishDate && <span>Mis à jour le <time datetime={entry.data.updatedDate.toISOString()}>{formatDate(entry.data.updatedDate)}</time></span>}
+              <span>{readingTime} de lecture</span>
+            </div>
+            <a class="dissertation-start" href="#dissertation-texte">Lire le texte <span aria-hidden="true">↓</span></a>
+          </div>
         </header>
 
-        <div class="article-body prose fade-up" style="--motion-delay: 120ms;">
-          <Content />
+        <div class="dissertation-reading">
+          <div class="article-body prose" id="dissertation-texte"><Content /></div>
+          <footer class="article-footer">
+            <p class="article-signature"><span>Une dissertation de</span><strong>{entry.data.author}</strong></p>
+            <ShareButtons url={absoluteUrl} title={entry.data.title} />
+            <a class="dissertation-back resource-link" href="/fr/dissertations/">← Toutes les dissertations</a>
+          </footer>
+          <Comments lang="fr" postId={postUrl} />
         </div>
-
-        <footer class="article-footer fade-up">
-          <p class="article-signature">
-            <em>{entry.data.author}, blogdungaucher.com</em>
-          </p>
-          <ShareButtons url={absoluteUrl} title={entry.data.title} />
-        </footer>
-
-        <Comments lang="fr" postId={postUrl} />
-
       </div>
+
+      {otherEntries.length > 0 && <section class="dissertation-related" aria-labelledby="dissertation-related-title">
+        <div class="resource-section-head"><h2 id="dissertation-related-title">Poursuivre la réflexion</h2><a class="resource-link" href="/fr/dissertations/">Toutes les dissertations →</a></div>
+        <div class="dissertation-related-grid">{otherEntries.map(other => <article>
+          <span class="resource-kicker">Dissertation · {calculateReadingTime(other.body ?? "")} de lecture</span>
+          <h3><a href={`/fr/dissertations/${other.id}/`}>{other.data.title}</a></h3>
+          <p>{other.data.excerpt}</p>
+          <a class="resource-link" href={`/fr/dissertations/${other.id}/`}>Lire la dissertation →</a>
+        </article>)}</div>
+      </section>}
     </div>
   </article>
 </BaseLayout>
-
-<style>
-  .dissertation-page {
-    --c: var(--green);
-  }
-
-  .dissertation-page :global(.article-header h1) {
-    font-family: var(--font-serif, Georgia, serif);
-    font-style: italic;
-    font-weight: 500;
-    letter-spacing: -0.015em;
-    line-height: 1.15;
-  }
-
-  .dissertation-page :global(.article-excerpt) {
-    font-family: var(--font-serif, Georgia, serif);
-    font-style: italic;
-    font-size: 1.18rem;
-    line-height: 1.55;
-    color: var(--text-muted);
-    border-left: 2px solid var(--green);
-    padding-left: 1rem;
-    margin-top: 1.25rem;
-  }
-
-  .dissertation-page :global(.article-body) {
-    font-feature-settings: "kern", "liga", "onum";
-    text-rendering: optimizeLegibility;
-  }
-
-  .dissertation-page :global(.article-body h2) {
-    font-family: var(--font-serif, Georgia, serif);
-    font-style: italic;
-    font-weight: 500;
-    margin-top: 3rem;
-  }
-
-  .dissertation-page :global(.article-body h3) {
-    font-family: var(--font-serif, Georgia, serif);
-    font-weight: 500;
-    margin-top: 2rem;
-  }
-
-  .dissertation-page :global(.article-body hr) {
-    border: 0;
-    height: 1px;
-    width: 6rem;
-    margin: 2.75rem auto;
-    background: currentColor;
-    opacity: 0.35;
-  }
-
-  .article-signature {
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 0.92rem;
-    letter-spacing: 0.02em;
-  }
-</style>
+<script>import "../../../scripts/dissertation-reading";</script>

@@ -47,6 +47,8 @@ faq:
       volwassen leven, hangt de overdracht sterk af van hoe schaken werd beoefend: in echte
       competitie met bewuste analyse van nederlagen, of in informele praktijk zonder reflectie
       op fouten.
+heroImageAlt: Een omgevallen schaakstuk werpt een lange schaduw over de grond.
+
 ---
 
 Er gebeurt iets merkwaardigs in schaakclubs dat niemand expliciet verwoordt. Aan het einde van de partij reikt de verliezer de hand aan de winnaar. Niet op een gang, niet in een kleedkamer, niet na een moment van eenzaamheid om te herstellen. Onmiddellijk, aan de tafel, voor de andere spelers die nog kunnen kijken.

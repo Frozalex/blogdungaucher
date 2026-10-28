@@ -1,124 +1,104 @@
 ---
 heroImageAlt: "A tangled ball of thread from which a single strand emerges perfectly taut and straight."
-title: "Chess as Therapy: What Research Says About the Game and Mental Health"
-excerpt: "From Italian prisons to English psychiatric hospitals, from American rehabilitation programs to PTSD treatment centers: the chessboard is used as a therapeutic tool in varied contexts. What studies actually say about these applications."
-seoTitle: "Chess as Therapy: PTSD, Depression, Anxiety, What Research Says"
-seoDescription: "Chess and mental health: studies on anxiety, depression, PTSD, prison rehabilitation. What research says about the chessboard as a therapeutic tool."
 enSlug: "chess-as-therapy"
 draft: false
-faq:
-  - question: "Can chess treat depression?"
-    answer: >-
-      Data are promising but preliminary. Theoretical mechanisms are solid: chess offers clear goals, a
-      feeling of competence and mastery, and cognitive absorption that can interrupt depressive ruminations.
-      Case studies and some pilot studies show benefits. But large-scale randomized controlled trials are
-      still lacking. Chess can be a useful complement to depression treatment, not a replacement for
-      validated therapies.
-  - question: "Are chess used in PTSD therapy?"
-    answer: >-
-      In some programs, yes, notably in the US for military veterans. The main mechanism is cognitive
-      absorption: a demanding game occupies attention enough to reduce ruminations and intrusions of
-      traumatic thoughts. US Army VA centers have integrated chess into their therapeutic activity programs.
-      Rigorous research on this specific application is still limited.
-  - question: "How is chess used in psychiatry?"
-    answer: >-
-      Historically, chess has been integrated into psychiatric hospitals since the 18th century: alienists
-      prescribed it to occupy and structure patient time. In modern psychiatry, it's used primarily as a
-      socialization tool and cognitive evaluation (planning, flexibility) in admission services, not as
-      primary treatment.
-  - question: "Do chess help children in emotional difficulty?"
-    answer: >-
-      Yes, according to several studies. The Marín et al. (2017, Mexico) study shows reduced anxiety symptoms
-      in children 8-12 after 20 sessions. The mechanisms: clear board rules are reassuring for children in
-      insecurity, sense of competence progresses quickly, and the relationship with the teaching adult is
-      structured and predictable.
-  - question: "Can you use chess in your own therapy without a formal program?"
-    answer: >-
-      Yes, as a complement. The most documented benefits (cognitive absorption, sense of competence, social
-      connection) are accessible in any play context. The ideal is to play with other people (against a
-      coach, in a club, online with a regular partner) rather than alone against the computer. The relational
-      dimension amplifies therapeutic benefits.
+title: "Chess and Mental Health: Supportive Activity or Treatment?"
+excerpt: "Playing can offer a regular meeting, learning and companionship. Distinguishing these uses from treatment for anxiety, depression or post-traumatic stress requires appropriate evidence."
+seoTitle: "Chess and Mental Health: Uses, Studies and Limits"
+seoDescription: "Chess, leisure and mental health: what a clinical study and programmes document, without promising to treat anxiety, depression or trauma."
+faq: [{"question": "Can chess treat depression?", "answer": "The sources presented do not demonstrate that a chess programme treats depression. Enjoying a game or returning to an activity does not establish a clinical effect. NICE guidance describes appropriate care options to discuss with a professional."}, {"question": "Does chess treat post-traumatic stress?", "answer": "No chess-specific effectiveness for PTSD is established here. The National Center for PTSD presents prolonged exposure, cognitive processing therapy and EMDR among psychotherapies supported by VA/DoD guidance."}, {"question": "Does a psychiatric study actually exist?", "answer": "Yes. Demily and colleagues published a small open, unblinded study in 2009 examining cognitive tests in clinically stable patients with schizophrenia. It does not justify generalising to every disorder or withdrawing treatment."}, {"question": "Does a game necessarily interrupt rumination?", "answer": "No. Absorption can describe your experience, but does not prove that every intrusive thought disappears. You can remain preoccupied during a game. Observe what suits you without turning the exercise into an obligation."}, {"question": "How can I offer chess without promising care?", "answer": "Ask whether the person wants to play, adapt the difficulty and allow them to decline or stop. You can choose a leisure or social objective, distinct from a clinical goal that requires a professional setting."}]
 ---
 
-In 1795, physician [Philippe Pinel](https://en.wikipedia.org/wiki/Philippe_Pinel), reformer of psychiatry in Paris, recommended chess to patients at the Salpêtrière as a structuring and stimulating activity. Two centuries later, psychiatrists and educators on four continents use the chessboard in very different therapeutic contexts: prisons, hospitals, refugee centers, programs for military veterans.
+A game can be a welcome appointment during a difficult week. It can also become a source of pressure. There is a difference between “I had a good time” and “this game treats a mental disorder” that the word therapy should not erase.
 
-The intuition is as old as psychiatry itself. But what does contemporary research actually say about the mechanisms and measurable effects?
+The board can support a meeting or a workshop. To assess a health benefit, we need to specify the population, intervention, comparison and outcome measured. Enjoying chess has personal value; it does not need to become medical evidence.
 
-## Therapeutic Mechanisms: What Is Plausible
+## A workshop is not automatically a treatment
 
-Several mechanisms by which chess could have therapeutic effects are theoretically sound:
+An instructor can teach rules, organise a group or offer an activity in an institution. A health professional can incorporate activities into care. These situations are not interchangeable, and having a chessboard in a care setting does not, by itself, validate “chess therapy”.
 
-### Cognitive Absorption and Interruption of Rumination
+Before presenting a programme, ask what it aims to do: fill a chosen period, create contact, practise a specific task or reduce symptoms? A participation measure answers a different question from a clinical change. An old story or a famous physician’s name does not replace this distinction.
 
-Rumination, mentally replaying negative events, imagining catastrophic scenarios, is a central mechanism in depression and anxiety. It consumes cognitive resources and perpetuates suffering.
+## Reasons to try, not guaranteed mechanisms
 
-A demanding chess game is one of the activities requiring the most cognitive absorption: analyzing a complex position leaves few available resources for ruminating. This is a mechanism of **cognitive interruption** similar to certain mindfulness techniques, not by emptying the mind, but by filling it with a well-defined task.
+### Becoming absorbed without promising an end to rumination
 
-### Sense of Competence and Mastery
+You may feel engaged in a position and think less about other things for a while. You may also continue to ruminate while looking at the board. The idea that the two are cognitively incompatible is not established here. Playing guarantees neither an end to intrusive thoughts nor trauma regulation.
 
-[Self-determination theory](https://en.wikipedia.org/wiki/Self-determination_theory) (Deci & Ryan, 1985) identifies the **sense of competence** as one of three fundamental psychological needs. People with depression often have a low perception of their efficacy, they feel they don't control their life.
+To describe the experience, keep observations simple: did you want to continue? Was the time enjoyable? Did you feel more tense afterwards? These questions are neither a diagnostic test nor a measure of brain activity.
 
-Chess offers visible, objective progression. Solving a tactical problem you couldn't have solved two weeks ago is concrete proof of competence. Improving your Elo rating is a hard-to-deny indicator of progress. These objectifiable "victories" can progressively rebuild the sense of efficacy.
+### Learning something at your own pace
 
-### Structure and Predictability
+Ryan and Deci (2000) discuss autonomy, competence and relatedness in self-determination theory. This general framework does not demonstrate chess’s clinical effectiveness.
 
-For people living in chaotic or unpredictable environments (prison, refugee camp, domestic violence context), the chessboard offers a space where rules are absolute and equitable. The Knight always jumps in an L. The game result depends on the moves, not on external factors. This predictability can be profoundly reassuring.
+In a workshop, it can inspire choices: solve a small puzzle, play an endgame or simply watch. A rising Elo is not a mental-health measure. An unsuccessful exercise is not a failure of care or of the person either.
 
-### Structured Social Connection
+### A predictable setting that can be adapted
 
-Many people in psychological difficulty have impoverished social relationships. The chessboard offers a social encounter format with a **high level of structure**: you know exactly what you're supposed to do (play), the required level of verbal intimacy is minimal, and the game itself provides a common language.
+Rules provide shared reference points, but playing conditions matter too: noise, pace, fatigue, accessibility and the relationship with the instructor. A highly competitive setting may not match what a participant wants. The option to change the format deserves a place.
 
-This structure can be particularly useful for people with social anxiety, stable-phase schizophrenia, or trauma aftermath that makes informal interactions difficult.
+### Meeting others while retaining choice
 
-## Data on Anxiety: The Marín Study
+Playing together can provide a shared topic without requiring people to discuss their lives. It remains an option, not proof of a particular benefit for everyone with a given diagnosis. Some prefer watching, playing cooperatively or choosing another activity. Their refusal should be heard.
 
-The most rigorous study on the effects of chess on childhood anxiety is by Marín et al. (2017).
+![Choice, learning and companionship: ideas for offering an activity, without a demonstrated clinical mechanism.](/images/en/echecs-therapie-01-mecanismes.svg)
 
-**Methodology:** 170 Mexican children aged 8-12, randomly assigned to an intervention group (20 chess sessions, 1h/week) or a control group (usual activities). Anxiety measured by the STAI-C before and after.
+## A real clinical study with a limited scope
 
-**Results:** the chess group shows significant reduction in state anxiety and trait anxiety compared to the control group. The effect is moderate but robust.
+Demily and colleagues (2009) assign 26 clinically stable, medicated patients with schizophrenia to chess or usual care. The open, unblinded study examines cognitive tests. Results vary by test, with no significant between-group difference on the Trail Making Test.
 
-**Mechanism suggested by the authors:** chess offers a learning environment where errors are valued (every defeat is analyzed), which reduces the fear of failure, a central component of childhood anxiety.
+Research of this kind deserves to be distinguished from a promise of recovery. Improving a cognitive measure does not automatically demonstrate fewer symptoms, better daily functioning or a lasting effect. The result does not transfer to childhood anxiety, depression or PTSD without appropriate studies.
 
-## Prison Programs: Encouraging Results
+The number of sessions in a protocol describes what was tested. It does not become a universal dose for a club or home. Comparing against usual care also does not isolate every contribution of the game, social contact and supervision.
 
-### The British "Chess in Prisons" Program
+![Demily et al. (2009): 26 clinically stable, medicated patients with schizophrenia; cognitive tests in an open, unblinded study, without proof of recovery or generalisation to anxiety or PTSD.](/images/en/echecs-therapie-02-marin-anxiete.svg)
 
-The [Chess in Prisons](https://www.chessforchange.co.uk/chess-in-prisons) program (UK), launched in 2014 and documented through annual reports until 2019, was implemented in several English correctional facilities. Reported data include:
+## Childhood anxiety: do not turn a workshop into a prescription
 
-- 20-30% reduction in disciplinary incidents in participating wings
-- Improved in-custody behavior reported by guards
-- Sustained engagement in the program by inmates (low dropout)
+The sources retained here do not support announcing that twenty sessions treat anxiety in children aged eight to twelve. Observing that a child feels more comfortable in a club is interesting, but does not establish a clinical improvement or identify its cause.
 
-The program also notes indirectly observed but unmeasured effects: improved relationships between inmates (games create opportunities for respectful encounters), better frustration management, development of respect for rules.
+If you accompany a young player, ask what they enjoy and what troubles them. You can adapt the schedule, remove ratings from the session or offer to watch a game together. These are educational options to discuss, not an anxiety treatment validated by this article.
 
-### The American Experience for Veterans
+## In prison: document the programme and its evaluation separately
 
-Several VA (Veterans Affairs) centers in the United States have integrated chess into their therapeutic activity programs for veterans, particularly those treated for PTSD or combat-related depression.
+The British organisation Chess in Schools and Communities describes a prison chess programme on its website. This establishes that such an activity is organised. The page does not provide a controlled trial demonstrating a 20–30% reduction in disciplinary incidents.
 
-Informal reports indicate similar benefits: engagement in a structured activity, non-verbal social connection, sense of accomplishment. Chess doesn't treat PTSD, but it can complement validated therapies (EMDR, prolonged cognitive therapy) by offering a space for recovery and connection.
+When reading an evaluation, check which incidents are counted, over what period, against which comparison population and alongside what other institutional changes. Voluntary participation, prisoner transfers or staffing changes can affect what the data represent. A reduction in reoffending observed for prison education in general cannot automatically be attributed to chess.
 
-## What Chess Cannot Do
+A participant’s account can illuminate what they appreciated. Alone, it cannot calculate a programme’s average effectiveness. We also need to hear from people who left or did not wish to participate.
 
-An important note of caution: the documented benefits of chess in therapeutic contexts are real but limited.
+## Depression and post-traumatic stress: retain the distinction from care
 
-**Chess does not replace validated treatments.** For clinical depression, generalized anxiety, PTSD, or any other psychiatric disorder, first-line treatments (cognitive-behavioral therapies, prescribed medications) remain essential. Chess can be a complement, never a replacement.
+NICE’s depression guidance describes several care options depending on the situation. A chosen leisure activity is not equivalent to structured behavioural activation or psychotherapy.
 
-**Context matters as much as the game.** The benefits observed in prison programs or care centers don't come solely from the game: they also come from the supervision, the relationship with the instructor, and the group structure.
+For PTSD, the National Center for PTSD presents prolonged exposure, cognitive processing therapy and EMDR among approaches recommended by VA/DoD. A chess workshop does not become one of these interventions because it engages attention. The consulted sources do not justify prescribing chess for traumatic intrusions.
 
-**At-risk profiles must be identified.** For people with strong performance anxiety, tournaments and competition can worsen suffering. Introduction of chess in therapeutic contexts must be accompanied by vigilance about the relationship to results and defeat.
+If you already receive care, you can discuss the place chess takes in your week: enjoyment, pressure, sleep or isolation. That conversation describes your situation without expecting ratings to measure your condition. A chess instructor does not decide to change a treatment.
+
+![A chosen workshop and health care have different objectives; playing does not replace appropriate treatment.](/images/en/echecs-therapie-03-limites-complement.svg)
+
+## Offer an activity without adding a performance obligation
+
+Start with a concrete agreement: which format, how much time is available and how can someone stop? A session can involve learning a pattern or discussing a position without recording a result. The leisure objective should remain understandable to the person.
+
+Afterwards, ask what suited them. Avoid interpreting resignation, defeat or playing style as a revelation of personality. If playing increases distress or takes a place the person no longer wants, review the format with them and, in a care setting, with the relevant team.
+
+## Research needed before a therapeutic promise
+
+A useful study should define its outcome before counting results: symptoms, everyday functioning, lived experience or task performance? It should specify comparisons, dropouts, adverse effects and follow-up. A group receiving another supervised activity helps examine what is specific to chess.
+
+There is no need to announce a date when all the answers will arrive. This article’s current conclusion is narrower: uses exist and questions are being studied. That does not justify presenting chess as a demonstrated treatment for the disorders discussed. You can enjoy the activity, share a game and seek appropriate care without assigning it a role it has not proved.
 
 ## Sources
 
-- Marín, M. D., et al. (2017). Effects of chess instruction on academic and cognitive outcomes in school-age children. *Journal of Educational Psychology Research*.
-- Deci, E. L., & Ryan, R. M. (1985). *Intrinsic Motivation and Self-Determination in Human Behavior*. Plenum Press.
-- Chess in Prisons UK. (2019). *Annual Report 2018-2019*. Chess for Change Foundation.
-- Pinel, P. (1801). *Traité médico-philosophique sur l'aliénation mentale*. Brosson.
+- Demily, C., Cavézian, C., Desmurget, M., Berquand-Merle, M., Chambon, V., & Franck, N. (2009). *The game of chess enhances cognitive abilities in schizophrenia*. Schizophrenia Research, 107(1), 112–113. [Record](https://pubmed.ncbi.nlm.nih.gov/18995990/) and [consulted author text](https://www.researchgate.net/publication/23460530_The_game_of_chess_enhances_cognitive_abilities_in_schizophrenia), DOI: 10.1016/j.schres.2008.09.024.
+- Ryan, R. M., & Deci, E. L. (2000). *Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being*. American Psychologist, 55(1), 68–78. [Author text](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf).
+- Chess in Schools and Communities (undated). *Prisons*. [Programme description](https://www.chessinschools.co.uk/join-our-prison-programme).
+- NICE (2022). *Depression in adults: treatment and management*, NG222. [Recommendations](https://www.nice.org.uk/guidance/ng222/chapter/Recommendations).
+- National Center for PTSD (undated). *Overview of Psychotherapy for PTSD*, presenting 2023 VA/DoD guidance. [Official text](https://www.ptsd.va.gov/professional/treat/txessentials/overview_therapy.asp).
 
-## Key Takeaways
+## Further reading
 
-- Chess reduces **anxiety** symptoms in children significantly in controlled studies (Marín et al., 2017)
-- The primary mechanism: **cognitive absorption** interrupts ruminations and intrusive thoughts
-- **Prison programs** show 20-30% reductions in disciplinary incidents (UK program)
-- The chessboard offers a **structured relational space**: valuable for profiles with relational difficulties (depression, PTSD, ASD)
-- Data on **depression and PTSD** are promising but still insufficiently documented by rigorous trials
+- [Chess in prison](/en/blog/chess-in-prison/)
+- [Chess and autism](/en/blog/chess-and-autism/)
+- [Chess and ADHD](/en/blog/chess-and-adhd/)

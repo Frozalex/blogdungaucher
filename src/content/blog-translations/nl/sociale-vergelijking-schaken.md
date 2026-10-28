@@ -41,6 +41,8 @@ faq:
       Met jezelf, over een lange periode, en eventueel met spelers die iets sterker zijn en van wie je
       de methode kunt observeren, niet alleen het resultaat. Een vergelijking is alleen nuttig als hij
       informatie levert over wat je moet doen; anders produceert hij alleen een gevoel.
+heroImageAlt: Twee identieke ladders op ondergronden van verschillende hoogte.
+
 ---
 
 Je opent de app. Nog voordat je een zet hebt gespeeld, heb je vier stukken informatie ontvangen: je rangschikking, de verandering sinds gisteren, je positie in de rangschikking van je vrienden, en de rangschikking van de voorgestelde tegenstander.

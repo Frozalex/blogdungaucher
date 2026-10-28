@@ -23,6 +23,10 @@ type IndexPost = {
   iso: string;
   hero: string | null;
   heroAlt: string;
+  heroSrcset?: string | null;
+  imageCredit?: string;
+  imageSource?: string;
+  imageLicense?: string;
 };
 
 type CategoryMeta = { label: string; shortLabel: string; accent: string };
@@ -70,6 +74,8 @@ export function initBlogFilter() {
 
   const empty = document.getElementById("listing-empty");
   const count = document.getElementById("filter-count");
+  const listingTitle = document.getElementById("listing-title");
+  const error = document.getElementById("filter-error");
   // Wrapper neutre plutôt que le <nav class="pagination"> : son `display` scopé
   // l'emporterait sur la règle `[hidden]` de la feuille de style utilisateur.
   const pagination = document.getElementById("listing-pagination");
@@ -102,6 +108,9 @@ export function initBlogFilter() {
         img.src = post.hero;
         img.alt = post.heroAlt;
       }
+      // Le srcset du gabarit appartient à un autre article : le remplacer avec le src.
+      if (post.heroSrcset) img.srcset = post.heroSrcset;
+      else img.removeAttribute("srcset");
       // Le gabarit peut venir d'une carte above-the-fold rendue en priorité.
       img.loading = "lazy";
       img.setAttribute("fetchpriority", "auto");
@@ -109,7 +118,19 @@ export function initBlogFilter() {
 
     setText(node, ".card-title", post.title);
     setText(node, ".card-excerpt", post.excerpt);
-    setText(node, ".card-time", post.readingTime);
+    setText(node, ".card-time", card?.classList.contains("archive-card") ? `${post.readingTime} ${card.dataset.readingSuffix || "de lecture"}` : post.readingTime);
+    const credit = node.querySelector<HTMLElement>(".card-credit");
+    if (credit) {
+      setText(credit, "[data-image-credit]", post.imageCredit ? `${credit.dataset.creditLabel || "Crédit"} : ${post.imageCredit}` : "");
+      setText(credit, "[data-image-license]", post.imageLicense ?? "");
+      const source = credit.querySelector<HTMLAnchorElement>("[data-image-source]");
+      if (source) {
+        source.hidden = !post.imageSource;
+        if (post.imageSource) source.href = post.imageSource;
+        else source.removeAttribute("href");
+      }
+      credit.hidden = !(post.hero && (post.imageCredit || post.imageSource || post.imageLicense));
+    }
 
     const badge = node.querySelector(".card-badge");
     if (badge && meta) {
@@ -143,7 +164,12 @@ export function initBlogFilter() {
       el.hidden = false;
     });
     if (pagination) pagination.hidden = false;
-    if (count) count.hidden = true;
+    if (count) {
+      const defaultCount = count.dataset.defaultCount;
+      count.hidden = !defaultCount;
+      if (defaultCount) count.textContent = defaultCount;
+    }
+    if (listingTitle?.dataset.defaultTitle) listingTitle.textContent = listingTitle.dataset.defaultTitle;
     if (empty) empty.hidden = true;
   }
 
@@ -168,19 +194,27 @@ export function initBlogFilter() {
     if (count) {
       const template = count.dataset.countTemplate ?? "{count}";
       count.textContent = template.replace("{count}", String(matches.length));
-      count.hidden = matches.length === 0;
+      count.hidden = matches.length === 0 && !count.dataset.defaultCount;
     }
+    if (listingTitle?.dataset.defaultTitle) {
+      listingTitle.textContent = `${listingTitle.dataset.filteredTitle || "Les articles"} · ${index.categories[category]?.label ?? category}`;
+    }
+  }
+
+  function syncChips() {
+    chips.forEach(chip => {
+      const selected = chip.dataset.filterCategory === activeCategory;
+      chip.classList.toggle("is-active", selected);
+      chip.setAttribute("aria-pressed", String(selected));
+    });
   }
 
   chips.forEach((chip) => {
     chip.addEventListener("click", () => {
       const category = chip.dataset.filterCategory ?? "all";
       activeCategory = category;
-      chips.forEach((el) => {
-        const isActive = el === chip;
-        el.classList.toggle("is-active", isActive);
-        el.setAttribute("aria-pressed", String(isActive));
-      });
+      if (error) error.hidden = true;
+      syncChips();
 
       if (category === "all") {
         showServerPage();
@@ -195,7 +229,11 @@ export function initBlogFilter() {
         .catch(() => {
           // Index indisponible : on laisse la pagination serveur en place plutôt
           // que d'afficher une grille vide.
+          if (activeCategory !== category) return;
+          activeCategory = "all";
+          syncChips();
           showServerPage();
+          if (error) error.hidden = false;
         });
     });
   });

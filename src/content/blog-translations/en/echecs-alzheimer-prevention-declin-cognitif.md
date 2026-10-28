@@ -1,113 +1,64 @@
 ---
-heroImageAlt: "Pixel art thumbnail: a pixelated brain partly dissolving, title about chess and preventing cognitive decline"
-title: "Chess and Alzheimer's: How to Stimulate Your Brain to Prevent Cognitive Decline"
-excerpt: "Figures from recent literature: meta-analyses, cohorts, and trials on board games, cognitive stimulation, and dementia risk, with statistical limits and what chess can (really) bring."
-seoTitle: "Chess and Alzheimer's: Studies, Figures, and Cognitive Prevention"
-seoDescription: "Chess and Alzheimer's: quantitative data on cognitive games and dementia. MMSE meta-analyses, ALSOP cohorts, clinical trials in elderly."
+heroImageAlt: "Pixel art thumbnail: a pixelated brain partly dissolving, with a title about chess and preventing cognitive decline"
+title: "Chess and Alzheimer’s: What the Studies Can Tell Us"
+excerpt: "Cognitive leisure activities and dementia: how to read cohort associations, distinguish prevention from support, and understand the limits of claims about chess."
+seoTitle: "Chess and Alzheimer’s: What the Studies Can Tell Us"
+seoDescription: "Cognitive leisure activities and dementia: observed associations, prevention versus support, and why a protective effect specific to chess remains uncertain."
 enSlug: "chess-and-alzheimer-prevention"
 draft: false
 faq:
-  - question: "Do chess prevent Alzheimer's disease?"
-    answer: >-
-      No: no single activity can guarantee the absence of neurodegenerative pathology. Large cohorts show
-      associations between regular mental activities and lower relative risk at the population scale; not
-      measurable individual protection.
-  - question: "What are the 'risk reduction percentages' cited in publications worth?"
-    answer: >-
-      They're often adjusted hazard ratios: for example a relative 11% or 9% drop in dementia risk over ten
-      years for frequent habits (literacy or games/puzzles) in a specific cohort. It's not a personal
-      guarantee: age, genetics, vascular health, and chance always play a role.
-  - question: "Do the Go research findings apply to chess?"
-    answer: >-
-      Partially: both are high cognitive load board games, but the protocols (duration, already-diagnosed
-      patients vs healthy seniors) differ. Each title should be read as a piece of the puzzle, not as
-      transferable proof for Western chess.
-  - question: "Do chess modify brain architecture?"
-    answer: >-
-      Prolonged practice is associated with functional differences on imaging; for the link play → cognitive
-      reserves and transfer, see our pages on chess cognition and on chess play.
+  - question: "Does chess prevent Alzheimer’s disease?"
+    answer: "No preventive effect specific to chess is demonstrated here. An association between activities and dementia incidence in a cohort does not establish an individual causal effect."
+  - question: "What do hazard ratios of 0.89 and 0.91 mean?"
+    answer: "They are adjusted hazard ratios in the model used by Wu and colleagues. They are neither individual probabilities nor absolute reductions of 11 or 9 percentage points."
+  - question: "Do findings about all games apply to chess?"
+    answer: "Not directly. The categories group several activities, and protocols may involve people who are already ill. Prevention and support are different questions."
+  - question: "How long should I play to prevent dementia?"
+    answer: "The cited sources do not establish a validated preventive dose specific to chess. Choose a suitable way to play and maintain your healthcare follow-up."
 ---
 
-Sensationalist headlines sometimes promise a "weapon" against the pathology often called Alzheimer's in the media.
+Headlines sometimes promise a “weapon” against Alzheimer’s. Research on cognitive leisure activities asks a more precise question: which activities are associated with which outcomes, in which people, and under what study design?
 
-Published data are **more nuanced**: some trials measure effects on mood, depression, or cognitive scores; other protocols find **no difference** on global cognition once controls are tightened.
+Chess can be a stimulating pastime and an opportunity to interact. That does not make it a treatment or a demonstrated way of preventing the disease.
 
-**Goal of this article:** gather **figures from selected publications** and link them to chess practice as a dense, lasting hobby, **learning**, **progressing**, **anchoring a routine** without confusing it with a prescription.
+## A cohort does not test a prescription
 
-## Quantitative Summary: What Key Publications Say
+Wu and colleagues (2023) analyse the activities of 10,318 people in Australia, aged at least 70 and generally healthy at enrolment. Their study examines dementia incidence using models adjusted for several characteristics.
 
-| Study | Population / Design | Key Figures |
-|---|---|---|
-| **Wu et al., 2023** (ALSOP cohort) | 10,318 adults ≥70 years (Australia), 10-year follow-up | Literacy activities: **−11%** dementia incidence (HR 0.89). Active mental activities (games, cards, **chess**, puzzles): **−9%** (HR 0.91). |
-| **Li et al., 2023** (meta-analysis) | 12 studies, 877 people with dementia diagnosis | MMSE: **SMD = 2.69** favoring "game" interventions. Depression: **SMD = −4.28**. |
-| **Lin et al., 2015** (Go vs dementia) | 147 participants randomized, 6 months | Lower depression scores, higher BDNF (28.9 vs 17.3 ng/ml). |
-| **Pozzi et al., 2025** (COGniChESs) | 69 participants (MCI), 12 weekly sessions | Improved quality of life in MCI playing (p=0.002); reduced depression in women playing (p=0.013). No net global cognition gain. |
-| **Lillo-Crespo et al., 2019** (scoping review) | 21 chess and dementia publications | Few direct evidence in already-diagnosed people; more arguments for prevention in non-diagnosed. |
+| Category studied | Adjusted HR | 95% confidence interval |
+| --- | --- | --- |
+| Adult literacy activities | 0.89 | 0.85–0.93 |
+| Mentally active activities | 0.91 | 0.87–0.95 |
 
-**Honest reading**: these works **don't replace** cardiometabolic prevention. They mainly show that **"playing seriously"** can coexist with psychological gains or better-preserved scores.
+Mentally active activities include games, cards, chess, crosswords and puzzles. The study does not allow an effect specific to chess to be isolated.
 
-## Hazard Ratios in the ALSOP Cohort
+These HRs are hazard ratios in the model. They are not an absolute reduction of 11 or 9 percentage points, nor an individual probability of avoiding Alzheimer’s. The outcome measured is dementia, not exclusively that disease.
 
-The **ALSOP** cohort follows initially cognitively healthy seniors in Australia. The hazard ratios **0.89** and **0.91** translate a **moderate relative reduction** in dementia probability over ten years for regular habits, not a halving. Models **already adjust** for education, socioeconomic status, and health.
+Statistical adjustment reduces some differences between participants without eliminating every possible explanation. People who remain healthier may also continue their activities more often. The study does not randomly assign participants to “play chess” and “do not play”.
 
-Useful point for chess club players: the "games, cards, chess, crosswords" category is **grouped** in the source publication, **impossible** to isolate the chess-specific effect from this line.
+## Prevention and support are two different questions
 
-## "Game Therapy" Meta-Analysis and MMSE
+A trial involving people who have already been diagnosed may measure a change in mood, functioning or a cognitive score. Even a positive result would not demonstrate prevention in healthy people.
 
-The Li et al. synthesis aggregates **heterogeneous** protocols. The high MMSE SMD calls for caution: MMSE is coarse, and statistical significance doesn't say if the difference is **clinically major**.
+We therefore need to examine the population, the type of game, the comparison group and the outcome measured. Findings from another game or a supervised therapeutic programme do not automatically transfer to a game of chess at a club.
 
-Positive message: ludic structured interventions often show a **signal on depression**, which matters for home maintenance and concentration in daily life.
+## Keeping the right criteria
 
-## Targeted Trials: Go in China, Chess in Italy
+For a leisure activity, you can choose an observable goal: enjoying a session, meeting other players or learning an endgame. A change in mood or quality of life matters to the person, but it does not measure a change in the disease.
 
-In COGniChESs, the result **strikes by what it doesn't show**: no robust net effect on global cognition by protocol's end, but effects on quality of life and mood in certain subpopulations.
+Neither a particular number of sessions per week nor a duration of 45 or 60 minutes constitutes a validated preventive dose here. If a pilot study uses that duration, it describes its protocol; it does not prescribe the same thing for everyone.
 
-## Chess as Protective Factor: Exploratory Review
+You can adapt the pace, difficulty and format to your preferences and fatigue. An interrupted or simplified game can remain an enjoyable activity. The aim is not to turn every session into a performance test.
 
-**Lillo-Crespo et al.** review 21 publications: literature mainly suggests expected cognitive benefits in non-diagnosed people, and little solid data to modify evolution in already-labeled "dementia" patients.
+## Health involves more than a game
 
-## Senior Chess Training Pilot
+The WHO notes that dementia has several causes and presents modifiable risk factors, including physical activity and cardiovascular health. Playing does not replace those aspects or appropriate medical care.
 
-**Cibeira et al., 2021** (pilot, *Geriatric Nursing*) explore a chess training program over 12 weeks, two 60-minute sessions per week. The target isn't avoiding pathology but supporting concentration, mood, and mental skills in senior players.
+If you notice persistent memory difficulties or changes in everyday activities, seek medical advice rather than treating a puzzle score or your Elo rating as a screening test.
 
-## Comparison with Other Hobbies
-
-On ALSOP's scale, **reading**, writing, or courses present the most regular signal on relative probability. Board games and puzzles give a moderate signal, often statistically grouped. **Chess in isolation** is rarely individualizable in these population databases.
-
-## Concrete Strategies (Without Medicalizing the Hobby)
-
-1. **Set a realistic dose**: the order of magnitude **two times 45-60 minutes per week** appears in chess pilots.
-2. **Measure the right criterion**: if the goal is social link, prioritize club; if it's mood, accept that gains on working memory may be **absent** on short tests.
-3. **Alternate** tactical puzzles and slow games to reduce fatigue and screen time.
-
-## Top 10 Expected Effects (Play + Aging)
-
-1. **Maintenance of sustained attention**
-2. **Planning under constraint**
-3. **Post-error emotional regulation**
-4. **Structured socialization**
-5. **Progressive cognitive load**
-6. **Health routine**
-7. **Possible reduction of rumination**
-8. **Self-efficacy** via measurable skills
-9. **Complementarity with walking or balance**
-10. **Pleasure**: a variable often neglected in trials but crucial
+For expertise studies and their causal limitations, see [chess and the brain](/en/blog/chess-and-the-brain/). The conclusion here remains limited: cognitive leisure activities deserve study, but the cited sources do not demonstrate protection specific to chess against Alzheimer’s.
 
 ## Sources
 
-1. Wu Z., et al. (2023). Lifestyle Enrichment in Later Life. *JAMA Network Open*. DOI: 10.1001/jamanetworkopen.2023.23690
-2. Li J., et al. (2023). Rehabilitation effects of game therapy. *Worldviews on Evidence-Based Nursing*. DOI: 10.1111/wvn.12648
-3. Cibeira N., et al. (2021). Effectiveness of a chess-training program. *Geriatric Nursing*.
-4. Pozzi F.E., et al. (2025). COGniChESs study. *Journal of Alzheimer's Disease*.
-5. Lillo-Crespo M., et al. (2019). Chess Practice as Protective Factor in Dementia. *IJERPH*. DOI: 10.3390/ijerph16122116
-6. Lin Q., et al. (2015). GO-game intervention on Alzheimer disease. *Frontiers in Aging Neuroscience*.
-
-**Disclaimer**: this article popularizes third-party works; it doesn't replace medical consultation.
-
-## Key Takeaways
-
-- Epidemiological associations (relative probability over a cohort) **don't equal individual causality**
-- Board games ≠ medicine: effects depend on **dose, profile, and measured outcome**
-- Chess remains a **realistic lever**: strong cognitive engagement, immediate feedback, active community
-- Cognitive reserve doesn't prevent the disease but can **delay symptom onset** by several years
-- Online play and physical activity have **synergistic benefits** for senior cognition
+- Wu, Z., Pandigama, D. H., Wrigglesworth, J. et al. (2023), *Lifestyle Enrichment in Later Life and Its Association With Dementia Risk*, JAMA Network Open, [article](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2807256).
+- World Health Organization (2025), *Dementia*, fact sheet, [text](https://www.who.int/news-room/fact-sheets/detail/dementia).

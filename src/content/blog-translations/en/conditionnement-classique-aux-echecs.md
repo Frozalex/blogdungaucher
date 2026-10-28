@@ -47,6 +47,8 @@ faq:
       Because extinction doesn't erase the original association: it installs a new one on top of it.
       Spontaneous recovery and context-dependent renewal are both well documented. That's why anxiety
       worked on online can resurface in a tournament hall.
+heroImageAlt: A small bell casting the shadow of a closed hand.
+
 ---
 
 Your opponent plays the move that leads to that structure. You know it. You've analyzed it. You checked with the engine that it's perfectly playable, and even slightly in your favor.

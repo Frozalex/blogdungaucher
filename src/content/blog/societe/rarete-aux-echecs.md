@@ -50,15 +50,16 @@ faq:
       Par le délai, pour les achats, puisque la rareté fabriquée ne résiste pas à l'attente. Et pour la
       pendule, par une règle de répartition décidée avant la partie, qui remplace une évaluation prise
       au moment où elle est le plus faussée.
+heroImage:
+  src: /images/blog/rarete-aux-echecs-hero.webp
+  alt: Une bobine presque vide retient une courte longueur de ruban.
+ogImage: /images/og/rarete-aux-echecs-og.webp
+
 ---
 
-Il te reste huit minutes. À ton adversaire, vingt-cinq.
+La rareté désigne une contrainte de disponibilité dont les effets dépendent du contexte. Aux échecs, le manque de temps limite le calcul ; dans la vente d'un cours, une échéance ou un nombre de places annoncé peut orienter la décision d'achat.
 
-Tu joues plus vite. Pas parce que la position l'exige, mais parce que chaque minute vaut désormais beaucoup plus qu'il y a une heure. Tu prends des décisions en quinze secondes sur des positions qui en méritent deux minutes, et tu le sais pendant que tu le fais.
-
-Ce que tu vis là est exactement le mécanisme que le marketing utilise pour te vendre des cours en ligne. Même levier, même effet, deux contextes qu'on ne rapproche jamais.
-
-Cet article prolonge notre article sur [la psychologie de la persuasion aux échecs](/fr/blog/psychologie-de-la-persuasion-aux-echecs/), qui présente les sept leviers.
+Ces situations ne permettent pas de supposer un mécanisme identique. Il faut examiner ce qui manque, la réalité de la contrainte et la réponse qu'elle suscite. Cet article prolonge [la psychologie de la persuasion aux échecs](/fr/blog/psychologie-de-la-persuasion-aux-echecs/) pour discuter la portée de ce rapprochement et les différences entre ses applications.
 
 ## Les biscuits
 

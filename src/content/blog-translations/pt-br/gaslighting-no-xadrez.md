@@ -1,12 +1,8 @@
 ---
 title: "Gaslighting no xadrez: quando reescrevem a sua própria partida"
-excerpt: >-
-  No xadrez, a verdade fica arquivada lance a lance. É o único jogo em que dá para provar o que
-  aconteceu. E, ainda assim, é um terreno notavelmente propício a uma forma de manipulação que consiste
-  em fazer alguém duvidar da própria percepção.
+
 seoTitle: "Gaslighting no xadrez: acusações, coaching tóxico e negação"
-seoDescription: >-
-  O gaslighting aplicado ao xadrez: acusações de trapaça sem prova, coaching tóxico, post-mortem que reescreve a partida. O que diz a pesquisa e por que a notação protege você.
+
 frSlug: gaslighting-aux-echecs
 draft: false
 tags:
@@ -18,41 +14,41 @@ tags:
   - Kramnik
   - ética
   - xadrez
+
+heroImageAlt: Uma mão apaga pegadas atrás de uma figura que olha para trás.
+
+excerpt: >-
+  Uma partida registrada ajuda a verificar lances, não a ler intenções. Distinguir desacordo, reconstrução retrospectiva
+  e desestabilização, com os limites da análise e exemplos institucionais atribuídos com precisão.
+seoDescription: >-
+  Gaslighting e xadrez: críticas, acusações e confiança na percepção. Alcance do estudo de Sweet, decisão FIDE datada
+  e uso cuidadoso de registros, sem diagnóstico à distância.
 faq:
-  - question: "O que é gaslighting exatamente?"
+  - question: O que é gaslighting?
     answer: >-
-      É uma forma de manipulação que consiste em levar alguém a duvidar da própria percepção da
-      realidade, da própria memória ou do próprio julgamento. O termo vem da peça Gas Light, de Patrick
-      Hamilton, estreada em 1938, em que um marido faz a mulher acreditar que está enlouquecendo. A
-      socióloga Paige Sweet mostrou em 2019 que o gaslighting só é plenamente eficaz quando se apoia num
-      desequilíbrio de poder preexistente.
-  - question: "Uma acusação de trapaça não comprovada é gaslighting?"
+      O termo descreve processos de manipulação que abalam a confiança na percepção, na memória ou no julgamento.
+      Sweet examina desigualdades na violência doméstica; seu estudo não é uma lista clínica universal para as
+      relações em clubes.
+  - question: Uma acusação de trapaça não comprovada é automaticamente gaslighting?
     answer: >-
-      Não automaticamente. Ela passa a ser quando é pública, repetida, sem provas apresentadas às
-      instâncias competentes, e quando leva o acusado a duvidar do valor dos próprios resultados. Em
-      julho de 2026, a Comissão de Ética da FIDE sancionou Vladimir Kramnik por, entre outras coisas,
-      abuso psicológico e acusações públicas infundadas, entendendo que apontar publicamente jogadores
-      identificáveis sem verificação institucional os expunha a um prejuízo reputacional e psicológico
-      injustificado.
-  - question: "Como distinguir um treinador exigente de um treinador que faz gaslighting?"
+      Não. Fatos, contexto e repetição precisam ser examinados sem deduzir intenção de uma frase isolada. A decisão
+      FIDE de primeira instância 12/2025 inclui abuso psicológico no sentido disciplinar, por maioria; isso não é um
+      diagnóstico clínico de gaslighting.
+  - question: Como conversar sobre uma crítica do treinador?
     answer: >-
-      Um treinador exigente contesta os seus lances. Um treinador que manipula contesta a sua percepção.
-      O primeiro diz "esse lance é ruim e eis o porquê", uma afirmação verificável que você pode
-      contradizer. O segundo diz "você nunca entendeu essa posição" ou "você se lembra errado do que eu
-      falei", afirmações que recaem sobre a sua mente e não sobre o tabuleiro, e que não podem ser
-      verificadas.
-  - question: "Por que o xadrez é um terreno particular para esse fenômeno?"
+      Peça explicações precisas e variantes, diferenciando avaliar um lance de julgar sua pessoa. Uma fala inadequada
+      isolada não estabelece abuso. Desvalorização repetida ou sofrimento podem justificar buscar uma visão independente
+      e apoio.
+  - question: A notação protege contra toda manipulação?
     answer: >-
-      Porque os fatos ali ficam integralmente arquivados. Cada partida existe em forma de notação,
-      consultável e rejogável. O gaslighting, portanto, não pode recair sobre os lances em si, que são
-      prováveis. Ele se desloca para o que não está registrado: as suas intenções, a sua compreensão, o
-      seu nível real, o que você viu ou deixou de ver.
-  - question: "O que fazer se eu for vítima de gaslighting num clube de xadrez?"
+      Não. Uma notação completa pode estabelecer lances, mas não todas as intenções ou conversas. Nem toda partida é
+      preservada, e o xadrez não é o único jogo rastreável. A avaliação do motor geralmente é uma estimativa, não um
+      veredicto infalível.
+  - question: O que fazer se uma relação no clube me desestabiliza?
     answer: >-
-      Guarde os registros escritos, que são a sua proteção principal: notações de partidas, mensagens,
-      análises. Confronte as afirmações com os fatos arquivados em vez de com a sua memória. Peça a
-      análise das suas partidas a um terceiro independente. E se os fatos envolverem uma acusação
-      formal, use os canais previstos, que existem justamente para tirar o caso do terreno do boato.
+      Guarde os registros disponíveis, diferencie fatos de interpretações e converse com alguém de confiança. Uma
+      análise independente pode ajudar nas posições. Use a via prevista para acusações formais; buscar apoio não exige
+      provar primeiro uma qualificação específica.
 ---
 
 A partida acabou. Você perdeu, e vocês a rejogam juntos. Só que a partida que ele conta não é a que você jogou.
@@ -61,37 +57,37 @@ A sua posição no lance 20, aquela que você achava sólida, estava "completame
 
 Você não se lembra de ele ter falado isso dez vezes. Você não se lembra de estar perdido no lance 20. Mas ele parece tão seguro que você começa a se perguntar se a sua memória está certa.
 
-Pronto. Isso tem nome.
+Esta cena fictícia pode sugerir uma relação desestabilizadora. Sozinha, não permite rotular uma pessoa nem estabelecer um diagnóstico de abuso.
 
 ## De onde vem a palavra
 
-O termo vem de uma peça de teatro. *Gas Light*, escrita pelo romancista britânico [Patrick Hamilton](https://pt.wikipedia.org/wiki/Patrick_Hamilton_(escritor)), estreada em Londres em 5 de dezembro de 1938. A trama é simples e gelada: Jack Manningham quer internar a esposa Bella para ficar com a herança dela. Ele não bate nela. Ele muda objetos de lugar e nega ter feito isso. Ele abaixa a luz dos lampiões a gás da casa e, quando ela percebe que o cômodo está escurecendo, responde que ela está imaginando coisas.
+O termo remete a *Gas Light*, peça de Patrick Hamilton de 1938, também conhecida como *Angel Street*. A história mostra um marido que procura fazer Bella duvidar de sua sanidade. A [apresentação da Concord Theatricals](https://www.concordtheatricals.com/s/2380/angel-street-gaslight?variantId=26654) descreve essa desestabilização.
 
-A adaptação hollywoodiana de 1944, com Ingrid Bergman, deixou a história famosa e deu nome ao procedimento. O verbo inglês *to gaslight* entrou no vocabulário psicológico bem depois, e no uso corrente mais tarde ainda.
+A adaptação hollywoodiana [*Gaslight* (1944), com Ingrid Bergman](https://www.bfi.org.uk/film/7b140561-04e4-597a-adc0-13f8a539287e/gaslight), ajudou a divulgar a história. O termo passou a descrever processos de desestabilização em outros contextos.
 
-O que é notável no dispositivo imaginado por Hamilton é que ele não se apoia em nenhuma mentira sobre os fatos externos. Manningham não conta uma história falsa. Ele ataca diretamente **o instrumento de medida**: a capacidade de Bella de confiar no que percebe. Uma vez desacreditado esse instrumento, tudo vira negociável.
+A história combina mentiras, negação dos fatos e ataques à **confiança na própria percepção**. Seria errado dizer que o processo nunca envolve fatos: desacreditar a memória e negar acontecimentos pode se reforçar mutuamente.
 
 ## O que a pesquisa acrescentou
 
-Durante muito tempo, o gaslighting foi tratado como uma patologia individual: um manipulador, uma vítima, uma relação tóxica.
+A palavra hoje aparece em contextos variados. É preciso distinguir o uso cotidiano, uma análise sociológica e as qualificações adotadas em um procedimento específico.
 
-Em 2019, a socióloga [Paige Sweet](https://pt.wikipedia.org/wiki/Gaslighting) publica na *American Sociological Review* um artigo que desloca a análise. A tese dela: o gaslighting não é antes de tudo um fenômeno psicológico, é um fenômeno **social**. Ele só funciona quando pode se apoiar em desigualdades preexistentes e em estereótipos disponíveis.
+Em [*The Sociology of Gaslighting* (2019)](https://journals.sagepub.com/doi/10.1177/0003122419874843), Paige Sweet usa a violência doméstica como estudo de caso para examinar estereótipos, desigualdades e poder. Não se trata de pesquisa sobre clubes de xadrez nem de uma condição universal testada para toda interação.
 
 Ou seja, dizer a alguém "você está imaginando coisas" não tem o mesmo poder dependendo de quem diz. Se a afirmação vem de uma pessoa cuja autoridade é socialmente reconhecida, ela não se limita a contradizer: ela **mobiliza uma estrutura**. A dúvida que ela instala é reforçada por tudo o que o entorno já toma como certo.
 
-Essa precisão pesa muito no que vem a seguir, porque explica por que o gaslighting não tem nada a ver com um simples desacordo. Dois jogadores de mesma força que discordam sobre uma posição estão num debate. Um treinador titulado que explica ao aluno que ele se lembra errado do que foi dito dispõe de algo a mais do que um argumento.
+Aplicar essa perspectiva à relação entre treinador e aluno é aqui uma reflexão editorial. A autoridade esportiva pode dificultar uma contestação, mas diferença de nível não prova manipulação; desacordos entre pares também podem ser prejudiciais. É preciso examinar comportamentos e sua repetição.
 
 ## O paradoxo enxadrístico
 
 Agora, o que torna o xadrez fascinante nesse terreno.
 
-O xadrez é provavelmente **a área humana em que a realidade fica melhor arquivada**. Cada partida de torneio é anotada lance a lance. Cada partida online é registrada automaticamente. A posição no lance 20 não é uma impressão: é um objeto, reconstituível em três segundos, sobre o qual um motor dará um veredito com precisão de centésimo de peão.
+Muitas partidas podem ser reconstruídas a partir de notação ou registros da plataforma. O xadrez não é o único jogo rastreável nem oferece arquivo garantido de todo confronto. O registro ajuda a verificar lances; a avaliação de um motor ainda depende de versão e cálculo, salvo prova ou solução exata.
 
-Num casamento, não há notação. Numa empresa, a reunião não é rejogável. No xadrez, é.
+Mensagens, atas e outros registros também podem existir fora do xadrez. Facilitam algumas verificações sem registrar toda a experiência vivida.
 
-Dava para achar que o xadrez estivesse imune. Não está nem um pouco. Ele está apenas **deslocado**.
+Um arquivo não torna uma relação imune à desestabilização. Fornece elementos, não uma leitura completa das intenções.
 
-Como os lances são prováveis, a manipulação não recai sobre os lances. Ela recai sobre todo o resto, isto é, sobre a imensa parte da experiência enxadrística que **não** fica registrada:
+A discussão pode envolver os próprios lances, um registro contestado ou aquilo que a notação não estabelece diretamente:
 
 - o que você tinha entendido da posição, que não aparece em lugar nenhum da notação;
 - o que você tinha calculado e descartado, invisível por construção;
@@ -105,21 +101,21 @@ A notação prova **o que você jogou**. Ela não prova nada sobre **o que você
 
 ### 1. A acusação pública sem prova
 
-É a forma mais espetacular e, há pouco tempo, a mais bem documentada institucionalmente.
+Uma acusação pública pode causar danos. Sua eventual qualificação formal deve ser separada do uso geral da palavra gaslighting.
 
-Em 3 de julho de 2026, a Comissão de Ética e Disciplina da FIDE proferiu a decisão dela no caso 12-2025, na sequência de queixas apresentadas pelo Management Board da federação e pela Comissão Fair Play. O grande mestre [Vladimir Kramnik](https://pt.wikipedia.org/wiki/Vladimir_Kramnik), campeão mundial de 2000 a 2007, foi considerado responsável por várias infrações: violação da dignidade e do tratamento respeitoso das pessoas, assédio e assédio virtual, **abuso psicológico**, falha no papel de exemplo, falta de cooperação com a investigação da Comissão Fair Play e **acusações públicas falsas ou injustificadas**.
+A [decisão FIDE de primeira instância no caso 12/2025](https://ethics.fide.com/wp-content/uploads/2026/07/Decision_Case_12-2025_Final.pdf), publicada em 3 de julho de 2026, sancionou Vladimir Kramnik por vários fundamentos. Reconheceu abuso psicológico no sentido do artigo 6.5(e), por maioria e com voto divergente. Outras acusações foram afastadas. Essa terminologia disciplinar não é um diagnóstico clínico de “gaslighting”.
 
-A formulação adotada pela comissão merece ser citada com precisão, porque descreve um mecanismo e não apenas uma falta: associar publicamente jogadores identificáveis a suspeitas de trapaça sem verificação institucional suficiente os expõe a um prejuízo reputacional e psicológico injustificado.
+Nos parágrafos 20.1 a 20.6, a câmara examina os possíveis efeitos de associar repetidamente pessoas identificáveis a suspeitas de trapaça. É um resumo da fundamentação, não uma citação literal nem uma regra que classifique automaticamente toda acusação contestada.
 
-A sanção: dois anos de proibição mundial de competir e de exercer funções oficiais, sendo os doze últimos meses com suspensão condicional num período probatório de três anos, acompanhados de doze meses de serviço não remunerado à comunidade enxadrística.
+A decisão impôs proibição de dois anos, com os doze meses finais suspensos durante período probatório de três anos, e doze meses de serviço não remunerado. O [comunicado FIDE](https://www.fide.com/fide-ethics-disciplinary-commission-issues-a-decision-in-case-involving-gm-vladimir-kramnik/) prevê possibilidade de recurso. Descrevemos o texto datado sem afirmar o resultado de eventual apelação.
 
-O que torna esse mecanismo tão destrutivo é a assimetria dele. O acusado não pode provar a própria inocência: não se demonstra a ausência de trapaça, só se constata a ausência de prova de trapaça. Enquanto isso, cada boa partida dele vira suspeita, inclusive aos olhos dele mesmo. Ele acaba jogando contra o próprio passado.
+Uma acusação pode ser difícil de contestar publicamente, sobretudo quando repetida para uma grande audiência. Isso não torna toda prova de inocência logicamente impossível nem revela o estado psicológico de cada pessoa atingida.
 
 É uma situação diferente da do [caso Niemann](/pt-br/blog/xadrez-e-trapaca/), em que a questão da prova se colocava de outro jeito. Aqui, a instância que decide qualificou o comportamento em si.
 
 ### 2. O coaching que desloca o alvo
 
-Bem mais comum, bem menos visível, e sem instância para arbitrar.
+Outra situação a examinar é a maneira de formular críticas durante um treinamento.
 
 Um treinador normal, mesmo muito duro, contesta **os seus lances**. Ele diz: "esse lance é ruim, eis a refutação". Isso é verificável. Você pode abrir o motor, ou trazer uma variante, ou discordar. A discussão recai sobre um objeto externo aos dois.
 
@@ -130,13 +126,13 @@ O deslize acontece quando a contestação muda de alvo e passa a recair sobre a 
 - "você acha que calculou, mas não calculou";
 - "todo mundo no clube enxerga bem esse problema em você".
 
-Nenhuma dessas frases pode ser verificada. Nenhuma recai sobre a posição. Elas recaem sobre a sua memória, a sua atenção, a sua compreensão, a sua reputação. São exatamente os instrumentos com os quais você avalia a realidade.
+Essas formulações gerais podem substituir uma explicação precisa por um julgamento sobre a pessoa. Algumas podem ser confrontadas com notas ou mensagens; nenhuma estabelece, sozinha, uma intenção manipuladora.
 
-E, segundo a análise de Sweet, a eficácia delas não vem do conteúdo: vem da posição de quem as pronuncia. A mesma crítica, formulada por um jogador do seu nível, seria discutida. Formulada por alguém que classifica você, seleciona você ou dá nota a você, ela se instala.
+A autoridade de quem fala pode ampliar o efeito de uma observação. O conteúdo, a possibilidade de responder e o histórico da relação também importam. O trabalho de Sweet não prevê a reação de cada aluno ou treinador.
 
 ### 3. O post-mortem que reescreve
 
-A forma mais banal, muitas vezes sem intenção de prejudicar.
+Uma reconstrução retrospectiva também precisa ser distinguida de manipulação.
 
 A análise pós-partida tem uma propriedade estranha: ela se dá num estado de conhecimento que você não tinha durante a partida. Uma vez que se sabe onde a coisa virou, todo o resto parece ter levado até ali. O lance 20 "já estava perdendo", quando ele só estava perdendo à luz do lance 34.
 
@@ -144,53 +140,53 @@ O vencedor, de toda boa-fé, conta uma partida que ele dominava. Ele não conta 
 
 Se você aceita essa versão, tira da partida uma lição que não corresponde a nada: a de que você foi dominado do começo ao fim, quando talvez estivesse melhor no lance 25. Repetido ao longo de cem partidas, esse mecanismo constrói uma autoimagem completamente desconectada dos resultados.
 
-Não é manipulação, é um viés de reconstrução. Mas o efeito sobre você é idêntico, e é por isso que ele aparece aqui. A diferença está na intenção, não no estrago.
+Um viés retrospectivo não é automaticamente gaslighting, e seus efeitos não são necessariamente idênticos aos de um abuso repetido. É possível corrigir uma análise errada sem atribuir intenção oculta ao autor.
 
 ## O teste: é gaslighting ou é desacordo?
 
-Três perguntas permitem decidir bem rápido.
+Estas perguntas ajudam a refletir, não a decidir um diagnóstico ou uma responsabilidade em poucos minutos.
 
 **A afirmação recai sobre um fato ou sobre a sua percepção?** "Esse lance perde uma peça" é um fato, verificável, discutível. "Você nunca enxerga nada" não é um fato, é um veredito sobre o seu aparelho de percepção.
 
 **Ela é falseável?** Uma crítica honesta indica o que a contradiria. Se nenhuma prova conseguiria fazer o seu interlocutor mudar de ideia, deixou de ser análise e virou posição.
 
-**O que acontece quando você apresenta uma prova?** É o teste decisivo. Você abre a partida, mostra a avaliação no lance 20, ela está equilibrada. Um interlocutor de boa-fé atualiza o julgamento dele. Um mecanismo de gaslighting desloca o alvo: "a avaliação não quer dizer nada", "não é essa a questão", "você é incapaz de aceitar uma crítica". A prova não é discutida, ela é contornada, e quem vira o assunto é você.
+**Como os elementos são discutidos?** Reconstrua a posição e apresente variantes. Uma avaliação isolada do motor não obriga a concordar; seus limites podem ser discutidos de boa-fé. Merece atenção uma desvalorização pessoal repetida que impede sistematicamente essa conversa.
 
 ## O que protege você, e que poucas áreas possuem
 
-Eis a boa notícia, e ela é específica deste jogo.
+Aqui está um recurso prático: usar os registros disponíveis, reconhecendo seus limites.
 
 **Você tem a notação.**
 
-Em quase todas as situações da vida em que esse mecanismo opera, a vítima não tem nenhum registro. Ela enfrenta a lembrança do outro com a dela, e a lembrança do outro é mais confiante. No xadrez, você dispõe de um registro completo, com data e hora, externo aos dois, que não toma partido por ninguém.
+Uma notação completa pode estabelecer a sequência de lances. Não recupera automaticamente o horário exato de cada decisão, todas as palavras trocadas nem o raciocínio interno. Mensagens e notas podem complementá-la, com o cuidado necessário para sua conservação.
 
 Três usos concretos:
 
-**Anote as suas partidas, inclusive online.** Não só os lances, que a plataforma guarda: anote em uma linha, no fim, o que você achava da sua posição nos momentos-chave e por que jogou o que jogou. É o único registro que vai existir do seu estado de conhecimento real. Sem ele, a versão reconstruída sempre ganha.
+**Registre partidas e impressões.** Depois, diferencie lances registrados daquilo que você se lembra de ter pensado. As notas continuam sendo um relato retrospectivo, não acesso infalível ao estado mental, mas podem ajudar a retomar a conversa.
 
-**Confronte as afirmações com o arquivo, não com a sua memória.** Se disserem que você estava perdido no lance 20, não procure na sua lembrança. Abra a posição. A resposta existe.
+**Confronte as afirmações com os elementos disponíveis.** Rejogue a posição indicada, procure variantes e distinga fatos registrados de interpretações. A análise pode continuar incerta.
 
-**Peça a análise de um terceiro independente.** Não um motor sozinho, que diz *que* o lance é ruim sem dizer o que era humanamente visível. Um jogador mais forte, externo à relação. O método está detalhado no nosso guia sobre [analisar as próprias partidas](/pt-br/blog/analisar-suas-partidas/).
+**Peça uma análise independente.** Alguém de fora da relação pode distinguir lances jogados, variantes possíveis e o que um jogador poderia razoavelmente perceber. O motor ajuda a testar linhas; sozinho, não descreve sua experiência.
 
 E para as acusações formais: os canais institucionais existem exatamente para isso. A função deles não é burocrática, é protetora. Eles tiram o caso do terreno onde o boato vence a prova, e onde, como a FIDE lembrou, o prejuízo acontece independentemente da verdade dos fatos.
 
 ## O que vale reter
 
-O gaslighting não consiste em mentir sobre os fatos. Consiste em desacreditar o instrumento com o qual você constata os fatos. É por isso que ele funciona mesmo numa área em que tudo fica arquivado: ele simplesmente se desloca para aquilo que o arquivo não contém, isto é, o seu nível, a sua compreensão, as suas intenções.
+Gaslighting envolve processos que abalam a confiança na percepção, na memória ou no julgamento; mentiras e negações podem participar. Desacordo, erro de análise ou uma fala inadequada, isoladamente, não estabelecem sua presença.
 
-A pesquisa de Paige Sweet acrescenta o elemento decisivo: esse mecanismo só tem força quando sustentado por uma assimetria. Não é um problema de caráter, é um problema de posição. Um treinador, um jogador titulado, uma figura do clube dispõem de uma alavanca que um par não tem.
+A pesquisa de Sweet convida a examinar também as relações de poder e os recursos sociais mobilizados. Não a transformamos em lei universal sobre clubes nem em avaliação clínica à distância.
 
-A sua proteção é concreta e você já a tem: é o registro escrito. O xadrez é um dos raros lugares em que dá para responder "aqui está a posição, vamos olhar". Falta olhar em vez de lembrar.
+Registros escritos, análise independente e alguém de confiança podem ajudar a recuperar referências. Não oferecem garantia absoluta. Se a situação causa sofrimento ou isolamento, buscar apoio não exige provar primeiro uma qualificação específica.
 
-**Depois da leitura:** retome uma partida sobre a qual explicaram a você que estava "perdido havia tempo". Abra. Olhe a avaliação no lance indicado. Você vai saber se aceitou uma versão ou um fato.
+**Depois da leitura:** retome uma posição contestada, registre os fatos disponíveis e as incertezas, depois compare análises. O objetivo é uma conversa verificável, não declarar alguém manipulador apenas com base na avaliação de um motor.
 
 ---
 
-*Este artigo faz parte de uma série dedicada à psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/). Um artigo futuro vai tratar da manipulação emocional, que se exerce durante a partida e não depois.*
+*Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/).*
 
 ## Fontes
 
-- Sweet, P. L. (2019). The sociology of gaslighting. *American Sociological Review*, 84(5), 851-875.
+- Sweet, P. L. (2019). [The sociology of gaslighting](https://journals.sagepub.com/doi/10.1177/0003122419874843). *American Sociological Review*, 84(5), 851-875.
 - Hamilton, P. (1938). *Gas Light: A Victorian Thriller in Three Acts*. Constable.
-- FIDE Ethics & Disciplinary Commission (2026). Decisão no caso 12-2025, 3 de julho de 2026.
-- Federação Internacional de Xadrez. *Anti-Cheating Regulations*, FIDE Handbook.
+- FIDE Ethics & Disciplinary Commission (2026). Decisão no caso [12/2025, 3 de julho de 2026](https://ethics.fide.com/wp-content/uploads/2026/07/Decision_Case_12-2025_Final.pdf).
+- Federação Internacional de Xadrez. *Anti-Cheating Regulations*, [FIDE documents](https://fpl.fide.com/anti-cheating-regulations/).

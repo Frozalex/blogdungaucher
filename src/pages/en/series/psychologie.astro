@@ -1,4 +1,8 @@
 ---
+import EditorialSeriesHeader from "../../../components/EditorialSeriesHeader.astro";
+import EditorialSeriesCard from "../../../components/EditorialSeriesCard.astro";
+import "../../../styles/editorial-resources.css";
+import "../../../styles/editorial-series.css";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import {
   grappeText,
@@ -36,6 +40,7 @@ const grappesRaw = await Promise.all(
           const text = await getLocalizedPostText(post, LANG);
           return {
             ...item,
+            post,
             href : await getPostUrlEn(post),
             date : formatDateForLang(post.data.publishDate, LANG),
             title : text.title,
@@ -84,7 +89,6 @@ const structuredData = [
   },
 ];
 ---
-
 <BaseLayout
   title={`${title} | Blog d’un Gaucher`}
   description={description}
@@ -92,166 +96,23 @@ const structuredData = [
   structuredData={structuredData}
   lang="en"
 >
-  <main class="serie">
-    <header class="serie__hero">
-      <p class="serie__eyebrow">A series in {seriePsychologieTotal} articles</p>
-      <h1>The psychology of chess</h1>
-      <p class="serie__lede">
+<div class="resource-page"><div class="container">
+<EditorialSeriesHeader lang="en" active="psychologie" title="The psychology of chess" published={publishedCount} total={seriePsychologieTotal}>
+      <p>
         Chess produces a rare kind of information: an unambiguous defeat, with no teammate to pin it
         on, no element of luck, public and frequent. That is what makes it the best observation
         ground there is for understanding how a brain handles what contradicts it.
       </p>
-      <p class="serie__lede">
+      <p>
         Every article opens on a scene from a game, cites the founding study <strong>and its
         critique</strong>, and ends with one thing to do. Several classics you think you know did not
         survive replication: that gets said every time.
       </p>
-      <p class="serie__progress">
-        <strong>{publishedCount}</strong> of {seriePsychologieTotal} article{seriePsychologieTotal > 1 ? "s" : ""} published.
-      </p>
-    </header>
 
-    {grappes.map((grappe) => (
-      <section class="grappe" id={grappe.id}>
-        <h2>{grappe.titre}</h2>
-        <p class="grappe__chapeau">{grappe.chapeau}</p>
-        <ol class="grappe__list">
-          {grappe.items.map((item) => (
-            <li class:list={["item", { "item--pilier" : item.pilier }]}>
-              <a href={item.href}>
-                <span class="item__title">{item.title}</span>
-                {item.excerpt && <span class="item__excerpt">{item.excerpt}</span>}
-                <span class="item__meta">
-                  <span class="item__date">{item.date}</span>
-                </span>
-              </a>
-            </li>
-          ))}
-        </ol>
-      </section>
-    ))}
-  </main>
+<Fragment slot="status">{grappes[0]?.items[0]&&<a class="resource-button" href={grappes[0].items[0].href}>Start reading →</a>}<a class="resource-link series-status-link" href="#parcours">Explore the themes ↓</a></Fragment>
+</EditorialSeriesHeader>
+<nav class="series-jumps" id="parcours" aria-label="Explore the themes"><span>Explore the themes</span><ol>{grappes.map((grappe,i)=><li><a href={`#${grappe.id}`}>{String(i+1).padStart(2,"0")} · {grappe.titre}</a></li>)}</ol></nav>
+{grappes.map((grappe,i)=><section class="series-section" id={grappe.id}><div class="series-section__heading"><span class="series-section__number" aria-hidden="true">{String(i+1).padStart(2,"0")}</span><h2>{grappe.titre}</h2></div><p class="series-section__intro">{grappe.chapeau}</p><ol class:list={["series-articles",{"series-articles--single":grappe.items.length===1,"series-articles--pair":grappe.items.length===2}]}>{grappe.items.map(item=><li><EditorialSeriesCard lang="en" post={item.post} title={item.title} excerpt={item.excerpt} href={item.href} pilier={item.pilier} /></li>)}</ol></section>)}
+<div class="resource-end"><a class="resource-link" href="/en/series/">← All series</a></div>
+</div></div>
 </BaseLayout>
-
-<style>
-  .serie {
-    max-width: var(--container);
-    margin: 0 auto;
-    padding: 3rem 1.25rem 5rem;
-  }
-
-  .serie__hero {
-    max-width: 46rem;
-    margin-bottom: 3.5rem;
-  }
-
-  .serie__eyebrow {
-    font-family: var(--font-display);
-    font-size: 0.8rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--green);
-    margin-bottom: 0.75rem;
-  }
-
-  .serie__hero h1 {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 5vw, 3rem);
-    line-height: 1.1;
-    margin-bottom: 1.25rem;
-  }
-
-  .serie__lede {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: var(--text-muted);
-    margin-bottom: 1rem;
-  }
-
-  .serie__progress {
-    margin-top: 1.5rem;
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--border-soft);
-    border-radius: var(--radius-md);
-    background: var(--surface-warm);
-    font-size: 0.95rem;
-    color: var(--text-muted);
-  }
-
-  .grappe {
-    margin-bottom: 3rem;
-  }
-
-  .grappe h2 {
-    font-family: var(--font-display);
-    font-size: clamp(1.25rem, 3vw, 1.6rem);
-    margin-bottom: 0.4rem;
-  }
-
-  .grappe__chapeau {
-    color: var(--text-dim);
-    font-size: 0.95rem;
-    margin-bottom: 1.25rem;
-    max-width: 44rem;
-  }
-
-  .grappe__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: 0.6rem;
-  }
-
-  .item > a,
-  .item > div {
-    display: block;
-    padding: 0.9rem 1.1rem;
-    border: 1px solid var(--border-soft);
-    border-radius: var(--radius-md);
-    background: var(--surface);
-    text-decoration: none;
-    color: inherit;
-    transition: border-color var(--motion-fast) var(--ease-out),
-      transform var(--motion-fast) var(--ease-out);
-  }
-
-  .item > a:hover,
-  .item > a:focus-visible {
-    border-color: var(--green-border);
-    transform: translateX(2px);
-  }
-
-  .item--pilier > a,
-  .item--pilier > div {
-    border-left: 3px solid var(--green);
-  }
-
-  .item__title {
-    display: block;
-    font-family: var(--font-display);
-    font-size: 1.02rem;
-    line-height: 1.35;
-  }
-
-  .item__excerpt {
-    display: block;
-    margin-top: 0.35rem;
-    font-size: 0.9rem;
-    line-height: 1.55;
-    color: var(--text-dim);
-  }
-
-  .item__meta {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin-top: 0.5rem;
-  }
-
-
-  .item__date {
-    font-size: 0.8rem;
-    color: var(--text-dim);
-  }
-</style>

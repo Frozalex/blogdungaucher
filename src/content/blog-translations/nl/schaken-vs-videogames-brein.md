@@ -28,6 +28,8 @@ faq:
 heroImage:
   src: "/images/og-default.png"
   alt: "Schaakbord en gamecontroller: twee verhoudingen tot het brein"
+heroImageAlt: Een gamecontroller en een schaaktoren in dezelfde lichtcirkel.
+
 ---
 
 Schaken heeft een imago. Dat van het serieuze, intellectuele, vormende spel. Videogames hebben een ander imago: verslavend vermaak, verdovend, aandachtsvernietigend. Deze twee beelden zijn karikaturen. De wetenschap van de afgelopen 20 jaar heeft ons begrip van beide activiteiten aanzienlijk gecompliceerd.

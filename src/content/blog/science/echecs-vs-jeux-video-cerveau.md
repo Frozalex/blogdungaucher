@@ -5,7 +5,7 @@ publishDate: "2026-12-21"
 category: "science"
 featured: false
 featuredRank: 99
-readingTime: "7 min"
+readingTime: "6 min"
 pillar: "Cerveau"
 tags: ["jeux vidéo", "neurosciences", "cognition", "attention", "réflexes", "addiction"]
 seoTitle: "Échecs vs jeux vidéo : ce que dit la science sur le cerveau"
@@ -23,9 +23,10 @@ faq:
   - question: "Jouer beaucoup suffit-il à définir une addiction ?"
     answer: "Non. L'OMS retient notamment une perte de contrôle et une altération importante du fonctionnement."
 heroImage:
-  src: "/images/og-default.png"
-  alt: "Échiquier et manette de jeu vidéo : deux rapport au cerveau"
-ogImage: "/images/og-default.png"
+  src: /images/blog/echecs-vs-jeux-video-cerveau-hero.webp
+  alt: Une manette et une tour d’échecs partagent le même cercle de lumière.
+ogImage: /images/og/echecs-vs-jeux-video-cerveau-og.webp
+
 ---
 
 Les échecs ont l'image du jeu sérieux ; les jeux vidéo, celle du divertissement parfois excessif. Ces images ne remplacent pas une comparaison. Un jeu d'action, une aventure narrative et une partie d'échecs ne demandent pas exactement la même chose.
@@ -54,11 +55,50 @@ Les sources ici ouvertes ne mesurent pas un risque comparatif de dépendance ent
 
 Si ta pratique empiète régulièrement sur ton sommeil, tes obligations ou tes relations et que tu n'arrives plus à la réduire, prends ces conséquences au sérieux, quelle que soit l'activité.
 
+## Définir une comparaison qui pourrait vraiment répondre
+
+« Quel jeu est meilleur pour le cerveau ? » mélange plusieurs résultats possibles. Veux-tu apprendre plus vite les règles, suivre plusieurs cibles, calculer une suite, conserver une information ou réussir un exercice scolaire ? Les réponses ne se déduisent pas du prestige du jeu.
+
+**Expérience fictive.** On attribue au hasard des volontaires à un cours d'échecs, à un jeu vidéo précis ou à une autre activité encadrée. On prévoit la même durée, des attentes aussi comparables que possible et des tests avant/après. On mesure aussi les abandons. Ce dispositif répondrait mieux à un effet de l'entraînement qu'une simple comparaison entre passionnés.
+
+Encore faudrait-il choisir les tests sans favoriser mécaniquement l'activité la plus proche de leur format. Une tâche presque identique à l'exercice entraîné établit un apprentissage utile, mais pas une supériorité cognitive générale. Une mesure différée aiderait à savoir ce qui reste après la fin du programme.
+
+## Pourquoi séparer habitués et personnes entraînées
+
+La synthèse de [Bediou et collègues](https://access.archive-ouverte.unige.ch/access/metadata/477d322a-8d9b-41b9-be0c-12152c424642/download) distingue les différences observées entre joueurs d'action habituels et non-joueurs des effets d'interventions d'entraînement. Les premières peuvent inclure une sélection : certaines personnes choisissent davantage une activité parce qu'elle correspond déjà à leurs aptitudes ou préférences.
+
+Les interventions répondent mieux à la question du changement, mais leur qualité dépend des comparaisons, des mesures et des attentes. La méta-analyse discute aussi le biais de publication. Elle ne propose pas un classement de toutes les activités selon une quantité unique de « cerveau développé ».
+
+Pour les échecs, les limites de transfert présentées par Sala et Gobet demandent la même discipline. Tu peux reconnaître un progrès dans un domaine sans le convertir automatiquement en progrès scolaire ou professionnel.
+
+## Les mécanismes d'une activité se décrivent à une échelle précise
+
+Une partie d'échecs à cadence longue peut demander de conserver un plan et de calculer une variante ; un blitz peut imposer des choix rapides. Un jeu vidéo peut combiner exploration, coopération, stratégie, vitesse et narration, selon son genre et son mode.
+
+La liste de ces exigences n'est pas encore la preuve d'un bénéfice général. Solliciter une fonction pendant le jeu et améliorer durablement cette fonction hors du jeu sont deux propositions différentes. Il faut mesurer la seconde pour la conclure.
+
+**Exemple pédagogique.** Mieux reconnaître un mat de couloir après des exercices montre un apprentissage de motifs échiquéens. Mieux suivre des cibles dans une tâche visuelle après un entraînement pourrait montrer un progrès sur cette mesure. Comparer les deux demanderait un critère commun ; additionner leurs avantages avec des mots différents ne crée pas ce critère.
+
+## Les échecs sur écran rendent la frontière moins simple
+
+Tu peux jouer aux échecs sur un ordinateur, étudier sans écran ou alterner. L'interface, le rythme des relances et les habitudes de pratique peuvent alors compter autant que le nom de l'activité pour décrire ta soirée.
+
+Une comparaison utile distingue le contenu du jeu, son support et ton usage. Un jeu vidéo joué avec des amis à une heure choisie n'est pas identique à une session solitaire sans limite ; les mêmes distinctions peuvent être faites pour les échecs en ligne.
+
+L'[OMS](https://www.who.int/standards/classifications/frequently-asked-questions/gaming-disorder) définit le trouble du jeu vidéo par un ensemble de critères et un retentissement important. Ces critères ne constituent pas une mesure comparative de dopamine entre genres de jeux ni un diagnostic fondé sur la seule durée.
+
+## Choisir un loisir sans lui demander une certification d'intelligence
+
+Proposition pratique : précise ce que tu veux retrouver cette semaine, plaisir, apprentissage d'une compétence ou échange avec d'autres. Choisis une activité et un cadre compatibles avec ton sommeil et tes autres engagements. Après la séance, vérifie ce que tu as effectivement appris ou apprécié.
+
+Tu peux pratiquer les deux sans optimiser chaque minute pour une capacité générale supposée. Leur valeur peut venir du jeu lui-même, de la culture et des relations qu'il rend possibles. Une lecture rigoureuse des études permet de conserver ces raisons complètes sans leur ajouter des promesses qu'elles n'établissent pas.
+
 ## Choisir une pratique qui te convient
 
 Pour décider, sépare trois questions : est-ce que l'activité te plaît ? Qu'apprends-tu précisément ? Quelle place prend-elle dans ta semaine ? Un bénéfice mesuré sur une tâche ne compense pas automatiquement un sommeil sacrifié.
 
 Tu peux suivre un objectif simple : analyser une partie, apprendre une mécanique, ou limiter une session pour garder une autre activité prévue. La comparaison gagne à porter sur tes usages réels, sans déclarer une activité saine par nature et l'autre nocive.
+
 
 ## Sources
 

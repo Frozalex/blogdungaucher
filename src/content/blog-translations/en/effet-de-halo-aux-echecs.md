@@ -48,6 +48,8 @@ faq:
       other things. The useful rule is narrower: your opponent's rating shouldn't enter into the
       evaluation of a position. Preparing against a player is legitimate; believing a move is better
       because he's higher rated is not.
+heroImageAlt: Two identical objects, one surrounded by an amber halo.
+
 ---
 
 Complicated position, middlegame. Your opponent plays a move you weren't expecting. A strange move: he puts his rook on a square that seems to have no future.

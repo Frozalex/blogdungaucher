@@ -40,6 +40,7 @@ faq:
       belangrijkste is. Perft kijkt niet naar de vijftigzettenregel, niet naar remise door herhaling,
       niet naar de detectie van mat en pat, en uiteraard niet naar de spelkwaliteit. Die punten
       vragen hun eigen tests.
+heroImageAlt: Een hand controleert kralen aan de uiteinden van vertakte twijgen.
 ---
 
 Je zetgenerator produceert exact de juiste zetten op 1.498 echte posities. Dat heeft [het vorige artikel](/fr/blog/generer-les-coups-legaux-en-python/) vastgesteld, over 41.648 zetten één voor één vergeleken met Stockfish.

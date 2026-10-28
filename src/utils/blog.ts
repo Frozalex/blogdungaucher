@@ -1,7 +1,7 @@
 import { getCollection, getEntry, type CollectionEntry } from "astro:content";
 
 import { categoryMap, siteConfig, type CategorySlug } from "../data/site";
-import { stripInlineMath } from "./inline-math";
+import { plainFrontmatterText } from "./frontmatter-text";
 import { isPublicAssetAvailable } from "./public-asset";
 
 export type BlogEntry = CollectionEntry<"blog">;
@@ -491,15 +491,13 @@ export function buildFaqJsonLd(
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    // `stripInlineMath` : les réponses de frontmatter contiennent parfois du
-    // LaTeX (`$10^{120}$`). Injecté tel quel dans le JSON-LD, Google l'affiche
-    // en clair dans le rich result ; on le réduit donc à sa forme lisible.
+    // Même texte lisible que la FAQ affichée, sans balises ni syntaxe Markdown/LaTeX.
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
-      name: stripInlineMath(faq.question),
+      name: plainFrontmatterText(faq.question),
       acceptedAnswer: {
         "@type": "Answer",
-        text: stripInlineMath(faq.answer),
+        text: plainFrontmatterText(faq.answer),
       },
     })),
   };

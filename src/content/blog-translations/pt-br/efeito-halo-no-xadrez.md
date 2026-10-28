@@ -49,6 +49,8 @@ faq:
       exemplo. A regra útil é mais estreita: o rating do adversário não deve entrar na
       avaliação de uma posição. Preparar contra um jogador é legítimo, achar um lance melhor porque
       ele tem rating mais alto não é.
+heroImageAlt: Dois objetos idênticos, um deles cercado por um halo âmbar.
+
 ---
 
 Posição complicada, meio-jogo. O seu adversário joga um lance que você não esperava. Um lance esquisito: ele coloca a torre numa casa aparentemente sem futuro.

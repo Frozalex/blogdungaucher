@@ -63,13 +63,18 @@ faq:
       passant est <strong>réellement jouable</strong> par le camp au trait. Les deux positions sont
       identiques sur l'échiquier, mais les chaînes diffèrent. Adopter la seconde convention suppose de
       savoir générer les coups, ce qui vient à l'article suivant.
+heroImage:
+  src: /images/blog/representer-un-echiquier-en-python-hero.webp
+  alt: Une feuille pliée relie un quadrillage à des compartiments ordonnés.
+ogImage: /images/og/representer-un-echiquier-en-python-og.webp
+
 ---
 
-Un échiquier a soixante-quatre cases. Python a des listes. La conclusion semble s'imposer toute seule, et c'est exactement pour cela qu'elle est piégeuse.
+La représentation de l'échiquier détermine comment le programme conserve une position, accède aux pièces et applique ou annule un coup. Une liste de soixante-quatre cases constitue une possibilité ; son intérêt doit être comparé à celui d'autres organisations des données.
 
-Cet article construit la structure de données sur laquelle reposera tout le reste de la série : les dix articles suivants ne feront qu'appeler ses fonctions. Un mauvais choix ici ne se rattrape pas, il se paie en lenteur et en bugs jusqu'à la fin. Bonne nouvelle : le bon choix pour un moteur en Python est aussi le plus lisible des trois candidats.
+Cet article examine trois approches et construit la structure utilisée dans la suite de la série. Les critères de choix sont la lisibilité, les opérations nécessaires et les possibilités de vérification. L'objectif est de disposer de fonctions fiables sur lesquelles la génération des coups et la recherche pourront s'appuyer.
 
-*Cet article fait suite à [Programmer un moteur d'échecs en Python : par où commencer](/fr/blog/moteur-echecs-python-par-ou-commencer/), qui installe l'atelier.*
+L'[article d'introduction au moteur d'échecs en Python](/fr/blog/moteur-echecs-python-par-ou-commencer/) présente le projet et l'installation de l'atelier.
 
 ## Le cavalier qui traverse le mur
 

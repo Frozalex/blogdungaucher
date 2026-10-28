@@ -1,133 +1,98 @@
-﻿---
-heroImageAlt: "Ilustração em pixel art: uma rede neural de um lado, uma árvore de busca algorítmica do outro, tabuleiro de xadrez no centro, « AlphaZero vs Stockfish »"
-title: "AlphaZero contra Stockfish: a revolução da inteligência artificial no xadrez"
-excerpt: >-
-  Em dezembro de 2017, a DeepMind publicava os resultados de um match que mudou a forma como se pensa tanto a
-  inteligência artificial quanto o xadrez. O AlphaZero, treinado sem dados humanos, batia o Stockfish com um estilo
-  de jogo que ninguém tinha antecipado.
-seoTitle: "AlphaZero contra Stockfish: a revolução da IA no xadrez"
-seoDescription: "AlphaZero vs Stockfish 2017: aprendizado por reforço, rede neural, estilo de jogo revolucionário. Como a IA mudou a compreensão do xadrez."
-frSlug: echecs-alphazero-stockfish
-faq:
-  - question: O AlphaZero continua sendo o melhor programa de xadrez ?
-    answer: >-
-      A questão é complexa. A DeepMind não publicou nenhuma versão pública do AlphaZero. O Stockfish foi
-      massivamente aprimorado desde 2017, incorporando redes neurais na sua avaliação (NNUE, Efficiently Updatable
-      Neural Network). A versão atual do Stockfish (Stockfish 16/17) é provavelmente melhor que o AlphaZero tal como
-      ele era em 2017. O Leela Chess Zero (Lc0), equivalente open-source do AlphaZero, continua sendo desenvolvido e
-      representa a abordagem de deep learning. A fronteira entre as duas abordagens se tornou difusa.
-  - question: Por que as condições do match AlphaZero-Stockfish são contestadas ?
-    answer: >-
-      Principalmente porque o Stockfish rodava sem a base de finais de Syzygy (uma biblioteca de finais
-      perfeitamente calculados que o Stockfish normalmente usa), e porque a configuração de hardware do AlphaZero
-      (TPUs do Google, hardware especializado) não era diretamente comparável à do Stockfish (CPU padrão).
-      Resultados publicados depois na Science (dezembro de 2018), com condições mais equilibradas, confirmavam
-      ainda assim a superioridade do AlphaZero, mas com uma vantagem menos esmagadora.
-  - question: O que é o sistema NNUE, que revolucionou o Stockfish ?
-    answer: >-
-      NNUE (Efficiently Updatable Neural Network) é uma arquitetura de rede neural concebida para funcionar
-      muito rápido em CPUs padrão. Integrada ao Stockfish desde 2020, ela substitui a antiga função
-      de avaliação heurística por uma rede neural treinada em milhões de posições avaliadas pelo próprio
-      Stockfish. Resultado : o Stockfish NNUE combina a velocidade de busca do alfa-beta com a riqueza de avaliação
-      das redes neurais : um híbrido que elevou o seu nível em cerca de 80-100 pontos Elo.
-  - question: O AlphaZero realmente 'redescobriu' conceitos de xadrez esquecidos ?
-    answer: >-
-      Mais precisamente : ele jogou ideias que eram conhecidas teoricamente, mas consideradas 'arriscadas demais' ou
-      'pouco sólidas' pelos padrões dos motores clássicos. Peões de gambito mantidos durante muitos
-      lances em troca de compensação dinâmica, estruturas de peões assimétricas que o Stockfish avaliaria
-      negativamente, mas que contêm 'venenos' táticos. Grandes Mestres como Kasparov e Seirawan comentaram que o
-      estilo do AlphaZero às vezes lembrava o dos jogadores românticos do século XIX : maximizar as peças ativas
-      em vez da contagem de material.
-  - question: O Leela Chess Zero (Lc0) está acessível ao público ?
-    answer: >-
-      Sim, completamente. O Lc0 é um projeto open-source que implementa a arquitetura do AlphaZero usando pesos
-      de rede neural treinados pela comunidade. Pode ser baixado gratuitamente e se integra a
-      interfaces de análise como Arena ou ChessBase. Numa boa GPU, joga em nível comparável aos melhores
-      Stockfish. É o caminho para que jogadores comuns tenham acesso a um estilo de análise 'AlphaZero-like' : que pode
-      ser mais instrutivo que o Stockfish para compreender posições de compensação intuitiva.
+---
+heroImageAlt: Muitos fios paralelos ao lado de uma única curva contínua.
+title: "AlphaZero contra Stockfish: a revolução da IA no xadrez"
+excerpt: "Os resultados publicados em 2017 e 2018 mudaram a discussão sobre IA e xadrez. Entenda a arquitetura de AlphaZero, as condições dos matches e os limites das interpretações das partidas."
+seoTitle: "AlphaZero contra Stockfish: arquitetura, partidas e protocolos"
+seoDescription: "AlphaZero e Stockfish em 2017 e 2018: autojogo, MCTS, condições dos matches e NNUE. Como ler os resultados sem confundir desempenho com compreensão humana."
+frSlug: "echecs-alphazero-stockfish"
+faq: [{"question": "AlphaZero ainda é o melhor programa de xadrez?", "answer": "Os resultados de 2017 e 2018 se referem a versões e hardware específicos. Não constituem um ranking atual de todos os motores. Stockfish depois incorporou NNUE; Lc0 é uma implementação pública inspirada em AlphaZero."}, {"question": "Por que as condições do match AlphaZero–Stockfish são contestadas?", "answer": "Por várias diferenças de protocolo. Stockfish rodava sem bases de finais nem livro de aberturas, cujo uso depende da configuração do motor. O hash era limitado a 1 GB, pouco para 64 threads. O tempo era fixo de um minuto por lance, anulando sua gestão do tempo. As TPUs de AlphaZero não eram comparáveis ao hardware de Stockfish. A publicação de 2018 em Science, com três horas por partida mais quinze segundos por lance e 44 núcleos, confirma a vantagem de AlphaZero nas condições do teste, com diferença menor: 155 vitórias, seis derrotas e 839 empates em mil partidas, cerca de 57,5% dos pontos."}, {"question": "O que é o NNUE incorporado ao Stockfish?", "answer": "NNUE, Efficiently Updatable Neural Network, é uma arquitetura de rede neural concebida para rodar rapidamente em CPUs comuns. Incorporada ao Stockfish em 2020, substitui a antiga avaliação heurística por uma rede treinada com milhões de posições avaliadas pelo próprio Stockfish. A ideia veio do shogi, onde Yu Nasu a introduziu em 2018. Stockfish NNUE combina busca alfa-beta com avaliação neural. A equipe atribuiu à adoção do NNUE pelo menos 80 pontos Elo nas condições dos seus testes."}, {"question": "AlphaZero realmente redescobriu conceitos perdidos de xadrez?", "answer": "As publicações mostram escolhas de abertura surgidas no autojogo. Isso não prova que um conceito fosse desconhecido dos humanos nem que cada sacrifício seja correto contra qualquer defesa."}, {"question": "Leela Chess Zero, Lc0, está disponível ao público?", "answer": "Sim. O projeto Lc0 publica seu motor com licença livre e oferece download. É preciso verificar os requisitos da versão escolhida; isso não garante que seja mais didático em cada posição."}]
 ---
 
-Dezembro de 2017. A equipe da DeepMind publica um artigo de pesquisa e, em anexo, 10 partidas comentadas. Essas 10 partidas eletrizaram a comunidade enxadrística de uma forma que nada havia feito desde o match Fischer-Spassky de 1972.
+Dezembro de 2017. A equipe da DeepMind publica um artigo de pesquisa e, no apêndice, dez partidas comentadas. Essas dez partidas entusiasmaram a comunidade do xadrez de uma maneira que nada havia feito desde o match Fischer–Spassky de 1972.
 
-Não era simplesmente que um programa batia outro programa. Era a *forma* como ele batia.
+Não era apenas um programa vencendo outro. Era a maneira como vencia.
 
-## A arquitetura do AlphaZero
+## A arquitetura de AlphaZero
 
-Para compreender por que o AlphaZero representa uma ruptura, é preciso entender o que ele faz : e o que não faz.
+Para entender por que AlphaZero representa uma ruptura, é preciso compreender o que faz e o que não faz.
 
-O AlphaZero é um sistema de **deep reinforcement learning** (aprendizado por reforço profundo). Ele combina duas tecnologias:
+AlphaZero é um sistema de **aprendizado por reforço profundo**, ou *deep reinforcement learning*. Combina duas tecnologias:
 
-**Uma rede neural profunda** que toma como entrada a posição do tabuleiro e produz duas saídas : uma distribuição de probabilidade sobre todos os lances legais (a "policy head" : quais lances parecem promissores) e uma avaliação da posição (-1 a +1, correspondendo a uma vitória das pretas, uma remis ou uma vitória das brancas : a "value head").
+**Uma rede neural profunda** que recebe a posição do tabuleiro como entrada e produz duas saídas: uma distribuição de probabilidade sobre os lances legais, a *policy head*, indicando quais parecem promissores, e um valor entre -1 e +1 que estima o resultado do ponto de vista do jogador com a vez, a cabeça de valor.
 
-**A busca em árvore Monte Carlo (MCTS)** que usa a rede neural para guiar a busca. Em vez de explorar a árvore de jogo de forma exaustiva com poda alfa-beta, o MCTS simula partidas até o fim escolhendo os lances segundo as probabilidades da policy head e propagando os resultados para a raiz.
+**A busca em árvore Monte Carlo, MCTS,** que usa a rede neural para guiar a busca. Em vez de explorar exaustivamente a árvore de jogo com poda alfa-beta, MCTS seleciona caminhos até as folhas da árvore explorada; a rede fornece ali uma avaliação que é propagada até a raiz. Essas simulações não são todas jogadas até o mate.
 
-O que é notável : o AlphaZero recebeu apenas **as regras do jogo**. Nenhuma partida humana. Nenhuma heurística de posição. Nenhuma base de finais. Nenhum conhecimento sobre o que é uma "boa" posição : apenas a regra de que o xeque-mate é a vitória.
+O destaque: AlphaZero recebeu apenas **as regras do jogo**. Nenhuma partida humana. Nenhuma heurística posicional. Nenhuma base de finais. Nenhum conhecimento do que seria uma posição “boa”, mas com uma representação, uma arquitetura e um procedimento de treinamento concebidos pelos pesquisadores.
 
-Ele jogou 44 milhões de partidas contra si mesmo em 9 horas (em TPUs do Google, hardware especializado), ajustando seus pesos de rede após cada partida. Ao final, havia desenvolvido uma compreensão do jogo de uma forma que ninguém havia programado.
+Jogou 44 milhões de partidas contra si mesmo em cerca de nove horas, ajustando os pesos da rede durante o treinamento. As “nove horas” merecem uma precisão, pois costumam ser citadas como se fosse uma conquista econômica: nesse período, 5.000 TPUs de primeira geração geravam as partidas e 16 TPUs de segunda geração treinavam a rede no protocolo de 2018, contra 64 no preprint de 2017. Não era um computador em uma garagem. Ao final, desenvolveu uma maneira de jogar que ninguém havia programado explicitamente.
 
-## O match: 28-0-72
+![AlphaZero: orientar uma busca](/images/pt-br/alphazero-01-recherche.svg)
 
-No match de dezembro de 2017, o AlphaZero jogou 100 partidas contra o Stockfish 8 (a melhor versão da época) em cadência clássica. Resultado: 28 vitórias para o AlphaZero, 72 empates, 0 derrota.
+## O match: 28 vitórias, nenhuma derrota e 72 empates
 
-Esse placar é estupefante por vários aspectos. Um programa que bate o Stockfish *sem nunca perder* é extraordinário : o Stockfish 8 era ele mesmo muito superior a qualquer humano. E as vitórias não eram vitórias técnicas em finais complicados : construíam-se sobre temas posicionais claros.
+No match de dezembro de 2017, AlphaZero jogou cem partidas contra Stockfish 8, a melhor versão na época. Resultado: 28 vitórias de AlphaZero, 72 empates e nenhuma derrota. Com as brancas, foram 25 vitórias e 25 empates; com as pretas, três vitórias e 47 empates.
 
-Críticas legítimas existem sobre as condições do match:
-- O Stockfish rodava sem suas bases de finais Syzygy
-- O hardware do AlphaZero (TPUs) não é diretamente comparável aos CPUs do Stockfish
-- O Stockfish não havia sido reotimizado para o hardware disponível
+Um esclarecimento sobre o ritmo, pois é o erro mais comum sobre esse match: **não era um controle de tempo clássico**. Cada programa dispunha de um minuto fixo de reflexão por lance. Isso muda a leitura do resultado, porque Stockfish não podia administrar o tempo, distribuir o esforço pelos lances críticos ou pensar durante o tempo adversário. Sua gestão do tempo, parte de sua força, ficou fora de ação.
 
-Essas críticas levaram a DeepMind a publicar em dezembro de 2018 uma versão revisada na revista *Science*, com condições mais equilibradas. O resultado confirmava a superioridade do AlphaZero, mas com uma vantagem menos esmagadora : cerca de 64% de vitórias nas posições abertas, placar global favorável mas não 28-0.
+O resultado impressiona por vários aspectos. Um programa vencer Stockfish *sem perder uma única partida* é extraordinário; Stockfish 8 já era muito superior a qualquer humano. E as vitórias não eram apenas técnicas em finais complicados: eram construídas em temas posicionais claros.
 
-## O estilo de jogo : o que fascinou os Grandes Mestres
+Existem críticas legítimas às condições do match:
+- Stockfish rodava sem bases de finais e sem livro de aberturas
+- Seu espaço de hash estava limitado a 1 GB, pouco para 64 threads
+- O tempo fixo de um minuto por lance neutralizava sua gestão do tempo
+- As TPUs de AlphaZero não são diretamente comparáveis às CPUs de Stockfish
 
-O placar impressionava. O estilo estupefazia.
+Essas críticas levaram a DeepMind a publicar em dezembro de 2018 uma versão revista e avaliada por pares em *Science*, com condições mais robustas: mil partidas, três horas por partida mais quinze segundos por lance, 44 núcleos para Stockfish e a versão campeã do TCEC 2016.
 
-Os Grandes Mestres que comentaram as 10 partidas publicadas (Kasparov, Nakamura, Seirawan) usavam termos incomuns no contexto da análise de motores : "criativo", "humano", "romântico", "vivo".
+O resultado confirma a superioridade de AlphaZero nessas condições, mas a diferença diminui: **155 vitórias, seis derrotas e 839 empates em mil partidas**, cerca de 57,5% dos pontos. Está longe do 28 a zero de 2017. AlphaZero também venceu Stockfish a partir de cada uma das doze aberturas humanas mais jogadas, nessas condições experimentais; os testes com desvantagem de tempo devem ser distinguidos desse resultado.
 
-**Os sacrifícios posicionais.** O AlphaZero era notavelmente disposto a sacrificar material (tipicamente um peão, às vezes mais) para obter uma compensação dinâmica. O Stockfish, com sua avaliação material precisa, frequentemente recusaria esses sacrifícios ou os avaliaria como negativos. O AlphaZero os jogava e mantinha a compensação durante muitos lances, até que o material se transformasse em vantagem posicional.
+Os números de velocidade também mudam entre os artigos e merecem ser citados juntos, sem mistura: 80 mil posições por segundo contra 70 milhões em 2017; 60 mil contra 60 milhões em 2018. Nos dois casos, a mesma ordem de grandeza, com uma proporção próxima de um para mil.
 
-**A confiança nas posições "biologicamente ganhadoras".** Posições em que a avaliação numérica do Stockfish era ~+0,2 (ligeiramente favoráveis às brancas, quase neutras) mas onde o AlphaZero mantinha uma pressão contínua, obrigando as pretas a defender posições desconfortáveis lance após lance, até o erro.
+![Dois experimentos distintos](/images/pt-br/alphazero-02-protocoles.svg)
 
-**O estilo "rei ativo" nos finais.** O AlphaZero usava seu rei de forma ofensiva mais cedo do que os motores clássicos : uma prática conhecida nos finais (o rei é uma peça forte nos finais) mas frequentemente diferida pelos motores que avaliam o rei seguro como prioridade absoluta.
+## Examinar as partidas publicadas
 
-Garry Kasparov, analisando as partidas, disse que "reconhecia" esse estilo : não como o de um programa, mas como o de um jogador humano brilhante com uma profunda compreensão posicional. "É assim que eu gostava de jogar quando estava no auge."
+As partidas fornecidas com as publicações permitem estudar sacrifícios, atividade das peças e pressão sobre o rei. Para entender uma escolha, olhe a posição e as defesas disponíveis em vez de atribuir ao programa uma confiança ou intuição humana.
 
-## O que o AlphaZero (re)descobriu na teoria das aberturas
+Uma avaliação próxima de zero não prova que um motor ignore toda iniciativa: depende da versão, da profundidade e dos recursos disponíveis. Um exemplo isolado não mede um estilo universal.
 
-O impacto mais duradouro do AlphaZero na prática do xadrez não é o match em si : é a influência sobre a teoria das aberturas.
+## O que AlphaZero descobriu ou redescobriu nas aberturas
 
-O AlphaZero jogava regularmente vários sistemas que os motores clássicos haviam desvalorizado:
+O impacto mais duradouro de AlphaZero na prática do xadrez não é o match em si: é a influência na teoria das aberturas.
 
-**A Defesa London (1.d4 d5 2.Bf4)**: considerada pelos motores como sólida mas sem mordente. O AlphaZero a jogava com uma energia posicional que inspirou jogadores humanos a reintegrá-la no alto nível. Hoje, Magnus Carlsen e outras elites a utilizam regularmente.
+É preciso distinguir aprender sequências de abertura de influenciar modas humanas. Os resultados publicados não demonstram que AlphaZero tenha trazido o London ou o Gambito do Rei de volta à moda. O repertório ilustrado nas partidas publicadas com as brancas gira em torno de 1.d4, 1.Cf3 e 1.c4. O Gambito do Rei começa com 1.e4 e5 2.f4: é justamente a família de aberturas da qual AlphaZero se afasta. Já o retorno do London ao alto nível é uma tendência humana, anterior e independente. Aliás, London não é uma “defesa”, mas um sistema de desenvolvimento das brancas.
 
-**O Gambito do Rei (1.e4 e5 2.f4)**: uma abertura romântica do século XIX, geralmente considerada insuficiente no mais alto nível. O AlphaZero a jogava e ganhava : revelando recursos que a teoria moderna não havia explorado plenamente.
+O que está realmente documentado é mais interessante que a anedota:
 
-**Estruturas de peões com ilhas múltiplas** que o Stockfish avaliava ligeiramente de forma negativa mas que continham dinâmicas compensatórias.
+**AlphaZero redescobriu aberturas humanas sozinho.** As curvas do artigo de *Science* mostram a frequência de cada abertura nas partidas de autoaprendizado ao longo das horas de treinamento. Sem jamais ter visto uma partida humana, convergiu para aberturas encontradas por gerações de jogadores e depois restringiu progressivamente seu repertório. Experimentou e abandonou algumas aberturas populares entre humanos.
 
-Essas "redescoberta" influenciaram as análises preparatórias das elites. Alguns Grandes Mestres usam explicitamente o [Leela Chess Zero](https://lczero.org) (o equivalente open-source do AlphaZero) para encontrar ideias que o Stockfish teria rejeitado.
+**Um teste com doze aberturas impostas.** É o teste mais esclarecedor do artigo de 2018: para verificar se a força de AlphaZero não vinha de uma especialização estreita, os autores impuseram as doze aberturas humanas mais jogadas, com ambas as cores. Venceu Stockfish a partir de todas elas.
 
-## A convergência : Stockfish NNUE e o fim da dicotomia
+**Sacrifícios posicionais e atividade das peças.** É aí que a influência sobre a prática humana fica mais visível nas partidas publicadas: disposição para devolver material em troca de pressão duradoura e uso dos peões da ala do rei para conquistar espaço, em vez de apenas proteger o rei.
 
-Em 2020, o Stockfish integrou uma arquitetura de rede neural chamada **NNUE** (Efficiently Updatable Neural Network), desenvolvida inicialmente para o shogi.
+Lc0 é um projeto livre inspirado em AlphaZero; essa origem não garante superioridade didática sobre Stockfish.
 
-O NNUE substitui a função de avaliação heurística do Stockfish por uma rede neural treinada em milhões de posições avaliadas pelo próprio Stockfish. Resultado : o Stockfish NNUE combina a velocidade de busca alfa-beta da antiga arquitetura com a riqueza de avaliação posicional das redes neurais.
+## A convergência: Stockfish NNUE e o fim da dicotomia
 
-A melhoria de nível foi imediata : cerca de 80-100 pontos Elo de ganho, tornando o Stockfish NNUE o melhor programa disponível publicamente.
+Em setembro de 2020, com a versão 12, Stockfish incorporou uma arquitetura de rede neural chamada **NNUE**, *Efficiently Updatable Neural Network*, introduzida no shogi por Yu Nasu em 2018 e depois adaptada ao xadrez.
 
-A dicotomia "Stockfish (força bruta) vs AlphaZero (deep learning)" tornou-se obsoleta. As duas abordagens se fundiram. O Leela Chess Zero continua seu desenvolvimento com uma arquitetura mais próxima do AlphaZero, e os dois programas estão hoje próximos em força absoluta.
+NNUE substitui a função de avaliação heurística do Stockfish por uma rede treinada com milhões de posições avaliadas pelo próprio Stockfish. Sua particularidade é ser concebida para rodar rapidamente em um processador comum, sem placa gráfica. Assim, Stockfish NNUE combina a velocidade da busca alfa-beta da arquitetura anterior com a riqueza da avaliação posicional das redes neurais.
 
-## Implicações para a compreensão humana do xadrez
+A melhora foi imediata. A equipe atribuiu somente à adoção do NNUE pelo menos 80 pontos Elo nos seus testes. Um salto considerável para um motor que chegava à décima segunda versão.
 
-A questão mais profunda levantada pelo AlphaZero não é "qual programa é o melhor?" : é "o que nos ensina um programa que joga assim sobre a natureza da compreensão no xadrez?"
+A dicotomia “Stockfish, força bruta, contra AlphaZero, aprendizado profundo” ficou ultrapassada. Avaliação neural e busca alfa-beta podem ser combinadas. Comparar dois motores exige especificar a versão, o hardware e o controle de tempo.
 
-O AlphaZero sugere que existe uma forma de compreensão posicional que não é redutível à avaliação material precisa + busca profunda. Posições que o Stockfish avalia como ~0 (neutras) contêm "gradientes" sutis de pressão e oportunidade que o AlphaZero detecta e explora.
+## O que aproveitar na sua análise
 
-Esses gradientes : difíceis de quantificar numericamente, mas reconhecíveis intuitivamente por um Grande Mestre experiente : assemelham-se ao que os jogadores humanos chamam de "iniciativa", "dinâmica", "peças ativas". O AlphaZero desenvolveu uma forma de medir essas qualidades que as heurísticas clássicas não possuíam.
+Uma partida de motor pode oferecer uma ideia para conferir: atividade contra material, espaço ou segurança do rei. Depois é preciso entender as variantes. Um sacrifício bem-sucedido no protocolo publicado não é autorização geral para sacrificar em uma posição semelhante.
 
-Para os jogadores humanos, o ensinamento é contraintuitivo : às vezes, a posição "objetivamente" ligeiramente inferior mas dinamicamente rica é melhor do que a posição "objetivamente" equivalente mas estática. As avaliações numéricas dos motores, úteis mas imperfeitas, nem sempre capturam essa dinâmica.
+Comparar várias versões e condições também ajuda a ler as avaliações com cuidado. A força de um programa em um match e a explicação de um lance para um humano são duas questões diferentes.
 
-É talvez a contribuição mais duradoura do AlphaZero ao xadrez : lembrar que a medida do bom lance não é apenas numérica. A beleza, a pressão, o sacrifício, a iniciativa (conceitos que os jogadores humanos sempre utilizaram) têm uma realidade computacional, não apenas poética.
+## Fontes
 
----
+- Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Texto](https://arxiv.org/html/1712.01815v1).
+- Silver, D., et al. (2018). *A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play*. Science, 362, 1140–1144. [Artigo e suplemento](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphazero-shedding-new-light-on-chess-shogi-and-go/alphazero_preprint.pdf).
+- Equipe Stockfish (2020). *Introducing NNUE Evaluation*. Stockfish. [Anúncio](https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/).
 
-*O AlphaZero nunca jogou uma partida contra um humano. Seus adversários eram motores e suas próprias cópias anteriores. Nunca sentiu a pressão de um torneio, o desconforto de uma posição perdedora, a alegria de uma bela combinação encontrada. E, no entanto, os Grandes Mestres disseram de seu jogo que era o mais "humano" que já analisaram. Há algo nessa ironia que merece reflexão.*
+- Equipe Stockfish (2020). *Stockfish 12*. [Anúncio](https://stockfishchess.org/blog/2020/stockfish-12/).
+- Projeto Lc0 (sem data). *Leela Chess Zero*. [Apresentação e download](https://lczero.org/).

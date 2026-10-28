@@ -49,6 +49,8 @@ faq:
       Rating is a terrible feedback signal for this: it's slow, noisy, and dependent on your opponent.
       Tactical puzzles, training positions, and theoretical endgames give you an immediate verdict you
       can actually attribute to something.
+heroImageAlt: A bird staying inside a cage with its door wide open.
+
 ---
 
 You've been at 1,550 for fourteen months. You've tried things. You bought a book, you did puzzles for a few weeks, you switched openings.

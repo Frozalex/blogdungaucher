@@ -41,6 +41,8 @@ faq:
       enige beschikbare rechtvaardiging is dat het de hoofdlijn is of dat de engine hem goedkeurt, heb
       je een conclusie overgenomen zonder de redenering, wat haar onbruikbaar maakt in de
       naburige positie.
+heroImageAlt: Papieren pijlen volgen dezelfde bocht, één iets verschoven.
+
 ---
 
 Je bekijkt je database. In deze positie vervolgt 82% van de partijen met dezelfde zet. De evaluatie is goed. De spelers die hem speelden zijn sterk.

@@ -45,6 +45,8 @@ faq:
       Tornando explícita a pergunta da fonte. Diante de cada hipótese sobre o que o adversário vê ou
       prepara, pergunte a si mesmo de onde vem essa informação: de um elemento da posição, ou do que
       você tem na cabeça. Sem prova tirada da posição, trata-se de uma projeção.
+heroImageAlt: Duas figuras sentadas se encaram entre áreas de sombra e luz.
+
 ---
 
 Você vê uma ideia. Um sacrifício de qualidade que abre a coluna. Você calcula, acha que não funciona totalmente, larga a ideia.

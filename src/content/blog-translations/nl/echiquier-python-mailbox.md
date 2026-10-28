@@ -44,6 +44,7 @@ faq:
       passant-slag <strong>echt speelbaar</strong> is voor de partij aan zet. Beide stellingen zijn
       identiek op het bord, maar de tekenreeksen verschillen. De tweede conventie aannemen vereist te weten
       hoe je zetten genereert, wat in het volgende artikel aan bod komt.
+heroImageAlt: Een gevouwen vel verbindt een raster met geordende vakjes.
 ---
 
 Een schaakbord heeft vierenzestig vakken. Python heeft lijsten. De conclusie lijkt zichzelf op te dringen, en precies daarom is ze verraderlijk.

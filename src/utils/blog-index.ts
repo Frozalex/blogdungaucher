@@ -1,4 +1,5 @@
 import { categoryMap, categorySlugs } from "../data/site";
+import { buildSrcset } from "./image-variants";
 import { t, type Lang } from "../i18n/translations";
 import type { SiteLang } from "./blog";
 import {
@@ -35,6 +36,10 @@ export async function buildBlogIndexResponse(lang: SiteLang) {
         date: formatDateForLang(post.data.publishDate, lang),
         iso: post.data.publishDate.toISOString(),
         hero,
+        heroSrcset: hero ? buildSrcset(hero) ?? null : null,
+        imageCredit: hero ? post.data.heroImage?.credit ?? "" : "",
+        imageSource: hero ? post.data.heroImage?.sourceUrl ?? "" : "",
+        imageLicense: hero ? post.data.heroImage?.license ?? "" : "",
         heroAlt: hero ? (heroImageAlt || title) : "",
       };
     }),

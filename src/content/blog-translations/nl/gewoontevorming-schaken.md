@@ -40,6 +40,8 @@ faq:
       De meest lonende is de systematische controle voor je een zet speelt, omdat ze een perfect
       scherpe trigger heeft: de hand die het stuk gaat aanraken. "Meer trainen" is geen gewoonte, het is
       een project. Een gewoonte moet in één enkele actie passen, gekoppeld aan één enkel signaal.
+heroImageAlt: Een uitgesleten rond spoor met een nieuw pad naar buiten.
+
 ---
 
 Elk jaar dezelfde scène.

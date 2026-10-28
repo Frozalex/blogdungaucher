@@ -42,6 +42,8 @@ faq:
       over remiseaanbiedingen, bijvoorbeeld nooit antwoorden voordat je de stelling drie minuten hebt
       geëvalueerd. Het algemene principe is om je beslissingen onafhankelijk te maken van het gedrag van
       de tegenstander, aangezien precies dat gedrag het instrument is.
+heroImageAlt: Een gespannen draad trekt een hangende slinger opzij.
+
 ---
 
 Je staat beter. Duidelijk beter. Je hebt een pion meer en een gezonde structuur, en je hebt nog twintig minuten tegen twaalf.

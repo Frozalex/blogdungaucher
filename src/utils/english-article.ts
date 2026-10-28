@@ -1,5 +1,6 @@
 import GithubSlugger from "github-slugger";
 import { Marked, type Tokens } from "marked";
+import { load } from "cheerio";
 
 import { renderInlineMath, stripInlineMath } from "./inline-math";
 
@@ -27,7 +28,10 @@ export function renderEnglishMarkdown(markdown: string): {
         // nettoyé de son LaTeX (`$35^{10}$` → `35^10`).
         const id = slugger.slug(plain);
         if (depth >= 2 && depth <= 3) {
-          headings.push({ depth, slug: id, text: stripInlineMath(plain) });
+          // Le libellé est du texte Astro : décoder les entités une fois,
+          // tout en conservant l'ancre publique calculée historiquement.
+          const label = load(`<span>${htmlText}</span>`).text().trim();
+          headings.push({ depth, slug: id, text: stripInlineMath(label) });
         }
         return `<h${depth} id="${id}">${htmlText}</h${depth}>\n`;
       },

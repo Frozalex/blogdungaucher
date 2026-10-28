@@ -45,6 +45,8 @@ faq:
       raadpleeg het werkelijke percentage in een database in plaats van te vertrouwen op de indruk, houd
       een logboek bij van alle partijen en niet alleen de opvallende, en vraag je bij elk advies van een
       sterke speler af hoeveel mensen het toepasten zonder dat het werkte.
+heroImageAlt: Een papieren bootje drijft boven verschillende gezonken bootjes.
+
 ---
 
 Er is altijd wel iemand op de club die hetzelfde gambiet al vijftien jaar speelt. Hij verdedigt het met rustige overtuiging: "objectief gezien is het twijfelachtig, maar op clubniveau werkt het altijd."

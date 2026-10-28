@@ -1,12 +1,53 @@
-# Spec — vignettes d'articles « Blog d'un Gaucher » (Midjourney)
+# Spec — vignettes d'articles « Blog d'un Gaucher »
 
 Objectif : doter chaque article d'une **vignette de couverture** unique, générée avec
-Midjourney puis post-traitée. La vignette est l'image affichée dans la carte du portail
+un outil de génération d'images puis post-traitée. La vignette est l'image affichée dans la carte du portail
 (`ArticleCard`), en tête d'article, et dérivée en image de partage (OG / Pinterest).
 
 Complément de `tools/schema/SCHEMA-SPEC.md`, qui couvre les **schémas explicatifs
 insérés dans le corps** de l'article. Les deux systèmes partagent la même famille
 chromatique mais n'ont pas le même rôle : le schéma **explique**, la vignette **attire**.
+
+## Référence visuelle pour les créations présentes et futures
+
+Consigne utilisateur du 19 octobre 2026 : prolonger le pattern et le style de la base
+existante pour les articles restants et ceux à venir. Les images réelles font référence ;
+les anciens prompts sont une aide à la composition, pas un substitut à leur observation.
+
+Références maison examinées :
+
+| Fichier dans `public/images/blog/` | Repères visuels |
+|---|---|
+| `echecs-et-dopamine-hero.webp` | Papier crème, encre très sombre, bleu sourd, grain imprimé, geste suspendu et ondes. |
+| `echecs-et-la-solitude-hero.webp` | Ambre, silhouettes sombres, géométrie simple, ombres franches, scène exprimant le sujet sans texte. |
+| `echecs-et-handicap-hero.webp` | Vert d'eau, métaphore de l'accessibilité, masses sculpturales simplifiées et texture imprimée. |
+
+Ouvrir au moins deux illustrations maison avant chaque nouvelle création, dont une
+de la même rubrique lorsqu'elle existe, et les fournir comme références de style au
+générateur. Reprendre leur traitement graphique, leur texture et leur équilibre des
+masses, tout en créant une métaphore adaptée au nouvel article. Ne pas recopier leur
+scène ni ajouter automatiquement des pièces d'échecs.
+
+Les photographies documentaires en duotone constituent une autre famille déjà présente,
+notamment dans Grand oral. Par exemple, `sujet-grand-oral-maths-combinatoire-hero.webp`
+et `guide-grand-oral-echecs-toutes-specialites-hero.webp` sont des photos tierces,
+identifiées par `heroImage.sourceUrl`. Ne pas les utiliser pour définir le grain ou
+le dessin des illustrations maison ; préserver leur attribution lorsqu'elles sont conservées.
+
+Les formulations et paramètres Midjourney ci-dessous décrivent le workflow historique.
+Avec un autre générateur, traduire les mêmes contraintes en langage naturel et joindre
+les références visuelles ; ne pas lui transmettre les flags Midjourney tels quels.
+
+Avant intégration, comparer la nouvelle vignette à ses références côte à côte à environ
+400 px de large : grain, silhouettes, contraste, palette, simplicité et espace négatif.
+Une conformité chromatique automatique ne vaut pas validation visuelle.
+
+La série complémentaire du 19 octobre 2026 est documentée dans
+[`production-2026-10-19.json`](production-2026-10-19.json) : 84 prompts utilisés avec
+le générateur intégré `imagegen`, références visuelles, fichiers livrés et contrôles.
+Les descriptions traduites sont dans
+[`alt-production-2026-10-19.json`](alt-production-2026-10-19.json). La galerie de revue
+se trouve dans `livrables/vignettes-2026-10-19/index.html`.
 
 ## Règle d'or
 
@@ -30,11 +71,12 @@ chromatique mais n'ont pas le même rôle : le schéma **explique**, la vignette
 | Master livré | `1200 × 800`, WebP qualité 82 |
 | Poids cible | ≤ 130 Ko (plafond dur : 200 Ko) |
 | Emplacement | `public/images/blog/<slug>-hero.webp` |
-| Dérivé partage | `public/images/og/<slug>-og.webp`, `1200 × 630` (recadrage centré) |
+| Dérivé partage | `public/images/og/<slug>-og.webp`, `1200 × 630` (illustration entière sur fond crème ; photo tierce recadrée) |
 
 Le 3:2 est imposé par `.card-thumb-wrap { aspect-ratio: 3 / 2 }`
 (`src/components/ArticleCard.astro`) : générer dans ce ratio évite tout recadrage sur la
-carte. Le dérivé OG en 1,91:1 se coupe ensuite proprement en rognant haut et bas.
+carte. Le dérivé OG en 1,91:1 conserve l'illustration entière sur un canevas crème ;
+seules les photographies tierces sont recadrées au centre.
 
 > Historique : les 9 vignettes existantes sont en `1024 × 576` (16:9) et portent
 > l'extension `.png` alors que ce sont des **JPEG**. Elles sont donc recadrées sur la
@@ -83,9 +125,10 @@ conteneur 3:2. Elles disparaîtront à mesure qu'elles seront remplacées.
 
 ### Zone de sécurité
 
-Le sujet principal doit tenir dans le **rectangle central 3:2 amputé de 12 % en haut et
-en bas** — c'est ce qui survit au recadrage OG 1,91:1. Les coins ne doivent porter aucune
-information critique.
+Garder le sujet principal dans la zone centrale, avec des marges suffisantes pour
+préserver sa lisibilité en petit format. Le dérivé OG des illustrations conserve
+l'image entière ; pour une photographie recadrée en 1,91:1, garder les informations
+critiques hors des 12 % supérieurs et inférieurs.
 
 Le **coin bas-gauche accueille le filigrane** : y garder une zone calme, sans détail fin.
 Le script échantillonne la luminance de ce coin et bascule automatiquement entre cavalier
@@ -219,6 +262,14 @@ Le script affiche aussi un pourcentage de surface dans la bande de la rubrique. 
 inutilisable pour trancher un cas mixte. Ne jamais valider un lot sur ce seul chiffre.
 
 ## Post-traitement
+
+Mise à jour du 19 octobre 2026 : l'utilisateur demande explicitement le logo du site
+en filigrane sur **toutes** les couvertures publiées, photographies documentaires
+comprises. Conserver impérativement les crédits, licences et liens des photos ; le
+logo est une marque de publication, pas une attribution de leur création. Ne pas
+ajouter un second logo aux images déjà filigranées. Le déploiement vérifié des 152
+couvertures est consigné dans `deployment-watermarks-2026-10-19.json` et son contrôle
+public dans `deployment-live-result-2026-10-19.json`.
 
 ```bash
 node scripts/prepare-vignette.mjs ~/Téléchargements/mj-export.png echecs-et-dopamine

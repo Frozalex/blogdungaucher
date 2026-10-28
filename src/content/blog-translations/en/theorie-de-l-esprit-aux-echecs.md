@@ -47,6 +47,7 @@ faq:
       The explicit side reasonably is: verbal false-belief tasks have given consistent results for
       forty years. The implicit side, supposed to show the same competence in infants, has serious
       replication problems, and there is no consensus today about what those tasks measure.
+heroImageAlt: Two profiles separated by a screen, each looking at a different object.
 ---
 
 Club position, your opponent is rated 200 points below you. You can play the objectively best move, which leads to a winning but long and technical endgame.

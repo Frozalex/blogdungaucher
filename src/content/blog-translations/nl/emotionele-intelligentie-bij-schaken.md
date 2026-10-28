@@ -45,6 +45,8 @@ faq:
       toestand juist het vermogen om te beslissen aantast. Vandaar het belang van een cijfermatige
       regel, koel besloten, van het type: na twee opeenvolgende nederlagen stop ik, ongeacht mijn indruk
       van het moment.
+heroImageAlt: Een hand houdt een kom met zacht rimpelend water vast.
+
 ---
 
 Je hebt net drie partijen op rij verloren. Je weet het, je weet precies wat dat betekent, je hebt er zelfs artikelen over gelezen.

@@ -1,147 +1,118 @@
-﻿---
+---
 heroImageAlt: "Uma passarela de giz inacabada ligando dois estrados, com uma casa em formato de tabuleiro."
-title: "Xadrez na escola: o que a pesquisa realmente diz sobre o aprendizado"
-excerpt: >-
-  A Armênia tornou o xadrez obrigatório no ensino fundamental. A Venezuela lançou o maior programa nacional da história.
-  Mas o que a pesquisa científica realmente diz sobre os efeitos do xadrez nos resultados escolares? A resposta é mais
-  nuançada do que os slogans.
-seoTitle: "Xadrez na escola: benefícios reais no aprendizado segundo a ciência"
-seoDescription: "Meta-análise Sala & Gobet, programa armênio, Venezuela: o que a pesquisa realmente diz sobre o impacto do xadrez escolar nos resultados e no desenvolvimento cognitivo."
 frSlug: echecs-et-ecole
-faq:
-  - question: O xadrez melhora os resultados em matemática ?
-    answer: >-
-      Os dados sugerem um efeito positivo, mas moderado. A meta-análise de Sala & Gobet (2016, 24 estudos) encontra um efeito
-      global significativo (d = 0,38). No entanto, a meta-análise de 2017 da mesma dupla, mantendo apenas os estudos
-      com grupos de controle pareados, mostra efeitos menores. Os benefícios em matemática são mais marcados na
-      aritmética e na resolução de problemas que nos conceitos abstratos.
-  - question: Com que idade começar o xadrez para obter os benefícios escolares ?
-    answer: >-
-      Os estudos tratam principalmente de crianças de 6 a 12 anos. Os programas mais eficazes começam por volta dos
-      6-7 anos (1º e 2º ano) : uma idade em que as funções executivas estão em desenvolvimento ativo e particularmente sensíveis às
-      intervenções. Os benefícios na leitura e na matemática são documentados já no primeiro ano de prática, com
-      instrução de qualidade.
-  - question: O xadrez pode substituir outras atividades extracurriculares ?
-    answer: >-
-      Não : os estudos não mostraram que o xadrez tenha vantagem global sobre outras atividades de jogo estruturado
-      (música instrumental, Go, jogos de estratégia). O benefício específico do xadrez está na combinação de
-      regras formais, planejamento em várias etapas e autonomia cognitiva. Uma hora de aula de piano por semana
-      produz benefícios comparáveis nas funções executivas.
-  - question: Qual é o modelo de programa escolar de xadrez mais eficaz ?
-    answer: >-
-      Os estudos convergem para vários fatores : (1) instrução explícita dos princípios estratégicos, não
-      apenas das regras ; (2) ao menos 30 horas de ensino ao longo do ano escolar (1h/semana, no mínimo) ; (3)
-      professores formados especificamente : um treinador de xadrez se sai melhor que um professor sem formação enxadrística
-      ; (4) integração ao currículo em vez de atividade periférica.
-  - question: Por que a Armênia tornou o xadrez obrigatório ?
-    answer: >-
-      A decisão armênia (2011) combina várias motivações : herança cultural (Tigran Petrossian, campeão do
-      mundo, é armênio), desenvolvimento cognitivo da juventude e soft power : a Armênia é um dos países de melhor
-      desempenho no mundo por habitante no xadrez de competição. O programa 'Chess in Schools' é parcialmente financiado
-      pela FIDE e serve de modelo para vários países do Leste da Europa.
+title: "Xadrez na escola: o que a pesquisa permite afirmar"
+excerpt: "Efeito modesto em uma meta-análise, nenhum ganho escolar em um grande ensaio inglês: como pensar o xadrez na escola sem prometer notas melhores."
+seoTitle: "Xadrez na escola: estudos e limites da transferência"
+seoDescription: "Sala e Gobet e o ensaio da EEF não garantem notas melhores com o xadrez. Resultados, limites das evidências e objetivos realistas para a sala de aula."
+keyTakeaways: ["A meta-análise de 2016 observou g = 0,338 globalmente, mas os controles ativos eram raros e a transferência não está estabelecida.", "O ensaio da EEF em 100 escolas não detectou ganho em matemática, leitura ou ciências no acompanhamento de um ano.", "Os experimentos de 2017 com controles ativos não mostraram diferença significativa na resolução de problemas matemáticos.", "Mobilizar o planejamento ou a memória durante o jogo não demonstra uma melhora cognitiva geral.", "Um projeto escolar pode ensinar o jogo e ampliar o acesso cultural sem prometer notas ou QI mais altos."]
+faq: [{"question": "O xadrez melhora o desempenho em matemática?", "answer": "Um ganho geral não está estabelecido. A meta-análise de 2016 observou um efeito médio positivo, limitado pelos métodos dos estudos incluídos. O grande ensaio da EEF não encontrou ganho em matemática, leitura ou ciências um ano depois do programa, e experimentos com controles ativos não encontraram diferença significativa na resolução de problemas matemáticos."}, {"question": "Existe uma idade ideal para obter benefícios escolares?", "answer": "As fontes apresentadas não estabelecem uma idade ideal que garanta transferência escolar. As tarefas devem ser adaptadas à compreensão e ao interesse dos alunos. Aprender o jogo cedo não prova um aumento geral da inteligência."}, {"question": "São necessárias pelo menos 30 horas de aulas para melhorar as notas?", "answer": "Nenhum limiar universal foi demonstrado. O ensaio da EEF oferecia 30 horas de aulas sem detectar ganho escolar no acompanhamento de um ano. A duração do programa não é uma dose que garanta um resultado."}, {"question": "O xadrez pode substituir aulas ou outras atividades?", "answer": "Ele não é um substituto validado do ensino ou do apoio específico em matemática ou leitura. Seu lugar deve ser discutido conforme os objetivos culturais, lúdicos e educativos, o custo e os outros usos possíveis desse tempo."}, {"question": "O que demonstra o programa obrigatório armênio?", "answer": "A Federação Armênia informa a integração obrigatória do segundo ao quarto ano das escolas públicas desde 2011. Isso documenta uma organização escolar em grande escala, não prova, por si só, uma melhora nas notas ou nas funções executivas."}]
 ---
 
-Em 2011, a Armênia fez algo que poucos países ousaram : tornar o xadrez obrigatório em todas as escolas primárias. Não como atividade extracurricular opcional, não como projeto piloto em algumas turmas voluntárias. Como matéria do currículo, tanto quanto a matemática ou a leitura. Três horas por semana, para todos os alunos de 6 a 9 anos.
+Levar um tabuleiro para a sala de aula pode dar aos alunos a oportunidade de descobrir um jogo, explicar uma escolha e conhecer um parceiro. Isso basta para abrir uma discussão pedagógica. Não demonstra que o xadrez aumenta as notas ou o quociente de inteligência.
 
-É radical. É ambicioso. E é também a ocasião de fazer a pergunta real : o que diz a pesquisa sobre os efeitos do xadrez na escola?
+As pesquisas apresentam um quadro misto: uma meta-análise de 2016 encontrou um efeito médio positivo, limitado pela qualidade das comparações; um grande ensaio inglês não encontrou melhora no desempenho escolar um ano depois do programa. Para decidir o lugar do xadrez na escola, é preciso distinguir esses resultados dos objetivos culturais, lúdicos e educativos que uma equipe pode escolher.
 
-A resposta é mais nuançada (e mais honesta) do que o que os cartazes de torneios e os comunicados de imprensa das federações deixam entender.
+## Programas reais, objetivos diferentes
 
-## Os grandes programas mundiais : um mapeamento
+### Armênia: uma disciplina escolar desde 2011
 
-### A Armênia : o modelo mais radical
+A [Federação Armênia de Xadrez](https://chessfed.am/en/static-page/detail/2) informa que o jogo se tornou uma disciplina obrigatória do segundo ao quarto ano das escolas públicas em 2011. Portanto, isso não abrange todos os anos do ensino primário nem constitui, por si só, uma prova de ganhos em matemática.
 
-Desde 2011, a Armênia é o único país do mundo a ter tornado o xadrez **obrigatório** no ensino fundamental. O programa "Chess in Schools" é financiado conjuntamente pelo governo e pela [Federação Internacional de Xadrez (FIDE)](https://www.fide.com), com um investimento inicial de 1,5 milhão de euros para formar professores e produzir os manuais.
+Essa integração mostra que um país pode organizar o ensino do jogo em grande escala. Para conhecer seus efeitos sobre outras aprendizagens, porém, seriam necessárias avaliações que distinguissem o ensino de xadrez das outras características do sistema escolar. Uma decisão política não substitui essa comparação.
 
-O programa armênio se distingue por sua sistematização : manual oficial em armênio, formação dos professores (mais de 1.300 docentes formados no lançamento), avaliação nacional anual. A motivação é múltipla : herança de [Tigran Petrossian](https://pt.wikipedia.org/wiki/Tigran_Petrosian), campeão mundial 1963-1969, orgulho nacional e convicção de que o xadrez desenvolve o pensamento estratégico útil em todos os domínios.
+### França: o programa Class'Échecs
 
-Os resultados a longo prazo ainda estão parcialmente documentados (o programa tem menos de 15 anos), mas as primeiras avaliações mostram uma melhoria nos resultados em matemática e uma redução do absenteísmo nas turmas de xadrez.
+O [Éduscol apresenta o Class'Échecs](https://eduscol.education.gouv.fr/6618/introduction-du-jeu-d-echecs-l-ecole-et-programme-class-echecs) como um programa da Federação Francesa de Xadrez para desenvolver a aprendizagem do jogo nas escolas primárias, com professores voluntários, recursos e possíveis vínculos com clubes.
 
-### A Venezuela : o pioneiro esquecido
+A apresentação institucional expõe objetivos pedagógicos. Eles devem ser lidos como metas do programa, sem transformar sua enunciação em demonstração experimental de melhora nas notas, na memória ou na autoconfiança de cada aluno.
 
-Bem antes da Armênia, a **Venezuela** lançou em 1988 o maior programa nacional de xadrez escolar da história. Por impulso do ministro [Luis Alberto Machado](https://pt.wikipedia.org/wiki/Luis_Alberto_Machado) e seu projeto "Desenvolvimento da Inteligência", mais de 100.000 crianças foram formadas no xadrez em dois anos.
+### Nova York: acesso pelas escolas e associações
 
-O estudo associado, conduzido por Stuart Margulies (1992, *Chess in Education Research Summary*), mostrou melhorias significativas na leitura entre os alunos do programa. Embora criticado por suas limitações metodológicas (ausência de grupo controle estrito), esse estudo permanece uma referência histórica.
+A associação [Chess in the Schools](https://chessintheschools.org/) oferece atividades escolares, formação e torneios em Nova York. O exemplo ilustra outra forma de acesso ao jogo, diferente de uma disciplina nacional obrigatória. Depoimentos e números de participação de uma organização descrevem sua atividade; não bastam para medir um efeito causal sobre o desempenho escolar.
 
-### Os Estados Unidos e o movimento "Chess in Schools"
+### Inglaterra: um programa submetido a um grande ensaio
 
-Nova York, Los Angeles, Chicago : muitas grandes cidades americanas têm programas extracurriculares de xadrez em suas escolas públicas, frequentemente financiados por fundações privadas ou grandes mestres engajados. A [Chess in the Schools Foundation](https://chessintheschools.org) de Nova York acompanha mais de 30.000 alunos por ano.
+O programa da associação Chess in Schools and Communities foi avaliado com financiamento da Education Endowment Foundation. Seu interesse para esta discussão está justamente em confrontar uma proposta educativa com resultados escolares medidos, em vez de considerar apenas seu sucesso entre os participantes.
 
-## A meta-análise Sala & Gobet : a referência científica
+![Quatro contextos documentados: disciplina obrigatória do segundo ao quarto ano na Armênia, Class'Échecs na França, associação em Nova York e programa avaliado pela EEF na Inglaterra.](/images/pt-br/echecs-ecole-01-programmes-mondiaux.svg)
 
-[Giovanni Sala](https://www.livjm.ac.uk/research/faculty-of-science/psychology/giovanni-sala/) e [Fernand Gobet](https://www.lse.ac.uk/psychological-and-behavioural-science/people/fernand-gobet) produziram a síntese científica mais rigorosa sobre os efeitos do xadrez na escola. Suas duas meta-análises são incontornáveis.
+## Os resultados científicos precisam ser lidos em conjunto
 
-### Meta-análise 2016 (Educational Research Review)
+### Sala e Gobet, 2016: um efeito global modesto e ressalvas
 
-Essa meta-análise analisa **24 estudos** sobre programas de xadrez escolares em diferentes países. Resultados principais:
+A meta-análise reúne 24 estudos e 40 tamanhos de efeito. O efeito global observado é **g = 0,338**, com **intervalo de confiança de 95% entre 0,242 e 0,435**. Para a matemática, a estimativa é **g = 0,382**. São diferenças padronizadas entre grupos, não uma porcentagem de aumento nas notas nem um número de pontos de QI.
 
-- **Efeito global sobre a cognição**: *d* = 0,54 (efeito médio-forte), mas heterogeneidade importante entre os estudos
-- **Matemática**: *d* = 0,38 (efeito médio)
-- **Leitura**: *d* = 0,28 (efeito fraco a médio)
-- **Metacognição**: *d* = 0,49 (efeito médio)
+A limitação central é a quase ausência de grupos de controle ativos: alunos que realizem outra atividade com tempo e atenção comparáveis. Sem eles, é difícil separar o xadrez da novidade, do entusiasmo do instrutor ou das expectativas. Os autores não estabelecem a transferência e pedem desenhos experimentais mais sólidos.
 
-A conclusão de Sala & Gobet (2016) é encorajadora : "a instrução em xadrez parece melhorar as competências cognitivas e escolares nas crianças". Mas eles acrescentam uma nuance crítica: **a qualidade metodológica dos estudos é geralmente fraca**, com poucos estudos com atribuição aleatória e grupos controle estritamente comparáveis.
+### O ensaio da EEF: nenhum ganho escolar detectado um ano depois
 
-### Meta-análise 2017 (Current Directions in Psychological Science)
+A avaliação inglesa envolveu **100 escolas e 4.009 alunos**. O programa previa **30 horas de aulas de xadrez**. Os testes nacionais Key Stage 2, realizados um ano depois do fim da intervenção, não mostraram efeito positivo em matemática, leitura ou ciências. O resultado também não foi positivo entre os alunos elegíveis a refeições escolares gratuitas.
 
-Essa segunda meta-análise, mais rigorosa em seus critérios de inclusão, chega a conclusões mais nuançadas. Ao manter apenas os estudos com **grupos controle ativos** (outra atividade enriquecedora, não simplesmente nenhuma atividade), os efeitos se reduzem significativamente.
+É um resultado importante, sem provar que nenhum programa jamais poderia produzir um efeito. Ele diz respeito a esse programa, essa população e esse intervalo de avaliação. A opinião positiva de professores ou alunos sobre as aulas não anula a ausência de progresso escolar detectado.
 
-A conclusão principal : os efeitos do xadrez sobre a cognição são **reais mas modestos**, e poderiam em parte se explicar por efeitos não específicos (tempo de atividade estruturada, atenção de adultos dedicados, sentimento de competência).
+### Sala e Gobet, 2017: testar com outra atividade
 
-Em outras palavras : o xadrez melhora a cognição das crianças. Mas talvez não *porque é xadrez* especificamente : talvez porque as crianças se beneficiam de uma atividade estruturada e engajante com um adulto atento.
+Dois experimentos publicados em *Learning & Behavior* compararam o xadrez com controles ativos, primeiro damas e depois Go, além de controles passivos. Não encontraram diferença estatisticamente significativa na resolução de problemas matemáticos ou na metacognição. O artigo de síntese de 2017 em *Current Directions in Psychological Science* também destaca a fragilidade dos argumentos a favor da transferência distante.
 
-## Por que a transferência cognitiva é difícil
+Esses trabalhos não são todos independentes: a síntese retoma a literatura anterior. Portanto, não devem ser somados como se fossem replicações autônomas. Em conjunto, recomendam evitar a promessa de melhora geral da inteligência ou do desempenho escolar.
 
-O conceito de **transferência cognitiva**: a ideia de que competências desenvolvidas num domínio se transferem para outro : está no coração do argumento pró-xadrez na escola.
+![Resultados e limites: efeito descritivo global g = 0,338 na meta-análise de 2016, com poucos controles ativos; nenhum ganho escolar detectado no ensaio da EEF no acompanhamento de um ano.](/images/pt-br/echecs-ecole-02-sala-gobet-effets.svg)
 
-A pesquisa sobre transferência (desde Thorndike, 1901) é sistematicamente mais pessimista do que as intuições populares. A transferência é máxima quando os dois domínios compartilham elementos comuns explícitos. O xadrez compartilha com a matemática a lógica formal e a resolução de problemas em várias etapas. Com a leitura, compartilha a concentração sustentada e a dedução.
+## Por que a transferência continua sendo uma questão aberta
 
-Mas a transferência é mais difícil do que se pensa porque o cérebro é muito eficiente para **contextualizar** as competências : você melhora para calcular variantes de xadrez, não para calcular equações. Só quando os princípios são ensinados de forma **explícita e transferível** é que a transferência ocorre.
+Aprender a identificar um garfo pode ajudar a reconhecer outro garfo: as situações continuam próximas. Afirmar que essa aprendizagem melhora a compreensão de um texto ou a resolução de uma equação exige uma demonstração adicional. Compartilhar palavras como “lógica”, “atenção” ou “raciocínio” não basta para estabelecer esse vínculo.
 
-É aí que a qualidade pedagógica faz toda a diferença. Um programa de xadrez que se contenta em ensinar as regras e fazer as crianças jogar produzirá pouca transferência. Um programa que explica como a análise de uma posição (identificar as ameaças, avaliar forças e fraquezas, planejar) se assemelha à resolução de um problema de matemática ou à compreensão de um texto : esse pode produzir uma transferência real.
+Um professor pode propor uma atividade matemática a partir do tabuleiro: localizar coordenadas, contar casas ou explorar uma simetria. Nesse caso, também está ensinando diretamente um conteúdo matemático. Um avanço nesse exercício não mostraria automaticamente que jogar xadrez livremente melhora a matemática em geral.
 
-## As funções executivas : o benefício mais sólido
+Explicitar uma ligação entre disciplinas pode ser uma proposta pedagógica interessante, mas não garante a transferência. Ainda é preciso verificar se o aluno consegue reutilizar o conceito sem tabuleiro, em outra tarefa e depois de algum tempo. Nosso artigo sobre [xadrez e matemática](/pt-br/blog/xadrez-e-matematica/) desenvolve essa distinção.
 
-Se a transferência direta para as notas escolares é discutida, um consenso mais sólido se desenha em torno das **funções executivas** (FE).
+![As ligações propostas entre xadrez e outras disciplinas são hipóteses pedagógicas a avaliar; uma explicação explícita não garante a transferência.](/images/pt-br/echecs-ecole-03-transfert-cognitif.svg)
 
-As FE são um conjunto de competências cognitivas de alto nível geridas principalmente pelo córtex pré-frontal: **planejamento** (antecipar as consequências), **inibição** (resistir a uma resposta impulsiva), **flexibilidade cognitiva** (mudar de plano quando a situação muda) e **memória de trabalho** (manter informações ativas durante um raciocínio).
+## Funções executivas: mobilizar não é melhorar de forma duradoura
 
-Essas quatro competências são diretamente solicitadas pelo xadrez. E seu desenvolvimento tem um efeito provado no sucesso escolar, independentemente do QI (Diamond, 2013, *Annual Review of Psychology*).
+Durante uma partida, o aluno pode manter uma variante na memória, preparar um plano, rever uma ideia e hesitar antes de uma captura. Esses exemplos descrevem exigências da atividade. Não comprovam um aumento geral da memória de trabalho, da inibição ou da flexibilidade.
 
-## O que um bom programa escolar deve incluir
+Para demonstrar uma melhora dessas funções, seriam necessárias medidas adequadas antes e depois, uma comparação pertinente e acompanhamento. Uma boa partida ou um rating maior não substitui essas medidas. Os trabalhos apresentados aqui não justificam chamar o desenvolvimento global das funções executivas de benefício escolar “mais sólido” ou garantido do xadrez.
 
-Com base na literatura disponível, eis o que a pesquisa sugere para um programa de xadrez escolar eficaz:
+![Exemplos de funções mobilizadas no jogo: planejamento, inibição, flexibilidade e memória de trabalho; seu uso não demonstra uma melhora geral duradoura.](/images/pt-br/echecs-ecole-04-fonctions-executives.svg)
 
-**Volume mínimo.** Os estudos mostram efeitos a partir de **25-30 horas anuais** de instrução. Abaixo disso, os resultados são demasiado diluídos para serem mensuráveis. Isso corresponde a 1 hora por semana ao longo do ano letivo.
+## Planejar um programa com objetivos honestos
 
-**Instrução explícita.** Não se contentar em fazer as crianças jogar. Ensinar explicitamente os princípios de planejamento e análise, e fazer ligações verbais com as outras matérias : "Quando você analisa uma posição, faz exatamente a mesma coisa que na leitura : você busca os indícios importantes antes de concluir."
+**Definir o que será ensinado.** Aprender as regras, reconhecer um mate simples, explicar um lance ou participar de um encontro são objetivos observáveis na atividade. “Tornar os alunos mais inteligentes” é uma promessa muito mais ampla do que as evidências permitem cumprir.
 
-**Professores especificamente formados.** Os estudos mostram sistematicamente melhores resultados quando as aulas são ministradas por treinadores de xadrez formados em pedagogia, em vez de professores que aprenderam as regras às pressas.
+**Preparar os adultos.** Saber jogar não basta para organizar um grupo de iniciantes. A avaliação da EEF destaca as competências pedagógicas e a cooperação entre instrutor e professor da turma. Isso não demonstra que um treinador externo seja sempre melhor do que o professor da sala.
 
-**Progressão estruturada.** Os programas eficazes seguem uma progressão pedagógica clara : regras → táticas simples → estratégia → análise de partidas. Os programas que saltam para a estratégia cedo demais ou que ficam nas regras por muito tempo perdem as crianças.
+**Prever uma progressão acessível.** É possível começar com poucas peças, conferir a compreensão dos movimentos e depois introduzir ameaças e pequenas posições. São escolhas de ensino a ajustar, não um modelo universal de superioridade comprovada.
 
-**Avaliação contínua.** Os melhores programas integram pequenos torneios em sala, análises coletivas e diários de aprendizado. Essas práticas reforçam a metacognição : a capacidade de pensar sobre o próprio pensamento.
+**Escolher uma carga horária realista.** Os estudos não fixam uma dose mágica de 25 ou 30 horas que necessariamente produziria transferência. O grande ensaio da EEF oferecia justamente 30 horas, sem ganho escolar detectado no acompanhamento. O tempo disponível deve ser discutido junto com seus outros usos possíveis.
 
-## A questão da equidade
+**Avaliar sem reduzir os alunos a um rating.** Uma criança pode compreender uma instrução, explicar um erro ou jogar com respeito mesmo perdendo. O desempenho escolar exige indicadores acadêmicos distintos; as vitórias no torneio da turma não os substituem.
 
-Um ponto raramente discutido nos debates sobre o xadrez na escola: **a equidade de acesso**.
+## Três atividades de sala de aula para experimentar
 
-Nos países sem programa nacional, os clubes de xadrez extracurriculares atraem mais crianças de famílias abastadas : aquelas que têm tempo livre estruturado, pais engajados e acesso ao material. A institucionalização do xadrez na escola (como na Armênia) é um dos raros meios de garantir que todas as crianças, independentemente da origem, se beneficiem dessa exposição.
+**Observar antes de escolher.** Apresente uma pequena posição e pergunte: “Quais peças estão atacadas?” Reúna várias observações antes de procurar um lance. O objetivo imediato é descrever a posição, sem presumir uma transferência automática para ciências ou leitura.
 
-Talvez seja o argumento mais sólido para os programas escolares obrigatórios : não tanto que o xadrez é mágico, mas que é *acessível a todos* quando a escola o integra, e que seus benefícios (por mais modestos que sejam) merecem ser democratizados.
+**Comparar duas propostas.** Em grupos, os alunos escolhem entre dois lances e explicam a preferência. O adulto pode pedir um exemplo que contradiga uma ideia. É possível avaliar a clareza da explicação nessa tarefa, sem anunciar que o debate aumenta o pensamento crítico em geral.
+
+**Rever um erro sem humilhar.** Mostre um lance que deixa uma peça pendurada e procurem juntos uma alternativa. Não se deve atribuir essa abordagem a um “método russo” único ou sistemático sem fonte precisa. O objetivo prático é organizar uma conversa em que o aluno possa rever sua escolha com segurança.
+
+## A equidade exige preparação concreta
+
+Uma atividade no horário escolar pode alcançar alunos que não frequentam clubes. Mas oferecer o mesmo tabuleiro a todos não basta: alguns já conhecem o jogo, outros estão descobrindo as regras, e as necessidades de leitura, manipulação e atenção variam.
+
+Preveja explicações visuais, duplas adequadas, materiais acessíveis e formas de participação que não se limitem aos torneios. Observe quem fala, quem espera e quem se afasta. O acesso cultural pode ser um objetivo por si só, sem acrescentar uma redução não demonstrada das desigualdades de desempenho.
+
+## Decidir o lugar do xadrez no horário escolar
+
+Antes de iniciar uma sequência de aulas, defina seu objetivo, custo, responsáveis, o que ela substitui e o que será avaliado. Se a prioridade é uma dificuldade em matemática ou leitura, o xadrez não é um substituto validado do ensino ou do apoio específico nessa disciplina.
+
+Uma equipe pode, ainda assim, escolher o jogo pelo valor cultural, pelo interesse lúdico ou por um projeto de convivência. Nesse caso, avalie se esses objetivos são alcançados, ouça os alunos que gostam menos da atividade e ajuste a prática. O jogo não precisa prometer um aumento do QI para ter um lugar pensado na escola.
 
 ## Fontes
 
-- Sala, G., & Gobet, F. (2016). Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis. *Educational Research Review*, 18, 46–57.
-- Sala, G., & Gobet, F. (2017). Does far transfer exist? Negative evidence from chess, music, and working memory training. *Current Directions in Psychological Science*, 26(6), 515–520.
-- Dania, A., Kossyva, I., Psychountaki, M., & Donti, O. (2021). Effects of a chess training program on athletes' executive functions and sport performance. *Brain Sciences*, 11(10), 1330.
-- Diamond, A. (2013). Executive functions. *Annual Review of Psychology*, 64, 135–168.
-- Margulies, S. (1992). The effect of chess on reading scores : District nine chess program. *Chess in Education Research Summary*.
-
-## O que guardar
-
-- O xadrez tem um efeito positivo nas **funções executivas** (planejamento, inibição, memória de trabalho): o consenso científico é sólido nesse ponto
-- O efeito nos **resultados escolares** diretos (notas em matemática, leitura) é **real mas moderado**, e depende fortemente da qualidade pedagógica do programa
-- **Sala & Gobet (2016, 2017)**: meta-análise de referência : os efeitos são positivos mas diminuem quando os controles experimentais são rigorosos
-- O **modelo armênio** (obrigatório, 1.º ao 5.º ano) é o mais ambicioso do mundo e mostra resultados encorajadores mas ainda mal documentados a longo prazo
-- O benefício do xadrez não é mágico : requer uma **instrução de qualidade**, **professores formados** e um **mínimo de 30 horas anuais**
+- **Sala, G. e Gobet, F. (2016)**, [Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis](https://doi.org/10.1016/j.edurev.2016.02.002), *Educational Research Review*, 18, 46-57; [texto completo](https://eprints.lse.ac.uk/102237/1/main.pdf).
+- **Jerrim, J., Macmillan, L., Micklewright, J., Sawtell, M. e Wiggins, M. (2016)**, [Chess in Schools: Evaluation Report](https://d2tic4wvo1iusb.cloudfront.net/production/documents/projects/EEF_Project_Report_Chess_in_Schools.pdf), Education Endowment Foundation; [apresentação do ensaio](https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/chess-in-primary-schools).
+- **Sala, G. e Gobet, F. (2017)**, [Does chess instruction improve mathematical problem-solving ability? Two experimental studies with an active control group](https://eprints.lse.ac.uk/102187/1/Sala_Gobet2017_Article_DoesChessInstructionImproveMat.pdf), *Learning & Behavior*, 45, 414-421, doi:10.3758/s13420-017-0280-3.
+- **Sala, G. e Gobet, F. (2017)**, [Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training](https://doi.org/10.1177/0963721417712760), *Current Directions in Psychological Science*, 26(6), 515-520.
+- As páginas da Federação Armênia, do Éduscol e da Chess in the Schools, citadas acima, documentam os programas. Não são usadas aqui como provas de um efeito causal sobre as notas.

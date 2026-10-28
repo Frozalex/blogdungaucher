@@ -23,6 +23,8 @@ faq:
       Dat is zeldzaam op hoog niveau. De basisvaardigheden overlappen (aanhoudende concentratie,
       spelgeheugen, trainingsdiscipline) maar de specifieke cognitieve profielen neigen ertoe het ene
       of het andere te bevoordelen.
+heroImageAlt: Blanco houten tegels vormen een pad naast een pion.
+
 ---
 
 Men rangschikt ze beide in dezelfde categorie: bordspelen, spelen voor intelligente mensen, mentaal stimulerende activiteiten. Maar kampioenen van Scrabble en grootmeesters in schaken hebben zeer verschillende cognitieve profielen. En de twee disciplines trainen het brein op manieren die slechts gedeeltelijk overlappen.

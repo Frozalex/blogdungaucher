@@ -40,6 +40,7 @@ faq:
       besteden aan wat je leuk vond voordat er een rating bestond. Het kritieke punt is niet het cijfer
       zelf maar de alomtegenwoordigheid ervan: een beloning wordt schadelijk wanneer ze de enige zichtbare
       reden wordt om te oefenen.
+heroImageAlt: Een lantaarn met een kleine vlam naast een grote donkere trofee.
 ---
 
 Denk terug aan je eerste partijen. Vóór de apps, vóór de rating, vóór de statistieken.

@@ -1,8 +1,6 @@
 ---
 title: "Sujet Grand Oral NSI : Comment un programme informatique peut-il jouer aux échecs ?"
-excerpt: >-
-  Sujet entièrement rédigé pour le Grand Oral spécialité NSI : récursivité, arbre de décision, fonction d'évaluation
-  et minimax expliqués en 10 minutes prêtes à réciter, code Python commenté inclus.
+excerpt: "Une fiche de révision minimax avec un exemple Python à deux niveaux, la perspective des scores et les limites de l’évaluation, avec renvoi au guide NSI."
 publishDate: "2026-05-08"
 category: grand-oral
 featured: false
@@ -21,12 +19,11 @@ tags:
   - Python
 seoTitle: "Grand Oral NSI : fiche de révision minimax"
 seoDescription: "Fiche de révision minimax : exemple Python à deux niveaux, perspective des scores et limites de l'évaluation, avec renvoi au code complet du guide NSI."
-ogImage: /images/og/sujet-grand-oral-nsi-minimax-og.webp
+ogImage: /images/og/sujet-grand-oral-nsi-minimax-watermarked-og.webp
 heroImage:
-  src: /images/blog/sujet-grand-oral-nsi-minimax-hero.webp
-  alt: >-
-    Un couloir d'établissement scolaire bordé de casiers métalliques.
-  credit: "Htetrasme, CC BY-SA 4.0, via Wikimedia Commons"
+  src: /images/blog/sujet-grand-oral-nsi-minimax-watermarked-hero.webp
+  alt: Un couloir d'établissement scolaire bordé de casiers métalliques.
+  credit: Htetrasme, CC BY-SA 4.0, via Wikimedia Commons
   sourceUrl: https://commons.wikimedia.org/wiki/File:Corridor_in_Robert_E._Bell_school,_1990s.jpg
   license: CC BY-SA 4.0
 noindex: true

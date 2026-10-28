@@ -48,6 +48,8 @@ faq:
       for two years produces more usable experience than an ideal repertoire changed three times a
       year. Set your abandonment criterion before you start, based on a number of games and a score,
       rather than deciding in the heat of a loss.
+heroImageAlt: A figure facing a semicircle of identical closed drawers.
+
 ---
 
 You want to build a repertoire with Black against 1.e4.

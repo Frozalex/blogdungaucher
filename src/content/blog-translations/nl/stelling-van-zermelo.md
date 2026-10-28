@@ -19,6 +19,8 @@ faq:
     answer: "Omdat geen van beiden perfect speelt in de zin van Zermelo. Beiden zijn <strong>benaderingen</strong> van de optimale strategie, gewoon met verschillende architecturen (zoeken plus heuristieken voor Stockfish, neuraal netwerk plus Monte Carlo Tree Search voor AlphaZero). Wanneer AlphaZero Stockfish verslaat, zijn zijn keuzes op dat benaderingsniveau gemiddeld dichter bij de Zermelo-waarheid. Maar geen van beiden bereikt die waarheid."
   - question: "Zou deze wiskundige waarheid ooit ontdekt kunnen worden?"
     answer: "Waarschijnlijk niet door pure brute kracht: de boom van $10^{120}$ is definitief fysiek onbereikbaar. Een <strong>indirect bewijs</strong> (via symmetrie, invariant, gedeeltelijke spiegelstrategie) blijft theoretisch mogelijk, maar er bestaat geen serieus pad. Kwantumcomputing verandert de grens (Grover halveert de exponent), maar $10^{60}$ is nog steeds astronomisch. Schaken oplossen in strikte zin is eerder een horizon dan een doel."
+heroImageAlt: Een donker rond doolhof met een blauw pad naar het lege midden.
+
 ---
 
 In 1913, op het vijfde Internationale Congres van Wiskundigen in Cambridge, presenteerde de Duitse wiskundige [Ernst Zermelo](https://nl.wikipedia.org/wiki/Ernst_Zermelo) een resultaat dat de manier waarop wiskundigen, en later informatici, over strategiespellen denken voorgoed zou veranderen. Zijn stelling is kort. De bewijsvoering is elegant. En de implicaties voor schaken zijn tegelijk gerustststellend en duizelingwekkend.

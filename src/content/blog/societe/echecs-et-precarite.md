@@ -42,14 +42,10 @@ seoTitle: "Échecs et précarité : l'échiquier peut-il transcender les inégal
 seoDescription: >-
   Chess in the Slums, capital culturel, accès aux ressources : les échecs face aux inégalités sociales : promesse
   d'émancipation et réalités structurelles.
-ogImage: /images/blog/echecs-et-precarite-hero.png
+ogImage: /images/og/echecs-et-precarite-og.webp
 heroImage:
-  src: /images/blog/echecs-et-precarite-hero.png
-  alt: >-
-    Illustration pixel art : enfant jouant aux échecs dans une rue de ville, échiquier improvisé sur une caisse en bois,
-    « Échecs et précarité »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-precarite-hero.webp
+  alt: Une file de pièces identiques avançant du pavé lisse vers du sable meuble.
 faq:
   - question: Les échecs sont-ils réellement accessibles aux familles précaires ?
     answer: >-
@@ -92,11 +88,9 @@ faq:
       talentueux indépendamment de l'origine sociale.
 ---
 
-Lagos, 2018. Tunde Onakoya installe un échiquier dans un bidonville d'Oshodi. Les enfants qui jouent dans la rue s'approchent, curieux. Il n'a pas de salle, pas de chaises, pas d'ordinateurs. Il a des pièces, un échiquier, et une idée.
+L'usage des échecs dans un projet de lutte contre la précarité pose une question de causalité : quels changements viennent du jeu, de l'accompagnement, des financements ou de leur association ? L'intérêt d'une initiative ne suffit pas à attribuer chacun de ses résultats à l'échiquier.
 
-Cinq ans plus tard, plusieurs de ces enfants sont dans des écoles secondaires grâce aux bourses levées par son organisation. Onakoya joue aux échecs pendant 58 heures d'affilée à Times Square, à New York, pour lever des fonds. Le monde regarde.
-
-L'échiquier comme levier d'émancipation : c'est une histoire séduisante. Est-ce une histoire vraie ?
+Il faut donc examiner les moyens engagés, les personnes concernées et les effets documentés. Distinguer l'apprentissage du jeu, l'accès à des ressources et les trajectoires scolaires permet de discuter la portée d'un projet sans remplacer son évaluation par un récit d'émancipation.
 
 ## La promesse des échecs : mérite pur, sans marqueurs sociaux
 

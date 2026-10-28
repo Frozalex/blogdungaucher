@@ -40,6 +40,7 @@ faq:
       naar het centrum opklimmen in het eindspel: een enkele tabel vergist zich noodzakelijk in een van
       beide fases. Serieuze engines interpoleren tussen twee tabelsets naargelang het overblijvende
       materiaal.
+heroImageAlt: Waterrimpels komen tot rust rond zorgvuldig geplaatste donkere stenen.
 ---
 
 Onze engine [houdt een klok bij](/fr/blog/approfondissement-iteratif-gestion-du-temps/), zoekt met snoeien, ordent zijn zetten. Er blijft hem een gebrek dat zijn evaluaties ernstiger vervalst dan alles wat we tot nu toe hebben gecorrigeerd, en dat niet uit enige bug voortkomt.

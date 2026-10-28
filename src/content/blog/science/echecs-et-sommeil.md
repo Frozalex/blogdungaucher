@@ -1,13 +1,13 @@
 ---
 title: "Échecs et sommeil : pourquoi la nuit joue aussi ta partie"
 excerpt: >-
-  Un grand maître qui dort mal joue environ 10% moins bien dès la deuxième heure de jeu. Ce que la recherche en
-  neurosciences du sommeil dit sur la consolidation mémorielle, la récupération cognitive et la performance échiquéenne.
+  Vigilance, apprentissage et récupération : ce que les recherches sur le sommeil permettent de comprendre,
+  avec une étude menée chez des joueurs d’échecs et les limites des promesses de performance.
 publishDate: "2026-06-15"
 category: science
 featured: false
 featuredRank: 99
-readingTime: 9 min
+readingTime: "7 min"
 pillar: Neurosciences
 tags:
   - sommeil
@@ -28,14 +28,10 @@ keyTakeaways:
     Une sieste courte et une sieste longue sont des interventions différentes ; aucune durée optimale pour les échecs n’est démontrée ici.
 seoTitle: "Sommeil et échecs : vigilance, apprentissage et récupération"
 seoDescription: "Sommeil et préparation aux échecs : études sur la vigilance, la décision et l'apprentissage, repères de repos et limites des promesses de progression."
-ogImage: /images/blog/echecs-et-sommeil-hero.png
+ogImage: /images/og/echecs-et-sommeil-og.webp
 heroImage:
-  src: /images/blog/echecs-et-sommeil-hero.png
-  alt: >-
-    Illustration pixel art : échiquier flottant dans un ciel nocturne étoilé, pièces endormies sous une lune, « Échecs
-    et sommeil »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-et-sommeil-hero.webp
+  alt: Un atelier vide la nuit, avec des outils et des piles de papier.
 faq:
   - question: Combien de sommeil faut-il prévoir pour un tournoi ?
     answer: >-
@@ -50,9 +46,9 @@ faq:
       Non : cette équivalence n’est pas établie par les travaux cités. La durée de veille, la fatigue ressentie et la difficulté de la partie sont des variables distinctes.
 ---
 
-Tu termines une partie tard. Tu pourrais dormir, mais une position continue à tourner dans ta tête. Tu ouvres l’analyse, puis une autre partie. Le lendemain, tu as du mal à garder les variantes en mémoire.
+Le sommeil fait partie de la préparation d'une activité qui exige attention, maintien des variantes et décisions sous contrainte de temps. Pour apprécier sa place aux échecs, il faut distinguer les résultats de laboratoire, l'organisation d'un tournoi et les habitudes de pratique.
 
-Le sommeil a sa place dans la préparation d’un tournoi. Pour en parler correctement, il faut pourtant éviter de convertir chaque résultat de laboratoire en points Elo ou en pourcentage de combinaisons trouvées.
+Une étude sur la restriction du sommeil ne fournit pas directement un nombre de points Elo perdus ni un pourcentage de combinaisons manquées. La question est de comprendre les effets réellement mesurés et les limites de leur application à la performance échiquéenne.
 
 ## Vigilance et décision : ce que les études examinent
 
@@ -92,7 +88,47 @@ Si des difficultés de sommeil se répètent ou perturbent tes journées, parles
 
 L’article sur [les pauses](/fr/blog/bienfaits-des-pauses-aux-echecs/) traite de l’organisation des séances éveillées ; celui-ci porte sur la place du sommeil et les limites des résultats qu’on peut transposer aux échecs.
 
+## Une étude porte directement sur les joueurs d'échecs
+
+Moen, Olsen et Hrozanova (2020) ont suivi **14 joueurs norvégiens pendant 120 jours** avec un dispositif de mesure du sommeil. Ils ont comparé les profils des joueurs dont le classement FIDE progressait et de ceux dont il diminuait. Les groupes présentaient des différences de sommeil observées, mais les auteurs soulignent la petite taille de l'échantillon et l'absence de significativité de plusieurs variables de sommeil.
+
+Environ 40 % des données potentielles ont été perdues, principalement à cause de difficultés de connexion du dispositif. La charge d'entraînement et le stress quotidien n'étaient pas contrôlés, pas plus que les siestes. Cette étude observationnelle ne montre donc pas qu'augmenter un stade de sommeil ferait gagner des points. Elle établit surtout l'intérêt d'étudier le sommeil dans les conditions réelles de la pratique, avec des mesures mieux complétées et davantage de participants.
+
+Le classement lui-même résume des parties contre des adversaires différents. Une évolution Elo n'est pas une mesure directe de la mémoire ni de la précision de chaque décision. Le choix du critère de performance fait partie de l'interprétation.
+
+## Bien distinguer vigilance, calcul et apprentissage
+
+La vigilance correspond notamment au maintien de l'attention dans le temps. Le calcul demande de construire et de mettre à jour des variantes. L'apprentissage suppose que tu conserves et réutilises une information. Ces dimensions interagissent, mais une étude portant sur l'une ne chiffre pas automatiquement les autres.
+
+Exemple fictif : tu connais la technique de mat avec une tour, mais tu rates un échec latéral après une longue journée. La connaissance peut être présente alors que son application échoue. Autre situation : tu te sens frais, mais tu n'as jamais appris l'opposition. Le repos ne remplace pas l'étude technique. Cette distinction évite de faire du sommeil une explication universelle des victoires et des défaites.
+
+Pour vérifier un apprentissage, reprends une position sans la solution, puis une position voisine. Pour observer la vigilance, note plutôt les moments où tu oublies de vérifier la menace immédiate. Ces observations personnelles orientent le travail ; elles ne constituent pas des tests cliniques du sommeil.
+
+## Construire ton calendrier à partir de l'heure du lever
+
+Voici un exemple de préparation proposé. Si tu dois partir tôt, ne calcule pas seulement l'heure souhaitée du coucher. Compte aussi le repas, les déplacements, la préparation des affaires et une transition après la ronde. Le temps passé au lit n'est pas exactement le temps dormi.
+
+Une analyse peut être préservée sans être terminée la nuit même : note le numéro du coup critique, ton intention et une question à vérifier. Tu ne perds pas le contenu de la partie en reportant l'examen approfondi. Tu évites simplement que l'analyse empiète systématiquement sur l'occasion de dormir.
+
+Les repères CDC varient avec l'âge : les adolescents de 13 à 17 ans ont un repère de 8 à 10 heures, tandis que les adultes de 18 à 60 ans ont un repère d'au moins sept heures. Ce sont des recommandations générales ; elles ne définissent pas une quantité de sommeil permettant de jouer une cadence donnée.
+
+## Après une mauvaise nuit : adapter sans prédire la catastrophe
+
+Une nuit écourtée ne permet pas de connaître le résultat de la ronde. Évite de transformer « je suis fatigué » en certitude de perdre. Tu peux revoir les contraintes pratiques, garder une méthode de vérification simple et utiliser le temps disponible selon la position.
+
+Il serait tout aussi trompeur de promettre qu'une technique mentale ou une sieste effacera complètement le manque de sommeil. Prévois une marge après le réveil et évite les essais inhabituels le jour d'une compétition. Une somnolence importante peut aussi poser des difficultés pour le trajet ; l'organisation du déplacement compte dans la décision de poursuivre une journée chargée.
+
+Si les difficultés se répètent, les CDC conseillent d'en parler à un professionnel de santé. Un carnet de sommeil peut préparer cette discussion : horaires, réveils, siestes, fatigue dans la journée. Il ne s'agit pas de traiter seul un trouble à partir d'un article d'échecs.
+
+## Relire une semaine plutôt qu'une seule partie
+
+Si tu souhaites mieux organiser ta pratique, observe plusieurs jours : place des séances, heure de fin, engagements du lendemain et fatigue ressentie. Conserve les victoires et les défaites dans ton bilan. Sélectionner seulement les nuits précédant une gaffe donnerait une image orientée du lien.
+
+Le but pratique est de donner au sommeil une place réaliste dans l'entraînement. Il ne s'agit ni de calculer un handicap Elo par heure perdue ni de surveiller chaque nuit comme une performance supplémentaire. Une préparation cohérente associe étude, occasions de récupération et attention à la vie quotidienne.
+
 ## Sources
+
+- Moen, F., Olsen, M. et Hrozanova, M. (2020). *Associations Between Sleep Patterns and Performance Development Among Norwegian Chess Players*. Frontiers in Psychology, 11, 1855. [Texte intégral](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.01855/full).
 
 - Harrison, Y., & Horne, J. A. (2000). *The Impact of Sleep Deprivation on Decision Making: A Review*. Journal of Experimental Psychology: Applied, 6, 236–249. [Revue](https://gwern.net/doc/zeo/2000-harrison.pdf).
 - Dinges, D. F., et al. (1997). *Cumulative Sleepiness, Mood Disturbance, and Psychomotor Vigilance Performance Decrements During a Week of Sleep Restricted to 4–5 Hours per Night*. Sleep, 20, 267–277. [Article](https://fatiguemanagersnetwork.org/wp-content/uploads/Dinges-et-al.1997_Cumulative-Sleepiness-Mood-Disturbance-and-Psychomotor-Vigilance-Performance-Decrements-Due-to-Sleep-Restriction.pdf).

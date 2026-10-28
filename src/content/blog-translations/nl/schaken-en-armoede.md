@@ -57,6 +57,8 @@ faq:
       is kenmerkend). Deze eisen passen goed bij de middelen van een welgesteld gezin en slecht bij die
       van een gezin in armoede. De uitzondering was de voormalige USSR, waar de staat de opleiding van
       getalenteerde spelers financierde ongeacht hun sociale herkomst.
+heroImageAlt: Identieke stukken gaan van gladde bestrating naar los zand.
+
 ---
 
 Lagos, 2018. Tunde Onakoya zet een schaakbord neer in een sloppenwijk van Oshodi. De kinderen die op straat spelen komen dichterbij, nieuwsgierig. Hij heeft geen ruimte, geen stoelen, geen computers. Hij heeft stukken, een bord en een idee.

@@ -41,6 +41,7 @@ faq:
       aangevallen veld terechtkomen. De <strong>toren</strong> daarentegen mag wel degelijk een aangevallen veld
       doorkruisen: bij de lange rokade mag veld b1 onder vuur van de tegenstander liggen zonder dat dit hindert.
       Dit is een klassieke bron van fouten.
+heroImageAlt: Een schaakpaard voor smalle open en geblokkeerde doorgangen.
 ---
 
 Op dit punt in de reeks heb je een [schaakbord dat een stelling bijhoudt en kan herstellen](/fr/blog/representer-un-echiquier-en-python/). Het weet nog niet welke zetten toegestaan zijn, wat er een even nuttige schaakengine van maakt als een auto zonder wielen.

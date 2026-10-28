@@ -38,14 +38,11 @@ seoTitle: "Échecs et religion : l'histoire des interdits religieux du jeu"
 seoDescription: >-
   Pourquoi l'Église, l'islam et l'orthodoxie ont-ils interdit les échecs ? Pierre Damien, Saint Louis, la fatwa de 2016 :
   mille ans de méfiance religieuse envers le jeu, et sa réhabilitation.
-ogImage: /images/blog/echecs-religion-et-interdit-hero.png
+ogImage: /images/og/echecs-religion-et-interdit-og.webp
 heroImage:
-  src: /images/blog/echecs-religion-et-interdit-hero.png
-  alt: >-
-    Illustration pixel art : un échiquier posé sur un autel de pierre baigné d'une lumière de vitrail, pièces projetant de
-    longues ombres, atmosphère médiévale, « Échecs et religion »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-religion-et-interdit-hero.webp
+  alt: Une main d'ombre survolant une dalle en damier intacte pour saisir des dés
+    à côté.
 faq:
   - question: Les échecs ont-ils vraiment été interdits par l'Église catholique ?
     answer: >-
@@ -82,11 +79,9 @@ faq:
       (jeu sans enjeu, sans excès, présenté comme une école de vertu), la méfiance retombait.
 ---
 
-En janvier 2016, le grand mufti d'Arabie saoudite déclare les échecs illicites. Quelques jours plus tard, un tournoi se tient pourtant dans le royaume.
+Les rapports entre les échecs et les autorités religieuses varient selon les périodes, les lieux et les usages du jeu. Une condamnation, une réglementation et une pratique tolérée ne constituent pas des situations équivalentes.
 
-Près de mille ans plus tôt, vers 1061, un cardinal italien saisit sa plume pour réprimander un évêque surpris à pousser des pièces de bois sur un damier. Le ton est cinglant : un homme d'Église n'a pas à perdre son âme à un tel divertissement.
-
-Entre ces deux scènes, mille ans de méfiance. L'Église latine, l'islam, l'orthodoxie russe ont tour à tour soupçonné, encadré ou banni les échecs. Ce qui surprend, quand on relit cette histoire, c'est que la cible n'a presque jamais été le jeu lui-même.
+Pour comprendre les interdits, il faut examiner les griefs formulés, les textes et leur application. Le temps consacré au jeu, les mises d'argent et les obligations religieuses peuvent être discutés séparément. Cette approche permet de restituer les différences entre traditions sans raconter une opposition uniforme entre religion et échiquier.
 
 <figure>
   <img src="/images/blog/religion-libro-juegos.webp" alt="Enluminure médiévale de deux joueurs d'échecs, tirée du Libro de los juegos (1283)." width="960" height="1440" loading="lazy" decoding="async" />
@@ -105,7 +100,7 @@ Le troisième grief, plus subtil, concerne **les passions**. Les échecs réveil
 
 Retenez ces trois axes (argent, temps, passions), car ils expliquent presque tout. Là où ils sont présents, l'interdit tombe. Là où on parvient à les retirer, le jeu est gracié.
 
-![Les trois griefs religieux contre les échecs communs à toutes les traditions : l'argent misé, le temps soustrait à la prière, les passions de la compétition.](/images/echecs-religion-01-trois-griefs.svg)
+![Des motifs de critique à situer dans leur contexte](/images/echecs-religion-01-trois-griefs.svg)
 
 ## La chrétienté médiévale : l'Église contre l'échiquier
 
@@ -119,7 +114,7 @@ Le sommet de cette défiance est sans doute l'**ordonnance de Saint Louis**, en 
 
 À chaque fois, on retrouve nos trois axes : l'assimilation au pari (l'argent), le détournement des devoirs (le temps), et l'idée que le jeu nourrit des passions indignes d'un chrétien.
 
-![Chronologie des interdits et réhabilitations religieuses des échecs : de Pierre Damien en 1061 à la fatwa saoudienne de 2016, avec les réhabilitations de Cessoles (1300) et Khomeini (1988).](/images/echecs-religion-02-chronologie-interdits.svg)
+![Quelques repères, des contextes différents](/images/echecs-religion-02-chronologie-interdits.svg)
 
 ## Le retournement : l'échiquier devient une leçon de morale
 
@@ -131,7 +126,7 @@ Le procédé est génial : il ne nie pas le jeu, il le moralise. Les échecs ces
 
 À partir de là, la cause est entendue dans l'Occident chrétien. Le jeu reste parfois suspect quand on y mise de l'argent, mais l'échiquier en lui-même est blanchi. Il deviendra même, à la Renaissance puis aux Lumières, un emblème d'intelligence et de civilité, la racine lointaine de sa place actuelle dans la culture populaire, à laquelle un article à venir sera consacré.
 
-![La ruse de Cessoles vers 1300 : transformer l'échiquier en allégorie morale où chaque pièce représente un ordre social, réhabilitant ainsi le jeu aux yeux de l'Église.](/images/echecs-religion-03-cessoles-moralisation.svg)
+![Cessoles : le jeu comme support d’une allégorie](/images/echecs-religion-03-cessoles-moralisation.svg)
 
 <figure>
   <img src="/images/blog/religion-templiers-echecs.webp" alt="Deux chevaliers du Temple jouant aux échecs, enluminure du Libro de los juegos (1283)." width="555" height="325" loading="lazy" decoding="async" />
@@ -150,7 +145,7 @@ Les écoles juridiques divergent. L'**école chaféite** se montre la plus accom
 
 L'époque contemporaine en offre deux illustrations spectaculaires et opposées. En Iran, la révolution de 1979 entraîne une mise à l'écart des échecs, soupçonnés d'être un jeu de pari ; puis, en **1988, l'ayatollah Khomeini émet une fatwa qui les autorise** dès lors qu'ils ne servent pas au jeu d'argent, décision qui relance toute une école iranienne. À l'inverse, en **janvier 2016, le grand mufti d'Arabie saoudite, cheikh Abdulaziz Al ash-Sheikh, déclare les échecs illicites**, « gaspillage de temps et d'argent » et germe d'inimitié. Mais l'avis ne se traduit par aucune interdiction effective : la fédération saoudienne précise qu'il n'a pas force de loi, et un tournoi se tient peu après. La condamnation morale et l'interdiction réelle, une fois de plus, ne coïncident pas.
 
-![L'oscillation de l'islam face aux échecs : trois conditions de licéité et deux positions contemporaines opposées, fatwa Khomeini (Iran 1988, jeu autorisé) contre fatwa du grand mufti (Arabie saoudite 2016, jeu illicite).](/images/echecs-religion-04-islam-oscillation.svg)
+![Situer chaque avis dans son contexte](/images/echecs-religion-04-islam-oscillation.svg)
 
 ## La Russie orthodoxe : interdit par l'Église, adoré par le peuple
 

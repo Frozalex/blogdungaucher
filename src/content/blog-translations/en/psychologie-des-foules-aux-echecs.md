@@ -49,6 +49,7 @@ faq:
       shows that anonymity and immersion in a group actually strengthen adherence to that group's
       norms. An aggressive chat doesn't reveal the disappearance of rules, it reveals which rules
       apply in that group.
+heroImageAlt: Seated figures in separate pools of light within one hall.
 ---
 
 Tournament hall, round 5. A hundred and forty players, eighty tables, and absolute silence. Nobody speaks. Nobody moves around. Nobody looks anywhere but at their own position.

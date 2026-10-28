@@ -40,14 +40,11 @@ keyTakeaways:
 seoTitle: "AlphaZero contre Stockfish : la révolution de l'IA aux échecs"
 seoDescription: >-
   AlphaZero vs Stockfish 2017 : apprentissage par renforcement, réseau de neurones, style de jeu révolutionnaire. Comment l'IA a changé la compréhension des échecs.
-ogImage: /images/blog/echecs-alphazero-stockfish-hero.png
+ogImage: /images/og/echecs-alphazero-stockfish-og.webp
 heroImage:
-  src: /images/blog/echecs-alphazero-stockfish-hero.png
-  alt: >-
-    Illustration pixel art : réseau de neurones d'un côté, arbre de recherche algorithmique de l'autre, échiquier au
-    centre, « AlphaZero vs Stockfish »
-  credit: Blog d'un Gaucher
-  license: Création originale
+  src: /images/blog/echecs-alphazero-stockfish-hero.webp
+  alt: Des milliers de fils tendus posés un à un, à côté d'une seule courbe tracée
+    d'un trait.
 faq:
   - question: AlphaZero est-il toujours le meilleur programme d'échecs ?
     answer: >-
@@ -79,9 +76,9 @@ faq:
 
 ---
 
-Décembre 2017. L'équipe de DeepMind publie un papier de recherche et, en annexe, 10 parties commentées. Ces 10 parties ont électrisé la communauté des échecs d'une façon que rien n'avait faite depuis le match Fischer-Spassky de 1972.
+La comparaison entre AlphaZero et Stockfish permet d'examiner différentes manières d'associer recherche, évaluation et apprentissage dans un programme d'échecs. L'intérêt ne se réduit pas au résultat d'un match : il porte aussi sur les méthodes employées et les conditions de la comparaison.
 
-Ce n'était pas simplement qu'un programme battait un autre programme. C'était la façon dont il le battait.
+Pour comprendre ce que les parties publiées montrent, il faut distinguer les décisions visibles sur l'échiquier, le fonctionnement des programmes et les conclusions permises par le protocole. Une sélection de parties peut éclairer une méthode sans suffire à caractériser tous ses avantages.
 
 ## L'architecture d'AlphaZero
 

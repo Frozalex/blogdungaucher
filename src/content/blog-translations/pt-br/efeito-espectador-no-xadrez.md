@@ -50,6 +50,8 @@ faq:
       pública: é a transmissão de uma informação a uma instância que tem meios de investigar. A distinção
       é decisiva, tanto jurídica quanto eticamente, e é exatamente para isso que os procedimentos
       existem.
+heroImageAlt: Uma luva caída cercada por um círculo de sapatos imóveis.
+
 ---
 
 Um jogador emenda quinze partidas com precisão de motor, num torneio aberto, diante de duzentos espectadores. O chat comenta. Alguns riem. Uns poucos escrevem que é óbvio.

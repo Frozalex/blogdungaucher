@@ -1,13 +1,8 @@
 ---
 title: "Gaslighting in Chess: When Someone Rewrites Your Own Game"
-excerpt: >-
-  In chess, the truth is archived move by move. It's the only game where you can prove what actually
-  happened. And yet it's remarkably fertile ground for a form of manipulation that consists of making
-  someone doubt their own perception.
+
 seoTitle: "Gaslighting in Chess: Accusations, Toxic Coaching and Denial"
-seoDescription: >-
-  Gaslighting applied to chess: unproven cheating accusations, toxic coaching, post-mortems that
-  rewrite the game. What the research says and why notation protects you.
+
 enSlug: "gaslighting-in-chess"
 draft: false
 tags:
@@ -19,38 +14,39 @@ tags:
   - Kramnik
   - ethics
   - chess
+
+heroImageAlt: A hand erasing footprints behind a figure looking back.
+
+excerpt: >-
+  A recorded game helps verify moves, not read intentions. Distinguishing disagreement, hindsight and destabilization,
+  with the limits of analysis and precisely attributed institutional examples.
+seoDescription: >-
+  Gaslighting and chess: criticism, accusations and trust in perception. Sweet's study, a dated FIDE decision and
+  careful use of game records, without diagnosis from a distance.
 faq:
-  - question: "What exactly is gaslighting?"
+  - question: What is gaslighting?
     answer: >-
-      It's a form of manipulation that leads someone to doubt their own perception of reality, their
-      memory or their judgment. The term comes from Patrick Hamilton's play Gas Light, staged in 1938,
-      in which a husband convinces his wife she's going mad. Sociologist Paige Sweet showed in 2019
-      that gaslighting is only fully effective when it rests on a pre-existing power imbalance.
-  - question: "Is an unproven cheating accusation gaslighting?"
+      The term describes manipulative processes undermining trust in perception, memory or judgment. Sweet examines
+      inequalities in domestic violence; her study is not a universal clinical checklist for relationships in clubs.
+  - question: Is an unproven cheating accusation automatically gaslighting?
     answer: >-
-      Not automatically. It becomes gaslighting when it's public, repeated, unsupported by evidence
-      submitted to the competent bodies, and when it leads the accused to doubt the value of their own
-      results. In July 2026, the FIDE Ethics Commission sanctioned Vladimir Kramnik for, among other
-      things, psychological abuse and unfounded public accusations, holding that publicly naming
-      identifiable players without institutional verification exposed them to unjustified reputational
-      and psychological harm.
-  - question: "How do you tell a demanding coach from one who gaslights?"
+      No. Facts, context and repetition need examination without inferring intent from one remark. The first-instance
+      FIDE decision 12/2025 includes a majority finding of psychological abuse under its disciplinary code; that is
+      not a clinical diagnosis of gaslighting.
+  - question: How can I discuss a coach's criticism?
     answer: >-
-      A demanding coach disputes your moves. A manipulative coach disputes your perception. The first
-      says "this move is bad and here's why," a verifiable claim you can contradict. The second says
-      "you never understood this position" or "you're misremembering what I told you," claims that are
-      about your mind rather than the board and that can't be checked.
-  - question: "Why is chess such particular ground for this?"
+      Ask for specific explanations and variations, and distinguish evaluating a move from broad judgments about
+      you. An awkward remark alone does not establish abuse. Repeated devaluation or distress may warrant independent
+      perspective and support.
+  - question: Does notation protect against all manipulation?
     answer: >-
-      Because the facts are fully archived. Every game exists as notation, retrievable and replayable.
-      So gaslighting can't be about the moves themselves, which are provable. It shifts to what isn't
-      recorded: your intentions, your understanding, your real level, what you did or didn't see.
-  - question: "What should I do if I'm being gaslit at a chess club?"
+      No. Complete notation can establish moves, but not all intentions or conversations. Not every game is preserved,
+      and chess is not the only traceable game. An engine score is generally an estimate, not an infallible verdict.
+  - question: What if a relationship at my club destabilizes me?
     answer: >-
-      Keep the written traces, they're your main protection: game notation, messages, analyses. Test
-      claims against the archived facts rather than against your memory. Have your games analysed by an
-      independent third party. And if the matter involves a formal accusation, use the official
-      channels, which exist precisely to take the case off the terrain of rumour.
+      Preserve available records, distinguish facts from interpretations and talk to someone you trust. Independent
+      analysis may help with positions. Use the prescribed procedure for a formal allegation; seeking support does
+      not require first proving a particular label.
 ---
 
 The game is over. You lost, and you're going through it together. Except the game he's describing isn't the one you played.
@@ -59,37 +55,37 @@ Your position on move 20, the one you thought was solid, was "completely lost lo
 
 You don't remember him telling you ten times. You don't remember being lost on move 20. But he sounds so certain that you start wondering whether your memory is reliable.
 
-There it is. It has a name.
+This fictional scene may suggest a destabilizing relationship. It does not, on its own, establish a label for a person or a diagnosis of abuse.
 
 ## Where the Word Comes From
 
-The term comes from a play. *Gas Light*, written by British novelist [Patrick Hamilton](https://en.wikipedia.org/wiki/Patrick_Hamilton_(writer)), premiered in London on 5 December 1938. The plot is simple and chilling: Jack Manningham wants his wife Bella committed so he can seize her inheritance. He never hits her. He moves objects and denies moving them. He lowers the gas lamps in the house, and when she notices the room darkening, he tells her she's imagining things.
+The term refers to Patrick Hamilton’s 1938 play *Gas Light*, also known as *Angel Street*. It portrays a husband trying to make Bella doubt her sanity. [Concord Theatricals’ presentation](https://www.concordtheatricals.com/s/2380/angel-street-gaslight?variantId=26654) describes this destabilization.
 
-The 1944 Hollywood adaptation with Ingrid Bergman made the story famous and gave the technique its name. The verb *to gaslight* entered psychological vocabulary much later, and everyday usage later still.
+The Hollywood adaptation [*Gaslight* (1944), with Ingrid Bergman](https://www.bfi.org.uk/film/7b140561-04e4-597a-adc0-13f8a539287e/gaslight), helped make the story known. The term later came to describe destabilizing processes in other contexts.
 
-What's remarkable about Hamilton's device is that it rests on no lie about external facts at all. Manningham doesn't tell a false story. He attacks **the measuring instrument** directly: Bella's ability to trust what she perceives. Once that instrument is discredited, everything becomes negotiable.
+The story combines lies, denial of facts and attacks on **trust in one’s own perception**. Claiming that the process never concerns facts would be wrong: discrediting memory and denying events can reinforce each other.
 
 ## What the Research Added
 
-For a long time, gaslighting was treated as an individual pathology: a manipulator, a victim, a toxic relationship.
+The word is now used in varied contexts. Its everyday use, a sociological analysis and the findings of a particular procedure need distinguishing.
 
-In 2019, sociologist [Paige Sweet](https://en.wikipedia.org/wiki/Gaslighting) published a paper in the *American Sociological Review* that shifted the analysis. Her thesis: gaslighting isn't primarily a psychological phenomenon, it's a **social** one. It only works when it can lean on pre-existing inequalities and on available stereotypes.
+In [*The Sociology of Gaslighting* (2019)](https://journals.sagepub.com/doi/10.1177/0003122419874843), Paige Sweet uses domestic violence as a case study to examine stereotypes, inequalities and power. This is not research on chess clubs or a universal condition tested across every interaction.
 
 Put differently, telling someone "you're imagining things" doesn't carry the same power depending on who says it. If the claim comes from a person whose authority is socially recognized, it doesn't merely contradict: it **mobilizes a structure**. The doubt it installs is reinforced by everything the surrounding community already takes for granted.
 
-This point matters enormously for what follows, because it explains why gaslighting has nothing to do with simple disagreement. Two players of the same strength who disagree about a position are having a debate. A titled coach explaining to his student that the student misremembers what was said has something more than an argument.
+Applying this perspective to coaching is an editorial reflection here. Sporting authority may make disagreement difficult, but a difference in skill does not prove manipulation; disagreements between peers can also be harmful. Behaviors and repetition need examination.
 
 ## The Chess Paradox
 
 Here's what makes chess fascinating on this terrain.
 
-Chess is probably **the human domain where reality is best archived**. Every tournament game is notated move by move. Every online game is recorded automatically. The position on move 20 isn't an impression: it's an object, reconstructable in three seconds, on which an engine will deliver a verdict to the hundredth of a pawn.
+Many games can be reconstructed from notation or platform records. Chess is neither the only traceable game nor a guaranteed archive of every encounter. Records help verify moves; an engine’s evaluation still depends on its version and calculation, except where a proof or exact solution is available.
 
-In a marriage, there's no notation. In a company, the meeting isn't replayable. In chess, it is.
+Messages, minutes and other records can also exist outside chess. They facilitate some checks without capturing the whole lived experience.
 
-So you'd think chess would be immune. It isn't remotely. It's simply **displaced**.
+An archive does not make a relationship immune to destabilization. It offers evidence, not a complete account of intentions.
 
-Since the moves are provable, the manipulation isn't about the moves. It's about everything else, meaning the vast part of chess experience that **isn't** recorded:
+Discussion can concern moves themselves, a disputed record or matters notation does not directly establish:
 
 - what you had understood about the position, which appears nowhere in the notation;
 - what you had calculated and discarded, invisible by construction;
@@ -103,21 +99,21 @@ Notation proves **what you played**. It proves nothing about **what you are**. A
 
 ### 1. The Public Accusation Without Evidence
 
-The most spectacular form, and recently the best documented institutionally.
+A public allegation can cause harm. Its possible formal classification needs separating from general use of the word gaslighting.
 
-On 3 July 2026, the FIDE Ethics and Disciplinary Commission issued its decision in case 12-2025, following complaints filed by the federation's Management Board and its Fair Play Commission. Grandmaster [Vladimir Kramnik](https://en.wikipedia.org/wiki/Vladimir_Kramnik), world champion from 2000 to 2007, was found responsible for several breaches: harm to the dignity and respectful treatment of persons, harassment and cyber-harassment, **psychological abuse**, failure in his role as an example, failure to cooperate with the Fair Play Commission's investigation, and **false or unjustified public accusations**.
+The [first-instance FIDE decision in case 12/2025](https://ethics.fide.com/wp-content/uploads/2026/07/Decision_Case_12-2025_Final.pdf), published July 3, 2026, sanctioned Vladimir Kramnik on several grounds. It found psychological abuse under Article 6.5(e) by majority, with a dissenting opinion. Some other charges were dismissed. This disciplinary terminology is not a clinical diagnosis of “gaslighting”.
 
-The commission's wording deserves precise quotation, because it describes a mechanism and not merely a fault: publicly associating identifiable players with cheating suspicions without sufficient institutional verification exposes them to unjustified reputational and psychological harm.
+In paragraphs 20.1-20.6, the chamber considers the possible effects of repeatedly associating identifiable people with cheating suspicions. This is a summary of its reasoning, not a verbatim quotation or a rule automatically classifying every disputed accusation.
 
-The sanction: a two-year worldwide ban from competition and official functions, the final twelve months suspended over a three-year probationary period, together with twelve months of unpaid service to the chess community.
+The decision imposed a two-year ban, with the final twelve months suspended over three years’ probation, and twelve months of unpaid service. The [FIDE announcement](https://www.fide.com/fide-ethics-disciplinary-commission-issues-a-decision-in-case-involving-gm-vladimir-kramnik/) states that an appeal was available. We describe this dated text without asserting the outcome of any appeal.
 
-What makes this mechanism so destructive is its asymmetry. The accused can't prove innocence: you can't demonstrate the absence of cheating, you can only note the absence of evidence of cheating. Meanwhile every good game he plays becomes suspect, including in his own eyes. He ends up playing against his own past.
+An allegation may be difficult to challenge publicly, particularly when repeated to a large audience. This does not make all evidence of innocence logically impossible or reveal the psychological state of each person targeted.
 
 This is a different situation from [the Niemann affair](/en/blog/cheating-in-chess/), where the question of proof arose differently. Here, the adjudicating body characterized the behaviour itself.
 
 ### 2. The Coaching That Moves the Target
 
-Far more common, far less visible, and with no body to adjudicate.
+Another situation to examine is how criticism is expressed during coaching.
 
 A normal coach, even a very harsh one, disputes **your moves**. He says: "this move is bad, here's the refutation." That's verifiable. You can open the engine, or bring a variation, or disagree. The discussion is about an object external to both of you.
 
@@ -128,13 +124,13 @@ The slide happens when the challenge changes target and lands on **your mind**:
 - "you think you calculated, but you didn't calculate";
 - "everyone at the club can see this problem in you."
 
-None of these sentences can be verified. None is about the position. They're about your memory, your attention, your understanding, your reputation. They are exactly the instruments with which you assess reality.
+These broad statements risk replacing a specific explanation with a judgment about the person. Some can be checked against notes or messages; none alone establishes manipulative intent.
 
-And on Sweet's analysis, their effectiveness doesn't come from their content: it comes from the position of the person saying them. The same reproach, from a player at your level, would be argued about. From someone who rates you, selects you or grades you, it settles in.
+The speaker’s authority may amplify a remark’s effect. Content, opportunities to respond and the relationship’s history matter too. Sweet’s research cannot predict every student’s or coach’s response.
 
 ### 3. The Post-Mortem That Rewrites
 
-The most ordinary form, often with no intent to harm.
+Retrospective reconstruction also needs distinguishing from manipulation.
 
 Post-game analysis has a strange property: it takes place in a state of knowledge you didn't have during the game. Once you know where it turned, everything else looks like it led there. Move 20 "was already losing," when it was only losing in the light of move 34.
 
@@ -142,53 +138,53 @@ The winner, in perfectly good faith, tells the story of a game he controlled. He
 
 If you accept that version, the lesson you take from the game corresponds to nothing: that you were dominated from start to finish, when you may have been better on move 25. Repeated across a hundred games, this mechanism builds a self-image entirely disconnected from your results.
 
-This isn't manipulation, it's a reconstruction bias. But the effect on you is identical, which is why it belongs here. The difference is in the intent, not the damage.
+Hindsight bias is not automatically gaslighting, and its effects are not necessarily identical to repeated abuse. An incorrect analysis can be corrected without attributing a hidden intention to its author.
 
 ## The Test: Gaslighting or Disagreement?
 
-Three questions settle it fairly quickly.
+These questions support reflection, not a quick diagnosis or determination of responsibility.
 
 **Is the claim about a fact or about your perception?** "This move loses a piece" is a fact, verifiable, arguable. "You never see anything" isn't a fact, it's a verdict on your perceptual apparatus.
 
 **Is it falsifiable?** An honest criticism indicates what would contradict it. If no evidence could change your interlocutor's mind, it's no longer an analysis, it's a position.
 
-**What happens when you produce evidence?** This is the decisive test. You open the game, you show the evaluation on move 20, it's level. An interlocutor in good faith updates his judgment. A gaslighting mechanism moves the target: "the evaluation means nothing," "that's not the point," "you can't take criticism." The evidence isn't discussed, it's bypassed, and you become the subject.
+**How is the evidence discussed?** Reconstruct the position and present variations. One engine score does not compel agreement; its limitations can be discussed in good faith. A repeated pattern of personal devaluation that systematically prevents discussion deserves attention.
 
 ## What Protects You, and Few Domains Have It
 
-Here's the good news, and it's specific to this game.
+Here is a practical resource: use available records while recognizing their limitations.
 
 **You have the notation.**
 
-In almost every life situation where this mechanism operates, the victim has no record. She confronts the other person's memory with her own, and the other person's memory is more confident. In chess, you have a complete, timestamped record, external to both of you, that takes nobody's side.
+Complete notation can establish the move sequence. It does not automatically recover the exact time of each decision, every spoken word or internal reasoning. Messages and notes may complement it, with appropriate care for their preservation.
 
 Three concrete uses:
 
-**Notate your games, including online.** Not just the moves, which the platform keeps: write one line at the end about what you thought of your position at the key moments and why you played what you played. It's the only record that will ever exist of your actual state of knowledge. Without it, the reconstructed version always wins.
+**Record games and impressions.** Afterwards, distinguish recorded moves from what you remember thinking. These notes remain retrospective testimony, not infallible access to your mental state, but may help reopen discussion.
 
-**Test claims against the archive, not against your memory.** If you're told you were lost on move 20, don't search your recollection. Open the position. The answer exists.
+**Test claims against available evidence.** Replay the specified position, explore variations and distinguish recorded facts from interpretations. Analysis can remain uncertain.
 
-**Get analysis from an independent third party.** Not an engine alone, which tells you *that* the move is bad without telling you what was humanly visible. A stronger player, outside the relationship. The method is detailed in our guide on [how to analyze your games](/en/blog/how-to-analyze-chess-games/).
+**Seek independent analysis.** Ask someone outside the relationship to distinguish played moves, possible variations and what a player could reasonably notice. An engine can help test lines; it does not describe your experience on its own.
 
 And for formal accusations: institutional channels exist for exactly this. Their function isn't bureaucratic, it's protective. They take the matter off the terrain where rumour beats evidence, and where, as FIDE noted, the harm occurs regardless of whether the facts are true.
 
 ## What to Take Away
 
-Gaslighting doesn't consist of lying about facts. It consists of discrediting the instrument with which you establish facts. That's why it works even in a domain where everything is archived: it simply shifts to what the archive doesn't contain, meaning your level, your understanding, your intentions.
+Gaslighting refers to processes undermining trust in perception, memory or judgment; lies and denial may be part of them. Disagreement, analytical mistakes or an awkward remark alone do not establish it.
 
-Paige Sweet's research adds the decisive element: this mechanism only has force when carried by an asymmetry. It isn't a problem of character, it's a problem of position. A coach, a titled player, a club figure has a lever that a peer doesn't.
+Sweet’s research invites consideration of power and social resources too. We do not turn it into a universal law about clubs or a clinical framework applicable from a distance.
 
-Your protection is concrete and you already have it: the written record. Chess is one of the rare places where you can answer "here's the position, let's look." You just have to look rather than remember.
+Written records, independent analysis and someone you trust may help restore perspective. They offer no absolute guarantee. If a situation causes distress or isolation, seeking support does not require first proving a particular label.
 
-**After reading:** go back to a game where you were told you'd been "lost for ages." Open it. Look at the evaluation at the move in question. You'll find out whether you accepted a version, or a fact.
+**After reading:** revisit a disputed position, record available facts and remaining uncertainties, then compare analyses. The aim is a verifiable discussion, not declaring someone manipulative solely from an engine score.
 
 ---
 
-*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/). An upcoming article will cover emotional manipulation, which operates during the game rather than after it.*
+*This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect in chess](/en/blog/dunning-kruger-effect-in-chess/).*
 
 ## Sources
 
-- Sweet, P. L. (2019). The sociology of gaslighting. *American Sociological Review*, 84(5), 851-875.
+- Sweet, P. L. (2019). [The sociology of gaslighting](https://journals.sagepub.com/doi/10.1177/0003122419874843). *American Sociological Review*, 84(5), 851-875.
 - Hamilton, P. (1938). *Gas Light: A Victorian Thriller in Three Acts*. Constable.
-- FIDE Ethics & Disciplinary Commission (2026). Decision in case 12-2025, 3 July 2026.
-- Fédération Internationale des Échecs. *Anti-Cheating Regulations*, FIDE Handbook.
+- FIDE Ethics & Disciplinary Commission (2026). Decision in case [12/2025, 3 July 2026](https://ethics.fide.com/wp-content/uploads/2026/07/Decision_Case_12-2025_Final.pdf).
+- Fédération Internationale des Échecs. *Anti-Cheating Regulations*, [FIDE documents](https://fpl.fide.com/anti-cheating-regulations/).

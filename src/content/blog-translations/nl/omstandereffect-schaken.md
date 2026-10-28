@@ -41,6 +41,8 @@ faq:
       arbiter is geen publieke beschuldiging: het is een overdracht van informatie aan een instantie die
       over de middelen beschikt om te onderzoeken. Dit onderscheid is doorslaggevend, zowel juridisch als
       ethisch, en het is precies waarvoor de procedures bestaan.
+heroImageAlt: Een gevallen handschoen binnen een kring van stilstaande schoenen.
+
 ---
 
 Een speler wint vijftien partijen achter elkaar met machineprecisie, in een open toernooi, onder de ogen van tweehonderd toeschouwers. De chat becommentarieert. Sommigen lachen. Enkelen schrijven dat het overduidelijk is.

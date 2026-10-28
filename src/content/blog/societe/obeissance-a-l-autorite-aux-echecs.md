@@ -53,15 +53,16 @@ faq:
       En inversant l'ordre des opérations : évalue la position et écris ton verdict avant d'allumer le
       moteur. L'information utile n'est pas son évaluation, c'est l'écart entre la sienne et la tienne.
       Sans verdict préalable écrit, cet écart n'existe pas et tu n'apprends rien sur toi.
+heroImage:
+  src: /images/blog/obeissance-a-l-autorite-aux-echecs-hero.webp
+  alt: De petites lampes s’orientent toutes vers une grande lampe suspendue.
+ogImage: /images/og/obeissance-a-l-autorite-aux-echecs-og.webp
+
 ---
 
-Ton entraîneur te dit de jouer h3 dans cette structure. Tu ne comprends pas pourquoi. Tu le joues.
+S'appuyer sur une autorité compétente permet de décider sans refaire toute son analyse. Aux échecs, les recommandations d'un entraîneur, les commentaires d'un grand maître et les évaluations d'un moteur posent cependant des problèmes de confiance différents.
 
-Un grand maître commente une partie et écarte ton idée d'une phrase. Tu ne comprends pas pourquoi. Tu l'abandonnes.
-
-Le moteur affiche -0,4 sur une position que tu trouvais correcte. Tu ne comprends pas pourquoi. Tu conclus que ta position était mauvaise.
-
-Dans les trois cas, tu as modifié ton jugement sans avoir reçu **un seul argument**. Et dans les trois cas, tu avais probablement raison de le faire, ce qui est exactement ce qui rend le problème difficile.
+La question est de savoir quand suivre une conclusion que l'on ne comprend pas encore et comment en examiner ensuite les raisons. Il faut distinguer la confiance justifiée dans une expertise, l'apprentissage de ses arguments et l'obéissance qui interdit toute discussion.
 
 ## Ce que Milgram a fait
 

@@ -39,6 +39,7 @@ faq:
       autonomieondersteuning en doorzettingsvermogen. Het meest betwiste deel is de bewering dat deze
       drie behoeften fundamenteel en universeel zijn, moeilijk te falsifiëren en betwist in haar
       interculturele reikwijdte.
+heroImageAlt: Drie afzonderlijke wortels ondersteunen een jonge boom.
 ---
 
 Je kent iemand die met schaken is gestopt.

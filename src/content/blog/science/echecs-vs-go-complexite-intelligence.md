@@ -6,7 +6,7 @@ category: "science"
 featured: false
 featuredRank: 99
 affiliate: true
-readingTime: "7 min"
+readingTime: "6 min"
 pillar: "Théorie des jeux"
 tags: ["Go", "AlphaGo", "complexité combinatoire", "IA", "comparaison", "cognition"]
 seoTitle: "Échecs vs Go : comparaison complète (complexité, cognition, IA)"
@@ -25,12 +25,15 @@ faq:
   - question: "Les résultats des IA classent-ils l’intelligence des joueurs ?"
     answer: "Non. Ils mesurent des performances de programmes dans des protocoles précis. Ils ne comparent pas directement l'intelligence générale des joueurs humains."
 heroImage:
-  src: "/images/og-default.png"
-  alt: "Échiquier face à un goban : deux philosophies du jeu"
-ogImage: "/images/og-default.png"
+  src: /images/blog/echecs-vs-go-complexite-intelligence-hero.webp
+  alt: Un cavalier et une pierre de go séparés par un pli ramifié.
+ogImage: /images/og/echecs-vs-go-complexite-intelligence-og.webp
+
 ---
 
-Les amateurs de Go montrent les chiffres de leur espace de jeu. Les joueurs d'échecs répondent que leur jeu exige une grande précision tactique. Ces arguments parlent de choses différentes : compter des configurations n'est pas mesurer la difficulté ressentie ni l'intelligence d'une personne.
+Comparer la complexité des échecs et du Go demande de préciser ce que l'on mesure : nombre de configurations, taille de l'arbre de jeu, difficulté du calcul ou exigences de la pratique humaine. Ces critères ne sont pas interchangeables.
+
+Un espace de jeu plus vaste ne fournit pas directement une mesure de la difficulté ressentie ni de l'intelligence des joueurs. L'enjeu est d'examiner les modèles et les compétences propres à chaque jeu avant de tirer une conclusion de leurs différences.
 
 ## Comparer les mêmes grandeurs
 
@@ -64,11 +67,50 @@ Le réseau propose des probabilités de coups et une valeur ; la recherche MCTS 
 
 Le succès d'une architecture commune montre une possibilité informatique. Il ne démontre pas que les humains apprennent les trois jeux par les mêmes mécanismes, ni que le Go aurait nécessité une forme d'intuition inaccessible aux autres approches par principe.
 
+## Pourquoi compter les cases ne suffit pas
+
+Sur un plateau de Go vide de 19×19, les 361 intersections offrent autant de placements initiaux, hors le choix de passer selon les règles. Aux échecs, la position initiale offre 20 coups légaux : 16 mouvements de pions et quatre sauts de Cavaliers. Cette comparaison locale est simple à vérifier ; elle ne décrit pas tout l'arbre de chacun des jeux.
+
+Plus tard, le nombre de choix change avec la position. Une réponse à un échec peut être presque forcée. Une position de Go peut comporter des contraintes de capture ou de répétition. Le coût d'une recherche dépend donc de bien davantage que du premier embranchement.
+
+**Modèle fictif.** Un arbre avec dix choix à chacune de quatre étapes a 10 000 feuilles à cette profondeur. Un arbre avec deux choix à chacune de dix étapes en a 1 024. Ces calculs montrent l'effet conjoint de la largeur et de la profondeur ; ils ne sont pas une estimation du nombre réel de parties d'échecs ou de Go.
+
+## Configuration du plateau et état complet
+
+Le [comptage de Tromp](https://tromp.github.io/go/legal.html) définit les configurations légales à partir des groupes de pierres et de leurs libertés. Cette définition permet une question mathématique contrôlable. Une règle de répétition peut demander des informations supplémentaires sur le chemin suivi.
+
+Aux échecs, la disposition des pièces ne suffit pas non plus : le trait, les droits de roque et la prise en passant peuvent changer les coups légaux. Les règles de nulle requièrent encore certaines informations d'historique. Une comparaison doit donc annoncer précisément ce qu'elle compte.
+
+Le nombre de parties estimé, le nombre de configurations et la difficulté algorithmique ne sont pas trois noms d'une même grandeur. Tu peux les étudier séparément sans qu'une seule donne immédiatement la difficulté pour un débutant ou la richesse ressentie par un expert.
+
+## Deux règles locales qui demandent un contrôle exact
+
+**Exemple échiquéen construit.** Depuis la position initiale : 1.e4 a6 2.e5 d5. Les Blancs peuvent jouer 3.exd6 en passant. Si tu décris seulement les pièces après 2...d5 et omets le dernier coup, tu ne disposes pas de toute l'information nécessaire pour établir cette possibilité.
+
+Au Go, une capture s'examine en comptant les libertés des groupes dans la position ; certaines répétitions imposent aussi des contraintes selon les règles retenues. Le mot « intuitif » ne dispense pas davantage de ce contrôle que le mot « calculateur » ne dispense de vérifier une prise en passant.
+
+Cette comparaison n'attribue pas une spécialisation cérébrale à chaque communauté. Elle montre que les règles produisent des problèmes de représentation différents qu'il faut apprendre.
+
+## Ce qu'une victoire de machine ne mesure pas
+
+[IBM](https://www.ibm.com/history/deep-blue) et [DeepMind](https://deepmind.google/research/alphago/) documentent des jalons de leurs systèmes. Ces récits portent sur des performances de programmes à des dates précises. Le délai entre ces jalons ne constitue pas une expérience isolant une unique différence entre les deux jeux.
+
+L'article [AlphaZero de 2017](https://arxiv.org/html/1712.01815v1) permet une autre comparaison : une même famille de méthodes est entraînée séparément sur plusieurs jeux. Ce résultat n'efface pas leurs différences de représentation, ni les données et les moyens propres à chaque entraînement. Il ne prouve pas que l'intelligence humaine fonctionnerait comme ces réseaux.
+
+## Choisir une porte d'entrée et vérifier ce qu'on apprend
+
+Si tu connais les échecs et découvres le Go, accepte d'apprendre ses groupes, ses captures et ses fins de partie sans traduire immédiatement chaque notion en équivalent échiquéen. L'expérience d'un jeu peut t'aider à aimer l'analyse, mais elle ne garantit pas la reconnaissance des motifs de l'autre.
+
+Proposition pédagogique : dans chacun, prends une position élémentaire, explique une règle et vérifie une suite courte. Demande ensuite quel renseignement tu avais oublié. Cette démarche rend ta progression concrète sans comparer la valeur intellectuelle des joueurs.
+
+Tu peux préférer la géométrie d'un jeu, la diversité des pièces de l'autre ou les partenaires rencontrés. Aucun décompte combinatoire ne t'oblige à choisir le plus grand espace d'états pour avoir un loisir exigeant.
+
 ## Comment choisir
 
 Si tu hésites, essaie de petites séances et observe ce qui t'intéresse : les règles, les positions, la communauté, le rythme des parties. Tu peux aussi apprécier les deux sans attendre une amélioration générale d'intelligence.
 
 Pour comparer ta propre progression, définis des objectifs dans chaque jeu. La compréhension d'une finale ou d'un problème de vie et mort vaut comme apprentissage du domaine, sans devoir établir une hiérarchie des personnes qui le pratiquent.
+
 
 ## Sources
 

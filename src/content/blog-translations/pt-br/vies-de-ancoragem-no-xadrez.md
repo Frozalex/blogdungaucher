@@ -48,6 +48,8 @@ faq:
       igual muito depois de lances precisos terem criado um desequilíbrio real. A âncora teórica resiste à
       atualização, ainda mais porque é percebida como um fato estabelecido e não como uma
       avaliação datada.
+heroImageAlt: Uma pequena âncora mantém um balão abstrato perto do chão.
+
 ---
 
 Você está analisando a sua partida. Lance 22, posição complicada. Quer saber o que deveria ter jogado.

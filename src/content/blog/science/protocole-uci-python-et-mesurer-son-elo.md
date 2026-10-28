@@ -58,9 +58,16 @@ faq:
       facilement deux cents points Elo, ce qui autorise à peine à distinguer un moteur de club d'un
       débutant. Les tests sérieux de Stockfish se comptent en dizaines de milliers de parties, parce
       qu'ils cherchent à détecter des écarts de deux ou trois points.
+heroImage:
+  src: /images/blog/protocole-uci-python-et-mesurer-son-elo-hero.webp
+  alt: Un ordinateur est relié par un câble à un boîtier près d’un pion.
+ogImage: /images/og/protocole-uci-python-et-mesurer-son-elo-og.webp
+
 ---
 
-Le moteur de cette série sait tout faire, sauf parler à quelqu'un. Il vit dans un script, joue contre lui-même, et affiche ses résultats dans un terminal. Ce dernier article le sort de là, puis répond à la seule question qui reste : **combien vaut-il ?**
+Le protocole UCI permet de relier le moteur développé dans cette série à une interface d'échecs. Cette étape demande de transformer un programme qui joue dans un terminal en un service capable de recevoir des commandes et de répondre dans le format attendu.
+
+Une fois cette communication établie, il reste à évaluer sa force. La question est de construire une comparaison dont les conditions, les résultats et les limites soient explicites, plutôt que d'attribuer au moteur un classement à partir de quelques parties isolées.
 
 ## UCI, ou pourquoi il n'y a pas d'interface à écrire
 

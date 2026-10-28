@@ -7,3 +7,7 @@ Corrigé : preuve originale distinguée de l’induction rétrograde moderne ; 5
 ## Contradictions finales
 
 Impossibilité future et distance quantifiée au jeu parfait retirées du corps et de l’alt ; coût hypothétique distingué d’une preuve universelle. FAQ et paragraphes accordés. Références Shannon, Syzygy et traduction Zermelo déjà ouvertes.
+
+## Harmonisation avant candidature AdSense
+
+Reprise AdSense : FAQ du corps remise en accord avec la FAQ structurée ; retirées prédictions d’inaccessibilité future, scores moteur sans protocole et affirmations générales d’absence de certitude pour tout joueur. Distinction preuve historique/énoncé moderne explicite jusque dans les alts et la conclusion ; couverture des tablebases nuancée. Texte Schwalbe–Walker avec traduction Zermelo et documentation Syzygy rouverts. Les métadonnées restent à harmoniser par la passe SEO globale.

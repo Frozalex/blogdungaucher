@@ -41,6 +41,8 @@ faq:
       toernooien even nauwgezet als hun openingsvoorbereiding. Magnus Carlsen vermijdt zoveel mogelijk
       avondpartijen. Anand gebruikt oordopjes en een slaapmasker op reis. Sommige spelers melden het
       gebruik van melatonine om tijdsverschillen tijdens internationale toernooien te beheersen.
+heroImageAlt: Een lege werkplaats bij nacht met gereedschap en stapels papier.
+
 ---
 
 Stel je voor dat je een onzichtbare coach hebt die je openingsrepertoire consolideert terwijl je slaapt, die de tactische patronen die je vandaag hebt bestudeerd verbindt met die je al jaren kent, en die interferenties wist tussen de varianten die je net hebt geleerd en de oude. Deze coach bestaat. Het is je slaap.

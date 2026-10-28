@@ -40,6 +40,8 @@ faq:
       naar de weerlegging hebt gekeken. Dat is echter de informatie die telt. Om ze terug te krijgen,
       moet je vóór de analyse noteren wat je werkelijk hebt berekend, anders zal je geheugen een versie
       construeren waarin je alles had gezien.
+heroImageAlt: Een lamp verlicht slechts één tak van een gesplitst pad.
+
 ---
 
 Je ziet hem bij zet 24. Een combinatie. Paardoffer, ontdekt schaak, de dame valt.

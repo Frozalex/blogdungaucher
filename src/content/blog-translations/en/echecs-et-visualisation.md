@@ -1,122 +1,51 @@
 ---
 heroImageAlt: "A chessboard grid whose squares merge into five large, coherent blocks."
-title: "Mental Visualization in Chess: Seeing Without Looking"
-excerpt: "Grandmasters play dozens of simultaneous blindfold games. It's not magic: it's spatial visualization trained to the extreme. How the mental representation of the chessboard works, and how to improve it."
-seoTitle: "Chess Mental Visualization: Seeing Without Looking"
-seoDescription: "How to visualize the chessboard without seeing it. Blindfold chess, cognitive chunks, Chase and Simon study, training methods: the science of mental representation in chess."
+title: "Mental Visualisation in Chess: Following a Position Without Looking"
+excerpt: "Representing a position, following a variation and using your knowledge: progressive exercises without a promised timescale."
+seoTitle: "Mental Visualisation in Chess: Positions, Memory and Practice"
+seoDescription: "Chess visualisation and blindfold practice: how knowledge helps organise positions, what Chase and Simon studied, and progressive exercises without guarantees."
 enSlug: "chess-mental-visualization"
-draft: false
 faq:
-  - question: "How do blindfold players remember all the positions?"
-    answer: >-
-      Not by memorizing square by square. Expert players encode positions in 'chunks': groups of pieces with
-      a logical relationship (a typical formation, a known pawn structure, an attacking formation). A
-      Grandmaster can decompose a position into 5 to 7 familiar chunks, each stored as a single unit in
-      long-term memory. In blindfold play, they don't reconstruct the position piece by piece: they
-      reconstruct their chunks and the relations between them.
-  - question: "Can you learn to play blindfold?"
-    answer: >-
-      Yes, with progressive training. The recommended method starts with simple endgames (King + Rook vs lone
-      King) blindfold: positions are simple and moves are few. Then progress to more complex endgames, then
-      blindfold tactical problems, and finally complete short games. Many club players (1400-1800 Elo) can
-      learn to play simple blindfold games in a few months of regular training.
-  - question: "Is blindfold play dangerous for mental health?"
-    answer: >-
-      There have been historical concerns, notably after several Victorian-era champions who practiced
-      blindfold intensely had psychological problems. Modern research doesn't confirm a direct causal link.
-      Intense practice of any demanding cognitive activity can promote mental exhaustion, but blindfold chess
-      in itself isn't riskier than other forms of intensive training. Like any cognitive effort, it benefits
-      from breaks and variety.
-  - question: "What's the difference between expert and novice chess memory?"
-    answer: >-
-      Chase and Simon's (1973) study is clear: give both groups 5 seconds to memorize a real-game position,
-      then reconstruct it from memory. Experts replace 92% of pieces correctly, novices 20%. But if you give
-      a RANDOM position (pieces placed at random, not from a real game), both groups are equivalent at around
-      30%. Expert chess memory isn't superior visual memory: it's a library of real-game patterns.
-  - question: "How to improve visualization without playing blindfold?"
-    answer: >-
-      Several practical exercises: (1) Calculate variations without moving pieces, mentally visualizing each
-      move before playing it. (2) Solve tactical problems without looking at pieces after reading the
-      position (stare at the position for 30 seconds, close eyes, calculate). (3) Replay famous games from
-      memory, one move at a time, checking with the book. (4) Play simple endgames against yourself
-      blindfold. These progressive exercises improve visualization without the discomfort of full blindfold
-      play.
+  - question: "Do I need to see a photographic image?"
+    answer: "No. Knowledge and relationships between pieces can support representation without ruling out a subjective experience of mental imagery."
+  - question: "How long does improvement take?"
+    answer: "No universal timescale is established here. Adapt variation length and check the resulting position."
 ---
 
-Philidor played three simultaneous blindfold games. His 18th-century audience was stunned: how could a man hold three chessboards in his head simultaneously?
+You calculate a variation without moving the pieces, then forget where a knight is. Visualisation requires keeping a position up to date while exploring its transformations. It may draw on images, relationships between pieces and chess knowledge; those descriptions are not mutually exclusive.
 
-Today, grandmasters play twenty, thirty blindfold games without notable effort. Marc Lang played 46 simultaneous blindfold games in 2011, winning 19, drawing 13, and losing only 4.
+## Memory organised by knowledge
 
-The question is not "is it possible?" The question is "how?"
+Chase and Simon (1973) study position reconstruction and describe its organisation into meaningful groups, often called *chunks*. Their participants should not be turned into two large, representative groups: the experiment examines a small number of players of different strengths.
 
-## What Visualization Is Not
+Experienced players’ advantage is much greater for game positions than for random arrangements. This highlights the role of knowledge without proving the absence of every difference on random material. Gobet and Simon (1996) specifically re-examine expert advantage for such positions.
 
-The most common error is imagining that chess players "see" a mental chessboard, a photographic image of the real board, floating in their mind.
+These findings also do not establish whether a player “sees” an inner image. A recall task and a subjective description do not answer exactly the same question.
 
-That's not what neuroscience shows.
+## Relationships that provide reference points
 
-Brain imaging studies of players practicing blindfold chess show activation of parietal and frontal regions, regions associated with spatial working memory, spatial relationship processing, and long-term memory, rather than primary visual cortex regions that would process a literal mental image.
+A familiar pawn structure may help you recall several pieces together. But you still need to check their exact locations: a knight shifted one square can change an entire tactic.
 
-What chess players "see" is not an image. It's a structure of relationships.
+Knowledge therefore does not replace updating the position. It provides reference points to check throughout calculation. No fixed number of five to seven groups describes every position of every grandmaster.
 
-## Chunk Theory: Chase and Simon (1973)
+## Progressive exercises
 
-The foundational study by William Chase and Herbert Simon remains one of the most cited in cognitive psychology. The experiment was simple and revealing.
+Start with a position containing few pieces. Choose a short variation, calculate it without touching the board, then check where the pieces are. If you lose the thread, shorten the variation rather than accumulate uncertain moves.
 
-Two groups: chess experts (master level) and novices. They were shown a position from a real game for 5 seconds, about twenty pieces on the board. Then they were asked to reconstruct the position from memory.
+You can then hide the board after observing it and answer precise questions: where are the kings? Which piece defends this pawn? After this capture, which file is open?
 
-Results: experts correctly replaced an average of 92% of the pieces. Novices, about 20%.
+These suggestions are practical exercises. They do not guarantee measurable improvement in three to six months with a specified weekly duration.
 
-Predictable conclusion: experts have better memory, right?
+## Blindfold play is not compulsory
 
-Second phase. They were shown a *random* position: the same pieces, but placed without game logic, as if drawn at random. Same exposure time, same reconstruction task.
+You can work on calculation with the board visible. If you try a blindfold endgame, use a simple position and a partner willing to check the moves. Stop if the exercise becomes unpleasant; accumulating representation errors does not necessarily provide useful training.
 
-This time, both groups were comparable: about 30% correct reconstruction each.
+In official games, remember the touch-move rules and the prohibition on analysis aids. Exercises that allow freely moving the pieces belong in training.
 
-The conclusion is radical: chess experts don't have superior visual memory. They have a **pattern library**, thousands of real-game configurations stored in long-term memory. When they see a real game position, they decompose it into familiar patterns ("chunks"), each memorized as a single unit. When the position is random, these patterns don't apply and the advantage disappears.
-
-A master-level player has approximately 50,000 chess chunks stored in long-term memory, Simon's own estimate. A grandmaster would have more. A beginner has a few dozen.
-
-## How Chunks Work in Visualization
-
-Take a common formation: the kingside castle, with the king on g1, the rook on f1, a bishop on e2, and pawns on g2, f2, h2. For an experienced player, this is a single chunk ("classic short castle") memorized as one unit. They don't need to remember seven separate elements, only one.
-
-When this player calculates a variation blindfold, they manipulate these chunks as blocks. "If I push the h-pawn, the classic short castle becomes a weakened short castle, with such-and-such typical vulnerability." These relationships between chunks are themselves memorized: the library isn't a flat list of images, it's a network of linked structures.
-
-## Blindfold Chess as the Limit Case
-
-Blindfold chess (*blindfold chess*) pushes these mechanisms to their extreme. Without a visible board, the player must maintain the complete position representation in working memory, leaning heavily on long-term memory to store chunks and keeping only recent modifications in working memory.
-
-Brain imaging of blindfold players shows particularly strong activation of the **intraparietal sulcus** (spatial processing) and the **hippocampus** (episodic and spatial memory), the same regions that activate when mentally navigating a familiar environment. When playing blindfold, the player mentally navigates a space of positions, like an architect mentally walking through a building they know well.
-
-Studies comparing normal and blindfold play in the same player show that performance decreases in blindfold (typically by 100-200 Elo points) but that move *quality* is similar for simple moves. Blindfold errors occur primarily in complex positions with many active pieces, precisely the cases where working memory load is maximal.
-
-## Training Visualization
-
-The good news: visualization capacity can be trained, and progress is measurable.
-
-The recommended progression method follows a logic of progressive loading:
-
-**Level 1: Calculate without touching.** In a normal game, force yourself to calculate every variation mentally to completion before touching a piece. Many players habituate their brain to adjust visualization by physically moving pieces. Removing this recourse forces pure visualization.
-
-**Level 2: Tactical problems with eyes closed.** Read a tactical problem, look at the position for 30 seconds, then close your eyes and calculate the solution. Check by opening your eyes. Start with simple problems (mate in 1-2), progress to longer combinations.
-
-**Level 3: Blindfold endgames.** Play simple endgames (King + Rook vs King, King + Pawn vs King) against an opponent or engine, eyes closed, giving moves verbally. These positions have few pieces, the memory load is manageable.
-
-**Level 4: Short blindfold games.** Quick games (5 minutes), eyes closed, against a willing opponent who plays at normal pace.
-
-Studies show that 3-6 months of regular training with these exercises (30-45 minutes per week) measurably improve visualization, particularly on tests of position reconstruction after brief viewing.
+Keep a concrete reference point: can you reconstruct your variation’s final position more reliably? That criterion is more useful than comparison with a simultaneous blindfold record whose conditions differ from your exercise.
 
 ## Sources
 
-- Chase, W. G., & Simon, H. A. (1973). Perception in chess. *Cognitive Psychology*, 4(1), 55-81.
-- Gobet, F., & Simon, H. A. (1996). Templates in chess memory. *Cognitive Psychology*, 31(1), 1-40.
-- Charness, N., et al. (2001). The perceptual aspect of skilled performance in chess. *Memory & Cognition*, 29(8), 1146-1152.
-
-## Key Takeaways
-
-- Chess visualization is not a "mental image" of the board: experts encode positions in **chunks** (linked piece groups) stored in long-term memory
-- Blindfold chess activates the same brain regions as normal play, plus **spatial working memory** regions (intraparietal sulcus, hippocampus)
-- The Chase and Simon (1973) study is foundational: experts don't memorize random positions better than novices, their advantage is **specific to real game positions**
-- A master has approximately **50,000 chunks** stored in long-term memory
-- Visualization exercises (calculating without touching, blindfold problems, blindfold endgames) **improve measurably** in 3-6 months of regular training
+- Chase, W. G. and Simon, H. A. (1973), *Perception in Chess*, Cognitive Psychology, 4, 55–81. [Article](https://gwern.net/doc/psychology/chess/1973-chase.pdf).
+- Gobet, F. and Simon, H. A. (1996), *Templates in Chess Memory: A Mechanism for Recalling Several Boards*, Cognitive Psychology, 31, 1–40. [Article](https://gwern.net/doc/psychology/chess/1996-gobet.pdf).
+- FIDE (2023), *FIDE Laws of Chess*, articles 4 and 11. [Rules](https://handbook.fide.com/chapter/e012023).

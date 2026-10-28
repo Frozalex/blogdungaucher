@@ -46,6 +46,7 @@ faq:
       Pelo momento em que ela é formulada. Uma razão escrita antes de jogar o lance, ou antes de
       conhecer o resultado, é uma razão. A mesma frase produzida depois é uma reconstrução, e a
       exatidão aparente dela não prova nada, já que foi fabricada conhecendo o desfecho.
+heroImageAlt: Uma fachada reta de papel cobre uma estrutura de madeira torta.
 ---
 
 Pergunte a um jogador de clube por que ele jogou o lance 19. Ele vai responder. Vai falar da casa d5, da atividade da torre, do timing do avanço.

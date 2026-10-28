@@ -38,15 +38,18 @@ faq:
     answer: "Sa force dépend de la recherche, de l'évaluation, du matériel et de la cadence. Aucun rapport de vitesse universel avec Stockfish ni niveau humain garanti ne découle du choix de langage."
   - question: "Qu’est-ce que le protocole UCI ?"
     answer: "Conçu en 2000 par Rudolf Huber et Stefan Meyer-Kahlen, il définit un dialogue texte entre moteur et interface. Le moteur reçoit des commandes et renvoie notamment bestmove."
+heroImage:
+  src: /images/blog/moteur-echecs-python-par-ou-commencer-hero.webp
+  alt: Quelques engrenages et un pion attendent sur un établi de bois.
+ogImage: /images/og/moteur-echecs-python-par-ou-commencer-og.webp
+
 ---
 
-Tu as sans doute déjà ouvert le dépôt de Stockfish, un jour, par curiosité. Soixante mille lignes de C++, des fichiers qui s'appellent `bitboard.cpp` et `nnue_architecture.h`, des tableaux de constantes magiques sur lesquelles aucun commentaire ne t'explique d'où elles sortent. Et tu as refermé l'onglet.
+Programmer un moteur d'échecs demande d'articuler quatre fonctions : représenter une position, générer les coups légaux, évaluer une position et rechercher un coup. La complexité d'un programme optimisé comme Stockfish ne doit pas masquer cette organisation conceptuelle.
 
-C'est dommage, parce que le malentendu est là dès le départ : ce que tu as ouvert n'est pas un moteur d'échecs. C'est un moteur d'échecs après vingt ans d'optimisation par plusieurs centaines de contributeurs. Le moteur lui-même, l'objet conceptuel, tient en quatre idées et quelques centaines de lignes.
+Cette série construit ces fonctions progressivement en Python, jusqu'à un programme utilisable dans une interface d'échecs. Chaque étape s'accompagne d'un moyen de vérifier le comportement obtenu : référence publiée, comparaison de coups ou mesure explicitée dans l'article.
 
-Cette série les construit une par une. Douze articles, du fichier vide jusqu'à un programme que tu pourras charger dans une vraie interface d'échecs et affronter. Avec une règle qui la distingue de la plupart des tutoriels : **à la fin de chaque article, tu disposes d'un moyen objectif de savoir si ton code est juste**. Pas « ça a l'air de marcher ». Un chiffre, comparé à une valeur de référence publiée.
-
-Ce premier article ne code presque rien. Il sert à comprendre ce qu'on va construire, à installer l'atelier, et à vérifier que tout tourne.
+Ce premier article présente les choix de conception, l'installation de l'atelier et les vérifications initiales. Les suivants développent le code en distinguant la correction des règles, la qualité du jeu et le coût du calcul.
 
 ## Un moteur d'échecs, ce n'est pas ce que tu crois
 

@@ -42,6 +42,8 @@ faq:
       "gelijk" wordt nog lang als gelijk beoordeeld nadat precieze zetten een echt onevenwicht hebben
       gecreëerd. Het theoretische anker verzet zich tegen bijstelling, des te meer omdat het als een
       vaststaand feit wordt gezien in plaats van als een gedateerde evaluatie.
+heroImageAlt: Een klein anker houdt een abstracte ballon dicht bij de grond.
+
 ---
 
 Je analyseert je partij. Zet 22, ingewikkelde stelling. Je wilt weten wat je had moeten spelen.

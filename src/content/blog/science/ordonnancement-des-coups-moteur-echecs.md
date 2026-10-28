@@ -60,6 +60,11 @@ faq:
       garantie qu'à l'article précédent. Il peut renvoyer un autre coup parmi des ex aequo. En revanche,
       il change bel et bien le jeu du moteur en pratique, parce qu'à temps égal il permet de chercher
       plus profond.
+heroImage:
+  src: /images/blog/ordonnancement-des-coups-moteur-echecs-hero.webp
+  alt: Des clés sont ordonnées devant une serrure, la clé adaptée en premier.
+ogImage: /images/og/ordonnancement-des-coups-moteur-echecs-og.webp
+
 ---
 
 L'[article précédent](/fr/blog/negamax-et-elagage-alpha-beta-python/) s'est terminé sur un constat frustrant. L'élagage alpha-bêta nous a fait gagner un facteur 22 sur une position, alors que la théorie en autorise beaucoup plus. Le calcul de Knuth et Moore dit qu'avec un ordre de coups parfait, le nombre de positions visitées passe de $b^d$ à environ $b^{d/2}$, ce qui revient à doubler la profondeur atteignable.

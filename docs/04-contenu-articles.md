@@ -2,6 +2,11 @@
 
 C'est le chapitre le plus utile au quotidien : **comment un article est fait**, et comment le site sait quoi en faire.
 
+Pour le niveau de fond attendu, suivre aussi [l’exigence éditoriale](exigence-editoriale.md) :
+les corrections doivent préserver la profondeur des dossiers et remplacer les passages
+non étayés par des explications solides. La priorité de reprise validée le 19 octobre
+2026 est : articles déjà publiés, puis articles programmés.
+
 ## Où vivent les articles
 
 Tous les articles sont des fichiers **`.md`** (Markdown) rangés dans `src/content/blog/`, dans un sous-dossier par rubrique :

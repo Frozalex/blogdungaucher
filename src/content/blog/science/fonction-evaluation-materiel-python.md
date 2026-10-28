@@ -56,6 +56,12 @@ faq:
       termine avec 28 pions d'avance en moyenne et ne gagne qu'une partie sur quatre : il met son
       adversaire <strong>pat</strong> dans deux tiers des cas, faute de savoir qu'une position sans coup
       légal et sans échec est une nulle. Voir loin est plus important que bien compter.
+heroImage:
+  src: /images/blog/fonction-evaluation-materiel-python-hero.webp
+  alt: Des silhouettes de pièces sont rangées près d’une gouttière de mesure sans
+    graduations.
+ogImage: /images/og/fonction-evaluation-materiel-python-og.webp
+
 ---
 
 Ton moteur [joue des parties complètes](/fr/blog/un-moteur-qui-joue-au-hasard/) et n'a aucune raison de préférer un coup à un autre. Il est temps de lui en donner une.

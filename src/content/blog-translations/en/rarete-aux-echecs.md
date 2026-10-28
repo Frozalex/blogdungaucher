@@ -45,6 +45,7 @@ faq:
       With a delay, for purchases, since manufactured scarcity can't survive waiting. And for the
       clock, with an allocation rule decided before the game, which replaces an assessment made at the
       exact moment it's most distorted.
+heroImageAlt: An almost empty spool holding a short length of ribbon.
 ---
 
 You've got eight minutes left. Your opponent has twenty-five.

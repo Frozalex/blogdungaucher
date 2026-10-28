@@ -47,6 +47,7 @@ faq:
       Filtrando por uma faixa de rating próxima da sua antes de ler qualquer coisa. O
       percentual global mistura partidas de grandes mestres com partidas de clube, e as dificuldades
       práticas de uma linha não são as mesmas conforme o nível.
+heroImageAlt: Uma lupa examina pegadas na bifurcação de um caminho.
 ---
 
 Você abre o seu banco de dados numa posição de abertura. Aparecem três lances jogáveis.

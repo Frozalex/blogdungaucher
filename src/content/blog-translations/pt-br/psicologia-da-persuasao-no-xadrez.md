@@ -50,6 +50,8 @@ faq:
       diferentes, e o princípio de autoridade faz com que a gente transfira espontaneamente a credibilidade da
       primeira para a segunda. A pergunta certa não é qual é o rating dele, e sim quanto progrediram
       os alunos dele que partiram do nível em que você está.
+heroImageAlt: Uma grande caixa decorativa ao lado de uma pequena ferramenta simples.
+
 ---
 
 "De 1.200 a 2.000 em seis meses."

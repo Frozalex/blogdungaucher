@@ -60,6 +60,11 @@ faq:
       Dans un moteur de production, non. Dans un moteur qu'on apprend à écrire, oui : c'est l'oracle qui
       permet de vérifier qu'alpha-bêta n'a pas changé les scores. Un élagage mal borné renvoie un
       résultat faux une fois sur cinquante, ce qui est indétectable en jouant et immédiat en comparant.
+heroImage:
+  src: /images/blog/negamax-et-elagage-alpha-beta-python-hero.webp
+  alt: Une plante ramifiée et son reflet présentent des branches latérales coupées.
+ogImage: /images/og/negamax-et-elagage-alpha-beta-python-og.webp
+
 ---
 
 À la fin de [l'article précédent](/fr/blog/minimax-en-python-moteur-echecs/), notre moteur trouve tous les mats en deux coups et se heurte à un mur : chaque demi-coup de profondeur supplémentaire multiplie le travail par une vingtaine. Trouver un mat en trois, à profondeur 5, devient une affaire de minutes par position.

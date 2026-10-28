@@ -54,15 +54,16 @@ faq:
       différentes, et le principe d'autorité fait qu'on transfère spontanément la crédibilité de la
       première à la seconde. La bonne question n'est pas quel est son classement, mais quels progrès
       ont réalisés ses élèves partis du niveau où tu es.
+heroImage:
+  src: /images/blog/psychologie-de-la-persuasion-aux-echecs-hero.webp
+  alt: Une grande boîte décorative ouverte côtoie un petit outil sobre.
+ogImage: /images/og/psychologie-de-la-persuasion-aux-echecs-og.webp
+
 ---
 
-« De 1 200 à 2 000 en six mois. »
+La présentation d'un cours d'échecs peut associer expertise du formateur, témoignages, nombre d'élèves, offre limitée et accès gratuit à une première leçon. Ces informations doivent être examinées à la fois pour leur contenu et pour la manière dont elles orientent la décision d'achat.
 
-L'annonce a tout ce qu'il faut. Le formateur est maître international, sa photo le montre à une table de tournoi. Trois mille élèves formés. Des témoignages avec prénoms et gains de points. Une réduction valable jusqu'à dimanche. Et la première leçon est gratuite : tu peux la regarder tout de suite.
-
-Rien dans cette annonce n'est nécessairement mensonger. Le cours est peut-être excellent. Ce qui est certain, en revanche, c'est que **chaque élément que tu viens de lire correspond à un levier documenté**, et que leur présence simultanée n'est jamais un hasard.
-
-Cet article cartographie les sept leviers et montre pourquoi le marché des échecs y est particulièrement exposé. Trois d'entre eux, la réciprocité, la preuve sociale et la rareté, auront chacun leur article dédié plus loin dans cette série.
+La présence de leviers de persuasion ne démontre ni la mauvaise qualité du cours ni une intention trompeuse. La question est de reconnaître ces procédés et d'évaluer la formation au regard d'un besoin précis. Cet article présente les sept leviers discutés dans la série ; la réciprocité, la preuve sociale et la rareté font ensuite l'objet d'analyses distinctes.
 
 ## L'enquête de Cialdini
 
@@ -168,13 +169,13 @@ Tu peux donc faire ce qui est impossible ailleurs : noter ton classement le jour
 
 C'est un pouvoir de consommateur remarquable. Il est très peu utilisé, pour une raison que cette série a déjà rencontrée : quand le résultat déçoit, il est plus économique de conclure qu'on n'a pas assez travaillé que de conclure que le produit ne valait rien. Le classement ne ment pas, mais on peut décider de ne pas le regarder, ce qui revient au même.
 
-## Démontage : l'annonce du début, ligne par ligne
+## Démontage : un exemple d'annonce, ligne par ligne
 
-Reprenons l'annonce qui ouvre cet article. Elle tient en cinq lignes, et elle contient six des sept leviers. Ce n'est pas une coïncidence : c'est le format standard, et une fois qu'on l'a vu, on ne peut plus le désapprendre.
+L'annonce fictive suivante réunit plusieurs procédés pour permettre leur analyse. Les chiffres, le prénom et le témoignage sont construits pour cet exemple : ils ne décrivent pas une formation ni un élève réels.
 
 > « **De 1 200 à 2 000 en six mois.** Par un maître international. **Plus de 3 000 élèves formés.** *« Je suis passé de 1 350 à 1 720 en quatre mois, merci Alexandre ! » Thomas, 34 ans.* **Première leçon offerte.** **Offre à -40 % jusqu'à dimanche minuit.** Rejoins la communauté de ceux qui ont arrêté de stagner. »
 
-**« Par un maître international »** : autorité. Le titre est vrai et vérifiable. Ce qu'il ne dit pas, c'est s'il sait enseigner à 1 200 Elo. Note que l'information pertinente, à savoir sa méthode et son expérience pédagogique, coûterait deux lignes de plus et n'y est pas.
+**« Par un maître international »** : autorité. Un tel titre peut être vérifié pour un formateur réel. Il ne dit pas, à lui seul, si la méthode convient à un joueur de 1 200 Elo. L'information pertinente reste la méthode et l'expérience pédagogique ; elle n'apparaît pas dans cet exemple.
 
 **« Plus de 3 000 élèves formés »** : preuve sociale. Chiffre impressionnant et sans dénominateur utile. Trois mille élèves formés ne dit rien de combien ont progressé, ni de combien ont abandonné. C'est un volume, présenté comme un résultat.
 

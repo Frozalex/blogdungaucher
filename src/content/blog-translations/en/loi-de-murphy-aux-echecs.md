@@ -1,83 +1,54 @@
 ---
-title: "Murphy's Law in Chess: Why Blunders Always Seem to Strike at the Worst Moment"
-excerpt: "'Anything that can go wrong will go wrong': in chess, this phrase resonates strangely well. It's not a physical law. It's a collision between probability, mental fatigue, and the way you narrate the game afterward."
-seoTitle: "Murphy's Law in Chess: Why Blunders Always Strike at the Worst Moment"
-seoDescription: "Murphy's Law applied to chess: selective memory, stress, zeitnot, and cognitive biases. Why errors always seem cruelly well-placed."
+title: "Murphy’s Law in Chess: Why a Blunder Seems to Arrive at the Worst Moment"
+excerpt: "“Anything that can go wrong will go wrong” captures disappointment, not a law of chess. Distinguish a mistake’s frequency, consequences and place in your memory."
+seoTitle: "Murphy’s Law in Chess: Mistakes, Memory and Frequency"
+seoDescription: "Why a chess blunder can seem perfectly badly timed: distinguish frequency, severity and memory, then test a specific hypothesis against your games."
 enSlug: "murphys-law-in-chess"
-draft: false
+faq:
+  - question: "Does Murphy’s law predict your mistakes?"
+    answer: "No. It is used here as a metaphor for disappointment, not as a probabilistic law."
+  - question: "How can I check whether I always fail at the same moment?"
+    answer: "Define the moment before counting, then examine the relevant games and counterexamples. One striking memory is not enough."
+heroImageAlt: Rows of dark pushpins with some surrounded by pale circles.
+
 ---
 
-You're holding a decent game. You dominate time on the clock. And then, at the moment when everything seems settled, you play the move that destroys everything. Or you hold an honorable draw in a technical endgame, you fatigue, and defeat arrives exactly where you feared. At that moment, the phrase loops back: "Of course. It was written."
+You played a decent game, then one mistake changed everything. “Of course, at the worst possible moment.” The phrase captures disappointment. It does not demonstrate that events conspired against you.
 
-[Murphy's Law](https://en.wikipedia.org/wiki/Murphy%27s_law), popularized as "anything that can go wrong will go wrong," is not a theorem of physics. It was born from the world of engineering and military jargon, then migrated to common language. In chess, it serves primarily as a **narrative** to make bearable the idea that the error wasn't "just an error," but a cosmic injustice.
+Murphy’s law serves as a metaphor here. Understanding your games requires returning to the positions and the way you count mistakes.
 
-In reality, what you call Murphy is often a mix of real probabilities (some moments are objectively riskier), cognitive fatigue, and memory biases that make catastrophes shine in mental narrative.
+## What you call the worst moment
 
-## Where Does "Murphy's Law" Come From?
+A mistake may be minor in one position and decisive in another. The severity of the result does not, by itself, reveal how often you make that kind of mistake.
 
-The most cited story links the expression to [Edward A. Murphy Jr.](https://en.wikipedia.org/wiki/Murphy%27s_law), American engineer, and acceleration tests in flight in the 1940s. Short version: when an experiment can be wired several ways, **the wrong configuration eventually happens** if safeguards are missing. It's not a curse: it's a lesson about human reliability.
+You also need to choose the criterion before looking at examples. If the “worst moment” simply becomes the one when you lost the game, you will inevitably find decisive mistakes occurring there. The definition already contains the conclusion.
 
-When the phrase left the laboratory to become a slogan, it lost the nuance. It became a moral sentence: the world is against you. In chess, this narrative version is powerful because defeat is **readable**. You can't blame the wind.
+![Three questions about a mistake](/images/en/murphy-trois-questions.svg)
 
-## Why Murphy "Sticks" to Chess
+## A memorable mistake is not a frequency
 
-Chess combines three ingredients that feed the Murphy impression.
+Tversky and Kahneman (1973) study the availability heuristic: judging frequency or probability from how easily examples come to mind. That ease can inform judgement, but factors other than frequency influence it.
 
-**Everything is deterministic.** There are no dice. When something goes wrong, your brain seeks a cause, and the most immediate cause is you. Result: every blunder becomes a "personal" and almost narrative event.
+A spectacular loss may therefore come to mind more readily than a quiet game. This is a possible application of the framework to chess, not a measurement demonstrating that your memory always selects defeats.
 
-**The cost of an error can be brutal.** A decision made in a state of fatigue or stress can have disproportionate consequences in "high-leverage" environments. Chess is an extreme terrain of this type.
+You can have several accurate memories and an inaccurate overall impression. The denominator is missing: all the games in which the problem could have appeared, including those in which it did not.
 
-**The clock transforms the game.** Time constraint isn't decorative: it converts a cognitive task into a race against the clock. Errors aren't uniformly distributed in time: they concentrate near forced decisions and time finishes.
+## Examining one hypothesis at a time
 
-## What Looks Like Murphy but Is Statistics
+If you suspect time trouble, record the time available at critical moments when the game history allows it. If you suspect a technical difficulty, compare the relevant positions. A misunderstood endgame and a miscalculated attack do not necessarily require the same work.
 
-There are moments when **your error is objectively more probable**, without any mysticism.
+Fatigue, stress and complexity may also feature in your account. Avoid turning them into a certain explanation after one defeat. Being disappointed when leaving the playing hall does not give you a measurement of your brain activity.
 
-### Zeitnot and Decision Under Pressure
+![Examining an impression of repetition](/images/en/murphy-enquete.svg)
 
-Research on cognitive performance under time constraint converges on a simple idea: when time becomes scarce, executive control degrades, mental search shortens, and inattention errors increase. It's not that "Murphy strikes": it's that the **base rate** of errors rises.
+## Building a practical safeguard
 
-If you observe your games with an analysis engine, you'll often see the same structure: errors aren't uniformly dispersed. They cluster around complications, time conversions, sequences where you're forced to calculate under tension.
+In training, try a short check before moving: checks against your king, hanging pieces and the threat from the opponent’s last move. Adapt it to the time available; it need not become an endless ritual.
 
-### "Obvious" Endgames
+If you often miss the conversion of an advantage, work on a few positions of that type. If repeated games exhaust you, plan an end to the session. These choices address observable difficulties without promising to eliminate every mistake.
 
-Another classic zone: the endgame where "you've already won." Attention drops because the brain anticipates the reward and reduces vigilance. Errors in winning positions are so frequent they have a name in game culture. Again, it's not fate: it's an **attention curve**.
-
-## Memory Manufactures Murphy: Availability and Narrative
-
-[Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman) and [Amos Tversky](https://en.wikipedia.org/wiki/Amos_Tversky) showed that humans estimate frequency and probability from what's easy to retrieve from memory: the [availability heuristic](https://en.wikipedia.org/wiki/Availability_heuristic).
-
-Spectacular defeats are memorable. Quiet victories, less. Shameful blunders, very memorable. Clean games, quickly forgotten. So when you ask "how often does this happen to me?" your memory responds with a biased sample: you **overestimate** Murphy's Law because Murphy is a story you tell yourself with flamboyant examples.
-
-You also notice the "at the worst moment" pattern because your attention is already focused on that moment: the critical moment is defined afterward as critical precisely because the error appeared there. It's a form of selection.
-
-## Practical Antidotes (Without Magic)
-
-You can't abolish errors. You can reduce probability and reduce the "Murphy" drama-story that worsens the next game.
-
-**Protect moments when you're fragile.** If you know you blunder in zeitnot, your most profitable system is often time management and voluntary simplification before the critical zone.
-
-**Short checklist before a tense move.** Not fifteen questions: two or three personal rules (e.g., king safety, forcing moves examined first). The idea isn't perfection: it's getting out of autopilot.
-
-**Rewriting the narrative after a defeat.** Instead of "Murphy," try a more boring but more useful phrase: "I was in a cognitively unfavorable window because of X." X can be time, fatigue, emotion, complexity. This phrase opens a training plan.
-
-**Measure to deflate superstition.** If you document a season of games, you'll often see your errors follow banal patterns: poorly prepared openings, too much bullet, late revisions the night before a tournament. These are procedural causes.
-
-## What Murphy Can Still Teach You
-
-If you keep Murphy as metaphor, it can be useful: **systems that depend on a single weak point eventually break**. In chess, your weak point can be time management, transforming advantages, or evaluating endgames. The "law" then reminds you of something terribly pragmatic: if you don't change the system (habits, preparation, sleep), you harvest the same errors under different masks.
-
-It's not fate. It's repetition.
+After a loss, you can say you are frustrated. You do not need a psychological formula to justify that emotion. When ready to analyse, replace “this always happens” with a testable question: in which positions did it happen, and which counterexamples do you know?
 
 ## Sources
 
-- Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux.
-- Kahneman, D., & Tversky, A. (1974). Judgment under uncertainty: Heuristics and biases. *Science*, 185(4157), 1124-1131.
-- Reason, J. (1990). *Human Error*. Cambridge University Press.
-
-## Key Takeaways
-
-- Murphy isn't a "law" in the scientific sense: it's a social intuition about failures in complex systems
-- In chess, the "worst moment" often correlates with **zeitnot, maximum tension, or end of calculation sequence**, where error rate increases for everyone
-- Memory retains mostly the games where pain is strong (availability effect), giving the illusion that "it always happens this way"
-- You don't control chance on the board (there isn't any), but you can control the process: **time, anti-blunder habits, attentional recovery**
+- Tversky, A. and Kahneman, D. (1973), “Availability: A Heuristic for Judging Frequency and Probability”, *Cognitive Psychology*, 5, 207–232. [Original text](https://noorsiddiqui.com/papers/TverskyKahneman.pdf), DOI: 10.1016/0010-0285(73)90033-9.

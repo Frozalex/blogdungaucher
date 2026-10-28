@@ -1,6 +1,6 @@
 ---
 title: "Paradoxe de Zermelo : l'imperfection du jeu parfait"
-excerpt: "Les échecs ont une vérité mathématique que personne ne connaît. Zermelo l'a démontré en 1913 : le résultat sous jeu parfait est déterminé d'avance. Mais cette certitude théorique cache un vertige pratique fascinant."
+excerpt: "Depuis la position initiale, la valeur des échecs sous jeu parfait reste inconnue. La détermination du jeu, la preuve historique de Zermelo et les tablebases permettent de distinguer existence d’une réponse, calcul et performance pratique."
 publishDate: "2026-05-07"
 updatedDate: "2026-05-21"
 category: "science"
@@ -9,8 +9,8 @@ featuredRank: 99
 readingTime: "13 min"
 pillar: "Mathématiques"
 tags: ["Zermelo", "échecs", "mathématiques", "théorie des jeux", "tablebases", "induction rétrograde", "König", "complexité", "logique"]
-seoTitle: "Paradoxe de Zermelo aux échecs : vérité déterminée mais inaccessible"
-seoDescription: "Ernst Zermelo (1913) a prouvé que les échecs ont un résultat sous jeu parfait : gain Blanc, gain Noir ou nulle. Pourquoi cette certitude reste hors d'atteinte."
+seoTitle: "Zermelo et échecs : valeur théorique et résultat encore inconnu"
+seoDescription: "Détermination du résultat sous jeu parfait, règles de fin et tablebases : ce que le cadre de Zermelo garantit, sans prétendre connaître la valeur du jeu initial."
 faq:
   - question: "Le théorème de Zermelo prouve-t-il que les Blancs gagnent ?"
     answer: >-
@@ -28,9 +28,9 @@ faq:
       appliquée à un nombre fini accessible de positions, elle produit bien une vérité unique calculable.
   - question: "Pourquoi AlphaZero peut-il battre Stockfish s'il ne joue pas \"parfaitement\" ?"
     answer: >-
-      Parce que ni l'un ni l'autre ne joue parfaitement au sens Zermelo. Tous deux sont des
-      <strong>approximations</strong> de la stratégie optimale, simplement avec des architectures différentes
-      (recherche + heuristiques pour Stockfish, réseau de neurones + Monte Carlo Tree Search pour AlphaZero).
+      Aucun des deux n’a démontré une stratégie parfaite depuis la position initiale. Dans le match de 2017,
+      Stockfish 8 associe recherche alpha-bêta et évaluation conçue à la main ; AlphaZero associe réseau appris
+      et Monte Carlo Tree Search.
       Un meilleur score dans un match n’est pas une mesure de distance à une stratégie optimale inconnue.
   - question: "Cette vérité mathématique pourrait-elle être un jour découverte ?"
     answer: >-
@@ -38,13 +38,21 @@ faq:
       ne pourra résoudre le jeu. L’algorithme de Grover concerne la recherche non structurée : on ne peut
       pas simplement diviser par deux l’exposant de l’arbre minimax des échecs.
 
+heroImage:
+  src: /images/blog/paradoxe-de-zermelo-hero.webp
+  alt: Un labyrinthe circulaire sombre traversé par un chemin bleu vers son centre
+    vide.
+ogImage: /images/og/paradoxe-de-zermelo-og.webp
+
 ---
 
-En 1912, lors du cinquième Congrès International des Mathématiciens à Cambridge, le mathématicien allemand [Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) a présenté un résultat qui allait changer la façon dont les mathématiciens, et plus tard les informaticiens, pensent aux jeux de stratégie. Son théorème est court. Sa démonstration est élégante. Et ses implications aux échecs sont à la fois rassurantes et vertigineuses.
+La question de Zermelo porte sur l'existence d'une stratégie et d'un résultat garantis sous des hypothèses précises sur le jeu. Aux échecs, elle oblige à distinguer la possibilité d'établir une valeur théorique et la capacité de la calculer effectivement depuis une position donnée.
+
+Le travail d'[Ernst Zermelo](https://fr.wikipedia.org/wiki/Ernst_Zermelo) fournit un point de départ pour examiner cette distinction. La démonstration d'existence ne donne pas automatiquement une méthode praticable pour choisir chaque coup : comprendre ce décalage est l'enjeu central de l'article.
 
 ## Ernst Zermelo et la théorie des ensembles
 
-Avant de parler des échecs, il faut comprendre qui était Zermelo. Il est principalement connu pour ses contributions fondamentales à la théorie des ensembles, en particulier l'[axiome du choix](https://fr.wikipedia.org/wiki/Axiome_du_choix) et les [axiomes de Zermelo-Fraenkel](https://fr.wikipedia.org/wiki/Axiomes_de_Zermelo-Fraenkel) qui constituent encore aujourd'hui les fondements standard des mathématiques.
+Avant de parler des échecs, il faut comprendre qui était Zermelo. Il est principalement connu pour ses contributions fondamentales à la théorie des ensembles, en particulier l'[axiome du choix](https://fr.wikipedia.org/wiki/Axiome_du_choix) et les axiomes de Zermelo-Fraenkel qui constituent encore aujourd'hui les fondements standard des mathématiques.
 
 Son intérêt pour les échecs n'était pas anodin. Les mathématiciens de l'époque cherchaient à formaliser le raisonnement logique dans des systèmes aussi rigoureux que possible. Les jeux de stratégie parfaite représentaient un terrain idéal : des règles précises, un nombre fini d'états, pas de hasard. La question naturelle était : existe-t-il, en théorie, une façon "parfaite" de jouer ?
 
@@ -52,9 +60,9 @@ Son intérêt pour les échecs n'était pas anodin. Les mathématiciens de l'ép
 
 Le théorème de Zermelo s'applique à une classe de jeux qui incluent les échecs : des jeux à deux joueurs qui s'affrontent directement (pas de coalition), à information parfaite (rien n'est caché), sans hasard, où les deux joueurs jouent alternativement, et qui se terminent toujours en un nombre fini de coups.
 
-**Énoncé :** Dans tout jeu de ce type, l'une des trois situations suivantes est nécessairement vraie : le joueur 1 a une stratégie gagnante, ou le joueur 2 a une stratégie gagnante, ou les deux joueurs peuvent forcer le nul.
+**Énoncé moderne dans ce cadre fini :** l’un des deux joueurs peut forcer un gain, ou chacun dispose d’une stratégie garantissant au moins la nulle. Dans ce dernier cas, leur opposition optimale conduit au nul. Cet énoncé doit être distingué du contenu exact du texte historique de Zermelo, discuté plus bas.
 
-![Les trois issues déterminées par Zermelo : victoire forcée des Blancs, victoire forcée des Noirs, ou nulle forcée — la nulle étant l'hypothèse dominante non prouvée à ce jour.](/images/zermelo-01-trois-issues.svg)
+![Trois valeurs possibles sous jeu parfait, sans solution connue depuis la position initiale](/images/zermelo-01-trois-issues.svg)
 
 Pour un arbre fini, tu peux comprendre ce résultat par **induction rétrograde**, comme dans [minimax](/fr/blog/minimax-aux-echecs/). Cette présentation pédagogique n’est pas la preuve originale de Zermelo : Schwalbe et Walker soulignent précisément que son texte de 1913 ne procède pas ainsi. Shannon publie son article en 1950, soit 37 ans plus tard, sans que cela établisse une reprise « telle quelle » de la preuve.
 
@@ -62,7 +70,7 @@ Imagine une fin de partie atteinte. Chaque position terminale est soit une victo
 
 La valeur de la position initiale est donc déterminée. Le premier joueur à jouer a soit une stratégie pour forcer la victoire, soit les deux joueurs peuvent forcer le nul, soit le second joueur a une stratégie pour forcer la victoire.
 
-![Induction rétrograde de Zermelo : l'arbre est parcouru de bas en haut, chaque nœud héritant de la valeur optimale selon le joueur au trait, jusqu'à ce que la racine reçoive sa valeur définitive.](/images/zermelo-02-backward-induction.svg)
+![Exemple moderne d’induction rétrograde dans un arbre fictif](/images/zermelo-02-backward-induction.svg)
 
 ### Une démonstration affinée après coup
 
@@ -82,17 +90,15 @@ Une exploration exhaustive naïve envisagerait un nombre considérable de suites
 
 La grande question que le théorème de Zermelo laisse en suspens est : quelle est la valeur des échecs sous jeu parfait ? (Le théorème lui-même est l'un des cinq concepts fondateurs de la [théorie des jeux appliquée aux échecs](/fr/blog/theorie-des-jeux-aux-echecs/).)
 
-La majorité des grands maîtres et des théoriciens pensent que la réponse est le nul. L'argument empirique est fort : au plus haut niveau de jeu, les nulles sont très fréquentes, et la position initiale est considérée comme légèrement favorable aux Blancs (qui ont le premier mouvement) mais pas suffisamment pour forcer la victoire contre une défense optimale.
+On peut conjecturer une nulle, mais ni la fréquence des nulles entre joueurs forts ni une évaluation de moteur ne constituent une preuve. Ces observations portent sur des adversaires et des budgets de calcul particuliers, pas sur toutes les réponses possibles à une stratégie.
 
-Mais ce n'est qu'une intuition basée sur l'observation du jeu humain. Ce n'est pas une preuve. Il est mathématiquement possible que Blanc ait une victoire forcée cachée dans des profondeurs que nul humain n'a jamais explorées. C'est improbable selon les experts, mais non démontré comme impossible.
-
-Quelques travaux récents en informatique tentent d'aborder la question de façon asymptotique. [Komodo](https://fr.wikipedia.org/wiki/Komodo_(moteur_d%27%C3%A9checs)), [Stockfish](https://fr.wikipedia.org/wiki/Stockfish_(moteur_d%27%C3%A9checs)) et leurs successeurs évaluent la position initiale comme légèrement favorable aux Blancs (de l'ordre de +0,2 à +0,3 pion d'avantage), mais cette évaluation est elle-même basée sur des fonctions heuristiques, pas sur un calcul exhaustif.
+Une évaluation de Stockfish dépend de sa version, de la profondeur et du temps accordé. Un petit avantage numérique ne signifie ni victoire forcée ni distance mesurée à la solution parfaite. Le théorème laisse ouvertes les trois valeurs possibles depuis la position initiale.
 
 ## Les fins de parties résolues : une fenêtre sur la vérité
 
 Si la position initiale des échecs reste non résolue, il existe un domaine où la résolution complète a été accomplie : les fins de parties avec peu de pièces.
 
-Les [bases de données de fins de partie](https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_d%27%C3%A9checs) (tablebases) développées par Ken Thompson puis Marc Bourzutschky et d'autres ont résolu toutes les fins de partie jusqu'à sept pièces sur l'échiquier. Ce travail monumental a révélé des résultats surprenants.
+Les bases de données de fins de partie (tablebases) développées par Ken Thompson puis Marc Bourzutschky et d'autres permettent de traiter de vastes ensembles de finales, notamment des positions à sept pièces. La couverture et la signification d’un résultat dépendent du jeu de tables : les droits de roque et la règle des 50 coups, par exemple, demandent une attention particulière.
 
 Les tablebases montrent surtout pourquoi il faut préciser les règles et la métrique. La documentation de Ronald de Man présente, par exemple, une finale avec une valeur DTZ50 de 164 demi-coups et une « victoire maudite » : gagnante sans la limite des 50 coups, elle ne l’est pas forcément avec cette règle.
 
@@ -106,7 +112,7 @@ DTM mesure la distance au mat ; DTZ la distance à une prise ou à un mouvement 
 
 Le paradoxe de Zermelo révèle quelque chose de fondamental sur la condition du joueur humain. Il joue un jeu dont la "perfection" est mathématiquement définie, mais encore inconnue depuis la position initiale.
 
-Un joueur humain, même le meilleur du monde, joue une approximation de la stratégie optimale. Son niveau de jeu est déterminé par la qualité de cette approximation : à quelle profondeur il peut calculer, combien de patterns tactiques il reconnaît, à quel point son évaluation positionnelle est fidèle à la réalité.
+Un joueur s’appuie sur le calcul, la reconnaissance de configurations et l’évaluation positionnelle. On peut observer ses décisions et comparer ses résultats à ceux d’adversaires ; cela ne fournit pas une mesure générale de sa distance à une stratégie optimale inconnue.
 
 Les performances de joueurs et de moteurs peuvent être comparées dans des parties. Elles ne donnent pas une distance mesurée à la stratégie parfaite, puisque celle-ci reste inconnue dans l'ensemble du jeu. Certaines positions couvertes par des tablebases permettent en revanche de vérifier une décision selon leurs règles.
 
@@ -126,19 +132,19 @@ La communauté informatique a progressivement résolu des jeux plus complexes le
 
 Le [morpion](https://fr.wikipedia.org/wiki/Morpion) est nul sous jeu parfait, et cette vérité est accessible à n'importe quel enfant qui apprend la stratégie correcte. Le [Puissance 4](https://fr.wikipedia.org/wiki/Puissance_4) a été résolu en 1988 : victoire du premier joueur. Les dames anglaises sur 8×8 (*checkers*) ont été résolues en 2007 par [Jonathan Schaeffer](https://fr.wikipedia.org/wiki/Jonathan_Schaeffer) : nul sous jeu parfait, après 18 ans de calcul dans un jeu comptant environ $5 \times 10^{20}$ positions possibles ; toutes n’ont pas été parcourues individuellement.
 
-![Hiérarchie des jeux résolus selon la logique de Zermelo : du morpion (trivial) au Puissance 4 (1988), aux dames (2007), jusqu'aux échecs et au Go qui restent ouverts bien que leur solution soit garantie d'exister.](/images/zermelo-03-jeux-resolus.svg)
+![Statut de quelques jeux, sans comparaison de tailles incompatibles](/images/zermelo-03-jeux-resolus.svg)
 
-Les [échecs](https://fr.wikipedia.org/wiki/%C3%89checs) restent ouverts. Le [Go](https://fr.wikipedia.org/wiki/Go_(jeu)) aussi. La résolution complète de ces jeux reste hors de portée, non pas en principe (Zermelo garantit qu'une réponse existe), mais en pratique (la complexité combinatoire est trop élevée).
+Les [échecs](https://fr.wikipedia.org/wiki/%C3%89checs) restent ouverts. Le [Go](https://fr.wikipedia.org/wiki/Go_(jeu)) aussi. La valeur depuis leur position initiale n’est pas établie. L’explosion combinatoire gêne les méthodes exhaustives actuelles ; elle ne démontre pas l’impossibilité de toute preuve future, et les règles exactes doivent être précisées pour chaque jeu.
 
 ## Ce que Zermelo change pour toi à l'échiquier
 
-Savoir que les échecs ont une vérité mathématique inaccessible change-t-il quelque chose pour le joueur pratique ? Pas directement sur l'échiquier. Mais cela change la façon de penser au jeu.
+Savoir que la valeur de la position initiale reste inconnue change-t-il quelque chose pour le joueur pratique ? Pas directement sur l'échiquier. Mais cela change la façon de penser au jeu.
 
-Chaque coup que tu joues est une approximation. Chaque évaluation de position que tu fais est une estimation. Chaque plan que tu construis est une heuristique. Il n'y a pas de certitude, même pour le Grand Maître le plus solide. Il y a des approximations plus ou moins fines de la vérité.
+Dans une position complexe, tes variantes et ton évaluation restent généralement partielles. Il existe pourtant des certitudes locales : un mat forcé correctement établi ou une position couverte par une tablebase peut être résolu selon des règles précises. Il faut distinguer ces cas de l’inconnu qui subsiste depuis la position initiale.
 
-Cette humilité mathématique est saine. Elle signifie que même face à un adversaire bien plus fort que toi, la vérité de la position n'est pas connue de lui. Il joue, lui aussi, une approximation. Sa pendule tourne. Ses ressources cognitives sont limitées. Dans les complications qu'il ne connaît pas, sa vérité pratique peut s'éloigner significativement de la vérité théorique.
+Cette distinction est utile face à un adversaire plus fort : une meilleure performance ne garantit pas une solution exacte de chaque position. Mais elle ne dit pas non plus qu’il ignore une finale connue ou un mat forcé. Compare les variantes concrètes, le temps disponible et la justification d’un coup, plutôt qu’un niveau supposé de proximité avec la perfection.
 
-Le génie de Zermelo n'est pas d'avoir résolu les échecs. C'est d'avoir prouvé que la solution existe, de façon définitive, sans pouvoir la trouver. Un exemple rare où la certitude de l'existence est séparée de la possibilité de l'accès.
+L’apport de Zermelo n’est pas une stratégie pour gagner depuis la position initiale. Son texte fonde une analyse mathématique de la valeur des positions ; les formulations modernes permettent de séparer l’existence d’une valeur sous des règles fixées des moyens de la calculer.
 
 **Après lecture :** garde en tête une **phrase d'humilité mathématique** en partie longue : tu joues des approximations, pas la vérité de tablebase ; ça peut lever du perfectionnisme au mauvais moment.
 
@@ -152,7 +158,7 @@ Non. Il prouve qu'**une** réponse existe parmi trois possibles : victoire Blanc
 
 ### Pourquoi appelle-t-on cela un "paradoxe" ?
 
-Au sens mathématique, ce n'en est pas un : c'est un résultat parfaitement cohérent. Le "paradoxe" est **épistémique** : on sait qu'il existe une réponse unique, mais on ne peut pas la connaître ni en pratique ni dans aucune extrapolation raisonnable des capacités de calcul. Rares sont les propositions où la *certitude de l'existence* est aussi proprement séparée de la *possibilité de l'accès*.
+Au sens mathématique, ce n'en est pas un : c'est un résultat parfaitement cohérent. Le "paradoxe" est **épistémique** : on sait qu’il existe une valeur sous les règles fixées, mais celle de la position initiale reste inconnue. Cela ne prouve pas qu’aucune méthode future ne pourra la déterminer. Rares sont les propositions où la *certitude de l'existence* est aussi proprement séparée de la *possibilité de l'accès*.
 
 ### Les tablebases ne contredisent-elles pas Zermelo ?
 
@@ -160,7 +166,7 @@ Au contraire, elles le **confirment** sur un sous-ensemble du problème. Sur les
 
 ### Pourquoi AlphaZero peut-il battre Stockfish s'il ne joue pas "parfaitement" ?
 
-Parce que ni l'un ni l'autre ne joue parfaitement au sens Zermelo. Tous deux sont des **approximations** de la stratégie optimale, simplement avec des architectures différentes (recherche + heuristiques pour Stockfish, réseau de neurones + Monte Carlo Tree Search pour AlphaZero). Un meilleur score dans un match n’est pas une mesure de distance à une stratégie optimale inconnue.
+Aucun des deux n’a démontré une stratégie parfaite depuis la position initiale. Ils associent recherche et évaluation, avec des **architectures différentes** dans le match de 2017 : Stockfish 8 utilise une recherche alpha-bêta et une évaluation conçue à la main ; AlphaZero associe réseau appris et Monte Carlo Tree Search. Un meilleur score dans un match n’est pas une mesure de distance à une stratégie optimale inconnue.
 
 ### Cette vérité mathématique pourrait-elle être un jour découverte ?
 

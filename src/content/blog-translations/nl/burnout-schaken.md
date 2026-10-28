@@ -9,6 +9,8 @@ seoDescription: >-
   spelen terugvindt na competitieve uitputting.
 frSlug: burnout-chess
 draft: false
+heroImageAlt: Een zittende figuur voor de laatste gloeiende resten van een vuur.
+
 ---
 
 Je opent Chess.com. De knop "Spelen" staat er, net als gisteren. Net als eergisteren. Je kijkt er dertig seconden naar. Je sluit het tabblad.

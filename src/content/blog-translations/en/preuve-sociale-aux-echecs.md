@@ -46,6 +46,7 @@ faq:
       By filtering on a rating band close to your own before you read anything at all. The overall
       percentage mixes grandmaster games with club games, and a line's practical difficulties aren't
       the same at every level.
+heroImageAlt: A magnifying glass examining footprints at a fork in a path.
 ---
 
 You open your database on an opening position. Three playable moves come up.

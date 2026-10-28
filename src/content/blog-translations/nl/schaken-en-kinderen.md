@@ -45,6 +45,8 @@ faq:
       toernooien natuurlijk rond 8 tot 10 jaar. Het eerste toernooi moet lokaal, klein zijn, en gepresenteerd
       worden als een feest in plaats van een wedstrijd: het resultaat doet er weinig toe, het is de
       ervaring van spelen tegen onbekenden die telt.
+heroImageAlt: Een zaadje op een strook grond met verschillende texturen.
+
 ---
 
 Kan een kind van 5 jaar schaken leren? Het korte antwoord is: sommigen wel, de meesten niet: niet de volledige regels. De nuttigere vraag is: hoe pas je het leren aan elke leeftijd aan zodat schaken een vreugdevolle en waardevolle ervaring is?

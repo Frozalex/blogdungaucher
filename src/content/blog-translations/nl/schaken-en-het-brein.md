@@ -43,6 +43,7 @@ faq:
       vaardigheden zwak tot matig zijn, en afnemen naarmate de experimentele controles strenger worden. De
       overdracht is meer te danken aan metacognitieve gewoonten (planning, analyse) dan aan een directe
       overdracht van vaardigheden.
+heroImageAlt: Een menselijk profiel van blauwe en donkere papierlagen naast een pion.
 ---
 
 Het is niet een uitzonderlijk brein dat het mogelijk maakt briljant te schaken. Het is de verwoede beoefening van schaken die een uitzonderlijk brein vormt. Het beeld van de met een goddelijke gave geboren grootmeester is precies andersom.

@@ -61,6 +61,11 @@ faq:
       sur une case attaquée. En revanche la <strong>tour</strong>, elle, peut parfaitement traverser une
       case attaquée : lors du grand roque, la case b1 peut être sous le feu adverse sans que cela gêne.
       C'est une source d'erreur classique.
+heroImage:
+  src: /images/blog/generer-les-coups-legaux-en-python-hero.webp
+  alt: Un cavalier fait face à plusieurs passages, ouverts ou barrés.
+ogImage: /images/og/generer-les-coups-legaux-en-python-og.webp
+
 ---
 
 À ce stade de la série, tu as un [échiquier qui tient une position et sait la restaurer](/fr/blog/representer-un-echiquier-en-python/). Il ne sait pas encore quels coups sont autorisés, ce qui en fait un moteur d'échecs aussi utile qu'une voiture sans roues.

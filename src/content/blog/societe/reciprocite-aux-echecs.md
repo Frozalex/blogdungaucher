@@ -50,15 +50,16 @@ faq:
       information sur la pédagogie du formateur, ce qui est utile. Elle n'est pas une raison d'acheter.
       La question à se poser reste la même : ce contenu vaut-il ce prix, indépendamment de ce que j'ai
       déjà reçu.
+heroImage:
+  src: /images/blog/reciprocite-aux-echecs-hero.webp
+  alt: Deux mains ouvertes échangent deux pièces de puzzle en bois.
+ogImage: /images/og/reciprocite-aux-echecs-og.webp
+
 ---
 
-Tu perds ta partie au club. Un joueur plus fort s'assoit en face de toi et te propose de regarder ça ensemble.
+La réciprocité concerne les attentes et les comportements de retour associés à un avantage reçu. Dans un club d'échecs, l'aide à l'analyse, le partage de connaissances et les services rendus permettent d'en examiner les usages dans des relations suivies.
 
-Vingt-cinq minutes plus tard, tu as compris trois choses que tu n'aurais pas trouvées seul. Il n'a rien demandé, il n'attend rien, et il ne pensait à rien de particulier en le faisant.
-
-Tu lui dois pourtant quelque chose, et vous le savez tous les deux sans que ce soit dit.
-
-Cet article prolonge notre article sur [la psychologie de la persuasion aux échecs](/fr/blog/psychologie-de-la-persuasion-aux-echecs/), qui présente les sept leviers. Il porte sur le levier le plus ancien, le plus solide expérimentalement, et le seul dont l'usage soit aussi souvent bénéfique que manipulateur.
+Il faut distinguer la gratitude, l'obligation ressentie et une demande explicite de contrepartie. Une aide ne crée pas automatiquement la même dette pour tous. Cet article prolonge [la psychologie de la persuasion aux échecs](/fr/blog/psychologie-de-la-persuasion-aux-echecs/) pour discuter les fonctions de ces échanges et les situations où ils deviennent une pression.
 
 ## La canette de Regan
 

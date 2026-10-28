@@ -49,6 +49,8 @@ faq:
       part isn't knowing it, it's applying it at the moment when your state is precisely what's damaging
       your ability to decide. Hence the value of a numerical rule set while calm, along the lines of:
       after two consecutive losses, I stop, whatever I happen to feel at the time.
+heroImageAlt: A hand holding a bowl of gently rippling water.
+
 ---
 
 You've just lost three games in a row. You know it, you know exactly what it means, you've even read articles about it.

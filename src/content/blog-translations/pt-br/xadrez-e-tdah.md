@@ -1,163 +1,102 @@
-﻿---
+---
 heroImageAlt: "Uma agulha de bússola multiplicada em um borrão, estabilizando-se num único ponto."
-title: "Xadrez e TDAH: por que o tabuleiro captura a atenção onde tudo mais falha"
-excerpt: >-
-  O TDAH não é um déficit de atenção : é uma atenção inconsistente. O tabuleiro cria as condições raras em que esse
-  cérebro encontra naturalmente seu ponto de ancoragem.
-seoTitle: "Xadrez e TDAH: por que o tabuleiro captura a atenção que a escola não retém"
-seoDescription: "TDAH e xadrez: por que o tabuleiro cria as condições em que o cérebro TDAH se ancora naturalmente. Pesquisa, adaptações práticas e benefícios medidos."
 frSlug: echecs-et-tdah
-faq:
-  - question: "Com que idade uma criança com TDAH pode começar o xadrez ?"
-    answer: >-
-      A maioria dos clubes recebe crianças a partir dos 6-7 anos. Para perfis de TDAH, começar por jogos
-      de peças simplificados aos 5-6 anos é muitas vezes mais adequado que o jogo completo de imediato. O essencial é que
-      cada sessão termine com uma conquista, não com uma frustração.
-  - question: "O xadrez online é adequado ao TDAH ?"
-    answer: >-
-      O jogo físico, com um adversário presente e peças tangíveis, mobiliza mais sentidos e
-      ancora muitas vezes melhor a atenção que a tela. A tela acrescenta a distração da interface, das
-      notificações, das estatísticas em tempo real, elementos que podem anular os benefícios
-      esperados. Se a criança está começando, o tabuleiro físico é preferível.
-  - question: "Adultos com TDAH também podem se beneficiar ?"
-    answer: >-
-      Sim. O TDAH não desaparece na vida adulta : os estudos mostram que 60 a 80 % das crianças
-      diagnosticadas continuam a apresentar sintomas significativos na idade adulta. Os mecanismos
-      neurobiológicos descritos aqui se aplicam a qualquer idade. Adultos com TDAH que jogam xadrez relatam
-      muitas vezes os mesmos efeitos de ancoragem atencional, com a dimensão adicional de desafio intelectual e de
-      socialização num quadro estruturado.
-  - question: "Os médicos recomendam o xadrez para o TDAH ?"
-    answer: >-
-      Não sistematicamente, por falta de evidências robustas o suficiente para integrar o xadrez às recomendações
-      clínicas oficiais. Mas muitos psiquiatras e psicólogos especializados o mencionam como
-      complemento pertinente, especialmente para crianças em que a medicação sozinha não basta ou é
-      recusada pelos pais.
+title: "Xadrez e TDAH: um lazer a adaptar, benefícios clínicos a esclarecer"
+excerpt: "O xadrez pode interessar a algumas pessoas com TDAH. O que os estudos realmente mostram, seus limites e como adaptar a prática sem prometer um tratamento."
+seoTitle: "Xadrez e TDAH: estudos, limites e prática adaptada"
+seoDescription: "O que os estudos sobre xadrez e TDAH demonstram? Resultados preliminares, limites clínicos e adaptações de um lazer que não substitui os cuidados de saúde."
+faq: [{"question": "O xadrez é um tratamento validado para o TDAH?", "answer": "Não. As evidências disponíveis não permitem apresentá-lo como tratamento isolado nem como substituto dos cuidados de saúde. O estudo piloto aberto de 2016 é preliminar, e o ensaio randomizado de 2023 não mostrou um benefício significativo no desfecho principal global de funções executivas."}, {"question": "Com que idade começar e por quanto tempo jogar?", "answer": "Não existe uma idade ou duração universal estabelecida para jogadores com TDAH. É possível oferecer poucas peças e uma tarefa simples se a criança tiver interesse, adaptando a atividade à compreensão, ao cansaço e ao prazer, sem impor uma dose terapêutica."}, {"question": "O tabuleiro físico é preferível ao xadrez online?", "answer": "Os dois formatos podem funcionar conforme a pessoa e o contexto. Os estudos apresentados não demonstram uma superioridade geral do tabuleiro físico. Na tela, é possível reduzir notificações e combinar um momento para parar."}, {"question": "Uma criança muito concentrada no xadrez pode ter TDAH?", "answer": "Sim. O interesse por uma atividade não exclui o TDAH. O diagnóstico exige uma avaliação clínica dos sintomas persistentes e de seu impacto em vários contextos, não se baseia na duração de uma partida."}, {"question": "Adultos podem jogar para conviver melhor com o TDAH?", "answer": "Eles podem gostar do xadrez como lazer e oportunidade de convivência. Não é possível garantir a redução dos sintomas nem a transferência para o trabalho. Dificuldades persistentes e decisões de tratamento devem ser discutidas com um profissional de saúde."}]
 ---
 
-Lucas tem 10 anos. A professora diz que ele é incapaz de ficar concentrado por mais de dois minutos. Ele não escuta, atrapalha, raramente termina um exercício. Os pais já tentaram aulas de reforço, atividades esportivas, leitura em voz alta. Nada funciona.
+Uma criança pode ter dificuldade para terminar um exercício escolar e se interessar por uma posição de xadrez durante bastante tempo. Essa diferença merece curiosidade, sem virar uma demonstração médica. Ela não prova nem a ausência de TDAH nem um efeito terapêutico do jogo.
 
-Desde que ele começou a jogar xadrez na quarta-feira à noite no clube do bairro, algo mudou. Ele consegue passar 45 minutos sentado diante de um tabuleiro sem que ninguém precise lembrá-lo de que está ali para jogar. Os pais, inicialmente incrédulos, começaram a observar o que acontece durante essas sessões : sem celular, sem barulho, um silêncio que ele mesmo produz, concentrado nas 64 casas diante dele.
+O xadrez pode ser um lazer agradável e um espaço de convivência para algumas pessoas com TDAH. Para outras, pode ser difícil, cansativo ou pouco atraente. Veja o que as pesquisas realmente permitem afirmar e como propor uma prática que respeite essas diferenças.
 
-A professora, quando contaram, deu de ombros: *"É porque é um jogo. Seria preciso que as aulas fossem tão estimulantes."* Ela não está completamente errada. Mas essa resposta passa ao lado de algo mais preciso.
+## A atenção variável não anula as dificuldades
 
-Não é magia. É neurobiologia.
+O transtorno do déficit de atenção com hiperatividade é um transtorno do desenvolvimento que pode envolver desatenção, hiperatividade e impulsividade. Segundo o [NIMH](https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know), o diagnóstico exige sintomas persistentes que prejudiquem o funcionamento em mais de um contexto, com uma avaliação adequada.
 
-## O que o TDAH realmente faz com a atenção (e por que é sistematicamente mal compreendido)
+Ficar absorvido em um jogo, portanto, não exclui o TDAH. Da mesma forma, se mexer na cadeira, jogar rápido ou deixar passar uma peça não permite diagnosticá-lo. Um instrutor pode descrever suas observações; ele não substitui uma avaliação clínica.
 
-O primeiro equívoco a corrigir está no nome. O [transtorno do déficit de atenção com ou sem hiperatividade](https://pt.wikipedia.org/wiki/Transtorno_do_d%C3%A9ficit_de_aten%C3%A7%C3%A3o_com_hiperatividade) (TDAH) se chama "déficit de atenção", mas não é o que vivem as pessoas com esse diagnóstico.
+O xadrez mobiliza a memória de trabalho, o planejamento e a capacidade de interromper um gesto para examinar uma ameaça. Mas usar uma função durante o jogo não demonstra uma melhora duradoura nem que os avanços se transfiram para as tarefas escolares, o trabalho ou a vida cotidiana.
 
-Lucas consegue passar uma hora construindo uma cidade inteira em Lego. Consegue assistir a um vídeo do YouTube em loop durante duas horas sem se desligar. Ele não carece de atenção : não consegue direcioná-la para o que o ambiente escolar lhe exige.
+![Funções mobilizadas no jogo: inibição, memória de trabalho, flexibilidade e planejamento; seu uso não comprova um déficit individual nem um efeito terapêutico.](/images/pt-br/echecs-tdah-01-fonctions-executives.svg)
 
-[Russell Barkley](https://pt.wikipedia.org/wiki/Russell_Barkley), um dos pesquisadores mais citados na literatura sobre TDAH, reformulou esse transtorno ainda em 1997. Para ele, o TDAH não é um problema de atenção : é um déficit das funções executivas.
+## Nem combustível mágico, nem teste de força de vontade
 
-> **Barkley RA.** (1997). *Behavioral inhibition, sustained attention, and executive functions : Constructing a unifying theory of ADHD.* Psychological Bulletin, 121(1), 65-94.
+Apresentar o TDAH como uma simples falta de dopamina que o tabuleiro supriria oferece uma explicação certa e simples demais. O interesse por uma tarefa não mede os neurotransmissores de uma pessoa, e os estudos citados aqui não demonstram uma correção dopaminérgica por meio do xadrez.
 
-As funções executivas incluem a inibição de respostas impulsivas (resistir a um impulso imediato), a memória de trabalho (manter várias informações em mente ao mesmo tempo), a flexibilidade mental (mudar de plano quando o contexto muda) e o planejamento a longo prazo (ver as consequências a vários lances de distância).
+Podemos observar que uma posição concreta, um objetivo compreensível ou um adversário acolhedor tornam uma sessão mais envolvente. São possibilidades de adaptação do ambiente, não provas de um mecanismo biológico específico. Nosso artigo sobre [dopamina e xadrez](/pt-br/blog/dopamina-e-xadrez/) também distingue hipóteses gerais de resultados medidos.
 
-Essas quatro funções são precisamente as que o xadrez solicita a cada lance, em cada partida, durante toda a sessão. O paralelo é direto.
+Seria injusto concluir: “Você se concentra no xadrez, então poderia fazer o mesmo em qualquer lugar se quisesse.” As exigências, o ambiente e o cansaço mudam de uma atividade para outra. Gostar de jogar não transforma uma dificuldade escolar em falta de vontade.
 
-## A biologia por trás da inconsistência
+![O envolvimento pode variar conforme a tarefa e o contexto; essa variação não mede a dopamina nem demonstra uma correção do TDAH pelo jogo.](/images/pt-br/echecs-tdah-02-dopamine-stimulation.svg)
 
-Por que o cérebro TDAH funciona tão diferentemente segundo a atividade? [Xavier Castellanos](https://pt.wikipedia.org/wiki/Xavier_Castellanos) e Rosemary Tannock publicaram em 2002 uma revisão de referência sobre a neurobiologia do TDAH que traz uma explicação precisa.
+## O que mostram os estudos sobre xadrez e TDAH
 
-> **Castellanos FX & Tannock R.** (2002). *Neuroscience of attention-deficit/hyperactivity disorder : The search for endophenotypes.* Nature Reviews Neuroscience, 3, 617-628.
+### O estudo piloto aberto publicado em 2016
 
-Os déficits de dopamina e noradrenalina no cérebro TDAH afetam especificamente os circuitos de recompensa e inibição. Esses circuitos respondem diferentemente segundo o tipo de estimulação. Uma tarefa abstrata com recompensa distante (aprender uma lição para uma prova em três semanas) ativa esses circuitos de forma fraca. Uma atividade com recompensa imediata (cada lance muda a posição de forma visível e irreversível), com regras perfeitamente estáveis e uma aposta tangível (ganhar ou perder essa partida, agora), os ativa com muito mais força.
+Blasco-Fontecilla e colegas incluíram 44 crianças de 6 a 17 anos em um programa de 11 semanas. As avaliações dos pais melhoraram depois do programa. Porém, o estudo era aberto e não tinha grupo de comparação; algumas crianças já tomavam medicação. Ele não permite atribuir a evolução ao xadrez, em vez das expectativas, do acompanhamento ou de outras mudanças. Os próprios autores pedem pesquisas mais bem controladas.
 
-Não é que Lucas seja preguiçoso. É que seu cérebro precisa de um combustível que a escola, na sua forma atual, frequentemente não lhe fornece.
+### O ensaio randomizado publicado em 2023
 
-**A frase que os pais de Lucas guardaram:** *O cérebro TDAH não carece de combustível. Precisa do combustível certo na hora certa.*
+Um ensaio posterior distribuiu 104 participantes de 12 a 22 anos entre um videogame cognitivo, exercícios eletrônicos de xadrez e um grupo de controle. Essas atividades foram acrescentadas a um tratamento medicamentoso já estabelecido. O desfecho principal, o escore global de funções executivas BRIEF-2, não mostrou um benefício significativo entre os grupos; o mesmo ocorreu com as escalas SNAP-IV e Conners respondidas pelos pais.
 
-## Por que o tabuleiro cria condições favoráveis (e não quaisquer condições)
+Os sinais favoráveis em alguns outros indicadores permanecem exploratórios: resultados mistos, muitos testes, desistências e ausência de avaliação cega. A revista também alerta que o ensaio foi registrado retrospectivamente. Esses resultados não validam o xadrez como tratamento isolado nem uma prescrição de sessões comuns em clube.
 
-Existem dezenas de atividades que em teoria poderiam ajudar crianças com TDAH. Os jogos eletrônicos também têm retorno imediato. O esporte também tem regras e aposta. Por que o xadrez ocupa um lugar particular?
+## O que o tabuleiro pode oferecer como ambiente
 
-**1. Retorno imediato e consequências visíveis.** Cada lance muda a posição de forma concreta, visível e irreversível. Não há ambiguidade sobre "eu fiz algo?". O cérebro recebe um sinal claro a cada ação.
+**Um objetivo visível.** “Descubra como proteger esta peça” pode ser mais concreto do que “melhore sua concentração”. É possível definir uma tarefa curta sem exigir a conclusão de uma partida inteira.
 
-**2. Regras perfeitamente estáveis.** O [Cavalo](https://pt.wikipedia.org/wiki/Cavalo_(xadrez)) salta em L. Sempre. Sem exceção. Sem nuance. O mundo social e escolar está cheio de regras implícitas, evolutivas e não anunciadas : uma fonte maior de estresse e confusão para cérebros TDAH. O tabuleiro é o oposto exato : as regras são completas, públicas, estáveis e não dependem de nenhuma interpretação social.
+**Instruções explícitas.** Mostrar o movimento de uma única peça e depois conferir se a instrução foi compreendida evita o acúmulo de explicações. O jogo continua tendo convenções sociais a explicar: esperar a vez, pedir uma pausa e comentar sem humilhar.
 
-**3. Estrutura temporal delimitada.** Uma partida tem um começo e um fim identificáveis. A tarefa não é "aberta" como uma lição cujo fim não se vê. Ela termina naturalmente, o que ajuda consideravelmente cérebros que têm dificuldade em gerenciar prazos distantes.
+**Um começo e um fim combinados.** Uma posição para resolver, alguns lances ou uma pequena partida podem compor uma sessão. O relógio é opcional; para algumas pessoas, ele só acrescenta pressão.
 
-**4. Engajamento social delimitado.** Jogar contra alguém cria um nível de atenção social (o desejo de não "largar" o adversário) que é um motor poderoso para pessoas que têm dificuldade em manter o esforço em tarefas solitárias. Ao contrário das interações sociais habituais, essa interação é inteiramente enquadrada : não há que interpretar expressões faciais, subentendidos, regras implícitas. Há apenas a posição.
+**Uma relação escolhida.** Um parceiro paciente pode compartilhar uma investigação em vez de testar o nível o tempo todo. A competição agrada a alguns jogadores, enquanto outros preferem problemas cooperativos.
 
-**5. A inibição como competência central.** No xadrez, resistir à captura de uma peça aparentemente gratuita para calcular se é uma armadilha é uma forma de treinamento direto da inibição. Essa função executiva é precisamente a que mais falta no TDAH. O tabuleiro a solicita dezenas de vezes por partida, num contexto em que a aposta é real mas as consequências permanecem benignas.
+**Espaço para tentar.** Podemos convidar o jogador a observar as ameaças antes de tocar em uma peça. Esse lembrete ajuda durante o jogo; ele não prova uma reabilitação da impulsividade fora do tabuleiro.
 
-## O que a pesquisa diz (e o que ainda não diz)
+![Possibilidades de adaptação: objetivo visível, instruções explícitas, duração combinada, parceiro paciente e possibilidade de pausa, ajustados à pessoa.](/images/pt-br/echecs-tdah-03-echiquier-conditions.svg)
 
-É preciso ser honesto sobre o estado da literatura científica : os estudos de grande porte com grupo controle e critérios diagnósticos rigorosos, especificamente sobre a interseção xadrez-TDAH, ainda são raros. Essa interseção precisa ainda não tem a mesma base de evidências que outras intervenções.
+## Começar sem transformar o lazer em prova
 
-O que está documentado:
+Pergunte primeiro se a pessoa quer experimentar. Esses estudos não estabelecem uma idade universal nem uma duração ideal para todos os jogadores com TDAH. Um jogo de capturas com poucas peças pode bastar para conhecer o tabuleiro; a partida completa pode vir depois, caso o interesse continue.
 
-Programas de intervenção em meio escolar, notadamente na Índia, Armênia e Argentina, integraram o xadrez em classes incluindo crianças com perfil TDAH. Os professores relatam regularmente melhorias observadas na atenção e no gerenciamento das impulsões no contexto do jogo. Essas observações não são estudos controlados, mas são consistentes e recorrentes.
+Este é um exemplo de sessão a adaptar, não um protocolo terapêutico: escolher juntos uma pequena tarefa, experimentar uma posição, conversar sobre um lance interessante e decidir se vão continuar ou fazer uma pausa. O objetivo pode ser simplesmente compartilhar um momento agradável, sem meta de rating.
 
-[Sala e Gobet](https://www.frontiersin.org/articles/10.3389/fpsyg.2016.00745/full) (2016) publicaram uma meta-análise sobre o efeito do xadrez nos resultados escolares e cognitivos em geral. Sua conclusão é nuançada : os benefícios são moderados mas reais nas competências cognitivas diretamente visadas pela prática. Os ganhos em matemática e leitura são mais limitados do que se esperava, mas as competências de planejamento e controle da inibição melhoram.
+Retire uma dificuldade de cada vez: peças demais, muito barulho, instruções longas ou um adversário experiente demais. Permita que a pessoa se levante ou retome depois. Encerrar uma sessão não é uma falha moral, e não é preciso prolongar o jogo até alguém vencer.
 
-> **Sala G & Gobet F.** (2016). *Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis.* Frontiers in Psychology, 7, 645.
+## Tabuleiro, tela e atividade física
 
-A conclusão razoável : os mecanismos neurobiológicos pleiteiam claramente um benefício no perfil TDAH. As evidências diretas são promissoras mas ainda em construção. Isso não é razão para esperar para testar.
+O tabuleiro físico permite manipular as peças e jogar com alguém presente. Uma interface digital pode oferecer acesso prático ou um parceiro disponível. Nenhum dos trabalhos apresentados estabelece uma superioridade geral do tabuleiro físico sobre a tela para todas as pessoas com TDAH.
 
-## O vínculo com a impulsividade : o que o tabuleiro ensina que o esporte não ensina
+Na tela, é possível desativar as notificações, escolher uma única atividade e combinar um momento para parar. Se as partidas rápidas se sucedem às custas do sono, das obrigações ou do prazer, rever o ambiente importa mais do que ganhar pontos. Esses cuidados não demonstram que jogar online cause um transtorno específico.
 
-Uma questão legítima : o esporte não faz a mesma coisa? Tem regras claras, aposta imediata, estrutura delimitada.
+O xadrez também não precisa substituir o esporte. As atividades apresentam desafios diferentes; não se estabelece aqui uma classificação de sua suposta eficácia contra o TDAH. Escolha conforme as preferências, o acesso e as necessidades, mantendo espaço para o movimento.
 
-A diferença está na natureza da inibição solicitada. No futebol, a boa decisão é frequentemente a decisão rápida : ver, decidir, chutar. Inibir um impulso no futebol consiste às vezes em driblar quando deveria passar : um aprendizado real, mas de outra natureza.
+![Fazer uma pausa antes do lance é uma instrução possível durante a partida; ela não demonstra transferência para a vida cotidiana nem superioridade do xadrez sobre o esporte.](/images/pt-br/echecs-tdah-04-inhibition-sport-echecs.svg)
 
-No xadrez, a boa decisão é quase sempre a decisão lenta : ver, frear o impulso do primeiro lance que parece óbvio, calcular, e então decidir. Cada partida é uma longa série de oportunidades em que o impulso deve ser inibido para deixar a reflexão fazer seu trabalho.
+## Observar a experiência em vez de prometer transferência
 
-Para uma criança TDAH cujo problema central é a impulsividade, essa diferença é fundamental.
+Para saber se o ambiente funciona, faça perguntas simples: o jogador quer voltar? Entende as instruções? Pode pedir uma pausa? Os encontros continuam agradáveis? Essas observações ajudam a ajustar o lazer, sem constituir uma avaliação clínica.
 
-## Os limites : o que o xadrez não pode fazer
+Se uma família notar uma mudança na escola ou em casa, pode conversar com o profissional que acompanha a criança. Outras mudanças também precisam ser consideradas: medicação, apoio escolar, sono e contexto familiar. Um aumento no rating Elo não mede a redução dos sintomas de TDAH.
 
-Seria desonesto apresentar o tabuleiro como uma solução para o TDAH. Algumas precauções importantes:
+## E os adultos?
 
-**O hiperfoco não é uma cura.** Se Lucas fica 45 minutos no tabuleiro, não é porque seu TDAH "desapareceu". É porque a tarefa atende a todas as condições de seu engajamento. O retorno a outros contextos (a aula de matemática na manhã seguinte) pode ser tão difícil quanto antes. O tabuleiro não recarrega o cérebro em profundidade; cria condições favoráveis em que o cérebro pode funcionar diferentemente.
+O TDAH pode persistir na vida adulta. Um adulto pode gostar de um clube, de um problema diário ou de uma partida com amigos, sem qualquer garantia de benefício para a organização profissional ou os sintomas. Os resultados de um pequeno ensaio com jovens não se aplicam automaticamente a todas as idades.
 
-**Nem todos os perfis TDAH respondem da mesma forma.** O TDAH abrange perfis muito variados : desatento predominante, hiperativo-impulsivo predominante e combinado. Crianças muito hiperativas podem achar a lentidão de uma partida completa frustrante no início da prática. A adaptação (partidas mais curtas, formato simplificado, aprendizado por peças isoladas) é frequentemente necessária.
+O direito de não gostar de xadrez também vale para adultos. Uma atividade adequada cabe na vida da pessoa, em vez de ser imposta por outros como exercício de correção. Nossas sugestões sobre [concentração](/pt-br/blog/xadrez-e-concentracao/) tratam da prática do jogo, não do tratamento do TDAH.
 
-**O xadrez não substitui o acompanhamento especializado.** Medicação (cuja eficácia para as funções executivas está entre as mais documentadas em medicina), terapia cognitivo-comportamental e adaptações escolares continuam sendo os tratamentos com as bases científicas mais sólidas. O xadrez pode ser um complemento valioso e um espaço positivo, não um substituto.
+## Qual é o lugar do xadrez ao lado dos cuidados?
 
-## Conselhos práticos para adaptar o xadrez ao cérebro TDAH
+As [recomendações NICE NG87](https://www.nice.org.uk/guidance/ng87/chapter/recommendations) organizam um acompanhamento individualizado: informação, adaptações do ambiente, apoio e tratamentos conforme a idade, as dificuldades e a situação clínica. Elas não justificam apresentar o xadrez como um substituto validado desses cuidados.
 
-Se você é pai, professora ou jogador com TDAH, alguns ajustes mudam tudo:
+Diante de dificuldades persistentes que prejudiquem a escola, o trabalho ou os relacionamentos, procure uma avaliação profissional. Não mude um tratamento por causa de uma fase boa ou ruim no jogo. Um clube pode acolher, adaptar atividades e compartilhar o prazer de aprender; não precisa prometer uma cura para ser útil.
 
-**Começar com jogos de peças isoladas**, não uma partida completa. "Jogo do rei contra os peões", "conseguir o mate do corredor" : uma regra, um objetivo, duração máxima de 10 minutos. A complexidade do jogo completo pode ser esmagadora para uma criança que ainda não tem os padrões de base.
+## Fontes e limites
 
-**Usar um relógio desde o início**: a restrição de tempo cria um sinal externo de urgência que ajuda a manter a atenção. Um relógio de 5 minutos por jogador impõe um ritmo e torna o tempo visível : cérebros TDAH frequentemente têm dificuldade em perceber o tempo que passa.
-
-**Valorizar o processo, não o resultado**: "Você freou e verificou se era uma armadilha antes de capturar" vale mais do que "você ganhou". A inibição bem-sucedida merece ser nomeada e recompensada explicitamente.
-
-**Sessões curtas e regulares**: 20 minutos três vezes por semana são provavelmente mais eficazes do que uma hora uma vez por semana. A regularidade consolida os padrões cognitivos; a duração excessiva esgota.
-
-**Evitar as grandes salas de torneio no início**: o barulho ambiente, os movimentos na sala, a pressão social de um torneio podem contrariar exatamente os benefícios esperados. Um ambiente calmo com um único adversário de confiança é um ponto de partida melhor.
-
----
-
-### Síntese numa tabela
-
-| Aspecto | O que diz a pesquisa |
-| --- | --- |
-| TDAH e funções executivas | Barkley (1997): o TDAH é um déficit de inibição e planejamento, não uma simples falta de atenção. |
-| Neurobiologia | Castellanos & Tannock (2002): déficits dopaminérgicos nos circuitos de recompensa, ativados mais eficazmente por atividades com retorno imediato e regras estáveis. |
-| Por que o xadrez "fisga" | Retorno imediato, regras estáveis, aposta clara, inibição solicitada a cada lance : as condições exatas de engajamento do cérebro TDAH. |
-| Evidências diretas xadrez-TDAH | Promissoras mas limitadas. Os programas escolares relatam benefícios observados; os estudos controlados ainda faltam. |
-| O que o xadrez não pode fazer | Não "cura" o TDAH e não substitui um acompanhamento médico ou psicológico. O hiperfoco no tabuleiro não é prova de cura. |
-
----
-
-**Após a leitura:** sessões **curtas** (20 minutos), **mesmo horário** semanal, tabuleiro **físico** com prioridade; evitar as grandes salas barulhentas no início. Complemento ao acompanhamento médico ou psicológico, não substituto.
-
----
-
-## O que guardar
-
-- O TDAH não é um déficit de atenção no sentido literal : é um déficit das funções executivas, particularmente a inibição e o planejamento (Barkley, 1997)
-- O cérebro TDAH responde melhor a atividades com retorno imediato, regras estáveis e aposta tangível : exatamente o que propõe o tabuleiro
-- Os estudos diretos xadrez-TDAH ainda são limitados, mas os mecanismos neurobiológicos são bem documentados (Castellanos & Tannock, 2002)
-- O xadrez é um complemento valioso a um acompanhamento especializado, não um substituto
-
-### Fontes e referências
-
-- **Barkley, R. A. (1997).** *Behavioral inhibition, sustained attention, and executive functions : Constructing a unifying theory of ADHD.* *Psychological Bulletin*, 121(1), 65-94.
-- **Castellanos, F. X., & Tannock, R. (2002).** [*Neuroscience of attention-deficit/hyperactivity disorder : The search for endophenotypes.*](https://doi.org/10.1038/nrn894) *Nature Reviews Neuroscience*, 3(9), 617-628.
-- **Sala, G., & Gobet, F. (2016).** [*Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis.*](https://doi.org/10.3389/fpsyg.2016.00645) *Frontiers in Psychology*, 7, 645.
-- **Faraone, S. V., et al. (2021).** [*The World Federation of ADHD International Consensus Statement: 208 evidence-based conclusions about the disorder.*](https://doi.org/10.1016/j.neubiorev.2021.01.022) *Neuroscience & Biobehavioral Reviews*, 128, 789-818.
+- **NIMH**, [Attention-Deficit/Hyperactivity Disorder: What You Need to Know](https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know): informação institucional sobre sintomas, avaliação e cuidados.
+- **NICE**, [Attention deficit hyperactivity disorder: diagnosis and management, NG87](https://www.nice.org.uk/guidance/ng87/chapter/recommendations): orientações clínicas, distintas de uma proposta de lazer.
+- **Blasco-Fontecilla H. et al. (2016)**, [Efficacy of chess training for the treatment of ADHD: A prospective, open label study](https://adhd-chess.com/Content/docs/Efficacy-chess-treatment-ADHD-Blasco.pdf), *Revista de Psiquiatría y Salud Mental*, 9(1), 13-21: estudo piloto aberto, sem comparação randomizada.
+- **Rodrigo-Yanguas M. et al. (2023)**, [ensaio randomizado de um videogame cognitivo e exercícios eletrônicos de xadrez](https://games.jmir.org/2023/1/e39874/), *JMIR Serious Games*, 11, e39874, [doi:10.2196/39874](https://doi.org/10.2196/39874): intervenção complementar, desfecho principal global negativo e limitações metodológicas detalhadas no artigo.

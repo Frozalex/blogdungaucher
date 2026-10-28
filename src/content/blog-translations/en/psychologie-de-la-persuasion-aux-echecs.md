@@ -50,6 +50,8 @@ faq:
       the authority principle makes us transfer the credibility of the first onto the second
       automatically. The right question isn't what their rating is, it's what progress their students
       made starting from the level you're at now.
+heroImageAlt: A large decorative box beside a small plain tool.
+
 ---
 
 "From 1,200 to 2,000 in six months."

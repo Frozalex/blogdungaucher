@@ -50,6 +50,7 @@ faq:
       mostra que o anonimato e a imersão num grupo reforçam, ao contrário, a adesão às normas
       desse grupo. Um chat agressivo não revela o desaparecimento das regras, revela quais regras
       valem naquele grupo.
+heroImageAlt: Figuras sentadas em círculos de luz separados dentro de uma sala.
 ---
 
 Salão de torneio, rodada 5. Cento e quarenta jogadores, oitenta mesas, e um silêncio absoluto. Ninguém fala. Ninguém se desloca. Ninguém olha para nada além da própria posição.
