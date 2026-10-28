@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-28",
+  "volume": [
+    {
+      "path": "src/content/blog/science/echecs-et-meditation.md",
+      "before": 1424,
+      "after": 2306,
+      "variation_pct": 61.9
+    },
+    {
+      "path": "src/content/blog/societe/echecs-et-hpi.md",
+      "before": 1688,
+      "after": 3178,
+      "variation_pct": 88.3
+    },
+    {
+      "path": "src/content/blog/societe/wittgenstein-et-les-echecs.md",
+      "before": null,
+      "after": 2435,
+      "variation_pct": null
+    }
+  ],
+  "articles": [
+    {
+      "slug": "echecs-et-meditation",
+      "headings": 9,
+      "tables": 2,
+      "images": 0,
+      "hero": "/images/blog/echecs-et-meditation-hero.webp",
+      "cutoff": "2026-10-28"
+    },
+    {
+      "slug": "echecs-et-hpi",
+      "headings": 12,
+      "tables": 1,
+      "images": 4,
+      "hero": "/images/blog/echecs-et-hpi-hero.webp",
+      "cutoff": "2026-10-28"
+    },
+    {
+      "slug": "wittgenstein-et-les-echecs",
+      "headings": 10,
+      "tables": 1,
+      "images": 0,
+      "hero": "/images/blog/wittgenstein-et-les-echecs-hero.webp",
+      "cutoff": "2027-01-07"
+    }
+  ],
+  "panoramaUnchanged": true,
+  "images": [
+    {
+      "path": "public/images/blog/wittgenstein-et-les-echecs-hero.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 118668
+    },
+    {
+      "path": "public/images/og/wittgenstein-et-les-echecs-og.webp",
+      "width": 1200,
+      "height": 630,
+      "bytes": 62858
+    }
+  ],
+  "issues": [],
+  "checks": {
+    "astroCheck": "0 errors, 0 warnings, 92 hints existants",
+    "astroBuildCurrent": "328 pages, réussi",
+    "astroBuildFuture": "548 pages, réussi avec horloge isolée au 8 janvier 2027",
+    "schedule": "réussi, prochain créneau 7 janvier 2027",
+    "chess": "mat en f7 ; fourchette et toutes les réponses légales ; ajout Tf8 ; clouage et déclouage vérifiés avec chess.js",
+    "visualReview": "Vignettes comparées à 400 px ; aperçu bureau puis les trois dossiers à 390 px ; tableaux contenus dans 360 px, aucun débordement horizontal global ; FEN défilable dans son bloc ; titre final Wittgenstein contrôlé après reconstruction.",
+    "linkTiming": "aucun lien en avance sur 153 articles, référence 28 octobre 2026"
+  },
+  "duplicateReview": {
+    "shared12WordSequencesBeforeBibliography": 0,
+    "editorial": "Panorama inchangé ; nouveau dossier centré §§185-202 et exemples propres."
+  }
+}

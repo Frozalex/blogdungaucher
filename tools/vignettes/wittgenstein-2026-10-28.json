@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-28",
+  "tool": "imagegen intégré",
+  "slug": "wittgenstein-et-les-echecs",
+  "references": [
+    "public/images/blog/echecs-et-handicap-hero.webp",
+    "public/images/blog/echecs-vs-philosophie-pensee-strategique-hero.webp"
+  ],
+  "prompt": "Create one NEW editorial illustration for Blog d'un Gaucher, landscape 3:2. The attached two images are STYLE REFERENCES ONLY: match their warm cream paper, very dark charcoal ink, muted teal green, tactile coarse silkscreen grain, sculptural simplified forms and large quiet negative space. Subject: Wittgenstein and chess, learning to follow a shared rule through practice. A single solid simplified knight chess piece placed on a small section of geometric tiled ground, with a second plain uncarved wooden cylinder casting exactly the SAME knight-shaped shadow on that ground: physical appearance versus recognized role. Make the shared shadow-role metaphor visually lucid, calm and architectural. Two objects only, no people, no portrait, no book, no door, no extra chess pieces. Teal dominant in colored areas, flat ink masses and strong shadows, no gradients, no glossy 3D. Empty cream upper third and quiet lower left for a logo added separately. NO text, letters, numbers, arrows, typography, watermark, signature or logo. Do not copy existing scenes or existing watermark.",
+  "source": "/home/nerv/.codex/generated_images/01a183b3-6095-7833-8b4d-07c1d90961a7/exec-968f79ce-ce23-4dd4-a1ef-c45fa09ad4aa.png",
+  "preparation": "scripts/prepare-vignette.mjs --quality=78",
+  "hero": "public/images/blog/wittgenstein-et-les-echecs-hero.webp",
+  "og": "public/images/og/wittgenstein-et-les-echecs-og.webp",
+  "visual_review": "Comparaison côte à côte à 400 px avec les deux références ; style validé ; filigrane ajouté par le script."
+}
