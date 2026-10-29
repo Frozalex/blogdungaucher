@@ -17,6 +17,7 @@ interface Props {
   accentColor?: string;
   /** Note libre sous le lecteur (durée, source, statut imperfections). */
   note?: string;
+  transcript?: Array<{ heading: string; text: string }>;
 }
 
 const {
@@ -26,6 +27,7 @@ const {
   eyebrow = "Résumé vidéo",
   accentColor = "#3d8b37",
   note,
+  transcript = [],
 } = Astro.props;
 ---
 
@@ -34,7 +36,8 @@ const {
   <video
     class="article-video__player"
     controls
-    preload="metadata"
+    preload="none"
+    playsinline
     poster={poster ?? undefined}
     aria-label={title}
   >
@@ -42,6 +45,19 @@ const {
     Ton navigateur ne supporte pas la lecture vidéo HTML5.
   </video>
   {note && <p class="article-video__note">{note}</p>}
+  {transcript.length > 0 && (
+    <details class="article-video__transcript">
+      <summary>Lire le résumé en texte</summary>
+      <div>
+        {transcript.map((scene) => (
+          <section>
+            <h2>{scene.heading}</h2>
+            <p>{scene.text}</p>
+          </section>
+        ))}
+      </div>
+    </details>
+  )}
 </figure>
 
 <style>
@@ -85,4 +101,22 @@ const {
     color: var(--text-muted);
     background: color-mix(in srgb, var(--av-accent) 5%, var(--surface));
   }
+
+  .article-video__transcript {
+    border-top: 1px solid var(--border-soft);
+    padding: 0.9rem 1.1rem;
+    line-height: 1.65;
+  }
+
+  .article-video__transcript summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .article-video__transcript h2 {
+    font-size: 1rem;
+    margin: 1.1rem 0 0.3rem;
+  }
+
+  .article-video__transcript p { margin: 0; }
 </style>
