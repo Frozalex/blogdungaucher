@@ -1,151 +1,147 @@
-# Publication Pinterest en français
+# Campagne Pinterest : 730 contenus en français
 
-Trois flux RSS 2.0 indépendants alimentent les tableaux Science, Esprit et Société.
-Les flux contiennent immédiatement **un article réel par rubrique** pour permettre
-leur enregistrement dans Pinterest. Les trois articles d’initialisation comptent
-pour la semaine du 27 octobre. Les nouveautés et le reste du stock suivent ensuite
-le calendrier de publication.
+La campagne comprend **244 publications en image, 243 vidéos MP4 et 243 PDF**.
+Cette répartition équilibrée traduit la demande « 30/30/30 ». Les 72 articles
+français du stock servent de base ; chacun est représenté dans les trois formats.
+Les 730 identifiants et dates restent ceux du programme existant. Les accroches des vidéos sont adaptées à leurs séquences. Les trois
+épingles d’initialisation du 27 octobre restent des images et gardent leurs liens.
 
-## Connexion dans Pinterest après fusion et déploiement
+## Calendrier et canaux
 
-Le compte doit être professionnel et `blogdungaucher.com` doit y être revendiqué.
-L’installation de la balise ne confirme pas à elle seule que Pinterest a validé la revendication.
+- Départ : 27 octobre 2026, avec un article par tableau.
+- Reprise : 3 novembre 2026 ; mardi, vendredi et dimanche à 10 h en Guadeloupe.
+- Fin des 730 créneaux : **24 juin 2031**. Les nouveaux articles sont en supplément.
+- 72 créneaux initiaux dans `archive.json`, puis 658 angles dans `variants.json`.
+- Les formats sont figés dans `formats.json`, pas réattribués à chaque construction.
 
-Depuis Pinterest sur ordinateur, ouvrir les paramètres de création/importation
-en masse, puis connecter chaque flux au tableau public correspondant :
+Le site ne peut pas confirmer une publication effective sur Pinterest. Son statut
+`/pinterest/status.json` sépare le nombre de contenus préparés, les éléments exposés
+aux flux et les vidéos dont l’importation reste à effectuer dans le compte.
 
-| Flux | Tableau proposé |
+### Images et PDF : trois flux RSS déjà connectés
+
+| Flux | Tableau confirmé par l’utilisateur |
 | --- | --- |
 | `https://blogdungaucher.com/pinterest/science.xml` | Science des échecs |
 | `https://blogdungaucher.com/pinterest/esprit.xml` | Psychologie et esprit du joueur d’échecs |
 | `https://blogdungaucher.com/pinterest/societe.xml` | Les échecs dans la société |
 
-Le raccordement au compte Pinterest reste manuel. Aucun jeton Pinterest, service
-externe ou abonnement supplémentaire n’est nécessaire pour produire les flux.
-Les horaires ci-dessous concernent **l’entrée dans le flux** : Pinterest annonce
-un délai d’importation pouvant aller jusqu’à 24 heures, et ne garantit pas une
-heure de publication précise. Vérifier les premières épingles dans chaque tableau.
+Ces flux contiennent **487 créneaux de la campagne** : 244 images et 243 couvertures
+de PDF. Un PDF est présenté par une image JPEG verticale ; le lien de l’épingle mène
+au PDF réellement téléchargeable. Chaque fiche contient un lien vers son article
+complet. Le fichier PDF n’est pas présenté comme un format d’épingle natif.
 
-Documentation : https://help.pinterest.com/en/business/article/auto-publish-pins-from-your-rss-feed
+Les entrées apparaissent uniquement à leur date et restent 14 jours dans les flux.
+Les identifiants restent stables après une reconstruction. Les cartes déjà libérées
+restent disponibles tant que leur article est public. Les nouveaux articles
+admissibles continuent à recevoir une épingle image, hors des 730 créneaux.
 
-## Programme de 730 épingles
+### Vidéos : importation Pinterest distincte
 
-Le programme comprend **72 cartes d’article existantes et 658 variantes**, soit
-exactement **730 épingles** sur 72 articles français déjà publiés. Les nouveaux
-articles continuent à entrer automatiquement dans les flux en supplément :
-730 est la taille de cette campagne, pas un plafond définitif pour le compte.
+Les **243 vidéos ne sont pas envoyées dans les flux RSS d’images**. Elles sont
+exportées en MP4 H.264, 1080 × 1920, 24 images/s, avec une piste AAC stéréo 48 kHz : musique
+instrumentale originale et effets sonores, sans voix off. Le texte reste lisible sans son.
+Les séquences durent environ 45 à 74 secondes selon le temps de lecture nécessaire. Les sources sont de véritables pages HTML/CSS/JavaScript
+avec une ligne de temps déterministe et des transitions d’opacité et de mouvement.
 
-Les variantes ont des titres distincts, un passage de description extrait de
-l’article et une composition verticale parmi six modèles. Chaque passage est
-référencé dans `scripts/pinterest/variants.json` par son fichier et son titre de
-section ou sa question de FAQ. Les extraits ne créent pas de résultats scientifiques
-ou de citations supplémentaires. Un changement du passage source bloque la
-validation et exige de revoir les épingles concernées avant publication.
+Deux fichiers d’importation sont fournis, avec les trois noms de tableaux confirmés :
 
-Les 72 dates initiales sont conservées. Les 658 variantes prennent la suite le
-**13 avril 2027**, à raison de trois par semaine au total, jusqu’au
-**24 juin 2031 à 10 h en Guadeloupe**. Un même article revient après au moins
-28 jours ; la campagne actuelle espace les tours de plusieurs mois. Le calendrier
-est figé, pas recalculé à chaque déploiement.
+- `/pinterest-media/imports/videos-1.csv` : 200 vidéos ;
+- `/pinterest-media/imports/videos-2.csv` : 43 vidéos.
 
-Chaque variante possède un identifiant RSS stable et une URL de visuel distincte.
-Les GUID et images des 72 cartes originales restent inchangés. Les liens vont
-vers le vrai article du domaine revendiqué, avec son ancre de section si disponible.
-Il ne s’agit pas de 730 entrées déjà enregistrées dans le planificateur Pinterest :
-le site expose chaque entrée à sa date et Pinterest importe le flux. Le statut
-public distingue `campaignPlanned: 730` des créneaux échus ; il ne confirme pas
-l’importation effective par Pinterest.
+Ils contiennent titre, URL publique du MP4, tableau, couverture au même format,
+description, lien vers l’article, date UTC et mots-clés. Dans Pinterest sur ordinateur :
+**Paramètres → Importer du contenu → Importer un fichier CSV**. Attendre le résultat
+de l’importation et vérifier les dates et tableaux dans le compte. Un fichier CSV
+préparé n’est pas une preuve de programmation acceptée par Pinterest. Vérifier les
+dates avant un import tardif et ne pas réimporter les vidéos déjà créées.
 
-`npm run pinterest:campaign` prépare **tous les 730 JPEG**, vérifie les dimensions
-et l’unicité des fichiers, puis exporte le calendrier CSV, un manifeste JSON avec
-les sources et une galerie HTML dans `work/pinterest-preview-campaign/`. Ce dossier
-est privé au travail local et ne modifie jamais les flux de production.
+Références officielles :
+- https://help.pinterest.com/en/business/article/auto-publish-pins-from-your-rss-feed
+- https://help.pinterest.com/en/business/article/bulk-upload-video-pins
+- https://help.pinterest.com/en/article/review-pin-specs
 
-En production, seules les images des variantes déjà libérées sont générées ; elles
-restent disponibles après leur sortie de la fenêtre RSS, tant que l’article reste
-public. Un article retiré, en brouillon ou marqué `noindex` disparaît aussi des
-variantes. Les couvertures et le texte des articles ne sont pas modifiés.
+## Style et contenu
 
-## Calendrier de départ
+Vidéos et PDF partagent le même style néo-minimaliste : fond clair, encre sombre,
+typographie commune, grilles aérées et formes géométriques simples. Science conserve
+le bleu, Esprit l’ambre et Société le vert d’eau. Les couvertures existantes du blog
+restent intactes ; les 244 images réutilisent les compositions éditoriales existantes.
 
-- Initialisation : **27 octobre 2026 à 10 h, heure de Guadeloupe** (14 h UTC),
-  avec mémoire (Science), psychologie du joueur (Esprit) et argent (Société).
-  Chaque flux contient donc un élément dès le déploiement de cette correction.
-- Reprise régulière : **3 novembre 2026 à 10 h en Guadeloupe** (14 h UTC).
-- Anciens articles : mardi, vendredi et dimanche à la même heure.
-- Stock initial : **72 articles**, figés dans `scripts/pinterest/archive.json` :
-  trois à l’initialisation, puis 69 sur 23 semaines jusqu’au 11 avril 2027.
-  Le seuil séparant stock et nouveautés est `2026-10-28T00:00:00Z`.
-- Première semaine régulière : Alzheimer le 3 novembre, habitudes le 6 novembre,
-  triche le 8 novembre. Les articles d’initialisation ne sont pas replanifiés.
-  La rotation commence par Science, Esprit et Société ;
-  lorsqu’une rubrique épuise son stock, les autres utilisent les créneaux restants.
-- Les nouveaux articles admissibles parus entre le seuil et le lancement entrent
-  au lancement ; les suivants entrent après leur date de publication réelle.
-- Pinterest refuse l’enregistrement d’un flux vide. Les trois articles
-  d’initialisation servent précisément à rendre les flux connectables avant
-  le début du calendrier régulier, avec leurs vrais liens et visuels.
+Les vidéos développent une accroche et quatre étapes de lecture, puis un accès au dossier.
+Leurs scénarios sont conservés dans `video-storyboards.json` ; les textes proviennent
+des passages du programme, complétés par des reformulations éditoriales sourcées.
+Les paragraphes sont conservés avec leurs précisions pour ne pas isoler un chiffre de
+sa limite. L’exemple sur le biais de confirmation, validé par l’utilisateur, conserve
+son échiquier animé et ses coups légaux. Les illustrations existantes restent entières.
+Le cavalier décoratif et les cavaliers de l'échiquier utilisent le logo SVG du site.
+Les autres pièces sont des dessins vectoriels : aucun émoji ni caractère de police
+n'est utilisé pour représenter une pièce. Les SVG sont intégrés aux sources HTML,
+et leur modification invalide l'empreinte du rendu vidéo.
+Trois anciennes vignettes contenant du texte sont remplacées dans ces vidéos uniquement
+par des motifs graphiques ; les couvertures du blog ne sont pas modifiées. Les PDF
+reprennent le passage visé avec un contexte de lecture, les tableaux, formules et
+positions d’échecs présents dans cet extrait, et un lien vers le dossier complet.
+Ce sont des fiches thématiques, pas des copies intégrales de tous les articles.
+La musique et les bruitages sont synthétisés localement, sans enregistrement vocal
+ni échantillon externe. Le générateur varie la tonalité et le tempo tout en gardant la même ambiance. Les effets suivent les changements de scène.
+La piste est normalisée autour de −18 LUFS, puis intégrée dans chaque MP4.
+La page HTML lit la piste du MP4 pour conserver la synchronisation. Aucune voix off
+n’est ajoutée. Les vidéos ne comportent aucune promesse
+scientifique créée pour la campagne.
 
-Le workflow de publication existant reçoit les trois déclenchements de rebuild
-à 14 h UTC. Son mécanisme reste le même : commit de trigger, détection par le VPS,
-puis build. Les reconstructions quotidiennes existantes servent de rattrapage.
-Aucun email ni notification n’est envoyé par le générateur Pinterest.
+## Sources et maintenance
 
-## Retards et reprise
+`media-manifest.json` enregistre les empreintes des PDF, MP4, couvertures et articles
+sources, ainsi que celles des animations HTML. Le build les vérifie.
+Les vidéos exigent désormais une piste AAC stéréo, une durée cohérente et le style sonore v2. Une modification d’article exige donc de revoir et
+régénérer les médias concernés avant déploiement ; cela évite de distribuer une
+ancienne affirmation après une correction éditoriale. Les sources des variantes
+sont aussi contrôlées par titre de section ou question de FAQ.
 
-Les flux ne contiennent que les entrées des **14 derniers jours**. Cela limite
-une première connexion tardive à six anciens articles au maximum, plutôt qu’à
-tout le catalogue. Une même carte conserve son GUID et ne reçoit jamais un nouvel identifiant
-simplement parce qu’un build ou un titre change. Les variantes éditoriales ont
-chacune leur propre GUID, attribué une seule fois dans le programme.
+Les fichiers préfabriqués sont versionnés dans `public/pinterest-media/`. Le VPS ne
+lance ni navigateur ni encodeur vidéo lors d’un déploiement ordinaire. Les dépendances
+d’édition sont nécessaires uniquement pour régénérer les médias sur le poste de travail.
 
-Cette fenêtre implique un compromis explicite : une absence de consultation de
-plus de 14 jours peut laisser passer des articles. Une connexion tardive ne
-rejoue pas automatiquement les anciens créneaux expirés. Pour les reprendre,
-modifier leurs dates dans le calendrier par PR, sur des créneaux libres à venir,
-en conservant le plafond de trois par semaine. Ne pas replanifier un article
-sans vérifier dans Pinterest s’il a déjà été publié. Aucun accusé de réception
-Pinterest n’est disponible dans ce mécanisme RSS.
+Pour préparer les données puis les sources HTML :
 
-`/pinterest/status.json` donne les éléments **exposés aux flux**, leurs dates et
-les compteurs du calendrier. Ce fichier ne prétend jamais confirmer la publication
-d’une épingle. Il signale aussi les anciens articles ajoutés au dépôt sans créneau.
+```sh
+npm run pinterest:media:data
+npm run pinterest:media:storyboards
+npm run pinterest:media:html
+npm run pinterest:media:review
+```
 
-Si les flux ne sont pas raccordés dans la période prévue, revoir la date de départ
-et décaler les créneaux concernés avant activation. Le calendrier est volontairement
-versionné : aucune réorganisation automatique des anciens slugs à chaque build.
+Pour les vidéos et les formules, installer Chrome avec Puppeteer et disposer de
+FFmpeg/ffprobe. `PINTEREST_CHROME` permet de sélectionner un autre exécutable Chrome.
+`PINTEREST_VIDEO_WORKERS` règle le nombre de rendus concurrents (3 par défaut).
+`PINTEREST_PYTHON` sélectionne un Python disposant de NumPy pour la musique.
+Le rendu reprend les fichiers déjà validés uniquement si leurs animations, illustrations
+et générateurs correspondent encore à l’empreinte enregistrée. Le suivi local est
+`work/pinterest-media/render-progress.json`. Un échec ne valide jamais un ancien MP4 silencieux.
 
-## Images et contenu
+```sh
+npx puppeteer browsers install chrome
+npm run pinterest:media:video
+npm run pinterest:media:math
+```
 
-Les cartes sont des JPEG **1 000 × 1 500**, construits automatiquement avec Sharp.
-Chaque article conserve sa couverture, ses métadonnées, son URL et son texte.
-La carte Pinterest est un dérivé séparé : titre français, accent de rubrique,
-illustration entière sans recadrage, filigrane existant conservé et signature du blog.
-Les titres des cartes originales reprennent le titre de l’article, limité à 100
-caractères à une frontière de mot ; les descriptions utilisent le descriptif SEO
-ou l’extrait existant. Aucun argument ou résultat scientifique n’est inventé.
+Pour les PDF, Python requiert `reportlab` et `pypdf`, et les aperçus requièrent Poppler
+(`pdftoppm`). Les polices et leur licence sont conservées dans les ressources communes.
 
-Les images tierces nécessitent un crédit et une licence ; ces informations sont
-conservées sur la carte et, avec le lien source, dans la description RSS.
-Les images d’articles programmés, brouillons, hors rubrique ou `noindex` ne sont
-pas générées avant leur admissibilité. Les images des articles toujours publics
-restent disponibles même après la sortie de leur entrée de la fenêtre RSS.
+```sh
+npm run pinterest:media:pdf
+npm run pinterest:media:verify
+node scripts/pinterest/media/verify-audio.mjs
+npm run pinterest:campaign
+```
 
-Chaque élément fournit une seule image `media:content` et un lien vers le domaine
-revendiqué avec des paramètres UTM. Le GUID reste l’URL canonique sans suivi.
+La dernière commande exporte une galerie, un calendrier, les 730 fichiers finaux,
+les sources HTML et les deux CSV dans `work/pinterest-preview-campaign-mixed-v2/`.
+Un dossier existant est conservé : fournir `--out=nouveau-dossier` directement au script d’export pour créer une nouvelle version. Ce dossier est séparé des flux de production. Les fichiers temporaires et les
+rendus de contrôle restent dans `work/pinterest-media/` et sont ignorés par Git.
 
-Aperçus de la première semaine, non utilisés comme couvertures du site :
-
-| Science | Esprit | Société |
-| --- | --- | --- |
-| ![Carte Science](science.jpg) | ![Carte Esprit](esprit.jpg) | ![Carte Société](societe.jpg) |
-
-## Vérifications et maintenance
-
-`npm run build` génère les cartes et les flux **avant Astro**, puis contrôle les
-XML, les catégories, les GUID, les dates, les liens vers les pages réellement
-construites et le format de chaque JPEG. Les fichiers dans `public/pinterest/`
-sont générés et ignorés par Git ; ils sont copiés dans `dist/` par Astro.
+## Contrôles
 
 ```sh
 npm test
@@ -153,15 +149,10 @@ npm run check
 npm run build
 npm run check:pinterest-preview
 npm run check:pinterest-variants
-npm run pinterest:campaign
 ```
 
-L’aperçu daté du 8 novembre est isolé dans `work/pinterest-preview/`, jamais dans
-les fichiers destinés à la production. Les tests couvrent les frontières de dates,
-les brouillons, les catégories, les doublons, le retard de connexion, l’échappement
-XML et la préservation des illustrations. La CI construit également le site à
-cette date pour contrôler les liens et images réellement exposés après lancement.
-
-Aucun changement nginx ou proxy n’est requis pour ces trois fichiers statiques.
-Le serveur doit continuer à récupérer `main` et reconstruire le site aux horaires
-programmés. Une fusion seule ne connecte pas les flux au compte Pinterest.
+Les simulations couvrent les premiers PDF et les variantes de 2027. Les tests
+empêchent de compter une vidéo comme une publication RSS, vérifient la répartition
+244/243/243 et préservent les trois éléments déjà exposés. Le calendrier global
+reste plafonné à trois créneaux par semaine. Les erreurs d’importation Pinterest
+restent visibles dans le compte et ne sont pas déductibles du seul statut RSS.

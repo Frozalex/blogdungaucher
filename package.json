@@ -28,7 +28,15 @@
     "check:pinterest": "node scripts/check-pinterest.mjs",
     "check:pinterest-preview": "npm run pinterest:preview && node scripts/check-pinterest.mjs --preview",
     "pinterest:campaign": "node scripts/prepare-pinterest-campaign.mjs",
-    "check:pinterest-variants": "node scripts/generate-pinterest.mjs --at=2027-04-20T15:00:00Z --out=work/pinterest-preview-variants && node scripts/check-pinterest.mjs --preview --dir=work/pinterest-preview-variants"
+    "check:pinterest-variants": "node scripts/generate-pinterest.mjs --at=2027-04-20T15:00:00Z --out=work/pinterest-preview-variants && node scripts/check-pinterest.mjs --preview --dir=work/pinterest-preview-variants",
+    "pinterest:media:data": "node scripts/pinterest/media/prepare-data.mjs",
+    "pinterest:media:html": "node scripts/pinterest/media/motion.mjs",
+    "pinterest:media:video": "node scripts/pinterest/media/render-video.mjs",
+    "pinterest:media:math": "node scripts/pinterest/media/render-math.mjs",
+    "pinterest:media:pdf": "python3 scripts/pinterest/media/render-pdf.py && node scripts/pinterest/media/render-pdf-previews.mjs",
+    "pinterest:media:verify": "node scripts/pinterest/media/verify-assets.mjs",
+    "pinterest:media:storyboards": "node scripts/pinterest/media/storyboards.mjs",
+    "pinterest:media:review": "node scripts/pinterest/media/review-html.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",

@@ -87,3 +87,7 @@ scripts/_tmp-*.mjs
 /public/pinterest/
 /public/pinterest.tmp/
 /work/pinterest-preview*/
+
+# Offline rendering intermediates for the mixed Pinterest campaign
+/work/pinterest-media/
+/public/pinterest-media/video/*.part.mp4
