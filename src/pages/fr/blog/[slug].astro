@@ -41,6 +41,7 @@ import {
   stripFaqH2Section,
 } from "../../../utils/markdown-strip-faq";
 import { isPublicAssetAvailable } from "../../../utils/public-asset";
+import { getArticleSummaryVideo } from "../../../utils/article-videos";
 
 export async function getStaticPaths() {
   const posts = await getAllPosts();
@@ -92,7 +93,8 @@ const HERO_SIZES = "(max-width: 820px) 100vw, (max-width: 1100px) 50vw, 56vw";
 const RC_SIZES = "(max-width: 760px) 46vw, 280px";
 
 // Résumé vidéo : affiché si le MP4 existe dans public/.
-const summaryVideoSrc = post.data.summaryVideo?.trim();
+const generatedSummary = getArticleSummaryVideo(getPostSlug(post));
+const summaryVideoSrc = generatedSummary?.video ?? post.data.summaryVideo?.trim();
 const showSummaryVideo =
   !!summaryVideoSrc && isPublicAssetAvailable(summaryVideoSrc);
 
@@ -112,7 +114,7 @@ const structuredData = [
   description={post.data.seoDescription ?? post.data.excerpt}
   canonicalPath={postUrl}
   image={post.data.ogImage ?? siteConfig.defaultOgImage}
-  preloadImage={!showSummaryVideo && heroSrc && heroImage ? heroSrc : undefined}
+  preloadImage={heroSrc && heroImage ? heroSrc : undefined}
   preloadImageSrcset={heroSrcset}
   preloadImageSizes={HERO_SIZES}
   type="article"
@@ -139,9 +141,9 @@ const structuredData = [
     </div>
 
     {/* En-tête de l’article : titre et illustration. */}
-    <div class={`article-hero${(!showSummaryVideo && heroSrc && heroImage) ? " article-hero--has-image" : " article-hero--placeholder"}`}>
+    <div class={`article-hero${(heroSrc && heroImage) ? " article-hero--has-image" : " article-hero--placeholder"}`}>
 
-      {!showSummaryVideo && heroSrc && heroImage ? (
+      {heroSrc && heroImage ? (
         <figure class="hero-photo-wrap">
           <img
             class="hero-photo"
@@ -232,11 +234,12 @@ const structuredData = [
         {showSummaryVideo && summaryVideoSrc && (
           <ArticleVideo
             src={summaryVideoSrc}
-            poster={heroSrc}
+            poster={generatedSummary?.poster ?? heroSrc}
             title={`Résumé vidéo : ${post.data.title}`}
             eyebrow="Résumé vidéo de l'article"
             accentColor={category.accent}
-            note={post.data.summaryVideoNote}
+            note={generatedSummary ? `${Math.ceil(generatedSummary.duration)} secondes · Musique et effets sonores, sans voix off.` : post.data.summaryVideoNote}
+            transcript={generatedSummary?.scenes}
           />
         )}
 

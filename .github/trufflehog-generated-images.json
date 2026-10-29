@@ -1,0 +1,24 @@
+{
+  "reason": "Only these exact generated HTML blobs are excluded: TruffleHog 3.99.7 matched random substrings solely inside embedded base64 cover images, verified byte-for-byte against public/images originals. Every historical blob at each path must retain this SHA-256 or the scan fails before exclusion. Sources, templates, summaries and all other files remain scanned.",
+  "files": {
+    "media/article-videos/html/5-biais-cognitifs-blunder.html": "b27e62105504eca4d3249f389fab6544277a025a248fdf984131fc5fe39d7310",
+    "media/article-videos/html/comparaison-sociale-aux-echecs.html": "a1599a7bd944cf80f4cdc8a8e2b6f6199a9a2717f1905c35f1c4285af8b86cf4",
+    "media/article-videos/html/decision-sous-incertitude-aux-echecs.html": "011dd2d7593f3a871719dc840ee1172cd2f6ad8f3770b59a491d113733a2cdda",
+    "media/article-videos/html/echecs-estime-de-soi-elo.html": "b1829e9513a30362650714901b30be6c4e122eb0734ebc144ed1413853993f00",
+    "media/article-videos/html/echecs-et-argent.html": "7e074e376404fc4c605b82404fcd15924a82173aac11801a3338a2402962f491",
+    "media/article-videos/html/echecs-et-colere-ragequit.html": "62e83d9538f0f4c68d682d3bfd69f72273858126b98aa3053d2ac73ebf74ffcd",
+    "media/article-videos/html/echecs-et-dopamine.html": "ae17580d838638ab13a042e97e57d126d9f293c6103c826d10d57b2c017e97ed",
+    "media/article-videos/html/echecs-et-resilience.html": "df8dabebef2b296b69cd42d3ac0c0ec9321934ce45ca6b888671ff906c881e02",
+    "media/article-videos/html/echecs-peur-de-gagner.html": "aadce2a259446b425b07751aaced997a30965a521f4bba8acc599293072f09d6",
+    "media/article-videos/html/echecs-vs-go-complexite-intelligence.html": "c5637b6e1ca62ec1e1128250304e6738d8ea1c727466a1d1ebcb3ebb613f1a11",
+    "media/article-videos/html/echecs-vs-philosophie-pensee-strategique.html": "539bcbddcef8e6a780448952666a288daff0efe0fb0a31f987c53d5d7b321c41",
+    "media/article-videos/html/effet-de-halo-aux-echecs.html": "9fc7cc685a4d0121df1420d3174d24b40ad408ab07d68e25b2862a48264d460c",
+    "media/article-videos/html/effet-placebo-aux-echecs.html": "c447ac05de710ab3b4df937a125b95731bee152130671a33a3a5928187bf7357",
+    "media/article-videos/html/grand-oral-mathematiques-echecs.html": "2e4301dc5cc96df5da77b5fb0ead102edd5c7b2e9a984f6b430df04d6463f455",
+    "media/article-videos/html/manipulation-emotionnelle-aux-echecs.html": "9936171f448fd639129e95c853f1e2204cfbf2da68ea1100212a327a0d8d090d",
+    "media/article-videos/html/ordonnancement-des-coups-moteur-echecs.html": "e7a658f7b2b0d0bdc93d84d1807583c20cb0ec4e0b8952c89eb7ca9dba229a7c",
+    "media/article-videos/html/paradoxe-du-choix-aux-echecs.html": "c8c57d74353f2ae485a3b429452d8ad31c44b99b6f1446aba83703011ebc52c9",
+    "media/article-videos/html/quiescence-et-tables-de-cases-python.html": "e7fe8cf9b094f6ebc3783c918290a20ce79423370d5b936b8d096c0c84875e65",
+    "media/article-videos/html/theorie-des-jeux-aux-echecs.html": "ced28f643ae2800ed51659aaaeb01bfcd087269d8b7174adb903f6eaca0b16f7"
+  }
+}
