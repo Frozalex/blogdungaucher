@@ -10,26 +10,29 @@ export function pinTitle(post) {
 
 export const imageName = post => post.pinId || post.slug;
 export const pinGuid = (post, config) => post.pinId ? `urn:blogdungaucher:pinterest:${post.pinId}` : articleUrl(post,config,false);
+export const pinImagePath = post => post.mediaFormat==='pdf' ? `/pinterest-media/covers/${imageName(post)}.jpg` : `/pinterest/images/${imageName(post)}.jpg`;
 
 export function articleUrl(post, config, tracking = true) {
   const url = new URL(`/fr/blog/${post.slug}/`,config.origin);
   if (tracking) {
+    if (post.mediaFormat==='pdf') url.pathname = `/pinterest-media/pdf/${imageName(post)}.pdf`;
     url.searchParams.set('utm_source','pinterest');
     url.searchParams.set('utm_medium','organic_social');
     url.searchParams.set('utm_campaign',`rss_${post.category}`);
     url.searchParams.set('utm_content',imageName(post));
-    if (post.pinSource?.anchor) url.hash = post.pinSource.anchor;
+    if (post.pinSource?.anchor && post.mediaFormat!=='pdf') url.hash = post.pinSource.anchor;
   }
   return url.href;
 }
 export function renderFeed(category, items, config, now) {
   const meta = config.categories[category];
   if (!meta || items.some(item => item.category !== category)) throw new Error("Mixed/unknown Pinterest category");
+  if (items.some(item=>item.mediaFormat==='video')) throw new Error('Native video pins require Pinterest import, not the image RSS feed');
   const itemXml = items.map(post => {
     const title = pinTitle(post);
-    const description = plain(post.seoDescription || post.excerpt);
+    const description = (post.mediaFormat==='pdf' ? 'Fiche PDF à télécharger. ' : '') + plain(post.seoDescription || post.excerpt);
     const credit = post.heroImage.sourceUrl ? ` Crédit : ${post.heroImage.credit} (${post.heroImage.license}). Source : ${post.heroImage.sourceUrl}` : '';
-    const imageUrl = new URL(`/pinterest/images/${imageName(post)}.jpg`,config.origin).href;
+    const imageUrl = new URL(pinImagePath(post),config.origin).href;
     return `    <item>
       <title>${escapeXml(title)}</title>
       <link>${escapeXml(articleUrl(post,config))}</link>

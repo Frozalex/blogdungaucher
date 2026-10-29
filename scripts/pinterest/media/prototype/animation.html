@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Teste ton plan · Blog d’un Gaucher</title>
+<style>
+@font-face{font-family:Studio;src:url('assets/studio-regular.ttf')}@font-face{font-family:Studio;src:url('assets/studio-bold.ttf');font-weight:700}
+*{box-sizing:border-box}body{margin:0;background:#e9e6df;color:#171c1c;font:15px Studio,sans-serif;display:grid;place-items:center;min-height:100vh}canvas{display:block;width:auto;height:min(100vh,177.78vw);max-width:100vw;box-shadow:0 0 100px #18211d1a}.controls{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:10px 14px;border:1px solid #ffffff44;border-radius:40px;background:#171c1cf2;color:white;max-width:95vw}button{font:inherit;border:0;border-radius:24px;padding:10px 16px;color:#171c1c;background:#f0a050;cursor:pointer;white-space:nowrap}input{width:130px;accent-color:#f0a050}.export .controls{display:none}.export canvas{width:1080px;height:1920px;box-shadow:none}.export body{display:block;background:#f6f5f1}.sr{position:absolute;clip-path:inset(100%);width:1px;height:1px;overflow:hidden}
+</style></head>
+<body>
+<canvas id="film" width="1080" height="1920" role="img" aria-label="Vidéo animée sur le biais de confirmation, avec un exemple de défense aux échecs."></canvas>
+<div class="controls"><button id="play">Lire avec le son</button><button id="restart" aria-label="Recommencer">Recommencer</button><input id="seek" type="range" min="0" max="45.333333" step=".01" value="0" aria-label="Position de lecture"><span id="time">0:00</span></div>
+<audio id="sound" src="soundtrack.m4a" preload="auto"></audio>
+<p class="sr">Ton plan est brillant. Et sa meilleure réponse ? Une belle variante ne suffit pas. Exemple construit : 1.e4 e5 2.Fc4 Cc6 3.Dh5. Les Blancs visent le mat en f7. Mais 3...g6 attaque la dame et coupe sa diagonale. Cherche une réponse qui ferait échouer ton idée. Échecs, captures, menaces : adapte ta recherche à la position et à la pendule. Lis le dossier sur blogdungaucher.com.</p>
+<script>
+const canvas=document.querySelector('#film'),ctx=canvas.getContext('2d',{alpha:false});
+const C={paper:'#f6f5f1',ink:'#171c1c',muted:'#626b66',amber:'#f0a050',pale:'#ebe8e0',line:'#cecfc6',green:'#5cc4b0'};
+const W=1080,H=1920,D=45+1/3,starts=[0,6,12,21+1/3,29+1/3,38,D];
+const hero=new Image();hero.src='assets/hero.webp';
+const clamp=x=>Math.max(0,Math.min(1,x)),ease=x=>1-Math.pow(1-clamp(x),3),smooth=x=>{x=clamp(x);return x*x*(3-2*x)};
+let issues=[];
+function font(size=24,bold=false){ctx.font=`${bold?700:400} ${size}px Studio`}
+function txt(text,x,y,size=32,color=C.ink,bold=false){font(size,bold);ctx.fillStyle=color;ctx.textBaseline='top';ctx.fillText(text,x,y);if(x+ctx.measureText(text).width>1010)issues.push(text);}
+function round(x,y,w,h,r=24,fill=C.pale,stroke=null){ctx.beginPath();ctx.roundRect(x,y,w,h,r);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=2;ctx.stroke()}}
+function line(x1,y1,x2,y2,color=C.ink,width=2){ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.stroke()}
+function circle(x,y,r,fill,stroke=null){ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=3;ctx.stroke()}}
+function arrow(x1,y1,x2,y2,color,width=10,progress=1){x2=x1+(x2-x1)*progress;y2=y1+(y2-y1)*progress;line(x1,y1,x2,y2,color,width);const a=Math.atan2(y2-y1,x2-x1);ctx.beginPath();ctx.moveTo(x2,y2);ctx.lineTo(x2-24*Math.cos(a-.5),y2-24*Math.sin(a-.5));ctx.lineTo(x2-24*Math.cos(a+.5),y2-24*Math.sin(a+.5));ctx.closePath();ctx.fillStyle=color;ctx.fill()}
+function block(lines,x,y,size=82,leading=1.13,color=C.ink,local=9){lines.forEach((s,i)=>{let p=ease((local-i*.12)/.65);ctx.save();ctx.globalAlpha*=p;txt(s,x,y+i*size*leading+(1-p)*40,size,color,true);ctx.restore()})}
+function pill(text,x,y,w,active=false){round(x,y,w,62,31,active?C.amber:C.pale);txt(text,x+24,y+16,26,C.ink,true)}
+function chapter(label,number){txt(label,90,260,23,C.muted,true);txt(number+' / 06',875,260,23,C.muted)}
+function photo(x,y,w,h,local){ctx.save();const e=ease(local/.9);ctx.globalAlpha*=e;ctx.translate(x+w/2,y+h/2+(1-e)*40);ctx.rotate(Math.sin(local*.3)*.007);ctx.drawImage(hero,-w/2,-h/2,w,h);ctx.restore()}
+function header(t){txt('BLOG D’UN GAUCHER',90,130,23,C.ink,true);circle(955,144,10,C.amber);line(90,211,990,211,C.line);txt('ESPRIT',90,1745,22,C.muted,true);txt('blogdungaucher.com',644,1745,24,C.ink);starts.slice(0,-1).forEach((s,i)=>{const x=90+i*151.5;round(x,1806,133,5,2,C.line);const p=clamp((t-s)/(starts[i+1]-s));if(p>0)round(x,1806,133*p,5,2,C.amber)})}
+const base='r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR';
+const pieceImages=Object.fromEntries(Object.entries(__BOARD_PIECES__).map(([key,src])=>{const image=new Image();image.src=src;return[key,image]}));
+const squares=[];base.split('/').forEach((rank,r)=>{let f=0;for(const s of rank){if(/[1-8]/.test(s))f+=+s;else{squares.push({piece:s,file:f,rank:r});f++}}});
+const bx=120,by=680,bs=744,cell=bs/8;
+function square(name){return[bx+('abcdefgh'.indexOf(name[0])+.5)*cell,by+(8-Number(name[1])+.5)*cell]}
+function chessPiece(s,x,y){const height=82,width=s.toLowerCase()==='n'?height*625/868:height;ctx.drawImage(pieceImages[s],x-width/2,y-height/2,width,height)}
+function board(local,defense=false){
+ round(bx-15,by-15,bs+30,bs+30,15,'#e3e0d6');
+ for(let r=0;r<8;r++)for(let f=0;f<8;f++){ctx.fillStyle=(r+f)%2?'#acb8aa':'#eeeee3';ctx.fillRect(bx+f*cell,by+r*cell,cell,cell)}
+ const f7=square('f7');ctx.fillStyle='#f0a05070';ctx.fillRect(f7[0]-cell/2,f7[1]-cell/2,cell,cell);
+ if(defense){const g6=square('g6');ctx.fillStyle='#f0a050aa';ctx.fillRect(g6[0]-cell/2,g6[1]-cell/2,cell,cell)}
+ for(const s of squares){let x=bx+(s.file+.5)*cell,y=by+(s.rank+.5)*cell;
+ if(defense&&s.piece==='p'&&s.file===6&&s.rank===1)y+=cell*smooth((local-2.1)/.65);
+ chessPiece(s.piece,x,y)}
+ 'abcdefgh'.split('').forEach((f,i)=>txt(f,bx+i*cell+38,by+bs+22,22,C.muted));
+ for(let r=0;r<8;r++)txt(String(8-r),bx-44,by+r*cell+34,22,C.muted);
+ if(!defense){const a=square('h5'),b=square('f7'),c=square('c4');ctx.save();ctx.globalAlpha=.85;arrow(...a,...b,C.amber,11,ease((local-1)/.7));arrow(...c,...b,C.amber,7,ease((local-2)/.8));ctx.restore()}
+ if(defense&&local>2.8){const a=square('g6'),b=square('h5');arrow(...a,...b,C.amber,9,ease((local-2.8)/.6));circle(a[0],a[1],43,null,C.amber)}
+}
+function intro(l){chapter('LE BIAIS DE CONFIRMATION','01');block(['Ton plan','est brillant.'],90,365,104,1.1,C.ink,l);block(['Et sa meilleure','réponse ?'],90,635,83,1.13,C.ink,l-.55);pill('UNE IDÉE À METTRE À L’ÉPREUVE',90,880,645);photo(90,1040,900,600,l-.2)}
+function branches(l){chapter('LE PIÈGE','02');block(['Tu calcules','ce qui t’arrange ?'],90,365,88,1.12,C.ink,l);txt('Une belle variante ne suffit pas.',90,610,36,C.muted);
+ round(270,795,540,110,25,C.ink);txt('TON PLAN',433,835,35,C.paper,true);
+ const p=ease((l-.7)/.8);line(540,905,540,1000,C.ink,4);line(540,1000,300,1115,C.amber,7*p);line(540,1000,780,1115,C.muted,4*p);
+ const pulse=1+Math.sin(l*1.6)*.025;ctx.save();ctx.translate(300,1215);ctx.scale(pulse,pulse);round(-210,-95,420,190,28,C.amber);txt('La réponse',-148,-42,35,C.ink,true);txt('que tu espères',-169,10,32,C.ink);ctx.restore();
+ const e=ease((l-2.4)/.8);ctx.save();ctx.globalAlpha=e;round(570,1120,420,190,28,C.paper,C.ink);txt('La défense',626,1170,35,C.ink,true);txt('que tu oublies',609,1222,32,C.ink);ctx.restore();
+ block(['L’adversaire choisit','aussi son coup.'],90,1460,49,1.3,C.ink,l-3.3)
+}
+function attack(l){chapter('UN EXEMPLE CONSTRUIT','03');block(['Tu vises','le mat en f7.'],90,365,88,1.12,C.ink,l);txt('1.e4 e5  2.Fc4 Cc6  3.Dh5',90,595,31,C.muted);board(l);pill('LA MENACE : Dxf7 MAT',120,1518,526,true)}
+function defense(l){chapter('LA RÉPONSE OUBLIÉE','04');block(['Mais il peut','jouer… g6.'],90,365,88,1.12,C.ink,l);txt('Les Noirs choisissent une autre défense.',90,595,31,C.muted);board(l,true);const p=ease((l-2.8)/.5);ctx.save();ctx.globalAlpha=p;txt('Ta dame est attaquée.',120,1518,38,C.ink,true);txt('Sa diagonale vers f7 est coupée.',120,1574,32,C.muted);ctx.restore()}
+function practice(l){chapter('À ESSAYER DANS TES ANALYSES','05');block(['Avant de jouer,','change de camp.'],90,365,85,1.14,C.ink,l);block(['Quelle réponse ferait','échouer ton idée ?'],90,625,49,1.3,C.muted,l-.3);
+ [['01','Échecs'],['02','Captures'],['03','Menaces']].forEach(([n,label],i)=>{const y=865+i*185,p=ease((l-.6-i*2)/.6);ctx.save();ctx.globalAlpha=.22+.78*p;round(90,y,855,146,20,p>.1?C.pale:'#eeeae2');circle(158,y+73,36,p>.1?C.amber:C.line);txt(n,137,y+58,23,C.ink,true);txt(label,230,y+45,51,C.ink,true);if(p>.98){line(843,y+72,861,y+90,C.ink,5);line(861,y+90,891,y+52,C.ink,5)}ctx.restore()});
+ txt('Adapte ta recherche à la position',90,1500,34,C.muted);txt('et au temps qu’il te reste.',90,1548,34,C.muted)
+}
+function ending(l){chapter('LE RÉFLEXE À GARDER','06');block(['Teste ton plan.','Pas seulement','ton espoir.'],90,365,87,1.17,C.ink,l);photo(90,805,900,600,l-.1);round(90,1450,900,180,24,C.ink);txt('Comprendre le biais',130,1486,36,C.paper,true);txt('de confirmation',130,1534,36,C.paper,true);circle(904,1540,37,C.amber);arrow(886,1540,921,1540,C.ink,4);txt('LE DOSSIER COMPLET SUR LE BLOG',90,1670,24,C.muted,true)}
+const scenes=[intro,branches,attack,defense,practice,ending];
+window.duration=D;
+window.renderAt=function(t){issues=[];t=Math.max(0,Math.min(t,D-.00001));const i=starts.findIndex((s,n)=>n<6&&t<starts[n+1]);const local=t-starts[i];ctx.globalAlpha=1;ctx.fillStyle=C.paper;ctx.fillRect(0,0,W,H);header(t);
+ const enter=ease(local/.45),leave=clamp((starts[i+1]-t)/.25);ctx.save();ctx.globalAlpha=enter*leave;ctx.translate(0,(1-enter)*25);scenes[i](local);ctx.restore();
+ return {index:i,local,overflow:issues.length>0,issues};};
+window.ready=Promise.all([document.fonts.load('700 90px Studio'),document.fonts.load('400 40px Studio'),hero.decode(),...Object.values(pieceImages).map(image=>image.decode())]).then(()=>{window.renderAt(.9);return true});
+const exporting=new URLSearchParams(location.search).has('export');if(exporting)document.documentElement.classList.add('export');
+const sound=document.querySelector('#sound'),play=document.querySelector('#play'),seek=document.querySelector('#seek');let playing=false;
+play.onclick=async()=>{if(playing){sound.pause();playing=false;play.textContent='Reprendre'}else{if(sound.currentTime>=D-.1)sound.currentTime=0;await sound.play();playing=true;play.textContent='Pause'}};
+document.querySelector('#restart').onclick=()=>{sound.currentTime=0;window.renderAt(0)};
+seek.oninput=()=>{sound.currentTime=Number(seek.value);window.renderAt(sound.currentTime)};
+sound.onended=()=>{playing=false;play.textContent='Revoir avec le son';window.renderAt(D-.05)};
+function tick(){if(playing){window.renderAt(sound.currentTime);seek.value=sound.currentTime;document.querySelector('#time').textContent='0:'+String(Math.floor(sound.currentTime)).padStart(2,'0')}requestAnimationFrame(tick)}
+if(!exporting)window.ready.then(tick);
+</script></body></html>

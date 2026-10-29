@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';import path from 'node:path';import{pathToFileURL}from'node:url';import puppeteer from'puppeteer';import sharp from'sharp';
+const cards=JSON.parse(await fs.readFile('scripts/pinterest/video-storyboards.json')),root=process.cwd(),out='work/pinterest-media/html-qa';await fs.mkdir(out,{recursive:true});
+const browser=await puppeteer.launch({executablePath:process.env.PINTEREST_CHROME||puppeteer.executablePath(),headless:true,args:['--no-sandbox','--disable-dev-shm-usage','--allow-file-access-from-files']});
+const report=[];let cursor=0;
+try{await Promise.all(Array.from({length:3},async()=>{const page=await browser.newPage();await page.setViewport({width:1080,height:1920});while(cursor<cards.length){const card=cards[cursor++];await page.goto(pathToFileURL(path.join(root,'public/pinterest-media/html',card.id+'.html')).href+'?export=1');await page.evaluate(()=>window.ready);const duration=await page.evaluate(()=>window.duration),parts=[],issues=[];let t=0;
+ const starts=card.approvedPrototype?[0,6,12,21+1/3,29+1/3,38]:card.scenes.map(s=>{const start=t;t+=s.duration;return start});
+ for(const [i,start]of starts.entries()){const result=await page.evaluate(t=>({state:window.renderAt(t),data:document.querySelector('canvas').toDataURL('image/jpeg',.9).split(',')[1]}),start+Math.min(4,(duration-start)/2));if(result.state.overflow)issues.push(...result.state.issues);parts.push({input:await sharp(Buffer.from(result.data,'base64')).resize(300,533).toBuffer(),left:(i%3)*300,top:Math.floor(i/3)*533});}
+ await sharp({create:{width:900,height:Math.ceil(parts.length/3)*533,channels:3,background:'#f6f5f1'}}).composite(parts).jpeg({quality:85}).toFile(`${out}/${card.id}.jpg`);report.push({id:card.id,duration,issues});if(report.length%30===0)console.log(`${report.length}/243 storyboards checked`);
+ }}));}finally{await browser.close()}
+await fs.writeFile(`${out}/report.json`,JSON.stringify(report,null,2));const failures=report.filter(r=>r.issues.length);console.log(JSON.stringify({checked:report.length,failures},null,2));if(failures.length)process.exitCode=1;

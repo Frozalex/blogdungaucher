@@ -5,6 +5,8 @@ import { readPosts, isEligible } from './pinterest/content.mjs';
 import { selectFeedItems, validateArchive } from './pinterest/calendar.mjs';
 import { validateVariants, releasedVariants } from './pinterest/campaign.mjs';
 import { renderFeed, articleUrl, imageName } from './pinterest/feed.mjs';
+import { validateMediaAssets } from './pinterest/media/assets.mjs';
+import { validateFormats, withFormats, rssOnly } from './pinterest/formats.mjs';
 import { renderVisual } from './pinterest/visual.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -21,17 +23,21 @@ const now = args.at ? new Date(args.at) : new Date();
 const config = JSON.parse(await fs.readFile(path.join(root,'scripts/pinterest/config.json'),'utf8'));
 const archive = JSON.parse(await fs.readFile(path.join(root,'scripts/pinterest/archive.json'),'utf8'));
 const variants = JSON.parse(await fs.readFile(path.join(root,'scripts/pinterest/variants.json'),'utf8'));
+const formats = JSON.parse(await fs.readFile(path.join(root,'scripts/pinterest/formats.json'),'utf8'));
+const formatCounts = validateFormats(formats,archive,variants);
+validateMediaAssets(root,formats);
 const posts = readPosts(path.join(root,'src/content/blog'));
 validateArchive(archive,posts,config);
 validateVariants(variants,archive,posts,config,root);
-const items = selectFeedItems(posts,archive,config,now,variants);
+const due = withFormats(selectFeedItems(posts,archive,config,now,variants),formats);
+const items = rssOnly(due);
 const temporary = `${output}.tmp`;
 await fs.rm(temporary,{recursive:true,force:true});
 await fs.mkdir(path.join(temporary,'images'),{recursive:true});
 try {
   // Keep previously released image URLs available after they leave the RSS window.
   // Generate only published, eligible articles; no scheduled title is exposed early.
-  const images = posts.filter(post => isEligible(post,config,now)).concat(releasedVariants(posts,variants,config,now,false));
+  const images = withFormats(posts.filter(post => isEligible(post,config,now)).concat(releasedVariants(posts,variants,config,now,false)),formats).filter(post=>post.mediaFormat==='image');
   for (const post of images) {
     const jpg = await renderVisual(post,config.categories[post.category],path.join(root,'public'));
     await fs.writeFile(path.join(temporary,'images',`${imageName(post)}.jpg`),jpg);
@@ -44,8 +50,11 @@ try {
   const status = {
     generatedAt:now.toISOString(), initialReleaseAt:config.initialReleaseAt, startsAt:config.startsAt, feedWindowDays:config.feedWindowDays,
     note:'Exposition dans le flux, pas confirmation de publication Pinterest.',
-    items:items.map(post=>({slug:post.slug,pinId:post.pinId,category:post.category,kind:post.kind,initial:post.initial,releaseAt:post.releaseAt,url:articleUrl(post,config)})),
+    items:items.map(post=>({slug:post.slug,pinId:post.pinId,category:post.category,kind:post.kind,format:post.mediaFormat,initial:post.initial,releaseAt:post.releaseAt,url:articleUrl(post,config)})),
     archivePlanned:archive.length,
+    formats:formatCounts, rssPlanned:formatCounts.image+formatCounts.pdf,
+    videoPublication:'Les 243 vidéos nécessitent une importation des CSV dans Pinterest. Le RSS ne les publie pas.',
+    videosDue:due.filter(post=>post.mediaFormat==='video').map(post=>({id:imageName(post),releaseAt:post.releaseAt})),
     variantsPlanned:variants.length, campaignPlanned:archive.length+variants.length,
     campaignLastReleaseAt:variants.at(-1)?.releaseAt,
     variantSlotsElapsed:variants.filter(entry=>new Date(entry.releaseAt)<=now).length,
