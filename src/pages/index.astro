@@ -1,20 +1,103 @@
-﻿---
-/** Racine du domaine : redirection vers la version française par défaut. */
+---
+import '../styles/global.css';
+import { siteConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE } from '../data/site';
+
+const now = new Date();
+const languages = [
+  { code: 'fr', label: 'Français', welcome: 'Bienvenue', action: 'Entrer sur le blog', href: '/fr/' },
+  { code: 'en', label: 'English', welcome: 'Welcome', action: 'Explore the blog', href: '/en/' },
+  ...(now >= PT_BR_LAUNCH_DATE ? [
+    { code: 'pt-BR', label: 'Português do Brasil', welcome: 'Bem-vindo', action: 'Entrar no blog', href: '/pt-br/' },
+  ] : []),
+  ...(now >= NL_LAUNCH_DATE ? [
+    { code: 'nl', label: 'Nederlands', welcome: 'Welkom', action: 'Ontdek de blog', href: '/nl/' },
+  ] : []),
+];
+const canonicalUrl = new URL('/', siteConfig.siteUrl).href;
 ---
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta name="p:domain_verify" content="b06591c54aa22149ff60139132fff846" />
     <meta charset="utf-8" />
+    <meta name="p:domain_verify" content="b06591c54aa22149ff60139132fff846" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Redirection…</title>
-    <meta http-equiv="refresh" content="0;url=/fr/" />
-    <link rel="canonical" href="https://blogdungaucher.com/fr/" />
-    <script is:inline>
-      window.location.replace("/fr/");
-    </script>
+    <meta name="description" content="Échecs, science, esprit et société. Choisissez votre langue pour découvrir le Blog d'un Gaucher. Choose your language to explore the blog." />
+    <title>Choisir une langue | Blog d'un Gaucher</title>
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog d'un Gaucher · Choisir une langue" />
+    <meta property="og:description" content="Échecs, science, esprit et société. Choisissez votre langue. Choose your language." />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={new URL(siteConfig.defaultOgImage, siteConfig.siteUrl).href} />
   </head>
   <body>
-    <p><a href="/fr/">Blog d'un Gaucher - continuer</a></p>
+    <main class="language-home" aria-labelledby="language-title">
+      <header class="brand">
+        <img src="/images/logo.svg" alt="" width="56" height="80" />
+        <p>Blog d'un Gaucher</p>
+        <span>Échecs · Science · Esprit · Société</span>
+      </header>
+      <section class="language-choice" aria-labelledby="language-title">
+        <p class="eyebrow">Un autre regard sur les échecs</p>
+        <h1 id="language-title">Choisissez votre langue</h1>
+        <p class="invitation" lang="en">Choose your language</p>
+        <nav aria-label="Choix de la langue / Choose your language">
+          <ul class="language-list">
+            {languages.map(language => (
+              <li>
+                <a class="language-card" href={language.href} lang={language.code} hreflang={language.code}>
+                  <span class="welcome">{language.welcome}</span>
+                  <span class="language-name">{language.label}</span>
+                  <span class="language-action">{language.action}<span aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </section>
+      <footer>
+        <p>Le jeu, sous un autre angle.</p>
+        <p lang="en">A different perspective on chess.</p>
+      </footer>
+    </main>
   </body>
 </html>
+
+<style>
+  .language-home {
+    min-height: 100vh;
+    min-height: 100svh;
+    max-width: 1080px;
+    margin-inline: auto;
+    padding: clamp(2rem, 6vh, 4rem) 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .brand { text-align: center; }
+  .brand img { margin: 0 auto 0.75rem; object-fit: contain; }
+  .brand p { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; }
+  .brand > span { color: var(--text-muted); font-size: 0.85rem; }
+  .language-choice { text-align: center; }
+  .eyebrow { color: var(--green-on-tint); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; }
+  h1 { font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 3.75rem); font-weight: 500; line-height: 1.15; text-wrap: balance; }
+  .invitation { color: var(--text-muted); margin-top: 0.75rem; font-size: 1.15rem; }
+  .language-list { list-style: none; padding: 0; margin: 2.5rem 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+  .language-list li { min-width: 0; }
+  .language-card { display: flex; flex-direction: column; height: 100%; padding: 1.75rem; text-align: left; border: 1px solid var(--border-strong); border-radius: var(--radius-lg); background: var(--surface); transition: border-color 180ms ease, box-shadow 180ms ease; }
+  .language-card:hover, .language-card:focus-visible { border-color: var(--green); box-shadow: var(--shadow-sm); }
+  .language-card:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+  .welcome { font-size: 0.85rem; color: var(--text-muted); }
+  .language-name { font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; margin: 0.5rem 0 1.5rem; line-height: 1.3; }
+  .language-action { display: flex; justify-content: space-between; align-items: center; gap: 1rem; color: var(--green-on-tint); font-size: 0.9rem; margin-top: auto; }
+  footer { text-align: center; color: var(--text-muted); font-size: 0.85rem; }
+  @media (max-width: 540px) {
+    .language-home { gap: 2rem; padding-inline: 1.25rem; }
+    .language-list { grid-template-columns: 1fr; margin-top: 1.75rem; }
+    .language-card { padding: 1.25rem; }
+    .language-name { margin-bottom: 0.75rem; }
+  }
+  @media (prefers-reduced-motion: reduce) { .language-card { transition: none; } }
+</style>
