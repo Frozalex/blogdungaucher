@@ -16,14 +16,15 @@ const pathname = Astro.url.pathname;
 const E=editorialUi(lang);
 const homeHref = lang === "en" ? "/en/" : lang === "pt-br" ? "/pt-br/" : lang === "nl" ? "/nl/" : "/fr/";
 
-/** Langues proposées dans le sélecteur : uniquement celles réellement en ligne
- *  (NL lancé au 1er novembre, donc exclu pour l'instant). Les href sont déjà résolus
+/** Langues proposées dans le sélecteur : toutes celles réellement en ligne
+ *  (NL ouvert depuis le 1er novembre 2026). Les href sont déjà résolus
  *  par BaseLayout vers la traduction de la page courante — ou l'accueil de la
  *  langue en repli — ce qui évite tout lien mort. Libellés = endonymes (non traduits). */
 const switchLanguages = [
   { code: "fr", label: "Français", short: "FR", href: frHref ?? "/fr/" },
   { code: "en", label: "English", short: "EN", href: enHref ?? "/en/" },
   { code: "pt-br", label: "Português", short: "PT", href: ptBrHref ?? "/pt-br/" },
+  { code: "nl", label: "Nederlands", short: "NL", href: nlHref ?? "/nl/" },
 ] as const;
 const currentSwitch = switchLanguages.find((l) => l.code === lang) ?? switchLanguages[0];
 
@@ -194,7 +195,7 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
         </svg>
       </button>
 
-      {/* Sélecteur de langue : menu déroulant FR · EN · PT-BR. Chaque lien pointe
+      {/* Sélecteur de langue : menu déroulant FR · EN · PT-BR · NL. Chaque lien pointe
          vers la traduction de la page courante (ou l'accueil de la langue en repli). */}
       <div class="lang-switch" data-lang-switch>
         <button
@@ -569,7 +570,7 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
   /* ── Sélecteur de langue (menu déroulant) ── */
   .lang-switch { position: relative; }
 
-  /* Bouton langue : globe + code de la langue courante (FR/EN/PT). */
+  /* Bouton langue : globe + code de la langue courante (FR/EN/PT/NL). */
   .lang-btn {
     width: auto;
     min-width: 2.75rem;

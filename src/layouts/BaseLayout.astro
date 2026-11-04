@@ -12,7 +12,7 @@ import BackToTop from "../components/BackToTop.astro";
 import CookieConsent from "../components/CookieConsent.astro";
 import ScrollableContent from "../components/ScrollableContent.astro";
 
-import { siteConfig, adsenseConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, enStaticRoutes, ptBrStaticRoutes, isIndexedLang } from "../data/site";
+import { siteConfig, adsenseConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, enStaticRoutes, ptBrStaticRoutes, nlStaticRoutes, isIndexedLang } from "../data/site";
 import { swapLangPrefix, withTrailingSlash } from "../utils/lang-paths";
 
 // `?url` réutilise le fichier haché de @font-face pour le préchargement.
@@ -111,10 +111,13 @@ const resolvedNlPath = nlPath ?? swapLangPrefix(canonicalPath, "nl");
 // ne jamais exposer de lien mort dans le menu de langue.
 const enStaticSet = new Set(enStaticRoutes.map((r) => withTrailingSlash(r)));
 const ptBrStaticSet = new Set(ptBrStaticRoutes.map((r) => withTrailingSlash(r)));
+const nlStaticSet = new Set(nlStaticRoutes.map((r) => withTrailingSlash(r)));
 const enSwapped = withTrailingSlash(swapLangPrefix(canonicalPath, "en"));
 const ptBrSwapped = withTrailingSlash(swapLangPrefix(canonicalPath, "pt-br"));
+const nlSwapped = withTrailingSlash(swapLangPrefix(canonicalPath, "nl"));
 const enSwitchHref = enPath ?? (enStaticSet.has(enSwapped) ? enSwapped : "/en/");
 const ptBrSwitchHref = ptBrPath ?? (ptBrStaticSet.has(ptBrSwapped) ? ptBrSwapped : "/pt-br/");
+const nlSwitchHref = nlPath ?? (nlStaticSet.has(nlSwapped) ? nlSwapped : "/nl/");
 const canonicalUrl = new URL(canonicalPath, siteConfig.siteUrl).toString();
 const frCanonicalUrl = new URL(resolvedFrPath, siteConfig.siteUrl).toString();
 const enCanonicalUrl = new URL(resolvedEnPath, siteConfig.siteUrl).toString();
@@ -134,7 +137,7 @@ const inLanguage = lang === "en" ? "en-US" : lang === "pt-br" ? "pt-BR" : lang =
 
 /** Politique d'indexation : une page est noindex si elle le demande explicitement,
  *  ou si sa langue n'est pas dans `INDEXED_LANGS` (voir `src/data/site.ts` —
- *  FR, EN et PT-BR sont exposés ; NL reste en attente). */
+ *  FR, EN, PT-BR et NL sont exposés). */
 const effectiveNoindex = noindex || !isIndexedLang(lang);
 // Les pages utilitaires, légales, incomplètes et les replis sans traduction
 // ne chargent pas le SDK susceptible d'afficher des annonces automatiques.
@@ -451,7 +454,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
 
   </head>
   <body style={accentColor ? `--page-accent:${accentColor}` : ""}>
-    <Navbar frHref={resolvedFrPath} enHref={enSwitchHref} ptBrHref={ptBrSwitchHref} nlHref={resolvedNlPath} lang={lang} />
+    <Navbar frHref={resolvedFrPath} enHref={enSwitchHref} ptBrHref={ptBrSwitchHref} nlHref={nlSwitchHref} lang={lang} />
     {/* Le contenu principal peut recevoir le focus après une navigation. */}
     <main id="main-content" tabindex="-1">
       <slot />

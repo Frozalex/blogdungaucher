@@ -238,14 +238,14 @@ export { PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE } from "./language-launch.mjs";
  *  dans les templates d'article) en plus d'être retirée du sitemap. Seules les
  *  vraies traductions sont donc exposées.
  *
- *  NL reste hors de cette liste : la section n'est pas lancée (cf.
- *  `NL_LAUNCH_DATE`). L'ajouter ici avant le 2026-11-01 indexerait des pages
- *  qui ne sont pas encore reliées à la navigation.
+ *  NL a rejoint la liste le 2026-11-04 : la section est lancée (cf.
+ *  `NL_LAUNCH_DATE`, 2026-11-01) et désormais reliée à la navigation via le
+ *  sélecteur de langue — les deux conditions qui la tenaient hors index.
  *
  *  Dans tous les cas, on ne bloque PAS les langues non indexées dans
  *  robots.txt : Google doit pouvoir les crawler pour lire la balise noindex.
  */
-export const INDEXED_LANGS: readonly SiteLang[] = ["fr", "en", "pt-br"];
+export const INDEXED_LANGS: readonly SiteLang[] = ["fr", "en", "pt-br", "nl"];
 
 /** `true` si les pages de cette langue doivent être indexées. */
 export function isIndexedLang(lang: string): boolean {

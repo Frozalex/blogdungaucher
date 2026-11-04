@@ -31,6 +31,7 @@ import {
   getPostUrlEnSync,
   getPostUrlPtBr,
   getPostUrlPtBrSync,
+  getPostUrlNl,
   getPostHeroSrc,
 } from "../../../utils/blog";
 import { buildSrcset, imgSizing } from "../../../utils/image-variants";
@@ -126,6 +127,7 @@ const relatedWithUrls = await Promise.all(
 const postUrlPtBr = getPostUrlPtBrSync(post, ptBrSlug);
 const postUrlFr = getPostUrl(post);
 const postUrlEn = getPostUrlEnSync(post, enSlug);
+const postUrlNl = await getPostUrlNl(post);
 const absolutePostUrl = absoluteUrl(postUrlPtBr);
 
 const ptBrTitle     = ptBrEntry?.data?.seoTitle ?? ptBrEntry?.data?.title ?? post.data.seoTitle ?? post.data.title;
@@ -189,6 +191,7 @@ const structuredData = [
   frPath={postUrlFr}
   enPath={postUrlEn}
   ptBrPath={postUrlPtBr}
+  nlPath={postUrlNl}
   image={post.data.ogImage ?? siteConfig.defaultOgImage}
   preloadImage={!showSummaryVideo && heroSrc && heroImage ? heroSrc : undefined}
   preloadImageSrcset={heroSrcset}
