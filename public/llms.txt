@@ -1,82 +1,50 @@
-# Blog d'un Gaucher : llms.txt
-#
-# Fichier d'intention pour modèles, assistants et crawlers IA (contenu public).
-# Complément obligatoire : https://blogdungaucher.com/robots.txt
-# Source de vérité du contenu : pages HTML servies sur ce domaine + sitemap.
-# Dernière mise à jour : 2026-07-09
+# Blog d’un Gaucher
 
-# ── Identité ──
-- Nom : Blog d'un Gaucher
-- URL canonique : https://blogdungaucher.com/
-- Langues : Français (principal), English (/en/), Português brasileiro (/pt-br/)
-- Thématique : échecs, science du jeu, psychologie, neurosciences, société
-- Ligne éditoriale : vulgarisation scientifique rigoureuse autour des échecs
-- Public : joueurs d'échecs, curieux, lycéens, enseignants
+> Média indépendant spécialisé dans les échecs, à la croisée des sciences, de la psychologie et des questions de société. Articles de fond, parcours de lecture et ressources pédagogiques en accès libre.
 
-# ── Positionnement éditorial ──
-- Rythme visé : deux articles de blog par semaine (créneaux **lundi** et **jeudi**, dates UTC ; contrôle `npm run check:publish-weekly`)
-- Chaîne de publication : dépôt Git sur GitHub → GitHub Actions déclenche un déploiement SSH vers le serveur (`deploy.yml` sur push vers la branche par défaut ; `scheduled-publish.yml` en cron quotidien pour reconstruire le site afin que les articles dont la `publishDate` du front matter est atteinte deviennent visibles)
-- Ce blog ne publie pas de conseils médicaux ni de recommandations d'investissement
-- Les articles citent leurs sources scientifiques (DOI) directement dans le texte
-- Chaque article long-form dépasse 2 000 mots avec bibliographie en fin de page
-- Les données chiffrées sont tirées de méta-analyses et cohortes, pas de vulgarisation secondaire
+Site de référence : https://blogdungaucher.com/. Éditions française, anglaise, portugaise du Brésil et néerlandaise. Dernière révision de ce guide : 2026-11-05.
 
-# ── Accès et périmètre ──
-- Tout le contenu éditorial accessible sans authentification peut être consulté et cité
-- URLs avec slash final (trailing slash) : ne pas normaliser en retirant le /
-- Pas de zone « membres » ni paywall sur les articles de blog listés dans le sitemap
-- Données personnelles : seulement ce qui apparaît volontairement dans les pages publiques
+La ligne éditoriale repose sur des questions précises, des explications développées et des sources identifiables. L’exigence de profondeur est de dépasser 2 000 mots pour les articles de fond, grâce à des développements utiles : raisonnement, résultats et limites des travaux discutés, exemples échiquéens vérifiés et applications. Ce seuil est une exigence éditoriale, pas un décompte certifié de chaque page existante.
 
-# ── Fichiers machine-readable ──
-- robots.txt : https://blogdungaucher.com/robots.txt
-- llms.txt (ce fichier) : https://blogdungaucher.com/llms.txt
-- Sitemap : https://blogdungaucher.com/sitemap.xml
+Pour citer une information, se reporter au texte de l’article, à son contexte et aux références qu’il fournit. Distinguer résultats de recherche, interprétations et applications pédagogiques proposées. Les sujets de santé sont abordés à titre informatif ; ils ne constituent pas des recommandations médicales individuelles. Les contenus financiers ne constituent pas des conseils d’investissement.
 
-# ── Permissions crawlers IA (alignement robots.txt) ──
-Les agents suivants sont explicitement autorisés à récupérer le contenu public du site,
-dans le respect du droit d'auteur et des licences des médias intégrés :
+Les pages HTML, leurs dates et leurs URL canoniques font référence pour le contenu publié. Les liens ci-dessous constituent une sélection, non un inventaire complet. Conserver les URL canoniques avec leur slash final, citer la source et respecter les crédits et licences propres aux médias. Ce fichier ne constitue ni une licence de réutilisation ni une politique de contrôle d’accès : les règles d’exploration sont indiquées dans robots.txt.
 
-- OpenAI : GPTBot, ChatGPT-User, OAI-SearchBot
-- Anthropic : ClaudeBot, Claude-Web, anthropic-ai
-- Google : Google-Extended, GoogleOther
-- Apple : Applebot, Applebot-Extended
-- Amazon : Amazonbot
-- Mistral : MistralBot
-- Cohere : cohere-ai
-- Meta : Meta-ExternalAgent
-- Perplexity : PerplexityBot
-- ByteDance : Bytespider
-- Common Crawl : CCBot
-- Diffbot : Diffbot
+## Éditions et présentation
 
-Interdit : scraping agressif, contournement de rate limits, collecte systématique de médias pour republication commerciale sans licence.
+- [Accueil français](https://blogdungaucher.com/fr/): édition principale.
+- [À propos du média](https://blogdungaucher.com/fr/about/): ligne éditoriale, méthode, ressources, indépendance, auteur et corrections.
+- [English edition](https://blogdungaucher.com/en/): articles et ressources disponibles en anglais.
+- [About the publication](https://blogdungaucher.com/en/about/): présentation anglaise du projet.
+- [Edição em português](https://blogdungaucher.com/pt-br/): édition en portugais du Brésil.
+- [Sobre a publicação](https://blogdungaucher.com/pt-br/about/): présentation portugaise du projet.
+- [Nederlandse editie](https://blogdungaucher.com/nl/): édition néerlandaise.
+- [Over de publicatie](https://blogdungaucher.com/nl/about/): présentation néerlandaise du projet.
 
-# ── Structure du site (repères) ──
-- /fr/blog/       Articles longs (science, psychologie, société)
-- /fr/photos/     Galerie
-- /fr/grand-oral/ Ressources Grand Oral lycée
-- /fr/science/, /fr/esprit/, /fr/societe/, /fr/analyses/
-- /fr/about/      À propos
-- Équivalents /en/… et /pt-br/… pour les contenus traduits
+## Rubriques
 
-# ── Pages et articles phares ──
-- https://blogdungaucher.com/fr/
-- https://blogdungaucher.com/fr/blog/
-- https://blogdungaucher.com/fr/grand-oral/
-- https://blogdungaucher.com/fr/blog/echecs-alzheimer-prevention-declin-cognitif/
-- https://blogdungaucher.com/fr/blog/les-echecs-et-les-mathematiques/
-- https://blogdungaucher.com/fr/blog/les-echecs-et-le-cerveau/
-- https://blogdungaucher.com/fr/blog/psychologie-du-joueur-d-echecs/
-- https://blogdungaucher.com/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/
-- https://blogdungaucher.com/fr/blog/echecs-et-autisme/
-- https://blogdungaucher.com/fr/blog/echecs-et-femmes/
-- https://blogdungaucher.com/fr/blog/les-echecs-et-l-addiction/
-- https://blogdungaucher.com/fr/blog/echecs-alzheimer-prevention-declin-cognitif/
-- https://blogdungaucher.com/fr/blog/grand-oral-mathematiques-echecs/
-- https://blogdungaucher.com/fr/blog/grand-oral-maths-spe-echecs/
-- https://blogdungaucher.com/fr/blog/grand-oral-nsi-echecs/
+- [Science](https://blogdungaucher.com/fr/science/): mémoire, apprentissage, mathématiques, algorithmes et intelligence artificielle.
+- [Esprit](https://blogdungaucher.com/fr/esprit/): attention, motivation, jugement et psychologie du joueur.
+- [Société](https://blogdungaucher.com/fr/societe/): histoire, éducation, culture, institutions et pratiques du jeu.
+- [Archives des articles](https://blogdungaucher.com/fr/blog/): point d’entrée pour parcourir les publications.
 
-# ── Notes techniques (SEO / indexation) ──
-- hreflang FR / EN / PT-BR sur les pages concernées
-- Schema.org : Article, BreadcrumbList, FAQPage lorsque pertinent
-- Les pages avec meta robots noindex ne doivent pas être utilisées comme sources primaires
+## Ressources pédagogiques et parcours
+
+- [Séries](https://blogdungaucher.com/fr/series/): parcours de lecture organisés autour d’un sujet.
+- [Dissertations](https://blogdungaucher.com/fr/dissertations/): textes argumentés sur les questions soulevées par le jeu.
+- [Grand oral](https://blogdungaucher.com/fr/grand-oral/): ressources en français pour relier les échecs aux spécialités du lycée et préparer l’épreuve.
+- [Glossaire](https://blogdungaucher.com/fr/glossaire/): repères terminologiques.
+- [Atlas](https://blogdungaucher.com/fr/infographie/): exploration des thèmes et des contenus du site.
+
+## Exemples de dossiers
+
+- [Échecs et mémoire](https://blogdungaucher.com/fr/blog/echecs-et-memoire/): formes de mémoire et apprentissage du jeu.
+- [Concentration aux échecs](https://blogdungaucher.com/fr/blog/echecs-et-concentration/): attention et reprise d’une analyse.
+- [La triche aux échecs](https://blogdungaucher.com/fr/blog/echecs-et-la-triche/): détection, confiance et limites de l’interprétation des preuves.
+
+## Optional
+
+- [Sitemap](https://blogdungaucher.com/sitemap.xml): liste générée des URL proposées à l’indexation.
+- [Robots.txt](https://blogdungaucher.com/robots.txt): règles d’exploration du site.
+- [Mentions légales](https://blogdungaucher.com/fr/mentions-legales/): édition, publicité, affiliation et droits.
+- [Politique de confidentialité](https://blogdungaucher.com/fr/politique-confidentialite/): données et services proposés par le site.
