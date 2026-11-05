@@ -1267,3 +1267,18 @@ html.focus-mode .article-aside {
 html.focus-mode .article-aside:hover {
   opacity: 1;
 }
+
+
+/* Legible form controls and comfortable tap targets on phones/tablets. */
+@media (max-width: 960px) {
+  :root body :is(input[type="text"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"], input[type="number"], textarea, select):not([type="hidden"]) {
+    font-size: 16px;
+    min-height: 44px;
+  }
+  :root body .oral-shortcuts a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+}

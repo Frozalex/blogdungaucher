@@ -93,3 +93,9 @@
   :root body:has(article.article-page) { background: #fff; }
   :root article.article-page .hero-title span { background: transparent; }
 }
+
+
+/* Comfortable touch target for the article video text summary. */
+@media(max-width:960px) {
+  :root article.article-page .article-video__transcript summary { min-height:44px; padding-top:.65rem; padding-bottom:.65rem; }
+}

@@ -282,10 +282,19 @@ for (const h of headings) {
     transform: rotate(180deg);
   }
 
+  .toc-mobile .toc-link {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding-top: .65rem;
+    padding-bottom: .65rem;
+  }
+
   .toc-mobile__panel {
     padding: 0.5rem 1.1rem 1rem;
     border-top: 1px solid var(--border-soft);
-    max-height: 60vh;
+    max-height: 60dvh;
+    overscroll-behavior: contain;
     overflow-y: auto;
   }
 
