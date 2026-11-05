@@ -1,10 +1,10 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import EditorialLocaleMasthead from "../../../components/EditorialLocaleMasthead.astro";
 import EditorialArticle from "../../../components/EditorialArticle.astro";
 import { buildBreadcrumbJsonLd, buildPersonJsonLd, filterPostsForLang, getAllPosts, getPostSlug } from "../../../utils/blog";
 import { NL_LAUNCH_DATE } from "../../../data/site";
 import "../../../styles/editorial-resources.css";
+import "../../../styles/editorial-about.css";
 // Deze pagina is op verzoek al vóór de algemene Nederlandstalige lancering beschikbaar.
 const nlLive = new Date() >= NL_LAUNCH_DATE;
 const readingLang = nlLive ? "nl" : "en";
@@ -14,11 +14,11 @@ const starts = ["echecs-et-memoire", "echecs-et-concentration", "echecs-et-la-tr
   const post = posts.find(p => getPostSlug(p) === slug);
   return post ? [post] : [];
 });
-const sections = [{"id": "achtergrond", "label": "Mijn achtergrond"}, {"id": "invalshoek", "label": "Redactionele koers"}, {"id": "lezen", "label": "Lezen en ontdekken"}, {"id": "werkwijze", "label": "Onderzoek en schrijven"}, {"id": "correcties", "label": "Uitwisseling en correcties"}, {"id": "onafhankelijkheid", "label": "Onafhankelijkheid en financiering"}];
+const sections = [{"id": "invalshoek", "label": "Redactionele koers"}, {"id": "werkwijze", "label": "Werkwijze en bronnen"}, {"id": "lezen", "label": "Leesmateriaal"}, {"id": "onafhankelijkheid", "label": "Onafhankelijkheid"}, {"id": "achtergrond", "label": "De auteur"}, {"id": "correcties", "label": "Correcties en contact"}];
 ---
 <BaseLayout
   title="Over het blog: het project en de werkwijze | Blog van een Linkshandige"
-  description="Maak kennis met Le_Gaucher en de redactionele aanpak van een persoonlijk schaakblog over wetenschap, psychologie en samenleving, vanuit Guadeloupe."
+  description="Over Blog van een Linkshandige: redactionele koers, onderzoeksmethode, leesmateriaal, onafhankelijkheid en informatie over de auteur."
   canonicalPath="/nl/about/"
   lang="nl"
   frPath="/fr/about/"
@@ -30,165 +30,120 @@ const sections = [{"id": "achtergrond", "label": "Mijn achtergrond"}, {"id": "in
     buildPersonJsonLd("nl"),
   ]}
 >
-  <article class="resource-page"><div class="container">
-    <header class="resource-header">
-      {nlLive ? <EditorialLocaleMasthead lang="nl" active="about" /> : <>
-        <div class="resource-masthead"><a href="/nl/about/"><img src="/images/logo.svg" alt="" width="22" height="31" />Blog van een Linkshandige<span>.</span></a><span>Een andere kijk op schaken</span></div>
-        <nav class="resource-nav" aria-label="Het blog en zijn artikelen"><a href="/en/" hreflang="en">Start (Engels)</a><a href="/en/blog/" hreflang="en">Artikelen (Engels)</a><a href="/en/recherche/" hreflang="en">Zoeken (Engels)</a><a href="/nl/about/" aria-current="page">Over het blog</a></nav>
-      </>}
-      <div class="resource-heading"><span class="resource-kicker">Over het blog · Het project en de auteur</span><h1>{"Schaken begrijpen.\nJe blik verbreden."}</h1><p>Schaken is een spel, een onderwerp van onderzoek en een culturele praktijk. Blog van een Linkshandige onderzoekt wat die kanten met elkaar verbindt: hoe we leren, beslissen en samen spelen.</p></div>
+  <article class="resource-page about-page-pro"><div class="container">
+    <header class="about-hero-pro">
+      <div class="about-hero-copy"><span class="resource-kicker">Over · De publicatie</span><h1>Een onafhankelijke publicatie.<br />Schaken in perspectief.</h1><p>Blog van een Linkshandige is een gespecialiseerde publicatie over schaken op het snijvlak van wetenschap, psychologie en samenleving. Het doel is toegankelijke, verdiepende analyses te bieden, onderbouwd met herleidbare bronnen.</p></div>
+      <div class="about-hero-mark" aria-hidden="true"><img src="/images/logo.svg" alt="" width="112" height="160" /></div>
     </header>
-    <p class="about-launch-note">{nlLive ? "De rubrieken, het artikelenarchief en de drie leestips op deze pagina zijn beschikbaar in het Nederlands. Andere bronnen hebben een eigen taalaanduiding." : "Deze pagina is alvast beschikbaar in het Nederlands. De Nederlandstalige rubrieken en artikelen volgen vanaf 1 november 2026. Tot die tijd verwijzen de drie rubrieken, het archief, de zoekfunctie en de leestips hieronder naar de Engelse editie. Franstalige bronnen worden afzonderlijk aangeduid."}</p>
+    <dl class="about-summary"><div><dt>Profiel</dt><dd>Onafhankelijke vakpublicatie</dd></div><div><dt>Thema’s</dt><dd>Wetenschap, denken en samenleving</dd></div><div><dt>Toegang</dt><dd>Vrij toegankelijke artikelen</dd></div></dl>
     <div class="about-layout">
       <div class="about-prose">
-        <section id="achtergrond" aria-labelledby="achtergrond-title">
-          <span class="resource-kicker">01 · Mijn achtergrond</span>
-          <h2 id="achtergrond-title">Een schaker, veel vragen, een eigen blog.</h2>
-          <p>Ik schrijf onder de naam <strong>Le_Gaucher</strong>. Ik ben schaker en informaticastudent en woon in Le Gosier, op Guadeloupe. Dit blog is een persoonlijk project: ik verzorg de teksten, bepaal de redactionele koers en ontwikkel de website.</p>
-<p>Op mijn zestiende werd ik gevraagd een schaakclub te leiden. Ik had nog veel te leren. Ik ging op zoek naar informatie, las en probeerde te begrijpen waardoor een schaker vooruitgaat. Hoe leg je een idee uit? Hoe kom je van een stelling herkennen tot een stelling begrijpen?</p>
-<p>Die vragen gingen al snel verder dan openingen en combinaties. Waarom blijven sommige stellingen in ons geheugen hangen? Wat gebeurt er met ons oordeel onder druk? Hoe kan een spel iets vertellen over een tijdperk, een cultuur of een manier van denken?</p>
-<p>Ik schreef eerst op Chess.com, voordat ik een eigen plek opbouwde. Blog van een Linkshandige ontstond uit de wens om vragen grondig te onderzoeken, met de vrijheid om vakgebieden te verbinden en de tijd te nemen voor uitleg.</p>
-<p class="about-personal"><strong>Waarom “Linkshandige”?</strong> Omdat ik dat ben. “Gaucher” betekent linkshandig in het Frans. De naam is persoonlijk; mijn kijk op het spel ontwikkelt zich door te lezen, te schaken en van gedachten te wisselen.</p>
-        </section>
         <section id="invalshoek" aria-labelledby="invalshoek-title">
-          <span class="resource-kicker">02 · Redactionele koers</span>
+          <span class="resource-kicker">01 · Redactionele koers</span>
           <h2 id="invalshoek-title">Drie invalshoeken, één schaakbord.</h2>
-          <p>Een schaakpartij vraagt om berekening, geheugen en het omgaan met emoties. Ze vindt ook plaats in een sociale omgeving: een club, een school, een onlineplatform of een toernooi. Die veelzijdigheid onderzoek ik in drie rubrieken die elkaar aanvullen.</p>
+          <p>Een schaakpartij vraagt om berekening, geheugen en het omgaan met emoties. Ze vindt ook plaats in een sociale omgeving: een club, een school, een onlineplatform of een toernooi. Die veelzijdigheid komt aan bod in drie rubrieken die elkaar aanvullen.</p>
 <div class="about-lenses">
-<div><h3><a href={`${readingRoot}/science/`}>Wetenschap <span aria-hidden="true">↗</span></a></h3><p>Begrijpen hoe het spel werkt via geheugen, leren, wiskunde, algoritmen en kunstmatige intelligentie. Het doel is uit te leggen hoe een resultaat tot stand komt en wat je daaruit werkelijk over schaken kunt afleiden.</p></div>
-<div><h3><a href={`${readingRoot}/esprit/`}>Denken en gedrag <span aria-hidden="true">↗</span></a></h3><p>De psychologie van de schaker onderzoeken: aandacht, zelfvertrouwen, denkfouten, motivatie en de omgang met verlies. Deze begrippen helpen om je eigen spel en ontwikkeling te overdenken, met duidelijke grenzen aan wat je er in de praktijk uit kunt halen.</p></div>
+<div><h3><a href={`${readingRoot}/science/`}>Wetenschap <span aria-hidden="true">↗</span></a></h3><p>Begrijpen hoe het spel werkt via geheugen, leren, wiskunde, algoritmen en kunstmatige intelligentie. Het doel is uit te leggen hoe een resultaat tot stand komt en welke conclusies daaruit over schaken volgen.</p></div>
+<div><h3><a href={`${readingRoot}/esprit/`}>Denken en gedrag <span aria-hidden="true">↗</span></a></h3><p>De psychologie van de schaker onderzoeken: aandacht, zelfvertrouwen, denkfouten, motivatie en de omgang met verlies. Deze begrippen ondersteunen de analyse van schaakpraktijk en ontwikkeling, met duidelijke grenzen aan de praktische toepassingen.</p></div>
 <div><h3><a href={`${readingRoot}/societe/`}>Samenleving <span aria-hidden="true">↗</span></a></h3><p>Schaken in de wereld plaatsen: geschiedenis, onderwijs, ongelijkheid, geld, cultuur en vertrouwen in de competitie. Het spel biedt een ingang om de instituties en denkbeelden eromheen te begrijpen.</p></div>
 </div>
-<p>De rode draad blijft dezelfde: beginnen met een concrete vraag, de nodige begrippen uitleggen, een redenering opbouwen en die aan voorbeelden toetsen. Mijn ambitie is om verdiepende artikelen te maken waarnaar je kunt terugkeren om een onderwerp te begrijpen en zelf verder te zoeken.</p>
-        </section>
-        <section id="lezen" aria-labelledby="lezen-title">
-          <span class="resource-kicker">03 · Lezen en ontdekken</span>
-          <h2 id="lezen-title">Verschillende manieren om verder te komen.</h2>
-          <p>Je kunt dit blog lezen uit nieuwsgierigheid, om na te denken over je eigen schaakpraktijk of om een schoolopdracht voor te bereiden. De verschillende vormen sluiten daarbij aan, zonder te veronderstellen dat je alle begrippen al kent.</p>
-<dl class="about-formats">
-<div><dt><a href={`${readingRoot}/blog/`}>Het artikelenarchief</a></dt><dd>Blader door de gepubliceerde artikelen of gebruik de <a href={`${readingRoot}/recherche/`}>zoekfunctie</a> om een begrip, vraag of onderwerp te vinden dat meerdere rubrieken raakt. De taalaanduiding bovenaan deze pagina vermeldt in welke taal deze links beschikbaar zijn.</dd></div>
-<div><dt><a href="/en/series/" hreflang="en">De reeksen in het Engels</a></dt><dd>Samenhangende artikelen die een onderwerp stap voor stap uitwerken. De Engelstalige reeks over schaakpsychologie behandelt onder meer geheugen, motivatie, oordeelsvorming en sociale invloed. Er is nog geen Nederlandstalige overzichtspagina voor de reeksen.</dd></div>
-<div><dt><a href="/fr/dissertations/" hreflang="fr">De essays in het Frans</a></dt><dd>Uitgewerkte betogen over winnen, de waarde van een schaker en gelijkheid in het spel. Ze ontwikkelen hun argumenten via tegenwerpingen en begripsmatige onderscheidingen. Deze essays zijn beschikbaar in het Frans.</dd></div>
-<div><dt><a href="/fr/grand-oral/" hreflang="fr">De Grand oral-gidsen in het Frans</a></dt><dd>Onderwerpen en hulpmiddelen die schaken verbinden met schoolvakken voor het mondelinge eindexamen van het Franse baccalauréat. Bij de voorbereiding op mijn eigen examen zocht ik naar die verbanden. De gidsen helpen leerlingen een eigen betoog te ontwikkelen en zich voor te bereiden op vragen van de examencommissie; ze zijn beschikbaar in het Frans.</dd></div>
-<div><dt><a href="/fr/glossaire/" hreflang="fr">De begrippenlijst</a> en <a href="/fr/infographie/" hreflang="fr">de Atlas</a> <span class="about-language-note">(in het Frans)</span></dt><dd>Naslagpunten om een begrip op te zoeken, de thema’s van het blog te verkennen en je volgende artikel te kiezen. Voor het doorzoeken van de beschikbare artikelen kun je ook het archief en de zoekfunctie hierboven gebruiken.</dd></div>
-</dl>
+<p>De rode draad blijft dezelfde: beginnen met een concrete vraag, de nodige begrippen uitleggen, een redenering opbouwen en die aan voorbeelden toetsen. De dossiers zijn bedoeld als naslagmateriaal om een onderwerp te begrijpen, een uitleg opnieuw te raadplegen en verder onderzoek te doen aan de hand van de aangehaalde publicaties.</p>
+        <h3>Een specialisatie die begint bij vragen</h3>
+<p>Een dossier begint met een vraag waarvoor meer nodig is dan een definitie. Een artikel over geheugen moet bijvoorbeeld onderscheid maken tussen het onthouden van een zettenreeks, het herkennen van een patroon en het begrijpen van een plan. Die verschillen bepalen welke uitleg en voorbeelden bruikbaar zijn en welke gevolgen daaruit voor het leren kunnen volgen.</p>
+<p>De drie rubrieken maken het mogelijk hetzelfde onderwerp op verschillende niveaus te onderzoeken. Valsspelen kan worden benaderd via detectiemiddelen, beslissingen van spelers of vertrouwen in toernooien. Elke behandeling moet de gekozen vraag afbakenen, ongefundeerde algemene conclusies vermijden en de relevante verbanden tussen vakgebieden duidelijk maken.</p>
         </section>
         <section id="werkwijze" aria-labelledby="werkwijze-title">
-          <span class="resource-kicker">04 · Onderzoek en schrijven</span>
+          <span class="resource-kicker">02 · Werkwijze en bronnen</span>
           <h2 id="werkwijze-title">Van bronnen naar een redenering.</h2>
-          <p>Ik schrijf vanuit mijn positie als schaker en informaticastudent. De geloofwaardigheid van een artikel moet te beoordelen zijn aan de hand van de bronnen, de uitleg en de kwaliteit van de voorbeelden. De volgende uitgangspunten geven richting aan dat werk.</p>
+          <p>De redactionele aanpak combineert bronnenonderzoek, uitleg van onderzoeksresultaten en schaakanalyse. De geloofwaardigheid van een artikel moet te beoordelen zijn aan de bronnen, de samenhang van de redenering en de kwaliteit van de voorbeelden. Vijf uitgangspunten geven richting aan dat werk.</p>
 <ol class="about-method">
-<li><strong>De vraag afbakenen.</strong><span>Een ervaring tijdens het schaken, een vaak herhaalde bewering of een onderzoeksresultaat kan aanleiding geven tot een onderwerp. Eerst bepaal ik welke vraag beantwoord moet worden en welke begrippen nodig zijn om die te begrijpen.</span></li>
-<li><strong>Teruggaan naar de publicaties.</strong><span>Ik zoek de studies en documenten achter een bewering op. Zoekhulpmiddelen, waaronder Consensus AI, helpen me aanknopingspunten te vinden; ze vervangen het bestuderen van de bronnen niet. Een samenvatting of catalogusvermelding geeft niet dezelfde toegang tot de resultaten als de volledige tekst.</span></li>
-<li><strong>Uitleggen wat de resultaten aantonen.</strong><span>Een correlatie, een experiment en een persoonlijke ervaring beantwoorden verschillende vragen. Ik probeer de onderzochte groep, de context en de relevante beperkingen duidelijk te maken. Ook de stap van een algemeen onderzoeksresultaat naar schaakadvies vraagt om een onderbouwing.</span></li>
+<li><strong>De vraag afbakenen.</strong><span>Een ervaring tijdens het schaken, een vaak herhaalde bewering of een onderzoeksresultaat kan aanleiding geven tot een onderwerp. De voorbereiding bepaalt welke vraag beantwoord moet worden en welke begrippen nodig zijn om die te begrijpen.</span></li>
+<li><strong>Teruggaan naar de publicaties.</strong><span>Het onderzoek richt zich op de studies en documenten achter een bewering. Zoekhulpmiddelen, waaronder Consensus AI, helpen aanknopingspunten te vinden; ze vervangen het bestuderen van de bronnen niet. Een samenvatting of catalogusvermelding geeft niet dezelfde toegang tot de resultaten als de volledige tekst.</span></li>
+<li><strong>Uitleggen wat de resultaten aantonen.</strong><span>Een correlatie, een experiment en een persoonlijke ervaring beantwoorden verschillende vragen. De analyse moet de onderzochte groep, de context en de relevante beperkingen duidelijk maken. Ook de stap van een algemeen onderzoeksresultaat naar schaakadvies vraagt om een onderbouwing.</span></li>
 <li><strong>Ideeën aan het spel toetsen.</strong><span>Voorbeelden, stellingen en varianten dienen om een mechanisme uit te leggen of een idee te onderzoeken. Een didactisch voorbeeld dat voor het artikel is bedacht, moet als zodanig herkenbaar zijn. Een persoonlijke aanbeveling moet te onderscheiden zijn van een onderbouwde onderzoeksbevinding.</span></li>
-<li><strong>De redenering controleerbaar maken.</strong><span>Verwijzingen moeten je in staat stellen de besproken publicaties terug te vinden. Het doel is dat je de uitleg kunt volgen, de grenzen ervan kunt onderzoeken en de bronnen kunt raadplegen om zelf een oordeel te vormen.</span></li>
+<li><strong>De redenering controleerbaar maken.</strong><span>Verwijzingen moeten de besproken publicaties vindbaar maken. De uitleg, de grenzen ervan en de oorspronkelijke bronnen moeten voldoende aanknopingspunten bieden om het argument zelfstandig te beoordelen.</span></li>
 </ol>
+        <h3>Bronnen lezen en beweringen herleiden</h3>
+<p>Een bibliografische verwijzing moet duidelijk maken welk document wordt besproken en waar het te vinden is. De interpretatie hangt vervolgens af van het materiaal dat daadwerkelijk toegankelijk is: een catalogusvermelding bevestigt het bestaan van een publicatie, terwijl een samenvatting een overzicht van de resultaten geeft. Een gedetailleerde beoordeling van een onderzoeksopzet, meting of analyse vereist toegang tot de betreffende passages. De redactionele aanpak verlangt dat deze raadplegingsniveaus worden onderscheiden.</p>
+<p>Een studie vraagt ook om context: deelnemers, uitgevoerde taak, observatieduur en gemeten uitkomsten. Een resultaat uit één activiteit rechtvaardigt op zichzelf geen algemene belofte van vooruitgang. De uitleg moet de redenering zichtbaar maken die het onderzoek verbindt met de behandelde schaakvraag.</p>
+<h3>Voorbeelden, berekeningen en interpretaties</h3>
+<p>Een variant, een engine-evaluatie of een rekenvoorbeeld ondersteunt een bepaalde uitleg. De controle betreft legale zetten, rekenaannames en de samenhang tussen voorbeeld en conclusie. Een stelling die voor de uitleg is bedacht, mag niet als historische partij worden gepresenteerd. Ook een didactisch voorstel moet herkenbaar blijven als voorgestelde toepassing, met bijbehorende voorwaarden en beperkingen.</p>
         </section>
-        <section id="correcties" aria-labelledby="correcties-title">
-          <span class="resource-kicker">05 · Uitwisseling en correcties</span>
-          <h2 id="correcties-title">Een tekst kan altijd beter.</h2>
-          <p>Dit blog groeit met de tijd. Een sterkere bron, een tegenvoorbeeld of een rekenfout kan aanleiding zijn om een uitleg te herzien. Ik streef ernaar fouten te corrigeren en artikelen te verdiepen, met behoud van wat helpt om het onderwerp te begrijpen.</p>
-<p>Wil je een probleem melden? Stuur dan de link naar het artikel, de betreffende passage en, als je die hebt, een bron of schaakvariant waarmee het punt gecontroleerd kan worden. Een beargumenteerd bezwaar is ook een waardevolle bijdrage: het helpt duidelijk te maken wat een tekst moet aantonen.</p>
-<p>Je kunt ook een onderzoeksvraag voorstellen, een bron delen of contact opnemen over een onderwijsproject via de <a href={nlLive ? "/nl/contact/" : "/en/contact/"}>contactpagina{!nlLive && " (in het Engels)"}</a>. Rechtstreeks mailen kan altijd via het adres onderaan deze pagina.</p>
+        <section id="lezen" aria-labelledby="lezen-title">
+          <span class="resource-kicker">03 · Leesmateriaal</span>
+          <h2 id="lezen-title">Verschillende manieren om verder te komen.</h2>
+          <p>De publicatie richt zich op schakers, lezers met belangstelling voor de wetenschap en cultuur van het spel, leerlingen en docenten. De verschillende vormen ondersteunen kennismaking met een begrip, analyse van schaakpraktijk, bronnenonderzoek en voorbereiding op schoolopdrachten.</p>
+<dl class="about-formats">
+<div><dt><a href={`${readingRoot}/blog/`}>Het artikelenarchief</a></dt><dd>Blader door de gepubliceerde artikelen of gebruik de <a href={`${readingRoot}/recherche/`}>zoekfunctie</a> om een begrip, vraag of onderwerp te vinden dat meerdere rubrieken raakt. Rubrieken en artikelen zijn beschikbaar in het Nederlands; anderstalige bronnen worden bij de betreffende link aangeduid.</dd></div>
+<div><dt><a href="/en/series/" hreflang="en">De reeksen in het Engels</a></dt><dd>Samenhangende artikelen die een onderwerp stap voor stap uitwerken. De Engelstalige reeks over schaakpsychologie behandelt onder meer geheugen, motivatie, oordeelsvorming en sociale invloed. Er is nog geen Nederlandstalige overzichtspagina voor de reeksen.</dd></div>
+<div><dt><a href="/fr/dissertations/" hreflang="fr">De essays in het Frans</a></dt><dd>Uitgewerkte betogen over winnen, de waarde van een schaker en gelijkheid in het spel. Ze ontwikkelen hun argumenten via tegenwerpingen en begripsmatige onderscheidingen. Deze essays zijn beschikbaar in het Frans.</dd></div>
+<div><dt><a href="/fr/grand-oral/" hreflang="fr">De Grand oral-gidsen in het Frans</a></dt><dd>Onderwerpen en hulpmiddelen die schaken verbinden met schoolvakken voor het mondelinge eindexamen van het Franse baccalauréat. Deze hulpmiddelen ontstonden uit werk tijdens de examenvoorbereiding van de auteur. De gidsen helpen leerlingen een eigen betoog te ontwikkelen en zich voor te bereiden op vragen van de examencommissie; ze zijn beschikbaar in het Frans.</dd></div>
+<div><dt><a href="/fr/glossaire/" hreflang="fr">De begrippenlijst</a> en <a href="/fr/infographie/" hreflang="fr">de Atlas</a> <span class="about-language-note">(in het Frans)</span></dt><dd>Naslagpunten om een begrip op te zoeken, de thema’s van het blog te verkennen en een volgend artikel te kiezen. Het archief en de zoekfunctie hierboven bieden ook toegang tot de beschikbare artikelen.</dd></div>
+</dl>
+        <h3>Vormen die elkaar aanvullen</h3>
+<p>Verdiepende artikelen behandelen een vraag in samenhang, reeksen bouwen begrip tussen meerdere teksten op en naslagmateriaal ondersteunt het terugzoeken van begrippen. Deze vormen kunnen worden gecombineerd: een definitie raadplegen vóór een dossier, een reeks volgen om kennis op te bouwen of na het lezen een specifieke bron opzoeken. Taalaanduidingen maken duidelijk welke hulpmiddelen in een andere editie beschikbaar zijn.</p>
+<p>In het onderwijs bieden de gidsen en essays mogelijke onderzoeksvragen, onderscheidingen en voorbeelden om te bestuderen. Het gebruik ervan vraagt om begrip van de redenering: aannames en verwijzingen controleren en de grenzen van een argument kunnen uitleggen. Voorbereidingsmateriaal moet zelfstandig werk en het gesprek met docenten of examinatoren ondersteunen.</p>
         </section>
         <section id="onafhankelijkheid" aria-labelledby="onafhankelijkheid-title">
-          <span class="resource-kicker">06 · Onafhankelijkheid en financiering</span>
-          <h2 id="onafhankelijkheid-title">Een persoonlijk project, vrij toegankelijk.</h2>
-          <p>Ik financier deze website zelf. De artikelen zijn gratis te lezen, zonder verplichte registratie. Ik kies de onderwerpen en blijf verantwoordelijk voor de gepubliceerde teksten.</p>
-<p>De website kan advertenties tonen. Sommige artikelen bevatten affiliatelinks, die op de betreffende plek worden vermeld: een aankoop via zo’n link kan mij een commissie opleveren, zonder extra kosten voor jou. Geen enkel artikel wordt in opdracht van een adverteerder geschreven, door een adverteerder beoordeeld of door een adverteerder betaald.</p>
+          <span class="resource-kicker">04 · Onafhankelijkheid</span>
+          <h2 id="onafhankelijkheid-title">Transparante financiering en vrije toegang.</h2>
+          <p>De website wordt gefinancierd door de uitgever. Artikelen zijn gratis te lezen, zonder verplichte registratie. Onderwerpkeuze, het schrijven en de verantwoordelijkheid voor de gepubliceerde teksten berusten bij de auteur.</p>
+<p>De website kan advertenties tonen. Sommige artikelen bevatten affiliatelinks, die op de betreffende plek worden vermeld: een aankoop via zo’n link kan een commissie opleveren voor de uitgever, zonder extra kosten voor de koper. Geen enkel artikel wordt in opdracht van een adverteerder geschreven, door een adverteerder beoordeeld of door een adverteerder betaald.</p>
 <p class="about-legal">De <a href={nlLive ? "/nl/juridische-vermeldingen/" : "/en/legal-notice/"}>juridische informatie{!nlLive && " (in het Engels)"}</a> licht deze afspraken toe. Het <a href={nlLive ? "/nl/privacybeleid/" : "/en/privacy-policy/"}>privacybeleid{!nlLive && " (in het Engels)"}</a> beschrijft welke gegevens en diensten de website gebruikt.</p>
+        <h3>Financiering en redactionele inhoud onderscheiden</h3>
+<p>Een advertentie of commerciële link is geen bewijs voor de kwaliteit van een product of voor een feitelijke bewering. Een eventuele aanbeveling moet worden beoordeeld op de criteria in het artikel en de relevantie voor het onderwerp. Bronverwijzingen en aankooplinks hebben verschillende functies, die herkenbaar moeten blijven.</p>
+<p>Toegang tot artikelen staat los van facultatieve diensten, zoals het ontvangen van nieuwe publicaties. Inschrijving, gegevensverwerking en eventuele volgtechnologieën worden toegelicht in het privacybeleid. Het lezen van een dossier vereist geen instemming met een commerciële aanbeveling.</p>
         </section>
-        <div class="about-signature"><strong>Le_Gaucher</strong><span>Le Gosier, Guadeloupe</span></div>
+        <section id="achtergrond" aria-labelledby="achtergrond-title">
+          <span class="resource-kicker">05 · De auteur</span>
+          <h2 id="achtergrond-title">De auteur en het ontstaan van de publicatie.</h2>
+          <p><strong>Le_Gaucher</strong> is schaker en informaticastudent en woont in Le Gosier, op Guadeloupe. De auteur verzorgt de teksten, bepaalt de redactionele koers en ontwikkelt de website. De publicatie wordt zelfstandig uitgegeven onder dit pseudoniem.</p>
+<p>Een uitnodiging om op zestienjarige leeftijd een schaakclub te leiden vormde de aanleiding voor belangstelling voor schaakontwikkeling en kennisoverdracht. Een idee uitleggen, herkenning onderscheiden van begrip en het leerproces organiseren waren vragen die aan de basis van het project stonden.</p>
+<p>Die benadering breidde zich uit van openingen en combinaties naar het geheugen voor stellingen, oordeelsvorming onder druk, de geschiedenis van schaakpraktijken en culturele voorstellingen van het spel. Deze onderwerpen vormen nu de belangrijkste onderzoekslijnen van de publicatie.</p>
+<p>Na de eerste artikelen op Chess.com kreeg het project een eigen website. Die structuur maakt ruimte voor uitgebreide dossiers, verbanden tussen vakgebieden en zelfstandige keuzes over zowel de inhoud als de presentatie.</p>
+<p class="about-name"><strong>Waarom “Linkshandige”?</strong> De naam verwijst naar de linkshandigheid van de auteur. De analyses van de publicatie steunen op bronnen, redeneringen en het onderzoeken van verschillende standpunten.</p>
+        <p class="about-author-profile"><a href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">Openbaar Chess.com-profiel van de auteur ↗</a></p>
+        <h3>Herkenbare redactionele verantwoordelijkheid</h3>
+<p>Het project verbindt schrijven, bronnenonderzoek en het ontwerpen van de leesomgeving. De informaticastudie van de auteur biedt een ingang voor onderwerpen rond algoritmen, modellen en schaakengines; speelervaring voedt vragen over leren en schaakpraktijk. Die perspectieven sturen de onderwerpkeuze, terwijl beweringen onderbouwd moeten blijven door de aangehaalde bronnen en getoonde redeneringen.</p>
+<p>Publicatie onder een pseudoniem zorgt voor een vaste auteursnaam bij de artikelen en een aanspreekpunt voor vragen. De biografische gegevens plaatsen het ontstaan van het project in context; de inhoud zelf moet worden beoordeeld op nauwkeurigheid, argumentatie en de mogelijkheid om kennis te controleren.</p>
+        </section>
+        <section id="correcties" aria-labelledby="correcties-title">
+          <span class="resource-kicker">06 · Correcties en contact</span>
+          <h2 id="correcties-title">Inhoudelijke herziening en redactioneel contact.</h2>
+          <p>Dit blog groeit met de tijd. Een sterkere bron, een tegenvoorbeeld of een rekenfout kan aanleiding zijn om een uitleg te herzien. Herziening is gericht op het corrigeren van fouten en het verdiepen van artikelen, met behoud van uitleg die bijdraagt aan begrip.</p>
+<p>Een bruikbare foutmelding bevat de link naar het artikel, de betreffende passage en, waar mogelijk, een bron of schaakvariant waarmee het punt gecontroleerd kan worden. Een beargumenteerd bezwaar is ook een waardevolle bijdrage: het helpt duidelijk te maken wat een tekst moet aantonen.</p>
+<p>Voorstellen voor onderwerpen, aanvullende bronnen en vragen over onderwijsprojecten kunnen worden ingediend via de <a href={nlLive ? "/nl/contact/" : "/en/contact/"}>contactpagina{!nlLive && " (in het Engels)"}</a>. Rechtstreeks mailen kan altijd via het adres onderaan deze pagina.</p>
+        <h3>De aard van een melding verduidelijken</h3>
+<p>Een feitelijke fout, een onbereikbare link en een interpretatieverschil vragen om verschillende vormen van onderzoek. Een feit kan aan een document worden getoetst, een variant kan worden nagespeeld en een bezwaar kan aanleiding geven om aannames te verduidelijken of conclusies te bespreken. Dat onderscheid helpt om een melding bruikbaar te maken.</p>
+<p>Een correctieverzoek wordt duidelijker met voorgestelde tekst en een reden voor de wijziging. Bij een nieuwe bron of een onderwerpvoorstel helpen een concrete vraag, de beoogde doelgroep en beschikbare documenten om het voorstel te beoordelen. De uitwisseling is gericht op betere nauwkeurigheid, begrip en bruikbaarheid, zonder een discussie tot het vervangen van de ene mening door de andere te beperken.</p>
+        </section>
       </div>
       <aside class="author-note" aria-labelledby="author-title">
+        <nav aria-label="Op deze pagina">
+          <span class="resource-kicker">Op deze pagina</span>
+          {sections.map((section, index) => <a href={`#${section.id}`}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{section.label}</a>)}
+        </nav>
+        <div class="about-author-record">
         <img src="/images/logo.svg" alt="" width="66" height="92" />
         <span class="resource-kicker">De auteur</span>
         <h2 id="author-title">Le_Gaucher<span>.</span></h2>
         <p>Schaker.<br />Informaticastudent.<br />Auteur van Blog van een Linkshandige.</p>
         <dl>
           <div><dt>Vanuit</dt><dd>Le Gosier, Guadeloupe</dd></div>
-          <div><dt>Het project</dt><dd>Een persoonlijk blog over schaken.</dd></div>
+          <div><dt>Het project</dt><dd>Een onafhankelijke publicatie over schaken.</dd></div>
           <div><dt>De rode draad</dt><dd>Wetenschap, denken en samenleving.</dd></div>
         </dl>
-        <a class="resource-link" href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">Mijn Chess.com-profiel ↗<span class="resource-sr-only"> (opent in een nieuw tabblad)</span></a>
-        <nav aria-label="Op deze pagina">
-          <span class="resource-kicker">Op deze pagina</span>
-          {sections.map((section, index) => <a href={`#${section.id}`}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{section.label}</a>)}
-        </nav>
+        <a class="resource-link" href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">Chess.com-profiel ↗<span class="resource-sr-only"> (opent in een nieuw tabblad)</span></a>
+
         <a class="author-contact" href="mailto:contact@blogdungaucher.com">Neem contact op <span aria-hidden="true">↗</span></a>
+        </div>
       </aside>
     </div>
     {starts.length > 0 && <section class="resource-section" aria-labelledby="starts-title">
-      <div class="resource-section-head"><h2 id="starts-title">Maak kennis met het blog</h2><span>{nlLive ? "Drie artikelen, drie invalshoeken" : "Drie artikelen in het Engels"}</span></div>
-      <p class="about-starts-intro">Geheugen om het leren te begrijpen, concentratie om over je eigen spel na te denken en valsspelen om vertrouwen te onderzoeken: drie ingangen tot het project.{!nlLive && " Deze leestips zijn voorlopig Engelstalig."}</p>
+      <div class="resource-section-head"><h2 id="starts-title">Geselecteerde artikelen</h2><span>{nlLive ? "Drie artikelen, drie invalshoeken" : "Drie artikelen in het Engels"}</span></div>
+      <p class="about-starts-intro">Geheugen om het leren te begrijpen, concentratie om de schaakpraktijk te onderzoeken en valsspelen om vertrouwen te onderzoeken: drie ingangen tot het project.{!nlLive && " Deze leestips zijn voorlopig Engelstalig."}</p>
       <div class="about-starts">{starts.map(post => <EditorialArticle post={post} lang={readingLang} variant="feature" showImageCredit={true} />)}</div>
     </section>}
-    <div class="resource-end"><div><span class="resource-kicker">Het gesprek gaat verder</span><p>Een vraag, een correctie of een idee om uit te zoeken?</p></div><a class="resource-button" href="mailto:contact@blogdungaucher.com">Mail me <span aria-hidden="true">↗</span></a></div>
+    <div class="resource-end"><div><span class="resource-kicker">Redactioneel contact</span><p>Correcties, onderwerpvoorstellen en onderwijsprojecten.</p></div><a class="resource-button" href="mailto:contact@blogdungaucher.com">Contact opnemen <span aria-hidden="true">↗</span></a></div>
   </div></article>
 </BaseLayout>
-
-<style>
-  .about-layout { display:grid; grid-template-columns:minmax(0,2.1fr) minmax(0,1fr); gap:5rem; align-items:start; border-top:2px solid var(--text-main); padding-top:2rem; margin-bottom:3.5rem; }
-  .about-prose { max-width:47rem; min-width:0; }
-  .about-prose section { padding-bottom:2.5rem; scroll-margin-top:6rem; }
-  .about-prose section+section { border-top:1px solid var(--border-strong); padding-top:2rem; }
-  .about-prose h2 { font:600 1.85rem/1.2 var(--font-serif); letter-spacing:-.025em; margin:.7rem 0 1.2rem; text-wrap:pretty; }
-  .about-prose p { font-size:1rem; line-height:1.85; color:var(--text-muted); margin:0 0 1rem; }
-  .about-prose strong { color:var(--text-main); font-weight:600; }
-  .about-prose a { color:var(--green); text-decoration:underline; text-underline-offset:.2em; }
-  .about-prose a:hover { text-decoration-thickness:2px; }
-  .about-prose .about-personal { background:var(--bg-warm); border-left:3px solid var(--green); padding:1rem 1.25rem; margin:1.5rem 0 0; font-size:.92rem; }
-  .about-lenses { margin:1.5rem 0; border-top:1px solid var(--border-strong); }
-  .about-lenses>div { padding:1.1rem 0; border-bottom:1px solid var(--border-strong); }
-  .about-lenses h3 { margin:0 0 .5rem; font:600 1.35rem/1.3 var(--font-serif); }
-  .about-lenses h3 a { display:flex; justify-content:space-between; align-items:center; text-decoration:none; }
-  .about-lenses h3 span { font-family:var(--font-body); font-size:.9rem; }
-  .about-lenses p { margin:0; font-size:.94rem; line-height:1.75; }
-  .about-formats { margin:1.5rem 0 0; }
-  .about-formats>div { padding:1.1rem 0; border-top:1px solid var(--border-strong); }
-  .about-language-note { font-weight:400; color:var(--text-dim); }
-  .about-launch-note { margin:0 0 2rem; padding:1rem 1.25rem; background:var(--bg-warm); border-left:3px solid var(--green); color:var(--text-muted); font-size:.9rem; line-height:1.75; }
-  .about-formats dt { font-size:.96rem; font-weight:600; }
-  .about-formats dd { margin:.55rem 0 0; color:var(--text-muted); font-size:.94rem; line-height:1.75; }
-  .about-method { padding:0; list-style:none; counter-reset:method; margin:1.5rem 0 0; }
-  .about-method li { display:grid; grid-template-columns:1.4rem 1fr; gap:.4rem 1rem; padding:1.15rem 0; border-top:1px solid var(--border-strong); counter-increment:method; }
-  .about-method li::before { content:counter(method,decimal-leading-zero); font-size:.75rem; color:var(--green); grid-row:span 2; padding-top:.15rem; }
-  .about-method strong { font-size:.96rem; }
-  .about-method span { font-size:.94rem; line-height:1.75; color:var(--text-muted); }
-  .about-prose .about-legal { font-size:.87rem; }
-  .about-signature { display:flex; flex-direction:column; gap:.35rem; }
-  .about-signature strong { font:500 1.55rem var(--font-serif); }
-  .about-signature span { font-size:.78rem; color:var(--text-dim); }
-  .author-note { background:var(--bg-warm); padding:2rem; border-top:3px solid var(--green); }
-  .author-note>img { display:block; margin-bottom:1.5rem; width:56px; height:78px; }
-  :global([data-theme="dark"]) .author-note>img { filter:invert(1); }
-  .author-note h2 { font:600 1.8rem var(--font-serif); letter-spacing:-.035em; margin:.6rem 0 1rem; }
-  .author-note h2 span { color:var(--green); }
-  .author-note p { font-size:.93rem; line-height:1.8; color:var(--text-muted); margin:0 0 1.5rem; }
-  .author-note dl { margin:0 0 1.25rem; }
-  .author-note dl>div { padding:.75rem 0; border-top:1px solid var(--border-strong); }
-  .author-note dt { font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--text-dim); }
-  .author-note dd { margin:.3rem 0 0; font-size:.86rem; line-height:1.6; }
-  .author-note nav { display:flex; flex-direction:column; gap:.9rem; border-top:1px solid var(--border-strong); margin-top:1.5rem; padding-top:1.25rem; }
-  .author-note nav a { display:flex; gap:.75rem; font-size:.8rem; color:var(--text-muted); }
-  .author-note nav a>span { color:var(--green); font-size:.68rem; padding-top:.12rem; }
-  .author-note nav a:hover { color:var(--green); }
-  .author-contact { display:flex; justify-content:space-between; border-top:1px solid var(--border-strong); margin-top:1.5rem; padding-top:1rem; color:var(--green); font-size:.85rem; font-weight:600; }
-  .about-starts-intro { max-width:65ch; color:var(--text-muted); font-size:.95rem; line-height:1.75; margin:0 0 1.75rem; }
-  .about-starts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2rem; }
-  .about-starts>:global(article) { min-width:0; }
-  @media(min-width:900px) and (min-height:1000px) { .author-note { position:sticky; top:5rem; } }
-  @media(max-width:899px) { .about-layout { gap:2rem; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); } .author-note { padding:1.25rem; } }
-  @media(max-width:639px) {
-    .about-layout { grid-template-columns:1fr; gap:2rem; }
-    .author-note { grid-row:1; }
-    .author-note>img { float:right; width:40px; height:56px; margin:0 0 1rem 1rem; }
-    .author-note p { margin-bottom:1rem; }
-    .author-note dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 1rem; }
-    .author-note dl>div:last-child { grid-column:1 / -1; }
-    .author-note nav { gap:.8rem; }
-    .about-starts { grid-template-columns:1fr; gap:1.75rem; }
-    .about-prose h2 { font-size:1.65rem; }
-  }
-</style>

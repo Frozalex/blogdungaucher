@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import EditorialLocaleMasthead from "../../../components/EditorialLocaleMasthead.astro";
 import EditorialArticle from "../../../components/EditorialArticle.astro";
 import { buildBreadcrumbJsonLd, buildPersonJsonLd, filterPostsForLang, getAllPosts, getPostSlug } from "../../../utils/blog";
 import "../../../styles/editorial-resources.css";
+import "../../../styles/editorial-about.css";
 import { PT_BR_LAUNCH_DATE } from "../../../data/site";
 if (new Date() < PT_BR_LAUNCH_DATE) return Astro.redirect("/fr/about/", 302);
 const lang = "pt-br";
@@ -12,11 +12,11 @@ const starts = ["echecs-et-memoire", "echecs-et-concentration", "echecs-et-la-tr
   const post = posts.find(p => getPostSlug(p) === slug);
   return post ? [post] : [];
 });
-const sections = [{"id": "trajetoria", "label": "Minha trajetória"}, {"id": "olhar", "label": "Proposta editorial"}, {"id": "leituras", "label": "Leituras e recursos"}, {"id": "metodo", "label": "Pesquisa e escrita"}, {"id": "correcoes", "label": "Diálogo e correções"}, {"id": "independencia", "label": "Independência e financiamento"}];
+const sections = [{"id": "olhar", "label": "Proposta editorial"}, {"id": "metodo", "label": "Método e fontes"}, {"id": "leituras", "label": "Recursos"}, {"id": "independencia", "label": "Independência"}, {"id": "trajetoria", "label": "O autor"}, {"id": "correcoes", "label": "Correções e contato"}];
 ---
 <BaseLayout
   title="Sobre: o projeto e a abordagem | Blog de um Canhoto"
-  description="Conheça Le_Gaucher e a proposta editorial do blog: explorar o xadrez pela ciência, pela psicologia e pela sociedade, a partir de Guadalupe."
+  description="Sobre o Blog de um Canhoto: proposta editorial, método de pesquisa, recursos, independência e informações sobre o autor."
   canonicalPath="/pt-br/about/"
   lang={lang}
   frPath="/fr/about/"
@@ -27,160 +27,120 @@ const sections = [{"id": "trajetoria", "label": "Minha trajetória"}, {"id": "ol
     buildPersonJsonLd(lang),
   ]}
 >
-  <article class="resource-page"><div class="container">
-    <header class="resource-header">
-      <EditorialLocaleMasthead lang={lang} active="about" />
-      <div class="resource-heading"><span class="resource-kicker">Sobre · O projeto e seu autor</span><h1>{"Entender o xadrez.\nAmpliar o olhar."}</h1><p>O xadrez é um jogo, um objeto de pesquisa e uma prática cultural. O Blog de um Canhoto explora o que conecta essas dimensões: a forma como aprendemos, tomamos decisões e jogamos juntos.</p></div>
+  <article class="resource-page about-page-pro"><div class="container">
+    <header class="about-hero-pro">
+      <div class="about-hero-copy"><span class="resource-kicker">Sobre · A publicação</span><h1>Uma publicação independente.<br />O xadrez em perspectiva.</h1><p>O Blog de um Canhoto é uma publicação especializada em xadrez, na interseção entre ciência, psicologia e sociedade. Sua proposta é oferecer análises aprofundadas e acessíveis, fundamentadas em fontes identificáveis.</p></div>
+      <div class="about-hero-mark" aria-hidden="true"><img src="/images/logo.svg" alt="" width="112" height="160" /></div>
     </header>
+    <dl class="about-summary"><div><dt>Proposta</dt><dd>Publicação especializada independente</dd></div><div><dt>Áreas</dt><dd>Ciência, mente e sociedade</dd></div><div><dt>Acesso</dt><dd>Artigos de acesso livre</dd></div></dl>
     <div class="about-layout">
       <div class="about-prose">
-        <section id="trajetoria" aria-labelledby="trajetoria-title">
-          <span class="resource-kicker">01 · Minha trajetória</span>
-          <h2 id="trajetoria-title">Um jogador, muitas perguntas, um blog.</h2>
-          <p>Assino como <strong>Le_Gaucher</strong>. Sou jogador de xadrez e estudante de ciência da computação, e moro em Le Gosier, em Guadalupe. Este blog é um projeto pessoal: sou responsável pela redação, pelas escolhas editoriais e pelo desenvolvimento do site.</p>
-<p>Aos 16 anos, fui convidado a dirigir um clube de xadrez. Eu tinha muito a aprender. Comecei a pesquisar, ler e tentar entender o que fazia um jogador evoluir. Como explicar uma ideia? Como passar de uma posição que reconhecemos para uma posição que compreendemos?</p>
-<p>Essas perguntas logo foram além das aberturas e combinações. Por que certas posições ficam na memória? O que acontece com nosso julgamento sob pressão? Como um jogo pode revelar algo sobre uma época, uma cultura ou uma maneira de pensar?</p>
-<p>Comecei escrevendo no Chess.com antes de construir um espaço próprio. O Blog de um Canhoto nasceu dessa vontade de aprofundar as perguntas, com liberdade para aproximar disciplinas e dedicar tempo às explicações.</p>
-<p class="about-personal"><strong>Por que “Canhoto”?</strong> Porque eu sou, simplesmente. “Gaucher” significa canhoto em francês. O nome é pessoal; o olhar se constrói nas leituras, no jogo e nas conversas.</p>
-        </section>
         <section id="olhar" aria-labelledby="olhar-title">
-          <span class="resource-kicker">02 · Proposta editorial</span>
+          <span class="resource-kicker">01 · Proposta editorial</span>
           <h2 id="olhar-title">Três olhares sobre o mesmo tabuleiro.</h2>
-          <p>Uma partida envolve cálculo, memória e emoções. Ela também acontece em um contexto social: um clube, uma escola, uma plataforma ou uma competição. É essa diversidade que procuro tornar acessível por meio de três seções complementares.</p>
+          <p>Uma partida envolve cálculo, memória e emoções. Ela também acontece em um contexto social: um clube, uma escola, uma plataforma ou uma competição. Essa diversidade é abordada por meio de três seções complementares.</p>
 <div class="about-lenses">
 <div><h3><a href="/pt-br/science/">Ciência <span aria-hidden="true">↗</span></a></h3><p>Entender os mecanismos do jogo: memória, aprendizagem, matemática, algoritmos e inteligência artificial. O objetivo é explicar como um resultado foi obtido e o que ele realmente permite concluir sobre o xadrez.</p></div>
 <div><h3><a href="/pt-br/esprit/">Mente <span aria-hidden="true">↗</span></a></h3><p>Examinar a psicologia de quem joga: atenção, confiança, vieses de julgamento, motivação e relação com a derrota. São conceitos para analisar a própria prática e refletir sobre a evolução no jogo, deixando claros os limites de suas aplicações.</p></div>
 <div><h3><a href="/pt-br/societe/">Sociedade <span aria-hidden="true">↗</span></a></h3><p>Situar o xadrez no mundo: história, educação, desigualdades, dinheiro, cultura e confiança nas competições. O jogo oferece um ponto de partida para compreender as instituições e as representações que o cercam.</p></div>
 </div>
-<p>O fio condutor é sempre o mesmo: partir de uma pergunta precisa, definir os conceitos necessários, desenvolver um raciocínio e confrontá-lo com exemplos. Minha ambição é oferecer artigos aprofundados aos quais você possa voltar para compreender um assunto e continuar suas próprias pesquisas.</p>
+<p>O fio condutor é sempre o mesmo: partir de uma pergunta precisa, definir os conceitos necessários, desenvolver um raciocínio e confrontá-lo com exemplos. Os artigos são concebidos como recursos de referência para compreender um assunto, retomar uma explicação e continuar uma pesquisa a partir dos trabalhos citados.</p>
+        <h3>Uma especialização orientada por perguntas</h3>
+<p>Um dossiê parte de uma pergunta cuja resposta exige mais do que uma definição. Um artigo sobre memória, por exemplo, deve distinguir a memorização de uma sequência de lances, o reconhecimento de uma configuração e a compreensão de um plano. Essas diferenças determinam as explicações e os exemplos úteis, assim como as consequências possíveis para a aprendizagem.</p>
+<p>As três seções permitem examinar um assunto em diferentes níveis. A trapaça pode ser analisada pelas ferramentas de detecção, pelas decisões do jogador ou pela confiança nas competições. Cada abordagem deve delimitar sua pergunta, evitar conclusões gerais injustificadas e estabelecer as relações necessárias entre as disciplinas.</p>
+        </section>
+        <section id="metodo" aria-labelledby="metodo-title">
+          <span class="resource-kicker">02 · Método e fontes</span>
+          <h2 id="metodo-title">Das fontes ao raciocínio.</h2>
+          <p>A abordagem editorial reúne pesquisa documental, explicação dos resultados e análise enxadrística. A credibilidade de um artigo deve poder ser avaliada pelas fontes, pela coerência do raciocínio e pela consistência dos exemplos. Cinco princípios orientam esse trabalho.</p>
+<ol class="about-method">
+<li><strong>Definir o problema.</strong><span>Uma experiência no jogo, uma afirmação repetida ou um resultado de pesquisa podem abrir um assunto. A preparação identifica a pergunta a responder e os conceitos necessários para compreendê-la.</span></li>
+<li><strong>Voltar às publicações.</strong><span>A pesquisa prioriza os estudos e documentos que deram origem a uma afirmação. Ferramentas de pesquisa, como o Consensus AI, ajudam a encontrar pistas; elas não substituem o exame das fontes. Um resumo ou um registro de catálogo não oferece o mesmo acesso aos resultados que o texto integral.</span></li>
+<li><strong>Explicar o alcance dos resultados.</strong><span>Uma correlação, um experimento e um depoimento respondem a perguntas diferentes. A análise deve esclarecer a população estudada, o contexto e as limitações relevantes para o argumento. A passagem de um resultado geral para uma orientação sobre xadrez também exige justificativa.</span></li>
+<li><strong>Confrontar as ideias com o jogo.</strong><span>Exemplos, posições e variantes servem para explicar um mecanismo ou examinar uma ideia. Um exemplo didático criado para o artigo deve ser identificado como tal. Uma recomendação pessoal deve ser distinguível de um resultado estabelecido.</span></li>
+<li><strong>Permitir a verificação do raciocínio.</strong><span>As referências devem permitir a localização dos trabalhos discutidos, o acompanhamento da explicação e o exame de seus limites. A consulta às fontes originais possibilita uma avaliação autônoma do argumento.</span></li>
+</ol>
+        <h3>Leitura das fontes e rastreabilidade</h3>
+<p>A referência bibliográfica deve identificar o documento discutido e permitir sua localização. A interpretação depende do conteúdo efetivamente acessível: um registro de catálogo confirma a existência de uma publicação, enquanto um resumo apresenta uma visão de seus resultados. A avaliação detalhada de um protocolo, de uma medida ou de uma análise exige acesso aos trechos correspondentes. A abordagem editorial requer a distinção entre esses níveis de consulta.</p>
+<p>Um estudo também precisa de contexto: participantes, tarefa realizada, duração da observação e critérios avaliados. Um resultado obtido em uma atividade específica não basta, por si só, para justificar uma promessa geral de evolução. As explicações devem tornar explícito o raciocínio que liga a pesquisa ao tema enxadrístico tratado.</p>
+<h3>Exemplos, cálculos e interpretações</h3>
+<p>Uma variante, uma avaliação de motor ou um exemplo numérico sustenta uma explicação determinada. A verificação considera a legalidade dos lances, as hipóteses de cálculo e a correspondência entre o exemplo e a conclusão. Uma posição criada para ilustrar uma ideia não deve ser apresentada como uma partida histórica. Da mesma forma, uma proposta didática deve ser identificável como aplicação sugerida, com suas condições e limitações.</p>
         </section>
         <section id="leituras" aria-labelledby="leituras-title">
-          <span class="resource-kicker">03 · Leituras e recursos</span>
+          <span class="resource-kicker">03 · Recursos</span>
           <h2 id="leituras-title">Várias formas de se aprofundar.</h2>
-          <p>Você pode ler este site por curiosidade, para refletir sobre sua prática de xadrez ou para preparar um trabalho escolar. Os formatos atendem a esses usos diferentes, sem pressupor o domínio prévio de todos os conceitos.</p>
+          <p>A publicação se dirige a enxadristas, leitores interessados na ciência e na cultura do jogo, estudantes e educadores. Os formatos atendem a usos diferentes: descoberta de um conceito, análise da prática, pesquisa documental ou preparação de um trabalho escolar.</p>
 <dl class="about-formats">
 <div><dt><a href="/pt-br/series/">As séries</a></dt><dd>Um percurso de leitura para compreender um assunto por etapas. A edição em português inclui a série sobre a psicologia do xadrez, que aborda memória, motivação, julgamento e influência social.</dd></div>
 <div><dt><a href="/pt-br/blog/">O arquivo de artigos</a></dt><dd>Explore os textos publicados ou use a <a href="/pt-br/recherche/">busca</a> para encontrar um conceito, uma pergunta ou um tema que atravesse as três seções do blog.</dd></div>
 <div><dt><a href="/fr/dissertations/" hreflang="fr">Os ensaios em francês</a></dt><dd>Questões de fundo sobre a vitória, o valor de um jogador e a igualdade no jogo, desenvolvidas por meio de argumentos, objeções e distinções conceituais. Esses textos estão disponíveis em francês.</dd></div>
-<div><dt><a href="/fr/grand-oral/" hreflang="fr">Os guias do Grand oral em francês</a></dt><dd>Temas e recursos para relacionar o xadrez às disciplinas do exame oral do baccalauréat, ao final do ensino médio francês. Quando preparei minha própria prova, procurei essas conexões. Os guias ajudam a construir uma reflexão pessoal e a se preparar para as perguntas da banca; estão disponíveis em francês.</dd></div>
+<div><dt><a href="/fr/grand-oral/" hreflang="fr">Os guias do Grand oral em francês</a></dt><dd>Temas e recursos para relacionar o xadrez às disciplinas do exame oral do baccalauréat, ao final do ensino médio francês. Esses recursos se originaram de um trabalho iniciado durante a preparação do autor para a prova. Os guias ajudam a construir uma reflexão pessoal e a se preparar para as perguntas da banca; estão disponíveis em francês.</dd></div>
 <div><dt><a href="/fr/glossaire/" hreflang="fr">O glossário</a> e <a href="/fr/infographie/" hreflang="fr">o Atlas</a> <span class="about-language-note">(em francês)</span></dt><dd>Pontos de referência para consultar um conceito, explorar os temas do site e escolher a próxima leitura. Para encontrar textos em português, o ponto de partida é o arquivo de artigos desta edição.</dd></div>
 </dl>
-        </section>
-        <section id="metodo" aria-labelledby="metodo-title">
-          <span class="resource-kicker">04 · Pesquisa e escrita</span>
-          <h2 id="metodo-title">Das fontes ao raciocínio.</h2>
-          <p>Escrevo a partir da minha experiência como jogador e estudante de ciência da computação. A credibilidade de um artigo deve poder ser discutida com base nas fontes, nas explicações e na consistência dos exemplos. Estes são os princípios que orientam meu trabalho.</p>
-<ol class="about-method">
-<li><strong>Definir o problema.</strong><span>Uma experiência no jogo, uma afirmação repetida ou um resultado de pesquisa podem abrir um assunto. Primeiro, procuro identificar a pergunta a responder e os conceitos necessários para compreendê-la.</span></li>
-<li><strong>Voltar às publicações.</strong><span>Busco os estudos e documentos que deram origem a uma afirmação. Ferramentas de pesquisa, como o Consensus AI, ajudam a encontrar pistas; elas não substituem o exame das fontes. Um resumo ou um registro de catálogo não oferece o mesmo acesso aos resultados que o texto integral.</span></li>
-<li><strong>Explicar o alcance dos resultados.</strong><span>Uma correlação, um experimento e um depoimento respondem a perguntas diferentes. Procuro esclarecer a população estudada, o contexto e as limitações relevantes para o argumento. A passagem de um resultado geral para uma orientação sobre xadrez também exige justificativa.</span></li>
-<li><strong>Confrontar as ideias com o jogo.</strong><span>Exemplos, posições e variantes servem para explicar um mecanismo ou examinar uma ideia. Um exemplo didático criado para o artigo deve ser identificado como tal. Uma recomendação pessoal deve ser distinguível de um resultado estabelecido.</span></li>
-<li><strong>Permitir a verificação do raciocínio.</strong><span>As referências devem permitir que você encontre os trabalhos discutidos. O objetivo é ajudar a acompanhar a explicação, examinar seus limites e consultar as fontes para formar seu próprio julgamento.</span></li>
-</ol>
-        </section>
-        <section id="correcoes" aria-labelledby="correcoes-title">
-          <span class="resource-kicker">05 · Diálogo e correções</span>
-          <h2 id="correcoes-title">Um texto sempre pode melhorar.</h2>
-          <p>Este site é construído ao longo do tempo. Uma fonte mais consistente, um contraexemplo ou um erro de cálculo podem levar à revisão de uma explicação. Procuro corrigir erros e aprofundar os artigos, preservando o que ajuda a compreender o assunto.</p>
-<p>Para apontar um problema, envie o link do artigo, o trecho em questão e, se tiver, uma fonte ou variante que permita verificar o ponto. Uma objeção fundamentada também é uma contribuição útil: ela ajuda a esclarecer o que o texto precisa demonstrar.</p>
-<p>Você também pode sugerir uma pergunta a explorar, compartilhar um recurso ou conversar sobre um projeto educativo pela <a href="/pt-br/contact/">página de contato</a>.</p>
+        <h3>Usos complementares</h3>
+<p>Os artigos de fundo examinam uma pergunta em profundidade; as séries organizam a progressão entre textos; os recursos de consulta facilitam o retorno a um conceito. Os formatos podem ser combinados: consultar uma definição antes de um dossiê, acompanhar uma série para construir referências ou localizar uma fonte após a leitura. As indicações de idioma identificam os recursos disponíveis em outra edição.</p>
+<p>No contexto escolar, os guias e ensaios fornecem propostas de problemas, distinções e exemplos a examinar. Seu uso pressupõe a compreensão do raciocínio: verificar hipóteses e referências e saber explicar os limites de um argumento. Um material de preparação deve apoiar um trabalho próprio e a discussão com professores ou examinadores.</p>
         </section>
         <section id="independencia" aria-labelledby="independencia-title">
-          <span class="resource-kicker">06 · Independência e financiamento</span>
-          <h2 id="independencia-title">Um projeto pessoal, de acesso livre.</h2>
-          <p>Financio este site com meus próprios recursos. Os artigos são gratuitos e não exigem cadastro. Escolho os temas e continuo responsável pelos textos publicados.</p>
-<p>O site prevê a possibilidade de exibir publicidade. Alguns artigos contêm links de afiliados, identificados onde aparecem: uma compra feita por um desses links pode gerar uma comissão para mim, sem custo adicional para você. Nenhum artigo é encomendado, revisado ou remunerado por um anunciante.</p>
+          <span class="resource-kicker">04 · Independência</span>
+          <h2 id="independencia-title">Financiamento transparente e acesso livre.</h2>
+          <p>O site é financiado por seu editor. Os artigos são gratuitos e não exigem cadastro. A escolha dos temas, a redação e a responsabilidade pelos textos publicados cabem ao autor.</p>
+<p>O site prevê a possibilidade de exibir publicidade. Alguns artigos contêm links de afiliados, identificados onde aparecem: uma compra feita por um desses links pode gerar uma comissão para o editor, sem custo adicional para quem compra. Nenhum artigo é encomendado, revisado ou remunerado por um anunciante.</p>
 <p class="about-legal">O <a href="/pt-br/aviso-legal/">aviso legal</a> detalha essas condições. A <a href="/pt-br/politica-de-privacidade/">política de privacidade</a> explica os dados e serviços utilizados pelo site.</p>
+        <h3>Distinguir financiamento e conteúdo editorial</h3>
+<p>A presença de publicidade ou de um link comercial não constitui evidência a favor de um produto nem sustentação para uma afirmação factual. Uma eventual recomendação deve ser avaliada pelos critérios expostos no texto e por sua pertinência para o assunto. Referências documentais e links de compra têm funções diferentes, que devem permanecer identificáveis.</p>
+<p>O acesso aos artigos é distinto dos serviços facultativos, como o recebimento de novas publicações. As condições de inscrição, os tratamentos de dados e os eventuais rastreadores são explicados na política de privacidade. A leitura de um dossiê não pressupõe concordância com uma recomendação comercial.</p>
         </section>
-        <div class="about-signature"><strong>Le_Gaucher</strong><span>Le Gosier, Guadalupe</span></div>
+        <section id="trajetoria" aria-labelledby="trajetoria-title">
+          <span class="resource-kicker">05 · O autor</span>
+          <h2 id="trajetoria-title">O autor e a origem da publicação.</h2>
+          <p><strong>Le_Gaucher</strong> é jogador de xadrez e estudante de ciência da computação, residente em Le Gosier, em Guadalupe. A redação, as escolhas editoriais e o desenvolvimento do site são conduzidos pelo autor, que publica de forma independente sob esse pseudônimo.</p>
+<p>O convite para dirigir um clube de xadrez aos 16 anos motivou o interesse pelos mecanismos de evolução dos jogadores e pela transmissão de conhecimentos. Explicar uma ideia, distinguir o reconhecimento de uma posição de sua compreensão e organizar a aprendizagem foram questões que deram origem ao projeto.</p>
+<p>Essa abordagem se estendeu além das aberturas e combinações: memória de posições, julgamento sob pressão, história das práticas e representações culturais do jogo. Esses temas constituem hoje os principais eixos da publicação.</p>
+<p>Após os primeiros artigos no Chess.com, o projeto passou a contar com um site próprio. Essa estrutura permite desenvolver dossiês extensos, aproximar disciplinas e manter o controle sobre as decisões editoriais e a apresentação dos conteúdos.</p>
+<p class="about-name"><strong>Por que “Canhoto”?</strong> O nome faz referência ao fato de o autor ser canhoto. As análises da publicação se apoiam em fontes, raciocínio e confronto entre diferentes pontos de vista.</p>
+        <p class="about-author-profile"><a href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">Perfil público do autor no Chess.com ↗</a></p>
+        <h3>Responsabilidade editorial identificada</h3>
+<p>O projeto reúne escrita, pesquisa documental e concepção do ambiente de leitura. A formação do autor em ciência da computação oferece um ponto de partida para assuntos ligados a algoritmos, modelos e motores; a experiência no jogo alimenta perguntas sobre aprendizagem e prática. Essas perspectivas orientam os temas, enquanto as afirmações devem permanecer justificadas pelas fontes e demonstrações apresentadas.</p>
+<p>A publicação sob pseudônimo mantém uma assinatura comum aos artigos e um ponto de contato para consultas. Os dados biográficos permitem situar a origem do projeto; a avaliação dos conteúdos deve considerar sua precisão, sua argumentação e sua capacidade de tornar o conhecimento verificável.</p>
+        </section>
+        <section id="correcoes" aria-labelledby="correcoes-title">
+          <span class="resource-kicker">06 · Correções e contato</span>
+          <h2 id="correcoes-title">Revisão dos conteúdos e contato editorial.</h2>
+          <p>Este site é construído ao longo do tempo. Uma fonte mais consistente, um contraexemplo ou um erro de cálculo podem levar à revisão de uma explicação. A revisão busca corrigir erros e aprofundar os artigos, preservando as explicações úteis à compreensão do assunto.</p>
+<p>Um apontamento útil inclui o link do artigo, o trecho em questão e, quando possível, uma fonte ou variante que permita verificar o ponto. Uma objeção fundamentada também é uma contribuição útil: ela ajuda a esclarecer o que o texto precisa demonstrar.</p>
+<p>Sugestões de temas, contribuições documentais e consultas sobre projetos educativos podem ser encaminhadas pela <a href="/pt-br/contact/">página de contato</a>.</p>
+        <h3>Especificar a natureza de um apontamento</h3>
+<p>Um erro factual, um link indisponível e uma divergência de interpretação exigem exames diferentes. Um fato pode ser confrontado com um documento; uma variante pode ser reproduzida; uma objeção pode exigir a explicitação das hipóteses ou a discussão das conclusões. Identificar essa diferença ajuda a formular uma correção útil.</p>
+<p>Uma solicitação de retificação ganha precisão quando apresenta a redação proposta e o motivo da alteração. Para um novo recurso ou assunto, uma pergunta específica, o público envolvido e os documentos disponíveis facilitam a análise da proposta. O objetivo dos intercâmbios é melhorar a exatidão, a compreensão e a utilidade dos conteúdos, sem reduzir o debate à substituição de uma opinião por outra.</p>
+        </section>
       </div>
       <aside class="author-note" aria-labelledby="author-title">
+        <nav aria-label="Nesta página">
+          <span class="resource-kicker">Nesta página</span>
+          {sections.map((section, index) => <a href={`#${section.id}`}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{section.label}</a>)}
+        </nav>
+        <div class="about-author-record">
         <img src="/images/logo.svg" alt="" width="66" height="92" />
         <span class="resource-kicker">O autor</span>
         <h2 id="author-title">Le_Gaucher<span>.</span></h2>
         <p>Jogador de xadrez.<br />Estudante de ciência da computação.<br />Autor do Blog de um Canhoto.</p>
         <dl>
-          <div><dt>De onde escrevo</dt><dd>Le Gosier, Guadalupe</dd></div>
-          <div><dt>O projeto</dt><dd>Um blog pessoal dedicado ao xadrez.</dd></div>
+          <div><dt>Localização</dt><dd>Le Gosier, Guadalupe</dd></div>
+          <div><dt>O projeto</dt><dd>Uma publicação especializada em xadrez.</dd></div>
           <div><dt>O fio condutor</dt><dd>Ciência, mente e sociedade.</dd></div>
         </dl>
-        <a class="resource-link" href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">Meu perfil no Chess.com ↗<span class="resource-sr-only"> (abre em nova aba)</span></a>
-        <nav aria-label="Nesta página">
-          <span class="resource-kicker">Nesta página</span>
-          {sections.map((section, index) => <a href={`#${section.id}`}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{section.label}</a>)}
-        </nav>
+        <a class="resource-link" href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">Perfil no Chess.com ↗<span class="resource-sr-only"> (abre em nova aba)</span></a>
+
         <a class="author-contact" href="/pt-br/contact/">Entre em contato <span aria-hidden="true">↗</span></a>
+        </div>
       </aside>
     </div>
     {starts.length > 0 && <section class="resource-section" aria-labelledby="starts-title">
-      <div class="resource-section-head"><h2 id="starts-title">Para conhecer o blog</h2><span>Três artigos, três olhares</span></div>
-      <p class="about-starts-intro">A memória para entender a aprendizagem, a concentração para refletir sobre sua prática e a trapaça para examinar a confiança: três portas de entrada para conhecer o projeto.</p>
+      <div class="resource-section-head"><h2 id="starts-title">Artigos selecionados</h2><span>Três artigos, três olhares</span></div>
+      <p class="about-starts-intro">A memória para entender a aprendizagem, a concentração para analisar a prática do jogo e a trapaça para examinar a confiança: três portas de entrada para conhecer o projeto.</p>
       <div class="about-starts">{starts.map(post => <EditorialArticle post={post} lang={lang} variant="feature" showImageCredit={true} />)}</div>
     </section>}
-    <div class="resource-end"><div><span class="resource-kicker">A conversa continua</span><p>Uma pergunta, uma correção ou uma ideia para explorar?</p></div><a class="resource-button" href="mailto:contact@blogdungaucher.com">Escreva para mim <span aria-hidden="true">↗</span></a></div>
+    <div class="resource-end"><div><span class="resource-kicker">Contato editorial</span><p>Correções, sugestões de temas e projetos educativos.</p></div><a class="resource-button" href="mailto:contact@blogdungaucher.com">Contatar a publicação <span aria-hidden="true">↗</span></a></div>
   </div></article>
 </BaseLayout>
-
-<style>
-  .about-layout { display:grid; grid-template-columns:minmax(0,2.1fr) minmax(0,1fr); gap:5rem; align-items:start; border-top:2px solid var(--text-main); padding-top:2rem; margin-bottom:3.5rem; }
-  .about-prose { max-width:47rem; min-width:0; }
-  .about-prose section { padding-bottom:2.5rem; scroll-margin-top:6rem; }
-  .about-prose section+section { border-top:1px solid var(--border-strong); padding-top:2rem; }
-  .about-prose h2 { font:600 1.85rem/1.2 var(--font-serif); letter-spacing:-.025em; margin:.7rem 0 1.2rem; text-wrap:pretty; }
-  .about-prose p { font-size:1rem; line-height:1.85; color:var(--text-muted); margin:0 0 1rem; }
-  .about-prose strong { color:var(--text-main); font-weight:600; }
-  .about-prose a { color:var(--green); text-decoration:underline; text-underline-offset:.2em; }
-  .about-prose a:hover { text-decoration-thickness:2px; }
-  .about-prose .about-personal { background:var(--bg-warm); border-left:3px solid var(--green); padding:1rem 1.25rem; margin:1.5rem 0 0; font-size:.92rem; }
-  .about-lenses { margin:1.5rem 0; border-top:1px solid var(--border-strong); }
-  .about-lenses>div { padding:1.1rem 0; border-bottom:1px solid var(--border-strong); }
-  .about-lenses h3 { margin:0 0 .5rem; font:600 1.35rem/1.3 var(--font-serif); }
-  .about-lenses h3 a { display:flex; justify-content:space-between; align-items:center; text-decoration:none; }
-  .about-lenses h3 span { font-family:var(--font-body); font-size:.9rem; }
-  .about-lenses p { margin:0; font-size:.94rem; line-height:1.75; }
-  .about-formats { margin:1.5rem 0 0; }
-  .about-formats>div { padding:1.1rem 0; border-top:1px solid var(--border-strong); }
-  .about-language-note { font-weight:400; color:var(--text-dim); }
-  .about-formats dt { font-size:.96rem; font-weight:600; }
-  .about-formats dd { margin:.55rem 0 0; color:var(--text-muted); font-size:.94rem; line-height:1.75; }
-  .about-method { padding:0; list-style:none; counter-reset:method; margin:1.5rem 0 0; }
-  .about-method li { display:grid; grid-template-columns:1.4rem 1fr; gap:.4rem 1rem; padding:1.15rem 0; border-top:1px solid var(--border-strong); counter-increment:method; }
-  .about-method li::before { content:counter(method,decimal-leading-zero); font-size:.75rem; color:var(--green); grid-row:span 2; padding-top:.15rem; }
-  .about-method strong { font-size:.96rem; }
-  .about-method span { font-size:.94rem; line-height:1.75; color:var(--text-muted); }
-  .about-prose .about-legal { font-size:.87rem; }
-  .about-signature { display:flex; flex-direction:column; gap:.35rem; }
-  .about-signature strong { font:500 1.55rem var(--font-serif); }
-  .about-signature span { font-size:.78rem; color:var(--text-dim); }
-  .author-note { background:var(--bg-warm); padding:2rem; border-top:3px solid var(--green); }
-  .author-note>img { display:block; margin-bottom:1.5rem; width:56px; height:78px; }
-  :global([data-theme="dark"]) .author-note>img { filter:invert(1); }
-  .author-note h2 { font:600 1.8rem var(--font-serif); letter-spacing:-.035em; margin:.6rem 0 1rem; }
-  .author-note h2 span { color:var(--green); }
-  .author-note p { font-size:.93rem; line-height:1.8; color:var(--text-muted); margin:0 0 1.5rem; }
-  .author-note dl { margin:0 0 1.25rem; }
-  .author-note dl>div { padding:.75rem 0; border-top:1px solid var(--border-strong); }
-  .author-note dt { font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--text-dim); }
-  .author-note dd { margin:.3rem 0 0; font-size:.86rem; line-height:1.6; }
-  .author-note nav { display:flex; flex-direction:column; gap:.9rem; border-top:1px solid var(--border-strong); margin-top:1.5rem; padding-top:1.25rem; }
-  .author-note nav a { display:flex; gap:.75rem; font-size:.8rem; color:var(--text-muted); }
-  .author-note nav a>span { color:var(--green); font-size:.68rem; padding-top:.12rem; }
-  .author-note nav a:hover { color:var(--green); }
-  .author-contact { display:flex; justify-content:space-between; border-top:1px solid var(--border-strong); margin-top:1.5rem; padding-top:1rem; color:var(--green); font-size:.85rem; font-weight:600; }
-  .about-starts-intro { max-width:65ch; color:var(--text-muted); font-size:.95rem; line-height:1.75; margin:0 0 1.75rem; }
-  .about-starts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2rem; }
-  .about-starts>:global(article) { min-width:0; }
-  @media(min-width:900px) and (min-height:1000px) { .author-note { position:sticky; top:5rem; } }
-  @media(max-width:899px) { .about-layout { gap:2rem; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); } .author-note { padding:1.25rem; } }
-  @media(max-width:639px) {
-    .about-layout { grid-template-columns:1fr; gap:2rem; }
-    .author-note { grid-row:1; }
-    .author-note>img { float:right; width:40px; height:56px; margin:0 0 1rem 1rem; }
-    .author-note p { margin-bottom:1rem; }
-    .author-note dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 1rem; }
-    .author-note dl>div:last-child { grid-column:1 / -1; }
-    .author-note nav { gap:.8rem; }
-    .about-starts { grid-template-columns:1fr; gap:1.75rem; }
-    .about-prose h2 { font-size:1.65rem; }
-  }
-</style>

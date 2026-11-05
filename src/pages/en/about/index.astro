@@ -1,20 +1,20 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import EditorialLocaleMasthead from "../../../components/EditorialLocaleMasthead.astro";
 import EditorialArticle from "../../../components/EditorialArticle.astro";
 import { buildBreadcrumbJsonLd, buildPersonJsonLd, filterPostsForLang, getAllPosts, getPostSlug } from "../../../utils/blog";
 import "../../../styles/editorial-resources.css";
+import "../../../styles/editorial-about.css";
 const lang = "en";
 const posts = filterPostsForLang(await getAllPosts(), lang).filter(post => !post.data.noindex);
 const starts = ["echecs-et-memoire", "echecs-et-concentration", "echecs-et-la-triche"].flatMap(slug => {
   const post = posts.find(p => getPostSlug(p) === slug);
   return post ? [post] : [];
 });
-const sections = [{"id": "background", "label": "My background"}, {"id": "perspective", "label": "Editorial approach"}, {"id": "reading", "label": "Reading and resources"}, {"id": "method", "label": "Research and writing"}, {"id": "corrections", "label": "Discussion and corrections"}, {"id": "independence", "label": "Independence and funding"}];
+const sections = [{"id": "perspective", "label": "Editorial approach"}, {"id": "method", "label": "Methods and sources"}, {"id": "reading", "label": "Resources"}, {"id": "independence", "label": "Independence"}, {"id": "background", "label": "The author"}, {"id": "corrections", "label": "Corrections and contact"}];
 ---
 <BaseLayout
   title="About: the project and the approach | A Left-Hander’s Blog"
-  description="Meet Le_Gaucher and discover the editorial approach behind a personal chess publication exploring science, psychology and society from Guadeloupe."
+  description="About A Left-Hander’s Blog: editorial approach, research methods, resources, independence and information about the author."
   canonicalPath="/en/about/"
   lang={lang}
   frPath="/fr/about/"
@@ -25,160 +25,120 @@ const sections = [{"id": "background", "label": "My background"}, {"id": "perspe
     buildPersonJsonLd(lang),
   ]}
 >
-  <article class="resource-page"><div class="container">
-    <header class="resource-header">
-      <EditorialLocaleMasthead lang={lang} active="about" />
-      <div class="resource-heading"><span class="resource-kicker">About · The project and its author</span><h1>{"Understanding chess.\nBroadening the perspective."}</h1><p>Chess is a game, a subject of research and a cultural practice. A Left-Hander’s Blog explores the connections between them: how we learn, make decisions and play together.</p></div>
+  <article class="resource-page about-page-pro"><div class="container">
+    <header class="about-hero-pro">
+      <div class="about-hero-copy"><span class="resource-kicker">About · The publication</span><h1>An independent publication.<br />Chess in perspective.</h1><p>A Left-Hander’s Blog is an independent publication devoted to chess at the intersection of science, psychology and society. Its purpose is to provide accessible, in-depth analysis supported by identifiable sources.</p></div>
+      <div class="about-hero-mark" aria-hidden="true"><img src="/images/logo.svg" alt="" width="112" height="160" /></div>
     </header>
+    <dl class="about-summary"><div><dt>Positioning</dt><dd>Independent specialist publication</dd></div><div><dt>Coverage</dt><dd>Science, mind and society</dd></div><div><dt>Access</dt><dd>Articles freely available</dd></div></dl>
     <div class="about-layout">
       <div class="about-prose">
-        <section id="background" aria-labelledby="background-title">
-          <span class="resource-kicker">01 · My background</span>
-          <h2 id="background-title">A player, a set of questions, a publication.</h2>
-          <p>I write as <strong>Le_Gaucher</strong>. I am a chess player and computer science student based in Le Gosier, Guadeloupe. This blog is a personal project: I am responsible for its writing, editorial choices and development.</p>
-<p>At 16, I was asked to lead a chess club. I had a great deal to learn. I began researching, reading and trying to understand what helps a player improve. How do you explain an idea? How do you move from recognising a position to understanding it?</p>
-<p>Those questions soon reached beyond openings and combinations. Why do some positions stay in our memory? What happens to our judgement under pressure? How can a game tell us something about a period, a culture or a way of thinking?</p>
-<p>I first wrote on Chess.com before building a space of my own. A Left-Hander’s Blog grew out of that desire to pursue questions in depth, with the freedom to connect disciplines and take the time to explain.</p>
-<p class="about-personal"><strong>Why “Left-Hander”?</strong> Because I am one. “Gaucher” is French for left-handed. The name is personal; the perspective develops through reading, playing and discussion.</p>
-        </section>
         <section id="perspective" aria-labelledby="perspective-title">
-          <span class="resource-kicker">02 · Editorial approach</span>
+          <span class="resource-kicker">01 · Editorial approach</span>
           <h2 id="perspective-title">Three perspectives on the same board.</h2>
-          <p>A chess game involves calculation, memory and emotion. It also takes place in a social setting: a club, a school, an online platform or a competition. I explore that range through three complementary sections.</p>
+          <p>A chess game involves calculation, memory and emotion. It also takes place in a social setting: a club, a school, an online platform or a competition. This range is explored through three complementary sections.</p>
 <div class="about-lenses">
 <div><h3><a href="/en/science/">Science <span aria-hidden="true">↗</span></a></h3><p>Understanding how the game works through memory, learning, mathematics, algorithms and artificial intelligence. The aim is to explain how a result was obtained and what it actually allows us to conclude about chess.</p></div>
-<div><h3><a href="/en/esprit/">Mind <span aria-hidden="true">↗</span></a></h3><p>Examining the psychology of the player: attention, confidence, cognitive biases, motivation and the response to defeat. These ideas can help you reflect on your play and improvement, while keeping the limits of their practical applications clear.</p></div>
+<div><h3><a href="/en/esprit/">Mind <span aria-hidden="true">↗</span></a></h3><p>Examining the psychology of the player: attention, confidence, cognitive biases, motivation and the response to defeat. These ideas support reflection on chess practice and improvement, while keeping the limits of their practical applications clear.</p></div>
 <div><h3><a href="/en/societe/">Society <span aria-hidden="true">↗</span></a></h3><p>Placing chess in the wider world: history, education, inequality, money, culture and trust in competition. The game offers a way to examine the institutions and perceptions that surround it.</p></div>
 </div>
-<p>The underlying approach stays the same: begin with a precise question, define the concepts that matter, develop an argument and test it against examples. My ambition is to create in-depth articles you can return to when exploring a subject or pursuing your own research.</p>
+<p>The underlying approach stays the same: begin with a precise question, define the concepts that matter, develop an argument and test it against examples. The features are designed as reference resources for understanding a subject, revisiting an explanation and pursuing further research through the works cited.</p>
+        <h3>A specialist approach built around questions</h3>
+<p>A feature begins with a question that requires more than a definition. An article about memory, for example, should distinguish memorising a sequence of moves, recognising a configuration and understanding a plan. These distinctions determine which explanations and examples are useful, and what implications may reasonably follow for learning.</p>
+<p>The three sections allow the same subject to be examined at different levels. Cheating can be considered through detection tools, players’ decisions or trust in competition. Each treatment should define its question, avoid unjustified general conclusions and establish the relevant connections between disciplines.</p>
+        </section>
+        <section id="method" aria-labelledby="method-title">
+          <span class="resource-kicker">02 · Methods and sources</span>
+          <h2 id="method-title">From sources to an argument.</h2>
+          <p>The editorial approach combines documentary research, explanation of findings and chess analysis. An article’s credibility should be open to scrutiny through its sources, the coherence of its reasoning and the quality of its examples. Five principles guide this work.</p>
+<ol class="about-method">
+<li><strong>Frame the question.</strong><span>A playing experience, a frequently repeated claim or a research finding can open a subject. Preparation identifies the question to answer and the concepts needed to understand it.</span></li>
+<li><strong>Return to the publications.</strong><span>Research prioritises the studies and documents behind a claim. Search tools, including Consensus AI, help identify leads; they do not replace examining the sources. An abstract or a catalogue record does not provide the same access to the findings as the full text.</span></li>
+<li><strong>Explain what the findings support.</strong><span>A correlation, an experiment and a personal account answer different questions. The analysis should explain the population studied, the context and the limitations that matter to the argument. Applying a general finding to chess advice also requires justification.</span></li>
+<li><strong>Test ideas against the game.</strong><span>Examples, positions and variations help explain a mechanism or examine an idea. An illustrative example created for an article should be identifiable as such. A personal recommendation should be distinguishable from an established finding.</span></li>
+<li><strong>Make the reasoning traceable.</strong><span>References should make the work being discussed traceable. Readers should be able to follow the explanation, examine its limits and consult the original sources to assess the argument independently.</span></li>
+</ol>
+        <h3>Reading sources and tracing claims</h3>
+<p>A bibliographic reference should identify the document being discussed and make it possible to locate it. Interpretation then depends on the material actually accessible: a catalogue record confirms a publication’s existence, while an abstract outlines its findings. Detailed assessment of a protocol, measurement or analysis requires access to the relevant passages. The editorial approach calls for these levels of consultation to be distinguished.</p>
+<p>A study also needs context: its participants, the task performed, the observation period and the outcomes measured. A result from a particular activity cannot, by itself, justify a broad promise of improvement. Explanations should make the reasoning connecting the research to the chess question explicit.</p>
+<h3>Examples, calculations and interpretation</h3>
+<p>A variation, engine output or numerical example supports a specific explanation. Checks concern legal moves, calculation assumptions and whether the example supports the conclusion. A position constructed to illustrate an idea should not be presented as a historical game. Likewise, an educational suggestion should remain identifiable as a proposed application, with its conditions and limitations.</p>
         </section>
         <section id="reading" aria-labelledby="reading-title">
-          <span class="resource-kicker">03 · Reading and resources</span>
+          <span class="resource-kicker">03 · Resources</span>
           <h2 id="reading-title">Different ways to go deeper.</h2>
-          <p>You might read this site out of curiosity, to reflect on your chess practice or to prepare a school project. The formats serve those different purposes without assuming that you already know every concept.</p>
+          <p>The publication serves chess players, readers interested in the science and culture of the game, students and educators. Its formats support different uses: exploring a concept, examining chess practice, conducting documentary research or preparing a school project.</p>
 <dl class="about-formats">
 <div><dt><a href="/en/series/">The series</a></dt><dd>Connected articles that build an understanding of a subject step by step. The English edition includes the psychology of chess series, exploring memory, motivation, judgement and social influence.</dd></div>
 <div><dt><a href="/en/blog/">The article archive</a></dt><dd>Browse the published articles or use <a href="/en/recherche/">search</a> to find a concept, a question or a topic that crosses the three sections.</dd></div>
 <div><dt><a href="/fr/dissertations/" hreflang="fr">Essays in French</a></dt><dd>Extended arguments about winning, the value of a player and equality in the game, developed through objections and conceptual distinctions. These essays are currently available in French.</dd></div>
-<div><dt><a href="/fr/grand-oral/" hreflang="fr">Grand oral guides in French</a></dt><dd>Topics and resources connecting chess to subjects studied for the French baccalauréat oral examination. When preparing for my own exam, I was looking for those connections. These guides help students develop their own arguments and prepare for the examiners’ questions; they are available in French.</dd></div>
+<div><dt><a href="/fr/grand-oral/" hreflang="fr">Grand oral guides in French</a></dt><dd>Topics and resources connecting chess to subjects studied for the French baccalauréat oral examination. These resources developed from work undertaken during the author’s own exam preparation. These guides help students develop their own arguments and prepare for the examiners’ questions; they are available in French.</dd></div>
 <div><dt><a href="/fr/glossaire/" hreflang="fr">The glossary</a> and <a href="/fr/infographie/" hreflang="fr">the Atlas</a> <span class="about-language-note">(in French)</span></dt><dd>Reference points for looking up a concept, exploring the site’s themes and choosing what to read next. The English archive remains the starting point for articles in English.</dd></div>
 </dl>
-        </section>
-        <section id="method" aria-labelledby="method-title">
-          <span class="resource-kicker">04 · Research and writing</span>
-          <h2 id="method-title">From sources to an argument.</h2>
-          <p>I write from my position as a player and computer science student. An article’s credibility should be open to scrutiny through its sources, explanations and examples. These are the principles that guide the work.</p>
-<ol class="about-method">
-<li><strong>Frame the question.</strong><span>A playing experience, a frequently repeated claim or a research finding can open a subject. I first identify the question to answer and the concepts needed to understand it.</span></li>
-<li><strong>Return to the publications.</strong><span>I look for the studies and documents behind a claim. Research tools, including Consensus AI, help me find leads; they do not replace examining the sources. An abstract or a catalogue record does not provide the same access to the findings as the full text.</span></li>
-<li><strong>Explain what the findings support.</strong><span>A correlation, an experiment and a personal account answer different questions. I aim to explain the population studied, the context and the limitations that matter to the argument. Applying a general finding to chess advice also requires justification.</span></li>
-<li><strong>Test ideas against the game.</strong><span>Examples, positions and variations help explain a mechanism or examine an idea. An illustrative example created for an article should be identifiable as such. A personal recommendation should be distinguishable from an established finding.</span></li>
-<li><strong>Make the reasoning traceable.</strong><span>References should let you find the work being discussed. The aim is to help you follow the explanation, examine its limits and consult the sources to form your own judgement.</span></li>
-</ol>
-        </section>
-        <section id="corrections" aria-labelledby="corrections-title">
-          <span class="resource-kicker">05 · Discussion and corrections</span>
-          <h2 id="corrections-title">There is always room to improve a text.</h2>
-          <p>This site develops over time. A stronger source, a counterexample or a calculation error can call for an explanation to be revised. I aim to correct mistakes and expand articles while preserving what helps readers understand.</p>
-<p>To report a problem, send me the article link, the relevant passage and, if you have one, a source or chess variation that allows the point to be checked. A reasoned objection is a useful contribution too: it helps clarify what an article needs to demonstrate.</p>
-<p>You can also suggest a question to explore, share a resource or get in touch about an educational project through the <a href="/en/contact/">contact page</a>.</p>
+        <h3>Complementary uses</h3>
+<p>Features examine a question in depth, series organise progression between articles, and reference resources support a return to individual concepts. These formats can be combined: consulting a definition before a feature, following a series to build understanding or locating a particular source after reading. Language labels identify resources available in another edition.</p>
+<p>In education, the guides and essays provide possible research questions, distinctions and examples to examine. Their use involves understanding the reasoning: checking assumptions and references, and being able to explain the limits of an argument. Preparation material should support independent work and discussion with teachers or examiners.</p>
         </section>
         <section id="independence" aria-labelledby="independence-title">
-          <span class="resource-kicker">06 · Independence and funding</span>
-          <h2 id="independence-title">A personal project, freely accessible.</h2>
-          <p>I fund this site myself. Articles are free to read, with no compulsory registration. I choose the subjects and remain responsible for the published texts.</p>
-<p>The site may display advertising. Some articles contain affiliate links, identified where they appear: a purchase through one of those links may earn me a commission at no extra cost to you. No article is commissioned, reviewed or paid for by an advertiser.</p>
+          <span class="resource-kicker">04 · Independence</span>
+          <h2 id="independence-title">Transparent funding and free access.</h2>
+          <p>The site is funded by its publisher. Articles are free to read, with no compulsory registration. Topic selection, writing and responsibility for the published material rest with the author.</p>
+<p>The site may display advertising. Some articles contain affiliate links, identified where they appear: a purchase through one of those links may generate a commission for the publisher at no extra cost to the buyer. No article is commissioned, reviewed or paid for by an advertiser.</p>
 <p class="about-legal">The <a href="/en/legal-notice/">legal notice</a> explains these arrangements. The <a href="/en/privacy-policy/">privacy policy</a> describes the data and services used by the site.</p>
+        <h3>Separating funding from editorial content</h3>
+<p>The presence of an advertisement or commercial link is not evidence in favour of a product or support for a factual claim. Any recommendation should be assessed through the criteria stated in the article and its relevance to the subject. Documentary references and purchase links serve different purposes, which should remain identifiable.</p>
+<p>Access to articles is separate from optional services such as receiving new publications. Registration arrangements, data processing and any tracking technologies are explained in the privacy policy. Reading a feature does not require agreement with a commercial recommendation.</p>
         </section>
-        <div class="about-signature"><strong>Le_Gaucher</strong><span>Le Gosier, Guadeloupe</span></div>
+        <section id="background" aria-labelledby="background-title">
+          <span class="resource-kicker">05 · The author</span>
+          <h2 id="background-title">The author and the origins of the publication.</h2>
+          <p><strong>Le_Gaucher</strong> is a chess player and computer science student based in Le Gosier, Guadeloupe. Writing, editorial decisions and website development are handled by the author, who publishes independently under this pseudonym.</p>
+<p>An invitation to lead a chess club at 16 prompted an interest in how players improve and how knowledge is passed on. Explaining an idea, distinguishing recognition from understanding and organising learning were among the questions that shaped the project.</p>
+<p>This approach extended beyond openings and combinations to memory for positions, judgement under pressure, the history of chess practices and cultural representations of the game. These subjects now form the publication’s main areas of enquiry.</p>
+<p>Following initial articles on Chess.com, the project developed into an independent website. This structure supports extended features, connections between disciplines and control over both editorial decisions and the presentation of the material.</p>
+<p class="about-name"><strong>Why “Left-Hander”?</strong> The name refers to the author’s left-handedness. The publication’s analysis rests on sources, reasoning and the examination of different perspectives.</p>
+        <p class="about-author-profile"><a href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">The author’s public Chess.com profile ↗</a></p>
+        <h3>Identifiable editorial responsibility</h3>
+<p>The project brings together writing, documentary research and the design of the reading environment. The author’s computer science studies provide a starting point for subjects involving algorithms, models and engines; playing experience informs questions about learning and practice. These perspectives guide topic selection, while claims remain subject to the sources and demonstrations presented.</p>
+<p>Publication under a pseudonym provides a consistent signature across articles and a contact point for enquiries. Biographical information explains the origins of the project; the content itself should be assessed through its precision, argument and ability to make knowledge traceable.</p>
+        </section>
+        <section id="corrections" aria-labelledby="corrections-title">
+          <span class="resource-kicker">06 · Corrections and contact</span>
+          <h2 id="corrections-title">Content review and editorial enquiries.</h2>
+          <p>This site develops over time. A stronger source, a counterexample or a calculation error can call for an explanation to be revised. Revision aims to correct mistakes and expand articles while preserving the explanations that help readers understand.</p>
+<p>A useful correction report includes the article link, the relevant passage and, where possible, a source or chess variation that allows the point to be checked. A reasoned objection is a useful contribution too: it helps clarify what an article needs to demonstrate.</p>
+<p>Topic suggestions, documentary contributions and enquiries about educational projects can be submitted through the <a href="/en/contact/">contact page</a>.</p>
+        <h3>Identifying the nature of a report</h3>
+<p>A factual error, an unavailable link and a disagreement over interpretation require different kinds of examination. A fact can be checked against a document, a variation can be replayed, and an objection may call for clearer assumptions or discussion of the conclusions. Identifying the distinction helps make a correction report actionable.</p>
+<p>A proposed correction is more useful when it includes suggested wording and the reason for the change. For a new resource or subject, a precise question, the intended audience and documents already available help assess the proposal. The purpose of discussion is to improve accuracy, understanding and usefulness, rather than replacing one opinion with another.</p>
+        </section>
       </div>
       <aside class="author-note" aria-labelledby="author-title">
+        <nav aria-label="On this page">
+          <span class="resource-kicker">On this page</span>
+          {sections.map((section, index) => <a href={`#${section.id}`}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{section.label}</a>)}
+        </nav>
+        <div class="about-author-record">
         <img src="/images/logo.svg" alt="" width="66" height="92" />
         <span class="resource-kicker">The author</span>
         <h2 id="author-title">Le_Gaucher<span>.</span></h2>
         <p>Chess player.<br />Computer science student.<br />Author of A Left-Hander’s Blog.</p>
         <dl>
           <div><dt>Based in</dt><dd>Le Gosier, Guadeloupe</dd></div>
-          <div><dt>The project</dt><dd>A personal publication devoted to chess.</dd></div>
+          <div><dt>The project</dt><dd>An independent publication devoted to chess.</dd></div>
           <div><dt>The connecting thread</dt><dd>Science, mind and society.</dd></div>
         </dl>
-        <a class="resource-link" href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">My Chess.com profile ↗<span class="resource-sr-only"> (opens in a new tab)</span></a>
-        <nav aria-label="On this page">
-          <span class="resource-kicker">On this page</span>
-          {sections.map((section, index) => <a href={`#${section.id}`}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{section.label}</a>)}
-        </nav>
+        <a class="resource-link" href="https://www.chess.com/member/le_gaucher" target="_blank" rel="noopener noreferrer">Chess.com profile ↗<span class="resource-sr-only"> (opens in a new tab)</span></a>
+
         <a class="author-contact" href="/en/contact/">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
       </aside>
     </div>
     {starts.length > 0 && <section class="resource-section" aria-labelledby="starts-title">
-      <div class="resource-section-head"><h2 id="starts-title">Get to know the blog</h2><span>Three articles, three perspectives</span></div>
-      <p class="about-starts-intro">Memory to explore learning, concentration to reflect on your play, and cheating to examine trust: three starting points for discovering the project.</p>
+      <div class="resource-section-head"><h2 id="starts-title">Selected articles</h2><span>Three articles, three perspectives</span></div>
+      <p class="about-starts-intro">Memory to explore learning, concentration to examine chess practice, and cheating to examine trust: three starting points for discovering the project.</p>
       <div class="about-starts">{starts.map(post => <EditorialArticle post={post} lang={lang} variant="feature" showImageCredit={true} />)}</div>
     </section>}
-    <div class="resource-end"><div><span class="resource-kicker">Keep the conversation going</span><p>A question, a correction or an idea to explore?</p></div><a class="resource-button" href="mailto:contact@blogdungaucher.com">Write to me <span aria-hidden="true">↗</span></a></div>
+    <div class="resource-end"><div><span class="resource-kicker">Editorial contact</span><p>Corrections, topic suggestions and educational projects.</p></div><a class="resource-button" href="mailto:contact@blogdungaucher.com">Contact the publication <span aria-hidden="true">↗</span></a></div>
   </div></article>
 </BaseLayout>
-
-<style>
-  .about-layout { display:grid; grid-template-columns:minmax(0,2.1fr) minmax(0,1fr); gap:5rem; align-items:start; border-top:2px solid var(--text-main); padding-top:2rem; margin-bottom:3.5rem; }
-  .about-prose { max-width:47rem; min-width:0; }
-  .about-prose section { padding-bottom:2.5rem; scroll-margin-top:6rem; }
-  .about-prose section+section { border-top:1px solid var(--border-strong); padding-top:2rem; }
-  .about-prose h2 { font:600 1.85rem/1.2 var(--font-serif); letter-spacing:-.025em; margin:.7rem 0 1.2rem; text-wrap:pretty; }
-  .about-prose p { font-size:1rem; line-height:1.85; color:var(--text-muted); margin:0 0 1rem; }
-  .about-prose strong { color:var(--text-main); font-weight:600; }
-  .about-prose a { color:var(--green); text-decoration:underline; text-underline-offset:.2em; }
-  .about-prose a:hover { text-decoration-thickness:2px; }
-  .about-prose .about-personal { background:var(--bg-warm); border-left:3px solid var(--green); padding:1rem 1.25rem; margin:1.5rem 0 0; font-size:.92rem; }
-  .about-lenses { margin:1.5rem 0; border-top:1px solid var(--border-strong); }
-  .about-lenses>div { padding:1.1rem 0; border-bottom:1px solid var(--border-strong); }
-  .about-lenses h3 { margin:0 0 .5rem; font:600 1.35rem/1.3 var(--font-serif); }
-  .about-lenses h3 a { display:flex; justify-content:space-between; align-items:center; text-decoration:none; }
-  .about-lenses h3 span { font-family:var(--font-body); font-size:.9rem; }
-  .about-lenses p { margin:0; font-size:.94rem; line-height:1.75; }
-  .about-formats { margin:1.5rem 0 0; }
-  .about-formats>div { padding:1.1rem 0; border-top:1px solid var(--border-strong); }
-  .about-language-note { font-weight:400; color:var(--text-dim); }
-  .about-formats dt { font-size:.96rem; font-weight:600; }
-  .about-formats dd { margin:.55rem 0 0; color:var(--text-muted); font-size:.94rem; line-height:1.75; }
-  .about-method { padding:0; list-style:none; counter-reset:method; margin:1.5rem 0 0; }
-  .about-method li { display:grid; grid-template-columns:1.4rem 1fr; gap:.4rem 1rem; padding:1.15rem 0; border-top:1px solid var(--border-strong); counter-increment:method; }
-  .about-method li::before { content:counter(method,decimal-leading-zero); font-size:.75rem; color:var(--green); grid-row:span 2; padding-top:.15rem; }
-  .about-method strong { font-size:.96rem; }
-  .about-method span { font-size:.94rem; line-height:1.75; color:var(--text-muted); }
-  .about-prose .about-legal { font-size:.87rem; }
-  .about-signature { display:flex; flex-direction:column; gap:.35rem; }
-  .about-signature strong { font:500 1.55rem var(--font-serif); }
-  .about-signature span { font-size:.78rem; color:var(--text-dim); }
-  .author-note { background:var(--bg-warm); padding:2rem; border-top:3px solid var(--green); }
-  .author-note>img { display:block; margin-bottom:1.5rem; width:56px; height:78px; }
-  :global([data-theme="dark"]) .author-note>img { filter:invert(1); }
-  .author-note h2 { font:600 1.8rem var(--font-serif); letter-spacing:-.035em; margin:.6rem 0 1rem; }
-  .author-note h2 span { color:var(--green); }
-  .author-note p { font-size:.93rem; line-height:1.8; color:var(--text-muted); margin:0 0 1.5rem; }
-  .author-note dl { margin:0 0 1.25rem; }
-  .author-note dl>div { padding:.75rem 0; border-top:1px solid var(--border-strong); }
-  .author-note dt { font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--text-dim); }
-  .author-note dd { margin:.3rem 0 0; font-size:.86rem; line-height:1.6; }
-  .author-note nav { display:flex; flex-direction:column; gap:.9rem; border-top:1px solid var(--border-strong); margin-top:1.5rem; padding-top:1.25rem; }
-  .author-note nav a { display:flex; gap:.75rem; font-size:.8rem; color:var(--text-muted); }
-  .author-note nav a>span { color:var(--green); font-size:.68rem; padding-top:.12rem; }
-  .author-note nav a:hover { color:var(--green); }
-  .author-contact { display:flex; justify-content:space-between; border-top:1px solid var(--border-strong); margin-top:1.5rem; padding-top:1rem; color:var(--green); font-size:.85rem; font-weight:600; }
-  .about-starts-intro { max-width:65ch; color:var(--text-muted); font-size:.95rem; line-height:1.75; margin:0 0 1.75rem; }
-  .about-starts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2rem; }
-  .about-starts>:global(article) { min-width:0; }
-  @media(min-width:900px) and (min-height:1000px) { .author-note { position:sticky; top:5rem; } }
-  @media(max-width:899px) { .about-layout { gap:2rem; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); } .author-note { padding:1.25rem; } }
-  @media(max-width:639px) {
-    .about-layout { grid-template-columns:1fr; gap:2rem; }
-    .author-note { grid-row:1; }
-    .author-note>img { float:right; width:40px; height:56px; margin:0 0 1rem 1rem; }
-    .author-note p { margin-bottom:1rem; }
-    .author-note dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 1rem; }
-    .author-note dl>div:last-child { grid-column:1 / -1; }
-    .author-note nav { gap:.8rem; }
-    .about-starts { grid-template-columns:1fr; gap:1.75rem; }
-    .about-prose h2 { font-size:1.65rem; }
-  }
-</style>
