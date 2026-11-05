@@ -1,0 +1,489 @@
+{
+  "firstDate": "2026-11-10",
+  "lastDate": "2027-11-09",
+  "projectTotal": 53,
+  "scheduledCount": 53,
+  "deferredCount": 0,
+  "weekday": "mardi",
+  "releaseTimeUtc": "06:00:00",
+  "timezone": "America/Guadeloupe",
+  "entries": [
+    {
+      "slug": "convaincre-un-joueur-est-ce-lui-apprendre-a-penser",
+      "title": "Convaincre un joueur, est-ce lui apprendre à penser ?",
+      "publishDate": "2026-11-10",
+      "publishAt": "2026-11-10T06:00:00Z",
+      "scheduledOrder": 1,
+      "status": "ready",
+      "number": 1
+    },
+    {
+      "slug": "faut-il-etre-calme-pour-bien-juger-aux-echecs",
+      "title": "Faut-il être calme pour bien juger aux échecs ?",
+      "publishDate": "2026-11-17",
+      "publishAt": "2026-11-17T06:00:00Z",
+      "scheduledOrder": 2,
+      "status": "ready",
+      "number": 2
+    },
+    {
+      "slug": "peut-on-avoir-raison-contre-son-entraineur",
+      "title": "Peut-on avoir raison contre son entraîneur ?",
+      "publishDate": "2026-11-24",
+      "publishAt": "2026-11-24T06:00:00Z",
+      "scheduledOrder": 3,
+      "status": "ready",
+      "number": 3
+    },
+    {
+      "slug": "juge-t-on-une-partie-ou-la-reputation-de-celui-qui-la-joue",
+      "title": "Juge-t-on une partie ou la réputation de celui qui la joue ?",
+      "publishDate": "2026-12-01",
+      "publishAt": "2026-12-01T06:00:00Z",
+      "scheduledOrder": 4,
+      "status": "ready",
+      "number": 4
+    },
+    {
+      "slug": "sommes-nous-responsables-dun-coup-dont-nous-avons-oublie-les-raisons",
+      "title": "Sommes-nous responsables d’un coup dont nous avons oublié les raisons ?",
+      "publishDate": "2026-12-08",
+      "publishAt": "2026-12-08T06:00:00Z",
+      "scheduledOrder": 5,
+      "status": "ready",
+      "number": 5
+    },
+    {
+      "slug": "le-silence-devant-une-injustice-constitue-t-il-une-faute",
+      "title": "Le silence devant une injustice constitue-t-il une faute ?",
+      "publishDate": "2026-12-15",
+      "publishAt": "2026-12-15T06:00:00Z",
+      "scheduledOrder": 6,
+      "status": "ready",
+      "number": 6
+    },
+    {
+      "slug": "peut-on-apprendre-lorsque-lon-croit-que-tout-est-joue-davance",
+      "title": "Peut-on apprendre lorsque l’on croit que tout est joué d’avance ?",
+      "publishDate": "2026-12-22",
+      "publishAt": "2026-12-22T06:00:00Z",
+      "scheduledOrder": 7,
+      "status": "ready",
+      "number": 7
+    },
+    {
+      "slug": "une-explication-qui-nous-ressemble-est-elle-une-bonne-explication",
+      "title": "Une explication qui nous ressemble est-elle une bonne explication ?",
+      "publishDate": "2026-12-29",
+      "publishAt": "2026-12-29T06:00:00Z",
+      "scheduledOrder": 8,
+      "status": "ready",
+      "number": 8
+    },
+    {
+      "slug": "defendre-son-avantage-est-ce-deja-avoir-peur-de-le-perdre",
+      "title": "Défendre son avantage, est-ce déjà avoir peur de le perdre ?",
+      "publishDate": "2027-01-05",
+      "publishAt": "2027-01-05T06:00:00Z",
+      "scheduledOrder": 9,
+      "status": "ready",
+      "number": 9
+    },
+    {
+      "slug": "la-premiere-idee-merite-t-elle-une-seconde-chance",
+      "title": "La première idée mérite-t-elle une seconde chance ?",
+      "publishDate": "2027-01-12",
+      "publishAt": "2027-01-12T06:00:00Z",
+      "scheduledOrder": 10,
+      "status": "ready",
+      "number": 10
+    },
+    {
+      "slug": "penser-par-soi-meme-impose-t-il-de-se-mefier-du-groupe",
+      "title": "Penser par soi-même impose-t-il de se méfier du groupe ?",
+      "publishDate": "2027-01-19",
+      "publishAt": "2027-01-19T06:00:00Z",
+      "scheduledOrder": 11,
+      "status": "ready",
+      "number": 11
+    },
+    {
+      "slug": "avoir-plus-de-choix-rend-il-plus-libre-sur-lechiquier",
+      "title": "Avoir plus de choix rend-il plus libre sur l’échiquier ?",
+      "publishDate": "2027-01-26",
+      "publishAt": "2027-01-26T06:00:00Z",
+      "scheduledOrder": 12,
+      "status": "ready",
+      "number": 12
+    },
+    {
+      "slug": "une-recompense-peut-elle-denaturer-le-plaisir-de-jouer",
+      "title": "Une récompense peut-elle dénaturer le plaisir de jouer ?",
+      "publishDate": "2027-02-02",
+      "publishAt": "2027-02-02T06:00:00Z",
+      "scheduledOrder": 13,
+      "status": "ready",
+      "number": 13
+    },
+    {
+      "slug": "les-attentes-des-autres-nous-obligent-elles-a-reussir",
+      "title": "Les attentes des autres nous obligent-elles à réussir ?",
+      "publishDate": "2027-02-09",
+      "publishAt": "2027-02-09T06:00:00Z",
+      "scheduledOrder": 14,
+      "status": "ready",
+      "number": 14
+    },
+    {
+      "slug": "lhabitude-dispense-t-elle-de-comprendre",
+      "title": "L’habitude dispense-t-elle de comprendre ?",
+      "publishDate": "2027-02-16",
+      "publishAt": "2027-02-16T06:00:00Z",
+      "scheduledOrder": 15,
+      "status": "ready",
+      "number": 15
+    },
+    {
+      "slug": "se-comparer-aux-autres-empeche-t-il-de-se-connaitre",
+      "title": "Se comparer aux autres empêche-t-il de se connaître ?",
+      "publishDate": "2027-02-23",
+      "publishAt": "2027-02-23T06:00:00Z",
+      "scheduledOrder": 16,
+      "status": "ready",
+      "number": 16
+    },
+    {
+      "slug": "une-foule-peut-elle-mieux-juger-quun-joueur-isole",
+      "title": "Une foule peut-elle mieux juger qu’un joueur isolé ?",
+      "publishDate": "2027-03-02",
+      "publishAt": "2027-03-02T06:00:00Z",
+      "scheduledOrder": 17,
+      "status": "ready",
+      "number": 17
+    },
+    {
+      "slug": "faut-il-renoncer-au-plaisir-immediat-pour-construire-une-pratique-durable",
+      "title": "Faut-il renoncer au plaisir immédiat pour construire une pratique durable ?",
+      "publishDate": "2027-03-09",
+      "publishAt": "2027-03-09T06:00:00Z",
+      "scheduledOrder": 18,
+      "status": "ready",
+      "number": 18
+    },
+    {
+      "slug": "peut-on-bien-jouer-sans-jamais-se-sentir-en-securite",
+      "title": "Peut-on bien jouer sans jamais se sentir en sécurité ?",
+      "publishDate": "2027-03-16",
+      "publishAt": "2027-03-16T06:00:00Z",
+      "scheduledOrder": 19,
+      "status": "ready",
+      "number": 19
+    },
+    {
+      "slug": "jouer-contre-quelquun-est-ce-comprendre-son-esprit",
+      "title": "Jouer contre quelqu’un, est-ce comprendre son esprit ?",
+      "publishDate": "2027-03-23",
+      "publishAt": "2027-03-23T06:00:00Z",
+      "scheduledOrder": 20,
+      "status": "ready",
+      "number": 20
+    },
+    {
+      "slug": "peut-on-reprocher-a-ladversaire-une-intention-que-lon-imagine",
+      "title": "Peut-on reprocher à l’adversaire une intention que l’on imagine ?",
+      "publishDate": "2027-03-30",
+      "publishAt": "2027-03-30T06:00:00Z",
+      "scheduledOrder": 21,
+      "status": "ready",
+      "number": 21
+    },
+    {
+      "slug": "la-memoire-dune-partie-nous-appartient-elle-entierement",
+      "title": "La mémoire d’une partie nous appartient-elle entièrement ?",
+      "publishDate": "2027-04-06",
+      "publishAt": "2027-04-06T06:00:00Z",
+      "scheduledOrder": 22,
+      "status": "ready",
+      "number": 22
+    },
+    {
+      "slug": "lexperience-donne-t-elle-le-droit-de-ne-plus-expliquer",
+      "title": "L’expérience donne-t-elle le droit de ne plus expliquer ?",
+      "publishDate": "2027-04-13",
+      "publishAt": "2027-04-13T06:00:00Z",
+      "scheduledOrder": 23,
+      "status": "ready",
+      "number": 23
+    },
+    {
+      "slug": "une-decision-inachevee-peut-elle-etre-une-bonne-decision",
+      "title": "Une décision inachevée peut-elle être une bonne décision ?",
+      "publishDate": "2027-04-20",
+      "publishAt": "2027-04-20T06:00:00Z",
+      "scheduledOrder": 24,
+      "status": "ready",
+      "number": 24
+    },
+    {
+      "slug": "savoir-sarreter-fait-il-partie-de-lintelligence",
+      "title": "Savoir s’arrêter fait-il partie de l’intelligence ?",
+      "publishDate": "2027-04-27",
+      "publishAt": "2027-04-27T06:00:00Z",
+      "scheduledOrder": 25,
+      "status": "ready",
+      "number": 25
+    },
+    {
+      "slug": "un-classement-peut-il-dire-ce-que-nous-deviendrons",
+      "title": "Un classement peut-il dire ce que nous deviendrons ?",
+      "publishDate": "2027-05-04",
+      "publishAt": "2027-05-04T06:00:00Z",
+      "scheduledOrder": 26,
+      "status": "ready",
+      "number": 26
+    },
+    {
+      "slug": "ladversaire-est-il-un-obstacle-ou-une-condition-de-notre-liberte",
+      "title": "L’adversaire est-il un obstacle ou une condition de notre liberté ?",
+      "publishDate": "2027-05-11",
+      "publishAt": "2027-05-11T06:00:00Z",
+      "scheduledOrder": 27,
+      "status": "ready",
+      "number": 27
+    },
+    {
+      "slug": "peut-on-chercher-la-verite-en-voulant-avoir-le-dernier-mot",
+      "title": "Peut-on chercher la vérité en voulant avoir le dernier mot ?",
+      "publishDate": "2027-05-18",
+      "publishAt": "2027-05-18T06:00:00Z",
+      "scheduledOrder": 28,
+      "status": "ready",
+      "number": 28
+    },
+    {
+      "slug": "une-erreur-sans-consequence-est-elle-moins-grave",
+      "title": "Une erreur sans conséquence est-elle moins grave ?",
+      "publishDate": "2027-05-25",
+      "publishAt": "2027-05-25T06:00:00Z",
+      "scheduledOrder": 29,
+      "status": "ready",
+      "number": 29
+    },
+    {
+      "slug": "la-chance-retire-t-elle-quelque-chose-a-une-reussite",
+      "title": "La chance retire-t-elle quelque chose à une réussite ?",
+      "publishDate": "2027-06-01",
+      "publishAt": "2027-06-01T06:00:00Z",
+      "scheduledOrder": 30,
+      "status": "ready",
+      "number": 30
+    },
+    {
+      "slug": "peut-on-etre-courageux-en-choisissant-la-nulle",
+      "title": "Peut-on être courageux en choisissant la nulle ?",
+      "publishDate": "2027-06-08",
+      "publishAt": "2027-06-08T06:00:00Z",
+      "scheduledOrder": 31,
+      "status": "ready",
+      "number": 31
+    },
+    {
+      "slug": "abandonner-une-partie-signifie-t-il-renoncer-a-soi-meme",
+      "title": "Abandonner une partie signifie-t-il renoncer à soi-même ?",
+      "publishDate": "2027-06-15",
+      "publishAt": "2027-06-15T06:00:00Z",
+      "scheduledOrder": 32,
+      "status": "ready",
+      "number": 32
+    },
+    {
+      "slug": "peut-on-respecter-un-adversaire-que-lon-veut-battre",
+      "title": "Peut-on respecter un adversaire que l’on veut battre ?",
+      "publishDate": "2027-06-22",
+      "publishAt": "2027-06-22T06:00:00Z",
+      "scheduledOrder": 33,
+      "status": "ready",
+      "number": 33
+    },
+    {
+      "slug": "une-regle-injuste-doit-elle-etre-respectee-pendant-la-partie",
+      "title": "Une règle injuste doit-elle être respectée pendant la partie ?",
+      "publishDate": "2027-06-29",
+      "publishAt": "2027-06-29T06:00:00Z",
+      "scheduledOrder": 34,
+      "status": "ready",
+      "number": 34
+    },
+    {
+      "slug": "la-meme-regle-convient-elle-a-tous-les-joueurs",
+      "title": "La même règle convient-elle à tous les joueurs ?",
+      "publishDate": "2027-07-06",
+      "publishAt": "2027-07-06T06:00:00Z",
+      "scheduledOrder": 35,
+      "status": "ready",
+      "number": 35
+    },
+    {
+      "slug": "etre-impartial-est-ce-ne-rien-eprouver-pour-les-joueurs",
+      "title": "Être impartial, est-ce ne rien éprouver pour les joueurs ?",
+      "publishDate": "2027-07-13",
+      "publishAt": "2027-07-13T06:00:00Z",
+      "scheduledOrder": 36,
+      "status": "ready",
+      "number": 36
+    },
+    {
+      "slug": "un-arbitre-doit-il-appliquer-la-regle-ou-en-comprendre-lesprit",
+      "title": "Un arbitre doit-il appliquer la règle ou en comprendre l’esprit ?",
+      "publishDate": "2027-07-20",
+      "publishAt": "2027-07-20T06:00:00Z",
+      "scheduledOrder": 37,
+      "status": "ready",
+      "number": 37
+    },
+    {
+      "slug": "la-lettre-dune-regle-protege-t-elle-toujours-contre-larbitraire",
+      "title": "La lettre d’une règle protège-t-elle toujours contre l’arbitraire ?",
+      "publishDate": "2027-07-27",
+      "publishAt": "2027-07-27T06:00:00Z",
+      "scheduledOrder": 38,
+      "status": "ready",
+      "number": 38
+    },
+    {
+      "slug": "une-machine-peut-elle-inventer-un-style",
+      "title": "Une machine peut-elle inventer un style ?",
+      "publishDate": "2027-08-03",
+      "publishAt": "2027-08-03T06:00:00Z",
+      "scheduledOrder": 39,
+      "status": "ready",
+      "number": 39
+    },
+    {
+      "slug": "comprendre-une-defaite-oblige-t-il-a-laccepter",
+      "title": "Comprendre une défaite oblige-t-il à l’accepter ?",
+      "publishDate": "2027-08-10",
+      "publishAt": "2027-08-10T06:00:00Z",
+      "scheduledOrder": 40,
+      "status": "ready",
+      "number": 40
+    },
+    {
+      "slug": "peut-on-progresser-sans-changer-lidee-que-lon-a-de-soi",
+      "title": "Peut-on progresser sans changer l’idée que l’on a de soi ?",
+      "publishDate": "2027-08-17",
+      "publishAt": "2027-08-17T06:00:00Z",
+      "scheduledOrder": 41,
+      "status": "ready",
+      "number": 41
+    },
+    {
+      "slug": "la-fidelite-a-son-style-peut-elle-devenir-une-prison",
+      "title": "La fidélité à son style peut-elle devenir une prison ?",
+      "publishDate": "2027-08-24",
+      "publishAt": "2027-08-24T06:00:00Z",
+      "scheduledOrder": 42,
+      "status": "ready",
+      "number": 42
+    },
+    {
+      "slug": "faut-il-tout-comprendre-de-son-passe-pour-mieux-jouer-demain",
+      "title": "Faut-il tout comprendre de son passé pour mieux jouer demain ?",
+      "publishDate": "2027-08-31",
+      "publishAt": "2027-08-31T06:00:00Z",
+      "scheduledOrder": 43,
+      "status": "ready",
+      "number": 43
+    },
+    {
+      "slug": "ladversaire-nous-connait-il-parfois-mieux-que-nous-memes",
+      "title": "L’adversaire nous connaît-il parfois mieux que nous-mêmes ?",
+      "publishDate": "2027-09-07",
+      "publishAt": "2027-09-07T06:00:00Z",
+      "scheduledOrder": 44,
+      "status": "ready",
+      "number": 44
+    },
+    {
+      "slug": "peut-on-etre-fier-dun-progres-que-personne-ne-remarque",
+      "title": "Peut-on être fier d’un progrès que personne ne remarque ?",
+      "publishDate": "2027-09-14",
+      "publishAt": "2027-09-14T06:00:00Z",
+      "scheduledOrder": 45,
+      "status": "ready",
+      "number": 45
+    },
+    {
+      "slug": "devenir-meilleur-signifie-t-il-toujours-devenir-plus-competitif",
+      "title": "Devenir meilleur signifie-t-il toujours devenir plus compétitif ?",
+      "publishDate": "2027-09-21",
+      "publishAt": "2027-09-21T06:00:00Z",
+      "scheduledOrder": 46,
+      "status": "ready",
+      "number": 46
+    },
+    {
+      "slug": "la-patience-est-elle-une-maniere-dagir",
+      "title": "La patience est-elle une manière d’agir ?",
+      "publishDate": "2027-09-28",
+      "publishAt": "2027-09-28T06:00:00Z",
+      "scheduledOrder": 47,
+      "status": "ready",
+      "number": 47
+    },
+    {
+      "slug": "attendre-le-bon-moment-est-ce-deja-decider",
+      "title": "Attendre le bon moment, est-ce déjà décider ?",
+      "publishDate": "2027-10-05",
+      "publishAt": "2027-10-05T06:00:00Z",
+      "scheduledOrder": 48,
+      "status": "ready",
+      "number": 48
+    },
+    {
+      "slug": "le-temps-passe-a-jouer-est-il-du-temps-perdu",
+      "title": "Le temps passé à jouer est-il du temps perdu ?",
+      "publishDate": "2027-10-12",
+      "publishAt": "2027-10-12T06:00:00Z",
+      "scheduledOrder": 49,
+      "status": "ready",
+      "number": 49
+    },
+    {
+      "slug": "peut-on-transmettre-lexperience-sans-imposer-son-propre-parcours",
+      "title": "Peut-on transmettre l’expérience sans imposer son propre parcours ?",
+      "publishDate": "2027-10-19",
+      "publishAt": "2027-10-19T06:00:00Z",
+      "scheduledOrder": 50,
+      "status": "ready",
+      "number": 50
+    },
+    {
+      "slug": "un-bon-professeur-doit-il-parfois-laisser-son-eleve-se-tromper",
+      "title": "Un bon professeur doit-il parfois laisser son élève se tromper ?",
+      "publishDate": "2027-10-26",
+      "publishAt": "2027-10-26T06:00:00Z",
+      "scheduledOrder": 51,
+      "status": "ready",
+      "number": 51
+    },
+    {
+      "slug": "expliquer-moins-peut-il-permettre-de-mieux-apprendre",
+      "title": "Expliquer moins peut-il permettre de mieux apprendre ?",
+      "publishDate": "2027-11-02",
+      "publishAt": "2027-11-02T06:00:00Z",
+      "scheduledOrder": 52,
+      "status": "ready",
+      "number": 52
+    },
+    {
+      "slug": "le-desaccord-entre-eleves-est-il-un-echec-de-lenseignement",
+      "title": "Le désaccord entre élèves est-il un échec de l’enseignement ?",
+      "publishDate": "2027-11-09",
+      "publishAt": "2027-11-09T06:00:00Z",
+      "scheduledOrder": 53,
+      "status": "ready",
+      "number": 53
+    }
+  ]
+}

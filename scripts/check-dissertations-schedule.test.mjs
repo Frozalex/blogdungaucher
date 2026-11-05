@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {validateSchedule} from './check-dissertations-schedule.mjs';
+const plan=JSON.parse(fs.readFileSync(new URL('../docs/dissertations-100/programmes.json',import.meta.url)));
+const content=slug=>{try{return fs.readFileSync(new URL(`../src/content/dissertations/${slug}.md`,import.meta.url),'utf8');}catch{return null;}};
+test('53 mardis futurs sans doublon',()=>assert.deepEqual(validateSchedule(plan,content).errors,[]));
+test('un doublon de mardi est refusé',()=>{const p=structuredClone(plan);p.entries[1].publishAt=p.entries[0].publishAt;assert(validateSchedule(p,content).errors.some(e=>e.includes('Créneau incorrect')));});
+test('un sujet en pause ne peut avoir de date active',()=>{const p=structuredClone(plan);p.entries[0].status='deferred';assert(validateSchedule(p,content).errors.some(e=>e.includes('en pause')));});
+test('le projet ne prétend pas contenir 100 textes prêts',()=>assert(validateSchedule(plan,content,{requireComplete:true}).errors.some(e=>e.includes('53/100'))));
+test('le dépôt initial doit précéder la première date',()=>assert(validateSchedule(plan,content,{initialDeployment:true,now:new Date('2026-11-10T06:00:00Z')}).errors.some(e=>e.includes('rétroactive'))));

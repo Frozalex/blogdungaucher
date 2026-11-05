@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/article-videos/materialize.mjs && node scripts/article-videos/verify.mjs && node scripts/generate-og-png.mjs && node scripts/generate-image-variants.mjs && node scripts/check-publish-weekly.mjs && node scripts/generate-pinterest.mjs && astro build && pagefind --site dist --glob \"{fr,en,pt-br,nl}/blog/**/*.html\" && node scripts/strip-inline-script-comments.mjs && node scripts/add-image-srcset.mjs && node scripts/add-image-dimensions.mjs && node scripts/defer-article-images.mjs && node scripts/finalize-public-navigation.mjs && node scripts/verify-dist-urls.mjs && node scripts/check-dead-links.mjs && node scripts/check-pinterest.mjs",
+    "build": "node scripts/article-videos/materialize.mjs && node scripts/article-videos/verify.mjs && node scripts/generate-og-png.mjs && node scripts/generate-image-variants.mjs && node scripts/check-publish-weekly.mjs && node scripts/check-dissertations-schedule.mjs && node scripts/generate-pinterest.mjs && astro build && pagefind --site dist --glob \"{fr,en,pt-br,nl}/blog/**/*.html\" && node scripts/strip-inline-script-comments.mjs && node scripts/add-image-srcset.mjs && node scripts/add-image-dimensions.mjs && node scripts/defer-article-images.mjs && node scripts/finalize-public-navigation.mjs && node scripts/verify-dist-urls.mjs && node scripts/check-dead-links.mjs && node scripts/check-pinterest.mjs && node scripts/check-dissertations-dist.mjs",
     "build:clean": "node scripts/build-clean.mjs",
     "strip:em-dash": "node scripts/strip-em-dash.mjs",
     "strip:em-dash:dry": "node scripts/strip-em-dash.mjs --dry",
@@ -41,7 +41,10 @@
     "article-videos:review": "node scripts/article-videos/review.mjs",
     "article-videos:render": "node scripts/article-videos/render.mjs --include-future",
     "article-videos:verify": "node scripts/article-videos/verify.mjs",
-    "article-videos:materialize": "node scripts/article-videos/materialize.mjs"
+    "article-videos:materialize": "node scripts/article-videos/materialize.mjs",
+    "check:dissertations": "node scripts/check-dissertations-schedule.mjs",
+    "check:dissertations:initial": "node scripts/check-dissertations-schedule.mjs --initial-deployment",
+    "check:dissertations:dist": "node scripts/check-dissertations-dist.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
