@@ -20,3 +20,9 @@ Les 153 résumés vidéo canoniques restent présents, dont 97 publiables à la 
 - Parcours testés : sauvegarde et reprise, progression conservée, brouillon par angle, minuterie, recherche filtrée, sommaire et élargissement du texte, correction des positions, mode concentration, thème sombre, menu mobile et validation d'adresse invalide.
 
 La mesure des inscriptions signifie acceptation par le serveur, sans prétendre vérifier réception ou double confirmation. Aucun numéro réel de la lettre n'est envoyé. Le nouveau texte de bienvenue du proxy reste conditionné au rechargement du service serveur existant ; aucune activation serveur n'est prétendue sans observation. Aucun score global squirrelscan n'est revendiqué, l'outil n'étant pas disponible.
+
+## Contrôle complémentaire des dates historiques
+
+La construction courante sur GitHub a réussi. Les trois instantanés de dates anciennes ont initialement refusé les révisions réelles du 13 novembre comme futures par rapport à leur horloge. Un correctif ciblé omet `lastmod` pour ces seules révisions dans un instantané explicitement chargé par `scripts/test-build-clock.mjs`. La construction normale continue de refuser toute date future. Les dates éditoriales des cinq dossiers sont conservées. Quatre tests supplémentaires couvrent ces cas.
+
+La compilation historique locale au 1er novembre à 06 h UTC réussit après le correctif (422 pages). Le sitemap a été contrôlé : aucune date future et aucune date de révision inventée. Analyse Astro du correctif : zéro erreur, zéro avertissement.

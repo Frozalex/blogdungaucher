@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import ts from 'typescript';
+const code=ts.transpileModule(readFileSync(new URL('../src/utils/sitemap-lastmod.ts',import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext}}).outputText;
+const {sitemapLastmod}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
+const snapshot=new Date('2026-11-01T06:00:00Z'),revision=new Date('2026-11-13T00:00:00Z');
+test('a real build rejects future lastmod dates',()=>assert.throws(()=>sitemapLastmod(revision,snapshot,'/fr/blog/test/'),/lastmod futur/));
+test('a historical snapshot omits later revisions without inventing an older lastmod',()=>assert.equal(sitemapLastmod(revision,snapshot,'/fr/blog/test/',true),undefined));
+test('a current build preserves the actual editorial revision date',()=>assert.equal(sitemapLastmod(revision,new Date('2026-11-13T16:00:00Z'),'/fr/blog/test/'),revision.toISOString()));
+test('dates already reached and pages without dates keep their normal behavior',()=>{assert.equal(sitemapLastmod(snapshot,snapshot,'/fr/blog/test/',true),snapshot.toISOString());assert.equal(sitemapLastmod(undefined,snapshot,'/fr/'),undefined);});

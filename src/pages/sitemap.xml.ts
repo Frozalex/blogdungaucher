@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { sitemapLastmod } from "../utils/sitemap-lastmod";
 import { getCollection } from "astro:content";
 
 import { siteConfig, staticRoutes, enStaticRoutes, ptBrStaticRoutes, nlStaticRoutes, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, isIndexedLang } from "../data/site";
@@ -79,13 +80,12 @@ export const GET: APIRoute = async () => {
   function lastmodFor(frPath: string): string | undefined {
     const post = posts.find((p) => getPostUrl(p) === frPath);
     const date = post ? (post.data.updatedDate ?? post.data.publishDate) : extraDates.get(frPath);
-    if (!date) return undefined;
-    if (date > buildTime) {
-      throw new Error(
-        `sitemap: lastmod futur (${date.toISOString()}) pour ${frPath} — vérifier updatedDate/publishDate.`,
-      );
-    }
-    return date.toISOString();
+    // Explicit launch-boundary tests rebuild today's sources at a past date.
+    // Omit later revisions in those snapshots; normal builds still reject future dates.
+    const historicalSnapshot = Boolean(process.env.SITE_BUILD_DATE)
+      && new Date(process.env.SITE_BUILD_DATE!).getTime() === buildTime.getTime()
+      && (process.env.NODE_OPTIONS ?? "").includes("scripts/test-build-clock.mjs");
+    return sitemapLastmod(date, buildTime, frPath, historicalSnapshot);
   }
 
   function enPathFor(frPath: string): string {
