@@ -1,0 +1,27 @@
+---
+import {getLocalizedPostText,getPostHeroSrc,getPostUrlLang,formatDateForLang,type BlogEntry} from '../utils/blog';
+import {buildSrcset} from '../utils/image-variants';
+import {categoryMap} from '../data/site';
+import {t} from '../i18n/translations';
+import type {SiteLang} from '../utils/lang-paths';
+interface Props {post:BlogEntry;lang:SiteLang;featured?:boolean;}
+const {post,lang,featured=false}=Astro.props;
+const text=await getLocalizedPostText(post,lang),image=getPostHeroSrc(post),url=await getPostUrlLang(post,lang);
+const read={fr:"Lire l’article",en:"Read the article","pt-br":"Ler o artigo",nl:"Lees het artikel"}[lang];
+---
+<article class:list={['bv-post-card',{'bv-post-card--featured':featured}]}>
+ {image&&<a class="bv-post-visual" href={url} tabindex="-1" aria-hidden="true"><img src={image} srcset={buildSrcset(image)} sizes="(min-width:1100px) 335px,(min-width:601px) 38vw,90vw" alt="" width="1200" height="800" loading={featured?'eager':'lazy'} fetchpriority={featured?'high':'auto'} /></a>}
+ <div class="bv-post-copy"><span class="bv-post-tag" style={`--tag:${categoryMap[post.data.category].accent}`}>{t(lang,`categories.${post.data.category}.label`)}</span><h2><a href={url}>{text.title}</a></h2><p>{text.excerpt}</p><div class="bv-post-meta"><span>{post.data.author}</span><span aria-hidden="true">·</span><time datetime={post.data.publishDate.toISOString()}>{formatDateForLang(post.data.publishDate,lang)}</time></div><a class="bv-post-read" href={url}>{read}<span aria-hidden="true">↗</span></a></div>
+</article>
+<style>
+.bv-post-card{display:grid;grid-template-columns:42% minmax(0,1fr);gap:25px;align-items:center;padding:26px;border:1px solid var(--bv-line);border-radius:20px;background:var(--bv-paper);min-width:0}
+.bv-post-card--featured{outline:4px solid var(--green-border);outline-offset:-2px}
+.bv-post-visual{display:block;aspect-ratio:3/2;overflow:hidden;border-radius:10px}.bv-post-visual img{display:block;width:100%;height:100%;object-fit:cover}
+.bv-post-tag{display:inline-block;color:var(--text-main);border-bottom:2px solid var(--tag);background:var(--bv-tint);padding:3px 9px;border-radius:4px;font-size:11px;line-height:1.4}
+.bv-post-copy h2{font:650 25px/1.2 var(--font-body);letter-spacing:-.035em;margin:13px 0}.bv-post-copy h2 a{color:var(--text-main)}.bv-post-copy h2 a:hover{color:var(--green)}
+.bv-post-copy>p{font-size:14px;line-height:1.65;color:var(--text-muted);margin:0 0 14px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.bv-post-meta{display:flex;gap:8px;flex-wrap:wrap;font-size:11px;color:var(--text-muted);margin-bottom:18px}
+.bv-post-read{display:inline-flex;align-items:center;gap:14px;padding:7px 16px;border:1px solid var(--bv-line);border-radius:30px;box-shadow:3px 3px 0 var(--bv-ink);font-size:12px;font-weight:550;color:var(--text-main)}
+@media(max-width:1100px){.bv-post-card{grid-template-columns:39% minmax(0,1fr);padding:22px;gap:20px}.bv-post-copy h2{font-size:22px}}
+@media(max-width:600px){.bv-post-card{display:block;padding:19px}.bv-post-visual{margin-bottom:20px}.bv-post-copy h2{font-size:26px}.bv-post-copy>p{font-size:15px}.bv-post-read{min-height:40px;font-size:13px}}
+</style>

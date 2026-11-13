@@ -13,6 +13,11 @@ const payload = JSON.stringify({ topics, specialties, officialResources }).repla
     <div><span class="resource-kicker">L’atelier du Gaucher</span><h2>Une question.<br />Ton chemin pour y répondre.</h2></div>
     <p>Explore {topics.length} thèmes et {topics.length * 2} problématiques préparées. Choisis un angle, puis reprends le plan et les textes avec tes exemples et tes mots.</p>
   </div>
+  <div class="oral-builder__draft-bar" data-draft-bar hidden>
+    <div><label for="oral-saved-drafts">Mes brouillons sur cet appareil</label><select id="oral-saved-drafts" class="resource-field" data-saved-drafts><option value="">Aucun brouillon enregistré</option></select></div>
+    <p role="status" aria-live="polite" data-save-status>Les modifications sont enregistrées sur cet appareil.</p>
+    <button type="button" class="oral-builder__text-button" data-forget-drafts>Effacer mes brouillons</button>
+  </div>
   <noscript><p class="oral-builder__notice">Active JavaScript pour chercher et choisir une autre problématique. L’exemple ci-dessous reste lisible et modifiable.</p></noscript>
   <form class="oral-builder__filters" data-builder-form hidden>
     <div class="oral-builder__field"><label for="oral-specialty">Ta spécialité ou ta série</label><select id="oral-specialty" name="specialty" class="resource-field"><option value="">Toutes les spécialités et séries</option><optgroup label="Voie générale — spécialités">{specialties.filter(s => s.track === "general").map(s => <option value={s.id}>{s.label}</option>)}</optgroup><optgroup label="Voie technologique — séries">{specialties.filter(s => s.track === "techno").map(s => <option value={s.id}>{s.label}</option>)}</optgroup></select></div>
@@ -33,172 +38,73 @@ const payload = JSON.stringify({ topics, specialties, officialResources }).repla
   <section class="oral-builder__sheet" data-sheet aria-labelledby="oral-sheet-heading">
     <div class="oral-builder__sheet-top"><span class="resource-kicker">Ta fiche de préparation</span><span data-sheet-specialties>{initial.specialties.map(id => specialties.find(s => s.id === id)?.short).join(" · ")}</span></div>
     <h3 id="oral-sheet-heading" tabindex="-1">{initial.title}</h3>
-    <p class="oral-builder__help">Tout le texte de la fiche est modifiable. Tes modifications restent disponibles quand tu changes d’angle. Copie ou télécharge ta fiche avant de quitter ou de recharger cette page.</p>
+    <p class="oral-builder__help">Tout le texte de la fiche est modifiable. Tes modifications restent disponibles quand tu changes d’angle. La barre des brouillons indique si tes modifications sont enregistrées sur cet appareil. Télécharge une copie pour les retrouver ailleurs.</p>
+    <nav class="oral-builder__journey" aria-label="Les étapes de ta préparation">
+      <a href="#oral-step-question" data-step-link="question"><span>01</span> Choisir ma question</a>
+      <a href="#oral-step-reasoning" data-step-link="reasoning"><span>02</span> Construire ma réponse</a>
+      <a href="#oral-step-sources" data-step-link="sources"><span>03</span> Vérifier mes sources</a>
+      <a href="#oral-step-objections" data-step-link="objections"><span>04</span> Préparer l’échange</a>
+      <a href="#oral-step-practice" data-step-link="practice"><span>05</span> Répéter à voix haute</a>
+    </nav>
+    <p class="oral-builder__progress" data-progress role="status" aria-live="polite">0 étape sur 5 cochée</p>
     <div class="oral-builder__angles" role="group" aria-label="Choisir un angle pour ce thème" data-angle-controls hidden>{initial.variants.map((v, i) => <button type="button" data-angle={i} aria-pressed={i === 0}>{v.angle}</button>)}</div>
     <div class="oral-builder__notions" data-notions>{initial.notions.map(notion => <span>{notion}</span>)}</div>
-    <label class="oral-builder__label" for="oral-question">Ta problématique</label>
+    <div id="oral-step-question" class="oral-builder__step"><label class="oral-builder__label" for="oral-question">Ta problématique</label>
     <textarea id="oral-question" class="oral-builder__question" rows="3" data-draft="question">{initial.variants[0].question}</textarea>
-    <div class="oral-builder__block"><label class="oral-builder__label" for="oral-introduction">Mini introduction</label><textarea id="oral-introduction" rows="5" data-draft="introduction">{buildIntroduction(initial, 0)}</textarea></div>
+      <label class="oral-builder__check"><input type="checkbox" data-step="question" /> Je peux expliquer ma question et son lien avec le programme.</label>
+    </div>
+    <div id="oral-step-reasoning" class="oral-builder__step"><div class="oral-builder__block"><label class="oral-builder__label" for="oral-introduction">Mini introduction</label><textarea id="oral-introduction" rows="5" data-draft="introduction">{buildIntroduction(initial, 0)}</textarea></div>
     <div class="oral-builder__block"><h4 class="oral-builder__label">Le plan proposé</h4><p class="oral-builder__help">Trois étapes pour cet angle. Tu peux en changer les titres, les arguments et les exemples.</p><ol class="oral-builder__plan">{initial.variants[0].parts.map((part, i) => <li><label class="oral-builder__part-label" for={`oral-part-${i}`}>Partie {i + 1}</label><textarea id={`oral-part-${i}`} class="oral-builder__part-title" rows="2" aria-label={`Titre de la partie ${i + 1}`} data-draft={`part-${i}`}>{part.title}</textarea><label class="oral-builder__visually-hidden" for={`oral-points-${i}`}>Arguments et exemples de la partie {i + 1}</label><textarea id={`oral-points-${i}`} rows="3" data-draft={`points-${i}`}>{part.points.join("\n")}</textarea></li>)}</ol></div>
     <div class="oral-builder__block"><label class="oral-builder__label" for="oral-conclusion">Mini conclusion</label><textarea id="oral-conclusion" rows="4" data-draft="conclusion">{buildConclusion(initial, 0)}</textarea></div>
+      <label class="oral-builder__check"><input type="checkbox" data-step="reasoning" /> Chaque partie apporte un argument et un exemple que je sais expliquer.</label>
+    </div>
     <aside class="oral-builder__personalize"><h4>Pour en faire ton sujet</h4><p data-personalize>{initial.personalize}</p><label for="oral-notes">Tes exemples, tes sources et ton lien avec le cours</label><textarea id="oral-notes" rows="4" data-draft="notes" placeholder="Note ici le cas que tu étudieras et les références que tu as consultées."></textarea></aside>
+    <section id="oral-step-sources" class="oral-builder__step oral-builder__work-block" aria-labelledby="oral-sources-heading">
+      <h4 id="oral-sources-heading">Vérifier ce que tu affirmes</h4>
+      <p class="oral-builder__help">Pour chaque affirmation importante, retrouve une source que tu as réellement consultée. Note ce qu’elle établit, puis ses limites. Une adresse seule ne constitue pas une preuve.</p>
+      <label for="oral-sources">Affirmation, référence, résultat retenu et limite</label>
+      <textarea id="oral-sources" rows="6" data-draft="sources" placeholder="Affirmation à étayer :&#10;Auteur, titre, date et lien :&#10;Ce que j’ai effectivement lu :&#10;Ce que cette source permet de conclure, et ce qu’elle ne permet pas :"></textarea>
+      <label class="oral-builder__check"><input type="checkbox" data-step="sources" /> J’ai consulté mes références et vérifié les chiffres, citations et exemples que j’utilise.</label>
+    </section>
+    <section id="oral-step-objections" class="oral-builder__step oral-builder__work-block" aria-labelledby="oral-objections-heading">
+      <h4 id="oral-objections-heading">Préparer l’échange avec le jury</h4>
+      <p class="oral-builder__help">Cherche une objection à ton raisonnement et une notion à expliquer à quelqu’un qui ne suit pas ta spécialité. Prépare une réponse précise ; si tu ne sais pas, indique ce qu’il faudrait vérifier.</p>
+      <label for="oral-objections">Questions ou objections possibles</label><textarea id="oral-objections" rows="4" data-draft="objections" placeholder="Dans quel cas mon raisonnement ne fonctionne-t-il plus ? Comment définir cette notion sans jargon ?"></textarea>
+      <label for="oral-responses">Mes réponses et les points à retravailler</label><textarea id="oral-responses" rows="4" data-draft="responses"></textarea>
+      <label class="oral-builder__check"><input type="checkbox" data-step="objections" /> Je peux répondre à une objection et expliquer les limites de ma réponse.</label>
+    </section>
+    <section id="oral-step-practice" class="oral-builder__step oral-builder__work-block" aria-labelledby="oral-practice-heading">
+      <h4 id="oral-practice-heading">Répéter à voix haute</h4>
+      <p class="oral-builder__help" data-practice-guidance>Le chronomètre mesure ton entraînement. Ajuste l’objectif à l’exercice choisi.</p>
+      <div class="oral-builder__timer" data-timer-controls hidden>
+        <div><label for="oral-timer-target">Objectif en minutes</label><input id="oral-timer-target" class="resource-field" type="number" min="1" max="60" step="1" value="10" /></div>
+        <div class="oral-builder__clock"><span>Temps écoulé</span><output data-timer-output role="timer" aria-live="off">00:00</output></div>
+        <button class="resource-button" type="button" data-timer-toggle>Démarrer</button><button class="oral-builder__secondary" type="button" data-timer-reset>Remettre à zéro</button>
+        <p role="status" aria-live="polite" data-timer-status></p>
+      </div>
+      <label for="oral-practice-notes">Après l’essai : ce qui est clair, ce qui manque, ce que je reprends</label><textarea id="oral-practice-notes" rows="4" data-draft="practice-notes"></textarea>
+      <label class="oral-builder__check"><input type="checkbox" data-step="practice" /> J’ai répété à voix haute et noté une amélioration concrète pour le prochain essai.</label>
+    </section>
+    <div class="oral-builder__draft-actions" data-draft-actions hidden><button class="oral-builder__text-button" type="button" data-reset-draft>Repartir du modèle pour cet angle</button></div>
     <div class="oral-builder__export" data-export hidden><button class="resource-button" type="button" data-copy>Copier ma fiche</button><button type="button" class="oral-builder__secondary" data-download>Télécharger le texte ↓</button><button type="button" class="oral-builder__secondary" data-print>Imprimer / PDF</button><p role="status" aria-live="polite" data-export-status></p></div>
     <div class="oral-builder__copy-fallback" data-copy-fallback hidden><label for="oral-copy-text">La copie automatique n’est pas disponible. Sélectionne ce texte pour le copier.</label><textarea id="oral-copy-text" rows="8" readonly></textarea></div>
     <div class="oral-builder__reading" data-reading hidden><h4>Pour approfondir cet angle</h4><ul data-reading-list></ul></div>
     <div class="oral-builder__sources"><h4>Les repères officiels</h4><p>Les liens ci-dessous cadrent l’épreuve et les programmes. Les problématiques sont des propositions du catalogue, à relier à ton cours et à discuter avec tes enseignants.</p><ul data-official-resources>{officialResources.slice(0, 3).map(resource => <li><a href={resource.url} target="_blank" rel="noopener noreferrer">{resource.label} <span class="oral-builder__visually-hidden">(nouvel onglet)</span>↗</a></li>)}</ul></div>
     <p class="oral-builder__print-credit">Fiche préparée avec l’atelier Grand oral du Blog d’un Gaucher · blogdungaucher.com/fr/grand-oral/generateur/</p>
   </section>
+  <dialog class="oral-builder__confirmation" data-confirm aria-labelledby="oral-confirm-title" aria-describedby="oral-confirm-message">
+    <h3 id="oral-confirm-title">Avant de continuer</h3><p id="oral-confirm-message" data-confirm-message></p>
+    <div><button class="oral-builder__secondary" type="button" data-confirm-cancel>Annuler</button><button class="resource-button" type="button" data-confirm-accept>Confirmer</button></div>
+  </dialog>
   <script type="application/json" data-oral-catalog set:html={payload} />
 </section>
 
 <script>
-  import { buildIntroduction, buildConclusion, matchesOralTopic } from "../utils/oral-generator";
-  import type { OralTopic, SpecialtyId } from "../data/oral-generator/types";
-
-  function initOralGenerator() {
-    const candidate = document.querySelector<HTMLElement>("[data-oral-generator]");
-    if (!candidate || candidate.dataset.bound) return;
-    const root = candidate;
-    const payload = root.querySelector("[data-oral-catalog]")?.textContent;
-    if (!payload) return;
-    const { topics, specialties, officialResources } = JSON.parse(payload) as {
-      topics: OralTopic[];
-      specialties: { id: SpecialtyId; short: string; track: string }[];
-      officialResources: { label: string; url: string }[];
-    };
-    root.dataset.bound = "true";
-    const find = <T extends HTMLElement>(selector: string) => root.querySelector<T>(selector)!;
-    const form = find<HTMLFormElement>("[data-builder-form]");
-    const primary = find<HTMLSelectElement>("#oral-specialty");
-    const second = find<HTMLSelectElement>("#oral-second");
-    const theme = find<HTMLSelectElement>("#oral-theme");
-    const query = find<HTMLInputElement>("#oral-query");
-    const fields = [...root.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>("[data-draft]")];
-    const printValues = new Map<string, HTMLElement>();
-    fields.forEach(field => {
-      const mirror = document.createElement("p"); mirror.className = "oral-builder__print-value";
-      mirror.dataset.printFor = field.dataset.draft!; mirror.setAttribute("aria-hidden", "true");
-      field.after(mirror); printValues.set(field.dataset.draft!, mirror);
-    });
-    const drafts = new Map<string, Record<string, string>>();
-    let selected = topics[0];
-    let angle = 0;
-    let matches: { topic: OralTopic; index: number }[] = [];
-    let offset = 0;
-    const pageSize = 3;
-    const key = () => `${selected.id}:${angle}`;
-    const label = (topic: OralTopic) => topic.specialties.map(id => specialties.find(s => s.id === id)?.short ?? id).join(" · ");
-    function resize(field: HTMLTextAreaElement) {
-      field.style.height = "auto";
-      field.style.height = `${field.scrollHeight + 3}px`;
-    }
-    function saveDraft() {
-      drafts.set(key(), Object.fromEntries(fields.map(field => [field.dataset.draft!, field.value])));
-      fields.forEach(field => { printValues.get(field.dataset.draft!)!.textContent = field.value; });
-    }
-    function defaults(topic: OralTopic, index: number): Record<string, string> {
-      const variant = topic.variants[index];
-      return { question: variant.question, introduction: buildIntroduction(topic, index), conclusion: buildConclusion(topic, index), notes: "", ...Object.fromEntries(variant.parts.flatMap((part, i) => [[`part-${i}`, part.title], [`points-${i}`, part.points.join("\n")]])) };
-    }
-    function addLink(list: HTMLElement, href: string, text: string) {
-      const item = document.createElement("li");
-      const link = document.createElement("a");
-      link.href = href; link.textContent = `${text} ↗`; link.target = "_blank"; link.rel = "noopener noreferrer";
-      link.setAttribute("aria-label", `${text} (nouvel onglet)`);
-      item.append(link); list.append(item);
-    }
-    function choose(topic: OralTopic, index: number, moveFocus = true) {
-      saveDraft(); selected = topic; angle = index;
-      const draft = drafts.get(key()) ?? defaults(topic, index);
-      fields.forEach(field => { field.value = draft[field.dataset.draft!] ?? ""; if (field instanceof HTMLTextAreaElement) resize(field); });
-      fields.forEach(field => { printValues.get(field.dataset.draft!)!.textContent = field.value; });
-      find("#oral-sheet-heading").textContent = topic.title;
-      find("[data-sheet-specialties]").textContent = label(topic);
-      find("[data-personalize]").textContent = topic.personalize;
-      const notions = find("[data-notions]"); notions.replaceChildren();
-      topic.notions.forEach(notion => { const span = document.createElement("span"); span.textContent = notion; notions.append(span); });
-      root.querySelectorAll<HTMLButtonElement>("[data-angle]").forEach((button, i) => { button.textContent = topic.variants[i].angle; button.setAttribute("aria-pressed", String(index === i)); });
-      const resources = find("[data-official-resources]"); resources.replaceChildren();
-      const isStav = topic.specialties.includes("stav");
-      officialResources.filter((_, i) => isStav ? i === 3 : i < 3).forEach(r => addLink(resources, r.url, r.label));
-      const reading = find("[data-reading-list]"); reading.replaceChildren();
-      (topic.articles ?? []).forEach(slug => addLink(reading, `/fr/blog/${slug}/`, slug.startsWith("guide-") ? "Ouvrir le guide pour travailler cet exemple" : "Explorer le sujet sur le blog"));
-      find("[data-reading]").hidden = !reading.children.length;
-      find("[data-export-status]").textContent = "";
-      find("[data-copy-fallback]").hidden = true;
-      renderCards();
-      if (moveFocus) { find("#oral-sheet-heading").focus(); find("[data-sheet]").scrollIntoView({ block: "start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" }); }
-    }
-    function renderCards() {
-      const results = find("[data-results]"); results.replaceChildren();
-      const subset = matches.slice(offset, offset + pageSize);
-      for (const { topic, index } of subset) {
-        const card = document.createElement("button"); card.type = "button"; card.className = "oral-builder__card";
-        card.setAttribute("aria-pressed", String(topic.id === selected.id && index === angle));
-        const meta = document.createElement("span"); meta.className = "oral-builder__card-meta"; meta.textContent = `${label(topic)} · ${topic.variants[index].angle}`;
-        const title = document.createElement("span"); title.className = "oral-builder__card-title"; title.textContent = topic.variants[index].question;
-        const action = document.createElement("span"); action.className = "oral-builder__card-action"; action.textContent = "Construire ma fiche →";
-        card.append(meta, title, action); card.addEventListener("click", () => choose(topic, index)); results.append(card);
-      }
-      find("[data-empty]").hidden = matches.length > 0;
-      find("[data-results-count]").textContent = `${matches.length} problématique${matches.length === 1 ? "" : "s"} dans le catalogue pour ces critères`;
-      find("[data-results-range]").textContent = matches.length ? `${offset + 1}–${offset + subset.length} sur ${matches.length}` : "";
-      find<HTMLButtonElement>("[data-previous]").disabled = offset === 0;
-      find<HTMLButtonElement>("[data-next]").disabled = offset + pageSize >= matches.length;
-    }
-    function syncSpecialties() {
-      const tech = specialties.find(s => s.id === primary.value)?.track === "techno";
-      find("[data-second-field]").hidden = tech;
-      second.disabled = tech || !primary.value;
-      for (const option of second.options) option.disabled = option.value !== "" && option.value === primary.value;
-      if (tech || !primary.value || second.value === primary.value) second.value = "";
-      const note = find("[data-track-note]");
-      note.hidden = !tech;
-      note.textContent = primary.value === "stav" ? "STAV : ces pistes concernent l’oral terminal agricole. Relie-les à ton parcours et aux modalités de ton épreuve, accessibles dans la fiche." : "Voie technologique : pars de ton projet et précise les enseignements de spécialité mobilisés. Le filtre porte ici sur ta série.";
-    }
-    function search() {
-      syncSpecialties();
-      const filtered = topics.filter(topic => matchesOralTopic(topic, { specialty: primary.value, second: second.value, theme: theme.value, query: query.value }));
-      matches = [0, 1].flatMap(index => filtered.map(topic => ({ topic, index })));
-      offset = 0;
-      find("[data-sheet]").hidden = matches.length === 0;
-      if (matches.length && !matches.some(m => m.topic.id === selected.id && m.index === angle)) choose(matches[0].topic, matches[0].index, false);
-      else renderCards();
-    }
-    form.addEventListener("submit", event => { event.preventDefault(); search(); });
-    primary.addEventListener("change", search); second.addEventListener("change", search); theme.addEventListener("change", search);
-    query.addEventListener("input", search);
-    // Attendre la remise à zéro native avant de recalculer les résultats.
-    form.addEventListener("reset", () => { setTimeout(() => { search(); query.focus(); }, 0); });
-    find("[data-previous]").addEventListener("click", () => { offset = Math.max(0, offset - pageSize); renderCards(); });
-    find("[data-next]").addEventListener("click", () => { offset = Math.min(Math.max(0, matches.length - 1), offset + pageSize); renderCards(); });
-    root.querySelectorAll<HTMLButtonElement>("[data-angle]").forEach(button => button.addEventListener("click", () => choose(selected, Number(button.dataset.angle), false)));
-    fields.forEach(field => field.addEventListener("input", () => { if (field instanceof HTMLTextAreaElement) resize(field); saveDraft(); }));
-    const text = () => {
-      saveDraft(); const d = drafts.get(key())!;
-      return [selected.specialties.includes("stav") ? "MA FICHE D’ORAL TERMINAL STAV" : "MA FICHE DE GRAND ORAL", label(selected), "", "PROBLÉMATIQUE", d.question, "", "MINI INTRODUCTION", d.introduction, "", "PLAN", ...[0, 1, 2].flatMap(i => [`${i + 1}. ${d[`part-${i}`]}`, d[`points-${i}`], ""]), "MINI CONCLUSION", d.conclusion, "", "POUR EN FAIRE MON SUJET", selected.personalize, "", "MES EXEMPLES ET MES SOURCES", d.notes, "", "REPÈRES OFFICIELS", ...[...find("[data-official-resources]").querySelectorAll<HTMLAnchorElement>("a")].map(a => `${a.textContent} : ${a.href}`), "", "Préparé avec le Blog d’un Gaucher — https://blogdungaucher.com/fr/grand-oral/generateur/"].join("\n");
-    };
-    find("[data-copy]").addEventListener("click", async () => {
-      const value = text();
-      try { await navigator.clipboard.writeText(value); find("[data-export-status]").textContent = "Ta fiche a été copiée."; }
-      catch { const field = find<HTMLTextAreaElement>("#oral-copy-text"); field.value = value; find("[data-copy-fallback]").hidden = false; field.focus(); field.select(); find("[data-export-status]").textContent = "Sélectionne et copie le texte ci-dessous."; }
-    });
-    find("[data-download]").addEventListener("click", () => {
-      const url = URL.createObjectURL(new Blob([text()], { type: "text/plain;charset=utf-8" }));
-      const link = document.createElement("a"); link.href = url; link.download = `grand-oral-${selected.id}-${angle + 1}.txt`; link.click();
-      setTimeout(() => URL.revokeObjectURL(url), 1000);
-      find("[data-export-status]").textContent = "Le téléchargement de ta fiche a été lancé.";
-    });
-    find("[data-print]").addEventListener("click", () => { fields.forEach(field => { if (field instanceof HTMLTextAreaElement) resize(field); }); window.print(); });
-    form.hidden = false; find("[data-suggestions]").hidden = false; find("[data-angle-controls]").hidden = false; find("[data-export]").hidden = false;
-    search(); choose(selected, 0, false);
-  }
-  initOralGenerator();
-  document.addEventListener("astro:page-load", initOralGenerator);
+  import "../scripts/oral-workshop";
 </script>
 
 <style is:global>
-  .oral-builder { --oral-ink: #6940a3; --oral-wash: color-mix(in srgb, var(--oral-ink) 6%, var(--bg)); margin: 1rem 0 3rem; }
+  .oral-builder { --oral-ink: var(--green, #315649); --oral-wash: var(--bg-warm, #E8EDE2); margin: 1rem 0 3rem; }
   .oral-builder__intro { display:grid; grid-template-columns:1fr 1fr; align-items:end; gap:2rem; padding:1.5rem 0 2rem; border-top:3px solid var(--oral-ink); }
   .oral-builder .resource-kicker { color:var(--oral-ink); }
   .oral-builder__intro h2 { font:550 clamp(1.8rem,3vw,2.8rem)/1.13 var(--font-serif); letter-spacing:-.035em; margin:.65rem 0 0; }
@@ -260,12 +166,48 @@ const payload = JSON.stringify({ topics, specialties, officialResources }).repla
   .oral-builder__print-credit { display:none; }
   .oral-builder__visually-hidden { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }
   .oral-builder [hidden] { display:none!important; }
-  @media(prefers-color-scheme:dark) { html:not([data-theme="light"]) .oral-builder { --oral-ink:#c7a5ef; } html:not([data-theme="light"]) .oral-builder :is(.resource-button,.oral-builder__angles button[aria-pressed="true"]) { color:#1a1025; } }
-  [data-theme="dark"] .oral-builder { --oral-ink:#c7a5ef; }
-  [data-theme="dark"] .oral-builder :is(.resource-button,.oral-builder__angles button[aria-pressed="true"]) { color:#1a1025; }
   .oral-builder__print-value { display:none; }
   @media(max-width:800px) { .oral-builder__cards { grid-template-columns:1fr; } .oral-builder__card { padding:1rem; } .oral-builder__card-title { margin:.5rem 0 .8rem; } .oral-builder__intro { grid-template-columns:1fr; gap:1rem; } }
   @media(max-width:600px) { .oral-builder__filters { grid-template-columns:1fr; padding:1rem; } .oral-builder__pagination { gap:1rem; flex-wrap:wrap; } .oral-builder__plan li { padding-left:.65rem; } .oral-builder__export>* { width:100%; justify-content:center; text-align:center; } }
+
+  .oral-builder__filters,.oral-builder__sheet,.oral-builder__card,.oral-builder__personalize,.oral-builder__work-block,.oral-builder__draft-bar { border-radius:18px; }
+  .oral-builder__sheet,.oral-builder__card { background:var(--bg-card,var(--bg)); }
+  .oral-builder :is(textarea,select,input.resource-field) { border-radius:10px; }
+  .oral-builder :is(.resource-button,.oral-builder__secondary,.oral-builder__angles button) { border-radius:30px; }
+  .oral-builder .resource-button { border:1px solid var(--text-main);box-shadow:3px 3px 0 var(--text-main);color:var(--on-green,#fff); }
+  .oral-builder__draft-bar { display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) auto;align-items:center;gap:1.2rem;padding:1.2rem;background:var(--bg-warm);border:1px solid var(--border-strong);margin:0 0 1.5rem; }
+  .oral-builder__draft-bar>div { min-width:0; }
+  .oral-builder__draft-bar label { display:block;font-size:.75rem;font-weight:600;margin-bottom:.45rem; }
+  .oral-builder__draft-bar select { width:100%;text-overflow:ellipsis; }
+  .oral-builder__draft-bar p { margin:0;font-size:.78rem;line-height:1.6;color:var(--text-muted); }
+  .oral-builder__journey { display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.6rem;margin:1.5rem 0 .7rem; }
+  .oral-builder__journey a { padding:.85rem;border:1px solid var(--border-strong);border-radius:12px;color:var(--text-main);font-size:.8rem;line-height:1.5; }
+  .oral-builder__journey span { display:block;color:var(--oral-ink);font-weight:700;font-variant-numeric:tabular-nums;margin-bottom:.4rem; }
+  .oral-builder__journey .is-complete { background:var(--oral-wash);border-color:var(--oral-ink); }
+  .oral-builder__progress { font-size:.78rem;color:var(--text-muted);margin:0 0 1.5rem; }
+  .oral-builder__step { scroll-margin-top:calc(var(--navbar-h,5rem) + 1.5rem); }
+  .oral-builder__check { display:flex!important;align-items:flex-start;gap:.65rem;font-size:.83rem!important;line-height:1.65;margin:1rem 0 0!important;cursor:pointer; }
+  .oral-builder__check input { width:1.1rem;height:1.1rem;flex:0 0 auto;margin:.2rem 0 0;accent-color:var(--oral-ink); }
+  .oral-builder__work-block { border:1px solid var(--border-strong);padding:clamp(1rem,3vw,1.6rem);margin:1.5rem 0;background:var(--bg-card,var(--bg)); }
+  .oral-builder__work-block h4 { margin:0 0 .65rem;font:600 1.25rem/1.3 var(--font-body); }
+  .oral-builder__work-block>label:not(.oral-builder__check) { display:block;font-size:.8rem;font-weight:550;margin:1.2rem 0 .5rem; }
+  .oral-builder__work-block a { color:var(--oral-ink);text-decoration:underline;text-underline-offset:.2em; }
+  .oral-builder__timer { display:flex;flex-wrap:wrap;align-items:end;gap:1rem;margin:1.2rem 0;padding:1.2rem;border-radius:14px;background:var(--oral-wash); }
+  .oral-builder__timer label,.oral-builder__clock>span { display:block;font-size:.74rem;margin-bottom:.45rem; }
+  .oral-builder__timer input { width:6rem; }
+  .oral-builder__clock { margin-right:auto; }
+  .oral-builder__clock output { font:650 2.4rem/1 var(--font-body);font-variant-numeric:tabular-nums;color:var(--oral-ink); }
+  .oral-builder__clock output.is-over-target { text-decoration:underline;text-underline-offset:.15em; }
+  .oral-builder__timer>p { flex-basis:100%;font-size:.78rem;line-height:1.6;margin:0; }
+  .oral-builder__draft-actions { margin:1.3rem 0; }
+  .oral-builder__confirmation { width:min(520px,calc(100% - 2rem));max-width:none;border:1px solid var(--border-strong);border-radius:20px;background:var(--bg-card,var(--bg));color:var(--text-main);padding:1.7rem; }
+  .oral-builder__confirmation::backdrop { background:#17221b80; }
+  .oral-builder__confirmation h3 { margin:0 0 .75rem;font:600 1.4rem/1.25 var(--font-body); }
+  .oral-builder__confirmation p { font-size:.95rem;line-height:1.75; }
+  .oral-builder__confirmation>div { display:flex;justify-content:flex-end;gap:1rem;flex-wrap:wrap;margin-top:1.25rem; }
+  @media(max-width:1000px) { .oral-builder__draft-bar { grid-template-columns:minmax(0,1fr) minmax(0,1fr); }.oral-builder__draft-bar>button { justify-self:start; }.oral-builder__journey { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+  @media(max-width:600px) { .oral-builder__draft-bar { grid-template-columns:1fr;gap:.8rem; }.oral-builder__journey { grid-template-columns:repeat(2,minmax(0,1fr)); }.oral-builder__journey a { padding:.7rem;font-size:.77rem; }.oral-builder__timer { padding:1rem; }.oral-builder__timer button { min-height:44px; }.oral-builder__work-block { padding:1rem; } }
+
   @media print {
     body:has([data-oral-generator])> :not(main) { display:none!important; }
     body:has([data-oral-generator]) main { padding:0!important; margin:0!important; }
@@ -273,7 +215,7 @@ const payload = JSON.stringify({ topics, specialties, officialResources }).repla
     .oral-builder { margin:0; --oral-ink:#40215f; }
     .oral-builder>:not(.oral-builder__sheet) { display:none!important; }
     .oral-builder__sheet { border:0; padding:0; color:#000; background:#fff; }
-    .oral-builder__angles,.oral-builder__export,.oral-builder__copy-fallback,.oral-builder__sheet>.oral-builder__help { display:none!important; }
+    .oral-builder__angles,.oral-builder__export,.oral-builder__copy-fallback,.oral-builder__sheet>.oral-builder__help,.oral-builder__journey,.oral-builder__progress,.oral-builder__draft-actions,.oral-builder__timer>:not(.oral-builder__clock) { display:none!important; }
     .oral-builder textarea,.oral-builder__plan input { border:0; padding:0; resize:none; overflow:visible; background:#fff; color:#000; }
     .oral-builder[data-bound="true"] :is(textarea,.oral-builder__plan input) { display:none; }
     .oral-builder__print-value { display:block; white-space:pre-wrap; overflow-wrap:anywhere; color:#000; font-size:11pt; line-height:1.6; margin:.5rem 0; }

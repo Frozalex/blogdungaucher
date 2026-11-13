@@ -16,6 +16,8 @@ const used = new Set([oralLead, ...subjects.map(e => e.slug), ...guides.map(e =>
 const others = posts.filter(post => !used.has(getPostSlug(post)));
 const href = (slug: string) => `/fr/blog/${slug}/`;
 const pdf = (slug: string) => isPublicAssetAvailable(`/pdfs/${slug}.pdf`) ? `/pdfs/${slug}.pdf` : null;
+// Atelier finalisé : questions, brouillons locaux et répétition chronométrée.
+const generatorEnabled = true;
 ---
 
 <BaseLayout title="Grand oral : sujets, guides et fiches autour des échecs | Blog d’un Gaucher" description="Trouve une problématique de Grand oral autour des échecs en Maths, NSI, SES ou HGGSP. Sujets, guides de préparation, fiches de révision et PDF à télécharger." canonicalPath="/fr/grand-oral/" lang="fr" omitEnDeAlternateLinks={true} structuredData={buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: "Grand oral", path: "/fr/grand-oral/" }])}>
@@ -30,8 +32,13 @@ const pdf = (slug: string) => isPublicAssetAvailable(`/pdfs/${slug}.pdf`) ? `/pd
           <p>Les échecs peuvent être un point de départ. Je te propose des questions, des notions et des ressources pour construire un raisonnement que tu comprends — et que tu peux défendre avec tes mots.</p>
           <div class="oral-byline">Le_Gaucher <span aria-hidden="true">·</span> {subjects.length} sujets <span aria-hidden="true">·</span> {guides.length + (lead ? 1 : 0)} guides <span aria-hidden="true">·</span> {sheets.length} fiches de révision</div>
         </div>
-        <nav class="oral-shortcuts" aria-label="Dans ce dossier"><a href="#sujets">Trouver mon sujet ↓</a><a href="#guides">Choisir mon guide ↓</a><a href="#ressources">Réviser & m’entraîner ↓</a></nav>
+        <nav class="oral-shortcuts" aria-label="Dans ce dossier">{generatorEnabled && <a href="/fr/grand-oral/generateur/">Préparer mon oral →</a>}<a href="#sujets">Trouver mon sujet ↓</a><a href="#guides">Choisir mon guide ↓</a><a href="#ressources">Réviser & m’entraîner ↓</a></nav>
       </header>
+
+      {generatorEnabled && <section class="oral-generator-invitation" aria-labelledby="oral-generator-title">
+        <div><span class="resource-kicker">L’atelier · Toutes spécialités</span><h2 id="oral-generator-title">Une idée à transformer en question ?</h2><p>Sciences, arts, langues, société : choisis une question, construis ta réponse, vérifie tes sources et prépare les objections. Garde tes brouillons sur cet appareil, puis répète avec le chronomètre.</p></div>
+        <a class="resource-button" href="/fr/grand-oral/generateur/">Ouvrir mon atelier →</a>
+      </section>}
 
       <section class="resource-section" aria-labelledby="oral-start-title">
         <div class="resource-section-head"><h2 id="oral-start-title">Le point de départ</h2><span>Une question, puis un chemin pour la travailler</span></div>

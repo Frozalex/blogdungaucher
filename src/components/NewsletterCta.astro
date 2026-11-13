@@ -1,28 +1,23 @@
 ---
 import NewsletterForm from "./NewsletterForm.astro";
+import { newsletterCopy, type NewsletterLang, type NewsletterCategory } from "../data/newsletter";
 
-const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
-
-// Localisé côté serveur : le dict runtime (i18n-dict.js) ne couvre que fr/en,
-// donc on rend directement la bonne langue (pas de flash, marche sans JS).
-const ctaCopy = {
-  fr: { eyebrow: "Newsletter", title: "Recevoir les prochains articles", desc: "Deux articles par semaine dans ta boîte mail. Pas de spam." },
-  en: { eyebrow: "Newsletter", title: "Get the next articles", desc: "Two articles a week in your inbox. No spam." },
-  "pt-br": { eyebrow: "Newsletter", title: "Receber os próximos artigos", desc: "Dois artigos por semana no seu e-mail. Sem spam." },
-  nl: { eyebrow: "Newsletter", title: "Ontvang de volgende artikelen", desc: "Twee artikelen per week in je inbox. Geen spam." },
-} as const;
-const c = ctaCopy[lang] ?? ctaCopy.fr;
+const { lang = "fr", category } = Astro.props as { lang?: NewsletterLang; category?: NewsletterCategory };
+const c = newsletterCopy[lang] ?? newsletterCopy.fr;
+const context = category && c.contexts[category];
 ---
 
-<aside class="nl-cta fade-up" style="--motion-delay: 140ms;" aria-label="Newsletter">
+<aside class="nl-cta fade-up" style="--motion-delay: 140ms;" aria-label={c.title}>
   <div class="nl-cta__inner">
     <div class="nl-cta__text">
-      <span class="nl-cta__eyebrow" data-t="newsletter.eyebrow">{c.eyebrow}</span>
-      <p class="nl-cta__title" data-t="newsletter.ctaTitle">{c.title}</p>
-      <p class="nl-cta__desc" data-t="newsletter.ctaDesc">{c.desc}</p>
+      <span class="nl-cta__eyebrow">{c.title}</span>
+      <p class="nl-cta__title">{context || c.promise}</p>
+      {context && <p class="nl-cta__desc">{c.promise}</p>}
+      <p class="nl-cta__note">{c.note}</p>
+      <a class="nl-cta__sample" href="/fr/lettre/" hreflang="fr">{c.sample} <span aria-hidden="true">↗</span></a>
     </div>
     <div class="nl-cta__form">
-      <NewsletterForm variant="article" lang={lang} />
+      <NewsletterForm variant="article" lang={lang} placement={category ? `article-${category}` : "article"} />
     </div>
   </div>
 </aside>
@@ -73,6 +68,9 @@ const c = ctaCopy[lang] ?? ctaCopy.fr;
     margin: 0;
     line-height: 1.5;
   }
+
+  .nl-cta__note { color: var(--text-muted); font-size: .78rem; line-height: 1.5; margin: .6rem 0; }
+  .nl-cta__sample { color: var(--green); font-weight: 600; font-size: .85rem; text-decoration: underline; text-underline-offset: .2em; }
 
   .nl-cta__form {
     flex: 0 0 300px;

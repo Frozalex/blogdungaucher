@@ -1,0 +1,15 @@
+---
+import type {SiteLang} from '../utils/lang-paths';
+interface Props {lang?:SiteLang;}
+const {lang='fr'}=Astro.props;
+const L={fr:['Mes lectures','Tes textes gardés, tes lectures en cours et tes étapes terminées.','Ces repères restent sur cet appareil, sans compte ni envoi au site.','Lire plus tard','Reprendre une lecture','Aucune lecture enregistrée pour le moment.','Explorer les articles','Effacer mes repères','Active JavaScript pour retrouver les lectures enregistrées sur cet appareil.'],en:['My reading','Your saved texts, reading progress and completed steps.','These bookmarks stay on this device, without an account or upload.','Read later','Continue reading','No saved reading yet.','Explore articles','Clear my reading data','Enable JavaScript to view the reading saved on this device.'],'pt-br':['Minhas leituras','Seus textos guardados, leituras em andamento e etapas concluídas.','Esses dados ficam neste aparelho, sem conta nem envio ao site.','Ler mais tarde','Retomar a leitura','Nenhuma leitura guardada ainda.','Explorar os artigos','Apagar meus registros','Ative o JavaScript para ver as leituras guardadas neste aparelho.'],nl:['Mijn leeslijst','Bewaarde teksten, leesvoortgang en voltooide stappen.','Deze gegevens blijven op dit apparaat, zonder account of upload.','Later lezen','Verder lezen','Nog geen bewaarde teksten.','Artikelen ontdekken','Mijn leesgegevens wissen','Schakel JavaScript in om de leeslijst op dit apparaat te bekijken.']}[lang];
+---
+<div class="container reading-library" data-reading-library data-lang={lang}>
+ <header class="resource-heading"><span class="resource-kicker">Blog d’un Gaucher</span><h1>{L[0]}</h1><p>{L[1]}</p><p class="library-privacy">{L[2]}</p></header>
+ <p data-library-status role="status"></p>
+ <section class="resource-section"><h2>{L[3]}</h2><p data-library-empty>{L[5]}</p><ul data-saved-list class="library-list"></ul><a class="resource-button" href={`/${lang}/blog/`}>{L[6]} →</a></section>
+ <section class="resource-section"><h2>{L[4]}</h2><ul data-progress-list class="library-list"></ul><p data-progress-empty>{L[5]}</p></section>
+ <button type="button" class="resource-button" data-reading-clear hidden>{L[7]}</button>
+ <noscript><p>{L[8]}</p></noscript>
+</div>
+<style>.reading-library{padding-bottom:32px}.library-privacy{font-size:13px!important;color:var(--text-muted)}.library-list{list-style:none;padding:0;margin:0 0 24px}.library-list :global(li){display:flex;gap:18px;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--border-soft)}.library-list :global(a){font-weight:550;line-height:1.5;text-decoration:underline;text-underline-offset:3px}.library-list :global(button){flex-shrink:0;font:inherit;font-size:12px;border:1px solid var(--border-strong);border-radius:20px;background:var(--surface);color:var(--text-main);padding:7px 12px;cursor:pointer}.library-list :global(small){display:block;color:var(--text-muted);font-size:12px;margin-top:5px}</style>

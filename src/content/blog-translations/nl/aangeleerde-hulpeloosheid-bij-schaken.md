@@ -117,7 +117,7 @@ Dit suggereert een weinig intuïtieve conclusie: **langdurige stagnatie is niet 
 
 **Voortijdig opgeven.** Het meest zichtbare. Je geeft een moeilijke maar verdedigbare stelling op, en je zult uitleggen dat ze verloren was. Het punt om te noteren is dat je niet naar het middel zoekt: je steekt de lage barrière niet over.
 
-**Het stoppen van inspanning tijdens een sessie.** Na een nederlaag worden de volgende partijen half gespeeld. Dit is geen tilt in de zin van woede, beschreven in ons artikel over [woede bij schaken](/nl/blog/woede-en-schaken/): het is kouder, meer berustend. Het gedrag is er, de inzet niet meer.
+**Het stoppen van inspanning tijdens een sessie.** Na een nederlaag worden de volgende partijen half gespeeld. Dit is geen tilt in de zin van woede, beschreven in ons artikel over [woede bij schaken](/nl/blog/woede-ragequit-schaken/): het is kouder, meer berustend. Het gedrag is er, de inzet niet meer.
 
 **Vastgeroeste overtuigingen.** "Ik ben slecht in eindspelen." "Ik begrijp niets van gesloten stellingen." Deze zinnen zijn verklaarde no-go-zones, dus nooit getraind, wat ze waar maakt. Ze werken ook als zelfvervullende profetieën, wat het onderwerp is van een komend artikel in deze serie, en ze onderhouden een vicieuze cirkel die sterk lijkt op die bij een schoolfalende leerling: hoe minder je probeert, hoe minder je vooruitgaat, en hoe minder je vooruitgaat, hoe meer de oorspronkelijke overtuiging bevestigd lijkt.
 

@@ -1,0 +1,356 @@
+{
+  "reviewDate": "2026-11-13",
+  "note": "Root applies updates by ID after checking expectedBefore; two regenerated videos are deliberately excluded and delegated to grand_oral.",
+  "entries": [
+    {
+      "id": "formation-des-habitudes-aux-echecs",
+      "format": "pdf",
+      "status": "pdf-regenerated-and-visually-reviewed",
+      "expectedBefore": {
+        "sourceHash": "066caf776d0254c68ae831d3a904c4f8f00d0a36f7acd526d9de13cd8706df32",
+        "sha256": "c7be41e66292f030c7d9187fec79361a8f059afbf6afddab723353b286b2738f",
+        "coverHash": "cbb21e8d21a256daa966d97090383d4d7e9c95332bbc6732270cdfa93026bd2d"
+      },
+      "updates": {
+        "sourceHash": "efca6c47644cc07399260d6f01e0914ed67908c27689a8c208a9f5dd66297f4e",
+        "bytes": 50132,
+        "sha256": "28e6c1ed8964c790dec2d8dd705534b6976477a65ecd70a1806bda84fbcbad33",
+        "coverHash": "cbb21e8d21a256daa966d97090383d4d7e9c95332bbc6732270cdfa93026bd2d"
+      }
+    },
+    {
+      "id": "echecs-alphazero-stockfish",
+      "format": "pdf",
+      "status": "pdf-regenerated-and-visually-reviewed",
+      "expectedBefore": {
+        "sourceHash": "e31e6046c91f1e63ca7e9e3fdae01775301ec2291c6f9009a963991b548ccdaa",
+        "sha256": "16765778551393f407b162f1378242678449938b98e3cf82940ab681335d2442",
+        "coverHash": "c53319b10c3796c609f689d0b2a46eb736ebe609674deed067d994892a271d75"
+      },
+      "updates": {
+        "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+        "bytes": 56781,
+        "sha256": "259fd5cfa37431a19568d6e74e1b65f8a85178d9862973b226334308a0d480f3",
+        "coverHash": "c53319b10c3796c609f689d0b2a46eb736ebe609674deed067d994892a271d75"
+      }
+    },
+    {
+      "id": "echecs-et-memoire--angle-01",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "fa7485a440871bc43e7cff596d79ce7a9674ef0c41dff554a6eaed3e4ce258b2",
+        "sha256": "a2266ef8f50b3fe25745f97f23cf730faf390765b952f4a50a9c5904eefc48e4",
+        "coverHash": "9f4918e3f0a77ac5611f782c9fe8d39885dc8f379fc76ec8f166f16a8decd307"
+      },
+      "updates": {
+        "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930"
+      }
+    },
+    {
+      "id": "echecs-et-concentration--angle-01",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "39a504b17a71094f9ab590ad4b65a8a915c2a2337a2fced700c5a3d708145c8d",
+        "sha256": "28d303e48ba30e2506eeac5faeb10eec6fc7b738c361e527205d541190363eff",
+        "coverHash": "79e0d3449ae13c5125ec742628820ac5e48218e954db6be39a5c165ae0354448"
+      },
+      "updates": {
+        "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a"
+      }
+    },
+    {
+      "id": "echecs-et-memoire--angle-02",
+      "format": "pdf",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "fa7485a440871bc43e7cff596d79ce7a9674ef0c41dff554a6eaed3e4ce258b2",
+        "sha256": "c9aab264d753587f7f55c5e47b9e1396b5f71be102a9a21b3437910a1f23903b",
+        "coverHash": "3a089ddf3ee5340c9c78ec786d27121d81be95b5dec82719225d45a001043187"
+      },
+      "updates": {
+        "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930"
+      }
+    },
+    {
+      "id": "formation-des-habitudes-aux-echecs--angle-02",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "066caf776d0254c68ae831d3a904c4f8f00d0a36f7acd526d9de13cd8706df32",
+        "sha256": "1ad32ec16991523b39dab1964509c52916bf125efb5eef6c49970e37173ba831",
+        "coverHash": "6a87edef86d2ccaeb146892792f03a30009ea35d1ccde93df4537258695ed254"
+      },
+      "updates": {
+        "sourceHash": "efca6c47644cc07399260d6f01e0914ed67908c27689a8c208a9f5dd66297f4e"
+      }
+    },
+    {
+      "id": "echecs-et-concentration--angle-02",
+      "format": "pdf",
+      "status": "pdf-regenerated-and-visually-reviewed",
+      "expectedBefore": {
+        "sourceHash": "39a504b17a71094f9ab590ad4b65a8a915c2a2337a2fced700c5a3d708145c8d",
+        "sha256": "5123b5791d0dab0682c7ac62aea35555724b62abc81af6cd31e6052b2d626659",
+        "coverHash": "73bbc7b78ac4ecd17aad81d9ec6c4f5e077f47232f5052b421eea180c270c233"
+      },
+      "updates": {
+        "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+        "bytes": 49361,
+        "sha256": "4244dcc046b8c3d582986f6de09a9d99c3ddf3b264a99eab3ad7fe3a3aa20223",
+        "coverHash": "86a0826c7736c0d63f669d24130317d5f4d03c07a229d76d1b7545944af9d726"
+      }
+    },
+    {
+      "id": "formation-des-habitudes-aux-echecs--angle-03",
+      "format": "pdf",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "066caf776d0254c68ae831d3a904c4f8f00d0a36f7acd526d9de13cd8706df32",
+        "sha256": "7bb2998ac66742d5b0c83964755fdbf45410911418eb3d0c60a8d1b401d6d3b2",
+        "coverHash": "a849cd8f0996502915ca94e0c3f032aecdcd21f66d13c5ac09b62178e5d136e0"
+      },
+      "updates": {
+        "sourceHash": "efca6c47644cc07399260d6f01e0914ed67908c27689a8c208a9f5dd66297f4e"
+      }
+    },
+    {
+      "id": "echecs-alphazero-stockfish--angle-03",
+      "format": "pdf",
+      "status": "pdf-regenerated-and-visually-reviewed",
+      "expectedBefore": {
+        "sourceHash": "e31e6046c91f1e63ca7e9e3fdae01775301ec2291c6f9009a963991b548ccdaa",
+        "sha256": "3f366290c88944e06ecf0438e16792eed7ba7b9241e88b3b637192cd817bc4ef",
+        "coverHash": "ed516aa841085f7ace78c503c4126b0d71eafbafc91871d80225a658beeb2de1"
+      },
+      "updates": {
+        "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+        "bytes": 49248,
+        "sha256": "1351698d2e4897698d09dc3ec3546142fedcabe426e652aa878b50462e6b78c0",
+        "coverHash": "ed516aa841085f7ace78c503c4126b0d71eafbafc91871d80225a658beeb2de1"
+      }
+    },
+    {
+      "id": "echecs-et-memoire--angle-04",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "fa7485a440871bc43e7cff596d79ce7a9674ef0c41dff554a6eaed3e4ce258b2",
+        "sha256": "cb6ad581062f3e8bc209e75400693ef56001d7795430cbef39c9925f3f4a818a",
+        "coverHash": "e0f753128aa361fa735bbb37b15bfd949c71245364b65e8272ea2f100de90d6c"
+      },
+      "updates": {
+        "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930"
+      }
+    },
+    {
+      "id": "echecs-et-concentration--angle-04",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "39a504b17a71094f9ab590ad4b65a8a915c2a2337a2fced700c5a3d708145c8d",
+        "sha256": "2834183a52c23815fc3ddde4be99cc76347f895b27d90da9e7188e45b0e8cbc3",
+        "coverHash": "1fbccc28407a4e398409b57a90a96efec0e82360edfc8bf854f39e1ffb5b6808"
+      },
+      "updates": {
+        "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a"
+      }
+    },
+    {
+      "id": "echecs-et-memoire--angle-05",
+      "format": "pdf",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "fa7485a440871bc43e7cff596d79ce7a9674ef0c41dff554a6eaed3e4ce258b2",
+        "sha256": "34c720f7a2fe2811a159116b8c617526d3a4b7c8918fe66dbc2051e7b2509753",
+        "coverHash": "471b14d980980727d1692752cf5cd1f6e383357d615e123a5d2f6995811f4ea6"
+      },
+      "updates": {
+        "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930"
+      }
+    },
+    {
+      "id": "formation-des-habitudes-aux-echecs--angle-05",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "066caf776d0254c68ae831d3a904c4f8f00d0a36f7acd526d9de13cd8706df32",
+        "sha256": "ad3280a59bf09506f0b353817b633a1c5d2a326c16aba3a0d07c80e3ae29b18f",
+        "coverHash": "efd7dfa95d15c590260776d3149e0336a7c5ab900475089905a471a06e3c4a34"
+      },
+      "updates": {
+        "sourceHash": "efca6c47644cc07399260d6f01e0914ed67908c27689a8c208a9f5dd66297f4e"
+      }
+    },
+    {
+      "id": "echecs-et-concentration--angle-05",
+      "format": "pdf",
+      "status": "pdf-regenerated-and-visually-reviewed",
+      "expectedBefore": {
+        "sourceHash": "39a504b17a71094f9ab590ad4b65a8a915c2a2337a2fced700c5a3d708145c8d",
+        "sha256": "bb9d1bd6f6ce433b15e524471ac9c4e883a67da4ff0a6f068a73104581cdda1c",
+        "coverHash": "8d8e343d8767ef63e3f08d3c1bda293e6d7ffcb7a1cad8457eee1cdfc3e5511a"
+      },
+      "updates": {
+        "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+        "bytes": 49723,
+        "sha256": "bbbfd4f04584317e7dc156f3ed523f2f8c3a568fdeb15b1107d0fa523bfc297c",
+        "coverHash": "8d8e343d8767ef63e3f08d3c1bda293e6d7ffcb7a1cad8457eee1cdfc3e5511a"
+      }
+    },
+    {
+      "id": "formation-des-habitudes-aux-echecs--angle-06",
+      "format": "pdf",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "066caf776d0254c68ae831d3a904c4f8f00d0a36f7acd526d9de13cd8706df32",
+        "sha256": "44d6d5ad92312a74b6c401d5f6198b93f8d0eeae1e250ec4345083c56dadf58c",
+        "coverHash": "995e5476cf3aa9d63f472a03d89823af6de63e01b694b7ce69d9f5e36717e5b5"
+      },
+      "updates": {
+        "sourceHash": "efca6c47644cc07399260d6f01e0914ed67908c27689a8c208a9f5dd66297f4e"
+      }
+    },
+    {
+      "id": "echecs-alphazero-stockfish--angle-06",
+      "format": "pdf",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "e31e6046c91f1e63ca7e9e3fdae01775301ec2291c6f9009a963991b548ccdaa",
+        "sha256": "87a71d95ddc925c9332cdfbe143271fa44178f58124c1d2fd99bb4de05ffdd99",
+        "coverHash": "d0daa6f4af28a610ff0feb2d2493234bd86456260645dd6c978fcdf0464af957"
+      },
+      "updates": {
+        "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5"
+      }
+    },
+    {
+      "id": "echecs-et-memoire--angle-07",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "fa7485a440871bc43e7cff596d79ce7a9674ef0c41dff554a6eaed3e4ce258b2",
+        "sha256": "f8397defa0dc93e2f08965ebccaffebe96c65747bf011b1b63a5dd23d7f71dfc",
+        "coverHash": "8e7d34353277e928afeaf76b4865058705084c9a37e5496c92323f1dfd31fadf"
+      },
+      "updates": {
+        "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930"
+      }
+    },
+    {
+      "id": "echecs-et-concentration--angle-07",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "39a504b17a71094f9ab590ad4b65a8a915c2a2337a2fced700c5a3d708145c8d",
+        "sha256": "8755a6da5e3c1e11a4e97b6cbca0986a026fa80cee73628c5247037449df7413",
+        "coverHash": "c0fa47c4d59507281f8fb6057b8201a39be6f197e229bc31be7615a04ac80f77"
+      },
+      "updates": {
+        "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a"
+      }
+    },
+    {
+      "id": "echecs-et-memoire--angle-08",
+      "format": "pdf",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "fa7485a440871bc43e7cff596d79ce7a9674ef0c41dff554a6eaed3e4ce258b2",
+        "sha256": "46a863bf3044d82f5bace002ba9f08c0a753e1f37d5ffccf537e11e7c1046086",
+        "coverHash": "3d7af0cfad343a103cb9f211d038f780b97d26cff675f7a94e33e4db5b60f1aa"
+      },
+      "updates": {
+        "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930"
+      }
+    },
+    {
+      "id": "formation-des-habitudes-aux-echecs--angle-08",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "066caf776d0254c68ae831d3a904c4f8f00d0a36f7acd526d9de13cd8706df32",
+        "sha256": "92f2ec48b09c4654fac1b3d86cba593cc8933446a0d627cd5a2c6297cd9923d7",
+        "coverHash": "f541b6299c9e3795e2592e44b4efc485895c3e85af98aeeefcba5ccc37160bf3"
+      },
+      "updates": {
+        "sourceHash": "efca6c47644cc07399260d6f01e0914ed67908c27689a8c208a9f5dd66297f4e"
+      }
+    },
+    {
+      "id": "echecs-alphazero-stockfish--angle-08",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "e31e6046c91f1e63ca7e9e3fdae01775301ec2291c6f9009a963991b548ccdaa",
+        "sha256": "6fc33a4b9338edc313c8781c44b357aa170354992fd967af72400793cf62ccbc",
+        "coverHash": "007152b9773241f2e50d900351527096980b05fa4b9004a0b725ec2435269e7b"
+      },
+      "updates": {
+        "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5"
+      }
+    },
+    {
+      "id": "echecs-et-concentration--angle-08",
+      "format": "pdf",
+      "status": "pdf-regenerated-and-visually-reviewed",
+      "expectedBefore": {
+        "sourceHash": "39a504b17a71094f9ab590ad4b65a8a915c2a2337a2fced700c5a3d708145c8d",
+        "sha256": "39ed961dfd60fffd82ebb7d364e3b617b481ab1cf2aafaf2cb6120d4cda94c16",
+        "coverHash": "3c6ebf5877358d1ab48ea5c052f24e9f10db629a8b22857afa5f72b4afa383f0"
+      },
+      "updates": {
+        "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+        "bytes": 49838,
+        "sha256": "881b1e016888475865253bfb58657f251e9c32a04486157861edfe3894c7427a",
+        "coverHash": "3c6ebf5877358d1ab48ea5c052f24e9f10db629a8b22857afa5f72b4afa383f0"
+      }
+    },
+    {
+      "id": "formation-des-habitudes-aux-echecs--angle-09",
+      "format": "pdf",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "066caf776d0254c68ae831d3a904c4f8f00d0a36f7acd526d9de13cd8706df32",
+        "sha256": "8b01da49fe6d312925875b2e3b943d3dde394307f3cb80ad0b606deb989512af",
+        "coverHash": "b49f496c38b831d02b283d308e93c106edf822e010af9cb4d2cf81bc5b0d6dc9"
+      },
+      "updates": {
+        "sourceHash": "efca6c47644cc07399260d6f01e0914ed67908c27689a8c208a9f5dd66297f4e"
+      }
+    },
+    {
+      "id": "echecs-alphazero-stockfish--angle-09",
+      "format": "pdf",
+      "status": "pdf-regenerated-and-visually-reviewed",
+      "expectedBefore": {
+        "sourceHash": "e31e6046c91f1e63ca7e9e3fdae01775301ec2291c6f9009a963991b548ccdaa",
+        "sha256": "708327dfaa1fa9e490821cb9463e1d5512099076b979f0c1d66b54370fc60668",
+        "coverHash": "215b934e1906f85a0fcd999bab63dd1152501c19920a4e87709c8248cdead173"
+      },
+      "updates": {
+        "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+        "bytes": 49495,
+        "sha256": "4ef7fa7e4929cdb620b85c5514143480bf97c860db9641a7ece9ea324177e0b2",
+        "coverHash": "215b934e1906f85a0fcd999bab63dd1152501c19920a4e87709c8248cdead173"
+      }
+    },
+    {
+      "id": "echecs-et-concentration--angle-10",
+      "format": "video",
+      "status": "semantic-review-retain-existing-bytes",
+      "expectedBefore": {
+        "sourceHash": "39a504b17a71094f9ab590ad4b65a8a915c2a2337a2fced700c5a3d708145c8d",
+        "sha256": "ee473be06de498d6a045bfb46a2d17ecba6d27056c8b7bd9909d530fcea03784",
+        "coverHash": "72635cb463ffc1250215fe876b0ac48df5a63e46f1ca7b6c60d2664c136143bb"
+      },
+      "updates": {
+        "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a"
+      }
+    }
+  ],
+  "pendingVideoIds": [
+    "echecs-alphazero-stockfish--angle-02",
+    "echecs-alphazero-stockfish--angle-05"
+  ]
+}

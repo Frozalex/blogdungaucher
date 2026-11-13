@@ -1,0 +1,14 @@
+---
+import type {SiteLang} from '../utils/lang-paths';
+interface Props {title:string;url:string;lang?:SiteLang;format?:string;}
+const {title,url,lang='fr',format='article'}=Astro.props;
+const L={fr:['Lire plus tard','Reprendre ma lecture','Lecture terminée','Mes lectures'],en:['Read later','Resume reading','Finished reading','My reading'],'pt-br':['Ler mais tarde','Retomar a leitura','Leitura concluída','Minhas leituras'],nl:['Later lezen','Verder lezen','Uitgelezen','Mijn leeslijst']}[lang];
+---
+<div class="read-tools" data-reading-tools data-reading-url={url} data-reading-title={title} data-reading-format={format} data-pagefind-ignore>
+ <button type="button" class="read-action" data-save-reading aria-pressed="false" hidden>{L[0]} ♡</button>
+ <a class="read-action" data-resume-reading hidden>{L[1]} ↘</a>
+ <button type="button" class="read-action" data-complete-reading aria-pressed="false" hidden>{L[2]} ✓</button>
+ <a class="read-library-link" href={`/${lang}/lectures/`}>{L[3]} →</a>
+ <span class="read-state" data-reading-status role="status"></span>
+</div>
+<style>.read-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px}.read-action{font:550 12px/1.5 var(--font-body);padding:8px 14px;cursor:pointer}.read-action[aria-pressed=true]{background:var(--green)!important;color:var(--on-green)!important}.read-library-link{font-size:12px;text-decoration:underline;text-underline-offset:3px}.read-state{font-size:11px;color:var(--text-muted)}.read-tools [hidden]{display:none!important}</style>

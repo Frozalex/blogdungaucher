@@ -1,5 +1,6 @@
-﻿---
+---
 import "../styles/global.css";
+import "../styles/blogvi.css";
 // KaTeX CSS (~23 ko, render-blocking) : volontairement PAS importé ici pour ne pas peser
 // sur les pages sans formules (accueil, rubriques, listings, à propos…). Il est importé
 // uniquement dans les templates qui rendent du markdown d'article :
@@ -16,7 +17,7 @@ import { siteConfig, adsenseConfig, PT_BR_LAUNCH_DATE, NL_LAUNCH_DATE, enStaticR
 import { swapLangPrefix, withTrailingSlash } from "../utils/lang-paths";
 
 // `?url` réutilise le fichier haché de @font-face pour le préchargement.
-import frauncesWoff2 from "@fontsource-variable/fraunces/files/fraunces-latin-opsz-normal.woff2?url";
+import outfitWoff2 from "@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2?url";
 
 import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
@@ -247,8 +248,8 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <meta name="description" content={description} />
     <meta name="author" content="Le Gaucher" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="theme-color" content="#fcfaf6" media="(prefers-color-scheme: light)" id="meta-theme-light" />
-    <meta name="theme-color" content="#1c1a16" media="(prefers-color-scheme: dark)" id="meta-theme-dark" />
+    <meta name="theme-color" content="#ece9df" media="(prefers-color-scheme: light)" id="meta-theme-light" />
+    <meta name="theme-color" content="#181f1b" media="(prefers-color-scheme: dark)" id="meta-theme-dark" />
     <meta name="color-scheme" content="light dark" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -258,7 +259,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <link rel="manifest" href="/manifest.json" />
 
     {/* Les polices utilisent le mode CORS anonyme, même depuis la même origine. */}
-    <link rel="preload" as="font" type="font/woff2" href={frauncesWoff2} crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href={outfitWoff2} crossorigin />
 
     {/* Préchargement de l'image LCP (hero d'article) : le navigateur la découvre
         sinon tard, après le CSS. `fetchpriority=high` la hisse en tête de file. */}
@@ -281,9 +282,9 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <script is:inline>
       (function () {
         // ── DARK MODE ──
-        var stored = localStorage.getItem("blogdungaucher.theme");
-        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        var theme = stored || (prefersDark ? "dark" : "light");
+        var stored = null;
+        try { stored = localStorage.getItem("blogdungaucher.theme"); } catch (_) {}
+        var theme = stored === "dark" ? "dark" : "light";
         document.documentElement.dataset.theme = theme;
 
         // ── I18N runtime ──
@@ -439,6 +440,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     {umamiId && (
       <script is:inline define:vars={{ umamiId, umamiUrl }}>
         (function() {
+          if (navigator.doNotTrack === '1' || navigator.globalPrivacyControl === true) return;
           var s = document.createElement('script');
           s.async = true;
           s.defer = true;
@@ -453,7 +455,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     {/* KaTeX CSS : importé seulement par les templates d'article (cf. en-tête de ce fichier). */}
 
   </head>
-  <body style={accentColor ? `--page-accent:${accentColor}` : ""}>
+  <body class="site-blogvi" style={accentColor ? `--page-accent:${accentColor}` : ""}>
     <Navbar frHref={resolvedFrPath} enHref={enSwitchHref} ptBrHref={ptBrSwitchHref} nlHref={nlSwitchHref} lang={lang} />
     {/* Le contenu principal peut recevoir le focus après une navigation. */}
     <main id="main-content" tabindex="-1">
@@ -467,11 +469,12 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
     <CookieConsent lang={lang} />
     <SearchOverlay lang={lang} />
     <ScrollableContent />
+    <script>import "../scripts/reading-experience";</script>
 
     {/* ── Service Worker + réapplication préférences après View Transitions ── */}
     <script>
       // Le précache hors ligne démarre après les ressources de la page courante.
-      if ("serviceWorker" in navigator) {
+      if ("serviceWorker" in navigator && !["localhost", "127.0.0.1", "[::1]"].includes(location.hostname)) {
         const registerOffline = () => {
           const register = () => { navigator.serviceWorker.register("/sw.js").catch(() => {}); };
           if ("requestIdleCallback" in window) window.requestIdleCallback(register, { timeout: 3000 });
@@ -498,8 +501,8 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
       // retour au FR pendant la View Transition. Le rendu serveur fait foi par langue ;
       // applyLang ne concerne que le runtime fr/en, donc invoqué uniquement pour EN.
       function applyThemeAndLang() {
-        const theme = localStorage.getItem("blogdungaucher.theme") ||
-          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        let theme = "light";
+        try { theme = localStorage.getItem("blogdungaucher.theme") === "dark" ? "dark" : "light"; } catch {}
         document.documentElement.dataset.theme = theme;
 
         const lang = currentLang();

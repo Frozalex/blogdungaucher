@@ -1,90 +1,24 @@
 ---
-import EditorialArticle from "./EditorialArticle.astro";
-import { editorialUi } from "../data/editorial-ui";
-import { t } from "../i18n/translations";
-import type { SiteLang } from "../utils/lang-paths";
-import { categorySlugs } from "../data/site";
-import { homeEditorial, getHomeEditorialPosts } from "../data/home-editorial";
-import { getPostSlug, type BlogEntry } from "../utils/blog";
-
-interface Props { posts: BlogEntry[]; lang?: SiteLang; }
-const { posts,lang="fr" } = Astro.props;
-const { lead, secondary, latest } = getHomeEditorialPosts(posts);
-const L=editorialUi(lang);
-const path=(suffix:string)=>`/${lang}/${suffix}`;
-const curatedLead = lang==="fr" && lead && getPostSlug(lead) === homeEditorial.leadSlug;
+import BlogviCard from './BlogviCard.astro';
+import BlogviSidebar from './BlogviSidebar.astro';
+import ReadingPaths from './ReadingPaths.astro';
+import {editorialUi} from '../data/editorial-ui';
+import {getHomeEditorialPosts} from '../data/home-editorial';
+import {getLocalizedPostText,getPostUrlLang,formatDateForLang,type BlogEntry} from '../utils/blog';
+import type {SiteLang} from '../utils/lang-paths';
+interface Props{posts:BlogEntry[];lang?:SiteLang;}
+const {posts,lang='fr'}=Astro.props;
+const L=editorialUi(lang),{lead}=getHomeEditorialPosts(posts);
+const latest=posts.filter(p=>!p.data.noindex)[0];
+const latestText=latest?await getLocalizedPostText(latest,lang):null;
+const feed=[...(lead?[lead]:[]),...posts.filter(p=>!p.data.noindex&&p.id!==lead?.id).slice(0,6)];
+const headings={fr:'Les échecs, sous un autre angle.',en:'Chess, from another angle.','pt-br':'O xadrez, sob outro ângulo.',nl:'Schaken vanuit een andere hoek.'};
 ---
-<header class="edition-header">
-  <div class="edition-header__eyebrow"><span>{L.strap}</span><span>{t(lang,"categories.science.label")} · {t(lang,"categories.esprit.label")} · {t(lang,"categories.societe.label")}</span></div>
-  <div class="edition-header__brand">
-    <img src="/images/logo.svg" alt="" width="52" height="72" />
-    <div><h1>{L.brand}<span class="edition-header__period">.</span></h1><p>{L.homepageLead}</p></div>
-  </div>
-  <nav class="edition-nav" aria-label={L.sections}>
-    <a class="edition-nav__home" href={path("")} aria-current="page">{L.home}</a>
-    {categorySlugs.filter(slug=>lang==="fr"||slug!=="grand-oral").map(slug => <a href={path(`${slug}/`)}>{t(lang,`categories.${slug}.label`)}</a>)}
-    {lang!=="nl"&&<a href={path("series/")}>{L.dossierSeries}</a>}
-    <a href={path("blog/")} class="edition-nav__all">{L.all} <span aria-hidden="true">↗</span></a>
-  </nav>
-</header>
-
-{lead && <section class="front-page" aria-labelledby="front-page-heading">
-  <div class="edition-heading"><h2 id="front-page-heading">{L.front}</h2><span>{L.beyond}</span></div>
-  <div class="front-page__grid">
-    <EditorialArticle lang={lang} post={lead} variant="lead" title={curatedLead ? homeEditorial.leadTitle : undefined} summary={curatedLead ? homeEditorial.leadSummary : undefined} kicker={curatedLead ? homeEditorial.leadKicker : undefined} />
-    <div class="front-page__secondary" aria-label={L.also}>
-      {secondary.map(post => <EditorialArticle lang={lang} post={post} variant="secondary" />)}
-    </div>
-  </div>
-</section>}
-
-{latest.length > 0 && <section class="latest-edition" aria-labelledby="derniers-articles">
-  <div class="edition-heading"><h2 id="derniers-articles">{L.latest}</h2><a href={path("blog/")}>{L.all} <span aria-hidden="true">→</span></a></div>
-  <div class="latest-edition__grid">{latest.map(post => <EditorialArticle lang={lang} post={post} variant="compact" />)}</div>
-</section>}
-
+{latest&&latestText&&<div class="bv-ticker"><span>{L.latest}</span><a href={await getPostUrlLang(latest,lang)}>{latestText.title}</a><time datetime={latest.data.publishDate.toISOString()}>{formatDateForLang(latest.data.publishDate,lang)}</time><span aria-hidden="true">↗</span></div>}
+<header class="bv-home-intro"><p>{L.strap}</p><h1 id="home-heading">{headings[lang]}</h1></header>
+<ReadingPaths lang={lang} />
+<div class="bv-home-grid"><section aria-labelledby="home-heading"><div class="bv-home-feed">{feed.map((post,i)=><BlogviCard post={post} lang={lang} featured={i===0}/>)}</div><a class="resource-button bv-home-all" href={`/${lang}/blog/`}>{L.all} →</a></section><BlogviSidebar posts={posts} lang={lang}/></div>
 <style>
-  .edition-header { margin-bottom: 2rem; }
-  .edition-header__eyebrow { display: flex; justify-content: space-between; gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--border-strong); font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted); }
-  .edition-header__brand { display: flex; justify-content: center; align-items: center; gap: 1.25rem; padding: 1.3rem 0; text-align: center; }
-  .edition-header__brand img { width: 48px; height: 66px; }
-  :global([data-theme="dark"]) .edition-header__brand img { filter: invert(1); }
-  .edition-header h1 { font-family: var(--font-serif); font-size: clamp(2rem, 4.8vw, 4rem); font-weight: 650; font-style: normal; letter-spacing: -.055em; line-height: 1.1; margin: 0; }
-  .edition-header__period { color: var(--green); }
-  .edition-header__brand p { font-size: .9rem; color: var(--text-muted); margin: .65rem 0 0; }
-  .edition-nav { display: flex; align-items: center; justify-content: center; gap: 1.8rem; border-top: 2px solid var(--text-main); border-bottom: 1px solid var(--border-strong); padding: 0; }
-  .edition-nav a { flex-shrink: 0; padding: .85rem 0; font-size: .8rem; font-weight: 550; color: var(--text-main); }
-  .edition-nav a:hover { color: var(--green); }
-  .edition-nav .edition-nav__home { color: var(--green); border-bottom: 3px solid var(--green); margin-bottom: -1px; }
-  .edition-nav .edition-nav__all { color: var(--text-muted); font-weight: 400; }
-  .edition-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin: 0 0 1.25rem; }
-  .edition-heading h2 { margin: 0; font-family: var(--font-body); font-size: .76rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 650; color: var(--green); }
-  .edition-heading > span, .edition-heading > a { font-size: .75rem; color: var(--text-dim); }
-  .edition-heading > a:hover { color: var(--green); }
-  .front-page__grid { display: grid; grid-template-columns: minmax(0, 2.15fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
-  .front-page__secondary { display: grid; gap: 1.5rem; padding-left: 2rem; border-left: 1px solid var(--border-strong); }
-  .front-page__secondary > :global(article + article) { padding-top: 1.5rem; border-top: 1px solid var(--border-strong); }
-  .latest-edition { border-top: 2px solid var(--text-main); margin-top: 2.5rem; padding-top: 1rem; margin-bottom: 2.5rem; }
-  .latest-edition__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2.5rem; }
-  .latest-edition__grid > :global(article) { padding: 1.15rem 0; border-bottom: 1px solid var(--border-strong); }
-  @media (max-width: 899px) {
-    .edition-nav { gap: 1.4rem; justify-content: flex-start; overflow-x: auto; }
-    .front-page__grid { grid-template-columns: 1fr; }
-    .front-page__secondary { grid-template-columns: repeat(2, minmax(0, 1fr)); border: 0; padding: 1.5rem 0 0; border-top: 1px solid var(--border-strong); }
-    .front-page__secondary > :global(article + article) { padding: 0; border: 0; }
-  }
-  @media (max-width: 599px) {
-    .edition-header__eyebrow { font-size: .6rem; }
-    .edition-header__eyebrow > span + span { display: none; }
-    .edition-header__brand { gap: .7rem; padding: 1.5rem 0; text-align: left; }
-    .edition-header__brand img { width: 32px; height: 45px; }
-    .edition-header h1 { font-size: clamp(1.5rem, 7vw, 2.2rem); }
-    .edition-header__brand p { font-size: .76rem; max-width: 32ch; line-height: 1.5; }
-    .edition-nav { gap: 1.25rem; }
-    .edition-nav a { font-size: .76rem; }
-    .edition-heading > span { display: none; }
-    .front-page__secondary, .latest-edition__grid { grid-template-columns: 1fr; }
-    .front-page__secondary > :global(article + article) { padding-top: 1.25rem; border-top: 1px solid var(--border-strong); }
-    .latest-edition { margin-top: 2rem; }
-  }
+.bv-ticker{display:flex;align-items:center;gap:16px;padding:10px 14px;border:1px solid var(--bv-line);border-radius:16px;background:var(--bv-paper);margin:0 0 26px;font-size:14px}.bv-ticker>span:first-child{padding:9px 16px;border-radius:9px;background:var(--green);color:var(--on-green);font-weight:550;white-space:nowrap}.bv-ticker>a{flex:1;color:var(--text-main);font-weight:550}.bv-ticker>time{font-size:12px;white-space:nowrap;color:var(--text-muted)}.bv-home-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;margin-top:28px}.bv-home-grid>section{min-width:0}.bv-home-grid>:global(.bv-sidebar){padding-top:0}.bv-home-intro{margin-bottom:24px}.bv-home-intro>p{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:650;color:var(--green);margin:0 0 8px}.bv-home-intro h1{font-size:32px;margin:0;line-height:1.2}.bv-home-feed{display:grid;gap:24px}.bv-home-all{display:inline-flex;margin-top:28px}
+@media(max-width:900px){.bv-home-grid{display:block}.bv-home-grid>:global(.bv-sidebar){padding-top:28px}}@media(max-width:600px){.bv-ticker{font-size:12px;gap:10px}.bv-ticker>time{display:none}.bv-ticker>span:first-child{padding:8px 10px;font-size:11px}.bv-ticker>a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.bv-home-intro h1{font-size:27px}}
 </style>

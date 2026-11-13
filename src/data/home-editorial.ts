@@ -2,6 +2,8 @@ import { getPostSlug, type BlogEntry } from "../utils/blog";
 
 /** Choix éditorial de l’accueil FR. Un article absent ou non publié n’est jamais affiché. */
 export const homeEditorial = {
+  reviewedAt: "2026-11-13",
+  reviewAfter: "2026-12-13",
   leadSlug: "echecs-et-la-triche",
   leadKicker: "Échecs & société",
   leadTitle: "La triche aux échecs : ce que l’affaire Niemann a vraiment révélé",

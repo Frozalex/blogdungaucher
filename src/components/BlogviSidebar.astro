@@ -1,0 +1,21 @@
+---
+import {getLocalizedPostText,getPostHeroSrc,getPostUrlLang,formatDateForLang,type BlogEntry} from '../utils/blog';
+import {buildSrcset} from '../utils/image-variants';
+import type {SiteLang} from '../utils/lang-paths';
+interface Props{posts:BlogEntry[];lang:SiteLang;}
+const {posts,lang}=Astro.props;
+const ui={fr:['La sélection du Gaucher','Le regard du Gaucher','Les échecs pour comprendre le jeu, l’esprit et la société.','Découvrir le média'],en:["The Left-Hander’s selection","The Left-Hander’s perspective",'Chess to understand the game, the mind and society.','About the journal'],'pt-br':['A seleção do Canhoto','O olhar do Canhoto','O xadrez para compreender o jogo, a mente e a sociedade.','Conhecer o blog'],nl:['De selectie van de Linkshandige','De blik van de Linkshandige','Schaken om het spel, de geest en de samenleving te begrijpen.','Over het blog']}[lang];
+const selection=await Promise.all(posts.filter(p=>!p.data.noindex).slice(0,3).map(async p=>({post:p,text:await getLocalizedPostText(p,lang),image:getPostHeroSrc(p),href:await getPostUrlLang(p,lang)})));
+---
+<aside class="bv-sidebar" data-pagefind-ignore><div class="bv-sidebar-inner">
+ <section class="bv-side-card"><h2>{ui[0]}</h2>{selection.map((p,i)=><a class:list={['bv-side-post',{'bv-side-post--first':i===0}]} href={p.href}>{p.image&&<img src={p.image} srcset={buildSrcset(p.image)} sizes={i===0?'250px':'70px'} width="300" height="200" loading="lazy" alt=""/>}<span><strong>{p.text.title}</strong><small>{formatDateForLang(p.post.data.publishDate,lang)}</small></span></a>)}</section>
+ <section class="bv-side-card bv-side-about"><img src="/images/logo.svg" width="34" height="48" alt=""/><h2>{ui[1]}</h2><p>{ui[2]}</p><a class="resource-button" href={`/${lang}/about/`}>{ui[3]} ↗</a></section>
+ </div></aside>
+<style>
+.bv-sidebar{min-width:0}.bv-sidebar-inner{position:sticky;top:var(--sidebar-top,24px)}.bv-side-card{padding:22px;border:1px solid var(--bv-line);border-radius:19px;background:var(--bv-paper);margin-bottom:24px;overflow:hidden}.bv-side-card h2{font:650 20px/1.25 var(--font-body);padding-bottom:16px;margin:0 0 22px;border-bottom:1px solid var(--bv-rule)}.bv-side-post{display:flex;gap:12px;margin-top:17px;align-items:center;color:var(--text-main)}.bv-side-post img{width:70px;height:70px;object-fit:cover;border-radius:8px;flex-shrink:0}.bv-side-post strong{display:block;font-size:14px;line-height:1.4;font-weight:600}.bv-side-post small{display:block;font-size:10px;color:var(--text-muted);margin-top:7px}.bv-side-post--first{display:block}.bv-side-post--first img{width:100%;height:auto;aspect-ratio:3/2;margin-bottom:12px}.bv-side-post--first strong{font-size:17px}.bv-side-about{text-align:center;background:var(--bv-tint)}.bv-side-about>img{width:34px;height:48px;margin:auto}.bv-side-about>h2{margin-top:15px}.bv-side-about p{font-size:14px}.bv-side-about .resource-button{font-size:12px}:global([data-theme=dark]) .bv-side-about>img{filter:invert(1)}@media(max-width:900px){.bv-sidebar-inner{position:static;display:grid;grid-template-columns:1fr 1fr;gap:20px}}@media(max-width:600px){.bv-sidebar-inner{display:block}}
+</style>
+<script>
+let stopSidebar: (()=>void)|undefined;
+function initSidebar(){stopSidebar?.();const panels=[...document.querySelectorAll<HTMLElement>('.bv-sidebar-inner')];const update=()=>panels.forEach(p=>p.style.setProperty('--sidebar-top',Math.min(24,innerHeight-p.getBoundingClientRect().height-24)+'px'));const observer=new ResizeObserver(update);panels.forEach(p=>observer.observe(p));window.addEventListener('resize',update);update();stopSidebar=()=>{observer.disconnect();window.removeEventListener('resize',update);};}
+initSidebar();document.addEventListener('astro:page-load',initSidebar);document.addEventListener('astro:before-swap',()=>stopSidebar?.());
+</script>

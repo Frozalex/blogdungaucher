@@ -1,6 +1,6 @@
 ---
-import { editorialUi } from "../data/editorial-ui";
 import NewsletterForm from "./NewsletterForm.astro";
+import { newsletterCopy } from "../data/newsletter";
 import PushSubscribe from "./PushSubscribe.astro";
 import { t, type Lang } from "../i18n/translations";
 
@@ -9,7 +9,6 @@ interface Props {
 }
 const { lang = "fr" } = Astro.props;
 const editorialHome = true;
-const E=editorialUi(lang);
 
 const aboutHref =
   lang === "en" ? "/en/about/" : lang === "pt-br" ? "/pt-br/about/" : lang === "nl" ? "/nl/about/" : "/fr/about/";
@@ -37,27 +36,13 @@ const tt = (key: string, fallback: string) => {
   return v && typeof v === "string" ? v : fallback;
 };
 
-const signupHeadline = lang === "en"
-  ? "Sign up for the latest articles, analyses and chess insights."
-  : lang === "pt-br"
-  ? "Inscreva-se para receber os últimos artigos e análises."
-  : lang === "nl"
-  ? "Meld je aan voor de nieuwste artikelen en analyses."
-  : "Inscris-toi pour recevoir les derniers articles et analyses.";
-
-const requiredNote = lang === "en"
-  ? "(* indicates a required field)"
-  : lang === "pt-br"
-  ? "(* campo obrigatório)"
-  : lang === "nl"
-  ? "(* verplicht veld)"
-  : "(* champ obligatoire)";
+const letterCopy = newsletterCopy[lang] ?? newsletterCopy.fr;
 ---
 
 <footer class:list={["footer", { "footer--editorial": editorialHome }]} data-pagefind-ignore>
 
   {/* ── Zone newsletter centrée avec logo + traits ── */}
-  <div class="footer-signup-zone">
+  <div class="footer-signup-zone" id="newsletter">
     <div class="container">
 
       {/* Logo entre deux traits horizontaux */}
@@ -76,12 +61,13 @@ const requiredNote = lang === "en"
         <span class="divider-line" aria-hidden="true"></span>
       </div>
 
-      {editorialHome && <h2 class="footer-letter-title">{E.letter}</h2>}
-      <p class="footer-signup-headline">{signupHeadline}</p>
-      <p class="footer-signup-required">{requiredNote}</p>
+      {editorialHome && <h2 class="footer-letter-title">{letterCopy.title}</h2>}
+      <p class="footer-signup-headline">{letterCopy.promise}</p>
+      <p class="footer-signup-required">{letterCopy.note}</p>
+      <p class="footer-signup-example"><a href="/fr/lettre/" hreflang="fr">{letterCopy.sample} <span aria-hidden="true">↗</span></a></p>
 
       <div class="footer-signup-form">
-        <NewsletterForm variant="footer" lang={lang} />
+        <NewsletterForm variant="footer" lang={lang} placement="footer" />
       </div>
 
     </div>
@@ -259,6 +245,8 @@ const requiredNote = lang === "en"
   }
   .footer-signup-form :global(.nl-form) { min-width: 0; max-width: 100%; }
   .footer-signup-form :global(.nl-row) { min-width: 0; }
+  .footer-signup-example { margin: .6rem 0 1.1rem; font-size: .85rem; }
+  .footer-signup-example a { color: var(--green); text-decoration: underline; text-underline-offset: .2em; }
 
   /* ══════════════════════════════════════════
      Corps : brand | trait | nav

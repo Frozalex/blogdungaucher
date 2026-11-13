@@ -14,7 +14,7 @@ const BREVO_SMTP_URL = "https://api.brevo.com/v3/smtp/email";
 const SENDER_EMAIL = process.env.BREVO_SENDER_EMAIL ?? "newsletter@blogdungaucher.com";
 const SENDER_NAME = process.env.BREVO_SENDER_NAME ?? "Blog d'un Gaucher";
 const SITE_URL = (process.env.SITE_URL ?? "https://blogdungaucher.com").replace(/\/$/, "");
-const WELCOME_SUBJECT = "Bienvenue au Blog d'un Gaucher ♟️";
+const WELCOME_SUBJECT = "Bienvenue dans la lettre du Gaucher ♟️";
 
 // HTML embarqué (le conteneur ne monte que ce fichier — pas de dossier emails/).
 function welcomeHtml() {
@@ -24,11 +24,11 @@ function welcomeHtml() {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="x-apple-disable-message-reformatting">
-  <title>Bienvenue au Blog d'un Gaucher</title>
+  <title>Bienvenue dans la lettre du Gaucher</title>
 </head>
 <body style="margin:0;padding:0;background-color:#f8f5f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#1e1e1e;line-height:1.6;">
   <div style="display:none;font-size:1px;color:#f8f5f0;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">
-    Merci de t'être abonné·e. Voici ce qui t'attend.
+    Une idée expliquée, une position commentée et une lecture recommandée.
   </div>
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:#f8f5f0;">
     <tr>
@@ -51,16 +51,16 @@ function welcomeHtml() {
           <tr>
             <td style="padding:32px 32px 8px;">
               <h1 style="margin:0 0 18px;font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#1e1e1e;">
-                Bienvenue à bord ♟️
+                Bienvenue dans la lettre du Gaucher ♟️
               </h1>
               <p style="margin:0 0 18px;font-size:15px;line-height:1.65;color:#4a4a4a;">
-                Merci de t'être abonné·e ! Tu fais maintenant partie des lecteurs prévenus
-                à chaque nouvel article du Blog d'un Gaucher.
+                Merci de t’être abonné·e ! La lettre du Gaucher réunit une idée expliquée,
+                une position commentée et une lecture recommandée pour regarder les échecs autrement.
               </p>
               <p style="margin:0 0 28px;font-size:15px;line-height:1.65;color:#4a4a4a;">
-                Ici, on explore les échecs sous tous les angles : la <strong>science</strong> du cerveau,
-                la <strong>psychologie</strong> du joueur, et la place du jeu dans la <strong>société</strong>.
-                Un nouvel article paraît chaque lundi et jeudi.
+                Les lettres sont rédigées en français, sans rythme imposé. Tu peux aussi recevoir
+                des alertes de publication, qui annoncent simplement les nouveaux articles du blog.
+                Tu peux te désinscrire à tout moment avec le lien en bas de chaque message.
               </p>
             </td>
           </tr>
@@ -69,8 +69,8 @@ function welcomeHtml() {
               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td style="background-color:#2a8a5f;border-radius:6px;">
-                    <a href="${SITE_URL}/fr/blog/" style="display:inline-block;padding:14px 28px;font-size:14px;font-weight:600;color:#ffffff;text-decoration:none;letter-spacing:0.02em;">
-                      Découvrir le blog →
+                    <a href="${SITE_URL}/fr/lettre/" style="display:inline-block;padding:14px 28px;font-size:14px;font-weight:600;color:#ffffff;text-decoration:none;letter-spacing:0.02em;">
+                      Lire un exemple de la lettre →
                     </a>
                   </td>
                 </tr>
@@ -80,7 +80,7 @@ function welcomeHtml() {
           <tr>
             <td style="padding:24px 32px;background-color:#faf8f4;border-top:1px solid #f0ece5;">
               <p style="margin:0 0 8px;font-size:12px;color:#7a7a7a;line-height:1.5;">
-                Tu reçois cet email parce que tu viens de t'abonner à la newsletter du Blog d'un Gaucher.
+                Tu reçois cet email à la suite de ton inscription aux messages du Blog d’un Gaucher.
               </p>
               <p style="margin:0;font-size:12px;color:#7a7a7a;line-height:1.5;">
                 <a href="${SITE_URL}" style="color:#2a8a5f;text-decoration:none;">blogdungaucher.com</a>

@@ -2,8 +2,9 @@
 interface Props {
   variant?: "footer" | "article";
   lang?: "fr" | "en" | "pt-br" | "nl";
+  placement?: string;
 }
-const { variant = "footer", lang = "fr" } = Astro.props;
+const { variant = "footer", lang = "fr", placement = variant } = Astro.props;
 
 const endpoint =
   (import.meta.env.PUBLIC_NEWSLETTER_URL ?? "https://blogdungaucher.com/newsletter") +
@@ -23,6 +24,8 @@ const fc = formCopy[lang] ?? formCopy.fr;
   class:list={["nl-form", `nl-form--${variant}`]}
   data-newsletter-form
   data-endpoint={endpoint}
+  data-placement={placement}
+  data-lang={lang}
   novalidate
 >
   <div class="nl-row">
@@ -34,9 +37,8 @@ const fc = formCopy[lang] ?? formCopy.fr;
       autocomplete="email"
       placeholder={fc.placeholder}
       aria-label={fc.label}
-      data-t-placeholder="newsletter.emailPlaceholder"
     />
-    <button type="submit" class="nl-btn" data-t="newsletter.submit">
+    <button type="submit" class="nl-btn" disabled>
       {fc.submit}
     </button>
   </div>
@@ -48,14 +50,16 @@ const fc = formCopy[lang] ?? formCopy.fr;
     d'écran. Rempli → la requête est abandonnée côté serveur.
   */}
   <div class="nl-trap" aria-hidden="true">
-    <label for={`nl-website-${variant}`}>Site web</label>
-    <input type="text" id={`nl-website-${variant}`} name="website" tabindex="-1" autocomplete="off" />
+    <label>Site web <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
   </div>
-  <p class="nl-msg" aria-live="polite" hidden></p>
+  <p class="nl-msg" role="status" aria-live="polite" tabindex="-1"></p>
+  <noscript><p class="nl-msg">{lang === "fr" ? "Active JavaScript pour utiliser ce formulaire d’inscription." : lang === "en" ? "Enable JavaScript to use this subscription form." : lang === "pt-br" ? "Ative o JavaScript para usar este formulário." : "Schakel JavaScript in om dit formulier te gebruiken."}</p></noscript>
 </form>
 
 <script>
-  document.addEventListener("astro:page-load", () => {
+  import { requestNewsletterSubscription } from "../scripts/newsletter-subscription";
+
+  function initNewsletterForms() {
     document.querySelectorAll<HTMLFormElement>("[data-newsletter-form]").forEach((form) => {
       if (form.dataset.bound === "1") return;
       form.dataset.bound = "1";
@@ -70,56 +74,58 @@ const fc = formCopy[lang] ?? formCopy.fr;
       const endpoint = form.dataset.endpoint!;
       const btn = form.querySelector<HTMLButtonElement>(".nl-btn")!;
       const msg = form.querySelector<HTMLElement>(".nl-msg")!;
+      btn.disabled = false;
 
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
-        const lang = (document.documentElement.lang || "fr");
+        if (btn.disabled) return;
+        const lang = form.dataset.lang || "fr";
         const MSG = {
-          fr:      { loading: "Inscription…",  success: "Inscription confirmée !", errorEmail: "Adresse email invalide.",      error: "Une erreur s’est produite. Réessaie.",        submit: "S’inscrire" },
-          en:      { loading: "Subscribing…",  success: "You’re subscribed!",      errorEmail: "Invalid email address.",        error: "An error occurred. Please try again.",        submit: "Subscribe" },
-          "pt-br": { loading: "Inscrevendo…",  success: "Inscrição confirmada!",   errorEmail: "Endereço de e-mail inválido.", error: "Ocorreu um erro. Tente novamente.",           submit: "Inscrever-se" },
-          nl:      { loading: "Aanmelden…",    success: "Je bent aangemeld!",      errorEmail: "Ongeldig e-mailadres.",         error: "Er is een fout opgetreden. Probeer opnieuw.", submit: "Aanmelden" },
+          fr:      { loading: "Inscription…",  success: "Ton inscription a été prise en compte. Merci !", errorEmail: "Saisis une adresse email valide.", error: "L’inscription n’a pas abouti. Réessaie dans un moment.", submit: "S’inscrire" },
+          en:      { loading: "Subscribing…",  success: "Your subscription request was accepted. Thank you!", errorEmail: "Enter a valid email address.", error: "Your request could not be completed. Please try again later.", submit: "Subscribe" },
+          "pt-br": { loading: "Inscrevendo…",  success: "Seu pedido de inscrição foi aceito. Obrigado!", errorEmail: "Digite um endereço de e-mail válido.", error: "Não foi possível concluir a inscrição. Tente novamente mais tarde.", submit: "Inscrever-se" },
+          nl:      { loading: "Aanmelden…", success: "Je aanmelding is in behandeling genomen. Bedankt!", errorEmail: "Vul een geldig e-mailadres in.", error: "Aanmelden is niet gelukt. Probeer het later opnieuw.", submit: "Aanmelden" },
         };
         const T = MSG[lang as keyof typeof MSG] || MSG.fr;
 
-        const email = (form.querySelector<HTMLInputElement>('[name="email"]')!).value.trim();
+        const input = form.querySelector<HTMLInputElement>('[name="email"]')!;
+        const email = input.value.trim();
 
         if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
           msg.textContent = T.errorEmail;
           msg.className = "nl-msg nl-msg--error";
-          msg.hidden = false;
+          input.setAttribute("aria-invalid", "true");
+          input.focus();
           return;
         }
 
         btn.disabled = true;
+        input.removeAttribute("aria-invalid");
         btn.textContent = T.loading;
-        msg.hidden = true;
+        msg.textContent = "";
 
         try {
-          const r = await fetch(endpoint, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              email,
-              website: (form.querySelector<HTMLInputElement>('[name="website"]')?.value ?? ""),
-              elapsedMs: Date.now() - readyAt,
-            }),
-          });
-          if (r.ok) {
-            form.innerHTML = `<p class="nl-success">${T.success}</p>`;
-          } else {
-            throw new Error();
-          }
+          await requestNewsletterSubscription(endpoint, {
+            email,
+            website: (form.querySelector<HTMLInputElement>('[name="website"]')?.value ?? ""),
+            elapsedMs: Date.now() - readyAt,
+          }, form.dataset.placement || "article");
+          input.disabled = true;
+          form.querySelector<HTMLElement>(".nl-row")!.hidden = true;
+          msg.className = "nl-msg nl-success";
+          msg.textContent = T.success;
+          msg.focus();
         } catch {
           msg.textContent = T.error;
           msg.className = "nl-msg nl-msg--error";
-          msg.hidden = false;
           btn.disabled = false;
           btn.textContent = T.submit;
         }
       });
     });
-  });
+  }
+  initNewsletterForms();
+  document.addEventListener("astro:page-load", initNewsletterForms);
 </script>
 
 <style>
@@ -145,6 +151,7 @@ const fc = formCopy[lang] ?? formCopy.fr;
     display: flex;
     gap: 0.4rem;
   }
+  .nl-row[hidden] { display: none; }
 
   .nl-input {
     flex: 1;
@@ -169,7 +176,7 @@ const fc = formCopy[lang] ?? formCopy.fr;
   .nl-btn {
     flex-shrink: 0;
     padding: 0.5rem 1rem;
-    border: none;
+    border: 1px solid var(--green);
     border-radius: var(--radius-sm, 6px);
     background: var(--green);
     color: var(--on-green);
@@ -191,6 +198,8 @@ const fc = formCopy[lang] ?? formCopy.fr;
     cursor: wait;
   }
 
+  .nl-btn:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
+
   .nl-msg {
     font-size: 0.82rem;
     margin: 0;
@@ -199,9 +208,7 @@ const fc = formCopy[lang] ?? formCopy.fr;
 
   .nl-msg--error { color: var(--danger); }
 
-  /* Injecté via `form.innerHTML` à la réussite → pas d'attribut de scope Astro.
-     On scope via le <form> (élément de template, porteur du cid) + `:global()`. */
-  .nl-form :global(.nl-success) {
+  .nl-success {
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--green);

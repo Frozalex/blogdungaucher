@@ -56,7 +56,7 @@
     "category": "esprit",
     "title": "Analyser ses parties d'échecs : le guide pratique pour progresser vraiment",
     "sourceFile": "src/content/blog/esprit/analyser-ses-parties.md",
-    "sourceSha256": "ddfe8a6dda5bf8592538dfb372a525a7f543b0e77c6b18ccc1c37009b261233f",
+    "sourceSha256": "8608a259a14e6b755e9d73258a77b90784e4706bcb0a268c11f94816e5fd1b75",
     "scenes": [
       {
         "role": "hook",
@@ -574,9 +574,9 @@
   {
     "slug": "echecs-et-concentration",
     "category": "esprit",
-    "title": "Concentration aux échecs : entraîner l'attention comme un muscle",
+    "title": "Concentration aux échecs : garder et retrouver le fil du calcul",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceSha256": "39a504b17a71094f9ab590ad4b65a8a915c2a2337a2fced700c5a3d708145c8d",
+    "sourceSha256": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
     "scenes": [
       {
         "role": "hook",
@@ -1564,7 +1564,7 @@
     "category": "esprit",
     "title": "La formation des habitudes aux échecs : pourquoi ton plan d'entraînement ne tient pas",
     "sourceFile": "src/content/blog/esprit/formation-des-habitudes-aux-echecs.md",
-    "sourceSha256": "066caf776d0254c68ae831d3a904c4f8f00d0a36f7acd526d9de13cd8706df32",
+    "sourceSha256": "efca6c47644cc07399260d6f01e0914ed67908c27689a8c208a9f5dd66297f4e",
     "scenes": [
       {
         "role": "hook",
@@ -3852,7 +3852,7 @@
     "category": "science",
     "title": "AlphaZero contre Stockfish : la révolution de l'intelligence artificielle aux échecs",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceSha256": "e31e6046c91f1e63ca7e9e3fdae01775301ec2291c6f9009a963991b548ccdaa",
+    "sourceSha256": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
     "scenes": [
       {
         "role": "hook",
@@ -4216,7 +4216,7 @@
     "category": "science",
     "title": "Échecs et mémoire : mémoire de travail, chunks et parties qui restent",
     "sourceFile": "src/content/blog/science/echecs-et-memoire.md",
-    "sourceSha256": "fa7485a440871bc43e7cff596d79ce7a9674ef0c41dff554a6eaed3e4ce258b2",
+    "sourceSha256": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930",
     "scenes": [
       {
         "role": "hook",

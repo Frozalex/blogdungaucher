@@ -38,8 +38,8 @@ const siteName = (() => {
 // Libellés d'accessibilité (aria/title) localisés côté serveur — le dict runtime
 // ne couvre que fr/en, donc on ne peut pas compter dessus pour pt-br/nl.
 const navUi = {
-  fr: { searchArticle: "Rechercher un article", searchTitle: "Rechercher (/)", changeLang: "Changer la langue", search: "Rechercher", mainNav: "Navigation principale", langGroup: "Langue" },
-  en: { searchArticle: "Search articles", searchTitle: "Search (/)", changeLang: "Change language", search: "Search", mainNav: "Main navigation", langGroup: "Language" },
+  fr: { searchArticle: "Rechercher dans le site", searchTitle: "Rechercher (/)", changeLang: "Changer la langue", search: "Rechercher", mainNav: "Navigation principale", langGroup: "Langue" },
+  en: { searchArticle: "Search the site", searchTitle: "Search (/)", changeLang: "Change language", search: "Search", mainNav: "Main navigation", langGroup: "Language" },
   "pt-br": { searchArticle: "Buscar um artigo", searchTitle: "Buscar (/)", changeLang: "Mudar de idioma", search: "Buscar", mainNav: "Navegação principal", langGroup: "Idioma" },
   nl: { searchArticle: "Een artikel zoeken", searchTitle: "Zoeken (/)", changeLang: "Taal wijzigen", search: "Zoeken", mainNav: "Hoofdnavigatie", langGroup: "Taal" },
 } as const;
@@ -104,7 +104,7 @@ const rubriques = categorySlugs
     accent: categoryMap[slug].accent,
   }));
 const menuGroups = [
-  {label:E.read,items:[{label:E.all,href:`/${lang}/blog/`,accent:"var(--green)",key:"navLinks.blog"},...(lang!=="nl"?[{label:E.series,href:`/${lang}/series/`,accent:"var(--green)",key:"navLinks.series"}]:[]),...((lang==="fr"||lang==="en")?[{label:E.essays,href:`/${lang}/dissertations/`,accent:"var(--green)",key:"navLinks.dissertations"}]:[])]},
+  {label:E.read,items:[{label:E.all,href:`/${lang}/blog/`,accent:"var(--green)",key:"navLinks.blog"},{label:{fr:"Mes lectures",en:"My reading","pt-br":"Minhas leituras",nl:"Mijn leeslijst"}[lang],href:`/${lang}/lectures/`,accent:"var(--green)",key:""},...(lang!=="nl"?[{label:E.series,href:`/${lang}/series/`,accent:"var(--green)",key:"navLinks.series"}]:[]),...((lang==="fr"||lang==="en")?[{label:E.essays,href:`/${lang}/dissertations/`,accent:"var(--green)",key:"navLinks.dissertations"}]:[])]},
   {label:E.understand,items:[{label:E.search,href:`/${lang}/recherche/`,accent:"var(--green)",key:""},...(lang==="fr"?[{label:"L’Atlas du Gaucher",href:"/fr/infographie/",accent:"var(--green)",key:""},{label:"Glossaire",href:"/fr/glossaire/",accent:"var(--green)",key:""}]:[])]},
   {label:E.media,items:[{label:E.about,href:`/${lang}/about/`,accent:"var(--green)",key:"navLinks.about"},{label:E.contact,href:`/${lang}/contact/`,accent:"var(--green)",key:"navLinks.contact"}]},
 ];
@@ -164,6 +164,7 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
 
     {/* Boutons icônes : recherche + dark mode + langue */}
     <div class="nav-actions">
+      <a class="nav-letter" href="#newsletter">{E.letter} ↗</a>
       <button
         type="button"
         class="icon-btn search-btn"

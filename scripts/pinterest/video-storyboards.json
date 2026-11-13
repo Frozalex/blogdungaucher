@@ -5630,7 +5630,7 @@
     "accent": "#5b9fd4",
     "title": "Le match : 28-0-72",
     "articleTitle": "AlphaZero contre Stockfish : la révolution de l'intelligence artificielle aux échecs",
-    "description": "Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8 (la meilleure version à l'époque). Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite. Dans le détail : avec les Blancs, 25 victoires et 25 nulles ; avec les Noirs, 3 victoires et 47 nulles.",
+    "description": "Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8, la version choisie pour cette comparaison. Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite. Dans le détail : avec les Blancs, 25 victoires et 25 nulles ; avec les Noirs, 3 victoires et 47 nulles.",
     "releaseAt": "2027-11-02T14:00:00.000Z",
     "source": {
       "file": "src/content/blog/science/echecs-alphazero-stockfish.md",
@@ -5642,15 +5642,15 @@
     "section": [
       {
         "type": "paragraph",
-        "text": "Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8 (la meilleure version à l'époque). Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite. Dans le détail : avec les Blancs, 25 victoires et 25 nulles ; avec les Noirs, 3 victoires et 47 nulles."
+        "text": "Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8, la version choisie pour cette comparaison. Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite. Dans le détail : avec les Blancs, 25 victoires et 25 nulles ; avec les Noirs, 3 victoires et 47 nulles."
       },
       {
         "type": "paragraph",
-        "text": "Un mot sur la cadence, parce que c'est l'erreur la plus répandue à propos de ce match : ce n'était pas une cadence classique. Chaque programme disposait d'une minute de réflexion fixe par coup. Ça change la lecture du résultat, puisque Stockfish n'avait aucune latitude pour gérer son temps, répartir l'effort sur les coups critiques, ou réfléchir pendant le temps de l'adversaire. Sa fonction de gestion du temps, qui fait partie de sa force réelle, était tout simplement hors jeu."
+        "text": "Ce n'était pas une cadence classique : chaque programme disposait d'une minute de réflexion fixe par coup. Cette condition empêche de répartir une réserve globale de temps en accordant davantage de réflexion à certains coups critiques. Le résultat doit donc être lu avec cette restriction de la gestion du temps."
       },
       {
         "type": "paragraph",
-        "text": "Ce score est stupéfiant par plusieurs aspects. Un programme qui bat Stockfish sans jamais perdre est extraordinaire, Stockfish 8 était lui-même bien supérieur à n'importe quel humain. Et les victoires n'étaient pas des victoires techniques dans des finales compliquées : elles se construisaient sur des thèmes positionnels clairs."
+        "text": "L'absence de défaite dans cet échantillon est un résultat du match, pas une preuve d'invincibilité. Les parties publiées permettent d'examiner des idées positionnelles, mais leur sélection ne suffit pas à décrire toutes les victoires ni toutes les positions où les programmes diffèrent."
       },
       {
         "type": "paragraph",
@@ -5658,19 +5658,31 @@
       },
       {
         "type": "paragraph",
-        "text": "Stockfish tournait sans base de finales et sans bibliothèque d'ouvertures • Son espace de hachage était limité à 1 Go, très peu pour 64 threads • La cadence d'une minute par coup neutralisait sa gestion du temps • Le matériel d'AlphaZero (TPU) n'est pas directement comparable aux CPU de Stockfish"
+        "text": "Stockfish tournait sans base de finales et sans bibliothèque d'ouverturesSon espace de hachage était limité à 1 Go, très peu pour 64 threadsLa cadence d'une minute par coup neutralisait sa gestion du tempsLe matériel d'AlphaZero (TPU) n'est pas directement comparable aux CPU de Stockfish"
       },
       {
         "type": "paragraph",
-        "text": "Ces critiques ont conduit DeepMind à publier en décembre 2018 une version revue et évaluée par des pairs dans Science, avec des conditions nettement plus sérieuses : 1 000 parties, 3 heures par partie plus 15 secondes par coup, 44 cœurs pour Stockfish, et la version de Stockfish championne du TCEC 2016."
+        "text": "La publication évaluée par les pairs dans Science, en décembre 2018, présente un protocole différent : 1 000 parties, 3 heures par partie plus 15 secondes par coup, 44 cœurs pour Stockfish, et la version de Stockfish championne du TCEC 2016."
       },
       {
         "type": "paragraph",
-        "text": "Le résultat confirme la supériorité d'AlphaZero, mais l'écart se resserre franchement : 155 victoires, 6 défaites, 839 nulles sur 1 000 parties, soit environ 57,5 % du score. On est loin du 28-0 de 2017. AlphaZero a par ailleurs battu Stockfish depuis chacune des 12 ouvertures humaines les plus jouées, dans ces conditions expérimentales ; les essais avec handicap de temps doivent être distingués de ce résultat."
+        "text": "AlphaZero remporte également ce match : 155 victoires, 6 défaites, 839 nulles sur 1 000 parties, soit environ 57,5 % du score. Il bat par ailleurs Stockfish dans les matchs commençant depuis chacune des 12 ouvertures humaines retenues, dans ces conditions expérimentales ; les essais avec handicap de temps doivent être distingués de ce résultat."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pour calculer le score de 2017, compte une victoire comme un point et une nulle comme un demi-point : 28 + 72 ÷ 2 = 64 points sur 100. En 2018, le même calcul donne 155 + 839 ÷ 2 = 574,5 points sur 1 000, soit 57,45 %. Comparer seulement « 28 à 0 » et « 155 à 6 » fait disparaître la place des nulles. Cependant, la différence entre 64 % et 57,45 % ne mesure pas isolément un changement de force : le nombre de parties, la cadence et les configurations changent aussi."
       },
       {
         "type": "paragraph",
         "text": "Les chiffres de vitesse changent aussi d'un papier à l'autre, et il vaut la peine de les citer ensemble sans les mélanger : 80 000 positions par seconde contre 70 millions en 2017, 60 000 contre 60 millions en 2018. Dans les deux cas, le même ordre de grandeur, un rapport proche de 1 à 1 000."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ces chiffres arrondis ne décrivent pas des opérations identiques. Évaluer une position avec un réseau profond et la traiter dans la recherche de Stockfish n'ont pas le même coût. Le nombre de positions par seconde ne permet donc pas de conclure qu'un système consomme mille fois moins d'énergie ou serait mille fois plus efficace. Il faut définir la ressource que l'on compare et mesurer celle-ci."
+      },
+      {
+        "type": "paragraph",
+        "text": "Les deux expériences de 2017 et 2018 ont des cadences distinctes."
       }
     ],
     "scenes": [
@@ -5683,34 +5695,34 @@
       {
         "kind": "reading",
         "label": "LE POINT DE DÉPART",
-        "text": "Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8 (la meilleure version à l'époque). Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite.",
+        "text": "Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8, la version choisie pour cette comparaison. Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite.",
         "heading": "Le match : 28-0-72",
-        "duration": 11.457142857142857,
-        "sourceText": "Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8 (la meilleure version à l'époque). Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite."
+        "duration": 14.321428571428571,
+        "sourceText": "Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8, la version choisie pour cette comparaison. Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite."
       },
       {
         "kind": "focus",
         "label": "POUR COMPRENDRE",
         "text": "Dans le détail : avec les Blancs, 25 victoires et 25 nulles ; avec les Noirs, 3 victoires et 47 nulles.",
         "heading": "Le match : 28-0-72",
-        "duration": 8.600000000000001,
+        "duration": 11.107142857142858,
         "sourceText": "Dans le détail : avec les Blancs, 25 victoires et 25 nulles ; avec les Noirs, 3 victoires et 47 nulles."
       },
       {
         "kind": "reading",
         "label": "UN REPÈRE UTILE",
-        "text": "Un mot sur la cadence, parce que c'est l'erreur la plus répandue à propos de ce match : ce n'était pas une cadence classique. Chaque programme disposait d'une minute de réflexion fixe par coup.",
+        "text": "Ce n'était pas une cadence classique : chaque programme disposait d'une minute de réflexion fixe par coup.",
         "heading": "Le match : 28-0-72",
-        "duration": 13.242857142857144,
-        "sourceText": "Un mot sur la cadence, parce que c'est l'erreur la plus répandue à propos de ce match : ce n'était pas une cadence classique. Chaque programme disposait d'une minute de réflexion fixe par coup."
+        "duration": 10.007142857142856,
+        "sourceText": "Ce n'était pas une cadence classique : chaque programme disposait d'une minute de réflexion fixe par coup."
       },
       {
         "kind": "focus",
         "label": "GARDER LE CONTEXTE",
-        "text": "Ça change la lecture du résultat, puisque Stockfish n'avait aucune latitude pour gérer son temps, répartir l'effort sur les coups critiques, ou réfléchir pendant le temps de l'adversaire. Sa fonction de gestion du temps, qui fait partie de sa force réelle, était tout simplement hors jeu.",
+        "text": "Cette condition empêche de répartir une réserve globale de temps en accordant davantage de réflexion à certains coups critiques. Le résultat doit donc être lu avec cette restriction de la gestion du temps.",
         "heading": "Le match : 28-0-72",
-        "duration": 17.528571428571432,
-        "sourceText": "Ça change la lecture du résultat, puisque Stockfish n'avait aucune latitude pour gérer son temps, répartir l'effort sur les coups critiques, ou réfléchir pendant le temps de l'adversaire. Sa fonction de gestion du temps, qui fait partie de sa force réelle, était tout simplement hors jeu."
+        "duration": 15.392857142857142,
+        "sourceText": "Cette condition empêche de répartir une réserve globale de temps en accordant davantage de réflexion à certains coups critiques. Le résultat doit donc être lu avec cette restriction de la gestion du temps."
       },
       {
         "kind": "end",
@@ -5727,8 +5739,8 @@
     "storyboardVersion": 2,
     "editorial": false,
     "approvedPrototype": false,
-    "sourceHash": "e31e6046c91f1e63ca7e9e3fdae01775301ec2291c6f9009a963991b548ccdaa",
-    "textWords": 142
+    "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "textWords": 113
   },
   {
     "id": "gaslighting-aux-echecs--angle-02",
@@ -12133,7 +12145,7 @@
     "accent": "#5b9fd4",
     "title": "La convergence : Stockfish NNUE et la fin de la dichotomie",
     "articleTitle": "AlphaZero contre Stockfish : la révolution de l'intelligence artificielle aux échecs",
-    "description": "En septembre 2020, avec la version 12, Stockfish a intégré une architecture de réseau de neurones appelée NNUE (Efficiently Updatable Neural Network), introduite dans le monde du shogi par Yu Nasu en 2018 puis portée aux échecs.",
+    "description": "En septembre 2020, la version 12 de Stockfish utilise par défaut une architecture de réseau de neurones appelée NNUE (Efficiently Updatable Neural Network), d'abord développée pour le shogi puis portée aux échecs.",
     "releaseAt": "2029-03-20T14:00:00.000Z",
     "source": {
       "file": "src/content/blog/science/echecs-alphazero-stockfish.md",
@@ -12145,11 +12157,11 @@
     "section": [
       {
         "type": "paragraph",
-        "text": "En septembre 2020, avec la version 12, Stockfish a intégré une architecture de réseau de neurones appelée NNUE (Efficiently Updatable Neural Network), introduite dans le monde du shogi par Yu Nasu en 2018 puis portée aux échecs."
+        "text": "En septembre 2020, la version 12 de Stockfish utilise par défaut une architecture de réseau de neurones appelée NNUE (Efficiently Updatable Neural Network), d'abord développée pour le shogi puis portée aux échecs."
       },
       {
         "type": "paragraph",
-        "text": "Le NNUE remplace la fonction d'évaluation heuristique de Stockfish par un réseau de neurones entraîné sur des millions de positions évaluées par Stockfish lui-même. Sa particularité est d'être conçu pour tourner vite sur un processeur ordinaire, sans carte graphique. Résultat : Stockfish NNUE combine la vitesse de recherche alpha-bêta de l'ancienne architecture avec la richesse d'évaluation positionnelle des réseaux de neurones."
+        "text": "Dans cette version, l'évaluation neuronale et l'évaluation classique restent toutes deux disponibles. Le réseau est entraîné sur les évaluations de millions de positions. Il fonctionne efficacement sur un processeur ordinaire, notamment parce que seuls certains éléments du réseau doivent être actualisés après un coup. Stockfish combine ainsi une évaluation neuronale avec la recherche alpha-bêta. Annonce de NNUE et publication de Stockfish 12."
       },
       {
         "type": "paragraph",
@@ -12170,34 +12182,34 @@
       {
         "kind": "reading",
         "label": "LE POINT DE DÉPART",
-        "text": "En septembre 2020, avec la version 12, Stockfish a intégré une architecture de réseau de neurones appelée NNUE (Efficiently Updatable Neural Network), introduite dans le monde du shogi par Yu Nasu en 2018 puis portée aux échecs.",
+        "text": "En septembre 2020, la version 12 de Stockfish utilise par défaut une architecture de réseau de neurones appelée NNUE (Efficiently Updatable Neural Network), d'abord développée pour le shogi puis portée aux échecs.",
         "heading": "La convergence : Stockfish NNUE et la fin de la dichotomie",
-        "duration": 14.314285714285715,
-        "sourceText": "En septembre 2020, avec la version 12, Stockfish a intégré une architecture de réseau de neurones appelée NNUE (Efficiently Updatable Neural Network), introduite dans le monde du shogi par Yu Nasu en 2018 puis portée aux échecs."
+        "duration": 13.153571428571428,
+        "sourceText": "En septembre 2020, la version 12 de Stockfish utilise par défaut une architecture de réseau de neurones appelée NNUE (Efficiently Updatable Neural Network), d'abord développée pour le shogi puis portée aux échecs."
       },
       {
         "kind": "focus",
         "label": "POUR COMPRENDRE",
-        "text": "Le NNUE remplace la fonction d'évaluation heuristique de Stockfish par un réseau de neurones entraîné sur des millions de positions évaluées par Stockfish lui-même.",
+        "text": "Dans cette version, l'évaluation neuronale et l'évaluation classique restent toutes deux disponibles. Le réseau est entraîné sur les évaluations de millions de positions.",
         "heading": "La convergence : Stockfish NNUE et la fin de la dichotomie",
-        "duration": 9.67142857142857,
-        "sourceText": "Le NNUE remplace la fonction d'évaluation heuristique de Stockfish par un réseau de neurones entraîné sur des millions de positions évaluées par Stockfish lui-même."
+        "duration": 9.939285714285715,
+        "sourceText": "Dans cette version, l'évaluation neuronale et l'évaluation classique restent toutes deux disponibles. Le réseau est entraîné sur les évaluations de millions de positions."
       },
       {
         "kind": "reading",
         "label": "UN REPÈRE UTILE",
-        "text": "Sa particularité est d'être conçu pour tourner vite sur un processeur ordinaire, sans carte graphique.",
+        "text": "Il fonctionne efficacement sur un processeur ordinaire, notamment parce que seuls certains éléments du réseau doivent être actualisés après un coup.",
         "heading": "La convergence : Stockfish NNUE et la fin de la dichotomie",
-        "duration": 7.5,
-        "sourceText": "Sa particularité est d'être conçu pour tourner vite sur un processeur ordinaire, sans carte graphique."
+        "duration": 9.225000000000001,
+        "sourceText": "Il fonctionne efficacement sur un processeur ordinaire, notamment parce que seuls certains éléments du réseau doivent être actualisés après un coup."
       },
       {
         "kind": "focus",
         "label": "GARDER LE CONTEXTE",
-        "text": "Résultat : Stockfish NNUE combine la vitesse de recherche alpha-bêta de l'ancienne architecture avec la richesse d'évaluation positionnelle des réseaux de neurones.",
+        "text": "Stockfish combine ainsi une évaluation neuronale avec la recherche alpha-bêta.",
         "heading": "La convergence : Stockfish NNUE et la fin de la dichotomie",
-        "duration": 8.957142857142857,
-        "sourceText": "Résultat : Stockfish NNUE combine la vitesse de recherche alpha-bêta de l'ancienne architecture avec la richesse d'évaluation positionnelle des réseaux de neurones."
+        "duration": 8.125,
+        "sourceText": "Stockfish combine ainsi une évaluation neuronale avec la recherche alpha-bêta."
       },
       {
         "kind": "end",
@@ -12214,8 +12226,8 @@
     "storyboardVersion": 2,
     "editorial": false,
     "approvedPrototype": false,
-    "sourceHash": "e31e6046c91f1e63ca7e9e3fdae01775301ec2291c6f9009a963991b548ccdaa",
-    "textWords": 117
+    "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "textWords": 105
   },
   {
     "id": "gaslighting-aux-echecs--angle-05",

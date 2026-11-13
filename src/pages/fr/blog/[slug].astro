@@ -17,6 +17,9 @@ import ArticleVideo from "../../../components/ArticleVideo.astro";
 import InteractiveWidgets from "../../../components/InteractiveWidgets.astro";
 import PyodideTrace from "../../../components/PyodideTrace.astro";
 import FocusMode from "../../../components/FocusMode.astro";
+import NewsletterCta from "../../../components/NewsletterCta.astro";
+import ReadingTools from "../../../components/ReadingTools.astro";
+import ReadingNext from "../../../components/ReadingNext.astro";
 import TextHighlight from "../../../components/TextHighlight.astro";
 
 import { categoryMap, siteConfig } from "../../../data/site";
@@ -249,6 +252,7 @@ const structuredData = [
 
         <div class="article-tools">
           <FocusMode lang="fr" />
+          <ReadingTools lang="fr" title={post.data.title} url={postUrl} />
         </div>
 
         {headings.length > 0 && (
@@ -295,6 +299,9 @@ const structuredData = [
 
       <CodeBlockEnhancer />
     </div>
+
+    {post.data.category !== "grand-oral" && <NewsletterCta lang="fr" category={post.data.category} />}
+    <ReadingNext lang="fr" currentSlug={getPostSlug(post)} category={post.data.category} />
 
     {related.length > 0 && (
       <section class="related-carousel container" aria-label="Articles recommandés" data-pagefind-ignore>

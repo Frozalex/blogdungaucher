@@ -26,6 +26,7 @@
 
 <script>
   function loadInteractiveWidgets() {
+    if (document.querySelector("study-position")) { void import("../scripts/study-position"); }
     if (document.querySelector("minimax-tree")) {
       void import("../scripts/interactive-widgets");
     }

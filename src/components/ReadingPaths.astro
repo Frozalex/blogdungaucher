@@ -1,0 +1,21 @@
+---
+import { getReadingPaths, readingPathUi } from '../data/reading-paths';
+import type { SiteLang } from '../utils/lang-paths';
+import type { BlogEntry } from '../utils/blog';
+interface Props { lang?:SiteLang; posts?:BlogEntry[]; }
+const {lang='fr',posts}=Astro.props;
+const paths=await getReadingPaths(lang,posts),L=readingPathUi(lang);
+---
+<section class="reading-paths" aria-labelledby="reading-paths-title">
+  <header class="reading-paths__header"><h2 id="reading-paths-title">{L.heading}</h2><p>{L.intro}</p></header>
+  <div class="reading-paths__grid">{paths.map((path,index)=><article class="reading-path" id={`parcours-${path.id}`} data-reading-path={path.id}>
+    <span class="reading-path__number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><h3>{path.title}</h3><p>{path.intro}</p>
+    <div class="reading-path__actions"><a href={path.steps[0].href}>{L.start} <span aria-hidden="true">↗</span></a><span data-reading-path-progress role="status">{path.steps.length} {L.steps}</span></div>
+    <details><summary>{L.open}</summary><ol>{path.steps.map(step=><li data-reading-step={step.href} data-reading-step-title={step.title}>
+      <a href={step.href}>{step.title}</a><p>{step.why}</p><button type="button" data-reading-step-toggle aria-pressed="false" hidden>{L.step}</button>
+    </li>)}</ol></details>
+  </article>)}</div>
+</section>
+<style>
+.reading-paths{margin:2.5rem 0}.reading-paths__header{margin-bottom:1.25rem}.reading-paths__header h2{margin:0;font:650 clamp(1.45rem,2.5vw,2rem)/1.2 var(--font-body);letter-spacing:-.025em}.reading-paths__header>p{margin:.55rem 0;color:var(--text-muted);font-size:.95rem}.reading-paths__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.15rem}.reading-path{min-width:0;background:var(--bg-card,var(--bg-main));border:1px solid var(--border-strong);border-radius:18px;padding:1.5rem;scroll-margin-top:6rem}.reading-path__number{color:var(--green);font-size:.7rem;font-weight:650}.reading-path h3{font:650 1.35rem/1.25 var(--font-body);margin:.55rem 0;letter-spacing:-.025em}.reading-path>p{color:var(--text-muted);font-size:.9rem;line-height:1.6;min-height:2.8em}.reading-path__actions{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-top:1.2rem}.reading-path__actions>a{border:1px solid var(--border-strong);padding:.5rem .9rem;border-radius:30px;box-shadow:2px 2px 0 var(--text-main);font-size:.8rem;font-weight:600}.reading-path__actions>span{font-size:.7rem;color:var(--text-muted)}.reading-path details{border-top:1px solid var(--border-soft);margin-top:1.2rem;padding-top:.8rem}.reading-path summary{cursor:pointer;font-size:.8rem;font-weight:550}.reading-path ol{padding-left:1.3rem;margin:.8rem 0 0}.reading-path li{padding:.6rem 0}.reading-path li::marker{color:var(--green);font-size:.75rem}.reading-path li>a{font-size:.88rem;font-weight:600;text-decoration:underline;text-underline-offset:.2em}.reading-path li>p{font-size:.8rem;line-height:1.6;color:var(--text-muted);margin:.45rem 0}.reading-path button{font:inherit;font-size:.75rem;padding:.4rem .65rem;border:1px solid var(--border-strong);border-radius:6px;background:var(--bg-soft);color:var(--text-main);cursor:pointer}.reading-path button[aria-pressed=true]{background:var(--green);color:var(--on-green,#fff)}.reading-path :is(a,button,summary):focus-visible{outline:3px solid var(--green);outline-offset:4px}@media(min-width:1100px){.reading-paths__grid{grid-template-columns:repeat(4,minmax(0,1fr))}.reading-path{padding:1.15rem}.reading-path h3{font-size:1.2rem;min-height:3rem}.reading-path__actions{align-items:flex-start;flex-direction:column;gap:.8rem}.reading-path>p{min-height:4.5em}}@media(max-width:639px){.reading-paths__grid{grid-template-columns:1fr}.reading-path{padding:1.25rem}.reading-path>p{min-height:0}}
+</style>

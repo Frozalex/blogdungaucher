@@ -1,5 +1,7 @@
 /**
- * Programme un email "nouvel article" dans Brevo, à envoyer ~1h après le déploiement.
+ * Programme une alerte de publication dans Brevo, ~1h après le déploiement.
+ * Cette alerte n'est pas La lettre du Gaucher : les trois rubriques de la lettre
+ * sont rédigées et vérifiées séparément (voir scripts/preview-newsletter.mjs).
  *
  * Usage : node scripts/send-new-article-email.mjs <chemin/vers/article.md>
  *

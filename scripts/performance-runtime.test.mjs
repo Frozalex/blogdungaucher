@@ -64,7 +64,7 @@ test("offline precaching waits for page load and an idle opportunity", () => {
   };
   const document = { readyState: "loading", addEventListener() {} };
   const navigator = { serviceWorker: { register: url => { registrations.push(url); return Promise.resolve(); } } };
-  runInNewContext(offlineScript, { window, document, navigator });
+  runInNewContext(offlineScript, { window, document, navigator, location: { hostname: "blogdungaucher.com" } });
   assert.deepEqual(registrations, []);
   events.get("load")();
   assert.deepEqual(registrations, []);

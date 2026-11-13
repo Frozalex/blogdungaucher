@@ -7,6 +7,7 @@ import { editorialUi } from "../data/editorial-ui";
 import { categoryMap, categorySlugs } from "../data/site";
 import { t } from "../i18n/translations";
 import AdBanner from "./AdBanner.astro";
+import BlogviSidebar from "./BlogviSidebar.astro";
 import EditorialArchiveCard from "./EditorialArchiveCard.astro";
 import EditorialLocaleMasthead from "./EditorialLocaleMasthead.astro";
 import Pagination from "./Pagination.astro";
@@ -63,6 +64,7 @@ const nextPageHref =
       <div class="post-grid" id="post-grid" data-blog-index={`/blog-index/${lang}.json`}>{page.data.map((post,i)=><div class="post-item" data-category={post.data.category}><EditorialArchiveCard post={post} lang={lang} eager={i<3} /></div>)}</div>
       <p id="listing-empty" class="archive-empty" hidden>{L.noFilter}</p>
       <div id="listing-pagination"><Pagination currentPage={page.currentPage} lastPage={page.lastPage} pages={paginationPages} getHref={(n:number)=>getBlogIndexPagePath(lang,n)} prevHref={prevPageHref} nextHref={nextPageHref} lang={lang} /></div>
+      <BlogviSidebar posts={allPosts} lang={lang} />
     </section>
     <div class="resource-end"><span>{L.follow}</span>{lang!=="nl"&&<a class="resource-link" href={`/${lang}/series/`}>{L.exploreSeries} →</a>}<a class="resource-link" href={`/${lang}/recherche/`}>{L.search} →</a></div>
     <div id="card-templates" hidden aria-hidden="true" data-pagefind-ignore>{heroTemplatePost && <div class="post-item" data-template="hero"><EditorialArchiveCard post={heroTemplatePost} lang={lang} /></div>}{plainTemplatePost && <div class="post-item" data-template="plain"><EditorialArchiveCard post={plainTemplatePost} lang={lang} /></div>}</div>

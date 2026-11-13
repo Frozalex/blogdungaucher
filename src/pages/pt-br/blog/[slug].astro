@@ -11,6 +11,9 @@ import Comments from "../../../components/Comments.astro";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleVideo from "../../../components/ArticleVideo.astro";
 import FocusMode from "../../../components/FocusMode.astro";
+import NewsletterCta from "../../../components/NewsletterCta.astro";
+import ReadingTools from "../../../components/ReadingTools.astro";
+import ReadingNext from "../../../components/ReadingNext.astro";
 
 import { categoryMap, siteConfig, PT_BR_LAUNCH_DATE } from "../../../data/site";
 import { t } from "../../../i18n/translations";
@@ -323,6 +326,7 @@ const structuredData = [
 
         <div class="article-tools">
           <FocusMode lang="pt-br" />
+          <ReadingTools lang="pt-br" title={displayTitle} url={postUrlPtBr} />
         </div>
 
         {headings.length > 0 && (
@@ -350,6 +354,8 @@ const structuredData = [
       </div>
     </div>
 
+    {post.data.category !== "grand-oral" && <NewsletterCta lang="pt-br" category={post.data.category} />}
+    <ReadingNext lang="pt-br" currentSlug={getPostSlug(post)} category={post.data.category} />
     {relatedWithUrls.length > 0 && (
       <section class="related-carousel container" aria-label="Artigos recomendados" data-pagefind-ignore>
         <div class="related-carousel__head">

@@ -1,0 +1,34 @@
+{
+  "status": "example",
+  "subject": "Reconnaître un motif, puis vérifier",
+  "preheader": "Le mat du couloir, une vérification en trois questions et une méthode pour analyser tes parties.",
+  "introduction": "Un motif connu peut suggérer un coup. Pour décider de le jouer, il reste à vérifier ce que l’adversaire peut réellement répondre. Cette lettre propose un exemple volontairement simple pour rendre cette vérification visible.",
+  "idea": {
+    "title": "Un motif est un point de départ",
+    "paragraphs": [
+      "Au lieu de conclure « je reconnais ce mat », formule une hypothèse précise : « ce coup donne échec et le roi ne dispose d’aucune défense légale ». Tu peux alors la tester sur l’échiquier.",
+      "Voici une méthode de travail proposée : après un échec, examine les déplacements du roi, les captures de la pièce qui donne échec et les interpositions possibles. Pour un échec de cavalier, par exemple, l’interposition ne peut pas arrêter l’attaque. La position décide des réponses à vérifier.",
+      "L’intérêt de cette méthode est de rendre ton raisonnement contrôlable. Elle ne garantit pas que tu trouveras tous les meilleurs coups : elle répond ici à une question plus étroite, celle de vérifier un mat annoncé."
+    ]
+  },
+  "position": {
+    "title": "Les Blancs jouent : peux-tu justifier le mat ?",
+    "origin": "Position pédagogique composée pour cet exemple, sans attribution à une partie historique.",
+    "fen": "7k/6pp/8/8/8/8/6PP/5RK1 w - - 0 1",
+    "description": "Trait aux Blancs. Blancs : roi g1, tour f1, pions g2 et h2. Noirs : roi h8, pions g7 et h7. Toutes les autres cases sont vides.",
+    "solutionSan": ["Rf8#"],
+    "solutionLabel": "1. Tf8# : la tour ferme la huitième rangée",
+    "explanation": [
+      "La tour passe de f1 à f8 : les cases intermédiaires sont libres. Depuis f8, elle attaque le roi h8 à travers g8.",
+      "Le roi noir ne peut pas fuir en g8, case attaquée par la tour. Ses autres cases voisines, g7 et h7, sont occupées par ses propres pions. Aucun de ces pions ne peut capturer la tour f8 ni s’interposer sur g8. C’est donc bien un mat.",
+      "Pour tester ta compréhension, déplace le pion noir h7 en h6 avant de jouer Tf8+. La case h7 devient une fuite légale : le même coup ne donne plus mat. Le motif ressemble au précédent, mais un détail change la conclusion."
+    ],
+    "comparisonFen": "7k/6p1/7p/8/8/8/6PP/5RK1 w - - 0 1",
+    "comparisonSan": ["Rf8+", "Kh7"]
+  },
+  "reading": {
+    "title": "Analyser ses parties d’échecs : le guide pratique",
+    "url": "https://blogdungaucher.com/fr/blog/analyser-ses-parties/",
+    "reason": "Le guide propose de conserver tes hypothèses, de vérifier les variantes, puis de choisir un exercice lié à une difficulté précise. Prolonge cette lettre en reprenant un mat que tu pensais avoir : quelle réponse avais-tu vérifiée, et laquelle avais-tu oubliée ?"
+  }
+}

@@ -1,0 +1,33 @@
+import { Chess, type Square } from 'chess.js';
+import { trackEngagement } from './engagement';
+const glyphs: Record<string,string>={wk:'♔',wq:'♕',wr:'♖',wb:'♗',wn:'♘',wp:'♙',bk:'♚',bq:'♛',br:'♜',bb:'♝',bn:'♞',bp:'♟'};
+const names:Record<string,string>={k:'roi',q:'dame',r:'tour',b:'fou',n:'cavalier',p:'pion'};
+class StudyPosition extends HTMLElement {
+ private game?:Chess; private initial=''; private selected:Square|null=null; private steps:string[]=[]; private step=0; private guided=false;
+ private root=this.attachShadow({mode:'open'}); private board!:HTMLDivElement; private status!:HTMLParagraphElement; private correction!:HTMLParagraphElement;
+ connectedCallback(){if(this.board)return;this.initial=this.getAttribute('fen')||'';this.steps=(this.getAttribute('solution')||'').split('|').filter(Boolean);
+  try{this.game=new Chess(this.initial);const check=new Chess(this.initial);for(const san of this.steps)check.move(san);}catch{this.root.textContent='La position interactive est indisponible. Le corrigé reste lisible dans l’article.';return;}
+  const style=document.createElement('style');style.textContent=`:host{display:block;clear:both;margin:26px 0;padding:20px;border:1px solid var(--border-strong,#808675);border-radius:20px;background:var(--surface,#fffcf4);color:var(--text-main,#242923);font:16px/1.5 var(--font-body,sans-serif)}h3{margin:0 0 8px;font-size:21px}.board{display:grid;grid-template-columns:repeat(8,1fr);width:min(100%,440px);aspect-ratio:1;border:2px solid #315649;margin:16px auto}.sq{position:relative;display:grid;place-items:center;min-width:0;padding:0;border:0;border-radius:0;background:#f7edd5;color:#171e18;font-size:clamp(24px,6vw,43px);line-height:1;font-family:'DejaVu Sans','Segoe UI Symbol',serif;cursor:pointer}.dark{background:#8aab91}.white-piece{color:#fff;text-shadow:-1px -1px 0 #18271d,1px -1px 0 #18271d,-1px 1px 0 #18271d,1px 1px 0 #18271d}.sq[aria-pressed=true]{box-shadow:inset 0 0 0 4px #994600}.legal:after{content:'';position:absolute;width:16%;height:16%;border-radius:100%;background:#172d24b3;bottom:5%}.sq:focus-visible{outline:3px solid #9c4300;outline-offset:-4px;z-index:1}.coord{position:absolute;font:10px/1 sans-serif;color:#172d24;bottom:2px;left:3px;text-shadow:none}.actions{display:flex;gap:10px;flex-wrap:wrap}.action{padding:10px 15px;border:1px solid #315649;border-radius:99px;background:#315649;color:white;cursor:pointer;font:inherit}.action:focus-visible{outline:3px solid #a54f00;outline-offset:3px}.action:disabled{opacity:.6;cursor:default}.status{min-height:3em}.correction{border-left:3px solid #315649;padding-left:14px}`;
+  const heading=document.createElement('h3');heading.textContent=this.getAttribute('caption')||'À toi de jouer';
+  const intro=document.createElement('p');intro.textContent='Choisis une pièce, puis sa case d’arrivée. Les points indiquent les coups légaux. Au clavier : Tab, puis Entrée.';
+  this.board=document.createElement('div');this.board.className='board';this.board.setAttribute('role','group');this.board.setAttribute('aria-label','Échiquier, Blancs en bas');
+  this.status=document.createElement('p');this.status.className='status';this.status.setAttribute('role','status');
+  this.correction=document.createElement('p');this.correction.className='correction';this.correction.hidden=true;
+  const actions=document.createElement('div');actions.className='actions';
+  const button=(label:string,handler:()=>void)=>{const b=document.createElement('button');b.type='button';b.className='action';b.textContent=label;b.addEventListener('click',handler);actions.append(b);return b;};
+  button('Recommencer',()=>{this.game=new Chess(this.initial);this.selected=null;this.step=0;this.guided=false;this.correction.hidden=true;next.disabled=false;this.render();});
+  const next=button('Voir le coup du corrigé',()=>{if(!this.game||!this.steps.length)return;if(!this.guided){this.game=new Chess(this.initial);this.step=0;this.guided=true;}const played=this.game.move(this.steps[this.step++]);this.selected=null;this.render(`${played.san} — coup ${this.step} du corrigé.`);if(this.step===this.steps.length){next.disabled=true;this.explain();}trackEngagement('tool_use',{tool:'study-position',action:'correction'});});
+  if(!this.steps.length)next.hidden=true;
+  this.root.append(style,heading,intro,this.board,this.status,actions,this.correction);this.render();
+ }
+ private explain(){this.correction.textContent=this.getAttribute('explanation')||'Compare la position finale avec le corrigé de l’article.';this.correction.hidden=false;}
+ private render(message=''){
+  const game=this.game;if(!game)return;const legal=this.selected?game.moves({square:this.selected,verbose:true}).map(m=>m.to):[];this.board.replaceChildren();
+  for(let rank=8;rank>=1;rank--)for(let file=0;file<8;file++){const square=(String.fromCharCode(97+file)+rank) as Square;const piece=game.get(square);const b=document.createElement('button');b.type='button';b.className='sq'+((rank+file)%2!==0?' dark':'')+(piece?.color==='w'?' white-piece':'')+(legal.includes(square)?' legal':'');b.setAttribute('aria-label',`${square}, ${piece?names[piece.type]+(piece.color==='w'?' blanc':' noir'):'vide'}`);b.setAttribute('aria-pressed',String(square===this.selected));b.textContent=piece?glyphs[piece.color+piece.type]:'';if(rank===1||file===0){const c=document.createElement('span');c.className='coord';c.setAttribute('aria-hidden','true');c.textContent=square;b.append(c);}b.addEventListener('click',()=>this.play(square));this.board.append(b);}
+  this.status.textContent=message||(game.isCheckmate()?'Échec et mat.':game.isDraw()?'Position nulle.':`Trait aux ${game.turn()==='w'?'Blancs':'Noirs'}${game.isCheck()?' : échec !':'.'}`);
+ }
+ private play(square:Square){const game=this.game;if(!game||this.guided)return;if(this.selected){const from=this.selected;this.selected=null;try{const move=game.move({from,to:square,promotion:'q'});const actual=game.history();const matches=actual.every((san,i)=>this.steps[i]===san);const solved=matches&&actual.length===this.steps.length;this.render(solved?`${move.san} — bien joué, tu as trouvé le corrigé !`:`${move.san}. ${matches?'Poursuis la variante.':'Coup légal. Compare cette idée au corrigé ou recommence.'}`);if(solved)this.explain();trackEngagement('tool_use',{tool:'study-position',action:solved?'solved':'move'});return;}catch{/* Un second clic sur sa pièce change la sélection. */}}
+  if(game.get(square)?.color===game.turn())this.selected=square;this.render();const index=(8-Number(square[1]))*8+square.charCodeAt(0)-97;(this.board.children[index] as HTMLButtonElement)?.focus();
+ }
+}
+if(!customElements.get('study-position'))customElements.define('study-position',StudyPosition);

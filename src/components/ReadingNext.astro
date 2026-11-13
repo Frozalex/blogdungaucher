@@ -1,0 +1,32 @@
+---
+import {getReadingPaths,readingPathUi} from '../data/reading-paths';
+import type {SiteLang} from '../utils/lang-paths';
+import {buildSearchIndex} from '../utils/search-index';
+import {normalizeSearch} from '../utils/search-catalogue';
+import {getAllPosts,getPostSlug,getPostUrlLang} from '../utils/blog';
+interface Props {lang?:SiteLang;currentSlug:string;category?:string;}
+const {lang='fr',currentSlug,category}=Astro.props;
+const paths=await getReadingPaths(lang),L=readingPathUi(lang);
+const own=paths.find(p=>p.steps.some(s=>s.slug===currentSlug));
+const path=own??paths.find(p=>p.category===category);
+const index=path?.steps.findIndex(s=>s.slug===currentSlug)??-1;
+let suggestions=path?.steps.slice(index+1).filter(s=>s.slug!==currentSlug).slice(0,2)??[];
+if(!suggestions.length){
+  const catalogue=await buildSearchIndex(lang);
+  const source=(await getAllPosts()).find(post=>getPostSlug(post)===currentSlug);
+  const href=source?await getPostUrlLang(source,lang):'';
+  const current=catalogue.entries.find(entry=>entry.href===href);
+  const tags=new Set((current?.keywords??[]).map(normalizeSearch));
+  const candidates=catalogue.entries.filter(entry=>entry.format==='article'&&entry.category===category&&entry.href!==href).map(entry=>({entry,shared:(entry.keywords??[]).filter(tag=>tags.has(normalizeSearch(tag)))})).sort((a,b)=>b.shared.length-a.shared.length).slice(0,2);
+  const reasons={fr:{tag:(tag:string)=>`Pour approfondir le thème « ${tag} » dans un autre dossier.`,category:(label:string)=>`Pour élargir cette lecture avec un autre dossier de la rubrique ${label}.`},en:{tag:(tag:string)=>`Explore the shared topic “${tag}” in another feature.`,category:(label:string)=>`Broaden this reading with another feature from the ${label} section.`},'pt-br':{tag:(tag:string)=>`Aprofunde o tema em comum « ${tag} » em outro artigo.`,category:(label:string)=>`Amplie esta leitura com outro artigo da seção ${label}.`},nl:{tag:(tag:string)=>`Verdiep het gedeelde thema ‘${tag}’ in een ander artikel.`,category:(label:string)=>`Verruim deze lezing met een ander artikel uit de rubriek ${label}.`}}[lang];
+  suggestions=candidates.map(({entry,shared})=>({href:entry.href,title:entry.title,why:shared[0]?reasons.tag(shared[0]):reasons.category(catalogue.categories[entry.category]?.label??''),format:'article' as const}));
+}
+
+---
+{suggestions.length>0&&<section class="reading-next" aria-labelledby="reading-next-title" data-reading-next-path={path?.id} data-pagefind-ignore>
+  <h2 id="reading-next-title">{L.next}</h2>{path&&<p class="reading-next__path"><a href={`/${lang}/#parcours-${path.id}`}>{path.title} <span aria-hidden="true">↗</span></a></p>}
+  <ol>{suggestions.map(step=><li><h3><a href={step.href}>{step.title} <span aria-hidden="true">→</span></a></h3><p>{step.why}</p></li>)}</ol>
+</section>}
+<style>
+.reading-next{margin:2rem 0;padding:1.5rem;border:1px solid var(--border-strong);border-radius:18px;background:var(--bg-card,var(--bg-main));clear:both}.reading-next>h2{font:650 1.35rem/1.25 var(--font-body);margin:0}.reading-next__path{font-size:.8rem;color:var(--green);margin:.6rem 0 1rem}.reading-next ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.3rem;list-style:none;margin:0;padding:0}.reading-next li{min-width:0;padding-top:1rem;border-top:1px solid var(--border-soft)}.reading-next h3{font:600 1.05rem/1.4 var(--font-body);margin:0}.reading-next li p{font-size:.88rem;line-height:1.65;color:var(--text-muted);margin:.6rem 0 0}.reading-next a:hover{color:var(--green);text-decoration:underline;text-underline-offset:.2em}@media(max-width:639px){.reading-next ol{grid-template-columns:1fr}}
+</style>

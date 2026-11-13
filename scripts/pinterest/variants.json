@@ -1309,7 +1309,7 @@
     "category": "science",
     "pinId": "echecs-alphazero-stockfish--angle-02",
     "title": "Échecs : Le match : 28-0-72",
-    "description": "Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8 (la meilleure version à l'époque). Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite. Dans le détail : avec les Blancs, 25 victoires et 25 nulles ; avec les Noirs, 3 victoires et 47 nulles.",
+    "description": "Dans le match de décembre 2017, AlphaZero a joué 100 parties contre Stockfish 8, la version choisie pour cette comparaison. Résultat : 28 victoires pour AlphaZero, 72 nulles, 0 défaite. Dans le détail : avec les Blancs, 25 victoires et 25 nulles ; avec les Noirs, 3 victoires et 47 nulles.",
     "layout": "question",
     "source": {
       "file": "src/content/blog/science/echecs-alphazero-stockfish.md",
@@ -3469,7 +3469,7 @@
     "category": "science",
     "pinId": "echecs-alphazero-stockfish--angle-04",
     "title": "Échecs : Ce qu'AlphaZero a (re)découvert en théorie des ouvertures",
-    "description": "L'impact le plus durable d'AlphaZero sur la pratique des échecs n'est pas le match lui-même : c'est l'influence sur la théorie des ouvertures.",
+    "description": "L'évolution des choix d'ouverture pendant l'apprentissage permet d'examiner une autre question : quelles séquences apparaissent lorsqu'un programme apprend par auto-jeu sans consulter de parties humaines ?",
     "layout": "repere",
     "source": {
       "file": "src/content/blog/science/echecs-alphazero-stockfish.md",
@@ -4548,7 +4548,7 @@
     "category": "science",
     "pinId": "echecs-alphazero-stockfish--angle-05",
     "title": "Échecs : La convergence : Stockfish NNUE et la fin de la dichotomie",
-    "description": "En septembre 2020, avec la version 12, Stockfish a intégré une architecture de réseau de neurones appelée NNUE (Efficiently Updatable Neural Network), introduite dans le monde du shogi par Yu Nasu en 2018 puis portée aux échecs.",
+    "description": "En septembre 2020, la version 12 de Stockfish utilise par défaut une architecture de réseau de neurones appelée NNUE (Efficiently Updatable Neural Network), d'abord développée pour le shogi puis portée aux échecs.",
     "layout": "lecture",
     "source": {
       "file": "src/content/blog/science/echecs-alphazero-stockfish.md",

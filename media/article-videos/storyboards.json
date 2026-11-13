@@ -109,7 +109,7 @@
     "category": "esprit",
     "title": "Analyser ses parties d'échecs : le guide pratique pour progresser vraiment",
     "sourceFile": "src/content/blog/esprit/analyser-ses-parties.md",
-    "sourceSha256": "ddfe8a6dda5bf8592538dfb372a525a7f543b0e77c6b18ccc1c37009b261233f",
+    "sourceSha256": "8608a259a14e6b755e9d73258a77b90784e4706bcb0a268c11f94816e5fd1b75",
     "scenes": [
       {
         "role": "hook",
@@ -179,7 +179,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "e567337884c8eaf05bad5b743c759f3d95cb7eb6592efbf46377e4492c4590b1",
+    "summarySha256": "f478d98602858e23242edfdda68a69de65eb709b970c6ae210e84f698593b767",
     "duration": 100.5,
     "wordCount": 173,
     "compositionSeed": 3312257269,
@@ -203,7 +203,7 @@
       "license": null
     },
     "html": "html/analyser-ses-parties.html",
-    "htmlSha256": "5755838354a8376ab2ce957e39d0bc92976d33169644f863808eb1989ee48687",
+    "htmlSha256": "ee58b7316dbea46bc2982347541b1deaec68ea5b4a651620b9f3cd0ac80da290",
     "video": "video/analyser-ses-parties.mp4",
     "poster": "posters/analyser-ses-parties.jpg",
     "status": "animation-prepared",
@@ -1157,9 +1157,9 @@
   {
     "slug": "echecs-et-concentration",
     "category": "esprit",
-    "title": "Concentration aux échecs : entraîner l'attention comme un muscle",
+    "title": "Concentration aux échecs : garder et retrouver le fil du calcul",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceSha256": "39a504b17a71094f9ab590ad4b65a8a915c2a2337a2fced700c5a3d708145c8d",
+    "sourceSha256": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
     "scenes": [
       {
         "role": "hook",
@@ -1229,7 +1229,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "5c027f22b109b7113829002d277e24cb8fde4c9193802df9db7d1b0dac8bd8f1",
+    "summarySha256": "289030bf4f13f5dc0689708952ddf1fffaaee119200a738ccb3a5339d654ed93",
     "duration": 100.08333333333334,
     "wordCount": 171,
     "compositionSeed": 3622779900,
@@ -1253,7 +1253,7 @@
       "license": null
     },
     "html": "html/echecs-et-concentration.html",
-    "htmlSha256": "7dd30c9c9d41457eb904f4a53b9bb871b0d473147522a2377850cf57e5381aae",
+    "htmlSha256": "952d46fff39777ccc3145b5229225510d9f65ebebe0930036493ad2a92391d8b",
     "video": "video/echecs-et-concentration.mp4",
     "poster": "posters/echecs-et-concentration.jpg",
     "status": "animation-prepared",
@@ -3154,7 +3154,7 @@
     "category": "esprit",
     "title": "La formation des habitudes aux échecs : pourquoi ton plan d'entraînement ne tient pas",
     "sourceFile": "src/content/blog/esprit/formation-des-habitudes-aux-echecs.md",
-    "sourceSha256": "066caf776d0254c68ae831d3a904c4f8f00d0a36f7acd526d9de13cd8706df32",
+    "sourceSha256": "efca6c47644cc07399260d6f01e0914ed67908c27689a8c208a9f5dd66297f4e",
     "scenes": [
       {
         "role": "hook",
@@ -3224,7 +3224,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "44db8a939b58f31d3b7d6f014af60d58fe36d1455017a955f0a9adcb614a7d9a",
+    "summarySha256": "cb8943be9c0ace4c69985c9834e84f9d2263c9a08188d853a3e05d5ba649f183",
     "duration": 100.54166666666666,
     "wordCount": 167,
     "compositionSeed": 1653939982,
@@ -3248,7 +3248,7 @@
       "license": null
     },
     "html": "html/formation-des-habitudes-aux-echecs.html",
-    "htmlSha256": "58520076f37667bcacff67cdc0682dccd92a0d6eef60ec989df76b3e0cea79e7",
+    "htmlSha256": "7e63cad989281cf48da8f0533d8b3bfa42324a001976c498bc01818dee9b549d",
     "video": "video/formation-des-habitudes-aux-echecs.mp4",
     "poster": "posters/formation-des-habitudes-aux-echecs.jpg",
     "status": "animation-prepared",
@@ -7774,7 +7774,7 @@
     "category": "science",
     "title": "AlphaZero contre Stockfish : la révolution de l'intelligence artificielle aux échecs",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceSha256": "e31e6046c91f1e63ca7e9e3fdae01775301ec2291c6f9009a963991b548ccdaa",
+    "sourceSha256": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
     "scenes": [
       {
         "role": "hook",
@@ -7844,7 +7844,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "afdfb93b3c7ac7cc89688def616a36832e36f9833e15d36b2b290f4314c9a63a",
+    "summarySha256": "122bb4732e2797d40037fd50f92043cdcc3c0f85ef62e720e8aec17d9c40647f",
     "duration": 97.83333333333334,
     "wordCount": 166,
     "compositionSeed": 2816013844,
@@ -7868,7 +7868,7 @@
       "license": null
     },
     "html": "html/echecs-alphazero-stockfish.html",
-    "htmlSha256": "644774622bf7f640f389d6cdd16067600899b89c1287bab146927d5e95cb9971",
+    "htmlSha256": "5d56e300b83a4de89ebf3293fb297201831003c891e06b7e53270b5b952a4bb0",
     "video": "video/echecs-alphazero-stockfish.mp4",
     "poster": "posters/echecs-alphazero-stockfish.jpg",
     "status": "animation-prepared",
@@ -8509,7 +8509,7 @@
     "category": "science",
     "title": "Échecs et mémoire : mémoire de travail, chunks et parties qui restent",
     "sourceFile": "src/content/blog/science/echecs-et-memoire.md",
-    "sourceSha256": "fa7485a440871bc43e7cff596d79ce7a9674ef0c41dff554a6eaed3e4ce258b2",
+    "sourceSha256": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930",
     "scenes": [
       {
         "role": "hook",
@@ -8579,7 +8579,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "599969e3db43b8e9f0779edabfe06f79fd0c5576e2beb32f21a9f6c36a068ba2",
+    "summarySha256": "adbf53e173a98ac06876b17d22a0ec19ee416c4f42edeb599cae2b572e299988",
     "duration": 94.70833333333333,
     "wordCount": 162,
     "compositionSeed": 1943238935,
@@ -8603,7 +8603,7 @@
       "license": null
     },
     "html": "html/echecs-et-memoire.html",
-    "htmlSha256": "bbd6365a54bf724d9b8679b52d4e60cb144848a71f42799f482125a11d050455",
+    "htmlSha256": "3c2ba0cf2e179380c269ab6ca0cd770befac9b14a26a52427de24459f2986541",
     "video": "video/echecs-et-memoire.mp4",
     "poster": "posters/echecs-et-memoire.jpg",
     "status": "animation-prepared",

@@ -10,6 +10,7 @@ import "../../../styles/editorial-dissertations.css";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import Comments from "../../../components/Comments.astro";
+import ReadingTools from "../../../components/ReadingTools.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
 import { siteConfig } from "../../../data/site";
 import { buildBreadcrumbJsonLd, calculateReadingTime } from "../../../utils/blog";
@@ -121,7 +122,8 @@ function formatDate(d: Date) {
         </header>
 
         <div class="dissertation-reading">
-          <div class="article-body prose" id="dissertation-texte"><Content /></div>
+          <ReadingTools lang="fr" title={entry.data.title} url={postUrl} format="dissertation" />
+        <div class="article-body prose" id="dissertation-texte"><Content /></div>
           <footer class="article-footer">
             <p class="article-signature"><span>Une dissertation de</span><strong>{entry.data.author}</strong></p>
             <ShareButtons url={absoluteUrl} title={entry.data.title} />

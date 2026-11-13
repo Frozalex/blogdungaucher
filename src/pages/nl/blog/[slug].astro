@@ -12,6 +12,9 @@ import Comments from "../../../components/Comments.astro";
 import FAQ from "../../../components/FAQ.astro";
 import ArticleVideo from "../../../components/ArticleVideo.astro";
 import FocusMode from "../../../components/FocusMode.astro";
+import NewsletterCta from "../../../components/NewsletterCta.astro";
+import ReadingTools from "../../../components/ReadingTools.astro";
+import ReadingNext from "../../../components/ReadingNext.astro";
 
 import { categoryMap, siteConfig, NL_LAUNCH_DATE } from "../../../data/site";
 import { t } from "../../../i18n/translations";
@@ -320,6 +323,7 @@ const structuredData = [
 
         <div class="article-tools">
           <FocusMode lang="nl" />
+          <ReadingTools lang="nl" title={displayTitle} url={postUrlNl} />
         </div>
 
         {headings.length > 0 && (
@@ -349,6 +353,8 @@ const structuredData = [
       </div>
     </div>
 
+    {post.data.category !== "grand-oral" && <NewsletterCta lang="nl" category={post.data.category} />}
+    <ReadingNext lang="nl" currentSlug={getPostSlug(post)} category={post.data.category} />
     {relatedWithUrls.length > 0 && (
       <section class="related-carousel container" aria-label="Aanbevolen artikelen" data-pagefind-ignore>
         <div class="related-carousel__head">

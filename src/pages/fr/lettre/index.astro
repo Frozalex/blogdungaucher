@@ -1,0 +1,123 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import NewsletterForm from "../../../components/NewsletterForm.astro";
+import example from "../../../data/newsletter-example.json";
+import { newsletterCopy } from "../../../data/newsletter";
+import { buildBreadcrumbJsonLd } from "../../../utils/blog";
+import { Chess } from "chess.js";
+
+const pieces = { wk: "♔", wq: "♕", wr: "♖", wb: "♗", wn: "♘", wp: "♙", bk: "♚", bq: "♛", br: "♜", bb: "♝", bn: "♞", bp: "♟" };
+const board = new Chess(example.position.fen).board();
+const copy = newsletterCopy.fr;
+---
+
+<BaseLayout title="La lettre du Gaucher : une idée, une position, une lecture" description="Découvre un exemple complet de la lettre du Gaucher : une idée expliquée, une position commentée et une lecture recommandée autour des échecs." canonicalPath="/fr/lettre/" lang="fr" omitEnDeAlternateLinks={true} omitPtBrNlAlternates={true} structuredData={buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: "La lettre du Gaucher", path: "/fr/lettre/" }])}>
+  <div class="letter-page container">
+    <header class="letter-intro">
+      <a class="letter-back" href="/fr/">← Retour à la une</a>
+      <p class="letter-eyebrow">Un autre regard, dans ta boîte mail</p>
+      <h1>{copy.title}</h1>
+      <p class="letter-lead">{copy.promise}</p>
+      <p class="letter-note">{copy.note}</p>
+      <a class="letter-button" href="#recevoir">Recevoir les prochains messages</a>
+    </header>
+
+    <article class="letter-example" aria-labelledby="letter-subject">
+      <header class="letter-example-header">
+        <p class="letter-eyebrow">Exemple de la lettre · à lire ici</p>
+        <h2 id="letter-subject">{example.subject}</h2>
+        <p>{example.introduction}</p>
+        <p class="letter-note">Ce numéro illustre le format proposé. Il n’est pas présenté comme une lettre déjà envoyée.</p>
+      </header>
+      <section class="letter-section" aria-labelledby="letter-idea">
+        <p class="letter-eyebrow">01 / Une idée expliquée</p>
+        <h3 id="letter-idea">{example.idea.title}</h3>
+        {example.idea.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      </section>
+      <section class="letter-section" aria-labelledby="letter-position">
+        <p class="letter-eyebrow">02 / Une position commentée</p>
+        <h3 id="letter-position">{example.position.title}</h3>
+        <p class="letter-note">{example.position.origin}</p>
+        <figure class="letter-position">
+          <div class="letter-board" role="img" aria-label={example.position.description}>
+            {board.flatMap((rank, row) => rank.map((piece, col) => (
+              <span class:list={["letter-square", { "letter-square-dark": (row + col) % 2 === 1 }]} aria-hidden="true">
+                {col === 0 && <small class="letter-rank">{8 - row}</small>}
+                {piece && <span class:list={["letter-piece", { "letter-piece-white": piece.color === "w" }]}>{pieces[`${piece.color}${piece.type}` as keyof typeof pieces]}</span>}
+                {row === 7 && <small class="letter-file">{"abcdefgh"[col]}</small>}
+              </span>
+            )))}
+          </div>
+          <figcaption>{example.position.description}</figcaption>
+        </figure>
+        <details class="letter-solution">
+          <summary>Voir la solution et la vérification</summary>
+          <h4>{example.position.solutionLabel}</h4>
+          {example.position.explanation.map((paragraph) => <p>{paragraph}</p>)}
+        </details>
+        <details class="letter-fen">
+          <summary>Reprendre ces positions sur un échiquier</summary>
+          <p>La notation FEN décrit les pièces et le trait. Copie-la dans l’éditeur de position de ton choix.</p>
+          <p>Position initiale : <code>{example.position.fen}</code></p>
+          <p>Variante avec le pion en h6 : <code>{example.position.comparisonFen}</code></p>
+        </details>
+      </section>
+      <section class="letter-section" aria-labelledby="letter-reading">
+        <p class="letter-eyebrow">03 / Une lecture recommandée</p>
+        <h3 id="letter-reading">{example.reading.title}</h3>
+        <p>{example.reading.reason}</p>
+        <a class="letter-reading-link" href={new URL(example.reading.url).pathname}>Lire le guide d’analyse <span aria-hidden="true">↗</span></a>
+      </section>
+    </article>
+
+    <section class="letter-signup" id="recevoir" aria-labelledby="letter-signup-title" data-pagefind-ignore>
+      <div>
+        <p class="letter-eyebrow">Pour continuer</p>
+        <h2 id="letter-signup-title">La prochaine lecture commence ici.</h2>
+        <p>Inscris-toi à la lettre du Gaucher et aux alertes de publication du blog. Chaque lettre réunit les trois rendez-vous que tu viens de découvrir ; une alerte annonce simplement un nouvel article.</p>
+        <p class="letter-note">{copy.note}</p>
+      </div>
+      <NewsletterForm variant="article" placement="letter-example" lang="fr" />
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .letter-page { max-width: 1000px; padding-block: clamp(2rem, 5vw, 5rem); }
+  .letter-intro { max-width: 760px; margin: 0 auto 3rem; }
+  .letter-back { display: inline-block; margin-bottom: 2.5rem; color: var(--text-muted); font-size: .85rem; }
+  .letter-eyebrow { font-size: .72rem; font-weight: 650; color: var(--green); letter-spacing: .1em; text-transform: uppercase; margin: 0 0 .8rem; }
+  h1 { font-family: var(--font-display); font-size: clamp(2.6rem, 6vw, 4.4rem); letter-spacing: -.045em; line-height: 1.07; margin: 0 0 1rem; }
+  .letter-lead { font-size: clamp(1.15rem, 2vw, 1.4rem); line-height: 1.6; }
+  .letter-note { font-size: .85rem; color: var(--text-muted); line-height: 1.65; }
+  .letter-button { display: inline-block; margin-top: 1rem; padding: .8rem 1.2rem; border: 1px solid var(--green); border-radius: 999px; background: var(--green); color: var(--on-green); font-weight: 600; text-decoration: none; }
+  .letter-example { background: var(--surface); border: 1px solid var(--border-soft); border-radius: 24px; overflow: hidden; }
+  .letter-example-header, .letter-section { padding: clamp(1.4rem, 4vw, 3rem); }
+  .letter-example-header { background: color-mix(in srgb, var(--green) 5%, var(--bg-warm)); }
+  .letter-section { border-top: 1px solid var(--border-soft); }
+  h2, h3, h4 { font-family: var(--font-display); letter-spacing: -.025em; line-height: 1.2; }
+  h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); margin: 0 0 1rem; }
+  h3 { font-size: clamp(1.5rem, 2.8vw, 2rem); margin: 0 0 1rem; }
+  h4 { font-size: 1.2rem; margin: 1.2rem 0 .8rem; }
+  .letter-example p { line-height: 1.8; max-width: 72ch; }
+  .letter-position { margin: 1.6rem 0; }
+  .letter-board { width: min(100%, 360px); display: grid; grid-template-columns: repeat(8, 1fr); border: 2px solid var(--green); border-radius: 8px; overflow: hidden; }
+  .letter-square { position: relative; aspect-ratio: 1; display: grid; place-items: center; background: #fffcf4; color: #242923; }
+  .letter-square-dark { background: #89a697; }
+  .letter-piece { font-family: "DejaVu Sans", "Segoe UI Symbol", serif; font-size: clamp(1.25rem, 5.5vw, 2rem); line-height: 1; }
+  .letter-piece-white { text-shadow: 0 1px #fff; }
+  .letter-rank, .letter-file { position: absolute; font: 600 .55rem var(--font-body); }
+  .letter-rank { top: 2px; left: 3px; }
+  .letter-file { bottom: 0; right: 3px; }
+  figcaption { margin-top: .8rem; font-size: .8rem; color: var(--text-muted); max-width: 65ch; line-height: 1.6; }
+  .letter-solution { background: var(--bg-warm); border: 1px solid var(--border-soft); border-radius: 12px; padding: 1rem 1.2rem; }
+  summary { cursor: pointer; min-height: 24px; font-weight: 600; color: var(--green); }
+  .letter-fen { margin-top: 1rem; font-size: .85rem; }
+  code { display: block; overflow-wrap: anywhere; font-size: .8rem; }
+  .letter-reading-link { color: var(--green); font-weight: 600; text-decoration: underline; text-underline-offset: .2em; }
+  .letter-signup { display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; align-items: center; padding: 2rem 0; margin-top: 2rem; scroll-margin-top: 6rem; }
+  .letter-signup h2 { font-size: 1.7rem; }
+  .letter-signup p { line-height: 1.7; }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+  @media (max-width: 650px) { .letter-signup { grid-template-columns: 1fr; } }
+</style>

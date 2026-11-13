@@ -3,10 +3,11 @@ title: "Analyser ses parties d'échecs : le guide pratique pour progresser vraim
 excerpt:
   "Une méthode pour retrouver tes idées, vérifier les variantes et choisir un exercice utile après une partie, gagnée ou perdue."
 publishDate: "2026-11-02"
+updatedDate: "2026-11-13"
 category: esprit
 featured: false
 featuredRank: 99
-readingTime: "7 min"
+readingTime: "10 min"
 pillar: Performance mentale
 tags:
   - analyse
@@ -36,9 +37,9 @@ faq:
     answer: "Choisis une question que tu peux réellement travailler. Aucune durée optimale universelle n'est établie ici."
 ---
 
-Tu viens de perdre une partie. Ton adversaire a joué quelque chose d'inattendu, tu as hésité, puis la position s'est dégradée. Avant de relancer, tu peux garder une trace de ce moment : que pensais-tu pouvoir faire ?
+Analyser une partie consiste à confronter les décisions prises aux possibilités de la position. Le résultat constitue un point de départ insuffisant : une victoire peut masquer une erreur, tandis qu'une défaite ne rend pas tous les choix précédents mauvais.
 
-L'analyse post-partie permet de confronter tes décisions à ce qui était possible. Elle peut aussi porter sur une victoire : gagner ne valide pas toutes les idées qui ont conduit au résultat.
+Pour que cette analyse serve l'entraînement, il faut distinguer ce que tu pensais pendant la partie, ce que les variantes permettent d'établir et ce que tu souhaites travailler ensuite. Conserver une trace de ton raisonnement avant de consulter un moteur aide à organiser cette comparaison.
 
 ## Ce que l'étude de la pratique permet de dire
 
@@ -99,6 +100,54 @@ Compare ensuite le candidat moteur à ton candidat initial. Qu'est-ce qui change
 Une évaluation dépend aussi des conditions de recherche. Un moteur arrêté tôt peut changer d'avis ; une profondeur annoncée n'a pas exactement le même sens dans toutes les positions. Une variation d'évaluation signale un résultat de calcul à examiner, sans devenir une mesure directe de ta réflexion humaine.
 
 Dans une position gagnante, pense aux ressources défensives : pat, perpétuel ou finale nulle. Dans une position inférieure, ne compare pas seulement les chiffres ; cherche ce qui rend la défense difficile pour l'autre. La vérification technique précède le commentaire psychologique sur le courage ou la confiance.
+
+## Une combinaison réussie ne dispense pas d'examiner l'autre défense
+
+Voici une deuxième **suite pédagogique construite**, autour du motif du mat de Legal. Elle n'est pas attribuée à une partie historique : **1.e4 e5 2.Cf3 d6 3.Fc4 Fg4 4.Cc3 g6**. Les Blancs envisagent **5.Cxe5**. Leur Cavalier quitte f3 et laisse apparemment la Dame d1 en prise sur la diagonale g4-f3-e2-d1.
+
+La question à résoudre est limitée : les Noirs peuvent-ils prendre la Dame sans danger ? Elle diffère de « 5.Cxe5 est-il le meilleur coup possible ? », qui demanderait une comparaison plus large. Tu peux importer cette position avec la notation FEN suivante, utilisée par les logiciels pour décrire l'échiquier et le trait :
+
+```text
+rn1qkbnr/ppp2p1p/3p2p1/4p3/2B1P1b1/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 5
+```
+
+Avant de lire les réponses, examine deux branches : **5…Fxd1**, qui prend la Dame, et **5…dxe5**, qui capture le Cavalier. Note une suite et une conclusion pour chacune. Ne choisis pas à la place de l'adversaire la réponse qui rend ta combinaison brillante.
+
+### Branche A : la Dame est prise, mais le Roi est maté
+
+Après **5.Cxe5 Fxd1**, les Blancs disposent de **6.Fxf7+**. Le Roi noir ne peut pas prendre le Fou f7, protégé par le Cavalier e5. Parmi les cases voisines du Roi e8, d8 et f8 sont occupées par ses propres pièces ; d7 est contrôlée par le Cavalier e5 et f7 par ce même Cavalier. Il reste **6…Re7**.
+
+Vient **7.Cd5#**, avec le Cavalier c3. Le Cavalier d5 donne échec sur e7. Les Cavaliers blancs contrôlent notamment d7, f7 et f6 ; le Fou f7 contrôle e8 et e6. Les autres cases voisines du Roi, d6, d8 et f8, sont occupées par les Noirs. Aucun défenseur ne peut capturer le Cavalier d5 et un échec de Cavalier ne se bloque pas. La prise de la Dame conduit bien au mat dans cette branche.
+
+Le contrôle des pièces est indispensable à l'explication. Il ne suffit pas d'écrire « sacrifice de Dame connu » : le Cavalier e5 protège f7, puis le Cavalier c3 apporte l'échec décisif. Tu peux retrouver cette coordination sans mémoriser le nom du motif.
+
+### Branche B : le défenseur refuse la combinaison spectaculaire
+
+Après **5.Cxe5 dxe5**, les Noirs ont retiré le Cavalier qui soutenait l'attaque. Les Blancs peuvent jouer **6.Dxg4**, puisque la diagonale d1-e2-f3-g4 est libre. La Dame prend le Fou g4.
+
+Le bilan local est alors simple : les Blancs ont perdu un Cavalier et pris un Fou ainsi que le pion noir initialement en e5. Le matériel ne s'est donc pas effondré pour les Blancs, mais le mat de la branche A n'a pas eu lieu. Il reste une position à jouer, avec des questions de développement et de sécurité du Roi. Cette ligne ne prétend pas prouver une évaluation numérique précise ni épuiser toutes les réponses noires.
+
+Une analyse qui aurait seulement conservé la première branche aurait retenu une mauvaise conclusion : « 5.Cxe5 force le mat ». Les deux branches établissent quelque chose de plus exact : **prendre la Dame de cette manière perd, mais les Noirs disposent d'une autre réponse légale qui évite ce mat immédiat**.
+
+### Ce qu'il faut écrire dans ton carnet
+
+| Élément | Note utile pour cet exercice |
+| --- | --- |
+| Hypothèse à vérifier | La prise de la Dame permet une attaque forcée |
+| Réponse qui confirme l'idée | 5…Fxd1 6.Fxf7+ Re7 7.Cd5# |
+| Autre défense examinée | 5…dxe5 6.Dxg4 ; le mat précédent disparaît |
+| Conclusion limitée | La Dame est tactiquement protégée contre cette prise, mais toutes les défenses ne donnent pas mat |
+| Prochain travail | Chercher une réponse adverse qui change le mécanisme, au lieu de répéter seulement la variante gagnante |
+
+Dans une vraie partie, ajoute séparément ton souvenir : avais-tu vu les deux réponses, seulement la première, ou aucune ? Deux joueurs ayant joué le même coup peuvent avoir besoin d'exercices différents. Le gain de la partie n'autorise pas à reconstruire après coup un calcul que tu n'avais pas fait.
+
+## Garder une analyse reproductible et une question ouverte
+
+Quand une conclusion dépend du moteur, conserve son nom et sa version, la position exacte et les variantes comparées. Note aussi si tu as interrompu très tôt la recherche. Ces informations permettent de revenir à un désaccord sans confondre deux positions ou deux sessions. Elles ne rendent pas une évaluation infaillible.
+
+Classe tes notes en fonction de ce qui a été établi. Une ligne de mat dont toutes les réponses légales sont vérifiées est une démonstration locale. Une préférence positionnelle appuyée par une analyse peut rester provisoire. « Je ne comprends pas pourquoi l'échange est déconseillé » est une question utile à garder ; une phrase vague sur le style du moteur ne la résout pas.
+
+Pour terminer, ferme l'analyse et explique le point décisif avec tes propres mots. Dans l'exemple précédent, tu dois pouvoir distinguer le mat après la prise de Dame et le bilan matériel après la prise du Cavalier. Si tu ne retrouves que le coup spectaculaire, reprends la branche défensive. Le travail sur la [mémoire des positions et de leurs conditions](/fr/blog/echecs-et-memoire/) prolonge précisément cette vérification.
 
 ## Transformer la conclusion en exercice corrigé
 

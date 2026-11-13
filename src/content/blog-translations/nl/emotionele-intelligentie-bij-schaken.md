@@ -115,7 +115,7 @@ Op zichzelf beschouwd is dit geen theorie van succes. Het is een feitelijke, nau
 
 Tilt is niet gevaarlijk omdat het je verdrietig maakt. Het is gevaarlijk omdat het **de kwaliteit van je beslissingen aantast terwijl het tegelijkertijd je vermogen aantast om te constateren dat ze zijn aangetast**. Beide verslechteringen komen samen aan. Dit maakt het advies "stop met spelen wanneer je tilt" tegelijk overduidelijk juist en praktisch onuitvoerbaar: op het moment waarop je het zou moeten toepassen, is het meetinstrument defect.
 
-Ons artikel over [woede en schaken](/nl/blog/woede-en-schaken/) beschrijft het neurologische circuit dat hierbij een rol speelt. Hier is de vraag anders: hoe weet je dat je erin zit, nog voordat je iets probeert te beheren.
+Ons artikel over [woede en schaken](/nl/blog/woede-ragequit-schaken/) beschrijft het neurologische circuit dat hierbij een rol speelt. Hier is de vraag anders: hoe weet je dat je erin zit, nog voordat je iets probeert te beheren.
 
 ## Het voordeel dat schaken bezit
 
@@ -181,7 +181,7 @@ Het goede nieuws is dat je dit probleem niet via introspectie hoeft op te lossen
 
 ---
 
-*Dit artikel maakt deel uit van een serie over toegepaste psychologie bij schaken. Zie ook het Dunning-Kruger-effect bij schaken, [woede en schaken](/nl/blog/woede-en-schaken/) en [gewoontevorming bij schaken](/nl/blog/gewoontevorming-schaken/).*
+*Dit artikel maakt deel uit van een serie over toegepaste psychologie bij schaken. Zie ook het Dunning-Kruger-effect bij schaken, [woede en schaken](/nl/blog/woede-ragequit-schaken/) en [gewoontevorming bij schaken](/nl/blog/gewoontevorming-schaken/).*
 
 ## Bronnen en referenties
 

@@ -1,8 +1,5 @@
 /* Fonts auto-hébergées via @fontsource-variable, aucune requête externe (conformité RGPD). */
-@import '@fontsource-variable/space-grotesk';
 @import '@fontsource-variable/outfit';
-@import '@fontsource-variable/fraunces/opsz.css';
-@import '@fontsource-variable/fraunces/opsz-italic.css';
 
 /* ─── TOKENS - MODE CLAIR ───────────────────────────────────── */
 :root {

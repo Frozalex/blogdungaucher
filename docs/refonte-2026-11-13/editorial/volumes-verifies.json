@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-13",
+  "baseline": "/home/nerv/Documents/ChatGPT/Blog d'un gaucher/refonte-2026-11-13/baseline",
+  "counter": "scripts/audit-editorial-volume.py:words",
+  "articles": [
+    {
+      "path": "src/content/blog/science/echecs-et-memoire.md",
+      "before": 2022,
+      "after": 2639,
+      "change": 617,
+      "changePercent": 30.5,
+      "headingsBefore": 16,
+      "headingsAfter": 21,
+      "preservedMediaFields": [
+        "ogImage",
+        "heroImage"
+      ],
+      "bodyImagesPreserved": true,
+      "publicationDatePreserved": true
+    },
+    {
+      "path": "src/content/blog/esprit/echecs-et-concentration.md",
+      "before": 1452,
+      "after": 2109,
+      "change": 657,
+      "changePercent": 45.2,
+      "headingsBefore": 11,
+      "headingsAfter": 15,
+      "preservedMediaFields": [
+        "ogImage",
+        "heroImage"
+      ],
+      "bodyImagesPreserved": true,
+      "publicationDatePreserved": true
+    },
+    {
+      "path": "src/content/blog/esprit/analyser-ses-parties.md",
+      "before": 1376,
+      "after": 2195,
+      "change": 819,
+      "changePercent": 59.5,
+      "headingsBefore": 11,
+      "headingsAfter": 16,
+      "preservedMediaFields": [
+        "ogImage",
+        "heroImage"
+      ],
+      "bodyImagesPreserved": true,
+      "publicationDatePreserved": true
+    },
+    {
+      "path": "src/content/blog/science/echecs-alphazero-stockfish.md",
+      "before": 1513,
+      "after": 2237,
+      "change": 724,
+      "changePercent": 47.9,
+      "headingsBefore": 7,
+      "headingsAfter": 9,
+      "preservedMediaFields": [
+        "ogImage",
+        "heroImage"
+      ],
+      "bodyImagesPreserved": true,
+      "publicationDatePreserved": true
+    },
+    {
+      "path": "src/content/blog/esprit/formation-des-habitudes-aux-echecs.md",
+      "before": 1288,
+      "after": 2061,
+      "change": 773,
+      "changePercent": 60.0,
+      "headingsBefore": 10,
+      "headingsAfter": 15,
+      "preservedMediaFields": [
+        "heroImage",
+        "ogImage"
+      ],
+      "bodyImagesPreserved": true,
+      "publicationDatePreserved": true
+    }
+  ],
+  "beforeTotal": 7651,
+  "afterTotal": 11241
+}

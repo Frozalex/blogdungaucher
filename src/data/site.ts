@@ -298,6 +298,8 @@ export const staticRoutes = [
   "/fr/esprit/",
   "/fr/societe/",
   "/fr/grand-oral/",
+  "/fr/grand-oral/generateur/",
+  "/fr/lettre/",
   "/fr/dissertations/",
   "/fr/about/",
   "/fr/contact/",

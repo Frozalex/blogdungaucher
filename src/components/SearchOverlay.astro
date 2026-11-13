@@ -4,22 +4,22 @@
  * Inclus une seule fois dans BaseLayout, disponible sur TOUTES les pages.
  * Ouverture : clic sur un élément [data-search-trigger] (icône loupe navbar),
  * touche « / », ou Ctrl/⌘+K. Fermeture : Échap, clic sur le fond, bouton.
- * Résultats instantanés via Pagefind, scopés à la langue de la page.
+ * Catalogue commun de tous les formats, complété par le plein texte Pagefind.
  * La page /recherche/ reste disponible comme recherche plein écran (repli).
  */
 const { lang = "fr" } = Astro.props as { lang?: "fr" | "en" | "pt-br" | "nl" };
 
 const copy = {
-  fr: { placeholder: "Rechercher un article…", dialog: "Recherche", start: "Ex. Alzheimer, TDAH, Elo, minimax, dopamine…", allLink: "Recherche avancée", close: "Fermer" },
-  en: { placeholder: "Search articles…", dialog: "Search", start: "e.g. Alzheimer, ADHD, Elo, minimax, dopamine…", allLink: "Advanced search", close: "Close" },
-  "pt-br": { placeholder: "Buscar artigos…", dialog: "Busca", start: "ex. Alzheimer, TDAH, Elo, minimax, dopamina…", allLink: "Busca avançada", close: "Fechar" },
-  nl: { placeholder: "Artikelen zoeken…", dialog: "Zoeken", start: "bijv. Alzheimer, ADHD, Elo, minimax, dopamine…", allLink: "Uitgebreid zoeken", close: "Sluiten" },
+  fr: { placeholder: "Rechercher dans le site…", dialog: "Recherche", start: "Ex. Alzheimer, TDAH, Elo, minimax, dopamine…", allLink: "Tous les résultats et filtres", close: "Fermer" },
+  en: { placeholder: "Search the site…", dialog: "Search", start: "e.g. Alzheimer, ADHD, Elo, minimax, dopamine…", allLink: "All results and filters", close: "Close" },
+  "pt-br": { placeholder: "Buscar no site…", dialog: "Busca", start: "ex. Alzheimer, TDAH, Elo, minimax, dopamina…", allLink: "Todos os resultados e filtros", close: "Fechar" },
+  nl: { placeholder: "Zoek op de site…", dialog: "Zoeken", start: "bijv. Alzheimer, ADHD, Elo, minimax, dopamine…", allLink: "Alle resultaten en filters", close: "Sluiten" },
 } as const;
 const c = copy[lang] ?? copy.fr;
 const searchPageHref = `/${lang}/recherche/`;
 ---
 
-<div class="search-overlay" id="searchOverlay" data-search-overlay data-lang={lang} hidden>
+<div class="search-overlay" id="searchOverlay" data-search-overlay data-lang={lang} data-search-index={`/search-index/${lang}.json`} hidden>
   <div class="search-overlay__backdrop" data-search-close aria-hidden="true"></div>
   <div class="search-overlay__panel" role="dialog" aria-modal="true" aria-label={c.dialog}>
     <div class="search-overlay__box">
@@ -32,14 +32,17 @@ const searchPageHref = `/${lang}/recherche/`;
         class="search-overlay__input"
         placeholder={c.placeholder}
         aria-label={c.placeholder}
+        aria-controls="searchOverlayResults"
+        aria-describedby="searchOverlayState"
         autocomplete="off"
         spellcheck="false"
       />
       <button class="search-overlay__esc" data-search-close type="button" aria-label={`${c.close} (Esc)`}><kbd>Esc</kbd><svg class="search-overlay__close-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18" /></svg></button>
     </div>
-    <p class="search-overlay__state" data-search-state aria-live="polite">{c.start}</p>
-    <ul class="search-overlay__results" data-search-results role="list"></ul>
-    <a class="search-overlay__all" href={searchPageHref} data-search-all hidden>{c.allLink} →</a>
+    <p id="searchOverlayState" class="search-overlay__state" data-search-state aria-live="polite">{c.start}</p>
+    <ul id="searchOverlayResults" class="search-overlay__results" data-search-results role="list"></ul>
+    <p class="search-overlay__state" data-search-partial aria-live="polite" hidden></p>
+    <a class="search-overlay__all" href={searchPageHref} data-search-all>{c.allLink} →</a>
   </div>
 </div>
 
@@ -133,6 +136,7 @@ const searchPageHref = `/${lang}/recherche/`;
     box-shadow: 0 1px 0 var(--border-soft);
   }
 
+  .search-overlay__state[hidden] { display: none; }
   .search-overlay__state {
     flex-shrink: 0;
     margin: 0;
@@ -168,6 +172,18 @@ const searchPageHref = `/${lang}/recherche/`;
   .search-overlay__results :global(.search-overlay__result.is-active) {
     background: var(--surface-warm);
     border-color: var(--border-soft);
+  }
+  .search-overlay__results :global(.search-overlay__result:focus-visible) {
+    outline: 2px solid var(--green);
+    outline-offset: -2px;
+    background: var(--surface-warm);
+  }
+  .search-overlay__results :global(.search-overlay__result small) {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--green);
+    font-size: 0.7rem;
+    font-weight: 600;
   }
   .search-overlay__results :global(.search-overlay__result strong) {
     display: block;
@@ -220,176 +236,5 @@ const searchPageHref = `/${lang}/recherche/`;
 </style>
 
 <script>
-  import { loadPagefind } from "../utils/pagefind-client";
-  import type { SiteLang } from "../utils/lang-paths";
-  // Messages dynamiques par langue (le placeholder + le message initial sont rendus côté serveur).
-  const MESSAGES: Record<string, { searching: string; empty: string; min: string; start: string; unavailable: string; count: (n: number) => string }> = {
-    fr:      { searching: "Recherche…",  empty: "Aucun résultat pour",  min: "Continuez à taper…", start: "Ex. Alzheimer, TDAH, Elo, minimax, dopamine…",   unavailable: "Recherche momentanément indisponible. Réessayez ou utilisez la recherche avancée.", count: (n) => `${n} résultat${n > 1 ? "s" : ""}` },
-    en:      { searching: "Searching…",  empty: "No results for",       min: "Keep typing…",       start: "e.g. Alzheimer, ADHD, Elo, minimax, dopamine…",  unavailable: "Search is temporarily unavailable. Try again or use advanced search.",   count: (n) => `${n} result${n > 1 ? "s" : ""}` },
-    "pt-br": { searching: "Buscando…",   empty: "Nenhum resultado para", min: "Continue digitando…",start: "ex. Alzheimer, TDAH, Elo, minimax, dopamina…",  unavailable: "Busca temporariamente indisponível. Tente novamente ou use a busca avançada.", count: (n) => `${n} resultado${n > 1 ? "s" : ""}` },
-    nl:      { searching: "Zoeken…",     empty: "Geen resultaten voor",  min: "Blijf typen…",       start: "bijv. Alzheimer, ADHD, Elo, minimax, dopamine…",unavailable: "Zoeken is tijdelijk niet beschikbaar. Probeer het opnieuw of gebruik uitgebreid zoeken.",count: (n) => `${n} ${n === 1 ? "resultaat" : "resultaten"}` },
-  };
-
-  type PfResult = { url: string; excerpt: string; meta: Record<string, string> };
-
-  let overlayCtrl: AbortController | null = null;
-
-  function initSearchOverlay() {
-    const overlay = document.getElementById("searchOverlay")!;
-    if (!overlay) return;
-    const input   = overlay.querySelector<HTMLInputElement>("#searchOverlayInput")!;
-    const stateEl = overlay.querySelector<HTMLElement>("[data-search-state]")!;
-    const listEl  = overlay.querySelector<HTMLUListElement>("[data-search-results]")!;
-    const allLink = overlay.querySelector<HTMLElement>("[data-search-all]");
-    if (!input || !stateEl || !listEl) return;
-
-    const lang = (overlay.dataset.lang || "fr") as SiteLang;
-    const M = MESSAGES[lang] || MESSAGES.fr;
-
-    if (overlayCtrl) overlayCtrl.abort();
-    overlayCtrl = new AbortController();
-    const { signal } = overlayCtrl;
-
-    let activeIdx = -1;
-    let returnFocus: HTMLElement | null = null;
-    let previousRootOverflow = "";
-
-    async function getPagefind() {
-      try {
-        return await loadPagefind(lang);
-      } catch {
-        return null;
-      }
-    }
-
-    function isOpen() { return !overlay.hidden; }
-
-    function openOverlay(trigger?: HTMLElement) {
-      if (isOpen()) return;
-      returnFocus = trigger ?? (document.activeElement instanceof HTMLElement ? document.activeElement : null);
-      previousRootOverflow = document.documentElement.style.overflow;
-      overlay.hidden = false;
-      document.documentElement.style.overflow = "hidden";
-      requestAnimationFrame(() => {
-        if (overlay.hidden) return;
-        overlay.classList.add("is-open");
-        input.focus();
-        input.select();
-      });
-      getPagefind(); // préchauffe l'index
-    }
-
-    function closeOverlay() {
-      overlay.classList.remove("is-open");
-      overlay.hidden = true;
-      document.documentElement.style.overflow = previousRootOverflow;
-      if (returnFocus?.isConnected && !returnFocus.closest("[inert]")) {
-        returnFocus.focus({ preventScroll: true });
-      }
-    }
-
-    function setActive(idx: number) {
-      const links = Array.from(listEl.querySelectorAll<HTMLAnchorElement>(".search-overlay__result"));
-      if (!links.length) { activeIdx = -1; return; }
-      activeIdx = ((idx % links.length) + links.length) % links.length;
-      links.forEach((a, i) => {
-        const on = i === activeIdx;
-        a.classList.toggle("is-active", on);
-        if (on) a.scrollIntoView({ block: "nearest" });
-      });
-    }
-
-    function render(results: PfResult[], q: string) {
-      listEl.innerHTML = "";
-      activeIdx = -1;
-      if (!results.length) {
-        stateEl.textContent = `${M.empty} « ${q} »`;
-        if (allLink) allLink.hidden = false;
-        return;
-      }
-      stateEl.textContent = M.count(results.length);
-      results.forEach((d) => {
-        const li = document.createElement("li");
-        const title = d.meta?.title || d.url;
-        li.innerHTML =
-          `<a href="${d.url}" class="search-overlay__result"><strong>${title}</strong><span>${d.excerpt}</span></a>`;
-        listEl.appendChild(li);
-      });
-      if (allLink) allLink.hidden = false;
-    }
-
-    let seq = 0;
-    async function runSearch(raw: string) {
-      const q = raw.trim();
-      const mine = ++seq;
-      if (q.length < 2) {
-        stateEl.textContent = q.length === 1 ? M.min : M.start;
-        listEl.innerHTML = "";
-        if (allLink) allLink.hidden = true;
-        return;
-      }
-      stateEl.textContent = M.searching;
-      const pf = await getPagefind();
-      if (mine !== seq) return; // une frappe plus récente a pris le relais
-      if (!pf) {
-        listEl.innerHTML = "";
-        stateEl.textContent = M.unavailable;
-        if (allLink) allLink.hidden = false;
-        return;
-      }
-      const response = await pf.search(q);
-      if (mine !== seq) return;
-      const data = await Promise.all(response.results.slice(0, 8).map((r: any) => r.data()));
-      if (mine !== seq) return;
-      render(data as PfResult[], q);
-    }
-
-    input.addEventListener("input", () => runSearch(input.value), { signal });
-
-    input.addEventListener("keydown", (e) => {
-      const links = Array.from(listEl.querySelectorAll<HTMLAnchorElement>(".search-overlay__result"));
-      if (e.key === "ArrowDown") { e.preventDefault(); setActive(activeIdx + 1); }
-      else if (e.key === "ArrowUp") { e.preventDefault(); setActive(activeIdx - 1); }
-      else if (e.key === "Enter") {
-        const target = activeIdx >= 0 ? links[activeIdx] : links[0];
-        if (target) { e.preventDefault(); target.click(); }
-      }
-    }, { signal });
-
-    // Déclencheurs d'ouverture
-    document.querySelectorAll("[data-search-trigger]").forEach((t) => {
-      t.addEventListener("click", (e) => { e.preventDefault(); openOverlay(t instanceof HTMLElement ? t : undefined); }, { signal });
-    });
-    overlay.querySelectorAll("[data-search-close]").forEach((el) => {
-      el.addEventListener("click", closeOverlay, { signal });
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Tab" && isOpen()) {
-        const controls = Array.from(overlay.querySelectorAll<HTMLElement>(
-          'a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])',
-        )).filter(el => !el.closest("[hidden],[inert]") && el.getClientRects().length > 0);
-        const first = controls[0];
-        const last = controls[controls.length - 1];
-        const active = document.activeElement;
-        if (first && last && (!overlay.contains(active) || (e.shiftKey && active === first) || (!e.shiftKey && active === last))) {
-          e.preventDefault();
-          (e.shiftKey ? last : first).focus();
-        }
-      }
-      const target = e.target as HTMLElement | null;
-      const typing = target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable);
-      const onSearchPage = /\/recherche\/?$/.test(window.location.pathname);
-      if ((e.key === "/" && !typing && !onSearchPage) ||
-          (e.key.toLowerCase() === "k" && (e.metaKey || e.ctrlKey))) {
-        e.preventDefault();
-        openOverlay();
-      } else if (e.key === "Escape" && isOpen()) {
-        e.preventDefault();
-        closeOverlay();
-      }
-    }, { signal });
-  }
-
-  document.addEventListener("astro:page-load", initSearchOverlay);
+  import "../scripts/search-overlay";
 </script>
