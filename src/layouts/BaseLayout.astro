@@ -118,7 +118,10 @@ const ptBrSwapped = withTrailingSlash(swapLangPrefix(canonicalPath, "pt-br"));
 const nlSwapped = withTrailingSlash(swapLangPrefix(canonicalPath, "nl"));
 const enSwitchHref = enPath ?? (enStaticSet.has(enSwapped) ? enSwapped : "/en/");
 const ptBrSwitchHref = ptBrPath ?? (ptBrStaticSet.has(ptBrSwapped) ? ptBrSwapped : "/pt-br/");
-const nlSwitchHref = nlPath ?? (nlStaticSet.has(nlSwapped) ? nlSwapped : "/nl/");
+// Before launch, the language selector leads to the available landing page.
+const nlSwitchHref = new Date() >= NL_LAUNCH_DATE
+  ? (nlPath ?? (nlStaticSet.has(nlSwapped) ? nlSwapped : "/nl/"))
+  : "/nl/";
 const canonicalUrl = new URL(canonicalPath, siteConfig.siteUrl).toString();
 const frCanonicalUrl = new URL(resolvedFrPath, siteConfig.siteUrl).toString();
 const enCanonicalUrl = new URL(resolvedEnPath, siteConfig.siteUrl).toString();
