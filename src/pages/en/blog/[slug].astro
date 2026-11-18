@@ -10,7 +10,6 @@ import TableOfContents from "../../../components/TableOfContents.astro";
 import ShareButtons from "../../../components/ShareButtons.astro";
 import Comments from "../../../components/Comments.astro";
 import FocusMode from "../../../components/FocusMode.astro";
-import NewsletterCta from "../../../components/NewsletterCta.astro";
 import ReadingTools from "../../../components/ReadingTools.astro";
 import ReadingNext from "../../../components/ReadingNext.astro";
 import TextHighlight from "../../../components/TextHighlight.astro";
@@ -346,7 +345,6 @@ const structuredData = [
       </div>
     </div>
 
-    {post.data.category !== "grand-oral" && <NewsletterCta lang="en" category={post.data.category} />}
     <ReadingNext lang="en" currentSlug={getPostSlug(post)} category={post.data.category} />
     {relatedWithUrls.length > 0 && (
       <section class="related-carousel container" aria-label="Recommended articles" data-pagefind-ignore>

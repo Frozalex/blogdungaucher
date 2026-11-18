@@ -17,7 +17,6 @@ import ArticleVideo from "../../../components/ArticleVideo.astro";
 import InteractiveWidgets from "../../../components/InteractiveWidgets.astro";
 import PyodideTrace from "../../../components/PyodideTrace.astro";
 import FocusMode from "../../../components/FocusMode.astro";
-import NewsletterCta from "../../../components/NewsletterCta.astro";
 import ReadingTools from "../../../components/ReadingTools.astro";
 import ReadingNext from "../../../components/ReadingNext.astro";
 import TextHighlight from "../../../components/TextHighlight.astro";
@@ -300,7 +299,6 @@ const structuredData = [
       <CodeBlockEnhancer />
     </div>
 
-    {post.data.category !== "grand-oral" && <NewsletterCta lang="fr" category={post.data.category} />}
     <ReadingNext lang="fr" currentSlug={getPostSlug(post)} category={post.data.category} />
 
     {related.length > 0 && (
