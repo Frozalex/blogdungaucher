@@ -244,7 +244,7 @@ const structuredData = [
             title={`Résumé vidéo : ${post.data.title}`}
             eyebrow="Résumé vidéo de l'article"
             accentColor={category.accent}
-            note={generatedSummary ? `${Math.ceil(generatedSummary.duration)} secondes · Musique et effets sonores, sans voix off.` : post.data.summaryVideoNote}
+            note={generatedSummary ? `${Math.ceil(generatedSummary.duration)} secondes` : post.data.summaryVideoNote}
             transcript={generatedSummary?.scenes}
           />
         )}
