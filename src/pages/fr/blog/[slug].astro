@@ -18,6 +18,7 @@ import InteractiveWidgets from "../../../components/InteractiveWidgets.astro";
 import PyodideTrace from "../../../components/PyodideTrace.astro";
 import FocusMode from "../../../components/FocusMode.astro";
 import ReadingTools from "../../../components/ReadingTools.astro";
+import CarouselRotation from "../../../components/CarouselRotation.astro";
 import ReadingNext from "../../../components/ReadingNext.astro";
 import TextHighlight from "../../../components/TextHighlight.astro";
 
@@ -306,6 +307,7 @@ const structuredData = [
         <div class="related-carousel__head">
           <span class="related-carousel__label">Pour vous</span>
           <div class="related-carousel__nav">
+            <CarouselRotation lang="fr" />
             <button type="button" class="rc-btn" data-rc-prev aria-label="Articles précédents">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
             </button>

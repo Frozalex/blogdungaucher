@@ -1,0 +1,55 @@
+---
+import type { SiteLang } from '../utils/lang-paths';
+const { lang } = Astro.props as { lang: SiteLang };
+const labels = {fr:['Pause','Reprendre'],en:['Pause','Resume'],'pt-br':['Pausar','Retomar'],nl:['Pauzeren','Hervatten']}[lang];
+---
+<carousel-rotation data-pause={labels[0]} data-resume={labels[1]}><button type="button" hidden>{labels[0]}</button></carousel-rotation>
+<style>
+carousel-rotation{display:inline-flex;align-items:center}
+button{min-height:40px;padding:0 .8rem;border:1px solid var(--border-strong);border-radius:2rem;color:var(--text-main);background:var(--surface);font:inherit;font-size:.85rem;cursor:pointer}
+button:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+</style>
+<script>
+class CarouselRotation extends HTMLElement {
+  private cleanup?: () => void;
+  connectedCallback() {
+    const section = this.closest('section');
+    const track = section?.querySelector<HTMLElement>('[data-rc-track]');
+    const button = this.querySelector('button');
+    if (!section || !track || !button) return;
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    let paused = motion.matches;
+    let visible = false;
+    let timer: number;
+    const events = new AbortController();
+    const options = { signal: events.signal };
+    const schedule = () => {
+      clearTimeout(timer);
+      const overflow = track.scrollWidth - track.clientWidth;
+      button.hidden = overflow < 2;
+      button.textContent = (paused ? this.dataset.resume : this.dataset.pause) ?? '';
+      if (paused || !visible || document.hidden || overflow < 2 || track.matches(':hover,:focus-within')) return;
+      timer = window.setTimeout(() => {
+        const card = track.firstElementChild;
+        if (!card) return;
+        const step = card.getBoundingClientRect().width + (parseFloat(getComputedStyle(track).columnGap) || 0);
+        track.scrollTo({left: track.scrollLeft >= overflow - 2 ? 0 : track.scrollLeft + step, behavior: motion.matches ? 'instant' : 'smooth'});
+        schedule();
+      }, 6000);
+    };
+    const observer = new IntersectionObserver(([entry]) => {visible = entry.isIntersecting; schedule();}, {threshold: 0.5});
+    observer.observe(track);
+    const resize = new ResizeObserver(schedule);
+    resize.observe(track);
+    button.addEventListener('click', () => {paused = !paused; schedule();}, options);
+    for (const event of ['pointerenter','pointerleave','focusin','scroll']) track.addEventListener(event,schedule,options);
+    track.addEventListener('focusout', () => queueMicrotask(schedule), options);
+    track.addEventListener('touchstart', () => {paused = true; schedule();}, options);
+    document.addEventListener('visibilitychange',schedule,options);
+    motion.addEventListener('change', () => {paused = motion.matches; schedule();}, options);
+    this.cleanup = () => {events.abort(); observer.disconnect(); resize.disconnect(); clearTimeout(timer);};
+  }
+  disconnectedCallback() {this.cleanup?.();}
+}
+if (!customElements.get('carousel-rotation')) customElements.define('carousel-rotation',CarouselRotation);
+</script>
