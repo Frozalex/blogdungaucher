@@ -16,7 +16,7 @@ const slot = adsenseConfig.enabled ? getAdsenseSlot(format) : "";
  *  - `live: false` (phase demande AdSense) → composant invisible (rien ne sort)
  *  - dev local sans slot → placeholder dashed (utile en dev, jamais en prod) */
 const showReal = adsenseConfig.live && Boolean(slot && adsenseConfig.client);
-const showPlaceholder = !adsenseConfig.live ? false : !showReal;
+const showPlaceholder = import.meta.env.DEV && adsenseConfig.live && !showReal;
 ---
 {showReal && (
   <aside class={`ad ad--live ${format} ${compact ? "compact" : ""}`} aria-label="Publicité">

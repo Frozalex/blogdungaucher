@@ -145,7 +145,8 @@ const inLanguage = lang === "en" ? "en-US" : lang === "pt-br" ? "pt-BR" : lang =
 const effectiveNoindex = noindex || !isIndexedLang(lang);
 // Les pages utilitaires, légales, incomplètes et les replis sans traduction
 // ne chargent pas le SDK susceptible d'afficher des annonces automatiques.
-const allowAds = adsenseConfig.enabled && !effectiveNoindex;
+const isEditorialHome = canonicalPath.replace(/\/$/, "") === `/${lang}`;
+const allowAds = adsenseConfig.enabled && !effectiveNoindex && (isEditorialHome || type === "article");
 
 // Fallback: si une page "article" oublie de fournir structuredData,
 // on injecte un BlogPosting minimal pour ne jamais "perdre" le schema.org.
@@ -358,7 +359,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
         }
       })();
     </script>
-    <meta name="google-adsense-account" content="ca-pub-1244325018333025" />
+    <meta name="google-adsense-account" content={adsenseConfig.client} />
     {tags && tags.length > 0 && <meta name="keywords" content={tags.join(", ")} />}
     {/* Pages noindex (recherche interne, pagination page 2+, 404, pages légales) :
         `follow` et non `nofollow`. On refuse d'indexer la page elle-même, mais on laisse
