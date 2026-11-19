@@ -91,7 +91,7 @@
     "theorie-des-jeux-aux-echecs",
     "theorie-du-chaos-aux-echecs"
   ],
-  "updatedAt": "2026-11-18T15:40:15.873Z",
+  "updatedAt": "2026-11-19T15:45:10.921Z",
   "version": 2,
   "channels": {
     "ntfy": [
@@ -249,6 +249,7 @@
       "guide-grand-oral-echecs-nsi",
       "guide-grand-oral-echecs-ses-hggsp",
       "guide-grand-oral-echecs-toutes-specialites",
+      "histoire-et-origines-des-echecs",
       "hyperfocus-attention-soutenue-aux-echecs",
       "intelligence-emotionnelle-aux-echecs",
       "les-echecs-et-l-addiction",
