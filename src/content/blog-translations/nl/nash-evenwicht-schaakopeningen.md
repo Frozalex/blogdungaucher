@@ -152,30 +152,6 @@ Beide benaderingen coëxisteren in het topschaak. Onevenwichtige stellingen, nag
 
 ---
 
-## Veelgestelde vragen
-
-### Houdt een "weerlegd" opening op te bestaan?
-
-Niet echt. Een lokale weerlegging bewijst dat **één** pad in de variant leidt tot een duidelijk voordeel voor een kant. De rest van de graaf (zettenorders, transpositie, zijlijnen) kan speelbare lokale evenwichten bewaren. Daarom zijn historische "weerleggingen" vaak gedeeltelijk: de variant overleeft met een andere zettenorde of een tussentijdse zet. Het Siciliaans Sveshnikov, "weerlegd" eind jaren negentig, keerde sterk terug in de jaren 2010 op nieuwe evenwichten.
-
-### Waarom "lossen" engines niet alle openingen op?
-
-Omdat oplossen de **Zermelo-waarde** bereiken betekent (winst, verlies of remise bij perfect spel tot mat). Engines produceren een **heuristische evaluatie** op eindige diepte (doorgaans 40-60 halfzetten); daarmee kunnen ze openingen **rangschikken**, **lokale evenwichten vinden** en **zwakke evenwichten breken**, maar geen absolute waarheid bewijzen. Het onderscheid is fundamenteel: Stockfish zegt "deze variant lijkt +0,2"; het zegt nooit "deze variant is remise in de Zermelo-zin".
-
-### Garandeert een Nash-evenwicht het beste collectieve resultaat?
-
-Nee, en dat is wezenlijk. Het gevangenisspeldilemma illustreert dit: het evenwicht kan Pareto-gedomineerd zijn (beiden zouden er beter van af zijn door te coördineren, maar niemand heeft afzonderlijk belang bij afwijken). In schaken zou het "collectieve Nash" het wederzijdse remise-akkoord zijn; het "competitieve Nash" duwt naar onevenwichtige stellingen waarbij ieder een fout probeert te exploiteren. Het toernooiformat (must-win, ranglijst, prijzengeld) vervormt de nutsfunctie en daarmee het gekozen evenwicht.
-
-### Wat is een "gemengd evenwicht" in de praktijk voor een amateur?
-
-Voor een amateur betekent het: **twee of drie verschillende openingen** spelen met stabiele kansen (bijv. 50% Italiaans, 30% Spaans, 20% Schots). Het verdedigende voordeel: een vaste tegenstander kan zich niet specifiek op je voorbereiden. Het offensieve nadeel: je kent elke lijn minder diep. De juiste repertoireomvang hangt af van je wekelijkse studietijd; onder de 5 uur per week is een puur repertoire vaak doeltreffender dan een slecht onderhouden gemengd repertoire.
-
-### Waarom spreken we van "grafen" en niet van "bomen" van openingen?
-
-Omdat openingen **transponeren**: verschillende zettenreeksen leiden naar dezelfde stelling. Een pion naar c4 op zet 1 of zet 3 kan in bepaalde lijnen dezelfde Réti-stelling opleveren. Een boom veronderstelt een uniek pad naar elk blad; een gerichte acyclische graaf laat meerdere paden toe. Professionele openingsdatabases (ChessBase, Lichess Masters) zijn in werkelijkheid gecomprimeerde grafen met miljoenen voorberekende transpositie.
-
----
-
 ## Kernpunten
 
 - Een Nash-evenwicht is een situatie waarbij geen enkele speler zijn resultaat kan verbeteren door eenzijdig van strategie te veranderen

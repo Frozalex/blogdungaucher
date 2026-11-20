@@ -193,13 +193,11 @@ A honestidade obriga a dizer que a psicologia social atravessou, a partir de 201
 
 **O que se sustenta razoavelmente bem.** A reciprocidade entre dois indivíduos, com replicações convergentes desde Regan. A técnica da porta na cara, cuja replicação pré-registrada publicada em 2021 reencontrou o efeito original quarenta e seis anos depois. A autoridade, amplamente corroborada por outras vias.
 
-**O que é mais frágil.** O exemplo mais eloquente diz respeito à prova social, e é instrutivo porque o resultado não é um fracasso limpo.
+**O que depende da comparação.** Em 2008, Goldstein e colegas observaram que, em um hotel, mencionar o hábito dos outros hóspedes favoreceu a reutilização de toalhas em comparação com um apelo ambiental. Em 2014, Bohner e Schlüter testaram mensagens em outros hotéis. Ali, tanto o pedido convencional quanto o texto sobre os demais hóspedes tiveram vantagem sobre deixar o quarto sem aviso. Entre os dois textos, porém, a vantagem específica da referência aos hóspedes não reapareceu.
 
-O estudo famoso, publicado em 2008 por Goldstein, Cialdini e Griskevicius, tratava das toalhas de hotel. Uma mensagem informando que cerca de 75% dos hóspedes reutilizavam a toalha obtinha mais reutilização do que uma mensagem clássica de apelo à consciência ecológica.
+Imagine que o clube queira receber as súmulas logo após cada rodada. O capitão afixa o primeiro aviso sobre o assunto e escreve que a maioria das duplas já entrega a sua. As entregas aumentam. Qual parte da mensagem fez diferença? Talvez alguns jogadores simplesmente ignorassem onde deixar o papel. Para examinar o papel da norma social, o clube precisaria comparar o aviso com outro que trouxesse exatamente as mesmas instruções sobre local e horário, deixando de fora a frase sobre os colegas. A melhora em relação a uma rodada sem recado responde apenas à pergunta sobre afixar algum aviso.
 
-Em 2014, Gerd Bohner e Lena Schlüter publicam na *PLoS ONE* uma replicação em dois hotéis alemães, com 724 e depois 204 quartos. Resultado: as duas mensagens de fato aumentam a reutilização em relação à ausência de mensagem, mas **a mensagem de norma descritiva não é mais eficaz que a mensagem padrão**. O efeito específico atribuído à prova social não aparece.
-
-Não é "a prova social não existe". É algo mais incômodo que isso: o efeito é **contextual**, menos robusto e menos geral do que a reputação dele sugere, e fica difícil saber de antemão em que condições ele opera.
+Essa distinção também vale quando um curso divulga o número de inscritos. O número pode tornar a oferta mais atraente. Para decidir se a compra atende ao seu objetivo, peça uma aula de amostra e confira se o professor explica uma posição em que você costuma travar. O artigo sobre [prova social no xadrez](/pt-br/blog/prova-social-no-xadrez/) detalha como interpretar as informações sobre os demais jogadores.
 
 **Como ler os sete princípios, então?** Como uma **grade de observação útil**, derivada de práticas comerciais que funcionam, e não como sete leis quantificadas. O fato de um profissional de vendas usar sistematicamente uma alavanca é uma informação sobre essa alavanca, mesmo quando o protocolo de laboratório que deveria medi-la não replica. Mas o grau de certeza não é aquele que os livros de marketing dão a entender.
 

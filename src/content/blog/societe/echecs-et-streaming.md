@@ -161,4 +161,3 @@ Et la saturation du contenu est réelle : avec des centaines de créateurs produ
 La révolution du streaming d'échecs est réelle, Chess.com et ses 150 millions de membres ne mentent pas. Mais comme toutes les révolutions, elle génère ses propres contradictions. L'échiquier est devenu viral. La question maintenant est de savoir combien de spectateurs deviennent des joueurs.
 
 ---
-

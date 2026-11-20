@@ -89,6 +89,22 @@ Estas são propostas de reflexão para adaptar, sem promessa de eliminar a dúvi
 
 Se a dúvida causar sofrimento duradouro ou impedir você de jogar como deseja, pode conversar com um profissional. As observações de um treinador e um diário de partidas não substituem um acompanhamento adequado.
 
+## Uma vitória descrita por duas pessoas
+
+Pense numa partida de torneio fictícia. Na análise, uma jogadora comenta que só venceu porque o adversário deixou uma torre sem proteção. O parceiro de treino volta três lances. Mostra que ela contestou uma coluna aberta e deu um xeque que obrigou o rei a abandonar a defesa da torre. O erro adversário existe. A questão é descobrir quais decisões fizeram parte do caminho até ele. A explicação “ganhei porque ele errou” cabe em quase toda vitória e deixa escapar diferenças importantes entre as partidas.
+
+Agora mude a história. O adversário tinha um lance muito simples para escapar do xeque sem perder material. A jogadora não o viu e não o teria sabido enfrentar. Nessa segunda versão há uma lacuna de cálculo genuína. Admiti-la permite estudar aquela resposta. Ainda assim, a falha não apaga o fato de que ela encontrou um recurso ativo. Uma análise justa pode produzir duas anotações simultâneas: “Encontrei o xeque” e “deixei de verificar a defesa mais resistente”. Nenhuma exige um julgamento global sobre a capacidade de pertencer ao grupo.
+
+### Pedir uma demonstração quando se recebe um elogio
+
+Quando alguém diz “você jogou muito bem”, às vezes é difícil saber o que aceitar. Que tal pedir que a pessoa mostre o lance ao qual se refere? “Gostei de como você manteve o bispo que cobria seu rei” pode ser comparado com a posição. Talvez a pessoa explique algo que você fez de propósito. Talvez atribua intenção a uma escolha feita por outro motivo. Em ambos os casos, a conversa sai do terreno de acreditar ou desconfiar da pessoa como um todo.
+
+Isso também vale para quem elogia. Ao analisar com alguém do clube, faça uma pergunta antes de explicar a partida em nome dela: “Em qual momento você viu que dava para dar o xeque?”. A resposta pode surpreender. Saber que uma ideia só apareceu dois lances depois do que supúnhamos mostra onde começou o cálculo real. Ao guardar essa distinção, o parceiro consegue elogiar uma descoberta verdadeira e sugerir um exercício para a defesa esquecida.
+
+Para rever o próprio comportamento ao longo do tempo, escolha uma vitória e uma derrota na mesma cadência. Em ambas, procure uma decisão da qual gostou e uma alternativa que não chegou a examinar. Se só consegue apontar a boa decisão na derrota e só a oportunidade perdida na vitória, vale perguntar qual evidência permitiria mudar sua leitura de cada uma. O exercício expõe como você descreve as partidas em dias distintos. Um treinador pode ajudar a conferir as variantes; a interpretação pessoal do elogio continua pertencendo a quem jogou. Se quiser, guarde a posição para explicar depois, com suas palavras, a descoberta feita em dupla.
+
+Na folha de análise, deixe espaço para o parceiro anotar o que ele próprio deixou de prever. Talvez ele também tenha descoberto a defesa apenas depois de você montar o diagrama. Essa informação muda a atribuição de mérito: a linha completa surgiu de uma conversa entre duas pessoas. Cada uma ainda consegue identificar qual lance encontrou e onde precisou da ajuda da outra.
+
 ## Fontes
 
 - Clance, P. R., & Imes, S. A. (1978). *The Impostor Phenomenon in High Achieving Women: Dynamics and Therapeutic Intervention*. Psychotherapy: Theory, Research & Practice, 15(3), 241–247. [Artigo integral](https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf).

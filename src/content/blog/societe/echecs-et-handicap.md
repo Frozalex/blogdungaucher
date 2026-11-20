@@ -139,4 +139,3 @@ Pour préparer un tournoi avec deux échiquiers, organise une répétition de qu
 Élargis ensuite l’essai à ce qui se passe entre les rondes. Imagine que l’appariement annonce une nouvelle table et que la salle soit déjà pleine. Le chemin dégagé pendant l’installation peut maintenant être encombré de sacs ou de chaises tirées. Qui pourra renseigner le joueur et comment trouver cette personne ? Un numéro de table difficile à lire à distance ou une consigne donnée seulement à voix haute peut mettre en échec une préparation pourtant soigneuse du matériel.
 
 Termine par une question adressée directement au participant : « Si un incident se produit pendant ta partie, quel moyen de signalement te convient ? » Note la réponse utile à l’organisation et communique-la au seul interlocuteur concerné. Une solution trouvée pour cette rencontre peut inspirer la suivante ; il restera à la rediscuter avec la prochaine personne qui utilisera la table.
-

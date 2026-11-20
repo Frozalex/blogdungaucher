@@ -210,3 +210,7 @@ Omdat een onderbroken zoekopdracht niets bruikbaars oplevert. Als de engine twaa
 Dat laat onze engine met een fataal gebrek voor een echte speler: **hij weet niet wanneer hij moet stoppen**. Je geeft hem een diepte, hij geeft een zet terug wanneer hij klaar is, of dat nu een seconde of tien minuten duurt. Geen enkele interface, geen enkel speeltempo werkt zo.
 
 **Volgend artikel:** iteratieve verdieping, die erin bestaat al het werk bij elke diepte over te doen, en die toch sneller is dan rechtstreeks op de uiteindelijke diepte zoeken.
+
+Een goede controletest is dezelfde kleine zoekboom twee keer doorlopen met identieke eindwaarden. Sorteer de zetten de tweede keer in omgekeerde volgorde. De waarde voor de wortel hoort gelijk te blijven als de zoekdiepte, evaluatie en regels dezelfde zijn en er geen tijdslimiet ingrijpt. Het aantal bezochte knopen mag juist verschillen. Bij twee even sterke zetten kan ook de eerst gemelde hoofdvariant wisselen. Log daarom de waarde en het aantal knopen afzonderlijk. Een spectaculaire besparing in bezoeken is verdacht wanneer het programma tegelijkertijd een andere, aantoonbaar slechtere uitkomst als beste variant rapporteert.
+
+Vergelijk ook de uitkomst op een stand met slechts één reglementair toegestane zet.

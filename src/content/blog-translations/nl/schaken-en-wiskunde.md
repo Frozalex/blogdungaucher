@@ -153,26 +153,4 @@ De goede pitch is dus niet "schaken maakt je goed in wiskunde", maar "schaken ka
 
 ---
 
-## Veelgestelde vragen
-
-### Verbetert een kind laten schaken zijn gemiddelde in wiskunde?
-
-Niet rechtstreeks en niet automatisch. De meta-analyse van Sala en Gobet (2016) is duidelijk: het bewijs voor een significante overdracht van schaken naar algemene academische vaardigheden is zwak tot matig. Wat het kind wint, is een houding tegenover problemen (analyseren voordat je rekent, je intuïties controleren, niet in paniek raken bij complexiteit). Deze houding kan van pas komen bij wiskunde, maar is niet gelijkwaardig aan een extra uur wiskundeles.
-
-### Wat is de enige wetenschappelijk solide link tussen schaken en wiskunde?
-
-Metacognitie: het vermogen om je eigen denken te observeren en te reguleren. Het is een van de zeldzame robuuste overdrachtseffecten die in de literatuur zijn gedocumenteerd. Een speler die getraind is om zichzelf te controleren ("wacht, wat heb ik niet gezien?") draagt deze reflex over naar andere analytische taken. Dit is de meetbare brug, niet de wiskundige inhoud zelf.
-
-### Waarom moet je langzaam spelen om het te laten tellen?
-
-Omdat snel spel (blitz, bullet) bijna uitsluitend steunt op herkenning van vooraf aangeleerde patronen en motorische reflexen. De hersenzones verbonden met analytisch redeneren (prefrontale cortex, planning) activeren pas volledig na 15-30 seconden per zet. Om de mentale architectuur te trainen die dicht bij het oplossen van wiskundige problemen komt, zijn klassieke tempo's nodig (15+ minuten per speler).
-
-### Heeft het probleem van de 8 dames een toepassing buiten algoritmewedstrijden?
-
-Ja. Het is het meest gebruikte pedagogische voorbeeld om backtracking (zoeken met terugkeer) te onderwijzen, een centraal algoritmisch patroon in combinatorische optimalisatie. Je vindt het terug bij roosterplanning, antenneplaatsing in telecommunicatie, bepaalde beperkingsproblemen in kunstmatige intelligentie. Zijn visuele eenvoud maakt het een schoolvoorbeeld dat elke informaticastudent minstens één keer tegenkomt.
-
-### Moet je goed zijn in wiskunde om sterk te worden in schaken?
-
-Nee. De correlaties tussen Elo-niveau en academische prestatie in wiskunde zijn zwak boven de basisdrempel van het begrijpen van de regels. Veel grootmeesters hebben een literair of intuïtief profiel zonder gevorderde wiskundige opleiding ([Magnus Carlsen](https://nl.wikipedia.org/wiki/Magnus_Carlsen) zelf heeft geen uitgebreide wetenschappelijke opleiding). Omgekeerd spelen erkende wiskundigen op amateurniveau terwijl ze een uitstekende methodologische overdracht hebben. Beide disciplines delen een houding, niet dezelfde kennisbasis.
-
----
+Meer over de in de vragen genoemde schaker: [Magnus Carlsen](https://nl.wikipedia.org/wiki/Magnus_Carlsen).

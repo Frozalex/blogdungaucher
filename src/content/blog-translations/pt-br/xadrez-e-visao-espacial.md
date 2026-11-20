@@ -101,13 +101,17 @@ A síntese de Sala e Gobet (2017) convida justamente a distinguir essa hipótese
 
 Monte a seguinte posição construída, com as brancas no lance: rei branco em g1, torre branca em a1, bispo branco em a3, rei preto em g8 e torre preta em a8. As duas torres ocupam a mesma coluna. Antes de calcular lances, percorra a coluna de baixo para cima e diga o que impede a torre branca de capturar a adversária. É o próprio bispo em a3. Não há uma barreira equivalente em a4, a5, a6 ou a7. Essa descrição simples já separa duas habilidades: localizar as torres e identificar a peça que interrompe a relação entre elas.
 
-Agora imagine Ba3-b2 sem tocar no tabuleiro. Em quais casas ficou o bispo e por quais casas a torre branca passou a enxergar? As duas torres ficaram em contato pela coluna a. Isso também significa que as pretas podem capturar primeiro, pois são elas que jogam depois da saída do bispo. Acertar a linha de visão não basta para concluir que as brancas ganham material. O detalhe temporal altera a avaliação, embora o desenho geométrico permaneça correto.
+Agora imagine Ba3-b2 sem tocar no tabuleiro. Em que casa ficou o bispo e quais casas da coluna a passaram a estar no alcance da torre branca? As duas torres ficaram em contato pela coluna a. Isso também significa que as pretas podem capturar primeiro, pois são elas que jogam depois da saída do bispo. Acertar a linha de visão não basta para concluir que as brancas ganham material. O detalhe temporal altera a avaliação, embora o desenho geométrico permaneça correto.
 
 Faça uma segunda tentativa, desta vez colocando o bispo em d6 a partir de a3, pela diagonal b4 e c5. A coluna a volta a abrir. Mas o bispo em d6 controla b8 passando por c7, o que ele não fazia em b2. Se você só reteve a ideia geral de “tirar o bispo da frente”, pode esquecer que a casa de chegada também cria relações. Desenhe em outra folha unicamente as casas que o bispo controla depois da mudança e confira com as peças reais.
 
 Para transformar o problema em um exercício entre parceiros, um jogador descreve a mudança com palavras, enquanto o outro procura um erro deliberado. “O bispo em d6 ataca a8” é uma boa armadilha, porque as duas casas parecem próximas no canto do diagrama. Contando colunas e fileiras, o deslocamento é de três colunas e duas fileiras; portanto não forma diagonal. Essa conferência oferece uma explicação reproduzível para o erro e uma maneira de corrigi-lo em outra posição.
 
 Um acerto obtido depois de mover as peças e um acerto antes de tocá-las merecem marcas diferentes no caderno. Essa distinção permite escolher o próximo exercício. Se a dificuldade foi localizar a casa, trabalhe coordenadas; se foi esquecer de quem era a vez, pratique reconstruir a posição junto com o lado a jogar.
+
+### Inverta o ponto de vista sem trocar as peças
+
+Gire o tabuleiro para que as peças pretas fiquem perto de você. A torre preta continua em a8 e o bispo branco continua em a3, mas a coluna a agora aparece à sua direita. Antes de tentar novamente o desvio do bispo, escreva duas descrições. A primeira pode usar relações de tela, como “no canto superior esquerdo”. A segunda deve usar coordenadas. Passe as descrições a um colega sentado do lado oposto e peça que localize as peças. Ele poderá entender as coordenadas sem saber de onde você estava olhando. Quando vocês discordarem, verifiquem se a divergência está na posição da peça, na orientação do desenho ou na escolha das palavras usadas para indicar o canto.
 
 ## Fontes
 

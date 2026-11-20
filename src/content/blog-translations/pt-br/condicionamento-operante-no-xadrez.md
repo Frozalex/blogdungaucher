@@ -172,6 +172,14 @@ O remédio não é jogar menos por virtude. É criar um reforço que incida sobr
 
 *Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. O próximo trata do condicionamento clássico, que diz respeito a associações involuntárias em vez de consequências. Veja também [dopamina e xadrez](/pt-br/blog/dopamina-e-xadrez/) e [a formação de hábitos no xadrez](/pt-br/blog/formacao-de-habitos-no-xadrez/).*
 
+## Um elogio que chega um lance tarde demais
+
+Imagine uma oficina de finais. Uma aluna encontra a oposição com o rei, avança um peão na hora errada e ainda assim vence porque o parceiro permite a promoção. O treinador elogia a vitória quando o peão vira dama. O que a aluna vai tentar repetir? A sequência inclui três decisões diferentes e o resultado final não esclarece qual delas merecia atenção.
+
+Monte novamente a posição e peça ao parceiro que encontre a melhor defesa. Se o avanço prematuro agora só empata, marque na súmula o momento anterior ao avanço. O elogio pode mencionar a escolha concreta que funcionou, por exemplo, esperar com o rei enquanto o adversário precisa ceder espaço. Na próxima tentativa, troque as cores ou desloque o conjunto de peças uma coluna, conferindo se a borda do tabuleiro muda a solução. Observe se a aluna identifica a mesma relação sem ouvir a indicação.
+
+Há ainda uma questão de linguagem. Um comentário positivo pode ser agradável sem aumentar a frequência de um comportamento. Para saber se ele funcionou como reforço nesse exercício, anote qual decisão reaparece nas tentativas seguintes e em que condições. Se a única mudança foi a parceira ter passado a defender pior, a sequência de vitórias continua sendo um indicador ruim da aprendizagem.
+
 ## Fontes
 
 - Skinner, B. F. (1938). *The Behavior of Organisms: An Experimental Analysis*. Appleton-Century.

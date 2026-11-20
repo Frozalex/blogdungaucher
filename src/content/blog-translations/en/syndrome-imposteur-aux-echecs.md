@@ -91,6 +91,20 @@ These are suggestions for reflection to adapt, without a promise that doubt will
 
 If doubt causes lasting distress or stops you playing as you wish, you can discuss it with a professional. A coach’s observations and a game journal do not replace appropriate support.
 
+## An annotated position is better evidence than a compliment
+
+Imagine a player who has just been invited to a stronger training group. Someone says, “You belong here.” The player replies, “You haven't seen my last game.” Both statements are hard to test. Try getting specific. On move twenty-three of that game, the player saw a threat down the open file and spent two minutes comparing a king move with a rook exchange. One idea failed in a variation they missed; their chosen move nevertheless dealt with the immediate danger. Now ask two separate questions. Was the reply good? And which part of the reasoning could this player repeat in another game? The engine can help investigate the first. To address the second, put a similar decision on a fresh board and let them explain it.
+
+It would be easy to replace the harsh judgement with an equally global reassurance: “You spotted the threat, so you're obviously a great defender.” A single example cannot bear that claim either. A better reply is modest enough to believe: “In this position you found the open file before I pointed it out. In the next one let's check which rook should contest it.” If the player is unsure of their place, an invitation to work on a particular problem may feel more credible than a title that they are expected to accept.
+
+## Give luck its correct share of the win
+
+Consider a game won when the opponent disconnects in a level ending. It is reasonable to say that the final result says little about your ability to win that ending. Consider another game where the opponent misses a defence because your series of threats made the right reply difficult to find. That result contains both a mistake by the opponent and a sequence of decisions by you. If every opponent's error is classified as luck and every one of your errors as proof of incompetence, the accounting system has made a fair verdict impossible before you begin. Take one win and one loss and ask of both: what did I control, what did my opponent control, and where is the evidence inconclusive?
+
+For a concrete record, keep one variation from each game in the same format. Someone who wins through a blunder can still show the position that created the threat. Someone who loses after playing well can still name the defence they missed. Over time the entries will include both familiar mistakes and decisions you can now explain clearly. When a stronger player offers a seat at the analysis board, you will have a question ready that does not depend on announcing your rating or defending your right to be in the room.
+
+That last distinction matters to organisers too. If a new member hesitates to join, explain what participation involves. “We're analysing the final round. You can show one move or just listen” communicates more than “This group is for good players.” The first invitation allows someone to contribute while uncertain of their level. It does not require guessing what is going on in their head, and it extends the same courtesy to a genuinely inexperienced visitor. The aim is to make the next action possible, whatever the cause of the hesitation.
+
 ## Sources
 
 - Clance, P. R., & Imes, S. A. (1978). *The Impostor Phenomenon in High Achieving Women: Dynamics and Therapeutic Intervention*. Psychotherapy: Theory, Research & Practice, 15(3), 241–247. [Full article](https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf).

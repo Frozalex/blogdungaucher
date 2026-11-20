@@ -115,6 +115,8 @@ Se o treinador separa exclusivamente lances ruins para montar seu arquivo, ele p
 
 Há ainda uma decisão prática independente da estimativa. Um alerta com muitos falsos positivos pode servir para selecionar partidas a revisar, pois o custo é olhar alguns lances a mais. O mesmo alerta seria uma péssima razão para concluir que uma pessoa específica vai errar o próximo lance. Sua utilidade depende da pergunta feita, da frequência de erros no arquivo e do preço de uma previsão equivocada.
 
+Volte agora às setenta e seis posições sem alerta. Quatro contêm erro grave e setenta e duas foram jogadas sem ele. Isso permite conferir a classificação inteira. Somando os quatro erros fora do alerta aos seis dentro dele, recuperamos os dez erros iniciais. A conta também mostra por que a ausência do alerta não garante um lance correto.
+
 ## Fontes
 
 - Friedman, N., & Koller, D. (2001, versão do documento consultado). *Being Bayesian About Network Structure: A Bayesian Approach to Structure Discovery in Bayesian Networks*. [Manuscrito dos autores, Stanford](https://ai.stanford.edu/~nir/Papers/FK1Full.pdf): dependências, independências condicionais e aprendizagem da estrutura.

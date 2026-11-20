@@ -109,6 +109,17 @@ Si tu encadres, demande au joueur ce qu’il attend et ce qu’il souhaite chang
 
 La [motivation intrinsèque](/fr/blog/motivation-intrinseque-aux-echecs/) concerne plus particulièrement l’intérêt pour l’activité elle-même. Les deux textes se complètent sans demander que toute pratique soit agréable à chaque instant.
 
+## Un atelier avec une règle imposée et un choix qui compte
+
+L'entraîneuse décide que la séance du mardi portera sur les tours. Elle conserve la responsabilité du programme : les équipes viennent de perdre plusieurs finales de ce type et un tournoi approche. À l'intérieur de ce cadre, elle propose deux tables. À la première, on doit défendre une position inférieure pendant dix coups. À la seconde, on doit tenter de convertir un pion passé. Les joueurs peuvent changer de table après une première tentative. Cette liberté a une conséquence réelle sur leur activité, puisque défendre et convertir demandent de regarder des problèmes distincts.
+
+Pour que le choix soit utilisable, il faut encore savoir ce que les options impliquent. Un débutant risque de choisir au hasard si le carton indique seulement « défense technique » ou « conversion ». L'entraîneuse peut montrer les vingt premières secondes de chaque exercice : ici, on cherche par où le roi adverse voudra entrer ; là, on cherche à faire avancer un pion sans laisser une série d'échecs. Après cette démonstration, un joueur peut préférer la table de défense parce qu'il a envie d'essayer une ressource précise. Il pourra aussi refuser de changer de table s'il souhaite approfondir cette idée.
+
+Une fois le choix fait, la question de la compétence apparaît. Si les dix coups de résistance sont impossibles à tenir avec le matériel choisi, l'objectif pose un problème de conception. Si la finale se gagne automatiquement quel que soit le coup joué, le joueur ne saura pas ce qu'il apprend. Le partenaire peut ajuster la difficulté en repartant à un tournant plus proche ou en proposant un diagramme où un seul type d'échec compte. L'ajustement a un objet observable : est-ce que la personne voit ce qui rend sa deuxième tentative différente de la première ?
+
+La relation dans le groupe se manifeste aussi de façon concrète. Après la partie, le défenseur peut demander à l'attaquant quel coup lui a coûté le plus de temps. L'attaquant peut apprendre qu'une petite manœuvre qui lui semblait banale avait posé un vrai problème à son camarade. Chacun a fourni à l'autre une information qu'il n'aurait pas facilement obtenue en travaillant seul. La séance prend alors un sens partagé, même si les participants sont arrivés avec des motivations sportives différentes.
+
+L'entraîneuse peut conclure en demandant à chaque table de conserver un diagramme pour la semaine suivante. Elle aura respecté le thème imposé tout en laissant aux joueurs une prise sur la difficulté, le rôle et la suite du travail. À la prochaine séance, une question permettra d'évaluer l'expérience : qui peut encore expliquer pourquoi il avait choisi ce diagramme précis ? La réponse en dira davantage sur cet atelier qu'un jugement général sur la motivation de chacun.
 
 ## Sources
 

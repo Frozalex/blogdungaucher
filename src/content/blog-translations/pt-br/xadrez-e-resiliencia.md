@@ -100,6 +100,8 @@ Avalie a retomada por algo que você teve oportunidade de fazer. “Na posição
 
 Há ocasiões em que nenhuma variante precisa ser resolvida naquele momento. Combinar que o colega guardará o diagrama para o próximo treino pode ser uma resposta suficientemente boa a uma tarde difícil. A retomada pode ser observada quando a pergunta volta a fazer sentido, e a pessoa consegue examiná-la com atenção renovada. O ritmo dessa volta pode variar de uma rodada para outra. O diagrama guardado serve de ponto de partida quando você voltar.
 
+Um exercício para a próxima rodada é escolher uma posição em que ainda exista uma defesa depois de perder material. Entregue a posição ao colega com tempo para procurar a melhor continuação do lado superior. Você precisa descobrir até que ponto a resistência depende da cooperação dele. Quando a defesa funciona contra a tentativa mais precisa que os dois encontraram, a análise termina com algo que pode ser treinado e repetido.
+
 ## Fontes
 
 - Seligman, M. E. P. (1990). *Learned Optimism*. Knopf. [Bibliografia do Positive Psychology Center do autor](https://ppc.sas.upenn.edu/research/attributional-style-adults): modelo do estilo explicativo.

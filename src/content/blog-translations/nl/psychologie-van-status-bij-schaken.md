@@ -153,6 +153,8 @@ Er blijft een last die eigen is aan haar, en die de prijs is van haar kwaliteit.
 
 *Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Zie ook [Elo en zelfvertrouwen](/nl/blog/schaken-zelfvertrouwen-elo/), [sociale vergelijking bij schaken](/nl/blog/sociale-vergelijking-bij-schaken/) en [chronische stress bij schaken](/nl/blog/chronische-stress-bij-schaken/).*
 
+Een oefening voor een teamleider: leg twee anonieme partijen op tafel en laat het team per partij één sterke beslissing aanwijzen. Geef pas daarna bordnummer en rating van de spelers. Verandert het oordeel, vraag dan welke concrete zet dat verschil rechtvaardigt. De reactie maakt zichtbaar wanneer een rangorde helpt om achtergrond te geven en wanneer ze de inhoudelijke bespreking voortijdig afsluit. Het mooie is dat ook een invaller aan bord acht met deze methode een beslissend idee kan hebben ingebracht.
+
 ## Bronnen
 
 - Marmot, M. G., Rose, G., Shipley, M., & Hamilton, P. J. (1978). Employment grade and coronary heart disease in British civil servants. *Journal of Epidemiology and Community Health*, 32(4), 244–249.

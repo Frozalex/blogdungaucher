@@ -55,6 +55,36 @@ After the game, identify a few moments when you thought for a long time. What we
 
 Compare several games at the same time control. One episode is not enough to classify you as impulsive or perfectionistic. This record can, however, reveal a specific difficulty to work on in your [game analysis](/en/blog/how-to-analyze-chess-games/).
 
+## A budget with income you have not earned yet
+
+Imagine a game at fifteen minutes plus ten seconds per move. If you play forty moves and receive all forty increments, the time credited to your clock over that stretch will add up to twenty-one minutes and forty seconds: fifteen minutes at the start plus four hundred seconds afterwards. That is not the balance in your account on move one. Spend more than the available fifteen minutes deciding on your first move and the later credits will never arrive. Equally, dividing fifteen minutes by forty and setting yourself exactly twenty-two and a half seconds per turn ignores how different two decisions can be. Recapturing a queen in a forced line and choosing whether to exchange into a pawn ending deserve different thinking time.
+
+Try a clock calculation you could actually use. You begin a move with two minutes and thirty seconds. After a long think you press the clock with fifty seconds left, and the ten-second increment brings your balance to one minute. You spent a hundred seconds on that decision. If the next move takes five seconds, you end it with sixty-five seconds after the increment. It is possible to finish a move with more time than you had when you began it. When reading a digital record, check whether the stored figure is from before or after the increment. A small difference in displayed times is not automatically the time spent choosing; clocks at different points in the cycle need different arithmetic.
+
+## The thought that bought something
+
+Here are two imaginary entries from a club game. On move fourteen White used ninety seconds, explored a queen trade and found that the resulting pawn ending lost a race by one tempo. They kept the queens on. On move twenty-one White also used ninety seconds. They repeatedly calculated the same series of checks without testing the only sensible king retreat and then played their first idea. The clock charged exactly the same amount. What White received in return was different. The first think established a reason to reject a candidate; the second may have left a relevant question untouched.
+
+To audit a long think, ask what changed between its beginning and its end. Perhaps you'd initially rejected a move because of a threatened fork and then noticed that the forking piece was pinned. Perhaps you established that your first choice really was safe after checking a line you had been unable to see immediately. Both discoveries count, even if the move you eventually played was the first one you considered. The other possibility is that you reached the same final position on each pass and never examined your opponent's strongest reply. That is a reason to change the question rather than repeat the calculation faster.
+
+Before your next rapid practice game, write two prompts on your notebook for use afterwards: “Where would another ten seconds have helped?” and “Where did I spend a minute without learning anything new?” Do the recording after play. You do not need a page of time targets or analytic notes available during a rated game. The prompts are deliberately asymmetric: a rushed move may deserve an extra ten seconds, and an unproductive think may deserve a different candidate rather than a larger allocation. The useful output of a review is a position where you would choose differently, not a general promise to speed up.
+
+## Where to look when the clock suddenly feels short
+
+A player in time trouble may understandably want a universal routine. The position gets a vote. If your king is in check, the legal replies are already restricted. If the opponent has just left a piece en prise, the first practical question is whether capturing it allows a forcing reply. If every apparent quiet move permits the same threat, searching for an even prettier quiet move will burn your reserve. Look first for the concrete feature that the last move changed. A routine that takes longer to recite than the move takes to check will not help in a five-second scramble.
+
+During your opponent's time, it can be productive to recognise the likely pawn ending, identify a threat or note which move you will examine if their expected reply appears. Once they actually move, verify that the condition holds. The familiar disaster is to play the prepared response instantly when the opponent has inserted a check or moved a different piece to the same area of the board. Preparation earns you a shorter check, not an exemption from checking. If the opponent's decision changes the structure completely, abandon the stored answer and reopen the question.
+
+## Two games with the same time on the final display
+
+Suppose you finish two games with three seconds left. In game A you had a healthy reserve through thirty moves and spent it calculating a difficult series of checks. In game B you reached three seconds by move eighteen, spent the rest of the game living on the increment and missed a straightforward defence. The final screenshot makes both games look like one and the same crisis. A plot of the time after each decision would show the difference immediately. To reconstruct it without perfect records, note the first position in which the clock changed your choice. Was that position difficult enough to justify the earlier expenditure?
+
+For game A the lesson might be to practise visualising a forcing line without restarting it four times. For game B it might be to resist spending three minutes choosing between two harmless opening moves when you lack a reason to prefer either. Test each adjustment in the time control where it arose. Trying to fix a fifteen-minute-game problem exclusively by playing one-minute games changes the task, the number of variations you can check and the price of a mechanical slip. It may be enjoyable practice for another purpose; it supplies a poor comparison if you want to know whether the particular adjustment worked.
+
+Finally, a clock record can contain premoves, disconnections, a delay rather than an increment, or an interval during which an arbiter adjusted the clocks. Ask what actually happened before interpreting the trace as an account of someone's thought process. “Spent four minutes here” may identify the point where the spectator should ask a question. Only the player and the position can help answer what those minutes were for.
+
+Keep the old scoresheet beside the new one when you review the next tournament game. Circle the decisions that actually required calculation and compare how much time remained when you reached them.
+
 ## Sources
 
 - Guid, M. and Bratko, I. (2006), “Computer Analysis of World Chess Champions”, *ICGA Journal*, 29(2), 65–73. [Original article](https://en.chessbase.com/news/2006/world_champions2006.pdf).

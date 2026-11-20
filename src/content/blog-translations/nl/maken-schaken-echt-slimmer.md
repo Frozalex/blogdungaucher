@@ -1,9 +1,9 @@
 ---
-title: "Maken schaken echt slimmer? Wat de wetenschap zegt"
+title: "Maakt schaken je echt slimmer? Wat de wetenschap zegt"
 excerpt: >-
   Overal wordt gezegd dat schaken de intelligentie ontwikkelt. Maar wat zeggen de meta-analyses écht?
   Spoiler: de cognitieve overdracht is veel beperkter dan wordt beweerd.
-seoTitle: "Maken schaken slimmer? De echte wetenschappelijke balans"
+seoTitle: "Maakt schaken je slimmer? De echte wetenschappelijke balans"
 seoDescription: >-
   Meta-analyses en gecontroleerde studies: wat zegt het bewijs over het effect van schaken op intelligentie, IQ
   en schoolresultaten? Een eerlijke balans.
@@ -47,11 +47,11 @@ De eerste studies vonden positieve effecten. Maar ze hadden een groot methodolog
 
 ## Wat de recente meta-analyses zeggen
 
-De omslag kwam met het werk van [Giovanni Sala en Fernand Gobet](https://en.wikipedia.org/wiki/Fernand_Gobet), onder meer gepubliceerd in *Educational Research Review* in 2017. Zij hebben 24 studies met meer dan 2.700 kinderen en adolescenten samengevoegd om de cognitieve overdracht van schaken rigoureus te evalueren.
+De omslag kwam met het werk van [Giovanni Sala en Fernand Gobet](https://doi.org/10.1016/j.edurev.2016.02.002), onder meer gepubliceerd in *Educational Research Review* in 2016. Zij hebben 24 studies met meer dan 2.700 kinderen en adolescenten samengevoegd om de cognitieve overdracht van schaken rigoureus te evalueren.
 
 Het resultaat is ongemakkelijk voor de gangbare opvatting: het algemene effect is zwak (effectgrootte g ≈ 0,34), en vooral, het neemt sterk af wanneer men rekening houdt met de methodologische kwaliteit van de studies. Wanneer een actieve placebogroep (andere gestructureerde activiteit) wordt opgenomen, stort het specifieke effect van schaken in.
 
-In 2019 bevestigde een tweede, nog strengere meta-analyse: de specifieke voordelen van schaken voor algemene cognitie zijn *vrijwel nul* zodra men corrigeert voor verwachtings- en motivatie-effecten.
+Bij het lezen van het gemiddelde is vooral van belang welke vergelijking aan elke effectgrootte ten grondslag lag. De auteurs wezen erop dat geen enkele studie alle gewenste kenmerken van een ideale proef combineerde. Het gepoolde resultaat kon daarom ook andere invloeden dan de inhoud van de schaakles weerspiegelen.
 
 ## Het probleem van de cognitieve overdracht
 
@@ -99,6 +99,22 @@ Moet men stoppen met kinderen schaken te leren? Absoluut niet. Maar men moet het
 Stop met een IQ-verbetering, betere wiskundecijfers of abstract redeneervermogen te beloven. Beloof in plaats daarvan: een oefenterrein voor geduld, langdurige aandacht, nederlaag, zelfanalyse.
 
 Deze kwaliteiten zijn niet meetbaar met een IQ-test. Ze zijn kostbaar om andere redenen. En ze verdienen het verdedigd te worden voor wat ze zijn, niet door zich te verschuilen achter beloften die de wetenschap niet bevestigt.
+
+## De schooldirecteur die drie verschillende vragen stelt
+
+Denk aan een school die zes vrijdagen een schaakles in het middagrooster opneemt. Na afloop kunnen de kinderen allemaal rokeren en weten ze hoe een pat eruitziet. De directeur stelt drie vragen: hebben de kinderen iets geleerd, hebben ze beter leren schaken en hebben ze beter leren rekenen? Voor de eerste twee antwoorden kun je een schaakproef ontwerpen. Voor de derde vraag moet je hun rekenwerk bekijken. Het is mogelijk dat de kinderen ten opzichte van hun beginsituatie vooruit zijn gegaan bij alle drie. Dan wil je nog weten hoeveel vooruitgang vergelijkbare kinderen in dezelfde periode tijdens hun gewone lessen boekten.
+
+Maak het concreet. In klas A steeg de gemiddelde rekenscore van twaalf naar veertien goede antwoorden. In klas B steeg hij van dertien naar vijftien. De schaakklas won twee punten. De andere klas won er ook twee. De eenvoudige vergelijking van de veranderingen laat hier dus geen extra winst voor de schaakklas zien. Dat zegt niet dat de schaakleraar slecht werk heeft geleverd; de schaakproef kan een indrukwekkende vooruitgang tonen. Het zegt vooral waarom het woord ‘vooruitgang’ een voorwerp nodig heeft. Vooruitgang waarin en vergeleken met wie?
+
+Verander het voorbeeld. Nu kiest de directeur alleen leerlingen voor de schaakklas die zichzelf vrijwillig hebben aangemeld. Zij brengen misschien een bijzondere belangstelling, steun thuis of meer bereidheid om na school extra taakjes te doen met zich mee. Als deze groep bij rekenen sneller vooruitgaat, heb je dus meer dan één mogelijke verklaring. Zelfs wanneer de beginscores sterk op elkaar lijken, kunnen andere verschillen blijven bestaan. Een loting helpt om die verschillen bij de verdeling minder systematisch te maken. Ze verwijdert niet ieder praktisch probleem: afwezigheid en ongelijke begeleiding kunnen later alsnog ontstaan.
+
+## Wat verdient een eigen plaats op een rapport?
+
+Stel dat het doel van de school feitelijk is dat kinderen een probleem beter leren uitleggen aan een klasgenoot. Dan kan de proef daar rechtstreeks over gaan. Laat na de les een kind aanwijzen waarom een gepend stuk niet veilig kan slaan en vraag het daarna de uitleg aan te passen voor iemand die het woord penning nog niet kent. Daarmee krijg je materiaal dat de schaakdocent kan gebruiken. Wil de directeur weten of het kind ook buiten het schaken beter kan uitleggen, geef dan daarnaast een vergelijkbare uitlegtaak met ander materiaal en vooraf afgesproken beoordelingsregels. Dat is de stap van een aantrekkelijk idee naar een bruikbare toets.
+
+Zo'n onderscheid is ook prettig voor ouders. Een kind dat met zichtbaar plezier aan de clubavond terugdenkt, hoeft geen hogere score op een intelligentietest te laten zien voordat dat plezier er mag zijn. Omgekeerd mag een ouder die een concreet schoolprobleem wil aanpakken vragen of de activiteit voor juist dat probleem is onderzocht. De antwoorden hoeven elkaar niet tegen te spreken. Een schaakles kan waardevol, sociaal en inhoudelijk uitdagend zijn terwijl het specifieke bewijs voor een overdracht naar andere vakken onzeker blijft.
+
+Vraag aan het einde van een project tenslotte aan de kinderen welke stelling ze thuis nog zouden willen laten zien en waarom. Hun antwoorden geven informatie over wat ze begrepen en onthielden, niet alleen over wat een vooraf opgestelde test toevallig kon tellen. Bewaar dat materiaal naast de schaakproef en de rekenscore. Het helpt de volgende docent om te besluiten welke les hij wil voortzetten en op welke aanvullende belofte hij zijn voorstel liever niet baseert.
 
 ## Samenvatting
 

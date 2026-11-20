@@ -183,6 +183,8 @@ Leve ao clube uma posição que admita pelo menos dois planos plausíveis. Antes
 
 Para distinguir as histórias, peça uma pequena demonstração. Qual peça muda de casa na nova linha? Em que momento o plano inicial deixa de funcionar? Quem manteve o primeiro voto também precisa responder. Um grupo inteiro pode chegar ao mesmo lance por bons motivos; a unanimidade, sozinha, não diz como ele chegou lá. O ganho do exercício é conservar um vestígio das razões que existiam antes da conversa.
 
+Quem votou com a maioria pode apresentar o melhor argumento da minoria. O teste esclarece se o grupo realmente examinou a objeção antes de descartá-la.
+
 ## Fontes
 
 - Asch, S. E. (1951). Effects of group pressure upon the modification and distortion of judgments. In H. Guetzkow (Ed.), *Groups, Leadership and Men*. Carnegie Press.

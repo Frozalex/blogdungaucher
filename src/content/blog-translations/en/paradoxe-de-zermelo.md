@@ -125,27 +125,7 @@ Zermelo’s contribution is not a winning strategy from the initial chess positi
 
 Make a game in which two players take turns removing one or two counters from a pile. Whoever removes the last counter wins. A player facing one counter can win immediately; the same is true with two. With three counters, every legal choice leaves one of those winning positions to the opponent. Three is therefore a losing position for the player to move. With four counters, removing one leaves three, which proves that four is winning. Notice the difference in what you had to establish. A single working move settled the position with four counters. Calling the position with three lost required checking every available move. That asymmetry explains a frequent error in chess analysis: showing one losing response to a threat proves a trap exists, but does not prove the threat wins by force.
 
-## Frequently asked questions
-
-### Does Zermelo’s theorem prove White wins?
-
-No. In the finite setting, **one** value exists among White win, Black win and draw. The theorem does not identify which applies. The starting position remains unsolved; an engine evaluation is not proof.
-
-### Why call this a paradox?
-
-There is no mathematical contradiction. The tension is **epistemic**: a value exists under fixed rules while the starting value remains unknown. This does not prove that no future method can calculate it. Existence and access are separate questions.
-
-### Do tablebases contradict Zermelo?
-
-No. They provide calculated results for covered subsets according to their rules and metrics. Coverage limits, such as castling rights, matter. They are constructive examples of exact values for accessible finite sets.
-
-### How can AlphaZero beat Stockfish without perfect play?
-
-Neither has demonstrated a perfect strategy from the starting position. In 2017, Stockfish 8 combined alpha-beta search and hand-written evaluation, while AlphaZero combined a learned network and MCTS. A better match score is not a measured distance to an unknown optimal strategy.
-
-### Could this mathematical value one day be discovered?
-
-Exhaustive solution exceeds current resources, not necessarily every future method. Replacing $10^{120}$ with $10^{60}$ by invoking Grover is unjustified: an adversarial game tree is not a simple unstructured list of solutions.
+Now give the pile five counters and hand the first turn to a friend. Record a strategy on a card before play begins. Taking two is a complete instruction for the first move, but a second instruction is needed after your friend replies. If they take one from the remaining three, take the last two. If they take two, take the last one. You can hand the card to somebody unfamiliar with the game and it will still work. A chess score sheet from a tournament cannot generally play that role. It records the reply an opponent actually chose and leaves the instructions for the other replies unwritten.
 
 ## Sources
 

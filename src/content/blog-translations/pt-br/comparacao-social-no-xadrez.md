@@ -160,6 +160,16 @@ A saída não é ignorar o rating, o que seria abrir mão de uma informação re
 
 *Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [Elo e autoestima](/pt-br/blog/xadrez-autoestima-elo/), [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/) e [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/).*
 
+## Troque as súmulas antes de revelar os nomes
+
+Em um treino a dois, cada participante traz uma posição em que ficou indeciso. Cubram o nome dos jogadores, o resultado e a avaliação do computador. Cada um escreve o lance que jogaria, a resposta que espera e o detalhe que poderia fazê-lo mudar de ideia. Só então comparem os papéis. Se você costuma se medir com o colega porque ele ganhou mais pontos no último torneio, agora dispõe de uma comparação que mostra exatamente o que ele viu.
+
+Imagine que ambos escolheram dobrar as torres na coluna aberta. Seu colega percebeu que o adversário podia trocar um par de torres e chegar a um final de peões. Você esperava uma defesa passiva. A diferença digna de estudo não é o rating de cada um. Montem o final e descubram se a troca prejudica realmente o plano. Talvez a sua primeira escolha sobreviva justamente porque o outro jogador avaliou mal a corrida dos reis. Nesse caso, há uma pergunta de treino para cada participante.
+
+Ao revelar os nomes, observe se você sente vontade de corrigir sua resposta apenas porque ela diverge da do jogador mais forte. Volte à casa de entrada do rei e procure uma variante que decida a questão. Essa comparação termina quando vocês conseguem mostrar a posição que separa as duas ideias.
+
+Ao guardar as fichas, anote também o que seu colega aprendeu com você. Esse detalhe pode desaparecer facilmente de um relato organizado apenas pela ordem do ranking.
+
 ## Fontes
 
 - Festinger, L. (1954). A theory of social comparison processes. *Human Relations*, 7(2), 117–140.

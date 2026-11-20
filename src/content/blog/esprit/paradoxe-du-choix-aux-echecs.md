@@ -107,6 +107,18 @@ Si tu découvres que le problème vient surtout d'une consigne trop difficile ou
 
 Tu peux garder un répertoire stable ou explorer davantage. L’important est que ce choix corresponde à ce que tu veux faire de tes séances, sans attribuer chaque hésitation à un biais.
 
+## Trois fenêtres ouvertes avant le prochain tournoi
+
+Tu disposes de quarante minutes pour préparer les Blancs contre un adversaire qui joue plusieurs défenses. Tu ouvres une vidéo sur une attaque directe, une base de parties sur une ligne positionnelle et les notes d'un ami sur une variante secondaire. Au bout d'un quart d'heure, tu sais surtout que les trois auteurs sont convaincants. Pour reprendre la main, donne une fonction différente à chaque fenêtre. L'une peut te fournir une position de départ, une autre une défense réelle à examiner, la dernière un coup de repli si tu oublies l'ordre exact.
+
+La réduction du choix peut être très concrète. Prends la position que tu obtiens déjà le plus souvent et mets-la sur un vrai échiquier. Parmi les trois ressources ouvertes, laquelle explique la première difficulté qui apparaît ici ? Si la vidéo commence par un sacrifice dans une structure différente, tu peux la conserver pour une autre semaine. Si la base de parties montre vingt continuations sans commentaire, tu peux en prendre une seule qui ressemble à ta dernière partie. La note de l'ami peut se révéler la plus utile si elle nomme la pièce mal placée. La ressource retenue l'est pour une raison précise que tu pourras réexaminer.
+
+Examine aussi le coût d'un choix irréversible en apparence. Choisir aujourd'hui une ligne secondaire ne t'oblige pas à la jouer toute une saison. Écris en haut du fichier « solution pour la rencontre de samedi » et laisse les autres idées dans une liste datée. Une semaine plus tard, récupère le fichier pour ajouter ce que ton adversaire a effectivement joué. Si la position préparée n'est jamais apparue, indique-le. Tu as peut-être travaillé un thème intéressant, mais les résultats du tournoi ne te diront rien sur cette variante particulière.
+
+Ton partenaire peut jouer un rôle de filtre sans devenir propriétaire de ton répertoire. Demande-lui de choisir deux réponses noires qui posent des questions différentes. Face à la première, les Blancs doivent justifier leur centre. Face à la seconde, ils doivent décider où développer leur fou. Après les deux essais, tu sauras laquelle de ces décisions te paraît la plus instructive à travailler. Le fichier du samedi gagne ainsi une raison de survivre à la préparation ponctuelle.
+
+Le signe qu'il est temps de rouvrir le choix apparaît quand la question initiale a réellement changé. Si tu connais maintenant le placement du fou mais perds toutes les positions sur un échange de dames, une ressource sur les finales peut mériter une fenêtre supplémentaire. Tu n'as pas à réduire pour toujours le nombre d'idées disponibles. Leur ouvrir la porte au moment où elles répondent à un besoin identifiable suffit déjà à rendre la préparation plus vivable.
+
 ## Sources
 
 - Scheibehenne, B., Greifeneder, R. et Todd, P. M. (2010), « Can There Ever Be Too Many Options? A Meta-Analytic Review of Choice Overload », *Journal of Consumer Research*, 37(3), 409–425. [Texte des auteurs](https://scheibehenne.de/ScheibehenneGreifenederTodd2010.pdf), DOI : 10.1086/651235.

@@ -111,6 +111,8 @@ Vale guardar dois registros separados depois de jogar. No primeiro, descreva a e
 
 Na revisão, procure também a posição em que precisou interromper o próprio ritmo. O adversário pode ter aberto uma coluna, trocado o defensor de uma casa ou encontrado um xeque intermediário. Conseguir abandonar uma linha agradável quando os fatos mudam é uma habilidade valiosa. Perseguir a sensação de continuidade a qualquer custo pode mascarar justamente essa mudança na posição. Um relato de absorção tem valor por descrever o prazer de jogar; a análise posterior responde pela qualidade das decisões tomadas.
 
+Se Rita e Paulo trabalharem juntos na semana seguinte, cada um pode emprestar ao outro uma pergunta diferente. Rita reconstrói o momento em que duas ordens de lances passaram a ser equivalentes. Paulo mostra a defesa que o obrigou a consultar o relógio. Os dois encontram material para estudar sem precisar concordar sobre qual experiência foi subjetivamente mais intensa.
+
 ## Fontes
 
 - Nakamura, J., & Csikszentmihalyi, M. (2002). *The Concept of Flow*. Em *Handbook of Positive Psychology*, Oxford University Press, p. 89–105. [Capítulo](https://nuovoeutile.it/wp-content/uploads/2015/12/2002-Flow.pdf).

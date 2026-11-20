@@ -92,3 +92,15 @@ Max Euwe, die als wiskundige aan de Universiteit van Amsterdam en als wereldkamp
 ---
 
 Schaken maakt geen wiskundigen. Wiskunde maakt geen schaakkampioenen. Maar beiden cultiveren een houding ten opzichte van rigeur, fout en complexiteit die een zeldzame vorming maakt voor wie ze serieus neemt. Dat is misschien de meest eerlijke beschrijving van wat ze gemeenschappelijk hebben: niet dezelfde vaardigheden, maar een vergelijkbare epistemische discipline.
+
+## Eén tegenvoorbeeld verandert de aard van je antwoord
+
+Schrijf op een kaartje de bewering ‘een toren en een loper van dezelfde kleur kunnen samen elk veld van het bord bereiken zonder dat de toren beweegt’. Wie naar de loper kijkt, ziet al snel een bezwaar. Een loper blijft altijd op dezelfde veldkleur. De stilstaande toren bestrijkt vanuit zijn eigen veld één rij en één lijn, voor zover er geen stukken in de weg staan. Er blijven dus op een leeg bord velden van de andere kleur over die door geen van beide stukken worden bestreken. Eén zorgvuldig gekozen veld buiten de torenlijnen is al voldoende om de algemene claim te weerleggen.
+
+Neem voor de duidelijkheid een witveldige loper op c4 en een toren op a1. Het veld c5 ligt op de andere kleur dan c4 en ook buiten de eerste rij en de a-lijn. Zelfs wanneer de loper vrij mag rondgaan zonder andere stukken op het bord bereikt hij c5 niet. De gekozen stand is een model om over bereikbaarheid te redeneren, geen volledige legale partijstelling met koningen. Dat onderscheid vermelden is deel van de wiskundige zorgvuldigheid: welke regels van het echte spel heb je voor de vraag behouden?
+
+Maak van het probleem nu een schaakvraag. Wit wil in een echte partij een zwak veld onder controle krijgen. Er zijn pionnen, koningen, dreigingen en een tegenstander die na iedere zet een antwoord krijgt. Je weet uit de kleurregel nog steeds welke loper het veld ooit kan bestrijken. Je weet daarmee niet of het een verstandig plan is om die loper juist nu drie zetten te laten maken. Zwart kan ondertussen op de andere vleugel iets dreigen. Een geldig bewijs van een afzonderlijke eigenschap en een goede keuze in een concrete partij vragen dus deels andere soorten werk.
+
+Draai de oefening om. Wanneer ik in één fraaie partij mijn toren via de derde rij naar de koningsvleugel kreeg, is de uitspraak ‘deze route is altijd goed’ nog geheel onbewezen. Je hebt een bestaansvoorbeeld en een plan om op nieuwe stellingen te testen. Vraag welke pion de route kan blokkeren en welke vijandelijke loper met tempo opduikt als je de toren voortijdig naar voren haalt. Daarmee krijgt de schaker iets dat op het zoeken naar een wiskundig tegenvoorbeeld lijkt, zelfs als hij uiteindelijk geen universele stelling hoeft te bewijzen.
+
+Het nuttigste gesprek na zo'n kaartje gaat daarom over de formulering van de vraag. Bedoelde de maker ‘kan worden bereikt’, ‘wordt nu aangevallen’ of ‘kan veilig bezet worden’? Elk werkwoord levert een ander probleem op. Zowel aan het schoolbord als aan het schaakbord kan het vervangen van één vaag werkwoord door een toetsbare omschrijving een halve middag vruchteloos rekenen uitsparen.

@@ -169,6 +169,8 @@ Imagine que um colega tenha passado uma hora ajudando você a preparar uma abert
 
 Uma resposta simples já separa esses dois compromissos: “Obrigado pela preparação. Hoje quero continuar; depois analisamos juntos”. Nem sempre existe má intenção por trás de uma oferta inoportuna. Explicitar a distinção evita tanto a obrigação imaginária de aceitar quanto a acusação apressada de que a ajuda foi oferecida em troca de meio ponto. Na análise do clube, essa conversa é mais instrutiva do que tentar adivinhar o caráter dos dois jogadores.
 
+Se faltar tempo para devolver a análise prometida, diga qual posição você já examinou e qual ainda ficou pendente. Uma variante curta que o colega consiga testar no tabuleiro tem mais utilidade imediata que um elogio genérico escrito para encerrar a obrigação.
+
 ## Fontes
 
 - Regan, D. T. (1971). Effects of a favor and liking on compliance. *Journal of Experimental Social Psychology*, 7(6), 627-639.

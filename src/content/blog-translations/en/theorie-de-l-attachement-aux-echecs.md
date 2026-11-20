@@ -65,6 +65,34 @@ A quiet child may be tired, disappointed, absorbed or simply not talkative. An a
 
 No established threshold at twelve or thirteen is presented here beyond which a relationship explains quitting. If discomfort persists, ask what is weighing on the player: tournament frequency, the coach relationship, family expectations or a desire to play differently. The answer deserves to be heard before reaching for a theory.
 
+## Who opens the game file?
+
+Imagine a rainy afternoon after a junior tournament. A child is holding a rolled-up scoresheet. In the car, a parent reaches for a phone to enter the moves while everyone still remembers them. The parent thinks this will be helpful. The child tightens their grip on the sheet and asks for music. From these gestures alone we know very little about the relationship. There is, however, something very specific that can be changed in this scene: ask whose decision it is to start the analysis now.
+
+The scoresheet might reappear at breakfast the following morning. At that point there are several real choices. Keep it in a folder, set up one position together or send it to the coach with a question. Suppose the child picks the last option and points to an exchange of bishops. The parent's message could say exactly what the child asked: “I'd like to know if I could have kept my bishop.” There is no need to add that the child panicked or that the loss was demoralising. Those interpretations would change the question the coach receives.
+
+The coach can begin by asking the player to put the pieces back before the exchange. If the child changes their mind about looking at it today, the sheet will still be there another day. The adult has made analysis possible while leaving some control over its subject and timing with the person who played. That is a small observable decision. A whole team can learn to handle scoresheets in this way without drawing conclusions about any child's attachment style from a single car ride.
+
+## Three people with different jobs at a tournament
+
+A parent may be responsible for the lift, meals and finding the right board before the round. A coach may be responsible for teaching and setting up a useful review. The player is the person making decisions over the board and deciding what to say afterwards. All three roles matter. Confusion can arise even when everyone is trying to help. If a parent sends a long technical verdict to the coach before the player has spoken, the coach's first question may already presuppose an error the child never made. If the coach promises an evening session without checking transport, a player can appear to refuse something that was never a realistic option.
+
+At the start of an event, agree on a meeting place after the round and what happens if it finishes early. Those practical details do not tell you whether the player will want a hug, a sandwich, silence or an extended conversation about the game. They do make it easier for the player to find the adult when needed. Being available and constantly watching over a player's shoulder are different arrangements. A child who likes to review games alone for a while may still care very much about knowing where the parent will be.
+
+Here is a small change to try at the next event. On leaving the hall, offer one thing that solves an immediate problem: a drink, a place to sit or a chance to put the scoresheet away. Wait for the player to introduce chess, or ask whether they would prefer to talk now or later. If they choose later, follow through on that choice. At dinner, “Would you like me to keep the sheet for tomorrow?” identifies something concrete you can do. Simply waiting five minutes and then starting the same unwanted interrogation does not give the player much say in the conversation.
+
+When the player does want to talk, a difficult question need not be a judgement. The coach can ask, “Which of these two moves did you consider first?” The parent can ask, “Would you like me to stay while you show the position?” One question is about decision-making and the other about company. Asking each for the purpose it serves makes the discussion easier to interpret. There is also room for no discussion at all after some rounds without treating that choice as a warning sign in itself.
+
+## What a relationship questionnaire can and cannot settle
+
+In reading the research cited here, separate what was measured from the story one might tell about a particular chess family. Asking participants to describe a coach-athlete relationship can produce evidence about how responses vary together in a group. It cannot show what a certain parent meant by reaching for a scoresheet. Nor would an association by itself tell you which element came first. A supportive setting could help an athlete feel at ease, and an athlete who is having a satisfying season may experience some interactions differently. Both are possibilities to examine rather than conclusions established by observing a handshake in a tournament hall.
+
+For a junior club, more direct questions are often available and easier to act on. Does the player know whom to ask about an incident? Can a player leave a game for private analysis instead of putting it on the demonstration board? Are adults clear about which conversations properly belong outside the playing hall? Answers can reveal practical ambiguities that an organiser can fix before the next event. None requires ranking the children's personalities.
+
+One way to judge a change is to ask at the end of the month which moments went more easily and which still caused confusion. A child may say it helped to know the parent would be near the exit, but that deciding about analysis immediately after a loss was difficult. The next adjustment could be a default of keeping the scoresheet until the following lesson unless the child asks otherwise. Another family may want the opposite default. The aim is an arrangement that the people involved can understand and revisit.
+
+A dependable adult can still set a boundary. The coach may need to finish at six because another class is arriving. Giving a clear end time and arranging when to pick up the diagram again is a way to be predictable without promising unlimited availability. Over several tournaments, such agreements give players a real opportunity to discover how to ask for help, how to decline it on a particular evening and how to return with a question when they are ready.
+
 ## Sources
 
 - Davis, L. and Jowett, S. (2010), “Investigating the Interpersonal Dynamics Between Coaches and Athletes Based on Fundamental Principles of Attachment”, *Journal of Clinical Sport Psychology*, 4(2), 112–132. [Authors’ abstract](https://researchportal.northumbria.ac.uk/en/publications/investigating-the-interpersonal-dynamics-between-coaches-and-athl/).

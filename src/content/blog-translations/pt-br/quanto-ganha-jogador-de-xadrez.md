@@ -178,25 +178,10 @@ Em vez de apresentar um modelo como já viável para todos, perguntemos o que es
 | Uma atividade de conteúdo é viável? | Contrato, vendas, custos e tempo de trabalho | Número bruto de seguidores |
 | Uma plataforma é rentável? | Contas e perímetro contábil | Preço de uma aquisição |
 
-## Perguntas frequentes
-
-**Como um Grande Mestre pode ganhar a vida?**
-Com competição, ensino, conteúdo ou contratos, conforme a situação. Nenhum preço por hora ou rating garante renda líquida. Um orçamento precisa incluir despesas e tempo de trabalho não faturado.
-
-**As jogadoras recebem de forma diferente?**
-É preciso comparar eventos e acordos identificados. Uma dotação feminina, uma dotação aberta e o valor recebido por uma jogadora não são o mesmo dado. As fontes deste artigo não oferecem uma pesquisa de renda por trabalho comparável nem uma causa única para as diferenças. A audiência, sozinha, não basta para explicá-las.
-
-**O Chess.com é rentável?**
-Os documentos citados não permitem estabelecer sua rentabilidade atual. Uma aquisição, um preço de assinatura e um número de contas não revelam faturamento real nem lucro. Uma taxa de conversão inventada não preenche essa lacuna.
-
-**Os Jogos Olímpicos garantiriam mais dinheiro aos jogadores?**
-Não. A FIDE documenta suas [relações com o movimento olímpico](https://www.fide.com/fide-strengthens-ties-with-ioc-uefa-and-arisf/), mas reconhecimento de uma federação, inclusão no programa e remuneração de participantes são questões diferentes. Não se deve orçar receita adicional com base em uma hipótese de inclusão futura.
-
----
 
 Para considerar uma atividade semiprofissional, separe **aulas, conteúdo e competição**, depois inclua custos, horas não faturadas e um cenário prudente sem prêmios excepcionais. Isso não promete uma carreira; permite avaliar um projeto concreto em vez de copiar os ganhos de uma celebridade.
 
-### Fontes e referências
+## Fontes e referências
 
 - **Chess.com**, *The Top Chess Prizewinners In 2025, And How Much They Won* (atualização de março de 2026). Método, exclusões e registros datados. [Balanço](https://www.chess.com/article/view/biggest-chess-prizewinners-2025).
 - **FIDE**, *Regulations for the World Championship Match 2023*. Moeda e divisão do fundo. [Regulamento](https://handbook.fide.com/files/handbook/FWCM2023.pdf).

@@ -104,6 +104,18 @@ Un partenaire peut expliquer ce qu'il a vu et demander ce que tu aurais joué. V
 
 Si les discussions se réduisent toujours à celui qui monte le plus vite, propose un autre sujet concret : une belle défense, un problème intéressant, une partie que vous ne comprenez pas encore. Ce choix ne promet pas de supprimer toute frustration. Il permet simplement de rendre au jeu une dimension partagée, au-delà du tableau des résultats.
 
+## Comparer deux coéquipiers à partir de leur dernier tournoi
+
+Deux jeunes joueurs reviennent du même open. L'un a obtenu quatre points, l'autre trois. On leur demande qui a le plus progressé. Les résultats sont faciles à lire ; la question l'est moins. Ont-ils joué dans la même catégorie ? L'un a-t-il reçu un point de forfait ? Combien d'adversaires avaient un niveau comparable au leur ? Et surtout, qu'avaient-ils décidé de travailler avant le tournoi ? Un premier bilan qui déduit la progression de la seule place finale donne une réponse rapide à une question encore mal définie.
+
+Imagine que le premier ait préparé sa gestion du temps. Il est arrivé en finale avec au moins cinq minutes dans toutes les parties lentes sauf une. Le second travaillait l'analyse après les rondes. Il a conservé cinq positions qu'il peut expliquer seul à son entraîneur. Tenter d'additionner ces deux réussites dans un indice commun obligerait à décider artificiellement ce que vaut une minute gardée par rapport à une position bien comprise. Il est bien plus facile de comparer chaque joueur à la tâche annoncée avant le départ.
+
+Il reste possible d'apprendre l'un de l'autre. Le premier peut demander à son coéquipier comment il choisit la position à conserver. Le second peut lui demander à quel moment il consulte la pendule pour décider de continuer ou d'interrompre un calcul. La comparaison devient alors très concrète. Chacun repart avec un geste qu'il pourra essayer dans sa prochaine partie, même si les deux joueurs ne partageront jamais le même classement.
+
+Un parent ou un capitaine peut faciliter cet échange en posant les questions dans le bon ordre. Commence par « de quelle décision voudrais-tu reparler ? » et attends qu'un diagramme soit installé. Demande ensuite à l'autre joueur s'il aurait abordé la position différemment. Ce n'est qu'après l'échange qu'il devient intéressant de regarder les classements ou les performances du tournoi. À ce stade, les noms propres et les chiffres s'ajoutent à des décisions que les deux personnes connaissent déjà.
+
+Si le classement suscite malgré tout de la contrariété, tu peux lui laisser une place. Le joueur qui espérait une médaille a le droit d'être déçu même s'il a beaucoup appris. Le fait de pouvoir montrer une amélioration technique ne l'oblige pas à se sentir heureux immédiatement. Il lui laisse simplement une conversation supplémentaire à engager lorsque la soirée des résultats sera passée.
+
 ## Sources
 
 - Festinger, L. (1954), « A Theory of Social Comparison Processes », *Human Relations*, 7(2), 117–140. [Texte original reproduit](https://www.humanscience.org/docs/Festinger%20(1954)%20A%20Theory%20of%20Social%20Comparison%20Processes.pdf), DOI : 10.1177/001872675400700202.

@@ -62,6 +62,30 @@ An engine answers a different question: which moves does it find under its searc
 
 For your next training session, choose a moment when you misjudged the reply. Write down the move you expected and the move actually played. Then look for what in the position should have prompted you to examine that reply. You will be working on a specific decision without turning a neuroscience hypothesis into a certainty.
 
+## Predict a hand movement or predict a chess move?
+
+Imagine following a game on the radio. A commentator gives the moves in algebraic notation and you move the pieces yourself. You never see either competitor's hand. Nevertheless, when an opponent places a rook behind the other rook on an open file, you may predict an invasion on the seventh rank. The position and your knowledge of the game supply grounds for that prediction. Now imagine the reverse broadcast: the camera shows the player's hand approaching the board but crops out every piece except the one being touched. You may be able to anticipate the direction of the physical movement while having very little idea what the resulting position means. The two predictions call for different information.
+
+Neither part of this thought experiment identifies the neurons active in a real player. It does help identify an important gap in a popular explanation. An experiment measuring a response while an action is seen or performed establishes something about the particular task and measurement. Predicting why someone would exchange a bishop for a knight several moves before an ending is reached is a different task. An argument connecting the two would have to describe the positions, the observations and the competing explanations that its evidence can distinguish. Replacing all of those with the word “mirroring” leaves the reader with no chess test to perform.
+
+## Write two stories that fit the same move
+
+Choose a game in which the opponent declined an offered exchange. The first story might be that they calculated an invasion by your rook in the resulting ending. A second story might be that they never seriously considered the offer and were thinking about bringing a knight across to the other wing. Both stories are compatible with the refusal recorded on the score sheet. To say which is likelier you need evidence beyond that move. Even if your friend agrees that the rook invasion would have been dangerous, the agreement establishes a feature of the position. It does not prove that the opponent had already noticed it.
+
+Try a post-game conversation if the other player is interested. Show the diagram and ask which candidates they remember. Let them describe the line before suggesting a particular answer. “Were you afraid of my rook getting to the seventh?” contains the detail you are trying to discover. “What alternatives did you consider here?” leaves more room to learn something. If the player doesn't remember, record the uncertainty. People can find a convincing line during analysis and genuinely be unsure whether it occurred to them during the game. You can still investigate the line together.
+
+Work out the board question separately. Place the rook on the proposed file, find its entry square and try a defence before declaring the ending lost. It is quite possible that your opponent rejected an objectively safe exchange because of a miscalculation. The opposite can happen too: a player can avoid a trap for an entirely different reason. Good notes will distinguish the move actually played, the reason a participant recalls and the best line the analysts can now demonstrate. None of those three pieces of information automatically supplies the other two.
+
+## A role-switching exercise with a correction
+
+Set a teaching position on a board and ask your partner to name what the other side would most like to do if given a free move. Turn the board around and give them a second attempt. Rotating the pieces creates no new legal moves; it changes the viewpoint and may prompt a neglected question. A good answer points to a destination, an attacking line or a piece that can improve. “Black wants to scare White” is harder to check than “Black wants the rook on the only open file”. Ask for a legal route and try to interfere with it before deciding it is the main plan.
+
+For the correction, give your partner a strong defence that makes their first forecast fail. Can they name a second plan the opponent might adopt? This checks a subtle advantage of taking the other side seriously: a real opponent gets to update a plan when the position changes. A caricatured opponent in your analysis keeps cooperating with your preferred variation. Switching seats is a way to break that habit. Its usefulness can be tested entirely in terms of the defensive moves you now examine.
+
+When you read a claim that watching a champion improves foresight through mirror neurons, ask what exactly was measured. Did participants observe a movement, solve a fresh position, reproduce a memorised sequence or answer a question about another person's intentions? Which comparison would distinguish familiarity with the position from familiarity with the gesture? These questions still leave plenty of reason to watch and analyse games. They help identify what a demonstration actually teaches, down to the square or defensive idea you can check when the video is over.
+
+Try recording the prediction before the opponent touches a piece, then record it again after the move appears. This establishes whether the board position was already enough for the forecast. It still leaves open the biological mechanism by which a particular player reached the answer.
+
 ## Sources
 
 - Di Pellegrino, G., Fadiga, L., Fogassi, L., Gallese, V., & Rizzolatti, G. (1992). *Understanding motor events: a neurophysiological study*. Experimental Brain Research, 91, 176–180. [Abstract and DOI](https://pubmed.ncbi.nlm.nih.gov/1301372/).

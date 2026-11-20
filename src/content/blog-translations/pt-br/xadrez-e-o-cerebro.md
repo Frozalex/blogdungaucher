@@ -86,6 +86,8 @@ Se quiser repetir, use uma posição nova e troque a ordem das tarefas. Ter vist
 
 Na próxima vez que alguém disser que uma atividade “ativa o cérebro”, tente completar a notícia com uma frase mais específica. Quem participou, qual problema recebeu, qual resposta foi registrada e qual comparação sustentou a conclusão? Se esses elementos estiverem descritos, há uma ideia concreta para discutir, apoiar ou contestar. Se estiverem ausentes, a pergunta permanece aberta, mesmo diante de uma imagem colorida e de um tabuleiro perfeitamente reconhecível.
 
+Se o grupo resolver trocar de tarefa no meio da sessão, guarde os resultados em colunas diferentes. Alguém que passou da simples identificação de uma peça à busca por uma ameaça pode precisar de mais tempo e, ainda assim, ter respondido corretamente. Somar as duas durações como se medissem a mesma coisa apagaria a mudança que vocês introduziram de propósito.
+
 ## Fontes
 
 - Li, K., Jiang, J., Qiu, L. et al. (2015), *A multimodal MRI dataset of professional chess players*, Scientific Data, 2, 150044, [artigo](https://www.nature.com/articles/sdata201544).

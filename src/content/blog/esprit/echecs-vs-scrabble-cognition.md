@@ -96,6 +96,14 @@ Pour travailler le jeu lui-même, observe l'erreur. Au Scrabble, avais-tu raté 
 
 Pour un effet hors du jeu, il faudrait une autre comparaison : tests avant/après, groupes pertinents et activité de contrôle. Une progression au Scrabble ne suffit pas à prouver un progrès en rédaction ; une progression aux échecs ne suffit pas à prouver un progrès en mathématiques. Tu peux apprécier les deux pour leurs problèmes propres et pour les échanges qu'ils rendent possibles, sans départager les personnes en deux types de cerveaux.
 
+## Deux conseils différents devant une case convoitée
+
+Au Scrabble, un partenaire te montre deux placements et te demande lequel tu jouerais. Le premier marque davantage immédiatement. Le second garde une meilleure combinaison de lettres sur le chevalet, mais laisse une case intéressante à l'adversaire. Pour résoudre ce choix, demande d'abord si vous analysez une partie classique ou un exercice où le prochain tirage est imposé et connu. Le matériel disponible sur le plateau peut être identique tandis que la question posée change complètement.
+
+Sur un échiquier, le problème correspondant serait une capture avec un pion ou avec une pièce. Le bilan immédiat de la capture est le même, mais la case libérée et la mobilité au tour suivant diffèrent. Tu peux installer les deux positions finales et donner chaque fois le trait à ton partenaire. Il pourra chercher la meilleure réponse sur un plateau dont toutes les pièces se voient. Au Scrabble classique, le partenaire qui examine les deux placements doit aussi préciser de quelles lettres il suppose disposer et ce qu'il ignore du prochain tirage. Sans ces hypothèses, prétendre qu'il a vérifié la meilleure riposte recouvre deux travaux très différents.
+
+Pour organiser un atelier mixte au club, donne au groupe une fiche comportant seulement trois colonnes : « visible de tous », « connu seulement du joueur » et « encore inconnu ». Faites classer le contenu du chevalet actuel, la prochaine lettre tirée et les cases déjà occupées. Reprenez la feuille avec un problème d'échecs : place du roi adverse, idée qu'il prépare et meilleur coup de la position. La place du roi est publique. L'idée de l'adversaire peut rester privée. Le meilleur coup peut être difficile à découvrir alors que les pièces sont visibles. Une difficulté de calcul et une information cachée n'iront donc pas automatiquement dans la même colonne. C'est précisément ce que ce rapprochement entre les deux jeux permet d'expliquer au-delà du mot « stratégie ».
+
 ## Sources
 
 - Halpern, D. F. et Wai, J. (2007), *The World of Competitive Scrabble: Novice and Expert Differences in Visuospatial and Verbal Abilities*, Journal of Experimental Psychology: Applied, 13(2), 79–94. [Texte intégral](https://cdn2.psychologytoday.com/assets/attachments/56143/the-world-competitive-scrabble.pdf).

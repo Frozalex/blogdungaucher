@@ -101,6 +101,17 @@ Après la partie, analyse les décisions avant de chercher une morale sur les g�
 
 Une surprise devient alors une partie à comprendre, sans devoir prouver que l'expérience ne sert plus ou que l'enfant possède un avantage cognitif général.
 
+## Raconter une surprise avec les bons dénominateurs
+
+Un journal de club prépare sa une : une jeune joueuse vient de battre un adulte beaucoup mieux classé. La partie mérite d'être montrée. Mais imaginons que le rédacteur souhaite tirer une conclusion plus vaste sur les affrontements entre générations. Pour cela, il devra demander combien de rencontres comparables ont eu lieu au cours du tournoi. Une victoire dans la seule rencontre de ce type et une victoire parmi trente rencontres produiraient exactement la même une. Elles ne répondent pourtant pas de la même façon à la question « à quelle fréquence cette surprise arrive-t-elle ? ».
+
+Précise aussi ce que signifie « comparables ». Un enfant débutant opposé à un adulte expérimenté, un adolescent déjà maître international face à un amateur et deux jeunes du même club appartenant à des catégories d'âge différentes ne présentent pas le même enjeu sportif. Lorsque tu racontes une partie, donne l'âge si cela éclaire le contexte, puis le niveau ou l'expérience des personnes lorsque ces informations sont établies. Évite de combler les trous en supposant qu'une personne a nécessairement joué plus longtemps parce qu'elle est plus âgée.
+
+Reviens ensuite à la partie choisie par le journal. Le premier diagramme intéressant peut se trouver bien avant la gaffe finale. Les Noirs ont-ils consacré trop de temps à une ouverture qu'ils ne connaissaient pas ? Les Blancs ont-ils mobilisé leurs tours avant de créer une seule menace ? En donnant le diagramme à tes lecteurs sans révéler les noms, tu peux leur faire découvrir la décision qui a rendu la victoire possible. Lorsqu'ils apprennent qui a joué les coups, l'information ajoute une histoire humaine à une analyse qui tient déjà sur l'échiquier.
+
+Si tu peux échanger avec les deux joueurs, pose-leur une question technique symétrique : « Quel coup de l'autre t'a le plus surpris ? » La jeune joueuse peut expliquer son plan. L'adulte peut reconnaître un coup qu'il n'avait pas calculé et montrer la défense qu'il a découverte plus tard. Cette manière de raconter une rencontre laisse de la place aux deux personnes et donne au lecteur un motif à réutiliser. Décrire seulement l'adulte humilié et l'enfant prodige laisserait s'échapper l'apport que cette partie a précisément de plus instructif.
+
+Pour le prochain tournoi, conserve trois diagrammes issus de parties proches, y compris celles où le favori l'emporte. Cherche si le même motif apparaît des deux côtés de l'écart de classement. Tu obtiendras peut-être un thème d'entraînement pour toute l'équipe, ce qui est une bien meilleure récompense pour le club que de devoir attendre une deuxième une spectaculaire.
 
 ## Sources
 

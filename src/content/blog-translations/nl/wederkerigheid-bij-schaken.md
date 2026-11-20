@@ -155,6 +155,8 @@ Het middel is niet individueel, het is collectief. Een ingestelde praktijk verbi
 
 *Dit artikel bouwt voort op ons artikel over [de psychologie van overtuiging bij schaken](/nl/blog/psychologie-van-overtuiging-bij-schaken/). Twee andere behandelen sociale bewijskracht en schaarste.*
 
+Een geleende analyse kan een ongemakkelijke schuld scheppen. Stel dat een teamgenoot zijn openingsbestand met jou deelt en een week later vraagt jouw voorbereide variant voor een andere tegenstander te mogen zien. Maak vooraf duidelijk welk deel je mag doorgeven, of de oorspronkelijke maker genoemd wil worden en of je überhaupt iets terug hoeft te leveren. Bij een schaakclub is een prettigere tegenprestatie soms een uur samen de zetten testen. Dan profiteert de gever van een frisse blik en blijft de keuze van de ontvanger vrij. Die afspraak maakt de waarde van samenwerking zichtbaarder dan een onuitgesproken boekhouding van gunsten.
+
 ## Bronnen
 
 - Regan, D. T. (1971). Effects of a favor and liking on compliance. *Journal of Experimental Social Psychology*, 7(6), 627–639.

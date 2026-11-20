@@ -79,6 +79,34 @@ Une différence entre ce récit et l’analyse ultérieure ne mesure pas directe
 
 Voir aussi la [rationalisation](/fr/blog/rationalisation-aux-echecs/) et les [mécanismes de défense](/fr/blog/mecanismes-de-defense-aux-echecs/).
 
+## Deux idées raisonnables qui finissent par se contredire
+
+Un joueur travaille le sacrifice d'un pion pour obtenir la paire de fous. Sa première raison de le choisir était claire : ouvrir des lignes et jouer avec les pièces actives. Dans une partie de club, l'adversaire rend le pion pour échanger l'un des fous. Le joueur continue à parler de compensation parce qu'il a longtemps défendu cette ouverture auprès de ses amis. Pourtant, la première promesse, jouer avec les deux fous, a cessé de décrire la position. Deux phrases peuvent maintenant entrer en tension : « J'ai choisi ce gambit pour les deux fous » et « je dois être content de son résultat même après l'échange ».
+
+Il existe plusieurs manières de résoudre la contradiction. Le joueur peut trouver un nouvel avantage concret, tel qu'une colonne disponible pour sa tour. Il peut conclure que l'ouverture a produit une position égale où chaque camp possède des chances. Il peut aussi recommencer à compter les fous comme si l'échange n'avait pas eu lieu. Les deux premières réponses pourraient être bien fondées. Pour les départager, installe la position obtenue, repère la case que la tour vise et cherche le coup défensif le plus simple. Si la case est protégée et que ton adversaire a le temps de ramener une pièce, tu viens d'apprendre quelque chose sur le plan. Ton attachement au gambit est une question distincte.
+
+Voici le détail qui rend cet exemple réutilisable. Demande à ton partenaire de te donner directement la position après l'échange, sans annoncer l'ouverture. Quel plan proposerais-tu si tu ignorais qui avait offert le premier pion ? Repars de la structure présente. Tu peux retrouver la colonne de tour et confirmer ton premier jugement. Tu peux aussi choisir de jouer une finale tout à fait tranquille. La différence entre les deux lectures donne matière à une discussion sur ce qui a attiré ton attention. Elle ne mesure pas à elle seule le malaise intérieur que décrit la théorie psychologique.
+
+## Quatre phrases qui ressemblent à des explications
+
+Après un tournoi, note ces quatre débuts de phrase : « J'ai vu… », « J'attendais… », « J'en conclus maintenant… » et « Pour changer d'avis, il faudrait… ». Remplis-les dans cet ordre pour un moment précis. Tu peux avoir vu un échange de dames, attendu une entrée de ton roi, puis conclu le lendemain que le roi adverse arrivait le premier. Quelle observation te ferait encore changer d'avis ? Une case d'opposition ou un tempo de pion oublié suffirait. Tes quatre phrases parlent de la même finale, mais elles n'ont ni la même date ni la même fonction.
+
+Suppose que le moteur confirme l'évaluation de départ et trouve une victoire très difficile. Le joueur peut être tenté de clore l'enquête : il avait raison. Reviens pourtant à la deuxième phrase. Avait-il anticipé le tempo de pion qui rend cette victoire possible, ou imaginait-il une tout autre variante ? Une conclusion exacte peut reposer sur une mauvaise raison. À l'inverse, une variante correcte contre la première défense rencontrée peut déboucher sur une conclusion erronée si une meilleure défense existe. Ces nuances permettent de réviser son analyse sans choisir entre « je suis un bon joueur » et « je ne comprends rien aux finales ».
+
+Avec un diagramme imprimé, tu peux même conserver les deux analyses séparées. Sur une face, garde l'histoire originale telle qu'elle se présentait à la sortie de salle. Sur l'autre, dessine la case d'entrée du roi et les deux routes qui y conduisent. Une semaine plus tard, regarde d'abord le diagramme sans relire le commentaire. Si tu retrouves la bonne route pour une raison que tu peux montrer, l'exercice a produit une connaissance utilisable. Si tu redis seulement le verdict du moteur, la question technique reste ouverte.
+
+## À la table d'analyse, qui a le droit de se raviser ?
+
+Deux partenaires étudient une ouverture pendant un mois. Au terme de quatre rencontres, l'un annonce qu'il veut changer de variante. L'autre entend un rejet de tout le travail commun. Avant de discuter de psychologie, précisez l'objet de la décision. Le premier veut-il changer le troisième coup contre toutes les défenses, préparer une réponse secondaire ou simplement éviter la ligne à la prochaine ronde ? Une révision locale coûte moins qu'un abandon complet. Elle peut aussi sauver l'essentiel du travail déjà accompli.
+
+Sur la feuille du répertoire, marque la première position où le désaccord apparaît. Liste les branches plus anciennes que vous continuerez à utiliser. Imaginez que vous ayez travaillé six réponses adverses et qu'une seule exige un plan différent. Le débat portera désormais sur cette branche, avec des coups à jouer et des sorties à comparer. Le temps investi dans les cinq autres réponses garde sa valeur pour des raisons présentes : vous continuez à les rencontrer et vous savez les jouer. Dire « nous avons déjà passé un mois dessus » ne suffisait pas à établir cela.
+
+Il peut être utile de préparer deux colonnes avant l'expérience. Dans la première, écris ce qui justifierait de conserver la ligne. Dans la seconde, indique ce qui justifierait de la retoucher. Cherche des critères que tu pourrais reconnaître même si la partie se termine sur une gaffe sans rapport au quarantième coup. « Obtenir la structure de pions voulue avec la possibilité réelle de développer le fou » en est un. « Gagner samedi » ne permettrait pas de savoir si l'ouverture a rempli son rôle.
+
+Enfin, accorde la même permission au partenaire qui conserve son choix. Une personne peut se raviser après deux défaites pour de mauvaises raisons, tandis qu'une autre peut persévérer parce qu'elle a identifié et corrigé un détail précis. Ce qui donne sa valeur à la décision est le lien entre les observations nouvelles et les conséquences qu'on en tire. À la fin de votre mois d'analyse, pouvoir montrer où vos idées ont changé, et où elles ont résisté à un examen sérieux, vaut sans doute mieux qu'avoir soutenu la même formule à chaque réunion.
+
+Donne à cette feuille un dernier usage : conserve-la avec les deux dates, celle de la partie et celle de la révision, pour que votre prochain débat reparte des mêmes pièces et des mêmes hypothèses.
+
 ## Sources
 
 - Festinger, L. et Carlsmith, J. M. (1959), « Cognitive Consequences of Forced Compliance », *Journal of Abnormal and Social Psychology*, 58, 203–210. [Texte original](https://psychclassics.yorku.ca/Festinger/).

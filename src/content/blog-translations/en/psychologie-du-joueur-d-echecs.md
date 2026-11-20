@@ -74,6 +74,26 @@ Choose a moment when your state seemed to change your choice. Note what you felt
 
 The aim is to find an adjustment you can try and reassess. One game does not, by itself, reveal your identity, childhood or entire relationship with failure.
 
+## Two players make the same quiet move
+
+Consider a fictional position from a team match. White can exchange queens and enter a roughly balanced rook ending or keep queens and allow a dangerous but unclear attack. A draw would secure the match for White's team. On the board beside it, in an unrelated individual event, a player faces the same position and needs a win to qualify. Both players exchange queens. From the outside their choice looks identical. It would be tempting to call both of them cautious. The team player might have judged the risk against a real match objective. The individual player might have found a concrete winning chance in the ending. Either might simply have overlooked the alternative. The move alone does not select one of these accounts.
+
+How could you learn more after the round? Ask each player for the first reply they worried about with queens still on the board. Ask whether they saw the resulting ending as balanced and what their opponent needed from the game. If a player says, “I didn't know a draw qualified the team,” you can drop a hypothesis that seemed extremely persuasive from the spectator's chair. If the other says, “I thought the pawn ending after a second exchange was winning,” you have a technical claim to test. Some psychological explanations disappear when you let the person describe what they actually thought the position was.
+
+Now return to a game of your own. Recall a choice somebody described as brave, timid or stubborn. Replace the adjective with two candidates and one relevant constraint. “I could take the pawn or finish development, but my clock showed ninety seconds” gives an analyst something to inspect. You may indeed have felt afraid; knowing that can be valuable. The constraint and the candidates let you ask which action that fear might have affected. If both lines lost to the same intermediate check, the first piece of useful work may be learning to spot the check.
+
+## Use the analysis board to challenge your favourite explanation
+
+Suppose your first note says “I always panic against stronger players.” Choose a particular position from the game that prompted it. Make a diagram and give it to a partner without revealing either name or the result. Ask what they would examine with two minutes on the clock. They may find the same move you did. They may spot a defence that neither player saw. In either case, the comparison has narrowed the issue. An understandable mistake in a genuinely awkward position calls for different practice from an obvious reply that you repeatedly overlook only in a certain setting.
+
+You can also test the training idea directly. If the problem seemed to be abandoning your candidate too quickly, replay several fresh positions and state why you rejected the first move you considered. Keep the pace close enough to your usual games for the question to be relevant. If your answer typically mentions a specific threat, your process may be more deliberate than your original description suggested. If your answer is repeatedly “I assumed the move must be bad,” the next task is to look for an actual refutation. This is a practice exercise, not an experiment from which to diagnose a condition or calculate the effect of pressure.
+
+## Give yourself a question you can retire
+
+A note is more useful when it tells you what would count as finishing it. “Be more confident” has no clear finish. “Before I reject a sacrifice, check whether the opponent has to recapture” can be tested in positions where the question arises. After a week, review the relevant games and look for decisions rather than wins. If the issue never occurred, choose a new position in training or keep the question for another event. If you performed the check and still lost, investigate the resulting line. If checking it has become routine and the trouble now lies elsewhere, retire the note. There is no prize for keeping a long collection of personal weaknesses alive.
+
+A coach can use the same discipline in conversation. When a player brings a theory about their personality, ask for one score sheet where the theory would lead to a different practice decision. Should they study a particular ending, change the time control for a training game, arrange an analysis partner, or simply finish earlier on a work night? If no practical decision follows yet, it is fine to leave the interpretation open. A small adjustment that helps the player enjoy and understand tomorrow's game is worth more than a confident label that explains everything only after the result.
+
 ## Sources
 
 - Shields, G. S., Sazma, M. A. and Yonelinas, A. P. (2016), *The effects of acute stress on core executive functions: A meta-analysis and comparison with cortisol*, Neuroscience & Biobehavioral Reviews, 68, 651–668, [article](https://www.grantsshields.com/wp-content/uploads/2016/08/Stress_and_EF_meta-analysis.pdf).

@@ -59,6 +59,36 @@ If you notice persistent memory difficulties or changes in everyday activities, 
 
 For expertise studies and their causal limitations, see [chess and the brain](/en/blog/chess-and-the-brain/). The conclusion here remains limited: cognitive leisure activities deserve study, but the cited sources do not demonstrate protection specific to chess against Alzheimer’s.
 
+## Four different questions behind “does chess help?”
+
+A club organiser might mean “will our guests enjoy an afternoon with the pieces?” A relative might mean “can someone who already knows chess continue to take part?” A researcher might ask “are people who report doing certain activities diagnosed with dementia less often over the period we observe?” A clinician hearing a much stronger claim would want to know whether prescribing a particular programme changes a specified health outcome. These are four legitimate questions, with four different ways of finding an answer. A pleasant club afternoon can answer the first without resolving any of the other three.
+
+Take the second question seriously on its own terms. A player who is used to a wooden board might enjoy recognising a familiar piece or showing a grandchild a favourite opening. A set that is easy to see, the option of playing without a clock and a partner willing to stop when asked are meaningful practical choices. The relevant evidence in this encounter is what the player says and does: did they want another position, a conversation or a break? Treating the game as a medical test would change the experience and attach an interpretation to mistakes that the setting cannot support.
+
+For the research question, think carefully about the people represented by a label such as “regular player”. They have had an opportunity to learn, a place to play and enough interest and means to continue. Some may play at home, others at a club several journeys away. An observer who records only frequency can easily place very different lives in the same category. A comparison with less frequent players will reflect a mixture of these differences. Statistical adjustments can address specified measured variables, but cannot turn a broad activity category into a precisely defined chess intervention.
+
+## Read the heading above the number
+
+The cohort paper by Wu and colleagues groups several activities when examining lifestyle enrichment. A number reported for a category containing games belongs to that category, over the follow-up in that population. It is not automatically a number for chess, for chess training of a particular duration, or specifically for Alzheimer's disease. Read the outcome as carefully as the activity label. A finding about diagnoses of dementia as a group does not identify which mechanism, cause or individual activity produced the difference.
+
+Here is a purely invented arithmetic exercise to see a second trap. Suppose twelve of a hundred people in one group and nine of a hundred in another experienced an outcome over the same interval. The absolute difference would be three people per hundred. The second proportion would be one quarter lower *relative* to the first. “Three fewer per hundred” and “a quarter lower” can describe the same counts. Neither number would reveal why the groups differed. These figures are an example for reading headlines; they are not the results of the cohort and do not estimate anyone's personal risk.
+
+There is a further complication in a long observation. People can change what they do during the years that follow a questionnaire. A participant might leave a club because the bus route changes, because a partner moves away or because interests and abilities change. A measure at one time is valuable but does not fully describe all later exposure. Before translating a study into a recommendation, ask when the activity was recorded, how it was defined, what the researchers followed and what alternative explanations remain. Those questions are more informative than debating whether a single impressive-looking percentage is large enough.
+
+## Prepare an afternoon a guest can shape
+
+For a person who likes chess, try offering two small activities with a real choice between them. One might be setting up familiar pieces and choosing the first move together. The other could be looking at a simple diagram with a knight and finding an interesting square for it. Allow a participant to change the question, explain a memory of playing or stop halfway through. The organiser can record the choices that made the event enjoyable. A comment such as “preferred moving real pieces to reading notation” is useful information for the next visit and does not pretend to measure cognitive change.
+
+If someone struggles, check the task before interpreting the difficulty. Was the diagram turned the wrong way? Were the two colours hard to distinguish in that room? Did the organiser assume that the guest knew algebraic notation? Reading an unfamiliar symbol and knowing how a bishop travels are two different skills. Removing the symbol may let the player enjoy the same chess idea. Conversely, a former competitor who asks for the complete position should be able to have it. Adaptation means responding to a person rather than assigning a predetermined level to everyone who attends.
+
+## What a stronger test would have to separate
+
+Imagine comparing a chess afternoon with an equally welcoming activity chosen by the participants. If one group met weekly, saw the same friendly tutor and received transport while the other group received only an invitation, several differences would have been introduced at once. A difference in later feelings of inclusion would be interesting but would not single out the rules of chess. If the question is about chess specifically, the comparison must address social contact, attention from the organiser and opportunities to attend. The outcome and the follow-up must also match the question being asked.
+
+For your own club, it is reasonable to set a more immediate aim. Ask whether the people who expressed interest were able to attend, could choose an activity and wanted to return. Ask guests what the organisers should change. Those answers can lead directly to a better room layout, a different time or pieces that are easier to handle. If a family has concerns about a person's memory or day-to-day functioning, a games organiser cannot resolve them from a score sheet. Enjoyment, access and companionship are worthwhile results in their own right and can be described with considerably more confidence than a disease-prevention promise.
+
+One more question for a club report is who never reached the room. A session may delight everyone present while its stairs or transport arrangements prevent other interested people from coming. Asking those people about access helps improve the next invitation and keeps attendance figures from being mistaken for a measure of suitability for everyone.
+
 ## Sources
 
 - Wu, Z., Pandigama, D. H., Wrigglesworth, J. et al. (2023), *Lifestyle Enrichment in Later Life and Its Association With Dementia Risk*, JAMA Network Open, [article](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2807256).

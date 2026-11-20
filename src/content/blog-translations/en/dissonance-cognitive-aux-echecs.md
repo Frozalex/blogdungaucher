@@ -70,6 +70,34 @@ A difference between that account and later analysis does not directly measure d
 
 See also [rationalisation](/en/blog/rationalization-in-chess/) and [defence mechanisms](/en/blog/defense-mechanisms-in-chess/).
 
+## The bishop pair that has already disappeared
+
+Suppose you spend a month studying a pawn sacrifice which gives you the bishop pair on an open board. You have a perfectly sensible reason for choosing it. The bishops can attack targets on both wings, and your games will give you practice in a type of position you enjoy. One Saturday an opponent returns the pawn to exchange one of the bishops. You catch yourself telling a friend that you still have compensation because the gambit always gives you excellent bishops. For the first time in the conversation, count the pieces on the board. You now have one bishop and level material. Where does your evaluation come from?
+
+There might be a good answer. A rook has gained access to an open file, the opposing king has lost a pawn shield or the remaining bishop dominates a knight. There might also be an ordinary equal position in which both players have work to do. Neither conclusion invalidates the month you spent learning to play the original structures. Put the rook on the file you mentioned and ask a friend to protect its first entry square. Does the rook have a second target? Can the defending piece move away with a threat? The question has acquired a board, a move and a possible answer. The original discomfort may still be there, but the analysis can proceed.
+
+Try the position in reverse order. Give another player the diagram after the exchange without naming the opening. Ask for a plan rather than an evaluation in pawns. Someone who has never seen the gambit might immediately aim for a quiet endgame. Another player might find the rook invasion you had in mind. Their answers are interesting because they describe what a fresh pair of eyes can find in the resulting position. Agreement does not prove that your earlier analysis was unbiased. Disagreement does not prove that you were protecting a favourite idea. It identifies a line worth investigating together.
+
+## Four sentences for an annotated scoresheet
+
+Take a moment from one of your own games and finish four sentences: “During the game I saw…”, “I expected…”, “On reflection I think…”, and “I would change my mind if…”. The first sentence records what you remember seeing, the second an anticipation, the third your current judgement and the fourth an observation that could overturn it. Leaving one blank is allowed. Inventing what you saw to make the account read smoothly would defeat the purpose.
+
+In a king and pawn ending you might have seen a possible queen exchange and expected to reach a central entry square first. The next afternoon you discover that the opposing king can arrive a move earlier. What could rescue your original assessment? An unused pawn move that passes the turn, for example, or a different entry square. Count the king moves on the board before settling this question. A concrete observation now has permission to interrupt an attractive account of the game.
+
+Imagine that an engine confirms you had a win but finds a waiting move that you never considered. Which part of your account deserves to survive? The conclusion that there was a win turns out to be correct. The reason you gave for winning may still be wrong. A player who treats the evaluation as a personal verdict loses that distinction. A player who keeps the four sentences can celebrate having reached a good ending and still train the precise skill that was missing.
+
+This also works the other way round. You may have calculated one defence accurately and reached a winning position in that branch, only to miss a better defence at the start. Your calculation was useful. It simply answered a narrower question than you thought. On one side of an index card draw the position and a small mark by the square you expected the king to reach. On the other side, write the unexpected defence and its consequence. Return to the card a week later. Being able to explain both paths is a better measure of what you have learnt than remembering the engine's number.
+
+## When the opening is shared with a teammate
+
+Two friends have prepared an opening together. After a difficult loss, one wants to change lines. The other hears this as a rejection of every evening they spent at the board. Ask what exactly would change. Do they disagree about the third move against every defence, the treatment of a single pawn structure, or just the line to use against next week's opponent? A choice that sounds like a judgement on their entire project may affect only one branch of their notes.
+
+Mark the first position where the alternatives diverge. Suppose there are six common Black replies before that point and only one leads to the disputed diagram. The other five files still serve the players who encounter those positions. There is a current reason to keep them. Past effort tells you how much work went into the files, while the likely future use tells you why you might keep them on hand today. Drawing that small tree makes the conversation about a manageable decision.
+
+Before testing the two continuations, specify what a satisfactory position would look like. You might want your bishop developed with your central pawn defended and the option of exchanging queens. This criterion can be assessed immediately after the opening. Winning the whole game on Saturday would be less informative. A missed fork on move forty has little to say about whether the bishop found a sensible square on move ten. When the testing is over, record why each partner chose a line, including any reason that remains uncertain.
+
+A person who changes openings after two losses may have found a real problem, or may simply dislike seeing those losses in their file. A person who sticks with the line may have corrected an important detail, or may want to protect an old claim. The surface behaviour alone does not tell those stories apart. The positions, decisions and dates on your scoresheet help you say something more modest and more useful. Here is the idea you had when you entered the game, the evidence you have since found, and the position you would now play differently.
+
 ## Sources
 
 - Festinger, L. and Carlsmith, J. M. (1959), “Cognitive Consequences of Forced Compliance”, *Journal of Abnormal and Social Psychology*, 58, 203–210. [Original text](https://psychclassics.yorku.ca/Festinger/).

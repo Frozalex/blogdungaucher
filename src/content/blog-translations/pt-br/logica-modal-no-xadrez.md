@@ -107,6 +107,8 @@ Agora transforme a variante num pequeno problema para dois jogadores. Um escolhe
 
 Um detalhe de vocabulário ajuda na análise de partidas. Na linguagem cotidiana do clube, “era obrigado a trocar as damas” pode significar “as outras continuações perdiam material”. Nos termos das regras, havia outras jogadas legais. Na anotação, escreva qual é a consequência que torna a troca necessária para o seu objetivo. Se o objetivo era conservar o empate, mostre uma continuação que explique por que ele se perde com a alternativa. Assim outra pessoa consegue discordar da avaliação e propor uma linha, sem precisar discutir o significado da palavra “obrigado”. Na próxima análise, sublinhe o lance que muda o conjunto das respostas disponíveis.
 
+Você pode usar duas cores no caderno para tornar a distinção visível. Marque em azul um caminho que leva ao mate e em verde todas as defesas que já examinou. A existência de uma sequência azul responde à pergunta sobre possibilidade. Para sustentar que o ataque é forçado, resta justificar o que aconteceria nos desvios ainda sem marca. Se uma única defesa desfizer a ameaça, preserve o caminho azul na folha. Ele continua sendo um exemplo válido de mate possível.
+
 ## Fontes
 
 - Rendsvig, R., Symons, J., & Wang, Y. (edição de 2025). *Epistemic Logic*. Stanford Encyclopedia of Philosophy. [Texto](https://plato.stanford.edu/entries/logic-epistemic/).

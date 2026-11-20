@@ -107,6 +107,18 @@ Une explication utile reste assez précise pour guider une action et assez ouver
 
 L’[analyse des parties](/fr/blog/analyser-ses-parties/) fournit une démarche pratique ; la [dissonance cognitive](/fr/blog/dissonance-cognitive-aux-echecs/) aborde une hypothèse différente sur l’inconfort. Tu n’as pas besoin de choisir une étiquette avant d’examiner la position.
 
+## La marge d'une partie commentée
+
+Tu prépares une partie pour le bulletin du club. Au quinzième coup, tes Blancs ont sacrifié un pion et ouvert la colonne h. Ton premier brouillon indique : « J'avais prévu de doubler les tours. » C'est une explication élégante, surtout si deux tours sont effectivement entrées plus tard sur cette colonne. Fais une pause avant de publier la phrase. Avais-tu calculé les deux tours pendant la partie, remarqué seulement l'ouverture de la colonne, ou trouvé l'idée après la rencontre ? Les trois histoires peuvent enseigner quelque chose au lecteur, à condition de les attribuer au bon moment.
+
+Si tu ne sais plus, garde une formulation à la mesure de ton souvenir. « Pendant la partie, j'espérais faire entrer au moins une pièce sur h. Après coup, nous avons trouvé un doublement de tours » contient davantage d'informations que la belle première phrase. Elle indique ce que la décision initiale comportait d'incertain et permet aux lecteurs de découvrir le plan amélioré avec toi. Tu peux même donner le coup adverse inattendu qui t'a obligé à revoir l'ordre des tours.
+
+Au club, demande à un partenaire d'annoter le même passage en ignorant le résultat. S'il choisit un tout autre plan que le doublement, invite-le à montrer où il voudrait mettre la première tour. Sa variante peut expliquer pourquoi ton souvenir s'est réorganisé autour du plan qui a réussi dans la partie. Elle pourrait aussi démontrer que tu avais une autre suite parfaitement valable. Une fois les deux versions sur la feuille, elles n'ont plus besoin de se disputer l'étiquette flatteuse de « ce qui était prévu ».
+
+Pour garder la trace de ce travail, trois dates peuvent suffire : la date de la partie, celle du premier commentaire personnel et celle de la révision avec un partenaire ou un moteur. Si un futur lecteur demande à quel moment la ressource noire est apparue, tu sauras retrouver le bon document. Ce système de dates protège également les idées qui étaient bien les tiennes dès le départ. Une amélioration découverte en novembre ne retire pas tout intérêt à ce que tu avais effectivement envisagé en septembre.
+
+Quand tu reliras tes annotations plusieurs mois plus tard, essaye de résoudre la position avant d'en connaître le récit. Les doutes d'origine, correctement datés, peuvent devenir un meilleur exercice que la version réécrite où tout semblait déjà évident.
+
 ## Sources
 
 - Johansson, P., Hall, L., Sikström, S. et Olsson, A. (2005), « Failure to Detect Mismatches Between Intention and Outcome in a Simple Decision Task », *Science*, 310(5745), 116–119. [Texte original déposé par les auteurs](https://www.researchgate.net/publication/7554338_Failure_to_Detect_Mismatches_Between_Intention_and_Outcome_in_a_Simple_Decision_Task), DOI : 10.1126/science.1111709.

@@ -113,6 +113,16 @@ De aanbevolen progressiemethode, aangeraden door meerdere toptrainers, volgt een
 
 Studies tonen aan dat 3 tot 6 maanden regelmatige training met deze oefeningen (30 tot 45 minuten per week) de visualisatie meetbaar verbetert, met name bij tests voor standreconstructie na korte blootstelling.
 
+## Een paard volgen terwijl de rest van het bord verandert
+
+Voor deze oefening heb je alleen de beginstelling en een stukje papier nodig. Speel in gedachten de volgende zetten: wit speelt e4, zwart e5, wit ontwikkelt het paard van g1 naar f3 en zwart het paard van b8 naar c6. Dek het bord af als je de zetten eerst met stukken hebt uitgevoerd. Schrijf vervolgens de twee velden op die de paarden hebben verlaten. Teken de positie van de paarden nog even niet. De lege velden zijn hier net zo belangrijk als de nieuwe standplaatsen. Wie alleen onthoudt waar een stuk heen ging, laat bij een langere berekening soms een denkbeeldige verdediger achter op het oude veld.
+
+Stel jezelf nu drie vragen. Welk wit stuk valt de pion op e5 aan? Welk zwart stuk dekt die pion? En kan de witte loper van f1 in één zet naar b5? Controleer elke vraag afzonderlijk. Het witte paard op f3 valt e5 aan en het zwarte paard op c6 dekt e5. Voor de loper doet de stand van die paarden er weinig toe. Het zijn de lege velden e2, d3 en c4 die de weg naar b5 vrijmaken. Als je de eerste twee vragen gemakkelijk vond en op de derde aarzelde, oefen de volgende keer dan juist met lijnen die door een pionzet opengaan.
+
+Voeg één zet toe: wit speelt de loper naar b5. Stel dat zwart nu a6 speelt. Wijs met een vinger op een leeg bord aan welke witte figuur door die pionzet wordt aangevallen. De pion op a6 valt de loper op b5 aan. Hij valt het paard op f3 niet aan en verandert evenmin iets aan de dekking van e5 door het zwarte paard. Zo kun je na iedere nieuwe zet de stand bijwerken door twee dingen te benoemen: wat veranderde er en welke eerder gevonden relatie geldt nog?
+
+Draai de vraag ten slotte om. Geef een oefenpartner de eindstelling en vraag welke zwarte pion net is verzet. De eindstelling alleen vertelt dat niet met zekerheid. Wie de reeks gehoord heeft, weet dat de pion van a7 kwam. Wie alleen het diagram ziet, heeft extra informatie nodig om de laatste zet te bepalen. Dat is een goede reden om tijdens de oefening apart bij te houden wat je op het bord kunt controleren en wat je uitsluitend uit de volgorde van de zetten weet.
+
 ## Wat visualisatie over expertise onthult
 
 Het onderzoek naar visualisatie bij schaken heeft implicaties die het spel overstijgen.
@@ -136,30 +146,6 @@ Geen magie. Louter expertise gedreven tot een buitengewoon niveau.
 - [Ontdek de kracht van schaken op je geheugen](/fr/blog/echecs-et-memoire/)
 - [Concentratie bij schaken: aandacht trainen als een spier](/fr/blog/echecs-et-concentration/)
 - [Werkgeheugen en schaken: het cognitieve knelpunt](/fr/blog/echecs-memoire-de-travail/)
-
----
-
-## Veelgestelde vragen
-
-### Hoe onthouden blindspelers alle standen?
-
-Niet door veld voor veld te memoriseren. Ervaren spelers coderen standen in 'chunks': groepen stukken met een logische relatie (een typische formatie, een bekende pionstructuur, een aanvalsopstelling). Een grootmeester kan een stand ontleden in 5 tot 7 vertrouwde chunks, elk als één eenheid opgeslagen in het langetermijngeheugen. Bij blindschaak reconstrueert hij de stand niet stuk voor stuk: hij reconstrueert zijn chunks en de relaties daartussen.
-
-### Kun je leren blindschaken?
-
-Ja, met progressieve training. De aanbevolen methode begint met eenvoudige eindspelen (koning en toren tegen alleen koning) blind: de standen zijn eenvoudig en de zetten weinig. Daarna ga je over op complexere eindspelen, daarna tactische problemen blind, en ten slotte complete korte partijen. Veel clubspelers (1400-1800 Elo) kunnen in een paar maanden regelmatige training eenvoudige blindpartijen leren spelen.
-
-### Is blindschaken gevaarlijk voor de geestelijke gezondheid?
-
-Er zijn historische zorgen geweest, met name nadat verschillende kampioenen uit het Victoriaanse tijdperk die intensief blindschaakten psychische problemen kregen. Modern onderzoek bevestigt geen direct causaal verband. Intensieve beoefening van welke veeleisende cognitieve activiteit dan ook kan mentale uitputting bevorderen, maar blindschaken is op zichzelf niet risicovoller dan andere vormen van intensieve training. Zoals elke cognitieve inspanning heeft het baat bij pauzes en variatie.
-
-### Wat is het verschil tussen het schaakgeheugen van experts en beginners?
-
-De studie van Chase en Simon (1973) is helder: geef beide groepen 5 seconden om een stand uit een echte partij te memoriseren, en laat ze die daarna reconstrueren. Experts plaatsen 92% van de stukken correct terug, beginners 20%. Maar bij een **willekeurige** stand (stukken willekeurig geplaatst, niet uit een echte partij) zijn beide groepen vergelijkbaar rond de 30%. Het schaakgeheugen van experts is geen superieur visueel geheugen: het is een bibliotheek van patronen uit echte partijen.
-
-### Hoe verbeter je visualisatie zonder blindschaak?
-
-Meerdere praktische oefeningen: (1) Varianten berekenen zonder stukken aan te raken, elke zet mentaal visualiseren voor je hem speelt. (2) Tactische problemen oplossen zonder naar de stukken te kijken nadat je de stand hebt gelezen (30 seconden naar de stand staren, ogen sluiten, berekenen). (3) Beroemde partijen van buiten naspelen, zet voor zet, met het boek ter controle. (4) Eenvoudige eindspelen blind tegen jezelf spelen. Deze progressieve oefeningen verbeteren de visualisatie zonder het ongemak van volledig blindschaak.
 
 ---
 

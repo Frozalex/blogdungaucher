@@ -222,3 +222,7 @@ Een fase 1 afgerond, en een fundament waarvan de correctheid geen mening is. Voo
 Dit is het goede moment voor een bekentenis: niets van wat je tot nu toe hebt geschreven speelt schaak. Je programma weet wat toegestaan is, niet wat goed is. De rest van de reeks doet niets anders meer dan die tweede vraag beantwoorden, en ze begint met de domste manier om dat te doen.
 
 **Volgend artikel:** een engine die willekeurig speelt. Belachelijk, onmisbaar, en al in staat om een volledige partij te verliezen zonder ooit een illegale zet te spelen.
+
+Een perfecte overeenkomst op één totaal kan twee tegengestelde fouten verbergen. Misschien telt jouw generator een ongeldige rokade mee en slaat hij in dezelfde stand een geldige pionpromotie over. Beide afwijkingen heffen elkaar in de som op. Splits daarom bij een onverwachte uitkomst het totaal per eerste zet uit en vergelijk vervolgens de afwijkende tak een niveau dieper. Bewaar de kleinste stelling waarin het verschil overblijft als leesbaar testgeval. Noteer bij die stelling ook de rokaderechten en het mogelijke en-passantveld: alleen de plaats van de stukken op een diagram is daarvoor onvoldoende informatie.
+
+Voeg het verwachte aantal per eerste zet toe aan de test.

@@ -97,6 +97,10 @@ Só depois introduza uma bifurcação. Volte à posição após 1.e4 d5 e explor
 
 Para acompanhar o progresso, conte quantas vezes precisou reposicionar peças para retomar a variante e anote também o ponto exato de cada pausa. Resolver a mesma sequência mais depressa na segunda tentativa pode refletir familiaridade. Uma posição nova com outra troca de peões mostra se você começou a atualizar a representação com mais consistência. Esse é um progresso identificável dentro da prática do xadrez, sem reivindicar uma medida geral de toda a sua memória.
 
+### Reconstruir a posição pelo caminho inverso
+
+Concluída a sequência da Defesa Escandinava, peça ao colega que recue apenas o último lance sem pôr peças extras no tabuleiro. Para desfazer Dxd5 não basta levar a dama de volta a d8. É preciso repor em d5 o peão branco que ela capturou. Depois, para desfazer exd5, o mesmo peão deve voltar a e4 e o peão preto reaparecer em d5. A tentativa de desfazer a partida oferece uma pergunta particularmente clara sobre cada captura. Qual peça chegou, qual saiu e de onde vinha a peça que permaneceu no tabuleiro?
+
 ## Fontes
 
 - Baddeley, A. (2012). *Working Memory: Theories, Models, and Controversies*. Annual Review of Psychology, 63, 1–29. [Revisão integral](https://jontalle.web.engr.illinois.edu/MISC/ReadingGroup.11/Papers/Baddeley-WorkingMemory.12.pdf).

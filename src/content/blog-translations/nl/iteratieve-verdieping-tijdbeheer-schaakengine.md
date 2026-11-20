@@ -217,3 +217,9 @@ Op diepte 4 onderzoekt de engine "ik neem zijn dame met mijn paard", komt aan he
 Dit is het horizoneffect, en het wordt noch gecorrigeerd door dieper te zoeken, noch door beter te evalueren. Het wordt gecorrigeerd door te weigeren posities te evalueren waar het nog steeds slaat.
 
 **Volgend artikel:** de quiescentiezoektocht, en de zettabellen. De engine houdt op te geloven in cadeaus.
+
+## De klok laten aflopen tussen twee wortelzetten
+
+Gebruik een piepkleine testboom waarin de beste zet pas als laatste wordt onderzocht. Op diepte drie heeft de motor voor alle kandidaten een waarde bepaald. Op diepte vier heeft hij de eerste twee kandidaten verder uitgewerkt wanneer de timer afloopt. Als hij nu blind de hoogste waarde uit de gedeeltelijke vierde ronde teruggeeft, kan hij de beste nog ongeziene zet kwijtraken. Maak daarom in het log duidelijk wat de laatst volledig afgeronde iteratie was en welke gegevens voorlopig waren.
+
+Test dit zonder te wachten op een echte, grillige systeemklok. Laat je oefenprogramma na een vooraf afgesproken aantal knopen een stopverzoek krijgen. Herhaal dat op drie punten: vlak voor een nieuwe iteratie, halverwege de eerste tak en vlak na de laatste wortelzet. De motor moet telkens een legale zet kunnen teruggeven wanneer er een legale zet bestaat. Leg bij het vergelijken ook vast wat je doet als zelfs de eerste laag niet klaar was. Een vooraf gekozen legale fallback kan dan nuttiger zijn dan een lege variant die pas bij verzending naar de schaakinterface een fout veroorzaakt.

@@ -162,6 +162,12 @@ Het middel bestaat er niet in uit deugdzaamheid minder te spelen. Het bestaat er
 
 *Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Het volgende behandelt klassieke conditionering, die onvrijwillige associaties betreft in plaats van gevolgen. Zie ook dopamine en schaken en gewoontevorming bij schaken.*
 
+## Wat beloont de trainer eigenlijk?
+
+Een jeugdtrainer geeft een fiche voor iedere schaakzet die de tegenstander dwingt zijn koning te verplaatsen. Al snel zoeken de kinderen opzettelijk naar schaakjes. In een diagram waar een stille torenzet een vrijpion tegenhoudt, speelt een kind toch schaak en laat de pion doorlopen. Het heeft de aangekondigde opdracht goed begrepen. Alleen kwamen het gewenste gedrag van de trainer en de telbare beloning niet overeen.
+
+Probeer dezelfde les met een andere afspraak. Vraag voor het fiche een korte uitleg over de dreiging van de tegenstander en laat de groep controleren of de gekozen zet die werkelijk opvangt. Nu kan ook een stille zet het gewenste gedrag opleveren. Dit voorbeeld bewijst geen algemene theorie over kinderen. Het laat wel zien waarom een trainer zorgvuldig moet kiezen wat hij direct na een beslissing beloont. Een vriendelijke glimlach na een snelle zet, extra aandacht na een spectaculaire combinatie en het mogen kiezen van het volgende diagram kunnen elk onbedoeld bij de oefening gaan horen. Kijk bij de volgende training wat de groep doet zodra de fiches verdwijnen. Blijft iemand spontaan vragen wat de tegenstander dreigt, dan heb je iets concreters om te bespreken dan het aantal fiches in een doos.
+
 ## Bronnen
 
 - Skinner, B. F. (1938). *The Behavior of Organisms: An Experimental Analysis*. Appleton-Century.

@@ -46,6 +46,34 @@ Se acompanha uma criança, mantenha a possibilidade de descobrir várias ativida
 
 A pesquisa deixa muitas perguntas abertas. Isso não impede estudar seriamente nem jogar por prazer; impede, sobretudo, transformar uma estatística de população em veredito sobre uma pessoa.
 
+## A conversa que muda quando se pergunta o que foi medido
+
+Em um clube de bairro, duas adolescentes chegam ao mesmo rating depois de dois anos de torneios. A primeira aprendeu com o avô quando era pequena, mas só começou a jogar partidas valendo pontos no ano passado. A segunda conheceu as regras em uma oficina e já participou de dezenas de rodadas. Se o treinador contar apenas as horas de aula no clube, as duas parecem ter percorrido distâncias muito diferentes com o mesmo investimento. Se perguntar pela experiência anterior, o quadro muda. O exercício não descobre qual das duas tem mais talento. Ele mostra como uma comparação depende da história que a tabela deixou de registrar.
+
+Até mesmo a palavra hora exige cuidado. Durante uma hora uma pessoa pode analisar sozinha um final que perdeu, testar um plano diferente e comparar o resultado com anotações de um colega. Outra pode acompanhar uma transmissão enquanto prepara o jantar. Ambas passaram tempo em contato com xadrez. O que se aprendeu, o tipo de retorno recebido e o grau de atenção podem ser muito diferentes. Um questionário retrospectivo pede ainda que as pessoas se lembrem de como usavam esse tempo vários anos antes. Portanto, encontrar variação entre jogadores com a mesma estimativa de horas não resolve a questão de onde veio essa variação.
+
+Para um professor, a pergunta que cabe nessa conversa é bastante concreta. Em quais posições cada uma já sabe encontrar um plano, em quais depende de pistas e que tipo de ajuda permite avançar? Duas atletas com números idênticos podem precisar de aulas distintas. Uma pode conhecer as casas críticas de um final de peões e falhar na contagem das trocas que levam até ele. A outra pode calcular a sequência inteira sem perceber que o final restante está perdido. Agrupá-las sob um rótulo de talento ou ausência dele esconde justamente o dado que o professor pode aproveitar.
+
+## Por que a parcela sem explicação continua em aberto
+
+Imagine uma análise fictícia feita só com duas informações por jogador, seu resultado recente e o número de tardes no clube. Mesmo que exista uma associação clara, será fácil encontrar dois frequentadores igualmente assíduos com resultados diferentes. Talvez um tenha jogado adversários mais fortes. Talvez outro já conhecesse o tema da rodada ou estivesse aprendendo notação pela primeira vez. Também podem existir diferenças de evolução ligadas a características individuais que aquelas duas colunas simplesmente não identificam. Chamar toda diferença restante de genética equivale a preencher uma planilha com uma informação que ninguém coletou.
+
+O mesmo raciocínio ajuda a entender por que mudar a população muda a pergunta. Em um grupo de iniciantes, o acesso a aulas pode variar desde nenhuma orientação até acompanhamento semanal. Em uma seleção juvenil todos podem ter recebido anos de treinamento estruturado. Uma comparação feita apenas na seleção descreve diferenças entre pessoas que já passaram por diversas etapas de acesso e permanência. Ela não estima automaticamente o que aconteceria se todas as crianças de um bairro recebessem uma primeira oportunidade de aprender.
+
+Há outra dificuldade quando se procura um único sentido para a relação entre prática e desempenho. Um bom resultado pode trazer convite para uma turma avançada, novos parceiros e apoio para viajar. Esses recursos, por sua vez, ampliam as oportunidades de prática. Uma sequência de acontecimentos que se reforçam não pode ser resumida pela pergunta sobre qual foi o primeiro gene ou a primeira aula. Para uma família, saber de onde vêm transporte, tempo e companhia costuma ser mais útil do que tentar dividir a evolução em porcentagens individuais.
+
+## Um mês de acompanhamento sem teste de potencial
+
+No primeiro encontro, peça ao aluno que explique uma posição antes de mover as peças. Anote a pergunta que ele fez e a resposta que encontrou. Em um final simples, por exemplo, a dúvida pode ser se o rei deve avançar imediatamente ou perder um tempo com um peão. Guarde o diagrama, o lado a jogar e a variante que convenceu o aluno. Não transforme o tempo de resposta em nota de inteligência. Quem está aprendendo a verbalizar os lances pode precisar de uma pausa mesmo quando enxerga a ideia correta.
+
+Na semana seguinte, apresente uma posição parecida em que a troca de um único detalhe mude a resposta. O rei adversário agora alcança uma casa antes, ou o peão usado para perder um tempo já avançou. Peça uma previsão antes de permitir que as peças sejam movidas. Assim você observa se o aluno memorizou o primeiro lance ou entendeu o motivo de sua escolha. Se ele errar, a explicação costuma apontar um exercício melhor do que repetir uma série de posições idênticas.
+
+No terceiro encontro, use uma partida escolhida pelo próprio aluno. Procure nela uma decisão que exija a mesma ideia, ainda que a posição contenha outras peças. Talvez o momento relevante seja anterior ao final, quando ainda dava para escolher qual peão trocar. Termine o mês voltando à primeira anotação. Compare as explicações e pergunte o que hoje parece mais fácil, onde ainda existe dúvida e qual tipo de exercício a pessoa tem vontade de repetir. A resposta pode orientar a próxima aula mesmo que nenhum torneio tenha ocorrido nesse intervalo.
+
+Para conversar com os responsáveis, leve os dois diagramas e as palavras do aluno. Dizer que ele passou a conferir a casa de entrada do rei antes de trocar os últimos peões é uma observação que todos podem verificar. Dizer que alcançou certa fração de seu potencial pressupõe conhecer um limite que a aula jamais mediu. Um retorno específico valoriza o trabalho feito e deixa espaço para mudar de objetivo, reduzir a carga em uma época de provas ou descobrir que a pessoa prefere organizar o torneio da escola a disputar uma categoria de alto rendimento.
+
+Guarde ainda um espaço para a pergunta do aluno. Às vezes aquilo que ele quer entender é por que um amigo recusou uma troca ou por que o professor preferiu um lance aparentemente lento. Dar a essa curiosidade um lugar na aula produz uma informação que uma lista de horas acumuladas dificilmente mostraria.
+
 ## Fontes
 
 - Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). *The Role of Deliberate Practice in the Acquisition of Expert Performance*. Psychological Review, 100, 363–406. [Artigo](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf).

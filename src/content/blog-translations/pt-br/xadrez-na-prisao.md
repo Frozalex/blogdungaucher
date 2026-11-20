@@ -124,6 +124,10 @@ O produto da última oficina também pode ser avaliado com respeito à privacida
 
 Se o objetivo do relatório for defender a continuidade do projeto, inclua também o principal obstáculo. Uma atividade apreciada que só aconteceu em dois dos quatro dias previstos enfrenta um problema prático diferente de uma atividade pontual que ninguém quis repetir. As duas situações pedem decisões distintas sobre materiais, equipe e calendário. É nesse nível que um relato pequeno e honesto pode orientar uma escolha de verdade.
 
+### Quando a lista de presença muda
+
+Numa oficina fictícia de quatro encontros, dez pessoas participam do primeiro e seis chegam ao quarto. Dizer que quatro abandonaram por desinteresse seria acrescentar uma explicação que a lista não traz. Uma pessoa pode ter sido transferida, outra pode ter conflito de horário e outra pode simplesmente preferir uma atividade diferente. Se o motivo não foi comunicado, registre apenas a ausência. Quando descrever as respostas ao questionário final, indique que vieram de participantes presentes naquele encontro. Quem organiza a próxima oficina passa a saber quais experiências conseguiu ouvir e quais ficaram fora do relatório.
+
 ## Fontes
 
 - FIDE e Cook County Sheriff’s Office (2021), *Chess for Freedom program launched*, [apresentação do lançamento](https://chessforfreedom.fide.com/2021/04/13/chess-for-freedom-program-launched/).

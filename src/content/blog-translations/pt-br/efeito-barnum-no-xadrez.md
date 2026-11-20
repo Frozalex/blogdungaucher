@@ -158,6 +158,14 @@ Uma frase que não pode ser falsa não te ensina nada. Uma porcentagem, sim.
 
 *Este artigo faz parte de uma série sobre a psicologia aplicada ao xadrez. Veja também [o efeito Dunning-Kruger no xadrez](/pt-br/blog/efeito-dunning-kruger-no-xadrez/), [o efeito halo no xadrez](/pt-br/blog/efeito-halo-no-xadrez/) e [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/).*
 
+## Troque os nomes em dois relatórios de partida
+
+Escreva uma análise breve para dois jogadores que fizeram escolhas diferentes na mesma posição. Um trocou as damas para chegar a um final favorável; o outro manteve a tensão e ganhou um peão depois de uma defesa imprecisa. Entregue os comentários sem os nomes e peça a um colega que os associe às partidas. O colega consegue identificar quem fez o quê? Se os dois textos só disserem que o jogador tem iniciativa quando se sente confiante, a tarefa será quase impossível.
+
+Na segunda versão, mencione uma decisão que possa ser localizada na planilha. Para o primeiro jogador, descreva a casa de entrada do rei após a troca. Para o segundo, indique a defesa que teria impedido o ganho do peão. Faça o teste de novo. O leitor agora pode concordar ou discordar usando posições concretas. Inclusive pode descobrir que a troca de damas deixava escapar uma vantagem maior; essa correção vale mais para o treinamento que uma descrição elogiosa de seu estilo.
+
+Guarde a primeira versão ao lado da segunda. O contraste permite perceber um detalhe incômodo. O comentário mais agradável de receber pode ser justamente aquele que qualquer pessoa aceitaria como seu. Um relatório que dá trabalho para verificar costuma oferecer uma próxima posição para estudar.
+
 ## Fontes
 
 - Forer, B. R. (1949). The fallacy of personal validation : A classroom demonstration of gullibility. *Journal of Abnormal and Social Psychology*, 44(1), 118–123.

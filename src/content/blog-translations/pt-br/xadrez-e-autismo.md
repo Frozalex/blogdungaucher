@@ -129,4 +129,3 @@ O xadrez pode continuar sendo um lazer escolhido e adaptado. Não substitui os a
 ## Combinar como termina uma rodada
 
 Numa atividade construída para discussão, uma participante gosta da partida, mas não sabe o que acontece quando um dos reis leva mate. A transição pode ser combinada antes: as duas pessoas deixam as peças onde estão, marcam o resultado e escolhem entre rever a última posição ou fazer uma pausa. Quem quiser cumprimentar o adversário pode fazê-lo do jeito combinado com o grupo. Após a primeira rodada, vale perguntar qual dessas etapas precisa ficar mais clara. É um ajuste na rotina da mesa, aberto a qualquer participante que dele se beneficie.
-

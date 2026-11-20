@@ -4,7 +4,7 @@ excerpt: "O valor do xadrez com jogo perfeito a partir da posição inicial cont
 seoTitle: "Zermelo e xadrez: valor teórico e resultado desconhecido"
 seoDescription: "Resultado sob jogo perfeito, regras de término e bases de finais: o que o modelo de Zermelo garante, sem afirmar conhecer o valor da posição inicial."
 frSlug: "paradoxe-de-zermelo"
-faq: [{"question": "O teorema de Zermelo prova que as brancas ganham?", "answer": "Não. Prova que existe uma resposta entre três possibilidades: vitória das brancas, vitória das pretas ou empate. Não diz qual. A posição inicial não está resolvida; uma avaliação de motor não prova seu valor."}, {"question": "Por que isso é chamado de paradoxo?", "answer": "Não é um paradoxo matemático, mas uma separação entre saber que existe um valor sob as regras fixadas e conhecer esse valor a partir da posição inicial. A existência está estabelecida, enquanto o resultado permanece desconhecido."}, {"question": "As bases de finais contradizem Zermelo?", "answer": "Não. Nas posições cobertas por uma base, o resultado é determinado segundo suas regras e métricas; exceções como direitos de roque precisam ser consideradas. As bases oferecem resultados calculados em um subconjunto acessível de posições."}, {"question": "Por que AlphaZero pode vencer Stockfish sem jogar perfeitamente?", "answer": "Nenhum dos dois demonstrou uma estratégia perfeita desde a posição inicial. No match de 2017, Stockfish 8 associa busca alfa-beta e avaliação escrita à mão; AlphaZero associa uma rede aprendida e busca em árvore Monte Carlo. Um resultado melhor em um match não mede a distância de uma estratégia ótima desconhecida."}, {"question": "Essa verdade matemática poderá ser descoberta?", "answer": "A solução exaustiva ultrapassa os meios atuais. Isso não prova que nenhum método futuro possa resolver o jogo. O algoritmo de Grover trata de busca não estruturada: não se pode simplesmente dividir por dois o expoente da árvore minimax do xadrez."}]
+faq: [{"question": "O teorema de Zermelo prova que as brancas ganham?", "answer": "Não. Prova que existe uma resposta entre três possibilidades: vitória das brancas, vitória das pretas ou empate. Não diz qual. A posição inicial não está resolvida; uma avaliação de motor não prova seu valor."}, {"question": "Por que isso é chamado de paradoxo?", "answer": "Não é um paradoxo matemático, mas uma separação entre saber que existe um valor sob as regras fixadas e conhecer esse valor a partir da posição inicial. O paradoxo é epistêmico: conhecemos a existência da resposta, mas seu conteúdo permanece desconhecido."}, {"question": "As bases de finais contradizem Zermelo?", "answer": "Não. Nas posições cobertas por uma base, o resultado é determinado segundo suas regras e métricas; exceções como direitos de roque precisam ser consideradas. As bases oferecem resultados calculados em um subconjunto acessível de posições."}, {"question": "Por que AlphaZero pode vencer Stockfish sem jogar perfeitamente?", "answer": "Nenhum dos dois demonstrou uma estratégia perfeita desde a posição inicial. No match de 2017, Stockfish 8 associa busca alfa-beta e avaliação escrita à mão; AlphaZero associa uma rede aprendida e busca em árvore Monte Carlo. Um resultado melhor em um match não mede a distância de uma estratégia ótima desconhecida."}, {"question": "Essa verdade matemática poderá ser descoberta?", "answer": "A solução exaustiva ultrapassa os meios atuais. Isso não prova que nenhum método futuro possa resolver o jogo. O algoritmo de Grover trata de busca não estruturada: não se pode simplesmente trocar uma estimativa de 10 elevado a 120 por 10 elevado a 60. Uma árvore minimax representa escolhas dos dois jogadores, e não uma lista de soluções independentes."}]
 heroImageAlt: Um labirinto circular escuro com um caminho azul até o centro vazio.
 
 ---
@@ -109,29 +109,6 @@ A contribuição de Zermelo não é uma estratégia para ganhar desde o início.
 
 **Depois da leitura:** lembre uma **frase de humildade matemática** em partidas longas: muitas decisões são aproximações, distintas de uma solução verificada por base de finais. Isso pode ajudar a relativizar a exigência de perfeição.
 
----
-
-## Perguntas frequentes
-
-### O teorema de Zermelo prova que as brancas ganham?
-
-Não. Prova que existe **uma** resposta entre três possíveis: vitória das brancas, vitória das pretas ou empate. Não diz qual. A posição inicial não está resolvida; uma avaliação de motor não prova seu valor.
-
-### Por que isso é chamado de paradoxo?
-
-Matematicamente, não é um paradoxo: é um resultado coerente. O “paradoxo” é **epistêmico**: sabemos que existe um valor sob as regras fixadas, mas o da posição inicial continua desconhecido. Isso não prova que nenhum método futuro possa determiná-lo. É uma separação clara entre *certeza da existência* e *possibilidade de acesso*.
-
-### As bases de finais contradizem Zermelo?
-
-Ao contrário, **confirmam** a determinação em um subconjunto do problema. Nas posições cobertas, o resultado é determinado segundo suas regras e métricas; exceções como direitos de roque precisam ser consideradas. São resultados calculados em um conjunto finito e acessível de posições.
-
-### Por que AlphaZero pode vencer Stockfish sem jogar perfeitamente?
-
-Nenhum demonstrou uma estratégia perfeita desde a posição inicial. Ambos associam busca e avaliação, com **arquiteturas diferentes** no match de 2017: Stockfish 8 usa alfa-beta e avaliação escrita à mão; AlphaZero associa rede aprendida e MCTS. Um resultado melhor no match não mede a distância até uma estratégia ótima desconhecida.
-
-### Essa verdade matemática poderá ser descoberta?
-
-A solução exaustiva ultrapassa os meios atuais. Isso não demonstra que nenhum método futuro possa resolver o jogo. Invocar Grover para trocar diretamente $10^{120}$ por $10^{60}$ é injustificado: uma árvore adversarial não é uma simples lista de soluções para buscar.
 
 ## Fontes
 

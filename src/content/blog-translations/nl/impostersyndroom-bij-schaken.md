@@ -88,4 +88,16 @@ De transformatie van het impostersyndroom gebeurt niet in één dag, maar is mog
 
 **Na het lezen:** schrijf na **drie** partijen voor elke overwinning **één** interne en toewijsbare beslissing op (tijd, plan, tactiek), niet "ik had geluk".
 
+## Een verklaring maken die voor winst én verlies werkt
+
+Neem een recente overwinning die je uit gewoonte met geluk verklaarde. Je tegenstander liet een toren instaan. Kennelijk, zeg je, had iedereen dit punt gekregen. Pak de notatie erbij en zet het bord één zet voor de fout. Welke concrete dreiging stelde je toen? Hoeveel velden moest de tegenstander tegelijk verdedigen en hoeveel tijd had hij om dat te zien? Het kan waar zijn dat de laatste fout onnodig was én dat jouw eerdere zet de taak moeilijk maakte. Als je alleen de laatste zet bekijkt, verdwijnt het aandeel van de aanvaller automatisch uit het verhaal.
+
+Doe daarna iets ongewoons: neem een nederlaag waarin jij op de laatste zet iets weggaf en pas precies dezelfde redenering toe. Als je bij eigen verlies onmiddellijk concludeert dat je weinig kunt en bij andermans verlies dat je toevallig geluk had, gebruik je verschillende verklaringen voor vrijwel hetzelfde patroon. Laat een clubgenoot beide diagrammen zonder namen zien. Vraag eerst welke verdediging lastig te vinden is en pas later wie met welke kleur speelde. Het verschil in jullie verklaringen kan meer zeggen over je gewoonte van beoordelen dan over je algemene speelsterkte.
+
+Soms leidt die oefening tot een minder geruststellende conclusie. Je staat in beide partijen slecht ontwikkeld omdat je drie keer met dezelfde loper speelde. Ook dat is een bruikbare uitslag. Een concrete zwakte kan samengaan met een terechte overwinning of een redelijke toernooiprestatie. Schrijf de ontwikkelingsfout in het trainingsboek en kijk of ze in andere partijen terugkeert. De uitspraak dat je nergens thuishoort geeft veel minder richting aan de oefening van volgende donderdag.
+
+Kies voor je volgende nabespreking een gesprekspartner die bereid is naar bewijs te vragen. Die hoeft niet te vertellen dat je fantastisch bent. Betere vragen zijn welke variant je aan het bord overwoog, welke andere mogelijkheid er was en waar de beoordeling zou veranderen. Als je één van die vragen nog niet kunt beantwoorden, zet je daar een vraagteken bij. Op dat moment ligt er een concreet schaakprobleem tussen twee spelers en hoeft geen van beiden een oordeel uit te spreken over wie een plaats aan tafel verdient.
+
+Er is ook ruimte om na een partij moe te zijn en het gesprek tot morgen te laten liggen. Schrijf dan alleen het zetnummer en de aanleiding voor de twijfel op. Je toekomstige zelf hoeft later niet te raden of die twijfel over een gemiste tactiek ging of over de reactie van een teamgenoot. Juist die twee kunnen na een drukke avond in je herinnering ongemerkt samensmelten. Wanneer je ze uit elkaar trekt, is het vervolgens mogelijk de stelling met je trainer te bespreken en het gesprek over verwachtingen te voeren met degene die ze daadwerkelijk uitsprak. Zo krijgt ieder probleem een eigen plek en verliest één enkele uitslag iets van het gewicht dat je hem eerder gaf.
+
 ---

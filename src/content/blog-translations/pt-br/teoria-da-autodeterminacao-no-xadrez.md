@@ -174,6 +174,8 @@ Um treinador entrega a todos a mesma posição de final e reserva quinze minutos
 
 Para avaliar essa mudança, o treinador pode ouvir também quem preferia a primeira versão. Um iniciante talvez quisesse um objetivo mais claro antes de escolher o lado. Autonomia pode significar poder pedir uma instrução direta. Para aquele grupo, a próxima tentativa poderia oferecer uma posição guiada e uma segunda opcional. O sinal interessante seria o motivo que cada aluno dá para querer voltar à atividade.
 
+Ao terminar, ofereça ao participante a chance de modificar uma condição concreta para o próximo encontro. A escolha entre rever o próprio erro e trazer uma posição favorita pode revelar qual parte do trabalho ele quer assumir.
+
 ## Fontes
 
 - Deci, E. L., & Ryan, R. M. (1985). *Intrinsic Motivation and Self-Determination in Human Behavior*. Plenum.

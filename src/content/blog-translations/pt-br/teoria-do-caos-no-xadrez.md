@@ -47,6 +47,36 @@ Escolha uma sequência cujos recursos e riscos compreenda. Na análise, pergunte
 
 A analogia do caos mantém, assim, seu lugar: expressa uma impressão de fragilidade. Verificar uma combinação continua sendo um trabalho de variantes, regras e cálculo.
 
+## Duas aberturas quase gêmeas para jogar novamente
+
+Aqui estão duas experiências que você pode montar em seu tabuleiro de xadrez. Na primeira, jogue 1. f3 e5 2. g4. Na segunda, jogue 1. f3 e5 2. g3. As pretas jogam em ambas as posições. As peças ocupam as mesmas casas, exceto o peão branco da coluna g. Antes de continuar, tente a mesma saída da dama em ambos os casos e anuncie o que você está esperando. Qual a diferença dessa mudança de uma única casa?
+
+No primeiro tabuleiro, a dama preta sai de d8, passa por e7, f6 e g5, e depois chega em h4. A diagonal para o rei branco passa por g3 e depois por f2. O peão f deixou f2 e o peão g ultrapassou g3. As duas casas estão livres. O rei está em xeque. Dama e bispo ocupam as casas vizinhas na primeira fileira, e os peões em d2 e e2 também limitam a fuga. A dama preta controla f2. Nenhuma peça branca pode capturar a dama ou interpor-se em g3 ou f2. É xeque-mate. Esta conclusão é acessível verificando as respostas legais; não depende de uma apreciação sobre a qualidade do jogo branco.
+
+No segundo tabuleiro, a dama também pode vir em h4, mas o peão branco está justamente em g3. Ele fecha a diagonal e ataca a dama em h4. As brancas podem capturá-la por gxh4. Seria tentador concluir que as brancas estão ganhas desde o início desta segunda variante. Agora você impôs às pretas um lance que perde a dama. A conclusão estabelecida é apenas sobre essa saída da dama. Você mostrou por que um plano funciona em um caso e falha no outro; você não resolveu a segunda posição contra o melhor jogo das pretas.
+
+Este detalhe muda a maneira de anotar uma partida. A frase "uma pequena perturbação inverteu o resultado" escamoteia duas decisões: as brancas escolheram o comprimento do passo de seu peão e, em seguida, as pretas levaram ou não em conta sua nova casa. Você pode dar uma explicação mais instrutiva, indicando a diagonal decisiva e a resposta que a refuta. Um leitor que saiba reconhecer este detalhe não precisará memorizar os quatro primeiros meios-lances.
+
+## Qual a distância entre duas posições?
+
+Faça variar o seu instrumento de medição. Se você contar as peças que mudaram de casa entre as duas posições anteriores, sua resposta é uma. Se você conta as casas cujo conteúdo difere, sua resposta é duas: g3 está vazia em um tabuleiro de xadrez, g4 no outro. Se você contar as diferenças de material, sua resposta é zero. Essas três respostas estão corretas. Elas não medem a mesma propriedade. Antes de afirmar que dois estados estão próximos, é preciso escolher as diferenças que importam para a questão.
+
+Outro desafio em uma folha: você pode fabricar duas posições cujas peças ocupam exatamente as mesmas casas e, no entanto, não oferecem as mesmas decisões? Pense no roque. Um rei que voltou à sua casa original depois de um desvio perdeu seu direito de fazer o roque. Um desenho da posição não conta esse desvio. A história exigida pelas regras faz parte dos dados. De acordo com o problema, a vez de jogar, os direitos de roque e a possibilidade de uma captura en passant podem ser tão importantes quanto a ocupação das casas. Compreende-se por que um programa que comparasse apenas fotografias do tabuleiro confundiria às vezes duas situações distintas.
+
+Tente também o caminho inverso. Jogue 1. Cf3 Cf6 2. g3 g6, em seguida, coloque as peças no lugar e jogue 1. g3 g6 2. Cf3 Cf6. O caminho difere, mas a posição das peças, a vez de jogar, os direitos de roque e as possibilidades imediatas de captura en passant coincidem. Os contadores de meios-lances desde o último movimento de peão diferem: eles importam quando se examinam as regras de empate por ausência de capturas ou de lances de peão. Para estudar o desenvolvimento dos bispos no próximo lance, no entanto, você pode examinar o mesmo diagrama. Portanto, dois caminhos separados podem se unir para uma questão específica. Uma divergência de notação na súmula não significa que as trajetórias se desviam em cada etapa.
+
+## Observar a instabilidade sem criar um “índice de caos”
+
+Suponha que você queira comparar duas maneiras de jogar uma posição tensa. Prepare uma árvore de respostas antes de olhar para uma avaliação. Para cada candidato branco, anote a ameaça que você acha que está criando, uma defesa das pretas que a neutraliza e um lance preto natural que poderia ignorá-la. Se a ameaça funcionar apenas neste último ramo, sua árvore descreve uma aposta sobre a reação adversa. Se ela funciona apesar das duas respostas, você ainda tem que verificar se há uma terceira defesa. Uma lista de lances encontrados à mão não garante a que a análise esteja completa.
+
+Não resuma esta árvore somente pela diferença entre as pontuações mostradas no primeiro e no último lance. Uma mudança de pontuação pode corresponder a um recurso concreto descoberto mais tarde na pesquisa. Outra pode resultar de duas escolhas diferentes do jogador humano. Estas observações não têm o mesmo significado. Para separá-las, primeiro fixe uma sequência e compare o que o motor descobre com orçamentos de cálculo diferentes; em seguida, fixe o orçamento para examinar várias decisões ao mesmo tempo. Mantenha uma variante legível para cada comparação. Se você não pode dizer qual peça se beneficia da mudança, sua análise ainda exige trabalho.
+
+Por fim, dê sua posição a um parceiro com uma única ordem: encontrar o detalhe que levaria você a abandonar seu primeiro candidato. Seu papel não é jogar uma partida inteira. Se ele encontrar uma defesa que você não tinha considerado, volte ao último momento em que seu candidato ainda era relevante. Foi antes de uma troca, antes da abertura de uma coluna, antes de o rei perder uma casa de fuga? É aqui que você pode colocar seu exercício para a semana seguinte. Você sabe exatamente o que você pede ao leitor para ver e como corrigir sua resposta.
+
+No exemplo inicial, cubra o peão da coluna g com uma ficha. O parceiro precisa pedir exatamente uma informação para decidir se Dh4 dá mate. Pedir a casa do peão revela que ele entendeu a geometria da ameaça.
+
+Cubra a coluna g outra vez e peça que o parceiro explique por que a posição da dama sozinha ainda não decide o diagnóstico de mate.
+
 ## Fontes
 
 - Dyatlov, S. (2015), *Chaos in dynamical systems*, curso do MIT, [notas originais](https://math.mit.edu/classes/18.095/2015IAP/lecture9/lect_notes.pdf).

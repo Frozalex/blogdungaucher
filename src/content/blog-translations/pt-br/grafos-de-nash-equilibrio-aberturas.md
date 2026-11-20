@@ -57,6 +57,59 @@ No modelo estritamente de soma zero, os dois jogadores não podem aumentar simul
 
 Para aprofundar: [teoria dos jogos](/pt-br/blog/teoria-dos-jogos-no-xadrez/), [minimax](/pt-br/blog/minimax-no-xadrez/) e [Zermelo](/pt-br/blog/paradoxo-de-zermelo/).
 
+## Uma pequena matriz para entender uma resposta melhor
+
+Vamos construir um modelo pedagógico que não represente nenhuma abertura real. As brancas escolhem um repertório A ou B; as pretas escolhem uma preparação X ou Y. Os seguintes valores são os ganhos fictícios das brancas, sendo os das pretas seus opostos.
+
+| Repertório das brancas  | Preparação X  | Preparação Y |
+| ---  | ---:  | ---: |
+| A  | 1  | -1 |
+| B  | -1  | 1 |
+
+Se as pretas sempre escolherem X, as brancas preferem A. Se as brancas sempre escolherem A, as pretas preferem Y. Cada escolha fixa permite, portanto, uma mudança vantajosa do outro lado: nenhuma casa é um equilíbrio em estratégias puras.
+
+Suponhamos agora que os dois lados sorteiem suas escolhas, dando 50% de chance a cada opção. Para as brancas, A rende em média (1 - 1)/2  = 0, e B também. Escolher outra frequência não pode melhorar a sua esperança enquanto as pretas mantiverem a sua distribuição. O raciocínio simétrico vale para as pretas: este par de misturas constitui um equilíbrio do modelo.
+
+Este cálculo ilustra a definição de [Nash](https://irving.vassar.edu/faculty/gj/FTU/io/literature/Nash51.pdf). Não determina nenhuma frequência ideal para a Siciliana ou Caro-Kann: os ganhos foram inventados para tornar o cálculo controlável. Para uma recomendação real, as opções, preferências e valores escolhidos devem ser justificados.
+
+## Por que essa matriz não é todo o jogo de xadrez
+
+Em uma partida, você vê os lances jogados antes de responder. Uma estratégia abrangente deve, portanto, prever uma conduta para cada história relevante, incluindo aquelas que não ocorrem na sua linha favorita. Reduzir esta estratégia para "jogar 1.e4" perde quase todas as informações.
+
+Essa diferença também explica por que a imprevisibilidade não é suficiente para tornar um lance bom. Em um duelo de informação perfeita analisado por minimax, uma ação inferior não ganha um valor objetivo porque raramente é jogada. Ela pode surpreender um humano, o que pertence a outro modelo, incorporando uma preparação limitada ou erros.
+
+É legítimo estudar esse segundo modelo. Só é preciso anunciar o que se otimiza: resultado contra um adversário conhecido, probabilidade de ganhar quando o empate não é suficiente, carga de memorização, ou desempenho contra uma determinada população. Dois objetivos diferentes podem recomendar repertórios diferentes sem contradição matemática.
+
+## Transposição verificável no tabuleiro
+
+**Exemplo pedagógico.** Compare as sequências 1.Cf3 Cf6 2.Cc3 Cc6 e 1.Cc3 Cc6 2.Cf3 Cf6. As mesmas peças ocupam as mesmas casas, as brancas têm a vez de jogar, nenhum direito de roque mudou e nenhuma captura en passant é possível. O contador desde o último movimento de peão ou a última captura é de quatro meios-lances em ambos os casos. Os seis campos FEN são idênticos; isso não significa que todos os históricos de repetição possíveis sejam intercambiáveis.
+
+Numa árvore, os dois caminhos permanecem distintos. Em um grafo de posições, você pode reuni-los e evitar fazer a mesma análise novamente. Para verificar regras dependentes de repetições, no entanto, é necessário manter as informações relevantes nos caminhos: a identidade do diagrama não substitui todo o histórico.
+
+O interesse prático é imediato. Um repertório organizado apenas como uma lista de sequências torna-se frágil se o adversário inverter dois lances. Um repertório organizado em torno de posições de referência permite que você reconheça que já conhece a estrutura, mesmo que a ordem tenha mudado.
+
+## Popularidade, pontuação e avaliação: três indicadores para ler separadamente
+
+Uma base pode mostrar-lhe que uma variante marca muitos pontos com as brancas. Antes de deduzir uma vantagem, veja quem a joga e contra quem. Uma linha usada pelos favoritos contra jogadores menos fortes pode mostrar uma excelente pontuação sem ser objetivamente superior às suas alternativas. As partidas rápidas e clássicas também não impõem as mesmas restrições.
+
+Uma avaliação do motor traz outra informação: este programa, nesta posição e com esse tempo de cálculo, prefere um lance. Para aprofundar uma novidade, verifique as respostas críticas e a estabilidade da análise ao aumentar o tempo de análise. Uma preferência estável é mais utilizável do que uma variação breve de algumas centésimas; ainda não é uma prova exaustiva do valor inicial do jogo.
+
+A popularidade mede o uso. Pode refletir uma moda, um ganho de preparação, disponibilidade de cursos ou uma preferência estratégica. Nenhum destes indicadores permite, por si só, deduzir os outros dois.
+
+## Transformar o modelo em método de preparação
+
+Escolha uma posição de referência no seu repertório e escreva três coisas. Que plano você gostaria de jogar se o adversário cooperasse? Qual é a resposta adversa que mais incomoda esse plano? Que transição para outro tipo de posição você estaria disposto a aceitar?
+
+Em seguida, analise esta resposta incômoda primeiro. Você passa de uma preparação que confirma suas preferências para uma preparação que enfrenta as melhores objeções disponíveis. É a contribuição útil da linguagem das melhores respostas, mesmo quando você não tem um equilíbrio comprovado.
+
+### Uma classificação que depende do repertório adversário
+
+Imagine que duas aberturas dão os mesmos resultados médios no seu caderno. Ao reler as partidas, você descobre que usou a primeira principalmente contra adversários que trocam as damas cedo e a segunda contra jogadores que procuram roques em alas opostas. Sua média mistura então a escolha das aberturas e a escolha dos adversários. Para esclarecer sua próxima rodada, separe as respostas que esse adversário realmente joga das que as regras lhe permitem. Mesmo com observações perfeitas sobre seu repertório passado, você teria identificado um hábito, não demonstrado que ele não ganharia nada jogando de outra forma.
+
+Experimente mudar apenas um valor da matriz e refazer as contas. Se a preparação X passar a render dois pontos às brancas quando elas escolhem A, sorteios iguais já darão médias diferentes a A e B. A frequência calculada dependia dos ganhos escolhidos.
+
+Um colega pode conferir a mudança calculando as duas linhas sem conhecer sua resposta. Peça que identifique quem escolhe a linha e quem escolhe a coluna antes de interpretar o sinal do ganho.
+
 ## Fontes
 
 - Nash, J. (1951). *Non-Cooperative Games*. Annals of Mathematics, 54(2), 286–295. [Artigo](https://irving.vassar.edu/faculty/gj/FTU/io/literature/Nash51.pdf).

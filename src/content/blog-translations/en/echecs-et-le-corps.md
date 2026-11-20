@@ -59,6 +59,34 @@ You do not need to copy a champion’s fitness programme. The value of activity 
 
 Further reading: [managing the clock](/en/blog/chess-time-management/) and [tournament stress](/en/blog/chess-tournament-stress/).
 
+## Put a clock beside each measurement
+
+Picture a player travelling across town for a tournament. They walk briskly from the station, climb stairs to the playing hall, spend four hours at the board, analyse on their feet and make the return journey. At home a watch displays a daily total. An interview reports that total under a headline about the energy cost of chess. Which hours did the device include? Even if its estimate of the whole day were exact, the display alone could not tell you what fraction came from calculation at the board, what fraction came from walking and what fraction the body would have used during an ordinary day.
+
+Make three entries on a sheet of paper: total for the entire day, total during the round and extra expenditure during the round compared with an appropriate reference activity. Each entry requires a different measurement. If an article gives a convincing estimate for the third, it has not necessarily measured the first two. Equally, putting a thermometer or a heart-rate monitor beside the board does not directly fill the extra-energy column. A device can measure its own signal accurately while leaving the quantity in the headline undetermined. The missing step is the relationship between the measured signal and the quantity the writer claims to know.
+
+Try the arithmetic with made-up units rather than calories. Suppose an imaginary instrument counted twelve units during a particular interval and nine units during an equally long reference interval. The difference is three units. If you added all twelve to an existing daily estimate that already included the reference nine, you would count that background twice. If the intervals had different lengths, even the subtraction would require another step. These numbers are deliberately unrelated to real energy use. They illustrate a bookkeeping error that cannot be cured by choosing a more impressive tournament as the example.
+
+## A controlled comparison has a narrower job than a tournament diary
+
+Troubat and colleagues studied twenty male chess players using measurements including heart rate and respiratory variables. This allows an investigation of physiological changes associated with the task in the people and conditions studied. It does not by itself establish the total daily energy needs of a child learning the moves, a grandmaster preparing for a match and a club volunteer setting up tables. Those are different populations and different intervals. The study is more interesting when read as an attempt to measure particular responses carefully than when treated as a machine that converts hours of chess into a universal calorie claim.
+
+Ask what two conditions you would like to compare. Sitting quietly in a familiar room, sitting in competition with a clock running and standing at a demonstration board while talking are three distinct activities. If you want to know about mental pressure, make the comparison as similar as possible in posture and physical movement. If you want to describe the real demands of organising a whole tournament day, the journeys and time on your feet are part of the story. The choice of comparison changes what counts as relevant evidence. It also explains why two accurate descriptions of different tournament days might sound quite unlike one another.
+
+## Record what actually made the day difficult
+
+A practical diary can begin with surprisingly mundane events. Where was the playing room? Were the pairings posted in another building? Did a late finish remove the time you had planned for a meal or a break? When did you have to make the longest series of difficult decisions? Put your sensations in a separate column from those events. “Felt worn out after the rook ending” records something real about your experience. It does not say how many calories the ending cost or establish why you felt that way. Keeping the columns separate makes it easier to choose an action that is genuinely available.
+
+For example, if the tight connection to the hall is the recurring problem, changing the route or choosing an earlier departure gives you a result you can check directly. Did you arrive with time to settle at your board? If your practical problem is losing track of the finishing time during evening rounds, arrange your return journey with a late game in mind. The outcome to record is whether you had a workable journey home. Neither change requires you to estimate the brain's energy use from the score of a single game.
+
+## How to check a spectacular claim before passing it on
+
+Look for the original unit and the original denominator. Is the number per person, per hour, per round or per day? Was it measured directly, estimated by an algorithm or repeated from an interview? Did it refer to a particular player under unusual conditions? If the report gives only a daily total, can you identify where the author's estimate of the chess component came from? If all you have is an observation that heart rate rose, write that narrower statement down. A correctly described physiological response can be interesting even when the proposed estimate of energy is unavailable.
+
+Finally ask what would change your mind. A repeatable comparison with a specified reference activity would supply evidence relevant to the additional cost of play. A well-described series of whole-day observations would answer a different question about tournaments as lived events. A winning player's story might tell you how tiring that one match felt. Choosing the right source for the question lets you take fatigue seriously while keeping your account of the body grounded in what somebody actually measured.
+
+As a quick check, underline every claim that still holds if the word calories is removed from the account. Arriving flustered, noticing a quicker pulse and struggling to sustain attention can all survive that edit. Each observation deserves the sort of measurement relevant to it.
+
 ## Sources
 
 - Troubat, N., Fargeas-Gluck, M.-A., Tulppo, M., & Dugué, B. (2009). *The stress of chess players as a model to study the effects of psychological stimuli on physiological responses: an example of substrate oxidation and heart rate variability in man*. European Journal of Applied Physiology, 105, 343–349. [Article](https://gwern.net/doc/psychology/chess/2009-troubat.pdf).

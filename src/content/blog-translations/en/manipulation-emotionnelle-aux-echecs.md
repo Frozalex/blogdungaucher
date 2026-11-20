@@ -55,6 +55,38 @@ After the game, distinguish the incident from your decisions. A real disturbance
 
 Stories about hypnotic powers or diagnoses from afar add little to this approach. You can defend your playing conditions by relying on facts and the arbiter.
 
+## Three conversations at the same tournament table
+
+A draw offer, an unwelcome remark and a request for an arbiter can arise within a minute. They do not all belong in a conversation with your opponent. One is a choice for the players within the event regulations, one concerns the conditions of play and one is a request for official assistance. Treating them as a single debate about personality can leave the practical matters unresolved. Consider three versions of a scene at an imaginary tournament.
+
+Black has just exchanged queens and offers a draw. White has an active rook and a weak pawn to defend. To decide whether to continue, White can ask questions about the ending. Can the rook attack an enemy pawn while still defending its own? Can the king take over the defensive task in time? The offer means that Black is prepared to share the point now. It answers neither of those questions about the position. Black could be in a hurry, uneasy about a variation, or satisfied with the result for the team. White has no direct access to any of those reasons.
+
+In a second version Black repeats the request while White is thinking and starts commenting on White's clock. The ending can still be analysed once the room is quiet. The new incident will not be settled by finding a better rook move. When speaking to the arbiter, White might say, “After I declined, my opponent spoke to me about the result again during my thinking time and then commented on the clock. I am finding that distracting.” The account identifies a behaviour, its repetition and its practical effect. It leaves the arbiter free to assess the situation without first having to determine whether Black privately intended to intimidate anyone.
+
+In the third version, the noise is coming from a clock at a neighbouring table. The player at that table may not even have noticed its signal. Leaning over and accusing the neighbour of gamesmanship might disturb several games. Describing the approximate source of the sound offers a way to check a material problem. White can experience the same degree of annoyance in all three scenes. That feeling does not determine whom White should address or what information the other person needs.
+
+## Reporting a disturbance in a second language
+
+At an international event, or simply a multilingual local club, players may hesitate to call an arbiter because they do not know the vocabulary. A little preparation before the round can help. Locate the arbitration desk and find out how the organisers ask players to attract attention. If you do not often use the tournament language, learn how to ask for the arbiter and how to say you need help. The first sentence can bring the right person over. There will then be time to formulate the next one.
+
+Put the events in the order in which they occurred. Whose turn was it when the remark was made? Was it repeated after you asked for quiet? Was the clock running? If you do not know the exact number of repetitions, say so. A short account of something you are sure about is more useful than an elaborate story with details filled in later. Indicate when you are giving the general meaning of a sentence rather than quoting the precise words. If a spectator also witnessed the incident, that person can describe what they saw from their own seat. Your accounts may differ without anyone needing to rewrite a memory to make them match.
+
+The response is not predetermined. The arbiter may want to hear from both players, inspect the conditions or clarify a detail. You cannot decide how the event is classified on the arbiter's behalf. You can make the request easier to understand. If you later explain what happened to your captain or a parent, keep the same distinction between the behaviour you reported, how you felt and the action actually taken. In particular, the final result of the game does not retrospectively establish whether there was or was not a distraction. A player who wins can still have a legitimate question about the playing conditions.
+
+## Recovering the board after an interruption
+
+Two partners can practise returning to a position without trying to imitate unpleasant behaviour. Set up an unfamiliar position and choose colours, then agree on a neutral interruption. For instance, stop the analysis to fetch a demonstration board so a third person can join the session. When you return, let the player to move reconstruct the position aloud. Which piece moved last? Which line opened? Which immediate threat should be checked before continuing with the previous plan?
+
+For the first attempt, allow the partner to repeat the last move. On the second occasion give only the arrival square. The exercise aims to discover the smallest piece of information you need to start thinking about the correct board again. Some players remember the pawn structure but forget an exchange; others remember all the pieces but have the wrong side to move. The right prompt depends on what was lost. This is a training activity during a private analysis session. A tournament opponent has no role as a partner supplying hints about the position.
+
+You can take the exercise a step further by finishing the training game and then making two separate reports. In the first, describe only the chess decision. Could your partner set up and play the key position from your account? In the second, describe only the source of the interruption. Could a club organiser understand the problem without knowing your rating or who won? If the answers are yes, you have produced material for two people with different tasks. A coach can work on the ending while an organiser can consider how to improve the room for the next round.
+
+It may be uncomfortable to leave part of the story unresolved. Perhaps you never learn why the other player kept looking over or whether a remark was meant to provoke you. A useful report can remain incomplete in just that way. Knowing the order of events, their effect and which parts you could verify is often sufficient to seek assistance or rebuild your analysis of the game. Guessing at another person's motives may add a dramatic ending without improving either task.
+
+When the disagreement concerns a rule, record the name of the event and the particular regulations in effect that day. In a later discussion somebody may recall a different convention from an online platform or another tournament. Having the appropriate reference lets everyone return to the conditions that actually applied at your table. A precise question with the event named is more likely to help the next club member who encounters a similar situation.
+
+A teammate who asks what to do can then start with the right event rules, the circumstances of the offer and the location of the arbiter. Those details will usually travel better than an uncheckable theory about what either player wanted the other to feel.
+
 ## Sources
 
-- FIDE (2023), *FIDE Laws of Chess*, rules 6.11, 9.1, 11.5 and 12.9, International Chess Federation. [Official text](https://handbook.fide.com/chapter/e012023).
+- FIDE (2023), *FIDE Laws of Chess*, rules 6.11, 9.1, 11.5 and 12.9, International Chess Federation. [Official text](https://handbook.fide.com/chapter/E012023).

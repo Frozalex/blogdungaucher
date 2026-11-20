@@ -19,7 +19,7 @@ faq:
     answer: >-
       Omdat in een nulsomspel $\min(a,b) = -\max(-a,-b)$. Negamax benut deze symmetrie om
       <strong>één enkele recursieve functie</strong> te gebruiken in plaats van twee. Het is puur een
-      codervereenvoudiging, zonder algoritmische wijziging. Nagenoeg alle moderne engines (Stockfish,
+      codevereenvoudiging, zonder algoritmische wijziging. Nagenoeg alle moderne engines (Stockfish,
       Komodo, Leela Chess Zero) gebruiken negamax + alfa-bèta.
   - question: "Verandert alfa-bèta-snoei het resultaat van minimax?"
     answer: >-
@@ -149,30 +149,6 @@ Het verschil tussen een gemiddelde speler en een grootmeester is niet alleen de 
 Het trainen van deze twee aspecten staat centraal in de ontwikkeling van een speler: het positionele gevoel verrijken om de evaluatie te verbeteren, en het instinct voor "kandidaatzetten" aanscherpen om de snoei te verbeteren. Minimax is de formele beschrijving van dit proces.
 
 **Na het lezen:** stel bij een tactisch probleem een **vaste diepte** in (bijv. drie halfzetten) voordat je de oplossing bekijkt: je kalibreert je interne minimax.
-
----
-
-## Veelgestelde vragen
-
-### Produceert minimax altijd de beste zet?
-
-Ja, **als de zoekactie tot eindstellingen reikt** (mat of pat). Bij eindige diepte met heuristische evaluatiefunctie produceert minimax de optimale zet *volgens de gebruikte evaluatie en diepte*. Dat is waarom een engine met 3500 Elo een mens verslaat: zijn evaluatiefunctie + diepte liggen dichter bij de waarheid dan die van een mens, niet omdat hij "perfect" berekent.
-
-### Waarom spreekt men van "negamax" in plaats van "minimax" in de code?
-
-Omdat in een nulsomspel $\min(a,b) = -\max(-a,-b)$. Negamax benut deze symmetrie om **één enkele recursieve functie** te gebruiken in plaats van twee. Het is puur een codevereenvoudiging, zonder algoritmische wijziging. Nagenoeg alle moderne engines (Stockfish, Komodo, Leela Chess Zero) gebruiken negamax + alfa-bèta.
-
-### Verandert alfa-bèta-snoei het resultaat van minimax?
-
-Nee, **nooit**. Dat is de fundamentele eigenschap: alfa-bèta produceert precies dezelfde zet als zuivere minimax, maar met veel minder verkende knopen. De snoeikracht hangt af van de **zettenorde**: als je de beste zet als eerste test, snoei je massief; als je de slechtste als eerste test, snoei je nauwelijks. Daarom investeren engines zoveel in zettenordening (killer moves, geschiedenis van goede zetten).
-
-### Waarom verlaat AlphaZero minimax?
-
-Niet echt: het behoudt een boomgebaseerde zoekopdracht (MCTS), maar vervangt de uitputtende verkenning van alfa-bèta door een **probabilistische verkenning, gestuurd** door een neuraal netwerk. Het voordeel: in stellingen waar de klassieke evaluatiefunctie het moeilijk heeft (langetermijnoffers, subtiel positioneel spel) geeft het neurale netwerk een nauwkeuriger schatting. Het nadeel: dat netwerk moet worden getraind op miljoenen partijen, wat aanzienlijke hardwareresources vereist.
-
-### Voert mijn brein werkelijk minimax uit bij het berekenen?
-
-Bij benadering wel. Je voert een boomgebaseerde zoekactie uit met een zeer lage vertakkingsfactor (3-5 kandidaatzetten in plaats van 35), een zeer beperkte diepte (3-8 halfzetten) en een intuïtieve evaluatiefunctie (positioneel gevoel). Je gebruikt ook zeer krachtige snoei-heuristieken: je **verwerpt** de meeste zetten op het eerste gezicht zonder ze te berekenen. Het verschil met een engine is niet kwalitatief, maar kwantitatief.
 
 ---
 

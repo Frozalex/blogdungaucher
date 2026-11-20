@@ -108,6 +108,8 @@ Agora acrescente, apenas em B, uma defesa das pretas que produz menos três. A e
 
 Se um empate bastar para ganhar o torneio, a decisão prática pode depender do relógio e da dificuldade de execução. Para testar essa pergunta diferente, você teria de alterar a definição de resultado no modelo. Trocar uma avaliação numérica pela sua preferência pessoal depois de ver a resposta muda o problema no meio do cálculo.
 
+Anote os valores ao lado de cada resposta adversária. Isso permite recuperar qual escolha efetivamente limita o resultado em cada ramo.
+
 ## Fontes
 
 - Russell, S., & Norvig, P. (sem data, capítulo on-line). *Adversarial Search*. Artificial Intelligence: A Modern Approach. [Capítulo](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).

@@ -57,6 +57,54 @@ A experiência talvez torne algumas situações mais familiares. Não garante au
 
 Para continuar: [a resiliência após uma derrota](/pt-br/blog/xadrez-e-resiliencia/), [a concentração](/pt-br/blog/xadrez-e-concentracao/) e [o flow](/pt-br/blog/flow-no-xadrez/).
 
+## Separar o que acontece, o que você deduz e o que você faz
+
+Uma aceleração do coração é uma sensação. “Vou perder” é uma interpretação. Jogar imediatamente uma troca de damas é uma decisão. Estes três elementos podem seguir-se rapidamente, mas distingui-los permite voltar à posição: a troca é boa por uma razão enxadrística ou serve apenas para aliviar um desconforto?
+
+Exemplo fictício: você enfrenta um adversário melhor classificado. Você imagina que o final será menos estressante e troca as damas sem comparar as estruturas. Uma vez que a tensão diminui, você descobre que o seu rei está preso e que os peões adversários estão avançando. O problema não é querer te tranquilizar. É por ter deixado esse desejo substituir a comparação das posições.
+
+A questão técnica permanece acessível: após a troca, qual peça ganha atividade, quais peões se tornam fracos e quem tem o plano mais simples? Você pode responder de forma imperfeita e, no entanto, encontrar um trabalho concreto. Esperar a calma absoluta antes de pensar pode, pelo contrário, acrescentar uma condição impossível de garantir.
+
+## O que uma meta-análise não diz sobre o seu próximo lance
+
+A síntese de Shields e seus colegas reúne experiências que medem diferentes funções executivas após um estresse agudo. As tarefas, os momentos de medição e os participantes variam. Uma diferença média entre as condições não significa que cada pessoa perde a mesma capacidade ou que qualquer tensão é desfavorável.
+
+A sensação também não permite reconstruir uma dosagem hormonal. Mesmo que os mecanismos fisiológicos sejam estudados, sua súmula não mede cortisol ou atividade cerebral. Para interpretar um erro, veja também a dificuldade, o tempo e o conhecimento da posição.
+
+Essa precisão protege uma decisão útil: você pode adaptar sua organização sem procurar uma explicação biológica para cada hesitação. Os conselhos que se seguem são propostas de preparação e de método.
+
+## Uma rotina deve ser simplificada quando o tempo diminui
+
+Com muito tempo, você pode formular a ameaça, comparar vários candidatos e procurar uma defesa incômoda. Em zeitnot, recitar uma longa lista pode consumir o tempo necessário para jogar. Treine uma versão curta: último lance do adversário, xeques possíveis, segurança da peça que você está movendo.
+
+O objetivo não é verificar perfeitamente toda a posição em cada turno. É manter um ponto de entrada quando a sua atenção volta para o ranking. Uma rotina não substitui o cálculo: ela indica por onde começar.
+
+Para testar a rotina, dispute partidas de treino em um ritmo que realmente permita pensar. Depois de cada partida, observe um momento em que você a usou e outro em que ela era muito longa ou inútil. Ajuste a rotina antes do torneio. Um método que leva você a monitorar seu estresse a cada segundo pode se tornar uma distração.
+
+## Preparar o imprevisto sem controlar tudo
+
+Uma rodada pode começar atrasada, um adversário pode jogar uma abertura inesperada e uma boa posição pode se tornar complicada. Uma preparação realista não elimina esses eventos. Ela prevê algumas decisões ordinárias: onde esperar, como encontrar o horário, a quem fazer uma pergunta de regulamento, quando comer.
+
+Você também pode repetir uma situação fictícia no treinamento: começar em uma posição desconhecida ou com menos tempo do que o habitual e depois analisar o método usado. Isso não reproduz exatamente a pressão de um torneio; é uma maneira de tornar certas decisões mais familiares sem prometer imunidade ao estresse.
+
+Se surgir um desconforto físico significativo, não o reduza automaticamente ao torneio. A pesquisa sobre o estresse não permite diagnosticar remotamente um sintoma. Quando a ansiedade se torna duradoura, faz com que você evite atividades importantes ou afeta outras áreas da sua vida, um profissional pode ajudar a entender a situação.
+
+## Rever o torneio com duas colunas
+
+Em uma coluna, anote sua experiência: tensão, pensamentos sobre o resultado, cansaço. Na outra, observe os fatos de xadrez: candidatos, tempo usado, defesa esquecida, decisão correta. Esta separação às vezes revela que uma rodada de muita ansiedade contém boas escolhas, enquanto uma rodada confortável contém uma grande negligência.
+
+Em seguida, escolha uma modificação concreta: preparar a viagem, rever uma estrutura, limitar as análises tardias ou encurtar a rotina. Mudar uma coisa torna mais fácil de observar. O progresso procurado é a capacidade de trabalhar na posição apesar de uma tensão possível, sem a obrigação de sentir a serenidade em cada rodada.
+
+## O primeiro lance depois da má surpresa
+
+Suponha que você tenha preparado uma linha precisa com as brancas antes da rodada. No terceiro lance, seu adversário troca um cavalo que você esperava ver em outra casa. A surpresa tem um efeito muito concreto: os lances que você tinha planejado dependiam de uma peça que acabou de sair do tabuleiro. Você pode usar esse momento como um retorno ao jogo presente. O que a troca abriu? Com que peça você pode recapturar? Quais casas deixaram de ser defendidas? Você obtém o que pensar, mesmo que a sensação desagradável ainda esteja lá.
+
+No clube, organize uma repetição desta situação. Peça a um parceiro para escolher um desvio legal em uma abertura que você acha que conhece bem. Em seguida, jogue cinco lances de cada lado em uma cadência confortável. No final, cada um responde a uma pergunta diferente. O seu parceiro indica o primeiro momento em que percebeu uma ameaça concreta. Você indica o primeiro momento em que encontrou uma decisão que você entendia. Compare as duas posições no tabuleiro. Você pode ter encontrado um plano consistente dois lances antes de se sentir tranquilo novamente. Essa diferença ensina que é possível continuar a tomar decisões úteis enquanto o torneio ainda não recuperou o seu aspecto familiar.
+
+### O adversário já fez um lance enquanto você pensava no resultado
+
+Reconstrua uma posição da sua última rodada e entregue-a ao parceiro. Enquanto você explica por que a classificação o preocupava, o parceiro joga um lance legal e anota qual peça mudou de função. Ao voltar a olhar o tabuleiro, indique a origem e a chegada dessa peça, uma ameaça criada e uma possibilidade que desapareceu. Pode acontecer de o lance ser simplesmente uma retirada que deixou uma coluna livre. Nesse caso, inventar uma ameaça para satisfazer o exercício também é um erro. Compare o que vocês escreveram. O objetivo observável desta atividade é conseguir descrever a nova posição mesmo quando você ainda se sente desconfortável com a lembrança do torneio.
+
 ## Fontes
 
 - Shields, G. S., Sazma, M. A., & Yonelinas, A. P. (2016). *The effects of acute stress on core executive functions: A meta-analysis and comparison with cortisol*. Neuroscience & Biobehavioral Reviews, 68, 651–668. [Artigo](https://www.grantsshields.com/wp-content/uploads/2016/08/Stress_and_EF_meta-analysis.pdf).

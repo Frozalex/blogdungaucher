@@ -60,6 +60,32 @@ Before resuming previous commitments, describe what you want to change. For exam
 
 You may also decide to continue your break. Loving a game does not oblige you to play it without interruption.
 
+## The hours that do not appear on your chess profile
+
+Suppose a player agrees to one club league match a fortnight. On paper that is two games in an ordinary month, and each game is an activity the player enjoys. Each match also entails coordinating a lift, leaving home before lunch, waiting for the last teammate to finish, and finding food after the journey home. On Monday the player has an early shift. The hours displayed on the chess clock account for only one part of the commitment. A training log showing two enjoyable games may coexist with a calendar containing two weekends in which nothing else fitted.
+
+To explore your own circumstances, look at a week that has actually happened. Write down the activities you chose at the time, the commitments necessary to do them and the ones you accepted for fear of letting somebody down. Some can belong to more than one group. Think about what had to move to make the schedule possible. A class you wanted to attend? Dinner with a friend? A morning you had hoped to keep free? The point of this exercise is to give the discussion a set of named commitments. It cannot produce a medical score.
+
+Put one comparison on the table. You may enjoy an unhurried Wednesday evening analysing at the club and dread the league journey every other Sunday. The fact that you enjoy one activity makes it especially important to identify the other precisely. An indiscriminate resolution to quit chess for a fixed number of weeks might remove the activity you wanted to keep without making it easier to renegotiate the autumn fixtures. Conversely, a wish for a complete break deserves to be heard even when someone can offer an apparently easier schedule.
+
+## What being the reserve actually means
+
+Imagine trying to tell a team captain about that distinction. “I need a break” gives an honest signal but leaves open which fixtures need another player. Try a message with enough practical detail for both of you: “Please plan the next three away rounds without me. I would still like to drop in on Wednesdays when I feel like it. I'll be in touch before the next entry deadline.” The captain now knows when to find a replacement and when to reopen the conversation. You have identified a change which can be tried and revised.
+
+The captain may offer to list you as a reserve. Find out what the offer means. Would you have to stay near your phone every Saturday night? Could you decline a last-minute call on Sunday morning? Being a reserve may demand less play and still leave every weekend unavailable for other plans. A specific question about notice can uncover a mismatch that both parties might otherwise mistake for lack of goodwill. If an arrangement works, set a date to discuss it after you have actually lived with it.
+
+For a player who wants to stop entering rated events while staying in touch with teammates, there are several ways to keep the social part on better terms. You could visit the club after the competitive session, bring a problem you found interesting, or meet a teammate somewhere without a board. None needs to become a replacement obligation. If suggesting a single visit becomes a promise to organise the entire Wednesday programme, something important about the original agreement has been lost.
+
+## The difference between enjoying one game and owing yourself another
+
+Take two possible endings to an evening online. In the first, you have agreed to play an old friend one more game because you rarely meet. In the second, you are trying to get back to the rating displayed when you logged in. Both can result in pressing the same button. They produce very different answers to the question, “What would make it possible to stop?” In the first case the end of the agreed game is a natural stopping point. In the second, the condition may move away again with every loss.
+
+A small practical test is to choose a stopping condition before opening the site. That might mean a time of day or a number of games because another part of your evening matters to you. Afterwards, notice what happened when the condition arrived. Did a friend make a request you were glad to accept? Did a visible rating change make it difficult to close the tab? Did a tournament format itself require another game? These are different obstacles. A harsher version of the same time limit will not necessarily address all three.
+
+Do the same for a possible return to competition. Identify an observable condition that would make one event workable, such as a nearby venue, a lighter week afterwards or the option to arrange your own transport home. Try one event only if you actually want to. A friendly game which ends in defeat may give you a perfectly good answer about the arrangement: you came home when you intended, enjoyed talking to a teammate and still had time for Sunday dinner. Checking your rating alone would miss all of that information.
+
+The reverse can happen too. You might win all your games and discover that the travel and expectations still cost more than you want to spend. That outcome gives you a concrete reason to change the agreement again. The club can discuss fixtures, transport and availability. Persistent distress that extends beyond chess deserves room to be discussed with a suitable professional. Neither task requires winning a comeback game to demonstrate that the previous difficulties were real.
+
 ## Sources
 
 - World Health Organization (2019). *Burn-out an occupational phenomenon: International Classification of Diseases*. WHO. [Definition and scope](https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases).

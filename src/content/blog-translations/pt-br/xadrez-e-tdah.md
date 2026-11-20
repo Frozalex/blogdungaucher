@@ -105,6 +105,10 @@ Em outra mesa, dois alunos preferem manter o tabuleiro durante toda a explicaç�
 
 Depois da atividade, experimente perguntar “Em qual parte foi mais fácil voltar ao jogo?” e deixar que a pessoa aponte a casa ou o cartão usado. Isso oferece uma maneira concreta de explicar uma preferência. Guarde a resposta com as sugestões sobre a organização da aula e pergunte novamente se o formato ou o grupo mudar.
 
+### Dois tipos de lembrete na mesma mesa
+
+Um participante interrompe o exercício para pegar água. Ao voltar, sabe que precisava escolher entre dois lances, mas não lembra qual era a pergunta. O instrutor pode mostrar uma ficha escrita antes do intervalo com a frase “qual torre pode chegar à coluna aberta?”. Outra possibilidade é apontar para uma das torres e anunciar o lance correto. Apenas a primeira opção devolve o objetivo e deixa a escolha em aberto. Pergunte depois qual apoio ele preferiu e se quer preparar a próxima ficha por conta própria. A resposta vale para aquele participante naquela tarefa. Para avaliar a organização da oficina, observe se ele conseguiu retomar a atividade que escolheu e se a ficha poderia ficar mais clara.
+
 ## Fontes e limites
 
 - **NIMH**, [Attention-Deficit/Hyperactivity Disorder: What You Need to Know](https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know): informação institucional sobre sintomas, avaliação e cuidados.

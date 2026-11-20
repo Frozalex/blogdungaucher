@@ -101,6 +101,10 @@ Para compartilhar a experiência com outra associação, registre quem pôde par
 
 Se houver interesse em pesquisar uma mudança duradoura, formule uma pergunta que possa receber uma resposta negativa. Quantas pessoas voltaram por escolha quando havia outra atividade no mesmo horário? O que acharam difícil no jogo? Houve participantes para quem a proposta perdeu o sentido com o passar das semanas? Respostas variadas ajudam a melhorar uma oficina e delimitam a interpretação do relatório. A pessoa continua sendo a melhor interlocutora para dizer o que encontrou naquela mesa, inclusive quando o benefício procurado era só ter companhia durante a tarde.
 
+### Escolher o que contar ao grupo
+
+Imagine que uma participante tenha gostado do encontro porque, durante uma hora, pôde conversar com alguém enquanto organizava os peões. O instrutor quer publicar no mural que o grupo melhorou a concentração. Antes disso, pode perguntar que parte da atividade ela gostaria de repetir. Talvez ela queira reencontrar a mesma parceira, mesmo que o próximo encontro use um jogo diferente. Talvez queira, especificamente, aprender o movimento dos cavalos. As duas respostas levam a decisões de organização diferentes. Nenhuma exige que a participante descreva sintomas nem que revele por que veio. Se ela autorizar o registro de sua sugestão, anote o pedido com suas próprias palavras. Um mural que informa “na próxima semana haverá tempo para jogar em duplas habituais” transmite uma mudança concreta que o grupo pode conferir.
+
 ## Fontes
 
 - Demily, C., Cavézian, C., Desmurget, M., Berquand-Merle, M., Chambon, V. e Franck, N. (2009). *The game of chess enhances cognitive abilities in schizophrenia*. Schizophrenia Research, 107(1), 112–113. [Registro](https://pubmed.ncbi.nlm.nih.gov/18995990/) e [texto dos autores consultado](https://www.researchgate.net/publication/23460530_The_game_of_chess_enhances_cognitive_abilities_in_schizophrenia), DOI: 10.1016/j.schres.2008.09.024.

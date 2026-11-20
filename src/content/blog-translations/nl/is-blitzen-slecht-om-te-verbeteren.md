@@ -133,6 +133,22 @@ Als het is omdat je 20 minuten hebt en wat wilt spelen, is dat gezond. Als het i
 
 Zelfreflectie op je gewoontes telt zwaarder dan de absolute regel. Blitz is geen kwaad op zich. Het is een middel dat versterkt wat je ermee doet.
 
+## Een speelsessie met een controle de volgende dag
+
+Neem een avond waarop je normaal vijf blitzpartijen achter elkaar speelt. Spreek vooraf één klein onderwerp af, bijvoorbeeld het tijdig opmerken van ongedekte stukken zodra het centrum opengaat. Een algemene eis als ‘vandaag geen blunders’ helpt weinig om na afloop te bepalen wat er gebeurde. Verzamel bij de vijf partijen de eerste positie waarin een pionruil het uitzicht van een loper of toren veranderde. Er kan ook een partij tussen zitten waarin zo'n moment ontbreekt. Laat die in dat geval gewoon buiten de oefening en noteer achteraf waarom.
+
+Zet na de sessie de gevonden posities op een bord zonder klok. Schrijf bij elke positie op of je het nieuwe doelwit tijdens het spelen daadwerkelijk zag of pas achteraf. Het onderscheid is belangrijk. Iemand kan een dreiging onder tijdsdruk correct zien en vervolgens te langzaam antwoorden. Een ander kan snel een veilige zet uitvoeren zonder de dreiging te hebben opgemerkt. Op het uitslagenformulier levert het allebei soms hetzelfde halve punt op. Voor de volgende training zouden de twee spelers verschillende opdrachten moeten krijgen.
+
+De volgende dag kies je een onbekende positie met een vergelijkbare lijnopening. Neem rustig de tijd en vraag een vriend om een geloofwaardig verdedigend antwoord. Als je het patroon nu herkent, heb je een aanwijzing dat iets van de blitzavond is blijven hangen. Als je alleen het diagram uit de gespeelde partij herkent, is dat ook informatie. Dan loont het om met een tweede voorbeeld te oefenen waarin de aanval van de andere kant van het bord komt. Een kleine proef als deze bepaalt niet welk weekrooster voor alle spelers ideaal is. Ze laat je beoordelen wat jij uit juist die vijf partijen hebt gehaald.
+
+## Een klok zonder increment veroorzaakt andere beslissingen
+
+Vergelijk op een ander moment twee korte sessies, een met een kleine toevoeging per zet en een zonder. Doe dit liefst op verschillende avonden wanneer je even uitgerust bent. Houd bij hoe vaak je in een technisch eenvoudig eindspel nog genoeg tijd had om de beoogde manoeuvre uit te voeren. Bij een toevoeging kun je in sommige stellingen tijd stabiliseren door zinvolle korte zetten te doen. Zonder toevoeging kost ook een vanzelfsprekende zet je een deel van de resterende voorraad. Een speler die onder de ene afspraak geregeld doorgaat in een slechte stelling kan onder de andere afspraak een heel ander praktisch besluit nemen.
+
+Kijk na beide avonden welke beslissingen je wilt meenemen naar je gewone clubwedstrijden. Sneller zien wanneer je koning schaak staat komt in elke partij van pas. Zo snel mogelijk klikken in een volkomen verloren stand kan je in een bepaald online tempo punten opleveren zonder dat je daar op zaterdag veel mee wint. Het nut van de vorm volgt dus uit de taak die jij wilde oefenen en uit de tijdsregels waarbinnen je die taak werkelijk uitvoerde.
+
+Geef jezelf tot slot een duidelijke eindstreep. Zodra de gekozen partijen zijn gespeeld leg je één diagram met een vraag klaar voor morgen. De zin om revanche te nemen mag er dan nog zijn. Je hebt alleen vooraf al besloten welk resultaat van de avond je wilt bewaren wanneer je het venster sluit.
+
 ## Samengevat
 
 Blitz is niet slecht om vooruit te gaan, *het onevenwichtige gebruik* ervan wel. De topspelers spelen er enorm veel en gaan vooruit. Het verschil is dat ze parallel studeren, regelmatig klassiek spelen en hun blitzpartijen analyseren.

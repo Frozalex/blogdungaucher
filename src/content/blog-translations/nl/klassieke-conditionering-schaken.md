@@ -161,6 +161,8 @@ Wat haar wel ontmantelt is herhaalde blootstelling zonder onaangename gevolgen. 
 
 *Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Zie ook operante conditionering bij schaken, omgaan met stress in toernooien en angst om te verliezen bij schaken.*
 
+Maak onderscheid tussen wat je hoort en wat erop volgt. Een klok die piept kan je aan een eerder tijdnoodverlies herinneren. Een tegenstander die dezelfde dag vlak voor jouw zet ook een stuk aanvalt, voegt een echte dreiging toe. In beide gevallen kijk je wellicht abrupt op. Alleen bij de tweede gebeurtenis ligt er iets nieuws op het bord. Schrijf bij een tijdnoodfragment daarom zowel het signaal als de stelling op voordat je een verklaring kiest.
+
 ## Bronnen
 
 - Pavlov, I. P. (1927). *Conditioned Reflexes: An Investigation of the Physiological Activity of the Cerebral Cortex*. Oxford University Press.

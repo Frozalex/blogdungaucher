@@ -99,6 +99,20 @@ An engine game can offer an idea to check: activity versus material, space or ki
 
 Comparing versions and conditions also encourages caution when reading evaluations. Match strength and explaining a move to a human player are different questions.
 
+## Read the scoreboard as a match, then as a set of cases
+
+Try a small calculation with the 2018 figures. Give AlphaZero a full point for each win and half a point for each draw. Its 155 wins and 839 draws yield 574.5 points out of a possible thousand. Now suppose you were to remove all the draws and ask what fraction of the remaining games AlphaZero won. The answer would be much larger. Both calculations use exactly the same games, yet they answer different questions. The first describes a match score under normal chess scoring; the second describes only games in which somebody won. Quoting the latter as the program's ordinary chance of winning would be a substantial mistake. There were 155 outright wins in the full sample.
+
+The same selection problem occurs in a more interesting form when you play through the most memorable games. If an editor gives you five striking wins involving sacrifices, you have an excellent collection for a lesson on compensation. You still have no sample from which to estimate how often the program sacrifices material. For that, define what counts as a sacrifice, inspect wins, draws and losses, record opportunities where the program declined to sacrifice, and keep the version and test conditions fixed. Sacrificing in five of five selected illustrations and sacrificing in five of five genuine opportunities are entirely different observations.
+
+## Turn a famous engine move into your own analysis
+
+Take a published game and stop one move before the annotation that interests you. Hide the players' names and the result. Write down the material balance and the squares to which the least active piece could plausibly move. Next give each side one useful move it would like to play if allowed a free turn. If your explanation of a sacrifice is “White gains time”, say whose intended move is delayed and which piece benefits from that delay. You now have something more precise than an impression of attacking style.
+
+Make two versions of your worksheet. On the first, let the defender accept the offered material; on the second, let the defender decline it with a developing or simplifying move. Keep a separate diagram for each branch. A sacrifice whose compensation depends on the opponent capturing immediately is a very different teaching example from one that strengthens the attack either way. When you finally check with an engine, look for the first move where its analysis diverges from your written branch. Do not quietly replace your original defence with the engine's and then claim that the outcome was obvious.
+
+Finish the exercise by changing one feature in a legal test position, perhaps moving a defending piece to cover a flight square. Ask whether your *reason* for the sacrifice still holds. This final diagram is something you constructed, so keep it separate from the historical game. You can learn a perfectly sound lesson about an open file or an overloaded defender while remaining uncertain about the best move in the original position.
+
 ## Sources
 
 - Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Text](https://arxiv.org/html/1712.01815v1).

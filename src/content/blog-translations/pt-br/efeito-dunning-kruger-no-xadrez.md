@@ -49,6 +49,40 @@ Você também pode pedir a alguém que comente uma partida explicando suas obje�
 
 A [análise das partidas](/pt-br/blog/analisar-suas-partidas/) e a [racionalização](/pt-br/blog/racionalizacao-no-xadrez/) dão continuidade a esse trabalho. Se seu problema é sobretudo não se sentir legítimo apesar dos resultados, leia o artigo sobre [síndrome do impostor](/pt-br/blog/sindrome-do-impostor-no-xadrez/). As duas questões podem coexistir; não permitem dar um diagnóstico à distância.
 
+## Um exemplo numérico do efeito de separar jogadores em grupos
+
+Um treinador prepara um teste de quatro posições e, em seguida, pede a quatro alunos para prever seu resultado. Todos respondem que conseguirão duas posições em quatro. Seus resultados reais são um, dois, dois e três. O aluno que acertou só uma superestimou o resultado de um exercício. Quem acertou três subestimou o próprio desempenho. Se apresentarmos apenas os dois extremos, o leitor pode acreditar que existem dois tipos de jogadores, um seguro demais, o outro muito modesto. Os alunos tinham exatamente a mesma previsão.
+
+Este exemplo fabricado não refuta nenhum estudo. Ele mostra o que uma operação específica produz: classificar as pessoas de acordo com o resultado que também servirá para o cálculo de seu erro. Em nosso grupo, a previsão comum está mecanicamente acima do resultado mais fraco e abaixo do mais forte. Seria necessário observar mais casos para explicar por que os alunos anunciaram dois, conhecer sua familiaridade com o formato e saber se seu julgamento se tornaria mais preciso com outra série de posições.
+
+Faça variar uma condição. Cada aluno agora dá um intervalo de um a três exercícios resolvidos. As quatro previsões contêm o resultado. Devemos concluir que todos se conhecem perfeitamente? Nem por isso. O intervalo abrange três dos cinco pontos possíveis. Um intervalo muito amplo permite acertar facilmente, mas pouco informa o treinador que deve escolher a dificuldade da próxima oficina. Uma estimativa tem, portanto, pelo menos duas propriedades úteis: sua proximidade com o resultado e o grau de precisão que ela pretende alcançar.
+
+## A escala é tão importante quanto a resposta
+
+Imagine dois membros de um clube dizendo cada um: "Estou na primeira metade." Um se compara aos jogadores que vêm na quarta-feira. O outro pensa em todos os membros do clube, incluindo crianças iniciantes. Uma mesma posição em uma escala verbal pode designar duas colocações muito diferentes. Antes de interpretar a diferença entre uma estimativa e um lugar real, pergunte qual população cada um tinha em mente. Sexto em dezoito participantes presentes não é o sexto de uma lista de oitenta membros.
+
+O mesmo acontece quando você quer comparar sua classificação de blitz online com sua experiência em torneios clássicos. O número aparece em ambos os casos ao lado do seu nome, mas os adversários, o ritmo e o período de observação mudam. Uma diferença numérica pode simplesmente responder a duas perguntas diferentes. Para examinar sua capacidade de estimar seu desempenho, comece fixando a mesma questão em ambos os lados do cálculo. Quantos pontos você acha que vai marcar nessas quatro partidas lentas contra esses quatro parceiros? Depois de jogar as partidas, você pode comparar sua previsão com a pontuação obtida, tendo em mente o tamanho minúsculo da amostra.
+
+Outro jogador poderia responder honestamente "entre um ponto e três pontos". Você pode perguntar que circunstâncias fariam o jogador escolher o meio do intervalo. Se ele explica que conhece mal os finais de torres que aparecem em sua abertura, ele identificou uma incerteza específica. Se ele espera para ver se ele estará em forma no último dia, ele fala de uma condição de jogo. Nenhuma dessas informações se reduz à palavra “sobreconfiança”. Elas não exigem o mesmo treinamento.
+
+## Calibre suas previsões durante a análise
+
+A previsão mais útil para o jogador é às vezes muito pequena. Retome uma posição onde você considerou um peão impossível de tomar. Esconda a continuação e escreva uma afirmação que pode ser verificada: "Se eu capturar com o bispo, o adversário tem um xeque que ganha minha dama." Verifique apenas este ramo. Esse xeque existe? O rei tem uma casa que ainda protege a dama? Uma troca prévia muda a diagonal? Você substitui um prognóstico global sobre o seu valor por uma previsão que se verifica em três casas do tabuleiro.
+
+Depois de algumas sessões, mantenha também os casos em que sua previsão estava correta. Se você registrar apenas os erros, uma lista de oito previsões erradas dirá que você conhece oito exemplos interessantes, mas não lhe dará a frequência com que seus julgamentos falham. Para estimar essa frequência em um exercício limitado, decida antecipadamente manter as dez próximas posições propostas pelo seu parceiro. Anote separadamente as previsões em que se sentiu seguro e aquelas em que hesitou. Se você quase nunca usou uma das categorias, aguarde para ter mais casos antes de fazer uma comparação.
+
+O resultado pode ser assimétrico. Você pode muito bem identificar os finais onde você sabe o que você faz e se superestimar especialmente em posições táticas de reis expostos. A correção relevante será então testar uma resposta forçada adicional nessas posições, ou dedicar uma sessão a estudar xeques intermediários. Dizer a si mesmo para "tornar-se humilde" não diz nada sobre a peça que você precisará verificar no próximo lance.
+
+Para encerrar a oficina, repita as quatro posições iniciais com variantes ligeiramente modificadas. Defina de antemão o critério de acerto: encontrar apenas o primeiro lance ou demonstrar a defesa adversa até o fim. Se a escala mudar entre os dois testes, uma progressão aparente pode vir de uma mudança na correção. Um jogador que achou a ideia certa e esqueceu a última jogada precisa saber se seu erro foi sobre a escolha do candidato ou a verificação da última posição.
+
+Essas precauções também tornam os comentários de um treinador mais úteis. Você pode pedir que ele anote separadamente o diagnóstico inicial e a justificativa dada no tabuleiro. Um bom diagnóstico com uma variante impossível não vale uma demonstração correta. Uma má estimativa da posição seguida de uma refutação precisa marca, pelo contrário, uma descoberta interessante. O caderno mantém essas diferenças, embora a pontuação bruta dos quatro exercícios permaneça absolutamente idêntica.
+
+Um parceiro pode então retomar suas folhas com os nomes ocultos. Pergunte a ele qual habilidade ele treinaria para cada autor. Se ele recomendar exercícios separados para duas pessoas com a mesma pontuação, você terá recuperado uma informação que nem a classificação no grupo nem a confiança declarada isoladamente poderiam fornecer.
+
+Se dois palpites falharam pelo mesmo motivo, registre a defesa omitida em cada diagrama. Uma previsão específica permite verificar, no treino seguinte, se você aprendeu a reconhecer aquele recurso.
+
+Uma forma de separar confiança e desempenho é guardar a previsão antes da resposta do adversário. Depois de ver a defesa correta, é fácil lembrar que você já desconfiava dela. Uma frase datada, como “a torre não tem xeque na oitava fileira”, preserva a hipótese original. Se houver um xeque, confira qual peça permitia bloquear a linha e por que você a ignorou. Esse registro continua informativo mesmo quando você acerta a avaliação final por outro motivo.
+
 ## Fontes
 
 - Heck, P. R., Benjamin, D. J., Simons, D. J. e Chabris, C. F. (2025), “Overconfidence Persists Despite Years of Accurate, Precise, Public, and Continuous Feedback: Two Studies of Tournament Chess Players”, *Psychological Science*, 36(9), 732–745. [Resumo dos autores](https://discovery.geisinger.org/esploro/outputs/journalArticle/Overconfidence-Persists-Despite-Years-of-Accurate/9921404409631), DOI: 10.1177/09567976251360747.

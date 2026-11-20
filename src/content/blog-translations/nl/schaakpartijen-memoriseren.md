@@ -119,6 +119,14 @@ Dat is waarom iconische partijen (Fischer-Spasski 1972, Kasparov-Topalov 1999, M
 
 Wanneer je studeert, zoek de partijen die je emotioneel aanspreken. Niet degene die objectief "de beste" zijn. Degene die je doen zeggen "wauw" of "dat is wreed". Je brein onthoudt ze beter.
 
+Wil je nagaan wat je van een klassieker onthield? Neem vijf losse diagrammen uit die partij en leg ze in de juiste volgorde zonder de zettenlijst. Vraag daarna bij één verwisseld paar welk stuk in de jongste stelling al van het bord verdwenen was. Dat geeft je een ander soort houvast dan de volgende zet hardop reciteren. Als twee diagrammen hetzelfde materiaal bevatten, zoek je naar iets onomkeerbaars zoals een pionzet. Zo oefen je het herkennen van de geschiedenis die nog in een stelling zichtbaar is.
+
+## Een diagram dat ook volgende maand nog iets zegt
+
+Kies uit een partij één stelling waarin je de zet van de winnaar aanvankelijk vreemd vond. Bewaar het diagram zonder pijltjes, evaluatie of naam van de speler. Schrijf op de achterkant van het kaartje twee dingen: welke zet je zelf overwoog en welk antwoord van de tegenstander je daarbij over het hoofd zag. Zo kun je later precies aanwijzen waarom je van gedachten veranderde. Alleen de gespeelde zet opschrijven maakt de kaart veel minder bruikbaar. Dan kun je het juiste vakje raden zonder de stelling te begrijpen.
+
+Neem bijvoorbeeld een diagram waarin een toren op een open lijn kan komen, terwijl de tegenstander dreigt een ongedekte loper te slaan. Wie bij het weerzien onmiddellijk de torenzet noemt, kan alsnog de dreiging gemist hebben. Vraag daarom eerst wat zwart zou spelen als wit een zet mocht overslaan. Zoek daarna een manier om de loper te redden en tegelijk de open lijn te betwisten. Leg je antwoord naast je oude aantekening. Herinnerde je je de torenzet dankzij het diagram, of zag je ditmaal ook zelf wat de tegenstander van plan was? Dat onderscheid geeft richting aan de volgende partij die je uitzoekt.
+
 ## Samenvatting
 
 Schaakpartijen memoriseren in de letterlijke zin is nutteloos en onmogelijk op grote schaal. Wat je moet nastreven is de verrijking van je patroonwoordenschat (chunks), via diepgaande studie van enkele partijen per week, met gespreide herhaling.
@@ -126,26 +134,6 @@ Schaakpartijen memoriseren in de letterlijke zin is nutteloos en onmogelijk op g
 10 diepgaand geanalyseerde partijen zijn meer waard dan 100 oppervlakkig doorgebladerde. Aandachtsdiepte creëert duurzame geheugensporen; oppervlakkig doorbladeren creëert een begripsilllusie die in enkele dagen verdampt.
 
 Het werkelijke voordeel van de studie van klassieke partijen is niet het letterlijke geheugen. Het is de geleidelijke verbreding van je structurenbibliotheek, wat over de jaren heen het verschil maakt tussen een speler die de stelling *ziet* en een speler die haar *begrijpt*.
-
----
-
-## Veelgestelde vragen
-
-### Moet je partijen uit het hoofd leren?
-
-Nee, en het is onmogelijk buiten een paar tientallen. Wat je moet doen is partijen diepgaand bestuderen: de kritieke beslissingen begrijpen, de pionnenstructuren, de typische plannen. Je brein behoudt patronen (chunks) die overdraagbaar zijn naar toekomstige partijen.
-
-### Hoeveel partijen moet je per week bestuderen?
-
-Beter 2-3 diepgaand geanalyseerde partijen (elk 1 uur) dan 20 partijen die in 5 minuten worden doorbladerd. De aandachtsdichtheid is wat procedureel geheugen consolideert.
-
-### Hoe onthoud je de partijen die je hebt bestudeerd?
-
-Drie beproefde technieken: (1) de partij naspelen zonder te kijken, (2) de 3-5 kritieke beslissingen samenvatten, (3) de partij 1 week later en 1 maand later herzien (gespreide herhaling).
-
-### Memoriseren grootmeesters duizenden partijen?
-
-Eerder duizenden stellingen en patronen, geen exacte zettenreeksen. Studies (De Groot, Chase & Simon) tonen aan dat hun voordeel ligt in de snelle herkenning van structuren, niet in letterlijk zettengeheugen.
 
 ---
 

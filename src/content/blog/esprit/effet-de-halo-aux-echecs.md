@@ -104,6 +104,19 @@ Quand tu reçois une annotation enthousiaste, regarde les variantes qui la souti
 
 Cette habitude rejoint le travail sur le [biais de confirmation](/fr/blog/biais-de-confirmation-aux-echecs/). Cherche les réponses adverses avant de conclure, puis accepte de réviser ton premier jugement.
 
+## Le diagramme signé et le diagramme sans nom
+
+Dans un club, prépare deux copies d'un même diagramme tiré d'une de tes parties d'entraînement. Présente la première comme « une position à évaluer ». Sur la deuxième, annonce simplement que le joueur des Blancs a remporté le tournoi. Choisis une partie où c'est effectivement vrai et précise à la fin de l'atelier qu'il s'agissait de deux copies. Aucune invention sur le niveau ou le palmarès d'une personne réelle n'est nécessaire. L'expérience s'intéresse à l'effet que peut avoir un renseignement vrai mais peu pertinent sur une tâche précise.
+
+Les deux groupes travaillent séparément. Demande à chacun d'indiquer la menace noire avant de proposer le meilleur coup blanc. S'ils donnent exactement la même réponse, garde ce résultat : l'information supplémentaire n'a pas produit de différence visible dans cette séance. S'ils divergent, demande-leur le premier détail qui les a conduits à leur réponse. Le premier groupe a-t-il vu une fourchette ? Le second a-t-il supposé que le vainqueur connaissait une compensation secrète ? Il est possible qu'un seul groupe ait trouvé un coup simplement parce qu'une personne plus à l'aise avec les fourchettes en faisait partie. L'atelier ne prouve pas quelle explication est la bonne.
+
+Pour rendre l'échange instructif, teste les variantes au lieu d'organiser un vote. Une capture que les membres n'osaient pas envisager contre le vainqueur peut être très bonne ou complètement fausse. Dans les deux cas, il faudra la jouer. Si le camp fort dispose d'un échec intermédiaire, indique la case précise et le matériel restant. Si la compensation annoncée ne se manifeste pas après plusieurs réponses plausibles, note « compensation à démontrer ». Le nom du vainqueur n'est jamais une pièce supplémentaire sur l'échiquier.
+
+Renverse maintenant le dispositif pour un second diagramme. Demande à un joueur moins expérimenté de proposer une défense et à un maître de proposer la même défense, puis présente uniquement les coups. L'instructeur peut demander : « Qu'exigeriez-vous comme preuve si vous ignoriez l'auteur ? » Une variante courte montrant que la pièce est protégée peut suffire ; une revendication de gain forcé nécessitera davantage. Applique cette exigence à la première proposition comme à la seconde.
+
+Au terme de l'exercice, chacun peut écrire une règle personnelle de lecture des annotations. Par exemple, quand une note affirme qu'une attaque est évidente, remettre les pièces sur le diagramme précédent et chercher le meilleur échec défensif avant de poursuivre. Le prestige de l'auteur reste pertinent pour choisir un livre ou décider du temps à lui consacrer. Une fois devant une position où un coup vérifiable est en jeu, on peut lui accorder ce temps tout en gardant le droit d'essayer la défense qui dérange son commentaire. C'est souvent ainsi qu'une belle partie devient une véritable leçon.
+
+Pour conserver cette indépendance en relisant la partie, glisse un papier sur la ligne du verdict et laisse visible le diagramme. Écris ta défense au crayon avant de lire celle de l'auteur. Tu pourras ensuite apprécier la force de sa réponse avec une question qui t'appartient.
 
 ## Sources
 

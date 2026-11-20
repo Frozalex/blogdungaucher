@@ -157,6 +157,14 @@ Tijd is op zichzelf niets waard. Hij is alleen waard wat hij koopt aan beslissin
 
 *Dit artikel bouwt voort op ons artikel over [de psychologie van overtuiging bij schaken](/nl/blog/psychologie-van-overtuiging-bij-schaken/). Zie ook [wederkerigheid bij schaken](/nl/blog/wederkerigheid-bij-schaken/) en [sociale bewijskracht bij schaken](/nl/blog/sociale-bewijskracht-bij-schaken/).*
 
+## Is een zeldzame opening haar voorbereiding waard?
+
+Stel dat je een weinig gespeelde zijvariant ontdekt die bij verrassing vaak een snelle aanval lijkt op te leveren. De database geeft vier voorbeelden. Naast de hoofdvariant met duizenden partijen ogen die vier als een geheime verzameling waar je als eerste toegang toe krijgt. Kijk eerst waar de vier partijen vandaan komen. Betreffen ze één speler in hetzelfde weekend? Zijn de tegenstanders van vergelijkbare sterkte? Ontbreken er partijen omdat de beginvolgorde met een andere openingsnaam werd opgeslagen? Schaarse registratie en werkelijk zeldzaam spel zijn verschillende dingen.
+
+Laat een clubgenoot die geen van de vier partijen kent de verdediging spelen. Geef hem rustig de tijd en vertel niet welke zetten je hoopt uit te lokken. Misschien vindt hij meteen een rustige ontwikkeling die in je bestand ontbreekt. Dat maakt de zijvariant niet waardeloos. Je hebt wel ontdekt dat je de verrassing en het inhoudelijke voordeel afzonderlijk moet begroten. Een goede openingskaart bevat daarom ruimte voor de meest nuchtere tegenzet, juist wanneer die zet in de vier geselecteerde partijen nooit voorkwam.
+
+Kijk vervolgens naar de prijs van de voorbereiding. Een zeldzame variant waarin je herkenbare pionnenstructuren krijgt kan heel bruikbaar zijn. Een even zeldzame variant waarin je vijftien onbegrijpelijke zetten moet onthouden vergt veel onderhoud voor een kans die zich misschien het hele seizoen niet voordoet. Dan is schaarste een reden om de tijd voorzichtig te verdelen, niet automatisch een reden om de vondst voorrang te geven.
+
 ## Bronnen
 
 - Worchel, S., Lee, J., & Adewole, A. (1975). Effects of supply and demand on ratings of object value. *Journal of Personality and Social Psychology*, 32(5), 906–914.

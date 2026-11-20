@@ -131,6 +131,14 @@ Só que as dificuldades práticas de uma linha não são as mesmas conforme o n�
 
 **E a versão mais sutil: o silêncio.** A ausência de uma linha num repertório corrente funciona como prova social negativa. Conclui-se que ela é ruim, quando na maior parte das vezes ela está simplesmente ausente, o que não é a mesma coisa.
 
+## Um banco fictício em que a maioria engana
+
+Separe quarenta partidas inventadas em duas opções de abertura. Nos vinte jogos com a opção A, as brancas marcaram doze pontos. Nos vinte com B, marcaram onze. À primeira vista A parece ser a escolha mais segura. Agora desmonte cada grupo segundo a força dos adversários. Com A houve dezesseis partidas contra o grupo mais fraco, com onze pontos, e quatro contra o grupo mais forte, com um ponto. Com B houve quatro partidas contra o grupo mais fraco, com três pontos, e dezesseis contra o grupo mais forte, com oito pontos. Some os resultados para conferir: os totais continuam em doze e onze.
+
+Dentro do primeiro grupo, onze em dezesseis para A rendem menos que três em quatro para B. Dentro do segundo, um em quatro para A rende menos que oito em dezesseis para B. Em outras palavras, B fez uma proporção superior de pontos em cada comparação separada, apesar de ficar atrás no quadro geral. A apareceu mais vezes justamente contra o grupo em que pontuar era mais fácil. O exemplo não demonstra que B é objetivamente melhor. Demonstra que, para interpretar uma porcentagem, importa saber quais partidas entraram na conta.
+
+Na sua preparação, dê funções diferentes à frequência e à análise. A frequência ajuda a estimar quais respostas merecem uma sessão de estudo porque você deve encontrá-las bastante. Depois, selecione uma partida em que o rival tenha saído cedo da linha principal. Tente explicar o plano que sobrou para as duas cores. Se o plano continua claro quando a sequência decorada termina, você aprendeu algo que a tabela de popularidade sozinha não entregava.
+
 ## Quatro práticas
 
 **Leia a segunda coluna.** É o gesto central, e leva um segundo. Diante de um banco, olhe a pontuação antes da frequência. Você inverte assim a ordem espontânea de leitura, o que basta para neutralizar quase todo o mecanismo.

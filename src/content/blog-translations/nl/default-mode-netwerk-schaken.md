@@ -18,7 +18,7 @@ faq:
   - question: "Kan meditatie het DMN bij schaken verbeteren?"
     answer: "Ja. Studies van Brewer et al. (2011) tonen aan dat ervaren mediteerders een sterkere deactivatie van het DMN vertonen tijdens gefocuste taken, en sneller terugkeren naar een niet-ruminatieve rusttoestand na inspanning. Voor schakers is dit een directe training van de schakelflexibiliteit tussen focusmodus en rust."
   - question: "Wat is het verschil tussen mind-wandering en ruminatie?"
-    answer: "Mind-wandering is mentaal afdwalen in het algemeen, met neutrale of positieve inhoud. Ruminatie is mind-wandering met negatieve, repetitieve inhoud die blijft cirkelen. Bij schaken is ruminatie gevaarlijker: het DVN blijft hyperactief en deactiveert niet correct als de volgende taak start, wat de concentratie in de volgende rondes schaadt."
+    answer: "Mind-wandering is mentaal afdwalen in het algemeen, met neutrale of positieve inhoud. Ruminatie is mind-wandering met negatieve, repetitieve inhoud die blijft cirkelen. Bij schaken is ruminatie gevaarlijker: het DMN blijft hyperactief en deactiveert niet correct als de volgende taak start, wat de concentratie in de volgende rondes schaadt."
   - question: "Hoe stuur ik mijn DMN actief tijdens een partij?"
     answer: "Vijf bewezen technieken: (1) een expliciete pre-zet checklist (bedreigingen, koningsveiligheid, pionstructuur, tempo), (2) bewuste ademhaling van 3-5 keer tussen de zetten, (3) het benoemen van intrusieve gedachten zonder er in mee te gaan, (4) korte geplande pauzes in rustige posities, en (5) een partijdagboek bijhouden direct na de partij om ruminatie te ontladen."
 ---
@@ -177,34 +177,6 @@ Niet alle hersenen hebben hetzelfde DMN. Meerdere profielen zijn geïdentificeer
 Geen van deze profielen is "beter" voor schaken. Het profiel "sterke deactivator" wint in korte en tactisch scherpe partijen, het profiel "persisterend DMN" kan creatiever zijn in vloeiende strategische posities. Je profiel kennen helpt vooral bij het kiezen van de juiste beheersprotocollen.
 
 **Na het lezen:** herken tijdens je volgende lange partij *drie* momenten waarop je aandacht afdwaalde en benoem mentaal wat je DMN bezighield. Je onderdrukt niets: je observeert. Deze simpele metacognitie verzwakt de grip van ruminaties op de volgende zetten.
-
----
-
-## Veelgestelde vragen
-
-### Wat is het default mode netwerk precies?
-
-Het default mode netwerk (DMN) is een stelsel van hersengebieden dat actief wordt als je niet gefocust bent op een externe taak. Het werd ontdekt door Marcus Raichle in 2001 en verbruikt ongeveer 20% van de energie die je brein verbruikt, zelfs in rust. Het is de motor achter dagdromen, autobiografisch denken en mentale simulaties van de toekomst.
-
-### Hoe beïnvloedt het DMN de kwaliteit van mijn schaakspel?
-
-Op twee manieren: ten eerste kan het je helpen via incubatie, waarbij onbewuste herverbinding van schaakkennis tijdens rust inzichten oplevert die je met gefocust rekenen niet had gevonden. Ten tweede kan het je schaden via ruminatie en dwaalgedachten die het precieze calcul verstoren op kritieke momenten.
-
-### Waarom blunder je vaker in vertrouwde posities?
-
-Juist omdat de positie vertrouwd lijkt, blijft het DMN actief en schakel je niet over naar gefocust rekenwerk. Je speelt "automatisch", maar een tactisch detail ontgaat je. Dit is een klassieke blundervorm: het DMN heeft de controle niet afgegeven op het moment dat dat nodig was.
-
-### Kan meditatie het DMN bij schaken verbeteren?
-
-Ja. Studies van Brewer et al. (2011) tonen aan dat ervaren mediteerders een sterkere deactivatie van het DMN vertonen tijdens gefocuste taken, en sneller terugkeren naar een niet-ruminatieve rusttoestand na inspanning. Voor schakers is dit een directe training van de schakelflexibiliteit tussen focusmodus en rust.
-
-### Wat is het verschil tussen mind-wandering en ruminatie?
-
-Mind-wandering is mentaal afdwalen in het algemeen, met neutrale of positieve inhoud. Ruminatie is mind-wandering met negatieve, repetitieve inhoud die blijft cirkelen. Bij schaken is ruminatie gevaarlijker: het DMN blijft hyperactief en deactiveert niet correct als de volgende taak start, wat de concentratie in de volgende rondes schaadt.
-
-### Hoe stuur ik mijn DMN actief tijdens een partij?
-
-Vijf bewezen technieken: (1) een expliciete pre-zet checklist (bedreigingen, koningsveiligheid, pionstructuur, tempo), (2) bewuste ademhaling van 3-5 keer tussen de zetten, (3) het benoemen van intrusieve gedachten zonder er in mee te gaan, (4) korte geplande pauzes in rustige posities, en (5) een partijdagboek bijhouden direct na de partij om ruminatie te ontladen.
 
 ---
 

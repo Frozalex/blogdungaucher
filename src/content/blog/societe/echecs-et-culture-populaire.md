@@ -149,4 +149,3 @@ Les jeux que la culture populaire présente comme accessibles, sociaux et émoti
 Le vrai révolutionnaire n'était peut-être pas Beth Harmon. C'était la caméra qui la filmait en gros plan, avec de la musique dramatique, comme si l'échiquier était un ring de boxe.
 
 ---
-

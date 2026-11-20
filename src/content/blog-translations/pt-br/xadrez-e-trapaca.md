@@ -123,6 +123,10 @@ Para quem organiza uma competição, há duas conversas diferentes depois de um 
 
 O mesmo cuidado vale ao rever uma notícia antiga. Anote a data da alegação e procure saber se a fonte fala de reclamação, medida provisória, decisão posterior ou recurso. São acontecimentos diferentes. Uma manchete sobre a abertura de uma apuração não fornece, por si só, o desfecho. Esse vocabulário torna possível defender condições justas de jogo e, ao mesmo tempo, contar com precisão o que já se sabe sobre um caso concreto.
 
+### Quando duas janelas dão a mesma informação
+
+Volte ao final de dama do exemplo. Um relatório mostra que três jogadores escolheram Dg7. Antes de tratar isso como três indícios, conte quantas escolhas distintas o lance correto exigia. Os três jogadores estavam diante da mesma posição elementar. Além disso, se dois painéis da plataforma apenas reproduzem o mesmo lance armazenado, consultar ambos não cria uma segunda observação independente. Registre separadamente o diagrama, os lances efetivamente jogados e a origem de cada informação. O que se pode verificar nesse material é a solução do final e a coincidência das respostas. A origem da decisão de cada jogador permanece outra pergunta, que esses registros isolados não respondem.
+
 ## Fontes
 
 - **Chess.com (outubro de 2022)**, apresentação e acesso ao *Hans Niemann Report*. [Relatório e conclusões](https://www.chess.com/news/view/chesscom-hans-niemann-report-cheating).

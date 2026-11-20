@@ -85,6 +85,10 @@ Comece do tabuleiro inicial. Jogue 1.Cf3 Cf6 2.g3 g6. Reponha as peças e invert
 
 Há uma sutileza útil nesse exemplo. Na primeira ordem, o último lance é um avanço de peão; na segunda, é um lance de cavalo. O contador de meios-lances para a regra dos cinquenta lances difere. A história para a repetição também precisa ser considerada quando afeta o resultado de uma linha. Compartilhar a avaliação imediata de uma disposição de peças e declarar que dois históricos são intercambiáveis para todas as regras são decisões técnicas diferentes. É por isso que a frase “basta guardar cada tabuleiro uma vez” pede uma definição cuidadosa da chave usada no programa.
 
+### Os nós que a busca deixou de visitar
+
+Desenhe uma árvore em que as brancas escolhem A ou B e, na sequência, as pretas escolhem uma de duas respostas. Avalie sempre do ponto de vista das brancas. Em A, as duas folhas valem 3 e 5. As pretas podem limitar o resultado a 3. Comece então a explorar B. Se a primeira resposta encontrada vale 2, você já sabe que as pretas podem limitar B a, no máximo, 2. Pode encerrar esse ramo. O valor da folha ainda invisível não muda a preferência por A. Agora percorra as folhas na ordem inversa, começando pelo ramo B. Dependendo do primeiro valor revelado, você talvez precise visitar todas elas. Desenhe um círculo em cada folha efetivamente avaliada nos dois percursos. O número de círculos pode mudar mesmo que o jogo representado e o valor ótimo na raiz permaneçam os mesmos.
+
 ## Fontes
 
 - Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. Philosophical Magazine, 41, 256–275. [Artigo original, Computer History Museum](https://www.computerhistory.org/chess/doc-431614f453dde/): estimativa da árvore e busca seletiva.

@@ -96,6 +96,8 @@ Depois troque de lado. Procure uma sequência que ofereça a devolução do peã
 
 Por fim, compare duas análises do mesmo motor a partir da mesma posição e com o mesmo orçamento de busca. Numa, examine o lance da partida. Na outra, examine sua defesa, mesmo que a tela não a sugira entre as primeiras opções. Conserve a variante concreta que explica a diferença. Essa comparação permite aprender com um exemplo de AlphaZero sem precisar adivinhar o que a rede teria “pensado” nem tratar uma única partida como julgamento definitivo sobre um estilo de jogo.
 
+Se o motor mudar de preferência ao receber mais tempo, salve as duas variantes com os respectivos limites de análise. Talvez a primeira sequência já contivesse a ideia estratégica correta e apenas avaliasse mal um final. Nessa situação, corrigir o comentário do sacrifício exige mostrar o final que mudou, não atribuir ao programa uma personalidade diferente.
+
 ## Fontes
 
 - Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Texto](https://arxiv.org/html/1712.01815v1).

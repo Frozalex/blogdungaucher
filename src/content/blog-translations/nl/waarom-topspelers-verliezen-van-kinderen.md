@@ -35,11 +35,9 @@ Dit soort scène schokkeert. Het voedt virale video's en X-threads. Maar voor wi
 
 ## Het Elo-systeem en zijn grenzen
 
-Het Elo-systeem berust op een sterke aanname: de prestatie van een speler is een willekeurige variabele gecentreerd op zijn score, met een vaste standaardafwijking. Wanneer een 2600 een 2100 treft, is de theoretische winkans van de 2600 ongeveer 92%.
+Een ratingmodel vertaalt een verschil in speelsterkte naar een verwachte puntenscore. Een score telt een winst als één en een remise als een half punt. Zo'n verwachting specificeert dus geen unieke verdeling over gewonnen, verloren en remise gespeelde partijen. Bij een duidelijk hoger ingeschatte speler is een overwinning aannemelijk, maar de ontmoeting moet nog worden gespeeld.
 
-Maar 92% is geen 100%. Over 100 partijen zal de 2100 er 5 of 6 winnen en 2 of 3 remise spelen. En die "kleine kans" concretiseert zich *gemiddeld* bij elk open toernooi waar honderden asymmetrische partijen worden gespeeld.
-
-Subtieler: de Elo-standaardafwijking is niet constant tussen individuen. Sommige spelers zijn stabieler (lage variantie rondom hun echte score), anderen zijn zeer volatiel. Kinderen in snelle progressie behoren tot de meest volatiele: hun Elo onderschat hun werkelijke sterkte vaak met honderden punten.
+De leeftijd komt in deze berekening niet rechtstreeks voor. Een lijst kan achterlopen wanneer iemand sinds de vorige verwerking sterk is vooruitgegaan, weinig meetellende partijen speelde of een lange pauze had. Kijk daarom ook naar de datum en de hoeveelheid beschikbare partijen. Zulke informatie is nuttiger dan vooraf een vaste correctie van honderden ratingpunten bij iedere jeugdspeler op te tellen.
 
 ## Schaaktalenten: een anti-conventionele stijl
 
@@ -55,11 +53,9 @@ Dit is precies de situatie waarin het Elo-voordeel afneemt. Ervaring doet er nie
 
 Een andere onderschatte asymmetrie betreft vermoeidheid. Serieuze toernooien duren 4 tot 9 dagen, met een tot twee lange partijen per dag. Naarmate de ronden vorderen, daalt de tactische precisie voor iedereen, maar niet in hetzelfde tempo.
 
-Studies in de neurowetenschappen van intellectuele sport tonen aan dat mentale vermoeidheid eerst de hogere uitvoerende functies treft (planning, remmend controle, werkgeheugen), voor het de tactische automatismen bereikt.
+Van de uitslag kun je niet terugrekenen wie het meest vermoeid was. Een jonge deelnemer kan een lange schoolweek achter de rug hebben, terwijl een oudere tegenstander uitgerust arriveert. Andersom kan een speler die twee avonden achtereen lang moest verdedigen aan het begin van de volgende ronde nog aan de vorige partij denken.
 
-Welnu, volwassenen steunen massaal op hun uitvoerende functies: strategische keuzes, positionele evaluatie, tijdbeheer. Kinderen zijn meer *tactisch*, meer op directe berekening gericht. Hun cognitieve middelen zijn minder kostbaar in deze modus.
-
-Gevolg: aan het einde van een toernooi, ronde 7 of 8, speelt een vermoeide volwassene significant minder goed dan zijn Elo. Een vermoeid kind daalt ook, maar minder. De kloof verkleint.
+Om een vermoeidheidsverklaring te onderzoeken heb je informatie over de specifieke spelers nodig. Hoe laat eindigde de vorige ronde, hoeveel tijd zat er tussen hun partijen en waar veranderde hun tijdgebruik? Bekijk daarnaast de concrete stelling: ook een fitte speler kan een uitzonderlijk sterk verdedigend antwoord missen. Alleen de leeftijden op een toernooilijst leveren dat onderscheid niet.
 
 ## De emotionele val
 
@@ -71,7 +67,7 @@ Dit is waarschijnlijk de meest onderschatte factor. Spelen tegen een veel zwakke
 
 Deze drie drukken combineren zich vaak. De volwassene begint met onderschatten ("ik doe dit in 25 zetten"), realiseert zich dan dat de stelling ingewikkeld wordt, raakt in paniek, speelt langzamer, eindigt in tijdnood en bezwijkt op een berekening.
 
-Het kind heeft geen van deze drukken. Het speelt vrij. Het heeft niets te verliezen. Deze emotionele vrijheid is een objectief voordeel.
+Een junior kan vrijuit spelen, maar kan ook sterk verlangen naar erkenning of zich zorgen maken over de reactie van een coach. Een veronderstelling over de emotionele toestand van de ander is iets om na afloop te vragen, niet iets om uit het geboortejaar af te lezen.
 
 ## De openingsfactor: de risicozone
 
@@ -81,15 +77,9 @@ Een grootmeester heeft zijn openingsbibliotheek tientallen keren getest. Als het
 
 De eerste fouten komen vaak daar: men verliest 10 minuten bij zet 6, neemt een onnatuurlijke beslissing bij zet 10, en de stelling is subtiel verloren voor het middenspel.
 
-## De statistieken die men niet graag bekijkt
+## Waar een goede vergelijking mee begint
 
-Op Lichess en Chess.com laten de databases deze fenomenen inmiddels kwantificeren. Enkele veelzeggende cijfers:
-
-- In klassieke partijen tussen 2600+ en 2100 wint de 2100 gemiddeld 6-8% van de partijen, iets boven de Elo-voorspelling (ca. 5%).
-- Wanneer de 2100 een junior is van onder de 14 jaar, stijgt dit cijfer naar 10-13%.
-- Aan het einde van een toernooi (ronde 6+) krimpt het verschil nog verder: 12-16% overwinningen voor de junior.
-
-Deze verschillen zijn niet anekdotisch. Over een open toernooi van 9 rondes met asymmetrische pairingen verwacht men statistisch *meerdere* verrassende grootmeesterverliezers. Het is geen toeval, het is een regelmatigheid.
+Een lijst met verrassingsuitslagen is gemakkelijk samen te stellen. Veel moeilijker is het om ook de honderden partijen terug te vinden waarin de favoriet gewoon een punt haalde. Welke ratings golden vóór de ronde? Ging het om snelschaak of klassiek? Waren de spelers willekeurig gekoppeld of troffen zij elkaar pas nadat beiden al een aantal ronden hadden gewonnen? Als die achtergrond verschilt, vat één percentage heel verschillende situaties samen. De rekenoefening verderop laat zien hoe je een eerlijkere vergelijking kunt opzetten.
 
 ## Wat dit ons zegt over het spel
 
@@ -110,6 +100,22 @@ Als je ooit tegenover een kind staat dat 500 punten onder jou scoort, zijn dit d
 5. **In tijdnood, wees nog concreter.** Veel kinderen verliezen in tijdnood omdat ze nog berekenen onder volle druk. Jij kunt solider spelen en hen laten bezwijken.
 
 En als je toch verliest? Dat is alle beste spelers ter wereld overkomen. Je verkeert in goed gezelschap.
+
+## De onzichtbare partijen naast het krantenknipsel
+
+Een club deelt een foto van een twaalfjarige die een grootmeester versloeg. De foto is nieuwswaardig juist omdat hij uitzonderlijk is. Stel dat in hetzelfde weekend twintig andere junioren tegen sterkere spelers uitkwamen en dat bijna al die partijen het verwachte resultaat opleverden. Die uitslagen verschijnen hooguit in een tabel. Wie vervolgens uitsluitend nieuwsberichten telt, krijgt een merkwaardig beeld van hoe vaak de favoriet verliest. De verzameling die je ziet is gekozen op de uitkomst. Om de kans vooraf te kunnen schatten heb je juist de hele lijst gespeelde ontmoetingen nodig.
+
+Neem voor de oefening een fictieve tabel op een clubavond. Alle spelers hebben een rating bij aanvang, een leeftijdscategorie, een kleur en een uitslag. Zoek eerst alle partijen die vóór de ronde aan dezelfde afspraken voldeden over het verschil in speelsterkte en het speeltempo. Schrijf daarna op welke favorieten wonnen, welke remiseerden en welke verloren. Reken de score voor de favoriet uit met een half punt per remise. Dat getal is niet hetzelfde als het percentage gewonnen partijen. Twee remises en een overwinning plus een nederlaag leveren samen in beide gevallen één punt uit twee op.
+
+Ook binnen de groep jonge spelers is het nuttig te kijken hoe recent hun rating is opgebouwd. Iemand die pas drie officiële toernooien heeft gespeeld kan thuis of online ondertussen veel ervaring hebben opgedaan. Een ander kind met veel recente partijen hoeft helemaal niet onderschat te zijn door de lijst. Dezelfde opmerking geldt voor een volwassene die na jaren afwezigheid terugkeert en veel sterker of zwakker blijkt dan zijn oude getal suggereerde. Een redelijke verklaring moet je bij beide leeftijden aan dezelfde gegevens willen toetsen.
+
+## Bereid je voor op de zetten die je nog niet kent
+
+Stel dat er uit de laatste vijf partijen van je jonge tegenstander twee Siciliaanse verdedigingen beschikbaar zijn. Je kunt eruit leren welke pionstructuur vaker opdook. Je weet nog niet hoe de speler zal reageren als jij daarvan afwijkt. Misschien heeft een trainer juist die week een nieuw antwoord laten zien. Maak daarom één voorbereidingsblad met de meest waarschijnlijke stelling en één met een redelijke afwijking. Schrijf bij allebei op welk eigen stuk een slecht veld dreigt te krijgen. Aan die opdracht heb je ook iets wanneer de ander volwassen blijkt en dezelfde variant speelt.
+
+Bij de nabespreking kun je bovendien de rollen omkeren. Vraag de jongere speler bij welke zet hijzelf het meest moest nadenken en probeer die plek vóór het antwoord aan te wijzen. Je ontdekt misschien dat hij jouw grote verrassing thuis al had gezien maar een simpele terugzet later in de partij het moeilijkst vond. Dat soort informatie brengt de analyse terug naar twee mensen die concrete problemen oplosten, in plaats van twee generaties die geacht worden een vooraf beschreven stijl uit te voeren.
+
+Een praktisch voorbeeld is een ruil van dames. De favoriet verwacht dat de junior liever blijft aanvallen en biedt een ruil aan om het spel rustiger te maken. De junior neemt aan en houdt een actieve koning en een verste vrijpion over. Bij het terugkijken is de verklarende vraag niet of jonge spelers eindspelen aandurven. Zet de torens en pionnen op de velden van voor de ruil en controleer welke koning aan de andere kant van het bord sneller kan binnenkomen. De leeftijd gaf de favoriet geen antwoord op die vraag. De stelling wel.
 
 ## Samenvatting
 

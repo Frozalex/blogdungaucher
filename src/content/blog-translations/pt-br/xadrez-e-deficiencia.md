@@ -117,4 +117,3 @@ Uma falha pode ocorrer muito longe do tabuleiro. Um anúncio oral de mudança de
 Combine também quem pode decidir quando algo sai do previsto. Se um equipamento para de funcionar, o participante precisa de um interlocutor identificável. Deixar duas pessoas diferentes prometerem procedimentos incompatíveis no meio da rodada acrescenta uma incerteza desnecessária. Anote com a arbitragem como solicitar ajuda e como comunicar a decisão à outra pessoa na mesa.
 
 Depois do ensaio, registre o obstáculo com verbos concretos. “A lista ficou atrás de um corredor estreito” orienta uma mudança. “A pessoa teve dificuldade” pouco esclarece sobre o que o clube pode fazer. Faça o mesmo depois do torneio e confira, com quem enviou a observação, se a mudança proposta resolve o caso. A melhor pergunta muitas vezes é pequena: “Em qual etapa você precisou pedir uma ajuda que poderia ter sido dispensável?”.
-

@@ -1,136 +1,58 @@
 ---
-heroImageAlt: A massive gauge needle bolted onto a thin panel that cracks under its weight.
-title: "Elo and Self-Esteem: When Your Rating Becomes Your Identity"
-excerpt: "The Elo rating is a brilliant invention for measuring playing strength. It's also a formidable psychological trap: when your Elo becomes the measure of your personal worth, every defeat is an identity wound. How to decouple performance and identity."
-seoTitle: "Elo Rating and Self-Esteem: When Chess Rating Becomes Identity"
-seoDescription: "Elo anxiety, ego vs mastery orientation, identity and performance: the psychology of Elo rating and how to decouple your self-esteem from your chess rating."
+heroImageAlt: A heavy gauge attached to a thin panel cracked under its weight.
+title: "When a chess rating starts to feel like your identity"
+excerpt: "A rating helps match opponents and track results. What does it measure, what does it miss, and how can you review a game without making a judgement about yourself?"
+seoTitle: "Chess Ratings and Self-Esteem: Reading the Number"
+seoDescription: "Work through an Elo calculation, compare two tournament records and build a useful training goal when a rating feels too important."
 enSlug: "elo-and-self-esteem"
 draft: false
 faq:
-  - question: "How does the Elo calculation work?"
-    answer: >-
-      The Elo system computes the theoretical probability of one player beating another based on the rating
-      gap. If you beat an opponent at the same Elo, you gain about 16 points (and they lose 16). If you beat
-      an opponent 200 points above you, you gain more (about 24) and they lose more. If you lose to an
-      opponent 200 points below you, the points lost are significant (about 24). The formula is statistically
-      calibrated so that, over a large sample of games, ratings converge to true playing levels.
-  - question: "Why are players so attached to their Elo?"
-    answer: >-
-      Because Elo is a precise, publicly visible, comparative, regularly updated number. These properties
-      make it a different psychological object from most life-performance measures: impossible to ignore,
-      easy to compare, immediately available. In societies that value measurement and comparison, Elo
-      fulfills an identity function that few other competence indicators provide.
-  - question: "How do I avoid identifying too strongly with my Elo?"
-    answer: >-
-      Three concrete practices: (1) Set process goals (play X games per week, analyze X games per month)
-      rather than result goals (reach X Elo). (2) Celebrate progress independent of rating ('I found a
-      beautiful combination', 'I managed that endgame well'). (3) Maintain chess identity activities beyond
-      Elo: progress in opening study, community exchanges, learning historical games. When chess identity has
-      several dimensions, fluctuation of a single one (Elo) is less destabilizing.
-  - question: "Are online Elo and FIDE Elo comparable?"
-    answer: >-
-      Not directly. Online Elos (Chess.com, Lichess) are calculated differently, draw from different
-      populations, and correspond to different time controls (blitz, bullet, classical). An Elo of 1500 in
-      Chess.com bullet isn't equivalent to a 1500 FIDE Elo in classical games: they measure different skills
-      on different populations. Generally, online Elos in fast time controls are lower than FIDE Elos
-      (broader population, shorter games) but direct comparison is meaningless.
-  - question: "Should I keep playing when my Elo drops sharply?"
-    answer: >-
-      Depends on the cause. If the drop is due to overtraining or cognitive fatigue, a few days off is
-      appropriate. If it's due to changes in your play (learning a new opening that temporarily destabilizes
-      your bearings), continuing to play while accepting the temporary drop is often best: the progression
-      curve runs through a valley before the rise. If it's due to underestimating opponents or recurring
-      un-analyzed mistakes, stopping to analyze before playing again is more productive.
+  - question: "Does a win always earn sixteen points?"
+    answer: "No. The change depends on the expected score and the applicable K factor. Against an equally rated opponent, a win with K equal to twenty contributes ten unrounded points."
+  - question: "Does a rating plateau mean a breakthrough is coming?"
+    answer: "A flat rating does not reveal its cause. Look at your opponents, your games and the skills you have been practising before drawing a conclusion."
 ---
 
-A few years ago, I met a club player who had refused to play in tournaments for two years. His explanation: "I climbed to 1680 and I don't want to drop below that. In a tournament, I risk losing points."
+You find an event you would normally enter. The venue is close, you like the time control and two friends are going. Then you remember the number you reached last month. For the first time, the most attractive feature of staying home is that the number cannot fall. This is an understandable dilemma for someone who worked hard for a milestone. It is also a good occasion to ask precisely what the number can tell you and which choices you want it to influence.
 
-1680 was for him an identity waterline. Dropping below it meant no longer being "the 1680 player." The fear of losing that label paralyzed his practice.
+## What a rating update actually measures
 
-This is not an isolated case.
+In the FIDE system, a rated game's result is compared with the score expected from the players' ratings. A win scores one, a draw half and a loss zero. Expected score is not simply the probability of winning: two players of equal strength could draw quite often and still each expect half a point per game. The change also depends on the applicable development coefficient, usually called K. The details of periods, rounding and eligibility are set out in the [FIDE Rating Regulations](https://handbook.fide.com/chapter/B022024).
 
-## The Elo: A Brilliant Invention Turned Trap
+For a deliberately simple example, let a player have K equal to twenty and face somebody with the same rating. A win contributes twenty times the difference between one and one half, or ten points before aggregation and rounding. A draw contributes zero; a loss contributes minus ten. Change the K factor and you change the size of those contributions without changing a move on the board. Two players can have different K factors. There is no universal sixteen-point reward for beating an equally rated opponent, and a larger numerical change does not automatically mean one person had a more instructive afternoon.
 
-Arpad Elo was a Hungarian-American physicist. In 1960, he developed a rating system for the USCF (US Chess Federation) that was later adopted by FIDE. His simple algorithm, calculating each player's probability of winning and adjusting ratings based on actual results, was elegant and fair.
+Now compare two results against the same opposition. In one game your opponent blunders a rook on move twelve. In another they defend a difficult pawn ending impeccably until they run out of time. In the rating calculation a win is a win in both cases. That is a strength of a system designed to aggregate results; it would be an extraordinary burden to adjudicate the artistic or educational merit of every game. It also explains why looking harder at the rating cannot tell you which ending you should practise. The information for that decision is in the score sheets.
 
-The Elo system measures one precise thing: relative performance against opponents over a given period. Nothing else. It doesn't measure intelligence, future potential, or the worth of the person playing. It's a performance statistic in a game.
+## Why a round number feels different
 
-This distinction (simple in theory) is remarkably difficult to maintain in practice.
+Imagine that a rating list shows 1799. One extra point would change the first two digits when you tell somebody your rating. Contrast that with moving from 1807 to 1808. Each is a one-point difference. The first might feel like the completion of a long project, while the second might go unnoticed. A coach who understands that can congratulate someone on the first list above a goal without treating the next list below it as erasing the work. Keep the game that got you there, the names of the people who trained with you or the ending you finally understood. Those are features of the achievement you can still point to next month.
 
-## The Psychology of Numerical Rankings
+A practical distinction is whether a threshold changes an actual opportunity. An event may specify a rating band or select players using a particular published list. In that setting the date, list and regulation matter. Ask the organiser which number counts. At a club analysis evening, the same threshold may have no official function at all. If you hesitate to offer a variation because you are the only person under a certain rating, ask about the position instead. “Doesn't this rook check leave the king a route to the centre?” has the same answer regardless of who asked it.
 
-Behavioral sciences have identified several properties of numbers that make them psychologically powerful:
+## Two lists made on the same Monday
 
-Numbers are **precise**: "1680" is more psychologically striking than "good club player." Precision creates an illusion of objective measurement.
+Suppose your Monday results sheet reads “loss, draw, loss.” You also have a training sheet with three entries. In the first game you found the right pawn break and then hung a piece. In the second you spent far too long trying to refute an ordinary threat, but saved the ending. In the third you recognised a defensive fortress from last week's lesson and reached it, then moved the wrong pawn. On the results sheet the weekend is half a point from three. On the training sheet you can identify a useful break, a problem with clock management and a specific pawn to leave alone. Both sheets describe the same weekend accurately.
 
-Numbers are **comparative**: "1680 versus 1720" is instant. You immediately know who is "above." This easy comparability activates social competition mechanisms.
+What would you do on Tuesday with just the results sheet? Perhaps schedule more games in an effort to recover the points. What would the second sheet let you do? Reconstruct that fortress and play the defending side against a friend. Ask the friend to try a different winning attempt each time. Check whether the position survives when you keep the pawn where it belongs. If it does, you have gained a piece of usable knowledge even if the next tournament is a month away. If it does not, the original label “fortress” needs revising. Either answer is more informative for your training than watching a rating graph that has not moved since Monday.
 
-Numbers are **visible**: in clubs, on websites, in apps. Elo is public, impossible to ignore.
+Keep this record small enough that you will use it after a bad evening. The smallest useful entry might be a diagram, the move number and one sentence: “I thought the king could cross here; check the rook's line.” Writing a paragraph about your character is unnecessary. In a busy week two well-chosen positions might be more valuable than elaborate notes about every game. Numbers do not need to disappear from the notebook. Put the actual result beside the question and let each answer what it can.
 
-Numbers are **dynamic**: they change after every game. This permanent updating creates a continuous emotional feedback loop: every game has a measurable impact on "who you are" according to the number.
+## A fair comparison with another player
 
-## Elo Anxiety: A Documented Phenomenon
+You and a teammate both gained twenty points. They played more games and lost several of them. You played fewer and drew most of yours. Before concluding that one of you has the better work ethic, ask what the comparison is for. If you need a likely opponent for even practice games, current ratings within the same system can be helpful. If you want to know why a particular opening keeps going wrong, a teammate with a lower rating and experience in that opening might be the better person to ask. The question determines the useful comparison.
 
-Online platforms have created new exposure to rating fluctuation. In the 1990s, a club player saw their FIDE Elo updated every 3 months after a tournament. Today, Chess.com and Lichess update ratings after every game, sometimes several times per day.
+Online numbers need similar care. An online blitz pool, an online rapid pool and a federation standard list bring together different players under different conditions and may use different algorithms. A screenshot from one service does not supply a conversion formula for another. You can still learn something from a time series within one pool. If a change coincides with switching from a laptop to a phone, playing only late at night or choosing a new opening in every game, put those changes alongside the results. They suggest questions to test. They do not prove the cause of a rise or fall.
 
-**"Elo anxiety"**, a term used informally in the community before appearing in some psychological studies, describes the anxiety specifically tied to the fear of losing rating points.
+## What having a choice looks like
 
-Its manifestations:
+Take two dates on your calendar. On one you want serious competitive practice. On the other you want to play a friend who brings unexpected openings and never asks about the result afterwards. The first session can reasonably have a rating goal. The second might be successful if it produces one interesting position for the club board. Choosing both is coherent. A person can care about selection for a team, enjoy calculating, like their opponents and want to socialise after the round. None of these reasons invalidates the others.
 
-*Avoiding stronger opponents*: refusing games or choosing opponents to minimize the risk of losing significant points. This behavior is self-limiting: playing against stronger opponents is precisely what forces improvement.
+If you suspect the number is directing more of your decisions than you want, choose one small change whose outcome you can inspect. On your platform you might hide the rating display for a planned session, if the setting exists. Before starting, write down the number of games and when you intend to stop. Afterwards, ask what you noticed about your decisions. Did you take the time to examine a difficult reply? Did not seeing the score cause you to check it in another tab? The answer can help you choose how to play next time. One evening is not a psychological assessment, and you do not owe a coach the result of the experiment.
 
-*Playing "not to lose"*: adopting a defensive and solid style not out of strategic preference but to minimize the risk of defeat.
+## A sentence a captain can actually use
 
-*Tilting*: after a loss, immediately replaying quickly to "recover" lost points, an emotional behavior that generally leads to more losses.
+After a poor match, “you're better than your rating” is meant kindly. It can still leave a player wondering which number would make the captain happy. Try a sentence with something observable in it: “You spotted the only check that kept our board alive. On Thursday, can we look at the move after the queens came off?” The second sentence does not require pretending that the result was good. It tells the player what they did and invites them to take part in a specific piece of work.
 
-*Preventive pausing*: stopping playing when the rating reaches a "sufficient" level to avoid risking a drop.
+The same principle applies when praising a junior whose rating just rose. Ask which game they would keep and which decision they would like to understand better. Someone who wins quickly because an opponent blundered may prefer to show a draw they fought for. A parent who hears the reason learns more about the child's interests than they would from repeating the number to every member of the club. Let the player decide whether the milestone is public news or a private satisfaction.
 
-## Ego Orientation Versus Mastery Orientation
-
-Sports and educational psychology distinguishes two fundamental motivational styles with direct consequences for how one experiences Elo.
-
-**Ego orientation** (or performance orientation): the individual measures themselves primarily against others. Their sense of competence depends on relative performance, beating opponents, having a higher rating. In an ego-oriented framework, a defeat is a direct threat to self-esteem.
-
-**Mastery orientation** (or task orientation): the individual measures themselves against themselves and the task. Their sense of competence depends on progress, quality of play, learning. A defeat can be a valuable learning experience, if the play was good and one encountered a tactical resource one hadn't seen.
-
-Decades of research (notably Carol Dweck's work on "growth mindset" and John Nicholls on motivational orientations) show that mastery orientation is systematically associated with:
-- Greater persistence in the face of obstacles
-- Greater risk-taking (trying new strategies, playing stronger opponents)
-- Lower competitive stress levels
-- More robust long-term progression
-
-## Online Elo Amplifies Negative Effects
-
-Online platforms have two simultaneous effects on Elo psychology.
-
-Positive effect: they make the game accessible, measure progress in real time, and create immediate feedback that can be useful for learning.
-
-Negative effect: the frequency of Elo exposure is much higher. A player who plays 3 games per day sees their Elo fluctuate 90 times per month. Each fluctuation is a potential source of anxiety, or false security.
-
-Moreover, platforms gamify the rating: progression graphs, "personal record" badges, rating notifications. These elements reinforce attention paid to the number and identification with it.
-
-## Building a More Robust Chess Identity
-
-The solution is not to stop caring about Elo. It's to make it one indicator among others in a broader chess identity.
-
-**Define yourself as "someone who loves chess"** rather than "someone with an Elo of X." Love of the game is a stable identity, it doesn't fluctuate after a defeat. Elo is a level indicator at a given moment, it fluctuates by nature.
-
-**Celebrate progress independent of rating**: "I found the right defense in that difficult endgame," "I correctly calculated a 5-move variation," "I understood why my pawn structure was weak in that game." These real improvements exist even when Elo stagnates or drops.
-
-**Set process goals**: "I'll analyze every game this week," "I'll study rook endgames for 30 minutes per week," "I'll play an over-the-board tournament this month." These goals are under your control, unlike Elo which also depends on opponents, daily form, and pairing luck.
-
-**Accept stagnation phases** as normal. Learning curves are not linear: plateaus of several months followed by jumps are the typical pattern. A stable Elo for 3 months is not a sign of failure; it's often a sign that cognitive restructuring is underway.
-
-## Sources
-
-- Dweck, C. S. (2006). *Mindset: The New Psychology of Success*. Random House.
-- Nicholls, J. G. (1984). Achievement motivation: Conceptions of ability, subjective experience, task choice, and performance. *Psychological Review*, 91(3), 328-346.
-- Festinger, L. (1954). A theory of social comparison processes. *Human Relations*, 7(2), 117-140.
-
-## Key Takeaways
-
-- The Elo system measures **relative performance over a period**: not intelligence, not human worth, not future potential
-- **Ego orientation** (comparing to others) makes every loss an identity threat; **mastery orientation** (comparing to yourself) makes it a learning opportunity
-- **Elo anxiety** pushes players to avoid stronger opponents, play not to lose, and reduce tournament volume
-- Online platforms have **amplified** Elo psychology by increasing exposure to real-time fluctuations
-- Players with stable self-esteem share a common trait: an identity that **goes beyond the number**
+If protecting the number is changing whether you enter an event, return to the original invitation. Which opponent would you like to meet? Which opening would you like to test? What would make the trip worth the fare even if the results go badly? You are allowed to decide that the journey demands too much this month. You are also allowed to enter, do the work and lose points. Next week's list will report results under a defined system. Your answers to those three questions can guide a decision the rating was never designed to make.

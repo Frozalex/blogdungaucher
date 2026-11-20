@@ -91,6 +91,26 @@ Noise, stress or perceived fatigue may also make calculation less stable. The co
 
 To evaluate work, note what you can follow: a moved piece you forget, an exchange you misrepresent or a threat you neglect. Return to a suitable position and check your representation on the board. That provides a concrete objective without converting a laboratory model into a promise of improvement.
 
+## Hold a line in mind, then change one move
+
+Try this with a board nearby but leave the pieces in their starting places. Imagine White playing e4, Black replying e5 and the white knight from g1 moving to f3. Stop there. Which square has the knight left? Which black pawn does it attack from its new square? Is there still a pawn on e2, directly in front of the white king? Locating the moving piece, updating the empty square and noticing a new attack are three different demands. Getting the first answer right doesn't mean you have already done the other two.
+
+Continue mentally with ...Nc6 and Bb5. What does the white bishop meet first on the diagonal towards d7? From b5 it sees a black knight on c6, then the pawn on d7. The knight is allowed to move. Doing so would not expose its king to check because the pawn on d7 still blocks the bishop. Calling this knight pinned just because the diagram looks familiar is an excellent mistake to catch. You may have remembered a familiar *relationship* before checking whether the present pieces actually support it.
+
+Rewind to the moment before White developed the bishop. This time imagine Bc4. Where does the bishop look now? Follow the diagonal through d5 and e6 to f7. The black pawn still occupies that last square. If you can see a bishop attacking both the c6 knight and the f7 pawn at this point, the position in your head contains a trace from a branch you abandoned. You have not forgotten how bishops move. You may instead have failed to remove a relationship which was true a moment ago in the first line.
+
+For a correction, draw the last position shared by the lines, then the position after Bb5 and the position after Bc4. Under each diagram list one newly empty square and one newly attacked square. Only now set up the pieces and compare your diagrams with the board. If the drawings are correct but the story becomes muddled when you try to explain both lines together, practise returning to the point of divergence. If the location of the knight is wrong in both drawings, slow down earlier in the sequence; practising the bishop move again won't repair that particular error.
+
+## Choose the difficulty by changing what must be remembered
+
+Once a familiar opening becomes easy to recite, switch to two candidate moves from a recent game of your own. Pick candidates that move the same piece to different squares. Give Black one legal reply in each case. You have a real reason to keep the lines separate, and the rest of the board can initially stay fairly quiet. Let a partner name a line at random and ask which squares that piece now controls. Their job is to test the distinction, not to push the depth as high as possible.
+
+There are several ways to make the next session harder. Add a capture to one line, so that one piece must vanish as well as another move. Add an interposition that closes a previously open diagonal. Alternatively keep exactly the same length but ask about a piece on the opposite side of the board at the end. These adjustments stress different parts of the exercise. Record which change caused the first mistake. A faster response on Monday's diagram tells you that you have learned that diagram; a correct explanation on a new one shows you can also apply the intended check elsewhere.
+
+The exercise is deliberately modest. Two friends with different opening experience should not compare their totals as if the diagrams measured their general working-memory capacities. But a player who repeatedly carries a captured piece into the next branch has identified a very useful improvement target. For that player, explicitly naming the capture when going forward and restoring the piece when mentally rewinding may be more valuable than adding another pair of moves. Success means that a specific kind of error becomes easier to detect in a new line.
+
+A partner can verify these corrections by asking about an empty square halfway through each line, before revealing the final diagram.
+
 ## Sources
 
 - Baddeley, A. (2012). *Working Memory: Theories, Models, and Controversies*. Annual Review of Psychology, 63, 1–29. [Full review](https://jontalle.web.engr.illinois.edu/MISC/ReadingGroup.11/Papers/Baddeley-WorkingMemory.12.pdf).

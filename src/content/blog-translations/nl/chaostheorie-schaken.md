@@ -130,30 +130,6 @@ Schoonheid bij schaken is misschien de schoonheid van beheerste chaos: het vermo
 
 ---
 
-## Veelgestelde vragen
-
-### Is schaken echt "chaotisch" in de wiskundige zin?
-
-Strikt genomen nee: de formele definitie van chaos (Lyapunov-exponent, vreemde attractoren) is van toepassing op continue dynamische systemen, terwijl schaken discreet en eindig is. Maar de **structurele eigenschappen** van chaos (gevoeligheid voor begincondities, bifurcatiepunten, berekenbaarheidshorizon) manifesteren zich meetbaar in tactisch gespannen stellingen. De analogie is niet literair: ze is empirisch bevestigd door motoranalyse.
-
-### Hoe herken ik een chaotische stelling tijdens een partij?
-
-Drie convergerende tekens: (1) meerdere offers of onevenwichtige ruilingen liggen tegelijkertijd op tafel; (2) de positie van elke Koning is blootgesteld of potentieel blootgesteld op korte termijn; (3) je intuïtie geeft je twee of drie heel verschillende zetten die speelbaar lijken zonder ze snel te kunnen onderscheiden. Als de drie aanwezig zijn, bevindt je je in een zone met hoge λ: de gekozen zet weegt veel meer dan in een rustige stelling.
-
-### Waarom gaan motoren beter om met chaos dan mensen?
-
-Niet om de reden die je denkt. Ze zijn niet immuun voor het horizoneffect. Maar hun **zoekverlenging** in tactische varianten (gedwongen voortzetting tot stabilisering) en hun evaluatiefunctie die getraind is op miljoenen chaotische stellingen geven hen een **referentiebasis** die de menselijke speler niet heeft. Als AlphaZero "weet" dat een offer werkt zonder 20 zetten te berekenen, spreekt de attractor van zijn waardenfunctie, niet brute kracht.
-
-### Bevordert chaos werkelijk de zwakkere speler?
-
-Statistisch ja, binnen een bepaald venster. Analyse van miljoenen amateurpartijen toont dat het verwachte prestatieverschil kleiner wordt in scherpe openingen (Koningsgambiet, Najdorf Siciliaans, Benoni) vergeleken met positionele openingen (langzame Italiaan, Caro-Kann). Maar het omgekeerde effect treedt op bij een Elo-verschil van meer dan 300 punten: de sterkere speelt chaos dan als een beheerst domein, en zijn voordeel versterkt.
-
-### Wat is het verschil tussen een "gecompliceerde" stelling en een "chaotische"?
-
-Een gecompliceerde stelling heeft veel kandidaatzetten maar kleine evaluatieverschillen: je kunt je vergissen zonder de partij te verliezen. Een chaotische stelling heeft weinig levensvatbare zetten maar enorme verschillen: één zwakke zet en de stelling kantelt. Het is het evaluatieverschil per zet, niet het aantal kandidaten, dat chaos meet. Een motor kwantificeert dat voor je in twee seconden; het is aan jou om de vorm met het blote oog te herkennen.
-
----
-
 ## Kernpunten
 
 - Complexe schaakstellingen vertonen een **gevoeligheid voor begincondities** die kenmerkend is voor chaotische systemen (hoge Lyapunov-exponent)
